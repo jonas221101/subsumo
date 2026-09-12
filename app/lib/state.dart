@@ -1,3 +1,5 @@
+import 'dart:async';
+import 'dart:convert';
 import 'dart:math';
 
 import 'package:flutter/widgets.dart';
@@ -18,6 +20,14 @@ class PendingReview {
     required this.reviewedAt,
     this.elapsedMs = 0,
   });
+
+  factory PendingReview.fromJson(Map<String, dynamic> json) => PendingReview(
+        clientId: json['client_id'] as String,
+        cardSlug: json['card_slug'] as String,
+        rating: json['rating'] as int,
+        reviewedAt: DateTime.parse(json['reviewed_at'] as String),
+        elapsedMs: json['elapsed_ms'] as int? ?? 0,
+      );
 
   final String clientId;
   final String cardSlug;
@@ -42,14 +52,22 @@ String _newClientId() {
 
 /// Zentraler App-Zustand.
 ///
-/// Bewusst ein einfacher [ChangeNotifier] im M0-Geruest. Mit der
-/// Offline-Synchronisierung in M1 wandert das auf Riverpod plus drift.
+/// Bewusst ein einfacher [ChangeNotifier] im M0-Geruest, mit einer duennen
+/// Offline-Schicht ueber [SharedPreferences]: die zuletzt geladenen faelligen
+/// Karten und die Review-Outbox ueberleben Neustart und Netzausfall. Das ist
+/// bewusst kein vollwertiger Offline-Speicher (kein Volltext-Cache aller
+/// Karten, keine Konfliktaufloesung jenseits der ohnehin idempotenten
+/// Server-API) - fuer den vollstaendigen lokalen Datenbestand ist drift
+/// vorgesehen, sobald Schemata und Faelle ebenfalls offline gebraucht werden
+/// (siehe docs/03-roadmap.md, M2).
 class AppState extends ChangeNotifier {
   AppState({ApiClient? api}) : api = api ?? ApiClient();
 
   final ApiClient api;
 
   static const _tokenKey = 'subsumo.token';
+  static const _outboxKey = 'subsumo.outbox';
+  static const _dueCardsCacheKey = 'subsumo.due_cards_cache';
 
   bool loading = false;
   String? error;
@@ -57,23 +75,87 @@ class AppState extends ChangeNotifier {
   Map<String, dynamic>? coverage;
   List<Map<String, dynamic>> dueCards = [];
 
-  /// Ungesendete Reviews. Bleiben erhalten, bis der Server sie bestaetigt hat.
+  /// True, solange [dueCards] aus dem lokalen Zwischenspeicher stammt statt
+  /// vom Server bestaetigt zu sein - z. B. weil der letzte Ladeversuch offline
+  /// war. Die UI kann das anzeigen, ohne dass die Karten deshalb verschwinden.
+  bool dueCardsFromCache = false;
+
+  /// Ungesendete Reviews. Bleiben erhalten, bis der Server sie bestaetigt hat -
+  /// auch ueber einen App-Neustart hinweg (siehe [_persistOutbox]).
   final List<PendingReview> outbox = [];
 
   bool get isAuthenticated => api.isAuthenticated;
 
+  /// Einmal beim Start aufzurufen: stellt Login, Outbox und den zuletzt
+  /// bekannten Kartenstapel wieder her - in dieser Reihenfolge, damit ein
+  /// Offline-Start sofort etwas Sinnvolles zeigt, statt auf das Netz zu warten.
   Future<void> restoreSession() async {
     final prefs = await SharedPreferences.getInstance();
+    await _restoreOutbox(prefs);
+    _restoreCachedDueCards(prefs);
+
     final token = prefs.getString(_tokenKey);
     if (token == null) return;
     api.setToken(token);
     try {
       user = await api.me();
       notifyListeners();
+      // Angemeldet und (jetzt erwiesenermassen) online - liegen gebliebene
+      // Bewertungen aus einer frueheren Offline-Phase gleich nachreichen.
+      unawaited(flushOutbox());
     } on ApiException {
       // Abgelaufenes Token: still verwerfen, der Nutzer meldet sich neu an.
       await signOut();
+    } on Exception {
+      // Kein Netz beim Start: Token bleibt gueltig, der zwischengespeicherte
+      // Zustand (Outbox, Karten) ist trotzdem sofort nutzbar.
     }
+  }
+
+  Future<void> _restoreOutbox(SharedPreferences prefs) async {
+    final raw = prefs.getString(_outboxKey);
+    if (raw == null) return;
+    try {
+      final decoded = jsonDecode(raw) as List;
+      outbox
+        ..clear()
+        ..addAll(
+          decoded.map((e) => PendingReview.fromJson(e as Map<String, dynamic>)),
+        );
+    } on FormatException {
+      // Beschaedigter Eintrag - lieber leer starten als beim Start abstuerzen.
+      await prefs.remove(_outboxKey);
+    }
+  }
+
+  Future<void> _persistOutbox() async {
+    final prefs = await SharedPreferences.getInstance();
+    if (outbox.isEmpty) {
+      await prefs.remove(_outboxKey);
+      return;
+    }
+    await prefs.setString(
+      _outboxKey,
+      jsonEncode(outbox.map((r) => r.toJson()).toList()),
+    );
+  }
+
+  void _restoreCachedDueCards(SharedPreferences prefs) {
+    final raw = prefs.getString(_dueCardsCacheKey);
+    if (raw == null) return;
+    try {
+      final decoded = jsonDecode(raw) as List;
+      dueCards = decoded.cast<Map<String, dynamic>>();
+      dueCardsFromCache = true;
+    } on FormatException {
+      // Beschaedigter Cache-Eintrag ignorieren - der naechste Online-Ladevorgang
+      // ueberschreibt ihn ohnehin.
+    }
+  }
+
+  Future<void> _persistDueCardsCache() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_dueCardsCacheKey, jsonEncode(dueCards));
   }
 
   Future<void> _persistToken(String token) async {
@@ -97,8 +179,12 @@ class AppState extends ChangeNotifier {
     user = null;
     coverage = null;
     dueCards = [];
+    dueCardsFromCache = false;
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_tokenKey);
+    // Outbox und Kartencache bleiben bewusst bestehen: Ab- und wieder
+    // Anmelden (z. B. nach einem abgelaufenen Token) darf keine noch nicht
+    // gesendeten Bewertungen verlieren.
     notifyListeners();
   }
 
@@ -106,14 +192,42 @@ class AppState extends ChangeNotifier {
         coverage = await api.coverage();
       });
 
-  Future<bool> loadDueCards() => _guard(() async {
-        dueCards = await api.dueCards(limit: 30);
-      });
+  /// Laedt faellige Karten. Schlaegt der Netzaufruf fehl, bleibt der zuletzt
+  /// zwischengespeicherte Stapel sichtbar (siehe [dueCardsFromCache]) statt
+  /// eines leeren Bildschirms - Offline-Lernen ist der Regelfall, nicht die
+  /// Ausnahme (siehe docs/01-produktvision.md, "Offline ist Pflicht").
+  Future<bool> loadDueCards() async {
+    loading = true;
+    error = null;
+    notifyListeners();
+    try {
+      dueCards = await api.dueCards(limit: 30);
+      dueCardsFromCache = false;
+      await _persistDueCardsCache();
+      return true;
+    } on ApiException catch (e) {
+      error = e.message;
+      return false;
+    } on Exception {
+      if (dueCards.isNotEmpty) {
+        dueCardsFromCache = true;
+        error = 'Offline - zeige die zuletzt geladenen Karten.';
+      } else {
+        error = 'Server nicht erreichbar. Laeuft das Backend auf $kApiBase?';
+      }
+      return false;
+    } finally {
+      loading = false;
+      notifyListeners();
+    }
+  }
 
   /// Bewertet die oberste Karte und legt das Ereignis in die Outbox.
   ///
   /// Die Karte verschwindet sofort aus dem Stapel - das Lernen darf nie auf
-  /// eine Netzantwort warten.
+  /// eine Netzantwort warten. Outbox und Kartenstapel werden vor dem
+  /// Sende-Versuch persistiert, nicht erst danach: stuerzt die App zwischen
+  /// Bewertung und Bestaetigung ab, ist die Bewertung trotzdem nicht verloren.
   Future<void> rateTopCard(int rating, {int elapsedMs = 0}) async {
     if (dueCards.isEmpty) return;
     final card = dueCards.removeAt(0);
@@ -127,6 +241,7 @@ class AppState extends ChangeNotifier {
       ),
     );
     notifyListeners();
+    await Future.wait([_persistOutbox(), _persistDueCardsCache()]);
     await flushOutbox();
   }
 
@@ -138,6 +253,7 @@ class AppState extends ChangeNotifier {
     try {
       await api.submitReviews(batch.map((r) => r.toJson()).toList());
       outbox.removeWhere((r) => batch.any((b) => b.clientId == r.clientId));
+      await _persistOutbox();
       error = null;
     } on Exception {
       error = 'Offline - ${outbox.length} Bewertung(en) werden spaeter gesendet.';

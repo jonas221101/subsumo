@@ -63,6 +63,15 @@ class _ReviewPageState extends State<ReviewPage> {
                 const SizedBox(width: 8),
                 Text('${app.dueCards.length} offen'),
                 const Spacer(),
+                if (app.dueCardsFromCache)
+                  const Tooltip(
+                    message: 'Kein Netz erreichbar - zeigt den zuletzt '
+                        'geladenen Kartenstapel.',
+                    child: Chip(
+                      avatar: Icon(Icons.cloud_off, size: 16),
+                      label: Text('offline'),
+                    ),
+                  ),
                 if (card['content_changed'] == true)
                   const Tooltip(
                     message: 'Der Inhalt dieser Karte wurde fachlich aktualisiert.',

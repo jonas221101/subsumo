@@ -110,17 +110,20 @@ Zeitplan und Risiken: [`docs/03-roadmap.md`](docs/03-roadmap.md).
 - REST-API mit Auth, idempotentem Offline-Sync und Coverage-Auswertung
 - Content-Pipeline mit Pflichtfeldern, Slug-Eindeutigkeit und Altersprüfung
 - Flutter-Client: Login, Fortschritt, Karteikarten, Schemata, Fälle,
-  Gutachten-Trainer mit Live-Feedback
+  Gutachten-Trainer mit Live-Feedback — mit einer Offline-Grundschicht:
+  Kartencache und Review-Outbox überleben Neustart und Netzausfall
+  (`app/lib/state.dart`, 11 Tests ohne laufenden Server via `http.MockClient`)
 - **KI-Redaktion:** Collector- und Reviewer-Agent erzeugen und prüfen Inhalte
   automatisiert (Struktur-Gate + unabhängige fachliche Prüfung gegen
-  Urheberrecht/RDG/Plausibilität). `backend/scripts/redaktion_cli.py`,
+  Urheberrecht/RDG/Plausibilität) — inklusive lokalem Brücken-Modus ohne
+  API-Key für Offline-Tests. `backend/scripts/redaktion_cli.py`,
   Details in [`docs/08-ki-redaktion.md`](docs/08-ki-redaktion.md)
 - **Spike Web-Editor abgeschlossen, Ergebnis GO:** 48 ms Ø-Latenz pro
   Tastendruck bei einem 38.754-Zeichen-Dokument, echt gemessen (Flutter
   Release-Build, headless Chromium) statt geschätzt. Details in
   [`docs/07-spike-web-editor.md`](docs/07-spike-web-editor.md)
 
-**Inhalte:** 3 Themen, 21 Karten, 5 Prüfungsschemata, 3 Fälle mit
+**Inhalte:** 4 Themen, 28 Karten, 6 Prüfungsschemata, 4 Fälle mit
 Erwartungshorizont — über alle drei Rechtsgebiete.
 
 Was als Nächstes kommt: [`docs/03-roadmap.md`](docs/03-roadmap.md).

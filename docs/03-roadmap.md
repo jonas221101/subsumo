@@ -26,12 +26,24 @@ Fachredaktion (Teilzeit)**. Jeder Meilenstein endet mit etwas Benutzbarem.
   Code: `backend/app/services/redaktion/`
 
 ## M1 — Karteikarten end-to-end (3–4 Wochen)
-- Flutter: Review-Screen (Karte zeigen/aufdecken/bewerten), Offline-Speicher
-  (drift), Outbox-Sync
-- Backend: `/reviews/batch`, Content-Manifest mit Delta-Sync
+- Flutter: Review-Screen (Karte zeigen/aufdecken/bewerten) ✅
+- **Offline-Grundschicht ✅ (Zwischenstand, kein vollwertiger Ersatz für drift):**
+  Kartencache und Review-Outbox überleben Neustart und Netzausfall
+  (`SharedPreferences`, `app/lib/state.dart`) — ein Review wird lokal
+  gespeichert, *bevor* der Sendeversuch beginnt, und die zuletzt geladenen
+  Karten bleiben nach einem Netzfehler sichtbar statt eines leeren Screens.
+  11 Tests mit `http.MockClient` (kein Server nötig), `test/state_test.dart`.
+  Bewusst **kein** Volltext-Cache für Schemata/Fälle und keine echte
+  Konfliktauflösung jenseits der ohnehin idempotenten Server-API — der
+  Wechsel auf drift bleibt für M2 vorgesehen, sobald auch Schemata und Fälle
+  offline gebraucht werden
+- Backend: `/reviews/batch` ✅, Content-Manifest mit Delta-Sync (Manifest
+  existiert, Client zieht noch keine Deltas — offen)
 - 500 kuratierte Karten BGB AT + Strafrecht AT — Kandidat: KI-Redaktion auf den
   kuratierten Rückstand (`backend/scripts/redaktion_cli.py backlog`) ansetzen
-  und die Ausbeute stichprobenartig prüfen, statt alles von Hand zu schreiben
+  und die Ausbeute stichprobenartig prüfen, statt alles von Hand zu schreiben.
+  Erster Beleg, dass das funktioniert: `zr-at-stellvertretung.yaml`, live über
+  den Brücken-Modus erzeugt (`docs/08-ki-redaktion.md`)
 - ~~Aus dem Spike mitgenommen: eigene Schriftdatei als Flutter-Asset bündeln~~
   **Erledigt** (siehe `docs/07-spike-web-editor.md`); offen: `package:web`
   statt `dart:html` konsequent in jedem Web-spezifischen Code
