@@ -26,6 +26,10 @@ VALID_AREAS = {a.value for a in Area}
 VALID_CARD_TYPES = {t.value for t in CardType}
 # Ab diesem Alter meldet die CI einen Inhalt zur redaktionellen Pruefung.
 STALE_AFTER_MONTHS = 18
+# Status-Werte des optionalen ``topic.redaktion``-Blocks (KI-Redaktion,
+# siehe docs/08-ki-redaktion.md). Fehlt der Block, gilt ein Inhalt als
+# regulaer redigiert (M0-Bestand vor der KI-Redaktion).
+VALID_REDAKTION_STATUS = {"ki-freigegeben", "mensch-freigegeben", "in-pruefung"}
 
 
 @dataclass
@@ -105,6 +109,18 @@ def load_content(content_dir: Path) -> ContentBundle:
         topic.setdefault("relevance", 3)
         if not 1 <= int(topic["relevance"]) <= 5:
             bundle.errors.append(f"{rel} topic: 'relevance' muss zwischen 1 und 5 liegen")
+        redaktion = topic.get("redaktion")
+        if redaktion is not None:
+            status = redaktion.get("status") if isinstance(redaktion, dict) else None
+            if status not in VALID_REDAKTION_STATUS:
+                bundle.errors.append(
+                    f"{rel} topic.redaktion: 'status' fehlt oder unbekannt "
+                    f"(erlaubt: {', '.join(sorted(VALID_REDAKTION_STATUS))})"
+                )
+            elif status == "in-pruefung":
+                bundle.warnings.append(
+                    f"{rel} topic: Status 'in-pruefung' - noch nicht fuer Nutzer freigegeben"
+                )
         bundle.topics.append(topic)
 
         def register(slug: str, where: str) -> bool:

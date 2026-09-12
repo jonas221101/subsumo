@@ -3,7 +3,7 @@
 Zeitangaben in Wochen, gerechnet für **1–2 Entwickler + 1 juristische
 Fachredaktion (Teilzeit)**. Jeder Meilenstein endet mit etwas Benutzbarem.
 
-## M0 — Fundament ✅ (in diesem Commit)
+## M0 — Fundament ✅
 - Monorepo, Problemanalyse, Architekturentscheidung
 - Backend lauffähig: Datenmodell, Auth, FSRS-Scheduler, Gutachten-Analyse,
   Lernplaner, Content-Loader, REST-API, Testsuite
@@ -11,13 +11,29 @@ Fachredaktion (Teilzeit)**. Jeder Meilenstein endet mit etwas Benutzbarem.
 - Flutter-Client-Gerüst mit Navigation und API-Schicht
 - CI (Backend-Tests + Content-Validierung)
 
+## M0+ — KI-Redaktion & Spike ✅
+- **Spike Text-Editor-Qualität auf Flutter Web: abgeschlossen, Ergebnis GO.**
+  48 ms Ø-Latenz/Tastendruck (p95 54 ms) bei 38.754 Zeichen, gemessen mit
+  echtem Flutter-Release-Build unter headless Chromium — deutlich unter der
+  100-ms-Wahrnehmbarkeitsschwelle, ohne Degradation über den Testlauf. Der
+  native Editor trägt den Klausur-Simulator, kein Bridge-Fallback nötig.
+  Details, Methodik und drei Nebenbefunde (Font-Bundling, `dart:html` vs.
+  `package:web`, `--web-renderer` entfernt): `docs/07-spike-web-editor.md`
+- **KI-Redaktion:** Zwei-Agenten-Pipeline (Collector schreibt, Reviewer prüft
+  unabhängig gegen Urheberrecht/RDG/fachliche Plausibilität), Struktur-Gate
+  identisch zur CI, Herkunftsblock je Inhalt. Löst den Content-Engpass aus
+  Challenge 10 direkt an der Wurzel. Details: `docs/08-ki-redaktion.md`,
+  Code: `backend/app/services/redaktion/`
+
 ## M1 — Karteikarten end-to-end (3–4 Wochen)
 - Flutter: Review-Screen (Karte zeigen/aufdecken/bewerten), Offline-Speicher
   (drift), Outbox-Sync
 - Backend: `/reviews/batch`, Content-Manifest mit Delta-Sync
-- 500 kuratierte Karten BGB AT + Strafrecht AT
-- **Spike (blockierend): Text-Editor-Qualität auf Flutter Web** — entscheidet,
-  ob der Klausur-Simulator auf Web nativ oder über eine Bridge läuft
+- 500 kuratierte Karten BGB AT + Strafrecht AT — Kandidat: KI-Redaktion auf den
+  kuratierten Rückstand (`backend/scripts/redaktion_cli.py backlog`) ansetzen
+  und die Ausbeute stichprobenartig prüfen, statt alles von Hand zu schreiben
+- Aus dem Spike mitgenommen: eigene Schriftdatei als Flutter-Asset bündeln
+  (nicht auf Googles Font-CDN verlassen), `package:web` statt `dart:html`
 - *Ergebnis:* Eine App, mit der man ab Semester 1 sinnvoll lernt
 
 ## M2 — Schemata & Fälle (4–5 Wochen)
@@ -57,8 +73,9 @@ Fachredaktion (Teilzeit)**. Jeder Meilenstein endet mit etwas Benutzbarem.
 
 | Risiko | Wirkung | Gegenmaßnahme | Wann |
 |---|---|---|---|
-| **Content ist der Engpass, nicht der Code** | Ohne Inhalte ist die App wertlos | Fachredaktion ab Tag 1 parallel, Autoren-Workflow früh, Format steht in M0 | sofort |
-| Flutter-Web-Texteditor untauglich für 5-h-Klausur | M4 kippt | Spike in M1, nicht in M4 | M1 |
-| KI-Korrektur wird als unfair empfunden | Kernfeature verliert Vertrauen | Bewertung nur gegen Erwartungshorizont, jeder Abzug anklickbar, Kalibrierung gegen Dozenten | M3 |
-| Urheberrecht bei Inhalten | Abmahnrisiko | Nur amtliche Werke (§ 5 UrhG) + Eigenproduktion, Quellenpflicht im Format | laufend |
-| RDG-Abgrenzung | Rechtliches Risiko | Keine Bewertung echter Sachverhalte, Hinweis im Produkt | laufend |
+| **Content ist der Engpass, nicht der Code** | Ohne Inhalte ist die App wertlos | KI-Redaktion (Collector+Reviewer) ab M0+ produktiv, Format steht seit M0 | laufend |
+| ~~Flutter-Web-Texteditor untauglich für 5-h-Klausur~~ | ~~M4 kippt~~ | **Erledigt:** Spike in M0+ statt M4, Ergebnis GO (48ms Ø-Latenz), siehe `docs/07-spike-web-editor.md` | ✅ M0+ |
+| KI-Korrektur (Klausur) wird als unfair empfunden | Kernfeature verliert Vertrauen | Bewertung nur gegen Erwartungshorizont, jeder Abzug anklickbar, Kalibrierung gegen Dozenten | M3 |
+| KI-Redaktion halluziniert Normzitate | Falscher Lernstoff, Vertrauensverlust | Reviewer-Agent als zweite Instanz, menschliche Stichprobe empfohlen; echter Normindex-Abgleich erst ab M2 (Norm-Explorer) - siehe Grenzen in `docs/08-ki-redaktion.md` | laufend, verschärft bis M2 |
+| Urheberrecht bei Inhalten | Abmahnrisiko | Nur amtliche Werke (§ 5 UrhG) + Eigenproduktion, Quellenpflicht im Format, Reviewer-Agent prüft zusätzlich | laufend |
+| RDG-Abgrenzung | Rechtliches Risiko | Keine Bewertung echter Sachverhalte, Hinweis im Produkt, Reviewer-Agent prüft Fiktivität jedes Falls | laufend |

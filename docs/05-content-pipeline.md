@@ -72,10 +72,33 @@ Redaktionslauf.
 
 ## Redaktionsworkflow
 
-1. Autor legt einen Branch an und schreibt/aendert YAML
-2. CI validiert Format und Quellenangaben
-3. Fachliche Review durch eine zweite Person im Pull Request
-4. Merge → Release → Clients ziehen das Delta ueber `GET /v1/content/manifest`
+Seit M0+ ist der Primaerweg die **KI-Redaktion**: zwei unabhaengige Agenten
+(Collector schreibt, Reviewer prueft) erzeugen und validieren Inhalte
+automatisiert. Details, Architekturdiagramm und Grenzen in
+[`docs/08-ki-redaktion.md`](08-ki-redaktion.md); Code unter
+`backend/app/services/redaktion/`, CLI: `backend/scripts/redaktion_cli.py`.
+
+1. `redaktion_cli.py run` / `backlog` → Collector-Agent schreibt einen
+   Entwurf gegen das Format in diesem Dokument
+2. Struktur-Gate (`load_content`, dieselbe Funktion wie unten) prueft
+   Pflichtfelder, Slug-Eindeutigkeit, Erwartungshorizont — bei Fehlern zurueck
+   an den Collector, ohne dass der Reviewer den Entwurf je sieht
+3. Reviewer-Agent prueft unabhaengig Urheberrecht, RDG-Konformitaet und
+   fachliche Plausibilitaet — bei Ablehnung ebenfalls zurueck an den Collector
+   (bis zu drei Runden)
+4. Erst nach beiden Freigaben: Datei landet in `content/`, mit
+   `topic.redaktion`-Herkunftsblock (`ki-freigegeben`)
+5. Menschliche Stichprobe vor der ersten Nutzung bleibt empfohlen (siehe
+   Grenzen in `docs/08-ki-redaktion.md`), ist aber keine technische
+   Voraussetzung fuer die CI
+6. Commit → CI validiert erneut (Format + Alterspruefung) → Merge → Release →
+   Clients ziehen das Delta ueber `GET /v1/content/manifest`
+
+Der klassische Weg — ein Mensch schreibt oder aendert YAML direkt, zweite
+Person reviewt im Pull Request — bleibt fuer Korrekturen und redaktionelle
+Feinarbeit vollstaendig moeglich; die CI unterscheidet nicht zwischen
+KI- und menschlich verfassten Dateien, ausser am optionalen
+`redaktion`-Block.
 
 ## Was beim Aendern eines Inhalts mit dem Lernfortschritt passiert
 

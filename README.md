@@ -64,7 +64,13 @@ export SUBSUMO_LLM_API_KEY="sk-ant-..."
 ```
 
 Ohne LLM-Key läuft die App vollständig — nur die inhaltliche Klausurbewertung
-ist dann heuristisch statt KI-gestützt.
+ist dann heuristisch statt KI-gestützt. Derselbe Key treibt auch die
+**KI-Redaktion** (`backend/scripts/redaktion_cli.py`, siehe
+[`docs/08-ki-redaktion.md`](docs/08-ki-redaktion.md)):
+
+```bash
+python scripts/redaktion_cli.py backlog --area zivilrecht --limit 3
+```
 
 ---
 
@@ -90,7 +96,7 @@ Zeitplan und Risiken: [`docs/03-roadmap.md`](docs/03-roadmap.md).
 
 ## Stand
 
-**M0 abgeschlossen.** Lauffähig und getestet:
+**M0 + M0-Erweiterung abgeschlossen.** Lauffähig und getestet:
 
 - FSRS-Scheduler mit Ziel-Retention je Kartentyp, Lernschritten, Lastprognose
   und Neuberechnung aus dem Ereignisstrom
@@ -105,6 +111,14 @@ Zeitplan und Risiken: [`docs/03-roadmap.md`](docs/03-roadmap.md).
 - Content-Pipeline mit Pflichtfeldern, Slug-Eindeutigkeit und Altersprüfung
 - Flutter-Client: Login, Fortschritt, Karteikarten, Schemata, Fälle,
   Gutachten-Trainer mit Live-Feedback
+- **KI-Redaktion:** Collector- und Reviewer-Agent erzeugen und prüfen Inhalte
+  automatisiert (Struktur-Gate + unabhängige fachliche Prüfung gegen
+  Urheberrecht/RDG/Plausibilität). `backend/scripts/redaktion_cli.py`,
+  Details in [`docs/08-ki-redaktion.md`](docs/08-ki-redaktion.md)
+- **Spike Web-Editor abgeschlossen, Ergebnis GO:** 48 ms Ø-Latenz pro
+  Tastendruck bei einem 38.754-Zeichen-Dokument, echt gemessen (Flutter
+  Release-Build, headless Chromium) statt geschätzt. Details in
+  [`docs/07-spike-web-editor.md`](docs/07-spike-web-editor.md)
 
 **Inhalte:** 3 Themen, 21 Karten, 5 Prüfungsschemata, 3 Fälle mit
 Erwartungshorizont — über alle drei Rechtsgebiete.

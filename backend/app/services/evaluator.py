@@ -22,6 +22,7 @@ from dataclasses import asdict, dataclass, field
 from typing import Any, Protocol
 
 from app.config import get_settings
+from app.core.llm import LLMClient, get_llm_client
 from app.services.gutachten import GutachtenReport
 
 # Notenskala der juristischen Staatspruefungen (JurNotSkalV): untere Grenze
@@ -219,9 +220,12 @@ class LLMEvaluator:
     Es wird keine Nutzerkennung uebertragen (Pseudonymisierung, Art. 32 DSGVO).
     """
 
-    def __init__(self) -> None:
+    def __init__(self, client: LLMClient | None = None) -> None:
         self.settings = get_settings()
         self.fallback = HeuristicEvaluator()
+        # Injizierbar fuer Tests (FakeLLMClient) - Produktionscode laesst das
+        # weg und bekommt den echten Anthropic-Client ueber get_llm_client().
+        self.client = client
 
     @property
     def name(self) -> str:
@@ -254,32 +258,14 @@ class LLMEvaluator:
         self, *, text: str, expectation: dict, structure: GutachtenReport
     ) -> Evaluation:
         base = self.fallback.evaluate(text=text, expectation=expectation, structure=structure)
-        if self.settings.llm_provider != "anthropic" or not self.settings.llm_api_key:
+        client = self.client or get_llm_client()
+        if not getattr(client, "available", True):
             return base
 
         checkpoints = parse_expectation(expectation)
         try:
-            import httpx
-
-            response = httpx.post(
-                "https://api.anthropic.com/v1/messages",
-                timeout=self.settings.llm_timeout_s,
-                headers={
-                    "x-api-key": self.settings.llm_api_key,
-                    "anthropic-version": "2023-06-01",
-                    "content-type": "application/json",
-                },
-                json={
-                    "model": self.settings.llm_model,
-                    "max_tokens": 4000,
-                    "messages": [
-                        {"role": "user", "content": self._build_prompt(text, checkpoints)}
-                    ],
-                },
-            )
-            response.raise_for_status()
-            payload = response.json()["content"][0]["text"]
-            parsed = json.loads(re.search(r"\{.*\}", payload, re.S).group(0))
+            response = client.complete(self._build_prompt(text, checkpoints), max_tokens=4000)
+            parsed = json.loads(re.search(r"\{.*\}", response.text, re.S).group(0))
         except Exception:  # noqa: BLE001 - jeder Fehler fuehrt zum Fallback
             return base
 
