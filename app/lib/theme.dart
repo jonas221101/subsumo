@@ -7,19 +7,31 @@ ThemeData buildTheme(Brightness brightness) {
     seedColor: const Color(0xFF1F3A5F),
     brightness: brightness,
   );
+  // Material2021-Typografie traegt 'Roboto' fest in jedem TextStyle - ein
+  // blosses ThemeData(fontFamily: ...) ueberschreibt das nicht.
+  // TextTheme.apply() ist der dokumentierte Weg, das zu tun. Ohne eigene
+  // Schrift wuerde Flutter Web sie zur Laufzeit von fonts.gstatic.com
+  // nachladen - siehe docs/07-spike-web-editor.md, Nebenbefund 2.
+  final base = brightness == Brightness.dark ? ThemeData.dark() : ThemeData.light();
+  final textTheme = base.textTheme
+      .apply(fontFamily: 'Subsumo')
+      .copyWith(
+        bodyLarge: const TextStyle(fontSize: 16, height: 1.5, fontFamily: 'Subsumo'),
+        bodyMedium: const TextStyle(fontSize: 15, height: 1.5, fontFamily: 'Subsumo'),
+      );
+
   return ThemeData(
     useMaterial3: true,
     colorScheme: scheme,
     scaffoldBackgroundColor: scheme.surface,
+    fontFamily: 'Subsumo',
+    textTheme: textTheme,
+    primaryTextTheme: base.primaryTextTheme.apply(fontFamily: 'Subsumo'),
     filledButtonTheme: FilledButtonThemeData(
       style: FilledButton.styleFrom(
         minimumSize: const Size(0, 48),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
-    ),
-    textTheme: const TextTheme(
-      bodyLarge: TextStyle(fontSize: 16, height: 1.5),
-      bodyMedium: TextStyle(fontSize: 15, height: 1.5),
     ),
   );
 }

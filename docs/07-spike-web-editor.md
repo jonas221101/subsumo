@@ -93,8 +93,14 @@ Kein Grund, in M4 zusätzliche Komplexität für einen contenteditable-Fallback
 einzuplanen.
 
 **Für M1 mitzunehmen:**
-1. Eigene Schriftdatei(en) als Flutter-Assets einbinden, nicht auf den
-   CanvasKit-Font-Fallback verlassen (Nebenbefund 2)
+1. ~~Eigene Schriftdatei(en) als Flutter-Assets einbinden~~ **Erledigt:**
+   `assets/fonts/DejaVuSans.ttf` ist als App-Standardschrift eingebunden
+   (`app/pubspec.yaml`, `app/lib/theme.dart` via `TextTheme.apply()`) und real
+   gegen dieses laufende Backend getestet — Login-Seite und Dashboard
+   rendern Text korrekt ohne Google-Font-Abhängigkeit (Screenshots in der
+   Session, Lizenzhinweis in `app/assets/fonts/LIZENZ.md`). Austausch gegen
+   eine Marken-/Designschrift ist eine spätere, rein gestalterische
+   Entscheidung (M5)
 2. `package:web` statt `dart:html` in jedem Web-spezifischen Code (Nebenbefund 3)
 3. Diese Messung mit einem realen `flutter run -d chrome`-Test auf
    Nutzer-Hardware (echte GPU) einmal gegenkontrollieren, bevor M4 beginnt —

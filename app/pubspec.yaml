@@ -22,3 +22,9 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  # Eigene Schrift statt Flutter Webs CanvasKit-Fallback auf fonts.gstatic.com -
+  # siehe docs/07-spike-web-editor.md (Nebenbefund 2) und assets/fonts/LIZENZ.md.
+  fonts:
+    - family: Subsumo
+      fonts:
+        - asset: assets/fonts/DejaVuSans.ttf

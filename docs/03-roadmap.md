@@ -32,8 +32,9 @@ Fachredaktion (Teilzeit)**. Jeder Meilenstein endet mit etwas Benutzbarem.
 - 500 kuratierte Karten BGB AT + Strafrecht AT — Kandidat: KI-Redaktion auf den
   kuratierten Rückstand (`backend/scripts/redaktion_cli.py backlog`) ansetzen
   und die Ausbeute stichprobenartig prüfen, statt alles von Hand zu schreiben
-- Aus dem Spike mitgenommen: eigene Schriftdatei als Flutter-Asset bündeln
-  (nicht auf Googles Font-CDN verlassen), `package:web` statt `dart:html`
+- ~~Aus dem Spike mitgenommen: eigene Schriftdatei als Flutter-Asset bündeln~~
+  **Erledigt** (siehe `docs/07-spike-web-editor.md`); offen: `package:web`
+  statt `dart:html` konsequent in jedem Web-spezifischen Code
 - *Ergebnis:* Eine App, mit der man ab Semester 1 sinnvoll lernt
 
 ## M2 — Schemata & Fälle (4–5 Wochen)

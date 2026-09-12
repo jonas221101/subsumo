@@ -109,6 +109,29 @@ def _normalize(text: str) -> str:
     return re.sub(r"\s+", " ", text)
 
 
+def _digraph_fold(text: str) -> str:
+    """Loest ASCII-Umlaut-Digraphen auf (ae/oe/ue -> a/o/u).
+
+    Zwei Richtungen, ein Fallback: Ein Stichwort in ASCII-Transliteration
+    ('ausdruecklich') trifft nach _normalize() keinen Text mit echtem Umlaut
+    ('ausdrücklich' -> 'ausdrucklich', Einzelbuchstabe) - und umgekehrt trifft
+    ein Stichwort mit echtem Umlaut ('überzeugend' -> 'uberzeugend') keinen
+    Nutzertext, der 'ueberzeugend' ohne Umlauttaste getippt hat. Beides wurde
+    beim ersten echten End-to-End-Testlauf der KI-Redaktion real beobachtet.
+
+    Deshalb wird diese Faltung auf BEIDE Seiten des Vergleichs angewendet -
+    bewusst nur als zweiter, nachrangiger Versuch, nachdem der direkte
+    Treffer auf dem unveraenderten Text gescheitert ist. Sie kann seltene
+    echte Wortfolgen wie 'neue' -> 'neu' verkuerzen und so einen Treffer
+    liefern, der bei genauerem Hinsehen Zufall ist - hinnehmbar fuer einen
+    ohnehin heuristischen Fallback-Evaluator (siehe HEURISTIK_MAX_PUNKTE),
+    nicht fuer die LLM-Bewertung, die diese Funktion nicht verwendet.
+    """
+    for digraph, letter in (("ae", "a"), ("oe", "o"), ("ue", "u")):
+        text = text.replace(digraph, letter)
+    return text
+
+
 class Evaluator(Protocol):
     def evaluate(
         self, *, text: str, expectation: dict, structure: GutachtenReport
@@ -138,6 +161,7 @@ class HeuristicEvaluator:
     ) -> Evaluation:
         checkpoints = parse_expectation(expectation)
         haystack = _normalize(text)
+        folded_haystack = _digraph_fold(haystack)
         norms_seen = {_normalize(n).replace(" ", "") for n in structure.norms}
 
         results: list[PruefpunktResult] = []
@@ -145,7 +169,8 @@ class HeuristicEvaluator:
             evidence = ""
             hit = False
             for kw in cp.keywords:
-                if _normalize(kw) in haystack:
+                normalized_kw = _normalize(kw)
+                if normalized_kw in haystack or _digraph_fold(normalized_kw) in folded_haystack:
                     hit, evidence = True, kw
                     break
             if not hit:

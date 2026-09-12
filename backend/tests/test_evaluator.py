@@ -93,6 +93,30 @@ def test_normtreffer_zaehlen_auch_ohne_stichwort(evaluator):
     assert p1.hit and "433" in p1.evidence
 
 
+def test_stichwort_in_digraph_schreibweise_matcht_echten_umlaut_im_text(evaluator):
+    """Regressionstest fuer einen realen Fund aus dem ersten End-to-End-Lauf
+    der KI-Redaktion (Fall 'Anscheinsvollmacht'): ein Stichwort, das in
+    ASCII-Digraph-Schreibweise verfasst wurde ('ausdruecklich'), muss auch
+    einen Text mit echtem Umlaut ('ausdrücklich') treffen - und umgekehrt."""
+    erwartung = {
+        "pruefpunkte": [
+            {"id": "p1", "label": "Test", "weight": 1.0, "keywords": ["ausdruecklich"]}
+        ]
+    }
+    text = "Eine ausdrückliche Vollmacht wurde nicht erteilt. " * 1
+    result = evaluator.evaluate(text=text, expectation=erwartung, structure=analyze(text))
+    assert result.checkpoints[0].hit is True
+
+
+def test_stichwort_mit_echtem_umlaut_matcht_digraph_im_text(evaluator):
+    erwartung = {
+        "pruefpunkte": [{"id": "p1", "label": "Test", "weight": 1.0, "keywords": ["überzeugend"]}]
+    }
+    text = "Die Argumentation ist ueberzeugend dargelegt worden."
+    result = evaluator.evaluate(text=text, expectation=erwartung, structure=analyze(text))
+    assert result.checkpoints[0].hit is True
+
+
 def test_fehlender_kernpunkt_deckelt_die_punktzahl(evaluator):
     result = evaluator.evaluate(
         text=OHNE_KERNPUNKT, expectation=ERWARTUNG, structure=analyze(OHNE_KERNPUNKT)

@@ -114,8 +114,8 @@ export SUBSUMO_LLM_API_KEY=sk-ant-...
 
 # Ein einzelnes Thema
 python scripts/redaktion_cli.py run --area zivilrecht \
-  --title "Stellvertretung" \
-  --context "BGB AT, §§ 164 ff. BGB, Vollmacht und Vertretungsmacht"
+  --title "Leistungsstoerungen: Unmoeglichkeit" \
+  --context "Schuldrecht AT, § 275 BGB, § 283 BGB"
 
 # Den kuratierten Rückstand abarbeiten (BACKLOG in redaktion_cli.py)
 python scripts/redaktion_cli.py backlog --area strafrecht --limit 3
@@ -129,6 +129,48 @@ Die Liste der zu bearbeitenden Themen (`BACKLOG` in `redaktion_cli.py`)
 wird von Hand gepflegt — *welcher* Stoff examensrelevant und als Nächstes
 dran ist, bleibt eine redaktionelle/fachliche Entscheidung. Die Agenten
 entscheiden nicht über den Lehrplan, nur über die Ausarbeitung.
+
+## Lokaler Brücken-Modus (kein API-Key nötig)
+
+`--engine bridge` ersetzt den Anthropic-Aufruf durch einen Dateiaustausch:
+Der Agent, mit dem gerade im Gespräch gearbeitet wird, beantwortet Collector-
+und Reviewer-Prompts direkt — kein Netz, kein Key. Code:
+`backend/app/services/redaktion/bridge_client.py`.
+
+```bash
+python scripts/redaktion_cli.py run --engine bridge \
+  --area zivilrecht --title "Stellvertretung" \
+  --context "BGB AT, §§ 164 ff. BGB, Vollmacht und Vertretungsmacht" \
+  --bridge-dir /tmp/redaktion-bridge
+```
+
+Der Prozess pausiert nach jedem Prompt und wartet auf eine Antwortdatei:
+
+1. `request_001.txt` erscheint im Bridge-Verzeichnis (der Collector-Prompt)
+2. Der Prompt wird beantwortet — ein vollständiges YAML-Dokument nach dem
+   Schema aus `docs/05-content-pipeline.md`, exakt nach den Vorgaben im
+   Prompt (Urheberrecht, RDG, Normzitate) — als `response_001.txt` +
+   `response_001.ready` abgelegt
+3. Besteht der Entwurf das Struktur-Gate, erscheint `request_002.txt` (der
+   Reviewer-Prompt mit dem Entwurf) — unabhängig und kritisch beantwortet,
+   als JSON (`{"approved": ..., "issues": [...], "severity": ...}`)
+4. Bei Ablehnung (Struktur- oder Reviewer-Gate) beginnt eine neue Runde mit
+   konkretem Feedback im nächsten Collector-Prompt
+
+**So entstanden**, real erprobt und nicht nur simuliert: Das Thema
+`zr-at-stellvertretung` (7 Karten, 1 Schema, 1 Fall) im ersten Durchlauf
+dieses Modus — beide Gates im ersten Anlauf bestanden, ohne
+API-Key. Dabei wurde beim ersten echten End-to-End-Test der Bewertung gegen
+diesen Fall ein realer Bug in `evaluator.py` gefunden und behoben: Stichworte
+in ASCII-Umlaut-Schreibweise (`ausdruecklich`) trafen keinen Text mit echtem
+Umlaut (`ausdrücklich`) und umgekehrt — siehe `_digraph_fold()` und die
+Regressionstests in `tests/test_evaluator.py`. Genau der Wert eines echten
+End-to-End-Laufs gegenüber reinen Unit-Tests mit Fake-Antworten.
+
+**Grenzen des Brücken-Modus:** Er ersetzt keinen echten API-Aufruf für den
+Produktivbetrieb (`--engine anthropic` bleibt der Weg für `backlog`-Läufe im
+großen Maßstab) und ist an eine laufende Unterhaltung gebunden — für
+automatisierte, unbeaufsichtigte Läufe (z. B. ein CI-Workflow) ungeeignet.
 
 ## Grenzen, ehrlich benannt
 

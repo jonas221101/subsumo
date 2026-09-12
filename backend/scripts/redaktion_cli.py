@@ -13,9 +13,16 @@ Beispiele:
     # Nur pruefen, welche Inhalte veraltet sind (keine KI noetig)
     python scripts/redaktion_cli.py audit-staleness
 
-Erfordert SUBSUMO_LLM_PROVIDER=anthropic und SUBSUMO_LLM_API_KEY - ohne das
-bricht 'run'/'backlog' sofort mit einer klaren Fehlermeldung ab (siehe
-CollectorError), statt still leere Inhalte zu erzeugen.
+    # Lokaler Bruecken-Modus: kein API-Key noetig, der Agent im Gespraech
+    # beantwortet Collector- und Reviewer-Prompts selbst ueber Dateien.
+    # Siehe docs/08-ki-redaktion.md, Abschnitt "Lokaler Bruecken-Modus".
+    python scripts/redaktion_cli.py run --engine bridge --area zivilrecht \\
+        --title "Stellvertretung" --bridge-dir /tmp/redaktion-bridge
+
+Mit --engine anthropic (Default) erfordert 'run'/'backlog'
+SUBSUMO_LLM_PROVIDER=anthropic und SUBSUMO_LLM_API_KEY - ohne das bricht der
+Lauf sofort mit einer klaren Fehlermeldung ab (siehe CollectorError), statt
+still leere Inhalte zu erzeugen.
 """
 
 from __future__ import annotations
@@ -28,9 +35,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from app.config import REPO_ROOT, get_settings  # noqa: E402
 from app.services.content import STALE_AFTER_MONTHS, load_content  # noqa: E402
-from app.services.redaktion.collector import CollectorError, TopicRequest  # noqa: E402
+from app.services.redaktion.bridge_client import FileBridgeLLMClient  # noqa: E402
+from app.services.redaktion.collector import (  # noqa: E402
+    CollectorAgent,
+    CollectorError,
+    TopicRequest,
+)
 from app.services.redaktion.pipeline import RedaktionPipeline  # noqa: E402
-from app.services.redaktion.reviewer import ReviewerError  # noqa: E402
+from app.services.redaktion.reviewer import ReviewerAgent, ReviewerError  # noqa: E402
 
 # Kuratierter Rueckstand examensrelevanter Themen, die noch fehlen. Bewusst
 # von Hand gepflegt statt vom Modell selbst vorgeschlagen: WAS wichtig ist,
@@ -68,19 +80,47 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
 }
 
 
+def _build_pipeline(args: argparse.Namespace) -> RedaktionPipeline | None:
+    """Baut die Pipeline fuer das gewaehlte Engine - oder gibt None zurueck
+    und meldet den Grund, wenn die Voraussetzungen fehlen."""
+    if args.engine == "bridge":
+        if not args.bridge_dir:
+            print("--bridge-dir ist im Bruecken-Modus erforderlich.")
+            return None
+        client = FileBridgeLLMClient(args.bridge_dir)
+        print(
+            f"Bruecken-Modus aktiv: Anfragen erscheinen in {args.bridge_dir} als "
+            "request_NNN.txt. Antworten dort als response_NNN.txt + "
+            "response_NNN.ready hinterlegen."
+        )
+        return RedaktionPipeline(
+            content_dir=args.content_dir,
+            collector=CollectorAgent(client=client),
+            reviewer=ReviewerAgent(client=client),
+        )
+
+    settings = get_settings()
+    if settings.llm_provider != "anthropic" or not settings.llm_api_key:
+        print(
+            "SUBSUMO_LLM_PROVIDER=anthropic und SUBSUMO_LLM_API_KEY sind erforderlich "
+            "(oder --engine bridge fuer den Offline-Testmodus ohne API-Key)."
+        )
+        return None
+    return RedaktionPipeline(content_dir=args.content_dir)
+
+
 def cmd_run(args: argparse.Namespace) -> int:
-    pipeline = RedaktionPipeline(content_dir=args.content_dir)
+    pipeline = _build_pipeline(args)
+    if pipeline is None:
+        return 1
     request = TopicRequest(area=args.area, working_title=args.title, context=args.context or "")
     return _run_one(pipeline, request)
 
 
 def cmd_backlog(args: argparse.Namespace) -> int:
-    settings = get_settings()
-    if settings.llm_provider != "anthropic" or not settings.llm_api_key:
-        print("SUBSUMO_LLM_PROVIDER=anthropic und SUBSUMO_LLM_API_KEY sind erforderlich.")
+    pipeline = _build_pipeline(args)
+    if pipeline is None:
         return 1
-
-    pipeline = RedaktionPipeline(content_dir=args.content_dir)
     themen = BACKLOG.get(args.area, [])[: args.limit]
     if not themen:
         print(f"Kein Rueckstand fuer '{args.area}' hinterlegt.")
@@ -139,15 +179,31 @@ def main() -> int:
     parser.add_argument("--content-dir", type=Path, default=REPO_ROOT / "content")
     sub = parser.add_subparsers(dest="command", required=True)
 
+    def add_engine_args(p: argparse.ArgumentParser) -> None:
+        p.add_argument(
+            "--engine",
+            choices=["anthropic", "bridge"],
+            default="anthropic",
+            help="anthropic: echter API-Aufruf (Key erforderlich). "
+            "bridge: lokaler Offline-Testmodus, der Agent im Gespraech "
+            "antwortet ueber Dateien (siehe docs/08-ki-redaktion.md).",
+        )
+        p.add_argument(
+            "--bridge-dir", type=Path, default=None,
+            help="Nur mit --engine bridge: Verzeichnis fuer request_*/response_*-Dateien.",
+        )
+
     p_run = sub.add_parser("run", help="Ein einzelnes Thema erzeugen")
     p_run.add_argument("--area", required=True, choices=sorted(BACKLOG.keys()))
     p_run.add_argument("--title", required=True)
     p_run.add_argument("--context", default="")
+    add_engine_args(p_run)
     p_run.set_defaults(func=cmd_run)
 
     p_backlog = sub.add_parser("backlog", help="Kuratierten Rueckstand abarbeiten")
     p_backlog.add_argument("--area", required=True, choices=sorted(BACKLOG.keys()))
     p_backlog.add_argument("--limit", type=int, default=3)
+    add_engine_args(p_backlog)
     p_backlog.set_defaults(func=cmd_backlog)
 
     p_audit = sub.add_parser("audit-staleness", help="Veraltete Inhalte melden (ohne KI)")
