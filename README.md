@@ -28,12 +28,26 @@ ein Feature und eine messbare Metrik abgebildet. Die vier wichtigsten:
 
 ### Backend
 
+**Windows/PowerShell:** ein Setup-Skript übernimmt venv, Python-Versionsprüfung
+(braucht ≥ 3.11, siehe `pyproject.toml`) und Installation in einem Rutsch —
+verhindert das häufigste Problem, eine venv aus einer alten Python-Version
+auf PATH:
+
+```powershell
+cd backend
+powershell -ExecutionPolicy Bypass -File .\setup.ps1
+```
+
+Optional direkt mitstarten: `... -File .\setup.ps1 -Run`.
+
+**macOS/Linux:**
+
 ```bash
 cd backend
-python -m venv .venv && source .venv/bin/activate
+python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements-dev.txt
 
-pytest -q                                    # 103 Tests
+pytest -q                                    # 134 Tests
 ruff check .
 python scripts/validate_content.py           # Lerninhalte prüfen
 
@@ -77,13 +91,13 @@ python scripts/redaktion_cli.py backlog --area zivilrecht --limit 3
 ## Aufbau
 
 ```
-jura-lern-app/
+subsumo/
 ├── docs/       Problemanalyse, Vision, Architektur, Roadmap, Datenmodell,
 │               Content-Pipeline, Recht & Compliance
-├── backend/    FastAPI + SQLAlchemy, 103 Tests
-│   ├── app/services/   srs · gutachten · evaluator · planner · content
+├── backend/    FastAPI + SQLAlchemy, 134 Tests
+│   ├── app/services/   srs · gutachten · evaluator · planner · content · redaktion
 │   ├── app/api/v1/     auth · content · learn · gutachten · plan
-│   └── scripts/        validate_content.py (läuft in der CI)
+│   └── scripts/        validate_content.py (läuft in der CI) · redaktion_cli.py
 ├── content/    Lerninhalte als versioniertes YAML, schema-validiert
 └── app/        Flutter-Client für alle vier Plattformen
 ```
