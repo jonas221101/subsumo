@@ -1,0 +1,334 @@
+"""Inhaltliche Bewertung eines Gutachtens gegen einen Erwartungshorizont.
+
+Loest Challenge 4. Zwei Designentscheidungen sind nicht verhandelbar:
+
+* **Bewertung nur gegen einen hinterlegten Erwartungshorizont.** Es gibt keinen
+  Endpunkt "bewerte diesen beliebigen Sachverhalt". Das haelt die Bewertung
+  nachvollziehbar und die Anwendung ausserhalb des RDG
+  (siehe docs/06-recht-compliance.md).
+* **Jeder Punktabzug ist auf einen Pruefpunkt zurueckfuehrbar.** Eine Note ohne
+  Begruendung ist wertlos; eine KI-Note ohne Begruendung ist schaedlich.
+
+Ohne konfigurierten LLM-Provider laeuft der heuristische Evaluator. Der ist
+schwaecher, aber vollstaendig offline, kostenlos und deterministisch - die App
+funktioniert also auch ohne KI.
+"""
+
+from __future__ import annotations
+
+import json
+import re
+from dataclasses import asdict, dataclass, field
+from typing import Any, Protocol
+
+from app.config import get_settings
+from app.services.gutachten import GutachtenReport
+
+# Notenskala der juristischen Staatspruefungen (JurNotSkalV): untere Grenze
+# der jeweiligen Notenstufe in Punkten.
+NOTENSTUFEN: list[tuple[float, str]] = [
+    (16.0, "sehr gut"),
+    (13.0, "gut"),
+    (10.0, "vollbefriedigend"),
+    (7.0, "befriedigend"),
+    (4.0, "ausreichend"),
+    (1.5, "mangelhaft"),
+    (0.0, "ungenuegend"),
+]
+
+
+def note_fuer_punkte(points: float) -> str:
+    for untergrenze, name in NOTENSTUFEN:
+        if points >= untergrenze:
+            return name
+    return "ungenuegend"
+
+
+@dataclass
+class Pruefpunkt:
+    """Ein Posten des Erwartungshorizonts."""
+
+    id: str
+    label: str
+    weight: float = 1.0
+    keywords: list[str] = field(default_factory=list)
+    norms: list[str] = field(default_factory=list)
+    required: bool = False
+
+
+@dataclass
+class PruefpunktResult:
+    id: str
+    label: str
+    weight: float
+    hit: bool
+    evidence: str = ""
+    comment: str = ""
+
+
+@dataclass
+class Evaluation:
+    points: float                 # 0-18 (JAP-Skala)
+    note: str
+    content_ratio: float          # 0..1 gewichtete Trefferquote
+    structure_score: int          # 0..100 aus der Strukturanalyse
+    checkpoints: list[PruefpunktResult]
+    missed_required: list[str]
+    summary: str
+    engine: str                   # "heuristik" | "llm:<model>"
+    disclaimer: str = (
+        "Lernhilfe, keine Rechtsberatung. Die Bewertung erfolgt gegen den "
+        "hinterlegten Erwartungshorizont dieses Uebungsfalls."
+    )
+
+    def to_dict(self) -> dict:
+        data = asdict(self)
+        data["points"] = round(self.points, 1)
+        return data
+
+
+def parse_expectation(raw: dict[str, Any] | None) -> list[Pruefpunkt]:
+    points = (raw or {}).get("pruefpunkte", [])
+    return [
+        Pruefpunkt(
+            id=str(p.get("id") or f"p{i}"),
+            label=p.get("label", ""),
+            weight=float(p.get("weight", 1.0)),
+            keywords=list(p.get("keywords", [])),
+            norms=list(p.get("norms", [])),
+            required=bool(p.get("required", False)),
+        )
+        for i, p in enumerate(points)
+    ]
+
+
+def _normalize(text: str) -> str:
+    text = text.lower()
+    text = text.replace("ä", "a").replace("ö", "o").replace("ü", "u").replace("ß", "ss")
+    return re.sub(r"\s+", " ", text)
+
+
+class Evaluator(Protocol):
+    def evaluate(
+        self, *, text: str, expectation: dict, structure: GutachtenReport
+    ) -> Evaluation: ...
+
+
+# Obergrenze fuer die Heuristik. Ein Stichwortabgleich kann erkennen, *ob* ein
+# Pruefpunkt angesprochen wurde - nicht, ob die Argumentation traegt. Ein
+# Praedikatsexamen (ab 9 Punkten) vergibt man dafuer nicht, und schon gar kein
+# "sehr gut". Eine geschenkte Note zerstoert das Vertrauen in jede spaetere
+# Rueckmeldung; die Deckelung wird dem Nutzer ausdruecklich erklaert.
+HEURISTIK_MAX_PUNKTE = 11.0
+
+
+class HeuristicEvaluator:
+    """Stichwort- und Normabgleich gegen den Erwartungshorizont.
+
+    Bewusst konservativ und gedeckelt: er erkennt, *ob* ein Pruefpunkt
+    angesprochen wurde, nicht ob die Argumentation traegt. Das ist ehrlicher
+    als eine Scheinnote und als Fallback ohne Netz belastbar.
+    """
+
+    name = "heuristik"
+
+    def evaluate(
+        self, *, text: str, expectation: dict, structure: GutachtenReport
+    ) -> Evaluation:
+        checkpoints = parse_expectation(expectation)
+        haystack = _normalize(text)
+        norms_seen = {_normalize(n).replace(" ", "") for n in structure.norms}
+
+        results: list[PruefpunktResult] = []
+        for cp in checkpoints:
+            evidence = ""
+            hit = False
+            for kw in cp.keywords:
+                if _normalize(kw) in haystack:
+                    hit, evidence = True, kw
+                    break
+            if not hit:
+                for norm in cp.norms:
+                    key = _normalize(norm).replace(" ", "")
+                    if any(key in seen or seen in key for seen in norms_seen):
+                        hit, evidence = True, norm
+                        break
+            results.append(
+                PruefpunktResult(
+                    id=cp.id,
+                    label=cp.label,
+                    weight=cp.weight,
+                    hit=hit,
+                    evidence=evidence,
+                    comment="" if hit else "Dieser Pruefpunkt wird nicht angesprochen.",
+                )
+            )
+
+        total_weight = sum(cp.weight for cp in checkpoints) or 1.0
+        achieved = sum(cp.weight for cp, r in zip(checkpoints, results, strict=True) if r.hit)
+        content_ratio = achieved / total_weight
+
+        missed_required = [
+            cp.label
+            for cp, r in zip(checkpoints, results, strict=True)
+            if cp.required and not r.hit
+        ]
+
+        # Inhalt zaehlt deutlich schwerer als Form - so bewerten Korrektoren auch.
+        raw = 0.72 * content_ratio + 0.28 * (structure.score / 100)
+        points = round(raw * 18 * 2) / 2
+        if missed_required:
+            # Ein fehlender Kernpunkt deckelt die Bewertung im unteren Bereich.
+            points = min(points, 3.5)
+        gedeckelt = points > HEURISTIK_MAX_PUNKTE
+        points = max(0.0, min(HEURISTIK_MAX_PUNKTE, points))
+
+        getroffen = sum(1 for r in results if r.hit)
+        summary = (
+            f"{getroffen} von {len(results)} Pruefpunkten angesprochen "
+            f"(gewichtet {content_ratio:.0%}), Strukturscore {structure.score}/100."
+        )
+        if missed_required:
+            summary += " Kernpruefpunkte fehlen: " + ", ".join(missed_required) + "."
+        if gedeckelt:
+            summary += (
+                f" Ohne KI-Korrektur wird bei {HEURISTIK_MAX_PUNKTE:.0f} Punkten "
+                "gedeckelt: Der Stichwortabgleich prueft, ob ein Punkt "
+                "angesprochen wurde, nicht ob die Argumentation ueberzeugt."
+            )
+
+        return Evaluation(
+            points=points,
+            note=note_fuer_punkte(points),
+            content_ratio=round(content_ratio, 3),
+            structure_score=structure.score,
+            checkpoints=results,
+            missed_required=missed_required,
+            summary=summary,
+            engine=self.name,
+        )
+
+
+class LLMEvaluator:
+    """Bewertung durch ein Sprachmodell - streng an den Erwartungshorizont gebunden.
+
+    Faellt bei jedem Fehler (kein Key, Timeout, unparsbare Antwort) lautlos auf
+    die Heuristik zurueck. Ein Ausfall des Providers darf nie dazu fuehren, dass
+    ein Nutzer nach fuenf Stunden Klausur gar kein Feedback bekommt.
+
+    Es wird keine Nutzerkennung uebertragen (Pseudonymisierung, Art. 32 DSGVO).
+    """
+
+    def __init__(self) -> None:
+        self.settings = get_settings()
+        self.fallback = HeuristicEvaluator()
+
+    @property
+    def name(self) -> str:
+        return f"llm:{self.settings.llm_model}"
+
+    def _build_prompt(self, text: str, checkpoints: list[Pruefpunkt]) -> str:
+        horizont = "\n".join(
+            f"- [{cp.id}] {cp.label} (Gewicht {cp.weight}"
+            + (", zwingend" if cp.required else "")
+            + (f", Normen: {', '.join(cp.norms)}" if cp.norms else "")
+            + ")"
+            for cp in checkpoints
+        )
+        return (
+            "Du korrigierst eine juristische Uebungsklausur. Bewerte AUSSCHLIESSLICH "
+            "anhand des folgenden Erwartungshorizonts. Erfinde keine Pruefpunkte und "
+            "keine Normen.\n\n"
+            f"ERWARTUNGSHORIZONT:\n{horizont}\n\n"
+            f"GUTACHTEN DES PRUEFLINGS:\n{text}\n\n"
+            "Antworte ausschliesslich mit JSON nach diesem Schema:\n"
+            '{"checkpoints":[{"id":"...","hit":true,"evidence":"woertliches Zitat aus '
+            'dem Gutachten","comment":"knappe Begruendung"}],'
+            '"summary":"zwei bis vier Saetze Gesamtrueckmeldung"}\n'
+            "Regeln: 'hit' nur true, wenn der Pruefpunkt inhaltlich tatsaechlich "
+            "behandelt wird, nicht bei blosser Erwaehnung. 'evidence' muss woertlich "
+            "im Gutachten stehen."
+        )
+
+    def evaluate(
+        self, *, text: str, expectation: dict, structure: GutachtenReport
+    ) -> Evaluation:
+        base = self.fallback.evaluate(text=text, expectation=expectation, structure=structure)
+        if self.settings.llm_provider != "anthropic" or not self.settings.llm_api_key:
+            return base
+
+        checkpoints = parse_expectation(expectation)
+        try:
+            import httpx
+
+            response = httpx.post(
+                "https://api.anthropic.com/v1/messages",
+                timeout=self.settings.llm_timeout_s,
+                headers={
+                    "x-api-key": self.settings.llm_api_key,
+                    "anthropic-version": "2023-06-01",
+                    "content-type": "application/json",
+                },
+                json={
+                    "model": self.settings.llm_model,
+                    "max_tokens": 4000,
+                    "messages": [
+                        {"role": "user", "content": self._build_prompt(text, checkpoints)}
+                    ],
+                },
+            )
+            response.raise_for_status()
+            payload = response.json()["content"][0]["text"]
+            parsed = json.loads(re.search(r"\{.*\}", payload, re.S).group(0))
+        except Exception:  # noqa: BLE001 - jeder Fehler fuehrt zum Fallback
+            return base
+
+        by_id = {c["id"]: c for c in parsed.get("checkpoints", []) if isinstance(c, dict)}
+        results: list[PruefpunktResult] = []
+        for cp in checkpoints:
+            raw = by_id.get(cp.id, {})
+            evidence = str(raw.get("evidence", ""))
+            # Schutz gegen halluzinierte Belege: das Zitat muss im Text stehen.
+            if evidence and _normalize(evidence) not in _normalize(text):
+                evidence = ""
+            results.append(
+                PruefpunktResult(
+                    id=cp.id,
+                    label=cp.label,
+                    weight=cp.weight,
+                    hit=bool(raw.get("hit", False)),
+                    evidence=evidence,
+                    comment=str(raw.get("comment", "")),
+                )
+            )
+
+        total_weight = sum(cp.weight for cp in checkpoints) or 1.0
+        hits = sum(cp.weight for cp, r in zip(checkpoints, results, strict=True) if r.hit)
+        content_ratio = hits / total_weight
+        missed_required = [
+            cp.label
+            for cp, r in zip(checkpoints, results, strict=True)
+            if cp.required and not r.hit
+        ]
+        raw_score = 0.72 * content_ratio + 0.28 * (structure.score / 100)
+        points = round(raw_score * 18 * 2) / 2
+        if missed_required:
+            points = min(points, 3.5)
+
+        return Evaluation(
+            points=max(0.0, min(18.0, points)),
+            note=note_fuer_punkte(points),
+            content_ratio=round(content_ratio, 3),
+            structure_score=structure.score,
+            checkpoints=results,
+            missed_required=missed_required,
+            summary=str(parsed.get("summary", base.summary)),
+            engine=self.name,
+        )
+
+
+def get_evaluator() -> Evaluator:
+    settings = get_settings()
+    if settings.llm_provider == "anthropic" and settings.llm_api_key:
+        return LLMEvaluator()
+    return HeuristicEvaluator()

@@ -1,0 +1,24 @@
+name: subsumo
+description: Subsumo - Jura-Lern-App fuer Android, iOS, Windows und Web.
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Bewusst minimal im M0-Geruest: nur HTTP und lokaler Key-Value-Speicher.
+  # Riverpod (State) und drift (Offline-SQLite) kommen in M1 dazu, sobald die
+  # Offline-Synchronisierung gebaut wird - siehe docs/03-roadmap.md.
+  http: ^1.2.0
+  shared_preferences: ^2.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

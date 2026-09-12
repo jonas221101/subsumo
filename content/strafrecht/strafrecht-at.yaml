@@ -1,0 +1,228 @@
+topic:
+  slug: sr-at
+  area: strafrecht
+  title: Strafrecht Allgemeiner Teil
+  parent: strafrecht
+  relevance: 5
+  position: 10
+  stand: "2026-09"
+
+cards:
+  - slug: sr-at-handlung
+    type: definition
+    front: "Definiere: strafrechtliche Handlung"
+    back: >-
+      Eine Handlung ist jedes vom menschlichen Willen beherrschte oder
+      beherrschbare Verhalten. Keine Handlungen sind daher vis absoluta,
+      Reflexbewegungen und Bewegungen im Zustand der Bewusstlosigkeit.
+    norms: ["§ 13 StGB"]
+    quellen: ["StGB, amtliche Fassung", "Eigenformulierung Redaktion"]
+
+  - slug: sr-at-kausalitaet
+    type: definition
+    front: "Definiere: Kausalitaet (Aequivalenztheorie / conditio-sine-qua-non)"
+    back: >-
+      Ursaechlich ist jede Bedingung, die nicht hinweggedacht werden kann, ohne
+      dass der Erfolg in seiner konkreten Gestalt entfiele. Bei
+      Mehrfachkausalitaet gilt die Modifikation: Von mehreren Bedingungen, die
+      zwar alternativ, nicht aber kumulativ hinweggedacht werden koennen, ist
+      jede ursaechlich.
+    norms: ["§ 212 StGB", "§ 223 StGB"]
+    quellen: ["Eigenformulierung Redaktion"]
+
+  - slug: sr-at-objektive-zurechnung
+    type: definition
+    front: "Definiere: objektive Zurechnung"
+    back: >-
+      Der Erfolg ist dem Taeter objektiv zurechenbar, wenn er durch sein
+      Verhalten eine rechtlich missbilligte Gefahr geschaffen hat und sich
+      gerade diese Gefahr im tatbestandsmaessigen Erfolg realisiert hat.
+      Ausschluss u. a. bei: erlaubtem Risiko, Risikoverringerung, atypischem
+      Kausalverlauf, eigenverantwortlicher Selbstgefaehrdung, Dazwischentreten
+      Dritter.
+    norms: ["§ 212 StGB"]
+    quellen: ["Eigenformulierung Redaktion"]
+
+  - slug: sr-at-vorsatz
+    type: definition
+    front: "Definiere: Vorsatz"
+    back: >-
+      Vorsatz ist der Wille zur Verwirklichung des Tatbestandes in Kenntnis
+      aller seiner objektiven Tatumstaende - kurz: Wissen und Wollen der
+      Tatbestandsverwirklichung. Erscheinungsformen: dolus directus 1. Grades
+      (Absicht), dolus directus 2. Grades (direkter Vorsatz), dolus eventualis
+      (bedingter Vorsatz).
+    norms: ["§ 15 StGB", "§ 16 StGB"]
+    quellen: ["StGB, amtliche Fassung", "Eigenformulierung Redaktion"]
+
+  - slug: sr-at-dolus-eventualis
+    type: streitstand
+    front: "Streitstand: Abgrenzung dolus eventualis / bewusste Fahrlaessigkeit"
+    back: |
+      Problem: Beide Formen setzen voraus, dass der Taeter den Erfolgseintritt
+      fuer moeglich haelt. Die Abgrenzung entscheidet ueber Vorsatz- oder
+      Fahrlaessigkeitsstrafbarkeit und damit oft ueber Jahre Freiheitsstrafe.
+
+      Moeglichkeitstheorie: Vorsatz schon, wenn der Taeter den Erfolg konkret
+      fuer moeglich haelt und dennoch handelt. Argument: klare, gut
+      handhabbare Grenze. Kritik: Der Fahrlaessigkeitsbereich wird praktisch
+      abgeschafft.
+
+      Wahrscheinlichkeitstheorie: Vorsatz, wenn der Taeter den Erfolg fuer
+      wahrscheinlich (mehr als nur moeglich) haelt. Kritik: Die Schwelle der
+      "Wahrscheinlichkeit" ist nicht bestimmbar.
+
+      Gleichgueltigkeitstheorie: Vorsatz bei innerer Gleichgueltigkeit
+      gegenueber dem Rechtsgut. Kritik: Gesinnungsstrafrecht.
+
+      h.M. und Rspr. (Billigungs- bzw. Ernstnahmetheorie): Vorsatz, wenn der
+      Taeter den Erfolg ernstlich fuer moeglich haelt und ihn billigend in Kauf
+      nimmt, sich also mit ihm abfindet. Argumente: Nur diese Theorie erfasst
+      neben dem kognitiven auch das voluntative Element, das § 15 StGB mit
+      "Wollen" voraussetzt; sie ermoeglicht die notwendige Abschichtung zur
+      bewussten Fahrlaessigkeit, bei der der Taeter ernsthaft auf das Ausbleiben
+      des Erfolges vertraut.
+
+      Konsequenz: Bei hochgefaehrlichen Gewalthandlungen liegt die Annahme von
+      Vorsatz nahe; die Hemmschwellentheorie bei Toetungsdelikten ist im Rahmen
+      der Beweiswuerdigung zu beruecksichtigen, ersetzt aber keine
+      Gesamtwuerdigung.
+    norms: ["§ 15 StGB", "§ 16 Abs. 1 StGB"]
+    quellen: ["StGB, amtliche Fassung", "Eigenformulierung Redaktion"]
+
+  - slug: sr-at-notwehr
+    type: definition
+    front: "Definiere: Notwehr (§ 32 StGB) und ihre Voraussetzungen"
+    back: >-
+      Notwehr ist die Verteidigung, die erforderlich ist, um einen
+      gegenwaertigen rechtswidrigen Angriff von sich oder einem anderen
+      abzuwenden (§ 32 Abs. 2 StGB). Aufbau: (1) Notwehrlage - gegenwaertiger,
+      rechtswidriger Angriff; (2) Notwehrhandlung - erforderlich (geeignet und
+      mildestes gleich wirksames Mittel) und geboten (keine sozialethische
+      Einschraenkung); (3) subjektives Rechtfertigungselement -
+      Verteidigungswille.
+    norms: ["§ 32 StGB"]
+    quellen: ["§ 32 StGB, amtlicher Wortlaut", "Eigenformulierung Redaktion"]
+
+  - slug: sr-at-angriff
+    type: definition
+    front: "Definiere: Angriff und Gegenwaertigkeit i.S.d. § 32 StGB"
+    back: >-
+      Angriff ist jede durch menschliches Verhalten drohende Verletzung
+      rechtlich geschuetzter Interessen. Gegenwaertig ist der Angriff, der
+      unmittelbar bevorsteht, gerade stattfindet oder noch andauert. Ein bereits
+      beendeter oder erst kuenftiger Angriff traegt keine Notwehr.
+    norms: ["§ 32 Abs. 2 StGB"]
+    quellen: ["Eigenformulierung Redaktion"]
+
+schemata:
+  - slug: sr-schema-vorsatzdelikt
+    title: "Aufbau des vollendeten vorsaetzlichen Begehungsdelikts"
+    norms: ["§ 15 StGB", "§ 32 StGB", "§ 20 StGB"]
+    quellen: ["StGB, amtliche Fassung", "Eigenformulierung Redaktion"]
+    steps:
+      - label: "I. Tatbestand"
+        children:
+          - label: "1. Objektiver Tatbestand"
+            children:
+              - label: "a) Taterfolg"
+              - label: "b) Tathandlung"
+              - label: "c) Kausalitaet (conditio-sine-qua-non)"
+              - label: "d) Objektive Zurechnung"
+          - label: "2. Subjektiver Tatbestand"
+            children:
+              - label: "a) Vorsatz bzgl. aller objektiven Tatbestandsmerkmale, § 15 StGB"
+              - label: "b) Besondere subjektive Merkmale (z. B. Zueignungsabsicht)"
+      - label: "II. Rechtswidrigkeit"
+        children:
+          - label: "1. Notwehr, § 32 StGB"
+          - label: "2. Rechtfertigender Notstand, § 34 StGB"
+          - label: "3. Einwilligung / mutmassliche Einwilligung"
+          - label: "4. Zivilrechtliche Rechtfertigungsgruende, §§ 227-229, 904 BGB"
+      - label: "III. Schuld"
+        children:
+          - label: "1. Schuldfaehigkeit, §§ 19, 20, 21 StGB"
+          - label: "2. Unrechtsbewusstsein, § 17 StGB"
+          - label: "3. Entschuldigungsgruende, §§ 33, 35 StGB"
+      - label: "IV. Ergebnis, ggf. Strafantrag und Strafzumessung"
+
+  - slug: sr-schema-223
+    title: "Koerperverletzung, § 223 Abs. 1 StGB"
+    norms: ["§ 223 Abs. 1 StGB"]
+    quellen: ["§ 223 StGB, amtlicher Wortlaut", "Eigenformulierung Redaktion"]
+    steps:
+      - label: "I. Tatbestand"
+        children:
+          - label: "1. Objektiver Tatbestand"
+            children:
+              - label: "a) Koerperliche Misshandlung - ueble, unangemessene Behandlung, die das koerperliche Wohlbefinden oder die koerperliche Unversehrtheit nicht nur unerheblich beeintraechtigt"
+              - label: "b) oder Gesundheitsschaedigung - Hervorrufen oder Steigern eines pathologischen Zustandes"
+              - label: "c) Kausalitaet und objektive Zurechnung"
+          - label: "2. Subjektiver Tatbestand: Vorsatz"
+      - label: "II. Rechtswidrigkeit (insb. § 32 StGB, Einwilligung, § 228 StGB)"
+      - label: "III. Schuld"
+      - label: "IV. Strafantrag, § 230 StGB"
+
+faelle:
+  - slug: sr-fall-notwehr-schlagstock
+    title: "Der Schlagstock"
+    difficulty: 3
+    minutes: 60
+    quellen: ["Eigener Sachverhalt der Redaktion", "StGB, amtliche Fassung"]
+    facts: >-
+      A und B geraten vor einer Kneipe in Streit. B, der deutlich kraeftiger ist,
+      holt mit der Faust aus, um A ins Gesicht zu schlagen. A weicht zurueck,
+      zieht einen Teleskopschlagstock und schlaegt B damit einmal kraeftig auf
+      den Oberarm. B erleidet eine Prellung und laesst von A ab. A haette auch
+      weglaufen koennen; die Strasse war frei.
+    question: "Hat sich A nach § 223 Abs. 1 StGB strafbar gemacht?"
+    steps:
+      - prompt: "Formuliere den Obersatz fuer die Strafbarkeit des A."
+        erwartung: "A koennte sich durch den Schlag mit dem Teleskopschlagstock wegen Koerperverletzung nach § 223 Abs. 1 StGB strafbar gemacht haben."
+      - prompt: "Ist der objektive Tatbestand erfuellt?"
+        erwartung: "Ja - die Prellung ist sowohl koerperliche Misshandlung als auch Gesundheitsschaedigung."
+      - prompt: "Liegt eine Notwehrlage vor?"
+        erwartung: "Ja - der unmittelbar bevorstehende Faustschlag ist ein gegenwaertiger rechtswidriger Angriff."
+      - prompt: "War die Verteidigung erforderlich, obwohl A haette fliehen koennen?"
+        erwartung: "Ja. Flucht ist kein Verteidigungsmittel; das Recht muss dem Unrecht nicht weichen. Erforderlich ist das mildeste gleich wirksame Verteidigungsmittel."
+    expectation:
+      pruefpunkte:
+        - id: p1
+          label: "Obersatz mit § 223 Abs. 1 StGB"
+          weight: 1.5
+          required: true
+          norms: ["§ 223 Abs. 1 StGB", "§ 223 StGB"]
+          keywords: ["223"]
+        - id: p2
+          label: "Koerperliche Misshandlung und/oder Gesundheitsschaedigung definiert und subsumiert"
+          weight: 2.5
+          required: true
+          keywords: ["koerperliche Misshandlung", "Gesundheitsschaedigung", "Wohlbefinden"]
+        - id: p3
+          label: "Vorsatz bejaht, § 15 StGB"
+          weight: 1.0
+          norms: ["§ 15 StGB"]
+          keywords: ["Vorsatz"]
+        - id: p4
+          label: "Notwehrlage: gegenwaertiger rechtswidriger Angriff"
+          weight: 2.5
+          required: true
+          norms: ["§ 32 StGB", "§ 32 Abs. 2 StGB"]
+          keywords: ["gegenwaertig", "rechtswidriger Angriff", "Notwehrlage"]
+        - id: p5
+          label: "Erforderlichkeit: Flucht ist kein milderes Mittel, das Recht muss dem Unrecht nicht weichen"
+          weight: 3.0
+          required: true
+          keywords: ["erforderlich", "Flucht", "mildeste", "muss dem Unrecht nicht weichen"]
+        - id: p6
+          label: "Gebotenheit / sozialethische Einschraenkungen geprueft"
+          weight: 1.5
+          keywords: ["geboten", "sozialethisch"]
+        - id: p7
+          label: "Verteidigungswille als subjektives Rechtfertigungselement"
+          weight: 1.0
+          keywords: ["Verteidigungswille", "subjektives Rechtfertigungselement"]
+        - id: p8
+          label: "Ergebnis: A ist gerechtfertigt und nicht strafbar"
+          weight: 1.0
+          keywords: ["gerechtfertigt", "nicht strafbar"]

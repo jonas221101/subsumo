@@ -1,0 +1,60 @@
+name: CI
+
+# Hinweis: GitHub Actions liest Workflows nur aus dem Repository-Wurzel-
+# verzeichnis. Solange das Projekt in einem Unterordner liegt, laeuft dieser
+# Workflow nicht - er wird aktiv, sobald jura-lern-app/ in ein eigenes
+# Repository ausgegliedert ist (siehe README, Abschnitt "Eigenes Repository").
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  backend:
+    name: Backend - Tests und Lint
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements-dev.txt
+      - name: Lint
+        run: ruff check .
+      - name: Tests
+        run: pytest -q
+
+  content:
+    name: Lerninhalte validieren
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r backend/requirements.txt
+      # Pflichtfelder, eindeutige Slugs, Erwartungshorizont je Fall,
+      # Warnung bei Inhalten aelter als 18 Monate.
+      - run: python backend/scripts/validate_content.py
+
+  app:
+    name: Flutter - Analyse und Tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test

@@ -1,0 +1,76 @@
+import 'package:flutter/material.dart';
+
+import '../state.dart';
+import '../theme.dart';
+import 'gutachten_page.dart';
+
+class CasesPage extends StatefulWidget {
+  const CasesPage({super.key});
+
+  @override
+  State<CasesPage> createState() => _CasesPageState();
+}
+
+class _CasesPageState extends State<CasesPage> {
+  List<Map<String, dynamic>> _cases = [];
+  bool _loading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _load());
+  }
+
+  Future<void> _load() async {
+    try {
+      final data = await AppScope.of(context).api.cases();
+      if (mounted) setState(() => _cases = data);
+    } on Exception {
+      // Offline: Faelle kommen ab M1 aus dem lokalen Speicher.
+    } finally {
+      if (mounted) setState(() => _loading = false);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (_loading) return const Center(child: CircularProgressIndicator());
+
+    return ReadableWidth(
+      child: ListView.separated(
+        padding: const EdgeInsets.all(16),
+        itemCount: _cases.length,
+        separatorBuilder: (_, __) => const SizedBox(height: 8),
+        itemBuilder: (context, index) {
+          final fall = _cases[index];
+          return Card(
+            child: ListTile(
+              title: Text(fall['title'] as String),
+              subtitle: Text(
+                '${_areaLabel(fall['area'] as String)}  ·  '
+                'Schwierigkeit ${fall['difficulty']}/5  ·  '
+                '${fall['minutes']} min',
+              ),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                  builder: (_) => GutachtenPage(
+                    caseSlug: fall['slug'] as String,
+                    caseTitle: fall['title'] as String,
+                  ),
+                ),
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+
+  static String _areaLabel(String area) => switch (area) {
+        'zivilrecht' => 'Zivilrecht',
+        'strafrecht' => 'Strafrecht',
+        'oeffentliches-recht' => 'Oeffentliches Recht',
+        _ => area,
+      };
+}
