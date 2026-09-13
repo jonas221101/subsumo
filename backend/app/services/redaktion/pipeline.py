@@ -72,7 +72,9 @@ def _validate_structure(draft: dict) -> list[str]:
     """
     with tempfile.TemporaryDirectory() as tmp:
         path = Path(tmp) / "entwurf.yaml"
-        path.write_text(yaml.safe_dump(draft, allow_unicode=True, sort_keys=False))
+        path.write_text(
+            yaml.safe_dump(draft, allow_unicode=True, sort_keys=False), encoding="utf-8"
+        )
         bundle = load_content(Path(tmp))
     return bundle.errors
 
@@ -163,5 +165,7 @@ class RedaktionPipeline:
                 "automatisch: ein bestehender Inhalt mit Nutzerfortschritt braucht "
                 "den Update-Pfad (content_hash-Markierung), nicht einen Neuschrieb."
             )
-        path.write_text(yaml.safe_dump(draft, allow_unicode=True, sort_keys=False))
+        path.write_text(
+            yaml.safe_dump(draft, allow_unicode=True, sort_keys=False), encoding="utf-8"
+        )
         return path

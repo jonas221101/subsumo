@@ -311,7 +311,7 @@ def test_pipeline_gibt_nach_max_rounds_auf_und_schreibt_nichts(tmp_path: Path):
 def test_pipeline_verhindert_stilles_ueberschreiben_bestehender_inhalte(tmp_path: Path):
     ziel_dir = tmp_path / "zivilrecht"
     ziel_dir.mkdir()
-    (ziel_dir / "zr-test-thema.yaml").write_text("# bereits vorhanden\n")
+    (ziel_dir / "zr-test-thema.yaml").write_text("# bereits vorhanden\n", encoding="utf-8")
 
     collector = CollectorAgent(client=FakeLLM([GUELTIGER_ENTWURF]))
     reviewer = ReviewerAgent(client=FakeLLM(['{"approved": true, "issues": []}']))
@@ -320,7 +320,7 @@ def test_pipeline_verhindert_stilles_ueberschreiben_bestehender_inhalte(tmp_path
     with pytest.raises(FileExistsError):
         pipeline.run(TopicRequest(area="zivilrecht", working_title="Testthema"))
     # Die urspruengliche Datei darf nicht angefasst worden sein.
-    assert (ziel_dir / "zr-test-thema.yaml").read_text() == "# bereits vorhanden\n"
+    assert (ziel_dir / "zr-test-thema.yaml").read_text(encoding="utf-8") == "# bereits vorhanden\n"
 
 
 def test_collect_existing_slugs_sammelt_aus_allen_kategorien():
@@ -330,7 +330,7 @@ def test_collect_existing_slugs_sammelt_aus_allen_kategorien():
 
     with tempfile.TemporaryDirectory() as tmp:
         path = Path(tmp) / "a.yaml"
-        path.write_text(GUELTIGER_ENTWURF)
+        path.write_text(GUELTIGER_ENTWURF, encoding="utf-8")
         bundle = load_content(Path(tmp))
         slugs = collect_existing_slugs(bundle)
 
@@ -347,7 +347,8 @@ def test_pipeline_reicht_bekannte_slugs_an_beide_agenten_weiter(tmp_path: Path):
         GUELTIGER_ENTWURF.replace("zr-test-thema", "zr-bestehendes-thema")
         .replace("zr-test-karte", "zr-bestehende-karte")
         .replace("zr-test-schema", "zr-bestehendes-schema")
-        .replace("zr-test-fall", "zr-bestehender-fall")
+        .replace("zr-test-fall", "zr-bestehender-fall"),
+        encoding="utf-8",
     )
     collector_client = FakeLLM([GUELTIGER_ENTWURF])
     reviewer_client = FakeLLM(['{"approved": true, "issues": []}'])
