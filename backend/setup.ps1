@@ -18,6 +18,16 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+# PowerShell 7.3+ wandelt per Default jeden nichtnull Exit-Code eines
+# externen Programms in einen terminierenden Fehler um (respektiert dabei
+# $ErrorActionPreference) - das traf hier die Versionssuche unten, die ganz
+# bewusst mehrere Aufrufe fehlschlagen laesst, bis die passende Version
+# gefunden ist. Ohne diese Zeile bricht das Skript beim ersten Fehlschlag ab,
+# obwohl der Code direkt danach genau diesen Fall abfaengt. Auf ausdruecklich
+# selbst geprueften Exit-Codes ($LASTEXITCODE) bestehen, nicht auf Powershells
+# Automatik.
+$PSNativeCommandUseErrorActionPreference = $false
+
 $RequiredMajor = 3
 $RequiredMinor = 11
 
@@ -25,16 +35,41 @@ $RequiredMinor = 11
 # passenden Python-Version, oder $null wenn keine gefunden wurde. Bewusst
 # ohne Array-Splatting - zwei feste Faelle (py-Launcher mit Versions-Flag,
 # oder blankes "python") sind klarer als generischer Variadic-Code.
+#
+# Fragt NICHT einzelne Versionen gezielt ab (frueherer Ansatz: 'py -3.15
+# --version', 'py -3.14 --version', ... absteigend durchprobieren) - das
+# scheiterte real daran, dass der echte Windows-py-Launcher bei einer nicht
+# installierten Version seine komplette '-0'-Liste auf stderr ausgibt statt
+# einer kurzen Fehlermeldung, was mit obigem PS-7.3-Verhalten das Skript
+# abbrach. Stattdessen ein einziger 'py -0'-Aufruf (listet Installiertes,
+# schlaegt praktisch nie fehl) und die hoechste passende Version daraus waehlen.
 function Find-Python {
     $pyLauncher = Get-Command py -ErrorAction SilentlyContinue
     if ($pyLauncher) {
-        for ($minor = 15; $minor -ge $RequiredMinor; $minor--) {
-            $flag = "-3.$minor"
-            $versionOutput = & py $flag --version 2>$null
-            if ($LASTEXITCODE -eq 0 -and $versionOutput) {
-                Write-Host "Gefunden ueber 'py $flag': $versionOutput"
-                return @{ Exe = "py"; Arg = $flag }
+        $listing = & py -0 2>&1
+        $available = @()
+        foreach ($line in $listing) {
+            # Locker gefasst statt ein exaktes Suffix zu verlangen: "py -0"
+            # haengt an die Version je nach System z.B. "-64", "-32" oder gar
+            # nichts an, gefolgt von Leerzeichen und ggf. "*" beim Default -
+            # ein zu strenges Suffix-Muster (vorherige Fassung) erkannte
+            # "-3.12-64" gar nicht erst, siehe Testlauf.
+            if ("$line" -match '-(\d+)\.(\d+)') {
+                $available += [version]"$($Matches[1]).$($Matches[2])"
             }
+        }
+        $best = $available |
+            Where-Object { $_.Major -eq $RequiredMajor -and $_.Minor -ge $RequiredMinor } |
+            Sort-Object -Descending |
+            Select-Object -First 1
+        if ($best) {
+            $flag = "-$($best.Major).$($best.Minor)"
+            Write-Host "Gefunden ueber 'py $flag' (aus 'py -0')"
+            return @{ Exe = "py"; Arg = $flag }
+        }
+        if ($available) {
+            $versions = ($available | Sort-Object -Descending | ForEach-Object { "$_" }) -join ", "
+            Write-Host "Ueber 'py -0' gefunden, aber keine Version >= ${RequiredMajor}.${RequiredMinor}: $versions"
         }
     }
 
