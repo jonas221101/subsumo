@@ -1,0 +1,252 @@
+topic:
+  slug: or-berufsfreiheit
+  area: oeffentliches-recht
+  title: 'Art. 12 Abs. 1 GG: Berufsfreiheit'
+  parent: or-grundrechte
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-13'
+    status: ki-freigegeben
+cards:
+- slug: or-gr-art12-berufsbegriff
+  type: definition
+  front: 'Definiere: Beruf i.S.d. Art. 12 Abs. 1 GG'
+  back: Beruf ist jede auf Dauer angelegte, der Schaffung und Aufrechterhaltung einer
+    Lebensgrundlage dienende Taetigkeit, die nicht schlechthin gemeinschaftsschaedlich
+    ist. Der Begriff ist bewusst weit gefasst und erfasst auch neu entstehende oder
+    unkonventionelle Erwerbstaetigkeiten.
+  norms:
+  - Art. 12 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art12-schutzbereich
+  type: definition
+  front: Was umfasst der sachliche Schutzbereich des Art. 12 Abs. 1 GG?
+  back: Art. 12 Abs. 1 GG schuetzt als einheitliches Grundrecht der Berufsfreiheit
+    die freie Wahl des Berufs, des Arbeitsplatzes und der Ausbildungsstaette (Satz
+    1) sowie die Berufsausuebung, die durch Gesetz geregelt werden kann (Satz 2).
+    Trotz der Aufspaltung in zwei Saetze handelt es sich nach staendiger Auffassung
+    um ein einheitliches Grundrecht der Berufsfreiheit, dessen Teilbereiche unterschiedlich
+    intensiv eingeschraenkt werden koennen.
+  norms:
+  - Art. 12 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art12-persoenlicher-schutzbereich
+  type: definition
+  front: Wer ist Grundrechtstraeger des Art. 12 Abs. 1 GG?
+  back: Art. 12 Abs. 1 GG ist ein Deutschen-Grundrecht (Art. 116 GG) und schuetzt
+    unmittelbar nur deutsche Staatsangehoerige sowie inlaendische juristische Personen,
+    soweit das Grundrecht seinem Wesen nach auf sie anwendbar ist (Art. 19 Abs. 3
+    GG). Auslaender koennen sich fuer ihre Berufsfreiheit auf die allgemeine Handlungsfreiheit
+    aus Art. 2 Abs. 1 GG berufen.
+  norms:
+  - Art. 12 Abs. 1 GG
+  - Art. 116 GG
+  - Art. 19 Abs. 3 GG
+  - Art. 2 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art12-eingriff
+  type: definition
+  front: Wann liegt ein Eingriff in Art. 12 Abs. 1 GG vor?
+  back: Ein Eingriff liegt vor, wenn eine staatliche Massnahme eine unmittelbar berufsregelnde
+    Tendenz hat, also gerade auf die berufliche Betaetigung abzielt oder sie zumindest
+    zwangslaeufig mitregelt - im Unterschied zu Massnahmen, die die Berufsausuebung
+    nur als blosse Rand- oder Nebenfolge einer nicht berufsbezogenen Regelung beruehren.
+  norms:
+  - Art. 12 Abs. 1 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art12-dreistufentheorie
+  type: streitstand
+  front: Erlaeutere die Drei-Stufen-Theorie zu Art. 12 Abs. 1 GG
+  back: 'Die Drei-Stufen-Theorie ordnet Eingriffe in die Berufsfreiheit nach ihrer
+
+    Intensitaet und staffelt die Anforderungen an ihre Rechtfertigung
+
+    entsprechend:
+
+
+    Stufe 1 - Regelungen der Berufsausuebung: Der geringste Eingriff, da nur
+
+    das "Wie" der beruflichen Taetigkeit betroffen ist. Bereits vernuenftige
+
+    Erwaegungen des Gemeinwohls rechtfertigen die Regelung.
+
+
+    Stufe 2 - subjektive Zulassungsvoraussetzungen: Betreffen das "Ob" des
+
+    Berufszugangs, knuepfen aber an in der Person des Bewerbers liegende
+
+    Eigenschaften an (z. B. eine erforderliche Ausbildung oder Pruefung).
+
+    Gerechtfertigt, soweit sie dem Schutz eines wichtigen Gemeinschaftsguts
+
+    dienen und verhaeltnismaessig sind.
+
+
+    Stufe 3 - objektive Zulassungsvoraussetzungen: Der schwerste Eingriff,
+
+    da der Zugang unabhaengig von persoenlichen Eigenschaften des Bewerbers
+
+    versperrt wird (z. B. eine Bedarfspruefung). Nur gerechtfertigt zur
+
+    Abwehr nachweisbarer oder mit hoher Wahrscheinlichkeit zu erwartender
+
+    schwerer Gefahren fuer ein ueberragend wichtiges Gemeinschaftsgut - reiner
+
+    Konkurrentenschutz genuegt dafuer nicht.
+
+    '
+  norms:
+  - Art. 12 Abs. 1 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art12-schranke
+  type: norm
+  front: Welche Schranke gilt fuer Art. 12 Abs. 1 GG?
+  back: Art. 12 Abs. 1 S. 2 GG enthaelt einen einfachen Gesetzesvorbehalt, der seinem
+    Wortlaut nach nur die Berufsausuebung erfasst. Nach staendiger Auffassung erstreckt
+    sich dieser Vorbehalt wegen des einheitlichen Grundrechts der Berufsfreiheit auch
+    auf die Berufswahl - dort verlangt der Grundsatz der Verhaeltnismaessigkeit im
+    Rahmen der Drei-Stufen-Theorie allerdings strengere Anforderungen als bei einer
+    reinen Berufsausuebungsregelung.
+  norms:
+  - Art. 12 Abs. 1 S. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: or-schema-art12-berufsfreiheit
+  title: Eingriff in Art. 12 Abs. 1 GG und Rechtfertigung nach der Drei-Stufen-Theorie
+  norms:
+  - Art. 12 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Schutzbereich
+    children:
+    - label: '1. Persoenlich: Deutsche i.S.d. Art. 116 GG (Art. 19 Abs. 3 GG bei juristischen
+        Personen)'
+    - label: '2. Sachlich: Beruf - Berufswahl (inkl. Ausbildungsstaette und Arbeitsplatz)
+        und Berufsausuebung'
+  - label: II. Eingriff
+    hinweis: Staatliche Massnahme mit unmittelbar berufsregelnder Tendenz.
+  - label: III. Verfassungsrechtliche Rechtfertigung
+    children:
+    - label: '1. Schranke: Gesetzesvorbehalt, Art. 12 Abs. 1 S. 2 GG'
+    - label: 2. Formelle Verfassungsmaessigkeit des Gesetzes
+    - label: '3. Materielle Verfassungsmaessigkeit: Verhaeltnismaessigkeit nach der
+        Drei-Stufen-Theorie'
+      children:
+      - label: 'a) Stufe 1: Berufsausuebungsregelung - vernuenftige Gemeinwohlerwaegungen
+          genuegen'
+      - label: 'b) Stufe 2: subjektive Zulassungsvoraussetzungen - Schutz eines wichtigen
+          Gemeinschaftsguts'
+      - label: 'c) Stufe 3: objektive Zulassungsvoraussetzungen - nur zur Abwehr nachweisbarer
+          oder hoechstwahrscheinlicher schwerer Gefahren fuer ein ueberragend wichtiges
+          Gemeinschaftsgut'
+  - label: IV. Ergebnis
+faelle:
+- slug: or-fall-baeckerei-bedarfspruefung
+  title: Die Bedarfspruefung fuer die neue Baeckerei
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  facts: Ein (fiktives) Landesgesetz zur Sicherung des Backwarenhandwerks schreibt
+    vor, dass die Eroeffnung eines neuen Backwarenfachgeschaefts einer behoerdlichen
+    Genehmigung bedarf, die nur erteilt wird, wenn die zustaendige Behoerde einen
+    ausreichenden wirtschaftlichen Bedarf fuer ein weiteres Geschaeft in der jeweiligen
+    Gemeinde feststellt. Ziel des Gesetzes ist nach seiner Begruendung ausdruecklich,
+    bestehende Backwarenfachgeschaefte vor wirtschaftlicher Konkurrenz durch Neugruendungen
+    zu schuetzen. B, deutscher Staatsangehoeriger und gelernter Baecker, moechte in
+    einer Gemeinde eine neue Baeckerei eroeffnen. Die Behoerde verweigert die Genehmigung,
+    weil in der Gemeinde bereits drei Baeckereien ansaessig seien und ein weiterer
+    Bedarf nicht bestehe - unabhaengig von der fachlichen Qualifikation des B, die
+    nicht in Zweifel steht.
+  question: Verletzt die Ablehnung der Genehmigung den B in seinem Grundrecht aus
+    Art. 12 Abs. 1 GG?
+  steps:
+  - prompt: Formuliere den Pruefungssatz.
+    erwartung: Die Ablehnung der Genehmigung koennte B in seinem Grundrecht auf Berufsfreiheit
+      aus Art. 12 Abs. 1 GG verletzen.
+  - prompt: Ist der Schutzbereich des Art. 12 Abs. 1 GG eroeffnet?
+    erwartung: Ja - B ist als Deutscher Grundrechtstraeger, und die Eroeffnung einer
+      Baeckerei ist Berufswahl, die vom sachlichen Schutzbereich umfasst ist.
+  - prompt: Liegt ein Eingriff vor?
+    erwartung: Ja - die Versagung der erforderlichen Genehmigung hat unmittelbar berufsregelnde
+      Tendenz und hindert B am Berufszugang.
+  - prompt: Auf welcher Stufe der Drei-Stufen-Theorie ist die Bedarfspruefung einzuordnen?
+    erwartung: 'Auf der dritten Stufe (objektive Zulassungsvoraussetzung): Der Bedarf
+      haengt nicht von persoenlichen Eigenschaften des B ab, sondern allein von der
+      Marktlage, die B nicht beeinflussen kann.'
+  - prompt: Ist die Bedarfspruefung auf dieser Stufe gerechtfertigt?
+    erwartung: Nein. Objektive Zulassungsvoraussetzungen sind nur zur Abwehr nachweisbarer
+      oder hoechstwahrscheinlicher schwerer Gefahren fuer ein ueberragend wichtiges
+      Gemeinschaftsgut gerechtfertigt. Der blosse Schutz bestehender Betriebe vor
+      wirtschaftlicher Konkurrenz ist kein ueberragend wichtiges Gemeinschaftsgut
+      in diesem Sinne.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Pruefungssatz mit Art. 12 Abs. 1 GG
+      weight: 1.0
+      required: false
+      norms:
+      - Art. 12 Abs. 1 GG
+      keywords:
+      - '12'
+    - id: p2
+      label: Schutzbereich (persoenlich und sachlich) bejaht
+      weight: 1.5
+      required: false
+      keywords:
+      - Schutzbereich
+      - Berufswahl
+    - id: p3
+      label: Eingriff durch die Versagung der Genehmigung bejaht
+      weight: 1.5
+      required: false
+      keywords:
+      - Eingriff
+    - id: p4
+      label: Bedarfspruefung zutreffend als objektive Zulassungsvoraussetzung (dritte
+        Stufe) eingeordnet
+      weight: 3.0
+      required: true
+      keywords:
+      - dritte Stufe
+      - objektive Zulassungsvoraussetzung
+      - Stufe 3
+    - id: p5
+      label: 'Fehlende Rechtfertigung erkannt: reiner Konkurrentenschutz ist kein
+        ueberragend wichtiges Gemeinschaftsgut'
+      weight: 3.0
+      required: true
+      keywords:
+      - Konkurrentenschutz
+      - ueberragend wichtiges Gemeinschaftsgut
+      - nicht gerechtfertigt
+    - id: p6
+      label: 'Ergebnis: B ist in Art. 12 Abs. 1 GG verletzt'
+      weight: 1.0
+      required: false
+      keywords:
+      - verletzt
+      - Verletzung
