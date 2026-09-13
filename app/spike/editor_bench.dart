@@ -8,11 +8,12 @@
 // Tastendruck die Zeit bis zum naechsten fertigen Frame.
 import 'dart:async';
 import 'dart:convert';
-import 'dart:html' as html;
+import 'dart:js_interop';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:web/web.dart' as web;
 
 void main() => runApp(const BenchApp());
 
@@ -146,7 +147,7 @@ class _BenchPageState extends State<BenchPage> {
     // ohne dass die Bench-Seite selbst irgendeine Server-Anbindung braucht.
     // ignore: avoid_print
     print('BENCH_RESULT ${jsonEncode(result)}');
-    html.window.console.log('BENCH_RESULT ${jsonEncode(result)}');
+    web.console.log('BENCH_RESULT ${jsonEncode(result)}'.toJS);
 
     setState(() {
       _running = false;
