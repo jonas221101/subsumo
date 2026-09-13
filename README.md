@@ -137,7 +137,7 @@ Zeitplan und Risiken: [`docs/03-roadmap.md`](docs/03-roadmap.md).
   Release-Build, headless Chromium) statt geschätzt. Details in
   [`docs/07-spike-web-editor.md`](docs/07-spike-web-editor.md)
 
-**Inhalte:** 5 Themen, 35 Karten, 7 Prüfungsschemata, 5 Fälle mit
+**Inhalte:** 9 Themen, 62 Karten, 11 Prüfungsschemata, 9 Fälle mit
 Erwartungshorizont — über alle drei Rechtsgebiete.
 
 Was als Nächstes kommt: [`docs/03-roadmap.md`](docs/03-roadmap.md).

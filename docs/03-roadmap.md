@@ -39,15 +39,19 @@ Fachredaktion (Teilzeit)**. Jeder Meilenstein endet mit etwas Benutzbarem.
   offline gebraucht werden
 - Backend: `/reviews/batch` ✅, Content-Manifest mit Delta-Sync (Manifest
   existiert, Client zieht noch keine Deltas — offen)
-- 500 kuratierte Karten BGB AT + Strafrecht AT (Stand: 35/500) — KI-Redaktion
+- 500 kuratierte Karten BGB AT + Strafrecht AT (Stand: 62/500) — KI-Redaktion
   auf den kuratierten Rückstand (`backend/scripts/redaktion_cli.py backlog`)
   ansetzen und die Ausbeute stichprobenartig prüfen, statt alles von Hand zu
-  schreiben. Zwei Themen live über den Brücken-Modus erzeugt und je im ersten
-  Anlauf freigegeben: `zr-at-stellvertretung.yaml`,
-  `zr-schuldrecht-at-unmoeglichkeit.yaml` (`docs/08-ki-redaktion.md`) — beim
-  zweiten Thema deckte der End-to-End-Test gegen den Evaluator einen zu eng
-  gefassten Prüfpunkt auf (ein einzelnes Stichwort traf eine stilistisch
-  korrekte Formulierung nicht) und wurde direkt korrigiert
+  schreiben. 5 von 10 BACKLOG-Themen live über den Brücken-Modus erzeugt, alle
+  im ersten Anlauf freigegeben und je per End-to-End-Test gegen den Evaluator
+  verifiziert (`docs/08-ki-redaktion.md`): `zr-at-stellvertretung`,
+  `zr-schuldrecht-at-unmoeglichkeit`, `sr-bt-diebstahl`, `or-berufsfreiheit`,
+  `zr-deliktsrecht-823`, `sr-versuch-ruecktritt` — beim zweiten Thema deckte
+  der End-to-End-Test einen zu eng gefassten Prüfpunkt auf (ein einzelnes
+  Stichwort traf eine stilistisch korrekte Formulierung nicht) und wurde
+  direkt korrigiert. Offen aus dem BACKLOG: Eigentumsherausgabe (§ 985 BGB),
+  Täterschaft/Teilnahme (§§ 25 ff. StGB), Anfechtungsklage (§ 42 VwGO),
+  Verwaltungsakt (§ 35 VwVfG)
 - ~~Aus dem Spike mitgenommen: eigene Schriftdatei als Flutter-Asset bündeln~~
   **Erledigt** (siehe `docs/07-spike-web-editor.md`); ~~`package:web` statt
   `dart:html` konsequent in jedem Web-spezifischen Code~~ **Erledigt**
