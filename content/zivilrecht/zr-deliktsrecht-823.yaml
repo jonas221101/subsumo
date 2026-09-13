@@ -1,0 +1,239 @@
+topic:
+  slug: zr-deliktsrecht-823
+  area: zivilrecht
+  title: 'Deliktsrecht: § 823 Abs. 1 BGB'
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-13'
+    status: ki-freigegeben
+cards:
+- slug: zr-delikt-rechtsgutsverletzung
+  type: definition
+  front: Welche Rechtsgueter/Rechte schuetzt § 823 Abs. 1 BGB?
+  back: '§ 823 Abs. 1 BGB schuetzt abschliessend aufgezaehlt: Leben, Koerper, Gesundheit,
+    Freiheit, Eigentum und sonstige Rechte (absolute Rechte mit Ausschlussfunktion,
+    z. B. dingliche Rechte, das Persoenlichkeitsrecht oder als Auffangtatbestand der
+    eingerichtete und ausgeuebte Gewerbebetrieb). Reine Vermoegensschaeden sind nicht
+    erfasst.'
+  norms:
+  - § 823 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-delikt-verletzungshandlung
+  type: definition
+  front: Was ist die Verletzungshandlung bei § 823 Abs. 1 BGB?
+  back: Die Verletzungshandlung ist ein vom Willen beherrschtes oder beherrschbares
+    menschliches Verhalten, das entweder in einem aktiven Tun oder - bei Bestehen
+    einer Garantenstellung (z. B. aus Ingerenz oder Verkehrssicherungspflicht) - in
+    einem pflichtwidrigen Unterlassen bestehen kann.
+  norms:
+  - § 823 Abs. 1 BGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-delikt-haftungsbegruendende-kausalitaet
+  type: definition
+  front: 'Definiere: haftungsbegruendende Kausalitaet im Deliktsrecht'
+  back: 'Die Verletzungshandlung muss fuer die Rechtsgutsverletzung nach der Aequivalenztheorie
+    (conditio sine qua non) kausal sein und darf sich nicht als voellig ausserhalb
+    jeder Lebenserfahrung liegende, adaequat nicht mehr zurechenbare Folge darstellen
+    (Adaequanztheorie). Zusaetzlich begrenzend wirkt der Schutzzweck der Norm: Nur
+    solche Schadensfolgen werden zugerechnet, die gerade in den Schutzbereich des
+    § 823 Abs. 1 BGB fallen.'
+  norms:
+  - § 823 Abs. 1 BGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-delikt-rechtswidrigkeit
+  type: definition
+  front: Wie wird die Rechtswidrigkeit bei § 823 Abs. 1 BGB gepruft (Lehre vom Erfolgsunrecht)?
+  back: 'Nach der Lehre vom Erfolgsunrecht indiziert die Verwirklichung des Tatbestands
+    - also die Rechtsgutsverletzung durch die Verletzungshandlung - grundsaetzlich
+    die Rechtswidrigkeit; sie entfaellt nur bei eingreifenden Rechtfertigungsgruenden
+    (z. B. §§ 227-229, 904 BGB, Einwilligung). Eine Ausnahme gilt bei mittelbaren
+    Beeintraechtigungen und beim Unterlassen: Dort ist die Rechtswidrigkeit positiv
+    festzustellen, etwa durch eine Interessen- und Gueterabwaegung.'
+  norms:
+  - § 823 Abs. 1 BGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-delikt-verschulden-276
+  type: definition
+  front: 'Definiere: Fahrlaessigkeit im Deliktsrecht, § 276 Abs. 2 BGB'
+  back: 'Fahrlaessig handelt, wer die im Verkehr erforderliche Sorgfalt ausser Acht
+    laesst, § 276 Abs. 2 BGB. Massgeblich ist ein objektiv-abstrakter Massstab: Es
+    kommt darauf an, wie sich ein gewissenhafter und besonnener Angehoeriger des betroffenen
+    Verkehrskreises in der konkreten Situation verhalten haette - individuelle Faehigkeiten
+    des Schaedigers bleiben grundsaetzlich ausser Betracht.'
+  norms:
+  - § 276 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-delikt-schaden-haftungsausfuellend
+  type: definition
+  front: 'Abgrenze: haftungsbegruendende und haftungsausfuellende Kausalitaet'
+  back: Die haftungsbegruendende Kausalitaet verbindet die Verletzungshandlung mit
+    der Rechtsgutsverletzung selbst (dem 'Ob' der Haftung). Die haftungsausfuellende
+    Kausalitaet verbindet die Rechtsgutsverletzung mit dem daraus resultierenden Schaden
+    (dem 'Wie viel' der Haftung) und bestimmt so den Umfang des nach §§ 249 ff. BGB
+    zu ersetzenden Schadens.
+  norms:
+  - § 823 Abs. 1 BGB
+  - § 249 BGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-delikt-sonstiges-recht-gewerbebetrieb
+  type: streitstand
+  front: Was ist unter 'sonstiges Recht' i.S.d. § 823 Abs. 1 BGB zu verstehen, und
+    welche Rolle spielt der eingerichtete und ausgeuebte Gewerbebetrieb?
+  back: Als sonstiges Recht wird nur ein absolutes Recht mit Ausschlussfunktion anerkannt,
+    das dem Inhaber - wie Eigentum - eine ihm ausschliesslich zugewiesene Rechtsposition
+    gegenueber jedermann verschafft (z. B. beschraenkte dingliche Rechte, das allgemeine
+    Persoenlichkeitsrecht). Das Recht am eingerichteten und ausgeuebten Gewerbebetrieb
+    ist nach staendiger Rechtsprechung als Auffangtatbestand anerkannt, greift aber
+    nur subsidiaer und setzt einen betriebsbezogenen Eingriff voraus - also eine Beeintraechtigung,
+    die sich gegen den Betrieb als solchen richtet und nicht ohne Weiteres von anderen
+    Rechtsguetern abgrenzbar ist.
+  norms:
+  - § 823 Abs. 1 BGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-823
+  title: Schadensersatzanspruch aus § 823 Abs. 1 BGB
+  norms:
+  - § 823 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Rechtsgutsverletzung
+    hinweis: Leben, Koerper, Gesundheit, Freiheit, Eigentum oder sonstiges Recht.
+  - label: II. Verletzungshandlung
+    children:
+    - label: 1. Tun
+    - label: 2. oder pflichtwidriges Unterlassen bei Garantenstellung
+  - label: III. Haftungsbegruendende Kausalitaet
+    children:
+    - label: 1. Aequivalenz (conditio sine qua non)
+    - label: 2. Adaequanz und Schutzzweck der Norm
+  - label: IV. Rechtswidrigkeit
+    hinweis: Grundsaetzlich indiziert; bei mittelbaren Beeintraechtigungen und Unterlassen
+      positiv festzustellen.
+  - label: V. Verschulden, § 276 BGB
+    children:
+    - label: 1. Vorsatz
+    - label: 2. oder Fahrlaessigkeit (objektiv-abstrakter Massstab)
+  - label: VI. Schaden und haftungsausfuellende Kausalitaet
+  - label: 'VII. Rechtsfolge: Schadensersatz, §§ 249 ff. BGB'
+faelle:
+- slug: zr-fall-radfahrer-rotlicht
+  title: Der abgelenkte Radfahrer
+  difficulty: 2
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: Radfahrer R faehrt, waehrend er auf sein Mobiltelefon schaut, bei Rotlicht
+    ueber eine Kreuzung. Fussgaenger F, der bei Gruen die Fahrbahn ueberquert, wird
+    von R erfasst und stuerzt. F erleidet einen Bruch des rechten Unterarms; die aerztliche
+    Behandlung kostet 800 Euro. Zudem wird sein Mantel beim Sturz zerrissen; ein gleichwertiger
+    Ersatz kostet 150 Euro. F verlangt von R Ersatz in Hoehe von insgesamt 950 Euro.
+  question: Hat F gegen R einen Anspruch auf Schadensersatz in Hoehe von 950 Euro
+    aus § 823 Abs. 1 BGB?
+  steps:
+  - prompt: Formuliere den Obersatz.
+    erwartung: F koennte gegen R einen Anspruch auf Schadensersatz in Hoehe von 950
+      Euro aus § 823 Abs. 1 BGB haben.
+  - prompt: Liegt eine Rechtsgutsverletzung vor?
+    erwartung: Ja - der Armbruch verletzt Koerper und Gesundheit des F, der zerrissene
+      Mantel verletzt sein Eigentum.
+  - prompt: Worin liegt die Verletzungshandlung?
+    erwartung: Im Ueberfahren der roten Ampel durch R, waehrend er durch sein Mobiltelefon
+      abgelenkt war.
+  - prompt: Ist die haftungsbegruendende Kausalitaet gegeben?
+    erwartung: Ja - haette R nicht bei Rot die Kreuzung ueberquert, waere es nicht
+      zur Kollision gekommen; der Erfolg liegt auch nicht ausserhalb jeder Lebenserfahrung.
+  - prompt: Hat R fahrlaessig gehandelt?
+    erwartung: 'Ja, § 276 Abs. 2 BGB: Ein gewissenhafter Verkehrsteilnehmer haette
+      das Rotlicht beachtet und sich nicht durch sein Mobiltelefon ablenken lassen;
+      R hat die im Verkehr erforderliche Sorgfalt ausser Acht gelassen.'
+  - prompt: Wie hoch ist der ersatzfaehige Schaden?
+    erwartung: 950 Euro - 800 Euro Behandlungskosten und 150 Euro fuer den zerrissenen
+      Mantel.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Obersatz mit § 823 Abs. 1 BGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 823 Abs. 1 BGB
+      keywords:
+      - '823'
+    - id: p2
+      label: Rechtsgutsverletzung (Koerper/Gesundheit und Eigentum) benannt
+      weight: 1.5
+      required: false
+      keywords:
+      - Rechtsgutsverletzung
+      - Gesundheit
+      - Eigentum
+    - id: p3
+      label: Verletzungshandlung (Ueberfahren des Rotlichts) benannt
+      weight: 1.0
+      required: false
+      keywords:
+      - Rotlicht
+      - Verletzungshandlung
+    - id: p4
+      label: Haftungsbegruendende Kausalitaet bejaht
+      weight: 1.5
+      required: false
+      keywords:
+      - Kausalitaet
+      - kausal
+    - id: p5
+      label: Rechtswidrigkeit angesprochen
+      weight: 1.0
+      required: false
+      keywords:
+      - rechtswidrig
+      - indiziert
+    - id: p6
+      label: Fahrlaessigkeit ueber § 276 Abs. 2 BGB mit konkreter Sorgfaltspflichtverletzung
+        begruendet
+      weight: 3.0
+      required: true
+      norms:
+      - § 276 Abs. 2 BGB
+      keywords:
+      - fahrlaessig
+      - Sorgfalt
+      - '276'
+    - id: p7
+      label: Schaden korrekt mit 950 Euro (beide Schadenspositionen) beziffert
+      weight: 2.0
+      required: true
+      keywords:
+      - '950'
+      - '800'
+      - '150'
+    - id: p8
+      label: 'Ergebnis: Anspruch des F gegen R besteht'
+      weight: 1.0
+      required: false
+      keywords:
+      - Anspruch besteht
+      - F gegen R
