@@ -19,6 +19,16 @@ from app.core.llm import LLMClient, LLMError, get_llm_client
 from app.services.redaktion.prompts import reviewer_prompt
 
 _JSON_BLOCK = re.compile(r"\{.*\}", re.S)
+_ALLOWED_SEVERITIES = {"ok", "kleinere_maengel", "schwerwiegend"}
+
+
+def _object_without_duplicate_keys(pairs: list[tuple[str, object]]) -> dict:
+    result: dict[str, object] = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError(f"doppelter JSON-Schluessel: {key}")
+        result[key] = value
+    return result
 
 
 class ReviewerError(Exception):
@@ -51,13 +61,53 @@ class ReviewerAgent:
         match = _JSON_BLOCK.search(response.text)
         if not match:
             raise ReviewerError("Antwort enthaelt kein auswertbares JSON")
+        # The permissive extraction intentionally allows prose/code fences
+        # around one object, but must not extract an object nested in an array.
+        if (
+            response.text[: match.start()].rstrip().endswith("[")
+            or response.text[match.end() :].lstrip().startswith("]")
+        ):
+            raise ReviewerError("Reviewer-JSON muss ein einzelnes Objekt sein")
         try:
-            parsed = json.loads(match.group(0))
-        except json.JSONDecodeError as exc:
+            parsed = json.loads(
+                match.group(0), object_pairs_hook=_object_without_duplicate_keys
+            )
+        except (json.JSONDecodeError, ValueError) as exc:
             raise ReviewerError(f"Antwort ist kein gueltiges JSON: {exc}") from exc
 
+        if not isinstance(parsed, dict):
+            raise ReviewerError("Reviewer-JSON muss ein Objekt sein")
+        required = {"approved", "severity", "issues"}
+        missing = required - parsed.keys()
+        if missing:
+            raise ReviewerError(
+                "Reviewer-JSON enthaelt nicht alle Pflichtfelder: "
+                + ", ".join(sorted(missing))
+            )
+        if type(parsed["approved"]) is not bool:
+            raise ReviewerError("Reviewer-Feld 'approved' muss boolesch sein")
+        if (
+            type(parsed["severity"]) is not str
+            or parsed["severity"] not in _ALLOWED_SEVERITIES
+        ):
+            raise ReviewerError("Reviewer-Feld 'severity' ist ungueltig")
+        if not isinstance(parsed["issues"], list) or not all(
+            isinstance(issue, str) for issue in parsed["issues"]
+        ):
+            raise ReviewerError("Reviewer-Feld 'issues' muss eine Liste aus Strings sein")
+        if parsed["approved"] and (
+            parsed["issues"] or parsed["severity"] != "ok"
+        ):
+            raise ReviewerError(
+                "Freigabe ist nur mit severity 'ok' und ohne issues gueltig"
+            )
+        if not parsed["approved"] and parsed["severity"] == "ok":
+            raise ReviewerError(
+                "Ablehnung darf nicht severity 'ok' verwenden"
+            )
+
         return ReviewResult(
-            approved=bool(parsed.get("approved", False)),
-            severity=str(parsed.get("severity", "unbekannt")),
-            issues=[str(i) for i in parsed.get("issues", [])],
+            approved=parsed["approved"],
+            severity=parsed["severity"],
+            issues=parsed["issues"],
         )

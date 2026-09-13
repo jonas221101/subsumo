@@ -162,7 +162,10 @@ def test_reviewer_lehnt_ab_und_liefert_befunde():
 
 
 def test_reviewer_akzeptiert_json_mit_umgebendem_text():
-    antwort = 'Hier ist meine Einschaetzung:\n{"approved": true, "issues": []}\nEnde.'
+    antwort = (
+        'Hier ist meine Einschaetzung:\n'
+        '{"approved": true, "severity": "ok", "issues": []}\nEnde.'
+    )
     agent = ReviewerAgent(client=FakeLLM([antwort]))
     result = agent.review(yaml.safe_load(GUELTIGER_ENTWURF), existing_slugs=[])
     assert result.approved is True
@@ -180,8 +183,28 @@ def test_reviewer_reicht_llm_fehler_durch():
         agent.review(yaml.safe_load(GUELTIGER_ENTWURF), existing_slugs=[])
 
 
+@pytest.mark.parametrize(
+    "antwort",
+    [
+        '{"approved": "false", "severity": "schwerwiegend", "issues": []}',
+        '{"approved": true, "severity": "kleinere_maengel", "issues": []}',
+        '{"approved": true, "severity": "ok", "issues": ["Hinweis"]}',
+        '{"approved": false, "severity": "ok", "issues": ["Hinweis"]}',
+        '{"approved": false, "severity": "schwerwiegend", "issues": [1]}',
+        '{"approved": true, "issues": []}',
+        '{"approved": true, "severity": "unbekannt", "issues": []}',
+        '[{"approved": true, "severity": "ok", "issues": []}]',
+        '{"approved": true, "approved": false, "severity": "ok", "issues": []}',
+    ],
+)
+def test_reviewer_lehnt_malformed_oder_widerspruechliches_json_ab(antwort: str):
+    agent = ReviewerAgent(client=FakeLLM([antwort]))
+    with pytest.raises(ReviewerError):
+        agent.review(yaml.safe_load(GUELTIGER_ENTWURF), existing_slugs=[])
+
+
 def test_reviewer_prompt_nennt_alle_fuenf_pruefkriterien():
-    fake = FakeLLM(['{"approved": true, "issues": []}'])
+    fake = FakeLLM(['{"approved": true, "severity": "ok", "issues": []}'])
     ReviewerAgent(client=fake).review(yaml.safe_load(GUELTIGER_ENTWURF), existing_slugs=[])
     prompt = fake.calls[0]
     for kriterium in ["Urheberrecht", "RDG", "Plausibilitaet", "Erwartungshorizont", "Slug"]:
@@ -220,7 +243,9 @@ def test_struktur_gate_lehnt_fall_ohne_required_pruefpunkt_ab():
 
 def test_pipeline_akzeptiert_im_ersten_durchlauf(tmp_path: Path):
     collector = CollectorAgent(client=FakeLLM([GUELTIGER_ENTWURF]))
-    reviewer = ReviewerAgent(client=FakeLLM(['{"approved": true, "issues": []}']))
+    reviewer = ReviewerAgent(
+        client=FakeLLM(['{"approved": true, "severity": "ok", "issues": []}'])
+    )
     pipeline = RedaktionPipeline(content_dir=tmp_path, collector=collector, reviewer=reviewer)
 
     result = pipeline.run(TopicRequest(area="zivilrecht", working_title="Testthema"))
@@ -236,7 +261,9 @@ def test_pipeline_akzeptiert_im_ersten_durchlauf(tmp_path: Path):
 
 def test_pipeline_landet_im_richtigen_rechtsgebietsordner(tmp_path: Path):
     collector = CollectorAgent(client=FakeLLM([GUELTIGER_ENTWURF]))
-    reviewer = ReviewerAgent(client=FakeLLM(['{"approved": true, "issues": []}']))
+    reviewer = ReviewerAgent(
+        client=FakeLLM(['{"approved": true, "severity": "ok", "issues": []}'])
+    )
     pipeline = RedaktionPipeline(content_dir=tmp_path, collector=collector, reviewer=reviewer)
 
     result = pipeline.run(TopicRequest(area="zivilrecht", working_title="Testthema"))
@@ -252,7 +279,7 @@ def test_pipeline_gibt_reviewer_feedback_an_collector_zurueck_und_erfolgt_dann(
         [
             '{"approved": false, "severity": "kleinere_maengel", '
             '"issues": ["Norm pruefen"]}',
-            '{"approved": true, "issues": []}',
+            '{"approved": true, "severity": "ok", "issues": []}',
         ]
     )
     pipeline = RedaktionPipeline(
@@ -275,7 +302,9 @@ def test_pipeline_gibt_formatfehler_an_collector_zurueck(tmp_path: Path):
         'quellen: ["Eigenformulierung Redaktion"]\n    stand', "stand"
     )
     collector_client = FakeLLM([kaputt, GUELTIGER_ENTWURF])
-    reviewer_client = FakeLLM(['{"approved": true, "issues": []}'])
+    reviewer_client = FakeLLM(
+        ['{"approved": true, "severity": "ok", "issues": []}']
+    )
     pipeline = RedaktionPipeline(
         content_dir=tmp_path,
         collector=CollectorAgent(client=collector_client),
@@ -295,7 +324,13 @@ def test_pipeline_gibt_formatfehler_an_collector_zurueck(tmp_path: Path):
 def test_pipeline_gibt_nach_max_rounds_auf_und_schreibt_nichts(tmp_path: Path):
     collector = CollectorAgent(client=FakeLLM([GUELTIGER_ENTWURF] * 3))
     reviewer = ReviewerAgent(
-        client=FakeLLM(['{"approved": false, "issues": ["immer noch nicht gut"]}'] * 3)
+        client=FakeLLM(
+            [
+                '{"approved": false, "severity": "schwerwiegend", '
+                '"issues": ["immer noch nicht gut"]}'
+            ]
+            * 3
+        )
     )
     pipeline = RedaktionPipeline(
         content_dir=tmp_path, collector=collector, reviewer=reviewer, max_rounds=3
@@ -308,13 +343,34 @@ def test_pipeline_gibt_nach_max_rounds_auf_und_schreibt_nichts(tmp_path: Path):
     assert list(tmp_path.rglob("*.yaml")) == []
 
 
+def test_pipeline_behandelt_ungueltige_reviewer_antwort_fail_closed(tmp_path: Path):
+    collector = CollectorAgent(client=FakeLLM([GUELTIGER_ENTWURF]))
+    reviewer = ReviewerAgent(
+        client=FakeLLM(
+            ['{"approved": "false", "severity": "schwerwiegend", "issues": []}']
+        )
+    )
+    pipeline = RedaktionPipeline(
+        content_dir=tmp_path, collector=collector, reviewer=reviewer, max_rounds=1
+    )
+
+    result = pipeline.run(TopicRequest(area="zivilrecht", working_title="Testthema"))
+
+    assert result.accepted is False
+    assert result.path is None
+    assert any("Reviewer-Fehler" in entry for entry in result.history)
+    assert list(tmp_path.rglob("*.yaml")) == []
+
+
 def test_pipeline_verhindert_stilles_ueberschreiben_bestehender_inhalte(tmp_path: Path):
     ziel_dir = tmp_path / "zivilrecht"
     ziel_dir.mkdir()
     (ziel_dir / "zr-test-thema.yaml").write_text("# bereits vorhanden\n", encoding="utf-8")
 
     collector = CollectorAgent(client=FakeLLM([GUELTIGER_ENTWURF]))
-    reviewer = ReviewerAgent(client=FakeLLM(['{"approved": true, "issues": []}']))
+    reviewer = ReviewerAgent(
+        client=FakeLLM(['{"approved": true, "severity": "ok", "issues": []}'])
+    )
     pipeline = RedaktionPipeline(content_dir=tmp_path, collector=collector, reviewer=reviewer)
 
     with pytest.raises(FileExistsError):
@@ -351,7 +407,9 @@ def test_pipeline_reicht_bekannte_slugs_an_beide_agenten_weiter(tmp_path: Path):
         encoding="utf-8",
     )
     collector_client = FakeLLM([GUELTIGER_ENTWURF])
-    reviewer_client = FakeLLM(['{"approved": true, "issues": []}'])
+    reviewer_client = FakeLLM(
+        ['{"approved": true, "severity": "ok", "issues": []}']
+    )
     pipeline = RedaktionPipeline(
         content_dir=tmp_path,
         collector=CollectorAgent(client=collector_client),

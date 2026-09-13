@@ -23,3 +23,8 @@ app/linux/
 app/macos/
 app/windows/
 app/web/
+
+# Arbeitsverzeichnisse einzelner Laeufe, keine Projektartefakte
+.redaktion-bridge/
+.mission-control/
+work/mission-control/
