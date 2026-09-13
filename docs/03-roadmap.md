@@ -39,14 +39,19 @@ Fachredaktion (Teilzeit)**. Jeder Meilenstein endet mit etwas Benutzbarem.
   offline gebraucht werden
 - Backend: `/reviews/batch` ✅, Content-Manifest mit Delta-Sync (Manifest
   existiert, Client zieht noch keine Deltas — offen)
-- 500 kuratierte Karten BGB AT + Strafrecht AT — Kandidat: KI-Redaktion auf den
-  kuratierten Rückstand (`backend/scripts/redaktion_cli.py backlog`) ansetzen
-  und die Ausbeute stichprobenartig prüfen, statt alles von Hand zu schreiben.
-  Erster Beleg, dass das funktioniert: `zr-at-stellvertretung.yaml`, live über
-  den Brücken-Modus erzeugt (`docs/08-ki-redaktion.md`)
+- 500 kuratierte Karten BGB AT + Strafrecht AT (Stand: 35/500) — KI-Redaktion
+  auf den kuratierten Rückstand (`backend/scripts/redaktion_cli.py backlog`)
+  ansetzen und die Ausbeute stichprobenartig prüfen, statt alles von Hand zu
+  schreiben. Zwei Themen live über den Brücken-Modus erzeugt und je im ersten
+  Anlauf freigegeben: `zr-at-stellvertretung.yaml`,
+  `zr-schuldrecht-at-unmoeglichkeit.yaml` (`docs/08-ki-redaktion.md`) — beim
+  zweiten Thema deckte der End-to-End-Test gegen den Evaluator einen zu eng
+  gefassten Prüfpunkt auf (ein einzelnes Stichwort traf eine stilistisch
+  korrekte Formulierung nicht) und wurde direkt korrigiert
 - ~~Aus dem Spike mitgenommen: eigene Schriftdatei als Flutter-Asset bündeln~~
-  **Erledigt** (siehe `docs/07-spike-web-editor.md`); offen: `package:web`
-  statt `dart:html` konsequent in jedem Web-spezifischen Code
+  **Erledigt** (siehe `docs/07-spike-web-editor.md`); ~~`package:web` statt
+  `dart:html` konsequent in jedem Web-spezifischen Code~~ **Erledigt**
+  (`app/spike/editor_bench.dart`, letzter verbliebener `dart:html`-Import)
 - *Ergebnis:* Eine App, mit der man ab Semester 1 sinnvoll lernt
 
 ## M2 — Schemata & Fälle (4–5 Wochen)
