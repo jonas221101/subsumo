@@ -16,6 +16,12 @@ erstellt keine zweite Aufgaben-Datenbank und startet keine Modellaufrufe selbst.
   Zuständigkeit und Übergabenachricht in einem API-Aufruf ändern.
 - Identitäten, Firmenzuordnung, Kommentarautor und Empfänger vor dem Senden prüfen.
 - Keine automatische Wiederholung von Schreibzugriffen bei unklaren Ergebnissen.
+- Jede beabsichtigte Änderung landet **vor** dem Absenden in einem lokalen,
+  append-only Journal (`.mission-control/outbox.jsonl`); `reconcile` gleicht
+  offene Einträge rein lesend gegen den Server ab und sendet niemals nach.
+- Eine Review-Übergabe verlangt einen Commit, der lokal wirklich existiert und
+  von einem Remote-Branch aus erreichbar ist — sonst könnte der Reviewer ihn
+  gar nicht abrufen.
 - Bestehende Redaktionsfreigaben strikt validieren: echte Booleans, erforderliche
   Felder, gültige Schweregrade, keine widersprüchlichen Freigaben oder doppelten Keys.
 
@@ -137,11 +143,16 @@ mit Commit und Nachweisen in einem PATCH zu `in_review` und zum Reviewer.
 Der Reviewer nimmt ihn in seinem eigenen Lauf mit `claim SUB-101 --review` an.
 Seine fachlichen Rückfragen und Befunde laufen wieder über `send`.
 
-Der angegebene SHA wird auf sein Format geprüft; die CLI bestätigt noch nicht,
-dass dieser Commit im Repository existiert oder Tests dafür grün sind. Das muss
-der Reviewer anhand der übergebenen Artefakte prüfen. Die nächsten Meilensteine
-ergänzen maschinelle Bindung von CI und Freigabe sowie den Release-Dienst.
-Ein Kommentar vom Typ `decision` löst keinen Merge und keine Erledigung aus.
+Der angegebene SHA wird lokal gegen das Repository geprüft (`--repo`, Standard:
+aktuelles Verzeichnis): Existiert der Commit nicht, wird die Übergabe abgelehnt
+und ist auch nicht erzwingbar. Existiert er nur lokal, ist er für den Reviewer
+nicht abrufbar — das bricht ebenfalls ab, lässt sich aber mit `--allow-unpushed`
+bewusst zur Warnung herabstufen. `--no-verify-commit` überspringt die Prüfung
+für den Einsatz außerhalb eines Git-Checkouts und sagt das auch deutlich.
+
+Noch **nicht** geprüft wird, ob für diesen Commit CI-Ergebnisse vorliegen und
+grün sind; das bleibt am Reviewer und an den übergebenen Nachweisen. Ein
+Kommentar vom Typ `decision` löst keinen Merge und keine Erledigung aus.
 
 ## Zustellfehler und Wiederholungen
 
@@ -151,11 +162,33 @@ meldet sie die erzeugte Nachrichten-ID: Thread und Aufgabenstatus damit abgleich
 bevor erneut gesendet wird. Die ID ist eine Korrelationshilfe, kein serverseitiger
 Idempotenzschlüssel. Bei fehlendem Nachweis nicht blind erneut senden.
 
-Auch `create` wird bei Fehlern nicht automatisch wiederholt. Im Zweifel zuerst
-das Aufgabenboard abgleichen. Eine robuste persistente Outbox mit deduplizierter
-Verarbeitung ist ein offenes Pilot-Abnahmekriterium, keine bereits implementierte
-Garantie dieses Clients. 409 bei Checkout bedeutet Konflikt, keine Erlaubnis,
-einen zweiten Worker für dieselbe Aufgabe zu starten.
+Auch `create` wird bei Fehlern nicht automatisch wiederholt. 409 bei Checkout
+bedeutet Konflikt, keine Erlaubnis, einen zweiten Worker für dieselbe Aufgabe
+zu starten.
+
+Damit ein unklarer Ausgang nachträglich aufklärbar bleibt, schreibt die CLI
+jede beabsichtigte Änderung **vor** dem Absenden in ein append-only Journal
+(`<state-dir>/outbox.jsonl`, Standard `.mission-control/`, umlenkbar über
+`--state-dir` oder `MISSION_CONTROL_STATE_DIR`). Statusänderungen hängen eine
+neue Zeile an, statt bestehende zu überschreiben; ein abgebrochener Schreibvorgang
+kostet höchstens die letzte Zeile:
+
+```powershell
+python -m mission_control reconcile            # alle offenen Eintraege
+python -m mission_control reconcile SUB-101 --dry-run
+```
+
+`reconcile` sucht die Korrelations-ID des Eintrags im gespeicherten Thread —
+seitenweise über den ganzen Thread, nicht nur auf der ersten Seite — und setzt
+den Eintrag nur dann auf bestätigt. Es sendet nichts nach: Alle Aufrufe sind
+GET. Lässt sich eine Serverantwort nicht lesen, wird der Eintrag als
+*nicht abgleichbar* gemeldet statt stillschweigend als "nie angekommen" — sonst
+wäre genau der doppelte Versand die Folge, den das Journal verhindern soll.
+
+Solange für eine Aufgabe ein offener Eintrag existiert, verweigert die CLI
+einen weiteren `send` bzw. `request-review` auf dieselbe Aufgabe und nennt die
+Eintrags-ID. `--force` umgeht das bewusst. Das ersetzt keinen serverseitigen
+Idempotenzschlüssel; Paperclip bleibt die maßgebliche Instanz.
 
 ## Günstige Agenten einsetzen
 
@@ -177,8 +210,10 @@ ist nicht implementiert.
 1. Paperclip-Version installieren/fixieren und separate Pilot-Firma konfigurieren.
 2. Rollen, Modell, Budgets, isolierte Workspaces und echte Run-Authentifizierung verbinden.
 3. Einen realen Frage-/Antwortlauf sowie eine Review-Übergabe nachweisen.
-4. Persistente Zustellgarantien, Fristen und Nacharbeit ergänzen.
-5. Software-Review an aktuellen Commit und erforderliche CI-Ergebnisse binden.
+4. ~~Persistente Zustellgarantien~~ **erledigt** (Journal + `reconcile`); offen
+   bleiben Antwortfristen, Zustellquittungen und Nacharbeit.
+5. ~~Software-Review an aktuellen Commit binden~~ **erledigt**; offen bleibt die
+   Bindung an erforderliche CI-Ergebnisse.
 6. GitHub-PR, kontrollierten Merge und Abschlussverifikation anbinden.
 7. Mission-Control-Oberfläche auf die echten Zustände und Threads umstellen.
 

@@ -52,3 +52,14 @@ def auth_client(client: TestClient) -> TestClient:
     assert response.status_code == 201, response.text
     client.headers["Authorization"] = f"Bearer {response.json()['access_token']}"
     return client
+
+
+@pytest.fixture(autouse=True)
+def isolated_mission_control_state(monkeypatch, tmp_path):
+    """Jeder Test schreibt das Mission-Control-Journal in ein Wegwerfverzeichnis.
+
+    Ohne das legt ein Test, der --state-dir weglaesst, Eintraege im echten
+    .mission-control des Arbeitsverzeichnisses an. Umlenken ist sicher,
+    echten Betriebszustand loeschen waere es nicht.
+    """
+    monkeypatch.setenv("MISSION_CONTROL_STATE_DIR", str(tmp_path / "mission-control"))

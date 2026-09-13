@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import subprocess
 from uuid import uuid4
 
 import httpx
@@ -124,7 +125,8 @@ def test_reply_references_original_agent_comment(connection, tmp_path):
 def test_handoff_changes_owner_status_and_evidence_in_one_write(connection, tmp_path):
     client, server = connection
     result = execute(command("request-review", "SUB-101", "--to", REVIEWER,
-                             "--commit", "a" * 40, "--body-file", body_file(tmp_path)), client)
+                             "--commit", "a" * 40, "--body-file", body_file(tmp_path),
+                             "--no-verify-commit"), client)
     assert result["status"] == "in_review"
     assert result["assigneeAgentId"] == REVIEWER
     assert "a" * 40 in result["comment"]
@@ -177,3 +179,184 @@ def test_empty_handoff_evidence_is_rejected(connection, tmp_path):
         execute(command("request-review", "SUB-101", "--to", REVIEWER, "--commit", "a" * 40,
                         "--body-file", body_file(tmp_path, " ")), client)
     assert not server.requests
+
+
+def _init_git_repo(repo_path):
+    """Initialize a git repository with basic config."""
+    subprocess.run(
+        ["git", "init"],
+        cwd=repo_path,
+        capture_output=True,
+        check=True,
+    )
+    subprocess.run(
+        ["git", "config", "user.email", "test@example.com"],
+        cwd=repo_path,
+        capture_output=True,
+        check=True,
+    )
+    subprocess.run(
+        ["git", "config", "user.name", "Test User"],
+        cwd=repo_path,
+        capture_output=True,
+        check=True,
+    )
+
+
+def _commit_file(repo_path, filename, content="content"):
+    """Create a file, commit it, and return the SHA."""
+    file_path = repo_path / filename
+    file_path.write_text(content, encoding="utf-8")
+    subprocess.run(
+        ["git", "add", filename],
+        cwd=repo_path,
+        capture_output=True,
+        check=True,
+    )
+    subprocess.run(
+        ["git", "commit", "-m", f"Add {filename}"],
+        cwd=repo_path,
+        capture_output=True,
+        check=True,
+    )
+    sha_result = subprocess.run(
+        ["git", "rev-parse", "HEAD"],
+        cwd=repo_path,
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    return sha_result.stdout.strip()
+
+
+@pytest.mark.skipif(
+    subprocess.run(["git", "--version"], capture_output=True).returncode != 0,
+    reason="git not available",
+)
+def test_request_review_aborts_when_commit_does_not_exist(connection, tmp_path, monkeypatch):
+    """request-review refuses to handoff a non-existent commit."""
+    client, server = connection
+    git_repo = tmp_path / "repo"
+    git_repo.mkdir()
+    _init_git_repo(git_repo)
+
+    # Use a well-formed but non-existent SHA
+    absent_sha = "a" * 40
+
+    with pytest.raises(ValueError) as exc_info:
+        execute(
+            command(
+                "request-review",
+                "SUB-101",
+                "--to",
+                REVIEWER,
+                "--commit",
+                absent_sha,
+                "--repo",
+                str(git_repo),
+                "--body-file",
+                body_file(tmp_path),
+            ),
+            client,
+        )
+    assert "existiert nicht" in str(exc_info.value)
+    # No API calls should have been made
+    assert all(r.method == "GET" for r in server.requests)
+
+
+@pytest.mark.skipif(
+    subprocess.run(["git", "--version"], capture_output=True).returncode != 0,
+    reason="git not available",
+)
+def test_request_review_with_no_verify_commit_skips_verification(
+    connection, tmp_path, monkeypatch
+):
+    """--no-verify-commit bypasses commit verification."""
+    client, server = connection
+    git_repo = tmp_path / "repo"
+    git_repo.mkdir()
+    _init_git_repo(git_repo)
+
+    # Use a non-existent SHA - would normally fail
+    absent_sha = "a" * 40
+
+    # With --no-verify-commit, the handoff should proceed (API call made)
+    result = execute(
+        command(
+            "request-review",
+            "SUB-101",
+            "--to",
+            REVIEWER,
+            "--commit",
+            absent_sha,
+            "--repo",
+            str(git_repo),
+            "--body-file",
+            body_file(tmp_path),
+            "--no-verify-commit",
+        ),
+        client,
+    )
+    # The handoff should succeed and change status
+    assert result["status"] == "in_review"
+    # A PATCH request should have been made
+    assert any(r.method == "PATCH" for r in server.requests)
+
+
+@pytest.mark.skipif(
+    subprocess.run(["git", "--version"], capture_output=True).returncode != 0,
+    reason="git not available",
+)
+def test_request_review_with_allow_unpushed_accepts_local_commits(
+    connection, tmp_path, capsys
+):
+    """--allow-unpushed allows existing but unpushed commits with a warning."""
+    client, server = connection
+    git_repo = tmp_path / "repo"
+    git_repo.mkdir()
+    _init_git_repo(git_repo)
+
+    # Create a real commit in the repo
+    sha = _commit_file(git_repo, "file.txt", "content")
+
+    # Without --allow-unpushed, unpushed commits should fail
+    with pytest.raises(ValueError) as exc_info:
+        execute(
+            command(
+                "request-review",
+                "SUB-101",
+                "--to",
+                REVIEWER,
+                "--commit",
+                sha,
+                "--repo",
+                str(git_repo),
+                "--body-file",
+                body_file(tmp_path),
+            ),
+            client,
+        )
+    assert "nicht gepusht" in str(exc_info.value)
+
+    # With --allow-unpushed, it should proceed and warn
+    result = execute(
+        command(
+            "request-review",
+            "SUB-101",
+            "--to",
+            REVIEWER,
+            "--commit",
+            sha,
+            "--repo",
+            str(git_repo),
+            "--body-file",
+            body_file(tmp_path),
+            "--allow-unpushed",
+        ),
+        client,
+    )
+    assert result["status"] == "in_review"
+    # Check that a warning was printed to stderr
+    captured = capsys.readouterr()
+    assert "Warnung" in captured.err
+    assert "nicht gepusht" in captured.err
