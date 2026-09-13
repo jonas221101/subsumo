@@ -1,0 +1,250 @@
+topic:
+  slug: zr-schuldrecht-at-unmoeglichkeit
+  area: zivilrecht
+  title: 'Leistungsstoerungen: Unmoeglichkeit'
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-13'
+    status: ki-freigegeben
+cards:
+- slug: zr-su-unmoeglichkeit-begriff
+  type: definition
+  front: 'Definiere: Unmoeglichkeit und ihre Rechtsfolge (§ 275 Abs. 1 BGB)'
+  back: Unmoeglichkeit liegt vor, wenn die Leistung fuer den Schuldner oder fuer jedermann
+    tatsaechlich oder rechtlich nicht erbracht werden kann. Nach § 275 Abs. 1 BGB
+    ist der Anspruch auf die Leistung dann ausgeschlossen - die Norm wirkt als Einwendung,
+    die von Amts wegen zu beruecksichtigen ist, nicht als Einrede.
+  norms:
+  - § 275 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-unmoeglichkeit-abgrenzung-subj-obj
+  type: streitstand
+  front: 'Abgrenze: objektive und subjektive Unmoeglichkeit'
+  back: Objektive Unmoeglichkeit liegt vor, wenn die Leistung von niemandem erbracht
+    werden kann. Subjektive Unmoeglichkeit (Unvermoegen) liegt vor, wenn nur der konkrete
+    Schuldner die Leistung nicht erbringen kann, ein Dritter aber koennte. § 275 Abs.
+    1 BGB erfasst nach heute einhelliger Auffassung beide Faelle gleichermassen -
+    die frueher relevante Unterscheidung wirkt sich nur noch beim Vertretenmuessen
+    (§ 276 BGB) aus, nicht mehr beim Ausschluss der Leistungspflicht selbst.
+  norms:
+  - § 275 Abs. 1 BGB
+  - § 276 BGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-praktische-unmoeglichkeit
+  type: definition
+  front: 'Definiere: Praktische (wirtschaftliche) Unmoeglichkeit, § 275 Abs. 2 BGB'
+  back: Nach § 275 Abs. 2 BGB kann der Schuldner die Leistung verweigern, wenn sie
+    einen Aufwand erfordert, der unter Beachtung des Leistungsinhalts und der Gebote
+    von Treu und Glauben in einem groben Missverhaeltnis zum Leistungsinteresse des
+    Glaeubigers steht. Anders als Absatz 1 begruendet Absatz 2 nur eine Einrede -
+    der Schuldner muss sich darauf berufen, das Gericht beruecksichtigt sie nicht
+    von Amts wegen.
+  norms:
+  - § 275 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-unzumutbarkeit-persoenlich
+  type: definition
+  front: 'Definiere: Persoenliche Unzumutbarkeit, § 275 Abs. 3 BGB'
+  back: Bei einer in Person zu erbringenden Leistung (z. B. kuenstlerische oder hoechstpersoenliche
+    Dienste) kann der Schuldner die Leistung verweigern, wenn sie ihm unter Abwaegung
+    mit dem Leistungsinteresse des Glaeubigers nicht zugemutet werden kann. Ebenfalls
+    nur eine Einrede, anders als der von Amts wegen zu beachtende Absatz 1.
+  norms:
+  - § 275 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-283-schadensersatz
+  type: norm
+  front: Was regelt § 283 BGB und warum ist dort keine Fristsetzung erforderlich?
+  back: § 283 S. 1 BGB gewaehrt dem Glaeubiger Schadensersatz statt der Leistung,
+    wenn der Schuldner nach § 275 Abs. 1 bis 3 BGB nicht zu leisten braucht und er
+    die Unmoeglichkeit gemaess § 280 Abs. 1 BGB zu vertreten hat. Eine Fristsetzung
+    wie bei § 281 BGB waere hier sinnlos, weil die Leistung ohnehin nicht mehr nachgeholt
+    werden kann - deshalb verweist § 283 BGB nur auf § 280 Abs. 1 BGB, nicht auf §
+    281 BGB.
+  norms:
+  - § 283 BGB
+  - § 280 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-anfaengliche-nachtraegliche-unmoeglichkeit
+  type: streitstand
+  front: 'Abgrenze: anfaengliche und nachtraegliche Unmoeglichkeit - Bedeutung fuer
+    den Vertrag'
+  back: Nachtraegliche Unmoeglichkeit tritt erst nach Vertragsschluss ein; der Vertrag
+    bleibt wirksam, die Leistungspflicht entfaellt nur nach § 275 BGB. Anfaengliche
+    Unmoeglichkeit besteht schon bei Vertragsschluss; seit der Schuldrechtsreform
+    steht § 311a Abs. 1 BGB klar, dass dies der Wirksamkeit des Vertrags nicht entgegensteht
+    - der Glaeubiger kann stattdessen nach § 311a Abs. 2 BGB Schadensersatz statt
+    der Leistung verlangen, wenn der Schuldner das Leistungshindernis bei Vertragsschluss
+    kannte oder haette kennen muessen.
+  norms:
+  - § 311a Abs. 1 BGB
+  - § 311a Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-stellvertretendes-commodum
+  type: definition
+  front: 'Definiere: Stellvertretendes commodum, § 285 BGB'
+  back: Erlangt der Schuldner infolge des Umstands, der ihn nach § 275 Abs. 1 bis
+    3 BGB von der Leistung befreit, einen Ersatz oder einen Ersatzanspruch (z. B.
+    eine Versicherungsleistung oder einen Anspruch gegen einen Schaediger), kann der
+    Glaeubiger nach § 285 Abs. 1 BGB Herausgabe des Ersatzes oder Abtretung des Ersatzanspruchs
+    verlangen - anstelle oder neben einem Schadensersatzanspruch.
+  norms:
+  - § 285 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-283-unmoeglichkeit
+  title: Schadensersatz statt der Leistung wegen Unmoeglichkeit, §§ 280 Abs. 1, 283
+    BGB
+  norms:
+  - § 280 Abs. 1 BGB
+  - § 283 BGB
+  - § 275 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Schuldverhaeltnis
+    hinweis: Meist ein Vertrag, z. B. Kaufvertrag § 433 BGB.
+  - label: II. Ausschluss der Leistungspflicht, § 275 Abs. 1-3 BGB
+    children:
+    - label: 1. Tatsaechliche oder rechtliche Unmoeglichkeit (Abs. 1)
+    - label: 2. Grobes Missverhaeltnis von Aufwand und Leistungsinteresse (Abs. 2)
+      hinweis: Nur pruefen, wenn der Sachverhalt dazu Anlass gibt - Einrede.
+    - label: 3. Persoenliche Unzumutbarkeit bei hoechstpersoenlicher Leistung (Abs.
+        3)
+      hinweis: Nur bei in Person zu erbringenden Leistungen - Einrede.
+  - label: III. Vertretenmuessen des Schuldners, § 280 Abs. 1 S. 2 BGB
+    hinweis: 'Wird vermutet; der Schuldner muesste sich entlasten (§ 276 BGB: Vorsatz,
+      Fahrlaessigkeit).'
+  - label: IV. Keine Fristsetzung erforderlich, § 283 S. 1 BGB
+    hinweis: Anders als bei § 281 BGB - eine Nachfrist waere bei Unmoeglichkeit sinnlos.
+  - label: V. Schaden und haftungsausfuellende Kausalitaet
+  - label: 'VI. Rechtsfolge: Schadensersatz statt der Leistung'
+faelle:
+- slug: zr-fall-zerstoertes-motorrad
+  title: Das zerstoerte Motorrad
+  difficulty: 3
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: Verkaeufer V verkauft dem Kaeufer K ein bestimmtes gebrauchtes Motorrad (Baujahr
+    2015, im Kaufvertrag ueber die Fahrgestellnummer eindeutig bezeichnet) fuer 3.000
+    Euro. Uebergabe und Bezahlung sollen eine Woche spaeter bei V erfolgen. Zwei Tage
+    vor dem vereinbarten Termin will V das Motorrad zu einer Wartung fahren und uebersieht
+    dabei fahrlaessig eine rote Ampel; er verursacht einen Unfall, bei dem das Motorrad
+    irreparabel zerstoert wird. Ein Motorrad mit identischer Ausstattung und identischem
+    Kilometerstand ist auf dem Gebrauchtmarkt zu denselben Konditionen nicht mehr
+    zu beschaffen. K muss ein vergleichbares Ersatzmotorrad anderweitig fuer 3.500
+    Euro kaufen und verlangt von V Ersatz der Differenz von 500 Euro.
+  question: Hat K gegen V einen Anspruch auf Schadensersatz statt der Leistung in
+    Hoehe von 500 Euro aus §§ 280 Abs. 1, 283 BGB?
+  steps:
+  - prompt: Formuliere den Obersatz.
+    erwartung: K koennte gegen V einen Anspruch auf Schadensersatz statt der Leistung
+      in Hoehe von 500 Euro aus §§ 280 Abs. 1, 283 BGB haben.
+  - prompt: Welches Schuldverhaeltnis besteht zwischen K und V?
+    erwartung: Ein wirksamer Kaufvertrag ueber das Motorrad, § 433 BGB.
+  - prompt: Ist die Leistungspflicht des V ausgeschlossen?
+    erwartung: 'Ja, § 275 Abs. 1 BGB: Das konkret geschuldete Motorrad ist eine Stueckschuld
+      und durch den Unfall vollstaendig zerstoert worden; ein identisches Stueck kann
+      nicht mehr geliefert werden - tatsaechliche Unmoeglichkeit.'
+  - prompt: Hat V die Unmoeglichkeit zu vertreten?
+    erwartung: 'Ja, § 280 Abs. 1 S. 2 BGB (Vermutung) i. V. m. § 276 BGB: V hat den
+      Unfall durch das fahrlaessige Ueberfahren der roten Ampel selbst verschuldet.'
+  - prompt: Muss K dem V vor der Geltendmachung von Schadensersatz eine Frist setzen?
+    erwartung: Nein. § 283 S. 1 BGB verweist gerade nicht auf das Fristsetzungserfordernis
+      des § 281 BGB, weil die Leistung ohnehin nicht mehr nachgeholt werden kann.
+  - prompt: Wie hoch ist der ersatzfaehige Schaden?
+    erwartung: 500 Euro - die Differenz zwischen dem vereinbarten Kaufpreis (3.000
+      Euro) und den Kosten der Ersatzbeschaffung (3.500 Euro).
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Obersatz mit §§ 280 Abs. 1, 283 BGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 280 Abs. 1 BGB
+      - § 283 BGB
+      keywords:
+      - '280'
+      - '283'
+    - id: p2
+      label: Kaufvertrag als Schuldverhaeltnis benannt, § 433 BGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 433 BGB
+      keywords:
+      - Kaufvertrag
+      - '433'
+    - id: p3
+      label: Unmoeglichkeit nach § 275 Abs. 1 BGB erkannt und auf die Stueckschuld
+        subsumiert
+      weight: 3.0
+      required: true
+      norms:
+      - § 275 Abs. 1 BGB
+      keywords:
+      - Unmoeglichkeit
+      - '275'
+      - Stueckschuld
+    - id: p4
+      label: Vertretenmuessen des V ueber § 276 BGB (Fahrlaessigkeit) bejaht
+      weight: 2.0
+      required: false
+      norms:
+      - § 276 BGB
+      keywords:
+      - vertreten
+      - Fahrlaessigkeit
+      - '276'
+    - id: p5
+      label: Entbehrlichkeit der Fristsetzung nach § 283 BGB erkannt und begruendet
+      weight: 2.5
+      required: true
+      norms:
+      - § 283 BGB
+      keywords:
+      - keine Fristsetzung
+      - '283'
+      - entbehrlich
+    - id: p6
+      label: Schadenshoehe korrekt als Differenzschaden von 500 Euro berechnet
+      weight: 1.5
+      required: false
+      keywords:
+      - '500'
+      - Differenz
+    - id: p7
+      label: 'Ergebnis: Anspruch des K gegen V besteht'
+      weight: 1.0
+      required: false
+      keywords:
+      - Anspruch besteht
+      - K gegen V
+      - Mithin hat K
