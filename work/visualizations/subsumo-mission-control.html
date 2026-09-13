@@ -1,0 +1,209 @@
+<div id="subsumo-os" lang="de" aria-label="Subsumo Mission Control Entwurf">
+  <style>
+    #subsumo-os { --os-bg:light-dark(#f6f7f9,#101722); --os-panel:light-dark(#ffffff,#192231); --os-ink:light-dark(#172d48,#e6edf7); --os-sub:light-dark(#59697c,#adbbce); --os-line:light-dark(#dfe5ed,#334053); --os-tint:light-dark(#e9eef6,#25364b); --os-accent:light-dark(#1f3a5f,#a9c9f1); --os-on:light-dark(#ffffff,#13253d); --os-good:light-dark(#25735a,#89d4b9); --os-warn:light-dark(#93611b,#e8bd7c); --os-radius:12px; --os-space:16px; color:var(--os-ink); font:14px/1.5 'Segoe UI',system-ui,sans-serif; width:100%; color-scheme:light dark; }
+    #subsumo-os * { box-sizing:border-box; }
+    #subsumo-os h2,#subsumo-os h3,#subsumo-os p { margin:0; }
+    #subsumo-os button,#subsumo-os input,#subsumo-os select { font:inherit; }
+    #subsumo-os button { cursor:pointer; }
+    #subsumo-os button:focus-visible,#subsumo-os input:focus-visible,#subsumo-os select:focus-visible { outline:3px solid var(--os-accent); outline-offset:3px; }
+    #subsumo-os button:disabled { cursor:default; opacity:.55; }
+    #subsumo-os [hidden] { display:none!important; }
+    #subsumo-os .os-shell { background:var(--os-bg); border:1px solid var(--os-line); border-radius:16px; overflow:clip; }
+    #subsumo-os .os-top { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; padding:16px 22px; background:var(--os-panel); border-bottom:1px solid var(--os-line); }
+    #subsumo-os .os-brand { display:flex; gap:10px; align-items:center; font-weight:650; letter-spacing:-.3px; }
+    #subsumo-os .os-mark { background:var(--os-accent); color:var(--os-on); width:30px; height:30px; display:grid; place-items:center; border-radius:9px; font-family:Georgia,serif; font-size:22px; }
+    #subsumo-os .os-mini { color:var(--os-sub); font-size:12px; font-weight:400; }
+    #subsumo-os .os-controls { display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+    #subsumo-os .os-pill { display:inline-flex; gap:6px; align-items:center; border-radius:6px; background:var(--os-tint); padding:3px 7px; font-size:11px; font-weight:500; }
+    #subsumo-os .os-dot { width:7px; height:7px; flex:none; background:var(--os-good); border-radius:50%; }
+    #subsumo-os .os-layout { display:grid; grid-template-columns:164px minmax(0,1fr); }
+    #subsumo-os .os-sidebar { padding:22px 12px; border-right:1px solid var(--os-line); background:var(--os-panel); }
+    #subsumo-os .os-nav-label { text-transform:uppercase; font-size:10px; letter-spacing:1.4px; color:var(--os-sub); padding:0 10px; margin-bottom:12px; }
+    #subsumo-os .os-nav { display:flex; flex-direction:column; gap:6px; }
+    #subsumo-os .os-nav button { display:flex; gap:9px; text-align:left; align-items:center; background:transparent; color:var(--os-sub); border:0; padding:10px; border-radius:8px; }
+    #subsumo-os .os-nav button[aria-pressed="true"] { color:var(--os-ink); background:var(--os-tint); font-weight:600; }
+    #subsumo-os .os-sidebar-foot { margin:40px 10px 0; color:var(--os-sub); font-size:12px; }
+    #subsumo-os .os-sidebar-foot strong { display:block; font-weight:500; color:var(--os-ink); margin:6px 0; }
+    #subsumo-os .os-main { min-width:0; padding:24px; }
+    #subsumo-os .os-heading { display:flex; justify-content:space-between; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:22px; }
+    #subsumo-os .os-eyebrow { color:var(--os-sub); font-size:11px; letter-spacing:1.2px; text-transform:uppercase; margin-bottom:4px; }
+    #subsumo-os h2 { font-size:26px; line-height:1.25; letter-spacing:-.8px; font-weight:600; }
+    #subsumo-os h3 { font-size:14px; font-weight:600; }
+    #subsumo-os .os-button { border:1px solid var(--os-line); background:var(--os-panel); color:var(--os-ink); border-radius:8px; padding:8px 12px; display:inline-flex; align-items:center; justify-content:center; gap:7px; }
+    #subsumo-os .os-primary { background:var(--os-accent); color:var(--os-on); border-color:transparent; }
+    #subsumo-os .os-mission { display:flex; align-items:center; gap:14px; background:var(--os-panel); border:1px solid var(--os-line); border-radius:var(--os-radius); padding:14px 16px; margin-bottom:22px; }
+    #subsumo-os .os-mission > div { flex:1; }
+    #subsumo-os .os-board { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; align-items:start; }
+    #subsumo-os .os-column { min-width:0; }
+    #subsumo-os .os-col-title { display:flex; align-items:center; gap:6px; margin:0 0 12px; font-size:12px; color:var(--os-sub); }
+    #subsumo-os .os-count { margin-left:auto; font-variant-numeric:tabular-nums; }
+    #subsumo-os .os-task { display:block; width:100%; text-align:left; color:var(--os-ink); background:var(--os-panel); border:1px solid var(--os-line); border-radius:var(--os-radius); padding:var(--os-space); margin-bottom:10px; }
+    #subsumo-os .os-task[aria-pressed="true"] { border-color:var(--os-accent); box-shadow:0 0 0 1px var(--os-accent); }
+    #subsumo-os .os-task:hover { background:var(--os-tint); }
+    #subsumo-os .os-task-id { font-size:10px; letter-spacing:.6px; color:var(--os-sub); margin-bottom:8px; }
+    #subsumo-os .os-task-title { display:block; font-size:13px; font-weight:550; line-height:1.5; margin-bottom:14px; overflow-wrap:anywhere; }
+    #subsumo-os .os-task-meta { display:flex; align-items:center; flex-wrap:wrap; gap:6px; font-size:11px; }
+    #subsumo-os .os-avatar { display:inline-grid; place-items:center; width:24px; height:24px; border-radius:7px; background:var(--os-tint); color:var(--os-ink); font-size:10px; font-weight:600; flex:none; }
+    #subsumo-os .os-empty { color:var(--os-sub); font-size:12px; padding:16px 4px; }
+    #subsumo-os .os-detail { margin-top:22px; background:var(--os-panel); border:1px solid var(--os-line); border-radius:var(--os-radius); padding:18px; }
+    #subsumo-os .os-detail-head { display:flex; flex-wrap:wrap; align-items:start; gap:12px; justify-content:space-between; margin-bottom:16px; }
+    #subsumo-os .os-detail-title { font-size:16px; font-weight:600; margin-top:3px; }
+    #subsumo-os .os-track { display:flex; flex-wrap:wrap; gap:6px; list-style:none; padding:0; margin:0 0 14px; }
+    #subsumo-os .os-track li { padding:5px 9px; color:var(--os-sub); background:var(--os-bg); border-radius:6px; font-size:11px; }
+    #subsumo-os .os-track li[data-complete="true"] { color:var(--os-good); }
+    #subsumo-os .os-track li[aria-current="step"] { background:var(--os-tint); color:var(--os-ink); font-weight:600; }
+    #subsumo-os .os-evidence { padding:12px 0; border-top:1px solid var(--os-line); display:grid; grid-template-columns:1fr 1fr; gap:12px; font-size:12px; }
+    #subsumo-os .os-detail-actions { display:flex; align-items:end; flex-wrap:wrap; gap:10px; margin-top:12px; }
+    #subsumo-os label { display:flex; flex-direction:column; gap:5px; font-size:12px; }
+    #subsumo-os input,#subsumo-os select { min-width:0; max-width:100%; padding:8px 10px; border:1px solid var(--os-line); border-radius:7px; background:var(--os-panel); color:var(--os-ink); }
+    #subsumo-os .os-form { border:1px solid var(--os-line); border-radius:var(--os-radius); background:var(--os-panel); padding:16px; margin-bottom:20px; }
+    #subsumo-os .os-form-grid { display:grid; grid-template-columns:minmax(0,2fr) minmax(0,1fr); gap:12px; margin:12px 0; }
+    #subsumo-os .os-form-grid .os-full { grid-column:1/-1; }
+    #subsumo-os .os-team-head { text-align:center; padding:8px 0 20px; }
+    #subsumo-os .os-owner { display:inline-block; background:var(--os-panel); border:1px solid var(--os-line); border-radius:var(--os-radius); padding:14px 32px; }
+    #subsumo-os .os-team-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+    #subsumo-os .os-department { border:1px solid var(--os-line); background:var(--os-panel); border-radius:var(--os-radius); padding:18px; }
+    #subsumo-os .os-agent { display:flex; align-items:center; gap:9px; margin-top:16px; }
+    #subsumo-os .os-agent > div { min-width:0; }
+    #subsumo-os .os-agent small { display:block; color:var(--os-sub); font-size:11px; }
+    #subsumo-os .os-proposal { background:var(--os-panel); border:1px solid var(--os-line); border-radius:var(--os-radius); padding:18px; margin-bottom:12px; }
+    #subsumo-os .os-proposal p { color:var(--os-sub); font-size:13px; margin:9px 0 14px; overflow-wrap:anywhere; }
+    #subsumo-os .os-footer { display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; border-top:1px solid var(--os-line); margin-top:22px; padding-top:12px; font-size:11px; color:var(--os-sub); }
+    #subsumo-os .os-status { min-height:20px; margin-top:12px; color:var(--os-good); font-size:12px; }
+    #subsumo-os svg { width:16px; height:16px; flex:none; }
+    @media(max-width:850px) { #subsumo-os .os-layout { grid-template-columns:1fr; } #subsumo-os .os-sidebar { padding:10px 16px; border-right:0; border-bottom:1px solid var(--os-line); } #subsumo-os .os-nav { flex-direction:row; flex-wrap:wrap; } #subsumo-os .os-nav-label,#subsumo-os .os-sidebar-foot { display:none; } }
+    @media(max-width:600px) { #subsumo-os .os-main { padding:16px; } #subsumo-os .os-board { grid-template-columns:repeat(2,minmax(0,1fr)); } #subsumo-os .os-team-grid,#subsumo-os .os-evidence,#subsumo-os .os-form-grid { grid-template-columns:1fr; } #subsumo-os .os-top { padding:14px 16px; } #subsumo-os h2 { font-size:23px; } }
+    @media(max-width:370px) { #subsumo-os .os-board { grid-template-columns:1fr; } }
+    @media(pointer:coarse) { #subsumo-os button { min-height:44px; } #subsumo-os input,#subsumo-os select { font-size:16px; min-height:44px; } }
+  </style>
+  <div class="os-shell">
+    <header class="os-top">
+      <div class="os-brand"><span class="os-mark">s</span> subsumo <span class="os-mini">/ Company OS</span></div>
+      <div class="os-controls"><span class="os-pill">Interaktiver Entwurf · Beispieldaten</span><span class="os-avatar" aria-label="Jonas">JO</span></div>
+    </header>
+    <div class="os-layout">
+      <aside class="os-sidebar">
+        <div class="os-nav-label">Workspace</div>
+        <nav class="os-nav" aria-label="Firmenansichten">
+          <button type="button" data-view="board" aria-pressed="true"><i data-lucide="layout-dashboard" aria-hidden="true"></i> Mission Control</button>
+          <button type="button" data-view="team" aria-pressed="false"><i data-lucide="network" aria-hidden="true"></i> Team</button>
+          <button type="button" data-view="ideas" aria-pressed="false"><i data-lucide="lightbulb" aria-hidden="true"></i> Chancen</button>
+        </nav>
+        <div class="os-sidebar-foot">Arbeitsprinzip<strong>Eigenständig arbeiten.<br>Nachweisbar abschließen.</strong>Regeln je Aufgabentyp</div>
+      </aside>
+      <main class="os-main">
+        <div class="os-heading"><div><div class="os-eyebrow">Subsumo / M1 · Lernzyklus</div><h2 id="os-page-title">Mission Control</h2></div><button type="button" class="os-button os-primary" id="os-new"><i data-lucide="plus" aria-hidden="true"></i> Aufgabe</button></div>
+        <form id="os-new-form" class="os-form" hidden>
+          <h3>Aufgabe vorbereiten</h3>
+          <div class="os-form-grid">
+            <label>Titel<input id="os-title" required maxlength="120" placeholder="Was soll entstehen?"></label>
+            <label>Verantwortlich<select id="os-owner"><option>Developer</option><option>Redaktion</option><option>Operations</option><option>Marketing</option></select></label>
+            <label class="os-full">Fertig, wenn …<input id="os-acceptance" required maxlength="240" placeholder="Ein überprüfbares Ergebnis"></label>
+          </div>
+          <div class="os-controls"><button type="submit" class="os-button os-primary">Im Demo-Board anlegen</button><button type="button" class="os-button" id="os-cancel">Abbrechen</button></div>
+        </form>
+        <section id="os-board-view" aria-label="Aufgabenboard">
+          <div class="os-mission"><i data-lucide="flag" aria-hidden="true"></i><div><h3>Ein verlässlicher Lernzyklus — auch offline.</h3><div class="os-mini">Ziel M1 · Produktentwicklung + Redaktion</div></div></div>
+          <div id="os-board" class="os-board"></div>
+          <section class="os-detail" id="os-detail" aria-label="Ausgewählte Aufgabe">
+            <div class="os-detail-head"><div><div class="os-eyebrow" id="os-detail-id"></div><div class="os-detail-title" id="os-detail-title"></div></div><span class="os-pill" id="os-policy"></span></div>
+            <ol class="os-track" id="os-track" aria-label="Prüfstrecke"></ol>
+            <div class="os-evidence"><div><div class="os-mini">Abnahmekriterium</div><div id="os-criteria"></div></div><div><div class="os-mini">Letzter Nachweis · simuliert</div><div id="os-evidence"></div></div></div>
+            <div class="os-detail-actions"><label>Zuständigkeit<select id="os-assignee"><option>Developer</option><option>Redaktion</option><option>Operations</option><option>Marketing</option></select></label><button type="button" class="os-button os-primary" id="os-next">Nächsten Schritt simulieren</button><button type="button" class="os-button" id="os-reject">Review ablehnen</button></div>
+          </section>
+        </section>
+        <section id="os-team-view" aria-label="Organisation" hidden>
+          <div class="os-team-head"><div class="os-owner"><div class="os-eyebrow">Unternehmensführung</div><h3>Jonas · Owner</h3><div class="os-mini">Ziele, Prioritäten, Autonomieregeln</div></div></div>
+          <div class="os-team-grid">
+            <section class="os-department"><div class="os-controls"><h3>Product & Engineering</h3><span class="os-pill">Startteam</span></div><div class="os-agent"><span class="os-avatar">PL</span><div>Planner<small>Aufträge präzisieren · Abhängigkeiten klären</small></div></div><div class="os-agent"><span class="os-avatar">DE</span><div>Developer<small>Backend + Flutter · isolierter Arbeitsbereich</small></div></div><div class="os-agent"><span class="os-avatar">QA</span><div>Reviewer<small>Frischer Kontext · überprüfbare Befunde</small></div></div></section>
+            <section class="os-department"><div class="os-controls"><h3>Redaktion</h3><span class="os-pill">Pipeline vorhanden</span></div><div class="os-agent"><span class="os-avatar">CO</span><div>Collector<small>Karten, Schemata und Fälle</small></div></div><div class="os-agent"><span class="os-avatar">FR</span><div>Fachreviewer<small>Struktur-Gate + inhaltliche Prüfung</small></div></div><div class="os-agent"><span class="os-avatar">RE</span><div>Release-Service<small>Commit, Checks, Freigabe und Merge</small></div></div></section>
+            <section class="os-department"><div class="os-controls"><h3>Operations</h3><span class="os-pill">Später</span></div><div class="os-agent"><span class="os-avatar">OP</span><div>Operations-Agent<small>Monitoring → Runbook → Healthcheck</small></div></div></section>
+            <section class="os-department"><div class="os-controls"><h3>Marketing</h3><span class="os-pill">Später</span></div><div class="os-agent"><span class="os-avatar">MA</span><div>Marketing-Agent<small>Entwurf → Review → Veröffentlichung</small></div></div></section>
+          </div>
+        </section>
+        <section id="os-ideas-view" aria-label="Verbesserungsvorschläge" hidden>
+          <article class="os-proposal"><div class="os-controls"><span class="os-avatar">QA</span><h3>Freigaben strikt validieren</h3><span class="os-pill">Codebefund</span></div><p>reviewer.py:60 · Der String „false“ wird als wahr interpretiert. Echte Booleans erzwingen und fehlerhafte Antworten durch Regressionstests absichern.</p><button type="button" class="os-button os-primary" data-idea="strict">Ins Demo-Board übernehmen</button></article>
+          <article class="os-proposal"><div class="os-controls"><span class="os-avatar">PL</span><h3>Dokumentation mit CI abgleichen</h3><span class="os-pill">Repository-Befund</span></div><p>Die Redaktionsdokumentation verweist auf einen fehlenden PR-Workflow. Den tatsächlichen Automatisierungsstand dokumentieren und die Lücke als Aufgabe planen.</p><button type="button" class="os-button os-primary" data-idea="docs">Ins Demo-Board übernehmen</button></article>
+        </section>
+        <div class="os-status" id="os-status" role="status" aria-live="polite"></div>
+        <footer class="os-footer"><span><span class="os-dot" style="display:inline-block;margin-right:5px"></span> Simulation · keine verbundenen Agenten</span><span>Aufgabe → Ergebnis → Prüfung → Abschluss</span></footer>
+      </main>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const root = document.getElementById('subsumo-os');
+      const el = id => root.querySelector('#' + id);
+      const stages = ['Bereit','Arbeit','CI','Review','Freigabe','Merge / Aktion','Verifiziert'];
+      const tasks = [
+        {id:'SUB-101',title:'Content-Deltas im Client laden',owner:'Developer',step:1,criteria:'Geänderte Karten aktualisieren; Offline-Cache und Review-Outbox bleiben erhalten.',policy:'Automatisch nach Gates',evidence:'Arbeitsbranch angelegt · Delta-Vertrag wird geprüft.'},
+        {id:'SUB-102',title:'Anfechtungsklage: Lernset erstellen',owner:'Redaktion',step:3,criteria:'YAML valide; Fachreview abgeschlossen; Fälle mit überprüfbarem Erwartungshorizont.',policy:'Redaktionsregeln',evidence:'Strukturprüfung bestanden · unabhängiges Fachreview läuft.'},
+        {id:'SUB-103',title:'Schemata offline verfügbar machen',owner:'Developer',step:0,criteria:'Schemata bleiben nach Neustart ohne Netz lesbar.',policy:'Automatisch nach Gates',evidence:'Abnahmekriterium hinterlegt · bereit zur Zuweisung.'},
+        {id:'SUB-104',title:'Font lokal bündeln',owner:'Developer',step:6,criteria:'Der Client lädt seine Schrift aus dem gebündelten Asset.',policy:'Automatisch nach Gates',evidence:'Demo-Abschluss · Ergebnis und Prüfungen dokumentiert.'}
+      ];
+      let selected = 'SUB-101';
+      let nextId = 105;
+      const accepted = new Set();
+      const initials = {Developer:'DE',Redaktion:'RE',Operations:'OP',Marketing:'MA'};
+      const textNode = (tag, cls, text) => { const n=document.createElement(tag); n.className=cls; n.textContent=text; return n; };
+      function view(name) {
+        for (const key of ['board','team','ideas']) el('os-' + key + '-view').hidden = key !== name;
+        root.querySelectorAll('[data-view]').forEach(b => b.setAttribute('aria-pressed',String(b.dataset.view===name)));
+        el('os-page-title').textContent = {board:'Mission Control',team:'Deine kleine Firma',ideas:'Chancen-Inbox'}[name];
+      }
+      function render() {
+        const board = el('os-board'); board.replaceChildren();
+        ['Bereit','In Arbeit','Review & Freigabe','Erledigt'].forEach((name,index) => {
+          const column=textNode('div','os-column','');
+          const members=tasks.filter(t => (t.step===0?0:t.step<=2?1:t.step<=5?2:3)===index);
+          const heading=textNode('div','os-col-title',name); heading.append(textNode('span','os-count',String(members.length))); column.append(heading);
+          members.forEach(t => {
+            const button=textNode('button','os-task',''); button.type='button'; button.setAttribute('aria-pressed',String(t.id===selected));
+            button.append(textNode('div','os-task-id',t.id),textNode('span','os-task-title',t.title));
+            const meta=textNode('div','os-task-meta',''); meta.append(textNode('span','os-avatar',initials[t.owner]),textNode('span','',t.owner)); button.append(meta);
+            button.addEventListener('click',()=>{selected=t.id;render();el('os-status').textContent=t.id+' ausgewählt.';}); column.append(button);
+          });
+          if(!members.length) column.append(textNode('div','os-empty','Keine Aufgabe'));
+          board.append(column);
+        });
+        const t=tasks.find(t=>t.id===selected);
+        el('os-detail-id').textContent=t.id+' / Laufdetails'; el('os-detail-title').textContent=t.title;
+        el('os-policy').textContent=t.policy; el('os-criteria').textContent=t.criteria; el('os-evidence').textContent=t.evidence;
+        el('os-assignee').value=t.owner; el('os-assignee').disabled=t.step!==0;
+        el('os-track').replaceChildren();
+        stages.forEach((s,i)=>{const n=textNode('li','',(i<t.step?'✓ ':'')+s); n.dataset.complete=String(i<t.step); if(i===t.step)n.setAttribute('aria-current','step');el('os-track').append(n);});
+        el('os-next').disabled=t.step===6;
+        el('os-next').textContent=t.step===6?'Abgeschlossen':t.step===4?'Freigabe simulieren':'Nächsten Schritt simulieren';
+        el('os-reject').hidden=t.step!==3;
+      }
+      root.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>view(b.dataset.view)));
+      el('os-new').addEventListener('click',()=>{el('os-new-form').hidden=false;el('os-title').focus();});
+      el('os-cancel').addEventListener('click',()=>{el('os-new-form').hidden=true;el('os-new').focus();});
+      el('os-new-form').addEventListener('submit',event=>{
+        event.preventDefault();
+        const title=el('os-title').value.trim(),criteria=el('os-acceptance').value.trim();
+        if(!title||!criteria){el('os-status').textContent='Bitte Titel und Abnahmekriterium ausfüllen.';return;}
+        const owner=el('os-owner').value; selected='SUB-'+nextId++;
+        tasks.push({id:selected,title,criteria,owner,step:0,policy:['Operations','Marketing'].includes(owner)?'Freigabe vor Aktion':'Automatisch nach Gates',evidence:'Demo-Aufgabe angelegt · Ausführung noch nicht gestartet.'});
+        el('os-new-form').reset();el('os-new-form').hidden=true;view('board');render();el('os-status').textContent=selected+' im Demo-Board angelegt.';
+      });
+      el('os-assignee').addEventListener('change',event=>{const t=tasks.find(t=>t.id===selected);if(t.step!==0)return;t.owner=event.target.value;t.policy=['Operations','Marketing'].includes(t.owner)?'Freigabe vor Aktion':'Automatisch nach Gates';render();el('os-status').textContent=t.id+' ist '+t.owner+' zugewiesen.';});
+      el('os-next').addEventListener('click',()=>{
+        const t=tasks.find(t=>t.id===selected);if(t.step>=6)return;t.step++;
+        t.evidence=[ '', 'Isolierter Arbeitsbereich angelegt · Auftrag übernommen.', 'Änderung vorbereitet · automatische Prüfungen laufen.', 'Automatische Prüfungen bestanden · unabhängiges Review gestartet.', 'Review ohne offene Befunde · Abschlussregel wird geprüft.', 'Gültige Freigabe für dieses Ergebnis · Integration / Aktion läuft.', 'Ergebnis verifiziert · Abschlussnachweis gespeichert.' ][t.step];
+        render();el('os-status').textContent=t.id+': '+stages[t.step]+' simuliert.';
+      });
+      el('os-reject').addEventListener('click',()=>{const t=tasks.find(t=>t.id===selected);if(t.step!==3)return;t.step=1;t.evidence='Review abgelehnt · ein Abnahmekriterium ist nicht nachgewiesen. Zurück zur Nacharbeit.';render();el('os-status').textContent='Nacharbeit zugewiesen. CI und Review müssen erneut durchlaufen werden.';});
+      root.querySelectorAll('[data-idea]').forEach(button=>button.addEventListener('click',()=>{
+        const key=button.dataset.idea;if(accepted.has(key))return;accepted.add(key);
+        const info=key==='strict'?['Freigaben strikt validieren','JSON-Strings, fehlende Felder und widersprüchliche Freigaben werden abgelehnt; Regressionstests bestehen.']:['Dokumentation mit CI abgleichen','Alle Workflow-Verweise existieren; Ist-Stand und geplante PR-Automation sind korrekt beschrieben.'];
+        selected='SUB-'+nextId++;tasks.push({id:selected,title:info[0],criteria:info[1],owner:'Developer',step:0,policy:'Automatisch nach Gates',evidence:'Agentenvorschlag übernommen · Quelle im Ticket hinterlegt.'});
+        button.disabled=true;button.textContent='Übernommen · '+selected;render();el('os-status').textContent=selected+' wartet im Aufgabenboard.';
+      }));
+      render();
+      const design={density:'luftig',rounding:12,accent:'subsumo'};
+      function applyDesign(){root.style.setProperty('--os-space',design.density==='kompakt'?'11px':'16px');root.style.setProperty('--os-radius',design.rounding+'px');root.style.setProperty('--os-accent',design.accent==='subsumo'?'light-dark(#1f3a5f,#a9c9f1)':'light-dark(#235e55,#a4d8ca)');}
+      if(globalThis.Tweak){const tweak=new Tweak({container:root,onChange:applyDesign});tweak.addSelect(design,'density',{label:'Informationsdichte',options:['luftig','kompakt']});tweak.addSlider(design,'rounding',{label:'Rundung',min:4,max:18,unit:'px'});tweak.addSelect(design,'accent',{label:'Farbcharakter',options:[{label:'Subsumo Blau',value:'subsumo'},{label:'Ruhiges Grün',value:'green'}]});}
+    })();
+  </script>
+</div>
