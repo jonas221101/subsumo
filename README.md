@@ -144,47 +144,11 @@ Was als Nächstes kommt: [`docs/03-roadmap.md`](docs/03-roadmap.md).
 
 ---
 
-## Eigenes Repository
+## Mitwirken
 
-Das Projekt liegt derzeit als Unterordner auf dem Branch
-`claude/jura-learning-app-plan-j0j8on` in einem bestehenden Repository.
-So wird daraus ein eigenständiges Repo mit vollständiger Historie:
-
-**1. Leeres Repo auf GitHub anlegen** — z. B. unter github.com/new, Name
-`subsumo`, **ohne** README/`.gitignore`/Lizenz (sonst gibt es beim Push einen
-Konflikt). Die automatische Erstellung über die Claude-GitHub-Integration ist
-in dieser Umgebung nicht freigeschaltet (403 „Resource not accessible by
-integration"), das muss von Hand passieren.
-
-**2. Lokal zuerst auf den Branch mit den Änderungen wechseln.** Der häufigste
-Fehler (`'jura-lern-app' does not exist; use 'git subtree add'`): `git subtree
-split` liest den *aktuell ausgecheckten* Branch — wer lokal auf `master`
-steht, findet dort keinen `jura-lern-app`-Ordner, weil der nur auf dem
-Feature-Branch existiert.
-
-```bash
-git fetch origin claude/jura-learning-app-plan-j0j8on
-git checkout claude/jura-learning-app-plan-j0j8on
-```
-
-**3. Subtree abspalten und pushen:**
-
-```bash
-git subtree split --prefix=jura-lern-app -b subsumo-main
-git push https://github.com/<user>/subsumo.git subsumo-main:main
-# per SSH statt HTTPS: git push git@github.com:<user>/subsumo.git subsumo-main:main
-```
-
-**4. Aufräumen (optional):**
-
-```bash
-git checkout master
-git branch -D subsumo-main
-```
-
-Ein erneuter `git subtree split` (z. B. nach weiteren Commits auf dem
-Feature-Branch) und ein erneuter Push aktualisieren das ausgegliederte Repo,
-ohne dessen Historie zu verlieren.
-
-Danach greift auch `.github/workflows/ci.yml` — GitHub Actions liest Workflows
-nur aus dem Wurzelverzeichnis eines Repositories.
+Eigenständiges Repository unter github.com/jonas221101/subsumo,
+`.github/workflows/ci.yml` läuft auf jedem PR und jedem Push nach `main`.
+`main` ist per Branch Protection gegen direkte Pushes gesperrt — jede
+Änderung läuft über einen kurzlebigen Branch und einen Pull Request, der erst
+nach grüner CI gemerged wird. Branch-Namen, Commit-Konventionen und die
+lokal vor jedem PR laufende Prüfung: [`CONTRIBUTING.md`](CONTRIBUTING.md).

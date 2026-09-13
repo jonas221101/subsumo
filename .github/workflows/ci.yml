@@ -1,10 +1,5 @@
 name: CI
 
-# Hinweis: GitHub Actions liest Workflows nur aus dem Repository-Wurzel-
-# verzeichnis. Solange das Projekt in einem Unterordner liegt, laeuft dieser
-# Workflow nicht - er wird aktiv, sobald jura-lern-app/ in ein eigenes
-# Repository ausgegliedert ist (siehe README, Abschnitt "Eigenes Repository").
-
 on:
   push:
     branches: [main]
