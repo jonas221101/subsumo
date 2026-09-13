@@ -1,0 +1,250 @@
+topic:
+  slug: sr-versuch-ruecktritt
+  area: strafrecht
+  title: Versuch und Ruecktritt, §§ 22 ff. StGB
+  parent: sr-at
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-13'
+    status: ki-freigegeben
+cards:
+- slug: sr-versuch-begriff
+  type: definition
+  front: 'Definiere: Versuch, § 22 StGB'
+  back: 'Eine Straftat versucht, wer nach seiner Vorstellung von der Tat zur Verwirklichung
+    des Tatbestandes unmittelbar ansetzt. Der Versuch setzt sich damit aus zwei Elementen
+    zusammen: dem Tatentschluss (subjektive Komponente) und dem unmittelbaren Ansetzen
+    (objektive Komponente).'
+  norms:
+  - § 22 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-versuch-tatentschluss
+  type: definition
+  front: 'Definiere: Tatentschluss'
+  back: Tatentschluss ist der unbedingte Wille des Taeters, alle objektiven Tatbestandsmerkmale
+    zu verwirklichen, verbunden mit dem hierfuer erforderlichen Vorsatz (mindestens
+    dolus eventualis) sowie etwaigen besonderen subjektiven Tatbestandsmerkmalen.
+    Behaelt sich der Taeter die endgueltige Ausfuehrung noch vor (blosser Vorbehalt),
+    fehlt es am unbedingten Handlungswillen und damit am Tatentschluss.
+  norms:
+  - § 22 StGB
+  - § 15 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-versuch-unmittelbares-ansetzen
+  type: definition
+  front: Wann liegt ein unmittelbares Ansetzen i.S.d. § 22 StGB vor?
+  back: 'Unmittelbares Ansetzen liegt vor, wenn der Taeter Handlungen vornimmt, die
+    nach seiner Vorstellung von der Tat ohne wesentliche Zwischenschritte in die Tatbestandsverwirklichung
+    einmuenden und die geschuetzten Rechtsgueter aus seiner Sicht bereits konkret
+    gefaehrden - kurz: wenn es aus Tatersicht ''jetzt geht es los'' heisst.'
+  norms:
+  - § 22 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-versuch-strafbarkeit-23
+  type: norm
+  front: Wann ist der Versuch strafbar? (§ 23 Abs. 1 StGB)
+  back: 'Der Versuch eines Verbrechens ist gemaess § 23 Abs. 1 StGB stets strafbar
+    (§ 12 Abs. 1 StGB: im Mindestmass mit einem Jahr oder mehr Freiheitsstrafe bedrohte
+    Taten). Der Versuch eines Vergehens ist dagegen nur strafbar, wenn das Gesetz
+    es ausdruecklich bestimmt (z. B. § 242 Abs. 2 StGB fuer den Diebstahlsversuch).'
+  norms:
+  - § 23 Abs. 1 StGB
+  - § 12 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-ruecktritt-begriff
+  type: definition
+  front: 'Definiere: Ruecktritt vom Versuch, § 24 Abs. 1 StGB'
+  back: Nach § 24 Abs. 1 StGB wird wegen Versuchs nicht bestraft, wer die weitere
+    Ausfuehrung der Tat freiwillig aufgibt (beim unbeendeten Versuch) oder deren Vollendung
+    freiwillig verhindert (beim beendeten Versuch). Der Ruecktritt ist ein persoenlicher
+    Strafaufhebungsgrund und beseitigt die bereits begruendete Versuchsstrafbarkeit.
+  norms:
+  - § 24 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-ruecktritt-ruecktrittshorizont
+  type: streitstand
+  front: Was ist der Ruecktrittshorizont und wonach bestimmt er sich?
+  back: 'Ob ein Versuch unbeendet oder beendet ist, bestimmt sich nach dem
+
+    sogenannten Ruecktrittshorizont: massgeblich ist nicht der urspruengliche
+
+    Tatplan, sondern die Vorstellung des Taeters unmittelbar nach Abschluss
+
+    der letzten von ihm vorgenommenen Ausfuehrungshandlung.
+
+
+    Unbeendeter Versuch: Der Taeter glaubt, noch nicht alles Erforderliche
+
+    zur Herbeifuehrung des Erfolgs getan zu haben. Hier genuegt fuer den
+
+    Ruecktritt bereits das blosse Aufgeben der weiteren Tatausfuehrung.
+
+
+    Beendeter Versuch: Der Taeter geht davon aus, bereits alles zur
+
+    Herbeifuehrung des Erfolgs Erforderliche getan zu haben (der Erfolg werde
+
+    auch ohne weiteres Zutun eintreten). Hier reicht blosses Untaetigbleiben
+
+    fuer den Ruecktritt nicht aus - erforderlich ist ein aktives Verhindern
+
+    der Vollendung, § 24 Abs. 1 S. 1 Var. 2 StGB.
+
+    '
+  norms:
+  - § 24 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-ruecktritt-freiwilligkeit
+  type: definition
+  front: Wann ist ein Ruecktritt freiwillig?
+  back: Freiwillig handelt der Taeter, wenn er aus autonomen Motiven von der weiteren
+    Tatausfuehrung absieht oder die Vollendung verhindert, er also 'Herr seiner Entschluesse'
+    bleibt - etwa aus Reue, Mitleid oder Angst vor Strafe. Unfreiwillig (heteronom)
+    ist der Ruecktritt dagegen, wenn aeussere Zwaenge den Taeter an der Weiterausfuehrung
+    hindern, etwa das ploetzliche Erscheinen eines Dritten, das die Tatausfuehrung
+    faktisch unmoeglich macht oder das Entdeckungsrisiko fuer den Taeter unzumutbar
+    erhoeht.
+  norms:
+  - § 24 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-versuch
+  title: Pruefung des versuchten Delikts, §§ 22, 23 StGB
+  norms:
+  - § 22 StGB
+  - § 23 Abs. 1 StGB
+  - § 24 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Vorpruefung
+    children:
+    - label: 1. Tatbestand nicht vollendet
+    - label: 2. Strafbarkeit des Versuchs, § 23 Abs. 1 StGB
+  - label: II. Tatbestand des Versuchs
+    children:
+    - label: 1. Tatentschluss
+    - label: 2. Unmittelbares Ansetzen, § 22 StGB
+  - label: III. Rechtswidrigkeit
+  - label: IV. Schuld
+  - label: V. Ruecktritt, § 24 Abs. 1 StGB
+    hinweis: Nur pruefen, wenn der Sachverhalt dazu Anlass gibt.
+    children:
+    - label: 1. Kein fehlgeschlagener Versuch
+    - label: '2. Ruecktrittshorizont: unbeendeter oder beendeter Versuch'
+    - label: 3. Ruecktrittshandlung (Aufgeben bzw. Verhindern der Vollendung)
+    - label: 4. Freiwilligkeit
+  - label: VI. Ergebnis
+faelle:
+- slug: sr-fall-messerstich-ruecktritt
+  title: Der vermeintlich toedliche Stich
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: Nach einem heftigen Streit sticht T dem O mit bedingtem Toetungsvorsatz einmal
+    mit einem Messer in den Bauch. O sackt zusammen und bleibt regungslos liegen.
+    T geht davon aus, O sei toedlich getroffen und werde in Kuerze sterben; er verlaesst
+    fluchtartig den Tatort, ohne Rettungsmassnahmen einzuleiten oder Hilfe zu rufen.
+    Ein wenig spaeter vorbeikommender Passant findet O noch lebend auf und alarmiert
+    den Rettungsdienst. O ueberlebt nach einer Notoperation.
+  question: Ist T wegen versuchten Totschlags gemaess §§ 212 Abs. 1, 22, 23 Abs. 1
+    StGB strafbar?
+  steps:
+  - prompt: Formuliere die Vorpruefung und den Obersatz.
+    erwartung: Da O nicht verstorben ist, kommt nur eine Versuchsstrafbarkeit in Betracht;
+      der Versuch des Verbrechens Totschlag ist gemaess § 23 Abs. 1 StGB stets strafbar.
+      T koennte sich wegen versuchten Totschlags gemaess §§ 212 Abs. 1, 22, 23 Abs.
+      1 StGB strafbar gemacht haben.
+  - prompt: Liegt Tatentschluss vor?
+    erwartung: Ja - T handelte mit (zumindest bedingtem) Vorsatz, O zu toeten.
+  - prompt: Liegt ein unmittelbares Ansetzen vor?
+    erwartung: Ja - mit dem Messerstich hat T bereits die aus seiner Sicht zur Toetung
+      fuehrende Handlung selbst vorgenommen.
+  - prompt: Ist T vom Versuch zurueckgetreten?
+    erwartung: 'Das ist zu pruefen: Nach dem Ruecktrittshorizont kommt es auf die
+      Vorstellung des T nach dem Stich an - er hielt O fuer toedlich getroffen, ging
+      also von einem beendeten Versuch aus.'
+  - prompt: Genuegt es beim beendeten Versuch, dass T nichts weiter unternommen hat?
+    erwartung: Nein. Beim beendeten Versuch erfordert § 24 Abs. 1 S. 1 Var. 2 StGB
+      ein aktives Verhindern der Vollendung, etwa durch Rettungsmassnahmen oder einen
+      Notruf. Blosses Untaetigbleiben genuegt nicht.
+  - prompt: Ist T wirksam zurueckgetreten?
+    erwartung: Nein - mangels Verhinderungshandlung liegt kein wirksamer Ruecktritt
+      vor. T bleibt wegen versuchten Totschlags strafbar.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Obersatz/Vorpruefung mit §§ 212 Abs. 1, 22, 23 Abs. 1 StGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 212 Abs. 1 StGB
+      - § 22 StGB
+      - § 23 Abs. 1 StGB
+      keywords:
+      - '212'
+      - '22'
+    - id: p2
+      label: Tatentschluss (Toetungsvorsatz) bejaht
+      weight: 1.5
+      required: false
+      keywords:
+      - Tatentschluss
+      - Toetungsvorsatz
+      - Vorsatz
+    - id: p3
+      label: Unmittelbares Ansetzen durch den Messerstich bejaht
+      weight: 1.5
+      required: false
+      keywords:
+      - unmittelbares Ansetzen
+      - Messerstich
+    - id: p4
+      label: 'Ruecktrittshorizont zutreffend bestimmt: aus Sicht des T beendeter Versuch'
+      weight: 3.0
+      required: true
+      norms:
+      - § 24 Abs. 1 StGB
+      keywords:
+      - Ruecktrittshorizont
+      - beendeter Versuch
+    - id: p5
+      label: Erkannt, dass beim beendeten Versuch aktives Verhindern erforderlich
+        ist und blosses Untaetigbleiben nicht genuegt
+      weight: 3.0
+      required: true
+      keywords:
+      - aktives Verhindern
+      - Untaetigbleiben
+      - genuegt nicht
+    - id: p6
+      label: 'Ergebnis: kein wirksamer Ruecktritt, T bleibt strafbar wegen versuchten
+        Totschlags'
+      weight: 1.0
+      required: false
+      keywords:
+      - kein wirksamer Ruecktritt
+      - strafbar
