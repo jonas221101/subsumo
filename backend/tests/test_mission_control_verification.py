@@ -76,43 +76,17 @@ class TestCommitVerification:
         assert result.pushed is False
 
     def test_pushed_commit_is_pushed(self, tmp_path):
-        """A commit reachable from a remote branch reports pushed=True."""
-        # Create a bare repository to act as origin
-        bare_repo = tmp_path / "origin.git"
-        bare_repo.mkdir()
-        subprocess.run(
-            ["git", "init", "--bare"],
-            cwd=bare_repo,
-            capture_output=True,
-            check=True,
-        )
-
-        # Create a working repository
+        """A commit in a remote-tracking branch reports pushed=True."""
         repo = tmp_path / "repo"
         repo.mkdir()
         self._init_repo(repo)
-
-        # Add bare repo as origin
-        subprocess.run(
-            ["git", "remote", "add", "origin", str(bare_repo)],
-            cwd=repo,
-            capture_output=True,
-            check=True,
-        )
-
-        # Create a commit and push it
         sha = self._commit_file(repo, "file.txt", "content")
-        # Get the current branch name (master or main)
-        branch_result = subprocess.run(
-            ["git", "rev-parse", "--abbrev-ref", "HEAD"],
-            cwd=repo,
-            capture_output=True,
-            text=True,
-            check=True,
-        )
-        branch_name = branch_result.stdout.strip()
+
+        # check_commit deliberately reads remote-tracking refs rather than
+        # contacting a remote.  Create the same ref a successful fetch would
+        # leave behind without requiring a local transport or network service.
         subprocess.run(
-            ["git", "push", "-u", "origin", branch_name],
+            ["git", "update-ref", "refs/remotes/origin/main", sha],
             cwd=repo,
             capture_output=True,
             check=True,

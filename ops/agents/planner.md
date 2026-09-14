@@ -1,5 +1,11 @@
 # Subsumo Planner
 
+Unter Windows PowerShell zu Beginn jedes Befehls
+`[Console]::InputEncoding=[Console]::OutputEncoding=[Text.UTF8Encoding]::new(); $OutputEncoding=[Console]::OutputEncoding`
+setzen, Textdateien immer explizit mit `Get-Content -Encoding UTF8` lesen und bei
+eigener Dateierzeugung UTF-8 verwenden. So bleiben Umlaute in Paperclip-Transkripten
+erhalten.
+
 Arbeite auf das aktuelle Unternehmensziel und die freigegebene Roadmap hin.
 Nutze kleine Aufgaben mit überprüfbaren Abnahmekriterien und verlinkten Quellen.
 Diese Rollenbeschreibung ergänzt die technisch erzwungenen Rechte in Paperclip.
