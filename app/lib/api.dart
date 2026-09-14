@@ -61,7 +61,8 @@ class ApiClient {
       _decode(await _client.get(_uri(path, query), headers: _headers));
 
   Future<dynamic> _post(String path, Object? body) async => _decode(
-        await _client.post(_uri(path), headers: _headers, body: jsonEncode(body)),
+        await _client.post(_uri(path),
+            headers: _headers, body: jsonEncode(body)),
       );
 
   // --- Auth ----------------------------------------------------------------
@@ -105,8 +106,26 @@ class ApiClient {
 
   // --- Inhalte --------------------------------------------------------------
 
+  Future<Map<String, dynamic>> contentManifest() async {
+    final data = await _get('/v1/content/manifest');
+    if (data is! Map) {
+      throw const FormatException('Content-Manifest ist kein Objekt');
+    }
+    return Map<String, dynamic>.from(data);
+  }
+
+  Future<List<Map<String, dynamic>>> contentCards({int limit = 2000}) async {
+    final data = await _get('/v1/content/cards', {'limit': limit});
+    if (data is! List || data.any((card) => card is! Map)) {
+      throw const FormatException('Karten-Snapshot ist ungueltig');
+    }
+    return data.map((card) => Map<String, dynamic>.from(card as Map)).toList();
+  }
+
   Future<List<Map<String, dynamic>>> schemata({String? area}) async {
-    final data = await _get('/v1/content/schemata', {if (area != null) 'area': area});
+    final data = await _get('/v1/content/schemata', {
+      if (area != null) 'area': area,
+    });
     return (data as List).cast<Map<String, dynamic>>();
   }
 
