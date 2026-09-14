@@ -397,6 +397,10 @@ def execute(args: argparse.Namespace, client: PaperclipClient) -> Any:
                     f"Unaufgeloeste Outbox-Eintrag(e) fuer diese Aufgabe: {record_ids}. "
                     "Reconcile ausfuehren oder --force zum Erzwingen nutzen."
                 )
+        interaction = client.create_review_interaction(
+            args.task, addressee_agent_id=args.recipient,
+            prompt=f"Bitte Review fuer {args.task} (Commit {args.commit}) durchfuehren.",
+        )
         record = outbox.record(
             kind="issue_update", task_id=args.task,
             correlation_id=message.message_id, detail=args.commit
@@ -404,6 +408,7 @@ def execute(args: argparse.Namespace, client: PaperclipClient) -> Any:
         try:
             result = client.update_issue(
                 args.task, status="in_review", assignee_agent_id=args.recipient, comment=body,
+                review_interaction_id=interaction.get("id", ""),
             )
             outbox.mark_confirmed(record.record_id, result.get("id", ""))
             return result

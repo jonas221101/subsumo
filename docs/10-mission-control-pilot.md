@@ -12,8 +12,9 @@ erstellt keine zweite Aufgaben-Datenbank und startet keine Modellaufrufe selbst.
 - Gespeicherte Aufgabenthreads seitenweise lesen.
 - Agenten direkt per strukturierter Erwähnung adressieren, Fragen und Antworten
   mit eindeutigen Nachrichten- und Kommentarreferenzen austauschen.
-- Einen konkreten Commit samt Nachweisen an einen Reviewer übergeben: Status,
-  Zuständigkeit und Übergabenachricht in einem API-Aufruf ändern.
+- Einen konkreten Commit samt Nachweisen an einen Reviewer übergeben: Eine
+  Review-Interaction öffnen und danach Status, Zuständigkeit und
+  Übergabenachricht in einem PATCH ändern.
 - Identitäten, Firmenzuordnung, Kommentarautor und Empfänger vor dem Senden prüfen.
 - Keine automatische Wiederholung von Schreibzugriffen bei unklaren Ergebnissen.
 - Jede beabsichtigte Änderung landet **vor** dem Absenden in einem lokalen,
@@ -138,9 +139,27 @@ nicht durch einen zusätzlichen Subsumo-Scheduler kontrolliert.
 python -m mission_control request-review SUB-101 --to REVIEWER_UUID --commit VOLLSTAENDIGER_40STELLIGER_SHA --body-file nachweise.md
 ```
 
-Das setzt eine eigene Aufgabe in `in_progress` voraus. Der Auftrag wechselt
-mit Commit und Nachweisen in einem PATCH zu `in_review` und zum Reviewer.
-Der Reviewer nimmt ihn in seinem eigenen Lauf mit `claim SUB-101 --review` an.
+Das setzt eine eigene Aufgabe in `in_progress` voraus. Gegen die echte, lokal
+laufende Pilotinstanz lehnt der Server einen reinen Status- und
+Zuständigkeitswechsel nach `in_review` mit HTTP 422
+(`invalid_issue_disposition`) ab: Ein Agentenschreibzugriff nach `in_review`
+braucht einen echten, vom Server erkannten Review-Pfad. Deshalb öffnet die
+CLI zuerst per `POST /api/issues/{id}/interactions` eine
+`request_confirmation`-Interaction an den Reviewer und übergibt deren `id`
+im anschließenden PATCH als `reviewInteractionId` — das erfüllt die
+Disposition `pending_issue_thread_interaction`. Commit und Nachweise
+bleiben wie bisher im `comment`-Feld desselben PATCH.
+
+Das bislang ebenfalls im PATCH vorgesehene Feld `reviewRequest` (Freitext-
+Anweisungen für den Reviewer) wird hier bewusst **nicht** gesetzt: Live gegen
+den Pilotserver getestet, verlangt `reviewRequest` zusätzlich eine bereits
+bestehende Review- oder Freigabe-Stage (z. B. aus einer `executionPolicy`);
+ohne diese lehnt der Server auch die Kombination mit einer gültigen
+`reviewInteractionId` mit `reviewRequest requires an active review or
+approval stage` ab. `client.update_issue()` unterstützt den Parameter
+weiterhin für Aufrufer, die eine solche Stage bereits eingerichtet haben.
+
+Der Reviewer nimmt die Aufgabe in seinem eigenen Lauf mit `claim SUB-101 --review` an.
 Seine fachlichen Rückfragen und Befunde laufen wieder über `send`.
 
 Der angegebene SHA wird lokal gegen das Repository geprüft (`--repo`, Standard:
