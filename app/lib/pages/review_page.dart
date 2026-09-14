@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
+import 'screen_status.dart';
 
 /// Karteikarten-Lernschleife (Challenge 2).
 ///
@@ -42,7 +44,7 @@ class _ReviewPageState extends State<ReviewPage> {
     final app = AppScope.of(context);
 
     if (app.loading && app.dueCards.isEmpty) {
-      return const Center(child: CircularProgressIndicator());
+      return const ScreenStatus.loading();
     }
     if (app.dueCards.isEmpty) {
       return _EmptyState(onReload: app.loadDueCards);
@@ -53,87 +55,92 @@ class _ReviewPageState extends State<ReviewPage> {
 
     return ReadableWidth(
       child: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(Spacing.lg),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Row(
               children: [
-                Chip(label: Text(_typeLabel(card['type'] as String? ?? ''))),
-                const SizedBox(width: 8),
+                SubsumoChip(label: _typeLabel(card['type'] as String? ?? '')),
+                const SizedBox(width: Spacing.sm),
                 Text('${app.dueCards.length} offen'),
                 const Spacer(),
                 if (app.dueCardsFromCache)
                   const Tooltip(
                     message: 'Kein Netz erreichbar - zeigt den zuletzt '
                         'geladenen Kartenstapel.',
-                    child: Chip(
-                      avatar: Icon(Icons.cloud_off, size: 16),
-                      label: Text('offline'),
-                    ),
+                    child: SubsumoChip(label: 'offline', icon: Icons.cloud_off),
                   ),
                 if (card['content_changed'] == true)
                   const Tooltip(
                     message: 'Der Inhalt dieser Karte wurde fachlich aktualisiert.',
-                    child: Chip(label: Text('aktualisiert')),
+                    child: SubsumoChip(label: 'aktualisiert'),
                   ),
               ],
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: Spacing.lg),
             Expanded(
               child: SingleChildScrollView(
-                child: Card(
-                  child: Padding(
-                    padding: const EdgeInsets.all(24),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          card['front'] as String? ?? '',
-                          style: Theme.of(context).textTheme.titleLarge,
-                        ),
-                        if (_revealed) ...[
-                          const Divider(height: 40),
-                          Text(card['back'] as String? ?? ''),
-                          if (norms.isNotEmpty) ...[
-                            const SizedBox(height: 20),
-                            Wrap(
-                              spacing: 8,
-                              children: [
-                                for (final norm in norms)
-                                  ActionChip(
-                                    label: Text(norm),
-                                    // M2: oeffnet den Norm-Explorer.
-                                    onPressed: () {},
-                                  ),
-                              ],
-                            ),
-                          ],
+                child: SubsumoCard(
+                  padding: const EdgeInsets.all(Spacing.xl),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        card['front'] as String? ?? '',
+                        style: Theme.of(context).textTheme.titleLarge,
+                      ),
+                      if (_revealed) ...[
+                        const Divider(height: 40),
+                        Text(card['back'] as String? ?? ''),
+                        if (norms.isNotEmpty) ...[
+                          const SizedBox(height: Spacing.xl),
+                          Wrap(
+                            spacing: Spacing.sm,
+                            children: [
+                              for (final norm in norms)
+                                SubsumoChip.action(
+                                  label: norm,
+                                  // M2: oeffnet den Norm-Explorer.
+                                  onPressed: () {},
+                                ),
+                            ],
+                          ),
                         ],
                       ],
-                    ),
+                    ],
                   ),
                 ),
               ),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: Spacing.lg),
             if (!_revealed)
-              FilledButton(
+              SubsumoButton.primary(
+                label: 'Antwort zeigen',
                 onPressed: () => setState(() => _revealed = true),
-                child: const Text('Antwort zeigen'),
               )
             else
               Row(
                 children: [
-                  _RateButton('Nochmal', 1, Colors.red.shade700, _rate),
-                  _RateButton('Schwer', 2, Colors.orange.shade800, _rate),
-                  _RateButton('Gut', 3, Colors.green.shade700, _rate),
-                  _RateButton('Leicht', 4, Colors.blue.shade700, _rate),
+                  _RateButton('Nochmal', 1, (t, c) => c.error, _rate),
+                  _RateButton(
+                    'Schwer',
+                    2,
+                    (t, c) => t.extension<SubsumoColors>()?.feedbackHint ?? c.primary,
+                    _rate,
+                  ),
+                  _RateButton(
+                    'Gut',
+                    3,
+                    (t, c) => t.extension<SubsumoColors>()?.feedbackPositive ?? c.primary,
+                    _rate,
+                  ),
+                  _RateButton('Leicht', 4, (t, c) => c.primary, _rate),
                 ],
               ),
             if (app.outbox.isNotEmpty)
               Padding(
-                padding: const EdgeInsets.only(top: 8),
+                padding: const EdgeInsets.only(top: Spacing.sm),
                 child: Text(
                   '${app.outbox.length} Bewertung(en) warten auf Synchronisierung',
                   style: Theme.of(context).textTheme.bodySmall,
@@ -156,24 +163,33 @@ class _ReviewPageState extends State<ReviewPage> {
 }
 
 class _RateButton extends StatelessWidget {
-  const _RateButton(this.label, this.rating, this.color, this.onRate);
+  const _RateButton(this.label, this.rating, this.colorOf, this.onRate);
 
   final String label;
   final int rating;
-  final Color color;
+  final Color Function(ThemeData theme, ColorScheme scheme) colorOf;
   final Future<void> Function(int) onRate;
 
   @override
-  Widget build(BuildContext context) => Expanded(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 4),
-          child: FilledButton(
-            style: FilledButton.styleFrom(backgroundColor: color),
-            onPressed: () => onRate(rating),
-            child: Text(label),
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final backgroundColor = colorOf(theme, theme.colorScheme);
+    return Expanded(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: Spacing.xs),
+        child: FilledButton(
+          style: FilledButton.styleFrom(
+            backgroundColor: backgroundColor,
+            foregroundColor: backgroundColor.computeLuminance() > 0.5
+                ? theme.colorScheme.onSurface
+                : Colors.white,
           ),
+          onPressed: () => onRate(rating),
+          child: Text(label),
         ),
-      );
+      ),
+    );
+  }
 }
 
 class _EmptyState extends StatelessWidget {
@@ -182,14 +198,9 @@ class _EmptyState extends StatelessWidget {
   final Future<void> Function() onReload;
 
   @override
-  Widget build(BuildContext context) => Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Text('Nichts faellig. Gut gemacht.'),
-            const SizedBox(height: 12),
-            OutlinedButton(onPressed: onReload, child: const Text('Neu laden')),
-          ],
-        ),
+  Widget build(BuildContext context) => ScreenStatus.empty(
+        message: 'Nichts faellig. Gut gemacht.',
+        severity: FeedbackSeverity.positive,
+        onRetry: onReload,
       );
 }
