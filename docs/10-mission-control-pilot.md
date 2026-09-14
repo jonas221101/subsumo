@@ -213,6 +213,13 @@ ist nicht implementiert.
    lokalen Board angelegt.
 2. Rollen, Modell, Budgets, isolierte Workspaces und echte Run-Authentifizierung verbinden.
 3. Einen realen Frage-/Antwortlauf sowie eine Review-Übergabe nachweisen.
+   **Laeuft (SUB-21):** Echte Frage an den Reviewer-Agenten (`965fee47-…`)
+   ueber `mission_control send SUB-21 --kind question` gesendet, Kommentar-ID
+   `7b7a2302-e092-450f-a46c-471149d6e413` (message_id
+   `377101c7-850e-4d16-ab6e-b1b18438735e`). Die anschliessende Review-Uebergabe
+   fuer denselben Task referenziert diesen Commit als Nachweis. Vollstaendiger
+   Abgleich (Antwort, `claim --review`, `reconcile`) folgt im SUB-21-Kommentar
+   auf SUB-10.
 4. ~~Persistente Zustellgarantien~~ **erledigt** (Journal + `reconcile`); offen
    bleiben Antwortfristen, Zustellquittungen und Nacharbeit.
 5. ~~Software-Review an aktuellen Commit binden~~ **erledigt**; offen bleibt die
