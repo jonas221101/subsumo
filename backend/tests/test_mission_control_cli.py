@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import subprocess
+from unittest.mock import MagicMock
 from uuid import uuid4
 
 import httpx
@@ -100,6 +101,22 @@ def test_create_preview_works_offline_without_credentials(monkeypatch, capsys):
     preview = json.loads(capsys.readouterr().out)
     assert preview["dry_run"] is True
     assert preview["payload"]["status"] == "backlog"
+
+
+def test_create_resolves_parent_identifier_to_uuid(connection, tmp_path):
+    """--parent SUB-10 muss als aufgeloeste UUID an create_issue gehen, nicht als Identifier."""
+    client, _ = connection
+    parent_uuid = str(uuid4())
+    client.get_issue = MagicMock(return_value={"id": parent_uuid, "companyId": COMPANY})
+    client.create_issue = MagicMock(return_value={"id": TASK})
+    execute(
+        command("create", "--title", "Kind-Aufgabe", "--criteria", "Abnahme belegt",
+                "--parent", "SUB-10", "--state-dir", str(tmp_path)),
+        client,
+    )
+    client.get_issue.assert_called_once_with("SUB-10")
+    _, kwargs = client.create_issue.call_args
+    assert kwargs["parent_id"] == parent_uuid
 
 
 def test_send_persists_directed_message_without_reassigning(connection, tmp_path):
