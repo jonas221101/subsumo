@@ -224,13 +224,63 @@ Server konfigurieren und messen. Die CLI selbst ruft kein Modell auf und
 erzwingt keine Tokenbudgets. Eine automatische Hochstufung zu teureren Modellen
 ist nicht implementiert.
 
+## Workspace-Isolation (git_worktree)
+
+Bisher lief jeder Agentenlauf im selben Verzeichnis
+(`executionWorkspacePolicy.defaultMode = shared_workspace`,
+`workspaceStrategy.type = project_primary`) — bei mehreren parallelen Läufen
+(z. B. SUB-10, SUB-19, SUB-28 gleichzeitig) ein reales Kollisionsrisiko für
+unstaged/uncommitted Änderungen im selben Arbeitsverzeichnis.
+
+Per `PATCH /api/projects/{projectId}` wurde für das Projekt „Subsumo“ gesetzt:
+
+```json
+{
+  "executionWorkspacePolicy": {
+    "enabled": true,
+    "defaultMode": "isolated_workspace",
+    "workspaceStrategy": {
+      "type": "git_worktree",
+      "worktreeParentDir": "work/mission-control/paperclip/worktrees"
+    }
+  }
+}
+```
+
+Das wirkt nur auf künftig neu geöffnete Workspaces, nicht rückwirkend: Für die
+zum Zeitpunkt der Änderung laufenden Läufe (SUB-10, SUB-19, jeweils mit
+gesetztem `checkoutRunId`) zeigte `GET
+/api/companies/{companyId}/execution-workspaces` direkt danach weiterhin den
+bereits geöffneten `shared_workspace`/`project_primary`-Eintrag — keine
+Störung mitten im Lauf.
+
+**Offen — braucht ein Board-/Nutzer-Token:** `workspaceStrategy.provisionCommand`
+und `.runtimeProvisionCommand` (sollen `pip install -r
+backend/requirements-dev.txt` ausführen, damit `pytest`/`ruff` in einem
+frischen Worktree sofort funktionieren) lehnt der Server für Agenten-Keys mit
+`403 Agent keys cannot modify host-executed workspace commands` ab. Das ist
+eine bewusste Rechtegrenze, kein Konfigurationsfehler: beliebige, künftig auf
+dem Host ausgeführte Befehle darf offenbar nur ein Mensch- bzw. Board-Token
+setzen. Bis das nachgetragen ist, muss in einem frischen `git worktree` die
+Backend-Umgebung einmalig von Hand aufgesetzt werden (siehe „Lokal starten
+und testen“ oben).
+
+**Offen — echter Testlauf:** Ein frischer, nach dieser Umstellung neu
+geöffneter isolierter Worktree wurde in diesem Zeitfenster noch nicht
+beobachtet, da dafür ein neuer Agentenlauf nötig ist. Beim nächsten gegen
+dieses Projekt gestarteten Lauf prüfen, ob `GET .../execution-workspaces`
+einen Eintrag mit `mode: isolated_workspace`, `strategyType: git_worktree`
+und eigenem Verzeichnis unter `work/mission-control/paperclip/worktrees/`
+zeigt.
+
 ## Nächste Integration
 
 1. **Vorbereitet:** Paperclip `v2026.831.1` ist über
    `ops/mission-control/start-paperclip-pilot.ps1` für eine getrennte,
    lokale Loopback-Pilotinstanz fixiert. Die tatsächliche Pilot-Firma wird im
    lokalen Board angelegt.
-2. Rollen, Modell, Budgets, isolierte Workspaces und echte Run-Authentifizierung verbinden.
+2. ~~Isolierte Workspaces~~ **teilweise erledigt** (siehe eigener Abschnitt unten);
+   offen bleiben Rollen, Modell, Budgets und echte Run-Authentifizierung.
 3. Einen realen Frage-/Antwortlauf sowie eine Review-Übergabe nachweisen.
 4. ~~Persistente Zustellgarantien~~ **erledigt** (Journal + `reconcile`); offen
    bleiben Antwortfristen, Zustellquittungen und Nacharbeit.
