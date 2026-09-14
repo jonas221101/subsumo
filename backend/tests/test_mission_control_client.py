@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import json
+
 import httpx
 import pytest
 
@@ -35,6 +37,48 @@ def test_auth_run_header_and_structured_body():
     assert seen[0].headers["Authorization"] == "Bearer secret"
     assert seen[0].headers["X-Paperclip-Run-Id"] == "r1"
     assert seen[0].read() == b'{"status":"done"}'
+
+
+def test_update_issue_encodes_review_request_and_interaction_id():
+    seen = []
+
+    def handler(request):
+        seen.append(request)
+        return httpx.Response(200, json={"id": "i1"})
+
+    with PaperclipClient(
+        cfg(agent_id="a1", run_id="r1"), transport=httpx.MockTransport(handler)
+    ) as client:
+        client.update_issue(
+            "i1",
+            status="in_review",
+            review_request_instructions="Bitte pruefen.",
+            review_interaction_id="int-1",
+        )
+    body = json.loads(seen[0].read())
+    assert body["reviewRequest"] == {"instructions": "Bitte pruefen."}
+    assert body["reviewInteractionId"] == "int-1"
+
+
+def test_create_review_interaction_posts_request_confirmation():
+    seen = []
+
+    def handler(request):
+        seen.append(request)
+        return httpx.Response(201, json={"id": "int-1", "status": "pending"})
+
+    with PaperclipClient(
+        cfg(agent_id="a1", run_id="r1"), transport=httpx.MockTransport(handler)
+    ) as client:
+        result = client.create_review_interaction(
+            "i1", addressee_agent_id="reviewer-1", prompt="Bitte Review durchfuehren."
+        )
+    assert result == {"id": "int-1", "status": "pending"}
+    assert seen[0].url.path == "/api/issues/i1/interactions"
+    body = json.loads(seen[0].read())
+    assert body["kind"] == "request_confirmation"
+    assert body["addresseeAgentId"] == "reviewer-1"
+    assert body["payload"] == {"version": 1, "prompt": "Bitte Review durchfuehren."}
 
 
 def test_missing_token_and_hostile_values():

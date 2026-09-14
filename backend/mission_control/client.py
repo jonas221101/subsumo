@@ -340,6 +340,8 @@ class PaperclipClient:
         status: str | None = None,
         assignee_agent_id: str | None | object = _MISSING,
         comment: str | None = None,
+        review_request_instructions: str | None = None,
+        review_interaction_id: str | None = None,
     ) -> dict[str, Any]:
         body: dict[str, Any] = {}
         if status is not None:
@@ -348,10 +350,41 @@ class PaperclipClient:
             body["assigneeAgentId"] = assignee_agent_id
         if comment is not None:
             body["comment"] = comment
+        if review_request_instructions is not None:
+            body["reviewRequest"] = {"instructions": review_request_instructions}
+        if review_interaction_id is not None:
+            body["reviewInteractionId"] = review_interaction_id
         if not body:
-            raise ValueError("update_issue requires status, assignee_agent_id, or comment")
+            raise ValueError(
+                "update_issue requires status, assignee_agent_id, comment, "
+                "review_request_instructions, or review_interaction_id"
+            )
         return self._dict(
             self._request("PATCH", f"/api/issues/{_segment(issue_id, 'issue id')}", json=body)
+        )
+
+    def create_review_interaction(
+        self, issue_id: str, *, addressee_agent_id: str, prompt: str
+    ) -> dict[str, Any]:
+        """Open a request_confirmation interaction addressed to the reviewer.
+
+        A bare status/assignee PATCH to in_review is rejected by the server
+        (HTTP 422 invalid_issue_disposition): it requires a live review path.
+        Passing this interaction's id as reviewInteractionId to update_issue
+        supplies that path (disposition pending_issue_thread_interaction).
+        """
+        body = {
+            "kind": "request_confirmation",
+            "addresseeAgentId": addressee_agent_id,
+            "continuationPolicy": "wake_assignee",
+            "payload": {"version": 1, "prompt": prompt},
+        }
+        return self._dict(
+            self._request(
+                "POST",
+                f"/api/issues/{_segment(issue_id, 'issue id')}/interactions",
+                json=body,
+            )
         )
 
     def get_me(self) -> dict[str, Any]:

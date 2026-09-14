@@ -19,6 +19,7 @@ REVIEWER = str(uuid4())
 RUN = str(uuid4())
 TASK = str(uuid4())
 COMMENT = str(uuid4())
+INTERACTION = str(uuid4())
 
 
 class PaperclipStub:
@@ -71,6 +72,13 @@ class PaperclipStub:
                 return httpx.Response(409)
             self.task["status"] = "in_progress"
             return httpx.Response(200, json=self.task)
+        if request.method == "POST" and path == "/api/issues/SUB-101/interactions":
+            interaction = {
+                "id": INTERACTION, "kind": payload["kind"],
+                "addresseeAgentId": payload.get("addresseeAgentId"),
+                "status": "pending",
+            }
+            return httpx.Response(201, json=interaction)
         raise AssertionError(f"Unexpected request: {request.method} {path}")
 
 
@@ -139,7 +147,7 @@ def test_reply_references_original_agent_comment(connection, tmp_path):
     assert len(server.comments) == 1
 
 
-def test_handoff_changes_owner_status_and_evidence_in_one_write(connection, tmp_path):
+def test_handoff_opens_review_interaction_before_patching_status(connection, tmp_path):
     client, server = connection
     result = execute(command("request-review", "SUB-101", "--to", REVIEWER,
                              "--commit", "a" * 40, "--body-file", body_file(tmp_path),
@@ -147,7 +155,17 @@ def test_handoff_changes_owner_status_and_evidence_in_one_write(connection, tmp_
     assert result["status"] == "in_review"
     assert result["assigneeAgentId"] == REVIEWER
     assert "a" * 40 in result["comment"]
-    assert [r.method for r in server.requests if r.method != "GET"] == ["PATCH"]
+    writes = [r for r in server.requests if r.method != "GET"]
+    assert [r.method for r in writes] == ["POST", "PATCH"]
+    assert writes[0].url.path == "/api/issues/SUB-101/interactions"
+    interaction_body = json.loads(writes[0].content)
+    assert interaction_body["kind"] == "request_confirmation"
+    assert interaction_body["addresseeAgentId"] == REVIEWER
+    patch_body = json.loads(writes[1].content)
+    assert patch_body["reviewInteractionId"] == INTERACTION
+    assert patch_body["status"] == "in_review"
+    assert patch_body["assigneeAgentId"] == REVIEWER
+    assert "reviewRequest" not in patch_body
 
 
 @pytest.mark.parametrize("case", ["wrong_identity", "wrong_company", "paused", "closed"])
