@@ -211,7 +211,22 @@ ist nicht implementiert.
    `ops/mission-control/start-paperclip-pilot.ps1` für eine getrennte,
    lokale Loopback-Pilotinstanz fixiert. Die tatsächliche Pilot-Firma wird im
    lokalen Board angelegt.
-2. Rollen, Modell, Budgets, isolierte Workspaces und echte Run-Authentifizierung verbinden.
+2. Rollen, Modell, Budgets und echte Run-Authentifizierung verbinden.
+   ~~Isolierte Workspaces~~ **git_worktree-Teil erledigt:** Projekt-Policy
+   `executionWorkspacePolicy` steht seit 2026-09-14 auf
+   `defaultMode=isolated_workspace` mit `workspaceStrategy.type=git_worktree`
+   (`worktreeParentDir` unter `instances/default/worktrees/subsumo`); per
+   echtem Run verifiziert, dass jeder Run einen eigenen `git worktree` neben
+   dem Hauptcheckout bekommt und nicht mehr mit anderen Runs im selben
+   Verzeichnis kollidiert. Offen bleibt `provisionCommand`/
+   `runtimeProvisionCommand`, damit frische Worktrees automatisch die
+   Backend-Abhaengigkeiten bekommen (getesteter Befehl:
+   `python3 -m venv backend/.venv && backend/.venv/bin/pip install -q -U pip
+   && backend/.venv/bin/pip install -q -r backend/requirements.txt -r
+   backend/requirements-dev.txt`, damit liefen `pytest`/`ruff` in einem
+   frischen Worktree in ca. 9s). Agent-API-Keys duerfen diese beiden Felder
+   laut Server nicht setzen ("host-executed workspace commands"); das
+   erfordert einen Board-Operator mit Board-Token (siehe SUB-28).
 3. Einen realen Frage-/Antwortlauf sowie eine Review-Übergabe nachweisen.
 4. ~~Persistente Zustellgarantien~~ **erledigt** (Journal + `reconcile`); offen
    bleiben Antwortfristen, Zustellquittungen und Nacharbeit.
