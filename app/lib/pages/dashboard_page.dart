@@ -1,12 +1,23 @@
 import 'package:flutter/material.dart';
 
+import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
+import 'screen_status.dart';
 
 /// Wissenslandkarte (Challenge 3).
 ///
 /// Bewusst ehrlich: gezaehlt wird nur, was reif ist. "Schon mal gesehen"
-/// zaehlt nicht - sonst waere die Zahl wertlos.
+/// zaehlt nicht - sonst waere die Zahl wertlos. Aus demselben Grund zeigt
+/// diese Seite als Erstbeispiel fuer das Designsystem (docs/11-designsystem.md),
+/// wie eine Fortschrittsanzeige *ohne* Ampelfarbe aussieht - siehe
+/// [SubsumoProgressMeter].
+const _areaLabels = {
+  'zivilrecht': 'Zivilrecht',
+  'strafrecht': 'Strafrecht',
+  'oeffentliches-recht': 'Oeffentliches Recht',
+};
+
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
 
@@ -29,21 +40,12 @@ class _DashboardPageState extends State<DashboardPage> {
     final coverage = app.coverage;
 
     if (coverage == null) {
-      return Center(
-        child: app.loading
-            ? const CircularProgressIndicator()
-            : Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(app.error ?? 'Keine Daten'),
-                  const SizedBox(height: 12),
-                  OutlinedButton(
-                    onPressed: app.loadDashboard,
-                    child: const Text('Erneut versuchen'),
-                  ),
-                ],
-              ),
-      );
+      return app.loading
+          ? const ScreenStatus.loading()
+          : ScreenStatus.error(
+              message: app.error ?? 'Keine Daten',
+              onRetry: app.loadDashboard,
+            );
     }
 
     final topics = (coverage['topics'] as List).cast<Map<String, dynamic>>();
@@ -54,73 +56,53 @@ class _DashboardPageState extends State<DashboardPage> {
       child: RefreshIndicator(
         onRefresh: app.loadDashboard,
         child: ListView(
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.all(Spacing.lg),
           children: [
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Examensrelevanter Stoff, den du sicher kannst',
-                      style: Theme.of(context).textTheme.titleMedium,
-                    ),
-                    const SizedBox(height: 12),
-                    Text(
-                      '${(gesamt * 100).round()} %',
-                      style: Theme.of(context).textTheme.displaySmall,
-                    ),
-                    const SizedBox(height: 8),
-                    LinearProgressIndicator(value: gesamt, minHeight: 8),
-                    const SizedBox(height: 12),
-                    Text(
-                      'Gewichtet nach Pruefungsrelevanz. Gezaehlt wird nur, was '
-                      'du langfristig behaeltst - nicht, was du einmal gesehen hast.',
-                      style: Theme.of(context).textTheme.bodySmall,
-                    ),
-                  ],
-                ),
+            SubsumoCard(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Examensrelevanter Stoff, den du sicher kannst',
+                    style: Theme.of(context).textTheme.titleMedium,
+                  ),
+                  const SizedBox(height: Spacing.md),
+                  Text(
+                    '${(gesamt * 100).round()} %',
+                    style: Theme.of(context).textTheme.displaySmall,
+                  ),
+                  const SizedBox(height: Spacing.sm),
+                  // Eine Farbe, unabhaengig vom Wert - ein Lernstand ist eine
+                  // Tatsache, keine Ampel (Leitprinzip "Ehrlichkeit vor
+                  // Motivation", docs/01-produktvision.md).
+                  SubsumoProgressMeter(value: gesamt),
+                  const SizedBox(height: Spacing.md),
+                  Text(
+                    'Gewichtet nach Pruefungsrelevanz. Gezaehlt wird nur, was '
+                    'du langfristig behaeltst - nicht, was du einmal gesehen hast.',
+                    style: Theme.of(context).textTheme.bodySmall,
+                  ),
+                ],
               ),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: Spacing.lg),
             for (final entry in byArea.entries)
-              _AreaRow(area: entry.key, value: (entry.value as num).toDouble()),
-            const SizedBox(height: 24),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: Spacing.xs),
+                child: SubsumoProgressMeter(
+                  label: _areaLabels[entry.key] ?? entry.key,
+                  value: (entry.value as num).toDouble(),
+                ),
+              ),
+            const SizedBox(height: Spacing.xl),
             Text('Themen', style: Theme.of(context).textTheme.titleMedium),
-            const SizedBox(height: 8),
+            const SizedBox(height: Spacing.sm),
             for (final topic in topics) _TopicTile(topic: topic),
           ],
         ),
       ),
     );
   }
-}
-
-class _AreaRow extends StatelessWidget {
-  const _AreaRow({required this.area, required this.value});
-
-  final String area;
-  final double value;
-
-  static const _labels = {
-    'zivilrecht': 'Zivilrecht',
-    'strafrecht': 'Strafrecht',
-    'oeffentliches-recht': 'Oeffentliches Recht',
-  };
-
-  @override
-  Widget build(BuildContext context) => Padding(
-        padding: const EdgeInsets.symmetric(vertical: 6),
-        child: Row(
-          children: [
-            SizedBox(width: 170, child: Text(_labels[area] ?? area)),
-            Expanded(child: LinearProgressIndicator(value: value, minHeight: 6)),
-            const SizedBox(width: 12),
-            Text('${(value * 100).round()} %'),
-          ],
-        ),
-      );
 }
 
 class _TopicTile extends StatelessWidget {
@@ -133,16 +115,16 @@ class _TopicTile extends StatelessWidget {
     final mastery = (topic['mastery'] as num).toDouble();
     final total = topic['cards_total'] as int;
     final mature = topic['cards_mature'] as int;
-    final started = topic['cards_started'] as int;
 
-    // Ampel: rot = nie angefasst, gelb = angefangen, gruen = reif.
-    final color = mastery >= 0.8
-        ? Colors.green
-        : (started > 0 ? Colors.amber.shade700 : Colors.red.shade400);
-
+    // Kein Ampel-Icon mehr: der Lernstand einer Karte ist eine Tatsache,
+    // keine Warnung. Ein Thema mit 0 % sicher gelernten Karten sieht darum
+    // genauso "neutral" aus wie eines mit 80 % - siehe docs/11-designsystem.md.
     return ListTile(
       contentPadding: EdgeInsets.zero,
-      leading: CircleAvatar(radius: 6, backgroundColor: color),
+      leading: Icon(
+        Icons.menu_book_outlined,
+        color: Theme.of(context).colorScheme.onSurfaceVariant,
+      ),
       title: Text(topic['title'] as String),
       subtitle: Text('$mature von $total Karten reif  ·  Relevanz ${topic['relevance']}/5'),
       trailing: Text('${(mastery * 100).round()} %'),
