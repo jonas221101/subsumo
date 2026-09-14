@@ -2,6 +2,9 @@
 
 from __future__ import annotations
 
+import hashlib
+import json
+
 from fastapi import APIRouter, Query
 
 from app.api.deps import DbSession
@@ -11,17 +14,41 @@ from app.schemas import CardOut, CaseSummaryOut, SchemaOut, TopicOut
 router = APIRouter(prefix="/content", tags=["content"])
 
 
+def _content_version(cards: list[Card]) -> str:
+    """Return a stable version for the complete card snapshot.
+
+    Python's ``hash()`` is intentionally randomized between processes.  The
+    client instead receives the SHA-256 of a canonical representation of all
+    fields exposed by the card snapshot.
+    """
+    snapshot = [
+        {
+            "slug": card.slug,
+            "topic_slug": card.topic_slug,
+            "type": card.type,
+            "front": card.front,
+            "back": card.back,
+            "norms": card.norms or [],
+            "sources": card.sources or [],
+            "stand": card.stand,
+            "content_hash": card.content_hash,
+        }
+        for card in sorted(cards, key=lambda card: card.slug)
+    ]
+    canonical = json.dumps(snapshot, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
+    return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+
+
 @router.get("/manifest")
 def manifest(db: DbSession) -> dict:
-    """Kennzahlen fuer den Delta-Sync des Clients."""
+    """Kennzahlen und stabile Version fuer den Karten-Snapshot-Sync."""
     cards = db.query(Card).all()
     return {
         "topics": db.query(Topic).count(),
         "cards": len(cards),
         "schemata": db.query(Schema).count(),
         "cases": db.query(Case).count(),
-        # Aenderungen am Inhalt schlagen ueber die Hashes auf die Version durch.
-        "content_version": str(hash(tuple(sorted(c.content_hash for c in cards))) & 0xFFFFFFFF),
+        "content_version": _content_version(cards),
     }
 
 

@@ -330,7 +330,8 @@ def execute(args: argparse.Namespace, client: PaperclipClient) -> Any:
         if client.config.agent_id:
             _identity(client)
         if args.parent:
-            client.get_issue(args.parent)
+            parent_issue = client.get_issue(args.parent)
+            payload["parent_id"] = parent_issue["id"]
         if args.assignee:
             _recipient(client, args.assignee)
         outbox = Outbox(args.state_dir / "outbox.jsonl")

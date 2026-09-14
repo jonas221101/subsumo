@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
+import 'screen_status.dart';
 
 /// Pruefungsschemata als aufklappbarer Baum.
 ///
@@ -40,14 +42,14 @@ class _SchemataPageState extends State<SchemataPage> {
 
   @override
   Widget build(BuildContext context) {
-    if (_loading) return const Center(child: CircularProgressIndicator());
+    if (_loading) return const ScreenStatus.loading();
 
     return ReadableWidth(
       child: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(Spacing.lg),
         children: [
           Wrap(
-            spacing: 8,
+            spacing: Spacing.sm,
             children: [
               for (final entry in const {
                 null: 'Alle',
@@ -55,8 +57,8 @@ class _SchemataPageState extends State<SchemataPage> {
                 'strafrecht': 'Strafrecht',
                 'oeffentliches-recht': 'Oeffentliches Recht',
               }.entries)
-                FilterChip(
-                  label: Text(entry.value),
+                SubsumoChip.filter(
+                  label: entry.value,
                   selected: _area == entry.key,
                   onSelected: (_) {
                     setState(() => _area = entry.key);
@@ -65,39 +67,55 @@ class _SchemataPageState extends State<SchemataPage> {
                 ),
             ],
           ),
-          const SizedBox(height: 16),
-          for (final schema in _schemata)
-            Card(
-              margin: const EdgeInsets.only(bottom: 12),
-              child: ExpansionTile(
-                shape: const Border(),
-                title: Text(schema['title'] as String),
-                subtitle: Text(
-                  ((schema['norms'] as List?) ?? const []).join(', '),
-                ),
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: _buildSteps(
-                        ((schema['steps'] as List?) ?? const [])
-                            .cast<Map<String, dynamic>>(),
+          const SizedBox(height: Spacing.lg),
+          if (_schemata.isEmpty)
+            ScreenStatus.empty(
+              message: 'Keine Schemata fuer diese Auswahl.',
+              onRetry: _load,
+            )
+          else
+            for (final schema in _schemata)
+              Card(
+                margin: const EdgeInsets.only(bottom: Spacing.md),
+                child: ExpansionTile(
+                  shape: const Border(),
+                  title: Text(schema['title'] as String),
+                  subtitle: Text(
+                    ((schema['norms'] as List?) ?? const []).join(', '),
+                  ),
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(
+                        Spacing.lg,
                         0,
+                        Spacing.lg,
+                        Spacing.lg,
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: _buildSteps(
+                          ((schema['steps'] as List?) ?? const [])
+                              .cast<Map<String, dynamic>>(),
+                          0,
+                        ),
                       ),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
-                    child: Text(
-                      'Stand: ${schema['stand']}  ·  '
-                      'Quellen: ${((schema['sources'] as List?) ?? const []).join('; ')}',
-                      style: Theme.of(context).textTheme.bodySmall,
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(
+                        Spacing.lg,
+                        0,
+                        Spacing.lg,
+                        Spacing.md,
+                      ),
+                      child: Text(
+                        'Stand: ${schema['stand']}  ·  '
+                        'Quellen: ${((schema['sources'] as List?) ?? const []).join('; ')}',
+                        style: Theme.of(context).textTheme.bodySmall,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
         ],
       ),
     );
@@ -109,11 +127,11 @@ class _SchemataPageState extends State<SchemataPage> {
       final hinweis = step['hinweis'] as String?;
       widgets.add(
         Padding(
-          padding: EdgeInsets.only(left: depth * 18.0, top: 6, bottom: 2),
+          padding: EdgeInsets.only(left: depth * Spacing.lg, top: Spacing.sm, bottom: 2),
           child: Text(
             step['label'] as String,
             style: depth == 0
-                ? const TextStyle(fontWeight: FontWeight.w600)
+                ? Theme.of(context).textTheme.titleSmall
                 : Theme.of(context).textTheme.bodyMedium,
           ),
         ),
@@ -121,7 +139,7 @@ class _SchemataPageState extends State<SchemataPage> {
       if (hinweis != null) {
         widgets.add(
           Padding(
-            padding: EdgeInsets.only(left: depth * 18.0 + 12, bottom: 4),
+            padding: EdgeInsets.only(left: depth * Spacing.lg + Spacing.md, bottom: Spacing.xs),
             child: Text(hinweis, style: Theme.of(context).textTheme.bodySmall),
           ),
         );
