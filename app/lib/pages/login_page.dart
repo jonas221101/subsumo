@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
 
@@ -39,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
       body: ReadableWidth(
         maxWidth: 420,
         child: Padding(
-          padding: const EdgeInsets.all(24),
+          padding: const EdgeInsets.all(Spacing.xl),
           child: Form(
             key: _formKey,
             child: Column(
@@ -47,52 +48,49 @@ class _LoginPageState extends State<LoginPage> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Text('Subsumo', style: Theme.of(context).textTheme.headlineMedium),
-                const SizedBox(height: 4),
-                const Text('Jura lernen vom ersten Semester bis zum Examen.'),
-                const SizedBox(height: 28),
-                TextFormField(
+                const SizedBox(height: Spacing.xs),
+                Text(
+                  'Jura lernen vom ersten Semester bis zum Examen.',
+                  style: Theme.of(context).textTheme.bodyMedium,
+                ),
+                const SizedBox(height: Spacing.xl),
+                SubsumoTextField(
+                  label: 'E-Mail',
                   controller: _email,
                   keyboardType: TextInputType.emailAddress,
                   autofillHints: const [AutofillHints.email],
-                  decoration: const InputDecoration(
-                    labelText: 'E-Mail',
-                    border: OutlineInputBorder(),
-                  ),
                   validator: (v) =>
                       (v == null || !v.contains('@')) ? 'Bitte E-Mail eingeben' : null,
                 ),
-                const SizedBox(height: 12),
-                TextFormField(
+                const SizedBox(height: Spacing.md),
+                SubsumoTextField(
+                  label: 'Passwort',
                   controller: _password,
                   obscureText: true,
                   autofillHints: const [AutofillHints.password],
-                  decoration: const InputDecoration(
-                    labelText: 'Passwort',
-                    border: OutlineInputBorder(),
-                  ),
                   validator: (v) =>
                       (v == null || v.length < 8) ? 'Mindestens 8 Zeichen' : null,
                   onFieldSubmitted: (_) => _submit(),
                 ),
                 if (app.error != null) ...[
-                  const SizedBox(height: 12),
-                  Text(
-                    app.error!,
-                    style: TextStyle(color: Theme.of(context).colorScheme.error),
+                  const SizedBox(height: Spacing.md),
+                  SubsumoFeedbackBlock(
+                    message: app.error!,
+                    severity: FeedbackSeverity.negative,
                   ),
                 ],
-                const SizedBox(height: 20),
-                FilledButton(
+                const SizedBox(height: Spacing.xl),
+                SubsumoButton.primary(
+                  label: app.loading
+                      ? 'Bitte warten ...'
+                      : (_register ? 'Konto erstellen' : 'Anmelden'),
                   onPressed: app.loading ? null : _submit,
-                  child: Text(_register ? 'Konto erstellen' : 'Anmelden'),
                 ),
-                TextButton(
+                SubsumoButton.tertiary(
+                  label: _register
+                      ? 'Ich habe schon ein Konto'
+                      : 'Neu hier? Konto erstellen',
                   onPressed: () => setState(() => _register = !_register),
-                  child: Text(
-                    _register
-                        ? 'Ich habe schon ein Konto'
-                        : 'Neu hier? Konto erstellen',
-                  ),
                 ),
               ],
             ),
