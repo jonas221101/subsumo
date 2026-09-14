@@ -212,21 +212,20 @@ ist nicht implementiert.
    lokale Loopback-Pilotinstanz fixiert. Die tatsächliche Pilot-Firma wird im
    lokalen Board angelegt.
 2. Rollen, Modell, Budgets und echte Run-Authentifizierung verbinden.
-   ~~Isolierte Workspaces~~ **git_worktree-Teil erledigt:** Projekt-Policy
+   ~~Isolierte Workspaces~~ **erledigt:** Projekt-Policy
    `executionWorkspacePolicy` steht seit 2026-09-14 auf
    `defaultMode=isolated_workspace` mit `workspaceStrategy.type=git_worktree`
-   (`worktreeParentDir` unter `instances/default/worktrees/subsumo`); per
-   echtem Run verifiziert, dass jeder Run einen eigenen `git worktree` neben
-   dem Hauptcheckout bekommt und nicht mehr mit anderen Runs im selben
-   Verzeichnis kollidiert. Offen bleibt `provisionCommand`/
-   `runtimeProvisionCommand`, damit frische Worktrees automatisch die
-   Backend-Abhaengigkeiten bekommen (getesteter Befehl:
-   `python3 -m venv backend/.venv && backend/.venv/bin/pip install -q -U pip
-   && backend/.venv/bin/pip install -q -r backend/requirements.txt -r
-   backend/requirements-dev.txt`, damit liefen `pytest`/`ruff` in einem
-   frischen Worktree in ca. 9s). Agent-API-Keys duerfen diese beiden Felder
-   laut Server nicht setzen ("host-executed workspace commands"); das
-   erfordert einen Board-Operator mit Board-Token (siehe SUB-28).
+   (`worktreeParentDir` unter `instances/default/worktrees/subsumo`) inklusive
+   `provisionCommand`/`runtimeProvisionCommand` (`python3 -m venv
+   backend/.venv && backend/.venv/bin/pip install -q -U pip &&
+   backend/.venv/bin/pip install -q -r backend/requirements.txt -r
+   backend/requirements-dev.txt`). Ein Board-Operator musste die PATCH
+   ausfuehren, da Agent-API-Keys diese beiden Felder nicht setzen duerfen
+   ("host-executed workspace commands"); danach per echtem SUB-28-Run
+   verifiziert: eigener `git worktree` neben dem Hauptcheckout, frisch
+   provisioniertes `.venv` ohne manuellen Schritt, `pytest` (220 Tests) und
+   `ruff check` liefen darin gruen, keine Kollision mit parallel laufenden
+   Runs (siehe auch SUB-36, Platform-Bug zur Provisionierung, erledigt).
 3. Einen realen Frage-/Antwortlauf sowie eine Review-Übergabe nachweisen.
 4. ~~Persistente Zustellgarantien~~ **erledigt** (Journal + `reconcile`); offen
    bleiben Antwortfristen, Zustellquittungen und Nacharbeit.
