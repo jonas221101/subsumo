@@ -237,7 +237,13 @@ ist nicht implementiert.
 5. ~~Software-Review an aktuellen Commit binden~~ **erledigt**; offen bleibt die
    Bindung an erforderliche CI-Ergebnisse.
 6. GitHub-PR, kontrollierten Merge und Abschlussverifikation anbinden.
-7. Mission-Control-Oberfläche auf die echten Zustände und Threads umstellen.
+7. ~~Mission-Control-Oberfläche auf die echten Zustände und Threads umstellen~~
+   **zurückgestellt, keine Priorität:** Auf Nutzerrückfrage zu SUB-10
+   (Interaction `c64cc55a-9630-4560-b142-ff76152fbc12`) hin klargestellt, dass
+   damit nicht dieses interne Tooling-Dashboard gemeint war, sondern UI und CI
+   der eigentlichen Lern-App (`app/`). Ein separates Mission-Control-Dashboard
+   wird vorerst nicht verfolgt. Scoping des Lernapp-UI/CI-Bedarfs läuft unter
+   SUB-29.
 
 ## Referenzen
 
