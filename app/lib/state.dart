@@ -68,12 +68,19 @@ class AppState extends ChangeNotifier {
   static const _tokenKey = 'subsumo.token';
   static const _outboxKey = 'subsumo.outbox';
   static const _dueCardsCacheKey = 'subsumo.due_cards_cache';
+  static const _contentStateKey = 'subsumo.content_state';
 
   bool loading = false;
   String? error;
   Map<String, dynamic>? user;
   Map<String, dynamic>? coverage;
   List<Map<String, dynamic>> dueCards = [];
+
+  /// Letzter vollstaendig bestaetigter Karten-Snapshot. Manifest und Snapshot
+  /// werden gemeinsam gespeichert, damit ein Schreibfehler nie einen neuen
+  /// Stand ohne seine Karten sichtbar macht.
+  Map<String, dynamic>? contentManifest;
+  List<Map<String, dynamic>> contentCards = [];
 
   /// True, solange [dueCards] aus dem lokalen Zwischenspeicher stammt statt
   /// vom Server bestaetigt zu sein - z. B. weil der letzte Ladeversuch offline
@@ -93,6 +100,7 @@ class AppState extends ChangeNotifier {
     final prefs = await SharedPreferences.getInstance();
     await _restoreOutbox(prefs);
     _restoreCachedDueCards(prefs);
+    _restoreContentState(prefs);
 
     final token = prefs.getString(_tokenKey);
     if (token == null) return;
@@ -100,6 +108,7 @@ class AppState extends ChangeNotifier {
     try {
       user = await api.me();
       notifyListeners();
+      unawaited(syncContent());
       // Angemeldet und (jetzt erwiesenermassen) online - liegen gebliebene
       // Bewertungen aus einer frueheren Offline-Phase gleich nachreichen.
       unawaited(flushOutbox());
@@ -158,13 +167,70 @@ class AppState extends ChangeNotifier {
     await prefs.setString(_dueCardsCacheKey, jsonEncode(dueCards));
   }
 
+  void _restoreContentState(SharedPreferences prefs) {
+    final raw = prefs.getString(_contentStateKey);
+    if (raw == null) return;
+    try {
+      final decoded = jsonDecode(raw);
+      if (decoded is! Map ||
+          decoded['manifest'] is! Map ||
+          decoded['cards'] is! List) {
+        return;
+      }
+      final cards = (decoded['cards'] as List);
+      if (cards.any((card) => card is! Map)) return;
+      contentManifest = Map<String, dynamic>.from(decoded['manifest'] as Map);
+      contentCards =
+          cards.map((card) => Map<String, dynamic>.from(card as Map)).toList();
+    } on FormatException {
+      // Ein unvollstaendiger oder alter Eintrag wird als fehlender Snapshot
+      // behandelt; die anderen Offline-Daten bleiben dabei unberuehrt.
+    }
+  }
+
+  /// Synchronisiert Karten nur bei einer neuen Manifest-Version.
+  ///
+  /// Der neue Stand wird zuerst komplett dekodiert und als ein einzelner
+  /// Preferences-Wert geschrieben. Erst danach wird der Speicherzustand
+  /// ausgetauscht. Dadurch bleiben bei Netz-, Decode- oder Speicherfehlern
+  /// der alte Snapshot, die faelligen Karten und die Review-Outbox erhalten.
+  Future<bool> syncContent() async {
+    try {
+      final manifest = await api.contentManifest();
+      final version = manifest['content_version'];
+      if (version is! String || version.isEmpty) {
+        throw const FormatException('Content-Version fehlt');
+      }
+      if (contentManifest?['content_version'] == version) return true;
+
+      final cards = await api.contentCards(limit: 2000);
+      final encoded = jsonEncode({'manifest': manifest, 'cards': cards});
+      final prefs = await SharedPreferences.getInstance();
+      final written = await prefs.setString(_contentStateKey, encoded);
+      if (!written) {
+        throw StateError('Karten-Snapshot konnte nicht gespeichert werden');
+      }
+
+      contentManifest = manifest;
+      contentCards = cards;
+      notifyListeners();
+      return true;
+    } on Exception {
+      return false;
+    }
+  }
+
   Future<void> _persistToken(String token) async {
     api.setToken(token);
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_tokenKey, token);
   }
 
-  Future<bool> signIn(String email, String password, {bool register = false}) async {
+  Future<bool> signIn(
+    String email,
+    String password, {
+    bool register = false,
+  }) async {
     return _guard(() async {
       final token = register
           ? await api.register(email, password)
@@ -256,7 +322,8 @@ class AppState extends ChangeNotifier {
       await _persistOutbox();
       error = null;
     } on Exception {
-      error = 'Offline - ${outbox.length} Bewertung(en) werden spaeter gesendet.';
+      error =
+          'Offline - ${outbox.length} Bewertung(en) werden spaeter gesendet.';
     }
     notifyListeners();
   }
@@ -283,7 +350,11 @@ class AppState extends ChangeNotifier {
 
 /// Stellt den [AppState] im Widget-Baum bereit.
 class AppScope extends InheritedNotifier<AppState> {
-  const AppScope({required AppState super.notifier, required super.child, super.key});
+  const AppScope({
+    required AppState super.notifier,
+    required super.child,
+    super.key,
+  });
 
   static AppState of(BuildContext context) {
     final scope = context.dependOnInheritedWidgetOfExactType<AppScope>();

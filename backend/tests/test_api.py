@@ -5,6 +5,9 @@ from __future__ import annotations
 import uuid
 from datetime import UTC, date, datetime, timedelta
 
+from app.api.v1.content import _content_version
+from app.models import Card
+
 
 def test_health(client):
     assert client.get("/health").json()["status"] == "ok"
@@ -65,6 +68,53 @@ def test_inhalte_werden_beim_start_geladen(client):
     assert manifest["cards"] >= 20
     assert manifest["schemata"] >= 5
     assert manifest["cases"] >= 3
+
+
+def test_content_manifest_version_ist_sha256_und_prozessstabil(client):
+    erste = client.get("/v1/content/manifest").json()["content_version"]
+    zweite = client.get("/v1/content/manifest").json()["content_version"]
+    assert erste == zweite
+    assert len(erste) == 64
+    assert all(char in "0123456789abcdef" for char in erste)
+
+
+def test_content_version_ist_unabhaengig_von_abfragereihenfolge_und_deckt_kartenfelder_ab():
+    first = Card(
+        slug="a",
+        topic_slug="topic",
+        type="definition",
+        front="Vorderseite",
+        back="Rueckseite",
+        norms=["§ 1 BGB"],
+        sources=["Quelle"],
+        stand="2026-09",
+        content_hash="a" * 64,
+    )
+    second = Card(
+        slug="b",
+        topic_slug="topic",
+        type="definition",
+        front="Andere Vorderseite",
+        back="Andere Rueckseite",
+        norms=[],
+        sources=[],
+        stand="2026-09",
+        content_hash="b" * 64,
+    )
+    assert _content_version([first, second]) == _content_version([second, first])
+
+    changed = Card(
+        slug="a",
+        topic_slug="topic",
+        type="definition",
+        front="Geaenderte Vorderseite",
+        back="Rueckseite",
+        norms=["§ 1 BGB"],
+        sources=["Quelle"],
+        stand="2026-09",
+        content_hash="a" * 64,
+    )
+    assert _content_version([first]) != _content_version([changed])
 
 
 def test_alle_drei_rechtsgebiete_sind_vertreten(client):
