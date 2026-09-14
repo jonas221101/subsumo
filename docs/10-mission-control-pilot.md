@@ -231,7 +231,18 @@ ist nicht implementiert.
    lokale Loopback-Pilotinstanz fixiert. Die tatsächliche Pilot-Firma wird im
    lokalen Board angelegt.
 2. Rollen, Modell, Budgets, isolierte Workspaces und echte Run-Authentifizierung verbinden.
-3. Einen realen Frage-/Antwortlauf sowie eine Review-Übergabe nachweisen.
+3. ~~Einen realen Frage-/Antwortlauf sowie eine Review-Übergabe nachweisen~~
+   **erledigt** (SUB-21, gegen die echte lokale Pilotinstanz, nichts gemockt):
+   Frage an den Reviewer-Agenten (`965fee47-…`) über
+   `mission_control send SUB-21 --kind question`, Kommentar
+   `7b7a2302-e092-450f-a46c-471149d6e413` (message_id
+   `377101c7-850e-4d16-ab6e-b1b18438735e`); Antwort per `--kind answer
+   --reply-to` in Kommentar `120b8f22-d0cb-4141-87d8-51866e58a870`
+   (message_id `cd3ab99e-b074-4b1f-ba2b-951e3a2f7267`). Anschließend
+   `request-review SUB-21 --to 965fee47-… --commit <SHA dieses Commits>`
+   für die Review-Übergabe; der Reviewer nimmt mit `claim SUB-21 --review`
+   an. `reconcile` bestätigt beide Vorgänge gegen den echten Thread. Details
+   und alle IDs im SUB-21-Kommentar auf SUB-10.
 4. ~~Persistente Zustellgarantien~~ **erledigt** (Journal + `reconcile`); offen
    bleiben Antwortfristen, Zustellquittungen und Nacharbeit.
 5. ~~Software-Review an aktuellen Commit binden~~ **erledigt**; offen bleibt die
