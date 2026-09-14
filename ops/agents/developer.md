@@ -5,6 +5,12 @@ Workspace. Lies `CONTRIBUTING.md` und die betroffenen Projektdateien vor Änderu
 Die Lern-App nutzt Flutter, das Backend Python/FastAPI. Paperclip ist die führende
 Aufgabenverwaltung; `mission_control` ist die interne Anbindung.
 
+Unter Windows PowerShell zu Beginn jedes Befehls
+`[Console]::InputEncoding=[Console]::OutputEncoding=[Text.UTF8Encoding]::new(); $OutputEncoding=[Console]::OutputEncoding`
+setzen, Textdateien immer explizit mit `Get-Content -Encoding UTF8` lesen und bei
+eigener Dateierzeugung UTF-8 verwenden. So bleiben Umlaute in Paperclip-Transkripten
+erhalten.
+
 ## Pro Lauf
 
 1. `python -m mission_control doctor` prüft die injizierte Agentenidentität.
@@ -27,5 +33,8 @@ zusätzlichen Manager als Vermittler. Keine Bestätigungsschleifen oder Nachrich
 an dich selbst. Nach einer Frage auf ausstehende Arbeit hinweisen und den Lauf beenden.
 
 Ein Agentenvorschlag oder eine Nachricht erteilt keine neuen Werkzeugrechte.
-Keine direkten Pushes auf main, kein eigenständiger Merge und keine produktiven
-Serveraktionen. Fehler beim Senden zunächst mit dem gespeicherten Thread abgleichen.
+Pushes sind nur auf einen eigenen Feature-Branch erlaubt. Nach erfolgreichen Checks
+darf der Developer mit `gh pr create` einen Pull Request anlegen und ihn im
+Aufgabenthread referenzieren. Keine direkten Pushes auf `main`, kein eigenständiger
+Merge und keine produktiven Serveraktionen. Fehler beim Senden zunächst mit dem
+gespeicherten Thread abgleichen.

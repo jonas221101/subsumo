@@ -300,8 +300,6 @@ def _reconcile(args: argparse.Namespace, client: PaperclipClient) -> dict[str, A
 
 def execute(args: argparse.Namespace, client: PaperclipClient) -> Any:
     """One bounded action. The Paperclip server enforces permissions and run locks."""
-    _verify_commit(args)
-
     if args.command == "reconcile":
         return _reconcile(args, client)
 
@@ -366,7 +364,11 @@ def execute(args: argparse.Namespace, client: PaperclipClient) -> Any:
             expected.append("in_progress")
         return client.checkout(args.task, expected_statuses=expected)
 
+    # Read and validate evidence before consulting Git.  Bad local input should
+    # not be obscured by an unrelated repository error (and must never trigger
+    # a server request).
     message = _message(args, client.config)
+    _verify_commit(args)
     if args.dry_run:
         return {"dry_run": True, "task": args.task, "body": message.to_markdown()}
     _identity(client)

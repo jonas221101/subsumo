@@ -207,7 +207,10 @@ ist nicht implementiert.
 
 ## Nächste Integration
 
-1. Paperclip-Version installieren/fixieren und separate Pilot-Firma konfigurieren.
+1. **Vorbereitet:** Paperclip `v2026.831.1` ist über
+   `ops/mission-control/start-paperclip-pilot.ps1` für eine getrennte,
+   lokale Loopback-Pilotinstanz fixiert. Die tatsächliche Pilot-Firma wird im
+   lokalen Board angelegt.
 2. Rollen, Modell, Budgets, isolierte Workspaces und echte Run-Authentifizierung verbinden.
 3. Einen realen Frage-/Antwortlauf sowie eine Review-Übergabe nachweisen.
 4. ~~Persistente Zustellgarantien~~ **erledigt** (Journal + `reconcile`); offen
