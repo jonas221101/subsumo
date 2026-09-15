@@ -1,0 +1,35 @@
+# Drei nicht auswertbare Faelle (fehlender Erwartungshorizont, fehlendes
+# Gutachten, fehlende Punktzahl) plus ein gueltiger Fall - fuer den Test,
+# dass ein defekter Fall die uebrigen nicht mitreisst.
+faelle:
+  - slug: "ohne_erwartungshorizont"
+    gutachten: "Ein kurzes Gutachten ohne Erwartungshorizont."
+    punkte: 5.0
+
+  - slug: "ohne_gutachten"
+    expectation:
+      pruefpunkte:
+        - id: "p1"
+          label: "Test"
+          weight: 1.0
+          keywords: ["Test"]
+    punkte: 5.0
+
+  - slug: "ohne_punkte"
+    gutachten: "Ein kurzes Gutachten ohne Punktzahl."
+    expectation:
+      pruefpunkte:
+        - id: "p1"
+          label: "Test"
+          weight: 1.0
+          keywords: ["Test"]
+
+  - slug: "gueltig"
+    gutachten: "Ein Angebot wurde abgegeben und die Annahme erklärt."
+    expectation:
+      pruefpunkte:
+        - id: "p1"
+          label: "Angebot"
+          weight: 1.0
+          keywords: ["Angebot"]
+    punkte: 3.0
