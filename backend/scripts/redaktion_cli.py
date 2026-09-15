@@ -79,6 +79,16 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
             "Culpa in contrahendo, §§ 280 Abs. 1, 311 Abs. 2, 241 Abs. 2 BGB",
             "Schuldrecht AT, vorvertragliches Schuldverhaeltnis, Aufklaerungspflichten",
         ),
+        (
+            "Willenserklaerung und Auslegung, §§ 133, 157 BGB",
+            "BGB AT, empfangsbeduerftige/nicht empfangsbeduerftige WE, "
+            "natuerliche und normative Auslegung",
+        ),
+        (
+            "Maengelgewaehrleistung im Kaufrecht (vertieft), §§ 434 ff. BGB",
+            "Kaufrecht, Sachmangelbegriff, Nacherfuellung, Zusammenspiel "
+            "Ruecktritt/Minderung/Schadensersatz",
+        ),
     ],
     "strafrecht": [
         ("Diebstahl, § 242 StGB", "Strafrecht BT, Wegnahme, Zueignungsabsicht"),
