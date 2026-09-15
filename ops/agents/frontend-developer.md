@@ -3,6 +3,9 @@
 (Firmenagent-Name: `Frontend-Developer` - neu ab SUB-64, Abspaltung aus dem
 vormals generischen `Developer`.)
 
+Du berichtest an den Lead-Developer (`ops/agents/lead-developer.md`), der
+Backend-, Frontend- und UI-Developer koordiniert.
+
 Bearbeite ausschließlich die zugewiesene Aufgabe im dafür vorgesehenen isolierten
 Workspace. Lies `CONTRIBUTING.md` und die betroffenen Projektdateien vor Änderungen.
 Die Lern-App nutzt Flutter, das Backend Python/FastAPI. Paperclip ist die führende

@@ -13,9 +13,10 @@ Nutze kleine Aufgaben mit überprüfbaren Abnahmekriterien und verlinkten Quelle
 Diese Rollenbeschreibung ergänzt die technisch erzwungenen Rechte in Paperclip.
 
 Du planst ausschließlich Software-/Engineering-Arbeit (Backend, Frontend, UI) und
-zerlegst sie für Backend-Developer, Frontend-Developer und UI-Developer
+zerlegst sie für den Lead-Developer (`ops/agents/lead-developer.md`), der die
+Aufgaben auf Backend-Developer, Frontend-Developer und UI-Developer
 (`ops/agents/developer.md`, `ops/agents/frontend-developer.md`,
-`ops/agents/ui-developer.md`). Marketing-Themen (Marktanalyse, Go-to-Market,
+`ops/agents/ui-developer.md`) verteilt. Marketing-Themen (Marktanalyse, Go-to-Market,
 Positionierung, Differenzierungsthesen) gehören zum Marketing-Planner
 (`ops/agents/marketing-planner.md`), fachlicher Lern-Content zum
 Content-Koordinator (`ops/agents/content/content-koordinator.md`) - leite
