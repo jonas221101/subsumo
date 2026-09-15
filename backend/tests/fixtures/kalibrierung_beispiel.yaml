@@ -1,0 +1,113 @@
+# Synthetisches Fixture-Set fuer die Kalibrierungs-Harness (SUB-69/SUB-70).
+# Keine echten Dozentendaten - Gutachtentexte und Erwartungshorizont sind aus
+# tests/test_evaluator.py uebernommen (dort deterministisch gegen die
+# Heuristik verifiziert), die Dozentenpunktzahl ist frei erfunden.
+# Erwarteter MAE fuer diese Datei: siehe tests/test_kalibrierung_cli.py.
+faelle:
+  - slug: "vollstaendig"
+    gutachten: |
+      A könnte gegen B einen Anspruch auf Kaufpreiszahlung aus § 433 Abs. 2 BGB haben.
+      Dazu müsste ein Kaufvertrag vorliegen.
+      Ein Angebot ist eine empfangsbedürftige Willenserklärung mit Rechtsbindungswillen.
+      Hier hat A ein Angebot abgegeben und B hat die Annahme erklärt.
+      Der Irrtum des B ist ein blosser Kalkulationsirrtum und damit unbeachtlich.
+      Mithin besteht der Anspruch aus § 433 Abs. 2 BGB.
+    expectation:
+      pruefpunkte:
+        - id: "p1"
+          label: "Anspruchsgrundlage § 433 Abs. 2 BGB"
+          weight: 2.0
+          required: true
+          norms: ["§ 433 Abs. 2 BGB"]
+        - id: "p2"
+          label: "Angebot"
+          weight: 1.0
+          keywords: ["Angebot"]
+        - id: "p3"
+          label: "Annahme"
+          weight: 1.0
+          keywords: ["Annahme"]
+        - id: "p4"
+          label: "Kalkulationsirrtum unbeachtlich"
+          weight: 3.0
+          keywords: ["Kalkulationsirrtum", "Motivirrtum"]
+    punkte: 12.0
+
+  - slug: "teilweise"
+    gutachten: |
+      A könnte gegen B einen Anspruch auf Kaufpreiszahlung aus § 433 Abs. 2 BGB haben.
+      Dazu müsste ein Kaufvertrag vorliegen.
+      Ein Angebot ist eine empfangsbedürftige Willenserklärung mit Rechtsbindungswillen.
+      Hier hat A ein Angebot abgegeben.
+      Mithin besteht der Anspruch aus § 433 Abs. 2 BGB.
+    expectation:
+      pruefpunkte:
+        - id: "p1"
+          label: "Anspruchsgrundlage § 433 Abs. 2 BGB"
+          weight: 2.0
+          required: true
+          norms: ["§ 433 Abs. 2 BGB"]
+        - id: "p2"
+          label: "Angebot"
+          weight: 1.0
+          keywords: ["Angebot"]
+        - id: "p3"
+          label: "Annahme"
+          weight: 1.0
+          keywords: ["Annahme"]
+        - id: "p4"
+          label: "Kalkulationsirrtum unbeachtlich"
+          weight: 3.0
+          keywords: ["Kalkulationsirrtum", "Motivirrtum"]
+    punkte: 9.5
+
+  - slug: "ohne_kernpunkt"
+    gutachten: |
+      A könnte gegen B einen Anspruch auf Zahlung des Kaufpreises haben.
+      Ein Angebot ist eine empfangsbedürftige Willenserklärung mit Rechtsbindungswillen.
+      Hier hat A ein Angebot abgegeben und B hat die Annahme erklärt.
+      Mithin ist ein Vertrag geschlossen worden und der Anspruch besteht.
+    expectation:
+      pruefpunkte:
+        - id: "p1"
+          label: "Anspruchsgrundlage § 433 Abs. 2 BGB"
+          weight: 2.0
+          required: true
+          norms: ["§ 433 Abs. 2 BGB"]
+        - id: "p2"
+          label: "Angebot"
+          weight: 1.0
+          keywords: ["Angebot"]
+        - id: "p3"
+          label: "Annahme"
+          weight: 1.0
+          keywords: ["Annahme"]
+        - id: "p4"
+          label: "Kalkulationsirrtum unbeachtlich"
+          weight: 3.0
+          keywords: ["Kalkulationsirrtum", "Motivirrtum"]
+    punkte: 4.0
+
+  - slug: "nichts"
+    gutachten: |
+      Der Fall ist schwierig. Es gibt viele Meinungen dazu. Man koennte so oder so entscheiden.
+    expectation:
+      pruefpunkte:
+        - id: "p1"
+          label: "Anspruchsgrundlage § 433 Abs. 2 BGB"
+          weight: 2.0
+          required: true
+          norms: ["§ 433 Abs. 2 BGB"]
+        - id: "p2"
+          label: "Angebot"
+          weight: 1.0
+          keywords: ["Angebot"]
+        - id: "p3"
+          label: "Annahme"
+          weight: 1.0
+          keywords: ["Annahme"]
+        - id: "p4"
+          label: "Kalkulationsirrtum unbeachtlich"
+          weight: 3.0
+          keywords: ["Kalkulationsirrtum", "Motivirrtum"]
+    punkte: 1.0
