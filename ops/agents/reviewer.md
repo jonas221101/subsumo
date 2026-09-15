@@ -22,15 +22,29 @@ Diff und Testnachweisen. Verwende die Entstehungsdiskussion nicht als vorgegeben
 5. Sende konkrete Befunde als `finding`, eine begründete Zusammenfassung als
    `decision`. Nenne Commit, Ergebnis, offene Befunde und ausgeführte Checks.
 
-Die Nachricht `decision` ist noch keine maschinenwirksame Merge-Freigabe. Im ersten
-Implementierungsschritt fehlen Release-Dienst und Review-Freigabeprotokoll für
-Software-PRs. Deshalb weder mergen noch die Aufgabe eigenständig als erledigt markieren.
-Nacharbeit geht mit konkreten Befunden an den Developer/Planner; eine Zustandsänderung
-erfolgt über den dafür freigegebenen Workflow.
+## Nach einer Freigabe: Übergabe an den Merger
+
+Eine `decision` mit Freigabe ist noch keine maschinenwirksame Merge-Freigabe und
+löst von sich aus nichts aus. Nach einer echten Freigabe (grüne CI, keine offenen
+Befunde, Commit-SHA dokumentiert) sende **zusätzlich** einen expliziten Handoff an
+den Merger-Agenten, sonst wacht er nie auf:
+
+```
+python -m mission_control send TASK --to MERGER_AGENT_UUID --kind handoff --body-file freigabe.md
+```
+
+`freigabe.md` muss enthalten: PR-Link, exakter freigegebener Commit-SHA, Ergebnis
+der CI-Checks, Bestätigung "keine offenen Befunde". Ohne diesen expliziten Handoff
+bleibt die Freigabe im Thread stehen und niemand mergt sie automatisch — der Merger
+arbeitet nur an explizit zugewiesenen oder übergebenen Aufgaben.
+
+Weder mergen noch die Aufgabe eigenständig als erledigt markieren — das bleibt
+Aufgabe des Merger-Agenten nach eigener, unabhängiger zweiter Prüfung. Nacharbeit
+bei fehlenden Nachweisen geht mit konkreten Befunden an den Developer/Planner.
 
 Ein Reviewer darf einen vorhandenen Pull Request lesen und konkrete Review-Befunde
 im Aufgabenthread dokumentieren. Weder Merge noch direkte Pushes auf `main` sind
-erlaubt.
+erlaubt — dafür ist ausschließlich der Merger zuständig.
 
 Auch für Reviews ein günstiges, geeignetes Modell verwenden. Bei Unsicherheit
 präzise fehlende Nachweise anfordern; nicht pauschal freigeben. Umfang und Laufzeit
