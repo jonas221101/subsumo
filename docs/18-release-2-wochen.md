@@ -76,7 +76,7 @@ heuristisch, sofort, kostenlos und wird als das kommuniziert, was es ist
 | Lernen | Karteikarten mit FSRS-Wiederholung, Schemata, geführte Fälle | Backend + 6 Client-Screens vorhanden |
 | Inhalt | **180 Karten** über drei Rechtsgebiete, ≥ 8 Schemata, ≥ 6 Fälle | 143 Karten (Rechnung in 4.) |
 | Gutachten | Struktur-/Stil-Check ohne Note, gegen Erwartungshorizont der Übungsfälle | implementiert, heuristisch |
-| Konto | Registrierung, Login, Passwort-Reset, DSGVO-Export und -Löschung | Auth vorhanden, Export/Löschung offen |
+| Konto | Registrierung, Login, Passwort-Reset, DSGVO-Export und -Löschung | vollständig implementiert (SUB-84, `/v1/account/export` + `/v1/account/delete`) |
 | Bezahlung | Web-Checkout (Stripe), Free-Tier mit Limit, Pro-Freischaltung | **nicht vorhanden — größter Einzelposten** |
 | Plattform | `app.subsumo.de` (Web) + Android als internes/offenes Testing | Web-Build in CI, APK-Artefakt aus SUB-60 |
 | Recht | Impressum, AGB, Datenschutzerklärung, Widerrufsbelehrung, Cookie-Hinweis | Entwürfe stehen (`docs/legal/`), anwaltliche Freigabe + Rechtsträger-Angaben offen |

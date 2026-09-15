@@ -3,9 +3,24 @@
 from __future__ import annotations
 
 import uuid
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 
 AUTH_PASSWORD = "examen2029!"
+
+
+def _set_pro_felder(*, email: str) -> None:
+    """Setzt Entitlement-Felder direkt in der DB (Stripe-Webhook existiert hier nicht)."""
+    import app.db as db_module
+    from app.models import User
+
+    with db_module.SessionLocal() as db:
+        user = db.query(User).filter_by(email=email).one()
+        user.stripe_customer_id = "cus_test123"
+        user.stripe_subscription_id = "sub_test456"
+        user.pro_until = datetime.now(UTC) + timedelta(days=30)
+        user.cancel_at_period_end = True
+        db.add(user)
+        db.commit()
 
 
 def _seed_lerndaten(auth_client) -> dict:
@@ -62,6 +77,18 @@ def test_export_liefert_konto_lernfortschritt_und_gutachten_vollstaendig(auth_cl
     assert submission["case_slug"] == "zr-fall-sonderpreis"
     assert "Anspruch" in submission["text"]
     assert "evaluation" in submission["report"]
+
+
+def test_export_deckt_entitlement_felder_eines_pro_kontos_ab(auth_client):
+    email = auth_client.get("/v1/auth/me").json()["email"]
+    _set_pro_felder(email=email)
+
+    account = auth_client.get("/v1/account/export").json()["account"]
+
+    assert account["stripe_customer_id"] == "cus_test123"
+    assert account["stripe_subscription_id"] == "sub_test456"
+    assert account["pro_until"] is not None
+    assert account["cancel_at_period_end"] is True
 
 
 def test_export_zeigt_nur_das_eigene_konto(client):
