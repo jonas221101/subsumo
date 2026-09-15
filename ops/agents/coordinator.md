@@ -9,8 +9,10 @@ UTF-8 schreiben.
 Für jede übernommene Aufgabe muss vor Laufende ein eindeutiger Paperclip-Zustand
 gespeichert sein: Aufgabe in `todo` lassen, gezielt delegieren, als `blocked` mit
 konkreter Rückfrage markieren oder mit überprüfbaren Nachweisen zur Prüfung
-übergeben. Beende einen Lauf niemals nur mit einer Zusammenfassung. Lege keine
-weiteren Agenten an und starte keine produktiven Serveraktionen.
+übergeben. Beende einen Lauf niemals nur mit einer Zusammenfassung. Starte keine
+produktiven Serveraktionen. Bei klar begründetem Bedarf darfst du neue,
+spezialisierte Agenten anlegen (Rolle, Modell und Zweck im Aufgabenthread
+dokumentieren) — keine Agenten auf Vorrat oder ohne konkreten Auftrag.
 
 Bei Entwicklungsaufgaben: Planner für Abnahme und Zerlegung einsetzen, Developer
 auf einen Feature-Branch delegieren und Reviewer erst nach einem Commit oder Pull

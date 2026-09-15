@@ -2,18 +2,23 @@
 
 Ersetzt in docs/05-content-pipeline.md den Schritt "Autor schreibt YAML,
 zweite Person reviewt fachlich" durch zwei KI-Agenten - ohne die dortigen
-Garantien aufzuweichen. Drei Instanzen muessen zustimmen, bevor ein Inhalt
+Garantien aufzuweichen. Vier Instanzen muessen zustimmen, bevor ein Inhalt
 entsteht:
 
 1. **Collector** (LLM) schreibt einen Entwurf.
 2. **Struktur-Gate** (deterministisch, ``app.services.content.load_content`` -
    dieselbe Funktion, die auch die CI faehrt) prueft Pflichtfelder,
    Slug-Eindeutigkeit, Erwartungshorizont je Fall.
-3. **Reviewer** (LLM, unabhaengiger Aufruf) prueft Urheberrecht, RDG-Konformitaet
+3. **Normzitat-Gate** (deterministisch, ``app.services.redaktion.norm_gate``)
+   prueft jedes ``norms:``-Zitat gegen eine kuratierte Positivliste bekannter
+   Gesetzeskuerzel und Paragraphenbereiche - kein Ersatz fuer den vollen
+   Normindex aus M2, aber ein Filter gegen offensichtlich erfundene oder
+   falsch zugeordnete Zitate (siehe docs/08-ki-redaktion.md).
+4. **Reviewer** (LLM, unabhaengiger Aufruf) prueft Urheberrecht, RDG-Konformitaet
    und fachliche Plausibilitaet - Dinge, die eine Formatpruefung nicht leisten
    kann.
 
-Erst wenn beide Gates zustimmen, wird eine Datei geschrieben - und zwar mit
+Erst wenn alle Gates zustimmen, wird eine Datei geschrieben - und zwar mit
 Herkunftsangabe (``topic.redaktion``), damit jederzeit nachvollziehbar bleibt,
 was KI-erzeugt ist. Menschliche Stichprobe bleibt vorgesehen (siehe
 docs/08-ki-redaktion.md), ist aber keine Voraussetzung fuer den Merge - das
@@ -31,6 +36,7 @@ import yaml
 
 from app.services.content import ContentBundle, load_content
 from app.services.redaktion.collector import CollectorAgent, CollectorError, TopicRequest
+from app.services.redaktion.norm_gate import check_norms
 from app.services.redaktion.reviewer import ReviewerAgent, ReviewerError
 
 MAX_ROUNDS = 3
@@ -115,6 +121,12 @@ class RedaktionPipeline:
                 history.append(f"Runde {round_no}: Struktur-Gate abgelehnt - {feedback}")
                 continue
 
+            norm_fehler = check_norms(draft)
+            if norm_fehler:
+                feedback = "Normzitate abgelehnt:\n" + "\n".join(f"- {e}" for e in norm_fehler)
+                history.append(f"Runde {round_no}: Normzitat-Gate abgelehnt - {feedback}")
+                continue
+
             try:
                 review = self.reviewer.review(draft, existing_slugs=existing)
             except ReviewerError as exc:
@@ -155,6 +167,7 @@ class RedaktionPipeline:
             "geprueft_von": "reviewer-agent-v1",
             "geprueft_am": date.today().isoformat(),
             "status": "ki-freigegeben",
+            "normzitate_geprueft": True,
         }
         area_dir = self.content_dir / request.area
         area_dir.mkdir(parents=True, exist_ok=True)

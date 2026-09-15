@@ -7,7 +7,7 @@ Rohentwurf und prüfen ihn gegenseitig. Menschliche Stichprobe bleibt
 vorgesehen, ist aber keine Voraussetzung für die Veröffentlichung — sonst
 wäre sie wieder derselbe Flaschenhals.
 
-## Architektur: drei Instanzen müssen zustimmen
+## Architektur: vier Instanzen müssen zustimmen
 
 ```
 TopicRequest (Rechtsgebiet, Arbeitstitel, Kontext)
@@ -22,6 +22,14 @@ TopicRequest (Rechtsgebiet, Arbeitstitel, Kontext)
           │  Formatfehler als Feedback                │ strukturell gültig
           │  (zurueck an Collector)                    ▼
           │                                 ┌──────────────────────┐
+          │                                 │   Normzitat-Gate       │
+          │      Normzitat-Gate lehnt ab    │  (deterministisch,     │
+          │◀────────────────────────────────│   app.services.        │
+          │                                 │   redaktion.norm_gate) │
+          │                                 └──────────┬────────────┘
+          │                                             │ Zitate plausibel
+          │                                             ▼
+          │                                 ┌──────────────────────┐
           │        Reviewer lehnt ab        │   Reviewer-Agent      │
           └─────────────────────────────────│   (LLM, unabhängiger  │
                                              │    Aufruf)            │
@@ -33,8 +41,9 @@ TopicRequest (Rechtsgebiet, Arbeitstitel, Kontext)
 ```
 
 Quellcode: `backend/app/services/redaktion/` (`collector.py`, `reviewer.py`,
-`pipeline.py`, `prompts.py`). CLI: `backend/scripts/redaktion_cli.py`.
-Tests mit einem Fake-LLM-Client, ohne Netz: `backend/tests/test_redaktion.py`.
+`norm_gate.py`, `pipeline.py`, `prompts.py`). CLI:
+`backend/scripts/redaktion_cli.py`. Tests mit einem Fake-LLM-Client, ohne
+Netz: `backend/tests/test_redaktion.py`, `backend/tests/test_norm_gate.py`.
 
 ## Warum zwei Agenten und nicht einer
 
@@ -75,10 +84,24 @@ zitierter Paragraph tatsächlich existiert und den behaupteten Inhalt hat.
 Ein Sprachmodell kann einen plausibel klingenden, aber falschen oder
 erfundenen Paragraphen genauso überzeugend vortragen wie einen echten — das
 ist eine bekannte Schwäche von LLMs bei Zitaten, nicht etwas, das ein zweiter
-LLM-Aufruf zuverlässig auffängt. Sobald der Norm-Explorer aus `docs/03-roadmap.md`
-(M2, Import von gesetze-im-internet.de) steht, wird eine dritte,
-deterministische Prüfstufe ergänzt: jedes `norms:`-Zitat wird gegen den
-echten Gesetzestext-Index abgeglichen, bevor ein Inhalt freigegeben wird. Bis
+LLM-Aufruf zuverlässig auffängt. Deshalb übernimmt das **Normzitat-Gate**
+(`app.services.redaktion.norm_gate`, deterministisch, kein LLM-Aufruf) einen
+Zwischenschritt: jedes `norms:`-Zitat wird gegen eine kuratierte Positivliste
+bekannter Gesetzeskürzel und plausibler Paragraphen-/Artikelbereiche geprüft
+(mindestens BGB, StGB, GG, VwGO, VwVfG, StPO, BVerfGG) — nach demselben
+Prinzip wie das Struktur-Gate (siehe oben): ein deterministischer Check ist
+ein Erzwingen, ein Bitten an das Modell wäre es nicht. Verstößt ein Zitat
+(unbekanntes Kürzel, Nummer außerhalb des Bereichs, falsches Zitierformat),
+geht der Entwurf mit konkretem Feedback zurück an den Collector, bevor der
+Reviewer ihn je sieht.
+
+**Grenze der Positivliste:** Sie ersetzt keinen vollständigen Normindex. Ein
+erfundener § 999999 BGB oder ein nicht existentes Gesetzeskürzel wird
+abgefangen; ein *falsch zugeordneter, aber plausibel liegender* Paragraph
+(z. B. eine Norm mit falschem Inhalt, aber gültiger Nummer) nicht — dafür
+bräuchte es den echten Gesetzestext. Sobald der Norm-Explorer aus
+`docs/03-roadmap.md` (M2, Import von gesetze-im-internet.de) steht, löst ein
+Abgleich gegen den echten Gesetzestext-Index diese Positivliste ab. Bis
 dahin ist **jeder KI-erzeugte Inhalt vor der ersten Nutzung stichprobenartig
 von einer Person mit juristischer Vorbildung zu prüfen** — die Pipeline
 markiert dafür jeden Inhalt eindeutig (siehe unten), verhindert die
@@ -97,6 +120,7 @@ topic:
     geprueft_von: reviewer-agent-v1
     geprueft_am: "2026-09-12"
     status: ki-freigegeben   # ki-freigegeben | mensch-freigegeben | in-pruefung
+    normzitate_geprueft: true   # Normzitat-Gate bestanden, siehe unten
 ```
 
 `status: in-pruefung` lässt die CI durchlaufen, erzeugt aber eine Warnung
@@ -104,6 +128,31 @@ topic:
 Nutzung noch eine menschliche Prüfung durchlaufen sollen, ohne den
 automatisierten Fluss zu blockieren. Inhalte ohne `redaktion`-Block (der
 gesamte M0-Bestand) gelten unverändert als regulär redigiert.
+
+## Redaktionsrollen und "Lernbereiche"
+
+Die Redaktionsarbeit rund um diese Pipeline ist auf drei Rollen aufgeteilt,
+dokumentiert unter `ops/agents/content/` (analog zu `ops/agents/coordinator.md`
+& Co.): ein **Content-Koordinator** organisiert die Arbeit je Rechtsgebiet und
+pflegt den `BACKLOG`-Fortschritt in `redaktion_cli.py`, drei
+**Gebiets-Redakteure** (Zivilrecht, Strafrecht, Öffentliches Recht) sind je
+für ihr `--area`-Segment verantwortlich, und der **Content-Prüfagent**
+(`ops/agents/content/content-pruefagent.md`) ist die in diesem Dokument
+beschriebene Rolle rund um das Normzitat-Gate — unabhängig von Collector und
+Reviewer.
+
+Klarstellung zu "Lernbereichen" (Begriff aus dem ursprünglichen Auftrag,
+SUB-51): Das sind **keine neue Datenmodell-Ebene**, sondern die fachliche
+Untergliederung, die im `BACKLOG` (`redaktion_cli.py`) und in `content/`
+bereits über Titel und Kontext-Stichworte abgebildet ist — z. B. AT/BT bei
+Zivil- und Strafrecht, "VerwR AT" beim Öffentlichen Recht (siehe die
+bestehenden Dateien `content/strafrecht/strafrecht-at.yaml`,
+`content/zivilrecht/bgb-at-kaufrecht.yaml`). Kartentypen
+(`definition`/`schema_step`/`streitstand`/`norm`/`rechtsprechung`, siehe
+`docs/05-content-pipeline.md`) sind eine orthogonale, bereits bestehende
+Klassifikation und nicht gemeint. Es gibt keinen Schema-Änderungsbedarf an
+`content/`-YAML dafür — nur an der redaktionellen Planung (BACKLOG-Struktur,
+ggf. ein Kommentar, welcher Lernbereich ein Thema abdeckt).
 
 ## Betrieb
 
@@ -174,8 +223,11 @@ automatisierte, unbeaufsichtigte Läufe (z. B. ein CI-Workflow) ungeeignet.
 
 ## Grenzen, ehrlich benannt
 
-- **Kein Ersatz für M2 (Norm-Explorer).** Ohne echten Normindex bleibt eine
-  Lücke bei Halluzinationen in Paragraphenzitaten (siehe oben).
+- **Normzitat-Gate ist eine kuratierte Positivliste, kein Normindex (M2).**
+  Fängt erfundene Gesetzeskürzel und unplausible Paragraphennummern ab
+  (siehe oben, `app.services.redaktion.norm_gate`), prüft aber nicht, ob ein
+  Zitat inhaltlich zum behaupteten Sachverhalt passt. Ohne den echten
+  Normindex aus M2 bleibt hier eine Lücke.
 - **Kalibrierung fehlt noch.** Anders als beim Klausur-Evaluator
   (`docs/03-roadmap.md`, M3: 30 von Dozenten bewertete Referenzgutachten,
   Ziel-MAE ≤ 2 Punkte) gibt es für die Redaktions-Reviewer-Entscheidung noch

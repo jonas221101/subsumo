@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
 
@@ -109,21 +110,21 @@ class _GutachtenPageState extends State<GutachtenPage> {
             final feedback = _buildFeedback();
             if (!zweispaltig) {
               return ListView(
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(Spacing.lg),
                 children: [
                   SizedBox(height: 420, child: editor),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: Spacing.lg),
                   feedback,
                 ],
               );
             }
             return Padding(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(Spacing.lg),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Expanded(flex: 3, child: editor),
-                  const SizedBox(width: 16),
+                  const SizedBox(width: Spacing.lg),
                   Expanded(
                     flex: 2,
                     child: SingleChildScrollView(child: feedback),
@@ -141,26 +142,23 @@ class _GutachtenPageState extends State<GutachtenPage> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           if (_case != null)
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      _case!['facts'] as String? ?? '',
-                      style: Theme.of(context).textTheme.bodyMedium,
-                    ),
-                    const SizedBox(height: 12),
-                    Text(
-                      _case!['question'] as String? ?? '',
-                      style: const TextStyle(fontWeight: FontWeight.w600),
-                    ),
-                  ],
-                ),
+            SubsumoCard(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    _case!['facts'] as String? ?? '',
+                    style: Theme.of(context).textTheme.bodyMedium,
+                  ),
+                  const SizedBox(height: Spacing.md),
+                  Text(
+                    _case!['question'] as String? ?? '',
+                    style: Theme.of(context).textTheme.titleSmall,
+                  ),
+                ],
               ),
             ),
-          const SizedBox(height: 12),
+          const SizedBox(height: Spacing.md),
           Expanded(
             child: TextField(
               controller: _controller,
@@ -168,16 +166,15 @@ class _GutachtenPageState extends State<GutachtenPage> {
               expands: true,
               textAlignVertical: TextAlignVertical.top,
               decoration: const InputDecoration(
-                border: OutlineInputBorder(),
                 alignLabelWithHint: true,
                 hintText: 'A koennte gegen B einen Anspruch auf ... aus § ... haben.',
               ),
             ),
           ),
-          const SizedBox(height: 12),
-          FilledButton(
+          const SizedBox(height: Spacing.md),
+          SubsumoButton.primary(
+            label: 'Abgeben und bewerten lassen',
             onPressed: _busy || _controller.text.trim().length < 40 ? null : _submit,
-            child: const Text('Abgeben und bewerten lassen'),
           ),
         ],
       );
@@ -186,13 +183,11 @@ class _GutachtenPageState extends State<GutachtenPage> {
     if (_result != null) return _ResultView(result: _result!);
     final structure = _structure;
     if (structure == null) {
-      return const Card(
-        child: Padding(
-          padding: EdgeInsets.all(16),
-          child: Text(
-            'Schreib los. Ab etwa 40 Woertern bekommst du hier laufend '
-            'Rueckmeldung zu Aufbau und Gutachtenstil.',
-          ),
+      return const SubsumoCard(
+        child: SubsumoFeedbackBlock(
+          message: 'Schreib los. Ab etwa 40 Woertern bekommst du hier laufend '
+              'Rueckmeldung zu Aufbau und Gutachtenstil.',
+          severity: FeedbackSeverity.hint,
         ),
       );
     }
@@ -211,36 +206,33 @@ class _StructureView extends StatelessWidget {
     final findings = (structure['findings'] as List).cast<Map<String, dynamic>>();
     final counts = (structure['counts'] as Map).cast<String, dynamic>();
 
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Text('Struktur', style: Theme.of(context).textTheme.titleMedium),
-                const Spacer(),
-                Text('$score/100', style: Theme.of(context).textTheme.titleMedium),
-              ],
-            ),
-            const SizedBox(height: 8),
-            LinearProgressIndicator(value: score / 100, minHeight: 6),
-            const SizedBox(height: 16),
-            Wrap(
-              spacing: 8,
-              runSpacing: 4,
-              children: [
-                _Count('Obersatz', counts['obersatz'] as int? ?? 0),
-                _Count('Definition', counts['definition'] as int? ?? 0),
-                _Count('Subsumtion', counts['subsumtion'] as int? ?? 0),
-                _Count('Ergebnis', counts['ergebnis'] as int? ?? 0),
-              ],
-            ),
-            const Divider(height: 32),
-            for (final finding in findings) _FindingTile(finding: finding),
-          ],
-        ),
+    return SubsumoCard(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Text('Struktur', style: Theme.of(context).textTheme.titleMedium),
+              const Spacer(),
+              Text('$score/100', style: Theme.of(context).textTheme.titleMedium),
+            ],
+          ),
+          const SizedBox(height: Spacing.sm),
+          SubsumoProgressMeter(value: score / 100, minHeight: 6),
+          const SizedBox(height: Spacing.lg),
+          Wrap(
+            spacing: Spacing.sm,
+            runSpacing: Spacing.xs,
+            children: [
+              _Count('Obersatz', counts['obersatz'] as int? ?? 0),
+              _Count('Definition', counts['definition'] as int? ?? 0),
+              _Count('Subsumtion', counts['subsumtion'] as int? ?? 0),
+              _Count('Ergebnis', counts['ergebnis'] as int? ?? 0),
+            ],
+          ),
+          const Divider(height: 32),
+          for (final finding in findings) _FindingTile(finding: finding),
+        ],
       ),
     );
   }
@@ -253,7 +245,7 @@ class _Count extends StatelessWidget {
   final int value;
 
   @override
-  Widget build(BuildContext context) => Chip(label: Text('$label: $value'));
+  Widget build(BuildContext context) => SubsumoChip(label: '$label: $value');
 }
 
 class _FindingTile extends StatelessWidget {
@@ -263,22 +255,24 @@ class _FindingTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final subsumo = theme.extension<SubsumoColors>();
     final severity = finding['severity'] as String;
     final (icon, color) = switch (severity) {
-      'fehler' => (Icons.error_outline, Colors.red.shade700),
-      'hinweis' => (Icons.info_outline, Colors.amber.shade800),
-      _ => (Icons.check_circle_outline, Colors.green.shade700),
+      'fehler' => (Icons.error_outline, theme.colorScheme.error),
+      'hinweis' => (Icons.info_outline, subsumo?.feedbackHint ?? theme.colorScheme.primary),
+      _ => (Icons.check_circle_outline, subsumo?.feedbackPositive ?? theme.colorScheme.primary),
     };
     final excerpt = finding['excerpt'] as String? ?? '';
     final hint = finding['hint'] as String? ?? '';
 
     return Padding(
-      padding: const EdgeInsets.only(bottom: 14),
+      padding: const EdgeInsets.only(bottom: Spacing.md),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Icon(icon, size: 20, color: color),
-          const SizedBox(width: 10),
+          const SizedBox(width: Spacing.sm),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -286,19 +280,16 @@ class _FindingTile extends StatelessWidget {
                 Text(finding['message'] as String),
                 if (excerpt.isNotEmpty)
                   Padding(
-                    padding: const EdgeInsets.only(top: 4),
+                    padding: const EdgeInsets.only(top: Spacing.xs),
                     child: Text(
                       '„$excerpt"',
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodySmall
-                          ?.copyWith(fontStyle: FontStyle.italic),
+                      style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic),
                     ),
                   ),
                 if (hint.isNotEmpty)
                   Padding(
-                    padding: const EdgeInsets.only(top: 4),
-                    child: Text(hint, style: Theme.of(context).textTheme.bodySmall),
+                    padding: const EdgeInsets.only(top: Spacing.xs),
+                    child: Text(hint, style: theme.textTheme.bodySmall),
                   ),
               ],
             ),
@@ -316,49 +307,50 @@ class _ResultView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final subsumo = theme.extension<SubsumoColors>();
     final evaluation = (result['evaluation'] as Map).cast<String, dynamic>();
     final checkpoints =
         (evaluation['checkpoints'] as List).cast<Map<String, dynamic>>();
 
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              '${evaluation['points']} Punkte · ${evaluation['note']}',
-              style: Theme.of(context).textTheme.headlineSmall,
-            ),
-            const SizedBox(height: 8),
-            Text(evaluation['summary'] as String),
-            const Divider(height: 32),
-            Text('Erwartungshorizont', style: Theme.of(context).textTheme.titleSmall),
-            const SizedBox(height: 8),
-            // Jeder Punktabzug ist auf einen Pruefpunkt zurueckfuehrbar -
-            // keine Blackbox-Note.
-            for (final cp in checkpoints)
-              ListTile(
-                dense: true,
-                contentPadding: EdgeInsets.zero,
-                leading: Icon(
-                  cp['hit'] == true ? Icons.check_circle : Icons.cancel_outlined,
-                  color: cp['hit'] == true ? Colors.green.shade700 : Colors.red.shade400,
-                ),
-                title: Text(cp['label'] as String),
-                subtitle: Text(
-                  cp['hit'] == true
-                      ? 'Beleg: „${cp['evidence']}"'
-                      : cp['comment'] as String? ?? '',
-                ),
+    return SubsumoCard(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            '${evaluation['points']} Punkte · ${evaluation['note']}',
+            style: theme.textTheme.headlineSmall,
+          ),
+          const SizedBox(height: Spacing.sm),
+          Text(evaluation['summary'] as String),
+          const Divider(height: 32),
+          Text('Erwartungshorizont', style: theme.textTheme.titleSmall),
+          const SizedBox(height: Spacing.sm),
+          // Jeder Punktabzug ist auf einen Pruefpunkt zurueckfuehrbar -
+          // keine Blackbox-Note.
+          for (final cp in checkpoints)
+            ListTile(
+              dense: true,
+              contentPadding: EdgeInsets.zero,
+              leading: Icon(
+                cp['hit'] == true ? Icons.check_circle : Icons.cancel_outlined,
+                color: cp['hit'] == true
+                    ? (subsumo?.feedbackPositive ?? theme.colorScheme.primary)
+                    : theme.colorScheme.error,
               ),
-            const Divider(height: 32),
-            Text(
-              evaluation['disclaimer'] as String,
-              style: Theme.of(context).textTheme.bodySmall,
+              title: Text(cp['label'] as String),
+              subtitle: Text(
+                cp['hit'] == true
+                    ? 'Beleg: „${cp['evidence']}"'
+                    : cp['comment'] as String? ?? '',
+              ),
             ),
-          ],
-        ),
+          const Divider(height: 32),
+          Text(
+            evaluation['disclaimer'] as String,
+            style: theme.textTheme.bodySmall,
+          ),
+        ],
       ),
     );
   }

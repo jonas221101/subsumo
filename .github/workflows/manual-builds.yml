@@ -1,0 +1,68 @@
+name: Manuelle Testbuilds (Android APK / Windows)
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: >-
+          Branch oder Tag, von dem gebaut werden soll (leer = der im
+          "Run workflow"-Dialog ausgewaehlte Branch)
+        required: false
+        type: string
+
+jobs:
+  build-apk:
+    name: Flutter - Android APK bauen
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.ref }}
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      # app/android/ ist nicht eingecheckt (siehe CONTRIBUTING.md,
+      # "Generierte Dateien") - vor dem Build einmalig erzeugen.
+      - run: flutter create . --platforms=android --org de.subsumo
+      - run: flutter pub get
+      - run: flutter build apk --release
+      - uses: actions/upload-artifact@v4
+        with:
+          name: subsumo-android-apk
+          path: app/build/app/outputs/flutter-apk/app-release.apk
+          retention-days: 14
+
+  build-windows:
+    name: Flutter - Windows-Build bauen und zippen
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.ref }}
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      # app/windows/ ist nicht eingecheckt (siehe CONTRIBUTING.md,
+      # "Generierte Dateien") - vor dem Build einmalig erzeugen.
+      - run: flutter create . --platforms=windows --org de.subsumo
+      - run: flutter pub get
+      - run: flutter build windows --release
+      - name: Build-Ordner zippen
+        run: Compress-Archive -Path build\windows\x64\runner\Release\* -DestinationPath subsumo-windows.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: subsumo-windows
+          path: app/subsumo-windows.zip
+          retention-days: 14

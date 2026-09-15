@@ -54,6 +54,31 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
         ("Leistungsstoerungen: Unmoeglichkeit", "Schuldrecht AT, § 275 BGB, § 283 BGB"),
         ("Deliktsrecht: § 823 Abs. 1 BGB", "Schuldrecht BT, Rechtsgutsverletzung, Kausalitaet"),
         ("Eigentumsherausgabe, § 985 BGB", "Sachenrecht, Vindikationslage, EBV §§ 987 ff. BGB"),
+        (
+            "Anfechtung von Willenserklaerungen, §§ 119 ff. BGB",
+            "BGB AT, Inhalts- und Erklaerungsirrtum, Eigenschaftsirrtum § 119 Abs. 2 BGB, "
+            "Anfechtungsfrist § 121 BGB",
+        ),
+        (
+            "AGB-Kontrolle, §§ 305 ff. BGB",
+            "Schuldrecht AT, Einbeziehungskontrolle § 305c BGB, Inhaltskontrolle §§ 307 ff. BGB",
+        ),
+        (
+            "Leistungskondiktion, § 812 Abs. 1 S. 1 Alt. 1 BGB",
+            "Bereicherungsrecht, Rechtsgrundlosigkeit, Entreicherung § 818 Abs. 3 BGB",
+        ),
+        (
+            "Vertreter ohne Vertretungsmacht, §§ 177 ff. BGB",
+            "BGB AT, Genehmigung, Widerrufsrecht des Geschaeftspartners, Haftung § 179 BGB",
+        ),
+        (
+            "Ruecktritt vom gegenseitigen Vertrag, §§ 323, 346 ff. BGB",
+            "Schuldrecht AT, Fristsetzung, Ruecktrittsgruende, Rueckgewaehrschuldverhaeltnis",
+        ),
+        (
+            "Culpa in contrahendo, §§ 280 Abs. 1, 311 Abs. 2, 241 Abs. 2 BGB",
+            "Schuldrecht AT, vorvertragliches Schuldverhaeltnis, Aufklaerungspflichten",
+        ),
     ],
     "strafrecht": [
         ("Diebstahl, § 242 StGB", "Strafrecht BT, Wegnahme, Zueignungsabsicht"),
@@ -75,6 +100,26 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
         (
             "Der Verwaltungsakt, § 35 VwVfG",
             "VerwR AT, Begriffsmerkmale, Nichtigkeit, Rechtswidrigkeit",
+        ),
+        (
+            "Die Verpflichtungsklage, § 42 Abs. 1 Var. 2 VwGO",
+            "VerwR AT, Versagungsgegenklage, Untaetigkeitsklage § 75 VwGO",
+        ),
+        (
+            "Vorlaeufiger Rechtsschutz, §§ 80, 80a VwGO",
+            "VerwR AT, aufschiebende Wirkung, Anordnung/Wiederherstellung",
+        ),
+        (
+            "Art. 3 Abs. 1 GG: Allgemeiner Gleichheitssatz",
+            "Grundrechte, neue Formel, Willkuerverbot",
+        ),
+        (
+            "Art. 14 GG: Eigentumsgarantie",
+            "Grundrechte, Inhalts- und Schrankenbestimmung, Enteignung",
+        ),
+        (
+            "Ermessen und Beurteilungsspielraum, § 40 VwVfG",
+            "VerwR AT, Ermessensfehler, Ermessensreduzierung auf Null",
         ),
     ],
 }
