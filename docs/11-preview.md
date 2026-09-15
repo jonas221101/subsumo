@@ -255,15 +255,18 @@ Login + Review-Persistenz) funktioniert einwandfrei. Die einzigen offenen
 Lücken liegen auf der Paperclip-Plattformseite (Runtime-Services-Start-API
 und Tailscale-Exposure, siehe Abschnitt 6), nicht im Subsumo-Code.
 
-## 8. Android-APK als CI-Artefakt bauen
+## 8. Android-APK und Windows-Build als CI-Artefakte bauen
 
-Für einen Testbuild auf einem echten Android-Gerät gibt es einen manuell
-auslösbaren Workflow (`.github/workflows/android-apk.yml`) — kein Signing,
-keine Play-Store-Anbindung, reiner Debug-Testbuild. iOS ist bewusst
-ausgeklammert (kostenpflichtiger Apple-Developer-Account nötig).
+Für Testbuilds auf einem echten Android-Gerät bzw. unter Windows gibt es
+einen manuell auslösbaren Workflow
+(`.github/workflows/manual-builds.yml`) mit zwei unabhängigen Jobs — kein
+Signing, keine Store-Anbindung, reine Debug-/Testbuilds. iOS und macOS sind
+bewusst ausgeklammert (kostenpflichtiger Apple-Developer-Account nötig).
 
-1. Im Repo auf GitHub zu **Actions → Android APK (manueller Build)**
-   wechseln.
+### Android-APK
+
+1. Im Repo auf GitHub zu **Actions → Manuelle Testbuilds (Android APK /
+   Windows)** wechseln.
 2. **Run workflow** klicken, den gewünschten Branch im Dropdown auswählen
    (Default: `main`) und bestätigen. Der optionale `ref`-Input ist nur nötig,
    um von einem anderen Branch/Tag zu bauen als dem im Dropdown gewählten.
@@ -277,3 +280,23 @@ ausgeklammert (kostenpflichtiger Apple-Developer-Account nötig).
    Der Build ist unsigniert (Debug-Keystore) — das ist für einen lokalen
    Testbuild kein Problem, verhindert aber ein Update über eine signierte
    Store-Version, falls es diese später gibt.
+
+### Windows-Build (optional)
+
+Der Windows-Job (`build-windows`, `runs-on: windows-latest`) läuft im selben
+Workflow, wird aber unabhängig vom Android-Job über denselben **Run
+workflow**-Dialog gestartet — beide Jobs starten bei jedem Lauf gemeinsam.
+Da ein `windows-latest`-Runner mehr CI-Minuten verbraucht als der
+bestehende Ubuntu-Runner, diesen Lauf nur bei tatsächlichem Bedarf an einem
+Windows-Testbuild auslösen.
+
+1. Denselben Workflow wie oben (**Manuelle Testbuilds (Android APK /
+   Windows)**) mit **Run workflow** starten.
+2. Nach Abschluss (ca. 5–10 min) im Job `Flutter - Windows-Build bauen und
+   zippen` unter **Artifacts** das Artefakt `subsumo-windows` herunterladen
+   (ZIP mit dem kompletten Release-Build-Ordner, inkl. `.exe` und
+   benötigter DLLs) — Artefakte sind 14 Tage verfügbar.
+3. ZIP entpacken und die enthaltene `.exe` direkt starten — kein Installer,
+   reiner unsignierter Testbuild. Windows SmartScreen kann bei der ersten
+   Ausführung warnen ("Windows hat den Computer geschützt"); über **Weitere
+   Informationen → Trotzdem ausführen** fortfahren.
