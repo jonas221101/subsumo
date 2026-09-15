@@ -19,6 +19,15 @@ GUELTIGE_ZITATE = [
     "§ 90 Abs. 1 BVerfGG",
     "§ 35 VwVfG",
     "§ 42 Abs. 1 Var. 1 VwGO",
+    # Ausgeschriebenes "Satz" statt "S." (SUB-66)
+    "§ 812 Abs. 1 Satz 1 BGB",
+    "§ 823 Abs. 1 Satz 2 Alt. 1 BGB",
+    # Roemische Absatzkuerzel (SUB-66)
+    "Art. 12 Abs. I GG",
+    "§ 90 Abs. IV BVerfGG",
+    # Kommagetrennte Mehrfachzitate in einem zusammengefassten Zitat (SUB-66)
+    "§§ 305c, 307 BGB",
+    "§§ 166-181, 242 BGB",
 ]
 
 UNGUELTIGE_ZITATE = [
@@ -28,6 +37,12 @@ UNGUELTIGE_ZITATE = [
     ("§ 242 Abs. StGB", "Unerwartetes Element"),
     ("BGB § 242", "Unbekanntes Zitatformat"),
     ("§ BGB", "zu kurz"),
+    # Ausgeschriebenes "Satz" ohne Nummer bleibt ungueltig (SUB-66)
+    ("§ 433 Satz BGB", "Unerwartetes Element"),
+    # Ungueltige roemische Ziffer (SUB-66)
+    ("Art. 12 Abs. IIII GG", "Unerwartetes Element"),
+    # Mehrfachzitat mit einer Nummer ausserhalb des Bereichs (SUB-66)
+    ("§§ 305c, 9999 BGB", "ausserhalb des bekannten Bereichs"),
 ]
 
 

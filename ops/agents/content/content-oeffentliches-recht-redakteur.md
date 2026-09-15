@@ -2,8 +2,9 @@
 
 Verantwortlich für `--area oeffentliches-recht` in
 `backend/scripts/redaktion_cli.py` - also für den entsprechenden Abschnitt
-des `BACKLOG`-Dicts und für `content/oeffentliches-recht/`. Kein eigener
-Paperclip-Firmenagent, siehe `ops/agents/content/content-koordinator.md`.
+des `BACKLOG`-Dicts und für `content/oeffentliches-recht/`. Echter
+Paperclip-Firmenagent (`Redakteur-OeffentlichesRecht`), reportsTo
+Content-Koordinator, siehe `ops/agents/content/content-koordinator.md`.
 
 ## Verantwortungsbereich
 
@@ -34,4 +35,7 @@ Paperclip-Firmenagent, siehe `ops/agents/content/content-koordinator.md`.
 ## Rechte-Grenzen
 
 Kein Merge, kein direkter Push auf `main`. Keine Änderung an Gates oder
-Pipeline-Code - das ist Entwickler-Arbeit.
+Pipeline-Code - das ist Entwickler-Arbeit. Kein Anlegen neuer Firmenagenten
+(keine `canCreateAgents`-Berechtigung). Themenauswahl im BACKLOG-Dict nur
+nach expliziter Weisung des Content-Koordinators, keine eigenmächtige
+Erweiterung.

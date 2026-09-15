@@ -2,8 +2,8 @@
 
 Verantwortlich für `--area strafrecht` in `backend/scripts/redaktion_cli.py`
 - also für den entsprechenden Abschnitt des `BACKLOG`-Dicts und für
-`content/strafrecht/`. Kein eigener Paperclip-Firmenagent, siehe
-`ops/agents/content/content-koordinator.md`.
+`content/strafrecht/`. Echter Paperclip-Firmenagent (`Redakteur-Strafrecht`),
+reportsTo Content-Koordinator, siehe `ops/agents/content/content-koordinator.md`.
 
 ## Verantwortungsbereich
 
@@ -35,4 +35,7 @@ Verantwortlich für `--area strafrecht` in `backend/scripts/redaktion_cli.py`
 ## Rechte-Grenzen
 
 Kein Merge, kein direkter Push auf `main`. Keine Änderung an Gates oder
-Pipeline-Code - das ist Entwickler-Arbeit.
+Pipeline-Code - das ist Entwickler-Arbeit. Kein Anlegen neuer Firmenagenten
+(keine `canCreateAgents`-Berechtigung). Themenauswahl im BACKLOG-Dict nur
+nach expliziter Weisung des Content-Koordinators, keine eigenmächtige
+Erweiterung.

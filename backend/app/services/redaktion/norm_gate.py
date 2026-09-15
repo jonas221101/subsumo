@@ -47,16 +47,26 @@ GESETZE: dict[str, Gesetz] = {
 }
 
 _NUMMER = r"\d+[a-z]?"
-_NUMMER_TOKEN = re.compile(rf"^{_NUMMER}(-{_NUMMER})?$")
-_ZUSATZ_SCHLUESSEL = r"(?:Abs\.|S\.|Nr\.|Var\.|Alt\.)"
-# Zusatzangaben treten immer als Paar aus Schluesselwort + mind. einer Zahl
-# auf (mehrere durch Komma getrennt moeglich), z. B. "Abs. 1, 2 Var. 1". Ein
-# freistehendes "Abs." ohne Zahl oder eine Zahl ohne Schluesselwort davor ist
-# kein gueltiges Zitatformat.
-_ZUSATZ_RE = re.compile(
-    rf"^{_ZUSATZ_SCHLUESSEL} {_NUMMER}(?:,\s*{_NUMMER})*"
-    rf"(?: {_ZUSATZ_SCHLUESSEL} {_NUMMER}(?:,\s*{_NUMMER})*)*$"
+_NUMMER_BEREICH = rf"{_NUMMER}(?:-{_NUMMER})?"
+# Die Paragraphen-/Artikelnummer(n) vor den Zusatzangaben - ein einzelner
+# Bereich ("166-181") oder mehrere kommagetrennte Zitate in einem
+# zusammengefassten Zitat ("305c, 307").
+_HAUPT_NUMMERN_RE = re.compile(
+    rf"^(?P<nummern>{_NUMMER_BEREICH}(?:,\s*{_NUMMER_BEREICH})*)(?:\s+(?P<zusatz>.+))?$"
 )
+
+# Roemische Ziffer (1-3999, Standardschreibweise) - fuer Absatzangaben wie
+# "Abs. I" statt "Abs. 1", beides gebraeuchlich in Gesetzestexten.
+_ROEMISCH = r"(?=[IVXLCDM])M{0,4}(?:CM|CD|D?C{0,3})(?:XC|XL|L?X{0,3})(?:IX|IV|V?I{0,3})"
+_ABS_WERT = rf"(?:{_NUMMER}|{_ROEMISCH})(?:,\s*(?:{_NUMMER}|{_ROEMISCH}))*"
+_ANDERE_WERT = rf"{_NUMMER}(?:,\s*{_NUMMER})*"
+# Zusatzangaben treten immer als Paar aus Schluesselwort + mind. einem Wert
+# auf (mehrere durch Komma getrennt moeglich), z. B. "Abs. 1, 2 Var. 1". Ein
+# freistehendes "Abs." ohne Wert oder ein Wert ohne Schluesselwort davor ist
+# kein gueltiges Zitatformat. "Satz" ist die ausgeschriebene Form von "S." -
+# beide Schreibweisen kommen im Content vor.
+_ZUSATZ_TEIL = rf"(?:Abs\. {_ABS_WERT}|(?:Nr\.|Var\.|Alt\.|S\.|Satz) {_ANDERE_WERT})"
+_ZUSATZ_RE = re.compile(rf"^{_ZUSATZ_TEIL}(?: {_ZUSATZ_TEIL})*$")
 
 
 @dataclass
@@ -71,8 +81,9 @@ def pruefe_zitat(zitat: str) -> NormPruefung:
 
     Drei Dinge werden gecheckt: bekanntes Gesetzeskuerzel, plausible
     Paragraphen-/Artikelnummer, und dass die Zitierweise (§ vs. Art.) zum
-    Gesetz passt. Was dazwischen steht (Abs., S., Nr., Var., Zahlen) wird nur
-    grob auf erwartete Bestandteile geprueft, nicht inhaltlich verifiziert.
+    Gesetz passt. Was dazwischen steht (Abs., S./Satz, Nr., Var., Zahlen
+    arabisch oder bei Abs. auch roemisch, kommagetrennte Mehrfachzitate) wird
+    nur grob auf erwartete Bestandteile geprueft, nicht inhaltlich verifiziert.
     """
     text = (zitat or "").strip()
     tokens = text.split()
@@ -106,22 +117,25 @@ def pruefe_zitat(zitat: str) -> NormPruefung:
             text, False, f"'{kuerzel}' wird mit 'Art.' zitiert, nicht '{marker}' ('{text}')"
         )
 
-    if not rest or not _NUMMER_TOKEN.match(rest[0]):
+    haupt_match = _HAUPT_NUMMERN_RE.match(" ".join(rest))
+    if not haupt_match:
         return NormPruefung(
             text, False, f"Fehlende oder ungueltige Paragraphen-/Artikelnummer in '{text}'"
         )
 
-    for teil in rest[0].split("-"):
-        nummer = int(re.match(r"\d+", teil).group())
-        if not (gesetz.min_nummer <= nummer <= gesetz.max_nummer):
-            return NormPruefung(
-                text,
-                False,
-                f"{kuerzel} {teil}: ausserhalb des bekannten Bereichs "
-                f"({gesetz.min_nummer}-{gesetz.max_nummer}) in '{text}'",
-            )
+    for nummer_teil in haupt_match.group("nummern").split(","):
+        nummer_teil = nummer_teil.strip()
+        for teil in nummer_teil.split("-"):
+            nummer = int(re.match(r"\d+", teil).group())
+            if not (gesetz.min_nummer <= nummer <= gesetz.max_nummer):
+                return NormPruefung(
+                    text,
+                    False,
+                    f"{kuerzel} {teil}: ausserhalb des bekannten Bereichs "
+                    f"({gesetz.min_nummer}-{gesetz.max_nummer}) in '{text}'",
+                )
 
-    zusatz = " ".join(rest[1:])
+    zusatz = haupt_match.group("zusatz") or ""
     if zusatz and not _ZUSATZ_RE.match(zusatz):
         return NormPruefung(text, False, f"Unerwartetes Element '{zusatz}' in Zitat '{text}'")
 
