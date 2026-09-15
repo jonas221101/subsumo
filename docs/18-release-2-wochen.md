@@ -199,3 +199,31 @@ Als Interaktion an [SUB-39](/SUB/issues/SUB-39) gestellt:
 4. **Reichweite für Tag 1** — gibt es Zugang zu einer Fachschaft, einem
    Jura-Kanal oder einer Lerngruppe? Bestimmt, ob der Release 10 oder 300
    Menschen erreicht.
+
+---
+
+## 9. Wer macht was — Gates auf Aufgaben abgebildet
+
+Am 15.09.2026 auf Zuruf des Nutzers („go ahead") geschnitten und zugewiesen.
+Jede Zeile hat genau einen Verantwortlichen; ohne Zuweisung ist ein Gate nur
+eine Absichtserklärung.
+
+| Gate | Aufgabe | Verantwortlich | Liefert |
+|---|---|---|---|
+| **G2** Kaufstrecke (23.09.) | [SUB-83](/SUB/issues/SUB-83) | Software-Planner → Developer | Abnahmekriterien + Zerlegung Stripe-Checkout, Entitlement, Free-Tier, Kündigung |
+| **G4** Konto/DSGVO (28.09.) | [SUB-84](/SUB/issues/SUB-84) | Backend-Developer | Export (Art. 15) und Löschung (Art. 17) mit Tests |
+| **G4** Rechtstexte (28.09.) | [SUB-85](/SUB/issues/SUB-85) | Marketing-Planner | Impressum, AGB, DSE, Widerruf, Cookie-Hinweis |
+| **G4/G5** Betrieb (24.–29.09.) | [SUB-86](/SUB/issues/SUB-86) | Lead-Developer | Deploy-Runbook, TLS, Backup **mit geprobtem Restore**, Monitoring |
+| **G3** Content-Freeze (25.09.) | [SUB-87](/SUB/issues/SUB-87) | Content-Koordinator | 15 P1-Themen → 180 Karten, geprüft und gemergt |
+| **G5** Launch (29.09.) | [SUB-88](/SUB/issues/SUB-88) | Marketing-Planner | Landing Page, Preisseite, Launch-Text |
+| **G1** Konten (18.09.) | — | **Nutzer** | Rechtsträger, Zahlungskonto, Domain — siehe Abschnitt 8 |
+
+**G1 hat bewusst keinen Agenten.** Rechtsträger, Zahlungskonto-Verifizierung
+und Domainbesitz sind Handlungen, die eine reale Person mit einem Ausweis
+vornimmt. Kein Mehraufwand auf Projektseite beschleunigt das, und der Termin
+18.09. steht genau deshalb so früh.
+
+Nicht neu geschnitten, weil bereits laufend: die Content-Produktion selbst
+([SUB-51](/SUB/issues/SUB-51) mit SUB-54/55/77) und die GTM-Spur
+([SUB-46](/SUB/issues/SUB-46)). SUB-87 und SUB-88 priorisieren diese Stränge
+auf den Releasetermin um, statt sie zu duplizieren.
