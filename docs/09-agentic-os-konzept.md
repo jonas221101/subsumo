@@ -105,11 +105,15 @@ Leerlauf erzeugt keine absichtlichen Endlosschleifen.
 | Release-Service | Freigaberegeln technisch durchsetzen | Geprüfter Merge und ggf. Deployment |
 | Redaktion | Bestehender Collector und Fachreviewer | Validierte Inhalte mit Herkunft |
 | Operations, später | Monitoring, Diagnose, geprüfte Runbooks | Nachvollziehbare Betriebsmaßnahme |
-| Marketing, später | Zielgruppenrecherche, Entwürfe, Kampagnenvorschläge | Geprüftes Asset bzw. geplanter Beitrag |
+| Marketing | Zielgruppenrecherche, Entwürfe, Kampagnenvorschläge | Geprüftes Asset bzw. geplanter Beitrag |
 
 Start: Planner, Developer, Reviewer; Release als deterministischer Dienst.
-Backend- und Flutter-Spezialisierung können anfangs Profile derselben Developer-Rolle
-sein. Ein großes Management-Organigramm ist für dieses Projekt noch nicht nötig.
+Backend- und Flutter-Spezialisierung waren anfangs Profile derselben
+Developer-Rolle; seit SUB-64 sind sie eigene Firmenagenten (Backend-Developer,
+Frontend-Developer, UI-Developer), ebenso die Planner-Aufteilung in
+Software-Planner und Marketing-Planner - siehe `ops/agents/`. Ein großes
+Management-Organigramm ist für dieses Projekt weiterhin nicht nötig; die
+Aufteilung folgt konkretem Bedarf, nicht Vorratshaltung.
 
 ## Agentenkommunikation — verbindlicher Bestandteil des Piloten
 
