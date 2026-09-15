@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../api.dart';
 import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
@@ -31,6 +32,16 @@ class _GutachtenPageState extends State<GutachtenPage> {
   Map<String, dynamic>? _result;
   bool _busy = false;
 
+  /// Free-Limit auf den Fall selbst erreicht (`GET /cases/{slug}`, siehe
+  /// docs/20 B2) - blockiert die ganze Seite, es gibt ohne Fall nichts zu
+  /// bearbeiten.
+  String? _caseUpgradeMessage;
+
+  /// Wochenlimit fuer die Strukturanalyse erreicht (`POST /gutachten/analyze`,
+  /// siehe docs/20 B2) - blockiert nur das Feedback, nicht das Schreiben oder
+  /// die Abgabe.
+  String? _analysisUpgradeMessage;
+
   @override
   void initState() {
     super.initState();
@@ -50,6 +61,12 @@ class _GutachtenPageState extends State<GutachtenPage> {
     try {
       final data = await api.caseDetail(widget.caseSlug);
       if (mounted) setState(() => _case = data);
+    } on ApiException catch (e) {
+      if (mounted && e.upgradeRequired) {
+        setState(() => _caseUpgradeMessage = e.message);
+      }
+      // Sonst (kein Free-Limit): der Fall kann offline aus dem lokalen
+      // Cache kommen (M1).
     } on Exception {
       // Der Fall kann offline aus dem lokalen Cache kommen (M1).
     }
@@ -71,7 +88,21 @@ class _GutachtenPageState extends State<GutachtenPage> {
     try {
       final report =
           await AppScope.of(context).api.analyze(text, caseSlug: widget.caseSlug);
-      if (mounted) setState(() => _structure = report);
+      if (mounted) {
+        setState(() {
+          _structure = report;
+          _analysisUpgradeMessage = null;
+        });
+      }
+    } on ApiException catch (e) {
+      if (mounted && e.upgradeRequired) {
+        setState(() {
+          _structure = null;
+          _analysisUpgradeMessage = e.message;
+        });
+      }
+      // Sonst (kein Free-Limit): Strukturfeedback ist eine Zugabe - ein
+      // Fehler darf das Schreiben niemals unterbrechen.
     } on Exception {
       // Strukturfeedback ist eine Zugabe - ein Fehler darf das Schreiben
       // niemals unterbrechen.
@@ -99,6 +130,25 @@ class _GutachtenPageState extends State<GutachtenPage> {
 
   @override
   Widget build(BuildContext context) {
+    final caseUpgradeMessage = _caseUpgradeMessage;
+    if (caseUpgradeMessage != null) {
+      return Scaffold(
+        appBar: AppBar(title: Text(widget.caseTitle)),
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(Spacing.xl),
+            child: SubsumoCard(
+              child: SubsumoFeedbackBlock(
+                message: 'Dieser Fall ist mit Pro verfuegbar.',
+                detail: caseUpgradeMessage,
+                severity: FeedbackSeverity.hint,
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
     return Scaffold(
       appBar: AppBar(title: Text(widget.caseTitle)),
       body: ReadableWidth(
@@ -181,6 +231,16 @@ class _GutachtenPageState extends State<GutachtenPage> {
 
   Widget _buildFeedback() {
     if (_result != null) return _ResultView(result: _result!);
+    final analysisUpgradeMessage = _analysisUpgradeMessage;
+    if (analysisUpgradeMessage != null) {
+      return SubsumoCard(
+        child: SubsumoFeedbackBlock(
+          message: 'Strukturfeedback ist diese Woche mit Free aufgebraucht.',
+          detail: analysisUpgradeMessage,
+          severity: FeedbackSeverity.hint,
+        ),
+      );
+    }
     final structure = _structure;
     if (structure == null) {
       return const SubsumoCard(
