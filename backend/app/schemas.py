@@ -29,9 +29,15 @@ class UserOut(BaseModel):
     display_name: str
     exam_date: datetime | None = None
     daily_minutes: int
+    pro_active: bool = False
+    pro_until: datetime | None = None
+    cancel_at_period_end: bool = False
 
 
 class UserUpdateIn(BaseModel):
+    # Entitlement-Felder (pro_until, stripe_*, cancel_at_period_end) sind hier
+    # bewusst nicht erlaubt - die werden ausschliesslich vom Stripe-Webhook (B4)
+    # gesetzt, siehe docs/20-release-g2-bezahlstrecke.md Abschnitt 4 B1.
     display_name: str | None = None
     exam_date: date | None = None
     daily_minutes: int | None = Field(default=None, ge=15, le=600)

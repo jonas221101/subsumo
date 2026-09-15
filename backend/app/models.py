@@ -65,7 +65,26 @@ class User(Base):
     daily_minutes: Mapped[int] = mapped_column(Integer, default=90)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
+    # Entitlement (Release G2, siehe docs/20-release-g2-bezahlstrecke.md Abschnitt 4 B1).
+    # Ausschliesslich ueber den Stripe-Webhook (B4) geschrieben, nie per Client-Eingabe.
+    stripe_customer_id: Mapped[str | None] = mapped_column(String(120), default=None)
+    stripe_subscription_id: Mapped[str | None] = mapped_column(String(120), default=None)
+    pro_until: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), default=None)
+    cancel_at_period_end: Mapped[bool] = mapped_column(default=False)
+
     cards: Mapped[list[UserCard]] = relationship(back_populates="user")
+
+    def has_pro_access(self, now: datetime | None = None) -> bool:
+        """Rein zeitbasiert - kein Notausgang-Schalter, keine Client-Eingabe."""
+        if self.pro_until is None:
+            return False
+        reference = now if now is not None else utcnow()
+        pro_until = self.pro_until
+        # SQLite gibt DateTime(timezone=True) als naiven Wert zurueck - ohne die
+        # Normalisierung schlaegt der Vergleich mit dem tz-aware "reference" fehl.
+        if pro_until.tzinfo is None:
+            pro_until = pro_until.replace(tzinfo=UTC)
+        return pro_until > reference
 
 
 class Topic(Base):
