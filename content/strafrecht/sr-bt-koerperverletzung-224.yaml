@@ -1,0 +1,279 @@
+topic:
+  slug: sr-bt-koerperverletzung-224
+  area: strafrecht
+  title: Koerperverletzungsdelikte, §§ 223, 224 StGB
+  parent: sr-at
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-15'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: sr-kv-koerperliche-misshandlung
+  type: definition
+  front: 'Definiere: koerperliche Misshandlung, § 223 Abs. 1 StGB'
+  back: Koerperliche Misshandlung ist jede uebele, unangemessene Behandlung, die das
+    koerperliche Wohlbefinden oder die koerperliche Unversehrtheit des Opfers nicht
+    nur unerheblich beeintraechtigt. Erfasst sind sowohl Substanzverletzungen (z.
+    B. Schnitt- oder Schuerfwunden) als auch reine Schmerz- oder Beeintraechtigungszufuegungen
+    ohne aeusserlich sichtbare Verletzung, sofern die Erheblichkeitsschwelle ueberschritten
+    ist.
+  norms:
+  - § 223 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-kv-gesundheitsschaedigung
+  type: definition
+  front: 'Definiere: Gesundheitsschaedigung, § 223 Abs. 1 StGB'
+  back: Gesundheitsschaedigung ist das Hervorrufen oder Steigern eines pathologischen,
+    d. h. vom Normalzustand der koerperlichen Funktionen nachteilig abweichenden Zustands.
+    Die beiden Tatbestandsalternativen koerperliche Misshandlung und Gesundheitsschaedigung
+    ueberschneiden sich in der Praxis haeufig (z. B. bei einer Prellung), stehen aber
+    selbststaendig nebeneinander - schon eine Alternative genuegt fuer den objektiven
+    Tatbestand.
+  norms:
+  - § 223 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-kv-224-qualifikationen-ueberblick
+  type: norm
+  front: Welche fuenf Qualifikationsmerkmale nennt § 224 Abs. 1 StGB?
+  back: '§ 224 Abs. 1 StGB qualifiziert die einfache Koerperverletzung des § 223 StGB
+    in fuenf Alternativen: (1) Beibringung von Gift oder anderen gesundheitsschaedlichen
+    Stoffen, (2) mittels einer Waffe oder eines anderen gefaehrlichen Werkzeugs, (3)
+    mittels eines hinterlistigen Ueberfalls, (4) mit einem anderen Beteiligten gemeinschaftlich,
+    (5) mittels einer das Leben gefaehrdenden Behandlung. Bereits das Vorliegen einer
+    einzigen Alternative genuegt fuer die Qualifikation.'
+  norms:
+  - § 224 Abs. 1 StGB
+  - § 224 Abs. 1 Nr. 1 StGB
+  - § 224 Abs. 1 Nr. 2 StGB
+  - § 224 Abs. 1 Nr. 3 StGB
+  - § 224 Abs. 1 Nr. 4 StGB
+  - § 224 Abs. 1 Nr. 5 StGB
+  quellen:
+  - § 224 StGB, amtlicher Wortlaut
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-kv-gefaehrliches-werkzeug
+  type: definition
+  front: 'Definiere: gefaehrliches Werkzeug, § 224 Abs. 1 Nr. 2 StGB'
+  back: Ein gefaehrliches Werkzeug ist jeder vom Koerper des Taeters verschiedene,
+    bewegliche Gegenstand, der nach seiner objektiven Beschaffenheit und der konkreten
+    Art seiner Verwendung im Einzelfall geeignet ist, erhebliche Verletzungen herbeizufuehren.
+    Massgeblich ist die tatsaechliche Verwendung im Einzelfall, nicht eine abstrakte
+    Gefaehrlichkeit des Gegenstands an sich - ein an sich harmloser Gegenstand kann
+    durch die Art seines Einsatzes zum gefaehrlichen Werkzeug werden.
+  norms:
+  - § 224 Abs. 1 Nr. 2 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-kv-abgrenzung-werkzeug-koerperteil
+  type: streitstand
+  front: 'Streitstand: Ist ein Koerperteil (z. B. ein beschuhter Fuss) ein ''gefaehrliches
+    Werkzeug'' i.S.d. § 224 Abs. 1 Nr. 2 StGB?'
+  back: 'Problem: Nr. 2 erfasst nur ein "Werkzeug", waehrend blosse
+
+    Koerperkraft (Faustschlag, Fusstritt) grundsaetzlich nur den
+
+    Grundtatbestand des § 223 StGB traegt. Fraglich ist, ob und wann ein
+
+    Fusstritt dennoch unter Nr. 2 faellt.
+
+
+    Einigkeit besteht, dass der blosse Koerper des Taeters (Faust, Fuss)
+
+    selbst kein Werkzeug ist: Werkzeug muss ein vom Koerper verschiedener
+
+    Gegenstand sein - sonst wuerde Nr. 2 neben § 223 StGB praktisch
+
+    bedeutungslos, weil jede kraeftige Schlag- oder Trittbewegung erfasst
+
+    waere.
+
+
+    Bei einem beschuhten Fuss ist nicht der Fuss, sondern der Schuh der
+
+    moegliche Gegenstand i.S.d. Nr. 2. Nach der Rechtsprechung kommt es auf
+
+    die konkrete Beschaffenheit des Schuhwerks und die Art der Verwendung
+
+    an: Ein fester, schwerer Stiefel, mit dem kraeftig gegen empfindliche
+
+    Koerperregionen getreten wird, kann als gefaehrliches Werkzeug gelten;
+
+    ein leichter Turnschuh in vergleichbarer Situation regelmaessig nicht.
+
+
+    Konsequenz: Die pauschale Aussage "ein Fusstritt ist immer ein
+
+    gefaehrliches Werkzeug" ist falsch - erforderlich ist stets eine
+
+    Einzelfallpruefung von Schuhbeschaffenheit, Tretstaerke und getroffener
+
+    Koerperregion.
+
+    '
+  norms:
+  - § 224 Abs. 1 Nr. 2 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-kv-gemeinschaftlich
+  type: definition
+  front: 'Definiere: ''mit einem anderen Beteiligten gemeinschaftlich'', § 224 Abs.
+    1 Nr. 4 StGB'
+  back: Gemeinschaftlich i.S.d. Nr. 4 handelt, wer die Koerperverletzung zusammen
+    mit mindestens einem weiteren Beteiligten am Tatort verwirklicht. Erforderlich
+    ist ein einverstaendliches Zusammenwirken mehrerer Personen bei der Tatausfuehrung,
+    durch das sich die Verteidigungsmoeglichkeiten des Opfers gegenueber einem Einzeltaeter
+    verschlechtern. Nicht erforderlich ist, dass jeder Beteiligte selbst koerperlich
+    auf das Opfer einwirkt oder Mittaeter i.S.d. § 25 Abs. 2 StGB ist - auch ein am
+    Tatort anwesender, unterstuetzend mitwirkender Gehilfe genuegt als "anderer Beteiligter".
+  norms:
+  - § 224 Abs. 1 Nr. 4 StGB
+  - § 25 Abs. 2 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-kv-lebensgefaehrdende-behandlung
+  type: definition
+  front: 'Definiere: das Leben gefaehrdende Behandlung, § 224 Abs. 1 Nr. 5 StGB'
+  back: Eine das Leben gefaehrdende Behandlung liegt vor, wenn die konkrete Art der
+    Tatausfuehrung nach den Umstaenden des Einzelfalls generell geeignet ist, das
+    Leben des Opfers zu gefaehrden - eine tatsaechliche Lebensgefahr oder gar Todesfolge
+    ist nicht erforderlich. Beispiele sind Wuergen bis zur Atemnot, ein Sturz aus
+    grosser Hoehe herbeifuehren oder Schlaege gegen den Kopf mit erheblichem Krafteinsatz.
+  norms:
+  - § 224 Abs. 1 Nr. 5 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-224
+  title: Gefaehrliche Koerperverletzung, §§ 223 Abs. 1, 224 Abs. 1 StGB
+  norms:
+  - § 223 Abs. 1 StGB
+  - § 224 Abs. 1 StGB
+  quellen:
+  - §§ 223, 224 StGB, amtlicher Wortlaut
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Grundtatbestand, § 223 Abs. 1 StGB
+      children:
+      - label: a) Koerperliche Misshandlung und/oder Gesundheitsschaedigung
+      - label: b) Kausalitaet und objektive Zurechnung
+    - label: 2. Qualifikation, § 224 Abs. 1 StGB
+      children:
+      - label: 'a) Nr. 1: Gift oder andere gesundheitsschaedliche Stoffe'
+      - label: 'b) Nr. 2: Waffe oder anderes gefaehrliches Werkzeug'
+        hinweis: Beim beschuhten Fuss kommt es auf Schuhbeschaffenheit und Tretstaerke
+          im Einzelfall an.
+      - label: 'c) Nr. 3: hinterlistiger Ueberfall'
+      - label: 'd) Nr. 4: mit einem anderen Beteiligten gemeinschaftlich'
+      - label: 'e) Nr. 5: das Leben gefaehrdende Behandlung'
+    - label: '3. Subjektiver Tatbestand: Vorsatz bzgl. Grundtatbestand und mind. einem
+        Qualifikationsmerkmal, § 15 StGB'
+  - label: II. Rechtswidrigkeit (insb. § 32 StGB, Einwilligung, § 228 StGB)
+  - label: III. Schuld
+  - label: IV. Strafantrag/Konkurrenzen
+faelle:
+- slug: sr-fall-stiefeltritt-zu-zweit
+  title: Der Stiefeltritt zu zweit
+  difficulty: 3
+  minutes: 55
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: A und B hatten sich zuvor verabredet, gemeinsam gegen O vorzugehen. Als O
+    zu Boden geht, traegt A schwere Wanderstiefel mit fester Profilsohle und tritt
+    mehrfach kraeftig gegen den Rumpf des O, waehrend B gleichzeitig neben A steht,
+    auf O einschlaegt und so verhindert, dass O sich aufrichten oder fliehen kann.
+    O erleidet mehrere schmerzhafte Rippenprellungen.
+  question: Hat sich A wegen gefaehrlicher Koerperverletzung gemaess §§ 223 Abs. 1,
+    224 Abs. 1 Nr. 2, Nr. 4 StGB strafbar gemacht?
+  steps:
+  - prompt: Formuliere den Obersatz.
+    erwartung: A koennte sich durch die Tritte gegen O wegen gefaehrlicher Koerperverletzung
+      gemaess §§ 223 Abs. 1, 224 Abs. 1 Nr. 2, Nr. 4 StGB strafbar gemacht haben.
+  - prompt: Liegt der objektive Tatbestand des § 223 Abs. 1 StGB vor?
+    erwartung: Ja - die Rippenprellungen sind sowohl koerperliche Misshandlung als
+      auch Gesundheitsschaedigung.
+  - prompt: Sind die schweren Wanderstiefel ein gefaehrliches Werkzeug i.S.d. § 224
+      Abs. 1 Nr. 2 StGB?
+    erwartung: Ja - nicht der Fuss, sondern der feste Stiefel mit fester Sohle ist
+      der vom Koerper verschiedene Gegenstand; angesichts der kraeftigen Tritte gegen
+      den Rumpf war er nach Beschaffenheit und Verwendung geeignet, erhebliche Verletzungen
+      herbeizufuehren.
+  - prompt: Handelte A 'mit einem anderen Beteiligten gemeinschaftlich' i.S.d. § 224
+      Abs. 1 Nr. 4 StGB?
+    erwartung: Ja - B wirkte verabredet und am Tatort zusammen mit A auf O ein und
+      verschlechterte durch sein Einschlagen zusaetzlich die Verteidigungsmoeglichkeiten
+      des O; ein voller § 25 Abs. 2 StGB-Mittaeteranteil ist dafuer nicht erforderlich.
+  - prompt: Liegt Vorsatz bzgl. Grundtatbestand und Qualifikationsmerkmalen vor?
+    erwartung: Ja - A handelte bewusst und gewollt sowohl hinsichtlich der Verletzung
+      als auch hinsichtlich des Einsatzes der Stiefel und des gemeinsamen Vorgehens
+      mit B.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Obersatz mit §§ 223 Abs. 1, 224 Abs. 1 StGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 223 Abs. 1 StGB
+      - § 224 Abs. 1 StGB
+      keywords:
+      - '223'
+      - '224'
+    - id: p2
+      label: Koerperliche Misshandlung/Gesundheitsschaedigung bejaht
+      weight: 1.5
+      required: false
+      keywords:
+      - koerperliche Misshandlung
+      - Gesundheitsschaedigung
+    - id: p3
+      label: Gefaehrliches Werkzeug (Stiefel, nicht der Fuss) begruendet subsumiert
+      weight: 3.0
+      required: true
+      norms:
+      - § 224 Abs. 1 Nr. 2 StGB
+      keywords:
+      - gefaehrliches Werkzeug
+      - Stiefel
+      - Werkzeug
+    - id: p4
+      label: Gemeinschaftliches Handeln mit B i.S.d. Nr. 4 begruendet, ohne volle
+        Mittaeterschaft zu verlangen
+      weight: 3.0
+      required: true
+      norms:
+      - § 224 Abs. 1 Nr. 4 StGB
+      keywords:
+      - gemeinschaftlich
+      - Beteiligter
+    - id: p5
+      label: Vorsatz bzgl. Grundtatbestand und Qualifikationsmerkmalen erwaehnt
+      weight: 1.0
+      required: false
+      norms:
+      - § 15 StGB
+      keywords:
+      - Vorsatz
+    - id: p6
+      label: 'Ergebnis: A hat sich wegen gefaehrlicher Koerperverletzung strafbar
+        gemacht'
+      weight: 1.0
+      required: false
+      keywords:
+      - strafbar gemacht
+      - gefaehrliche Koerperverletzung

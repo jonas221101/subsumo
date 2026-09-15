@@ -1,0 +1,253 @@
+topic:
+  slug: sr-bt-betrug
+  area: strafrecht
+  title: Betrug, § 263 StGB
+  parent: sr-at
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-15'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: sr-betrug-grundtatbestand
+  type: definition
+  front: 'Definiere: Betrug, Grundtatbestand § 263 Abs. 1 StGB'
+  back: 'Betrug begeht, wer in der Absicht, sich oder einem Dritten einen rechtswidrigen
+    Vermoegensvorteil zu verschaffen, das Vermoegen eines anderen dadurch beschaedigt,
+    dass er durch Vorspiegelung falscher oder durch Entstellung oder Unterdrueckung
+    wahrer Tatsachen einen Irrtum erregt oder unterhaelt. Die objektiven Merkmale
+    muessen sich in einer Kausalkette aneinanderreihen: Taeuschung fuehrt zu Irrtum,
+    Irrtum fuehrt zu Vermoegensverfuegung, Verfuegung fuehrt zu Vermoegensschaden.'
+  norms:
+  - § 263 Abs. 1 StGB
+  quellen:
+  - § 263 StGB, amtlicher Wortlaut
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-betrug-taeuschung
+  type: definition
+  front: 'Definiere: Taeuschung ueber Tatsachen, § 263 Abs. 1 StGB'
+  back: Taeuschung ist jedes Verhalten, das auf die Vorstellung eines anderen einwirkt,
+    um bei ihm eine Fehlvorstellung ueber Tatsachen hervorzurufen oder zu bestaetigen.
+    Tatsachen sind dem Beweis zugaengliche, gegenwaertige oder vergangene Umstaende
+    der Aussen- oder Innenwelt - reine Werturteile und Prognosen ohne Tatsachenkern
+    genuegen nicht. Die Taeuschung kann ausdruecklich (durch Erklaerung) oder konkludent
+    (durch schluessiges Verhalten, z. B. beim Betreten eines Geschaefts als zahlungsfaehiger
+    und -williger Kunde) erfolgen.
+  norms:
+  - § 263 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-betrug-irrtum
+  type: definition
+  front: 'Definiere: Irrtum i.S.d. § 263 Abs. 1 StGB'
+  back: Irrtum ist jede unrichtige, positive Vorstellung des Getaeuschten ueber Tatsachen,
+    die von der Wirklichkeit abweicht. Blosse Unkenntnis oder Zweifel genuegen nicht
+    - erforderlich ist eine tatsaechliche Fehlvorstellung. Der Irrtum muss durch die
+    Taeuschung hervorgerufen oder unterhalten worden sein (Kausalitaet); ist der Getaeuschte
+    bereits vorher ueberzeugt oder gleichgueltig, fehlt es am Irrtum.
+  norms:
+  - § 263 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-betrug-vermoegensverfuegung
+  type: definition
+  front: 'Definiere: Vermoegensverfuegung, § 263 Abs. 1 StGB (ungeschriebenes Tatbestandsmerkmal)'
+  back: 'Vermoegensverfuegung ist jedes Handeln, Dulden oder Unterlassen des Getaeuschten,
+    das sich unmittelbar vermoegensmindernd auswirkt. Sie grenzt den Betrug (Selbstschaedigungsdelikt)
+    vom Diebstahl (Fremdschaedigungsdelikt) ab: Beim Betrug wirkt das Opfer selbst
+    an der eigenen Vermoegensminderung mit. Erforderlich ist Unmittelbarkeit - zwischen
+    Verfuegung und Vermoegensminderung darf keine weitere, eigenstaendige Zwischenhandlung
+    noetig sein.'
+  norms:
+  - § 263 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-betrug-vermoegensschaden
+  type: definition
+  front: 'Definiere: Vermoegensschaden, § 263 Abs. 1 StGB (Prinzip der Gesamtsaldierung)'
+  back: 'Nach dem wirtschaftlichen Vermoegensbegriff wird der Wert des Vermoegens
+    vor und nach der Verfuegung im Wege der Gesamtsaldierung verglichen: Ein Schaden
+    liegt vor, wenn der Getaeuschte durch die Verfuegung wirtschaftlich schlechter
+    steht als zuvor. Erhaelt er eine gleichwertige Gegenleistung, entfaellt der Schaden;
+    bei einem objektiv minderwertigen oder fuer seine Zwecke unbrauchbaren Gegenstand
+    kann trotz formal aequivalenter Gegenleistung ein individueller Schadenseinschlag
+    vorliegen.'
+  norms:
+  - § 263 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-betrug-eingehungsbetrug
+  type: definition
+  front: 'Definiere: Eingehungsbetrug'
+  back: 'Beim Eingehungsbetrug liegt der Vermoegensschaden bereits im Vertragsschluss
+    selbst, nicht erst in dessen Erfuellung: Weicht der Wert der vertraglich geschuldeten
+    Gegenleistung des Taeuschenden schon im Zeitpunkt des Vertragsschlusses zu Lasten
+    des Getaeuschten vom Wert der eigenen Leistung ab, ist bereits durch den Vertragsschluss
+    eine schadensgleiche Vermoegensgefaehrdung und damit ein vollendeter Schaden eingetreten
+    - unabhaengig davon, ob spaeter tatsaechlich erfuellt wird.'
+  norms:
+  - § 263 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-betrug-bereicherungsabsicht
+  type: definition
+  front: 'Definiere: Absicht stoffgleicher, rechtswidriger Bereicherung, § 263 Abs.
+    1 StGB'
+  back: 'Der Taeter muss beabsichtigen, sich oder einem Dritten einen Vermoegensvorteil
+    zu verschaffen, der stoffgleich mit dem Vermoegensschaden des Opfers ist - der
+    erstrebte Vorteil muss also die Kehrseite des Schadens sein und unmittelbar aus
+    derselben Verfuegung stammen. Die erstrebte Bereicherung muss zudem rechtswidrig
+    sein: Hat der Taeter einen faelligen und einredefreien Anspruch auf den erlangten
+    Vorteil, entfaellt die Rechtswidrigkeit.'
+  norms:
+  - § 263 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-betrug-besonders-schwerer-fall
+  type: norm
+  front: Was regelt § 263 Abs. 3 StGB?
+  back: § 263 Abs. 3 StGB enthaelt Regelbeispiele fuer einen besonders schweren Fall
+    des Betrugs mit erhoehtem Strafrahmen (Freiheitsstrafe von sechs Monaten bis zehn
+    Jahren), etwa bei gewerbsmaessiger Begehung, Herbeifuehrung eines Vermoegensverlusts
+    grossen Ausmasses oder Ausnutzung einer Amtstraeger- oder Vertrauensstellung -
+    ohne den Tatbestand des § 263 Abs. 1 StGB selbst zu aendern.
+  norms:
+  - § 263 Abs. 3 StGB
+  quellen:
+  - § 263 StGB, amtlicher Wortlaut
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-263
+  title: Betrug, § 263 Abs. 1 StGB
+  norms:
+  - § 263 Abs. 1 StGB
+  quellen:
+  - § 263 StGB, amtlicher Wortlaut
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: a) Taeuschung ueber Tatsachen
+      - label: b) dadurch (Kausalitaet) Irrtum
+      - label: c) dadurch (Kausalitaet) Vermoegensverfuegung
+      - label: d) dadurch (Kausalitaet) Vermoegensschaden (Gesamtsaldierung)
+        hinweis: Bei Vertragsschluessen ggf. bereits Eingehungsbetrug pruefen.
+    - label: 2. Subjektiver Tatbestand
+      children:
+      - label: a) Vorsatz bzgl. aller objektiven Tatbestandsmerkmale, § 15 StGB
+      - label: b) Absicht stoffgleicher, rechtswidriger Bereicherung
+  - label: II. Rechtswidrigkeit
+  - label: III. Schuld
+  - label: IV. Besonders schwerer Fall, § 263 Abs. 3 StGB
+    hinweis: Nur pruefen, wenn der Sachverhalt dazu Anlass gibt.
+faelle:
+- slug: sr-fall-gebrauchter-laptop
+  title: Der gebrauchte Laptop
+  difficulty: 3
+  minutes: 50
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: A bietet auf einem Online-Marktplatz einen gebrauchten Laptop zum Festpreis
+    von 400 Euro an. In der Anzeige schreibt er wahrheitswidrig "Display technisch
+    einwandfrei, keine Schaeden". Tatsaechlich hat das Display einen deutlichen Sprung,
+    den A vor dem Fotografieren mit einer Displayfolie kaschiert hat. K liest die
+    Anzeige, vertraut der Angabe und ueberweist A vorab 400 Euro. A verschickt daraufhin
+    den Laptop. Als K das Geraet auspackt, bemerkt er den Sprung im Display; eine
+    Reparatur wuerde 150 Euro kosten.
+  question: Hat sich A gegenueber K wegen Betrugs gemaess § 263 Abs. 1 StGB strafbar
+    gemacht?
+  steps:
+  - prompt: Formuliere den Obersatz.
+    erwartung: A koennte sich durch die Anzeige und Entgegennahme der Zahlung wegen
+      Betrugs gemaess § 263 Abs. 1 StGB zu Lasten des K strafbar gemacht haben.
+  - prompt: Liegt eine Taeuschung ueber Tatsachen vor?
+    erwartung: Ja - die Behauptung 'Display technisch einwandfrei, keine Schaeden'
+      ist eine ausdrueckliche Taeuschung ueber eine dem Beweis zugaengliche Tatsache,
+      den tatsaechlichen Zustand des Displays.
+  - prompt: Ist bei K ein Irrtum entstanden und hat dieser zu einer Vermoegensverfuegung
+      gefuehrt?
+    erwartung: Ja - K ging faelschlich von einem unbeschaedigten Display aus und ueberwies
+      deshalb die 400 Euro; die Ueberweisung ist eine unmittelbar vermoegensmindernde
+      Vermoegensverfuegung.
+  - prompt: Liegt ein Vermoegensschaden vor, obwohl K einen funktionierenden Laptop
+      erhalten hat?
+    erwartung: Ja. Nach dem Prinzip der Gesamtsaldierung ist der Wert des tatsaechlich
+      gelieferten, beschaedigten Laptops geringer als der gezahlte Kaufpreis - der
+      objektive Minderwert entspricht in etwa den 150 Euro Reparaturkosten.
+  - prompt: Liegt Absicht stoffgleicher, rechtswidriger Bereicherung vor?
+    erwartung: Ja - A wollte den vollen Kaufpreis erhalten, obwohl der Laptop weniger
+      wert war; der erstrebte Vorteil (voller Kaufpreis) ist die Kehrseite des Schadens
+      des K und rechtswidrig, da A keinen Anspruch auf den vollen Preis fuer die mangelhafte
+      Sache hatte.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Obersatz mit § 263 Abs. 1 StGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 263 Abs. 1 StGB
+      keywords:
+      - '263'
+    - id: p2
+      label: Taeuschung ueber Tatsachen bejaht und konkret benannt (Zustand des Displays)
+      weight: 3.0
+      required: true
+      keywords:
+      - Taeuschung
+      - Tatsachen
+      - Display
+    - id: p3
+      label: Irrtum und dadurch veranlasste Vermoegensverfuegung (Ueberweisung) bejaht
+      weight: 2.0
+      required: false
+      keywords:
+      - Irrtum
+      - Vermoegensverfuegung
+      - Ueberweisung
+    - id: p4
+      label: Vermoegensschaden ueber Gesamtsaldierung/Minderwert begruendet
+      weight: 3.0
+      required: true
+      keywords:
+      - Gesamtsaldierung
+      - Minderwert
+      - Vermoegensschaden
+    - id: p5
+      label: Stoffgleiche, rechtswidrige Bereicherungsabsicht bejaht
+      weight: 1.5
+      required: false
+      keywords:
+      - Bereicherungsabsicht
+      - stoffgleich
+      - rechtswidrig
+    - id: p6
+      label: Vorsatz bzgl. aller objektiven Tatbestandsmerkmale erwaehnt
+      weight: 1.0
+      required: false
+      norms:
+      - § 15 StGB
+      keywords:
+      - Vorsatz
+    - id: p7
+      label: 'Ergebnis: A hat sich wegen Betrugs strafbar gemacht'
+      weight: 1.0
+      required: false
+      keywords:
+      - strafbar gemacht
+      - Betrug
+      - '263'
