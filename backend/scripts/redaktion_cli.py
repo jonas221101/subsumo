@@ -76,6 +76,26 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
             "Der Verwaltungsakt, § 35 VwVfG",
             "VerwR AT, Begriffsmerkmale, Nichtigkeit, Rechtswidrigkeit",
         ),
+        (
+            "Die Verpflichtungsklage, § 42 Abs. 1 Var. 2 VwGO",
+            "VerwR AT, Versagungsgegenklage, Untaetigkeitsklage § 75 VwGO",
+        ),
+        (
+            "Vorlaeufiger Rechtsschutz, §§ 80, 80a VwGO",
+            "VerwR AT, aufschiebende Wirkung, Anordnung/Wiederherstellung",
+        ),
+        (
+            "Art. 3 Abs. 1 GG: Allgemeiner Gleichheitssatz",
+            "Grundrechte, neue Formel, Willkuerverbot",
+        ),
+        (
+            "Art. 14 GG: Eigentumsgarantie",
+            "Grundrechte, Inhalts- und Schrankenbestimmung, Enteignung",
+        ),
+        (
+            "Ermessen und Beurteilungsspielraum, § 40 VwVfG",
+            "VerwR AT, Ermessensfehler, Ermessensreduzierung auf Null",
+        ),
     ],
 }
 
