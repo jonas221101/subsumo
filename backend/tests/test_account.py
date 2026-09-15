@@ -128,6 +128,44 @@ def test_loeschung_entfernt_daten_und_sperrt_login_endgueltig(client):
     assert neu.status_code == 201
 
 
+def test_loeschung_entfernt_free_tier_limit_daten(client, monkeypatch):
+    """CaseAccess/AnalyzeCall (SUB-96, docs/20 B2) sind ebenfalls personenbezogen."""
+    from app.config import get_settings
+    from app.models import AnalyzeCall, CaseAccess, User
+
+    monkeypatch.setenv("SUBSUMO_PAYWALL_ENABLED", "true")
+    get_settings.cache_clear()
+    try:
+        email = f"{uuid.uuid4().hex[:10]}@uni-beispiel.de"
+        reg = client.post(
+            "/v1/auth/register", json={"email": email, "password": AUTH_PASSWORD}
+        ).json()
+        client.headers["Authorization"] = f"Bearer {reg['access_token']}"
+
+        assert client.get("/v1/cases/zr-fall-sonderpreis").status_code == 200
+        assert client.post(
+            "/v1/gutachten/analyze", json={"text": "Kurzer Testtext."}
+        ).status_code == 200
+
+        import app.db as db_module
+
+        with db_module.SessionLocal() as db:
+            user_id = db.query(User).filter_by(email=email).one().id
+            assert db.query(CaseAccess).filter_by(user_id=user_id).count() == 1
+            assert db.query(AnalyzeCall).filter_by(user_id=user_id).count() == 1
+
+        response = client.post(
+            "/v1/account/delete", json={"password": AUTH_PASSWORD, "confirm": True}
+        )
+        assert response.status_code == 200
+
+        with db_module.SessionLocal() as db:
+            assert db.query(CaseAccess).filter_by(user_id=user_id).count() == 0
+            assert db.query(AnalyzeCall).filter_by(user_id=user_id).count() == 0
+    finally:
+        get_settings.cache_clear()
+
+
 def test_loeschung_wirkt_nur_auf_das_eigene_konto(client):
     a = client.post(
         "/v1/auth/register", json={"email": "a-delete@uni-beispiel.de", "password": AUTH_PASSWORD}

@@ -8,7 +8,7 @@ from fastapi import APIRouter, HTTPException, status
 
 from app.api.deps import CurrentUser, DbSession
 from app.core.security import verify_password
-from app.models import Card, Case, Review, Submission, UserCard
+from app.models import AnalyzeCall, Card, Case, CaseAccess, Review, Submission, UserCard
 from app.schemas import (
     AccountDeleteIn,
     AccountExportAccountOut,
@@ -112,6 +112,8 @@ def delete_account(payload: AccountDeleteIn, user: CurrentUser, db: DbSession) -
     db.query(Review).filter_by(user_id=user.id).delete()
     db.query(UserCard).filter_by(user_id=user.id).delete()
     db.query(Submission).filter_by(user_id=user.id).delete()
+    db.query(CaseAccess).filter_by(user_id=user.id).delete()
+    db.query(AnalyzeCall).filter_by(user_id=user.id).delete()
     db.delete(user)
     db.commit()
     return {"deleted": True}

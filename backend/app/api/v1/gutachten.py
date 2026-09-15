@@ -2,11 +2,15 @@
 
 from __future__ import annotations
 
+from datetime import UTC, datetime
+
 from fastapi import APIRouter, HTTPException, status
 
 from app.api.deps import CurrentUser, DbSession
+from app.config import get_settings
 from app.models import Case, Submission
 from app.schemas import AnalyzeIn, CaseOut, SubmissionIn
+from app.services import limits
 from app.services.evaluator import get_evaluator
 from app.services.gutachten import analyze
 
@@ -20,7 +24,13 @@ def analyze_text(payload: AnalyzeIn, user: CurrentUser, db: DbSession) -> dict:
     Das ist der Endpunkt fuer den Uebungsmodus: Der Nutzer kann jederzeit
     schreiben und bekommt in Millisekunden eine reproduzierbare Rueckmeldung
     zum Gutachtenstil.
+
+    Free-Tier-Limit (docs/20 B2): max. 3 Aufrufe/Woche, serverseitig gezaehlt.
     """
+    settings = get_settings()
+    if limits.is_free_tier(user, settings):
+        limits.enforce_analyze_quota(db, user, now=datetime.now(UTC))
+
     expected: list[str] = []
     if payload.case_slug:
         case = db.query(Case).filter_by(slug=payload.case_slug).one_or_none()
@@ -33,9 +43,13 @@ def analyze_text(payload: AnalyzeIn, user: CurrentUser, db: DbSession) -> dict:
 
 @router.get("/cases/{slug}", response_model=CaseOut)
 def get_case(slug: str, user: CurrentUser, db: DbSession) -> Case:
+    """Free-Tier-Limit (docs/20 B2): ab dem dritten unterschiedlichen Fall 403."""
     case = db.query(Case).filter_by(slug=slug).one_or_none()
     if case is None:
         raise HTTPException(status.HTTP_404_NOT_FOUND, "Fall nicht gefunden")
+    settings = get_settings()
+    if limits.is_free_tier(user, settings):
+        limits.enforce_case_access(db, user, case)
     return case
 
 

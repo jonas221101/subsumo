@@ -212,3 +212,36 @@ class Submission(Base):
     points: Mapped[float | None] = mapped_column(Float, default=None)  # JAP-Skala 0-18
     report: Mapped[dict] = mapped_column(JSON, default=dict)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
+class CaseAccess(Base):
+    """Erster Zugriff eines Nutzers auf einen Fall.
+
+    Grundlage fuer das Free-Tier-Limit "2 gefuehrte Faelle" (docs/20, Abschnitt
+    4 B2): bereits gesehene Faelle bleiben erreichbar, nur der jeweils naechste
+    *neue* Fall zaehlt gegen das Kontingent.
+    """
+
+    __tablename__ = "case_access"
+    __table_args__ = (UniqueConstraint("user_id", "case_id", name="uq_case_access"),)
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
+    case_id: Mapped[int] = mapped_column(ForeignKey("cases.id"), index=True)
+    first_seen: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
+class AnalyzeCall(Base):
+    """Protokolliert Aufrufe von ``POST /gutachten/analyze``.
+
+    Grundlage fuer das Free-Tier-Wochenlimit (docs/20, Abschnitt 4 B2) - ein
+    rollierendes 7-Tage-Fenster statt eines Kalenderwochen-Resets.
+    """
+
+    __tablename__ = "analyze_calls"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, index=True
+    )
