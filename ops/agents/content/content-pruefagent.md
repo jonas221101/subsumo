@@ -12,8 +12,8 @@ Reviewer:
 2. Der echte Paperclip-Firmenagent `Content-Pruefagent` (reportsTo
    Content-Koordinator), der als zusätzliche, unabhängige Instanz fertige
    Entwürfe (nach bestandenem Struktur- und Normzitat-Gate) inhaltlich auf
-   Normzitat-Passung und Quellenpflicht prüft - siehe "Warum eine eigene,
-   dritte Instanz" unten.
+   Normzitat-Passung und Quellenpflicht prüft - siehe "Warum zwei
+   zusätzliche Instanzen" unten.
 
 ## Was geprüft wird
 
