@@ -79,7 +79,7 @@ heuristisch, sofort, kostenlos und wird als das kommuniziert, was es ist
 | Konto | Registrierung, Login, Passwort-Reset, DSGVO-Export und -Löschung | Auth vorhanden, Export/Löschung offen |
 | Bezahlung | Web-Checkout (Stripe), Free-Tier mit Limit, Pro-Freischaltung | **nicht vorhanden — größter Einzelposten** |
 | Plattform | `app.subsumo.de` (Web) + Android als internes/offenes Testing | Web-Build in CI, APK-Artefakt aus SUB-60 |
-| Recht | Impressum, AGB, Datenschutzerklärung, Widerrufsbelehrung, Cookie-Hinweis | Entwürfe offen |
+| Recht | Impressum, AGB, Datenschutzerklärung, Widerrufsbelehrung, Cookie-Hinweis | Entwürfe stehen (`docs/legal/`), anwaltliche Freigabe + Rechtsträger-Angaben offen |
 | Betrieb | Monitoring, Fehler-Tracking, tägliches DB-Backup, Support-Postfach | offen |
 
 ### 3.2 Raus (mit Rückkehrdatum)
