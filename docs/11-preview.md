@@ -205,7 +205,57 @@ Falls das auftritt:
 - Das ist kein Grund, Abschnitt 1–5 nicht zu befolgen — sobald Exposure
   verfügbar ist, liefert derselbe Ablauf ohne Codeänderung eine `url`.
 
-## 7. Android-APK als CI-Artefakt bauen
+## 7. End-to-End-Verifikation durchgeführt (SUB-59, 2026-09-15)
+
+Dieser Ablauf wurde einmal vollständig durchgespielt. Ergebnis:
+
+- **Runtime-Services-Start via Paperclip-API war zusätzlich zum Exposure-Problem
+  aus Abschnitt 6 selbst nicht nutzbar**: `POST
+  .../runtime-services/start` mit `{"workspaceCommandId": "backend"}` lieferte
+  auch nach Ablauf einer vorherigen `workspace_runtime_lease_conflict`-Sperre
+  zwei Mal in Folge `{"error": "Internal server error"}` (kein Prozess
+  gestartet, `runtimeServices[]`-Eintrag landete direkt auf
+  `status: "failed"`, `healthStatus: "unhealthy"`, ohne Port-Konflikt oder
+  verwaisten Prozess auf dem Host). Das ist ein eigenständiger
+  Plattform-Befund, unabhängig vom Tailscale-Exposure-Problem — auch der
+  reine Prozessstart über die Runtime-Services-API war zum Testzeitpunkt
+  nicht funktionsfähig.
+- **Fallback**: Backend und Flutter-Web wurden mit exakt den in Abschnitt 1
+  und 3 dokumentierten Kommandos direkt in der Workspace-Shell gestartet
+  (`backend/.venv/bin/uvicorn app.main:app --app-dir backend --host 0.0.0.0
+  --port 8123` bzw. `flutter run -d web-server --web-hostname 0.0.0.0
+  --web-port 8124 --dart-define=SUBSUMO_API=http://localhost:8123`), erreichbar
+  unter `http://localhost:8123` und `http://localhost:8124`. Kein
+  Browser (GUI) im Sandbox-Host verfügbar — Registrierung/Login/Review wurden
+  daher gegen dieselbe Backend-API ausgeführt, die auch das Flutter-Web-UI
+  aufruft, inkl. CORS-Preflight-Check (`OPTIONS /v1/auth/login` mit
+  `Origin: http://localhost:8124` → `access-control-allow-origin:
+  http://localhost:8124`, funktioniert wie erwartet dank `allow_origins=["*"]`
+  in `backend/app/main.py`).
+- **Registrierung + Login**: `POST /v1/auth/register` und separat
+  `POST /v1/auth/login` mit derselben E-Mail/Passwort-Kombination lieferten
+  beide `200`/`201` mit gültigem `access_token` — Login gegen den zuvor
+  registrierten Nutzer funktioniert.
+  - Stolperstein: `pydantic`/`email-validator` lehnt E-Mail-Adressen mit
+    reservierten Testdomains (`.test`, `example.com`, …) mit `422` ab
+    ("special-use or reserved name") — für manuelle Tests eine normale
+    Domain (z. B. `@gmail.com`) verwenden, keine `@example.test`-Adresse.
+- **Karten-Review-Aktion**: `GET /v1/cards/due` lieferte eine fällige Karte
+  (`or-gr-art12-berufsbegriff`), anschließend `POST /v1/reviews/batch` mit
+  `rating: 3` → `{"applied": 1, ...}`. Persistenz direkt in `subsumo.db`
+  bestätigt: neue Zeile in `reviews` (passender `client_id`) und
+  aktualisierte Zeile in `user_cards` (`state: "learning"`, `reps: 1`,
+  neues `due`-Datum) für den registrierten Nutzer.
+- Beide Prozesse wurden danach sauber beendet (`kill` auf die jeweilige PID,
+  anschließend verifiziert: keine `uvicorn`/`flutter`/`dart`-Prozesse mehr
+  aktiv).
+
+Fazit: Der Web-Preview-Ablauf selbst (Backend + Flutter-Web + Registrierung +
+Login + Review-Persistenz) funktioniert einwandfrei. Die einzigen offenen
+Lücken liegen auf der Paperclip-Plattformseite (Runtime-Services-Start-API
+und Tailscale-Exposure, siehe Abschnitt 6), nicht im Subsumo-Code.
+
+## 8. Android-APK als CI-Artefakt bauen
 
 Für einen Testbuild auf einem echten Android-Gerät gibt es einen manuell
 auslösbaren Workflow (`.github/workflows/android-apk.yml`) — kein Signing,
