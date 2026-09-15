@@ -35,7 +35,8 @@ reportsTo Content-Koordinator, siehe `ops/agents/content/content-koordinator.md`
    `CONTRIBUTING.md` vorgeschriebenen Backend-Checks (`ruff check .`,
    `pytest -q`) ausführen und wahrheitsgemäß dokumentieren, dann mit
    `gh pr create` einen Pull Request anlegen und im Aufgabenthread
-   referenzieren.
+   referenzieren. Nutze dafür die Anleitung im Skill `github-pr-workflow`
+   (Titel/Beschreibung, Verifikationsnachweise).
 5. Vollständigen Commit-SHA und überprüfbare Nachweise mit
    `request-review TASK --to REVIEWER_UUID --commit SHA --body-file
    nachweise.md` an den Reviewer übergeben (`ops/agents/reviewer.md`). Ohne
