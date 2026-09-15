@@ -204,3 +204,26 @@ Falls das auftritt:
   bevor eine von außen erreichbare Preview-URL über diesen Weg erwartet wird.
 - Das ist kein Grund, Abschnitt 1–5 nicht zu befolgen — sobald Exposure
   verfügbar ist, liefert derselbe Ablauf ohne Codeänderung eine `url`.
+
+## 7. Android-APK als CI-Artefakt bauen
+
+Für einen Testbuild auf einem echten Android-Gerät gibt es einen manuell
+auslösbaren Workflow (`.github/workflows/android-apk.yml`) — kein Signing,
+keine Play-Store-Anbindung, reiner Debug-Testbuild. iOS ist bewusst
+ausgeklammert (kostenpflichtiger Apple-Developer-Account nötig).
+
+1. Im Repo auf GitHub zu **Actions → Android APK (manueller Build)**
+   wechseln.
+2. **Run workflow** klicken, den gewünschten Branch im Dropdown auswählen
+   (Default: `main`) und bestätigen. Der optionale `ref`-Input ist nur nötig,
+   um von einem anderen Branch/Tag zu bauen als dem im Dropdown gewählten.
+3. Nach Abschluss des Laufs (ca. 5–10 min) unten auf der Lauf-Seite unter
+   **Artifacts** das Artefakt `subsumo-android-apk` herunterladen (ZIP mit
+   `app-release.apk`) — Artefakte sind 14 Tage verfügbar.
+4. APK auf ein Android-Gerät übertragen (z. B. per USB, E-Mail oder Cloud-
+   Speicher) und dort öffnen. Falls die Installation blockiert wird: unter
+   Android-Einstellungen die Installation aus der genutzten Quelle (Dateien-
+   App, Browser, o. Ä.) einmalig erlauben ("Unbekannte Apps installieren").
+   Der Build ist unsigniert (Debug-Keystore) — das ist für einen lokalen
+   Testbuild kein Problem, verhindert aber ein Update über eine signierte
+   Store-Version, falls es diese später gibt.
