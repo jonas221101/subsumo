@@ -1,0 +1,128 @@
+# Release-Readiness (T8)
+
+Querschnittsspur: Punkte, die kein Feature sind, aber einen Launch
+verhindern, wenn sie fehlen. Rechtliche und regulatorische Grundlagen stehen
+in [`docs/06-recht-compliance.md`](06-recht-compliance.md) — hier nur, was
+dort noch **nicht** geregelt ist, plus die Sicherheits-, Store-, Abrechnungs-
+und Betriebspunkte, die zusammen Gate C/D aus
+[`docs/03-roadmap.md`](03-roadmap.md) bilden.
+
+Format je Zeile: **Verantwortlich** (Rolle, nicht Person — das Team ist
+1–2 Entwickler + Teilzeit-Fachredaktion, siehe Roadmap) · **Aufwand**
+(grob, in Personentagen) · **Phase** (A–D nach Roadmap-Gates) · **Status**.
+
+Kein Rechtsrat. Alle mit „Frage:" markierten Punkte sind offen und brauchen
+eine explizite Antwort (Anwalt, Steuerberater oder Produktentscheidung), bevor
+das jeweilige Gate als grün gelten darf — keine Annahme ersetzt sie.
+
+---
+
+## 1. Recht
+
+`docs/06-recht-compliance.md` deckt Urheberrecht (Abschnitt 1), RDG-Abgrenzung
+(Abschnitt 2) und die DSGVO-Rechtsgrundlagen (Abschnitt 3) bereits ab. Stand
+geprüft, trägt weiterhin — keine Änderung. Ergänzend, was dort fehlt:
+
+| Punkt | Verantwortlich | Aufwand | Phase | Status |
+|---|---|---|---|---|
+| Impressum (§ 5 DDG) | Gründung/Recht | 0,5 PT | C | Offen — Text steht, sobald Rechtsform/Anschrift final ist |
+| AGB (Nutzungsvertrag, Kündigung, Haftungsbegrenzung für KI-Bewertung) | Recht (extern) | 3–5 PT | C | Offen. **Frage:** Deckt eine Standard-SaaS-AGB die KI-Bewertungsfunktion ausreichend ab, oder braucht es eine gesonderte Haftungsklausel für „Bewertung ist Lernhilfe, keine verbindliche Note"? |
+| Datenschutzerklärung | Recht (extern) | 2–3 PT | C | Offen, hängt an Provider-Liste unten (Auflistung aller Empfänger ist Pflichtangabe) |
+| Widerrufsbelehrung (Fernabsatz, digitale Inhalte) | Recht (extern) | 1 PT | C | Offen. **Frage:** Verzichtet der Nutzer beim Abo-Kauf ausdrücklich auf das Widerrufsrecht bei sofortigem Leistungsbeginn (§ 356 V BGB), oder wird ein 14-Tage-Fenster ohne Nutzung eingeräumt? Wirkt sich auf Onboarding-Flow aus |
+| DSGVO Auskunft (Art. 15) | Backend-Dev | 1 PT | C | Offen — kein Endpoint. `docs/03-roadmap.md` M3 plant nur Export/Löschung, Auskunft (strukturierte Übersicht „welche Daten wozu") fehlt als eigener Punkt und sollte im selben Zug wie Export gebaut werden |
+| DSGVO Export (Art. 20) | Backend-Dev | inkl. in M3 | B/C | Offen — kein Endpoint in `backend/app/api/v1/` vorhanden (Stand: nur `auth.py` mit `/me` GET/PATCH, kein Export/Delete). In `docs/03-roadmap.md` M3 eingeplant |
+| DSGVO Löschung (Art. 17) | Backend-Dev | inkl. in M3 | B/C | Offen, siehe oben. Muss auch Kaskade auf Reviews, Submissions, Plan-Daten abdecken, nicht nur den User-Datensatz |
+| Verarbeitungsverzeichnis (Art. 30) | Recht/Betrieb | 1 PT | C | Offen — internes Dokument (kein Nutzer-Artefakt), listet Zwecke, Kategorien, Empfänger (LLM-Provider, Hosting), Löschfristen. Kann als `docs/18-verarbeitungsverzeichnis.md` intern geführt werden, sobald Provider-Wahl (unten) steht |
+| Auftragsverarbeitungsvertrag (AVV) mit LLM-Provider | Recht + Backend-Dev | 1–2 PT | B/C | Offen. **Frage (release-kritisch):** Dürfen Nutzertexte (Gutachten, oft mit personenbezogenen Sachverhaltsdetails im Übungsfall) unpseudonymisiert an einen US-Anbieter gehen? `docs/06-recht-compliance.md` Abschnitt 3 sieht bereits „Pseudonymisierung vor Versand, keine Nutzer-ID im Prompt" und „Provider-Wahl mit EU-Verarbeitung bevorzugt" vor — das ist die Grundsatzentscheidung, aber noch kein AVV. Aktueller Code (`backend/app/core/llm.py`) unterstützt aktuell nur den Provider `anthropic` (US) plus einen heuristischen Offline-Fallback (`llm_provider=none`); ein EU-Provider ist nicht angebunden. Transparenz im Produkt (Hinweis vor erster Gutachten-Abgabe, was mit dem Text passiert) ist zu bauen, nicht nur AGB-Text |
+| RDG-Abgrenzung, Urheberrecht | — | — | — | Geprüft, Stand aus `docs/06-recht-compliance.md` trägt unverändert |
+
+## 2. Sicherheit
+
+| Punkt | Verantwortlich | Aufwand | Phase | Status |
+|---|---|---|---|---|
+| Argon2id statt PBKDF2 | Backend-Dev | 1–2 PT | B/C | Offen. Code-Stand: `backend/app/core/security.py` nutzt PBKDF2-HMAC-SHA256 mit 600.000 Iterationen (OWASP-konform) und einem `algo$...`-Präfix im Hash, das den Wechsel vorbereitet. Für M3 vorgesehen (`docs/03-roadmap.md`) — kein Release-Blocker im engeren Sinn (PBKDF2 mit dieser Iterationszahl ist keine Schwachstelle), aber als zugesagter Punkt hier nachgehalten |
+| Refresh-Token-Rotation | Backend-Dev | 2–3 PT | B/C | Offen. Code-Stand: Es gibt nur einen Access-Token (`create_access_token`/`decode_access_token`, JWT HS256, Default-TTL 7 Tage), keinen Refresh-Token-Mechanismus. Für M3 vorgesehen. **Risiko bis dahin:** 7 Tage TTL ohne Rotation bedeutet ein gestohlenes Token bleibt bis zu 7 Tage gültig — für den Launch-Umfang (kein Zahlungsdaten-Zugriff über die API) vertretbar, sollte aber vor Gate D stehen |
+| Secrets-Handhabung Produktion | Betrieb/Backend-Dev | 1 PT | D | Offen. Code-Stand: `SUBSUMO_JWT_SECRET` hat einen offensichtlich unsicheren Default (`dev-only-insecure-change-me`), der über `.env` gesetzt werden muss — kein Fail-Fast, wenn er in Produktion vergessen wird. Vor Gate D: Startup-Check ergänzen, der bei Produktions-Umgebung (`SUBSUMO_ENVIRONMENT=production`) mit Default-Secret hart abbricht |
+| JWT-Secret-Rotation | Backend-Dev | 1 PT | D | Offen, kein Mechanismus vorhanden. **Frage:** Reicht ein manueller Rotationsprozess (Secret tauschen → alle Sessions invalidieren) zum Launch, oder braucht es von Anfang an Key-Versionierung (`kid`-Claim, zwei gültige Secrets während der Rotation)? Für v1.0-Nutzerzahl vermutlich Ersteres ausreichend — als Annahme markiert, keine Entscheidung |
+| Backup und Wiederherstellung Nutzerdaten | Betrieb | 1–2 PT Einrichtung, dann laufend | D | Offen — kein Backup-Konzept im Repo dokumentiert. Mindestanforderung für Launch: tägliches automatisiertes Datenbank-Backup mit getestetem Restore (nicht nur Backup-Existenz prüfen, tatsächlich einmal zurückspielen), Aufbewahrung ≥ 30 Tage, Backup-Verschlüsselung ruhend |
+
+## 3. Stores und Auslieferung
+
+`docs/06-recht-compliance.md` Abschnitt 4 nennt bereits die Kernpunkte
+(Apple IAP-Pflicht für digitale Abos, MSIX-Signierung, Datenschutz+Impressum
+je Store). Hier der operative Rest:
+
+| Punkt | Verantwortlich | Aufwand | Phase | Status |
+|---|---|---|---|---|
+| Play Store: Entwicklerkonto, Gebühr (einmalig 25 $) | Betrieb | 0,5 PT | D | Offen |
+| App Store: Entwicklerkonto, Gebühr (99 $/Jahr, wiederkehrend) | Betrieb | 0,5 PT | D | Offen |
+| Microsoft Store: Entwicklerkonto (einmalig ~19 $ Individual / ~99 $ Company) | Betrieb | 0,5 PT | D | Offen |
+| Altersfreigabe je Store (IARC-Fragebogen o. Ä.) | Betrieb | 0,5 PT | D | Offen — für ein Jura-Lernprodukt ohne Erwachseneninhalte unkritisch, Fragebogen aber Pflicht je Store |
+| Datenschutzangaben je Store (Apple „Privacy Nutrition Label", Play „Data Safety") | Betrieb | 1 PT | D | Offen, hängt direkt an der Provider-Liste aus Abschnitt 1 (AVV) — ohne finale Provider-Wahl keine verbindlichen Angaben möglich |
+| Review-Richtlinien-Check vor Einreichung (insb. Apple: In-App-Purchase-Pflicht, Zahlungsanbieter-Erwähnung) | Betrieb | 1 PT | D | Offen |
+| **Store-Regeln zu Bezahlinhalten vs. externer Abrechnung** | Produkt/Recht | 0,5 PT Analyse | C | Geklärt in `docs/06-recht-compliance.md` Abschnitt 4: Apple zwingt digitale Abos über IAP (30 %/15 % Provision je nach Umsatzschwelle), Web-Abschluss bleibt separat möglich, darf aber in der iOS-App nicht beworben werden. **Konsequenz fürs Geschäftsmodell:** Preis auf iOS muss die IAP-Provision einkalkulieren, oder iOS-Preis liegt höher als Web-Preis (wie z. B. bei vielen SaaS-Apps üblich) — das ist eine Preisentscheidung für T6/Abrechnung unten, nicht mehr offen als Rechtsfrage |
+
+## 4. Abrechnung
+
+| Punkt | Verantwortlich | Aufwand | Phase | Status |
+|---|---|---|---|---|
+| Zahlungsanbieter-Wahl (Web) | Produkt/Betrieb | 0,5 PT Entscheidung | C | Offen. **Frage:** Stripe (verbreitet, keine deutsche Entität nötig, aber USD-Abrechnungsbeziehung) oder ein EU-Anbieter (z. B. Mollie)? Beeinflusst AVV-Liste und Datenschutzerklärung |
+| Abo-Verwaltung (Pausieren, Wechsel, Rechnungen) | Backend-Dev + Frontend-Dev | 3–5 PT | D | Offen, an Provider-Wahl gekoppelt — die meisten Anbieter liefern Checkout+Portal fertig, Aufwand ist primär Integration, nicht Eigenbau |
+| Studierendennachweis (falls Studierendenpreis) | Produkt | 1–2 PT | C/D | Offen. **Frage:** Wird ein Studierendenpreis überhaupt eingeführt (aus T6/Marktanalyse noch nicht final entschieden, siehe `docs/14-marktanalyse.md`)? Falls ja: Verifizierung über Uni-E-Mail-Domain (günstig, aber umgehbar) oder Drittanbieter wie SheerID (verlässlicher, kostet pro Verifizierung) — als offene Entscheidung markiert, keine Empfehlung ohne T6-Preisentscheidung |
+| Umsatzsteuer (digitale Dienstleistung an Privatpersonen, EU-OSS) | Steuerberater | 1–2 PT extern | D | Offen. **Frage:** Meldung über das One-Stop-Shop-Verfahren (EU-OSS) für digitale Leistungen an Verbraucher in anderen EU-Ländern — ab Launch relevant, sobald auch außerhalb Deutschlands verkauft wird. Reine Steuerfrage, hier nicht beantwortbar |
+| Kündigung und Widerruf (Prozess, nicht nur Text) | Backend-Dev + Support | 1–2 PT | D | Offen — Selbstkündigung im Produkt (kein „Bitte E-Mail schreiben") ist Standard-Erwartung und vermutlich auch regulatorisch erwartet (Kündigungsbutton-Pflicht nach deutschem Recht für Verbraucherverträge seit 2022) |
+
+## 5. Betrieb
+
+| Punkt | Verantwortlich | Aufwand | Phase | Status |
+|---|---|---|---|---|
+| Hosting-Entscheidung (EU-Rechenzentrum wegen DSGVO-Datenminimierung) | Betrieb | 1 PT Entscheidung | C | Offen. Sollte mit der LLM-Provider-Frage zusammen entschieden werden — ein EU-Hosting nützt wenig, wenn Gutachtentexte trotzdem an einen US-LLM-Endpunkt gehen |
+| Domain app.subsumo.de | Betrieb | 0,5 PT | D | Offen — Registrierung + DNS, geringer Aufwand, aber ohne sie funktioniert kein Store-Listing-Link und keine Datenschutzerklärung-URL |
+| Monitoring (Uptime, Error-Tracking Backend) | Backend-Dev | 1–2 PT | D | Offen, kein Tooling im Repo referenziert |
+| Crash-/Analytics-Telemetrie (opt-in) | Frontend-Dev + Backend-Dev | 2–3 PT | D | Offen. Leitprinzip aus `docs/03-roadmap.md` M5 „opt-in" ist bereits Produktentscheidung — technisch: Opt-in-Dialog vor erstem Versand, nicht nachträglicher Opt-out |
+| Supportkanal + erwartete Antwortzeit | Betrieb | 0,5 PT Einrichtung | D | Offen. **Annahme:** E-Mail-Support mit Antwortzeit-Ziel 2 Werktage zum Launch (kein Chat/Ticket-System nötig bei der erwarteten Nutzerzahl in Phase D) — als Annahme markiert, keine harte Zusage ohne Rückfrage beim Team |
+| Kostenschätzung Betrieb/Monat inkl. LLM | Betrieb | siehe unten | — | Geschätzt, siehe Abschnitt 6 |
+
+## 6. Kostenschätzung Betrieb pro Monat
+
+Grobe Schätzung für den Zeitraum um Gate D (Launch, Beta mit 2 Fachschaften,
+niedrige dreistellige Nutzerzahl) — **keine Angebotseinholung, Annahme auf
+Basis öffentlicher Listenpreise Stand 2026, vor Launch mit echten Angeboten zu
+verifizieren**:
+
+| Posten | Schätzung/Monat | Annahme |
+|---|---|---|
+| Hosting (App-Server + DB, EU-Region, kleine Instanz) | 30–80 € | Ein Backend-Prozess reicht für die Beta-Nutzerzahl, SQLite/Postgres auf derselben oder einer kleinen Managed-DB-Instanz |
+| Domain + DNS | ~2 € | `app.subsumo.de`, Standard-TLD-Registrierung |
+| LLM-Nutzung (Gutachten-Korrektur) | 150–600 € | Rechnung: ~2.000 Korrekturen/Monat (Beta-Größenordnung) × ~2.000 Input- + 800 Output-Token je Korrektur (Gutachtentext + Erwartungshorizont + Begründung) zu aktuellen Anthropic-API-Preisen für ein Sonnet-Modell. Spannweite deckt Schwankung in Gutachtenlänge ab. Skaliert linear mit Nutzerzahl — größter variabler Kostenblock, sobald über die Beta hinaus skaliert wird |
+| KI-Redaktion (Content-Produktion, siehe `docs/08-ki-redaktion.md`) | 50–150 € | Deutlich seltener als Nutzer-Korrekturen, aber längere Prompts (Collector+Reviewer-Pipeline je Karte/Fall) |
+| E-Mail-Versand (Transaktions-Mails: Registrierung, Passwort-Reset) | 0–10 € | Kostenlose Stufe der meisten Anbieter reicht für Beta-Volumen |
+| Zahlungsanbieter-Gebühren | variabel (~1,5 %+0,25 €/Transaktion) | Kein Fixkostenblock, skaliert mit Umsatz, nicht separat budgetiert |
+| Monitoring/Error-Tracking (kostenlose oder kleinste bezahlte Stufe) | 0–25 € | Bei niedriger Nutzerzahl reicht meist eine Free-Tier |
+| **Summe (ohne Zahlungsgebühren)** | **~230–870 €/Monat** | Spannweite primär durch LLM-Nutzung getrieben — bei Nutzerwachstum über die Beta hinaus ist dieser Posten neu zu rechnen, nicht die anderen |
+
+**Wichtigste Annahme, die diese Schätzung trägt:** Die LLM-Kosten skalieren
+mit Korrekturen/Nutzer, nicht mit Nutzerzahl allein — ein Freemium-Modell mit
+unbegrenzten Gutachten-Korrekturen in der Gratisstufe würde diesen Posten
+sprengen. Das ist ein Argument für ein Nutzungslimit in der kostenlosen Stufe,
+das mit T6/Preisentscheidung abzustimmen ist, nicht hier vorwegzunehmen.
+
+---
+
+## Zusammenfassung: Was Gate C und Gate D blockiert
+
+Nach `docs/03-roadmap.md` verlangt **Gate C** „keine offenen
+Compliance-Punkte" und **Gate D** einen „end-to-end getesteten
+Bezahlvorgang" plus vier Plattformen live. Der aktuell blockierende Kern:
+
+1. **AVV/LLM-Provider-Frage** (Abschnitt 1) ist die einzige Frage, die
+   mehrere andere Punkte nach sich zieht (Datenschutzerklärung, Verarbeitungs-
+   verzeichnis, Store-Datenschutzangaben, Hosting-Region) — sollte zuerst
+   entschieden werden, nicht parallel zu den abhängigen Punkten.
+2. **DSGVO Export/Löschung/Auskunft-Endpoints** existieren im Code noch
+   nicht (Stand dieser Prüfung) — reine Backend-Arbeit, kein Rechtsrisiko,
+   aber ohne sie ist Gate C nicht erreichbar.
+3. Drei **Steuer-/Rechtsfragen** (Widerrufsrecht bei Sofortleistung,
+   Umsatzsteuer-OSS, Haftungsklausel KI-Bewertung) brauchen externe Beratung
+   und sind nicht durch Produktentscheidung allein lösbar — rechtzeitig vor
+   Gate C beauftragen, Vorlaufzeit einplanen wie bei der T4-Kalibrierung.
