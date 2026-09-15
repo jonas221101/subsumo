@@ -1,0 +1,200 @@
+topic:
+  slug: or-vwvfg-ermessen-beurteilungsspielraum
+  area: oeffentliches-recht
+  title: Ermessen und Beurteilungsspielraum, § 40 VwVfG
+  parent: oeffentliches-recht
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-15'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: or-vwvfg-ermessen-begriff
+  type: definition
+  front: 'Definiere: Ermessen i.S.d. § 40 VwVfG'
+  back: Ermessen ist der auf der Rechtsfolgenseite einer Norm eroeffnete Entscheidungsspielraum
+    der Verwaltung, erkennbar an Formulierungen wie 'kann' oder 'darf'. Man unterscheidet
+    Entschliessungsermessen (Ob des Handelns) und Auswahlermessen (Wie des Handelns,
+    insbesondere bei mehreren zulaessigen Massnahmen). Die Ermessensermaechtigung
+    ist nach § 40 VwVfG entsprechend dem Zweck der Ermaechtigung auszuueben; die gesetzlichen
+    Grenzen des Ermessens sind einzuhalten.
+  norms:
+  - § 40 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwvfg-ermessensfehler-arten
+  type: definition
+  front: Nenne die vier klassischen Arten von Ermessensfehlern
+  back: '(1) Ermessensausfall: Die Behoerde verkennt, dass ihr ueberhaupt Ermessen
+    zusteht, und trifft eine gebundene Entscheidung. (2) Ermessensueberschreitung:
+    Die gewaehlte Rechtsfolge liegt ausserhalb des gesetzlich eroeffneten Rahmens.
+    (3) Ermessensfehlgebrauch: Die Behoerde uebt das Ermessen zwar aus, stuetzt sich
+    dabei aber auf sachfremde Erwaegungen oder verstoesst gegen den Zweck der Ermaechtigung,
+    gegen Grundrechte, den Gleichheitssatz oder den Verhaeltnismaessigkeitsgrundsatz.
+    (4) Ermessensunterschreitung (Ermessensdefizit): Die Behoerde erkennt zwar ihr
+    Ermessen, ermittelt aber nicht alle abwaegungsrelevanten Gesichtspunkte.'
+  norms:
+  - § 40 VwVfG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwvfg-ermessen-gerichtliche-kontrolle
+  type: norm
+  front: In welchem Umfang kontrollieren Gerichte Ermessensentscheidungen, § 114 S.
+    1 VwGO?
+  back: Das Gericht prueft nach § 114 S. 1 VwGO nur, ob der Verwaltungsakt rechtswidrig
+    ist, weil die gesetzlichen Grenzen des Ermessens ueberschritten sind oder von
+    dem Ermessen in einer dem Zweck der Ermaechtigung nicht entsprechenden Weise Gebrauch
+    gemacht wurde. Eine eigene Zweckmaessigkeitsentscheidung an Stelle der Behoerde
+    trifft das Gericht nicht - es kontrolliert nur Ermessensfehler, uebt das Ermessen
+    aber nicht selbst aus.
+  norms:
+  - § 114 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwvfg-ermessensreduzierung-null
+  type: definition
+  front: Wann liegt eine Ermessensreduzierung auf Null vor?
+  back: Eine Ermessensreduzierung auf Null liegt vor, wenn angesichts der Umstaende
+    des Einzelfalls - etwa bei einer Gefahr fuer besonders hochrangige Rechtsgueter
+    wie Leben oder Gesundheit - nur noch eine einzige Entscheidung ermessensfehlerfrei
+    ist. In diesem Fall verdichtet sich der Ermessensspielraum zu einer Pflicht zum
+    Handeln in genau dieser Weise, und der Betroffene kann einen Anspruch auf genau
+    diese Massnahme haben.
+  norms:
+  - § 40 VwVfG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwvfg-beurteilungsspielraum-begriff
+  type: streitstand
+  front: Grenze den Beurteilungsspielraum vom Ermessen ab
+  back: 'Waehrend Ermessen auf der Rechtsfolgenseite einer Norm angesiedelt ist, betrifft
+    der Beurteilungsspielraum die Tatbestandsseite: Der Behoerde wird bei der Anwendung
+    eines unbestimmten Rechtsbegriffs ausnahmsweise ein eigener Wertungs- und Einschaetzungsspielraum
+    belassen, den die Gerichte grundsaetzlich nur eingeschraenkt nachpruefen - obwohl
+    unbestimmte Rechtsbegriffe nach dem Regelfall vollstaendig gerichtlich ueberpruefbar
+    sind. Ein Beurteilungsspielraum ist daher die begruendungsbeduerftige Ausnahme,
+    kein allgemeines Prinzip.'
+  norms:
+  - § 40 VwVfG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwvfg-beurteilungsspielraum-fallgruppen
+  type: streitstand
+  front: Nenne anerkannte Fallgruppen des Beurteilungsspielraums und den gerichtlichen
+    Kontrollmassstab
+  back: Anerkannt sind u. a. pruefungsaehnliche Entscheidungen (z. B. Examensbewertungen),
+    Entscheidungen weisungsfreier, pluralistisch zusammengesetzter Gremien (z. B.
+    Pruefungsausschuesse) sowie bestimmte Prognose- und Risikoentscheidungen in hochkomplexen
+    fachlichen Zusammenhaengen. Die gerichtliche Kontrolle beschraenkt sich dann darauf,
+    ob die Behoerde ein ordnungsgemaesses Verfahren eingehalten, den anzuwendenden
+    Rechtsbegriff nicht verkannt, keine sachfremden Erwaegungen angestellt und allgemein
+    gueltige Bewertungsmassstaebe beachtet hat (Beurteilungsfehler) - nicht, ob die
+    Entscheidung inhaltlich 'richtig' ist.
+  norms:
+  - § 40 VwVfG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: or-schema-vwvfg-ermessensfehlerkontrolle
+  title: Pruefung von Ermessensfehlern
+  norms:
+  - § 40 VwVfG
+  - § 114 VwGO
+  quellen:
+  - VwVfG und VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Eroeffnet die Ermaechtigungsgrundlage Ermessen?
+    hinweis: Wortlaut 'kann'/'darf' als Indiz.
+  - label: II. Ermessensausfall
+    hinweis: Hat die Behoerde verkannt, dass ihr Ermessen zusteht?
+  - label: III. Ermessensueberschreitung
+    hinweis: Liegt die Rechtsfolge ausserhalb des gesetzlichen Rahmens?
+  - label: IV. Ermessensfehlgebrauch
+    children:
+    - label: 1. Sachfremde Erwaegungen
+    - label: 2. Verstoss gegen Zweck der Ermaechtigung, § 40 VwVfG
+    - label: 3. Verstoss gegen Grundrechte, Gleichheitssatz oder Verhaeltnismaessigkeit
+  - label: V. Ermessensreduzierung auf Null missachtet?
+    hinweis: Nur noch eine Entscheidung ist ermessensfehlerfrei.
+  - label: VI. Ergebnis
+faelle:
+- slug: or-fall-einsturzgefaehrdeter-balkon-ermessensreduzierung
+  title: Der einsturzgefaehrdete Balkon ueber der Fussgaengerzone
+  difficulty: 4
+  minutes: 55
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VwVfG, amtliche Fassung
+  facts: Am Wohnhaus des V droht ein Balkon herabzustuerzen; das Gebaeude liegt unmittelbar
+    an einer stark frequentierten Fussgaengerzone. Ein Bausachverstaendigengutachten
+    bestaetigt akute Einsturzgefahr binnen weniger Tage. Nach der einschlaegigen (fiktiven)
+    Ermaechtigungsnorm ist die zustaendige Bauaufsichtsbehoerde befugt, "die zur Abwehr
+    der Gefahr erforderlichen Massnahmen zu treffen". Trotz mehrfacher Hinweise lehnt
+    die Behoerde ein Einschreiten ab und begruendet dies damit, sie habe "aktuell
+    keine personellen Kapazitaeten". Der taeglich die Fussgaengerzone passierende
+    Nachbar N verlangt behoerdliches Einschreiten.
+  question: Ist die Ablehnung des Einschreitens ermessensfehlerfrei?
+  steps:
+  - prompt: Raeumt die Ermaechtigungsnorm der Behoerde Ermessen ein?
+    erwartung: Ja - die Formulierung 'ist befugt, die erforderlichen Massnahmen zu
+      treffen' eroeffnet Entschliessungsermessen (Ob des Einschreitens).
+  - prompt: Ist das Ermessen im vorliegenden Fall eingeschraenkt?
+    erwartung: 'Ja - angesichts der akuten Gefahr fuer Leben und Gesundheit einer
+      unbestimmten Vielzahl von Passanten ist das Entschliessungsermessen auf Null
+      reduziert: Jede andere Entscheidung als ein Einschreiten waere ermessensfehlerhaft.'
+  - prompt: Ist die Berufung auf fehlende personelle Kapazitaeten eine tragfaehige
+      Erwaegung?
+    erwartung: Nein - organisatorische Kapazitaetsengpaesse sind gegenueber der akuten
+      Gefahr fuer Leib und Leben eine sachfremde Erwaegung und vermoegen die gebotene
+      Massnahme nicht zurueckzustellen; es liegt ein Ermessensfehlgebrauch vor.
+  - prompt: Welches Ergebnis folgt daraus fuer N?
+    erwartung: Die Ablehnung ist ermessensfehlerhaft; N hat wegen der Ermessensreduzierung
+      auf Null einen Anspruch auf behoerdliches Einschreiten.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Ermessensnorm (Entschliessungsermessen) erkannt
+      weight: 1.0
+      required: false
+      keywords:
+      - Ermessen
+      - Entschliessungsermessen
+    - id: p2
+      label: Ermessensreduzierung auf Null wegen akuter Gefahr fuer Leib/Leben erkannt
+        und begruendet
+      weight: 3.0
+      required: true
+      norms:
+      - § 40 VwVfG
+      keywords:
+      - Ermessensreduzierung auf Null
+      - Gefahr
+      - Leib und Leben
+    - id: p3
+      label: Kapazitaetsargument zutreffend als sachfremde Erwaegung/Ermessensfehlgebrauch
+        qualifiziert
+      weight: 2.5
+      required: true
+      keywords:
+      - sachfremd
+      - Ermessensfehlgebrauch
+      - Kapazitaeten
+    - id: p4
+      label: 'Ergebnis: Anspruch des N auf behoerdliches Einschreiten'
+      weight: 1.5
+      required: true
+      keywords:
+      - Anspruch
+      - Einschreiten

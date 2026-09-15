@@ -140,6 +140,12 @@ Zeitplan und Risiken: [`docs/03-roadmap.md`](docs/03-roadmap.md).
 **Inhalte:** 9 Themen, 62 Karten, 11 Prüfungsschemata, 9 Fälle mit
 Erwartungshorizont — über alle drei Rechtsgebiete.
 
+Die Roadmap ist nicht rein technisch: Technik (M0–M6 hier) ist eine von
+sieben Spuren bis zum Release, die anderen sechs (Design, Inhalt,
+Lernstrukturen, Innovation, Markt, Marketing) plus der Querschnitt
+Recht/Betrieb stehen in der
+[Spurenübersicht](docs/03-roadmap.md#sieben-spuren-bis-v10).
+
 Was als Nächstes kommt: [`docs/03-roadmap.md`](docs/03-roadmap.md).
 
 ---

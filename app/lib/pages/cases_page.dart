@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
+import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
 import 'gutachten_page.dart';
+import 'screen_status.dart';
 
 class CasesPage extends StatefulWidget {
   const CasesPage({super.key});
@@ -34,13 +36,20 @@ class _CasesPageState extends State<CasesPage> {
 
   @override
   Widget build(BuildContext context) {
-    if (_loading) return const Center(child: CircularProgressIndicator());
+    if (_loading) return const ScreenStatus.loading();
+    if (_cases.isEmpty) {
+      return ScreenStatus.empty(
+        message: 'Keine Faelle verfuegbar.',
+        detail: 'Faelle werden ab M1 auch offline aus dem lokalen Speicher geladen.',
+        onRetry: _load,
+      );
+    }
 
     return ReadableWidth(
       child: ListView.separated(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(Spacing.lg),
         itemCount: _cases.length,
-        separatorBuilder: (_, __) => const SizedBox(height: 8),
+        separatorBuilder: (_, __) => const SizedBox(height: Spacing.sm),
         itemBuilder: (context, index) {
           final fall = _cases[index];
           return Card(

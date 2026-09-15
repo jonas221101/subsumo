@@ -263,6 +263,11 @@ einen manuell auslösbaren Workflow
 Signing, keine Store-Anbindung, reine Debug-/Testbuilds. iOS und macOS sind
 bewusst ausgeklammert (kostenpflichtiger Apple-Developer-Account nötig).
 
+Hinweis: Ersetzt den frueheren, reinen Android-APK-Workflow
+(`.github/workflows/android-apk.yml`) — dieser wurde entfernt, da
+`manual-builds.yml` denselben Android-Job plus den zusaetzlichen
+Windows-Job in einem Workflow zusammenfasst.
+
 ### Android-APK
 
 1. Im Repo auf GitHub zu **Actions → Manuelle Testbuilds (Android APK /
@@ -280,7 +285,6 @@ bewusst ausgeklammert (kostenpflichtiger Apple-Developer-Account nötig).
    Der Build ist unsigniert (Debug-Keystore) — das ist für einen lokalen
    Testbuild kein Problem, verhindert aber ein Update über eine signierte
    Store-Version, falls es diese später gibt.
-
 ### Windows-Build (optional)
 
 Der Windows-Job (`build-windows`, `runs-on: windows-latest`) läuft im selben
