@@ -152,3 +152,59 @@ class CoverageOut(BaseModel):
     weighted_coverage: float
     by_area: dict[str, float]
     topics: list[CoverageTopicOut]
+
+
+class AccountExportAccountOut(BaseModel):
+    id: int
+    email: str
+    display_name: str
+    exam_date: datetime | None = None
+    daily_minutes: int
+    created_at: datetime
+
+
+class AccountExportUserCardOut(BaseModel):
+    card_slug: str
+    stability: float
+    difficulty: float
+    due: datetime
+    last_review: datetime | None = None
+    reps: int
+    lapses: int
+    state: str
+    content_changed: bool
+
+
+class AccountExportReviewOut(BaseModel):
+    client_id: str
+    card_slug: str
+    rating: int
+    reviewed_at: datetime
+    elapsed_ms: int
+
+
+class AccountExportSubmissionOut(BaseModel):
+    id: int
+    case_slug: str
+    text: str
+    mode: str
+    duration_s: int
+    structure_score: int
+    points: float | None = None
+    report: dict
+    created_at: datetime
+
+
+class AccountExportOut(BaseModel):
+    """Selbstauskunft nach Art. 15 DSGVO - alle zur Nutzer-ID gespeicherten Daten."""
+
+    exported_at: datetime
+    account: AccountExportAccountOut
+    user_cards: list[AccountExportUserCardOut] = []
+    reviews: list[AccountExportReviewOut] = []
+    submissions: list[AccountExportSubmissionOut] = []
+
+
+class AccountDeleteIn(BaseModel):
+    password: str
+    confirm: bool = False
