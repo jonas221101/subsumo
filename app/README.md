@@ -24,6 +24,10 @@ eingecheckt – sie werden einmalig erzeugt:
 flutter create . --platforms=android,ios,windows,web --org de.subsumo
 ```
 
+CI generiert den `web/`-Ordner fuer den Build-Job selbst (nur Web, siehe
+`.github/workflows/ci.yml`) – lokal bleibt der obige Schritt weiterhin
+manuell noetig.
+
 ## Stand
 
 M0-Gerüst: Login, Dashboard mit Coverage, Karteikarten-Review gegen die echte

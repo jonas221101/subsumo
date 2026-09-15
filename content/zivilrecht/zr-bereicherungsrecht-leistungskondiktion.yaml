@@ -1,0 +1,265 @@
+topic:
+  slug: zr-bereicherungsrecht-leistungskondiktion
+  area: zivilrecht
+  title: Leistungskondiktion, § 812 Abs. 1 S. 1 Alt. 1 BGB
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-15'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: zr-kondiktion-begriff-812
+  type: definition
+  front: 'Definiere: Leistungskondiktion, § 812 Abs. 1 S. 1 Alt. 1 BGB'
+  back: Wer durch die Leistung eines anderen etwas ohne rechtlichen Grund erlangt,
+    ist diesem gemaess § 812 Abs. 1 S. 1 Alt. 1 BGB zur Herausgabe verpflichtet. Die
+    Leistungskondiktion greift damit ein, wenn eine bewusste und zweckgerichtete Vermoegenszuwendung
+    ihren rechtlichen Grund - meist ein Kausalgeschaeft - von Anfang an nicht hatte.
+  norms:
+  - § 812 Abs. 1 S. 1 Alt. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-kondiktion-leistungsbegriff
+  type: definition
+  front: 'Definiere: Leistung im bereicherungsrechtlichen Sinn'
+  back: Leistung ist jede bewusste und zweckgerichtete Mehrung fremden Vermoegens.
+    Massgeblich ist der erkennbare Zweck, den der Leistende mit seiner Zuwendung verfolgt
+    - typischerweise die Erfuellung einer (vermeintlichen) Verbindlichkeit. In Mehrpersonenverhaeltnissen
+    bestimmt der Leistungsbegriff, zwischen welchen Beteiligten rueckabgewickelt werden
+    muss, statt schematisch dem tatsaechlichen Vermoegensfluss zu folgen.
+  norms:
+  - § 812 Abs. 1 S. 1 Alt. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-kondiktion-rechtsgrundlosigkeit
+  type: streitstand
+  front: 'Abgrenze: Rechtsgrundlosigkeit nach § 812 Abs. 1 S. 1 Alt. 1 BGB und Wegfall
+    des Rechtsgrundes nach § 812 Abs. 1 S. 2 Alt. 1 BGB'
+  back: Bei § 812 Abs. 1 S. 1 Alt. 1 BGB (condictio indebiti) fehlte der rechtliche
+    Grund fuer die Leistung von Anfang an - etwa weil das zugrunde liegende Kausalgeschaeft
+    nichtig war oder gar nicht existierte. Bei § 812 Abs. 1 S. 2 Alt. 1 BGB (condictio
+    ob causam finitam) bestand der Rechtsgrund zunaechst, ist aber nachtraeglich weggefallen,
+    etwa durch eine aufloesende Bedingung oder einen Ruecktritt ausserhalb der §§
+    346 ff. BGB. Beide Varianten teilen dieselbe Rechtsfolge (§ 818 BGB), unterscheiden
+    sich aber im Zeitpunkt, auf den fuer die Rechtsgrundpruefung abzustellen ist.
+  norms:
+  - § 812 Abs. 1 S. 1 BGB
+  - § 812 Abs. 1 S. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-kondiktion-ausschluss-814
+  type: norm
+  front: Wann ist die Rueckforderung nach § 814 BGB ausgeschlossen?
+  back: Das zur Erfuellung einer Verbindlichkeit Geleistete kann gemaess § 814 BGB
+    nicht zurueckgefordert werden, wenn der Leistende positiv wusste, dass er zur
+    Leistung nicht verpflichtet war. Blosse Zweifel oder fahrlaessige Unkenntnis genuegen
+    nicht - ausgeschlossen ist nur die bewusste Zuwendung trotz Kenntnis der Nichtschuld.
+  norms:
+  - § 814 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-kondiktion-umfang-818-1-2
+  type: norm
+  front: Was muss der Bereicherungsschuldner nach § 818 Abs. 1 und Abs. 2 BGB herausgeben?
+  back: Der Bereicherungsschuldner muss gemaess § 818 Abs. 1 BGB das Erlangte selbst
+    sowie gezogene Nutzungen und alles, was er aufgrund eines erlangten Rechts oder
+    als Ersatz fuer dessen Zerstoerung, Beschaedigung oder Entziehung erwirbt, herausgeben.
+    Ist die Herausgabe wegen der Beschaffenheit des Erlangten - etwa bei verbrauchtem
+    Geld - nicht moeglich, hat er gemaess § 818 Abs. 2 BGB Wertersatz zu leisten.
+  norms:
+  - § 818 Abs. 1 BGB
+  - § 818 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-kondiktion-entreicherung-818-3
+  type: definition
+  front: 'Definiere: Entreicherung, § 818 Abs. 3 BGB'
+  back: Die Verpflichtung zur Herausgabe oder zum Ersatz des Wertes ist gemaess §
+    818 Abs. 3 BGB ausgeschlossen, soweit der Bereicherungsschuldner nicht mehr bereichert
+    ist - etwa weil er das Erlangte fuer eine Ausgabe verbraucht hat, die er ohne
+    den Erhalt nicht getaetigt haette (sogenannte Luxusausgabe/Vermoegensdisposition).
+    Kein Wegfall der Bereicherung liegt dagegen vor, soweit durch das Erlangte ohnehin
+    faellige Ausgaben erspart wurden.
+  norms:
+  - § 818 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-kondiktion-verschaerfte-haftung-819
+  type: norm
+  front: Wann kann sich der Bereicherungsschuldner nicht mehr auf Entreicherung nach
+    § 818 Abs. 3 BGB berufen?
+  back: Kannte der Empfaenger den Mangel des rechtlichen Grundes beim Erwerb oder
+    erfaehrt er ihn spaeter, haftet er ab diesem Zeitpunkt gemaess § 819 Abs. 1 BGB
+    verschaerft nach den allgemeinen Vorschriften (§§ 292, 987 ff. BGB entsprechend)
+    - die Berufung auf § 818 Abs. 3 BGB ist ihm dann verwehrt. Er muss das Erlangte
+    daher auch insoweit ersetzen, als er nach Kenntniserlangung darueber verfuegt
+    hat.
+  norms:
+  - § 819 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-leistungskondiktion
+  title: Anspruch aus Leistungskondiktion, § 812 Abs. 1 S. 1 Alt. 1 BGB
+  norms:
+  - § 812 Abs. 1 S. 1 Alt. 1 BGB
+  - § 814 BGB
+  - § 818 Abs. 1 BGB
+  - § 818 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Etwas erlangt
+    hinweis: Jeder Vermoegensvorteil, z. B. Eigentum, Besitz, Geld, Befreiung von
+      einer Verbindlichkeit.
+  - label: II. Durch Leistung eines anderen
+    children:
+    - label: 1. Bewusste, zweckgerichtete Mehrung fremden Vermoegens
+    - label: '2. In Mehrpersonenverhaeltnissen: massgebliches Leistungsverhaeltnis
+        bestimmen'
+  - label: III. Ohne rechtlichen Grund
+    children:
+    - label: 1. Rechtsgrund von Anfang an nicht bestanden, § 812 Abs. 1 S. 1 Alt.
+        1 BGB
+    - label: 2. Abgrenzung zum nachtraeglichen Wegfall, § 812 Abs. 1 S. 2 Alt. 1 BGB
+  - label: IV. Kein Ausschluss der Kondiktion
+    children:
+    - label: 1. § 814 BGB - keine Kenntnis der Nichtschuld bei Leistung
+    - label: 2. § 817 S. 2 BGB - kein beiderseitiger Gesetzes- oder Sittenverstoss
+  - label: 'V. Rechtsfolge: Herausgabe des Erlangten, hilfsweise Wertersatz, § 818
+      Abs. 1, 2 BGB'
+  - label: VI. Umfang ggf. beschraenkt durch Entreicherung, § 818 Abs. 3 BGB
+    hinweis: Ausgeschlossen bei verschaerfter Haftung wegen Kenntnis des Mangels,
+      § 819 Abs. 1 BGB.
+faelle:
+- slug: zr-fall-doppelt-bezahlte-werklohnrechnung
+  title: Die doppelt angewiesene Werklohnrechnung
+  difficulty: 3
+  minutes: 55
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: Unternehmer U beauftragt Handwerker H mit Reparaturarbeiten fuer 1.200 Euro.
+    H fuehrt die Arbeiten aus und stellt eine Rechnung ueber 1.200 Euro, die die Buchhaltung
+    des U ordnungsgemaess anweist. Wegen eines internen Buchhaltungsfehlers wird dieselbe
+    Rechnung zwei Wochen spaeter ein zweites Mal angewiesen, sodass H insgesamt 2.400
+    Euro erhaelt, obwohl nur 1.200 Euro geschuldet waren. H bemerkt die Doppelzahlung
+    sofort beim naechsten Kontoabgleich, unternimmt aber nichts. Kurz darauf gibt
+    er 800 Euro der ueberzahlten Summe fuer eine Urlaubsreise aus, die er sich ohne
+    die zweite Zahlung nicht geleistet haette; die restlichen 400 Euro befinden sich
+    noch auf seinem Konto. U verlangt von H Rueckzahlung von 1.200 Euro.
+  question: Kann U von H Zahlung von 1.200 Euro verlangen?
+  steps:
+  - prompt: Formuliere den Obersatz.
+    erwartung: U koennte gegen H einen Anspruch auf Rueckzahlung von 1.200 Euro aus
+      § 812 Abs. 1 S. 1 Alt. 1 BGB haben.
+  - prompt: Hat H durch eine Leistung des U etwas erlangt?
+    erwartung: Ja - H hat durch die zweite, von U bewusst und zweckgerichtet zur (vermeintlichen)
+      Erfuellung angewiesene Zahlung 1.200 Euro erlangt.
+  - prompt: War diese Leistung ohne rechtlichen Grund?
+    erwartung: Ja - der Werklohnanspruch des H aus § 631 Abs. 1 BGB war bereits durch
+      die erste Zahlung gemaess § 362 Abs. 1 BGB erloschen; fuer die zweite Zahlung
+      bestand daher von Anfang an kein Rechtsgrund.
+  - prompt: Ist die Rueckforderung nach § 814 BGB ausgeschlossen?
+    erwartung: Nein - U wusste beim Anweisen der zweiten Zahlung wegen des Buchhaltungsfehlers
+      nicht, dass er nicht mehr verpflichtet war; positive Kenntnis der Nichtschuld
+      liegt nicht vor.
+  - prompt: Kann sich H hinsichtlich der fuer die Reise ausgegebenen 800 Euro auf
+      Entreicherung nach § 818 Abs. 3 BGB berufen?
+    erwartung: Dem Grunde nach koennte eine Entreicherung vorliegen, da H sich die
+      Reise ohne die Doppelzahlung nicht geleistet haette (keine ersparten Aufwendungen).
+  - prompt: Steht dem ein Umstand entgegen?
+    erwartung: Ja - H hatte die Doppelzahlung bereits beim Kontoabgleich bemerkt,
+      bevor er die 800 Euro fuer die Reise ausgab. Er kannte den Mangel des rechtlichen
+      Grundes also schon vor der Vermoegensdisposition und haftet ab diesem Zeitpunkt
+      gemaess § 819 Abs. 1 BGB verschaerft; die Berufung auf § 818 Abs. 3 BGB ist
+      ihm deshalb fuer die 800 Euro verwehrt.
+  - prompt: Ergebnis?
+    erwartung: U kann von H die vollen 1.200 Euro verlangen - 400 Euro sind ohnehin
+      noch vorhanden, die verbrauchten 800 Euro muss H wegen § 819 Abs. 1 BGB trotz
+      Entreicherung ersetzen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Obersatz mit § 812 Abs. 1 S. 1 Alt. 1 BGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 812 Abs. 1 S. 1 Alt. 1 BGB
+      keywords:
+      - '812'
+      - Leistungskondiktion
+    - id: p2
+      label: Leistung des U als bewusste, zweckgerichtete Vermoegensmehrung erkannt
+      weight: 1.0
+      required: false
+      keywords:
+      - zweckgerichtet
+      - Leistung
+    - id: p3
+      label: Rechtsgrundlosigkeit erkannt, da Werklohnanspruch bereits durch erste
+        Zahlung gemaess § 362 Abs. 1 BGB erloschen war
+      weight: 2.0
+      required: true
+      norms:
+      - § 362 Abs. 1 BGB
+      keywords:
+      - '362'
+      - erloschen
+      - Rechtsgrund
+    - id: p4
+      label: Kein Ausschluss nach § 814 BGB mangels Kenntnis des U bei Leistung
+      weight: 1.0
+      required: false
+      norms:
+      - § 814 BGB
+      keywords:
+      - '814'
+      - Kenntnis der Nichtschuld
+    - id: p5
+      label: Entreicherung nach § 818 Abs. 3 BGB fuer die 800 Euro dem Grunde nach
+        erwogen (keine ersparten Aufwendungen)
+      weight: 1.5
+      required: false
+      norms:
+      - § 818 Abs. 3 BGB
+      keywords:
+      - '818'
+      - Entreicherung
+    - id: p6
+      label: Verschaerfte Haftung nach § 819 Abs. 1 BGB wegen Kenntnis des H vor der
+        Vermoegensdisposition erkannt und Ausschluss der Entreicherungseinrede fuer
+        die 800 Euro begruendet
+      weight: 3.5
+      required: true
+      norms:
+      - § 819 Abs. 1 BGB
+      keywords:
+      - '819'
+      - verschaerfte Haftung
+      - Kenntnis
+    - id: p7
+      label: 'Ergebnis: Anspruch auf volle 1.200 Euro'
+      weight: 1.0
+      required: false
+      keywords:
+      - 1.200 Euro
+      - Anspruch besteht

@@ -29,11 +29,27 @@ reportsTo Content-Koordinator, siehe `ops/agents/content/content-koordinator.md`
    Runden `True` wird.
 3. Nach endgültiger Ablehnung: Kontext im BACKLOG-Eintrag schärfen (genauere
    Normangaben, engerer thematischer Zuschnitt), nicht die Gates umgehen.
+4. Nach angenommenem Batch (`result.accepted is True`): BACKLOG-Eintrag und
+   neue `content/zivilrecht/*.yaml`-Dateien auf einem eigenen Feature-Branch
+   committen und pushen, `python scripts/validate_content.py` sowie die in
+   `CONTRIBUTING.md` vorgeschriebenen Backend-Checks (`ruff check .`,
+   `pytest -q`) ausführen und wahrheitsgemäß dokumentieren, dann mit
+   `gh pr create` einen Pull Request anlegen und im Aufgabenthread
+   referenzieren. Nutze dafür die Anleitung im Skill `github-pr-workflow`
+   (Titel/Beschreibung, Verifikationsnachweise).
+5. Vollständigen Commit-SHA und überprüfbare Nachweise mit
+   `request-review TASK --to REVIEWER_UUID --commit SHA --body-file
+   nachweise.md` an den Reviewer übergeben (`ops/agents/reviewer.md`). Ohne
+   diesen expliziten Schritt bleibt der PR unbeachtet liegen - Reviewer und
+   Merger haben keinen Heartbeat und reagieren nur auf explizite
+   Zuweisung/Handoff.
 
 ## Rechte-Grenzen
 
-Kein Merge, kein direkter Push auf `main`. Keine Änderung an Gates oder
-Pipeline-Code - das ist Entwickler-Arbeit. Kein Anlegen neuer Firmenagenten
-(keine `canCreateAgents`-Berechtigung). Themenauswahl im BACKLOG-Dict nur
-nach expliziter Weisung des Content-Koordinators, keine eigenmächtige
+Pushes sind nur auf einen eigenen Feature-Branch erlaubt. Nach erfolgreichen
+Checks darfst du mit `gh pr create` einen Pull Request anlegen. Kein Merge,
+kein direkter Push auf `main`. Keine Änderung an Gates oder Pipeline-Code -
+das ist Entwickler-Arbeit. Kein Anlegen neuer Firmenagenten (keine
+`canCreateAgents`-Berechtigung). Themenauswahl im BACKLOG-Dict nur nach
+expliziter Weisung des Content-Koordinators, keine eigenmächtige
 Erweiterung.
