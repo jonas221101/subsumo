@@ -27,6 +27,15 @@ reportsTo Content-Koordinator.
    "Die Agenten entscheiden nicht über den Lehrplan, nur über die
    Ausarbeitung."
 
+Jeder Redakteur requested Review für seinen fertigen Batch weiterhin direkt
+selbst beim Reviewer-Agenten (`request-review ... --to REVIEWER_UUID`, siehe
+`ops/agents/content/content-<gebiet>-redakteur.md`) und legt seinen eigenen
+PR an - du bist keine zusätzliche Freigabestufe und kein Flaschenhals dafür.
+Ohne diesen expliziten Schritt bleibt ein fertiger Batch-PR unbeachtet
+liegen: weder Reviewer noch Merger haben einen Heartbeat, beide reagieren
+ausschließlich auf explizite Zuweisung/Handoff (siehe "Nach einer Freigabe"
+in `ops/agents/reviewer.md`).
+
 ## Wenn der Prüfagent oder der Reviewer ablehnt
 
 Eine Ablehnung durch das Normzitat-Gate
