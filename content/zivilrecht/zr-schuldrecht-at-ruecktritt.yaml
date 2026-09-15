@@ -1,0 +1,269 @@
+topic:
+  slug: zr-schuldrecht-at-ruecktritt
+  area: zivilrecht
+  title: Ruecktritt vom gegenseitigen Vertrag, §§ 323, 346 ff. BGB
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-15'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: zr-ruecktritt-voraussetzungen-323-1
+  type: definition
+  front: 'Definiere: Rücktrittsrecht bei nicht vertragsgemäßer Leistung, § 323 Abs.
+    1 BGB'
+  back: Erbringt der Schuldner bei einem gegenseitigen Vertrag eine fällige Leistung
+    nicht oder nicht vertragsgemäß, kann der Gläubiger zurücktreten, wenn er dem Schuldner
+    erfolglos eine angemessene Frist zur Leistung oder Nacherfüllung bestimmt hat
+    (§ 323 Abs. 1 BGB). Das Rücktrittsrecht setzt damit grundsätzlich eine erfolglos
+    verstrichene Nachfrist voraus - anders als der Schadensersatz statt der Leistung
+    erfordert es kein Vertretenmüssen des Schuldners.
+  norms:
+  - § 323 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-ruecktritt-entbehrlichkeit-323-2
+  type: norm
+  front: In welchen Fällen ist die Fristsetzung nach § 323 Abs. 2 BGB entbehrlich?
+  back: Die Fristsetzung ist entbehrlich, wenn der Schuldner die Leistung ernsthaft
+    und endgültig verweigert (§ 323 Abs. 2 Nr. 1 BGB), wenn er die Leistung nicht
+    zu einem im Vertrag bestimmten Termin oder innerhalb einer bestimmten Frist erbringt
+    und der Gläubiger im Vertrag den Fortbestand seines Leistungsinteresses an die
+    Rechtzeitigkeit der Leistung gebunden hat (relatives Fixgeschäft, § 323 Abs. 2
+    Nr. 2 BGB), oder wenn besondere Umstände vorliegen, die unter Abwägung der beiderseitigen
+    Interessen den sofortigen Rücktritt rechtfertigen (§ 323 Abs. 2 Nr. 3 BGB).
+  norms:
+  - § 323 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-ruecktritt-teilleistung-323-5-satz-1
+  type: norm
+  front: Wann berechtigt eine Teilleistung nach § 323 Abs. 5 S. 1 BGB zum Rücktritt
+    vom ganzen Vertrag?
+  back: Hat der Schuldner eine Teilleistung bewirkt, kann der Gläubiger vom ganzen
+    Vertrag nur zurücktreten, wenn er an der Teilleistung kein Interesse hat (§ 323
+    Abs. 5 S. 1 BGB). Besteht ein solches Interesse fort, bleibt nur der Rücktritt
+    hinsichtlich des nicht erbrachten Teils möglich, nicht vom gesamten Vertragsverhältnis.
+  norms:
+  - § 323 Abs. 5 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-ruecktritt-unerheblich-323-5-satz-2
+  type: norm
+  front: Wann ist der Rücktritt wegen einer nicht vertragsgemäßen Leistung nach §
+    323 Abs. 5 S. 2 BGB ausgeschlossen?
+  back: Hat der Schuldner die Leistung zwar erbracht, aber nicht vertragsgemäß, ist
+    der Rücktritt vom ganzen Vertrag ausgeschlossen, wenn die Pflichtverletzung unerheblich
+    ist (§ 323 Abs. 5 S. 2 BGB). Die Vorschrift verhindert, dass geringfügige Mängel
+    oder Abweichungen die vollständige Rückabwicklung eines Vertrags auslösen.
+  norms:
+  - § 323 Abs. 5 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-ruecktritt-ausschluss-323-6
+  type: norm
+  front: Wann ist der Rücktritt nach § 323 Abs. 6 BGB ausgeschlossen?
+  back: Der Rücktritt ist ausgeschlossen, wenn der Gläubiger für den Umstand, der
+    ihn zum Rücktritt berechtigen würde, allein oder weit überwiegend verantwortlich
+    ist, oder wenn dieser Umstand während eines Annahmeverzugs des Gläubigers eintritt,
+    ohne dass der Schuldner ihn zu vertreten hat (§ 323 Abs. 6 BGB). Wer die Störung
+    selbst maßgeblich verursacht hat, soll sich nicht durch Rücktritt vom Vertrag
+    lösen können.
+  norms:
+  - § 323 Abs. 6 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-ruecktritt-erklaerung-349
+  type: definition
+  front: 'Definiere: Rücktrittserklärung, § 349 BGB'
+  back: Der Rücktritt erfolgt durch Erklärung gegenüber dem anderen Teil (§ 349 BGB)
+    - er ist ein Gestaltungsrecht, das durch einseitige, empfangsbedürftige Willenserklärung
+    ausgeübt wird und den Vertrag nicht automatisch, sondern erst mit Zugang der Erklärung
+    in ein Rückgewährschuldverhältnis umwandelt. Eine besondere Form ist nicht vorgeschrieben.
+  norms:
+  - § 349 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-ruecktritt-rueckgewaehr-346-1
+  type: definition
+  front: 'Definiere: Rückgewährschuldverhältnis, § 346 Abs. 1 BGB'
+  back: Tritt eine Partei wirksam vom Vertrag zurück, sind die empfangenen Leistungen
+    zurückzugewähren und die gezogenen Nutzungen herauszugeben (§ 346 Abs. 1 BGB).
+    Der ursprüngliche Vertrag wird dadurch nicht rückwirkend beseitigt, sondern in
+    ein Abwicklungsverhältnis (Rückgewährschuldverhältnis) umgestaltet, das eigene,
+    aus dem Vertrag abgeleitete Pflichten begründet.
+  norms:
+  - § 346 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-ruecktritt-wertersatz-346-2
+  type: norm
+  front: Wann schuldet der Rückgewährpflichtige statt Rückgabe Wertersatz, § 346 Abs.
+    2 BGB?
+  back: Statt der Rückgewähr hat der Schuldner Wertersatz zu leisten, soweit die Rückgewähr
+    oder Herausgabe nach der Natur des Erlangten ausgeschlossen ist (§ 346 Abs. 2
+    S. 1 Nr. 1 BGB), er den erhaltenen Gegenstand verbraucht, veräußert, belastet,
+    verarbeitet oder umgestaltet hat (Nr. 2), oder der Gegenstand sich verschlechtert
+    hat oder untergegangen ist (Nr. 3) - jeweils mit Ausnahme der bloß bestimmungsgemäßen
+    Ingebrauchnahme.
+  norms:
+  - § 346 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-ruecktritt-zug-um-zug-348
+  type: norm
+  front: Wie sind die Rückgewährpflichten nach § 348 BGB zu erfüllen?
+  back: Die aus dem Rücktritt entstehenden Verpflichtungen der Parteien sind Zug um
+    Zug zu erfüllen - § 348 BGB erklärt die §§ 320, 322 BGB für entsprechend anwendbar.
+    Keine Partei muss also vorleisten; jede kann ihre eigene Rückgewährpflicht von
+    der gleichzeitigen Erfüllung der Gegenpflicht abhängig machen.
+  norms:
+  - § 348 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-ruecktritt-323-346
+  title: Wirksamer Rücktritt und seine Rechtsfolgen, §§ 323, 346 ff. BGB
+  norms:
+  - § 323 Abs. 1 BGB
+  - § 323 Abs. 2 BGB
+  - § 346 Abs. 1 BGB
+  - § 349 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Rücktrittsrecht entstanden
+    children:
+    - label: 1. Gegenseitiger (Austausch-)Vertrag
+    - label: '2. Pflichtverletzung: Nichtleistung oder nicht vertragsgemäße Leistung'
+    - label: 3. Erfolglose Fristsetzung, § 323 Abs. 1 BGB
+      children:
+      - label: a) Entbehrlichkeit nach § 323 Abs. 2 BGB
+    - label: 4. Kein Ausschluss nach § 323 Abs. 5, 6 BGB
+  - label: II. Kein Erlöschen des Rücktrittsrechts
+    hinweis: Etwa durch vorherige Erfüllung, Verzicht oder Verwirkung.
+  - label: III. Rücktrittserklärung gegenüber dem anderen Teil, § 349 BGB
+  - label: 'IV. Rechtsfolge: Rückgewährschuldverhältnis'
+    children:
+    - label: 1. Rückgabe der erhaltenen Leistungen, § 346 Abs. 1 BGB
+    - label: 2. Wertersatz statt Rückgabe, § 346 Abs. 2 BGB
+    - label: 3. Zug-um-Zug-Erfüllung, § 348 BGB
+faelle:
+- slug: zr-fall-haustuer-fixgeschaeft
+  title: Die verspätete Haustür
+  difficulty: 3
+  minutes: 55
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: Hausbesitzerin U beauftragt Schreinerbetrieb H mit der Lieferung und Montage
+    einer neuen Haustür. Weil U am 1. April eine fest terminierte Sicherheitsabnahme
+    ihrer Gebäudeversicherung hat, die eine funktionsfähige, einbruchhemmende Tür
+    voraussetzt, vereinbaren U und H ausdrücklich schriftlich, dass die Montage 'spätestens
+    bis zum 1. April' erfolgen muss und U 'nach diesem Termin kein Interesse mehr
+    an der verspäteten Leistung' hat. U zahlt bei Vertragsschluss eine Anzahlung von
+    1.500 Euro; H liefert die fertige, originalverpackte Tür bereits einige Tage vorher
+    an, montiert sie aber wegen Personalmangels nicht bis zum 1. April. Die Sicherheitsabnahme
+    scheitert deshalb. Am 2. April erklärt U gegenüber H den Rücktritt vom Vertrag
+    und verlangt Rückzahlung der 1.500 Euro; sie bietet gleichzeitig an, die unbenutzte,
+    weiterhin originalverpackte Tür zurückzugeben. H verweigert die Rückzahlung mit
+    dem Hinweis, U habe ihm nie eine Frist zur Montage gesetzt.
+  question: Kann U von H gemäß § 346 Abs. 1 BGB die Rückzahlung der Anzahlung verlangen,
+    obwohl sie H keine Frist zur Nacherfüllung gesetzt hat?
+  steps:
+  - prompt: Formuliere den Obersatz zum Rückzahlungsanspruch der U.
+    erwartung: U könnte gegen H einen Anspruch auf Rückzahlung der 1.500 Euro aus
+      § 346 Abs. 1 BGB haben, wenn sie wirksam vom Vertrag zurückgetreten ist.
+  - prompt: Liegt eine Pflichtverletzung des H vor?
+    erwartung: Ja - H hat die vereinbarte Montageleistung nicht bis zum vereinbarten
+      Termin 1. April erbracht.
+  - prompt: War eine Fristsetzung zur Nacherfüllung erforderlich, § 323 Abs. 1 BGB?
+    erwartung: Grundsätzlich ja, hier aber entbehrlich.
+  - prompt: Warum war die Fristsetzung hier entbehrlich?
+    erwartung: Weil U und H den 1. April ausdrücklich als relatives Fixgeschäft vereinbart
+      haben und U ihr Leistungsinteresse erklärtermaßen an die Rechtzeitigkeit der
+      Leistung gebunden hat - die Fristsetzung ist damit nach § 323 Abs. 2 Nr. 2 BGB
+      entbehrlich.
+  - prompt: Ist der Rücktritt wirksam erklärt worden?
+    erwartung: Ja, U hat den Rücktritt am 2. April gegenüber H erklärt, § 349 BGB.
+  - prompt: Welche Rechtsfolgen ergeben sich aus dem Rücktritt für beide Seiten?
+    erwartung: 'Es entsteht ein Rückgewährschuldverhältnis: H muss die erhaltene Anzahlung
+      von 1.500 Euro zurückzahlen, U muss im Gegenzug die unbenutzte, originalverpackte
+      Tür zurückgeben, § 346 Abs. 1 BGB; beide Pflichten sind Zug um Zug zu erfüllen,
+      § 348 BGB.'
+  - prompt: Wie ist das Ergebnis zusammenzufassen?
+    erwartung: U kann von H die Rückzahlung der 1.500 Euro verlangen, muss im Gegenzug
+      aber die Tür Zug um Zug zurückgeben; eine vorherige Fristsetzung war wegen des
+      vereinbarten Fixgeschäfts nicht erforderlich.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Obersatz mit § 346 Abs. 1 BGB als Anspruchsgrundlage
+      weight: 1.0
+      required: false
+      norms:
+      - § 346 Abs. 1 BGB
+      keywords:
+      - '346'
+      - Rückgewähr
+    - id: p2
+      label: Pflichtverletzung durch Nichtmontage bis zum vereinbarten Termin festgestellt
+      weight: 1.0
+      required: false
+      keywords:
+      - nicht montiert
+      - Pflichtverletzung
+    - id: p3
+      label: Entbehrlichkeit der Fristsetzung wegen relativen Fixgeschäfts nach §
+        323 Abs. 2 Nr. 2 BGB sauber begründet
+      weight: 3.5
+      required: true
+      norms:
+      - § 323 Abs. 2 BGB
+      keywords:
+      - Fixgeschäft
+      - '323'
+      - entbehrlich
+    - id: p4
+      label: Wirksame Rücktrittserklärung gegenüber H, § 349 BGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 349 BGB
+      keywords:
+      - '349'
+      - Rücktrittserklärung
+    - id: p5
+      label: Rückgewährschuldverhältnis mit Zug-um-Zug-Abwicklung erkannt, §§ 346
+        Abs. 1, 348 BGB
+      weight: 2.0
+      required: true
+      norms:
+      - § 346 Abs. 1 BGB
+      - § 348 BGB
+      keywords:
+      - Zug um Zug
+      - '348'
+      - Rückgabe
