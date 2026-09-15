@@ -1,0 +1,254 @@
+topic:
+  slug: zr-at-auslegung
+  area: zivilrecht
+  title: Willenserklaerung und Auslegung, §§ 133, 157 BGB
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-15'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: zr-at-auslegung-ziel-133-157
+  type: definition
+  front: 'Definiere: Ziel der Auslegung nach §§ 133, 157 BGB'
+  back: 'Die Auslegung von Willenserklaerungen und Vertraegen dient der Ermittlung
+    ihres rechtlich massgeblichen Inhalts. Nach § 133 BGB ist der wirkliche Wille
+    zu erforschen, ohne am buchstaeblichen Sinn des Ausdrucks zu haften; nach § 157
+    BGB sind Vertraege so auszulegen, wie Treu und Glauben mit Ruecksicht auf die
+    Verkehrssitte es erfordern. Beide Vorschriften werden gemeinsam angewandt: § 133
+    BGB betont den Willen, § 157 BGB liefert den objektivierten Massstab, wenn ein
+    uebereinstimmender Wille nicht feststellbar ist.'
+  norms:
+  - § 133 BGB
+  - § 157 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-auslegung-empfangsbeduerftig
+  type: definition
+  front: 'Definiere: empfangsbeduerftige Willenserklaerung'
+  back: Eine empfangsbeduerftige Willenserklaerung wird erst wirksam, wenn sie dem
+    Erklaerungsempfaenger zugegangen ist, § 130 Abs. 1 BGB. Bis zum Zugang kann sie
+    widerrufen werden, wenn der Widerruf vorher oder gleichzeitig zugeht. Beispiele
+    sind Angebot, Annahme, Kuendigung, Anfechtungserklaerung und Mahnung.
+  norms:
+  - § 130 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-auslegung-nicht-empfangsbeduerftig
+  type: definition
+  front: 'Definiere: nicht empfangsbeduerftige Willenserklaerung'
+  back: 'Eine nicht empfangsbeduerftige Willenserklaerung wird bereits mit ihrer Abgabe
+    wirksam, ohne dass es des Zugangs bei einem bestimmten Empfaenger bedarf. Klassisches
+    Beispiel ist die Auslobung: Wer durch oeffentliche Bekanntmachung eine Belohnung
+    fuer die Vornahme einer Handlung aussetzt, ist zur Zahlung an denjenigen verpflichtet,
+    der die Handlung vorgenommen hat, auch ohne Ruecksicht auf die Auslobung, § 657
+    BGB.'
+  norms:
+  - § 657 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-auslegung-natuerliche-auslegung
+  type: definition
+  front: 'Definiere: natuerliche (subjektive) Auslegung'
+  back: Steht fest, dass Erklaerender und Erklaerungsempfaenger eine Erklaerung uebereinstimmend
+    im selben Sinn verstanden haben, gilt dieser uebereinstimmend gewollte Sinn -
+    unabhaengig davon, ob er vom objektiven (aeusseren) Erklaerungswert abweicht.
+    Der Empfaengerschutz, der die normative Auslegung rechtfertigt, ist hier entbehrlich,
+    weil kein Missverstaendnis vorliegt.
+  norms:
+  - § 133 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-auslegung-falsa-demonstratio
+  type: definition
+  front: Was besagt der Grundsatz 'falsa demonstratio non nocet'?
+  back: 'Eine falsche Bezeichnung schadet nicht: Haben die Parteien uebereinstimmend
+    etwas anderes gewollt als das, was sie woertlich erklaert haben, gilt das uebereinstimmend
+    Gewollte, nicht der objektive Wortlaut. Der Grundsatz ist Ausdruck der natuerlichen
+    Auslegung nach § 133 BGB und geht der normativen Auslegung vor, weil der wirkliche
+    Wille Vorrang vor dem blossen Erklaerungswert hat.'
+  norms:
+  - § 133 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-auslegung-empfaengerhorizont
+  type: definition
+  front: 'Definiere: objektiver Empfaengerhorizont'
+  back: 'Der objektive Empfaengerhorizont ist der Massstab der normativen Auslegung:
+    Massgeblich ist, wie ein verstaendiger Erklaerungsempfaenger die Erklaerung nach
+    Treu und Glauben unter Beruecksichtigung aller ihm erkennbaren Umstaende und der
+    Verkehrssitte verstehen durfte - nicht, wie der Erklaerende sie tatsaechlich gemeint
+    hat oder wie der Empfaenger sie subjektiv verstanden hat.'
+  norms:
+  - § 133 BGB
+  - § 157 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-auslegung-normative-auslegung
+  type: definition
+  front: 'Definiere: normative (objektivierte) Auslegung'
+  back: 'Kann ein uebereinstimmender wirklicher Wille beider Seiten nicht festgestellt
+    werden, ist die Erklaerung nach dem objektiven Empfaengerhorizont auszulegen:
+    Massgeblich ist, wie ein verstaendiger Empfaenger sie nach Treu und Glauben und
+    der Verkehrssitte verstehen durfte, §§ 133, 157 BGB. Diese Auslegung dient dem
+    Vertrauensschutz des Erklaerungsempfaengers.'
+  norms:
+  - § 133 BGB
+  - § 157 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-auslegung-vorrang-vor-anfechtung
+  type: streitstand
+  front: 'Abgrenze: In welchem Verhaeltnis stehen Auslegung und Anfechtung zueinander?'
+  back: 'Die Auslegung geht der Anfechtung denknotwendig vor: Erst durch Auslegung
+    wird ermittelt, welchen Inhalt eine Erklaerung tatsaechlich hat. Ergibt die Auslegung,
+    dass Erklaerender und Empfaenger uebereinstimmend dasselbe gemeint haben (natuerliche
+    Auslegung), bleibt fuer eine Anfechtung wegen Irrtums kein Raum, weil gar kein
+    Auseinanderfallen von Wille und Erklaerung vorliegt. Erst wenn die Auslegung -
+    ggf. normativ nach dem Empfaengerhorizont - einen Erklaerungsinhalt ergibt, der
+    vom wirklichen Willen des Erklaerenden abweicht, kommt eine Anfechtung nach §
+    119 Abs. 1 BGB in Betracht. Ein haeufiger Klausurfehler ist es, direkt anzufechten,
+    ohne zuvor auszulegen.'
+  norms:
+  - § 133 BGB
+  - § 119 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-auslegung
+  title: Auslegung einer Willenserklaerung, §§ 133, 157 BGB
+  norms:
+  - § 133 BGB
+  - § 157 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Auslegungsbeduerftigkeit
+    hinweis: Nur bei mehrdeutigem oder auslegungsfaehigem Erklaerungsinhalt; eindeutige
+      Erklaerungen bedeuten nicht automatisch, dass sie nicht auszulegen sind (vgl.
+      falsa demonstratio).
+  - label: II. Natuerliche Auslegung, § 133 BGB
+    children:
+    - label: 1. Uebereinstimmender wirklicher Wille beider Seiten feststellbar?
+    - label: '2. Falls ja: dieser Wille ist massgeblich (falsa demonstratio non nocet)'
+  - label: III. Normative Auslegung, §§ 133, 157 BGB
+    children:
+    - label: 1. Kein uebereinstimmender wirklicher Wille feststellbar
+    - label: '2. Objektiver Empfaengerhorizont: Verstaendnis eines redlichen Erklaerungsempfaengers'
+    - label: 3. Beruecksichtigung von Treu und Glauben und Verkehrssitte, § 157 BGB
+  - label: 'IV. Ergebnis: massgeblicher Erklaerungsinhalt'
+  - label: V. Abgrenzung zur Anfechtung
+    hinweis: Erst nach Feststellung des Erklaerungsinhalts durch Auslegung ist zu
+      pruefen, ob dieser vom wirklichen Willen abweicht und eine Anfechtung nach §
+      119 BGB in Betracht kommt.
+faelle:
+- slug: zr-fall-verwechseltes-fahrradmodell
+  title: Das verwechselte Fahrradmodell
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: 'Verkaeufer V bietet Kaeuferin K in einer E-Mail sein gebrauchtes Rennrad
+    des Herstellers "Radex" zum Preis von 450 Euro an. V besitzt zwei Rennraeder dieses
+    Herstellers - ein Modell "Sprint 200" und ein baugleich aussehendes, aber hoeherwertiges
+    Modell "Sprint 300". Beim Verfassen der E-Mail verschreibt sich V und schreibt
+    versehentlich "Sprint 300", meint aber weiterhin das "Sprint 200"-Modell anzubieten.
+    K antwortet: "Ich nehme das Sprint 300 fuer 450 Euro." In einem spaeteren Telefonat
+    stellen beide fest, dass ihnen ein Irrtum bei der Modellbezeichnung unterlaufen
+    ist, sie sich ueber das gemeinte Rad (das "Sprint 200") aber tatsaechlich einig
+    waren. V weigert sich nun, das "Sprint 200" zu uebergeben, und beruft sich darauf,
+    dass im Schriftwechsel "Sprint 300" stehe.'
+  question: Welches Fahrrad schuldet V der K zu uebereignen und zu uebergeben?
+  steps:
+  - prompt: Formuliere den Obersatz.
+    erwartung: K koennte gegen V einen Anspruch auf Uebergabe und Uebereignung eines
+      Fahrrads aus § 433 Abs. 1 S. 1 BGB haben.
+  - prompt: Was ist Voraussetzung fuer einen wirksamen Kaufvertrag ueber ein bestimmtes
+      Fahrrad?
+    erwartung: Eine wirksame Einigung ueber Angebot und Annahme mit uebereinstimmendem
+      Inhalt hinsichtlich des Kaufgegenstands, §§ 145 ff. BGB.
+  - prompt: Ist der Vertrag ueber das im Wortlaut genannte Modell 'Sprint 300' zustande
+      gekommen?
+    erwartung: Nein - massgeblich ist nicht der objektive Wortlaut der Erklaerungen,
+      sondern der uebereinstimmend gewollte Sinn. Beide Parteien meinten tatsaechlich
+      das Modell "Sprint 200".
+  - prompt: Welcher Auslegungsgrundsatz ist hier einschlaegig?
+    erwartung: 'Der Grundsatz falsa demonstratio non nocet (§ 133 BGB): Eine falsche
+      Bezeichnung schadet nicht, wenn beide Seiten uebereinstimmend dasselbe gemeint
+      haben.'
+  - prompt: Ist fuer eine Anfechtung nach § 119 BGB noch Raum?
+    erwartung: Nein - eine Anfechtung setzt ein Auseinanderfallen von Wille und Erklaerung
+      voraus. Da der Vertrag durch Auslegung bereits mit dem Inhalt "Sprint 200" zustande
+      gekommen ist, wollten beide Parteien genau das, was gilt; ein Anfechtungsgrund
+      fehlt.
+  - prompt: Zu welchem Ergebnis kommst du?
+    erwartung: Der Kaufvertrag ist ueber das Modell "Sprint 200" zustande gekommen;
+      K kann von V Uebergabe und Uebereignung dieses Fahrrads verlangen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Obersatz mit § 433 Abs. 1 S. 1 BGB formuliert
+      weight: 1.0
+      required: false
+      norms:
+      - § 433 Abs. 1 S. 1 BGB
+      keywords:
+      - '433'
+    - id: p2
+      label: Erkennt, dass der objektive Wortlaut ('Sprint 300') nicht automatisch
+        massgeblich ist
+      weight: 2.0
+      required: true
+      norms:
+      - § 133 BGB
+      keywords:
+      - Wortlaut
+      - wirklicher Wille
+    - id: p3
+      label: Wendet falsa demonstratio non nocet korrekt an und begruendet mit uebereinstimmendem
+        Willen
+      weight: 3.0
+      required: true
+      norms:
+      - § 133 BGB
+      keywords:
+      - falsa demonstratio
+      - uebereinstimmend
+    - id: p4
+      label: Verneint eine Anfechtung mangels Auseinanderfallen von Wille und Erklaerung
+      weight: 2.0
+      required: false
+      norms:
+      - § 119 Abs. 1 BGB
+      keywords:
+      - Anfechtung
+      - kein Irrtum
+    - id: p5
+      label: 'Ergebnis: Kaufvertrag ueber das Modell Sprint 200'
+      weight: 1.0
+      required: false
+      keywords:
+      - Sprint 200
+      - Anspruch besteht
