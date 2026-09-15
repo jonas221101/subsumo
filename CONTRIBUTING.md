@@ -78,6 +78,12 @@ flutter test
 Kein Gate wird uebersprungen, weil "die Aenderung trivial ist". Trivial und
 kaputt schliessen sich nicht aus.
 
+Bei Aenderungen an Screens, Flows oder Komponenten in `app/lib`: vor dem PR
+eine Durchsicht mit der Design-Critique-Skill
+(`skill://1077519e-0ee1-484a-b163-50fcc3bbcb3d?s=design-critique`) durchfuehren.
+Must-fix-Punkte vor der Review-Anfrage beheben oder im PR bewusst begruenden,
+warum sie (noch) nicht behoben werden.
+
 ## Pull Request
 
 ```bash
