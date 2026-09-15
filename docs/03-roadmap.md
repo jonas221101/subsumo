@@ -1,15 +1,28 @@
 # Roadmap
 
+> **Stand 15.09.2026 — Termin vom Nutzer gesetzt: Release am 29.09.2026.**
+> Damit ist dieses Dokument nicht mehr der Releaseplan, sondern die
+> **Nach-Release-Roadmap**. Der Schnitt für v1.0 steht in
+> [`docs/18-release-2-wochen.md`](18-release-2-wochen.md), Preis- und
+> Kostenmodell in [`docs/19-kosten-preis-budget.md`](19-kosten-preis-budget.md).
+> Die Phasen A–D unten beschreiben ab sofort den Weg von v1.0 zum hier
+> ursprünglich definierten Vollausbau (v1.1 bis v2), nicht den Weg zum Release.
+
 ## Was v1.0 heißt
 
-**v1.0 = öffentlicher Launch auf vier Plattformen mit funktionierender
-Bezahlschranke.** Nicht Feature-Vollständigkeit, sondern: ein Erstsemester
-und eine Examenskandidatin können die App am Tag 1 sinnvoll nutzen, und
-mindestens eine der beiden ist bereit, dafür zu zahlen. Ein Release ist
-erreicht, wenn alle sieben Spur-Gates grün sind (Abschnitt „Release-Gates"
-unten) — kein Gate ist durch „später" ersetzbar, ein nicht erreichbares Gate
-verschiebt den Termin statt das Gate aufzuweichen. Herleitung im
-Roadmap-Dokument zu [SUB-39](/SUB/issues/SUB-39#document-plan).
+**v1.0 (29.09.2026) = Web-Release plus Android-Beta mit Karteikarten,
+Schemata, geführten Fällen und funktionierender Bezahlschranke** — ohne
+KI-Klausurkorrektur, ohne iOS, ohne Klausursimulator. Maßgeblich sind die fünf
+Gates aus `docs/18-release-2-wochen.md` Abschnitt 5.
+
+**Vollausbau (v1.2, früher „v1.0") = öffentlicher Launch auf vier Plattformen
+mit funktionierender Bezahlschranke.** Nicht Feature-Vollständigkeit, sondern:
+ein Erstsemester und eine Examenskandidatin können die App sinnvoll nutzen, und
+mindestens eine der beiden ist bereit, dafür zu zahlen. Erreicht, wenn alle
+sieben Spur-Gates grün sind (Abschnitt „Release-Gates" unten) — kein Gate ist
+durch „später" ersetzbar, ein nicht erreichbares Gate verschiebt den Termin
+statt das Gate aufzuweichen. Herleitung im Roadmap-Dokument zu
+[SUB-39](/SUB/issues/SUB-39#document-plan).
 
 ---
 
@@ -46,6 +59,12 @@ Repo-Dokument, damit die Roadmap nicht nur auf dem Board lebt.
 ---
 
 ## Release-Gates
+
+> Diese vier Phasen galten für den ursprünglichen 28-Wochen-Plan. Seit der
+> Terminvorgabe vom 15.09.2026 beschreiben sie den Weg **nach** v1.0: Phase A
+> ist zum Release weitgehend abgearbeitet (T2, T3, T4, T6, T8 liegen als
+> Dokumente vor), Phase B–D sind der Ausbau zu v1.1/v1.2. Die Gates für den
+> Release selbst stehen in `docs/18-release-2-wochen.md` Abschnitt 5.
 
 Vier Phasen über alle sieben Spuren, Wochenangaben relativ zum Start der
 Gesamt-Roadmap, für **1–2 Entwickler + Teilzeit-Fachredaktion + KI-Redaktion**.
