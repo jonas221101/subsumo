@@ -167,6 +167,11 @@ class AccountExportAccountOut(BaseModel):
     exam_date: datetime | None = None
     daily_minutes: int
     created_at: datetime
+    # Entitlement (Release G2) - Zahlungsanbieter-Referenzen, keine Zahlungsdaten selbst.
+    stripe_customer_id: str | None = None
+    stripe_subscription_id: str | None = None
+    pro_until: datetime | None = None
+    cancel_at_period_end: bool
 
 
 class AccountExportUserCardOut(BaseModel):
