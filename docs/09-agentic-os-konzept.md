@@ -115,8 +115,11 @@ Software-Planner und Marketing-Planner - siehe `ops/agents/`. Auf Nutzer-Feedbac
 im selben Thread berichten die drei Developer seither an einen Lead-Developer
 (`ops/agents/lead-developer.md`), der Aufgaben verteilt und Schnittstellenfragen
 zwischen ihnen moderiert, statt selbst zu implementieren - der Software-Planner
-übergibt an ihn statt einzeln an die drei Developer. Ein großes
-Management-Organigramm ist für dieses Projekt weiterhin nicht nötig; die
+übergibt an ihn statt einzeln an die drei Developer. Ebenso berichten
+Software-Planner und Marketing-Planner an einen Hauptplaner
+(`ops/agents/hauptplaner.md`), der Planungsanfragen verteilt und
+Schnittstellenfragen zwischen den beiden moderiert, statt selbst zu planen. Ein
+großes Management-Organigramm ist für dieses Projekt weiterhin nicht nötig; die
 Aufteilung folgt konkretem Bedarf, nicht Vorratshaltung.
 
 ## Agentenkommunikation — verbindlicher Bestandteil des Piloten
