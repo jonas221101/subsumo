@@ -47,6 +47,10 @@ def export_account(user: CurrentUser, db: DbSession) -> AccountExportOut:
             exam_date=user.exam_date,
             daily_minutes=user.daily_minutes,
             created_at=user.created_at,
+            stripe_customer_id=user.stripe_customer_id,
+            stripe_subscription_id=user.stripe_subscription_id,
+            pro_until=user.pro_until,
+            cancel_at_period_end=user.cancel_at_period_end,
         ),
         user_cards=[
             AccountExportUserCardOut(
