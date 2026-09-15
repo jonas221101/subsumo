@@ -74,7 +74,7 @@ heuristisch, sofort, kostenlos und wird als das kommuniziert, was es ist
 | Bereich | Umfang v1.0 | Stand heute |
 |---|---|---|
 | Lernen | Karteikarten mit FSRS-Wiederholung, Schemata, geführte Fälle | Backend + 6 Client-Screens vorhanden |
-| Inhalt | **180 Karten** über drei Rechtsgebiete, ≥ 8 Schemata, ≥ 6 Fälle | 77 Karten (Rechnung in 4.) |
+| Inhalt | **180 Karten** über drei Rechtsgebiete, ≥ 8 Schemata, ≥ 6 Fälle | 143 Karten (Rechnung in 4.) |
 | Gutachten | Struktur-/Stil-Check ohne Note, gegen Erwartungshorizont der Übungsfälle | implementiert, heuristisch |
 | Konto | Registrierung, Login, Passwort-Reset, DSGVO-Export und -Löschung | Auth vorhanden, Export/Löschung offen |
 | Bezahlung | Web-Checkout (Stripe), Free-Tier mit Limit, Pro-Freischaltung | **nicht vorhanden — größter Einzelposten** |
@@ -110,20 +110,24 @@ Maschine, sondern an der **menschlichen Prüfung**: Ø 7,0 Karten je Thema,
 35 min (optimistisch) / 60 min (realistisch) / 105 min (pessimistisch)
 Kuration + Stichprobe je Thema.
 
-Fehlmenge auf 180 Karten: 180 − 77 = 103 Karten → ⌈103 / 7,0⌉ = **15 zusätzliche
-Themen**.
+Fehlmenge auf 180 Karten: 180 − 143 = 37 Karten → ⌈37 / 7,0⌉ = **6 zusätzliche
+Themen**. (Ist-Stand 143 Karten über 21 Themendateien zum PR-Commit — 66 mehr
+als die 77, mit denen `docs/12-content-produktionsplan.md` Abschnitt 3
+gerechnet hat; seither über SUB-56 und SUB-54 gemergt.)
 
-| Szenario | Aufwand/Thema | Aufwand für 15 Themen | Über 10 Werktage |
+| Szenario | Aufwand/Thema | Aufwand für 6 Themen | Über 10 Werktage |
 |---|---|---|---|
-| Optimistisch | 35 min | 8,8 Std. | 0,9 Std./Tag |
-| Realistisch | 60 min | 15,0 Std. | 1,5 Std./Tag |
-| Pessimistisch | 105 min | 26,3 Std. | 2,6 Std./Tag |
+| Optimistisch | 35 min | 3,5 Std. | 0,35 Std./Tag |
+| Realistisch | 60 min | 6,0 Std. | 0,6 Std./Tag |
+| Pessimistisch | 105 min | 10,5 Std. | 1,05 Std./Tag |
 
-**Bewertung:** 180 Karten sind auch im pessimistischen Szenario erreichbar,
-solange 2,5–3 Std. Prüfkapazität pro Werktag zur Verfügung stehen. Bei 250
-Karten (24 Themen) läge der pessimistische Fall bei 4,2 Std./Tag — das ist der
-Punkt, an dem Content zum Terminrisiko wird. **Deshalb 180 als Zielmenge und
-250 als Streckziel, nicht umgekehrt.**
+**Bewertung:** 180 Karten sind selbst im pessimistischen Szenario mit
+komfortablem Abstand erreichbar (1,05 Std./Tag Prüfkapazität). Bei 250 Karten
+(Fehlmenge 107 → 16 Themen) läge der pessimistische Fall bei 2,8 Std./Tag —
+immer noch unkritisch. Die Content-Frage ist damit kein Terminrisiko mehr für
+G3; **180 bleibt trotzdem die Zielmenge, 250 das Streckziel**, weil die
+Priorisierung auf Klausurrelevanz-Stufe P1 unabhängig vom reinen Kartenstand
+gilt.
 
 Die Produktion selbst läuft bereits über die Content-Agenten
 ([SUB-51](/SUB/issues/SUB-51), SUB-54/55/56/77) und den Redaktionspfad aus
@@ -214,7 +218,7 @@ eine Absichtserklärung.
 | **G4** Konto/DSGVO (28.09.) | [SUB-84](/SUB/issues/SUB-84) | Backend-Developer | Export (Art. 15) und Löschung (Art. 17) mit Tests |
 | **G4** Rechtstexte (28.09.) | [SUB-85](/SUB/issues/SUB-85) | Marketing-Planner | Impressum, AGB, DSE, Widerruf, Cookie-Hinweis |
 | **G4/G5** Betrieb (24.–29.09.) | [SUB-86](/SUB/issues/SUB-86) | Lead-Developer | Deploy-Runbook, TLS, Backup **mit geprobtem Restore**, Monitoring |
-| **G3** Content-Freeze (25.09.) | [SUB-87](/SUB/issues/SUB-87) | Content-Koordinator | 15 P1-Themen → 180 Karten, geprüft und gemergt |
+| **G3** Content-Freeze (25.09.) | [SUB-87](/SUB/issues/SUB-87) | Content-Koordinator | 6 P1-Themen → 180 Karten, geprüft und gemergt (Rechnung: Abschnitt 4) |
 | **G5** Launch (29.09.) | [SUB-88](/SUB/issues/SUB-88) | Marketing-Planner | Landing Page, Preisseite, Launch-Text |
 | **G1** Konten (18.09.) | — | **Nutzer** | Rechtsträger, Zahlungskonto, Domain — siehe Abschnitt 8 |
 
