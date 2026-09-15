@@ -1,5 +1,97 @@
 # Roadmap
 
+## Was v1.0 heißt
+
+**v1.0 = öffentlicher Launch auf vier Plattformen mit funktionierender
+Bezahlschranke.** Nicht Feature-Vollständigkeit, sondern: ein Erstsemester
+und eine Examenskandidatin können die App am Tag 1 sinnvoll nutzen, und
+mindestens eine der beiden ist bereit, dafür zu zahlen. Ein Release ist
+erreicht, wenn alle sieben Spur-Gates grün sind (Abschnitt „Release-Gates"
+unten) — kein Gate ist durch „später" ersetzbar, ein nicht erreichbares Gate
+verschiebt den Termin statt das Gate aufzuweichen. Herleitung im
+Roadmap-Dokument zu [SUB-39](/SUB/issues/SUB-39#document-plan).
+
+---
+
+## Sieben Spuren bis v1.0
+
+Die technische Meilensteinliste (M0–M6 unten) ist die T1-Spur — eine von
+sieben, die bis zum Release fertig sein müssen. Jede Spur liefert ein eigenes
+Repo-Dokument, damit die Roadmap nicht nur auf dem Board lebt.
+
+- **T1 — Technik & Produkt.** Diese Datei, Meilensteine M0–M6 unten.
+- **T2 — Design.** Markenbasis, Designsystem v1, vier Leitflächen (Review,
+  Fall, Gutachten-Trainer, Dashboard). [`docs/11-designsystem.md`](11-designsystem.md)
+  ([SUB-42](/SUB/issues/SUB-42)).
+- **T3 — Inhalt.** Themenlandkarte und Produktionsrechnung für 500 Karten und
+  40 Fälle über alle drei Rechtsgebiete.
+  [`docs/12-content-produktionsplan.md`](12-content-produktionsplan.md)
+  ([SUB-43](/SUB/issues/SUB-43)).
+- **T4 — Lernstrukturen.** Explizites Lernmodell, Lernpfade je Persona,
+  Fehlertaxonomie, Kalibrierung gegen 30 Dozentengutachten (Ziel MAE ≤ 2).
+  `docs/13-lernarchitektur.md` (in Arbeit, [SUB-44](/SUB/issues/SUB-44)).
+- **T5 — Innovation.** Die Verzahnungsthese aus `docs/01-produktvision.md`
+  belegen oder verwerfen; Entscheidung je Differenzierungskandidat.
+  `docs/16-innovationsthesen.md` (in Arbeit, [SUB-45](/SUB/issues/SUB-45)).
+- **T6 — Markt.** Marktgröße, Wettbewerb (Jurafuchs, Constellatio, klassische
+  Repetitorien, Anki), Positionierung, Preis. [`docs/14-marktanalyse.md`](14-marktanalyse.md)
+  ([SUB-41](/SUB/issues/SUB-41)).
+- **T7 — Marketing & Go-to-Market.** Kanäle, Beta-Partner, Launch-Plan.
+  `docs/15-go-to-market.md` (in Arbeit, [SUB-46](/SUB/issues/SUB-46)).
+- **T8 — Recht, Compliance, Betrieb** (Querschnitt, kein eigenes Zeitfenster,
+  aber release-blockierend: Impressum, AGB, DSGVO, Store-Richtlinien,
+  Zahlungsabwicklung). `docs/17-release-readiness.md` (in Arbeit,
+  [SUB-47](/SUB/issues/SUB-47)).
+
+---
+
+## Release-Gates
+
+Vier Phasen über alle sieben Spuren, Wochenangaben relativ zum Start der
+Gesamt-Roadmap, für **1–2 Entwickler + Teilzeit-Fachredaktion + KI-Redaktion**.
+
+### Phase A — Fundament (W1–W6)
+- T2 Markenbasis + Designsystem v1
+- T3 Themenlandkarte + Produktionsrechnung, Redaktionstakt hochgefahren
+- T4 Lernmodell + Fehlertaxonomie schriftlich
+- T6 Marktanalyse, Positionierung, Preisentscheidung
+- T1 M1 abschließen (Delta-Sync)
+- **Gate A:** Designsystem steht, Content-Takt gemessen und hochgerechnet,
+  Positionierung und Preis entschieden.
+
+### Phase B — Kern (W7–W16)
+- T1 M2 (Schemata, Fälle, Norm-Explorer) und M3 (Gutachten-Korrektur)
+- T2 vier Leitflächen gestaltet
+- T3 laufende Produktion Richtung 500/40
+- T4 Lernpfade live, Kalibrierung gestartet (braucht Vorlauf!)
+- T5 Verzahnungsthese implementiert und gemessen
+- T7 Landing Page, Beta-Warteliste, Content-Marketing beginnt
+- **Gate B:** Lernzyklus Wissen → Struktur → Anwendung end-to-end nutzbar,
+  Kalibrierung MAE ≤ 2, 250 Karten / 20 Fälle.
+
+### Phase C — Examenstauglich (W17–W24)
+- T1 M4 (Klausur-Simulator, adaptiver Plan, Wissenslandkarte)
+- T3 Zielmenge erreicht
+- T4 Wirksamkeitsmessung ausgewertet
+- T7 geschlossene Beta mit 2 Fachschaften
+- T8 Recht/Compliance vollständig
+- **Gate C:** Beta-Feedback eingearbeitet, keine offenen Compliance-Punkte.
+
+### Phase D — Launch (W25–W28)
+- T1 M5: Play Store, App Store, Microsoft Store, app.subsumo.de
+- Abrechnung, Onboarding, Telemetrie
+- T7 Launch-Kampagne
+- **Gate D:** Vier Plattformen live, Bezahlvorgang end-to-end getestet,
+  Support-Kanal besetzt.
+
+**Kritischer Pfad:** T3 (Inhalt) und T4-Kalibrierung. Beide brauchen
+Vorlaufzeit, die Code nicht braucht. Die Kalibrierung hängt an externen
+Dozenten und muss spätestens in Phase B angefragt werden, sonst kippt Gate B.
+
+---
+
+## Technikspur (T1): Meilensteine M0–M6
+
 Zeitangaben in Wochen, gerechnet für **1–2 Entwickler + 1 juristische
 Fachredaktion (Teilzeit)**. Jeder Meilenstein endet mit etwas Benutzbarem.
 
@@ -98,6 +190,12 @@ Fachredaktion (Teilzeit)**. Jeder Meilenstein endet mit etwas Benutzbarem.
 | **Content ist der Engpass, nicht der Code** | Ohne Inhalte ist die App wertlos | KI-Redaktion (Collector+Reviewer) ab M0+ produktiv, Format steht seit M0 | laufend |
 | ~~Flutter-Web-Texteditor untauglich für 5-h-Klausur~~ | ~~M4 kippt~~ | **Erledigt:** Spike in M0+ statt M4, Ergebnis GO (48ms Ø-Latenz), siehe `docs/07-spike-web-editor.md` | ✅ M0+ |
 | KI-Korrektur (Klausur) wird als unfair empfunden | Kernfeature verliert Vertrauen | Bewertung nur gegen Erwartungshorizont, jeder Abzug anklickbar, Kalibrierung gegen Dozenten | M3 |
-| KI-Redaktion halluziniert Normzitate | Falscher Lernstoff, Vertrauensverlust | Reviewer-Agent als zweite Instanz, menschliche Stichprobe empfohlen; echter Normindex-Abgleich erst ab M2 (Norm-Explorer) - siehe Grenzen in `docs/08-ki-redaktion.md` | laufend, verschärft bis M2 |
+| KI-Redaktion halluziniert Normzitate | Falscher Lernstoff, Vertrauensverlust | Deterministisches Normzitat-Gate (kuratierte Positivliste, `norm_gate.py`) fängt erfundene Kürzel/Nummern ab, Reviewer-Agent als zweite Instanz, menschliche Stichprobe empfohlen; echter Normindex-Abgleich erst ab M2 (Norm-Explorer) - siehe Grenzen in `docs/08-ki-redaktion.md` | laufend, verschärft bis M2 |
 | Urheberrecht bei Inhalten | Abmahnrisiko | Nur amtliche Werke (§ 5 UrhG) + Eigenproduktion, Quellenpflicht im Format, Reviewer-Agent prüft zusätzlich | laufend |
 | RDG-Abgrenzung | Rechtliches Risiko | Keine Bewertung echter Sachverhalte, Hinweis im Produkt, Reviewer-Agent prüft Fiktivität jedes Falls | laufend |
+| Kalibrierungsdozenten nicht gewinnbar | Gate B fällt, Kernfeature (T4) unbelegt | Anfrage in Phase A starten, Fallback erfahrene Korrekturassistenten, Notlösung Deckelung auf 11 Punkte beibehalten und offen kommunizieren | Phase A/B |
+| Content-Takt (T3) reicht nicht für 500/40 | Release verschiebt sich | Durchsatzrechnung in Phase A statt Hoffnung; Notfallschnitt v1.0 auf zwei statt drei Rechtsgebiete | Phase A |
+| Preis 12 €/Monat nicht durchsetzbar | Geschäftsmodell trägt nicht | Nutzerinterviews + Preis-Staffelung in Phase A entscheiden (T6) | Phase A |
+| Markt schrumpft weiter (rückläufige Studienanfängerzahlen) | Obergrenze des adressierbaren Markts sinkt | Referendariat/Zweitexamen als Erweiterung früher einplanen | laufend |
+| Design bleibt Nebensache | Abbruch im Onboarding trotz guter fachlicher Substanz | Designsystem ist Gate A, nicht Phase C | Gate A |
+| Ein-Personen-Abhängigkeit | Stillstand bei Ausfall | Board-Struktur, jede Spur als eigenes Issue mit Dokument im Repo | laufend |

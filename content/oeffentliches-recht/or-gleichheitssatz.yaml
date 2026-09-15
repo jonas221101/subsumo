@@ -1,0 +1,195 @@
+topic:
+  slug: or-gleichheitssatz
+  area: oeffentliches-recht
+  title: 'Art. 3 Abs. 1 GG: Allgemeiner Gleichheitssatz'
+  parent: or-grundrechte
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-15'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: or-gr-glbs-vergleichspaar
+  type: definition
+  front: Wie wird eine Ungleichbehandlung i.S.d. Art. 3 Abs. 1 GG festgestellt?
+  back: 'Zunaechst ist ein taugliches Vergleichspaar zu bilden: zwei Personen oder
+    Personengruppen, die hinsichtlich eines gemeinsamen Oberbegriffs wesentlich gleich
+    sind, aber vom Normgeber unterschiedlich behandelt werden. Fehlt es an einer solchen
+    wesentlichen Vergleichbarkeit, liegt schon keine Ungleichbehandlung vor, die rechtfertigungsbeduerftig
+    waere.'
+  norms:
+  - Art. 3 Abs. 1 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-glbs-willkuerformel
+  type: definition
+  front: Was verlangt die Willkuerformel zu Art. 3 Abs. 1 GG?
+  back: Nach der (aelteren) Willkuerformel ist eine Ungleichbehandlung bereits gerechtfertigt,
+    wenn sich fuer sie ein sachlicher, nicht evident unvertretbarer Grund finden laesst
+    - der Gesetzgeber muss also nicht den 'besten', sondern nur irgendeinen nachvollziehbaren
+    Grund gehabt haben. Dieser grosszuegige Massstab gilt nach der neuen Formel weiterhin
+    fuer Differenzierungen, die allein an Verhaltensweisen anknuepfen.
+  norms:
+  - Art. 3 Abs. 1 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-glbs-abstufung-pruefungsmassstab
+  type: streitstand
+  front: Wovon haengt nach der neuen Formel ab, ob ein strengerer oder ein grosszuegigerer
+    Rechtfertigungsmassstab gilt?
+  back: 'Massgeblich sind vor allem zwei Kriterien: Erstens, ob die Differenzierung
+    an ein personenbezogenes Merkmal anknuepft, das der Einzelne nicht oder nur schwer
+    beeinflussen kann (strengerer Massstab), oder an ein blosses Verhalten (grosszuegigerer
+    Willkuermassstab). Zweitens, je naeher das Differenzierungsmerkmal an den in Art.
+    3 Abs. 3 GG genannten Merkmalen liegt oder je staerker sich die Ungleichbehandlung
+    auf die Ausuebung grundrechtlich geschuetzter Freiheiten auswirkt, desto strenger
+    sind die Anforderungen an die Rechtfertigung.'
+  norms:
+  - Art. 3 Abs. 1 GG
+  - Art. 3 Abs. 3 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-glbs-rechtfertigung-verhaeltnismaessigkeit
+  type: schema_step
+  front: Wie wird eine Ungleichbehandlung beim strengen Pruefungsmassstab gerechtfertigt?
+  back: 'Beim strengen Massstab genuegt ein sachlicher Grund nicht mehr; die Ungleichbehandlung
+    muss vielmehr einem legitimen Zweck dienen und in einer echten Verhaeltnismaessigkeitspruefung
+    bestehen: Das Differenzierungskriterium muss zur Zweckerreichung geeignet, erforderlich
+    (kein milderes, gleich wirksames Differenzierungskriterium) und angemessen sein
+    - die Vor- und Nachteile der Differenzierung muessen in einem ausgewogenen Verhaeltnis
+    zum verfolgten Zweck stehen.'
+  norms:
+  - Art. 3 Abs. 1 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-glbs-verhaeltnis-abs2-abs3
+  type: norm
+  front: In welchem Verhaeltnis stehen Art. 3 Abs. 2, 3 GG zu Art. 3 Abs. 1 GG?
+  back: Art. 3 Abs. 2 GG (Gleichberechtigung von Mann und Frau) und Art. 3 Abs. 3
+    GG (Verbot der Benachteiligung/Bevorzugung wegen Geschlecht, Abstammung, Rasse,
+    Sprache, Heimat und Herkunft, Glauben, religioeser oder politischer Anschauungen
+    sowie Behinderung) sind speziellere Auspraegungen des allgemeinen Gleichheitssatzes
+    und gehen als lex specialis der Pruefung des Art. 3 Abs. 1 GG vor, soweit eine
+    Differenzierung gerade an eines dieser Merkmale anknuepft. Anders als bei Art.
+    3 Abs. 1 GG ist eine Rechtfertigung bei Art. 3 Abs. 3 GG nur in engen, vom BVerfG
+    anerkannten Ausnahmefaellen moeglich.
+  norms:
+  - Art. 3 Abs. 2 GG
+  - Art. 3 Abs. 3 GG
+  - Art. 3 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-glbs-jedermanngrundrecht
+  type: definition
+  front: Wer ist Grundrechtstraeger des Art. 3 Abs. 1 GG?
+  back: Art. 3 Abs. 1 GG ist ein Jedermann-Grundrecht und steht damit unabhaengig
+    von der Staatsangehoerigkeit jeder natuerlichen Person zu. Inlaendische juristische
+    Personen koennen sich nach Art. 19 Abs. 3 GG ebenfalls auf den allgemeinen Gleichheitssatz
+    berufen, soweit er seinem Wesen nach auf sie anwendbar ist - etwa bei der Gleichbehandlung
+    im Wirtschaftsverkehr.
+  norms:
+  - Art. 3 Abs. 1 GG
+  - Art. 19 Abs. 3 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: or-schema-art3-gleichheitssatz
+  title: Pruefung des Art. 3 Abs. 1 GG
+  norms:
+  - Art. 3 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Ungleichbehandlung wesentlich Gleicher
+    children:
+    - label: 1. Bildung eines tauglichen Vergleichspaares
+    - label: 2. Feststellung der Ungleichbehandlung
+  - label: II. Rechtfertigung
+    children:
+    - label: 1. Bestimmung des Pruefungsmassstabs
+      children:
+      - label: a) personenbezogen (nicht/schwer beeinflussbar) oder Naehe zu Art.
+          3 Abs. 3 GG bzw. Grundrechtsausuebung betroffen -> strenge Verhaeltnismaessigkeitspruefung
+      - label: b) rein verhaltensbezogen -> Willkuerformel (sachlicher Grund genuegt)
+    - label: 2. Legitimer Zweck der Differenzierung
+    - label: '3. Beim strengen Massstab: Geeignetheit, Erforderlichkeit, Angemessenheit
+        der Differenzierung'
+  - label: III. Ergebnis
+faelle:
+- slug: or-fall-studiengebuehrenbefreiung-beamteneltern
+  title: Die Studiengebuehrenbefreiung fuer Kinder von Landesbeamten
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  facts: Ein (fiktives) Landesgesetz befreit Studierende von der allgemeinen Studiengebuehr,
+    wenn mindestens ein Elternteil im Landesdienst als Beamter beschaeftigt ist. Die
+    Studentin S, deren Eltern nicht im Landesdienst stehen, muss die volle Studiengebuehr
+    entrichten. Zur Begruendung fuehrt der Gesetzgeber lediglich pauschal aus, die
+    Regelung staerke "die Bindung des Landesdienstes an den Hochschulstandort"; naehere
+    Ausfuehrungen dazu, weshalb gerade die Beamteneigenschaft der Eltern und nicht
+    etwa eine eigene Bindung der Studierenden massgeblich sein soll, fehlen.
+  question: Verletzt die Regelung die S in ihrem Recht aus Art. 3 Abs. 1 GG?
+  steps:
+  - prompt: Liegt eine Ungleichbehandlung wesentlich Gleicher vor?
+    erwartung: Ja - Studierende mit im Landesdienst beschaeftigten Eltern und Studierende
+      ohne diese Elterneigenschaft sind hinsichtlich der Nutzung der Hochschuleinrichtungen
+      wesentlich gleich, werden aber bei der Gebuehrenpflicht unterschiedlich behandelt.
+  - prompt: Welcher Pruefungsmassstab ist anzulegen?
+    erwartung: Der strenge Verhaeltnismaessigkeitsmassstab - die Differenzierung knuepft
+      an ein personenbezogenes Merkmal an (Beschaeftigungsstatus der Eltern), das
+      S selbst nicht beeinflussen kann.
+  - prompt: Ist die Ungleichbehandlung gerechtfertigt?
+    erwartung: Nein - selbst wenn man die 'Bindung des Landesdienstes an den Hochschulstandort'
+      als legitimen Zweck unterstellt, fehlt es an einer nachvollziehbaren Begruendung,
+      weshalb gerade die Beamteneigenschaft der Eltern zur Erreichung dieses Zwecks
+      geeignet und erforderlich sein soll; die pauschale Begruendung traegt die Differenzierung
+      nicht.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Ungleichbehandlung wesentlich Gleicher festgestellt (Vergleichspaar gebildet)
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 3 Abs. 1 GG
+      keywords:
+      - Vergleichspaar
+      - wesentlich gleich
+      - Ungleichbehandlung
+    - id: p2
+      label: Strenger Pruefungsmassstab zutreffend begruendet (personenbezogenes,
+        nicht beeinflussbares Merkmal)
+      weight: 3.0
+      required: true
+      keywords:
+      - personenbezogen
+      - strenger Massstab
+      - nicht beeinflussbar
+    - id: p3
+      label: Rechtfertigung anhand Geeignetheit/Erforderlichkeit geprueft und mangels
+        tragfaehiger Begruendung verneint
+      weight: 3.0
+      required: true
+      keywords:
+      - geeignet
+      - erforderlich
+      - nicht gerechtfertigt
+    - id: p4
+      label: 'Ergebnis: S ist in Art. 3 Abs. 1 GG verletzt'
+      weight: 1.0
+      required: false
+      keywords:
+      - verletzt

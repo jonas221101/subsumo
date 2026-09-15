@@ -1,0 +1,215 @@
+topic:
+  slug: or-vwgo-vorlaeufiger-rechtsschutz
+  area: oeffentliches-recht
+  title: Vorlaeufiger Rechtsschutz, §§ 80, 80a VwGO
+  parent: oeffentliches-recht
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-15'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: or-vwgo-vrs-grundsatz-aufschiebende-wirkung
+  type: definition
+  front: Was ist der Grundsatz des § 80 Abs. 1 VwGO?
+  back: 'Widerspruch und Anfechtungsklage haben grundsaetzlich aufschiebende Wirkung,
+    § 80 Abs. 1 S. 1 VwGO: Der angefochtene Verwaltungsakt darf bis zur bestandskraeftigen
+    oder rechtskraeftigen Entscheidung nicht vollzogen werden. Dieser Suspensiveffekt
+    ist die Regel; er entfaellt nur in den in § 80 Abs. 2 VwGO abschliessend aufgezaehlten
+    Faellen.'
+  norms:
+  - § 80 Abs. 1 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwgo-vrs-ausnahmen-80-abs2
+  type: norm
+  front: Nenne die Ausnahmen vom Suspensiveffekt nach § 80 Abs. 2 VwGO
+  back: Die aufschiebende Wirkung entfaellt bei (1) der Anforderung von oeffentlichen
+    Abgaben und Kosten, (2) unaufschiebbaren Anordnungen und Massnahmen von Polizeivollzugsbeamten,
+    (3) sonstigen bundes- oder landesrechtlich angeordneten Faellen sowie (4) der
+    behoerdlichen Anordnung der sofortigen Vollziehung im oeffentlichen Interesse
+    oder im ueberwiegenden Interesse eines Beteiligten.
+  norms:
+  - § 80 Abs. 2 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwgo-vrs-anordnung-vs-wiederherstellung
+  type: streitstand
+  front: Grenze 'Anordnung' und 'Wiederherstellung' der aufschiebenden Wirkung, §
+    80 Abs. 5 S. 1 VwGO, voneinander ab
+  back: Ein Antrag auf Anordnung der aufschiebenden Wirkung (Var. 1) ist statthaft,
+    wenn diese kraft Gesetzes entfallen ist (§ 80 Abs. 2 Nr. 1-3 VwGO) - hier muss
+    sie erst geschaffen werden. Ein Antrag auf Wiederherstellung der aufschiebenden
+    Wirkung (Var. 2) ist statthaft, wenn eine Behoerde selbst die sofortige Vollziehung
+    angeordnet hat (§ 80 Abs. 2 Nr. 4 VwGO) - hier bestand die aufschiebende Wirkung
+    urspruenglich und soll wiederhergestellt werden.
+  norms:
+  - § 80 Abs. 5 VwGO
+  - § 80 Abs. 2 VwGO
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwgo-vrs-begruendungspflicht-sofortvollzug
+  type: norm
+  front: Was verlangt § 80 Abs. 3 S. 1 VwGO bei behoerdlicher Anordnung des Sofortvollzugs?
+  back: Ordnet die Behoerde selbst die sofortige Vollziehung an, ist das besondere
+    Interesse an der sofortigen Vollziehung schriftlich zu begruenden, § 80 Abs. 3
+    S. 1 VwGO. Erforderlich ist eine auf den konkreten Einzelfall bezogene, in sich
+    schluessige Darlegung der Dringlichkeitsgruende; formelhafte Wendungen, die auf
+    jeden vergleichbaren Fall gleichermassen passen wuerden, genuegen nicht. Ein Begruendungsmangel
+    fuehrt zur formellen Rechtswidrigkeit der Vollziehungsanordnung, laesst den Grundverwaltungsakt
+    selbst aber unberuehrt.
+  norms:
+  - § 80 Abs. 3 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwgo-vrs-pruefungsmassstab
+  type: definition
+  front: Nach welchem Massstab entscheidet das Gericht ueber einen Antrag nach § 80
+    Abs. 5 VwGO?
+  back: 'Das Gericht trifft eine eigene Ermessensentscheidung aufgrund einer Interessenabwaegung
+    zwischen dem Vollzugsinteresse und dem Aussetzungsinteresse des Antragstellers.
+    Massgeblich orientiert sich diese Abwaegung an den nach summarischer Pruefung
+    erkennbaren Erfolgsaussichten der Hauptsache: Sind ernstliche Zweifel an der Rechtmaessigkeit
+    des Verwaltungsakts erkennbar oder ist er offensichtlich rechtswidrig, ueberwiegt
+    regelmaessig das Aussetzungsinteresse; ist er offensichtlich rechtmaessig, ueberwiegt
+    regelmaessig das Vollzugsinteresse.'
+  norms:
+  - § 80 Abs. 5 VwGO
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwgo-vrs-doppelwirkung-80a
+  type: norm
+  front: Was regelt § 80a VwGO?
+  back: § 80a VwGO erstreckt den vorlaeufigen Rechtsschutz auf Verwaltungsakte mit
+    Doppelwirkung, also solche, die einen Beguenstigten und zugleich einen belasteten
+    Dritten betreffen (z. B. eine Baugenehmigung fuer den Bauherrn und den anfechtenden
+    Nachbarn). Legt der Dritte Widerspruch oder Klage gegen den den anderen beguenstigenden
+    Verwaltungsakt ein, kann die Behoerde auf Antrag des Beguenstigten die sofortige
+    Vollziehung anordnen (§ 80a Abs. 1 Nr. 1 VwGO) oder auf Antrag des Dritten die
+    Vollziehung aussetzen (§ 80a Abs. 1 Nr. 2 VwGO); das Gericht kann entsprechend
+    nach § 80a Abs. 3 i.V.m. § 80 Abs. 5 VwGO entscheiden.
+  norms:
+  - § 80a Abs. 1 VwGO
+  - § 80a Abs. 3 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: or-schema-vwgo-80-abs5
+  title: Antrag nach § 80 Abs. 5 VwGO
+  norms:
+  - § 80 Abs. 5 VwGO
+  - § 80 Abs. 2 VwGO
+  - § 80 Abs. 3 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Eroeffnung des Verwaltungsrechtswegs, § 40 Abs. 1 VwGO
+  - label: II. Statthafter Antrag
+    children:
+    - label: 1. Anordnung der aufschiebenden Wirkung, Var. 1 - bei gesetzlichem Ausschluss,
+        § 80 Abs. 2 Nr. 1-3 VwGO
+    - label: 2. Wiederherstellung der aufschiebenden Wirkung, Var. 2 - bei behoerdlicher
+        Sofortvollzugsanordnung, § 80 Abs. 2 Nr. 4 VwGO
+  - label: III. Antragsbefugnis, § 42 Abs. 2 VwGO analog
+  - label: IV. Ordnungsgemaesse Antragstellung, allgemeines Rechtsschutzbeduerfnis
+    hinweis: Bei Var. 2 regelmaessig vorheriger erfolgloser Antrag auf Aussetzung
+      bei der Behoerde, § 80 Abs. 6 VwGO (bei Abgaben/Kosten).
+  - label: V. Begruendetheit
+    children:
+    - label: 1. Formelle Rechtmaessigkeit der Vollziehungsanordnung, insbesondere
+        Begruendung nach § 80 Abs. 3 VwGO
+    - label: 2. Interessenabwaegung anhand der Erfolgsaussichten der Hauptsache
+  - label: VI. Ergebnis
+faelle:
+- slug: or-fall-gewerbeuntersagung-sofortvollzug
+  title: Die formelhaft begruendete Sofortvollzugsanordnung
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VwGO, amtliche Fassung
+  facts: Die zustaendige Behoerde untersagt dem G die Ausuebung seines Gewerbes und
+    ordnet zugleich die sofortige Vollziehung an. Zur Begruendung der Vollziehungsanordnung
+    fuehrt sie lediglich aus, "die sofortige Vollziehung liegt im oeffentlichen Interesse",
+    ohne auf die konkreten Umstaende des Falles einzugehen. G legt fristgerecht Widerspruch
+    ein und moechte vorlaeufigen Rechtsschutz erlangen, bevor ueber den Widerspruch
+    entschieden ist.
+  question: Welcher Antrag ist statthaft, und hat er Aussicht auf Erfolg?
+  steps:
+  - prompt: Welcher Antrag ist statthaft?
+    erwartung: Der Antrag auf Wiederherstellung der aufschiebenden Wirkung, § 80 Abs.
+      5 S. 1 Var. 2 VwGO - die Behoerde selbst hat die sofortige Vollziehung angeordnet,
+      § 80 Abs. 2 Nr. 4 VwGO.
+  - prompt: Ist G antragsbefugt?
+    erwartung: Ja - als Adressat der belastenden Gewerbeuntersagung macht G moeglicherweise
+      eine Rechtsverletzung geltend, § 42 Abs. 2 VwGO analog.
+  - prompt: Genuegt die Begruendung der Vollziehungsanordnung den Anforderungen des
+      § 80 Abs. 3 VwGO?
+    erwartung: Nein - die Formel 'liegt im oeffentlichen Interesse' ist eine floskelhafte
+      Wendung ohne Bezug zu den konkreten Umstaenden des Falles und erfuellt nicht
+      die Anforderungen an eine einzelfallbezogene Begruendung.
+  - prompt: Wie wirkt sich der Begruendungsmangel auf den Erfolg des Antrags aus?
+    erwartung: Die Vollziehungsanordnung ist formell rechtswidrig; unabhaengig von
+      der materiellen Rechtmaessigkeit der Gewerbeuntersagung selbst ueberwiegt deshalb
+      regelmaessig das Aussetzungsinteresse des G, sodass das Gericht die aufschiebende
+      Wirkung wiederherstellt.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Statthafter Antrag als Wiederherstellung der aufschiebenden Wirkung,
+        § 80 Abs. 5 S. 1 Var. 2 VwGO, erkannt
+      weight: 2.5
+      required: true
+      norms:
+      - § 80 Abs. 5 VwGO
+      keywords:
+      - Wiederherstellung
+      - Var. 2
+      - § 80 Abs. 5
+    - id: p2
+      label: Zuordnung zu § 80 Abs. 2 Nr. 4 VwGO (behoerdlich angeordneter Sofortvollzug)
+      weight: 2.0
+      required: true
+      norms:
+      - § 80 Abs. 2 VwGO
+      keywords:
+      - § 80 Abs. 2 Nr. 4
+      - behoerdliche Anordnung
+    - id: p3
+      label: Begruendungsmangel nach § 80 Abs. 3 VwGO erkannt und als floskelhaft
+        qualifiziert
+      weight: 3.0
+      required: true
+      norms:
+      - § 80 Abs. 3 VwGO
+      keywords:
+      - Begruendung
+      - floskelhaft
+      - Einzelfall
+    - id: p4
+      label: Antragsbefugnis bejaht
+      weight: 1.0
+      required: false
+      keywords:
+      - Antragsbefugnis
+    - id: p5
+      label: 'Ergebnis: Antrag begruendet, aufschiebende Wirkung wird wiederhergestellt'
+      weight: 1.5
+      required: false
+      keywords:
+      - begruendet
+      - wiederhergestellt
