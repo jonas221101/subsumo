@@ -257,6 +257,7 @@ def test_pipeline_akzeptiert_im_ersten_durchlauf(tmp_path: Path):
     assert geschrieben["topic"]["redaktion"]["status"] == "ki-freigegeben"
     assert geschrieben["topic"]["redaktion"]["erzeugt_von"]
     assert geschrieben["topic"]["redaktion"]["geprueft_von"]
+    assert geschrieben["topic"]["redaktion"]["normzitate_geprueft"] is True
 
 
 def test_pipeline_landet_im_richtigen_rechtsgebietsordner(tmp_path: Path):
@@ -318,6 +319,29 @@ def test_pipeline_gibt_formatfehler_an_collector_zurueck(tmp_path: Path):
     assert "Formatfehler" in collector_client.calls[1]
     # Der Reviewer darf einen strukturell ungueltigen Entwurf nie zu sehen
     # bekommen - dafuer ist er nicht da.
+    assert len(reviewer_client.calls) == 1
+
+
+def test_pipeline_gibt_normzitat_fehler_an_collector_zurueck(tmp_path: Path):
+    entwurf_mit_erfundener_norm = GUELTIGER_ENTWURF.replace(
+        'norms: ["§ 1 BGB"]', 'norms: ["§ 5 UrhG"]'
+    )
+    collector_client = FakeLLM([entwurf_mit_erfundener_norm, GUELTIGER_ENTWURF])
+    reviewer_client = FakeLLM(['{"approved": true, "severity": "ok", "issues": []}'])
+    pipeline = RedaktionPipeline(
+        content_dir=tmp_path,
+        collector=CollectorAgent(client=collector_client),
+        reviewer=ReviewerAgent(client=reviewer_client),
+    )
+
+    result = pipeline.run(TopicRequest(area="zivilrecht", working_title="Testthema"))
+
+    assert result.accepted is True
+    assert result.rounds == 2
+    assert "Normzitate abgelehnt" in collector_client.calls[1]
+    assert "UrhG" in collector_client.calls[1]
+    # Der Reviewer darf einen Entwurf mit unplausiblen Normzitaten nie zu
+    # sehen bekommen - dieselbe Trennung wie beim Struktur-Gate.
     assert len(reviewer_client.calls) == 1
 
 

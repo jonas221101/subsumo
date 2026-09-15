@@ -224,20 +224,127 @@ Server konfigurieren und messen. Die CLI selbst ruft kein Modell auf und
 erzwingt keine Tokenbudgets. Eine automatische Hochstufung zu teureren Modellen
 ist nicht implementiert.
 
+## Workspace-Isolation (git_worktree)
+
+Bisher lief jeder Agentenlauf im selben Verzeichnis
+(`executionWorkspacePolicy.defaultMode = shared_workspace`,
+`workspaceStrategy.type = project_primary`) — bei mehreren parallelen Läufen
+(z. B. SUB-10, SUB-19, SUB-28 gleichzeitig) ein reales Kollisionsrisiko für
+unstaged/uncommitted Änderungen im selben Arbeitsverzeichnis.
+
+Per `PATCH /api/projects/{projectId}` wurde für das Projekt „Subsumo“ gesetzt:
+
+```json
+{
+  "executionWorkspacePolicy": {
+    "enabled": true,
+    "defaultMode": "isolated_workspace",
+    "workspaceStrategy": {
+      "type": "git_worktree",
+      "worktreeParentDir": "work/mission-control/paperclip/worktrees"
+    }
+  }
+}
+```
+
+Das wirkt nur auf künftig neu geöffnete Workspaces, nicht rückwirkend: Für die
+zum Zeitpunkt der Änderung laufenden Läufe (SUB-10, SUB-19, jeweils mit
+gesetztem `checkoutRunId`) zeigte `GET
+/api/companies/{companyId}/execution-workspaces` direkt danach weiterhin den
+bereits geöffneten `shared_workspace`/`project_primary`-Eintrag — keine
+Störung mitten im Lauf.
+
+**Offen — braucht ein Board-/Nutzer-Token:** `workspaceStrategy.provisionCommand`
+und `.runtimeProvisionCommand` (sollen `pip install -r
+backend/requirements-dev.txt` ausführen, damit `pytest`/`ruff` in einem
+frischen Worktree sofort funktionieren) lehnt der Server für Agenten-Keys mit
+`403 Agent keys cannot modify host-executed workspace commands` ab. Erneut
+gegengeprüft (2026-09-14, 15:2x Uhr): derselbe 403 auf denselben PATCH-Body,
+diesmal inklusive Kommando. Das ist eine bewusste Rechtegrenze, kein
+Konfigurationsfehler: beliebige, künftig auf dem Host ausgeführte Befehle
+darf offenbar nur ein Mensch- bzw. Board-Token setzen. Das lauffähige Kommando
+wurde separat in einem manuell angelegten `git worktree` verifiziert (frischer
+Checkout, `python3 -m venv backend/.venv && backend/.venv/bin/pip install -r
+backend/requirements-dev.txt`, danach `pytest`: 220 bestanden, `ruff check`:
+sauber, Laufzeit der reinen Installation ca. 12 s):
+
+```
+test -d backend/.venv || python3 -m venv backend/.venv; \
+backend/.venv/bin/pip install --upgrade pip --quiet && \
+backend/.venv/bin/pip install -r backend/requirements-dev.txt --quiet
+```
+
+Bis ein Board-/Nutzer-Token das für `provisionCommand`/`runtimeProvisionCommand`
+setzt, muss in einem frischen `git worktree` die Backend-Umgebung einmalig von
+Hand mit obigem Kommando aufgesetzt werden (siehe auch „Lokal starten und
+testen“ oben).
+
+**Echter Testlauf — Befund: Policy wird vom Runtime nicht angewendet.**
+`GET /api/companies/{companyId}/execution-workspaces` wurde am 2026-09-14
+gegen 15:30 Uhr mit allen 94 bisher für dieses Projekt eröffneten Execution-
+Workspaces abgeglichen. Die Policy-Änderung auf `isolated_workspace` /
+`git_worktree` steht seit 08:53:54 Uhr. Seitdem sind u. a. für SUB-29, SUB-33,
+SUB-34, SUB-32 (mehrfach), SUB-21 und SUB-28 (dieser Lauf, eröffnet
+15:22:26 Uhr) neue Workspaces eröffnet worden — **ausnahmslos alle** weiterhin
+mit `mode: shared_workspace`, `strategyType: project_primary`, `cwd:
+/home/paperclip/subsumo`. Kein einziger Eintrag mit `mode: isolated_workspace`
+oder `strategyType: git_worktree` ist in diesem gesamten Zeitraum entstanden.
+SUB-21 und dieser SUB-28-Lauf haben ihre Workspaces sogar im Abstand von 15
+Sekunden im selben Verzeichnis eröffnet — das ursprüngliche Kollisionsrisiko
+besteht also nach wie vor unverändert fort, obwohl die Policy serverseitig
+korrekt gespeichert ist (per `GET /api/projects/{id}` bestätigt).
+
+Root Cause ungeklärt: `GET /api/environments/{environmentId}` (die
+Environment-ID aus dem `config`-Feld der Execution-Workspace-Einträge)
+liefert für Agenten-Keys `403 Board access required` — ob ein
+Environment- oder Company-Setting die Projekt-Policy überschreibt oder ob der
+`claude_local`-Adapter dieser lokalen Pilotinstanz `git_worktree` schlicht
+nicht realisiert, lässt sich ohne Board-/Nutzer-Token nicht weiter eingrenzen.
+**Nächster Schritt braucht ein Operator mit Board-Zugriff:**
+Environment-Konfiguration und Adapter-/Server-Logs der lokalen Instanz
+(`ops/mission-control/start-paperclip-pilot.ps1`) auf den Realisierungspfad
+für `git_worktree` prüfen.
+
 ## Nächste Integration
 
 1. **Vorbereitet:** Paperclip `v2026.831.1` ist über
    `ops/mission-control/start-paperclip-pilot.ps1` für eine getrennte,
    lokale Loopback-Pilotinstanz fixiert. Die tatsächliche Pilot-Firma wird im
    lokalen Board angelegt.
-2. Rollen, Modell, Budgets, isolierte Workspaces und echte Run-Authentifizierung verbinden.
-3. Einen realen Frage-/Antwortlauf sowie eine Review-Übergabe nachweisen.
+2. **Isolierte Workspaces — Policy gesetzt, aber ohne Wirkung** (siehe eigener
+   Abschnitt unten): Projekt-Policy steht auf `isolated_workspace`/
+   `git_worktree`, real eröffnete Execution-Workspaces bleiben aber
+   ausnahmslos `shared_workspace`/`project_primary`; braucht Board-Zugriff zur
+   Fehlersuche. Offen bleiben außerdem Rollen, Modell, Budgets und echte
+   Run-Authentifizierung.
+3. ~~Einen realen Frage-/Antwortlauf sowie eine Review-Übergabe nachweisen~~
+   **erledigt** (SUB-21, gegen die echte lokale Pilotinstanz, nichts gemockt):
+   Frage an den Reviewer-Agenten (`965fee47-…`) über
+   `mission_control send SUB-21 --kind question`, Kommentar
+   `7b7a2302-e092-450f-a46c-471149d6e413` (message_id
+   `377101c7-850e-4d16-ab6e-b1b18438735e`); Antwort per `--kind answer
+   --reply-to` in Kommentar `120b8f22-d0cb-4141-87d8-51866e58a870`
+   (message_id `cd3ab99e-b074-4b1f-ba2b-951e3a2f7267`). Anschließend
+   `request-review SUB-21 --to 965fee47-… --commit <SHA des Docs-Commits>`
+   für die Review-Übergabe; der Reviewer hat mit `claim SUB-21 --review`
+   angenommen, den Commit unabhängig gegen den echten Thread geprüft und in
+   Kommentar `e9f5aba5-a02c-421d-80b8-7aadc2e8d949` freigegeben (dazu ein
+   nicht blockierender Befund in Kommentar
+   `1c4c73de-f6c8-46b1-a5ef-9689c6913e3f`). `reconcile` bestätigt beide
+   Vorgänge gegen den echten Thread. Details und alle IDs im
+   SUB-21-Kommentar auf SUB-10.
 4. ~~Persistente Zustellgarantien~~ **erledigt** (Journal + `reconcile`); offen
    bleiben Antwortfristen, Zustellquittungen und Nacharbeit.
 5. ~~Software-Review an aktuellen Commit binden~~ **erledigt**; offen bleibt die
    Bindung an erforderliche CI-Ergebnisse.
 6. GitHub-PR, kontrollierten Merge und Abschlussverifikation anbinden.
-7. Mission-Control-Oberfläche auf die echten Zustände und Threads umstellen.
+7. ~~Mission-Control-Oberfläche auf die echten Zustände und Threads umstellen~~
+   **zurückgestellt, keine Priorität:** Auf Nutzerrückfrage zu SUB-10
+   (Interaction `c64cc55a-9630-4560-b142-ff76152fbc12`) hin klargestellt, dass
+   damit nicht dieses interne Tooling-Dashboard gemeint war, sondern UI und CI
+   der eigentlichen Lern-App (`app/`). Ein separates Mission-Control-Dashboard
+   wird vorerst nicht verfolgt. Scoping des Lernapp-UI/CI-Bedarfs läuft unter
+   SUB-29.
 
 ## Referenzen
 

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
+import 'screen_status.dart';
 
 /// Wissenslandkarte (Challenge 3).
 ///
@@ -39,21 +40,12 @@ class _DashboardPageState extends State<DashboardPage> {
     final coverage = app.coverage;
 
     if (coverage == null) {
-      return Center(
-        child: app.loading
-            ? const CircularProgressIndicator()
-            : Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(app.error ?? 'Keine Daten'),
-                  const SizedBox(height: 12),
-                  OutlinedButton(
-                    onPressed: app.loadDashboard,
-                    child: const Text('Erneut versuchen'),
-                  ),
-                ],
-              ),
-      );
+      return app.loading
+          ? const ScreenStatus.loading()
+          : ScreenStatus.error(
+              message: app.error ?? 'Keine Daten',
+              onRetry: app.loadDashboard,
+            );
     }
 
     final topics = (coverage['topics'] as List).cast<Map<String, dynamic>>();

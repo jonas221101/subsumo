@@ -1,0 +1,213 @@
+topic:
+  slug: or-vwvfg-verwaltungsakt
+  area: oeffentliches-recht
+  title: Der Verwaltungsakt, § 35 VwVfG
+  parent: oeffentliches-recht
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-15'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: or-vwvfg-va-begriff
+  type: definition
+  front: 'Definiere: Verwaltungsakt, § 35 S. 1 VwVfG'
+  back: Ein Verwaltungsakt ist jede Verfuegung, Entscheidung oder andere hoheitliche
+    Massnahme, die eine Behoerde zur Regelung eines Einzelfalls auf dem Gebiet des
+    oeffentlichen Rechts trifft und die auf unmittelbare Rechtswirkung nach aussen
+    gerichtet ist. Diese fuenf Merkmale muessen kumulativ vorliegen.
+  norms:
+  - § 35 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwvfg-va-hoheitliche-massnahme
+  type: definition
+  front: Wann handelt eine Behoerde 'hoheitlich' i.S.d. § 35 VwVfG?
+  back: Hoheitlich handelt eine Behoerde, wenn sie einseitig kraft oeffentlich-rechtlicher
+    Befugnis auftritt - im Unterschied zum Handeln in Formen des Privatrechts (etwa
+    beim fiskalischen Hilfsgeschaeft) oder zu schlicht tatsaechlichem Verwaltungshandeln
+    ohne Regelungsanspruch. Die Behoerde muss dem Buerger in einem Ueber-/Unterordnungsverhaeltnis
+    gegenuebertreten.
+  norms:
+  - § 35 VwVfG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwvfg-va-regelung-abgrenzung-realakt
+  type: definition
+  front: 'Definiere: ''Regelung'' i.S.d. § 35 VwVfG und grenze sie vom Realakt ab'
+  back: Eine Regelung liegt vor, wenn die Massnahme auf die Setzung einer verbindlichen
+    Rechtsfolge gerichtet ist - Begruendung, Aenderung, Aufhebung oder verbindliche
+    Feststellung eines Rechtsverhaeltnisses. Daran fehlt es beim Realakt, der nur
+    eine tatsaechliche Wirkung entfaltet, ohne selbst eine Rechtsfolge auszusprechen
+    (z. B. die tatsaechliche Durchfuehrung einer angeordneten Massnahme, eine unverbindliche
+    Auskunft oder ein blosser Hinweis).
+  norms:
+  - § 35 VwVfG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwvfg-va-einzelfall-allgemeinverfuegung
+  type: norm
+  front: Was ist eine Allgemeinverfuegung, § 35 S. 2 VwVfG?
+  back: Die Allgemeinverfuegung ist ein Verwaltungsakt, der sich an einen nach allgemeinen
+    Merkmalen bestimmten oder bestimmbaren Personenkreis richtet (personenbezogene
+    Allgemeinverfuegung) oder die oeffentlich-rechtliche Eigenschaft einer Sache oder
+    ihre Benutzung durch die Allgemeinheit betrifft (sachbezogene Allgemeinverfuegung).
+    Sie ist trotz der Vielzahl Betroffener weiterhin ein Einzelfall i.S.d. § 35 S.
+    1 VwVfG, keine abstrakt-generelle Regelung wie eine Rechtsnorm.
+  norms:
+  - § 35 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwvfg-va-aussenwirkung
+  type: definition
+  front: Wann fehlt es an der Aussenwirkung einer behoerdlichen Massnahme?
+  back: Aussenwirkung fehlt bei rein verwaltungsinternen Massnahmen, die sich innerhalb
+    eines Ueber-/Unterordnungsverhaeltnisses derselben Verwaltungsorganisation erschoepfen
+    und keinen Aussenstehenden unmittelbar in eigenen Rechten betreffen - etwa Weisungen
+    an nachgeordnete Behoerden oder Dienstanweisungen an Beamte in ihrer Funktion
+    als Amtstraeger. Betrifft die Massnahme den Beamten hingegen in seiner Rechtsstellung
+    als Grundrechtstraeger (z. B. eine Disziplinarmassnahme), liegt Aussenwirkung
+    vor.
+  norms:
+  - § 35 VwVfG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwvfg-va-nichtigkeit
+  type: norm
+  front: Wann ist ein Verwaltungsakt nichtig, § 44 Abs. 1 VwVfG?
+  back: Ein Verwaltungsakt ist nichtig, soweit er an einem besonders schwerwiegenden
+    Fehler leidet und dies bei verstaendiger Wuerdigung aller in Betracht kommenden
+    Umstaende offensichtlich ist, § 44 Abs. 1 VwVfG. § 44 Abs. 2 VwVfG nennt hierzu
+    nicht abschliessende Regelbeispiele (z. B. schriftlicher Erlass ohne erkennbare
+    erlassende Behoerde, Verstoss gegen die guten Sitten), § 44 Abs. 3 VwVfG Gegenbeispiele,
+    die fuer sich allein die Nichtigkeit gerade nicht begruenden.
+  norms:
+  - § 44 Abs. 1 VwVfG
+  - § 44 Abs. 2 VwVfG
+  - § 44 Abs. 3 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwvfg-va-formelle-materielle-rechtmaessigkeit
+  type: schema_step
+  front: Nenne die zwei Ebenen der Rechtmaessigkeitspruefung eines Verwaltungsakts
+  back: 'Formelle Rechtmaessigkeit: Zustaendigkeit der handelnden Behoerde, ordnungsgemaesses
+    Verfahren (insbesondere Anhoerung, § 28 VwVfG) und Form. Materielle Rechtmaessigkeit:
+    Vorliegen einer tauglichen Ermaechtigungsgrundlage, Erfuellung ihrer Tatbestandsvoraussetzungen
+    und rechtmaessige Rechtsfolge - bei Ermessensnormen zusaetzlich fehlerfreie Ermessensausuebung,
+    § 40 VwVfG. Ein Verstoss gegen eine der beiden Ebenen macht den Verwaltungsakt
+    rechtswidrig, fuehrt aber nur bei Erreichen der Schwelle des § 44 VwVfG zur Nichtigkeit.'
+  norms:
+  - § 28 VwVfG
+  - § 40 VwVfG
+  - § 44 Abs. 1 VwVfG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: or-schema-vwvfg-va-vorliegen
+  title: Liegt ein Verwaltungsakt vor?, § 35 VwVfG
+  norms:
+  - § 35 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Hoheitliche Massnahme einer Behoerde
+    hinweis: Behoerdenbegriff, § 1 Abs. 4 VwVfG - jede Stelle, die Aufgaben der oeffentlichen
+      Verwaltung wahrnimmt.
+  - label: II. Auf dem Gebiet des oeffentlichen Rechts
+  - label: III. Regelung
+    children:
+    - label: Setzung einer verbindlichen Rechtsfolge - Abgrenzung zum Realakt (keine
+        Rechtsfolge) und zur unverbindlichen Auskunft
+  - label: IV. Einzelfall
+    children:
+    - label: auch als Allgemeinverfuegung, § 35 S. 2 VwVfG, moeglich
+  - label: V. Aussenwirkung
+    hinweis: Unmittelbare Rechtswirkung gegenueber einem der Verwaltung nicht organisatorisch
+      eingegliederten Aussenstehenden.
+  - label: VI. Ergebnis
+faelle:
+- slug: or-fall-duldungsverfuegung-vermessung
+  title: Die Duldungsverfuegung der Katasterbehoerde
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VwVfG, amtliche Fassung
+  facts: Die zustaendige Katasterbehoerde ordnet gegenueber dem Grundstueckseigentuemer
+    E schriftlich an, dass er die Betretung seines Grundstuecks durch Vermessungspersonal
+    am 15. des Monats zur Durchfuehrung einer Grenzvermessung zu dulden habe (Duldungsverfuegung),
+    gestuetzt auf eine gesetzliche Ermaechtigung. E meint, hierbei handele es sich
+    lediglich um die Ankuendigung eines rein tatsaechlichen Vorgangs, gegen den er
+    sich nicht gesondert zur Wehr setzen koenne.
+  question: Ist die Duldungsverfuegung ein Verwaltungsakt i.S.d. § 35 VwVfG?
+  steps:
+  - prompt: Liegt eine hoheitliche Massnahme einer Behoerde vor?
+    erwartung: Ja - die Katasterbehoerde ist Behoerde i.S.d. § 1 Abs. 4 VwVfG und
+      handelt einseitig kraft oeffentlich-rechtlicher Befugnis.
+  - prompt: Liegt eine Regelung vor, oder handelt es sich nur um einen Realakt?
+    erwartung: Die Duldungsverfuegung selbst ist eine Regelung, da sie verbindlich
+      eine Duldungspflicht des E begruendet. Die spaetere tatsaechliche Vermessung
+      dagegen ist ein Realakt ohne eigenen Regelungscharakter.
+  - prompt: Liegt ein Einzelfall vor?
+    erwartung: Ja - die Anordnung richtet sich an den individuell bestimmten E hinsichtlich
+      eines konkreten Grundstuecks.
+  - prompt: Liegt Aussenwirkung vor?
+    erwartung: Ja - E ist als Grundstueckseigentuemer ein der Verwaltung nicht eingegliederter
+      Aussenstehender, der unmittelbar in seiner Rechtsstellung (Duldungspflicht)
+      betroffen wird.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Hoheitliche Massnahme einer Behoerde bejaht, § 1 Abs. 4 VwVfG
+      weight: 1.5
+      required: false
+      keywords:
+      - Behoerde
+      - hoheitlich
+    - id: p2
+      label: Regelung bejaht und zutreffend vom Realakt (tatsaechliche Vermessung)
+        abgegrenzt
+      weight: 3.0
+      required: true
+      norms:
+      - § 35 VwVfG
+      keywords:
+      - Regelung
+      - Realakt
+      - Rechtsfolge
+    - id: p3
+      label: Einzelfall bejaht
+      weight: 1.0
+      required: false
+      keywords:
+      - Einzelfall
+    - id: p4
+      label: Aussenwirkung bejaht und begruendet
+      weight: 2.0
+      required: true
+      keywords:
+      - Aussenwirkung
+      - Aussenstehender
+    - id: p5
+      label: 'Ergebnis: Duldungsverfuegung ist Verwaltungsakt i.S.d. § 35 VwVfG'
+      weight: 1.5
+      required: true
+      norms:
+      - § 35 VwVfG
+      keywords:
+      - Verwaltungsakt
+      - § 35

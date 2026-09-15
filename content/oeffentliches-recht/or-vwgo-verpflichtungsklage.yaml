@@ -1,0 +1,207 @@
+topic:
+  slug: or-vwgo-verpflichtungsklage
+  area: oeffentliches-recht
+  title: Die Verpflichtungsklage, § 42 Abs. 1 Var. 2 VwGO
+  parent: oeffentliches-recht
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-15'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: or-vwgo-vk-statthaftigkeit
+  type: definition
+  front: Wann ist die Verpflichtungsklage statthafte Klageart, § 42 Abs. 1 Var. 2
+    VwGO?
+  back: 'Die Verpflichtungsklage ist statthaft, wenn der Klaeger nach seinem Vorbringen
+    die Verurteilung der Behoerde zum Erlass eines von ihr abgelehnten oder unterlassenen
+    Verwaltungsakts begehrt. Sie zerfaellt in zwei Varianten: die Versagungsgegenklage
+    (die Behoerde hat den Antrag ausdruecklich abgelehnt) und die Untaetigkeitsklage
+    (die Behoerde hat ueber den Antrag gar nicht entschieden, § 75 VwGO).'
+  norms:
+  - § 42 Abs. 1 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwgo-vk-versagungsgegenklage-untaetigkeitsklage
+  type: definition
+  front: Grenze Versagungsgegenklage und Untaetigkeitsklage voneinander ab
+  back: Bei der Versagungsgegenklage ist ueber den Antrag bereits durch Ablehnungsbescheid
+    entschieden worden; sie setzt regelmaessig ein erfolglos durchgefuehrtes Vorverfahren
+    voraus. Bei der Untaetigkeitsklage nach § 75 VwGO hat die Behoerde ueber einen
+    Antrag oder Widerspruch ohne zureichenden Grund innerhalb angemessener Frist nicht
+    entschieden; hier ersetzt der blosse Zeitablauf das sonst erforderliche Vorverfahren
+    bzw. den Erlass eines Bescheids.
+  norms:
+  - § 42 Abs. 1 VwGO
+  - § 75 VwGO
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwgo-vk-klagebefugnis
+  type: definition
+  front: Wie wird die Klagebefugnis bei der Verpflichtungsklage begruendet, § 42 Abs.
+    2 VwGO analog?
+  back: Klagebefugt ist, wer geltend macht, moeglicherweise einen Anspruch auf den
+    begehrten Verwaltungsakt zu haben - sei es aus einer gebundenen Norm oder aus
+    einem Anspruch auf ermessens- bzw. beurteilungsfehlerfreie Entscheidung. Wie bei
+    der Anfechtungsklage genuegt nach der Moeglichkeitstheorie, dass ein solcher Anspruch
+    nicht offensichtlich und eindeutig ausgeschlossen ist.
+  norms:
+  - § 42 Abs. 2 VwGO
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwgo-vk-untaetigkeitsklage-sperrfrist
+  type: norm
+  front: Welche Sperrfrist gilt fuer die Untaetigkeitsklage, § 75 S. 2 VwGO?
+  back: Die Klage darf grundsaetzlich nicht vor Ablauf von drei Monaten seit Antragstellung
+    oder Einlegung des Widerspruchs erhoben werden, § 75 S. 2 VwGO, es sei denn, es
+    liegt wegen besonderer Umstaende des Falles ein kuerzerer Zeitraum nahe. Hat die
+    Behoerde der Fristsetzung einen zureichenden Grund fuer die Nichtentscheidung
+    mitgeteilt, kann das Gericht das Verfahren aussetzen, § 75 S. 3 VwGO.
+  norms:
+  - § 75 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwgo-vk-klagefrist-versagungsgegenklage
+  type: norm
+  front: Welche Klagefrist gilt bei der Versagungsgegenklage?
+  back: Wie bei der Anfechtungsklage ist die Versagungsgegenklage innerhalb eines
+    Monats nach Zustellung des ablehnenden Widerspruchsbescheids zu erheben, § 74
+    Abs. 2 i.V.m. Abs. 1 VwGO; ist ausnahmsweise kein Vorverfahren erforderlich, laeuft
+    die Frist ab Bekanntgabe des Ablehnungsbescheids. Bei der Untaetigkeitsklage nach
+    § 75 VwGO gilt demgegenueber keine Klagefrist in diesem Sinne, da noch kein bestandskraeftiger
+    Bescheid vorliegt.
+  norms:
+  - § 74 Abs. 2 VwGO
+  - § 74 Abs. 1 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwgo-vk-bescheidungs-vornahmeurteil
+  type: streitstand
+  front: Unterscheide Vornahmeurteil und Bescheidungsurteil, § 113 Abs. 5 VwGO
+  back: Ist die Sache spruchreif und steht dem Klaeger der begehrte Anspruch zu, verurteilt
+    das Gericht die Behoerde zum Erlass des beantragten Verwaltungsakts (Vornahmeurteil,
+    § 113 Abs. 5 S. 1 VwGO). Fehlt es an der Spruchreife - etwa weil der Behoerde
+    Ermessen oder ein Beurteilungsspielraum zusteht und dessen fehlerfreie Ausuebung
+    noch aussteht - verurteilt das Gericht die Behoerde nur zur erneuten Bescheidung
+    unter Beachtung der Rechtsauffassung des Gerichts (Bescheidungsurteil, § 113 Abs.
+    5 S. 2 VwGO).
+  norms:
+  - § 113 Abs. 5 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: or-schema-vwgo-verpflichtungsklage
+  title: Zulaessigkeit der Verpflichtungsklage, § 42 Abs. 1 Var. 2 VwGO
+  norms:
+  - § 40 Abs. 1 VwGO
+  - § 42 Abs. 1 VwGO
+  - § 42 Abs. 2 VwGO
+  - § 75 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Eroeffnung des Verwaltungsrechtswegs, § 40 Abs. 1 VwGO
+  - label: II. Statthafte Klageart
+    children:
+    - label: '1. Versagungsgegenklage: Antrag durch VA abgelehnt'
+    - label: '2. Untaetigkeitsklage: keine Entscheidung ohne zureichenden Grund, §
+        75 VwGO'
+  - label: III. Klagebefugnis, § 42 Abs. 2 VwGO analog
+    hinweis: Moeglicher Anspruch auf den begehrten Verwaltungsakt.
+  - label: IV. Beteiligten- und Prozessfaehigkeit, §§ 61, 62 VwGO
+  - label: V. Vorverfahren bzw. Sperrfrist
+    children:
+    - label: 'bei Versagungsgegenklage: erfolgloses Vorverfahren, § 68 VwGO'
+    - label: 'bei Untaetigkeitsklage: Ablauf der Sperrfrist, § 75 S. 2 VwGO'
+  - label: VI. Klagefrist, § 74 Abs. 2 VwGO (bei Versagungsgegenklage)
+  - label: VII. Richtiger Beklagter, § 78 Abs. 1 VwGO
+  - label: VIII. Allgemeines Rechtsschutzbeduerfnis
+faelle:
+- slug: or-fall-baugenehmigung-untaetigkeitsklage
+  title: Die unbeantwortete Bauantrag
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VwGO, amtliche Fassung
+  facts: A beantragt bei der zustaendigen Bauaufsichtsbehoerde die Erteilung einer
+    Baugenehmigung fuer ein Wohnhaus. Vier Monate nach vollstaendiger Antragstellung
+    hat die Behoerde weder entschieden noch A einen zureichenden Grund fuer die Verzoegerung
+    mitgeteilt. A moechte nun unmittelbar Klage auf Erteilung der Baugenehmigung erheben,
+    ohne zuvor ein foermliches Vorverfahren durchlaufen zu haben.
+  question: Ist eine solche Klage des A zulaessig?
+  steps:
+  - prompt: Welche Klageart ist statthaft?
+    erwartung: Die Verpflichtungsklage, § 42 Abs. 1 Var. 2 VwGO, in der Variante der
+      Untaetigkeitsklage, § 75 VwGO - A begehrt den Erlass eines bislang unterlassenen
+      Verwaltungsakts.
+  - prompt: Ist ein Vorverfahren vor Klageerhebung erforderlich?
+    erwartung: Nein - bei der Untaetigkeitsklage tritt an die Stelle des Vorverfahrens
+      der Ablauf der Sperrfrist des § 75 S. 2 VwGO.
+  - prompt: Ist die Sperrfrist des § 75 S. 2 VwGO abgelaufen?
+    erwartung: Ja - seit Antragstellung sind vier Monate vergangen und damit mehr
+      als die Regelfrist von drei Monaten; ein zureichender Grund fuer die Verzoegerung
+      wurde A nicht mitgeteilt.
+  - prompt: Ist A klagebefugt?
+    erwartung: Ja - A macht geltend, moeglicherweise einen Anspruch auf die Baugenehmigung
+      zu haben; dieser Anspruch ist nicht von vornherein offensichtlich ausgeschlossen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Verpflichtungsklage als statthafte Klageart in der Variante der Untaetigkeitsklage
+        erkannt
+      weight: 2.5
+      required: true
+      norms:
+      - § 42 Abs. 1 VwGO
+      - § 75 VwGO
+      keywords:
+      - Verpflichtungsklage
+      - Untaetigkeitsklage
+      - § 75
+    - id: p2
+      label: Sperrfrist des § 75 S. 2 VwGO (drei Monate) korrekt angewandt und als
+        abgelaufen erkannt
+      weight: 3.0
+      required: true
+      norms:
+      - § 75 VwGO
+      keywords:
+      - Sperrfrist
+      - drei Monate
+      - zureichender Grund
+    - id: p3
+      label: Kein Vorverfahren vor Klageerhebung erforderlich, da Sperrfrist an dessen
+        Stelle tritt
+      weight: 1.5
+      required: false
+      keywords:
+      - Vorverfahren
+      - entbehrlich
+    - id: p4
+      label: Klagebefugnis nach der Moeglichkeitstheorie bejaht
+      weight: 1.5
+      required: false
+      keywords:
+      - Klagebefugnis
+      - moeglich
+    - id: p5
+      label: 'Ergebnis: Klage ist zulaessig'
+      weight: 1.0
+      required: false
+      keywords:
+      - zulaessig
