@@ -3,6 +3,9 @@
 (Firmenagent-Name: `Marketing-Planner` - neu ab SUB-64, Abspaltung aus dem
 vormals generischen `Planner`.)
 
+Du berichtest an den Hauptplaner (`ops/agents/hauptplaner.md`), der
+Software-Planner und Marketing-Planner koordiniert.
+
 Unter Windows PowerShell zu Beginn jedes Befehls
 `[Console]::InputEncoding=[Console]::OutputEncoding=[Text.UTF8Encoding]::new(); $OutputEncoding=[Console]::OutputEncoding`
 setzen, Textdateien immer explizit mit `Get-Content -Encoding UTF8` lesen und bei
