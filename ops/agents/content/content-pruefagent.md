@@ -1,11 +1,19 @@
 # Content-Prüfagent
 
-Beschreibt eine deterministische Zusatzprüfung in der KI-Redaktion
-(`docs/08-ki-redaktion.md`), unabhängig von Collector und Reviewer - kein
-weiterer LLM-Aufruf, kein eigener Paperclip-Firmenagent. Code:
-`backend/app/services/redaktion/norm_gate.py`, eingebunden in
-`backend/app/services/redaktion/pipeline.py` zwischen Struktur-Gate und
-Reviewer.
+Beschreibt zwei zusammengehörige, aber getrennte Prüfinstanzen in der
+KI-Redaktion (`docs/08-ki-redaktion.md`), beide unabhängig von Collector und
+Reviewer:
+
+1. Das automatisierte, deterministische Normzitat-Gate im Code
+   (`backend/app/services/redaktion/norm_gate.py`, eingebunden in
+   `backend/app/services/redaktion/pipeline.py` zwischen Struktur-Gate und
+   Reviewer) - kein LLM-Aufruf, läuft bei jedem Pipeline-Durchlauf
+   automatisch, unabhängig davon ob ein Firmenagent existiert.
+2. Der echte Paperclip-Firmenagent `Content-Pruefagent` (reportsTo
+   Content-Koordinator), der als zusätzliche, unabhängige Instanz fertige
+   Entwürfe (nach bestandenem Struktur- und Normzitat-Gate) inhaltlich auf
+   Normzitat-Passung und Quellenpflicht prüft - siehe "Warum eine eigene,
+   dritte Instanz" unten.
 
 ## Was geprüft wird
 
@@ -23,31 +31,46 @@ Reviewer.
    inhaltlich zusammengehört (beides sind belegbarkeits-/nachweisbezogene
    Checks, kein fachliches Urteil wie beim Reviewer).
 
-## Warum eine eigene, dritte Instanz
+## Warum zwei zusätzliche Instanzen
 
 Der Reviewer (`docs/08-ki-redaktion.md`, "Was der Reviewer nicht leistet")
 kann einen erfundenen, aber plausibel klingenden Paragraphen nicht
 zuverlässig von einem echten unterscheiden - dieselbe Schwäche, die ihn
-selbst als LLM-Aufruf trifft. Eine deterministische Prüfung ist hier
-robuster: sie erfindet nichts und variiert nicht zwischen Läufen.
+selbst als LLM-Aufruf trifft. Das automatisierte Gate ist hier robuster für
+die Syntax-Ebene: es erfindet nichts und variiert nicht zwischen Läufen.
+Für die semantische Ebene - passt ein syntaktisch korrektes Zitat auch
+inhaltlich zum behaupteten Sachverhalt - reicht Determinismus allein nicht;
+dafür existiert der Firmenagent `Content-Pruefagent` als eigenständige
+vierte Perspektive neben Collector, Reviewer und Code-Gate.
 
 ## Grenze, explizit benannt
 
-Die Positivliste **ersetzt keinen vollständigen Normindex** (M2,
+Die Positivliste im Code **ersetzt keinen vollständigen Normindex** (M2,
 `docs/03-roadmap.md`, Import von gesetze-im-internet.de). Sie fängt
 offensichtlich erfundene oder falsch zugeordnete Paragraphen/Gesetze ab
 (unbekanntes Kürzel, Nummer außerhalb des bekannten Bereichs, falsches
 Zitierformat), prüft aber nicht, ob ein syntaktisch korrektes Zitat
-inhaltlich zum behaupteten Sachverhalt passt. Bis M2 bleibt die
-menschliche Stichprobe vor der ersten Nutzung eines KI-Inhalts empfohlen
-(siehe "Grenzen, ehrlich benannt" in `docs/08-ki-redaktion.md`).
+inhaltlich zum behaupteten Sachverhalt passt. Bis M2 übernimmt diese
+inhaltliche Stichprobe der Firmenagent `Content-Pruefagent` (reportsTo
+Content-Koordinator) - siehe "Grenzen, ehrlich benannt" in
+`docs/08-ki-redaktion.md`.
 
 ## Pro Lauf
 
-Diese Prüfung läuft automatisiert als Teil von `RedaktionPipeline.run()` -
-es gibt keinen manuellen "Lauf" dieser Rolle. Wer an der Positivliste
-arbeitet (neues Gesetz ergänzen, Paragraphenbereich korrigieren), tut das
-als Entwickler-Aufgabe:
+Zwei getrennte Arbeitsweisen, je nachdem wer an dieser Prüfinstanz
+arbeitet:
+
+**Firmenagent `Content-Pruefagent` (fachliche Prüfung je Content-Batch):**
+prüft nach bestandenem Struktur- und automatisiertem Normzitat-Gate jeden
+Entwurf inhaltlich auf Normzitat-Passung und Quellenpflicht und postet ein
+Pass/Fail je Datei. Details, Domain-Lenses und Zusammenarbeit siehe die
+Agent-Instruktionen des Firmenagenten (`AGENTS.md`, verwaltet über
+Paperclip, nicht in diesem Repo-Dokument).
+
+**Entwickler-Aufgabe (Pflege der Positivliste im Code):** das
+automatisierte Gate läuft ohnehin bei jedem `RedaktionPipeline.run()`
+automatisch. Wer an der Positivliste arbeitet (neues Gesetz ergänzen,
+Paragraphenbereich korrigieren), tut das als Entwickler-Aufgabe:
 
 1. `GESETZE`-Dict in `backend/app/services/redaktion/norm_gate.py` erweitern
    oder korrigieren.
@@ -59,8 +82,12 @@ als Entwickler-Aufgabe:
 
 ## Rechte-Grenzen
 
-Keine Freigabe- oder Merge-Entscheidung - das Gate lehnt nur strukturell ab
-oder lässt durch, es urteilt nicht inhaltlich (das bleibt Aufgabe des
-Reviewers). Erweiterungen der Positivliste laufen über denselben PR-Workflow
-wie jede andere Code-Änderung (`CONTRIBUTING.md`), nicht über eine
-eigenmächtige Anpassung zur Laufzeit.
+Das automatisierte Code-Gate trifft keine Freigabe- oder Merge-Entscheidung
+- es lehnt nur strukturell/syntaktisch ab oder lässt durch. Der Firmenagent
+`Content-Pruefagent` urteilt fachlich (Pass/Fail mit Begründung je Datei),
+trifft aber ebenfalls keine Merge-Entscheidung - das bleibt beim Reviewer
+und beim PR-Workflow. Erweiterungen der Positivliste im Code laufen über
+denselben PR-Workflow wie jede andere Code-Änderung (`CONTRIBUTING.md`),
+nicht über eine eigenmächtige Anpassung zur Laufzeit durch den Firmenagenten.
+Kein Merge, kein direkter Push auf `main`, kein Anlegen neuer Firmenagenten
+(keine `canCreateAgents`-Berechtigung) durch den Content-Pruefagent selbst.
