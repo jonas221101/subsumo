@@ -342,11 +342,12 @@ kommunizieren". Bewertung je Stufe:
    Beschaffungsstufe, sondern eine Nebenbedingung, die ab Stufe 1 aufwärts
    gilt: Wird nicht mit habilitierten Dozenten kalibriert, darf das Produkt
    nicht mit "dozentengeprüft" werben (`docs/06-recht-compliance.md`
-   Abschnitt 5). Geprüft: der aktuelle Launch-Text
-   (`docs/21-landing-preisseite-launchtext.md`) enthält heute keine solche
-   Aussage — kein akuter Konflikt, aber eine Vorgabe, die vor jeder
-   künftigen Formulierung zu Korrektur-Qualität gilt, unabhängig davon,
-   welche Fallback-Stufe am Ende genutzt wird.
+   Abschnitt 5). Geprüft gegen `origin/main` (Basis dieses Pakets):
+   `docs/21-landing-preisseite-launchtext.md` existiert dort nicht (Entwurf
+   aus SUB-88 liegt bislang nur unfertig in einem Arbeits-Workspace, siehe
+   SUB-104) — kein Text, also auch kein akuter Konflikt, aber die Vorgabe
+   gilt ab dem Moment, in dem dieser Launch-Text auf `main` landet, und
+   sollte dann erneut gegen den tatsächlichen Wortlaut geprüft werden.
 4. **Nur redaktionelle Doppelprüfung, keine externen Personen.** Schwächste
    externe Validität, aber einzige Stufe ohne jede externe Abhängigkeit.
    **Wichtige Klarstellung, die die Roadmap-Zeile 215 für sich genommen
