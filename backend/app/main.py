@@ -5,11 +5,14 @@ from __future__ import annotations
 import logging
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
+from sqlalchemy import text
 
 from app.api.v1 import account, auth, billing, content, gutachten, learn, plan
 from app.config import get_settings
+from app.core.observability import configure_logging
 from app.db import Base, SessionLocal, engine
 from app.services.content import load_content, seed
 
@@ -35,6 +38,7 @@ async def lifespan(app: FastAPI):
 
 def create_app() -> FastAPI:
     settings = get_settings()
+    configure_logging(json_format=settings.log_json)
     app = FastAPI(
         title=settings.app_name,
         version="0.1.0",
@@ -65,9 +69,33 @@ def create_app() -> FastAPI:
     ):
         app.include_router(router, prefix="/v1")
 
+    @app.exception_handler(Exception)
+    async def unhandled_exception_handler(request: Request, exc: Exception) -> JSONResponse:
+        # Signal fuer Fehler-Tracking/Alerting, siehe docs/22-deploy-runbook.md
+        # Abschnitt "Monitoring" - unbehandelte Exceptions sind ein Weck-Signal.
+        log.error(
+            "Unbehandelte Exception",
+            exc_info=exc,
+            extra={"path": request.url.path, "method": request.method},
+        )
+        return JSONResponse(status_code=500, content={"detail": "Interner Fehler"})
+
     @app.get("/health", tags=["meta"])
-    def health() -> dict:
-        return {"status": "ok", "environment": settings.environment}
+    def health() -> JSONResponse:
+        try:
+            with SessionLocal() as db:
+                db.execute(text("SELECT 1"))
+            return JSONResponse({"status": "ok", "environment": settings.environment})
+        except Exception as exc:  # noqa: BLE001 - Health-Check meldet jeden DB-Fehler
+            log.error("Health-Check: Datenbank nicht erreichbar", exc_info=exc)
+            return JSONResponse(
+                {
+                    "status": "degraded",
+                    "environment": settings.environment,
+                    "detail": "database unreachable",
+                },
+                status_code=503,
+            )
 
     return app
 

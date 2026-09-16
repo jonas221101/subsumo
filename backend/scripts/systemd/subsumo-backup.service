@@ -1,0 +1,12 @@
+# Beispiel-Unit fuer das taegliche DB-Backup. Siehe docs/22-deploy-runbook.md
+# Abschnitt "Backup automatisieren". Pfade/User an die Zielumgebung anpassen.
+[Unit]
+Description=Subsumo taegliches Datenbank-Backup
+After=network.target postgresql.service
+
+[Service]
+Type=oneshot
+User=subsumo
+WorkingDirectory=/opt/subsumo/backend
+EnvironmentFile=/opt/subsumo/backend/.env
+ExecStart=/opt/subsumo/backend/.venv/bin/python scripts/backup_db.py --backup-dir /var/backups/subsumo

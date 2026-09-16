@@ -13,6 +13,27 @@ def test_health(client):
     assert client.get("/health").json()["status"] == "ok"
 
 
+def test_health_meldet_degraded_wenn_db_nicht_erreichbar(client, monkeypatch):
+    import app.main as main_module
+
+    class BrokenSession:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            return False
+
+        def execute(self, *args, **kwargs):
+            raise RuntimeError("db down")
+
+    monkeypatch.setattr(main_module, "SessionLocal", lambda: BrokenSession())
+
+    response = client.get("/health")
+
+    assert response.status_code == 503
+    assert response.json()["status"] == "degraded"
+
+
 # --------------------------------------------------------------------------- #
 # Auth
 # --------------------------------------------------------------------------- #
