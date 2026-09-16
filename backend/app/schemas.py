@@ -219,3 +219,15 @@ class AccountExportOut(BaseModel):
 class AccountDeleteIn(BaseModel):
     password: str
     confirm: bool = False
+
+
+class CheckoutSessionIn(BaseModel):
+    plan: str
+
+
+class CheckoutSessionOut(BaseModel):
+    checkout_url: str
+
+
+class CancelSubscriptionOut(BaseModel):
+    mode: str  # "period_end" | "immediate_refund"
