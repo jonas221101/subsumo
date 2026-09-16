@@ -55,6 +55,10 @@ class Settings(BaseSettings):
     # Pruefung der endgueltigen Widerrufsbelehrung (SUB-85).
     withdrawal_period_days: int = 14
 
+    # Strukturiertes JSON-Logging fuer Produktion, siehe
+    # docs/22-deploy-runbook.md Abschnitt "Monitoring".
+    log_json: bool = False
+
 
 @lru_cache
 def get_settings() -> Settings:

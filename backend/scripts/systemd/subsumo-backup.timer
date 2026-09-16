@@ -1,0 +1,13 @@
+# Taeglich 03:00 Uhr Server-Zeit, siehe docs/22-deploy-runbook.md Abschnitt
+# "Backup automatisieren". Aktivieren mit:
+#   systemctl enable --now subsumo-backup.timer
+[Unit]
+Description=Taeglicher Timer fuer Subsumo-Datenbank-Backup
+
+[Timer]
+OnCalendar=*-*-* 03:00:00
+Persistent=true
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target
