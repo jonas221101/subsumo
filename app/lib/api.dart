@@ -189,4 +189,22 @@ class ApiClient {
   /// wenn kein aktives Abo hinterlegt ist.
   Future<Map<String, dynamic>> cancelSubscription() async =>
       (await _post('/v1/billing/cancel', const {})) as Map<String, dynamic>;
+
+  // --- Konto / DSGVO ----------------------------------------------------------
+
+  /// Art. 15 DSGVO (SUB-84/SUB-103): vollstaendiger Datenexport (Account,
+  /// Karten, Reviews, Einreichungen) als ein JSON-Objekt.
+  Future<Map<String, dynamic>> exportAccountData() async =>
+      (await _get('/v1/account/export')) as Map<String, dynamic>;
+
+  /// Art. 17 DSGVO (SUB-84/SUB-103): loescht das Konto endgueltig. Der Server
+  /// verlangt zur Bestaetigung das aktuelle Passwort und `confirm: true` -
+  /// ohne `confirm` liefert er 400, bei falschem Passwort 401 (beide werden
+  /// vom Aufrufer als [ApiException] behandelt).
+  Future<void> deleteAccount(String password) async {
+    await _post('/v1/account/delete', {
+      'password': password,
+      'confirm': true,
+    });
+  }
 }

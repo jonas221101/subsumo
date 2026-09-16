@@ -116,4 +116,57 @@ void main() {
       );
     });
   });
+
+  group('ApiClient.exportAccountData (Art. 15 DSGVO, SUB-84/SUB-103)', () {
+    test('liefert den Server-Body unveraendert', () async {
+      final client = MockClient((request) async {
+        expect(request.method, 'GET');
+        expect(request.url.path, '/v1/account/export');
+        return _json({
+          'account': {'email': 'a@example.com'},
+          'user_cards': [],
+          'reviews': [],
+          'submissions': [],
+        }, 200);
+      });
+      final api = ApiClient(client: client)..setToken('t');
+
+      final result = await api.exportAccountData();
+
+      expect(result['account'], {'email': 'a@example.com'});
+    });
+  });
+
+  group('ApiClient.deleteAccount (Art. 17 DSGVO, SUB-84/SUB-103)', () {
+    test('sendet Passwort und confirm:true', () async {
+      final client = MockClient((request) async {
+        expect(request.url.path, '/v1/account/delete');
+        expect(jsonDecode(request.body), {'password': 'geheim123', 'confirm': true});
+        return _json({}, 200);
+      });
+      final api = ApiClient(client: client)..setToken('t');
+
+      await api.deleteAccount('geheim123');
+    });
+
+    test('400 (fehlende Bestaetigung) wird als ApiException durchgereicht', () async {
+      final client = MockClient((request) async => _json({'detail': 'confirm_required'}, 400));
+      final api = ApiClient(client: client)..setToken('t');
+
+      await expectLater(
+        () => api.deleteAccount('geheim123'),
+        throwsA(isA<ApiException>().having((e) => e.statusCode, 'statusCode', 400)),
+      );
+    });
+
+    test('401 (falsches Passwort) wird als ApiException durchgereicht', () async {
+      final client = MockClient((request) async => _json({'detail': 'invalid_password'}, 401));
+      final api = ApiClient(client: client)..setToken('t');
+
+      await expectLater(
+        () => api.deleteAccount('falsch'),
+        throwsA(isA<ApiException>().having((e) => e.statusCode, 'statusCode', 401)),
+      );
+    });
+  });
 }
