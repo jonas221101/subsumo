@@ -1,7 +1,6 @@
 // Belegt SUB-108: /preise ist oeffentlich (ohne Session) direkt aufrufbar,
 // statt zur LoginPage umzuleiten - waehrend /app weiterhin den bisherigen
 // Login-Gate-Fluss zeigt.
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:subsumo/api.dart';
