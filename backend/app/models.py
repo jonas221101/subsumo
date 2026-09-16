@@ -71,6 +71,12 @@ class User(Base):
     stripe_subscription_id: Mapped[str | None] = mapped_column(String(120), default=None)
     pro_until: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), default=None)
     cancel_at_period_end: Mapped[bool] = mapped_column(default=False)
+    # Beginn des aktuellen Abo-Zeitraums, gesetzt vom Webhook (B4) bei
+    # checkout.session.completed. Grundlage der 14-Tage-Widerrufsfrist in B5 -
+    # bewusst getrennt von created_at (Registrierung != Kauf).
+    subscription_started_at: Mapped[datetime | None] = mapped_column(
+        DateTime(timezone=True), default=None
+    )
 
     cards: Mapped[list[UserCard]] = relationship(back_populates="user")
 
@@ -245,3 +251,17 @@ class AnalyzeCall(Base):
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, index=True
     )
+
+
+class StripeWebhookEvent(Base):
+    """Persistierte Stripe-Event-IDs (docs/20 B4).
+
+    Macht erneut zugestellte Webhook-Events wirkungslos, analog zum
+    ``client_id``-Muster bei ``reviews``.
+    """
+
+    __tablename__ = "stripe_webhook_events"
+
+    event_id: Mapped[str] = mapped_column(String(255), primary_key=True)
+    event_type: Mapped[str] = mapped_column(String(120))
+    received_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
