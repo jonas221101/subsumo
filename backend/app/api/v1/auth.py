@@ -28,6 +28,7 @@ def _user_out(user: User) -> UserOut:
         pro_active=pro_active,
         pro_until=user.pro_until,
         cancel_at_period_end=user.cancel_at_period_end,
+        ai_review_consent_at=user.ai_review_consent_at,
     )
 
 

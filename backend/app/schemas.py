@@ -32,6 +32,7 @@ class UserOut(BaseModel):
     pro_active: bool = False
     pro_until: datetime | None = None
     cancel_at_period_end: bool = False
+    ai_review_consent_at: datetime | None = None
 
 
 class UserUpdateIn(BaseModel):
@@ -214,3 +215,9 @@ class AccountExportOut(BaseModel):
 class AccountDeleteIn(BaseModel):
     password: str
     confirm: bool = False
+
+
+class AiConsentOut(BaseModel):
+    """Antwort auf Erteilung/Widerruf der Einwilligung zur KI-Korrektur (SUB-133)."""
+
+    ai_review_consent_at: datetime | None = None
