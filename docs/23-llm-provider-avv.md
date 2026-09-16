@@ -1,4 +1,4 @@
-# LLM-Provider-Wahl + AVV — Entscheidungsvorlage für v1.1
+# LLM-Provider-Wahl + AVV — Entscheidungsvorlage
 
 > **Herkunft:** [SUB-129](/SUB/issues/SUB-129), aus einer Nutzerfrage auf
 > [SUB-39](/SUB/issues/SUB-39) („Warum haben wir die KI-Korrektur
@@ -20,6 +20,16 @@
 > (kein LLM) ist damit vom Tisch** — die offene Entscheidung betrifft nur noch
 > *welcher* Provider (A/B/C), nicht mehr *ob*. Die Empfehlung in Abschnitt 6
 > war bereits vor diesem Nachtrag Option B, ändert sich also nicht.
+>
+> **Nachtrag 2 (16.09.2026, 22:22 UTC):** Der Nutzer hat auf SUB-39 zusätzlich
+> die Terminfrage beantwortet: Die KI-Korrektur **kommt in v1.0, wenn der AVV
+> vor dem Code-Freeze am 28.09. steht** — sonst fällt sie automatisch auf
+> v1.1 zurück, der Releasetermin 29.09. bleibt in jedem Fall unangetastet. Der
+> Nutzer unterschreibt den AVV selbst, ohne anwaltliche Vorprüfung. Damit steht
+> diese Vorlage jetzt auf dem kritischen Pfad, nicht mehr nur für v1.1. Die
+> Empfehlung in Abschnitt 6 (Option B) bleibt unverändert die Zielarchitektur —
+> **Abschnitt 8** ergänzt sie um die Frage, was bis zum 27.09. tatsächlich
+> erreichbar ist, und um eine unterschriftsreife Handlungsanweisung.
 
 ---
 
@@ -76,7 +86,7 @@ Prüfung des tatsächlich abzuschließenden Vertrags — entsprechend als
 
 | Kriterium | Stand |
 |---|---|
-| AVV verfügbar? | **Ja, aber ohne EU-Verarbeitung.** Anthropic bietet ein Standard-DPA (Art.-28-Vertrag) mit EU-SCCs (Module 2/3 nach Durchführungsbeschluss (EU) 2021/914) für zahlende Kunden, das bei Annahme der kommerziellen Bedingungen automatisch eingebunden wird. Gerichtsstand Irland. **Zu klären:** ob der Self-Serve-API-Zugang (ohne Enterprise-Vertrag) automatisch das volle DPA umfasst oder ein gesondertes Opt-in/Sales-Gespräch nötig ist — das ist aus öffentlichen Quellen nicht abschließend zu belegen |
+| AVV verfügbar? | **Ja, aber ohne EU-Verarbeitung.** Anthropic bietet ein Standard-DPA (Art.-28-Vertrag) mit EU-SCCs (Module 2/3 nach Durchführungsbeschluss (EU) 2021/914) für zahlende Kunden, das bei Annahme der kommerziellen Bedingungen automatisch eingebunden wird. Gerichtsstand für EWR-Kunden: Irland. **Geklärt (16.09.2026, Primärquelle statt Sekundärquelle — Details und Belege in Abschnitt 8.1):** Der Self-Serve-API-Zugang über die Anthropic Commercial Terms of Service reicht aus; es ist **kein** gesondertes Opt-in und **kein** Sales-Gespräch nötig. Offen bleibt nur die inhaltliche Prüfung der Unterauftragsverarbeiter-Liste (unten) |
 | Verarbeitungsort | USA. Anthropic bietet für Claude über den First-Party-API-Zugang **keine** EU-Datenresidenz an — jeder Prompt wird auf US-Infrastruktur verarbeitet |
 | Unterauftragsverarbeiter | Nicht recherchiert — **zu klären** vor Vertragsschluss (Anthropic veröffentlicht eine Subprocessor-Liste, die für diese Vorlage nicht geprüft wurde) |
 | Preis / 1M Token | Deckt sich mit der Schätzung in `docs/19-kosten-preis-budget.md` Abschnitt 5 (Sonnet-Modell, 3 $/Mio Eingabe, 15 $/Mio Ausgabe nach evtl. Launch-Rabattfenster) |
@@ -255,8 +265,9 @@ stillschweigend.
 
 ## 7. Offene Punkte, die diese Vorlage nicht beantwortet
 
-- Ob für Option A ein Self-Serve-DPA ausreicht oder ein Sales-Kontakt nötig
-  ist.
+- ~~Ob für Option A ein Self-Serve-DPA ausreicht oder ein Sales-Kontakt nötig
+  ist.~~ **Geklärt, siehe Abschnitt 8.1** — Self-Serve reicht, belegt durch
+  Anthropics eigene Commercial Terms of Service und Privacy-Center-Hilfeseite.
 - Die vollständigen Unterauftragsverarbeiter-Listen aller drei
   LLM-Optionen (A/B/C) — nicht recherchiert.
 - Belastbare Vertex-AI-Preise für Claude-Modelle in EU-Regionen.
@@ -269,3 +280,144 @@ stillschweigend.
 Diese fünf Punkte sind bewusst nicht in eine Tabellenzeile „geschätzt"
 verwandelt worden — sie brauchen jeweils eine externe Abklärung (Anbieter,
 Recht, oder einen eigenen Testlauf), keine weitere Dokumentenarbeit.
+
+## 8. Zeitachse bis zum Code-Freeze (28.09.) — Ergänzung nach der Terminentscheidung auf SUB-39
+
+Diese Vorlage empfiehlt in Abschnitt 6 weiterhin **Option B** als Zielarchitektur
+— das ändert dieser Abschnitt nicht. Er beantwortet eine andere Frage, die erst
+durch die Terminentscheidung vom 16.09. (22:22 UTC, siehe Nachtrag 2 oben)
+entstanden ist: **Was ist bis zum 27.09. — einen Tag Puffer vor dem Freeze —
+technisch und vertraglich überhaupt erreichbar?**
+
+### 8.1 Welche Option ist bis zum 27.09. erreichbar?
+
+**Nur Option A.** Die in Abschnitt 2 als „zu klären" markierte Frage — ob der
+Self-Serve-API-Zugang automatisch das volle DPA umfasst oder ein gesondertes
+Opt-in nötig ist — lässt sich mit Primärquellen (Anthropics eigenen
+Rechtsdokumenten, nicht Sekundärquellen wie in Abschnitt 2) klären:
+
+- **Commercial Terms of Service, Abschnitt C („Data Privacy"):** „Data
+  submitted through the Services will be processed in accordance with the
+  Anthropic Data Processing Addendum ('DPA'), which is incorporated into
+  these Terms by reference." (<https://www.anthropic.com/legal/commercial-terms>)
+- **Privacy-Center-Hilfeartikel für Commercial-Kunden:** „Anthropic's DPA
+  with Standard Contractual Clauses (SCCs) is automatically incorporated
+  into our Commercial Terms of Service [...]. When you accept Anthropic's
+  Commercial Terms of Service, you also accept our DPA."
+  (<https://privacy.claude.com/en/articles/7996862-i-am-a-commercial-customer-how-do-i-view-your-data-processing-addendum-dpa>)
+- Beide Quellen nennen **keine** Voraussetzung eines Enterprise-Vertrags oder
+  Sales-Kontakts. Das DPA-Dokument selbst
+  (<https://www.anthropic.com/legal/data-processing-addendum>, Abschnitt I.1)
+  bestätigt: Es gilt für jeden Kunden mit „Anthropic Commercial Terms of
+  Service or other agreement" — keine gesonderte Kundenklasse.
+
+**Ergebnis:** Die Frage aus Abschnitt 2/7 ist damit beantwortet, nicht mehr
+offen. Option A ist über einen einzigen Schritt (ToS-Annahme im API-Konsolen-
+Signup) rechtlich erreichbar — ohne Vertragsverhandlung, ohne Wartezeit auf
+ein Sales-Gespräch.
+
+Option B bleibt dagegen **nicht** bis zum 27.09. erreichbar: Sie braucht
+zusätzlich einen neuen AWS- oder GCP-Rahmenvertrag (kein ToS-Klick, sondern
+ein eigenes Vertragsverfahren mit eigener Vorlaufzeit) plus die in Abschnitt 2
+geschätzten 2–4 PT Integrationsarbeit in `llm.py` — Kapazität, die laut der
+Aufgabenzuteilung auf SUB-39 bereits an G2 ([SUB-83](/SUB/issues/SUB-83),
+Kaufstrecke, bis 23.09.) und G4 ([SUB-86](/SUB/issues/SUB-86), Betrieb, bis
+24.–29.09.) hängt, nicht an zusätzlicher Kapazität.
+
+Zwei Einschränkungen aus derselben Recherche, die das Ergebnis nicht ändern,
+aber vor der Unterschrift bekannt sein müssen:
+
+- **Verarbeitungsort bleibt USA.** Der Gerichtsstand Irland für EWR-Kunden
+  (Commercial Terms, Abschnitt „Governing Law") ist eine Frage des
+  anwendbaren Rechts, keine Verarbeitungsort-Garantie. Das war in Abschnitt 2
+  bereits als „USA" markiert und bleibt so — die in
+  `docs/06-recht-compliance.md` Abschnitt 3 formulierte Präferenz für
+  EU-Verarbeitung wird mit Option A **nicht** erfüllt, sondern bewusst
+  abgewichen (siehe Abschnitt 6, letzter Absatz dieser Vorlage).
+- **Kein automatischer Trainings-Ausschluss über die Baseline hinaus.** Das
+  DPA selbst (Abschnitt H.1) nennt eine Löschfrist von 30 Tagen nach
+  Vertragsende, sonst keine Zero-Data-Retention-Zusage. Anthropics
+  allgemeine Commercial-Terms-Baseline für die API schließt Training auf
+  API-Ein-/Ausgaben aber bereits standardmäßig aus und löscht sie nach
+  30 Tagen — eine echte Zero-Data-Retention (kein Speichern über die
+  Antwortdauer hinaus) ist laut Recherche nur für „eligible enterprise
+  customers" über eine gesonderte Vereinbarung verfügbar, nicht Teil des
+  Self-Serve-Zugangs. Für den 28.09.-Termin ist das kein Blocker, weil die
+  Baseline (kein Training, 30 Tage) bereits ohne Zusatzvereinbarung greift —
+  aber es ist keine „volle" Zero-Data-Retention, und das sollte nicht
+  stillschweigend angenommen werden.
+
+### 8.2 Zweistufiger Pfad, falls Option A trägt
+
+Die Empfehlung aus Abschnitt 6 verliert dadurch nichts — sie bekommt nur ein
+Datum:
+
+1. **v1.0 (bis 27.09.): Option A.** Anthropic direkt, US-Verarbeitung, AVV
+   über ToS-Annahme. Kein Integrationsaufwand (`llm.py` ist bereits fertig,
+   Abschnitt 1).
+2. **v1.1 (Migrationsaufgabe, noch nicht geschnitten): Umzug auf Option B**
+   (AWS Bedrock oder Google Vertex AI, EU-Region). Aufwand unverändert
+   2–4 PT für eine zweite `LLMClient`-Implementierung
+   (`AnthropicClient` → Bedrock-/Vertex-SDK, IAM- statt API-Key-Auth,
+   Abschnitt 2) plus die separate Cloud-Vertragsanbahnung. Diese Migration
+   ist noch **kein** Board-Issue — sie sollte erst geschnitten werden, wenn
+   klar ist, dass v1.0 tatsächlich mit Option A startet, sonst entsteht ein
+   Issue für eine hypothetische Migration.
+
+Die bereits laufenden, providerunabhängigen Nachbaraufgaben
+([SUB-133](/SUB/issues/SUB-133) Einwilligungs-Gate, [SUB-134](/SUB/issues/SUB-134)
+Zustimmungsdialog, [SUB-135](/SUB/issues/SUB-135) Aktivierung) funktionieren mit
+beiden Optionen unverändert — der Provider ist für sie ein Konfigurationswert,
+kein Codepfad.
+
+### 8.3 Unterschriftsreife Handlungsanweisung für den Nutzer
+
+Reihenfolge, falls die Entscheidung auf Option A (v1.0) fällt:
+
+1. **Voraussetzung: Rechtsträger.** Die Commercial Terms of Service werden
+   von einer Rechtsperson akzeptiert, nicht anonym — das Konto braucht einen
+   Namen und eine Adresse als Vertragspartei. Das ist exakt die Angabe, die
+   `docs/18-release-2-wochen.md` Abschnitt 8 unter G1 („Rechtsträger für
+   Abrechnung und Impressum") bis **18.09.** abfragt. Zum Stand dieser
+   Recherche (16.09., 22:xx UTC) liegt sie auf SUB-39 noch nicht vor. Das ist
+   **keine neue Abhängigkeit** — G1 blockiert bereits Zahlungskonto und
+   Impressum —, aber ohne diese Angabe kann der Account, unter dem die AVV-
+   bindenden ToS akzeptiert werden, nicht final eingerichtet werden.
+2. **Konto anlegen:** <https://console.anthropic.com>, Rechtsträger als
+   Kontoinhaber, Zahlungsmethode hinterlegen.
+3. **Commercial Terms of Service akzeptieren:**
+   <https://www.anthropic.com/legal/commercial-terms> — dieser Schritt löst
+   den AVV per Verweis aus (Abschnitt 8.1). Vor dem Klick prüfen, nicht
+   danach:
+   - **Verarbeitungsort:** USA, keine EU-Option (Abschnitt 8.1) — Entscheidung
+     bewusst treffen, nicht übersehen.
+   - **Unterauftragsverarbeiter:** Liste unter
+     <https://www.anthropic.com/subprocessors> vor der Annahme einsehen;
+     diese Vorlage hat den Inhalt der Liste nicht geprüft (Abschnitt 7 bleibt
+     hier offen).
+   - **Löschfristen:** DPA, Abschnitt H.1 — 30 Tage nach Vertragsende, außer
+     gesetzliche Aufbewahrungspflicht.
+   - **Training-Ausschluss / Zero Data Retention:** Baseline schließt Training
+     aus und löscht nach 30 Tagen automatisch; echte Zero-Data-Retention
+     erfordert eine gesonderte Enterprise-Vereinbarung und ist im Self-Serve-
+     Zugang nicht enthalten (Abschnitt 8.1, letzter Punkt).
+4. **DPA-Annahme dokumentieren:** Datum und Screenshot/PDF der akzeptierten
+   ToS für das Verarbeitungsverzeichnis
+   (`docs/17-release-readiness.md` Abschnitt 1) ablegen — kein gesonderter
+   Signaturschritt nötig, aber ein Nachweis, dass und wann akzeptiert wurde.
+5. **Erst danach aktivieren:** `SUBSUMO_LLM_PROVIDER=anthropic` +
+   `SUBSUMO_LLM_API_KEY` setzen (Abschnitt 1). Der Zustimmungsdialog aus
+   [SUB-134](/SUB/issues/SUB-134) muss vorher live sein — sonst fehlt die in
+   Abschnitt 4 verlangte Einwilligung, und der Aktivierungsschritt aus
+   [SUB-135](/SUB/issues/SUB-135) darf nicht vorgezogen werden.
+
+**Quellen dieses Abschnitts (16.09.2026, Primärquellen von anthropic.com,
+nicht anwaltlich geprüft):** Anthropic Commercial Terms of Service
+(anthropic.com/legal/commercial-terms), Anthropic Data Processing Addendum
+(anthropic.com/legal/data-processing-addendum), Anthropic Subprocessor-Liste
+(anthropic.com/subprocessors), Anthropic Privacy Center Hilfeartikel
+(privacy.claude.com/en/articles/7996862). Im Unterschied zu den in Abschnitt 2
+verwendeten Sekundärquellen sind das Anthropics eigene Vertrags- und
+Hilfedokumente — das ersetzt weiterhin keine anwaltliche Prüfung des
+tatsächlich abzuschließenden Vertrags, ist aber eine belastbarere Grundlage
+als eine Drittanbieter-Zusammenfassung.
