@@ -93,6 +93,21 @@ class AppState extends ChangeNotifier {
 
   bool get isAuthenticated => api.isAuthenticated;
 
+  // --- Pro-Gating ------------------------------------------------------------
+  //
+  // Bildet direkt die Felder aus `/auth/me` ab (siehe docs/20 B1). Ist die
+  // Paywall serverseitig aus, liefert das Backend `pro_active=true` fuer
+  // alle Nutzer - dafuer braucht es hier keine Sonderlogik.
+
+  bool get proActive => (user?['pro_active'] as bool?) ?? false;
+
+  DateTime? get proUntil {
+    final raw = user?['pro_until'];
+    return raw is String ? DateTime.tryParse(raw) : null;
+  }
+
+  bool get cancelAtPeriodEnd => (user?['cancel_at_period_end'] as bool?) ?? false;
+
   /// Einmal beim Start aufzurufen: stellt Login, Outbox und den zuletzt
   /// bekannten Kartenstapel wieder her - in dieser Reihenfolge, damit ein
   /// Offline-Start sofort etwas Sinnvolles zeigt, statt auf das Netz zu warten.

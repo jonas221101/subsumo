@@ -131,6 +131,19 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
             "Ermessen und Beurteilungsspielraum, § 40 VwVfG",
             "VerwR AT, Ermessensfehler, Ermessensreduzierung auf Null",
         ),
+        (
+            "Art. 2 Abs. 1 GG: Allgemeine Handlungsfreiheit",
+            "Grundrechte, Auffanggrundrecht, Schranken der verfassungsmaessigen Ordnung",
+        ),
+        (
+            "Art. 5 GG: Meinungsfreiheit",
+            "Grundrechte, Schrankentrias Art. 5 Abs. 2 GG, Wechselwirkungslehre",
+        ),
+        (
+            "Rechtmaessigkeitspruefung eines Verwaltungsakts",
+            "VerwR AT, Ermaechtigungsgrundlage, formelle und materielle "
+            "Rechtmaessigkeit, Aufbauschema",
+        ),
     ],
 }
 

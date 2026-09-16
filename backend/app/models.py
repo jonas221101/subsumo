@@ -65,7 +65,26 @@ class User(Base):
     daily_minutes: Mapped[int] = mapped_column(Integer, default=90)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
+    # Entitlement (Release G2, siehe docs/20-release-g2-bezahlstrecke.md Abschnitt 4 B1).
+    # Ausschliesslich ueber den Stripe-Webhook (B4) geschrieben, nie per Client-Eingabe.
+    stripe_customer_id: Mapped[str | None] = mapped_column(String(120), default=None)
+    stripe_subscription_id: Mapped[str | None] = mapped_column(String(120), default=None)
+    pro_until: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), default=None)
+    cancel_at_period_end: Mapped[bool] = mapped_column(default=False)
+
     cards: Mapped[list[UserCard]] = relationship(back_populates="user")
+
+    def has_pro_access(self, now: datetime | None = None) -> bool:
+        """Rein zeitbasiert - kein Notausgang-Schalter, keine Client-Eingabe."""
+        if self.pro_until is None:
+            return False
+        reference = now if now is not None else utcnow()
+        pro_until = self.pro_until
+        # SQLite gibt DateTime(timezone=True) als naiven Wert zurueck - ohne die
+        # Normalisierung schlaegt der Vergleich mit dem tz-aware "reference" fehl.
+        if pro_until.tzinfo is None:
+            pro_until = pro_until.replace(tzinfo=UTC)
+        return pro_until > reference
 
 
 class Topic(Base):
@@ -193,3 +212,36 @@ class Submission(Base):
     points: Mapped[float | None] = mapped_column(Float, default=None)  # JAP-Skala 0-18
     report: Mapped[dict] = mapped_column(JSON, default=dict)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
+class CaseAccess(Base):
+    """Erster Zugriff eines Nutzers auf einen Fall.
+
+    Grundlage fuer das Free-Tier-Limit "2 gefuehrte Faelle" (docs/20, Abschnitt
+    4 B2): bereits gesehene Faelle bleiben erreichbar, nur der jeweils naechste
+    *neue* Fall zaehlt gegen das Kontingent.
+    """
+
+    __tablename__ = "case_access"
+    __table_args__ = (UniqueConstraint("user_id", "case_id", name="uq_case_access"),)
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
+    case_id: Mapped[int] = mapped_column(ForeignKey("cases.id"), index=True)
+    first_seen: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
+class AnalyzeCall(Base):
+    """Protokolliert Aufrufe von ``POST /gutachten/analyze``.
+
+    Grundlage fuer das Free-Tier-Wochenlimit (docs/20, Abschnitt 4 B2) - ein
+    rollierendes 7-Tage-Fenster statt eines Kalenderwochen-Resets.
+    """
+
+    __tablename__ = "analyze_calls"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, index=True
+    )
