@@ -207,4 +207,13 @@ class ApiClient {
       'confirm': true,
     });
   }
+
+  // --- Oeffentlich (ohne Login) ---------------------------------------------
+
+  /// Feature-Flags fuer die oeffentlichen Seiten vor Login (SUB-107), allen
+  /// voran `paywall_enabled` fuer die Variante-A/B-Umschaltung auf `/preise`
+  /// (SUB-110). Unauthentifiziert erreichbar - der Aufruf traegt nie einen
+  /// Bearer-Token, selbst wenn der Client anderswo eingeloggt ist.
+  Future<Map<String, dynamic>> publicConfig() async =>
+      (await _get('/v1/public/config')) as Map<String, dynamic>;
 }
