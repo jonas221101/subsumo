@@ -11,16 +11,24 @@
 ## Was v1.0 heißt
 
 **v1.0 (29.09.2026) = Web-Release plus Android-Beta mit Karteikarten,
-Schemata, geführten Fällen und funktionierender Bezahlschranke** — ohne
-KI-Klausurkorrektur, ohne iOS, ohne Klausursimulator. Maßgeblich sind die fünf
-Gates aus `docs/18-release-2-wochen.md` Abschnitt 5.
+Schemata, geführten Fällen und funktionierender Bezahlschranke** — ohne iOS,
+ohne Klausursimulator, und mit der KI-Klausurkorrektur als *bedingter* Zugabe.
+Maßgeblich sind die fünf Gates aus `docs/18-release-2-wochen.md` Abschnitt 5.
 
-> **Die KI-Klausurkorrektur ist nicht gestrichen, sondern in v1.0 abgeschaltet**
-> (Nutzerentscheidung vom 16.09.2026, siehe `docs/18-release-2-wochen.md`
-> Abschnitt 2). Sie bleibt als Feature gesetzt; ihre Aktivierung hängt am AVV
-> mit einem LLM-Provider ([SUB-129](/SUB/issues/SUB-129)) und, für die
-> bewertende Variante, an der Kalibrierung
-> ([SUB-130](/SUB/issues/SUB-130)). Phase B unten beschreibt den Ausbau.
+> **Die KI-Klausurkorrektur ist nicht gestrichen, sondern heute abgeschaltet —
+> und seit dem 16.09.2026 bedingt für v1.0 terminiert.** Der Nutzer hat
+> entschieden: Aktivierung noch in v1.0, *falls der AVV vor dem Code-Freeze am
+> 28.09. steht*; andernfalls fällt sie automatisch auf v1.1. Den AVV schließt
+> der Nutzer selbst ab. Die vollständige Entscheidungsregel mit Stichtag
+> (27.09., 18:00) steht in `docs/18-release-2-wochen.md` Abschnitt 2.1. Der
+> providerunabhängige Teil läuft bereits: [SUB-133](/SUB/issues/SUB-133)
+> (Einwilligungs-Gate), [SUB-134](/SUB/issues/SUB-134) (Zustimmungsdialog),
+> [SUB-135](/SUB/issues/SUB-135) (Aktivierung, Kostenbremse, Stichtagsentscheid),
+> Providerwahl und AVV-Vorlage über [SUB-129](/SUB/issues/SUB-129). Die
+> Kalibrierung ([SUB-130](/SUB/issues/SUB-130), erledigt) bindet nur die
+> bewertende Variante mit Punkten. Phase B unten beschreibt den weiteren Ausbau.
+>
+> **Der Releasetermin 29.09. hängt in keiner der beiden Richtungen daran.**
 
 **Vollausbau (v1.2, früher „v1.0") = öffentlicher Launch auf vier Plattformen
 mit funktionierender Bezahlschranke.** Nicht Feature-Vollständigkeit, sondern:
