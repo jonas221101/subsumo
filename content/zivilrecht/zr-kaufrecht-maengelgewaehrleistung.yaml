@@ -1,0 +1,327 @@
+topic:
+  slug: zr-kaufrecht-maengelgewaehrleistung
+  area: zivilrecht
+  title: Maengelgewaehrleistung im Kaufrecht (vertieft), §§ 434 ff. BGB
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-15'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: zr-kaufrecht-sachmangel-begriff
+  type: definition
+  front: 'Definiere: Sachmangel, § 434 Abs. 1 BGB'
+  back: Die Kaufsache ist frei von Sachmaengeln, wenn sie bei Gefahruebergang den
+    subjektiven Anforderungen, den objektiven Anforderungen und den Montageanforderungen
+    entspricht, § 434 Abs. 1 BGB. Ein Sachmangel liegt vor, wenn mindestens eine dieser
+    Anforderungen nicht erfuellt ist.
+  norms:
+  - § 434 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-kaufrecht-subjektive-anforderungen
+  type: definition
+  front: 'Definiere: subjektive Anforderungen an die Kaufsache, § 434 Abs. 2 BGB'
+  back: Die Sache entspricht den subjektiven Anforderungen, wenn sie die vereinbarte
+    Beschaffenheit hat, sich fuer die nach dem Vertrag vorausgesetzte Verwendung eignet
+    und mit dem vereinbarten Zubehoer sowie den vereinbarten Anleitungen uebergeben
+    wird. Massgeblich ist vorrangig die individuelle Parteivereinbarung.
+  norms:
+  - § 434 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-kaufrecht-objektive-anforderungen
+  type: definition
+  front: 'Definiere: objektive Anforderungen an die Kaufsache, § 434 Abs. 3 BGB'
+  back: Ergaenzend zu den subjektiven Anforderungen muss sich die Sache fuer die gewoehnliche
+    Verwendung eignen und eine Beschaffenheit aufweisen, die bei Sachen derselben
+    Art ueblich ist und die der Kaeufer nach Art der Sache erwarten kann - insbesondere
+    unter Beruecksichtigung oeffentlicher Aeusserungen des Verkaeufers oder Herstellers.
+    Objektive Anforderungen gelten zusaetzlich, auch wenn die subjektiven Anforderungen
+    erfuellt sind.
+  norms:
+  - § 434 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-kaufrecht-rechte-des-kaeufers-437
+  type: norm
+  front: Welche Rechte gewaehrt § 437 BGB dem Kaeufer bei einem Mangel?
+  back: '§ 437 BGB fasst die Maengelrechte des Kaeufers zusammen: Nacherfuellung nach
+    § 439 BGB, Ruecktritt nach §§ 440, 323, 326 Abs. 5 BGB oder Minderung nach § 441
+    BGB sowie Schadensersatz nach §§ 440, 280, 281, 283, 311a BGB oder Ersatz vergeblicher
+    Aufwendungen nach § 284 BGB. Die Norm ist eine Rechtsgrundverweisung: Sie gewaehrt
+    selbst keinen Anspruch, sondern verweist auf die jeweiligen Anspruchsgrundlagen.'
+  norms:
+  - § 437 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-kaufrecht-nacherfuellung-wahlrecht
+  type: definition
+  front: 'Definiere: Nacherfuellung und das Wahlrecht des Kaeufers, § 439 Abs. 1 BGB'
+  back: Der Kaeufer kann als Nacherfuellung nach seiner Wahl die Beseitigung des Mangels
+    (Nachbesserung) oder die Lieferung einer mangelfreien Sache (Nachlieferung) verlangen,
+    § 439 Abs. 1 BGB. Das Wahlrecht liegt beim Kaeufer, nicht beim Verkaeufer; dieser
+    traegt die zum Zweck der Nacherfuellung erforderlichen Aufwendungen.
+  norms:
+  - § 439 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-kaufrecht-nacherfuellung-verweigerung
+  type: norm
+  front: Wann kann der Verkaeufer die vom Kaeufer gewaehlte Art der Nacherfuellung
+    verweigern?
+  back: Der Verkaeufer kann die vom Kaeufer gewaehlte Art der Nacherfuellung unbeschadet
+    des § 275 Abs. 2 und 3 BGB verweigern, wenn sie nur mit unverhaeltnismaessigen
+    Kosten moeglich ist, § 439 Abs. 4 BGB. Bei der Beurteilung sind insbesondere der
+    Wert der Sache in mangelfreiem Zustand, die Bedeutung des Mangels und die Frage
+    zu beruecksichtigen, ob auf die andere Art der Nacherfuellung ohne erhebliche
+    Nachteile fuer den Kaeufer zurueckgegriffen werden koennte.
+  norms:
+  - § 439 Abs. 4 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-kaufrecht-fristsetzung-entbehrlich
+  type: norm
+  front: Wann ist die fuer Ruecktritt und Schadensersatz erforderliche Fristsetzung
+    entbehrlich, § 440 BGB?
+  back: Der Fristsetzung zur Nacherfuellung bedarf es zusaetzlich zu den allgemeinen
+    Faellen des § 323 Abs. 2 und des § 281 Abs. 2 BGB dann nicht, wenn der Verkaeufer
+    beide Arten der Nacherfuellung nach § 439 Abs. 4 BGB verweigert hat, wenn die
+    Nacherfuellung fehlgeschlagen ist oder wenn dem Kaeufer die Nacherfuellung unzumutbar
+    ist. Eine Nachbesserung gilt nach zwei erfolglosen Versuchen im Regelfall als
+    fehlgeschlagen, sofern sich nicht aus der Art der Sache, des Mangels oder aus
+    den sonstigen Umstaenden etwas anderes ergibt.
+  norms:
+  - § 440 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-kaufrecht-minderung-berechnung
+  type: definition
+  front: Wie wird die Minderung nach § 441 Abs. 3 BGB berechnet?
+  back: Bei der Minderung ist der Kaufpreis in dem Verhaeltnis herabzusetzen, in welchem
+    zur Zeit des Vertragsschlusses der Wert der Sache in mangelfreiem Zustand zu ihrem
+    wirklichen Wert gestanden haben wuerde. Die Minderung ist damit betragsgenau berechenbar
+    und unterscheidet sich vom Ruecktritt dadurch, dass der Vertrag im Uebrigen bestehen
+    bleibt.
+  norms:
+  - § 441 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-kaufrecht-verjaehrung-maengelanspruch
+  type: norm
+  front: Welche Verjaehrungsfrist gilt fuer Maengelansprueche beim Sachkauf, § 438
+    BGB?
+  back: Ansprueche wegen eines Sachmangels verjaehren beim Sachkauf regelmaessig in
+    zwei Jahren, § 438 Abs. 1 Nr. 3 BGB. Die Frist beginnt mit der Ablieferung der
+    Sache, § 438 Abs. 2 BGB - abweichend von der allgemeinen Regelverjaehrung des
+    § 199 BGB, die an die Kenntnis des Glaeubigers anknuepft.
+  norms:
+  - § 438 Abs. 1 Nr. 3 BGB
+  - § 438 Abs. 2 BGB
+  - § 199 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-kaufrecht-ruecktritt-schadensersatz-kumulation
+  type: streitstand
+  front: Koennen Ruecktritt und Schadensersatz statt der Leistung nebeneinander geltend
+    gemacht werden?
+  back: Ruecktritt und Schadensersatz statt der ganzen Leistung schliessen sich nicht
+    gegenseitig aus, § 325 BGB, und koennen kumulativ geltend gemacht werden. Praktisch
+    bedeutsam ist das etwa, wenn der Kaeufer nach dem Ruecktritt zusaetzlich Ersatz
+    eines Mangelfolgeschadens verlangt, der durch die blosse Rueckabwicklung nicht
+    ausgeglichen wird. Die Minderung schliesst dagegen als Gestaltungsrecht anstelle
+    des Ruecktritts eine gleichzeitige Geltendmachung von Schadensersatz statt der
+    Leistung fuer denselben Mangel grundsaetzlich nicht aus, da beide Rechtsbehelfe
+    unterschiedliche Zwecke verfolgen.
+  norms:
+  - § 325 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-kaufrecht-ruecktritt-minderung-exklusivitaet
+  type: streitstand
+  front: Wie verhalten sich Ruecktritt und Minderung zueinander?
+  back: 'Ruecktritt und Minderung sind alternative Gestaltungsrechte: Statt zurueckzutreten,
+    kann der Kaeufer den Kaufpreis durch Erklaerung gegenueber dem Verkaeufer mindern,
+    § 441 Abs. 1 BGB. Erklaert der Kaeufer wirksam die Minderung, ist der Ruecktritt
+    wegen desselben Mangels ausgeschlossen und umgekehrt. Ein einmal wirksam ausgeuebtes
+    Gestaltungsrecht bindet den Kaeufer; ein Wechsel zum jeweils anderen Recht ist
+    fuer denselben Mangel nicht mehr moeglich.'
+  norms:
+  - § 441 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-maengelgewaehrleistung
+  title: Maengelrechte des Kaeufers beim Sachkauf, §§ 434 ff. BGB
+  norms:
+  - § 434 Abs. 1 BGB
+  - § 437 BGB
+  - § 439 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Wirksamer Kaufvertrag, § 433 BGB
+  - label: II. Sachmangel bei Gefahruebergang
+    children:
+    - label: 1. Subjektive Anforderungen, § 434 Abs. 2 BGB
+    - label: 2. Objektive Anforderungen, § 434 Abs. 3 BGB
+    - label: 3. Montageanforderungen, § 434 Abs. 4 BGB
+      hinweis: Nur pruefen, wenn der Sachverhalt Anlass zur Montage gibt.
+    - label: 4. Vorliegen bei Gefahruebergang, § 446 BGB
+  - label: III. Kein Ausschluss der Maengelrechte
+    children:
+    - label: 1. Keine Kenntnis des Kaeufers vom Mangel, § 442 Abs. 1 BGB
+    - label: 2. Keine wirksame Freizeichnung, §§ 444, 476 BGB
+  - label: IV. Gewaehltes Maengelrecht
+    children:
+    - label: 1. Nacherfuellung, § 439 BGB
+    - label: 2. Ruecktritt, §§ 440, 323, 326 Abs. 5 BGB
+      hinweis: Fristsetzung zur Nacherfuellung grundsaetzlich erforderlich, ausser
+        sie ist nach § 440 BGB oder §§ 323 Abs. 2, 326 Abs. 5 BGB entbehrlich.
+    - label: 3. Minderung, § 441 BGB
+    - label: 4. Schadensersatz, §§ 440, 280, 281, 283, 311a BGB
+  - label: V. Keine Verjaehrung, § 438 BGB
+faelle:
+- slug: zr-fall-zurueckgedrehter-tachometer
+  title: Der zurueckgedrehte Tachometer
+  difficulty: 4
+  minutes: 55
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: 'Haendler V verkauft Kaeufer K einen gebrauchten Pkw fuer 12.000 Euro. Im
+    Kaufvertrag ist als Beschaffenheit "Kilometerstand lt. Tacho: 60.000 km" vereinbart.
+    Tatsaechlich betraegt die Laufleistung 110.000 km; der Tachometer wurde von einem
+    Vorbesitzer manipuliert, was weder V noch K bei Vertragsschluss wussten. Zwei
+    Monate nach Uebergabe faellt K die Abweichung bei einer Inspektion auf. K setzt
+    V eine Frist von zwei Wochen zur Nachlieferung eines Fahrzeugs mit tatsaechlich
+    60.000 km Laufleistung. V teilt mit, ein Fahrzeug mit exakt diesem Kilometerstand
+    koenne er nicht beschaffen; auch die Korrektur des Kilometerstands am vorhandenen
+    Fahrzeug sei technisch nicht moeglich. Nach fruchtlosem Fristablauf erklaert K
+    den Ruecktritt vom Kaufvertrag und verlangt Rueckzahlung des Kaufpreises Zug um
+    Zug gegen Ruecknahme des Fahrzeugs.'
+  question: Kann K von V Rueckzahlung des Kaufpreises Zug um Zug gegen Ruecknahme
+    des Fahrzeugs verlangen?
+  steps:
+  - prompt: Formuliere den Obersatz.
+    erwartung: K koennte gegen V einen Anspruch auf Rueckzahlung des Kaufpreises Zug
+      um Zug gegen Ruecknahme des Fahrzeugs aus §§ 437 Nr. 2, 440, 323, 346 Abs. 1
+      BGB haben.
+  - prompt: Liegt ein Sachmangel vor?
+    erwartung: Ja - die vereinbarte Beschaffenheit "60.000 km" liegt nicht vor, da
+      die tatsaechliche Laufleistung 110.000 km betraegt; damit fehlt eine subjektive
+      Anforderung nach § 434 Abs. 2 BGB.
+  - prompt: Liegt der Sachmangel bereits bei Gefahruebergang vor?
+    erwartung: Ja - die Manipulation erfolgte bereits vor Uebergabe durch einen Vorbesitzer,
+      sodass der Mangel bei Gefahruebergang (§ 446 BGB) bereits vorlag.
+  - prompt: War die von K gesetzte Frist zur Nacherfuellung erforderlich?
+    erwartung: Grundsaetzlich ja (§ 323 Abs. 1 BGB); K hat die Frist ohnehin gesetzt.
+      Die verlangte Nachlieferung eines Fahrzeugs mit exakt 60.000 km Laufleistung
+      ist jedoch unmoeglich, da ein solches Fahrzeug nicht existiert - die Nacherfuellung
+      in dieser Art ist nach § 275 Abs. 1 BGB ausgeschlossen.
+  - prompt: Welche Rechtsfolge hat die Unmoeglichkeit der Nachlieferung fuer den Ruecktritt?
+    erwartung: Nach § 326 Abs. 5 i.V.m. § 323 BGB kann K vom Vertrag zuruecktreten,
+      ohne dass es einer (weiteren) Fristsetzung bedarf, da die Nacherfuellung in
+      dieser Art unmoeglich ist.
+  - prompt: Ist die Pflichtverletzung unerheblich im Sinne des § 323 Abs. 5 S. 2 BGB?
+    erwartung: Nein - eine Abweichung von rund 50.000 km bei der vereinbarten Laufleistung
+      ist angesichts ihrer erheblichen Auswirkung auf den Fahrzeugwert keine unerhebliche
+      Pflichtverletzung.
+  - prompt: Welche Rechtsfolgen hat der wirksame Ruecktritt?
+    erwartung: 'Es entsteht ein Rueckgewaehrschuldverhaeltnis, § 346 Abs. 1 BGB: V
+      muss den Kaufpreis zurueckzahlen, K das Fahrzeug zurueckuebereignen - beides
+      Zug um Zug.'
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Obersatz mit §§ 437 Nr. 2, 323, 346 BGB formuliert
+      weight: 1.0
+      required: false
+      norms:
+      - § 437 BGB
+      - § 323 Abs. 1 BGB
+      keywords:
+      - '437'
+      - Ruecktritt
+    - id: p2
+      label: Sachmangel wegen Abweichung von der vereinbarten Beschaffenheit (§ 434
+        Abs. 2 BGB) korrekt bejaht
+      weight: 2.5
+      required: true
+      norms:
+      - § 434 Abs. 2 BGB
+      keywords:
+      - Sachmangel
+      - vereinbarte Beschaffenheit
+    - id: p3
+      label: Vorliegen des Mangels bei Gefahruebergang gepruft
+      weight: 1.0
+      required: false
+      norms:
+      - § 446 BGB
+      keywords:
+      - Gefahruebergang
+    - id: p4
+      label: Unmoeglichkeit der gewaehlten Nacherfuellungsart nach § 275 Abs. 1 BGB
+        erkannt
+      weight: 2.0
+      required: true
+      norms:
+      - § 275 Abs. 1 BGB
+      keywords:
+      - Unmoeglichkeit
+      - '275'
+    - id: p5
+      label: Entbehrlichkeit weiterer Fristsetzung nach § 326 Abs. 5 BGB korrekt hergeleitet
+      weight: 2.0
+      required: true
+      norms:
+      - § 326 Abs. 5 BGB
+      keywords:
+      - '326'
+      - Fristsetzung entbehrlich
+    - id: p6
+      label: Unerheblichkeit der Pflichtverletzung nach § 323 Abs. 5 S. 2 BGB gepruft
+        und verneint
+      weight: 1.5
+      required: false
+      norms:
+      - § 323 Abs. 5 BGB
+      keywords:
+      - unerheblich
+    - id: p7
+      label: Rechtsfolge Rueckgewaehrschuldverhaeltnis Zug um Zug, § 346 Abs. 1 BGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 346 Abs. 1 BGB
+      keywords:
+      - Zug um Zug
+      - '346'
