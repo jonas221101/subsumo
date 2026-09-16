@@ -15,6 +15,13 @@ Schemata, geführten Fällen und funktionierender Bezahlschranke** — ohne
 KI-Klausurkorrektur, ohne iOS, ohne Klausursimulator. Maßgeblich sind die fünf
 Gates aus `docs/18-release-2-wochen.md` Abschnitt 5.
 
+> **Die KI-Klausurkorrektur ist nicht gestrichen, sondern in v1.0 abgeschaltet**
+> (Nutzerentscheidung vom 16.09.2026, siehe `docs/18-release-2-wochen.md`
+> Abschnitt 2). Sie bleibt als Feature gesetzt; ihre Aktivierung hängt am AVV
+> mit einem LLM-Provider ([SUB-129](/SUB/issues/SUB-129)) und, für die
+> bewertende Variante, an der Kalibrierung
+> ([SUB-130](/SUB/issues/SUB-130)). Phase B unten beschreibt den Ausbau.
+
 **Vollausbau (v1.2, früher „v1.0") = öffentlicher Launch auf vier Plattformen
 mit funktionierender Bezahlschranke.** Nicht Feature-Vollständigkeit, sondern:
 ein Erstsemester und eine Examenskandidatin können die App sinnvoll nutzen, und

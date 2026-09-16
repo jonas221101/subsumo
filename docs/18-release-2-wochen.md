@@ -36,15 +36,31 @@ oder Zahlungs-Pflichten abbilden.
 > Rechtsgebiete lernt, mit funktionierender Registrierung, Bezahlung und
 > vollständigen Rechtstexten.**
 
-Nicht mehr enthalten: die KI-Klausurkorrektur als bewertendes Feature und
+In v1.0 nicht aktiv: die KI-Klausurkorrektur als bewertendes Feature und
 alles, was auf ihr aufbaut.
 
-**Zur Herkunft dieses Schnitts — Klarstellung (16.09.2026).** Die Nutzervorgabe
-(„Zugang zu Korrigierenden kann später als Feature kommen") betrifft wörtlich
-den Zugang zu **menschlichen** Korrigierenden; der steht in 3.2 als v1.2+. Die
-Streichung der **KI**-Korrektur geht darüber hinaus und ist eine
-Planungsentscheidung dieses Dokuments, keine Nutzeranweisung. Frühere Fassungen
-dieses Absatzes haben beides vermischt. Sie stützt sich auf drei eigene Gründe:
+**Nutzerentscheidung vom 16.09.2026: Das Feature bleibt.** Auf die
+Klarstellung unten hat der Nutzer auf [SUB-39](/SUB/issues/SUB-39) geantwortet:
+*„Ich würde sie gerne behalten."* Damit ist die Rückkehr der KI-Korrektur keine
+Option mehr, die dieses Dokument offenhält, sondern eine gesetzte
+Produktentscheidung — Option D aus
+[`docs/23-llm-provider-avv.md`](23-llm-provider-avv.md) („kein LLM, Status quo
+dauerhaft") ist vom Tisch. Was die Entscheidung **nicht** setzt, ist ein
+Termin: die Aktivierung hängt an einem unterschriebenen AVV (Grund 2), den
+keine Agentenarbeit herbeiführen kann. Offen und auf SUB-39 zur Entscheidung
+gestellt ist deshalb nur noch, ob die Aktivierung in v1.0 erfolgt (29.09. —
+möglich allein, wenn der AVV vor dem Freeze am 28.09. steht) oder verbindlich
+in v1.1. Bis zu dieser Antwort führt Abschnitt 3.2 sie unter „v1.1", weil das
+die einzige Annahme ist, die den Termin 29.09. nicht gefährdet.
+
+**Zur Herkunft der Zurückstellung — Klarstellung (16.09.2026).** Die
+Nutzervorgabe („Zugang zu Korrigierenden kann später als Feature kommen")
+betrifft wörtlich den Zugang zu **menschlichen** Korrigierenden; der steht in
+3.2 als v1.2+. Die **KI**-Korrektur zusätzlich herauszunehmen ging darüber
+hinaus und war eine Planungsentscheidung dieses Dokuments, keine
+Nutzeranweisung. Frühere Fassungen dieses Absatzes haben beides vermischt. Die
+Zurückstellung stützt sich auf drei eigene Gründe; alle drei sprechen gegen
+eine *sofortige Aktivierung*, keiner gegen das Feature:
 
 1. **Die Korrektur ist unkalibriert.** `docs/13-lernarchitektur.md` und der
    Kalibrierungs-Harness aus [SUB-69](/SUB/issues/SUB-69) setzen MAE ≤ 2 Punkte
@@ -60,7 +76,8 @@ dieses Absatzes haben beides vermischt. Sie stützt sich auf drei eigene Gründe
    `backend/app/services/evaluator.py` fällt ohne gesetzten `llm_provider`
    automatisch auf den heuristischen Evaluator zurück. **Konsequenz: v1.0 läuft
    mit `llm_provider=none`.** Der AVV wird damit von einer Release-Blockade zu
-   einer Vorbedingung für v1.1.
+   einer Vorbedingung für die Aktivierung — er bleibt das einzige harte Gate
+   und entscheidet, wie früh die Aktivierung überhaupt terminierbar ist.
 3. **Sie ist der größte variable Kostenblock.** Siehe
    `docs/19-kosten-preis-budget.md` Abschnitt 5 — ohne sie sind die
    Betriebskosten praktisch fix und der kostendeckende Preis niedrig
@@ -89,9 +106,9 @@ heuristisch, sofort, kostenlos und wird als das kommuniziert, was es ist
 
 ### 3.2 Raus (mit Rückkehrdatum)
 
-| Gestrichen aus v1.0 | Warum | Kommt in |
+| Nicht aktiv in v1.0 | Warum | Kommt in |
 |---|---|---|
-| KI-Klausurkorrektur mit Punkten | unkalibriert (MAE-Nachweis fehlt), AVV fehlt | v1.1 |
+| KI-Klausurkorrektur mit Punkten | **Feature bleibt** (Nutzerentscheidung 16.09.), in v1.0 nur per Konfiguration abgeschaltet (`llm_provider=none`): AVV fehlt, unkalibriert (MAE-Nachweis fehlt) | v1.1 — früher nur, wenn der AVV vor dem Freeze am 28.09. steht |
 | Zugang zu menschlichen Korrigierenden | ausdrücklich vom Nutzer zurückgestellt | v1.2+ |
 | 5-Stunden-Klausursimulator | hängt funktional an der Korrektur | v1.1 |
 | iOS / App Store | Entwicklerkonto-Vorlauf + Review-Zyklus + IAP-Pflicht (30 %/15 %) passen nicht in 14 Tage | v1.1, ca. 3 Wochen nach Release |
@@ -101,7 +118,9 @@ heuristisch, sofort, kostenlos und wird als das kommuniziert, was es ist
 | 500 Karten / 40 Fälle | Zielmenge bleibt, aber als laufende Produktion nach Release | fortlaufend |
 | Kalibrierung gegen 30 Dozentengutachten | braucht externe Personen und Vorlauf | Start sofort, Ergebnis für v1.1 |
 
-**„Kommt in v1.1" hat seit dem 16.09.2026 Eigentümer.** Bis dahin war die
+**„Kommt in v1.1" hat seit dem 16.09.2026 Eigentümer** — und seit der
+Nutzerentscheidung vom selben Tag (Abschnitt 2) auch eine Zusage statt einer
+Absichtserklärung. Bis dahin war die
 Rückkehr der KI-Korrektur nur hier im Dokument versprochen und auf dem Board
 nirgends verfolgt. Die beiden Vorbedingungen liegen jetzt als Aufgaben:
 [SUB-129](/SUB/issues/SUB-129) (LLM-Provider-Wahl + AVV) und
@@ -196,7 +215,7 @@ nie eingespielt wurde, ist kein Backup.
 | 180 Karten wirken gegenüber Jurafuchs (8.000+ Fälle) dünn | Abo nicht verkaufbar | Gründerpreis + offene Kommunikation des Umfangs statt Behauptung von Vollständigkeit (siehe `docs/19-kosten-preis-budget.md` Abschnitt 4) |
 | Kein Nutzer kennt das Produkt am Tag 1 | Release ohne Wirkung | Release ist ein Anfang, kein Kampagnenstart; GTM-Spur [SUB-46](/SUB/issues/SUB-46) läuft nach Release weiter |
 | Erstes Produktivsystem ohne Betriebserfahrung | Ausfall/Datenverlust in Woche 1 | Tägliches Backup **mit geprobtem Restore** (24.09.), Monitoring ab 22.09. |
-| Streichung der Korrektur nimmt die Positionierung weg | Produkt ist austauschbar | Positionierung für v1.0 bewusst bescheiden („ordentliche Lern-App zum Gründerpreis"), Differenzierung kommt mit v1.1 |
+| Abschaltung der Korrektur in v1.0 nimmt die Positionierung weg | Produkt ist austauschbar | Positionierung für v1.0 bewusst bescheiden („ordentliche Lern-App zum Gründerpreis"), Differenzierung kommt mit v1.1 |
 | Zwei Wochen Volllast, danach Erschöpfung | v1.1 verzögert sich | v1.1-Fenster bewusst auf 4 Wochen nach Release gelegt, nicht auf 2 |
 
 ---
