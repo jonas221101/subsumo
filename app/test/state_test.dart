@@ -127,6 +127,75 @@ void main() {
     );
   });
 
+  group('Checkout-Rueckkehr (F2, docs/20-release-g2-bezahlstrecke.md Abschnitt 4)', () {
+    test('proActive bereits beim ersten Versuch beendet das Polling sofort', () async {
+      var meCalls = 0;
+      final app = buildState((request) async {
+        if (request.url.path == '/v1/auth/me') {
+          meCalls++;
+          return _json({
+            'id': 1,
+            'email': 'a@b.de',
+            'display_name': 'A',
+            'daily_minutes': 90,
+            'pro_active': true,
+          });
+        }
+        return _json({}, status: 404);
+      });
+
+      final confirmed = await app.confirmProAfterCheckout(interval: Duration.zero);
+
+      expect(confirmed, isTrue);
+      expect(meCalls, 1, reason: 'Webhook war schon durch - kein weiterer Versuch noetig');
+    });
+
+    test('bleibt proActive nach allen Versuchen false, gilt die Bestaetigung als verzoegert', () async {
+      var meCalls = 0;
+      final app = buildState((request) async {
+        if (request.url.path == '/v1/auth/me') {
+          meCalls++;
+          return _json({
+            'id': 1,
+            'email': 'a@b.de',
+            'display_name': 'A',
+            'daily_minutes': 90,
+            'pro_active': false,
+          });
+        }
+        return _json({}, status: 404);
+      });
+
+      final confirmed = await app.confirmProAfterCheckout(attempts: 3, interval: Duration.zero);
+
+      expect(confirmed, isFalse);
+      expect(meCalls, 3, reason: 'Muss alle Versuche ausschoepfen, bevor es aufgibt');
+    });
+
+    test('ein einzelner Netzausfall unterbricht das Polling nicht', () async {
+      var meCalls = 0;
+      final app = buildState((request) async {
+        if (request.url.path == '/v1/auth/me') {
+          meCalls++;
+          if (meCalls == 1) throw Exception('Netzwerk nicht erreichbar');
+          return _json({
+            'id': 1,
+            'email': 'a@b.de',
+            'display_name': 'A',
+            'daily_minutes': 90,
+            'pro_active': true,
+          });
+        }
+        return _json({}, status: 404);
+      });
+
+      final confirmed = await app.confirmProAfterCheckout(attempts: 3, interval: Duration.zero);
+
+      expect(confirmed, isTrue);
+      expect(meCalls, 2);
+    });
+  });
+
   group('Kartencache', () {
     test('erfolgreiches Laden speichert die Karten lokal', () async {
       final app = buildState((request) async {

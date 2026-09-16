@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
+import 'checkout_page.dart';
 import 'screen_status.dart';
 
 /// Wissenslandkarte (Challenge 3).
@@ -172,9 +173,8 @@ class _ProStatusBanner extends StatelessWidget {
           const SizedBox(height: Spacing.md),
           SubsumoButton.primary(
             label: 'Pro werden',
-            // F2 (Checkout-Flow) existiert noch nicht (siehe docs/20 B3/F2).
-            onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(content: Text('Upgrade folgt in Kuerze.')),
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute<void>(builder: (_) => const CheckoutPage()),
             ),
           ),
         ],
