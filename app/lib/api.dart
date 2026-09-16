@@ -216,4 +216,11 @@ class ApiClient {
   /// Bearer-Token, selbst wenn der Client anderswo eingeloggt ist.
   Future<Map<String, dynamic>> publicConfig() async =>
       (await _get('/v1/public/config')) as Map<String, dynamic>;
+
+  /// Themen je Rechtsgebiet fuer die Landing-Page-Teaser (SUB-109 Abschnitt
+  /// 6): `GET /v1/content/topics`, oeffentlich ohne Login erreichbar.
+  Future<List<Map<String, dynamic>>> publicTopics() async {
+    final data = await _get('/v1/content/topics');
+    return (data as List).cast<Map<String, dynamic>>();
+  }
 }
