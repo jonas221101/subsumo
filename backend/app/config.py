@@ -43,6 +43,10 @@ class Settings(BaseSettings):
     # False verhaelt sich jeder Nutzer wie Pro, unabhaengig vom Entitlement-Feld.
     paywall_enabled: bool = False
 
+    # Strukturiertes JSON-Logging fuer Produktion, siehe
+    # docs/22-deploy-runbook.md Abschnitt "Monitoring".
+    log_json: bool = False
+
 
 @lru_cache
 def get_settings() -> Settings:
