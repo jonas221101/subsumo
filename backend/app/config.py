@@ -39,6 +39,10 @@ class Settings(BaseSettings):
     default_daily_minutes: int = 90
     seconds_per_card: int = 20
 
+    # Paywall-Notausgang (docs/20-release-g2-bezahlstrecke.md Abschnitt 5): bei
+    # False verhaelt sich jeder Nutzer wie Pro, unabhaengig vom Entitlement-Feld.
+    paywall_enabled: bool = False
+
 
 @lru_cache
 def get_settings() -> Settings:

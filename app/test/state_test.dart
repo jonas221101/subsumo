@@ -67,6 +67,66 @@ void main() {
     return AppState(api: api);
   }
 
+  group('Pro-Gating (F1)', () {
+    test('bildet pro_active/pro_until/cancel_at_period_end aus /auth/me ab', () async {
+      SharedPreferences.setMockInitialValues({'subsumo.token': 'test-token'});
+      final app = buildState((request) async {
+        if (request.url.path == '/v1/auth/me') {
+          return _json({
+            'id': 1,
+            'email': 'a@b.de',
+            'display_name': 'A',
+            'daily_minutes': 90,
+            'pro_active': true,
+            'pro_until': '2026-10-15T00:00:00Z',
+            'cancel_at_period_end': true,
+          });
+        }
+        return _json({}, status: 404);
+      });
+
+      await app.restoreSession();
+
+      expect(app.proActive, isTrue);
+      expect(app.proUntil, DateTime.utc(2026, 10, 15));
+      expect(app.cancelAtPeriodEnd, isTrue);
+    });
+
+    test('ohne eingeloggten Nutzer sind alle Pro-Felder auf dem Free-Default', () async {
+      final app = buildState((request) async => _json({}, status: 404));
+
+      expect(app.proActive, isFalse);
+      expect(app.proUntil, isNull);
+      expect(app.cancelAtPeriodEnd, isFalse);
+    });
+
+    test(
+      'paywall_enabled=false liefert proActive=true fuer alle - keine Sonderlogik noetig',
+      () async {
+        SharedPreferences.setMockInitialValues({'subsumo.token': 'test-token'});
+        final app = buildState((request) async {
+          if (request.url.path == '/v1/auth/me') {
+            return _json({
+              'id': 1,
+              'email': 'a@b.de',
+              'display_name': 'A',
+              'daily_minutes': 90,
+              'pro_active': true,
+              'pro_until': null,
+              'cancel_at_period_end': false,
+            });
+          }
+          return _json({}, status: 404);
+        });
+
+        await app.restoreSession();
+
+        expect(app.proActive, isTrue);
+        expect(app.cancelAtPeriodEnd, isFalse);
+      },
+    );
+  });
+
   group('Kartencache', () {
     test('erfolgreiches Laden speichert die Karten lokal', () async {
       final app = buildState((request) async {

@@ -19,7 +19,7 @@ from app.schemas import (
     ReviewBatchOut,
     ReviewResultOut,
 )
-from app.services import srs
+from app.services import limits, srs
 
 router = APIRouter(tags=["lernen"])
 
@@ -52,8 +52,20 @@ def due_cards(
 
     Wiederholungen haben immer Vorrang: neuen Stoff aufzunehmen, waehrend
     Altes verfaellt, ist der teuerste Fehler im Jurastudium.
+
+    Free-Tier-Limit (docs/20 B2): max. 20 faellige Karten/Tag, serverseitig
+    ueber die Reviews des Tages gezaehlt statt ueber ``limit``, und nur ein
+    Rechtsgebiet - das des ersten je gelernten Themas.
     """
     now = datetime.now(UTC)
+    settings = get_settings()
+
+    due_limit = limit
+    area = None
+    if limits.is_free_tier(user, settings, now=now):
+        due_limit = min(limit, limits.due_cards_quota_remaining(db, user, now=now))
+        area = limits.locked_area(db, user)
+    area_topics = limits.area_topic_slugs(db, area) if area is not None else None
 
     query = (
         db.query(UserCard, Card)
@@ -63,7 +75,9 @@ def due_cards(
     )
     if topic:
         query = query.filter(Card.topic_slug == topic)
-    faellig = query.order_by(UserCard.due).limit(limit).all()
+    if area_topics is not None:
+        query = query.filter(Card.topic_slug.in_(area_topics))
+    faellig = query.order_by(UserCard.due).limit(due_limit).all()
 
     result = [
         DueCardOut(
@@ -90,6 +104,8 @@ def due_cards(
         neu_query = db.query(Card).filter(Card.id.not_in(bekannt))
         if topic:
             neu_query = neu_query.filter(Card.topic_slug == topic)
+        if area_topics is not None:
+            neu_query = neu_query.filter(Card.topic_slug.in_(area_topics))
         # Neue Karten nach Pruefungsrelevanz des Themas, nicht alphabetisch.
         relevanz = {t.slug: t.relevance for t in db.query(Topic).all()}
         neu = sorted(
