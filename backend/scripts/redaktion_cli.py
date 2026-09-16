@@ -100,6 +100,30 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
             "Taeterschaft und Teilnahme, §§ 25 ff. StGB",
             "Strafrecht AT, Abgrenzung Mittaeterschaft/Beihilfe",
         ),
+        (
+            "Raub, § 249 StGB",
+            "Strafrecht BT, Noetigungsmittel, finaler Zusammenhang, Abgrenzung zu § 255 StGB",
+        ),
+        (
+            "Notwehr, § 32 StGB",
+            "Strafrecht AT, gegenwaertiger rechtswidriger Angriff, Erforderlichkeit, Gebotenheit",
+        ),
+        (
+            "Koerperverletzungsdelikte, §§ 223, 224 StGB",
+            "Strafrecht BT, gefaehrliches Werkzeug, gemeinschaftliche Begehung",
+        ),
+        (
+            "Betrug, § 263 StGB",
+            "Strafrecht BT, Taeuschung, Irrtum, Vermoegensverfuegung, Vermoegensschaden",
+        ),
+        (
+            "Unterlassungsdelikte, § 13 StGB",
+            "Strafrecht AT, Garantenstellung, Entsprechungsklausel",
+        ),
+        (
+            "Urkundenfaelschung, § 267 StGB",
+            "Strafrecht BT, Urkundenbegriff, Herstellen/Verfaelschen, Gebrauchmachen",
+        ),
     ],
     "oeffentliches-recht": [
         (
