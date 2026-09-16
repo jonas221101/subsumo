@@ -35,8 +35,14 @@ erhalten.
    und `--reply-to KOMMENTAR_UUID` an den tatsächlichen Kommentarautor.
 5. Implementiere eine kleine Änderung innerhalb von `app/lib`/`app/test` und führe
    die für den Bereich in `CONTRIBUTING.md` vorgeschriebenen Checks aus (u.a.
-   `flutter analyze`, `flutter test`). Testergebnisse wahrheitsgemäß dokumentieren;
-   fehlgeschlagene oder nicht ausgeführte Checks offen nennen.
+   `flutter analyze`, `flutter test`). Betrifft die Änderung sichtbare Screens,
+   Flows oder state-getriebene UI-Zustände, vor der Review-Anfrage zusätzlich
+   eine Durchsicht mit der Design-Critique-Skill
+   (`skill://1077519e-0ee1-484a-b163-50fcc3bbcb3d?s=design-critique`) durchführen
+   und Must-fix-Punkte beheben oder bewusst begründen, warum sie (noch) nicht
+   behoben werden; bei reiner Backend-Anbindung ohne UI-Änderung entfällt dieser
+   Schritt. Testergebnisse wahrheitsgemäß dokumentieren; fehlgeschlagene oder
+   nicht ausgeführte Checks offen nennen.
 6. Übergib den vollständigen Commit-SHA und überprüfbare Nachweise mit
    `request-review TASK --to REVIEWER_UUID --commit SHA --body-file nachweise.md`.
    Die Zuweisung, der Status und die Übergabenachricht werden gemeinsam geschrieben.

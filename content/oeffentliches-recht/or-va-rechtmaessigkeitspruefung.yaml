@@ -1,0 +1,228 @@
+topic:
+  slug: or-va-rechtmaessigkeitspruefung
+  area: oeffentliches-recht
+  title: Rechtmaessigkeitspruefung eines Verwaltungsakts
+  parent: oeffentliches-recht
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-15'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: or-va-rm-ermaechtigungsgrundlage-erfordernis
+  type: definition
+  front: Wann bedarf der Erlass eines Verwaltungsakts einer gesetzlichen Ermaechtigungsgrundlage
+    (Vorbehalt des Gesetzes)?
+  back: Jeder belastende Eingriff in Freiheit oder Eigentum (Eingriffsverwaltung)
+    bedarf einer gesetzlichen Ermaechtigungsgrundlage. Bei beguenstigenden Massnahmen
+    der Leistungsverwaltung ist eine Ermaechtigungsgrundlage nur erforderlich, soweit
+    die Wesentlichkeitstheorie dies verlangt - etwa bei erheblicher Grundrechtsrelevanz
+    der Entscheidung.
+  norms:
+  - Art. 20 Abs. 3 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-va-rm-zustaendigkeit-arten
+  type: definition
+  front: Welche drei Arten der Zustaendigkeit sind im Rahmen der formellen Rechtmaessigkeit
+    zu pruefen?
+  back: Die sachliche Zustaendigkeit (welche Behoerde fuer die Aufgabe zustaendig
+    ist), die oertliche Zustaendigkeit (raeumlicher Zustaendigkeitsbereich) und die
+    instanzielle bzw. funktionelle Zustaendigkeit (welche Ebene oder welcher Amtstraeger
+    innerhalb der Behoerde handeln darf).
+  norms: []
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-va-rm-anhoerungspflicht
+  type: norm
+  front: Wann ist ein Beteiligter vor Erlass eines belastenden Verwaltungsakts anzuhoeren,
+    § 28 Abs. 1 VwVfG?
+  back: Bevor ein Verwaltungsakt erlassen wird, der in Rechte eines Beteiligten eingreift,
+    ist ihm Gelegenheit zu geben, sich zu den fuer die Entscheidung erheblichen Tatsachen
+    zu aeussern. § 28 Abs. 2 VwVfG regelt Ausnahmen, etwa bei Gefahr im Verzug oder
+    in Massenverfahren.
+  norms:
+  - § 28 Abs. 1 VwVfG
+  - § 28 Abs. 2 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-va-rm-heilung-verfahrensfehler
+  type: norm
+  front: Welche Verfahrens- und Formfehler koennen nach § 45 VwVfG geheilt werden,
+    und bis wann?
+  back: § 45 Abs. 1 VwVfG erlaubt die Heilung bestimmter Fehler - etwa der fehlenden
+    Begruendung oder der unterbliebenen Anhoerung - durch Nachholung der jeweiligen
+    Verfahrenshandlung. Nach § 45 Abs. 2 VwVfG ist die Heilung grundsaetzlich bis
+    zum Abschluss der letzten Tatsacheninstanz eines verwaltungsgerichtlichen Verfahrens
+    moeglich.
+  norms:
+  - § 45 Abs. 1 VwVfG
+  - § 45 Abs. 2 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-va-rm-unbeachtlichkeit-verfahrensfehler
+  type: streitstand
+  front: Wann ist ein Verfahrens- oder Formfehler nach § 46 VwVfG unbeachtlich?
+  back: Ein Verfahrens- oder Formfehler, der nicht zur Nichtigkeit fuehrt, ist unbeachtlich,
+    wenn offensichtlich ist, dass er die Entscheidung in der Sache nicht beeinflusst
+    hat. Bei gebundenen Entscheidungen ist das regelmaessig der Fall; bei Ermessensentscheidungen
+    laesst sich die fehlende Kausalitaet des Fehlers dagegen meist nicht mit der erforderlichen
+    Offensichtlichkeit feststellen, sodass § 46 VwVfG hier kaum greift.
+  norms:
+  - § 46 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-va-rm-tatbestand-rechtsfolge-unterscheidung
+  type: schema_step
+  front: Wie ist auf der materiellen Ebene zwischen Tatbestand und Rechtsfolge der
+    Ermaechtigungsgrundlage zu unterscheiden?
+  back: Auf Tatbestandsseite ist zu pruefen, ob die tatbestandlichen Voraussetzungen
+    der Norm erfuellt sind - unbestimmte Rechtsbegriffe sind dabei grundsaetzlich
+    voll gerichtlich ueberpruefbar, ausnahmsweise besteht ein Beurteilungsspielraum.
+    Auf Rechtsfolgenseite ist zu pruefen, ob die Behoerde - soweit ihr Ermessen eroeffnet
+    ist - dieses fehlerfrei ausgeuebt hat.
+  norms:
+  - § 40 VwVfG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-va-rm-aufbauschema-grobstruktur
+  type: schema_step
+  front: Nenne die vier Grobpunkte der Rechtmaessigkeitspruefung eines Verwaltungsakts.
+  back: (1) Ermaechtigungsgrundlage, (2) formelle Rechtmaessigkeit (Zustaendigkeit,
+    Verfahren, Form), (3) materielle Rechtmaessigkeit (Tatbestand, ggf. Ermessen,
+    Rechtsfolge), (4) Ergebnis - mit Differenzierung zwischen blosser Rechtswidrigkeit
+    (aufhebbar) und Nichtigkeit nach § 44 Abs. 1 VwVfG (von Anfang an unwirksam).
+  norms:
+  - § 44 Abs. 1 VwVfG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: or-schema-va-rechtmaessigkeitspruefung
+  title: Rechtmaessigkeitspruefung eines Verwaltungsakts (Gutachtenschema)
+  norms:
+  - § 35 VwVfG
+  - § 40 VwVfG
+  - § 44 Abs. 1 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Ermaechtigungsgrundlage
+    children:
+    - label: 1. Anwendbares Verfahrensrecht (Bundes- oder Landes-VwVfG, § 1 VwVfG)
+    - label: 2. Wirksame Ermaechtigungsgrundlage vorhanden (Vorbehalt des Gesetzes
+        bei belastenden VA)
+  - label: II. Formelle Rechtmaessigkeit
+    children:
+    - label: 1. Zustaendigkeit (sachlich, oertlich, instanziell)
+    - label: 2. Verfahren, insbesondere Anhoerung, § 28 VwVfG
+    - label: 3. Form
+  - label: III. Materielle Rechtmaessigkeit
+    children:
+    - label: 1. Tatbestand der Ermaechtigungsgrundlage erfuellt
+    - label: '2. Rechtsfolge: bei Ermessensnorm fehlerfreie Ermessensausuebung, §
+        40 VwVfG'
+  - label: IV. Ergebnis
+    children:
+    - label: 1. Rechtswidrig, aber nicht nichtig -> aufhebbar
+    - label: 2. Nichtig, § 44 Abs. 1 VwVfG -> von Anfang an unwirksam
+    - label: 3. Verfahrens-/Formfehler ggf. geheilt (§ 45 VwVfG) oder unbeachtlich
+        (§ 46 VwVfG)
+faelle:
+- slug: or-fall-versaeumter-anhoerungstermin
+  title: Der versaeumte Anhoerungstermin
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VwVfG, amtliche Fassung
+  facts: Die zustaendige Ordnungsbehoerde untersagt dem Gewerbetreibenden G durch
+    Bescheid den Weiterbetrieb seines Imbissstands wegen wiederholter hygienerechtlicher
+    Verstoesse, gestuetzt auf eine einschlaegige gewerberechtliche Ermaechtigungsgrundlage,
+    die der Behoerde Ermessen einraeumt. Vor Erlass des Bescheids hoert die Behoerde
+    den G nicht an. Im anschliessenden Widerspruchsverfahren erhaelt G ausfuehrlich
+    Gelegenheit, sich zu den Vorwuerfen zu aeussern und Unterlagen vorzulegen; der
+    Widerspruchsbescheid haelt die Untersagung im Ergebnis aufrecht.
+  question: War der Ausgangsbescheid formell rechtmaessig, und wirkt sich ein etwaiger
+    Anhoerungsmangel auf die Rechtmaessigkeit aus?
+  steps:
+  - prompt: Lag ein Anhoerungsmangel vor?
+    erwartung: Ja - § 28 Abs. 1 VwVfG verlangt vor Erlass eines belastenden Verwaltungsakts
+      Gelegenheit zur Aeusserung; diese fehlte hier vollstaendig, eine Ausnahme nach
+      § 28 Abs. 2 VwVfG ist nicht ersichtlich.
+  - prompt: Kann der Mangel geheilt werden?
+    erwartung: Ja - nach § 45 Abs. 1, Abs. 2 VwVfG kann die unterbliebene Anhoerung
+      bis zum Abschluss der letzten Tatsacheninstanz eines verwaltungsgerichtlichen
+      Verfahrens nachgeholt werden; die ausfuehrliche Gelegenheit im Widerspruchsverfahren
+      erfuellt diese Anforderungen.
+  - prompt: Waere der Mangel hilfsweise nach § 46 VwVfG unbeachtlich?
+    erwartung: Nein - da es sich um eine Ermessensentscheidung handelt, laesst sich
+      nicht mit der erforderlichen Offensichtlichkeit ausschliessen, dass eine vorherige
+      Anhoerung die Ermessensausuebung beeinflusst haette; § 46 VwVfG greift daher
+      nicht, es kommt allein auf die Heilung nach § 45 VwVfG an.
+  - prompt: Zu welchem Ergebnis fuehrt das?
+    erwartung: Der urspruengliche Verfahrensfehler wurde durch Nachholung der Anhoerung
+      im Widerspruchsverfahren geheilt; der Bescheid ist in der Gestalt des Widerspruchsbescheids
+      formell rechtmaessig.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Anhoerungsmangel nach § 28 Abs. 1 VwVfG erkannt, keine Ausnahme ersichtlich
+      weight: 2.0
+      required: true
+      norms:
+      - § 28 Abs. 1 VwVfG
+      keywords:
+      - Anhoerung
+      - § 28
+    - id: p2
+      label: Heilungsmoeglichkeit nach § 45 Abs. 1, Abs. 2 VwVfG durch Nachholung
+        im Widerspruchsverfahren erkannt
+      weight: 3.0
+      required: true
+      norms:
+      - § 45 Abs. 1 VwVfG
+      - § 45 Abs. 2 VwVfG
+      keywords:
+      - Heilung
+      - § 45
+      - Nachholung
+    - id: p3
+      label: § 46 VwVfG zutreffend als nicht einschlaegig erkannt (Ermessensentscheidung,
+        fehlende Offensichtlichkeit)
+      weight: 2.5
+      required: true
+      norms:
+      - § 46 VwVfG
+      keywords:
+      - § 46
+      - Ermessen
+      - Offensichtlichkeit
+    - id: p4
+      label: Zustaendigkeit und Ermaechtigungsgrundlage als unproblematisch benannt
+      weight: 1.0
+      required: false
+      keywords:
+      - Ermaechtigungsgrundlage
+      - zustaendig
+    - id: p5
+      label: 'Ergebnis: formelle Rechtmaessigkeit in Gestalt des Widerspruchsbescheids
+        durch Heilung hergestellt'
+      weight: 1.5
+      required: true
+      keywords:
+      - geheilt
+      - formell rechtmaessig
