@@ -43,6 +43,19 @@ Schema kennt seine Fälle, ein Fehler im Fall erzeugt eine Wiederholungskarte,
 und alles zahlt auf dieselbe Coverage-Zahl ein — plus der belegbar einzige
 native, plattformübergreifende 5-Stunden-Offline-Klausursimulator im Feld.
 
+> **Nachtrag 16.09.2026:** Tabelle und Absatz oben beschreiben das Zielbild
+> (v1.2, volle Funktionsbreite). Der tatsächliche v1.0-Release-Umfang
+> (`docs/18-release-2-wochen.md`) weicht in drei Punkten ab: **KI-Korrektur**
+> läuft in v1.0 mit `llm_provider=none` (nur der heuristische Struktur-Check);
+> eine bedingte Aktivierung bis 27.09.2026 hängt am unterschriebenen AVV
+> (siehe dort Abschnitt 2.1) — statt „✅ sofort + KI" gilt für v1.0 „✅
+> Struktur-Check (heuristisch), KI-Korrektur bedingt". **Der native
+> Offline-Klausursimulator** ist für v1.0 nicht bestätigt und dort fest für
+> v1.1 eingeplant — statt „✅ nativ inkl. Windows" gilt für v1.0 „❌ (v1.1)".
+> **Der Preis** startet laut `docs/19-kosten-preis-budget.md` bei **3,99
+> €/Monat (Gründerpreis)**, nicht bei ~12 €/Monat — 12 €/Monat bleibt der
+> Zielpreis für v1.2.
+
 ## Leitprinzipien
 
 1. **Aktiv vor passiv.** Kein Feature, bei dem der Nutzer nur konsumiert.

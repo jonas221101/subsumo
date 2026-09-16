@@ -89,6 +89,16 @@ Was die Recherche **nicht** widerlegt: Bei keinem der drei KI-Korrektur-Anbieter
 > situation offline realistisch trainierbar macht — beides verzahnt mit
 > demselben Karten- und Schema-Stoff, nicht als isoliertes Korrektur-Tool.
 
+> **Nachtrag 16.09.2026:** Dieser Positionierungssatz beschreibt das
+> **Zielbild (v1.2)**, nicht den v1.0-Release-Umfang. Nach der Terminvorgabe
+> „Release in zwei Wochen" enthält v1.0 (`docs/18-release-2-wochen.md`) weder
+> den Offline-Klausursimulator (dort fest für v1.1 eingeplant) noch
+> standardmäßig die KI-Korrektur (`llm_provider=none`; eine bedingte
+> Aktivierung bis 27.09.2026 hängt am unterschriebenen AVV, siehe dort
+> Abschnitt 2.1). v1.0 liefert Karteikarten, Schemata, geführte Fälle und den
+> heuristischen Struktur-Check. Die Preisfolge dazu steht in Abschnitt 4
+> dieses Dokuments.
+
 ---
 
 ## 4. Preisempfehlung
