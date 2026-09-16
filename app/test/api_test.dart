@@ -91,4 +91,29 @@ void main() {
       );
     });
   });
+
+  group('ApiClient.createCheckoutSession (F2, docs/20-release-g2-bezahlstrecke.md B3)', () {
+    test('sendet den gewaehlten Plan und liefert die checkout_url', () async {
+      final client = MockClient((request) async {
+        expect(request.url.path, '/v1/billing/checkout-session');
+        expect(jsonDecode(request.body), {'plan': 'yearly'});
+        return _json({'checkout_url': 'https://checkout.stripe.com/session/abc'}, 200);
+      });
+      final api = ApiClient(client: client)..setToken('t');
+
+      final url = await api.createCheckoutSession('yearly');
+
+      expect(url, 'https://checkout.stripe.com/session/abc');
+    });
+
+    test('Serverfehler wird als ApiException durchgereicht', () async {
+      final client = MockClient((request) async => _json({'detail': 'stripe_unreachable'}, 502));
+      final api = ApiClient(client: client)..setToken('t');
+
+      await expectLater(
+        () => api.createCheckoutSession('monthly'),
+        throwsA(isA<ApiException>().having((e) => e.statusCode, 'statusCode', 502)),
+      );
+    });
+  });
 }

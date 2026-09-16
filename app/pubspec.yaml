@@ -23,6 +23,9 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^4.0.0
   web: ^1.1.1
+  # Fuer Tests: erlaubt, UrlLauncherPlatform.instance im CheckoutPage-Test zu
+  # ersetzen, statt echte Plattform-Channels zu brauchen (siehe test/checkout_page_test.dart).
+  url_launcher_platform_interface: ^2.3.0
 
 flutter:
   uses-material-design: true
