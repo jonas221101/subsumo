@@ -283,19 +283,63 @@ def test_webhook_subscription_deleted_setzt_cancel_flag_zurueck(auth_client, mon
 # --------------------------------------------------------------------------- #
 
 
+def test_cancel_immediately_with_refund_ruft_stripe_kette_korrekt_auf(monkeypatch):
+    """Deckt die eigentliche Refund-Kette ab (Befund aus Review von PR #42):
+
+    ``Subscription.retrieve`` -> ``Invoice.retrieve`` -> ``Refund.create`` mit dem
+    aus der Invoice ermittelten ``charge_id`` -> ``Subscription.delete``. Mockt
+    dazu die rohen Stripe-SDK-Aufrufe statt der gesamten Wrapper-Funktion.
+    """
+    from app.config import get_settings
+
+    calls: dict = {}
+
+    def fake_subscription_retrieve(subscription_id):
+        calls["subscription_retrieve"] = subscription_id
+        return {"latest_invoice": "in_test_123"}
+
+    def fake_invoice_retrieve(invoice_id):
+        calls["invoice_retrieve"] = invoice_id
+        return {"charge": "ch_test_456"}
+
+    def fake_refund_create(**kwargs):
+        calls["refund_create"] = kwargs
+
+    def fake_subscription_delete(subscription_id):
+        calls["subscription_delete"] = subscription_id
+
+    monkeypatch.setattr(stripe.Subscription, "retrieve", fake_subscription_retrieve)
+    monkeypatch.setattr(stripe.Invoice, "retrieve", fake_invoice_retrieve)
+    monkeypatch.setattr(stripe.Refund, "create", fake_refund_create)
+    monkeypatch.setattr(stripe.Subscription, "delete", fake_subscription_delete)
+
+    billing_service.cancel_immediately_with_refund("sub_test_1", get_settings())
+
+    assert calls["subscription_retrieve"] == "sub_test_1"
+    assert calls["invoice_retrieve"] == "in_test_123"
+    assert calls["refund_create"] == {"charge": "ch_test_456"}
+    assert calls["subscription_delete"] == "sub_test_1"
+
+
 def test_cancel_ohne_aktives_abo_ist_409(auth_client):
     response = auth_client.post("/v1/billing/cancel")
     assert response.status_code == 409
 
 
 def test_cancel_kauf_vor_20_tagen_ist_period_end(auth_client, monkeypatch):
+    from app.config import get_settings
+
+    monkeypatch.setenv("SUBSUMO_PAYWALL_ENABLED", "true")
+    get_settings.cache_clear()
+
     user_id = _user_id(auth_client)
+    pro_until = datetime.now(UTC) + timedelta(days=10)
     _set_subscription(
         auth_client,
         user_id=user_id,
         stripe_subscription_id="sub_1",
         subscription_started_at=datetime.now(UTC) - timedelta(days=20),
-        pro_until=datetime.now(UTC) + timedelta(days=10),
+        pro_until=pro_until,
     )
     calls = []
     monkeypatch.setattr(
@@ -310,7 +354,10 @@ def test_cancel_kauf_vor_20_tagen_ist_period_end(auth_client, monkeypatch):
     assert calls == ["sub_1"]
     me = auth_client.get("/v1/auth/me").json()
     assert me["cancel_at_period_end"] is True
+    # Mit aktiver Paywall aussagekraeftig: Zugriff bleibt bis Periodenende
+    # erhalten, ``pro_until`` wird durch die Kuendigung nicht angefasst.
     assert me["pro_active"] is True
+    assert me["pro_until"][:19] == pro_until.isoformat()[:19]
 
 
 def test_cancel_kauf_vor_5_tagen_ist_immediate_refund(auth_client, monkeypatch):
