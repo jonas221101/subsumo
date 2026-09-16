@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
   # Bewusst minimal im M0-Geruest: nur HTTP und lokaler Key-Value-Speicher.
   # Riverpod (State) und drift (Offline-SQLite) kommen in M1 dazu, sobald die
   # Offline-Synchronisierung gebaut wird - siehe docs/03-roadmap.md.
@@ -17,6 +19,9 @@ dependencies:
   # Oeffnet den Stripe-Checkout extern im System-/Tab-Browser (F2, siehe
   # docs/20-release-g2-bezahlstrecke.md) - kein In-App-WebView noetig.
   url_launcher: ^6.3.0
+  # Pfadbasiertes URL-Routing (usePathUrlStrategy) fuer oeffentliche Marketing-/
+  # Rechtsseiten vor dem Login-Gate (SUB-108, siehe docs/21).
+  go_router: ^14.2.0
 
 dev_dependencies:
   flutter_test:
