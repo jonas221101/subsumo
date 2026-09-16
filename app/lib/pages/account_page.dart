@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../api.dart';
 import '../design/design.dart';
@@ -20,6 +23,11 @@ class _AccountPageState extends State<AccountPage> {
   bool _busy = false;
   String? _error;
   String? _resultMessage;
+
+  bool _exportBusy = false;
+  String? _exportError;
+  bool _deleteBusy = false;
+  String? _deleteError;
 
   Future<void> _confirmAndCancel() async {
     final confirmed = await showDialog<bool>(
@@ -83,6 +91,141 @@ class _AccountPageState extends State<AccountPage> {
     }
   }
 
+  // --- SUB-103 (Art. 15/17 DSGVO, siehe SUB-84) -----------------------------
+
+  Future<void> _exportData() async {
+    setState(() {
+      _exportBusy = true;
+      _exportError = null;
+    });
+    final app = AppScope.of(context);
+    try {
+      final data = await app.api.exportAccountData();
+      if (!mounted) return;
+      final pretty = const JsonEncoder.withIndent('  ').convert(data);
+      await _showExportDialog(pretty);
+    } on ApiException catch (e) {
+      if (!mounted) return;
+      setState(() => _exportError = e.message);
+    } on Exception {
+      if (!mounted) return;
+      setState(() => _exportError = 'Server nicht erreichbar. Bitte spaeter erneut versuchen.');
+    } finally {
+      if (mounted) setState(() => _exportBusy = false);
+    }
+  }
+
+  /// Zeigt den Export als Text zum Pruefen/Kopieren an, statt einen
+  /// Datei-Download auszuloesen: die App hat (noch) keine Plattform-Ordner
+  /// (nur Web ist bislang eingerichtet), ein zusaetzliches Share-/Datei-Paket
+  /// waere ungetestetes Terrain quer über alle Zielplattformen. Kopieren in
+  /// die Zwischenablage deckt "speichern/teilen" ab, ohne diese Abhaengigkeit.
+  Future<void> _showExportDialog(String pretty) async {
+    var copied = false;
+    await showDialog<void>(
+      context: context,
+      builder: (dialogContext) => StatefulBuilder(
+        builder: (context, setDialogState) => AlertDialog(
+          title: const Text('Deine Daten (Art. 15 DSGVO)'),
+          content: SizedBox(
+            width: 480,
+            child: SingleChildScrollView(
+              child: SelectableText(pretty, style: Theme.of(context).textTheme.bodySmall),
+            ),
+          ),
+          actions: [
+            if (copied)
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: Spacing.sm),
+                child: Text(
+                  'In Zwischenablage kopiert.',
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+              ),
+            TextButton(
+              onPressed: () async {
+                await Clipboard.setData(ClipboardData(text: pretty));
+                setDialogState(() => copied = true);
+              },
+              child: const Text('Kopieren'),
+            ),
+            FilledButton(
+              onPressed: () => Navigator.of(dialogContext).pop(),
+              child: const Text('Schliessen'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Future<void> _confirmAndDelete() async {
+    final proceed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Konto unwiderruflich loeschen?'),
+        content: const Text(
+          'Dein Konto sowie alle gespeicherten Karten, Bewertungen und '
+          'Einreichungen werden endgueltig geloescht. Das kann nicht '
+          'rueckgaengig gemacht werden.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: const Text('Abbrechen'),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            child: const Text('Weiter'),
+          ),
+        ],
+      ),
+    );
+    if (proceed != true || !mounted) return;
+
+    final password = await _askPassword();
+    if (password == null || !mounted) return;
+
+    await _deleteAccount(password);
+  }
+
+  Future<String?> _askPassword() => showDialog<String>(
+        context: context,
+        builder: (context) => const _PasswordPromptDialog(),
+      );
+
+  Future<void> _deleteAccount(String password) async {
+    setState(() {
+      _deleteBusy = true;
+      _deleteError = null;
+    });
+    final app = AppScope.of(context);
+    try {
+      await app.api.deleteAccount(password);
+      await app.signOut();
+      if (!mounted) return;
+      // Springt zur Wurzel-Route zurueck (Login-Screen, siehe main.dart
+      // `_Root`) statt nur den Dialog zu schliessen - das Konto existiert ab
+      // hier serverseitig nicht mehr, `AccountPage`/`HomeShell` sind gestapelte
+      // Navigator-Routen oberhalb dieser Route.
+      Navigator.of(context).popUntil((route) => route.isFirst);
+      return;
+    } on ApiException catch (e) {
+      if (!mounted) return;
+      setState(() {
+        _deleteError = switch (e.statusCode) {
+          400 => 'Bestaetigung fehlt. Bitte erneut versuchen.',
+          401 => 'Passwort ist falsch.',
+          _ => e.message,
+        };
+      });
+    } on Exception {
+      if (!mounted) return;
+      setState(() => _deleteError = 'Server nicht erreichbar. Bitte spaeter erneut versuchen.');
+    }
+    if (mounted) setState(() => _deleteBusy = false);
+  }
+
   @override
   Widget build(BuildContext context) {
     final app = AppScope.of(context);
@@ -121,6 +264,15 @@ class _AccountPageState extends State<AccountPage> {
                 busy: _busy,
                 error: _error,
                 onCancel: _confirmAndCancel,
+              ),
+              const SizedBox(height: Spacing.lg),
+              _PrivacyCard(
+                exportBusy: _exportBusy,
+                exportError: _exportError,
+                deleteBusy: _deleteBusy,
+                deleteError: _deleteError,
+                onExport: _exportData,
+                onDelete: _confirmAndDelete,
               ),
             ],
           ),
@@ -202,6 +354,114 @@ class _SubscriptionCard extends StatelessWidget {
           ],
         ],
       ),
+    );
+  }
+}
+
+/// SUB-103 (Art. 15/17 DSGVO, siehe SUB-84): Datenexport und Kontoloeschung.
+class _PrivacyCard extends StatelessWidget {
+  const _PrivacyCard({
+    required this.exportBusy,
+    required this.exportError,
+    required this.deleteBusy,
+    required this.deleteError,
+    required this.onExport,
+    required this.onDelete,
+  });
+
+  final bool exportBusy;
+  final String? exportError;
+  final bool deleteBusy;
+  final String? deleteError;
+  final VoidCallback onExport;
+  final VoidCallback onDelete;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return SubsumoCard(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('Datenschutz', style: theme.textTheme.titleMedium),
+          const SizedBox(height: Spacing.sm),
+          SubsumoButton.secondary(
+            label: exportBusy ? 'Bitte warten ...' : 'Meine Daten exportieren',
+            onPressed: exportBusy ? null : onExport,
+          ),
+          if (exportError != null) ...[
+            const SizedBox(height: Spacing.sm),
+            SubsumoFeedbackBlock(message: exportError!, severity: FeedbackSeverity.negative),
+          ],
+          const SizedBox(height: Spacing.md),
+          SubsumoButton.secondary(
+            label: deleteBusy ? 'Bitte warten ...' : 'Konto loeschen',
+            onPressed: deleteBusy ? null : onDelete,
+          ),
+          if (deleteError != null) ...[
+            const SizedBox(height: Spacing.sm),
+            SubsumoFeedbackBlock(message: deleteError!, severity: FeedbackSeverity.negative),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+/// Eigenes [StatefulWidget] statt eines Controllers, der lokal in der
+/// aufrufenden Methode erzeugt und nach `await showDialog(...)` sofort wieder
+/// disposed wird: der Dialog spielt beim Schliessen noch eine Austritts-
+/// animation ab, waehrend der der `TextFormField` den Controller weiter
+/// braucht - ein sofortiges `dispose()` danach wirft "used after being
+/// disposed". Als eigenes Widget uebernimmt Flutter das Timing selbst richtig.
+class _PasswordPromptDialog extends StatefulWidget {
+  const _PasswordPromptDialog();
+
+  @override
+  State<_PasswordPromptDialog> createState() => _PasswordPromptDialogState();
+}
+
+class _PasswordPromptDialogState extends State<_PasswordPromptDialog> {
+  final _controller = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  void _submit() {
+    if (_formKey.currentState!.validate()) {
+      Navigator.of(context).pop(_controller.text);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      title: const Text('Passwort bestaetigen'),
+      content: Form(
+        key: _formKey,
+        child: SubsumoTextField(
+          label: 'Passwort',
+          controller: _controller,
+          obscureText: true,
+          autofillHints: const [AutofillHints.password],
+          validator: (v) => (v == null || v.isEmpty) ? 'Bitte Passwort eingeben' : null,
+          onFieldSubmitted: (_) => _submit(),
+        ),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.of(context).pop(),
+          child: const Text('Abbrechen'),
+        ),
+        FilledButton(
+          onPressed: _submit,
+          child: const Text('Konto endgueltig loeschen'),
+        ),
+      ],
     );
   }
 }
