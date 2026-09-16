@@ -8,7 +8,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.v1 import auth, content, gutachten, learn, plan
+from app.api.v1 import account, auth, content, gutachten, learn, plan
 from app.config import get_settings
 from app.db import Base, SessionLocal, engine
 from app.services.content import load_content, seed
@@ -54,7 +54,14 @@ def create_app() -> FastAPI:
         allow_headers=["*"],
     )
 
-    for router in (auth.router, content.router, learn.router, gutachten.router, plan.router):
+    for router in (
+        auth.router,
+        account.router,
+        content.router,
+        learn.router,
+        gutachten.router,
+        plan.router,
+    ):
         app.include_router(router, prefix="/v1")
 
     @app.get("/health", tags=["meta"])

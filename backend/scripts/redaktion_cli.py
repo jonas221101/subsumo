@@ -54,6 +54,41 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
         ("Leistungsstoerungen: Unmoeglichkeit", "Schuldrecht AT, § 275 BGB, § 283 BGB"),
         ("Deliktsrecht: § 823 Abs. 1 BGB", "Schuldrecht BT, Rechtsgutsverletzung, Kausalitaet"),
         ("Eigentumsherausgabe, § 985 BGB", "Sachenrecht, Vindikationslage, EBV §§ 987 ff. BGB"),
+        (
+            "Anfechtung von Willenserklaerungen, §§ 119 ff. BGB",
+            "BGB AT, Inhalts- und Erklaerungsirrtum, Eigenschaftsirrtum § 119 Abs. 2 BGB, "
+            "Anfechtungsfrist § 121 BGB",
+        ),
+        (
+            "AGB-Kontrolle, §§ 305 ff. BGB",
+            "Schuldrecht AT, Einbeziehungskontrolle § 305c BGB, Inhaltskontrolle §§ 307 ff. BGB",
+        ),
+        (
+            "Leistungskondiktion, § 812 Abs. 1 S. 1 Alt. 1 BGB",
+            "Bereicherungsrecht, Rechtsgrundlosigkeit, Entreicherung § 818 Abs. 3 BGB",
+        ),
+        (
+            "Vertreter ohne Vertretungsmacht, §§ 177 ff. BGB",
+            "BGB AT, Genehmigung, Widerrufsrecht des Geschaeftspartners, Haftung § 179 BGB",
+        ),
+        (
+            "Ruecktritt vom gegenseitigen Vertrag, §§ 323, 346 ff. BGB",
+            "Schuldrecht AT, Fristsetzung, Ruecktrittsgruende, Rueckgewaehrschuldverhaeltnis",
+        ),
+        (
+            "Culpa in contrahendo, §§ 280 Abs. 1, 311 Abs. 2, 241 Abs. 2 BGB",
+            "Schuldrecht AT, vorvertragliches Schuldverhaeltnis, Aufklaerungspflichten",
+        ),
+        (
+            "Willenserklaerung und Auslegung, §§ 133, 157 BGB",
+            "BGB AT, empfangsbeduerftige/nicht empfangsbeduerftige WE, "
+            "natuerliche und normative Auslegung",
+        ),
+        (
+            "Maengelgewaehrleistung im Kaufrecht (vertieft), §§ 434 ff. BGB",
+            "Kaufrecht, Sachmangelbegriff, Nacherfuellung, Zusammenspiel "
+            "Ruecktritt/Minderung/Schadensersatz",
+        ),
     ],
     "strafrecht": [
         ("Diebstahl, § 242 StGB", "Strafrecht BT, Wegnahme, Zueignungsabsicht"),
@@ -119,6 +154,19 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
         (
             "Ermessen und Beurteilungsspielraum, § 40 VwVfG",
             "VerwR AT, Ermessensfehler, Ermessensreduzierung auf Null",
+        ),
+        (
+            "Art. 2 Abs. 1 GG: Allgemeine Handlungsfreiheit",
+            "Grundrechte, Auffanggrundrecht, Schranken der verfassungsmaessigen Ordnung",
+        ),
+        (
+            "Art. 5 GG: Meinungsfreiheit",
+            "Grundrechte, Schrankentrias Art. 5 Abs. 2 GG, Wechselwirkungslehre",
+        ),
+        (
+            "Rechtmaessigkeitspruefung eines Verwaltungsakts",
+            "VerwR AT, Ermaechtigungsgrundlage, formelle und materielle "
+            "Rechtmaessigkeit, Aufbauschema",
         ),
     ],
 }

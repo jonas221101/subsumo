@@ -58,6 +58,10 @@ class _DashboardPageState extends State<DashboardPage> {
         child: ListView(
           padding: const EdgeInsets.all(Spacing.lg),
           children: [
+            if (app.cancelAtPeriodEnd || !app.proActive) ...[
+              _ProStatusBanner(app: app),
+              const SizedBox(height: Spacing.lg),
+            ],
             SubsumoCard(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -130,4 +134,60 @@ class _TopicTile extends StatelessWidget {
       trailing: Text('${(mastery * 100).round()} %'),
     );
   }
+}
+
+/// Persistenter Pro-Status-Hinweis (F1, siehe docs/20-release-g2-bezahlstrecke.md
+/// Abschnitt 4).
+///
+/// Zeigt genau einen von zwei Zustaenden: eine laufende Kuendigung hat
+/// Vorrang vor der allgemeinen Pro-Werbung, auch solange [AppState.proActive]
+/// durch [AppState.proUntil] noch `true` ist. Bei aktivem, nicht gekuendigtem
+/// Pro-Zugriff (und wenn die Paywall serverseitig aus ist, siehe
+/// [AppState.proActive]) zeigt der Aufrufer diesen Banner gar nicht erst.
+class _ProStatusBanner extends StatelessWidget {
+  const _ProStatusBanner({required this.app});
+
+  final AppState app;
+
+  @override
+  Widget build(BuildContext context) {
+    if (app.cancelAtPeriodEnd) {
+      final until = app.proUntil;
+      return SubsumoCard(
+        child: SubsumoFeedbackBlock(
+          message: 'Abo gekuendigt, Zugriff bis '
+              '${until != null ? _formatDate(until) : 'Ende der Abrechnungsperiode'}.',
+          severity: FeedbackSeverity.hint,
+        ),
+      );
+    }
+    return SubsumoCard(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const SubsumoFeedbackBlock(
+            message: 'Mit Pro lernst du unbegrenzt in allen Rechtsgebieten.',
+            severity: FeedbackSeverity.hint,
+          ),
+          const SizedBox(height: Spacing.md),
+          SubsumoButton.primary(
+            label: 'Pro werden',
+            // F2 (Checkout-Flow) existiert noch nicht (siehe docs/20 B3/F2).
+            onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(content: Text('Upgrade folgt in Kuerze.')),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Formatiert das Kalenderdatum, wie es der Server meint - bewusst ohne
+/// [DateTime.toLocal], damit ein Abrechnungsende um Mitternacht UTC nicht je
+/// nach Zeitzone des Geraets auf den Vor- oder Folgetag rutscht.
+String _formatDate(DateTime date) {
+  final day = date.day.toString().padLeft(2, '0');
+  final month = date.month.toString().padLeft(2, '0');
+  return '$day.$month.${date.year}';
 }

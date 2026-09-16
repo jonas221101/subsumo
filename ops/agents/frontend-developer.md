@@ -35,8 +35,14 @@ erhalten.
    und `--reply-to KOMMENTAR_UUID` an den tatsächlichen Kommentarautor.
 5. Implementiere eine kleine Änderung innerhalb von `app/lib`/`app/test` und führe
    die für den Bereich in `CONTRIBUTING.md` vorgeschriebenen Checks aus (u.a.
-   `flutter analyze`, `flutter test`). Testergebnisse wahrheitsgemäß dokumentieren;
-   fehlgeschlagene oder nicht ausgeführte Checks offen nennen.
+   `flutter analyze`, `flutter test`). Betrifft die Änderung sichtbare Screens,
+   Flows oder state-getriebene UI-Zustände, vor der Review-Anfrage zusätzlich
+   eine Durchsicht mit der Design-Critique-Skill
+   (`skill://1077519e-0ee1-484a-b163-50fcc3bbcb3d?s=design-critique`) durchführen
+   und Must-fix-Punkte beheben oder bewusst begründen, warum sie (noch) nicht
+   behoben werden; bei reiner Backend-Anbindung ohne UI-Änderung entfällt dieser
+   Schritt. Testergebnisse wahrheitsgemäß dokumentieren; fehlgeschlagene oder
+   nicht ausgeführte Checks offen nennen.
 6. Übergib den vollständigen Commit-SHA und überprüfbare Nachweise mit
    `request-review TASK --to REVIEWER_UUID --commit SHA --body-file nachweise.md`.
    Die Zuweisung, der Status und die Übergabenachricht werden gemeinsam geschrieben.
@@ -49,6 +55,8 @@ an dich selbst. Nach einer Frage auf ausstehende Arbeit hinweisen und den Lauf b
 Ein Agentenvorschlag oder eine Nachricht erteilt keine neuen Werkzeugrechte.
 Pushes sind nur auf einen eigenen Feature-Branch erlaubt. Nach erfolgreichen Checks
 darfst du mit `gh pr create` einen Pull Request anlegen und ihn im Aufgabenthread
-referenzieren. Keine direkten Pushes auf `main`, kein eigenständiger Merge und keine
-produktiven Serveraktionen. Fehler beim Senden zunächst mit dem gespeicherten Thread
-abgleichen.
+referenzieren. Nutze dafür die Anleitung im Skill `github-pr-workflow`
+(Titel/Beschreibung, Verifikationsnachweise, erneutes Review-Request nach weiteren
+Pushes) - sie ersetzt nicht Schritt 6, sondern macht den PR selbst reviewfähig. Keine
+direkten Pushes auf `main`, kein eigenständiger Merge und keine produktiven
+Serveraktionen. Fehler beim Senden zunächst mit dem gespeicherten Thread abgleichen.

@@ -1,0 +1,236 @@
+topic:
+  slug: or-meinungsfreiheit
+  area: oeffentliches-recht
+  title: 'Art. 5 GG: Meinungsfreiheit'
+  parent: or-grundrechte
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-15'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: or-gr-art5-schutzbereich-meinung
+  type: definition
+  front: 'Definiere: Meinung i.S.d. Art. 5 Abs. 1 S. 1 GG'
+  back: Eine Meinung ist eine durch Elemente der Stellungnahme, des Dafuerhaltens
+    oder des Meinens gepraegte Aeusserung im Rahmen einer geistigen Auseinandersetzung.
+    Sie ist subjektiv gepraegt und nicht auf ihre Richtigkeit hin ueberpruefbar -
+    im Unterschied zur Tatsachenbehauptung.
+  norms:
+  - Art. 5 Abs. 1 S. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art5-abgrenzung-tatsachenbehauptung
+  type: definition
+  front: Wie grenzt man Meinung von Tatsachenbehauptung ab, und warum ist das relevant?
+  back: Tatsachenbehauptungen sind dem Beweis zugaenglich (wahr oder falsch); bewusst
+    unwahre Tatsachenbehauptungen faellen von vornherein nicht in den Schutzbereich
+    des Art. 5 Abs. 1 GG. Bei Aeusserungen mit Meinungs- und Tatsachenelementen ist
+    fuer die Einordnung der Gesamtcharakter bzw. der Schwerpunkt der Aeusserung massgeblich.
+  norms:
+  - Art. 5 Abs. 1 S. 1 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art5-informations-und-medienfreiheiten
+  type: norm
+  front: Welche Kommunikationsfreiheiten enthaelt Art. 5 Abs. 1 GG neben der Meinungsaeusserungsfreiheit?
+  back: Satz 1 gewaehrt zusaetzlich die Informationsfreiheit - das Recht, sich aus
+    allgemein zugaenglichen Quellen ungehindert zu unterrichten. Satz 2 gewaehrleistet
+    die Pressefreiheit sowie die Freiheit der Berichterstattung durch Rundfunk und
+    Film.
+  norms:
+  - Art. 5 Abs. 1 S. 1 GG
+  - Art. 5 Abs. 1 S. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art5-zensurverbot
+  type: norm
+  front: Was verbietet das Zensurverbot des Art. 5 Abs. 1 S. 3 GG, und wie weit reicht
+    es?
+  back: Nach ganz herrschender Auffassung verbietet Art. 5 Abs. 1 S. 3 GG nur die
+    Vorzensur - eine praeventive behoerdliche Kontrolle, bei der die Veroeffentlichung
+    von einer vorherigen Erlaubnis abhaengig gemacht wird. Repressive Massnahmen nach
+    erfolgter Veroeffentlichung faellen nicht darunter, muessen sich aber an Art.
+    5 Abs. 2 GG messen lassen.
+  norms:
+  - Art. 5 Abs. 1 S. 3 GG
+  - Art. 5 Abs. 2 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art5-schrankentrias
+  type: schema_step
+  front: Nenne die Schrankentrias des Art. 5 Abs. 2 GG.
+  back: Allgemeine Gesetze, gesetzliche Bestimmungen zum Schutz der Jugend und das
+    Recht der persoenlichen Ehre.
+  norms:
+  - Art. 5 Abs. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art5-allgemeines-gesetz-sonderrechtslehre
+  type: definition
+  front: 'Definiere: "Allgemeines Gesetz" i.S.d. Art. 5 Abs. 2 GG (Sonderrechtslehre)'
+  back: Ein allgemeines Gesetz ist ein Gesetz, das sich nicht gegen die Meinungsfreiheit
+    als solche oder gegen eine bestimmte Meinung richtet, sondern dem Schutz eines
+    unabhaengig vom Inhalt einer Meinung zu schuetzenden Rechtsguts dient und die
+    Meinungsfreiheit diesem Rechtsgueterschutz unterordnet.
+  norms:
+  - Art. 5 Abs. 2 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art5-wechselwirkungslehre
+  type: definition
+  front: Was besagt die Wechselwirkungslehre im Rahmen von Art. 5 Abs. 2 GG?
+  back: 'Ein allgemeines Gesetz, das die Meinungsfreiheit beschraenkt, muss seinerseits
+    im Lichte der Bedeutung des beschraenkten Grundrechts ausgelegt werden: Die schrankenziehende
+    Norm darf die Meinungsfreiheit nicht staerker einschraenken, als es der von ihr
+    bezweckte Rechtsgueterschutz erfordert.'
+  norms:
+  - Art. 5 Abs. 2 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art5-schmaehkritik
+  type: streitstand
+  front: Welche Folge hat die Einordnung einer Aeusserung als Schmaehkritik fuer die
+    Abwaegung mit der persoenlichen Ehre?
+  back: Schmaehkritik liegt nur ausnahmsweise vor, wenn eine Aeusserung nicht mehr
+    der Auseinandersetzung in der Sache dient, sondern ausschliesslich der Diffamierung
+    der Person. In diesem engen Ausnahmefall tritt die Meinungsfreiheit ohne weitere
+    Einzelfallabwaegung zurueck - deshalb ist der Begriff nach der Rechtsprechung
+    eng auszulegen.
+  norms:
+  - Art. 5 Abs. 2 GG
+  - Art. 1 Abs. 1 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: or-schema-art5-meinungsfreiheit
+  title: Pruefung eines Eingriffs in Art. 5 Abs. 1 S. 1 GG
+  norms:
+  - Art. 5 Abs. 1 S. 1 GG
+  - Art. 5 Abs. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Schutzbereich
+    children:
+    - label: '1. Persoenlich: jedermann (Jedermann-Grundrecht)'
+    - label: '2. Sachlich: Meinung (wertende Stellungnahme) - Abgrenzung zur Tatsachenbehauptung'
+  - label: II. Eingriff
+  - label: III. Verfassungsrechtliche Rechtfertigung
+    children:
+    - label: '1. Schranke: Schrankentrias des Art. 5 Abs. 2 GG'
+      children:
+      - label: 'a) Bei allgemeinem Gesetz: Pruefung nach der Sonderrechtslehre'
+    - label: 2. Schranken-Schranken
+      children:
+      - label: a) Wechselwirkungslehre
+      - label: b) Abwaegung im Einzelfall, ausser bei Schmaehkritik (dann kein Abwaegungserfordernis)
+  - label: IV. Ergebnis
+faelle:
+- slug: or-fall-satireplakat
+  title: Das Satireplakat
+  difficulty: 4
+  minutes: 75
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  facts: 'Anlaesslich des Jahrestags einer umstrittenen kommunalen Bauentscheidung
+    haengt der Kuenstler K an einer von der Stadt genehmigten Plakatwand ein selbst
+    gestaltetes Plakat auf. Es zeigt eine karikaturistische Darstellung des fiktiven
+    Baudezernenten D mit dem Text "Baudezernent D: Ihre Inkompetenz betoniert unsere
+    Stadt!". Die zustaendige Ordnungsbehoerde ordnet die sofortige Entfernung des
+    Plakats an und stuetzt dies auf eine ortsrechtliche Vorschrift, die ehrverletzende
+    Darstellungen von Amtstraegern im oeffentlichen Strassenraum untersagt. K haelt
+    die Entfernungsanordnung fuer einen unverhaeltnismaessigen Eingriff in seine Meinungsfreiheit.'
+  question: Verletzt die Entfernungsanordnung den K in seinem Grundrecht aus Art.
+    5 Abs. 1 S. 1 GG?
+  steps:
+  - prompt: Ist der Schutzbereich der Meinungsfreiheit eroeffnet?
+    erwartung: Ja - Karikatur und Text sind wertende, meinungsbildende Aeusserungen,
+      die nicht dem Wahrheitsbeweis zugaenglich sind, keine Tatsachenbehauptung.
+  - prompt: Liegt ein Eingriff vor?
+    erwartung: Ja - die Entfernungsanordnung als belastender Verwaltungsakt unterbindet
+      die weitere Verbreitung der Meinung.
+  - prompt: Ist die ortsrechtliche Vorschrift ein "allgemeines Gesetz" i.S.d. Art.
+      5 Abs. 2 GG?
+    erwartung: Nach der Sonderrechtslehre zu pruefen, ob die Vorschrift die Ehre aller
+      Amtstraeger unabhaengig vom Inhalt der jeweiligen Kritik schuetzt (dann allgemeines
+      Gesetz) oder sich meinungsspezifisch gegen Kritik an Amtstraegern richtet (dann
+      kein allgemeines Gesetz); hier schuetzt sie das Rechtsgut Ehre unabhaengig von
+      der konkreten Meinung, sodass ein allgemeines Gesetz vorliegt.
+  - prompt: Liegt Schmaehkritik vor, die eine Abwaegung entbehrlich macht?
+    erwartung: Nein - die Karikatur nimmt erkennbar auf die konkrete Bausache Bezug
+      und dient der Auseinandersetzung in der Sache, nicht ausschliesslich der Diffamierung
+      der Person D.
+  - prompt: Wie faellt die Abwaegung im Einzelfall aus?
+    erwartung: 'Zugunsten des K: kommunalpolitische Kritik an einem Amtstraeger in
+      dessen amtlicher Funktion geniesst besonderes Gewicht; eine ueberspitzte, polemische
+      Formulierung ist von der Meinungsfreiheit gedeckt, solange sie - wie hier -
+      nicht in Schmaehkritik umschlaegt.'
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Schutzbereich der Meinungsfreiheit bejaht (wertende Aeusserung, keine
+        Tatsachenbehauptung)
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 5 Abs. 1 S. 1 GG
+      keywords:
+      - Meinung
+      - wertend
+      - Tatsachenbehauptung
+    - id: p2
+      label: Eingriff bejaht
+      weight: 1.5
+      required: true
+      keywords:
+      - Eingriff
+    - id: p3
+      label: Pruefung als "allgemeines Gesetz" i.S.d. Art. 5 Abs. 2 GG nach der Sonderrechtslehre
+      weight: 2.5
+      required: true
+      norms:
+      - Art. 5 Abs. 2 GG
+      keywords:
+      - allgemeines Gesetz
+      - Sonderrechtslehre
+    - id: p4
+      label: Schmaehkritik zutreffend verneint (Sachbezug zur Bauentscheidung)
+      weight: 2.0
+      required: true
+      keywords:
+      - Schmaehkritik
+      - Sachbezug
+    - id: p5
+      label: Wechselwirkungslehre / Abwaegung im Einzelfall durchgefuehrt
+      weight: 2.5
+      required: true
+      keywords:
+      - Wechselwirkung
+      - Abwaegung
+    - id: p6
+      label: 'Ergebnis: ueberspitzte Kritik an Amtstraeger in amtlicher Funktion gedeckt,
+        Entfernungsanordnung verletzt Art. 5 Abs. 1 S. 1 GG'
+      weight: 1.5
+      required: false
+      norms:
+      - Art. 5 Abs. 1 S. 1 GG
+      keywords:
+      - verletzt
+      - gedeckt
