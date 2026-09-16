@@ -33,8 +33,11 @@ def is_free_tier(user: User, settings: Settings, *, now: datetime | None = None)
     return not user.has_pro_access(now)
 
 
-def _upgrade_required(reason: str, *, reset_at: datetime | None = None) -> NoReturn:
-    detail: dict[str, object] = {"upgrade_required": True, "reason": reason}
+def _upgrade_required(reason: str, message: str, *, reset_at: datetime | None = None) -> NoReturn:
+    """``message`` ist der vom Client (F1, ``app/lib/api.dart``) angezeigte Text -
+    ohne dieses Feld faellt der Client auf die Dart-Map-Stringform des
+    ``detail``-Objekts zurueck (SUB-121)."""
+    detail: dict[str, object] = {"upgrade_required": True, "reason": reason, "message": message}
     if reset_at is not None:
         detail["reset_at"] = reset_at.isoformat()
     raise HTTPException(status.HTTP_403_FORBIDDEN, detail)
@@ -90,7 +93,10 @@ def enforce_case_access(db: Session, user: User, case: Case) -> None:
         return
     used = db.query(CaseAccess).filter_by(user_id=user.id).count()
     if used >= FREE_CASES:
-        _upgrade_required("free_case_limit_reached")
+        _upgrade_required(
+            "free_case_limit_reached",
+            f"Ab dem {FREE_CASES + 1}. Fall nur mit Pro verfuegbar.",
+        )
     db.add(CaseAccess(user_id=user.id, case_id=case.id))
     db.commit()
 
@@ -107,7 +113,13 @@ def enforce_analyze_quota(db: Session, user: User, *, now: datetime) -> None:
     if len(calls) >= FREE_ANALYZE_CALLS_PER_WEEK:
         reset_at = as_utc(calls[0].created_at)
         assert reset_at is not None
-        _upgrade_required("free_analyze_limit_reached", reset_at=reset_at + ANALYZE_WINDOW)
+        reset_at += ANALYZE_WINDOW
+        _upgrade_required(
+            "free_analyze_limit_reached",
+            f"Diese Woche schon {FREE_ANALYZE_CALLS_PER_WEEK} Analysen genutzt. "
+            f"Reset am {reset_at.date().isoformat()}.",
+            reset_at=reset_at,
+        )
     db.add(AnalyzeCall(user_id=user.id, created_at=now))
     db.commit()
 

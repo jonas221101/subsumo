@@ -151,7 +151,9 @@ def test_cases_free_nutzer_ab_drittem_fall_403(client, paywall):
 
     response = client.get(f"/v1/cases/{CASE_SLUGS[2]}")
     assert response.status_code == 403
-    assert response.json()["detail"]["upgrade_required"] is True
+    detail = response.json()["detail"]
+    assert detail["upgrade_required"] is True
+    assert isinstance(detail["message"], str) and detail["message"]
 
 
 def test_cases_free_nutzer_kann_bereits_gesehene_faelle_weiter_nutzen(client, paywall):
@@ -196,6 +198,8 @@ def test_gutachten_analyze_free_nutzer_max_drei_pro_woche(client, paywall):
     body = response.json()["detail"]
     assert body["upgrade_required"] is True
     assert "reset_at" in body
+    assert isinstance(body["message"], str) and body["message"]
+    assert body["reset_at"][:10] in body["message"]
 
 
 def test_gutachten_analyze_pro_nutzer_ist_vom_wochenlimit_ausgenommen(client, paywall):
@@ -233,6 +237,7 @@ def test_alle_drei_limits_nutzen_dasselbe_fehlerformat(client, paywall):
         detail = response.json()["detail"]
         assert detail["upgrade_required"] is True
         assert isinstance(detail["reason"], str) and detail["reason"]
+        assert isinstance(detail["message"], str) and detail["message"]
 
 
 def test_limits_greifen_nicht_wenn_paywall_deaktiviert(client):
