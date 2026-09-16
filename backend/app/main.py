@@ -10,7 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from sqlalchemy import text
 
-from app.api.v1 import account, auth, content, gutachten, learn, plan
+from app.api.v1 import account, auth, content, gutachten, learn, plan, public
 from app.config import get_settings
 from app.core.observability import configure_logging
 from app.db import Base, SessionLocal, engine
@@ -65,6 +65,7 @@ def create_app() -> FastAPI:
         learn.router,
         gutachten.router,
         plan.router,
+        public.router,
     ):
         app.include_router(router, prefix="/v1")
 
