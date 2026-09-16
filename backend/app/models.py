@@ -78,6 +78,13 @@ class User(Base):
         DateTime(timezone=True), default=None
     )
 
+    # Einwilligung zur KI-Korrektur (SUB-133). Kein Default-Ja - nur gesetzt,
+    # wenn der Nutzer aktiv zugestimmt hat. Widerruf (Art. 7 Abs. 3 DSGVO)
+    # setzt das Feld zurueck auf None, siehe app/api/v1/consent.py.
+    ai_review_consent_at: Mapped[datetime | None] = mapped_column(
+        DateTime(timezone=True), default=None
+    )
+
     cards: Mapped[list[UserCard]] = relationship(back_populates="user")
 
     def has_pro_access(self, now: datetime | None = None) -> bool:
