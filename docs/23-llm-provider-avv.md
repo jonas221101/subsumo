@@ -14,6 +14,12 @@
 > eigene System verlässt, greift die Pflicht. Die Kalibrierung (MAE ≤ 2, siehe
 > die Schwesteraufgabe zu [SUB-69](/SUB/issues/SUB-69)) ist nur für die
 > *bewertende* Variante bindend und damit der zweite, nachgelagerte Schritt.
+>
+> **Nachtrag (16.09.2026, 21:36 UTC):** Der Nutzer hat auf SUB-39 entschieden,
+> die KI-Korrektur zu behalten („Ich würde sie gerne behalten."). **Option D
+> (kein LLM) ist damit vom Tisch** — die offene Entscheidung betrifft nur noch
+> *welcher* Provider (A/B/C), nicht mehr *ob*. Die Empfehlung in Abschnitt 6
+> war bereits vor diesem Nachtrag Option B, ändert sich also nicht.
 
 ---
 
@@ -98,6 +104,11 @@ Prüfung des tatsächlich abzuschließenden Vertrags — entsprechend als
 | **Qualitätsrisiko** | **Muss offen benannt werden:** Für die juristische Gutachtenbewertung braucht `LLMEvaluator._build_prompt` (`evaluator.py:259-280`) ein Modell, das komplexe, mehrschichtige Subsumtionsprüfungen zuverlässig gegen einen strukturierten Erwartungshorizont abgleicht und dabei nicht halluziniert (`evidence` muss wörtlich im Text stehen, `evaluator.py:302-304` prüft das serverseitig ab, fängt aber nur den Beleg ab, nicht die inhaltliche Fehleinschätzung). Es liegt **keine eigene Evaluation** vor, ob ein Mistral-Modell diese Aufgabe mit vergleichbarer Güte wie ein Claude-Sonnet-Modell löst. Der Kalibrierungs-Harness aus SUB-69 (MAE ≤ 2 gegen 30 Dozentengutachten) ist genau dafür gedacht, müsste aber **je Provider erneut durchlaufen werden** — ein Providerwechsel invalidiert eine bereits gelaufene Kalibrierung |
 
 ### Option D — Kein LLM (Status quo v1.0)
+
+> **Vom Nutzer ausgeschlossen (SUB-39, 16.09.2026, 21:36 UTC):** Die
+> KI-Korrektur soll behalten werden. Diese Option ist damit nicht mehr
+> wählbar; sie bleibt unten stehen, um die Kostenwirkung des vorherigen
+> Status quo nachvollziehbar zu machen (Abschnitt 5).
 
 | Kriterium | Stand |
 |---|---|
