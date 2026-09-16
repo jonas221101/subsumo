@@ -170,4 +170,23 @@ class ApiClient {
         'mode': mode,
         'duration_s': durationSeconds,
       })) as Map<String, dynamic>;
+
+  // --- Bezahlstrecke ----------------------------------------------------------
+
+  /// Erstellt eine Stripe-Checkout-Session fuer `plan` (`monthly`/`yearly`,
+  /// siehe docs/20-release-g2-bezahlstrecke.md B3) und liefert die URL, zu
+  /// der der Client extern weiterleiten soll. Setzt selbst kein Entitlement -
+  /// das passiert erst asynchron ueber den Webhook (B4).
+  Future<String> createCheckoutSession(String plan) async {
+    final data = await _post('/v1/billing/checkout-session', {'plan': plan});
+    return (data as Map<String, dynamic>)['checkout_url'] as String;
+  }
+
+  /// Kuendigt das laufende Abo (F3, siehe docs/20-release-g2-bezahlstrecke.md
+  /// B5). Liefert `mode` im Ergebnis: `"period_end"` (Zugriff bleibt bis zum
+  /// Periodenende) oder `"immediate_refund"` (Widerrufsfall, sofortige
+  /// Kuendigung mit voller Rueckerstattung). Wirft `ApiException(409, ...)`,
+  /// wenn kein aktives Abo hinterlegt ist.
+  Future<Map<String, dynamic>> cancelSubscription() async =>
+      (await _post('/v1/billing/cancel', const {})) as Map<String, dynamic>;
 }

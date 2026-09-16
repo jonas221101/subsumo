@@ -67,4 +67,28 @@ void main() {
       );
     });
   });
+
+  group('ApiClient.cancelSubscription (F3, docs/20-release-g2-bezahlstrecke.md B5)', () {
+    test('liefert den Server-mode unveraendert', () async {
+      final client = MockClient((request) async {
+        expect(request.url.path, '/v1/billing/cancel');
+        return _json({'mode': 'immediate_refund'}, 200);
+      });
+      final api = ApiClient(client: client)..setToken('t');
+
+      final result = await api.cancelSubscription();
+
+      expect(result['mode'], 'immediate_refund');
+    });
+
+    test('409 ohne aktives Abo wird als ApiException durchgereicht', () async {
+      final client = MockClient((request) async => _json({'detail': 'no_active_subscription'}, 409));
+      final api = ApiClient(client: client)..setToken('t');
+
+      await expectLater(
+        () => api.cancelSubscription(),
+        throwsA(isA<ApiException>().having((e) => e.statusCode, 'statusCode', 409)),
+      );
+    });
+  });
 }

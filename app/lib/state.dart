@@ -108,6 +108,47 @@ class AppState extends ChangeNotifier {
 
   bool get cancelAtPeriodEnd => (user?['cancel_at_period_end'] as bool?) ?? false;
 
+  /// Nach der Rueckkehr von einem erfolgreichen Stripe-Checkout aufzurufen
+  /// (F2, siehe docs/20-release-g2-bezahlstrecke.md): der Webhook (B4)
+  /// schaltet das Entitlement asynchron zur Redirect-Rueckkehr frei, deshalb
+  /// wird `/auth/me` mit kurzen Pausen wiederholt abgefragt statt nur einmal.
+  ///
+  /// Liefert `true`, sobald [proActive] danach `true` ist - sonst `false`
+  /// nach dem letzten Versuch, ohne das als Fehler zu behandeln (der Webhook
+  /// kann laenger brauchen als dieses kurze Fenster).
+  Future<bool> confirmProAfterCheckout({
+    int attempts = 5,
+    Duration interval = const Duration(seconds: 2),
+  }) async {
+    for (var i = 0; i < attempts; i++) {
+      try {
+        user = await api.me();
+        notifyListeners();
+        if (proActive) return true;
+      } on Exception {
+        // Naechster Versuch behandelt einen einzelnen Netzausfall - erst nach
+        // dem letzten Versuch gilt die Bestaetigung als (noch) nicht da.
+      }
+      if (i < attempts - 1) await Future<void>.delayed(interval);
+    }
+    return proActive;
+  }
+
+  /// Frischt [user] einmalig vom Server neu - z. B. nach einer Kontoaktion
+  /// wie einer Kuendigung (F3), deren Wirkung auf [cancelAtPeriodEnd]/[proActive]
+  /// teils erst asynchron ueber den Stripe-Webhook (B4) nachgezogen wird. Ein
+  /// Fehlschlag hier verwirft bewusst nicht den zuletzt bekannten Zustand -
+  /// der Aufrufer meldet den eigentlichen Vorgang (z. B. die Kuendigung)
+  /// ohnehin separat.
+  Future<void> refreshUser() async {
+    try {
+      user = await api.me();
+      notifyListeners();
+    } on Exception {
+      // Letzten bekannten Zustand behalten statt ihn bei einem Netzfehler zu verwerfen.
+    }
+  }
+
   /// Einmal beim Start aufzurufen: stellt Login, Outbox und den zuletzt
   /// bekannten Kartenstapel wieder her - in dieser Reihenfolge, damit ein
   /// Offline-Start sofort etwas Sinnvolles zeigt, statt auf das Netz zu warten.
