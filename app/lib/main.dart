@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
 
+import 'design/design.dart';
+import 'pages/account_page.dart';
 import 'pages/cases_page.dart';
+import 'pages/checkout_page.dart';
 import 'pages/dashboard_page.dart';
 import 'pages/login_page.dart';
 import 'pages/review_page.dart';
 import 'pages/schemata_page.dart';
 import 'state.dart';
 import 'theme.dart';
+
+/// Werte, auf die F2 (Checkout-Rueckkehr, siehe docs/20-release-g2-bezahlstrecke.md)
+/// reagiert. Jeder andere Wert (kein Rueckkehr-Link) zeigt keinen Hinweis.
+const _handledCheckoutStatuses = {'success', 'cancelled'};
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -39,16 +46,26 @@ class _Root extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final app = AppScope.of(context);
-    return app.isAuthenticated && app.user != null
-        ? const HomeShell()
-        : const LoginPage();
+    if (!(app.isAuthenticated && app.user != null)) return const LoginPage();
+    // Stripe leitet nach dem Checkout per vollem Seitenaufruf auf die App-URL
+    // zurueck (?checkout=success|cancelled, siehe docs/20 F2) - `Uri.base`
+    // ist deshalb hier, beim frischen Laden, die richtige Quelle statt eines
+    // Router-States.
+    final checkoutStatus = Uri.base.queryParameters['checkout'];
+    return HomeShell(
+      checkoutStatus: _handledCheckoutStatuses.contains(checkoutStatus) ? checkoutStatus : null,
+    );
   }
 }
 
 /// Navigationsgeruest. Auf schmalen Geraeten unten, ab Tablet-Breite als
 /// seitliche Leiste - dasselbe Layout traegt Handy, Tablet, Windows und Web.
 class HomeShell extends StatefulWidget {
-  const HomeShell({super.key});
+  const HomeShell({this.checkoutStatus, super.key});
+
+  /// `success`/`cancelled` aus der Rueckkehr-URL nach einem Stripe-Checkout
+  /// (siehe [CheckoutReturnBanner]), sonst `null`.
+  final String? checkoutStatus;
 
   @override
   State<HomeShell> createState() => _HomeShellState();
@@ -87,28 +104,46 @@ class _HomeShellState extends State<HomeShell> {
               onPressed: app.flushOutbox,
             ),
           IconButton(
+            tooltip: 'Konto',
+            icon: const Icon(Icons.account_circle_outlined),
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute<void>(builder: (_) => const AccountPage()),
+            ),
+          ),
+          IconButton(
             tooltip: 'Abmelden',
             icon: const Icon(Icons.logout),
             onPressed: app.signOut,
           ),
         ],
       ),
-      body: Row(
+      body: Column(
         children: [
-          if (breit)
-            NavigationRail(
-              selectedIndex: _index,
-              onDestinationSelected: (i) => setState(() => _index = i),
-              labelType: NavigationRailLabelType.all,
-              destinations: [
-                for (final d in _destinations)
-                  NavigationRailDestination(
-                    icon: Icon(d.icon),
-                    label: Text(d.label),
+          if (widget.checkoutStatus != null)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(Spacing.lg, Spacing.lg, Spacing.lg, 0),
+              child: CheckoutReturnBanner(status: widget.checkoutStatus!),
+            ),
+          Expanded(
+            child: Row(
+              children: [
+                if (breit)
+                  NavigationRail(
+                    selectedIndex: _index,
+                    onDestinationSelected: (i) => setState(() => _index = i),
+                    labelType: NavigationRailLabelType.all,
+                    destinations: [
+                      for (final d in _destinations)
+                        NavigationRailDestination(
+                          icon: Icon(d.icon),
+                          label: Text(d.label),
+                        ),
+                    ],
                   ),
+                Expanded(child: _page),
               ],
             ),
-          Expanded(child: _page),
+          ),
         ],
       ),
       bottomNavigationBar: breit

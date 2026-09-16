@@ -14,6 +14,9 @@ dependencies:
   # Offline-Synchronisierung gebaut wird - siehe docs/03-roadmap.md.
   http: ^1.2.0
   shared_preferences: ^2.2.0
+  # Oeffnet den Stripe-Checkout extern im System-/Tab-Browser (F2, siehe
+  # docs/20-release-g2-bezahlstrecke.md) - kein In-App-WebView noetig.
+  url_launcher: ^6.3.0
 
 dev_dependencies:
   flutter_test:
