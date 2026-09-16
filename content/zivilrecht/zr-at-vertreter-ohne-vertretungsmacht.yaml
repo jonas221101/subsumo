@@ -1,0 +1,273 @@
+topic:
+  slug: zr-at-vertreter-ohne-vertretungsmacht
+  area: zivilrecht
+  title: Vertreter ohne Vertretungsmacht, §§ 177 ff. BGB
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-15'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: zr-votv-schwebende-unwirksamkeit-177-1
+  type: definition
+  front: 'Definiere: Rechtsfolge des Vertragsschlusses durch einen Vertreter ohne
+    Vertretungsmacht, § 177 Abs. 1 BGB'
+  back: Schliesst jemand als Vertreter im Namen eines anderen einen Vertrag, ohne
+    dass ihm die dafuer erforderliche Vertretungsmacht zusteht, haengt die Wirksamkeit
+    des Vertrags fuer und gegen den Vertretenen von dessen Genehmigung ab (§ 177 Abs.
+    1 BGB). Der Vertrag ist bis zur Entscheidung des Vertretenen schwebend unwirksam
+    - weder endgueltig wirksam noch endgueltig nichtig.
+  norms:
+  - § 177 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-votv-aufforderung-177-2
+  type: norm
+  front: Was regelt § 177 Abs. 2 BGB zur Aufforderung des Vertragspartners?
+  back: Fordert der andere Teil den Vertretenen zur Erklaerung ueber die Genehmigung
+    auf, kann die Genehmigung nur ihm gegenueber erklaert werden; eine vorher gegenueber
+    dem Vertreter erklaerte Genehmigung wird unwirksam (§ 177 Abs. 2 S. 1 BGB). Die
+    Genehmigung kann nur bis zum Ablauf von zwei Wochen nach Empfang der Aufforderung
+    erklaert werden - wird sie nicht erklaert, gilt sie als verweigert (§ 177 Abs.
+    2 S. 2 BGB). Die Vorschrift gibt dem Vertragspartner ein Mittel, die schwebende
+    Unwirksamkeit zeitlich zu begrenzen.
+  norms:
+  - § 177 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-votv-genehmigung-184-1
+  type: norm
+  front: Welche Rueckwirkung hat die Genehmigung nach § 184 Abs. 1 BGB?
+  back: Die Genehmigung wirkt auf den Zeitpunkt der Vornahme des Rechtsgeschaefts
+    zurueck (§ 184 Abs. 1 BGB), soweit nicht ein anderes bestimmt ist. Genehmigt der
+    Vertretene den vom vollmachtlosen Vertreter geschlossenen Vertrag, gilt dieser
+    also von Anfang an als wirksam - nicht erst ab dem Zeitpunkt der Genehmigungserklaerung.
+  norms:
+  - § 184 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-votv-widerrufsrecht-178
+  type: definition
+  front: 'Definiere: Widerrufsrecht des Vertragspartners, § 178 BGB'
+  back: Bis zur Genehmigung des Vertrags durch den Vertretenen ist der andere Teil
+    zum Widerruf berechtigt (§ 178 S. 1 BGB) - er kann sich also seinerseits vom schwebend
+    unwirksamen Vertrag loesen, bevor der Vertretene entschieden hat. Das Widerrufsrecht
+    ist ausgeschlossen, wenn der andere Teil den Mangel der Vertretungsmacht bei Vertragsschluss
+    kannte (§ 178 S. 1 BGB); war der Mangel vertraglich vereinbart bekannt zu sein
+    oder wurde er vom Vertreter offen zugegeben, kann der Widerruf zudem nur gegenueber
+    dem Vertreter selbst erklaert werden, solange der Vertretene keine Erklaerung
+    abgegeben hat (§ 178 S. 2 BGB).
+  norms:
+  - § 178 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-votv-haftung-179-1
+  type: norm
+  front: Wann und wie haftet der Vertreter ohne Vertretungsmacht nach § 179 Abs. 1
+    BGB?
+  back: Verweigert der Vertretene die Genehmigung, ist derjenige, der als Vertreter
+    einen Vertrag geschlossen hat, dem anderen Teil zur Erfuellung oder zum Schadensersatz
+    verpflichtet, wenn er die Genehmigung wusste, dass ihm die Vertretungsmacht fehlte
+    - der andere Teil hat insoweit ein Wahlrecht (§ 179 Abs. 1 BGB). Voraussetzung
+    ist positive Kenntnis des Vertreters vom Mangel der Vertretungsmacht im Zeitpunkt
+    des Vertragsschlusses.
+  norms:
+  - § 179 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-votv-haftung-179-2
+  type: norm
+  front: Wie ist die Haftung nach § 179 Abs. 2 BGB begrenzt, wenn der Vertreter den
+    Mangel nicht kannte?
+  back: Kannte der Vertreter den Mangel der Vertretungsmacht nicht, ist er nur zum
+    Ersatz des Schadens verpflichtet, den der andere Teil dadurch erleidet, dass er
+    auf die Vertretungsmacht vertraut hat (Vertrauensschaden) - begrenzt auf den Betrag
+    des Interesses, das der andere Teil an der Wirksamkeit des Vertrags hat (Erfuellungsinteresse
+    als Obergrenze, § 179 Abs. 2 BGB). Anders als nach Abs. 1 besteht in diesem Fall
+    kein Wahlrecht auf Erfuellung.
+  norms:
+  - § 179 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-votv-ausschluss-179-3
+  type: norm
+  front: In welchen Faellen entfaellt die Haftung des Vertreters nach § 179 Abs. 3
+    BGB?
+  back: Die Haftung des Vertreters ist ausgeschlossen, wenn der andere Teil den Mangel
+    der Vertretungsmacht kannte oder kennen musste (§ 179 Abs. 3 S. 1 BGB) - dann
+    ist sein Vertrauen nicht schutzwuerdig. Ebenso haftet ein in der Geschaeftsfaehigkeit
+    beschraenkter Vertreter nicht, es sei denn, er hat mit Zustimmung seines gesetzlichen
+    Vertreters gehandelt (§ 179 Abs. 3 S. 2 BGB).
+  norms:
+  - § 179 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-votv-einseitiges-rechtsgeschaeft-180
+  type: norm
+  front: Was gilt fuer einseitige Rechtsgeschaefte ohne Vertretungsmacht, § 180 BGB?
+  back: Bei einem einseitigen Rechtsgeschaeft ist eine Vertretung ohne Vertretungsmacht
+    grundsaetzlich unzulaessig - dem Empfaenger einer solchen Erklaerung fehlt sonst
+    die Moeglichkeit, die Wirksamkeit selbst zu klaeren, wie es der Vertragsschluss
+    durch Genehmigung erlaubt (§ 180 S. 1 BGB). Hat der Erklaerungsempfaenger die
+    vom Vertreter behauptete Vertretungsmacht bei der Vornahme des Geschaefts nicht
+    beanstandet oder ist er mit dem Handeln ohne Vertretungsmacht einverstanden, sind
+    die Vorschriften ueber Vertraege (§§ 177-179 BGB) entsprechend anzuwenden (§ 180
+    S. 2 BGB).
+  norms:
+  - § 180 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-votv-haftung-179
+  title: Haftung des Vertreters ohne Vertretungsmacht, §§ 177, 179 BGB
+  norms:
+  - § 177 Abs. 1 BGB
+  - § 178 BGB
+  - § 179 Abs. 1 BGB
+  - § 179 Abs. 2 BGB
+  - § 179 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Vertragsschluss durch Vertreter ohne (ausreichende) Vertretungsmacht
+    children:
+    - label: 1. Handeln im fremden Namen (Offenkundigkeitsprinzip)
+    - label: 2. Fehlende oder ueberschrittene Vertretungsmacht
+  - label: II. Schwebende Unwirksamkeit des Vertrags, § 177 Abs. 1 BGB
+  - label: III. Keine wirksame Genehmigung durch den Vertretenen
+    children:
+    - label: 1. Ausdrueckliche oder konkludente Verweigerung
+    - label: 2. Fristablauf nach Aufforderung, § 177 Abs. 2 S. 2 BGB (gilt als Verweigerung)
+  - label: IV. Kein wirksamer Widerruf des anderen Teils vor der Genehmigung, § 178
+      BGB
+    hinweis: Ausgeschlossen, wenn der andere Teil den Mangel der Vertretungsmacht
+      bei Vertragsschluss kannte.
+  - label: V. Haftung des Vertreters, § 179 BGB
+    children:
+    - label: 1. Wahlrecht auf Erfuellung oder Schadensersatz bei Kenntnis des Vertreters,
+        § 179 Abs. 1 BGB
+    - label: 2. Nur Vertrauensschaden, begrenzt auf das Erfuellungsinteresse, bei
+        Unkenntnis, § 179 Abs. 2 BGB
+    - label: 3. Ausschluss bei Kenntnis/Kennenmuessen des anderen Teils, § 179 Abs.
+        3 BGB
+faelle:
+- slug: zr-fall-oldtimer-onkel-votv
+  title: Der voreilige Oldtimer-Verkauf
+  difficulty: 3
+  minutes: 55
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: Autohaendler A moechte seinem Sammlerkunden K einen seltenen Oldtimer vermitteln,
+    der seinem Onkel O gehoert. Ohne O vorher zu kontaktieren, bietet A dem K gegenueber
+    im Namen des O den Wagen fuer 15.000 Euro zum Kauf an - A ist der festen Ueberzeugung,
+    O werde ohnehin zustimmen, weil O ihm gegenueber einmal beilaeufig gesagt habe,
+    er koenne sich einen Verkauf 'irgendwann' vorstellen; eine Vollmacht hat O dem
+    A tatsaechlich nie erteilt. K nimmt das Angebot sofort an. Als A anschliessend
+    O informiert, lehnt dieser den Verkauf entschieden ab, weil er den Wagen doch
+    behalten moechte. K hatte im Vertrauen auf den Kauf bereits sein eigenes Fahrzeug
+    an einen Interessenten zu einem Preis verkauft, der 500 Euro unter dem sonst erzielbaren
+    Marktwert lag, um schnell handelseinig zu werden. K verlangt von A wahlweise Uebereignung
+    des Oldtimers oder Ersatz des ihm entstandenen Schadens.
+  question: 'Kann K von A gemaess § 179 BGB Erfuellung oder Schadensersatz verlangen,
+    und falls nur Schadensersatz in Betracht kommt: in welcher Hoehe?'
+  steps:
+  - prompt: Formuliere den Obersatz zur Wirksamkeit des Kaufvertrags zwischen K und
+      O.
+    erwartung: Der zwischen K und O durch das Handeln des A vermittelte Kaufvertrag
+      koennte gemaess § 177 Abs. 1 BGB schwebend unwirksam und wegen der Verweigerung
+      der Genehmigung durch O endgueltig unwirksam sein.
+  - prompt: Fehlte dem A die erforderliche Vertretungsmacht?
+    erwartung: Ja - O hat dem A weder eine Innen- noch eine Aussenvollmacht erteilt;
+      die beilaeufige Aeusserung des O begruendet keine Vertretungsmacht.
+  - prompt: Wie wirkt sich die Verweigerung der Genehmigung durch O aus?
+    erwartung: Der Vertrag ist damit endgueltig unwirksam, § 177 Abs. 1 BGB.
+  - prompt: Kann K von A gemaess § 179 Abs. 1 BGB wahlweise Erfuellung verlangen?
+    erwartung: Nein - das Wahlrecht auf Erfuellung nach § 179 Abs. 1 BGB setzt voraus,
+      dass A den Mangel seiner Vertretungsmacht kannte. A war lediglich subjektiv
+      ueberzeugt, O werde zustimmen, und hatte keine positive Kenntnis, dass ihm keine
+      Vollmacht zustand - er 'kannte' den Mangel im Sinne der Vorschrift nicht, auch
+      wenn seine Annahme fahrlaessig war.
+  - prompt: Auf welcher Grundlage und in welchem Umfang haftet A dann?
+    erwartung: A haftet nach § 179 Abs. 2 BGB nur auf Ersatz des Vertrauensschadens,
+      den K dadurch erlitten hat, dass er auf die Wirksamkeit des Vertrags vertraut
+      hat - hier die 500 Euro Mindererloes aus dem eilig abgeschlossenen Verkauf seines
+      eigenen Fahrzeugs. Der Ersatz ist zudem auf das Erfuellungsinteresse begrenzt.
+  - prompt: Ist die Haftung des A nach § 179 Abs. 3 BGB ausgeschlossen?
+    erwartung: Nein - K kannte den Mangel der Vertretungsmacht weder, noch musste
+      er ihn kennen; er durfte auf die Angaben des A vertrauen.
+  - prompt: Wie ist das Ergebnis zusammenzufassen?
+    erwartung: K kann von A keine Erfuellung, sondern nur Ersatz des Vertrauensschadens
+      in Hoehe von 500 Euro verlangen, § 179 Abs. 2 BGB.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Obersatz zur schwebenden bzw. endgueltigen Unwirksamkeit des Vertrags,
+        § 177 Abs. 1 BGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 177 Abs. 1 BGB
+      keywords:
+      - '177'
+      - schwebend unwirksam
+      - endgueltig unwirksam
+    - id: p2
+      label: Fehlen einer Vertretungsmacht des A festgestellt
+      weight: 1.5
+      required: true
+      keywords:
+      - keine Vollmacht
+      - keine Vertretungsmacht
+    - id: p3
+      label: Abgrenzung § 179 Abs. 1 BGB (Kenntnis) zu § 179 Abs. 2 BGB (Unkenntnis)
+        korrekt vorgenommen - kein Wahlrecht auf Erfuellung, da A den Mangel nicht
+        positiv kannte
+      weight: 3.5
+      required: true
+      norms:
+      - § 179 Abs. 1 BGB
+      - § 179 Abs. 2 BGB
+      keywords:
+      - '179'
+      - Kenntnis
+      - Vertrauensschaden
+    - id: p4
+      label: Vertrauensschaden in Hoehe von 500 Euro bestimmt und auf das Erfuellungsinteresse
+        begrenzt
+      weight: 1.5
+      required: false
+      keywords:
+      - Vertrauensschaden
+      - Erfuellungsinteresse
+      - '500'
+    - id: p5
+      label: Kein Haftungsausschluss nach § 179 Abs. 3 BGB, da K gutglaeubig war
+      weight: 1.0
+      required: false
+      norms:
+      - § 179 Abs. 3 BGB
+      keywords:
+      - 179 Abs. 3
+      - gutglaeubig
