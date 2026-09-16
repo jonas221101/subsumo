@@ -22,6 +22,9 @@ dependencies:
   # Pfadbasiertes URL-Routing (usePathUrlStrategy) fuer oeffentliche Marketing-/
   # Rechtsseiten vor dem Login-Gate (SUB-108, siehe docs/21).
   go_router: ^14.2.0
+  # Rendert die docs/legal/*.md-Rechtstexte auf den oeffentlichen Routen
+  # (SUB-111) mit ihrer echten Markdown-Formatierung statt als Rohtext.
+  flutter_markdown_plus: ^1.0.12
 
 dev_dependencies:
   flutter_test:
@@ -34,6 +37,12 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  # docs/legal/*.md bleibt die einzige Quelle der Rechtstexte (SUB-85/SUB-111) -
+  # die Rechtstexte-Seiten laden diese Dateien zur Laufzeit statt einer
+  # eigenen Kopie, damit Aenderungen dort nicht separat nachgezogen werden
+  # muessen.
+  assets:
+    - ../docs/legal/
   # Eigene Schrift statt Flutter Webs CanvasKit-Fallback auf fonts.gstatic.com -
   # siehe docs/07-spike-web-editor.md (Nebenbefund 2) und assets/fonts/LIZENZ.md.
   fonts:
