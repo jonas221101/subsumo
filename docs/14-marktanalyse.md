@@ -93,6 +93,14 @@ Was die Recherche **nicht** widerlegt: Bei keinem der drei KI-Korrektur-Anbieter
 
 ## 4. Preisempfehlung
 
+> **Nachtrag 15.09.2026:** Dieser Abschnitt gilt für den **vollen**
+> Funktionsumfang inklusive KI-Korrektur. Nach der Terminvorgabe „Release in
+> zwei Wochen" enthält v1.0 diese Korrektur nicht mehr
+> (`docs/18-release-2-wochen.md`). Der Preis für den Release-Umfang und die
+> Kostendeckungsrechnung dazu stehen in
+> [`docs/19-kosten-preis-budget.md`](19-kosten-preis-budget.md); die hier
+> empfohlenen 12 €/Monat bleiben der Zielpreis für v1.2.
+
 Die Produktvision setzt 12 €/Monat an. Der Marktführer nach Reichweite
 (Jurafuchs) startet bei 5,99 €/Monat, der direkteste funktionale Wettbewerber
 (Constellatio) liegt bei 12,42 €/Monat — nahezu identisch mit dem

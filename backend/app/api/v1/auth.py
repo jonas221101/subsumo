@@ -7,6 +7,7 @@ from datetime import UTC, datetime, time
 from fastapi import APIRouter, HTTPException, status
 
 from app.api.deps import CurrentUser, DbSession
+from app.config import get_settings
 from app.core.security import create_access_token, hash_password, verify_password
 from app.models import User
 from app.schemas import LoginIn, RegisterIn, TokenOut, UserOut, UserUpdateIn
@@ -15,12 +16,18 @@ router = APIRouter(prefix="/auth", tags=["auth"])
 
 
 def _user_out(user: User) -> UserOut:
+    # Notausgang: bei ausgeschalteter Paywall verhaelt sich jeder Nutzer wie
+    # Pro, unabhaengig vom gespeicherten Entitlement (docs/20 Abschnitt 5).
+    pro_active = user.has_pro_access() if get_settings().paywall_enabled else True
     return UserOut(
         id=user.id,
         email=user.email,
         display_name=user.display_name,
         exam_date=user.exam_date,
         daily_minutes=user.daily_minutes,
+        pro_active=pro_active,
+        pro_until=user.pro_until,
+        cancel_at_period_end=user.cancel_at_period_end,
     )
 
 

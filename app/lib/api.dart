@@ -10,10 +10,15 @@ const String kApiBase = String.fromEnvironment(
 );
 
 class ApiException implements Exception {
-  ApiException(this.statusCode, this.message);
+  ApiException(this.statusCode, this.message, {this.upgradeRequired = false});
 
   final int statusCode;
   final String message;
+
+  /// True bei 402/403-Antworten, die laut Fehlerformat der Free-Tier-Limits
+  /// (`upgrade_required: true` im Body, siehe docs/20 B2) einen erreichten
+  /// Free-Limit statt eines generischen Fehlers melden.
+  final bool upgradeRequired;
 
   @override
   String toString() => 'ApiException($statusCode): $message';
@@ -44,15 +49,26 @@ class ApiClient {
     final body = response.body.isEmpty ? '{}' : utf8.decode(response.bodyBytes);
     if (response.statusCode >= 400) {
       String message = 'Unbekannter Fehler';
+      bool upgradeRequired = false;
       try {
         final decoded = jsonDecode(body);
-        if (decoded is Map && decoded['detail'] != null) {
-          message = '${decoded['detail']}';
+        if (decoded is Map) {
+          // FastAPI verpackt HTTPException(detail=...) im `detail`-Feld. Ein
+          // Free-Limit (siehe docs/20 B2) haengt dort ein Objekt mit
+          // `upgrade_required`/`message` ein statt eines blossen Strings.
+          final detail = decoded['detail'];
+          if (detail is Map) {
+            if (detail['upgrade_required'] == true) upgradeRequired = true;
+            message = detail['message'] as String? ?? '$detail';
+          } else if (detail != null) {
+            message = '$detail';
+          }
+          if (decoded['upgrade_required'] == true) upgradeRequired = true;
         }
       } on FormatException {
         message = body;
       }
-      throw ApiException(response.statusCode, message);
+      throw ApiException(response.statusCode, message, upgradeRequired: upgradeRequired);
     }
     return jsonDecode(body);
   }

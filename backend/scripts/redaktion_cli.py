@@ -79,6 +79,16 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
             "Culpa in contrahendo, §§ 280 Abs. 1, 311 Abs. 2, 241 Abs. 2 BGB",
             "Schuldrecht AT, vorvertragliches Schuldverhaeltnis, Aufklaerungspflichten",
         ),
+        (
+            "Willenserklaerung und Auslegung, §§ 133, 157 BGB",
+            "BGB AT, empfangsbeduerftige/nicht empfangsbeduerftige WE, "
+            "natuerliche und normative Auslegung",
+        ),
+        (
+            "Maengelgewaehrleistung im Kaufrecht (vertieft), §§ 434 ff. BGB",
+            "Kaufrecht, Sachmangelbegriff, Nacherfuellung, Zusammenspiel "
+            "Ruecktritt/Minderung/Schadensersatz",
+        ),
     ],
     "strafrecht": [
         ("Diebstahl, § 242 StGB", "Strafrecht BT, Wegnahme, Zueignungsabsicht"),
@@ -89,6 +99,30 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
         (
             "Taeterschaft und Teilnahme, §§ 25 ff. StGB",
             "Strafrecht AT, Abgrenzung Mittaeterschaft/Beihilfe",
+        ),
+        (
+            "Raub, § 249 StGB",
+            "Strafrecht BT, Noetigungsmittel, finaler Zusammenhang, Abgrenzung zu § 255 StGB",
+        ),
+        (
+            "Notwehr, § 32 StGB",
+            "Strafrecht AT, gegenwaertiger rechtswidriger Angriff, Erforderlichkeit, Gebotenheit",
+        ),
+        (
+            "Koerperverletzungsdelikte, §§ 223, 224 StGB",
+            "Strafrecht BT, gefaehrliches Werkzeug, gemeinschaftliche Begehung",
+        ),
+        (
+            "Betrug, § 263 StGB",
+            "Strafrecht BT, Taeuschung, Irrtum, Vermoegensverfuegung, Vermoegensschaden",
+        ),
+        (
+            "Unterlassungsdelikte, § 13 StGB",
+            "Strafrecht AT, Garantenstellung, Entsprechungsklausel",
+        ),
+        (
+            "Urkundenfaelschung, § 267 StGB",
+            "Strafrecht BT, Urkundenbegriff, Herstellen/Verfaelschen, Gebrauchmachen",
         ),
     ],
     "oeffentliches-recht": [
@@ -120,6 +154,19 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
         (
             "Ermessen und Beurteilungsspielraum, § 40 VwVfG",
             "VerwR AT, Ermessensfehler, Ermessensreduzierung auf Null",
+        ),
+        (
+            "Art. 2 Abs. 1 GG: Allgemeine Handlungsfreiheit",
+            "Grundrechte, Auffanggrundrecht, Schranken der verfassungsmaessigen Ordnung",
+        ),
+        (
+            "Art. 5 GG: Meinungsfreiheit",
+            "Grundrechte, Schrankentrias Art. 5 Abs. 2 GG, Wechselwirkungslehre",
+        ),
+        (
+            "Rechtmaessigkeitspruefung eines Verwaltungsakts",
+            "VerwR AT, Ermaechtigungsgrundlage, formelle und materielle "
+            "Rechtmaessigkeit, Aufbauschema",
         ),
     ],
 }
