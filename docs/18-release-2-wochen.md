@@ -37,9 +37,14 @@ oder Zahlungs-Pflichten abbilden.
 > vollständigen Rechtstexten.**
 
 Nicht mehr enthalten: die KI-Klausurkorrektur als bewertendes Feature und
-alles, was auf ihr aufbaut. Das folgt direkt der Nutzervorgabe („Zugang zu
-Korrigierenden kann später als Feature kommen") — und ist auch ohne diese
-Vorgabe der richtige Schnitt, aus drei Gründen:
+alles, was auf ihr aufbaut.
+
+**Zur Herkunft dieses Schnitts — Klarstellung (16.09.2026).** Die Nutzervorgabe
+(„Zugang zu Korrigierenden kann später als Feature kommen") betrifft wörtlich
+den Zugang zu **menschlichen** Korrigierenden; der steht in 3.2 als v1.2+. Die
+Streichung der **KI**-Korrektur geht darüber hinaus und ist eine
+Planungsentscheidung dieses Dokuments, keine Nutzeranweisung. Frühere Fassungen
+dieses Absatzes haben beides vermischt. Sie stützt sich auf drei eigene Gründe:
 
 1. **Die Korrektur ist unkalibriert.** `docs/13-lernarchitektur.md` und der
    Kalibrierungs-Harness aus [SUB-69](/SUB/issues/SUB-69) setzen MAE ≤ 2 Punkte
@@ -95,6 +100,15 @@ heuristisch, sofort, kostenlos und wird als das kommuniziert, was es ist
 | Lerngruppen, Peer-Review | v2-Thema | v2 |
 | 500 Karten / 40 Fälle | Zielmenge bleibt, aber als laufende Produktion nach Release | fortlaufend |
 | Kalibrierung gegen 30 Dozentengutachten | braucht externe Personen und Vorlauf | Start sofort, Ergebnis für v1.1 |
+
+**„Kommt in v1.1" hat seit dem 16.09.2026 Eigentümer.** Bis dahin war die
+Rückkehr der KI-Korrektur nur hier im Dokument versprochen und auf dem Board
+nirgends verfolgt. Die beiden Vorbedingungen liegen jetzt als Aufgaben:
+[SUB-129](/SUB/issues/SUB-129) (LLM-Provider-Wahl + AVV) und
+[SUB-130](/SUB/issues/SUB-130) (Kalibrierungspaket für die 30
+Dozentengutachten). Von beiden ist **nur der AVV ein echtes Gate**: er blockt
+jede LLM-Variante, auch eine ohne Punkte. Die Kalibrierung bindet allein die
+bewertende Variante. Reihenfolge deshalb: AVV zuerst.
 
 **Was das Streichen der iOS-Spur zusätzlich spart:** Apple erzwingt für
 digitale Abos In-App-Purchase (`docs/06-recht-compliance.md` Abschnitt 4). Mit
