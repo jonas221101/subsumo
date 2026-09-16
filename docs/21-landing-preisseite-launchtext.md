@@ -14,6 +14,14 @@
 > **Status:** Text-Entwurf, bereit zur Umsetzung. Technische Implementierung
 > (Landing Page/Preisseite im Produkt bauen) ist **nicht** Teil dieser Aufgabe
 > — siehe Abschnitt 5.
+>
+> **Update 16.09.2026 ([SUB-136](/SUB/issues/SUB-136)):** Abschnitt 2.3 ergänzt
+> eine **Austauschfassung** für den Fall, dass die KI-Klausurkorrektur laut
+> Stichtagsentscheid `docs/18-release-2-wochen.md` Abschnitt 2.1 noch in v1.0
+> aktiviert wird (Entscheidung [SUB-135](/SUB/issues/SUB-135), spätestens
+> So 27.09., 18:00). Der Standardtext in diesem Dokument (Fassung A) ist davon
+> **nicht** betroffen und bleibt bis zu dieser Entscheidung die geltende
+> Fassung.
 
 ---
 
@@ -107,6 +115,15 @@ was die AGB nicht deckt:
 > gegen den in der Anwendung hinterlegten Erwartungshorizont deines
 > Übungsfalls — kein Ersatz für eine Korrektur durch Lehrpersonal, keine
 > Bewertung deiner Studien- oder Examensklausuren.
+>
+> *Zugabe-Absatz, nur bei Aktivierung (Fassung B, siehe Abschnitt 2.3 —
+> ersetzt hier nichts, sondern ergänzt den Absatz oben):* Zusätzlich bekommst
+> du optional ein maschinelles Feedback zu deiner Lösung — eine **Zugabe**,
+> kein beworbenes Kernversprechen: Die Bewertung ist bislang nicht gegen
+> Dozent:innen-Gutachten kalibriert, keine verbindliche Note, und dein Text
+> geht dafür nur mit deiner ausdrücklichen Zustimmung an einen externen
+> Anbieter. Kernangebot bleibt in jedem Fall: Karten, Schemata, Fälle,
+> Struktur-Check ohne Note.
 
 **4. Wie es funktioniert**
 
@@ -144,8 +161,22 @@ was die AGB nicht deckt:
 **8. FAQ**
 
 > **Ist das eine KI, die meine Klausur korrigiert?**
+>
+> *Fassung A — ohne KI-Korrektur (Standard, gilt bis zum Stichtagsentscheid):*
 > Nein. Der Struktur-Check ist heuristisch (regelbasiert) und vergibt keine
 > Note. Eine KI-gestützte Korrektur ist nicht Teil des aktuellen Angebots.
+>
+> *Fassung B — bei Aktivierung (siehe Abschnitt 2.3, nur ziehen, wenn
+> [SUB-135](/SUB/issues/SUB-135) die Aktivierung bestätigt):*
+> Zusätzlich zum heuristischen Struktur-Check gibt es dann ein maschinelles
+> Feedback zu deiner Gutachtenlösung. Das ist **keine verbindliche Bewertung**
+> und **kein Ersatz** für eine Korrektur durch Lehrpersonal: Die Punktevergabe
+> ist bisher nicht gegen echte Dozent:innen-Gutachten kalibriert (Zielwert:
+> durchschnittliche Abweichung ≤ 2 Punkte — der Nachweis dafür steht noch aus,
+> siehe `docs/24-kalibrierungspaket.md`). Dein Text wird dafür nur mit deiner
+> ausdrücklichen, jederzeit widerrufbaren Zustimmung zur Auswertung an einen
+> externen Anbieter übertragen; ohne Zustimmung bekommst du weiterhin nur den
+> heuristischen Struktur-Check.
 >
 > **Wie viele Karten gibt es wirklich?**
 > Zum Start 180 geprüfte Karten über drei Rechtsgebiete. Wir zeigen die
@@ -159,6 +190,44 @@ was die AGB nicht deckt:
 > Impressum · AGB · Datenschutzerklärung · Widerrufsbelehrung ·
 > Cookie-Einstellungen · Kontakt: `[Support-E-Mail, sobald eingerichtet —
 > siehe docs/18 Tagesplan 25.09.]`
+
+### 2.3 Austauschfassung: falls die KI-Korrektur zum Start aktiviert wird
+
+Hintergrund: `docs/18-release-2-wochen.md` Abschnitt 2.1 hält die
+KI-Klausurkorrektur bedingt in v1.0 offen — sie aktiviert sich, wenn der AVV
+mit dem LLM-Anbieter vor dem Code-Freeze (28.09.) unterschrieben ist. Der
+Stichtagsentscheid fällt auf [SUB-135](/SUB/issues/SUB-135), spätestens
+**So 27.09., 18:00**. Bis dahin gilt ausschließlich **Fassung A** (die
+Standardtexte oben in Abschnitt 2.2, unverändert). Diese Auswahlregel gilt
+für **alle** Fassung-A/B-Stellen in diesem Dokument — nicht nur die FAQ.
+
+**Was zu tun ist, wenn SUB-135 die Aktivierung bestätigt (nicht vorher):**
+
+1. In Abschnitt 2.2, FAQ, Frage „Ist das eine KI, die meine Klausur
+   korrigiert?": Fassung A durch Fassung B ersetzen.
+2. In Abschnitt 2.2, „3. Was du heute bekommst": den mit *Zugabe-Absatz*
+   markierten Absatz zusätzlich zum bestehenden Struktur-Check-Absatz
+   veröffentlichen (er ergänzt, ersetzt nichts).
+3. Alle anderen Texte in diesem Dokument (Preisseite, Kanaltexte) bleiben
+   unverändert — sie erwähnen die KI-Korrektur nicht und werden durch die
+   Aktivierung nicht falsch.
+4. Vor dem Ziehen prüfen, ob die Selbstbedienungs-Widerrufsfunktion für die
+   Einwilligung live ist (`backend/app/api/v1/consent.py`, SUB-133) — Fassung
+   B behauptet „jederzeit widerrufbar" und darf nur online gehen, wenn das
+   stimmt (gleiche Regel wie beim Kündigungsabsatz, Abschnitt 1 Punkt 4).
+5. **Nicht Teil dieser Textlieferung, aber zwingend vor Veröffentlichung von
+   Fassung B nachzuziehen:** `docs/legal/02-agb.md` Abschnitt 2.1 schließt
+   ein Sprachmodell für v1.0 explizit aus und die Datenschutzerklärung nennt
+   noch keine Auftragsverarbeitung für die Korrektur — beide Rechtstexte
+   müssen vor Fassung B live angepasst sein (Zuständigkeit: Rechtstexte-Gate
+   G4, nicht Marketing-Planner).
+
+**Was Fassung B bewusst nicht tut:** Sie bewirbt die Korrektur nicht als
+geprüftes, verlässliches Bewertungsinstrument — der Kalibrierungsnachweis
+(MAE ≤ 2 Punkte gegen 30 Dozentengutachten, `docs/24-kalibrierungspaket.md`)
+steht zum Stichtag noch aus. Formulierungen wie „präzise", „zuverlässig" oder
+ein direkter Vergleich zu einer menschlichen Korrektur gehören nicht in
+Fassung B, auch nicht in spätere Überarbeitungen dieses Absatzes.
 
 ---
 
@@ -328,3 +397,9 @@ Software-Planner übergeben — siehe Aufgabenkommentar zu SUB-88.
   `docs/legal/02-agb.md`
 - Rechtsträger-Platzhalter: `docs/legal/01-impressum.md`
 - Bezahlstrecke, Notausgang `paywall_enabled`: `docs/20-release-g2-bezahlstrecke.md`
+- Stichtagsentscheid, AVV-Gate, Aktivierungsregel für die KI-Korrektur (Fassung
+  B, Abschnitt 2.3): `docs/18-release-2-wochen.md` Abschnitt 2.1,
+  [SUB-135](/SUB/issues/SUB-135)
+- Kalibrierungsstand (MAE-Nachweis noch offen): `docs/24-kalibrierungspaket.md`
+- Einwilligungs-/Widerrufsmechanismus für die KI-Korrektur:
+  `backend/app/api/v1/consent.py` (SUB-133)
