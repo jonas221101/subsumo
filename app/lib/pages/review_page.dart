@@ -90,24 +90,35 @@ class _ReviewPageState extends State<ReviewPage> {
                         card['front'] as String? ?? '',
                         style: Theme.of(context).textTheme.titleLarge,
                       ),
-                      if (_revealed) ...[
-                        const Divider(height: 40),
-                        Text(card['back'] as String? ?? ''),
-                        if (norms.isNotEmpty) ...[
-                          const SizedBox(height: Spacing.xl),
-                          Wrap(
-                            spacing: Spacing.sm,
-                            children: [
-                              for (final norm in norms)
-                                SubsumoChip.action(
-                                  label: norm,
-                                  // M2: oeffnet den Norm-Explorer.
-                                  onPressed: () {},
-                                ),
-                            ],
-                          ),
-                        ],
-                      ],
+                      AnimatedSwitcher(
+                        duration: Motion.normal,
+                        switchInCurve: Motion.curve,
+                        switchOutCurve: Motion.curve,
+                        child: _revealed
+                            ? Column(
+                                key: const ValueKey('answer'),
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  const Divider(height: 40),
+                                  Text(card['back'] as String? ?? ''),
+                                  if (norms.isNotEmpty) ...[
+                                    const SizedBox(height: Spacing.xl),
+                                    Wrap(
+                                      spacing: Spacing.sm,
+                                      children: [
+                                        for (final norm in norms)
+                                          SubsumoChip.action(
+                                            label: norm,
+                                            // M2: oeffnet den Norm-Explorer.
+                                            onPressed: () {},
+                                          ),
+                                      ],
+                                    ),
+                                  ],
+                                ],
+                              )
+                            : const SizedBox.shrink(key: ValueKey('hidden')),
+                      ),
                     ],
                   ),
                 ),
