@@ -170,7 +170,7 @@ Komponente direkt braucht, die hier fehlt, verwendet weiter
 | `SubsumoButton.primary/.secondary/.tertiary` | Genau eine `primary`-Handlung pro Screen (das Wichtigste); `secondary` fuer gleichwertige Alternativen ("Erneut versuchen"); `tertiary` fuer niedrigste Prioritaet (Link-artige Aktionen) | Mehr als eine `primary` pro Screen - das ist ein Zeichen, dass die Handlungshierarchie unklar ist |
 | `SubsumoTextField` | Formulareingabe, einzeilig oder expandierend (Login, Gutachten-Editor) | Suchfelder mit Sofort-Feedback pro Tastendruck (eigener Bedarf, kein Formularfeld) |
 | `SubsumoProgressMeter` | Jede Fortschritts-/Mastery-Anzeige: Gesamtcoverage, Rechtsgebiet, Struktur-Score. Fuellfarbe ist immer `primary`, nie wertabhaengig | Ladeindikatoren ohne bekannten Zielwert (dafuer `CircularProgressIndicator`) |
-| `SubsumoChip` (`.filter` / `.action` / Basis) | Kartentyp, Rechtsgebiets-Filter, Norm-Verweis, Status ("offline", "aktualisiert") | Mehrfachauswahl mit komplexer Logik (eigener Zustand noetig, Chip bleibt nur die Darstellung) |
+| `SubsumoChip` (`.filter` / `.action` / Basis) | Kartentyp, Rechtsgebiets-Filter, Norm-Verweis, Status ("offline" - seit SUB-161 app-weit im `AppBar` von `HomeShell`, siehe `main.dart` -, "aktualisiert") | Mehrfachauswahl mit komplexer Logik (eigener Zustand noetig, Chip bleibt nur die Darstellung) |
 | `SubsumoFeedbackBlock` | Punktuelle Rueckmeldung: Struktur-Finding im Gutachten, Formularfehler, Leerzustand-Hinweis. Farbe ist immer nur ein kleines Icon, nie eine Flaechenfarbe | Dauerzustaende wie Lernfortschritt - dafuer `SubsumoProgressMeter` |
 
 Jede Komponente traegt Screenreader-Semantik direkt (siehe Abschnitt 4) -
@@ -311,3 +311,13 @@ Leitgrundsatz erzwungen war.
   Wert.
 - Figma o. ae. bewusst nicht erstellt (Vorgabe des Tickets) - das System
   lebt ausschliesslich im Code unter `app/lib/design/`.
+- **SUB-161:** Der app-weite "offline"-Hinweis nutzt bewusst die bereits in
+  `state.dart` vorhandenen Signale (`dueCardsFromCache`, `outbox`) statt
+  eines neuen Connectivity-Plugins oder einer eigenen Netz-Pruefschleife -
+  beides waere Zustandslogik und damit Aufgabe des Frontend-Developers, nicht
+  des Design-Systems. Das macht die Anzeige *reaktiv* (sie erscheint erst
+  nach einem tatsaechlich fehlgeschlagenen Serverkontakt), nicht *proaktiv*
+  (kein sofortiges Aufleuchten beim App-Start im Flugmodus ohne vorherigen
+  Ladeversuch) - im Zweifel lieber ehrlich verzoegert als optimistisch
+  falsch, aber fachlich als bekannte Einschraenkung dokumentiert statt still
+  in Kauf genommen.
