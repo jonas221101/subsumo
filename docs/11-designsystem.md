@@ -103,7 +103,7 @@ Rollen (Text, Flaechen, Primaerfarbe, Fehler) werden danach per
 | `primaryContainer` | `brand100` `#DCE4EC` | `brand900` `#12233B` |
 | `surface` / Seitenhintergrund | `surface0Light` `#FFFFFF` | `surface0Dark` `#12151A` |
 | `onSurface` / Fliesstext | `ink900` `#14181D` | `ink900Dark` `#EDEFF2` |
-| `surfaceContainerHighest` / Kartenflaeche | `surface1Light` `#F5F6F8` | `surface1Dark` `#1B1F26` |
+| `surfaceContainerHighest` / Kartenflaeche | `surface1Light` `#F0F1F4` | `surface1Dark` `#20242C` |
 | `onSurfaceVariant` / sekundaerer Text | `ink700` `#3C434B` | `ink700Dark` `#C3C8CF` |
 | `outline` / Rahmen, Trennlinien | `ink300` `#B7BCC2` | `ink500Dark` `#8B929B` |
 | `error` / negatives Feedback | `feedbackNegative` `#A23B3B` | `feedbackNegativeDark` `#D98787` |
@@ -202,7 +202,7 @@ Fliesstext und UI-Text: **4.5:1** (WCAG 2.1 AA).
 |---|---|---|
 | `ink900` auf `surface0Light` (Fliesstext) | 17.82:1 | ✅ |
 | `ink700` auf `surface0Light` (sekundaerer Text) | 10.02:1 | ✅ |
-| `ink900` auf `surface1Light` (Text auf Karte) | 16.48:1 | ✅ |
+| `ink900` auf `surface1Light` (Text auf Karte) | 15.78:1 | ✅ |
 | `brand700` auf `surface0Light` (Link/Icon) | 11.48:1 | ✅ |
 | Weiss auf `brand700` (Primaerbutton, Light) | 11.48:1 | ✅ |
 | `brand700` auf `brand100` (Text auf Container) | 8.94:1 | ✅ |
@@ -211,7 +211,7 @@ Fliesstext und UI-Text: **4.5:1** (WCAG 2.1 AA).
 | `feedbackPositive` auf `surface0Light` | 5.00:1 | ✅ |
 | `ink900Dark` auf `surface0Dark` (Fliesstext, Dark) | 15.88:1 | ✅ |
 | `ink700Dark` auf `surface0Dark` (sekundaer, Dark) | 10.87:1 | ✅ |
-| `ink900Dark` auf `surface1Dark` (Text auf Karte, Dark) | 14.35:1 | ✅ |
+| `ink900Dark` auf `surface1Dark` (Text auf Karte, Dark) | 13.50:1 | ✅ |
 | `brand300` auf `surface0Dark` (Link/Icon, Dark) | 6.04:1 | ✅ |
 | `surface0Dark` auf `brand300` (Primaerbutton, Dark) | 6.04:1 | ✅ |
 | `feedbackNegativeDark` auf `surface0Dark` | 6.77:1 | ✅ |
@@ -230,6 +230,16 @@ langen Lesestrecken.
 `ink100`/`outlineVariant` als Trennlinie) unterliegen der niedrigeren
 3:1-Anforderung fuer nicht-textuelle UI-Elemente (WCAG 1.4.11) und sind
 hier nicht tabelliert, weil sie nie Text tragen.
+
+**SUB-157:** `surface1`/`surface2` wurden gegenueber `surface0` etwas
+staerker abgesetzt (Light: `#F5F6F8`→`#F0F1F4` bzw. `#EDEFF2`→`#E4E7EB`;
+Dark: `#1B1F26`→`#20242C` bzw. `#242933`→`#2D3340`), damit Karten allein
+ueber die Flaeche sichtbarer wirken, ohne `elevation.dart` zu aendern. Der
+Tonabstand zu `surface0` (Kontrastverhaeltnis der Flaechen zueinander) ist
+damit um ca. das 1.6- bis 1.75-fache gewachsen (z. B. Light `surface0`↔`surface1`
+1.08:1 → 1.13:1, Dark `surface0`↔`surface2` 1.25:1 → 1.45:1) - deutlich
+unter der intendierten Obergrenze einer Verdopplung. Alle Fliesstext-Werte
+in der Tabelle oben bleiben komfortabel ueber 4.5:1.
 
 ## 6. Plattformregeln
 

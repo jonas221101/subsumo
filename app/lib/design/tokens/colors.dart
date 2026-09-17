@@ -24,15 +24,19 @@ class SubsumoPalette {
   static const ink300 = Color(0xFFB7BCC2);
   static const ink100 = Color(0xFFE7E9EC);
 
-  // Flaechen Light.
+  // Flaechen Light. surface1/2 bewusst etwas staerker von surface0
+  // abgesetzt als in der ersten Fassung (SUB-157) - Karten sollen ohne
+  // staerkere Schatten (elevation.dart bleibt unveraendert) allein durch
+  // die Flaechenfarbe sichtbar bleiben. Kontraste in docs/11-designsystem.md
+  // Abschnitt 5 nachgerechnet.
   static const surface0Light = Color(0xFFFFFFFF);
-  static const surface1Light = Color(0xFFF5F6F8);
-  static const surface2Light = Color(0xFFEDEFF2);
+  static const surface1Light = Color(0xFFF0F1F4);
+  static const surface2Light = Color(0xFFE4E7EB);
 
-  // Flaechen Dark.
+  // Flaechen Dark, gleiche Begruendung wie Light.
   static const surface0Dark = Color(0xFF12151A);
-  static const surface1Dark = Color(0xFF1B1F26);
-  static const surface2Dark = Color(0xFF242933);
+  static const surface1Dark = Color(0xFF20242C);
+  static const surface2Dark = Color(0xFF2D3340);
 
   // Neutral/Text, Dark-Mode-Werte.
   static const ink900Dark = Color(0xFFEDEFF2);
