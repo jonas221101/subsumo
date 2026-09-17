@@ -78,7 +78,7 @@ nicht mehr allein tut.
 `docs/13-lernarchitektur.md`, Abschnitt 1.1, stellt fest, dass die im
 Vision-Dokument behauptete Verzahnung im Code heute **nicht existiert**:
 `Card`, `Schema` und `Case` teilen sich nur ein gemeinsames `topic_slug`
-(`backend/app/models.py:91,147,168`), es gibt keine Fremdschlüsselkette und
+(`backend/app/models.py:123,179,200`), es gibt keine Fremdschlüsselkette und
 keinen Mechanismus, der aus einem konkreten Fehler in einem Fall eine
 konkrete Wiederholungskarte erzeugt. Die These aus der Produktvision war zum
 Zeitpunkt ihrer Formulierung ein Zielbild, keine Beschreibung des Codes.
@@ -138,9 +138,9 @@ keinen Lerneffekt, und die These wäre trotz Implementierung nicht belegt.
 
 Bereits implementiert: `evaluator.py` liefert `checkpoints` je Prüfpunkt
 (`PruefpunktResult.hit`, `docs/13-lernarchitektur.md`, Abschnitt 1.3), und
-`app/lib/pages/gutachten_page.dart:373-391` rendert jeden Checkpoint mit
+`app/lib/pages/gutachten_page.dart:437-462` rendert jeden Checkpoint mit
 Rückführung auf den zugehörigen Prüfpunkt — der Kommentar im Code
-(`gutachten_page.dart:389`) benennt die These wörtlich: „Jeder Punktabzug ist
+(`gutachten_page.dart:460`) benennt die These wörtlich: „Jeder Punktabzug ist
 auf einen Pruefpunkt zurueckfuehrbar". Das gilt bereits für die heutige
 Heuristik (gedeckelt auf 11 von 18 Punkten,
 `evaluator.py::HEURISTIK_MAX_PUNKTE`) und unverändert nach Aktivierung der
@@ -277,6 +277,6 @@ vollständig steht, nicht mit v1.0.
 - `docs/03-roadmap.md`, M4, Risikotabelle (Aufwand Klausur-Simulator)
 - `backend/app/services/gutachten.py`, `backend/app/services/evaluator.py`,
   `backend/app/models.py`
-- `app/lib/pages/gutachten_page.dart:373-391`
+- `app/lib/pages/gutachten_page.dart:437-462`
 - `docs/21-landing-preisseite-launchtext.md` (Sichtbarkeit Struktur-Check in
   der Außendarstellung)
