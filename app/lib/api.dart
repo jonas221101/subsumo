@@ -81,6 +81,20 @@ class ApiClient {
             headers: _headers, body: jsonEncode(body)),
       );
 
+  Future<dynamic> _delete(String path) async =>
+      _decode(await _client.delete(_uri(path), headers: _headers));
+
+  // --- Oeffentlich (ohne Login) ----------------------------------------------
+
+  /// Feature-Flags fuer die oeffentlichen Seiten vor Login (SUB-107): u.a.
+  /// `paywall_enabled` fuer die Variante-A/B-Umschaltung auf `/preise`
+  /// (SUB-110) und `ai_correction_enabled` (SUB-133/SUB-134) - ob die
+  /// KI-Korrektur ueberhaupt aktiv ist, unabhaengig von der Einwilligung des
+  /// einzelnen Nutzers. Unauthentifiziert erreichbar - der Aufruf traegt nie
+  /// einen Bearer-Token, selbst wenn der Client anderswo eingeloggt ist.
+  Future<Map<String, dynamic>> publicConfig() async =>
+      (await _get('/v1/public/config')) as Map<String, dynamic>;
+
   // --- Auth ----------------------------------------------------------------
 
   Future<String> register(String email, String password) async {
@@ -210,17 +224,23 @@ class ApiClient {
 
   // --- Oeffentlich (ohne Login) ---------------------------------------------
 
-  /// Feature-Flags fuer die oeffentlichen Seiten vor Login (SUB-107), allen
-  /// voran `paywall_enabled` fuer die Variante-A/B-Umschaltung auf `/preise`
-  /// (SUB-110). Unauthentifiziert erreichbar - der Aufruf traegt nie einen
-  /// Bearer-Token, selbst wenn der Client anderswo eingeloggt ist.
-  Future<Map<String, dynamic>> publicConfig() async =>
-      (await _get('/v1/public/config')) as Map<String, dynamic>;
-
   /// Themen je Rechtsgebiet fuer die Landing-Page-Teaser (SUB-109 Abschnitt
   /// 6): `GET /v1/content/topics`, oeffentlich ohne Login erreichbar.
   Future<List<Map<String, dynamic>>> publicTopics() async {
     final data = await _get('/v1/content/topics');
     return (data as List).cast<Map<String, dynamic>>();
   }
+
+  // --- KI-Korrektur-Einwilligung (SUB-133/SUB-134) ---------------------------
+
+  /// Erteilt die Einwilligung zur KI-gestuetzten Inhaltsbewertung eines
+  /// Gutachtens (Art. 6 Abs. 1 lit. a DSGVO). Wirkt ab der naechsten Abgabe.
+  Future<Map<String, dynamic>> grantAiConsent() async =>
+      (await _post('/v1/me/ai-consent', const {})) as Map<String, dynamic>;
+
+  /// Widerruft die Einwilligung (Art. 7 Abs. 3 DSGVO) - jederzeit moeglich,
+  /// ohne Angabe von Gruenden. Ab der naechsten Abgabe laeuft wieder
+  /// ausschliesslich der heuristische Evaluator.
+  Future<Map<String, dynamic>> revokeAiConsent() async =>
+      (await _delete('/v1/me/ai-consent')) as Map<String, dynamic>;
 }

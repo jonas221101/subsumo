@@ -390,4 +390,109 @@ void main() {
       expect(find.text('Bitte Passwort eingeben'), findsOneWidget);
     });
   });
+
+  group('KI-Korrektur-Widerruf (SUB-133/SUB-134)', () {
+    testWidgets('bleibt verborgen, solange die KI-Korrektur nicht aktiv ist', (tester) async {
+      final client = MockClient((request) async {
+        if (request.url.path == '/v1/public/config') {
+          return _json({'paywall_enabled': false, 'ai_correction_enabled': false}, 200);
+        }
+        return _json({}, 404);
+      });
+      await _pumpAccountPage(
+        tester,
+        user: {
+          'email': 'a@example.com',
+          'pro_active': false,
+          'cancel_at_period_end': false,
+          'ai_review_consent_at': '2026-09-17T12:00:00Z',
+        },
+        client: client,
+      );
+
+      expect(find.text('KI-Korrektur'), findsNothing);
+    });
+
+    testWidgets('zeigt bei erteilter Einwilligung den Widerrufen-Button', (tester) async {
+      final client = MockClient((request) async {
+        if (request.url.path == '/v1/public/config') {
+          return _json({'paywall_enabled': false, 'ai_correction_enabled': true}, 200);
+        }
+        return _json({}, 404);
+      });
+      await _pumpAccountPage(
+        tester,
+        user: {
+          'email': 'a@example.com',
+          'pro_active': false,
+          'cancel_at_period_end': false,
+          'ai_review_consent_at': '2026-09-17T12:00:00Z',
+        },
+        client: client,
+      );
+
+      expect(find.text('KI-Korrektur'), findsOneWidget);
+      expect(find.widgetWithText(SubsumoButton, 'Zustimmung widerrufen'), findsOneWidget);
+    });
+
+    testWidgets('ohne Einwilligung zeigt die Karte einen Hinweis statt eines Buttons',
+        (tester) async {
+      final client = MockClient((request) async {
+        if (request.url.path == '/v1/public/config') {
+          return _json({'paywall_enabled': false, 'ai_correction_enabled': true}, 200);
+        }
+        return _json({}, 404);
+      });
+      await _pumpAccountPage(
+        tester,
+        user: {'email': 'a@example.com', 'pro_active': false, 'cancel_at_period_end': false},
+        client: client,
+      );
+
+      expect(find.text('KI-Korrektur'), findsOneWidget);
+      expect(find.widgetWithText(SubsumoButton, 'Zustimmung widerrufen'), findsNothing);
+      expect(find.textContaining('Noch nicht zugestimmt'), findsOneWidget);
+    });
+
+    testWidgets('Widerrufen ruft DELETE /me/ai-consent auf und aktualisiert den Zustand',
+        (tester) async {
+      final client = MockClient((request) async {
+        if (request.url.path == '/v1/public/config') {
+          return _json({'paywall_enabled': false, 'ai_correction_enabled': true}, 200);
+        }
+        if (request.url.path == '/v1/me/ai-consent') {
+          expect(request.method, 'DELETE');
+          return _json({'ai_review_consent_at': null}, 200);
+        }
+        if (request.url.path == '/v1/auth/me') {
+          return _json({
+            'email': 'a@example.com',
+            'pro_active': false,
+            'cancel_at_period_end': false,
+            'ai_review_consent_at': null,
+          }, 200);
+        }
+        return _json({}, 404);
+      });
+      final state = await _pumpAccountPage(
+        tester,
+        user: {
+          'email': 'a@example.com',
+          'pro_active': false,
+          'cancel_at_period_end': false,
+          'ai_review_consent_at': '2026-09-17T12:00:00Z',
+        },
+        client: client,
+      );
+
+      final revokeButton = find.widgetWithText(SubsumoButton, 'Zustimmung widerrufen');
+      await tester.ensureVisible(revokeButton);
+      await tester.pumpAndSettle();
+      await tester.tap(revokeButton);
+      await tester.pumpAndSettle();
+
+      expect(state.aiConsentGiven, isFalse);
+      expect(find.textContaining('Noch nicht zugestimmt'), findsOneWidget);
+    });
+  });
 }

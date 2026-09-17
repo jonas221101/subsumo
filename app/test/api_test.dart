@@ -169,4 +169,48 @@ void main() {
       );
     });
   });
+
+  group('ApiClient.publicConfig (SUB-107/SUB-133)', () {
+    test('liefert das Feature-Flag ohne Auth-Header', () async {
+      final client = MockClient((request) async {
+        expect(request.method, 'GET');
+        expect(request.url.path, '/v1/public/config');
+        expect(request.headers.containsKey('Authorization'), isFalse);
+        return _json({'paywall_enabled': false, 'ai_correction_enabled': true}, 200);
+      });
+      final api = ApiClient(client: client);
+
+      final result = await api.publicConfig();
+
+      expect(result['ai_correction_enabled'], isTrue);
+    });
+  });
+
+  group('ApiClient.grantAiConsent/revokeAiConsent (SUB-133/SUB-134)', () {
+    test('grantAiConsent postet auf /v1/me/ai-consent und liefert den Zeitstempel', () async {
+      final client = MockClient((request) async {
+        expect(request.method, 'POST');
+        expect(request.url.path, '/v1/me/ai-consent');
+        return _json({'ai_review_consent_at': '2026-09-17T12:00:00Z'}, 200);
+      });
+      final api = ApiClient(client: client)..setToken('t');
+
+      final result = await api.grantAiConsent();
+
+      expect(result['ai_review_consent_at'], '2026-09-17T12:00:00Z');
+    });
+
+    test('revokeAiConsent sendet DELETE und liefert null zurueck', () async {
+      final client = MockClient((request) async {
+        expect(request.method, 'DELETE');
+        expect(request.url.path, '/v1/me/ai-consent');
+        return _json({'ai_review_consent_at': null}, 200);
+      });
+      final api = ApiClient(client: client)..setToken('t');
+
+      final result = await api.revokeAiConsent();
+
+      expect(result['ai_review_consent_at'], isNull);
+    });
+  });
 }
