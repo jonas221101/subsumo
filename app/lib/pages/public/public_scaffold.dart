@@ -3,11 +3,14 @@ import 'package:go_router/go_router.dart';
 
 import '../../design/design.dart';
 import '../../theme.dart';
+import 'public_footer.dart';
 
 /// Gemeinsames Geruest fuer oeffentliche Seiten (Landing, Preise, Rechtstexte,
 /// siehe SUB-108). Zeigt eine schlichte Kopfzeile mit Login-CTA zur
 /// eingeloggten App unter `/app` - der bisherige Login-Fluss bleibt dadurch
-/// unveraendert erreichbar, siehe [HomeShell] in main.dart.
+/// unveraendert erreichbar, siehe [HomeShell] in main.dart. Der [PublicFooter]
+/// verlinkt hier zentral alle Rechtstexte (SUB-111), damit Landing- und
+/// Preisseite ihn automatisch mitbekommen.
 class PublicScaffold extends StatelessWidget {
   const PublicScaffold({required this.child, super.key});
 
@@ -31,7 +34,13 @@ class PublicScaffold extends StatelessWidget {
           maxWidth: 720,
           child: Padding(
             padding: const EdgeInsets.all(Spacing.xl),
-            child: child,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                child,
+                const PublicFooter(),
+              ],
+            ),
           ),
         ),
       ),

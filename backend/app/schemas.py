@@ -222,6 +222,12 @@ class AccountDeleteIn(BaseModel):
     confirm: bool = False
 
 
+class AiConsentOut(BaseModel):
+    """Antwort auf Erteilung/Widerruf der Einwilligung zur KI-Korrektur (SUB-133)."""
+
+    ai_review_consent_at: datetime | None = None
+
+
 class CheckoutSessionIn(BaseModel):
     plan: str
 
@@ -232,9 +238,3 @@ class CheckoutSessionOut(BaseModel):
 
 class CancelSubscriptionOut(BaseModel):
     mode: str  # "period_end" | "immediate_refund"
-
-
-class AiConsentOut(BaseModel):
-    """Antwort auf Erteilung/Widerruf der Einwilligung zur KI-Korrektur (SUB-133)."""
-
-    ai_review_consent_at: datetime | None = None

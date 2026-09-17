@@ -86,9 +86,12 @@ class ApiClient {
 
   // --- Oeffentlich (ohne Login) ----------------------------------------------
 
-  /// Feature-Flags, die der Client ohne Login braucht - hier vor allem
-  /// `ai_correction_enabled` (SUB-133/SUB-134): ob die KI-Korrektur ueberhaupt
-  /// aktiv ist, unabhaengig von der Einwilligung des einzelnen Nutzers.
+  /// Feature-Flags fuer die oeffentlichen Seiten vor Login (SUB-107): u.a.
+  /// `paywall_enabled` fuer die Variante-A/B-Umschaltung auf `/preise`
+  /// (SUB-110) und `ai_correction_enabled` (SUB-133/SUB-134) - ob die
+  /// KI-Korrektur ueberhaupt aktiv ist, unabhaengig von der Einwilligung des
+  /// einzelnen Nutzers. Unauthentifiziert erreichbar - der Aufruf traegt nie
+  /// einen Bearer-Token, selbst wenn der Client anderswo eingeloggt ist.
   Future<Map<String, dynamic>> publicConfig() async =>
       (await _get('/v1/public/config')) as Map<String, dynamic>;
 
@@ -217,6 +220,15 @@ class ApiClient {
       'password': password,
       'confirm': true,
     });
+  }
+
+  // --- Oeffentlich (ohne Login) ---------------------------------------------
+
+  /// Themen je Rechtsgebiet fuer die Landing-Page-Teaser (SUB-109 Abschnitt
+  /// 6): `GET /v1/content/topics`, oeffentlich ohne Login erreichbar.
+  Future<List<Map<String, dynamic>>> publicTopics() async {
+    final data = await _get('/v1/content/topics');
+    return (data as List).cast<Map<String, dynamic>>();
   }
 
   // --- KI-Korrektur-Einwilligung (SUB-133/SUB-134) ---------------------------

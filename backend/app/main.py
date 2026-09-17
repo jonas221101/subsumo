@@ -66,6 +66,7 @@ def create_app() -> FastAPI:
         learn.router,
         gutachten.router,
         plan.router,
+        public.router,
         billing.router,
         public.router,
     ):

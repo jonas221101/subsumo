@@ -36,10 +36,27 @@ oder Zahlungs-Pflichten abbilden.
 > Rechtsgebiete lernt, mit funktionierender Registrierung, Bezahlung und
 > vollständigen Rechtstexten.**
 
-Nicht mehr enthalten: die KI-Klausurkorrektur als bewertendes Feature und
-alles, was auf ihr aufbaut. Das folgt direkt der Nutzervorgabe („Zugang zu
-Korrigierenden kann später als Feature kommen") — und ist auch ohne diese
-Vorgabe der richtige Schnitt, aus drei Gründen:
+Die KI-Klausurkorrektur ist **bedingt in v1.0** — sie wird gebaut und ist zum
+Freeze aktivierbar, aber nur wenn der AVV rechtzeitig unterschrieben ist. Die
+Regel dafür steht in Abschnitt 2.1 und ist so gebaut, dass sie den Termin
+29.09. unter keinen Umständen gefährdet.
+
+**Nutzerentscheidung vom 16.09.2026: Das Feature bleibt.** Auf die
+Klarstellung unten hat der Nutzer auf [SUB-39](/SUB/issues/SUB-39) geantwortet:
+*„Ich würde sie gerne behalten."* Damit ist die Rückkehr der KI-Korrektur keine
+Option mehr, die dieses Dokument offenhält, sondern eine gesetzte
+Produktentscheidung — Option D aus
+[`docs/23-llm-provider-avv.md`](23-llm-provider-avv.md) („kein LLM, Status quo
+dauerhaft") ist vom Tisch.
+
+**Zur Herkunft der Zurückstellung — Klarstellung (16.09.2026).** Die
+Nutzervorgabe („Zugang zu Korrigierenden kann später als Feature kommen")
+betrifft wörtlich den Zugang zu **menschlichen** Korrigierenden; der steht in
+3.2 als v1.2+. Die **KI**-Korrektur zusätzlich herauszunehmen ging darüber
+hinaus und war eine Planungsentscheidung dieses Dokuments, keine
+Nutzeranweisung. Frühere Fassungen dieses Absatzes haben beides vermischt. Die
+Zurückstellung stützt sich auf drei eigene Gründe; alle drei sprechen gegen
+eine *sofortige Aktivierung*, keiner gegen das Feature:
 
 1. **Die Korrektur ist unkalibriert.** `docs/13-lernarchitektur.md` und der
    Kalibrierungs-Harness aus [SUB-69](/SUB/issues/SUB-69) setzen MAE ≤ 2 Punkte
@@ -55,7 +72,8 @@ Vorgabe der richtige Schnitt, aus drei Gründen:
    `backend/app/services/evaluator.py` fällt ohne gesetzten `llm_provider`
    automatisch auf den heuristischen Evaluator zurück. **Konsequenz: v1.0 läuft
    mit `llm_provider=none`.** Der AVV wird damit von einer Release-Blockade zu
-   einer Vorbedingung für v1.1.
+   einer Vorbedingung für die Aktivierung — er bleibt das einzige harte Gate
+   und entscheidet, wie früh die Aktivierung überhaupt terminierbar ist.
 3. **Sie ist der größte variable Kostenblock.** Siehe
    `docs/19-kosten-preis-budget.md` Abschnitt 5 — ohne sie sind die
    Betriebskosten praktisch fix und der kostendeckende Preis niedrig
@@ -64,6 +82,67 @@ Vorgabe der richtige Schnitt, aus drei Gründen:
 Das Struktur- und Stilfeedback zum Gutachtenstil **bleibt drin** — es ist
 heuristisch, sofort, kostenlos und wird als das kommuniziert, was es ist
 („Struktur-Check", keine Note).
+
+### 2.1 KI-Korrektur: bedingt in v1.0 (Nutzerentscheidung 16.09.2026)
+
+Auf die Terminfrage hat der Nutzer geantwortet: **„Noch in v1.0, falls der AVV
+vor dem 28.09. steht"** — und: **den AVV schließt er selbst ab.** Damit ist die
+Zurückstellung aus Abschnitt 2 keine Entscheidung mehr, sondern ein
+Rückfallpfad.
+
+Die drei Gründe oben bleiben inhaltlich richtig, aber sie wiegen unterschiedlich
+schwer, und nur einer davon ist ein echtes Gate:
+
+| Grund | Bindet er die v1.0-Aktivierung? |
+|---|---|
+| **AVV fehlt** | **Ja, hart.** Ohne ihn verlässt kein Nutzertext das System — jede LLM-Variante ist unzulässig, auch eine ohne Punkte |
+| Kalibrierung fehlt | Nur die **bewertende** Variante mit Punkten. Kommentierendes Feedback ohne Note wäre auch unkalibriert lieferbar |
+| Kostenblock | Nein — begrenzbar, siehe Kostenbremse in [SUB-135](/SUB/issues/SUB-135). Die Spanne 0,09–0,30 € wird dort zum ersten Mal **gemessen** statt geschätzt |
+
+**Die Entscheidungsregel.** Sie ist bewusst so gebaut, dass Nichtstun zum
+sicheren Ergebnis führt:
+
+> Am **So 27.09., 18:00 Uhr** wird geprüft: AVV unterschrieben **und**
+> [SUB-133](/SUB/issues/SUB-133) + [SUB-134](/SUB/issues/SUB-134) gemergt
+> **und** Smoke-Test grün? Wenn ja, wird `llm_provider` umgestellt und das
+> Feature geht mit v1.0 live. Wenn irgendetwas davon offen ist, bleibt
+> `llm_provider=none` und das Feature fällt auf v1.1.
+>
+> **Der Releasetermin 29.09. steht in keinem der beiden Fälle zur Disposition.**
+
+Der Ziel-Stichtag für die Unterschrift ist **Fr 25.09.**, die harte Grenze
+So 27.09. 18:00. Der Abstand ist kein Puffer aus Vorsicht: Zwischen
+Unterschrift und Freeze müssen der Key in die Secret-Verwaltung, ein
+Smoke-Test gegen den echten Anbieter laufen und die gemessenen Kosten in die
+Kalkulation zurückfließen.
+
+**Was daraus folgt, und warum es sofort startet.** Die Aktivierung selbst ist
+eine Konfigurationszeile (`evaluator.py:341-344` wählt den `LLMEvaluator` nur
+bei gesetztem Provider *und* Key). Alles andere ist providerunabhängig und
+hängt weder am AVV noch an der Anbieterwahl — es wird deshalb **jetzt** gebaut,
+nicht nach der Unterschrift:
+
+| Aufgabe | Wer | Bis | Hängt am AVV? |
+|---|---|---|---|
+| [SUB-129](/SUB/issues/SUB-129) Provider-Wahl + unterschriftsreife Vorlage | Software-Planner | 19.09. | nein |
+| **AVV unterschreiben** | **Nutzer** | **25.09.** (hart: 27.09.) | — ist der AVV |
+| [SUB-133](/SUB/issues/SUB-133) Backend: Einwilligungs-Gate vor LLM-Versand | Backend-Developer | 22.09. | nein |
+| [SUB-134](/SUB/issues/SUB-134) Frontend: Zustimmungsdialog vor erster Abgabe | Frontend-Developer | 24.09. | nein |
+| [SUB-135](/SUB/issues/SUB-135) Aktivierung, Kostenbremse, Stichtagsentscheid | Lead-Developer | 27.09. | ja |
+
+SUB-133 und SUB-134 sind so geschnitten, dass sie im heutigen Zustand
+(`llm_provider=none`) **nichts** am Verhalten ändern. Sie sind damit auch dann
+risikolos mergebar, wenn der AVV nicht zustande kommt — im Rückfall auf v1.1
+ist die Arbeit nicht verloren, sondern vorgezogen.
+
+**Die eine Unbekannte, die den Ausgang bestimmt,** steckt in
+[`docs/23-llm-provider-avv.md`](23-llm-provider-avv.md) Abschnitt 2: ob der
+Self-Serve-Zugang bei Anthropic (Option A) automatisch das volle DPA umfasst
+oder ein Vertriebsgespräch braucht. Reicht Self-Serve, ist v1.0 machbar. Die
+dort empfohlene Option B (EU-Region über Hyperscaler) ist in elf Tagen nicht
+erreichbar — neuer Cloud-Vertrag plus 2–4 PT Integration — und wird deshalb zur
+v1.1-Migration, nicht zum v1.0-Weg. SUB-129 hat den Auftrag, diese Frage zu
+belegen statt zu schätzen.
 
 ---
 
@@ -84,17 +163,30 @@ heuristisch, sofort, kostenlos und wird als das kommuniziert, was es ist
 
 ### 3.2 Raus (mit Rückkehrdatum)
 
-| Gestrichen aus v1.0 | Warum | Kommt in |
+| Nicht aktiv in v1.0 | Warum | Kommt in |
 |---|---|---|
-| KI-Klausurkorrektur mit Punkten | unkalibriert (MAE-Nachweis fehlt), AVV fehlt | v1.1 |
+| KI-Klausurkorrektur mit Punkten | **Feature bleibt und ist bedingt in v1.0** (Nutzerentscheidung 16.09.): heute nur per Konfiguration abgeschaltet (`llm_provider=none`), kein Rückbau | **v1.0, wenn der AVV bis 27.09. steht — sonst automatisch v1.1.** Regel in Abschnitt 2.1 |
 | Zugang zu menschlichen Korrigierenden | ausdrücklich vom Nutzer zurückgestellt | v1.2+ |
-| 5-Stunden-Klausursimulator | hängt funktional an der Korrektur | v1.1 |
+| 5-Stunden-Klausursimulator | hängt funktional an der Korrektur, aber zusätzlich an Oberflächenarbeit, die in 14 Tagen nicht dazukommt | v1.1 — auch dann, wenn die Korrektur es noch in v1.0 schafft |
 | iOS / App Store | Entwicklerkonto-Vorlauf + Review-Zyklus + IAP-Pflicht (30 %/15 %) passen nicht in 14 Tage | v1.1, ca. 3 Wochen nach Release |
 | Microsoft Store | kleinster Nutzenbeitrag je Aufwand | v1.2 |
 | Norm-Explorer (Gesetzesvolltext) | reiner Umfangsposten, kein Blocker | v1.2 |
 | Lerngruppen, Peer-Review | v2-Thema | v2 |
 | 500 Karten / 40 Fälle | Zielmenge bleibt, aber als laufende Produktion nach Release | fortlaufend |
 | Kalibrierung gegen 30 Dozentengutachten | braucht externe Personen und Vorlauf | Start sofort, Ergebnis für v1.1 |
+
+**„Kommt in v1.1" hat seit dem 16.09.2026 Eigentümer** — und seit der
+Nutzerentscheidung vom selben Tag (Abschnitt 2) auch eine Zusage statt einer
+Absichtserklärung. Bis dahin war die
+Rückkehr der KI-Korrektur nur hier im Dokument versprochen und auf dem Board
+nirgends verfolgt. Die beiden Vorbedingungen liegen jetzt als Aufgaben:
+[SUB-129](/SUB/issues/SUB-129) (LLM-Provider-Wahl + AVV) und
+[SUB-130](/SUB/issues/SUB-130) (Kalibrierungspaket für die 30
+Dozentengutachten, inzwischen erledigt: `docs/24-kalibrierungspaket.md`). Von
+beiden ist **nur der AVV ein echtes Gate**: er blockt jede LLM-Variante, auch
+eine ohne Punkte. Die Kalibrierung bindet allein die bewertende Variante.
+Reihenfolge deshalb: AVV zuerst. Seit der Terminentscheidung vom 16.09. ist die
+Rückkehr zusätzlich terminiert statt nur zugesagt — siehe Abschnitt 2.1.
 
 **Was das Streichen der iOS-Spur zusätzlich spart:** Apple erzwingt für
 digitale Abos In-App-Purchase (`docs/06-recht-compliance.md` Abschnitt 4). Mit
@@ -152,6 +244,13 @@ G4 ist das einzige Gate ohne Umgehung: Ein öffentliches Angebot ohne
 Impressum, AGB und Datenschutzerklärung ist abmahnfähig, und ein Backup, das
 nie eingespielt wurde, ist kein Backup.
 
+**Die KI-Korrektur ist bewusst kein sechstes Gate.** Sie hat seit dem 16.09.
+einen Termin (Abschnitt 2.1), aber ein Gate ist etwas, dessen Ausfall den
+Release verschiebt — und genau das soll sie nicht können. Sie ist eine
+**bedingte Zugabe mit Stichtag 27.09. 18:00**: steht der AVV, geht sie mit
+live; steht er nicht, fällt sie lautlos auf v1.1 und niemand am Releasetag
+merkt einen Unterschied. Diese Asymmetrie ist der ganze Zweck der Konstruktion.
+
 ---
 
 ## 6. Tagesplan
@@ -172,6 +271,20 @@ nie eingespielt wurde, ist kein Backup.
 | **Mo 28.09.** | **G4** Code-Freeze, RC | — | Rechtstexte live, Preise im Zahlungskonto | Ankündigung terminiert |
 | **Di 29.09.** | **G5 Release** | — | Bereitschaft | Launch |
 
+### Nebenspur: KI-Korrektur (bedingt, Abschnitt 2.1)
+
+Bewusst als eigene Tabelle geführt, damit sie den Tagesplan oben nicht
+belastet. Keine Zeile hier darf eine Zeile dort verzögern.
+
+| Tag | Wer | Was |
+|---|---|---|
+| **Mi 17.–Fr 19.09.** | Software-Planner | [SUB-129](/SUB/issues/SUB-129): Self-Serve-DPA-Frage belegen, unterschriftsreife Handlungsanweisung |
+| **Fr 19.–Fr 25.09.** | **Nutzer** | AVV prüfen und unterschreiben (Ziel 25.09.) |
+| **Mi 17.–Mo 22.09.** | Backend-Developer | [SUB-133](/SUB/issues/SUB-133): Einwilligungs-Gate, kein Nutzertext ohne Zustimmung |
+| **Di 23.–Do 24.09.** | Frontend-Developer | [SUB-134](/SUB/issues/SUB-134): Zustimmungsdialog, Ablehnen als vollwertiger Pfad |
+| **Do 24.–Sa 26.09.** | Lead-Developer | [SUB-135](/SUB/issues/SUB-135): Kostenbremse, Smoke-Test, Runbook |
+| **So 27.09., 18:00** | Lead-Developer | **Stichtagsentscheid** — aktivieren oder auf v1.1 zurückfallen, dokumentiert auf SUB-135 |
+
 ---
 
 ## 7. Risiken der Zwei-Wochen-Variante
@@ -182,7 +295,9 @@ nie eingespielt wurde, ist kein Backup.
 | 180 Karten wirken gegenüber Jurafuchs (8.000+ Fälle) dünn | Abo nicht verkaufbar | Gründerpreis + offene Kommunikation des Umfangs statt Behauptung von Vollständigkeit (siehe `docs/19-kosten-preis-budget.md` Abschnitt 4) |
 | Kein Nutzer kennt das Produkt am Tag 1 | Release ohne Wirkung | Release ist ein Anfang, kein Kampagnenstart; GTM-Spur [SUB-46](/SUB/issues/SUB-46) läuft nach Release weiter |
 | Erstes Produktivsystem ohne Betriebserfahrung | Ausfall/Datenverlust in Woche 1 | Tägliches Backup **mit geprobtem Restore** (24.09.), Monitoring ab 22.09. |
-| Streichung der Korrektur nimmt die Positionierung weg | Produkt ist austauschbar | Positionierung für v1.0 bewusst bescheiden („ordentliche Lern-App zum Gründerpreis"), Differenzierung kommt mit v1.1 |
+| Abschaltung der Korrektur in v1.0 nimmt die Positionierung weg | Produkt ist austauschbar | Positionierung für v1.0 bewusst bescheiden („ordentliche Lern-App zum Gründerpreis"), Differenzierung kommt mit v1.1 — oder früher, falls der Stichtag 27.09. hält (Abschnitt 2.1) |
+| AVV kommt knapp vor dem Stichtag und verleitet zum Durchwinken | Ungeprüfter Vertrag, ungemessene Kosten, unkalibrierte Noten live am Tag 1 | Stichtag 27.09. 18:00 ist eine **Und**-Bedingung: AVV **und** SUB-133/134 gemergt **und** Smoke-Test grün. Ein einzelnes fehlendes Stück führt zum Rückfall auf v1.1, ohne Ermessensspielraum |
+| Launch-Texte und Stichtagsergebnis widersprechen sich | Entweder ein uneingelöstes Versprechen oder ein FAQ, das ein vorhandenes Feature leugnet | `docs/21-landing-preisseite-launchtext.md` (SUB-88) bewirbt die Korrektur bewusst **nicht** — die Richtung „Versprechen ohne Feature" ist damit ausgeschlossen. Die Gegenrichtung ist offen: die FAQ-Antwort „Eine KI-gestützte Korrektur ist nicht Teil des aktuellen Angebots" wird falsch, sobald aktiviert wird. Marketing-Planner hält für diesen Fall eine Austauschfassung bereit, die erst am 27.09. gezogen wird |
 | Zwei Wochen Volllast, danach Erschöpfung | v1.1 verzögert sich | v1.1-Fenster bewusst auf 4 Wochen nach Release gelegt, nicht auf 2 |
 
 ---
@@ -221,6 +336,11 @@ eine Absichtserklärung.
 | **G3** Content-Freeze (25.09.) | [SUB-87](/SUB/issues/SUB-87) | Content-Koordinator | 6 P1-Themen → 180 Karten, geprüft und gemergt (Rechnung: Abschnitt 4) |
 | **G5** Launch (29.09.) | [SUB-88](/SUB/issues/SUB-88) | Marketing-Planner | Landing Page, Preisseite, Launch-Text |
 | **G1** Konten (18.09.) | — | **Nutzer** | Rechtsträger, Zahlungskonto, Domain — siehe Abschnitt 8 |
+| *bedingt* KI-Korrektur (19.09.) | [SUB-129](/SUB/issues/SUB-129) | Software-Planner | Provider-Wahl, belegte Self-Serve-DPA-Antwort, unterschriftsreife Anweisung |
+| *bedingt* KI-Korrektur (25.09.) | — | **Nutzer** | AVV unterschreiben — der einzige Schritt der Kette ohne Agenten |
+| *bedingt* KI-Korrektur (22.09.) | [SUB-133](/SUB/issues/SUB-133) | Backend-Developer | Einwilligungs-Gate, Test „kein Text ohne Zustimmung" |
+| *bedingt* KI-Korrektur (24.09.) | [SUB-134](/SUB/issues/SUB-134) | Frontend-Developer | Zustimmungsdialog, Widerruf, Kennzeichnung maschineller Bewertung |
+| *bedingt* KI-Korrektur (27.09.) | [SUB-135](/SUB/issues/SUB-135) | Lead-Developer | Kostenbremse, Smoke-Test, Runbook, **Stichtagsentscheid** |
 
 **G1 hat bewusst keinen Agenten.** Rechtsträger, Zahlungskonto-Verifizierung
 und Domainbesitz sind Handlungen, die eine reale Person mit einem Ausweis
