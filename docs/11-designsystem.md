@@ -145,6 +145,16 @@ Konstanten in `TypeScale`, damit `theme.dart` (und spaeter Komponenten, die
 bewusst von der Theme-Textur abweichen wollen) sie referenzieren statt
 Literale zu wiederholen.
 
+### 2.6 Bewegung (`motion.dart`)
+
+**SUB-158:** `fast=150ms, normal=220ms`, Kurve `Curves.easeInOut`. Reine
+Timing-/Easing-Verbesserung fuer bestehende State-Uebergaenge (Kartenwechsel,
+Auf-/Zuklappen) - bewusst kein Bounce-Overshoot und keine sonstigen
+Gamification-Effekte (kein Konfetti, keine Partikel), nur ein "gemachtes"
+statt statisches Gefuehl. Exemplarisch eingesetzt im Karteikarten-Lernmodus
+(`pages/review_page.dart`): die Antwortseite blendet ueber `AnimatedSwitcher`
+mit `Motion.normal`/`Motion.curve` ein, statt instantan zu erscheinen.
+
 ## 3. Komponenteninventar
 
 Code: `app/lib/design/components/`. Alle Komponenten sind duenne Wrapper um
