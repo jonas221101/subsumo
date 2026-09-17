@@ -81,6 +81,17 @@ class ApiClient {
             headers: _headers, body: jsonEncode(body)),
       );
 
+  Future<dynamic> _delete(String path) async =>
+      _decode(await _client.delete(_uri(path), headers: _headers));
+
+  // --- Oeffentlich (ohne Login) ----------------------------------------------
+
+  /// Feature-Flags, die der Client ohne Login braucht - hier vor allem
+  /// `ai_correction_enabled` (SUB-133/SUB-134): ob die KI-Korrektur ueberhaupt
+  /// aktiv ist, unabhaengig von der Einwilligung des einzelnen Nutzers.
+  Future<Map<String, dynamic>> publicConfig() async =>
+      (await _get('/v1/public/config')) as Map<String, dynamic>;
+
   // --- Auth ----------------------------------------------------------------
 
   Future<String> register(String email, String password) async {
@@ -207,4 +218,17 @@ class ApiClient {
       'confirm': true,
     });
   }
+
+  // --- KI-Korrektur-Einwilligung (SUB-133/SUB-134) ---------------------------
+
+  /// Erteilt die Einwilligung zur KI-gestuetzten Inhaltsbewertung eines
+  /// Gutachtens (Art. 6 Abs. 1 lit. a DSGVO). Wirkt ab der naechsten Abgabe.
+  Future<Map<String, dynamic>> grantAiConsent() async =>
+      (await _post('/v1/me/ai-consent', const {})) as Map<String, dynamic>;
+
+  /// Widerruft die Einwilligung (Art. 7 Abs. 3 DSGVO) - jederzeit moeglich,
+  /// ohne Angabe von Gruenden. Ab der naechsten Abgabe laeuft wieder
+  /// ausschliesslich der heuristische Evaluator.
+  Future<Map<String, dynamic>> revokeAiConsent() async =>
+      (await _delete('/v1/me/ai-consent')) as Map<String, dynamic>;
 }

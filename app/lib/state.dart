@@ -108,6 +108,34 @@ class AppState extends ChangeNotifier {
 
   bool get cancelAtPeriodEnd => (user?['cancel_at_period_end'] as bool?) ?? false;
 
+  // --- KI-Korrektur-Einwilligung (SUB-133/SUB-134) --------------------------
+  //
+  // `aiConsentGiven` bildet `ai_review_consent_at` aus `/auth/me` direkt ab -
+  // das ist der einzige serverseitig durchgesetzte Zustand (siehe
+  // `backend/app/services/evaluator.py:get_evaluator`). Eine Ablehnung hat
+  // dagegen keine serverseitige Entsprechung: der heuristische Pfad lief
+  // vorher schon, es gibt nichts zu widerrufen. Damit der Zustimmungsdialog
+  // nach einer Ablehnung trotzdem nicht bei jeder Abgabe erneut erscheint
+  // (Abnahme SUB-134), wird die Ablehnung nur lokal je Konto gemerkt.
+
+  bool get aiConsentGiven => user?['ai_review_consent_at'] != null;
+
+  static const _aiConsentDeclinedKey = 'subsumo.ai_consent_declined_user_id';
+
+  Future<bool> hasDeclinedAiConsent() async {
+    final id = user?['id'];
+    if (id == null) return false;
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getString(_aiConsentDeclinedKey) == '$id';
+  }
+
+  Future<void> declineAiConsent() async {
+    final id = user?['id'];
+    if (id == null) return;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_aiConsentDeclinedKey, '$id');
+  }
+
   /// Nach der Rueckkehr von einem erfolgreichen Stripe-Checkout aufzurufen
   /// (F2, siehe docs/20-release-g2-bezahlstrecke.md): der Webhook (B4)
   /// schaltet das Entitlement asynchron zur Redirect-Rueckkehr frei, deshalb
