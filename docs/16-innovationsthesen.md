@@ -186,7 +186,7 @@ Pacing-Leiste, Auto-Save, Ablenkungssperre, offline) mit 4 Wochen veranschlagt
 — der teuerste Einzelblock nach der Content-Produktion. Der ursprüngliche
 Risikopunkt „Flutter-Web-Texteditor untauglich für 5-h-Klausur" ist bereits
 vorab entkräftet (Spike in M0+, GO-Ergebnis 48 ms Ø-Latenz,
-`docs/07-spike-web-editor.md`, referenziert in `docs/03-roadmap.md:225`) — das
+`docs/07-spike-web-editor.md`, referenziert in `docs/03-roadmap.md:210`) — das
 senkt das technische Restrisiko, nicht den Aufwand selbst.
 
 **Trägt sie den Aufwand?** Ja, unter einer Bedingung: nicht in v1.0.
