@@ -125,10 +125,26 @@ class _HomeShellState extends State<HomeShell> {
     final app = AppScope.of(context);
     final breit = MediaQuery.sizeOf(context).width >= 800;
 
+    // Kombiniert die beiden bestehenden Signale fuer einen fehlgeschlagenen
+    // Server-Kontakt (siehe state.dart: dueCardsFromCache, outbox) zu einer
+    // app-weiten Anzeige (SUB-161/SUB-153) - reaktiv auf einen tatsaechlichen
+    // Fehlschlag statt auf eine ungeprueft optimistische Netzstatus-API, im
+    // Sinne von "Ehrlichkeit vor Motivation" (docs/01-produktvision.md).
+    final offline = app.dueCardsFromCache || app.outbox.isNotEmpty;
+
     return Scaffold(
       appBar: AppBar(
         title: Text(_destinations[_index].label),
         actions: [
+          if (offline)
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: Spacing.xs),
+              child: Tooltip(
+                message: 'Letzter Kontakt zum Server ist fehlgeschlagen - '
+                    'zeigt zuletzt gespeicherte Daten.',
+                child: SubsumoChip(label: 'offline', icon: Icons.cloud_off),
+              ),
+            ),
           if (app.outbox.isNotEmpty)
             IconButton(
               tooltip: '${app.outbox.length} Bewertung(en) nicht synchronisiert',

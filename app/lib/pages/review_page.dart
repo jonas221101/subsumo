@@ -65,12 +65,9 @@ class _ReviewPageState extends State<ReviewPage> {
                 const SizedBox(width: Spacing.sm),
                 Text('${app.dueCards.length} offen'),
                 const Spacer(),
-                if (app.dueCardsFromCache)
-                  const Tooltip(
-                    message: 'Kein Netz erreichbar - zeigt den zuletzt '
-                        'geladenen Kartenstapel.',
-                    child: SubsumoChip(label: 'offline', icon: Icons.cloud_off),
-                  ),
+                // Der app-weite "offline"-Hinweis im AppBar (main.dart,
+                // SUB-161) deckt dasselbe Signal (app.dueCardsFromCache) ab -
+                // hier keine zweite Anzeige, um Dopplung zu vermeiden.
                 if (card['content_changed'] == true)
                   const Tooltip(
                     message: 'Der Inhalt dieser Karte wurde fachlich aktualisiert.',
