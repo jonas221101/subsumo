@@ -43,6 +43,18 @@ class Settings(BaseSettings):
     # False verhaelt sich jeder Nutzer wie Pro, unabhaengig vom Entitlement-Feld.
     paywall_enabled: bool = False
 
+    # Stripe (docs/20 B3/B4/B5). Echte Price-IDs existieren erst nach G1
+    # (Zahlungskonto verifiziert) - Test-Keys erlauben Entwicklung vorher.
+    stripe_secret_key: str = ""
+    stripe_webhook_secret: str = ""
+    stripe_price_monthly: str = "price_monthly_test"
+    stripe_price_yearly: str = "price_yearly_test"
+    billing_success_url: str = "https://app.subsumo.de/billing?checkout=success"
+    billing_cancel_url: str = "https://app.subsumo.de/billing?checkout=cancelled"
+    # Widerrufsfrist (docs/06-recht-compliance.md), ersetzt keine anwaltliche
+    # Pruefung der endgueltigen Widerrufsbelehrung (SUB-85).
+    withdrawal_period_days: int = 14
+
     # Strukturiertes JSON-Logging fuer Produktion, siehe
     # docs/22-deploy-runbook.md Abschnitt "Monitoring".
     log_json: bool = False

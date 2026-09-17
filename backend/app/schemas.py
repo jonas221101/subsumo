@@ -168,6 +168,11 @@ class AccountExportAccountOut(BaseModel):
     exam_date: datetime | None = None
     daily_minutes: int
     created_at: datetime
+    # Entitlement (Release G2) - Zahlungsanbieter-Referenzen, keine Zahlungsdaten selbst.
+    stripe_customer_id: str | None = None
+    stripe_subscription_id: str | None = None
+    pro_until: datetime | None = None
+    cancel_at_period_end: bool
 
 
 class AccountExportUserCardOut(BaseModel):
@@ -221,3 +226,15 @@ class AiConsentOut(BaseModel):
     """Antwort auf Erteilung/Widerruf der Einwilligung zur KI-Korrektur (SUB-133)."""
 
     ai_review_consent_at: datetime | None = None
+
+
+class CheckoutSessionIn(BaseModel):
+    plan: str
+
+
+class CheckoutSessionOut(BaseModel):
+    checkout_url: str
+
+
+class CancelSubscriptionOut(BaseModel):
+    mode: str  # "period_end" | "immediate_refund"

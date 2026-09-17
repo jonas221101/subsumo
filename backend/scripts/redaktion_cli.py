@@ -124,6 +124,10 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
             "Urkundenfaelschung, § 267 StGB",
             "Strafrecht BT, Urkundenbegriff, Herstellen/Verfaelschen, Gebrauchmachen",
         ),
+        (
+            "Toetungsdelikte, §§ 211, 212 StGB",
+            "Strafrecht BT, Mordmerkmale, Abgrenzung § 211/§ 212",
+        ),
     ],
     "oeffentliches-recht": [
         (
