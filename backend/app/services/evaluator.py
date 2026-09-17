@@ -21,7 +21,7 @@ import re
 from dataclasses import asdict, dataclass, field
 from typing import Any, Protocol
 
-from app.config import get_settings
+from app.config import Settings, get_settings
 from app.core.llm import LLMClient, get_llm_client
 from app.services.gutachten import GutachtenReport
 
@@ -338,8 +338,24 @@ class LLMEvaluator:
         )
 
 
-def get_evaluator() -> Evaluator:
+def llm_configured(settings: Settings | None = None) -> bool:
+    """Ob ein LLM-Provider grundsaetzlich aktiv ist (unabhaengig von Einwilligung).
+
+    Basis fuer das Feature-Flag in ``GET /v1/public/config`` (SUB-133).
+    """
+    settings = settings or get_settings()
+    return settings.llm_provider == "anthropic" and bool(settings.llm_api_key)
+
+
+def get_evaluator(*, consented: bool = True) -> Evaluator:
+    """Waehlt den Evaluator. ``consented=False`` erzwingt die Heuristik.
+
+    Ohne Einwilligung wird ``LLMEvaluator`` gar nicht erst konstruiert - der
+    Nutzertext verlaesst das System damit strukturell nicht in Richtung
+    Provider, nicht nur durch ein Verhalten, das man auch vergessen koennte
+    (SUB-133, Einwilligungs-Gate vor LLM-Versand).
+    """
     settings = get_settings()
-    if settings.llm_provider == "anthropic" and settings.llm_api_key:
+    if llm_configured(settings) and consented:
         return LLMEvaluator()
     return HeuristicEvaluator()
