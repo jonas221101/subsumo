@@ -68,7 +68,6 @@ def create_app() -> FastAPI:
         plan.router,
         public.router,
         billing.router,
-        public.router,
     ):
         app.include_router(router, prefix="/v1")
 
