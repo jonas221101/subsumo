@@ -47,7 +47,7 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Text('Subsumo', style: Theme.of(context).textTheme.headlineMedium),
+                const SubsumoWordmark(large: true),
                 const SizedBox(height: Spacing.xs),
                 Text(
                   'Jura lernen vom ersten Semester bis zum Examen.',

@@ -28,6 +28,13 @@ Werkzeug, mit dem Nutzer Stunden am Stueck Fliesstext lesen und schreiben
   eine konkrete Handlung (ein Struktur-Finding im Gutachten, ein
   Formularfehler) - nie fuer Dauerzustaende. Alle drei sind entsaettigt:
   selbst "negativ" soll sachlich wirken, nicht wie ein Alarm.
+- **Marken-Akzent** (`accent500`/`accent300`, SUB-159, CI-Konzept
+  freigegeben auf SUB-154): gedecktes Gold/Bernstein, ausschliesslich fuer
+  Marken-/Leerzustandsflaechen (Landingpage, oeffentlicher Header) -
+  niemals fuer Fortschritt oder Feedback, dafuer bleiben die Feedback-Farben
+  zustaendig. Getrennt von der Palette der Feedback-Farben, damit eine
+  falsche Verwendung (Akzent auf einer Fortschrittsanzeige) im Review am
+  Tokennamen auffaellt.
 
 **Bindende Regel aus den Leitprinzipien** (`docs/01-produktvision.md`,
 "Ehrlichkeit vor Motivation" und "Kein Druck durch Design"): **Lernstand ist
@@ -57,7 +64,23 @@ ausgelegt, nicht auf dekorative Ueberschriften:
   an echten Gutachtentexten bewaehrt; kleinere Werte lassen lange
   Lesestrecken auf breiten Fenstern schwerer verfolgbar werden.
 - Ueberschriften (`titleLarge/Medium/Small`) sind knapp gestuft (22/17/15px,
-  `FontWeight.w600`) - sie sollen Struktur geben, nicht dominieren.
+  `FontWeight.w600`) - sie sollen Struktur geben, nicht dominieren. Sie
+  bleiben unveraendert die Rolle fuer Karten-/Gutachten-/Klausur-Screens.
+- **Display-Rolle** (`displayLarge`/`displayMedium`, SUB-159, CI-Konzept
+  freigegeben auf SUB-154): eigene, deutlich groessere/kraeftigere Rolle
+  (32/24px, `FontWeight.w700`, leichte Laufweite) ausschliesslich fuer
+  Ueberschriften auf Marken-/Rahmenflaechen (Wortmarke, oeffentlicher
+  Header, Login) - als `ThemeExtension` `SubsumoTypography`, getrennt vom
+  geteilten `ThemeData.textTheme`, damit sie nicht ueber `headlineSmall` &
+  Co. versehentlich in Gutachten-/Klausur-Screens durchsickert (siehe die
+  Gutachten-Punktzahl in `gutachten_page.dart`, die weiterhin
+  `headlineSmall` nutzt). Nutzt bewusst weiterhin die eingebettete
+  `Subsumo`-Schriftdatei (DejaVu Sans) statt einer zweiten Schriftfamilie:
+  ein eigenes, lizenziertes Zweitschrift-Asset war in diesem Ticket nicht
+  beschaffbar (siehe `assets/fonts/LIZENZ.md` - ein Schriftwechsel ist
+  ohnehin als spaetere, bewusste Entscheidung fuer M5/Store-Release
+  vorgesehen). Die Rolle unterscheidet sich daher ueber Groesse/Gewicht/
+  Laufweite, nicht ueber eine zweite Schriftdatei.
 
 ### Tonalitaet
 
@@ -75,6 +98,16 @@ visuelle Vokabular sind Material-Icons (outline-Stil, `Icons.*_outlined`) -
 konsistent mit der bisherigen Navigation (`main.dart`,
 `_HomeShellState._destinations`). Ein Icon transportiert Funktion
 (Kategorie, Zustand), nie Dekoration.
+
+**Wortmarke** (`SubsumoWordmark`, SUB-159, CI-Konzept freigegeben auf
+SUB-154): reine Wortmarke "Subsumo" in der Display-Rolle, kein Maskottchen/
+Icon-lastiges Logo - konsistent mit obiger Regel. Das im Konzept genannte
+abstrakte Symbol (Subsumtionslogik als Klammer-/Treppen-Motiv) ist dort
+ausdruecklich optional und ohne finales Asset; dieses Ticket setzt nur den
+freigegebenen Wortmarken-Teil um. Eingesetzt im oeffentlichen Header
+(`PublicScaffold`, zweifarbige Akzent-Variante) und der Login-Kopfzeile
+(einfarbig, Navy) - ausschliesslich Marketing-/Rahmenflaechen, nicht in
+Karteikarten-/Gutachten-/Klausur-Screens.
 
 ## 2. Tokens
 
@@ -108,12 +141,15 @@ Rollen (Text, Flaechen, Primaerfarbe, Fehler) werden danach per
 | `outline` / Rahmen, Trennlinien | `ink300` `#B7BCC2` | `ink500Dark` `#8B929B` |
 | `error` / negatives Feedback | `feedbackNegative` `#A23B3B` | `feedbackNegativeDark` `#D98787` |
 
-Zwei Rollen kennt Material3 nicht (kein "success"/"warning"): `positiv` und
-`hinweis` kommen ueber die `ThemeExtension` `SubsumoColors`
-(`theme.extension<SubsumoColors>()`), befuellt mit `feedbackPositive` /
-`feedbackHint` aus der Palette. "Negativ" nutzt bewusst die vorhandene
+Drei Rollen kennt Material3 nicht (kein "success"/"warning"/"brand-accent"):
+`positiv`, `hinweis` und `accent` kommen ueber die `ThemeExtension`
+`SubsumoColors` (`theme.extension<SubsumoColors>()`), befuellt mit
+`feedbackPositive`/`feedbackHint`/`accent500` (Light) bzw.
+`accent300` (Dark) aus der Palette. "Negativ" nutzt bewusst die vorhandene
 Material-Rolle `error` statt einer eigenen dritten Fehlerfarbe - eine
-zweite Rot-Variante waere nur eine Quelle fuer Inkonsistenz.
+zweite Rot-Variante waere nur eine Quelle fuer Inkonsistenz. `accent` ist
+strikt von `positiv`/`hinweis`/`error` getrennt (SUB-159): ausschliesslich
+Marken-/Leerzustandsflaechen, nie Fortschritt/Feedback.
 
 ### 2.2 Abstand (`spacing.dart`)
 
@@ -172,6 +208,7 @@ Komponente direkt braucht, die hier fehlt, verwendet weiter
 | `SubsumoProgressMeter` | Jede Fortschritts-/Mastery-Anzeige: Gesamtcoverage, Rechtsgebiet, Struktur-Score. Fuellfarbe ist immer `primary`, nie wertabhaengig | Ladeindikatoren ohne bekannten Zielwert (dafuer `CircularProgressIndicator`) |
 | `SubsumoChip` (`.filter` / `.action` / Basis) | Kartentyp, Rechtsgebiets-Filter, Norm-Verweis, Status ("offline" - seit SUB-161 app-weit im `AppBar` von `HomeShell`, siehe `main.dart` -, "aktualisiert") | Mehrfachauswahl mit komplexer Logik (eigener Zustand noetig, Chip bleibt nur die Darstellung) |
 | `SubsumoFeedbackBlock` | Punktuelle Rueckmeldung: Struktur-Finding im Gutachten, Formularfehler, Leerzustand-Hinweis. Farbe ist immer nur ein kleines Icon, nie eine Flaechenfarbe | Dauerzustaende wie Lernfortschritt - dafuer `SubsumoProgressMeter` |
+| `SubsumoWordmark` (SUB-159) | Marken-Wortmarke "Subsumo" in der Display-Rolle: oeffentlicher Header (`PublicScaffold`, zweifarbige Akzent-Variante), Login-Kopfzeile | Karteikarten-/Gutachten-/Klausur-Screens |
 
 Jede Komponente traegt Screenreader-Semantik direkt (siehe Abschnitt 4) -
 ein Screen muss sie nicht nachtraeglich mit `Semantics` umwickeln.
@@ -217,6 +254,8 @@ Fliesstext und UI-Text: **4.5:1** (WCAG 2.1 AA).
 | `feedbackNegativeDark` auf `surface0Dark` | 6.77:1 | ✅ |
 | `feedbackHintDark` auf `surface0Dark` | 9.40:1 | ✅ |
 | `feedbackPositiveDark` auf `surface0Dark` | 9.00:1 | ✅ |
+| `accent500` auf `surface0Light` (Wortmarken-Akzent, Light) | 5.04:1 | ✅ |
+| `accent300` auf `surface0Dark` (Wortmarken-Akzent, Dark) | 9.05:1 | ✅ |
 
 `feedbackHint` (Light) liegt mit 4.90:1 am naechsten an der Grenze - genug
 Reserve fuer Rendering-Unschaerfen, aber kein Wert, den man ohne erneute
@@ -240,6 +279,13 @@ damit um ca. das 1.6- bis 1.75-fache gewachsen (z. B. Light `surface0`↔`surfac
 1.08:1 → 1.13:1, Dark `surface0`↔`surface2` 1.25:1 → 1.45:1) - deutlich
 unter der intendierten Obergrenze einer Verdopplung. Alle Fliesstext-Werte
 in der Tabelle oben bleiben komfortabel ueber 4.5:1.
+
+**SUB-159:** `accent500`/`accent300` (Markenakzent, Abschnitt 1/2.1) sind so
+gewaehlt, dass sie auch als Text/Icon (nicht nur als Flaeche) die 4.5:1-
+Mindestanforderung einhalten, obwohl der aktuelle Einsatz (letzter
+Buchstabe der Wortmarke) nur ein Icon-aehnliches, nicht fliesstext-langes
+Element ist - so bleibt spaeterer Text-Einsatz auf Marken-/
+Leerzustandsflaechen ohne erneute Farbpruefung moeglich.
 
 ## 6. Plattformregeln
 
