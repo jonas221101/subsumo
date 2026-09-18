@@ -20,7 +20,7 @@ class PublicScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Subsumo'),
+        title: const SubsumoWordmark(accent: true),
         actions: [
           TextButton(
             onPressed: () => context.go('/app'),

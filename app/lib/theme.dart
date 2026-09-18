@@ -56,7 +56,7 @@ ThemeData buildTheme(Brightness brightness) {
     fontFamily: 'Subsumo',
     textTheme: textTheme,
     primaryTextTheme: base.primaryTextTheme.apply(fontFamily: 'Subsumo'),
-    extensions: [SubsumoColors.forBrightness(brightness)],
+    extensions: [SubsumoColors.forBrightness(brightness), SubsumoTypography.standard()],
     cardTheme: CardThemeData(
       elevation: Elevation.level1,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(Radii.md)),
