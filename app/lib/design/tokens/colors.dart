@@ -24,15 +24,19 @@ class SubsumoPalette {
   static const ink300 = Color(0xFFB7BCC2);
   static const ink100 = Color(0xFFE7E9EC);
 
-  // Flaechen Light.
+  // Flaechen Light. surface1/2 bewusst etwas staerker von surface0
+  // abgesetzt als in der ersten Fassung (SUB-157) - Karten sollen ohne
+  // staerkere Schatten (elevation.dart bleibt unveraendert) allein durch
+  // die Flaechenfarbe sichtbar bleiben. Kontraste in docs/11-designsystem.md
+  // Abschnitt 5 nachgerechnet.
   static const surface0Light = Color(0xFFFFFFFF);
-  static const surface1Light = Color(0xFFF5F6F8);
-  static const surface2Light = Color(0xFFEDEFF2);
+  static const surface1Light = Color(0xFFF0F1F4);
+  static const surface2Light = Color(0xFFE4E7EB);
 
-  // Flaechen Dark.
+  // Flaechen Dark, gleiche Begruendung wie Light.
   static const surface0Dark = Color(0xFF12151A);
-  static const surface1Dark = Color(0xFF1B1F26);
-  static const surface2Dark = Color(0xFF242933);
+  static const surface1Dark = Color(0xFF20242C);
+  static const surface2Dark = Color(0xFF2D3340);
 
   // Neutral/Text, Dark-Mode-Werte.
   static const ink900Dark = Color(0xFFEDEFF2);
@@ -50,6 +54,16 @@ class SubsumoPalette {
   static const feedbackPositiveDark = Color(0xFF7FC4A4);
   static const feedbackHintDark = Color(0xFFD9B65B);
   static const feedbackNegativeDark = Color(0xFFD98787);
+
+  // Marken-Akzent (SUB-159, CI-Konzept freigegeben auf SUB-154): gedecktes
+  // Gold/Bernstein, ausschliesslich fuer Marken-/Leerzustandsflaechen
+  // (Landingpage, oeffentlicher Header) - niemals fuer Fortschritt oder
+  // Feedback, das bleibt bei feedbackPositive/-Hint/-Negative oben. Bewusst
+  // als eigene Konstanten statt einer Abstufung der Feedback-Farben, damit
+  // ein Review eine falsche Verwendung (Akzent auf einer Fortschritts-
+  // anzeige) sofort am Tokennamen erkennt.
+  static const accent500 = Color(0xFF96650F);
+  static const accent300 = Color(0xFFD9B15C);
 }
 
 /// Baut das Material3-[ColorScheme] aus der Palette.
@@ -104,26 +118,38 @@ ColorScheme buildColorScheme(Brightness brightness) {
 /// eine zweite Fehlerfarbe waere nur eine Quelle fuer Inkonsistenz.
 @immutable
 class SubsumoColors extends ThemeExtension<SubsumoColors> {
-  const SubsumoColors({required this.feedbackPositive, required this.feedbackHint});
+  const SubsumoColors({
+    required this.feedbackPositive,
+    required this.feedbackHint,
+    required this.accent,
+  });
 
   final Color feedbackPositive;
   final Color feedbackHint;
+
+  /// Marken-Akzent - nur fuer Marken-/Leerzustandsflaechen (siehe
+  /// [SubsumoPalette.accent500]), niemals fuer Fortschritt/Feedback.
+  final Color accent;
 
   factory SubsumoColors.forBrightness(Brightness brightness) =>
       brightness == Brightness.dark
           ? const SubsumoColors(
               feedbackPositive: SubsumoPalette.feedbackPositiveDark,
               feedbackHint: SubsumoPalette.feedbackHintDark,
+              accent: SubsumoPalette.accent300,
             )
           : const SubsumoColors(
               feedbackPositive: SubsumoPalette.feedbackPositive,
               feedbackHint: SubsumoPalette.feedbackHint,
+              accent: SubsumoPalette.accent500,
             );
 
   @override
-  SubsumoColors copyWith({Color? feedbackPositive, Color? feedbackHint}) => SubsumoColors(
+  SubsumoColors copyWith({Color? feedbackPositive, Color? feedbackHint, Color? accent}) =>
+      SubsumoColors(
         feedbackPositive: feedbackPositive ?? this.feedbackPositive,
         feedbackHint: feedbackHint ?? this.feedbackHint,
+        accent: accent ?? this.accent,
       );
 
   @override
@@ -132,6 +158,7 @@ class SubsumoColors extends ThemeExtension<SubsumoColors> {
     return SubsumoColors(
       feedbackPositive: Color.lerp(feedbackPositive, other.feedbackPositive, t)!,
       feedbackHint: Color.lerp(feedbackHint, other.feedbackHint, t)!,
+      accent: Color.lerp(accent, other.accent, t)!,
     );
   }
 }

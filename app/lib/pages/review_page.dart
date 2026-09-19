@@ -65,12 +65,9 @@ class _ReviewPageState extends State<ReviewPage> {
                 const SizedBox(width: Spacing.sm),
                 Text('${app.dueCards.length} offen'),
                 const Spacer(),
-                if (app.dueCardsFromCache)
-                  const Tooltip(
-                    message: 'Kein Netz erreichbar - zeigt den zuletzt '
-                        'geladenen Kartenstapel.',
-                    child: SubsumoChip(label: 'offline', icon: Icons.cloud_off),
-                  ),
+                // Der app-weite "offline"-Hinweis im AppBar (main.dart,
+                // SUB-161) deckt dasselbe Signal (app.dueCardsFromCache) ab -
+                // hier keine zweite Anzeige, um Dopplung zu vermeiden.
                 if (card['content_changed'] == true)
                   const Tooltip(
                     message: 'Der Inhalt dieser Karte wurde fachlich aktualisiert.',
@@ -90,24 +87,35 @@ class _ReviewPageState extends State<ReviewPage> {
                         card['front'] as String? ?? '',
                         style: Theme.of(context).textTheme.titleLarge,
                       ),
-                      if (_revealed) ...[
-                        const Divider(height: 40),
-                        Text(card['back'] as String? ?? ''),
-                        if (norms.isNotEmpty) ...[
-                          const SizedBox(height: Spacing.xl),
-                          Wrap(
-                            spacing: Spacing.sm,
-                            children: [
-                              for (final norm in norms)
-                                SubsumoChip.action(
-                                  label: norm,
-                                  // M2: oeffnet den Norm-Explorer.
-                                  onPressed: () {},
-                                ),
-                            ],
-                          ),
-                        ],
-                      ],
+                      AnimatedSwitcher(
+                        duration: Motion.normal,
+                        switchInCurve: Motion.curve,
+                        switchOutCurve: Motion.curve,
+                        child: _revealed
+                            ? Column(
+                                key: const ValueKey('answer'),
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  const Divider(height: 40),
+                                  Text(card['back'] as String? ?? ''),
+                                  if (norms.isNotEmpty) ...[
+                                    const SizedBox(height: Spacing.xl),
+                                    Wrap(
+                                      spacing: Spacing.sm,
+                                      children: [
+                                        for (final norm in norms)
+                                          SubsumoChip.action(
+                                            label: norm,
+                                            // M2: oeffnet den Norm-Explorer.
+                                            onPressed: () {},
+                                          ),
+                                      ],
+                                    ),
+                                  ],
+                                ],
+                              )
+                            : const SizedBox.shrink(key: ValueKey('hidden')),
+                      ),
                     ],
                   ),
                 ),

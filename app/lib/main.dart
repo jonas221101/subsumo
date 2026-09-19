@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_plugins/url_strategy.dart';
+import 'package:go_router/go_router.dart';
 
 import 'design/design.dart';
 import 'pages/account_page.dart';
@@ -6,6 +8,9 @@ import 'pages/cases_page.dart';
 import 'pages/checkout_page.dart';
 import 'pages/dashboard_page.dart';
 import 'pages/login_page.dart';
+import 'pages/public/public_landing_page.dart';
+import 'pages/public/public_legal_page.dart';
+import 'pages/public/public_pricing_page.dart';
 import 'pages/review_page.dart';
 import 'pages/schemata_page.dart';
 import 'state.dart';
@@ -17,29 +22,56 @@ const _handledCheckoutStatuses = {'success', 'cancelled'};
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  // Pfadbasierte URLs (/preise) statt Hash-Routing (/#/preise) - noetig,
+  // damit die oeffentlichen Marketing-/Rechtsseiten als echte, teilbare
+  // Web-URLs funktionieren (SUB-108). No-op auf Nicht-Web-Plattformen.
+  usePathUrlStrategy();
   runApp(SubsumoApp(state: AppState()..restoreSession()));
 }
 
+/// Oeffentliche Routen (`/`, `/preise`, `/rechtliches/:slug`) rendern
+/// unabhaengig vom Login-Status - fuer G5 (SUB-104: Landing Page, Preisseite,
+/// Rechtstexte, siehe docs/21). Die bestehende eingeloggte App (`_Root` /
+/// [HomeShell]) bleibt unveraendert unter `/app` erreichbar (SUB-108).
+GoRouter _buildRouter({required String initialLocation}) => GoRouter(
+      initialLocation: initialLocation,
+      routes: [
+        GoRoute(path: '/', builder: (context, state) => const PublicLandingPage()),
+        GoRoute(path: '/preise', builder: (context, state) => const PublicPricingPage()),
+        GoRoute(
+          path: '/rechtliches/:slug',
+          builder: (context, state) => PublicLegalPage(slug: state.pathParameters['slug']!),
+        ),
+        GoRoute(path: '/app', builder: (context, state) => const _Root()),
+      ],
+    );
+
 class SubsumoApp extends StatelessWidget {
-  const SubsumoApp({required this.state, super.key});
+  const SubsumoApp({required this.state, this.initialLocation = '/', super.key});
 
   final AppState state;
+
+  /// Nur fuer Tests: erlaubt, direkt auf einer oeffentlichen Route wie
+  /// `/preise` zu starten, statt ueber Navigation dorthin zu gelangen.
+  final String initialLocation;
 
   @override
   Widget build(BuildContext context) {
     return AppScope(
       notifier: state,
-      child: MaterialApp(
+      child: MaterialApp.router(
         title: 'Subsumo',
         debugShowCheckedModeBanner: false,
         theme: buildTheme(Brightness.light),
         darkTheme: buildTheme(Brightness.dark),
-        home: const _Root(),
+        routerConfig: _buildRouter(initialLocation: initialLocation),
       ),
     );
   }
 }
 
+/// Eingeloggte App (bisheriges Verhalten, unveraendert): LoginPage oder
+/// HomeShell je nach Auth-Status, erreichbar unter `/app`.
 class _Root extends StatelessWidget {
   const _Root();
 
@@ -93,10 +125,26 @@ class _HomeShellState extends State<HomeShell> {
     final app = AppScope.of(context);
     final breit = MediaQuery.sizeOf(context).width >= 800;
 
+    // Kombiniert die beiden bestehenden Signale fuer einen fehlgeschlagenen
+    // Server-Kontakt (siehe state.dart: dueCardsFromCache, outbox) zu einer
+    // app-weiten Anzeige (SUB-161/SUB-153) - reaktiv auf einen tatsaechlichen
+    // Fehlschlag statt auf eine ungeprueft optimistische Netzstatus-API, im
+    // Sinne von "Ehrlichkeit vor Motivation" (docs/01-produktvision.md).
+    final offline = app.dueCardsFromCache || app.outbox.isNotEmpty;
+
     return Scaffold(
       appBar: AppBar(
         title: Text(_destinations[_index].label),
         actions: [
+          if (offline)
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: Spacing.xs),
+              child: Tooltip(
+                message: 'Letzter Kontakt zum Server ist fehlgeschlagen - '
+                    'zeigt zuletzt gespeicherte Daten.',
+                child: SubsumoChip(label: 'offline', icon: Icons.cloud_off),
+              ),
+            ),
           if (app.outbox.isNotEmpty)
             IconButton(
               tooltip: '${app.outbox.length} Bewertung(en) nicht synchronisiert',

@@ -29,6 +29,50 @@ class _AccountPageState extends State<AccountPage> {
   bool _deleteBusy = false;
   String? _deleteError;
 
+  /// Ob die KI-Korrektur ueberhaupt aktiv ist (`GET /v1/public/config`,
+  /// SUB-133/SUB-134). Solange nicht, bleibt die Kontoseite unveraendert -
+  /// es gibt nichts zu widerrufen, wenn das Feature gar nicht laeuft.
+  bool _aiCorrectionEnabled = false;
+  bool _revokeBusy = false;
+  String? _revokeError;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _loadAiCorrectionEnabled());
+  }
+
+  Future<void> _loadAiCorrectionEnabled() async {
+    try {
+      final config = await AppScope.of(context).api.publicConfig();
+      if (mounted) {
+        setState(() => _aiCorrectionEnabled = config['ai_correction_enabled'] == true);
+      }
+    } on Exception {
+      // Bleibt aus - siehe Feldkommentar.
+    }
+  }
+
+  Future<void> _revokeAiConsent() async {
+    setState(() {
+      _revokeBusy = true;
+      _revokeError = null;
+    });
+    final app = AppScope.of(context);
+    try {
+      await app.api.revokeAiConsent();
+      await app.refreshUser();
+    } on ApiException catch (e) {
+      if (!mounted) return;
+      setState(() => _revokeError = e.message);
+    } on Exception {
+      if (!mounted) return;
+      setState(() => _revokeError = 'Server nicht erreichbar. Bitte spaeter erneut versuchen.');
+    } finally {
+      if (mounted) setState(() => _revokeBusy = false);
+    }
+  }
+
   Future<void> _confirmAndCancel() async {
     final confirmed = await showDialog<bool>(
       context: context,
@@ -274,6 +318,15 @@ class _AccountPageState extends State<AccountPage> {
                 onExport: _exportData,
                 onDelete: _confirmAndDelete,
               ),
+              if (_aiCorrectionEnabled) ...[
+                const SizedBox(height: Spacing.lg),
+                _AiConsentCard(
+                  consentGiven: app.aiConsentGiven,
+                  busy: _revokeBusy,
+                  error: _revokeError,
+                  onRevoke: _revokeAiConsent,
+                ),
+              ],
             ],
           ),
         ),
@@ -401,6 +454,60 @@ class _PrivacyCard extends StatelessWidget {
           if (deleteError != null) ...[
             const SizedBox(height: Spacing.sm),
             SubsumoFeedbackBlock(message: deleteError!, severity: FeedbackSeverity.negative),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+/// SUB-134: Widerruf der Einwilligung zur KI-gestuetzten Gutachtenbewertung
+/// (Art. 7 Abs. 3 DSGVO). Erteilt wird die Einwilligung ausschliesslich ueber
+/// den Zustimmungsdialog vor der ersten Abgabe (`gutachten_page.dart`) - hier
+/// gibt es bewusst keinen Gegenknopf dafuer, um kein Beispiel fuer "Zustimmen
+/// leichter als Ablehnen" zu schaffen.
+class _AiConsentCard extends StatelessWidget {
+  const _AiConsentCard({
+    required this.consentGiven,
+    required this.busy,
+    required this.error,
+    required this.onRevoke,
+  });
+
+  final bool consentGiven;
+  final bool busy;
+  final String? error;
+  final VoidCallback onRevoke;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return SubsumoCard(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('KI-Korrektur', style: theme.textTheme.titleMedium),
+          const SizedBox(height: Spacing.sm),
+          if (consentGiven) ...[
+            const SubsumoFeedbackBlock(
+              message: 'Du hast der KI-gestuetzten Bewertung deiner Gutachten zugestimmt.',
+              severity: FeedbackSeverity.neutral,
+            ),
+            const SizedBox(height: Spacing.md),
+            SubsumoButton.secondary(
+              label: busy ? 'Bitte warten ...' : 'Zustimmung widerrufen',
+              onPressed: busy ? null : onRevoke,
+            ),
+          ] else ...[
+            const SubsumoFeedbackBlock(
+              message: 'Noch nicht zugestimmt - deine Gutachten werden ausschliesslich '
+                  'heuristisch geprueft.',
+              severity: FeedbackSeverity.neutral,
+            ),
+          ],
+          if (error != null) ...[
+            const SizedBox(height: Spacing.sm),
+            SubsumoFeedbackBlock(message: error!, severity: FeedbackSeverity.negative),
           ],
         ],
       ),
