@@ -38,12 +38,15 @@ Future<AppState> _pumpHomeShell(WidgetTester tester, {required AppState state}) 
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
 
-  AppState buildState() {
-    final client = MockClient((request) async => http.Response(
-          jsonEncode(_coverage),
-          200,
-          headers: {'content-type': 'application/json'},
-        ));
+  AppState buildState({List<Map<String, dynamic>> dueCards = const []}) {
+    final client = MockClient((request) async {
+      final body = request.url.path == '/v1/cards/due' ? dueCards : _coverage;
+      return http.Response(
+        jsonEncode(body),
+        200,
+        headers: {'content-type': 'application/json'},
+      );
+    });
     return AppState(api: ApiClient(client: client))
       ..user = {'pro_active': true, 'pro_until': null, 'cancel_at_period_end': false};
   }
@@ -75,5 +78,36 @@ void main() {
     await _pumpHomeShell(tester, state: state);
 
     expect(find.widgetWithText(SubsumoChip, 'offline'), findsOneWidget);
+  });
+
+  testWidgets(
+      'Lesemodus (SUB-160) im Karteikarten-Tab blendet AppBar/Navigation aus, '
+      'Rueckkehr jederzeit moeglich', (tester) async {
+    final state = buildState(
+      dueCards: const [
+        {'front': 'Was regelt § 985 BGB?', 'back': 'Herausgabeanspruch des Eigentuemers.'},
+      ],
+    );
+    await _pumpHomeShell(tester, state: state);
+
+    await tester.tap(find.byIcon(Icons.style_outlined));
+    await tester.pumpAndSettle();
+
+    expect(find.byType(AppBar), findsOneWidget);
+    expect(find.byType(NavigationRail), findsOneWidget);
+    expect(find.text('Was regelt § 985 BGB?'), findsOneWidget);
+
+    await tester.tap(find.byIcon(Icons.fullscreen_outlined));
+    await tester.pumpAndSettle();
+
+    expect(find.byType(AppBar), findsNothing);
+    expect(find.byType(NavigationRail), findsNothing);
+    expect(find.text('Was regelt § 985 BGB?'), findsOneWidget);
+
+    await tester.tap(find.byIcon(Icons.fullscreen_exit_outlined));
+    await tester.pumpAndSettle();
+
+    expect(find.byType(AppBar), findsOneWidget);
+    expect(find.byType(NavigationRail), findsOneWidget);
   });
 }

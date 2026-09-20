@@ -84,6 +84,36 @@ void main() {
   });
 
   testWidgets(
+      'Lesemodus (SUB-160) blendet den Fall-Titel aus, Inhalt bleibt lesbar, Rueckkehr jederzeit moeglich',
+      (tester) async {
+    final client = MockClient((request) async {
+      if (request.url.path == '/v1/cases/zr-dritter-fall') {
+        return _json(_case, 200);
+      }
+      return _json({}, 404);
+    });
+    final state = AppState(api: ApiClient(client: client)..setToken('t'));
+
+    await _pump(tester, state);
+
+    expect(find.text('Dritter Fall'), findsOneWidget);
+    expect(find.byIcon(Icons.fullscreen_exit_outlined), findsNothing);
+
+    await tester.tap(find.byIcon(Icons.fullscreen_outlined));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Dritter Fall'), findsNothing);
+    expect(find.text('A verkauft B ein Fahrrad.'), findsOneWidget);
+    expect(find.byType(TextField), findsOneWidget);
+
+    await tester.tap(find.byIcon(Icons.fullscreen_exit_outlined));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Dritter Fall'), findsOneWidget);
+    expect(find.byIcon(Icons.fullscreen_outlined), findsOneWidget);
+  });
+
+  testWidgets(
     'Wochenlimit der Strukturanalyse zeigt einen Upgrade-Hinweis, blockiert aber nicht das Schreiben',
     (tester) async {
       final client = MockClient((request) async {

@@ -367,3 +367,15 @@ Leitgrundsatz erzwungen war.
   Ladeversuch) - im Zweifel lieber ehrlich verzoegert als optimistisch
   falsch, aber fachlich als bekannte Einschraenkung dokumentiert statt still
   in Kauf genommen.
+- **SUB-160:** Fokussierter Lesemodus fuer Karteikarten (`pages/review_page.dart`)
+  und Gutachten (`pages/gutachten_page.dart`) - ein lokaler `bool`-Umschalter
+  (kein neuer `AppState`, reine Layout-Entscheidung) blendet Navigation/Titel
+  aus, laesst Fliesstext-Typoskala und Feedback-Farben unveraendert. Im
+  Karteikarten-Tab liegt der Zustand in `HomeShell`, weil dort auch
+  `NavigationRail`/`NavigationBar` ausgeblendet werden, nicht in `ReviewPage`
+  selbst; der Umschalter bleibt dort bewusst in jedem Kartenzustand sichtbar
+  (auch im Leerzustand nach der letzten Karte), sonst waere die Rueckkehr aus
+  dem Lesemodus blockiert. Bei `GutachtenPage` bleibt eine schmale AppBar mit
+  nur dem Umschalter bestehen statt sie komplett zu entfernen - eine
+  schwebende Schaltflaeche ueber dem Editor-Inhalt haette bei schmalen
+  Fenstern den Falltext verdecken koennen.

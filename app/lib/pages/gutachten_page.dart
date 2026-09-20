@@ -51,6 +51,11 @@ class _GutachtenPageState extends State<GutachtenPage> {
   /// die Abgabe.
   String? _analysisUpgradeMessage;
 
+  /// Fokussierter Lesemodus (SUB-160): blendet nur die AppBar aus, der
+  /// Editor-/Feedback-Inhalt bleibt unveraendert - Rueckkehr jederzeit ueber
+  /// den eingeblendeten Button moeglich.
+  bool _focusMode = false;
+
   @override
   void initState() {
     super.initState();
@@ -205,7 +210,20 @@ class _GutachtenPageState extends State<GutachtenPage> {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text(widget.caseTitle)),
+      // Lesemodus (SUB-160) blendet nur den Titel aus, behaelt aber eine
+      // schmale AppBar mit dem Umschalter - eine schwebende Schaltflaeche
+      // ueber dem Inhalt (statt in der Chrome) wuerde bei kurzen Fenstern
+      // den Falltext im Editor ueberdecken koennen.
+      appBar: AppBar(
+        title: _focusMode ? null : Text(widget.caseTitle),
+        actions: [
+          IconButton(
+            tooltip: _focusMode ? 'Lesemodus verlassen' : 'Lesemodus',
+            icon: Icon(_focusMode ? Icons.fullscreen_exit_outlined : Icons.fullscreen_outlined),
+            onPressed: () => setState(() => _focusMode = !_focusMode),
+          ),
+        ],
+      ),
       body: ReadableWidth(
         maxWidth: 1100,
         child: LayoutBuilder(
