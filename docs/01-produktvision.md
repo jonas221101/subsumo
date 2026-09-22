@@ -72,3 +72,14 @@ native, plattformübergreifende 5-Stunden-Offline-Klausursimulator im Feld.
 - **Pro (~12 €/Monat, Studierendenpreis):** KI-Klausurkorrektur, Klausur-
   Simulator, adaptiver Lernplan, unbegrenzte Fälle.
 - **Campus:** Fachschafts-/Lehrstuhllizenz, eigene Klausuren einstellen.
+
+> **Nachtrag 22.09.2026:** Die Tarife oben beschreiben das Zielbild (v1.2,
+> volle Funktionsbreite). Der tatsächliche v1.0-Release-Umfang
+> (`docs/18-release-2-wochen.md`) weicht in drei Punkten ab: **KI-Klausur-
+> korrektur** läuft in v1.0 mit `llm_provider=none` (nur der heuristische
+> Struktur-Check); eine bedingte Aktivierung bis 27.09.2026 hängt am
+> unterschriebenen AVV (siehe dort Abschnitt 2.1). **Der Klausur-Simulator**
+> ist für v1.0 nicht enthalten und dort fest für v1.1 eingeplant. **Der
+> Preis** startet laut `docs/19-kosten-preis-budget.md` bei **3,99 €/Monat
+> (Gründerpreis)**, nicht bei ~12 €/Monat — 12 €/Monat bleibt der Zielpreis
+> für v1.2.
