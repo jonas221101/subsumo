@@ -179,4 +179,138 @@ void main() {
       expect(find.byType(Card), findsOneWidget);
     });
   });
+
+  group('SubsumoTypography heroLarge/heroSmall (SUB-228)', () {
+    testWidgets('heroLarge/heroSmall nutzen Fraunces statt Subsumo', (tester) async {
+      await tester.pumpWidget(_host(const SizedBox.shrink()));
+      final context = tester.element(find.byType(SizedBox));
+      final typography = Theme.of(context).extension<SubsumoTypography>()!;
+
+      expect(typography.heroLarge.fontFamily, 'Fraunces');
+      expect(typography.heroLarge.fontSize, TypeScale.heroLarge);
+      expect(typography.heroSmall.fontFamily, 'Fraunces');
+      expect(typography.heroSmall.fontSize, TypeScale.heroSmall);
+    });
+
+    testWidgets('displayLarge/displayMedium bleiben bei Subsumo (Wortmarke unveraendert)',
+        (tester) async {
+      await tester.pumpWidget(_host(const SizedBox.shrink()));
+      final context = tester.element(find.byType(SizedBox));
+      final typography = Theme.of(context).extension<SubsumoTypography>()!;
+
+      expect(typography.displayLarge.fontFamily, 'Subsumo');
+      expect(typography.displayMedium.fontFamily, 'Subsumo');
+    });
+  });
+
+  group('SubsumoColors Marketing-Rollen (SUB-228)', () {
+    testWidgets('accentWash ist accent bei reduzierter Deckkraft', (tester) async {
+      await tester.pumpWidget(_host(const SizedBox.shrink()));
+      final context = tester.element(find.byType(SizedBox));
+      final colors = Theme.of(context).extension<SubsumoColors>()!;
+
+      expect(colors.accentWash.a, closeTo(0.08, 0.001));
+      expect(colors.accentWash.withValues(alpha: colors.accent.a), colors.accent);
+    });
+
+    testWidgets('Rechtsgebiets-Akzente sind drei unterscheidbare, feste Farben',
+        (tester) async {
+      await tester.pumpWidget(_host(const SizedBox.shrink()));
+      final context = tester.element(find.byType(SizedBox));
+      final colors = Theme.of(context).extension<SubsumoColors>()!;
+
+      final tones = {
+        colors.legalAreaZivilrecht,
+        colors.legalAreaStrafrecht,
+        colors.legalAreaOeffentlichesRecht,
+      };
+      expect(tones, hasLength(3));
+    });
+
+    testWidgets('Hero-Verlauf ist unabhaengig von Light/Dark identisch (Marken-Band)',
+        (tester) async {
+      final lightScheme = SubsumoColors.forBrightness(Brightness.light);
+      final darkScheme = SubsumoColors.forBrightness(Brightness.dark);
+
+      expect(lightScheme.heroGradientStart, darkScheme.heroGradientStart);
+      expect(lightScheme.heroGradientEnd, darkScheme.heroGradientEnd);
+    });
+  });
+
+  group('SubsumoSection (SUB-228/SUB-240)', () {
+    testWidgets('buildTheme(dark) rendert SubsumoSection/Hero-Text ohne Absturz',
+        (tester) async {
+      await tester.pumpWidget(
+        MaterialApp(
+          theme: buildTheme(Brightness.dark),
+          home: Builder(
+            builder: (context) {
+              final typography = Theme.of(context).extension<SubsumoTypography>()!;
+              return Scaffold(
+                body: SubsumoSection(
+                  background: SubsumoSectionBackground.heroGradient,
+                  child: Text('Subsumo', style: typography.heroLarge.copyWith(color: Colors.white)),
+                ),
+              );
+            },
+          ),
+        ),
+      );
+
+      expect(find.text('Subsumo'), findsOneWidget);
+      expect(tester.takeException(), isNull);
+    });
+
+    testWidgets('begrenzt den Inhalt intern ueber ReadableWidth', (tester) async {
+      await tester.pumpWidget(
+        _host(const SubsumoSection(child: Text('Sektion'))),
+      );
+
+      expect(find.text('Sektion'), findsOneWidget);
+      expect(find.byType(ReadableWidth), findsOneWidget);
+    });
+
+    testWidgets('heroGradient nutzt einen Verlauf aus brand700/brand900', (tester) async {
+      await tester.pumpWidget(
+        _host(
+          const SubsumoSection(
+            background: SubsumoSectionBackground.heroGradient,
+            child: Text('Hero'),
+          ),
+        ),
+      );
+
+      final box = tester.widget<DecoratedBox>(find.byType(DecoratedBox).first);
+      final decoration = box.decoration as BoxDecoration;
+      expect(decoration.gradient, isA<LinearGradient>());
+      expect(
+        (decoration.gradient as LinearGradient).colors,
+        [SubsumoPalette.brand700, SubsumoPalette.brand900],
+      );
+    });
+
+    testWidgets('brandDark rendert eine deckende brand900-Flaeche', (tester) async {
+      await tester.pumpWidget(
+        _host(
+          const SubsumoSection(
+            background: SubsumoSectionBackground.brandDark,
+            child: Text('Footer'),
+          ),
+        ),
+      );
+
+      final box = tester.widget<DecoratedBox>(find.byType(DecoratedBox).first);
+      final decoration = box.decoration as BoxDecoration;
+      expect(decoration.color, SubsumoPalette.brand900);
+    });
+
+    testWidgets('maxContentWidth wird an ReadableWidth durchgereicht', (tester) async {
+      await tester.pumpWidget(
+        _host(const SubsumoSection(maxContentWidth: 1100, child: Text('Breit'))),
+      );
+
+      final readable = tester.widget<ReadableWidth>(find.byType(ReadableWidth));
+      expect(readable.maxWidth, 1100);
+    });
+  });
 }

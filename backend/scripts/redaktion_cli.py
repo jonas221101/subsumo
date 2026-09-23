@@ -275,6 +275,46 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
             "VerwR AT, Ermaechtigungsgrundlage, formelle und materielle "
             "Rechtmaessigkeit, Aufbauschema",
         ),
+        (
+            "Ruecknahme und Widerruf, §§ 48, 49 VwVfG",
+            "VerwR AT, Abgrenzung rechtswidriger/rechtmaessiger VA, "
+            "Vertrauensschutz § 48 Abs. 2 VwVfG, Jahresfrist § 48 Abs. 4 VwVfG, "
+            "Ermessen, Entschaedigung § 49 Abs. 6 VwVfG (SUB-245)",
+        ),
+        (
+            "Nebenbestimmungen, § 36 VwVfG",
+            "VerwR AT, Arten (Befristung, Bedingung, Auflage, Widerrufsvorbehalt, "
+            "Auflagenvorbehalt), Zulaessigkeit bei gebundenem VA und Ermessens-VA, "
+            "isolierte Anfechtbarkeit der Auflage (SUB-245)",
+        ),
+        (
+            "Polizeiliche Generalklausel und Standardmassnahmen",
+            "Sicherheitsrecht, Schutzgueter der oeffentlichen Sicherheit und "
+            "Ordnung, konkrete Gefahr, Anscheinsgefahr und Gefahrenverdacht, "
+            "Verhaeltnis Generalklausel zu Standardmassnahmen, "
+            "Verhaeltnismaessigkeit. Bundesrechtlicher Kern/Musterentwurf, kein "
+            "vertieftes Landesrecht - keine norms-Zitate zu Landes-Polizeigesetzen, "
+            "da nicht in der Normzitat-Gate-Positivliste (SUB-245)",
+        ),
+        (
+            "Art. 8 GG: Versammlungsfreiheit",
+            "Grundrechte, Versammlungsbegriff, Schutzbereich unter freiem Himmel "
+            "vs. in geschlossenen Raeumen, Schrankenvorbehalt Art. 8 Abs. 2 GG, "
+            "Brokdorf-Rechtsprechung, Verhaeltnis zu Art. 5 GG (SUB-245)",
+        ),
+        (
+            "Gesetzgebungsverfahren, Art. 76 ff. GG",
+            "Staatsorganisationsrecht, Initiativrecht, Einspruchs- und "
+            "Zustimmungsgesetz, Vermittlungsausschuss, Ausfertigung und "
+            "Verkuendung Art. 82 GG, formelle Verfassungsmaessigkeit als "
+            "Pruefungsstandort (SUB-245)",
+        ),
+        (
+            "Organstreitverfahren",
+            "Verfassungsprozessrecht, Art. 93 Abs. 1 Nr. 1 GG, §§ 63 ff. BVerfGG, "
+            "Parteifaehigkeit und Antragsbefugnis, Abgrenzung zur abstrakten "
+            "Normenkontrolle (SUB-245)",
+        ),
     ],
 }
 

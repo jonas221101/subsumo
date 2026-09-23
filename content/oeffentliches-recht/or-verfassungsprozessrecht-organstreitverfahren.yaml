@@ -1,0 +1,278 @@
+topic:
+  slug: or-verfassungsprozessrecht-organstreitverfahren
+  area: oeffentliches-recht
+  title: Organstreitverfahren
+  parent: oeffentliches-recht
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: or-osv-gegenstand-art93
+  type: norm
+  front: Was ist Gegenstand des Organstreitverfahrens nach Art. 93 Abs. 1 Nr. 1 GG?
+  back: Das Bundesverfassungsgericht entscheidet im Organstreitverfahren ueber die
+    Auslegung des Grundgesetzes aus Anlass von Streitigkeiten ueber den Umfang der
+    Rechte und Pflichten eines obersten Bundesorgans oder anderer Beteiligter, die
+    durch das Grundgesetz oder in der Geschaeftsordnung eines obersten Bundesorgans
+    mit eigenen Rechten ausgestattet sind. Es dient damit dem Rechtsschutz von Verfassungsorganen
+    und Organteilen im horizontalen Kompetenzgefuege des Bundes - anders als die Verfassungsbeschwerde
+    schuetzt es keine individuellen Grundrechte, sondern organschaftliche Kompetenzen.
+  norms:
+  - Art. 93 Abs. 1 Nr. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  stand: 2026-09
+- slug: or-osv-beteiligtenfaehigkeit-oberste-organe
+  type: definition
+  front: Wer ist im Organstreitverfahren als 'oberstes Bundesorgan' beteiligtenfaehig?
+  back: Als oberste Bundesorgane beteiligtenfaehig sind der Bundestag, der Bundesrat,
+    die Bundesregierung und der Bundespraesident - sie sind unmittelbar durch das
+    Grundgesetz konstituiert und mit eigenen, im Organstreit verteidigungsfaehigen
+    Rechten ausgestattet. Der Gemeinsame Ausschuss nach Art. 53a GG wird von der ganz
+    herrschenden Meinung ebenfalls als oberstes Bundesorgan angesehen.
+  norms:
+  - Art. 93 Abs. 1 Nr. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-osv-beteiligtenfaehigkeit-andere-beteiligte
+  type: streitstand
+  front: Welche 'anderen Beteiligten' koennen neben den obersten Bundesorganen selbst
+    Partei eines Organstreits sein?
+  back: Beteiligtenfaehig sind auch Teile eines obersten Bundesorgans, die durch das
+    Grundgesetz oder die Geschaeftsordnung des jeweiligen Organs mit eigenen Rechten
+    ausgestattet sind. Anerkannt ist dies fuer Fraktionen des Bundestages, deren Rechtsstellung
+    sich aus der Geschaeftsordnung des Bundestages ergibt, sowie fuer den Bundestagspraesidenten.
+    Fuer einzelne Abgeordnete ist die Beteiligtenfaehigkeit zur Verteidigung ihres
+    freien Mandats aus Art. 38 Abs. 1 S. 2 GG mittlerweile anerkannt. Politische Parteien
+    sind grundsaetzlich nicht beteiligtenfaehig, koennen aber ausnahmsweise im Organstreit
+    ihre verfassungsrechtliche Stellung aus Art. 21 GG (insbesondere den Grundsatz
+    der Chancengleichheit) verteidigen, wenn sie durch ein Verfassungsorgan in dieser
+    Stellung betroffen sind.
+  norms:
+  - Art. 93 Abs. 1 Nr. 1 GG
+  - Art. 38 Abs. 1 S. 2 GG
+  - Art. 21 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-osv-antragsgegenstand-64
+  type: norm
+  front: Was kann Antragsgegenstand eines Organstreitverfahrens nach § 64 Abs. 1 BVerfGG
+    sein?
+  back: Antragsgegenstand ist jede rechtserhebliche Massnahme oder Unterlassung des
+    Antragsgegners. Rechtserheblich ist ein Verhalten, das geeignet ist, die verfassungsrechtliche
+    Position des Antragstellers zu beeintraechtigen - blosse Meinungsaeusserungen
+    ohne eigenstaendigen Regelungsgehalt genuegen grundsaetzlich nicht. Erfasst sind
+    sowohl aktives Handeln (z. B. der Erlass eines Gesetzesbeschlusses) als auch das
+    pflichtwidrige Unterlassen einer gebotenen Massnahme.
+  norms:
+  - § 64 Abs. 1 BVerfGG
+  quellen:
+  - BVerfGG, amtliche Fassung
+  stand: 2026-09
+- slug: or-osv-antragsbefugnis-64
+  type: norm
+  front: Welcher Massstab gilt fuer die Antragsbefugnis im Organstreit, § 64 Abs.
+    1 BVerfGG?
+  back: Der Antragsteller muss geltend machen, durch die beanstandete Massnahme oder
+    Unterlassung des Antragsgegners in eigenen, ihm durch das Grundgesetz uebertragenen
+    Rechten und Pflichten verletzt oder unmittelbar gefaehrdet zu sein. Es genuegt
+    nach der sogenannten Moeglichkeitstheorie, dass eine Rechtsverletzung nach dem
+    Vortrag des Antragstellers nicht von vornherein offensichtlich und eindeutig ausgeschlossen
+    erscheint - eine abschliessende Pruefung der tatsaechlichen Rechtsverletzung bleibt
+    der Begruendetheit vorbehalten.
+  norms:
+  - § 64 Abs. 1 BVerfGG
+  quellen:
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-osv-antragsfrist-64-abs3
+  type: norm
+  front: Innerhalb welcher Frist muss ein Organstreitantrag gestellt werden, § 64
+    Abs. 3 BVerfGG?
+  back: Der Antrag muss innerhalb von sechs Monaten gestellt werden, nachdem dem Antragsteller
+    die beanstandete Massnahme oder Unterlassung bekannt geworden ist. Diese Frist
+    dient der Rechtssicherheit im Organgefuege und soll verhindern, dass verfassungsrechtliche
+    Streitigkeiten zwischen obersten Bundesorganen unbegrenzt lange offenbleiben.
+  norms:
+  - § 64 Abs. 3 BVerfGG
+  quellen:
+  - BVerfGG, amtliche Fassung
+  stand: 2026-09
+- slug: or-osv-entscheidungswirkung-67
+  type: norm
+  front: Was stellt das Bundesverfassungsgericht in seiner Entscheidung nach § 67
+    BVerfGG fest?
+  back: Das Bundesverfassungsgericht stellt in seiner Entscheidung lediglich fest,
+    ob die beanstandete Massnahme oder Unterlassung gegen eine Bestimmung des Grundgesetzes
+    verstoesst - anders als etwa bei der Nichtigerklaerung eines Gesetzes handelt
+    es sich um ein reines Feststellungsurteil, keine Kassationsentscheidung. Ein Gesetzesbeschluss
+    selbst wird durch ein Organstreiturteil also nicht fuer nichtig erklaert; die
+    Feststellung der Rechtsverletzung bindet aber die Verfassungsorgane fuer ihr kuenftiges
+    Verhalten.
+  norms:
+  - § 67 BVerfGG
+  quellen:
+  - BVerfGG, amtliche Fassung
+  stand: 2026-09
+- slug: or-osv-abgrenzung-abstrakte-normenkontrolle
+  type: streitstand
+  front: Wie grenzt sich das Organstreitverfahren von der abstrakten Normenkontrolle
+    ab?
+  back: 'Das Organstreitverfahren dient dem subjektiven Rechtsschutz eines Verfassungsorgans
+    oder Organteils gegen eine konkrete Massnahme oder Unterlassung, die dessen eigene
+    organschaftliche Rechte betrifft - es setzt eine Antragsbefugnis im Sinne einer
+    moeglichen eigenen Rechtsverletzung voraus. Die abstrakte Normenkontrolle nach
+    Art. 93 Abs. 1 Nr. 2 GG dient dagegen der objektiven Kontrolle der Vereinbarkeit
+    einer Rechtsnorm mit hoeherrangigem Recht ohne Bezug zu einer eigenen Rechtsverletzung
+    des Antragstellers; antragsberechtigt sind hier nur die Bundesregierung, eine
+    Landesregierung oder ein Viertel der Mitglieder des Bundestages. Ein Gesetzesbeschluss
+    kann daher parallel Gegenstand beider Verfahrensarten sein: im Organstreit, soweit
+    sein Zustandekommen die organschaftlichen Rechte eines Beteiligten verletzt hat,
+    in der abstrakten Normenkontrolle, soweit sein Inhalt objektiv mit dem Grundgesetz
+    unvereinbar sein koennte.'
+  norms:
+  - Art. 93 Abs. 1 Nr. 1 GG
+  - Art. 93 Abs. 1 Nr. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: or-schema-organstreitverfahren-zulaessigkeit
+  title: Zulaessigkeit eines Organstreitverfahrens
+  norms:
+  - Art. 93 Abs. 1 Nr. 1 GG
+  - § 64 BVerfGG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Zustaendigkeit des Bundesverfassungsgerichts
+    hinweis: Art. 93 Abs. 1 Nr. 1 GG, §§ 13 Nr. 5, 63 ff. BVerfGG.
+  - label: II. Beteiligtenfaehigkeit
+    children:
+    - label: '1. Antragsteller: oberstes Bundesorgan oder anderer Beteiligter mit
+        eigenen Rechten'
+    - label: '2. Antragsgegner: ebenso'
+  - label: III. Antragsgegenstand
+    hinweis: Rechtserhebliche Massnahme oder Unterlassung des Antragsgegners, § 64
+      Abs. 1 BVerfGG.
+  - label: IV. Antragsbefugnis
+    hinweis: Moeglichkeit einer Verletzung eigener, durch das Grundgesetz uebertragener
+      Rechte, § 64 Abs. 1 BVerfGG (Moeglichkeitstheorie).
+  - label: V. Form und Frist
+    children:
+    - label: 1. Schriftform mit Begruendung, § 23 Abs. 1, § 64 Abs. 2 BVerfGG
+    - label: 2. Sechsmonatsfrist, § 64 Abs. 3 BVerfGG
+  - label: VI. Ergebnis
+faelle:
+- slug: or-fall-verweigerte-antwort-kleine-anfrage
+  title: Die pauschal verweigerte Antwort auf die Kleine Anfrage
+  difficulty: 4
+  minutes: 50
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  facts: Eine (fiktive) Oppositionsfraktion F im Bundestag richtet eine Kleine Anfrage
+    an die Bundesregierung zu Einzelheiten eines Verwaltungsvorgangs. Die Bundesregierung
+    verweigert die Beantwortung vollstaendig mit der pauschalen Begruendung, die Angelegenheit
+    beruehre 'Belange des Staatswohls', ohne naeher darzulegen, welche konkreten Nachteile
+    durch eine Beantwortung drohen wuerden. F ist der Auffassung, dass ihr parlamentarisches
+    Frage- und Informationsrecht dadurch verletzt sei, und stellt vier Monate nach
+    Bekanntwerden der Antwortverweigerung beim Bundesverfassungsgericht einen Antrag
+    im Organstreitverfahren gegen die Bundesregierung.
+  question: Ist der Antrag der F zulaessig und begruendet?
+  steps:
+  - prompt: Ist die Fraktion F im Organstreitverfahren beteiligtenfaehig?
+    erwartung: Ja - Fraktionen sind als Teile des Bundestages, die durch dessen Geschaeftsordnung
+      mit eigenen Rechten ausgestattet sind, anerkannte 'andere Beteiligte' i.S.d.
+      Art. 93 Abs. 1 Nr. 1 GG.
+  - prompt: Ist die Bundesregierung als Antragsgegnerin beteiligtenfaehig?
+    erwartung: Ja - die Bundesregierung ist ein oberstes Bundesorgan i.S.d. Art. 93
+      Abs. 1 Nr. 1 GG.
+  - prompt: Liegt ein tauglicher Antragsgegenstand vor?
+    erwartung: Ja - die vollstaendige Verweigerung der Antwort ist eine rechtserhebliche
+      Unterlassung bzw. Massnahme der Bundesregierung i.S.d. § 64 Abs. 1 BVerfGG.
+  - prompt: Ist F antragsbefugt?
+    erwartung: Ja - es erscheint nach dem Vortrag der F nicht von vornherein ausgeschlossen,
+      dass die vollstaendige Antwortverweigerung ihr parlamentarisches Frage- und
+      Informationsrecht (hergeleitet aus dem Kontrollrecht des Parlaments gegenueber
+      der Regierung, Art. 20 Abs. 2 GG i.V.m. Art. 38 Abs. 1 S. 2 GG) verletzt - die
+      Moeglichkeitstheorie ist erfuellt.
+  - prompt: Ist die Sechsmonatsfrist des § 64 Abs. 3 BVerfGG gewahrt?
+    erwartung: Ja - der Antrag wurde bereits vier Monate nach Bekanntwerden der Antwortverweigerung
+      und damit innerhalb der Frist gestellt.
+  - prompt: Ist der Antrag in der Sache begruendet?
+    erwartung: 'Ja, wenn die pauschale Berufung auf ''Belange des Staatswohls'' ohne
+      konkrete Darlegung der drohenden Nachteile den verfassungsrechtlichen Anforderungen
+      nicht genuegt: Das parlamentarische Informationsrecht darf nur ausnahmsweise
+      und mit einer nachvollziehbaren, auf den Einzelfall bezogenen Begruendung eingeschraenkt
+      werden. Eine floskelhafte Berufung auf das Staatswohl ohne naehere Substantiierung
+      reicht dafuer nicht aus, sodass die Antwortverweigerung das Frage- und Informationsrecht
+      der F verletzt.'
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Beteiligtenfaehigkeit der Fraktion F als 'anderer Beteiligter' zutreffend
+        begruendet
+      weight: 1.5
+      required: false
+      keywords:
+      - Fraktion
+      - andere Beteiligte
+      - Geschaeftsordnung
+    - id: p2
+      label: Antragsbefugnis nach der Moeglichkeitstheorie korrekt angewendet
+      weight: 2.0
+      required: true
+      keywords:
+      - Moeglichkeitstheorie
+      - nicht von vornherein ausgeschlossen
+    - id: p3
+      label: Frage- und Informationsrecht des Parlaments aus Art. 20 Abs. 2 GG i.V.m.
+        Art. 38 Abs. 1 S. 2 GG als betroffenes Recht identifiziert
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 20 Abs. 2 GG
+      - Art. 38 Abs. 1 S. 2 GG
+      keywords:
+      - Frage- und Informationsrecht
+      - Kontrollrecht
+    - id: p4
+      label: Sechsmonatsfrist des § 64 Abs. 3 BVerfGG als gewahrt geprueft
+      weight: 1.0
+      required: false
+      norms:
+      - § 64 Abs. 3 BVerfGG
+      keywords:
+      - Sechsmonatsfrist
+      - gewahrt
+    - id: p5
+      label: Unzureichende Substantiierung der Staatswohl-Begruendung als Verletzung
+        des Informationsrechts erkannt
+      weight: 3.0
+      required: true
+      keywords:
+      - pauschale Begruendung
+      - nicht ausreichend substantiiert
+      - Staatswohl
+    - id: p6
+      label: 'Ergebnis: Antrag zulaessig und begruendet'
+      weight: 0.5
+      required: false
+      keywords:
+      - begruendet
+      - zulaessig
