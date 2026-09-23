@@ -226,6 +226,21 @@ Die Produktion selbst läuft bereits über die Content-Agenten
 `docs/08-ki-redaktion.md`; neu ist nur die Priorisierung auf
 Klausurrelevanz-Stufe P1 und das Einfrieren am 25.09.
 
+> **Nachtrag 23.09.2026 — Umfang gewachsen, Gate unverändert.** Der P1-Kern
+> ist vollständig (36/36), der Ist-Stand liegt bei **313 gemergten Karten**,
+> G3 ist damit um das 1,7-Fache übererfüllt. Auf
+> [SUB-225](/SUB/issues/SUB-225) hat der Nutzer entschieden, dass auch die
+> Stufe **P2 vor dem Release** kommt: 17 weitere Themen ≈ 119 Karten, verteilt
+> auf [SUB-243](/SUB/issues/SUB-243) / [SUB-244](/SUB/issues/SUB-244) /
+> [SUB-245](/SUB/issues/SUB-245), Details in
+> `docs/12-content-produktionsplan.md` Abschnitt 1.1. **Der G3-Schwellwert
+> ändert sich dadurch nicht** — er ist bereits erfüllt, P2 ist Zugabe und darf
+> den Termin nicht verschieben. Fällt P2 bis 25.09. unvollständig aus, greift
+> die bestehende G3-Regel („Release mit Ist-Menge") unverändert; der Rest
+> läuft als Nachlieferung. Offen bleibt dabei dieselbe Frage wie bei P1: die
+> menschliche Stichprobe nach `docs/08-ki-redaktion.md` ist für keines der
+> Themen zugesagt (Interaktion auf SUB-225).
+
 ---
 
 ## 5. Die fünf harten Gates

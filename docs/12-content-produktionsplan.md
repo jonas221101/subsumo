@@ -58,7 +58,8 @@ vollständige Themenexegese des Gesetzes — das deckt sich mit der Praxis in
 drankommt, nicht das Modell.
 
 Priorität: **P1** Kernbestand, ohne den v1.0 nicht überzeugt · **P2**
-regelmäßig klausurrelevant, gehört in v1.0 wenn der Takt reicht · **P3**
+regelmäßig klausurrelevant, ~~gehört in v1.0 wenn der Takt reicht~~ **gesetzter
+v1.0-Umfang (Nutzerentscheid 23.09.2026, siehe Abschnitt 1.1)** · **P3**
 ergänzend, vertretbar auch erst nach v1.0 (M6, siehe `docs/03-roadmap.md`).
 
 ### Zivilrecht (18 vorhanden, 8 offen → 26 Themen)
@@ -155,15 +156,46 @@ Baurecht, Unionsrecht und vertiefende Verfassungsprozessthemen).
 | Bauplanungsrecht, §§ 30–35 BauGB (Grundzüge) | offen | P3 |
 | Grundfreiheiten im Unionsrecht (Grundzüge) | offen | P3 |
 
-**Summe: 72 Themen** (11 vorhanden + 61 offen). Die beiden offenen
-BACKLOG-Posten aus `redaktion_cli.py` (Verwaltungsakt, Anfechtungsklage) sind
-darin enthalten — sie müssen nicht neu erfunden werden, nur endlich
-abgearbeitet werden.
+**Summe: 74 Themen** (Stand 23.09.2026: 43 vorhanden + 31 offen). Nach
+Priorität: P1 36/36 vorhanden, P2 7 vorhanden / 17 offen, P3 0 vorhanden /
+14 offen. Der kuratierte `BACKLOG` in `redaktion_cli.py` ist vollständig
+abgearbeitet (33/33); die offenen Themen sind ausschließlich P2/P3.
 
 **Nicht in v1.0, bewusst:** Familien-/Erbrecht über die Grundzüge hinaus,
 Gesellschaftsrecht über GbR/Prokura hinaus, Arbeitsrecht als eigenes Feld,
 Strafprozessrecht als eigener Block. Das sind reguläre JAPO-Randgebiete mit
 geringerer Klausurdichte; Aufnahme nach v1.0 in M6.
+
+### 1.1 Nutzerentscheid 23.09.2026: P2 gehört in v1.0
+
+Der Nutzer hat auf [SUB-225](/SUB/issues/SUB-225) entschieden: **„P2 soll vor
+dem Release auch kommen."** Damit ist die bisherige Taktabhängigkeit von P2
+aufgehoben — P2 ist gesetzter v1.0-Umfang. Das betrifft die folgenden 17
+offenen Themen; sie sind auf drei Gebiets-Redakteure verteilt und nach
+Klausurrelevanz sortiert, weil bei Teillieferung die Reihenfolge entscheidet,
+was live geht:
+
+| Gebiet | Offene P2-Themen | Auftrag |
+|---|---|---|
+| Zivilrecht | Verjährung §§ 194 ff.; § 823 Abs. 2; § 826; Sicherungsübereignung | [SUB-243](/SUB/issues/SUB-243) |
+| Strafrecht | § 34; § 240; § 17; § 222; § 246; § 253; § 266 StGB | [SUB-244](/SUB/issues/SUB-244) |
+| Öffentliches Recht | §§ 48, 49 VwVfG; § 36 VwVfG; Polizeirecht-Generalklausel; Art. 8 GG; Art. 76 ff. GG; Organstreit | [SUB-245](/SUB/issues/SUB-245) |
+
+**Mengenwirkung:** 17 Themen × Richtwert 7 Karten (Abschnitt 2) ≈ 119
+zusätzliche Karten → **≈ 432 Karten** gegenüber 313 heute. Das G3-Ziel aus
+`docs/18-release-2-wochen.md` (180 Karten) ist damit weiter deutlich
+übererfüllt; die Zielmenge 500 des T3-Gates rückt in Reichweite, ohne dass
+P3 angefasst werden muss.
+
+**Termin-Spannung, offen benannt:** G3 (Content-Freeze) liegt auf **Fr
+25.09.** Der real gemessene Maschinentakt trägt 17 Themen in zwei Tagen
+(SUB-231/232 haben am 23.09. neun Themen in einem Tag geliefert). Was ihn
+*nicht* trägt, ist die menschliche Stichprobe nach Abschnitt 4.2 —
+119 neue Karten heben die 10-%-Quote um ≈ 12 Karten, und für die
+Prüfkapazität gibt es weiterhin keine Zusage (Abschnitt 3.1, Interaktion auf
+SUB-225). Die Redakteure committen deshalb themenweise statt als Sammel-PR:
+Bleibt der Takt hinter dem Plan, liegen die klausurrelevantesten Themen
+trotzdem gemergt vor, statt dass der Batch am Freitag unfertig hängt.
 
 ## 2. Zuschnitt eines Themas
 
@@ -404,9 +436,12 @@ Reihenfolge:**
    reduziert die Zielmenge auf 56 Themen (72 − 16) ≈ 392 zusätzliche Karten,
    senkt den Aufwand um ein Viertel, und jedes Rechtsgebiet behält seinen
    P1/P2-Kernbestand vollständig.
-3. **Erst danach, falls das nicht reicht: P2-Themen strecken** — gleiche
-   Logik, gleiche Verteilung über alle drei Gebiete, kein Gebiet fällt unter
-   seinen P1-Kern.
+3. ~~**Erst danach, falls das nicht reicht: P2-Themen strecken**~~ —
+   **hinfällig seit 23.09.2026.** Der Nutzerentscheid in Abschnitt 1.1 nimmt
+   P2 aus der Streckmasse: P2 gehört in v1.0. Bleibt nach Stufe 1 und 2 immer
+   noch eine Lücke, ist die richtige Reaktion nicht, P2 zu kürzen, sondern
+   *innerhalb* von P2 nach der in Abschnitt 1.1 festgelegten Reihenfolge zu
+   liefern und den Rest offen zu benennen.
 4. **Was nicht zur Disposition steht:** die ≥ 10-%-Stichprobenquote
    (Release-Gate, kein Kosmetikposten) und die P1-Themen aller drei Gebiete —
    das wäre der Punkt, an dem „Tag 1 sinnvoll nutzbar" kippt.
