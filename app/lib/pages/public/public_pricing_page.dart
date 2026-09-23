@@ -52,8 +52,7 @@ class _PublicPricingPageState extends State<PublicPricingPage> {
         future: _paywallEnabled,
         builder: (context, snapshot) {
           if (snapshot.connectionState != ConnectionState.done) {
-            return const Padding(
-              padding: EdgeInsets.symmetric(vertical: Spacing.xxl),
+            return const SubsumoSection(
               child: Center(child: CircularProgressIndicator()),
             );
           }
@@ -64,50 +63,67 @@ class _PublicPricingPageState extends State<PublicPricingPage> {
   }
 }
 
-/// Variante A - mit Kauf (docs/21 Abschnitt 3.1). Texte wortgleich uebernommen.
+/// Variante A - mit Kauf (docs/21 Abschnitt 3.1). Texte wortgleich
+/// uebernommen. Zwei Baender statt einer Spalte (SUB-241, gleiche
+/// `SubsumoSection`-Logik wie die Landingpage): Tabelle/CTA vorn, die
+/// Gruenderpreis-Begruendung auf einer eigenen, abgesetzten Flaeche.
 class _VarianteA extends StatelessWidget {
   const _VarianteA();
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text('Preise', style: Theme.of(context).textTheme.headlineMedium),
-        const SizedBox(height: Spacing.lg),
-        const _FeatureTable(
-          proHeader: 'Pro (Gründerpreis)',
-          priceRow: (
-            free: '0 €',
-            pro: '3,99 €/Monat oder 39 €/Jahr (inkl. gesetzlicher USt., sofern diese anfällt)',
+        SubsumoSection(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Preise', style: Theme.of(context).textTheme.headlineMedium),
+              const SizedBox(height: Spacing.lg),
+              const _FeatureTable(
+                proHeader: 'Pro (Gründerpreis)',
+                priceRow: (
+                  free: '0 €',
+                  pro: '3,99 €/Monat oder 39 €/Jahr (inkl. gesetzlicher USt., sofern diese anfällt)',
+                ),
+              ),
+              const SizedBox(height: Spacing.lg),
+              Align(
+                alignment: Alignment.centerRight,
+                child: SubsumoButton.primary(
+                  label: 'Pro werden',
+                  onPressed: () => context.go('/app'),
+                ),
+              ),
+            ],
           ),
         ),
-        const SizedBox(height: Spacing.lg),
-        Align(
-          alignment: Alignment.centerRight,
-          child: SubsumoButton.primary(
-            label: 'Pro werden',
-            onPressed: () => context.go('/app'),
+        SubsumoSection(
+          background: SubsumoSectionBackground.surface1,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Warum Gründerpreis?',
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              const SizedBox(height: Spacing.xs),
+              Text(
+                'Subsumo startet mit 180 Karten — deutlich weniger als etablierte '
+                'Anbieter. Der Preis liegt deshalb bewusst niedrig, und wer jetzt '
+                'einsteigt, behält ihn dauerhaft, auch wenn Umfang und Listenpreis '
+                'wachsen.',
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
+              const SizedBox(height: Spacing.lg),
+              Text(
+                'Zahlung über Stripe. Jederzeit zum Ende der laufenden Laufzeit '
+                'kündbar, Details in den AGB.',
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
+            ],
           ),
-        ),
-        const SizedBox(height: Spacing.xl),
-        Text(
-          'Warum Gründerpreis?',
-          style: Theme.of(context).textTheme.titleMedium,
-        ),
-        const SizedBox(height: Spacing.xs),
-        Text(
-          'Subsumo startet mit 180 Karten — deutlich weniger als etablierte '
-          'Anbieter. Der Preis liegt deshalb bewusst niedrig, und wer jetzt '
-          'einsteigt, behält ihn dauerhaft, auch wenn Umfang und Listenpreis '
-          'wachsen.',
-          style: Theme.of(context).textTheme.bodyMedium,
-        ),
-        const SizedBox(height: Spacing.lg),
-        Text(
-          'Zahlung über Stripe. Jederzeit zum Ende der laufenden Laufzeit '
-          'kündbar, Details in den AGB.',
-          style: Theme.of(context).textTheme.bodyMedium,
         ),
       ],
     );
@@ -115,51 +131,61 @@ class _VarianteA extends StatelessWidget {
 }
 
 /// Variante B - Early Access (docs/21 Abschnitt 3.2). Texte wortgleich
-/// uebernommen; Feature-Tabelle wie Variante A, nur die Pro-Spalte umbenannt.
+/// uebernommen; Feature-Tabelle wie Variante A, nur die Pro-Spalte
+/// umbenannt. Zwei Baender wie Variante A (SUB-241).
 class _VarianteB extends StatelessWidget {
   const _VarianteB();
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text('Preise', style: Theme.of(context).textTheme.headlineMedium),
-        Text(
-          '(Early Access)',
-          style: Theme.of(context).textTheme.titleMedium,
-        ),
-        const SizedBox(height: Spacing.lg),
-        Text(
-          'Subsumo ist gerade gestartet. Die Bezahlstrecke ist noch nicht '
-          'live — bis dahin nutzt du Subsumo im vollen Pro-Umfang kostenlos: '
-          'alle drei Rechtsgebiete, unbegrenzte Karten, Schemata, Fälle und '
-          'Struktur-Checks.',
-          style: Theme.of(context).textTheme.bodyMedium,
-        ),
-        const SizedBox(height: Spacing.md),
-        Text(
-          'Sobald die Bezahlstrecke startet, wechseln wir auf Free/Pro. Der '
-          'Pro-Tarif kostet dann ab 3,99 €/Monat (39 €/Jahr) — mit '
-          'Gründerpreis-Garantie: Wer sich jetzt registriert, sichert sich '
-          'diesen Preis dauerhaft, auch wenn er für später hinzukommende '
-          'Nutzer:innen steigt.',
-          style: Theme.of(context).textTheme.bodyMedium,
-        ),
-        const SizedBox(height: Spacing.lg),
-        Align(
-          alignment: Alignment.centerRight,
-          child: SubsumoButton.primary(
-            label: 'Kostenlos registrieren und Preis sichern',
-            onPressed: () => context.go('/app'),
+        SubsumoSection(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Preise', style: Theme.of(context).textTheme.headlineMedium),
+              Text(
+                '(Early Access)',
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              const SizedBox(height: Spacing.lg),
+              Text(
+                'Subsumo ist gerade gestartet. Die Bezahlstrecke ist noch nicht '
+                'live — bis dahin nutzt du Subsumo im vollen Pro-Umfang kostenlos: '
+                'alle drei Rechtsgebiete, unbegrenzte Karten, Schemata, Fälle und '
+                'Struktur-Checks.',
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
+              const SizedBox(height: Spacing.md),
+              Text(
+                'Sobald die Bezahlstrecke startet, wechseln wir auf Free/Pro. Der '
+                'Pro-Tarif kostet dann ab 3,99 €/Monat (39 €/Jahr) — mit '
+                'Gründerpreis-Garantie: Wer sich jetzt registriert, sichert sich '
+                'diesen Preis dauerhaft, auch wenn er für später hinzukommende '
+                'Nutzer:innen steigt.',
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
+              const SizedBox(height: Spacing.lg),
+              Align(
+                alignment: Alignment.centerRight,
+                child: SubsumoButton.primary(
+                  label: 'Kostenlos registrieren und Preis sichern',
+                  onPressed: () => context.go('/app'),
+                ),
+              ),
+            ],
           ),
         ),
-        const SizedBox(height: Spacing.xl),
-        const _FeatureTable(
-          proHeader: 'Pro (kommt bald, aktuell für alle inklusive)',
-          priceRow: (
-            free: '0 €',
-            pro: '3,99 €/Monat oder 39 €/Jahr (inkl. gesetzlicher USt., sofern diese anfällt)',
+        const SubsumoSection(
+          background: SubsumoSectionBackground.surface1,
+          child: _FeatureTable(
+            proHeader: 'Pro (kommt bald, aktuell für alle inklusive)',
+            priceRow: (
+              free: '0 €',
+              pro: '3,99 €/Monat oder 39 €/Jahr (inkl. gesetzlicher USt., sofern diese anfällt)',
+            ),
           ),
         ),
       ],

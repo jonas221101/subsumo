@@ -12,6 +12,7 @@ class SubsumoCard extends StatelessWidget {
     required this.child,
     this.padding = const EdgeInsets.all(Spacing.lg),
     this.margin,
+    this.color,
     super.key,
   });
 
@@ -19,9 +20,16 @@ class SubsumoCard extends StatelessWidget {
   final EdgeInsetsGeometry padding;
   final EdgeInsetsGeometry? margin;
 
+  /// Ohne Angabe nutzt [Card] die Themevorgabe. Explizit gesetzt fuer Karten,
+  /// die sich bewusst per Flaeche (statt einer weiteren Elevation-Stufe) von
+  /// gleichrangigen Elementen absetzen sollen, z. B. die Coverage-Hero-Karte
+  /// im Dashboard (`colorScheme.surfaceContainerHighest`, docs/25 Abschnitt 6).
+  final Color? color;
+
   @override
   Widget build(BuildContext context) => Card(
         margin: margin,
+        color: color,
         child: Padding(padding: padding, child: child),
       );
 }

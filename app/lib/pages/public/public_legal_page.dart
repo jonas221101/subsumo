@@ -19,7 +19,9 @@ class PublicLegalPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final doc = legalDocForSlug(slug);
     return PublicScaffold(
-      child: doc == null ? _UnknownLegalSlug(slug: slug) : _LegalDocBody(doc: doc),
+      child: SubsumoSection(
+        child: doc == null ? _UnknownLegalSlug(slug: slug) : _LegalDocBody(doc: doc),
+      ),
     );
   }
 }
