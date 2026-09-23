@@ -1,0 +1,243 @@
+topic:
+  slug: sr-bt-noetigung-240
+  area: strafrecht
+  title: Noetigung, § 240 StGB
+  parent: sr-at
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: sr-noetigung-gewaltbegriff
+  type: definition
+  front: 'Definiere: Gewalt i.S.d. § 240 Abs. 1 StGB'
+  back: Gewalt ist der Einsatz koerperlicher Kraft durch den Taeter, der beim Opfer
+    eine koerperlich (nicht nur psychisch) vermittelte Zwangswirkung entfaltet. Eine
+    rein psychisch vermittelte Zwangswirkung - etwa blosser Konformitaetsdruck durch
+    die Anwesenheit anderer - genuegt nach der einschraenkenden Rechtsprechung des
+    Bundesverfassungsgerichts nicht.
+  norms:
+  - § 240 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-noetigung-drohung-empfindliches-uebel
+  type: definition
+  front: 'Definiere: Drohung mit einem empfindlichen Uebel, § 240 Abs. 1 StGB'
+  back: Eine Drohung ist das In-Aussicht-Stellen eines kuenftigen Uebels, auf dessen
+    Eintritt der Drohende Einfluss zu haben vorgibt. Empfindlich ist das Uebel, wenn
+    es geeignet ist, einen besonnenen Menschen in der Lage des Bedrohten zu dem vom
+    Taeter verlangten Verhalten zu bestimmen.
+  norms:
+  - § 240 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-noetigung-noetigungserfolg
+  type: definition
+  front: Was verlangt der Noetigungserfolg des § 240 Abs. 1 StGB und was folgt aus
+    § 240 Abs. 3 StGB?
+  back: '§ 240 StGB ist Erfolgsdelikt: Das Opfer muss durch das Noetigungsmittel tatsaechlich
+    zu einer Handlung, Duldung oder Unterlassung bestimmt worden sein - zwischen Noetigungsmittel
+    und -erfolg muss ein Kausalzusammenhang bestehen. Bleibt dieser Erfolg aus, ist
+    die Tat nicht vollendet; § 240 Abs. 3 StGB stellt jedoch den Versuch der Noetigung
+    ausdruecklich unter Strafe.'
+  norms:
+  - § 240 Abs. 1 StGB
+  - § 240 Abs. 3 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-noetigung-verwerflichkeit
+  type: definition
+  front: Welche Funktion hat die Verwerflichkeitsklausel des § 240 Abs. 2 StGB?
+  back: '§ 240 Abs. 2 StGB macht die Rechtswidrigkeit von einer Zweck-Mittel-Relation
+    abhaengig: Auch wenn Noetigungsmittel und verfolgter Zweck fuer sich genommen
+    erlaubt sind, kann ihre konkrete Verknuepfung als verwerflich - in besonderem
+    Masse sozialwidrig - erscheinen und die Tat rechtswidrig machen. Es handelt sich
+    um ein eigenstaendiges Rechtswidrigkeitsmerkmal, nicht um ein Element des Tatbestands.'
+  norms:
+  - § 240 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-noetigung-sitzblockade-zweite-reihe
+  type: rechtsprechung
+  front: Was besagt die 'Zweite-Reihe-Rechtsprechung' des Bundesverfassungsgerichts
+    zu Sitzblockaden?
+  back: 'Bei Sitzblockaden liegt gegenueber dem unmittelbar blockierten Fahrzeugfuehrer
+    Gewalt vor, weil dieser durch die koerperliche Anwesenheit der Sitzenden physisch
+    am Weiterfahren gehindert wird. Gegenueber nachfolgenden Fahrzeugfuehrern, die
+    nur durch das vor ihnen stehende (nicht selbst blockierte) Fahrzeug am Weiterfahren
+    gehindert werden, fehlt es dagegen an Gewalt: die auf sie wirkende Zwangswirkung
+    ist nur psychisch vermittelt. Ein weiter, ''vergeistigter'' Gewaltbegriff, der
+    auch diese Faelle erfasst, verstoesst gegen das strafrechtliche Bestimmtheitsgebot
+    des Art. 103 Abs. 2 GG.'
+  norms:
+  - § 240 Abs. 1 StGB
+  - Art. 103 Abs. 2 GG
+  quellen:
+  - BVerfGE, amtliche Sammlung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-noetigung-verwerflichkeit-sozialadaequanz
+  type: streitstand
+  front: Wann fehlt es trotz eingesetzter Drohung an der Verwerflichkeit i.S.d. §
+    240 Abs. 2 StGB?
+  back: Nicht jede Ankuendigung eines Uebels ist verwerflich. Setzt der Taeter ein
+    an sich zulaessiges Mittel zur Durchsetzung eines sachlich damit zusammenhaengenden,
+    billigenswerten Zwecks ein - etwa die Ankuendigung einer Strafanzeige, um einen
+    bestehenden und faelligen Schadensersatzanspruch durchzusetzen - fehlt es regelmaessig
+    an der Verwerflichkeit. Verwerflich wird die Verknuepfung erst, wenn zwischen
+    dem angedrohten Uebel und dem verfolgten Zweck kein innerer Zusammenhang mehr
+    besteht oder das Mittel zur Durchsetzung eines nicht zu beanstandenden Zwecks
+    unverhaeltnismaessig ist.
+  norms:
+  - § 240 Abs. 2 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-noetigung-besonders-schwere-faelle
+  type: norm
+  front: Was regelt § 240 Abs. 4 StGB?
+  back: § 240 Abs. 4 StGB erhoeht den Strafrahmen fuer besonders schwere Faelle auf
+    Freiheitsstrafe von sechs Monaten bis zu fuenf Jahren. Ein besonders schwerer
+    Fall liegt in der Regel vor, wenn der Taeter eine Schwangere noetigt, den Schwangerschaftsabbruch
+    vornehmen zu lassen (§ 240 Abs. 4 Satz 2 Nr. 1 StGB), oder seine Befugnisse oder
+    seine Stellung als Amtstraeger missbraucht (§ 240 Abs. 4 Satz 2 Nr. 2 StGB).
+  norms:
+  - § 240 Abs. 4 Satz 2 Nr. 1 StGB
+  - § 240 Abs. 4 Satz 2 Nr. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-240
+  title: Noetigung, § 240 Abs. 1 StGB
+  norms:
+  - § 240 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: 'a) Noetigungsmittel: Gewalt oder Drohung mit empfindlichem Uebel'
+        hinweis: Gewalt erfordert eine koerperlich vermittelte Zwangswirkung beim
+          Opfer - rein psychischer Druck genuegt nicht.
+      - label: 'b) Noetigungserfolg: Handlung, Duldung oder Unterlassung'
+      - label: c) Kausalzusammenhang zwischen Noetigungsmittel und -erfolg
+    - label: '2. Subjektiver Tatbestand: Vorsatz, § 15 StGB'
+  - label: II. Rechtswidrigkeit
+    children:
+    - label: 1. Verwerflichkeit der Zweck-Mittel-Relation, § 240 Abs. 2 StGB
+  - label: III. Schuld
+  - label: IV. Besonders schwerer Fall, § 240 Abs. 4 StGB
+    hinweis: Nur pruefen, wenn der Sachverhalt dazu Anlass gibt.
+faelle:
+- slug: sr-fall-sitzblockade-werkstor
+  title: Die Sitzblockade vor dem Werkstor
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: A nimmt an einer Protestkundgebung gegen die Geschaeftspraxis eines Unternehmens
+    teil und setzt sich zusammen mit anderen Demonstranten auf die Fahrbahn unmittelbar
+    vor die Zufahrt zum Werksgelaende. Der herannahende LKW-Fahrer F muss unmittelbar
+    vor den sitzenden Demonstranten anhalten, weil er sonst ueber sie hinwegfahren
+    muesste. Im Laufe der naechsten Minuten reihen sich hinter F weitere Fahrzeuge
+    auf; deren Fahrer, darunter N, kommen an F nicht vorbei und bleiben ebenfalls
+    stehen, ohne selbst von Demonstranten blockiert zu sein. Die Blockade dauert 20
+    Minuten, bis die Polizei die Sitzenden wegtraegt.
+  question: Hat sich A gegenueber F und gegenueber N jeweils wegen Noetigung gemaess
+    § 240 Abs. 1 StGB strafbar gemacht?
+  steps:
+  - prompt: Formuliere den Obersatz fuer das Verhaeltnis A/F.
+    erwartung: A koennte sich durch das Sitzen vor dem Fahrzeug des F wegen Noetigung
+      gemaess § 240 Abs. 1 StGB strafbar gemacht haben.
+  - prompt: Liegt gegenueber F Gewalt vor?
+    erwartung: 'Ja - die koerperliche Anwesenheit der Sitzenden vor dem Fahrzeug entfaltet
+      eine koerperlich vermittelte Zwangswirkung: F kann nur ueber Personen hinwegfahren,
+      um weiterzukommen.'
+  - prompt: Liegt gegenueber F ein Noetigungserfolg vor?
+    erwartung: Ja - F unterlaesst die Weiterfahrt, weil er durch die Blockade dazu
+      gezwungen wird.
+  - prompt: Ist die Tat gegenueber F auch verwerflich i.S.d. § 240 Abs. 2 StGB?
+    erwartung: Im Ergebnis ja - bei einer laengeren, gezielten Blockade eines Einzelnen
+      ueberwiegt regelmaessig das Interesse an ungehinderter Fortbewegung gegenueber
+      dem Protestanliegen.
+  - prompt: Formuliere den Obersatz fuer das Verhaeltnis A/N.
+    erwartung: A koennte sich auch gegenueber N wegen Noetigung gemaess § 240 Abs.
+      1 StGB strafbar gemacht haben.
+  - prompt: Liegt gegenueber N Gewalt vor?
+    erwartung: Nein - N wird nicht durch die koerperliche Anwesenheit der Demonstranten,
+      sondern nur durch das vor ihm stehende Fahrzeug des F am Weiterfahren gehindert.
+      Diese Zwangswirkung ist nur psychisch vermittelt und erfuellt nach der Zweite-Reihe-Rechtsprechung
+      des Bundesverfassungsgerichts nicht den Gewaltbegriff des § 240 Abs. 1 StGB.
+  - prompt: Formuliere das Ergebnis.
+    erwartung: A hat sich gegenueber F wegen Noetigung gemaess § 240 Abs. 1 StGB strafbar
+      gemacht, gegenueber N mangels Gewalt dagegen nicht.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Gewalt gegenueber F bejaht (koerperlich vermittelte Zwangswirkung)
+      weight: 2.5
+      required: true
+      norms:
+      - § 240 Abs. 1 StGB
+      keywords:
+      - Gewalt
+      - koerperlich
+    - id: p2
+      label: Noetigungserfolg bei F erkannt (Unterlassen der Weiterfahrt)
+      weight: 1.0
+      required: false
+      keywords:
+      - Noetigungserfolg
+      - Weiterfahrt
+    - id: p3
+      label: Verwerflichkeit gegenueber F angesprochen und begruendet
+      weight: 1.5
+      required: false
+      norms:
+      - § 240 Abs. 2 StGB
+      keywords:
+      - verwerflich
+    - id: p4
+      label: Gewalt gegenueber N verneint mit Begruendung (nur psychisch vermittelte
+        Zwangswirkung durch das stehende Fahrzeug)
+      weight: 3.0
+      required: true
+      norms:
+      - § 240 Abs. 1 StGB
+      keywords:
+      - psychisch vermittelt
+      - keine Gewalt
+    - id: p5
+      label: Bezug zur Zweite-Reihe-Rechtsprechung / Bestimmtheitsgebot, Art. 103
+        Abs. 2 GG
+      weight: 1.5
+      required: false
+      norms:
+      - Art. 103 Abs. 2 GG
+      keywords:
+      - Bestimmtheitsgebot
+      - Zweite-Reihe
+    - id: p6
+      label: 'Differenziertes Ergebnis: strafbar ggue. F, nicht strafbar ggue. N'
+      weight: 1.0
+      required: false
+      keywords:
+      - gegenueber F
+      - gegenueber N
