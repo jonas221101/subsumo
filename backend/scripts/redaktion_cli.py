@@ -152,6 +152,17 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
             "Toetungsdelikte, §§ 211, 212 StGB",
             "Strafrecht BT, Mordmerkmale, Abgrenzung § 211/§ 212",
         ),
+        (
+            "Kausalitaet und objektive Zurechnung",
+            "Strafrecht AT, Aequivalenztheorie/conditio sine qua non, Adaequanz, "
+            "Schutzzweck der Norm, eigenverantwortliche Selbstgefaehrdung, "
+            "atypischer Kausalverlauf",
+        ),
+        (
+            "Vorsatz und Tatbestandsirrtum, § 16 StGB",
+            "Strafrecht AT, Vorsatzformen, error in persona vel objecto, aberratio "
+            "ictus, Abgrenzung zum Verbotsirrtum § 17 StGB",
+        ),
     ],
     "oeffentliches-recht": [
         (
