@@ -163,6 +163,50 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
             "Strafrecht AT, Vorsatzformen, error in persona vel objecto, aberratio "
             "ictus, Abgrenzung zum Verbotsirrtum § 17 StGB",
         ),
+        # P2-Nachtrag SUB-244 (Nutzerentscheid 23.09.2026 auf SUB-225: P2 vor
+        # Release), Reihenfolge nach Klausurrelevanz siehe Issue.
+        (
+            "Rechtfertigender Notstand, § 34 StGB",
+            "Strafrecht AT, Notstandslage, Erforderlichkeit, wesentliches "
+            "Ueberwiegen der Interessen, Angemessenheit, Abgrenzung zu § 32 "
+            "StGB und zu § 35 StGB",
+        ),
+        (
+            "Noetigung, § 240 StGB",
+            "Strafrecht BT, Gewalt- und Drohungsbegriff, Noetigungserfolg, "
+            "Verwerflichkeit § 240 Abs. 2 StGB als Rechtswidrigkeitskorrektiv, "
+            "Sitzblockaden-Rechtsprechung",
+        ),
+        (
+            "Verbotsirrtum, § 17 StGB",
+            "Strafrecht AT, Abgrenzung zum Tatbestandsirrtum § 16 StGB, "
+            "Vermeidbarkeit, Erlaubnisirrtum und Erlaubnistatbestandsirrtum im "
+            "Ueberblick",
+        ),
+        (
+            "Fahrlaessige Toetung, § 222 StGB",
+            "Strafrecht AT/BT, objektive Sorgfaltspflichtverletzung, objektive "
+            "Vorhersehbarkeit, Pflichtwidrigkeitszusammenhang, "
+            "Schutzzweckzusammenhang, eigenverantwortliche Selbstgefaehrdung",
+        ),
+        (
+            "Unterschlagung, § 246 StGB",
+            "Strafrecht BT, Zueignung als Manifestation, Subsidiaritaetsklausel "
+            "§ 246 Abs. 1 a. E., veruntreuende Unterschlagung Abs. 2, "
+            "Abgrenzung zu § 242 StGB",
+        ),
+        (
+            "Erpressung, § 253 StGB",
+            "Strafrecht BT, Noetigungsmittel, Vermoegensverfuegung als "
+            "Streitfrage, Vermoegensschaden, raeuberische Erpressung § 255 "
+            "StGB und Abgrenzung zum Raub § 249 StGB",
+        ),
+        (
+            "Untreue, § 266 StGB",
+            "Strafrecht BT, Missbrauchs- und Treubruchtatbestand, "
+            "Vermoegensbetreuungspflicht, Vermoegensnachteil und die "
+            "verfassungsrechtliche Praezisierungspflicht (BVerfGE 126, 170)",
+        ),
     ],
     "oeffentliches-recht": [
         (
