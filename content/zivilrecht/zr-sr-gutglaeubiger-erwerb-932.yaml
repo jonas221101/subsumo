@@ -1,0 +1,256 @@
+topic:
+  slug: zr-sr-gutglaeubiger-erwerb-932
+  area: zivilrecht
+  title: Gutglaeubiger Erwerb, § 932 BGB
+  parent: zr-sr-eigentumserwerb-929
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: zr-sr-gutglaeubiger-erwerb-932-grundgedanke
+  type: definition
+  front: Was ist der Grundgedanke des gutglaeubigen Erwerbs, § 932 Abs. 1 BGB?
+  back: 'Durch eine Veraeusserung nach § 929 BGB wird der Erwerber auch dann Eigentuemer,
+    wenn die Sache dem Veraeusserer nicht gehoert - es sei denn, der Erwerber ist
+    im massgeblichen Zeitpunkt nicht in gutem Glauben (§ 932 Abs. 1 BGB). Der Rechtsschein,
+    an den das Gesetz anknuepft, ist der Besitz des Veraeusserers: Wer eine Sache
+    besitzt, erweckt den (widerlegbaren) Anschein, ihr Eigentuemer zu sein.'
+  norms:
+  - § 932 Abs. 1 BGB
+  - § 929 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-sr-guter-glaube-932-2
+  type: definition
+  front: Wann fehlt dem Erwerber der gute Glaube, § 932 Abs. 2 BGB?
+  back: Der Erwerber ist nicht in gutem Glauben, wenn ihm bekannt ist oder infolge
+    grober Fahrlaessigkeit unbekannt ist, dass die Sache nicht dem Veraeusserer gehoert
+    (§ 932 Abs. 2 BGB). Grobe Fahrlaessigkeit liegt vor, wenn der Erwerber die im
+    Verkehr erforderliche Sorgfalt in ungewoehnlich hohem Masse verletzt und ganz
+    naheliegende Umstaende ausser Acht laesst, die auf die fehlende Berechtigung des
+    Veraeusserers hindeuten.
+  norms:
+  - § 932 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-sr-massgeblicher-zeitpunkt-guter-glaube
+  type: definition
+  front: Auf welchen Zeitpunkt kommt es fuer die Gutglaeubigkeit des Erwerbers an?
+  back: Massgeblich ist grundsaetzlich der Zeitpunkt, zu dem der Erwerber nach den
+    §§ 929 ff. BGB das Eigentum erwerben wuerde - also regelmaessig der Zeitpunkt
+    der Uebergabe. Vollzieht sich der Erwerb erst spaeter (z. B. beim Besitzkonstitut
+    erst mit der tatsaechlichen Besitzerlangung, § 933 BGB), muss der gute Glaube
+    bis zu diesem spaeteren Zeitpunkt fortbestehen; entfaellt er vorher, scheitert
+    der Erwerb.
+  norms:
+  - § 932 Abs. 1 BGB
+  - § 933 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-sr-gutglaeubiger-erwerb-933-besitzkonstitut
+  type: definition
+  front: Wie unterscheidet sich der gutglaeubige Erwerb beim Besitzkonstitut, § 933
+    BGB, von § 932 BGB?
+  back: Wird die Uebergabe durch ein Besitzkonstitut (§ 930 BGB) ersetzt, so geht
+    das Eigentum erst ueber, wenn der Erwerber den Besitz der Sache vom Veraeusserer
+    erlangt hat - es sei denn, er ist zu dieser Zeit nicht mehr in gutem Glauben (§
+    933 BGB). Die blosse Vereinbarung des Besitzmittlungsverhaeltnisses reicht also
+    anders als bei § 932 BGB nicht aus, weil ihr kein nach aussen erkennbarer Rechtsschein
+    zukommt - erst der tatsaechliche Besitzuebergang schafft diesen.
+  norms:
+  - § 933 BGB
+  - § 930 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-sr-gutglaeubiger-erwerb-934-abtretung
+  type: definition
+  front: Wie regelt § 934 BGB den gutglaeubigen Erwerb bei Abtretung des Herausgabeanspruchs?
+  back: 'Wird die Uebergabe durch Abtretung des Herausgabeanspruchs (§ 931 BGB) ersetzt,
+    differenziert § 934 BGB: War der veraeussernde Nichtberechtigte mittelbarer Besitzer,
+    wird der Erwerber schon mit der Abtretung Eigentuemer. War er es nicht (die Sache
+    befand sich bei einem Dritten, ohne dass der Veraeusserer selbst mittelbaren Besitz
+    hatte), wird der Erwerber erst Eigentuemer, wenn er den Besitz von dem Dritten
+    erlangt.'
+  norms:
+  - § 934 BGB
+  - § 931 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-sr-abhandenkommen-935-1
+  type: definition
+  front: 'Definiere: Abhandenkommen, § 935 Abs. 1 BGB'
+  back: Ein gutglaeubiger Erwerb ist ausgeschlossen, wenn die Sache dem Eigentuemer
+    gestohlen worden, verloren gegangen oder sonst abhandengekommen ist (§ 935 Abs.
+    1 BGB). Abhandenkommen bedeutet den unfreiwilligen Verlust des unmittelbaren Besitzes
+    - anders als beim Diebstahl oder Verlust genuegt fuer die Auffangvariante "sonst
+    abhandengekommen" jeder Fall, in dem der unmittelbare Besitzer den Besitz ohne
+    oder gegen seinen Willen einbueszt.
+  norms:
+  - § 935 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-sr-935-2-ausnahmen-geld-versteigerung
+  type: definition
+  front: Welche Ausnahmen vom Ausschluss des gutglaeubigen Erwerbs nennt § 935 Abs.
+    2 BGB?
+  back: Bei Geld, Inhaberpapieren und Sachen, die im Wege oeffentlicher Versteigerung
+    veraeussert werden, greift der Ausschluss des § 935 Abs. 1 BGB nicht - ein gutglaeubiger
+    Erwerb ist hier auch bei Abhandenkommen moeglich (§ 935 Abs. 2 BGB). Der Grund
+    liegt im besonderen Verkehrsschutzbeduerfnis bei umlauffaehigen Sachen und bei
+    Erwerbsvorgaengen, denen ein besonderes Vertrauen entgegengebracht wird.
+  norms:
+  - § 935 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-sr-abhandenkommen-mehrstufiger-besitz
+  type: definition
+  front: Kommt es fuer § 935 BGB auf den unmittelbaren oder auf den mittelbaren Besitzer
+    an?
+  back: Massgeblich ist der unmittelbare Besitzer. Verliert dieser den Besitz unfreiwillig
+    (z. B. wird ihm die Sache gestohlen), ist sie abhandengekommen - unabhaengig davon,
+    ob ein mittelbarer Besitzer (etwa der Eigentuemer, der die Sache zuvor freiwillig
+    einem Entleiher uebergeben hatte) selbst freiwillig aus der Hand gegeben hat.
+    Der Besitzdiener (§ 855 BGB) ist dagegen kein eigener Besitzer; sein unfreiwilliger
+    Besitzverlust wird dem Besitzherrn zugerechnet.
+  norms:
+  - § 935 Abs. 1 BGB
+  - § 855 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-gutglaeubiger-erwerb-932
+  title: Gutglaeubiger Erwerb vom Nichtberechtigten, §§ 932 ff. BGB
+  norms:
+  - § 932 BGB
+  - § 933 BGB
+  - § 934 BGB
+  - § 935 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Rechtsgeschaeftlicher Erwerbstatbestand nach §§ 929 ff. BGB
+    hinweis: Einigung und Uebergabe bzw. Uebergabesurrogat, ausser der Berechtigung
+      des Veraeusserers.
+  - label: II. Nichtberechtigung des Veraeusserers
+  - label: III. Gutglaeubigkeit des Erwerbers, § 932 Abs. 2 BGB
+    hinweis: Kein Wissen und keine grobe Fahrlaessigkeit hinsichtlich der fehlenden
+      Berechtigung.
+  - label: IV. Ausreichender Rechtsscheinstatbestand je nach Erwerbsart
+    children:
+    - label: '1. Bei Uebergabe, § 929 S. 1, 2 BGB: Besitz des Veraeusserers genuegt'
+    - label: '2. Bei Besitzkonstitut: erst mit tatsaechlicher Besitzerlangung, § 933
+        BGB'
+    - label: '3. Bei Abtretung des Herausgabeanspruchs: differenzierend nach § 934
+        BGB'
+  - label: V. Kein Abhandenkommen, § 935 BGB
+  - label: 'VI. Ergebnis: gutglaeubiger Eigentumserwerb (+)/(-)'
+faelle:
+- slug: zr-fall-verliehenes-mountainbike
+  title: Das verliehene Mountainbike
+  difficulty: 3
+  minutes: 35
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: E verleiht sein Mountainbike fuer eine Woche an seinen Bekannten M. Ohne
+    Wissen des E verkauft M das Fahrrad noch waehrend der Leihzeit an den D fuer 200
+    EUR und uebergibt es ihm sofort; D geht davon aus, dass M der Eigentuemer ist,
+    und hat keinen Anlass, daran zu zweifeln. Als E nach Ablauf der Woche das Rad
+    von M zurueckverlangt, erfaehrt er von dem Verkauf und verlangt nun von D die
+    Herausgabe des Fahrrads.
+  question: Kann E von D die Herausgabe des Fahrrads gemaess § 985 BGB verlangen?
+  steps:
+  - prompt: Formuliere den Obersatz.
+    erwartung: E koennte gegen D einen Anspruch auf Herausgabe aus § 985 BGB haben,
+      wenn E Eigentuemer und D Besitzer ohne eigenes Recht zum Besitz ist.
+  - prompt: Konnte D trotz fehlender Berechtigung des M Eigentuemer werden?
+    erwartung: 'Ja, moeglicherweise gutglaeubig nach § 932 BGB: Einigung und Uebergabe
+      zwischen M und D liegen vor, M war aber Nichtberechtigter (nur Entleiher).'
+  - prompt: War D in gutem Glauben?
+    erwartung: Ja, laut Sachverhalt ging D ohne grobe Fahrlaessigkeit davon aus, dass
+      M Eigentuemer sei.
+  - prompt: Ist das Fahrrad dem E abhandengekommen, § 935 Abs. 1 BGB?
+    erwartung: Nein. E hat das Rad freiwillig an M verliehen, und M hat es seinerseits
+      freiwillig an D weitergegeben - auf keiner Besitzstufe liegt ein unfreiwilliger
+      Besitzverlust vor.
+  - prompt: Zu welchem Ergebnis kommst du?
+    erwartung: D hat gutglaeubig Eigentum erworben (§ 932 BGB); E hat sein Eigentum
+      verloren und daher keinen Anspruch aus § 985 BGB gegen D.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Anspruchsgrundlage § 985 BGB genannt (Obersatz, Vindikationslage)
+      weight: 1.5
+      required: true
+      norms:
+      - § 985 BGB
+      keywords:
+      - '985'
+      - Herausgabe
+    - id: p2
+      label: Erwerbstatbestand § 929 S. 1 BGB zwischen M und D bejaht, aber M als
+        Nichtberechtigter erkannt
+      weight: 1.5
+      norms:
+      - § 929 BGB
+      keywords:
+      - '929'
+      - Nichtberechtigter
+      - Entleiher
+    - id: p3
+      label: Gutglaeubigkeit des D nach § 932 Abs. 2 BGB bejaht
+      weight: 1.5
+      norms:
+      - § 932 Abs. 2 BGB
+      keywords:
+      - gutglaeubig
+      - '932'
+    - id: p4
+      label: Kein Abhandenkommen nach § 935 Abs. 1 BGB erkannt und begruendet (freiwillige
+        Weggabe auf jeder Besitzstufe)
+      weight: 3.0
+      required: true
+      norms:
+      - § 935 Abs. 1 BGB
+      keywords:
+      - '935'
+      - Abhandenkommen
+      - freiwillig
+    - id: p5
+      label: 'Ergebnis: D hat gutglaeubig Eigentum erworben, § 932 BGB'
+      weight: 1.5
+      required: true
+      norms:
+      - § 932 Abs. 1 BGB
+      keywords:
+      - '932'
+      - Eigentum erworben
+    - id: p6
+      label: 'Ergebnis: kein Anspruch des E gegen D'
+      weight: 1.0
+      keywords:
+      - kein Anspruch
+      - E hat keinen Anspruch
+      - Anspruch besteht nicht
