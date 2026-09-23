@@ -8,6 +8,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 import 'package:subsumo/api.dart';
+import 'package:subsumo/design/design.dart';
 import 'package:subsumo/main.dart';
 import 'package:subsumo/state.dart';
 
@@ -60,5 +61,22 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.textContaining('Early Access'), findsOneWidget);
+  });
+
+  // SUB-241: "gleiche SubsumoSection-Logik gilt" (docs/25 Abschnitt 3) auch
+  // fuer die Preisseite - zwei inhaltliche Baender plus das Footer-Band aus
+  // PublicScaffold, statt einer erzwungenen Einheitsspalte.
+  testWidgets('Preisseite nutzt SubsumoSection-Baender statt einer Einheitsspalte (beide Varianten)', (
+    tester,
+  ) async {
+    final stateA = AppState(api: _clientWithConfig({'paywall_enabled': true}));
+    await tester.pumpWidget(SubsumoApp(state: stateA, initialLocation: '/preise'));
+    await tester.pumpAndSettle();
+    expect(find.byType(SubsumoSection), findsNWidgets(3));
+
+    final stateB = AppState(api: _clientWithConfig({'paywall_enabled': false}));
+    await tester.pumpWidget(SubsumoApp(state: stateB, initialLocation: '/preise'));
+    await tester.pumpAndSettle();
+    expect(find.byType(SubsumoSection), findsNWidgets(3));
   });
 }
