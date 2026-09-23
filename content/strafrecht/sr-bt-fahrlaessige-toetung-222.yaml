@@ -1,0 +1,228 @@
+topic:
+  slug: sr-bt-fahrlaessige-toetung-222
+  area: strafrecht
+  title: Fahrlaessige Toetung, § 222 StGB
+  parent: sr-at
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: sr-fahrlaessigkeit-begriff
+  type: definition
+  front: 'Definiere: Fahrlaessigkeit im Strafrecht'
+  back: Fahrlaessig handelt, wer die im Verkehr erforderliche Sorgfalt ausser Acht
+    laesst und dadurch einen tatbestandlichen Erfolg verursacht, den er bei Anwendung
+    der gebotenen Sorgfalt haette vorhersehen und vermeiden koennen. Fahrlaessiges
+    Handeln ist gemaess § 15 StGB nur strafbar, wenn das Gesetz dies ausdruecklich
+    bestimmt - fuer die Toetung eines Menschen geschieht dies durch § 222 StGB.
+  norms:
+  - § 15 StGB
+  - § 222 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-fahrlaessigkeit-objektive-sorgfaltspflichtverletzung
+  type: definition
+  front: Woran misst sich die objektive Sorgfaltspflichtverletzung?
+  back: Massstab ist das Verhalten eines gewissenhaften und besonnenen Menschen aus
+    dem Verkehrskreis des Taeters in der konkreten Situation. Konkretisieren Rechtsnormen
+    (z. B. Verkehrs- oder Unfallverhuetungsvorschriften) den Sorgfaltsmassstab, indizieren
+    sie regelmaessig dessen Verletzung; fehlen solche Normen, ist auf die allgemeine
+    Verkehrserwartung abzustellen.
+  norms:
+  - § 222 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-fahrlaessigkeit-objektive-vorhersehbarkeit
+  type: definition
+  front: Was verlangt die objektive Vorhersehbarkeit beim Fahrlaessigkeitsdelikt?
+  back: Der Eintritt des tatbestandlichen Erfolgs und der Kausalverlauf muessen in
+    ihren wesentlichen Zuegen fuer einen besonnenen Menschen in der Position des Taeters
+    vorhersehbar gewesen sein. Nicht erforderlich ist die Vorhersehbarkeit des konkreten
+    Geschehensablaufs bis ins Detail.
+  norms:
+  - § 222 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-fahrlaessigkeit-pflichtwidrigkeitszusammenhang
+  type: streitstand
+  front: Was bedeutet Pflichtwidrigkeitszusammenhang, und welche Rolle spielt rechtmaessiges
+    Alternativverhalten?
+  back: Der Erfolg muss gerade auf der Sorgfaltspflichtverletzung beruhen. Waere derselbe
+    Erfolg mit an Sicherheit grenzender Wahrscheinlichkeit auch bei pflichtgemaessem
+    Verhalten eingetreten, fehlt es am Pflichtwidrigkeitszusammenhang und die objektive
+    Zurechnung entfaellt. Nach der im Vordringen befindlichen Risikoerhoehungslehre
+    genuegt es dagegen, dass das pflichtwidrige Verhalten das Risiko des Erfolgseintritts
+    gegenueber pflichtgemaessem Verhalten messbar erhoeht hat.
+  norms:
+  - § 222 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-fahrlaessigkeit-schutzzweckzusammenhang
+  type: definition
+  front: Was verlangt der Schutzzweckzusammenhang beim Fahrlaessigkeitsdelikt?
+  back: Der eingetretene Erfolg muss gerade in den Schutzbereich der verletzten Sorgfaltsnorm
+    fallen. Verwirklicht sich im Erfolg ein Risiko, vor dem die verletzte Norm gar
+    nicht schuetzen wollte, entfaellt die objektive Zurechnung trotz Sorgfaltspflichtverletzung
+    und Kausalitaet.
+  norms:
+  - § 222 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-fahrlaessigkeit-eigenverantwortliche-selbstgefaehrdung
+  type: streitstand
+  front: Wann schliesst eigenverantwortliche Selbstgefaehrdung des Opfers die objektive
+    Zurechnung aus?
+  back: Begibt sich das Opfer in voller Kenntnis des Risikos freiwillig und eigenverantwortlich
+    selbst in eine Gefahr, die sich anschliessend realisiert, faellt der Erfolg in
+    seinen eigenen Verantwortungsbereich. Wer die Selbstgefaehrdung lediglich ermoeglicht
+    oder foerdert, ohne selbst die Tatherrschaft ueber den gefaehrdenden Akt zu haben,
+    haftet dafuer grundsaetzlich nicht wegen eines Fahrlaessigkeitsdelikts - vorausgesetzt,
+    das Opfer durchschaut Art und Ausmass des Risikos ebenso wie derjenige, der die
+    Gefahr foerdert. Anders liegt es bei der einverstaendlichen Fremdgefaehrdung,
+    bei der ein anderer die Tatherrschaft behaelt und das Opfer sich lediglich in
+    dessen Gefahrenbereich begibt - hier bleibt eine Zurechnung grundsaetzlich moeglich.
+  norms:
+  - § 222 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-fahrlaessigkeit-doppelter-massstab
+  type: definition
+  front: Warum wird bei der Fahrlaessigkeit zwischen einem objektiven und einem individuellen
+    Massstab unterschieden?
+  back: 'Auf Tatbestandsebene wird die Sorgfaltspflichtverletzung objektiv-generalisierend
+    anhand eines gedachten gewissenhaften und besonnenen Menschen in der Situation
+    und sozialen Rolle des Taeters bestimmt. Auf der Schuldebene kommt es dagegen
+    auf die individuellen Faehigkeiten und Kenntnisse des konkreten Taeters an: Wer
+    aufgrund persoenlicher Unterlegenheit die objektiv gebotene Sorgfalt gar nicht
+    haette erbringen koennen, dem fehlt insoweit der individuelle Schuldvorwurf.'
+  norms:
+  - § 222 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-222
+  title: Fahrlaessige Toetung, § 222 StGB
+  norms:
+  - § 222 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: '1. Erfolg: Tod eines Menschen'
+    - label: 2. Handlung und Kausalitaet (Aequivalenztheorie)
+    - label: 3. Objektive Sorgfaltspflichtverletzung
+    - label: 4. Objektive Vorhersehbarkeit von Erfolg und Kausalverlauf
+    - label: 5. Objektive Zurechnung
+      children:
+      - label: a) Pflichtwidrigkeitszusammenhang (rechtmaessiges Alternativverhalten)
+      - label: b) Schutzzweckzusammenhang
+      - label: c) Kein Ausschluss durch eigenverantwortliche Selbstgefaehrdung des
+          Opfers
+        hinweis: Nur pruefen, wenn der Sachverhalt eine Mitwirkung oder Selbstgefaehrdung
+          des spaeteren Opfers zeigt.
+  - label: II. Rechtswidrigkeit
+  - label: III. Schuld
+    children:
+    - label: 1. Individuelle Sorgfaltspflichtverletzung (subjektive Fahrlaessigkeit)
+    - label: 2. Individuelle Vorhersehbarkeit und Vermeidbarkeit
+faelle:
+- slug: sr-fall-bungee-sprung-marodes-seil
+  title: Der improvisierte Bungee-Sprung
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: Auf einer privaten Sommerfeier bietet A, ein selbsternannter Extremsport-Enthusiast
+    ohne einschlaegige Ausbildung, den Gaesten einen improvisierten Bungee-Sprung
+    von einer alten Bruecke an. A weist den volljaehrigen B ausdruecklich darauf hin,
+    dass das von ihm mitgebrachte Seil selbstgebaut und nicht geprueft sei und durchaus
+    reissen koenne. B, der das Risiko genau versteht, meldet sich dennoch freiwillig,
+    laesst sich das Seil um die Fuesse binden und springt. Das Seil reisst, B stuerzt
+    in die Tiefe und stirbt an den Folgen des Sturzes.
+  question: Hat sich A dadurch, dass er den Sprung angeboten und das mangelhafte Seil
+    zur Verfuegung gestellt hat, wegen fahrlaessiger Toetung gemaess § 222 StGB strafbar
+    gemacht?
+  steps:
+  - prompt: Formuliere den Obersatz.
+    erwartung: A koennte sich durch das Bereitstellen des Seils und Ermoeglichen des
+      Sprungs wegen fahrlaessiger Toetung gemaess § 222 StGB strafbar gemacht haben.
+  - prompt: Liegt eine objektive Sorgfaltspflichtverletzung vor?
+    erwartung: Ja - das Bereitstellen eines erkennbar ungeprueften, selbstgebauten
+      Sprungseils fuer einen Bungee-Sprung verstoesst gegen die im Verkehr erforderliche
+      Sorgfalt.
+  - prompt: Waren Erfolg und Kausalverlauf objektiv vorhersehbar?
+    erwartung: Ja - dass ein ungeprueftes Seil reissen und der Springer dadurch toedlich
+      verungluecken kann, liegt fuer einen besonnenen Menschen auf der Hand.
+  - prompt: Entfaellt die objektive Zurechnung wegen eigenverantwortlicher Selbstgefaehrdung
+      des B?
+    erwartung: Ja - B kannte das Risiko genau, weil A ihn ausdruecklich gewarnt hatte,
+      und hat sich freiwillig und eigenverantwortlich fuer den Sprung entschieden.
+      Die Tatherrschaft ueber den lebensgefaehrlichen Akt selbst lag allein bei B;
+      A hat die Gefahr lediglich ermoeglicht. Der Erfolg faellt daher in Bs eigenen
+      Verantwortungsbereich.
+  - prompt: Formuliere das Ergebnis.
+    erwartung: A hat sich mangels objektiver Zurechnung des Erfolgs nicht wegen fahrlaessiger
+      Toetung gemaess § 222 StGB strafbar gemacht.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Obersatz mit § 222 StGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 222 StGB
+      keywords:
+      - '222'
+    - id: p2
+      label: Objektive Sorgfaltspflichtverletzung bejaht (mangelhaftes Seil)
+      weight: 1.5
+      required: false
+      keywords:
+      - Sorgfaltspflichtverletzung
+    - id: p3
+      label: Kausalitaet und objektive Vorhersehbarkeit bejaht
+      weight: 1.0
+      required: false
+      keywords:
+      - vorhersehbar
+    - id: p4
+      label: Eigenverantwortliche Selbstgefaehrdung erkannt und Zurechnung deshalb
+        verneint
+      weight: 3.5
+      required: true
+      norms:
+      - § 222 StGB
+      keywords:
+      - eigenverantwortliche Selbstgefaehrdung
+      - Zurechnung
+    - id: p5
+      label: 'Begruendung: B kannte das Risiko, traf freie Entscheidung, A hatte keine
+        Tatherrschaft'
+      weight: 2.0
+      required: true
+      keywords:
+      - Tatherrschaft
+      - eigene Entscheidung
+    - id: p6
+      label: 'Ergebnis: keine Strafbarkeit mangels objektiver Zurechnung'
+      weight: 1.0
+      required: false
+      keywords:
+      - nicht strafbar
+      - keine Zurechnung
