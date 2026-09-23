@@ -61,77 +61,79 @@ Priorität: **P1** Kernbestand, ohne den v1.0 nicht überzeugt · **P2**
 regelmäßig klausurrelevant, gehört in v1.0 wenn der Takt reicht · **P3**
 ergänzend, vertretbar auch erst nach v1.0 (M6, siehe `docs/03-roadmap.md`).
 
-### Zivilrecht (5 vorhanden, 20 offen → 25 Themen)
+### Zivilrecht (18 vorhanden, 8 offen → 26 Themen)
 
 | Thema | Status | Priorität |
 |---|---|---|
 | BGB AT und Kaufrecht (Grundlagen) | ✅ vorhanden (`zr-bgb-at`) | P1 |
 | Stellvertretung, §§ 164 ff. BGB | ✅ vorhanden (`zr-at-stellvertretung`) | P1 |
-| Willenserklärung und Auslegung, §§ 133, 157 BGB | offen | P1 |
-| Anfechtung, §§ 119 ff. BGB | offen | P1 |
-| Geschäftsfähigkeit Minderjähriger, §§ 104 ff. BGB | offen | P1 |
+| Vertreter ohne Vertretungsmacht, §§ 177 ff. BGB | ✅ vorhanden (`zr-at-vertreter-ohne-vertretungsmacht`) | P2 |
+| Willenserklärung und Auslegung, §§ 133, 157 BGB | ✅ vorhanden (`zr-at-auslegung`) | P1 |
+| Anfechtung, §§ 119 ff. BGB | ✅ vorhanden (`zr-at-anfechtung`) | P1 |
+| Geschäftsfähigkeit Minderjähriger, §§ 104 ff. BGB | ✅ vorhanden (`zr-at-geschaeftsfaehigkeit`) | P1 |
 | Verjährung, §§ 194 ff. BGB | offen | P2 |
-| AGB-Kontrolle, §§ 305 ff. BGB | offen | P2 |
+| AGB-Kontrolle, §§ 305 ff. BGB | ✅ vorhanden (`zr-schuldrecht-at-agb-kontrolle`) | P2 |
 | Leistungsstörungen: Unmöglichkeit, § 275 BGB | ✅ vorhanden (`zr-schuldrecht-at-unmoeglichkeit`) | P1 |
-| Verzug, § 286 BGB | offen | P1 |
-| Rücktritt, § 323 BGB | offen | P1 |
-| Schadensersatz statt der Leistung, §§ 280, 281 BGB | offen | P1 |
-| Culpa in contrahendo, § 311 Abs. 2 BGB | offen | P2 |
+| Verzug, § 286 BGB | ✅ vorhanden (`zr-su-verzug`) | P1 |
+| Rücktritt, § 323 BGB | ✅ vorhanden (`zr-schuldrecht-at-ruecktritt`) | P1 |
+| Schadensersatz statt der Leistung, §§ 280, 281 BGB | ✅ vorhanden (`zr-su-schadensersatz-statt-der-leistung`) | P1 |
+| Culpa in contrahendo, § 311 Abs. 2 BGB | ✅ vorhanden (`zr-schuldrecht-at-cic`) | P2 |
 | Abtretung, § 398 BGB | offen | P3 |
 | Deliktsrecht: § 823 Abs. 1 BGB | ✅ vorhanden (`zr-deliktsrecht-823`) | P1 |
-| Mängelgewährleistung Kaufrecht, §§ 434 ff. BGB (vertieft) | offen | P1 |
-| Bereicherungsrecht, § 812 BGB | offen | P1 |
+| Mängelgewährleistung Kaufrecht, §§ 434 ff. BGB (vertieft) | ✅ vorhanden (`zr-kaufrecht-maengelgewaehrleistung`) | P1 |
+| Bereicherungsrecht, § 812 BGB | ✅ vorhanden (`zr-bereicherungsrecht-leistungskondiktion`) | P1 |
 | § 823 Abs. 2 BGB, Schutzgesetzverletzung | offen | P2 |
 | § 826 BGB, vorsätzliche sittenwidrige Schädigung | offen | P2 |
 | Werkvertragsrecht, § 631 BGB | offen | P3 |
 | Eigentumsherausgabe, § 985 BGB | ✅ vorhanden (`zr-sachenrecht-eigentumsherausgabe-985`) | P1 |
-| Eigentumserwerb an beweglichen Sachen, § 929 BGB | offen | P1 |
-| Gutgläubiger Erwerb, § 932 BGB | offen | P1 |
+| Eigentumserwerb an beweglichen Sachen, § 929 BGB | ✅ vorhanden (`zr-sr-eigentumserwerb-929`) | P1 |
+| Gutgläubiger Erwerb, § 932 BGB | ✅ vorhanden (`zr-sr-gutglaeubiger-erwerb-932`) | P1 |
 | Sicherungsübereignung | offen | P2 |
 | Kaufmannsbegriff und Handelsregister, HGB | offen | P3 |
 | Prokura und Handlungsvollmacht, § 48 HGB | offen | P3 |
 
-### Strafrecht (4 vorhanden, 17 offen → 21 Themen)
+### Strafrecht (13 vorhanden, 9 offen → 22 Themen)
 
 | Thema | Status | Priorität |
 |---|---|---|
 | Strafrecht AT: Aufbau des vollendeten Vorsatzdelikts | ✅ vorhanden (`sr-at`) | P1 |
 | Versuch und Rücktritt, §§ 22 ff. StGB | ✅ vorhanden (`sr-versuch-ruecktritt`) | P1 |
 | Täterschaft und Teilnahme, §§ 25 ff. StGB | ✅ vorhanden (`sr-taeterschaft-teilnahme-25`) | P1 |
-| Kausalität und objektive Zurechnung | offen | P1 |
-| Vorsatz und Tatbestandsirrtum, § 16 StGB | offen | P1 |
-| Notwehr, § 32 StGB | offen | P1 |
+| Kausalität und objektive Zurechnung | ✅ vorhanden (`sr-at-kausalitaet-zurechnung`) | P1 |
+| Vorsatz und Tatbestandsirrtum, § 16 StGB | ✅ vorhanden (`sr-at-vorsatz-tatbestandsirrtum`) | P1 |
+| Notwehr, § 32 StGB | ✅ vorhanden (`sr-notwehr-32`) | P1 |
 | Rechtfertigender Notstand, § 34 StGB | offen | P2 |
 | Verbotsirrtum, § 17 StGB | offen | P2 |
 | Fahrlässige Delikte, § 222 StGB | offen | P2 |
-| Unterlassungsdelikte, § 13 StGB | offen | P2 |
+| Unterlassungsdelikte, § 13 StGB | ✅ vorhanden (`sr-at-unterlassungsdelikte`) | P2 |
 | Konkurrenzen | offen | P3 |
-| Körperverletzungsdelikte, §§ 223 ff. StGB | offen | P1 |
-| Tötungsdelikte, §§ 211, 212 StGB | offen | P1 |
+| Körperverletzungsdelikte, §§ 223 ff. StGB | ✅ vorhanden (`sr-bt-koerperverletzung-224`) | P1 |
+| Tötungsdelikte, §§ 211, 212 StGB | ✅ vorhanden (`sr-bt-toetungsdelikte-211-212`) | P1 |
 | Nötigung, § 240 StGB | offen | P2 |
 | Freiheitsberaubung, § 239 StGB | offen | P3 |
 | Diebstahl, § 242 StGB | ✅ vorhanden (`sr-bt-diebstahl`) | P1 |
-| Raub, § 249 StGB | offen | P1 |
-| Betrug, § 263 StGB | offen | P1 |
+| Raub, § 249 StGB | ✅ vorhanden (`sr-bt-raub`) | P1 |
+| Betrug, § 263 StGB | ✅ vorhanden (`sr-bt-betrug`) | P1 |
+| Urkundenfälschung, § 267 StGB | ✅ vorhanden (`sr-bt-urkundenfaelschung-267`) | P2 |
 | Untreue, § 266 StGB | offen | P2 |
 | Unterschlagung, § 246 StGB | offen | P2 |
 | Erpressung, § 253 StGB | offen | P2 |
 
-### Öffentliches Recht (2 vorhanden, 24 offen → 26 Themen)
+### Öffentliches Recht (12 vorhanden, 14 offen → 26 Themen)
 
-Größter Nachholbedarf — heute nur 2 von 11 Themen, obwohl das Fach nach § 18
-JAPO ebenso viele Teilgebiete hat wie Zivilrecht (Staats-/Verfassungsrecht,
-Verwaltungsrecht AT, Kommunalrecht, Polizei-/Sicherheitsrecht, Baurecht,
-Unionsrecht, Prozessrecht).
+Ursprünglich als größter Nachholbedarf geführt (damals 2 von 11 Themen).
+Stand 23.09.2026 ist der P1-Kern des Gebiets vollständig; die 14 offenen
+Themen sind sämtlich P2/P3 (Kommunalrecht, Polizei-/Sicherheitsrecht,
+Baurecht, Unionsrecht und vertiefende Verfassungsprozessthemen).
 
 | Thema | Status | Priorität |
 |---|---|---|
 | Grundrechte und Verfassungsprozessrecht (Grundlagen) | ✅ vorhanden (`or-grundrechte`) | P1 |
 | Art. 12 Abs. 1 GG: Berufsfreiheit | ✅ vorhanden (`or-berufsfreiheit`) | P1 |
-| Art. 14 GG: Eigentumsgarantie | offen | P1 |
-| Art. 2 Abs. 1 GG: Allgemeine Handlungsfreiheit | offen | P1 |
-| Art. 3 GG: Gleichheitssatz | offen | P1 |
-| Art. 5 GG: Meinungsfreiheit | offen | P1 |
+| Art. 14 GG: Eigentumsgarantie | ✅ vorhanden (`or-eigentumsgarantie`) | P1 |
+| Art. 2 Abs. 1 GG: Allgemeine Handlungsfreiheit | ✅ vorhanden (`or-allgemeine-handlungsfreiheit`) | P1 |
+| Art. 3 GG: Gleichheitssatz | ✅ vorhanden (`or-gleichheitssatz`) | P1 |
+| Art. 5 GG: Meinungsfreiheit | ✅ vorhanden (`or-meinungsfreiheit`) | P1 |
 | Art. 8 GG: Versammlungsfreiheit | offen | P2 |
 | Art. 4 GG: Glaubensfreiheit | offen | P3 |
 | Enteignung und Inhalts-/Schrankenbestimmung, Art. 14 GG vertieft | offen | P3 |
@@ -139,14 +141,14 @@ Unionsrecht, Prozessrecht).
 | Organstreitverfahren | offen | P2 |
 | Bund-Länder-Kompetenzen, Art. 70 ff. GG | offen | P3 |
 | Normenkontrollverfahren | offen | P3 |
-| Der Verwaltungsakt, § 35 VwVfG | offen (BACKLOG) | P1 |
-| Ermessen, § 40 VwVfG | offen | P1 |
-| Rechtmäßigkeitsprüfung eines Verwaltungsakts | offen | P1 |
+| Der Verwaltungsakt, § 35 VwVfG | ✅ vorhanden (`or-vwvfg-verwaltungsakt`) | P1 |
+| Ermessen, § 40 VwVfG | ✅ vorhanden (`or-vwvfg-ermessen-beurteilungsspielraum`) | P1 |
+| Rechtmäßigkeitsprüfung eines Verwaltungsakts | ✅ vorhanden (`or-va-rechtmaessigkeitspruefung`) | P1 |
 | Nebenbestimmungen, § 36 VwVfG | offen | P2 |
 | Rücknahme und Widerruf, §§ 48, 49 VwVfG | offen | P2 |
-| Die Anfechtungsklage, § 42 Abs. 1 Var. 1 VwGO | offen (BACKLOG) | P1 |
-| Die Verpflichtungsklage, § 42 Abs. 1 Var. 2 VwGO | offen | P2 |
-| Vorläufiger Rechtsschutz, §§ 80, 123 VwGO | offen | P2 |
+| Die Anfechtungsklage, § 42 Abs. 1 Var. 1 VwGO | ✅ vorhanden (`or-vwgo-anfechtungsklage`) | P1 |
+| Die Verpflichtungsklage, § 42 Abs. 1 Var. 2 VwGO | ✅ vorhanden (`or-vwgo-verpflichtungsklage`) | P2 |
+| Vorläufiger Rechtsschutz, §§ 80, 123 VwGO | ✅ vorhanden (`or-vwgo-vorlaeufiger-rechtsschutz`) | P2 |
 | Polizeiliche Generalklausel und Standardmaßnahmen | offen | P2 |
 | Störerauswahl, §§ 4, 5 PolG | offen | P3 |
 | Organe der Gemeinde (Kommunalrecht) | offen | P3 |
