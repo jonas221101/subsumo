@@ -159,7 +159,7 @@ Unionsrecht, Glaubensfreiheit und vertiefende Verfassungsthemen).
 **Summe: 74 Themen** (Stand 23.09.2026, nach dem P2-Abschluss: **60 vorhanden
 + 14 offen**). Nach Priorität: **P1 36/36 vorhanden, P2 24/24 vorhanden**, P3
 0 vorhanden / 14 offen. Der kuratierte `BACKLOG` in `redaktion_cli.py` ist
-vollständig abgearbeitet (33/33); **alle noch offenen Themen sind
+vollständig abgearbeitet (57/57); **alle noch offenen Themen sind
 ausschließlich P3** und damit laut Prioritätsdefinition oben bewusst
 nach-v1.0-Stoff (M6).
 
