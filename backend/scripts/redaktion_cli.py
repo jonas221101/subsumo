@@ -89,6 +89,30 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
             "Kaufrecht, Sachmangelbegriff, Nacherfuellung, Zusammenspiel "
             "Ruecktritt/Minderung/Schadensersatz",
         ),
+        (
+            "Geschaeftsfaehigkeit Minderjaehriger, §§ 104 ff. BGB",
+            "BGB AT, beschraenkte Geschaeftsfaehigkeit § 106 BGB, Einwilligung und "
+            "Genehmigung §§ 107, 108 BGB, Taschengeldparagraph § 110 BGB",
+        ),
+        (
+            "Verzug, § 286 BGB",
+            "Schuldrecht AT, Mahnung und Entbehrlichkeit § 286 Abs. 2 BGB, "
+            "Verzugsschaden § 280 Abs. 2 BGB, Verzugszinsen § 288 BGB",
+        ),
+        (
+            "Schadensersatz statt der Leistung, §§ 280, 281 BGB",
+            "Schuldrecht AT, Fristsetzung, Abgrenzung zu § 283 BGB, Zusammenspiel "
+            "mit dem Ruecktritt § 325 BGB",
+        ),
+        (
+            "Eigentumserwerb an beweglichen Sachen, § 929 BGB",
+            "Sachenrecht, Einigung und Uebergabe, Uebergabesurrogate §§ 930, 931 BGB",
+        ),
+        (
+            "Gutglaeubiger Erwerb, § 932 BGB",
+            "Sachenrecht, guter Glaube, Abhandenkommen § 935 BGB, Abgrenzung zu "
+            "§ 933 BGB und § 934 BGB",
+        ),
     ],
     "strafrecht": [
         ("Diebstahl, § 242 StGB", "Strafrecht BT, Wegnahme, Zueignungsabsicht"),
