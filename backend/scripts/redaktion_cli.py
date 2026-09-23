@@ -113,6 +113,30 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
             "Sachenrecht, guter Glaube, Abhandenkommen § 935 BGB, Abgrenzung zu "
             "§ 933 BGB und § 934 BGB",
         ),
+        (
+            "Verjaehrung, §§ 194 ff. BGB",
+            "BGB AT, regelmaessige Frist § 195 BGB, Fristbeginn § 199 Abs. 1 BGB "
+            "(Kenntnis/grob fahrlaessige Unkenntnis), Hemmung §§ 203, 204 BGB, "
+            "Neubeginn § 212 BGB, Einredewirkung § 214 BGB",
+        ),
+        (
+            "§ 823 Abs. 2 BGB, Schutzgesetzverletzung",
+            "Deliktsrecht, Schutzgesetzbegriff und Abgrenzung zu reinen "
+            "Ordnungsvorschriften, persoenlicher und sachlicher Schutzbereich, "
+            "Verschuldenserfordernis, Beweislastumkehr, Verhaeltnis zu § 823 Abs. 1 BGB",
+        ),
+        (
+            "§ 826 BGB, vorsaetzliche sittenwidrige Schaedigung",
+            "Deliktsrecht, Sittenwidrigkeit als Wertungsbegriff, Schaedigungsvorsatz "
+            "(auch dolus eventualis), Ersatz reiner Vermoegensschaeden als "
+            "Abgrenzungskriterium zu § 823 Abs. 1 BGB",
+        ),
+        (
+            "Sicherungsuebereignung",
+            "Sachenrecht, Uebereignung nach §§ 929 S. 1, 930 BGB mit Besitzkonstitut, "
+            "Sicherungsabrede als schuldrechtlicher Rechtsgrund, Verwertungsreife, "
+            "Abgrenzung zum Eigentumsvorbehalt und zum Pfandrecht, Uebersicherung",
+        ),
     ],
     "strafrecht": [
         ("Diebstahl, § 242 StGB", "Strafrecht BT, Wegnahme, Zueignungsabsicht"),
