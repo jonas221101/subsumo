@@ -10,6 +10,7 @@ topic:
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-13'
     status: ki-freigegeben
+    normzitate_geprueft: true
 cards:
 - slug: sr-versuch-begriff
   type: definition
