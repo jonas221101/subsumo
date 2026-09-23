@@ -62,7 +62,7 @@ regelmäßig klausurrelevant, ~~gehört in v1.0 wenn der Takt reicht~~ **gesetzt
 v1.0-Umfang (Nutzerentscheid 23.09.2026, siehe Abschnitt 1.1)** · **P3**
 ergänzend, vertretbar auch erst nach v1.0 (M6, siehe `docs/03-roadmap.md`).
 
-### Zivilrecht (18 vorhanden, 8 offen → 26 Themen)
+### Zivilrecht (22 vorhanden, 4 offen → 26 Themen)
 
 | Thema | Status | Priorität |
 |---|---|---|
@@ -72,7 +72,7 @@ ergänzend, vertretbar auch erst nach v1.0 (M6, siehe `docs/03-roadmap.md`).
 | Willenserklärung und Auslegung, §§ 133, 157 BGB | ✅ vorhanden (`zr-at-auslegung`) | P1 |
 | Anfechtung, §§ 119 ff. BGB | ✅ vorhanden (`zr-at-anfechtung`) | P1 |
 | Geschäftsfähigkeit Minderjähriger, §§ 104 ff. BGB | ✅ vorhanden (`zr-at-geschaeftsfaehigkeit`) | P1 |
-| Verjährung, §§ 194 ff. BGB | offen | P2 |
+| Verjährung, §§ 194 ff. BGB | ✅ vorhanden (`zr-at-verjaehrung`) | P2 |
 | AGB-Kontrolle, §§ 305 ff. BGB | ✅ vorhanden (`zr-schuldrecht-at-agb-kontrolle`) | P2 |
 | Leistungsstörungen: Unmöglichkeit, § 275 BGB | ✅ vorhanden (`zr-schuldrecht-at-unmoeglichkeit`) | P1 |
 | Verzug, § 286 BGB | ✅ vorhanden (`zr-su-verzug`) | P1 |
@@ -83,17 +83,17 @@ ergänzend, vertretbar auch erst nach v1.0 (M6, siehe `docs/03-roadmap.md`).
 | Deliktsrecht: § 823 Abs. 1 BGB | ✅ vorhanden (`zr-deliktsrecht-823`) | P1 |
 | Mängelgewährleistung Kaufrecht, §§ 434 ff. BGB (vertieft) | ✅ vorhanden (`zr-kaufrecht-maengelgewaehrleistung`) | P1 |
 | Bereicherungsrecht, § 812 BGB | ✅ vorhanden (`zr-bereicherungsrecht-leistungskondiktion`) | P1 |
-| § 823 Abs. 2 BGB, Schutzgesetzverletzung | offen | P2 |
-| § 826 BGB, vorsätzliche sittenwidrige Schädigung | offen | P2 |
+| § 823 Abs. 2 BGB, Schutzgesetzverletzung | ✅ vorhanden (`zr-deliktsrecht-823-abs2`) | P2 |
+| § 826 BGB, vorsätzliche sittenwidrige Schädigung | ✅ vorhanden (`zr-deliktsrecht-826`) | P2 |
 | Werkvertragsrecht, § 631 BGB | offen | P3 |
 | Eigentumsherausgabe, § 985 BGB | ✅ vorhanden (`zr-sachenrecht-eigentumsherausgabe-985`) | P1 |
 | Eigentumserwerb an beweglichen Sachen, § 929 BGB | ✅ vorhanden (`zr-sr-eigentumserwerb-929`) | P1 |
 | Gutgläubiger Erwerb, § 932 BGB | ✅ vorhanden (`zr-sr-gutglaeubiger-erwerb-932`) | P1 |
-| Sicherungsübereignung | offen | P2 |
+| Sicherungsübereignung | ✅ vorhanden (`zr-sr-sicherungsuebereignung`) | P2 |
 | Kaufmannsbegriff und Handelsregister, HGB | offen | P3 |
 | Prokura und Handlungsvollmacht, § 48 HGB | offen | P3 |
 
-### Strafrecht (13 vorhanden, 9 offen → 22 Themen)
+### Strafrecht (20 vorhanden, 2 offen → 22 Themen)
 
 | Thema | Status | Priorität |
 |---|---|---|
@@ -103,29 +103,29 @@ ergänzend, vertretbar auch erst nach v1.0 (M6, siehe `docs/03-roadmap.md`).
 | Kausalität und objektive Zurechnung | ✅ vorhanden (`sr-at-kausalitaet-zurechnung`) | P1 |
 | Vorsatz und Tatbestandsirrtum, § 16 StGB | ✅ vorhanden (`sr-at-vorsatz-tatbestandsirrtum`) | P1 |
 | Notwehr, § 32 StGB | ✅ vorhanden (`sr-notwehr-32`) | P1 |
-| Rechtfertigender Notstand, § 34 StGB | offen | P2 |
-| Verbotsirrtum, § 17 StGB | offen | P2 |
-| Fahrlässige Delikte, § 222 StGB | offen | P2 |
+| Rechtfertigender Notstand, § 34 StGB | ✅ vorhanden (`sr-notstand-34`) | P2 |
+| Verbotsirrtum, § 17 StGB | ✅ vorhanden (`sr-at-verbotsirrtum-17`) | P2 |
+| Fahrlässige Delikte, § 222 StGB | ✅ vorhanden (`sr-bt-fahrlaessige-toetung-222`) | P2 |
 | Unterlassungsdelikte, § 13 StGB | ✅ vorhanden (`sr-at-unterlassungsdelikte`) | P2 |
 | Konkurrenzen | offen | P3 |
 | Körperverletzungsdelikte, §§ 223 ff. StGB | ✅ vorhanden (`sr-bt-koerperverletzung-224`) | P1 |
 | Tötungsdelikte, §§ 211, 212 StGB | ✅ vorhanden (`sr-bt-toetungsdelikte-211-212`) | P1 |
-| Nötigung, § 240 StGB | offen | P2 |
+| Nötigung, § 240 StGB | ✅ vorhanden (`sr-bt-noetigung-240`) | P2 |
 | Freiheitsberaubung, § 239 StGB | offen | P3 |
 | Diebstahl, § 242 StGB | ✅ vorhanden (`sr-bt-diebstahl`) | P1 |
 | Raub, § 249 StGB | ✅ vorhanden (`sr-bt-raub`) | P1 |
 | Betrug, § 263 StGB | ✅ vorhanden (`sr-bt-betrug`) | P1 |
 | Urkundenfälschung, § 267 StGB | ✅ vorhanden (`sr-bt-urkundenfaelschung-267`) | P2 |
-| Untreue, § 266 StGB | offen | P2 |
-| Unterschlagung, § 246 StGB | offen | P2 |
-| Erpressung, § 253 StGB | offen | P2 |
+| Untreue, § 266 StGB | ✅ vorhanden (`sr-bt-untreue-266`) | P2 |
+| Unterschlagung, § 246 StGB | ✅ vorhanden (`sr-bt-unterschlagung-246`) | P2 |
+| Erpressung, § 253 StGB | ✅ vorhanden (`sr-bt-erpressung-253`) | P2 |
 
-### Öffentliches Recht (12 vorhanden, 14 offen → 26 Themen)
+### Öffentliches Recht (18 vorhanden, 8 offen → 26 Themen)
 
 Ursprünglich als größter Nachholbedarf geführt (damals 2 von 11 Themen).
-Stand 23.09.2026 ist der P1-Kern des Gebiets vollständig; die 14 offenen
-Themen sind sämtlich P2/P3 (Kommunalrecht, Polizei-/Sicherheitsrecht,
-Baurecht, Unionsrecht und vertiefende Verfassungsprozessthemen).
+Stand 23.09.2026 sind P1- **und** P2-Kern des Gebiets vollständig; die
+8 offenen Themen sind sämtlich P3 (Kommunalrecht, Störerauswahl, Baurecht,
+Unionsrecht, Glaubensfreiheit und vertiefende Verfassungsthemen).
 
 | Thema | Status | Priorität |
 |---|---|---|
@@ -135,31 +135,33 @@ Baurecht, Unionsrecht und vertiefende Verfassungsprozessthemen).
 | Art. 2 Abs. 1 GG: Allgemeine Handlungsfreiheit | ✅ vorhanden (`or-allgemeine-handlungsfreiheit`) | P1 |
 | Art. 3 GG: Gleichheitssatz | ✅ vorhanden (`or-gleichheitssatz`) | P1 |
 | Art. 5 GG: Meinungsfreiheit | ✅ vorhanden (`or-meinungsfreiheit`) | P1 |
-| Art. 8 GG: Versammlungsfreiheit | offen | P2 |
+| Art. 8 GG: Versammlungsfreiheit | ✅ vorhanden (`or-versammlungsfreiheit`) | P2 |
 | Art. 4 GG: Glaubensfreiheit | offen | P3 |
 | Enteignung und Inhalts-/Schrankenbestimmung, Art. 14 GG vertieft | offen | P3 |
-| Gesetzgebungsverfahren, Art. 76 ff. GG | offen | P2 |
-| Organstreitverfahren | offen | P2 |
+| Gesetzgebungsverfahren, Art. 76 ff. GG | ✅ vorhanden (`or-staatsorganisationsrecht-gesetzgebungsverfahren`) | P2 |
+| Organstreitverfahren | ✅ vorhanden (`or-verfassungsprozessrecht-organstreitverfahren`) | P2 |
 | Bund-Länder-Kompetenzen, Art. 70 ff. GG | offen | P3 |
 | Normenkontrollverfahren | offen | P3 |
 | Der Verwaltungsakt, § 35 VwVfG | ✅ vorhanden (`or-vwvfg-verwaltungsakt`) | P1 |
 | Ermessen, § 40 VwVfG | ✅ vorhanden (`or-vwvfg-ermessen-beurteilungsspielraum`) | P1 |
 | Rechtmäßigkeitsprüfung eines Verwaltungsakts | ✅ vorhanden (`or-va-rechtmaessigkeitspruefung`) | P1 |
-| Nebenbestimmungen, § 36 VwVfG | offen | P2 |
-| Rücknahme und Widerruf, §§ 48, 49 VwVfG | offen | P2 |
+| Nebenbestimmungen, § 36 VwVfG | ✅ vorhanden (`or-vwvfg-nebenbestimmungen`) | P2 |
+| Rücknahme und Widerruf, §§ 48, 49 VwVfG | ✅ vorhanden (`or-vwvfg-ruecknahme-widerruf`) | P2 |
 | Die Anfechtungsklage, § 42 Abs. 1 Var. 1 VwGO | ✅ vorhanden (`or-vwgo-anfechtungsklage`) | P1 |
 | Die Verpflichtungsklage, § 42 Abs. 1 Var. 2 VwGO | ✅ vorhanden (`or-vwgo-verpflichtungsklage`) | P2 |
 | Vorläufiger Rechtsschutz, §§ 80, 123 VwGO | ✅ vorhanden (`or-vwgo-vorlaeufiger-rechtsschutz`) | P2 |
-| Polizeiliche Generalklausel und Standardmaßnahmen | offen | P2 |
+| Polizeiliche Generalklausel und Standardmaßnahmen | ✅ vorhanden (`or-sicherheitsrecht-generalklausel-standardmassnahmen`) | P2 |
 | Störerauswahl, §§ 4, 5 PolG | offen | P3 |
 | Organe der Gemeinde (Kommunalrecht) | offen | P3 |
 | Bauplanungsrecht, §§ 30–35 BauGB (Grundzüge) | offen | P3 |
 | Grundfreiheiten im Unionsrecht (Grundzüge) | offen | P3 |
 
-**Summe: 74 Themen** (Stand 23.09.2026: 43 vorhanden + 31 offen). Nach
-Priorität: P1 36/36 vorhanden, P2 7 vorhanden / 17 offen, P3 0 vorhanden /
-14 offen. Der kuratierte `BACKLOG` in `redaktion_cli.py` ist vollständig
-abgearbeitet (33/33); die offenen Themen sind ausschließlich P2/P3.
+**Summe: 74 Themen** (Stand 23.09.2026, nach dem P2-Abschluss: **60 vorhanden
++ 14 offen**). Nach Priorität: **P1 36/36 vorhanden, P2 24/24 vorhanden**, P3
+0 vorhanden / 14 offen. Der kuratierte `BACKLOG` in `redaktion_cli.py` ist
+vollständig abgearbeitet (33/33); **alle noch offenen Themen sind
+ausschließlich P3** und damit laut Prioritätsdefinition oben bewusst
+nach-v1.0-Stoff (M6).
 
 **Nicht in v1.0, bewusst:** Familien-/Erbrecht über die Grundzüge hinaus,
 Gesellschaftsrecht über GbR/Prokura hinaus, Arbeitsrecht als eigenes Feld,
@@ -170,32 +172,45 @@ geringerer Klausurdichte; Aufnahme nach v1.0 in M6.
 
 Der Nutzer hat auf [SUB-225](/SUB/issues/SUB-225) entschieden: **„P2 soll vor
 dem Release auch kommen."** Damit ist die bisherige Taktabhängigkeit von P2
-aufgehoben — P2 ist gesetzter v1.0-Umfang. Das betrifft die folgenden 17
-offenen Themen; sie sind auf drei Gebiets-Redakteure verteilt und nach
-Klausurrelevanz sortiert, weil bei Teillieferung die Reihenfolge entscheidet,
-was live geht:
+aufgehoben — P2 ist gesetzter v1.0-Umfang. Das betraf 17 offene Themen,
+verteilt auf drei Gebiets-Redakteure und nach Klausurrelevanz sortiert, weil
+bei Teillieferung die Reihenfolge entscheidet, was live geht.
 
-| Gebiet | Offene P2-Themen | Auftrag |
-|---|---|---|
-| Zivilrecht | Verjährung §§ 194 ff.; § 823 Abs. 2; § 826; Sicherungsübereignung | [SUB-243](/SUB/issues/SUB-243) |
-| Strafrecht | § 34; § 240; § 17; § 222; § 246; § 253; § 266 StGB | [SUB-244](/SUB/issues/SUB-244) |
-| Öffentliches Recht | §§ 48, 49 VwVfG; § 36 VwVfG; Polizeirecht-Generalklausel; Art. 8 GG; Art. 76 ff. GG; Organstreit | [SUB-245](/SUB/issues/SUB-245) |
+**Ergebnis: vollständig geliefert, alle 17 Themen am 23.09.2026 auf `main`.**
 
-**Mengenwirkung:** 17 Themen × Richtwert 7 Karten (Abschnitt 2) ≈ 119
-zusätzliche Karten → **≈ 432 Karten** gegenüber 313 heute. Das G3-Ziel aus
-`docs/18-release-2-wochen.md` (180 Karten) ist damit weiter deutlich
-übererfüllt; die Zielmenge 500 des T3-Gates rückt in Reichweite, ohne dass
-P3 angefasst werden muss.
+| Gebiet | P2-Themen | Auftrag | Stand |
+|---|---|---|---|
+| Zivilrecht | Verjährung §§ 194 ff.; § 823 Abs. 2; § 826; Sicherungsübereignung | [SUB-243](/SUB/issues/SUB-243) | ✅ 4/4, PR #69 (`b78ae6d`) |
+| Strafrecht | § 34; § 240; § 17; § 222; § 246; § 253; § 266 StGB | [SUB-244](/SUB/issues/SUB-244) | ✅ 7/7, PR #70 (`c13c815`) |
+| Öffentliches Recht | §§ 48, 49 VwVfG; § 36 VwVfG; Polizeirecht-Generalklausel; Art. 8 GG; Art. 76 ff. GG; Organstreit | [SUB-245](/SUB/issues/SUB-245) | ✅ 6/6, PR #68 (`75f204e`) |
 
-**Termin-Spannung, offen benannt:** G3 (Content-Freeze) liegt auf **Fr
-25.09.** Der real gemessene Maschinentakt trägt 17 Themen in zwei Tagen
-(SUB-231/232 haben am 23.09. neun Themen in einem Tag geliefert). Was ihn
-*nicht* trägt, ist die menschliche Stichprobe nach Abschnitt 4.2 —
-119 neue Karten heben die 10-%-Quote um ≈ 12 Karten, und für die
-Prüfkapazität gibt es weiterhin keine Zusage (Abschnitt 3.1, Interaktion auf
-SUB-225). Die Redakteure committen deshalb themenweise statt als Sammel-PR:
-Bleibt der Takt hinter dem Plan, liegen die klausurrelevantesten Themen
-trotzdem gemergt vor, statt dass der Batch am Freitag unfertig hängt.
+**Mengenwirkung, Ist statt Prognose:** Erwartet waren ≈ 119 zusätzliche Karten
+(17 × Richtwert 7) auf ≈ 432. Tatsächlich ausgezählt
+(`backend/scripts/validate_content.py` gegen `main`):
+
+| Größe | Vor P2 | Nach P2 | G3-Ziel (`docs/18`) | T3-Ziel (Gate C) |
+|---|---|---|---|---|
+| Themen | 43 | **60** | — | 72–74 |
+| Karten | 313 | **444** | 180 ✅ 2,5× | 500 (56 offen) |
+| Schemata | 45 | **64** | — | — |
+| Fälle | 43 | **60** | — | 40 ✅ übererfüllt |
+
+Die P2-Themen fielen mit Ø 7,7 Karten etwas umfangreicher aus als der
+Richtwert. Das G3-Ziel ist um das 2,5-Fache übererfüllt, das Fälle-Ziel des
+T3-Gates ist bereits erreicht. Für die 500-Karten-Zielmenge fehlen noch
+56 Karten ≈ 8 P3-Themen — laut `docs/18-release-2-wochen.md` (Abschnitt 4)
+ist diese Zielmenge jedoch ausdrücklich **„laufende Produktion nach Release"**
+und kein v1.0-Gate.
+
+**Was damit offen bleibt — und es ist nicht die Menge:** Die menschliche
+Stichprobe nach Abschnitt 4.2 ist für **keines der 60 Themen** erbracht. Alle
+57 Themen mit Redaktions-Metadaten tragen `status: ki-freigegeben` und
+`geprueft_von: reviewer-agent-v1` — ein LLM-Aufruf, keine Person. Das ist
+dieselbe Lücke, die Abschnitt 3.1 bei n = 8 beschrieben hat, nur jetzt bei
+n = 60. Kein Agent kann dieses Gate schließen; es braucht eine Person mit
+juristischer Vorbildung (`docs/08-ki-redaktion.md`). Stratifizierter
+Mindestumfang nach Abschnitt 4.2: ≥ 6 Themen, mind. 2 je Rechtsgebiet,
+Schwerpunkt P1.
 
 ## 2. Zuschnitt eines Themas
 
@@ -401,6 +416,14 @@ Prozess, hier der Vorschlag:
 
 ## 5. Notfallschnitt
 
+> **Stand 23.09.2026: gegenstandslos für v1.0.** Der Notfallschnitt war eine
+> Vorsorge für den Fall, dass der Content-Takt nicht reicht. Er hat nicht
+> gegriffen: P1 (36/36) und P2 (24/24) sind vollständig geliefert, alle drei
+> Rechtsgebiete tragen ihren kompletten Kernbestand, 444 Karten gegen ein
+> G3-Ziel von 180. Der Abschnitt bleibt als dokumentierte Reihenfolge für die
+> P3-/M6-Produktion nach dem Release stehen — die Zahlen darin sind unten auf
+> den Ist-Stand korrigiert.
+
 Die Release-Roadmap nennt als Option: „v1.0 auf zwei statt drei
 Rechtsgebiete, falls der Content-Takt nicht reicht" (offene Frage O3,
 Risikotabelle Abschnitt 6). Nach der Rechnung in Abschnitt 3 ist dieser
@@ -417,25 +440,29 @@ Veranstaltungen in allen drei Gebieten gleichzeitig. Fehlt eines komplett,
 scheitert die App für jeden Studierenden, dessen aktuelles Semester das
 fehlende Gebiet enthält, am Tag-1-Kriterium selbst. Das ist kein graduelles
 Downgrade, sondern ein Ausfall für einen ganzen Nutzerkreis — und trifft dazu
-ausgerechnet Öffentliches Recht am härtesten, das heute mit 2 von 11 Themen
-ohnehin am weitesten zurückliegt (Abschnitt 1) und das gleichzeitig das
-JAPO-Gebiet mit den meisten Teilgebieten ist.
+ausgerechnet Öffentliches Recht am härtesten, das bei Abfassung dieses
+Abschnitts mit 2 von 11 Themen am weitesten zurücklag (Abschnitt 1) und das
+gleichzeitig das JAPO-Gebiet mit den meisten Teilgebieten ist. *(Dieser
+Rückstand ist seit 23.09.2026 aufgeholt: 18 von 26 Themen, P1 und P2
+vollständig.)*
 
 **Bessere Variante — horizontal statt vertikal kürzen, in dieser
 Reihenfolge:**
 
-1. **Fälle nicht auf alle 72 Themen verteilen.** Fälle sind aufwendiger als
-   Karten (geführte Schritt-für-Schritt-Lösung, Erwartungshorizont). Die
-   Themenlandkarte enthält 36 neue P1-Themen plus 11 vorhandene = 47 P1-Themen
-   insgesamt; schon 40 davon mit Fall zu versehen erreicht das Fälle-Ziel,
-   ohne die restlichen 32 Themen der Landkarte mit einem Fall auszustatten.
-   Spart Aufwand, ohne Breite (= Themenzahl, = Karten) zu verlieren.
+1. ~~**Fälle nicht auf alle Themen verteilen.**~~ — **erledigt, Hebel nicht
+   mehr nötig.** Die ursprüngliche Rechnung („36 neue P1-Themen plus 11
+   vorhandene = 47") zählte die elf Bestandsthemen doppelt; die Landkarte
+   enthält insgesamt **36 P1-Themen**, nicht 47. Der Punkt ist ohnehin
+   gegenstandslos: Jedes der 60 gelieferten Themen hat genau einen Fall, macht
+   **60 Fälle** gegen ein T3-Ziel von 40 — übererfüllt, ohne dass gekürzt
+   werden musste.
 2. **P3-Themen zuerst strecken, nicht streichen.** Sinkt der reale Takt unter
-   das realistische Szenario, zuerst die 16 P3-Themen (über alle drei
+   das realistische Szenario, zuerst die **14** P3-Themen (über alle drei
    Rechtsgebiete verteilt, siehe Abschnitt 1) in Richtung M6 schieben. Das
-   reduziert die Zielmenge auf 56 Themen (72 − 16) ≈ 392 zusätzliche Karten,
-   senkt den Aufwand um ein Viertel, und jedes Rechtsgebiet behält seinen
-   P1/P2-Kernbestand vollständig.
+   reduziert die Zielmenge auf 60 Themen (74 − 14) und ist mit dem
+   P2-Abschluss faktisch bereits der eingetretene Zustand: Was heute auf
+   `main` liegt, *ist* die um P3 gestreckte Zielmenge. Jedes Rechtsgebiet
+   behält seinen P1/P2-Kernbestand vollständig.
 3. ~~**Erst danach, falls das nicht reicht: P2-Themen strecken**~~ —
    **hinfällig seit 23.09.2026.** Der Nutzerentscheid in Abschnitt 1.1 nimmt
    P2 aus der Streckmasse: P2 gehört in v1.0. Bleibt nach Stufe 1 und 2 immer
