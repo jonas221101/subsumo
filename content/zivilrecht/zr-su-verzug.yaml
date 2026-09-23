@@ -1,0 +1,261 @@
+topic:
+  slug: zr-su-verzug
+  area: zivilrecht
+  title: Verzug, § 286 BGB
+  parent: zr-schuldrecht-at-unmoeglichkeit
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: zr-su-verzug-voraussetzungen-286
+  type: definition
+  front: 'Definiere: Schuldnerverzug (§ 286 Abs. 1 BGB) - Voraussetzungen'
+  back: 'Der Schuldner kommt in Verzug, wenn er auf eine faellige Mahnung des Glaeubigers,
+    die nach dem Eintritt der Faelligkeit erfolgt, nicht leistet (§ 286 Abs. 1 BGB).
+    Voraussetzungen sind also: ein wirksames, durchsetzbares Schuldverhaeltnis, Faelligkeit
+    und Durchsetzbarkeit der Forderung, eine Mahnung nach Faelligkeit (oder deren
+    Entbehrlichkeit), das Ausbleiben der Leistung sowie das Vertretenmuessen der Nichtleistung
+    (§ 286 Abs. 4 BGB).'
+  norms:
+  - § 286 Abs. 1 BGB
+  - § 286 Abs. 4 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-verzug-mahnung-begriff
+  type: definition
+  front: 'Definiere: Mahnung im Sinne des § 286 Abs. 1 BGB'
+  back: Die Mahnung ist eine an den Schuldner gerichtete, einseitige und empfangsbeduerftige
+    Erklaerung des Glaeubigers, mit der dieser unzweideutig und bestimmt die Erbringung
+    der geschuldeten Leistung verlangt. Sie ist formfrei moeglich, muss aber nach
+    Eintritt der Faelligkeit erfolgen; eine vorher erklaerte Erinnerung ist als Mahnung
+    wirkungslos. Der Zustellung eines Mahnbescheids im Mahnverfahren oder der Erhebung
+    der Klage auf die Leistung steht die Mahnung gleich (§ 286 Abs. 1 S. 2 BGB).
+  norms:
+  - § 286 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-verzug-entbehrlichkeit-286-2
+  type: definition
+  front: Wann ist die Mahnung nach § 286 Abs. 2 BGB entbehrlich?
+  back: Die Mahnung ist entbehrlich, wenn (1) fuer die Leistung eine Zeit nach dem
+    Kalender bestimmt ist (Nr. 1), (2) der Leistung ein Ereignis vorauszugehen hat
+    und eine angemessene Zeit fuer die Leistung so bestimmt ist, dass sie sich von
+    einem Kalendertag an berechnen laesst (Nr. 2), (3) der Schuldner die Leistung
+    ernsthaft und endgueltig verweigert (Nr. 3), oder (4) aus besonderen Gruenden
+    unter Abwaegung der beiderseitigen Interessen der sofortige Eintritt des Verzugs
+    gerechtfertigt ist (Nr. 4).
+  norms:
+  - § 286 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-verzug-entgeltforderung-286-3
+  type: definition
+  front: Was regelt § 286 Abs. 3 BGB fuer Entgeltforderungen?
+  back: Bei Entgeltforderungen kommt der Schuldner spaetestens dann in Verzug, wenn
+    er nicht innerhalb von 30 Tagen nach Faelligkeit und Zugang einer Rechnung leistet
+    - auch ohne Mahnung (§ 286 Abs. 3 S. 1 BGB). Ist der Schuldner Verbraucher, gilt
+    dies nur, wenn auf diese Folgen in der Rechnung besonders hingewiesen wurde (§
+    286 Abs. 3 S. 2 BGB).
+  norms:
+  - § 286 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-verzug-vertretenmuessen-286-4
+  type: definition
+  front: Welche Rolle spielt das Vertretenmuessen beim Verzug, § 286 Abs. 4 BGB?
+  back: Der Verzug tritt nicht ein, solange die Leistung infolge eines Umstands unterbleibt,
+    den der Schuldner nicht zu vertreten hat (§ 286 Abs. 4 BGB). Das Vertretenmuessen
+    wird vermutet - der Schuldner muss sich entlasten (§ 280 Abs. 1 S. 2 BGB analog
+    fuer den Verzugstatbestand); massgeblicher Verschuldensmassstab ist § 276 BGB.
+  norms:
+  - § 286 Abs. 4 BGB
+  - § 280 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-verzug-schadensersatz-280
+  type: definition
+  front: Wie verhaelt sich der Anspruch auf Verzugsschaden zu § 280 Abs. 1, 2 BGB?
+  back: Der Ersatz des durch die Verzoegerung der Leistung entstehenden Schadens setzt
+    neben den allgemeinen Voraussetzungen des Schadensersatzes wegen Pflichtverletzung
+    (§ 280 Abs. 1 BGB) zusaetzlich die Voraussetzungen des Verzugs nach § 286 BGB
+    voraus (§ 280 Abs. 2 BGB). § 286 BGB praezisiert also, unter welchen Bedingungen
+    die blosse Verzoegerung der Leistung eine ersatzfaehige Pflichtverletzung darstellt.
+  norms:
+  - § 280 Abs. 1 BGB
+  - § 280 Abs. 2 BGB
+  - § 286 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-verzugszinsen-288
+  type: definition
+  front: In welcher Hoehe sind Verzugszinsen nach § 288 BGB zu zahlen?
+  back: Eine waehrend des Verzugs zu verzinsende Geldschuld ist mit Verzugszinsen
+    zu verzinsen, die fuer das Jahr fuenf Prozentpunkte ueber dem Basiszinssatz liegen
+    (§ 288 Abs. 1 BGB). Bei Entgeltforderungen aus Rechtsgeschaeften, an denen ein
+    Verbraucher nicht beteiligt ist, betraegt der Verzugszins neun Prozentpunkte ueber
+    dem Basiszinssatz (§ 288 Abs. 2 BGB). Die Geltendmachung eines weiteren Schadens
+    bleibt unberuehrt (§ 288 Abs. 4 BGB).
+  norms:
+  - § 288 Abs. 1 BGB
+  - § 288 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-verschaerfte-haftung-287
+  type: definition
+  front: Was bewirkt die verschaerfte Haftung des Schuldners im Verzug, § 287 BGB?
+  back: Waehrend des Verzugs hat der Schuldner jede Fahrlaessigkeit zu vertreten (§
+    287 S. 1 BGB) und haftet grundsaetzlich auch fuer den waehrend des Verzugs durch
+    Zufall eintretenden Untergang oder eine waehrend dessen eintretende Unmoeglichkeit
+    der Leistung (§ 287 S. 2 BGB) - es sei denn, der Schaden waere auch bei rechtzeitiger
+    Leistung eingetreten.
+  norms:
+  - § 287 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-verzugsschaden-280-286
+  title: Anspruch auf Verzugsschaden, §§ 280 Abs. 1, 2, 286 BGB
+  norms:
+  - § 280 Abs. 1 BGB
+  - § 280 Abs. 2 BGB
+  - § 286 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Wirksames Schuldverhaeltnis mit faelliger, durchsetzbarer Leistungspflicht
+  - label: 'II. Pflichtverletzung: Nichtleistung trotz Faelligkeit und Durchsetzbarkeit'
+  - label: III. Verzugsbegruendende Voraussetzungen, § 286 BGB
+    children:
+    - label: 1. Mahnung nach Eintritt der Faelligkeit, § 286 Abs. 1 BGB
+      hinweis: Oder Entbehrlichkeit nach § 286 Abs. 2 BGB bzw. Sonderregel fuer Entgeltforderungen,
+        § 286 Abs. 3 BGB.
+    - label: 2. Vertretenmuessen der Nichtleistung, § 286 Abs. 4 BGB
+  - label: IV. Kausaler Schaden durch die Verzoegerung
+  - label: V. Kein Ausschluss oder Ende des Verzugs (insb. Erfuellung)
+  - label: 'VI. Rechtsfolge: Ersatz des Verzugsschadens, mindestens Verzugszinsen,
+      § 288 BGB'
+faelle:
+- slug: zr-fall-einbauschrank
+  title: Der Einbauschrank
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: Schreinerin H fertigt fuer den Verbraucher K einen maszgeschneiderten Einbauschrank
+    fuer dessen Privatwohnung, Werklohn 4.000 EUR. Laut Werkvertrag ist der Werklohn
+    "binnen 14 Tagen nach Abnahme" faellig. Die Abnahme erfolgt am 1.6. eines fiktiven
+    Jahres, faellig ist die Zahlung damit ab dem 15.6. K zahlt nicht. Am 20.6. mahnt
+    H K schriftlich und fordert Zahlung binnen einer Woche. K zahlt weiterhin nicht.
+    Erst am 20.8. ueberweist K die 4.000 EUR. Weil ihr das Geld fehlte, hatte H in
+    der Zwischenzeit ihr Geschaeftskonto ueberziehen muessen; dadurch sind ihr 120
+    EUR Ueberziehungszinsen entstanden. H verlangt von K Ersatz dieser 120 EUR sowie
+    gesetzliche Verzugszinsen.
+  question: Hat H gegen K einen Anspruch auf Ersatz der 120 EUR Ueberziehungszinsen
+    und auf gesetzliche Verzugszinsen? Ab wann befand sich K in Verzug?
+  steps:
+  - prompt: Nenne die Anspruchsgrundlage fuer die Ueberziehungszinsen.
+    erwartung: § 280 Abs. 1, 2 iVm § 286 BGB (Schadensersatz wegen Verzoegerung der
+      Leistung).
+  - prompt: Ab wann war die Werklohnforderung faellig, und ab wann trat Verzug ein?
+    erwartung: Faellig ab 15.6. (14 Tage nach Abnahme am 1.6.); Verzug trat mit Zugang
+      der Mahnung am 20.6. ein - die in der Mahnung gesetzte Wochenfrist ist fuer
+      den Verzugseintritt selbst ohne Bedeutung, da § 286 Abs. 1 BGB keine Fristsetzung,
+      sondern nur eine Mahnung nach Faelligkeit verlangt.
+  - prompt: Ist das Vertretenmuessen problematisch?
+    erwartung: Nein, es wird vermutet (§ 280 Abs. 1 S. 2 BGB) und K hat keine Entlastungsgruende
+      vorgetragen.
+  - prompt: Welche Rechtsgrundlage stuetzt den Anspruch auf Verzugszinsen und in welcher
+      Hoehe?
+    erwartung: § 288 Abs. 1 BGB - fuenf Prozentpunkte ueber dem Basiszinssatz; § 288
+      Abs. 2 BGB (neun Prozentpunkte) greift nicht, weil K als Verbraucher am Rechtsgeschaeft
+      beteiligt ist.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Anspruchsgrundlage § 280 Abs. 1, 2 iVm § 286 BGB fuer die Ueberziehungszinsen
+        genannt (Obersatz)
+      weight: 1.5
+      required: true
+      norms:
+      - § 280 Abs. 1 BGB
+      - § 280 Abs. 2 BGB
+      - § 286 BGB
+      keywords:
+      - '280'
+      - '286'
+      - Verzugsschaden
+    - id: p2
+      label: Faelligkeit der Werklohnforderung am 15.6. korrekt bestimmt
+      weight: 1.0
+      keywords:
+      - faellig
+      - '15.6'
+      - 14 Tage
+    - id: p3
+      label: Verzugseintritt mit Zugang der Mahnung am 20.6. erkannt - Wochenfrist
+        ohne Bedeutung fuer den Verzugsbeginn
+      weight: 2.5
+      required: true
+      norms:
+      - § 286 Abs. 1 BGB
+      keywords:
+      - Mahnung
+      - '20.6'
+      - Verzug
+    - id: p4
+      label: Vertretenmuessen vermutet, keine Entlastung erkennbar
+      weight: 1.0
+      norms:
+      - § 280 Abs. 1 BGB
+      keywords:
+      - vermutet
+      - vertreten
+    - id: p5
+      label: Ueberziehungszinsen als kausaler, ersatzfaehiger Verzugsschaden eingeordnet
+      weight: 2.0
+      keywords:
+      - Ueberziehungszinsen
+      - kausal
+      - Schaden
+    - id: p6
+      label: Anspruch auf gesetzliche Verzugszinsen aus § 288 Abs. 1 BGB (nicht Abs.
+        2, da K Verbraucher ist)
+      weight: 2.0
+      required: true
+      norms:
+      - § 288 Abs. 1 BGB
+      - § 288 Abs. 2 BGB
+      keywords:
+      - '288'
+      - Verzugszinsen
+      - Verbraucher
+    - id: p7
+      label: 'Ergebnis: beide Anspruesche bestehen'
+      weight: 1.0
+      keywords:
+      - Anspruch besteht
+      - H kann
+      - hat H gegen K einen Anspruch
