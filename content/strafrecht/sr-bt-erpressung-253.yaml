@@ -1,0 +1,237 @@
+topic:
+  slug: sr-bt-erpressung-253
+  area: strafrecht
+  title: Erpressung, § 253 StGB
+  parent: sr-at
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: sr-erpressung-grundtatbestand
+  type: definition
+  front: 'Definiere: Erpressung, § 253 Abs. 1 StGB'
+  back: Erpressung begeht, wer einen Menschen rechtswidrig mit Gewalt oder durch Drohung
+    mit einem empfindlichen Uebel zu einer Handlung, Duldung oder Unterlassung noetigt
+    und dadurch dem Vermoegen des Genoetigten oder eines anderen Nachteil zufuegt,
+    um sich oder einen Dritten zu Unrecht zu bereichern. Die Erpressung ist damit
+    das Vermoegensdelikt-Gegenstueck zur Noetigung, § 240 StGB, angereichert um Vermoegensnachteil
+    und Bereicherungsabsicht.
+  norms:
+  - § 253 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-erpressung-vermoegensverfuegung-streitstand
+  type: streitstand
+  front: Setzt § 253 StGB eine (ungeschriebene) Vermoegensverfuegung des Genoetigten
+    voraus?
+  back: 'Nach heute h.M. verlangt § 253 StGB - parallel zum Betrug - eine Vermoegensverfuegung
+    des Genoetigten: Er muss selbst, wenn auch genoetigt, eine Handlung, Duldung oder
+    Unterlassung vornehmen, die unmittelbar zu einer Vermoegensminderung fuehrt. Dieses
+    ungeschriebene Tatbestandsmerkmal dient vor allem der Abgrenzung zu Diebstahl
+    und Raub, bei denen der Taeter die Sache selbst wegnimmt, waehrend bei der Erpressung
+    das Vermoegensopfer selbst (wenn auch unter Zwang) ueber sein Vermoegen disponiert.'
+  norms:
+  - § 253 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-erpressung-vermoegensschaden
+  type: definition
+  front: Wie wird der Vermoegensnachteil bei § 253 StGB ermittelt?
+  back: Wie beim Betrug wird der Vermoegensnachteil im Wege einer Gesamtsaldierung
+    des Vermoegens vor und nach der erzwungenen Verfuegung bestimmt. Ein Nachteil
+    liegt vor, wenn der Vergleich einen wirtschaftlichen Minderwert ergibt; ein gleichwertiger
+    Ausgleich (etwa eine vollwertige Gegenleistung) schliesst den Nachteil aus.
+  norms:
+  - § 253 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-erpressung-stoffgleichheit
+  type: definition
+  front: Was bedeutet Stoffgleichheit der erstrebten Bereicherung bei § 253 StGB?
+  back: 'Die vom Taeter erstrebte Bereicherung muss stoffgleich mit dem beim Opfer
+    eintretenden Vermoegensnachteil sein: Beide muessen unmittelbar auf derselben
+    Vermoegensverschiebung beruhen, also zwei Seiten desselben Vorgangs sein. Erstrebt
+    der Taeter nur einen mittelbaren Vorteil ohne unmittelbaren Bezug zum Nachteil
+    des Opfers, fehlt es an der Bereicherungsabsicht i.S.d. § 253 Abs. 1 StGB.'
+  norms:
+  - § 253 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-erpressung-verwerflichkeit
+  type: norm
+  front: Welche Funktion hat § 253 Abs. 2 StGB?
+  back: '§ 253 Abs. 2 StGB macht - parallel zu § 240 Abs. 2 StGB - die Rechtswidrigkeit
+    der Erpressung von einer Zweck-Mittel-Relation abhaengig: Die Tat ist nur dann
+    rechtswidrig, wenn die Anwendung der Gewalt oder die Androhung des Uebels zu dem
+    angestrebten Bereicherungszweck als verwerflich anzusehen ist.'
+  norms:
+  - § 253 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-erpressung-raeuberische-255
+  type: norm
+  front: Wann liegt raeuberische Erpressung, § 255 StGB, vor und welche Rechtsfolge
+    hat sie?
+  back: Raeuberische Erpressung liegt vor, wenn die Erpressung durch Gewalt gegen
+    eine Person oder durch Drohung mit gegenwaertiger Gefahr fuer Leib oder Leben
+    begangen wird. Rechtsfolge ist gemaess § 255 StGB, dass der Taeter gleich einem
+    Raeuber - also nach dem Strafrahmen des § 249 StGB einschliesslich der Qualifikationen
+    §§ 250, 251 StGB - zu bestrafen ist.
+  norms:
+  - § 255 StGB
+  - § 249 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-erpressung-abgrenzung-raub-249
+  type: streitstand
+  front: Wie grenzt sich die raeuberische Erpressung von Raub, § 249 StGB, bei der
+    Wegnahme beweglicher Sachen ab?
+  back: 'Massgeblich ist, wer die entscheidende Vermoegensverschiebung vornimmt: Nimmt
+    der Taeter dem Opfer die Sache eigenhaendig weg (bricht also fremden Gewahrsam
+    und begruendet neuen), liegt Raub vor. Uebergibt das genoetigte Opfer die Sache
+    dagegen selbst - wenn auch unter dem Druck von Gewalt oder Drohung -, liegt eine
+    eigene Vermoegensverfuegung und damit (raeuberische) Erpressung vor. In den praktisch
+    haeufigen Grenzfaellen, in denen beide Deutungen vertretbar erscheinen, ist nach
+    der Rechtsprechung auf den erkennbaren aeusseren Geschehensablauf und die Willensrichtung
+    des Opfers abzustellen; Raub und raeuberische Erpressung schliessen sich bei ein-
+    und demselben Gegenstand gegenseitig aus.'
+  norms:
+  - § 249 StGB
+  - § 255 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-253
+  title: Erpressung, § 253 StGB, und raeuberische Erpressung, § 255 StGB
+  norms:
+  - § 253 StGB
+  - § 255 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: 'a) Noetigungsmittel: Gewalt oder Drohung mit empfindlichem Uebel'
+      - label: b) Vermoegensverfuegung des Genoetigten
+        hinweis: Ungeschriebenes Tatbestandsmerkmal (str.) - dient der Abgrenzung
+          zu Diebstahl und Raub.
+      - label: c) Vermoegensnachteil (Gesamtsaldierung)
+    - label: 2. Subjektiver Tatbestand
+      children:
+      - label: a) Vorsatz
+      - label: b) Absicht rechtswidriger, stoffgleicher Bereicherung
+  - label: II. Rechtswidrigkeit
+    children:
+    - label: 1. Verwerflichkeit der Zweck-Mittel-Relation, § 253 Abs. 2 StGB
+  - label: III. Schuld
+  - label: 'IV. Qualifikation: raeuberische Erpressung, § 255 StGB'
+    children:
+    - label: 1. Gewalt gegen eine Person oder Drohung mit gegenwaertiger Gefahr fuer
+        Leib oder Leben
+    - label: '2. Rechtsfolge: Bestrafung wie ein Raeuber'
+faelle:
+- slug: sr-fall-drohanruf-ueberweisung
+  title: Der Drohanruf
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: A ruft den Geschaeftsmann U an und droht ihm unmissverstaendlich, ihn zu
+    toeten, wenn er nicht binnen 24 Stunden 20.000 Euro auf ein von A genanntes Konto
+    ueberweist. A macht deutlich, dass er die Adresse des U kennt und die Drohung
+    ernst meint. Aus Angst um sein Leben ueberweist U den geforderten Betrag fristgerecht.
+  question: Hat sich A wegen (raeuberischer) Erpressung gemaess §§ 253, 255 StGB strafbar
+    gemacht?
+  steps:
+  - prompt: Formuliere den Obersatz.
+    erwartung: A koennte sich durch den Drohanruf wegen (raeuberischer) Erpressung
+      gemaess §§ 253, 255 StGB strafbar gemacht haben.
+  - prompt: Liegt ein taugliches Noetigungsmittel vor?
+    erwartung: Ja - die Todesdrohung ist eine Drohung mit einem empfindlichen Uebel.
+  - prompt: Liegt eine Vermoegensverfuegung des U vor?
+    erwartung: Ja - U nimmt die Ueberweisung selbst vor; er verfuegt eigenhaendig
+      ueber sein Vermoegen, es liegt kein Wegnahmeakt eines Dritten vor.
+  - prompt: Ist ein Vermoegensnachteil eingetreten?
+    erwartung: Ja - das Vermoegen des U hat sich durch die Ueberweisung unmittelbar
+      um 20.000 Euro verringert, ohne dass ein Ausgleich erfolgt.
+  - prompt: Handelte A mit Bereicherungsabsicht, und ist diese stoffgleich?
+    erwartung: Ja - A wollte sich um genau den Betrag bereichern, um den U geschaedigt
+      wird; Nachteil und erstrebter Vorteil beruhen auf demselben Vorgang.
+  - prompt: Ist die Tat verwerflich i.S.d. § 253 Abs. 2 StGB?
+    erwartung: Ja - die Androhung des Todes zur Erzwingung einer Geldzahlung ist offensichtlich
+      verwerflich.
+  - prompt: Liegt raeuberische Erpressung, § 255 StGB, vor?
+    erwartung: Ja - A droht mit gegenwaertiger Gefahr fuer das Leben des U selbst;
+      A ist daher wie ein Raeuber zu bestrafen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Taugliches Noetigungsmittel (Drohung mit empfindlichem Uebel) bejaht
+      weight: 1.0
+      required: false
+      norms:
+      - § 253 Abs. 1 StGB
+      keywords:
+      - Drohung
+      - empfindliches Uebel
+    - id: p2
+      label: Vermoegensverfuegung des U erkannt (eigene Ueberweisung statt Wegnahme)
+      weight: 3.0
+      required: true
+      norms:
+      - § 253 Abs. 1 StGB
+      keywords:
+      - Vermoegensverfuegung
+      - ueberweist
+    - id: p3
+      label: Vermoegensnachteil bejaht
+      weight: 1.0
+      required: false
+      keywords:
+      - Vermoegensnachteil
+    - id: p4
+      label: Bereicherungsabsicht und Stoffgleichheit bejaht
+      weight: 2.0
+      required: true
+      norms:
+      - § 253 Abs. 1 StGB
+      keywords:
+      - Bereicherungsabsicht
+      - stoffgleich
+    - id: p5
+      label: Verwerflichkeit gemaess § 253 Abs. 2 StGB bejaht
+      weight: 1.0
+      required: false
+      norms:
+      - § 253 Abs. 2 StGB
+      keywords:
+      - verwerflich
+    - id: p6
+      label: Raeuberische Erpressung, § 255 StGB, bejaht (Drohung mit gegenwaertiger
+        Gefahr fuer das Leben)
+      weight: 2.5
+      required: true
+      norms:
+      - § 255 StGB
+      keywords:
+      - gegenwaertige Gefahr
+      - Leben
