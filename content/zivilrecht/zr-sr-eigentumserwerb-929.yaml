@@ -1,0 +1,259 @@
+topic:
+  slug: zr-sr-eigentumserwerb-929
+  area: zivilrecht
+  title: Eigentumserwerb an beweglichen Sachen, § 929 BGB
+  parent: zr-sachenrecht-eigentumsherausgabe-985
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: zr-sr-929-voraussetzungen
+  type: definition
+  front: Nenne die Voraussetzungen der Uebereignung einer beweglichen Sache, § 929
+    S. 1 BGB
+  back: 'Erforderlich sind: (1) die Einigung zwischen Veraeusserer und Erwerber darueber,
+    dass das Eigentum uebergehen soll (dingliche Einigung), (2) die Uebergabe der
+    Sache an den Erwerber - oder ein gleichwertiges Uebergabesurrogat (§§ 929 S. 2,
+    930, 931 BGB) -, und (3) die Berechtigung des Veraeusserers, also seine Eigentuemerstellung
+    im Zeitpunkt des Vollzugs. Fehlt die Berechtigung, kommt allenfalls ein gutglaeubiger
+    Erwerb nach § 932 BGB in Betracht.'
+  norms:
+  - § 929 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-sr-dingliche-einigung-abstraktionsprinzip
+  type: definition
+  front: Was ist die dingliche Einigung, und wie verhaelt sie sich zum Kausalgeschaeft?
+  back: 'Die dingliche Einigung ist der auf den unmittelbaren Eintritt der Rechtsaenderung
+    (Eigentumsuebergang) gerichtete Vertrag zwischen Veraeusserer und Erwerber. Sie
+    ist von dem zugrunde liegenden Verpflichtungsgeschaeft (z. B. Kaufvertrag, § 433
+    BGB) rechtlich zu trennen und in ihrer Wirksamkeit von diesem unabhaengig (Trennungs-
+    und Abstraktionsprinzip): Ist der Kaufvertrag unwirksam, bleibt die Uebereignung
+    davon grundsaetzlich unberuehrt - der Veraeusserer behilft sich dann ueber das
+    Bereicherungsrecht (§ 812 BGB).'
+  norms:
+  - § 929 BGB
+  - § 433 BGB
+  - § 812 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-sr-uebergabe-begriff
+  type: definition
+  front: 'Definiere: Uebergabe im Sinne des § 929 S. 1 BGB'
+  back: Uebergabe ist der vollstaendige Verlust des unmittelbaren Besitzes durch den
+    Veraeusserer und der Erwerb des unmittelbaren (oder zumindest mittelbaren) Besitzes
+    durch den Erwerber, wobei dies auf Veranlassung des Veraeusserers geschehen muss.
+    Es reicht, wenn der Veraeusserer den Erwerb des Besitzes durch den Erwerber ermoeglicht
+    und daran mitwirkt (etwa durch Anweisung an einen Dritten, die Sache an den Erwerber
+    herauszugeben).
+  norms:
+  - § 929 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-sr-929-s2-kurzer-weg
+  type: definition
+  front: Was regelt § 929 S. 2 BGB (kurzer Weg der Uebereignung)?
+  back: 'Ist der Erwerber bereits im Besitz der Sache, genuegt zur Uebereignung die
+    blosse Einigung ueber den Eigentumsuebergang - eine zusaetzliche Uebergabe waere
+    reine Förmelei, da der Erwerber den Besitz ja bereits hat (§ 929 S. 2 BGB). Klassischer
+    Fall: Der Mieter einer Sache kauft diese von seinem Vermieter.'
+  norms:
+  - § 929 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-sr-besitzkonstitut-930
+  type: definition
+  front: 'Definiere: Besitzkonstitut, § 930 BGB'
+  back: 'Ist der Veraeusserer im Besitz der Sache, kann die Uebergabe durch die Vereinbarung
+    eines Besitzmittlungsverhaeltnisses ersetzt werden, aufgrund dessen der Erwerber
+    den mittelbaren Besitz erlangt und der Veraeusserer den unmittelbaren Besitz als
+    Besitzmittler (§ 868 BGB) behaelt (§ 930 BGB). Beispiel: V verkauft und uebereignet
+    K eine Maschine, mietet sie aber sogleich von K zurueck, um sie weiterzunutzen
+    (Sale-and-lease-back).'
+  norms:
+  - § 930 BGB
+  - § 868 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-sr-abtretung-herausgabeanspruch-931
+  type: definition
+  front: 'Definiere: Abtretung des Herausgabeanspruchs, § 931 BGB'
+  back: Befindet sich die Sache im Besitz eines Dritten, kann die Uebergabe dadurch
+    ersetzt werden, dass der Veraeusserer dem Erwerber seinen Anspruch auf Herausgabe
+    der Sache gegen den Dritten abtritt (§ 931 BGB, § 398 BGB). Der Erwerber erlangt
+    damit zunaechst nur den mittelbaren Besitz ueber den abgetretenen Anspruch; erst
+    mit dessen Durchsetzung erhaelt er den unmittelbaren Besitz.
+  norms:
+  - § 931 BGB
+  - § 398 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-sr-eigentumsvorbehalt-bedingte-einigung
+  type: definition
+  front: Was ist der Eigentumsvorbehalt, und wie wirkt er sich auf die Einigung nach
+    § 929 BGB aus?
+  back: 'Beim Eigentumsvorbehalt (§ 449 Abs. 1 BGB) einigen sich die Parteien nicht
+    ueber einen unbedingten, sondern ueber einen aufschiebend bedingten Eigentumsuebergang:
+    Das Eigentum soll erst mit vollstaendiger Zahlung des Kaufpreises auf den Erwerber
+    uebergehen (§ 158 Abs. 1 BGB). Bis dahin bleibt der Veraeusserer Eigentuemer,
+    der Erwerber erlangt lediglich ein Anwartschaftsrecht.'
+  norms:
+  - § 449 BGB
+  - § 158 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-sr-929-berechtigung-veraeusserers
+  type: definition
+  front: Welche Rolle spielt die Berechtigung des Veraeusserers bei § 929 BGB?
+  back: '§ 929 BGB regelt den rechtsgeschaeftlichen Erwerb vom Berechtigten: Er setzt
+    voraus, dass der Veraeusserer im Zeitpunkt des Vollzugs tatsaechlich Eigentuemer
+    der Sache ist. Ist er es nicht, weil er selbst nicht Eigentuemer ist oder ueber
+    die Sache nicht verfuegen darf, scheitert ein Eigentumserwerb nach § 929 BGB -
+    der Erwerber kann das Eigentum dann allenfalls gutglaeubig nach den §§ 932 ff.
+    BGB erwerben.'
+  norms:
+  - § 929 BGB
+  - § 932 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-929-eigentumserwerb
+  title: Eigentumserwerb an einer beweglichen Sache, § 929 BGB
+  norms:
+  - § 929 BGB
+  - § 930 BGB
+  - § 931 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Einigung ueber den Eigentumsuebergang
+    hinweis: Ggf. aufschiebend bedingt bei Eigentumsvorbehalt, § 449 BGB.
+  - label: II. Uebergabe oder Uebergabesurrogat
+    children:
+    - label: 1. Uebergabe, § 929 S. 1 BGB
+    - label: 2. Kurzer Weg (Erwerber bereits im Besitz), § 929 S. 2 BGB
+    - label: 3. Besitzkonstitut, § 930 BGB
+    - label: 4. Abtretung des Herausgabeanspruchs gegen den besitzenden Dritten, §
+        931 BGB
+  - label: III. Berechtigung (Eigentuemerstellung) des Veraeusserers
+    hinweis: Fehlt sie, nur gutglaeubiger Erwerb nach §§ 932 ff. BGB moeglich.
+  - label: 'IV. Ergebnis: Eigentumserwerb (+)/(-)'
+faelle:
+- slug: zr-fall-klavier-beim-klavierbauer
+  title: Das Klavier beim Klavierbauer
+  difficulty: 3
+  minutes: 35
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: 'Musikerin V hat ihr Klavier zur Reparatur bei Klavierbauer L abgegeben,
+    der es in seiner Werkstatt aufbewahrt. Waehrend der Reparatur verkauft V das Klavier
+    fuer 3.000 EUR an K. V und K einigen sich, dass das Eigentum sofort auf K uebergehen
+    soll; da V das Klavier nicht selbst besitzt, tritt sie K ihren Anspruch gegen
+    L auf Herausgabe des Klaviers ab. K zeigt L die Abtretung an und bittet ihn, das
+    Klavier nach Abschluss der Reparatur an ihn herauszugeben. Als die Reparatur fertig
+    ist, verlangt K von L die Herausgabe. L verweigert dies: Er kenne nur V als seine
+    Vertragspartnerin und schulde die Herausgabe daher nur ihr.'
+  question: Ist K Eigentuemer des Klaviers geworden, und kann er von L die Herausgabe
+    verlangen?
+  steps:
+  - prompt: Formuliere den Obersatz fuer den Herausgabeanspruch des K gegen L.
+    erwartung: K koennte gegen L einen Anspruch auf Herausgabe des Klaviers aus §
+      985 BGB haben, wenn K Eigentuemer und L Besitzer ohne eigenes Recht zum Besitz
+      gegenueber K ist.
+  - prompt: Wie hat K das Eigentum am Klavier erworben?
+    erwartung: 'Ueber § 929 S. 1 iVm § 931 BGB: Einigung zwischen V und K sowie Abtretung
+      des Herausgabeanspruchs der V gegen L statt Uebergabe, da das Klavier bei dem
+      Dritten L lag.'
+  - prompt: War V berechtigt, das Klavier auf diesem Weg zu uebereignen?
+    erwartung: Ja, V war unstreitig Eigentuemerin des Klaviers.
+  - prompt: Kann L sich gegenueber K darauf berufen, nur V zu kennen?
+    erwartung: Nein. Mit wirksamer Abtretung und Anzeige an L ist K neuer Berechtigter
+      des Herausgabeanspruchs geworden; L muss nun an K leisten und hat kein eigenes
+      Besitzrecht gegenueber K.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Anspruchsgrundlage § 985 BGB genannt (Obersatz, Vindikationslage)
+      weight: 1.5
+      required: true
+      norms:
+      - § 985 BGB
+      keywords:
+      - '985'
+      - Herausgabe
+    - id: p2
+      label: Pruefung des Eigentumserwerbs des K ueber § 929 S. 1 iVm § 931 BGB
+      weight: 1.5
+      keywords:
+      - '929'
+      - '931'
+      - Eigentumserwerb
+    - id: p3
+      label: Dingliche Einigung zwischen V und K bejaht
+      weight: 1.0
+      keywords:
+      - Einigung
+    - id: p4
+      label: 'Uebergabesurrogat: Abtretung des Herausgabeanspruchs gegen L statt Uebergabe,
+        § 931 BGB, erkannt'
+      weight: 2.5
+      required: true
+      norms:
+      - § 931 BGB
+      keywords:
+      - '931'
+      - Abtretung
+      - Herausgabeanspruch
+    - id: p5
+      label: Berechtigung der V als Eigentuemerin bejaht
+      weight: 0.5
+      keywords:
+      - berechtigt
+      - Eigentuemerin
+    - id: p6
+      label: 'Ergebnis: K ist Eigentuemer geworden'
+      weight: 1.0
+      keywords:
+      - Eigentuemer geworden
+      - K ist Eigentuemer
+    - id: p7
+      label: L hat kein eigenes Besitzrecht gegenueber K; Kenntnis nur der V ist wegen
+        wirksamer und angezeigter Abtretung unerheblich
+      weight: 2.0
+      required: true
+      norms:
+      - § 985 BGB
+      keywords:
+      - kein Besitzrecht
+      - Abtretung
+      - angezeigt
+    - id: p8
+      label: 'Ergebnis: K kann von L die Herausgabe verlangen'
+      weight: 1.0
+      keywords:
+      - Anspruch besteht
+      - K kann
+      - hat K gegen L einen Anspruch
