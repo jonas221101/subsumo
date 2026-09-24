@@ -112,14 +112,14 @@ class _HomeShellState extends State<HomeShell> {
   /// Entscheidung bei der Seite bleibt, die sie auch ausblendet.
   bool _focusMode = false;
 
-  // Ausgefuellte Variante fuer den aktiven Tab statt einer zusaetzlichen
-  // Farbe/Flaeche - reines Material3-Icon-Paar (outlined/filled), keine neue
-  // Elevation-Stufe oder Farbrolle (docs/25 Abschnitt 8.1).
+  // Funktionale Navigations-Icons bleiben in jedem Fall Icons.*_outlined,
+  // auch fuer den aktiven Tab (docs/25 Abschnitt 5+8.3) - keine gefuellte
+  // Variante als Aktiv-Signal.
   static const _destinations = [
-    (icon: Icons.insights_outlined, selectedIcon: Icons.insights, label: 'Fortschritt'),
-    (icon: Icons.style_outlined, selectedIcon: Icons.style, label: 'Karten'),
-    (icon: Icons.account_tree_outlined, selectedIcon: Icons.account_tree, label: 'Schemata'),
-    (icon: Icons.gavel_outlined, selectedIcon: Icons.gavel, label: 'Faelle'),
+    (icon: Icons.insights_outlined, label: 'Fortschritt'),
+    (icon: Icons.style_outlined, label: 'Karten'),
+    (icon: Icons.account_tree_outlined, label: 'Schemata'),
+    (icon: Icons.gavel_outlined, label: 'Faelle'),
   ];
 
   Widget get _page => switch (_index) {
@@ -201,7 +201,6 @@ class _HomeShellState extends State<HomeShell> {
                         for (final d in _destinations)
                           NavigationRailDestination(
                             icon: Icon(d.icon),
-                            selectedIcon: Icon(d.selectedIcon),
                             label: Text(d.label),
                           ),
                       ],
@@ -222,7 +221,6 @@ class _HomeShellState extends State<HomeShell> {
                 for (final d in _destinations)
                   NavigationDestination(
                     icon: Icon(d.icon),
-                    selectedIcon: Icon(d.selectedIcon),
                     label: d.label,
                   ),
               ],
