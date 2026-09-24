@@ -247,6 +247,9 @@ faelle:
       keywords:
       - '305'
       - Einbeziehung
+      card_slugs:
+      - zr-agb-begriff-305
+      - zr-agb-einbeziehung-305-2
     - id: p3
       label: Klausel nicht als ueberraschend nach § 305c Abs. 1 BGB eingeordnet
       weight: 0.5
@@ -254,6 +257,8 @@ faelle:
       keywords:
       - 305c
       - ueberraschend
+      card_slugs:
+      - zr-agb-ueberraschende-klausel-305c1
     - id: p4
       label: Unwirksamkeit der Klausel nach § 307 Abs. 1, Abs. 2 Nr. 2 BGB wegen Ausschlusses
         der Haftung fuer die Verletzung wesentlicher Vertragspflichten sauber begruendet
@@ -266,6 +271,8 @@ faelle:
       - '307'
       - Kardinalpflicht
       - wesentliche Vertragspflichten
+      card_slugs:
+      - zr-agb-generalklausel-307
     - id: p5
       label: Rechtsfolge nach § 306 Abs. 1, Abs. 2 BGB (Vertrag bleibt wirksam, gesetzliches
         Recht tritt an die Stelle) korrekt angewendet
@@ -277,6 +284,8 @@ faelle:
       keywords:
       - '306'
       - gesetzliche Vorschriften
+      card_slugs:
+      - zr-agb-rechtsfolge-306
     - id: p6
       label: 'Ergebnis: Anspruch der K auf 600 Euro besteht'
       weight: 1.0

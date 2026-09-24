@@ -231,6 +231,9 @@ faelle:
       keywords:
       - '311'
       - Vertragsverhandlungen
+      card_slugs:
+      - zr-cic-grundgedanke-311-2
+      - zr-cic-verhandlungen-311-2-nr1
     - id: p2
       label: Aufklaerungspflicht bzgl. des erkennbar preisrelevanten Vorschadens begruendet
         (Erkennbarkeit der Erheblichkeit, Zumutbarkeit der Offenbarung)
@@ -242,6 +245,9 @@ faelle:
       - Aufklaerungspflicht
       - erheblich
       - zumutbar
+      card_slugs:
+      - zr-cic-schutzpflicht-241-2
+      - zr-cic-aufklaerungspflicht-kriterien
     - id: p3
       label: Pflichtverletzung durch Verschweigen trotz Kenntnis festgestellt
       weight: 1.0
@@ -258,6 +264,8 @@ faelle:
       keywords:
       - Vorsatz
       - vertreten
+      card_slugs:
+      - zr-cic-schadensersatz-280-1
     - id: p5
       label: Wahlrecht zwischen grossem und kleinem Schadensersatz erkannt; hier kleiner
         Schadensersatz in Hoehe von 3.000 Euro sauber begruendet
@@ -267,3 +275,5 @@ faelle:
       - kleiner Schadensersatz
       - Minderwert
       - '3.000'
+      card_slugs:
+      - zr-cic-rechtsfolge-grosser-kleiner-se
