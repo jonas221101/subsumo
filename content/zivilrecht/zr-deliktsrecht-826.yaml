@@ -202,6 +202,9 @@ faelle:
       - '826'
       - reiner Vermoegensschaden
       - 823 Abs. 1
+      card_slugs:
+      - zr-826-reine-vermoegensschaeden
+      - zr-826-abgrenzung-823-1
     - id: p2
       label: Sittenwidrigkeit bejaht (bewusst gefaelschte Bilanz zur Anlagetaeuschung)
       weight: 2.0
@@ -212,6 +215,8 @@ faelle:
       - sittenwidrig
       - Bilanz
       - Taeuschung
+      card_slugs:
+      - zr-826-sittenwidrigkeit-begriff
     - id: p3
       label: Schaedigungsvorsatz (dolus eventualis genuegt) bejaht
       weight: 2.0
@@ -222,12 +227,16 @@ faelle:
       - Vorsatz
       - dolus eventualis
       - billigend
+      card_slugs:
+      - zr-826-schaedigungsvorsatz
     - id: p4
       label: Vorsatz bzgl. der sittenwidrigkeitsbegruendenden Umstaende erkannt
       weight: 1.0
       keywords:
       - kannte
       - Unrichtigkeit
+      card_slugs:
+      - zr-826-vorsatz-sittenwidrige-umstaende
     - id: p5
       label: Kausaler Vermoegensschaden in Hoehe der verlorenen Einlage von 25.000
         EUR bejaht
@@ -237,6 +246,8 @@ faelle:
       - '25.000'
       - Einlage
       - Schaden
+      card_slugs:
+      - zr-826-reine-vermoegensschaeden
     - id: p6
       label: 'Ergebnis: Anspruch besteht'
       weight: 0.5

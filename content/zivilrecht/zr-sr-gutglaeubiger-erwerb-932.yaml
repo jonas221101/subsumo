@@ -209,6 +209,8 @@ faelle:
       keywords:
       - '985'
       - Herausgabe
+      card_slugs:
+      - zr-sr-gutglaeubiger-erwerb-932-grundgedanke
     - id: p2
       label: Erwerbstatbestand § 929 S. 1 BGB zwischen M und D bejaht, aber M als
         Nichtberechtigter erkannt
@@ -219,6 +221,8 @@ faelle:
       - '929'
       - Nichtberechtigter
       - Entleiher
+      card_slugs:
+      - zr-sr-gutglaeubiger-erwerb-932-grundgedanke
     - id: p3
       label: Gutglaeubigkeit des D nach § 932 Abs. 2 BGB bejaht
       weight: 1.5
@@ -227,6 +231,8 @@ faelle:
       keywords:
       - gutglaeubig
       - '932'
+      card_slugs:
+      - zr-sr-guter-glaube-932-2
     - id: p4
       label: Kein Abhandenkommen nach § 935 Abs. 1 BGB erkannt und begruendet (freiwillige
         Weggabe auf jeder Besitzstufe)
@@ -238,6 +244,9 @@ faelle:
       - '935'
       - Abhandenkommen
       - freiwillig
+      card_slugs:
+      - zr-sr-abhandenkommen-935-1
+      - zr-sr-abhandenkommen-mehrstufiger-besitz
     - id: p5
       label: 'Ergebnis: D hat gutglaeubig Eigentum erworben, § 932 BGB'
       weight: 1.5
@@ -247,6 +256,8 @@ faelle:
       keywords:
       - '932'
       - Eigentum erworben
+      card_slugs:
+      - zr-sr-gutglaeubiger-erwerb-932-grundgedanke
     - id: p6
       label: 'Ergebnis: kein Anspruch des E gegen D'
       weight: 1.0
