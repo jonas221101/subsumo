@@ -222,6 +222,16 @@ class ApiClient {
     });
   }
 
+  /// Freischaltcode einloesen (docs/28-freischaltcode-spezifikation.md
+  /// Abschnitt 5, SUB-269/SUB-271): verlaengert `pro_until` um die am Code
+  /// hinterlegte Dauer. Wirft [ApiException] mit 404 (ungueltig/inaktiv),
+  /// 410 (abgelaufen/ausgeschoepft) oder 409 (bereits eingeloest) - der
+  /// Aufrufer bildet daraus die passende Nutzermeldung.
+  Future<DateTime> redeemCode(String code) async {
+    final data = await _post('/v1/account/redeem', {'code': code});
+    return DateTime.parse((data as Map<String, dynamic>)['pro_until'] as String);
+  }
+
   // --- Oeffentlich (ohne Login) ---------------------------------------------
 
   /// Themen je Rechtsgebiet fuer die Landing-Page-Teaser (SUB-109 Abschnitt

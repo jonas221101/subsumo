@@ -29,6 +29,11 @@ class _AccountPageState extends State<AccountPage> {
   bool _deleteBusy = false;
   String? _deleteError;
 
+  final _redeemController = TextEditingController();
+  bool _redeemBusy = false;
+  String? _redeemError;
+  String? _redeemSuccess;
+
   /// Ob die KI-Korrektur ueberhaupt aktiv ist (`GET /v1/public/config`,
   /// SUB-133/SUB-134). Solange nicht, bleibt die Kontoseite unveraendert -
   /// es gibt nichts zu widerrufen, wenn das Feature gar nicht laeuft.
@@ -40,6 +45,12 @@ class _AccountPageState extends State<AccountPage> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) => _loadAiCorrectionEnabled());
+  }
+
+  @override
+  void dispose() {
+    _redeemController.dispose();
+    super.dispose();
   }
 
   Future<void> _loadAiCorrectionEnabled() async {
@@ -132,6 +143,41 @@ class _AccountPageState extends State<AccountPage> {
       setState(() => _error = 'Server nicht erreichbar. Bitte spaeter erneut versuchen.');
     } finally {
       if (mounted) setState(() => _busy = false);
+    }
+  }
+
+  // --- SUB-269/SUB-271: Freischaltcode-Einloesung ----------------------------
+
+  Future<void> _redeemCode() async {
+    final code = _redeemController.text.trim();
+    if (code.isEmpty) return;
+    setState(() {
+      _redeemBusy = true;
+      _redeemError = null;
+      _redeemSuccess = null;
+    });
+    final app = AppScope.of(context);
+    try {
+      final proUntil = await app.api.redeemCode(code);
+      await app.refreshUser();
+      if (!mounted) return;
+      _redeemController.clear();
+      setState(() => _redeemSuccess = 'Code eingeloest. Pro aktiv bis ${_formatDate(proUntil)}.');
+    } on ApiException catch (e) {
+      if (!mounted) return;
+      setState(() {
+        _redeemError = switch (e.statusCode) {
+          404 => 'Dieser Code ist ungueltig oder nicht mehr aktiv.',
+          410 => 'Dieser Code ist abgelaufen oder bereits ausgeschoepft.',
+          409 => 'Du hast diesen Code bereits eingeloest.',
+          _ => e.message,
+        };
+      });
+    } on Exception {
+      if (!mounted) return;
+      setState(() => _redeemError = 'Server nicht erreichbar. Bitte spaeter erneut versuchen.');
+    } finally {
+      if (mounted) setState(() => _redeemBusy = false);
     }
   }
 
@@ -310,6 +356,14 @@ class _AccountPageState extends State<AccountPage> {
                 onCancel: _confirmAndCancel,
               ),
               const SizedBox(height: Spacing.lg),
+              _RedeemCodeCard(
+                controller: _redeemController,
+                busy: _redeemBusy,
+                error: _redeemError,
+                success: _redeemSuccess,
+                onRedeem: _redeemCode,
+              ),
+              const SizedBox(height: Spacing.lg),
               _PrivacyCard(
                 exportBusy: _exportBusy,
                 exportError: _exportError,
@@ -400,6 +454,57 @@ class _SubscriptionCard extends StatelessWidget {
               label: busy ? 'Bitte warten ...' : 'Kuendigen',
               onPressed: busy ? null : onCancel,
             ),
+          ],
+          if (error != null) ...[
+            const SizedBox(height: Spacing.sm),
+            SubsumoFeedbackBlock(message: error!, severity: FeedbackSeverity.negative),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+/// SUB-269/SUB-271 (docs/28-freischaltcode-spezifikation.md Abschnitt 5):
+/// Freischaltcode-Einloesung fuer die Fachschafts-Beta. Kein eigener
+/// Checkout-/Zahlungs-Flow - loest nur `pro_until` aus.
+class _RedeemCodeCard extends StatelessWidget {
+  const _RedeemCodeCard({
+    required this.controller,
+    required this.busy,
+    required this.error,
+    required this.success,
+    required this.onRedeem,
+  });
+
+  final TextEditingController controller;
+  final bool busy;
+  final String? error;
+  final String? success;
+  final VoidCallback onRedeem;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return SubsumoCard(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('Freischaltcode einloesen', style: theme.textTheme.titleMedium),
+          const SizedBox(height: Spacing.sm),
+          SubsumoTextField(
+            label: 'Code',
+            controller: controller,
+            onFieldSubmitted: (_) => busy ? null : onRedeem(),
+          ),
+          const SizedBox(height: Spacing.md),
+          SubsumoButton.secondary(
+            label: busy ? 'Bitte warten ...' : 'Code einloesen',
+            onPressed: busy ? null : onRedeem,
+          ),
+          if (success != null) ...[
+            const SizedBox(height: Spacing.sm),
+            SubsumoFeedbackBlock(message: success!, severity: FeedbackSeverity.positive),
           ],
           if (error != null) ...[
             const SizedBox(height: Spacing.sm),
