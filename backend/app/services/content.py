@@ -86,6 +86,11 @@ def load_content(content_dir: Path) -> ContentBundle:
         return bundle
 
     slugs: dict[str, str] = {}
+    # (where, card_slug) je referenziertem Pruefpunkt.card_slugs - erst nach der
+    # kompletten Dateischleife geprueft, da eine Karte aus einer alphabetisch
+    # spaeter sortierten Datei zum Zeitpunkt der Fall-Validierung noch nicht in
+    # ``bundle.cards`` steht.
+    card_slug_refs: list[tuple[str, str]] = []
     for path in sorted(content_dir.rglob("*.y*ml")):
         rel = path.relative_to(content_dir)
         try:
@@ -174,6 +179,9 @@ def load_content(content_dir: Path) -> ContentBundle:
             ids = [p.get("id") for p in pruefpunkte]
             if len(set(ids)) != len(ids):
                 bundle.errors.append(f"{where}: Pruefpunkt-IDs sind nicht eindeutig")
+            for p in pruefpunkte:
+                for card_slug in p.get("card_slugs") or []:
+                    card_slug_refs.append((where, card_slug))
             case["stand"] = _check_stand(
                 case.get("stand", topic.get("stand")), where, bundle.warnings, bundle.errors
             )
@@ -182,6 +190,13 @@ def load_content(content_dir: Path) -> ContentBundle:
             case["topic_slug"] = topic["slug"]
             case["area"] = topic["area"]
             bundle.cases.append(case)
+
+    card_slugs_available = {c["slug"] for c in bundle.cards}
+    for where, card_slug in card_slug_refs:
+        if card_slug not in card_slugs_available:
+            bundle.errors.append(
+                f"{where}: card_slugs verweist auf unbekannten Card-Slug '{card_slug}'"
+            )
 
     return bundle
 

@@ -265,20 +265,32 @@ class _GutachtenPageState extends State<GutachtenPage> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           if (_case != null)
-            SubsumoCard(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    _case!['facts'] as String? ?? '',
-                    style: Theme.of(context).textTheme.bodyMedium,
+            // Feste Hoehenobergrenze mit eigenem Scroll: `_buildEditor` sitzt
+            // im schmalen Layout in einem hoehenbegrenzten `SizedBox` (siehe
+            // `build()`), zusammen mit dem `Expanded`-Editor darunter. Ohne
+            // Obergrenze ueberschreitet ein langer Sachverhalt (z. B. Fall
+            // "Der Hund im Auto") allein schon die verfuegbare Hoehe, und der
+            // Text laeuft unbemerkt in den nachfolgenden Feedback-Hinweis
+            // hinein (SUB-257-Befund) statt den Editor darunter zu verkleinern.
+            ConstrainedBox(
+              constraints: const BoxConstraints(maxHeight: 180),
+              child: SubsumoCard(
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        _case!['facts'] as String? ?? '',
+                        style: Theme.of(context).textTheme.bodyMedium,
+                      ),
+                      const SizedBox(height: Spacing.md),
+                      Text(
+                        _case!['question'] as String? ?? '',
+                        style: Theme.of(context).textTheme.titleSmall,
+                      ),
+                    ],
                   ),
-                  const SizedBox(height: Spacing.md),
-                  Text(
-                    _case!['question'] as String? ?? '',
-                    style: Theme.of(context).textTheme.titleSmall,
-                  ),
-                ],
+                ),
               ),
             ),
           const SizedBox(height: Spacing.md),

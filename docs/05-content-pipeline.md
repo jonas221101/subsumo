@@ -53,7 +53,15 @@ faelle:
           required: true   # fehlt er, ist die Arbeit gedeckelt
           norms: ["§ 433 Abs. 1 S. 1 BGB"]
           keywords: ["433"]
+          card_slugs: ["zr-at-angebot"]  # optional, siehe unten
 ```
+
+`card_slugs` (optional, Default leer) verzahnt einen Pruefpunkt mit
+Wiederholungskarten (docs/13-lernarchitektur.md Abschnitt 3.2/3.3): wird der
+Pruefpunkt bei einer Abgabe verfehlt, stellt das Backend die referenzierten
+Karten des einreichenden Nutzers faellig (bei einem verfehlten Pflichtpunkt
+zusaetzlich auf `relearning`). Faelle ohne `card_slugs` verhalten sich exakt
+wie bisher — reine Textrueckmeldung, keine Karten-Konsequenz.
 
 ## Regeln, die die CI erzwingt
 
@@ -65,6 +73,7 @@ faelle:
 - `relevance` ausserhalb 1–5
 - `stand` in einem anderen Format als `YYYY-MM` oder `YYYY-MM-TT`
 - einem Fall **ohne** Erwartungshorizont oder mit nicht eindeutigen Pruefpunkt-IDs
+- `card_slugs`, die auf einen unbekannten Card-Slug verweisen
 
 Warnung (kein Abbruch): Inhalte, deren `stand` aelter als 18 Monate ist. Mit
 `--strict` werden auch sie zum Fehler — gedacht fuer einen monatlichen
