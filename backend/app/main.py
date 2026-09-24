@@ -13,6 +13,7 @@ from sqlalchemy import text
 from app.api.v1 import account, auth, billing, consent, content, gutachten, learn, plan, public
 from app.config import get_settings
 from app.core.observability import configure_logging
+from app.core.ratelimit import RateLimiter
 from app.db import Base, SessionLocal, engine
 from app.services.content import load_content, seed
 
@@ -49,6 +50,18 @@ def create_app() -> FastAPI:
         ),
         lifespan=lifespan,
     )
+    app.state.auth_rate_limiter = RateLimiter(
+        max_requests=settings.auth_rate_limit_max_requests,
+        window_seconds=settings.auth_rate_limit_window_seconds,
+    )
+    if settings.environment == "production" and not settings.paywall_enabled:
+        # Bewusster Notausgang (docs/20-release-g2-bezahlstrecke.md Abschnitt 5)
+        # ist erlaubt, darf aber nicht lautlos passieren: sonst bekommt jeder
+        # Nutzer unbemerkt vollen Pro-Zugriff geschenkt (docs/26 Abschnitt 3.1).
+        log.warning(
+            "SUBSUMO_PAYWALL_ENABLED=false in Produktion: alle Nutzer erhalten "
+            "vollen Pro-Zugriff. Bewusster Notausgang oder vergessene Variable?"
+        )
     app.add_middleware(
         CORSMiddleware,
         # Fuer den Web-Client. In Produktion auf die eigene Domain einschraenken.

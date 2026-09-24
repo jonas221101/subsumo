@@ -238,3 +238,11 @@ class CheckoutSessionOut(BaseModel):
 
 class CancelSubscriptionOut(BaseModel):
     mode: str  # "period_end" | "immediate_refund"
+
+
+class RedeemCodeIn(BaseModel):
+    code: str
+
+
+class RedeemCodeOut(BaseModel):
+    pro_until: datetime
