@@ -1,8 +1,7 @@
 # Freischaltcode-/Redeem-Mechanismus — Spezifikation
 
 > Spezifikation zu [SUB-262](/SUB/issues/SUB-262), aus dem in
-> `docs/15-go-to-market.md` Abschnitt 1.1 und
-> `docs/26-projektreview-sub254.md` Abschnitt 4 benannten Befund: Die
+> `docs/15-go-to-market.md` Abschnitt 1.1 benannten Befund: Die
 > Fachschafts-Beta (kostenloser Pro-Zugang für sechs Monate gegen
 > Verlinkung/Feedback) braucht einen Freischaltcode-Mechanismus, den es im
 > Repo noch nicht gibt. **Kein Release-Blocker** — bis zur Umsetzung bleibt
