@@ -34,14 +34,17 @@ App-Screens (Dashboard, Karten, Schemata, Fälle, Gutachten) sind sachlich,
 ampelfrei und handwerklich ruhig geblieben, wie Abschnitt 6 des Briefs es
 verlangt. `flutter analyze` läuft ohne Meldung.
 
-Zwei echte Layoutbrüche wurden gefunden (Abschnitt 2), beide klein und
-isoliert reparierbar. Ein Stück des Briefs (Login-/Rechtstexte-Rahmen) ist
-im Code nicht umgesetzt, aber vom Brief selbst als Feinschliff-Aufgabe
-eingestuft (Abschnitt 3).
+Zwei echte Layoutbrüche wurden gefunden (Abschnitt 2) — beide klein und
+isoliert, deshalb noch in diesem Lauf direkt behoben und gegen den
+Release-Build erneut per Screenshot verifiziert (`flutter analyze` und die
+betroffenen Widget-Tests bleiben grün). Ein Stück des Briefs
+(Login-/Rechtstexte-Rahmen) ist im Code nicht umgesetzt, aber vom Brief
+selbst als Feinschliff-Aufgabe eingestuft (Abschnitt 3) und bewusst
+unangetastet geblieben.
 
 ---
 
-## 2. Vor dem Freeze (28.09.) noch machbar — klein und isoliert
+## 2. Vor dem Freeze (28.09.) noch machbar — klein und isoliert, behoben in diesem Lauf
 
 ### 2.1 Rechtsgebiets-Chips laufen aus der Karte (mittel)
 
@@ -63,12 +66,13 @@ Volllayout `01_landing_wide.png`.
 
 **Reproduktion:** `/` öffnen, zur Sektion "Die drei Rechtsgebiete" scrollen.
 
-**Behebung (klein):** `SubsumoChip.label` in `Text(..., overflow:
-TextOverflow.ellipsis, maxLines: 1)` innerhalb einer `ConstrainedBox`/
-`Flexible` fassen, oder die Chip-Erzeugung in `_RechtsgebietTile` auf
-gekürzte Themennamen umstellen. Betrifft nur diese eine Komponente, kein
-Risiko für andere Chip-Einsätze (Kartentyp, Norm-Verweis), die bisher kurze,
-kontrollierte Labels nutzen.
+**Behoben:** Themennamen werden in `_RechtsgebietTile` jetzt auf 24 Zeichen
+gekürzt (mit "…"), bevor sie an `SubsumoChip` gehen — nur am Aufrufort in
+`public_landing_page.dart`, `SubsumoChip` selbst bleibt unverändert, kein
+Risiko für andere Chip-Einsätze (Kartentyp, Norm-Verweis) mit bereits
+kurzen, kontrollierten Labels. Verifiziert per erneutem Screenshot bei
+1400px und 390px — Chips bleiben jetzt innerhalb der Karte.
+`flutter analyze` und `public_landing_page_test.dart` grün.
 
 ### 2.2 Gutachten-Falltext überlappt den Feedback-Hinweis bei schmalen Fenstern (mittel)
 
@@ -94,12 +98,15 @@ Subsumo am Starttag wirklich differenzieren — ausgerechnet dort ist der
 Sachverhalt für eine nicht kleine Nutzergruppe (Handy-Breite) teilweise
 unlesbar.
 
-**Behebung (klein):** Die feste `SizedBox(height: 420)` ersetzen durch eine
-Aufteilung, die nur den Editor auf eine Mindesthöhe zwingt (z. B.
-`ConstrainedBox(minHeight: ...)` nur um das `TextField`), während die
-Fallkarte ihre natürliche Höhe behält und die `ListView` insgesamt scrollt —
-das Verhalten, das die einspaltige Variante ohnehin schon als `ListView`
-anlegt, nur die künstliche Höhenklammer um beide Kinder muss weg.
+**Behoben:** Die Sachverhalts-`SubsumoCard` in `_buildEditor()` bekommt jetzt
+selbst eine Höhenobergrenze (`ConstrainedBox(maxHeight: 180)`) mit eigenem
+`SingleChildScrollView` — lange Sachverhalte scrollen innerhalb der Karte,
+statt die gemeinsame 420px-Box mit dem Editor darunter zu sprengen. Der
+Editor darunter bekommt dadurch wieder verlässlich seinen Platz, auch bei
+langen Fällen. Wirkt gleich in beiden Spaltenlayouts (schmal und breit).
+Verifiziert per erneutem Screenshot bei 390px mit dem Fall "Der Hund im
+Auto" — keine Überlappung mehr. `flutter analyze` und
+`gutachten_page_test.dart` (alle 9 Fälle) grün.
 
 ---
 
