@@ -191,6 +191,8 @@ faelle:
       - Rechtsgutsverletzung
       - Gesundheit
       - Eigentum
+      card_slugs:
+      - zr-delikt-rechtsgutsverletzung
     - id: p3
       label: Verletzungshandlung (Ueberfahren des Rotlichts) benannt
       weight: 1.0
@@ -198,6 +200,8 @@ faelle:
       keywords:
       - Rotlicht
       - Verletzungshandlung
+      card_slugs:
+      - zr-delikt-verletzungshandlung
     - id: p4
       label: Haftungsbegruendende Kausalitaet bejaht
       weight: 1.5
@@ -205,6 +209,8 @@ faelle:
       keywords:
       - Kausalitaet
       - kausal
+      card_slugs:
+      - zr-delikt-haftungsbegruendende-kausalitaet
     - id: p5
       label: Rechtswidrigkeit angesprochen
       weight: 1.0
@@ -212,6 +218,8 @@ faelle:
       keywords:
       - rechtswidrig
       - indiziert
+      card_slugs:
+      - zr-delikt-rechtswidrigkeit
     - id: p6
       label: Fahrlaessigkeit ueber § 276 Abs. 2 BGB mit konkreter Sorgfaltspflichtverletzung
         begruendet
@@ -223,6 +231,8 @@ faelle:
       - fahrlaessig
       - Sorgfalt
       - '276'
+      card_slugs:
+      - zr-delikt-verschulden-276
     - id: p7
       label: Schaden korrekt mit 950 Euro (beide Schadenspositionen) beziffert
       weight: 2.0
@@ -231,6 +241,8 @@ faelle:
       - '950'
       - '800'
       - '150'
+      card_slugs:
+      - zr-delikt-schaden-haftungsausfuellend
     - id: p8
       label: 'Ergebnis: Anspruch des F gegen R besteht'
       weight: 1.0

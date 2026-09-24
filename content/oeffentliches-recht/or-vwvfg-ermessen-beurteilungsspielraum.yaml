@@ -169,6 +169,8 @@ faelle:
       keywords:
       - Ermessen
       - Entschliessungsermessen
+      card_slugs:
+      - or-vwvfg-ermessen-begriff
     - id: p2
       label: Ermessensreduzierung auf Null wegen akuter Gefahr fuer Leib/Leben erkannt
         und begruendet
@@ -180,6 +182,8 @@ faelle:
       - Ermessensreduzierung auf Null
       - Gefahr
       - Leib und Leben
+      card_slugs:
+      - or-vwvfg-ermessensreduzierung-null
     - id: p3
       label: Kapazitaetsargument zutreffend als sachfremde Erwaegung/Ermessensfehlgebrauch
         qualifiziert
@@ -189,6 +193,8 @@ faelle:
       - sachfremd
       - Ermessensfehlgebrauch
       - Kapazitaeten
+      card_slugs:
+      - or-vwvfg-ermessensfehler-arten
     - id: p4
       label: 'Ergebnis: Anspruch des N auf behoerdliches Einschreiten'
       weight: 1.5
@@ -196,3 +202,6 @@ faelle:
       keywords:
       - Anspruch
       - Einschreiten
+
+      card_slugs:
+      - or-vwvfg-ermessensreduzierung-null

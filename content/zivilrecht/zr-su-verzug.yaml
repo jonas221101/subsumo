@@ -207,6 +207,8 @@ faelle:
       - '280'
       - '286'
       - Verzugsschaden
+      card_slugs:
+      - zr-su-verzug-schadensersatz-280
     - id: p2
       label: Faelligkeit der Werklohnforderung am 15.6. korrekt bestimmt
       weight: 1.0
@@ -214,6 +216,8 @@ faelle:
       - faellig
       - '15.6'
       - 14 Tage
+      card_slugs:
+      - zr-su-verzug-voraussetzungen-286
     - id: p3
       label: Verzugseintritt mit Zugang der Mahnung am 20.6. erkannt - Wochenfrist
         ohne Bedeutung fuer den Verzugsbeginn
@@ -225,6 +229,8 @@ faelle:
       - Mahnung
       - '20.6'
       - Verzug
+      card_slugs:
+      - zr-su-verzug-mahnung-begriff
     - id: p4
       label: Vertretenmuessen vermutet, keine Entlastung erkennbar
       weight: 1.0
@@ -233,6 +239,8 @@ faelle:
       keywords:
       - vermutet
       - vertreten
+      card_slugs:
+      - zr-su-verzug-vertretenmuessen-286-4
     - id: p5
       label: Ueberziehungszinsen als kausaler, ersatzfaehiger Verzugsschaden eingeordnet
       weight: 2.0
@@ -240,6 +248,8 @@ faelle:
       - Ueberziehungszinsen
       - kausal
       - Schaden
+      card_slugs:
+      - zr-su-verzug-schadensersatz-280
     - id: p6
       label: Anspruch auf gesetzliche Verzugszinsen aus § 288 Abs. 1 BGB (nicht Abs.
         2, da K Verbraucher ist)
@@ -252,6 +262,8 @@ faelle:
       - '288'
       - Verzugszinsen
       - Verbraucher
+      card_slugs:
+      - zr-su-verzugszinsen-288
     - id: p7
       label: 'Ergebnis: beide Anspruesche bestehen'
       weight: 1.0

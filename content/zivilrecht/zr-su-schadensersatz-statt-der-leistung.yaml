@@ -202,6 +202,8 @@ faelle:
       - '280'
       - '281'
       - Schadensersatz statt der Leistung
+      card_slugs:
+      - zr-su-se-statt-leistung-systematik-280
     - id: p2
       label: Nichtleistung trotz Faelligkeit nach vier Wochen erkannt
       weight: 1.0
@@ -209,6 +211,8 @@ faelle:
       - faellig
       - vier Wochen
       - nicht geliefert
+      card_slugs:
+      - zr-su-se-statt-leistung-voraussetzungen-281-1
     - id: p3
       label: Erfolglose Fristsetzung mit angemessener Frist iSd § 281 Abs. 1 BGB bejaht
       weight: 2.0
@@ -219,6 +223,8 @@ faelle:
       - Frist
       - '281'
       - erfolglos
+      card_slugs:
+      - zr-su-se-statt-leistung-voraussetzungen-281-1
     - id: p4
       label: Vertretenmuessen des T vermutet, § 280 Abs. 1 S. 2 BGB
       weight: 1.0
@@ -234,6 +240,8 @@ faelle:
       - Mehrkosten
       - Deckungskauf
       - '300'
+      card_slugs:
+      - zr-su-se-statt-leistung-systematik-280
     - id: p6
       label: Rueckzahlung der 1.200 EUR ueber § 281 Abs. 5 BGB iVm § 346 Abs. 1 BGB
         (Rueckgewaehr), nicht als Teil des Schadens
@@ -247,6 +255,8 @@ faelle:
       - '346'
       - Rueckgewaehr
       - Vorauszahlung
+      card_slugs:
+      - zr-su-se-statt-leistung-rueckgewaehr-281-5
     - id: p7
       label: 'Hinweis auf § 325 BGB: Ruecktritt wuerde den Schadensersatzanspruch
         nicht ausschliessen'
@@ -256,6 +266,8 @@ faelle:
       keywords:
       - '325'
       - Ruecktritt
+      card_slugs:
+      - zr-su-se-statt-leistung-ruecktritt-325
     - id: p8
       label: 'Ergebnis: beide Anspruesche bestehen'
       weight: 0.5

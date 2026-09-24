@@ -216,6 +216,8 @@ faelle:
       keywords:
       - '142'
       - von Anfang an nichtig
+      card_slugs:
+      - zr-at-anfechtung-grundgedanke
     - id: p2
       label: Erklaerungsirrtum nach § 119 Abs. 1 Var. 2 BGB sauber definiert und subsumiert
       weight: 3.0
@@ -225,6 +227,8 @@ faelle:
       keywords:
       - Erklaerungsirrtum
       - '119'
+      card_slugs:
+      - zr-at-anfechtung-inhaltsirrtum
     - id: p3
       label: Abgrenzung zum Inhaltsirrtum bzw. zum unbeachtlichen Motivirrtum angesprochen
       weight: 1.0
@@ -232,6 +236,9 @@ faelle:
       keywords:
       - Inhaltsirrtum
       - Motivirrtum
+      card_slugs:
+      - zr-at-anfechtung-inhaltsirrtum
+      - zr-at-anfechtung-motivirrtum-abgrenzung
     - id: p4
       label: Kausalitaet zwischen Irrtum und Erklaerung gepruft
       weight: 1.0
@@ -251,6 +258,9 @@ faelle:
       - unverzueglich
       - '121'
       - '143'
+      card_slugs:
+      - zr-at-anfechtung-erklaerung-143
+      - zr-at-anfechtung-frist-121
     - id: p6
       label: Schadensersatzanspruch der V aus § 122 Abs. 1 BGB bejaht, inkl. Begrenzung
         auf das Erfuellungsinteresse und Pruefung des Ausschlusses nach § 122 Abs.
@@ -264,3 +274,5 @@ faelle:
       - '122'
       - Vertrauensschaden
       - Erfuellungsinteresse
+      card_slugs:
+      - zr-at-anfechtung-schadensersatz-122

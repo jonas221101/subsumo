@@ -185,16 +185,19 @@ faelle:
           required: true
           norms: ["§ 433 Abs. 1 S. 1 BGB", "§ 433 Abs. 1 BGB", "§ 433 BGB"]
           keywords: ["433"]
+          card_slugs: ["zr-at-willenserklaerung"]
         - id: p2
           label: "Schaufensterauslage als invitatio ad offerendum eingeordnet"
           weight: 2.5
           required: true
           keywords: ["invitatio", "Aufforderung zur Abgabe eines Angebots", "kein Rechtsbindungswille"]
+          card_slugs: ["zr-at-invitatio"]
         - id: p3
           label: "Angebot des K (§ 145 BGB) und Annahme des V (§ 147 BGB) herausgearbeitet"
           weight: 2.0
           norms: ["§ 145 BGB", "§ 147 BGB"]
           keywords: ["Angebot", "Annahme"]
+          card_slugs: ["zr-at-angebot"]
         - id: p4
           label: "Anfechtung nach § 142 Abs. 1 BGB als moegliche Vernichtung des Vertrages angesprochen"
           weight: 1.5
@@ -206,6 +209,7 @@ faelle:
           required: true
           norms: ["§ 119 Abs. 1 BGB"]
           keywords: ["Kalkulationsirrtum", "Motivirrtum", "Beweggrund"]
+          card_slugs: ["zr-at-kalkulationsirrtum"]
         - id: p6
           label: "Ergebnis: Anspruch des K besteht"
           weight: 1.0

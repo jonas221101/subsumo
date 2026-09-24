@@ -173,6 +173,9 @@ faelle:
       - Verpflichtungsklage
       - Untaetigkeitsklage
       - § 75
+      card_slugs:
+      - or-vwgo-vk-statthaftigkeit
+      - or-vwgo-vk-versagungsgegenklage-untaetigkeitsklage
     - id: p2
       label: Sperrfrist des § 75 S. 2 VwGO (drei Monate) korrekt angewandt und als
         abgelaufen erkannt
@@ -184,6 +187,8 @@ faelle:
       - Sperrfrist
       - drei Monate
       - zureichender Grund
+      card_slugs:
+      - or-vwgo-vk-untaetigkeitsklage-sperrfrist
     - id: p3
       label: Kein Vorverfahren vor Klageerhebung erforderlich, da Sperrfrist an dessen
         Stelle tritt
@@ -192,6 +197,8 @@ faelle:
       keywords:
       - Vorverfahren
       - entbehrlich
+      card_slugs:
+      - or-vwgo-vk-untaetigkeitsklage-sperrfrist
     - id: p4
       label: Klagebefugnis nach der Moeglichkeitstheorie bejaht
       weight: 1.5
@@ -199,6 +206,8 @@ faelle:
       keywords:
       - Klagebefugnis
       - moeglich
+      card_slugs:
+      - or-vwgo-vk-klagebefugnis
     - id: p5
       label: 'Ergebnis: Klage ist zulaessig'
       weight: 1.0
