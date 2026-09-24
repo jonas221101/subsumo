@@ -117,6 +117,49 @@ faelle:
     assert any("Erwartungshorizont" in e for e in bundle.errors)
 
 
+FALL_MIT_CARD_SLUGS = """
+faelle:
+  - slug: test-fall
+    title: Testfall
+    facts: Ein Sachverhalt.
+    quellen: ["Eigener Sachverhalt"]
+    expectation:
+      pruefpunkte:
+        - id: p1
+          label: Testpunkt
+          card_slugs: [{card_slug}]
+"""
+
+
+def test_bekannter_card_slug_wird_akzeptiert(tmp_path):
+    body = VALID + FALL_MIT_CARD_SLUGS.format(card_slug="test-karte")
+    bundle = load_content(write(tmp_path, "t.yaml", body))
+    assert bundle.ok, bundle.errors
+
+
+def test_unbekannter_card_slug_wird_abgelehnt(tmp_path):
+    body = VALID + FALL_MIT_CARD_SLUGS.format(card_slug="gibt-es-nicht")
+    bundle = load_content(write(tmp_path, "t.yaml", body))
+    assert not bundle.ok
+    assert any("card_slugs" in e and "gibt-es-nicht" in e for e in bundle.errors)
+
+
+def test_card_slug_aus_alphabetisch_spaeterer_datei_wird_akzeptiert(tmp_path):
+    """Regressionstest: ``load_content`` sortiert Dateien alphabetisch, daher
+    darf ein Fall in 'a.yaml' auf eine Karte aus 'z.yaml' verweisen, ohne dass
+    das als Fehler gemeldet wird."""
+    a_yaml = VALID.replace("test-thema", "fall-thema")
+    a_yaml += FALL_MIT_CARD_SLUGS.format(card_slug="spaete-karte")
+    write(tmp_path, "a.yaml", a_yaml)
+    write(
+        tmp_path,
+        "z.yaml",
+        VALID.replace("test-thema", "karten-thema").replace("test-karte", "spaete-karte"),
+    )
+    bundle = load_content(tmp_path)
+    assert bundle.ok, bundle.errors
+
+
 def test_kaputtes_yaml_bricht_nicht_den_ganzen_lauf(tmp_path):
     write(tmp_path, "gut.yaml", VALID)
     write(tmp_path, "kaputt.yaml", "topic: [unterminated\n  - x")

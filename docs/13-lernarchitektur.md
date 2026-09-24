@@ -359,7 +359,21 @@ vermitteln. Das existiert heute nicht — `Pruefpunkt`
 eine Wiederholungskarte" nicht implementierbar — es gäbe keine Karte, die
 erzeugt werden könnte.
 
-**Vorschlag (klein, additiv, nicht in diesem Ticket umgesetzt):**
+**Nachtrag (SUB-263, 24.09.2026): umgesetzt.** `Pruefpunkt.card_slugs` ist
+additiv implementiert (`evaluator.py:49-58`, `parse_expectation()`), das
+YAML-Contentformat und `content.py` validieren unbekannte Card-Slugs
+(`docs/05-content-pipeline.md`). `submit_case` (`gutachten.py`) stellt bei
+einem verfehlten Pruefpunkt mit `card_slugs` die referenzierten
+`UserCard`-Zeilen des einreichenden Nutzers auf `due=jetzt`, bei einem
+verfehlten Pflichtpunkt zusätzlich auf `state=relearning` — evaluator-
+unabhängig, da die Konsequenzlogik nur auf `PruefpunktResult.hit` aufsetzt
+(getestet mit `HeuristicEvaluator` und `LLMEvaluator`, `tests/test_card_slugs.py`).
+Damit ist die in diesem Abschnitt beschriebene Voraussetzung für die
+Kernthese erfüllt; offen bleiben nur die zwei explizit ausgeklammerten
+Folgetickets: die Technik-Karten (Kategorie A, siehe unten) und die
+redaktionelle Zuordnung `card_slugs` je Fall.
+
+**Vorschlag (klein, additiv — Stand vor SUB-263, siehe Nachtrag oben):**
 
 ```python
 @dataclass
@@ -661,7 +675,7 @@ nimmt — das widerspricht Leitprinzip 4, also:
 | 4 | Fall-Freischaltschwelle je Thema (`cards_started`-basiert) | `learn.py`/Client | 2.1 | Nein, Komfortfeature |
 | 5 | Rückstands-Kappung auch ohne aktiven Plan | `learn.py` | 2.4 | Ab wachsendem Kartenbestand |
 | 6 | Phasenberechnung relativ zum ursprünglichen Vorbereitungsbeginn statt zum Neuberechnungszeitpunkt | `planner.py` | 2.3 | Vor M4-Ausbau |
-| 7 | `Pruefpunkt.card_slugs` (Prüfpunkt → Karte) | `evaluator.py`, Contentformat, `content.py` | 3.3 | Nein — aber AVV-unabhängig umsetzbar (SUB-261, 24.09.2026); Voraussetzung für die Kernthese, geplant nach v1.0-Freeze |
+| 7 | `Pruefpunkt.card_slugs` (Prüfpunkt → Karte) | `evaluator.py`, Contentformat, `content.py` | 3.3 | Umgesetzt (SUB-263, 24.09.2026) — offen bleibt nur die redaktionelle Zuordnung je Fall (Folgeticket) |
 | 8 | Technik-Karten-Block + `Area.UEBERGREIFEND` | Contentformat, `models.py`, `content.py` | 3.3 | Nein, Folgeticket nach Gate B |
 | 9 | `normzitat_falsch` erkennbar machen | `gutachten.py`, wartet auf Norm-Explorer | 3.2 | Nein, an M2 gekoppelt |
 | 10 | Deckelungs-Parameter für `LLMEvaluator` bei nicht bestandener Kalibrierung | `evaluator.py` | 4.5 | Ja, falls MAE-Ziel verfehlt wird |
