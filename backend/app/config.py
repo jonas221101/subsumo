@@ -5,9 +5,14 @@ from __future__ import annotations
 from functools import lru_cache
 from pathlib import Path
 
+from pydantic import model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+
+# Bewusst offensichtlich unsicher, damit ein fehlendes Secret sofort auffaellt
+# (siehe Settings.jwt_secret). Der Fail-Fast-Check unten vergleicht dagegen.
+_INSECURE_DEFAULT_JWT_SECRET = "dev-only-insecure-change-me"
 
 
 class Settings(BaseSettings):
@@ -21,7 +26,7 @@ class Settings(BaseSettings):
 
     # In Produktion zwingend ueberschreiben. Der Default ist bewusst
     # offensichtlich unsicher, damit ein fehlendes Secret sofort auffaellt.
-    jwt_secret: str = "dev-only-insecure-change-me"
+    jwt_secret: str = _INSECURE_DEFAULT_JWT_SECRET
     jwt_algorithm: str = "HS256"
     access_token_ttl_minutes: int = 60 * 24 * 7
 
@@ -64,6 +69,19 @@ class Settings(BaseSettings):
     # Strukturiertes JSON-Logging fuer Produktion, siehe
     # docs/22-deploy-runbook.md Abschnitt "Monitoring".
     log_json: bool = False
+
+    @model_validator(mode="after")
+    def _fail_fast_on_default_jwt_secret_in_production(self) -> Settings:
+        # docs/17-release-readiness.md Abschnitt 2 (Gate D): ein Produktions-
+        # Start mit dem oeffentlich im Repository stehenden Default-Secret
+        # wuerde Tokens signieren, die jeder faelschen kann.
+        if self.environment == "production" and self.jwt_secret == _INSECURE_DEFAULT_JWT_SECRET:
+            raise RuntimeError(
+                "SUBSUMO_JWT_SECRET ist nicht gesetzt: in Produktion "
+                "(SUBSUMO_ENVIRONMENT=production) darf nicht der oeffentliche "
+                "Default-Wert verwendet werden (openssl rand -hex 32)."
+            )
+        return self
 
 
 @lru_cache
