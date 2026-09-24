@@ -2,13 +2,23 @@
 
 from __future__ import annotations
 
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 
 from fastapi import APIRouter, HTTPException, status
 
 from app.api.deps import CurrentUser, DbSession
 from app.core.security import verify_password
-from app.models import AnalyzeCall, Card, Case, CaseAccess, Review, Submission, UserCard
+from app.models import (
+    AnalyzeCall,
+    Card,
+    Case,
+    CaseAccess,
+    RedeemCode,
+    RedeemCodeRedemption,
+    Review,
+    Submission,
+    UserCard,
+)
 from app.schemas import (
     AccountDeleteIn,
     AccountExportAccountOut,
@@ -16,6 +26,8 @@ from app.schemas import (
     AccountExportReviewOut,
     AccountExportSubmissionOut,
     AccountExportUserCardOut,
+    RedeemCodeIn,
+    RedeemCodeOut,
 )
 
 router = APIRouter(prefix="/account", tags=["account"])
@@ -121,3 +133,47 @@ def delete_account(payload: AccountDeleteIn, user: CurrentUser, db: DbSession) -
     db.delete(user)
     db.commit()
     return {"deleted": True}
+
+
+@router.post("/redeem", response_model=RedeemCodeOut)
+def redeem_code(payload: RedeemCodeIn, user: CurrentUser, db: DbSession) -> RedeemCodeOut:
+    """Freischaltcode einloesen (docs/28-freischaltcode-spezifikation.md Abschnitt 3).
+
+    Kein Stripe-Aufruf - verlaengert nur ``User.pro_until``. 404 fuer
+    unbekannten wie deaktivierten Code in einer Fehlermeldung, damit der
+    Endpoint kein Orakel fuer gueltige Codes ist (Enumeration-Schutz).
+    """
+    normalized = payload.code.strip().upper()
+    code = db.query(RedeemCode).filter_by(code=normalized).one_or_none()
+    if code is None or not code.active:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, "Code nicht gefunden")
+
+    now = datetime.now(UTC)
+    if code.expires_at is not None and _as_aware(code.expires_at) <= now:
+        raise HTTPException(status.HTTP_410_GONE, "Code ist abgelaufen")
+
+    if code.max_redemptions is not None:
+        redemption_count = (
+            db.query(RedeemCodeRedemption).filter_by(redeem_code_id=code.id).count()
+        )
+        if redemption_count >= code.max_redemptions:
+            raise HTTPException(status.HTTP_410_GONE, "Code ist ausgeschoepft")
+
+    already_redeemed = (
+        db.query(RedeemCodeRedemption)
+        .filter_by(redeem_code_id=code.id, user_id=user.id)
+        .one_or_none()
+    )
+    if already_redeemed is not None:
+        raise HTTPException(status.HTTP_409_CONFLICT, "Code wurde bereits eingeloest")
+
+    base = _as_aware(user.pro_until) if user.pro_until is not None else now
+    user.pro_until = max(base, now) + timedelta(days=code.pro_duration_days)
+    db.add(user)
+    db.add(RedeemCodeRedemption(redeem_code_id=code.id, user_id=user.id))
+    db.commit()
+    return RedeemCodeOut(pro_until=user.pro_until)
+
+
+def _as_aware(value: datetime) -> datetime:
+    return value if value.tzinfo is not None else value.replace(tzinfo=UTC)
