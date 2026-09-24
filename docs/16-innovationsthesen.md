@@ -132,6 +132,40 @@ Prüfpunkt beim zweiten Versuch nicht mehr verfehlt wird (Anschluss an Metrik
 dem Zufallsniveau liegen — sonst erzeugt die Verzahnung zwar Karten, aber
 keinen Lerneffekt, und die These wäre trotz Implementierung nicht belegt.
 
+### Nachtrag (SUB-261, 24.09.2026): Kopplung an die KI-Korrektur/AVV widerlegt
+
+Die „Abgrenzung zu v1.0" oben nahm an, die Verzahnung hänge an der
+*inhaltlichen* Bewertung und laufe deshalb erst „v1.1-Umsetzung, sobald die
+KI-Korrektur aktiviert wird". Verifikation am Code (`backend/app/services/
+evaluator.py:159-235`, `backend/app/api/v1/gutachten.py:56-93`) widerlegt
+diese Kopplung: Der Auslöser des Mechanismus ist nicht die LLM-Bewertung,
+sondern ein *verfehlter Prüfpunkt* — und `HeuristicEvaluator.evaluate()`
+erzeugt für jeden nicht getroffenen Prüfpunkt bereits heute ein
+`PruefpunktResult(hit=False)`, per Stichwort-/Normabgleich, vollständig
+offline und unabhängig davon, ob ein LLM-Provider konfiguriert ist oder der
+Nutzer der KI-Auswertung zugestimmt hat (`get_evaluator()`,
+`evaluator.py:350-361`, läuft in v1.0 ohnehin ausschließlich heuristisch,
+`llm_provider=none`). `submit_case` (`gutachten.py:76-79`) ruft diesen
+Evaluator bei **jeder** Abgabe auf, ganz ohne AVV-Bezug.
+
+Der Kreis Prüfpunkt → Karte lässt sich also **ohne AVV schließen** — die
+Heuristik erkennt nur *ob* ein Stichwort/eine Norm vorkommt, nicht ob die
+Argumentation trägt, ist also schwächer in der Trefferquote als die
+LLM-Variante, aber funktionsfähig (`docs/13-lernarchitektur.md`, Abschnitt
+1.3, zur Deckelung der Heuristik). Die Konsequenzseite ist ebenfalls klein:
+`UserCard.state`/`due` (`backend/app/models.py:147,151`) tragen bereits die
+Zustände `due=jetzt` und `RELEARNING`, die `docs/13` Abschnitt 3.2 für die
+Konsequenz vorsieht.
+
+**Neue Einordnung:** Nicht mehr „v1.1, an KI-Korrektur-Aktivierung gekoppelt",
+sondern **AVV-unabhängig, aber weiterhin nach dem v1.0-Freeze** — SUB-261
+selbst ordnet die Umsetzung explizit „nach Release, nicht vor dem Freeze" ein,
+unabhängig vom Ausgang des AVV-Stichtags 27.09.2026 (der Stichtag betrifft nur
+die inhaltliche Trefferquote der KI-Korrektur, nicht ob dieser Mechanismus
+überhaupt gebaut werden kann). Umsetzungsschnitt (Backend, Contentformat,
+Validierung, Redaktion) ist als Folgetickets vorbereitet, siehe
+SUB-261-Kommentar.
+
 ---
 
 ## 3. Nachvollziehbare Korrektur (Punktabzug klickbar) — **Halten**
@@ -246,7 +280,7 @@ Ticketbeschreibung, und wird hier bestätigt statt nur wiederholt:
 | # | These | Entscheidung | Zeitpunkt | Messkriterium |
 |---|---|---|---|---|
 | 1 | Struktur-Feedback in Millisekunden | Halten | bereits live (v1.0) | Nutzungsrate + Free→Pro-Konversion bei Vielnutzern des Limits |
-| 2 | Verzahnung (Fehler → Wiederholungskarte) | Halten, konkretisiert auf `Pruefpunkt.card_slugs` | v1.1 (an KI-Korrektur-Aktivierung gekoppelt) | Erfolgsquote der erzeugten Wiederholungskarten vs. Baseline; wiederholte Prüfpunkt-Fehler sinken |
+| 2 | Verzahnung (Fehler → Wiederholungskarte) | Halten, konkretisiert auf `Pruefpunkt.card_slugs` | nach v1.0-Freeze, **AVV-unabhängig** (SUB-261, Nachtrag 24.09.2026) | Erfolgsquote der erzeugten Wiederholungskarten vs. Baseline; wiederholte Prüfpunkt-Fehler sinken |
 | 3 | Nachvollziehbare Korrektur (Punktabzug klickbar) | Halten | bereits live (v1.0) | Zustimmung „verstehe Punktabzug" in Nutzerbefragung > 80 % |
 | 4 | Offline-5h-Klausur inkl. Windows | Halten | v1.1 (M4, 4 Wochen) | Nutzung vor Klausurphasen + Nennung als Bindungsgrund |
 | — | KI-Chatbot als Tutor | Verwerfen | — | — |
@@ -263,7 +297,12 @@ sind, die kein Wettbewerber belegt anbietet. Das deckt sich mit der in
 Positionierung: nicht „wir haben KI-Korrektur", sondern die Kombination aus
 Korrektur, Verzahnung und Offline-Klausursimulator im selben System — nur
 dass diese Kombination laut `docs/18-release-2-wochen.md` erst mit v1.1
-vollständig steht, nicht mit v1.0.
+vollständig steht, nicht mit v1.0. Für die Verzahnung gilt seit der
+Verifikation in SUB-261 (Nachtrag zu Punkt 2, 24.09.2026) einschränkend: der
+Zeitpunkt „v1.1" ist eine Umsetzungsentscheidung (nach dem v1.0-Freeze), keine
+technische Abhängigkeit vom AVV-Ausgang mehr — die KI-Korrektur-Bedingung aus
+`docs/18-release-2-wochen.md` betrifft nur die inhaltliche Trefferquote, nicht
+den Verzahnungsmechanismus selbst.
 
 ## Quellen
 

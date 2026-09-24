@@ -15,6 +15,14 @@ Kein Rechtsrat. Alle mit „Frage:" markierten Punkte sind offen und brauchen
 eine explizite Antwort (Anwalt, Steuerberater oder Produktentscheidung), bevor
 das jeweilige Gate als grün gelten darf — keine Annahme ersetzt sie.
 
+**Stand der Status-Spalten geprüft: 24.09.2026**, gegen den zu diesem
+Zeitpunkt aktuellen Code-Stand nachgezogen (`docs/26-projektreview-sub254.md`
+Abschnitt 2, Ticket SUB-256). Zuvor war das Dokument seit 15.09. nicht mehr
+gegen die API-Schicht abgeglichen worden (dort zuletzt 17.09. geändert) — die
+DSGVO-Endpoints und der Backup-Mechanismus waren als offen geführt, obwohl
+bereits gebaut. Anwaltsfragen wurden dabei bewusst **nicht** beantwortet,
+nur der technische Umsetzungsstand korrigiert.
+
 ---
 
 ## 1. Recht
@@ -25,15 +33,15 @@ geprüft, trägt weiterhin — keine Änderung. Ergänzend, was dort fehlt:
 
 | Punkt | Verantwortlich | Aufwand | Phase | Status |
 |---|---|---|---|---|
-| Impressum (§ 5 DDG) | Gründung/Recht | 0,5 PT | C | Offen — Text steht, sobald Rechtsform/Anschrift final ist |
-| AGB (Nutzungsvertrag, Kündigung, Haftungsbegrenzung für KI-Bewertung) | Recht (extern) | 3–5 PT | C | Offen. **Frage:** Deckt eine Standard-SaaS-AGB die KI-Bewertungsfunktion ausreichend ab, oder braucht es eine gesonderte Haftungsklausel für „Bewertung ist Lernhilfe, keine verbindliche Note"? |
-| Datenschutzerklärung | Recht (extern) | 2–3 PT | C | Offen, hängt an Provider-Liste unten (Auflistung aller Empfänger ist Pflichtangabe) |
-| Widerrufsbelehrung (Fernabsatz, digitale Inhalte) | Recht (extern) | 1 PT | C | Offen. **Frage:** Verzichtet der Nutzer beim Abo-Kauf ausdrücklich auf das Widerrufsrecht bei sofortigem Leistungsbeginn (§ 356 V BGB), oder wird ein 14-Tage-Fenster ohne Nutzung eingeräumt? Wirkt sich auf Onboarding-Flow aus |
-| DSGVO Auskunft (Art. 15) | Backend-Dev | 1 PT | C | Offen — kein Endpoint. `docs/03-roadmap.md` M3 plant nur Export/Löschung, Auskunft (strukturierte Übersicht „welche Daten wozu") fehlt als eigener Punkt und sollte im selben Zug wie Export gebaut werden |
-| DSGVO Export (Art. 20) | Backend-Dev | inkl. in M3 | B/C | Offen — kein Endpoint in `backend/app/api/v1/` vorhanden (Stand: nur `auth.py` mit `/me` GET/PATCH, kein Export/Delete). In `docs/03-roadmap.md` M3 eingeplant |
-| DSGVO Löschung (Art. 17) | Backend-Dev | inkl. in M3 | B/C | Offen, siehe oben. Muss auch Kaskade auf Reviews, Submissions, Plan-Daten abdecken, nicht nur den User-Datensatz |
+| Impressum (§ 5 DDG) | Gründung/Recht | 0,5 PT | C | Offen — Text steht, sobald Rechtsform/Anschrift final ist. Entwurf mit vollständiger Struktur bereits vorhanden: `docs/legal/01-impressum.md` (Werte als `[Platzhalter]`, hängt an der Rechtsträger-Entscheidung aus `docs/18-release-2-wochen.md` Abschnitt 8) |
+| AGB (Nutzungsvertrag, Kündigung, Haftungsbegrenzung für KI-Bewertung) | Recht (extern) | 3–5 PT | C | Offen. **Frage:** Deckt eine Standard-SaaS-AGB die KI-Bewertungsfunktion ausreichend ab, oder braucht es eine gesonderte Haftungsklausel für „Bewertung ist Lernhilfe, keine verbindliche Note"? Ein Entwurf mit Haftungsklausel liegt bereits vor (`docs/legal/02-agb.md` Abschnitt 8), ersetzt aber nicht die anwaltliche Prüfung dieser Frage |
+| Datenschutzerklärung | Recht (extern) | 2–3 PT | C | Offen, hängt an Provider-Liste unten (Auflistung aller Empfänger ist Pflichtangabe). Entwurf mit aus dem Code abgeleiteten Datenkategorien bereits vorhanden: `docs/legal/03-datenschutzerklaerung.md` (Provider-Felder als `[Platzhalter]`, unverändert offen) |
+| Widerrufsbelehrung (Fernabsatz, digitale Inhalte) | Recht (extern) | 1 PT | C | Offen. **Frage:** Verzichtet der Nutzer beim Abo-Kauf ausdrücklich auf das Widerrufsrecht bei sofortigem Leistungsbeginn (§ 356 V BGB), oder wird ein 14-Tage-Fenster ohne Nutzung eingeräumt? Wirkt sich auf Onboarding-Flow aus. Entwurf vorhanden, der diese Entscheidung als offenen Punkt explizit ausweist: `docs/legal/04-widerrufsbelehrung.md` Abschnitt „Offene Entscheidung" |
+| DSGVO Auskunft (Art. 15) | Backend-Dev | 1 PT | C | **Erledigt.** `GET /account/export` (`backend/app/api/v1/account.py`) liefert die vollständige, strukturierte Selbstauskunft (Konto, FSRS-Lernzustand, Reviews, Gutachtenabgaben samt Bewertung) — kein separater Auskunft-Endpoint nötig, deckt Art. 15 mit ab. Getestet in `backend/tests/test_account.py` |
+| DSGVO Export (Art. 20) | Backend-Dev | inkl. in M3 | B/C | **Erledigt.** Derselbe `GET /account/export`-Endpoint liefert maschinenlesbares JSON, erfüllt damit auch die Datenübertragbarkeit nach Art. 20. Getestet in `backend/tests/test_account.py` |
+| DSGVO Löschung (Art. 17) | Backend-Dev | inkl. in M3 | B/C | **Erledigt.** `POST /account/delete` (`backend/app/api/v1/account.py`) mit Passwort-Bestätigung, Kaskade auf `Review`, `UserCard`, `Submission`, `CaseAccess`, `AnalyzeCall` und Konto selbst; Login danach nicht mehr möglich. Getestet in `backend/tests/test_account.py` (u. a. `test_loeschung_entfernt_free_tier_limit_daten` für die Kaskade) |
 | Verarbeitungsverzeichnis (Art. 30) | Recht/Betrieb | 1 PT | C | Offen — internes Dokument (kein Nutzer-Artefakt), listet Zwecke, Kategorien, Empfänger (LLM-Provider, Hosting), Löschfristen. Kann als `docs/18-verarbeitungsverzeichnis.md` intern geführt werden, sobald Provider-Wahl (unten) steht |
-| Auftragsverarbeitungsvertrag (AVV) mit LLM-Provider | Recht + Backend-Dev | 1–2 PT | B/C | Offen. **Frage (release-kritisch):** Dürfen Nutzertexte (Gutachten, oft mit personenbezogenen Sachverhaltsdetails im Übungsfall) unpseudonymisiert an einen US-Anbieter gehen? `docs/06-recht-compliance.md` Abschnitt 3 sieht bereits „Pseudonymisierung vor Versand, keine Nutzer-ID im Prompt" und „Provider-Wahl mit EU-Verarbeitung bevorzugt" vor — das ist die Grundsatzentscheidung, aber noch kein AVV. Aktueller Code (`backend/app/core/llm.py`) unterstützt aktuell nur den Provider `anthropic` (US) plus einen heuristischen Offline-Fallback (`llm_provider=none`); ein EU-Provider ist nicht angebunden. Transparenz im Produkt (Hinweis vor erster Gutachten-Abgabe, was mit dem Text passiert) ist zu bauen, nicht nur AGB-Text |
+| Auftragsverarbeitungsvertrag (AVV) mit LLM-Provider | Recht + Backend-Dev | 1–2 PT | B/C | Offen. **Frage (release-kritisch):** Dürfen Nutzertexte (Gutachten, oft mit personenbezogenen Sachverhaltsdetails im Übungsfall) unpseudonymisiert an einen US-Anbieter gehen? `docs/06-recht-compliance.md` Abschnitt 3 sieht bereits „Pseudonymisierung vor Versand, keine Nutzer-ID im Prompt" und „Provider-Wahl mit EU-Verarbeitung bevorzugt" vor — das ist die Grundsatzentscheidung, aber noch kein AVV. Aktueller Code (`backend/app/core/llm.py`) unterstützt aktuell nur den Provider `anthropic` (US) plus einen heuristischen Offline-Fallback (`llm_provider=none`); ein EU-Provider ist nicht angebunden. Die Transparenz im Produkt ist als eigener Einwilligungspfad bereits gebaut (`POST`/`DELETE /me/ai-consent`, `backend/app/api/v1/consent.py`) und technisch durchgesetzt — `get_evaluator(consented=...)` in `backend/app/services/evaluator.py` erzwingt ohne erteilte Einwilligung den heuristischen (Nicht-LLM-)Pfad, siehe `backend/app/api/v1/gutachten.py`. Getestet in `backend/tests/test_ai_consent.py`. Das ersetzt nicht den AVV selbst — die Grundsatzfrage oben bleibt offen |
 | RDG-Abgrenzung, Urheberrecht | — | — | — | Geprüft, Stand aus `docs/06-recht-compliance.md` trägt unverändert |
 
 ## 2. Sicherheit
@@ -44,7 +52,8 @@ geprüft, trägt weiterhin — keine Änderung. Ergänzend, was dort fehlt:
 | Refresh-Token-Rotation | Backend-Dev | 2–3 PT | B/C | Offen. Code-Stand: Es gibt nur einen Access-Token (`create_access_token`/`decode_access_token`, JWT HS256, Default-TTL 7 Tage), keinen Refresh-Token-Mechanismus. Für M3 vorgesehen. **Risiko bis dahin:** 7 Tage TTL ohne Rotation bedeutet ein gestohlenes Token bleibt bis zu 7 Tage gültig — für den Launch-Umfang (kein Zahlungsdaten-Zugriff über die API) vertretbar, sollte aber vor Gate D stehen |
 | Secrets-Handhabung Produktion | Betrieb/Backend-Dev | 1 PT | D | Offen. Code-Stand: `SUBSUMO_JWT_SECRET` hat einen offensichtlich unsicheren Default (`dev-only-insecure-change-me`), der über `.env` gesetzt werden muss — kein Fail-Fast, wenn er in Produktion vergessen wird. Vor Gate D: Startup-Check ergänzen, der bei Produktions-Umgebung (`SUBSUMO_ENVIRONMENT=production`) mit Default-Secret hart abbricht |
 | JWT-Secret-Rotation | Backend-Dev | 1 PT | D | Offen, kein Mechanismus vorhanden. **Frage:** Reicht ein manueller Rotationsprozess (Secret tauschen → alle Sessions invalidieren) zum Launch, oder braucht es von Anfang an Key-Versionierung (`kid`-Claim, zwei gültige Secrets während der Rotation)? Für v1.0-Nutzerzahl vermutlich Ersteres ausreichend — als Annahme markiert, keine Entscheidung |
-| Backup und Wiederherstellung Nutzerdaten | Betrieb | 1–2 PT Einrichtung, dann laufend | D | Offen — kein Backup-Konzept im Repo dokumentiert. Mindestanforderung für Launch: tägliches automatisiertes Datenbank-Backup mit getestetem Restore (nicht nur Backup-Existenz prüfen, tatsächlich einmal zurückspielen), Aufbewahrung ≥ 30 Tage, Backup-Verschlüsselung ruhend |
+| Backup und Wiederherstellung Nutzerdaten | Betrieb | 1–2 PT Einrichtung, dann laufend | D | **Erledigt.** `backend/scripts/backup_db.py`/`restore_db.py` decken SQLite und PostgreSQL ab, mit Verschlüsselung ruhender Backups (`--encrypt`) und Aufbewahrung ≥ 30 Tage (Default). Automatisiert über `subsumo-backup.timer`/`.service` (täglich 03:00), Restore tatsächlich geprobt (nicht nur Backup-Existenz geprüft) — siehe `docs/22-deploy-runbook.md` Abschnitt „Restore tatsächlich geprobt". Automatisierte Tests in `backend/tests/test_backup_restore.py` |
+| Rate-Limit auf Auth-Routen | Backend-Dev | wenige Stunden | B/C | Offen — neu identifiziert im Projektreview (`docs/26-projektreview-sub254.md` Abschnitt 3.2), bisher hier nicht geführt. Suche über `backend/app` nach `ratelimit\|rate_limit\|slowapi\|limiter` liefert keinen Treffer, kein vorgelagerter Reverse-Proxy in `ops/`: `POST /auth/login` und `POST /auth/register` sind unbegrenzt oft aufrufbar (Credential-Stuffing, automatisierte Massenanmeldung gegen das Free-Tier). Umsetzung läuft im Backend-Ticket aus `docs/26` Abschnitt 7 (#1) |
 
 ## 3. Stores und Auslieferung
 
@@ -119,9 +128,9 @@ Bezahlvorgang" plus vier Plattformen live. Der aktuell blockierende Kern:
    mehrere andere Punkte nach sich zieht (Datenschutzerklärung, Verarbeitungs-
    verzeichnis, Store-Datenschutzangaben, Hosting-Region) — sollte zuerst
    entschieden werden, nicht parallel zu den abhängigen Punkten.
-2. **DSGVO Export/Löschung/Auskunft-Endpoints** existieren im Code noch
-   nicht (Stand dieser Prüfung) — reine Backend-Arbeit, kein Rechtsrisiko,
-   aber ohne sie ist Gate C nicht erreichbar.
+2. **DSGVO Export/Löschung/Auskunft-Endpoints** sind inzwischen gebaut
+   (`backend/app/api/v1/account.py`, Stand dieser Prüfung: 24.09.2026) —
+   dieser Punkt blockiert Gate C nicht mehr.
 3. Drei **Steuer-/Rechtsfragen** (Widerrufsrecht bei Sofortleistung,
    Umsatzsteuer-OSS, Haftungsklausel KI-Bewertung) brauchen externe Beratung
    und sind nicht durch Produktentscheidung allein lösbar — rechtzeitig vor

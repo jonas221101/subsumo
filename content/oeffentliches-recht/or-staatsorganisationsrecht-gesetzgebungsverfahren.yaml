@@ -52,10 +52,14 @@ cards:
     Gesetz gescheitert. Ein Einspruchsgesetz kommt dagegen auch ohne Zustimmung des
     Bundesrates zustande; der Bundesrat kann lediglich Einspruch einlegen, den der
     Bundestag mit entsprechender Mehrheit zurueckweisen kann. Ob ein Gesetz zustimmungsbeduerftig
-    ist, muss sich nach Art. 77 Abs. 2a GG ausdruecklich aus dem Grundgesetz ergeben
-    - im Zweifel handelt es sich um ein Einspruchsgesetz.
+    ist, ergibt sich nicht aus einer allgemeinen Vorschrift, sondern nur aus einzelnen,
+    das Grundgesetz ausdruecklich benennenden Zustimmungsvorbehalten (z. B. Art. 79
+    Abs. 2, Art. 84 Abs. 1, Art. 105 Abs. 3 GG) - im Zweifel handelt es sich um ein
+    Einspruchsgesetz.
   norms:
-  - Art. 77 Abs. 2a GG
+  - Art. 79 Abs. 2 GG
+  - Art. 84 Abs. 1 GG
+  - Art. 105 Abs. 3 GG
   quellen:
   - GG, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -222,7 +226,8 @@ faelle:
   steps:
   - prompt: Um welchen Gesetzestyp handelt es sich nach der Vorgabe des Sachverhalts?
     erwartung: Um ein Zustimmungsgesetz, da eine ausdrueckliche Bestimmung des Grundgesetzes
-      die Zustimmung des Bundesrates vorschreibt, Art. 77 Abs. 2a GG.
+      die Zustimmung des Bundesrates vorschreibt (echte Zustimmungsvorbehalte finden
+      sich nur einzeln im Grundgesetz, z. B. Art. 79 Abs. 2, Art. 84 Abs. 1 GG).
   - prompt: Genuegt fuer das Zustandekommen eines Zustimmungsgesetzes die blosse Zurueckweisung
       eines (vermeintlichen) Einspruchs?
     erwartung: Nein. Bei einem echten Zustimmungsgesetz ist die ausdrueckliche Zustimmung

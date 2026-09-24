@@ -512,6 +512,21 @@ class _RechtsgebietTile extends StatelessWidget {
   final Color accent;
   final List<String> topicTitles;
 
+  /// Themennamen aus dem Content (`GET /v1/content/topics`) sind Volltitel
+  /// ohne Laengenbudget (z. B. "Anfechtung von Willenserklaerungen, §§ 119
+  /// ff. BGB") - `SubsumoChip` begrenzt die Textbreite nicht selbst (siehe
+  /// `subsumo_chip.dart`), und `Wrap` zwingt ein einzelnes Kind nicht in die
+  /// verfuegbare Breite. Ohne Kuerzung laeuft der Chip-Text sichtbar ueber
+  /// die 220px breite Karte hinaus (SUB-257-Befund). Kuerzung hier statt am
+  /// `SubsumoChip` selbst, weil andere Chip-Einsaetze (Kartentyp,
+  /// Norm-Verweis) bereits kurze, kontrollierte Labels haben und keine
+  /// Breitenbegrenzung brauchen.
+  static String _shortTopicTitle(String title) {
+    const maxChars = 24;
+    if (title.length <= maxChars) return title;
+    return '${title.substring(0, maxChars).trimRight()}…';
+  }
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -537,7 +552,8 @@ class _RechtsgebietTile extends StatelessWidget {
                     spacing: Spacing.xs,
                     runSpacing: Spacing.xs,
                     children: [
-                      for (final title in topicTitles) SubsumoChip(label: title),
+                      for (final title in topicTitles)
+                        SubsumoChip(label: _shortTopicTitle(title)),
                     ],
                   ),
                 ],
