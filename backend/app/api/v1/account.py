@@ -170,13 +170,6 @@ def redeem_code(payload: RedeemCodeIn, user: CurrentUser, db: DbSession) -> Rede
     if code.expires_at is not None and _as_aware(code.expires_at) <= now:
         raise HTTPException(status.HTTP_410_GONE, "Code ist abgelaufen")
 
-    if code.max_redemptions is not None:
-        redemption_count = (
-            db.query(RedeemCodeRedemption).filter_by(redeem_code_id=code.id).count()
-        )
-        if redemption_count >= code.max_redemptions:
-            raise HTTPException(status.HTTP_410_GONE, "Code ist ausgeschoepft")
-
     already_redeemed = (
         db.query(RedeemCodeRedemption)
         .filter_by(redeem_code_id=code.id, user_id=user.id)
@@ -184,6 +177,13 @@ def redeem_code(payload: RedeemCodeIn, user: CurrentUser, db: DbSession) -> Rede
     )
     if already_redeemed is not None:
         raise HTTPException(status.HTTP_409_CONFLICT, "Code wurde bereits eingeloest")
+
+    if code.max_redemptions is not None:
+        redemption_count = (
+            db.query(RedeemCodeRedemption).filter_by(redeem_code_id=code.id).count()
+        )
+        if redemption_count >= code.max_redemptions:
+            raise HTTPException(status.HTTP_410_GONE, "Code ist ausgeschoepft")
 
     base = _as_aware(user.pro_until) if user.pro_until is not None else now
     user.pro_until = max(base, now) + timedelta(days=code.pro_duration_days)
