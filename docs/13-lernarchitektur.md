@@ -382,6 +382,23 @@ Schreiben des Falls im Kopf der Redaktion existiert (die Karten desselben
 Themas sind ja die Wissensgrundlage des Falls); es fehlt nur das Feld, um es
 aufzuschreiben.
 
+**Nachtrag (SUB-261, 24.09.2026): Unabhängig vom LLM/AVV umsetzbar.**
+Verifikation am Code zeigt, dass dieser Mechanismus nicht an den
+`LLMEvaluator` gebunden ist, sondern an *jeden* Evaluator, der pro Prüfpunkt
+ein `hit`/`miss` liefert — und genau das tut `HeuristicEvaluator.evaluate()`
+bereits heute (`evaluator.py:159-235`, Stichwort-/Normabgleich, vollständig
+offline). `get_evaluator()` liefert diesen heuristischen Evaluator immer dann,
+wenn kein LLM konfiguriert ist oder keine Einwilligung vorliegt
+(`evaluator.py:350-361`) — in v1.0 also grundsätzlich
+(`llm_provider=none`). `submit_case` (`app/api/v1/gutachten.py:56-93`) ruft
+ihn bei jeder Abgabe auf. Die für Punkt 7 in Abschnitt 6 benötigten
+`PruefpunktResult(hit=False)`-Ereignisse entstehen damit schon ohne LLM-Aufruf
+und ohne AVV — schwächer in der Trefferquote (Stichwortabgleich statt
+Verständnis), aber funktionsfähig. Die bisherige Einordnung in
+`docs/16-innovationsthesen.md`, Abschnitt 2 („v1.1-Umsetzung, sobald die
+KI-Korrektur aktiviert wird") war daher in der Begründung falsch; korrigiert
+dort im Nachtrag zu Punkt 2.
+
 Für die generischen **Technik-Karten** (Kategorie A) reicht `card_slugs`
 nicht, weil diese Fehler nicht an ein Thema, sondern an die
 Gutachtentechnik allgemein gebunden sind. Zwei Optionen:
@@ -644,7 +661,7 @@ nimmt — das widerspricht Leitprinzip 4, also:
 | 4 | Fall-Freischaltschwelle je Thema (`cards_started`-basiert) | `learn.py`/Client | 2.1 | Nein, Komfortfeature |
 | 5 | Rückstands-Kappung auch ohne aktiven Plan | `learn.py` | 2.4 | Ab wachsendem Kartenbestand |
 | 6 | Phasenberechnung relativ zum ursprünglichen Vorbereitungsbeginn statt zum Neuberechnungszeitpunkt | `planner.py` | 2.3 | Vor M4-Ausbau |
-| 7 | `Pruefpunkt.card_slugs` (Prüfpunkt → Karte) | `evaluator.py`, Contentformat, `content.py` | 3.3 | **Ja — Voraussetzung für die Kernthese** |
+| 7 | `Pruefpunkt.card_slugs` (Prüfpunkt → Karte) | `evaluator.py`, Contentformat, `content.py` | 3.3 | Nein — aber AVV-unabhängig umsetzbar (SUB-261, 24.09.2026); Voraussetzung für die Kernthese, geplant nach v1.0-Freeze |
 | 8 | Technik-Karten-Block + `Area.UEBERGREIFEND` | Contentformat, `models.py`, `content.py` | 3.3 | Nein, Folgeticket nach Gate B |
 | 9 | `normzitat_falsch` erkennbar machen | `gutachten.py`, wartet auf Norm-Explorer | 3.2 | Nein, an M2 gekoppelt |
 | 10 | Deckelungs-Parameter für `LLMEvaluator` bei nicht bestandener Kalibrierung | `evaluator.py` | 4.5 | Ja, falls MAE-Ziel verfehlt wird |
