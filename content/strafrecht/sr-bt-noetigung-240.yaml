@@ -199,6 +199,8 @@ faelle:
       keywords:
       - Gewalt
       - koerperlich
+      card_slugs:
+      - sr-noetigung-gewaltbegriff
     - id: p2
       label: Noetigungserfolg bei F erkannt (Unterlassen der Weiterfahrt)
       weight: 1.0
@@ -206,6 +208,8 @@ faelle:
       keywords:
       - Noetigungserfolg
       - Weiterfahrt
+      card_slugs:
+      - sr-noetigung-noetigungserfolg
     - id: p3
       label: Verwerflichkeit gegenueber F angesprochen und begruendet
       weight: 1.5
@@ -214,6 +218,8 @@ faelle:
       - § 240 Abs. 2 StGB
       keywords:
       - verwerflich
+      card_slugs:
+      - sr-noetigung-verwerflichkeit
     - id: p4
       label: Gewalt gegenueber N verneint mit Begruendung (nur psychisch vermittelte
         Zwangswirkung durch das stehende Fahrzeug)
@@ -224,6 +230,9 @@ faelle:
       keywords:
       - psychisch vermittelt
       - keine Gewalt
+      card_slugs:
+      - sr-noetigung-gewaltbegriff
+      - sr-noetigung-sitzblockade-zweite-reihe
     - id: p5
       label: Bezug zur Zweite-Reihe-Rechtsprechung / Bestimmtheitsgebot, Art. 103
         Abs. 2 GG
@@ -234,6 +243,8 @@ faelle:
       keywords:
       - Bestimmtheitsgebot
       - Zweite-Reihe
+      card_slugs:
+      - sr-noetigung-sitzblockade-zweite-reihe
     - id: p6
       label: 'Differenziertes Ergebnis: strafbar ggue. F, nicht strafbar ggue. N'
       weight: 1.0

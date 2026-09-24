@@ -216,6 +216,8 @@ faelle:
       - Tatentschluss
       - Toetungsvorsatz
       - Vorsatz
+      card_slugs:
+      - sr-versuch-tatentschluss
     - id: p3
       label: Unmittelbares Ansetzen durch den Messerstich bejaht
       weight: 1.5
@@ -223,6 +225,8 @@ faelle:
       keywords:
       - unmittelbares Ansetzen
       - Messerstich
+      card_slugs:
+      - sr-versuch-unmittelbares-ansetzen
     - id: p4
       label: 'Ruecktrittshorizont zutreffend bestimmt: aus Sicht des T beendeter Versuch'
       weight: 3.0
@@ -232,6 +236,8 @@ faelle:
       keywords:
       - Ruecktrittshorizont
       - beendeter Versuch
+      card_slugs:
+      - sr-ruecktritt-ruecktrittshorizont
     - id: p5
       label: Erkannt, dass beim beendeten Versuch aktives Verhindern erforderlich
         ist und blosses Untaetigbleiben nicht genuegt
@@ -241,6 +247,9 @@ faelle:
       - aktives Verhindern
       - Untaetigbleiben
       - genuegt nicht
+      card_slugs:
+      - sr-ruecktritt-ruecktrittshorizont
+      - sr-ruecktritt-begriff
     - id: p6
       label: 'Ergebnis: kein wirksamer Ruecktritt, T bleibt strafbar wegen versuchten
         Totschlags'
