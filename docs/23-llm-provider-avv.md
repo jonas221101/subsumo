@@ -46,11 +46,19 @@ Codeänderung LLM-frei:
 - `backend/app/config.py:33-36` setzt den Default `llm_provider: str = "none"`
   und `llm_api_key: str = ""`. Ohne explizite Umgebungsvariablen bleibt der
   Provider deaktiviert.
-- `backend/app/services/evaluator.py:341-345` (`get_evaluator()`) liefert nur
-  dann den `LLMEvaluator` aus, wenn `llm_provider == "anthropic"` **und**
-  `llm_api_key` gesetzt sind — sonst immer den `HeuristicEvaluator`. Das ist
-  der einzige Ort, an dem Nutzer-Gutachtentext potenziell an ein externes LLM
-  ginge.
+- `backend/app/services/evaluator.py:341-347` (`llm_configured()`) prüft, ob
+  überhaupt ein Provider **konfiguriert** ist (`llm_provider == "anthropic"`
+  **und** `llm_api_key` gesetzt) — Basis für das Feature-Flag
+  `ai_correction_enabled` in `GET /v1/public/config`.
+  `evaluator.py:350-361` (`get_evaluator(*, consented: bool = True)`) liefert
+  den `LLMEvaluator` nur aus, wenn zusätzlich `consented=True` übergeben
+  wird — sonst immer den `HeuristicEvaluator`. Aufrufseitig ist das bereits
+  an eine Einwilligung gebunden: `gutachten.py:76` ruft
+  `get_evaluator(consented=user.ai_review_consent_at is not None)` auf
+  (Einwilligungs-Gate SUB-133, dazu mehr in Abschnitt 4). Konfiguration und
+  Einwilligung sind zwei unabhängige Schalter —
+  `evaluator.py:341-361` ist der einzige Ort, an dem Nutzer-Gutachtentext
+  potenziell an ein externes LLM ginge.
 - `backend/app/api/v1/gutachten.py:20-41` (`POST /gutachten/analyze`, der
   Übungsmodus-Endpunkt) ruft ausschließlich `app.services.gutachten.analyze()`
   auf — rein heuristisch, kein LLM-Aufrufpfad vorhanden, unabhängig von jeder
@@ -172,28 +180,38 @@ Nutzer-ID-Hälfte:
 
 `docs/17-release-readiness.md` Abschnitt 1 verlangt „Transparenz im Produkt
 (Hinweis vor erster Gutachten-Abgabe, was mit dem Text passiert) [...], nicht
-nur AGB-Text". Im aktuellen Code gibt es dafür **keine Stelle** — weder im
-Backend noch (soweit aus diesem Repository ersichtlich) im Flutter-Client gibt
-es einen Consent-/Hinweis-Dialog vor `POST /cases/{slug}/submit`. Für die
-Umsetzung wäre das:
+nur AGB-Text". Anders als eine frühere Fassung dieses Dokuments behauptete,
+**existiert dieser Mechanismus bereits** — Backend (SUB-133) und Client
+(SUB-134) sind beide auf `main` gemerged und liegen bereits im Verlauf dieses
+PR-Branches (Merge-Commit `ac2902e2`, nach dem Anlegen dieser Vorlage
+eingeflossen):
 
-- Ein einmaliger Hinweis-Dialog im Client, der vor der **ersten** Gutachten-
-  Abgabe eines Accounts erscheint (nicht bei jeder Abgabe erneut) und benennt,
-  dass der eingereichte Text an den gewählten externen Anbieter geht.
-- Serverseitig ein Flag am `User`-Modell (z. B. `llm_consent_at`), das beim
-  ersten Bestätigen gesetzt wird, und ein serverseitiger Check in
-  `submit_case` (`gutachten.py:56-98`), der ohne diese Zustimmung auf den
-  heuristischen Pfad zurückfällt statt den LLM-Pfad zu nutzen — analog zum
-  bestehenden Fallback-Verhalten bei fehlendem Provider.
+- **Backend (SUB-133):** `backend/app/api/v1/consent.py` bietet
+  `POST /me/ai-consent` (setzt `user.ai_review_consent_at`) und
+  `DELETE /me/ai-consent` (Widerruf, setzt das Feld zurück auf `None`) — mit
+  Verweis im Docstring auf Art. 6 I a und Art. 7 III DSGVO. Der Widerruf wirkt
+  ab der nächsten Abgabe, weil `get_evaluator()` das Feld bei jedem Aufruf neu
+  auswertet (Abschnitt 1). `GET /v1/public/config` liefert zusätzlich das
+  Feature-Flag `ai_correction_enabled` (`public.py:26`, aus `llm_configured()`
+  abgeleitet), damit der Client weiß, ob der Dialog überhaupt relevant ist.
+- **Client (SUB-134):** `app/lib/pages/gutachten_page.dart` zeigt vor der
+  **ersten** Gutachten-Abgabe eines Accounts einen Zustimmungsdialog
+  (`_maybeAskForAiConsent`), sobald `ai_correction_enabled` aktiv ist und noch
+  keine Entscheidung vorliegt. Ablehnen ist ein vollständiger Pfad zur
+  normalen, heuristischen Abgabe und wird lokal je Konto gemerkt, damit der
+  Dialog nicht erneut erscheint. `app/lib/pages/account_page.dart` bietet
+  einen Schalter zum jederzeitigen Widerruf über `DELETE /me/ai-consent`.
 - Das ist **Einwilligung nach Art. 6 I a DSGVO**, zusätzlich zur
   Vertragserfüllungs-Grundlage der übrigen Datenverarbeitung
   (`docs/06-recht-compliance.md` Abschnitt 3) — beide Rechtsgrundlagen
   bestehen nebeneinander, nicht alternativ.
 
-Dieser Hinweis-Mechanismus existiert nicht und ist in keiner der vier
-Optionen automatisch enthalten — er ist in jedem Fall zusätzlicher
-Umsetzungsaufwand (grob 1–2 PT Backend + Frontend), unabhängig von der
-Provider-Wahl.
+Für die Provider-Wahl in dieser Vorlage bedeutet das: Der Transparenz-/
+Einwilligungsmechanismus ist **kein** zusätzlicher Umsetzungsaufwand mehr und
+hängt nicht an der Wahl zwischen Option A/B/C — er ist bereits provider-
+unabhängig implementiert (Abschnitt 8.2). Offen bleibt nur, den Anbieter- und
+Verarbeitungsort-Hinweis im Dialogtext an die tatsächlich aktive Option
+anzupassen, falls der Text den Anbieter namentlich nennt.
 
 ## 5. Folgewirkungen einer LLM-Entscheidung
 
@@ -407,9 +425,11 @@ Reihenfolge, falls die Entscheidung auf Option A (v1.0) fällt:
    Signaturschritt nötig, aber ein Nachweis, dass und wann akzeptiert wurde.
 5. **Erst danach aktivieren:** `SUBSUMO_LLM_PROVIDER=anthropic` +
    `SUBSUMO_LLM_API_KEY` setzen (Abschnitt 1). Der Zustimmungsdialog aus
-   [SUB-134](/SUB/issues/SUB-134) muss vorher live sein — sonst fehlt die in
-   Abschnitt 4 verlangte Einwilligung, und der Aktivierungsschritt aus
-   [SUB-135](/SUB/issues/SUB-135) darf nicht vorgezogen werden.
+   [SUB-134](/SUB/issues/SUB-134) ist bereits gemerged (Abschnitt 4) — die in
+   Abschnitt 4 verlangte Einwilligung ist damit keine offene Voraussetzung
+   mehr, sondern schon vorhanden. Der Aktivierungsschritt aus
+   [SUB-135](/SUB/issues/SUB-135) darf trotzdem nicht vor Schritt 1-4
+   vorgezogen werden.
 
 **Quellen dieses Abschnitts (16.09.2026, Primärquellen von anthropic.com,
 nicht anwaltlich geprüft):** Anthropic Commercial Terms of Service
