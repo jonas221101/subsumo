@@ -1,4 +1,4 @@
-"""Einfacher IP-basierter Rate-Limiter fuer die Auth-Routen (docs/26-projektreview-sub254.md
+"""Einfacher IP-basierter Rate-Limiter fuer die Auth-Routen (docs/31-projektreview-sub254.md
 Abschnitt 3.2).
 
 In-Memory, pro Prozess: reicht fuer eine einzelne Backend-Instanz und bremst
@@ -12,7 +12,7 @@ Hinter dem in ``docs/22-deploy-runbook.md`` dokumentierten nginx-Reverse-Proxy
 fuer jede Anfrage identisch - ohne die ``X-Forwarded-For``-Behandlung unten
 waere der Limiter kein IP-Limiter mehr, sondern ein einziger globaler
 Zaehler, den eine einzelne Quelle als Denial-of-Service gegen alle Nutzer
-missbrauchen koennte (SUB-255-Review, docs/26 Abschnitt 3.2).
+missbrauchen koennte (SUB-255-Review, docs/31 Abschnitt 3.2).
 """
 
 from __future__ import annotations
