@@ -241,6 +241,9 @@ faelle:
       keywords:
       - koerperliche Misshandlung
       - Gesundheitsschaedigung
+      card_slugs:
+      - sr-kv-koerperliche-misshandlung
+      - sr-kv-gesundheitsschaedigung
     - id: p3
       label: Gefaehrliches Werkzeug (Stiefel, nicht der Fuss) begruendet subsumiert
       weight: 3.0
@@ -251,6 +254,9 @@ faelle:
       - gefaehrliches Werkzeug
       - Stiefel
       - Werkzeug
+      card_slugs:
+      - sr-kv-gefaehrliches-werkzeug
+      - sr-kv-abgrenzung-werkzeug-koerperteil
     - id: p4
       label: Gemeinschaftliches Handeln mit B i.S.d. Nr. 4 begruendet, ohne volle
         Mittaeterschaft zu verlangen
@@ -261,6 +267,8 @@ faelle:
       keywords:
       - gemeinschaftlich
       - Beteiligter
+      card_slugs:
+      - sr-kv-gemeinschaftlich
     - id: p5
       label: Vorsatz bzgl. Grundtatbestand und Qualifikationsmerkmalen erwaehnt
       weight: 1.0

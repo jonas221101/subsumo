@@ -245,12 +245,16 @@ faelle:
       - § 212 Abs. 1 StGB
       keywords:
       - Unterlassen
+      card_slugs:
+      - sr-unterlassen-echte-unechte
     - id: p3
       label: Physisch-reale Handlungsmoeglichkeit bejaht und begruendet
       weight: 1.5
       required: true
       keywords:
       - Handlungsmoeglichkeit
+      card_slugs:
+      - sr-unterlassen-voraussetzungen
     - id: p4
       label: Hypothetische Kausalitaet (an Sicherheit grenzende Wahrscheinlichkeit)
         geprueft und bejaht
@@ -258,6 +262,8 @@ faelle:
       required: true
       keywords:
       - an Sicherheit grenzender Wahrscheinlichkeit
+      card_slugs:
+      - sr-unterlassen-voraussetzungen
     - id: p5
       label: Garantenstellung der M als Mutter (Beschuetzergarant) begruendet
       weight: 3.0
@@ -268,6 +274,8 @@ faelle:
       keywords:
       - Garantenstellung
       - Beschuetzergarant
+      card_slugs:
+      - sr-unterlassen-beschuetzergarant
     - id: p6
       label: Entsprechungsklausel angesprochen und wegen schlichtem Erfolgsdelikt
         zutreffend als nicht eigenstaendig relevant eingeordnet
@@ -277,6 +285,8 @@ faelle:
       - § 13 Abs. 1 StGB
       keywords:
       - Entsprechungsklausel
+      card_slugs:
+      - sr-unterlassen-entsprechungsklausel
     - id: p7
       label: Vorsatz bzgl. Erfolg und Garantenstellung bejaht
       weight: 1.0

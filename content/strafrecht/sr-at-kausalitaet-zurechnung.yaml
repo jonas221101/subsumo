@@ -242,6 +242,8 @@ faelle:
       keywords:
       - atypisch
       - aussergewoehnlich
+      card_slugs:
+      - sr-zurechnung-atypischer-kausalverlauf
     - id: p4
       label: 'Risikorealisierung verneint: es realisiert sich nicht das vom Unfall
         geschaffene, sondern ein eigenstaendiges Behandlungsrisiko'
@@ -250,6 +252,8 @@ faelle:
       keywords:
       - Risikorealisierung
       - eigenstaendig
+      card_slugs:
+      - sr-zurechnung-schutzzweck-der-norm
     - id: p5
       label: Objektive Zurechnung des Todes zu A im Ergebnis verneint
       weight: 1.5
@@ -257,6 +261,8 @@ faelle:
       keywords:
       - nicht zurechenbar
       - verneint
+      card_slugs:
+      - sr-zurechnung-atypischer-kausalverlauf
     - id: p6
       label: Abgrenzung zur fahrlaessigen Koerperverletzung, § 229 StGB, als verbleibende
         Strafbarkeit angesprochen

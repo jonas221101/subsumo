@@ -191,6 +191,9 @@ faelle:
       keywords:
       - Zueignung
       - manifestiert
+      card_slugs:
+      - sr-unterschlagung-zueignungsbegriff
+      - sr-unterschlagung-manifestation-beispiele
     - id: p4
       label: Rechtswidrigkeit der Zueignung bejaht
       weight: 1.0
@@ -206,6 +209,8 @@ faelle:
       keywords:
       - anvertraut
       - Vertrauensverhaeltnis
+      card_slugs:
+      - sr-unterschlagung-anvertrautsein
     - id: p6
       label: Kein Gewahrsamsbruch erkannt, Subsidiaritaet gegenueber § 242 StGB verneint
       weight: 1.5
@@ -215,6 +220,9 @@ faelle:
       keywords:
       - Gewahrsamsbruch
       - subsidiaer
+      card_slugs:
+      - sr-unterschlagung-abgrenzung-diebstahl-242
+      - sr-unterschlagung-subsidiaritaetsklausel
     - id: p7
       label: 'Ergebnis: veruntreuende Unterschlagung bejaht'
       weight: 1.0
