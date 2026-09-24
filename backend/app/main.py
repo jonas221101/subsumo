@@ -54,6 +54,14 @@ def create_app() -> FastAPI:
         max_requests=settings.auth_rate_limit_max_requests,
         window_seconds=settings.auth_rate_limit_window_seconds,
     )
+    if settings.environment == "production" and not settings.paywall_enabled:
+        # Bewusster Notausgang (docs/20-release-g2-bezahlstrecke.md Abschnitt 5)
+        # ist erlaubt, darf aber nicht lautlos passieren: sonst bekommt jeder
+        # Nutzer unbemerkt vollen Pro-Zugriff geschenkt (docs/26 Abschnitt 3.1).
+        log.warning(
+            "SUBSUMO_PAYWALL_ENABLED=false in Produktion: alle Nutzer erhalten "
+            "vollen Pro-Zugriff. Bewusster Notausgang oder vergessene Variable?"
+        )
     app.add_middleware(
         CORSMiddleware,
         # Fuer den Web-Client. In Produktion auf die eigene Domain einschraenken.

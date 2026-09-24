@@ -28,6 +28,13 @@ und die Kommandos selbst aendern sich dadurch nicht.
   **nicht** der Dev-Default), `SUBSUMO_DATABASE_URL` (PostgreSQL in
   Produktion), `SUBSUMO_ENVIRONMENT=production`, `SUBSUMO_LOG_JSON=true`,
   `SUBSUMO_BACKUP_PASSPHRASE` (siehe Abschnitt 6).
+- `SUBSUMO_PAYWALL_ENABLED` bewusst gesetzt: `true`, wenn die volle Kette
+  Kauf→Freischaltung→Kuendigung auf Produktion laeuft, sonst `false` als
+  Notausgang (`docs/20-release-g2-bezahlstrecke.md` Abschnitt 5). Der
+  Default ist `false` — wer die Variable vergisst, startet lautlos mit
+  offener Paywall (jeder Nutzer bekommt Pro-Zugriff geschenkt); das Backend
+  loggt dafuer bei `SUBSUMO_ENVIRONMENT=production` eine Warnung, wenn die
+  Variable fehlt oder `false` ist.
 - Frontend-Build-Voraussetzungen (Flutter SDK) nur auf der Build-Maschine
   noetig, nicht auf dem Zielserver — siehe Abschnitt 2.2.
 
