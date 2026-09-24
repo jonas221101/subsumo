@@ -24,7 +24,7 @@
 > Fassung.
 >
 > **Update 24.09.2026 ([SUB-260](/SUB/issues/SUB-260), Befund aus
-> `docs/26-projektreview-sub254.md` Abschnitt 4):** Der Struktur-Check wird
+> `docs/31-projektreview-sub254.md` Abschnitt 4):** Der Struktur-Check wird
 > vom Nebenargument zum **Hauptargument**, solange die KI-Korrektur aus ist
 > (`llm_provider=none`). Grund: `docs/14-marktanalyse.md` Abschnitt 2 belegt
 > inzwischen vier Wettbewerber mit KI-Klausurkorrektur — das Feature, das der

@@ -3,7 +3,7 @@
 > Auftrag aus [SUB-254](/SUB/issues/SUB-254) über [SUB-260](/SUB/issues/SUB-260):
 > „Baue ein Werbekonzept auf und überlege, wie wir die ersten Kunden
 > gewinnen." Befund, auf dem dieses Dokument aufbaut:
-> `docs/26-projektreview-sub254.md` Abschnitt 4 und der Nachtrag vom
+> `docs/31-projektreview-sub254.md` Abschnitt 4 und der Nachtrag vom
 > 24.09.2026 in `docs/14-marktanalyse.md` Abschnitt 2.1.
 >
 > **Verhältnis zu bestehenden Dokumenten — keine Wiederholung:**
@@ -26,7 +26,7 @@
 >
 > **Stand:** 24.09.2026. Releasetermin 29.09.2026
 > (`docs/18-release-2-wochen.md`). Umsetzung der hier beschriebenen
-> Kreativ-Assets liegt **nach Release**, wie in `docs/26` Abschnitt 7 Punkt 6
+> Kreativ-Assets liegt **nach Release**, wie in `docs/31` Abschnitt 7 Punkt 6
 > eingeordnet — dieses Dokument ist Konzept, keine Produktionsbeauftragung.
 
 ---
@@ -147,7 +147,7 @@ Alle Assets aus Abschnitt 2 und beide Taktiken aus Abschnitt 3 kosten Zeit,
 kein Geld — sie nutzen ausschließlich bestehende Kanäle, bestehenden
 Content und bestehende Produktfunktionen. Das ist die Variante, die ohne
 Antwort auf die SUB-254-Rückfrage bereits vollständig umsetzbar ist, sobald
-Kapazität nach dem Release besteht (`docs/26` Abschnitt 7 Punkt 6:
+Kapazität nach dem Release besteht (`docs/31` Abschnitt 7 Punkt 6:
 Umsetzung nach Release).
 
 Messung läuft über die bereits in `docs/15` Abschnitt 4 definierten
@@ -227,13 +227,13 @@ Punkte, die erst auf der Ebene konkreter Werbemittel sichtbar werden:
 | Redeem-/Freischaltcode-Mechanismus (Fachschafts-Beta **und** Weiterempfehlungsschleife, Abschnitt 3.2) | Software-Planner | [SUB-262](/SUB/issues/SUB-262) angelegt, Backlog, kein Release-Blocker |
 | Werbebudget-Entscheidung | Auftraggeber | Interaktion auf [SUB-254](/SUB/issues/SUB-254) (`werbebudget`), pending — Abschnitt 4 läuft unabhängig davon bereits |
 | UTM-/Attributions-Infrastruktur (Voraussetzung für 5.2) | Software-/Backend-Developer | Bereits in `docs/15` Abschnitt 4 als fehlend benannt, hier nicht dupliziert |
-| Rechtsprüfung vergleichender Werbeaussagen, falls 5.2 (Keyword-Ads) gezogen wird | Anwaltsfrage (siehe `docs/26` Abschnitt 8 Punkt 2) | Nicht Teil dieses Konzepts, vorab zu klären |
+| Rechtsprüfung vergleichender Werbeaussagen, falls 5.2 (Keyword-Ads) gezogen wird | Anwaltsfrage (siehe `docs/31` Abschnitt 8 Punkt 2) | Nicht Teil dieses Konzepts, vorab zu klären |
 
 ---
 
 ## Quellen
 
-- USP-Hierarchie und Befund: `docs/26-projektreview-sub254.md` Abschnitt 4
+- USP-Hierarchie und Befund: `docs/31-projektreview-sub254.md` Abschnitt 4
 - Wettbewerbsdaten (Kontingente, Preise, neue Anbieter): `docs/14-marktanalyse.md`
   Abschnitt 2, Nachtrag 2.1 (Abruf 24.09.2026)
 - Kanalplan, Zeitpunkte, Messgrößen, Fachschafts-Anschreiben: `docs/15-go-to-market.md`
