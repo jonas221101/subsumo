@@ -4,10 +4,11 @@ from __future__ import annotations
 
 from datetime import UTC, datetime, time
 
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, status
 
 from app.api.deps import CurrentUser, DbSession
 from app.config import get_settings
+from app.core.ratelimit import enforce_login_rate_limit, enforce_register_rate_limit
 from app.core.security import create_access_token, hash_password, verify_password
 from app.models import User
 from app.schemas import LoginIn, RegisterIn, TokenOut, UserOut, UserUpdateIn
@@ -32,7 +33,12 @@ def _user_out(user: User) -> UserOut:
     )
 
 
-@router.post("/register", response_model=TokenOut, status_code=status.HTTP_201_CREATED)
+@router.post(
+    "/register",
+    response_model=TokenOut,
+    status_code=status.HTTP_201_CREATED,
+    dependencies=[Depends(enforce_register_rate_limit)],
+)
 def register(payload: RegisterIn, db: DbSession) -> TokenOut:
     email = payload.email.lower()
     if db.query(User).filter_by(email=email).first():
@@ -47,7 +53,7 @@ def register(payload: RegisterIn, db: DbSession) -> TokenOut:
     return TokenOut(access_token=create_access_token(str(user.id)))
 
 
-@router.post("/login", response_model=TokenOut)
+@router.post("/login", response_model=TokenOut, dependencies=[Depends(enforce_login_rate_limit)])
 def login(payload: LoginIn, db: DbSession) -> TokenOut:
     user = db.query(User).filter_by(email=payload.email.lower()).first()
     # Dieselbe Meldung fuer unbekannte Nutzer und falsche Passwoerter -
