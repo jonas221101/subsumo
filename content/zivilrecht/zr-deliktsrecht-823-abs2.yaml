@@ -40,6 +40,23 @@ cards:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
   stand: 2026-09
+- slug: zr-823-2-263-tatbestand
+  type: definition
+  front: Welche objektiven Tatbestandsmerkmale muessen fuer einen Verstoss gegen
+    das Schutzgesetz § 263 StGB (Betrug) im Rahmen des § 823 Abs. 2 BGB vorliegen?
+  back: 'Der objektive Verstoss gegen § 263 Abs. 1 StGB als Schutzgesetz setzt vier,
+    in einer Kausalkette aufeinander aufbauende Merkmale voraus: (1) eine Taeuschung
+    ueber Tatsachen durch Vorspiegelung falscher oder Entstellung bzw. Unterdrueckung
+    wahrer Tatsachen, (2) einen dadurch beim Getaeuschten hervorgerufenen oder unterhaltenen
+    Irrtum, (3) eine irrtumsbedingte Vermoegensverfuegung des Getaeuschten und (4)
+    einen dadurch eingetretenen Vermoegensschaden. Fehlt eines dieser Merkmale oder
+    die Kausalitaet zwischen ihnen, liegt kein objektiver Schutzgesetzverstoss vor.'
+  norms:
+  - § 263 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
 - slug: zr-823-2-abgrenzung-ordnungsvorschriften
   type: definition
   front: Wie grenzt man ein Schutzgesetz von einer reinen Ordnungsvorschrift ab?
@@ -230,7 +247,7 @@ faelle:
       - Verfuegung
       - Vermoegensschaden
       card_slugs:
-      - zr-823-2-regelungsgehalt
+      - zr-823-2-263-tatbestand
     - id: p4
       label: Vorsatz des G als Verschulden im Sinne des § 823 Abs. 2 BGB erkannt
       weight: 1.0
