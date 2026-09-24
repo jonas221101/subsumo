@@ -9,6 +9,7 @@ topic:
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-14'
     status: ki-freigegeben
+    normzitate_geprueft: true
 cards:
 - slug: zr-985-anspruchsvoraussetzungen
   type: definition

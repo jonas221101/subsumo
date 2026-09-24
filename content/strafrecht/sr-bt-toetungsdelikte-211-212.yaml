@@ -265,6 +265,8 @@ faelle:
       keywords:
       - '212'
       - Totschlag
+      card_slugs:
+      - sr-toetung-totschlag-212
     - id: p2
       label: Heimtuecke definiert (Arg- und Wehrlosigkeit) und subsumiert
       weight: 3.0
@@ -275,12 +277,16 @@ faelle:
       - arglos
       - wehrlos
       - Heimtuecke
+      card_slugs:
+      - sr-toetung-heimtuecke
     - id: p3
       label: Ausnutzungsbewusstsein hinsichtlich der Heimtuecke thematisiert
       weight: 1.5
       keywords:
       - Ausnutzungsbewusstsein
       - bewusst ausgenutzt
+      card_slugs:
+      - sr-toetung-heimtuecke
     - id: p4
       label: Verdeckungsabsicht definiert und finaler Zusammenhang zur Vortat (Diebstahl)
         subsumiert
@@ -291,12 +297,16 @@ faelle:
       keywords:
       - Verdeckungsabsicht
       - finaler Zusammenhang
+      card_slugs:
+      - sr-toetung-verdeckungsabsicht
     - id: p5
       label: Streitstand zum Verhaeltnis § 211/§ 212 StGB zumindest angesprochen
       weight: 1.0
       keywords:
       - Qualifikation
       - eigenstaendig
+      card_slugs:
+      - sr-toetung-abgrenzung-211-212
     - id: p6
       label: 'Ergebnis: Strafbarkeit nach § 211 StGB (Mord)'
       weight: 1.0
@@ -305,3 +315,5 @@ faelle:
       - § 211
       - Mord
       - strafbar
+      card_slugs:
+      - sr-toetung-mord-211-systematik

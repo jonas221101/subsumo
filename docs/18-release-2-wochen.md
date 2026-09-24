@@ -226,6 +226,32 @@ Die Produktion selbst läuft bereits über die Content-Agenten
 `docs/08-ki-redaktion.md`; neu ist nur die Priorisierung auf
 Klausurrelevanz-Stufe P1 und das Einfrieren am 25.09.
 
+> **Nachtrag 23.09.2026 — Umfang-Ziel erledigt, Prüf-Gate offen.** Auf
+> [SUB-225](/SUB/issues/SUB-225) hatte der Nutzer entschieden, dass auch die
+> Stufe **P2 vor dem Release** kommt. Das ist **vollständig geliefert**: 17
+> Themen über [SUB-243](/SUB/issues/SUB-243) / [SUB-244](/SUB/issues/SUB-244)
+> / [SUB-245](/SUB/issues/SUB-245), gemergt als PR #68/#69/#70.
+>
+> | Größe | G3-Ziel | Ist auf `main` (23.09.) |
+> |---|---|---|
+> | Karten | 180 (Streckziel 250) | **444** — 2,5× erfüllt |
+> | Themen | — | 60 (P1 36/36, P2 24/24 vollständig) |
+> | Fälle | — | 60 |
+>
+> Ausgezählt mit `backend/scripts/validate_content.py`: 0 Fehler, 0 Warnungen.
+> Details in `docs/12-content-produktionsplan.md` Abschnitt 1.1. Die
+> **Mengen-Bedingung von G3 ist damit erfüllt und war nie der Engpass.**
+>
+> **Was G3 noch offen hat, ist die zweite Hälfte seines eigenen Wortlauts:
+> „keine offenen Redaktionsfunde".** Die menschliche Stichprobe nach
+> `docs/08-ki-redaktion.md` ist für **keines der 60 Themen** erbracht — alle
+> tragen `geprueft_von: reviewer-agent-v1`, also einen LLM-Aufruf, keine
+> Person. Kein Agent kann dieses Gate schließen. Mindestumfang nach
+> `docs/12` Abschnitt 4.2: ≥ 6 Themen, mind. 2 je Rechtsgebiet, Schwerpunkt
+> P1. Fällt die Stichprobe bis 25.09. aus, ist das eine bewusste
+> Nutzerentscheidung — nicht ein Mengenproblem, und die G3-Regel „Release mit
+> Ist-Menge" deckt sie nicht ab.
+
 ---
 
 ## 5. Die fünf harten Gates
