@@ -188,6 +188,8 @@ faelle:
       keywords:
       - Anhoerung
       - § 28
+      card_slugs:
+      - or-va-rm-anhoerungspflicht
     - id: p2
       label: Heilungsmoeglichkeit nach § 45 Abs. 1, Abs. 2 VwVfG durch Nachholung
         im Widerspruchsverfahren erkannt
@@ -200,6 +202,8 @@ faelle:
       - Heilung
       - § 45
       - Nachholung
+      card_slugs:
+      - or-va-rm-heilung-verfahrensfehler
     - id: p3
       label: § 46 VwVfG zutreffend als nicht einschlaegig erkannt (Ermessensentscheidung,
         fehlende Offensichtlichkeit)
@@ -211,6 +215,8 @@ faelle:
       - § 46
       - Ermessen
       - Offensichtlichkeit
+      card_slugs:
+      - or-va-rm-unbeachtlichkeit-verfahrensfehler
     - id: p4
       label: Zustaendigkeit und Ermaechtigungsgrundlage als unproblematisch benannt
       weight: 1.0
@@ -218,6 +224,9 @@ faelle:
       keywords:
       - Ermaechtigungsgrundlage
       - zustaendig
+      card_slugs:
+      - or-va-rm-zustaendigkeit-arten
+      - or-va-rm-ermaechtigungsgrundlage-erfordernis
     - id: p5
       label: 'Ergebnis: formelle Rechtmaessigkeit in Gestalt des Widerspruchsbescheids
         durch Heilung hergestellt'
@@ -226,3 +235,6 @@ faelle:
       keywords:
       - geheilt
       - formell rechtmaessig
+
+      card_slugs:
+      - or-va-rm-heilung-verfahrensfehler

@@ -247,6 +247,8 @@ faelle:
       keywords:
       - Auflage
       - Nr. 4
+      card_slugs:
+      - or-vwvfg-nb-auflage
     - id: p2
       label: Isolierte Anfechtungsklage als statthafte Klageart erkannt und begruendet
       weight: 2.5
@@ -255,6 +257,8 @@ faelle:
       - isoliert
       - Anfechtungsklage
       - eigenstaendiger Verwaltungsakt
+      card_slugs:
+      - or-vwvfg-nb-isolierte-anfechtbarkeit
     - id: p3
       label: Kopplungsverbot § 36 Abs. 3 VwVfG als Pruefungsmassstab fuer die Rechtmaessigkeit
         der Auflage benannt
@@ -264,6 +268,8 @@ faelle:
       - Kopplungsverbot
       - Abs. 3
       - Verhaeltnismaessigkeit
+      card_slugs:
+      - or-vwvfg-nb-zulaessigkeit-ermessens-va
     - id: p4
       label: 'Teilbarkeitsfrage in der Begruendetheit erkannt: Erlaubnis auch ohne
         Auflage rechtmaessig erlassbar'
@@ -273,6 +279,8 @@ faelle:
       - Teilbarkeit
       - ohne die Auflage
       - unberuehrt
+      card_slugs:
+      - or-vwvfg-nb-isolierte-anfechtbarkeit
     - id: p5
       label: 'Ergebnis: Klage zulaessig und begruendet, Auflage rechtswidrig'
       weight: 1.0

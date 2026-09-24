@@ -160,36 +160,43 @@ faelle:
           required: true
           norms: ["Art. 8 Abs. 1 GG", "Art. 8 GG"]
           keywords: ["Art. 8", "Versammlungsfreiheit"]
+          card_slugs: ["or-gr-art8-versammlungsbegriff"]
         - id: p2
           label: "Schutzbereich definiert und subsumiert (friedlich, ohne Waffen, gemeinsame Meinungsbildung)"
           weight: 2.0
           required: true
           keywords: ["Schutzbereich", "friedlich", "ohne Waffen", "Zusammenkunft"]
+          card_slugs: ["or-gr-art8-versammlungsbegriff", "or-gr-art8-friedlich-ohne-waffen"]
         - id: p3
           label: "Eingriff bejaht (moderner Eingriffsbegriff)"
           weight: 1.5
           required: true
           keywords: ["Eingriff"]
+          card_slugs: ["or-gr-eingriff"]
         - id: p4
           label: "Schranke des Art. 8 Abs. 2 GG erkannt (Versammlung unter freiem Himmel)"
           weight: 2.0
           required: true
           norms: ["Art. 8 Abs. 2 GG"]
           keywords: ["unter freiem Himmel", "Art. 8 Abs. 2"]
+          card_slugs: ["or-gr-art8-freier-himmel-geschlossene-raeume", "or-gr-art8-schrankenvorbehalt-abs2"]
         - id: p5
           label: "Verhaeltnismaessigkeit in allen vier Stufen geprueft"
           weight: 3.0
           required: true
           keywords: ["legitimer Zweck", "geeignet", "erforderlich", "angemessen"]
+          card_slugs: ["or-gr-verhaeltnismaessigkeit"]
         - id: p6
           label: "Erforderlichkeit verneint: mildere gleich wirksame Mittel (Lautstaerkebegrenzung)"
           weight: 2.5
           required: true
           keywords: ["milderes", "gleich wirksam", "Lautstaerke"]
+          card_slugs: ["or-gr-verhaeltnismaessigkeit"]
         - id: p7
           label: "Fehlende konkrete Gefahrenprognose geruegt"
           weight: 1.5
           keywords: ["Gefahrenprognose", "konkrete Gefahr", "pauschal"]
+          card_slugs: ["or-gr-art8-brokdorf-grundsaetze"]
         - id: p8
           label: "Ergebnis: Auflage verletzt Art. 8 Abs. 1 GG"
           weight: 1.0
