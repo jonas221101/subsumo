@@ -235,6 +235,9 @@ faelle:
       keywords:
       - Anscheinsgefahr
       - Ex-ante
+      card_slugs:
+      - or-sr-anscheinsgefahr
+      - or-sr-gefahrenverdacht
     - id: p2
       label: Gleichstellung der Anscheinsgefahr mit der echten Gefahr fuer die Rechtmaessigkeit
         begruendet
@@ -244,6 +247,8 @@ faelle:
       - gleichgestellt
       - sorgfaeltige Prognose
       - pflichtgemaess
+      card_slugs:
+      - or-sr-anscheinsgefahr
     - id: p3
       label: Subsidiaritaetspruefung gegenueber Standardmassnahmen zumindest angesprochen
       weight: 1.5
@@ -252,6 +257,8 @@ faelle:
       - Subsidiaritaet
       - Standardmassnahme
       - Generalklausel
+      card_slugs:
+      - or-sr-subsidiaritaet-generalklausel
     - id: p4
       label: Verhaeltnismaessigkeitspruefung mit Abwaegung Rechtsgueter vs. Nachteil
         des R durchgefuehrt
@@ -262,6 +269,8 @@ faelle:
       - geeignet
       - erforderlich
       - angemessen
+      card_slugs:
+      - or-sr-verhaeltnismaessigkeit-eingriffsgrundlage
     - id: p5
       label: Einwand des R zur Ex-post-Betrachtung zutreffend zurueckgewiesen
       weight: 1.5
@@ -269,6 +278,8 @@ faelle:
       keywords:
       - Ex-ante massgeblich
       - nicht rueckwirkend rechtswidrig
+      card_slugs:
+      - or-sr-anscheinsgefahr
     - id: p6
       label: 'Ergebnis: Massnahme rechtmaessig'
       weight: 0.5

@@ -178,6 +178,8 @@ faelle:
       - Anfechtungsklage
       - statthaft
       - Aufhebung
+      card_slugs:
+      - or-vwgo-ak-statthaftigkeit
     - id: p2
       label: Klagebefugnis ueber die Adressatentheorie (Art. 2 Abs. 1 GG) begruendet
       weight: 2.5
@@ -189,6 +191,8 @@ faelle:
       - Adressatentheorie
       - Klagebefugnis
       - Art. 2 Abs. 1 GG
+      card_slugs:
+      - or-vwgo-ak-adressatentheorie
     - id: p3
       label: Vorverfahren nach § 68 Abs. 1 VwGO als durchgefuehrt geprueft
       weight: 1.5
@@ -196,6 +200,8 @@ faelle:
       keywords:
       - Vorverfahren
       - Widerspruch
+      card_slugs:
+      - or-vwgo-ak-vorverfahren
     - id: p4
       label: Klagefrist des § 74 Abs. 1 VwGO korrekt ab Zustellung des Widerspruchsbescheids
         berechnet und als gewahrt erkannt
@@ -208,6 +214,8 @@ faelle:
       - ein Monat
       - Zustellung
       - gewahrt
+      card_slugs:
+      - or-vwgo-ak-klagefrist
     - id: p5
       label: 'Ergebnis: eine am 2. Juli erhobene Klage waere zulaessig'
       weight: 1.0
