@@ -22,6 +22,26 @@
 > So 27.09., 18:00). Der Standardtext in diesem Dokument (Fassung A) ist davon
 > **nicht** betroffen und bleibt bis zu dieser Entscheidung die geltende
 > Fassung.
+>
+> **Update 24.09.2026 ([SUB-260](/SUB/issues/SUB-260), Befund aus
+> `docs/26-projektreview-sub254.md` Abschnitt 4):** Der Struktur-Check wird
+> vom Nebenargument zum **Hauptargument**, solange die KI-Korrektur aus ist
+> (`llm_provider=none`). Grund: `docs/14-marktanalyse.md` Abschnitt 2 belegt
+> inzwischen vier Wettbewerber mit KI-Klausurkorrektur — das Feature, das der
+> Markt am lautesten bewirbt, ist bei uns zum Start aus und wäre selbst
+> eingeschaltet kein Alleinstellungsmerkmal mehr. Was bleibt, sind zwei
+> Dinge, die kein Wettbewerber belegt anbietet: **unbegrenztes
+> Struktur-Feedback ohne Grenzkosten** (`backend/app/services/gutachten.py`
+> ist regelbasiert, offline, ohne LLM — jeder KI-Korrektur-Wettbewerber zahlt
+> pro Abgabe und muss kontingentieren) und **echtes Offline auf vier
+> Plattformen** (Kartencache + Review-Outbox überstehen Neustart und
+> Netzausfall, `app/lib/state.dart` — Jurafuchs' Offline-Modus dagegen
+> verliert heruntergeladene Inhalte bei jedem App-/OS-Update, die drei
+> reinen KI-Korrektur-Anbieter haben laut `docs/14` Abschnitt 3 gar keinen
+> Offline-Modus). Betroffen: Hero (2.2), Feature-Liste (2.2 Punkt 3),
+> Preisseite (3.1/3.2), Kanaltexte (4.2). Fassung-A/B-Umschaltregel aus
+> Abschnitt 2.3 bleibt unverändert bestehen — die Reihenfolge der Argumente
+> ändert sich, nicht die Leitplanken aus Abschnitt 1.
 
 ---
 
@@ -82,13 +102,14 @@ was die AGB nicht deckt:
 
 **1. Hero**
 
-> **H1:** Karteikarten, Schemata und Fälle für dein Jurastudium — mit
-> ehrlichem Feedback zum Aufbau deiner Gutachten.
+> **H1:** Unbegrenztes Feedback zum Aufbau deiner Gutachten — sofort, offline,
+> ohne Limit.
 >
-> **Subheadline:** Subsumo ist gerade gestartet: 180 geprüfte Karten,
+> **Subheadline:** Subsumo prüft deine eigene Lösung automatisch auf Aufbau
+> und Stil, so oft du willst, auch offline auf dem Handy, Tablet oder Laptop —
+> weil es uns nichts kostet, es zu verschenken. Dazu 180 geprüfte Karten,
 > 8+ Schemata und 6+ geführte Fälle über Zivilrecht, Strafrecht und
-> Öffentliches Recht — und wächst laufend weiter. Zum Gründerpreis ab
-> 3,99 €/Monat, dauerhaft garantiert.
+> Öffentliches Recht. Zum Gründerpreis ab 3,99 €/Monat, dauerhaft garantiert.
 >
 > **Primärer CTA:** „Kostenlos starten"
 > **Sekundärer CTA:** „Preise ansehen" → `/preise`
@@ -96,19 +117,24 @@ was die AGB nicht deckt:
 **2. Für wen**
 
 > Für Jurastudierende ab dem ersten Semester, die nicht nur lesen, sondern
-> wiederholen, anwenden und ihre eigenen Lösungen überprüfen wollen.
+> wiederholen, anwenden und ihre eigenen Lösungen überprüfen wollen — auch in
+> der Bibliothek ohne WLAN oder im Zug.
 
 **3. Was du heute bekommst**
 
+> - **Struktur-Check für deine Gutachten, ohne Limit:** Lade deine eigene
+>   Lösung zu einem Übungsfall hoch und bekommst automatisiert Rückmeldung zu
+>   Aufbau und Stil — beliebig oft im Pro-Tarif, weil der Check regelbasiert
+>   und offline läuft und uns deshalb pro Nutzung nichts kostet.
+> - **Funktioniert ohne Internet:** Karten, Schemata, Fälle und der
+>   Struktur-Check laufen auf Android, iOS, Windows und im Web — einmal
+>   geladen, übersteht das auch einen Neustart oder Netzausfall.
 > - **Karteikarten mit automatischer Wiederholung** (FSRS-Verfahren) — die App
 >   entscheidet, wann eine Karte wieder fällig ist, du entscheidest, was du
 >   lernst.
 > - **Prüfungsschemata** zum Nachschlagen (Pro: zusätzlich als
 >   Reihenfolge-Drill).
 > - **Geführte Übungsfälle** mit hinterlegtem Erwartungshorizont.
-> - **Struktur-Check für deine Gutachten:** Lade deine eigene Lösung zu einem
->   Übungsfall hoch und bekommst automatisiert Rückmeldung zu Aufbau und
->   Stil.
 >
 > **Was der Struktur-Check ist — und was nicht:** Lernhilfe, keine
 > Rechtsberatung, keine Note. Er ist ein regelbasierter (heuristischer) Check
@@ -154,8 +180,8 @@ was die AGB nicht deckt:
 > **Free:** 20 fällige Karten/Tag in einem Rechtsgebiet, 2 geführte Fälle,
 > 3 Struktur-Checks/Woche.
 > **Pro (Gründerpreis):** alle drei Rechtsgebiete, unbegrenzt Karten, Fälle
-> und Struktur-Checks — **3,99 €/Monat oder 39 €/Jahr**, Preis bleibt dir
-> erhalten, auch wenn er für neue Kund:innen steigt.
+> und **Struktur-Checks ohne Limit** — **3,99 €/Monat oder 39 €/Jahr**, Preis
+> bleibt dir erhalten, auch wenn er für neue Kund:innen steigt.
 > CTA: „Alle Preise ansehen" → `/preise`
 
 **8. FAQ**
@@ -177,6 +203,11 @@ was die AGB nicht deckt:
 > ausdrücklichen, jederzeit widerrufbaren Zustimmung zur Auswertung an einen
 > externen Anbieter übertragen; ohne Zustimmung bekommst du weiterhin nur den
 > heuristischen Struktur-Check.
+>
+> **Funktioniert der Struktur-Check auch offline?**
+> Ja. Karten, Schemata, Fälle und der Struktur-Check laufen ohne
+> Internetverbindung — praktisch für die Bibliothek ohne WLAN oder unterwegs.
+> Einmal geladene Inhalte übersteht auch ein Neustart oder Netzausfall.
 >
 > **Wie viele Karten gibt es wirklich?**
 > Zum Start 180 geprüfte Karten über drei Rechtsgebiete. Wir zeigen die
@@ -253,10 +284,10 @@ Aufgabe aus Abschnitt 5, nicht in dieses Dokument.
 > | | Free | **Pro (Gründerpreis)** |
 > |---|---|---|
 > | Preis | 0 € | **3,99 €/Monat** oder **39 €/Jahr** *(inkl. gesetzlicher USt., sofern diese anfällt)* |
+> | Struktur-Check (offline, alle Plattformen) | 3/Woche | **ohne Limit** |
 > | Karteikarten | 20 fällige Karten/Tag, ein Rechtsgebiet | unbegrenzt, alle drei Rechtsgebiete |
 > | Schemata | Lesen | Lesen + Reihenfolge-Drill |
 > | Geführte Fälle | 2 | alle |
-> | Struktur-Check | 3/Woche | unbegrenzt |
 > | Preisgarantie | — | Bestandspreis bleibt dauerhaft, auch wenn der Listenpreis für Neukund:innen steigt |
 >
 > CTA (Pro-Spalte): „Pro werden"
@@ -321,9 +352,10 @@ Budget) und sind direkt einsetzbar, sobald konkrete Kanäle feststehen:
 >
 > Hallo,
 >
-> Subsumo ist ab heute live: Karteikarten, Schemata und geführte Fälle für
-> Zivilrecht, Strafrecht und Öffentliches Recht, dazu ein automatischer
-> Struktur-Check für deine eigenen Gutachten — als Lernhilfe, ohne Note.
+> Subsumo ist ab heute live: ein automatischer Struktur-Check für deine
+> eigenen Gutachten — ohne Limit, auch offline, als Lernhilfe ohne Note. Dazu
+> Karteikarten, Schemata und geführte Fälle für Zivilrecht, Strafrecht und
+> Öffentliches Recht.
 >
 > Ehrlich gesagt: Wir starten mit 180 Karten, nicht mit Tausenden. Dafür
 > prüfen wir jede Karte selbst, und du bekommst als frühe Nutzerin/früher
@@ -338,9 +370,9 @@ Budget) und sind direkt einsetzbar, sobald konkrete Kanäle feststehen:
 **Social kurz (Instagram/LinkedIn)**
 
 > Subsumo ist live 🎓
-> Karteikarten, Schemata, geführte Fälle — Zivilrecht, Strafrecht, Öffentliches
-> Recht. Plus: automatischer Struktur-Check für deine eigenen Gutachten
-> (Lernhilfe, keine Note).
+> Automatischer Struktur-Check für deine eigenen Gutachten — ohne Limit, auch
+> offline, ohne Note (Lernhilfe). Dazu Karteikarten, Schemata, geführte Fälle
+> für Zivilrecht, Strafrecht, Öffentliches Recht.
 >
 > Ehrlich: Wir starten mit 180 Karten, nicht mit Tausenden — dafür zum
 > Gründerpreis von 3,99 €/Monat, dauerhaft.
@@ -354,10 +386,12 @@ Budget) und sind direkt einsetzbar, sobald konkrete Kanäle feststehen:
 > ich wollte euch kurz Subsumo vorstellen — eine neue Lern-App für Zivilrecht,
 > Strafrecht und Öffentliches Recht, die heute live gegangen ist.
 >
-> Was drin ist: Karteikarten mit automatischer Wiederholung, Prüfungsschemata,
-> geführte Übungsfälle mit Erwartungshorizont, und ein automatischer
-> Struktur-Check, der eure eigene Gutachtenlösung auf Aufbau und Stil prüft —
-> ohne Note, als Lernhilfe.
+> Was drin ist: ein automatischer Struktur-Check, der eure eigene
+> Gutachtenlösung auf Aufbau und Stil prüft — ohne Note, als Lernhilfe, und
+> ohne Limit, weil er offline und ohne Sprachmodell läuft (funktioniert also
+> auch in der Bibliothek ohne WLAN oder im Zug). Dazu Karteikarten mit
+> automatischer Wiederholung, Prüfungsschemata und geführte Übungsfälle mit
+> Erwartungshorizont.
 >
 > Der ehrliche Teil: Das Angebot ist neu und startet mit 180 Karten über die
 > drei Rechtsgebiete — weniger als etablierte Anbieter mit Tausenden Fällen.
