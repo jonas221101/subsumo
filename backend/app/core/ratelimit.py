@@ -6,6 +6,13 @@ Credential-Stuffing gegen ``/auth/login`` sowie Massen-Registrierung gegen
 ``/auth/register``. Kein verteiltes Rate-Limiting ueber mehrere Instanzen
 hinweg - dafuer braeuchte es einen gemeinsamen Speicher (z. B. Redis), der
 aktuell nicht Teil des Stacks ist.
+
+Hinter dem in ``docs/22-deploy-runbook.md`` dokumentierten nginx-Reverse-Proxy
+(auf demselben Host, kein ``--proxy-headers``) ist ``request.client.host``
+fuer jede Anfrage identisch - ohne die ``X-Forwarded-For``-Behandlung unten
+waere der Limiter kein IP-Limiter mehr, sondern ein einziger globaler
+Zaehler, den eine einzelne Quelle als Denial-of-Service gegen alle Nutzer
+missbrauchen koennte (SUB-255-Review, docs/26 Abschnitt 3.2).
 """
 
 from __future__ import annotations
@@ -15,6 +22,8 @@ import time
 from collections import defaultdict
 
 from fastapi import HTTPException, Request, status
+
+from app.config import get_settings
 
 
 class RateLimiter:
@@ -39,8 +48,25 @@ class RateLimiter:
             return True
 
 
+def _trusted_proxies() -> frozenset[str]:
+    raw = get_settings().rate_limit_trusted_proxies
+    return frozenset(ip.strip() for ip in raw.split(",") if ip.strip())
+
+
 def _client_ip(request: Request) -> str:
-    return request.client.host if request.client is not None else "unknown"
+    peer = request.client.host if request.client is not None else "unknown"
+    if peer not in _trusted_proxies():
+        return peer
+    # Der unmittelbare Peer ist ein vertrauenswuerdiger Reverse-Proxy: dessen
+    # eigener Hop haengt sich per ``X-Forwarded-For`` selbst als letzten
+    # Eintrag an (nginx: ``$proxy_add_x_forwarded_for``). Vorherige Eintraege
+    # koennte ein Client selbst gesetzt haben - nur der letzte stammt
+    # nachweislich vom Proxy.
+    forwarded = request.headers.get("x-forwarded-for")
+    if not forwarded:
+        return peer
+    candidate = forwarded.split(",")[-1].strip()
+    return candidate or peer
 
 
 def _enforce(request: Request, scope: str) -> None:

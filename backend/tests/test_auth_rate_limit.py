@@ -42,3 +42,35 @@ def test_login_und_register_limits_sind_getrennte_kontingente(client):
         "/v1/auth/register", json={"email": "frisch@uni-beispiel.de", "password": "examen2029!"}
     )
     assert resp.status_code == 201
+
+
+def test_hinter_reverse_proxy_sperrt_ein_angreifer_nicht_alle_nutzer(client, monkeypatch):
+    """SUB-255-Review: hinter dem in docs/22-deploy-runbook.md dokumentierten
+    nginx (gleicher Host, kein --proxy-headers) ist request.client.host fuer
+    jede Anfrage identisch - ohne Auswertung von X-Forwarded-For haette eine
+    einzelne Quelle das Kontingent fuer alle Nutzer verbraucht (429 fuer
+    alle, nicht nur fuer den Angreifer). Simuliert den Proxy, indem der
+    TestClient-Peer ("testclient") als vertrauenswuerdig eingetragen wird
+    und verschiedene X-Forwarded-For-Werte fuer verschiedene Quellen
+    mitgeschickt werden.
+    """
+    monkeypatch.setenv("SUBSUMO_RATE_LIMIT_TRUSTED_PROXIES", "testclient")
+    get_settings.cache_clear()
+    limit = get_settings().auth_rate_limit_max_requests
+
+    angreifer_payload = {"email": "unbekannt-3@uni-beispiel.de", "password": "falsch123"}
+    angreifer_headers = {"X-Forwarded-For": "203.0.113.10"}
+    for _ in range(limit):
+        client.post("/v1/auth/login", json=angreifer_payload, headers=angreifer_headers)
+    gesperrt = client.post(
+        "/v1/auth/login", json=angreifer_payload, headers=angreifer_headers
+    )
+    assert gesperrt.status_code == 429
+
+    andere_quelle = client.post(
+        "/v1/auth/login",
+        json={"email": "unbekannt-4@uni-beispiel.de", "password": "falsch123"},
+        headers={"X-Forwarded-For": "203.0.113.20"},
+    )
+    assert andere_quelle.status_code == 401
+    get_settings.cache_clear()

@@ -36,6 +36,16 @@ class Settings(BaseSettings):
     auth_rate_limit_max_requests: int = 20
     auth_rate_limit_window_seconds: float = 60.0
 
+    # Kommagetrennte Liste vertrauenswuerdiger Reverse-Proxy-IPs (der
+    # unmittelbare TCP-Peer aus Sicht von uvicorn). Nur wenn dieser Peer
+    # hier eingetragen ist, liest der Rate-Limiter die vom Proxy gesetzte
+    # X-Forwarded-For-IP statt der Peer-Adresse - sonst koennte jeder Client
+    # den Header selbst faelschen und das Limit umgehen. Leer (Default) =
+    # X-Forwarded-For wird ignoriert, es zaehlt der direkte TCP-Peer.
+    # Siehe docs/22-deploy-runbook.md ("Voraussetzungen") fuer den
+    # Produktionswert hinter dem dort dokumentierten nginx-Reverse-Proxy.
+    rate_limit_trusted_proxies: str = ""
+
     # Verzeichnis mit den Lerninhalten (YAML).
     content_dir: Path = REPO_ROOT / "content"
     seed_on_startup: bool = True
