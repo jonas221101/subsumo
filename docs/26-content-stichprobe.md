@@ -200,7 +200,7 @@ Prüfung.
   stammen, sonst ist sie eine Falschangabe.
 - Es entscheidet die Unstimmigkeit aus Abschnitt 2 nicht.
 - Es deckt die 3 M0-Themen nicht ab (Abschnitt 1).
-- Die Zitatlisten in Abschnitt 5 sind maschinell aus den YAML-Dateien
-  extrahiert. Sie sind eine Arbeitshilfe, kein Ersatz für das Lesen des
-  Themas — ein falsches Zitat *im Fließtext ohne `norms:`-Eintrag* steht dort
-  nicht.
+- Die Zitatlisten in Abschnitt 5 sind maschinell aus dem gesamten Text der
+  YAML-Dateien extrahiert — sowohl aus den `norms:`-Blöcken als auch aus dem
+  Fließtext (`front`/`back`). Sie sind trotzdem eine Arbeitshilfe, kein
+  Ersatz für das Lesen des Themas.
