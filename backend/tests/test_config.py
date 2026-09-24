@@ -1,5 +1,5 @@
 """Fail-Fast beim Default-JWT-Secret in Produktion (docs/17-release-readiness.md
-Abschnitt 2, Gate D; docs/26-projektreview-sub254.md Abschnitt 3.3, SUB-255)."""
+Abschnitt 2, Gate D; docs/31-projektreview-sub254.md Abschnitt 3.3, SUB-255)."""
 
 from __future__ import annotations
 

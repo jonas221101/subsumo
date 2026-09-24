@@ -1,4 +1,4 @@
-"""Rate-Limit auf /auth/login und /auth/register (docs/26-projektreview-sub254.md
+"""Rate-Limit auf /auth/login und /auth/register (docs/31-projektreview-sub254.md
 Abschnitt 3.2, SUB-255): bremst Credential-Stuffing und Massen-Registrierung
 aus einer IP."""
 

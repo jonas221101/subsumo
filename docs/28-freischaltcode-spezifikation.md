@@ -72,7 +72,7 @@ Ablauf:
 
 Kein Stripe-Aufruf an keiner Stelle — Ticket-Vorgabe eingehalten.
 
-**Offener Punkt, nicht Teil dieser Spezifikation:** `docs/26-projektreview-sub254.md`
+**Offener Punkt, nicht Teil dieser Spezifikation:** `docs/31-projektreview-sub254.md`
 Abschnitt 3.2 hält fest, dass aktuell kein Endpoint ein Rate-Limit hat. Ein
 Redeem-Endpoint ist ein Brute-Force-Ziel (Codes erraten) und sollte an
 derselben Stelle mitgelöst werden wie der generelle Rate-Limit-Befund, nicht
@@ -119,4 +119,4 @@ Build-Reihenfolge: C1 zuerst, C2/C3 parallel danach, C4 zuletzt.
   Ticket nicht nötig, da kostenlos vergeben).
 - **Nicht Teil dieser Spezifikation:** Rate-Limiting des neuen Endpoints
   (Abschnitt 3, offener Punkt) — gehört zum generellen Rate-Limit-Befund aus
-  docs/26 §3.2.
+  docs/31 §3.2.

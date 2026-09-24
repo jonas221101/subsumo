@@ -2,13 +2,13 @@
 
 > **Auftrag** ([SUB-259](/SUB/issues/SUB-259), Kind-Ticket zu
 > [SUB-254](/SUB/issues/SUB-254)): Spezifikation des in
-> `docs/26-projektreview-sub254.md` Abschnitt 5 bewerteten Features — **keine
+> `docs/31-projektreview-sub254.md` Abschnitt 5 bewerteten Features — **keine
 > Implementierung.** Ein Nutzer beschreibt ein Lernwerkzeug in eigenen Worten,
 > ein Modell komponiert es aus bestehenden Bausteinen, es steht dem Nutzer
 > sofort zur Verfügung, und der Vorschlag geht als Rückmeldung an dieses Board,
 > wo über den festen Einbau entschieden wird.
 >
-> **Einordnung (nicht Gegenstand dieses Dokuments, siehe `docs/26` Abschnitt
+> **Einordnung (nicht Gegenstand dieses Dokuments, siehe `docs/31` Abschnitt
 > 5.4):** nicht v1.0, frühestens v1.1, hinter demselben AVV-Gate wie die
 > KI-Korrektur (`docs/17-release-readiness.md` Abschnitt 1,
 > `docs/23-llm-provider-avv.md`). v1.0 läuft mit `llm_provider=none`
@@ -227,7 +227,7 @@ Modellfehler strukturell, nicht nur durch eine Anweisung.
 - Aufgabe: klassifizieren, ob die Beschreibung ein **Lernwerkzeug aus
   Baustein 1–7** beschreibt, oder ob sie die Bewertung eines **realen,
   konkreten Sachverhalts** verlangt (das Vermieterkündigungs-Beispiel aus
-  `docs/26` Abschnitt 5.1).
+  `docs/31` Abschnitt 5.1).
 - Ausgabe: `{"allow": bool, "reason": string}` — festes, kleines Schema, kein
   Freitext im Erfolgsfall.
 - Bei `allow=false`: kein Kompositionsaufruf, keine Kosten für Stufe 2, feste
@@ -419,7 +419,7 @@ hat.
 ## Verweise
 
 - Bewertung und Bauplan (Ursprung dieses Tickets):
-  `docs/26-projektreview-sub254.md` Abschnitt 5
+  `docs/31-projektreview-sub254.md` Abschnitt 5
 - RDG-Abgrenzung: `docs/06-recht-compliance.md` Abschnitt 2
 - Kostenrechnung-Methode: `docs/19-kosten-preis-budget.md` Abschnitt 5
 - AVV-Gate: `docs/17-release-readiness.md` Abschnitt 1, `docs/23-llm-provider-avv.md`

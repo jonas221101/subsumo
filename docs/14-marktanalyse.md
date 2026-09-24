@@ -66,7 +66,7 @@ Destatis liefert **keine** Aufschlüsselung der Studierendenzahl nach Fachsemest
 
 ### 2.1 Nachtrag 24.09.2026 — weitere USP-Recherche (SUB-260)
 
-> Anlass: `docs/26-projektreview-sub254.md` Abschnitt 4 hat zwei tragfähige USPs
+> Anlass: `docs/31-projektreview-sub254.md` Abschnitt 4 hat zwei tragfähige USPs
 > herausgearbeitet — unbegrenztes Struktur-Feedback ohne Grenzkosten und echtes
 > Offline auf vier Plattformen. Auftrag aus SUB-260: prüfen, ob sich seit dem
 > Stand 14.09.2026 (zehn Tage) etwas an diesem Bild geändert hat, und weitere
@@ -91,7 +91,7 @@ Staatsexamen mit einer „juristisch geschulten KI" (seit 2025 im Einsatz),
 Einreichung ausschließlich per E-Mail/Online-Terminbuchung, **kein Abo,
 sondern Einzelpreise 10–60 € je nach Klausurtyp/Musterlösung**, für
 Erstsemester mit Immatrikulationsnachweis kostenlos. Bestätigt damit
-zusätzlich beide Subsumo-USPs aus `docs/26` Abschnitt 4.1: **nicht
+zusätzlich beide Subsumo-USPs aus `docs/31` Abschnitt 4.1: **nicht
 unbegrenzt** (Einzelpreis pro Abgabe) und **kein eigenständiges
 Offline-Produkt** (reine E-Mail-/Web-Einreichung, keine App). Ändert Abschnitt
 2 oben von drei auf vier belegte KI-Korrektur-Anbieter — der Kernbefund
@@ -127,7 +127,7 @@ heruntergeladene Inhalte, und „bei einem Update der Jurafuchs-App oder des
 Betriebssystems werden bereits heruntergeladene Inhalte vom Gerät entfernt"
 — nach jedem App-/OS-Update ist erneut eine Online-Verbindung nötig. Das ist
 etwas anderes als Subsumos Kartencache und Review-Outbox, die Neustart und
-Netzausfall überstehen (`docs/26` Abschnitt 4.1, `app/lib/state.dart`), weil
+Netzausfall überstehen (`docs/31` Abschnitt 4.1, `app/lib/state.dart`), weil
 bei Jurafuchs ein gewöhnliches App-Update den Offline-Zustand zerstört, bei
 Subsumo nicht. Der USP-Anspruch „echtes Offline" ist damit nicht nur unbelegt
 für die drei KI-Korrektur-Wettbewerber (wie am 14.09. festgestellt), sondern
@@ -158,7 +158,7 @@ Explizit als geprüft-und-verworfen vermerkt, damit dieselbe Meldung nicht in
 einer künftigen Recherche unkritisch übernommen wird. (Quelle: [jurios.de, 01.04.2026](https://jurios.de/2025/04/01/neuerung-bei-den-juristischen-staatsexamina-kuenstliche-intelligenz-uebernimmt-die-korrektur-ab-2026/) — widerlegt durch [LTO, 06.06.2024](https://www.lto.de/karriere/jura-studium/stories/detail/juristenausbildung-reform-justizministerkonferenz-sieht-keinen-bedarf-jurastudium) und [beck-aktuell, 21.01.2026](https://www.beck-aktuell.de/ausbildung-und-karriere/studium-referendariat/ki-korrektur-juraklausur-staatsexamen-jurastudium-kuenstliche-intelligenz-korrektor-2026-01-21), Abruf 24.09.2026.)
 
 **Fazit des Nachtrags:** Kein Wettbewerbsfund der letzten zehn Tage
-widerlegt die beiden in `docs/26` Abschnitt 4.1 identifizierten USPs
+widerlegt die beiden in `docs/31` Abschnitt 4.1 identifizierten USPs
 (unbegrenztes, kostenloses Struktur-Feedback; echtes geräteübergreifendes
 Offline). Der vierte KI-Korrektur-Anbieter (Jurversity) und die präzisierte
 Jurafuchs-Offline-Einschränkung **verstärken** beide Thesen eher, als sie zu
