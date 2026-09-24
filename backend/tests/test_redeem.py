@@ -118,6 +118,22 @@ def test_redeem_erschoepfter_code_ist_410(auth_client):
     assert response.status_code == 410
 
 
+def test_redeem_retry_vom_selben_nutzer_auf_erschoepften_code_ist_409(auth_client):
+    """SUB-281: eigene Einloesung zaehlt in redemption_count mit - Duplikat-Check
+
+    muss vor dem Erschoepft-Check greifen, sonst bekommt die eingeladene
+    Person bei einem Retry auf ihren eigenen ``max_redemptions=1``-Code
+    faelschlich 410 statt 409.
+    """
+    _create_code("EINZEL-INVITE-042", max_redemptions=1)
+
+    first = auth_client.post("/v1/account/redeem", json={"code": "EINZEL-INVITE-042"})
+    assert first.status_code == 200
+
+    second = auth_client.post("/v1/account/redeem", json={"code": "EINZEL-INVITE-042"})
+    assert second.status_code == 409
+
+
 def test_redeem_doppelt_vom_selben_nutzer_ist_409(auth_client):
     _create_code("FACHSCHAFT-LMU-2026")
 
