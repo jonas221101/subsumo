@@ -213,6 +213,9 @@ faelle:
       keywords:
       - Notstandslage
       - gegenwaertige Gefahr
+      card_slugs:
+      - sr-notstand-gefahrbegriff
+      - sr-notstand-notstandslage
     - id: p4
       label: Erforderlichkeit der Notstandshandlung bejaht
       weight: 2.0
@@ -222,6 +225,8 @@ faelle:
       keywords:
       - erforderlich
       - mildestes Mittel
+      card_slugs:
+      - sr-notstand-erforderlichkeit
     - id: p5
       label: Wesentliches Ueberwiegen des Erhaltungsinteresses in der Abwaegung bejaht
       weight: 3.0
@@ -231,6 +236,8 @@ faelle:
       keywords:
       - wesentlich ueberwiegt
       - ueberwiegen
+      card_slugs:
+      - sr-notstand-interessenabwaegung
     - id: p6
       label: Angemessenheit erwaehnt, § 34 Satz 2 StGB
       weight: 1.0
@@ -239,6 +246,8 @@ faelle:
       - § 34 Satz 2 StGB
       keywords:
       - angemessen
+      card_slugs:
+      - sr-notstand-angemessenheit
     - id: p7
       label: 'Ergebnis: Tat gerechtfertigt, A hat sich nicht strafbar gemacht'
       weight: 1.0

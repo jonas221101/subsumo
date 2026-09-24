@@ -209,6 +209,8 @@ faelle:
       keywords:
       - fremde bewegliche Sache
       - bewegliche Sache
+      card_slugs:
+      - sr-diebstahl-fremde-bewegliche-sache
     - id: p3
       label: Wegnahme trotz Nicht-Verlassens des Ladens bejaht (Gewahrsamsenklave)
       weight: 3.0
@@ -219,6 +221,9 @@ faelle:
       - Gewahrsamsenklave
       - neuen Gewahrsam
       - Gewahrsam
+      card_slugs:
+      - sr-diebstahl-wegnahme-begriff
+      - sr-diebstahl-vollendung-gewahrsamsenklave
     - id: p4
       label: Zueignungsabsicht mit Aneignungs- und Enteignungskomponente bejaht
       weight: 2.5
@@ -227,6 +232,8 @@ faelle:
       - Zueignungsabsicht
       - Aneignung
       - Enteignung
+      card_slugs:
+      - sr-diebstahl-zueignungsabsicht
     - id: p5
       label: Rechtswidrigkeit der erstrebten Zueignung bejaht
       weight: 1.5
@@ -235,6 +242,8 @@ faelle:
       - rechtswidrig
       - keinen Anspruch
       - faelligen Anspruch
+      card_slugs:
+      - sr-diebstahl-rechtswidrigkeit-zueignung
     - id: p6
       label: Vorsatz bzgl. aller objektiven Tatbestandsmerkmale erwaehnt
       weight: 1.0
