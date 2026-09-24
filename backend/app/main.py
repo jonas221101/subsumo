@@ -13,6 +13,7 @@ from sqlalchemy import text
 from app.api.v1 import account, auth, billing, consent, content, gutachten, learn, plan, public
 from app.config import get_settings
 from app.core.observability import configure_logging
+from app.core.ratelimit import RateLimiter
 from app.db import Base, SessionLocal, engine
 from app.services.content import load_content, seed
 
@@ -48,6 +49,10 @@ def create_app() -> FastAPI:
             "Erwartungshorizont eines Uebungsfalls bewertet."
         ),
         lifespan=lifespan,
+    )
+    app.state.auth_rate_limiter = RateLimiter(
+        max_requests=settings.auth_rate_limit_max_requests,
+        window_seconds=settings.auth_rate_limit_window_seconds,
     )
     app.add_middleware(
         CORSMiddleware,

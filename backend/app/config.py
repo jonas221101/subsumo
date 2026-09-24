@@ -25,6 +25,12 @@ class Settings(BaseSettings):
     jwt_algorithm: str = "HS256"
     access_token_ttl_minutes: int = 60 * 24 * 7
 
+    # IP-basiertes Rate-Limit fuer /auth/login und /auth/register
+    # (docs/26-projektreview-sub254.md Abschnitt 3.2): bremst Credential-
+    # Stuffing und Massen-Registrierung aus einer Quelle.
+    auth_rate_limit_max_requests: int = 20
+    auth_rate_limit_window_seconds: float = 60.0
+
     # Verzeichnis mit den Lerninhalten (YAML).
     content_dir: Path = REPO_ROOT / "content"
     seed_on_startup: bool = True
