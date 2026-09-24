@@ -201,6 +201,118 @@ void main() {
     expect(find.text('no_active_subscription'), findsNothing);
   });
 
+  group('Freischaltcode einloesen (docs/28, SUB-269/SUB-271)', () {
+    testWidgets('Erfolg zeigt das neue pro_until-Datum und leert das Feld', (tester) async {
+      Map<String, dynamic>? sentBody;
+      final client = MockClient((request) async {
+        if (request.url.path == '/v1/account/redeem') {
+          sentBody = jsonDecode(request.body) as Map<String, dynamic>;
+          return _json({'pro_until': '2027-03-15T00:00:00Z'}, 200);
+        }
+        if (request.url.path == '/v1/auth/me') {
+          return _json({
+            'email': 'frei@example.com',
+            'pro_active': true,
+            'pro_until': '2027-03-15T00:00:00Z',
+            'cancel_at_period_end': false,
+          }, 200);
+        }
+        return _json({}, 404);
+      });
+      await _pumpAccountPage(
+        tester,
+        user: {'email': 'frei@example.com', 'pro_active': false, 'cancel_at_period_end': false},
+        client: client,
+      );
+
+      await tester.enterText(find.byType(TextFormField), 'FACHSCHAFT-LMU-2026');
+      await tester.tap(find.widgetWithText(SubsumoButton, 'Code einloesen'));
+      await tester.pumpAndSettle();
+
+      expect(sentBody, {'code': 'FACHSCHAFT-LMU-2026'});
+      expect(find.text('Code eingeloest. Pro aktiv bis 15.03.2027.'), findsOneWidget);
+      expect(find.widgetWithText(TextFormField, 'FACHSCHAFT-LMU-2026'), findsNothing);
+    });
+
+    testWidgets('leerer Code loest keinen Aufruf aus', (tester) async {
+      var called = false;
+      final client = MockClient((request) async {
+        if (request.url.path == '/v1/account/redeem') called = true;
+        return _json({}, 404);
+      });
+      await _pumpAccountPage(
+        tester,
+        user: {'email': 'frei@example.com', 'pro_active': false, 'cancel_at_period_end': false},
+        client: client,
+      );
+
+      await tester.tap(find.widgetWithText(SubsumoButton, 'Code einloesen'));
+      await tester.pumpAndSettle();
+
+      expect(called, isFalse);
+    });
+
+    testWidgets('404 zeigt die Ungueltig-Meldung', (tester) async {
+      final client = MockClient((request) async {
+        if (request.url.path == '/v1/account/redeem') {
+          return _json({'detail': 'Code nicht gefunden'}, 404);
+        }
+        return _json({}, 404);
+      });
+      await _pumpAccountPage(
+        tester,
+        user: {'email': 'frei@example.com', 'pro_active': false, 'cancel_at_period_end': false},
+        client: client,
+      );
+
+      await tester.enterText(find.byType(TextFormField), 'UNBEKANNT');
+      await tester.tap(find.widgetWithText(SubsumoButton, 'Code einloesen'));
+      await tester.pumpAndSettle();
+
+      expect(find.text('Dieser Code ist ungueltig oder nicht mehr aktiv.'), findsOneWidget);
+    });
+
+    testWidgets('410 zeigt die Abgelaufen/Ausgeschoepft-Meldung', (tester) async {
+      final client = MockClient((request) async {
+        if (request.url.path == '/v1/account/redeem') {
+          return _json({'detail': 'Code ist ausgeschoepft'}, 410);
+        }
+        return _json({}, 404);
+      });
+      await _pumpAccountPage(
+        tester,
+        user: {'email': 'frei@example.com', 'pro_active': false, 'cancel_at_period_end': false},
+        client: client,
+      );
+
+      await tester.enterText(find.byType(TextFormField), 'AUFGEBRAUCHT');
+      await tester.tap(find.widgetWithText(SubsumoButton, 'Code einloesen'));
+      await tester.pumpAndSettle();
+
+      expect(find.text('Dieser Code ist abgelaufen oder bereits ausgeschoepft.'), findsOneWidget);
+    });
+
+    testWidgets('409 zeigt die Bereits-eingeloest-Meldung', (tester) async {
+      final client = MockClient((request) async {
+        if (request.url.path == '/v1/account/redeem') {
+          return _json({'detail': 'Code wurde bereits eingeloest'}, 409);
+        }
+        return _json({}, 404);
+      });
+      await _pumpAccountPage(
+        tester,
+        user: {'email': 'frei@example.com', 'pro_active': false, 'cancel_at_period_end': false},
+        client: client,
+      );
+
+      await tester.enterText(find.byType(TextFormField), 'SCHONDA');
+      await tester.tap(find.widgetWithText(SubsumoButton, 'Code einloesen'));
+      await tester.pumpAndSettle();
+
+      expect(find.text('Du hast diesen Code bereits eingeloest.'), findsOneWidget);
+    });
+  });
+
   group('Datenexport (Art. 15 DSGVO, SUB-84/SUB-103)', () {
     testWidgets('ruft den Endpunkt auf und bietet das Ergebnis zum Kopieren an', (tester) async {
       final calls = <MethodCall>[];
@@ -229,7 +341,10 @@ void main() {
         client: client,
       );
 
-      await tester.tap(find.widgetWithText(SubsumoButton, 'Meine Daten exportieren'));
+      final exportBtn = find.widgetWithText(SubsumoButton, 'Meine Daten exportieren');
+      await tester.ensureVisible(exportBtn);
+      await tester.pumpAndSettle();
+      await tester.tap(exportBtn);
       await tester.pumpAndSettle();
 
       expect(find.text('Deine Daten (Art. 15 DSGVO)'), findsOneWidget);
@@ -254,7 +369,10 @@ void main() {
         client: client,
       );
 
-      await tester.tap(find.widgetWithText(SubsumoButton, 'Meine Daten exportieren'));
+      final exportBtn = find.widgetWithText(SubsumoButton, 'Meine Daten exportieren');
+      await tester.ensureVisible(exportBtn);
+      await tester.pumpAndSettle();
+      await tester.tap(exportBtn);
       await tester.pumpAndSettle();
 
       expect(find.text('export_failed'), findsOneWidget);
@@ -275,7 +393,10 @@ void main() {
         client: client,
       );
 
-      await tester.tap(find.widgetWithText(SubsumoButton, 'Konto loeschen'));
+      final deleteBtn = find.widgetWithText(SubsumoButton, 'Konto loeschen');
+      await tester.ensureVisible(deleteBtn);
+      await tester.pumpAndSettle();
+      await tester.tap(deleteBtn);
       await tester.pumpAndSettle();
       expect(find.text('Konto unwiderruflich loeschen?'), findsOneWidget);
 
@@ -301,13 +422,16 @@ void main() {
         client: client,
       );
 
-      await tester.tap(find.widgetWithText(SubsumoButton, 'Konto loeschen'));
+      final deleteBtn = find.widgetWithText(SubsumoButton, 'Konto loeschen');
+      await tester.ensureVisible(deleteBtn);
+      await tester.pumpAndSettle();
+      await tester.tap(deleteBtn);
       await tester.pumpAndSettle();
       await tester.tap(find.widgetWithText(FilledButton, 'Weiter'));
       await tester.pumpAndSettle();
 
       expect(find.text('Passwort bestaetigen'), findsOneWidget);
-      await tester.enterText(find.byType(TextFormField), 'geheim123');
+      await tester.enterText(find.descendant(of: find.byType(AlertDialog), matching: find.byType(TextFormField)), 'geheim123');
       await tester.tap(find.widgetWithText(FilledButton, 'Konto endgueltig loeschen'));
       await tester.pumpAndSettle();
 
@@ -331,11 +455,14 @@ void main() {
         client: client,
       );
 
-      await tester.tap(find.widgetWithText(SubsumoButton, 'Konto loeschen'));
+      final deleteBtn = find.widgetWithText(SubsumoButton, 'Konto loeschen');
+      await tester.ensureVisible(deleteBtn);
+      await tester.pumpAndSettle();
+      await tester.tap(deleteBtn);
       await tester.pumpAndSettle();
       await tester.tap(find.widgetWithText(FilledButton, 'Weiter'));
       await tester.pumpAndSettle();
-      await tester.enterText(find.byType(TextFormField), 'falsch');
+      await tester.enterText(find.descendant(of: find.byType(AlertDialog), matching: find.byType(TextFormField)), 'falsch');
       await tester.tap(find.widgetWithText(FilledButton, 'Konto endgueltig loeschen'));
       await tester.pumpAndSettle();
 
@@ -356,11 +483,14 @@ void main() {
         client: client,
       );
 
-      await tester.tap(find.widgetWithText(SubsumoButton, 'Konto loeschen'));
+      final deleteBtn = find.widgetWithText(SubsumoButton, 'Konto loeschen');
+      await tester.ensureVisible(deleteBtn);
+      await tester.pumpAndSettle();
+      await tester.tap(deleteBtn);
       await tester.pumpAndSettle();
       await tester.tap(find.widgetWithText(FilledButton, 'Weiter'));
       await tester.pumpAndSettle();
-      await tester.enterText(find.byType(TextFormField), 'geheim123');
+      await tester.enterText(find.descendant(of: find.byType(AlertDialog), matching: find.byType(TextFormField)), 'geheim123');
       await tester.tap(find.widgetWithText(FilledButton, 'Konto endgueltig loeschen'));
       await tester.pumpAndSettle();
 
@@ -379,7 +509,10 @@ void main() {
         client: client,
       );
 
-      await tester.tap(find.widgetWithText(SubsumoButton, 'Konto loeschen'));
+      final deleteBtn = find.widgetWithText(SubsumoButton, 'Konto loeschen');
+      await tester.ensureVisible(deleteBtn);
+      await tester.pumpAndSettle();
+      await tester.tap(deleteBtn);
       await tester.pumpAndSettle();
       await tester.tap(find.widgetWithText(FilledButton, 'Weiter'));
       await tester.pumpAndSettle();
