@@ -259,6 +259,8 @@ faelle:
       keywords:
       - Zustimmungsgesetz
       - ausdrueckliche Bestimmung
+      card_slugs:
+      - or-gg-gesetzgebung-zustimmungs-einspruchsgesetz
     - id: p2
       label: Erkenntnis, dass die Zurueckweisung eines Einspruchs die erforderliche
         Zustimmung nicht ersetzt
@@ -268,6 +270,8 @@ faelle:
       - Einspruch ersetzt nicht
       - Zustimmung erforderlich
       - Art. 78
+      card_slugs:
+      - or-gg-gesetzgebung-zustandekommen-zustimmungsgesetz
     - id: p3
       label: Feststellung, dass eine ausdrueckliche Zustimmungserklaerung des Bundesrates
         fehlt
@@ -276,6 +280,8 @@ faelle:
       keywords:
       - keine Zustimmung erteilt
       - fehlt
+      card_slugs:
+      - or-gg-gesetzgebung-zustandekommen-zustimmungsgesetz
     - id: p4
       label: 'Ergebnis: Gesetz mangels wirksamen Zustandekommens formell verfassungswidrig'
       weight: 2.0
@@ -283,6 +289,8 @@ faelle:
       keywords:
       - formell verfassungswidrig
       - nicht zustande gekommen
+      card_slugs:
+      - or-gg-gesetzgebung-zustandekommen-zustimmungsgesetz
     - id: p5
       label: Erkenntnis, dass die Ausfertigung den Verfahrensfehler nicht heilt
       weight: 1.5
@@ -290,3 +298,7 @@ faelle:
       keywords:
       - Ausfertigung heilt nicht
       - Verfahrensfehler
+
+      card_slugs:
+      - or-gg-gesetzgebung-ausfertigung-verkuendung
+      - or-gg-gesetzgebung-pruefungsrecht-bundespraesident

@@ -195,12 +195,17 @@ faelle:
       - Meinung
       - wertend
       - Tatsachenbehauptung
+      card_slugs:
+      - or-gr-art5-schutzbereich-meinung
+      - or-gr-art5-abgrenzung-tatsachenbehauptung
     - id: p2
       label: Eingriff bejaht
       weight: 1.5
       required: true
       keywords:
       - Eingriff
+      card_slugs:
+      - or-gr-eingriff
     - id: p3
       label: Pruefung als "allgemeines Gesetz" i.S.d. Art. 5 Abs. 2 GG nach der Sonderrechtslehre
       weight: 2.5
@@ -210,6 +215,8 @@ faelle:
       keywords:
       - allgemeines Gesetz
       - Sonderrechtslehre
+      card_slugs:
+      - or-gr-art5-allgemeines-gesetz-sonderrechtslehre
     - id: p4
       label: Schmaehkritik zutreffend verneint (Sachbezug zur Bauentscheidung)
       weight: 2.0
@@ -217,6 +224,8 @@ faelle:
       keywords:
       - Schmaehkritik
       - Sachbezug
+      card_slugs:
+      - or-gr-art5-schmaehkritik
     - id: p5
       label: Wechselwirkungslehre / Abwaegung im Einzelfall durchgefuehrt
       weight: 2.5
@@ -224,6 +233,8 @@ faelle:
       keywords:
       - Wechselwirkung
       - Abwaegung
+      card_slugs:
+      - or-gr-art5-wechselwirkungslehre
     - id: p6
       label: 'Ergebnis: ueberspitzte Kritik an Amtstraeger in amtlicher Funktion gedeckt,
         Entfernungsanordnung verletzt Art. 5 Abs. 1 S. 1 GG'

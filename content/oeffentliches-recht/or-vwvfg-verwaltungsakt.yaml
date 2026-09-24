@@ -178,6 +178,8 @@ faelle:
       keywords:
       - Behoerde
       - hoheitlich
+      card_slugs:
+      - or-vwvfg-va-hoheitliche-massnahme
     - id: p2
       label: Regelung bejaht und zutreffend vom Realakt (tatsaechliche Vermessung)
         abgegrenzt
@@ -189,12 +191,16 @@ faelle:
       - Regelung
       - Realakt
       - Rechtsfolge
+      card_slugs:
+      - or-vwvfg-va-regelung-abgrenzung-realakt
     - id: p3
       label: Einzelfall bejaht
       weight: 1.0
       required: false
       keywords:
       - Einzelfall
+      card_slugs:
+      - or-vwvfg-va-einzelfall-allgemeinverfuegung
     - id: p4
       label: Aussenwirkung bejaht und begruendet
       weight: 2.0
@@ -202,6 +208,8 @@ faelle:
       keywords:
       - Aussenwirkung
       - Aussenstehender
+      card_slugs:
+      - or-vwvfg-va-aussenwirkung
     - id: p5
       label: 'Ergebnis: Duldungsverfuegung ist Verwaltungsakt i.S.d. § 35 VwVfG'
       weight: 1.5
@@ -211,3 +219,6 @@ faelle:
       keywords:
       - Verwaltungsakt
       - § 35
+
+      card_slugs:
+      - or-vwvfg-va-begriff

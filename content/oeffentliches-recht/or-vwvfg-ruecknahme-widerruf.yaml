@@ -267,6 +267,8 @@ faelle:
       keywords:
       - '48'
       - rechtswidrig
+      card_slugs:
+      - or-vwvfg-rw-ruecknahme-voraussetzungen
     - id: p2
       label: Anwendbarkeit des § 48 Abs. 2 VwVfG wegen Geldleistung erkannt
       weight: 1.5
@@ -276,6 +278,8 @@ faelle:
       keywords:
       - Geldleistung
       - Abs. 2
+      card_slugs:
+      - or-vwvfg-rw-vertrauensschutz-abs2
     - id: p3
       label: Vertrauensbetaetigung durch Verbrauch der Foerdersumme (Disposition)
         benannt
@@ -285,6 +289,8 @@ faelle:
       - Vertrauensbetaetigung
       - Disposition
       - verbraucht
+      card_slugs:
+      - or-vwvfg-rw-vertrauensschutz-abs2
     - id: p4
       label: Kein Ausschlussgrund nach § 48 Abs. 2 S. 3 VwVfG, da U weder taeuschte
         noch grob fahrlaessig handelte
@@ -294,6 +300,8 @@ faelle:
       - kein Ausschlussgrund
       - grob fahrlaessig
       - Fehler der Behoerde
+      card_slugs:
+      - or-vwvfg-rw-vertrauensschutz-abs2
     - id: p5
       label: Jahresfrist des § 48 Abs. 4 VwVfG gewahrt (Kenntnis erst Dezember 2025)
       weight: 2.0
@@ -301,6 +309,8 @@ faelle:
       keywords:
       - Jahresfrist
       - Kenntnis
+      card_slugs:
+      - or-vwvfg-rw-jahresfrist-abs4
     - id: p6
       label: 'Ergebnis: Ruecknahme wegen schutzwuerdigen Vertrauens unzulaessig'
       weight: 1.0
