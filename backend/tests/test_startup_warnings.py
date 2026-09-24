@@ -1,5 +1,5 @@
 """Warnung beim Start, wenn die Paywall in Produktion aus ist
-(docs/22-deploy-runbook.md Abschnitt 1; docs/26-projektreview-sub254.md
+(docs/22-deploy-runbook.md Abschnitt 1; docs/31-projektreview-sub254.md
 Abschnitt 3.1, SUB-255): der Notausgang bleibt erlaubt, darf aber nicht
 lautlos passieren."""
 

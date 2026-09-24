@@ -57,7 +57,7 @@ def create_app() -> FastAPI:
     if settings.environment == "production" and not settings.paywall_enabled:
         # Bewusster Notausgang (docs/20-release-g2-bezahlstrecke.md Abschnitt 5)
         # ist erlaubt, darf aber nicht lautlos passieren: sonst bekommt jeder
-        # Nutzer unbemerkt vollen Pro-Zugriff geschenkt (docs/26 Abschnitt 3.1).
+        # Nutzer unbemerkt vollen Pro-Zugriff geschenkt (docs/31 Abschnitt 3.1).
         log.warning(
             "SUBSUMO_PAYWALL_ENABLED=false in Produktion: alle Nutzer erhalten "
             "vollen Pro-Zugriff. Bewusster Notausgang oder vergessene Variable?"

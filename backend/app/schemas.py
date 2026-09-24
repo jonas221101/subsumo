@@ -207,6 +207,11 @@ class AccountExportSubmissionOut(BaseModel):
     created_at: datetime
 
 
+class AccountExportRedemptionOut(BaseModel):
+    campaign_slug: str
+    redeemed_at: datetime
+
+
 class AccountExportOut(BaseModel):
     """Selbstauskunft nach Art. 15 DSGVO - alle zur Nutzer-ID gespeicherten Daten."""
 
@@ -215,6 +220,7 @@ class AccountExportOut(BaseModel):
     user_cards: list[AccountExportUserCardOut] = []
     reviews: list[AccountExportReviewOut] = []
     submissions: list[AccountExportSubmissionOut] = []
+    redemptions: list[AccountExportRedemptionOut] = []
 
 
 class AccountDeleteIn(BaseModel):
