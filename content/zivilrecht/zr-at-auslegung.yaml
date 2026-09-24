@@ -226,6 +226,8 @@ faelle:
       keywords:
       - Wortlaut
       - wirklicher Wille
+      card_slugs:
+      - zr-at-auslegung-ziel-133-157
     - id: p3
       label: Wendet falsa demonstratio non nocet korrekt an und begruendet mit uebereinstimmendem
         Willen
@@ -236,6 +238,9 @@ faelle:
       keywords:
       - falsa demonstratio
       - uebereinstimmend
+      card_slugs:
+      - zr-at-auslegung-falsa-demonstratio
+      - zr-at-auslegung-natuerliche-auslegung
     - id: p4
       label: Verneint eine Anfechtung mangels Auseinanderfallen von Wille und Erklaerung
       weight: 2.0
@@ -245,6 +250,8 @@ faelle:
       keywords:
       - Anfechtung
       - kein Irrtum
+      card_slugs:
+      - zr-at-auslegung-vorrang-vor-anfechtung
     - id: p5
       label: 'Ergebnis: Kaufvertrag ueber das Modell Sprint 200'
       weight: 1.0

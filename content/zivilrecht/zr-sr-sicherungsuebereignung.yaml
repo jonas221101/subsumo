@@ -206,6 +206,8 @@ faelle:
       - '929'
       - Einigung
       - Eigentumsuebergang
+      card_slugs:
+      - zr-sr-su-929-930-besitzkonstitut
     - id: p2
       label: Besitzmittlungsverhaeltnis statt Uebergabe nach § 930 BGB erkannt (Verwahrungsverhaeltnis)
       weight: 2.0
@@ -216,6 +218,8 @@ faelle:
       - '930'
       - Besitzmittlungsverhaeltnis
       - Verwahrung
+      card_slugs:
+      - zr-sr-su-929-930-besitzkonstitut
     - id: p3
       label: Berechtigung des U als Eigentuemer erkannt, gutglaeubiger Erwerb daher
         nicht erforderlich
@@ -229,6 +233,8 @@ faelle:
       keywords:
       - Sicherungsabrede
       - Rechtsgrund
+      card_slugs:
+      - zr-sr-su-sicherungsabrede
     - id: p5
       label: Verwertungsreife wegen Faelligkeit und Zahlungsverzugs bejaht
       weight: 2.0
@@ -239,6 +245,8 @@ faelle:
       - Verwertungsreife
       - Verzug
       - faellig
+      card_slugs:
+      - zr-sr-su-verwertungsreife
     - id: p6
       label: 'Ergebnis: S ist Sicherungseigentuemerin und darf verwerten'
       weight: 1.0
@@ -246,3 +254,6 @@ faelle:
       keywords:
       - Sicherungseigentuemerin
       - darf verwerten
+      card_slugs:
+      - zr-sr-su-fiduziarisches-eigentum
+      - zr-sr-su-verwertungsreife

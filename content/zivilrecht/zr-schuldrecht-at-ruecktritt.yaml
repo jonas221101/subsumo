@@ -235,6 +235,8 @@ faelle:
       keywords:
       - nicht montiert
       - Pflichtverletzung
+      card_slugs:
+      - zr-ruecktritt-voraussetzungen-323-1
     - id: p3
       label: Entbehrlichkeit der Fristsetzung wegen relativen Fixgeschäfts nach §
         323 Abs. 2 Nr. 2 BGB sauber begründet
@@ -246,6 +248,8 @@ faelle:
       - Fixgeschäft
       - '323'
       - entbehrlich
+      card_slugs:
+      - zr-ruecktritt-entbehrlichkeit-323-2
     - id: p4
       label: Wirksame Rücktrittserklärung gegenüber H, § 349 BGB
       weight: 1.0
@@ -255,6 +259,8 @@ faelle:
       keywords:
       - '349'
       - Rücktrittserklärung
+      card_slugs:
+      - zr-ruecktritt-erklaerung-349
     - id: p5
       label: Rückgewährschuldverhältnis mit Zug-um-Zug-Abwicklung erkannt, §§ 346
         Abs. 1, 348 BGB
@@ -267,3 +273,6 @@ faelle:
       - Zug um Zug
       - '348'
       - Rückgabe
+      card_slugs:
+      - zr-ruecktritt-rueckgewaehr-346-1
+      - zr-ruecktritt-zug-um-zug-348

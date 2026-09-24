@@ -202,6 +202,8 @@ faelle:
       - '823'
       - '263'
       - Schutzgesetz
+      card_slugs:
+      - zr-823-2-regelungsgehalt
     - id: p2
       label: § 263 StGB als individualschuetzendes, das Vermoegen schuetzendes Schutzgesetz
         qualifiziert
@@ -213,6 +215,8 @@ faelle:
       - Schutzgesetz
       - Vermoegen
       - individualschuetzend
+      card_slugs:
+      - zr-823-2-schutzgesetzbegriff
     - id: p3
       label: Objektiver Tatbestand des § 263 StGB (Taeuschung, Irrtum, Verfuegung,
         Vermoegensschaden) bejaht
@@ -225,12 +229,16 @@ faelle:
       - Irrtum
       - Verfuegung
       - Vermoegensschaden
+      card_slugs:
+      - zr-823-2-regelungsgehalt
     - id: p4
       label: Vorsatz des G als Verschulden im Sinne des § 823 Abs. 2 BGB erkannt
       weight: 1.0
       keywords:
       - Vorsatz
       - Verschulden
+      card_slugs:
+      - zr-823-2-verschulden-s2
     - id: p5
       label: 'Abgrenzung zu § 823 Abs. 1 BGB: reiner Vermoegensschaden nicht erfasst'
       weight: 2.0
@@ -241,6 +249,8 @@ faelle:
       - 823 Abs. 1
       - reiner Vermoegensschaden
       - Eigentum nicht verletzt
+      card_slugs:
+      - zr-823-2-verhaeltnis-abs1
     - id: p6
       label: 'Ergebnis: Anspruch auf 3.000 EUR besteht'
       weight: 0.5
