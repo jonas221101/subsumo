@@ -195,12 +195,16 @@ faelle:
       required: false
       keywords:
       - Sorgfaltspflichtverletzung
+      card_slugs:
+      - sr-fahrlaessigkeit-objektive-sorgfaltspflichtverletzung
     - id: p3
       label: Kausalitaet und objektive Vorhersehbarkeit bejaht
       weight: 1.0
       required: false
       keywords:
       - vorhersehbar
+      card_slugs:
+      - sr-fahrlaessigkeit-objektive-vorhersehbarkeit
     - id: p4
       label: Eigenverantwortliche Selbstgefaehrdung erkannt und Zurechnung deshalb
         verneint
@@ -211,6 +215,8 @@ faelle:
       keywords:
       - eigenverantwortliche Selbstgefaehrdung
       - Zurechnung
+      card_slugs:
+      - sr-fahrlaessigkeit-eigenverantwortliche-selbstgefaehrdung
     - id: p5
       label: 'Begruendung: B kannte das Risiko, traf freie Entscheidung, A hatte keine
         Tatherrschaft'
@@ -219,6 +225,8 @@ faelle:
       keywords:
       - Tatherrschaft
       - eigene Entscheidung
+      card_slugs:
+      - sr-fahrlaessigkeit-eigenverantwortliche-selbstgefaehrdung
     - id: p6
       label: 'Ergebnis: keine Strafbarkeit mangels objektiver Zurechnung'
       weight: 1.0

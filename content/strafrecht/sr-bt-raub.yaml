@@ -259,6 +259,8 @@ faelle:
       - fremde bewegliche Sache
       - Wegnahme
       - Gewahrsam
+      card_slugs:
+      - sr-raub-abgrenzung-raeuberische-erpressung
     - id: p3
       label: Drohung mit gegenwaertiger Gefahr fuer Leib oder Leben bejaht und begruendet
       weight: 3.0
@@ -269,6 +271,8 @@ faelle:
       - Drohung
       - gegenwaertige Gefahr
       - Leib oder Leben
+      card_slugs:
+      - sr-raub-noetigungsmittel-drohung
     - id: p4
       label: Finaler Zusammenhang zwischen Drohung und Wegnahme erkannt und begruendet
       weight: 3.0
@@ -277,6 +281,8 @@ faelle:
       - finaler Zusammenhang
       - Mittel
       - Zweck
+      card_slugs:
+      - sr-raub-finaler-zusammenhang
     - id: p5
       label: Zueignungsabsicht mit Aneignungs- und Enteignungskomponente bejaht
       weight: 1.5

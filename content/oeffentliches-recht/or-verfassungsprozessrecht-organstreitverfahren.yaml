@@ -233,6 +233,8 @@ faelle:
       - Fraktion
       - andere Beteiligte
       - Geschaeftsordnung
+      card_slugs:
+      - or-osv-beteiligtenfaehigkeit-andere-beteiligte
     - id: p2
       label: Antragsbefugnis nach der Moeglichkeitstheorie korrekt angewendet
       weight: 2.0
@@ -240,6 +242,8 @@ faelle:
       keywords:
       - Moeglichkeitstheorie
       - nicht von vornherein ausgeschlossen
+      card_slugs:
+      - or-osv-antragsbefugnis-64
     - id: p3
       label: Frage- und Informationsrecht des Parlaments aus Art. 20 Abs. 2 GG i.V.m.
         Art. 38 Abs. 1 S. 2 GG als betroffenes Recht identifiziert
@@ -251,6 +255,8 @@ faelle:
       keywords:
       - Frage- und Informationsrecht
       - Kontrollrecht
+      card_slugs:
+      - or-osv-gegenstand-art93
     - id: p4
       label: Sechsmonatsfrist des § 64 Abs. 3 BVerfGG als gewahrt geprueft
       weight: 1.0
@@ -260,6 +266,8 @@ faelle:
       keywords:
       - Sechsmonatsfrist
       - gewahrt
+      card_slugs:
+      - or-osv-antragsfrist-64-abs3
     - id: p5
       label: Unzureichende Substantiierung der Staatswohl-Begruendung als Verletzung
         des Informationsrechts erkannt
@@ -269,6 +277,8 @@ faelle:
       - pauschale Begruendung
       - nicht ausreichend substantiiert
       - Staatswohl
+      card_slugs:
+      - or-gr-verhaeltnismaessigkeit
     - id: p6
       label: 'Ergebnis: Antrag zulaessig und begruendet'
       weight: 0.5

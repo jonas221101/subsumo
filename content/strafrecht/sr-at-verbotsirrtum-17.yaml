@@ -194,12 +194,16 @@ faelle:
       keywords:
       - Verbotsirrtum
       - Unrechtseinsicht
+      card_slugs:
+      - sr-verbotsirrtum-definition
     - id: p2
       label: Einordnung als direkter Verbotsirrtum, Abgrenzung zum Erlaubnisirrtum
       weight: 1.5
       required: false
       keywords:
       - direkter Verbotsirrtum
+      card_slugs:
+      - sr-verbotsirrtum-direkt-indirekt
     - id: p3
       label: Vermeidbarkeit bejaht mit Begruendung
       weight: 3.0
@@ -209,6 +213,8 @@ faelle:
       keywords:
       - vermeidbar
       - Anspannung seines Gewissens
+      card_slugs:
+      - sr-verbotsirrtum-vermeidbarkeit
     - id: p4
       label: 'Rechtsfolge: kein Schuldausschluss, fakultative Milderung'
       weight: 2.0
@@ -219,6 +225,8 @@ faelle:
       keywords:
       - Milderung
       - § 49
+      card_slugs:
+      - sr-verbotsirrtum-rechtsfolgen
     - id: p5
       label: Abgrenzung zum Tatbestandsirrtum § 16 StGB erwaehnt
       weight: 1.0
@@ -227,6 +235,8 @@ faelle:
       - § 16 StGB
       keywords:
       - Tatbestandsirrtum
+      card_slugs:
+      - sr-verbotsirrtum-abgrenzung-tatbestandsirrtum-16
     - id: p6
       label: 'Ergebnis: A handelte schuldhaft, Strafmilderung moeglich'
       weight: 1.0

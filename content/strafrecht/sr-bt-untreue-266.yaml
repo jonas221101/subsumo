@@ -191,6 +191,9 @@ faelle:
       keywords:
       - Vermoegensbetreuungspflicht
       - Geschaeftsfuehrer
+      card_slugs:
+      - sr-untreue-vermoegensbetreuungspflicht
+      - sr-untreue-treubruchtatbestand
     - id: p3
       label: Tathandlung eingeordnet (Missbrauch der wirksamen Verfuegungsbefugnis
         im Innenverhaeltnis pflichtwidrig eingesetzt)
@@ -199,6 +202,8 @@ faelle:
       keywords:
       - Missbrauch
       - Innenverhaeltnis
+      card_slugs:
+      - sr-untreue-missbrauchstatbestand
     - id: p4
       label: Vermoegensnachteil bejaht (keine gleichwertige Gegenleistung)
       weight: 2.5
@@ -208,6 +213,8 @@ faelle:
       keywords:
       - Vermoegensnachteil
       - '50.000'
+      card_slugs:
+      - sr-untreue-vermoegensnachteil
     - id: p5
       label: Vorsatz bejaht
       weight: 1.0

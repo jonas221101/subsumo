@@ -169,6 +169,8 @@ faelle:
       - Vergleichspaar
       - wesentlich gleich
       - Ungleichbehandlung
+      card_slugs:
+      - or-gr-glbs-vergleichspaar
     - id: p2
       label: Strenger Pruefungsmassstab zutreffend begruendet (personenbezogenes,
         nicht beeinflussbares Merkmal)
@@ -178,6 +180,8 @@ faelle:
       - personenbezogen
       - strenger Massstab
       - nicht beeinflussbar
+      card_slugs:
+      - or-gr-glbs-abstufung-pruefungsmassstab
     - id: p3
       label: Rechtfertigung anhand Geeignetheit/Erforderlichkeit geprueft und mangels
         tragfaehiger Begruendung verneint
@@ -187,6 +191,8 @@ faelle:
       - geeignet
       - erforderlich
       - nicht gerechtfertigt
+      card_slugs:
+      - or-gr-glbs-rechtfertigung-verhaeltnismaessigkeit
     - id: p4
       label: 'Ergebnis: S ist in Art. 3 Abs. 1 GG verletzt'
       weight: 1.0

@@ -184,6 +184,8 @@ faelle:
       keywords:
       - Eigentuemerin
       - Verfuegungsgeschaeft
+      card_slugs:
+      - zr-985-anspruchsvoraussetzungen
     - id: p3
       label: Unmittelbarer Besitz der L nach § 854 Abs. 1 BGB benannt
       weight: 1.0
@@ -194,6 +196,8 @@ faelle:
       - unmittelbare
       - Besitz
       - '854'
+      card_slugs:
+      - zr-985-anspruchsvoraussetzungen
     - id: p4
       label: Urspruengliches Recht zum Besitz aus dem Leihvertrag, § 598 BGB, erkannt
       weight: 1.5
@@ -214,6 +218,8 @@ faelle:
       - '604'
       - Fristablauf
       - erloschen
+      card_slugs:
+      - zr-986-recht-zum-besitz
     - id: p6
       label: 'Ergebnis: Anspruch der E gegen L besteht'
       weight: 1.0

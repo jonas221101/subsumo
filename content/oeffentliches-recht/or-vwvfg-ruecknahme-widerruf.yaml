@@ -84,15 +84,19 @@ cards:
 - slug: or-vwvfg-rw-jahresfrist-abs4
   type: norm
   front: Wann beginnt die Jahresfrist des § 48 Abs. 4 VwVfG und was regelt sie?
-  back: Ist der Ruecknahme ein Fall des § 48 Abs. 2 S. 3 Nr. 1 bis 3 VwVfG vorausgegangen
-    oder wird die Ruecknahme wegen nachtraeglich bekannt gewordener Tatsachen erforderlich,
-    ist sie nur innerhalb eines Jahres seit dem Zeitpunkt zulaessig, in dem die Behoerde
-    von den Tatsachen Kenntnis erlangt hat, die die Ruecknahme des rechtswidrigen
-    Verwaltungsakts rechtfertigen. Massgeblich ist die vollstaendige Kenntnis der
-    fuer die Ruecknahmeentscheidung erheblichen Tatsachen durch den zustaendigen Amtstraeger,
-    nicht blosse Zweifel oder ein bloss geaeusserter Verdacht.
+  back: Die Jahresfrist des § 48 Abs. 4 VwVfG gilt fuer die Faelle des § 48 Abs. 2
+    S. 3 Nr. 2 und 3 VwVfG sowie fuer sonstige nachtraeglich bekannt gewordene ruecknahmebegruendende
+    Tatsachen - die Ruecknahme ist dann nur innerhalb eines Jahres seit dem Zeitpunkt
+    zulaessig, in dem die Behoerde von den Tatsachen Kenntnis erlangt hat, die die
+    Ruecknahme des rechtswidrigen Verwaltungsakts rechtfertigen. Fuer den Fall des
+    § 48 Abs. 2 S. 3 Nr. 1 VwVfG (arglistige Taeuschung, Drohung oder Bestechung)
+    gilt die Jahresfrist dagegen gerade NICHT (§ 48 Abs. 4 S. 2 VwVfG) - die Ruecknahme
+    ist dort zeitlich unbefristet moeglich. Massgeblich ist im Uebrigen die vollstaendige
+    Kenntnis der fuer die Ruecknahmeentscheidung erheblichen Tatsachen durch den zustaendigen
+    Amtstraeger, nicht blosse Zweifel oder ein bloss geaeusserter Verdacht.
   norms:
   - § 48 Abs. 4 VwVfG
+  - § 48 Abs. 2 S. 3 VwVfG
   quellen:
   - VwVfG, amtliche Fassung
   stand: 2026-09
@@ -179,8 +183,10 @@ schemata:
     - label: '2. Sonstige begünstigende VA: nur Ausgleichsanspruch nach § 48 Abs.
         3 VwVfG'
   - label: III. Jahresfrist, § 48 Abs. 4 VwVfG
-    hinweis: Nur relevant bei nachtraeglich bekannt gewordenen Tatsachen bzw. Faellen
-      des § 48 Abs. 2 S. 3 Nr. 1-3 VwVfG.
+    hinweis: Gilt bei nachtraeglich bekannt gewordenen Tatsachen und in den Faellen
+      des § 48 Abs. 2 S. 3 Nr. 2, 3 VwVfG. Im Fall der Nr. 1 (arglistige Taeuschung,
+      Drohung, Bestechung) gilt die Jahresfrist nach § 48 Abs. 4 S. 2 VwVfG gerade
+      nicht - Ruecknahme dort zeitlich unbefristet moeglich.
   - label: IV. Ermessen, § 40 VwVfG
     hinweis: '''Kann''-Vorschrift; Ermessensreduzierung auf Null bei ueberwiegendem
       oeffentlichen Interesse pruefen.'
@@ -261,6 +267,8 @@ faelle:
       keywords:
       - '48'
       - rechtswidrig
+      card_slugs:
+      - or-vwvfg-rw-ruecknahme-voraussetzungen
     - id: p2
       label: Anwendbarkeit des § 48 Abs. 2 VwVfG wegen Geldleistung erkannt
       weight: 1.5
@@ -270,6 +278,8 @@ faelle:
       keywords:
       - Geldleistung
       - Abs. 2
+      card_slugs:
+      - or-vwvfg-rw-vertrauensschutz-abs2
     - id: p3
       label: Vertrauensbetaetigung durch Verbrauch der Foerdersumme (Disposition)
         benannt
@@ -279,6 +289,8 @@ faelle:
       - Vertrauensbetaetigung
       - Disposition
       - verbraucht
+      card_slugs:
+      - or-vwvfg-rw-vertrauensschutz-abs2
     - id: p4
       label: Kein Ausschlussgrund nach § 48 Abs. 2 S. 3 VwVfG, da U weder taeuschte
         noch grob fahrlaessig handelte
@@ -288,6 +300,8 @@ faelle:
       - kein Ausschlussgrund
       - grob fahrlaessig
       - Fehler der Behoerde
+      card_slugs:
+      - or-vwvfg-rw-vertrauensschutz-abs2
     - id: p5
       label: Jahresfrist des § 48 Abs. 4 VwVfG gewahrt (Kenntnis erst Dezember 2025)
       weight: 2.0
@@ -295,6 +309,8 @@ faelle:
       keywords:
       - Jahresfrist
       - Kenntnis
+      card_slugs:
+      - or-vwvfg-rw-jahresfrist-abs4
     - id: p6
       label: 'Ergebnis: Ruecknahme wegen schutzwuerdigen Vertrauens unzulaessig'
       weight: 1.0

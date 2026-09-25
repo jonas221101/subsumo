@@ -230,6 +230,8 @@ faelle:
       - Kollektivunfriedlichkeit
       - friedliche Mehrheit
       - Schutzbereich eroeffnet
+      card_slugs:
+      - or-gr-art8-friedlich-ohne-waffen
     - id: p2
       label: Eingriff durch die Aufloesung bejaht
       weight: 1.0
@@ -237,6 +239,8 @@ faelle:
       keywords:
       - Eingriff
       - Aufloesung
+      card_slugs:
+      - or-gr-eingriff
     - id: p3
       label: Brokdorf-Massstab (ultima ratio, unmittelbare Gefaehrdung, Gesamtwuerdigung)
         korrekt benannt und angewendet
@@ -247,6 +251,8 @@ faelle:
       - ultima ratio
       - Gesamtwuerdigung
       - unmittelbare Gefaehrdung
+      card_slugs:
+      - or-gr-art8-brokdorf-grundsaetze
     - id: p4
       label: Erkenntnis, dass mildere Mittel (gezieltes Einschreiten gegen Einzelne)
         vorrangig gewesen waeren
@@ -256,6 +262,8 @@ faelle:
       - mildere Mittel
       - gezieltes Einschreiten
       - Einzelne
+      card_slugs:
+      - or-gr-art8-brokdorf-grundsaetze
     - id: p5
       label: Kooperationsgrundsatz als zusaetzliches Argument gegen die Rechtmaessigkeit
         herangezogen
@@ -264,6 +272,8 @@ faelle:
       keywords:
       - Kooperation
       - Dialog
+      card_slugs:
+      - or-gr-art8-brokdorf-grundsaetze
     - id: p6
       label: 'Ergebnis: Aufloesung nicht mit Art. 8 Abs. 1 GG vereinbar'
       weight: 1.0

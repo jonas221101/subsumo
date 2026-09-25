@@ -31,7 +31,7 @@ class Settings(BaseSettings):
     access_token_ttl_minutes: int = 60 * 24 * 7
 
     # IP-basiertes Rate-Limit fuer /auth/login und /auth/register
-    # (docs/26-projektreview-sub254.md Abschnitt 3.2): bremst Credential-
+    # (docs/31-projektreview-sub254.md Abschnitt 3.2): bremst Credential-
     # Stuffing und Massen-Registrierung aus einer Quelle.
     auth_rate_limit_max_requests: int = 20
     auth_rate_limit_window_seconds: float = 60.0
