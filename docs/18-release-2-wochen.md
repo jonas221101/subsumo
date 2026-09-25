@@ -252,6 +252,30 @@ Klausurrelevanz-Stufe P1 und das Einfrieren am 25.09.
 > Nutzerentscheidung — nicht ein Mengenproblem, und die G3-Regel „Release mit
 > Ist-Menge" deckt sie nicht ab.
 
+> **Nachtrag 25.09.2026 — G3 ist entschieden, nicht erfüllt.** Die im
+> vorigen Absatz beschriebene Nutzerentscheidung ist gefallen
+> ([SUB-225](/SUB/issues/SUB-225), Interaktion `f754f609`): **Release ohne
+> menschliche Stichprobe, Gate bewusst ausgesetzt.**
+>
+> Damit ist G3 aufgelöst — aber über die beiden Hälften auf unterschiedlichen
+> Wegen, und das sollte man beim Lesen auseinanderhalten:
+>
+> | G3-Hälfte | Auflösung |
+> |---|---|
+> | „180 Karten geprüft und gemerged" | **Erfüllt durch Nachweis.** Neu ausgezählt auf `main` am 25.09.: **446 Karten**, 60 Themen, 64 Schemata, 60 Fälle, 0 Fehler (die 446 statt der oben genannten 444 stammen aus den Karten-Nachträgen SUB-283/284/285 und SUB-305) |
+> | „keine offenen Redaktionsfunde" | **Erfüllt durch Entscheidung, nicht durch Prüfung.** Die menschliche Stichprobe entfällt für v1.0 |
+>
+> Das Restrisiko dieser Aussetzung ist in
+> [`docs/17-release-readiness.md`](17-release-readiness.md) Abschnitt 7.1
+> ausgeschrieben — Kern: **Normzitate gehen inhaltlich ungeprüft live**, weil
+> das deterministische Gate nur Existenz und Form prüft und der Norm-Explorer
+> (M2) noch nicht existiert. Das vorbereitete Prüfmaterial
+> (`docs/26-content-stichprobe.md`) bleibt für den Nachlauf nach dem Launch
+> gültig.
+>
+> **G3 gilt damit als passiert.** Der Notausgang „Release mit Ist-Menge" wird
+> nicht gebraucht: Die Menge ist 2,5-fach erfüllt.
+
 ---
 
 ## 5. Die fünf harten Gates

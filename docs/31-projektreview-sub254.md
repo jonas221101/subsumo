@@ -326,11 +326,13 @@ Implementierung (Ticket in Abschnitt 7).
 
 ## 8. Offene Punkte, die nur der Auftraggeber entscheiden kann
 
-1. **Werbebudget.** `docs/19-kosten-preis-budget.md` Abschnitt 6 setzt „kein
-   Werbebudget" fest, und `docs/15-go-to-market.md` schließt bezahlte
-   Reichweite deshalb ausdrücklich aus. Der Auftrag verlangt jetzt ein
-   Werbekonzept. Ob damit weiterhin rein organisch gemeint ist oder ob Budget
-   bereitsteht, ändert das Konzept grundlegend.
+1. **Werbebudget — beantwortet.** Der Auftraggeber hat die Rückfrage auf
+   SUB-254 (Interaktion `65179b93-68de-4e49-b2a8-3852889ad7fc`, Frage
+   `werbebudget`) am 2026-09-25T05:52Z beantwortet: „Klein: bis ca. 500
+   EUR/Monat" — ein zielgruppengenauer Testkanal, keine Breite.
+   `docs/19-kosten-preis-budget.md` Abschnitt 6 und
+   `docs/30-werbekonzept-erstkunden.md` Abschnitt 5 sind entsprechend
+   aktualisiert; `docs/15-go-to-market.md` bleibt organisch als Hauptkanal.
 2. **Anwaltsfragen** aus `docs/17` Abschnitt 1 (siehe 6) — **beantwortet**
    (Interaktion `65179b93-68de-4e49-b2a8-3852889ad7fc`, 25.09.2026, 05:52 UTC):
    kein Anwalt, Start mit den vorhandenen Texten. Das getragene Risiko steht
