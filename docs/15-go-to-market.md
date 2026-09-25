@@ -4,10 +4,14 @@
 > [Release-Roadmap](/SUB/issues/SUB-39#document-plan). Randbedingung aus dem
 > Auftrag: ein kleiner, schrumpfender Markt (116.760 Jurastudierende,
 > Studienanfängerzahlen seit WS 2018/19 rückläufig — `docs/14-marktanalyse.md`
-> Abschnitt 1.1) und ein entsprechend kleines Budget
-> (`docs/19-kosten-preis-budget.md` Abschnitt 6: kein Werbebudget vorgesehen).
-> Bezahlte Reichweite ist damit keine Option, die hier gegen organische
-> Kanäle abgewogen wird — sie ist ausgeschlossen, siehe Abschnitt 5.
+> Abschnitt 1.1) und ein kleines Werbebudget (Antwort auf die SUB-254-
+> Rückfrage `werbebudget`, 2026-09-25: „klein, bis ca. 500 €/Monat", siehe
+> `docs/19-kosten-preis-budget.md` Abschnitt 6). Dieser Plan bleibt trotzdem
+> organisch: Der freigegebene Betrag trägt einen einzelnen
+> zielgruppengenauen Testkanal, keine breite bezahlte Kampagne — dieser
+> Testkanal steht in `docs/30-werbekonzept-erstkunden.md` Abschnitt 5, nicht
+> hier. Bezahlte Reichweite in der Breite bleibt hier ausgeschlossen, siehe
+> Abschnitt 5.
 >
 > **Eingänge:** Positionierung und Preisempfehlung aus
 > `docs/14-marktanalyse.md` Abschnitt 3/4, Kostenrahmen aus
@@ -357,14 +361,16 @@ befüllbar ist.
 ## 5. Was bewusst nicht gemacht wird
 
 1. **Performance-Marketing auf Verdacht** (bezahlte Anzeigen ohne
-   vorherigen Nachweis, dass ein Kanal konvertiert). Begründung:
-   `docs/19-kosten-preis-budget.md` Abschnitt 6 weist explizit **0 €** für
-   Werbung/Agentur/bezahlte Reichweite aus — das ist keine
-   Marketing-Zurückhaltung, sondern eine bereits getroffene
-   Budgetentscheidung. Selbst mit Budget wäre der Rücklauf in einem Markt
-   von 116.760 potenziellen Nutzer:innen mit sinkenden Anfängerzahlen
-   (`docs/14-marktanalyse.md` Abschnitt 1.1) schwer zu rechtfertigen, bevor
-   ein organischer Kanal überhaupt Konversionsdaten geliefert hat.
+   vorherigen Nachweis, dass ein Kanal konvertiert) **in der Breite**.
+   Begründung: Der Rücklauf in einem Markt von 116.760 potenziellen
+   Nutzer:innen mit sinkenden Anfängerzahlen (`docs/14-marktanalyse.md`
+   Abschnitt 1.1) ist schwer zu rechtfertigen, bevor ein organischer Kanal
+   überhaupt Konversionsdaten geliefert hat — das gilt unabhängig vom
+   Budget. Das kleine Werbebudget aus der Antwort auf die SUB-254-Rückfrage
+   (`werbebudget`, ≈ 500 €/Monat, `docs/19-kosten-preis-budget.md`
+   Abschnitt 6) ändert daran nichts: Es deckt einen einzelnen, eng
+   zielgruppengenauen Testkanal (`docs/30-werbekonzept-erstkunden.md`
+   Abschnitt 5), keine Kampagne auf Verdacht in der Breite.
 2. **Influencer ohne fachliche Deckung.** Reichweite ohne juristische
    Fachkompetenz widerspricht der Positionierung aus
    `docs/14-marktanalyse.md` Abschnitt 3 („Verzahnung mit demselben Karten-
