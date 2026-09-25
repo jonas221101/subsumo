@@ -38,6 +38,21 @@ cards:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
   stand: 2026-09
+- slug: zr-at-anfechtung-erklaerungsirrtum
+  type: definition
+  front: 'Definiere: Erklaerungsirrtum, § 119 Abs. 1 Var. 2 BGB'
+  back: Ein Erklaerungsirrtum liegt vor, wenn der Erklaerende schon die von ihm
+    abgegebene Erklaerungshandlung nicht so vornehmen wollte, wie er sie tatsaechlich
+    vorgenommen hat - er verspricht, verschreibt oder vertippt sich, sodass die
+    abgegebene Erklaerung von seinem tatsaechlichen Willen abweicht. Anders als
+    beim Inhaltsirrtum (§ 119 Abs. 1 Var. 1 BGB) fallen hier Wille und Erklaerung
+    bereits auseinander - nicht erst deren Bedeutung oder Tragweite wird verkannt.
+  norms:
+  - § 119 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
 - slug: zr-at-anfechtung-eigenschaftsirrtum
   type: definition
   front: 'Definiere: Eigenschaftsirrtum, § 119 Abs. 2 BGB'
@@ -228,7 +243,7 @@ faelle:
       - Erklaerungsirrtum
       - '119'
       card_slugs:
-      - zr-at-anfechtung-inhaltsirrtum
+      - zr-at-anfechtung-erklaerungsirrtum
     - id: p3
       label: Abgrenzung zum Inhaltsirrtum bzw. zum unbeachtlichen Motivirrtum angesprochen
       weight: 1.0
