@@ -192,7 +192,9 @@ def _validate_input_field(spec: Any, where: str, errors: list[str]) -> None:
     name = spec.get("name")
     if name is not None and not (isinstance(name, str) and len(name) <= 40):
         errors.append(f"{where}.name: darf hoechstens 40 Zeichen haben")
-    if "source" in spec and spec["source"] not in INPUT_FIELD_SOURCES:
+    if "source" in spec and (
+        not isinstance(spec["source"], str) or spec["source"] not in INPUT_FIELD_SOURCES
+    ):
         errors.append(
             f"{where}.source: unbekannter Wert '{spec['source']}' - zulaessig sind "
             f"ausschliesslich strukturierte Referenzen ({', '.join(sorted(INPUT_FIELD_SOURCES))}). "
@@ -208,7 +210,9 @@ def _validate_output_field(spec: Any, where: str, errors: list[str]) -> None:
     name = spec.get("name")
     if name is not None and not (isinstance(name, str) and len(name) <= 40):
         errors.append(f"{where}.name: darf hoechstens 40 Zeichen haben")
-    if "type" in spec and spec["type"] not in OUTPUT_FIELD_TYPES:
+    if "type" in spec and (
+        not isinstance(spec["type"], str) or spec["type"] not in OUTPUT_FIELD_TYPES
+    ):
         errors.append(
             f"{where}.type: unbekannter Wert '{spec['type']}' "
             f"(erlaubt: {', '.join(sorted(OUTPUT_FIELD_TYPES))})"
@@ -241,7 +245,9 @@ def _validate_output_contract(contract: Any, errors: list[str]) -> None:
     _check_object(contract, ["render_as", "fields"], ["render_as", "fields"], where, errors)
     if not isinstance(contract, dict):
         return
-    if "render_as" in contract and contract["render_as"] not in RENDER_AS_VALUES:
+    if "render_as" in contract and (
+        not isinstance(contract["render_as"], str) or contract["render_as"] not in RENDER_AS_VALUES
+    ):
         errors.append(
             f"{where}.render_as: unbekannter Wert '{contract['render_as']}' "
             f"(erlaubt: {', '.join(sorted(RENDER_AS_VALUES))})"
@@ -330,7 +336,9 @@ def validate_tool_spec(spec: Any) -> ToolSpecValidation:
     ):
         errors.append("tool_spec.description: darf hoechstens 280 Zeichen haben")
 
-    if "area_scope" in spec and spec["area_scope"] not in AREA_SCOPE_VALUES:
+    if "area_scope" in spec and (
+        not isinstance(spec["area_scope"], str) or spec["area_scope"] not in AREA_SCOPE_VALUES
+    ):
         errors.append(
             f"tool_spec.area_scope: unbekannter Wert '{spec['area_scope']}' "
             f"(erlaubt: {', '.join(sorted(AREA_SCOPE_VALUES))})"
@@ -340,7 +348,9 @@ def validate_tool_spec(spec: Any) -> ToolSpecValidation:
     _validate_output_contract(spec.get("output_contract"), errors)
     _validate_code(spec.get("code"), errors)
 
-    if "runtime" in spec and spec["runtime"] not in RUNTIME_VALUES:
+    if "runtime" in spec and (
+        not isinstance(spec["runtime"], str) or spec["runtime"] not in RUNTIME_VALUES
+    ):
         errors.append(
             f"tool_spec.runtime: unbekannter Wert '{spec['runtime']}' "
             f"(erlaubt: {', '.join(sorted(RUNTIME_VALUES))})"

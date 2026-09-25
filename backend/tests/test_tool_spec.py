@@ -164,3 +164,41 @@ def test_fehlendes_pflichtfeld_auf_wurzelebene_wird_abgelehnt():
     result = validate_tool_spec(bad)
     assert not result.ok
     assert any("runtime" in e and "Pflichtfelder fehlen" in e for e in result.errors)
+
+
+def test_area_scope_als_liste_wird_sauber_abgelehnt():
+    bad = spec(area_scope=["zivilrecht"])
+    result = validate_tool_spec(bad)
+    assert not result.ok
+    assert any("area_scope" in e for e in result.errors)
+
+
+def test_input_field_source_als_liste_wird_sauber_abgelehnt():
+    bad = spec()
+    bad["input_contract"]["fields"][0]["source"] = ["freitext-liste"]
+    result = validate_tool_spec(bad)
+    assert not result.ok
+    assert any("source" in e for e in result.errors)
+
+
+def test_output_field_type_als_liste_wird_sauber_abgelehnt():
+    bad = spec()
+    bad["output_contract"]["fields"][0]["type"] = ["number"]
+    result = validate_tool_spec(bad)
+    assert not result.ok
+    assert any("type" in e for e in result.errors)
+
+
+def test_render_as_als_liste_wird_sauber_abgelehnt():
+    bad = spec()
+    bad["output_contract"]["render_as"] = ["counter"]
+    result = validate_tool_spec(bad)
+    assert not result.ok
+    assert any("render_as" in e for e in result.errors)
+
+
+def test_runtime_als_liste_wird_sauber_abgelehnt():
+    bad = spec(runtime=["quickjs_sandboxed_v1"])
+    result = validate_tool_spec(bad)
+    assert not result.ok
+    assert any("runtime" in e for e in result.errors)
