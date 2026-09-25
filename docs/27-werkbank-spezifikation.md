@@ -1,12 +1,26 @@
-# Werkbank: Spezifikation KI-komponierter Lernwerkzeuge (SUB-259)
+# Werkbank: Spezifikation KI-generierter Lernwerkzeuge (SUB-259, neu gefasst durch SUB-308)
 
 > **Auftrag** ([SUB-259](/SUB/issues/SUB-259), Kind-Ticket zu
 > [SUB-254](/SUB/issues/SUB-254)): Spezifikation des in
-> `docs/31-projektreview-sub254.md` Abschnitt 5 bewerteten Features — **keine
-> Implementierung.** Ein Nutzer beschreibt ein Lernwerkzeug in eigenen Worten,
-> ein Modell komponiert es aus bestehenden Bausteinen, es steht dem Nutzer
-> sofort zur Verfügung, und der Vorschlag geht als Rückmeldung an dieses Board,
-> wo über den festen Einbau entschieden wird.
+> `docs/31-projektreview-sub254.md` Abschnitt 5 bewerteten Features. Ein
+> Nutzer beschreibt ein Lernwerkzeug in eigenen Worten, ein Modell generiert
+> dafür **echten, ausführbaren Code**, das Werkzeug steht dem Nutzer sofort
+> und **unübersehbar als Vorschlag gekennzeichnet** zur Verfügung, und
+> derselbe Vorschlag geht als Rückmeldung an dieses Board, wo über den festen
+> Einbau entschieden wird.
+>
+> **Neufassung durch [SUB-308](/SUB/issues/SUB-308):** Die Vorversion dieses
+> Dokuments (Stand SUB-259) hatte die Reichweite auf die Komposition aus 7
+> festen Bausteinen verengt — „kein frei programmierbares Programm und keine
+> KI-Codegenerierung". Der Auftraggeber hat diese Verengung in Interaktion
+> `8559c558-09b5-476d-979d-f5e36204559d` auf SUB-254 (beantwortet
+> 2026-09-25, `human_only`, die angebotene Bestätigungsoption „Ja, Lernwerkzeug
+> in der App ist die richtige Reichweite" wurde **nicht** gewählt)
+> ausdrücklich zurückgewiesen: *„Es geht genau um eine KI Codegenerierung. Der
+> kunde soll es klar als vorschlag gekennzeichnet bekommen."* Diese Fassung
+> ersetzt die Abschnitte 1–4, 6–8 der Vorversion vollständig. Abschnitt 5
+> (Rückkanal-Architektur) ist **unverändert** und bewusst nicht Gegenstand
+> dieser Neufassung — die dortige Detailkorrektur läuft separat als SUB-307.
 >
 > **Einordnung (nicht Gegenstand dieses Dokuments, siehe `docs/31` Abschnitt
 > 5.4):** nicht v1.0, frühestens v1.1, hinter demselben AVV-Gate wie die
@@ -14,60 +28,168 @@
 > `docs/23-llm-provider-avv.md`). v1.0 läuft mit `llm_provider=none`
 > (`docs/18-release-2-wochen.md` Abschnitt 2).
 >
-> **Leitplanke, die dieses Dokument nicht neu verhandelt:** *Die KI schreibt
-> keinen Code, sie füllt eine Spezifikation aus.* Der Client führt nur aus, was
-> als Bausteinaufruf bereits im Produkt existiert.
+> **Leitplanke dieser Neufassung:** Die KI generiert echten, ausführbaren
+> Code. Damit das nicht beliebige Codeausführung mit App- oder
+> Backend-Rechten bedeutet, läuft dieser Code ausschließlich in einer Sandbox
+> ohne jede Capability (Abschnitt 1) — das ist eine vom Host erzwungene
+> Eigenschaft der Ausführungsumgebung, keine Anweisung an das Modell.
 
 ---
 
-## 1. Bausteinliste
+## 1. Ausführungsmodell (Sicherheit)
 
-Jeder Baustein ist ein bereits vorhandener, getesteter Codepfad. Die Werkbank
-fügt keine neue Fachlogik hinzu — sie parametrisiert Bestehendes. Das ist die
-strukturelle Voraussetzung für Abschnitt 3 (Codeausführung) und Abschnitt 2 der
-RDG-Auflösung: kein Baustein nimmt einen freien Sachverhalt als Eingabe an.
+### 1.1 Entscheidung
 
-| # | Baustein-ID | Bestehender Codepfad | Was er tut | Was er *nicht* kann |
-|---|---|---|---|---|
-| 1 | `kartenfilter_drill` | `app/services/srs.py` (FSRS), `app/services/limits.py` (`due_cards_quota_remaining`) | Filtert fällige/neue Karten nach `Area`/`Topic.slug`/`Card.type` und startet eine Drill-Session | Erzeugt keine neuen Karten, keine neuen Inhalte |
-| 2 | `schema_checkliste` | `Schema`-Modell (`backend/app/models.py:172`), `Schema.steps` | Zeigt ein bestehendes Prüfungsschema als abhakbare Checkliste | Erzeugt kein neues Schema, ändert `Schema.steps` nicht |
-| 3 | `fallauswahl` | `Case`-Modell (`backend/app/models.py:188`), `CaseAccess` | Wählt aus der **bestehenden** Fall-Datenbank nach `Area`/`Topic.slug`/`difficulty` aus | Nimmt **keinen** vom Nutzer beschriebenen Sachverhalt an — nur Auswahlkriterien über vorhandene `Case.slug`-Einträge mit hinterlegtem `expectation` |
-| 4 | `timer_pacing` | `app/services/planner.py` (Tagesbudget, `MAX_REVIEW_SHARE`) | Blendet einen Countdown/Pacing-Hinweis über eine Lernsession, abgeleitet aus dem bestehenden Tagesbudget | Ändert den Planungsalgorithmus nicht, keine neue Zeitlogik |
-| 5 | `struktur_check` | `app/services/gutachten.py` (regelbasiert, offline, ohne LLM) | Lässt den bestehenden Obersatz/Definition/Subsumtion/Ergebnis-Check auf einen frei eingegebenen **Gutachtentext** laufen, mit wählbarer Strenge | Bewertet **keinen Sachverhalt inhaltlich** — reine Stilanalyse, wie im Original; siehe Abschnitt 2 unten |
-| 6 | `planaenderung` | `app/services/planner.py` (`TopicInput.relevance`) | Erlaubt Gewichtung einzelner `Topic.slug` (Relevanz 1–5) innerhalb des bestehenden Plans | Ändert `exam_date`/`daily_minutes` nicht, kein neuer Planalgorithmus |
-| 7 | `glossar` | `Card` mit `type=CardType.DEFINITION` (`backend/app/models.py:42`) | Nachschlage-Ansicht über bestehende Definitionskarten, gefiltert nach `Area`/`Topic.slug` | Erzeugt keine neuen Definitionen; es gibt **kein eigenständiges Glossar-Modul** — dieser Baustein ist ein zweiter Blickwinkel auf `Card.type=definition` |
+**Variante (b)** aus der Bewertung in 1.2: Das Modell generiert echten Code
+für eine **reine Funktion** `execute(input) -> output`. Ausführung geschieht
+ausschließlich im Flutter-Client, in einer Sandbox mit einer **leeren**
+Capability-Liste: kein Netzwerk, keine Datei, kein Platform-Channel, kein
+Zugriff auf Session/Token/Secure-Storage, kein Zugriff auf andere
+App-Services. Die einzige Schnittstelle zur Außenwelt ist ein einzelnes
+JSON-Argument, das der Host vor dem Aufruf befüllt, und ein einzelner
+JSON-Rückgabewert, den der Host gegen den `output_contract` (Abschnitt 3.1)
+validiert, bevor er ihn über **hosteigene** UI-Komponenten rendert — nie als
+HTML/DOM-Injektion, nie als roher Widget-Baum aus generiertem Code.
 
-Die Liste ist **fest und geschlossen**. Ein achter Baustein erfordert eine
-Erweiterung dieser Spezifikation, nicht eine Modellentscheidung zur Laufzeit.
+Konkrete Runtime:
 
-### 1.1 Warum `struktur_check` (Baustein 5) keine RDG-Ausnahme ist
+- **Mobile/Desktop:** ein eingebetteter QuickJS-Interpreter (z. B. über das
+  `flutter_js`-Paket oder eine direkte QuickJS-FFI-Bindung), pro Ausführung
+  neu instanziiert und danach verworfen — kein Zustand überlebt einen Aufruf.
+- **Web:** Flutter Web läuft im Browser; dort läuft der generierte Code in
+  einem eigenen, same-origin `<iframe sandbox="allow-scripts">` **ohne**
+  `allow-same-origin` — das Iframe hat keinen Zugriff auf Cookies,
+  `localStorage` oder das DOM der Host-Seite. Kommunikation ausschließlich
+  über `postMessage` mit demselben JSON-Vertrag wie auf Mobile/Desktop.
+- Aktuell ist im Repository keine JS-/WebView-Engine eingebunden
+  (`app/pubspec.yaml` vermerkt für G2 explizit „kein In-App-WebView nötig");
+  die Integration ist Ticket 5 (Abschnitt 7), nicht Gegenstand dieser
+  Spezifikation.
 
-`gutachten.py` bewertet nur *Stil* (Obersatz-Verschachtelung,
-Urteilsstil-Verstöße, Normzitat-Form) — nie den *Inhalt* eines Sachverhalts.
-Das gilt unverändert, ob der Text aus einer bestehenden `Case`-Bearbeitung oder
-aus einem Werkbank-Tool kommt. Ein Nutzer kann in `struktur_check` zwar freien
-Text eingeben, aber die Ausgabe ist strukturell unfähig, eine reale
-Rechtsfrage zu beantworten — sie zählt Sätze und Verschachtelungstiefe, nicht
-Rechtsfolgen. Damit bleibt die Abgrenzung aus `docs/06-recht-compliance.md`
-Abschnitt 2 gewahrt.
+Ressourcengrenzen, vom Host erzwungen, nicht vom generierten Code:
+
+- Wall-Clock-Timeout **300 ms** je Aufruf; überschritten → Interpreter/Iframe
+  wird hart beendet.
+- Interpreter-Schrittzähler als Rückfallgrenze gegen Endlosschleifen, die
+  innerhalb von 300 ms viele kurze Yield-Punkte erzeugen.
+- Speicherobergrenze der Engine-Instanz (QuickJS-Konfigurationsparameter bzw.
+  das Prozesslimit des Browsers für das Iframe).
+- Ausgabegröße begrenzt auf `resource_limits.max_output_bytes` (Abschnitt
+  3.1).
+- Grenze überschritten → Stufe D im Fehlerpfad (Abschnitt 4.3), Werkzeug wird
+  **nicht** erzeugt, feste Nutzermeldung.
+
+### 1.2 Bewertete Varianten
+
+| Variante | Kern | Bewertung |
+|---|---|---|
+| (a) Deklarativ generiert, festes Interpreter-Gerippe führt aus | Modell erzeugt nur Daten/Konfiguration, keinen Code | **Verworfen.** Das ist strukturell die vom Auftraggeber zurückgewiesene enge Variante (Vorversion) — Ausdrucksstärke reicht nicht für „Es geht genau um eine KI Codegenerierung." |
+| (b) Echter generierter Code in einer Sandbox ohne Capabilities | siehe 1.1 | **Gewählt.** Erfüllt den Auftrag wörtlich; das Risiko wird durch das Fehlen von Capabilities begrenzt, nicht durch Vertrauen in den generierten Code. Kosten: nichttriviale Sandbox-Integration auf der Flutter-Seite (Ticket 5); Ausdrucksstärke bleibt an den Eingabe-/Ausgabevertrag gebunden (Abschnitt 1.3, 3.1) |
+| (c) Generiert, aber erst nach menschlicher Prüfung lauffähig | Board/Mensch schaltet frei, bevor der Nutzer es nutzen kann | **Verworfen als alleiniges Modell.** Widerspricht der in SUB-254 verlangten sofortigen Verfügbarkeit für den Kunden. Die vorgesehene menschliche Prüfung bleibt bestehen — aber als **Rückkanal-Entscheidung über den dauerhaften Einbau** (Abschnitt 5, unverändert), nicht als Voraussetzung fürs erste Ausführen. Die „Vorschlag"-Kennzeichnung (Abschnitt 3.2) übernimmt die Erwartungssteuerung, die (c) sonst über Verzögerung erreicht hätte |
+| (zur Einordnung, nicht ernsthaft erwogen) Nativer Code / voller Plattformzugriff | — | Das wäre beliebige Codeausführung mit App-Rechten — exakt das im Auftrag benannte Risiko |
+
+### 1.3 Eingabekontrakt bleibt beschränkt — auch wenn der Code es nicht mehr ist
+
+Die Vorversion verhinderte RDG-Verstöße dadurch, dass jeder der 7 Bausteine
+*strukturell* nur Stil, nie Inhalt bewerten konnte. Bei echter
+Codegenerierung trägt dieses Argument nicht mehr — generierter Code kann
+grundsätzlich beliebige Logik über seine Eingabe ausführen. Die Linie
+verschiebt sich deshalb auf die **Eingabe**: Der Host reicht dem generierten
+Code ausschließlich strukturierte Referenzen (bestehende Content-IDs, Enums,
+Zahlen, den eigenen SRS-/Planungsstand des Nutzers) — **niemals** ein
+Freitextfeld, über das ein realer Sachverhalt hineingelangen könnte
+(Eingabekontrakt in Abschnitt 3.1, RDG-Einordnung in Abschnitt 2). Diese
+Beschränkung entscheidet der Host beim Befüllen des Eingabeobjekts, nicht das
+Modell beim Schreiben des Codes — sie gilt deshalb unabhängig davon, ob sich
+das Modell an eine Anweisung hält.
 
 ---
 
-## 2. JSON-Schema-Entwurf: Tool-Spec
+## 2. RDG-Grenze bei generierter Logik
 
-Analog zum bestehenden Validierungsprinzip aus `backend/scripts/validate_content.py`
-/ `app/services/content.py`: **was nicht im Schema steht, existiert nicht.**
-`additionalProperties: false` auf jeder Ebene, jeder Slug wird serverseitig
-gegen die lebende Content-/DB-Basis re-aufgelöst (Abschnitt 4).
+`docs/06-recht-compliance.md` Abschnitt 2 zieht die Grenze über die
+**Eingabe**: „Freitext-Bewertung ist immer an eine `case_id` mit hinterlegtem
+Erwartungshorizont gebunden — es gibt keinen Endpunkt ‚bewerte diesen
+beliebigen Sachverhalt'." Das gilt für die Werkbank unverändert, jetzt aber
+ohne die strukturelle Rückendeckung der festen Bausteine (Abschnitt 1.3).
+
+### 2.1 Zulässige vs. unzulässige generierte Werkzeugarten
+
+- **Zulässig:** Werkzeuge, deren Eingabe ausschließlich aus Referenzen auf
+  bestehenden Lern-/Übungscontent (Card-, Case-, Schema-IDs, `Area`/`Topic`,
+  Zahlenparameter) oder auf den eigenen, bereits gespeicherten Lernstand des
+  Nutzers (SRS-Zustand, Planungsdaten) besteht — inhaltlich dieselbe Grenze
+  wie die 7 Bausteine der Vorversion, jetzt als Eingabe-*Vertrag*
+  (Abschnitt 3.1) statt als feste Bausteinliste.
+- **Unzulässig:** jedes Werkzeug, dessen Beschreibung oder Eingabe einen
+  **eigenen, realen, noch nicht in der Fall-Datenbank hinterlegten
+  Sachverhalt** des Nutzers voraussetzt (das Vermieterkündigungs-Beispiel aus
+  `docs/31` Abschnitt 5.1) — unabhängig davon, wie das Werkzeug diesen
+  Sachverhalt anschließend verarbeiten würde.
+- Die Trennlinie verläuft dabei eine Stufe früher als im bestehenden Produkt:
+  `struktur_check` durfte Freitext annehmen, weil seine *Ausgabe* strukturell
+  nie eine Rechtsfolge behaupten konnte (Abschnitt 1.1 der Vorversion). Bei
+  generiertem Code lässt sich das nicht mehr über die Ausgabe absichern —
+  deshalb entscheidet jetzt die Eingabe.
+
+### 2.2 Durchsetzungspunkt
+
+Zwei voneinander unabhängige Ebenen, nicht eine:
+
+1. **Intent-Check** (Abschnitt 4.1): erkennt am Beschreibungstext, ob ein
+   realer Sachverhalt zur Bewertung angeboten wird, und lehnt vor jedem
+   Generierungsaufruf ab.
+2. **Eingabekontrakt-Durchsetzung** (Abschnitt 1.3, 3.1): selbst wenn Stufe 1
+   einen Fall übersieht (Modellfehler, geschickte Umschreibung), kann der
+   generierte Code strukturell keinen realen Sachverhalt entgegennehmen, weil
+   der Host niemals ein Freitextfeld für „eigener Fall" in das Eingabeobjekt
+   einspeist. Diese Ebene gilt unabhängig vom Modellverhalten.
+
+### 2.3 Verhältnis zur „Vorschlag"-Kennzeichnung
+
+Die Kennzeichnung aus Abschnitt 3.2 **ergänzt** die Abgrenzung, **ersetzt**
+sie nicht: Sie steuert die Erwartung des Nutzers (kein geprüftes
+Subsumo-Feature), verhindert aber für sich genommen nicht, dass ein Werkzeug
+faktisch eine Rechtsdienstleistung erbringt. Beide Mechanismen gelten
+parallel — 2.1/2.2 entscheiden, *ob* ein Werkzeug entstehen darf, Abschnitt
+3.2 entscheidet, *wie* es dem Nutzer gegenübertritt.
+
+### 2.4 Offene Anwaltsfrage
+
+Ob ein Werkzeug, dessen Eingabe strikt auf zulässige Referenzen (2.1)
+beschränkt ist, dessen vom Modell frei entworfene **Logik** aber neue, im
+referenzierten Content nicht hinterlegte rechtliche Schlussfolgerungen
+synthetisiert (Beispiel: ein generiertes Werkzeug, das aus einer
+`Case`-Referenz eine eigene Lösung „berechnet", statt nur vorhandene
+`Card`-/`Schema`-Inhalte anzuzeigen), noch innerhalb der Lernhilfe-Grenze aus
+`docs/06` Abschnitt 2 liegt oder eine zusätzliche Laufzeitprüfung braucht.
+Eingetragen in `docs/17-release-readiness.md` Abschnitt 1.
+
+---
+
+## 3. Tool-Artefakt: JSON-Schema und „Als Vorschlag gekennzeichnet"
+
+### 3.1 JSON-Schema-Entwurf: Tool-Spec v2
+
+Analog zum bestehenden Validierungsprinzip aus
+`backend/scripts/validate_content.py` / `app/services/content.py`: **was
+nicht im Schema steht, existiert nicht.** `additionalProperties: false` auf
+jeder Ebene. `input_field.source` ist bewusst eine geschlossene Enum-Liste
+**ohne** einen Freitext-/„eigener Sachverhalt"-Wert — das ist die
+Schema-gewordene Fassung von Abschnitt 1.3/2.1.
 
 ```json
 {
-  "$id": "subsumo.werkbank.tool_spec.v1",
+  "$id": "subsumo.werkbank.tool_spec.v2",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema", "tool_id", "title", "area_scope", "blocks", "created_at", "prompt_fingerprint"],
+  "required": [
+    "schema", "tool_id", "title", "area_scope", "input_contract",
+    "output_contract", "code", "runtime", "resource_limits",
+    "labeling", "created_at", "prompt_fingerprint"
+  ],
   "properties": {
-    "schema": { "const": "subsumo.werkbank.tool_spec.v1" },
+    "schema": { "const": "subsumo.werkbank.tool_spec.v2" },
     "tool_id": { "type": "string", "format": "uuid" },
     "title": { "type": "string", "minLength": 1, "maxLength": 80 },
     "description": { "type": "string", "maxLength": 280 },
@@ -75,133 +197,93 @@ gegen die lebende Content-/DB-Basis re-aufgelöst (Abschnitt 4).
       "type": "string",
       "enum": ["zivilrecht", "strafrecht", "oeffentliches-recht", "alle"]
     },
-    "blocks": {
-      "type": "array",
-      "minItems": 1,
-      "maxItems": 4,
-      "items": { "$ref": "#/$defs/block" }
+    "input_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fields"],
+      "properties": {
+        "fields": {
+          "type": "array",
+          "maxItems": 10,
+          "items": { "$ref": "#/$defs/input_field" }
+        }
+      }
     },
-    "layout": { "type": "string", "enum": ["sequence", "tabs"], "default": "sequence" },
+    "output_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["render_as", "fields"],
+      "properties": {
+        "render_as": {
+          "type": "string",
+          "enum": ["list", "checklist", "text_block", "counter", "tabs"]
+        },
+        "fields": {
+          "type": "array",
+          "maxItems": 10,
+          "items": { "$ref": "#/$defs/output_field" }
+        }
+      }
+    },
+    "code": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["language", "source", "source_sha256"],
+      "properties": {
+        "language": { "const": "javascript_es2020" },
+        "source": { "type": "string", "maxLength": 20000 },
+        "source_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "runtime": {
+      "type": "string",
+      "enum": ["quickjs_sandboxed_v1", "web_iframe_sandboxed_v1"]
+    },
+    "resource_limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["timeout_ms", "max_output_bytes"],
+      "properties": {
+        "timeout_ms": { "const": 300 },
+        "max_output_bytes": { "const": 8192 }
+      }
+    },
+    "labeling": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["is_suggestion", "badge_text"],
+      "properties": {
+        "is_suggestion": { "const": true },
+        "badge_text": { "const": "KI-Vorschlag · ungeprüft" }
+      }
+    },
     "created_at": { "type": "string", "format": "date-time" },
     "prompt_fingerprint": { "type": "string", "maxLength": 64 }
   },
   "$defs": {
-    "block": {
+    "input_field": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["block", "params"],
-      "oneOf": [
-        { "$ref": "#/$defs/kartenfilter_drill" },
-        { "$ref": "#/$defs/schema_checkliste" },
-        { "$ref": "#/$defs/fallauswahl" },
-        { "$ref": "#/$defs/timer_pacing" },
-        { "$ref": "#/$defs/struktur_check" },
-        { "$ref": "#/$defs/planaenderung" },
-        { "$ref": "#/$defs/glossar" }
-      ]
-    },
-    "kartenfilter_drill": {
+      "required": ["name", "source"],
       "properties": {
-        "block": { "const": "kartenfilter_drill" },
-        "params": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "topic_slugs": { "type": "array", "items": { "type": "string" }, "maxItems": 10 },
-            "card_types": {
-              "type": "array",
-              "items": { "enum": ["definition", "schema_step", "streitstand", "norm", "rechtsprechung"] }
-            },
-            "max_cards": { "type": "integer", "minimum": 5, "maximum": 50, "default": 20 }
-          }
+        "name": { "type": "string", "maxLength": 40 },
+        "source": {
+          "type": "string",
+          "enum": [
+            "topic_slug_ref", "case_slug_ref", "schema_slug_ref",
+            "card_type_enum", "difficulty_int", "count_int",
+            "own_srs_state", "own_plan_state"
+          ]
         }
       }
     },
-    "schema_checkliste": {
+    "output_field": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "type"],
       "properties": {
-        "block": { "const": "schema_checkliste" },
-        "params": {
-          "type": "object",
-          "additionalProperties": false,
-          "required": ["schema_slug"],
-          "properties": { "schema_slug": { "type": "string" } }
-        }
-      }
-    },
-    "fallauswahl": {
-      "properties": {
-        "block": { "const": "fallauswahl" },
-        "params": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "topic_slugs": { "type": "array", "items": { "type": "string" }, "maxItems": 10 },
-            "difficulty_max": { "type": "integer", "minimum": 1, "maximum": 5, "default": 3 },
-            "count": { "type": "integer", "minimum": 1, "maximum": 10, "default": 3 }
-          }
-        }
-      }
-    },
-    "timer_pacing": {
-      "properties": {
-        "block": { "const": "timer_pacing" },
-        "params": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "minutes_per_session": { "type": "integer", "minimum": 5, "maximum": 120, "default": 25 },
-            "reviews_first": { "type": "boolean", "default": true }
-          }
-        }
-      }
-    },
-    "struktur_check": {
-      "properties": {
-        "block": { "const": "struktur_check" },
-        "params": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "strictness": { "enum": ["locker", "standard", "streng"], "default": "standard" }
-          }
-        }
-      }
-    },
-    "planaenderung": {
-      "properties": {
-        "block": { "const": "planaenderung" },
-        "params": {
-          "type": "object",
-          "additionalProperties": false,
-          "required": ["relevance_overrides"],
-          "properties": {
-            "relevance_overrides": {
-              "type": "array",
-              "maxItems": 20,
-              "items": {
-                "type": "object",
-                "additionalProperties": false,
-                "required": ["topic_slug", "relevance"],
-                "properties": {
-                  "topic_slug": { "type": "string" },
-                  "relevance": { "type": "integer", "minimum": 1, "maximum": 5 }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "glossar": {
-      "properties": {
-        "block": { "const": "glossar" },
-        "params": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "topic_slugs": { "type": "array", "items": { "type": "string" }, "maxItems": 10 }
-          }
-        }
+        "name": { "type": "string", "maxLength": 40 },
+        "type": { "type": "string", "enum": ["string", "number", "boolean", "string_array"] }
       }
     }
   }
@@ -210,71 +292,108 @@ gegen die lebende Content-/DB-Basis re-aufgelöst (Abschnitt 4).
 
 `tool_id` wird serverseitig vergeben, nicht vom Modell — verhindert
 Kollisionen und macht die Zuordnung zu `created_by_user_id` (DB-seitig, nicht
-im Spec selbst, siehe Abschnitt 6) eindeutig. `title`/`description` sind
-Nutzer-zugewandter Text, den das Modell aus der Beschreibung ableitet, aber
-**nicht** Träger von Fachlogik — sie werden nirgends ausgeführt.
+im Spec selbst, siehe Abschnitt 6) eindeutig. `code.source_sha256` erlaubt dem
+Rückkanal (Abschnitt 5, unverändert), den generierten Code eindeutig zu
+referenzieren, ohne ihn zwingend vollständig zu übertragen. `labeling` ist
+bewusst Teil des persistierten Artefakts, nicht ein clientseitiges Flag (siehe
+3.2).
+
+### 3.2 Kennzeichnung zum Kunden
+
+- Jedes generierte Werkzeug trägt eine **dauerhafte, nicht schließbare**
+  Kennzeichnung im eigenen Kopfbereich mit dem Text aus `labeling.badge_text`
+  (Abschnitt 3.1) — analog zur bestehenden Praxis, KI-Bewertungen im Produkt
+  als Lernhilfe zu kennzeichnen (`docs/06` Abschnitt 2).
+- Die Kennzeichnung ist Teil des persistierten Tool-Spec, nicht ein
+  clientseitiger Zustand — sie überlebt App-Neustart und jeden erneuten
+  Aufruf desselben Werkzeugs, weil `is_suggestion`/`badge_text` bei jeder
+  Anzeige aus demselben gespeicherten Artefakt gelesen werden.
+- Geteilte Ansichten existieren im Produkt aktuell nicht (kein
+  Share-Mechanismus im Repository); falls künftig eingeführt, gilt dieselbe
+  Kennzeichnungspflicht unverändert für jede Ansicht, in der das Werkzeug
+  erscheint.
+- Exakter Wortlaut ist bereits im Schema festgelegt (`badge_text` als
+  `const`); Platzierung (Screen-Header vs. Badge-Widget) ist
+  Entwurfsentscheidung des UI-Developers (Ticket 4b, Abschnitt 7).
+
+### 3.3 Kennzeichnung zum Auftraggeber
+
+Unverändert aus der Vorversion — der Vorschlag läuft über den Rückkanal
+(Abschnitt 5, hier nicht angefasst) an dieses Board, wo über den festen
+Einbau entschieden wird (SUB-254 wörtlich: „Die Idee soll dann hierher an
+einen Agenten rückgekoppelt werden und dann kann ich entscheiden, ob es fest
+verbaut wird."). Der Proposal-Payload aus Abschnitt 5.2 muss dafür jetzt
+`code.source_sha256` und einen Code-Auszug statt nur eine Bausteinstruktur
+transportieren (Ticket 7, Abschnitt 7) — die Zustellmechanik selbst ändert
+sich nicht.
 
 ---
 
-## 3. Promptvertrag
+## 4. Promptvertrag und Validierungs-/Fehlerpfad
 
 **Zwei Modellaufrufe, nicht einer** — das hält die RDG-Grenze auch bei einem
 Modellfehler strukturell, nicht nur durch eine Anweisung.
 
-### 3.1 Stufe 1 — Intent-Check (vor jedem Kompositionsaufruf)
+### 4.1 Stufe 1 — Intent-Check (vor jedem Generierungsaufruf)
 
 - Eingabe: die Nutzerbeschreibung, ohne weiteren Kontext.
-- Aufgabe: klassifizieren, ob die Beschreibung ein **Lernwerkzeug aus
-  Baustein 1–7** beschreibt, oder ob sie die Bewertung eines **realen,
-  konkreten Sachverhalts** verlangt (das Vermieterkündigungs-Beispiel aus
-  `docs/31` Abschnitt 5.1).
+- Aufgabe: klassifizieren, ob die Beschreibung ein **Lernwerkzeug innerhalb
+  des Eingabekontrakts** (Abschnitt 2.1, 3.1) beschreibt, oder ob sie die
+  Bewertung eines **realen, konkreten Sachverhalts** verlangt (das
+  Vermieterkündigungs-Beispiel aus `docs/31` Abschnitt 5.1).
 - Ausgabe: `{"allow": bool, "reason": string}` — festes, kleines Schema, kein
   Freitext im Erfolgsfall.
-- Bei `allow=false`: kein Kompositionsaufruf, keine Kosten für Stufe 2, feste
-  Nutzermeldung (Abschnitt 5.1).
-- Diese Stufe ist bewusst **zusätzlich** zur strukturellen Grenze aus
-  Abschnitt 1.1 — sie fängt Fälle ab, in denen der Nutzer versucht, über die
-  Baustein-*Beschreibung* selbst (nicht über einen Baustein-Parameter) eine
-  Rechtsdienstleistung zu erschleichen, z. B. durch eine sehr lange, Fall-artige
-  Freitexteingabe als „Werkzeug-Wunsch".
+- Bei `allow=false`: kein Generierungsaufruf, keine Kosten für Stufe 2, feste
+  Nutzermeldung (Stufe A unten).
+- Diese Stufe ist **zusätzlich** zur Eingabekontrakt-Durchsetzung aus
+  Abschnitt 1.3/2.2 — sie fängt Fälle ab, in denen der Nutzer versucht, über
+  die Werkzeug-*Beschreibung* selbst (nicht über einen Eingabeparameter) eine
+  Rechtsdienstleistung zu erschleichen.
 
-### 3.2 Stufe 2 — Komposition (nur bei `allow=true`)
+### 4.2 Stufe 2 — Generierungsaufruf (nur bei `allow=true`)
 
-- Systemprompt enthält: die Bausteinliste aus Abschnitt 1 mit Kurzbeschreibung
-  und Parametergrenzen, sowie eine vom Server vorab geladene, begrenzte Liste
-  gültiger `topic_slug`/`schema_slug`-Werte für das vom Nutzer genannte
+- Systemprompt enthält: die zulässigen `input_field.source`-Werte (Abschnitt
+  3.1) mit Kurzbeschreibung, die Sicherheitsgrenzen der Sandbox (leere
+  Capability-Liste, 300-ms-Budget, Abschnitt 1.1) als feste Vorgabe an den
+  generierten Code, 2–3 versionierte Few-Shot-Beispiele bereits gültiger
+  Tool-Specs (inkl. `code.source`), sowie eine vom Server vorab geladene,
+  begrenzte Liste gültiger Slug-Werte für das vom Nutzer genannte
   Rechtsgebiet (nicht der gesamte Content-Bestand — Kontextgröße und
   Halluzinationsfläche bleiben klein).
 - Der Systemprompt ist **versioniert**; `prompt_fingerprint` im Tool-Spec ist
   ein Hash dieser Version — dasselbe Prinzip wie das `schema`-Feld in
-  `backend/mission_control/messages.py` (`subsumo.message.v1`), das
-  Nachrichtenformat und -herkunft auditierbar macht.
-- Ausgabe: **ausschließlich** ein JSON-Objekt nach Abschnitt 2, erzwungen über
-  Tool-Calling/Structured-Output des Modells, nicht über Prompt-Disziplin
-  allein.
-- Das Modell erzeugt **keine** neuen `topic_slug`/`schema_slug`-Werte — nur
-  Referenzen auf die im Kontext übergebene Liste. Das schließt aus, dass ein
-  Halluzinationsfehler zu einem *gültig aussehenden, aber falschen* Slug führt,
-  der erst in Abschnitt 4 auffällt statt gar nicht erst möglich zu sein.
+  `backend/mission_control/messages.py` (`subsumo.message.v1`).
+- Ausgabe: **ausschließlich** ein JSON-Objekt nach Abschnitt 3.1, erzwungen
+  über Tool-Calling/Structured-Output des Modells, nicht über
+  Prompt-Disziplin allein.
+- Das Modell erzeugt **keine** neuen Slug-Werte — nur Referenzen auf die im
+  Kontext übergebene Liste, und **keine** neuen `input_field.source`-Werte
+  außerhalb der Enum aus Abschnitt 3.1.
 
----
+### 4.3 Validierungsstufen A–E
 
-## 4. Validierungs- und Fehlerpfad
-
-Drei unabhängige Prüfstufen, jede mit definiertem Fehlerverhalten — keine
-stille Reparatur, kein „wahrscheinlich richtig":
+Fünf unabhängige Prüfstufen (zwei mehr als in der Vorversion, weil
+generierter Code mehr Fehlerklassen hat als eine reine
+Bausteinkomposition), jede mit definiertem Fehlerverhalten — keine stille
+Reparatur, kein „wahrscheinlich richtig":
 
 | Stufe | Prüfung | Bei Fehlschlag |
 |---|---|---|
-| A | Intent-Check (Abschnitt 3.1) | Feste Nutzermeldung „Beschreibt bitte ein Lernwerkzeug, keine Bewertung eines echten Falls." Kein weiterer Aufruf, kein Tool-Spec, kein Eintrag im Rückkanal. |
-| B | JSON-Schema-Validierung (Abschnitt 2), serverseitig, nach demselben Muster wie `load_content()`/`validate_content.py` | Ein gebundener Retry: Validierungsfehler wird dem Modell als Kontext zurückgegeben, maximal **ein** weiterer Kompositionsaufruf. Schlägt auch der fehl → feste Nutzermeldung „Konnte mit den vorhandenen Bausteinen nicht abgebildet werden.", kein Tool-Spec. |
-| C | Slug-Re-Auflösung: jeder `topic_slug`/`schema_slug` wird nach der Schema-Validierung erneut gegen die **aktuelle** DB/Content-Basis geprüft (Race zwischen Prompt-Kontext-Ladezeit und Antwort ist unwahrscheinlich, aber nicht ausgeschlossen) | Slug ungültig → wie Stufe B (ein Retry, dann fester Fehler). Slug gültig, aber Ergebnismenge leer (z. B. Topic ohne fällige Karten) → Tool wird **trotzdem erzeugt**, aber sofort sichtbar als „aktuell leer" markiert, nicht verschwiegen. |
+| A | Intent-Check (4.1) | Feste Nutzermeldung „Beschreibt bitte ein Lernwerkzeug, keine Bewertung eines echten Falls." Kein weiterer Aufruf, kein Tool-Spec, kein Eintrag im Rückkanal. |
+| B | JSON-Schema-Validierung des Tool-Spec (3.1), serverseitig, nach demselben Muster wie `load_content()`/`validate_content.py` | Gebundener Reparatur-Retry (siehe unten). |
+| C | Statische Prüfung von `code.source`: valides JavaScript, keine verbotenen Konstrukte (`eval`, dynamischer `import`, `Function`-Konstruktor) als zusätzliche Verteidigungsebene, obwohl die Sandbox dafür ohnehin keine Capabilities bereitstellt | Gebundener Reparatur-Retry. |
+| D | Sandbox-Probelauf mit synthetischen, aus `input_contract` abgeleiteten Testeingaben, innerhalb des Timeout-/Speicherbudgets aus Abschnitt 1.1: `execute()` wirft nicht, Ausgabe entspricht `output_contract`, Budget nicht überschritten | Gebundener Reparatur-Retry. |
+| E | Slug-Re-Auflösung: jede referenzierte Slug-Ressource wird bei **jedem tatsächlichen Aufruf** (nicht nur bei Erstellung) erneut gegen die aktuelle DB/Content-Basis geprüft | Slug ungültig → feste Nutzermeldung „Aktuell nicht verfügbar". Slug gültig, aber Ergebnismenge leer (z. B. Topic ohne fällige Karten) → Tool wird **trotzdem ausgeführt**, aber sichtbar als „aktuell leer" markiert, nicht verschwiegen. |
 
-**Kein Baustein führt etwas aus, was nicht bereits als getesteter Codepfad
-existiert** (Abschnitt 1) — das ist die vierte, strukturelle Prüfstufe, die
-gar nicht als Fehlerfall auftreten kann, weil der Client nur die sieben
-Bausteinaufrufe kennt und alles andere im JSON-Schema (Abschnitt 2) gar nicht
-repräsentierbar ist.
+**Reparatur-Retry (B/C/D):** Validierungs-/Compile-/Laufzeitfehler wird dem
+Modell als Kontext zurückgegeben, maximal **zwei** weitere
+Generierungsaufrufe (mehr als der eine Retry der Vorversion, weil
+Codefehler — Syntax, Laufzeitfehler im Probelauf — erfahrungsgemäß mehr
+Versuche brauchen als eine reine Schema-Verletzung). Schlagen auch diese
+fehl → feste Nutzermeldung „Konnte mit den vorhandenen Möglichkeiten nicht
+umgesetzt werden.", kein Tool-Spec, kein Eintrag im Rückkanal. Fehlgeschlagene
+Versuche zählen nicht gegen das Erstellungs-Kontingent, aber gegen ein
+separates Versuchslimit (Abschnitt 6.2).
 
 ---
 
@@ -343,39 +462,53 @@ entschieden.
 ### 6.1 Kosten je Erstellung
 
 Nach der Rechenmethode aus `docs/19-kosten-preis-budget.md` Abschnitt 5
-(Sonnet-Listenpreise 3 $/Mio Eingabe, 15 $/Mio Ausgabe):
+(Sonnet-Listenpreise 3 $/Mio Eingabe, 15 $/Mio Ausgabe). Codegenerierung
+braucht einen deutlich größeren Systemprompt (Sandbox-API-Referenz,
+Sicherheits-/Eingabekontrakt-Vorgaben, Few-Shot-Beispiele mit Code) und
+erzeugt eine deutlich größere Ausgabe (JavaScript-Quelltext statt eines
+kleinen Struktur-JSON):
 
 | Aufruf | Eingabe (Token) | Ausgabe (Token) | Kosten |
 |---|---|---|---|
-| Intent-Check (3.1) | ≈ 150 (nur Nutzertext) | ≈ 20 (`allow`/`reason`) | ≈ 0,0005 $ |
-| Komposition (3.2) | ≈ 2.000–3.000 (Systemprompt + Bausteinliste + Slug-Katalog) | ≈ 300–600 (Tool-Spec-JSON) | ≈ 0,011–0,018 $ |
-| **Summe pro Erstellung** | | | **≈ 0,012–0,019 $ ≈ 0,01–0,02 €** |
+| Intent-Check (4.1) | ≈ 150 (nur Nutzertext) | ≈ 20 (`allow`/`reason`) | ≈ 0,0005 $ |
+| Generierungsaufruf (4.2) | ≈ 6.000–9.000 (Systemprompt + Sandbox-/Sicherheitsvorgaben + Few-Shot-Beispiele + Slug-Katalog) | ≈ 800–1.500 (Tool-Spec-JSON inkl. `code.source`, geschätzt 40–80 Zeilen JS) | ≈ 0,03–0,05 € |
+| **Summe pro Erstellung (kein Retry)** | | | **≈ 0,03–0,05 €** |
 
-Mit einem gebundenen Retry (Abschnitt 4, Stufe B) im ungünstigsten Fall
-**doppelt**: ≈ 0,02–0,04 €/Erstellung. Das liegt **unter** der
-0,09-€/Korrektur-Rechnung aus `docs/19` Abschnitt 5, weil die Ausgabe
-strukturiertes JSON statt Fließtext ist. Wie dort: **vorläufige Rechnung, vor
-Preisfestsetzung an echten Erstellungen zu messen** (`docs/19` fordert das für
-die Korrektur ausdrücklich; dieselbe Auflage gilt hier).
+Mit den bis zu **zwei** gebundenen Reparatur-Retries aus Abschnitt 4.3 im
+ungünstigsten Fall **verdreifacht**: ≈ **0,09–0,14 €/Erstellung**. Das ist im
+Regelfall 2–3× teurer als die 0,01–0,02 €/Erstellung der reinen
+Bausteinkomposition (Vorversion), im Reparatur-Fall bis zu einer
+Größenordnung teurer als deren typischer Fall — die im Auftrag angekündigte
+Kostensteigerung durch „lange Ausgaben, Retries, ggf. Reparaturschleifen"
+bestätigt sich damit. Wie bei der KI-Korrektur (`docs/19` Abschnitt 5):
+**vorläufige Rechnung, vor Preisfestsetzung an echten Erstellungen zu
+messen.**
 
 ### 6.2 Kontingent
 
 Nach demselben Muster wie `app/services/limits.py` (`upgrade_required`-Fehlerform,
 Zählung tatsächlich erfolgter Aktionen statt Client-Parameter):
 
-- **Free:** 1 Werkzeug-Erstellung pro Kalendermonat (Kennenlern-Kontingent).
+- **Free:** 1 Werkzeug-Erstellung pro Kalendermonat (Kennenlern-Kontingent,
+  unverändert aus der Vorversion — der Absolutbetrag bleibt klein, auch im
+  Reparatur-Fall).
 - **Pro:** 5 Erstellungen pro Kalendermonat, danach **gedrosselt statt
-  abgerechnet** — exakt die Formulierung, die `docs/19` Abschnitt 5 für die
-  KI-Korrektur festlegt, hier konsistent übernommen.
-- Gezählt werden **persistierte** Tool-Erstellungen (analog
-  `due_cards_quota_remaining`, das echte `Review`-Zeilen zählt, nicht den
-  Client-Parameter) — ein abgelehnter Intent-Check oder ein endgültig
-  fehlgeschlagener Kompositionsversuch (Abschnitt 4) zählt **nicht** gegen das
-  Kontingent, weil kein Tool entstanden ist.
-- **Nach der Erstellung: null weitere Modellnutzung.** Das Tool läuft über
-  bestehende, kostenlose Codepfade (Abschnitt 1) — das ist keine Annahme,
-  sondern die direkte Folge daraus, dass kein Baustein zur Laufzeit einen
-  Modellaufruf braucht.
+  abgerechnet** — dieselbe Formulierung wie in `docs/19` Abschnitt 5 für die
+  KI-Korrektur.
+- **Neu, wegen der breiteren Kostenstreuung aus 6.1:** ein von der
+  Erstellungs-Zählung **unabhängiges** Versuchslimit (Platzhalter: 10
+  Versuche/Tag, erfolgreiche und endgültig gescheiterte zusammen). Ohne diese
+  Grenze könnte ein Nutzer durch absichtlich fehlschlagende Beschreibungen
+  wiederholt die teureren Reparaturschleifen aus Abschnitt 4.3 auslösen, ohne
+  je gegen das Erstellungs-Kontingent zu zählen.
+- Gezählt werden für das **Erstellungs**-Kontingent weiterhin nur
+  **persistierte** Tool-Erstellungen (analog `due_cards_quota_remaining`) —
+  ein abgelehnter Intent-Check oder ein endgültig fehlgeschlagener
+  Generierungsversuch (Abschnitt 4.3) zählt dagegen nur gegen das neue
+  Versuchslimit, nicht gegen das Erstellungs-Kontingent.
+- **Nach der Erstellung: null weitere Modellnutzung.** Ausführung geschieht
+  ausschließlich lokal in der Sandbox (Abschnitt 1) — direkte Folge daraus,
+  dass kein Aufruf zur Laufzeit einen Modellaufruf braucht.
 - Konkrete Zahlen sind **Platzhalter**, wie in `docs/19` Abschnitt 5 verlangt
   vor Preisfestsetzung zu messen — kein Freigabegegenstand dieses Dokuments.
 
@@ -385,34 +518,43 @@ Zählung tatsächlich erfolgter Aktionen statt Client-Parameter):
 
 | # | Ticket | Rolle | Abhängigkeit |
 |---|---|---|---|
-| 1 | Bausteinkatalog-Endpunkt: serverseitig versionierte Liste gültiger `topic_slug`/`schema_slug`/Auswahlkriterien je Rechtsgebiet für den Promptkontext | Backend-Developer | Voraussetzung für 3 |
-| 2 | JSON-Schema + Validator für Tool-Spec (Abschnitt 2), nach dem Muster von `app/services/content.py` | Backend-Developer | keine |
-| 3 | Intent-Check + Promptvertrag + Kompositionsaufruf mit Retry-Grenze (Abschnitt 3, 4) | Backend-Developer | 1, 2, AVV/`llm_provider` |
-| 4 | Fehlerpfad-UI für die drei Fehlerklassen aus Abschnitt 4 | Frontend-Developer | 3 |
-| 5 | Client-Interpreter: die 7 Bausteine als Aufrufe auf bestehende Screens/Services verdrahten, kein neuer Codepfad | Frontend-Developer | 2 |
-| 6 | Kontingent + Zähler, Erweiterung von `limits.py` nach demselben Muster (Abschnitt 6.2) | Backend-Developer | keine |
-| 7 | Rückkanal: Proposal-Tabelle, Outbox-Zustellung, Klärung der Authentisierung mit dem Board-/Paperclip-Betreiber (Abschnitt 5.3) | Backend-Developer + Rückfrage | keine, aber blockiert auf externe Klärung |
+| 1 | Eingabekontrakt-Endpunkt: serverseitig versionierte Liste zulässiger `input_field.source`-Werte (Abschnitt 3.1) je Rechtsgebiet für den Generierungs-Kontext — ersetzt den Bausteinkatalog-Endpunkt der Vorversion | Backend-Developer | Voraussetzung für 3 |
+| 2 | JSON-Schema + Validator für Tool-Spec v2 (Abschnitt 3.1, inkl. `code`, `input_contract`, `output_contract`, `labeling`), nach dem Muster von `app/services/content.py` — ersetzt den Tool-Spec-Validator der Vorversion | Backend-Developer | keine |
+| 3 | Intent-Check + Promptvertrag + Generierungsaufruf mit gebundener Reparaturschleife (Abschnitt 4) | Backend-Developer | 1, 2, AVV/`llm_provider` |
+| 4a | Fehlerpfad-UI für die Fehlerklassen A–E aus Abschnitt 4.3 | Frontend-Developer | 3 |
+| 4b | Vorschlags-Kennzeichnung: dauerhaftes, nicht schließbares Badge (Abschnitt 3.2) auf jedem generierten Werkzeug | UI-Developer | 5 |
+| 5 | Sandbox-Runtime im Flutter-Client: QuickJS-Einbindung (Mobile/Desktop) und sandboxed Iframe (Web), leere Capability-Liste, Timeout-/Speicherdurchsetzung (Abschnitt 1.1) — ersetzt den Bausteinaufruf-Interpreter der Vorversion | Frontend-Developer | 2 |
+| 6 | Kontingent + separates Versuchslimit, Erweiterung von `limits.py` nach demselben Muster (Abschnitt 6.2) | Backend-Developer | keine |
+| 7 | Rückkanal: Proposal-Tabelle, Outbox-Zustellung, Klärung der Authentisierung mit dem Board-/Paperclip-Betreiber (Abschnitt 5.3) — Payload muss jetzt `code.source_sha256` und einen Code-Auszug statt nur eine Bausteinstruktur transportieren (Abschnitt 3.3) | Backend-Developer + Rückfrage | keine, aber blockiert auf externe Klärung |
 | 8 | Board-seitige Annahme/Ablehnung eines Vorschlags (fester Einbau ja/nein) — Interaktionsform mit dem Auftraggeber klären (neue Paperclip-Interaktion vs. eigene Ansicht) | Software-Planner + Auftraggeber | 7 |
+| 9 | Sandbox-Sicherheitsabnahme: Testsuite, die gezielt versucht, aus der Sandbox auszubrechen (Netzwerk-, Datei-, Storage-, Timing-Seitenkanal-Versuche); muss vor Rollout von Ticket 5 grün sein | Backend-Developer + Frontend-Developer | 5 |
 
-Reihenfolge: 1–2 können parallel zueinander laufen, 3 hängt an beiden, 7 kann
-unabhängig von 1–6 starten, weil die externe Klärung die längste Vorlaufzeit
-hat.
+Reihenfolge: 1–2 können parallel zueinander laufen, 3 hängt an beiden, 5 kann
+unabhängig von 1–3 starten, 9 ist das Abnahme-Gate für den Rollout von 5, 7
+kann unabhängig von 1–6 starten, weil die externe Klärung die längste
+Vorlaufzeit hat.
 
 ---
 
 ## 8. Offene Punkte — nicht Gegenstand dieser Spezifikation
 
-1. **Reichweitenfrage** („Tool" = Lernwerkzeug in der App, nicht frei
-   programmierbares Programm) — läuft als eigene Rückfrage auf SUB-254, nicht
-   hier wiederholt.
+1. **Reichweitenfrage — entschieden.** Der Auftraggeber hat in Interaktion
+   `8559c558` auf SUB-254 die enge Reichweite (nur Bausteinkomposition)
+   zurückgewiesen und echte, als Vorschlag gekennzeichnete Codegenerierung
+   verlangt. Diese Neufassung (SUB-308) setzt das um — kein offener Punkt
+   mehr.
 2. **Authentisierungsweg Backend → Board** (Abschnitt 5.3) — technische
    Klärung mit dem Paperclip-/Board-Betreiber, kein Punkt, den der
    Auftraggeber allein entscheiden kann.
-3. **Endgültige Kontingentzahlen** (Abschnitt 6.2) — Platzhalter bis zur
-   Messung, wie in `docs/19` für die KI-Korrektur bereits verlangt.
+3. **Endgültige Kontingent- und Versuchslimit-Zahlen** (Abschnitt 6.2) —
+   Platzhalter bis zur Messung an echten Erstellungen; die Kosten streuen
+   jetzt breiter als bei reiner Bausteinkomposition (Abschnitt 6.1).
 4. **Interaktionsform für Ticket 8** (Board-Interaktion vs. eigene
    In-App-Admin-Ansicht) — Entwurfsentscheidung, die erst nach Freigabe dieser
    Spezifikation sinnvoll getroffen wird.
+5. **RDG-Grenzfall bei generierter Logik über zulässigen Eingaben**
+   (Abschnitt 2.4) — offene Anwaltsfrage, eingetragen in
+   `docs/17-release-readiness.md` Abschnitt 1.
 
 ---
 
@@ -420,6 +562,8 @@ hat.
 
 - Bewertung und Bauplan (Ursprung dieses Tickets):
   `docs/31-projektreview-sub254.md` Abschnitt 5
+- Entscheidung zur Neufassung: Interaktion `8559c558-09b5-476d-979d-f5e36204559d`
+  auf SUB-254 (2026-09-25), Ticket SUB-308
 - RDG-Abgrenzung: `docs/06-recht-compliance.md` Abschnitt 2
 - Kostenrechnung-Methode: `docs/19-kosten-preis-budget.md` Abschnitt 5
 - AVV-Gate: `docs/17-release-readiness.md` Abschnitt 1, `docs/23-llm-provider-avv.md`
