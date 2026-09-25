@@ -438,22 +438,59 @@ nutzerseitig betrieben. Das Produkt-Backend ist kein Agent mit eigener
    dass jeder erste Prototyp-Versuch eines Nutzers das Board flutet, und passt
    zum Auftrag „die *Idee*, nicht jede Erstellung, soll rückgekoppelt werden".
 
-### 5.3 Ungeklärt — braucht Klärung mit dem Board-/Paperclip-Betreiber, nicht nur mit dem Auftraggeber
+### 5.3 Authentisierung Backend → Board — technisch geklärt (SUB-307), jetzt eine Risikoentscheidung
 
-Wie sich das Produkt-Backend gegenüber Paperclip **authentisiert**, ist offen:
+Geprüft gegen `GET /api/openapi.json` (529 Pfade) und live mit einem
+Agent-Token: Ein Board-API-Key (`POST /api/board-api-keys`) kennt **keinen
+Scope**. Der Request-Body nimmt ausschließlich `name`, `expiresAt`,
+`requestedCompanyId` — kein `scope`/`permission`/`issueId`/`readOnly`/`role`.
+Laut `x-paperclip-authorization` ist ein Board-API-Key ein Aktor der Klasse
+`board`, also derselbe, company-weite Aktortyp wie eine menschliche
+Board-Session — **breiter** als ein Agent-Token, nicht schmaler. Außerdem
+akzeptieren `GET`/`POST /api/board-api-keys` nur `BoardSessionAuth`/
+`BoardApiKeyAuth`; ein Agent kann so einen Key weder anlegen noch lesen (live
+verifiziert: Agent-Token auf `GET /api/board-api-keys` → `401 {"error":"Board
+authentication required"}`). Die im ursprünglichen Entwurf genannte
+„schmalste Lösung" — ein Company-Key mit Schreibrecht nur auf Kommentare
+eines einzelnen Zielissues — **existiert in der Paperclip-API nicht**.
 
-- Ein Company-weiter, nicht-agentengebundener API-Key mit Schreibrecht nur auf
-  Kommentare eines einzelnen Zielissues wäre die schmalste Lösung — ob
-  Paperclip einen solchen Scope kennt, ist technisch zu prüfen, nicht
-  anzunehmen.
-- Fallback, falls nicht: ein dedizierter, eigens dafür angelegter
-  Low-Privilege-Agent („Werkbank-Eingang"), dessen Bearer-Token das
-  Produkt-Backend als Secret hält und der nur Kommentare auf einem festen
-  Issue schreiben darf. Das erfordert einen synthetischen `run_id`-Ersatz oder
-  eine Klärung, ob `PaperclipClient` auch ohne echten Lauf mutieren kann.
+Real verfügbar sind drei Varianten:
 
-Dieser Punkt ist **Ticket 7** in Abschnitt 7, nicht in diesem Dokument
-entschieden.
+- **(a) Board-API-Key mit kurzem `expiresAt`, akzeptierter Blast-Radius.**
+  Einfachste Umsetzung. Kompromittierung des Produkt-Backends bedeutet vollen
+  Board-Schreibzugriff auf die ganze Company, nicht nur einen Issue-Thread —
+  einzige eingebaute Eindämmung ist die Ablauffrist.
+- **(b) Laufgebundener Low-Privilege-Agent.** `POST /api/issues/{id}/comments`
+  akzeptiert `AgentBearerAuth`, ein dedizierter „Werkbank-Eingang"-Agent
+  könnte also grundsätzlich schreiben. Aber Agent-Mutationen sind
+  laufgebunden: `backend/mission_control/client.py` wirft
+  `ValueError("PAPERCLIP_RUN_ID is required for mutations when
+  PAPERCLIP_AGENT_ID is set")`, und `X-Paperclip-Run-Id` ist auf dem
+  Comments-Endpunkt kein deklarierter Parameter — die Durchsetzung ist
+  serverseitig an einen echten Agentenlauf gebunden, den ein
+  Produkt-Backend-Request nicht hat. Ein synthetischer `run_id`-Ersatz ist in
+  der Spec nirgends dokumentiert; diese Variante braucht also entweder eine
+  Plattformänderung oder einen Trigger, der einen echten Lauf auslöst (siehe
+  (c)).
+- **(c) Kein automatischer Rückkanal vom Produkt-Backend — Zustellung über
+  einen bestehenden Agentenlauf.** Das Produkt-Backend hält **gar kein
+  Board-Secret**. Statt selbst gegen Paperclip zu mutieren, schreibt es
+  Vorschläge in eine eigene Warteschlange (Produkt-DB-Tabelle oder Datei,
+  konzeptionell wie `backend/mission_control/outbox.py`, ohne dass das
+  Backend `backend/mission_control/` importiert). Ein ohnehin laufender,
+  bestehender Agent — z. B. über eine selbst zugewiesene Routine — holt die
+  Warteschlange in seinem eigenen Lauf ab und stellt die Vorschläge per
+  eigenem `PaperclipClient` als Kommentar zu. Erfüllt den Auftrag aus SUB-254
+  unverändert und gibt dem Produkt-Backend keinerlei Board-Zugriff. Nachteil:
+  Zustellung folgt dem Takt der abholenden Routine statt Echtzeit — deckt
+  sich aber mit der ohnehin gebündelten, nicht sofortigen Zustellung aus
+  Abschnitt 5.2 Punkt 4, also kein zusätzlicher Kompromiss.
+
+Von den dreien ist **(c)** die einzige Variante, die dem Produkt-Backend kein
+Board-Secret gibt, und sie ist mit dem Rückkanal-Entwurf aus Abschnitt 5.2
+kompatibel. Die Wahl zwischen (a)/(b)/(c) ist aber eine
+**Risikoentscheidung** des Board-/Paperclip-Betreibers, keine offene
+technische Frage mehr — siehe Ticket 7 (Abschnitt 7) und Abschnitt 8 Punkt 2.
 
 ---
 
@@ -518,21 +555,21 @@ Zählung tatsächlich erfolgter Aktionen statt Client-Parameter):
 
 | # | Ticket | Rolle | Abhängigkeit |
 |---|---|---|---|
-| 1 | Eingabekontrakt-Endpunkt: serverseitig versionierte Liste zulässiger `input_field.source`-Werte (Abschnitt 3.1) je Rechtsgebiet für den Generierungs-Kontext — ersetzt den Bausteinkatalog-Endpunkt der Vorversion | Backend-Developer | Voraussetzung für 3 |
+| 1 | Slug-Katalog-Endpunkt: serverseitig versionierte, auf das vom Nutzer genannte Rechtsgebiet begrenzte Liste gültiger `topic_slug`/`schema_slug`-Werte für den Generierungs-Kontext (Abschnitt 4.2) — dient dem Systemprompt der Stufe 2, nicht dem statischen `input_field.source`-Enum aus Abschnitt 3.1, der bereits vollständig im JSON-Schema (Ticket 2) steht und keinen eigenen Endpunkt braucht | Backend-Developer | Voraussetzung für 3 |
 | 2 | JSON-Schema + Validator für Tool-Spec v2 (Abschnitt 3.1, inkl. `code`, `input_contract`, `output_contract`, `labeling`), nach dem Muster von `app/services/content.py` — ersetzt den Tool-Spec-Validator der Vorversion | Backend-Developer | keine |
 | 3 | Intent-Check + Promptvertrag + Generierungsaufruf mit gebundener Reparaturschleife (Abschnitt 4) | Backend-Developer | 1, 2, AVV/`llm_provider` |
 | 4a | Fehlerpfad-UI für die Fehlerklassen A–E aus Abschnitt 4.3 | Frontend-Developer | 3 |
 | 4b | Vorschlags-Kennzeichnung: dauerhaftes, nicht schließbares Badge (Abschnitt 3.2) auf jedem generierten Werkzeug | UI-Developer | 5 |
 | 5 | Sandbox-Runtime im Flutter-Client: QuickJS-Einbindung (Mobile/Desktop) und sandboxed Iframe (Web), leere Capability-Liste, Timeout-/Speicherdurchsetzung (Abschnitt 1.1) — ersetzt den Bausteinaufruf-Interpreter der Vorversion | Frontend-Developer | 2 |
 | 6 | Kontingent + separates Versuchslimit, Erweiterung von `limits.py` nach demselben Muster (Abschnitt 6.2) | Backend-Developer | keine |
-| 7 | Rückkanal: Proposal-Tabelle, Outbox-Zustellung, Klärung der Authentisierung mit dem Board-/Paperclip-Betreiber (Abschnitt 5.3) — Payload muss jetzt `code.source_sha256` und einen Code-Auszug statt nur eine Bausteinstruktur transportieren (Abschnitt 3.3) | Backend-Developer + Rückfrage | keine, aber blockiert auf externe Klärung |
+| 7 | Rückkanal: Proposal-Tabelle, Outbox-Zustellung. **Voraussetzung: Risikoentscheidung des Board-/Paperclip-Betreibers zwischen Variante (a)/(b)/(c) aus Abschnitt 5.3 muss vor Implementierung vorliegen** — keine der drei baut auf die dort ursprünglich angenommene, nicht existierende scope-enge Option. Payload muss jetzt `code.source_sha256` und einen Code-Auszug statt nur eine Bausteinstruktur transportieren (Abschnitt 3.3) | Backend-Developer + Rückfrage | keine, aber blockiert auf die Risikoentscheidung Abschnitt 5.3 |
 | 8 | Board-seitige Annahme/Ablehnung eines Vorschlags (fester Einbau ja/nein) — Interaktionsform mit dem Auftraggeber klären (neue Paperclip-Interaktion vs. eigene Ansicht) | Software-Planner + Auftraggeber | 7 |
 | 9 | Sandbox-Sicherheitsabnahme: Testsuite, die gezielt versucht, aus der Sandbox auszubrechen (Netzwerk-, Datei-, Storage-, Timing-Seitenkanal-Versuche); muss vor Rollout von Ticket 5 grün sein | Backend-Developer + Frontend-Developer | 5 |
 
 Reihenfolge: 1–2 können parallel zueinander laufen, 3 hängt an beiden, 5 kann
 unabhängig von 1–3 starten, 9 ist das Abnahme-Gate für den Rollout von 5, 7
-kann unabhängig von 1–6 starten, weil die externe Klärung die längste
-Vorlaufzeit hat.
+kann unabhängig von 1–6 starten, weil die Risikoentscheidung des Board-/
+Paperclip-Betreibers (Abschnitt 5.3) die längste Vorlaufzeit hat.
 
 ---
 
@@ -543,8 +580,13 @@ Vorlaufzeit hat.
    zurückgewiesen und echte, als Vorschlag gekennzeichnete Codegenerierung
    verlangt. Diese Neufassung (SUB-308) setzt das um — kein offener Punkt
    mehr.
-2. **Authentisierungsweg Backend → Board** (Abschnitt 5.3) — technische
-   Klärung mit dem Paperclip-/Board-Betreiber, kein Punkt, den der
+2. **Risikoentscheidung Authentisierungsweg Backend → Board** (Abschnitt 5.3)
+   — die technische Klärung ist abgeschlossen (SUB-307): keine der drei real
+   verfügbaren Varianten ist so eng wie die ursprünglich angenommene, nicht
+   existierende Option. Offen ist jetzt, ob der Board-/Paperclip-Betreiber den
+   company-weiten Blast-Radius von (a), den Plattform-/Trigger-Aufwand von (b)
+   oder die getaktete statt sofortige Zustellung von (c) trägt — eine
+   Entscheidung, kein weiterer Rechercheschritt, und kein Punkt, den der
    Auftraggeber allein entscheiden kann.
 3. **Endgültige Kontingent- und Versuchslimit-Zahlen** (Abschnitt 6.2) —
    Platzhalter bis zur Messung an echten Erstellungen; die Kosten streuen
