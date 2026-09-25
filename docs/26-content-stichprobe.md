@@ -1,5 +1,23 @@
 # 26 — Menschliche Content-Stichprobe (Prüfpaket zu G3)
 
+> **Status 25.09.2026: nicht durchgeführt. Für v1.0 bewusst ausgesetzt.**
+>
+> Die Entscheidung über diese Stichprobe ist gefallen
+> ([SUB-225](/SUB/issues/SUB-225), Interaktion `f754f609`): **Release ohne
+> menschliche Stichprobe.** Es wurde also **kein einziges Thema** nach dem
+> unten stehenden Raster geprüft; kein Thema trägt eine menschliche
+> Prüfsignatur. Wer dieses Dokument findet, soll es nicht für einen
+> Prüfnachweis halten — es ist ein unbenutztes Formular.
+>
+> Das Restrisiko der Aussetzung steht in
+> [`docs/17-release-readiness.md`](17-release-readiness.md) Abschnitt 7.1.
+>
+> **Das Material bleibt gültig und ist für den Nachlauf nach dem Launch
+> gedacht.** Es verfällt nicht: Auswahl, Prüfraster und Zitatlisten beziehen
+> sich auf Themen, die im Bestand bleiben. Wer die Stichprobe später nachholt,
+> fängt hier an und trägt das Ergebnis wie in Abschnitt 7 beschrieben in
+> `redaktion.geprueft_von` / `geprueft_am` ein.
+
 **Zweck.** Dieses Dokument ist das Arbeitsmaterial für die einzige noch offene
 Position des Content-Freezes: die menschliche Stichprobe nach
 `docs/08-ki-redaktion.md`. Es **schließt das Gate nicht** — das kann nur eine
