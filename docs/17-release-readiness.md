@@ -119,6 +119,65 @@ das mit T6/Preisentscheidung abzustimmen ist, nicht hier vorwegzunehmen.
 
 ---
 
+## 7. Content-Redaktion
+
+| Punkt | Verantwortlich | Aufwand | Phase | Status |
+|---|---|---|---|---|
+| Menge und Struktur des Lern-Contents | Content-Koordinator | — | C | **Erledigt.** Stand `main` 25.09.2026, ausgezählt mit `backend/scripts/validate_content.py`: **60 Themen, 446 Karten, 64 Schemata, 60 Fälle — 0 Fehler, 0 Warnungen.** P1 36/36 und P2 24/24 vollständig; P3 (14 Themen) liegt laut `docs/12-content-produktionsplan.md` bewusst nach v1.0. G3 verlangt 180 Karten |
+| Deterministisches Normzitat-Gate über den Bestand | Content-Prüfagent | — | C | **Erledigt, mit bekannter Grenze.** 57 der 60 Themen tragen `redaktion.normzitate_geprueft`; die 3 ohne Nachweis sind exakt die M0-Themen ohne `redaktion`-Block, die `docs/08-ki-redaktion.md` ausdrücklich als regulär redigiert einstuft. **Grenze:** Das Gate prüft Existenz und Form eines Zitats, nicht dessen inhaltliche Richtigkeit — ein real existierender Paragraph mit falsch behauptetem Inhalt passiert es unbemerkt. Es läuft zudem nur beim Erzeugen eines Themas, nicht über den Baum ([SUB-251](/SUB/issues/SUB-251), Nach-Release) |
+| **Menschliche Stichprobe nach `docs/08-ki-redaktion.md`** | Nutzer (Entscheidung getroffen) | 0 PT | C | **Bewusst ausgesetzt — offenes Risiko, siehe unten.** Nicht erledigt und nicht geplant nachzuholen vor v1.0 |
+
+### 7.1 Bewusst ausgesetztes Gate: die menschliche Stichprobe
+
+**Das ist kein offener Punkt, der noch abgearbeitet wird, sondern eine
+getroffene Entscheidung mit einem Restrisiko, das hier stehen bleibt, damit es
+nicht stillschweigend mitläuft.**
+
+Entscheidung vom **25.09.2026** auf [SUB-225](/SUB/issues/SUB-225)
+(Interaktion `f754f609`, vom Nutzer beantwortet): Option *„Release ohne
+menschliche Stichprobe, Gate bewusst ausgesetzt"*. Vorgelegt waren sechs
+Optionen, darunter eine verkleinerte Stichprobe und eine Verschiebung des
+Content-Freeze; gewählt wurde die Aussetzung.
+
+| | |
+|---|---|
+| **Was `docs/08-ki-redaktion.md` vorsieht** | Menschliche Stichprobe durch eine Person mit juristischer Vorbildung, ≥ 10 % der KI-erzeugten Inhalte, mind. 2 Themen je Rechtsgebiet (`docs/12` 4.2) |
+| **Was tatsächlich vorliegt** | **0 von 60 Themen** haben eine menschliche Prüfsignatur. Alle 57 KI-erzeugten Themen tragen `geprueft_von: reviewer-agent-v1` — ein LLM-Aufruf, keine Person |
+| **Material** | Vollständig vorbereitet in [`docs/26-content-stichprobe.md`](26-content-stichprobe.md): 6 stratifizierte P1-Themen, Zitatlisten, Prüfraster, Befundformular. Es fehlt ausschließlich die Durchführung |
+
+**Konkrete Folge, die aus dieser Entscheidung erwächst:**
+
+1. **Normzitate gehen inhaltlich ungeprüft live.** Das deterministische Gate
+   fängt erfundene Gesetzeskürzel und nicht existierende Paragraphennummern ab.
+   Es fängt **nicht** den Fall „§ 823 BGB existiert, der Karteninhalt behauptet
+   aber etwas, das dort nicht steht". Dafür war die menschliche Stichprobe die
+   einzige vorgesehene Instanz.
+2. **Es gibt derzeit keine zweite Instanz.** Der Norm-Explorer (M2), der
+   Zitate maschinell gegen den Gesetzestext prüfen soll, ist nicht gebaut.
+   Zwischen Produktion und Nutzer steht damit ausschließlich der LLM-Reviewer.
+3. **Die Fehlerklasse ist die für ein Lernprodukt teuerste.** Ein inhaltlich
+   falscher Rechtssatz wird von Lernenden per Konstruktion nicht erkannt — sie
+   benutzen das Produkt ja, um den richtigen erst zu lernen. Der Schaden fällt
+   nicht beim Release auf, sondern später und bei denen, die am wenigsten
+   gegenprüfen können.
+
+**Risikobegrenzung, die unabhängig davon greift:** Struktur-Gate (0 Fehler),
+LLM-Reviewer-Gate vor jedem Merge, deterministisches Normzitat-Gate für alle
+neu erzeugten Themen, der Hinweis „Lernhilfe, keine Rechtsberatung, keine
+Note", den jede Ausgabe des Struktur-Checks in der Anwendung selbst trägt
+(`docs/legal/02-agb.md` Abschnitt 2.1), und der Haftungsausschluss für
+Ergebnisse des Struktur-Checks (ebd. Abschnitt 8: „die Anwendung ist
+Lernhilfe, kein Garant für einen Lernerfolg"). Diese Maßnahmen adressieren
+Form und Haftung — **nicht** die fachliche Richtigkeit im Einzelfall.
+
+**Empfohlener Nachlauf (nicht release-blockierend, aber nicht ersatzlos
+streichbar):** Die vorbereitete Stichprobe nach dem Launch nachholen und
+[SUB-251](/SUB/issues/SUB-251) (Normzitat-Gate über den ganzen Baum in der CI)
+umsetzen. Beides kostet zusammen weniger als ein Personentag; der Wert liegt
+darin, dass die Fehlerklasse aus Punkt 1 dann überhaupt eine Instanz hat.
+
+---
+
 ## Zusammenfassung: Was Gate C und Gate D blockiert
 
 Nach `docs/03-roadmap.md` verlangt **Gate C** „keine offenen
@@ -136,3 +195,10 @@ Bezahlvorgang" plus vier Plattformen live. Der aktuell blockierende Kern:
    Umsatzsteuer-OSS, Haftungsklausel KI-Bewertung) brauchen externe Beratung
    und sind nicht durch Produktentscheidung allein lösbar — rechtzeitig vor
    Gate C beauftragen, Vorlaufzeit einplanen wie bei der T4-Kalibrierung.
+
+**Nicht blockierend, aber bewusst in Kauf genommen:** Die menschliche
+Content-Stichprobe ist per Nutzerentscheidung vom 25.09.2026 ausgesetzt
+(Abschnitt 7.1). Sie taucht hier nicht als Blocker auf, weil sie entschieden
+ist — nicht, weil sie erledigt ist. Wer diesen Abschnitt als „Restliste" liest,
+soll den Unterschied sehen: Der Content ist mengenmäßig und strukturell fertig,
+seine fachliche Richtigkeit ist im Einzelfall von keiner Person gegengeprüft.
