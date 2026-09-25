@@ -162,8 +162,11 @@ Content-Freeze; gewählt wurde die Aussetzung.
 
 **Risikobegrenzung, die unabhängig davon greift:** Struktur-Gate (0 Fehler),
 LLM-Reviewer-Gate vor jedem Merge, deterministisches Normzitat-Gate für alle
-neu erzeugten Themen, und der Haftungshinweis „Lernhilfe, keine verbindliche
-Auskunft" (`docs/legal/02-agb.md` Abschnitt 8). Diese Maßnahmen adressieren
+neu erzeugten Themen, der Hinweis „Lernhilfe, keine Rechtsberatung, keine
+Note", den jede Ausgabe des Struktur-Checks in der Anwendung selbst trägt
+(`docs/legal/02-agb.md` Abschnitt 2.1), und der Haftungsausschluss für
+Ergebnisse des Struktur-Checks (ebd. Abschnitt 8: „die Anwendung ist
+Lernhilfe, kein Garant für einen Lernerfolg"). Diese Maßnahmen adressieren
 Form und Haftung — **nicht** die fachliche Richtigkeit im Einzelfall.
 
 **Empfohlener Nachlauf (nicht release-blockierend, aber nicht ersatzlos
