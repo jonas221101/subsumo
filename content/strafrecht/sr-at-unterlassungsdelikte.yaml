@@ -1,0 +1,301 @@
+topic:
+  slug: sr-at-unterlassungsdelikte
+  area: strafrecht
+  title: Unterlassungsdelikte, § 13 StGB
+  parent: sr-at
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: sr-unterlassen-echte-unechte
+  type: definition
+  front: 'Definiere: Abgrenzung echte und unechte Unterlassungsdelikte'
+  back: Echte Unterlassungsdelikte sind im Gesetz als eigene Tatbestaende mit einer
+    allgemeinen, jedermann treffenden Handlungspflicht ausgestaltet (z. B. § 323c
+    StGB, unterlassene Hilfeleistung); eine besondere Garantenstellung ist nicht erforderlich.
+    Unechte Unterlassungsdelikte entstehen dadurch, dass ein im Gesetz als Begehungsdelikt
+    formulierter Erfolgstatbestand ueber § 13 StGB auf die Nichtvornahme einer gebotenen
+    Handlung erstreckt wird; hierfuer ist eine besondere Rechtspflicht zum Handeln
+    (Garantenstellung) erforderlich.
+  norms:
+  - § 13 StGB
+  quellen:
+  - § 13 StGB, amtlicher Wortlaut
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-unterlassen-voraussetzungen
+  type: norm
+  front: 'Definiere: die Voraussetzungen des unechten Unterlassungsdelikts, § 13 Abs.
+    1 StGB'
+  back: 'Voraussetzungen sind: Nichtabwendung des tatbestandsmaessigen Erfolgs; physisch-reale
+    Handlungsmoeglichkeit; hypothetische Kausalitaet (der Erfolg haette bei Vornahme
+    der gebotenen Handlung mit an Sicherheit grenzender Wahrscheinlichkeit vermieden
+    werden koennen); eine Garantenstellung; bei verhaltensgebundenen Delikten die
+    Entsprechung der Unterlassung mit der Tatbestandsverwirklichung durch Tun (§ 13
+    Abs. 1 StGB); sowie Vorsatz bzw. Fahrlaessigkeit.'
+  norms:
+  - § 13 Abs. 1 StGB
+  quellen:
+  - § 13 StGB, amtlicher Wortlaut
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-unterlassen-beschuetzergarant
+  type: definition
+  front: 'Definiere: Beschuetzergarant (Obhutsgarant)'
+  back: 'Ein Beschuetzergarant ist zum Schutz eines bestimmten Rechtsguts vor allen
+    drohenden Gefahren verpflichtet. Entstehungsgruende sind insbesondere: Gesetz
+    (z. B. elterliche Sorge, §§ 1626, 1631 BGB), enge natuerliche Verbundenheit (Ehe,
+    eheaehnliche Lebensgemeinschaft), die freiwillige Uebernahme einer Schutzfunktion
+    durch Vertrag oder tatsaechliches Handeln (z. B. Bergfuehrer, Babysitter) sowie
+    eine Gefahrengemeinschaft.'
+  norms:
+  - §§ 1626, 1631 BGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-unterlassen-ueberwachergarant
+  type: definition
+  front: 'Definiere: Ueberwachergarant'
+  back: 'Ein Ueberwachergarant ist verpflichtet, von einer ihm zugeordneten Gefahrenquelle
+    ausgehende Risiken fuer Dritte abzuwenden. Entstehungsgruende sind insbesondere:
+    vorangegangenes gefahrbegruendendes Tun (Ingerenz), die Verantwortlichkeit fuer
+    Sachen oder Anlagen (Verkehrssicherungspflichten) sowie die Aufsichtspflicht ueber
+    das Verhalten Dritter, etwa der Eltern fuer ihre minderjaehrigen Kinder.'
+  norms: []
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-unterlassen-ingerenz-pflichtwidrigkeit
+  type: streitstand
+  front: 'Streitstand: Erfordert die Garantenstellung aus Ingerenz ein pflichtwidriges
+    Vorverhalten?'
+  back: 'Problem: Ob jedes gefahrbegruendende Vorverhalten oder nur ein
+
+    pflichtwidriges eine Ingerenzgarantenstellung begruenden kann,
+
+    entscheidet ueber die Strafbarkeit wegen Unterlassens bei
+
+    rechtmaessigem Vorverhalten.
+
+
+    Frueher von der Rspr. und Teilen der Literatur vertretene Ansicht:
+
+    Jedes adaequat kausale, gefahrbegruendende Vorverhalten loest die
+
+    Ingerenzgarantenstellung aus - unabhaengig davon, ob es pflichtwidrig
+
+    war. Argument: Wer eine Gefahr gesetzt hat, ist am naechsten dran, sie
+
+    auch abzuwenden.
+
+
+    H.M. (heute auch von der Rspr. weitgehend uebernommen): Nur ein
+
+    pflichtwidriges (rechtswidriges) Vorverhalten begruendet eine
+
+    Garantenpflicht; rechtmaessiges Vorverhalten, etwa eine gerechtfertigte
+
+    Notwehrhandlung, loest keine Ingerenzhaftung aus. Argument: Andernfalls
+
+    wuerde derjenige, der sich rechtmaessig verhaelt, schlechter gestellt
+
+    als noetig - Wertungswiderspruch zur Rechtfertigung.
+
+
+    Konsequenz: Bei rechtmaessigem Vorverhalten (z. B. gerechtfertigter
+
+    Notwehr) ist eine Ingerenzgarantenstellung nach h.M. abzulehnen; bei
+
+    nur unklarer Pflichtwidrigkeit ist der Streit offenzulegen.
+
+    '
+  norms: []
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-unterlassen-entsprechungsklausel
+  type: norm
+  front: 'Definiere: Entsprechungsklausel, § 13 Abs. 1 StGB'
+  back: Bei Tatbestaenden, die nicht schlicht einen Erfolg voraussetzen, sondern besondere
+    Tatmodalitaeten des Taeterverhaltens verlangen (verhaltensgebundene Delikte, z.
+    B. Taeuschung beim Betrug, § 263 StGB), muss die Unterlassung zusaetzlich der
+    Verwirklichung des gesetzlichen Tatbestandes durch aktives Tun entsprechen (§
+    13 Abs. 1 a.E. StGB). Bei schlichten Erfolgsdelikten, bei denen das Gesetz nur
+    den Erfolg, nicht eine bestimmte Handlungsweise voraussetzt, hat die Entsprechungsklausel
+    regelmaessig keine eigenstaendige Bedeutung, da Tun und Unterlassen gleichermaessen
+    zum Erfolg fuehren koennen.
+  norms:
+  - § 13 Abs. 1 StGB
+  quellen:
+  - § 13 StGB, amtlicher Wortlaut
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-unterlassen-strafmilderung
+  type: norm
+  front: 'Definiere: die fakultative Strafmilderung, § 13 Abs. 2 StGB'
+  back: Bei einem unechten Unterlassungsdelikt kann das Gericht die Strafe gemaess
+    § 13 Abs. 2 i.V.m. § 49 Abs. 1 StGB mildern. Grund ist, dass das Unrecht des Unterlassens
+    im Regelfall als geringfuegiger gegenueber dem aktiven Herbeifuehren des Erfolgs
+    angesehen wird; zwingend ist die Milderung jedoch nicht, sie steht im Ermessen
+    des Gerichts.
+  norms:
+  - § 13 Abs. 2 StGB
+  - § 49 Abs. 1 StGB
+  quellen:
+  - § 13 StGB, amtlicher Wortlaut
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-unterlassungsdelikt
+  title: Pruefung des unechten Unterlassungsdelikts durch Unterlassen, § 13 StGB
+  norms:
+  - § 13 StGB
+  quellen:
+  - § 13 StGB, amtlicher Wortlaut
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: a) Eintritt des tatbestandsmaessigen Erfolgs
+      - label: b) Nichtvornahme der gebotenen Handlung trotz Handlungsmoeglichkeit
+      - label: c) Physisch-reale Handlungsmoeglichkeit
+      - label: 'd) Hypothetische Kausalitaet: Erfolg waere bei Vornahme der gebotenen
+          Handlung mit an Sicherheit grenzender Wahrscheinlichkeit entfallen'
+      - label: e) Garantenstellung (Beschuetzer- oder Ueberwachergarant)
+      - label: f) Entsprechung der Unterlassung mit der Tatbestandsverwirklichung
+          durch Tun, § 13 Abs. 1 StGB (bei verhaltensgebundenen Delikten)
+    - label: '2. Subjektiver Tatbestand: Vorsatz bzgl. aller objektiven Umstaende
+        einschliesslich der die Garantenstellung begruendenden Tatsachen'
+  - label: II. Rechtswidrigkeit
+  - label: III. Schuld
+  - label: IV. Fakultative Strafmilderung, § 13 Abs. 2 StGB
+  - label: V. Ergebnis
+faelle:
+- slug: sr-fall-untaetige-mutter-am-see
+  title: Die Rettungsweste
+  difficulty: 4
+  minutes: 50
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: M ist die Mutter des vierjaehrigen S. Bei einem gemeinsamen Ausflug an einen
+    See geraet S beim Spielen unbemerkt von anderen Badegaesten in tieferes Wasser
+    und droht zu ertrinken. M bemerkt dies als Einzige, erkennt die Lebensgefahr fuer
+    S klar und haette S - selbst erfahrene Schwimmerin - ohne eigenes Risiko retten
+    oder durch lautes Rufen sofort einen wenige Meter entfernten Rettungsschwimmer
+    auf die Situation aufmerksam machen koennen. Da M sich seit laengerem mit dem
+    Vater des S um das alleinige Sorgerecht streitet und sich erhofft, von den belastenden
+    Auseinandersetzungen befreit zu sein, wenn S nicht mehr lebt, unternimmt sie bewusst
+    nichts und sieht dem Ertrinken des S tatenlos zu. S ertrinkt. Haette M sofort
+    eingegriffen oder Hilfe herbeigerufen, waere S mit an Sicherheit grenzender Wahrscheinlichkeit
+    gerettet worden.
+  question: Hat sich M wegen Totschlags durch Unterlassen gemaess §§ 212 Abs. 1, 13
+    StGB strafbar gemacht?
+  steps:
+  - prompt: Ist der Tod des S ein tatbestandsmaessiger Erfolg i.S.d. § 212 Abs. 1
+      StGB?
+    erwartung: Ja - der Tod eines Menschen ist der von § 212 Abs. 1 StGB vorausgesetzte
+      Erfolg.
+  - prompt: Hat M durch aktives Tun gehandelt oder unterlassen?
+    erwartung: M hat unterlassen - sie hat trotz erkannter Lebensgefahr keine rettende
+      Handlung vorgenommen; § 212 StGB ist daher i.V.m. § 13 StGB zu pruefen.
+  - prompt: Hatte M die physisch-reale Moeglichkeit zum Handeln?
+    erwartung: Ja - als erfahrene Schwimmerin haette sie selbst eingreifen oder jedenfalls
+      durch Rufen den nahen Rettungsschwimmer alarmieren koennen.
+  - prompt: Waere der Erfolg bei Vornahme der gebotenen Handlung mit an Sicherheit
+      grenzender Wahrscheinlichkeit entfallen?
+    erwartung: Ja - laut Sachverhalt waere S bei sofortigem Eingreifen mit an Sicherheit
+      grenzender Wahrscheinlichkeit gerettet worden (hypothetische Kausalitaet).
+  - prompt: Ist M Garantin fuer das Leben des S?
+    erwartung: Ja - als Mutter trifft M kraft Gesetzes (§§ 1626, 1631 BGB) eine Beschuetzergarantenstellung
+      fuer Leben und Gesundheit ihres minderjaehrigen Kindes.
+  - prompt: Bedarf es hier zusaetzlich der Entsprechungsklausel des § 13 Abs. 1 a.E.
+      StGB?
+    erwartung: Nein - § 212 StGB ist ein schlichtes Erfolgsdelikt ohne besondere Tatmodalitaet,
+      sodass Tun und Unterlassen gleichermaessen tatbestandsmaessig sein koennen;
+      die Entsprechungsklausel hat hier keine eigenstaendige Bedeutung.
+  - prompt: Ergebnis?
+    erwartung: M hat sich wegen Totschlags durch Unterlassen gemaess §§ 212 Abs. 1,
+      13 StGB strafbar gemacht.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Obersatz §§ 212 Abs. 1, 13 StGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 212 Abs. 1 StGB
+      - § 13 StGB
+      keywords:
+      - '212'
+      - '13'
+    - id: p2
+      label: Erfolgseintritt und Unterlassen statt Tun zutreffend erkannt
+      weight: 1.5
+      required: true
+      norms:
+      - § 212 Abs. 1 StGB
+      keywords:
+      - Unterlassen
+      card_slugs:
+      - sr-unterlassen-echte-unechte
+    - id: p3
+      label: Physisch-reale Handlungsmoeglichkeit bejaht und begruendet
+      weight: 1.5
+      required: true
+      keywords:
+      - Handlungsmoeglichkeit
+      card_slugs:
+      - sr-unterlassen-voraussetzungen
+    - id: p4
+      label: Hypothetische Kausalitaet (an Sicherheit grenzende Wahrscheinlichkeit)
+        geprueft und bejaht
+      weight: 2.5
+      required: true
+      keywords:
+      - an Sicherheit grenzender Wahrscheinlichkeit
+      card_slugs:
+      - sr-unterlassen-voraussetzungen
+    - id: p5
+      label: Garantenstellung der M als Mutter (Beschuetzergarant) begruendet
+      weight: 3.0
+      required: true
+      norms:
+      - § 13 StGB
+      - §§ 1626, 1631 BGB
+      keywords:
+      - Garantenstellung
+      - Beschuetzergarant
+      card_slugs:
+      - sr-unterlassen-beschuetzergarant
+    - id: p6
+      label: Entsprechungsklausel angesprochen und wegen schlichtem Erfolgsdelikt
+        zutreffend als nicht eigenstaendig relevant eingeordnet
+      weight: 1.5
+      required: false
+      norms:
+      - § 13 Abs. 1 StGB
+      keywords:
+      - Entsprechungsklausel
+      card_slugs:
+      - sr-unterlassen-entsprechungsklausel
+    - id: p7
+      label: Vorsatz bzgl. Erfolg und Garantenstellung bejaht
+      weight: 1.0
+      required: false
+      keywords:
+      - Vorsatz
+    - id: p8
+      label: 'Ergebnis: Totschlag durch Unterlassen, §§ 212 Abs. 1, 13 StGB'
+      weight: 1.0
+      required: false
+      keywords:
+      - Ergebnis

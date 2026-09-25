@@ -1,0 +1,288 @@
+topic:
+  slug: or-sicherheitsrecht-generalklausel-standardmassnahmen
+  area: oeffentliches-recht
+  title: Polizeiliche Generalklausel und Standardmassnahmen
+  parent: oeffentliches-recht
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: or-sr-schutzgut-oeffentliche-sicherheit
+  type: definition
+  front: Was schuetzt das Schutzgut 'oeffentliche Sicherheit' im Polizei- und Ordnungsrecht?
+  back: Oeffentliche Sicherheit umfasst die Unverletzlichkeit der objektiven Rechtsordnung
+    (aller Rechtsnormen des geschriebenen Rechts), der subjektiven Rechte und Rechtsgueter
+    des Einzelnen (Leben, Gesundheit, Eigentum, Ehre) sowie des Bestands des Staates
+    und seiner Einrichtungen. Ein Verstoss gegen irgendeine Rechtsnorm - auch des
+    Zivil- oder Strafrechts - begruendet grundsaetzlich bereits eine Gefahr fuer die
+    oeffentliche Sicherheit; dieses weite Verstaendnis ist bewusst gewaehlt, damit
+    polizeiliches Einschreiten nicht von einer abschliessenden Aufzaehlung geschuetzter
+    Interessen abhaengt.
+  norms: []
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-sr-schutzgut-oeffentliche-ordnung
+  type: definition
+  front: Was ist die 'oeffentliche Ordnung', und warum hat dieses Schutzgut praktisch
+    an Bedeutung verloren?
+  back: Die oeffentliche Ordnung bezeichnet die Gesamtheit der ungeschriebenen Regeln,
+    deren Befolgung nach den jeweils herrschenden Anschauungen als unerlaessliche
+    Voraussetzung eines gedeihlichen Zusammenlebens innerhalb eines bestimmten Gebiets
+    angesehen wird. Wegen des rechtsstaatlichen Bestimmtheitsgebots und der zunehmenden
+    Ausdifferenzierung geschriebenen Rechts ist der eigenstaendige Anwendungsbereich
+    dieses Schutzguts heute sehr klein geworden - die Rechtsprechung verlangt einen
+    begruendeten Ausnahmefall, in dem kein geschriebenes Recht einschlaegig ist, aber
+    ein Verhalten evident als grob sozialwidrig empfunden wird.
+  norms: []
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-sr-konkrete-gefahr
+  type: definition
+  front: 'Definiere: konkrete Gefahr im Polizei- und Ordnungsrecht'
+  back: 'Eine konkrete Gefahr liegt vor, wenn eine Sachlage oder ein Verhalten bei
+    ungehindertem Ablauf des objektiv zu erwartenden Geschehens mit hinreichender
+    Wahrscheinlichkeit in absehbarer Zeit zu einem Schaden fuer die oeffentliche Sicherheit
+    oder Ordnung fuehrt. Massstab fuer die Wahrscheinlichkeit ist eine Je-desto-Formel:
+    je hoeherrangig das bedrohte Rechtsgut und je gewichtiger der drohende Schaden,
+    desto geringere Anforderungen sind an den Grad der Wahrscheinlichkeit zu stellen.'
+  norms: []
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-sr-anscheinsgefahr
+  type: streitstand
+  front: Was ist eine Anscheinsgefahr, und wie wirkt sie sich auf die Rechtmaessigkeit
+    des Einschreitens aus?
+  back: 'Eine Anscheinsgefahr liegt vor, wenn ein pflichtgemaess und sachkundig handelnder
+    Amtstraeger bei verstaendiger Wuerdigung der im Zeitpunkt des Handelns erkennbaren
+    Umstaende (ex-ante-Sicht) das Vorliegen einer Gefahr bejahen durfte, sich aber
+    im Nachhinein (ex-post) herausstellt, dass tatsaechlich keine Gefahr bestand.
+    Nach heute herrschender Auffassung ist die Anscheinsgefahr polizeirechtlich einer
+    echten Gefahr gleichgestellt - die Massnahme ist rechtmaessig, wenn die Ex-ante-Prognose
+    sorgfaeltig war. Streitig ist dagegen, wer die Kosten einer daraufhin ergriffenen
+    Massnahme traegt, wenn sich die Prognose als falsch erweist: nach einer Ansicht
+    der vermeintliche Handlungsstoerer (da er den Anschein gesetzt hat), nach anderer
+    Ansicht die Allgemeinheit, wenn den vermeintlichen Stoerer kein Verschulden an
+    der Fehlvorstellung trifft.'
+  norms: []
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-sr-gefahrenverdacht
+  type: definition
+  front: Wie unterscheidet sich der Gefahrenverdacht von der Anscheinsgefahr, und
+    welche Massnahmen sind dort zulaessig?
+  back: Beim Gefahrenverdacht ist - anders als bei der Anscheinsgefahr, wo die Prognose
+    ueber den Geschehensablauf unsicher ist - bereits ungewiss, ob der zugrunde liegende
+    Sachverhalt selbst tatsaechlich vorliegt; die Behoerde kennt die Tatsachenbasis
+    nicht vollstaendig, haelt eine Gefahr aber fuer moeglich. Auf dieser unsicheren
+    Tatsachengrundlage koennen keine endgueltigen Gefahrenabwehrmassnahmen gestuetzt
+    werden, sondern nur sogenannte Gefahrerforschungseingriffe - vorlaeufige, auf
+    Sachverhaltsaufklaerung gerichtete Massnahmen, die verhaeltnismaessig auf das
+    zur Aufklaerung Erforderliche zu begrenzen sind.
+  norms: []
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-sr-subsidiaritaet-generalklausel
+  type: definition
+  front: In welchem Verhaeltnis stehen die polizeiliche Generalklausel und die Standardmassnahmen
+    zueinander?
+  back: Standardmassnahmen (z. B. Identitaetsfeststellung, Platzverweis, Durchsuchung,
+    Sicherstellung) sind bereichsspezifische, vom Gesetzgeber fuer typische, wiederkehrende
+    Eingriffssituationen ausformulierte Befugnisnormen und gehen der Generalklausel
+    als spezielleres Recht vor (lex specialis). Die Generalklausel - im Aufbau des
+    Musterentwurfs eines einheitlichen Polizeigesetzes die Ermaechtigung, die noetigen
+    Massnahmen zur Abwehr einer im Einzelfall bestehenden Gefahr zu treffen, soweit
+    keine speziellere Vorschrift eingreift - ist subsidiaer und kommt nur zum Zug,
+    wenn keine Standardmassnahme die konkrete Massnahme erfasst. Diese Subsidiaritaet
+    ist in der Klausur stets VOR Ruecgriff auf die Generalklausel zu pruefen.
+  norms: []
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-sr-stoererbegriffe
+  type: definition
+  front: Unterscheide Handlungsstoerer, Zustandsstoerer und Nichtstoerer
+  back: Handlungsstoerer ist, wer die Gefahr durch eigenes Verhalten unmittelbar verursacht
+    hat. Zustandsstoerer ist, wer die tatsaechliche oder rechtliche Gewalt ueber eine
+    Sache innehat, von der die Gefahr ausgeht, unabhaengig von eigenem Verschulden.
+    Ein Nichtstoerer kann nur unter engen, kumulativen Voraussetzungen des polizeilichen
+    Notstands in Anspruch genommen werden - insbesondere bei einer gegenwaertigen
+    erheblichen Gefahr, wenn Massnahmen gegen Stoerer nicht oder nicht rechtzeitig
+    moeglich sind und die Behoerde nicht anders und nicht rechtzeitig selbst handeln
+    kann.
+  norms: []
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-sr-verhaeltnismaessigkeit-eingriffsgrundlage
+  type: norm
+  front: Woraus folgt das Verhaeltnismaessigkeitsgebot fuer polizeiliche Massnahmen,
+    und was bedeutet es fuer die Auswahl zwischen Generalklausel und Ermessen?
+  back: Das Verhaeltnismaessigkeitsgebot folgt aus dem Rechtsstaatsprinzip (Art. 20
+    Abs. 3 GG) und begrenzt jeden Grundrechtseingriff - im Sicherheitsrecht haeufig
+    einen Eingriff in die allgemeine Handlungsfreiheit (Art. 2 Abs. 1 GG) des Betroffenen.
+    Die Massnahme muss geeignet, erforderlich und angemessen sein. Sowohl die Generalklausel
+    als auch die meisten Standardmassnahmen sind zudem als Ermessensvorschriften ausgestaltet
+    ('kann'), sodass zusaetzlich zur tatbestandlichen Rechtmaessigkeit eine fehlerfreie
+    Ermessensausuebung hinzutreten muss - vergleichbar dem allgemeinen Ermessensmassstab
+    des § 40 VwVfG, auch wenn das Sicherheitsrecht regelmaessig eigene, dem VwVfG
+    vorgehende Ermessensvorschriften enthaelt.
+  norms:
+  - Art. 20 Abs. 3 GG
+  - Art. 2 Abs. 1 GG
+  - § 40 VwVfG
+  quellen:
+  - GG, amtliche Fassung
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: or-schema-sicherheitsrecht-generalklausel
+  title: Rechtmaessigkeit einer Massnahme auf Grundlage der polizeilichen Generalklausel
+  norms:
+  - Art. 20 Abs. 3 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Ermaechtigungsgrundlage
+    children:
+    - label: 1. Vorrang einer Standardmassnahme? (Subsidiaritaetspruefung)
+      hinweis: Nur wenn keine speziellere, bereichsspezifische Befugnisnorm einschlaegig
+        ist, kommt die Generalklausel zur Anwendung.
+    - label: '2. Formelle Voraussetzungen: sachliche und oertliche Zustaendigkeit,
+        Verfahren'
+  - label: II. Materielle Voraussetzungen der Generalklausel
+    children:
+    - label: '1. Schutzgut: oeffentliche Sicherheit oder oeffentliche Ordnung betroffen'
+    - label: 2. Gefahr
+      children:
+      - label: a) Konkrete Gefahr (Regelfall)
+      - label: b) Anscheinsgefahr - polizeirechtlich der Gefahr gleichgestellt bei
+          sorgfaeltiger Ex-ante-Prognose
+      - label: c) Gefahrenverdacht - nur Gefahrerforschungseingriffe zulaessig
+  - label: III. Richtiger Adressat
+    children:
+    - label: 1. Handlungsstoerer oder Zustandsstoerer
+    - label: 2. Ausnahmsweise Nichtstoerer bei polizeilichem Notstand
+  - label: IV. Ermessen und Verhaeltnismaessigkeit
+    hinweis: Geeignetheit, Erforderlichkeit, Angemessenheit; Rechtsstaatsprinzip,
+      Art. 20 Abs. 3 GG.
+  - label: V. Ergebnis
+faelle:
+- slug: or-fall-herrenloser-koffer-bahnhofsvorplatz
+  title: Der herrenlose Koffer auf dem Bahnhofsvorplatz
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  facts: Auf dem Vorplatz eines (fiktiven) Hauptbahnhofs entdecken zwei Streifenbeamte
+    der zustaendigen Polizeibehoerde einen unbeaufsichtigten Koffer, der mehrfach
+    tickende Geraeusche von sich gibt. Da zur selben Zeit in der naheliegenden Innenstadt
+    eine grosse oeffentliche Veranstaltung stattfindet, gehen die Beamten nach pflichtgemaesser
+    Einschaetzung der Lage von einer moeglichen Sprengvorrichtung aus und sperren
+    den Vorplatz grossraeumig ab; alle Personen im Umkreis von 50 Metern werden zum
+    Verlassen des Bereichs aufgefordert. Eine anschliessende Untersuchung durch den
+    Entschaerfungsdienst ergibt, dass es sich um einen vergessenen Wecker mit tickendem
+    Uhrwerk in einer harmlosen Reisetasche handelte - eine tatsaechliche Gefahr bestand
+    zu keinem Zeitpunkt. Der Reisende R, der den Bahnhofsvorplatz waehrend der Absperrung
+    nicht betreten durfte und dadurch seinen Zug verpasste, haelt die Massnahme fuer
+    rechtswidrig, weil sich im Nachhinein herausgestellt habe, dass gar keine Gefahr
+    vorlag.
+  question: War die Absperrung des Bahnhofsvorplatzes und die Platzverweisung der
+    anwesenden Personen rechtmaessig?
+  steps:
+  - prompt: Welche Art von Gefahrenlage liegt hier vor?
+    erwartung: Eine Anscheinsgefahr - die Beamten durften nach der ex-ante erkennbaren
+      Sachlage (tickender Koffer, grosse Veranstaltung in der Naehe) sachkundig von
+      einer Gefahr ausgehen, obwohl sich ex-post herausstellte, dass keine echte Gefahr
+      bestand.
+  - prompt: Ist die Anscheinsgefahr fuer die Rechtmaessigkeit der Massnahme einer
+      echten Gefahr gleichgestellt?
+    erwartung: Ja - nach heute herrschender Auffassung reicht fuer die Rechtmaessigkeit
+      des Einschreitens eine sorgfaeltige, pflichtgemaesse Ex-ante-Prognose aus; dass
+      sich die Gefahr im Nachhinein nicht bestaetigt, macht die Massnahme nicht rueckwirkend
+      rechtswidrig.
+  - prompt: War vorrangig eine Standardmassnahme statt der Generalklausel zu pruefen?
+    erwartung: Die grossraeumige Absperrung eines Bereichs und die pauschale Platzverweisung
+      mehrerer Personen zur Gefahrenabwehr sind hier nicht durch eine engere, speziellere
+      Standardmassnahme (etwa eine Identitaetsfeststellung gegenueber einer Einzelperson)
+      abgedeckt, sodass auf die Generalklausel zurueckgegriffen werden darf.
+  - prompt: War die Massnahme verhaeltnismaessig?
+    erwartung: Ja - angesichts der potenziell hochrangigen bedrohten Rechtsgueter
+      (Leben, Gesundheit einer Vielzahl von Personen) war die grossraeumige, zeitlich
+      auf die Gefahraufklaerung begrenzte Absperrung geeignet, erforderlich und angemessen,
+      auch wenn einzelne Reisende dadurch Nachteile wie einen verpassten Zug erlitten.
+  - prompt: Ist der Einwand des R durchgreifend, die Massnahme sei rechtswidrig, weil
+      sich im Nachhinein keine echte Gefahr bestaetigt habe?
+    erwartung: Nein - fuer die Rechtmaessigkeitsbeurteilung ist die Ex-ante-Sicht
+      eines pflichtgemaess handelnden Amtstraegers massgeblich, nicht das spaeter
+      bekannt gewordene tatsaechliche Ergebnis. Der Einwand des R geht daher fehl.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Zutreffende Einordnung als Anscheinsgefahr (nicht Gefahrenverdacht) erkannt
+      weight: 2.0
+      required: true
+      keywords:
+      - Anscheinsgefahr
+      - Ex-ante
+      card_slugs:
+      - or-sr-anscheinsgefahr
+      - or-sr-gefahrenverdacht
+    - id: p2
+      label: Gleichstellung der Anscheinsgefahr mit der echten Gefahr fuer die Rechtmaessigkeit
+        begruendet
+      weight: 2.5
+      required: true
+      keywords:
+      - gleichgestellt
+      - sorgfaeltige Prognose
+      - pflichtgemaess
+      card_slugs:
+      - or-sr-anscheinsgefahr
+    - id: p3
+      label: Subsidiaritaetspruefung gegenueber Standardmassnahmen zumindest angesprochen
+      weight: 1.5
+      required: false
+      keywords:
+      - Subsidiaritaet
+      - Standardmassnahme
+      - Generalklausel
+      card_slugs:
+      - or-sr-subsidiaritaet-generalklausel
+    - id: p4
+      label: Verhaeltnismaessigkeitspruefung mit Abwaegung Rechtsgueter vs. Nachteil
+        des R durchgefuehrt
+      weight: 2.0
+      required: true
+      keywords:
+      - Verhaeltnismaessigkeit
+      - geeignet
+      - erforderlich
+      - angemessen
+      card_slugs:
+      - or-sr-verhaeltnismaessigkeit-eingriffsgrundlage
+    - id: p5
+      label: Einwand des R zur Ex-post-Betrachtung zutreffend zurueckgewiesen
+      weight: 1.5
+      required: false
+      keywords:
+      - Ex-ante massgeblich
+      - nicht rueckwirkend rechtswidrig
+      card_slugs:
+      - or-sr-anscheinsgefahr
+    - id: p6
+      label: 'Ergebnis: Massnahme rechtmaessig'
+      weight: 0.5
+      required: false
+      keywords:
+      - rechtmaessig

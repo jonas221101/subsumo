@@ -228,6 +228,12 @@ automatisierte, unbeaufsichtigte Läufe (z. B. ein CI-Workflow) ungeeignet.
   (siehe oben, `app.services.redaktion.norm_gate`), prüft aber nicht, ob ein
   Zitat inhaltlich zum behaupteten Sachverhalt passt. Ohne den echten
   Normindex aus M2 bleibt hier eine Lücke.
+- **Das Gate läuft nur beim Erzeugen, nicht rückwirkend.** Themen, die vor
+  der Einführung des Gates (SUB-53, 14.09.) entstanden sind, haben es nie
+  durchlaufen. Der Bestand vom 12.-14.09. (8 Themen) wurde per Nachlauf
+  gegen `check_norms()` geprüft und mit `normzitate_geprueft: true`
+  nachgetragen (SUB-250); der M0-Grundbestand bleibt ohne `redaktion`-Block
+  und gilt laut Definition oben unverändert als regulär redigiert.
 - **Kalibrierung fehlt noch.** Anders als beim Klausur-Evaluator
   (`docs/03-roadmap.md`, M3: 30 von Dozenten bewertete Referenzgutachten,
   Ziel-MAE ≤ 2 Punkte) gibt es für die Redaktions-Reviewer-Entscheidung noch

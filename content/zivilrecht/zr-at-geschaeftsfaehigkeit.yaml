@@ -1,0 +1,312 @@
+topic:
+  slug: zr-at-geschaeftsfaehigkeit
+  area: zivilrecht
+  title: Geschaeftsfaehigkeit Minderjaehriger, §§ 104 ff. BGB
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: zr-at-geschaeftsfaehigkeit-begriff
+  type: definition
+  front: 'Definiere: Geschaeftsfaehigkeit'
+  back: 'Geschaeftsfaehigkeit ist die Faehigkeit, Rechtsgeschaefte selbst wirksam
+    vornehmen zu koennen. Das Gesetz unterscheidet drei Stufen: Geschaeftsunfaehigkeit
+    (§ 104 BGB), beschraenkte Geschaeftsfaehigkeit (§ 106 BGB) und volle Geschaeftsfaehigkeit
+    mit der Volljaehrigkeit (§ 2 BGB).'
+  norms:
+  - § 104 BGB
+  - § 106 BGB
+  - § 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-geschaeftsunfaehigkeit-104
+  type: definition
+  front: 'Definiere: Geschaeftsunfaehigkeit (§ 104 BGB) und ihre Rechtsfolge'
+  back: Geschaeftsunfaehig ist, wer nicht das siebente Lebensjahr vollendet hat (§
+    104 Nr. 1 BGB), oder wer sich in einem die freie Willensbestimmung ausschliessenden
+    Zustand krankhafter Stoerung der Geistestaetigkeit befindet, sofern der Zustand
+    nicht seiner Natur nach ein voruebergehender ist (§ 104 Nr. 2 BGB). Eine von einem
+    Geschaeftsunfaehigen abgegebene Willenserklaerung ist nichtig (§ 105 Abs. 1 BGB)
+    - anders als bei der blossen Anfechtbarkeit gibt es hier keine Heilung durch Genehmigung.
+  norms:
+  - § 104 BGB
+  - § 105 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-beschraenkte-geschaeftsfaehigkeit-106
+  type: definition
+  front: 'Definiere: beschraenkte Geschaeftsfaehigkeit (§ 106 BGB)'
+  back: Beschraenkt geschaeftsfaehig ist ein Minderjaehriger, der das siebente Lebensjahr
+    vollendet hat (§ 106 BGB). Er kann Vertraege wirksam schliessen, soweit ihm dies
+    gesetzlich erlaubt ist - insbesondere bei lediglich rechtlich vorteilhaften Geschaeften
+    (§ 107 BGB) und im Rahmen des Taschengeldparagraphen (§ 110 BGB); im Uebrigen
+    bedarf er der Einwilligung seines gesetzlichen Vertreters (§ 107 BGB).
+  norms:
+  - § 106 BGB
+  - § 107 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-lediglich-rechtlicher-vorteil-107
+  type: definition
+  front: Wann bedarf der beschraenkt Geschaeftsfaehige keiner Einwilligung, § 107
+    BGB?
+  back: 'Wenn ihm das Rechtsgeschaeft lediglich einen rechtlichen Vorteil bringt.
+    Massgeblich ist eine rein rechtliche Betrachtung: Schon eine einzige mit dem Geschaeft
+    verbundene rechtliche Pflicht - auch als blosse Nebenfolge - nimmt dem Geschaeft
+    die Einwilligungsfreiheit; wirtschaftliche Nachteile, etwa eine ungünstige Wertrelation,
+    bleiben dagegen unberuecksichtigt. Beispiel: Die Annahme einer Schenkung ohne
+    Auflage ist lediglich rechtlich vorteilhaft, ein Kaufvertrag wegen der Pflicht
+    zur Kaufpreiszahlung dagegen nicht.'
+  norms:
+  - § 107 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-einwilligung-genehmigung-schwebende-unwirksamkeit
+  type: definition
+  front: Was folgt aus dem Fehlen der erforderlichen Einwilligung nach § 108 Abs.
+    1 BGB?
+  back: Schliesst der beschraenkt Geschaeftsfaehige ohne die erforderliche Einwilligung
+    (§ 183 BGB) seines gesetzlichen Vertreters einen Vertrag, so haengt dessen Wirksamkeit
+    von der nachtraeglichen Genehmigung des Vertreters ab (§ 108 Abs. 1, § 184 Abs.
+    1 BGB) - der Vertrag ist bis dahin schwebend unwirksam. Bei einseitigen Rechtsgeschaeften
+    fuehrt das Fehlen der Einwilligung dagegen zur sofortigen, endgueltigen Unwirksamkeit
+    (§ 111 BGB).
+  norms:
+  - § 183 BGB
+  - § 108 Abs. 1 BGB
+  - § 184 Abs. 1 BGB
+  - § 111 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-widerruf-aufforderung-108-109
+  type: definition
+  front: Welche Rechte hat der Vertragspartner waehrend des Schwebezustands, §§ 108,
+    109 BGB?
+  back: Der andere Teil kann den gesetzlichen Vertreter zur Erklaerung ueber die Genehmigung
+    auffordern (§ 108 Abs. 2 S. 1 BGB); eine vorher dem Minderjaehrigen gegenueber
+    erklaerte Genehmigung oder Verweigerung wird dadurch unwirksam (§ 108 Abs. 2 S.
+    2 BGB). Bis zur Genehmigung ist der andere Teil zudem zum Widerruf berechtigt,
+    es sei denn, er kannte die Minderjaehrigkeit bei Vertragsschluss (§ 109 Abs. 1
+    BGB).
+  norms:
+  - § 108 Abs. 2 BGB
+  - § 109 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-taschengeldparagraph-110
+  type: definition
+  front: 'Definiere: Taschengeldparagraph (§ 110 BGB) - Voraussetzungen'
+  back: 'Ein von dem Minderjaehrigen ohne Zustimmung des gesetzlichen Vertreters geschlossener
+    Vertrag gilt gemaess § 110 BGB als von Anfang an genehmigt, wenn der Minderjaehrige
+    die vertragsmaessige Leistung mit Mitteln bewirkt, die ihm zu diesem Zweck oder
+    zur freien Verfuegung von dem Vertreter oder mit dessen Zustimmung von einem Dritten
+    ueberlassen worden sind. Voraussetzungen sind also: eine generelle oder zweckgebundene
+    Ueberlassungsermaechtigung und die tatsaechliche Bewirkung der Leistung - der
+    blosse Vertragsschluss reicht nicht.'
+  norms:
+  - § 110 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-taschengeldparagraph-ratenzahlung
+  type: streitstand
+  front: 'Streitstand: Erfasst § 110 BGB auch Vertraege, bei denen der Minderjaehrige
+    die Gegenleistung erst spaeter aus kuenftigem Taschengeld erbringen soll?'
+  back: 'Problem: Der Minderjaehrige verpflichtet sich bei Vertragsschluss zu
+
+    einer Ratenzahlung aus noch zu erwartendem, ihm zur freien Verfuegung
+
+    ueberlassenem Taschengeld, ohne die Leistung sofort zu bewirken.
+
+
+    e.A.: § 110 BGB erfasse auch solche Geschaefte, solange die
+
+    kuenftigen Mittel objektiv zur freien Verfuegung bestimmt sind - der
+
+    Minderjaehrige solle nicht schlechter stehen, nur weil er in Raten
+
+    statt sofort zahlt.
+
+
+    h.M.: § 110 BGB verlangt die tatsaechliche Bewirkung der Leistung im
+
+    Zeitpunkt des Vertragsschlusses mit bereits ueberlassenen Mitteln.
+
+    Ein Vertrag, der den Minderjaehrigen zu kuenftigen Zahlungen aus erst
+
+    noch zu erwartendem Taschengeld verpflichtet, wird von § 110 BGB
+
+    nicht erfasst und bleibt insoweit schwebend unwirksam (§ 108 Abs. 1
+
+    BGB), bis der gesetzliche Vertreter genehmigt.
+
+
+    Streitentscheid: Der h.M. ist zu folgen. Der Schutzzweck des § 110
+
+    BGB liegt darin, dass der Minderjaehrige keine ueber die bereits
+
+    erbrachte Leistung hinausgehende Verpflichtung eingeht; eine
+
+    Verpflichtung zu kuenftigen Zahlungen ist etwas anderes als die von
+
+    § 110 BGB privilegierte Vorleistung mit bereits vorhandenen Mitteln.
+
+    '
+  norms:
+  - § 110 BGB
+  - § 108 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-geschaeftsfaehigkeit-vertrag
+  title: Wirksamkeit eines Vertrags eines Minderjaehrigen, §§ 104 ff. BGB
+  norms:
+  - § 104 BGB
+  - § 106 BGB
+  - § 107 BGB
+  - § 108 BGB
+  - § 110 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Geschaeftsfaehigkeit des Handelnden
+    children:
+    - label: 1. Geschaeftsunfaehigkeit, § 104 BGB
+      hinweis: Dann Nichtigkeit der Willenserklaerung, § 105 Abs. 1 BGB - keine weitere
+        Pruefung.
+    - label: 2. Beschraenkte Geschaeftsfaehigkeit, § 106 BGB
+  - label: II. Einwilligungsfreiheit des Geschaefts
+    children:
+    - label: 1. Lediglich rechtlicher Vorteil, § 107 BGB
+    - label: 2. Einwilligung des gesetzlichen Vertreters, §§ 107, 183 BGB
+  - label: 'III. Bei fehlender Einwilligung: Wirksamkeit ueber Sonderregeln'
+    children:
+    - label: 1. Taschengeldparagraph, § 110 BGB
+      hinweis: Nur bei tatsaechlicher Bewirkung der Leistung mit ueberlassenen Mitteln.
+    - label: 2. Nachtraegliche Genehmigung, § 108 Abs. 1, § 184 Abs. 1 BGB
+  - label: IV. Ergebnis
+    children:
+    - label: Vertrag wirksam - oder endgueltig unwirksam bei Widerruf (§ 109 BGB)
+        oder Genehmigungsverweigerung
+faelle:
+- slug: zr-fall-wunschkonsole
+  title: Die Wunschkonsole
+  difficulty: 2
+  minutes: 30
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: Der 15-jaehrige K spart sein Taschengeld, das ihm seine Eltern zur freien
+    Verfuegung ueberlassen haben, seit Monaten an. Als er 280 EUR zusammen hat, geht
+    er ohne Wissen seiner Eltern in den Elektronikmarkt des V und kauft dort eine
+    Spielekonsole fuer 280 EUR. Er bezahlt sofort in bar mit dem angesparten Geld;
+    V uebergibt ihm die Konsole direkt im Laden. Am naechsten Tag erfahren K's Eltern
+    von dem Kauf. Sie halten die Konsole fuer eine Fehlinvestition und verlangen von
+    V, die Konsole gegen Rueckzahlung der 280 EUR zurueckzunehmen.
+  question: Koennen K's Eltern von V die Ruecknahme der Konsole gegen Rueckzahlung
+    des Kaufpreises verlangen?
+  steps:
+  - prompt: Formuliere den Obersatz fuer den von den Eltern geltend gemachten Anspruch.
+    erwartung: Ein Anspruch der Eltern setzt voraus, dass der Kaufvertrag zwischen
+      K und V unwirksam ist, so dass V die Konsole ohne Rechtsgrund erhalten haette
+      bzw. K sie ohne Rechtsgrund erlangt haette.
+  - prompt: Wie ist K's Geschaeftsfaehigkeit einzuordnen und was folgt daraus fuer
+      den Kaufvertrag?
+    erwartung: K ist mit 15 Jahren beschraenkt geschaeftsfaehig (§ 106 BGB). Der Kaufvertrag
+      ist wegen der Pflicht zur Kaufpreiszahlung fuer ihn nicht lediglich rechtlich
+      vorteilhaft (§ 107 BGB) und daher grundsaetzlich einwilligungsbeduerftig.
+  - prompt: Kann der Vertrag trotz fehlender vorheriger Einwilligung wirksam sein?
+    erwartung: 'Ja, ueber § 110 BGB (Taschengeldparagraph): Die Eltern hatten K das
+      Geld zur freien Verfuegung ueberlassen, und K hat die Leistung tatsaechlich
+      mit diesen Mitteln bewirkt (Barzahlung bei Vertragsschluss).'
+  - prompt: Welche Rechtsfolge hat § 110 BGB fuer den Kaufvertrag?
+    erwartung: Der Vertrag gilt von Anfang an als genehmigt und ist damit wirksam.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Anspruch der Eltern setzt Unwirksamkeit des Kaufvertrags voraus (Obersatz)
+      weight: 1.5
+      required: true
+      keywords:
+      - Kaufvertrag
+      - Rechtsgrund
+      - unwirksam
+      card_slugs:
+      - zr-at-geschaeftsfaehigkeit-begriff
+    - id: p2
+      label: K ist beschraenkt geschaeftsfaehig, § 106 BGB; Kaufvertrag nicht lediglich
+        rechtlich vorteilhaft, § 107 BGB
+      weight: 2.0
+      required: true
+      norms:
+      - § 106 BGB
+      - § 107 BGB
+      keywords:
+      - beschraenkt geschaeftsfaehig
+      - lediglich rechtlich vorteilhaft
+      - '106'
+      - '107'
+      card_slugs:
+      - zr-at-beschraenkte-geschaeftsfaehigkeit-106
+      - zr-at-lediglich-rechtlicher-vorteil-107
+    - id: p3
+      label: Grundsaetzliches Einwilligungsbeduerfnis mangels vorheriger Zustimmung
+        der Eltern erkannt
+      weight: 1.0
+      keywords:
+      - Einwilligung
+      - '183'
+      card_slugs:
+      - zr-at-einwilligung-genehmigung-schwebende-unwirksamkeit
+    - id: p4
+      label: Pruefung und Bejahung der Voraussetzungen des § 110 BGB (Ueberlassung
+        zur freien Verfuegung + Bewirkung der Leistung)
+      weight: 3.0
+      required: true
+      norms:
+      - § 110 BGB
+      keywords:
+      - '110'
+      - Taschengeld
+      - zur freien Verfuegung
+      - bewirkt
+      card_slugs:
+      - zr-at-taschengeldparagraph-110
+    - id: p5
+      label: 'Rechtsfolge: Vertrag gilt von Anfang an als genehmigt, ist also wirksam'
+      weight: 1.5
+      keywords:
+      - von Anfang an
+      - genehmigt
+      - wirksam
+      card_slugs:
+      - zr-at-taschengeldparagraph-110
+    - id: p6
+      label: 'Ergebnis: kein Anspruch der Eltern gegen V'
+      weight: 1.0
+      keywords:
+      - kein Anspruch
+      - Anspruch besteht nicht
+      - Eltern haben keinen Anspruch

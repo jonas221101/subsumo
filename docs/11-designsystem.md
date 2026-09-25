@@ -7,6 +7,20 @@ das ist [SUB-37](/SUB/issues/SUB-37). Code: `app/lib/design/`.
 
 ## 1. Markenbasis
 
+**Split oeffentliche Flaeche vs. App-Screen (SUB-227, UI-Relaunch-Brief,
+[docs/25-ui-relaunch-brief.md](25-ui-relaunch-brief.md)):** Die Leitprinzipien
+4/5 ("Ehrlichkeit vor Motivation", "Kein Druck durch Design",
+`docs/01-produktvision.md`) schuetzen die *Lernsituation*, nicht die
+Marketingflaeche. Oeffentliche Flaechen (Landing, Preise, Login-/
+Rechtstexte-Rahmen) duerfen seit SUB-227 deutlich mutiger sein - vollbreite
+Farbbaender, ein tragender Hero, Bewegung beim Scrollen (Details:
+[SUB-241](/SUB/issues/SUB-241)). App-Screens (Dashboard, Karteikarten,
+Gutachten, spaeter Klausur-Simulator) bleiben beim zurueckhaltenden,
+handwerklichen Ansatz dieses Dokuments - **keine** neuen Marken-/
+Marketing-Rollen dort (Details: [SUB-242](/SUB/issues/SUB-242)). Die Tokens
+unten sind entsprechend markiert, wo eine neue Rolle nur fuer oeffentliche
+Flaechen gilt.
+
 ### Farbwelt
 
 Subsumo ist kein Konsum-Produkt, das um Aufmerksamkeit wirbt, sondern ein
@@ -81,6 +95,18 @@ ausgelegt, nicht auf dekorative Ueberschriften:
   ohnehin als spaetere, bewusste Entscheidung fuer M5/Store-Release
   vorgesehen). Die Rolle unterscheidet sich daher ueber Groesse/Gewicht/
   Laufweite, nicht ueber eine zweite Schriftdatei.
+- **Hero-Rolle** (`heroLarge`/`heroSmall`, SUB-227/SUB-228): eigene,
+  deutlich groessere Rolle (64/36px, `FontWeight.w600`, Laufweite -0.5) -
+  **ausschliesslich** fuer den H1 auf dem Landing-/Preisseiten-Hero
+  (`pages/public/`), ebenfalls als `SubsumoTypography`-Feld, damit sie
+  nicht ueber `ThemeData.textTheme` in Karteikarten-/Gutachten-/
+  Klausur-Screens durchsickert - dieselbe Schutzlogik wie bei
+  `displayLarge/Medium` oben. Anders als `displayLarge/Medium` nutzt sie
+  die neue Schriftdatei **Fraunces** (Variable Font, SIL OFL 1.1, siehe
+  `assets/fonts/LIZENZ.md`) statt `Subsumo`/DejaVu Sans - ein bewusst eng
+  begrenzter Sonderfall (nur diese zwei Felder), kein Ersatz der
+  Wortmarken-Schrift. `displayLarge/Medium` und der gesamte Fliesstext
+  bleiben unveraendert bei `Subsumo`/DejaVu Sans.
 
 ### Tonalitaet
 
@@ -151,6 +177,25 @@ zweite Rot-Variante waere nur eine Quelle fuer Inkonsistenz. `accent` ist
 strikt von `positiv`/`hinweis`/`error` getrennt (SUB-159): ausschliesslich
 Marken-/Leerzustandsflaechen, nie Fortschritt/Feedback.
 
+**SUB-227/SUB-228:** Vier weitere Rollen in `SubsumoColors`, alle nur fuer
+oeffentliche Flaechen (`pages/public/*`) und ohne neue Hex-Konstante -
+reine *Verwendungen* bestehender Palettenwerte:
+
+| Rolle | Aufbau | Einsatz |
+|---|---|---|
+| `heroGradientStart`/`heroGradientEnd` | `brand700` -> `brand900`, brightness-unabhaengig | Hero-Band, Landing/Preise |
+| `accentWash` | `accent` (500/300 je Brightness) bei 8 % Deckkraft | "Ehrlich ueber den Umfang"-Sektion |
+| `legalAreaZivilrecht` | `brand500` (Light) / `brand300` (Dark) | Kategorischer Akzent, Rechtsgebiets-Karten |
+| `legalAreaStrafrecht` | `accent500` (Light) / `accent300` (Dark) | wie oben |
+| `legalAreaOeffentlichesRecht` | `ink500` (Light) / `ink500Dark` (Dark) | wie oben |
+
+Die drei `legalArea*`-Rollen sind bewusst fest pro Rechtsgebiet (Abschnitt 1)
+- keine Ampel, weil sie nichts ueber Lernstand aussagen, nur ueber
+Wiedererkennung. `SubsumoSection` (Abschnitt 3) baut `heroGradient`/
+`accentWash`/`brandDark` (Alias fuer `heroGradientEnd`) zu fertigen
+Hintergrundflaechen zusammen, damit Seiten nicht selbst mit `Gradient`/
+`Color.alphaBlend` hantieren.
+
 ### 2.2 Abstand (`spacing.dart`)
 
 Vielfache von 4 (`xs=4, sm=8, md=12, lg=16, xl=24, xxl=32, xxxl=48`). Deckt
@@ -161,10 +206,13 @@ untereinander vergleichbar und Abweichungen im Review auffaellig.
 
 ### 2.3 Radius (`radii.dart`)
 
-Drei Stufen: `sm=10` (Buttons, Eingabefelder - der Wert stand schon vorher
-hart codiert in `theme.dart`), `md=14` (Karten), `pill=999` (Chips,
-abgerundete Leisten). Bewusst keine vierte Stufe - drei reichen fuer alle
-bisherigen Faelle, eine weitere waere eine Regel ohne Anwendungsfall.
+Vier Stufen: `sm=10` (Buttons, Eingabefelder - der Wert stand schon vorher
+hart codiert in `theme.dart`), `md=14` (Karten), `lg=20`, `pill=999` (Chips,
+abgerundete Leisten). **Korrektur (SUB-228):** `lg=20` stand bereits vor
+diesem Ticket im Code, fehlte hier aber in der Dokumentation - kein neuer
+Wert, nur ein Dokumentationsnachtrag. Bewusst keine fuenfte Stufe - der
+UI-Relaunch-Brief (SUB-227) verlangt keine weitere Radius-Stufe, eine
+zusaetzliche waere eine Regel ohne Anwendungsfall.
 
 ### 2.4 Elevation (`elevation.dart`)
 
@@ -179,7 +227,12 @@ kein Screen das braucht.
 Siehe Abschnitt 1, "Typografie" - die Zahlenwerte stehen als benannte
 Konstanten in `TypeScale`, damit `theme.dart` (und spaeter Komponenten, die
 bewusst von der Theme-Textur abweichen wollen) sie referenzieren statt
-Literale zu wiederholen.
+Literale zu wiederholen. **SUB-227/SUB-228:** `heroLarge`/`heroSmall`
+(64/36px, `FontWeight.w600`, Laufweite -0.5, Schrift Fraunces) kommen als
+zwei weitere `SubsumoTypography`-Felder dazu, exakt so von `ThemeData.
+textTheme` getrennt wie `displayLarge/Medium` - sie sickern nicht in
+Karteikarten-/Gutachten-/Klausur-Screens durch, per grep gegenprueft
+(keine Verwendung ausserhalb `pages/public/`).
 
 ### 2.6 Bewegung (`motion.dart`)
 
@@ -209,6 +262,7 @@ Komponente direkt braucht, die hier fehlt, verwendet weiter
 | `SubsumoChip` (`.filter` / `.action` / Basis) | Kartentyp, Rechtsgebiets-Filter, Norm-Verweis, Status ("offline" - seit SUB-161 app-weit im `AppBar` von `HomeShell`, siehe `main.dart` -, "aktualisiert") | Mehrfachauswahl mit komplexer Logik (eigener Zustand noetig, Chip bleibt nur die Darstellung) |
 | `SubsumoFeedbackBlock` | Punktuelle Rueckmeldung: Struktur-Finding im Gutachten, Formularfehler, Leerzustand-Hinweis. Farbe ist immer nur ein kleines Icon, nie eine Flaechenfarbe | Dauerzustaende wie Lernfortschritt - dafuer `SubsumoProgressMeter` |
 | `SubsumoWordmark` (SUB-159) | Marken-Wortmarke "Subsumo" in der Display-Rolle: oeffentlicher Header (`PublicScaffold`, zweifarbige Akzent-Variante), Login-Kopfzeile | Karteikarten-/Gutachten-/Klausur-Screens |
+| `SubsumoSection` (SUB-227/SUB-228) | Randloses Band mit eigener Hintergrundflaeche (`SubsumoSectionBackground.surface0/surface1/heroGradient/accentWash/brandDark`), begrenzt seinen Inhalt intern ueber `ReadableWidth`. Ersetzt die pauschale `maxWidth`-Zwang in `PublicScaffold` fuer oeffentliche Flaechen (Landing, Preise, Login-/Rechtstexte-Rahmen), siehe SUB-241 | Karteikarten-/Gutachten-/Klausur-Screens - dort bleibt die zurueckhaltende Flaechenlogik aus Abschnitt 6 der Beispiel-Migration/SUB-242 |
 
 Jede Komponente traegt Screenreader-Semantik direkt (siehe Abschnitt 4) -
 ein Screen muss sie nicht nachtraeglich mit `Semantics` umwickeln.
@@ -256,6 +310,15 @@ Fliesstext und UI-Text: **4.5:1** (WCAG 2.1 AA).
 | `feedbackPositiveDark` auf `surface0Dark` | 9.00:1 | ✅ |
 | `accent500` auf `surface0Light` (Wortmarken-Akzent, Light) | 5.04:1 | ✅ |
 | `accent300` auf `surface0Dark` (Wortmarken-Akzent, Dark) | 9.05:1 | ✅ |
+| Weiss auf `brand900` (Hero-Verlaufsende, SUB-227/SUB-228) | 15.80:1 | ✅ |
+| `ink900` auf `accentWash` (Umfangs-Sektion, Light) | 16.12:1 | ✅ |
+| `ink900Dark` auf `accentWash` (Umfangs-Sektion, Dark) | 13.97:1 | ✅ |
+| `legalAreaZivilrecht`/`brand500` auf `surface0Light` (Text/Icon, Light) | 7.18:1 | ✅ |
+| `legalAreaZivilrecht`/`brand300` auf `surface0Dark` (Text/Icon, Dark) | 6.04:1 | ✅ |
+| `legalAreaStrafrecht`/`accent500` auf `surface0Light` (Text/Icon, Light) | 5.04:1 | ✅ (= Wortmarken-Akzent-Zeile oben, gleicher Palettenwert) |
+| `legalAreaStrafrecht`/`accent300` auf `surface0Dark` (Text/Icon, Dark) | 9.05:1 | ✅ (= Wortmarken-Akzent-Zeile oben, gleicher Palettenwert) |
+| `legalAreaOeffentlichesRecht`/`ink500` auf `surface0Light` (Text/Icon, Light) | 4.87:1 | ✅ (knapp, siehe `ink500`-Hinweis unten) |
+| `legalAreaOeffentlichesRecht`/`ink500Dark` auf `surface0Dark` (Text/Icon, Dark) | 5.82:1 | ✅ |
 
 `feedbackHint` (Light) liegt mit 4.90:1 am naechsten an der Grenze - genug
 Reserve fuer Rendering-Unschaerfen, aber kein Wert, den man ohne erneute
@@ -286,6 +349,26 @@ Mindestanforderung einhalten, obwohl der aktuelle Einsatz (letzter
 Buchstabe der Wortmarke) nur ein Icon-aehnliches, nicht fliesstext-langes
 Element ist - so bleibt spaeterer Text-Einsatz auf Marken-/
 Leerzustandsflaechen ohne erneute Farbpruefung moeglich.
+
+**SUB-227/SUB-228:** `accentWash` ist `accent` (500 Light / 300 Dark) bei
+8 % Deckkraft, mit `Color.alphaBlend` auf die jeweilige Standardflaeche
+(`surface0Light`/`surface0Dark`) gerechnet, damit der resultierende Wert
+selbst eine deckende Flaeche ist (kein transparentes Durchscheinen bei
+uebereinanderliegenden Sektionen). Ergebnis: `#F7F3EC` (Light) bzw.
+`#22211F` (Dark) - 8 % ist niedrig genug, dass der Fliesstextkontrast
+gegenueber der reinen Standardflaeche nur marginal sinkt (Light: 17.82:1 ->
+16.12:1, Dark: 15.88:1 -> 13.97:1, siehe Tabelle oben), aber hoch genug, um
+die Sektion sichtbar abzusetzen. Der Hero-Verlauf (`heroGradientStart`/
+`-End`, `brand700`/`brand900`) ist bewusst brightness-unabhaengig (siehe
+Begruendung am Token in `colors.dart`) - `brand700` gegen Weiss war bereits
+ueber die Primaerbutton-Zeile oben geprueft (11.48:1), `brand900` als
+dunklerer Verlaufsendpunkt ist mit diesem Ticket neu nachgerechnet (15.80:1,
+Tabelle oben). Die drei `legalArea*`-Rollen sind absichtlich Aliase auf
+bereits gepruefte Palettenwerte (`brand500/300`, `accent500/300`,
+`ink500`/`ink500Dark`) statt neuer Farben - jede Zeile in der Tabelle oben
+ist eigenstaendig nachgerechnet, auch wo der Zahlenwert mit einer
+bestehenden Zeile identisch ist, damit die Verwendung als Rechtsgebiets-
+Akzent im Review nachvollziehbar bleibt.
 
 ## 6. Plattformregeln
 
@@ -367,3 +450,28 @@ Leitgrundsatz erzwungen war.
   Ladeversuch) - im Zweifel lieber ehrlich verzoegert als optimistisch
   falsch, aber fachlich als bekannte Einschraenkung dokumentiert statt still
   in Kauf genommen.
+- **SUB-160:** Fokussierter Lesemodus fuer Karteikarten (`pages/review_page.dart`)
+  und Gutachten (`pages/gutachten_page.dart`) - ein lokaler `bool`-Umschalter
+  (kein neuer `AppState`, reine Layout-Entscheidung) blendet Navigation/Titel
+  aus, laesst Fliesstext-Typoskala und Feedback-Farben unveraendert. Im
+  Karteikarten-Tab liegt der Zustand in `HomeShell`, weil dort auch
+  `NavigationRail`/`NavigationBar` ausgeblendet werden, nicht in `ReviewPage`
+  selbst; der Umschalter bleibt dort bewusst in jedem Kartenzustand sichtbar
+  (auch im Leerzustand nach der letzten Karte), sonst waere die Rueckkehr aus
+  dem Lesemodus blockiert. Bei `GutachtenPage` bleibt eine schmale AppBar mit
+  nur dem Umschalter bestehen statt sie komplett zu entfernen - eine
+  schwebende Schaltflaeche ueber dem Editor-Inhalt haette bei schmalen
+  Fenstern den Falltext verdecken koennen.
+- **SUB-227/SUB-228:** Die bisherige, durchgaengige Annahme "zurueckhaltend
+  fuer alle Flaechen" gilt ab diesem Ticket nur noch fuer App-Screens.
+  Oeffentliche Flaechen duerfen bewusst und begruendet mutiger sein (siehe
+  Abschnitt 1) - die Leitprinzipien 4/5 schuetzen die Lernsituation, nicht
+  die Marketingflaeche (Aufloesung des scheinbaren Zielkonflikts in
+  `docs/25-ui-relaunch-brief.md` Abschnitt 1). Dieses Ticket liefert nur die
+  Token-/Komponenten-Ebene (`SubsumoTypography.hero*`, die vier neuen
+  `SubsumoColors`-Rollen, `SubsumoSection`, Fraunces-Asset) - additiv, kein
+  bestehender Wert fuer App-Screens veraendert. Die tatsaechliche Umsetzung
+  auf der Landingpage/Preisseite (SUB-241) und die App-Screen-Verfeinerung
+  ohne Gamification (SUB-242) sind eigene Aufgaben; die dort faelligen
+  docs/11-Nachtraege (Abschnitt 2.6 Scroll-Reveal-Regel) liefern diese
+  Aufgaben selbst.

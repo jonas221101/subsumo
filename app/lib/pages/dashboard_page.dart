@@ -64,6 +64,10 @@ class _DashboardPageState extends State<DashboardPage> {
               const SizedBox(height: Spacing.lg),
             ],
             SubsumoCard(
+              // Deutlich vor die Themenliste unten gesetzt - ueber die
+              // Flaeche, nicht ueber eine zusaetzliche Elevation-Stufe
+              // (docs/25-ui-relaunch-brief.md Abschnitt 6).
+              color: Theme.of(context).colorScheme.surfaceContainerHighest,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

@@ -174,18 +174,26 @@ faelle:
       - Art. 2
       - Handlungsfreiheit
       - Auffanggrundrecht
+      card_slugs:
+      - or-gr-art2-auffanggrundrecht
+      - or-gr-art2-abgrenzung-art12
     - id: p2
       label: Eingriff bejaht
       weight: 1.5
       required: true
       keywords:
       - Eingriff
+      card_slugs:
+      - or-gr-eingriff
     - id: p3
       label: Schranke der verfassungsmaessigen Ordnung erkannt und definiert
       weight: 2.0
       required: true
       keywords:
       - verfassungsmaessige Ordnung
+      card_slugs:
+      - or-gr-art2-schrankentrias
+      - or-gr-art2-verfassungsmaessige-ordnung
     - id: p4
       label: Verhaeltnismaessigkeit in allen vier Stufen geprueft
       weight: 2.5
@@ -195,6 +203,9 @@ faelle:
       - geeignet
       - erforderlich
       - angemessen
+      card_slugs:
+      - or-gr-verhaeltnismaessigkeit
+      - or-gr-art2-schranken-schranke-verhaeltnismaessigkeit
     - id: p5
       label: 'Erforderlichkeit des naechtlichen Verbots verneint (kein Fussgaengeraufkommen,
         milderes Mittel: zeitliche Differenzierung)'
@@ -204,6 +215,8 @@ faelle:
       - nachts
       - kein Fussgaengeraufkommen
       - milderes Mittel
+      card_slugs:
+      - or-gr-art2-schranken-schranke-verhaeltnismaessigkeit
     - id: p6
       label: 'Ergebnis: Verordnung verletzt insoweit Art. 2 Abs. 1 GG'
       weight: 1.0

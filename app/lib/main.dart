@@ -106,6 +106,15 @@ class HomeShell extends StatefulWidget {
 class _HomeShellState extends State<HomeShell> {
   int _index = 0;
 
+  /// Fokussierter Lesemodus (SUB-160): blendet AppBar und Navigation aus,
+  /// solange der Karteikarten-Tab aktiv ist. Nur hier relevant - der
+  /// Umschalter dazu sitzt in [ReviewPage] selbst, damit die Chrome-
+  /// Entscheidung bei der Seite bleibt, die sie auch ausblendet.
+  bool _focusMode = false;
+
+  // Funktionale Navigations-Icons bleiben in jedem Fall Icons.*_outlined,
+  // auch fuer den aktiven Tab (docs/25 Abschnitt 5+8.3) - keine gefuellte
+  // Variante als Aktiv-Signal.
   static const _destinations = [
     (icon: Icons.insights_outlined, label: 'Fortschritt'),
     (icon: Icons.style_outlined, label: 'Karten'),
@@ -115,7 +124,10 @@ class _HomeShellState extends State<HomeShell> {
 
   Widget get _page => switch (_index) {
         0 => const DashboardPage(),
-        1 => const ReviewPage(),
+        1 => ReviewPage(
+            focusMode: _focusMode,
+            onToggleFocusMode: () => setState(() => _focusMode = !_focusMode),
+          ),
         2 => const SchemataPage(),
         _ => const CasesPage(),
       };
@@ -124,6 +136,7 @@ class _HomeShellState extends State<HomeShell> {
   Widget build(BuildContext context) {
     final app = AppScope.of(context);
     final breit = MediaQuery.sizeOf(context).width >= 800;
+    final hideChrome = _focusMode && _index == 1;
 
     // Kombiniert die beiden bestehenden Signale fuer einen fehlgeschlagenen
     // Server-Kontakt (siehe state.dart: dueCardsFromCache, outbox) zu einer
@@ -133,75 +146,83 @@ class _HomeShellState extends State<HomeShell> {
     final offline = app.dueCardsFromCache || app.outbox.isNotEmpty;
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(_destinations[_index].label),
-        actions: [
-          if (offline)
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: Spacing.xs),
-              child: Tooltip(
-                message: 'Letzter Kontakt zum Server ist fehlgeschlagen - '
-                    'zeigt zuletzt gespeicherte Daten.',
-                child: SubsumoChip(label: 'offline', icon: Icons.cloud_off),
-              ),
-            ),
-          if (app.outbox.isNotEmpty)
-            IconButton(
-              tooltip: '${app.outbox.length} Bewertung(en) nicht synchronisiert',
-              icon: const Icon(Icons.cloud_upload_outlined),
-              onPressed: app.flushOutbox,
-            ),
-          IconButton(
-            tooltip: 'Konto',
-            icon: const Icon(Icons.account_circle_outlined),
-            onPressed: () => Navigator.of(context).push(
-              MaterialPageRoute<void>(builder: (_) => const AccountPage()),
-            ),
-          ),
-          IconButton(
-            tooltip: 'Abmelden',
-            icon: const Icon(Icons.logout),
-            onPressed: app.signOut,
-          ),
-        ],
-      ),
-      body: Column(
-        children: [
-          if (widget.checkoutStatus != null)
-            Padding(
-              padding: const EdgeInsets.fromLTRB(Spacing.lg, Spacing.lg, Spacing.lg, 0),
-              child: CheckoutReturnBanner(status: widget.checkoutStatus!),
-            ),
-          Expanded(
-            child: Row(
-              children: [
-                if (breit)
-                  NavigationRail(
-                    selectedIndex: _index,
-                    onDestinationSelected: (i) => setState(() => _index = i),
-                    labelType: NavigationRailLabelType.all,
-                    destinations: [
-                      for (final d in _destinations)
-                        NavigationRailDestination(
-                          icon: Icon(d.icon),
-                          label: Text(d.label),
-                        ),
-                    ],
+      appBar: hideChrome
+          ? null
+          : AppBar(
+              title: Text(_destinations[_index].label),
+              actions: [
+                if (offline)
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: Spacing.xs),
+                    child: Tooltip(
+                      message: 'Letzter Kontakt zum Server ist fehlgeschlagen - '
+                          'zeigt zuletzt gespeicherte Daten.',
+                      child: SubsumoChip(label: 'offline', icon: Icons.cloud_off),
+                    ),
                   ),
-                Expanded(child: _page),
+                if (app.outbox.isNotEmpty)
+                  IconButton(
+                    tooltip: '${app.outbox.length} Bewertung(en) nicht synchronisiert',
+                    icon: const Icon(Icons.cloud_upload_outlined),
+                    onPressed: app.flushOutbox,
+                  ),
+                IconButton(
+                  tooltip: 'Konto',
+                  icon: const Icon(Icons.account_circle_outlined),
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute<void>(builder: (_) => const AccountPage()),
+                  ),
+                ),
+                IconButton(
+                  tooltip: 'Abmelden',
+                  icon: const Icon(Icons.logout),
+                  onPressed: app.signOut,
+                ),
               ],
             ),
-          ),
-        ],
+      body: SafeArea(
+        top: hideChrome,
+        child: Column(
+          children: [
+            if (!hideChrome && widget.checkoutStatus != null)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(Spacing.lg, Spacing.lg, Spacing.lg, 0),
+                child: CheckoutReturnBanner(status: widget.checkoutStatus!),
+              ),
+            Expanded(
+              child: Row(
+                children: [
+                  if (breit && !hideChrome)
+                    NavigationRail(
+                      selectedIndex: _index,
+                      onDestinationSelected: (i) => setState(() => _index = i),
+                      labelType: NavigationRailLabelType.all,
+                      destinations: [
+                        for (final d in _destinations)
+                          NavigationRailDestination(
+                            icon: Icon(d.icon),
+                            label: Text(d.label),
+                          ),
+                      ],
+                    ),
+                  Expanded(child: _page),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
-      bottomNavigationBar: breit
+      bottomNavigationBar: (breit || hideChrome)
           ? null
           : NavigationBar(
               selectedIndex: _index,
               onDestinationSelected: (i) => setState(() => _index = i),
               destinations: [
                 for (final d in _destinations)
-                  NavigationDestination(icon: Icon(d.icon), label: d.label),
+                  NavigationDestination(
+                    icon: Icon(d.icon),
+                    label: d.label,
+                  ),
               ],
             ),
     );

@@ -1,0 +1,320 @@
+topic:
+  slug: or-vwvfg-ruecknahme-widerruf
+  area: oeffentliches-recht
+  title: Ruecknahme und Widerruf, §§ 48, 49 VwVfG
+  parent: oeffentliches-recht
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: or-vwvfg-rw-abgrenzung-48-49
+  type: definition
+  front: Wonach unterscheiden sich Ruecknahme und Widerruf eines Verwaltungsakts?
+  back: Die Ruecknahme (§ 48 VwVfG) betrifft einen von Anfang an rechtswidrigen Verwaltungsakt
+    und beseitigt ihn rueckwirkend fuer die Vergangenheit. Der Widerruf (§ 49 VwVfG)
+    betrifft einen im Zeitpunkt seines Erlasses rechtmaessigen Verwaltungsakt, dessen
+    Aufhebung an spaeter eintretende Umstaende anknuepft und grundsaetzlich nur fuer
+    die Zukunft wirkt. Beide Vorschriften setzen einen unanfechtbaren oder noch anfechtbaren
+    Verwaltungsakt voraus und sind nach dem Begleitwort des Gesetzes als Ermessensvorschriften
+    ausgestaltet.
+  norms:
+  - § 48 VwVfG
+  - § 49 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwvfg-rw-ruecknahme-voraussetzungen
+  type: norm
+  front: Welche Grundvoraussetzungen nennt § 48 Abs. 1 S. 1 VwVfG fuer die Ruecknahme?
+  back: Ein rechtswidriger Verwaltungsakt kann, auch nachdem er unanfechtbar geworden
+    ist, ganz oder teilweise mit Wirkung fuer die Zukunft oder fuer die Vergangenheit
+    zurueckgenommen werden. Die Rechtswidrigkeit muss im Zeitpunkt des Erlasses vorgelegen
+    haben oder nachtraeglich fortbestehen; die Rechtsfolge steht im Ermessen der Behoerde,
+    soweit nicht die besonderen Einschraenkungen der Absaetze 2 bis 4 eingreifen.
+  norms:
+  - § 48 Abs. 1 S. 1 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  stand: 2026-09
+- slug: or-vwvfg-rw-vertrauensschutz-abs2
+  type: streitstand
+  front: Wie funktioniert der Vertrauensschutz bei Ruecknahme eines begünstigenden
+    VA mit Geld- oder Sachleistung nach § 48 Abs. 2 VwVfG?
+  back: Begruendet oder bestaetigt der rechtswidrige Verwaltungsakt eine einmalige
+    oder laufende Geld- oder teilbare Sachleistung, darf er nicht zurueckgenommen
+    werden, soweit der Begünstigte auf seinen Bestand vertraut hat und sein Vertrauen
+    unter Abwaegung mit dem oeffentlichen Interesse an einer Ruecknahme schutzwuerdig
+    ist. Auf Vertrauen kann sich der Begünstigte insbesondere berufen, wenn er gewaehrte
+    Leistungen verbraucht oder eine Vermoegensdisposition getroffen hat, die er nicht
+    mehr oder nur unter unzumutbaren Nachteilen rueckgaengig machen kann. Der Vertrauensschutz
+    ist ausgeschlossen, wenn einer der in § 48 Abs. 2 S. 3 VwVfG genannten Faelle
+    vorliegt - insbesondere arglistige Taeuschung, Drohung, Bestechung, vorsaetzlich
+    oder grob fahrlaessig unrichtige oder unvollstaendige Angaben oder Kenntnis bzw.
+    grob fahrlaessige Unkenntnis der Rechtswidrigkeit.
+  norms:
+  - § 48 Abs. 2 S. 1 VwVfG
+  - § 48 Abs. 2 S. 2 VwVfG
+  - § 48 Abs. 2 S. 3 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwvfg-rw-beguenstigende-va-abs3
+  type: norm
+  front: Wie wird ein rechtswidriger begünstigender VA ohne Geld- oder Sachleistung
+    nach § 48 Abs. 3 VwVfG zurueckgenommen?
+  back: Bei sonstigen begünstigenden Verwaltungsakten - also solchen ohne Geld- oder
+    teilbare Sachleistung - ist die Ruecknahme fuer die Vergangenheit nicht an die
+    qualifizierten Ausschlussgruende des Absatzes 2 gebunden. Vertraut der Begünstigte
+    gleichwohl schutzwuerdig auf den Bestand und wird ihm dadurch ein Vermoegensnachteil
+    verursacht, hat ihm die Behoerde auf Antrag diesen Nachteil bis zur Hoehe des
+    Interesses am Fortbestand auszugleichen - kein Bestandsschutz wie in Absatz 2,
+    sondern nur ein finanzieller Ausgleichsanspruch.
+  norms:
+  - § 48 Abs. 3 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  stand: 2026-09
+- slug: or-vwvfg-rw-jahresfrist-abs4
+  type: norm
+  front: Wann beginnt die Jahresfrist des § 48 Abs. 4 VwVfG und was regelt sie?
+  back: Die Jahresfrist des § 48 Abs. 4 VwVfG gilt fuer die Faelle des § 48 Abs. 2
+    S. 3 Nr. 2 und 3 VwVfG sowie fuer sonstige nachtraeglich bekannt gewordene ruecknahmebegruendende
+    Tatsachen - die Ruecknahme ist dann nur innerhalb eines Jahres seit dem Zeitpunkt
+    zulaessig, in dem die Behoerde von den Tatsachen Kenntnis erlangt hat, die die
+    Ruecknahme des rechtswidrigen Verwaltungsakts rechtfertigen. Fuer den Fall des
+    § 48 Abs. 2 S. 3 Nr. 1 VwVfG (arglistige Taeuschung, Drohung oder Bestechung)
+    gilt die Jahresfrist dagegen gerade NICHT (§ 48 Abs. 4 S. 2 VwVfG) - die Ruecknahme
+    ist dort zeitlich unbefristet moeglich. Massgeblich ist im Uebrigen die vollstaendige
+    Kenntnis der fuer die Ruecknahmeentscheidung erheblichen Tatsachen durch den zustaendigen
+    Amtstraeger, nicht blosse Zweifel oder ein bloss geaeusserter Verdacht.
+  norms:
+  - § 48 Abs. 4 VwVfG
+  - § 48 Abs. 2 S. 3 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  stand: 2026-09
+- slug: or-vwvfg-rw-widerruf-belastend-begünstigend
+  type: definition
+  front: Wie unterscheidet § 49 VwVfG den Widerruf belastender von begünstigenden
+    Verwaltungsakten?
+  back: Ein rechtmaessiger, nicht begünstigender Verwaltungsakt kann nach § 49 Abs.
+    1 VwVfG auch nachtraeglich ganz oder teilweise widerrufen werden, ausser ein Verwaltungsakt
+    gleichen Inhalts muesste erneut erlassen werden oder ein Widerruf ist aus anderen
+    Gruenden unzulaessig - die Behoerde hat hierbei freies Ermessen. Ein rechtmaessiger
+    begünstigender Verwaltungsakt darf dagegen nach § 49 Abs. 2 S. 1 VwVfG nur widerrufen
+    werden, wenn einer der dort abschliessend genannten Gruende vorliegt, etwa ein
+    Widerrufsvorbehalt, die Nichterfuellung einer Auflage oder eine nachtraegliche
+    Aenderung der Sach- oder Rechtslage, die das oeffentliche Interesse gefaehrden
+    wuerde.
+  norms:
+  - § 49 Abs. 1 VwVfG
+  - § 49 Abs. 2 S. 1 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwvfg-rw-entschaedigung-49-abs6
+  type: norm
+  front: Wann entsteht ein Entschaedigungsanspruch nach § 49 Abs. 6 VwVfG?
+  back: Widerruft die Behoerde einen rechtmaessigen begünstigenden Verwaltungsakt
+    aus einem der Gruende des § 49 Abs. 2 S. 1 Nr. 3, 4, 5 VwVfG - also wegen nachtraeglicher
+    Aenderung der Rechtslage, neuer Tatsachen oder zur Abwendung schwerer Nachteile
+    fuer das Gemeinwohl -, hat sie dem Betroffenen auf Antrag den Vermoegensnachteil
+    auszugleichen, den er dadurch erleidet, dass er auf den Bestand des Verwaltungsakts
+    vertraut hat, soweit sein Vertrauen schutzwuerdig ist. Beim Widerruf wegen eines
+    Widerrufsvorbehalts (Nr. 1) oder wegen Nichterfuellung einer Auflage (Nr. 2) besteht
+    dagegen KEIN Anspruch aus Abs. 6, weil der Begünstigte dort entweder von vornherein
+    mit dem Widerruf rechnen musste oder den Grund selbst zu vertreten hat. Der Anspruch
+    ist der Hoehe nach auf das Erfuellungsinteresse begrenzt.
+  norms:
+  - § 49 Abs. 6 VwVfG
+  - § 49 Abs. 2 S. 1 Nr. 3, 4, 5 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  stand: 2026-09
+- slug: or-vwvfg-rw-ermessen-rechtsfolge
+  type: schema_step
+  front: Welche Pruefungsstelle betrifft das Ermessen bei §§ 48, 49 VwVfG und was
+    folgt daraus?
+  back: Sowohl § 48 als auch § 49 VwVfG formulieren die Rechtsfolge als 'kann' - die
+    Ruecknahme bzw. der Widerruf stehen damit im Ermessen der Behoerde, das nach §
+    40 VwVfG entsprechend dem Zweck der Ermaechtigung und unter Einhaltung der gesetzlichen
+    Grenzen auszuueben ist. In der Klausur ist die Ermessensausuebung als eigener
+    Pruefungspunkt NACH der Feststellung, dass die tatbestandlichen Voraussetzungen
+    (Rechtswidrigkeit/Rechtmaessigkeit, kein Fristablauf, kein Vertrauensschutzausschluss)
+    vorliegen, zu pruefen - haeufig ist das Ermessen bei eindeutigem Ueberwiegen des
+    oeffentlichen Interesses (z. B. Verstoss gegen zwingendes Recht) auf Null reduziert.
+  norms:
+  - § 48 VwVfG
+  - § 49 VwVfG
+  - § 40 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: or-schema-vwvfg-ruecknahme-48
+  title: Ruecknahme eines rechtswidrigen Verwaltungsakts, § 48 VwVfG
+  norms:
+  - § 48 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Anwendbarkeit des § 48 VwVfG
+    children:
+    - label: 1. Verwaltungsakt i.S.d. § 35 VwVfG
+    - label: 2. Rechtswidrigkeit des Verwaltungsakts
+  - label: II. Rücknahmesperre bei begünstigenden Verwaltungsakten
+    children:
+    - label: '1. Geld- oder teilbare Sachleistung: Vertrauensschutz nach § 48 Abs.
+        2 VwVfG'
+      children:
+      - label: a) Vertrauen auf den Bestand betätigt (Verbrauch, Disposition)
+      - label: b) Schutzwürdigkeit des Vertrauens
+      - label: c) Kein Ausschlussgrund nach § 48 Abs. 2 S. 3 VwVfG
+    - label: '2. Sonstige begünstigende VA: nur Ausgleichsanspruch nach § 48 Abs.
+        3 VwVfG'
+  - label: III. Jahresfrist, § 48 Abs. 4 VwVfG
+    hinweis: Gilt bei nachtraeglich bekannt gewordenen Tatsachen und in den Faellen
+      des § 48 Abs. 2 S. 3 Nr. 2, 3 VwVfG. Im Fall der Nr. 1 (arglistige Taeuschung,
+      Drohung, Bestechung) gilt die Jahresfrist nach § 48 Abs. 4 S. 2 VwVfG gerade
+      nicht - Ruecknahme dort zeitlich unbefristet moeglich.
+  - label: IV. Ermessen, § 40 VwVfG
+    hinweis: '''Kann''-Vorschrift; Ermessensreduzierung auf Null bei ueberwiegendem
+      oeffentlichen Interesse pruefen.'
+  - label: 'V. Ergebnis: Rechtsfolge (ex tunc oder ex nunc)'
+- slug: or-schema-vwvfg-widerruf-49
+  title: Widerruf eines rechtmaessigen Verwaltungsakts, § 49 VwVfG
+  norms:
+  - § 49 VwVfG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Anwendbarkeit des § 49 VwVfG
+    children:
+    - label: 1. Verwaltungsakt i.S.d. § 35 VwVfG
+    - label: 2. Rechtmaessigkeit im Erlasszeitpunkt und fortbestehend
+  - label: II. Widerrufsgrund
+    children:
+    - label: '1. Belastender VA: freies Widerrufsrecht, § 49 Abs. 1 VwVfG'
+    - label: '2. Begünstigender VA: abschliessender Katalog, § 49 Abs. 2 S. 1 VwVfG'
+  - label: III. Ermessen, § 40 VwVfG
+  - label: IV. Entschaedigung, § 49 Abs. 6 VwVfG
+    hinweis: Nur bei Widerruf aus den Gruenden des § 49 Abs. 2 S. 1 Nr. 3, 4, 5 VwVfG
+      - nicht bei Widerrufsvorbehalt (Nr. 1) oder Auflagenverstoss (Nr. 2).
+  - label: V. Ergebnis
+faelle:
+- slug: or-fall-foerderbescheid-ruecknahme
+  title: Der zu spaet entdeckte Fehler im Foerderbescheid
+  difficulty: 4
+  minutes: 55
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VwVfG, amtliche Fassung
+  facts: Die zustaendige (fiktive) Landesbehoerde bewilligt der Unternehmerin U mit
+    Bescheid vom 10.01.2025 eine einmalige Existenzgruendungsfoerderung in Hoehe von
+    20.000 Euro, die U im Februar 2025 vollstaendig fuer die Anschaffung von Betriebsausstattung
+    verwendet. Tatsaechlich haette U die Foerderung wegen Ueberschreitens der massgeblichen
+    Umsatzgrenze nicht erhalten duerfen; der zustaendige Sachbearbeiter hatte bei
+    der Bewilligung einen Rechenfehler in den eingereichten Unterlagen uebersehen,
+    obwohl U alle Angaben wahrheitsgemaess und vollstaendig gemacht hatte. Im Dezember
+    2025 faellt der Fehler einem anderen Sachbearbeiter bei einer Stichprobenpruefung
+    auf; die Behoerde stellt daraufhin im Januar 2026 fest, dass der Bescheid von
+    Anfang an rechtswidrig war, und moechte ihn nun zurueknehmen und die Foerdersumme
+    zurueckfordern.
+  question: Kann die Behoerde den Foerderbescheid im Januar 2026 gegenueber U wirksam
+    zuruecknehmen?
+  steps:
+  - prompt: Welche Ermaechtigungsgrundlage kommt fuer die Ruecknahme in Betracht?
+    erwartung: § 48 Abs. 1 VwVfG, da der Foerderbescheid ein begünstigender Verwaltungsakt
+      ist, der von Anfang an rechtswidrig war.
+  - prompt: Steht der Ruecknahme ein Vertrauensschutz nach § 48 Abs. 2 VwVfG entgegen?
+    erwartung: Der Bescheid gewaehrt eine einmalige Geldleistung, sodass § 48 Abs.
+      2 VwVfG anwendbar ist. U hat die Foerderung verbraucht (Anschaffung von Betriebsausstattung),
+      also auf den Bestand vertraut und eine nicht mehr rueckgaengig zu machende Disposition
+      getroffen.
+  - prompt: Ist das Vertrauen der U schutzwuerdig, oder greift ein Ausschlussgrund
+      nach § 48 Abs. 2 S. 3 VwVfG?
+    erwartung: 'Kein Ausschlussgrund einschlaegig: U hat wahrheitsgemaesse und vollstaendige
+      Angaben gemacht und weder vorsaetzlich noch grob fahrlaessig gehandelt; der
+      Fehler lag allein bei der Behoerde. Das Vertrauen ist grundsaetzlich schutzwuerdig.'
+  - prompt: Ist die Ruecknahme innerhalb der Jahresfrist des § 48 Abs. 4 VwVfG erfolgt?
+    erwartung: Ja - die Behoerde hat erst im Dezember 2025 durch die Stichprobenpruefung
+      vollstaendige Kenntnis der ruecknahmebegruendenden Tatsachen erlangt; die Ruecknahme
+      im Januar 2026 liegt innerhalb eines Jahres danach.
+  - prompt: Wie wirkt sich das schutzwuerdige Vertrauen der U im Ergebnis aus?
+    erwartung: Die Ruecknahme ist wegen des schutzwuerdigen, nicht ausgeschlossenen
+      Vertrauens der U nach § 48 Abs. 2 S. 1 VwVfG unzulaessig; die Behoerde kann
+      den Bescheid nicht wirksam zuruecknehmen, sondern muesste allenfalls fuer die
+      Zukunft widerrufen, wenn ein Widerrufsgrund vorliegt.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: § 48 Abs. 1 VwVfG als einschlaegige Ermaechtigungsgrundlage erkannt
+      weight: 1.5
+      required: false
+      norms:
+      - § 48 Abs. 1 VwVfG
+      keywords:
+      - '48'
+      - rechtswidrig
+      card_slugs:
+      - or-vwvfg-rw-ruecknahme-voraussetzungen
+    - id: p2
+      label: Anwendbarkeit des § 48 Abs. 2 VwVfG wegen Geldleistung erkannt
+      weight: 1.5
+      required: false
+      norms:
+      - § 48 Abs. 2 VwVfG
+      keywords:
+      - Geldleistung
+      - Abs. 2
+      card_slugs:
+      - or-vwvfg-rw-vertrauensschutz-abs2
+    - id: p3
+      label: Vertrauensbetaetigung durch Verbrauch der Foerdersumme (Disposition)
+        benannt
+      weight: 2.0
+      required: true
+      keywords:
+      - Vertrauensbetaetigung
+      - Disposition
+      - verbraucht
+      card_slugs:
+      - or-vwvfg-rw-vertrauensschutz-abs2
+    - id: p4
+      label: Kein Ausschlussgrund nach § 48 Abs. 2 S. 3 VwVfG, da U weder taeuschte
+        noch grob fahrlaessig handelte
+      weight: 3.0
+      required: true
+      keywords:
+      - kein Ausschlussgrund
+      - grob fahrlaessig
+      - Fehler der Behoerde
+      card_slugs:
+      - or-vwvfg-rw-vertrauensschutz-abs2
+    - id: p5
+      label: Jahresfrist des § 48 Abs. 4 VwVfG gewahrt (Kenntnis erst Dezember 2025)
+      weight: 2.0
+      required: true
+      keywords:
+      - Jahresfrist
+      - Kenntnis
+      card_slugs:
+      - or-vwvfg-rw-jahresfrist-abs4
+    - id: p6
+      label: 'Ergebnis: Ruecknahme wegen schutzwuerdigen Vertrauens unzulaessig'
+      weight: 1.0
+      required: false
+      keywords:
+      - unzulaessig
+      - Vertrauen schutzwuerdig

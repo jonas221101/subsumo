@@ -280,6 +280,9 @@ faelle:
       keywords:
       - Sachmangel
       - vereinbarte Beschaffenheit
+      card_slugs:
+      - zr-kaufrecht-sachmangel-begriff
+      - zr-kaufrecht-subjektive-anforderungen
     - id: p3
       label: Vorliegen des Mangels bei Gefahruebergang gepruft
       weight: 1.0
@@ -288,6 +291,8 @@ faelle:
       - § 446 BGB
       keywords:
       - Gefahruebergang
+      card_slugs:
+      - zr-kaufrecht-sachmangel-begriff
     - id: p4
       label: Unmoeglichkeit der gewaehlten Nacherfuellungsart nach § 275 Abs. 1 BGB
         erkannt
@@ -298,6 +303,8 @@ faelle:
       keywords:
       - Unmoeglichkeit
       - '275'
+      card_slugs:
+      - zr-kaufrecht-nacherfuellung-verweigerung
     - id: p5
       label: Entbehrlichkeit weiterer Fristsetzung nach § 326 Abs. 5 BGB korrekt hergeleitet
       weight: 2.0
@@ -307,6 +314,8 @@ faelle:
       keywords:
       - '326'
       - Fristsetzung entbehrlich
+      card_slugs:
+      - zr-kaufrecht-fristsetzung-entbehrlich
     - id: p6
       label: Unerheblichkeit der Pflichtverletzung nach § 323 Abs. 5 S. 2 BGB gepruft
         und verneint

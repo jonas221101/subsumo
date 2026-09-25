@@ -59,6 +59,19 @@ def test_erwartungshorizont_wird_geparst():
     assert punkte[1].required is False
 
 
+def test_card_slugs_ist_additiv_und_default_leer():
+    """Bestehende Pruefpunkte ohne card_slugs (SUB-263) bleiben unveraendert."""
+    punkte = parse_expectation(ERWARTUNG)
+    assert all(p.card_slugs == [] for p in punkte)
+
+    mit_karten = {
+        "pruefpunkte": [
+            {"id": "p1", "label": "Test", "card_slugs": ["karte-a", "karte-b"]},
+        ]
+    }
+    assert parse_expectation(mit_karten)[0].card_slugs == ["karte-a", "karte-b"]
+
+
 def test_leerer_erwartungshorizont_faellt_nicht_um():
     assert parse_expectation(None) == []
     assert parse_expectation({}) == []

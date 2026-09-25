@@ -49,3 +49,12 @@ flutter:
     - family: Subsumo
       fonts:
         - asset: assets/fonts/DejaVuSans.ttf
+    # Zweite Schriftfamilie (SUB-227/SUB-228, UI-Relaunch-Brief), streng
+    # begrenzt auf die heroLarge/heroSmall-Rolle - siehe
+    # design/tokens/typography.dart und assets/fonts/LIZENZ.md. Variable
+    # Font (Achsen SOFT/WONK/opsz/wght) statt mehrerer statischer
+    # Schnitte - eine Datei deckt alle benoetigten Gewichte/optischen
+    # Groessen ab.
+    - family: Fraunces
+      fonts:
+        - asset: assets/fonts/Fraunces-Variable.ttf

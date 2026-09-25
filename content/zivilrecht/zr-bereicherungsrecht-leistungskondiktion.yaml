@@ -207,6 +207,8 @@ faelle:
       keywords:
       - '812'
       - Leistungskondiktion
+      card_slugs:
+      - zr-kondiktion-begriff-812
     - id: p2
       label: Leistung des U als bewusste, zweckgerichtete Vermoegensmehrung erkannt
       weight: 1.0
@@ -214,6 +216,8 @@ faelle:
       keywords:
       - zweckgerichtet
       - Leistung
+      card_slugs:
+      - zr-kondiktion-leistungsbegriff
     - id: p3
       label: Rechtsgrundlosigkeit erkannt, da Werklohnanspruch bereits durch erste
         Zahlung gemaess § 362 Abs. 1 BGB erloschen war
@@ -225,6 +229,8 @@ faelle:
       - '362'
       - erloschen
       - Rechtsgrund
+      card_slugs:
+      - zr-kondiktion-rechtsgrundlosigkeit
     - id: p4
       label: Kein Ausschluss nach § 814 BGB mangels Kenntnis des U bei Leistung
       weight: 1.0
@@ -234,6 +240,8 @@ faelle:
       keywords:
       - '814'
       - Kenntnis der Nichtschuld
+      card_slugs:
+      - zr-kondiktion-ausschluss-814
     - id: p5
       label: Entreicherung nach § 818 Abs. 3 BGB fuer die 800 Euro dem Grunde nach
         erwogen (keine ersparten Aufwendungen)
@@ -244,6 +252,8 @@ faelle:
       keywords:
       - '818'
       - Entreicherung
+      card_slugs:
+      - zr-kondiktion-entreicherung-818-3
     - id: p6
       label: Verschaerfte Haftung nach § 819 Abs. 1 BGB wegen Kenntnis des H vor der
         Vermoegensdisposition erkannt und Ausschluss der Entreicherungseinrede fuer
@@ -256,6 +266,8 @@ faelle:
       - '819'
       - verschaerfte Haftung
       - Kenntnis
+      card_slugs:
+      - zr-kondiktion-verschaerfte-haftung-819
     - id: p7
       label: 'Ergebnis: Anspruch auf volle 1.200 Euro'
       weight: 1.0

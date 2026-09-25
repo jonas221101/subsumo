@@ -16,12 +16,18 @@ class SubsumoFeedbackBlock extends StatelessWidget {
     required this.message,
     this.severity = FeedbackSeverity.neutral,
     this.detail,
+    this.iconSize = 20,
     super.key,
   });
 
   final String message;
   final String? detail;
   final FeedbackSeverity severity;
+
+  /// Groesser fuer Leerzustaende (siehe [ScreenStatus.empty]) - reine
+  /// Groessenverfeinerung, das Icon-Vokabular selbst bleibt unveraendert
+  /// (docs/25-ui-relaunch-brief.md Abschnitt 6).
+  final double iconSize;
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +63,7 @@ class SubsumoFeedbackBlock extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(icon, size: 20, color: color),
+          Icon(icon, size: iconSize, color: color),
           const SizedBox(width: Spacing.sm),
           Expanded(
             child: Column(

@@ -1,0 +1,283 @@
+topic:
+  slug: or-versammlungsfreiheit
+  area: oeffentliches-recht
+  title: 'Art. 8 GG: Versammlungsfreiheit'
+  parent: or-grundrechte
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: or-gr-art8-versammlungsbegriff
+  type: streitstand
+  front: 'Definiere: Versammlung i.S.d. Art. 8 GG - enger und weiter Begriff'
+  back: Nach dem vom Bundesverfassungsgericht bevorzugten engeren Versammlungsbegriff
+    ist eine Versammlung eine oertliche Zusammenkunft mehrerer Personen zur gemeinschaftlichen,
+    auf Kommunikation angelegten Eroerterung oder Kundgebung mit dem Ziel, an der
+    oeffentlichen Meinungsbildung teilzunehmen. Der weitere, teilweise in der Literatur
+    vertretene Begriff laesst jede gemeinsame Zusammenkunft zu einem gemeinsamen Zweck
+    genuegen, unabhaengig von einem Bezug zur oeffentlichen Meinungsbildung. Praktisch
+    bedeutsam wird der Streit bei reinen Vergnuegungs- oder Massenveranstaltungen
+    ohne jeden meinungsbildenden Bezug, die nach dem engeren Begriff nicht unter Art.
+    8 GG fallen.
+  norms:
+  - Art. 8 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art8-persoenlicher-schutzbereich
+  type: definition
+  front: Wer ist Grundrechtstraeger des Art. 8 GG?
+  back: Art. 8 GG ist ein Deutschen-Grundrecht (Art. 116 GG) und schuetzt unmittelbar
+    nur deutsche Staatsangehoerige sowie inlaendische juristische Personen, soweit
+    das Grundrecht seinem Wesen nach auf sie anwendbar ist (Art. 19 Abs. 3 GG). Auslaender
+    koennen sich fuer ihre Versammlungsfreiheit auf die allgemeine Handlungsfreiheit
+    aus Art. 2 Abs. 1 GG berufen, die inhaltlich weitgehend an die Massstaebe des
+    Art. 8 GG angelehnt wird.
+  norms:
+  - Art. 8 Abs. 1 GG
+  - Art. 116 GG
+  - Art. 19 Abs. 3 GG
+  - Art. 2 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art8-friedlich-ohne-waffen
+  type: definition
+  front: Welche Bedeutung hat das Merkmal 'friedlich und ohne Waffen' in Art. 8 Abs.
+    1 GG?
+  back: '''Friedlich und ohne Waffen'' ist entgegen dem ersten Anschein keine Schranke,
+    sondern ein Tatbestandsmerkmal des Schutzbereichs selbst: Versammlungen, die diese
+    Voraussetzung nicht erfuellen, unterfallen bereits gar nicht dem Schutz des Art.
+    8 GG. Unfriedlich ist eine Versammlung erst bei Teilnehmern, die einen gewalttaetigen
+    oder aufruehrerischen Verlauf nehmen bzw. aktiv Gewalttaetigkeiten gegen Personen
+    oder Sachen begehen - blosse Behinderungen Dritter oder Unbequemlichkeiten genuegen
+    nicht. Nach dem Grundsatz der Kollektivunfriedlichkeit werden friedliche Teilnehmer
+    durch gewalttaetige Einzelne oder Minderheiten in einer Versammlung nicht automatisch
+    aus dem Schutzbereich verdraengt.'
+  norms:
+  - Art. 8 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art8-freier-himmel-geschlossene-raeume
+  type: definition
+  front: Wie unterscheidet Art. 8 GG Versammlungen unter freiem Himmel von Versammlungen
+    in geschlossenen Raeumen?
+  back: Art. 8 Abs. 1 GG gewaehrleistet zunaechst beide Versammlungsformen vorbehaltlos.
+    Der Gesetzesvorbehalt des Art. 8 Abs. 2 GG erfasst aber ausdruecklich NUR Versammlungen
+    unter freiem Himmel - Versammlungen in geschlossenen Raeumen bleiben vorbehaltlos
+    gewaehrleistet und koennen nur durch kollidierendes Verfassungsrecht (verfassungsimmanente
+    Schranken) eingeschraenkt werden. Grund fuer diese Unterscheidung ist die groessere
+    potenzielle Gefahrenlage und Kollisionsdichte mit Rechten Dritter bei Versammlungen
+    im oeffentlichen Strassenraum.
+  norms:
+  - Art. 8 Abs. 1 GG
+  - Art. 8 Abs. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art8-schrankenvorbehalt-abs2
+  type: norm
+  front: Was regelt der Schrankenvorbehalt des Art. 8 Abs. 2 GG?
+  back: Fuer Versammlungen unter freiem Himmel kann dieses Recht durch Gesetz oder
+    auf Grund eines Gesetzes beschraenkt werden - ein einfacher Gesetzesvorbehalt.
+    Das Versammlungsrecht ist seit der Foederalismusreform 2006 ueberwiegend Laendersache;
+    die Beschraenkungen muessen unabhaengig davon stets ihrerseits verhaeltnismaessig
+    sein und duerfen die Versammlungsfreiheit nicht in ihrem Wesensgehalt aushoehlen
+    (Art. 19 Abs. 2 GG).
+  norms:
+  - Art. 8 Abs. 2 GG
+  - Art. 19 Abs. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art8-brokdorf-grundsaetze
+  type: rechtsprechung
+  front: Welche Grundsaetze stellte das Bundesverfassungsgericht im Brokdorf-Beschluss
+    (BVerfGE 69, 315) zur Versammlungsfreiheit auf?
+  back: 'Das Bundesverfassungsgericht betonte die konstituierende Bedeutung der Versammlungsfreiheit
+    fuer eine freiheitliche demokratische Ordnung als Ausdruck unmittelbarer kollektiver
+    Teilhabe an der oeffentlichen Meinungsbildung. Eine allgemeine Anmeldepflicht
+    ist als blosse Ordnungsvorschrift mit Art. 8 Abs. 1 GG vereinbar (kein verstecktes
+    Erlaubnisverfahren). Behoerden trifft eine Kooperationspflicht: sie sollen vor
+    einschraenkenden Massnahmen den Dialog mit den Veranstaltern suchen. Verbot oder
+    Aufloesung einer Versammlung sind nur als letztes Mittel (ultima ratio) bei unmittelbarer,
+    durch Tatsachen belegter Gefaehrdung wichtiger Rechtsgueter zulaessig, die sich
+    aus einer Gesamtwuerdigung der erkennbaren Umstaende ergeben muss - blosse Vermutungen
+    oder das Verhalten einzelner gewaltbereiter Teilnehmer genuegen nicht, um die
+    gesamte Versammlung zu verbieten.'
+  norms:
+  - Art. 8 Abs. 1 GG
+  quellen:
+  - BVerfGE 69, 315 (Brokdorf), amtlicher Leitsatz
+  stand: 2026-09
+- slug: or-gr-art8-verhaeltnis-art5
+  type: streitstand
+  front: In welchem Verhaeltnis steht Art. 8 GG zu Art. 5 Abs. 1 GG?
+  back: Fuer die kollektive, oertlich gebundene Kundgabe einer Meinung im Rahmen einer
+    Versammlung ist Art. 8 GG als das speziellere Grundrecht anzusehen und verdraengt
+    insoweit Art. 5 Abs. 1 GG (lex specialis). Der Inhalt der auf der Versammlung
+    geaeusserten Meinungen selbst bleibt aber zugleich am Maßstab des Art. 5 Abs.
+    1 GG zu messen, etwa wenn es um die inhaltliche Zulaessigkeit einzelner Aeusserungen
+    (z. B. Schmaehkritik) unabhaengig vom Versammlungsbezug geht - nach vorzugswuerdiger
+    Auffassung liegt dann eine parallele Anwendbarkeit beider Grundrechte mit unterschiedlichem
+    Pruefungsgegenstand vor, keine echte Konkurrenzfrage.
+  norms:
+  - Art. 8 Abs. 1 GG
+  - Art. 5 Abs. 1 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: or-schema-art8-versammlungsfreiheit
+  title: Eingriff in Art. 8 GG und verfassungsrechtliche Rechtfertigung
+  norms:
+  - Art. 8 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Schutzbereich
+    children:
+    - label: '1. Persoenlich: Deutsche i.S.d. Art. 116 GG (Art. 19 Abs. 3 GG bei juristischen
+        Personen)'
+    - label: '2. Sachlich: Versammlung (oertliche Zusammenkunft mehrerer Personen
+        zur gemeinsamen Meinungsbildung) - friedlich und ohne Waffen'
+    - label: 3. Unter freiem Himmel oder in geschlossenen Raeumen?
+  - label: II. Eingriff
+    hinweis: Staatliche Massnahme, die die Durchfuehrung, den Ablauf oder die Teilnahme
+      an der Versammlung erschwert oder verhindert - z. B. Auflagen, Verbot, Aufloesung.
+  - label: III. Verfassungsrechtliche Rechtfertigung
+    children:
+    - label: '1. Bei Versammlungen unter freiem Himmel: Schranke des Art. 8 Abs. 2
+        GG (Gesetzesvorbehalt)'
+    - label: '2. Bei Versammlungen in geschlossenen Raeumen: nur verfassungsimmanente
+        Schranken'
+    - label: 3. Formelle Verfassungsmaessigkeit der Eingriffsgrundlage
+    - label: 4. Materielle Verfassungsmaessigkeit
+      children:
+      - label: a) Kooperationsgrundsatz beachtet (Brokdorf)
+      - label: 'b) Bei Verbot/Aufloesung: unmittelbare Gefaehrdung wichtiger Rechtsgueter
+          aufgrund Gesamtwuerdigung (ultima ratio)'
+      - label: c) Verhaeltnismaessigkeit im engeren Sinne
+  - label: IV. Ergebnis
+faelle:
+- slug: or-fall-kundgebung-vereinzelte-stoerer
+  title: Die aufgeloeste Kundgebung wegen einzelner Stoerer
+  difficulty: 4
+  minutes: 50
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  facts: Ein (fiktiver) Buendnis meldet fristgerecht eine Kundgebung mit erwarteten
+    2.000 Teilnehmern auf einem zentralen Platz an und sucht im Vorfeld das Gespraech
+    mit der zustaendigen Behoerde ueber den geplanten Ablauf. Waehrend der Kundgebung
+    wirft eine kleine Gruppe von etwa 15 vermummten Personen am Rande der Versammlung
+    Flaschen in Richtung eingesetzter Beamter; die uebrigen rund 2.000 Teilnehmer
+    verhalten sich durchgehend friedlich und distanzieren sich lautstark von den Ausschreitungen.
+    Die Einsatzleitung loest daraufhin ohne vorherige Ankuendigung die gesamte Kundgebung
+    auf und fordert alle Anwesenden zum sofortigen Verlassen des Platzes auf.
+  question: War die Aufloesung der gesamten Kundgebung mit Art. 8 Abs. 1 GG vereinbar?
+  steps:
+  - prompt: Ist der Schutzbereich des Art. 8 Abs. 1 GG fuer die gesamte Kundgebung
+      eroeffnet?
+    erwartung: Ja - es handelt sich um eine Versammlung unter freiem Himmel mit auf
+      Meinungsbildung gerichtetem Zweck; die weit ueberwiegende Mehrheit der Teilnehmer
+      verhielt sich friedlich, sodass nach dem Grundsatz der Kollektivunfriedlichkeit
+      das gewalttaetige Verhalten einzelner die Versammlung als Ganzes nicht aus dem
+      Schutzbereich verdraengt.
+  - prompt: Liegt ein Eingriff vor?
+    erwartung: Ja - die Aufloesung beendet die Versammlung fuer alle Teilnehmer und
+      hindert sie an der weiteren Ausuebung ihrer Versammlungsfreiheit.
+  - prompt: Ist die Aufloesung durch den Gesetzesvorbehalt des Art. 8 Abs. 2 GG grundsaetzlich
+      rechtfertigungsfaehig?
+    erwartung: Ja - da es sich um eine Versammlung unter freiem Himmel handelt, ist
+      der einfache Gesetzesvorbehalt des Art. 8 Abs. 2 GG eroeffnet.
+  - prompt: Genuegt das Verhalten der 15 vermummten Personen fuer eine Aufloesung
+      der gesamten Kundgebung nach den Brokdorf-Grundsaetzen?
+    erwartung: Nein. Nach den Brokdorf-Grundsaetzen ist die Aufloesung einer Versammlung
+      nur als letztes Mittel bei unmittelbarer, durch Tatsachen belegter Gefaehrdung
+      wichtiger Rechtsgueter zulaessig, die aus einer Gesamtwuerdigung der Umstaende
+      folgt. Das Verhalten einer kleinen Minderheit von 15 Personen bei rund 2.000
+      ueberwiegend friedlichen und sich distanzierenden Teilnehmern rechtfertigt keine
+      Kollektivmassnahme gegen die gesamte Versammlung; mildere Mittel wie ein gezieltes
+      Einschreiten gegen die einzelnen Stoerer waeren vorrangig zu pruefen gewesen.
+  - prompt: Wie wirkt sich die vorangegangene Kooperation des Buendnisses mit der
+      Behoerde auf die Bewertung aus?
+    erwartung: 'Sie spricht zusaetzlich gegen die Rechtmaessigkeit der Aufloesung:
+      Die Behoerde hatte bereits im Vorfeld Gelegenheit zum Dialog, und die kooperative
+      Haltung der Veranstalter haette bei der Verhaeltnismaessigkeitspruefung zugunsten
+      mildererer Massnahmen beruecksichtigt werden muessen, statt die gesamte Kundgebung
+      ohne vorherige Ankuendigung aufzuloesen.'
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: 'Kollektivunfriedlichkeit korrekt verneint: Schutzbereich fuer die gesamte
+        Versammlung eroeffnet'
+      weight: 2.0
+      required: true
+      keywords:
+      - Kollektivunfriedlichkeit
+      - friedliche Mehrheit
+      - Schutzbereich eroeffnet
+      card_slugs:
+      - or-gr-art8-friedlich-ohne-waffen
+    - id: p2
+      label: Eingriff durch die Aufloesung bejaht
+      weight: 1.0
+      required: false
+      keywords:
+      - Eingriff
+      - Aufloesung
+      card_slugs:
+      - or-gr-eingriff
+    - id: p3
+      label: Brokdorf-Massstab (ultima ratio, unmittelbare Gefaehrdung, Gesamtwuerdigung)
+        korrekt benannt und angewendet
+      weight: 3.0
+      required: true
+      keywords:
+      - Brokdorf
+      - ultima ratio
+      - Gesamtwuerdigung
+      - unmittelbare Gefaehrdung
+      card_slugs:
+      - or-gr-art8-brokdorf-grundsaetze
+    - id: p4
+      label: Erkenntnis, dass mildere Mittel (gezieltes Einschreiten gegen Einzelne)
+        vorrangig gewesen waeren
+      weight: 2.0
+      required: true
+      keywords:
+      - mildere Mittel
+      - gezieltes Einschreiten
+      - Einzelne
+      card_slugs:
+      - or-gr-art8-brokdorf-grundsaetze
+    - id: p5
+      label: Kooperationsgrundsatz als zusaetzliches Argument gegen die Rechtmaessigkeit
+        herangezogen
+      weight: 1.0
+      required: false
+      keywords:
+      - Kooperation
+      - Dialog
+      card_slugs:
+      - or-gr-art8-brokdorf-grundsaetze
+    - id: p6
+      label: 'Ergebnis: Aufloesung nicht mit Art. 8 Abs. 1 GG vereinbar'
+      weight: 1.0
+      required: false
+      keywords:
+      - nicht vereinbar
+      - rechtswidrig

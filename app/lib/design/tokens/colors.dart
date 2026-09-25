@@ -122,6 +122,12 @@ class SubsumoColors extends ThemeExtension<SubsumoColors> {
     required this.feedbackPositive,
     required this.feedbackHint,
     required this.accent,
+    required this.accentWash,
+    required this.heroGradientStart,
+    required this.heroGradientEnd,
+    required this.legalAreaZivilrecht,
+    required this.legalAreaStrafrecht,
+    required this.legalAreaOeffentlichesRecht,
   });
 
   final Color feedbackPositive;
@@ -131,25 +137,81 @@ class SubsumoColors extends ThemeExtension<SubsumoColors> {
   /// [SubsumoPalette.accent500]), niemals fuer Fortschritt/Feedback.
   final Color accent;
 
-  factory SubsumoColors.forBrightness(Brightness brightness) =>
-      brightness == Brightness.dark
-          ? const SubsumoColors(
-              feedbackPositive: SubsumoPalette.feedbackPositiveDark,
-              feedbackHint: SubsumoPalette.feedbackHintDark,
-              accent: SubsumoPalette.accent300,
-            )
-          : const SubsumoColors(
-              feedbackPositive: SubsumoPalette.feedbackPositive,
-              feedbackHint: SubsumoPalette.feedbackHint,
-              accent: SubsumoPalette.accent500,
-            );
+  /// [accent] bei niedriger Deckkraft ueber der Flaeche - nur fuer die
+  /// "Ehrlich ueber den Umfang"-Sektion der Landingpage (SUB-227/SUB-228),
+  /// niedrig genug gewaehlt, dass Fliesstextkontrast darauf nicht spuerbar
+  /// sinkt (nachgerechnet in docs/11-designsystem.md Abschnitt 5). Bewusst
+  /// keine neue Hex-Konstante, sondern [accent] selbst mit reduzierter
+  /// Deckkraft - eine zweite, fast gleiche Markenfarbe waere nur eine
+  /// weitere Pflegestelle.
+  final Color accentWash;
+
+  /// Verlaufsanfang fuer das Hero-Band auf Landing-/Preisseite
+  /// (`brand700`) - bewusst brightness-unabhaengig: das Hero-Band ist
+  /// immer eine dunkle Markenflaeche, unabhaengig vom System-Farbschema
+  /// (wie bereits `accent500` fuer die Wortmarke keine reine Light-Rolle
+  /// ist, siehe SUB-159).
+  final Color heroGradientStart;
+
+  /// Verlaufsende fuer das Hero-Band (`brand900`) - dunkelster Punkt, gegen
+  /// den `onPrimary`-Text (weiss) neu nachgerechnet ist (docs/11 Abschnitt
+  /// 5), da er dunkler ist als das bisher gegen `brand700` geprüfte Ende.
+  final Color heroGradientEnd;
+
+  /// Drei feste, wertunabhaengige Akzenttoene zur **kategorischen**
+  /// Unterscheidung der Rechtsgebiete auf oeffentlichen Flaechen (SUB-227
+  /// Abschnitt 3.6) - keine Bewertung, nur Wiedererkennung. Ausdruecklich
+  /// **keine** Ampel: die Zuordnung ist fest pro Gebiet, nie von einem
+  /// Lernstand/einer Mastery-Zahl abgeleitet. Aus der bestehenden Palette
+  /// wiederverwendet statt neuer Hex-Werte (`brand500`/`accent500`/
+  /// `ink500`, je Brightness auf die Dark-Pendants gepinnt).
+  final Color legalAreaZivilrecht;
+  final Color legalAreaStrafrecht;
+  final Color legalAreaOeffentlichesRecht;
+
+  factory SubsumoColors.forBrightness(Brightness brightness) {
+    final isDark = brightness == Brightness.dark;
+    final accentColor = isDark ? SubsumoPalette.accent300 : SubsumoPalette.accent500;
+    return SubsumoColors(
+      feedbackPositive:
+          isDark ? SubsumoPalette.feedbackPositiveDark : SubsumoPalette.feedbackPositive,
+      feedbackHint: isDark ? SubsumoPalette.feedbackHintDark : SubsumoPalette.feedbackHint,
+      accent: accentColor,
+      // withValues() statt einer const-Farbe, weil die Wash-Rolle bewusst
+      // ueber accent berechnet wird statt einen eigenen Hex-Wert zu
+      // pflegen - siehe Begruendung am Feld oben.
+      accentWash: accentColor.withValues(alpha: 0.08),
+      heroGradientStart: SubsumoPalette.brand700,
+      heroGradientEnd: SubsumoPalette.brand900,
+      legalAreaZivilrecht: isDark ? SubsumoPalette.brand300 : SubsumoPalette.brand500,
+      legalAreaStrafrecht: accentColor,
+      legalAreaOeffentlichesRecht: isDark ? SubsumoPalette.ink500Dark : SubsumoPalette.ink500,
+    );
+  }
 
   @override
-  SubsumoColors copyWith({Color? feedbackPositive, Color? feedbackHint, Color? accent}) =>
+  SubsumoColors copyWith({
+    Color? feedbackPositive,
+    Color? feedbackHint,
+    Color? accent,
+    Color? accentWash,
+    Color? heroGradientStart,
+    Color? heroGradientEnd,
+    Color? legalAreaZivilrecht,
+    Color? legalAreaStrafrecht,
+    Color? legalAreaOeffentlichesRecht,
+  }) =>
       SubsumoColors(
         feedbackPositive: feedbackPositive ?? this.feedbackPositive,
         feedbackHint: feedbackHint ?? this.feedbackHint,
         accent: accent ?? this.accent,
+        accentWash: accentWash ?? this.accentWash,
+        heroGradientStart: heroGradientStart ?? this.heroGradientStart,
+        heroGradientEnd: heroGradientEnd ?? this.heroGradientEnd,
+        legalAreaZivilrecht: legalAreaZivilrecht ?? this.legalAreaZivilrecht,
+        legalAreaStrafrecht: legalAreaStrafrecht ?? this.legalAreaStrafrecht,
+        legalAreaOeffentlichesRecht:
+            legalAreaOeffentlichesRecht ?? this.legalAreaOeffentlichesRecht,
       );
 
   @override
@@ -159,6 +221,13 @@ class SubsumoColors extends ThemeExtension<SubsumoColors> {
       feedbackPositive: Color.lerp(feedbackPositive, other.feedbackPositive, t)!,
       feedbackHint: Color.lerp(feedbackHint, other.feedbackHint, t)!,
       accent: Color.lerp(accent, other.accent, t)!,
+      accentWash: Color.lerp(accentWash, other.accentWash, t)!,
+      heroGradientStart: Color.lerp(heroGradientStart, other.heroGradientStart, t)!,
+      heroGradientEnd: Color.lerp(heroGradientEnd, other.heroGradientEnd, t)!,
+      legalAreaZivilrecht: Color.lerp(legalAreaZivilrecht, other.legalAreaZivilrecht, t)!,
+      legalAreaStrafrecht: Color.lerp(legalAreaStrafrecht, other.legalAreaStrafrecht, t)!,
+      legalAreaOeffentlichesRecht:
+          Color.lerp(legalAreaOeffentlichesRecht, other.legalAreaOeffentlichesRecht, t)!,
     );
   }
 }

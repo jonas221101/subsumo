@@ -1,0 +1,254 @@
+topic:
+  slug: sr-bt-urkundenfaelschung-267
+  area: strafrecht
+  title: Urkundenfaelschung, § 267 StGB
+  parent: sr-at
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: sr-urkunde-begriff
+  type: definition
+  front: 'Definiere: Urkunde i.S.d. § 267 StGB'
+  back: 'Eine Urkunde ist jede verkoerperte Gedankenerklaerung, die zum Beweis einer
+    rechtlich erheblichen Tatsache im Rechtsverkehr geeignet und bestimmt ist und
+    ihren Aussteller erkennen laesst. Diese Definition wird ueblicherweise in drei
+    Merkmale aufgegliedert: Perpetuierungs- funktion (Verkoerperung), Beweisfunktion
+    (Eignung und Bestimmung zum Beweis) und Garantiefunktion (Erkennbarkeit des Ausstellers).'
+  norms:
+  - § 267 StGB
+  quellen:
+  - § 267 StGB, amtlicher Wortlaut
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-urkunde-perpetuierungsfunktion
+  type: definition
+  front: 'Definiere: Perpetuierungsfunktion der Urkunde'
+  back: Die Gedankenerklaerung muss so dauerhaft verkoerpert sein, dass sie wahrnehmbar
+    und wiederholt lesbar bzw. erkennbar bleibt. Blosse gesprochene Worte oder ein
+    rein elektronisch gespeicherter, fuer das menschliche Auge ohne technische Zwischenschritte
+    nicht unmittelbar sichtbarer Datensatz erfuellen die Perpetuierungsfunktion einer
+    Urkunde nicht; fuer beweiserhebliche Daten gelten insoweit die Sonderregeln der
+    Datenurkundendelikte.
+  norms:
+  - § 267 StGB
+  - § 269 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-urkunde-beweisfunktion
+  type: definition
+  front: 'Definiere: Beweisfunktion der Urkunde'
+  back: Die Erklaerung muss zum Beweis einer rechtlich erheblichen Tatsache im Rechtsverkehr
+    bestimmt und zugleich objektiv geeignet sein. Bei der sogenannten Absichtsurkunde
+    ergibt sich die Beweisbestimmung aus dem erkennbaren Zweck des Ausstellers; bei
+    der sogenannten Zufallsurkunde genuegt bereits die objektive Eignung zum Beweis,
+    ohne dass der Aussteller die Erklaerung zu Beweiszwecken geschaffen haben muss.
+  norms:
+  - § 267 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-urkunde-garantiefunktion
+  type: definition
+  front: 'Definiere: Garantiefunktion der Urkunde'
+  back: Aus der Erklaerung muss erkennbar sein, wer als Aussteller fuer ihren gedanklichen
+    Inhalt einsteht - nicht notwendig durch Namensnennung, auch aus den Umstaenden
+    erkennbar (z. B. bei einem Kassenbon). Aussteller ist nach der geistigen Urheberschaftstheorie,
+    wer die Erklaerung gedanklich zu vertreten hat; das muss nicht der technische
+    Hersteller der Urkunde sein.
+  norms:
+  - § 267 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-urkunde-tathandlungen-herstellen-verfaelschen
+  type: norm
+  front: 'Definiere: Herstellen und Verfaelschen einer unechten Urkunde, § 267 Abs.
+    1 StGB'
+  back: Herstellen einer unechten Urkunde begeht, wer eine Urkunde schafft, die ueber
+    die Identitaet ihres tatsaechlichen und ihres aus ihr erkennbaren (scheinbaren)
+    Ausstellers taeuscht (Identitaetstaeuschung - die blosse schriftliche Luege ueber
+    den Inhalt genuegt nicht). Verfaelschen begeht, wer den gedanklichen Inhalt einer
+    zunaechst echten Urkunde nachtraeglich ohne Zustimmung des Ausstellers so veraendert,
+    dass der Anschein entsteht, der veraenderte Inhalt stamme unveraendert vom scheinbaren
+    Aussteller.
+  norms:
+  - § 267 Abs. 1 StGB
+  quellen:
+  - § 267 StGB, amtlicher Wortlaut
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-urkunde-gebrauchmachen
+  type: norm
+  front: 'Definiere: Gebrauchmachen einer unechten oder verfaelschten Urkunde, § 267
+    Abs. 1 StGB'
+  back: Gebrauchmachen ist jedes Zugaenglichmachen der unechten oder verfaelschten
+    Urkunde fuer die sinnliche Wahrnehmung durch die Person, die getaeuscht werden
+    soll, im Rechtsverkehr, sodass diese die Moeglichkeit erhaelt, vom vermeintlichen
+    Beweiswert der Urkunde Kenntnis zu nehmen. Auf ein tatsaechliches Zur-Kenntnis-Nehmen
+    kommt es nicht an - die blosse Kenntnisnahmemoeglichkeit genuegt.
+  norms:
+  - § 267 Abs. 1 StGB
+  quellen:
+  - § 267 StGB, amtlicher Wortlaut
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-urkunde-zusammengesetzte-gesamturkunde
+  type: definition
+  front: 'Definiere: zusammengesetzte Urkunde und Gesamturkunde'
+  back: Bei einer zusammengesetzten Urkunde tritt zu einer schriftlichen Erklaerung
+    eine koerperlich damit fest verbundene Bezugnahme (z. B. ein Preisschild auf einer
+    Ware), sodass beide Teile eine einheitliche Beweisfunktion bilden; die Veraenderung
+    nur eines Teils kann bereits die gesamte zusammengesetzte Urkunde verfaelschen.
+    Eine Gesamturkunde entsteht, wenn mehrere Einzelurkunden durch eine amtliche Zusammenfassung
+    (z. B. eine Buchfuehrung) eine zusaetzliche, ueber die Einzelurkunden hinausgehende
+    eigene Beweisbestimmung erhalten, etwa hinsichtlich Vollstaendigkeit und Reihenfolge
+    der Eintragungen.
+  norms:
+  - § 267 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-267
+  title: Urkundenfaelschung, § 267 Abs. 1 StGB
+  norms:
+  - § 267 Abs. 1 StGB
+  - § 267 Abs. 3 StGB
+  quellen:
+  - § 267 StGB, amtlicher Wortlaut
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: a) Vorliegen einer Urkunde (Perpetuierungs-, Beweis-, Garantiefunktion)
+          bzw. einer zusammengesetzten Urkunde/Gesamturkunde
+      - label: 'b) Tathandlung: Herstellen einer unechten Urkunde (Var. 1) oder Verfaelschen
+          einer echten Urkunde (Var. 2) oder Gebrauchmachen einer unechten/verfaelschten
+          Urkunde (Var. 3)'
+    - label: 2. Subjektiver Tatbestand
+      children:
+      - label: a) Vorsatz
+      - label: b) Absicht, zur Taeuschung im Rechtsverkehr zu gebrauchen (§ 267 Abs.
+          1 a.E. StGB, ueberschiessende Innentendenz)
+  - label: II. Rechtswidrigkeit
+  - label: III. Schuld
+  - label: IV. Besonders schwerer Fall, § 267 Abs. 3 StGB
+  - label: V. Ergebnis
+faelle:
+- slug: sr-fall-kreditantrag-fremder-name
+  title: Der gefaelschte Kreditantrag
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: A moechte bei einer fiktiven Sparkasse einen Kredit aufnehmen, erfuellt selbst
+    aber nicht die Bonitaetsanforderungen. Er nimmt daher ein leeres Vertragsformular,
+    traegt als Vertragspartner den Namen seines Bekannten B ein und unterschreibt
+    eigenhaendig mit dem Namen "B". Anschliessend reicht A das so erstellte Dokument
+    bei der Sachbearbeiterin der Sparkasse als angeblich von B unterschriebenen Kreditantrag
+    ein, um den Eindruck zu erwecken, B selbst habe den Antrag gestellt und unterschrieben.
+    B hat von alledem nichts gewusst und den Antrag nicht autorisiert.
+  question: Hat sich A wegen Urkundenfaelschung gemaess § 267 Abs. 1 StGB strafbar
+    gemacht?
+  steps:
+  - prompt: Ist der von A erstellte Kreditantrag eine Urkunde?
+    erwartung: Ja - er ist verkoerpert (Perpetuierungsfunktion), zum Beweis der Kreditantragstellung
+      durch B bestimmt und geeignet (Beweisfunktion) und laesst B als vermeintlichen
+      Aussteller erkennen (Garantiefunktion).
+  - prompt: Ist die Urkunde unecht?
+    erwartung: Ja - der aus der Urkunde erkennbare (scheinbare) Aussteller ist B,
+      tatsaechlicher Aussteller (wer die Erklaerung gedanklich zu vertreten hat) ist
+      jedoch A; es besteht eine Identitaetstaeuschung.
+  - prompt: Welche Tathandlung hat A vorgenommen?
+    erwartung: A hat die unechte Urkunde hergestellt, § 267 Abs. 1 Var. 1 StGB, indem
+      er das Dokument unter dem fremden Namen des B anfertigte und unterschrieb.
+  - prompt: Liegt zusaetzlich ein Gebrauchmachen vor?
+    erwartung: Ja - A hat die unechte Urkunde der Sachbearbeiterin der Sparkasse vorgelegt
+      und ihr damit die Moeglichkeit der sinnlichen Wahrnehmung verschafft, § 267
+      Abs. 1 Var. 3 StGB; Herstellen und Gebrauchmachen stehen zueinander in Tateinheit,
+      da beide Varianten dieselbe Urkunde betreffen.
+  - prompt: Ist der subjektive Tatbestand erfuellt?
+    erwartung: Ja - A handelte vorsaetzlich hinsichtlich aller objektiven Umstaende
+      und mit der Absicht, durch Vorlage der Urkunde die Sachbearbeiterin ueber die
+      Urheberschaft des Antrags zu taeuschen und dadurch den Kredit zu erlangen.
+  - prompt: Ergebnis?
+    erwartung: A hat sich wegen Urkundenfaelschung durch Herstellen und Gebrauchmachen
+      einer unechten Urkunde gemaess § 267 Abs. 1 StGB strafbar gemacht.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Obersatz § 267 Abs. 1 StGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 267 Abs. 1 StGB
+      keywords:
+      - '267'
+    - id: p2
+      label: Urkundenbegriff (drei Funktionen) sauber geprueft und bejaht
+      weight: 2.5
+      required: true
+      keywords:
+      - Perpetuierungsfunktion
+      - Beweisfunktion
+      - Garantiefunktion
+      card_slugs:
+      - sr-urkunde-begriff
+    - id: p3
+      label: Unechtheit (Identitaetstaeuschung ueber den Aussteller, nicht blosse
+        schriftliche Luege) begruendet
+      weight: 3.0
+      required: true
+      norms:
+      - § 267 Abs. 1 StGB
+      keywords:
+      - Identitaetstaeuschung
+      - unecht
+      card_slugs:
+      - sr-urkunde-tathandlungen-herstellen-verfaelschen
+    - id: p4
+      label: Herstellen einer unechten Urkunde, § 267 Abs. 1 Var. 1 StGB, bejaht
+      weight: 2.0
+      required: true
+      norms:
+      - § 267 Abs. 1 StGB
+      keywords:
+      - Herstellen
+      card_slugs:
+      - sr-urkunde-tathandlungen-herstellen-verfaelschen
+    - id: p5
+      label: Gebrauchmachen, § 267 Abs. 1 Var. 3 StGB, erkannt und Tateinheit zum
+        Herstellen angesprochen
+      weight: 2.0
+      required: false
+      norms:
+      - § 267 Abs. 1 StGB
+      keywords:
+      - Gebrauchmachen
+      - Tateinheit
+      card_slugs:
+      - sr-urkunde-gebrauchmachen
+    - id: p6
+      label: Vorsatz und Taeuschungsabsicht (ueberschiessende Innentendenz) bejaht
+      weight: 1.0
+      required: false
+      keywords:
+      - Absicht
+      - Taeuschung
+    - id: p7
+      label: 'Ergebnis: Urkundenfaelschung, § 267 Abs. 1 StGB'
+      weight: 1.0
+      required: false
+      keywords:
+      - Ergebnis

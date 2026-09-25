@@ -1,0 +1,246 @@
+topic:
+  slug: sr-at-verbotsirrtum-17
+  area: strafrecht
+  title: Verbotsirrtum, § 17 StGB
+  parent: sr-at
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: sr-verbotsirrtum-definition
+  type: definition
+  front: 'Definiere: Verbotsirrtum, § 17 StGB'
+  back: Ein Verbotsirrtum liegt vor, wenn dem Taeter bei Begehung der Tat trotz vollstaendiger
+    Kenntnis aller Tatumstaende die Einsicht fehlt, Unrecht zu tun - er haelt sein
+    Verhalten faelschlich fuer rechtlich erlaubt. Anders als beim Tatbestandsirrtum
+    weiss der Taeter genau, was er tut; er irrt nur ueber dessen rechtliche Bewertung.
+  norms:
+  - § 17 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-verbotsirrtum-abgrenzung-tatbestandsirrtum-16
+  type: definition
+  front: 'Abgrenzung: Verbotsirrtum, § 17 StGB, und Tatbestandsirrtum, § 16 StGB'
+  back: 'Der Tatbestandsirrtum betrifft die Tatsachenebene: Der Taeter kennt einen
+    zum gesetzlichen Tatbestand gehoerenden Umstand nicht und handelt deshalb bereits
+    ohne Vorsatz (§ 16 Abs. 1 Satz 1 StGB). Der Verbotsirrtum betrifft dagegen die
+    Wertungsebene: Der Taeter kennt alle Tatumstaende und handelt vorsaetzlich, verkennt
+    aber, dass sein Verhalten verboten ist. Der Vorsatz bleibt unberuehrt; betroffen
+    ist allein die Schuld.'
+  norms:
+  - § 16 Abs. 1 Satz 1 StGB
+  - § 17 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-verbotsirrtum-direkt-indirekt
+  type: definition
+  front: Unterscheide direkten und indirekten Verbotsirrtum (Erlaubnisirrtum)
+  back: Beim direkten Verbotsirrtum verkennt der Taeter bereits die Existenz oder
+    Reichweite der einschlaegigen Verbotsnorm selbst - er haelt sein Verhalten generell
+    fuer erlaubt. Beim indirekten Verbotsirrtum (Erlaubnisirrtum) kennt der Taeter
+    das Verbot, glaubt aber irrig, sein Verhalten sei ausnahmsweise durch einen Rechtfertigungsgrund
+    gedeckt, den es entweder gar nicht gibt oder dessen rechtliche Grenzen er ueberschaetzt.
+  norms:
+  - § 17 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-verbotsirrtum-vermeidbarkeit
+  type: definition
+  front: Wann ist ein Verbotsirrtum vermeidbar i.S.d. § 17 StGB?
+  back: Vermeidbar ist der Irrtum, wenn der Taeter bei gehoeriger Anspannung seines
+    Gewissens die Unrechtseinsicht haette gewinnen oder sich - etwa durch Nachdenken
+    oder das Einholen einer zuverlaessigen Rechtsauskunft bei einer sachkundigen und
+    vertrauenswuerdigen Stelle - haette Klarheit verschaffen koennen. Massstab sind
+    die individuellen Erkenntnismoeglichkeiten des Taeters.
+  norms:
+  - § 17 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-verbotsirrtum-rechtsfolgen
+  type: norm
+  front: Welche Rechtsfolgen knuepft § 17 StGB an vermeidbaren und unvermeidbaren
+    Verbotsirrtum?
+  back: War der Verbotsirrtum unvermeidbar, handelt der Taeter ohne Schuld und bleibt
+    straflos (§ 17 Satz 1 StGB). War der Irrtum vermeidbar, bleibt die Schuld bestehen;
+    das Gericht kann die Strafe aber nach § 17 Satz 2 StGB i.V.m. § 49 Abs. 1 StGB
+    mildern - eine Pflicht zur Milderung besteht nicht.
+  norms:
+  - § 17 Satz 1 StGB
+  - § 17 Satz 2 StGB
+  - § 49 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-verbotsirrtum-schuldtheorie-vorsatztheorie
+  type: streitstand
+  front: 'Schuldtheorie oder Vorsatztheorie: Wo wird das Unrechtsbewusstsein dogmatisch
+    verortet?'
+  back: Nach der von Rechtsprechung und heute h.M. vertretenen Schuldtheorie ist das
+    Unrechtsbewusstsein kein Bestandteil des Vorsatzes, sondern ein eigenstaendiges
+    Schuldelement; ein Verbotsirrtum laesst den Vorsatz daher unberuehrt und wirkt
+    sich - vermeidbar oder nicht - erst auf der Schuldebene aus (§ 17 StGB). Die heute
+    nicht mehr vertretene Vorsatztheorie rechnete das Unrechtsbewusstsein dagegen
+    zum Vorsatz, sodass jeder Verbotsirrtum - auch der vermeidbare - bereits den Vorsatz
+    und mangels eines Fahrlaessigkeitstatbestands regelmaessig die Strafbarkeit insgesamt
+    entfallen liess.
+  norms:
+  - § 17 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-verbotsirrtum-erlaubnistatbestandsirrtum-abgrenzung
+  type: streitstand
+  front: Wie unterscheidet sich der Erlaubnistatbestandsirrtum vom (indirekten) Verbotsirrtum,
+    und wie wird er behandelt?
+  back: 'Beim Erlaubnistatbestandsirrtum irrt der Taeter nicht ueber die rechtlichen
+    Grenzen eines Rechtfertigungsgrundes, sondern ueber dessen tatsaechliche Voraussetzungen
+    - er stellt sich einen Sachverhalt vor, der, laege er wirklich vor, sein Verhalten
+    rechtfertigen wuerde (z. B. die irrige Annahme eines gegenwaertigen rechtswidrigen
+    Angriffs). Die eingeschraenkte Schuldtheorie behandelt ihn in der Rechtsfolge
+    wie einen Tatbestandsirrtum: Der Vorsatzvorwurf entfaellt, eine Fahrlaessigkeitsstrafbarkeit
+    bleibt moeglich. Die strenge Schuldtheorie wendet dagegen unmittelbar § 17 StGB
+    an.'
+  norms:
+  - § 16 StGB
+  - § 17 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-verbotsirrtum-17
+  title: Pruefung des Verbotsirrtums, § 17 StGB
+  norms:
+  - § 17 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Vorsatz (+) - Taeter kennt alle Tatumstaende
+  - label: II. Rechtswidrigkeit (+)
+  - label: III. Schuld
+    children:
+    - label: 1. Schuldfaehigkeit (+)
+    - label: '2. Unrechtsbewusstsein: fehlt die Einsicht, Unrecht zu tun?'
+      children:
+      - label: a) Direkter Verbotsirrtum (Verkennen des Verbots selbst)
+      - label: b) Indirekter Verbotsirrtum / Erlaubnisirrtum (Verkennen der rechtlichen
+          Grenzen eines Rechtfertigungsgrundes)
+        hinweis: Abzugrenzen vom Erlaubnistatbestandsirrtum (Irrtum ueber die tatsaechlichen
+          Voraussetzungen eines Rechtfertigungsgrundes) - str., ob § 17 StGB oder
+          § 16 StGB analog anzuwenden ist.
+      - label: c) Vermeidbarkeit des Irrtums
+  - label: IV. Ergebnis
+    children:
+    - label: '1. Unvermeidbar: Schuldausschluss, § 17 Satz 1 StGB'
+    - label: '2. Vermeidbar: Schuld bleibt, fakultative Milderung, § 17 Satz 2 StGB
+        i.V.m. § 49 Abs. 1 StGB'
+faelle:
+- slug: sr-fall-vollidiot-verkehrskontrolle
+  title: Die Verkehrskontrolle
+  difficulty: 2
+  minutes: 30
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: A wird von Polizeibeamtin P im Rahmen einer Verkehrskontrolle angehalten.
+    Ueber die aus seiner Sicht ueberzogen strenge Kontrolle empoert, bezeichnet A
+    die Beamtin P lautstark als "unfaehigen Vollidioten". Nach Erhalt der Anzeige
+    beruft sich A darauf, er sei felsenfest davon ueberzeugt gewesen, im Rahmen der
+    grundgesetzlich garantierten Meinungsfreiheit duerfe er Polizeibeamte waehrend
+    einer Kontrolle in jeder Form kritisieren, ohne sich dabei strafbar zu machen.
+  question: 'Unterstellt, der objektive und subjektive Tatbestand der Beleidigung
+    gemaess § 185 StGB liegt vor und die Tat ist rechtswidrig: Handelte A gemaess
+    § 17 StGB ohne Schuld?'
+  steps:
+  - prompt: Formuliere den Pruefungsansatz.
+    erwartung: A handelte gemaess § 17 StGB ohne Schuld, wenn ihm die Einsicht fehlte,
+      Unrecht zu tun, und er diesen Irrtum nicht vermeiden konnte.
+  - prompt: Fehlte A die Unrechtseinsicht?
+    erwartung: Ja - A war der festen Ueberzeugung, sein Verhalten sei von der Meinungsfreiheit
+      gedeckt und daher generell nicht strafbar. Er befand sich in einem Verbotsirrtum.
+  - prompt: Handelt es sich um einen direkten oder indirekten Verbotsirrtum?
+    erwartung: Um einen direkten Verbotsirrtum - A verkennt bereits Existenz bzw.
+      Reichweite des Verbots aus § 185 StGB selbst, nicht die Voraussetzungen eines
+      Rechtfertigungsgrundes.
+  - prompt: War der Irrtum vermeidbar?
+    erwartung: Ja - jedermann muss damit rechnen, dass eine gezielte Herabwuerdigung
+      wie die Bezeichnung als 'unfaehiger Vollidiot' die Grenzen zulaessiger Kritik
+      ueberschreitet. A haette dies bei Anspannung seines Gewissens erkennen oder
+      sich erkundigen koennen.
+  - prompt: Welche Rechtsfolge ergibt sich daraus?
+    erwartung: Da der Irrtum vermeidbar war, entfaellt die Schuld nicht. Die Strafe
+      kann jedoch nach § 17 Satz 2 StGB i.V.m. § 49 Abs. 1 StGB gemildert werden.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Verbotsirrtum erkannt (fehlende Unrechtseinsicht trotz Kenntnis aller
+        Tatumstaende)
+      weight: 2.5
+      required: true
+      norms:
+      - § 17 StGB
+      keywords:
+      - Verbotsirrtum
+      - Unrechtseinsicht
+      card_slugs:
+      - sr-verbotsirrtum-definition
+    - id: p2
+      label: Einordnung als direkter Verbotsirrtum, Abgrenzung zum Erlaubnisirrtum
+      weight: 1.5
+      required: false
+      keywords:
+      - direkter Verbotsirrtum
+      card_slugs:
+      - sr-verbotsirrtum-direkt-indirekt
+    - id: p3
+      label: Vermeidbarkeit bejaht mit Begruendung
+      weight: 3.0
+      required: true
+      norms:
+      - § 17 StGB
+      keywords:
+      - vermeidbar
+      - Anspannung seines Gewissens
+      card_slugs:
+      - sr-verbotsirrtum-vermeidbarkeit
+    - id: p4
+      label: 'Rechtsfolge: kein Schuldausschluss, fakultative Milderung'
+      weight: 2.0
+      required: true
+      norms:
+      - § 17 Satz 2 StGB
+      - § 49 Abs. 1 StGB
+      keywords:
+      - Milderung
+      - § 49
+      card_slugs:
+      - sr-verbotsirrtum-rechtsfolgen
+    - id: p5
+      label: Abgrenzung zum Tatbestandsirrtum § 16 StGB erwaehnt
+      weight: 1.0
+      required: false
+      norms:
+      - § 16 StGB
+      keywords:
+      - Tatbestandsirrtum
+      card_slugs:
+      - sr-verbotsirrtum-abgrenzung-tatbestandsirrtum-16
+    - id: p6
+      label: 'Ergebnis: A handelte schuldhaft, Strafmilderung moeglich'
+      weight: 1.0
+      required: false
+      keywords:
+      - schuldhaft
+      - Ergebnis

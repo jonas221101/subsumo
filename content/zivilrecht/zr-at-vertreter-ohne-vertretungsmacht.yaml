@@ -63,10 +63,10 @@ cards:
     zum Widerruf berechtigt (§ 178 S. 1 BGB) - er kann sich also seinerseits vom schwebend
     unwirksamen Vertrag loesen, bevor der Vertretene entschieden hat. Das Widerrufsrecht
     ist ausgeschlossen, wenn der andere Teil den Mangel der Vertretungsmacht bei Vertragsschluss
-    kannte (§ 178 S. 1 BGB); war der Mangel vertraglich vereinbart bekannt zu sein
-    oder wurde er vom Vertreter offen zugegeben, kann der Widerruf zudem nur gegenueber
-    dem Vertreter selbst erklaert werden, solange der Vertretene keine Erklaerung
-    abgegeben hat (§ 178 S. 2 BGB).
+    kannte (§ 178 S. 1 BGB). Der Widerruf kann wahlweise auch gegenueber dem Vertreter
+    selbst erklaert werden (§ 178 S. 2 BGB) - das ist lediglich eine zusaetzliche
+    Erklaerungsoption und keine an Kenntnis oder Zugestaendnis des Mangels geknuepfte
+    Einschraenkung des Adressatenkreises.
   norms:
   - § 178 BGB
   quellen:
@@ -233,6 +233,8 @@ faelle:
       - '177'
       - schwebend unwirksam
       - endgueltig unwirksam
+      card_slugs:
+      - zr-votv-schwebende-unwirksamkeit-177-1
     - id: p2
       label: Fehlen einer Vertretungsmacht des A festgestellt
       weight: 1.5
@@ -240,6 +242,8 @@ faelle:
       keywords:
       - keine Vollmacht
       - keine Vertretungsmacht
+      card_slugs:
+      - zr-votv-schwebende-unwirksamkeit-177-1
     - id: p3
       label: Abgrenzung § 179 Abs. 1 BGB (Kenntnis) zu § 179 Abs. 2 BGB (Unkenntnis)
         korrekt vorgenommen - kein Wahlrecht auf Erfuellung, da A den Mangel nicht
@@ -253,6 +257,9 @@ faelle:
       - '179'
       - Kenntnis
       - Vertrauensschaden
+      card_slugs:
+      - zr-votv-haftung-179-1
+      - zr-votv-haftung-179-2
     - id: p4
       label: Vertrauensschaden in Hoehe von 500 Euro bestimmt und auf das Erfuellungsinteresse
         begrenzt
@@ -262,6 +269,8 @@ faelle:
       - Vertrauensschaden
       - Erfuellungsinteresse
       - '500'
+      card_slugs:
+      - zr-votv-haftung-179-2
     - id: p5
       label: Kein Haftungsausschluss nach § 179 Abs. 3 BGB, da K gutglaeubig war
       weight: 1.0
@@ -271,3 +280,5 @@ faelle:
       keywords:
       - 179 Abs. 3
       - gutglaeubig
+      card_slugs:
+      - zr-votv-ausschluss-179-3

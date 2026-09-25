@@ -272,3 +272,47 @@ class StripeWebhookEvent(Base):
     event_id: Mapped[str] = mapped_column(String(255), primary_key=True)
     event_type: Mapped[str] = mapped_column(String(120))
     received_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
+class RedeemCode(Base):
+    """Freischaltcode fuer kostenlosen Pro-Zugang (docs/28, Fachschafts-Beta).
+
+    Baut auf ``User.pro_until`` auf statt einem eigenen Entitlement-System.
+    Codes werden ausschliesslich serverseitig ueber
+    ``scripts/create_redeem_code.py`` erzeugt, nie ueber einen
+    Client-Endpoint - analog zur Regel fuer ``stripe_customer_id`` oben.
+    """
+
+    __tablename__ = "redeem_codes"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    # Case-insensitiv: vor Speicherung und vor jedem Vergleich auf upper()
+    # normalisiert (siehe scripts/create_redeem_code.py und
+    # app/api/v1/account.py:redeem_code()).
+    code: Mapped[str] = mapped_column(String(64), unique=True, index=True)
+    campaign_slug: Mapped[str] = mapped_column(String(120))
+    pro_duration_days: Mapped[int] = mapped_column(Integer, default=180)
+    # NULL = unbegrenzt viele verschiedene Nutzer:innen (Fachschafts-Fall).
+    # Gesetzt = Obergrenze an Gesamteinloesungen (Einzel-Invite-Fall).
+    max_redemptions: Mapped[int | None] = mapped_column(Integer, default=None)
+    expires_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), default=None)
+    active: Mapped[bool] = mapped_column(default=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
+class RedeemCodeRedemption(Base):
+    """Einloesung eines Freischaltcodes durch eine:n Nutzer:in.
+
+    ``UniqueConstraint`` erzwingt "pro Nutzer:in einmalig" strukturell,
+    unabhaengig von ``RedeemCode.max_redemptions``.
+    """
+
+    __tablename__ = "redeem_code_redemptions"
+    __table_args__ = (
+        UniqueConstraint("redeem_code_id", "user_id", name="uq_redeem_code_user"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    redeem_code_id: Mapped[int] = mapped_column(ForeignKey("redeem_codes.id"), index=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
+    redeemed_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
