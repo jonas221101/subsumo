@@ -108,26 +108,67 @@ class IoSandboxRuntime implements SandboxRuntime {
     }
   }
 
-  /// `JavascriptRuntime.init()` injiziert automatisch `console` (leitet auf
-  /// `print` um) und `setTimeout` (bruecke ueber einen Dart-`Timer`, der bei
-  /// Ablauf erneut in den Interpreter evaluiert). Fuer eine wirklich leere
-  /// Capability-Liste werden beide vor der ersten Ausfuehrung des
-  /// generierten Codes entfernt - insbesondere `setTimeout`, weil dessen
-  /// Callback sonst asynchron, ausserhalb des 300-ms-Budgets und nach
-  /// `dispose()` erneut in den (dann bereits verworfenen) Interpreter
-  /// evaluieren wuerde. Kein `enableFetch()`/XHR-Erweiterung wird je
-  /// aufgerufen, und es wird keine eigene Dart-Funktion in den Kontext
-  /// eingehaengt - der generierte Code sieht ausschliesslich die
-  /// ECMAScript-Built-ins.
+  /// `JavascriptRuntime.init()` injiziert nicht nur `console` und
+  /// `setTimeout`, sondern auch die native Bruecke `sendMessage` selbst
+  /// (`initChannelFunctions()` in `flutter_js`, `QuickJsRuntime2`-
+  /// Konstruktor, *vor* diesem Aufruf) sowie ihre Hilfsvariablen
+  /// `__NATIVE_FLUTTER_JS__setTimeoutCount`/`...Callbacks`. Eine fruehere
+  /// Fassung entfernte nur `console`/`setTimeout` per Denylist - generierter
+  /// Code konnte darum `sendMessage("SetTimeout", ...)` weiterhin direkt
+  /// aufrufen, den `setTimeout`-Denylist umgehen und einen Dart-`Timer`
+  /// scharf schalten, der nach `dispose()` in die bereits verworfene
+  /// Engine-Instanz zurueckruft (SUB-318-Review-Befund, empirisch per
+  /// echtem Testlauf gegen die reale QuickJS-Bibliothek nachgestellt).
   ///
-  /// Zuweisung statt `delete`: `init()` definiert beide Eigenschaften mit
-  /// `configurable: false` (per `Object.getOwnPropertyDescriptor` verifiziert)
-  /// - `delete` schlaegt dort im Nicht-Strict-Modus lautlos fehl (gibt
-  /// `false` zurueck, wirft nicht) und die Bindungen blieben unbemerkt
-  /// erreichbar. Beide sind aber `writable: true`, daher entfernt eine
-  /// Ueberschreibung mit `undefined` sie zuverlaessig.
+  /// Eine Denylist bekannter Namen bleibt strukturell fragil: sie muss jede
+  /// `flutter_js`-Ergaenzung von Hand nachziehen. Stattdessen erzwingt
+  /// [_quickJsBaselineGlobals] eine **Allowlist**: die vollstaendige Menge
+  /// an Namen, die eine frisch initialisierte `QuickJsRuntime2`-Instanz
+  /// *ohne* jeden generierten Code traegt - empirisch per
+  /// `Object.getOwnPropertyNames(globalThis)` gegen die echte gebundene
+  /// QuickJS-Bibliothek ermittelt (nicht aus der Dokumentation abgetippt).
+  /// Jeder Name, der nicht in dieser Liste steht, ist eine von `flutter_js`
+  /// eingehaengte Host-Bruecke und wird entfernt - unabhaengig davon, ob er
+  /// heute schon bekannt ist oder erst durch ein kuenftiges `flutter_js`-
+  /// Update dazukommt.
+  ///
+  /// Zuweisung statt `delete`: die zu entfernenden Eigenschaften sind
+  /// `configurable: false` (per `Object.getOwnPropertyDescriptor`
+  /// verifiziert) - `delete` schlaegt dort im Nicht-Strict-Modus lautlos
+  /// fehl (gibt `false` zurueck, wirft nicht) und die Bindungen blieben
+  /// unbemerkt erreichbar. Sie sind aber `writable: true`, daher entfernt
+  /// eine Ueberschreibung mit `undefined` sie zuverlaessig.
+  static const Set<String> _quickJsBaselineGlobals = {
+    'AggregateError', 'Array', 'ArrayBuffer', 'Boolean', 'DataView', 'Date',
+    'Error', 'EvalError', 'Float32Array', 'Float64Array', 'Function',
+    'Infinity', 'Int16Array', 'Int32Array', 'Int8Array', 'InternalError',
+    'JSON', 'Map', 'Math', 'NaN', 'Number', 'Object', 'Promise', 'Proxy',
+    'RangeError', 'ReferenceError', 'Reflect', 'RegExp', 'Set',
+    'SharedArrayBuffer', 'String', 'Symbol', 'SyntaxError', 'TypeError',
+    'URIError', 'Uint16Array', 'Uint32Array', 'Uint8Array',
+    'Uint8ClampedArray', 'WeakMap', 'WeakSet', '__date_clock', 'decodeURI',
+    'decodeURIComponent', 'encodeURI', 'encodeURIComponent', 'escape',
+    'eval', 'globalThis', 'isFinite', 'isNaN', 'parseFloat', 'parseInt',
+    'undefined', 'unescape',
+  };
+
   void _stripHostBridges(QuickJsRuntime2 runtime) {
-    runtime.evaluate('globalThis.setTimeout = undefined; globalThis.console = undefined;');
+    final allowlist = jsonEncode(_quickJsBaselineGlobals.toList());
+    final result = runtime.evaluate('''
+(function () {
+  var allowSet = Object.create(null);
+  var allow = $allowlist;
+  for (var i = 0; i < allow.length; i++) { allowSet[allow[i]] = true; }
+  var names = Object.getOwnPropertyNames(globalThis);
+  for (var i = 0; i < names.length; i++) {
+    if (allowSet[names[i]]) continue;
+    globalThis[names[i]] = undefined;
+  }
+})();
+''');
+    if (result.isError) {
+      throw SandboxException(SandboxErrorClass.runtimeError);
+    }
   }
 }
 

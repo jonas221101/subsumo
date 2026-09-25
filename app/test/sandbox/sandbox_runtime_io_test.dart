@@ -59,6 +59,35 @@ void main() {
       }
     });
 
+    // Regressionstest fuer den SUB-318-Review-Befund: `_stripHostBridges`
+    // entfernte frueher nur die JS-Bezeichner `console`/`setTimeout`, nicht
+    // die native `sendMessage`-Bruecke, die `flutter_js` selbst einhaengt.
+    // Generierter Code konnte darueber den Denylist umgehen und z. B.
+    // `sendMessage("SetTimeout", ...)` direkt aufrufen, um einen Dart-Timer
+    // scharf zu schalten. Dieser Test spricht den Kanal direkt an statt nur
+    // die JS-Bezeichner zu pruefen.
+    test('sendMessage-Kanal ist entfernt: direkter Aufruf umgeht den setTimeout-Denylist nicht', () async {
+      final errorClass = await _errorClassOf(
+        _run('''
+          function execute(input) {
+            sendMessage("SetTimeout", JSON.stringify({timeoutIndex: "0", timeout: 10}));
+            return "unreachable";
+          }
+        '''),
+      );
+      expect(errorClass, SandboxErrorClass.runtimeError);
+    });
+
+    test('flutter_js-Hilfsvariablen fuer setTimeout sind entfernt', () async {
+      for (final probe in [
+        'typeof __NATIVE_FLUTTER_JS__setTimeoutCallbacks !== "undefined"',
+        'typeof __NATIVE_FLUTTER_JS__setTimeoutCount !== "undefined"',
+      ]) {
+        final output = await _run('function execute(input) { return $probe; }');
+        expect(output, false, reason: probe);
+      }
+    });
+
     // Absichtlich NICHT automatisiert: `QuickJsRuntime2(timeout: ...)` haengt
     // bei einer echten `while (true) {}` auf diesem Linux-Build unbegrenzt
     // (manuell verifiziert, mit `kill -9` beendet) statt nach `timeoutMs`
