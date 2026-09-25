@@ -16,7 +16,7 @@ eine explizite Antwort (Anwalt, Steuerberater oder Produktentscheidung), bevor
 das jeweilige Gate als grün gelten darf — keine Annahme ersetzt sie.
 
 **Stand der Status-Spalten geprüft: 24.09.2026**, gegen den zu diesem
-Zeitpunkt aktuellen Code-Stand nachgezogen (`docs/26-projektreview-sub254.md`
+Zeitpunkt aktuellen Code-Stand nachgezogen (`docs/31-projektreview-sub254.md`
 Abschnitt 2, Ticket SUB-256). Zuvor war das Dokument seit 15.09. nicht mehr
 gegen die API-Schicht abgeglichen worden (dort zuletzt 17.09. geändert) — die
 DSGVO-Endpoints und der Backup-Mechanismus waren als offen geführt, obwohl
@@ -43,6 +43,7 @@ geprüft, trägt weiterhin — keine Änderung. Ergänzend, was dort fehlt:
 | Verarbeitungsverzeichnis (Art. 30) | Recht/Betrieb | 1 PT | C | Offen — internes Dokument (kein Nutzer-Artefakt), listet Zwecke, Kategorien, Empfänger (LLM-Provider, Hosting), Löschfristen. Kann als `docs/18-verarbeitungsverzeichnis.md` intern geführt werden, sobald Provider-Wahl (unten) steht |
 | Auftragsverarbeitungsvertrag (AVV) mit LLM-Provider | Recht + Backend-Dev | 1–2 PT | B/C | Offen. **Frage (release-kritisch):** Dürfen Nutzertexte (Gutachten, oft mit personenbezogenen Sachverhaltsdetails im Übungsfall) unpseudonymisiert an einen US-Anbieter gehen? `docs/06-recht-compliance.md` Abschnitt 3 sieht bereits „Pseudonymisierung vor Versand, keine Nutzer-ID im Prompt" und „Provider-Wahl mit EU-Verarbeitung bevorzugt" vor — das ist die Grundsatzentscheidung, aber noch kein AVV. Aktueller Code (`backend/app/core/llm.py`) unterstützt aktuell nur den Provider `anthropic` (US) plus einen heuristischen Offline-Fallback (`llm_provider=none`); ein EU-Provider ist nicht angebunden. Die Transparenz im Produkt ist als eigener Einwilligungspfad bereits gebaut (`POST`/`DELETE /me/ai-consent`, `backend/app/api/v1/consent.py`) und technisch durchgesetzt — `get_evaluator(consented=...)` in `backend/app/services/evaluator.py` erzwingt ohne erteilte Einwilligung den heuristischen (Nicht-LLM-)Pfad, siehe `backend/app/api/v1/gutachten.py`. Getestet in `backend/tests/test_ai_consent.py`. Das ersetzt nicht den AVV selbst — die Grundsatzfrage oben bleibt offen |
 | RDG-Abgrenzung, Urheberrecht | — | — | — | Geprüft, Stand aus `docs/06-recht-compliance.md` trägt unverändert |
+| RDG-Grenzfall bei KI-generierter Werkbank-Logik (v1.1, nicht v1.0) | Recht (extern) | — | — | Offen. **Frage:** `docs/27-werkbank-spezifikation.md` Abschnitt 2 beschränkt die Eingabe generierter Lernwerkzeuge auf strukturierte Referenzen (nie einen freien, realen Sachverhalt) — reicht diese Eingabe-Beschränkung aus RDG-Sicht aus, wenn die vom Modell frei entworfene *Logik* über diesen zulässigen Eingaben neue, im referenzierten Content nicht hinterlegte rechtliche Schlussfolgerungen synthetisiert (Abschnitt 2.4 dort), oder braucht es zusätzlich eine Laufzeitprüfung der generierten Logik selbst? Nicht release-kritisch für v1.0 (Feature läuft ohnehin hinter dem AVV-Gate oben), aber vor Umsetzung von `docs/27` Ticket 3 zu klären |
 
 ## 2. Sicherheit
 
@@ -50,10 +51,10 @@ geprüft, trägt weiterhin — keine Änderung. Ergänzend, was dort fehlt:
 |---|---|---|---|---|
 | Argon2id statt PBKDF2 | Backend-Dev | 1–2 PT | B/C | Offen. Code-Stand: `backend/app/core/security.py` nutzt PBKDF2-HMAC-SHA256 mit 600.000 Iterationen (OWASP-konform) und einem `algo$...`-Präfix im Hash, das den Wechsel vorbereitet. Für M3 vorgesehen (`docs/03-roadmap.md`) — kein Release-Blocker im engeren Sinn (PBKDF2 mit dieser Iterationszahl ist keine Schwachstelle), aber als zugesagter Punkt hier nachgehalten |
 | Refresh-Token-Rotation | Backend-Dev | 2–3 PT | B/C | Offen. Code-Stand: Es gibt nur einen Access-Token (`create_access_token`/`decode_access_token`, JWT HS256, Default-TTL 7 Tage), keinen Refresh-Token-Mechanismus. Für M3 vorgesehen. **Risiko bis dahin:** 7 Tage TTL ohne Rotation bedeutet ein gestohlenes Token bleibt bis zu 7 Tage gültig — für den Launch-Umfang (kein Zahlungsdaten-Zugriff über die API) vertretbar, sollte aber vor Gate D stehen |
-| Secrets-Handhabung Produktion | Betrieb/Backend-Dev | 1 PT | D | Offen. Code-Stand: `SUBSUMO_JWT_SECRET` hat einen offensichtlich unsicheren Default (`dev-only-insecure-change-me`), der über `.env` gesetzt werden muss — kein Fail-Fast, wenn er in Produktion vergessen wird. Vor Gate D: Startup-Check ergänzen, der bei Produktions-Umgebung (`SUBSUMO_ENVIRONMENT=production`) mit Default-Secret hart abbricht |
+| Secrets-Handhabung Produktion | Betrieb/Backend-Dev | 1 PT | D | **Erledigt** (SUB-255, Squash `15526a49e13cea7369e815da5bea5be235d3718c` auf `main`). `backend/app/config.py`, Validator `_fail_fast_on_default_jwt_secret_in_production`: bricht beim Start mit `RuntimeError` ab, wenn `SUBSUMO_ENVIRONMENT=production` und `SUBSUMO_JWT_SECRET` noch den öffentlichen Default (`dev-only-insecure-change-me`) trägt. Getestet in `backend/tests/test_config.py` |
 | JWT-Secret-Rotation | Backend-Dev | 1 PT | D | Offen, kein Mechanismus vorhanden. **Frage:** Reicht ein manueller Rotationsprozess (Secret tauschen → alle Sessions invalidieren) zum Launch, oder braucht es von Anfang an Key-Versionierung (`kid`-Claim, zwei gültige Secrets während der Rotation)? Für v1.0-Nutzerzahl vermutlich Ersteres ausreichend — als Annahme markiert, keine Entscheidung |
 | Backup und Wiederherstellung Nutzerdaten | Betrieb | 1–2 PT Einrichtung, dann laufend | D | **Erledigt.** `backend/scripts/backup_db.py`/`restore_db.py` decken SQLite und PostgreSQL ab, mit Verschlüsselung ruhender Backups (`--encrypt`) und Aufbewahrung ≥ 30 Tage (Default). Automatisiert über `subsumo-backup.timer`/`.service` (täglich 03:00), Restore tatsächlich geprobt (nicht nur Backup-Existenz geprüft) — siehe `docs/22-deploy-runbook.md` Abschnitt „Restore tatsächlich geprobt". Automatisierte Tests in `backend/tests/test_backup_restore.py` |
-| Rate-Limit auf Auth-Routen | Backend-Dev | wenige Stunden | B/C | Offen — neu identifiziert im Projektreview (`docs/26-projektreview-sub254.md` Abschnitt 3.2), bisher hier nicht geführt. Suche über `backend/app` nach `ratelimit\|rate_limit\|slowapi\|limiter` liefert keinen Treffer, kein vorgelagerter Reverse-Proxy in `ops/`: `POST /auth/login` und `POST /auth/register` sind unbegrenzt oft aufrufbar (Credential-Stuffing, automatisierte Massenanmeldung gegen das Free-Tier). Umsetzung läuft im Backend-Ticket aus `docs/26` Abschnitt 7 (#1) |
+| Rate-Limit auf Auth-Routen | Backend-Dev | wenige Stunden | B/C | **Erledigt** (SUB-255, Squash `15526a49e13cea7369e815da5bea5be235d3718c` auf `main`, Befund 3.2 aus `docs/31-projektreview-sub254.md`). `backend/app/core/ratelimit.py`: IP-basiertes Sliding-Window auf `POST /auth/login` und `POST /auth/register`, Default 20 Anfragen/60s. Getestet in `backend/tests/test_auth_rate_limit.py` und `backend/tests/test_ratelimit.py`. **Bekannte Grenzen:** (a) In-Memory pro Prozess — kein verteiltes Limit über mehrere Instanzen hinweg; (b) hinter dem in `docs/22-deploy-runbook.md` beschriebenen nginx muss `SUBSUMO_RATE_LIMIT_TRUSTED_PROXIES=127.0.0.1` gesetzt sein, sonst zählt der Limiter alle Anfragen auf einen einzigen Schlüssel |
 
 ## 3. Stores und Auslieferung
 
@@ -118,6 +119,65 @@ das mit T6/Preisentscheidung abzustimmen ist, nicht hier vorwegzunehmen.
 
 ---
 
+## 7. Content-Redaktion
+
+| Punkt | Verantwortlich | Aufwand | Phase | Status |
+|---|---|---|---|---|
+| Menge und Struktur des Lern-Contents | Content-Koordinator | — | C | **Erledigt.** Stand `main` 25.09.2026, ausgezählt mit `backend/scripts/validate_content.py`: **60 Themen, 446 Karten, 64 Schemata, 60 Fälle — 0 Fehler, 0 Warnungen.** P1 36/36 und P2 24/24 vollständig; P3 (14 Themen) liegt laut `docs/12-content-produktionsplan.md` bewusst nach v1.0. G3 verlangt 180 Karten |
+| Deterministisches Normzitat-Gate über den Bestand | Content-Prüfagent | — | C | **Erledigt, mit bekannter Grenze.** 57 der 60 Themen tragen `redaktion.normzitate_geprueft`; die 3 ohne Nachweis sind exakt die M0-Themen ohne `redaktion`-Block, die `docs/08-ki-redaktion.md` ausdrücklich als regulär redigiert einstuft. **Grenze:** Das Gate prüft Existenz und Form eines Zitats, nicht dessen inhaltliche Richtigkeit — ein real existierender Paragraph mit falsch behauptetem Inhalt passiert es unbemerkt. Es läuft zudem nur beim Erzeugen eines Themas, nicht über den Baum ([SUB-251](/SUB/issues/SUB-251), Nach-Release) |
+| **Menschliche Stichprobe nach `docs/08-ki-redaktion.md`** | Nutzer (Entscheidung getroffen) | 0 PT | C | **Bewusst ausgesetzt — offenes Risiko, siehe unten.** Nicht erledigt und nicht geplant nachzuholen vor v1.0 |
+
+### 7.1 Bewusst ausgesetztes Gate: die menschliche Stichprobe
+
+**Das ist kein offener Punkt, der noch abgearbeitet wird, sondern eine
+getroffene Entscheidung mit einem Restrisiko, das hier stehen bleibt, damit es
+nicht stillschweigend mitläuft.**
+
+Entscheidung vom **25.09.2026** auf [SUB-225](/SUB/issues/SUB-225)
+(Interaktion `f754f609`, vom Nutzer beantwortet): Option *„Release ohne
+menschliche Stichprobe, Gate bewusst ausgesetzt"*. Vorgelegt waren sechs
+Optionen, darunter eine verkleinerte Stichprobe und eine Verschiebung des
+Content-Freeze; gewählt wurde die Aussetzung.
+
+| | |
+|---|---|
+| **Was `docs/08-ki-redaktion.md` vorsieht** | Menschliche Stichprobe durch eine Person mit juristischer Vorbildung, ≥ 10 % der KI-erzeugten Inhalte, mind. 2 Themen je Rechtsgebiet (`docs/12` 4.2) |
+| **Was tatsächlich vorliegt** | **0 von 60 Themen** haben eine menschliche Prüfsignatur. Alle 57 KI-erzeugten Themen tragen `geprueft_von: reviewer-agent-v1` — ein LLM-Aufruf, keine Person |
+| **Material** | Vollständig vorbereitet in [`docs/26-content-stichprobe.md`](26-content-stichprobe.md): 6 stratifizierte P1-Themen, Zitatlisten, Prüfraster, Befundformular. Es fehlt ausschließlich die Durchführung |
+
+**Konkrete Folge, die aus dieser Entscheidung erwächst:**
+
+1. **Normzitate gehen inhaltlich ungeprüft live.** Das deterministische Gate
+   fängt erfundene Gesetzeskürzel und nicht existierende Paragraphennummern ab.
+   Es fängt **nicht** den Fall „§ 823 BGB existiert, der Karteninhalt behauptet
+   aber etwas, das dort nicht steht". Dafür war die menschliche Stichprobe die
+   einzige vorgesehene Instanz.
+2. **Es gibt derzeit keine zweite Instanz.** Der Norm-Explorer (M2), der
+   Zitate maschinell gegen den Gesetzestext prüfen soll, ist nicht gebaut.
+   Zwischen Produktion und Nutzer steht damit ausschließlich der LLM-Reviewer.
+3. **Die Fehlerklasse ist die für ein Lernprodukt teuerste.** Ein inhaltlich
+   falscher Rechtssatz wird von Lernenden per Konstruktion nicht erkannt — sie
+   benutzen das Produkt ja, um den richtigen erst zu lernen. Der Schaden fällt
+   nicht beim Release auf, sondern später und bei denen, die am wenigsten
+   gegenprüfen können.
+
+**Risikobegrenzung, die unabhängig davon greift:** Struktur-Gate (0 Fehler),
+LLM-Reviewer-Gate vor jedem Merge, deterministisches Normzitat-Gate für alle
+neu erzeugten Themen, der Hinweis „Lernhilfe, keine Rechtsberatung, keine
+Note", den jede Ausgabe des Struktur-Checks in der Anwendung selbst trägt
+(`docs/legal/02-agb.md` Abschnitt 2.1), und der Haftungsausschluss für
+Ergebnisse des Struktur-Checks (ebd. Abschnitt 8: „die Anwendung ist
+Lernhilfe, kein Garant für einen Lernerfolg"). Diese Maßnahmen adressieren
+Form und Haftung — **nicht** die fachliche Richtigkeit im Einzelfall.
+
+**Empfohlener Nachlauf (nicht release-blockierend, aber nicht ersatzlos
+streichbar):** Die vorbereitete Stichprobe nach dem Launch nachholen und
+[SUB-251](/SUB/issues/SUB-251) (Normzitat-Gate über den ganzen Baum in der CI)
+umsetzen. Beides kostet zusammen weniger als ein Personentag; der Wert liegt
+darin, dass die Fehlerklasse aus Punkt 1 dann überhaupt eine Instanz hat.
+
+---
+
 ## Zusammenfassung: Was Gate C und Gate D blockiert
 
 Nach `docs/03-roadmap.md` verlangt **Gate C** „keine offenen
@@ -135,3 +195,10 @@ Bezahlvorgang" plus vier Plattformen live. Der aktuell blockierende Kern:
    Umsatzsteuer-OSS, Haftungsklausel KI-Bewertung) brauchen externe Beratung
    und sind nicht durch Produktentscheidung allein lösbar — rechtzeitig vor
    Gate C beauftragen, Vorlaufzeit einplanen wie bei der T4-Kalibrierung.
+
+**Nicht blockierend, aber bewusst in Kauf genommen:** Die menschliche
+Content-Stichprobe ist per Nutzerentscheidung vom 25.09.2026 ausgesetzt
+(Abschnitt 7.1). Sie taucht hier nicht als Blocker auf, weil sie entschieden
+ist — nicht, weil sie erledigt ist. Wer diesen Abschnitt als „Restliste" liest,
+soll den Unterschied sehen: Der Content ist mengenmäßig und strukturell fertig,
+seine fachliche Richtigkeit ist im Einzelfall von keiner Person gegengeprüft.

@@ -203,6 +203,8 @@ faelle:
       - Perpetuierungsfunktion
       - Beweisfunktion
       - Garantiefunktion
+      card_slugs:
+      - sr-urkunde-begriff
     - id: p3
       label: Unechtheit (Identitaetstaeuschung ueber den Aussteller, nicht blosse
         schriftliche Luege) begruendet
@@ -213,6 +215,8 @@ faelle:
       keywords:
       - Identitaetstaeuschung
       - unecht
+      card_slugs:
+      - sr-urkunde-tathandlungen-herstellen-verfaelschen
     - id: p4
       label: Herstellen einer unechten Urkunde, § 267 Abs. 1 Var. 1 StGB, bejaht
       weight: 2.0
@@ -221,6 +225,8 @@ faelle:
       - § 267 Abs. 1 StGB
       keywords:
       - Herstellen
+      card_slugs:
+      - sr-urkunde-tathandlungen-herstellen-verfaelschen
     - id: p5
       label: Gebrauchmachen, § 267 Abs. 1 Var. 3 StGB, erkannt und Tateinheit zum
         Herstellen angesprochen
@@ -231,6 +237,8 @@ faelle:
       keywords:
       - Gebrauchmachen
       - Tateinheit
+      card_slugs:
+      - sr-urkunde-gebrauchmachen
     - id: p6
       label: Vorsatz und Taeuschungsabsicht (ueberschiessende Innentendenz) bejaht
       weight: 1.0

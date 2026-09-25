@@ -204,6 +204,8 @@ faelle:
       keywords:
       - '985'
       - Herausgabe
+      card_slugs:
+      - zr-sr-929-voraussetzungen
     - id: p2
       label: Pruefung des Eigentumserwerbs des K ueber § 929 S. 1 iVm § 931 BGB
       weight: 1.5
@@ -211,11 +213,16 @@ faelle:
       - '929'
       - '931'
       - Eigentumserwerb
+      card_slugs:
+      - zr-sr-929-voraussetzungen
+      - zr-sr-abtretung-herausgabeanspruch-931
     - id: p3
       label: Dingliche Einigung zwischen V und K bejaht
       weight: 1.0
       keywords:
       - Einigung
+      card_slugs:
+      - zr-sr-dingliche-einigung-abstraktionsprinzip
     - id: p4
       label: 'Uebergabesurrogat: Abtretung des Herausgabeanspruchs gegen L statt Uebergabe,
         § 931 BGB, erkannt'
@@ -227,12 +234,16 @@ faelle:
       - '931'
       - Abtretung
       - Herausgabeanspruch
+      card_slugs:
+      - zr-sr-abtretung-herausgabeanspruch-931
     - id: p5
       label: Berechtigung der V als Eigentuemerin bejaht
       weight: 0.5
       keywords:
       - berechtigt
       - Eigentuemerin
+      card_slugs:
+      - zr-sr-929-berechtigung-veraeusserers
     - id: p6
       label: 'Ergebnis: K ist Eigentuemer geworden'
       weight: 1.0
@@ -250,6 +261,8 @@ faelle:
       - kein Besitzrecht
       - Abtretung
       - angezeigt
+      card_slugs:
+      - zr-sr-abtretung-herausgabeanspruch-931
     - id: p8
       label: 'Ergebnis: K kann von L die Herausgabe verlangen'
       weight: 1.0

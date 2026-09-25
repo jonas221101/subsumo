@@ -253,6 +253,8 @@ faelle:
       - Kaufvertrag
       - Rechtsgrund
       - unwirksam
+      card_slugs:
+      - zr-at-geschaeftsfaehigkeit-begriff
     - id: p2
       label: K ist beschraenkt geschaeftsfaehig, § 106 BGB; Kaufvertrag nicht lediglich
         rechtlich vorteilhaft, § 107 BGB
@@ -266,6 +268,9 @@ faelle:
       - lediglich rechtlich vorteilhaft
       - '106'
       - '107'
+      card_slugs:
+      - zr-at-beschraenkte-geschaeftsfaehigkeit-106
+      - zr-at-lediglich-rechtlicher-vorteil-107
     - id: p3
       label: Grundsaetzliches Einwilligungsbeduerfnis mangels vorheriger Zustimmung
         der Eltern erkannt
@@ -273,6 +278,8 @@ faelle:
       keywords:
       - Einwilligung
       - '183'
+      card_slugs:
+      - zr-at-einwilligung-genehmigung-schwebende-unwirksamkeit
     - id: p4
       label: Pruefung und Bejahung der Voraussetzungen des § 110 BGB (Ueberlassung
         zur freien Verfuegung + Bewirkung der Leistung)
@@ -285,6 +292,8 @@ faelle:
       - Taschengeld
       - zur freien Verfuegung
       - bewirkt
+      card_slugs:
+      - zr-at-taschengeldparagraph-110
     - id: p5
       label: 'Rechtsfolge: Vertrag gilt von Anfang an als genehmigt, ist also wirksam'
       weight: 1.5
@@ -292,6 +301,8 @@ faelle:
       - von Anfang an
       - genehmigt
       - wirksam
+      card_slugs:
+      - zr-at-taschengeldparagraph-110
     - id: p6
       label: 'Ergebnis: kein Anspruch der Eltern gegen V'
       weight: 1.0

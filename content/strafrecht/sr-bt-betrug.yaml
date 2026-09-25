@@ -211,6 +211,8 @@ faelle:
       - Taeuschung
       - Tatsachen
       - Display
+      card_slugs:
+      - sr-betrug-taeuschung
     - id: p3
       label: Irrtum und dadurch veranlasste Vermoegensverfuegung (Ueberweisung) bejaht
       weight: 2.0
@@ -219,6 +221,9 @@ faelle:
       - Irrtum
       - Vermoegensverfuegung
       - Ueberweisung
+      card_slugs:
+      - sr-betrug-irrtum
+      - sr-betrug-vermoegensverfuegung
     - id: p4
       label: Vermoegensschaden ueber Gesamtsaldierung/Minderwert begruendet
       weight: 3.0
@@ -227,6 +232,8 @@ faelle:
       - Gesamtsaldierung
       - Minderwert
       - Vermoegensschaden
+      card_slugs:
+      - sr-betrug-vermoegensschaden
     - id: p5
       label: Stoffgleiche, rechtswidrige Bereicherungsabsicht bejaht
       weight: 1.5
@@ -235,6 +242,8 @@ faelle:
       - Bereicherungsabsicht
       - stoffgleich
       - rechtswidrig
+      card_slugs:
+      - sr-betrug-bereicherungsabsicht
     - id: p6
       label: Vorsatz bzgl. aller objektiven Tatbestandsmerkmale erwaehnt
       weight: 1.0

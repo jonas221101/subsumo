@@ -250,6 +250,8 @@ faelle:
       keywords:
       - fremden Namen
       - '164'
+      card_slugs:
+      - zr-at-offenkundigkeitsprinzip
     - id: p3
       label: Fehlen einer ausdruecklichen Innen- oder Aussenvollmacht festgestellt
       weight: 1.5
@@ -258,6 +260,8 @@ faelle:
       - keine Vollmacht
       - nicht bevollmaechtigt
       - ausdruecklich
+      card_slugs:
+      - zr-at-vollmacht-innen-aussen
     - id: p4
       label: Duldungsvollmacht mangels positiver Kenntnis fuer die konkrete Bestellung
         verneint
@@ -266,6 +270,8 @@ faelle:
       keywords:
       - Duldungsvollmacht
       - positive Kenntnis
+      card_slugs:
+      - zr-at-duldungs-anscheinsvollmacht
     - id: p5
       label: Anscheinsvollmacht sauber definiert und subsumiert (Erkennbarkeit/Verhinderbarkeit
         des Rechtsscheins, Gutglaeubigkeit des L)
@@ -275,6 +281,8 @@ faelle:
       - Anscheinsvollmacht
       - Sorgfalt
       - gutglaeubig
+      card_slugs:
+      - zr-at-duldungs-anscheinsvollmacht
     - id: p6
       label: 'Ergebnis: Anspruch des L gegen U besteht'
       weight: 1.0

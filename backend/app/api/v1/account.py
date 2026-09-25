@@ -2,20 +2,33 @@
 
 from __future__ import annotations
 
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 
 from fastapi import APIRouter, HTTPException, status
 
 from app.api.deps import CurrentUser, DbSession
 from app.core.security import verify_password
-from app.models import AnalyzeCall, Card, Case, CaseAccess, Review, Submission, UserCard
+from app.models import (
+    AnalyzeCall,
+    Card,
+    Case,
+    CaseAccess,
+    RedeemCode,
+    RedeemCodeRedemption,
+    Review,
+    Submission,
+    UserCard,
+)
 from app.schemas import (
     AccountDeleteIn,
     AccountExportAccountOut,
     AccountExportOut,
+    AccountExportRedemptionOut,
     AccountExportReviewOut,
     AccountExportSubmissionOut,
     AccountExportUserCardOut,
+    RedeemCodeIn,
+    RedeemCodeOut,
 )
 
 router = APIRouter(prefix="/account", tags=["account"])
@@ -26,16 +39,24 @@ def export_account(user: CurrentUser, db: DbSession) -> AccountExportOut:
     """Vollstaendige maschinenlesbare Selbstauskunft (Art. 15 DSGVO).
 
     Deckt alle zur Nutzer-ID gespeicherten und daraus abgeleiteten Daten ab:
-    Konto, FSRS-Lernzustand, Review-Historie und abgegebene Gutachtentexte
-    samt Bewertung. Nur fuer das eigene, angemeldete Konto erreichbar.
+    Konto, FSRS-Lernzustand, Review-Historie, abgegebene Gutachtentexte samt
+    Bewertung sowie eingeloeste Freischaltcodes (SUB-270). Nur fuer das
+    eigene, angemeldete Konto erreichbar.
     """
     card_slugs = dict(db.query(Card.id, Card.slug).all())
     case_slugs = dict(db.query(Case.id, Case.slug).all())
+    campaign_slugs = dict(db.query(RedeemCode.id, RedeemCode.campaign_slug).all())
 
     user_cards = db.query(UserCard).filter_by(user_id=user.id).all()
     reviews = db.query(Review).filter_by(user_id=user.id).order_by(Review.reviewed_at).all()
     submissions = (
         db.query(Submission).filter_by(user_id=user.id).order_by(Submission.created_at).all()
+    )
+    redemptions = (
+        db.query(RedeemCodeRedemption)
+        .filter_by(user_id=user.id)
+        .order_by(RedeemCodeRedemption.redeemed_at)
+        .all()
     )
 
     return AccountExportOut(
@@ -90,6 +111,13 @@ def export_account(user: CurrentUser, db: DbSession) -> AccountExportOut:
             )
             for s in submissions
         ],
+        redemptions=[
+            AccountExportRedemptionOut(
+                campaign_slug=campaign_slugs.get(r.redeem_code_id, ""),
+                redeemed_at=r.redeemed_at,
+            )
+            for r in redemptions
+        ],
     )
 
 
@@ -100,11 +128,12 @@ def delete_account(payload: AccountDeleteIn, user: CurrentUser, db: DbSession) -
     Der Bestaetigungsschritt verlangt neben ``confirm=true`` das aktuelle
     Passwort - das schuetzt vor versehentlicher Loeschung durch einen blossen
     Klick mit einem noch gueltigen Token. Entfernt alle personenbezogenen und
-    nutzerbezogenen Daten (Konto, FSRS-Zustand, Reviews, Gutachtenabgaben).
-    Es gibt aktuell keine Daten, die aus Integritaetsgruenden anonymisiert
-    erhalten bleiben muessten - keine Zahlungen, keine geteilten Aggregate,
-    die auf einzelne Konten zurueckfuehren (siehe PR-Beschreibung SUB-84).
-    Danach ist kein Login mit diesem Konto mehr moeglich.
+    nutzerbezogenen Daten (Konto, FSRS-Zustand, Reviews, Gutachtenabgaben,
+    eingeloeste Freischaltcodes). Es gibt aktuell keine Daten, die aus
+    Integritaetsgruenden anonymisiert erhalten bleiben muessten - keine
+    Zahlungen, keine geteilten Aggregate, die auf einzelne Konten
+    zurueckfuehren (siehe PR-Beschreibung SUB-84). Danach ist kein Login mit
+    diesem Konto mehr moeglich.
     """
     if not payload.confirm:
         raise HTTPException(
@@ -118,6 +147,51 @@ def delete_account(payload: AccountDeleteIn, user: CurrentUser, db: DbSession) -
     db.query(Submission).filter_by(user_id=user.id).delete()
     db.query(CaseAccess).filter_by(user_id=user.id).delete()
     db.query(AnalyzeCall).filter_by(user_id=user.id).delete()
+    db.query(RedeemCodeRedemption).filter_by(user_id=user.id).delete()
     db.delete(user)
     db.commit()
     return {"deleted": True}
+
+
+@router.post("/redeem", response_model=RedeemCodeOut)
+def redeem_code(payload: RedeemCodeIn, user: CurrentUser, db: DbSession) -> RedeemCodeOut:
+    """Freischaltcode einloesen (docs/28-freischaltcode-spezifikation.md Abschnitt 3).
+
+    Kein Stripe-Aufruf - verlaengert nur ``User.pro_until``. 404 fuer
+    unbekannten wie deaktivierten Code in einer Fehlermeldung, damit der
+    Endpoint kein Orakel fuer gueltige Codes ist (Enumeration-Schutz).
+    """
+    normalized = payload.code.strip().upper()
+    code = db.query(RedeemCode).filter_by(code=normalized).one_or_none()
+    if code is None or not code.active:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, "Code nicht gefunden")
+
+    now = datetime.now(UTC)
+    if code.expires_at is not None and _as_aware(code.expires_at) <= now:
+        raise HTTPException(status.HTTP_410_GONE, "Code ist abgelaufen")
+
+    already_redeemed = (
+        db.query(RedeemCodeRedemption)
+        .filter_by(redeem_code_id=code.id, user_id=user.id)
+        .one_or_none()
+    )
+    if already_redeemed is not None:
+        raise HTTPException(status.HTTP_409_CONFLICT, "Code wurde bereits eingeloest")
+
+    if code.max_redemptions is not None:
+        redemption_count = (
+            db.query(RedeemCodeRedemption).filter_by(redeem_code_id=code.id).count()
+        )
+        if redemption_count >= code.max_redemptions:
+            raise HTTPException(status.HTTP_410_GONE, "Code ist ausgeschoepft")
+
+    base = _as_aware(user.pro_until) if user.pro_until is not None else now
+    user.pro_until = max(base, now) + timedelta(days=code.pro_duration_days)
+    db.add(user)
+    db.add(RedeemCodeRedemption(redeem_code_id=code.id, user_id=user.id))
+    db.commit()
+    return RedeemCodeOut(pro_until=user.pro_until)
+
+
+def _as_aware(value: datetime) -> datetime:
+    return value if value.tzinfo is not None else value.replace(tzinfo=UTC)

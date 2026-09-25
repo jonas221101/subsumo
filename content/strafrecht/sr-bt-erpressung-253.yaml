@@ -193,6 +193,8 @@ faelle:
       keywords:
       - Drohung
       - empfindliches Uebel
+      card_slugs:
+      - sr-erpressung-grundtatbestand
     - id: p2
       label: Vermoegensverfuegung des U erkannt (eigene Ueberweisung statt Wegnahme)
       weight: 3.0
@@ -202,12 +204,17 @@ faelle:
       keywords:
       - Vermoegensverfuegung
       - ueberweist
+      card_slugs:
+      - sr-erpressung-vermoegensverfuegung-streitstand
+      - sr-erpressung-abgrenzung-raub-249
     - id: p3
       label: Vermoegensnachteil bejaht
       weight: 1.0
       required: false
       keywords:
       - Vermoegensnachteil
+      card_slugs:
+      - sr-erpressung-vermoegensschaden
     - id: p4
       label: Bereicherungsabsicht und Stoffgleichheit bejaht
       weight: 2.0
@@ -217,6 +224,8 @@ faelle:
       keywords:
       - Bereicherungsabsicht
       - stoffgleich
+      card_slugs:
+      - sr-erpressung-stoffgleichheit
     - id: p5
       label: Verwerflichkeit gemaess § 253 Abs. 2 StGB bejaht
       weight: 1.0
@@ -225,6 +234,8 @@ faelle:
       - § 253 Abs. 2 StGB
       keywords:
       - verwerflich
+      card_slugs:
+      - sr-erpressung-verwerflichkeit
     - id: p6
       label: Raeuberische Erpressung, § 255 StGB, bejaht (Drohung mit gegenwaertiger
         Gefahr fuer das Leben)
@@ -235,3 +246,5 @@ faelle:
       keywords:
       - gegenwaertige Gefahr
       - Leben
+      card_slugs:
+      - sr-erpressung-raeuberische-255

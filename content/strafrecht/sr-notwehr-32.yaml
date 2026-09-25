@@ -220,6 +220,9 @@ faelle:
       keywords:
       - gegenwaertig
       - rechtswidriger Angriff
+      card_slugs:
+      - sr-at-angriff
+      - sr-at-notwehr
     - id: p2
       label: Notwehrprovokation als Problem erkannt und Streitstand dargestellt
       weight: 3.0
@@ -228,6 +231,8 @@ faelle:
       - Provokation
       - Absichtsprovokation
       - abgestufte Loesung
+      card_slugs:
+      - sr-notwehr-provokation
     - id: p3
       label: Ausweichmoeglichkeit zur Haustuer als Argument gegen Erforderlichkeit
         der Trutzwehr verarbeitet
@@ -237,6 +242,9 @@ faelle:
       - ausweichen
       - Trutzwehr
       - erforderlich
+      card_slugs:
+      - sr-notwehr-erforderlichkeit-kriterien
+      - sr-notwehr-abgestufte-verteidigung
     - id: p4
       label: 'Ergebnis: keine Rechtfertigung nach § 32 StGB'
       weight: 1.5
@@ -244,6 +252,8 @@ faelle:
       keywords:
       - nicht gerechtfertigt
       - keine Rechtfertigung
+      card_slugs:
+      - sr-notwehr-provokation
     - id: p5
       label: Pruefung des § 33 StGB (Notwehrexzess) zumindest angesprochen und mangels
         Verwirrung/Furcht/Schrecken abgelehnt
@@ -254,3 +264,5 @@ faelle:
       - Verwirrung
       - Furcht
       - Schrecken
+      card_slugs:
+      - sr-notwehrexzess-33

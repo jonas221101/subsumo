@@ -23,6 +23,15 @@ def _set_pro_felder(*, email: str) -> None:
         db.commit()
 
 
+def _create_redeem_code(code: str, *, campaign_slug: str = "fachschaft-lmu") -> None:
+    import app.db as db_module
+    from app.models import RedeemCode
+
+    with db_module.SessionLocal() as db:
+        db.add(RedeemCode(code=code, campaign_slug=campaign_slug, pro_duration_days=180))
+        db.commit()
+
+
 def _seed_lerndaten(auth_client) -> dict:
     """Legt einen Review- und einen Gutachten-Datensatz fuer den Nutzer an."""
     card = auth_client.get("/v1/cards/due", params={"limit": 1}).json()[0]
@@ -89,6 +98,17 @@ def test_export_deckt_entitlement_felder_eines_pro_kontos_ab(auth_client):
     assert account["stripe_subscription_id"] == "sub_test456"
     assert account["pro_until"] is not None
     assert account["cancel_at_period_end"] is True
+
+
+def test_export_deckt_eingeloeste_freischaltcodes_ab(auth_client):
+    _create_redeem_code("FACHSCHAFT-LMU-2026", campaign_slug="fachschaft-lmu")
+    auth_client.post("/v1/account/redeem", json={"code": "FACHSCHAFT-LMU-2026"})
+
+    export = auth_client.get("/v1/account/export").json()
+
+    assert len(export["redemptions"]) == 1
+    assert export["redemptions"][0]["campaign_slug"] == "fachschaft-lmu"
+    assert export["redemptions"][0]["redeemed_at"]
 
 
 def test_export_zeigt_nur_das_eigene_konto(client):
@@ -191,6 +211,34 @@ def test_loeschung_entfernt_free_tier_limit_daten(client, monkeypatch):
             assert db.query(AnalyzeCall).filter_by(user_id=user_id).count() == 0
     finally:
         get_settings.cache_clear()
+
+
+def test_loeschung_entfernt_eingeloeste_freischaltcodes(client):
+    """redeem_code_redemptions (SUB-270) ist ebenfalls personenbezogen (SUB-282)."""
+    from app.models import RedeemCodeRedemption, User
+
+    _create_redeem_code("FACHSCHAFT-LMU-2026")
+
+    email = f"{uuid.uuid4().hex[:10]}@uni-beispiel.de"
+    reg = client.post("/v1/auth/register", json={"email": email, "password": AUTH_PASSWORD}).json()
+    client.headers["Authorization"] = f"Bearer {reg['access_token']}"
+    assert client.post(
+        "/v1/account/redeem", json={"code": "FACHSCHAFT-LMU-2026"}
+    ).status_code == 200
+
+    import app.db as db_module
+
+    with db_module.SessionLocal() as db:
+        user_id = db.query(User).filter_by(email=email).one().id
+        assert db.query(RedeemCodeRedemption).filter_by(user_id=user_id).count() == 1
+
+    response = client.post(
+        "/v1/account/delete", json={"password": AUTH_PASSWORD, "confirm": True}
+    )
+    assert response.status_code == 200
+
+    with db_module.SessionLocal() as db:
+        assert db.query(RedeemCodeRedemption).filter_by(user_id=user_id).count() == 0
 
 
 def test_loeschung_wirkt_nur_auf_das_eigene_konto(client):

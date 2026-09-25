@@ -3,7 +3,7 @@
 > Auftrag aus [SUB-254](/SUB/issues/SUB-254) über [SUB-260](/SUB/issues/SUB-260):
 > „Baue ein Werbekonzept auf und überlege, wie wir die ersten Kunden
 > gewinnen." Befund, auf dem dieses Dokument aufbaut:
-> `docs/26-projektreview-sub254.md` Abschnitt 4 und der Nachtrag vom
+> `docs/31-projektreview-sub254.md` Abschnitt 4 und der Nachtrag vom
 > 24.09.2026 in `docs/14-marktanalyse.md` Abschnitt 2.1.
 >
 > **Verhältnis zu bestehenden Dokumenten — keine Wiederholung:**
@@ -16,17 +16,18 @@
 > **konkreten Weg zu den ersten zahlenden Kund:innen**, der über das
 > Fachschafts-/Warteliste-Programm aus `docs/15` hinausgeht.
 >
-> **Offene Vorgabe, hier bewusst nicht abgewartet:** `docs/19` Abschnitt 6
-> setzt „kein Werbebudget" fest; die Rückfrage dazu läuft als Interaktion auf
-> SUB-254 (`werbebudget`, pending). Dieses Dokument baut das Konzept für den
-> dokumentierten Fall — **organisch, ohne Budget** — als Hauptfall
-> (Abschnitt 4) und stellt eine budgetabhängige Option separat daneben
-> (Abschnitt 5), aktivierbar, sobald die Antwort vorliegt, aber nicht
-> blockierend für alles andere hier.
+> **Werbebudget-Rückfrage beantwortet:** Der Auftraggeber hat die Rückfrage
+> auf SUB-254 (Interaktion `65179b93-68de-4e49-b2a8-3852889ad7fc`, Frage
+> `werbebudget`) am 2026-09-25T05:52Z beantwortet: „Klein: bis ca. 500
+> EUR/Monat" — genug für einen zielgruppengenauen Testkanal, nicht für
+> Breite. Dieses Dokument baut das Konzept weiterhin auf dem organischen Fall
+> auf — **organisch, ohne Budget** — als Hauptfall (Abschnitt 4) und stellt
+> die jetzt aktive, budgetabhängige Option daneben (Abschnitt 5, Obergrenze
+> 500 €/Monat).
 >
 > **Stand:** 24.09.2026. Releasetermin 29.09.2026
 > (`docs/18-release-2-wochen.md`). Umsetzung der hier beschriebenen
-> Kreativ-Assets liegt **nach Release**, wie in `docs/26` Abschnitt 7 Punkt 6
+> Kreativ-Assets liegt **nach Release**, wie in `docs/31` Abschnitt 7 Punkt 6
 > eingeordnet — dieses Dokument ist Konzept, keine Produktionsbeauftragung.
 
 ---
@@ -141,14 +142,14 @@ nach** SUB-262, nicht am 29.09.
 
 ---
 
-## 4. Organische Variante — Hauptfall (kein Budget, `docs/19` Abschnitt 6)
+## 4. Organische Variante — Hauptfall (ohne Werbebudget)
 
 Alle Assets aus Abschnitt 2 und beide Taktiken aus Abschnitt 3 kosten Zeit,
 kein Geld — sie nutzen ausschließlich bestehende Kanäle, bestehenden
-Content und bestehende Produktfunktionen. Das ist die Variante, die ohne
-Antwort auf die SUB-254-Rückfrage bereits vollständig umsetzbar ist, sobald
-Kapazität nach dem Release besteht (`docs/26` Abschnitt 7 Punkt 6:
-Umsetzung nach Release).
+Content und bestehende Produktfunktionen. Das ist die Variante, die
+unabhängig von der Werbebudget-Entscheidung bereits vollständig umsetzbar
+ist, sobald Kapazität nach dem Release besteht (`docs/31` Abschnitt 7
+Punkt 6: Umsetzung nach Release).
 
 Messung läuft über die bereits in `docs/15` Abschnitt 4 definierten
 Herkunfts-Parameter — keine zusätzliche Metrik-Tabelle hier, um keine zweite,
@@ -160,14 +161,21 @@ strukturell von Warteliste-/Fachschafts-Konversion unterscheidet
 
 ---
 
-## 5. Budgetabhängige Option — separat, nicht aktiv
+## 5. Werbebudget-Option — aktiv, Obergrenze ≈ 500 €/Monat
 
-Aktiviert nur, falls die Antwort auf die SUB-254-Interaktion
-(`werbebudget`) „klein" oder „mittel" ist. Ohne Antwort oder bei „kein
-Budget" bleibt dieser Abschnitt unbenutzt — er ersetzt nichts aus
-Abschnitt 4, sondern kommt zusätzlich hinzu.
+Der Auftraggeber hat die Rückfrage zu SUB-254 (Interaktion
+`65179b93-68de-4e49-b2a8-3852889ad7fc`, Frage `werbebudget`) am
+2026-09-25T05:52Z beantwortet: **„Klein: bis ca. 500 EUR/Monat" — genug für
+einen zielgruppengenauen Testkanal (z. B. Instagram/TikTok auf
+Jura-Erstsemester), nicht für Breite.** Dieser Abschnitt ist damit aktiv,
+nicht mehr eine für später vorgehaltene Option — er ersetzt nichts aus
+Abschnitt 4 (organisch bleibt der Hauptkanal), sondern kommt als einzelner
+zusätzlicher Testkanal hinzu, mit einer festen Obergrenze: **500 €/Monat,
+keine Ausnahme.** Das war ausdrücklich die kleinste der drei angebotenen
+Budgetstufen — keine Agentur, keine Breitenkampagne, kein zweiter bezahlter
+Kanal (Stufe 5.2 „mittel" ist damit **nicht** aktiv, siehe unten).
 
-### 5.1 Bei „klein" (≈ 500 €/Monat)
+### 5.1 Der aktive Testkanal
 
 Ein einzelner, eng zielgruppengenauer Kanal: bezahlte Instagram/TikTok-Ads,
 geografisch auf Städte mit juristischer Fakultät eingegrenzt, zeitlich auf
@@ -178,17 +186,43 @@ nur organisch gepostet. Zusätzlicher Aufwand ist ausschließlich das
 Kampagnen-Setup (Zielgruppen-Targeting, Budget-Cap), keine neue
 Content-Produktion.
 
-### 5.2 Bei „mittel" (≈ 500–2.000 €/Monat)
+**Budget-Cap:** 500 €/Monat als plattformseitige Tagesbudget-Grenze
+eingerichtet (≈ 16 €/Tag als Kampagnen-Einstellung, nicht als nachträgliche
+Abrechnungskontrolle) — die Kampagne darf technisch nicht über die
+Obergrenze hinaus ausspielen.
 
-Zusätzlich zu 5.1 ein zweiter Kanal zum Parallelvergleich (z. B.
-Google-Suchanzeigen auf generische Begriffe wie „Jura Klausur Feedback
-online"). **Nicht vorgesehen, ohne Rechtsprüfung:** Anzeigen auf
-Wettbewerber-Markennamen als Keyword — das grenzt an vergleichende Werbung
-und braucht vorab eine Prüfung gegen `docs/06-recht-compliance.md`
-Abschnitt 5, die hier nicht vorweggenommen wird. Voraussetzung für Stufe
-5.2 ist außerdem die in `docs/15` Abschnitt 4 als fehlend benannte
-UTM-/Attributions-Infrastruktur — ohne sie lässt sich der zweite Kanal nicht
-von Stufe 5.1 unterscheiden, das Geld liefe blind.
+**Messgröße: Kosten je Anmeldung.** Gezählt über dieselben
+Herkunfts-Parameter wie in `docs/15` Abschnitt 4 (eigener Kanalwert
+„Bezahlt Social"), Ausgabe im Zeitraum durch Anmeldungen im selben Zeitraum
+geteilt:
+
+| Zeitraum | Ausgabe (Cap) | Anmeldungen (Zielwert) | Kosten/Anmeldung (Zielwert) | Abschaltkriterium |
+|---|---|---|---|---|
+| Erste 14 Tage (29.09.–13.10.) | bis 250 € | ≥ 15 | ≤ 16,67 € | — |
+| Folgende 14 Tage (14.10.–28.10., bei Fortsetzung) | bis 250 € | ≥ 15 | ≤ 16,67 € | Nach insgesamt 4 Wochen ohne Kosten/Anmeldung ≤ 25 €: Kanal einstellen, verbleibendes Budget bleibt ungenutzt statt weiter ausgespielt |
+
+Der Zielwert (≤ 16,67 €/Anmeldung) ist eine Arbeitsannahme, keine belegte
+Kennzahl — er wird nach der ersten Kampagnenwoche mit echten Daten
+kalibriert, nicht vor Kampagnenstart weiter verfeinert. In keinem Fall wird
+über die 500 €/Monat-Obergrenze hinaus nachgelegt, auch nicht bei gutem
+Kosten/Anmeldung-Wert — eine Erhöhung wäre eine neue Auftraggeber-Frage,
+keine Entscheidung, die dieses Dokument trifft.
+
+### 5.2 Nicht aktiv: Stufe „mittel" (≈ 500–2.000 €/Monat)
+
+Die Antwort auf die Budgetfrage war ausdrücklich die kleinste der drei
+angebotenen Stufen (klein/mittel/groß) — diese Stufe bleibt daher
+unbenutzt, nicht nur „separat" wie ursprünglich für den unbeantworteten
+Fall vorgesehen. Zur Erinnerung, falls das Budget künftig erhöht wird:
+Ein zweiter Kanal zum Parallelvergleich (z. B. Google-Suchanzeigen auf
+generische Begriffe wie „Jura Klausur Feedback online") käme erst nach
+einer erneuten Auftraggeber-Entscheidung dazu. **Nicht vorgesehen, ohne
+Rechtsprüfung:** Anzeigen auf Wettbewerber-Markennamen als Keyword — das
+grenzt an vergleichende Werbung und braucht vorab eine Prüfung gegen
+`docs/06-recht-compliance.md` Abschnitt 5, die hier nicht vorweggenommen
+wird. Voraussetzung für Stufe 5.2 ist außerdem die in `docs/15` Abschnitt 4
+als fehlend benannte UTM-/Attributions-Infrastruktur — ohne sie lässt sich
+der zweite Kanal nicht von Stufe 5.1 unterscheiden, das Geld liefe blind.
 
 ### 5.3 Was budgetabhängig **nicht** automatisch dazukommt
 
@@ -225,15 +259,15 @@ Punkte, die erst auf der Ebene konkreter Werbemittel sichtbar werden:
 | Punkt | Abhängig von | Status |
 |---|---|---|
 | Redeem-/Freischaltcode-Mechanismus (Fachschafts-Beta **und** Weiterempfehlungsschleife, Abschnitt 3.2) | Software-Planner | [SUB-262](/SUB/issues/SUB-262) angelegt, Backlog, kein Release-Blocker |
-| Werbebudget-Entscheidung | Auftraggeber | Interaktion auf [SUB-254](/SUB/issues/SUB-254) (`werbebudget`), pending — Abschnitt 4 läuft unabhängig davon bereits |
+| Werbebudget-Entscheidung | Auftraggeber | Beantwortet 2026-09-25 auf [SUB-254](/SUB/issues/SUB-254) (`werbebudget`): „klein, bis ca. 500 €/Monat" — Abschnitt 5 ist aktiv, Obergrenze 500 €/Monat |
 | UTM-/Attributions-Infrastruktur (Voraussetzung für 5.2) | Software-/Backend-Developer | Bereits in `docs/15` Abschnitt 4 als fehlend benannt, hier nicht dupliziert |
-| Rechtsprüfung vergleichender Werbeaussagen, falls 5.2 (Keyword-Ads) gezogen wird | Anwaltsfrage (siehe `docs/26` Abschnitt 8 Punkt 2) | Nicht Teil dieses Konzepts, vorab zu klären |
+| Rechtsprüfung vergleichender Werbeaussagen, falls 5.2 (Keyword-Ads) gezogen wird | Anwaltsfrage (siehe `docs/31` Abschnitt 8 Punkt 2) | Nicht Teil dieses Konzepts, vorab zu klären |
 
 ---
 
 ## Quellen
 
-- USP-Hierarchie und Befund: `docs/26-projektreview-sub254.md` Abschnitt 4
+- USP-Hierarchie und Befund: `docs/31-projektreview-sub254.md` Abschnitt 4
 - Wettbewerbsdaten (Kontingente, Preise, neue Anbieter): `docs/14-marktanalyse.md`
   Abschnitt 2, Nachtrag 2.1 (Abruf 24.09.2026)
 - Kanalplan, Zeitpunkte, Messgrößen, Fachschafts-Anschreiben: `docs/15-go-to-market.md`

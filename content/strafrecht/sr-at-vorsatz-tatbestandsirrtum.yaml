@@ -249,12 +249,17 @@ faelle:
       keywords:
       - '212'
       - Versuch
+      card_slugs:
+      - sr-vorsatz-aberratio-ictus
     - id: p2
       label: Aberratio ictus (kein error in persona) zutreffend erkannt und begruendet
       weight: 2.5
       required: true
       keywords:
       - aberratio ictus
+      card_slugs:
+      - sr-vorsatz-aberratio-ictus
+      - sr-vorsatz-error-in-persona
     - id: p3
       label: Vorsatz bzgl. C nach § 16 Abs. 1 StGB verneint
       weight: 2.0
@@ -263,6 +268,8 @@ faelle:
       - § 16 Abs. 1 StGB
       keywords:
       - 16 Abs. 1
+      card_slugs:
+      - sr-vorsatz-tatbestandsirrtum-def
     - id: p4
       label: Pruefung einer fahrlaessigen Toetung des C, § 222 StGB, mit Sorgfaltspflichtverletzung
         und Vorhersehbarkeit
@@ -273,6 +280,8 @@ faelle:
       keywords:
       - '222'
       - Sorgfaltspflicht
+      card_slugs:
+      - sr-vorsatz-aberratio-ictus
     - id: p5
       label: Tateinheit zwischen Versuch (B) und vollendeter Fahrlaessigkeitstat (C),
         § 52 StGB

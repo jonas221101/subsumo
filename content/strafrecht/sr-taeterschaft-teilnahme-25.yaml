@@ -279,6 +279,8 @@ faelle:
       keywords:
       - keine eigene Wegnahme
       - Alleintaeterschaft
+      card_slugs:
+      - sr-taeterschaft-unmittelbar
     - id: p3
       label: Gemeinsamer Tatentschluss zwischen A und B bejaht und begruendet
       weight: 2.0
@@ -288,6 +290,8 @@ faelle:
       keywords:
       - gemeinsamer Tatentschluss
       - Tatplan
+      card_slugs:
+      - sr-taeterschaft-mittaeterschaft
     - id: p4
       label: Schmierestehen als Tatbeitrag im Ausfuehrungsstadium mit funktionaler
         Tatherrschaft erkannt
@@ -299,6 +303,9 @@ faelle:
       - Ausfuehrungsstadium
       - funktionale Tatherrschaft
       - Tatbeitrag
+      card_slugs:
+      - sr-taeterschaft-mittaeterschaft
+      - sr-taeterschaft-tatherrschaftslehre
     - id: p5
       label: 'Abgrenzung zur Beihilfe (Tatherrschaftslehre: Vorbereitungsstadium/geringeres
         Gewicht begruendet nur § 27 StGB) sauber dargestellt'
@@ -310,6 +317,9 @@ faelle:
       - Beihilfe
       - Tatherrschaftslehre
       - Vorbereitungsstadium
+      card_slugs:
+      - sr-taeterschaft-abgrenzung-mittaeterschaft-beihilfe
+      - sr-taeterschaft-beihilfe
     - id: p6
       label: 'Ergebnis: B ist Mittaeter gemaess § 25 Abs. 2 StGB, Zurechnung der Wegnahme'
       weight: 1.0

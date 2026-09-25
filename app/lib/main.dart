@@ -112,6 +112,9 @@ class _HomeShellState extends State<HomeShell> {
   /// Entscheidung bei der Seite bleibt, die sie auch ausblendet.
   bool _focusMode = false;
 
+  // Funktionale Navigations-Icons bleiben in jedem Fall Icons.*_outlined,
+  // auch fuer den aktiven Tab (docs/25 Abschnitt 5+8.3) - keine gefuellte
+  // Variante als Aktiv-Signal.
   static const _destinations = [
     (icon: Icons.insights_outlined, label: 'Fortschritt'),
     (icon: Icons.style_outlined, label: 'Karten'),
@@ -216,7 +219,10 @@ class _HomeShellState extends State<HomeShell> {
               onDestinationSelected: (i) => setState(() => _index = i),
               destinations: [
                 for (final d in _destinations)
-                  NavigationDestination(icon: Icon(d.icon), label: d.label),
+                  NavigationDestination(
+                    icon: Icon(d.icon),
+                    label: d.label,
+                  ),
               ],
             ),
     );

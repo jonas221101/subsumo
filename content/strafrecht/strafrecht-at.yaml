@@ -193,35 +193,42 @@ faelle:
           required: true
           norms: ["§ 223 Abs. 1 StGB", "§ 223 StGB"]
           keywords: ["223"]
+          card_slugs: ["sr-kv-koerperliche-misshandlung"]
         - id: p2
           label: "Koerperliche Misshandlung und/oder Gesundheitsschaedigung definiert und subsumiert"
           weight: 2.5
           required: true
           keywords: ["koerperliche Misshandlung", "Gesundheitsschaedigung", "Wohlbefinden"]
+          card_slugs: ["sr-kv-koerperliche-misshandlung", "sr-kv-gesundheitsschaedigung"]
         - id: p3
           label: "Vorsatz bejaht, § 15 StGB"
           weight: 1.0
           norms: ["§ 15 StGB"]
           keywords: ["Vorsatz"]
+          card_slugs: ["sr-at-vorsatz"]
         - id: p4
           label: "Notwehrlage: gegenwaertiger rechtswidriger Angriff"
           weight: 2.5
           required: true
           norms: ["§ 32 StGB", "§ 32 Abs. 2 StGB"]
           keywords: ["gegenwaertig", "rechtswidriger Angriff", "Notwehrlage"]
+          card_slugs: ["sr-at-angriff", "sr-at-notwehr"]
         - id: p5
           label: "Erforderlichkeit: Flucht ist kein milderes Mittel, das Recht muss dem Unrecht nicht weichen"
           weight: 3.0
           required: true
           keywords: ["erforderlich", "Flucht", "mildeste", "muss dem Unrecht nicht weichen"]
+          card_slugs: ["sr-at-notwehr"]
         - id: p6
           label: "Gebotenheit / sozialethische Einschraenkungen geprueft"
           weight: 1.5
           keywords: ["geboten", "sozialethisch"]
+          card_slugs: ["sr-at-notwehr"]
         - id: p7
           label: "Verteidigungswille als subjektives Rechtfertigungselement"
           weight: 1.0
           keywords: ["Verteidigungswille", "subjektives Rechtfertigungselement"]
+          card_slugs: ["sr-at-notwehr"]
         - id: p8
           label: "Ergebnis: A ist gerechtfertigt und nicht strafbar"
           weight: 1.0

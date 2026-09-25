@@ -16,7 +16,7 @@
 > Ticket.
 >
 > **Nicht geprüft:** Checkout-Seite visuell — in dieser Umgebung ist
-> `paywall_enabled=false` (siehe `docs/26-projektreview-sub254.md`
+> `paywall_enabled=false` (siehe `docs/31-projektreview-sub254.md`
 > Abschnitt 3.1), jeder Testnutzer ist automatisch Pro, der "Pro
 > werden"-Button erscheint daher nicht. Beurteilung dort nur per Code-Lesung
 > (`checkout_page.dart`), keine Sichtprüfung.
@@ -93,7 +93,7 @@ unlesbar. Screenshot: `crop_gutachten_cutoff.png` (Anhang, aus
 im Auto" öffnen.
 
 **Warum vor dem Freeze:** Der Struktur-Check ist laut
-`docs/26-projektreview-sub254.md` Abschnitt 4.1 eines von zwei Dingen, die
+`docs/31-projektreview-sub254.md` Abschnitt 4.1 eines von zwei Dingen, die
 Subsumo am Starttag wirklich differenzieren — ausgerechnet dort ist der
 Sachverhalt für eine nicht kleine Nutzergruppe (Handy-Breite) teilweise
 unlesbar.

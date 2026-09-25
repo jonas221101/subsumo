@@ -227,6 +227,8 @@ faelle:
       - '195'
       - drei Jahre
       - regelmaessige Frist
+      card_slugs:
+      - zr-at-verjaehrung-regelfrist-195
     - id: p2
       label: Fristbeginn zum Schluss des Jahres 2020 nach § 199 Abs. 1 BGB begruendet
         (Entstehung und Kenntnis)
@@ -238,6 +240,8 @@ faelle:
       - '199'
       - Schluss des Jahres
       - Kenntnis
+      card_slugs:
+      - zr-at-verjaehrung-fristbeginn-199-1
     - id: p3
       label: Hemmung durch die Verhandlungen 2021 nach § 203 BGB erkannt
       weight: 1.5
@@ -247,6 +251,8 @@ faelle:
       - '203'
       - Verhandlungen
       - Hemmung
+      card_slugs:
+      - zr-at-verjaehrung-hemmung-verhandlungen-203
     - id: p4
       label: Nichteinrechnung des Hemmungszeitraums nach § 209 BGB und dennoch abgelaufene
         Frist bis Januar 2025 berechnet
@@ -258,6 +264,8 @@ faelle:
       - '209'
       - nicht eingerechnet
       - '2025'
+      card_slugs:
+      - zr-at-verjaehrung-wirkung-hemmung-209
     - id: p5
       label: Verjaehrung fuehrt nur zu Einrede statt Erloeschen, § 214 Abs. 1 BGB,
         und K muss sich darauf berufen
@@ -269,6 +277,8 @@ faelle:
       - '214'
       - Einrede
       - beruft sich
+      card_slugs:
+      - zr-at-verjaehrung-einredewirkung-214
     - id: p6
       label: 'Ergebnis: H kann keine durchsetzbare Zahlung mehr verlangen'
       weight: 0.5
