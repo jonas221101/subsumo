@@ -9,6 +9,13 @@ on:
           "Run workflow"-Dialog ausgewaehlte Branch)
         required: false
         type: string
+      api_base:
+        description: >-
+          Backend-URL, die in die Builds einkompiliert wird (SUBSUMO_API, siehe
+          app/lib/api.dart). Leer = App-Default http://localhost:8000. Fuer
+          lokale Tests z.B. http://localhost:8010, wenn Port 8000 belegt ist.
+        required: false
+        type: string
 
 jobs:
   build-apk:
@@ -33,7 +40,7 @@ jobs:
       # "Generierte Dateien") - vor dem Build einmalig erzeugen.
       - run: flutter create . --platforms=android --org de.subsumo
       - run: flutter pub get
-      - run: flutter build apk --release
+      - run: flutter build apk --release --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }}
       - uses: actions/upload-artifact@v4
         with:
           name: subsumo-android-apk
@@ -58,7 +65,16 @@ jobs:
       # "Generierte Dateien") - vor dem Build einmalig erzeugen.
       - run: flutter create . --platforms=windows --org de.subsumo
       - run: flutter pub get
-      - run: flutter build windows --release
+      - run: flutter build windows --release --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }}
+      # pubspec.yaml bindet die Rechtstexte als ../docs/legal/ ein. Der Web-Build
+      # legt sie korrekt neben assets/ ab, der Windows-Build installiert aber nur
+      # data/flutter_assets/ - die Engine sucht die Dateien unter
+      # data/flutter_assets/../docs/legal/, also hier nachkopieren. Sonst bleiben
+      # Impressum/AGB/Datenschutz in der EXE leer.
+      - name: Rechtstexte in den Windows-Build kopieren
+        run: |
+          New-Item -ItemType Directory -Force build\windows\x64\runner\Release\data\docs | Out-Null
+          Copy-Item -Recurse -Force ..\docs\legal build\windows\x64\runner\Release\data\docs\
       - name: Build-Ordner zippen
         run: Compress-Archive -Path build\windows\x64\runner\Release\* -DestinationPath subsumo-windows.zip
       - uses: actions/upload-artifact@v4
