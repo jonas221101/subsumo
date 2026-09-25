@@ -96,9 +96,11 @@ unabhängig vom Text hier.
 **Quellen/Begründung:** Struktur nach dem gesetzlichen Muster für die
 Widerrufsbelehrung (Anlage 1 zu Art. 246a § 1 Abs. 2 und 3 EGBGB) sowie
 § 356 Abs. 5, §§ 327 ff. BGB (Verträge über digitale Produkte, Regelung zum
-vorzeitigen Erlöschen bei digitalen Inhalten/Dienstleistungen); offene
-Entscheidung wörtlich aus `docs/17-release-readiness.md` Abschnitt 1
-übernommen, dort als „Frage" markiert und nicht beantwortet.
-**Menschliche Rechtsprüfung nötig:** Formulierung der Zustimmungs-Checkbox
-anwaltlich absichern, Entscheidung mit dem Checkout-Flow aus SUB-83
-abstimmen, bevor dieser Text produktiv geht.
+vorzeitigen Erlöschen bei digitalen Inhalten/Dienstleistungen); die
+Rechtsfrage aus `docs/17-release-readiness.md` Abschnitt 1 ist am
+25.09.2026 als bewusst getragenes Risiko entschieden worden
+(`docs/31-projektreview-sub254.md` Abschnitt 9.2) — dieser Text geht ohne
+anwaltliche Prüfung der Zustimmungs-Formulierung live. **Weiterhin nötig:**
+Formulierung der Zustimmungs-Checkbox mit dem Checkout-Flow aus SUB-83
+abstimmen (Produktentscheidung, siehe oben), bevor dieser Text produktiv
+geht — das ist unverändert offen.

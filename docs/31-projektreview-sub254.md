@@ -302,9 +302,11 @@ Implementierung (Ticket in Abschnitt 7).
 - **Recht:** `docs/legal/` enthält Impressum, AGB, Datenschutzerklärung,
   Widerrufsbelehrung und Cookie-Hinweis als Texte. Die in `docs/17`
   Abschnitt 1 mit „Frage:" markierten Punkte (Haftungsklausel für die
-  KI-Bewertung, Widerrufsverzicht nach § 356 V BGB, AVV) sind
-  **Anwaltsfragen, die kein Agent beantworten kann** — sie stehen in der
-  Nutzerrückfrage zu diesem Ticket.
+  KI-Bewertung, Widerrufsverzicht nach § 356 V BGB, AVV) waren
+  **Anwaltsfragen, die kein Agent beantworten kann** — der Auftraggeber hat
+  auf die Nutzerrückfrage zu diesem Ticket geantwortet: kein Anwalt, Start
+  mit den vorhandenen Texten. Das getragene Risiko steht jetzt in
+  Abschnitt 9, der AVV-Teil bleibt gesondert offen (siehe dort).
 
 ---
 
@@ -329,10 +331,89 @@ Implementierung (Ticket in Abschnitt 7).
    Reichweite deshalb ausdrücklich aus. Der Auftrag verlangt jetzt ein
    Werbekonzept. Ob damit weiterhin rein organisch gemeint ist oder ob Budget
    bereitsteht, ändert das Konzept grundlegend.
-2. **Anwaltsfragen** aus `docs/17` Abschnitt 1 (siehe 6).
+2. **Anwaltsfragen** aus `docs/17` Abschnitt 1 (siehe 6) — **beantwortet**
+   (Interaktion `65179b93-68de-4e49-b2a8-3852889ad7fc`, 25.09.2026, 05:52 UTC):
+   kein Anwalt, Start mit den vorhandenen Texten. Das getragene Risiko steht
+   in Abschnitt 9. Der AVV-Teil der Frage ist davon nicht erfasst — das
+   Ergebnis ist als Eingangsgröße an SUB-135 gemeldet, wo die Entscheidung
+   zum Stichtag 27.09. fällt.
 3. **Reichweite des Werkbank-Features:** Bestätigung, dass „Tool" Lernwerkzeuge
    innerhalb der App meint (Abschnitt 5.2) und nicht frei programmierbare
    Programme.
+
+---
+
+## 9. Bewusst getragenes Rechtsrisiko (Entscheidung 25.09.2026)
+
+Der Auftraggeber hat auf die Nutzerrückfrage zu diesem Ticket
+(Interaktion [`65179b93-68de-4e49-b2a8-3852889ad7fc`](/SUB/issues/SUB-254),
+Frage „anwaltsfragen", beantwortet 25.09.2026, 05:52 UTC) die Option **„Kein
+Anwalt — wir starten mit den vorhandenen Texten"** gewählt. Die Option trägt
+im Kartentext selbst die Auflage, dieses Dokument müsse das Restrisiko
+ausdrücklich festhalten. Das holt dieser Abschnitt nach. Kein Rechtsrat,
+keine Bewertung der Texte — nur Sachstand und Folge, je Punkt.
+
+### 9.1 AGB-Haftungsklausel für die KI-Bewertung
+
+**Welcher Text geht ungeprüft live:** `docs/legal/02-agb.md` Abschnitt 8.
+Die Klausel begrenzt die Haftung nach dem üblichen Stufenmuster (unbeschränkt
+bei Vorsatz/grober Fahrlässigkeit, auf den vertragstypischen Schaden begrenzt
+bei Kardinalpflichten, ausgeschlossen bei leichter Fahrlässigkeit im Übrigen)
+und stellt zusätzlich klar, dass für Ergebnisse des Struktur-Checks sowie für
+Prüfungs-/Examensergebnisse der Nutzer:innen keine Haftung übernommen wird.
+Diese Klausel wurde von einem Agenten entworfen, nicht anwaltlich geprüft.
+
+**Was im schlechten Fall passiert:** Eine AGB-Klausel, die eine
+unangemessene Benachteiligung im Sinne der §§ 307 ff. BGB darstellt, ist
+unwirksam — ersatzlos, nicht auf ein zulässiges Maß reduziert (kein
+„geltungserhaltende Reduktion" im deutschen AGB-Recht). Trägt die
+Formulierung die Ergebnisausschluss-Klausel nicht, haftet der Anbieter im
+Streitfall nach den allgemeinen Regeln, potenziell auch für Schäden aus
+einer fehlerhaften KI-Bewertung (z. B. eine Nutzerin, die sich auf eine
+falsche Struktur-Rückmeldung verlässt und daraus einen Schaden ableitet).
+Zusätzlich ist eine unwirksame AGB-Klausel ein eigenständiges
+Abmahnrisiko durch Verbraucherschutzverbände, unabhängig von einem
+konkreten Einzelfallschaden.
+
+**Entscheidungslage:** Der Auftraggeber hat am 25.09.2026 ausdrücklich
+entschieden, mit diesem ungeprüften Text zu starten, statt auf eine
+anwaltliche Prüfung zu warten.
+
+### 9.2 Widerrufsverzicht nach § 356 Abs. 5 BGB
+
+**Welcher Text geht ungeprüft live:** `docs/legal/04-widerrufsbelehrung.md`
+Abschnitt „Vorzeitiges Erlöschen des Widerrufsrechts bei digitalen
+Produkten" plus die dort unter „Offene Entscheidung" empfohlene, aber noch
+nicht final verankerte Zustimmungs-Variante (granulare Checkout-Checkbox,
+Widerrufsrecht erlischt mit sofortigem Pro-Zugriff). Auch dieser Text ist
+Agenten-Entwurf ohne anwaltliche Prüfung, und die Checkbox-Umsetzung selbst
+(SUB-83) ist an dieser Stelle noch nicht verifiziert gegen die
+„Button-Lösung"-Anforderung aus § 312j Abs. 3 BGB.
+
+**Was im schlechten Fall passiert:** Erfüllt die Zustimmungseinholung beim
+Checkout nicht die Anforderungen aus § 356 Abs. 5 i. V. m. §§ 327 ff. BGB
+(ausdrückliche, von der AGB-Zustimmung getrennte Erklärung, Kenntnis vom
+Verlust des Widerrufsrechts), erlischt das Widerrufsrecht nicht wirksam.
+Nutzer:innen könnten dann auch nach vollständiger Leistungserbringung
+innerhalb von 14 Tagen widerrufen und die Zahlung zurückfordern — bei einem
+Abo-Produkt mit sofortigem digitalem Zugriff ein wiederkehrender
+Rückerstattungsanspruch, nicht nur ein einmaliger.
+
+**Entscheidungslage:** Dieselbe Entscheidung vom 25.09.2026 gilt: Start mit
+dem vorliegenden Entwurf, keine anwaltliche Prüfung vor Release.
+
+### 9.3 Abgrenzung: Der AVV ist keine Anwaltsfrage
+
+Der dritte Teil der ursprünglichen Rückfrage — der AVV mit dem
+LLM-Provider — ist von dieser Entscheidung **nicht** erfasst, auch wenn er
+in derselben Frage mitgestellt war. Nach `docs/23-llm-provider-avv.md`
+(Nachtrag 16.09.2026) unterschreibt der Auftraggeber den AVV ohnehin selbst,
+ohne anwaltliche Vorprüfung — das Annehmen eines Anbieter-AVV ist eine
+Vertragshandlung des Auftraggebers (`docs/23` Abschnitt 8.3, Schritt 1–4),
+keine Anwaltsleistung, die hier entfallen könnte. „Kein Anwalt" heißt also
+nicht „kein AVV". Ob der AVV bis zum Stichtag 27.09. 18:00 unterschrieben
+wird, ist eine offene, separate Entscheidung — gemeldet als Eingangsgröße an
+SUB-135, dort fällt die Entscheidung, nicht hier.
 
 ---
 
@@ -340,6 +421,9 @@ Implementierung (Ticket in Abschnitt 7).
 
 - Schnittplan und Gates: `docs/18-release-2-wochen.md`
 - Release-Readiness (nachzuziehen): `docs/17-release-readiness.md`
+- Rechtstexte (Entwürfe, ungeprüft): `docs/legal/02-agb.md`,
+  `docs/legal/04-widerrufsbelehrung.md`
+- AVV-Vertragshandlung: `docs/23-llm-provider-avv.md` Abschnitt 8.3
 - Markt und Positionierung: `docs/14-marktanalyse.md`
 - Innovationsthesen: `docs/16-innovationsthesen.md`
 - Lernarchitektur, Verzahnung: `docs/13-lernarchitektur.md`

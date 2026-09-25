@@ -227,7 +227,7 @@ Punkte, die erst auf der Ebene konkreter Werbemittel sichtbar werden:
 | Redeem-/Freischaltcode-Mechanismus (Fachschafts-Beta **und** Weiterempfehlungsschleife, Abschnitt 3.2) | Software-Planner | [SUB-262](/SUB/issues/SUB-262) angelegt, Backlog, kein Release-Blocker |
 | Werbebudget-Entscheidung | Auftraggeber | Interaktion auf [SUB-254](/SUB/issues/SUB-254) (`werbebudget`), pending — Abschnitt 4 läuft unabhängig davon bereits |
 | UTM-/Attributions-Infrastruktur (Voraussetzung für 5.2) | Software-/Backend-Developer | Bereits in `docs/15` Abschnitt 4 als fehlend benannt, hier nicht dupliziert |
-| Rechtsprüfung vergleichender Werbeaussagen, falls 5.2 (Keyword-Ads) gezogen wird | Anwaltsfrage (siehe `docs/31` Abschnitt 8 Punkt 2) | Nicht Teil dieses Konzepts, vorab zu klären |
+| Rechtsprüfung vergleichender Werbeaussagen, falls 5.2 (Keyword-Ads) gezogen wird | Eigene, bisher ungestellte Anwaltsfrage — **nicht** Teil der auf SUB-254 am 25.09.2026 beantworteten Rechtsfragen (`docs/31` Abschnitt 9) | Nicht Teil dieses Konzepts, vorab zu klären |
 
 ---
 

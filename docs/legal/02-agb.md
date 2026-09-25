@@ -148,9 +148,11 @@ Gerichtsstand wird gegenüber Verbraucher:innen nicht vereinbart.
 Nutzungsrechte an nutzergenerierten Gutachten wörtlich sinngemäß aus
 `docs/06-recht-compliance.md` Abschnitt 1/2; Kündigungsbutton-Pflicht nach
 § 312k BGB, offen laut `docs/17-release-readiness.md` Abschnitt 4;
-Haftungsfrage zur KI-Bewertung als „Frage" bereits in
-`docs/17-release-readiness.md` Abschnitt 1 aufgeworfen. **Menschliche
-Rechtsprüfung nötig:** Kündigungsabsatz erst veröffentlichen, wenn die
-Funktion existiert (Punkt 3 in `00-uebersicht.md`); Haftungsklausel für den
-Struktur-Check anwaltlich absichern; VSBG/OS-Hinweis auf aktuellen Rechtsstand
-prüfen (Punkt 7).
+Haftungsfrage zur KI-Bewertung als „Frage" ursprünglich in
+`docs/17-release-readiness.md` Abschnitt 1 aufgeworfen, dort am 25.09.2026
+als bewusst getragenes Risiko entschieden (`docs/31-projektreview-sub254.md`
+Abschnitt 9.1) — dieser Text geht ohne anwaltliche Prüfung der
+Haftungsklausel live. **Menschliche Rechtsprüfung weiterhin nötig:**
+Kündigungsabsatz erst veröffentlichen, wenn die Funktion existiert (Punkt 3
+in `00-uebersicht.md`); VSBG/OS-Hinweis auf aktuellen Rechtsstand prüfen
+(Punkt 7).
