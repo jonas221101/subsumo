@@ -1,0 +1,274 @@
+topic:
+  slug: sr-at-kausalitaet-zurechnung
+  area: strafrecht
+  title: Kausalitaet und objektive Zurechnung
+  parent: sr-at
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: sr-zurechnung-modifizierte-formel
+  type: definition
+  front: 'Definiere: die modifizierte conditio-sine-qua-non-Formel bei Mehrfachkausalitaet'
+  back: 'Bei kumulativer Kausalitaet wirken mehrere Bedingungen erst gemeinsam zum
+    Erfolg, von denen keine allein ausgereicht haette - hier greift bereits die einfache
+    Grundformel, da jede Bedingung nicht hinweggedacht werden kann, ohne dass der
+    tatsaechlich eingetretene Erfolg entfiele. Bei alternativer (Doppel-)Kausalitaet
+    wirken dagegen mehrere Bedingungen unabhaengig voneinander gleichzeitig, von denen
+    jede fuer sich den Erfolg allein herbeigefuehrt haette; hier versagt die Grundformel,
+    weil sich jede Bedingung isoliert hinwegdenken liesse, ohne dass der Erfolg entfiele.
+    Die modifizierte Formel korrigiert dies: Von mehreren Bedingungen, die zwar alternativ,
+    nicht aber kumulativ hinweggedacht werden koennen, ist jede ursaechlich.'
+  norms:
+  - § 212 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-zurechnung-adaequanztheorie
+  type: definition
+  front: 'Definiere: Adaequanztheorie'
+  back: Nach der Adaequanztheorie ist eine Bedingung nur dann (rechtlich relevant)
+    ursaechlich, wenn sie nach der allgemeinen Lebenserfahrung nicht ausserhalb aller
+    Wahrscheinlichkeit liegt, den konkreten Erfolg herbeizufuehren. Heute wird sie
+    ueberwiegend nicht mehr als eigenstaendige Korrektur der Aequivalenztheorie behandelt,
+    sondern ist in der Lehre von der objektiven Zurechnung aufgegangen, wo ihr Kerngedanke
+    - die Vorhersehbarkeit des Erfolgs - im Rahmen der Risikorealisierung fortwirkt.
+  norms: []
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-zurechnung-schutzzweck-der-norm
+  type: definition
+  front: 'Definiere: Schutzzweckzusammenhang (Schutzzweck der Norm)'
+  back: Die objektive Zurechnung entfaellt, wenn sich im tatbestandsmaessigen Erfolg
+    nicht die vom Taeter geschaffene rechtlich missbilligte Gefahr realisiert hat,
+    sondern ein Risiko, das ausserhalb des Schutzbereichs der verletzten Verhaltensnorm
+    liegt. Eine Sorgfaltsnorm schuetzt nur vor den Gefahren, derentwegen sie erlassen
+    wurde - verwirklicht sich im Erfolg ein Risiko, das die Norm gar nicht verhindern
+    sollte, ist der Erfolg dem Taeter nicht zuzurechnen.
+  norms: []
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-zurechnung-eigenverantwortliche-selbstgefaehrdung
+  type: streitstand
+  front: 'Streitstand: Zurechnung bei eigenverantwortlicher Selbstgefaehrdung des
+    Opfers'
+  back: 'Problem: Foerdert oder ermoeglicht ein Dritter, dass sich ein anderer
+
+    selbst einer Gefahr aussetzt, und verwirklicht sich diese Gefahr, stellt
+
+    sich die Frage, ob der Dritte fuer den Erfolg (mit-)verantwortlich ist.
+
+
+    Abgrenzung nach Tatherrschaft (h.M. und Rspr.): Massgeblich ist, wer im
+
+    letzten, zum Erfolg fuehrenden Akt die Tatherrschaft innehat. Behaelt
+
+    das Opfer bis zuletzt die freie, verantwortliche Entscheidung und fuehrt
+
+    es die gefaehrliche Handlung selbst aus, liegt eigenverantwortliche
+
+    Selbstgefaehrdung vor: der Dritte, der die Gefahrenquelle nur
+
+    bereitstellt oder bestaerkt, haftet mangels tatbestandsmaessiger
+
+    Fremdverletzung nicht, da die Selbstgefaehrdung selbst nicht
+
+    tatbestandsmaessig ist (Prinzip der Selbstverantwortung).
+
+
+    Uebernimmt dagegen der Dritte selbst die zum Erfolg fuehrende
+
+    Ausfuehrungshandlung, waehrend sich das Opfer nur der Gefahr aussetzt
+
+    (einverstaendliche Fremdgefaehrdung), schliesst das blosse
+
+    Einverstaendnis eine Zurechnung zum Dritten nicht von vornherein aus;
+
+    eine Gleichstellung mit der straflosen Selbstgefaehrdung kommt nach
+
+    h.M. nur in Betracht, wenn das Opfer das Risiko voll durchschaut und
+
+    freiverantwortlich in Kauf genommen hat und dem Dritten kein
+
+    ueberlegenes Sachwissen gegenueber dem Opfer zukommt.
+
+
+    Konsequenz: Klausurtechnisch ist zuerst die Freiverantwortlichkeit des
+
+    Opfers zu pruefen (keine relevanten Einsichts- oder Steuerungsdefizite,
+
+    kein Irrtum ueber das Risiko), danach die Abgrenzung nach dem Kriterium
+
+    der Tatherrschaft im entscheidenden Moment vorzunehmen.
+
+    '
+  norms: []
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-zurechnung-atypischer-kausalverlauf
+  type: definition
+  front: 'Definiere: atypischer Kausalverlauf'
+  back: Ein atypischer Kausalverlauf liegt vor, wenn der Erfolg zwar aequivalent kausal
+    auf dem Taeterverhalten beruht, der tatsaechliche Geschehensablauf aber derart
+    aussergewoehnlich vom nach allgemeiner Lebenserfahrung Erwartbaren abweicht, dass
+    sich in ihm nicht mehr die vom Taeter geschaffene Gefahr, sondern ein neues, eigenstaendiges
+    Risiko realisiert; die objektive Zurechnung entfaellt dann. Ein bloss unerwarteter,
+    aber im Rahmen des allgemeinen Lebensrisikos liegender Verlauf (z. B. eine uebliche
+    aerztliche Behandlung der durch die Tat verursachten Verletzung) unterbricht die
+    Zurechnung dagegen regelmaessig nicht.
+  norms: []
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-zurechnung-dazwischentreten-dritter
+  type: definition
+  front: 'Definiere: Zurechnungsausschluss durch freiverantwortliches Dazwischentreten
+    eines Dritten'
+  back: Setzt nach der Ersthandlung ein Dritter eine neue, hiervon unabhaengige und
+    freiverantwortliche Ursache, die den Erfolg selbststaendig herbeifuehrt, kann
+    dies den Zurechnungszusammenhang zum Ersttaeter unterbrechen. Erforderlich ist,
+    dass der Zweitakt nicht durch den Ersttaeter provoziert wurde und selbst freiverantwortlich
+    sowie vorsaetzlich erfolgt; ein bloss fahrlaessiges oder unfreies Dazwischentreten
+    des Dritten unterbricht die Zurechnung demgegenueber regelmaessig nicht.
+  norms: []
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-zurechnung-pflichtwidrigkeitszusammenhang
+  type: norm
+  front: 'Definiere: Pflichtwidrigkeitszusammenhang (rechtmaessiges Alternativverhalten)'
+  back: Bei Fahrlaessigkeitsdelikten ist der Erfolg nicht objektiv zurechenbar, wenn
+    er auch bei pflichtgemaessem Alternativverhalten des Taeters mit an Sicherheit
+    grenzender Wahrscheinlichkeit ebenso eingetreten waere - dann realisiert sich
+    im Erfolg nicht das vom Taeter geschaffene rechtlich missbilligte Risiko, sondern
+    das allgemeine Lebensrisiko, und der Pflichtwidrigkeitszusammenhang fehlt.
+  norms:
+  - § 222 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-kausalitaet-obj-zurechnung
+  title: Pruefung von Kausalitaet und objektiver Zurechnung beim Erfolgsdelikt
+  norms:
+  - § 212 StGB
+  - § 222 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+  steps:
+  - label: I. Kausalitaet (Aequivalenztheorie / conditio-sine-qua-non)
+    children:
+    - label: '1. Grundformel: Handlung nicht hinwegdenkbar, ohne dass der Erfolg entfiele'
+    - label: 2. Modifikation bei Mehrfachkausalitaet (kumulativ / alternativ)
+  - label: II. Objektive Zurechnung
+    children:
+    - label: 1. Schaffung einer rechtlich missbilligten Gefahr
+      children:
+      - label: a) Kein erlaubtes Risiko
+      - label: b) Keine blosse Risikoverringerung
+    - label: 2. Realisierung gerade dieser Gefahr im tatbestandsmaessigen Erfolg
+      children:
+      - label: a) Kein atypischer Kausalverlauf
+      - label: b) Schutzzweckzusammenhang gewahrt
+      - label: c) Kein Ausschluss durch freiverantwortliche Selbstgefaehrdung des
+          Opfers oder freiverantwortliches Dazwischentreten Dritter
+      - label: 'd) Bei Fahrlaessigkeitsdelikten: Pflichtwidrigkeitszusammenhang (kein
+          rechtmaessiges Alternativverhalten mit gleichem Erfolg)'
+  - label: III. Ergebnis
+faelle:
+- slug: sr-fall-vertauschte-medikamente
+  title: Die Fehlmedikation
+  difficulty: 4
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: A verursacht fahrlaessig einen Verkehrsunfall, bei dem B einen offenen Beinbruch
+    erleidet. B wird in ein Krankenhaus eingeliefert. Dort vertauscht eine Krankenschwester
+    infolge einer Verwechslung der Patientenakten ein fuer B kontraindiziertes Medikament,
+    das bei ihm eine allergische Reaktion mit toedlichem Kreislaufschock ausloest.
+    B stirbt nicht an den Unfallverletzungen, sondern an der Medikamentenreaktion.
+  question: Ist A der Tod des B im Rahmen des § 222 StGB objektiv zurechenbar?
+  steps:
+  - prompt: Ist A fuer den Tod des B aequivalent kausal geworden?
+    erwartung: Ja - haette A den Unfall nicht verursacht, waere B nicht ins Krankenhaus
+      gekommen und die toedliche Fehlmedikation waere unterblieben.
+  - prompt: Hat A durch den Unfall eine rechtlich missbilligte Gefahr geschaffen?
+    erwartung: Ja - das fahrlaessige Verursachen eines Verkehrsunfalls mit erheblicher
+      Verletzungsfolge begruendet eine rechtlich missbilligte Gefahr fuer Leib und
+      Leben des B.
+  - prompt: Realisiert sich im Tod des B gerade diese von A geschaffene Gefahr?
+    erwartung: Nein - die grob fehlerhafte Medikamentenverwechslung durch die Krankenschwester
+      steht in keinem inneren Zusammenhang mit der Art der Unfallverletzung und stellt
+      einen derart aussergewoehnlichen, eigenstaendigen Kausalverlauf dar, dass sich
+      im Tod nicht mehr das vom Unfall ausgehende, sondern ein voellig neues Behandlungsrisiko
+      realisiert.
+  - prompt: Ergebnis?
+    erwartung: Der Tod des B ist A objektiv nicht zurechenbar; A haftet nur fuer die
+      durch den Unfall verursachte (fahrlaessige) Koerperverletzung, § 229 StGB, nicht
+      fuer eine fahrlaessige Toetung nach § 222 StGB.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Aequivalente Kausalitaet des A fuer den Tod bejaht (conditio-sine-qua-non)
+      weight: 1.5
+      required: false
+      keywords:
+      - hinweggedacht
+      - kausal
+    - id: p2
+      label: Schaffung einer rechtlich missbilligten Gefahr durch den Verkehrsunfall
+        bejaht
+      weight: 1.5
+      required: false
+      norms:
+      - § 222 StGB
+      keywords:
+      - missbilligte Gefahr
+    - id: p3
+      label: Atypischer Kausalverlauf durch die grob fehlerhafte Medikamentenverwechslung
+        erkannt und begruendet
+      weight: 3.0
+      required: true
+      keywords:
+      - atypisch
+      - aussergewoehnlich
+      card_slugs:
+      - sr-zurechnung-atypischer-kausalverlauf
+    - id: p4
+      label: 'Risikorealisierung verneint: es realisiert sich nicht das vom Unfall
+        geschaffene, sondern ein eigenstaendiges Behandlungsrisiko'
+      weight: 2.5
+      required: true
+      keywords:
+      - Risikorealisierung
+      - eigenstaendig
+      card_slugs:
+      - sr-zurechnung-schutzzweck-der-norm
+    - id: p5
+      label: Objektive Zurechnung des Todes zu A im Ergebnis verneint
+      weight: 1.5
+      required: true
+      keywords:
+      - nicht zurechenbar
+      - verneint
+      card_slugs:
+      - sr-zurechnung-atypischer-kausalverlauf
+    - id: p6
+      label: Abgrenzung zur fahrlaessigen Koerperverletzung, § 229 StGB, als verbleibende
+        Strafbarkeit angesprochen
+      weight: 1.0
+      required: false
+      norms:
+      - § 229 StGB
+      keywords:
+      - '229'

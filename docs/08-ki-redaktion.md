@@ -5,7 +5,9 @@ Code", siehe `docs/03-roadmap.md`) direkt an der Wurzel: Statt auf eine
 menschliche Fachredaktion zu warten, erzeugen zwei unabhängige Agenten den
 Rohentwurf und prüfen ihn gegenseitig. Menschliche Stichprobe bleibt
 vorgesehen, ist aber keine Voraussetzung für die Veröffentlichung — sonst
-wäre sie wieder derselbe Flaschenhals.
+wäre sie wieder derselbe Flaschenhals. (Warum sie trotzdem empfohlen bleibt
+und wie sie technisch nicht erzwungen wird: siehe unten, Abschnitt „Grenze
+der Positivliste".)
 
 ## Architektur: vier Instanzen müssen zustimmen
 
@@ -101,11 +103,21 @@ abgefangen; ein *falsch zugeordneter, aber plausibel liegender* Paragraph
 (z. B. eine Norm mit falschem Inhalt, aber gültiger Nummer) nicht — dafür
 bräuchte es den echten Gesetzestext. Sobald der Norm-Explorer aus
 `docs/03-roadmap.md` (M2, Import von gesetze-im-internet.de) steht, löst ein
-Abgleich gegen den echten Gesetzestext-Index diese Positivliste ab. Bis
-dahin ist **jeder KI-erzeugte Inhalt vor der ersten Nutzung stichprobenartig
-von einer Person mit juristischer Vorbildung zu prüfen** — die Pipeline
-markiert dafür jeden Inhalt eindeutig (siehe unten), verhindert die
-Freigabe aber nicht technisch.
+Abgleich gegen den echten Gesetzestext-Index diese Positivliste ab.
+
+Bis dahin bleibt die menschliche Stichprobe (siehe Einleitung) die einzige
+Instanz, die eine solche inhaltliche Fehlzuordnung überhaupt finden kann —
+deshalb ist sie **empfohlen, vor der ersten Nutzung jeden KI-erzeugten
+Inhalt stichprobenartig von einer Person mit juristischer Vorbildung zu
+prüfen**. Das ist wie in der Einleitung festgehalten aber **kein
+technisches Gate**: Die Pipeline markiert geprüften wie ungeprüften Inhalt
+eindeutig (`redaktion.status`, siehe unten), verhindert die Freigabe
+ungeprüften Inhalts aber nicht technisch. Ob eine konkrete Content-Charge
+die Stichprobe durchlaufen hat, ist damit pro Release offen zu
+dokumentieren, keine automatische Voraussetzung — für v1.0 wurde sie
+bewusst ausgesetzt (`SUB-225`, Interaktion `f754f609`); das Restrisiko
+dieser Aussetzung ist in `docs/17-release-readiness.md` Abschnitt 7.1
+dokumentiert.
 
 ## Herkunftsangabe
 
@@ -228,6 +240,12 @@ automatisierte, unbeaufsichtigte Läufe (z. B. ein CI-Workflow) ungeeignet.
   (siehe oben, `app.services.redaktion.norm_gate`), prüft aber nicht, ob ein
   Zitat inhaltlich zum behaupteten Sachverhalt passt. Ohne den echten
   Normindex aus M2 bleibt hier eine Lücke.
+- **Das Gate läuft nur beim Erzeugen, nicht rückwirkend.** Themen, die vor
+  der Einführung des Gates (SUB-53, 14.09.) entstanden sind, haben es nie
+  durchlaufen. Der Bestand vom 12.-14.09. (8 Themen) wurde per Nachlauf
+  gegen `check_norms()` geprüft und mit `normzitate_geprueft: true`
+  nachgetragen (SUB-250); der M0-Grundbestand bleibt ohne `redaktion`-Block
+  und gilt laut Definition oben unverändert als regulär redigiert.
 - **Kalibrierung fehlt noch.** Anders als beim Klausur-Evaluator
   (`docs/03-roadmap.md`, M3: 30 von Dozenten bewertete Referenzgutachten,
   Ziel-MAE ≤ 2 Punkte) gibt es für die Redaktions-Reviewer-Entscheidung noch

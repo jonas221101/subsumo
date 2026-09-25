@@ -180,6 +180,8 @@ faelle:
       - Wiederherstellung
       - Var. 2
       - § 80 Abs. 5
+      card_slugs:
+      - or-vwgo-vrs-anordnung-vs-wiederherstellung
     - id: p2
       label: Zuordnung zu § 80 Abs. 2 Nr. 4 VwGO (behoerdlich angeordneter Sofortvollzug)
       weight: 2.0
@@ -189,6 +191,8 @@ faelle:
       keywords:
       - § 80 Abs. 2 Nr. 4
       - behoerdliche Anordnung
+      card_slugs:
+      - or-vwgo-vrs-ausnahmen-80-abs2
     - id: p3
       label: Begruendungsmangel nach § 80 Abs. 3 VwGO erkannt und als floskelhaft
         qualifiziert
@@ -200,6 +204,8 @@ faelle:
       - Begruendung
       - floskelhaft
       - Einzelfall
+      card_slugs:
+      - or-vwgo-vrs-begruendungspflicht-sofortvollzug
     - id: p4
       label: Antragsbefugnis bejaht
       weight: 1.0
@@ -213,3 +219,6 @@ faelle:
       keywords:
       - begruendet
       - wiederhergestellt
+
+      card_slugs:
+      - or-vwgo-vrs-pruefungsmassstab

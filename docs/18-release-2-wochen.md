@@ -226,6 +226,56 @@ Die Produktion selbst läuft bereits über die Content-Agenten
 `docs/08-ki-redaktion.md`; neu ist nur die Priorisierung auf
 Klausurrelevanz-Stufe P1 und das Einfrieren am 25.09.
 
+> **Nachtrag 23.09.2026 — Umfang-Ziel erledigt, Prüf-Gate offen.** Auf
+> [SUB-225](/SUB/issues/SUB-225) hatte der Nutzer entschieden, dass auch die
+> Stufe **P2 vor dem Release** kommt. Das ist **vollständig geliefert**: 17
+> Themen über [SUB-243](/SUB/issues/SUB-243) / [SUB-244](/SUB/issues/SUB-244)
+> / [SUB-245](/SUB/issues/SUB-245), gemergt als PR #68/#69/#70.
+>
+> | Größe | G3-Ziel | Ist auf `main` (23.09.) |
+> |---|---|---|
+> | Karten | 180 (Streckziel 250) | **444** — 2,5× erfüllt |
+> | Themen | — | 60 (P1 36/36, P2 24/24 vollständig) |
+> | Fälle | — | 60 |
+>
+> Ausgezählt mit `backend/scripts/validate_content.py`: 0 Fehler, 0 Warnungen.
+> Details in `docs/12-content-produktionsplan.md` Abschnitt 1.1. Die
+> **Mengen-Bedingung von G3 ist damit erfüllt und war nie der Engpass.**
+>
+> **Was G3 noch offen hat, ist die zweite Hälfte seines eigenen Wortlauts:
+> „keine offenen Redaktionsfunde".** Die menschliche Stichprobe nach
+> `docs/08-ki-redaktion.md` ist für **keines der 60 Themen** erbracht — alle
+> tragen `geprueft_von: reviewer-agent-v1`, also einen LLM-Aufruf, keine
+> Person. Kein Agent kann dieses Gate schließen. Mindestumfang nach
+> `docs/12` Abschnitt 4.2: ≥ 6 Themen, mind. 2 je Rechtsgebiet, Schwerpunkt
+> P1. Fällt die Stichprobe bis 25.09. aus, ist das eine bewusste
+> Nutzerentscheidung — nicht ein Mengenproblem, und die G3-Regel „Release mit
+> Ist-Menge" deckt sie nicht ab.
+
+> **Nachtrag 25.09.2026 — G3 ist entschieden, nicht erfüllt.** Die im
+> vorigen Absatz beschriebene Nutzerentscheidung ist gefallen
+> ([SUB-225](/SUB/issues/SUB-225), Interaktion `f754f609`): **Release ohne
+> menschliche Stichprobe, Gate bewusst ausgesetzt.**
+>
+> Damit ist G3 aufgelöst — aber über die beiden Hälften auf unterschiedlichen
+> Wegen, und das sollte man beim Lesen auseinanderhalten:
+>
+> | G3-Hälfte | Auflösung |
+> |---|---|
+> | „180 Karten geprüft und gemerged" | **Erfüllt durch Nachweis.** Neu ausgezählt auf `main` am 25.09.: **446 Karten**, 60 Themen, 64 Schemata, 60 Fälle, 0 Fehler (die 446 statt der oben genannten 444 stammen aus den Karten-Nachträgen SUB-283/284/285 und SUB-305) |
+> | „keine offenen Redaktionsfunde" | **Erfüllt durch Entscheidung, nicht durch Prüfung.** Die menschliche Stichprobe entfällt für v1.0 |
+>
+> Das Restrisiko dieser Aussetzung ist in
+> [`docs/17-release-readiness.md`](17-release-readiness.md) Abschnitt 7.1
+> ausgeschrieben — Kern: **Normzitate gehen inhaltlich ungeprüft live**, weil
+> das deterministische Gate nur Existenz und Form prüft und der Norm-Explorer
+> (M2) noch nicht existiert. Das vorbereitete Prüfmaterial
+> (`docs/26-content-stichprobe.md`) bleibt für den Nachlauf nach dem Launch
+> gültig.
+>
+> **G3 gilt damit als passiert.** Der Notausgang „Release mit Ist-Menge" wird
+> nicht gebraucht: Die Menge ist 2,5-fach erfüllt.
+
 ---
 
 ## 5. Die fünf harten Gates

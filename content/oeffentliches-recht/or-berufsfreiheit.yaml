@@ -10,6 +10,7 @@ topic:
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-13'
     status: ki-freigegeben
+    normzitate_geprueft: true
 cards:
 - slug: or-gr-art12-berufsbegriff
   type: definition
@@ -219,12 +220,17 @@ faelle:
       keywords:
       - Schutzbereich
       - Berufswahl
+      card_slugs:
+      - or-gr-art12-schutzbereich
+      - or-gr-art12-persoenlicher-schutzbereich
     - id: p3
       label: Eingriff durch die Versagung der Genehmigung bejaht
       weight: 1.5
       required: false
       keywords:
       - Eingriff
+      card_slugs:
+      - or-gr-art12-eingriff
     - id: p4
       label: Bedarfspruefung zutreffend als objektive Zulassungsvoraussetzung (dritte
         Stufe) eingeordnet
@@ -234,6 +240,8 @@ faelle:
       - dritte Stufe
       - objektive Zulassungsvoraussetzung
       - Stufe 3
+      card_slugs:
+      - or-gr-art12-dreistufentheorie
     - id: p5
       label: 'Fehlende Rechtfertigung erkannt: reiner Konkurrentenschutz ist kein
         ueberragend wichtiges Gemeinschaftsgut'
@@ -243,6 +251,8 @@ faelle:
       - Konkurrentenschutz
       - ueberragend wichtiges Gemeinschaftsgut
       - nicht gerechtfertigt
+      card_slugs:
+      - or-gr-art12-dreistufentheorie
     - id: p6
       label: 'Ergebnis: B ist in Art. 12 Abs. 1 GG verletzt'
       weight: 1.0

@@ -1,0 +1,232 @@
+topic:
+  slug: sr-bt-unterschlagung-246
+  area: strafrecht
+  title: Unterschlagung, § 246 StGB
+  parent: sr-at
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: sr-unterschlagung-zueignungsbegriff
+  type: definition
+  front: 'Definiere: Zueignung i.S.d. § 246 StGB (Manifestationstheorie)'
+  back: Nach der herrschenden Manifestationstheorie erfordert die Zueignung i.S.d.
+    § 246 StGB ein nach aussen tretendes Verhalten des Taeters, das seinen Willen
+    erkennbar macht, die Sache oder den in ihr verkoerperten Wert dauerhaft dem eigenen
+    Vermoegen einzuverleiben und den Eigentuemer dauerhaft von seiner Position auszuschliessen.
+    Ein bloss innerer Vorbehalt ohne erkennbare Betaetigung genuegt nicht.
+  norms:
+  - § 246 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-unterschlagung-manifestation-beispiele
+  type: streitstand
+  front: Welche Verhaltensweisen manifestieren typischerweise den Zueignungswillen
+    bei § 246 StGB?
+  back: Als Manifestation anerkannt sind insbesondere die Weiterveraeusserung oder
+    Verpfaendung der Sache, ihr Verbrauch oder Einbau in eine eigene Sache sowie die
+    endgueltige Weigerung, die Sache trotz Herausgabeverlangens des Berechtigten herauszugeben,
+    wenn sie mit einer Beruehmung eigener Berechtigung verbunden ist. Blosses Nichtstun
+    oder ein nur vorlaeufiges Behalten der Sache genuegt dagegen grundsaetzlich nicht.
+  norms:
+  - § 246 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-unterschlagung-subsidiaritaetsklausel
+  type: norm
+  front: Was bewirkt die Subsidiaritaetsklausel des § 246 Abs. 1 a. E. StGB?
+  back: § 246 StGB tritt zurueck, wenn die Tat zugleich einen anderen, schwerer bestraften
+    Zueignungstatbestand erfuellt - insbesondere Diebstahl, § 242 StGB. Die Klausel
+    verhindert, dass der Auffangtatbestand der Unterschlagung neben einer spezielleren
+    und schwerer bedrohten Zueignungsvorschrift eigenstaendig zur Anwendung kommt.
+  norms:
+  - § 246 Abs. 1 StGB
+  - § 242 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-unterschlagung-anvertrautsein
+  type: definition
+  front: 'Definiere: Anvertrautsein i.S.d. § 246 Abs. 2 StGB'
+  back: Anvertraut ist eine Sache, wenn der Taeter die tatsaechliche Gewalt ueber
+    sie aufgrund eines vom Berechtigten gebilligten Vertrauensverhaeltnisses erlangt
+    hat, mit der Massgabe, sie in dessen Interesse zu verwenden, zu verwahren oder
+    zurueckzugeben. Ein rein tatsaechliches Naeheverhaeltnis ohne ein solches Vertrauenselement
+    genuegt nicht.
+  norms:
+  - § 246 Abs. 2 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-unterschlagung-veruntreuende-qualifikation
+  type: norm
+  front: Welche Rechtsfolge hat die veruntreuende Unterschlagung nach § 246 Abs. 2
+    StGB?
+  back: Ist die unterschlagene Sache dem Taeter anvertraut, erhoeht sich der Strafrahmen
+    gegenueber § 246 Abs. 1 StGB auf Freiheitsstrafe bis zu fuenf Jahren oder Geldstrafe.
+    Der Gesetzgeber traegt damit dem gesteigerten Unrechtsgehalt Rechnung, der im
+    Missbrauch des besonderen Vertrauensverhaeltnisses liegt.
+  norms:
+  - § 246 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-unterschlagung-abgrenzung-diebstahl-242
+  type: definition
+  front: 'Abgrenzung: Unterschlagung, § 246 StGB, und Diebstahl, § 242 StGB'
+  back: '§ 242 StGB verlangt eine Wegnahme, also den Bruch fremden und die Begruendung
+    neuen Gewahrsams. § 246 StGB setzt dagegen keinen Gewahrsamsbruch voraus: Der
+    Taeter hat die Sache regelmaessig bereits selbst rechtmaessig in Gewahrsam oder
+    Besitz - etwa als Finder, Mieter oder Entleiher - und muss sie sich lediglich
+    noch durch eine nach aussen tretende Handlung zueignen. § 246 StGB ist daher das
+    Auffangdelikt fuer Zueignungen ohne Gewahrsamsbruch.'
+  norms:
+  - § 242 StGB
+  - § 246 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-unterschlagung-subsidiaritaet-nichtverfolgbare-vortat
+  type: streitstand
+  front: Bleibt § 246 StGB auch subsidiaer, wenn die vorrangige, schwerer bedrohte
+    Tat im Einzelfall nicht verfolgbar ist (z. B. verjaehrt)?
+  back: 'Nach ganz h.M. ist die Subsidiaritaetsklausel des § 246 Abs. 1 a. E. StGB
+    rein formell zu verstehen: Es genuegt, dass der Taeter tatbestandlich auch eine
+    andere, schwerer bedrohte Zueignungsvorschrift erfuellt hat. Auf die tatsaechliche
+    Verfolgbarkeit dieser Tat im Einzelfall - etwa bei Verjaehrung oder fehlendem
+    Strafantrag - kommt es nicht an; § 246 StGB bleibt auch dann zurueckgedraengt.'
+  norms:
+  - § 246 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-246
+  title: Unterschlagung, § 246 StGB
+  norms:
+  - § 246 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Fremde bewegliche Sache
+    - label: 2. Zueignung (nach aussen tretende Manifestation des Zueignungswillens)
+    - label: 3. Rechtswidrigkeit der Zueignung
+    - label: '4. Qualifikation: Anvertrautsein, § 246 Abs. 2 StGB'
+      hinweis: Nur pruefen, wenn der Sachverhalt ein Vertrauensverhaeltnis zeigt (z.
+        B. Leihe, Verwahrung, Arbeitsverhaeltnis).
+  - label: II. Rechtswidrigkeit
+  - label: III. Schuld
+  - label: IV. Subsidiaritaet, § 246 Abs. 1 a. E. StGB
+    hinweis: Pruefen, ob eine andere, schwerer bedrohte Zueignungsvorschrift (insb.
+      § 242 StGB) tatbestandlich erfuellt ist.
+faelle:
+- slug: sr-fall-verkauftes-rennrad
+  title: Das verkaufte Rennrad
+  difficulty: 2
+  minutes: 35
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: A leiht sich von seinem Freund B dessen hochwertiges Rennrad fuer ein Wochenende,
+    um an einem Amateurrennen teilzunehmen. Beide vereinbaren, dass A das Rad am Sonntagabend
+    zurueckgibt. Am Montag verkauft A das Rad stattdessen ueber ein Online-Verkaufsportal
+    an den gutglaeubigen Dritten C, weil er dringend Geld benoetigt.
+  question: Hat sich A gegenueber B wegen (veruntreuender) Unterschlagung gemaess
+    § 246 StGB strafbar gemacht?
+  steps:
+  - prompt: Formuliere den Obersatz.
+    erwartung: A koennte sich durch den Verkauf des Rennrads wegen Unterschlagung
+      gemaess § 246 Abs. 1, Abs. 2 StGB strafbar gemacht haben.
+  - prompt: Ist das Rennrad eine fremde bewegliche Sache?
+    erwartung: Ja - es steht im Eigentum des B.
+  - prompt: Liegt eine Zueignung vor?
+    erwartung: Ja - durch den Verkauf an C hat A seinen Willen, das Rad dauerhaft
+      dem eigenen Vermoegen einzuverleiben und B davon dauerhaft auszuschliessen,
+      nach aussen manifestiert.
+  - prompt: War das Rad dem A anvertraut, § 246 Abs. 2 StGB?
+    erwartung: Ja - A hatte das Rad aufgrund der Leihabrede mit B, also eines Vertrauensverhaeltnisses,
+      in Besitz, mit der Massgabe, es zurueckzugeben.
+  - prompt: Ist § 246 StGB gegenueber einem Diebstahl, § 242 StGB, subsidiaer verdraengt?
+    erwartung: Nein - A hatte das Rad bereits rechtmaessig im eigenen Gewahrsam, es
+      fehlt an einem Gewahrsamsbruch. Ein Diebstahl scheidet daher aus, § 246 StGB
+      bleibt anwendbar.
+  - prompt: Formuliere das Ergebnis.
+    erwartung: A hat sich gegenueber B wegen veruntreuender Unterschlagung gemaess
+      § 246 Abs. 1, Abs. 2 StGB strafbar gemacht.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Obersatz mit § 246 StGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 246 Abs. 1 StGB
+      keywords:
+      - '246'
+    - id: p2
+      label: Fremde bewegliche Sache bejaht
+      weight: 1.0
+      required: false
+      keywords:
+      - fremde bewegliche Sache
+    - id: p3
+      label: Zueignung durch Manifestation (Verkauf) bejaht
+      weight: 2.5
+      required: true
+      norms:
+      - § 246 Abs. 1 StGB
+      keywords:
+      - Zueignung
+      - manifestiert
+      card_slugs:
+      - sr-unterschlagung-zueignungsbegriff
+      - sr-unterschlagung-manifestation-beispiele
+    - id: p4
+      label: Rechtswidrigkeit der Zueignung bejaht
+      weight: 1.0
+      required: false
+      keywords:
+      - rechtswidrig
+    - id: p5
+      label: Anvertrautsein bejaht mit Begruendung (Leihe als Vertrauensverhaeltnis)
+      weight: 3.0
+      required: true
+      norms:
+      - § 246 Abs. 2 StGB
+      keywords:
+      - anvertraut
+      - Vertrauensverhaeltnis
+      card_slugs:
+      - sr-unterschlagung-anvertrautsein
+    - id: p6
+      label: Kein Gewahrsamsbruch erkannt, Subsidiaritaet gegenueber § 242 StGB verneint
+      weight: 1.5
+      required: false
+      norms:
+      - § 242 StGB
+      keywords:
+      - Gewahrsamsbruch
+      - subsidiaer
+      card_slugs:
+      - sr-unterschlagung-abgrenzung-diebstahl-242
+      - sr-unterschlagung-subsidiaritaetsklausel
+    - id: p7
+      label: 'Ergebnis: veruntreuende Unterschlagung bejaht'
+      weight: 1.0
+      required: false
+      keywords:
+      - veruntreuende Unterschlagung
+      - strafbar gemacht

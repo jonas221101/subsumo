@@ -64,6 +64,110 @@ Destatis liefert **keine** Aufschlüsselung der Studierendenzahl nach Fachsemest
 
 ---
 
+### 2.1 Nachtrag 24.09.2026 — weitere USP-Recherche (SUB-260)
+
+> Anlass: `docs/31-projektreview-sub254.md` Abschnitt 4 hat zwei tragfähige USPs
+> herausgearbeitet — unbegrenztes Struktur-Feedback ohne Grenzkosten und echtes
+> Offline auf vier Plattformen. Auftrag aus SUB-260: prüfen, ob sich seit dem
+> Stand 14.09.2026 (zehn Tage) etwas an diesem Bild geändert hat, und weitere
+> USP-Kandidaten suchen. Web-Abrufe 24.09.2026, Methodik wie oben (Quelle +
+> Abrufdatum, Nicht-Befunde ausdrücklich als solche).
+
+**Bestehende drei KI-Korrektur-Anbieter — Preise/Funktionen unverändert.**
+Constellatio (12,42 €/Monat, 149 €/Jahr, 399 € Lifetime), KorrekturKai
+(29 €/Monat, 299 €/Jahr) und KlausurenKiste (7,50 €/Monat bzw. 89,99 €/Jahr,
+2,99 € Einzelabgabe) zeigen keine Preisänderung gegenüber dem 14.09.-Stand.
+**Eine Funktionsänderung bei KlausurenKiste:** ab Juli 2026 zusätzlich ein
+„KI-Klausurenkurs" (wöchentliche Fälle, KI-Feedback binnen einer Minute,
+Musterlösung, Live-Besprechung) — ändert nichts an der Kernaussage, weil auch
+dieser Kurs pro Abgabe kontingentiert bleibt (in den bestehenden Tarifen „4
+Klausurabgaben zur KI-Korrektur pro Monat"), nicht unbegrenzt. (Quelle:
+[korrekturkai.de](https://www.korrekturkai.de/), [klausurenkiste.de](https://www.klausurenkiste.de/), Abruf 24.09.2026.)
+
+**Neuer, jetzt verifizierter vierter KI-Korrektur-Anbieter: Jurversity.**
+In der Recherche vom 14.09. als „vermutet, nicht verifiziert" geführt — jetzt
+bestätigt. Jurversity korrigiert Klausuren vom 1. Semester bis zum 1.
+Staatsexamen mit einer „juristisch geschulten KI" (seit 2025 im Einsatz),
+Einreichung ausschließlich per E-Mail/Online-Terminbuchung, **kein Abo,
+sondern Einzelpreise 10–60 € je nach Klausurtyp/Musterlösung**, für
+Erstsemester mit Immatrikulationsnachweis kostenlos. Bestätigt damit
+zusätzlich beide Subsumo-USPs aus `docs/31` Abschnitt 4.1: **nicht
+unbegrenzt** (Einzelpreis pro Abgabe) und **kein eigenständiges
+Offline-Produkt** (reine E-Mail-/Web-Einreichung, keine App). Ändert Abschnitt
+2 oben von drei auf vier belegte KI-Korrektur-Anbieter — der Kernbefund
+„KI-Korrektur ist kein Alleinstellungsmerkmal mehr" wird dadurch nicht
+präzisiert, sondern verstärkt. (Quelle: [jurversity.de/klausurkorrektur-jura](https://www.jurversity.de/klausurkorrektur-jura), Abruf 24.09.2026.)
+
+**Neuer Fund, aber kein direkter Wettbewerber: Klausurio (klausur.io).**
+Browser-basiertes Korrektur-Werkzeug für **Lehrende** (wissenschaftliche
+Mitarbeiter:innen, Professor:innen, freie Korrektor:innen) — checklisten- und
+KI-gestützte Bewertungshilfe für Korrigierende, nicht für Studierende selbst.
+Aktuell „in Entwicklung", Preis nicht veröffentlicht, nur Interessent:innen-
+Liste. **Explizit kein B2C-Wettbewerber** zu Subsumo, aber ein weiteres Signal,
+dass KI-gestützte Bewertung im Jura-Ausbildungsmarkt an mehreren Stellen
+gleichzeitig entsteht. (Quelle: [klausur.io](https://klausur.io/), Abruf 24.09.2026.)
+
+**Neuer Fund mit direkter Preis-Relevanz: juralernen.de.** Progressive Web
+App (kein natives Windows/Linux-Programm, trotz Werbeaussage „direkt auf
+iOS, Android, Windows & Linux") mit 20.000+ Aufgaben, FSRS-Karteikarten,
+200+ geführten Fällen, Prüfschemata und Lerngruppen-Funktion (bis 10
+Personen) — **9,99 € einmalig, lebenslang**, 7 Tage gratis testen, 30 Tage
+Geld-zurück-Garantie. **Keine KI-Gutachtenkorrektur, keine belegte
+Offline-Fähigkeit** (PWA ohne Offline-Hinweis auf der Seite) — beide
+Subsumo-USPs bleiben unberührt. Preislich aber ein Argument **gegen** jeden
+Versuch, über Karten/Schemata/Fälle zu konkurrieren: 9,99 € einmalig
+unterbietet selbst Jurafuchs (5,99 €/Monat) nach spätestens zwei Monaten
+Nutzungsdauer. Bestätigt die bestehende Positionierungsentscheidung aus
+Abschnitt 3 (nicht über Karteikarten verkaufen) zusätzlich, statt sie infrage
+zu stellen. (Quelle: [juralernen.de](https://juralernen.de/), Abruf 24.09.2026.)
+
+**Nachgeprüft und präzisiert: „echtes Offline" bei Jurafuchs.** Die
+Jurafuchs-FAQ bestätigt: Offline-Zugriff nur auf zuvor **online**
+heruntergeladene Inhalte, und „bei einem Update der Jurafuchs-App oder des
+Betriebssystems werden bereits heruntergeladene Inhalte vom Gerät entfernt"
+— nach jedem App-/OS-Update ist erneut eine Online-Verbindung nötig. Das ist
+etwas anderes als Subsumos Kartencache und Review-Outbox, die Neustart und
+Netzausfall überstehen (`docs/31` Abschnitt 4.1, `app/lib/state.dart`), weil
+bei Jurafuchs ein gewöhnliches App-Update den Offline-Zustand zerstört, bei
+Subsumo nicht. Der USP-Anspruch „echtes Offline" ist damit nicht nur unbelegt
+für die drei KI-Korrektur-Wettbewerber (wie am 14.09. festgestellt), sondern
+auch gegenüber Jurafuchs' eigenem Offline-Modus präzise abgrenzbar. (Quelle:
+[jurafuchs.de FAQ „Kann ich Jurafuchs offline nutzen?"](https://www.jurafuchs.de/faq/kann-ich-jurafuchs-offline-nutzen), Abruf 24.09.2026.)
+
+**Sonstige geprüfte Kandidaten ohne Relevanz für die zwei USPs:** okti.app
+(KI-Karteikarten aus hochgeladenen Foliensätzen/Notizen, fachübergreifend,
+keine Jura-Spezialisierung, keine Gutachtenkorrektur, keine Offline-Angabe) —
+bestätigt als am 14.09. vermuteter, jetzt geprüfter Nicht-Treffer für beide
+USPs, bleibt aber ein Konkurrent auf der Karteikarten-Ebene, die laut
+Abschnitt 3 ohnehin nicht das Verkaufsargument ist.
+
+**Ausdrücklich geprüfter und verworfener Befund — nicht in die Positionierung
+übernehmen.** Eine erste Recherche zu „KI-Korrektur der Staatsexamina" ergab
+einen Treffer (jurios.de, 01.04.2026 — **Erscheinungsdatum ist der 1. April**),
+der eine flächendeckende, von der Justizministerkonferenz für 2026
+beschlossene KI-Korrektur der 1./2. Staatsprüfung behauptet. Gegenprüfung
+ergab das Gegenteil: Die Justizministerkonferenz hat laut LTO
+(06.06.2024) einem „grundlegenden Reformbedarf" beim Jurastudium ausdrücklich
+**nicht** zugestimmt, und ein beck-aktuell-Interview (21.01.2026) mit dem
+LexMea-Gründer beschreibt KI-Korrektur der Staatsexamina als Pilotstadium
+(Bielefeld WS 2024/25, LMU München SoSe 2025) — der Interviewte selbst hält
+eine vollständige Übernahme durch KI für unwahrscheinlich. **Bewertung: die
+Ursprungsmeldung ist nicht belegt, vermutlich ein Aprilscherz, und wird nicht
+als Fakt verwendet** — weder für die Positionierung noch als Marktkontext.
+Explizit als geprüft-und-verworfen vermerkt, damit dieselbe Meldung nicht in
+einer künftigen Recherche unkritisch übernommen wird. (Quelle: [jurios.de, 01.04.2026](https://jurios.de/2025/04/01/neuerung-bei-den-juristischen-staatsexamina-kuenstliche-intelligenz-uebernimmt-die-korrektur-ab-2026/) — widerlegt durch [LTO, 06.06.2024](https://www.lto.de/karriere/jura-studium/stories/detail/juristenausbildung-reform-justizministerkonferenz-sieht-keinen-bedarf-jurastudium) und [beck-aktuell, 21.01.2026](https://www.beck-aktuell.de/ausbildung-und-karriere/studium-referendariat/ki-korrektur-juraklausur-staatsexamen-jurastudium-kuenstliche-intelligenz-korrektor-2026-01-21), Abruf 24.09.2026.)
+
+**Fazit des Nachtrags:** Kein Wettbewerbsfund der letzten zehn Tage
+widerlegt die beiden in `docs/31` Abschnitt 4.1 identifizierten USPs
+(unbegrenztes, kostenloses Struktur-Feedback; echtes geräteübergreifendes
+Offline). Der vierte KI-Korrektur-Anbieter (Jurversity) und die präzisierte
+Jurafuchs-Offline-Einschränkung **verstärken** beide Thesen eher, als sie zu
+schwächen. Der einzige neue Befund mit Handlungsrelevanz ist preislicher
+Natur (juralernen.de, 9,99 € Lifetime) und bestätigt eine bereits getroffene
+Entscheidung (nicht über Karten/Schemata verkaufen), ändert sie aber nicht.
+
+---
+
 ## 3. Positionierung
 
 ### These aus der Roadmap

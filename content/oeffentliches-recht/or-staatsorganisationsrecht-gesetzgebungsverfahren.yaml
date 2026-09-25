@@ -1,0 +1,304 @@
+topic:
+  slug: or-staatsorganisationsrecht-gesetzgebungsverfahren
+  area: oeffentliches-recht
+  title: Gesetzgebungsverfahren, Art. 76 ff. GG
+  parent: oeffentliches-recht
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: or-gg-gesetzgebung-initiativrecht
+  type: norm
+  front: Wer hat nach Art. 76 Abs. 1 GG das Recht, Gesetzesvorlagen beim Bundestag
+    einzubringen?
+  back: Gesetzesvorlagen werden beim Bundestag eingebracht durch die Bundesregierung,
+    aus der Mitte des Bundestages (nach dessen Geschaeftsordnung, praktisch durch
+    eine Fraktion oder eine Mindestzahl von Abgeordneten) oder durch den Bundesrat.
+    Dieses Initiativrecht ist abschliessend - ein Volksgesetzgebungsverfahren auf
+    Bundesebene sieht das Grundgesetz nicht vor.
+  norms:
+  - Art. 76 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  stand: 2026-09
+- slug: or-gg-gesetzgebung-erster-durchgang
+  type: norm
+  front: Was regelt der sogenannte 'erste Durchgang' nach Art. 76 Abs. 2, 3 GG?
+  back: Nach Art. 76 Abs. 2 GG sind Vorlagen der Bundesregierung zunaechst dem Bundesrat
+    zuzuleiten, der innerhalb von sechs Wochen dazu Stellung nehmen kann, bevor die
+    Vorlage an den Bundestag weitergeleitet wird; bei besonderer Eilbeduerftigkeit
+    kann die Bundesregierung diese Frist auf drei Wochen verkuerzen. Umgekehrt sind
+    nach Art. 76 Abs. 3 GG Vorlagen des Bundesrates zunaechst der Bundesregierung
+    zuzuleiten, die sie innerhalb von sechs Wochen mit ihrer Stellungnahme an den
+    Bundestag weiterleitet. Dieser 'erste Durchgang' gibt dem jeweils anderen Verfassungsorgan
+    fruehzeitig Gehoer, ohne bereits eine Bindungswirkung fuer den spaeteren Bundestagsbeschluss
+    zu entfalten.
+  norms:
+  - Art. 76 Abs. 2 GG
+  - Art. 76 Abs. 3 GG
+  quellen:
+  - GG, amtliche Fassung
+  stand: 2026-09
+- slug: or-gg-gesetzgebung-zustimmungs-einspruchsgesetz
+  type: definition
+  front: Wie unterscheiden sich Zustimmungsgesetz und Einspruchsgesetz?
+  back: Ein Zustimmungsgesetz bedarf der ausdruecklichen Zustimmung des Bundesrates,
+    um wirksam zustande zu kommen - verweigert der Bundesrat die Zustimmung, ist das
+    Gesetz gescheitert. Ein Einspruchsgesetz kommt dagegen auch ohne Zustimmung des
+    Bundesrates zustande; der Bundesrat kann lediglich Einspruch einlegen, den der
+    Bundestag mit entsprechender Mehrheit zurueckweisen kann. Ob ein Gesetz zustimmungsbeduerftig
+    ist, ergibt sich nicht aus einer allgemeinen Vorschrift, sondern nur aus einzelnen,
+    das Grundgesetz ausdruecklich benennenden Zustimmungsvorbehalten (z. B. Art. 79
+    Abs. 2, Art. 84 Abs. 1, Art. 105 Abs. 3 GG) - im Zweifel handelt es sich um ein
+    Einspruchsgesetz.
+  norms:
+  - Art. 79 Abs. 2 GG
+  - Art. 84 Abs. 1 GG
+  - Art. 105 Abs. 3 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gg-gesetzgebung-vermittlungsausschuss
+  type: norm
+  front: Wer kann den Vermittlungsausschuss nach Art. 77 Abs. 2 GG anrufen, und wozu
+    dient er?
+  back: Der Vermittlungsausschuss aus Mitgliedern von Bundestag und Bundesrat dient
+    dazu, bei Meinungsverschiedenheiten ueber ein vom Bundestag beschlossenes Gesetz
+    einen Kompromissvorschlag zu erarbeiten. Er kann vom Bundesrat innerhalb von drei
+    Wochen nach Zuleitung des Gesetzes angerufen werden; bei Zustimmungsgesetzen koennen
+    auch Bundestag und Bundesregierung die Einberufung verlangen. Der Vermittlungsausschuss
+    selbst trifft keine endgueltige Entscheidung, sondern unterbreitet einen Aenderungsvorschlag,
+    ueber den der Bundestag erneut beschliessen muss.
+  norms:
+  - Art. 77 Abs. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  stand: 2026-09
+- slug: or-gg-gesetzgebung-zustandekommen-zustimmungsgesetz
+  type: norm
+  front: Wann kommt ein Zustimmungsgesetz nach Art. 78 GG zustande?
+  back: Ein vom Bundestag beschlossenes Gesetz kommt zustande, wenn der Bundesrat
+    zustimmt, einen Antrag auf Anrufung des Vermittlungsausschusses nicht innerhalb
+    der vorgesehenen Frist stellt, einen Einigungsvorschlag des Vermittlungsausschusses
+    billigt oder - bei einem Einspruchsgesetz - keinen Einspruch einlegt bzw. der
+    Einspruch vom Bundestag zurueckgewiesen wird. Bei einem echten Zustimmungsgesetz
+    genuegt eine blosse Nichteinlegung von Einspruch dagegen NICHT - erforderlich
+    ist die ausdrueckliche Zustimmung, da ohne sie das Gesetz gar nicht erst wirksam
+    beschlossen ist.
+  norms:
+  - Art. 78 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gg-gesetzgebung-einspruch-zurueckweisung
+  type: norm
+  front: Mit welcher Mehrheit kann der Bundestag einen Einspruch des Bundesrates zurueckweisen,
+    Art. 77 Abs. 3, 4 GG?
+  back: Hat der Bundesrat mit der Mehrheit seiner Stimmen Einspruch eingelegt, kann
+    der Bundestag ihn mit der Mehrheit seiner Mitglieder (absolute Mehrheit) zurueckweisen.
+    Hat der Bundesrat den Einspruch dagegen mit einer Mehrheit von mindestens zwei
+    Dritteln seiner Stimmen beschlossen, bedarf die Zurueckweisung durch den Bundestag
+    einer Mehrheit von zwei Dritteln der abgegebenen Stimmen, mindestens der Mehrheit
+    der Mitglieder des Bundestages. Gelingt die Zurueckweisung nicht, ist das Gesetz
+    endgueltig gescheitert.
+  norms:
+  - Art. 77 Abs. 3 GG
+  - Art. 77 Abs. 4 GG
+  quellen:
+  - GG, amtliche Fassung
+  stand: 2026-09
+- slug: or-gg-gesetzgebung-ausfertigung-verkuendung
+  type: norm
+  front: Was regelt Art. 82 Abs. 1 GG zu Ausfertigung und Verkuendung eines Gesetzes?
+  back: Nach Art. 82 Abs. 1 GG werden die nach den Vorschriften des Grundgesetzes
+    zustande gekommenen Gesetze vom Bundespraesidenten nach Gegenzeichnung ausgefertigt
+    und im Bundesgesetzblatt verkuendet. Erst mit ordnungsgemaesser Verkuendung wird
+    das Gesetz Teil der geltenden Rechtsordnung; sofern nichts anderes bestimmt ist,
+    tritt es nach Art. 82 Abs. 2 GG am vierzehnten Tag nach Ablauf des Tages in Kraft,
+    an dem das Bundesgesetzblatt ausgegeben wurde.
+  norms:
+  - Art. 82 Abs. 1 GG
+  - Art. 82 Abs. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  stand: 2026-09
+- slug: or-gg-gesetzgebung-pruefungsrecht-bundespraesident
+  type: streitstand
+  front: Wie weit reicht das Pruefungsrecht des Bundespraesidenten vor der Ausfertigung
+    eines Gesetzes?
+  back: 'Unstreitig steht dem Bundespraesidenten ein formelles Pruefungsrecht zu:
+    er darf die Ausfertigung verweigern, wenn das Gesetz nicht ordnungsgemaess nach
+    den Vorschriften des Grundgesetzes zustande gekommen ist. Streitig ist der Umfang
+    eines materiellen Pruefungsrechts. Nach einer engen Auffassung darf der Bundespraesident
+    die Ausfertigung nur bei offensichtlichen, schwerwiegenden Verstoessen gegen das
+    Grundgesetz verweigern (evidenzbezogene Pruefung), um die Gewaltenteilung und
+    die Autoritaet des Bundesverfassungsgerichts als eigentlichem Hueter der Verfassung
+    nicht zu unterlaufen. Eine weitergehende Auffassung raeumt ihm ein umfassendes
+    materielles Pruefungsrecht ein, das sich aus seinem Amtseid zur Verteidigung des
+    Grundgesetzes ergebe.'
+  norms:
+  - Art. 82 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gg-gesetzgebung-formelle-verfassungsmaessigkeit
+  type: schema_step
+  front: Welche drei Pruefungsschritte umfasst die formelle Verfassungsmaessigkeit
+    eines Bundesgesetzes?
+  back: 'Die formelle Verfassungsmaessigkeit gliedert sich in drei Pruefungsschritte:
+    erstens die Gesetzgebungszustaendigkeit des Bundes (insbesondere Art. 70 ff. GG),
+    zweitens das Gesetzgebungsverfahren (ordnungsgemaesse Einbringung nach Art. 76
+    GG, Beschlussfassung im Bundestag, erforderliche Beteiligung des Bundesrates einschliesslich
+    einer etwaigen Anrufung des Vermittlungsausschusses nach Art. 77 GG) und drittens
+    die Form (Gegenzeichnung, Ausfertigung und Verkuendung nach Art. 82 GG). Diese
+    Gliederung ist zugleich der klassische Pruefungsstandort in einer abstrakten oder
+    konkreten Normenkontrolle, bevor die materielle Verfassungsmaessigkeit (Vereinbarkeit
+    des Gesetzesinhalts mit dem Grundgesetz) untersucht wird.'
+  norms:
+  - Art. 76 GG
+  - Art. 77 GG
+  - Art. 82 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: or-schema-gg-formelle-verfassungsmaessigkeit-gesetz
+  title: Formelle Verfassungsmaessigkeit eines Bundesgesetzes
+  norms:
+  - Art. 76 GG
+  - Art. 77 GG
+  - Art. 78 GG
+  - Art. 82 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Gesetzgebungszustaendigkeit des Bundes
+    hinweis: Art. 70 ff. GG - hier nicht vertieft, siehe eigenstaendige Themen zur
+      Kompetenzordnung.
+  - label: II. Gesetzgebungsverfahren
+    children:
+    - label: 1. Einbringung durch ein initiativberechtigtes Organ, Art. 76 Abs. 1
+        GG
+    - label: 2. Ggf. erster Durchgang bei Regierungs- oder Bundesratsvorlagen, Art.
+        76 Abs. 2 GG
+    - label: 3. Beschlussfassung im Bundestag
+    - label: 4. Beteiligung des Bundesrates, Art. 77 Abs. 1 GG
+      children:
+      - label: 'a) Einordnung: Zustimmungsgesetz oder Einspruchsgesetz?'
+      - label: b) Ggf. Anrufung des Vermittlungsausschusses, Art. 77 Abs. 2 GG
+      - label: 'c) Bei Zustimmungsgesetz: ausdrueckliche Zustimmung erforderlich,
+          Art. 78 GG'
+      - label: 'd) Bei Einspruchsgesetz: kein oder erfolglos zurueckgewiesener Einspruch,
+          Art. 77 Abs. 3, 4 GG'
+  - label: III. Form
+    children:
+    - label: 1. Gegenzeichnung
+    - label: 2. Ausfertigung durch den Bundespraesidenten, Art. 82 Abs. 1 GG
+    - label: 3. Verkuendung im Bundesgesetzblatt, Art. 82 Abs. 1, 2 GG
+  - label: 'IV. Ergebnis: Gesetz formell verfassungsgemaess zustande gekommen (oder
+      nicht)'
+faelle:
+- slug: or-fall-verkanntes-zustimmungsgesetz
+  title: Das verkannte Zustimmungsgesetz
+  difficulty: 4
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  facts: Der Bundestag beschliesst ein (fiktives) Gesetz, das nach einer ausdruecklichen
+    Bestimmung des Grundgesetzes der Zustimmung des Bundesrates bedarf. Die Bundestagsverwaltung
+    behandelt das Gesetz irrtuemlich als einfaches Einspruchsgesetz. Der Bundesrat,
+    der die Zustimmungsbeduerftigkeit ebenfalls nicht erkennt, legt gegen das Gesetz
+    mit einfacher Mehrheit 'Einspruch' ein. Der Bundestag weist diesen Einspruch daraufhin
+    mit der Mehrheit seiner Mitglieder zurueck. Der Bundespraesident fertigt das Gesetz
+    in der Annahme aus, das Verfahren sei ordnungsgemaess abgeschlossen, und es wird
+    im Bundesgesetzblatt verkuendet.
+  question: Ist das Gesetz formell verfassungsgemaess zustande gekommen?
+  steps:
+  - prompt: Um welchen Gesetzestyp handelt es sich nach der Vorgabe des Sachverhalts?
+    erwartung: Um ein Zustimmungsgesetz, da eine ausdrueckliche Bestimmung des Grundgesetzes
+      die Zustimmung des Bundesrates vorschreibt (echte Zustimmungsvorbehalte finden
+      sich nur einzeln im Grundgesetz, z. B. Art. 79 Abs. 2, Art. 84 Abs. 1 GG).
+  - prompt: Genuegt fuer das Zustandekommen eines Zustimmungsgesetzes die blosse Zurueckweisung
+      eines (vermeintlichen) Einspruchs?
+    erwartung: Nein. Bei einem echten Zustimmungsgesetz ist die ausdrueckliche Zustimmung
+      des Bundesrates konstitutive Voraussetzung fuer das Zustandekommen, Art. 78
+      GG. Die Zurueckweisung eines Einspruchs ersetzt diese Zustimmung nicht, da das
+      Einspruchsverfahren fuer Zustimmungsgesetze gar nicht das vorgesehene Verfahren
+      ist.
+  - prompt: Hat der Bundesrat im Sachverhalt eine Zustimmung erteilt?
+    erwartung: Nein - der Bundesrat hat lediglich (fehlerhaft) 'Einspruch' eingelegt,
+      keine Zustimmung erklaert. Eine ausdrueckliche Zustimmungserklaerung fehlt vollstaendig.
+  - prompt: Welche Folge hat das fehlerhafte Verfahren fuer die formelle Verfassungsmaessigkeit
+      des Gesetzes?
+    erwartung: Das Gesetz ist formell verfassungswidrig, weil es mangels der erforderlichen
+      Zustimmung des Bundesrates nicht wirksam nach Art. 78 GG zustande gekommen ist
+      - unabhaengig davon, dass der Bundestag den (unzutreffend eingeordneten) Einspruch
+      zurueckgewiesen hat.
+  - prompt: Aendert die Ausfertigung durch den Bundespraesidenten etwas an diesem
+      Ergebnis?
+    erwartung: Nein. Die Ausfertigung nach Art. 82 Abs. 1 GG setzt ein nach den Vorschriften
+      des Grundgesetzes ordnungsgemaess zustande gekommenes Gesetz voraus; ein Verfahrensfehler
+      beim Zustandekommen wird durch die - hier auf einem Irrtum beruhende - Ausfertigung
+      nicht geheilt.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Zutreffende Einordnung als Zustimmungsgesetz anhand der Sachverhaltsvorgabe
+      weight: 1.5
+      required: false
+      keywords:
+      - Zustimmungsgesetz
+      - ausdrueckliche Bestimmung
+      card_slugs:
+      - or-gg-gesetzgebung-zustimmungs-einspruchsgesetz
+    - id: p2
+      label: Erkenntnis, dass die Zurueckweisung eines Einspruchs die erforderliche
+        Zustimmung nicht ersetzt
+      weight: 3.0
+      required: true
+      keywords:
+      - Einspruch ersetzt nicht
+      - Zustimmung erforderlich
+      - Art. 78
+      card_slugs:
+      - or-gg-gesetzgebung-zustandekommen-zustimmungsgesetz
+    - id: p3
+      label: Feststellung, dass eine ausdrueckliche Zustimmungserklaerung des Bundesrates
+        fehlt
+      weight: 2.0
+      required: true
+      keywords:
+      - keine Zustimmung erteilt
+      - fehlt
+      card_slugs:
+      - or-gg-gesetzgebung-zustandekommen-zustimmungsgesetz
+    - id: p4
+      label: 'Ergebnis: Gesetz mangels wirksamen Zustandekommens formell verfassungswidrig'
+      weight: 2.0
+      required: true
+      keywords:
+      - formell verfassungswidrig
+      - nicht zustande gekommen
+      card_slugs:
+      - or-gg-gesetzgebung-zustandekommen-zustimmungsgesetz
+    - id: p5
+      label: Erkenntnis, dass die Ausfertigung den Verfahrensfehler nicht heilt
+      weight: 1.5
+      required: false
+      keywords:
+      - Ausfertigung heilt nicht
+      - Verfahrensfehler
+
+      card_slugs:
+      - or-gg-gesetzgebung-ausfertigung-verkuendung
+      - or-gg-gesetzgebung-pruefungsrecht-bundespraesident

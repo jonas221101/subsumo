@@ -169,9 +169,16 @@ Monat, darüber gedrosselt statt abgerechnet.
 
 ## 6. Antwort auf „Budget wofür?"
 
-Die frühere Aussage „Marketing organisch, kein Performance-Budget" hieß: **für
-Werbung wird kein Budget gebraucht.** Was tatsächlich Geld kostet, ist diese
-Liste — und sonst nichts:
+Die frühere Annahme „Marketing organisch, kein Performance-Budget" ist durch
+die Antwort des Auftraggebers auf die SUB-254-Rückfrage (Interaktion
+`65179b93-68de-4e49-b2a8-3852889ad7fc`, Frage `werbebudget`, 2026-09-25T05:52Z)
+überholt: **„Klein: bis ca. 500 €/Monat" — genug für einen
+zielgruppengenauen Testkanal (z. B. Instagram/TikTok auf
+Jura-Erstsemester), nicht für Breite.** Das ist eine Obergrenze für eine
+Entscheidung, keine Pflichtausgabe — Aktivierung und konkreter Kanal stehen
+in `docs/30-werbekonzept-erstkunden.md` Abschnitt 5. Was davon unabhängig,
+also unabhängig von einer Werbeentscheidung, tatsächlich Geld kostet, ist
+diese Liste:
 
 | Zweck | Betrag | Wann fällig |
 |---|---|---|
@@ -179,11 +186,15 @@ Liste — und sonst nichts:
 | **Pflicht laufend** — Hosting, Monitoring, E-Mail, KI-Redaktion | 82–267 €/Monat, Planwert 150 € | ab Release |
 | **Optional, empfohlen** — anwaltliche Prüfung der Rechtstexte statt Generator | 300–1.500 € einmalig | vor Release, wenn Reichweite erwartet wird |
 | **Aufschiebbar** — Apple 91 €/Jahr, Microsoft 17 €, Wortmarke ≈ 290 € | ≈ 400 € | v1.1/v1.2 |
-| **Nicht vorgesehen** — Werbung, Agentur, bezahlte Reichweite | 0 € | — |
+| **Bedingt freigegeben** — Werbung, ein zielgruppengenauer Testkanal (Obergrenze, keine Pflichtausgabe) | bis 500 €/Monat | ab Aktivierung, siehe `docs/30` Abschnitt 5 |
 
 **Gesamtbedarf für die ersten drei Monate:** **≈ 320 €** in der schlanken
 Variante (Generator-Rechtstexte, untere Kostenspanne) bis **≈ 1.150 €** in der
-abgesicherten Variante (anwaltliche Rechtstexte, obere Kostenspanne).
+abgesicherten Variante (anwaltliche Rechtstexte, obere Kostenspanne). Die
+Werbe-Obergrenze aus der Zeile „Bedingt freigegeben" ist hier **nicht**
+eingerechnet, weil sie eine Entscheidungsobergrenze ist, keine
+Pflichtausgabe — bei voller Nutzung über drei Monate kämen zusätzlich bis
+zu 1.500 € hinzu (`docs/30` Abschnitt 5).
 
 **Was Budget nicht ersetzt:** Die menschliche Prüfkapazität für den Content —
 2,5 bis 3 Stunden pro Werktag über die zwei Wochen

@@ -1,0 +1,277 @@
+topic:
+  slug: zr-su-schadensersatz-statt-der-leistung
+  area: zivilrecht
+  title: Schadensersatz statt der Leistung, §§ 280, 281 BGB
+  parent: zr-schuldrecht-at-unmoeglichkeit
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: zr-su-se-statt-leistung-systematik-280
+  type: definition
+  front: Wie ist der Schadensersatz statt der Leistung in § 280 BGB systematisch verankert?
+  back: '§ 280 Abs. 1 BGB enthaelt den Grundtatbestand fuer Schadensersatz wegen einer
+    Pflichtverletzung. Will der Glaeubiger Schadensersatz STATT der Leistung - also
+    als Ersatz fuer die ausbleibende Leistung selbst, nicht nur fuer einen Verspaetungs-
+    oder Begleitschaden -, so kann er dies nur unter den zusaetzlichen Voraussetzungen
+    der §§ 281, 282 oder 283 BGB verlangen (§ 280 Abs. 3 BGB). § 281 BGB regelt den
+    Hauptfall: Nichtleistung oder nicht vertragsgemaesse Leistung trotz Moeglichkeit
+    der Leistung.'
+  norms:
+  - § 280 Abs. 1 BGB
+  - § 280 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-se-statt-leistung-voraussetzungen-281-1
+  type: definition
+  front: Nenne die Voraussetzungen des § 281 Abs. 1 BGB
+  back: Der Glaeubiger kann Schadensersatz statt der Leistung verlangen, wenn der
+    Schuldner eine faellige, durchsetzbare Leistung nicht oder nicht vertragsgemaess
+    erbringt und der Glaeubiger dem Schuldner erfolglos eine angemessene Frist zur
+    Leistung oder Nacherfuellung bestimmt hat (§ 281 Abs. 1 S. 1 BGB). Bei einer nicht
+    vertragsgemaessen Leistung ist Schadensersatz statt der ganzen Leistung nur zu
+    verlangen, wenn die Pflichtverletzung nicht unerheblich ist (§ 281 Abs. 1 S. 3
+    BGB). Hinzukommen muss das Vertretenmuessen des Schuldners (§ 280 Abs. 1 S. 2
+    BGB).
+  norms:
+  - § 281 Abs. 1 BGB
+  - § 280 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-se-statt-leistung-fristentbehrlichkeit-281-2
+  type: definition
+  front: Wann ist die Fristsetzung nach § 281 Abs. 2 BGB entbehrlich?
+  back: Die Fristsetzung ist entbehrlich, wenn der Schuldner die Leistung ernsthaft
+    und endgueltig verweigert oder wenn besondere Umstaende vorliegen, die unter Abwaegung
+    der beiderseitigen Interessen die sofortige Geltendmachung des Schadensersatzanspruchs
+    rechtfertigen (§ 281 Abs. 2 BGB). Diese Fallgruppen entsprechen denen der Mahnungsentbehrlichkeit
+    in § 286 Abs. 2 Nr. 3 und Nr. 4 BGB.
+  norms:
+  - § 281 Abs. 2 BGB
+  - § 286 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-se-statt-leistung-ausschluss-281-4
+  type: definition
+  front: Welche Wirkung hat das Verlangen von Schadensersatz statt der ganzen Leistung,
+    § 281 Abs. 4 BGB?
+  back: 'Sobald der Glaeubiger Schadensersatz statt der ganzen Leistung verlangt,
+    ist der Anspruch auf die Leistung selbst ausgeschlossen (§ 281 Abs. 4 BGB). Der
+    Glaeubiger muss sich also entscheiden: Er kann nicht zugleich die urspruengliche
+    Leistung und den vollen Schadensersatz statt dieser Leistung fordern - andernfalls
+    stuende er besser, als wenn ordnungsgemaess erfuellt worden waere.'
+  norms:
+  - § 281 Abs. 4 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-se-statt-leistung-rueckgewaehr-281-5
+  type: definition
+  front: Was regelt § 281 Abs. 5 BGB fuer bereits erbrachte Leistungen?
+  back: Verlangt der Glaeubiger Schadensersatz statt der ganzen Leistung, so ist der
+    Schuldner berechtigt, vom Glaeubiger die Herausgabe einer bereits erhaltenen Leistung
+    nach den Vorschriften ueber den Ruecktritt zu verlangen (§ 281 Abs. 5 BGB), und
+    umgekehrt der Glaeubiger seine eigene Vorleistung zurueckzuverlangen. Es entsteht
+    also ein Rueckgewaehrschuldverhaeltnis entsprechend den §§ 346 bis 348 BGB.
+  norms:
+  - § 281 Abs. 5 BGB
+  - § 346 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-se-statt-leistung-abgrenzung-283
+  type: definition
+  front: Wie unterscheiden sich § 281 BGB und § 283 BGB?
+  back: § 281 BGB setzt voraus, dass die Leistung noch moeglich ist, der Schuldner
+    sie aber trotz Fristsetzung nicht erbringt. § 283 BGB erfasst dagegen den Fall,
+    dass der Schuldner nach § 275 Abs. 1 bis 3 BGB von der Leistungspflicht befreit
+    ist, die Leistung also (nachtraeglich) unmoeglich geworden ist. Weil eine Fristsetzung
+    zu einer unmoeglichen Leistung sinnlos waere, verlangt § 283 BGB keine Frist,
+    sondern verweist unmittelbar auf die Voraussetzungen des § 280 Abs. 1 BGB.
+  norms:
+  - § 283 BGB
+  - § 275 Abs. 1 BGB
+  - § 280 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-su-se-statt-leistung-ruecktritt-325
+  type: definition
+  front: Wie verhaelt sich der Anspruch auf Schadensersatz statt der Leistung zum
+    Ruecktritt, § 325 BGB?
+  back: Das Recht, Schadensersatz zu verlangen, wird durch den Ruecktritt nicht ausgeschlossen
+    (§ 325 BGB). Der Glaeubiger kann also - anders als man wegen der Rueckabwicklungsfolgen
+    vermuten koennte - sowohl vom Vertrag zuruecktreten (§ 323 BGB) als auch daneben
+    Schadensersatz statt der Leistung verlangen; beide Rechtsfolgen schliessen sich
+    nicht gegenseitig aus, sondern ergaenzen sich (der Ruecktritt beseitigt die primaeren
+    Leistungspflichten, der Schadensersatz gleicht den verbleibenden Vermoegensschaden
+    aus).
+  norms:
+  - § 325 BGB
+  - § 323 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-se-statt-leistung-280-281
+  title: Anspruch auf Schadensersatz statt der Leistung, §§ 280 Abs. 1, 3, 281 BGB
+  norms:
+  - § 280 Abs. 1 BGB
+  - § 280 Abs. 3 BGB
+  - § 281 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Schuldverhaeltnis mit faelliger, durchsetzbarer Leistungspflicht
+  - label: 'II. Pflichtverletzung: Nichtleistung oder nicht vertragsgemaesse Leistung
+      trotz Moeglichkeit'
+  - label: III. Erfolglose Fristsetzung, § 281 Abs. 1 BGB
+    hinweis: Oder Entbehrlichkeit nach § 281 Abs. 2 BGB.
+  - label: 'IV. Bei nicht vertragsgemaesser Leistung: Erheblichkeit der Pflichtverletzung,
+      § 281 Abs. 1 S. 3 BGB'
+  - label: V. Vertretenmuessen, § 280 Abs. 1 S. 2 BGB
+  - label: VI. Kausaler Schaden
+  - label: VII. Rechtsfolge
+    children:
+    - label: 1. Ersatz des Schadens statt der Leistung
+    - label: 2. Ausschluss des Leistungsanspruchs, § 281 Abs. 4 BGB
+    - label: 3. Rueckgewaehr bereits erbrachter Leistungen, § 281 Abs. 5 BGB iVm §§
+        346 ff. BGB
+faelle:
+- slug: zr-fall-verzoegertes-atelierregal
+  title: Das Atelierregal
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: Malerin M beauftragt Tischler T, ein maszgefertigtes Regal fuer ihr Atelier
+    herzustellen und binnen vier Wochen zu liefern; Werklohn 1.200 EUR, den M vertragsgemaess
+    vollstaendig im Voraus bezahlt. Nach vier Wochen liefert T nicht. M setzt T daraufhin
+    schriftlich eine Frist von zwei weiteren Wochen und erklaert, sie werde sich danach
+    anderweitig ein Regal beschaffen. Auch nach Ablauf dieser Frist liefert T nicht.
+    M kauft daraufhin bei einem anderen Anbieter ein vergleichbares Regal fuer 1.500
+    EUR. Sie verlangt von T die Rueckzahlung der 1.200 EUR sowie Ersatz der 300 EUR
+    Mehrkosten des Ersatzkaufs.
+  question: Hat M gegen T einen Anspruch auf Rueckzahlung der 1.200 EUR und auf Ersatz
+    der 300 EUR Mehrkosten?
+  steps:
+  - prompt: Welche Anspruchsgrundlage stuetzt den Anspruch auf die 300 EUR Mehrkosten?
+    erwartung: §§ 280 Abs. 1, 3, 281 BGB - Schadensersatz statt der Leistung.
+  - prompt: Waren die Voraussetzungen des § 281 Abs. 1 BGB erfuellt?
+    erwartung: 'Ja: T hat trotz Faelligkeit nach vier Wochen nicht geliefert, und
+      M hat ihm erfolglos eine angemessene Frist von zwei Wochen zur Leistung gesetzt.'
+  - prompt: Welche Rechtsfolge hat das Verlangen von Schadensersatz statt der ganzen
+      Leistung fuer den urspruenglichen Werklohnanspruch bzw. die bereits erbrachte
+      Vorauszahlung?
+    erwartung: Der Leistungsanspruch ist ausgeschlossen (§ 281 Abs. 4 BGB); die bereits
+      geleistete Vorauszahlung von 1.200 EUR ist nach § 281 Abs. 5 BGB iVm § 346 Abs.
+      1 BGB zurueckzugewaehren.
+  - prompt: Waere der Schadensersatzanspruch ausgeschlossen, wenn M zusaetzlich vom
+      Vertrag zuruecktreten wuerde?
+    erwartung: Nein, § 325 BGB stellt klar, dass der Ruecktritt den Anspruch auf Schadensersatz
+      nicht ausschliesst.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Anspruchsgrundlage §§ 280 Abs. 1, 3, 281 BGB fuer die Mehrkosten genannt
+        (Obersatz)
+      weight: 1.5
+      required: true
+      norms:
+      - § 280 Abs. 1 BGB
+      - § 280 Abs. 3 BGB
+      - § 281 BGB
+      keywords:
+      - '280'
+      - '281'
+      - Schadensersatz statt der Leistung
+      card_slugs:
+      - zr-su-se-statt-leistung-systematik-280
+    - id: p2
+      label: Nichtleistung trotz Faelligkeit nach vier Wochen erkannt
+      weight: 1.0
+      keywords:
+      - faellig
+      - vier Wochen
+      - nicht geliefert
+      card_slugs:
+      - zr-su-se-statt-leistung-voraussetzungen-281-1
+    - id: p3
+      label: Erfolglose Fristsetzung mit angemessener Frist iSd § 281 Abs. 1 BGB bejaht
+      weight: 2.0
+      required: true
+      norms:
+      - § 281 Abs. 1 BGB
+      keywords:
+      - Frist
+      - '281'
+      - erfolglos
+      card_slugs:
+      - zr-su-se-statt-leistung-voraussetzungen-281-1
+    - id: p4
+      label: Vertretenmuessen des T vermutet, § 280 Abs. 1 S. 2 BGB
+      weight: 1.0
+      keywords:
+      - vermutet
+      - vertreten
+    - id: p5
+      label: Mehrkosten des Deckungskaufs (300 EUR) als ersatzfaehiger Schaden statt
+        der Leistung
+      weight: 2.0
+      required: true
+      keywords:
+      - Mehrkosten
+      - Deckungskauf
+      - '300'
+      card_slugs:
+      - zr-su-se-statt-leistung-systematik-280
+    - id: p6
+      label: Rueckzahlung der 1.200 EUR ueber § 281 Abs. 5 BGB iVm § 346 Abs. 1 BGB
+        (Rueckgewaehr), nicht als Teil des Schadens
+      weight: 2.0
+      required: true
+      norms:
+      - § 281 Abs. 5 BGB
+      - § 346 Abs. 1 BGB
+      keywords:
+      - 281 Abs. 5
+      - '346'
+      - Rueckgewaehr
+      - Vorauszahlung
+      card_slugs:
+      - zr-su-se-statt-leistung-rueckgewaehr-281-5
+    - id: p7
+      label: 'Hinweis auf § 325 BGB: Ruecktritt wuerde den Schadensersatzanspruch
+        nicht ausschliessen'
+      weight: 1.0
+      norms:
+      - § 325 BGB
+      keywords:
+      - '325'
+      - Ruecktritt
+      card_slugs:
+      - zr-su-se-statt-leistung-ruecktritt-325
+    - id: p8
+      label: 'Ergebnis: beide Anspruesche bestehen'
+      weight: 0.5
+      keywords:
+      - Anspruch besteht
+      - M kann
+      - hat M gegen T einen Anspruch

@@ -11,7 +11,13 @@ import 'screen_status.dart';
 /// zum Aufdecken wird mitgemessen - sie ist ein guter Indikator dafuer, ob
 /// eine Definition wirklich sitzt.
 class ReviewPage extends StatefulWidget {
-  const ReviewPage({super.key});
+  const ReviewPage({required this.focusMode, required this.onToggleFocusMode, super.key});
+
+  /// Von [HomeShell] verwaltet, weil der Lesemodus dort auch Navigation/AppBar
+  /// ausblendet (SUB-160) - diese Seite kennt nur den aktuellen Zustand und
+  /// den Umschalter, nicht die umgebende Chrome.
+  final bool focusMode;
+  final VoidCallback onToggleFocusMode;
 
   @override
   State<ReviewPage> createState() => _ReviewPageState();
@@ -43,15 +49,14 @@ class _ReviewPageState extends State<ReviewPage> {
   Widget build(BuildContext context) {
     final app = AppScope.of(context);
 
+    final Widget body;
     if (app.loading && app.dueCards.isEmpty) {
-      return const ScreenStatus.loading();
+      body = const ScreenStatus.loading();
+    } else if (app.dueCards.isEmpty) {
+      body = _EmptyState(onReload: app.loadDueCards);
+    } else {
+      body = _buildDueCard(context, app);
     }
-    if (app.dueCards.isEmpty) {
-      return _EmptyState(onReload: app.loadDueCards);
-    }
-
-    final card = app.dueCards.first;
-    final norms = (card['norms'] as List?)?.cast<String>() ?? const [];
 
     return ReadableWidth(
       child: Padding(
@@ -59,96 +64,131 @@ class _ReviewPageState extends State<ReviewPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            // Immer sichtbar, unabhaengig vom Lade-/Leerzustand (SUB-160):
+            // sonst waere die Rueckkehr aus dem Lesemodus blockiert, sobald
+            // z. B. die letzte faellige Karte bewertet wurde.
             Row(
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                SubsumoChip(label: _typeLabel(card['type'] as String? ?? '')),
-                const SizedBox(width: Spacing.sm),
-                Text('${app.dueCards.length} offen'),
-                const Spacer(),
-                if (app.dueCardsFromCache)
-                  const Tooltip(
-                    message: 'Kein Netz erreichbar - zeigt den zuletzt '
-                        'geladenen Kartenstapel.',
-                    child: SubsumoChip(label: 'offline', icon: Icons.cloud_off),
+                IconButton(
+                  tooltip: widget.focusMode ? 'Lesemodus verlassen' : 'Lesemodus',
+                  icon: Icon(
+                    widget.focusMode ? Icons.fullscreen_exit_outlined : Icons.fullscreen_outlined,
                   ),
-                if (card['content_changed'] == true)
-                  const Tooltip(
-                    message: 'Der Inhalt dieser Karte wurde fachlich aktualisiert.',
-                    child: SubsumoChip(label: 'aktualisiert'),
-                  ),
+                  onPressed: widget.onToggleFocusMode,
+                ),
               ],
             ),
-            const SizedBox(height: Spacing.lg),
-            Expanded(
-              child: SingleChildScrollView(
-                child: SubsumoCard(
-                  padding: const EdgeInsets.all(Spacing.xl),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        card['front'] as String? ?? '',
-                        style: Theme.of(context).textTheme.titleLarge,
-                      ),
-                      if (_revealed) ...[
-                        const Divider(height: 40),
-                        Text(card['back'] as String? ?? ''),
-                        if (norms.isNotEmpty) ...[
-                          const SizedBox(height: Spacing.xl),
-                          Wrap(
-                            spacing: Spacing.sm,
-                            children: [
-                              for (final norm in norms)
-                                SubsumoChip.action(
-                                  label: norm,
-                                  // M2: oeffnet den Norm-Explorer.
-                                  onPressed: () {},
-                                ),
-                            ],
-                          ),
-                        ],
-                      ],
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            const SizedBox(height: Spacing.lg),
-            if (!_revealed)
-              SubsumoButton.primary(
-                label: 'Antwort zeigen',
-                onPressed: () => setState(() => _revealed = true),
-              )
-            else
-              Row(
-                children: [
-                  _RateButton('Nochmal', 1, (t, c) => c.error, _rate),
-                  _RateButton(
-                    'Schwer',
-                    2,
-                    (t, c) => t.extension<SubsumoColors>()?.feedbackHint ?? c.primary,
-                    _rate,
-                  ),
-                  _RateButton(
-                    'Gut',
-                    3,
-                    (t, c) => t.extension<SubsumoColors>()?.feedbackPositive ?? c.primary,
-                    _rate,
-                  ),
-                  _RateButton('Leicht', 4, (t, c) => c.primary, _rate),
-                ],
-              ),
-            if (app.outbox.isNotEmpty)
-              Padding(
-                padding: const EdgeInsets.only(top: Spacing.sm),
-                child: Text(
-                  '${app.outbox.length} Bewertung(en) warten auf Synchronisierung',
-                  style: Theme.of(context).textTheme.bodySmall,
-                ),
-              ),
+            Expanded(child: body),
           ],
         ),
       ),
+    );
+  }
+
+  Widget _buildDueCard(BuildContext context, AppState app) {
+    final card = app.dueCards.first;
+    final norms = (card['norms'] as List?)?.cast<String>() ?? const [];
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Row(
+          children: [
+            SubsumoChip(label: _typeLabel(card['type'] as String? ?? '')),
+            const SizedBox(width: Spacing.sm),
+            Text('${app.dueCards.length} offen'),
+            const Spacer(),
+            // Der app-weite "offline"-Hinweis im AppBar (main.dart,
+            // SUB-161) deckt dasselbe Signal (app.dueCardsFromCache) ab -
+            // hier keine zweite Anzeige, um Dopplung zu vermeiden.
+            if (card['content_changed'] == true)
+              const Tooltip(
+                message: 'Der Inhalt dieser Karte wurde fachlich aktualisiert.',
+                child: SubsumoChip(label: 'aktualisiert'),
+              ),
+          ],
+        ),
+        const SizedBox(height: Spacing.lg),
+        Expanded(
+          child: SingleChildScrollView(
+            child: SubsumoCard(
+              padding: const EdgeInsets.all(Spacing.xl),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    card['front'] as String? ?? '',
+                    style: Theme.of(context).textTheme.titleLarge,
+                  ),
+                  AnimatedSwitcher(
+                    duration: Motion.normal,
+                    switchInCurve: Motion.curve,
+                    switchOutCurve: Motion.curve,
+                    child: _revealed
+                        ? Column(
+                            key: const ValueKey('answer'),
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Divider(height: 40),
+                              Text(card['back'] as String? ?? ''),
+                              if (norms.isNotEmpty) ...[
+                                const SizedBox(height: Spacing.xl),
+                                Wrap(
+                                  spacing: Spacing.sm,
+                                  children: [
+                                    for (final norm in norms)
+                                      SubsumoChip.action(
+                                        label: norm,
+                                        // M2: oeffnet den Norm-Explorer.
+                                        onPressed: () {},
+                                      ),
+                                  ],
+                                ),
+                              ],
+                            ],
+                          )
+                        : const SizedBox.shrink(key: ValueKey('hidden')),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+        const SizedBox(height: Spacing.lg),
+        if (!_revealed)
+          SubsumoButton.primary(
+            label: 'Antwort zeigen',
+            onPressed: () => setState(() => _revealed = true),
+          )
+        else
+          Row(
+            children: [
+              _RateButton('Nochmal', 1, (t, c) => c.error, _rate),
+              _RateButton(
+                'Schwer',
+                2,
+                (t, c) => t.extension<SubsumoColors>()?.feedbackHint ?? c.primary,
+                _rate,
+              ),
+              _RateButton(
+                'Gut',
+                3,
+                (t, c) => t.extension<SubsumoColors>()?.feedbackPositive ?? c.primary,
+                _rate,
+              ),
+              _RateButton('Leicht', 4, (t, c) => c.primary, _rate),
+            ],
+          ),
+        if (app.outbox.isNotEmpty)
+          Padding(
+            padding: const EdgeInsets.only(top: Spacing.sm),
+            child: Text(
+              '${app.outbox.length} Bewertung(en) warten auf Synchronisierung',
+              style: Theme.of(context).textTheme.bodySmall,
+            ),
+          ),
+      ],
     );
   }
 

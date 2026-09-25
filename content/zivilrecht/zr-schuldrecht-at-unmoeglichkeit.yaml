@@ -9,6 +9,7 @@ topic:
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-13'
     status: ki-freigegeben
+    normzitate_geprueft: true
 cards:
 - slug: zr-su-unmoeglichkeit-begriff
   type: definition
@@ -213,6 +214,9 @@ faelle:
       - Unmoeglichkeit
       - '275'
       - Stueckschuld
+      card_slugs:
+      - zr-su-unmoeglichkeit-begriff
+      - zr-su-unmoeglichkeit-abgrenzung-subj-obj
     - id: p4
       label: Vertretenmuessen des V ueber § 276 BGB (Fahrlaessigkeit) bejaht
       weight: 2.0
@@ -233,6 +237,8 @@ faelle:
       - keine Fristsetzung
       - '283'
       - entbehrlich
+      card_slugs:
+      - zr-su-283-schadensersatz
     - id: p6
       label: Schadenshoehe korrekt als Differenzschaden von 500 Euro berechnet
       weight: 1.5

@@ -8,13 +8,59 @@ from fastapi import APIRouter, HTTPException, status
 
 from app.api.deps import CurrentUser, DbSession
 from app.config import get_settings
-from app.models import Case, Submission
+from app.models import Card, CardStateEnum, Case, Submission, UserCard
 from app.schemas import AnalyzeIn, CaseOut, SubmissionIn
 from app.services import limits
-from app.services.evaluator import get_evaluator
+from app.services.evaluator import Evaluation, get_evaluator, parse_expectation
 from app.services.gutachten import analyze
 
 router = APIRouter(tags=["gutachten"])
+
+
+def _stelle_verknuepfte_karten_faellig(
+    db: DbSession, *, user_id: int, case: Case, evaluation: Evaluation
+) -> None:
+    """Verzahnung Pruefpunkt -> Wiederholungskarte (SUB-263).
+
+    Fuer jeden verfehlten Pruefpunkt mit ``card_slugs`` werden die
+    referenzierten Karten des Nutzers faellig gestellt; bei einem verfehlten
+    Pflichtpruefpunkt zusaetzlich auf ``relearning`` zurueckgesetzt. Nur
+    bestehende UserCard-Zeilen werden aktualisiert - eine Karte, die der
+    Nutzer noch nie gelernt hat, wird dadurch nicht neu angelegt, sondern
+    bleibt bis zum ersten regulaeren Lernen unberuehrt.
+    """
+    checkpoints = parse_expectation(case.expectation or {})
+    results_by_id = {r.id: r for r in evaluation.checkpoints}
+
+    due_slugs: set[str] = set()
+    relearning_slugs: set[str] = set()
+    for cp in checkpoints:
+        if not cp.card_slugs:
+            continue
+        result = results_by_id.get(cp.id)
+        if result is None or result.hit:
+            continue
+        due_slugs.update(cp.card_slugs)
+        if cp.required:
+            relearning_slugs.update(cp.card_slugs)
+
+    if not due_slugs:
+        return
+
+    now = datetime.now(UTC)
+    slug_to_id = dict(db.query(Card.slug, Card.id).filter(Card.slug.in_(due_slugs)).all())
+
+    plain_due_ids = [slug_to_id[s] for s in due_slugs - relearning_slugs if s in slug_to_id]
+    if plain_due_ids:
+        db.query(UserCard).filter(
+            UserCard.user_id == user_id, UserCard.card_id.in_(plain_due_ids)
+        ).update({"due": now}, synchronize_session=False)
+
+    relearning_ids = [slug_to_id[s] for s in relearning_slugs if s in slug_to_id]
+    if relearning_ids:
+        db.query(UserCard).filter(
+            UserCard.user_id == user_id, UserCard.card_id.in_(relearning_ids)
+        ).update({"due": now, "state": CardStateEnum.RELEARNING.value}, synchronize_session=False)
 
 
 @router.post("/gutachten/analyze")
@@ -92,6 +138,7 @@ def submit_case(slug: str, payload: SubmissionIn, user: CurrentUser, db: DbSessi
         report=report,
     )
     db.add(submission)
+    _stelle_verknuepfte_karten_faellig(db, user_id=user.id, case=case, evaluation=evaluation)
     db.commit()
 
     return {

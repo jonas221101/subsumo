@@ -1,0 +1,288 @@
+topic:
+  slug: zr-at-verjaehrung
+  area: zivilrecht
+  title: Verjaehrung, §§ 194 ff. BGB
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: zr-at-verjaehrung-regelfrist-195
+  type: definition
+  front: Wie lang ist die regelmaessige Verjaehrungsfrist nach § 195 BGB?
+  back: Die regelmaessige Verjaehrungsfrist betraegt drei Jahre (§ 195 BGB). Sie gilt
+    fuer alle Ansprueche, fuer die das Gesetz keine abweichende Sonderfrist vorsieht
+    (z.B. § 196 BGB fuer Ansprueche in Bezug auf Grundstuecke, § 197 BGB fuer bestimmte
+    Ansprueche mit dreissigjaehriger Frist).
+  norms:
+  - § 195 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-verjaehrung-fristbeginn-199-1
+  type: definition
+  front: Wann beginnt die regelmaessige Verjaehrungsfrist nach § 199 Abs. 1 BGB?
+  back: Die regelmaessige Frist beginnt mit dem Schluss des Jahres, in dem der Anspruch
+    entstanden ist und der Glaeubiger von den anspruchsbegruendenden Umstaenden und
+    der Person des Schuldners Kenntnis erlangt hat oder ohne grobe Fahrlaessigkeit
+    haette erlangen muessen (§ 199 Abs. 1 Nr. 1, Nr. 2 BGB). Beide Voraussetzungen
+    - Anspruchsentstehung und Kenntnis bzw. grob fahrlaessige Unkenntnis - muessen
+    kumulativ vorliegen.
+  norms:
+  - § 199 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-verjaehrung-kenntnis-grobe-fahrlaessigkeit
+  type: definition
+  front: Was unterscheidet Kenntnis von grob fahrlaessiger Unkenntnis im Sinne des
+    § 199 Abs. 1 Nr. 2 BGB?
+  back: Kenntnis liegt vor, wenn der Glaeubiger die anspruchsbegruendenden Tatsachen
+    und die Person des Schuldners tatsaechlich positiv kennt. Grob fahrlaessige Unkenntnis
+    liegt vor, wenn sich dem Glaeubiger diese Umstaende foermlich aufdraengen und
+    er ganz naheliegende Ueberlegungen nicht anstellt oder sich vor einer sich aufdraengenden
+    Erkenntnis verschliesst, obwohl sich ihm die fuer den Anspruch erheblichen Tatsachen
+    ohne weiteres erschliessen wuerden.
+  norms:
+  - § 199 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-verjaehrung-hoechstfristen-199-2-4
+  type: definition
+  front: Welche kenntnisunabhaengigen Hoechstfristen sieht § 199 BGB vor?
+  back: Unabhaengig von Kenntnis oder grob fahrlaessiger Unkenntnis verjaehren Schadensersatzansprueche
+    wegen Verletzung des Lebens, des Koerpers, der Gesundheit oder der Freiheit in
+    dreissig Jahren ab der Begehung der Handlung (§ 199 Abs. 2 BGB). Sonstige Schadensersatzansprueche
+    verjaehren spaetestens in zehn Jahren ab Entstehung oder dreissig Jahren ab der
+    Handlung, je nachdem, welche Frist frueher endet (§ 199 Abs. 3 BGB). Andere Ansprueche
+    als Schadensersatzansprueche verjaehren spaetestens in zehn Jahren ab Entstehung
+    (§ 199 Abs. 4 BGB).
+  norms:
+  - § 199 Abs. 2 BGB
+  - § 199 Abs. 3 BGB
+  - § 199 Abs. 4 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-verjaehrung-hemmung-verhandlungen-203
+  type: definition
+  front: Wie wirkt sich die Aufnahme von Verhandlungen auf die Verjaehrung aus, §
+    203 BGB?
+  back: 'Schweben zwischen Glaeubiger und Schuldner Verhandlungen ueber den Anspruch
+    oder die den Anspruch begruendenden Umstaende, ist die Verjaehrung gehemmt, bis
+    der eine oder andere Teil die Fortsetzung der Verhandlungen verweigert (§ 203
+    S. 1 BGB). Die Verjaehrung tritt fruehestens drei Monate nach dem Ende der Hemmung
+    ein (§ 203 S. 2 BGB). ''Verhandlungen'' sind weit zu verstehen: es genuegt jeder
+    Meinungsaustausch ueber den Anspruch oder seine Grundlagen, sofern nicht sofort
+    und eindeutig jeder Anspruch abgelehnt wird.'
+  norms:
+  - § 203 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-verjaehrung-hemmung-rechtsverfolgung-204
+  type: definition
+  front: Welche Hemmungstatbestaende nennt § 204 BGB beispielhaft?
+  back: § 204 Abs. 1 BGB zaehlt zahlreiche Rechtsverfolgungshandlungen auf, die die
+    Verjaehrung hemmen, etwa die Erhebung der Klage auf Leistung (§ 204 Abs. 1 Nr.
+    1 BGB) oder die Zustellung eines Mahnbescheids im Mahnverfahren (§ 204 Abs. 1
+    Nr. 3 BGB). Gemeinsamer Gedanke ist, dass der Glaeubiger seinen Anspruch aktiv
+    und erkennbar gegenueber dem Schuldner oder einer Stelle geltend macht, die ueber
+    ihn entscheiden kann.
+  norms:
+  - § 204 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-verjaehrung-wirkung-hemmung-209
+  type: definition
+  front: Wie wirkt sich eine Hemmung rechnerisch auf die Verjaehrungsfrist aus, §
+    209 BGB?
+  back: Der Zeitraum, waehrend dessen die Verjaehrung gehemmt ist, wird in die Verjaehrungsfrist
+    nicht eingerechnet (§ 209 BGB). Die Frist laeuft nach Wegfall des Hemmungsgrundes
+    an der Stelle weiter, an der sie zu laufen aufgehoert hatte - sie beginnt also
+    nicht neu, sondern wird lediglich um die Dauer der Hemmung verlaengert.
+  norms:
+  - § 209 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-verjaehrung-neubeginn-212
+  type: definition
+  front: Wann beginnt die Verjaehrung nach § 212 BGB neu?
+  back: Die Verjaehrung beginnt erneut, wenn der Schuldner dem Glaeubiger gegenueber
+    den Anspruch durch Abschlagszahlung, Zinszahlung, Sicherheitsleistung oder in
+    anderer Weise anerkennt (§ 212 Abs. 1 Nr. 1 BGB) oder wenn eine gerichtliche oder
+    behoerdliche Vollstreckungshandlung vorgenommen oder beantragt wird (§ 212 Abs.
+    1 Nr. 2 BGB). Anders als die Hemmung setzt der Neubeginn die volle Verjaehrungsfrist
+    wieder von vorne in Gang, statt den bisherigen Fristlauf nur zu verlaengern.
+  norms:
+  - § 212 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-at-verjaehrung-einredewirkung-214
+  type: definition
+  front: Welche Rechtsfolge hat der Eintritt der Verjaehrung nach § 214 BGB?
+  back: Die Verjaehrung fuehrt nicht zum Erloeschen des Anspruchs, sondern gibt dem
+    Schuldner lediglich das Recht, die Leistung zu verweigern (§ 214 Abs. 1 BGB) -
+    eine sogenannte Einrede. Der Anspruch besteht als unvollkommene, nicht erzwingbare
+    Verbindlichkeit fort. Erhebt der Schuldner die Einrede nicht, etwa im Prozess,
+    ist der verjaehrte Anspruch dennoch durchsetzbar; das Gericht prueft die Verjaehrung
+    nicht von Amts wegen.
+  norms:
+  - § 214 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-verjaehrungseinrede
+  title: Pruefung der Verjaehrungseinrede
+  norms:
+  - § 195 BGB
+  - § 199 Abs. 1 BGB
+  - § 214 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Anspruch entstanden und Verjaehrungsfrist bestimmt
+    children:
+    - label: 1. Regelmaessige Frist, § 195 BGB (drei Jahre), oder Sonderfrist
+    - label: 2. Kenntnisunabhaengige Hoechstfristen, § 199 Abs. 2-4 BGB, beachten
+  - label: II. Fristbeginn, § 199 Abs. 1 BGB
+    children:
+    - label: 1. Anspruchsentstehung
+    - label: 2. Kenntnis oder grob fahrlaessige Unkenntnis von Glaeubiger, § 199 Abs.
+        1 Nr. 2 BGB
+  - label: III. Fristberechnung unter Beruecksichtigung von Hemmung und Neubeginn
+    children:
+    - label: 1. Hemmungstatbestaende, §§ 203, 204 BGB - Zeitraum nicht eingerechnet,
+        § 209 BGB
+    - label: 2. Neubeginn, § 212 BGB - Frist laeuft komplett neu
+  - label: IV. Ablauf der (ggf. verlaengerten) Frist vor Geltendmachung
+  - label: V. Erhebung der Einrede durch den Schuldner, § 214 Abs. 1 BGB
+    hinweis: Ohne Erhebung bleibt der Anspruch trotz Verjaehrung durchsetzbar.
+faelle:
+- slug: zr-fall-die-vergessene-werklohnrechnung
+  title: Die vergessene Werklohnrechnung
+  difficulty: 3
+  minutes: 35
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: Handwerker H erbringt fuer Kunde K am 15.11.2020 eine Reparaturleistung an
+    dessen Heizungsanlage. Der Werklohn in Hoehe von 800 EUR wird sofort nach Abnahme
+    faellig; H kennt Grund und Hoehe seiner Forderung von Anfang an. H vergisst jedoch,
+    eine Rechnung zu stellen. Im Juni 2021 telefonieren H und K ueber eine moegliche
+    Ratenzahlung; die Gespraeche enden im August 2021 ergebnislos, ohne dass K den
+    Anspruch dem Grunde nach bestreitet. Erst im Januar 2025 fordert H von K die Zahlung
+    der 800 EUR. K beruft sich gegenueber H ausdruecklich auf Verjaehrung.
+  question: Kann H von K noch Zahlung der 800 EUR verlangen?
+  steps:
+  - prompt: Welche Verjaehrungsfrist gilt fuer den Werklohnanspruch des H?
+    erwartung: Die regelmaessige Frist von drei Jahren nach § 195 BGB, da keine Sonderfrist
+      einschlaegig ist.
+  - prompt: Wann beginnt diese Frist zu laufen?
+    erwartung: Mit dem Schluss des Jahres 2020 (§ 199 Abs. 1 BGB), da der Anspruch
+      2020 entstanden ist und H als Glaeubiger von Anfang an Kenntnis von den anspruchsbegruendenden
+      Umstaenden hatte.
+  - prompt: Welche Wirkung haben die Verhandlungen von Juni bis August 2021 auf den
+      Fristlauf?
+    erwartung: Sie hemmen die Verjaehrung fuer diesen Zeitraum (§ 203 BGB); der Hemmungszeitraum
+      wird nach § 209 BGB nicht in die Frist eingerechnet, sodass sich der Fristablauf
+      entsprechend nach hinten verschiebt.
+  - prompt: Ist der Anspruch im Januar 2025 verjaehrt?
+    erwartung: 'Ja: selbst unter Beruecksichtigung der rund zweimonatigen Hemmung
+      im Jahr 2021 ist die auf den 31.12.2023 laufende Dreijahresfrist laengst abgelaufen.'
+  - prompt: Kann K die Zahlung verweigern?
+    erwartung: Ja, da K sich ausdruecklich auf die Verjaehrung beruft und damit die
+      Einrede erhebt (§ 214 Abs. 1 BGB); der Anspruch besteht zwar fort, ist aber
+      nicht mehr durchsetzbar.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Regelmaessige Verjaehrungsfrist von drei Jahren nach § 195 BGB als einschlaegig
+        erkannt
+      weight: 1.5
+      required: true
+      norms:
+      - § 195 BGB
+      keywords:
+      - '195'
+      - drei Jahre
+      - regelmaessige Frist
+      card_slugs:
+      - zr-at-verjaehrung-regelfrist-195
+    - id: p2
+      label: Fristbeginn zum Schluss des Jahres 2020 nach § 199 Abs. 1 BGB begruendet
+        (Entstehung und Kenntnis)
+      weight: 2.0
+      required: true
+      norms:
+      - § 199 Abs. 1 BGB
+      keywords:
+      - '199'
+      - Schluss des Jahres
+      - Kenntnis
+      card_slugs:
+      - zr-at-verjaehrung-fristbeginn-199-1
+    - id: p3
+      label: Hemmung durch die Verhandlungen 2021 nach § 203 BGB erkannt
+      weight: 1.5
+      norms:
+      - § 203 BGB
+      keywords:
+      - '203'
+      - Verhandlungen
+      - Hemmung
+      card_slugs:
+      - zr-at-verjaehrung-hemmung-verhandlungen-203
+    - id: p4
+      label: Nichteinrechnung des Hemmungszeitraums nach § 209 BGB und dennoch abgelaufene
+        Frist bis Januar 2025 berechnet
+      weight: 2.0
+      required: true
+      norms:
+      - § 209 BGB
+      keywords:
+      - '209'
+      - nicht eingerechnet
+      - '2025'
+      card_slugs:
+      - zr-at-verjaehrung-wirkung-hemmung-209
+    - id: p5
+      label: Verjaehrung fuehrt nur zu Einrede statt Erloeschen, § 214 Abs. 1 BGB,
+        und K muss sich darauf berufen
+      weight: 2.0
+      required: true
+      norms:
+      - § 214 Abs. 1 BGB
+      keywords:
+      - '214'
+      - Einrede
+      - beruft sich
+      card_slugs:
+      - zr-at-verjaehrung-einredewirkung-214
+    - id: p6
+      label: 'Ergebnis: H kann keine durchsetzbare Zahlung mehr verlangen'
+      weight: 0.5
+      keywords:
+      - kein Anspruch
+      - verjaehrt
+      - K muss nicht zahlen

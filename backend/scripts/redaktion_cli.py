@@ -89,6 +89,54 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
             "Kaufrecht, Sachmangelbegriff, Nacherfuellung, Zusammenspiel "
             "Ruecktritt/Minderung/Schadensersatz",
         ),
+        (
+            "Geschaeftsfaehigkeit Minderjaehriger, §§ 104 ff. BGB",
+            "BGB AT, beschraenkte Geschaeftsfaehigkeit § 106 BGB, Einwilligung und "
+            "Genehmigung §§ 107, 108 BGB, Taschengeldparagraph § 110 BGB",
+        ),
+        (
+            "Verzug, § 286 BGB",
+            "Schuldrecht AT, Mahnung und Entbehrlichkeit § 286 Abs. 2 BGB, "
+            "Verzugsschaden § 280 Abs. 2 BGB, Verzugszinsen § 288 BGB",
+        ),
+        (
+            "Schadensersatz statt der Leistung, §§ 280, 281 BGB",
+            "Schuldrecht AT, Fristsetzung, Abgrenzung zu § 283 BGB, Zusammenspiel "
+            "mit dem Ruecktritt § 325 BGB",
+        ),
+        (
+            "Eigentumserwerb an beweglichen Sachen, § 929 BGB",
+            "Sachenrecht, Einigung und Uebergabe, Uebergabesurrogate §§ 930, 931 BGB",
+        ),
+        (
+            "Gutglaeubiger Erwerb, § 932 BGB",
+            "Sachenrecht, guter Glaube, Abhandenkommen § 935 BGB, Abgrenzung zu "
+            "§ 933 BGB und § 934 BGB",
+        ),
+        (
+            "Verjaehrung, §§ 194 ff. BGB",
+            "BGB AT, regelmaessige Frist § 195 BGB, Fristbeginn § 199 Abs. 1 BGB "
+            "(Kenntnis/grob fahrlaessige Unkenntnis), Hemmung §§ 203, 204 BGB, "
+            "Neubeginn § 212 BGB, Einredewirkung § 214 BGB",
+        ),
+        (
+            "§ 823 Abs. 2 BGB, Schutzgesetzverletzung",
+            "Deliktsrecht, Schutzgesetzbegriff und Abgrenzung zu reinen "
+            "Ordnungsvorschriften, persoenlicher und sachlicher Schutzbereich, "
+            "Verschuldenserfordernis, Beweislastumkehr, Verhaeltnis zu § 823 Abs. 1 BGB",
+        ),
+        (
+            "§ 826 BGB, vorsaetzliche sittenwidrige Schaedigung",
+            "Deliktsrecht, Sittenwidrigkeit als Wertungsbegriff, Schaedigungsvorsatz "
+            "(auch dolus eventualis), Ersatz reiner Vermoegensschaeden als "
+            "Abgrenzungskriterium zu § 823 Abs. 1 BGB",
+        ),
+        (
+            "Sicherungsuebereignung",
+            "Sachenrecht, Uebereignung nach §§ 929 S. 1, 930 BGB mit Besitzkonstitut, "
+            "Sicherungsabrede als schuldrechtlicher Rechtsgrund, Verwertungsreife, "
+            "Abgrenzung zum Eigentumsvorbehalt und zum Pfandrecht, Uebersicherung",
+        ),
     ],
     "strafrecht": [
         ("Diebstahl, § 242 StGB", "Strafrecht BT, Wegnahme, Zueignungsabsicht"),
@@ -127,6 +175,61 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
         (
             "Toetungsdelikte, §§ 211, 212 StGB",
             "Strafrecht BT, Mordmerkmale, Abgrenzung § 211/§ 212",
+        ),
+        (
+            "Kausalitaet und objektive Zurechnung",
+            "Strafrecht AT, Aequivalenztheorie/conditio sine qua non, Adaequanz, "
+            "Schutzzweck der Norm, eigenverantwortliche Selbstgefaehrdung, "
+            "atypischer Kausalverlauf",
+        ),
+        (
+            "Vorsatz und Tatbestandsirrtum, § 16 StGB",
+            "Strafrecht AT, Vorsatzformen, error in persona vel objecto, aberratio "
+            "ictus, Abgrenzung zum Verbotsirrtum § 17 StGB",
+        ),
+        # P2-Nachtrag SUB-244 (Nutzerentscheid 23.09.2026 auf SUB-225: P2 vor
+        # Release), Reihenfolge nach Klausurrelevanz siehe Issue.
+        (
+            "Rechtfertigender Notstand, § 34 StGB",
+            "Strafrecht AT, Notstandslage, Erforderlichkeit, wesentliches "
+            "Ueberwiegen der Interessen, Angemessenheit, Abgrenzung zu § 32 "
+            "StGB und zu § 35 StGB",
+        ),
+        (
+            "Noetigung, § 240 StGB",
+            "Strafrecht BT, Gewalt- und Drohungsbegriff, Noetigungserfolg, "
+            "Verwerflichkeit § 240 Abs. 2 StGB als Rechtswidrigkeitskorrektiv, "
+            "Sitzblockaden-Rechtsprechung",
+        ),
+        (
+            "Verbotsirrtum, § 17 StGB",
+            "Strafrecht AT, Abgrenzung zum Tatbestandsirrtum § 16 StGB, "
+            "Vermeidbarkeit, Erlaubnisirrtum und Erlaubnistatbestandsirrtum im "
+            "Ueberblick",
+        ),
+        (
+            "Fahrlaessige Toetung, § 222 StGB",
+            "Strafrecht AT/BT, objektive Sorgfaltspflichtverletzung, objektive "
+            "Vorhersehbarkeit, Pflichtwidrigkeitszusammenhang, "
+            "Schutzzweckzusammenhang, eigenverantwortliche Selbstgefaehrdung",
+        ),
+        (
+            "Unterschlagung, § 246 StGB",
+            "Strafrecht BT, Zueignung als Manifestation, Subsidiaritaetsklausel "
+            "§ 246 Abs. 1 a. E., veruntreuende Unterschlagung Abs. 2, "
+            "Abgrenzung zu § 242 StGB",
+        ),
+        (
+            "Erpressung, § 253 StGB",
+            "Strafrecht BT, Noetigungsmittel, Vermoegensverfuegung als "
+            "Streitfrage, Vermoegensschaden, raeuberische Erpressung § 255 "
+            "StGB und Abgrenzung zum Raub § 249 StGB",
+        ),
+        (
+            "Untreue, § 266 StGB",
+            "Strafrecht BT, Missbrauchs- und Treubruchtatbestand, "
+            "Vermoegensbetreuungspflicht, Vermoegensnachteil und die "
+            "verfassungsrechtliche Praezisierungspflicht (BVerfGE 126, 170)",
         ),
     ],
     "oeffentliches-recht": [
@@ -171,6 +274,46 @@ BACKLOG: dict[str, list[tuple[str, str]]] = {
             "Rechtmaessigkeitspruefung eines Verwaltungsakts",
             "VerwR AT, Ermaechtigungsgrundlage, formelle und materielle "
             "Rechtmaessigkeit, Aufbauschema",
+        ),
+        (
+            "Ruecknahme und Widerruf, §§ 48, 49 VwVfG",
+            "VerwR AT, Abgrenzung rechtswidriger/rechtmaessiger VA, "
+            "Vertrauensschutz § 48 Abs. 2 VwVfG, Jahresfrist § 48 Abs. 4 VwVfG, "
+            "Ermessen, Entschaedigung § 49 Abs. 6 VwVfG (SUB-245)",
+        ),
+        (
+            "Nebenbestimmungen, § 36 VwVfG",
+            "VerwR AT, Arten (Befristung, Bedingung, Auflage, Widerrufsvorbehalt, "
+            "Auflagenvorbehalt), Zulaessigkeit bei gebundenem VA und Ermessens-VA, "
+            "isolierte Anfechtbarkeit der Auflage (SUB-245)",
+        ),
+        (
+            "Polizeiliche Generalklausel und Standardmassnahmen",
+            "Sicherheitsrecht, Schutzgueter der oeffentlichen Sicherheit und "
+            "Ordnung, konkrete Gefahr, Anscheinsgefahr und Gefahrenverdacht, "
+            "Verhaeltnis Generalklausel zu Standardmassnahmen, "
+            "Verhaeltnismaessigkeit. Bundesrechtlicher Kern/Musterentwurf, kein "
+            "vertieftes Landesrecht - keine norms-Zitate zu Landes-Polizeigesetzen, "
+            "da nicht in der Normzitat-Gate-Positivliste (SUB-245)",
+        ),
+        (
+            "Art. 8 GG: Versammlungsfreiheit",
+            "Grundrechte, Versammlungsbegriff, Schutzbereich unter freiem Himmel "
+            "vs. in geschlossenen Raeumen, Schrankenvorbehalt Art. 8 Abs. 2 GG, "
+            "Brokdorf-Rechtsprechung, Verhaeltnis zu Art. 5 GG (SUB-245)",
+        ),
+        (
+            "Gesetzgebungsverfahren, Art. 76 ff. GG",
+            "Staatsorganisationsrecht, Initiativrecht, Einspruchs- und "
+            "Zustimmungsgesetz, Vermittlungsausschuss, Ausfertigung und "
+            "Verkuendung Art. 82 GG, formelle Verfassungsmaessigkeit als "
+            "Pruefungsstandort (SUB-245)",
+        ),
+        (
+            "Organstreitverfahren",
+            "Verfassungsprozessrecht, Art. 93 Abs. 1 Nr. 1 GG, §§ 63 ff. BVerfGG, "
+            "Parteifaehigkeit und Antragsbefugnis, Abgrenzung zur abstrakten "
+            "Normenkontrolle (SUB-245)",
         ),
     ],
 }

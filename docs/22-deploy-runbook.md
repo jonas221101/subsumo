@@ -31,6 +31,25 @@ und die Kommandos selbst aendern sich dadurch nicht.
 - Optional, nur falls die LLM-Korrektur aktiviert wird: `SUBSUMO_LLM_PROVIDER`,
   `SUBSUMO_LLM_API_KEY` (siehe Abschnitt 9) — ohne diese beiden Variablen laeuft
   ausschliesslich der heuristische Evaluator, kein Fehlerzustand.
+- `SUBSUMO_PAYWALL_ENABLED` bewusst gesetzt: `true`, wenn die volle Kette
+  Kauf→Freischaltung→Kuendigung auf Produktion laeuft, sonst `false` als
+  Notausgang (`docs/20-release-g2-bezahlstrecke.md` Abschnitt 5). Der
+  Default ist `false` — wer die Variable vergisst, startet lautlos mit
+  offener Paywall (jeder Nutzer bekommt Pro-Zugriff geschenkt); das Backend
+  loggt dafuer bei `SUBSUMO_ENVIRONMENT=production` eine Warnung, wenn die
+  Variable fehlt oder `false` ist.
+- `SUBSUMO_RATE_LIMIT_TRUSTED_PROXIES=127.0.0.1` setzen, weil nginx gemaess
+  Abschnitt 3 per `proxy_pass http://127.0.0.1:8000` auf demselben Host an
+  uvicorn weiterreicht: ohne diese Variable sieht der Rate-Limiter auf
+  `/auth/login` und `/auth/register` (`backend/app/core/ratelimit.py`) fuer
+  jede Anfrage denselben TCP-Peer (`127.0.0.1`) und wird faktisch zu einem
+  einzigen globalen Zaehler statt eines Limits pro Client-IP — eine einzelne
+  Quelle koennte damit das Login/die Registrierung fuer alle Nutzer sperren.
+  Mit gesetzter Variable wertet der Limiter die von nginx gesetzte
+  `X-Forwarded-For`-IP aus (`proxy_set_header X-Forwarded-For
+  $proxy_add_x_forwarded_for;`, siehe nginx-Beispiel in Abschnitt 3). Default
+  ist leer (kein vertrauenswuerdiger Proxy) — in Dev/Test bewusst so, damit
+  der Header nicht ungeprueft vom Client uebernommen wird.
 - Frontend-Build-Voraussetzungen (Flutter SDK) nur auf der Build-Maschine
   noetig, nicht auf dem Zielserver — siehe Abschnitt 2.2.
 

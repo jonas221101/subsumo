@@ -60,6 +60,10 @@ class Pruefpunkt:
     keywords: list[str] = field(default_factory=list)
     norms: list[str] = field(default_factory=list)
     required: bool = False
+    # Verzahnung mit der Wiederholungskarte (SUB-263, docs/13-lernarchitektur.md
+    # Abschnitt 3.2/3.3): wird dieser Pruefpunkt verfehlt, werden die hier
+    # referenzierten Karten des einreichenden Nutzers faellig gestellt.
+    card_slugs: list[str] = field(default_factory=list)
 
 
 @dataclass
@@ -103,6 +107,7 @@ def parse_expectation(raw: dict[str, Any] | None) -> list[Pruefpunkt]:
             keywords=list(p.get("keywords", [])),
             norms=list(p.get("norms", [])),
             required=bool(p.get("required", False)),
+            card_slugs=list(p.get("card_slugs", [])),
         )
         for i, p in enumerate(points)
     ]

@@ -51,6 +51,11 @@ class _GutachtenPageState extends State<GutachtenPage> {
   /// die Abgabe.
   String? _analysisUpgradeMessage;
 
+  /// Fokussierter Lesemodus (SUB-160): blendet nur die AppBar aus, der
+  /// Editor-/Feedback-Inhalt bleibt unveraendert - Rueckkehr jederzeit ueber
+  /// den eingeblendeten Button moeglich.
+  bool _focusMode = false;
+
   @override
   void initState() {
     super.initState();
@@ -205,7 +210,20 @@ class _GutachtenPageState extends State<GutachtenPage> {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text(widget.caseTitle)),
+      // Lesemodus (SUB-160) blendet nur den Titel aus, behaelt aber eine
+      // schmale AppBar mit dem Umschalter - eine schwebende Schaltflaeche
+      // ueber dem Inhalt (statt in der Chrome) wuerde bei kurzen Fenstern
+      // den Falltext im Editor ueberdecken koennen.
+      appBar: AppBar(
+        title: _focusMode ? null : Text(widget.caseTitle),
+        actions: [
+          IconButton(
+            tooltip: _focusMode ? 'Lesemodus verlassen' : 'Lesemodus',
+            icon: Icon(_focusMode ? Icons.fullscreen_exit_outlined : Icons.fullscreen_outlined),
+            onPressed: () => setState(() => _focusMode = !_focusMode),
+          ),
+        ],
+      ),
       body: ReadableWidth(
         maxWidth: 1100,
         child: LayoutBuilder(
@@ -247,20 +265,32 @@ class _GutachtenPageState extends State<GutachtenPage> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           if (_case != null)
-            SubsumoCard(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    _case!['facts'] as String? ?? '',
-                    style: Theme.of(context).textTheme.bodyMedium,
+            // Feste Hoehenobergrenze mit eigenem Scroll: `_buildEditor` sitzt
+            // im schmalen Layout in einem hoehenbegrenzten `SizedBox` (siehe
+            // `build()`), zusammen mit dem `Expanded`-Editor darunter. Ohne
+            // Obergrenze ueberschreitet ein langer Sachverhalt (z. B. Fall
+            // "Der Hund im Auto") allein schon die verfuegbare Hoehe, und der
+            // Text laeuft unbemerkt in den nachfolgenden Feedback-Hinweis
+            // hinein (SUB-257-Befund) statt den Editor darunter zu verkleinern.
+            ConstrainedBox(
+              constraints: const BoxConstraints(maxHeight: 180),
+              child: SubsumoCard(
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        _case!['facts'] as String? ?? '',
+                        style: Theme.of(context).textTheme.bodyMedium,
+                      ),
+                      const SizedBox(height: Spacing.md),
+                      Text(
+                        _case!['question'] as String? ?? '',
+                        style: Theme.of(context).textTheme.titleSmall,
+                      ),
+                    ],
                   ),
-                  const SizedBox(height: Spacing.md),
-                  Text(
-                    _case!['question'] as String? ?? '',
-                    style: Theme.of(context).textTheme.titleSmall,
-                  ),
-                ],
+                ),
               ),
             ),
           const SizedBox(height: Spacing.md),
@@ -285,22 +315,26 @@ class _GutachtenPageState extends State<GutachtenPage> {
       );
 
   Widget _buildFeedback() {
+    final Widget child;
+    final String key;
     if (_result != null) {
-      return _ResultView(result: _result!, showEngine: _aiCorrectionEnabled);
-    }
-    final analysisUpgradeMessage = _analysisUpgradeMessage;
-    if (analysisUpgradeMessage != null) {
-      return SubsumoCard(
+      key = 'result';
+      child = _ResultView(result: _result!, showEngine: _aiCorrectionEnabled);
+    } else if (_analysisUpgradeMessage case final analysisUpgradeMessage?) {
+      key = 'analysis-upgrade';
+      child = SubsumoCard(
         child: SubsumoFeedbackBlock(
           message: 'Strukturfeedback ist diese Woche mit Free aufgebraucht.',
           detail: analysisUpgradeMessage,
           severity: FeedbackSeverity.hint,
         ),
       );
-    }
-    final structure = _structure;
-    if (structure == null) {
-      return const SubsumoCard(
+    } else if (_structure case final structure?) {
+      key = 'structure';
+      child = _StructureView(structure: structure);
+    } else {
+      key = 'hint';
+      child = const SubsumoCard(
         child: SubsumoFeedbackBlock(
           message: 'Schreib los. Ab etwa 40 Woertern bekommst du hier laufend '
               'Rueckmeldung zu Aufbau und Gutachtenstil.',
@@ -308,7 +342,16 @@ class _GutachtenPageState extends State<GutachtenPage> {
         ),
       );
     }
-    return _StructureView(structure: structure);
+
+    // Ruhiger Wechsel statt hartem Umschalten, wenn die Strukturanalyse
+    // erscheint oder sich der Feedback-Stand aendert (docs/25 Abschnitt 6) -
+    // bestehende Motion-Tokens, keine neue Duration/Curve.
+    return AnimatedSwitcher(
+      duration: Motion.normal,
+      switchInCurve: Motion.curve,
+      switchOutCurve: Motion.curve,
+      child: KeyedSubtree(key: ValueKey(key), child: child),
+    );
   }
 }
 
@@ -384,34 +427,47 @@ class _FindingTile extends StatelessWidget {
     final hint = finding['hint'] as String? ?? '';
 
     return Padding(
-      padding: const EdgeInsets.only(bottom: Spacing.md),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Icon(icon, size: 20, color: color),
-          const SizedBox(width: Spacing.sm),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(finding['message'] as String),
-                if (excerpt.isNotEmpty)
-                  Padding(
-                    padding: const EdgeInsets.only(top: Spacing.xs),
-                    child: Text(
-                      '„$excerpt"',
-                      style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic),
+      padding: const EdgeInsets.only(bottom: Spacing.sm),
+      // Eigene Flaeche statt nur eines gefaerbten Icons auf surface0 - bei
+      // mehreren Findings im langen Fliesstext sonst schwer auseinander-
+      // zuhalten (docs/25-ui-relaunch-brief.md Abschnitt 6). Bewusst
+      // dieselbe neutrale Flaeche fuer jede Schwere - nur das Icon zeigt sie
+      // weiterhin an.
+      child: Container(
+        padding: const EdgeInsets.all(Spacing.md),
+        decoration: BoxDecoration(
+          color: theme.colorScheme.surfaceContainerHighest,
+          borderRadius: BorderRadius.circular(Radii.sm),
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Icon(icon, size: 20, color: color),
+            const SizedBox(width: Spacing.sm),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(finding['message'] as String),
+                  if (excerpt.isNotEmpty)
+                    Padding(
+                      padding: const EdgeInsets.only(top: Spacing.xs),
+                      child: Text(
+                        '„$excerpt"',
+                        style:
+                            theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic),
+                      ),
                     ),
-                  ),
-                if (hint.isNotEmpty)
-                  Padding(
-                    padding: const EdgeInsets.only(top: Spacing.xs),
-                    child: Text(hint, style: theme.textTheme.bodySmall),
-                  ),
-              ],
+                  if (hint.isNotEmpty)
+                    Padding(
+                      padding: const EdgeInsets.only(top: Spacing.xs),
+                      child: Text(hint, style: theme.textTheme.bodySmall),
+                    ),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

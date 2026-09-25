@@ -15,6 +15,7 @@ class ScreenStatus extends StatelessWidget {
         severity = FeedbackSeverity.neutral,
         onRetry = null,
         retryLabel = null,
+        _iconSize = 20,
         _loading = true;
 
   const ScreenStatus.error({
@@ -24,8 +25,12 @@ class ScreenStatus extends StatelessWidget {
     this.retryLabel = 'Erneut versuchen',
     super.key,
   })  : severity = FeedbackSeverity.negative,
+        _iconSize = 20,
         _loading = false;
 
+  // Groesseres Icon fuer den Leerzustand (docs/25-ui-relaunch-brief.md
+  // Abschnitt 6) - Fehler bleiben beim bisherigen Icon-Gewicht, sie sind
+  // kein "hier gibt es nichts", sondern ein Handlungsaufruf.
   const ScreenStatus.empty({
     required String this.message,
     this.detail,
@@ -33,13 +38,15 @@ class ScreenStatus extends StatelessWidget {
     this.onRetry,
     this.retryLabel = 'Neu laden',
     super.key,
-  }) : _loading = false;
+  })  : _iconSize = 48,
+        _loading = false;
 
   final String? message;
   final String? detail;
   final FeedbackSeverity severity;
   final VoidCallback? onRetry;
   final String? retryLabel;
+  final double _iconSize;
   final bool _loading;
 
   @override
@@ -52,7 +59,12 @@ class ScreenStatus extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            SubsumoFeedbackBlock(message: message!, detail: detail, severity: severity),
+            SubsumoFeedbackBlock(
+              message: message!,
+              detail: detail,
+              severity: severity,
+              iconSize: _iconSize,
+            ),
             if (onRetry != null) ...[
               const SizedBox(height: Spacing.lg),
               SubsumoButton.secondary(label: retryLabel!, onPressed: onRetry),

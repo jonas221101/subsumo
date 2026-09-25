@@ -1,0 +1,257 @@
+topic:
+  slug: sr-notstand-34
+  area: strafrecht
+  title: Rechtfertigender Notstand, § 34 StGB
+  parent: sr-at
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: collector-agent-v1
+    geprueft_von: reviewer-agent-v1
+    geprueft_am: '2026-09-23'
+    status: ki-freigegeben
+    normzitate_geprueft: true
+cards:
+- slug: sr-notstand-gefahrbegriff
+  type: definition
+  front: 'Definiere: Gefahr i.S.d. § 34 StGB'
+  back: Eine Gefahr ist ein Zustand, in dem nach den Umständen des Einzelfalls der
+    Eintritt eines schaedigenden Ereignisses ernstlich droht, wenn dem drohenden Geschehensablauf
+    nicht gegengesteuert wird. Sie kann von Menschen, Tieren, Naturereignissen oder
+    technischen Defekten ausgehen - anders als bei § 32 StGB kommt es auf einen menschlichen
+    Angriff nicht an.
+  norms:
+  - § 34 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-notstand-notstandslage
+  type: definition
+  front: 'Definiere: Notstandslage, § 34 S. 1 StGB'
+  back: Eine Notstandslage liegt vor, wenn eine gegenwaertige, nicht anders abwendbare
+    Gefahr fuer Leben, Leib, Freiheit, Ehre, Eigentum oder ein anderes Rechtsgut besteht.
+    Gegenwaertig ist die Gefahr, wenn der Schaden sofort oder in allernaechster Zeit
+    einzutreten droht, wenn nicht eingegriffen wird - eine 'Dauergefahr' genuegt ebenfalls,
+    wenn sie jederzeit akut werden kann.
+  norms:
+  - § 34 Satz 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-notstand-erforderlichkeit
+  type: definition
+  front: Wann ist eine Notstandshandlung erforderlich i.S.d. § 34 Satz 1 StGB?
+  back: Erforderlich ist die Notstandshandlung, wenn sie zur Abwendung der Gefahr
+    geeignet und zugleich das relativ mildeste, gleich wirksame Mittel ist. Stehen
+    dem Taeter mehrere gleich geeignete Mittel zur Verfuegung, muss er dasjenige waehlen,
+    das das beeintraechtigte Rechtsgut am wenigsten belastet.
+  norms:
+  - § 34 Satz 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-notstand-interessenabwaegung
+  type: streitstand
+  front: Nach welchen Kriterien bestimmt sich das 'wesentliche Ueberwiegen' der Interessen,
+    § 34 Satz 1 StGB?
+  back: 'Die Abwaegung ist eine Gesamtbetrachtung aller Umstaende des Einzelfalls,
+    keine schematische Rangfolge. Massgebliche Kriterien sind insbesondere: der Rang
+    und die Bedeutung der kollidierenden Rechtsgueter, der Grad der drohenden Gefahr
+    und die Wahrscheinlichkeit ihres Eintritts, die Erfolgsaussicht der Rettungshandlung,
+    das Mass der zu erwartenden Rechtsgutsverletzung sowie die Frage, ob der Betroffene
+    die Gefahr autonom mitverursacht hat. Ein blosses Ueberwiegen genuegt nicht -
+    es muss sich um ein wesentliches, deutliches Ueberwiegen des geschuetzten gegenueber
+    dem beeintraechtigten Interesse handeln.'
+  norms:
+  - § 34 Satz 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-notstand-angemessenheit
+  type: norm
+  front: Was leistet die Angemessenheitsklausel des § 34 Satz 2 StGB zusaetzlich zur
+    Interessenabwaegung?
+  back: § 34 Satz 2 StGB verlangt zusaetzlich zum wesentlichen Ueberwiegen, dass die
+    Tat ein angemessenes Mittel ist, die Gefahr abzuwenden. Die Klausel ist ein eigenstaendiges
+    normatives Korrektiv fuer Faelle, in denen trotz guenstiger Gueterbilanz die Rechtsordnung
+    ein bestimmtes Verfahren vorschreibt (z. B. richterliche Entscheidung, behoerdliches
+    Verfahren) - wird dieses Verfahren umgangen, kann die Tat trotz ueberwiegenden
+    Erhaltungsinteresses unangemessen und damit nicht gerechtfertigt sein.
+  norms:
+  - § 34 Satz 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-notstand-abgrenzung-notwehr-32
+  type: definition
+  front: 'Abgrenzung: Rechtfertigender Notstand, § 34 StGB, und Notwehr, § 32 StGB'
+  back: Notwehr setzt einen gegenwaertigen rechtswidrigen Angriff eines Menschen voraus
+    und erlaubt die Verteidigung gegen genau diesen Angreifer, ohne dass die Interessen
+    gegeneinander abgewogen werden muessten (Rechtsbewaehrungsprinzip). Der Notstand
+    nach § 34 StGB erfasst dagegen jede Gefahrenquelle - auch Naturereignisse, Tiere
+    oder eigenes Fehlverhalten Dritter ohne Angriffsqualitaet - und erlaubt unter
+    Umstaenden auch einen Eingriff in Rechtsgueter unbeteiligter Dritter (Aggressivnotstand),
+    verlangt dafuer aber ein wesentliches Ueberwiegen der Interessen und Angemessenheit.
+  norms:
+  - § 32 StGB
+  - § 34 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-notstand-abgrenzung-entschuldigender-notstand-35
+  type: definition
+  front: 'Abgrenzung: Rechtfertigender Notstand, § 34 StGB, und entschuldigender Notstand,
+    § 35 StGB'
+  back: '§ 34 StGB schliesst bereits die Rechtswidrigkeit der Tat aus - die Rechtsordnung
+    billigt das Verhalten, jedermann muss es dulden. § 35 StGB laesst die Rechtswidrigkeit
+    unberuehrt und entschuldigt nur die Schuld des Taeters; die Tat bleibt Unrecht,
+    gegen das sich Dritte ihrerseits mit Notwehr wehren duerften. § 35 StGB ist zudem
+    enger gefasst: er schuetzt nur Leben, Leib und Freiheit des Taeters oder einer
+    ihm nahestehenden Person (§ 35 Abs. 1 Satz 1 StGB) und verlangt keine Interessenabwaegung,
+    sondern fragt nach der Zumutbarkeit, die Gefahr hinzunehmen.'
+  norms:
+  - § 34 StGB
+  - § 35 Abs. 1 Satz 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-notstand-34
+  title: Rechtfertigender Notstand, § 34 StGB
+  norms:
+  - § 34 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Notstandslage
+    children:
+    - label: 1. Gefahr fuer ein notstandsfaehiges Rechtsgut (Leben, Leib, Freiheit,
+        Ehre, Eigentum, anderes Rechtsgut)
+    - label: 2. Gegenwaertigkeit der Gefahr
+    - label: 3. Nicht anders abwendbar
+  - label: II. Notstandshandlung
+    children:
+    - label: 1. Erforderlichkeit (relativ mildestes, gleich wirksames Mittel)
+  - label: III. Interessenabwaegung
+    children:
+    - label: 1. Rang und Bedeutung der kollidierenden Rechtsgueter
+    - label: 2. Grad und Wahrscheinlichkeit der Gefahr, Erfolgsaussicht der Rettungshandlung
+    - label: 3. Wesentliches Ueberwiegen des geschuetzten Interesses
+    hinweis: Keine schematische Rangfolge, sondern Gesamtabwaegung des Einzelfalls.
+  - label: IV. Angemessenheit, § 34 Satz 2 StGB
+    hinweis: Eigenstaendiges Korrektiv - va. relevant, wenn ein vorgeschriebenes Verfahren
+      umgangen wird.
+  - label: 'V. Ergebnis: Rechtswidrigkeit entfaellt'
+faelle:
+- slug: sr-fall-hund-im-auto
+  title: Der Hund im Auto
+  difficulty: 2
+  minutes: 30
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: An einem heissen Sommertag geht A an einem auf einem Supermarktparkplatz
+    abgestellten PKW vorbei und sieht darin einen Hund, der stark hechelt, unruhig
+    hin- und herspringt und deutliche Anzeichen eines beginnenden Hitzschlags zeigt.
+    Die Fensterscheiben sind vollstaendig geschlossen, der Halter ist nicht auffindbar
+    und meldet sich auch nicht auf einen ueber die Parkplatzlautsprecher ausgerufenen
+    Suchaufruf. Da A befuerchtet, der Hund koenne in den naechsten Minuten einen lebensgefaehrlichen
+    Kreislaufkollaps erleiden, zerschlaegt er mit einem griffbereiten Pflasterstein
+    die Seitenscheibe und befreit den Hund. Die Reparatur der Scheibe kostet den Halter
+    300 Euro.
+  question: Hat sich A wegen Sachbeschaedigung gemaess § 303 Abs. 1 StGB strafbar
+    gemacht?
+  steps:
+  - prompt: Formuliere den Obersatz.
+    erwartung: A koennte sich durch das Einschlagen der Seitenscheibe wegen Sachbeschaedigung
+      gemaess § 303 Abs. 1 StGB strafbar gemacht haben.
+  - prompt: Liegt der Tatbestand der Sachbeschaedigung vor?
+    erwartung: Ja - die Scheibe ist eine fremde Sache, die A durch das Zerschlagen
+      substanziell beschaedigt hat.
+  - prompt: Liegt eine Notstandslage nach § 34 Satz 1 StGB vor?
+    erwartung: Ja - fuer den Hund droht eine gegenwaertige, nicht anders abwendbare
+      Gefahr fuer Leben und koerperliche Unversehrtheit durch drohenden Hitzschlag;
+      der Halter ist nicht erreichbar.
+  - prompt: War das Einschlagen der Scheibe erforderlich?
+    erwartung: Ja - ein milderes, gleich wirksames Mittel, den Hund rechtzeitig zu
+      befreien, stand A nicht zur Verfuegung.
+  - prompt: Ueberwiegt das geschuetzte Interesse wesentlich das beeintraechtigte?
+    erwartung: Ja - Leben und Gesundheit des Tieres bei drohendem Hitzschlag wiegen
+      wesentlich schwerer als der reine Sachwert einer Autoscheibe.
+  - prompt: Ist die Tat auch angemessenes Mittel i.S.d. § 34 Satz 2 StGB?
+    erwartung: Ja - kein vorgeschriebenes Verfahren wurde umgangen, das Einschlagen
+      einer Scheibe zur Rettung eines akut gefaehrdeten Lebewesens ist ein sozial
+      anerkanntes Mittel.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Obersatz mit § 303 Abs. 1 StGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 303 Abs. 1 StGB
+      keywords:
+      - '303'
+    - id: p2
+      label: Tatbestand der Sachbeschaedigung bejaht
+      weight: 1.0
+      required: false
+      keywords:
+      - fremde Sache
+      - beschaedigt
+    - id: p3
+      label: Notstandslage bejaht (gegenwaertige Gefahr fuer Leben/Gesundheit des
+        Tieres)
+      weight: 2.5
+      required: true
+      norms:
+      - § 34 Satz 1 StGB
+      keywords:
+      - Notstandslage
+      - gegenwaertige Gefahr
+      card_slugs:
+      - sr-notstand-gefahrbegriff
+      - sr-notstand-notstandslage
+    - id: p4
+      label: Erforderlichkeit der Notstandshandlung bejaht
+      weight: 2.0
+      required: true
+      norms:
+      - § 34 Satz 1 StGB
+      keywords:
+      - erforderlich
+      - mildestes Mittel
+      card_slugs:
+      - sr-notstand-erforderlichkeit
+    - id: p5
+      label: Wesentliches Ueberwiegen des Erhaltungsinteresses in der Abwaegung bejaht
+      weight: 3.0
+      required: true
+      norms:
+      - § 34 Satz 1 StGB
+      keywords:
+      - wesentlich ueberwiegt
+      - ueberwiegen
+      card_slugs:
+      - sr-notstand-interessenabwaegung
+    - id: p6
+      label: Angemessenheit erwaehnt, § 34 Satz 2 StGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 34 Satz 2 StGB
+      keywords:
+      - angemessen
+      card_slugs:
+      - sr-notstand-angemessenheit
+    - id: p7
+      label: 'Ergebnis: Tat gerechtfertigt, A hat sich nicht strafbar gemacht'
+      weight: 1.0
+      required: false
+      keywords:
+      - gerechtfertigt
+      - nicht strafbar

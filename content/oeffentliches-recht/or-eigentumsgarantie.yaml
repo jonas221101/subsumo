@@ -198,6 +198,8 @@ faelle:
       keywords:
       - Schutzbereich
       - Eigentum
+      card_slugs:
+      - or-gr-art14-schutzbereich
     - id: p2
       label: Zutreffende Einordnung als Enteignung (nicht Inhalts- und Schrankenbestimmung)
         mit Begruendung ueber den gezielten Entzug einer konkreten Position
@@ -209,6 +211,9 @@ faelle:
       - Enteignung
       - konkrete Position
       - gezielt
+      card_slugs:
+      - or-gr-art14-enteignung
+      - or-gr-art14-trennungstheorie
     - id: p3
       label: Verstoss gegen die Junktimklausel des Art. 14 Abs. 3 S. 2 GG erkannt
         und begruendet
@@ -219,6 +224,8 @@ faelle:
       keywords:
       - Junktimklausel
       - Entschaedigungsregelung
+      card_slugs:
+      - or-gr-art14-junktimklausel
     - id: p4
       label: 'Ergebnis: Eigentumsentzug verletzt E in Art. 14 GG'
       weight: 1.5
@@ -228,3 +235,6 @@ faelle:
       keywords:
       - verletzt
       - verfassungswidrig
+
+      card_slugs:
+      - or-gr-art14-junktimklausel
