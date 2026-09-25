@@ -54,6 +54,14 @@ class _CasesPageState extends State<CasesPage> {
           final fall = _cases[index];
           return Card(
             child: ListTile(
+              // Icon-Form statt Farbe unterscheidet die Rechtsgebiete hier -
+              // die kategorischen Akzenttoene aus SubsumoColors.legalArea*
+              // sind laut Brief (docs/25 Abschnitt 3.6) ausdruecklich nur fuer
+              // oeffentliche Flaechen vorgesehen, nicht fuer App-Screens.
+              leading: Icon(
+                _areaIcon(fall['area'] as String),
+                color: Theme.of(context).colorScheme.onSurfaceVariant,
+              ),
               title: Text(fall['title'] as String),
               subtitle: Text(
                 '${_areaLabel(fall['area'] as String)}  ·  '
@@ -81,5 +89,12 @@ class _CasesPageState extends State<CasesPage> {
         'strafrecht' => 'Strafrecht',
         'oeffentliches-recht' => 'Oeffentliches Recht',
         _ => area,
+      };
+
+  static IconData _areaIcon(String area) => switch (area) {
+        'zivilrecht' => Icons.balance_outlined,
+        'strafrecht' => Icons.gavel_outlined,
+        'oeffentliches-recht' => Icons.account_balance_outlined,
+        _ => Icons.menu_book_outlined,
       };
 }

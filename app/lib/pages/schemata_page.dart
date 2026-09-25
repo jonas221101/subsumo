@@ -79,6 +79,14 @@ class _SchemataPageState extends State<SchemataPage> {
                 margin: const EdgeInsets.only(bottom: Spacing.md),
                 child: ExpansionTile(
                   shape: const Border(),
+                  // Icon-Form statt Farbe unterscheidet die Rechtsgebiete -
+                  // wie in cases_page.dart bleiben die kategorischen
+                  // Akzenttoene aus SubsumoColors.legalArea* oeffentlichen
+                  // Flaechen vorbehalten (docs/25 Abschnitt 3.6).
+                  leading: Icon(
+                    _areaIcon(schema['area'] as String? ?? ''),
+                    color: Theme.of(context).colorScheme.onSurfaceVariant,
+                  ),
                   title: Text(schema['title'] as String),
                   subtitle: Text(
                     ((schema['norms'] as List?) ?? const []).join(', '),
@@ -149,4 +157,11 @@ class _SchemataPageState extends State<SchemataPage> {
     }
     return widgets;
   }
+
+  static IconData _areaIcon(String area) => switch (area) {
+        'zivilrecht' => Icons.balance_outlined,
+        'strafrecht' => Icons.gavel_outlined,
+        'oeffentliches-recht' => Icons.account_balance_outlined,
+        _ => Icons.account_tree_outlined,
+      };
 }
