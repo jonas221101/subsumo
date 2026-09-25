@@ -49,11 +49,17 @@ Ist-Menge, Zahl wird offen kommuniziert" — dieser Ausfallpfad adressiert die
 **Menge**, nicht die Prüftiefe.
 
 **Konsequenz für die Entscheidung:** Ob ein Release ohne Stichprobe
-dokumentenkonform ist, lässt sich aus `docs/08` nicht eindeutig beantworten.
-Das ist kein Grund, die Stichprobe zu überspringen, aber auch keiner, den
-Termin daran scheitern zu lassen — es ist eine offene Festlegung, die der
-Nutzer treffen muss. Sie sollte im Zuge der Entscheidung in `docs/08`
-vereindeutigt werden (Folgeaufgabe, nicht Teil der Stichprobe selbst).
+dokumentenkonform ist, ließ sich aus `docs/08` zum Zeitpunkt dieser Analyse
+nicht eindeutig beantworten. Das war kein Grund, die Stichprobe zu
+überspringen, aber auch keiner, den Termin daran scheitern zu lassen — es
+war eine offene Festlegung, die der Nutzer treffen musste.
+
+> **Nachtrag 25.09.2026 (`SUB-277`):** Nach der Entscheidung (Interaktion
+> `f754f609`, oben) ist `docs/08` vereindeutigt: Die Einleitung war die
+> zutreffende Aussage — die Stichprobe ist eine Empfehlung, kein technisches
+> Gate. Der widersprüchliche Wortlaut im Abschnitt „Grenze der Positivliste"
+> ist korrigiert, die Begründung (Stichprobe als einzige Instanz gegen
+> inhaltlich falsch zugeordnete Zitate) dort als Einschränkung erhalten.
 
 ## 3. Die Stichprobe: 6 Themen
 
