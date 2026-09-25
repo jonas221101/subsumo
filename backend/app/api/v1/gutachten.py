@@ -73,7 +73,9 @@ def submit_case(slug: str, payload: SubmissionIn, user: CurrentUser, db: DbSessi
     # Ohne Einwilligung (SUB-133) laeuft ausschliesslich die Heuristik - die
     # Abgabe wird deshalb nie abgelehnt, nur der Evaluator umgeschaltet. Das
     # Ergebnis-Feld "engine" macht sichtbar, welcher Evaluator gelaufen ist.
-    evaluator = get_evaluator(consented=user.ai_review_consent_at is not None)
+    evaluator = get_evaluator(
+        consented=user.ai_review_consent_at is not None, db=db, user=user
+    )
     evaluation = evaluator.evaluate(
         text=payload.text, expectation=case.expectation or {}, structure=structure
     )
