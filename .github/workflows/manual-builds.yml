@@ -1,4 +1,4 @@
-name: Manuelle Testbuilds (Android APK / Windows)
+name: Manuelle Testbuilds (Android APK / Windows / iOS)
 
 on:
   workflow_dispatch:
@@ -81,4 +81,44 @@ jobs:
         with:
           name: subsumo-windows
           path: app/subsumo-windows.zip
+          retention-days: 14
+
+  build-ios:
+    name: Flutter - iOS-IPA bauen (unsigniert)
+    runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.ref }}
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      # app/ios/ ist nicht eingecheckt (siehe CONTRIBUTING.md,
+      # "Generierte Dateien") - vor dem Build einmalig erzeugen.
+      - run: flutter create . --platforms=ios --org de.subsumo
+      # Testbuilds sprechen ein lokales Backend per http:// ueber die LAN-IP an
+      # (api_base). App Transport Security blockt das ohne diese Ausnahme.
+      # Nur fuer diese manuellen Testbuilds, nicht fuer Store-Builds.
+      - name: HTTP zum lokalen Backend erlauben (nur Testbuild)
+        run: |
+          /usr/libexec/PlistBuddy -c "Add :NSAppTransportSecurity dict" ios/Runner/Info.plist
+          /usr/libexec/PlistBuddy -c "Add :NSAppTransportSecurity:NSAllowsArbitraryLoads bool true" ios/Runner/Info.plist
+          /usr/libexec/PlistBuddy -c "Add :NSAppTransportSecurity:NSAllowsLocalNetworking bool true" ios/Runner/Info.plist
+      - run: flutter pub get
+      # Ohne Apple-Developer-Account unsigniert bauen. Signiert wird beim
+      # Sideloaden (z.B. Sideloadly mit eigener Apple-ID).
+      - run: flutter build ios --release --no-codesign --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }}
+      - name: Runner.app als IPA verpacken
+        run: |
+          mkdir Payload
+          cp -R build/ios/iphoneos/Runner.app Payload/
+          zip -qr subsumo-ios-unsigned.ipa Payload
+      - uses: actions/upload-artifact@v4
+        with:
+          name: subsumo-ios-unsigned
+          path: app/subsumo-ios-unsigned.ipa
           retention-days: 14
