@@ -68,12 +68,16 @@ Dringlichkeit sortiert (blockiert G4 zuerst).
 1. **Rechtsträger fehlt** (s. o.) — ohne Antwort ist das Impressum nicht
    veröffentlichbar. **Blockiert G4 direkt.** Eigentümer: Nutzer, via
    SUB-39-Interaktion.
-2. **Anwaltliche Freigabe aller fünf Texte vor Produktivschaltung** — dieser
-   Entwurf ist keine Rechtsberatung (siehe Kopfzeile). `docs/17-release-readiness.md`
-   Abschnitt 1 nennt für AGB 3–5 PT, Datenschutzerklärung 2–3 PT, Widerruf
-   1 PT externen Aufwand. **Blockiert G4**, wenn keine Prüfkapazität vor dem
-   28.09. verfügbar ist — dann ist das der Punkt, der den Termin nach
-   Abschnitt 5 der Roadmap tatsächlich verschiebt.
+2. **Anwaltliche Freigabe — für zwei der fünf Texte bewusst nicht eingeholt.**
+   Für AGB (Haftungsklausel) und Widerrufsbelehrung (Widerrufsverzicht
+   § 356 V BGB) hat der Auftraggeber am 25.09.2026 entschieden, ohne
+   anwaltliche Prüfung zu starten (`docs/17-release-readiness.md`
+   Abschnitt 1, `docs/31-projektreview-sub254.md` Abschnitt 9) — das
+   blockiert G4 nicht mehr. Für die Datenschutzerklärung (2–3 PT externer
+   Aufwand, `docs/17` Abschnitt 1) ist das unverändert offen und **blockiert
+   G4**, wenn keine Prüfkapazität vor dem 28.09. verfügbar ist — dann ist
+   das der Punkt, der den Termin nach Abschnitt 5 der Roadmap tatsächlich
+   verschiebt.
 3. **Kündigungsbutton-Pflicht (§ 312k BGB)** — die AGB (`02-agb.md`
    Abschnitt 5) beschreiben Selbstkündigung im Produkt als Zielzustand. Zum
    Zeitpunkt dieses Entwurfs existiert dafür kein Code (Abo-Verwaltung ist in

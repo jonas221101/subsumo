@@ -158,7 +158,7 @@ belegen statt zu schätzen.
 | Konto | Registrierung, Login, Passwort-Reset, DSGVO-Export und -Löschung | vollständig implementiert (SUB-84, `/v1/account/export` + `/v1/account/delete`) |
 | Bezahlung | Web-Checkout (Stripe), Free-Tier mit Limit, Pro-Freischaltung | **nicht vorhanden — größter Einzelposten** |
 | Plattform | `app.subsumo.de` (Web) + Android als internes/offenes Testing | Web-Build in CI, APK-Artefakt aus SUB-60 |
-| Recht | Impressum, AGB, Datenschutzerklärung, Widerrufsbelehrung, Cookie-Hinweis | Entwürfe stehen (`docs/legal/`), anwaltliche Freigabe + Rechtsträger-Angaben offen |
+| Recht | Impressum, AGB, Datenschutzerklärung, Widerrufsbelehrung, Cookie-Hinweis | Entwürfe stehen (`docs/legal/`), Rechtsträger-Angaben offen. AGB-Haftungsklausel und Widerrufsverzicht laufen bewusst ohne anwaltliche Freigabe (Entscheidung 25.09.2026, `docs/17-release-readiness.md` Abschnitt 1) |
 | Betrieb | Monitoring, Fehler-Tracking, tägliches DB-Backup, Support-Postfach | offen |
 
 ### 3.2 Raus (mit Rückkehrdatum)
