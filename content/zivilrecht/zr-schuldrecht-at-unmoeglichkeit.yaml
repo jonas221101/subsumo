@@ -194,6 +194,8 @@ faelle:
       keywords:
       - '280'
       - '283'
+      card_slugs:
+      - zr-su-283-schadensersatz
     - id: p2
       label: Kaufvertrag als Schuldverhältnis benannt, § 433 BGB
       weight: 1.0
@@ -227,6 +229,8 @@ faelle:
       - vertreten
       - Fahrlässigkeit
       - '276'
+      card_slugs:
+      - zr-delikt-verschulden-276
     - id: p5
       label: Entbehrlichkeit der Fristsetzung nach § 283 BGB erkannt und begründet
       weight: 2.5
@@ -254,3 +258,6 @@ faelle:
       - Anspruch besteht
       - K gegen V
       - Mithin hat K
+      card_slugs:
+      - zr-su-unmoeglichkeit-begriff
+      - zr-su-283-schadensersatz

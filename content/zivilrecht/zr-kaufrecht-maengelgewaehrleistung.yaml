@@ -270,6 +270,8 @@ faelle:
       keywords:
       - '437'
       - Rücktritt
+      card_slugs:
+      - zr-kaufrecht-rechte-des-kaeufers-437
     - id: p2
       label: Sachmangel wegen Abweichung von der vereinbarten Beschaffenheit (§ 434
         Abs. 2 BGB) korrekt bejaht
@@ -325,6 +327,8 @@ faelle:
       - § 323 Abs. 5 BGB
       keywords:
       - unerheblich
+      card_slugs:
+      - zr-ruecktritt-unerheblich-323-5-satz-2
     - id: p7
       label: Rechtsfolge Rückgewährschuldverhältnis Zug um Zug, § 346 Abs. 1 BGB
       weight: 1.0
@@ -334,3 +338,6 @@ faelle:
       keywords:
       - Zug um Zug
       - '346'
+      card_slugs:
+      - zr-ruecktritt-rueckgewaehr-346-1
+      - zr-ruecktritt-zug-um-zug-348

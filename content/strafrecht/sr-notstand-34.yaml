@@ -200,6 +200,8 @@ faelle:
       label: Tatbestand der Sachbeschädigung bejaht
       weight: 1.0
       required: false
+      norms:
+      - § 303 Abs. 1 StGB
       keywords:
       - fremde Sache
       - beschädigt
@@ -252,6 +254,11 @@ faelle:
       label: 'Ergebnis: Tat gerechtfertigt, A hat sich nicht strafbar gemacht'
       weight: 1.0
       required: false
+      norms:
+      - § 34 StGB
       keywords:
       - gerechtfertigt
       - nicht strafbar
+      card_slugs:
+      - sr-notstand-notstandslage
+      - sr-notstand-interessenabwaegung

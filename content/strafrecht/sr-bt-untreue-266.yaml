@@ -182,6 +182,8 @@ faelle:
       - § 266 Abs. 1 StGB
       keywords:
       - '266'
+      card_slugs:
+      - sr-untreue-grundtatbestand
     - id: p2
       label: Vermögensbetreuungspflicht des A als Geschäftsführer bejaht und begründet
       weight: 2.5
@@ -199,6 +201,8 @@ faelle:
         im Innenverhältnis pflichtwidrig eingesetzt)
       weight: 1.5
       required: false
+      norms:
+      - § 266 Abs. 1 StGB
       keywords:
       - Missbrauch
       - Innenverhältnis
@@ -219,12 +223,20 @@ faelle:
       label: Vorsatz bejaht
       weight: 1.0
       required: false
+      norms:
+      - § 15 StGB
       keywords:
       - Vorsatz
+      card_slugs:
+      - sr-at-vorsatz
     - id: p6
       label: 'Ergebnis: Untreue bejaht'
       weight: 1.0
       required: false
+      norms:
+      - § 266 Abs. 1 StGB
       keywords:
       - strafbar gemacht
       - Untreue
+      card_slugs:
+      - sr-untreue-grundtatbestand

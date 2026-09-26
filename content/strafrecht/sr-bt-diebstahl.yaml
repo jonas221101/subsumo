@@ -206,6 +206,8 @@ faelle:
       label: Fremde bewegliche Sache bejaht
       weight: 1.0
       required: false
+      norms:
+      - § 242 Abs. 1 StGB
       keywords:
       - fremde bewegliche Sache
       - bewegliche Sache
@@ -228,6 +230,8 @@ faelle:
       label: Züignungsabsicht mit Aneignungs- und Enteignungskomponente bejaht
       weight: 2.5
       required: true
+      norms:
+      - § 242 Abs. 1 StGB
       keywords:
       - Züignungsabsicht
       - Aneignung
@@ -238,6 +242,8 @@ faelle:
       label: Rechtswidrigkeit der erstrebten Zueignung bejaht
       weight: 1.5
       required: false
+      norms:
+      - § 242 Abs. 1 StGB
       keywords:
       - rechtswidrig
       - keinen Anspruch
@@ -252,10 +258,16 @@ faelle:
       - § 15 StGB
       keywords:
       - Vorsatz
+      card_slugs:
+      - sr-at-vorsatz
     - id: p7
       label: 'Ergebnis: A hat sich wegen vollendeten Diebstahls strafbar gemacht'
       weight: 1.0
       required: false
+      norms:
+      - § 242 Abs. 1 StGB
       keywords:
       - strafbar gemacht
       - A hat sich
+      card_slugs:
+      - sr-diebstahl-vollendung-gewahrsamsenklave

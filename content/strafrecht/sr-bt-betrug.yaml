@@ -203,10 +203,14 @@ faelle:
       - § 263 Abs. 1 StGB
       keywords:
       - '263'
+      card_slugs:
+      - sr-betrug-grundtatbestand
     - id: p2
       label: Täuschung über Tatsachen bejaht und konkret benannt (Zustand des Displays)
       weight: 3.0
       required: true
+      norms:
+      - § 263 Abs. 1 StGB
       keywords:
       - Täuschung
       - Tatsachen
@@ -217,6 +221,8 @@ faelle:
       label: Irrtum und dadurch veranlasste Vermögensverfügung (Überweisung) bejaht
       weight: 2.0
       required: false
+      norms:
+      - § 263 Abs. 1 StGB
       keywords:
       - Irrtum
       - Vermögensverfügung
@@ -228,6 +234,8 @@ faelle:
       label: Vermögensschaden über Gesamtsaldierung/Minderwert begründet
       weight: 3.0
       required: true
+      norms:
+      - § 263 Abs. 1 StGB
       keywords:
       - Gesamtsaldierung
       - Minderwert
@@ -238,6 +246,8 @@ faelle:
       label: Stoffgleiche, rechtswidrige Bereicherungsabsicht bejaht
       weight: 1.5
       required: false
+      norms:
+      - § 263 Abs. 1 StGB
       keywords:
       - Bereicherungsabsicht
       - stoffgleich
@@ -252,11 +262,17 @@ faelle:
       - § 15 StGB
       keywords:
       - Vorsatz
+      card_slugs:
+      - sr-at-vorsatz
     - id: p7
       label: 'Ergebnis: A hat sich wegen Betrugs strafbar gemacht'
       weight: 1.0
       required: false
+      norms:
+      - § 263 Abs. 1 StGB
       keywords:
       - strafbar gemacht
       - Betrug
       - '263'
+      card_slugs:
+      - sr-betrug-grundtatbestand

@@ -60,7 +60,7 @@ void main() {
     // "gerade gestartet"-Rahmung (Fassung vom 26.09.2026).
     expect(find.text('Was drin ist'), findsOneWidget);
     expect(
-      find.textContaining('445 geprüfte Karteikarten, 64 Prüfungsschemata und 60 geführte Fälle'),
+      find.textContaining('629 geprüfte Karteikarten, 85 Prüfungsschemata und 81 geführte Fälle'),
       findsNWidgets(2), // Hero-Subheadline + Sektion 5
     );
     expect(find.textContaining('Gründerpreis: Wer jetzt einsteigt'), findsOneWidget);
@@ -84,7 +84,7 @@ void main() {
     await tester.tap(find.text('Wie viele Karten, Schemata und Fälle gibt es?'));
     await tester.pumpAndSettle();
     expect(
-      find.textContaining('445 geprüfte Karteikarten, 64 Prüfungsschemata und 60 geführte Fälle'),
+      find.textContaining('629 geprüfte Karteikarten, 85 Prüfungsschemata und 81 geführte Fälle'),
       findsNWidgets(3), // Hero + Sektion 5 + FAQ-Antwort
     );
 

@@ -34,7 +34,9 @@ cards:
     ist), die örtliche Zuständigkeit (räumlicher Zuständigkeitsbereich) und die
     instanzielle bzw. funktionelle Zuständigkeit (welche Ebene oder welcher Amtsträger
     innerhalb der Behörde handeln darf).
-  norms: []
+  norms:
+  - § 3 VwVfG
+  - § 46 VwVfG
   quellen:
   - Eigenformulierung Redaktion
   stand: 2026-09

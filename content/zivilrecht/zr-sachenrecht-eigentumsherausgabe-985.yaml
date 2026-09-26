@@ -177,6 +177,8 @@ faelle:
       - § 985 BGB
       keywords:
       - '985'
+      card_slugs:
+      - zr-985-anspruchsvoraussetzungen
     - id: p2
       label: Eigentümerstellung der E bejaht und begründet (Leihe ist kein Verfügungsgeschäft)
       weight: 1.5
@@ -207,6 +209,8 @@ faelle:
       keywords:
       - Leihe
       - '598'
+      card_slugs:
+      - zr-986-recht-zum-besitz
     - id: p5
       label: Erlöschen des Besitzrechts mit Fristablauf gemäß § 604 Abs. 1 BGB
         korrekt begründet
@@ -224,7 +228,12 @@ faelle:
       label: 'Ergebnis: Anspruch der E gegen L besteht'
       weight: 1.0
       required: false
+      norms:
+      - § 985 BGB
       keywords:
       - Anspruch besteht
       - E gegen L
+      card_slugs:
+      - zr-985-vindikationslage
+      - zr-985-anspruchsvoraussetzungen
   stand: 2026-09

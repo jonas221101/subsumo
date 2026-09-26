@@ -66,7 +66,9 @@ cards:
     vorangegangenes gefahrbegründendes Tun (Ingerenz), die Verantwortlichkeit für
     Sachen oder Anlagen (Verkehrssicherungspflichten) sowie die Aufsichtspflicht über
     das Verhalten Dritter, etwa der Eltern für ihre minderjährigen Kinder.'
-  norms: []
+  norms:
+  - § 13 Abs. 1 StGB
+  - § 1631 Abs. 1 BGB
   quellen:
   - Eigenformulierung Redaktion
   stand: 2026-09
@@ -114,7 +116,9 @@ cards:
     nur unklarer Pflichtwidrigkeit ist der Streit offenzulegen.
 
     '
-  norms: []
+  norms:
+  - § 13 Abs. 1 StGB
+  - § 32 StGB
   quellen:
   - Eigenformulierung Redaktion
   stand: 2026-09

@@ -251,16 +251,22 @@ faelle:
       - § 249 Abs. 1 StGB
       keywords:
       - '249'
+      card_slugs:
+      - sr-raub-grundtatbestand
     - id: p2
       label: Fremde bewegliche Sache und Wegnahme (nicht Vermögensverfügung) bejaht
       weight: 2.0
       required: false
+      norms:
+      - § 249 Abs. 1 StGB
       keywords:
       - fremde bewegliche Sache
       - Wegnahme
       - Gewahrsam
       card_slugs:
       - sr-raub-abgrenzung-raeuberische-erpressung
+      - sr-diebstahl-fremde-bewegliche-sache
+      - sr-diebstahl-wegnahme-begriff
     - id: p3
       label: Drohung mit gegenwärtiger Gefahr für Leib oder Leben bejaht und begründet
       weight: 3.0
@@ -277,6 +283,8 @@ faelle:
       label: Finaler Zusammenhang zwischen Drohung und Wegnahme erkannt und begründet
       weight: 3.0
       required: true
+      norms:
+      - § 249 Abs. 1 StGB
       keywords:
       - finaler Zusammenhang
       - Mittel
@@ -287,10 +295,14 @@ faelle:
       label: Züignungsabsicht mit Aneignungs- und Enteignungskomponente bejaht
       weight: 1.5
       required: false
+      norms:
+      - § 249 Abs. 1 StGB
       keywords:
       - Züignungsabsicht
       - Aneignung
       - Enteignung
+      card_slugs:
+      - sr-diebstahl-zueignungsabsicht
     - id: p6
       label: Vorsatz bzgl. aller objektiven Tatbestandsmerkmale erwähnt
       weight: 1.0
@@ -299,11 +311,17 @@ faelle:
       - § 15 StGB
       keywords:
       - Vorsatz
+      card_slugs:
+      - sr-at-vorsatz
     - id: p7
       label: 'Ergebnis: A hat sich wegen Raubes strafbar gemacht'
       weight: 1.0
       required: false
+      norms:
+      - § 249 Abs. 1 StGB
       keywords:
       - strafbar gemacht
       - Raub
       - '249'
+      card_slugs:
+      - sr-raub-grundtatbestand

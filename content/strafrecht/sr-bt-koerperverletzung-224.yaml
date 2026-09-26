@@ -234,10 +234,14 @@ faelle:
       keywords:
       - '223'
       - '224'
+      card_slugs:
+      - sr-kv-224-qualifikationen-ueberblick
     - id: p2
       label: Körperliche Misshandlung/Gesundheitsschädigung bejaht
       weight: 1.5
       required: false
+      norms:
+      - § 223 Abs. 1 StGB
       keywords:
       - körperliche Misshandlung
       - Gesundheitsschädigung
@@ -277,11 +281,17 @@ faelle:
       - § 15 StGB
       keywords:
       - Vorsatz
+      card_slugs:
+      - sr-at-vorsatz
     - id: p6
       label: 'Ergebnis: A hat sich wegen gefährlicher Körperverletzung strafbar
         gemacht'
       weight: 1.0
       required: false
+      norms:
+      - § 224 Abs. 1 StGB
       keywords:
       - strafbar gemacht
       - gefährliche Körperverletzung
+      card_slugs:
+      - sr-kv-224-qualifikationen-ueberblick

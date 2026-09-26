@@ -256,6 +256,10 @@ faelle:
       label: 'Ergebnis: Kaufvertrag über das Modell Sprint 200'
       weight: 1.0
       required: false
+      norms:
+      - § 433 Abs. 1 S. 1 BGB
       keywords:
       - Sprint 200
       - Anspruch besteht
+      card_slugs:
+      - zr-at-auslegung-falsa-demonstratio

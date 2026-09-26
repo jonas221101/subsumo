@@ -176,12 +176,18 @@ faelle:
       - § 246 Abs. 1 StGB
       keywords:
       - '246'
+      card_slugs:
+      - sr-unterschlagung-zueignungsbegriff
     - id: p2
       label: Fremde bewegliche Sache bejaht
       weight: 1.0
       required: false
+      norms:
+      - § 246 Abs. 1 StGB
       keywords:
       - fremde bewegliche Sache
+      card_slugs:
+      - sr-diebstahl-fremde-bewegliche-sache
     - id: p3
       label: Zueignung durch Manifestation (Verkauf) bejaht
       weight: 2.5
@@ -198,8 +204,12 @@ faelle:
       label: Rechtswidrigkeit der Zueignung bejaht
       weight: 1.0
       required: false
+      norms:
+      - § 246 Abs. 1 StGB
       keywords:
       - rechtswidrig
+      card_slugs:
+      - sr-diebstahl-rechtswidrigkeit-zueignung
     - id: p5
       label: Anvertrautsein bejaht mit Begründung (Leihe als Vertrauensverhältnis)
       weight: 3.0
@@ -227,6 +237,10 @@ faelle:
       label: 'Ergebnis: veruntreuende Unterschlagung bejaht'
       weight: 1.0
       required: false
+      norms:
+      - § 246 Abs. 2 StGB
       keywords:
       - veruntreuende Unterschlagung
       - strafbar gemacht
+      card_slugs:
+      - sr-unterschlagung-veruntreuende-qualifikation

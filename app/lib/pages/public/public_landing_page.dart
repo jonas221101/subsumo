@@ -66,7 +66,7 @@ class _HeroSection extends StatelessWidget {
       style: (wide ? typography.heroLarge : typography.heroSmall).copyWith(color: Colors.white),
     );
     final subheadline = Text(
-      '445 geprüfte Karteikarten, 64 Prüfungsschemata und 60 geführte Fälle '
+      '629 geprüfte Karteikarten, 85 Prüfungsschemata und 81 geführte Fälle '
       'über Zivilrecht, Strafrecht und Öffentliches Recht — dazu ein '
       'Struktur-Check für deine eigenen Gutachten. Pro zum Gründerpreis ab '
       '3,99 €/Monat, dauerhaft garantiert.',
@@ -389,7 +389,7 @@ class _WasDrinIstSection extends StatelessWidget {
           ),
           const SizedBox(height: Spacing.md),
           Text(
-            '445 geprüfte Karteikarten, 64 Prüfungsschemata und 60 geführte '
+            '629 geprüfte Karteikarten, 85 Prüfungsschemata und 81 geführte '
             'Fälle über Zivilrecht, Strafrecht und Öffentliches Recht. Jede '
             'Karte nennt ihre Normen und Quellen und durchläuft eine '
             'redaktionelle Prüfung, bevor sie erscheint. Der Bestand wird '
@@ -677,7 +677,7 @@ class _FaqSection extends StatelessWidget {
     ),
     (
       'Wie viele Karten, Schemata und Fälle gibt es?',
-      '445 geprüfte Karteikarten, 64 Prüfungsschemata und 60 geführte Fälle '
+      '629 geprüfte Karteikarten, 85 Prüfungsschemata und 81 geführte Fälle '
           'über Zivilrecht, Strafrecht und Öffentliches Recht. Der Bestand '
           'wird redaktionell erweitert; die aktuellen Zahlen stehen hier auf '
           'der Seite, nicht nur im Kleingedruckten.',

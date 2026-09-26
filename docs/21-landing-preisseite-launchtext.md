@@ -45,7 +45,7 @@
 >
 > **Update 26.09.2026 (Tonalität, Umfangszahlen):** Alle Texte verlieren die
 > „gerade gestartet"/„Early Access"/„kommt bald"-Rahmung. Grund: Der Content
-> steht bei **445 Karten, 64 Schemata, 60 geführten Fällen** (Zählung über
+> steht bei **629 Karten, 85 Schemata, 81 geführten Fällen** (Zählung über
 > `content/**/*.yaml`, Stand 26.09.) — die alten Zahlen (180 / 8+ / 6+) und
 > die Entschuldigung für den kleinen Umfang waren sachlich überholt und
 > wirkten unprofessionell. Neue Tonalität: sachlich, sicher, Zahlen nennen
@@ -68,7 +68,7 @@ Aus der Aufgabenstellung SUB-88, zwei Punkte, an denen es „sonst scheitert":
 
 1. **Umfang faktisch kommunizieren, weder beschönigen noch kleinreden.**
    Jeder Text, der den Umfang nennt, nennt die **tatsächlichen Zahlen aus
-   `content/**/*.yaml`** (Stand 26.09.2026: **445 Karten, 64 Schemata, 60
+   `content/**/*.yaml`** (Stand 26.09.2026: **629 Karten, 85 Schemata, 60
    geführte Fälle über drei Rechtsgebiete**) — nie „umfassend", „vollständig"
    oder vergleichbare Superlative, aber auch keine „wir sind noch klein"-
    Entschuldigung. Der Vergleich zu Jurafuchs (8.000+ Fälle,
@@ -127,8 +127,8 @@ was die AGB nicht deckt:
 > **H1:** Unbegrenztes Feedback zum Aufbau deiner Gutachten — sofort, offline,
 > ohne Limit.
 >
-> **Subheadline (Stand 26.09.2026, so in der App):** 445 geprüfte
-> Karteikarten, 64 Prüfungsschemata und 60 geführte Fälle über Zivilrecht,
+> **Subheadline (Stand 26.09.2026, so in der App):** 629 geprüfte
+> Karteikarten, 85 Prüfungsschemata und 81 geführte Fälle über Zivilrecht,
 > Strafrecht und Öffentliches Recht — dazu ein Struktur-Check für deine
 > eigenen Gutachten. Pro zum Gründerpreis ab 3,99 €/Monat, dauerhaft
 > garantiert.
@@ -188,7 +188,7 @@ was die AGB nicht deckt:
 
 **5. Was drin ist**
 
-> **445 geprüfte Karteikarten, 64 Prüfungsschemata und 60 geführte Fälle**
+> **629 geprüfte Karteikarten, 85 Prüfungsschemata und 81 geführte Fälle**
 > über Zivilrecht, Strafrecht und Öffentliches Recht. Jede Karte nennt ihre
 > Normen und Quellen und durchläuft eine redaktionelle Prüfung, bevor sie
 > erscheint. Der Bestand wird laufend erweitert — die aktuellen Zahlen
@@ -244,7 +244,7 @@ was die AGB nicht deckt:
 > Einmal geladene Inhalte übersteht auch ein Neustart oder Netzausfall.
 >
 > **Wie viele Karten, Schemata und Fälle gibt es?**
-> 445 geprüfte Karteikarten, 64 Prüfungsschemata und 60 geführte Fälle über
+> 629 geprüfte Karteikarten, 85 Prüfungsschemata und 81 geführte Fälle über
 > Zivilrecht, Strafrecht und Öffentliches Recht. Der Bestand wird
 > redaktionell erweitert; die aktuellen Zahlen stehen hier auf der Seite,
 > nicht nur im Kleingedruckten.
@@ -396,7 +396,7 @@ Budget) und sind direkt einsetzbar, sobald konkrete Kanäle feststehen:
 > Karteikarten, Schemata und geführte Fälle für Zivilrecht, Strafrecht und
 > Öffentliches Recht.
 >
-> Drin sind 445 geprüfte Karten, 64 Schemata und 60 geführte Fälle — jede
+> Drin sind 629 geprüfte Karten, 85 Schemata und 81 geführte Fälle — jede
 > Karte mit Normen und Quellen. Als frühe Nutzerin/früher Nutzer bekommst du
 > den Gründerpreis von 3,99 €/Monat (39 €/Jahr) — dauerhaft, auch wenn er
 > später steigt.
@@ -413,7 +413,7 @@ Budget) und sind direkt einsetzbar, sobald konkrete Kanäle feststehen:
 > offline, ohne Note (Lernhilfe). Dazu Karteikarten, Schemata, geführte Fälle
 > für Zivilrecht, Strafrecht, Öffentliches Recht.
 >
-> 445 geprüfte Karten, 64 Schemata, 60 geführte Fälle — zum Gründerpreis von
+> 629 geprüfte Karten, 85 Schemata, 81 geführte Fälle — zum Gründerpreis von
 > 3,99 €/Monat, dauerhaft.
 >
 > Link in Bio → kostenlos starten.
@@ -432,7 +432,7 @@ Budget) und sind direkt einsetzbar, sobald konkrete Kanäle feststehen:
 > automatischer Wiederholung, Prüfungsschemata und geführte Übungsfälle mit
 > Erwartungshorizont.
 >
-> Zum Umfang: 445 geprüfte Karten, 64 Schemata und 60 geführte Fälle über
+> Zum Umfang: 629 geprüfte Karten, 85 Schemata und 81 geführte Fälle über
 > die drei Rechtsgebiete, jede Karte mit Normzitaten und Quellen; der Bestand
 > wird laufend erweitert. Wer jetzt einsteigt, bekommt den Gründerpreis
 > (3,99 €/Monat oder 39 €/Jahr), der dauerhaft bleibt, auch wenn der Preis

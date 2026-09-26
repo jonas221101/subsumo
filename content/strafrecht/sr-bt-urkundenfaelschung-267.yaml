@@ -195,10 +195,15 @@ faelle:
       - § 267 Abs. 1 StGB
       keywords:
       - '267'
+      card_slugs:
+      - sr-urkunde-begriff
+      - sr-urkunde-tathandlungen-herstellen-verfaelschen
     - id: p2
       label: Urkundenbegriff (drei Funktionen) sauber geprüft und bejaht
       weight: 2.5
       required: true
+      norms:
+      - § 267 Abs. 1 StGB
       keywords:
       - Perpetuierungsfunktion
       - Beweisfunktion
@@ -243,12 +248,22 @@ faelle:
       label: Vorsatz und Täuschungsabsicht (überschießende Innentendenz) bejaht
       weight: 1.0
       required: false
+      norms:
+      - § 15 StGB
+      - § 267 Abs. 1 StGB
       keywords:
       - Absicht
       - Täuschung
+      card_slugs:
+      - sr-at-vorsatz
     - id: p7
       label: 'Ergebnis: Urkundenfälschung, § 267 Abs. 1 StGB'
       weight: 1.0
       required: false
+      norms:
+      - § 267 Abs. 1 StGB
       keywords:
       - Ergebnis
+      card_slugs:
+      - sr-urkunde-tathandlungen-herstellen-verfaelschen
+      - sr-urkunde-gebrauchmachen

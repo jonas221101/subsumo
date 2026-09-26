@@ -1,0 +1,240 @@
+topic:
+  slug: zr-deliktsrecht-831-833
+  area: zivilrecht
+  title: "Deliktsrecht: Haftung für den Verrichtungsgehilfen und Tierhalterhaftung, §§ 831, 833 BGB"
+  parent: zr-deliktsrecht-823
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-fable-5-1
+    status: in-pruefung
+    normzitate_geprueft: true
+cards:
+- slug: zr-831-haftungsstruktur-norm
+  type: norm
+  front: "Welche Haftungsstruktur hat § 831 Abs. 1 BGB - Zurechnung fremden Verschuldens oder eigene Haftung?"
+  back: "§ 831 Abs. 1 S. 1 BGB begründet eine eigene deliktische Haftung des Geschäftsherrn für vermutetes eigenes Verschulden bei Auswahl, Anleitung und Überwachung des Gehilfen; es handelt sich nicht um eine Zurechnung fremden Verschuldens wie bei § 278 BGB. Voraussetzungen sind: (1) ein Verrichtungsgehilfe, (2) der in Ausführung der Verrichtung (3) einem Dritten widerrechtlich einen Schaden zufügt, indem er den objektiven Tatbestand einer unerlaubten Handlung verwirklicht. Verschulden des Gehilfen ist nach h.M. nicht erforderlich. Der Geschäftsherr kann sich nach § 831 Abs. 1 S. 2 BGB entlasten, indem er nachweist, dass er bei Auswahl, Beschaffung von Vorrichtungen und Gerätschaften sowie Leitung der Ausführung die im Verkehr erforderliche Sorgfalt beobachtet hat oder dass der Schaden auch bei Anwendung dieser Sorgfalt entstanden wäre (fehlende Kausalität). Nach § 831 Abs. 2 BGB trifft dieselbe Verantwortlichkeit denjenigen, der die Besorgung dieser Geschäfte für den Geschäftsherrn durch Vertrag übernimmt."
+  norms:
+  - § 831 Abs. 1 S. 1 BGB
+  - § 831 Abs. 1 S. 2 BGB
+  - § 831 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-831-verrichtungsgehilfe-begriff
+  type: definition
+  front: "Definiere: Verrichtungsgehilfe im Sinne des § 831 BGB"
+  back: "Verrichtungsgehilfe ist, wem mit Wissen und Wollen des Geschäftsherrn eine Tätigkeit übertragen wurde und wer dabei von dessen Weisungen abhängig ist. Entscheidend ist die Weisungsgebundenheit: Der Geschäftsherr muss die Tätigkeit jederzeit beschränken, untersagen oder nach Zeit und Umfang bestimmen können. Ein Arbeits- oder Dienstverhältnis ist nicht erforderlich, auch Gefälligkeitshelfer können Verrichtungsgehilfen sein. Keine Verrichtungsgehilfen sind selbständige Unternehmer, die eine Aufgabe in eigener Verantwortung erledigen (Bauunternehmer, Spediteur, Fachwerkstatt), sowie Organe juristischer Personen, für die § 31 BGB gilt. Bei Leiharbeit ist Geschäftsherr derjenige, der die konkrete Tätigkeit anweist, in der Regel der Entleiher. Die Abgrenzung entscheidet zugleich darüber, ob dem Geschäftsherrn der Entlastungsbeweis offensteht oder ob er nur wegen eigenen Organisations- oder Überwachungsverschuldens nach § 823 Abs. 1 BGB haftet."
+  norms:
+  - § 831 Abs. 1 S. 1 BGB
+  - § 31 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-831-in-ausfuehrung-der-verrichtung
+  type: definition
+  front: "Wann handelt der Gehilfe „in Ausführung der Verrichtung“ und nicht nur „bei Gelegenheit“?"
+  back: "Die schädigende Handlung muss in einem inneren sachlichen Zusammenhang mit der übertragenen Tätigkeit stehen; sie muss zum allgemeinen Umkreis des Aufgabenbereichs gehören, den der Geschäftsherr dem Gehilfen zugewiesen hat. Nicht ausreichend ist, dass die Verrichtung dem Gehilfen lediglich die Gelegenheit zur Schädigung verschafft hat. Ein Zusammenhang besteht daher bei der fehlerhaften Ausführung der Aufgabe selbst (der Fahrer verursacht einen Unfall, der Handwerker beschädigt Kundeneigentum), auch bei weisungswidriger Ausführung oder Überschreitung der Befugnisse, solange die Handlung noch dem Aufgabenkreis zuzuordnen ist. Er fehlt bei Handlungen, die mit der Aufgabe nur äußerlich verknüpft sind, etwa wenn der Handwerker in der Kundenwohnung stiehlt oder ein Streit zwischen dem Gehilfen und dem Geschädigten aus privaten Gründen eskaliert. Vorsätzliche Straftaten schließen den Zusammenhang nicht automatisch aus, wenn sie gerade in Wahrnehmung der übertragenen Tätigkeit begangen werden."
+  norms:
+  - § 831 Abs. 1 S. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-831-verschulden-gehilfe-streit
+  type: streitstand
+  front: "Muss der Verrichtungsgehilfe schuldhaft gehandelt haben, damit der Geschäftsherr nach § 831 BGB haftet?"
+  back: "Nach herrschender Meinung und Rechtsprechung genügt es, dass der Gehilfe den objektiven Tatbestand einer unerlaubten Handlung rechtswidrig verwirklicht hat; ein Verschulden des Gehilfen ist nicht erforderlich. Begründung: § 831 BGB knüpft an ein vermutetes Verschulden des Geschäftsherrn an, sodass gerade die Fälle erfasst werden sollen, in denen der Gehilfe wegen Jugend, Unerfahrenheit oder fehlender Einsicht nicht vorwerfbar handelt. Bei nur mittelbaren Verletzungen (Verkehrspflichtverletzungen) schränkt die Rechtsprechung dies ein: Hat sich der Gehilfe objektiv verkehrsgerecht verhalten, fehlt es bereits an der Rechtswidrigkeit, sodass der Geschäftsherr nicht haftet; die Sorgfaltsanforderungen wirken hier auf der Ebene des Tatbestands, ohne dass es auf die persönliche Vorwerfbarkeit ankäme. Eine Mindermeinung verlangt Verschulden des Gehilfen mit dem Argument, dass sonst der Geschäftsherr schärfer hafte als der Gehilfe selbst. Dem hält die h.M. entgegen, dass der Geschäftsherr über den Entlastungsbeweis geschützt ist und seine Haftung auf einem eigenen, vermuteten Sorgfaltsverstoß beruht."
+  norms:
+  - § 831 Abs. 1 S. 1 BGB
+  - § 831 Abs. 1 S. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-831-exkulpation-dezentralisiert
+  type: definition
+  front: "Wie führt der Geschäftsherr den Entlastungsbeweis nach § 831 Abs. 1 S. 2 BGB, und was besagt der dezentralisierte Entlastungsbeweis?"
+  back: "Der Geschäftsherr muss darlegen und beweisen, dass er den Gehilfen sorgfältig ausgewählt (Prüfung von Eignung, Zuverlässigkeit und Qualifikation bei Einstellung), mit geeigneten Mitteln ausgestattet und während der Tätigkeit angemessen angeleitet und überwacht hat; die Anforderungen steigen mit der Gefährlichkeit der Tätigkeit und sinken mit der Bewährungsdauer des Gehilfen. Alternativ kann er nachweisen, dass der Schaden auch bei Beachtung dieser Sorgfalt entstanden wäre. In Großbetrieben lässt die Rechtsprechung den dezentralisierten Entlastungsbeweis zu: Der Unternehmer muss nur die sorgfältige Auswahl und Überwachung der leitenden Zwischenpersonen nachweisen, nicht die des schädigenden Gehilfen selbst. Weil dies zu Haftungslücken führt, korrigiert die Rechtsprechung das Ergebnis über die Haftung für Organisationsverschulden aus § 823 Abs. 1 BGB: Der Unternehmer muss seinen Betrieb so organisieren, dass Gefahren für Dritte vermieden werden; das Fehlen einer solchen Organisation ist ein eigener, nicht exkulpierbarer Sorgfaltsverstoß."
+  norms:
+  - § 831 Abs. 1 S. 2 BGB
+  - § 823 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-831-abgrenzung-278
+  type: definition
+  front: "Worin unterscheiden sich § 831 BGB und § 278 BGB?"
+  back: "§ 278 BGB rechnet dem Schuldner innerhalb eines bestehenden Schuldverhältnisses das Verschulden seines Erfüllungsgehilfen wie eigenes zu; es handelt sich um eine Zurechnungsnorm ohne Entlastungsmöglichkeit, die kein eigenes Verschulden des Schuldners voraussetzt. § 831 BGB ist demgegenüber eine eigene deliktische Anspruchsgrundlage, die an vermutetes Auswahl- und Überwachungsverschulden anknüpft und dem Geschäftsherrn den Entlastungsbeweis eröffnet. Weitere Unterschiede: Erfüllungsgehilfe kann auch ein selbständiger Unternehmer sein, Verrichtungsgehilfe nur ein Weisungsabhängiger; § 278 BGB verlangt Verschulden des Gehilfen, § 831 BGB nach h.M. nicht; § 278 BGB setzt eine Sonderverbindung voraus, § 831 BGB nicht. Bestehen zwischen Geschädigtem und Geschäftsherrn vertragliche Beziehungen, sind Ansprüche aus § 280 Abs. 1 BGB iVm § 278 BGB und aus § 831 BGB nebeneinander zu prüfen (Anspruchskonkurrenz); der vertragliche Anspruch ist wegen der fehlenden Exkulpation häufig günstiger."
+  norms:
+  - § 831 Abs. 1 BGB
+  - § 278 BGB
+  - § 280 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-833-tierhalterhaftung-s-1
+  type: definition
+  front: "Welche Voraussetzungen hat die Tierhalterhaftung nach § 833 S. 1 BGB?"
+  back: "§ 833 S. 1 BGB begründet eine Gefährdungshaftung: Wird durch ein Tier ein Mensch getötet oder der Körper oder die Gesundheit eines Menschen verletzt oder eine Sache beschädigt, ist der Tierhalter zum Ersatz des Schadens verpflichtet - ohne Verschulden. Tierhalter ist, wer die Bestimmungsmacht über das Tier hat, aus eigenem Interesse für dessen Kosten aufkommt, den allgemeinen Wert und Nutzen des Tieres für sich in Anspruch nimmt und das Verlustrisiko trägt; auf Eigentum kommt es nicht an. Die Verletzung muss auf der spezifischen Tiergefahr beruhen, also auf einem der tierischen Natur entsprechenden unberechenbaren und selbständigen Verhalten des Tieres (Scheuen, Beißen, Ausschlagen, Durchgehen). Daran fehlt es, wenn das Tier vollständig unter menschlicher Leitung als bloßes Werkzeug handelt oder wenn sich lediglich eine allgemeine Gefahr verwirklicht, die nicht mit dem Tierverhalten zusammenhängt. Mitverschulden des Geschädigten ist nach § 254 BGB zu berücksichtigen; verwirklicht sich auch die Tiergefahr eines Tieres des Geschädigten, wird sie analog § 254 BGB angerechnet."
+  norms:
+  - § 833 S. 1 BGB
+  - § 254 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-833-nutztier-s-2
+  type: definition
+  front: "Was ist ein Nutztier im Sinne des § 833 S. 2 BGB, und wie verändert sich die Haftung?"
+  back: "Nach § 833 S. 2 BGB tritt die Ersatzpflicht nicht ein, wenn der Schaden durch ein Haustier verursacht wird, das dem Beruf, der Erwerbstätigkeit oder dem Unterhalt des Tierhalters zu dienen bestimmt ist, und der Tierhalter entweder bei der Beaufsichtigung des Tieres die im Verkehr erforderliche Sorgfalt beobachtet hat oder der Schaden auch bei Anwendung dieser Sorgfalt entstanden wäre. Für Nutztiere gilt also keine Gefährdungshaftung, sondern eine Verschuldenshaftung mit umgekehrter Beweislast. Haustiere sind domestizierte Tiere, die vom Menschen gehalten und gezüchtet werden (Pferd, Rind, Hund), nicht gezähmte Wildtiere. Die Zweckbestimmung ist objektiv nach der überwiegenden tatsächlichen Verwendung zu beurteilen: Ein Schulpferd im Reitbetrieb, ein Wachhund im Gewerbebetrieb oder Milchvieh sind Nutztiere; ein Reitpferd, das überwiegend der Freizeitgestaltung dient, ist ein Luxustier nach § 833 S. 1 BGB. Der Entlastungsbeweis bezieht sich auf die Beaufsichtigung des Tieres, wozu auch die Auswahl und Anleitung der mit dem Tier betrauten Personen gehört. Für den Tieraufseher gilt die parallele Regelung des § 834 BGB."
+  norms:
+  - § 833 S. 2 BGB
+  - § 834 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-831-geschaeftsherrenhaftung
+  title: "Haftung des Geschäftsherrn für den Verrichtungsgehilfen, § 831 Abs. 1 BGB"
+  norms:
+  - § 831 Abs. 1 S. 1 BGB
+  - § 831 Abs. 1 S. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: "I. Verrichtungsgehilfe des Anspruchsgegners"
+    children:
+    - label: "1. Übertragung einer Tätigkeit mit Wissen und Wollen des Geschäftsherrn"
+    - label: "2. Weisungsgebundenheit (keine selbständigen Unternehmer, keine Organe)"
+  - label: "II. Unerlaubte Handlung des Gehilfen"
+    children:
+    - label: "1. Objektiver Tatbestand einer unerlaubten Handlung (insbesondere § 823 Abs. 1 BGB)"
+    - label: "2. Rechtswidrigkeit (bei mittelbaren Verletzungen: kein verkehrsgerechtes Verhalten des Gehilfen)"
+    - label: "3. Verschulden des Gehilfen nach h.M. nicht erforderlich"
+  - label: "III. In Ausführung der Verrichtung (innerer Zusammenhang, nicht nur bei Gelegenheit)"
+  - label: "IV. Keine Exkulpation, § 831 Abs. 1 S. 2 BGB"
+    children:
+    - label: "1. Sorgfältige Auswahl, Ausstattung und Überwachung nachgewiesen"
+    - label: "2. Oder: fehlende Kausalität des Sorgfaltsverstoßes"
+    hinweis: "Dezentralisierter Entlastungsbeweis in Großbetrieben; dann Organisationsverschulden nach § 823 Abs. 1 BGB prüfen."
+  - label: "V. Schaden und haftungsausfüllende Kausalität; Mitverschulden § 254 BGB"
+  - label: "VI. Rechtsfolge: Schadensersatz nach §§ 249 ff. BGB; Gesamtschuld mit dem Gehilfen, § 840 Abs. 1 BGB"
+faelle:
+- slug: zr-fall-schulpferd-und-hund
+  title: "Das Schulpferd und der Hund"
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: "B betreibt einen Reitstall mit Reitschule. Zu seinen Angestellten gehört der Pferdepfleger C, den B vor zwei Jahren ohne jede Nachfrage nach Ausbildung oder Erfahrung eingestellt und seither weder angeleitet noch bei der Arbeit kontrolliert hat. Das Schulpferd P wird im Reitunterricht eingesetzt und finanziert sich durch die Unterrichtseinnahmen. Eines Nachmittags führt C das Pferd über den Hof, obwohl er weiß, dass dort gerade ein Lieferwagen rangiert; entgegen der üblichen Praxis hält er den Führstrick nur locker in einer Hand. A, die den Reitstall besucht, hat ihren unangeleinten Hund mitgebracht, obwohl am Eingang ein Schild auf die Leinenpflicht hinweist. Der Hund läuft bellend auf das Pferd zu. P scheut vor dem Hund und dem Motorenlärm, reißt sich los und tritt A gegen das Knie. A erleidet einen Bänderriss und hat Heilbehandlungskosten von 2.500 EUR sowie Schmerzen über mehrere Wochen."
+  question: "Welche Ansprüche hat A gegen B? Ansprüche gegen C sind nicht zu prüfen."
+  steps:
+  - prompt: "Prüfe einen Anspruch der A gegen B aus § 831 Abs. 1 S. 1 BGB."
+    erwartung: "C ist als angestellter, weisungsgebundener Pferdepfleger Verrichtungsgehilfe des B. Durch das unsorgfältige Führen des Pferdes hat C den objektiven Tatbestand des § 823 Abs. 1 BGB (Körperverletzung der A) rechtswidrig verwirklicht; auf sein Verschulden kommt es nach h.M. nicht an, es liegt aber ohnehin vor. Das Führen des Pferdes gehörte zu seinen Aufgaben, sodass er in Ausführung der Verrichtung handelte. Eine Exkulpation nach § 831 Abs. 1 S. 2 BGB scheidet aus, weil B den C weder sorgfältig ausgewählt noch angeleitet oder überwacht hat. B haftet."
+  - prompt: "Haftet B auch als Tierhalter nach § 833 BGB?"
+    erwartung: "B ist Tierhalter des P (Bestimmungsmacht, eigenes Interesse, Kostentragung). Die Verletzung beruht auf der spezifischen Tiergefahr, weil das Scheuen und Losreißen unberechenbares tierisches Verhalten ist. P ist als Schulpferd, das dem Erwerb des B dient, ein Nutztier im Sinne des § 833 S. 2 BGB, sodass keine Gefährdungshaftung nach § 833 S. 1 BGB eingreift. B kann sich aber nicht entlasten, weil zur Sorgfalt bei der Beaufsichtigung des Tieres auch die Auswahl und Anleitung der mit dem Tier betrauten Personen gehört und B insoweit versagt hat. B haftet auch aus § 833 S. 2 BGB."
+  - prompt: "Muss sich A ein Mitverschulden anrechnen lassen?"
+    erwartung: "A hat gegen die ausgeschilderte Leinenpflicht verstoßen; ihr unangeleinter Hund hat das Scheuen mitverursacht. Das ist ein Verschulden gegen sich selbst nach § 254 Abs. 1 BGB. Zusätzlich hat sich die Tiergefahr ihres eigenen Hundes verwirklicht, die ihr analog § 254 BGB als Halterin zuzurechnen ist. Im Rahmen der Abwägung ist eine deutliche Kürzung angemessen, etwa um ein Drittel; die Hauptverantwortung liegt wegen des unsorgfältigen Führens auf dem Hof trotz Lieferverkehrs bei B."
+  - prompt: "Welche Schadensposten kann A ersetzt verlangen?"
+    erwartung: "Die Heilbehandlungskosten von 2.500 EUR als Vermögensschaden nach § 249 Abs. 2 S. 1 BGB und wegen der Körperverletzung Schmerzensgeld nach § 253 Abs. 2 BGB, jeweils gekürzt um die Mitverschuldensquote."
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: "C als Verrichtungsgehilfe des B eingeordnet (Weisungsgebundenheit, Tätigkeit mit Wissen und Wollen des B)"
+      weight: 1.5
+      required: true
+      norms:
+      - § 831 Abs. 1 S. 1 BGB
+      keywords:
+      - Verrichtungsgehilfe
+      - weisungsgebunden
+      - "831"
+      card_slugs:
+      - zr-831-verrichtungsgehilfe-begriff
+    - id: p2
+      label: "Rechtswidrige tatbestandsmäßige unerlaubte Handlung des C (§ 823 Abs. 1 BGB) in Ausführung der Verrichtung bejaht; Verschulden des Gehilfen nach h.M. entbehrlich"
+      weight: 1.5
+      norms:
+      - § 831 Abs. 1 S. 1 BGB
+      - § 823 Abs. 1 BGB
+      keywords:
+      - in Ausführung
+      - Körperverletzung
+      - rechtswidrig
+      card_slugs:
+      - zr-831-in-ausfuehrung-der-verrichtung
+      - zr-831-verschulden-gehilfe-streit
+    - id: p3
+      label: "Exkulpation nach § 831 Abs. 1 S. 2 BGB geprüft und wegen fehlender Auswahl-, Anleitungs- und Überwachungssorgfalt verneint"
+      weight: 2.0
+      required: true
+      norms:
+      - § 831 Abs. 1 S. 2 BGB
+      keywords:
+      - Exkulpation
+      - Entlastung
+      - Auswahl
+      - Überwachung
+      card_slugs:
+      - zr-831-exkulpation-dezentralisiert
+      - zr-831-haftungsstruktur-norm
+    - id: p4
+      label: "Tierhalterhaftung: B als Halter, spezifische Tiergefahr (Scheuen, Losreißen) bejaht"
+      weight: 1.5
+      required: true
+      norms:
+      - § 833 S. 1 BGB
+      keywords:
+      - Tierhalter
+      - Tiergefahr
+      - "833"
+      card_slugs:
+      - zr-833-tierhalterhaftung-s-1
+    - id: p5
+      label: "P als Nutztier eingeordnet (§ 833 S. 2 BGB), daher Verschuldenshaftung mit Beweislastumkehr; Entlastung wegen mangelhafter Auswahl und Anleitung des C verneint"
+      weight: 2.0
+      required: true
+      norms:
+      - § 833 S. 2 BGB
+      keywords:
+      - Nutztier
+      - Schulpferd
+      - Erwerbstätigkeit
+      - Beaufsichtigung
+      card_slugs:
+      - zr-833-nutztier-s-2
+    - id: p6
+      label: "Mitverschulden der A nach § 254 Abs. 1 BGB (Leinenpflicht) und Anrechnung der eigenen Tiergefahr analog § 254 BGB mit Quotelung"
+      weight: 1.5
+      norms:
+      - § 254 Abs. 1 BGB
+      keywords:
+      - "254"
+      - Mitverschulden
+      - Leine
+      - Tiergefahr
+      card_slugs:
+      - zr-schaden-mitverschulden-254
+      - zr-833-tierhalterhaftung-s-1
+    - id: p7
+      label: "Rechtsfolge: Heilbehandlungskosten (§ 249 Abs. 2 S. 1 BGB) und Schmerzensgeld (§ 253 Abs. 2 BGB), gekürzt um die Mitverschuldensquote; Abgrenzung zu § 278 BGB nicht fälschlich herangezogen"
+      weight: 1.0
+      norms:
+      - § 249 Abs. 2 S. 1 BGB
+      - § 253 Abs. 2 BGB
+      keywords:
+      - Schmerzensgeld
+      - "253"
+      - "2.500"
+      - "2500"
+      card_slugs:
+      - zr-schaden-immaterieller-schaden-253
+      - zr-831-abgrenzung-278
