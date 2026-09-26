@@ -7,17 +7,28 @@ library;
 
 /// Grenzen, die der Host durchsetzt (docs/27 Abschnitt 1.1) - der generierte
 /// Code kann sie nicht veraendern, weil er sie nie zu Gesicht bekommt.
+///
+/// Die Defaultwerte sind keine eigene Festlegung, sondern eine Kopie der
+/// `const`-Werte aus dem Backend-Vertrag `backend/app/services/tool_spec.py`
+/// (`RESOURCE_LIMITS_TIMEOUT_MS`, `RESOURCE_LIMITS_MAX_OUTPUT_BYTES`, Schema
+/// `subsumo.werkbank.tool_spec.v2`). Aendert sich einer der beiden Werte dort,
+/// muss er hier manuell nachgezogen werden - es gibt keinen gemeinsamen
+/// Codegenerator zwischen Python und Dart.
 class SandboxResourceLimits {
   const SandboxResourceLimits({
     this.timeoutMs = 300,
     this.maxOutputBytes = 8192,
   });
 
-  /// Wall-Clock-Budget je Aufruf in Millisekunden (docs/27 Abschnitt 1.1).
+  /// Wall-Clock-Budget je Aufruf in Millisekunden
+  /// (`RESOURCE_LIMITS_TIMEOUT_MS` in `backend/app/services/tool_spec.py`,
+  /// docs/27 Abschnitt 1.1).
   final int timeoutMs;
 
   /// Maximale Groesse des JSON-serialisierten Rueckgabewerts in Bytes
-  /// (`resource_limits.max_output_bytes`, docs/27 Abschnitt 3.1).
+  /// (`RESOURCE_LIMITS_MAX_OUTPUT_BYTES` in
+  /// `backend/app/services/tool_spec.py`, `resource_limits.max_output_bytes`,
+  /// docs/27 Abschnitt 3.1).
   final int maxOutputBytes;
 }
 
