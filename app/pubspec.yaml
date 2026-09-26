@@ -25,12 +25,23 @@ dependencies:
   # Rendert die docs/legal/*.md-Rechtstexte auf den oeffentlichen Routen
   # (SUB-111) mit ihrer echten Markdown-Formatierung statt als Rohtext.
   flutter_markdown_plus: ^1.0.12
+  # Sandbox-Runtime fuer generierten Werkbank-Code (SUB-318, docs/27 Ticket
+  # 5): eingebetteter QuickJS-Interpreter fuer Mobile/Desktop, pro Aufruf neu
+  # instanziiert. Gewaehlt statt einer eigenen QuickJS-FFI-Bindung, weil das
+  # Paket QuickJS bereits fuer Android/Windows per FFI und JavaScriptCore fuer
+  # iOS bindet (siehe app/lib/sandbox/sandbox_runtime_io.dart) und
+  # jsSetMemoryLimit/timeout als native, im Interpreter selbst durchgesetzte
+  # Parameter mitbringt statt nur einer kooperativen Zeitmessung von aussen.
+  flutter_js: ^0.8.7
+  # dart:js_interop-Typen fuer die sandboxed Iframe/Web-Worker-Kommunikation
+  # (app/lib/sandbox/sandbox_runtime_web.dart) - bislang nur dev_dependency
+  # fuer Tests, jetzt auch fuer lib/ noetig.
+  web: ^1.1.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
-  web: ^1.1.1
   # Fuer Tests: erlaubt, UrlLauncherPlatform.instance im CheckoutPage-Test zu
   # ersetzen, statt echte Plattform-Channels zu brauchen (siehe test/checkout_page_test.dart).
   url_launcher_platform_interface: ^2.3.0
