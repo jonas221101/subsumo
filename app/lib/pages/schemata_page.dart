@@ -175,6 +175,7 @@ class _SchemaTile extends StatelessWidget {
       final step = steps[i];
       final hinweis = step['hinweis'] as String?;
       final children = (step['children'] as List?)?.cast<Map<String, dynamic>>();
+      final (numeral, label) = splitNumeral(step['label'] as String, depth: depth, index: i);
       widgets.add(
         Padding(
           padding: EdgeInsets.only(left: depth * Spacing.xl, top: depth == 0 && i > 0 ? Spacing.md : Spacing.xs),
@@ -184,7 +185,7 @@ class _SchemaTile extends StatelessWidget {
               SizedBox(
                 width: 40,
                 child: Text(
-                  outlineNumeral(depth, i),
+                  numeral,
                   style: (depth == 0 ? theme.textTheme.titleSmall : theme.textTheme.bodyMedium)
                       ?.copyWith(color: theme.colorScheme.onSurfaceVariant),
                 ),
@@ -194,7 +195,7 @@ class _SchemaTile extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      step['label'] as String,
+                      label,
                       style: depth == 0 ? theme.textTheme.titleSmall : theme.textTheme.bodyMedium,
                     ),
                     if (hinweis != null)
@@ -223,6 +224,21 @@ class _SchemaTile extends StatelessWidget {
         'oeffentliches-recht' => Icons.account_balance_outlined,
         _ => Icons.account_tree_outlined,
       };
+}
+
+/// Gliederungszeichen, das die Redaktion bereits in den Schritt-Text
+/// geschrieben hat ("I. Schutzbereich", "1. Persoenlich", "a) Stufe 1",
+/// "aa) ...", "(1) ..."). Wird erkannt und in die Nummern-Spalte gezogen,
+/// damit nichts doppelt steht und die Spalte trotzdem buendig bleibt.
+final _leadingNumeral = RegExp(r'^\s*((?:[IVXLC]+\.)|(?:\d+\.)|(?:[a-z]{1,2}\))|(?:\(\d+\)))\s+');
+
+/// Zerlegt einen Schritt-Text in (Gliederungszeichen, Rest). Traegt der Text
+/// schon ein Zeichen, gilt das der Redaktion; sonst wird eines nach
+/// [outlineNumeral] aus Ebene und Position erzeugt.
+(String, String) splitNumeral(String label, {required int depth, required int index}) {
+  final match = _leadingNumeral.firstMatch(label);
+  if (match != null) return (match.group(1)!, label.substring(match.end));
+  return (outlineNumeral(depth, index), label);
 }
 
 /// Gliederungszeichen nach juristischer Konvention je Ebene: I. / 1. / a) /

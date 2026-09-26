@@ -142,9 +142,19 @@ ThemeData buildTheme(Brightness brightness) {
     chipTheme: ChipThemeData(
       backgroundColor: scheme.surface,
       selectedColor: scheme.primaryContainer,
+      checkmarkColor: scheme.onPrimaryContainer,
       side: hairline,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(Radii.pill)),
-      labelStyle: textTheme.bodySmall,
+      // Farbe explizit und zustandsabhaengig: die Typoskala oben traegt
+      // bewusst keine Farbe, ein Chip ohne diese Angabe waere sonst
+      // weiss auf weiss.
+      labelStyle: textTheme.bodySmall?.copyWith(
+        color: WidgetStateColor.resolveWith(
+          (states) => states.contains(WidgetState.selected) ? scheme.onPrimaryContainer : scheme.onSurface,
+        ),
+      ),
+      secondaryLabelStyle: textTheme.bodySmall?.copyWith(color: scheme.onPrimaryContainer),
+      iconTheme: IconThemeData(color: scheme.onSurfaceVariant, size: 16),
     ),
     listTileTheme: const ListTileThemeData(contentPadding: EdgeInsets.zero),
     expansionTileTheme: const ExpansionTileThemeData(

@@ -134,6 +134,16 @@ void main() {
       expect(outlineNumeral(4, 0), '(1)');
     });
 
+    test('vorhandene Gliederungszeichen im Text werden uebernommen statt verdoppelt', () {
+      expect(splitNumeral('I. Schutzbereich', depth: 0, index: 0), ('I.', 'Schutzbereich'));
+      expect(splitNumeral('2. Sachlich: Beruf', depth: 1, index: 0), ('2.', 'Sachlich: Beruf'));
+      expect(splitNumeral('aa) Enge Auslegung', depth: 3, index: 0), ('aa)', 'Enge Auslegung'));
+      expect(splitNumeral('(2) Sonderfall', depth: 4, index: 0), ('(2)', 'Sonderfall'));
+      expect(splitNumeral('Anspruch entstanden', depth: 0, index: 1), ('II.', 'Anspruch entstanden'));
+      // Kein Zeichen: "Art. 12" oder "a.A." duerfen nicht als Gliederung gelten.
+      expect(splitNumeral('Art. 12 GG', depth: 1, index: 0), ('1.', 'Art. 12 GG'));
+    });
+
     testWidgets('Suche filtert nach Titel oder Norm', (tester) async {
       final client = MockClient((request) async => _json([
             {

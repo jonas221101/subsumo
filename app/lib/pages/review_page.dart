@@ -259,10 +259,12 @@ class _RateButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    // FittedBox: auf schmalen Geraeten (4 Buttons auf ~350px) skaliert das
+    // Label leicht herunter statt mitten im Wort umzubrechen.
     final child = Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text(label),
+        FittedBox(fit: BoxFit.scaleDown, child: Text(label, softWrap: false)),
         Text(
           shortcut,
           style: theme.textTheme.bodySmall?.copyWith(
@@ -273,7 +275,7 @@ class _RateButton extends StatelessWidget {
     );
     const style = ButtonStyle(
       minimumSize: WidgetStatePropertyAll(Size(0, 60)),
-      padding: WidgetStatePropertyAll(EdgeInsets.symmetric(horizontal: Spacing.sm)),
+      padding: WidgetStatePropertyAll(EdgeInsets.symmetric(horizontal: Spacing.xs)),
     );
     return Expanded(
       child: Padding(
