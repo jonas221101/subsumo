@@ -279,14 +279,18 @@ class _GutachtenPageState extends State<GutachtenPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      const SubsumoEyebrow('Sachverhalt'),
+                      const SizedBox(height: Spacing.sm),
                       Text(
                         _case!['facts'] as String? ?? '',
                         style: Theme.of(context).textTheme.bodyMedium,
                       ),
                       const SizedBox(height: Spacing.md),
+                      const SubsumoEyebrow('Fallfrage'),
+                      const SizedBox(height: Spacing.xs),
                       Text(
                         _case!['question'] as String? ?? '',
-                        style: Theme.of(context).textTheme.titleSmall,
+                        style: Theme.of(context).extension<SubsumoTypography>()!.headingSmall,
                       ),
                     ],
                   ),
