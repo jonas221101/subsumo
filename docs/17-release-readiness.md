@@ -62,25 +62,45 @@ geprüft, trägt weiterhin — keine Änderung. Ergänzend, was dort fehlt:
 (Apple IAP-Pflicht für digitale Abos, MSIX-Signierung, Datenschutz+Impressum
 je Store). Hier der operative Rest:
 
+**Einordnung nach der Nutzerentscheidung vom 25.09.2026** (SUB-39, Interaktion
+`b1739bd0`, 05:50 UTC: `earlyaccess`): Der Release am 29.09. startet als
+kostenloser Early Access ohne Bezahlstrecke
+(`docs/18-release-2-wochen.md` Abschnitt 5). Das macht Impressum- und
+Datenschutzangaben nicht hinfällig — die gelten auch für ein kostenloses,
+öffentlich erreichbares Angebot —, entschärft aber gezielt die Zeilen unten,
+die an einem **Bezahlvorgang** hängen (IAP-Pflicht, Zahlungsanbieter-Erwähnung
+in der Review). Diese werden **erst mit der Paywall fällig** (v1.1), nicht am
+Tag 1. Zusätzlich ist die App-Store-Zeile für den Start ohnehin
+gegenstandslos, weil iOS unabhängig von Early Access erst v1.1 kommt
+(`docs/18` Abschnitt 3.2).
+
 | Punkt | Verantwortlich | Aufwand | Phase | Status |
 |---|---|---|---|---|
 | Play Store: Entwicklerkonto, Gebühr (einmalig 25 $) | Betrieb | 0,5 PT | D | Offen |
-| App Store: Entwicklerkonto, Gebühr (99 $/Jahr, wiederkehrend) | Betrieb | 0,5 PT | D | Offen |
+| App Store: Entwicklerkonto, Gebühr (99 $/Jahr, wiederkehrend) | Betrieb | 0,5 PT | D | Offen — für den 29.09. ohnehin gegenstandslos, iOS ist v1.1 (`docs/18` Abschnitt 3.2), unabhängig von der Early-Access-Entscheidung |
 | Microsoft Store: Entwicklerkonto (einmalig ~19 $ Individual / ~99 $ Company) | Betrieb | 0,5 PT | D | Offen |
 | Altersfreigabe je Store (IARC-Fragebogen o. Ä.) | Betrieb | 0,5 PT | D | Offen — für ein Jura-Lernprodukt ohne Erwachseneninhalte unkritisch, Fragebogen aber Pflicht je Store |
-| Datenschutzangaben je Store (Apple „Privacy Nutrition Label", Play „Data Safety") | Betrieb | 1 PT | D | Offen, hängt direkt an der Provider-Liste aus Abschnitt 1 (AVV) — ohne finale Provider-Wahl keine verbindlichen Angaben möglich |
-| Review-Richtlinien-Check vor Einreichung (insb. Apple: In-App-Purchase-Pflicht, Zahlungsanbieter-Erwähnung) | Betrieb | 1 PT | D | Offen |
-| **Store-Regeln zu Bezahlinhalten vs. externer Abrechnung** | Produkt/Recht | 0,5 PT Analyse | C | Geklärt in `docs/06-recht-compliance.md` Abschnitt 4: Apple zwingt digitale Abos über IAP (30 %/15 % Provision je nach Umsatzschwelle), Web-Abschluss bleibt separat möglich, darf aber in der iOS-App nicht beworben werden. **Konsequenz fürs Geschäftsmodell:** Preis auf iOS muss die IAP-Provision einkalkulieren, oder iOS-Preis liegt höher als Web-Preis (wie z. B. bei vielen SaaS-Apps üblich) — das ist eine Preisentscheidung für T6/Abrechnung unten, nicht mehr offen als Rechtsfrage |
+| Datenschutzangaben je Store (Apple „Privacy Nutrition Label", Play „Data Safety") | Betrieb | 1 PT | D | Offen, hängt direkt an der Provider-Liste aus Abschnitt 1 (AVV) — ohne finale Provider-Wahl keine verbindlichen Angaben möglich. **Tag 1 (Play, Early Access):** ohne Zahlungsdaten zu deklarieren, aber die AVV-abhängigen Angaben (LLM-Provider) bleiben unabhängig vom Bezahlstatus offen |
+| Review-Richtlinien-Check vor Einreichung (insb. Apple: In-App-Purchase-Pflicht, Zahlungsanbieter-Erwähnung) | Betrieb | 1 PT | D | Offen. Bezieht sich auf Apple/IAP — **mit Paywall und iOS fällig** (beides nicht Tag 1), für den Play-Start am 29.09. nicht release-kritisch |
+| **Store-Regeln zu Bezahlinhalten vs. externer Abrechnung** | Produkt/Recht | 0,5 PT Analyse | C | Geklärt in `docs/06-recht-compliance.md` Abschnitt 4: Apple zwingt digitale Abos über IAP (30 %/15 % Provision je nach Umsatzschwelle), Web-Abschluss bleibt separat möglich, darf aber in der iOS-App nicht beworben werden. **Konsequenz fürs Geschäftsmodell:** Preis auf iOS muss die IAP-Provision einkalkulieren, oder iOS-Preis liegt höher als Web-Preis (wie z. B. bei vielen SaaS-Apps üblich) — das ist eine Preisentscheidung für T6/Abrechnung unten, nicht mehr offen als Rechtsfrage. **Mit Paywall/iOS fällig** (v1.1), am Tag 1 ohne Bezahlinhalt und ohne iOS gegenstandslos |
 
 ## 4. Abrechnung
 
+**Tag 1 ist Early Access ohne Bezahlstrecke** (Nutzerentscheidung 25.09.2026,
+SUB-39 Interaktion `b1739bd0`, 05:50 UTC: `earlyaccess`). Die Kaufstrecke
+selbst ist bereits gebaut und getestet (SUB-83, `backend/app/api/v1/billing.py`,
+14 Tests) — nur ihre Aktivierung ist auf v1.1 verschoben
+(`docs/18-release-2-wochen.md` Abschnitt 5, Nachtrag 25.09.). Die Punkte
+unten bleiben notwendig, werden aber **erst mit der Paywall fällig**, nicht
+am 29.09.:
+
 | Punkt | Verantwortlich | Aufwand | Phase | Status |
 |---|---|---|---|---|
-| Zahlungsanbieter-Wahl (Web) | Produkt/Betrieb | 0,5 PT Entscheidung | C | Offen. **Frage:** Stripe (verbreitet, keine deutsche Entität nötig, aber USD-Abrechnungsbeziehung) oder ein EU-Anbieter (z. B. Mollie)? Beeinflusst AVV-Liste und Datenschutzerklärung |
-| Abo-Verwaltung (Pausieren, Wechsel, Rechnungen) | Backend-Dev + Frontend-Dev | 3–5 PT | D | Offen, an Provider-Wahl gekoppelt — die meisten Anbieter liefern Checkout+Portal fertig, Aufwand ist primär Integration, nicht Eigenbau |
-| Studierendennachweis (falls Studierendenpreis) | Produkt | 1–2 PT | C/D | Offen. **Frage:** Wird ein Studierendenpreis überhaupt eingeführt (aus T6/Marktanalyse noch nicht final entschieden, siehe `docs/14-marktanalyse.md`)? Falls ja: Verifizierung über Uni-E-Mail-Domain (günstig, aber umgehbar) oder Drittanbieter wie SheerID (verlässlicher, kostet pro Verifizierung) — als offene Entscheidung markiert, keine Empfehlung ohne T6-Preisentscheidung |
-| Umsatzsteuer (digitale Dienstleistung an Privatpersonen, EU-OSS) | Steuerberater | 1–2 PT extern | D | Offen. **Frage:** Meldung über das One-Stop-Shop-Verfahren (EU-OSS) für digitale Leistungen an Verbraucher in anderen EU-Ländern — ab Launch relevant, sobald auch außerhalb Deutschlands verkauft wird. Reine Steuerfrage, hier nicht beantwortbar |
-| Kündigung und Widerruf (Prozess, nicht nur Text) | Backend-Dev + Support | 1–2 PT | D | Offen — Selbstkündigung im Produkt (kein „Bitte E-Mail schreiben") ist Standard-Erwartung und vermutlich auch regulatorisch erwartet (Kündigungsbutton-Pflicht nach deutschem Recht für Verbraucherverträge seit 2022) |
+| Zahlungsanbieter-Wahl (Web) | Produkt/Betrieb | 0,5 PT Entscheidung | C | Offen. **Frage:** Stripe (verbreitet, keine deutsche Entität nötig, aber USD-Abrechnungsbeziehung) oder ein EU-Anbieter (z. B. Mollie)? Beeinflusst AVV-Liste und Datenschutzerklärung. **Mit Paywall fällig** — für den Early-Access-Start am 29.09. nicht release-kritisch, aber SUB-83 hat bereits Stripe implementiert, die Frage betrifft nur die endgültige Entscheidung vor Aktivierung |
+| Abo-Verwaltung (Pausieren, Wechsel, Rechnungen) | Backend-Dev + Frontend-Dev | 3–5 PT | D | Offen, an Provider-Wahl gekoppelt — die meisten Anbieter liefern Checkout+Portal fertig, Aufwand ist primär Integration, nicht Eigenbau. **Mit Paywall fällig**, nicht Tag 1 |
+| Studierendennachweis (falls Studierendenpreis) | Produkt | 1–2 PT | C/D | Offen. **Frage:** Wird ein Studierendenpreis überhaupt eingeführt (aus T6/Marktanalyse noch nicht final entschieden, siehe `docs/14-marktanalyse.md`)? Falls ja: Verifizierung über Uni-E-Mail-Domain (günstig, aber umgehbar) oder Drittanbieter wie SheerID (verlässlicher, kostet pro Verifizierung) — als offene Entscheidung markiert, keine Empfehlung ohne T6-Preisentscheidung. **Mit Paywall fällig**, nicht Tag 1 |
+| Umsatzsteuer (digitale Dienstleistung an Privatpersonen, EU-OSS) | Steuerberater | 1–2 PT extern | D | **Am Tag 1 gegenstandslos** — Early Access ohne Entgelt löst keine Umsatzsteuerpflicht aus (Nutzerentscheidung 25.09.2026, `b1739bd0`). **Frage bleibt, wird aber erst mit Paywall-Aktivierung real:** Meldung über das One-Stop-Shop-Verfahren (EU-OSS) für digitale Leistungen an Verbraucher in anderen EU-Ländern, sobald auch außerhalb Deutschlands verkauft wird. Reine Steuerfrage, hier nicht beantwortbar |
+| Kündigung und Widerruf (Prozess, nicht nur Text) | Backend-Dev + Support | 1–2 PT | D | Offen — Selbstkündigung im Produkt (kein „Bitte E-Mail schreiben") ist Standard-Erwartung und vermutlich auch regulatorisch erwartet (Kündigungsbutton-Pflicht nach deutschem Recht für Verbraucherverträge seit 2022). **Mit Paywall fällig** — ohne laufendes Abo am Tag 1 gibt es nichts zu kündigen |
 
 ## 5. Betrieb
 
@@ -198,6 +218,28 @@ Bezahlvorgang" plus vier Plattformen live. Der aktuell blockierende Kern:
    25.09.2026 als bewusst getragenes Risiko entschieden worden (Abschnitt 1,
    `docs/31-projektreview-sub254.md` Abschnitt 9) — sie blockieren Gate C
    nicht mehr, warten aber auch auf keine externe Beratung mehr.
+4. **Tag 1 ist Early Access, nicht Paywall** (Nutzerentscheidung 25.09.2026,
+   SUB-39 Interaktion `b1739bd0`, 05:50 UTC: `earlyaccess`). Zwei Punkte
+   werden dadurch für den 29.09. **gegenstandslos, nicht erledigt**:
+   - **Umsatzsteuer/EU-OSS** (Abschnitt 4): Ohne Entgelt am Tag 1 fällt keine
+     Umsatzsteuer an — real wird die Frage erst **mit der
+     Paywall-Aktivierung** (v1.1), nicht vor Gate C/D.
+   - Der **Bezahlvorgang selbst** bleibt für Gate D „end-to-end getestet"
+     (SUB-83, `backend/app/api/v1/billing.py`), muss aber am 29.09. **nicht
+     scharfgeschaltet** sein — siehe `docs/18-release-2-wochen.md`
+     Abschnitt 5 (Nachtrag 25.09.).
+
+   **Bewusst offen gelassen statt übernommen:** Ob auch die
+   Widerrufsbelehrung (Abschnitt 1) am Tag 1 entfällt, hängt daran, ob ein
+   kostenloser Vertrag gegen Registrierungs- und Nutzungsdaten unter
+   § 312 Abs. 1a BGB („digitale Leistung gegen personenbezogene Daten statt
+   Geld") bereits als entgeltlicher Verbrauchervertrag mit Widerrufsrecht
+   gilt. Das ist keine Einschätzung, die ohne externe Rechtsberatung getroffen
+   werden sollte — Abschnitt 1 bleibt deshalb unverändert auf „Offen, externe
+   Prüfung nötig" stehen, nicht auf „gegenstandslos". Dieselbe Vorsicht gilt
+   für die Preistabelle in `docs/legal/02-agb.md` Abschnitt 4, die einen
+   Preis nennt, der am Tag 1 nicht verlangt wird — diese Anpassung ist nicht
+   Teil dieser Prüfung und als Folgeaufgabe an Marketing-Planner ausgelagert.
 
 **Nicht blockierend, aber bewusst in Kauf genommen:** Die menschliche
 Content-Stichprobe ist per Nutzerentscheidung vom 25.09.2026 ausgesetzt
