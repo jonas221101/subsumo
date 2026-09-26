@@ -18,9 +18,9 @@ Angebot ohne Impressum, AGB und Datenschutzerklärung abmahnfähig ist.
 | Dokument | Inhalt | Status |
 |---|---|---|
 | [01-impressum.md](01-impressum.md) | Anbieterkennzeichnung nach § 5 DDG | Struktur steht, Rechtsträger-Angaben als Platzhalter |
-| [02-agb.md](02-agb.md) | Nutzungsvertrag, Tarife, Kündigung, Haftung, Struktur-Check-Abgrenzung | Entwurf vollständig |
+| [02-agb.md](02-agb.md) | Nutzungsvertrag, Tarife, Kündigung, Haftung, Struktur-Check-Abgrenzung | Entwurf vollständig, Pro-Preis als „ab Paywall-Aktivierung" gekennzeichnet (Tag 1 = Early Access) |
 | [03-datenschutzerklaerung.md](03-datenschutzerklaerung.md) | DSGVO-Informationspflichten, Art. 13/14 | Entwurf vollständig, Empfänger teils Platzhalter |
-| [04-widerrufsbelehrung.md](04-widerrufsbelehrung.md) | Fernabsatz-Widerrufsrecht, vorzeitiges Erlöschen bei digitalen Produkten | Entwurf vollständig, eine Produktentscheidung offen |
+| [04-widerrufsbelehrung.md](04-widerrufsbelehrung.md) | Fernabsatz-Widerrufsrecht, vorzeitiges Erlöschen bei digitalen Produkten | Entwurf vollständig, eine Produktentscheidung offen, eine Rechtsfrage zu Tag 1 offen |
 | [05-cookie-hinweis.md](05-cookie-hinweis.md) | Technisch notwendige Speicherung, kein Tracking in v1.0 | Entwurf vollständig |
 
 Jedes Dokument trägt am Ende eine **Quellen-/Begründungszeile**, die belegt,
@@ -122,6 +122,16 @@ Dringlichkeit sortiert (blockiert G4 zuerst).
    `docs/17-release-readiness.md` Abschnitt 4 (offene Steuerfrage). Die AGB
    (`02-agb.md` Abschnitt 4) markieren die Preisangabe deshalb mit einem
    Platzhalter für den USt-Zusatz.
+10. **Widerrufsrecht schon am kostenlosen Tag 1? — offene Rechtsfrage, nicht
+    von Punkt 2 erfasst** (`04-widerrufsbelehrung.md` Abschnitt „Offene
+    Rechtsfrage"). Ob ein kostenloser Vertrag gegen Registrierungs-/
+    Nutzungsdaten während des Early-Access-Starts bereits ein entgeltlicher
+    Verbrauchervertrag mit Widerrufsrecht ist (§ 312 Abs. 1a BGB), ist auf
+    SUB-254 bewusst nicht mitentschieden worden — die dortige
+    „Kein Anwalt"-Entscheidung deckt nur den Widerrufsverzicht beim bezahlten
+    Checkout ab (Punkt 2), nicht diese neue, durch die Early-Access-
+    Entscheidung vom 25.09.2026 aufgeworfene Frage. Bleibt bis zur Klärung als
+    offenes Risiko dokumentiert (SUB-333).
 
 ## Nicht Teil dieses Auftrags
 
