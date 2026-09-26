@@ -28,6 +28,9 @@ und die Kommandos selbst aendern sich dadurch nicht.
   **nicht** der Dev-Default), `SUBSUMO_DATABASE_URL` (PostgreSQL in
   Produktion), `SUBSUMO_ENVIRONMENT=production`, `SUBSUMO_LOG_JSON=true`,
   `SUBSUMO_BACKUP_PASSPHRASE` (siehe Abschnitt 6).
+- Optional, nur falls die LLM-Korrektur aktiviert wird: `SUBSUMO_LLM_PROVIDER`,
+  `SUBSUMO_LLM_API_KEY` (siehe Abschnitt 9) — ohne diese beiden Variablen laeuft
+  ausschliesslich der heuristische Evaluator, kein Fehlerzustand.
 - `SUBSUMO_PAYWALL_ENABLED` bewusst gesetzt: `true`, wenn die volle Kette
   Kauf→Freischaltung→Kuendigung auf Produktion laeuft, sonst `false` als
   Notausgang (`docs/20-release-g2-bezahlstrecke.md` Abschnitt 5). Der
@@ -387,7 +390,85 @@ offenen Hosting-/Kostenentscheidung in `docs/17-release-readiness.md`
 Abschnitt 5 — die obige Liste ist bewusst anbieterunabhaengig formuliert und
 gilt unveraendert, sobald diese Entscheidung getroffen ist.
 
-## 9. Abgleich mit docs/17-release-readiness.md
+## 9. KI-Korrektur: Provider-Key setzen und abschalten (SUB-312/SUB-135)
+
+Betrifft ausschliesslich die optionale LLM-Korrektur (`backend/app/services/evaluator.py`,
+`backend/app/core/llm.py`). Ohne Key laeuft ausnahmslos der heuristische
+Evaluator — dieser Abschnitt beschreibt, wie der Provider aktiviert und im
+Betrieb wieder deaktiviert wird.
+
+### 9.1 Key setzen
+
+- **Kein Key im Repo, keine Klartext-Uebergabe per CLI-Flag oder Prozessumgebung
+  der Shell.** Der Key gehoert in dieselbe `EnvironmentFile` (`/opt/subsumo/backend/.env`),
+  die bereits `SUBSUMO_JWT_SECRET`/`SUBSUMO_BACKUP_PASSPHRASE` haelt (Abschnitt 1
+  und Abschnitt 6) — Datei nur fuer den `subsumo`-User lesbar
+  (`chmod 600 /opt/subsumo/backend/.env`).
+- Zwei Variablen (`backend/app/config.py`, `Settings.llm_provider`/`llm_api_key`):
+  ```
+  SUBSUMO_LLM_PROVIDER=anthropic
+  SUBSUMO_LLM_API_KEY=sk-ant-...
+  ```
+  `SUBSUMO_LLM_PROVIDER` bleibt ohne Key auf dem Default `none` — beide
+  Variablen muessen gesetzt sein, `llm_configured()` prueft ausdruecklich
+  beides (`settings.llm_provider == "anthropic" and bool(settings.llm_api_key)`).
+- Nach dem Eintragen: `sudo systemctl restart subsumo-backend` (siehe unten,
+  Abschnitt 9.3 — kein Hot-Reload).
+- Vor der ersten produktiven Nutzung den echten Provider-Pfad einmal gegen
+  einen echten Anthropic-Aufruf pruefen, nicht nur gegen die Heuristik-Fallback-Tests:
+  ```bash
+  cd /opt/subsumo/backend
+  SUBSUMO_LLM_PROVIDER=anthropic SUBSUMO_LLM_API_KEY=sk-ant-... \
+    .venv/bin/python scripts/llm_smoke_cli.py
+  ```
+  Erwartete Ausgabe: `Ueber LLM-Pfad verarbeitet (kein Fallback auf Heuristik): True`
+  und `Antwortform parsebar mit erwarteten Feldern (checkpoints/summary): True`
+  (siehe `backend/scripts/llm_smoke_cli.py`, SUB-311 — miss dabei auch die
+  tatsaechlichen Kosten je Aufruf gegen die Kostenbremse aus
+  `docs/19-kosten-preis-budget.md` Abschnitt 5/SUB-310).
+- `GET /v1/public/config` liefert danach `"ai_correction_enabled": true`
+  (`backend/app/api/v1/public.py`, `llm_configured()`) — Feature-Flag fuer den
+  Client, spiegelt aber nur den Stand zum Zeitpunkt des letzten Backend-Starts
+  (siehe 9.3).
+
+### 9.2 Feature im Betrieb abschalten
+
+Eine Zeile, kein Deploy noetig:
+
+```bash
+sed -i 's/^SUBSUMO_LLM_PROVIDER=.*/SUBSUMO_LLM_PROVIDER=none/' /opt/subsumo/backend/.env
+sudo systemctl restart subsumo-backend
+```
+
+Alternativ genuegt es, nur `SUBSUMO_LLM_API_KEY` zu leeren/entfernen —
+`llm_configured()`/`AnthropicClient.available` pruefen beide Werte, ein
+fehlender Key allein deaktiviert die LLM-Korrektur ebenso zuverlaessig. Auf
+`SUBSUMO_LLM_PROVIDER=none` setzen ist trotzdem die klarere Variante fuer ein
+Runbook: unmissverstaendlich am Wert erkennbar, kein Ratespiel bei einem
+spaeteren Blick in die `.env`.
+
+### 9.3 Kein Hot-Reload — Neustart ist zwingend
+
+`get_settings()` liest die Umgebungsvariablen einmalig und cached das
+Ergebnis pro Prozess (`backend/app/config.py`, `@lru_cache`). Ein Aendern der
+`.env`-Datei allein hat **keine** Wirkung auf einen bereits laufenden
+Prozess — weder beim Aktivieren noch beim Abschalten ist das Ergebnis
+sichtbar, bevor `sudo systemctl restart subsumo-backend` gelaufen ist. Das
+gilt fuer beide Richtungen in Abschnitt 9.1/9.2 gleichermassen.
+
+### 9.4 Laufende Abgaben beim Abschalten
+
+Kein Sonderfall, keine Nutzerfehler: `LLMEvaluator.evaluate()` faengt jeden
+Fehler beim Provider-Aufruf ab (kein Key, Timeout, unparsbare Antwort,
+Netzwerkfehler) und faellt lautlos auf den heuristischen Evaluator zurueck
+(`backend/app/services/evaluator.py:290-300`, `except Exception: return base`).
+Eine zum Restart-Zeitpunkt bereits laufende oder unmittelbar danach
+eintreffende Korrektur-Anfrage bekommt in jedem Fall ein Ergebnis — im
+schlechtesten Fall mit der Heuristik statt der LLM-Bewertung, nie einen
+Fehler oder eine leere Antwort. Es gibt daher nichts, was vor dem Abschalten
+zusaetzlich abgewartet oder abgesichert werden muesste.
+
+## 10. Abgleich mit docs/17-release-readiness.md
 
 **Abschnitt 2 (Sicherheit):**
 - PBKDF2/Secrets-Handhabung: unveraendert durch diese Aufgabe, wie im

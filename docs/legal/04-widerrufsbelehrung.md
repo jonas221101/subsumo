@@ -1,7 +1,9 @@
 # Widerrufsbelehrung (Entwurf)
 
 > Entwurf zur Prüfung, keine Rechtsberatung. Enthält eine noch offene
-> **Produktentscheidung** — siehe Abschnitt „Offene Entscheidung" am Ende.
+> **Produktentscheidung** — siehe Abschnitt „Offene Entscheidung" — sowie eine
+> ungeklärte **Rechtsfrage zum kostenlosen Tag-1-Start** — siehe Abschnitt
+> „Offene Rechtsfrage" weiter unten.
 
 ## Widerrufsrecht
 
@@ -93,12 +95,55 @@ unabhängig vom Text hier.
 
 ---
 
+## Offene Rechtsfrage — gilt diese Belehrung schon am Tag 1 (kostenloser Early Access)?
+
+Der Start ist ein kostenloser Early Access ohne Bezahlstrecke
+(Nutzerentscheidung 25.09.2026, SUB-39 Interaktion `b1739bd0`;
+`docs/18-release-2-wochen.md` Abschnitt 5). Der Abschnitt oben zum
+vorzeitigen Erlöschen setzt einen **entgeltlichen** Vertrag voraus und
+adressiert diese Konstellation deshalb nicht:
+
+Ist eine kostenlose Registrierung, bei der Nutzer:innen im Gegenzug
+Registrierungs- und Nutzungsdaten bereitstellen, bereits ein entgeltlicher
+Verbrauchervertrag im Sinne von § 312 Abs. 1a BGB („digitale Leistung gegen
+personenbezogene Daten statt Geld")? Falls ja, könnte ein gesetzliches
+Widerrufsrecht bereits für den kostenlosen Early-Access-Vertrag am Tag 1
+entstehen — nicht erst mit der Paywall.
+
+**Diese Frage ist bewusst nicht durch diesen Entwurf beantwortet.** Der
+Auftraggeber hat auf SUB-254 entschieden, offene Rechtsfragen zu diesem
+Text nicht ohne anwaltliche Prüfung selbst zu entscheiden (`kein_anwalt`,
+Interaktion `65179b93`, 25.09.2026, `docs/31-projektreview-sub254.md`
+Abschnitt 9.2). Jene Entscheidung deckt ausdrücklich nur den
+Widerrufsverzicht beim bezahlten Checkout ab (Abschnitt oben) — die hier
+neu aufgeworfene Frage zum kostenlosen Tag 1 ist eine eigenständige, noch
+nicht von dieser Entscheidung erfasste Rechtsfrage und bleibt deshalb als
+**offenes Risiko** stehen, nicht als „gegenstandslos" — konsistent mit
+`docs/17-release-readiness.md` Abschnitt „Zusammenfassung" (Nachtrag 4),
+die dieselbe Vorsicht für dieselbe Frage vorschreibt.
+
+**Praktische Konsequenz bis zur Klärung:** Solange ungeklärt, ist es das
+geringere Risiko, den Zugang zu dieser Widerrufsbelehrung (oder einem
+gleichwertigen Hinweis samt Muster-Widerrufsformular) auch beim
+kostenlosen Early-Access-Onboarding bereitzustellen, statt sich darauf zu
+verlassen, dass ein kostenloser Vertrag per se kein Widerrufsrecht
+auslöst. Das ist eine Vorsichtsmaßnahme, keine Beantwortung der
+Rechtsfrage selbst.
+
+---
+
 **Quellen/Begründung:** Struktur nach dem gesetzlichen Muster für die
 Widerrufsbelehrung (Anlage 1 zu Art. 246a § 1 Abs. 2 und 3 EGBGB) sowie
 § 356 Abs. 5, §§ 327 ff. BGB (Verträge über digitale Produkte, Regelung zum
-vorzeitigen Erlöschen bei digitalen Inhalten/Dienstleistungen); offene
-Entscheidung wörtlich aus `docs/17-release-readiness.md` Abschnitt 1
-übernommen, dort als „Frage" markiert und nicht beantwortet.
-**Menschliche Rechtsprüfung nötig:** Formulierung der Zustimmungs-Checkbox
-anwaltlich absichern, Entscheidung mit dem Checkout-Flow aus SUB-83
-abstimmen, bevor dieser Text produktiv geht.
+vorzeitigen Erlöschen bei digitalen Inhalten/Dienstleistungen); die
+Rechtsfrage aus `docs/17-release-readiness.md` Abschnitt 1 ist am
+25.09.2026 als bewusst getragenes Risiko entschieden worden
+(`docs/31-projektreview-sub254.md` Abschnitt 9.2) — dieser Text geht ohne
+anwaltliche Prüfung der Zustimmungs-Formulierung live. **Weiterhin nötig:**
+Formulierung der Zustimmungs-Checkbox mit dem Checkout-Flow aus SUB-83
+abstimmen (Produktentscheidung, siehe oben), bevor dieser Text produktiv
+geht — das ist unverändert offen. Abschnitt „Offene Rechtsfrage" ergänzt als
+Folgeaufgabe aus dem Review von PR #97 (SUB-332, siehe
+`docs/17-release-readiness.md` Abschnitt „Zusammenfassung" Nachtrag 4;
+SUB-333) — dokumentiert das Restrisiko zu § 312 Abs. 1a BGB, ohne es zu
+entscheiden.

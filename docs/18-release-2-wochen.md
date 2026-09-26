@@ -116,6 +116,20 @@ Unterschrift und Freeze müssen der Key in die Secret-Verwaltung, ein
 Smoke-Test gegen den echten Anbieter laufen und die gemessenen Kosten in die
 Kalkulation zurückfließen.
 
+**Nachtrag 25.09.2026 — erwartete Auflösung, keine Vorwegnahme.** Auf SUB-39
+(Interaktion `b1739bd0`, beantwortet 25.09.2026 05:50 UTC) hat der Nutzer die
+Rechtsträger-Frage aus Abschnitt 8 mit „weiß ich noch nicht" (`unklar`)
+beantwortet. Die Commercial Terms of Service — und damit der AVV — werden
+aber von einer Rechtsperson akzeptiert, nicht anonym
+(`docs/23-llm-provider-avv.md` Abschnitt 8.3, Schritt 1). Solange q1 offen
+bleibt, ist der Stichtagsentscheid am 27.09. 18:00 mit hoher
+Wahrscheinlichkeit ein Rückfall auf v1.1 — nicht weil eine der drei
+Und-Bedingungen aus Abschnitt 2.1 oben ausgeschlossen wäre, sondern weil eine
+Vorbedingung dafür (Kontoinhaber) fehlt. Das ist eine Erwartung, keine
+Entscheidung: Der Stichtagsentscheid selbst bleibt bei
+[SUB-135](/SUB/issues/SUB-135), einschließlich der Möglichkeit, dass q1 bis
+dahin doch noch beantwortet wird.
+
 **Was daraus folgt, und warum es sofort startet.** Die Aktivierung selbst ist
 eine Konfigurationszeile (`evaluator.py:341-344` wählt den `LLMEvaluator` nur
 bei gesetztem Provider *und* Key). Alles andere ist providerunabhängig und
@@ -158,7 +172,7 @@ belegen statt zu schätzen.
 | Konto | Registrierung, Login, Passwort-Reset, DSGVO-Export und -Löschung | vollständig implementiert (SUB-84, `/v1/account/export` + `/v1/account/delete`) |
 | Bezahlung | Web-Checkout (Stripe), Free-Tier mit Limit, Pro-Freischaltung | **nicht vorhanden — größter Einzelposten** |
 | Plattform | `app.subsumo.de` (Web) + Android als internes/offenes Testing | Web-Build in CI, APK-Artefakt aus SUB-60 |
-| Recht | Impressum, AGB, Datenschutzerklärung, Widerrufsbelehrung, Cookie-Hinweis | Entwürfe stehen (`docs/legal/`), anwaltliche Freigabe + Rechtsträger-Angaben offen |
+| Recht | Impressum, AGB, Datenschutzerklärung, Widerrufsbelehrung, Cookie-Hinweis | Entwürfe stehen (`docs/legal/`), Rechtsträger-Angaben offen. AGB-Haftungsklausel und Widerrufsverzicht laufen bewusst ohne anwaltliche Freigabe (Entscheidung 25.09.2026, `docs/17-release-readiness.md` Abschnitt 1) |
 | Betrieb | Monitoring, Fehler-Tracking, tägliches DB-Backup, Support-Postfach | offen |
 
 ### 3.2 Raus (mit Rückkehrdatum)
@@ -301,6 +315,26 @@ Release verschiebt — und genau das soll sie nicht können. Sie ist eine
 live; steht er nicht, fällt sie lautlos auf v1.1 und niemand am Releasetag
 merkt einen Unterschied. Diese Asymmetrie ist der ganze Zweck der Konstruktion.
 
+**Nachtrag 25.09.2026 — G1 beantwortet: Early Access gewählt, nicht
+erlitten.** Auf SUB-39 (Interaktion `b1739bd0`, beantwortet 25.09.2026 05:50
+UTC) hat der Nutzer die Frage „Bezahlt oder kostenlos am Tag 1?" (Abschnitt 8)
+mit **`earlyaccess`** beantwortet — „Kostenloser Early Access mit
+angekündigtem Preis". Das ist genau der Pfad, den die G1-Zeile oben als
+Ausfallregel vorsieht. Der Unterschied: Der Nutzer hat ihn **gewählt**, nicht
+weil G1 fristgerecht (18.09.) gescheitert wäre.
+
+Konsequenz für **G2**: Die Kaufstrecke (SUB-83, inzwischen `done`) bleibt
+gebaut und getestet (`backend/app/api/v1/billing.py`, 14 Tests) — sie ist nur
+**keine Aktivierungsbedingung für den 29.09. mehr**. Die Paywall schaltet am
+Tag 1 unabhängig vom technischen Status von G2 nicht scharf; ihre Aktivierung
+verschiebt sich auf **v1.1**. G2 wird dafür nicht rückwirkend als „nicht
+erledigt" geführt — es ist „erfüllt gebaut, Aktivierung verschoben".
+
+q1 (Rechtsträger) und q2 (Zahlungskonto) sind mit derselben Antwort weiterhin
+**offen** — siehe Abschnitt 8. Für den kostenlosen Start sind sie nicht
+blockierend; für G4 (Impressum) und den AVV-Stichtag (Abschnitt 2.1) bleiben
+sie es.
+
 ---
 
 ## 6. Tagesplan
@@ -335,6 +369,16 @@ belastet. Keine Zeile hier darf eine Zeile dort verzögern.
 | **Do 24.–Sa 26.09.** | Lead-Developer | [SUB-135](/SUB/issues/SUB-135): Kostenbremse, Smoke-Test, Runbook |
 | **So 27.09., 18:00** | Lead-Developer | **Stichtagsentscheid** — aktivieren oder auf v1.1 zurückfallen, dokumentiert auf SUB-135 |
 
+**Nachtrag 25.09.2026 — G1 lief sieben Tage später als geplant.** Die Zeile
+„Fr 18.09. … G1 Konten verifiziert" oben war der Plan, nicht das Ergebnis: Die
+tatsächliche Antwort kam erst am **25.09.2026, 05:50 UTC** (Interaktion
+`b1739bd0` auf SUB-39) und löste nur eine der vier gestellten Fragen
+abschließend auf (q3, Early Access). q1 (Rechtsträger) und q2
+(Zahlungskonto) sind mit `unklar` bzw. einer Rückfrage weiterhin offen — siehe
+Abschnitt 8. Der Tagesplan wird dafür nicht rückwirkend korrigiert, weil er
+die 15.09.-Ausgangsplanung dokumentiert; maßgeblich für den tatsächlichen
+Stand sind Abschnitt 5 und Abschnitt 8.
+
 ---
 
 ## 7. Risiken der Zwei-Wochen-Variante
@@ -354,20 +398,32 @@ belastet. Keine Zeile hier darf eine Zeile dort verzögern.
 
 ## 8. Offene Entscheidungen (blockieren Teile, nicht den Termin)
 
-Als Interaktion an [SUB-39](/SUB/issues/SUB-39) gestellt:
+Als Interaktion an [SUB-39](/SUB/issues/SUB-39) gestellt, beantwortet am
+**25.09.2026, 05:50 UTC** (Interaktion `b1739bd0`) — zwei der vier Fragen
+bleiben trotz Antwort offen, siehe je Punkt unten:
 
 1. **Rechtsträger für Abrechnung und Impressum** — existiert eine Firma/ein
    Gewerbe, oder läuft der Release auf eine Privatperson? Bestimmt Impressum,
    Zahlungskonto und Umsatzsteuer-Behandlung.
+   **Weiterhin offen.** Antwort (`b1739bd0`, 25.09.): „Weiß ich noch nicht"
+   (`unklar`). Wirkt zusätzlich auf den AVV-Stichtag, siehe Abschnitt 2.1.
 2. **Zahlungskonto vorhanden?** Ein neu eröffnetes Stripe/Mollie-Konto braucht
    Identitäts- und Kontoprüfung — das ist der einzige Posten, den kein
    Mehraufwand beschleunigt.
+   **Weiterhin offen.** Antwort (`b1739bd0`, 25.09.): Freitext „was ist das?"
+   statt einer der angebotenen Optionen — keine der beiden Fragen (Konto
+   vorhanden ja/nein) beantwortet.
 3. **Bezahlt oder kostenlos am Tag 1?** Kostendeckung greift ab ~50 Zahlenden
    (Abschnitt 3 in `docs/19-kosten-preis-budget.md`); kostenloser Start
    maximiert Nutzerzahl, verschiebt aber die Kostendeckung.
+   **Entschieden.** Antwort (`b1739bd0`, 25.09.): **`earlyaccess`** —
+   „Kostenloser Early Access mit angekündigtem Preis". Konsequenzen für G2 in
+   Abschnitt 5, für Recht/Abrechnung in `docs/17-release-readiness.md`
+   Abschnitt 3 und 4.
 4. **Reichweite für Tag 1** — gibt es Zugang zu einer Fachschaft, einem
    Jura-Kanal oder einer Lerngruppe? Bestimmt, ob der Release 10 oder 300
    Menschen erreicht.
+   **Nicht beantwortet** (war als einzige der vier Fragen optional markiert).
 
 ---
 
@@ -385,7 +441,7 @@ eine Absichtserklärung.
 | **G4/G5** Betrieb (24.–29.09.) | [SUB-86](/SUB/issues/SUB-86) | Lead-Developer | Deploy-Runbook, TLS, Backup **mit geprobtem Restore**, Monitoring |
 | **G3** Content-Freeze (25.09.) | [SUB-87](/SUB/issues/SUB-87) | Content-Koordinator | 6 P1-Themen → 180 Karten, geprüft und gemergt (Rechnung: Abschnitt 4) |
 | **G5** Launch (29.09.) | [SUB-88](/SUB/issues/SUB-88) | Marketing-Planner | Landing Page, Preisseite, Launch-Text |
-| **G1** Konten (18.09.) | — | **Nutzer** | Rechtsträger, Zahlungskonto, Domain — siehe Abschnitt 8 |
+| **G1** Konten (18.09.) | — | **Nutzer** | Rechtsträger, Zahlungskonto, Domain — siehe Abschnitt 8. Am 25.09. (`b1739bd0`) teilweise beantwortet: Zahlungsmodell entschieden (Early Access), Rechtsträger und Zahlungskonto weiterhin offen |
 | *bedingt* KI-Korrektur (19.09.) | [SUB-129](/SUB/issues/SUB-129) | Software-Planner | Provider-Wahl, belegte Self-Serve-DPA-Antwort, unterschriftsreife Anweisung |
 | *bedingt* KI-Korrektur (25.09.) | — | **Nutzer** | AVV unterschreiben — der einzige Schritt der Kette ohne Agenten |
 | *bedingt* KI-Korrektur (22.09.) | [SUB-133](/SUB/issues/SUB-133) | Backend-Developer | Einwilligungs-Gate, Test „kein Text ohne Zustimmung" |

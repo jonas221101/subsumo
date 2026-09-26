@@ -56,6 +56,16 @@ class Settings(BaseSettings):
     llm_api_key: str = ""
     llm_timeout_s: float = 60.0
 
+    # Kostenbremse (SUB-310, docs/19-kosten-preis-budget.md Abschnitt 5): die
+    # tatsaechlichen Kosten je Korrektur sind noch ungemessen (Spanne
+    # 0,09-0,30 EUR); bis zur Messung durch den Kalibrierungs-Harness
+    # (SUB-69) wird mit dem konservativen oberen Wert gerechnet, damit das
+    # Budget nie ueberschritten wird, ohne dass es auffaellt. 50 EUR/Monat
+    # sind ein Drittel des laufenden Planwerts (docs/19 Abschnitt 1, 150 EUR)
+    # und schuetzen die Marge, bis reale Zahlen vorliegen.
+    llm_cost_estimate_eur: float = 0.30
+    llm_monthly_budget_eur: float = 50.0
+
     # Lernplanung
     default_daily_minutes: int = 90
     seconds_per_card: int = 20

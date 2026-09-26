@@ -154,16 +154,56 @@ faktisch eine Rechtsdienstleistung erbringt. Beide Mechanismen gelten
 parallel — 2.1/2.2 entscheiden, *ob* ein Werkzeug entstehen darf, Abschnitt
 3.2 entscheidet, *wie* es dem Nutzer gegenübertritt.
 
-### 2.4 Offene Anwaltsfrage
+### 2.4 RDG-Grenzfall bei generierter Logik — Einschätzung statt offener Anwaltsfrage
 
-Ob ein Werkzeug, dessen Eingabe strikt auf zulässige Referenzen (2.1)
-beschränkt ist, dessen vom Modell frei entworfene **Logik** aber neue, im
-referenzierten Content nicht hinterlegte rechtliche Schlussfolgerungen
-synthetisiert (Beispiel: ein generiertes Werkzeug, das aus einer
-`Case`-Referenz eine eigene Lösung „berechnet", statt nur vorhandene
-`Card`-/`Schema`-Inhalte anzuzeigen), noch innerhalb der Lernhilfe-Grenze aus
-`docs/06` Abschnitt 2 liegt oder eine zusätzliche Laufzeitprüfung braucht.
-Eingetragen in `docs/17-release-readiness.md` Abschnitt 1.
+**Der Auftraggeber hat am 25.09.2026 entschieden, keine anwaltliche Prüfung
+für die auf SUB-254 gestellten Rechtsfragen einzuholen** (Interaktion
+`65179b93-68de-4e49-b2a8-3852889ad7fc`, Details und Folgen für AGB und
+Widerrufsbelehrung in `docs/31-projektreview-sub254.md` Abschnitt 9). Dieser
+Punkt war dort nicht Teil der drei gestellten Fragen und wird deshalb hier
+gesondert behandelt, nicht als weiteres bewusst getragenes Risiko, sondern
+mit einer eigenen technischen Einschätzung — das ist die in der Anlage
+dieses Tickets verlangte Alternative, wenn sie trägt.
+
+**Die Frage:** Ob ein Werkzeug, dessen Eingabe strikt auf zulässige
+Referenzen (2.1) beschränkt ist, dessen vom Modell frei entworfene
+**Logik** aber neue, im referenzierten Content nicht hinterlegte rechtliche
+Schlussfolgerungen synthetisiert (Beispiel: ein generiertes Werkzeug, das
+aus einer `Case`-Referenz eine eigene Lösung „berechnet", statt nur
+vorhandene `Card`-/`Schema`-Inhalte anzuzeigen), noch innerhalb der
+Lernhilfe-Grenze aus `docs/06` Abschnitt 2 liegt.
+
+**Einschätzung (technisch, keine Rechtsberatung):** Die Grenze aus `docs/06`
+Abschnitt 2 verläuft nicht entlang „vorgespeichert vs. berechnet", sondern
+entlang „fiktiver Übungsfall vs. realer, fremder Sachverhalt" — RDG erfasst
+Rechtsdienstleistung „in einer konkreten fremden Angelegenheit", nicht die
+abstrakte Erörterung eines Lehrbuchfalls. Die Eingabekontrakt-Durchsetzung
+aus Abschnitt 2.2 stellt bereits strukturell sicher, dass generierter Code
+niemals einen Fall referenzieren kann, der nicht schon als fiktiver
+Übungsfall mit hinterlegtem Erwartungshorizont in der Fall-Datenbank steht
+(`case_slug_ref`, Abschnitt 3.1) — dieselbe Bindung, auf der auch das
+bestehende `gutachten.py` beruht (`docs/06` Abschnitt 2). Eine generierte
+Logik, die aus dieser Referenz „ihre eigene Lösung" berechnet, tut damit im
+Kern dasselbe wie der bestehende, unbeanstandete Struktur-Check — sie
+bewertet einen fiktiven Fall gegen einen bereits hinterlegten
+Erwartungshorizont, nur mit modellgenerierter statt handgeschriebener
+Auswertungslogik. Die RDG-Grenze selbst bleibt damit durch den bestehenden
+Durchsetzungspunkt (2.2) gehalten, unabhängig davon, ob die Logik im
+Werkzeug etwas anzeigt oder etwas berechnet.
+
+**Was technisch trägt und was nicht:** Was der Eingabekontrakt *nicht*
+abfängt, ist eine Qualitäts-/Vertrauensfrage, keine RDG-Frage — ein
+ungeprüftes, generiertes Auswertungsschema kann fachlich falsch sein, ohne
+dadurch zu einer Rechtsdienstleistung an einem realen Fall zu werden. Diese
+Restfläche ist bereits durch die dauerhafte, nicht schließbare
+„Vorschlag"-Kennzeichnung (Abschnitt 2.3, 3.2) abgedeckt, die genau für
+diesen Fall vorgesehen ist: KI-Vorschlag, ungeprüft.
+
+**Ergebnis:** Diese Spezifikation führt den Punkt als **technisch durch
+Abschnitt 2.2 abgefangen**, nicht mehr als offene Anwaltsfrage. Eine
+spätere anwaltliche Bestätigung dieser Einschätzung bleibt optional
+möglich — das Feature ist ohnehin v1.1, hinter dem AVV-Gate und einer
+eigenen Freigabe-Entscheidung (Abschnitt 7), keine Ausführung vor Freigabe.
 
 ---
 
@@ -595,8 +635,10 @@ Paperclip-Betreibers (Abschnitt 5.3) die längste Vorlaufzeit hat.
    In-App-Admin-Ansicht) — Entwurfsentscheidung, die erst nach Freigabe dieser
    Spezifikation sinnvoll getroffen wird.
 5. **RDG-Grenzfall bei generierter Logik über zulässigen Eingaben**
-   (Abschnitt 2.4) — offene Anwaltsfrage, eingetragen in
-   `docs/17-release-readiness.md` Abschnitt 1.
+   (Abschnitt 2.4) — **kein offener Punkt mehr.** Technische Einschätzung:
+   durch die bestehende Eingabekontrakt-Durchsetzung (Abschnitt 2.2)
+   abgefangen, keine anwaltliche Klärung nötig. `docs/17-release-readiness.md`
+   Abschnitt 1 führt die Zeile entsprechend nach.
 
 ---
 
@@ -606,6 +648,9 @@ Paperclip-Betreibers (Abschnitt 5.3) die längste Vorlaufzeit hat.
   `docs/31-projektreview-sub254.md` Abschnitt 5
 - Entscheidung zur Neufassung: Interaktion `8559c558-09b5-476d-979d-f5e36204559d`
   auf SUB-254 (2026-09-25), Ticket SUB-308
+- Bewusst getragenes Rechtsrisiko (AGB, Widerrufsbelehrung, AVV-Abgrenzung):
+  `docs/31-projektreview-sub254.md` Abschnitt 9, Interaktion
+  `65179b93-68de-4e49-b2a8-3852889ad7fc` auf SUB-254 (2026-09-25)
 - RDG-Abgrenzung: `docs/06-recht-compliance.md` Abschnitt 2
 - Kostenrechnung-Methode: `docs/19-kosten-preis-budget.md` Abschnitt 5
 - AVV-Gate: `docs/17-release-readiness.md` Abschnitt 1, `docs/23-llm-provider-avv.md`
