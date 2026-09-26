@@ -34,16 +34,16 @@ geprüft, trägt weiterhin — keine Änderung. Ergänzend, was dort fehlt:
 | Punkt | Verantwortlich | Aufwand | Phase | Status |
 |---|---|---|---|---|
 | Impressum (§ 5 DDG) | Gründung/Recht | 0,5 PT | C | Offen — Text steht, sobald Rechtsform/Anschrift final ist. Entwurf mit vollständiger Struktur bereits vorhanden: `docs/legal/01-impressum.md` (Werte als `[Platzhalter]`, hängt an der Rechtsträger-Entscheidung aus `docs/18-release-2-wochen.md` Abschnitt 8) |
-| AGB (Nutzungsvertrag, Kündigung, Haftungsbegrenzung für KI-Bewertung) | Recht (extern) | 3–5 PT | C | Offen. **Frage:** Deckt eine Standard-SaaS-AGB die KI-Bewertungsfunktion ausreichend ab, oder braucht es eine gesonderte Haftungsklausel für „Bewertung ist Lernhilfe, keine verbindliche Note"? Ein Entwurf mit Haftungsklausel liegt bereits vor (`docs/legal/02-agb.md` Abschnitt 8), ersetzt aber nicht die anwaltliche Prüfung dieser Frage |
+| AGB (Nutzungsvertrag, Kündigung, Haftungsbegrenzung für KI-Bewertung) | Recht (extern) | 3–5 PT | C | **Bewusst getragen, keine anwaltliche Prüfung** (Entscheidung 25.09.2026, Interaktion `65179b93-68de-4e49-b2a8-3852889ad7fc` auf SUB-254). Der vorliegende Entwurf mit Haftungsklausel (`docs/legal/02-agb.md` Abschnitt 8) geht ungeprüft live. Restrisiko und Folgen: `docs/31-projektreview-sub254.md` Abschnitt 9.1 |
 | Datenschutzerklärung | Recht (extern) | 2–3 PT | C | Offen, hängt an Provider-Liste unten (Auflistung aller Empfänger ist Pflichtangabe). Entwurf mit aus dem Code abgeleiteten Datenkategorien bereits vorhanden: `docs/legal/03-datenschutzerklaerung.md` (Provider-Felder als `[Platzhalter]`, unverändert offen) |
-| Widerrufsbelehrung (Fernabsatz, digitale Inhalte) | Recht (extern) | 1 PT | C | Offen. **Frage:** Verzichtet der Nutzer beim Abo-Kauf ausdrücklich auf das Widerrufsrecht bei sofortigem Leistungsbeginn (§ 356 V BGB), oder wird ein 14-Tage-Fenster ohne Nutzung eingeräumt? Wirkt sich auf Onboarding-Flow aus. Entwurf vorhanden, der diese Entscheidung als offenen Punkt explizit ausweist: `docs/legal/04-widerrufsbelehrung.md` Abschnitt „Offene Entscheidung" |
+| Widerrufsbelehrung (Fernabsatz, digitale Inhalte) | Recht (extern) | 1 PT | C | **Bewusst getragen, keine anwaltliche Prüfung** (Entscheidung 25.09.2026, Interaktion `65179b93-68de-4e49-b2a8-3852889ad7fc` auf SUB-254). Verzicht auf das Widerrufsrecht bei sofortigem Leistungsbeginn (§ 356 V BGB) läuft über den Entwurf in `docs/legal/04-widerrufsbelehrung.md` Abschnitt „Offene Entscheidung" — die Checkout-Umsetzung (SUB-83) bleibt zu verifizieren, die rechtliche Prüfung des Texts selbst entfällt. Restrisiko und Folgen: `docs/31-projektreview-sub254.md` Abschnitt 9.2 |
 | DSGVO Auskunft (Art. 15) | Backend-Dev | 1 PT | C | **Erledigt.** `GET /account/export` (`backend/app/api/v1/account.py`) liefert die vollständige, strukturierte Selbstauskunft (Konto, FSRS-Lernzustand, Reviews, Gutachtenabgaben samt Bewertung) — kein separater Auskunft-Endpoint nötig, deckt Art. 15 mit ab. Getestet in `backend/tests/test_account.py` |
 | DSGVO Export (Art. 20) | Backend-Dev | inkl. in M3 | B/C | **Erledigt.** Derselbe `GET /account/export`-Endpoint liefert maschinenlesbares JSON, erfüllt damit auch die Datenübertragbarkeit nach Art. 20. Getestet in `backend/tests/test_account.py` |
 | DSGVO Löschung (Art. 17) | Backend-Dev | inkl. in M3 | B/C | **Erledigt.** `POST /account/delete` (`backend/app/api/v1/account.py`) mit Passwort-Bestätigung, Kaskade auf `Review`, `UserCard`, `Submission`, `CaseAccess`, `AnalyzeCall` und Konto selbst; Login danach nicht mehr möglich. Getestet in `backend/tests/test_account.py` (u. a. `test_loeschung_entfernt_free_tier_limit_daten` für die Kaskade) |
 | Verarbeitungsverzeichnis (Art. 30) | Recht/Betrieb | 1 PT | C | Offen — internes Dokument (kein Nutzer-Artefakt), listet Zwecke, Kategorien, Empfänger (LLM-Provider, Hosting), Löschfristen. Kann als `docs/18-verarbeitungsverzeichnis.md` intern geführt werden, sobald Provider-Wahl (unten) steht |
 | Auftragsverarbeitungsvertrag (AVV) mit LLM-Provider | Recht + Backend-Dev | 1–2 PT | B/C | Offen. **Frage (release-kritisch):** Dürfen Nutzertexte (Gutachten, oft mit personenbezogenen Sachverhaltsdetails im Übungsfall) unpseudonymisiert an einen US-Anbieter gehen? `docs/06-recht-compliance.md` Abschnitt 3 sieht bereits „Pseudonymisierung vor Versand, keine Nutzer-ID im Prompt" und „Provider-Wahl mit EU-Verarbeitung bevorzugt" vor — das ist die Grundsatzentscheidung, aber noch kein AVV. Aktueller Code (`backend/app/core/llm.py`) unterstützt aktuell nur den Provider `anthropic` (US) plus einen heuristischen Offline-Fallback (`llm_provider=none`); ein EU-Provider ist nicht angebunden. Die Transparenz im Produkt ist als eigener Einwilligungspfad bereits gebaut (`POST`/`DELETE /me/ai-consent`, `backend/app/api/v1/consent.py`) und technisch durchgesetzt — `get_evaluator(consented=...)` in `backend/app/services/evaluator.py` erzwingt ohne erteilte Einwilligung den heuristischen (Nicht-LLM-)Pfad, siehe `backend/app/api/v1/gutachten.py`. Getestet in `backend/tests/test_ai_consent.py`. Das ersetzt nicht den AVV selbst — die Grundsatzfrage oben bleibt offen |
 | RDG-Abgrenzung, Urheberrecht | — | — | — | Geprüft, Stand aus `docs/06-recht-compliance.md` trägt unverändert |
-| RDG-Grenzfall bei KI-generierter Werkbank-Logik (v1.1, nicht v1.0) | Recht (extern) | — | — | Offen. **Frage:** `docs/27-werkbank-spezifikation.md` Abschnitt 2 beschränkt die Eingabe generierter Lernwerkzeuge auf strukturierte Referenzen (nie einen freien, realen Sachverhalt) — reicht diese Eingabe-Beschränkung aus RDG-Sicht aus, wenn die vom Modell frei entworfene *Logik* über diesen zulässigen Eingaben neue, im referenzierten Content nicht hinterlegte rechtliche Schlussfolgerungen synthetisiert (Abschnitt 2.4 dort), oder braucht es zusätzlich eine Laufzeitprüfung der generierten Logik selbst? Nicht release-kritisch für v1.0 (Feature läuft ohnehin hinter dem AVV-Gate oben), aber vor Umsetzung von `docs/27` Ticket 3 zu klären |
+| RDG-Grenzfall bei KI-generierter Werkbank-Logik (v1.1, nicht v1.0) | Software-Planner | — | — | **Technisch abgefangen, keine anwaltliche Klärung nötig** (Einschätzung nachgezogen 25.09.2026). `docs/27-werkbank-spezifikation.md` Abschnitt 2.4: Die Eingabekontrakt-Durchsetzung (Abschnitt 2.2 dort) hält die RDG-Grenze unabhängig davon, ob die generierte Logik Content nur anzeigt oder daraus etwas berechnet, weil jede Eingabe strukturell auf bereits hinterlegte fiktive Übungsfälle beschränkt bleibt. Nicht release-kritisch für v1.0 (Feature läuft ohnehin hinter dem AVV-Gate oben und einer eigenen Freigabe) |
 
 ## 2. Sicherheit
 
@@ -62,25 +62,45 @@ geprüft, trägt weiterhin — keine Änderung. Ergänzend, was dort fehlt:
 (Apple IAP-Pflicht für digitale Abos, MSIX-Signierung, Datenschutz+Impressum
 je Store). Hier der operative Rest:
 
+**Einordnung nach der Nutzerentscheidung vom 25.09.2026** (SUB-39, Interaktion
+`b1739bd0`, 05:50 UTC: `earlyaccess`): Der Release am 29.09. startet als
+kostenloser Early Access ohne Bezahlstrecke
+(`docs/18-release-2-wochen.md` Abschnitt 5). Das macht Impressum- und
+Datenschutzangaben nicht hinfällig — die gelten auch für ein kostenloses,
+öffentlich erreichbares Angebot —, entschärft aber gezielt die Zeilen unten,
+die an einem **Bezahlvorgang** hängen (IAP-Pflicht, Zahlungsanbieter-Erwähnung
+in der Review). Diese werden **erst mit der Paywall fällig** (v1.1), nicht am
+Tag 1. Zusätzlich ist die App-Store-Zeile für den Start ohnehin
+gegenstandslos, weil iOS unabhängig von Early Access erst v1.1 kommt
+(`docs/18` Abschnitt 3.2).
+
 | Punkt | Verantwortlich | Aufwand | Phase | Status |
 |---|---|---|---|---|
 | Play Store: Entwicklerkonto, Gebühr (einmalig 25 $) | Betrieb | 0,5 PT | D | Offen |
-| App Store: Entwicklerkonto, Gebühr (99 $/Jahr, wiederkehrend) | Betrieb | 0,5 PT | D | Offen |
+| App Store: Entwicklerkonto, Gebühr (99 $/Jahr, wiederkehrend) | Betrieb | 0,5 PT | D | Offen — für den 29.09. ohnehin gegenstandslos, iOS ist v1.1 (`docs/18` Abschnitt 3.2), unabhängig von der Early-Access-Entscheidung |
 | Microsoft Store: Entwicklerkonto (einmalig ~19 $ Individual / ~99 $ Company) | Betrieb | 0,5 PT | D | Offen |
 | Altersfreigabe je Store (IARC-Fragebogen o. Ä.) | Betrieb | 0,5 PT | D | Offen — für ein Jura-Lernprodukt ohne Erwachseneninhalte unkritisch, Fragebogen aber Pflicht je Store |
-| Datenschutzangaben je Store (Apple „Privacy Nutrition Label", Play „Data Safety") | Betrieb | 1 PT | D | Offen, hängt direkt an der Provider-Liste aus Abschnitt 1 (AVV) — ohne finale Provider-Wahl keine verbindlichen Angaben möglich |
-| Review-Richtlinien-Check vor Einreichung (insb. Apple: In-App-Purchase-Pflicht, Zahlungsanbieter-Erwähnung) | Betrieb | 1 PT | D | Offen |
-| **Store-Regeln zu Bezahlinhalten vs. externer Abrechnung** | Produkt/Recht | 0,5 PT Analyse | C | Geklärt in `docs/06-recht-compliance.md` Abschnitt 4: Apple zwingt digitale Abos über IAP (30 %/15 % Provision je nach Umsatzschwelle), Web-Abschluss bleibt separat möglich, darf aber in der iOS-App nicht beworben werden. **Konsequenz fürs Geschäftsmodell:** Preis auf iOS muss die IAP-Provision einkalkulieren, oder iOS-Preis liegt höher als Web-Preis (wie z. B. bei vielen SaaS-Apps üblich) — das ist eine Preisentscheidung für T6/Abrechnung unten, nicht mehr offen als Rechtsfrage |
+| Datenschutzangaben je Store (Apple „Privacy Nutrition Label", Play „Data Safety") | Betrieb | 1 PT | D | Offen, hängt direkt an der Provider-Liste aus Abschnitt 1 (AVV) — ohne finale Provider-Wahl keine verbindlichen Angaben möglich. **Tag 1 (Play, Early Access):** ohne Zahlungsdaten zu deklarieren, aber die AVV-abhängigen Angaben (LLM-Provider) bleiben unabhängig vom Bezahlstatus offen |
+| Review-Richtlinien-Check vor Einreichung (insb. Apple: In-App-Purchase-Pflicht, Zahlungsanbieter-Erwähnung) | Betrieb | 1 PT | D | Offen. Bezieht sich auf Apple/IAP — **mit Paywall und iOS fällig** (beides nicht Tag 1), für den Play-Start am 29.09. nicht release-kritisch |
+| **Store-Regeln zu Bezahlinhalten vs. externer Abrechnung** | Produkt/Recht | 0,5 PT Analyse | C | Geklärt in `docs/06-recht-compliance.md` Abschnitt 4: Apple zwingt digitale Abos über IAP (30 %/15 % Provision je nach Umsatzschwelle), Web-Abschluss bleibt separat möglich, darf aber in der iOS-App nicht beworben werden. **Konsequenz fürs Geschäftsmodell:** Preis auf iOS muss die IAP-Provision einkalkulieren, oder iOS-Preis liegt höher als Web-Preis (wie z. B. bei vielen SaaS-Apps üblich) — das ist eine Preisentscheidung für T6/Abrechnung unten, nicht mehr offen als Rechtsfrage. **Mit Paywall/iOS fällig** (v1.1), am Tag 1 ohne Bezahlinhalt und ohne iOS gegenstandslos |
 
 ## 4. Abrechnung
 
+**Tag 1 ist Early Access ohne Bezahlstrecke** (Nutzerentscheidung 25.09.2026,
+SUB-39 Interaktion `b1739bd0`, 05:50 UTC: `earlyaccess`). Die Kaufstrecke
+selbst ist bereits gebaut und getestet (SUB-83, `backend/app/api/v1/billing.py`,
+14 Tests) — nur ihre Aktivierung ist auf v1.1 verschoben
+(`docs/18-release-2-wochen.md` Abschnitt 5, Nachtrag 25.09.). Die Punkte
+unten bleiben notwendig, werden aber **erst mit der Paywall fällig**, nicht
+am 29.09.:
+
 | Punkt | Verantwortlich | Aufwand | Phase | Status |
 |---|---|---|---|---|
-| Zahlungsanbieter-Wahl (Web) | Produkt/Betrieb | 0,5 PT Entscheidung | C | Offen. **Frage:** Stripe (verbreitet, keine deutsche Entität nötig, aber USD-Abrechnungsbeziehung) oder ein EU-Anbieter (z. B. Mollie)? Beeinflusst AVV-Liste und Datenschutzerklärung |
-| Abo-Verwaltung (Pausieren, Wechsel, Rechnungen) | Backend-Dev + Frontend-Dev | 3–5 PT | D | Offen, an Provider-Wahl gekoppelt — die meisten Anbieter liefern Checkout+Portal fertig, Aufwand ist primär Integration, nicht Eigenbau |
-| Studierendennachweis (falls Studierendenpreis) | Produkt | 1–2 PT | C/D | Offen. **Frage:** Wird ein Studierendenpreis überhaupt eingeführt (aus T6/Marktanalyse noch nicht final entschieden, siehe `docs/14-marktanalyse.md`)? Falls ja: Verifizierung über Uni-E-Mail-Domain (günstig, aber umgehbar) oder Drittanbieter wie SheerID (verlässlicher, kostet pro Verifizierung) — als offene Entscheidung markiert, keine Empfehlung ohne T6-Preisentscheidung |
-| Umsatzsteuer (digitale Dienstleistung an Privatpersonen, EU-OSS) | Steuerberater | 1–2 PT extern | D | Offen. **Frage:** Meldung über das One-Stop-Shop-Verfahren (EU-OSS) für digitale Leistungen an Verbraucher in anderen EU-Ländern — ab Launch relevant, sobald auch außerhalb Deutschlands verkauft wird. Reine Steuerfrage, hier nicht beantwortbar |
-| Kündigung und Widerruf (Prozess, nicht nur Text) | Backend-Dev + Support | 1–2 PT | D | Offen — Selbstkündigung im Produkt (kein „Bitte E-Mail schreiben") ist Standard-Erwartung und vermutlich auch regulatorisch erwartet (Kündigungsbutton-Pflicht nach deutschem Recht für Verbraucherverträge seit 2022) |
+| Zahlungsanbieter-Wahl (Web) | Produkt/Betrieb | 0,5 PT Entscheidung | C | Offen. **Frage:** Stripe (verbreitet, keine deutsche Entität nötig, aber USD-Abrechnungsbeziehung) oder ein EU-Anbieter (z. B. Mollie)? Beeinflusst AVV-Liste und Datenschutzerklärung. **Mit Paywall fällig** — für den Early-Access-Start am 29.09. nicht release-kritisch, aber SUB-83 hat bereits Stripe implementiert, die Frage betrifft nur die endgültige Entscheidung vor Aktivierung |
+| Abo-Verwaltung (Pausieren, Wechsel, Rechnungen) | Backend-Dev + Frontend-Dev | 3–5 PT | D | Offen, an Provider-Wahl gekoppelt — die meisten Anbieter liefern Checkout+Portal fertig, Aufwand ist primär Integration, nicht Eigenbau. **Mit Paywall fällig**, nicht Tag 1 |
+| Studierendennachweis (falls Studierendenpreis) | Produkt | 1–2 PT | C/D | Offen. **Frage:** Wird ein Studierendenpreis überhaupt eingeführt (aus T6/Marktanalyse noch nicht final entschieden, siehe `docs/14-marktanalyse.md`)? Falls ja: Verifizierung über Uni-E-Mail-Domain (günstig, aber umgehbar) oder Drittanbieter wie SheerID (verlässlicher, kostet pro Verifizierung) — als offene Entscheidung markiert, keine Empfehlung ohne T6-Preisentscheidung. **Mit Paywall fällig**, nicht Tag 1 |
+| Umsatzsteuer (digitale Dienstleistung an Privatpersonen, EU-OSS) | Steuerberater | 1–2 PT extern | D | **Am Tag 1 gegenstandslos** — Early Access ohne Entgelt löst keine Umsatzsteuerpflicht aus (Nutzerentscheidung 25.09.2026, `b1739bd0`). **Frage bleibt, wird aber erst mit Paywall-Aktivierung real:** Meldung über das One-Stop-Shop-Verfahren (EU-OSS) für digitale Leistungen an Verbraucher in anderen EU-Ländern, sobald auch außerhalb Deutschlands verkauft wird. Reine Steuerfrage, hier nicht beantwortbar |
+| Kündigung und Widerruf (Prozess, nicht nur Text) | Backend-Dev + Support | 1–2 PT | D | Offen — Selbstkündigung im Produkt (kein „Bitte E-Mail schreiben") ist Standard-Erwartung und vermutlich auch regulatorisch erwartet (Kündigungsbutton-Pflicht nach deutschem Recht für Verbraucherverträge seit 2022). **Mit Paywall fällig** — ohne laufendes Abo am Tag 1 gibt es nichts zu kündigen |
 
 ## 5. Betrieb
 
@@ -191,10 +211,35 @@ Bezahlvorgang" plus vier Plattformen live. Der aktuell blockierende Kern:
 2. **DSGVO Export/Löschung/Auskunft-Endpoints** sind inzwischen gebaut
    (`backend/app/api/v1/account.py`, Stand dieser Prüfung: 24.09.2026) —
    dieser Punkt blockiert Gate C nicht mehr.
-3. Drei **Steuer-/Rechtsfragen** (Widerrufsrecht bei Sofortleistung,
-   Umsatzsteuer-OSS, Haftungsklausel KI-Bewertung) brauchen externe Beratung
-   und sind nicht durch Produktentscheidung allein lösbar — rechtzeitig vor
-   Gate C beauftragen, Vorlaufzeit einplanen wie bei der T4-Kalibrierung.
+3. **Umsatzsteuer-OSS** ist eine reine Steuerfrage und braucht weiterhin
+   externen Rat (Steuerberater), rechtzeitig vor Gate C zu beauftragen.
+   Widerrufsrecht bei Sofortleistung und Haftungsklausel KI-Bewertung
+   waren ebenfalls als offene Rechtsfragen geführt, sind aber am
+   25.09.2026 als bewusst getragenes Risiko entschieden worden (Abschnitt 1,
+   `docs/31-projektreview-sub254.md` Abschnitt 9) — sie blockieren Gate C
+   nicht mehr, warten aber auch auf keine externe Beratung mehr.
+4. **Tag 1 ist Early Access, nicht Paywall** (Nutzerentscheidung 25.09.2026,
+   SUB-39 Interaktion `b1739bd0`, 05:50 UTC: `earlyaccess`). Zwei Punkte
+   werden dadurch für den 29.09. **gegenstandslos, nicht erledigt**:
+   - **Umsatzsteuer/EU-OSS** (Abschnitt 4): Ohne Entgelt am Tag 1 fällt keine
+     Umsatzsteuer an — real wird die Frage erst **mit der
+     Paywall-Aktivierung** (v1.1), nicht vor Gate C/D.
+   - Der **Bezahlvorgang selbst** bleibt für Gate D „end-to-end getestet"
+     (SUB-83, `backend/app/api/v1/billing.py`), muss aber am 29.09. **nicht
+     scharfgeschaltet** sein — siehe `docs/18-release-2-wochen.md`
+     Abschnitt 5 (Nachtrag 25.09.).
+
+   **Bewusst offen gelassen statt übernommen:** Ob auch die
+   Widerrufsbelehrung (Abschnitt 1) am Tag 1 entfällt, hängt daran, ob ein
+   kostenloser Vertrag gegen Registrierungs- und Nutzungsdaten unter
+   § 312 Abs. 1a BGB („digitale Leistung gegen personenbezogene Daten statt
+   Geld") bereits als entgeltlicher Verbrauchervertrag mit Widerrufsrecht
+   gilt. Das ist keine Einschätzung, die ohne externe Rechtsberatung getroffen
+   werden sollte — Abschnitt 1 bleibt deshalb unverändert auf „Offen, externe
+   Prüfung nötig" stehen, nicht auf „gegenstandslos". Dieselbe Vorsicht gilt
+   für die Preistabelle in `docs/legal/02-agb.md` Abschnitt 4, die einen
+   Preis nennt, der am Tag 1 nicht verlangt wird — diese Anpassung ist nicht
+   Teil dieser Prüfung und als Folgeaufgabe an Marketing-Planner ausgelagert.
 
 **Nicht blockierend, aber bewusst in Kauf genommen:** Die menschliche
 Content-Stichprobe ist per Nutzerentscheidung vom 25.09.2026 ausgesetzt
