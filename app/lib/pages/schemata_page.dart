@@ -106,7 +106,7 @@ class _SchemataPageState extends State<SchemataPage> {
           else if (visible.isEmpty)
             ScreenStatus.empty(
               message: _query.isEmpty
-                  ? 'Keine Schemata fuer diese Auswahl.'
+                  ? 'Keine Schemata für diese Auswahl.'
                   : 'Kein Schema passt zu „$_query".',
               onRetry: _load,
             )
@@ -227,7 +227,7 @@ class _SchemaTile extends StatelessWidget {
 }
 
 /// Gliederungszeichen, das die Redaktion bereits in den Schritt-Text
-/// geschrieben hat ("I. Schutzbereich", "1. Persoenlich", "a) Stufe 1",
+/// geschrieben hat ("I. Schutzbereich", "1. Persönlich", "a) Stufe 1",
 /// "aa) ...", "(1) ..."). Wird erkannt und in die Nummern-Spalte gezogen,
 /// damit nichts doppelt steht und die Spalte trotzdem buendig bleibt.
 final _leadingNumeral = RegExp(r'^\s*((?:[IVXLC]+\.)|(?:\d+\.)|(?:[a-z]{1,2}\))|(?:\(\d+\)))\s+');

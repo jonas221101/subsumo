@@ -295,7 +295,7 @@ class _EmptyState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => ScreenStatus.empty(
-        message: 'Nichts faellig. Gut gemacht.',
+        message: 'Nichts fällig. Gut gemacht.',
         severity: FeedbackSeverity.positive,
         onRetry: onReload,
       );

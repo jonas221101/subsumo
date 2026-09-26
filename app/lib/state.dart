@@ -363,7 +363,7 @@ class AppState extends ChangeNotifier {
         dueCardsFromCache = true;
         error = 'Offline - zeige die zuletzt geladenen Karten.';
       } else {
-        error = 'Server nicht erreichbar. Laeuft das Backend auf $kApiBase?';
+        error = 'Server nicht erreichbar. Läuft das Backend auf $kApiBase?';
       }
       return false;
     } finally {
@@ -407,7 +407,7 @@ class AppState extends ChangeNotifier {
       error = null;
     } on Exception {
       error =
-          'Offline - ${outbox.length} Bewertung(en) werden spaeter gesendet.';
+          'Offline - ${outbox.length} Bewertung(en) werden später gesendet.';
     }
     notifyListeners();
   }
@@ -423,7 +423,7 @@ class AppState extends ChangeNotifier {
       error = e.message;
       return false;
     } on Exception {
-      error = 'Server nicht erreichbar. Laeuft das Backend auf $kApiBase?';
+      error = 'Server nicht erreichbar. Läuft das Backend auf $kApiBase?';
       return false;
     } finally {
       loading = false;

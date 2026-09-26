@@ -21,6 +21,12 @@ ThemeData buildTheme(Brightness brightness) {
   // nachladen - siehe docs/07-spike-web-editor.md, Nebenbefund 2.
   final base = brightness == Brightness.dark ? ThemeData.dark() : ThemeData.light();
   final textTheme = base.textTheme.apply(fontFamily: 'Subsumo').copyWith(
+        // Die Material-Headline-Rollen tragen die Serife, damit auch die
+        // oeffentlichen Seiten (Landing, Preise, Rechtstexte) und das
+        // Gutachten-Ergebnis dieselbe Ueberschriftenschrift haben wie die
+        // App-Screens - ohne jede Seite einzeln anzufassen.
+        headlineMedium: typography.headingLarge,
+        headlineSmall: typography.headingMedium,
         titleLarge: const TextStyle(
           fontSize: TypeScale.titleLarge,
           fontFamily: 'Subsumo',

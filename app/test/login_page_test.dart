@@ -31,7 +31,7 @@ void main() {
     expect(find.text('Anmelden'), findsOneWidget);
   });
 
-  testWidgets('Login zeigt Fehler ueber SubsumoFeedbackBlock', (tester) async {
+  testWidgets('Login zeigt Fehler über SubsumoFeedbackBlock', (tester) async {
     final state = AppState(api: ApiClient())..error = 'Login fehlgeschlagen';
 
     await tester.pumpWidget(

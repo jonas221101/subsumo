@@ -145,7 +145,7 @@ class SubsumoColors extends ThemeExtension<SubsumoColors> {
   final Color accent;
 
   /// [accent] bei niedriger Deckkraft ueber der Flaeche - nur fuer die
-  /// "Ehrlich ueber den Umfang"-Sektion der Landingpage (SUB-227/SUB-228),
+  /// "Was drin ist"-Sektion (vormals "Ehrlich über den Umfang") der Landingpage (SUB-227/SUB-228),
   /// niedrig genug gewaehlt, dass Fliesstextkontrast darauf nicht spuerbar
   /// sinkt (nachgerechnet in docs/11-designsystem.md Abschnitt 5). Bewusst
   /// keine neue Hex-Konstante, sondern [accent] selbst mit reduzierter

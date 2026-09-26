@@ -44,7 +44,7 @@ void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
 
   group('Startseite "Heute"', () {
-    testWidgets('zeigt die Zahl der faelligen Karten und der Direkteinstieg ruft onStartReview',
+    testWidgets('zeigt die Zahl der fälligen Karten und der Direkteinstieg ruft onStartReview',
         (tester) async {
       final client = MockClient((request) async => _json(_coverage));
       final state = AppState(api: ApiClient(client: client))
@@ -65,7 +65,7 @@ void main() {
       expect(started, isTrue);
     });
 
-    testWidgets('ohne faellige Karten bleibt der Ton sachlich', (tester) async {
+    testWidgets('ohne fällige Karten bleibt der Ton sachlich', (tester) async {
       final client = MockClient((request) async => _json(_coverage));
       final state = AppState(api: ApiClient(client: client))..user = {'pro_active': true};
 
@@ -134,7 +134,7 @@ void main() {
       expect(outlineNumeral(4, 0), '(1)');
     });
 
-    test('vorhandene Gliederungszeichen im Text werden uebernommen statt verdoppelt', () {
+    test('vorhandene Gliederungszeichen im Text werden übernommen statt verdoppelt', () {
       expect(splitNumeral('I. Schutzbereich', depth: 0, index: 0), ('I.', 'Schutzbereich'));
       expect(splitNumeral('2. Sachlich: Beruf', depth: 1, index: 0), ('2.', 'Sachlich: Beruf'));
       expect(splitNumeral('aa) Enge Auslegung', depth: 3, index: 0), ('aa)', 'Enge Auslegung'));
@@ -189,7 +189,7 @@ void main() {
   });
 
   group('Designsystem-Bausteine', () {
-    testWidgets('SubsumoEyebrow setzt in Versalien, SubsumoDots ist wertunabhaengig gefaerbt',
+    testWidgets('SubsumoEyebrow setzt in Versalien, SubsumoDots ist wertunabhängig gefärbt',
         (tester) async {
       await tester.pumpWidget(MaterialApp(
         theme: buildTheme(Brightness.light),
@@ -213,10 +213,10 @@ void main() {
           .whereType<BoxDecoration>()
           .where((d) => d.shape == BoxShape.circle && d.color == scheme.primary)
           .length;
-      expect(filledDots, 6, reason: '1 + 5 gefuellte Punkte, alle in primary');
+      expect(filledDots, 6, reason: '1 + 5 gefüllte Punkte, alle in primary');
     });
 
-    testWidgets('SubsumoPanel ist anklickbar und traegt eine Haarlinie', (tester) async {
+    testWidgets('SubsumoPanel ist anklickbar und trägt eine Haarlinie', (tester) async {
       var tapped = false;
       await tester.pumpWidget(MaterialApp(
         theme: buildTheme(Brightness.light),

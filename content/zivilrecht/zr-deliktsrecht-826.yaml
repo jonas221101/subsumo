@@ -1,7 +1,7 @@
 topic:
   slug: zr-deliktsrecht-826
   area: zivilrecht
-  title: § 826 BGB, vorsaetzliche sittenwidrige Schaedigung
+  title: § 826 BGB, vorsätzliche sittenwidrige Schädigung
   parent: zr-deliktsrecht-823
   relevance: 4
   stand: 2026-09
@@ -16,10 +16,10 @@ cards:
   type: definition
   front: Was regelt § 826 BGB und welche Funktion hat die Norm im System des Deliktsrechts?
   back: '§ 826 BGB verpflichtet zum Schadensersatz, wer einem anderen in einer gegen
-    die guten Sitten verstossenden Weise vorsaetzlich Schaden zufuegt. Die Norm wirkt
-    als Auffangtatbestand: sie setzt weder eines der in § 823 Abs. 1 BGB abschliessend
-    genannten Rechtsgueter noch ein Schutzgesetz im Sinne des § 823 Abs. 2 BGB voraus
-    und erfasst dadurch insbesondere Faelle, in denen allein das Vermoegen geschaedigt
+    die guten Sitten verstoßenden Weise vorsätzlich Schaden zufügt. Die Norm wirkt
+    als Auffangtatbestand: sie setzt weder eines der in § 823 Abs. 1 BGB abschließend
+    genannten Rechtsgüter noch ein Schutzgesetz im Sinne des § 823 Abs. 2 BGB voraus
+    und erfasst dadurch insbesondere Fälle, in denen allein das Vermögen geschädigt
     wird.'
   norms:
   - § 826 BGB
@@ -31,10 +31,10 @@ cards:
   type: definition
   front: Wie ist die Sittenwidrigkeit im Sinne des § 826 BGB zu bestimmen?
   back: Ein Verhalten ist sittenwidrig, wenn es nach seinem Gesamtcharakter - ermittelt
-    durch zusammenfassende Wuerdigung von Inhalt, Beweggrund und Zweck des Handelns
+    durch zusammenfassende Würdigung von Inhalt, Beweggrund und Zweck des Handelns
     - mit den grundlegenden Wertungen der Rechts- und Sittenordnung nicht vereinbar
-    ist. Es handelt sich um einen offenen Wertungsbegriff, der stets anhand der Umstaende
-    des Einzelfalls auszufuellen ist, nicht um eine feste Fallgruppenliste.
+    ist. Es handelt sich um einen offenen Wertungsbegriff, der stets anhand der Umstände
+    des Einzelfalls auszufüllen ist, nicht um eine feste Fallgruppenliste.
   norms:
   - § 826 BGB
   quellen:
@@ -43,11 +43,11 @@ cards:
   stand: 2026-09
 - slug: zr-826-schaedigungsvorsatz
   type: definition
-  front: Welche Anforderungen stellt § 826 BGB an den Schaedigungsvorsatz?
-  back: Der Schaediger muss die Schaedigung des anderen zumindest fuer moeglich gehalten
-    und billigend in Kauf genommen haben; bedingter Vorsatz (dolus eventualis) genuegt.
-    Nicht erforderlich ist, dass der Schaediger den Schaden in allen Einzelheiten
-    oder in seiner genauen Hoehe vorausgesehen hat - ausreichend ist die Voraussicht
+  front: Welche Anforderungen stellt § 826 BGB an den Schädigungsvorsatz?
+  back: Der Schädiger muss die Schädigung des anderen zumindest für möglich gehalten
+    und billigend in Kauf genommen haben; bedingter Vorsatz (dolus eventualis) genügt.
+    Nicht erforderlich ist, dass der Schädiger den Schaden in allen Einzelheiten
+    oder in seiner genauen Höhe vorausgesehen hat - ausreichend ist die Voraussicht
     der Richtung und Art des Schadens.
   norms:
   - § 826 BGB
@@ -57,13 +57,13 @@ cards:
   stand: 2026-09
 - slug: zr-826-vorsatz-sittenwidrige-umstaende
   type: definition
-  front: Muss sich der Vorsatz bei § 826 BGB auch auf die die Sittenwidrigkeit begruendenden
-    Umstaende beziehen?
-  back: 'Ja: der Vorsatz des Schaedigers muss sich nicht nur auf den Schaden selbst,
-    sondern auch auf die tatsaechlichen Umstaende erstrecken, aus denen sich die Sittenwidrigkeit
-    seines Verhaltens ergibt. Kennt der Handelnde diese Umstaende nicht, fehlt es
+  front: Muss sich der Vorsatz bei § 826 BGB auch auf die die Sittenwidrigkeit begründenden
+    Umstände beziehen?
+  back: 'Ja: der Vorsatz des Schädigers muss sich nicht nur auf den Schaden selbst,
+    sondern auch auf die tatsächlichen Umstände erstrecken, aus denen sich die Sittenwidrigkeit
+    seines Verhaltens ergibt. Kennt der Handelnde diese Umstände nicht, fehlt es
     am erforderlichen Vorsatz, selbst wenn sein Verhalten objektiv als sittenwidrig
-    zu bewerten waere.'
+    zu bewerten wäre.'
   norms:
   - § 826 BGB
   quellen:
@@ -72,11 +72,11 @@ cards:
   stand: 2026-09
 - slug: zr-826-reine-vermoegensschaeden
   type: definition
-  front: Welche Bedeutung hat § 826 BGB fuer den Ersatz reiner Vermoegensschaeden?
-  back: Anders als § 823 Abs. 1 BGB, der nur die dort abschliessend genannten Rechtsgueter
-    schuetzt, erfasst § 826 BGB uneingeschraenkt auch das Vermoegen als solches. Gerade
-    deshalb ist die Norm die zentrale Anspruchsgrundlage fuer Faelle reiner Vermoegensschaeden
-    ausserhalb vertraglicher Beziehungen, etwa bei vorsaetzlicher Falschinformation
+  front: Welche Bedeutung hat § 826 BGB für den Ersatz reiner Vermögensschäden?
+  back: Anders als § 823 Abs. 1 BGB, der nur die dort abschließend genannten Rechtsgüter
+    schützt, erfasst § 826 BGB uneingeschränkt auch das Vermögen als solches. Gerade
+    deshalb ist die Norm die zentrale Anspruchsgrundlage für Fälle reiner Vermögensschäden
+    außerhalb vertraglicher Beziehungen, etwa bei vorsätzlicher Falschinformation
     im Wirtschaftsverkehr.
   norms:
   - § 826 BGB
@@ -87,11 +87,11 @@ cards:
 - slug: zr-826-abgrenzung-823-1
   type: definition
   front: Wie unterscheidet sich § 826 BGB von § 823 Abs. 1 BGB?
-  back: § 823 Abs. 1 BGB schuetzt nur die dort abschliessend aufgezaehlten Rechtsgueter
-    (Leben, Koerper, Gesundheit, Freiheit, Eigentum, sonstiges Recht) und genuegt
-    sich mit Fahrlaessigkeit. § 826 BGB verlangt demgegenueber Vorsatz und Sittenwidrigkeit,
-    schuetzt dafuer aber unbeschraenkt jedes Vermoegensinteresse - die beiden Normen
-    ergaenzen sich, statt sich auszuschliessen.
+  back: § 823 Abs. 1 BGB schützt nur die dort abschließend aufgezählten Rechtsgüter
+    (Leben, Körper, Gesundheit, Freiheit, Eigentum, sonstiges Recht) und genügt
+    sich mit Fahrlässigkeit. § 826 BGB verlangt demgegenüber Vorsatz und Sittenwidrigkeit,
+    schützt dafür aber unbeschränkt jedes Vermögensinteresse - die beiden Normen
+    ergänzen sich, statt sich auszuschließen.
   norms:
   - § 826 BGB
   - § 823 Abs. 1 BGB
@@ -102,11 +102,11 @@ cards:
 - slug: zr-826-abgrenzung-823-2
   type: definition
   front: Wie unterscheidet sich § 826 BGB von § 823 Abs. 2 BGB?
-  back: § 823 Abs. 2 BGB setzt den Verstoss gegen ein konkretes Schutzgesetz voraus
-    und laesst je nach diesem Gesetz auch Fahrlaessigkeit genuegen. § 826 BGB benoetigt
-    dagegen kein Schutzgesetz, verlangt dafuer aber stets Vorsatz sowohl hinsichtlich
-    des Schadens als auch der sittenwidrigkeitsbegruendenden Umstaende - die Norm
-    ist damit im Verschulden enger, im erfassten Interesse (jedes Vermoegensinteresse)
+  back: § 823 Abs. 2 BGB setzt den Verstoß gegen ein konkretes Schutzgesetz voraus
+    und lässt je nach diesem Gesetz auch Fahrlässigkeit genügen. § 826 BGB benötigt
+    dagegen kein Schutzgesetz, verlangt dafür aber stets Vorsatz sowohl hinsichtlich
+    des Schadens als auch der sittenwidrigkeitsbegründenden Umstände - die Norm
+    ist damit im Verschulden enger, im erfassten Interesse (jedes Vermögensinteresse)
     aber weiter als § 823 Abs. 2 BGB.
   norms:
   - § 826 BGB
@@ -118,10 +118,10 @@ cards:
 - slug: zr-826-rechtsfolge
   type: definition
   front: Welche Rechtsfolge hat ein Anspruch aus § 826 BGB?
-  back: Der Schaediger ist gemaess §§ 249 ff. BGB zum Ersatz des durch die sittenwidrige
-    Schaedigung verursachten Schadens verpflichtet. Je nach Fallgruppe kann dies auf
-    Naturalrestitution (§ 249 Abs. 1 BGB), etwa die Rueckabwicklung eines durch Taeuschung
-    veranlassten Geschaefts, oder auf Geldersatz des eingetretenen Vermoegensnachteils
+  back: Der Schädiger ist gemäß §§ 249 ff. BGB zum Ersatz des durch die sittenwidrige
+    Schädigung verursachten Schadens verpflichtet. Je nach Fallgruppe kann dies auf
+    Naturalrestitution (§ 249 Abs. 1 BGB), etwa die Rückabwicklung eines durch Täuschung
+    veranlassten Geschäfts, oder auf Geldersatz des eingetretenen Vermögensnachteils
     gerichtet sein.
   norms:
   - § 826 BGB
@@ -139,60 +139,60 @@ schemata:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
   steps:
-  - label: I. Schaden (auch reiner Vermoegensschaden erfasst)
+  - label: I. Schaden (auch reiner Vermögensschaden erfasst)
   - label: II. Sittenwidriges Verhalten
     children:
-    - label: 1. Gesamtwuerdigung von Inhalt, Beweggrund und Zweck
-    - label: 2. Verstoss gegen grundlegende Wertungen der Rechts- und Sittenordnung
+    - label: 1. Gesamtwürdigung von Inhalt, Beweggrund und Zweck
+    - label: 2. Verstoß gegen grundlegende Wertungen der Rechts- und Sittenordnung
   - label: III. Vorsatz
     children:
-    - label: 1. Bezogen auf den Schaden (dolus eventualis genuegt)
-    - label: 2. Bezogen auf die sittenwidrigkeitsbegruendenden Umstaende
-  - label: IV. Kausalitaet zwischen Verhalten und Schaden
+    - label: 1. Bezogen auf den Schaden (dolus eventualis genügt)
+    - label: 2. Bezogen auf die sittenwidrigkeitsbegründenden Umstände
+  - label: IV. Kausalität zwischen Verhalten und Schaden
   - label: 'V. Rechtsfolge: Schadensersatz, §§ 249 ff. BGB'
 faelle:
 - slug: zr-fall-die-gefaelschte-bilanz
-  title: Die gefaelschte Bilanz
+  title: Die gefälschte Bilanz
   difficulty: 4
   minutes: 40
   quellen:
   - Eigener Sachverhalt der Redaktion
   - BGB, amtliche Fassung
-  facts: Geschaeftsfuehrer G der fiktiven Solaranlagen-GmbH wirbt gezielt Privatanleger
-    fuer stille Beteiligungen. Um Investorin I zur Zeichnung einer Beteiligung in
-    Hoehe von 25.000 EUR zu bewegen, legt er ihr eine von ihm frei erfundene Bilanz
-    vor, die einen Jahresueberschuss von 400.000 EUR ausweist, obwohl G positiv weiss,
-    dass die GmbH bereits erheblich ueberschuldet und zahlungsunfaehig ist. G handelt
-    so, um sich selbst eine erfolgsabhaengige Vermittlungsprovision von 2.500 EUR
-    zu sichern. I zeichnet die Beteiligung; wenige Wochen spaeter muss die GmbH Insolvenz
-    anmelden, und die Einlage der I ist vollstaendig verloren.
-  question: Hat I gegen G einen Anspruch auf Schadensersatz in Hoehe von 25.000 EUR
+  facts: Geschäftsführer G der fiktiven Solaranlagen-GmbH wirbt gezielt Privatanleger
+    für stille Beteiligungen. Um Investorin I zur Zeichnung einer Beteiligung in
+    Höhe von 25.000 EUR zu bewegen, legt er ihr eine von ihm frei erfundene Bilanz
+    vor, die einen Jahresüberschuss von 400.000 EUR ausweist, obwohl G positiv weiß,
+    dass die GmbH bereits erheblich überschuldet und zahlungsunfähig ist. G handelt
+    so, um sich selbst eine erfolgsabhängige Vermittlungsprovision von 2.500 EUR
+    zu sichern. I zeichnet die Beteiligung; wenige Wochen später muss die GmbH Insolvenz
+    anmelden, und die Einlage der I ist vollständig verloren.
+  question: Hat I gegen G einen Anspruch auf Schadensersatz in Höhe von 25.000 EUR
     aus § 826 BGB?
   steps:
-  - prompt: Warum scheidet ein Anspruch aus § 823 Abs. 1 BGB als Grundlage fuer den
+  - prompt: Warum scheidet ein Anspruch aus § 823 Abs. 1 BGB als Grundlage für den
       Ersatz der 25.000 EUR aus?
-    erwartung: Weil der Verlust der Einlage ein reiner Vermoegensschaden ist; das
-      Vermoegen als solches gehoert nicht zu den in § 823 Abs. 1 BGB abschliessend
-      genannten Rechtsguetern.
+    erwartung: Weil der Verlust der Einlage ein reiner Vermögensschaden ist; das
+      Vermögen als solches gehört nicht zu den in § 823 Abs. 1 BGB abschließend
+      genannten Rechtsgütern.
   - prompt: Ist das Verhalten des G als sittenwidrig zu qualifizieren?
     erwartung: 'Ja: die bewusste Vorlage einer frei erfundenen, die wirtschaftliche
-      Lage der GmbH ins Gegenteil verkehrenden Bilanz zur gezielten Anlagetaeuschung
-      verstoesst eindeutig gegen die grundlegenden Wertungen der Rechts- und Sittenordnung.'
-  - prompt: Liegt der erforderliche Schaedigungsvorsatz vor?
-    erwartung: 'Ja: G wusste um die Zahlungsunfaehigkeit der GmbH und nahm den Vermoegensverlust
-      der I zumindest billigend in Kauf (dolus eventualis genuegt), um sich selbst
+      Lage der GmbH ins Gegenteil verkehrenden Bilanz zur gezielten Anlagetäuschung
+      verstößt eindeutig gegen die grundlegenden Wertungen der Rechts- und Sittenordnung.'
+  - prompt: Liegt der erforderliche Schädigungsvorsatz vor?
+    erwartung: 'Ja: G wusste um die Zahlungsunfähigkeit der GmbH und nahm den Vermögensverlust
+      der I zumindest billigend in Kauf (dolus eventualis genügt), um sich selbst
       die Provision zu sichern.'
-  - prompt: Bezieht sich der Vorsatz auch auf die sittenwidrigkeitsbegruendenden Umstaende?
-    erwartung: 'Ja: G kannte sowohl die Unrichtigkeit der Bilanz als auch deren taeuschende
-      Zielrichtung gegenueber I.'
+  - prompt: Bezieht sich der Vorsatz auch auf die sittenwidrigkeitsbegründenden Umstände?
+    erwartung: 'Ja: G kannte sowohl die Unrichtigkeit der Bilanz als auch deren täuschende
+      Zielrichtung gegenüber I.'
   - prompt: Zu welchem Ergebnis kommt man?
-    erwartung: I hat gegen G einen Anspruch auf Schadensersatz in Hoehe von 25.000
+    erwartung: I hat gegen G einen Anspruch auf Schadensersatz in Höhe von 25.000
       EUR aus § 826 BGB.
   expectation:
     pruefpunkte:
     - id: p1
-      label: § 826 BGB als einschlaegige Anspruchsgrundlage benannt, da § 823 Abs.
-        1 BGB den reinen Vermoegensschaden nicht erfasst
+      label: § 826 BGB als einschlägige Anspruchsgrundlage benannt, da § 823 Abs.
+        1 BGB den reinen Vermögensschaden nicht erfasst
       weight: 2.0
       required: true
       norms:
@@ -200,13 +200,13 @@ faelle:
       - § 823 Abs. 1 BGB
       keywords:
       - '826'
-      - reiner Vermoegensschaden
+      - reiner Vermögensschaden
       - 823 Abs. 1
       card_slugs:
       - zr-826-reine-vermoegensschaeden
       - zr-826-abgrenzung-823-1
     - id: p2
-      label: Sittenwidrigkeit bejaht (bewusst gefaelschte Bilanz zur Anlagetaeuschung)
+      label: Sittenwidrigkeit bejaht (bewusst gefälschte Bilanz zur Anlagetäuschung)
       weight: 2.0
       required: true
       norms:
@@ -214,11 +214,11 @@ faelle:
       keywords:
       - sittenwidrig
       - Bilanz
-      - Taeuschung
+      - Täuschung
       card_slugs:
       - zr-826-sittenwidrigkeit-begriff
     - id: p3
-      label: Schaedigungsvorsatz (dolus eventualis genuegt) bejaht
+      label: Schädigungsvorsatz (dolus eventualis genügt) bejaht
       weight: 2.0
       required: true
       norms:
@@ -230,7 +230,7 @@ faelle:
       card_slugs:
       - zr-826-schaedigungsvorsatz
     - id: p4
-      label: Vorsatz bzgl. der sittenwidrigkeitsbegruendenden Umstaende erkannt
+      label: Vorsatz bzgl. der sittenwidrigkeitsbegründenden Umstände erkannt
       weight: 1.0
       keywords:
       - kannte
@@ -238,7 +238,7 @@ faelle:
       card_slugs:
       - zr-826-vorsatz-sittenwidrige-umstaende
     - id: p5
-      label: Kausaler Vermoegensschaden in Hoehe der verlorenen Einlage von 25.000
+      label: Kausaler Vermögensschaden in Höhe der verlorenen Einlage von 25.000
         EUR bejaht
       weight: 1.5
       required: true

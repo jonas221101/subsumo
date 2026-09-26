@@ -26,13 +26,18 @@ final _dir = Platform.environment['SUBSUMO_SCREENSHOTS'];
 dynamic _fixture(String name) => jsonDecode(File('$_dir/$name.json').readAsStringSync());
 
 Future<void> _loadFonts() async {
-  for (final (family, asset) in [
-    ('Subsumo', 'assets/fonts/DejaVuSans.ttf'),
-    ('Fraunces', 'assets/fonts/Fraunces-Variable.ttf'),
+  final subsumo = FontLoader('Subsumo');
+  for (final asset in [
+    'assets/fonts/SourceSans3-Regular.ttf',
+    'assets/fonts/SourceSans3-It.ttf',
+    'assets/fonts/SourceSans3-Semibold.ttf',
+    'assets/fonts/SourceSans3-Bold.ttf',
   ]) {
-    final loader = FontLoader(family)..addFont(rootBundle.load(asset));
-    await loader.load();
+    subsumo.addFont(rootBundle.load(asset));
   }
+  await subsumo.load();
+  final fraunces = FontLoader('Fraunces')..addFont(rootBundle.load('assets/fonts/Fraunces-Variable.ttf'));
+  await fraunces.load();
   // Icon-Schrift aus dem Flutter-SDK, damit Icons nicht als Kaestchen
   // erscheinen (nur fuer die Screenshots relevant).
   final flutterRoot = Platform.environment['FLUTTER_ROOT'] ?? r'C:\srclutter';
@@ -153,6 +158,21 @@ void main() {
   testWidgets('login', (tester) async {
     await _pump(tester, const LoginPage());
     await _shot(tester, '08-login');
+  }, skip: skip);
+
+  Future<void> pumpPublic(WidgetTester tester, String location, Size size) async {
+    tester.view.physicalSize = size;
+    tester.view.devicePixelRatio = 1.0;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(SubsumoApp(state: _state(), initialLocation: location));
+    await tester.pumpAndSettle();
+  }
+
+  testWidgets('landing', (tester) async {
+    await pumpPublic(tester, '/', const Size(1280, 2600));
+    await _shot(tester, '11-landing');
+    await pumpPublic(tester, '/preise', const Size(1280, 1400));
+    await _shot(tester, '12-preise');
   }, skip: skip);
 
   testWidgets('mobil', (tester) async {

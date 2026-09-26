@@ -230,7 +230,7 @@ class Submission(Base):
 class CaseAccess(Base):
     """Erster Zugriff eines Nutzers auf einen Fall.
 
-    Grundlage fuer das Free-Tier-Limit "2 gefuehrte Faelle" (docs/20, Abschnitt
+    Grundlage fuer das Free-Tier-Limit "2 geführte Fälle" (docs/20, Abschnitt
     4 B2): bereits gesehene Faelle bleiben erreichbar, nur der jeweils naechste
     *neue* Fall zaehlt gegen das Kontingent.
     """

@@ -1,7 +1,7 @@
 topic:
   slug: zr-at-geschaeftsfaehigkeit
   area: zivilrecht
-  title: Geschaeftsfaehigkeit Minderjaehriger, §§ 104 ff. BGB
+  title: Geschäftsfähigkeit Minderjähriger, §§ 104 ff. BGB
   parent: zr-bgb-at
   relevance: 5
   stand: 2026-09
@@ -14,11 +14,11 @@ topic:
 cards:
 - slug: zr-at-geschaeftsfaehigkeit-begriff
   type: definition
-  front: 'Definiere: Geschaeftsfaehigkeit'
-  back: 'Geschaeftsfaehigkeit ist die Faehigkeit, Rechtsgeschaefte selbst wirksam
-    vornehmen zu koennen. Das Gesetz unterscheidet drei Stufen: Geschaeftsunfaehigkeit
-    (§ 104 BGB), beschraenkte Geschaeftsfaehigkeit (§ 106 BGB) und volle Geschaeftsfaehigkeit
-    mit der Volljaehrigkeit (§ 2 BGB).'
+  front: 'Definiere: Geschäftsfähigkeit'
+  back: 'Geschäftsfähigkeit ist die Fähigkeit, Rechtsgeschäfte selbst wirksam
+    vornehmen zu können. Das Gesetz unterscheidet drei Stufen: Geschäftsunfähigkeit
+    (§ 104 BGB), beschränkte Geschäftsfähigkeit (§ 106 BGB) und volle Geschäftsfähigkeit
+    mit der Volljährigkeit (§ 2 BGB).'
   norms:
   - § 104 BGB
   - § 106 BGB
@@ -29,13 +29,13 @@ cards:
   stand: 2026-09
 - slug: zr-at-geschaeftsunfaehigkeit-104
   type: definition
-  front: 'Definiere: Geschaeftsunfaehigkeit (§ 104 BGB) und ihre Rechtsfolge'
-  back: Geschaeftsunfaehig ist, wer nicht das siebente Lebensjahr vollendet hat (§
-    104 Nr. 1 BGB), oder wer sich in einem die freie Willensbestimmung ausschliessenden
-    Zustand krankhafter Stoerung der Geistestaetigkeit befindet, sofern der Zustand
-    nicht seiner Natur nach ein voruebergehender ist (§ 104 Nr. 2 BGB). Eine von einem
-    Geschaeftsunfaehigen abgegebene Willenserklaerung ist nichtig (§ 105 Abs. 1 BGB)
-    - anders als bei der blossen Anfechtbarkeit gibt es hier keine Heilung durch Genehmigung.
+  front: 'Definiere: Geschäftsunfähigkeit (§ 104 BGB) und ihre Rechtsfolge'
+  back: Geschäftsunfähig ist, wer nicht das siebente Lebensjahr vollendet hat (§
+    104 Nr. 1 BGB), oder wer sich in einem die freie Willensbestimmung ausschließenden
+    Zustand krankhafter Störung der Geistestätigkeit befindet, sofern der Zustand
+    nicht seiner Natur nach ein vorübergehender ist (§ 104 Nr. 2 BGB). Eine von einem
+    Geschäftsunfähigen abgegebene Willenserklärung ist nichtig (§ 105 Abs. 1 BGB)
+    - anders als bei der bloßen Anfechtbarkeit gibt es hier keine Heilung durch Genehmigung.
   norms:
   - § 104 BGB
   - § 105 Abs. 1 BGB
@@ -45,11 +45,11 @@ cards:
   stand: 2026-09
 - slug: zr-at-beschraenkte-geschaeftsfaehigkeit-106
   type: definition
-  front: 'Definiere: beschraenkte Geschaeftsfaehigkeit (§ 106 BGB)'
-  back: Beschraenkt geschaeftsfaehig ist ein Minderjaehriger, der das siebente Lebensjahr
-    vollendet hat (§ 106 BGB). Er kann Vertraege wirksam schliessen, soweit ihm dies
-    gesetzlich erlaubt ist - insbesondere bei lediglich rechtlich vorteilhaften Geschaeften
-    (§ 107 BGB) und im Rahmen des Taschengeldparagraphen (§ 110 BGB); im Uebrigen
+  front: 'Definiere: beschränkte Geschäftsfähigkeit (§ 106 BGB)'
+  back: Beschränkt geschäftsfähig ist ein Minderjähriger, der das siebente Lebensjahr
+    vollendet hat (§ 106 BGB). Er kann Verträge wirksam schließen, soweit ihm dies
+    gesetzlich erlaubt ist - insbesondere bei lediglich rechtlich vorteilhaften Geschäften
+    (§ 107 BGB) und im Rahmen des Taschengeldparagraphen (§ 110 BGB); im Übrigen
     bedarf er der Einwilligung seines gesetzlichen Vertreters (§ 107 BGB).
   norms:
   - § 106 BGB
@@ -60,13 +60,13 @@ cards:
   stand: 2026-09
 - slug: zr-at-lediglich-rechtlicher-vorteil-107
   type: definition
-  front: Wann bedarf der beschraenkt Geschaeftsfaehige keiner Einwilligung, § 107
+  front: Wann bedarf der beschränkt Geschäftsfähige keiner Einwilligung, § 107
     BGB?
-  back: 'Wenn ihm das Rechtsgeschaeft lediglich einen rechtlichen Vorteil bringt.
-    Massgeblich ist eine rein rechtliche Betrachtung: Schon eine einzige mit dem Geschaeft
-    verbundene rechtliche Pflicht - auch als blosse Nebenfolge - nimmt dem Geschaeft
+  back: 'Wenn ihm das Rechtsgeschäft lediglich einen rechtlichen Vorteil bringt.
+    Maßgeblich ist eine rein rechtliche Betrachtung: Schon eine einzige mit dem Geschäft
+    verbundene rechtliche Pflicht - auch als bloße Nebenfolge - nimmt dem Geschäft
     die Einwilligungsfreiheit; wirtschaftliche Nachteile, etwa eine ungünstige Wertrelation,
-    bleiben dagegen unberuecksichtigt. Beispiel: Die Annahme einer Schenkung ohne
+    bleiben dagegen unberücksichtigt. Beispiel: Die Annahme einer Schenkung ohne
     Auflage ist lediglich rechtlich vorteilhaft, ein Kaufvertrag wegen der Pflicht
     zur Kaufpreiszahlung dagegen nicht.'
   norms:
@@ -79,11 +79,11 @@ cards:
   type: definition
   front: Was folgt aus dem Fehlen der erforderlichen Einwilligung nach § 108 Abs.
     1 BGB?
-  back: Schliesst der beschraenkt Geschaeftsfaehige ohne die erforderliche Einwilligung
-    (§ 183 BGB) seines gesetzlichen Vertreters einen Vertrag, so haengt dessen Wirksamkeit
-    von der nachtraeglichen Genehmigung des Vertreters ab (§ 108 Abs. 1, § 184 Abs.
-    1 BGB) - der Vertrag ist bis dahin schwebend unwirksam. Bei einseitigen Rechtsgeschaeften
-    fuehrt das Fehlen der Einwilligung dagegen zur sofortigen, endgueltigen Unwirksamkeit
+  back: Schließt der beschränkt Geschäftsfähige ohne die erforderliche Einwilligung
+    (§ 183 BGB) seines gesetzlichen Vertreters einen Vertrag, so hängt dessen Wirksamkeit
+    von der nachträglichen Genehmigung des Vertreters ab (§ 108 Abs. 1, § 184 Abs.
+    1 BGB) - der Vertrag ist bis dahin schwebend unwirksam. Bei einseitigen Rechtsgeschäften
+    führt das Fehlen der Einwilligung dagegen zur sofortigen, endgültigen Unwirksamkeit
     (§ 111 BGB).
   norms:
   - § 183 BGB
@@ -96,13 +96,13 @@ cards:
   stand: 2026-09
 - slug: zr-at-widerruf-aufforderung-108-109
   type: definition
-  front: Welche Rechte hat der Vertragspartner waehrend des Schwebezustands, §§ 108,
+  front: Welche Rechte hat der Vertragspartner während des Schwebezustands, §§ 108,
     109 BGB?
-  back: Der andere Teil kann den gesetzlichen Vertreter zur Erklaerung ueber die Genehmigung
-    auffordern (§ 108 Abs. 2 S. 1 BGB); eine vorher dem Minderjaehrigen gegenueber
-    erklaerte Genehmigung oder Verweigerung wird dadurch unwirksam (§ 108 Abs. 2 S.
+  back: Der andere Teil kann den gesetzlichen Vertreter zur Erklärung über die Genehmigung
+    auffordern (§ 108 Abs. 2 S. 1 BGB); eine vorher dem Minderjährigen gegenüber
+    erklärte Genehmigung oder Verweigerung wird dadurch unwirksam (§ 108 Abs. 2 S.
     2 BGB). Bis zur Genehmigung ist der andere Teil zudem zum Widerruf berechtigt,
-    es sei denn, er kannte die Minderjaehrigkeit bei Vertragsschluss (§ 109 Abs. 1
+    es sei denn, er kannte die Minderjährigkeit bei Vertragsschluss (§ 109 Abs. 1
     BGB).
   norms:
   - § 108 Abs. 2 BGB
@@ -114,13 +114,13 @@ cards:
 - slug: zr-at-taschengeldparagraph-110
   type: definition
   front: 'Definiere: Taschengeldparagraph (§ 110 BGB) - Voraussetzungen'
-  back: 'Ein von dem Minderjaehrigen ohne Zustimmung des gesetzlichen Vertreters geschlossener
-    Vertrag gilt gemaess § 110 BGB als von Anfang an genehmigt, wenn der Minderjaehrige
-    die vertragsmaessige Leistung mit Mitteln bewirkt, die ihm zu diesem Zweck oder
-    zur freien Verfuegung von dem Vertreter oder mit dessen Zustimmung von einem Dritten
-    ueberlassen worden sind. Voraussetzungen sind also: eine generelle oder zweckgebundene
-    Ueberlassungsermaechtigung und die tatsaechliche Bewirkung der Leistung - der
-    blosse Vertragsschluss reicht nicht.'
+  back: 'Ein von dem Minderjährigen ohne Zustimmung des gesetzlichen Vertreters geschlossener
+    Vertrag gilt gemäß § 110 BGB als von Anfang an genehmigt, wenn der Minderjährige
+    die vertragsmäßige Leistung mit Mitteln bewirkt, die ihm zu diesem Zweck oder
+    zur freien Verfügung von dem Vertreter oder mit dessen Zustimmung von einem Dritten
+    überlassen worden sind. Voraussetzungen sind also: eine generelle oder zweckgebundene
+    Überlassungsermächtigung und die tatsächliche Bewirkung der Leistung - der
+    bloße Vertragsschluss reicht nicht.'
   norms:
   - § 110 BGB
   quellen:
@@ -129,29 +129,29 @@ cards:
   stand: 2026-09
 - slug: zr-at-taschengeldparagraph-ratenzahlung
   type: streitstand
-  front: 'Streitstand: Erfasst § 110 BGB auch Vertraege, bei denen der Minderjaehrige
-    die Gegenleistung erst spaeter aus kuenftigem Taschengeld erbringen soll?'
-  back: 'Problem: Der Minderjaehrige verpflichtet sich bei Vertragsschluss zu
+  front: 'Streitstand: Erfasst § 110 BGB auch Verträge, bei denen der Minderjährige
+    die Gegenleistung erst später aus künftigem Taschengeld erbringen soll?'
+  back: 'Problem: Der Minderjährige verpflichtet sich bei Vertragsschluss zu
 
-    einer Ratenzahlung aus noch zu erwartendem, ihm zur freien Verfuegung
+    einer Ratenzahlung aus noch zu erwartendem, ihm zur freien Verfügung
 
-    ueberlassenem Taschengeld, ohne die Leistung sofort zu bewirken.
+    überlassenem Taschengeld, ohne die Leistung sofort zu bewirken.
 
 
-    e.A.: § 110 BGB erfasse auch solche Geschaefte, solange die
+    e.A.: § 110 BGB erfasse auch solche Geschäfte, solange die
 
-    kuenftigen Mittel objektiv zur freien Verfuegung bestimmt sind - der
+    künftigen Mittel objektiv zur freien Verfügung bestimmt sind - der
 
-    Minderjaehrige solle nicht schlechter stehen, nur weil er in Raten
+    Minderjährige solle nicht schlechter stehen, nur weil er in Raten
 
     statt sofort zahlt.
 
 
-    h.M.: § 110 BGB verlangt die tatsaechliche Bewirkung der Leistung im
+    h.M.: § 110 BGB verlangt die tatsächliche Bewirkung der Leistung im
 
-    Zeitpunkt des Vertragsschlusses mit bereits ueberlassenen Mitteln.
+    Zeitpunkt des Vertragsschlusses mit bereits überlassenen Mitteln.
 
-    Ein Vertrag, der den Minderjaehrigen zu kuenftigen Zahlungen aus erst
+    Ein Vertrag, der den Minderjährigen zu künftigen Zahlungen aus erst
 
     noch zu erwartendem Taschengeld verpflichtet, wird von § 110 BGB
 
@@ -162,11 +162,11 @@ cards:
 
     Streitentscheid: Der h.M. ist zu folgen. Der Schutzzweck des § 110
 
-    BGB liegt darin, dass der Minderjaehrige keine ueber die bereits
+    BGB liegt darin, dass der Minderjährige keine über die bereits
 
     erbrachte Leistung hinausgehende Verpflichtung eingeht; eine
 
-    Verpflichtung zu kuenftigen Zahlungen ist etwas anderes als die von
+    Verpflichtung zu künftigen Zahlungen ist etwas anderes als die von
 
     § 110 BGB privilegierte Vorleistung mit bereits vorhandenen Mitteln.
 
@@ -180,7 +180,7 @@ cards:
   stand: 2026-09
 schemata:
 - slug: zr-schema-geschaeftsfaehigkeit-vertrag
-  title: Wirksamkeit eines Vertrags eines Minderjaehrigen, §§ 104 ff. BGB
+  title: Wirksamkeit eines Vertrags eines Minderjährigen, §§ 104 ff. BGB
   norms:
   - § 104 BGB
   - § 106 BGB
@@ -191,24 +191,24 @@ schemata:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
   steps:
-  - label: I. Geschaeftsfaehigkeit des Handelnden
+  - label: I. Geschäftsfähigkeit des Handelnden
     children:
-    - label: 1. Geschaeftsunfaehigkeit, § 104 BGB
-      hinweis: Dann Nichtigkeit der Willenserklaerung, § 105 Abs. 1 BGB - keine weitere
-        Pruefung.
-    - label: 2. Beschraenkte Geschaeftsfaehigkeit, § 106 BGB
-  - label: II. Einwilligungsfreiheit des Geschaefts
+    - label: 1. Geschäftsunfähigkeit, § 104 BGB
+      hinweis: Dann Nichtigkeit der Willenserklärung, § 105 Abs. 1 BGB - keine weitere
+        Prüfung.
+    - label: 2. Beschränkte Geschäftsfähigkeit, § 106 BGB
+  - label: II. Einwilligungsfreiheit des Geschäfts
     children:
     - label: 1. Lediglich rechtlicher Vorteil, § 107 BGB
     - label: 2. Einwilligung des gesetzlichen Vertreters, §§ 107, 183 BGB
-  - label: 'III. Bei fehlender Einwilligung: Wirksamkeit ueber Sonderregeln'
+  - label: 'III. Bei fehlender Einwilligung: Wirksamkeit über Sonderregeln'
     children:
     - label: 1. Taschengeldparagraph, § 110 BGB
-      hinweis: Nur bei tatsaechlicher Bewirkung der Leistung mit ueberlassenen Mitteln.
-    - label: 2. Nachtraegliche Genehmigung, § 108 Abs. 1, § 184 Abs. 1 BGB
+      hinweis: Nur bei tatsächlicher Bewirkung der Leistung mit überlassenen Mitteln.
+    - label: 2. Nachträgliche Genehmigung, § 108 Abs. 1, § 184 Abs. 1 BGB
   - label: IV. Ergebnis
     children:
-    - label: Vertrag wirksam - oder endgueltig unwirksam bei Widerruf (§ 109 BGB)
+    - label: Vertrag wirksam - oder endgültig unwirksam bei Widerruf (§ 109 BGB)
         oder Genehmigungsverweigerung
 faelle:
 - slug: zr-fall-wunschkonsole
@@ -219,29 +219,29 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - BGB, amtliche Fassung
   facts: Der 15-jaehrige K spart sein Taschengeld, das ihm seine Eltern zur freien
-    Verfuegung ueberlassen haben, seit Monaten an. Als er 280 EUR zusammen hat, geht
+    Verfügung überlassen haben, seit Monaten an. Als er 280 EUR zusammen hat, geht
     er ohne Wissen seiner Eltern in den Elektronikmarkt des V und kauft dort eine
-    Spielekonsole fuer 280 EUR. Er bezahlt sofort in bar mit dem angesparten Geld;
-    V uebergibt ihm die Konsole direkt im Laden. Am naechsten Tag erfahren K's Eltern
-    von dem Kauf. Sie halten die Konsole fuer eine Fehlinvestition und verlangen von
-    V, die Konsole gegen Rueckzahlung der 280 EUR zurueckzunehmen.
-  question: Koennen K's Eltern von V die Ruecknahme der Konsole gegen Rueckzahlung
+    Spielekonsole für 280 EUR. Er bezahlt sofort in bar mit dem angesparten Geld;
+    V übergibt ihm die Konsole direkt im Laden. Am nächsten Tag erfahren K's Eltern
+    von dem Kauf. Sie halten die Konsole für eine Fehlinvestition und verlangen von
+    V, die Konsole gegen Rückzahlung der 280 EUR zurückzunehmen.
+  question: Können K's Eltern von V die Rücknahme der Konsole gegen Rückzahlung
     des Kaufpreises verlangen?
   steps:
-  - prompt: Formuliere den Obersatz fuer den von den Eltern geltend gemachten Anspruch.
+  - prompt: Formuliere den Obersatz für den von den Eltern geltend gemachten Anspruch.
     erwartung: Ein Anspruch der Eltern setzt voraus, dass der Kaufvertrag zwischen
-      K und V unwirksam ist, so dass V die Konsole ohne Rechtsgrund erhalten haette
-      bzw. K sie ohne Rechtsgrund erlangt haette.
-  - prompt: Wie ist K's Geschaeftsfaehigkeit einzuordnen und was folgt daraus fuer
+      K und V unwirksam ist, so dass V die Konsole ohne Rechtsgrund erhalten hätte
+      bzw. K sie ohne Rechtsgrund erlangt hätte.
+  - prompt: Wie ist K's Geschäftsfähigkeit einzuordnen und was folgt daraus für
       den Kaufvertrag?
-    erwartung: K ist mit 15 Jahren beschraenkt geschaeftsfaehig (§ 106 BGB). Der Kaufvertrag
-      ist wegen der Pflicht zur Kaufpreiszahlung fuer ihn nicht lediglich rechtlich
-      vorteilhaft (§ 107 BGB) und daher grundsaetzlich einwilligungsbeduerftig.
+    erwartung: K ist mit 15 Jahren beschränkt geschäftsfähig (§ 106 BGB). Der Kaufvertrag
+      ist wegen der Pflicht zur Kaufpreiszahlung für ihn nicht lediglich rechtlich
+      vorteilhaft (§ 107 BGB) und daher grundsätzlich einwilligungsbedürftig.
   - prompt: Kann der Vertrag trotz fehlender vorheriger Einwilligung wirksam sein?
-    erwartung: 'Ja, ueber § 110 BGB (Taschengeldparagraph): Die Eltern hatten K das
-      Geld zur freien Verfuegung ueberlassen, und K hat die Leistung tatsaechlich
+    erwartung: 'Ja, über § 110 BGB (Taschengeldparagraph): Die Eltern hatten K das
+      Geld zur freien Verfügung überlassen, und K hat die Leistung tatsächlich
       mit diesen Mitteln bewirkt (Barzahlung bei Vertragsschluss).'
-  - prompt: Welche Rechtsfolge hat § 110 BGB fuer den Kaufvertrag?
+  - prompt: Welche Rechtsfolge hat § 110 BGB für den Kaufvertrag?
     erwartung: Der Vertrag gilt von Anfang an als genehmigt und ist damit wirksam.
   expectation:
     pruefpunkte:
@@ -256,7 +256,7 @@ faelle:
       card_slugs:
       - zr-at-geschaeftsfaehigkeit-begriff
     - id: p2
-      label: K ist beschraenkt geschaeftsfaehig, § 106 BGB; Kaufvertrag nicht lediglich
+      label: K ist beschränkt geschäftsfähig, § 106 BGB; Kaufvertrag nicht lediglich
         rechtlich vorteilhaft, § 107 BGB
       weight: 2.0
       required: true
@@ -264,7 +264,7 @@ faelle:
       - § 106 BGB
       - § 107 BGB
       keywords:
-      - beschraenkt geschaeftsfaehig
+      - beschränkt geschäftsfähig
       - lediglich rechtlich vorteilhaft
       - '106'
       - '107'
@@ -272,7 +272,7 @@ faelle:
       - zr-at-beschraenkte-geschaeftsfaehigkeit-106
       - zr-at-lediglich-rechtlicher-vorteil-107
     - id: p3
-      label: Grundsaetzliches Einwilligungsbeduerfnis mangels vorheriger Zustimmung
+      label: Grundsätzliches Einwilligungsbedürfnis mangels vorheriger Zustimmung
         der Eltern erkannt
       weight: 1.0
       keywords:
@@ -281,8 +281,8 @@ faelle:
       card_slugs:
       - zr-at-einwilligung-genehmigung-schwebende-unwirksamkeit
     - id: p4
-      label: Pruefung und Bejahung der Voraussetzungen des § 110 BGB (Ueberlassung
-        zur freien Verfuegung + Bewirkung der Leistung)
+      label: Prüfung und Bejahung der Voraussetzungen des § 110 BGB (Überlassung
+        zur freien Verfügung + Bewirkung der Leistung)
       weight: 3.0
       required: true
       norms:
@@ -290,7 +290,7 @@ faelle:
       keywords:
       - '110'
       - Taschengeld
-      - zur freien Verfuegung
+      - zur freien Verfügung
       - bewirkt
       card_slugs:
       - zr-at-taschengeldparagraph-110

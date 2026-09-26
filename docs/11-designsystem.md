@@ -530,7 +530,30 @@ bleiben unangetastet - der Relaunch verschiebt Handwerk, nicht Haltung.
 | `ink700Dark #C3C8CF` auf `surface0Dark #171D27` | 10.9:1 | AAA |
 | `hairlineLight #DDD7C9` auf `surface0Light #FDFCF9` (nicht-textuell) | 1.3:1 | dekorative Trennlinie, kein Bedienelement - bewusst leise; Bedienelement-Konturen nutzen `outline` (`ink300`, 2.0:1 gegen `surface0`, bzw. Fuellung `primary`) |
 
-### 9.5 Weiterhin ausdruecklich nicht
+### 9.5 Schrift und Umlaute
+
+- **Fliesstextschrift ist Source Sans 3** (Adobe, SIL OFL 1.1, Release
+  3.052R; Regular/Italic/Semibold/Bold als statische Schnitte, siehe
+  `app/assets/fonts/LIZENZ.md`). Der Familienname im Code bleibt `Subsumo`,
+  damit kein TextStyle angefasst werden musste. DejaVu Sans ist entfernt.
+  Die Typoskala wurde eine Stufe angehoben (body 17/16/14, title 22/18/16),
+  weil Source Sans 3 eine kleinere x-Hoehe hat.
+- Die Material-Rollen `headlineMedium`/`headlineSmall` sind auf
+  `headingLarge`/`headingMedium` (Fraunces) gelegt - dadurch tragen auch
+  Landingpage, Preisseite, Rechtstexte und das Gutachten-Ergebnis die
+  Serife, ohne dass diese Seiten einzeln geaendert wurden.
+- **Echte Umlaute und ß** in allen nutzersichtbaren Texten: App-Strings,
+  Backend-Meldungen und die Lerninhalte (`content/**/*.yaml`, nur Werte -
+  Slugs, Schluessel, `area`/`type` bleiben ASCII). Die Umstellung lief
+  woerterbuchgestuetzt (Hunspell de_DE + Haeufigkeitsliste), damit
+  „Zueignung", „Untreue", „aktuell", „Quellen" oder „Statue" nicht
+  faelschlich gewandelt werden; Komposita ohne Woerterbuchtreffer folgen
+  einer Heuristik (kein Umlaut nach Vokal/q, „-uell"-Adjektive bleiben) mit
+  eindeutigen ß-Morphemen (gemäß, -mäßig, äußer, groß, schließ, Maßnahme,
+  Fuß, Straße). Neue Inhalte schreiben Umlaute direkt; die Suche im
+  Evaluator faltet weiterhin beide Schreibweisen (`_digraph_fold`).
+
+### 9.6 Weiterhin ausdruecklich nicht
 
 Keine Ampel-Logik, keine Streaks, kein Konfetti, keine Illustration oder
 Maskottchen in App-Screens, kein Bounce. Das Subsumtions-Motiv bleibt auf

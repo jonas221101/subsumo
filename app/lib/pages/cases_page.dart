@@ -55,8 +55,8 @@ class _CasesPageState extends State<CasesPage> {
     if (_loading) return const ScreenStatus.loading();
     if (_cases.isEmpty) {
       return ScreenStatus.empty(
-        message: 'Keine Faelle verfuegbar.',
-        detail: 'Faelle werden ab M1 auch offline aus dem lokalen Speicher geladen.',
+        message: 'Keine Fälle verfügbar.',
+        detail: 'Fälle werden ab M1 auch offline aus dem lokalen Speicher geladen.',
         onRetry: _load,
       );
     }

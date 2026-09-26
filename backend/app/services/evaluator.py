@@ -83,7 +83,7 @@ class Evaluation:
     engine: str                   # "heuristik" | "llm:<model>"
     disclaimer: str = (
         "Lernhilfe, keine Rechtsberatung. Die Bewertung erfolgt gegen den "
-        "hinterlegten Erwartungshorizont dieses Uebungsfalls."
+        "hinterlegten Erwartungshorizont dieses Übungsfalls."
     )
 
     def to_dict(self) -> dict:
@@ -191,7 +191,7 @@ class HeuristicEvaluator:
                     weight=cp.weight,
                     hit=hit,
                     evidence=evidence,
-                    comment="" if hit else "Dieser Pruefpunkt wird nicht angesprochen.",
+                    comment="" if hit else "Dieser Prüfpunkt wird nicht angesprochen.",
                 )
             )
 
@@ -220,12 +220,12 @@ class HeuristicEvaluator:
             f"(gewichtet {content_ratio:.0%}), Strukturscore {structure.score}/100."
         )
         if missed_required:
-            summary += " Kernpruefpunkte fehlen: " + ", ".join(missed_required) + "."
+            summary += " Kernprüfpunkte fehlen: " + ", ".join(missed_required) + "."
         if gedeckelt:
             summary += (
                 f" Ohne KI-Korrektur wird bei {HEURISTIK_MAX_PUNKTE:.0f} Punkten "
-                "gedeckelt: Der Stichwortabgleich prueft, ob ein Punkt "
-                "angesprochen wurde, nicht ob die Argumentation ueberzeugt."
+                "gedeckelt: Der Stichwortabgleich prüft, ob ein Punkt "
+                "angesprochen wurde, nicht ob die Argumentation überzeugt."
             )
 
         return Evaluation(
@@ -270,17 +270,17 @@ class LLMEvaluator:
             for cp in checkpoints
         )
         return (
-            "Du korrigierst eine juristische Uebungsklausur. Bewerte AUSSCHLIESSLICH "
-            "anhand des folgenden Erwartungshorizonts. Erfinde keine Pruefpunkte und "
+            "Du korrigierst eine juristische Übungsklausur. Bewerte AUSSCHLIESSLICH "
+            "anhand des folgenden Erwartungshorizonts. Erfinde keine Prüfpunkte und "
             "keine Normen.\n\n"
             f"ERWARTUNGSHORIZONT:\n{horizont}\n\n"
             f"GUTACHTEN DES PRUEFLINGS:\n{text}\n\n"
             "Antworte ausschliesslich mit JSON nach diesem Schema:\n"
-            '{"checkpoints":[{"id":"...","hit":true,"evidence":"woertliches Zitat aus '
-            'dem Gutachten","comment":"knappe Begruendung"}],'
+            '{"checkpoints":[{"id":"...","hit":true,"evidence":"wörtliches Zitat aus '
+            'dem Gutachten","comment":"knappe Begründung"}],'
             '"summary":"zwei bis vier Saetze Gesamtrueckmeldung"}\n'
-            "Regeln: 'hit' nur true, wenn der Pruefpunkt inhaltlich tatsaechlich "
-            "behandelt wird, nicht bei blosser Erwaehnung. 'evidence' muss woertlich "
+            "Regeln: 'hit' nur true, wenn der Prüfpunkt inhaltlich tatsächlich "
+            "behandelt wird, nicht bei bloßer Erwähnung. 'evidence' muss wörtlich "
             "im Gutachten stehen."
         )
 

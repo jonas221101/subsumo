@@ -61,13 +61,13 @@ void main() {
 
     await _pump(tester, state);
 
-    expect(find.text('Dieser Fall ist mit Pro verfuegbar.'), findsOneWidget);
+    expect(find.text('Dieser Fall ist mit Pro verfügbar.'), findsOneWidget);
     expect(find.text('Ab dem dritten Fall nur mit Pro.'), findsOneWidget);
     // Kein Absturz, kein generischer Fehlertext, kein Editor.
     expect(find.byType(TextField), findsNothing);
   });
 
-  testWidgets('Fall laedt normal, wenn kein Limit erreicht ist', (tester) async {
+  testWidgets('Fall lädt normal, wenn kein Limit erreicht ist', (tester) async {
     final client = MockClient((request) async {
       if (request.url.path == '/v1/cases/zr-dritter-fall') {
         return _json(_case, 200);
@@ -78,13 +78,13 @@ void main() {
 
     await _pump(tester, state);
 
-    expect(find.text('Dieser Fall ist mit Pro verfuegbar.'), findsNothing);
+    expect(find.text('Dieser Fall ist mit Pro verfügbar.'), findsNothing);
     expect(find.byType(TextField), findsOneWidget);
     expect(find.text('A verkauft B ein Fahrrad.'), findsOneWidget);
   });
 
   testWidgets(
-      'Lesemodus (SUB-160) blendet den Fall-Titel aus, Inhalt bleibt lesbar, Rueckkehr jederzeit moeglich',
+      'Lesemodus (SUB-160) blendet den Fall-Titel aus, Inhalt bleibt lesbar, Rückkehr jederzeit möglich',
       (tester) async {
     final client = MockClient((request) async {
       if (request.url.path == '/v1/cases/zr-dritter-fall') {
@@ -135,7 +135,7 @@ void main() {
       await _pump(tester, state);
       await tester.enterText(
         find.byType(TextField),
-        'A koennte gegen B einen Anspruch auf Kaufpreiszahlung aus § 433 II BGB haben.',
+        'A könnte gegen B einen Anspruch auf Kaufpreiszahlung aus § 433 II BGB haben.',
       );
       // Debounce (700ms) abwarten, bis der Analyse-Request feuert.
       await tester.pump(const Duration(milliseconds: 800));
@@ -156,7 +156,7 @@ void main() {
   // vorliegt.
   group('Zustimmungsdialog zur KI-Korrektur (SUB-134)', () {
     const gutachtenText =
-        'A koennte gegen B einen Anspruch auf Kaufpreiszahlung aus § 433 II BGB haben.';
+        'A könnte gegen B einen Anspruch auf Kaufpreiszahlung aus § 433 II BGB haben.';
 
     MockClient clientWith({
       required bool aiCorrectionEnabled,
@@ -214,7 +214,7 @@ void main() {
       expect(find.text('Zustimmen'), findsOneWidget);
     });
 
-    testWidgets('erscheint nicht bei inaktivem Flag - Abgabe laeuft direkt durch', (tester) async {
+    testWidgets('erscheint nicht bei inaktivem Flag - Abgabe läuft direkt durch', (tester) async {
       final client = clientWith(aiCorrectionEnabled: false);
       final state = AppState(api: ApiClient(client: client)..setToken('t'))
         ..user = {'id': 1, 'email': 'a@example.com'};
@@ -232,11 +232,11 @@ void main() {
       expect(find.textContaining('Punkte'), findsOneWidget);
       // Feature aus: keine Engine-Kennzeichnung im Ergebnis (unveraenderte
       // Oberflaeche gegenueber dem Stand vor SUB-134).
-      expect(find.text('Heuristisch geprueft'), findsNothing);
+      expect(find.text('Heuristisch geprüft'), findsNothing);
       expect(find.text('KI-bewertet'), findsNothing);
     });
 
-    testWidgets('Ablehnen fuehrt zu einer erfolgreichen, heuristischen Abgabe', (tester) async {
+    testWidgets('Ablehnen führt zu einer erfolgreichen, heuristischen Abgabe', (tester) async {
       var consentGranted = false;
       final client = clientWith(
         aiCorrectionEnabled: true,
@@ -262,7 +262,7 @@ void main() {
 
       expect(find.text('KI-Korrektur nutzen?'), findsNothing);
       expect(find.textContaining('Punkte'), findsOneWidget);
-      expect(find.text('Heuristisch geprueft'), findsOneWidget);
+      expect(find.text('Heuristisch geprüft'), findsOneWidget);
       expect(consentGranted, isFalse);
     });
 
@@ -275,7 +275,7 @@ void main() {
           'evaluation': {
             'points': 14.0,
             'note': 'gut',
-            'summary': 'Sehr sauber begruendet.',
+            'summary': 'Sehr sauber begründet.',
             'checkpoints': [],
             'disclaimer': 'Lernhilfe, keine Rechtsberatung.',
             'engine': 'llm:claude-sonnet-5',
@@ -304,7 +304,7 @@ void main() {
       expect(find.text('KI-bewertet'), findsOneWidget);
     });
 
-    testWidgets('nach einer Ablehnung erscheint der Dialog bei der naechsten Seite nicht erneut',
+    testWidgets('nach einer Ablehnung erscheint der Dialog bei der nächsten Seite nicht erneut',
         (tester) async {
       final client = clientWith(aiCorrectionEnabled: true);
       final state = AppState(api: ApiClient(client: client)..setToken('t'))

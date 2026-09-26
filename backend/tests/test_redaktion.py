@@ -279,7 +279,7 @@ def test_pipeline_gibt_reviewer_feedback_an_collector_zurueck_und_erfolgt_dann(
     reviewer_client = FakeLLM(
         [
             '{"approved": false, "severity": "kleinere_maengel", '
-            '"issues": ["Norm pruefen"]}',
+            '"issues": ["Norm prüfen"]}',
             '{"approved": true, "severity": "ok", "issues": []}',
         ]
     )
@@ -295,7 +295,7 @@ def test_pipeline_gibt_reviewer_feedback_an_collector_zurueck_und_erfolgt_dann(
     assert result.rounds == 2
     # Das Feedback aus Runde 1 muss im zweiten Collector-Prompt auftauchen -
     # sonst haette der zweite Versuch keine Chance, es zu beheben.
-    assert "Norm pruefen" in collector_client.calls[1]
+    assert "Norm prüfen" in collector_client.calls[1]
 
 
 def test_pipeline_gibt_formatfehler_an_collector_zurueck(tmp_path: Path):

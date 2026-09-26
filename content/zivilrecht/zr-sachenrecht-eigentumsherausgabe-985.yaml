@@ -14,7 +14,7 @@ cards:
 - slug: zr-985-anspruchsvoraussetzungen
   type: definition
   front: Welche drei Voraussetzungen hat der Herausgabeanspruch aus § 985 BGB?
-  back: Der Anspruch aus § 985 BGB setzt voraus, dass der Anspruchsteller Eigentuemer
+  back: Der Anspruch aus § 985 BGB setzt voraus, dass der Anspruchsteller Eigentümer
     der Sache ist, der Anspruchsgegner Besitzer der Sache ist und der Besitzer kein
     Recht zum Besitz im Sinne des § 986 BGB hat.
   norms:
@@ -27,9 +27,9 @@ cards:
   type: definition
   front: Was bezeichnet der Begriff 'Vindikationslage'?
   back: Die Vindikationslage beschreibt den Zustand, in dem die Voraussetzungen des
-    § 985 BGB vorliegen - der Eigentuemer ist nicht (mehr) Besitzer der Sache und
+    § 985 BGB vorliegen - der Eigentümer ist nicht (mehr) Besitzer der Sache und
     der Besitzer hat kein Recht zum Besitz. Sie bildet zugleich die tatbestandliche
-    Grundlage fuer die Ansprueche des Eigentuemer-Besitzer-Verhaeltnisses aus §§ 987
+    Grundlage für die Ansprüche des Eigentümer-Besitzer-Verhältnisses aus §§ 987
     ff. BGB.
   norms:
   - § 985 BGB
@@ -40,11 +40,11 @@ cards:
 - slug: zr-986-recht-zum-besitz
   type: definition
   front: Was bewirkt ein Recht zum Besitz nach § 986 BGB?
-  back: Hat der Besitzer ein Recht zum Besitz gegenueber dem Eigentuemer - etwa aus
+  back: Hat der Besitzer ein Recht zum Besitz gegenüber dem Eigentümer - etwa aus
     einem schuldrechtlichen Vertrag wie Miete, Leihe oder Pacht, aus einem dinglichen
-    Recht wie Niessbrauch oder Pfandrecht, oder aus Gesetz -, kann er die Herausgabe
+    Recht wie Nießbrauch oder Pfandrecht, oder aus Gesetz -, kann er die Herausgabe
     nach § 985 BGB verweigern. Das Recht zum Besitz wirkt dabei nur relativ, also
-    nur im Verhaeltnis zu demjenigen, gegen den es sich richtet.
+    nur im Verhältnis zu demjenigen, gegen den es sich richtet.
   norms:
   - § 986 BGB
   quellen:
@@ -52,13 +52,13 @@ cards:
   stand: 2026-09
 - slug: zr-ebv-systematik-987ff
   type: definition
-  front: Welche Anspruchsgruppen regelt das Eigentuemer-Besitzer-Verhaeltnis (EBV)
+  front: Welche Anspruchsgruppen regelt das Eigentümer-Besitzer-Verhältnis (EBV)
     neben dem Herausgabeanspruch?
-  back: 'Das EBV der §§ 987 ff. BGB ergaenzt den Herausgabeanspruch aus § 985 BGB
-    um drei weitere Anspruchsgruppen zwischen nichtberechtigtem Besitzer und Eigentuemer:
+  back: 'Das EBV der §§ 987 ff. BGB ergänzt den Herausgabeanspruch aus § 985 BGB
+    um drei weitere Anspruchsgruppen zwischen nichtberechtigtem Besitzer und Eigentümer:
     den Nutzungsherausgabeanspruch (§§ 987, 988, 990, 993 BGB), den Schadensersatzanspruch
-    bei Verschlechterung, Untergang oder Unmoeglichkeit der Herausgabe (§§ 989, 990,
-    991, 992 BGB) und den Verwendungsersatzanspruch des Besitzers gegen den Eigentuemer
+    bei Verschlechterung, Untergang oder Unmöglichkeit der Herausgabe (§§ 989, 990,
+    991, 992 BGB) und den Verwendungsersatzanspruch des Besitzers gegen den Eigentümer
     (§§ 994 ff. BGB).'
   norms:
   - § 987 BGB
@@ -69,12 +69,12 @@ cards:
   stand: 2026-09
 - slug: zr-990-boesglaeubiger-besitzer
   type: definition
-  front: Welche Rechtsfolge hat Boesglaeubigkeit des Besitzers nach § 990 BGB?
-  back: War der Besitzer bereits beim Besitzerwerb boesglaeubig - kannte er also sein
-    fehlendes Besitzrecht oder kannte er es grob fahrlaessig nicht -, oder erfaehrt
-    er dies spaeter, haftet er ab diesem Zeitpunkt wie ein Besitzer, gegen den die
-    Herausgabeklage rechtshaengig ist. § 990 BGB erstreckt damit die verschaerfte
-    Haftung aus §§ 987, 989 BGB auf den boesglaeubigen, aber noch nicht verklagten
+  front: Welche Rechtsfolge hat Bösgläubigkeit des Besitzers nach § 990 BGB?
+  back: War der Besitzer bereits beim Besitzerwerb bösgläubig - kannte er also sein
+    fehlendes Besitzrecht oder kannte er es grob fahrlässig nicht -, oder erfährt
+    er dies später, haftet er ab diesem Zeitpunkt wie ein Besitzer, gegen den die
+    Herausgabeklage rechtshängig ist. § 990 BGB erstreckt damit die verschärfte
+    Haftung aus §§ 987, 989 BGB auf den bösgläubigen, aber noch nicht verklagten
     Besitzer.
   norms:
   - § 990 BGB
@@ -86,12 +86,12 @@ cards:
 - slug: zr-993-haftungsprivileg
   type: definition
   front: Worin besteht das Haftungsprivileg des § 993 Abs. 1 Halbsatz 2 BGB?
-  back: Ein gutglaeubiger und nicht verklagter unmittelbarer Besitzer haftet dem Eigentuemer
-    ueber die in §§ 987 bis 992 BGB genannten Faelle hinaus weder auf Nutzungsherausgabe
+  back: Ein gutgläubiger und nicht verklagter unmittelbarer Besitzer haftet dem Eigentümer
+    über die in §§ 987 bis 992 BGB genannten Fälle hinaus weder auf Nutzungsherausgabe
     noch auf Schadensersatz nach den allgemeinen Vorschriften - insbesondere nicht
-    nach Delikts- oder Bereicherungsrecht. Das EBV verdraengt insoweit abschliessend
-    die allgemeine Haftung und schuetzt den redlichen Besitzer vor unkalkulierbaren
-    Anspruechen.
+    nach Delikts- oder Bereicherungsrecht. Das EBV verdrängt insoweit abschließend
+    die allgemeine Haftung und schützt den redlichen Besitzer vor unkalkulierbaren
+    Ansprüchen.
   norms:
   - § 993 Abs. 1 BGB
   quellen:
@@ -99,15 +99,15 @@ cards:
   stand: 2026-09
 - slug: zr-ebv-sperrwirkung
   type: streitstand
-  front: Entfaltet die Vindikationslage eine Sperrwirkung gegenueber Anspruechen aus
+  front: Entfaltet die Vindikationslage eine Sperrwirkung gegenüber Ansprüchen aus
     Delikts- und Bereicherungsrecht?
-  back: Nach ganz herrschender Meinung verdraengen die §§ 987 ff. BGB als abschliessende
-    Sonderregelung im Verhaeltnis von nichtberechtigtem Besitzer und Eigentuemer die
+  back: Nach ganz herrschender Meinung verdrängen die §§ 987 ff. BGB als abschließende
+    Sonderregelung im Verhältnis von nichtberechtigtem Besitzer und Eigentümer die
     allgemeinen Anspruchsgrundlagen aus Deliktsrecht (§§ 823 ff. BGB) und Bereicherungsrecht
-    (§§ 812 ff. BGB), soweit deren Tatbestaende denselben Bereich betreffen wie das
-    EBV - insbesondere Nutzungen und Verwendungen. Ausserhalb dieses geregelten Bereichs,
-    etwa bei einer eigenstaendigen Rechtsgutsverletzung durch den Besitzer, bleiben
-    Delikts- und Bereicherungsansprueche unberuehrt anwendbar.
+    (§§ 812 ff. BGB), soweit deren Tatbestände denselben Bereich betreffen wie das
+    EBV - insbesondere Nutzungen und Verwendungen. Außerhalb dieses geregelten Bereichs,
+    etwa bei einer eigenständigen Rechtsgutsverletzung durch den Besitzer, bleiben
+    Delikts- und Bereicherungsansprüche unberührt anwendbar.
   norms:
   - § 985 BGB
   - § 987 BGB
@@ -126,43 +126,43 @@ schemata:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
   steps:
-  - label: I. Anspruchsteller ist Eigentuemer der Sache
+  - label: I. Anspruchsteller ist Eigentümer der Sache
   - label: II. Anspruchsgegner ist Besitzer der Sache
     children:
     - label: 1. unmittelbarer Besitz, § 854 Abs. 1 BGB
     - label: 2. oder mittelbarer Besitz, § 868 BGB
   - label: III. Kein Recht zum Besitz des Anspruchsgegners, § 986 BGB
     hinweis: Ein eigenes oder ein vom mittelbaren Besitzer abgeleitetes Besitzrecht
-      schliesst den Anspruch aus.
+      schließt den Anspruch aus.
   - label: 'IV. Rechtsfolge: Herausgabe der Sache'
     hinweis: Ggf. nur Zug um Zug gegen Verwendungsersatz, § 1000 BGB.
   stand: 2026-09
 faelle:
 - slug: zr-fall-verspaetete-rueckgabe-985
-  title: Die verspaetete Rueckgabe
+  title: Die verspätete Rückgabe
   difficulty: 2
   minutes: 30
   quellen:
   - Eigener Sachverhalt der Redaktion
   - BGB, amtliche Fassung
-  facts: Eigentuemerin E leiht ihr Mountainbike der L befristet bis zum 1. Maerz,
-    § 604 Abs. 1 BGB. L nutzt das Rad ueber den vereinbarten Termin hinaus weiter
-    und gibt es trotz Aufforderung der E nicht zurueck.
+  facts: Eigentümerin E leiht ihr Mountainbike der L befristet bis zum 1. März,
+    § 604 Abs. 1 BGB. L nutzt das Rad über den vereinbarten Termin hinaus weiter
+    und gibt es trotz Aufforderung der E nicht zurück.
   question: Hat E gegen L einen Anspruch auf Herausgabe des Mountainbikes aus § 985
     BGB?
   steps:
   - prompt: Formuliere den Obersatz.
-    erwartung: E koennte gegen L einen Anspruch auf Herausgabe des Mountainbikes aus
+    erwartung: E könnte gegen L einen Anspruch auf Herausgabe des Mountainbikes aus
       § 985 BGB haben.
-  - prompt: Ist E Eigentuemerin des Mountainbikes geblieben?
-    erwartung: Ja - die Leihe ist ein rein schuldrechtliches Rechtsgeschaeft und kein
-      Verfuegungsgeschaeft; das Eigentum der E bleibt unberuehrt.
+  - prompt: Ist E Eigentümerin des Mountainbikes geblieben?
+    erwartung: Ja - die Leihe ist ein rein schuldrechtliches Rechtsgeschäft und kein
+      Verfügungsgeschäft; das Eigentum der E bleibt unberührt.
   - prompt: Ist L Besitzerin des Mountainbikes?
-    erwartung: Ja - L uebt die tatsaechliche Sachherrschaft aus und ist damit unmittelbare
+    erwartung: Ja - L übt die tatsächliche Sachherrschaft aus und ist damit unmittelbare
       Besitzerin, § 854 Abs. 1 BGB.
   - prompt: Hatte L ein Recht zum Besitz, und besteht es noch?
-    erwartung: Urspruenglich ja, aus dem Leihvertrag, § 598 BGB. Mit Ablauf der vereinbarten
-      Leihzeit endete das Leihverhaeltnis jedoch gemaess § 604 Abs. 1 BGB, sodass
+    erwartung: Ursprünglich ja, aus dem Leihvertrag, § 598 BGB. Mit Ablauf der vereinbarten
+      Leihzeit endete das Leihverhältnis jedoch gemäß § 604 Abs. 1 BGB, sodass
       das Recht zum Besitz der L erloschen ist.
   - prompt: Wie ist der Anspruch zu bescheiden?
     erwartung: E hat gegen L einen Anspruch auf Herausgabe des Mountainbikes aus §
@@ -178,12 +178,12 @@ faelle:
       keywords:
       - '985'
     - id: p2
-      label: Eigentuemerstellung der E bejaht und begruendet (Leihe ist kein Verfuegungsgeschaeft)
+      label: Eigentümerstellung der E bejaht und begründet (Leihe ist kein Verfügungsgeschäft)
       weight: 1.5
       required: false
       keywords:
-      - Eigentuemerin
-      - Verfuegungsgeschaeft
+      - Eigentümerin
+      - Verfügungsgeschäft
       card_slugs:
       - zr-985-anspruchsvoraussetzungen
     - id: p3
@@ -199,7 +199,7 @@ faelle:
       card_slugs:
       - zr-985-anspruchsvoraussetzungen
     - id: p4
-      label: Urspruengliches Recht zum Besitz aus dem Leihvertrag, § 598 BGB, erkannt
+      label: Ursprüngliches Recht zum Besitz aus dem Leihvertrag, § 598 BGB, erkannt
       weight: 1.5
       required: false
       norms:
@@ -208,8 +208,8 @@ faelle:
       - Leihe
       - '598'
     - id: p5
-      label: Erloeschen des Besitzrechts mit Fristablauf gemaess § 604 Abs. 1 BGB
-        korrekt begruendet
+      label: Erlöschen des Besitzrechts mit Fristablauf gemäß § 604 Abs. 1 BGB
+        korrekt begründet
       weight: 3.0
       required: true
       norms:

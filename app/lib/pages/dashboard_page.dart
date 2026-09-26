@@ -376,7 +376,7 @@ class _ProStatusBanner extends StatelessWidget {
       final until = app.proUntil;
       return SubsumoCard(
         child: SubsumoFeedbackBlock(
-          message: 'Abo gekuendigt, Zugriff bis '
+          message: 'Abo gekündigt, Zugriff bis '
               '${until != null ? _formatDate(until) : 'Ende der Abrechnungsperiode'}.',
           severity: FeedbackSeverity.hint,
         ),

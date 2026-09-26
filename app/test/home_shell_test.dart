@@ -89,10 +89,10 @@ void main() {
 
   testWidgets(
       'Lesemodus (SUB-160) im Karteikarten-Tab blendet AppBar/Navigation aus, '
-      'Rueckkehr jederzeit moeglich', (tester) async {
+      'Rückkehr jederzeit möglich', (tester) async {
     final state = buildState(
       dueCards: const [
-        {'front': 'Was regelt § 985 BGB?', 'back': 'Herausgabeanspruch des Eigentuemers.'},
+        {'front': 'Was regelt § 985 BGB?', 'back': 'Herausgabeanspruch des Eigentümers.'},
       ],
     );
     await _pumpHomeShell(tester, state: state);

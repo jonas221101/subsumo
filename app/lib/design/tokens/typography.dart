@@ -7,16 +7,18 @@ import 'package:flutter/material.dart';
 class TypeScale {
   const TypeScale._();
 
-  static const double bodyLarge = 16;
+  // Groessen fuer Source Sans 3 (kleinere x-Hoehe als DejaVu Sans, deshalb
+  // je eine Stufe groesser als in der ersten Fassung).
+  static const double bodyLarge = 17;
   static const double bodyLargeHeight = 1.5;
-  static const double bodyMedium = 15;
+  static const double bodyMedium = 16;
   static const double bodyMediumHeight = 1.5;
-  static const double bodySmall = 13;
+  static const double bodySmall = 14;
   static const double bodySmallHeight = 1.4;
 
   static const double titleLarge = 22;
-  static const double titleMedium = 17;
-  static const double titleSmall = 15;
+  static const double titleMedium = 18;
+  static const double titleSmall = 16;
 
   static const FontWeight titleWeight = FontWeight.w600;
 
@@ -83,7 +85,7 @@ class TypeScale {
   // Vorspann ("Eyebrow"): kleines, gesperrtes Label ueber Titeln und
   // Bloecken ("HEUTE", "SACHVERHALT"). Immer in Versalien gesetzt - die
   // Sperrung ersetzt das Fettgewicht.
-  static const double eyebrow = 12;
+  static const double eyebrow = 12.5;
   static const FontWeight eyebrowWeight = FontWeight.w600;
   static const double eyebrowLetterSpacing = 1.4;
 }
