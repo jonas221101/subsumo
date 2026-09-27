@@ -30,12 +30,13 @@ Eintreffreihenfolge unabhaengig (getestet in
 | `universitaeten` | Fakultaet mit Studienverlaufsplan | `data.kurse` verweist auf `kurse.slug` |
 | `kurse` | Kanonischer Kurs mit Vorbereitungsdeck | `data.topic_slugs` + `landesrecht_kategorien`; Deck wird zur Laufzeit aufgeloest |
 
-Drei Spalten fuer die Examensvorbereitung (docs/32-examensvorbereitung.md):
+Vier Spalten fuer Examensvorbereitung und Individualisierung
+(docs/32-examensvorbereitung.md, docs/33-individualisierung.md):
 `users.bundesland` und `users.universitaet_slug` (Examensprofil, beide
-optional) sowie `topics.bundesland` (Landesrecht-Thema, nur fuer Nutzer
+optional), `users.lernprofil` (JSON, validiert ueber `LernprofilIn`, leer =
+Defaults) sowie `topics.bundesland` (Landesrecht-Thema, nur fuer Nutzer
 dieses Landes sichtbar). Bestehende Installationen brauchen dafuer ein
-manuelles `ALTER TABLE` (docs/22-deploy-runbook.md Abschnitt 2.2, SQL in
-docs/32 Abschnitt 3.5).
+manuelles `ALTER TABLE` (docs/22-deploy-runbook.md Abschnitt 2.2).
 
 ## Zwei Entscheidungen, die sich durchziehen
 

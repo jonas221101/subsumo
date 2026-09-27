@@ -361,6 +361,11 @@ den meisten Fakultaeten (NW 6, BY 7, BW 5), dann der Rest.
 
 ## 9. Bezug zu bestehenden Dokumenten
 
+- `docs/33-individualisierung.md`: die Schicht ueber diesem Dokument - das
+  Lernprofil (Stoff, Rhythmus, Gedaechtnis, Weg, Fehler) und der "Naechster
+  Schritt" im Examen-Reiter; Bundesland und Universitaet sind dort die
+  Dimension "Ort".
+
 - `docs/12-content-produktionsplan.md`: hebt die Ausklammerung des Landesrechts
   teilweise auf - fuer Normenkenntnis, nicht fuer Faelle.
 - `docs/13-lernarchitektur.md`: Abschnitt 1.2 Option 2 (Anwendung in die
