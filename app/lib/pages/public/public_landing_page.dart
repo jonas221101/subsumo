@@ -36,7 +36,7 @@ class PublicLandingPage extends StatelessWidget {
           _FuerWenSection(),
           _WasDuBekommstSection(),
           _WieEsFunktioniertSection(),
-          _EhrlichUeberDenUmfangSection(),
+          _WasDrinIstSection(),
           _RechtsgebieteSection(),
           _PreisTeaserSection(),
           _FaqSection(),
@@ -66,10 +66,10 @@ class _HeroSection extends StatelessWidget {
       style: (wide ? typography.heroLarge : typography.heroSmall).copyWith(color: Colors.white),
     );
     final subheadline = Text(
-      'Subsumo ist gerade gestartet: 180 geprüfte Karten, 8+ Schemata und '
-      '6+ geführte Fälle über Zivilrecht, Strafrecht und Öffentliches '
-      'Recht — und wächst laufend weiter. Zum Gründerpreis ab 3,99 '
-      '€/Monat, dauerhaft garantiert.',
+      '629 geprüfte Karteikarten, 85 Prüfungsschemata und 81 geführte Fälle '
+      'über Zivilrecht, Strafrecht und Öffentliches Recht — dazu ein '
+      'Struktur-Check für deine eigenen Gutachten. Pro zum Gründerpreis ab '
+      '3,99 €/Monat, dauerhaft garantiert.',
       style: Theme.of(context).textTheme.bodyLarge?.copyWith(color: Colors.white),
     );
     final ctas = Theme(
@@ -146,9 +146,9 @@ class _FuerWenSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return SubsumoSection(
       child: Text(
-        'Für Jurastudierende ab dem ersten Semester, die nicht nur lesen, '
-        'sondern wiederholen, anwenden und ihre eigenen Lösungen überprüfen '
-        'wollen.',
+        'Für Jurastudierende ab dem ersten Semester bis zur '
+        'Examensvorbereitung, die nicht nur lesen, sondern wiederholen, '
+        'anwenden und ihre eigenen Lösungen überprüfen wollen.',
         textAlign: TextAlign.center,
         style: Theme.of(context).textTheme.titleMedium,
       ),
@@ -156,7 +156,7 @@ class _FuerWenSection extends StatelessWidget {
   }
 }
 
-/// 3. Was du heute bekommst. Flaechenfarbe `surface1`. >=800px: 2x2-Grid
+/// 3. Was du bekommst. Flaechenfarbe `surface1`. >=800px: 2x2-Grid
 /// (Icon in Akzent-Kreisflaeche + Ueberschrift + Text), <800px: einspaltig
 /// gestapelt (Brief Abschnitt 3.3). Der Abgrenzungssatz zum Struktur-Check
 /// bleibt ein eigener, nicht im Grid versteckter Absatz darunter.
@@ -174,19 +174,20 @@ class _WasDuBekommstSection extends StatelessWidget {
     (
       icon: Icons.list_alt_outlined,
       heading: 'Schemata',
-      text: 'Prüfungsschemata zum Nachschlagen (Pro: zusätzlich als '
-          'Reihenfolge-Drill).',
+      text: 'Prüfungsschemata zum Nachschlagen, mit Normzitaten und '
+          'Prüfungsreihenfolge (Pro: zusätzlich als Reihenfolge-Drill).',
     ),
     (
       icon: Icons.task_outlined,
       heading: 'Geführte Fälle',
-      text: 'Geführte Übungsfälle mit hinterlegtem Erwartungshorizont.',
+      text: 'Geführte Übungsfälle mit hinterlegtem Erwartungshorizont — '
+          'Schritt für Schritt durch das Gutachten.',
     ),
     (
       icon: Icons.fact_check_outlined,
       heading: 'Struktur-Check',
       text: 'Struktur-Check für deine Gutachten: Lade deine eigene Lösung zu einem '
-          'Übungsfall hoch und bekommst automatisiert Rückmeldung zu Aufbau '
+          'Übungsfall hoch und erhalte automatisiert Rückmeldung zu Aufbau '
           'und Stil.',
     ),
   ];
@@ -202,7 +203,7 @@ class _WasDuBekommstSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Was du heute bekommst', style: Theme.of(context).textTheme.headlineSmall),
+          Text('Was du bekommst', style: Theme.of(context).textTheme.headlineSmall),
           const SizedBox(height: Spacing.lg),
           wide
               ? Row(
@@ -365,11 +366,13 @@ class _StepTile extends StatelessWidget {
   }
 }
 
-/// 5. Ehrlich über den Umfang. Eigene, abgesetzte Flaeche (`accentWash`,
-/// Brief Abschnitt 3.5) - einspaltig, zentriert, kein weiteres visuelles
-/// Element (auch nicht das Marken-Motiv) lenkt vom ehrlichen Ton ab.
-class _EhrlichUeberDenUmfangSection extends StatelessWidget {
-  const _EhrlichUeberDenUmfangSection();
+/// 5. Was drin ist. Eigene, abgesetzte Flaeche (`accentWash`, Brief
+/// Abschnitt 3.5) - einspaltig, zentriert, kein weiteres visuelles Element
+/// (auch nicht das Marken-Motiv) lenkt von den nackten Zahlen ab. Die
+/// Zahlen (Karten/Schemata/Faelle) sind der Stand aus `content/**/*.yaml`
+/// und werden bei Content-Erweiterungen hier und in docs/21 nachgezogen.
+class _WasDrinIstSection extends StatelessWidget {
+  const _WasDrinIstSection();
 
   @override
   Widget build(BuildContext context) {
@@ -380,25 +383,26 @@ class _EhrlichUeberDenUmfangSection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            'Ehrlich über den Umfang',
+            'Was drin ist',
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.headlineSmall,
           ),
           const SizedBox(height: Spacing.md),
           Text(
-            'Subsumo ist neu. Zum Start stehen 180 Karten, 8+ Schemata und 6+ '
-            'geführte Fälle über drei Rechtsgebiete bereit — spürbar weniger '
-            'als etablierte Anbieter mit tausenden Fällen. Das sagen wir '
-            'offen, weil wir lieber jede Karte selbst prüfen, als früh eine '
-            'Vollständigkeit zu behaupten, die es nicht gibt.',
+            '629 geprüfte Karteikarten, 85 Prüfungsschemata und 81 geführte '
+            'Fälle über Zivilrecht, Strafrecht und Öffentliches Recht. Jede '
+            'Karte nennt ihre Normen und Quellen und durchläuft eine '
+            'redaktionelle Prüfung, bevor sie erscheint. Der Bestand wird '
+            'laufend erweitert — die aktuellen Zahlen stehen hier auf der '
+            'Seite.',
             textAlign: TextAlign.center,
             style: bodyStyle,
           ),
           const SizedBox(height: Spacing.md),
           Text(
-            'Deshalb der Gründerpreis: Wer jetzt einsteigt, sichert sich '
-            'einen Preis, der niedriger bleibt, als der Umfang — und der '
-            'Preis für neue Kund:innen — mit der Zeit wächst.',
+            'Gründerpreis: Wer jetzt einsteigt, sichert sich Pro für 3,99 '
+            '€/Monat oder 39 €/Jahr — dauerhaft, auch wenn der Listenpreis '
+            'für neue Kund:innen später steigt.',
             textAlign: TextAlign.center,
             style: bodyStyle,
           ),
@@ -672,10 +676,11 @@ class _FaqSection extends StatelessWidget {
           'aktuellen Angebots.',
     ),
     (
-      'Wie viele Karten gibt es wirklich?',
-      'Zum Start 180 geprüfte Karten über drei Rechtsgebiete. Wir zeigen '
-          'die aktuelle Zahl hier auf der Seite, nicht nur im '
-          'Kleingedruckten.',
+      'Wie viele Karten, Schemata und Fälle gibt es?',
+      '629 geprüfte Karteikarten, 85 Prüfungsschemata und 81 geführte Fälle '
+          'über Zivilrecht, Strafrecht und Öffentliches Recht. Der Bestand '
+          'wird redaktionell erweitert; die aktuellen Zahlen stehen hier auf '
+          'der Seite, nicht nur im Kleingedruckten.',
     ),
     (
       'Kann ich kündigen?',

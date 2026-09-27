@@ -92,7 +92,10 @@ class _Root extends StatelessWidget {
 }
 
 /// Navigationsgeruest. Auf schmalen Geraeten unten, ab Tablet-Breite als
-/// seitliche Leiste - dasselbe Layout traegt Handy, Tablet, Windows und Web.
+/// Seitenleiste mit Wortmarke - dasselbe Layout traegt Handy, Tablet,
+/// Windows und Web. Den Seitentitel traegt jede Seite selbst
+/// ([SubsumoPageHeader]); die AppBar bleibt schmal und zeigt auf schmalen
+/// Geraeten die Wortmarke, auf breiten nur die Aktionen.
 class HomeShell extends StatefulWidget {
   const HomeShell({this.checkoutStatus, super.key});
 
@@ -117,18 +120,28 @@ class _HomeShellState extends State<HomeShell> {
   // auch fuer den aktiven Tab (docs/25 Abschnitt 5+8.3) - keine gefuellte
   // Variante als Aktiv-Signal.
   static const _destinations = [
-    (icon: Icons.insights_outlined, label: 'Fortschritt'),
+    (icon: Icons.today_outlined, label: 'Heute'),
     (icon: Icons.style_outlined, label: 'Karten'),
     (icon: Icons.account_tree_outlined, label: 'Schemata'),
-    (icon: Icons.gavel_outlined, label: 'Faelle'),
+    (icon: Icons.gavel_outlined, label: 'Fälle'),
     // Examen-Reiter (docs/32-examensvorbereitung.md): Profil, Examensreife,
     // Kurs-Decks, Landesrecht, Klausurrhythmus - bewusst als eigener Tab
     // statt als Unterseite des Dashboards.
     (icon: Icons.school_outlined, label: 'Examen'),
   ];
 
+  @override
+  void initState() {
+    super.initState();
+    // Die Startseite zeigt die Zahl der faelligen Karten - dafuer den Stapel
+    // einmal beim Start laden, nicht erst beim Wechsel in den Karten-Tab.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) AppScope.of(context).loadDueCards();
+    });
+  }
+
   Widget get _page => switch (_index) {
-        0 => const DashboardPage(),
+        0 => DashboardPage(onStartReview: () => setState(() => _index = 1)),
         1 => ReviewPage(
             focusMode: _focusMode,
             onToggleFocusMode: () => setState(() => _focusMode = !_focusMode),
@@ -155,7 +168,7 @@ class _HomeShellState extends State<HomeShell> {
       appBar: hideChrome
           ? null
           : AppBar(
-              title: Text(_destinations[_index].label),
+              title: breit ? null : const SubsumoWordmark(),
               actions: [
                 if (offline)
                   const Padding(
@@ -184,6 +197,7 @@ class _HomeShellState extends State<HomeShell> {
                   icon: const Icon(Icons.logout),
                   onPressed: app.signOut,
                 ),
+                const SizedBox(width: Spacing.sm),
               ],
             ),
       body: SafeArea(
@@ -198,19 +212,7 @@ class _HomeShellState extends State<HomeShell> {
             Expanded(
               child: Row(
                 children: [
-                  if (breit && !hideChrome)
-                    NavigationRail(
-                      selectedIndex: _index,
-                      onDestinationSelected: (i) => setState(() => _index = i),
-                      labelType: NavigationRailLabelType.all,
-                      destinations: [
-                        for (final d in _destinations)
-                          NavigationRailDestination(
-                            icon: Icon(d.icon),
-                            label: Text(d.label),
-                          ),
-                      ],
-                    ),
+                  if (breit && !hideChrome) _Sidebar(index: _index, onSelect: _select, email: app.user?['email'] as String?),
                   Expanded(child: _page),
                 ],
               ),
@@ -222,7 +224,7 @@ class _HomeShellState extends State<HomeShell> {
           ? null
           : NavigationBar(
               selectedIndex: _index,
-              onDestinationSelected: (i) => setState(() => _index = i),
+              onDestinationSelected: _select,
               destinations: [
                 for (final d in _destinations)
                   NavigationDestination(
@@ -231,6 +233,66 @@ class _HomeShellState extends State<HomeShell> {
                   ),
               ],
             ),
+    );
+  }
+
+  void _select(int i) => setState(() => _index = i);
+}
+
+/// Seitenleiste ab 800px: Wortmarke oben, Navigation mit Beschriftung,
+/// unten das angemeldete Konto. Bewusst ein [NavigationRail] im erweiterten
+/// Modus statt einer Eigenkonstruktion - Tastatur- und Screenreader-
+/// Verhalten kommen so mit, das Aussehen aus dem Theme.
+class _Sidebar extends StatelessWidget {
+  const _Sidebar({required this.index, required this.onSelect, required this.email});
+
+  final int index;
+  final ValueChanged<int> onSelect;
+  final String? email;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return NavigationRail(
+      extended: true,
+      labelType: NavigationRailLabelType.none,
+      selectedIndex: index,
+      onDestinationSelected: onSelect,
+      leading: const Padding(
+        padding: EdgeInsets.fromLTRB(Spacing.xl, Spacing.md, Spacing.xl, Spacing.xl),
+        child: Align(alignment: Alignment.centerLeft, child: SubsumoWordmark(accent: true)),
+      ),
+      trailing: email == null
+          ? null
+          : Expanded(
+              child: Align(
+                alignment: Alignment.bottomLeft,
+                child: Padding(
+                  padding: const EdgeInsets.all(Spacing.xl),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const SubsumoEyebrow('Angemeldet'),
+                      const SizedBox(height: Spacing.xs),
+                      Text(
+                        email!,
+                        style: theme.textTheme.bodySmall,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+      destinations: [
+        for (final d in _HomeShellState._destinations)
+          NavigationRailDestination(
+            icon: Icon(d.icon),
+            label: Text(d.label),
+            padding: const EdgeInsets.symmetric(vertical: Spacing.xs),
+          ),
+      ],
     );
   }
 }

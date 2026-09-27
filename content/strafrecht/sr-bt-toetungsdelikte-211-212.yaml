@@ -1,7 +1,7 @@
 topic:
   slug: sr-bt-toetungsdelikte-211-212
   area: strafrecht
-  title: Toetungsdelikte, §§ 211, 212 StGB
+  title: Tötungsdelikte, §§ 211, 212 StGB
   parent: sr-at
   relevance: 5
   stand: 2026-09
@@ -15,11 +15,11 @@ cards:
 - slug: sr-toetung-totschlag-212
   type: definition
   front: 'Definiere: Totschlag, § 212 Abs. 1 StGB'
-  back: Totschlag ist die vorsaetzliche Toetung eines anderen Menschen, ohne dass
-    die Voraussetzungen des Mordes (§ 211 StGB) vorliegen. Taeter kann jedermann sein
+  back: Totschlag ist die vorsätzliche Tötung eines anderen Menschen, ohne dass
+    die Voraussetzungen des Mordes (§ 211 StGB) vorliegen. Täter kann jedermann sein
     (Allgemeindelikt). Der objektive Tatbestand verlangt den Tod eines anderen Menschen
-    sowie Kausalitaet und objektive Zurechnung der Tathandlung hierfuer; subjektiv
-    genuegt bedingter Vorsatz.
+    sowie Kausalität und objektive Zurechnung der Tathandlung hierfür; subjektiv
+    genügt bedingter Vorsatz.
   norms:
   - § 212 Abs. 1 StGB
   quellen:
@@ -30,17 +30,17 @@ cards:
   type: definition
   front: 'Definiere: Systematik der Mordmerkmale, § 211 Abs. 2 StGB'
   back: '§ 211 Abs. 2 StGB nennt drei Gruppen von Mordmerkmalen. Erste Gruppe (Taterantrieb,
-    taeterbezogen): Mordlust, Befriedigung des Geschlechtstriebs, Habgier, sonstige
-    niedrige Beweggruende. Zweite Gruppe (Tatausfuehrung, tatbezogen): Heimtuecke,
-    Grausamkeit, mit gemeingefaehrlichen Mitteln. Dritte Gruppe (Tatzweck, taeterbezogen):
-    Ermoeglichungsabsicht, Verdeckungsabsicht. Die Einordnung als taeter- oder tatbezogen
-    entscheidet, ob § 28 StGB bei Beteiligung mehrerer ueberhaupt anwendbar ist: Nur
-    die taeterbezogenen Mordmerkmale (erste und dritte Gruppe) sind besondere persoenliche
-    Merkmale i.S.d. § 28 StGB, waehrend die tatbezogenen Merkmale (zweite Gruppe) jeden
-    Beteiligten nach gewoehnlicher Akzessorietaet binden. Ob bei den taeterbezogenen
-    Merkmalen § 28 Abs. 1 oder Abs. 2 StGB einschlaegig ist, ist die davon unabhaengige
-    Streitfrage zwischen Qualifikationstheorie und Selbststaendigkeitstheorie (s. Streitstand
-    zum Verhaeltnis § 211/§ 212 StGB).'
+    täterbezogen): Mordlust, Befriedigung des Geschlechtstriebs, Habgier, sonstige
+    niedrige Beweggründe. Zweite Gruppe (Tatausführung, tatbezogen): Heimtücke,
+    Grausamkeit, mit gemeingefährlichen Mitteln. Dritte Gruppe (Tatzweck, täterbezogen):
+    Ermöglichungsabsicht, Verdeckungsabsicht. Die Einordnung als täter- oder tatbezogen
+    entscheidet, ob § 28 StGB bei Beteiligung mehrerer überhaupt anwendbar ist: Nur
+    die täterbezogenen Mordmerkmale (erste und dritte Gruppe) sind besondere persönliche
+    Merkmale i.S.d. § 28 StGB, während die tatbezogenen Merkmale (zweite Gruppe) jeden
+    Beteiligten nach gewöhnlicher Akzessorietät binden. Ob bei den täterbezogenen
+    Merkmalen § 28 Abs. 1 oder Abs. 2 StGB einschlägig ist, ist die davon unabhängige
+    Streitfrage zwischen Qualifikationstheorie und Selbstständigkeitstheorie (s. Streitstand
+    zum Verhältnis § 211/§ 212 StGB).'
   norms:
   - § 211 Abs. 2 StGB
   quellen:
@@ -49,13 +49,13 @@ cards:
   stand: 2026-09
 - slug: sr-toetung-heimtuecke
   type: definition
-  front: 'Definiere: Heimtuecke i.S.d. § 211 Abs. 2 StGB'
-  back: Heimtueckisch toetet, wer die Arg- und Wehrlosigkeit des Opfers bewusst zur
+  front: 'Definiere: Heimtücke i.S.d. § 211 Abs. 2 StGB'
+  back: Heimtückisch tötet, wer die Arg- und Wehrlosigkeit des Opfers bewusst zur
     Tat ausnutzt. Arglosigkeit setzt voraus, dass das Opfer sich im Angriffszeitpunkt
-    keines erheblichen Angriffs auf sein Leben versieht; Wehrlosigkeit knuepft an
-    die dadurch eingeschraenkte Verteidigungsmoeglichkeit an. Fuer das subjektive
-    Ausnutzungsbewusstsein genuegt, dass der Taeter die die Heimtuecke begruendenden
-    Umstaende in ihrer Bedeutung fuer die Tatbegehung erfasst.
+    keines erheblichen Angriffs auf sein Leben versieht; Wehrlosigkeit knüpft an
+    die dadurch eingeschränkte Verteidigungsmöglichkeit an. Für das subjektive
+    Ausnutzungsbewusstsein genügt, dass der Täter die die Heimtücke begründenden
+    Umstände in ihrer Bedeutung für die Tatbegehung erfasst.
   norms:
   - § 211 Abs. 2 StGB
   quellen:
@@ -63,49 +63,49 @@ cards:
   stand: 2026-09
 - slug: sr-toetung-heimtuecke-einschraenkung
   type: streitstand
-  front: 'Streitstand: Einschraenkung der Heimtuecke bei notstandsnahen Toetungssituationen'
-  back: 'Problem: Der Heimtueckemord (§ 211 StGB) fuehrt zwingend zu
+  front: 'Streitstand: Einschränkung der Heimtücke bei notstandsnahen Tötungssituationen'
+  back: 'Problem: Der Heimtückemord (§ 211 StGB) führt zwingend zu
 
-    lebenslanger Freiheitsstrafe, § 211 Abs. 1 StGB. Bei Toetungen aus
+    lebenslanger Freiheitsstrafe, § 211 Abs. 1 StGB. Bei Tötungen aus
 
-    einer notstandsnahen Verzweiflungslage (z. B. eine langjaehrig
+    einer notstandsnahen Verzweiflungslage (z. B. eine langjährig
 
-    misshandelte Person toetet den schlafenden Peiniger) erscheint diese
+    misshandelte Person tötet den schlafenden Peiniger) erscheint diese
 
     starre Rechtsfolge unangemessen hart, obwohl formal Arg- und
 
     Wehrlosigkeit vorliegen.
 
 
-    Rechtsfolgenloesung der Rspr.: Bejaht formal Heimtuecke,
+    Rechtsfolgenlösung der Rspr.: Bejaht formal Heimtücke,
 
-    gewaehrt aber ueber eine analoge Anwendung von § 49 Abs. 1 Nr. 1 StGB
+    gewährt aber über eine analoge Anwendung von § 49 Abs. 1 Nr. 1 StGB
 
-    eine Strafmilderung in aussergewoehnlichen Faellen, in denen die
+    eine Strafmilderung in außergewöhnlichen Fällen, in denen die
 
-    lebenslange Freiheitsstrafe unverhaeltnismaessig waere.
+    lebenslange Freiheitsstrafe unverhältnismäßig wäre.
 
 
-    Kritik / Tatbestandsloesung (Teile der Literatur): Eine
+    Kritik / Tatbestandslösung (Teile der Literatur): Eine
 
     Strafzumessungskorrektur contra legem sei mit dem
 
     Bestimmtheitsgrundsatz (Art. 103 Abs. 2 GG) nicht vereinbar; richtig
 
-    sei, das Mordmerkmal Heimtuecke bereits auf Tatbestandsebene
+    sei, das Mordmerkmal Heimtücke bereits auf Tatbestandsebene
 
     restriktiv auszulegen (z. B. Verneinung eines "verwerflichen
 
     Vertrauensbruchs").
 
 
-    Konsequenz: Beide Wege fuehren im Ergebnis oft zur Vermeidung der
+    Konsequenz: Beide Wege führen im Ergebnis oft zur Vermeidung der
 
     lebenslangen Freiheitsstrafe, unterscheiden sich aber in der
 
     dogmatischen Verortung (Tatbestand vs. Rechtsfolge) und damit in der
 
-    Pruefungsreihenfolge.
+    Prüfungsreihenfolge.
 
     '
   norms:
@@ -117,10 +117,10 @@ cards:
 - slug: sr-toetung-verdeckungsabsicht
   type: definition
   front: 'Definiere: Verdeckungsabsicht i.S.d. § 211 Abs. 2 StGB'
-  back: Verdeckungsabsicht handelt, wer toetet, um eine bereits begangene Straftat
+  back: Verdeckungsabsicht handelt, wer tötet, um eine bereits begangene Straftat
     oder die eigene Beteiligung daran vor Entdeckung und Strafverfolgung zu verbergen.
-    Zwischen der zu verdeckenden Tat und der Toetung muss ein finaler Zusammenhang
-    bestehen; ein bloss zeitlicher oder raeumlicher Zusammenhang genuegt nicht.
+    Zwischen der zu verdeckenden Tat und der Tötung muss ein finaler Zusammenhang
+    bestehen; ein bloß zeitlicher oder räumlicher Zusammenhang genügt nicht.
   norms:
   - § 211 Abs. 2 StGB
   quellen:
@@ -128,12 +128,12 @@ cards:
   stand: 2026-09
 - slug: sr-toetung-niedrige-beweggruende
   type: definition
-  front: 'Definiere: sonstige niedrige Beweggruende i.S.d. § 211 Abs. 2 StGB'
-  back: Niedrig sind Beweggruende, die nach allgemeiner sittlicher Wertung auf tiefster
-    Stufe stehen und in deutlichem Missverhaeltnis zum Anlass der Tat stehen, mithin
-    besonders verwerflich sind. Erforderlich ist eine Gesamtwuerdigung der Umstaende
-    der Tat und der Persoenlichkeit des Taeters; blosse Verachtung des Opfers oder
-    spontane Wut allein genuegen nicht ohne Weiteres.
+  front: 'Definiere: sonstige niedrige Beweggründe i.S.d. § 211 Abs. 2 StGB'
+  back: Niedrig sind Beweggründe, die nach allgemeiner sittlicher Wertung auf tiefster
+    Stufe stehen und in deutlichem Missverhältnis zum Anlass der Tat stehen, mithin
+    besonders verwerflich sind. Erforderlich ist eine Gesamtwürdigung der Umstände
+    der Tat und der Persönlichkeit des Täters; bloße Verachtung des Opfers oder
+    spontane Wut allein genügen nicht ohne Weiteres.
   norms:
   - § 211 Abs. 2 StGB
   quellen:
@@ -141,22 +141,22 @@ cards:
   stand: 2026-09
 - slug: sr-toetung-abgrenzung-211-212
   type: streitstand
-  front: 'Streitstand: Verhaeltnis von § 211 StGB zu § 212 StGB (eigenstaendiges Delikt
+  front: 'Streitstand: Verhältnis von § 211 StGB zu § 212 StGB (eigenständiges Delikt
     oder Qualifikation)'
   back: 'Problem: Ist Mord (§ 211 StGB) eine Qualifikation zum Grundtatbestand
 
-    Totschlag (§ 212 StGB) oder ein selbstaendiges Delikt? Relevant u. a.
+    Totschlag (§ 212 StGB) oder ein selbständiges Delikt? Relevant u. a.
 
-    fuer die Anwendung von § 28 StGB bei taeterbezogenen Mordmerkmalen und
+    für die Anwendung von § 28 StGB bei täterbezogenen Mordmerkmalen und
 
-    fuer die Konkurrenzloesung.
+    für die Konkurrenzlösung.
 
 
-    Rspr. (Selbststaendigkeitstheorie): § 211 StGB ist ein eigenstaendiger
+    Rspr. (Selbstständigkeitstheorie): § 211 StGB ist ein eigenständiger
 
     Tatbestand mit eigenem Unrechtsgehalt, kein Qualifikationstatbestand zu
 
-    § 212 StGB - u. a. wegen der eigenstaendigen Tatbestandsstruktur und
+    § 212 StGB - u. a. wegen der eigenständigen Tatbestandsstruktur und
 
     der Gesetzgebungsgeschichte.
 
@@ -165,16 +165,16 @@ cards:
 
     Grundtatbestand des § 212 StGB um die Mordmerkmale; das folgt aus dem
 
-    inneren systematischen Verhaeltnis, wonach jeder Mord notwendig auch
+    inneren systematischen Verhältnis, wonach jeder Mord notwendig auch
 
-    den Totschlagstatbestand erfuellt.
+    den Totschlagstatbestand erfüllt.
 
 
     Konsequenz: Nach der Qualifikationstheorie ist bei fehlendem
 
-    taeterbezogenem Mordmerkmal beim Tatbeteiligten konsequent auf § 212
+    täterbezogenem Mordmerkmal beim Tatbeteiligten konsequent auf § 212
 
-    StGB i.V.m. § 28 Abs. 2 StGB zurueckzugreifen; die Rspr. erreicht ueber
+    StGB i.V.m. § 28 Abs. 2 StGB zurückzugreifen; die Rspr. erreicht über
 
     § 28 Abs. 1 StGB im Ergebnis meist eine vergleichbare Strafmilderung.
 
@@ -188,11 +188,11 @@ cards:
   stand: 2026-09
 - slug: sr-toetung-auf-verlangen-216
   type: definition
-  front: 'Definiere: Toetung auf Verlangen, § 216 StGB'
-  back: Wer durch das ausdruckliche und ernstliche Verlangen des Getoeteten zur Toetung
-    bestimmt worden ist, wird nach dem gegenueber § 212 StGB milderen § 216 StGB bestraft.
-    Das Verlangen muss vor der Tat ernstlich, ausdruecklich und in Kenntnis der Tragweite
-    geaeussert worden sein; blosse Einwilligung ohne aktives Verlangen genuegt nicht.
+  front: 'Definiere: Tötung auf Verlangen, § 216 StGB'
+  back: Wer durch das ausdruckliche und ernstliche Verlangen des Getöteten zur Tötung
+    bestimmt worden ist, wird nach dem gegenüber § 212 StGB milderen § 216 StGB bestraft.
+    Das Verlangen muss vor der Tat ernstlich, ausdrücklich und in Kenntnis der Tragweite
+    geäußert worden sein; bloße Einwilligung ohne aktives Verlangen genügt nicht.
   norms:
   - § 216 StGB
   quellen:
@@ -201,7 +201,7 @@ cards:
   stand: 2026-09
 schemata:
 - slug: sr-schema-toetungsdelikt
-  title: 'Pruefungsschema: Toetungsdelikt (§§ 211, 212 StGB)'
+  title: 'Prüfungsschema: Tötungsdelikt (§§ 211, 212 StGB)'
   norms:
   - § 212 StGB
   - § 211 StGB
@@ -214,18 +214,18 @@ schemata:
   steps:
   - label: I. Tatbestand des § 212 Abs. 1 StGB (Grundtatbestand)
     children:
-    - label: '1. Objektiver Tatbestand: Tod eines anderen Menschen, Kausalitaet, objektive
+    - label: '1. Objektiver Tatbestand: Tod eines anderen Menschen, Kausalität, objektive
         Zurechnung'
     - label: '2. Subjektiver Tatbestand: Vorsatz, § 15 StGB'
   - label: II. Qualifizierende Mordmerkmale, § 211 Abs. 2 StGB
     children:
     - label: '1. Erste Gruppe (Taterantrieb): Mordlust, Befriedigung des Geschlechtstriebs,
-        Habgier, sonstige niedrige Beweggruende'
-    - label: '2. Zweite Gruppe (Tatausfuehrung): Heimtuecke, Grausamkeit, gemeingefaehrliche
+        Habgier, sonstige niedrige Beweggründe'
+    - label: '2. Zweite Gruppe (Tatausführung): Heimtücke, Grausamkeit, gemeingefährliche
         Mittel'
-    - label: '3. Dritte Gruppe (Tatzweck): Ermoeglichungsabsicht, Verdeckungsabsicht'
+    - label: '3. Dritte Gruppe (Tatzweck): Ermöglichungsabsicht, Verdeckungsabsicht'
   - label: III. Rechtswidrigkeit und Schuld
-  - label: 'IV. Sonderfall: Toetung auf Verlangen, § 216 StGB (Privilegierung)'
+  - label: 'IV. Sonderfall: Tötung auf Verlangen, § 216 StGB (Privilegierung)'
   - label: V. Ergebnis und Konkurrenzen
 faelle:
 - slug: sr-fall-nachtschicht-wachmann
@@ -236,24 +236,24 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
   stand: 2026-09
-  facts: Waechter W entdeckt waehrend seiner Nachtschicht in einer Lagerhalle den
+  facts: Wächter W entdeckt während seiner Nachtschicht in einer Lagerhalle den
     Einbrecher E, der gerade dabei ist, Elektronikware in einen Transporter zu laden.
-    Um nicht als Zeuge identifiziert zu werden und straflos zu bleiben, beschliesst
-    E, den W zu toeten. Er schleicht sich von hinten an den ahnungslosen W heran,
-    der ihm den Ruecken zudreht und mit seinem Diensttelefon beschaeftigt ist, und
-    ersticht ihn mit einem mitgefuehrten Messer, bevor W reagieren kann.
+    Um nicht als Zeuge identifiziert zu werden und straflos zu bleiben, beschließt
+    E, den W zu töten. Er schleicht sich von hinten an den ahnungslosen W heran,
+    der ihm den Rücken zudreht und mit seinem Diensttelefon beschäftigt ist, und
+    ersticht ihn mit einem mitgeführten Messer, bevor W reagieren kann.
   question: Wie hat sich E strafbar gemacht?
   steps:
-  - prompt: Ist der Grundtatbestand des § 212 Abs. 1 StGB erfuellt?
-    erwartung: Ja - E hat den W vorsaetzlich getoetet.
-  - prompt: Liegt das Mordmerkmal der Heimtuecke vor?
+  - prompt: Ist der Grundtatbestand des § 212 Abs. 1 StGB erfüllt?
+    erwartung: Ja - E hat den W vorsätzlich getötet.
+  - prompt: Liegt das Mordmerkmal der Heimtücke vor?
     erwartung: Ja - W war arglos (rechnete nicht mit einem Angriff auf sein Leben)
-      und dadurch wehrlos (konnte sich wegen der Ueberraschung nicht verteidigen);
+      und dadurch wehrlos (konnte sich wegen der Überraschung nicht verteidigen);
       E nutzte dies bewusst aus.
-  - prompt: Liegt zusaetzlich Verdeckungsabsicht vor?
-    erwartung: Ja - E toetete gezielt, um seine Identifizierung als Einbrecher und
+  - prompt: Liegt zusätzlich Verdeckungsabsicht vor?
+    erwartung: Ja - E tötete gezielt, um seine Identifizierung als Einbrecher und
       damit seine Strafverfolgung wegen des Diebstahls zu verhindern; der finale Zusammenhang
-      zwischen Vortat und Toetung ist gegeben.
+      zwischen Vortat und Tötung ist gegeben.
   expectation:
     pruefpunkte:
     - id: p1
@@ -268,7 +268,7 @@ faelle:
       card_slugs:
       - sr-toetung-totschlag-212
     - id: p2
-      label: Heimtuecke definiert (Arg- und Wehrlosigkeit) und subsumiert
+      label: Heimtücke definiert (Arg- und Wehrlosigkeit) und subsumiert
       weight: 3.0
       required: true
       norms:
@@ -276,11 +276,11 @@ faelle:
       keywords:
       - arglos
       - wehrlos
-      - Heimtuecke
+      - Heimtücke
       card_slugs:
       - sr-toetung-heimtuecke
     - id: p3
-      label: Ausnutzungsbewusstsein hinsichtlich der Heimtuecke thematisiert
+      label: Ausnutzungsbewusstsein hinsichtlich der Heimtücke thematisiert
       weight: 1.5
       keywords:
       - Ausnutzungsbewusstsein
@@ -300,11 +300,11 @@ faelle:
       card_slugs:
       - sr-toetung-verdeckungsabsicht
     - id: p5
-      label: Streitstand zum Verhaeltnis § 211/§ 212 StGB zumindest angesprochen
+      label: Streitstand zum Verhältnis § 211/§ 212 StGB zumindest angesprochen
       weight: 1.0
       keywords:
       - Qualifikation
-      - eigenstaendig
+      - eigenständig
       card_slugs:
       - sr-toetung-abgrenzung-211-212
     - id: p6

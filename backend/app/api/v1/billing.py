@@ -34,7 +34,7 @@ async def stripe_webhook(request: Request, db: DbSession) -> dict:
     try:
         event = billing.construct_webhook_event(payload, sig_header, settings)
     except stripe.error.SignatureVerificationError as exc:
-        raise HTTPException(status.HTTP_400_BAD_REQUEST, "Ungueltige Signatur") from exc
+        raise HTTPException(status.HTTP_400_BAD_REQUEST, "Ungültige Signatur") from exc
 
     if db.get(StripeWebhookEvent, event["id"]) is not None:
         # Erneut zugestelltes Event - bereits verarbeitet, keine doppelte Wirkung.

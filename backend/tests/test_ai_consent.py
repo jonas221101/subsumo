@@ -16,9 +16,9 @@ from app.core.llm import LLMResponse
 
 CASE_SLUG = "zr-fall-sonderpreis"
 GUTACHTEN = (
-    "K koennte gegen V einen Anspruch auf Lieferung des Fahrrads aus "
-    "§ 433 Abs. 1 BGB haben. Dazu muesste ein wirksamer Kaufvertrag "
-    "vorliegen. Hier haben K und V sich ueber Ware und Preis geeinigt. "
+    "K könnte gegen V einen Anspruch auf Lieferung des Fahrrads aus "
+    "§ 433 Abs. 1 BGB haben. Dazu müsste ein wirksamer Kaufvertrag "
+    "vorliegen. Hier haben K und V sich über Ware und Preis geeinigt. "
     "Mithin besteht der Anspruch aus § 433 Abs. 1 BGB."
 )
 

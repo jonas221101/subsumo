@@ -31,8 +31,8 @@ GUELTIGE_ZITATE = [
 ]
 
 UNGUELTIGE_ZITATE = [
-    ("§ 9999 BGB", "ausserhalb des bekannten Bereichs"),
-    ("§ 5 UrhG", "Unbekanntes Gesetzeskuerzel"),
+    ("§ 9999 BGB", "außerhalb des bekannten Bereichs"),
+    ("§ 5 UrhG", "Unbekanntes Gesetzeskürzel"),
     ("Art. 242 StGB", "wird mit"),
     ("§ 242 Abs. StGB", "Unerwartetes Element"),
     ("BGB § 242", "Unbekanntes Zitatformat"),
@@ -42,7 +42,7 @@ UNGUELTIGE_ZITATE = [
     # Ungueltige roemische Ziffer (SUB-66)
     ("Art. 12 Abs. IIII GG", "Unerwartetes Element"),
     # Mehrfachzitat mit einer Nummer ausserhalb des Bereichs (SUB-66)
-    ("§§ 305c, 9999 BGB", "ausserhalb des bekannten Bereichs"),
+    ("§§ 305c, 9999 BGB", "außerhalb des bekannten Bereichs"),
 ]
 
 

@@ -238,7 +238,7 @@ def generate_plan(
         # 3) Rueckstand bremst die Aufnahme von Neuem - nicht umgekehrt.
         if backlog > 150:
             day.blocks.append(
-                PlanBlock("puffer", "Rueckstand abbauen statt Neues anfangen", budget)
+                PlanBlock("puffer", "Rückstand abbauen statt Neues anfangen", budget)
             )
             days.append(day)
             continue

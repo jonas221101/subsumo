@@ -101,7 +101,7 @@ def _check_stand(value: Any, where: str, warnings: list[str], errors: list[str])
         return text
     months = (date.today().year - parsed.year) * 12 + (date.today().month - parsed.month)
     if months > STALE_AFTER_MONTHS:
-        warnings.append(f"{where}: Inhalt ist {months} Monate alt - redaktionell pruefen")
+        warnings.append(f"{where}: Inhalt ist {months} Monate alt - redaktionell prüfen")
     return text
 
 

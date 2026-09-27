@@ -20,7 +20,7 @@ def themen() -> list[TopicInput]:
         TopicInput("zr-schuldrecht-at", "zivilrecht", "Schuldrecht AT", relevance=5),
         TopicInput("zr-sachenrecht", "zivilrecht", "Sachenrecht", relevance=4),
         TopicInput("sr-at", "strafrecht", "Strafrecht AT", relevance=5),
-        TopicInput("sr-bt-vermoegen", "strafrecht", "Vermoegensdelikte", relevance=5),
+        TopicInput("sr-bt-vermoegen", "strafrecht", "Vermögensdelikte", relevance=5),
         TopicInput("or-grundrechte", "oeffentliches-recht", "Grundrechte", relevance=5),
         TopicInput("or-verwaltungsrecht-at", "oeffentliches-recht", "VerwR AT", relevance=4),
         TopicInput("or-kommunalrecht", "oeffentliches-recht", "Kommunalrecht", relevance=2),
@@ -105,7 +105,7 @@ def test_grosser_rueckstand_stoppt_die_aufnahme_von_neuem_stoff():
     zweiter = plan.days[1]
     assert zweiter.review_backlog > 150
     assert not any(b.kind == "neu" for b in zweiter.blocks)
-    assert any("Rueckstand" in b.title for b in zweiter.blocks)
+    assert any("Rückstand" in b.title for b in zweiter.blocks)
 
 
 def test_ruhetage_werden_respektiert():
