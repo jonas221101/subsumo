@@ -260,6 +260,26 @@ class AnalyzeCall(Base):
     )
 
 
+class LlmCorrectionCall(Base):
+    """Protokolliert jeden an ``LLMEvaluator`` dispatchten Bewertungsaufruf.
+
+    Grundlage der Kostenbremse (SUB-310, docs/19-kosten-preis-budget.md
+    Abschnitt 5): sowohl das Fair-Use-Limit je Nutzer als auch das globale
+    Monatsbudget zaehlen ueber diese Tabelle, per rollierendem 30-Tage-Fenster
+    wie ``AnalyzeCall``. Ein Eintrag heisst nur "an den LLM-Pfad dispatcht",
+    nicht "erfolgreich abgerechnet" - der interne Netzwerk-Fallback in
+    ``LLMEvaluator.evaluate`` faengt einzelne Fehlschlaege unabhaengig davon ab.
+    """
+
+    __tablename__ = "llm_correction_calls"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, index=True
+    )
+
+
 class StripeWebhookEvent(Base):
     """Persistierte Stripe-Event-IDs (docs/20 B4).
 

@@ -54,9 +54,17 @@ und ihre Zugangsdaten geheim zu halten. Ein Konto ist nicht übertragbar.
 
 ## 4. Tarife, Preise
 
-| | Free | Pro (Gründerpreis) |
+**Hinweis Tag 1 (Early Access):** Der Start erfolgt als kostenloser Early
+Access ohne Bezahlstrecke (Nutzerentscheidung 25.09.2026, SUB-39 Interaktion
+`b1739bd0`; `docs/18-release-2-wochen.md` Abschnitt 5). Die Kaufstrecke ist
+gebaut und getestet (SUB-83), aber **nicht scharfgeschaltet** — der Pro-Preis
+unten wird am Tag 1 von niemandem verlangt und fällt erst mit Aktivierung der
+Paywall (geplant v1.1, siehe `docs/17-release-readiness.md` Abschnitt 4) an.
+Alle Nutzer:innen haben am Tag 1 kostenlosen Zugriff im Umfang der Free-Spalte.
+
+| | Free | Pro (Gründerpreis, fällig erst ab Paywall-Aktivierung) |
 |---|---|---|
-| Preis | 0 € | **3,99 €/Monat oder 39 €/Jahr**, jeweils inkl. gesetzlicher Umsatzsteuer, sofern diese anfällt `[Platzhalter — abhängig von Rechtsträger/Kleinunternehmerregelung, siehe 01-impressum.md]` |
+| Preis | 0 € | **3,99 €/Monat oder 39 €/Jahr**, jeweils inkl. gesetzlicher Umsatzsteuer, sofern diese anfällt `[Platzhalter — abhängig von Rechtsträger/Kleinunternehmerregelung, siehe 01-impressum.md]`. **Nicht am Tag 1 fällig** — siehe Hinweis oben. |
 | Karteikarten | 20 fällige Karten/Tag, ein Rechtsgebiet | unbegrenzt, alle drei Rechtsgebiete |
 | Schemata | Lesen | Lesen + Reihenfolge-Drill |
 | Geführte Fälle | 2 | alle |
@@ -148,9 +156,14 @@ Gerichtsstand wird gegenüber Verbraucher:innen nicht vereinbart.
 Nutzungsrechte an nutzergenerierten Gutachten wörtlich sinngemäß aus
 `docs/06-recht-compliance.md` Abschnitt 1/2; Kündigungsbutton-Pflicht nach
 § 312k BGB, offen laut `docs/17-release-readiness.md` Abschnitt 4;
-Haftungsfrage zur KI-Bewertung als „Frage" bereits in
-`docs/17-release-readiness.md` Abschnitt 1 aufgeworfen. **Menschliche
-Rechtsprüfung nötig:** Kündigungsabsatz erst veröffentlichen, wenn die
-Funktion existiert (Punkt 3 in `00-uebersicht.md`); Haftungsklausel für den
-Struktur-Check anwaltlich absichern; VSBG/OS-Hinweis auf aktuellen Rechtsstand
+Haftungsfrage zur KI-Bewertung als „Frage" ursprünglich in
+`docs/17-release-readiness.md` Abschnitt 1 aufgeworfen, dort am 25.09.2026
+als bewusst getragenes Risiko entschieden (`docs/31-projektreview-sub254.md`
+Abschnitt 9.1) — dieser Text geht ohne anwaltliche Prüfung der
+Haftungsklausel live. Kennzeichnung des Pro-Preises als „fällig erst ab
+Paywall-Aktivierung" in Abschnitt 4 nachgezogen als Folgeaufgabe aus dem
+Review von PR #97 (SUB-332, siehe `docs/17-release-readiness.md` Abschnitt
+„Zusammenfassung" Nachtrag 4; SUB-333). **Menschliche Rechtsprüfung weiterhin
+nötig:** Kündigungsabsatz erst veröffentlichen, wenn die Funktion existiert
+(Punkt 3 in `00-uebersicht.md`); VSBG/OS-Hinweis auf aktuellen Rechtsstand
 prüfen (Punkt 7).
