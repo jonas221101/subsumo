@@ -32,24 +32,24 @@ void main() {
     expect(find.textContaining('Unbekannter Rechtstext'), findsOneWidget);
   });
 
-  testWidgets('Footer auf der Landing Page verlinkt alle fuenf Rechtstexte', (tester) async {
+  testWidgets('Footer auf der Landing Page verlinkt alle fünf Rechtstexte', (tester) async {
     final state = AppState(api: ApiClient());
 
     await tester.pumpWidget(SubsumoApp(state: state, initialLocation: '/'));
     await tester.pumpAndSettle();
 
-    for (final label in ['Impressum', 'AGB', 'Datenschutzerklaerung', 'Widerrufsbelehrung', 'Cookie-Hinweis']) {
+    for (final label in ['Impressum', 'AGB', 'Datenschutzerklärung', 'Widerrufsbelehrung', 'Cookie-Hinweis']) {
       expect(find.widgetWithText(TextButton, label), findsOneWidget);
     }
   });
 
-  testWidgets('Footer auf der Preisseite verlinkt alle fuenf Rechtstexte', (tester) async {
+  testWidgets('Footer auf der Preisseite verlinkt alle fünf Rechtstexte', (tester) async {
     final state = AppState(api: ApiClient());
 
     await tester.pumpWidget(SubsumoApp(state: state, initialLocation: '/preise'));
     await tester.pumpAndSettle();
 
-    for (final label in ['Impressum', 'AGB', 'Datenschutzerklaerung', 'Widerrufsbelehrung', 'Cookie-Hinweis']) {
+    for (final label in ['Impressum', 'AGB', 'Datenschutzerklärung', 'Widerrufsbelehrung', 'Cookie-Hinweis']) {
       expect(find.widgetWithText(TextButton, label), findsOneWidget);
     }
   });

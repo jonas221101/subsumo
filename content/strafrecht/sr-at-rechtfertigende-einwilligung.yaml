@@ -1,0 +1,374 @@
+topic:
+  slug: sr-at-rechtfertigende-einwilligung
+  area: strafrecht
+  title: Rechtfertigende Einwilligung, Einverständnis und § 228 StGB
+  parent: sr-at
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-fable-5-1
+    status: in-pruefung
+    normzitate_geprueft: true
+cards:
+- slug: sr-einwilligung-begriff
+  type: definition
+  front: 'Definiere: rechtfertigende Einwilligung'
+  back: >-
+    Die rechtfertigende Einwilligung ist der vor der Tat erklärte Verzicht des
+    Rechtsgutsinhabers auf den strafrechtlichen Schutz eines ihm zustehenden,
+    disponiblen Individualrechtsguts. Sie ist gesetzlich nicht allgemein geregelt,
+    aber gewohnheitsrechtlich anerkannt und wird von § 228 StGB als bestehender
+    Rechtfertigungsgrund vorausgesetzt. Ihr Grund liegt in der
+    Selbstbestimmungsfreiheit des Einzelnen: Wer über ein Rechtsgut frei verfügen
+    darf, kann auch seine Verletzung durch andere gestatten. Die Tat bleibt
+    tatbestandsmäßig, ist aber nicht rechtswidrig.
+  norms:
+  - § 228 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-einwilligung-abgrenzung-einverstaendnis-streitstand
+  type: streitstand
+  front: 'Streitstand: Ist zwischen tatbestandsausschließendem Einverständnis und rechtfertigender Einwilligung zu unterscheiden?'
+  back: >-
+    Problem: Die Zustimmung des Betroffenen kann entweder schon den Tatbestand
+    entfallen lassen oder erst die Rechtswidrigkeit ausschließen. Davon hängt ab,
+    welche Anforderungen an die Zustimmung zu stellen sind.
+
+    H.M. und Rspr. (Zweiteilung): Bei Tatbeständen, deren Unrecht gerade im Handeln
+    gegen oder ohne den Willen des Betroffenen liegt (Wegnahme bei § 242 StGB,
+    Eindringen bei § 123 StGB, Nötigen bei § 240 StGB, Freiheitsberaubung bei § 239
+    StGB), schließt das Einverständnis bereits den Tatbestand aus. Dafür genügt der
+    natürliche Wille; Einsichtsfähigkeit und Willensmängel sind grundsätzlich
+    unbeachtlich, das Einverständnis muss nicht nach außen erklärt sein. Bei allen
+    anderen Tatbeständen, insbesondere der Körperverletzung, wirkt die Zustimmung
+    als rechtfertigende Einwilligung mit strengeren Voraussetzungen
+    (Einwilligungsfähigkeit, keine wesentlichen Willensmängel, Kundgabe, Grenze des
+    § 228 StGB).
+
+    Gegenansicht (Teile der Literatur, einheitliche Lösung): Jede wirksame
+    Zustimmung des Rechtsgutsinhabers schließt schon den Tatbestand aus, weil bei
+    einem disponiblen Rechtsgut ohne Willensbruch kein tatbestandliches Unrecht
+    entstehe. Die Unterscheidung sei künstlich.
+
+    Konsequenz: Nach h.M. ist zunächst durch Auslegung des jeweiligen Tatbestands zu
+    klären, ob das Merkmal einen entgegenstehenden Willen voraussetzt. In der
+    Klausur ist die Zweiteilung zugrunde zu legen.
+  norms:
+  - § 242 StGB
+  - § 123 StGB
+  - § 223 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-einwilligung-voraussetzungen-ueberblick
+  type: schema_step
+  front: Welche Voraussetzungen hat die rechtfertigende Einwilligung?
+  back: >-
+    (1) Disponibles Individualrechtsgut, über das der Einwilligende verfügen darf:
+    Rechtsgüter der Allgemeinheit sind nicht disponibel, das Leben wegen § 216 StGB
+    ebenfalls nicht. (2) Einwilligungsfähigkeit des Rechtsgutsinhabers.
+    (3) Freiheit von wesentlichen Willensmängeln (Täuschung, Drohung, Irrtum).
+    (4) Erklärung der Einwilligung vor der Tat, die nach außen erkennbar geworden und
+    nicht widerrufen ist; eine nachträgliche Genehmigung rechtfertigt nicht.
+    (5) Bei Körperverletzungen zusätzlich keine Sittenwidrigkeit der Tat, § 228 StGB.
+    (6) Subjektives Rechtfertigungselement: Der Täter handelt in Kenntnis der
+    Einwilligung.
+  norms:
+  - § 228 StGB
+  - § 216 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-einwilligung-faehigkeit
+  type: definition
+  front: 'Definiere: Einwilligungsfähigkeit'
+  back: >-
+    Einwilligungsfähig ist, wer nach seiner geistigen und sittlichen Reife
+    Bedeutung und Tragweite des Rechtsgutsverzichts erkennen und danach sein
+    Verhalten bestimmen kann (natürliche Einsichts- und Urteilsfähigkeit). Auf die
+    zivilrechtliche Geschäftsfähigkeit kommt es grundsätzlich nicht an; auch
+    Minderjährige können daher je nach Reife und Schwere des Eingriffs wirksam
+    einwilligen. Fehlt die Fähigkeit, kann bei Eingriffen im Interesse des
+    Betroffenen (etwa Heilbehandlungen) der gesetzliche Vertreter einwilligen,
+    dessen Entscheidung sich aber am Wohl des Vertretenen ausrichten muss.
+  norms:
+  - § 223 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-einwilligung-willensmaengel-streitstand
+  type: streitstand
+  front: 'Streitstand: Welche Willensmängel machen die Einwilligung unwirksam?'
+  back: >-
+    Problem: Der Einwilligende irrt aufgrund einer Täuschung oder aus eigenem Anlass
+    über Umstände, die für seine Entscheidung bedeutsam waren. Unstreitig unwirksam
+    ist eine durch Drohung oder Zwang abgenötigte Einwilligung. Streitig ist die
+    Behandlung von Irrtümern.
+
+    Rspr. und wohl h.M.: Jeder durch Täuschung hervorgerufene Irrtum, der für die
+    Einwilligung ursächlich war, macht sie unwirksam, auch wenn er nur das Motiv
+    betrifft (etwa eine Blutspende aufgrund vorgetäuschter Notlage eines
+    Angehörigen). Maßgeblich sei die Freiheit der Willensentschließung insgesamt.
+
+    Gegenansicht (Lehre vom rechtsgutsbezogenen Irrtum): Nur Irrtümer über Art,
+    Umfang oder Gefährlichkeit des Eingriffs in das Rechtsgut selbst machen die
+    Einwilligung unwirksam. Bloße Motivirrtümer lassen den Rechtsgutsverzicht
+    unberührt, weil der Einwilligende weiß, was mit seinem Rechtsgut geschieht; der
+    Täuschende sei über Betrug oder Nötigung zu erfassen.
+
+    Konsequenz: Bei Täuschung über Motive führt die h.M. zur Strafbarkeit aus dem
+    Verletzungsdelikt, die Gegenansicht verneint sie.
+  norms:
+  - § 223 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-einwilligung-228-sittenwidrigkeit
+  type: norm
+  front: 'Was regelt § 228 StGB und nach welchem Maßstab bestimmt die Rspr. die Sittenwidrigkeit?'
+  back: >-
+    Nach § 228 StGB handelt rechtswidrig, wer eine Körperverletzung mit Einwilligung
+    der verletzten Person vornimmt, wenn die Tat trotz der Einwilligung gegen die
+    guten Sitten verstößt. Die Norm begrenzt also die Dispositionsbefugnis über die
+    körperliche Unversehrtheit. Nach heutiger Rspr. (BGH) kommt es nicht auf die
+    moralische Bewertung des Zwecks an, sondern auf Art und Gewicht des Eingriffs:
+    Sittenwidrig ist die Tat, wenn der Einwilligende durch sie in konkrete
+    Todesgefahr gebracht wird. Bei verabredeten Schlägereien zwischen Gruppen wird
+    die Sittenwidrigkeit zudem aus der Eskalationsgefahr hergeleitet, wenn keine
+    wirksamen Regeln und Schutzvorkehrungen die Gefahr begrenzen. Die Einwilligung
+    in eine sittenwidrige Tat ist unwirksam; der Täter bleibt aus §§ 223 ff. StGB
+    strafbar.
+  norms:
+  - § 228 StGB
+  - § 223 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-einwilligung-mutmassliche
+  type: definition
+  front: 'Definiere: mutmaßliche Einwilligung'
+  back: >-
+    Die mutmaßliche Einwilligung ist ein eigenständiger, gewohnheitsrechtlich
+    anerkannter Rechtfertigungsgrund für Fälle, in denen eine ausdrückliche
+    Einwilligung nicht rechtzeitig eingeholt werden kann, der Rechtsgutsinhaber
+    aber bei Kenntnis der Lage mutmaßlich eingewilligt hätte. Sie ist gegenüber der
+    tatsächlichen Einwilligung subsidiär: Ist der Betroffene erreichbar, muss er
+    gefragt werden. Maßgeblich ist der hypothetische Wille des konkreten
+    Rechtsgutsinhabers, nicht das objektiv Vernünftige; ein bekannter
+    entgegenstehender Wille schließt die Rechtfertigung aus. Fallgruppen sind das
+    Handeln im materiellen Interesse des Betroffenen (Operation des bewusstlosen
+    Unfallopfers) und das Handeln bei mangelndem Interesse des Betroffenen (Öffnen
+    der Post des abwesenden Nachbarn, um einen dringenden Termin wahrzunehmen).
+    Subjektiv muss der Täter die Lage gewissenhaft geprüft haben.
+  norms:
+  - § 223 StGB
+  - § 34 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-einwilligung-aerztlicher-heileingriff-streitstand
+  type: streitstand
+  front: 'Streitstand: Ist der ärztliche Heileingriff eine tatbestandliche Körperverletzung?'
+  back: >-
+    Problem: Ein Arzt operiert kunstgerecht und mit Heilerfolg. Ist der Eingriff
+    schon keine Körperverletzung, oder ist er tatbestandsmäßig und nur durch die
+    Einwilligung des Patienten gerechtfertigt?
+
+    Rspr. (ständig): Jeder ärztliche Eingriff in die körperliche Integrität erfüllt
+    den Tatbestand des § 223 StGB, unabhängig von Kunstgerechtigkeit und Erfolg.
+    Straflosigkeit folgt erst aus der Rechtfertigung durch die Einwilligung des
+    Patienten, die eine ordnungsgemäße Aufklärung über Art, Risiken und Alternativen
+    voraussetzt. Nur so sei das Selbstbestimmungsrecht des Patienten strafrechtlich
+    geschützt.
+
+    Gegenansicht (überwiegende Literatur): Ein lege artis durchgeführter und
+    gelungener Heileingriff verbessert die Gesundheit und ist deshalb schon keine
+    körperliche Misshandlung oder Gesundheitsschädigung. Der Eingriff ohne
+    Einwilligung verletze nur die Willensfreiheit, die durch § 223 StGB nicht
+    geschützt sei.
+
+    Konsequenz: Nach der Rspr. ist die Aufklärung Wirksamkeitsvoraussetzung der
+    Einwilligung; Aufklärungsmängel führen zur Strafbarkeit aus § 223 StGB, sofern
+    nicht eine hypothetische Einwilligung anerkannt wird. In der Klausur ist der
+    Rspr. zu folgen und die Einwilligung sorgfältig zu prüfen.
+  norms:
+  - § 223 StGB
+  - § 228 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-einwilligung-subjektives-element
+  type: definition
+  front: Welche subjektiven Anforderungen stellt die rechtfertigende Einwilligung an den Täter?
+  back: >-
+    Wie bei jedem Rechtfertigungsgrund muss der Täter die rechtfertigende Lage
+    kennen: Er muss wissen, dass der Rechtsgutsinhaber eingewilligt hat, und darf
+    den Rahmen der Einwilligung nicht überschreiten. Handelt er in Unkenntnis der
+    Einwilligung, fehlt das subjektive Rechtfertigungselement; nach h.M. wird er
+    dann wegen Versuchs bestraft, weil das Erfolgsunrecht durch die objektiv
+    vorliegende Einwilligung entfällt, das Handlungsunrecht aber bestehen bleibt.
+    Ein Widerruf der Einwilligung vor Abschluss der Tat lässt die Rechtfertigung für
+    die folgenden Handlungen entfallen.
+  norms:
+  - § 223 StGB
+  - § 22 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-rechtfertigende-einwilligung
+  title: Rechtfertigende Einwilligung und mutmaßliche Einwilligung
+  norms:
+  - § 228 StGB
+  - § 223 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+  steps:
+  - label: I. Abgrenzung zum tatbestandsausschließenden Einverständnis
+    hinweis: Setzt der Tatbestand ein Handeln gegen den Willen voraus, entfällt schon der Tatbestand; dann keine Rechtfertigungsprüfung.
+  - label: II. Objektive Voraussetzungen der Einwilligung
+    children:
+    - label: 1. Disponibles Individualrechtsgut des Einwilligenden (nicht das Leben, § 216 StGB; keine Allgemeinrechtsgüter)
+    - label: 2. Einwilligungsfähigkeit (natürliche Einsichts- und Urteilsfähigkeit)
+    - label: 3. Keine wesentlichen Willensmängel (Täuschung, Drohung, Irrtum)
+      hinweis: Streit um die Beachtlichkeit bloßer Motivirrtümer.
+    - label: 4. Erklärung vor der Tat, nach außen erkennbar, nicht widerrufen
+    - label: 5. Bei Körperverletzung keine Sittenwidrigkeit, § 228 StGB (konkrete Todesgefahr, Eskalationsgefahr)
+  - label: III. Subjektives Rechtfertigungselement
+    children:
+    - label: 1. Kenntnis der Einwilligung
+    - label: 2. Handeln innerhalb ihres Rahmens
+  - label: IV. Hilfsweise mutmaßliche Einwilligung
+    children:
+    - label: 1. Subsidiarität - keine rechtzeitige Befragung möglich
+    - label: 2. Hypothetischer Wille des konkreten Rechtsgutsinhabers
+    - label: 3. Gewissenhafte Prüfung durch den Täter
+  - label: 'V. Ergebnis: Rechtfertigung oder Strafbarkeit aus dem Verletzungsdelikt'
+faelle:
+- slug: sr-fall-verabredeter-faustkampf-aufgabe
+  title: Der verabredete Faustkampf
+  difficulty: 3
+  minutes: 50
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  stand: 2026-09
+  facts: >-
+    A (24 Jahre) und B (25 Jahre) wollen einen alten Streit "wie Männer" klären.
+    Sie verabreden auf einem Parkplatz einen Faustkampf ohne Waffen mit der
+    ausdrücklichen Regel, dass der Kampf endet, sobald einer "Ich gebe auf" ruft.
+    Der gemeinsame Freund C soll auf die Einhaltung achten. Im Kampf trifft A den B
+    mit einem Faustschlag im Gesicht und bricht ihm die Nase. B geht zu Boden und
+    ruft deutlich hörbar "Ich gebe auf". A, der das hört, tritt dem am Boden
+    liegenden B dennoch einmal mit dem Turnschuh in die Rippen, wodurch B eine
+    Prellung erleidet. Zu keinem Zeitpunkt bestand für B Lebensgefahr.
+  question: Hat sich A wegen Körperverletzung nach § 223 Abs. 1 StGB strafbar gemacht?
+  steps:
+  - prompt: Ist der Faustschlag ins Gesicht tatbestandsmäßig nach § 223 Abs. 1 StGB?
+    erwartung: >-
+      Ja - der Nasenbruch ist eine üble, unangemessene Behandlung, die das
+      körperliche Wohlbefinden mehr als nur unerheblich beeinträchtigt (körperliche
+      Misshandlung), und zugleich das Hervorrufen eines pathologischen Zustands
+      (Gesundheitsschädigung). A handelte vorsätzlich.
+  - prompt: Wirkt die Zustimmung des B als Einverständnis oder als Einwilligung?
+    erwartung: >-
+      § 223 StGB setzt kein Handeln gegen den Willen des Opfers voraus; die
+      Zustimmung kann daher nach h.M. den Tatbestand nicht ausschließen, sondern
+      wirkt nur als rechtfertigende Einwilligung.
+  - prompt: Liegen die allgemeinen Voraussetzungen einer wirksamen Einwilligung vor?
+    erwartung: >-
+      Ja - die körperliche Unversehrtheit ist ein disponibles Individualrechtsgut,
+      B ist als Erwachsener einwilligungsfähig, Willensmängel sind nicht ersichtlich
+      und die Einwilligung wurde vor dem Kampf ausdrücklich erklärt.
+  - prompt: Ist die Tat trotz Einwilligung sittenwidrig im Sinne des § 228 StGB?
+    erwartung: >-
+      Nein - nach dem Maßstab der Rspr. kommt es auf Art und Gewicht des Eingriffs
+      an. Ein Faustkampf zwischen zwei Personen ohne Waffen, mit vereinbarter
+      Abbruchregel und einem Aufpasser, bei dem keine konkrete Lebensgefahr bestand,
+      verstößt nicht gegen die guten Sitten. Die Einwilligung in den Faustschlag ist
+      wirksam.
+  - prompt: Handelte A beim Faustschlag mit dem erforderlichen subjektiven Rechtfertigungselement?
+    erwartung: >-
+      Ja - A kannte die Verabredung und handelte innerhalb ihres Rahmens. Der
+      Faustschlag ist gerechtfertigt.
+  - prompt: Wie ist der Tritt in die Rippen nach dem Aufgabe-Ruf zu beurteilen?
+    erwartung: >-
+      Mit dem Ruf "Ich gebe auf" hat B die Einwilligung nach der vereinbarten Regel
+      wirksam widerrufen; das hat A auch wahrgenommen. Der Tritt liegt außerhalb der
+      Einwilligung und ist nicht gerechtfertigt. A hat sich insoweit nach § 223
+      Abs. 1 StGB strafbar gemacht.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Tatbestand des § 223 Abs. 1 StGB für den Faustschlag bejaht (körperliche Misshandlung, Gesundheitsschädigung)
+      weight: 1.0
+      required: false
+      norms:
+      - § 223 Abs. 1 StGB
+      keywords:
+      - körperliche Misshandlung
+      - Gesundheitsschädigung
+      card_slugs:
+      - sr-einwilligung-voraussetzungen-ueberblick
+    - id: p2
+      label: Zustimmung als rechtfertigende Einwilligung eingeordnet, nicht als tatbestandsausschließendes Einverständnis
+      weight: 2.0
+      required: true
+      norms:
+      - § 223 Abs. 1 StGB
+      keywords:
+      - Einwilligung
+      - Einverständnis
+      - Rechtfertigung
+      card_slugs:
+      - sr-einwilligung-abgrenzung-einverstaendnis-streitstand
+    - id: p3
+      label: Allgemeine Voraussetzungen der Einwilligung geprüft (disponibles Rechtsgut, Einwilligungsfähigkeit, keine Willensmängel, Erklärung vor der Tat)
+      weight: 2.0
+      required: true
+      keywords:
+      - disponibel
+      - einwilligungsfähig
+      - Willensmängel
+      card_slugs:
+      - sr-einwilligung-voraussetzungen-ueberblick
+      - sr-einwilligung-faehigkeit
+    - id: p4
+      label: Sittenwidrigkeit nach § 228 StGB mit dem Maßstab der Rspr. (konkrete Lebensgefahr, Eskalationsgefahr) geprüft und verneint
+      weight: 2.5
+      required: true
+      norms:
+      - § 228 StGB
+      keywords:
+      - § 228
+      - sittenwidrig
+      - Lebensgefahr
+      card_slugs:
+      - sr-einwilligung-228-sittenwidrigkeit
+    - id: p5
+      label: Subjektives Rechtfertigungselement für den Faustschlag bejaht
+      weight: 1.0
+      required: false
+      keywords:
+      - Kenntnis
+      - subjektives Rechtfertigungselement
+      card_slugs:
+      - sr-einwilligung-subjektives-element
+    - id: p6
+      label: Widerruf der Einwilligung durch den Aufgabe-Ruf erkannt, Tritt als nicht gerechtfertigte Körperverletzung bewertet
+      weight: 2.5
+      required: true
+      norms:
+      - § 223 Abs. 1 StGB
+      keywords:
+      - Widerruf
+      - widerrufen
+      - nicht gerechtfertigt
+      card_slugs:
+      - sr-einwilligung-subjektives-element
+      - sr-einwilligung-voraussetzungen-ueberblick

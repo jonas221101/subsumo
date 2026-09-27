@@ -199,7 +199,7 @@ class _GutachtenPageState extends State<GutachtenPage> {
             padding: const EdgeInsets.all(Spacing.xl),
             child: SubsumoCard(
               child: SubsumoFeedbackBlock(
-                message: 'Dieser Fall ist mit Pro verfuegbar.',
+                message: 'Dieser Fall ist mit Pro verfügbar.',
                 detail: caseUpgradeMessage,
                 severity: FeedbackSeverity.hint,
               ),
@@ -279,14 +279,18 @@ class _GutachtenPageState extends State<GutachtenPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      const SubsumoEyebrow('Sachverhalt'),
+                      const SizedBox(height: Spacing.sm),
                       Text(
                         _case!['facts'] as String? ?? '',
                         style: Theme.of(context).textTheme.bodyMedium,
                       ),
                       const SizedBox(height: Spacing.md),
+                      const SubsumoEyebrow('Fallfrage'),
+                      const SizedBox(height: Spacing.xs),
                       Text(
                         _case!['question'] as String? ?? '',
-                        style: Theme.of(context).textTheme.titleSmall,
+                        style: Theme.of(context).extension<SubsumoTypography>()!.headingSmall,
                       ),
                     ],
                   ),
@@ -302,7 +306,7 @@ class _GutachtenPageState extends State<GutachtenPage> {
               textAlignVertical: TextAlignVertical.top,
               decoration: const InputDecoration(
                 alignLabelWithHint: true,
-                hintText: 'A koennte gegen B einen Anspruch auf ... aus § ... haben.',
+                hintText: 'A könnte gegen B einen Anspruch auf ... aus § ... haben.',
               ),
             ),
           ),
@@ -336,8 +340,8 @@ class _GutachtenPageState extends State<GutachtenPage> {
       key = 'hint';
       child = const SubsumoCard(
         child: SubsumoFeedbackBlock(
-          message: 'Schreib los. Ab etwa 40 Woertern bekommst du hier laufend '
-              'Rueckmeldung zu Aufbau und Gutachtenstil.',
+          message: 'Schreib los. Ab etwa 40 Wörtern bekommst du hier laufend '
+              'Rückmeldung zu Aufbau und Gutachtenstil.',
           severity: FeedbackSeverity.hint,
         ),
       );
@@ -481,7 +485,7 @@ class _ResultView extends StatelessWidget {
   /// Nur bei aktiver KI-Korrektur gesetzt (siehe Feldkommentar in
   /// `_GutachtenPageState._aiCorrectionEnabled`) - sonst bliebe die Kennzeich-
   /// nung sichtbar, obwohl die Note immer heuristisch ist und sich damit
-  /// "Oberflaeche unveraendert bei ausgeschaltetem Feature" (Abnahme SUB-134)
+  /// "Oberfläche unverändert bei ausgeschaltetem Feature" (Abnahme SUB-134)
   /// nicht mehr haelt.
   final bool showEngine;
 
@@ -505,7 +509,7 @@ class _ResultView extends StatelessWidget {
           if (showEngine) ...[
             const SizedBox(height: Spacing.xs),
             SubsumoChip(
-              label: engine.startsWith('llm:') ? 'KI-bewertet' : 'Heuristisch geprueft',
+              label: engine.startsWith('llm:') ? 'KI-bewertet' : 'Heuristisch geprüft',
             ),
           ],
           const SizedBox(height: Spacing.sm),
@@ -565,7 +569,7 @@ class _AiConsentDialog extends StatelessWidget {
             children: [
               Text(
                 'Dein Gutachtentext wird zur inhaltlichen Bewertung an den '
-                'Anbieter Anthropic uebertragen und dort in den USA '
+                'Anbieter Anthropic übertragen und dort in den USA '
                 'verarbeitet. Die Bewertung erfolgt maschinell, ist '
                 'unverbindlich und ersetzt keine Korrektur durch einen '
                 'Menschen.',
@@ -579,7 +583,7 @@ class _AiConsentDialog extends StatelessWidget {
               SizedBox(height: Spacing.md),
               Text(
                 'Du kannst deine Zustimmung jederzeit in den '
-                'Kontoeinstellungen widerrufen.',
+                'Kontöinstellungen widerrufen.',
               ),
               SizedBox(height: Spacing.sm),
               _DatenschutzLink(),
@@ -614,7 +618,7 @@ class _DatenschutzLink extends StatelessWidget {
           Uri.parse(_AiConsentDialog._datenschutzUrl),
           mode: LaunchMode.externalApplication,
         ),
-        child: const Text('Datenschutzerklaerung'),
+        child: const Text('Datenschutzerklärung'),
       ),
     );
   }

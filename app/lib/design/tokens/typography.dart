@@ -7,16 +7,18 @@ import 'package:flutter/material.dart';
 class TypeScale {
   const TypeScale._();
 
-  static const double bodyLarge = 16;
+  // Groessen fuer Source Sans 3 (kleinere x-Hoehe als DejaVu Sans, deshalb
+  // je eine Stufe groesser als in der ersten Fassung).
+  static const double bodyLarge = 17;
   static const double bodyLargeHeight = 1.5;
-  static const double bodyMedium = 15;
+  static const double bodyMedium = 16;
   static const double bodyMediumHeight = 1.5;
-  static const double bodySmall = 13;
+  static const double bodySmall = 14;
   static const double bodySmallHeight = 1.4;
 
   static const double titleLarge = 22;
-  static const double titleMedium = 17;
-  static const double titleSmall = 15;
+  static const double titleMedium = 18;
+  static const double titleSmall = 16;
 
   static const FontWeight titleWeight = FontWeight.w600;
 
@@ -53,6 +55,39 @@ class TypeScale {
   static const FontWeight heroWeight = FontWeight.w600;
   static const double heroLetterSpacing = -0.5;
   static const double heroHeight = 1.05;
+
+  // Lese-/Ueberschriften-Rollen fuer App-Screens (Relaunch "Kanzlei-
+  // Editorial"): Fraunces traegt in der eingeloggten App Seitentitel,
+  // Kartenfragen und grosse Kennzahlen - das ist die typografische
+  // Signatur, die die App von generischen Material-Lern-Apps unterscheidet.
+  // Fliesstext (body*) bleibt serifenlos, weil lange Gutachten-/Falltexte
+  // auf Bildschirm in der Grotesk besser lesbar bleiben. Alle Werte bewusst
+  // kleiner als heroLarge/heroSmall: das sind Arbeits-, keine Marketing-
+  // Flaechen.
+  static const double headingLarge = 30;
+  static const double headingMedium = 22;
+  static const double headingSmall = 18;
+  static const double headingHeight = 1.2;
+  static const FontWeight headingWeight = FontWeight.w600;
+  static const double headingLetterSpacing = -0.2;
+
+  // Grosse Kennzahl (faellige Karten, Lernstand in Prozent). Eine Zahl, die
+  // gross gesetzt ist, braucht engere Laufweite und keine Zeilenhoehe.
+  static const double numeral = 56;
+  static const FontWeight numeralWeight = FontWeight.w500;
+  static const double numeralLetterSpacing = -1.5;
+
+  // Lesetext auf Karteikarten: die Frage steht in der Serife, etwas groesser
+  // als body, damit sie wie ein gesetzter Lehrbuchsatz wirkt.
+  static const double reading = 20;
+  static const double readingHeight = 1.4;
+
+  // Vorspann ("Eyebrow"): kleines, gesperrtes Label ueber Titeln und
+  // Bloecken ("HEUTE", "SACHVERHALT"). Immer in Versalien gesetzt - die
+  // Sperrung ersetzt das Fettgewicht.
+  static const double eyebrow = 12.5;
+  static const FontWeight eyebrowWeight = FontWeight.w600;
+  static const double eyebrowLetterSpacing = 1.4;
 }
 
 /// Display-Textstile als eigene [ThemeExtension], getrennt von
@@ -68,6 +103,12 @@ class SubsumoTypography extends ThemeExtension<SubsumoTypography> {
     required this.displayMedium,
     required this.heroLarge,
     required this.heroSmall,
+    required this.headingLarge,
+    required this.headingMedium,
+    required this.headingSmall,
+    required this.numeral,
+    required this.reading,
+    required this.eyebrow,
   });
 
   final TextStyle displayLarge;
@@ -81,6 +122,26 @@ class SubsumoTypography extends ThemeExtension<SubsumoTypography> {
   /// eines Skalierungsfaktors, damit beide Werte einzeln kontrastgeprueft
   /// und im Review nachvollziehbar bleiben.
   final TextStyle heroSmall;
+
+  /// Seitentitel in der eingeloggten App (Fraunces). Siehe [TypeScale.headingLarge].
+  final TextStyle headingLarge;
+
+  /// Blocktitel innerhalb einer Seite (Fraunces), z. B. "Rechtsgebiete".
+  final TextStyle headingMedium;
+
+  /// Titel eines Listeneintrags/einer Karte (Fraunces), z. B. Fall- oder
+  /// Schematitel.
+  final TextStyle headingSmall;
+
+  /// Grosse Kennzahl (Fraunces), z. B. "12" faellige Karten oder "62 %".
+  final TextStyle numeral;
+
+  /// Kartenfrage im Lernmodus (Fraunces, Lesegroesse).
+  final TextStyle reading;
+
+  /// Gesperrtes Versal-Label ueber Titeln/Bloecken (Grotesk). Der Aufrufer
+  /// setzt den Text selbst in Versalien - siehe `SubsumoEyebrow`.
+  final TextStyle eyebrow;
 
   factory SubsumoTypography.standard() => const SubsumoTypography(
         displayLarge: TextStyle(
@@ -115,6 +176,51 @@ class SubsumoTypography extends ThemeExtension<SubsumoTypography> {
           letterSpacing: TypeScale.heroLetterSpacing,
           fontVariations: [FontVariation('wght', 600), FontVariation('opsz', 36), FontVariation('WONK', 0)],
         ),
+        headingLarge: TextStyle(
+          fontSize: TypeScale.headingLarge,
+          height: TypeScale.headingHeight,
+          fontFamily: 'Fraunces',
+          fontWeight: TypeScale.headingWeight,
+          letterSpacing: TypeScale.headingLetterSpacing,
+          fontVariations: [FontVariation('wght', 600), FontVariation('opsz', 30), FontVariation('WONK', 0)],
+        ),
+        headingMedium: TextStyle(
+          fontSize: TypeScale.headingMedium,
+          height: TypeScale.headingHeight,
+          fontFamily: 'Fraunces',
+          fontWeight: TypeScale.headingWeight,
+          letterSpacing: TypeScale.headingLetterSpacing,
+          fontVariations: [FontVariation('wght', 600), FontVariation('opsz', 22), FontVariation('WONK', 0)],
+        ),
+        headingSmall: TextStyle(
+          fontSize: TypeScale.headingSmall,
+          height: TypeScale.headingHeight,
+          fontFamily: 'Fraunces',
+          fontWeight: TypeScale.headingWeight,
+          letterSpacing: 0,
+          fontVariations: [FontVariation('wght', 600), FontVariation('opsz', 18), FontVariation('WONK', 0)],
+        ),
+        numeral: TextStyle(
+          fontSize: TypeScale.numeral,
+          height: 1.0,
+          fontFamily: 'Fraunces',
+          fontWeight: TypeScale.numeralWeight,
+          letterSpacing: TypeScale.numeralLetterSpacing,
+          fontVariations: [FontVariation('wght', 500), FontVariation('opsz', 56), FontVariation('WONK', 0)],
+        ),
+        reading: TextStyle(
+          fontSize: TypeScale.reading,
+          height: TypeScale.readingHeight,
+          fontFamily: 'Fraunces',
+          fontWeight: FontWeight.w400,
+          fontVariations: [FontVariation('wght', 400), FontVariation('opsz', 20), FontVariation('WONK', 0)],
+        ),
+        eyebrow: TextStyle(
+          fontSize: TypeScale.eyebrow,
+          fontFamily: 'Subsumo',
+          fontWeight: TypeScale.eyebrowWeight,
+          letterSpacing: TypeScale.eyebrowLetterSpacing,
+        ),
       );
 
   @override
@@ -123,12 +229,24 @@ class SubsumoTypography extends ThemeExtension<SubsumoTypography> {
     TextStyle? displayMedium,
     TextStyle? heroLarge,
     TextStyle? heroSmall,
+    TextStyle? headingLarge,
+    TextStyle? headingMedium,
+    TextStyle? headingSmall,
+    TextStyle? numeral,
+    TextStyle? reading,
+    TextStyle? eyebrow,
   }) =>
       SubsumoTypography(
         displayLarge: displayLarge ?? this.displayLarge,
         displayMedium: displayMedium ?? this.displayMedium,
         heroLarge: heroLarge ?? this.heroLarge,
         heroSmall: heroSmall ?? this.heroSmall,
+        headingLarge: headingLarge ?? this.headingLarge,
+        headingMedium: headingMedium ?? this.headingMedium,
+        headingSmall: headingSmall ?? this.headingSmall,
+        numeral: numeral ?? this.numeral,
+        reading: reading ?? this.reading,
+        eyebrow: eyebrow ?? this.eyebrow,
       );
 
   @override
@@ -139,6 +257,12 @@ class SubsumoTypography extends ThemeExtension<SubsumoTypography> {
       displayMedium: TextStyle.lerp(displayMedium, other.displayMedium, t)!,
       heroLarge: TextStyle.lerp(heroLarge, other.heroLarge, t)!,
       heroSmall: TextStyle.lerp(heroSmall, other.heroSmall, t)!,
+      headingLarge: TextStyle.lerp(headingLarge, other.headingLarge, t)!,
+      headingMedium: TextStyle.lerp(headingMedium, other.headingMedium, t)!,
+      headingSmall: TextStyle.lerp(headingSmall, other.headingSmall, t)!,
+      numeral: TextStyle.lerp(numeral, other.numeral, t)!,
+      reading: TextStyle.lerp(reading, other.reading, t)!,
+      eyebrow: TextStyle.lerp(eyebrow, other.eyebrow, t)!,
     );
   }
 }

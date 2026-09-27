@@ -147,7 +147,7 @@ class ApiClient {
   Future<List<Map<String, dynamic>>> contentCards({int limit = 2000}) async {
     final data = await _get('/v1/content/cards', {'limit': limit});
     if (data is! List || data.any((card) => card is! Map)) {
-      throw const FormatException('Karten-Snapshot ist ungueltig');
+      throw const FormatException('Karten-Snapshot ist ungültig');
     }
     return data.map((card) => Map<String, dynamic>.from(card as Map)).toList();
   }

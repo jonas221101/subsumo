@@ -61,12 +61,12 @@ def test_marker_kommt_nach_dem_inhalt_kein_race_beim_lesen(tmp_path: Path):
         # ohne Marker wuerde ein schlecht getimter Client hier zugreifen.
         path.write_text("unvollstaendig", encoding="utf-8")
         time.sleep(0.03)
-        path.write_text("vollstaendige Antwort", encoding="utf-8")
+        path.write_text("vollständige Antwort", encoding="utf-8")
         (tmp_path / "response_001.ready").touch()
 
     threading.Thread(target=worker, daemon=True).start()
     response = client.complete("Frage")
-    assert response.text == "vollstaendige Antwort"
+    assert response.text == "vollständige Antwort"
 
 
 def test_timeout_wirft_llm_error_statt_ewig_zu_warten(tmp_path: Path):

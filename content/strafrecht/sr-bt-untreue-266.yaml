@@ -16,11 +16,11 @@ cards:
   type: definition
   front: 'Definiere: Untreue, § 266 Abs. 1 StGB, und ihre zwei Tatbestandsalternativen'
   back: '§ 266 Abs. 1 StGB stellt zwei Alternativen unter Strafe: den Missbrauchstatbestand
-    (Missbrauch einer im Aussenverhaeltnis wirksam eingeraeumten Befugnis, ueber fremdes
-    Vermoegen zu verfuegen oder einen anderen zu verpflichten) und den Treubruchtatbestand
-    (Verletzung einer aus Gesetz, behoerdlichem Auftrag, Rechtsgeschaeft oder Treueverhaeltnis
-    folgenden Pflicht, fremde Vermoegensinteressen wahrzunehmen). Beiden gemeinsam
-    ist, dass dem Vermoegensinhaber dadurch ein Nachteil zugefuegt werden muss.'
+    (Missbrauch einer im Außenverhältnis wirksam eingeräumten Befugnis, über fremdes
+    Vermögen zu verfügen oder einen anderen zu verpflichten) und den Treubruchtatbestand
+    (Verletzung einer aus Gesetz, behördlichem Auftrag, Rechtsgeschäft oder Treueverhältnis
+    folgenden Pflicht, fremde Vermögensinteressen wahrzunehmen). Beiden gemeinsam
+    ist, dass dem Vermögensinhaber dadurch ein Nachteil zugefügt werden muss.'
   norms:
   - § 266 Abs. 1 StGB
   quellen:
@@ -30,10 +30,10 @@ cards:
 - slug: sr-untreue-missbrauchstatbestand
   type: definition
   front: Was kennzeichnet den Missbrauchstatbestand des § 266 Abs. 1 StGB?
-  back: Der Taeter hat im Aussenverhaeltnis eine wirksame rechtliche Befugnis, ueber
-    fremdes Vermoegen zu verfuegen oder einen Dritten zu verpflichten (z. B. Vertretungsmacht).
-    Er missbraucht diese Befugnis, wenn er im Innenverhaeltnis seine Handlungsbefugnisse
-    ueberschreitet - das nach aussen wirksame Rechtsgeschaeft ist also gerade pflichtwidrig,
+  back: Der Täter hat im Außenverhältnis eine wirksame rechtliche Befugnis, über
+    fremdes Vermögen zu verfügen oder einen Dritten zu verpflichten (z. B. Vertretungsmacht).
+    Er missbraucht diese Befugnis, wenn er im Innenverhältnis seine Handlungsbefugnisse
+    überschreitet - das nach außen wirksame Rechtsgeschäft ist also gerade pflichtwidrig,
     ohne deshalb unwirksam zu sein.
   norms:
   - § 266 Abs. 1 StGB
@@ -43,10 +43,10 @@ cards:
 - slug: sr-untreue-treubruchtatbestand
   type: definition
   front: Was kennzeichnet den Treubruchtatbestand des § 266 Abs. 1 StGB?
-  back: Der Treubruchtatbestand setzt keine rechtsgeschaeftliche Vertretungsmacht
-    voraus. Ausreichend ist die Verletzung einer Vermoegensbetreuungspflicht - einer
-    Pflicht, fremde Vermoegensinteressen wahrzunehmen -, die sich aus Gesetz, behoerdlichem
-    Auftrag, Rechtsgeschaeft oder einem tatsaechlichen Treueverhaeltnis ergeben kann.
+  back: Der Treubruchtatbestand setzt keine rechtsgeschäftliche Vertretungsmacht
+    voraus. Ausreichend ist die Verletzung einer Vermögensbetreuungspflicht - einer
+    Pflicht, fremde Vermögensinteressen wahrzunehmen -, die sich aus Gesetz, behördlichem
+    Auftrag, Rechtsgeschäft oder einem tatsächlichen Treueverhältnis ergeben kann.
   norms:
   - § 266 Abs. 1 StGB
   quellen:
@@ -54,12 +54,12 @@ cards:
   stand: 2026-09
 - slug: sr-untreue-vermoegensbetreuungspflicht
   type: streitstand
-  front: Welche Anforderungen stellt die Rechtsprechung an die Vermoegensbetreuungspflicht?
-  back: Die Pflicht muss eine Hauptpflicht des Rechtsverhaeltnisses sein - nicht nur
-    eine beilaeufige Nebenpflicht -, von einigem Gewicht sein und dem Taeter einen
-    gewissen Entscheidungsspielraum sowie eine gewisse Selbststaendigkeit bei der
-    Wahrnehmung fremder Vermoegensinteressen belassen. Reine Ausfuehrungsgehilfen
-    ohne eigenen Spielraum unterfallen der Norm regelmaessig nicht.
+  front: Welche Anforderungen stellt die Rechtsprechung an die Vermögensbetreuungspflicht?
+  back: Die Pflicht muss eine Hauptpflicht des Rechtsverhältnisses sein - nicht nur
+    eine beiläufige Nebenpflicht -, von einigem Gewicht sein und dem Täter einen
+    gewissen Entscheidungsspielraum sowie eine gewisse Selbstständigkeit bei der
+    Wahrnehmung fremder Vermögensinteressen belassen. Reine Ausführungsgehilfen
+    ohne eigenen Spielraum unterfallen der Norm regelmäßig nicht.
   norms:
   - § 266 Abs. 1 StGB
   quellen:
@@ -67,12 +67,12 @@ cards:
   stand: 2026-09
 - slug: sr-untreue-vermoegensnachteil
   type: definition
-  front: Wie wird der Vermoegensnachteil bei § 266 StGB bestimmt, und was ist eine
-    schadensgleiche Vermoegensgefaehrdung?
+  front: Wie wird der Vermögensnachteil bei § 266 StGB bestimmt, und was ist eine
+    schadensgleiche Vermögensgefährdung?
   back: Der Nachteil wird wie beim Betrug im Wege einer Gesamtsaldierung ermittelt.
-    Nach staendiger Rechtsprechung kann auch eine konkrete Gefaehrdung des Vermoegens
-    ausreichen, wenn sie nach wirtschaftlicher Betrachtungsweise bereits einer Vermoegensminderung
-    gleichsteht (schadensgleiche Vermoegensgefaehrdung) - etwa bei einem hohen Ausfallrisiko
+    Nach ständiger Rechtsprechung kann auch eine konkrete Gefährdung des Vermögens
+    ausreichen, wenn sie nach wirtschaftlicher Betrachtungsweise bereits einer Vermögensminderung
+    gleichsteht (schadensgleiche Vermögensgefährdung) - etwa bei einem hohen Ausfallrisiko
     einer Forderung.
   norms:
   - § 266 Abs. 1 StGB
@@ -81,14 +81,14 @@ cards:
   stand: 2026-09
 - slug: sr-untreue-bverfg-praezisierungsgebot
   type: rechtsprechung
-  front: Was verlangt das Bundesverfassungsgericht fuer die Feststellung des Vermoegensnachteils
+  front: Was verlangt das Bundesverfassungsgericht für die Feststellung des Vermögensnachteils
     bei § 266 StGB?
   back: 'Das Bundesverfassungsgericht hat entschieden, dass der Nachteilsbegriff des
-    § 266 StGB dem strafrechtlichen Bestimmtheitsgebot des Art. 103 Abs. 2 GG genuegen
-    muss: Die Gerichte duerfen den Nachteil, insbesondere eine schadensgleiche Vermoegensgefaehrdung,
-    nicht pauschal behaupten, sondern muessen ihn eigenstaendig beziffern und wirtschaftlich
-    nachvollziehbar begruenden. Blosse Wahrscheinlichkeitserwaegungen ohne konkrete
-    Bezifferung genuegen den verfassungsrechtlichen Anforderungen nicht.'
+    § 266 StGB dem strafrechtlichen Bestimmtheitsgebot des Art. 103 Abs. 2 GG genügen
+    muss: Die Gerichte dürfen den Nachteil, insbesondere eine schadensgleiche Vermögensgefährdung,
+    nicht pauschal behaupten, sondern müssen ihn eigenständig beziffern und wirtschaftlich
+    nachvollziehbar begründen. Bloße Wahrscheinlichkeitserwägungen ohne konkrete
+    Bezifferung genügen den verfassungsrechtlichen Anforderungen nicht.'
   norms:
   - § 266 Abs. 1 StGB
   - Art. 103 Abs. 2 GG
@@ -99,10 +99,10 @@ cards:
 - slug: sr-untreue-besonders-schwerer-fall
   type: norm
   front: Was regelt § 266 Abs. 2 StGB?
-  back: '§ 266 Abs. 2 StGB erklaert unter anderem § 263 Abs. 3 StGB fuer entsprechend
-    anwendbar: Die dort genannten Regelbeispiele fuer einen besonders schweren Fall
-    des Betrugs - etwa ein Vermoegensverlust grossen Ausmasses oder gewerbsmaessiges
-    Handeln - gelten damit auch fuer die Untreue.'
+  back: '§ 266 Abs. 2 StGB erklärt unter anderem § 263 Abs. 3 StGB für entsprechend
+    anwendbar: Die dort genannten Regelbeispiele für einen besonders schweren Fall
+    des Betrugs - etwa ein Vermögensverlust großen Ausmaßes oder gewerbsmäßiges
+    Handeln - gelten damit auch für die Untreue.'
   norms:
   - § 266 Abs. 2 StGB
   - § 263 Abs. 3 StGB
@@ -123,54 +123,54 @@ schemata:
     children:
     - label: 1. Objektiver Tatbestand
       children:
-      - label: a) Vermoegensbetreuungspflicht (Missbrauchs- oder Treubruchtatbestand)
-      - label: 'b) Tathandlung: Missbrauch der Verfuegungs-/Verpflichtungsbefugnis
-          oder Verletzung der Vermoegensbetreuungspflicht'
-      - label: c) Vermoegensnachteil
-        hinweis: Bei schadensgleicher Vermoegensgefaehrdung ist der Nachteil eigenstaendig
+      - label: a) Vermögensbetreuungspflicht (Missbrauchs- oder Treubruchtatbestand)
+      - label: 'b) Tathandlung: Missbrauch der Verfügungs-/Verpflichtungsbefugnis
+          oder Verletzung der Vermögensbetreuungspflicht'
+      - label: c) Vermögensnachteil
+        hinweis: Bei schadensgleicher Vermögensgefährdung ist der Nachteil eigenständig
           zu beziffern (Bestimmtheitsgebot, Art. 103 Abs. 2 GG).
     - label: '2. Subjektiver Tatbestand: Vorsatz'
   - label: II. Rechtswidrigkeit
   - label: III. Schuld
   - label: IV. Besonders schwerer Fall, § 266 Abs. 2 i.V.m. § 263 Abs. 3 StGB
-    hinweis: Nur pruefen, wenn der Sachverhalt dazu Anlass gibt.
+    hinweis: Nur prüfen, wenn der Sachverhalt dazu Anlass gibt.
 faelle:
 - slug: sr-fall-geschaeftsfuehrer-privatueberweisung
-  title: Die Privatueberweisung des Geschaeftsfuehrers
+  title: Die Privatüberweisung des Geschäftsführers
   difficulty: 4
   minutes: 45
   quellen:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
-  facts: A ist alleinvertretungsberechtigter Geschaeftsfuehrer der X-GmbH und damit
-    kraft seiner Organstellung zur Wahrnehmung der Vermoegensinteressen der Gesellschaft
-    verpflichtet. Ohne Wissen oder Zustimmung der Gesellschafter ueberweist A 50.000
-    Euro vom Geschaeftskonto der X-GmbH auf sein privates Konto, um damit eigene Schulden
-    zu begleichen. Ein Anspruch der X-GmbH gegen A auf Rueckzahlung oder eine sonstige
+  facts: A ist alleinvertretungsberechtigter Geschäftsführer der X-GmbH und damit
+    kraft seiner Organstellung zur Wahrnehmung der Vermögensinteressen der Gesellschaft
+    verpflichtet. Ohne Wissen oder Zustimmung der Gesellschafter überweist A 50.000
+    Euro vom Geschäftskonto der X-GmbH auf sein privates Konto, um damit eigene Schulden
+    zu begleichen. Ein Anspruch der X-GmbH gegen A auf Rückzahlung oder eine sonstige
     gleichwertige Gegenleistung besteht nicht.
-  question: Hat sich A gegenueber der X-GmbH wegen Untreue gemaess § 266 Abs. 1 StGB
+  question: Hat sich A gegenüber der X-GmbH wegen Untreue gemäß § 266 Abs. 1 StGB
     strafbar gemacht?
   steps:
   - prompt: Formuliere den Obersatz.
-    erwartung: A koennte sich durch die Ueberweisung wegen Untreue gemaess § 266 Abs.
+    erwartung: A könnte sich durch die Überweisung wegen Untreue gemäß § 266 Abs.
       1 StGB strafbar gemacht haben.
-  - prompt: Trifft A eine Vermoegensbetreuungspflicht gegenueber der X-GmbH?
-    erwartung: Ja - als Geschaeftsfuehrer ist A kraft seiner Organstellung zur eigenverantwortlichen
-      Wahrnehmung der Vermoegensinteressen der GmbH verpflichtet; diese Pflicht ist
+  - prompt: Trifft A eine Vermögensbetreuungspflicht gegenüber der X-GmbH?
+    erwartung: Ja - als Geschäftsführer ist A kraft seiner Organstellung zur eigenverantwortlichen
+      Wahrnehmung der Vermögensinteressen der GmbH verpflichtet; diese Pflicht ist
       Hauptpflicht seines Amtes und von erheblichem Gewicht.
-  - prompt: Liegt eine tatbestandsmaessige Tathandlung vor?
-    erwartung: Ja - A hat seine im Aussenverhaeltnis wirksame Verfuegungsbefugnis
-      ueber das Geschaeftskonto missbraucht, indem er sie im Innenverhaeltnis pflichtwidrig
-      fuer private Zwecke einsetzte, ohne dass dies durch die Gesellschafter gedeckt
+  - prompt: Liegt eine tatbestandsmäßige Tathandlung vor?
+    erwartung: Ja - A hat seine im Außenverhältnis wirksame Verfügungsbefugnis
+      über das Geschäftskonto missbraucht, indem er sie im Innenverhältnis pflichtwidrig
+      für private Zwecke einsetzte, ohne dass dies durch die Gesellschafter gedeckt
       war.
-  - prompt: Ist der X-GmbH ein Vermoegensnachteil entstanden?
-    erwartung: Ja - das Vermoegen der GmbH hat sich um 50.000 Euro verringert, ohne
-      dass ein gleichwertiger Ausgleich (etwa ein Rueckzahlungsanspruch gegen A) besteht.
-  - prompt: Handelte A vorsaetzlich?
+  - prompt: Ist der X-GmbH ein Vermögensnachteil entstanden?
+    erwartung: Ja - das Vermögen der GmbH hat sich um 50.000 Euro verringert, ohne
+      dass ein gleichwertiger Ausgleich (etwa ein Rückzahlungsanspruch gegen A) besteht.
+  - prompt: Handelte A vorsätzlich?
     erwartung: Ja - A wusste um seine Pflichtenstellung und um die Pflichtwidrigkeit
-      der Ueberweisung und wollte den Nachteil der GmbH herbeifuehren.
+      der Überweisung und wollte den Nachteil der GmbH herbeiführen.
   - prompt: Formuliere das Ergebnis.
-    erwartung: A hat sich wegen Untreue gemaess § 266 Abs. 1 StGB gegenueber der X-GmbH
+    erwartung: A hat sich wegen Untreue gemäß § 266 Abs. 1 StGB gegenüber der X-GmbH
       strafbar gemacht.
   expectation:
     pruefpunkte:
@@ -182,36 +182,40 @@ faelle:
       - § 266 Abs. 1 StGB
       keywords:
       - '266'
+      card_slugs:
+      - sr-untreue-grundtatbestand
     - id: p2
-      label: Vermoegensbetreuungspflicht des A als Geschaeftsfuehrer bejaht und begruendet
+      label: Vermögensbetreuungspflicht des A als Geschäftsführer bejaht und begründet
       weight: 2.5
       required: true
       norms:
       - § 266 Abs. 1 StGB
       keywords:
-      - Vermoegensbetreuungspflicht
-      - Geschaeftsfuehrer
+      - Vermögensbetreuungspflicht
+      - Geschäftsführer
       card_slugs:
       - sr-untreue-vermoegensbetreuungspflicht
       - sr-untreue-treubruchtatbestand
     - id: p3
-      label: Tathandlung eingeordnet (Missbrauch der wirksamen Verfuegungsbefugnis
-        im Innenverhaeltnis pflichtwidrig eingesetzt)
+      label: Tathandlung eingeordnet (Missbrauch der wirksamen Verfügungsbefugnis
+        im Innenverhältnis pflichtwidrig eingesetzt)
       weight: 1.5
       required: false
+      norms:
+      - § 266 Abs. 1 StGB
       keywords:
       - Missbrauch
-      - Innenverhaeltnis
+      - Innenverhältnis
       card_slugs:
       - sr-untreue-missbrauchstatbestand
     - id: p4
-      label: Vermoegensnachteil bejaht (keine gleichwertige Gegenleistung)
+      label: Vermögensnachteil bejaht (keine gleichwertige Gegenleistung)
       weight: 2.5
       required: true
       norms:
       - § 266 Abs. 1 StGB
       keywords:
-      - Vermoegensnachteil
+      - Vermögensnachteil
       - '50.000'
       card_slugs:
       - sr-untreue-vermoegensnachteil
@@ -219,12 +223,20 @@ faelle:
       label: Vorsatz bejaht
       weight: 1.0
       required: false
+      norms:
+      - § 15 StGB
       keywords:
       - Vorsatz
+      card_slugs:
+      - sr-at-vorsatz
     - id: p6
       label: 'Ergebnis: Untreue bejaht'
       weight: 1.0
       required: false
+      norms:
+      - § 266 Abs. 1 StGB
       keywords:
       - strafbar gemacht
       - Untreue
+      card_slugs:
+      - sr-untreue-grundtatbestand
