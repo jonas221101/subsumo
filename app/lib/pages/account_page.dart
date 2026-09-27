@@ -78,7 +78,7 @@ class _AccountPageState extends State<AccountPage> {
       setState(() => _revokeError = e.message);
     } on Exception {
       if (!mounted) return;
-      setState(() => _revokeError = 'Server nicht erreichbar. Bitte spaeter erneut versuchen.');
+      setState(() => _revokeError = 'Server nicht erreichbar. Bitte später erneut versuchen.');
     } finally {
       if (mounted) setState(() => _revokeBusy = false);
     }
@@ -88,12 +88,12 @@ class _AccountPageState extends State<AccountPage> {
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Abo kuendigen?'),
+        title: const Text('Abo kündigen?'),
         content: const Text(
           'Dein Zugriff bleibt in der Regel bis zum Ende der aktuellen '
           'Abrechnungsperiode bestehen. Liegt der Kauf noch keine 14 Tage '
-          'zurueck, greift stattdessen das Widerrufsrecht: sofortige '
-          'Kuendigung mit voller Rueckerstattung.',
+          'zurück, greift stattdessen das Widerrufsrecht: sofortige '
+          'Kündigung mit voller Rückerstattung.',
         ),
         actions: [
           TextButton(
@@ -102,7 +102,7 @@ class _AccountPageState extends State<AccountPage> {
           ),
           FilledButton(
             onPressed: () => Navigator.of(context).pop(true),
-            child: const Text('Kuendigen'),
+            child: const Text('Kündigen'),
           ),
         ],
       ),
@@ -125,8 +125,8 @@ class _AccountPageState extends State<AccountPage> {
       setState(() {
         _resultMessage = mode == 'immediate_refund'
             ? 'Widerrufen: dein Abo wurde sofort beendet, die Zahlung wird '
-                'vollstaendig erstattet.'
-            : 'Gekuendigt: dein Zugriff bleibt bis zum Ende der aktuellen '
+                'vollständig erstattet.'
+            : 'Gekündigt: dein Zugriff bleibt bis zum Ende der aktuellen '
                 'Abrechnungsperiode bestehen.';
       });
     } on ApiException catch (e) {
@@ -140,7 +140,7 @@ class _AccountPageState extends State<AccountPage> {
       });
     } on Exception {
       if (!mounted) return;
-      setState(() => _error = 'Server nicht erreichbar. Bitte spaeter erneut versuchen.');
+      setState(() => _error = 'Server nicht erreichbar. Bitte später erneut versuchen.');
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -162,20 +162,20 @@ class _AccountPageState extends State<AccountPage> {
       await app.refreshUser();
       if (!mounted) return;
       _redeemController.clear();
-      setState(() => _redeemSuccess = 'Code eingeloest. Pro aktiv bis ${_formatDate(proUntil)}.');
+      setState(() => _redeemSuccess = 'Code eingelöst. Pro aktiv bis ${_formatDate(proUntil)}.');
     } on ApiException catch (e) {
       if (!mounted) return;
       setState(() {
         _redeemError = switch (e.statusCode) {
-          404 => 'Dieser Code ist ungueltig oder nicht mehr aktiv.',
-          410 => 'Dieser Code ist abgelaufen oder bereits ausgeschoepft.',
-          409 => 'Du hast diesen Code bereits eingeloest.',
+          404 => 'Dieser Code ist ungültig oder nicht mehr aktiv.',
+          410 => 'Dieser Code ist abgelaufen oder bereits ausgeschöpft.',
+          409 => 'Du hast diesen Code bereits eingelöst.',
           _ => e.message,
         };
       });
     } on Exception {
       if (!mounted) return;
-      setState(() => _redeemError = 'Server nicht erreichbar. Bitte spaeter erneut versuchen.');
+      setState(() => _redeemError = 'Server nicht erreichbar. Bitte später erneut versuchen.');
     } finally {
       if (mounted) setState(() => _redeemBusy = false);
     }
@@ -199,7 +199,7 @@ class _AccountPageState extends State<AccountPage> {
       setState(() => _exportError = e.message);
     } on Exception {
       if (!mounted) return;
-      setState(() => _exportError = 'Server nicht erreichbar. Bitte spaeter erneut versuchen.');
+      setState(() => _exportError = 'Server nicht erreichbar. Bitte später erneut versuchen.');
     } finally {
       if (mounted) setState(() => _exportBusy = false);
     }
@@ -241,7 +241,7 @@ class _AccountPageState extends State<AccountPage> {
             ),
             FilledButton(
               onPressed: () => Navigator.of(dialogContext).pop(),
-              child: const Text('Schliessen'),
+              child: const Text('Schließen'),
             ),
           ],
         ),
@@ -253,11 +253,11 @@ class _AccountPageState extends State<AccountPage> {
     final proceed = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Konto unwiderruflich loeschen?'),
+        title: const Text('Konto unwiderruflich löschen?'),
         content: const Text(
           'Dein Konto sowie alle gespeicherten Karten, Bewertungen und '
-          'Einreichungen werden endgueltig geloescht. Das kann nicht '
-          'rueckgaengig gemacht werden.',
+          'Einreichungen werden endgültig gelöscht. Das kann nicht '
+          'rückgängig gemacht werden.',
         ),
         actions: [
           TextButton(
@@ -304,14 +304,14 @@ class _AccountPageState extends State<AccountPage> {
       if (!mounted) return;
       setState(() {
         _deleteError = switch (e.statusCode) {
-          400 => 'Bestaetigung fehlt. Bitte erneut versuchen.',
+          400 => 'Bestätigung fehlt. Bitte erneut versuchen.',
           401 => 'Passwort ist falsch.',
           _ => e.message,
         };
       });
     } on Exception {
       if (!mounted) return;
-      setState(() => _deleteError = 'Server nicht erreichbar. Bitte spaeter erneut versuchen.');
+      setState(() => _deleteError = 'Server nicht erreichbar. Bitte später erneut versuchen.');
     }
     if (mounted) setState(() => _deleteBusy = false);
   }
@@ -439,19 +439,19 @@ class _SubscriptionCard extends StatelessWidget {
           Text('Plan: Pro', style: theme.textTheme.bodyMedium),
           const SizedBox(height: Spacing.xs),
           Text(
-            until != null ? 'Naechste Abrechnung/Zugriff bis: ${_formatDate(until)}' : 'Laeuft unbefristet',
+            until != null ? 'Nächste Abrechnung/Zugriff bis: ${_formatDate(until)}' : 'Läuft unbefristet',
             style: theme.textTheme.bodyMedium,
           ),
           const SizedBox(height: Spacing.md),
           if (app.cancelAtPeriodEnd) ...[
             SubsumoFeedbackBlock(
-              message: 'Abo bereits gekuendigt, Zugriff bis '
+              message: 'Abo bereits gekündigt, Zugriff bis '
                   '${until != null ? _formatDate(until) : 'Ende der Abrechnungsperiode'}.',
               severity: FeedbackSeverity.hint,
             ),
           ] else ...[
             SubsumoButton.secondary(
-              label: busy ? 'Bitte warten ...' : 'Kuendigen',
+              label: busy ? 'Bitte warten ...' : 'Kündigen',
               onPressed: busy ? null : onCancel,
             ),
           ],
@@ -490,7 +490,7 @@ class _RedeemCodeCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Freischaltcode einloesen', style: theme.textTheme.titleMedium),
+          Text('Freischaltcode einlösen', style: theme.textTheme.titleMedium),
           const SizedBox(height: Spacing.sm),
           SubsumoTextField(
             label: 'Code',
@@ -499,7 +499,7 @@ class _RedeemCodeCard extends StatelessWidget {
           ),
           const SizedBox(height: Spacing.md),
           SubsumoButton.secondary(
-            label: busy ? 'Bitte warten ...' : 'Code einloesen',
+            label: busy ? 'Bitte warten ...' : 'Code einlösen',
             onPressed: busy ? null : onRedeem,
           ),
           if (success != null) ...[
@@ -553,7 +553,7 @@ class _PrivacyCard extends StatelessWidget {
           ],
           const SizedBox(height: Spacing.md),
           SubsumoButton.secondary(
-            label: deleteBusy ? 'Bitte warten ...' : 'Konto loeschen',
+            label: deleteBusy ? 'Bitte warten ...' : 'Konto löschen',
             onPressed: deleteBusy ? null : onDelete,
           ),
           if (deleteError != null) ...[
@@ -595,7 +595,7 @@ class _AiConsentCard extends StatelessWidget {
           const SizedBox(height: Spacing.sm),
           if (consentGiven) ...[
             const SubsumoFeedbackBlock(
-              message: 'Du hast der KI-gestuetzten Bewertung deiner Gutachten zugestimmt.',
+              message: 'Du hast der KI-gestützten Bewertung deiner Gutachten zugestimmt.',
               severity: FeedbackSeverity.neutral,
             ),
             const SizedBox(height: Spacing.md),
@@ -605,8 +605,8 @@ class _AiConsentCard extends StatelessWidget {
             ),
           ] else ...[
             const SubsumoFeedbackBlock(
-              message: 'Noch nicht zugestimmt - deine Gutachten werden ausschliesslich '
-                  'heuristisch geprueft.',
+              message: 'Noch nicht zugestimmt - deine Gutachten werden ausschließlich '
+                  'heuristisch geprüft.',
               severity: FeedbackSeverity.neutral,
             ),
           ],
@@ -652,7 +652,7 @@ class _PasswordPromptDialogState extends State<_PasswordPromptDialog> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: const Text('Passwort bestaetigen'),
+      title: const Text('Passwort bestätigen'),
       content: Form(
         key: _formKey,
         child: SubsumoTextField(
@@ -671,7 +671,7 @@ class _PasswordPromptDialogState extends State<_PasswordPromptDialog> {
         ),
         FilledButton(
           onPressed: _submit,
-          child: const Text('Konto endgueltig loeschen'),
+          child: const Text('Konto endgültig löschen'),
         ),
       ],
     );

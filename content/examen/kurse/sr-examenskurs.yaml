@@ -1,0 +1,43 @@
+kurs:
+  slug: sr-examenskurs
+  title: Examenskurs Strafrecht
+  area: strafrecht
+  semester_default: 7
+  examenskurs: true
+  stand: 2026-09
+  quellen:
+  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: Gesamtwiederholung AT und BT auf Examensniveau, mit Blick auf mehrpersonale Sachverhalte
+    und Konkurrenzfragen.
+  lernziele:
+  - Mehrpersonale Sachverhalte nach Tatkomplexen und Beteiligten gliedern
+  - AT-Figuren (Versuch, Irrtum, Beteiligung) innerhalb der BT-Delikte sicher anwenden
+  klausurformat:
+    typ: Examensklausur
+    minuten: 300
+  topic_slugs:
+  - sr-at
+  - sr-at-kausalitaet-zurechnung
+  - sr-at-vorsatz-tatbestandsirrtum
+  - sr-at-verbotsirrtum-17
+  - sr-notwehr-32
+  - sr-notstand-34
+  - sr-versuch-ruecktritt
+  - sr-taeterschaft-teilnahme-25
+  - sr-at-unterlassungsdelikte
+  - sr-bt-fahrlaessige-toetung-222
+  - sr-bt-toetungsdelikte-211-212
+  - sr-bt-koerperverletzung-224
+  - sr-bt-noetigung-240
+  - sr-bt-urkundenfaelschung-267
+  - sr-bt-diebstahl
+  - sr-bt-unterschlagung-246
+  - sr-bt-raub
+  - sr-bt-erpressung-253
+  - sr-bt-betrug
+  - sr-bt-untreue-266
+  landesrecht_kategorien: []
+  fehlende_themen:
+  - Konkurrenzen (P3)
+  - Strafprozessrecht Grundzuege (P3)

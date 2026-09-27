@@ -52,7 +52,7 @@ void main() {
     await _pump(
       tester,
       dueCards: const [
-        {'front': 'Was regelt § 985 BGB?', 'back': 'Herausgabeanspruch des Eigentuemers.'},
+        {'front': 'Was regelt § 985 BGB?', 'back': 'Herausgabeanspruch des Eigentümers.'},
       ],
       focusMode: false,
       onToggleFocusMode: () => toggled = true,
@@ -66,7 +66,7 @@ void main() {
   });
 
   testWidgets(
-      'Umschalter bleibt im Leerzustand sichtbar - Rueckkehr aus dem Lesemodus jederzeit moeglich',
+      'Umschalter bleibt im Leerzustand sichtbar - Rückkehr aus dem Lesemodus jederzeit möglich',
       (tester) async {
     await _pump(
       tester,
@@ -75,7 +75,7 @@ void main() {
       onToggleFocusMode: () {},
     );
 
-    expect(find.text('Nichts faellig. Gut gemacht.'), findsOneWidget);
+    expect(find.text('Nichts fällig. Gut gemacht.'), findsOneWidget);
     expect(find.byIcon(Icons.fullscreen_exit_outlined), findsOneWidget);
   });
 }

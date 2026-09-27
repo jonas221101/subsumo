@@ -165,7 +165,7 @@ Fachredaktion (Teilzeit)**. Jeder Meilenstein endet mit etwas Benutzbarem.
   offline gebraucht werden
 - Backend: `/reviews/batch` ✅, Content-Manifest mit Delta-Sync (Manifest
   existiert, Client zieht noch keine Deltas — offen)
-- 500 kuratierte Karten BGB AT + Strafrecht AT (Stand: 62/500) — KI-Redaktion
+- 500 kuratierte Karten BGB AT + Strafrecht AT (Stand: 629 Karten / 85 Schemata / 81 Fälle, September 2026) — KI-Redaktion
   auf den kuratierten Rückstand (`backend/scripts/redaktion_cli.py backlog`)
   ansetzen und die Ausbeute stichprobenartig prüfen, statt alles von Hand zu
   schreiben. 5 von 10 BACKLOG-Themen live über den Brücken-Modus erzeugt, alle

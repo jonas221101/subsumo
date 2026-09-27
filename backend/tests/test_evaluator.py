@@ -137,7 +137,7 @@ def test_fehlender_kernpunkt_deckelt_die_punktzahl(evaluator):
     assert result.missed_required == ["Anspruchsgrundlage § 433 Abs. 2 BGB"]
     assert result.points <= 3.5
     assert result.note in ("mangelhaft", "ungenuegend")
-    assert "Kernpruefpunkte fehlen" in result.summary
+    assert "Kernprüfpunkte fehlen" in result.summary
 
 
 def test_nicht_getroffene_punkte_werden_begruendet(evaluator):

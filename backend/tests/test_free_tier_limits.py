@@ -12,7 +12,7 @@ from app.config import get_settings
 from app.models import Card, Review, Topic, User, UserCard
 
 AUTH_PASSWORD = "examen2029!"
-GUTACHTEN_TEXT = "Ein kurzer Testtext fuer den Struktur-Check ohne Anspruch auf Bewertung."
+GUTACHTEN_TEXT = "Ein kurzer Testtext für den Struktur-Check ohne Anspruch auf Bewertung."
 CASE_SLUGS = [
     "zr-fall-sonderpreis",
     "sr-fall-notwehr-schlagstock",

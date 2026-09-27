@@ -1,0 +1,82 @@
+topic:
+  slug: nw-landesrecht-allgemein
+  area: oeffentliches-recht
+  title: 'Landesrecht Nordrhein-Westfalen: Verfassung, Verwaltungsverfahren, Kommunal- und Baurecht'
+  parent: or-vwvfg-verwaltungsakt
+  bundesland: NW
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: nw-lra-vwvfg
+  type: norm
+  front: Welches Verwaltungsverfahrensgesetz gilt fuer Landesbehoerden in Nordrhein-Westfalen?
+  back: Verwaltungsverfahrensgesetz NRW (VwVfG NRW) - Vollgesetz. Das VwVfG des Bundes gilt nur fuer Bundesbehoerden
+    (§ 1 VwVfG); fuer Landes- und Kommunalbehoerden ist das Landesgesetz massgeblich. Bei Verweisungsgesetzen
+    werden die Bundesnormen 'entsprechend' angewendet und sind so zu zitieren (z. B. '§ 35 VwVfG i. V.
+    m. § 1 des Landesgesetzes'), bei Vollgesetzen ist die Landesnorm selbst zu zitieren.
+  norms:
+  - Verwaltungsverfahrensgesetz NRW (VwVfG NRW) - Vollgesetz
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: nw-lra-verfassungsgericht
+  type: norm
+  front: Gibt es in Nordrhein-Westfalen eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
+  back: 'Ja - seit 2019, Art. 75 Nr. 5a LV NRW, §§ 53 ff. VerfGHG NRW. Zustaendiges Gericht: Verfassungsgerichtshof
+    fuer das Land Nordrhein-Westfalen auf Grundlage der Verfassung fuer das Land Nordrhein-Westfalen (LV
+    NRW). Verfahrensgegenstand ist nur die Verletzung von Landesgrundrechten durch Landesstaatsgewalt;
+    Bundesrecht ist Pruefungsmassstab nur, soweit die Landesverfassung darauf verweist. Daneben steht
+    immer die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
+  norms:
+  - Verfassung fuer das Land Nordrhein-Westfalen (LV NRW)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: nw-lra-kommunalverfassung
+  type: norm
+  front: Welches Gesetz regelt die Kommunalverfassung in Nordrhein-Westfalen und welche Hauptorgane hat
+    die Gemeinde?
+  back: 'Gemeindeordnung NRW (GO NRW): Rat (§ 40) und Buergermeister (§ 62). Grundlage ist die Selbstverwaltungsgarantie
+    (Art. 28 Abs. 2 GG und Landesverfassung): eigenverantwortliche Regelung aller Angelegenheiten der
+    oertlichen Gemeinschaft. Klausurklassiker: Zustaendigkeitsstreit zwischen Vertretung und Verwaltungsspitze,
+    Kommunalverfassungsstreit, Rechtsaufsicht.'
+  norms:
+  - 'Gemeindeordnung NRW (GO NRW): Rat (§ 40) und Buergermeister (§ 62)'
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: nw-lra-bauordnung
+  type: norm
+  front: Wie heisst die Bauordnung in Nordrhein-Westfalen und wie ist eine Baugenehmigung zu pruefen?
+  back: 'Bauordnung NRW (BauO NRW 2018). Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben keine
+    oeffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungs-beduerftigkeit (Errichtung, Aenderung,
+    Nutzungsaenderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulaessigkeit nach §§ 29 ff.
+    BauGB (Bundesrecht), bauordnungsrechtliche Zulaessigkeit nach der Landesbauordnung (Abstandsflaechen,
+    Gestaltung, Stellplaetze).'
+  norms:
+  - Bauordnung NRW (BauO NRW 2018)
+  - §§ 29 ff. BauGB
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: nw-lra-pflichtstoff
+  type: definition
+  front: Welche Landesrechtsgebiete gehoeren in Nordrhein-Westfalen zum Pflichtstoff des Oeffentlichen
+    Rechts?
+  back: Polizei- und Ordnungsrecht (PolG NRW, OBG NRW); Kommunalrecht (GO NRW); Bauordnungsrecht (BauO
+    NRW); Landesverfassung. Landesrecht wird im Examen fast nie isoliert, sondern eingebettet in eine
+    verwaltungsprozessuale Einkleidung (Anfechtungs-/Verpflichtungsklage, vorlaeufiger Rechtsschutz) geprueft
+    - die Landesnorm ist die Ermaechtigungsgrundlage, der Aufbau bleibt der allgemeine.
+  norms: []
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09

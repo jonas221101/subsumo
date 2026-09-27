@@ -1,0 +1,522 @@
+topic:
+  slug: or-verfassungsprozessrecht-verfassungsbeschwerde
+  area: oeffentliches-recht
+  title: Die Verfassungsbeschwerde, Art. 93 Abs. 1 Nr. 4a GG, §§ 90 ff. BVerfGG
+  parent: or-grundrechte
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-fable-5-1
+    status: in-pruefung
+    normzitate_geprueft: true
+cards:
+- slug: or-vpr-vb-norm-93-nr4a-90
+  type: norm
+  front: Welche Voraussetzungen der Verfassungsbeschwerde ergeben sich aus Art.
+    93 Abs. 1 Nr. 4a GG und § 90 Abs. 1 BVerfGG?
+  back: >-
+    Nach Art. 93 Abs. 1 Nr. 4a GG entscheidet das Bundesverfassungsgericht über
+    Verfassungsbeschwerden, die von jedermann mit der Behauptung erhoben werden
+    können, durch die öffentliche Gewalt in einem seiner Grundrechte oder in
+    einem der in Art. 20 Abs. 4, 33, 38, 101, 103 und 104 GG enthaltenen
+    Rechte verletzt zu sein. § 90 Abs. 1 BVerfGG wiederholt dies auf
+    einfachgesetzlicher Ebene. Daraus folgen die Zulässigkeitsvoraussetzungen:
+    Beschwerdefähigkeit ("jedermann"), Beschwerdegegenstand ("Akt der
+    öffentlichen Gewalt"), Beschwerdebefugnis ("Behauptung, in einem
+    Grundrecht verletzt zu sein"), sowie aus § 90 Abs. 2 BVerfGG die
+    Rechtswegerschöpfung, aus §§ 23 Abs. 1, 92 BVerfGG die Form und aus § 93
+    BVerfGG die Frist. Die Verfassungsbeschwerde ist kein zusätzliches
+    Rechtsmittel, sondern ein außerordentlicher Rechtsbehelf, der allein auf
+    die Verletzung spezifischen Verfassungsrechts gerichtet ist.
+  norms:
+  - Art. 93 Abs. 1 Nr. 4a GG
+  - § 90 Abs. 1 BVerfGG
+  - § 13 Nr. 8a BVerfGG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vpr-vb-beschwerdefaehigkeit
+  type: definition
+  front: Wer ist beschwerdefähig ("jedermann") i.S.d. § 90 Abs. 1 BVerfGG?
+  back: >-
+    Beschwerdefähig ist, wer Träger des als verletzt gerügten Grundrechts sein
+    kann - die Beschwerdefähigkeit folgt der Grundrechtsfähigkeit. Natürliche
+    Personen sind stets beschwerdefähig, bei Deutschengrundrechten allerdings
+    nur Deutsche i.S.d. Art. 116 Abs. 1 GG; Ausländer können sich insoweit auf
+    Art. 2 Abs. 1 GG berufen. Inländische juristische Personen des Privatrechts
+    sind beschwerdefähig, soweit das Grundrecht seinem Wesen nach auf sie
+    anwendbar ist (Art. 19 Abs. 3 GG); juristische Personen mit Sitz in einem
+    anderen Mitgliedstaat der Europäischen Union werden ihnen nach der
+    Rechtsprechung des Bundesverfassungsgerichts wegen des unionsrechtlichen
+    Diskriminierungsverbots gleichgestellt. Juristische Personen des
+    öffentlichen Rechts sind grundsätzlich nicht beschwerdefähig, weil sie
+    grundrechtsverpflichtet und nicht grundrechtsberechtigt sind; Ausnahmen
+    gelten für Universitäten, Rundfunkanstalten und Religionsgemeinschaften,
+    soweit sie dem grundrechtlich geschützten Lebensbereich unmittelbar
+    zugeordnet sind, sowie für die Prozessgrundrechte der Art. 101 Abs. 1 S. 2
+    und Art. 103 Abs. 1 GG für alle Verfahrensbeteiligten.
+  norms:
+  - § 90 Abs. 1 BVerfGG
+  - Art. 19 Abs. 3 GG
+  - Art. 116 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vpr-vb-beschwerdegegenstand
+  type: definition
+  front: Was ist ein tauglicher Beschwerdegegenstand ("Akt der öffentlichen Gewalt")?
+  back: >-
+    Beschwerdegegenstand kann jeder Akt der deutschen öffentlichen Gewalt sein -
+    der Gesetzgebung (formelle Gesetze, Rechtsverordnungen, Satzungen), der
+    vollziehenden Gewalt (Verwaltungsakte, Realakte) und der Rechtsprechung
+    (Urteile, Beschlüsse). Auch ein Unterlassen ist tauglich, wenn eine
+    verfassungsrechtliche Handlungspflicht behauptet wird. Praktisch am
+    häufigsten ist die Urteilsverfassungsbeschwerde gegen die letztinstanzliche
+    Entscheidung, häufig verbunden mit den ihr zugrunde liegenden
+    Behördenentscheidungen; sie sind alle zu benennen. Bei der
+    Rechtssatzverfassungsbeschwerde richtet sich der Angriff unmittelbar gegen
+    die Norm. Akte der Europäischen Union sind grundsätzlich kein tauglicher
+    Beschwerdegegenstand, da sie keine deutsche öffentliche Gewalt sind;
+    deutsche Umsetzungs- und Vollzugsakte sind es dagegen, wobei der
+    Prüfungsmaßstab bei vollständig unionsrechtlich determinierten Akten
+    eingeschränkt ist.
+  norms:
+  - Art. 93 Abs. 1 Nr. 4a GG
+  - § 90 Abs. 1 BVerfGG
+  - Art. 1 Abs. 3 GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vpr-vb-beschwerdebefugnis-selbst-gegenwaertig-unmittelbar
+  type: definition
+  front: Erläutere die Trias "selbst, gegenwärtig und unmittelbar" betroffen.
+  back: >-
+    Neben der Möglichkeit einer Grundrechtsverletzung verlangt die
+    Beschwerdebefugnis, dass der Beschwerdeführer durch den angegriffenen Akt
+    selbst, gegenwärtig und unmittelbar betroffen ist. Selbst betroffen ist,
+    wer Adressat des Akts ist oder in einer eigenen Rechtsposition berührt
+    wird - keine Popularbeschwerde für Rechte Dritter. Gegenwärtig betroffen
+    ist, wer schon oder noch betroffen ist: Eine nur künftige, vom Eintritt
+    ungewisser Umstände abhängige Betroffenheit genügt nicht, wohl aber eine
+    Norm, die den Betroffenen bereits jetzt zu Dispositionen zwingt, die er
+    später nicht mehr korrigieren kann. Unmittelbar betroffen ist, wer durch
+    den Akt selbst, ohne einen weiteren Vollzugsakt, in seinen Rechten berührt
+    wird. Bei Gesetzen, die eines Vollzugsakts bedürfen, fehlt die
+    Unmittelbarkeit regelmäßig; der Beschwerdeführer muss den Vollzugsakt
+    abwarten und dagegen den Rechtsweg beschreiten. Ausnahmen gelten, wenn die
+    Norm bereits vor jedem Vollzug Verhaltensdispositionen erzwingt, wenn der
+    Vollzugsakt nicht angreifbar ist oder wenn der Betroffene erst durch eine
+    Sanktion Kenntnis vom Vollzug erhielte (z. B. heimliche
+    Überwachungsmaßnahmen).
+  norms:
+  - § 90 Abs. 1 BVerfGG
+  - Art. 93 Abs. 1 Nr. 4a GG
+  quellen:
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vpr-vb-rechtswegerschoepfung-90-abs2
+  type: norm
+  front: Was verlangt die Rechtswegerschöpfung nach § 90 Abs. 2 BVerfGG?
+  back: >-
+    Ist gegen die behauptete Verletzung der Rechtsweg zulässig, kann die
+    Verfassungsbeschwerde nach § 90 Abs. 2 S. 1 BVerfGG erst nach dessen
+    Erschöpfung erhoben werden. Der Beschwerdeführer muss alle statthaften und
+    zumutbaren Rechtsbehelfe bis zur letzten Instanz eingelegt haben,
+    einschließlich der Anhörungsrüge, wenn eine Verletzung des rechtlichen
+    Gehörs (Art. 103 Abs. 1 GG) gerügt wird. Rechtsbehelfe, die offensichtlich
+    unzulässig oder unstatthaft sind, müssen nicht eingelegt werden; ein
+    Rechtsbehelf, der aus vom Beschwerdeführer zu vertretenden Gründen
+    verworfen wurde (z. B. Fristversäumnis), erschöpft den Rechtsweg dagegen
+    nicht. Nach § 90 Abs. 2 S. 2 BVerfGG kann das Gericht ausnahmsweise vor
+    Erschöpfung entscheiden, wenn die Beschwerde von allgemeiner Bedeutung ist
+    oder dem Beschwerdeführer ein schwerer und unabwendbarer Nachteil
+    entstünde, falls er zunächst auf den Rechtsweg verwiesen würde. Gegen
+    Gesetze ist kein fachgerichtlicher Rechtsweg eröffnet, sodass die
+    Rechtswegerschöpfung dort entfällt - an ihre Stelle tritt der Grundsatz
+    der Subsidiarität.
+  norms:
+  - § 90 Abs. 2 S. 1 BVerfGG
+  - § 90 Abs. 2 S. 2 BVerfGG
+  - Art. 103 Abs. 1 GG
+  quellen:
+  - BVerfGG, amtliche Fassung
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vpr-vb-subsidiaritaet-rechtssatzverfassungsbeschwerde
+  type: streitstand
+  front: Wie weit reicht der Grundsatz der Subsidiarität über § 90 Abs. 2 BVerfGG
+    hinaus, insbesondere bei Verfassungsbeschwerden gegen Gesetze?
+  back: >-
+    Das Bundesverfassungsgericht leitet aus dem Rechtsgedanken des § 90 Abs. 2
+    S. 1 BVerfGG einen allgemeinen Grundsatz der Subsidiarität ab: Der
+    Beschwerdeführer muss über die formelle Rechtswegerschöpfung hinaus alle
+    ihm zumutbaren Möglichkeiten ergreifen, die Grundrechtsverletzung schon vor
+    den Fachgerichten abzuwehren - etwa den Vollzugsakt eines Gesetzes
+    abwarten und dagegen klagen, wobei das Fachgericht die Norm nach Art. 100
+    Abs. 1 GG vorlegen kann, oder eine Feststellungsklage nach § 43 VwGO gegen
+    die Anwendbarkeit einer Norm erheben. Dies gilt auch dann, wenn die
+    Unmittelbarkeit an sich zu bejahen wäre. Kritiker in der Literatur wenden
+    ein, dass damit die in § 90 Abs. 2 BVerfGG angelegte Grenze überschritten
+    und dem Bürger ein Umweg über Fachgerichte zugemutet werde, die die Norm
+    ohnehin nicht verwerfen dürften. Das Bundesverfassungsgericht hält den
+    Vorrang der Fachgerichte dennoch für geboten, weil diese den Sachverhalt
+    aufklären und das einfache Recht auslegen sollen; es macht aber Ausnahmen,
+    wenn die Verweisung unzumutbar ist, weil der fachgerichtliche Rechtsschutz
+    offensichtlich aussichtslos wäre, die Rechtsfrage allein
+    verfassungsrechtlicher Natur ist und keiner Tatsachenaufklärung bedarf,
+    oder eine Strafbarkeit provoziert werden müsste. Beide Ansichten sind in
+    der Klausur darzustellen; die Rechtsprechung ist zugrunde zu legen und
+    die Ausnahmen sind sorgfältig zu prüfen.
+  norms:
+  - § 90 Abs. 2 S. 1 BVerfGG
+  - Art. 100 Abs. 1 GG
+  - § 43 Abs. 1 VwGO
+  quellen:
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vpr-vb-frist-93
+  type: norm
+  front: Welche Fristen gelten für die Verfassungsbeschwerde, § 93 BVerfGG?
+  back: >-
+    Gegen Entscheidungen (Urteile, Beschlüsse, Verwaltungsakte) ist die
+    Verfassungsbeschwerde binnen eines Monats zu erheben und zu begründen,
+    § 93 Abs. 1 S. 1 BVerfGG. Die Frist beginnt mit der Zustellung oder
+    formlosen Mitteilung der vollständig begründeten Entscheidung, § 93 Abs. 1
+    S. 2 und S. 3 BVerfGG. Gegen Gesetze oder sonstige Hoheitsakte, gegen die
+    ein Rechtsweg nicht offensteht, beträgt die Frist ein Jahr seit
+    Inkrafttreten des Gesetzes bzw. Erlass des Hoheitsakts, § 93 Abs. 3
+    BVerfGG. Bei Versäumung der Monatsfrist ohne Verschulden ist nach § 93
+    Abs. 2 BVerfGG Wiedereinsetzung in den vorigen Stand möglich; für die
+    Jahresfrist gegen Gesetze gibt es keine Wiedereinsetzung. Innerhalb der
+    Frist muss die Beschwerde den Anforderungen der §§ 23 Abs. 1, 92 BVerfGG
+    genügen: Schriftform, Bezeichnung des angegriffenen Akts und des verletzten
+    Rechts sowie substantiierte Begründung.
+  norms:
+  - § 93 Abs. 1 S. 1 BVerfGG
+  - § 93 Abs. 1 S. 2 BVerfGG
+  - § 93 Abs. 2 BVerfGG
+  - § 93 Abs. 3 BVerfGG
+  - § 92 BVerfGG
+  quellen:
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vpr-vb-begruendetheit-pruefungsumfang-urteilsverfassungsbeschwerde
+  type: streitstand
+  front: In welchem Umfang prüft das Bundesverfassungsgericht fachgerichtliche
+    Entscheidungen in der Begründetheit?
+  back: >-
+    Die Verfassungsbeschwerde ist begründet, wenn der angegriffene Akt den
+    Beschwerdeführer in einem Grundrecht oder grundrechtsgleichen Recht
+    verletzt. Bei Urteilsverfassungsbeschwerden ist das Bundesverfassungsgericht
+    keine "Superrevisionsinstanz": Auslegung und Anwendung des einfachen
+    Rechts sowie die Feststellung des Sachverhalts sind Sache der
+    Fachgerichte. Nach der ständigen Rechtsprechung prüft es nur die
+    Verletzung "spezifischen Verfassungsrechts" - ob das Gericht die
+    Bedeutung und Tragweite eines Grundrechts grundsätzlich verkannt hat, ob
+    die Auslegung des einfachen Rechts auf einer grundsätzlich unrichtigen
+    Anschauung von der Reichweite des Grundrechts beruht oder ob die
+    Entscheidung willkürlich ist. Die Intensität der Kontrolle steigt mit der
+    Eingriffsintensität (sogenannte Abstufung nach dem Gewicht der
+    Grundrechtsbeeinträchtigung). Umstritten ist, ob dieser Maßstab
+    hinreichend trennscharf ist; Teile der Literatur halten die Formel für
+    eine Frage der Selbstbeschränkung des Gerichts, nicht für eine
+    Kompetenzgrenze, und fordern eine vollständige Grundrechtsprüfung. In der
+    Klausur ist der Maßstab der Rechtsprechung zu nennen und die
+    Grundrechtsprüfung darauf zu konzentrieren, ob das Fachgericht die
+    Ausstrahlungswirkung des Grundrechts verkannt hat.
+  norms:
+  - § 90 Abs. 1 BVerfGG
+  - § 95 Abs. 1 S. 1 BVerfGG
+  - § 95 Abs. 2 BVerfGG
+  quellen:
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vpr-vb-entscheidung-95
+  type: norm
+  front: Wie entscheidet das Bundesverfassungsgericht bei begründeter
+    Verfassungsbeschwerde, § 95 BVerfGG?
+  back: >-
+    Wird der Verfassungsbeschwerde stattgegeben, stellt das Gericht fest,
+    welche Vorschrift des Grundgesetzes durch welche Handlung oder Unterlassung
+    verletzt wurde (§ 95 Abs. 1 S. 1 BVerfGG). Bei Entscheidungen hebt es die
+    angegriffene Entscheidung auf und verweist die Sache in der Regel an ein
+    zuständiges Gericht zurück (§ 95 Abs. 2 BVerfGG). Beruht die Entscheidung
+    auf einem verfassungswidrigen Gesetz oder richtet sich die Beschwerde
+    unmittelbar gegen ein Gesetz, erklärt es das Gesetz nach § 95 Abs. 3
+    BVerfGG für nichtig; diese Entscheidung hat Gesetzeskraft (§ 31 Abs. 2
+    BVerfGG), wobei das Gericht wie bei der Normenkontrolle stattdessen die
+    Unvereinbarkeit feststellen und eine Übergangsregelung anordnen kann.
+    Alle Entscheidungen des Bundesverfassungsgerichts binden nach § 31 Abs. 1
+    BVerfGG die Verfassungsorgane des Bundes und der Länder sowie alle
+    Gerichte und Behörden.
+  norms:
+  - § 95 Abs. 1 S. 1 BVerfGG
+  - § 95 Abs. 2 BVerfGG
+  - § 95 Abs. 3 BVerfGG
+  - § 31 Abs. 1 BVerfGG
+  - § 31 Abs. 2 BVerfGG
+  quellen:
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: or-schema-vpr-verfassungsbeschwerde-vollpruefung
+  title: Verfassungsbeschwerde - Zulässigkeit und Begründetheit
+  norms:
+  - Art. 93 Abs. 1 Nr. 4a GG
+  - § 90 BVerfGG
+  - § 93 BVerfGG
+  - § 95 BVerfGG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Zuständigkeit des Bundesverfassungsgerichts
+    hinweis: Art. 93 Abs. 1 Nr. 4a GG, § 13 Nr. 8a, §§ 90 ff. BVerfGG.
+  - label: II. Beschwerdefähigkeit - "jedermann", § 90 Abs. 1 BVerfGG
+    children:
+    - label: 1. Natürliche Personen (bei Deutschengrundrechten Art. 116 Abs. 1 GG)
+    - label: 2. Inländische juristische Personen des Privatrechts, Art. 19 Abs. 3 GG
+    - label: 3. Juristische Personen des öffentlichen Rechts nur ausnahmsweise
+  - label: III. Beschwerdegegenstand - Akt der deutschen öffentlichen Gewalt
+    hinweis: Gesetz, Verwaltungsakt, Realakt, gerichtliche Entscheidung, qualifiziertes
+      Unterlassen; alle angegriffenen Akte bezeichnen.
+  - label: IV. Beschwerdebefugnis
+    children:
+    - label: 1. Möglichkeit einer Verletzung in Grundrechten oder grundrechtsgleichen
+        Rechten (Art. 20 Abs. 4, 33, 38, 101, 103, 104 GG)
+    - label: 2. Selbst betroffen
+    - label: 3. Gegenwärtig betroffen
+    - label: 4. Unmittelbar betroffen - bei Gesetzen kein Vollzugsakt erforderlich
+        oder Ausnahme einschlägig
+  - label: V. Rechtswegerschöpfung und Subsidiarität
+    children:
+    - label: 1. Erschöpfung des Rechtswegs, § 90 Abs. 2 S. 1 BVerfGG (bei Gesetzen
+        entbehrlich)
+    - label: 2. Allgemeiner Grundsatz der Subsidiarität - zumutbare fachgerichtliche
+        Abhilfemöglichkeiten
+    - label: 3. Ausnahme, § 90 Abs. 2 S. 2 BVerfGG - allgemeine Bedeutung oder schwerer,
+        unabwendbarer Nachteil
+  - label: VI. Form und Frist
+    children:
+    - label: 1. Schriftform mit Begründung, §§ 23 Abs. 1, 92 BVerfGG
+    - label: 2. Ein Monat gegen Entscheidungen, § 93 Abs. 1 BVerfGG; ein Jahr gegen
+        Gesetze, § 93 Abs. 3 BVerfGG
+  - label: VII. Rechtsschutzbedürfnis
+    hinweis: Entfällt bei anderweitiger Erledigung, es sei denn Wiederholungsgefahr,
+      fortdauernde Beeinträchtigung oder tiefgreifender Grundrechtseingriff.
+  - label: VIII. Begründetheit
+    children:
+    - label: 1. Schutzbereich des Grundrechts
+    - label: 2. Eingriff
+    - label: 3. Verfassungsrechtliche Rechtfertigung - Schranke, Schranken-Schranken
+        (formelle und materielle Verfassungsmäßigkeit des Gesetzes, verfassungsmäßige
+        Anwendung im Einzelfall)
+    hinweis: Bei Urteilsverfassungsbeschwerden nur Verletzung spezifischen Verfassungsrechts;
+      Rechtsfolge nach § 95 BVerfGG.
+faelle:
+- slug: or-fall-rechtssatzverfassungsbeschwerde-registrierungspflicht
+  title: Die Registrierungspflicht für Kleinanzeigen
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  facts: >-
+    Ein am 1. März 2026 in Kraft getretenes Bundesgesetz verpflichtet jeden,
+    der auf Online-Plattformen Kleinanzeigen für gebrauchte Gegenstände
+    veröffentlichen will, sich zuvor unter Angabe von Name, Anschrift und
+    Ausweisnummer bei einer zentralen Registerbehörde zu registrieren; die
+    Daten werden fünf Jahre gespeichert und dürfen an Strafverfolgungs- und
+    Finanzbehörden ohne weitere Voraussetzungen übermittelt werden. Ohne
+    Registrierung ist das Einstellen einer Anzeige verboten und
+    bußgeldbewehrt; die Plattformen müssen die Registrierung technisch
+    überprüfen. A verkauft regelmäßig gebrauchte Bücher und Kinderkleidung
+    über solche Plattformen. Sie möchte sich nicht registrieren lassen, weil
+    sie die anlasslose Speicherung und Übermittlung ihrer Daten für
+    unverhältnismäßig hält. Am 15. September 2026 erhebt sie, anwaltlich
+    vertreten und mit ausführlicher Begründung, Verfassungsbeschwerde
+    unmittelbar gegen das Gesetz und rügt eine Verletzung ihres Rechts auf
+    informationelle Selbstbestimmung aus Art. 2 Abs. 1 i.V.m. Art. 1 Abs. 1
+    GG. Ein Bußgeldbescheid ist gegen sie bisher nicht ergangen.
+  question: Ist die Verfassungsbeschwerde der A zulässig? Skizziere die Begründetheit.
+  steps:
+  - prompt: Sind Beschwerdefähigkeit und Beschwerdegegenstand gegeben?
+    erwartung: >-
+      A ist als natürliche Person Trägerin des allgemeinen Persönlichkeitsrechts
+      und damit beschwerdefähig, § 90 Abs. 1 BVerfGG. Das Bundesgesetz ist ein
+      Akt der deutschen öffentlichen Gewalt (Legislative) und damit tauglicher
+      Beschwerdegegenstand einer Rechtssatzverfassungsbeschwerde.
+  - prompt: Ist A beschwerdebefugt? Prüfe insbesondere die Unmittelbarkeit.
+    erwartung: >-
+      Eine Verletzung des Rechts auf informationelle Selbstbestimmung (Art. 2
+      Abs. 1 i.V.m. Art. 1 Abs. 1 GG) durch anlasslose Datenerhebung,
+      -speicherung und -übermittlung erscheint möglich. A ist selbst betroffen,
+      da sie als regelmäßige Verkäuferin Normadressatin ist, und gegenwärtig
+      betroffen, da das Gesetz in Kraft ist und sie schon jetzt vor die Wahl
+      stellt, sich zu registrieren oder auf Anzeigen zu verzichten. Die
+      Unmittelbarkeit ist problematisch, weil das Gesetz Vollzugsakte
+      (Registrierung, Bußgeldbescheid) vorsieht. Sie ist hier dennoch zu
+      bejahen: Das Verbot ohne Registrierung wirkt unmittelbar auf das
+      Verhalten der A ein, ein Abwarten des Bußgeldbescheids würde ihr eine
+      Ordnungswidrigkeit zumuten, und die Registrierung selbst würde gerade
+      den gerügten Eingriff vollziehen. Beschwerdebefugnis liegt vor.
+  - prompt: Stehen Rechtswegerschöpfung und Subsidiarität entgegen?
+    erwartung: >-
+      Gegen ein formelles Gesetz gibt es keinen fachgerichtlichen Rechtsweg,
+      § 90 Abs. 2 S. 1 BVerfGG greift daher nicht unmittelbar. Nach dem
+      Grundsatz der Subsidiarität müsste A aber zumutbare fachgerichtliche
+      Möglichkeiten nutzen, etwa eine Feststellungsklage nach § 43 VwGO, dass
+      sie ohne Registrierung anzeigen darf. Eine Ausnahme ist anzunehmen, wenn
+      die Verweisung unzumutbar ist: Die Rechtsfrage ist rein
+      verfassungsrechtlich, tatsächliche Aufklärung ist nicht erforderlich,
+      und die Fachgerichte könnten das Gesetz ohnehin nur nach Art. 100 Abs. 1
+      GG vorlegen; zudem darf A nicht auf die Provokation eines Bußgelds
+      verwiesen werden. Der Subsidiaritätsgrundsatz steht daher nicht
+      entgegen (vertretbar ist bei sorgfältiger Begründung auch das
+      Gegenteil).
+  - prompt: Sind Form und Frist gewahrt?
+    erwartung: >-
+      Die Beschwerde ist schriftlich und begründet erhoben, §§ 23 Abs. 1, 92
+      BVerfGG. Gegen Gesetze gilt die Jahresfrist des § 93 Abs. 3 BVerfGG ab
+      Inkrafttreten am 1. März 2026; die Erhebung am 15. September 2026 ist
+      fristgerecht.
+  - prompt: Skizziere die Begründetheit.
+    erwartung: >-
+      Schutzbereich: Das Recht auf informationelle Selbstbestimmung schützt
+      die Befugnis, selbst über Preisgabe und Verwendung persönlicher Daten zu
+      bestimmen. Eingriff: Registrierungspflicht, fünfjährige Speicherung und
+      voraussetzungslose Übermittlung sind Eingriffe. Rechtfertigung: Das
+      Recht steht unter dem Vorbehalt der verfassungsmäßigen Ordnung; das
+      Gesetz muss formell (Kompetenz des Bundes) und materiell verfassungsgemäß
+      sein. Die Bekämpfung von Betrug und Steuerhinterziehung ist ein legitimer
+      Zweck, die Registrierung geeignet. An der Erforderlichkeit und
+      Angemessenheit bestehen erhebliche Bedenken: Die anlasslose Erfassung
+      aller privaten Gelegenheitsverkäufer, die lange Speicherdauer und vor
+      allem die Übermittlung ohne Eingriffsschwelle (kein Anfangsverdacht,
+      keine Erheblichkeit) verfehlen die vom Bundesverfassungsgericht für
+      Vorratsdaten entwickelten Anforderungen an Zweckbindung, Schwellen und
+      Verfahrenssicherungen. Das Gesetz ist daher jedenfalls hinsichtlich der
+      Übermittlungsregelung verfassungswidrig; das Bundesverfassungsgericht
+      erklärt es insoweit nach § 95 Abs. 3 BVerfGG für nichtig oder für
+      unvereinbar mit Übergangsfrist.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Beschwerdefähigkeit der A und Bundesgesetz als tauglicher Beschwerdegegenstand
+        benannt
+      weight: 1.0
+      required: false
+      norms:
+      - § 90 Abs. 1 BVerfGG
+      - Art. 93 Abs. 1 Nr. 4a GG
+      keywords:
+      - jedermann
+      - Akt der öffentlichen Gewalt
+      - Gesetz
+      card_slugs:
+      - or-vpr-vb-beschwerdefaehigkeit
+      - or-vpr-vb-beschwerdegegenstand
+    - id: p2
+      label: Möglichkeit der Verletzung des Rechts auf informationelle Selbstbestimmung
+        aus Art. 2 Abs. 1 i.V.m. Art. 1 Abs. 1 GG dargelegt
+      weight: 1.5
+      required: true
+      norms:
+      - Art. 2 Abs. 1 GG
+      - Art. 1 Abs. 1 GG
+      keywords:
+      - informationelle Selbstbestimmung
+      - Möglichkeit
+      - Grundrechtsverletzung
+      card_slugs:
+      - or-gr-beschwerdebefugnis
+      - or-gr-art2-informationelle-selbstbestimmung
+    - id: p3
+      label: Selbst und gegenwärtig betroffen kurz bejaht, Unmittelbarkeit als Problem
+        erkannt und über die Ausnahmen (Verhaltensdisposition, keine Verweisung auf
+        Bußgeldrisiko) bejaht
+      weight: 3.0
+      required: true
+      norms:
+      - § 90 Abs. 1 BVerfGG
+      keywords:
+      - unmittelbar
+      - Vollzugsakt
+      - selbst
+      - gegenwärtig
+      card_slugs:
+      - or-vpr-vb-beschwerdebefugnis-selbst-gegenwaertig-unmittelbar
+    - id: p4
+      label: Rechtswegerschöpfung bei Gesetzen als entbehrlich erkannt, Grundsatz
+        der Subsidiarität mit fachgerichtlicher Feststellungsklage diskutiert und
+        Ausnahme begründet
+      weight: 2.5
+      required: true
+      norms:
+      - § 90 Abs. 2 S. 1 BVerfGG
+      - Art. 100 Abs. 1 GG
+      keywords:
+      - Subsidiarität
+      - Rechtsweg
+      - Feststellungsklage
+      - unzumutbar
+      card_slugs:
+      - or-vpr-vb-rechtswegerschoepfung-90-abs2
+      - or-vpr-vb-subsidiaritaet-rechtssatzverfassungsbeschwerde
+    - id: p5
+      label: Jahresfrist des § 93 Abs. 3 BVerfGG ab Inkrafttreten berechnet und Form
+        nach §§ 23, 92 BVerfGG geprüft
+      weight: 1.0
+      required: false
+      norms:
+      - § 93 Abs. 3 BVerfGG
+      - § 92 BVerfGG
+      keywords:
+      - Jahresfrist
+      - Inkrafttreten
+      - Form
+      card_slugs:
+      - or-vpr-vb-frist-93
+    - id: p6
+      label: Begründetheit mit Schutzbereich, Eingriff und Verhältnismäßigkeit (insbesondere
+        anlasslose Übermittlung ohne Eingriffsschwelle) strukturiert geprüft
+      weight: 2.5
+      required: true
+      norms:
+      - Art. 2 Abs. 1 GG
+      - Art. 1 Abs. 1 GG
+      - Art. 20 Abs. 3 GG
+      keywords:
+      - Verhältnismäßigkeit
+      - Eingriffsschwelle
+      - Zweckbindung
+      - Speicherdauer
+      card_slugs:
+      - or-gr-verhaeltnismaessigkeit
+      - or-gr-art2-informationelle-selbstbestimmung
+    - id: p7
+      label: Rechtsfolge nach § 95 Abs. 3 BVerfGG (Nichtig- oder Unvereinbarerklärung)
+        benannt
+      weight: 0.5
+      required: false
+      norms:
+      - § 95 Abs. 3 BVerfGG
+      keywords:
+      - nichtig
+      - 95 Abs. 3
+      card_slugs:
+      - or-vpr-vb-entscheidung-95

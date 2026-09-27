@@ -1,0 +1,28 @@
+kurs:
+  slug: sr-bt-2
+  title: 'Strafrecht BT II: Vermoegensdelikte'
+  area: strafrecht
+  semester_default: 4
+  examenskurs: false
+  stand: 2026-09
+  quellen:
+  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: Diebstahl, Unterschlagung, Raub, Erpressung, Betrug, Untreue - der dichteste Klausurblock
+    des Strafrechts.
+  lernziele:
+  - Wegnahme, Zueignungsabsicht und Gewahrsamsbegriff (§ 242 StGB) beherrschen
+  - Betrug in der Vierschrittpruefung (Taeuschung, Irrtum, Vermoegensverfuegung, Schaden) aufbauen
+  - Raub, raeuberische Erpressung und Diebstahl abgrenzen
+  klausurformat:
+    typ: Fortgeschrittenenklausur
+    minuten: 180
+  topic_slugs:
+  - sr-bt-diebstahl
+  - sr-bt-unterschlagung-246
+  - sr-bt-raub
+  - sr-bt-erpressung-253
+  - sr-bt-betrug
+  - sr-bt-untreue-266
+  landesrecht_kategorien: []
+  fehlende_themen: []

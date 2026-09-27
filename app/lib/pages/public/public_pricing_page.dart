@@ -8,7 +8,7 @@ import 'public_scaffold.dart';
 /// Preisseite (`/preise`), oeffentlich ohne Login erreichbar (SUB-108).
 ///
 /// Schaltet zwischen Variante A (mit Kauf, docs/21 Abschnitt 3.1) und
-/// Variante B (Early Access, docs/21 Abschnitt 3.2) anhand von
+/// Variante B (Pro fuer alle Konten inklusive, docs/21 Abschnitt 3.2) anhand von
 /// `paywall_enabled` aus dem oeffentlichen Feature-Flag-Endpoint (SUB-107,
 /// `GET /v1/public/config`). Die zusaetzliche Abnahme-Bedingung "UND G1
 /// (Zahlungskonto/Rechtstraeger) steht" bildet sich bewusst nicht als eigene
@@ -105,15 +105,14 @@ class _VarianteA extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Warum Gründerpreis?',
+                'Gründerpreis',
                 style: Theme.of(context).textTheme.titleMedium,
               ),
               const SizedBox(height: Spacing.xs),
               Text(
-                'Subsumo startet mit 180 Karten — deutlich weniger als etablierte '
-                'Anbieter. Der Preis liegt deshalb bewusst niedrig, und wer jetzt '
-                'einsteigt, behält ihn dauerhaft, auch wenn Umfang und Listenpreis '
-                'wachsen.',
+                'Der Gründerpreis gilt für alle, die jetzt einsteigen: 3,99 €/Monat '
+                'oder 39 €/Jahr, dauerhaft. Steigt der Listenpreis später für neue '
+                'Kund:innen, bleibt dein Preis unverändert.',
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(height: Spacing.lg),
@@ -130,9 +129,10 @@ class _VarianteA extends StatelessWidget {
   }
 }
 
-/// Variante B - Early Access (docs/21 Abschnitt 3.2). Texte wortgleich
-/// uebernommen; Feature-Tabelle wie Variante A, nur die Pro-Spalte
-/// umbenannt. Zwei Baender wie Variante A (SUB-241).
+/// Variante B - Paywall aus, Pro fuer alle Konten inklusive (docs/21
+/// Abschnitt 3.2). Texte wortgleich uebernommen; Feature-Tabelle wie
+/// Variante A, nur die Pro-Spalte umbenannt. Zwei Baender wie Variante A
+/// (SUB-241).
 class _VarianteB extends StatelessWidget {
   const _VarianteB();
 
@@ -147,21 +147,19 @@ class _VarianteB extends StatelessWidget {
             children: [
               Text('Preise', style: Theme.of(context).textTheme.headlineMedium),
               Text(
-                '(Early Access)',
+                'Pro ist aktuell für alle Konten inklusive',
                 style: Theme.of(context).textTheme.titleMedium,
               ),
               const SizedBox(height: Spacing.lg),
               Text(
-                'Subsumo ist gerade gestartet. Die Bezahlstrecke ist noch nicht '
-                'live — bis dahin nutzt du Subsumo im vollen Pro-Umfang kostenlos: '
+                'Jedes Konto nutzt Subsumo derzeit im vollen Pro-Umfang kostenlos: '
                 'alle drei Rechtsgebiete, unbegrenzte Karten, Schemata, Fälle und '
-                'Struktur-Checks.',
+                'Struktur-Checks — ohne Zahlungsdaten.',
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(height: Spacing.md),
               Text(
-                'Sobald die Bezahlstrecke startet, wechseln wir auf Free/Pro. Der '
-                'Pro-Tarif kostet dann ab 3,99 €/Monat (39 €/Jahr) — mit '
+                'Der Pro-Tarif kostet regulär 3,99 €/Monat oder 39 €/Jahr — mit '
                 'Gründerpreis-Garantie: Wer sich jetzt registriert, sichert sich '
                 'diesen Preis dauerhaft, auch wenn er für später hinzukommende '
                 'Nutzer:innen steigt.',
@@ -181,7 +179,7 @@ class _VarianteB extends StatelessWidget {
         const SubsumoSection(
           background: SubsumoSectionBackground.surface1,
           child: _FeatureTable(
-            proHeader: 'Pro (kommt bald, aktuell für alle inklusive)',
+            proHeader: 'Pro (aktuell für alle Konten inklusive)',
             priceRow: (
               free: '0 €',
               pro: '3,99 €/Monat oder 39 €/Jahr (inkl. gesetzlicher USt., sofern diese anfällt)',
@@ -225,11 +223,11 @@ class _FeatureTable extends StatelessWidget {
           children: [
             const SizedBox(),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: Spacing.xs),
+              padding: const EdgeInsets.fromLTRB(0, Spacing.xs, Spacing.xl, Spacing.xs),
               child: Text('Free', style: headerStyle),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: Spacing.xs),
+              padding: const EdgeInsets.fromLTRB(0, Spacing.xs, Spacing.xl, Spacing.xs),
               child: Text(proHeader, style: headerStyle),
             ),
           ],
@@ -237,15 +235,15 @@ class _FeatureTable extends StatelessWidget {
         TableRow(
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: Spacing.xs),
+              padding: const EdgeInsets.fromLTRB(0, Spacing.xs, Spacing.xl, Spacing.xs),
               child: Text('Preis', style: bodyStyle),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: Spacing.xs),
+              padding: const EdgeInsets.fromLTRB(0, Spacing.xs, Spacing.xl, Spacing.xs),
               child: Text(priceRow.free, style: bodyStyle),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: Spacing.xs),
+              padding: const EdgeInsets.fromLTRB(0, Spacing.xs, Spacing.xl, Spacing.xs),
               child: Text(priceRow.pro, style: bodyStyle),
             ),
           ],
@@ -254,15 +252,15 @@ class _FeatureTable extends StatelessWidget {
           TableRow(
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: Spacing.xs),
+                padding: const EdgeInsets.fromLTRB(0, Spacing.xs, Spacing.xl, Spacing.xs),
                 child: Text(label, style: bodyStyle),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: Spacing.xs),
+                padding: const EdgeInsets.fromLTRB(0, Spacing.xs, Spacing.xl, Spacing.xs),
                 child: Text(free, style: bodyStyle),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: Spacing.xs),
+                padding: const EdgeInsets.fromLTRB(0, Spacing.xs, Spacing.xl, Spacing.xs),
                 child: Text(pro, style: bodyStyle),
               ),
             ],

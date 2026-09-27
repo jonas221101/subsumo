@@ -1,0 +1,111 @@
+bundesland:
+  code: NW
+  name: Nordrhein-Westfalen
+  stand: 2026-09
+  quellen:
+  - Juristenausbildungsgesetz Nordrhein-Westfalen (JAG NRW) (Landesrecht, amtliche Fassung)
+  - Deutsches Richtergesetz (DRiG), §§ 5 ff.
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    normzitate_geprueft: false
+    hinweis: Struktur- und Normangaben aus Redaktionswissen, nicht gegen die aktuelle Fassung von JAG/JAPO
+      und Landesgesetzen verifiziert. Vor Freigabe die 'pruefliste_redaktion' abarbeiten (docs/32-examensvorbereitung.md
+      Abschnitt 7).
+  pruefungsamt:
+    name: Landesjustizpruefungsamt beim Ministerium der Justiz NRW; Justizpruefungsaemter bei den Oberlandesgerichten
+      Duesseldorf, Hamm und Koeln
+    sitz: Duesseldorf
+  pruefungsordnung: Juristenausbildungsgesetz Nordrhein-Westfalen (JAG NRW)
+  klausuren:
+    anzahl: 7
+    dauer_minuten: 300
+    verteilung:
+      zivilrecht: 3
+      strafrecht: 2
+      oeffentliches-recht: 2
+    hinweis: Fuenfstuendige Aufsichtsarbeiten. Die Verteilung auf die Rechtsgebiete bestimmt die Gewichtung
+      der Examensreife im Examen-Reiter.
+  hausarbeit: false
+  muendliche_pruefung:
+    beschreibung: Pruefungsgespraech in allen drei Rechtsgebieten nach bestandenem schriftlichen Teil;
+      vielerorts mit Kurzvortrag.
+  termine:
+  - Mehrere Klausurtermine pro Jahr, organisiert ueber die Justizpruefungsaemter bei den drei Oberlandesgerichten
+  freiversuch:
+    beschreibung: 'Freiversuch bei erstmaliger Meldung nach ununterbrochenem Studium bis zum Ende des
+      achten Fachsemesters; ein nicht bestandener Freiversuch gilt als nicht unternommen. Anrechnungsregeln
+      (Auslandssemester, Krankheit) im JAG des Landes. In NRW: § 25 JAG NRW.'
+  abschichtung:
+    moeglich: true
+    beschreibung: 'Ja - § 12 JAG NRW: Die Aufsichtsarbeiten koennen nach Rechtsgebieten auf mehrere Pruefungstermine
+      verteilt werden (Abschichtung), sofern die Voraussetzungen (Semesterzahl, Reihenfolge) eingehalten
+      werden.'
+  notenverbesserung:
+    beschreibung: Wer im Freiversuch bestanden hat, kann die Pruefung einmal zur Notenverbesserung wiederholen;
+      die bessere Note zaehlt.
+  hilfsmittel:
+  - Schoenfelder, Deutsche Gesetze (mit Ergaenzungsband)
+  - Sartorius I, Verfassungs- und Verwaltungsgesetze
+  - von Hippel/Rehborn, Gesetze des Landes Nordrhein-Westfalen
+  landesrecht:
+    schwerpunkte:
+    - Polizei- und Ordnungsrecht (PolG NRW, OBG NRW)
+    - Kommunalrecht (GO NRW)
+    - Bauordnungsrecht (BauO NRW)
+    - Landesverfassung
+    normenspiegel:
+      polizeigesetz: Polizeigesetz NRW (PolG NRW) und Ordnungsbehoerdengesetz NRW (OBG NRW)
+      polizei_generalklausel: § 8 Abs. 1 PolG NRW; § 14 Abs. 1 OBG NRW
+      standardmassnahmen: §§ 9 ff. PolG NRW
+      stoerer: §§ 4, 5, 6 PolG NRW; §§ 17, 18, 19 OBG NRW
+      ordnungsbehoerden: Ordnungsbehoerden primaer (§ 1 OBG NRW), Polizei nur bei Eilbeduerftigkeit (§
+        1 Abs. 1 Satz 3 PolG NRW)
+      verwaltungsverfahrensgesetz: Verwaltungsverfahrensgesetz NRW (VwVfG NRW) - Vollgesetz
+      vollstreckung: Verwaltungsvollstreckungsgesetz NRW (VwVG NRW), §§ 55 ff.
+      kommunalverfassung: 'Gemeindeordnung NRW (GO NRW): Rat (§ 40) und Buergermeister (§ 62)'
+      bauordnung: Bauordnung NRW (BauO NRW 2018)
+      landesverfassung: Verfassung fuer das Land Nordrhein-Westfalen (LV NRW)
+      verfassungsgericht: Verfassungsgerichtshof fuer das Land Nordrhein-Westfalen
+      individualverfassungsbeschwerde: Ja - seit 2019, Art. 75 Nr. 5a LV NRW, §§ 53 ff. VerfGHG NRW
+    besonderheiten:
+    - 'Einziges Land mit Abschichtung: die sieben Klausuren lassen sich nach Rechtsgebieten auf mehrere
+      Termine verteilen (§ 12 JAG NRW).'
+    - Sieben statt sechs Klausuren, davon zwei im Strafrecht - das Strafrecht wiegt hier schwerer als
+      in den 3/1/2-Laendern.
+    - Die Individualverfassungsbeschwerde zum VerfGH NRW gibt es erst seit 2019.
+  checkliste:
+  - monate_vor_examen: 12
+    titel: Meldefristen und Freiversuch pruefen
+    detail: Fachsemesterzaehlung, Anrechnung von Auslands-/Urlaubssemestern und die Meldefrist beim Pruefungsamt
+      klaeren - der Freiversuch haengt am Datum der Meldung, nicht am Klausurtermin.
+  - monate_vor_examen: 9
+    titel: Landesrecht in den Lernplan aufnehmen
+    detail: Polizei- und Ordnungsrecht, Kommunalrecht, Bauordnungsrecht und das Landesverfassungsrecht
+      werden im Oeffentlichen Recht regelmaessig geprueft - das Landesrecht-Deck im Examen-Reiter deckt
+      die Normenkenntnis ab.
+  - monate_vor_examen: 6
+    titel: Zugelassene Hilfsmittel besorgen und einrichten
+    detail: Gesetzessammlungen in der zugelassenen Ausgabe, Nachlieferungen einsortieren, Markierungsregeln
+      des Pruefungsamts beachten (keine Kommentierungen).
+  - monate_vor_examen: 4
+    titel: Klausuren unter Examensbedingungen schreiben
+    detail: Fuenf Stunden am Stueck, handschriftlich oder wie in der Pruefung vorgesehen, mit den zugelassenen
+      Hilfsmitteln - der Samstags-Klausurtag im Lernplan ist dafuer reserviert.
+  - monate_vor_examen: 2
+    titel: Meldung zur Pruefung abgeben
+    detail: Unterlagen (Leistungsnachweise, Schluesselqualifikation, Fremdsprache, Praktika) vollstaendig
+      einreichen.
+  - monate_vor_examen: 1
+    titel: 'Endspurt: Wiederholung statt Neues'
+    detail: Keine neuen Themen mehr anfangen. Faellige Karten, Schemata rekonstruieren, Schwachstellen
+      aus den Klausur-Rueckmeldungen gezielt nacharbeiten.
+  pruefliste_redaktion:
+  - Zahl, Dauer und Verteilung der Aufsichtsarbeiten gegen die aktuelle JAG/JAPO-Fassung pruefen
+  - Ob ein Hausarbeits-/Aktenvortragsanteil zur staatlichen Pflichtfachpruefung gehoert
+  - Pruefungstermine des laufenden Jahres beim Pruefungsamt abgleichen
+  - Freiversuchs- und Notenverbesserungsregel (Semesterzahl, Fristen) pruefen
+  - Zugelassene Hilfsmittel gegen die aktuelle Hilfsmittelbekanntmachung pruefen
+  - Alle Normzitate im Normenspiegel gegen die geltende Gesetzesfassung pruefen
+  - 'Abschichtungsregel (§ 12 JAG NRW): zulaessige Aufteilung und Fristen pruefen'

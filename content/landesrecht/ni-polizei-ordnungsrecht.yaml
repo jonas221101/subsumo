@@ -1,0 +1,98 @@
+topic:
+  slug: ni-polizei-ordnungsrecht
+  area: oeffentliches-recht
+  title: Polizei- und Ordnungsrecht Niedersachsen
+  parent: or-sicherheitsrecht-generalklausel-standardmassnahmen
+  bundesland: NI
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: ni-por-generalklausel
+  type: norm
+  front: Wo steht die polizeiliche Generalklausel in Niedersachsen und was setzt sie voraus?
+  back: 'Fundstelle: § 11 NPOG. Die Generalklausel ermaechtigt zu den notwendigen Massnahmen, um eine
+    im Einzelfall bestehende Gefahr fuer die oeffentliche Sicherheit oder Ordnung abzuwehren. Sie ist
+    subsidiaer: Greift eine Standardmassnahme oder ein Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite
+    besteht Ermessen, begrenzt durch den Grundsatz der Verhaeltnismaessigkeit.'
+  norms:
+  - § 11 NPOG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: ni-por-standardmassnahmen
+  type: norm
+  front: Wo stehen die polizeilichen Standardmassnahmen in Niedersachsen?
+  back: '§§ 12 ff. NPOG - unter anderem Identitaetsfeststellung, Platzverweis, Gewahrsam, Durchsuchung
+    von Personen und Sachen, Sicherstellung. Standardmassnahmen sind abschliessende Spezialregelungen:
+    Liegen ihre Voraussetzungen nicht vor, darf nicht auf die Generalklausel ausgewichen werden (Sperrwirkung).'
+  norms:
+  - §§ 12 ff. NPOG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: ni-por-aufbau
+  type: schema_step
+  front: 'Aufbau: Rechtmaessigkeit einer Gefahrenabwehrmassnahme nach dem Landesrecht von Niedersachsen'
+  back: 'I. Ermaechtigungsgrundlage (Niedersaechsisches Polizei- und Ordnungsbehoerdengesetz (NPOG): Standardmassnahme
+    vor Generalklausel). II. Formelle Rechtmaessigkeit: 1. Zustaendigkeit (sachlich: welche Behoerde -
+    Verwaltungsbehoerden (Gemeinden, Landkreise) und Polizei nach § 1 NPOG; Polizei bei Eilbeduerftigkeit
+    (§ 1 Abs. 2 NPOG); oertlich; instanziell), 2. Verfahren (Anhoerung, § 28 VwVfG bzw. Landesrecht),
+    3. Form. III. Materielle Rechtmaessigkeit: 1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose
+    ex ante), 2. richtiger Adressat (Stoerer: §§ 6, 7, 8 NPOG), 3. Rechtsfolge: Ermessen und Verhaeltnismaessigkeit
+    (geeignet, erforderlich, angemessen).'
+  norms:
+  - § 11 NPOG
+  - §§ 6, 7, 8 NPOG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: ni-por-stoerer
+  type: norm
+  front: Wo sind Verhaltensstoerer, Zustandsstoerer und Nichtstoerer in Niedersachsen geregelt?
+  back: '§§ 6, 7, 8 NPOG. Verhaltensstoerer: wer die Gefahr durch sein Verhalten verursacht (Theorie der
+    unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstoerer: Inhaber der tatsaechlichen
+    Gewalt bzw. Eigentuemer einer gefaehrlichen Sache. Nichtstoerer: Inanspruchnahme nur unter den engen
+    Voraussetzungen des polizeilichen Notstands (gegenwaertige erhebliche Gefahr, Stoerer nicht greifbar,
+    Behoerde selbst nicht in der Lage), mit Entschaedigungsanspruch.'
+  norms:
+  - §§ 6, 7, 8 NPOG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: ni-por-zustaendigkeit
+  type: definition
+  front: Wer ist in Niedersachsen fuer die Gefahrenabwehr zustaendig - Ordnungs-/Sicherheitsbehoerde oder
+    Polizei?
+  back: 'Verwaltungsbehoerden (Gemeinden, Landkreise) und Polizei nach § 1 NPOG; Polizei bei Eilbeduerftigkeit
+    (§ 1 Abs. 2 NPOG). Pruefungsrelevant ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsaetzlich
+    bei den Verwaltungs-/Ordnungsbehoerden; der Polizeivollzugsdienst wird taetig, wenn die Abwehr keinen
+    Aufschub duldet (Eilfall) oder eine besondere Zuweisung besteht. Ein Handeln der unzustaendigen Behoerde
+    macht die Massnahme formell rechtswidrig.'
+  norms:
+  - Niedersaechsisches Polizei- und Ordnungsbehoerdengesetz (NPOG)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: ni-por-vollstreckung
+  type: norm
+  front: Nach welchem Gesetz wird eine Gefahrenabwehrverfuegung in Niedersachsen vollstreckt?
+  back: 'Niedersaechsisches Verwaltungsvollstreckungsgesetz (NVwVG); Zwang nach §§ 64 ff. NPOG. Regelfall
+    ist das gestreckte Verfahren: Grundverfuegung - Androhung - Festsetzung - Anwendung des Zwangsmittels
+    (Ersatzvornahme, Zwangsgeld, unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare
+    Ausfuehrung ohne vorausgehenden Verwaltungsakt moeglich; die Kosten traegt der Pflichtige.'
+  norms:
+  - Niedersaechsisches Verwaltungsvollstreckungsgesetz (NVwVG)
+  - Zwang nach §§ 64 ff. NPOG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09

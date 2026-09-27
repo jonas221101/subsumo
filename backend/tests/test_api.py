@@ -105,7 +105,7 @@ def test_content_version_ist_unabhaengig_von_abfragereihenfolge_und_deckt_karten
         topic_slug="topic",
         type="definition",
         front="Vorderseite",
-        back="Rueckseite",
+        back="Rückseite",
         norms=["§ 1 BGB"],
         sources=["Quelle"],
         stand="2026-09",
@@ -116,7 +116,7 @@ def test_content_version_ist_unabhaengig_von_abfragereihenfolge_und_deckt_karten
         topic_slug="topic",
         type="definition",
         front="Andere Vorderseite",
-        back="Andere Rueckseite",
+        back="Andere Rückseite",
         norms=[],
         sources=[],
         stand="2026-09",
@@ -128,8 +128,8 @@ def test_content_version_ist_unabhaengig_von_abfragereihenfolge_und_deckt_karten
         slug="a",
         topic_slug="topic",
         type="definition",
-        front="Geaenderte Vorderseite",
-        back="Rueckseite",
+        front="Geänderte Vorderseite",
+        back="Rückseite",
         norms=["§ 1 BGB"],
         sources=["Quelle"],
         stand="2026-09",
@@ -387,7 +387,7 @@ def test_schwaches_gutachten_wird_deutlich_schlechter_bewertet(auth_client):
         "/v1/cases/zr-fall-sonderpreis/submit", json={"text": GUTACHTEN_SCHLECHT}
     ).json()["evaluation"]
     assert schlecht["points"] < gut["points"] - 4
-    assert schlecht["missed_required"], "Fehlende Kernpruefpunkte muessen benannt werden"
+    assert schlecht["missed_required"], "Fehlende Kernprüfpunkte müssen benannt werden"
 
 
 def test_abgaben_erscheinen_in_der_historie(auth_client):

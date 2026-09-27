@@ -1,0 +1,104 @@
+bundesland:
+  code: HH
+  name: Hamburg
+  stand: 2026-09
+  quellen:
+  - Hamburgisches Juristenausbildungsgesetz (HmbJAG) (Landesrecht, amtliche Fassung)
+  - Deutsches Richtergesetz (DRiG), §§ 5 ff.
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    normzitate_geprueft: false
+    hinweis: Struktur- und Normangaben aus Redaktionswissen, nicht gegen die aktuelle Fassung von JAG/JAPO
+      und Landesgesetzen verifiziert. Vor Freigabe die 'pruefliste_redaktion' abarbeiten (docs/32-examensvorbereitung.md
+      Abschnitt 7).
+  pruefungsamt:
+    name: Justizpruefungsamt bei der Behoerde fuer Justiz und Verbraucherschutz Hamburg
+    sitz: Hamburg
+  pruefungsordnung: Hamburgisches Juristenausbildungsgesetz (HmbJAG)
+  klausuren:
+    anzahl: 6
+    dauer_minuten: 300
+    verteilung:
+      zivilrecht: 3
+      strafrecht: 1
+      oeffentliches-recht: 2
+    hinweis: Fuenfstuendige Aufsichtsarbeiten. Die Verteilung auf die Rechtsgebiete bestimmt die Gewichtung
+      der Examensreife im Examen-Reiter.
+  hausarbeit: false
+  muendliche_pruefung:
+    beschreibung: Pruefungsgespraech in allen drei Rechtsgebieten nach bestandenem schriftlichen Teil;
+      vielerorts mit Kurzvortrag.
+  termine:
+  - Zwei Pruefungsdurchgaenge pro Jahr
+  freiversuch:
+    beschreibung: Freiversuch bei erstmaliger Meldung nach ununterbrochenem Studium bis zum Ende des achten
+      Fachsemesters; ein nicht bestandener Freiversuch gilt als nicht unternommen. Anrechnungsregeln (Auslandssemester,
+      Krankheit) im JAG des Landes.
+  abschichtung:
+    moeglich: false
+    beschreibung: Keine Abschichtung - alle Aufsichtsarbeiten in einem Termin.
+  notenverbesserung:
+    beschreibung: Wer im Freiversuch bestanden hat, kann die Pruefung einmal zur Notenverbesserung wiederholen;
+      die bessere Note zaehlt.
+  hilfsmittel:
+  - Schoenfelder, Deutsche Gesetze (mit Ergaenzungsband)
+  - Sartorius I, Verfassungs- und Verwaltungsgesetze
+  - Hamburgische Landesrechtssammlung in der zugelassenen Ausgabe
+  landesrecht:
+    schwerpunkte:
+    - Ordnungsrecht (SOG HH)
+    - Bezirksverwaltung
+    - Bauordnungsrecht (HBauO)
+    normenspiegel:
+      polizeigesetz: Gesetz zum Schutz der oeffentlichen Sicherheit und Ordnung (SOG HH) und Polizeidatenverarbeitungsgesetz
+        (PolDVG)
+      polizei_generalklausel: § 3 Abs. 1 SOG HH
+      stoerer: §§ 8, 9, 10 SOG HH
+      ordnungsbehoerden: Verwaltungsbehoerden und Polizei im SOG HH; Hamburg ist Einheitsgemeinde mit
+        Bezirken (BezVG)
+      verwaltungsverfahrensgesetz: Hamburgisches Verwaltungsverfahrensgesetz (HmbVwVfG) - Vollgesetz
+      vollstreckung: Hamburgisches Verwaltungsvollstreckungsgesetz (HmbVwVG)
+      kommunalverfassung: Keine Gemeinden - Bezirksverwaltung nach dem Bezirksverwaltungsgesetz (BezVG)
+      bauordnung: Hamburgische Bauordnung (HBauO)
+      landesverfassung: Verfassung der Freien und Hansestadt Hamburg (HV)
+      verfassungsgericht: Hamburgisches Verfassungsgericht
+      individualverfassungsbeschwerde: Nein - keine Individualverfassungsbeschwerde zum Hamburgischen
+        Verfassungsgericht
+    besonderheiten:
+    - Stadtstaat ohne Kommunalrecht im klassischen Sinn; die Bezirke sind keine Gemeinden.
+    - Keine Landesverfassungsbeschwerde - Grundrechtsschutz nur ueber das BVerfG.
+  checkliste:
+  - monate_vor_examen: 12
+    titel: Meldefristen und Freiversuch pruefen
+    detail: Fachsemesterzaehlung, Anrechnung von Auslands-/Urlaubssemestern und die Meldefrist beim Pruefungsamt
+      klaeren - der Freiversuch haengt am Datum der Meldung, nicht am Klausurtermin.
+  - monate_vor_examen: 9
+    titel: Landesrecht in den Lernplan aufnehmen
+    detail: Polizei- und Ordnungsrecht, Kommunalrecht, Bauordnungsrecht und das Landesverfassungsrecht
+      werden im Oeffentlichen Recht regelmaessig geprueft - das Landesrecht-Deck im Examen-Reiter deckt
+      die Normenkenntnis ab.
+  - monate_vor_examen: 6
+    titel: Zugelassene Hilfsmittel besorgen und einrichten
+    detail: Gesetzessammlungen in der zugelassenen Ausgabe, Nachlieferungen einsortieren, Markierungsregeln
+      des Pruefungsamts beachten (keine Kommentierungen).
+  - monate_vor_examen: 4
+    titel: Klausuren unter Examensbedingungen schreiben
+    detail: Fuenf Stunden am Stueck, handschriftlich oder wie in der Pruefung vorgesehen, mit den zugelassenen
+      Hilfsmitteln - der Samstags-Klausurtag im Lernplan ist dafuer reserviert.
+  - monate_vor_examen: 2
+    titel: Meldung zur Pruefung abgeben
+    detail: Unterlagen (Leistungsnachweise, Schluesselqualifikation, Fremdsprache, Praktika) vollstaendig
+      einreichen.
+  - monate_vor_examen: 1
+    titel: 'Endspurt: Wiederholung statt Neues'
+    detail: Keine neuen Themen mehr anfangen. Faellige Karten, Schemata rekonstruieren, Schwachstellen
+      aus den Klausur-Rueckmeldungen gezielt nacharbeiten.
+  pruefliste_redaktion:
+  - Zahl, Dauer und Verteilung der Aufsichtsarbeiten gegen die aktuelle JAG/JAPO-Fassung pruefen
+  - Ob ein Hausarbeits-/Aktenvortragsanteil zur staatlichen Pflichtfachpruefung gehoert
+  - Pruefungstermine des laufenden Jahres beim Pruefungsamt abgleichen
+  - Freiversuchs- und Notenverbesserungsregel (Semesterzahl, Fristen) pruefen
+  - Zugelassene Hilfsmittel gegen die aktuelle Hilfsmittelbekanntmachung pruefen
+  - Alle Normzitate im Normenspiegel gegen die geltende Gesetzesfassung pruefen

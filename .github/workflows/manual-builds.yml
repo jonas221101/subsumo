@@ -1,4 +1,4 @@
-name: Manuelle Testbuilds (Android APK / Windows)
+name: Manuelle Testbuilds (Android APK / Windows / iOS)
 
 on:
   workflow_dispatch:
@@ -7,6 +7,13 @@ on:
         description: >-
           Branch oder Tag, von dem gebaut werden soll (leer = der im
           "Run workflow"-Dialog ausgewaehlte Branch)
+        required: false
+        type: string
+      api_base:
+        description: >-
+          Backend-URL, die in die Builds einkompiliert wird (SUBSUMO_API, siehe
+          app/lib/api.dart). Leer = App-Default http://localhost:8000. Fuer
+          lokale Tests z.B. http://localhost:8010, wenn Port 8000 belegt ist.
         required: false
         type: string
 
@@ -33,7 +40,7 @@ jobs:
       # "Generierte Dateien") - vor dem Build einmalig erzeugen.
       - run: flutter create . --platforms=android --org de.subsumo
       - run: flutter pub get
-      - run: flutter build apk --release
+      - run: flutter build apk --release --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }}
       - uses: actions/upload-artifact@v4
         with:
           name: subsumo-android-apk
@@ -58,11 +65,60 @@ jobs:
       # "Generierte Dateien") - vor dem Build einmalig erzeugen.
       - run: flutter create . --platforms=windows --org de.subsumo
       - run: flutter pub get
-      - run: flutter build windows --release
+      - run: flutter build windows --release --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }}
+      # pubspec.yaml bindet die Rechtstexte als ../docs/legal/ ein. Der Web-Build
+      # legt sie korrekt neben assets/ ab, der Windows-Build installiert aber nur
+      # data/flutter_assets/ - die Engine sucht die Dateien unter
+      # data/flutter_assets/../docs/legal/, also hier nachkopieren. Sonst bleiben
+      # Impressum/AGB/Datenschutz in der EXE leer.
+      - name: Rechtstexte in den Windows-Build kopieren
+        run: |
+          New-Item -ItemType Directory -Force build\windows\x64\runner\Release\data\docs | Out-Null
+          Copy-Item -Recurse -Force ..\docs\legal build\windows\x64\runner\Release\data\docs\
       - name: Build-Ordner zippen
         run: Compress-Archive -Path build\windows\x64\runner\Release\* -DestinationPath subsumo-windows.zip
       - uses: actions/upload-artifact@v4
         with:
           name: subsumo-windows
           path: app/subsumo-windows.zip
+          retention-days: 14
+
+  build-ios:
+    name: Flutter - iOS-IPA bauen (unsigniert)
+    runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.ref }}
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      # app/ios/ ist nicht eingecheckt (siehe CONTRIBUTING.md,
+      # "Generierte Dateien") - vor dem Build einmalig erzeugen.
+      - run: flutter create . --platforms=ios --org de.subsumo
+      # Testbuilds sprechen ein lokales Backend per http:// ueber die LAN-IP an
+      # (api_base). App Transport Security blockt das ohne diese Ausnahme.
+      # Nur fuer diese manuellen Testbuilds, nicht fuer Store-Builds.
+      - name: HTTP zum lokalen Backend erlauben (nur Testbuild)
+        run: |
+          /usr/libexec/PlistBuddy -c "Add :NSAppTransportSecurity dict" ios/Runner/Info.plist
+          /usr/libexec/PlistBuddy -c "Add :NSAppTransportSecurity:NSAllowsArbitraryLoads bool true" ios/Runner/Info.plist
+          /usr/libexec/PlistBuddy -c "Add :NSAppTransportSecurity:NSAllowsLocalNetworking bool true" ios/Runner/Info.plist
+      - run: flutter pub get
+      # Ohne Apple-Developer-Account unsigniert bauen. Signiert wird beim
+      # Sideloaden (z.B. Sideloadly mit eigener Apple-ID).
+      - run: flutter build ios --release --no-codesign --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }}
+      - name: Runner.app als IPA verpacken
+        run: |
+          mkdir Payload
+          cp -R build/ios/iphoneos/Runner.app Payload/
+          zip -qr subsumo-ios-unsigned.ipa Payload
+      - uses: actions/upload-artifact@v4
+        with:
+          name: subsumo-ios-unsigned
+          path: app/subsumo-ios-unsigned.ipa
           retention-days: 14

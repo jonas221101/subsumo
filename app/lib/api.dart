@@ -84,6 +84,14 @@ class ApiClient {
   Future<dynamic> _delete(String path) async =>
       _decode(await _client.delete(_uri(path), headers: _headers));
 
+  Future<dynamic> _patch(String path, Object? body) async => _decode(
+        await _client.patch(_uri(path), headers: _headers, body: jsonEncode(body)),
+      );
+
+  Future<dynamic> _put(String path, Object? body) async => _decode(
+        await _client.put(_uri(path), headers: _headers, body: jsonEncode(body)),
+      );
+
   // --- Oeffentlich (ohne Login) ----------------------------------------------
 
   /// Feature-Flags fuer die oeffentlichen Seiten vor Login (SUB-107): u.a.
@@ -116,10 +124,27 @@ class ApiClient {
   Future<Map<String, dynamic>> me() async =>
       (await _get('/v1/auth/me')) as Map<String, dynamic>;
 
+  /// Profil aktualisieren (`PATCH /v1/auth/me`): Examensdatum (`exam_date`,
+  /// ISO-Datum), Tagesbudget, Bundesland-Kuerzel und Universitaets-Slug
+  /// (docs/32-examensvorbereitung.md). Der Server leitet aus der Universitaet
+  /// das Bundesland ab, wenn keines mitgeschickt wird.
+  Future<Map<String, dynamic>> updateProfile(Map<String, dynamic> fields) async =>
+      (await _patch('/v1/auth/me', fields)) as Map<String, dynamic>;
+
   // --- Lernen ---------------------------------------------------------------
 
-  Future<List<Map<String, dynamic>>> dueCards({int limit = 20}) async {
-    final data = await _get('/v1/cards/due', {'limit': limit});
+  /// `deck` beschraenkt auf ein Kurs-Deck, `topic` auf ein einzelnes Thema
+  /// (Examen-Reiter, docs/32 Abschnitt 3.3). Beides optional.
+  Future<List<Map<String, dynamic>>> dueCards({
+    int limit = 20,
+    String? deck,
+    String? topic,
+  }) async {
+    final data = await _get('/v1/cards/due', {
+      'limit': limit,
+      if (deck != null) 'deck': deck,
+      if (topic != null) 'topic': topic,
+    });
     return (data as List).cast<Map<String, dynamic>>();
   }
 
@@ -147,7 +172,7 @@ class ApiClient {
   Future<List<Map<String, dynamic>>> contentCards({int limit = 2000}) async {
     final data = await _get('/v1/content/cards', {'limit': limit});
     if (data is! List || data.any((card) => card is! Map)) {
-      throw const FormatException('Karten-Snapshot ist ungueltig');
+      throw const FormatException('Karten-Snapshot ist ungültig');
     }
     return data.map((card) => Map<String, dynamic>.from(card as Map)).toList();
   }
@@ -164,6 +189,41 @@ class ApiClient {
 
   Future<Map<String, dynamic>> caseDetail(String slug) async =>
       (await _get('/v1/cases/$slug')) as Map<String, dynamic>;
+
+  // --- Examensvorbereitung (docs/32-examensvorbereitung.md) -----------------
+
+  /// Alle 16 Laender mit Klausurstruktur, oeffentlich (Profil-Auswahl).
+  Future<List<Map<String, dynamic>>> examenBundeslaender() async =>
+      ((await _get('/v1/examen/bundeslaender')) as List).cast<Map<String, dynamic>>();
+
+  /// Universitaeten mit Staatsexamens-Studiengang, optional je Bundesland.
+  Future<List<Map<String, dynamic>>> examenUniversitaeten({String? bundesland}) async {
+    final data = await _get('/v1/examen/universitaeten', {
+      if (bundesland != null) 'bundesland': bundesland,
+    });
+    return (data as List).cast<Map<String, dynamic>>();
+  }
+
+  /// Alles fuer den Examen-Reiter auf einen Blick (Profil, Phase,
+  /// Examensreife, Bundesland-Profil, Kurs-Decks, Landesrecht, Schwachstellen,
+  /// Klausurvorschlag, Plantage).
+  Future<Map<String, dynamic>> examenCockpit() async =>
+      (await _get('/v1/examen/cockpit')) as Map<String, dynamic>;
+
+  /// Vorbereitungsdeck eines Kurses, zugeschnitten auf Bundesland und
+  /// Kartenzustand des angemeldeten Nutzers.
+  Future<Map<String, dynamic>> examenKursDeck(String slug) async =>
+      (await _get('/v1/examen/kurse/$slug/deck')) as Map<String, dynamic>;
+
+  // --- Lernprofil (docs/33-individualisierung.md) ---------------------------
+
+  Future<Map<String, dynamic>> lernprofil() async =>
+      (await _get('/v1/me/lernprofil')) as Map<String, dynamic>;
+
+  /// Ersetzt das Lernprofil komplett (`PUT /v1/me/lernprofil`). Der Server
+  /// prueft Themen-Slugs, Fokus/Pause-Konflikte und Deck-Slugs (422).
+  Future<Map<String, dynamic>> saveLernprofil(Map<String, dynamic> profil) async =>
+      (await _put('/v1/me/lernprofil', profil)) as Map<String, dynamic>;
 
   // --- Gutachten ------------------------------------------------------------
 
