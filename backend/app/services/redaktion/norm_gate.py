@@ -8,7 +8,7 @@ Siehe docs/08-ki-redaktion.md, Abschnitt "Was der Reviewer nicht leistet".
 
 Wie das Struktur-Gate (``app.services.content.load_content``) laeuft auch
 dieses Gate deterministisch statt als LLM-Aufruf - siehe docs/08-ki-redaktion.md,
-Abschnitt "Warum die Formatpruefung nicht dem LLM ueberlassen wird": ein
+Abschnitt "Warum die Formatprüfung nicht dem LLM überlassen wird": ein
 Sprachmodell darum zu bitten, ein Zitat zu pruefen, ist ein Bitten, kein
 Erzwingen. Die Positivliste unten ist bewusst kuratiert (nicht vom Modell
 vorgeschlagen) und deckt nur die Gesetze ab, die im bisherigen Content
@@ -105,7 +105,7 @@ def pruefe_zitat(zitat: str) -> NormPruefung:
         return NormPruefung(
             text,
             False,
-            f"Unbekanntes Gesetzeskuerzel '{kuerzel}' in '{text}' - nicht in der Positivliste",
+            f"Unbekanntes Gesetzeskürzel '{kuerzel}' in '{text}' - nicht in der Positivliste",
         )
 
     if marker == "Art." and gesetz.marker != "Art.":
@@ -131,7 +131,7 @@ def pruefe_zitat(zitat: str) -> NormPruefung:
                 return NormPruefung(
                     text,
                     False,
-                    f"{kuerzel} {teil}: ausserhalb des bekannten Bereichs "
+                    f"{kuerzel} {teil}: außerhalb des bekannten Bereichs "
                     f"({gesetz.min_nummer}-{gesetz.max_nummer}) in '{text}'",
                 )
 

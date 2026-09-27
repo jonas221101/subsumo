@@ -104,7 +104,7 @@ def test_create_preview_works_offline_without_credentials(monkeypatch, capsys):
     for key in ("PAPERCLIP_API_URL", "PAPERCLIP_API_KEY", "PAPERCLIP_COMPANY_ID",
                 "PAPERCLIP_AGENT_ID", "PAPERCLIP_RUN_ID"):
         monkeypatch.delenv(key, raising=False)
-    assert main(["create", "--title", "Delta-Sync", "--criteria", "Offline-Test gruen",
+    assert main(["create", "--title", "Delta-Sync", "--criteria", "Offline-Test grün",
                  "--dry-run"]) == 0
     preview = json.loads(capsys.readouterr().out)
     assert preview["dry_run"] is True

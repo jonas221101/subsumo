@@ -74,7 +74,7 @@ def _enforce(request: Request, scope: str) -> None:
     if not limiter.allow(f"{scope}:{_client_ip(request)}"):
         raise HTTPException(
             status.HTTP_429_TOO_MANY_REQUESTS,
-            "Zu viele Versuche. Bitte spaeter erneut probieren.",
+            "Zu viele Versuche. Bitte später erneut probieren.",
         )
 
 

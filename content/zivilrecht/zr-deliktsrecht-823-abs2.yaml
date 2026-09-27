@@ -15,11 +15,11 @@ cards:
 - slug: zr-823-2-regelungsgehalt
   type: definition
   front: Was regelt § 823 Abs. 2 BGB?
-  back: § 823 Abs. 2 S. 1 BGB gewaehrt Schadensersatz, wenn der Schaediger gegen ein
-    den Schutz eines anderen bezweckendes Gesetz (Schutzgesetz) verstoesst. Anders
-    als § 823 Abs. 1 BGB setzt die Norm keine Verletzung eines der dort abschliessend
-    aufgezaehlten Rechtsgueter voraus, sondern knuepft an den Verstoss gegen eine
-    ausserhalb des Deliktsrechts stehende Schutznorm an.
+  back: § 823 Abs. 2 S. 1 BGB gewährt Schadensersatz, wenn der Schädiger gegen ein
+    den Schutz eines anderen bezweckendes Gesetz (Schutzgesetz) verstößt. Anders
+    als § 823 Abs. 1 BGB setzt die Norm keine Verletzung eines der dort abschließend
+    aufgezählten Rechtsgüter voraus, sondern knüpft an den Verstoß gegen eine
+    außerhalb des Deliktsrechts stehende Schutznorm an.
   norms:
   - § 823 Abs. 2 BGB
   quellen:
@@ -31,7 +31,7 @@ cards:
   front: Wann ist eine Rechtsnorm ein Schutzgesetz im Sinne des § 823 Abs. 2 BGB?
   back: Ein Schutzgesetz ist jede Rechtsnorm, die nach Zweck und Inhalt zumindest
     auch dazu dienen soll, den Einzelnen oder einen bestimmten Kreis von Personen
-    gegen die Verletzung eines bestimmten Rechtsguts zu schuetzen - nicht bloss als
+    gegen die Verletzung eines bestimmten Rechtsguts zu schützen - nicht bloß als
     Reflex, sondern final gewollt. Erfasst sind sowohl Vorschriften des Strafrechts
     als auch des Verwaltungsrechts, sofern sie diesen Individualschutzzweck aufweisen.
   norms:
@@ -42,15 +42,15 @@ cards:
   stand: 2026-09
 - slug: zr-823-2-263-tatbestand
   type: definition
-  front: Welche objektiven Tatbestandsmerkmale muessen fuer einen Verstoss gegen
+  front: Welche objektiven Tatbestandsmerkmale müssen für einen Verstoß gegen
     das Schutzgesetz § 263 StGB (Betrug) im Rahmen des § 823 Abs. 2 BGB vorliegen?
-  back: 'Der objektive Verstoss gegen § 263 Abs. 1 StGB als Schutzgesetz setzt vier,
-    in einer Kausalkette aufeinander aufbauende Merkmale voraus: (1) eine Taeuschung
-    ueber Tatsachen durch Vorspiegelung falscher oder Entstellung bzw. Unterdrueckung
-    wahrer Tatsachen, (2) einen dadurch beim Getaeuschten hervorgerufenen oder unterhaltenen
-    Irrtum, (3) eine irrtumsbedingte Vermoegensverfuegung des Getaeuschten und (4)
-    einen dadurch eingetretenen Vermoegensschaden. Fehlt eines dieser Merkmale oder
-    die Kausalitaet zwischen ihnen, liegt kein objektiver Schutzgesetzverstoss vor.'
+  back: 'Der objektive Verstoß gegen § 263 Abs. 1 StGB als Schutzgesetz setzt vier,
+    in einer Kausalkette aufeinander aufbauende Merkmale voraus: (1) eine Täuschung
+    über Tatsachen durch Vorspiegelung falscher oder Entstellung bzw. Unterdrückung
+    wahrer Tatsachen, (2) einen dadurch beim Getäuschten hervorgerufenen oder unterhaltenen
+    Irrtum, (3) eine irrtumsbedingte Vermögensverfügung des Getäuschten und (4)
+    einen dadurch eingetretenen Vermögensschaden. Fehlt eines dieser Merkmale oder
+    die Kausalität zwischen ihnen, liegt kein objektiver Schutzgesetzverstoß vor.'
   norms:
   - § 263 Abs. 1 StGB
   quellen:
@@ -60,11 +60,11 @@ cards:
 - slug: zr-823-2-abgrenzung-ordnungsvorschriften
   type: definition
   front: Wie grenzt man ein Schutzgesetz von einer reinen Ordnungsvorschrift ab?
-  back: Eine Norm, die ausschliesslich das Interesse der Allgemeinheit oder eine funktionierende
+  back: Eine Norm, die ausschließlich das Interesse der Allgemeinheit oder eine funktionierende
     Verwaltungsordnung sichern soll, ohne dass der Schutz einzelner Personen bezweckt
     ist, ist keine Schutznorm im Sinne des § 823 Abs. 2 BGB - selbst wenn ihre Verletzung
-    faktisch auch Einzelnen zugutekommt. Massgeblich ist, ob der Individualschutz
-    zum Normzweck gehoert oder nur eine mittelbare, ungewollte Nebenfolge des allgemeinen
+    faktisch auch Einzelnen zugutekommt. Maßgeblich ist, ob der Individualschutz
+    zum Normzweck gehört oder nur eine mittelbare, ungewollte Nebenfolge des allgemeinen
     Ordnungsinteresses ist.
   norms:
   - § 823 Abs. 2 BGB
@@ -74,11 +74,11 @@ cards:
   stand: 2026-09
 - slug: zr-823-2-persoenlicher-schutzbereich
   type: definition
-  front: Was bedeutet der persoenliche Schutzbereich beim Schutzgesetz?
-  back: Der Geschaedigte muss zu dem Personenkreis gehoeren, den das jeweilige Schutzgesetz
-    gerade schuetzen will. Schuetzt eine Norm beispielsweise nur eine bestimmte Berufsgruppe
-    oder Vertragspartei, kann sich ein aussenstehender Dritter, der nicht zu diesem
-    Kreis zaehlt, nicht auf die Verletzung dieser Norm berufen, selbst wenn er einen
+  front: Was bedeutet der persönliche Schutzbereich beim Schutzgesetz?
+  back: Der Geschädigte muss zu dem Personenkreis gehören, den das jeweilige Schutzgesetz
+    gerade schützen will. Schützt eine Norm beispielsweise nur eine bestimmte Berufsgruppe
+    oder Vertragspartei, kann sich ein außenstehender Dritter, der nicht zu diesem
+    Kreis zählt, nicht auf die Verletzung dieser Norm berufen, selbst wenn er einen
     Schaden erlitten hat.
   norms:
   - § 823 Abs. 2 BGB
@@ -90,10 +90,10 @@ cards:
   type: definition
   front: Was bedeutet der sachliche Schutzbereich (Schutzzweckzusammenhang) beim Schutzgesetz?
   back: Der eingetretene Schaden muss gerade aus der Verletzung desjenigen Interesses
-    resultieren, das die verletzte Norm schuetzen will. Realisiert sich im Schaden
+    resultieren, das die verletzte Norm schützen will. Realisiert sich im Schaden
     eine ganz andere Gefahr als die, vor der das Schutzgesetz bewahren soll, fehlt
     der erforderliche Schutzzweckzusammenhang und ein Anspruch aus § 823 Abs. 2 BGB
-    scheidet aus, obwohl objektiv gegen die Norm verstossen wurde.
+    scheidet aus, obwohl objektiv gegen die Norm verstoßen wurde.
   norms:
   - § 823 Abs. 2 BGB
   quellen:
@@ -102,11 +102,11 @@ cards:
   stand: 2026-09
 - slug: zr-823-2-verschulden-s2
   type: definition
-  front: Welche Bedeutung hat § 823 Abs. 2 S. 2 BGB fuer das Verschuldenserfordernis?
-  back: Laesst das Schutzgesetz seinem Inhalt nach einen Verstoss auch ohne Verschulden
+  front: Welche Bedeutung hat § 823 Abs. 2 S. 2 BGB für das Verschuldenserfordernis?
+  back: Lässt das Schutzgesetz seinem Inhalt nach einen Verstoß auch ohne Verschulden
     zu, tritt die Ersatzpflicht nach § 823 Abs. 2 S. 2 BGB dennoch nur bei Verschulden
-    des Handelnden ein. Setzt das Schutzgesetz selbst bereits Vorsatz oder Fahrlaessigkeit
-    voraus - wie die meisten Strafnormen -, ist dieses beim Schutzgesetz gepruefte
+    des Handelnden ein. Setzt das Schutzgesetz selbst bereits Vorsatz oder Fahrlässigkeit
+    voraus - wie die meisten Strafnormen -, ist dieses beim Schutzgesetz geprüfte
     Verschulden zugleich das deliktische Verschulden im Sinne des § 823 Abs. 2 BGB.
   norms:
   - § 823 Abs. 2 S. 2 BGB
@@ -116,14 +116,14 @@ cards:
   stand: 2026-09
 - slug: zr-823-2-beweislast
   type: definition
-  front: Wie ist die Beweislast bei einem Anspruch aus § 823 Abs. 2 BGB grundsaetzlich
+  front: Wie ist die Beweislast bei einem Anspruch aus § 823 Abs. 2 BGB grundsätzlich
     verteilt?
-  back: Der Geschaedigte traegt als Anspruchsteller grundsaetzlich die Beweislast
-    fuer den objektiven Verstoss gegen das Schutzgesetz und, soweit dieses ein Verschulden
-    voraussetzt, fuer das Verschulden des Schaedigers. Eine pauschale gesetzliche
+  back: Der Geschädigte trägt als Anspruchsteller grundsätzlich die Beweislast
+    für den objektiven Verstoß gegen das Schutzgesetz und, soweit dieses ein Verschulden
+    voraussetzt, für das Verschulden des Schädigers. Eine pauschale gesetzliche
     Umkehr der Beweislast sieht § 823 Abs. 2 BGB nicht vor; Beweiserleichterungen
-    koennen sich allenfalls aus allgemeinen Beweisgrundsaetzen wie dem Anscheinsbeweis
-    bei typischen Geschehensablaeufen ergeben.
+    können sich allenfalls aus allgemeinen Beweisgrundsätzen wie dem Anscheinsbeweis
+    bei typischen Geschehensabläufen ergeben.
   norms:
   - § 823 Abs. 2 BGB
   quellen:
@@ -132,13 +132,13 @@ cards:
   stand: 2026-09
 - slug: zr-823-2-verhaeltnis-abs1
   type: definition
-  front: Wie verhaelt sich § 823 Abs. 2 BGB zu § 823 Abs. 1 BGB?
-  back: § 823 Abs. 2 BGB ist eine eigenstaendige, neben § 823 Abs. 1 BGB anwendbare
-    Anspruchsgrundlage. Waehrend Abs. 1 nur die dort abschliessend genannten Rechtsgueter
-    schuetzt, kann ueber Abs. 2 in Verbindung mit einem individualschuetzenden Schutzgesetz
-    auch der Ersatz reiner Vermoegensschaeden verlangt werden, sofern das Schutzgesetz
-    gerade das Vermoegen schuetzen soll. Beide Anspruchsgrundlagen koennen nebeneinander
-    erfuellt sein.
+  front: Wie verhält sich § 823 Abs. 2 BGB zu § 823 Abs. 1 BGB?
+  back: § 823 Abs. 2 BGB ist eine eigenständige, neben § 823 Abs. 1 BGB anwendbare
+    Anspruchsgrundlage. Während Abs. 1 nur die dort abschließend genannten Rechtsgüter
+    schützt, kann über Abs. 2 in Verbindung mit einem individualschützenden Schutzgesetz
+    auch der Ersatz reiner Vermögensschäden verlangt werden, sofern das Schutzgesetz
+    gerade das Vermögen schützen soll. Beide Anspruchsgrundlagen können nebeneinander
+    erfüllt sein.
   norms:
   - § 823 Abs. 2 BGB
   - § 823 Abs. 1 BGB
@@ -157,13 +157,13 @@ schemata:
   steps:
   - label: I. Verletzung eines Schutzgesetzes
     children:
-    - label: 1. Rechtsnorm mit zumindest auch individualschuetzendem Zweck
-    - label: 2. Geschaedigter im persoenlichen Schutzbereich
+    - label: 1. Rechtsnorm mit zumindest auch individualschützendem Zweck
+    - label: 2. Geschädigter im persönlichen Schutzbereich
     - label: 3. Schaden im sachlichen Schutzbereich (Schutzzweckzusammenhang)
   - label: II. Verschulden
     children:
-    - label: '1. Schutzgesetz setzt Verschulden voraus: dessen Grad genuegt'
-    - label: '2. Schutzgesetz verschuldensunabhaengig: eigenes Verschulden erforderlich,
+    - label: '1. Schutzgesetz setzt Verschulden voraus: dessen Grad genügt'
+    - label: '2. Schutzgesetz verschuldensunabhängig: eigenes Verschulden erforderlich,
         § 823 Abs. 2 S. 2 BGB'
   - label: III. Kausaler Schaden
   - label: 'IV. Rechtsfolge: Schadensersatz, §§ 249 ff. BGB'
@@ -176,32 +176,32 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - BGB, amtliche Fassung
   - StGB, amtliche Fassung
-  facts: Gebrauchtwagenhaendler G verkauft an Kaeuferin K ein Fahrzeug und erklaert
+  facts: Gebrauchtwagenhändler G verkauft an Käuferin K ein Fahrzeug und erklärt
     dabei wissentlich wahrheitswidrig, es habe noch nie einen Unfallschaden gehabt,
-    obwohl G positiv weiss, dass ein erheblicher, zwar fachgerecht aber teuer reparierter
-    Vorschaden vorliegt. K verlaesst sich auf diese Angabe und zahlt den vereinbarten
+    obwohl G positiv weiß, dass ein erheblicher, zwar fachgerecht aber teuer reparierter
+    Vorschaden vorliegt. K verlässt sich auf diese Angabe und zahlt den vereinbarten
     Kaufpreis von 14.000 EUR, obwohl das Fahrzeug wegen des verschwiegenen Vorschadens
-    objektiv nur 11.000 EUR wert ist. Waere K der Vorschaden bekannt gewesen, haette
+    objektiv nur 11.000 EUR wert ist. Wäre K der Vorschaden bekannt gewesen, hätte
     sie den Kaufvertrag zu diesem Preis nicht geschlossen.
   question: Hat K gegen G einen Anspruch auf Zahlung von 3.000 EUR aus § 823 Abs.
     2 BGB in Verbindung mit § 263 StGB?
   steps:
   - prompt: Ist § 263 StGB ein Schutzgesetz im Sinne des § 823 Abs. 2 BGB?
-    erwartung: Ja, § 263 StGB schuetzt zumindest auch das Vermoegen des Einzelnen
-      vor taeuschungsbedingten Verfuegungen und ist damit ein individualschuetzendes
+    erwartung: Ja, § 263 StGB schützt zumindest auch das Vermögen des Einzelnen
+      vor täuschungsbedingten Verfügungen und ist damit ein individualschützendes
       Schutzgesetz.
-  - prompt: Liegt objektiv ein Verstoss gegen § 263 StGB vor?
-    erwartung: 'Ja: G taeuschte durch die wahrheitswidrige Behauptung der Unfallfreiheit
-      ueber Tatsachen, K irrte hierueber und verfuegte durch die Kaufpreiszahlung
-      ueber ihr Vermoegen, wodurch ihr ein Schaden in Hoehe der Wertdifferenz von
+  - prompt: Liegt objektiv ein Verstoß gegen § 263 StGB vor?
+    erwartung: 'Ja: G täuschte durch die wahrheitswidrige Behauptung der Unfallfreiheit
+      über Tatsachen, K irrte hierüber und verfügte durch die Kaufpreiszahlung
+      über ihr Vermögen, wodurch ihr ein Schaden in Höhe der Wertdifferenz von
       3.000 EUR entstand.'
   - prompt: Liegt das erforderliche Verschulden vor?
-    erwartung: 'Ja: G handelte vorsaetzlich, da er den Vorschaden positiv kannte und
-      K bewusst darueber taeuschte; der von § 263 StGB vorausgesetzte Vorsatz ist
+    erwartung: 'Ja: G handelte vorsätzlich, da er den Vorschaden positiv kannte und
+      K bewusst darüber täuschte; der von § 263 StGB vorausgesetzte Vorsatz ist
       zugleich das Verschulden im Sinne des § 823 Abs. 2 BGB.'
   - prompt: Warum scheidet ein Anspruch aus § 823 Abs. 1 BGB aus?
-    erwartung: Weil K durch den ueberhoehten Kaufpreis lediglich einen reinen Vermoegensschaden
-      erleidet; das Eigentum am Fahrzeug selbst wird durch die Taeuschung nicht verletzt
+    erwartung: Weil K durch den überhöhten Kaufpreis lediglich einen reinen Vermögensschaden
+      erleidet; das Eigentum am Fahrzeug selbst wird durch die Täuschung nicht verletzt
       und ist kein von Abs. 1 erfasster Fall.
   - prompt: Zu welchem Ergebnis kommt man?
     erwartung: K hat gegen G einen Anspruch auf Zahlung von 3.000 EUR aus § 823 Abs.
@@ -222,7 +222,7 @@ faelle:
       card_slugs:
       - zr-823-2-regelungsgehalt
     - id: p2
-      label: § 263 StGB als individualschuetzendes, das Vermoegen schuetzendes Schutzgesetz
+      label: § 263 StGB als individualschützendes, das Vermögen schützendes Schutzgesetz
         qualifiziert
       weight: 2.0
       required: true
@@ -230,22 +230,22 @@ faelle:
       - § 263 StGB
       keywords:
       - Schutzgesetz
-      - Vermoegen
-      - individualschuetzend
+      - Vermögen
+      - individualschützend
       card_slugs:
       - zr-823-2-schutzgesetzbegriff
     - id: p3
-      label: Objektiver Tatbestand des § 263 StGB (Taeuschung, Irrtum, Verfuegung,
-        Vermoegensschaden) bejaht
+      label: Objektiver Tatbestand des § 263 StGB (Täuschung, Irrtum, Verfügung,
+        Vermögensschaden) bejaht
       weight: 2.0
       required: true
       norms:
       - § 263 StGB
       keywords:
-      - Taeuschung
+      - Täuschung
       - Irrtum
-      - Verfuegung
-      - Vermoegensschaden
+      - Verfügung
+      - Vermögensschaden
       card_slugs:
       - zr-823-2-263-tatbestand
     - id: p4
@@ -257,14 +257,14 @@ faelle:
       card_slugs:
       - zr-823-2-verschulden-s2
     - id: p5
-      label: 'Abgrenzung zu § 823 Abs. 1 BGB: reiner Vermoegensschaden nicht erfasst'
+      label: 'Abgrenzung zu § 823 Abs. 1 BGB: reiner Vermögensschaden nicht erfasst'
       weight: 2.0
       required: true
       norms:
       - § 823 Abs. 1 BGB
       keywords:
       - 823 Abs. 1
-      - reiner Vermoegensschaden
+      - reiner Vermögensschaden
       - Eigentum nicht verletzt
       card_slugs:
       - zr-823-2-verhaeltnis-abs1

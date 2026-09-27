@@ -128,8 +128,11 @@ Neu: `app/services/billing.py`, `app/api/v1/billing.py`.
 - Kein aktives Abo → `409`.
 - Test: Kauf vor 20 Tagen simuliert → `period_end`; Kauf vor 5 Tagen
   simuliert → `immediate_refund` inkl. gemocktem Refund-Aufruf.
-- Diese Fristgrenze ersetzt keine anwaltliche Prüfung der endgültigen
-  Widerrufsbelehrung — die liegt bei [SUB-85](/SUB/issues/SUB-85).
+- Diese Fristgrenze prüft nur die Frist-Logik im Code, nicht den Text der
+  Widerrufsbelehrung selbst. Die rechtliche Prüfung des Texts entfällt
+  bewusst (Entscheidung 25.09.2026, `docs/31-projektreview-sub254.md`
+  Abschnitt 9.2) — nicht `SUB-85` (dort ging es nur um den Entwurf, nicht
+  um eine rechtliche Prüfung).
 
 ### F1 — Pro-Gating im Flutter-Client
 Betrifft `app/lib/state.dart`, betroffene Screens in `app/lib/pages/`.

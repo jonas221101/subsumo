@@ -32,7 +32,7 @@ cards:
 
 schemata:
   - slug: <eindeutig>
-    title: "<Pruefungsschema-Titel>"
+    title: "<Prüfungsschema-Titel>"
     norms: ["..."]
     quellen: ["..."]
     steps:

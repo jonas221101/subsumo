@@ -1,0 +1,511 @@
+topic:
+  slug: or-staatsorganisationsrecht-gesetzgebungskompetenzen
+  area: oeffentliches-recht
+  title: Gesetzgebungskompetenzen von Bund und Ländern, Art. 70 ff. GG
+  parent: oeffentliches-recht
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-fable-5-1
+    status: in-pruefung
+    normzitate_geprueft: true
+cards:
+- slug: or-ggk-grundsatz-art70-regel-ausnahme
+  type: norm
+  front: Welches Regel-Ausnahme-Verhältnis stellt Art. 70 GG auf?
+  back: >-
+    Nach Art. 70 Abs. 1 GG haben die Länder das Recht der Gesetzgebung, soweit
+    das Grundgesetz nicht dem Bund Gesetzgebungsbefugnisse verleiht. Die
+    Gesetzgebungskompetenz liegt also im Grundsatz bei den Ländern; der Bund
+    darf nur tätig werden, wenn ihm das Grundgesetz einen Kompetenztitel
+    zuweist. Das entspricht der allgemeinen Kompetenzvermutung des Art. 30 GG
+    zugunsten der Länder. Praktisch ist das Verhältnis freilich umgekehrt: Die
+    Kataloge der Art. 73 und Art. 74 GG sind so umfangreich, dass der Bund die
+    meisten bedeutsamen Materien regelt und den Ländern vor allem Polizei- und
+    Ordnungsrecht, Kommunalrecht, Schul- und Hochschulrecht, Kultur und
+    Presserecht verbleiben. Art. 70 Abs. 2 GG stellt klar, dass sich die
+    Abgrenzung nach den Vorschriften über die ausschließliche und die
+    konkurrierende Gesetzgebung bemisst. In der Klausur ist die
+    Gesetzgebungskompetenz stets der erste Punkt der formellen
+    Verfassungsmäßigkeit eines Gesetzes; ein Gesetz ohne Kompetenz ist
+    nichtig.
+  norms:
+  - Art. 70 Abs. 1 GG
+  - Art. 70 Abs. 2 GG
+  - Art. 30 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-ggk-ausschliessliche-art71-73
+  type: norm
+  front: Was kennzeichnet die ausschließliche Gesetzgebung des Bundes, Art. 71,
+    73 GG?
+  back: >-
+    Im Bereich der ausschließlichen Gesetzgebung des Bundes haben die Länder
+    die Befugnis zur Gesetzgebung nur, wenn und soweit sie hierzu in einem
+    Bundesgesetz ausdrücklich ermächtigt werden (Art. 71 GG). Die Länder sind
+    also gesperrt, unabhängig davon, ob der Bund von seiner Kompetenz
+    Gebrauch gemacht hat. Den Katalog enthält Art. 73 Abs. 1 GG - etwa
+    auswärtige Angelegenheiten und Verteidigung (Nr. 1), Staatsangehörigkeit
+    (Nr. 2), Währung und Zölle (Nr. 4 und 5), Luftverkehr und
+    Eisenbahnen des Bundes (Nr. 6 und 6a), Post und Telekommunikation
+    (Nr. 7), Waffen- und Sprengstoffrecht (Nr. 12) sowie die Abwehr von
+    Gefahren des internationalen Terrorismus durch das Bundeskriminalamt
+    (Nr. 9a, mit Zustimmungspflicht nach Art. 73 Abs. 2 GG). Weitere
+    ausschließliche Kompetenzen finden sich verstreut im Grundgesetz, etwa
+    Art. 21 Abs. 5 GG (Parteienrecht), Art. 38 Abs. 3 GG (Bundeswahlrecht)
+    und Art. 105 Abs. 1 GG (Zölle und Finanzmonopole).
+  norms:
+  - Art. 71 GG
+  - Art. 73 Abs. 1 GG
+  - Art. 73 Abs. 2 GG
+  - Art. 105 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-ggk-konkurrierende-art72-abs1-sperrwirkung
+  type: norm
+  front: Wie funktioniert die konkurrierende Gesetzgebung nach Art. 72 Abs. 1 GG,
+    und wann tritt die Sperrwirkung ein?
+  back: >-
+    Im Bereich der konkurrierenden Gesetzgebung (Katalog des Art. 74 Abs. 1
+    GG) haben die Länder die Befugnis zur Gesetzgebung, solange und soweit
+    der Bund von seiner Gesetzgebungszuständigkeit nicht durch Gesetz Gebrauch
+    gemacht hat (Art. 72 Abs. 1 GG). "Solange" ist zeitlich zu verstehen:
+    Hebt der Bund sein Gesetz auf, lebt die Länderkompetenz wieder auf.
+    "Soweit" ist sachlich zu verstehen: Die Sperrwirkung reicht nur so weit,
+    wie der Bund die Materie tatsächlich - und zwar erschöpfend - geregelt
+    hat. Ob eine Bundesregelung abschließend ist, ist durch Auslegung des
+    Bundesgesetzes zu ermitteln: aus dem Gesamtkonzept, dem Regelungszweck
+    und der Entstehungsgeschichte. Auch ein bewusster Regelungsverzicht des
+    Bundes ("absichtsvolles Unterlassen") kann Sperrwirkung entfalten, wenn
+    der Bund die Materie gerade nicht weiter geregelt wissen wollte. Nur
+    lückenhafte, nicht abschließende Bundesregelungen lassen Raum für
+    ergänzendes Landesrecht. Ein trotz Sperrwirkung erlassenes Landesgesetz
+    ist mangels Kompetenz nichtig; Art. 31 GG ist insoweit nicht der
+    Maßstab, weil er kompetenzgemäßes Recht beider Ebenen voraussetzt.
+  norms:
+  - Art. 72 Abs. 1 GG
+  - Art. 74 Abs. 1 GG
+  - Art. 31 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-ggk-erforderlichkeitsklausel-art72-abs2
+  type: definition
+  front: Was verlangt die Erforderlichkeitsklausel des Art. 72 Abs. 2 GG und für
+    welche Materien gilt sie?
+  back: >-
+    Für die in Art. 72 Abs. 2 GG aufgezählten Materien des Art. 74 Abs. 1 GG
+    (unter anderem Nr. 4 Aufenthaltsrecht der Ausländer, Nr. 7 öffentliche
+    Fürsorge, Nr. 11 Recht der Wirtschaft, Nr. 13 Ausbildungsbeihilfen, Nr. 15
+    Bodenrecht, Nr. 19a Krankenhausfinanzierung, Nr. 20 Lebensmittelrecht,
+    Nr. 22 Straßenverkehr, Nr. 25 Staatshaftung, Nr. 26 Fortpflanzungsmedizin)
+    hat der Bund das Gesetzgebungsrecht nur, wenn und soweit die Herstellung
+    gleichwertiger Lebensverhältnisse im Bundesgebiet oder die Wahrung der
+    Rechts- oder Wirtschaftseinheit im gesamtstaatlichen Interesse eine
+    bundesgesetzliche Regelung erforderlich macht. Für alle übrigen Titel des
+    Art. 74 Abs. 1 GG - insbesondere Nr. 1 (bürgerliches Recht, Strafrecht,
+    Gerichtsverfassung) und Nr. 12 (Arbeitsrecht, Sozialversicherung) - gilt
+    die Klausel seit der Föderalismusreform 2006 nicht mehr (Kernkompetenzen).
+    Die drei Zielvorgaben sind nach der Rechtsprechung des
+    Bundesverfassungsgerichts voll justiziabel und eng auszulegen:
+    "Gleichwertige Lebensverhältnisse" setzen ein erhebliches, die
+    bundesstaatliche Sozialstruktur beeinträchtigendes Gefälle voraus;
+    "Rechtseinheit" verlangt eine Rechtszersplitterung mit problematischen
+    Folgen, die im Interesse von Bund und Ländern nicht hingenommen werden
+    kann; "Wirtschaftseinheit" ist betroffen, wenn Landesregelungen erhebliche
+    Nachteile für die Gesamtwirtschaft mit sich bringen. Dem Bund steht
+    insoweit nur eine Einschätzungsprärogative hinsichtlich der Prognose zu.
+  norms:
+  - Art. 72 Abs. 2 GG
+  - Art. 74 Abs. 1 GG
+  - Art. 93 Abs. 1 Nr. 2a GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-ggk-abweichungsgesetzgebung-art72-abs3
+  type: norm
+  front: Wie funktioniert die Abweichungsgesetzgebung nach Art. 72 Abs. 3 GG?
+  back: >-
+    Hat der Bund von seiner Gesetzgebungszuständigkeit in den in Art. 72
+    Abs. 3 S. 1 GG genannten Materien Gebrauch gemacht (Jagdwesen, Naturschutz
+    und Landschaftspflege, Bodenverteilung, Raumordnung, Wasserhaushalt,
+    Hochschulzulassung und -abschlüsse sowie die Grundsteuer), können die
+    Länder hiervon abweichende Regelungen treffen. Ausgenommen sind
+    abweichungsfeste Kerne, etwa die allgemeinen Grundsätze des Naturschutzes
+    und die stoff- oder anlagenbezogenen Regelungen des Wasserhaushalts. Anders
+    als bei Art. 72 Abs. 1 GG tritt keine Sperrwirkung ein; Bundes- und
+    Landesrecht bestehen nebeneinander, und es gilt nach Art. 72 Abs. 3 S. 3
+    GG das jeweils spätere Gesetz vor (lex posterior, keine Anwendung des Art.
+    31 GG). Bundesgesetze auf diesen Gebieten treten nach Art. 72 Abs. 3 S. 2
+    GG frühestens sechs Monate nach ihrer Verkündung in Kraft, soweit nicht
+    mit Zustimmung des Bundesrates anderes bestimmt ist, damit die Länder
+    Abweichungen vorbereiten können. Die Abweichungskompetenz ermöglicht es
+    den Ländern, eigene Regelungskonzepte zu verfolgen, ohne dass der Bund
+    seine Kompetenz verliert; der Bund kann seinerseits erneut abweichende
+    Regelungen erlassen ("Ping-Pong-Gesetzgebung").
+  norms:
+  - Art. 72 Abs. 3 S. 1 GG
+  - Art. 72 Abs. 3 S. 2 GG
+  - Art. 72 Abs. 3 S. 3 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-ggk-ungeschriebene-kompetenzen
+  type: definition
+  front: Welche ungeschriebenen Gesetzgebungskompetenzen des Bundes sind anerkannt?
+  back: >-
+    Neben den geschriebenen Kompetenztiteln sind drei ungeschriebene
+    Bundeskompetenzen anerkannt, die alle eng auszulegen sind, weil sie die
+    Regelvermutung des Art. 70 Abs. 1 GG durchbrechen. (1) Kompetenz kraft
+    Sachzusammenhangs: Eine dem Bund zugewiesene Materie kann verständigerweise
+    nicht geregelt werden, ohne dass zugleich eine an sich den Ländern
+    zustehende Materie mitgeregelt wird; das Übergreifen ist unerlässliche
+    Voraussetzung für die Regelung der Bundesmaterie. (2) Annexkompetenz: Der
+    Bund darf zu einer ihm zugewiesenen Materie die Regelungen treffen, die
+    ihrer Vorbereitung und Durchführung dienen - typisch sind Verfahrens-,
+    Organisations- und Ordnungsvorschriften zu einem Sachgebiet, etwa
+    polizeiliche Vorschriften zur Durchsetzung einer Bundesregelung. (3)
+    Kompetenz kraft Natur der Sache: Eine Materie kann begriffsnotwendig nur
+    vom Bund geregelt werden, weil sie den Ländern von vornherein entzogen
+    ist - etwa die Festlegung der Bundeshauptstadt, der Nationalhymne und
+    Nationalsymbole oder die Errichtung bundesunmittelbarer Stiftungen von
+    gesamtstaatlicher Bedeutung. Bloße Zweckmäßigkeit einer Bundesregelung
+    genügt für keine der drei Kompetenzen.
+  norms:
+  - Art. 70 Abs. 1 GG
+  - Art. 30 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-ggk-zuordnung-schwerpunkt-doppelkompetenz
+  type: streitstand
+  front: Wie wird ein Gesetz einem Kompetenztitel zugeordnet, wenn es mehrere
+    Materien berührt?
+  back: >-
+    Die Zuordnung eines Gesetzes zu einem Kompetenztitel richtet sich nach
+    seinem unmittelbaren Regelungsgegenstand, seinem Normzweck, seiner
+    Wirkung und dem Adressatenkreis - nicht nach der vom Gesetzgeber gewählten
+    Bezeichnung oder Rechtsform. Berührt ein Gesetz mehrere Materien, ist nach
+    herrschender Meinung zunächst jede einzelne Regelung für sich zuzuordnen
+    ("Mosaikkompetenz"); lässt sich eine Regelung nicht aufteilen, entscheidet
+    der Schwerpunkt des Gesamtkonzepts (Schwerpunkttheorie). Doppelkompetenzen,
+    bei denen Bund und Länder dieselbe Materie mit unterschiedlichem Inhalt
+    regeln dürften, sind dem Grundgesetz fremd; jede Materie ist entweder
+    Bundes- oder Landeskompetenz. Umstritten ist die Behandlung von
+    Regelungen, die derselben Zielsetzung dienen, aber unterschiedlichen
+    Rechtsgebieten entstammen - etwa wenn ein Land aus wohnungspolitischen
+    Gründen öffentlich-rechtliche Mietobergrenzen einführt, obwohl das
+    Mietpreisrecht als bürgerliches Recht (Art. 74 Abs. 1 Nr. 1 GG) vom Bund
+    geregelt ist. Eine Auffassung lässt es genügen, dass die Landesregelung
+    in einer anderen Rechtsform (öffentlich-rechtlich) und mit anderem Ansatz
+    (Wohnungswesen als Länderkompetenz) erfolgt. Nach der Rechtsprechung des
+    Bundesverfassungsgerichts (2021) ist dagegen maßgeblich, dass beide
+    Regelungen denselben Gegenstand - die Höhe der Miete in ungebundenem
+    Wohnraum - betreffen; hat der Bund diesen abschließend geregelt, sind die
+    Länder unabhängig von der gewählten Rechtsform gesperrt. Die
+    Rechtsformwahl darf die Kompetenzordnung nicht unterlaufen.
+  norms:
+  - Art. 72 Abs. 1 GG
+  - Art. 74 Abs. 1 Nr. 1 GG
+  - Art. 70 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-ggk-sperrwirkung-regelungsverzicht
+  type: streitstand
+  front: Kann ein bewusster Regelungsverzicht des Bundes Sperrwirkung nach Art.
+    72 Abs. 1 GG entfalten?
+  back: >-
+    Nach Art. 72 Abs. 1 GG sind die Länder gesperrt, "soweit" der Bund von
+    seiner Kompetenz Gebrauch gemacht hat. Unstreitig ist das der Fall, wenn
+    der Bund eine Materie positiv und erschöpfend geregelt hat. Umstritten ist
+    die Behandlung des Schweigens des Bundes. Nach einer engen Auffassung kann
+    nur eine tatsächlich getroffene Regelung sperren; wo das Bundesgesetz
+    schweigt, bleibt die Länderkompetenz nach dem Regel-Ausnahme-Prinzip des
+    Art. 70 Abs. 1 GG erhalten. Die herrschende Meinung und das
+    Bundesverfassungsgericht erkennen dagegen an, dass auch ein "absichtsvoller
+    Regelungsverzicht" Gebrauchmachen ist: Hat der Bund erkennbar
+    entschieden, dass eine Frage nicht oder nicht weitergehend geregelt sein
+    soll, ist dieser negative Regelungswille Teil seines abschließenden
+    Konzepts und sperrt die Länder. Erforderlich ist jedoch, dass der
+    Verzicht im Gesetz selbst, seiner Systematik oder den Materialien
+    hinreichend deutlich zum Ausdruck kommt; aus bloßer Untätigkeit oder
+    Lückenhaftigkeit darf nicht auf eine Sperre geschlossen werden, sonst
+    liefe die Länderkompetenz leer. In der Klausur ist daher das Bundesgesetz
+    daraufhin auszulegen, ob es die betreffende Frage abschließend beantworten
+    wollte - einschließlich der Frage, ob es Raum für ergänzendes Landesrecht
+    ausdrücklich eröffnet (Öffnungsklausel) oder verschließt.
+  norms:
+  - Art. 72 Abs. 1 GG
+  - Art. 70 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-ggk-pruefungsreihenfolge-rechtsfolge
+  type: schema_step
+  front: In welcher Reihenfolge prüft man die Gesetzgebungskompetenz und was folgt
+    aus einem Kompetenzverstoß?
+  back: >-
+    Reihenfolge: (1) Qualifikation der Regelung - welche Materie wird nach
+    Gegenstand, Zweck und Wirkung geregelt? (2) Ausschließliche
+    Bundeskompetenz (Art. 71, 73 GG und verstreute Titel)? (3) Konkurrierende
+    Kompetenz (Art. 72, 74 GG) - bei Bundesgesetzen zusätzlich Erforderlichkeit
+    nach Art. 72 Abs. 2 GG für die dort genannten Titel; bei Landesgesetzen
+    Sperrwirkung nach Art. 72 Abs. 1 GG oder Abweichungsbefugnis nach Art. 72
+    Abs. 3 GG. (4) Ungeschriebene Kompetenzen (Sachzusammenhang, Annex, Natur
+    der Sache). (5) Andernfalls Landeskompetenz nach Art. 70 Abs. 1 GG.
+    Rechtsfolge: Ein ohne Kompetenz erlassenes Gesetz ist formell
+    verfassungswidrig und nichtig; das Bundesverfassungsgericht stellt dies in
+    der abstrakten oder konkreten Normenkontrolle oder im Rahmen einer
+    Verfassungsbeschwerde fest. Art. 31 GG ("Bundesrecht bricht Landesrecht")
+    greift nur bei einer echten Kollision zweier jeweils kompetenzgemäß
+    erlassener Normen, die praktisch selten ist. Für fortgeltendes altes
+    Bundesrecht in Materien, die durch Verfassungsänderung Ländersache
+    geworden sind, enthält Art. 125a GG Übergangsregelungen.
+  norms:
+  - Art. 70 Abs. 1 GG
+  - Art. 72 Abs. 1 GG
+  - Art. 72 Abs. 2 GG
+  - Art. 31 GG
+  - Art. 125a GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: or-schema-ggk-gesetzgebungskompetenz
+  title: Prüfung der Gesetzgebungskompetenz, Art. 70 ff. GG
+  norms:
+  - Art. 70 GG
+  - Art. 71 GG
+  - Art. 72 GG
+  - Art. 73 GG
+  - Art. 74 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Qualifikation der Regelung
+    children:
+    - label: 1. Unmittelbarer Regelungsgegenstand, Normzweck, Wirkung, Adressaten
+    - label: 2. Bei Mehrfachbezug - Einzelzuordnung, hilfsweise Schwerpunkt; keine
+        Doppelkompetenzen
+    hinweis: Bezeichnung und Rechtsform des Gesetzes sind nicht maßgeblich.
+  - label: II. Ausschließliche Gesetzgebung des Bundes, Art. 71, 73 GG
+    children:
+    - label: 1. Katalog des Art. 73 Abs. 1 GG und verstreute Titel (z. B. Art. 21
+        Abs. 5, 38 Abs. 3, 105 Abs. 1 GG)
+    - label: 2. Länder nur bei ausdrücklicher bundesgesetzlicher Ermächtigung, Art.
+        71 GG
+  - label: III. Konkurrierende Gesetzgebung, Art. 72, 74 GG
+    children:
+    - label: 1. Kompetenztitel im Katalog des Art. 74 Abs. 1 GG
+    - label: 2. Bei Bundesgesetzen - Erforderlichkeit nach Art. 72 Abs. 2 GG, sofern
+        der Titel dort genannt ist (nicht bei Kernkompetenzen wie Nr. 1, 12)
+    - label: 3. Bei Landesgesetzen - keine Sperrwirkung nach Art. 72 Abs. 1 GG
+        (Bund hat nicht oder nicht abschließend Gebrauch gemacht, auch kein absichtsvoller
+        Regelungsverzicht)
+    - label: 4. Abweichungsgesetzgebung der Länder, Art. 72 Abs. 3 GG - Vorrang des
+        späteren Gesetzes, S. 3
+  - label: IV. Ungeschriebene Bundeskompetenzen
+    children:
+    - label: 1. Kraft Sachzusammenhangs - Mitregelung unerlässlich
+    - label: 2. Annexkompetenz - Vorbereitung und Durchführung
+    - label: 3. Kraft Natur der Sache - begriffsnotwendig nur Bundesregelung
+    hinweis: Enge Auslegung; bloße Zweckmäßigkeit genügt nicht.
+  - label: V. Residualkompetenz der Länder, Art. 70 Abs. 1 GG, Art. 30 GG
+  - label: VI. Rechtsfolge
+    hinweis: Fehlende Kompetenz macht das Gesetz formell verfassungswidrig und nichtig;
+      Art. 31 GG nur bei Kollision kompetenzgemäßer Normen; Art. 125a GG für Altrecht.
+faelle:
+- slug: or-fall-landesmietendeckel-kompetenz
+  title: Der Mietendeckel des Landes L
+  difficulty: 5
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  - BGB, amtliche Fassung
+  facts: >-
+    Angesichts stark steigender Mieten in den Großstädten beschließt der
+    Landtag des Landes L ein "Gesetz zur Begrenzung der Wohnraummieten". Es
+    friert die Mieten für nicht preisgebundenen Wohnraum für fünf Jahre auf dem
+    Stand eines Stichtags ein, legt für Neuvermietungen absolute Obergrenzen
+    je Quadratmeter fest, verpflichtet Vermieter zur Absenkung bereits
+    vereinbarter "überhöhter" Mieten und bewehrt Verstöße mit Bußgeldern, die
+    von den Bezirksämtern verhängt werden. In der Gesetzesbegründung heißt es,
+    das Gesetz sei eine öffentlich-rechtliche Regelung des Wohnungswesens,
+    für das die Länder seit der Föderalismusreform 2006 zuständig seien; das
+    Mietrecht des Bürgerlichen Gesetzbuchs bleibe unberührt. Der Bund hat in
+    den §§ 556d ff. BGB die zulässige Miethöhe bei Wiedervermietung in
+    angespannten Wohnungsmärkten begrenzt ("Mietpreisbremse") und in den
+    §§ 557 ff. BGB Mieterhöhungen im laufenden Mietverhältnis detailliert
+    geregelt; zugleich hat er den Ländern in § 556d Abs. 2 BGB die Befugnis
+    eingeräumt, durch Rechtsverordnung Gebiete mit angespanntem Wohnungsmarkt
+    zu bestimmen. Ein Viertel der Mitglieder des Bundestages hält das
+    Landesgesetz für kompetenzwidrig und beantragt die abstrakte
+    Normenkontrolle. Das Land L verteidigt sich mit dem Argument, das Gesetz
+    regele als öffentliches Recht eine andere Materie als das BGB und ergänze
+    dieses lediglich.
+  question: Ist das Gesetz des Landes L mit der Kompetenzordnung des Grundgesetzes
+    vereinbar?
+  steps:
+  - prompt: Ist der Antrag auf abstrakte Normenkontrolle zulässig?
+    erwartung: >-
+      Ja - ein Viertel der Mitglieder des Bundestages ist nach Art. 93 Abs. 1
+      Nr. 2 GG, § 76 Abs. 1 BVerfGG antragsberechtigt; Gegenstand ist ein
+      Landesgesetz, Prüfungsmaßstab das Grundgesetz; die Antragsteller halten
+      die Norm für nichtig. Eine Frist besteht nicht.
+  - prompt: Welcher Materie ist das Landesgesetz zuzuordnen? Kommt es auf die
+      öffentlich-rechtliche Ausgestaltung an?
+    erwartung: >-
+      Maßgeblich sind Regelungsgegenstand, Zweck und Wirkung, nicht die
+      Rechtsform. Das Gesetz regelt die zulässige Höhe der Miete in
+      privatrechtlichen Mietverhältnissen über ungebundenen Wohnraum - also
+      den Inhalt des Mietvertrags zwischen Privaten. Das ist bürgerliches
+      Recht i.S.d. Art. 74 Abs. 1 Nr. 1 GG. Dass das Land öffentlich-rechtliche
+      Instrumente (Verbote, Bußgelder) wählt, ändert die Materie nicht; sonst
+      könnte jede Kompetenzgrenze durch Wahl der Rechtsform umgangen werden.
+      Das "Wohnungswesen", das seit 2006 den Ländern zusteht, umfasst
+      Wohnraumförderung, Wohnungsbindung und Zweckentfremdung, nicht die
+      Regelung der Miethöhe im freien Wohnungsmarkt.
+  - prompt: Hat der Bund von seiner konkurrierenden Kompetenz Gebrauch gemacht,
+      sodass die Länder nach Art. 72 Abs. 1 GG gesperrt sind?
+    erwartung: >-
+      Der Bund hat die Miethöhe bei Neuvermietung (§§ 556d ff. BGB) und im
+      laufenden Mietverhältnis (§§ 557 ff. BGB) umfassend geregelt. Das
+      Regelungskonzept ist abschließend: Es balanciert Mieter- und
+      Vermieterinteressen austariert aus und eröffnet den Ländern nur die
+      punktuelle Befugnis, Gebiete mit angespanntem Wohnungsmarkt zu
+      bestimmen (§ 556d Abs. 2 BGB) - nicht, eigene Obergrenzen festzulegen.
+      Wo der Bund keine strengeren Grenzen gezogen hat, liegt ein
+      absichtsvoller Regelungsverzicht vor. Die Länder sind daher nach Art. 72
+      Abs. 1 GG gesperrt ("soweit"). Ein Rückgriff auf Art. 72 Abs. 3 GG
+      scheidet aus, da das bürgerliche Recht dort nicht genannt ist.
+  - prompt: Kann das Land L sich auf eine ungeschriebene Kompetenz oder auf eine
+      bloße "Ergänzung" des Bundesrechts berufen?
+    erwartung: >-
+      Nein. Ungeschriebene Kompetenzen kraft Sachzusammenhangs oder Annex
+      kommen nur dem Inhaber einer Hauptkompetenz zugute; das Land hat für
+      die Miethöhe keine Hauptkompetenz. Eine "Ergänzung" abschließenden
+      Bundesrechts durch strengere Landesvorschriften ist gerade das, was Art.
+      72 Abs. 1 GG ausschließt. Auch Art. 31 GG ist nicht der richtige
+      Maßstab, weil er kompetenzgemäßes Landesrecht voraussetzt.
+  - prompt: Wie lautet das Ergebnis und die Entscheidung des
+      Bundesverfassungsgerichts?
+    erwartung: >-
+      Das Land L hat das Gesetz ohne Gesetzgebungskompetenz erlassen; es ist
+      formell verfassungswidrig und damit nichtig. Das Bundesverfassungsgericht
+      erklärt es nach § 78 S. 1 BVerfGG für nichtig; die Entscheidung hat
+      Gesetzeskraft, § 31 Abs. 2 BVerfGG. Auf die materielle Vereinbarkeit mit
+      Art. 14 Abs. 1 GG kommt es nicht mehr an.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Zulässigkeit der abstrakten Normenkontrolle (Antragsberechtigung eines
+        Viertels der Bundestagsmitglieder, Landesgesetz als Gegenstand) kurz geprüft
+      weight: 1.0
+      required: false
+      norms:
+      - Art. 93 Abs. 1 Nr. 2 GG
+      - § 76 Abs. 1 BVerfGG
+      keywords:
+      - abstrakte Normenkontrolle
+      - Viertel
+      - Antragsberechtigung
+      card_slugs:
+      - or-vpr-ank-gegenstand-antragsberechtigung
+    - id: p2
+      label: Regel-Ausnahme-Verhältnis des Art. 70 Abs. 1 GG als Ausgangspunkt benannt
+      weight: 1.0
+      required: false
+      norms:
+      - Art. 70 Abs. 1 GG
+      keywords:
+      - Art. 70
+      - Länder
+      - Regel
+      card_slugs:
+      - or-ggk-grundsatz-art70-regel-ausnahme
+    - id: p3
+      label: Landesgesetz nach Gegenstand und Wirkung dem bürgerlichen Recht (Art.
+        74 Abs. 1 Nr. 1 GG) zugeordnet, Rechtsformargument des Landes zurückgewiesen
+      weight: 3.0
+      required: true
+      norms:
+      - Art. 74 Abs. 1 Nr. 1 GG
+      keywords:
+      - bürgerliches Recht
+      - Rechtsform
+      - Regelungsgegenstand
+      - Wohnungswesen
+      card_slugs:
+      - or-ggk-zuordnung-schwerpunkt-doppelkompetenz
+    - id: p4
+      label: Sperrwirkung des Art. 72 Abs. 1 GG durch abschließende Bundesregelung
+        der Miethöhe (einschließlich absichtsvollen Regelungsverzichts) begründet
+      weight: 3.0
+      required: true
+      norms:
+      - Art. 72 Abs. 1 GG
+      - § 556d BGB
+      keywords:
+      - Sperrwirkung
+      - abschließend
+      - Gebrauch gemacht
+      - Regelungsverzicht
+      card_slugs:
+      - or-ggk-konkurrierende-art72-abs1-sperrwirkung
+      - or-ggk-sperrwirkung-regelungsverzicht
+    - id: p5
+      label: Abweichungsgesetzgebung nach Art. 72 Abs. 3 GG und ungeschriebene Kompetenzen
+        als nicht einschlägig erkannt
+      weight: 1.0
+      required: false
+      norms:
+      - Art. 72 Abs. 3 GG
+      keywords:
+      - Abweichung
+      - Sachzusammenhang
+      - Annex
+      card_slugs:
+      - or-ggk-abweichungsgesetzgebung-art72-abs3
+      - or-ggk-ungeschriebene-kompetenzen
+    - id: p6
+      label: Art. 31 GG als unpassender Maßstab erkannt (setzt kompetenzgemäßes Landesrecht
+        voraus)
+      weight: 1.0
+      required: false
+      norms:
+      - Art. 31 GG
+      keywords:
+      - Art. 31
+      - Kollision
+      - kompetenzgemäß
+      card_slugs:
+      - or-ggk-pruefungsreihenfolge-rechtsfolge
+    - id: p7
+      label: 'Ergebnis: Landesgesetz mangels Kompetenz formell verfassungswidrig und
+        nichtig, Nichtigerklärung mit Gesetzeskraft'
+      weight: 1.0
+      required: true
+      norms:
+      - § 78 BVerfGG
+      - § 31 Abs. 2 BVerfGG
+      keywords:
+      - nichtig
+      - formell verfassungswidrig
+      - Gesetzeskraft
+      card_slugs:
+      - or-ggk-pruefungsreihenfolge-rechtsfolge
+      - or-vpr-nk-rechtsfolge-nichtigkeit-unvereinbarkeit

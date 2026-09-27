@@ -44,7 +44,7 @@ EXPECTATION = {
     ]
 }
 
-TEXT_OHNE_TREFFER = "Ein Text, der keinen der beiden Stichworte enthaelt."
+TEXT_OHNE_TREFFER = "Ein Text, der keinen der beiden Stichworte enthält."
 TEXT_MIT_BEIDEN_TREFFERN = "Hier stehen Anspruchsgrundlage433 und Rechtsfolgenkette drin."
 
 FERN_FAELLIG = timedelta(days=30)
@@ -174,7 +174,7 @@ def test_fall_ohne_card_slugs_bleibt_unveraendert(auth_client):
     """Regressionsschutz: bestehende Faelle ohne card_slugs verhalten sich wie zuvor."""
     response = auth_client.post(
         "/v1/cases/zr-fall-sonderpreis/submit",
-        json={"text": "Ein kurzer Text ohne jede Relevanz fuer den Fall."},
+        json={"text": "Ein kurzer Text ohne jede Relevanz für den Fall."},
     )
     assert response.status_code == 201, response.text
     # Keine card_slugs im echten Content-Fall -> keine Karten-Konsequenz, kein Fehler.

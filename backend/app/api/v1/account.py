@@ -137,7 +137,7 @@ def delete_account(payload: AccountDeleteIn, user: CurrentUser, db: DbSession) -
     """
     if not payload.confirm:
         raise HTTPException(
-            status.HTTP_400_BAD_REQUEST, "Bestaetigung erforderlich (confirm=true)"
+            status.HTTP_400_BAD_REQUEST, "Bestätigung erforderlich (confirm=true)"
         )
     if not verify_password(payload.password, user.password_hash):
         raise HTTPException(status.HTTP_401_UNAUTHORIZED, "Passwort ist falsch")
@@ -176,14 +176,14 @@ def redeem_code(payload: RedeemCodeIn, user: CurrentUser, db: DbSession) -> Rede
         .one_or_none()
     )
     if already_redeemed is not None:
-        raise HTTPException(status.HTTP_409_CONFLICT, "Code wurde bereits eingeloest")
+        raise HTTPException(status.HTTP_409_CONFLICT, "Code wurde bereits eingelöst")
 
     if code.max_redemptions is not None:
         redemption_count = (
             db.query(RedeemCodeRedemption).filter_by(redeem_code_id=code.id).count()
         )
         if redemption_count >= code.max_redemptions:
-            raise HTTPException(status.HTTP_410_GONE, "Code ist ausgeschoepft")
+            raise HTTPException(status.HTTP_410_GONE, "Code ist ausgeschöpft")
 
     base = _as_aware(user.pro_until) if user.pro_until is not None else now
     user.pro_until = max(base, now) + timedelta(days=code.pro_duration_days)

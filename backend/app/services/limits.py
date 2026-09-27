@@ -18,12 +18,30 @@ from sqlalchemy.orm import Session
 
 from app.config import Settings
 from app.core.timeutil import as_utc
-from app.models import AnalyzeCall, Card, Case, CaseAccess, Review, Topic, User, UserCard
+from app.models import (
+    AnalyzeCall,
+    Card,
+    Case,
+    CaseAccess,
+    LlmCorrectionCall,
+    Review,
+    Topic,
+    User,
+    UserCard,
+)
 
 FREE_DUE_CARDS_PER_DAY = 20
 FREE_CASES = 2
 FREE_ANALYZE_CALLS_PER_WEEK = 3
 ANALYZE_WINDOW = timedelta(days=7)
+
+# Kostenbremse LLM-Korrektur (SUB-310). 20/Monat ist keine neu erfundene
+# Zahl, sondern die in docs/19-kosten-preis-budget.md Abschnitt 5 bereits
+# festgelegte Fair-Use-Grenze ("Pro-Tarif mit Fair-Use von 20 Korrekturen pro
+# Monat, darueber gedrosselt statt abgerechnet") - gilt unabhaengig vom
+# Free/Pro-Status, denn die Kosten entstehen unabhaengig von der Paywall.
+LLM_CORRECTIONS_PER_USER_PER_MONTH = 20
+LLM_MONTHLY_WINDOW = timedelta(days=30)
 
 
 def is_free_tier(user: User, settings: Settings, *, now: datetime | None = None) -> bool:
@@ -124,14 +142,55 @@ def enforce_analyze_quota(db: Session, user: User, *, now: datetime) -> None:
     db.commit()
 
 
+def llm_user_quota_exceeded(db: Session, user: User, *, now: datetime) -> bool:
+    """Ob dieser Nutzer sein Fair-Use-Monatslimit fuer LLM-Korrekturen erreicht hat.
+
+    Anders als ``enforce_analyze_quota`` wirft diese Funktion keinen 403 -
+    eine Kostenbremse darf eine bezahlte Korrektur nie mit einem Fehler
+    quittieren, nur mit stiller Qualitaetsminderung (siehe ``get_evaluator``).
+    """
+    window_start = now - LLM_MONTHLY_WINDOW
+    count = (
+        db.query(LlmCorrectionCall)
+        .filter(LlmCorrectionCall.user_id == user.id, LlmCorrectionCall.created_at >= window_start)
+        .count()
+    )
+    return count >= LLM_CORRECTIONS_PER_USER_PER_MONTH
+
+
+def llm_global_budget_exhausted(db: Session, settings: Settings, *, now: datetime) -> bool:
+    """Ob das monatliche Gesamtbudget fuer LLM-Kosten (ueber alle Nutzer) erreicht ist.
+
+    Die realen Kosten je Aufruf sind ungemessen; das Budget wird deshalb ueber
+    den konservativen Schaetzwert ``settings.llm_cost_estimate_eur`` in eine
+    Aufrufobergrenze umgerechnet (siehe ``app/config.py``).
+    """
+    if settings.llm_cost_estimate_eur <= 0:
+        return False
+    window_start = now - LLM_MONTHLY_WINDOW
+    count = db.query(LlmCorrectionCall).filter(LlmCorrectionCall.created_at >= window_start).count()
+    max_calls = int(settings.llm_monthly_budget_eur / settings.llm_cost_estimate_eur)
+    return count >= max_calls
+
+
+def record_llm_correction_call(db: Session, user: User, *, now: datetime) -> None:
+    """Zaehlt einen an ``LLMEvaluator`` dispatchten Aufruf fuer beide Kostenbremsen."""
+    db.add(LlmCorrectionCall(user_id=user.id, created_at=now))
+    db.commit()
+
+
 __all__ = [
     "FREE_ANALYZE_CALLS_PER_WEEK",
     "FREE_CASES",
     "FREE_DUE_CARDS_PER_DAY",
+    "LLM_CORRECTIONS_PER_USER_PER_MONTH",
     "area_topic_slugs",
     "due_cards_quota_remaining",
     "enforce_analyze_quota",
     "enforce_case_access",
     "is_free_tier",
+    "llm_global_budget_exhausted",
+    "llm_user_quota_exceeded",
     "locked_area",
+    "record_llm_correction_call",
 ]

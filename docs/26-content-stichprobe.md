@@ -1,5 +1,23 @@
 # 26 — Menschliche Content-Stichprobe (Prüfpaket zu G3)
 
+> **Status 25.09.2026: nicht durchgeführt. Für v1.0 bewusst ausgesetzt.**
+>
+> Die Entscheidung über diese Stichprobe ist gefallen
+> ([SUB-225](/SUB/issues/SUB-225), Interaktion `f754f609`): **Release ohne
+> menschliche Stichprobe.** Es wurde also **kein einziges Thema** nach dem
+> unten stehenden Raster geprüft; kein Thema trägt eine menschliche
+> Prüfsignatur. Wer dieses Dokument findet, soll es nicht für einen
+> Prüfnachweis halten — es ist ein unbenutztes Formular.
+>
+> Das Restrisiko der Aussetzung steht in
+> [`docs/17-release-readiness.md`](17-release-readiness.md) Abschnitt 7.1.
+>
+> **Das Material bleibt gültig und ist für den Nachlauf nach dem Launch
+> gedacht.** Es verfällt nicht: Auswahl, Prüfraster und Zitatlisten beziehen
+> sich auf Themen, die im Bestand bleiben. Wer die Stichprobe später nachholt,
+> fängt hier an und trägt das Ergebnis wie in Abschnitt 7 beschrieben in
+> `redaktion.geprueft_von` / `geprueft_am` ein.
+
 **Zweck.** Dieses Dokument ist das Arbeitsmaterial für die einzige noch offene
 Position des Content-Freezes: die menschliche Stichprobe nach
 `docs/08-ki-redaktion.md`. Es **schließt das Gate nicht** — das kann nur eine
@@ -49,11 +67,17 @@ Ist-Menge, Zahl wird offen kommuniziert" — dieser Ausfallpfad adressiert die
 **Menge**, nicht die Prüftiefe.
 
 **Konsequenz für die Entscheidung:** Ob ein Release ohne Stichprobe
-dokumentenkonform ist, lässt sich aus `docs/08` nicht eindeutig beantworten.
-Das ist kein Grund, die Stichprobe zu überspringen, aber auch keiner, den
-Termin daran scheitern zu lassen — es ist eine offene Festlegung, die der
-Nutzer treffen muss. Sie sollte im Zuge der Entscheidung in `docs/08`
-vereindeutigt werden (Folgeaufgabe, nicht Teil der Stichprobe selbst).
+dokumentenkonform ist, ließ sich aus `docs/08` zum Zeitpunkt dieser Analyse
+nicht eindeutig beantworten. Das war kein Grund, die Stichprobe zu
+überspringen, aber auch keiner, den Termin daran scheitern zu lassen — es
+war eine offene Festlegung, die der Nutzer treffen musste.
+
+> **Nachtrag 25.09.2026 (`SUB-277`):** Nach der Entscheidung (Interaktion
+> `f754f609`, oben) ist `docs/08` vereindeutigt: Die Einleitung war die
+> zutreffende Aussage — die Stichprobe ist eine Empfehlung, kein technisches
+> Gate. Der widersprüchliche Wortlaut im Abschnitt „Grenze der Positivliste"
+> ist korrigiert, die Begründung (Stichprobe als einzige Instanz gegen
+> inhaltlich falsch zugeordnete Zitate) dort als Einschränkung erhalten.
 
 ## 3. Die Stichprobe: 6 Themen
 

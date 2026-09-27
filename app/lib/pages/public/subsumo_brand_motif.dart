@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 /// Abschnitt 5) - rein dekorativ und deshalb bewusst dezent (niedrige
 /// Deckkraft), keine Kontrastpruefung noetig, da kein Text/Informations-
 /// traeger. Nur fuer das Hero-Band der Landing-/Preisseite (SUB-241) - nicht
-/// in App-Screens, nicht in der "Ehrlich ueber den Umfang"-Sektion.
+/// in App-Screens, nicht in der "Was drin ist"-Sektion (vormals "Ehrlich über den Umfang").
 class SubsumoBrandMotif extends StatelessWidget {
   const SubsumoBrandMotif({this.color = Colors.white, this.opacity = 0.22, super.key});
 

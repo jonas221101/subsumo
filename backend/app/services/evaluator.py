@@ -19,10 +19,15 @@ from __future__ import annotations
 import json
 import re
 from dataclasses import asdict, dataclass, field
+from datetime import UTC, datetime
 from typing import Any, Protocol
+
+from sqlalchemy.orm import Session
 
 from app.config import Settings, get_settings
 from app.core.llm import LLMClient, get_llm_client
+from app.models import User
+from app.services import limits
 from app.services.gutachten import GutachtenReport
 
 # Notenskala der juristischen Staatspruefungen (JurNotSkalV): untere Grenze
@@ -83,7 +88,7 @@ class Evaluation:
     engine: str                   # "heuristik" | "llm:<model>"
     disclaimer: str = (
         "Lernhilfe, keine Rechtsberatung. Die Bewertung erfolgt gegen den "
-        "hinterlegten Erwartungshorizont dieses Uebungsfalls."
+        "hinterlegten Erwartungshorizont dieses Übungsfalls."
     )
 
     def to_dict(self) -> dict:
@@ -191,7 +196,7 @@ class HeuristicEvaluator:
                     weight=cp.weight,
                     hit=hit,
                     evidence=evidence,
-                    comment="" if hit else "Dieser Pruefpunkt wird nicht angesprochen.",
+                    comment="" if hit else "Dieser Prüfpunkt wird nicht angesprochen.",
                 )
             )
 
@@ -220,12 +225,12 @@ class HeuristicEvaluator:
             f"(gewichtet {content_ratio:.0%}), Strukturscore {structure.score}/100."
         )
         if missed_required:
-            summary += " Kernpruefpunkte fehlen: " + ", ".join(missed_required) + "."
+            summary += " Kernprüfpunkte fehlen: " + ", ".join(missed_required) + "."
         if gedeckelt:
             summary += (
                 f" Ohne KI-Korrektur wird bei {HEURISTIK_MAX_PUNKTE:.0f} Punkten "
-                "gedeckelt: Der Stichwortabgleich prueft, ob ein Punkt "
-                "angesprochen wurde, nicht ob die Argumentation ueberzeugt."
+                "gedeckelt: Der Stichwortabgleich prüft, ob ein Punkt "
+                "angesprochen wurde, nicht ob die Argumentation überzeugt."
             )
 
         return Evaluation(
@@ -270,17 +275,17 @@ class LLMEvaluator:
             for cp in checkpoints
         )
         return (
-            "Du korrigierst eine juristische Uebungsklausur. Bewerte AUSSCHLIESSLICH "
-            "anhand des folgenden Erwartungshorizonts. Erfinde keine Pruefpunkte und "
+            "Du korrigierst eine juristische Übungsklausur. Bewerte AUSSCHLIESSLICH "
+            "anhand des folgenden Erwartungshorizonts. Erfinde keine Prüfpunkte und "
             "keine Normen.\n\n"
             f"ERWARTUNGSHORIZONT:\n{horizont}\n\n"
             f"GUTACHTEN DES PRUEFLINGS:\n{text}\n\n"
             "Antworte ausschliesslich mit JSON nach diesem Schema:\n"
-            '{"checkpoints":[{"id":"...","hit":true,"evidence":"woertliches Zitat aus '
-            'dem Gutachten","comment":"knappe Begruendung"}],'
+            '{"checkpoints":[{"id":"...","hit":true,"evidence":"wörtliches Zitat aus '
+            'dem Gutachten","comment":"knappe Begründung"}],'
             '"summary":"zwei bis vier Saetze Gesamtrueckmeldung"}\n'
-            "Regeln: 'hit' nur true, wenn der Pruefpunkt inhaltlich tatsaechlich "
-            "behandelt wird, nicht bei blosser Erwaehnung. 'evidence' muss woertlich "
+            "Regeln: 'hit' nur true, wenn der Prüfpunkt inhaltlich tatsächlich "
+            "behandelt wird, nicht bei bloßer Erwähnung. 'evidence' muss wörtlich "
             "im Gutachten stehen."
         )
 
@@ -352,15 +357,33 @@ def llm_configured(settings: Settings | None = None) -> bool:
     return settings.llm_provider == "anthropic" and bool(settings.llm_api_key)
 
 
-def get_evaluator(*, consented: bool = True) -> Evaluator:
+def get_evaluator(
+    *, consented: bool = True, db: Session | None = None, user: User | None = None
+) -> Evaluator:
     """Waehlt den Evaluator. ``consented=False`` erzwingt die Heuristik.
 
     Ohne Einwilligung wird ``LLMEvaluator`` gar nicht erst konstruiert - der
     Nutzertext verlaesst das System damit strukturell nicht in Richtung
     Provider, nicht nur durch ein Verhalten, das man auch vergessen koennte
     (SUB-133, Einwilligungs-Gate vor LLM-Versand).
+
+    Kostenbremse (SUB-310): ist entweder das Fair-Use-Limit des Nutzers oder
+    das globale Monatsbudget erreicht, wird ebenfalls lautlos auf die
+    Heuristik zurueckgefallen - kein Fehler, kein 5xx, der Nutzer merkt nur
+    eine andere Korrekturqualitaet (siehe ``app/services/limits.py``). Ohne
+    ``db``/``user`` (z. B. der Kalibrierungs-Harness in
+    ``scripts/kalibrierung_cli.py``, der ausserhalb eines Requests laeuft)
+    greift die Kostenbremse nicht, da es dort keinen abzurechnenden Nutzer
+    gibt.
     """
     settings = get_settings()
-    if llm_configured(settings) and consented:
-        return LLMEvaluator()
-    return HeuristicEvaluator()
+    if not (llm_configured(settings) and consented):
+        return HeuristicEvaluator()
+    if db is not None and user is not None:
+        now = datetime.now(UTC)
+        if limits.llm_user_quota_exceeded(db, user, now=now) or limits.llm_global_budget_exhausted(
+            db, settings, now=now
+        ):
+            return HeuristicEvaluator()
+        limits.record_llm_correction_call(db, user, now=now)
+    return LLMEvaluator()

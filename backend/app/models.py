@@ -230,7 +230,7 @@ class Submission(Base):
 class CaseAccess(Base):
     """Erster Zugriff eines Nutzers auf einen Fall.
 
-    Grundlage fuer das Free-Tier-Limit "2 gefuehrte Faelle" (docs/20, Abschnitt
+    Grundlage fuer das Free-Tier-Limit "2 geführte Fälle" (docs/20, Abschnitt
     4 B2): bereits gesehene Faelle bleiben erreichbar, nur der jeweils naechste
     *neue* Fall zaehlt gegen das Kontingent.
     """
@@ -252,6 +252,26 @@ class AnalyzeCall(Base):
     """
 
     __tablename__ = "analyze_calls"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, index=True
+    )
+
+
+class LlmCorrectionCall(Base):
+    """Protokolliert jeden an ``LLMEvaluator`` dispatchten Bewertungsaufruf.
+
+    Grundlage der Kostenbremse (SUB-310, docs/19-kosten-preis-budget.md
+    Abschnitt 5): sowohl das Fair-Use-Limit je Nutzer als auch das globale
+    Monatsbudget zaehlen ueber diese Tabelle, per rollierendem 30-Tage-Fenster
+    wie ``AnalyzeCall``. Ein Eintrag heisst nur "an den LLM-Pfad dispatcht",
+    nicht "erfolgreich abgerechnet" - der interne Netzwerk-Fallback in
+    ``LLMEvaluator.evaluate`` faengt einzelne Fehlschlaege unabhaengig davon ab.
+    """
+
+    __tablename__ = "llm_correction_calls"
 
     id: Mapped[int] = mapped_column(primary_key=True)
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
