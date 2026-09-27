@@ -7,6 +7,7 @@ import 'pages/account_page.dart';
 import 'pages/cases_page.dart';
 import 'pages/checkout_page.dart';
 import 'pages/dashboard_page.dart';
+import 'pages/examen_page.dart';
 import 'pages/login_page.dart';
 import 'pages/public/public_landing_page.dart';
 import 'pages/public/public_legal_page.dart';
@@ -120,6 +121,10 @@ class _HomeShellState extends State<HomeShell> {
     (icon: Icons.style_outlined, label: 'Karten'),
     (icon: Icons.account_tree_outlined, label: 'Schemata'),
     (icon: Icons.gavel_outlined, label: 'Faelle'),
+    // Examen-Reiter (docs/32-examensvorbereitung.md): Profil, Examensreife,
+    // Kurs-Decks, Landesrecht, Klausurrhythmus - bewusst als eigener Tab
+    // statt als Unterseite des Dashboards.
+    (icon: Icons.school_outlined, label: 'Examen'),
   ];
 
   Widget get _page => switch (_index) {
@@ -129,7 +134,8 @@ class _HomeShellState extends State<HomeShell> {
             onToggleFocusMode: () => setState(() => _focusMode = !_focusMode),
           ),
         2 => const SchemataPage(),
-        _ => const CasesPage(),
+        3 => const CasesPage(),
+        _ => const ExamenPage(),
       };
 
   @override

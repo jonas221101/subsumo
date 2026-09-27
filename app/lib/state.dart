@@ -44,6 +44,18 @@ class PendingReview {
       };
 }
 
+/// Aktiver Filter fuer den Karten-Stapel (Examen-Reiter, docs/32 Abschnitt
+/// 3.3): entweder ein Kurs-Deck (`deck`) oder ein einzelnes Thema (`topic`,
+/// z. B. ein Landesrecht-Thema). Ohne Filter laeuft die normale Lernschleife.
+class DeckFilter {
+  const DeckFilter({required this.title, this.deck, this.topic})
+      : assert(deck != null || topic != null, 'DeckFilter braucht deck oder topic');
+
+  final String title;
+  final String? deck;
+  final String? topic;
+}
+
 String _newClientId() {
   final random = Random.secure();
   final bytes = List<int>.generate(16, (_) => random.nextInt(256));
@@ -75,6 +87,12 @@ class AppState extends ChangeNotifier {
   Map<String, dynamic>? user;
   Map<String, dynamic>? coverage;
   List<Map<String, dynamic>> dueCards = [];
+
+  /// Antwort von `GET /v1/examen/cockpit` (Examen-Reiter, docs/32).
+  Map<String, dynamic>? examenCockpit;
+
+  /// Solange gesetzt, laedt [loadDueCards] nur Karten dieses Decks/Themas.
+  DeckFilter? activeDeck;
 
   /// Letzter vollstaendig bestaetigter Karten-Snapshot. Manifest und Snapshot
   /// werden gemeinsam gespeichert, damit ein Schreibfehler nie einen neuen
@@ -328,6 +346,8 @@ class AppState extends ChangeNotifier {
     api.setToken(null);
     user = null;
     coverage = null;
+    examenCockpit = null;
+    activeDeck = null;
     dueCards = [];
     dueCardsFromCache = false;
     final prefs = await SharedPreferences.getInstance();
@@ -342,6 +362,34 @@ class AppState extends ChangeNotifier {
         coverage = await api.coverage();
       });
 
+  // --- Examensvorbereitung (docs/32-examensvorbereitung.md) -----------------
+
+  Future<bool> loadExamen() => _guard(() async {
+        examenCockpit = await api.examenCockpit();
+      });
+
+  /// Speichert das Examensprofil (Bundesland, Universitaet, Examensdatum,
+  /// Tagesbudget) und laedt das Cockpit neu - das Bundesland aendert, welche
+  /// Karten und Gewichte gelten, deshalb nie nur lokal aktualisieren.
+  Future<bool> saveProfile(Map<String, dynamic> fields) => _guard(() async {
+        user = await api.updateProfile(fields);
+        examenCockpit = await api.examenCockpit();
+      });
+
+  /// Startet die Lernschleife fuer ein Deck oder Thema; [clearDeck] beendet
+  /// den Filter wieder. Bewusst ohne eigenen Kartenstapel: derselbe
+  /// [dueCards]-Stapel, dieselbe Outbox, derselbe Sync.
+  Future<bool> startDeck(DeckFilter filter) {
+    activeDeck = filter;
+    return loadDueCards();
+  }
+
+  /// Ohne `notifyListeners`: wird beim Verlassen der Deck-Route aufgerufen,
+  /// die naechste Karten-Ansicht laedt ohnehin neu.
+  void clearDeck() {
+    activeDeck = null;
+  }
+
   /// Laedt faellige Karten. Schlaegt der Netzaufruf fehl, bleibt der zuletzt
   /// zwischengespeicherte Stapel sichtbar (siehe [dueCardsFromCache]) statt
   /// eines leeren Bildschirms - Offline-Lernen ist der Regelfall, nicht die
@@ -351,9 +399,12 @@ class AppState extends ChangeNotifier {
     error = null;
     notifyListeners();
     try {
-      dueCards = await api.dueCards(limit: 30);
+      final filter = activeDeck;
+      dueCards = await api.dueCards(limit: 30, deck: filter?.deck, topic: filter?.topic);
       dueCardsFromCache = false;
-      await _persistDueCardsCache();
+      // Ein gefilterter Stapel gehoert nicht in den Offline-Cache - der
+      // naechste Offline-Start soll den vollen Stapel zeigen, nicht ein Deck.
+      if (filter == null) await _persistDueCardsCache();
       return true;
     } on ApiException catch (e) {
       error = e.message;
