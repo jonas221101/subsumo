@@ -3,8 +3,9 @@
 from __future__ import annotations
 
 from datetime import date, datetime
+from typing import Literal
 
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, EmailStr, Field, field_validator
 
 
 class RegisterIn(BaseModel):
@@ -169,6 +170,62 @@ class CoverageOut(BaseModel):
     topics: list[CoverageTopicOut]
 
 
+class EigenesDeck(BaseModel):
+    """Vom Nutzer zusammengestelltes Deck (docs/33 Abschnitt 4.2)."""
+
+    slug: str = Field(pattern=r"^mein-[a-z0-9-]{1,60}$")
+    title: str = Field(min_length=1, max_length=120)
+    topic_slugs: list[str] = Field(min_length=1, max_length=60)
+
+
+VALID_ZIELE = ("orientierung", "zwischenpruefung", "semesterklausur", "examen", "wiederholung")
+VALID_AREAS_LITERAL = ("zivilrecht", "strafrecht", "oeffentliches-recht")
+
+
+class LernprofilIn(BaseModel):
+    """Lernprofil (docs/33-individualisierung.md). Jedes Feld hat einen Default,
+    damit ein leeres Profil dasselbe Verhalten wie vor der Individualisierung
+    ergibt."""
+
+    semester: int | None = Field(default=None, ge=1, le=20)
+    ziel: Literal[VALID_ZIELE] | None = None
+    zielnote: int | None = Field(default=None, ge=4, le=18)
+    schwerpunkte: list[Literal[VALID_AREAS_LITERAL]] = Field(default_factory=list)
+    ruhetage: list[int] = Field(default_factory=list)
+    klausur_wochentag: int = Field(default=5, ge=0, le=6)  # 0 = Montag, 5 = Samstag
+    wochenklausur: bool = True
+    neue_karten_pro_tag: int = Field(default=10, ge=0, le=50)
+    sicherheitsniveau: Literal["kompakt", "standard", "sicher"] = "standard"
+    themen_fokus: list[str] = Field(default_factory=list, max_length=100)
+    themen_pausiert: list[str] = Field(default_factory=list, max_length=200)
+    eigene_decks: list[EigenesDeck] = Field(default_factory=list, max_length=20)
+
+    @field_validator("ruhetage")
+    @classmethod
+    def _ruhetage_gueltig(cls, value: list[int]) -> list[int]:
+        tage = sorted({int(t) for t in value})
+        if any(t < 0 or t > 6 for t in tage):
+            raise ValueError("ruhetage: Wochentage 0 (Montag) bis 6 (Sonntag)")
+        if len(tage) >= 7:
+            raise ValueError("ruhetage: mindestens ein Lerntag pro Woche")
+        return tage
+
+    @field_validator("schwerpunkte")
+    @classmethod
+    def _schwerpunkte_eindeutig(cls, value: list[str]) -> list[str]:
+        return list(dict.fromkeys(value))
+
+    @field_validator("themen_fokus", "themen_pausiert")
+    @classmethod
+    def _slugs_eindeutig(cls, value: list[str]) -> list[str]:
+        return list(dict.fromkeys(s.strip() for s in value if s.strip()))
+
+
+class LernprofilOut(LernprofilIn):
+    eingerichtet: bool = False
+    persona: str = ""
+
+
 class AccountExportAccountOut(BaseModel):
     id: int
     email: str
@@ -176,6 +233,9 @@ class AccountExportAccountOut(BaseModel):
     exam_date: datetime | None = None
     daily_minutes: int
     created_at: datetime
+    bundesland: str | None = None
+    universitaet_slug: str | None = None
+    lernprofil: dict = {}
     # Entitlement (Release G2) - Zahlungsanbieter-Referenzen, keine Zahlungsdaten selbst.
     stripe_customer_id: str | None = None
     stripe_subscription_id: str | None = None

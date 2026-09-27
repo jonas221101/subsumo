@@ -37,11 +37,13 @@ class TopicInput:
     title: str
     relevance: int = 3           # 1-5, kuratierte Pruefungsrelevanz
     mastery: float = 0.0         # 0..1, aus dem Kartenzustand abgeleitet
+    # Individuelles Gewicht aus dem Lernprofil (docs/33): Fokus/Schwerpunkt > 1.
+    weight: float = 1.0
 
     @property
     def priority(self) -> float:
-        """Hohe Relevanz und geringe Beherrschung zuerst."""
-        return self.relevance * (1.0 - min(max(self.mastery, 0.0), 1.0))
+        """Hohe Relevanz und geringe Beherrschung zuerst, individuell gewichtet."""
+        return self.relevance * (1.0 - min(max(self.mastery, 0.0), 1.0)) * self.weight
 
     @property
     def budget_minutes(self) -> int:
@@ -150,11 +152,15 @@ def generate_plan(
     seconds_per_card: int = 20,
     rest_weekdays: set[int] | None = None,
     horizon_days: int | None = None,
+    klausur_weekday: int = KLAUSUR_WEEKDAY,
+    klausuren: bool = True,
 ) -> StudyPlan:
     """Erzeugt einen Tagesplan von ``start`` bis ``exam_date``.
 
     ``due_forecast[i]`` ist die Zahl der an Tag ``i`` faellig werdenden Karten
-    (aus :func:`app.services.srs.forecast_load`).
+    (aus :func:`app.services.srs.forecast_load`). ``klausur_weekday`` und
+    ``klausuren`` kommen aus dem Lernprofil (docs/33): wer samstags arbeitet,
+    schreibt mittwochs; wer keine Wochenklausur will, bekommt keine.
     """
     if exam_date <= start:
         raise ValueError("Das Examensdatum muss nach dem Startdatum liegen.")
@@ -200,7 +206,7 @@ def generate_plan(
         budget = daily_minutes
 
         # 1) Klausurtag - verdraengt alles andere, bewusst ueber Budget.
-        if current.weekday() == KLAUSUR_WEEKDAY and phase != PHASE_GRUNDLAGEN:
+        if klausuren and current.weekday() == klausur_weekday and phase != PHASE_GRUNDLAGEN:
             minutes = 300 if phase == PHASE_ENDSPURT else 120
             day.blocks.append(
                 PlanBlock("klausur", f"Klausur unter Examensbedingungen ({minutes} min)", minutes)

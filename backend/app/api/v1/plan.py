@@ -11,7 +11,7 @@ from app.config import get_settings
 from app.core.timeutil import as_utc
 from app.models import UserCard
 from app.schemas import PlanIn
-from app.services import examen, srs
+from app.services import examen, lernprofil, srs
 from app.services.planner import generate_plan
 
 router = APIRouter(prefix="/plan", tags=["plan"])
@@ -53,6 +53,9 @@ def create_plan(payload: PlanIn, user: CurrentUser, db: DbSession) -> dict:
     ]
     due_forecast = srs.forecast_load(card_states, days=min(horizon, 400), now=datetime.now(UTC))
 
+    # Rhythmus aus dem Lernprofil (docs/33); explizite Ruhetage im Aufruf
+    # gewinnen, damit ein Client den Plan auch ad hoc durchrechnen kann.
+    profil = lernprofil.get_profil(user)
     plan = generate_plan(
         topics,
         start=date.today(),
@@ -60,7 +63,9 @@ def create_plan(payload: PlanIn, user: CurrentUser, db: DbSession) -> dict:
         daily_minutes=daily,
         due_forecast=due_forecast,
         seconds_per_card=settings.seconds_per_card,
-        rest_weekdays=set(payload.rest_weekdays),
+        rest_weekdays=set(payload.rest_weekdays or profil.ruhetage),
         horizon_days=payload.horizon_days,
+        klausur_weekday=profil.klausur_wochentag,
+        klausuren=profil.wochenklausur,
     )
     return plan.to_dict()

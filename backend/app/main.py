@@ -19,6 +19,7 @@ from app.api.v1 import (
     examen,
     gutachten,
     learn,
+    lernprofil,
     plan,
     public,
 )
@@ -91,6 +92,7 @@ def create_app() -> FastAPI:
         gutachten.router,
         plan.router,
         examen.router,
+        lernprofil.router,
         public.router,
         billing.router,
     ):

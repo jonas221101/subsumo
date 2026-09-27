@@ -19,7 +19,7 @@ from app.schemas import (
     ReviewBatchOut,
     ReviewResultOut,
 )
-from app.services import examen, limits, srs
+from app.services import examen, lernprofil, limits, srs
 
 router = APIRouter(tags=["lernen"])
 
@@ -45,7 +45,7 @@ def due_cards(
     user: CurrentUser,
     db: DbSession,
     limit: int = Query(default=20, ge=1, le=200),
-    new_limit: int = Query(default=10, ge=0, le=100),
+    new_limit: int | None = Query(default=None, ge=0, le=100),
     topic: str | None = None,
     deck: str | None = None,
 ) -> list[DueCardOut]:
@@ -65,7 +65,13 @@ def due_cards(
     now = datetime.now(UTC)
     settings = get_settings()
 
-    sichtbar = examen.visible_topic_slugs(db, user)
+    # Lernprofil (docs/33): pausierte Themen fallen weg, neue Karten pro Tag
+    # kommen aus dem Profil, Fokus/Schwerpunkt sortiert neue Karten nach vorn.
+    profil = lernprofil.get_profil(user)
+    if new_limit is None:
+        new_limit = profil.neue_karten_pro_tag
+
+    sichtbar = examen.visible_topic_slugs(db, user) - lernprofil.pausierte_themen(profil)
     if deck is not None:
         deck_topics = examen.deck_card_topic_slugs(db, user, deck)
         if deck_topics is None:
@@ -120,11 +126,18 @@ def due_cards(
             neu_query = neu_query.filter(Card.topic_slug == topic)
         if area_topics is not None:
             neu_query = neu_query.filter(Card.topic_slug.in_(area_topics))
-        # Neue Karten nach Pruefungsrelevanz des Themas, nicht alphabetisch.
-        relevanz = {t.slug: t.relevance for t in db.query(Topic).all()}
+        # Neue Karten nach Pruefungsrelevanz des Themas, nicht alphabetisch -
+        # individuell gewichtet (Fokus-Thema, Schwerpunkt-Rechtsgebiet).
+        gewicht = {
+            t.slug: t.relevance * lernprofil.topic_weight(profil, t.slug, t.area)
+            for t in db.query(Topic).all()
+        }
+        # Ueber alle ungesehenen Karten sortieren, nicht ueber eine
+        # Vorauswahl - sonst laeuft ein Fokus-Thema am Ende des Alphabets
+        # an der Gewichtung vorbei. Der Kartenbestand ist klein genug.
         neu = sorted(
-            neu_query.limit(rest * 10).all(),
-            key=lambda c: (-relevanz.get(c.topic_slug, 3), c.slug),
+            neu_query.all(),
+            key=lambda c: (-gewicht.get(c.topic_slug, 3.0), c.slug),
         )[:rest]
         result.extend(
             DueCardOut(
@@ -154,6 +167,9 @@ def submit_reviews(payload: ReviewBatchIn, user: CurrentUser, db: DbSession) -> 
     applied = duplicates = 0
     unknown: list[str] = []
     results: list[ReviewResultOut] = []
+    # Sicherheitsniveau aus dem Lernprofil verschiebt die Ziel-Retention
+    # (docs/33 Abschnitt 4.3) - identisch fuer jede Karte dieses Batches.
+    profil = lernprofil.get_profil(user)
 
     for item in sorted(payload.reviews, key=lambda r: r.reviewed_at):
         if db.query(Review).filter_by(client_id=item.client_id).first():
@@ -174,7 +190,13 @@ def submit_reviews(payload: ReviewBatchIn, user: CurrentUser, db: DbSession) -> 
         if reviewed_at.tzinfo is None:
             reviewed_at = reviewed_at.replace(tzinfo=UTC)
 
-        new_state = srs.review(_to_state(row), item.rating, now=reviewed_at, card_type=card.type)
+        new_state = srs.review(
+            _to_state(row),
+            item.rating,
+            now=reviewed_at,
+            card_type=card.type,
+            desired_retention=lernprofil.retention_for(profil, card.type),
+        )
         row.stability = new_state.stability
         row.difficulty = new_state.difficulty
         row.due = new_state.due

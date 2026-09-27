@@ -70,6 +70,10 @@ class User(Base):
     # verhaelt sich die App wie vor dem Examen-Reiter.
     bundesland: Mapped[str | None] = mapped_column(String(2), default=None, index=True)
     universitaet_slug: Mapped[str | None] = mapped_column(String(160), default=None)
+    # Lernprofil (docs/33-individualisierung.md): Semester, Ziel, Schwerpunkte,
+    # Rhythmus, Fokus-/Pause-Themen, eigene Decks. Als JSON, validiert ueber
+    # app.schemas.LernprofilIn - leer = nicht eingerichtet, Defaults greifen.
+    lernprofil: Mapped[dict] = mapped_column(JSON, default=dict)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
     # Entitlement (Release G2, siehe docs/20-release-g2-bezahlstrecke.md Abschnitt 4 B1).

@@ -39,7 +39,7 @@ from app.models import (
     User,
     UserCard,
 )
-from app.services import srs
+from app.services import lernprofil, srs
 from app.services.content import landesrecht_topic_slug
 from app.services.planner import (
     KLAUSUR_WEEKDAY,
@@ -163,17 +163,25 @@ def topic_progress(
 
 
 def topic_inputs(db: Session, user: User) -> list[TopicInput]:
-    """Eingabe fuer :func:`app.services.planner.generate_plan` - nur sichtbare Themen."""
-    return [
-        TopicInput(
-            slug=p.slug,
-            area=p.area,
-            title=p.title,
-            relevance=p.relevance,
-            mastery=p.mastery,
+    """Eingabe fuer :func:`app.services.planner.generate_plan` - nur sichtbare
+    Themen, individuell gewichtet, pausierte Themen ausgenommen (docs/33)."""
+    profil = lernprofil.get_profil(user)
+    inputs: list[TopicInput] = []
+    for p in topic_progress(db, user).values():
+        weight = lernprofil.topic_weight(profil, p.slug, p.area)
+        if weight <= 0:
+            continue
+        inputs.append(
+            TopicInput(
+                slug=p.slug,
+                area=p.area,
+                title=p.title,
+                relevance=p.relevance,
+                mastery=p.mastery,
+                weight=weight,
+            )
         )
-        for p in topic_progress(db, user).values()
-    ]
+    return inputs
 
 
 # --------------------------------------------------------------------------- #
@@ -323,12 +331,51 @@ def resolve_deck(
 def deck_card_topic_slugs(db: Session, user: User, deck_slug: str) -> list[str] | None:
     """Themen-Slugs eines Decks fuer den ``deck``-Filter von ``/cards/due``.
 
-    ``None`` bedeutet: unbekanntes Deck (der Aufrufer antwortet 404).
+    Kurs-Decks aus dem Katalog oder eigene Decks des Nutzers (``mein-*``,
+    docs/33 Abschnitt 4.2). ``None`` bedeutet: unbekanntes Deck (404).
     """
+    if deck_slug.startswith("mein-"):
+        eigenes = lernprofil.eigenes_deck(lernprofil.get_profil(user), deck_slug)
+        return list(eigenes["topic_slugs"]) if eigenes else None
     kurs = db.query(Kurs).filter_by(slug=deck_slug).one_or_none()
     if kurs is None:
         return None
     return deck_topic_slugs(kurs, user.bundesland)
+
+
+def resolve_eigenes_deck(
+    db: Session, user: User, deck: dict, *, progress: dict[str, TopicProgress]
+) -> dict:
+    """Eigenes Deck mit Kartenzustand - dieselbe Form wie ein Kurs-Deck."""
+    topics = [progress[s] for s in deck["topic_slugs"] if s in progress]
+    slugs = [t.slug for t in topics]
+    cases = (
+        db.query(Case).filter(Case.topic_slug.in_(slugs)).order_by(Case.difficulty, Case.slug).all()
+        if slugs
+        else []
+    )
+    cards_total = sum(t.cards_total for t in topics)
+    cards_mature = sum(t.cards_mature for t in topics)
+    return {
+        "slug": deck["slug"],
+        "title": deck["title"],
+        "eigenes": True,
+        "topics": [t.to_dict() for t in topics],
+        "cases": [
+            {
+                "slug": c.slug,
+                "title": c.title,
+                "topic_slug": c.topic_slug,
+                "difficulty": c.difficulty,
+                "minutes": c.minutes,
+            }
+            for c in cases
+        ],
+        "cards_total": cards_total,
+        "cards_mature": cards_mature,
+        "cards_due": sum(t.cards_due for t in topics),
+        "mastery": round(cards_mature / cards_total, 3) if cards_total else 0.0,
+    }
 
 
 def university_courses(db: Session, uni: Universitaet | None) -> list[dict]:
@@ -595,9 +642,54 @@ def next_klausur(
     }
 
 
-def next_klausurtag(today: date) -> date:
-    delta = (KLAUSUR_WEEKDAY - today.weekday()) % 7
+def next_klausurtag(today: date, weekday: int = KLAUSUR_WEEKDAY) -> date:
+    """Naechster Klausurtag ab morgen; heute selbst zaehlt nicht (siehe
+    :func:`ist_klausurtag`)."""
+    delta = (weekday - today.weekday()) % 7
     return today + timedelta(days=delta or 7)
+
+
+def ist_klausurtag(today: date, weekday: int = KLAUSUR_WEEKDAY) -> bool:
+    return today.weekday() == weekday
+
+
+def schwaechstes_thema(progress: dict[str, TopicProgress], profil) -> tuple[str, str, float] | None:
+    """Thema mit der hoechsten individuellen Prioritaet (Relevanz x Luecke x Gewicht)."""
+    best: tuple[float, str, str, float] | None = None
+    for p in progress.values():
+        weight = lernprofil.topic_weight(profil, p.slug, p.area)
+        if weight <= 0 or p.cards_total == 0:
+            continue
+        prio = p.relevance * (1.0 - p.mastery) * weight
+        if best is None or prio > best[0]:
+            best = (prio, p.slug, p.title, p.mastery)
+    return None if best is None else (best[1], best[2], best[3])
+
+
+def semesterstoff(decks: list[dict], semester: int | None) -> dict | None:
+    """Reife ueber alle Kurs-Decks bis zum aktuellen Semester (docs/33 Abschnitt 4.4)."""
+    if semester is None:
+        return None
+    relevant = [
+        d
+        for d in decks
+        if not d.get("examenskurs") and (d.get("semester_default") or 99) <= semester
+    ]
+    topics: dict[str, dict] = {}
+    for d in relevant:
+        for t in d.get("topics") or []:
+            topics[t["slug"]] = t
+    total = sum(t["cards_total"] for t in topics.values())
+    mature = sum(t["cards_mature"] for t in topics.values())
+    return {
+        "semester": semester,
+        "decks": [d["slug"] for d in relevant],
+        "topics_total": len(topics),
+        "cards_total": total,
+        "cards_mature": mature,
+        "cards_due": sum(t["cards_due"] for t in topics.values()),
+        "mastery": round(mature / total, 3) if total else 0.0,
+    }
 
 
 def phase_info(user: User, today: date) -> dict | None:

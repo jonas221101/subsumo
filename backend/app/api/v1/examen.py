@@ -16,7 +16,7 @@ from app.api.deps import CurrentUser, DbSession
 from app.config import get_settings
 from app.core.timeutil import as_utc
 from app.models import Bundesland, Kurs, Universitaet, UserCard
-from app.services import examen, srs
+from app.services import examen, lernprofil, srs
 from app.services.planner import generate_plan
 
 router = APIRouter(prefix="/examen", tags=["examen"])
@@ -108,6 +108,7 @@ def cockpit(
         if user.universitaet_slug
         else None
     )
+    profil = lernprofil.get_profil(user)
     progress = examen.topic_progress(db, user, now=now)
     reife = examen.readiness(db, user, progress=progress, land=land, now=now)
     phase = examen.phase_info(user, today)
@@ -116,7 +117,42 @@ def cockpit(
         examen.resolve_deck(db, user, kurs, progress=progress)
         for kurs in _kurse_in_reihenfolge(db, uni)
     ]
+    eigene_decks = [
+        examen.resolve_eigenes_deck(db, user, d.model_dump(), progress=progress)
+        for d in profil.eigene_decks
+    ]
     landesrecht = [p.to_dict() for p in progress.values() if p.bundesland is not None]
+    schwachstellen = examen.weak_spots(db, user)
+    schwachstellen["technik_tipp"] = lernprofil.technik_tipp(schwachstellen["strukturfehler"])
+    klausur_vorschlag = examen.next_klausur(
+        db, user, progress=progress, readiness_by_area=reife["by_area"]
+    )
+    persona = lernprofil.persona(profil, user)
+    pausiert = lernprofil.pausierte_themen(profil)
+    naechster_schritt = lernprofil.next_step(
+        lernprofil.NextStepInput(
+            eingerichtet=lernprofil.ist_eingerichtet(user),
+            persona=persona,
+            due_cards=sum(p.cards_due for p in progress.values() if p.slug not in pausiert),
+            decks=[
+                {
+                    "slug": d["slug"],
+                    "title": d["title"],
+                    "semester": d.get("semester_default"),
+                    "mastery": d.get("mastery", 0.0),
+                    "examenskurs": d.get("examenskurs", False),
+                }
+                for d in decks
+            ],
+            semester=profil.semester,
+            schwachstellen=schwachstellen["themen"],
+            faelle_je_thema=lernprofil.faelle_je_thema(db, set(progress) - pausiert),
+            schwaechstes_thema=examen.schwaechstes_thema(progress, profil),
+            klausur_heute=profil.wochenklausur
+            and examen.ist_klausurtag(today, profil.klausur_wochentag),
+            klausur_vorschlag=klausur_vorschlag,
+        )
+    )
 
     plan_days_out: list[dict] = []
     if user.exam_date is not None and phase and phase["tage_bis_examen"] > 0:
@@ -146,7 +182,10 @@ def cockpit(
             daily_minutes=user.daily_minutes or settings.default_daily_minutes,
             due_forecast=forecast,
             seconds_per_card=settings.seconds_per_card,
+            rest_weekdays=set(profil.ruhetage),
             horizon_days=plan_days,
+            klausur_weekday=profil.klausur_wochentag,
+            klausuren=profil.wochenklausur,
         )
         plan_days_out = plan.to_dict()["days"]
 
@@ -166,22 +205,36 @@ def cockpit(
             "daily_minutes": user.daily_minutes,
             "vollstaendig": bool(land and user.exam_date),
         },
+        "lernprofil": {
+            **profil.model_dump(),
+            "eingerichtet": lernprofil.ist_eingerichtet(user),
+            "persona": persona,
+            "persona_label": lernprofil.PERSONA_LABELS.get(persona, persona),
+        },
+        "naechster_schritt": naechster_schritt,
+        "semesterstoff": examen.semesterstoff(decks, profil.semester),
+        "themen": [
+            {"slug": p.slug, "title": p.title, "area": p.area, "bundesland": p.bundesland}
+            for p in progress.values()
+        ],
         "phase": phase,
         "examensreife": reife,
         "bundesland": examen.bundesland_profile(db, land) if land else None,
         "kurs_decks": decks,
+        "eigene_decks": eigene_decks,
         "landesrecht_deck": {
             "topics": landesrecht,
             "cards_total": sum(t["cards_total"] for t in landesrecht),
             "cards_mature": sum(t["cards_mature"] for t in landesrecht),
             "cards_due": sum(t["cards_due"] for t in landesrecht),
         },
-        "schwachstellen": examen.weak_spots(db, user),
+        "schwachstellen": schwachstellen,
         "naechste_klausur": {
-            "datum": examen.next_klausurtag(today).isoformat(),
-            "vorschlag": examen.next_klausur(
-                db, user, progress=progress, readiness_by_area=reife["by_area"]
-            ),
+            "datum": examen.next_klausurtag(today, profil.klausur_wochentag).isoformat(),
+            "heute": profil.wochenklausur
+            and examen.ist_klausurtag(today, profil.klausur_wochentag),
+            "aktiv": profil.wochenklausur,
+            "vorschlag": klausur_vorschlag,
         },
         "checkliste": examen.checkliste(land, phase),
         "plan": plan_days_out,
