@@ -89,6 +89,17 @@ Spalten). Praktisch bedeutet das:
   Schema-Aendernden nicht uebersehen wird.
 - Backup **vor** jedem Deploy ziehen (Abschnitt 6), nicht danach — sonst ist
   im Fehlerfall auch das Backup schon vom fehlerhaften Deploy betroffen.
+- **Offene Spaltenaenderungen:** Der Examen-Reiter (docs/32-examensvorbereitung.md)
+  bringt `users.bundesland`, `users.universitaet_slug` und `topics.bundesland`.
+  Vor dem Deploy dieses Standes auf einer bestehenden Datenbank:
+
+  ```sql
+  ALTER TABLE users  ADD COLUMN bundesland VARCHAR(2);
+  ALTER TABLE users  ADD COLUMN universitaet_slug VARCHAR(160);
+  ALTER TABLE topics ADD COLUMN bundesland VARCHAR(2);
+  CREATE INDEX ix_users_bundesland  ON users (bundesland);
+  CREATE INDEX ix_topics_bundesland ON topics (bundesland);
+  ```
 
 ### 2.3 Web-Build
 

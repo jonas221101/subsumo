@@ -21,6 +21,7 @@ ein Feature und eine messbare Metrik abgebildet. Die vier wichtigsten:
 | **Das Examen ist kumulativ — Stoff aus Semester 1 wird nach 5 Jahren geprüft** | FSRS-Spaced-Repetition als Rückgrat, mit Ziel-Retention je Kartentyp | `backend/app/services/srs.py` |
 | **Kein individuelles Feedback, Korrekturen dauern Wochen** | Bewertung gegen Erwartungshorizont in der 18-Punkte-Skala, jeder Abzug auf einen Prüfpunkt zurückführbar; ohne KI bei 11 Punkten gedeckelt statt geschenkt | `backend/app/services/evaluator.py` |
 | **Repetitorium kostet 2.000–4.000 €** | Verbindlicher Lernplan mit Load-Balancing bis zum Examenstermin | `backend/app/services/planner.py` |
+| **Das Examen ist Landesrecht — Klausurzahl, Freiversuch und der Landesrechtsanteil unterscheiden sich je Bundesland** | Examen-Reiter: Bundesland- und Universitätsprofil, Landesrecht-Decks, Kurs-Decks je Studienverlauf, Examensreife mit offengelegter Formel ([`docs/32`](docs/32-examensvorbereitung.md)) | `backend/app/services/examen.py` |
 
 ---
 
@@ -95,8 +96,8 @@ subsumo/
 ├── docs/       Problemanalyse, Vision, Architektur, Roadmap, Datenmodell,
 │               Content-Pipeline, Recht & Compliance
 ├── backend/    FastAPI + SQLAlchemy, 134 Tests
-│   ├── app/services/   srs · gutachten · evaluator · planner · content · redaktion
-│   ├── app/api/v1/     auth · content · learn · gutachten · plan
+│   ├── app/services/   srs · gutachten · evaluator · planner · examen · content · redaktion
+│   ├── app/api/v1/     auth · content · learn · gutachten · plan · examen
 │   └── scripts/        validate_content.py (läuft in der CI) · redaktion_cli.py
 ├── content/    Lerninhalte als versioniertes YAML, schema-validiert
 └── app/        Flutter-Client für alle vier Plattformen
