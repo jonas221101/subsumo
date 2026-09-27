@@ -29,6 +29,9 @@ class UserOut(BaseModel):
     display_name: str
     exam_date: datetime | None = None
     daily_minutes: int
+    # Examensprofil (docs/32-examensvorbereitung.md); beide optional.
+    bundesland: str | None = None
+    universitaet_slug: str | None = None
     pro_active: bool = False
     pro_until: datetime | None = None
     cancel_at_period_end: bool = False
@@ -42,6 +45,11 @@ class UserUpdateIn(BaseModel):
     display_name: str | None = None
     exam_date: date | None = None
     daily_minutes: int | None = Field(default=None, ge=15, le=600)
+    # Kuerzel eines Bundeslands (BY, NW, ...) bzw. Slug einer Universitaet aus
+    # content/examen/. Der Server prueft gegen den geladenen Bestand; "" loescht
+    # den Wert (None heisst hier wie bei den anderen Feldern "nicht aendern").
+    bundesland: str | None = Field(default=None, max_length=2)
+    universitaet_slug: str | None = Field(default=None, max_length=160)
 
 
 class TopicOut(BaseModel):

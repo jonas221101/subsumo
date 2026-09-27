@@ -1,0 +1,29 @@
+kurs:
+  slug: or-verwaltungsrecht-at
+  title: Verwaltungsrecht Allgemeiner Teil
+  area: oeffentliches-recht
+  semester_default: 3
+  examenskurs: false
+  stand: 2026-09
+  quellen:
+  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: Verwaltungsakt, Rechtmaessigkeitspruefung, Ermessen, Nebenbestimmungen, Ruecknahme und
+    Widerruf - nach dem Verwaltungsverfahrensgesetz des eigenen Bundeslands.
+  lernziele:
+  - Verwaltungsakt (§ 35 VwVfG) definieren und abgrenzen
+  - Formelle und materielle Rechtmaessigkeit eines VA vollstaendig pruefen
+  - §§ 48, 49 VwVfG mit Vertrauensschutz anwenden
+  - Das richtige Landes-VwVfG zitieren (Vollgesetz oder Verweisung)
+  klausurformat:
+    typ: Fortgeschrittenenklausur
+    minuten: 180
+  topic_slugs:
+  - or-vwvfg-verwaltungsakt
+  - or-va-rechtmaessigkeitspruefung
+  - or-vwvfg-ermessen-beurteilungsspielraum
+  - or-vwvfg-nebenbestimmungen
+  - or-vwvfg-ruecknahme-widerruf
+  landesrecht_kategorien:
+  - landesrecht-allgemein
+  fehlende_themen: []
