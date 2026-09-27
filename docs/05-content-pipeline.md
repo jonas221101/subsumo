@@ -63,6 +63,52 @@ Karten des einreichenden Nutzers faellig (bei einem verfehlten Pflichtpunkt
 zusaetzlich auf `relearning`). Faelle ohne `card_slugs` verhalten sich exakt
 wie bisher — reine Textrueckmeldung, keine Karten-Konsequenz.
 
+## Landesrecht-Themen
+
+Ein Thema mit `topic.bundesland: BY` (amtliches Kuerzel, eines von 16) ist
+Landesrecht und nur fuer Nutzer dieses Bundeslands sichtbar - in faelligen
+Karten, Coverage, Lernplan und Kurs-Decks. Slug-Konvention
+`<code klein>-<kategorie>` mit den Kategorien `polizei-ordnungsrecht` und
+`landesrecht-allgemein`; ueber sie binden Kurse das passende Landesrecht ein.
+Dateien liegen unter `content/landesrecht/`. Konzept:
+`docs/32-examensvorbereitung.md`.
+
+## Examen: Bundeslaender, Universitaeten, Kurse
+
+Drei weitere Dateitypen unter `content/examen/`, erkennbar am obersten
+Schluessel statt `topic`:
+
+```yaml
+bundesland:                # content/examen/bundeslaender/<code>.yaml
+  code: BY                 # Pflicht, eines der 16 Kuerzel
+  name: Bayern
+  stand: "2026-09"
+  quellen: [...]           # Pflicht
+  klausuren:               # Pflicht: verteilung muss anzahl ergeben
+    anzahl: 6
+    verteilung: {zivilrecht: 3, strafrecht: 1, oeffentliches-recht: 2}
+  landesrecht: {normenspiegel: {...}, schwerpunkte: [...]}
+  checkliste: [...]
+  redaktion: {status: in-pruefung}
+
+universitaet:              # content/examen/universitaeten/<slug>.yaml
+  slug: lmu-muenchen
+  name: Ludwig-Maximilians-Universitaet Muenchen
+  bundesland: BY           # Pflicht, braucht ein Bundesland-Profil
+  quellen: [...]
+  kurse:                   # Pflicht; jeder Kurs muss existieren
+    - {kurs: zr-bgb-at, semester: 1, titel_lokal: "Grundkurs Zivilrecht I"}
+
+kurs:                      # content/examen/kurse/<slug>.yaml
+  slug: or-polizei-ordnungsrecht
+  title: Polizei- und Ordnungsrecht
+  area: oeffentliches-recht
+  quellen: [...]
+  topic_slugs: [or-sicherheitsrecht-generalklausel-standardmassnahmen]   # muessen existieren
+  landesrecht_kategorien: [polizei-ordnungsrecht]                        # optional
+  fehlende_themen: ["Stoererauswahl vertieft (P3)"]                      # ehrlicher Hinweis
+```
+
 ## Regeln, die die CI erzwingt
 
 `python backend/scripts/validate_content.py` bricht ab bei:
@@ -74,10 +120,15 @@ wie bisher — reine Textrueckmeldung, keine Karten-Konsequenz.
 - `stand` in einem anderen Format als `YYYY-MM` oder `YYYY-MM-TT`
 - einem Fall **ohne** Erwartungshorizont oder mit nicht eindeutigen Pruefpunkt-IDs
 - `card_slugs`, die auf einen unbekannten Card-Slug verweisen
+- `topic.bundesland` ausserhalb der 16 Kuerzel; `klausuren.verteilung`, die
+  nicht `klausuren.anzahl` ergibt; Universitaeten ohne Bundesland-Profil oder
+  mit unbekanntem Kurs; Kurse mit unbekannten Themen oder ohne Deck-Inhalt
 
-Warnung (kein Abbruch): Inhalte, deren `stand` aelter als 18 Monate ist. Mit
-`--strict` werden auch sie zum Fehler — gedacht fuer einen monatlichen
-Redaktionslauf.
+Warnung (kein Abbruch): Inhalte, deren `stand` aelter als 18 Monate ist;
+Inhalte mit `redaktion.status: in-pruefung` (das Skript buendelt sie je
+Verzeichnis zu einer Zeile); Kurse, deren Landesrecht-Kategorie fuer ein
+Land kein Thema hat. Mit `--strict` werden auch sie zum Fehler — gedacht fuer
+einen monatlichen Redaktionslauf.
 
 ## Redaktionsworkflow
 

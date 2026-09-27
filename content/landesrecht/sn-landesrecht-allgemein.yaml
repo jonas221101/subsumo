@@ -1,0 +1,82 @@
+topic:
+  slug: sn-landesrecht-allgemein
+  area: oeffentliches-recht
+  title: 'Landesrecht Sachsen: Verfassung, Verwaltungsverfahren, Kommunal- und Baurecht'
+  parent: or-vwvfg-verwaltungsakt
+  bundesland: SN
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sn-lra-vwvfg
+  type: norm
+  front: Welches Verwaltungsverfahrensgesetz gilt fuer Landesbehoerden in Sachsen?
+  back: Saechsisches Verwaltungsverfahrens- und Verwaltungszustellungsgesetz (SaechsVwVfZG) - Verweisung
+    auf das VwVfG des Bundes. Das VwVfG des Bundes gilt nur fuer Bundesbehoerden (§ 1 VwVfG); fuer Landes-
+    und Kommunalbehoerden ist das Landesgesetz massgeblich. Bei Verweisungsgesetzen werden die Bundesnormen
+    'entsprechend' angewendet und sind so zu zitieren (z. B. '§ 35 VwVfG i. V. m. § 1 des Landesgesetzes'),
+    bei Vollgesetzen ist die Landesnorm selbst zu zitieren.
+  norms:
+  - Saechsisches Verwaltungsverfahrens- und Verwaltungszustellungsgesetz (SaechsVwVfZG) - Verweisung auf
+    das VwVfG des Bundes
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sn-lra-verfassungsgericht
+  type: norm
+  front: Gibt es in Sachsen eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
+  back: 'Ja - Art. 81 Abs. 1 Nr. 4 SaechsVerf. Zustaendiges Gericht: Verfassungsgerichtshof des Freistaates
+    Sachsen auf Grundlage der Verfassung des Freistaates Sachsen (SaechsVerf). Verfahrensgegenstand ist
+    nur die Verletzung von Landesgrundrechten durch Landesstaatsgewalt; Bundesrecht ist Pruefungsmassstab
+    nur, soweit die Landesverfassung darauf verweist. Daneben steht immer die Verfassungsbeschwerde zum
+    BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
+  norms:
+  - Verfassung des Freistaates Sachsen (SaechsVerf)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sn-lra-kommunalverfassung
+  type: norm
+  front: Welches Gesetz regelt die Kommunalverfassung in Sachsen und welche Hauptorgane hat die Gemeinde?
+  back: 'Saechsische Gemeindeordnung (SaechsGemO): Gemeinderat (§ 27) und Buergermeister (§ 51). Grundlage
+    ist die Selbstverwaltungsgarantie (Art. 28 Abs. 2 GG und Landesverfassung): eigenverantwortliche Regelung
+    aller Angelegenheiten der oertlichen Gemeinschaft. Klausurklassiker: Zustaendigkeitsstreit zwischen
+    Vertretung und Verwaltungsspitze, Kommunalverfassungsstreit, Rechtsaufsicht.'
+  norms:
+  - 'Saechsische Gemeindeordnung (SaechsGemO): Gemeinderat (§ 27) und Buergermeister (§ 51)'
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sn-lra-bauordnung
+  type: norm
+  front: Wie heisst die Bauordnung in Sachsen und wie ist eine Baugenehmigung zu pruefen?
+  back: 'Saechsische Bauordnung (SaechsBO). Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben keine
+    oeffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungs-beduerftigkeit (Errichtung, Aenderung,
+    Nutzungsaenderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulaessigkeit nach §§ 29 ff.
+    BauGB (Bundesrecht), bauordnungsrechtliche Zulaessigkeit nach der Landesbauordnung (Abstandsflaechen,
+    Gestaltung, Stellplaetze).'
+  norms:
+  - Saechsische Bauordnung (SaechsBO)
+  - §§ 29 ff. BauGB
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sn-lra-pflichtstoff
+  type: definition
+  front: Welche Landesrechtsgebiete gehoeren in Sachsen zum Pflichtstoff des Oeffentlichen Rechts?
+  back: Polizeirecht (SaechsPVDG, SaechsPBG); Kommunalrecht (SaechsGemO); Bauordnungsrecht (SaechsBO);
+    Landesverfassung. Landesrecht wird im Examen fast nie isoliert, sondern eingebettet in eine verwaltungsprozessuale
+    Einkleidung (Anfechtungs-/Verpflichtungsklage, vorlaeufiger Rechtsschutz) geprueft - die Landesnorm
+    ist die Ermaechtigungsgrundlage, der Aufbau bleibt der allgemeine.
+  norms: []
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09

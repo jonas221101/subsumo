@@ -1,0 +1,107 @@
+bundesland:
+  code: BE
+  name: Berlin
+  stand: 2026-09
+  quellen:
+  - Juristenausbildungsgesetz Berlin (JAG Bln) mit JAO (Landesrecht, amtliche Fassung)
+  - Deutsches Richtergesetz (DRiG), §§ 5 ff.
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    normzitate_geprueft: false
+    hinweis: Struktur- und Normangaben aus Redaktionswissen, nicht gegen die aktuelle Fassung von JAG/JAPO
+      und Landesgesetzen verifiziert. Vor Freigabe die 'pruefliste_redaktion' abarbeiten (docs/32-examensvorbereitung.md
+      Abschnitt 7).
+  pruefungsamt:
+    name: Gemeinsames Juristisches Pruefungsamt der Laender Berlin und Brandenburg (GJPA)
+    sitz: Berlin
+  pruefungsordnung: Juristenausbildungsgesetz Berlin (JAG Bln) mit JAO
+  klausuren:
+    anzahl: 7
+    dauer_minuten: 300
+    verteilung:
+      zivilrecht: 3
+      strafrecht: 2
+      oeffentliches-recht: 2
+    hinweis: Fuenfstuendige Aufsichtsarbeiten. Die Verteilung auf die Rechtsgebiete bestimmt die Gewichtung
+      der Examensreife im Examen-Reiter.
+  hausarbeit: false
+  muendliche_pruefung:
+    beschreibung: Pruefungsgespraech in allen drei Rechtsgebieten nach bestandenem schriftlichen Teil;
+      vielerorts mit Kurzvortrag.
+  termine:
+  - Zwei Pruefungsdurchgaenge pro Jahr (GJPA)
+  freiversuch:
+    beschreibung: Freiversuch bei erstmaliger Meldung nach ununterbrochenem Studium bis zum Ende des achten
+      Fachsemesters; ein nicht bestandener Freiversuch gilt als nicht unternommen. Anrechnungsregeln (Auslandssemester,
+      Krankheit) im JAG des Landes.
+  abschichtung:
+    moeglich: false
+    beschreibung: Keine Abschichtung - alle Aufsichtsarbeiten in einem Termin.
+  notenverbesserung:
+    beschreibung: Wer im Freiversuch bestanden hat, kann die Pruefung einmal zur Notenverbesserung wiederholen;
+      die bessere Note zaehlt.
+  hilfsmittel:
+  - Schoenfelder, Deutsche Gesetze (mit Ergaenzungsband)
+  - Sartorius I, Verfassungs- und Verwaltungsgesetze
+  - Berliner Landesrechtssammlung in der vom GJPA zugelassenen Ausgabe
+  landesrecht:
+    schwerpunkte:
+    - Ordnungsrecht (ASOG)
+    - Bezirksverwaltung statt Kommunalrecht
+    - Bauordnungsrecht (BauO Bln)
+    - Verfassung von Berlin
+    normenspiegel:
+      polizeigesetz: Allgemeines Sicherheits- und Ordnungsgesetz (ASOG Bln)
+      polizei_generalklausel: § 17 Abs. 1 ASOG Bln
+      standardmassnahmen: §§ 18 ff. ASOG Bln
+      stoerer: §§ 13, 14, 16 ASOG Bln
+      ordnungsbehoerden: Ordnungsbehoerden und Polizei im ASOG (§§ 2 ff.); Berlin ist Einheitsgemeinde
+        mit Bezirken (BezVG)
+      verwaltungsverfahrensgesetz: Gesetz ueber das Verfahren der Berliner Verwaltung (VwVfG Bln) - Verweisung
+        auf das VwVfG des Bundes (§ 1 VwVfG Bln)
+      vollstreckung: Verwaltungs-Vollstreckungsgesetz des Bundes ueber § 5a VwVfG Bln (pruefen)
+      kommunalverfassung: 'Bezirksverwaltungsgesetz (BezVG): Bezirksverordnetenversammlung und Bezirksamt
+        - keine Gemeinden'
+      bauordnung: Bauordnung fuer Berlin (BauO Bln)
+      landesverfassung: Verfassung von Berlin (VvB)
+      verfassungsgericht: Verfassungsgerichtshof des Landes Berlin
+      individualverfassungsbeschwerde: Ja - § 49 VerfGHG Bln
+    besonderheiten:
+    - 'Gemeinsames Pruefungsamt mit Brandenburg: identische Klausurstruktur, aber das Landesrecht ist
+      jeweils das eigene.'
+    - Kein klassisches Kommunalrecht - an seine Stelle tritt das Bezirksverwaltungsrecht.
+  checkliste:
+  - monate_vor_examen: 12
+    titel: Meldefristen und Freiversuch pruefen
+    detail: Fachsemesterzaehlung, Anrechnung von Auslands-/Urlaubssemestern und die Meldefrist beim Pruefungsamt
+      klaeren - der Freiversuch haengt am Datum der Meldung, nicht am Klausurtermin.
+  - monate_vor_examen: 9
+    titel: Landesrecht in den Lernplan aufnehmen
+    detail: Polizei- und Ordnungsrecht, Kommunalrecht, Bauordnungsrecht und das Landesverfassungsrecht
+      werden im Oeffentlichen Recht regelmaessig geprueft - das Landesrecht-Deck im Examen-Reiter deckt
+      die Normenkenntnis ab.
+  - monate_vor_examen: 6
+    titel: Zugelassene Hilfsmittel besorgen und einrichten
+    detail: Gesetzessammlungen in der zugelassenen Ausgabe, Nachlieferungen einsortieren, Markierungsregeln
+      des Pruefungsamts beachten (keine Kommentierungen).
+  - monate_vor_examen: 4
+    titel: Klausuren unter Examensbedingungen schreiben
+    detail: Fuenf Stunden am Stueck, handschriftlich oder wie in der Pruefung vorgesehen, mit den zugelassenen
+      Hilfsmitteln - der Samstags-Klausurtag im Lernplan ist dafuer reserviert.
+  - monate_vor_examen: 2
+    titel: Meldung zur Pruefung abgeben
+    detail: Unterlagen (Leistungsnachweise, Schluesselqualifikation, Fremdsprache, Praktika) vollstaendig
+      einreichen.
+  - monate_vor_examen: 1
+    titel: 'Endspurt: Wiederholung statt Neues'
+    detail: Keine neuen Themen mehr anfangen. Faellige Karten, Schemata rekonstruieren, Schwachstellen
+      aus den Klausur-Rueckmeldungen gezielt nacharbeiten.
+  pruefliste_redaktion:
+  - Zahl, Dauer und Verteilung der Aufsichtsarbeiten gegen die aktuelle JAG/JAPO-Fassung pruefen
+  - Ob ein Hausarbeits-/Aktenvortragsanteil zur staatlichen Pflichtfachpruefung gehoert
+  - Pruefungstermine des laufenden Jahres beim Pruefungsamt abgleichen
+  - Freiversuchs- und Notenverbesserungsregel (Semesterzahl, Fristen) pruefen
+  - Zugelassene Hilfsmittel gegen die aktuelle Hilfsmittelbekanntmachung pruefen
+  - Alle Normzitate im Normenspiegel gegen die geltende Gesetzesfassung pruefen

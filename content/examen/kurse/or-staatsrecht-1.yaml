@@ -1,0 +1,27 @@
+kurs:
+  slug: or-staatsrecht-1
+  title: 'Staatsrecht I: Staatsorganisationsrecht'
+  area: oeffentliches-recht
+  semester_default: 1
+  examenskurs: false
+  stand: 2026-09
+  quellen:
+  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: Staatsstrukturprinzipien, Gesetzgebungsverfahren, Verfassungsorgane und Organstreit -
+    ergaenzt um die Verfassung des eigenen Bundeslands.
+  lernziele:
+  - Gesetzgebungsverfahren (Art. 76 ff. GG) mit Zustimmungs-/Einspruchsgesetz pruefen
+  - Organstreitverfahren in Zulaessigkeit und Begruendetheit aufbauen
+  - Landesverfassung und Landesverfassungsgericht des eigenen Bundeslands einordnen
+  klausurformat:
+    typ: Anfaengerklausur
+    minuten: 120
+  topic_slugs:
+  - or-staatsorganisationsrecht-gesetzgebungsverfahren
+  - or-verfassungsprozessrecht-organstreitverfahren
+  landesrecht_kategorien:
+  - landesrecht-allgemein
+  fehlende_themen:
+  - Bund-Laender-Kompetenzen, Art. 70 ff. GG (P3)
+  - Normenkontrollverfahren (P3)

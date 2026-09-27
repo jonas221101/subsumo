@@ -20,7 +20,18 @@ from typing import Any
 import yaml
 from sqlalchemy.orm import Session
 
-from app.models import Area, Card, CardType, Case, Schema, Topic, UserCard
+from app.models import (
+    Area,
+    Bundesland,
+    Card,
+    CardType,
+    Case,
+    Kurs,
+    Schema,
+    Topic,
+    Universitaet,
+    UserCard,
+)
 
 VALID_AREAS = {a.value for a in Area}
 VALID_CARD_TYPES = {t.value for t in CardType}
@@ -31,6 +42,19 @@ STALE_AFTER_MONTHS = 18
 # regulaer redigiert (M0-Bestand vor der KI-Redaktion).
 VALID_REDAKTION_STATUS = {"ki-freigegeben", "mensch-freigegeben", "in-pruefung"}
 
+# Die 16 Laender, amtliche Kuerzel. Ein Bundesland-Profil, ein Landesrecht-
+# Thema oder ein Nutzerprofil darf nur eines davon tragen
+# (docs/32-examensvorbereitung.md).
+BUNDESLAND_CODES = {
+    "BW", "BY", "BE", "BB", "HB", "HH", "HE", "MV",
+    "NI", "NW", "RP", "SL", "SN", "ST", "SH", "TH",
+}  # fmt: skip
+
+# Landesrecht-Kategorien, ueber die ein Kurs bundeslandspezifische Themen
+# einbindet. Konvention fuer den Topic-Slug: ``<code klein>-<kategorie>``,
+# z. B. ``by-polizei-ordnungsrecht``. Der Loader prueft die Konvention.
+LANDESRECHT_KATEGORIEN = {"polizei-ordnungsrecht", "landesrecht-allgemein"}
+
 
 @dataclass
 class ContentBundle:
@@ -38,6 +62,9 @@ class ContentBundle:
     cards: list[dict] = field(default_factory=list)
     schemata: list[dict] = field(default_factory=list)
     cases: list[dict] = field(default_factory=list)
+    bundeslaender: list[dict] = field(default_factory=list)
+    universitaeten: list[dict] = field(default_factory=list)
+    kurse: list[dict] = field(default_factory=list)
     errors: list[str] = field(default_factory=list)
     warnings: list[str] = field(default_factory=list)
 
@@ -102,8 +129,19 @@ def load_content(content_dir: Path) -> ContentBundle:
             bundle.errors.append(f"{rel}: Datei muss ein Mapping auf oberster Ebene sein")
             continue
 
+        if "topic" not in data:
+            _load_examen_file(data, str(rel), bundle)
+            continue
+
         topic = data.get("topic") or {}
         if not _require(topic, ["slug", "area", "title"], f"{rel} topic", bundle.errors):
+            continue
+        land = topic.get("bundesland")
+        if land is not None and land not in BUNDESLAND_CODES:
+            bundle.errors.append(
+                f"{rel} topic: unbekanntes Bundesland '{land}' "
+                f"(erlaubt: {', '.join(sorted(BUNDESLAND_CODES))})"
+            )
             continue
         if topic["area"] not in VALID_AREAS:
             bundle.errors.append(
@@ -198,12 +236,182 @@ def load_content(content_dir: Path) -> ContentBundle:
                 f"{where}: card_slugs verweist auf unbekannten Card-Slug '{card_slug}'"
             )
 
+    _cross_check_examen(bundle)
     return bundle
+
+
+# --------------------------------------------------------------------------- #
+# Examensvorbereitung: Bundesland-Profile, Universitaeten, Kurse
+# (docs/32-examensvorbereitung.md, Abschnitt 3)
+# --------------------------------------------------------------------------- #
+
+
+def _check_redaktion(obj: dict, where: str, bundle: ContentBundle) -> None:
+    redaktion = obj.get("redaktion")
+    if redaktion is None:
+        return
+    status = redaktion.get("status") if isinstance(redaktion, dict) else None
+    if status not in VALID_REDAKTION_STATUS:
+        bundle.errors.append(
+            f"{where} redaktion: 'status' fehlt oder unbekannt "
+            f"(erlaubt: {', '.join(sorted(VALID_REDAKTION_STATUS))})"
+        )
+    elif status == "in-pruefung":
+        bundle.warnings.append(
+            f"{where}: Status 'in-pruefung' - Angaben vor Nutzung redaktionell pruefen"
+        )
+
+
+def _load_examen_file(data: dict, rel: str, bundle: ContentBundle) -> None:
+    """Parst eine Datei mit ``bundesland``, ``universitaet`` oder ``kurs``."""
+    if "bundesland" in data:
+        _load_bundesland(data["bundesland"] or {}, f"{rel} bundesland", bundle)
+    elif "universitaet" in data:
+        _load_universitaet(data["universitaet"] or {}, f"{rel} universitaet", bundle)
+    elif "kurs" in data:
+        _load_kurs(data["kurs"] or {}, f"{rel} kurs", bundle)
+    else:
+        bundle.errors.append(
+            f"{rel}: oberste Ebene muss 'topic', 'bundesland', 'universitaet' oder 'kurs' sein"
+        )
+
+
+def _load_bundesland(land: dict, where: str, bundle: ContentBundle) -> None:
+    if not _require(land, ["code", "name", "quellen", "klausuren"], where, bundle.errors):
+        return
+    code = str(land["code"])
+    if code not in BUNDESLAND_CODES:
+        bundle.errors.append(f"{where}: unbekanntes Bundesland-Kuerzel '{code}'")
+        return
+    if any(b["code"] == code for b in bundle.bundeslaender):
+        bundle.errors.append(f"{where}: Profil fuer '{code}' bereits vorhanden")
+        return
+    land["stand"] = _check_stand(land.get("stand"), where, bundle.warnings, bundle.errors)
+    _check_redaktion(land, where, bundle)
+
+    klausuren = land["klausuren"]
+    verteilung = klausuren.get("verteilung") if isinstance(klausuren, dict) else None
+    anzahl = klausuren.get("anzahl") if isinstance(klausuren, dict) else None
+    if not isinstance(verteilung, dict) or not isinstance(anzahl, int):
+        bundle.errors.append(f"{where}: 'klausuren' braucht 'anzahl' (int) und 'verteilung'")
+        return
+    unbekannt = set(verteilung) - VALID_AREAS
+    if unbekannt:
+        bundle.errors.append(
+            f"{where}: klausuren.verteilung mit unbekanntem Rechtsgebiet "
+            f"{', '.join(sorted(unbekannt))}"
+        )
+    if sum(int(v) for v in verteilung.values()) != anzahl:
+        bundle.errors.append(
+            f"{where}: klausuren.verteilung ({sum(verteilung.values())}) "
+            f"ergibt nicht klausuren.anzahl ({anzahl})"
+        )
+    bundle.bundeslaender.append(land)
+
+
+def _load_universitaet(uni: dict, where: str, bundle: ContentBundle) -> None:
+    if not _require(uni, ["slug", "name", "bundesland", "quellen", "kurse"], where, bundle.errors):
+        return
+    if uni["bundesland"] not in BUNDESLAND_CODES:
+        bundle.errors.append(f"{where}: unbekanntes Bundesland '{uni['bundesland']}'")
+        return
+    if any(u["slug"] == uni["slug"] for u in bundle.universitaeten):
+        bundle.errors.append(f"{where}: slug '{uni['slug']}' bereits vergeben")
+        return
+    uni["stand"] = _check_stand(uni.get("stand"), where, bundle.warnings, bundle.errors)
+    _check_redaktion(uni, where, bundle)
+    for i, eintrag in enumerate(uni["kurse"]):
+        if not isinstance(eintrag, dict) or not eintrag.get("kurs"):
+            bundle.errors.append(f"{where} kurse[{i}]: 'kurs' (Slug) fehlt")
+    bundle.universitaeten.append(uni)
+
+
+def _load_kurs(kurs: dict, where: str, bundle: ContentBundle) -> None:
+    if not _require(kurs, ["slug", "title", "area", "quellen"], where, bundle.errors):
+        return
+    if kurs["area"] not in VALID_AREAS:
+        bundle.errors.append(f"{where}: unbekanntes Rechtsgebiet '{kurs['area']}'")
+        return
+    if any(k["slug"] == kurs["slug"] for k in bundle.kurse):
+        bundle.errors.append(f"{where}: slug '{kurs['slug']}' bereits vergeben")
+        return
+    kurs["stand"] = _check_stand(kurs.get("stand"), where, bundle.warnings, bundle.errors)
+    _check_redaktion(kurs, where, bundle)
+    kurs.setdefault("topic_slugs", [])
+    kurs.setdefault("landesrecht_kategorien", [])
+    if not kurs["topic_slugs"] and not kurs["landesrecht_kategorien"]:
+        bundle.errors.append(
+            f"{where}: ein Kurs braucht 'topic_slugs' oder 'landesrecht_kategorien' - "
+            "ein leeres Deck ist kein Vorbereitungsdeck"
+        )
+    for kategorie in kurs["landesrecht_kategorien"]:
+        if kategorie not in LANDESRECHT_KATEGORIEN:
+            bundle.errors.append(
+                f"{where}: unbekannte Landesrecht-Kategorie '{kategorie}' "
+                f"(erlaubt: {', '.join(sorted(LANDESRECHT_KATEGORIEN))})"
+            )
+    bundle.kurse.append(kurs)
+
+
+def landesrecht_topic_slug(code: str, kategorie: str) -> str:
+    """Slug-Konvention fuer Landesrecht-Themen: ``by-polizei-ordnungsrecht``."""
+    return f"{code.lower()}-{kategorie}"
+
+
+def _cross_check_examen(bundle: ContentBundle) -> None:
+    """Querverweise, die erst nach der kompletten Dateischleife pruefbar sind."""
+    topic_slugs = {t["slug"] for t in bundle.topics}
+    kurs_slugs = {k["slug"] for k in bundle.kurse}
+    land_codes = {b["code"] for b in bundle.bundeslaender}
+
+    for topic in bundle.topics:
+        land = topic.get("bundesland")
+        if land is not None and land not in land_codes:
+            bundle.warnings.append(
+                f"topic '{topic['slug']}': Landesrecht fuer '{land}' ohne Bundesland-Profil"
+            )
+
+    for kurs in bundle.kurse:
+        for slug in kurs["topic_slugs"]:
+            if slug not in topic_slugs:
+                bundle.errors.append(
+                    f"kurs '{kurs['slug']}': topic_slugs verweist auf unbekanntes Thema '{slug}'"
+                )
+        for kategorie in kurs["landesrecht_kategorien"]:
+            fehlend = [
+                code
+                for code in sorted(land_codes)
+                if landesrecht_topic_slug(code, kategorie) not in topic_slugs
+            ]
+            if fehlend:
+                bundle.warnings.append(
+                    f"kurs '{kurs['slug']}': Landesrecht-Kategorie '{kategorie}' ohne Thema "
+                    f"fuer {', '.join(fehlend)}"
+                )
+
+    for uni in bundle.universitaeten:
+        if uni["bundesland"] not in land_codes:
+            bundle.errors.append(
+                f"universitaet '{uni['slug']}': kein Profil fuer Bundesland '{uni['bundesland']}'"
+            )
+        for eintrag in uni["kurse"]:
+            slug = eintrag.get("kurs") if isinstance(eintrag, dict) else None
+            if slug and slug not in kurs_slugs:
+                bundle.errors.append(f"universitaet '{uni['slug']}': unbekannter Kurs '{slug}'")
 
 
 def seed(db: Session, bundle: ContentBundle) -> dict[str, int]:
     """Schreibt das Bundle idempotent in die Datenbank (Upsert ueber ``slug``)."""
-    stats = {"topics": 0, "cards": 0, "schemata": 0, "cases": 0, "changed_cards": 0}
+    stats = {
+        "topics": 0,
+        "cards": 0,
+        "schemata": 0,
+        "cases": 0,
+        "changed_cards": 0,
+        "bundeslaender": 0,
+        "universitaeten": 0,
+        "kurse": 0,
+    }
 
     for t in bundle.topics:
         row = db.query(Topic).filter_by(slug=t["slug"]).one_or_none() or Topic(slug=t["slug"])
@@ -211,6 +419,7 @@ def seed(db: Session, bundle: ContentBundle) -> dict[str, int]:
         row.parent_slug = t.get("parent")
         row.relevance = int(t.get("relevance", 3))
         row.position = int(t.get("position", 0))
+        row.bundesland = t.get("bundesland")
         db.add(row)
         stats["topics"] += 1
 
@@ -261,5 +470,44 @@ def seed(db: Session, bundle: ContentBundle) -> dict[str, int]:
         db.add(row)
         stats["cases"] += 1
 
+    for land in bundle.bundeslaender:
+        row = db.get(Bundesland, land["code"]) or Bundesland(code=land["code"])
+        row.name = land["name"]
+        row.stand = land.get("stand", "")
+        row.data = _json_safe(land)
+        db.add(row)
+        stats["bundeslaender"] += 1
+
+    for uni in bundle.universitaeten:
+        row = db.query(Universitaet).filter_by(slug=uni["slug"]).one_or_none() or Universitaet(
+            slug=uni["slug"]
+        )
+        row.name = uni["name"]
+        row.bundesland = uni["bundesland"]
+        row.stand = uni.get("stand", "")
+        row.data = _json_safe(uni)
+        db.add(row)
+        stats["universitaeten"] += 1
+
+    for kurs in bundle.kurse:
+        row = db.query(Kurs).filter_by(slug=kurs["slug"]).one_or_none() or Kurs(slug=kurs["slug"])
+        row.title = kurs["title"]
+        row.area = kurs["area"]
+        row.stand = kurs.get("stand", "")
+        row.data = _json_safe(kurs)
+        db.add(row)
+        stats["kurse"] += 1
+
     db.commit()
     return stats
+
+
+def _json_safe(value: Any) -> Any:
+    """YAML liefert date-Objekte fuer unquoted Datumsangaben - JSON-Spalten nicht."""
+    if isinstance(value, dict):
+        return {str(k): _json_safe(v) for k, v in value.items()}
+    if isinstance(value, list):
+        return [_json_safe(v) for v in value]
+    if isinstance(value, (date, datetime)):
+        return value.isoformat()
+    return value
