@@ -4,6 +4,7 @@ import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
 import 'gutachten_page.dart';
+import 'lernprofil_page.dart';
 import 'review_page.dart';
 import 'screen_status.dart';
 
@@ -76,6 +77,11 @@ class _ExamenPageState extends State<ExamenPage> {
     final klausur = _map(cockpit['naechste_klausur']);
     final checkliste = _maps(cockpit['checkliste']);
     final plan = _maps(cockpit['plan']);
+    final lernprofil = _map(cockpit['lernprofil']);
+    final schritt = _map(cockpit['naechster_schritt']);
+    final semesterstoff = cockpit['semesterstoff'] == null ? null : _map(cockpit['semesterstoff']);
+    final themen = _maps(cockpit['themen']);
+    final eigeneDecks = _maps(cockpit['eigene_decks']);
 
     return ReadableWidth(
       child: RefreshIndicator(
@@ -95,11 +101,23 @@ class _ExamenPageState extends State<ExamenPage> {
                 onEdit: () => setState(() => _editingProfile = true),
               ),
             const SizedBox(height: Spacing.lg),
+            if (schritt.isNotEmpty) ...[
+              _NextStepCard(
+                schritt: schritt,
+                onProfil: () => _openLernprofil(context, lernprofil, themen),
+              ),
+              const SizedBox(height: Spacing.lg),
+            ],
+            _LernprofilCard(
+              lernprofil: lernprofil,
+              onEdit: () => _openLernprofil(context, lernprofil, themen),
+            ),
+            const SizedBox(height: Spacing.lg),
             if (phase != null) ...[
               _PhaseCard(phase: phase),
               const SizedBox(height: Spacing.lg),
             ],
-            _ReifeCard(reife: reife),
+            _ReifeCard(reife: reife, semesterstoff: semesterstoff),
             const SizedBox(height: Spacing.lg),
             if (plan.isNotEmpty) ...[
               _HeuteCard(plan: plan),
@@ -114,7 +132,11 @@ class _ExamenPageState extends State<ExamenPage> {
               ),
               const SizedBox(height: Spacing.lg),
             ],
-            _DecksCard(decks: decks, hatUniversitaet: profil['universitaet'] != null),
+            _DecksCard(
+              decks: decks,
+              eigeneDecks: eigeneDecks,
+              hatUniversitaet: profil['universitaet'] != null,
+            ),
             const SizedBox(height: Spacing.lg),
             if ((schwachstellen['abgaben'] as int? ?? 0) > 0) ...[
               _SchwachstellenCard(schwachstellen: schwachstellen),
@@ -408,6 +430,158 @@ class _ProfilEditorState extends State<_ProfilEditor> {
 }
 
 // --------------------------------------------------------------------------- //
+// Naechster Schritt und Lernprofil (docs/33)
+// --------------------------------------------------------------------------- //
+
+/// Der eine naechste Schritt aus dem Lernprofil und dem Ist-Zustand - mit
+/// Begruendung und genau einer Handlung. Kein Feed, keine Liste.
+class _NextStepCard extends StatelessWidget {
+  const _NextStepCard({required this.schritt, required this.onProfil});
+
+  final Map<String, dynamic> schritt;
+  final VoidCallback onProfil;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final action = _map(schritt['action']);
+    final type = action['type'] as String? ?? 'none';
+    final (label, icon, onPressed) = switch (type) {
+      'profil' => ('Lernprofil einrichten', Icons.tune_outlined, onProfil),
+      'review' => (
+          'Karten wiederholen',
+          Icons.style_outlined,
+          () => _openDeck(context, const DeckFilter(title: 'Faellige Karten')),
+        ),
+      'deck' => (
+          'Deck lernen',
+          Icons.style_outlined,
+          () => _openDeck(
+            context,
+            DeckFilter(title: action['title'] as String, deck: action['slug'] as String),
+          ),
+        ),
+      'topic' => (
+          'Karten zum Thema',
+          Icons.style_outlined,
+          () => _openDeck(
+            context,
+            DeckFilter(title: action['title'] as String, topic: action['slug'] as String),
+          ),
+        ),
+      'case' => (
+          action['mode'] == 'klausur' ? 'Klausur schreiben' : 'Fall bearbeiten',
+          Icons.gavel_outlined,
+          () => Navigator.of(context).push(
+            MaterialPageRoute<void>(
+              builder: (_) => GutachtenPage(
+                caseSlug: action['slug'] as String,
+                caseTitle: action['title'] as String,
+                mode: action['mode'] as String? ?? 'uebung',
+              ),
+            ),
+          ),
+        ),
+      _ => (null, null, null),
+    };
+    return SubsumoCard(
+      color: theme.colorScheme.surfaceContainerHighest,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('Naechster Schritt', style: theme.textTheme.bodySmall),
+          const SizedBox(height: Spacing.xs),
+          Text(schritt['titel'] as String? ?? '', style: theme.textTheme.titleMedium),
+          const SizedBox(height: Spacing.xs),
+          Text(schritt['begruendung'] as String? ?? '', style: theme.textTheme.bodySmall),
+          if (label != null) ...[
+            const SizedBox(height: Spacing.md),
+            SubsumoButton.primary(label: label, icon: icon, onPressed: onPressed),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _LernprofilCard extends StatelessWidget {
+  const _LernprofilCard({required this.lernprofil, required this.onEdit});
+
+  final Map<String, dynamic> lernprofil;
+  final VoidCallback onEdit;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final eingerichtet = lernprofil['eingerichtet'] == true;
+    final fokus = _strings(lernprofil['themen_fokus']).length;
+    final pause = _strings(lernprofil['themen_pausiert']).length;
+    final decks = _maps(lernprofil['eigene_decks']).length;
+    final schwerpunkte = _strings(lernprofil['schwerpunkte']);
+    return SubsumoCard(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Expanded(child: Text('Lernprofil', style: theme.textTheme.titleMedium)),
+              IconButton(
+                tooltip: 'Lernprofil bearbeiten',
+                icon: const Icon(Icons.tune_outlined),
+                onPressed: onEdit,
+              ),
+            ],
+          ),
+          const SizedBox(height: Spacing.xs),
+          if (!eingerichtet)
+            const SubsumoFeedbackBlock(
+              message: 'Noch nicht eingerichtet - es gelten die Standardwerte.',
+              detail: 'Semester, Ziel, Schwerpunkte, Rhythmus, Sicherheitsniveau, '
+                  'Fokus-Themen und eigene Decks.',
+              severity: FeedbackSeverity.hint,
+            )
+          else ...[
+            Text(lernprofil['persona_label'] as String? ?? '', style: theme.textTheme.bodyMedium),
+            const SizedBox(height: Spacing.xs),
+            Text(
+              [
+                if (lernprofil['semester'] != null) '${lernprofil['semester']}. Semester',
+                if (lernprofil['zielnote'] != null) 'Ziel ${lernprofil['zielnote']} Punkte',
+                if (schwerpunkte.isNotEmpty)
+                  'Schwerpunkt ${schwerpunkte.map((a) => _areaLabels[a] ?? a).join(', ')}',
+                'Sicherheit: ${lernprofil['sicherheitsniveau'] ?? 'standard'}',
+                '${lernprofil['neue_karten_pro_tag'] ?? 10} neue Karten/Tag',
+                if (fokus > 0) '$fokus Fokus-Themen',
+                if (pause > 0) '$pause pausiert',
+                if (decks > 0) '$decks eigene Decks',
+              ].join('  ·  '),
+              style: theme.textTheme.bodySmall,
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+Future<void> _openLernprofil(
+  BuildContext context,
+  Map<String, dynamic> lernprofil,
+  List<Map<String, dynamic>> themen,
+) async {
+  final app = AppScope.of(context);
+  final saved = await Navigator.of(context).push<bool>(
+    MaterialPageRoute<bool>(
+      builder: (_) => LernprofilPage(profil: lernprofil, themen: themen),
+    ),
+  );
+  // saveLernprofil laedt das Cockpit bereits neu; ein erneuter Aufruf hier
+  // deckt nur den Fall ab, dass die Seite ohne Speichern verlassen wurde und
+  // trotzdem frische Daten (z. B. faellige Karten) sinnvoll sind.
+  if (saved != true) await app.loadExamen();
+}
+
+// --------------------------------------------------------------------------- //
 // Phase und Examensreife
 // --------------------------------------------------------------------------- //
 
@@ -455,9 +629,10 @@ class _PhaseCard extends StatelessWidget {
 }
 
 class _ReifeCard extends StatelessWidget {
-  const _ReifeCard({required this.reife});
+  const _ReifeCard({required this.reife, this.semesterstoff});
 
   final Map<String, dynamic> reife;
+  final Map<String, dynamic>? semesterstoff;
 
   @override
   Widget build(BuildContext context) {
@@ -485,6 +660,17 @@ class _ReifeCard extends StatelessWidget {
           for (final entry in komponenten.entries) ...[
             _Komponente(key: ValueKey('komponente-${entry.key}'), daten: _map(entry.value)),
             const SizedBox(height: Spacing.sm),
+          ],
+          if (semesterstoff != null) ...[
+            const SizedBox(height: Spacing.sm),
+            Text('Semesterstoff', style: theme.textTheme.titleSmall),
+            const SizedBox(height: Spacing.sm),
+            SubsumoProgressMeter(
+              label: 'Bis ${semesterstoff!['semester']}. Semester  ·  '
+                  '${semesterstoff!['cards_mature']} von ${semesterstoff!['cards_total']} '
+                  'Karten reif  ·  ${semesterstoff!['cards_due']} faellig',
+              value: (semesterstoff!['mastery'] as num? ?? 0).toDouble(),
+            ),
           ],
           const SizedBox(height: Spacing.sm),
           Text('Nach Rechtsgebiet', style: theme.textTheme.titleSmall),
@@ -622,8 +808,11 @@ class _KlausurCard extends StatelessWidget {
           Text('Naechste Klausur unter Examensbedingungen', style: theme.textTheme.titleMedium),
           const SizedBox(height: Spacing.xs),
           Text(
-            '${_weekdayOf(datum)}, ${_formatIsoDate(datum)}  ·  fuenf Stunden, nur zugelassene '
-            'Hilfsmittel, ohne Unterbrechung.',
+            klausur['aktiv'] == false
+                ? 'Wochenklausur im Lernprofil ausgeschaltet - der Vorschlag bleibt, '
+                    'der Plan reserviert keinen Klausurtag.'
+                : '${_weekdayOf(datum)}, ${_formatIsoDate(datum)}  ·  fuenf Stunden, nur '
+                    'zugelassene Hilfsmittel, ohne Unterbrechung.',
             style: theme.textTheme.bodySmall,
           ),
           const SizedBox(height: Spacing.md),
@@ -740,9 +929,14 @@ class _TopicRow extends StatelessWidget {
 }
 
 class _DecksCard extends StatelessWidget {
-  const _DecksCard({required this.decks, required this.hatUniversitaet});
+  const _DecksCard({
+    required this.decks,
+    required this.eigeneDecks,
+    required this.hatUniversitaet,
+  });
 
   final List<Map<String, dynamic>> decks;
+  final List<Map<String, dynamic>> eigeneDecks;
   final bool hatUniversitaet;
 
   @override
@@ -782,6 +976,25 @@ class _DecksCard extends StatelessWidget {
                 MaterialPageRoute<void>(builder: (_) => DeckDetailPage(deck: deck)),
               ),
             ),
+          if (eigeneDecks.isNotEmpty) ...[
+            const Divider(height: Spacing.xl),
+            Text('Eigene Decks', style: theme.textTheme.titleSmall),
+            for (final deck in eigeneDecks)
+              ListTile(
+                contentPadding: EdgeInsets.zero,
+                leading: Icon(Icons.style_outlined, color: theme.colorScheme.onSurfaceVariant),
+                title: Text(deck['title'] as String),
+                subtitle: Text(
+                  '${_maps(deck['topics']).length} Themen  ·  '
+                  '${deck['cards_mature']} von ${deck['cards_total']} Karten reif  ·  '
+                  '${deck['cards_due']} faellig',
+                ),
+                trailing: const Icon(Icons.chevron_right),
+                onTap: () => Navigator.of(context).push(
+                  MaterialPageRoute<void>(builder: (_) => DeckDetailPage(deck: deck)),
+                ),
+              ),
+          ],
         ],
       ),
     );
@@ -802,6 +1015,9 @@ class _SchwachstellenCard extends StatelessWidget {
     final theme = Theme.of(context);
     final themen = _maps(schwachstellen['themen']);
     final fehler = _maps(schwachstellen['strukturfehler']);
+    final tipp = schwachstellen['technik_tipp'] == null
+        ? null
+        : _map(schwachstellen['technik_tipp']);
     return SubsumoCard(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -825,6 +1041,14 @@ class _SchwachstellenCard extends StatelessWidget {
                 '${_strings(thema['beispiele']).isEmpty ? '' : ': ${_strings(thema['beispiele']).join('; ')}'}',
               ),
             ),
+          if (tipp != null) ...[
+            const SizedBox(height: Spacing.sm),
+            SubsumoFeedbackBlock(
+              message: 'Technik-Tipp: ${tipp['titel']}',
+              detail: tipp['tipp'] as String? ?? '',
+              severity: FeedbackSeverity.hint,
+            ),
+          ],
           if (fehler.isNotEmpty) ...[
             const SizedBox(height: Spacing.sm),
             Text('Haeufigste Strukturfehler', style: theme.textTheme.titleSmall),
@@ -1035,8 +1259,10 @@ class DeckDetailPage extends StatelessWidget {
                   Text(deck['beschreibung'] as String? ?? '', style: theme.textTheme.bodyMedium),
                   const SizedBox(height: Spacing.sm),
                   Text(
-                    '${_areaLabels[deck['area']] ?? deck['area']}  ·  '
-                    'Klausur: ${klausur['typ'] ?? '-'}, ${klausur['minuten'] ?? '-'} min',
+                    deck['eigenes'] == true
+                        ? 'Eigenes Deck  ·  ${topics.length} Themen'
+                        : '${_areaLabels[deck['area']] ?? deck['area']}  ·  '
+                            'Klausur: ${klausur['typ'] ?? '-'}, ${klausur['minuten'] ?? '-'} min',
                     style: theme.textTheme.bodySmall,
                   ),
                   const SizedBox(height: Spacing.md),

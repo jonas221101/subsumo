@@ -88,6 +88,10 @@ class ApiClient {
         await _client.patch(_uri(path), headers: _headers, body: jsonEncode(body)),
       );
 
+  Future<dynamic> _put(String path, Object? body) async => _decode(
+        await _client.put(_uri(path), headers: _headers, body: jsonEncode(body)),
+      );
+
   // --- Oeffentlich (ohne Login) ----------------------------------------------
 
   /// Feature-Flags fuer die oeffentlichen Seiten vor Login (SUB-107): u.a.
@@ -210,6 +214,16 @@ class ApiClient {
   /// Kartenzustand des angemeldeten Nutzers.
   Future<Map<String, dynamic>> examenKursDeck(String slug) async =>
       (await _get('/v1/examen/kurse/$slug/deck')) as Map<String, dynamic>;
+
+  // --- Lernprofil (docs/33-individualisierung.md) ---------------------------
+
+  Future<Map<String, dynamic>> lernprofil() async =>
+      (await _get('/v1/me/lernprofil')) as Map<String, dynamic>;
+
+  /// Ersetzt das Lernprofil komplett (`PUT /v1/me/lernprofil`). Der Server
+  /// prueft Themen-Slugs, Fokus/Pause-Konflikte und Deck-Slugs (422).
+  Future<Map<String, dynamic>> saveLernprofil(Map<String, dynamic> profil) async =>
+      (await _put('/v1/me/lernprofil', profil)) as Map<String, dynamic>;
 
   // --- Gutachten ------------------------------------------------------------
 

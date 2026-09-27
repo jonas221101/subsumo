@@ -48,8 +48,9 @@ class PendingReview {
 /// 3.3): entweder ein Kurs-Deck (`deck`) oder ein einzelnes Thema (`topic`,
 /// z. B. ein Landesrecht-Thema). Ohne Filter laeuft die normale Lernschleife.
 class DeckFilter {
-  const DeckFilter({required this.title, this.deck, this.topic})
-      : assert(deck != null || topic != null, 'DeckFilter braucht deck oder topic');
+  /// Ohne `deck` und `topic` ist es der normale, ungefilterte Stapel - nur mit
+  /// eigener Route und Titel (z. B. "Faellige Karten" aus dem naechsten Schritt).
+  const DeckFilter({required this.title, this.deck, this.topic});
 
   final String title;
   final String? deck;
@@ -373,6 +374,13 @@ class AppState extends ChangeNotifier {
   /// Karten und Gewichte gelten, deshalb nie nur lokal aktualisieren.
   Future<bool> saveProfile(Map<String, dynamic> fields) => _guard(() async {
         user = await api.updateProfile(fields);
+        examenCockpit = await api.examenCockpit();
+      });
+
+  /// Speichert das Lernprofil (docs/33) und laedt das Cockpit neu - das
+  /// Profil aendert Stapel, Plan und naechsten Schritt, deshalb nie nur lokal.
+  Future<bool> saveLernprofil(Map<String, dynamic> profil) => _guard(() async {
+        await api.saveLernprofil(profil);
         examenCockpit = await api.examenCockpit();
       });
 

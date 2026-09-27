@@ -11,6 +11,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:subsumo/api.dart';
 import 'package:subsumo/design/design.dart';
 import 'package:subsumo/pages/examen_page.dart';
+import 'package:subsumo/pages/lernprofil_page.dart';
 import 'package:subsumo/state.dart';
 import 'package:subsumo/theme.dart';
 
@@ -103,7 +104,31 @@ const _deck = {
   'mastery': 0.125,
 };
 
+const _lernprofilLeer = {
+  'eingerichtet': false,
+  'persona': 'einstieg',
+  'persona_label': 'Einstieg: Karten und Schemata zuerst',
+  'themen_fokus': <String>[],
+  'themen_pausiert': <String>[],
+  'eigene_decks': <Map<String, Object?>>[],
+  'schwerpunkte': <String>[],
+  'sicherheitsniveau': 'standard',
+  'neue_karten_pro_tag': 10,
+};
+
 Map<String, dynamic> _cockpitOhneProfil() => {
+      'lernprofil': _lernprofilLeer,
+      'naechster_schritt': {
+        'kind': 'profil',
+        'titel': 'Lernprofil einrichten',
+        'begruendung': 'Drei Minuten fuer passendere Empfehlungen.',
+        'action': {'type': 'profil'},
+      },
+      'semesterstoff': null,
+      'themen': [
+        {'slug': 'zr-bgb-at', 'title': 'BGB AT', 'area': 'zivilrecht', 'bundesland': null},
+      ],
+      'eigene_decks': <Map<String, Object?>>[],
       'profil': {
         'bundesland': null,
         'universitaet': null,
@@ -116,7 +141,12 @@ Map<String, dynamic> _cockpitOhneProfil() => {
       'bundesland': null,
       'kurs_decks': [_deck],
       'landesrecht_deck': {'topics': <Map<String, Object?>>[], 'cards_total': 0, 'cards_mature': 0, 'cards_due': 0},
-      'schwachstellen': {'themen': <Map<String, Object?>>[], 'strukturfehler': <Map<String, Object?>>[], 'abgaben': 0},
+      'schwachstellen': {
+        'themen': <Map<String, Object?>>[],
+        'strukturfehler': <Map<String, Object?>>[],
+        'abgaben': 0,
+        'technik_tipp': null,
+      },
       'naechste_klausur': {
         'datum': '2026-10-03',
         'vorschlag': {
@@ -135,6 +165,49 @@ Map<String, dynamic> _cockpitOhneProfil() => {
 
 Map<String, dynamic> _cockpitMitProfil() => {
       ..._cockpitOhneProfil(),
+      'lernprofil': {
+        ..._lernprofilLeer,
+        'eingerichtet': true,
+        'semester': 4,
+        'zielnote': 9,
+        'schwerpunkte': ['strafrecht'],
+        'persona': 'aufbau',
+        'persona_label': 'Aufbau: Faelle und Gutachtentechnik',
+        'themen_fokus': ['sr-bt-betrug'],
+        'eigene_decks': [
+          {'slug': 'mein-irrtum', 'title': 'Irrtuemer', 'topic_slugs': ['zr-bgb-at']},
+        ],
+      },
+      'naechster_schritt': {
+        'kind': 'fall',
+        'titel': 'Fall zum Schwachpunkt: Der Trickbetrug',
+        'begruendung': '3 verfehlte Pruefpunkte zu Betrug.',
+        'action': {'type': 'case', 'slug': 'sr-fall-betrug', 'title': 'Der Trickbetrug', 'mode': 'uebung'},
+      },
+      'semesterstoff': {
+        'semester': 4,
+        'decks': ['zr-bgb-at'],
+        'topics_total': 12,
+        'cards_total': 90,
+        'cards_mature': 27,
+        'cards_due': 5,
+        'mastery': 0.3,
+      },
+      'eigene_decks': [
+        {
+          'slug': 'mein-irrtum',
+          'title': 'Irrtuemer',
+          'eigenes': true,
+          'topics': [
+            {'slug': 'zr-bgb-at', 'title': 'BGB AT', 'area': 'zivilrecht', 'relevance': 5, 'bundesland': null, 'cards_total': 8, 'cards_started': 2, 'cards_mature': 1, 'cards_due': 2, 'mastery': 0.125},
+          ],
+          'cases': <Map<String, Object?>>[],
+          'cards_total': 8,
+          'cards_mature': 1,
+          'cards_due': 2,
+          'mastery': 0.125,
+        },
+      ],
       'profil': {
         'bundesland': {'code': 'BY', 'name': 'Bayern'},
         'universitaet': {'slug': 'lmu-muenchen', 'name': 'LMU', 'kurzname': 'LMU Muenchen'},
@@ -197,6 +270,21 @@ Map<String, dynamic> _cockpitMitProfil() => {
         'cards_total': 6,
         'cards_mature': 0,
         'cards_due': 0,
+      },
+      'schwachstellen': {
+        'themen': [
+          {'topic_slug': 'sr-bt-betrug', 'title': 'Betrug', 'verfehlte_pruefpunkte': 3, 'beispiele': ['Irrtum']},
+        ],
+        'strukturfehler': [
+          {'code': 'urteilsstil', 'anzahl': 4},
+        ],
+        'abgaben': 2,
+        'technik_tipp': {
+          'code': 'urteilsstil',
+          'anzahl': 4,
+          'titel': 'Gutachten- statt Urteilsstil',
+          'tipp': 'Erst die Frage, dann die Pruefung, dann das Ergebnis.',
+        },
       },
       'checkliste': [
         {
@@ -267,6 +355,10 @@ void main() {
     expect(find.byKey(const ValueKey('bundesland')), findsOneWidget);
     expect(find.byKey(const ValueKey('universitaet')), findsOneWidget);
     expect(find.widgetWithText(SubsumoButton, 'Profil speichern'), findsOneWidget);
+    // Naechster Schritt ohne Lernprofil: einrichten.
+    expect(find.text('Lernprofil einrichten'), findsWidgets);
+    expect(find.widgetWithText(SubsumoButton, 'Lernprofil einrichten'), findsOneWidget);
+    expect(find.textContaining('Noch nicht eingerichtet'), findsOneWidget);
     // Ohne Examensdatum keine Phase, kein Tagesplan - aber der Katalog.
     expect(find.textContaining('Tage bis zum Examen'), findsNothing);
     expect(find.text('BGB Allgemeiner Teil'), findsOneWidget);
@@ -293,6 +385,27 @@ void main() {
     expect(find.textContaining('6 Klausuren a 300 min'), findsOneWidget);
     expect(find.textContaining('Redaktionsstatus: in Pruefung'), findsWidgets);
     expect(find.text('Zugelassene Hilfsmittel besorgen'), findsOneWidget);
+    // Individualisierung (docs/33): naechster Schritt, Lernprofil, Semesterstoff,
+    // eigene Decks, Technik-Tipp.
+    expect(find.text('Fall zum Schwachpunkt: Der Trickbetrug'), findsOneWidget);
+    expect(find.widgetWithText(SubsumoButton, 'Fall bearbeiten'), findsOneWidget);
+    expect(find.text('Aufbau: Faelle und Gutachtentechnik'), findsOneWidget);
+    expect(find.textContaining('4. Semester  ·  Ziel 9 Punkte  ·  Schwerpunkt Strafrecht'),
+        findsOneWidget);
+    expect(find.textContaining('Bis 4. Semester  ·  27 von 90 Karten reif'), findsOneWidget);
+    expect(find.text('Eigene Decks'), findsOneWidget);
+    expect(find.text('Irrtuemer'), findsOneWidget);
+    expect(find.text('Technik-Tipp: Gutachten- statt Urteilsstil'), findsOneWidget);
+  });
+
+  testWidgets('Lernprofil-Stift oeffnet die Lernprofil-Seite', (tester) async {
+    await _pump(tester, _cockpitMitProfil());
+
+    await tester.tap(find.byTooltip('Lernprofil bearbeiten'));
+    await tester.pumpAndSettle();
+
+    expect(find.byType(LernprofilPage), findsOneWidget);
+    expect(find.text('4. Semester'), findsOneWidget);
   });
 
   testWidgets('Profil bearbeiten oeffnet den Editor mit vorbelegten Werten', (tester) async {
