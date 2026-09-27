@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from datetime import UTC, datetime
 
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, HTTPException, Query, status
 from sqlalchemy import or_, select
 
 from app.api.deps import CurrentUser, DbSession
@@ -19,7 +19,7 @@ from app.schemas import (
     ReviewBatchOut,
     ReviewResultOut,
 )
-from app.services import limits, srs
+from app.services import examen, limits, srs
 
 router = APIRouter(tags=["lernen"])
 
@@ -47,6 +47,7 @@ def due_cards(
     limit: int = Query(default=20, ge=1, le=200),
     new_limit: int = Query(default=10, ge=0, le=100),
     topic: str | None = None,
+    deck: str | None = None,
 ) -> list[DueCardOut]:
     """Faellige Wiederholungen zuerst, danach neue Karten.
 
@@ -56,9 +57,20 @@ def due_cards(
     Free-Tier-Limit (docs/20 B2): max. 20 faellige Karten/Tag, serverseitig
     ueber die Reviews des Tages gezaehlt statt ueber ``limit``, und nur ein
     Rechtsgebiet - das des ersten je gelernten Themas.
+
+    ``deck`` (docs/32 Abschnitt 3.3) beschraenkt auf die Themen eines
+    Kurs-Decks inklusive des Landesrechts des eigenen Bundeslands. Landesrecht
+    anderer Laender ist nie dabei (:func:`examen.visible_topic_slugs`).
     """
     now = datetime.now(UTC)
     settings = get_settings()
+
+    sichtbar = examen.visible_topic_slugs(db, user)
+    if deck is not None:
+        deck_topics = examen.deck_card_topic_slugs(db, user, deck)
+        if deck_topics is None:
+            raise HTTPException(status.HTTP_404_NOT_FOUND, "Deck nicht gefunden")
+        sichtbar &= set(deck_topics)
 
     due_limit = limit
     area = None
@@ -73,6 +85,7 @@ def due_cards(
         .filter(UserCard.user_id == user.id)
         .filter(or_(UserCard.due <= now, UserCard.content_changed.is_(True)))
     )
+    query = query.filter(Card.topic_slug.in_(sichtbar))
     if topic:
         query = query.filter(Card.topic_slug == topic)
     if area_topics is not None:
@@ -102,6 +115,7 @@ def due_cards(
     if rest > 0:
         bekannt = select(UserCard.card_id).where(UserCard.user_id == user.id)
         neu_query = db.query(Card).filter(Card.id.not_in(bekannt))
+        neu_query = neu_query.filter(Card.topic_slug.in_(sichtbar))
         if topic:
             neu_query = neu_query.filter(Card.topic_slug == topic)
         if area_topics is not None:
@@ -160,9 +174,7 @@ def submit_reviews(payload: ReviewBatchIn, user: CurrentUser, db: DbSession) -> 
         if reviewed_at.tzinfo is None:
             reviewed_at = reviewed_at.replace(tzinfo=UTC)
 
-        new_state = srs.review(
-            _to_state(row), item.rating, now=reviewed_at, card_type=card.type
-        )
+        new_state = srs.review(_to_state(row), item.rating, now=reviewed_at, card_type=card.type)
         row.stability = new_state.stability
         row.difficulty = new_state.difficulty
         row.due = new_state.due
@@ -206,11 +218,11 @@ def coverage(user: CurrentUser, db: DbSession) -> CoverageOut:
     Bewusst ehrlich: gezaehlt wird nur, was reif ist - nicht, was schon einmal
     gesehen wurde.
     """
-    topics = db.query(Topic).order_by(Topic.area, Topic.position).all()
+    # Landesrecht anderer Bundeslaender zaehlt nicht mit - sonst saehe jeder
+    # Nutzer 15 Laender Stoff, den er nie lernen soll (docs/32 Abschnitt 4).
+    topics = examen.visible_topics_query(db, user).order_by(Topic.area, Topic.position).all()
     cards = db.query(Card).all()
-    states = {
-        uc.card_id: uc for uc in db.query(UserCard).filter(UserCard.user_id == user.id).all()
-    }
+    states = {uc.card_id: uc for uc in db.query(UserCard).filter(UserCard.user_id == user.id).all()}
 
     by_topic: dict[str, list[Card]] = {}
     for card in cards:
@@ -266,7 +278,5 @@ def forecast(user: CurrentUser, db: DbSession, days: int = Query(default=30, ge=
     return {
         "days": days,
         "due_per_day": buckets,
-        "minutes_per_day": [
-            round(count * settings.seconds_per_card / 60) for count in buckets
-        ],
+        "minutes_per_day": [round(count * settings.seconds_per_card / 60) for count in buckets],
     }

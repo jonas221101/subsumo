@@ -10,7 +10,18 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from sqlalchemy import text
 
-from app.api.v1 import account, auth, billing, consent, content, gutachten, learn, plan, public
+from app.api.v1 import (
+    account,
+    auth,
+    billing,
+    consent,
+    content,
+    examen,
+    gutachten,
+    learn,
+    plan,
+    public,
+)
 from app.config import get_settings
 from app.core.observability import configure_logging
 from app.core.ratelimit import RateLimiter
@@ -79,6 +90,7 @@ def create_app() -> FastAPI:
         learn.router,
         gutachten.router,
         plan.router,
+        examen.router,
         public.router,
         billing.router,
     ):
