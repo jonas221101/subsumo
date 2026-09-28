@@ -22,6 +22,7 @@ from app.api.v1 import (
     lernprofil,
     plan,
     public,
+    werkbank,
 )
 from app.config import get_settings
 from app.core.observability import configure_logging
@@ -95,6 +96,7 @@ def create_app() -> FastAPI:
         lernprofil.router,
         public.router,
         billing.router,
+        werkbank.router,
     ):
         app.include_router(router, prefix="/v1")
 
