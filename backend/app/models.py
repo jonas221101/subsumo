@@ -280,6 +280,42 @@ class LlmCorrectionCall(Base):
     )
 
 
+class WerkbankToolCreation(Base):
+    """Protokolliert eine **persistierte** Werkbank-Werkzeugerstellung.
+
+    Grundlage des Erstellungs-Kontingents (SUB-367, docs/27-werkbank-
+    spezifikation.md Abschnitt 6.2). Ein abgelehnter Intent-Check oder ein
+    endgueltig fehlgeschlagener Generierungsversuch legt hier bewusst
+    keinen Eintrag an - dafuer ist ``WerkbankGenerationAttempt`` da.
+    """
+
+    __tablename__ = "werkbank_tool_creations"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, index=True
+    )
+
+
+class WerkbankGenerationAttempt(Base):
+    """Protokolliert **jeden** Werkbank-Generierungsversuch, Erfolg wie Fehlschlag.
+
+    Vom Erstellungs-Kontingent unabhaengiges Versuchslimit (SUB-367, docs/27
+    Abschnitt 6.2): verhindert, dass absichtlich fehlschlagende Beschreibungen
+    wiederholt die teureren Reparaturschleifen (Abschnitt 4.3) auslösen, ohne
+    je gegen das Erstellungs-Kontingent zu zaehlen.
+    """
+
+    __tablename__ = "werkbank_generation_attempts"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, index=True
+    )
+
+
 class StripeWebhookEvent(Base):
     """Persistierte Stripe-Event-IDs (docs/20 B4).
 
