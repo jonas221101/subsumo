@@ -7,6 +7,7 @@ library;
 
 import 'dart:convert';
 
+import 'sandbox_step_guard.dart' show stepLimitErrorMarker;
 import 'sandbox_types.dart';
 
 /// Prueft den von einer Harness zurueckgegebenen Umschlag gegen
@@ -34,6 +35,8 @@ SandboxErrorClass classifySandboxError(String? error) {
   switch (error) {
     case 'timeout':
       return SandboxErrorClass.timeout;
+    case stepLimitErrorMarker:
+      return SandboxErrorClass.stepLimitExceeded;
     case 'no_execute_function':
     case 'worker_error':
       return SandboxErrorClass.runtimeError;

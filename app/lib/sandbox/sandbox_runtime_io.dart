@@ -55,6 +55,20 @@
 /// bzw. JavaScriptCore) den Wrapper haben, ist unverifiziert - vor einem
 /// echten Rollout (Ticket 9) auf einem realen Geraet pruefen. Bis dahin
 /// gilt fuer diese Engine-Instanz keine durchgesetzte Speichergrenze.
+///
+/// SUB-359-Stand: der Schrittzaehler aus docs/27 Abschnitt 1.1
+/// ("Rueckfallgrenze gegen Endlosschleifen, die innerhalb von 300 ms viele
+/// kurze Yield-Punkte erzeugen") ist jetzt umgesetzt - per Quelltext-
+/// Instrumentierung (`sandbox_step_guard.dart`), nicht per nativem
+/// Interpreter-Hook, weil letzterer empirisch nicht wie dokumentiert greift
+/// (siehe oben). Die beiden anderen Luecken oben (echter Wall-Clock-Hard-Kill
+/// per Prozessisolation, durchgesetztes Speicherlimit) bleiben offen - beide
+/// haengen an derselben Loesung (ein separater, hart terminierbarer Prozess
+/// pro Ausfuehrung analog zu `worker.terminate()` im Web-Pfad) und brauchen
+/// dafuer neues natives Build-Tooling (AOT-kompilierter Worker je
+/// Desktop-Plattform, gebuendelt in `linux/`/`windows/`/`macos/`) - das faellt
+/// unter "gemeinsames Build-Tooling" und zieht laut Auftrag den
+/// Backend-Developer hinzu.
 library;
 
 import 'dart:convert';
@@ -62,6 +76,7 @@ import 'dart:convert';
 import 'package:flutter_js/flutter_js.dart';
 
 import 'sandbox_envelope.dart';
+import 'sandbox_step_guard.dart';
 import 'sandbox_types.dart';
 
 SandboxRuntime createSandboxRuntime() => const IoSandboxRuntime();
@@ -80,7 +95,7 @@ class IoSandboxRuntime implements SandboxRuntime {
       _stripHostBridges(runtime);
 
       final stopwatch = Stopwatch()..start();
-      final result = runtime.evaluate(buildIoHarness(source, input));
+      final result = runtime.evaluate(buildIoHarness(source, input, maxSteps: limits.maxSteps));
       stopwatch.stop();
 
       // Eigenstaendige, von der Engine-Fehlermeldung unabhaengige
@@ -176,12 +191,13 @@ class IoSandboxRuntime implements SandboxRuntime {
 /// das Ergebnis als `{ok, output|error}`-JSON-String zurueckgibt. Oeffentliche
 /// Top-Level-Funktion, damit sie ohne QuickJS-Engine getestet werden kann
 /// (siehe test/sandbox/sandbox_runtime_io_test.dart).
-String buildIoHarness(String source, Object? input) {
+String buildIoHarness(String source, Object? input, {int? maxSteps}) {
   final encodedInput = jsonEncode(input);
+  final instrumentedSource = maxSteps == null ? source : instrumentStepLimit(source, maxSteps);
   return '''
 (function () {
   try {
-    $source
+    $instrumentedSource
     if (typeof execute !== "function") {
       return JSON.stringify({ok: false, error: "no_execute_function"});
     }

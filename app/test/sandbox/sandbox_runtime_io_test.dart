@@ -103,6 +103,56 @@ void main() {
       skip: 'siehe Kommentar: timeout-Parameter haengt statt abzubrechen (nicht automatisierbar ohne Prozessisolation)',
     );
 
+    // SUB-359: Rueckfallgrenze aus docs/27 Abschnitt 1.1 ("Interpreter-
+    // Schrittzaehler ... gegen Endlosschleifen, die innerhalb von 300 ms
+    // viele kurze Yield-Punkte erzeugen"), umgesetzt per Quelltext-
+    // Instrumentierung statt nativem Interpreter-Hook (siehe
+    // sandbox_step_guard.dart). Unabhaengig vom Wall-Clock-Timeout: das
+    // Timeout-Budget bleibt bewusst gross, nur maxSteps ist klein.
+    test('Schleife ohne Endlosschleife-Charakter, aber ueber maxSteps, bricht mit stepLimitExceeded ab', () async {
+      final errorClass = await _errorClassOf(
+        _run(
+          'function execute(input) { var i = 0; for (i = 0; i < 1000000; i++) {} return i; }',
+          limits: const SandboxResourceLimits(timeoutMs: 10000, maxSteps: 1000),
+        ),
+      );
+      expect(errorClass, SandboxErrorClass.stepLimitExceeded);
+    });
+
+    test('while- und do-while-Schleifen werden ebenfalls durch maxSteps begrenzt', () async {
+      for (final source in [
+        'function execute(input) { var i = 0; while (i < 1000000) { i++; } return i; }',
+        'function execute(input) { var i = 0; do { i++; } while (i < 1000000); return i; }',
+      ]) {
+        final errorClass = await _errorClassOf(
+          _run(source, limits: const SandboxResourceLimits(timeoutMs: 10000, maxSteps: 1000)),
+        );
+        expect(errorClass, SandboxErrorClass.stepLimitExceeded, reason: source);
+      }
+    });
+
+    test('Schleife innerhalb von maxSteps liefert weiterhin ihr normales Ergebnis', () async {
+      final output = await _run(
+        'function execute(input) { var sum = 0; for (var i = 0; i < 100; i++) { sum += i; } return sum; }',
+        limits: const SandboxResourceLimits(maxSteps: 10000),
+      );
+      expect(output, 4950);
+    });
+
+    test('das Wort "for"/"while" als Text in String- oder Kommentar-Literalen loest keine Instrumentierung aus', () async {
+      final output = await _run(
+        '''
+          function execute(input) {
+            // for while do - nur ein Kommentar
+            var s = "for (;;) while (;;) do";
+            return s.length;
+          }
+        ''',
+        limits: const SandboxResourceLimits(maxSteps: 10000),
+      );
+      expect(output, 'for (;;) while (;;) do'.length);
+    });
+
     test('Ausgabe ueber max_output_bytes wird als invalidOutput abgefangen', () async {
       final errorClass = await _errorClassOf(
         _run(
