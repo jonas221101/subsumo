@@ -28,6 +28,8 @@ from app.models import (
     Topic,
     User,
     UserCard,
+    WerkbankGenerationAttempt,
+    WerkbankToolCreation,
 )
 
 FREE_DUE_CARDS_PER_DAY = 20
@@ -42,6 +44,17 @@ ANALYZE_WINDOW = timedelta(days=7)
 # Free/Pro-Status, denn die Kosten entstehen unabhaengig von der Paywall.
 LLM_CORRECTIONS_PER_USER_PER_MONTH = 20
 LLM_MONTHLY_WINDOW = timedelta(days=30)
+
+# Kontingent + Versuchslimit Werkbank (SUB-367, docs/27-werkbank-spezifikation.md
+# Abschnitt 6.2). Zwei getrennte Zaehler, weil ein fehlgeschlagener
+# Generierungsversuch dieselben Modellkosten verursacht wie ein erfolgreicher
+# (Abschnitt 6.1), aber nur die persistierte Erstellung Gegenwert liefert - ein
+# einzelner Zaehler wuerde entweder Fehlversuche verschenken oder erfolgreiche
+# Nutzung zu frueh sperren. Beide Zahlen sind laut Abschnitt 6.2 ausdruecklich
+# **Platzhalter bis zur Messung an echten Erstellungen**, wie schon bei der
+# Kostenbremse LLM-Korrektur oben - keine der beiden ist ein Freigabegegenstand.
+WERKBANK_FREE_CREATIONS_PER_MONTH = 1  # Platzhalter, docs/27 Abschnitt 6.2
+WERKBANK_ATTEMPTS_PER_DAY = 10  # Platzhalter, docs/27 Abschnitt 6.2
 
 
 def is_free_tier(user: User, settings: Settings, *, now: datetime | None = None) -> bool:
@@ -179,18 +192,93 @@ def record_llm_correction_call(db: Session, user: User, *, now: datetime) -> Non
     db.commit()
 
 
+def enforce_tool_creation_quota(db: Session, user: User, *, now: datetime) -> None:
+    """Free-Nutzer duerfen maximal ``WERKBANK_FREE_CREATIONS_PER_MONTH`` Werkzeuge
+    pro rollierendem Monat erstellen (docs/27 Abschnitt 6.2, "Kalendermonat" -
+    als rollierendes 30-Tage-Fenster angenaehert, wie bereits bei
+    ``LLM_MONTHLY_WINDOW`` oben statt einer echten Kalendermonatsgrenze).
+
+    Gezaehlt werden ausschliesslich **persistierte** Erstellungen
+    (``record_tool_creation``) - ein abgelehnter Intent-Check oder ein
+    endgueltig fehlgeschlagener Generierungsversuch zaehlt nur gegen
+    ``enforce_tool_attempt_quota``, nicht hiergegen.
+    """
+    window_start = now - LLM_MONTHLY_WINDOW
+    creations = (
+        db.query(WerkbankToolCreation)
+        .filter(
+            WerkbankToolCreation.user_id == user.id,
+            WerkbankToolCreation.created_at >= window_start,
+        )
+        .order_by(WerkbankToolCreation.created_at)
+        .all()
+    )
+    if len(creations) >= WERKBANK_FREE_CREATIONS_PER_MONTH:
+        reset_at = as_utc(creations[0].created_at)
+        assert reset_at is not None
+        reset_at += LLM_MONTHLY_WINDOW
+        _upgrade_required(
+            "werkbank_creation_limit_reached",
+            f"Schon {WERKBANK_FREE_CREATIONS_PER_MONTH} Werkzeug(e) diesen Monat "
+            f"erstellt. Reset am {reset_at.date().isoformat()}.",
+            reset_at=reset_at,
+        )
+
+
+def record_tool_creation(db: Session, user: User, *, now: datetime) -> None:
+    """Zaehlt eine persistierte Werkbank-Werkzeugerstellung fuer das Kontingent."""
+    db.add(WerkbankToolCreation(user_id=user.id, created_at=now))
+    db.commit()
+
+
+def enforce_tool_attempt_quota(db: Session, user: User, *, now: datetime) -> None:
+    """Free-Nutzer duerfen maximal ``WERKBANK_ATTEMPTS_PER_DAY`` Generierungs-
+    versuche pro Kalendertag - erfolgreiche und endgueltig gescheiterte
+    zusammen (docs/27 Abschnitt 6.2), unabhaengig vom Erstellungs-Kontingent.
+    """
+    start_of_day = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    attempts_today = (
+        db.query(WerkbankGenerationAttempt)
+        .filter(
+            WerkbankGenerationAttempt.user_id == user.id,
+            WerkbankGenerationAttempt.created_at >= start_of_day,
+        )
+        .count()
+    )
+    if attempts_today >= WERKBANK_ATTEMPTS_PER_DAY:
+        reset_at = start_of_day + timedelta(days=1)
+        _upgrade_required(
+            "werkbank_attempt_limit_reached",
+            f"Schon {WERKBANK_ATTEMPTS_PER_DAY} Versuche heute genutzt. "
+            f"Reset am {reset_at.date().isoformat()}.",
+            reset_at=reset_at,
+        )
+
+
+def record_tool_attempt(db: Session, user: User, *, now: datetime) -> None:
+    """Zaehlt jeden Generierungsversuch fuers Versuchslimit, Erfolg wie Fehlschlag."""
+    db.add(WerkbankGenerationAttempt(user_id=user.id, created_at=now))
+    db.commit()
+
+
 __all__ = [
     "FREE_ANALYZE_CALLS_PER_WEEK",
     "FREE_CASES",
     "FREE_DUE_CARDS_PER_DAY",
     "LLM_CORRECTIONS_PER_USER_PER_MONTH",
+    "WERKBANK_ATTEMPTS_PER_DAY",
+    "WERKBANK_FREE_CREATIONS_PER_MONTH",
     "area_topic_slugs",
     "due_cards_quota_remaining",
     "enforce_analyze_quota",
     "enforce_case_access",
+    "enforce_tool_attempt_quota",
+    "enforce_tool_creation_quota",
     "is_free_tier",
     "llm_global_budget_exhausted",
     "llm_user_quota_exceeded",
     "locked_area",
     "record_llm_correction_call",
+    "record_tool_attempt",
+    "record_tool_creation",
 ]
