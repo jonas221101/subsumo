@@ -1,0 +1,24 @@
+kurs:
+  slug: or-kommunal-baurecht
+  title: Kommunal- und Baurecht
+  area: oeffentliches-recht
+  semester_default: 5
+  examenskurs: false
+  stand: 2026-09
+  quellen:
+  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: Kommunalverfassung und Bauordnungsrecht des eigenen Bundeslands - Landesrecht, das im
+    Examen fast immer in verwaltungsprozessualer Einkleidung erscheint.
+  lernziele:
+  - Organe der Gemeinde und ihre Zustaendigkeiten nach der Kommunalverfassung des Landes benennen
+  - Anspruch auf Baugenehmigung (Bauplanungs- und Bauordnungsrecht) pruefen
+  klausurformat:
+    typ: Fortgeschrittenenklausur
+    minuten: 180
+  topic_slugs: []
+  landesrecht_kategorien:
+  - landesrecht-allgemein
+  fehlende_themen:
+  - Organe der Gemeinde vertieft (P3)
+  - Bauplanungsrecht §§ 30-35 BauGB (P3)

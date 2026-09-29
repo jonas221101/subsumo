@@ -21,7 +21,7 @@ enum SubsumoSectionBackground {
   heroGradient,
 
   /// [SubsumoColors.accentWash] auf der Standardflaeche - nur fuer die
-  /// "Ehrlich ueber den Umfang"-Sektion, niedrige Deckkraft damit der
+  /// "Was drin ist"-Sektion (vormals "Ehrlich über den Umfang"), niedrige Deckkraft damit der
   /// Fliesstextkontrast nicht spuerbar sinkt.
   accentWash,
 

@@ -1,7 +1,13 @@
 # Recht & Compliance
 
-Kein Rechtsrat — Arbeitsgrundlage für die Produktentwicklung. Vor dem Launch
-ist eine anwaltliche Prüfung einzuholen (Budgetposten in M5).
+Kein Rechtsrat — Arbeitsgrundlage für die Produktentwicklung. Für die
+AGB-Haftungsklausel (`docs/legal/02-agb.md` Abschnitt 8) und den
+Widerrufsverzicht (§ 356 V BGB, `docs/legal/04-widerrufsbelehrung.md`) gilt:
+**bewusst getragen, keine anwaltliche Prüfung** (Entscheidung 25.09.2026,
+siehe `docs/31-projektreview-sub254.md` Abschnitt 9 und
+`docs/17-release-readiness.md` Abschnitt 1). Für die übrigen Rechtstexte
+(insbesondere die Datenschutzerklärung) ist die anwaltliche Prüfung vor dem
+Launch weiterhin offen (Budgetposten in M5).
 
 ## 1. Urheberrecht an Inhalten
 

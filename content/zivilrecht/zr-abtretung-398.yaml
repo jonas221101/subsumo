@@ -1,0 +1,250 @@
+topic:
+  slug: zr-abtretung-398
+  area: zivilrecht
+  title: "Abtretung, §§ 398-413 BGB"
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-fable-5-1
+    status: in-pruefung
+    normzitate_geprueft: true
+cards:
+- slug: zr-abtretung-vertrag-398-norm
+  type: norm
+  front: "Was regelt § 398 BGB, und welche Rechtsnatur hat der Abtretungsvertrag?"
+  back: "Nach § 398 S. 1 BGB kann eine Forderung vom Gläubiger durch Vertrag mit einem anderen auf diesen übertragen werden; mit Abschluss des Vertrags tritt der neue Gläubiger (Zessionar) an die Stelle des bisherigen Gläubigers (Zedent), § 398 S. 2 BGB. Der Abtretungsvertrag ist ein Verfügungsgeschäft über die Forderung: Er setzt sich aus zwei übereinstimmenden Willenserklärungen zusammen, ist grundsätzlich formfrei und abstrakt vom zugrunde liegenden Kausalgeschäft (Kauf, Sicherungsabrede, Schenkung). Die Unwirksamkeit des Kausalgeschäfts berührt die Abtretung daher nicht; der Zedent kann die Forderung dann nur nach § 812 Abs. 1 S. 1 Alt. 1 BGB zurückverlangen. Der Schuldner ist am Abtretungsvertrag nicht beteiligt und muss weder zustimmen noch benachrichtigt werden; sein Schutz wird durch die §§ 404 ff. BGB gewährleistet. Wirksamkeitsvoraussetzungen sind neben dem Vertrag das Bestehen der Forderung, die Berechtigung des Zedenten, die Bestimmtheit oder Bestimmbarkeit der Forderung und ihre Abtretbarkeit."
+  norms:
+  - § 398 S. 1 BGB
+  - § 398 S. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-abtretung-bestimmbarkeit
+  type: definition
+  front: "Was verlangt der Bestimmtheitsgrundsatz bei der Abtretung, insbesondere bei künftigen Forderungen und der Globalzession?"
+  back: "Als Verfügung muss die Abtretung die übertragene Forderung so bezeichnen, dass sie im Zeitpunkt ihrer Entstehung eindeutig identifiziert werden kann; es genügt Bestimmbarkeit, Bestimmtheit im Abtretungszeitpunkt ist nicht erforderlich. Deshalb können auch künftige Forderungen abgetreten werden (Vorausabtretung), etwa alle Forderungen aus dem Weiterverkauf einer unter Eigentumsvorbehalt gelieferten Ware; die Verfügung wird mit Entstehung der Forderung ohne weiteres Zutun wirksam, wobei der Zessionar die Forderung nach h.M. unmittelbar erwirbt, wenn der Zedent bis dahin verfügungsbefugt geblieben ist. Bei der Globalzession, mit der ein Kreditnehmer alle bestehenden und künftigen Forderungen gegen bestimmte oder alle Kunden zur Sicherheit abtritt, ist Bestimmbarkeit gewahrt, wenn sich anhand der Abtretungsvereinbarung feststellen lässt, welche Forderungen erfasst sind (etwa alle Forderungen aus Lieferungen und Leistungen gegen Kunden mit Anfangsbuchstaben A bis K). Unbestimmt und daher unwirksam ist dagegen die Abtretung „eines Teils“ der Forderungen ohne Kriterium für die Auswahl."
+  norms:
+  - § 398 S. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-abtretung-ausschluss-399-400
+  type: definition
+  front: "Wann ist eine Forderung nach §§ 399, 400 BGB nicht abtretbar?"
+  back: "§ 399 Alt. 1 BGB schließt die Abtretung aus, wenn die Leistung an einen anderen als den ursprünglichen Gläubiger nicht ohne Veränderung ihres Inhalts erfolgen kann; das betrifft höchstpersönliche Ansprüche (Anspruch auf Dienstleistung gegenüber einer bestimmten Person, Unterhaltsansprüche in ihrem Kern), Ansprüche, die untrennbar mit einem Rechtsverhältnis verbunden sind (Befreiungsansprüche, solange der Gläubiger des Befreiungsanspruchs nicht an den Gläubiger der zu tilgenden Schuld abtritt), und Gestaltungsrechte ohne die zugehörige Forderung. § 399 Alt. 2 BGB erfasst das rechtsgeschäftliche Abtretungsverbot: Gläubiger und Schuldner können die Abtretbarkeit durch Vereinbarung ausschließen, was auch in Allgemeinen Geschäftsbedingungen möglich ist; die Abtretung ist dann nach h.M. absolut unwirksam, der Schuldner kann ihr aber nachträglich zustimmen. § 400 BGB verbietet die Abtretung unpfändbarer Forderungen, um das Existenzminimum des Gläubigers und die Sozialkassen zu schützen. Für beiderseitige Handelsgeschäfte enthält das Handelsgesetzbuch eine Sonderregel, nach der die Abtretung trotz vertraglichen Verbots wirksam ist und der Schuldner befreiend an den Zedenten leisten kann."
+  norms:
+  - § 399 Alt. 1 BGB
+  - § 399 Alt. 2 BGB
+  - § 400 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-abtretung-399-verbot-wirkung-streit
+  type: streitstand
+  front: "Wirkt ein vertragliches Abtretungsverbot nach § 399 Alt. 2 BGB absolut oder nur relativ?"
+  back: "Nach herrschender Meinung und ständiger Rechtsprechung (BGH) hat das vertragliche Abtretungsverbot absolute Wirkung: Die verbotswidrige Abtretung ist gegenüber jedermann unwirksam, die Forderung verbleibt beim Zedenten, und auch Dritte, etwa Gläubiger des Zessionars, können sich nicht auf einen Forderungsübergang berufen. Begründung: Nach § 399 Alt. 2 BGB „kann“ die Forderung nicht abgetreten werden; die Parteien haben ihr durch die Vereinbarung die Verkehrsfähigkeit genommen und damit den Inhalt der Forderung selbst gestaltet (Inhaltstheorie). § 137 S. 1 BGB steht nicht entgegen, weil § 399 Alt. 2 BGB eine gesetzlich zugelassene Ausnahme ist. Die Gegenauffassung (Teile der Literatur) nimmt nur relative Unwirksamkeit an: Die Abtretung sei wirksam, der Schuldner könne sich aber gegenüber dem Zessionar auf das Verbot berufen und mit befreiender Wirkung an den Zedenten leisten. Dafür wird der Schutzzweck der Regelung angeführt, der allein dem Schuldner diene; Dritte müssten nicht geschützt werden. Praktisch bedeutsam ist der Streit bei der Frage, ob der Schuldner die Abtretung nachträglich genehmigen kann (nach h.M. ja, mit Wirkung ex nunc) und ob Sicherungsnehmer trotz Verbots eine gesicherte Position erlangen."
+  norms:
+  - § 399 Alt. 2 BGB
+  - § 137 S. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-abtretung-rechtsfolgen-401-402-403
+  type: definition
+  front: "Welche Rechtsfolgen hat die Abtretung nach §§ 401-403 BGB für Nebenrechte und Informationspflichten?"
+  back: "Mit der Forderung gehen nach § 401 Abs. 1 BGB die akzessorischen Sicherungsrechte - Hypothek, Schiffshypothek, Pfandrecht und Bürgschaft - kraft Gesetzes auf den Zessionar über; sie können nicht getrennt von der Forderung zurückbehalten werden. Nach § 401 Abs. 2 BGB kann der neue Gläubiger auch Vorzugsrechte geltend machen, die mit der Forderung verbunden sind. Nicht akzessorische Sicherheiten (Sicherungsübereignung, Sicherungsgrundschuld, Vorbehaltseigentum) gehen nicht automatisch über; nach h.M. ist der Zedent aber aus der Sicherungsabrede oder analog § 401 BGB zu ihrer Übertragung verpflichtet. Unselbständige Hilfsrechte (Mahnung, Fristsetzung, Kündigung wegen der abgetretenen Forderung) folgen der Forderung ebenfalls. § 402 BGB verpflichtet den Zedenten, dem Zessionar die zur Geltendmachung nötige Auskunft zu erteilen und die Beweisurkunden auszuliefern; § 403 BGB gibt dem Zessionar einen Anspruch auf eine öffentlich beglaubigte Abtretungsurkunde. Diese Pflichten dienen der praktischen Durchsetzbarkeit, insbesondere gegenüber dem Schuldner, der nach § 410 BGB die Leistung bis zur Vorlage einer Abtretungsurkunde verweigern kann."
+  norms:
+  - § 401 Abs. 1 BGB
+  - § 402 BGB
+  - § 403 BGB
+  - § 410 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-abtretung-schuldnerschutz-404
+  type: definition
+  front: "Welche Einwendungen kann der Schuldner dem Zessionar nach § 404 BGB entgegenhalten?"
+  back: "§ 404 BGB verwirklicht den Grundsatz, dass sich die Rechtsstellung des Schuldners durch die Abtretung nicht verschlechtern darf: Er kann dem neuen Gläubiger alle Einwendungen entgegensetzen, die zur Zeit der Abtretung gegen den bisherigen Gläubiger begründet waren. Erfasst sind rechtshindernde und rechtsvernichtende Einwendungen (Nichtigkeit des Grundgeschäfts, Erfüllung, Anfechtung, Rücktritt) ebenso wie Einreden (Verjährung, Stundung, Zurückbehaltungsrecht, Einrede des nicht erfüllten Vertrags). „Begründet“ ist eine Einwendung bereits dann, wenn ihr Rechtsgrund im Zeitpunkt der Abtretung gelegt war, auch wenn sie erst später entsteht oder ausgeübt wird; ein nach der Abtretung entstehender Mangelgewährleistungsanspruch aus einem vor der Abtretung geschlossenen Vertrag ist daher ebenso erfasst wie ein erst später erklärter Rücktritt. Nicht erfasst sind Einwendungen, deren Grundlage erst nach der Abtretung geschaffen wurde, etwa ein nachträglicher Erlassvertrag mit dem Zedenten (insoweit gilt § 407 BGB). Der gute Glaube des Zessionars an das Fehlen von Einwendungen wird nicht geschützt; eine Ausnahme enthält nur § 405 BGB für die Urkundenabtretung."
+  norms:
+  - § 404 BGB
+  - § 405 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-abtretung-aufrechnung-406
+  type: definition
+  front: "Unter welchen Voraussetzungen kann der Schuldner nach § 406 BGB gegenüber dem Zessionar mit einer Forderung gegen den Zedenten aufrechnen?"
+  back: "§ 406 BGB erweitert den Schuldnerschutz auf die Aufrechnung, die nach § 387 BGB eigentlich Gegenseitigkeit voraussetzt, an der es nach der Abtretung fehlt. Der Schuldner kann eine ihm gegen den Zedenten zustehende Forderung auch dem Zessionar gegenüber aufrechnen. Ausgeschlossen ist dies in zwei Fällen: Erstens, wenn der Schuldner beim Erwerb seiner Gegenforderung die Abtretung kannte; dann durfte er nicht mehr auf die Aufrechnungsmöglichkeit vertrauen. Zweitens, wenn die Gegenforderung erst nach Kenntnis von der Abtretung und später als die abgetretene Forderung fällig geworden ist; in diesem Fall hätte der Schuldner auch ohne Abtretung nicht aufrechnen können, weil er selbst zuerst hätte leisten müssen. Geschützt wird also das Vertrauen des Schuldners auf eine bereits vor Kenntnis der Abtretung angelegte Aufrechnungslage oder zumindest auf deren absehbaren Eintritt. Die Aufrechnungserklärung selbst ist nach der Abtretung gegenüber dem Zessionar als neuem Gläubiger abzugeben."
+  norms:
+  - § 406 BGB
+  - § 387 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-abtretung-leistung-an-zedent-407
+  type: definition
+  front: "Was regelt § 407 BGB zur Leistung an den bisherigen Gläubiger?"
+  back: "Weil der Schuldner von der Abtretung nichts wissen muss, schützt § 407 Abs. 1 BGB sein Vertrauen auf die fortbestehende Gläubigerstellung des Zedenten: Der Zessionar muss eine Leistung, die der Schuldner nach der Abtretung an den bisherigen Gläubiger bewirkt, sowie jedes Rechtsgeschäft, das zwischen Schuldner und bisherigem Gläubiger über die Forderung vorgenommen wird (Erlass, Stundung, Aufrechnungsvertrag), gegen sich gelten lassen, es sei denn, der Schuldner kannte die Abtretung bei der Leistung oder Vornahme des Rechtsgeschäfts. Nur positive Kenntnis schadet, grob fahrlässige Unkenntnis nicht; die Beweislast für die Kenntnis trägt der Zessionar. § 407 Abs. 2 BGB erstreckt den Schutz auf rechtskräftige Urteile in einem nach der Abtretung zwischen Schuldner und Zedent anhängig gewordenen Rechtsstreit. Die Vorschrift wirkt nur zugunsten des Schuldners: Er kann auf den Schutz verzichten und die Leistung an den Zedenten als nicht befreiend behandeln, etwa wenn dieser insolvent ist. Der Zessionar kann das vom Zedenten Erlangte nach § 816 Abs. 2 BGB herausverlangen. § 409 BGB ergänzt den Schutz für den Fall, dass der Gläubiger eine Abtretung anzeigt, die tatsächlich nicht oder nicht wirksam erfolgt ist."
+  norms:
+  - § 407 Abs. 1 BGB
+  - § 407 Abs. 2 BGB
+  - § 816 Abs. 2 BGB
+  - § 409 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-abtretung-mehrfachabtretung-408
+  type: definition
+  front: "Wie wird die Mehrfachabtretung derselben Forderung behandelt, und was bewirkt § 408 BGB?"
+  back: "Tritt der Gläubiger dieselbe Forderung nacheinander an mehrere Personen ab, gilt das Prioritätsprinzip: Mit der ersten wirksamen Abtretung verliert der Zedent die Forderung, sodass jede weitere Abtretung als Verfügung eines Nichtberechtigten ins Leere geht. Einen gutgläubigen Erwerb von Forderungen kennt das Gesetz nicht (Ausnahme: § 405 BGB bei Vorlage einer Schuldurkunde), weshalb der Zweitzessionar auch bei Unkenntnis der Erstabtretung nichts erwirbt. Bei Vorausabtretungen künftiger Forderungen entscheidet ebenfalls der Zeitpunkt des Abtretungsvertrags, nicht der Zeitpunkt des Entstehens der Forderung. § 408 Abs. 1 BGB schützt den Schuldner, der in Unkenntnis der Erstabtretung an den Zweitzessionar leistet oder mit ihm ein Rechtsgeschäft vornimmt, indem er § 407 BGB für entsprechend anwendbar erklärt: Die Leistung an den vermeintlichen neuen Gläubiger befreit den Schuldner gegenüber dem wahren Gläubiger. Der Erstzessionar kann sich dann nach § 816 Abs. 2 BGB an den Zweitzessionar halten. Nach § 408 Abs. 2 BGB gilt dasselbe bei gerichtlicher Überweisung oder gesetzlichem Forderungsübergang."
+  norms:
+  - § 408 Abs. 1 BGB
+  - § 408 Abs. 2 BGB
+  - § 407 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-abtretung-398
+  title: "Forderungserwerb durch Abtretung, § 398 BGB, und Schuldnerschutz, §§ 404 ff. BGB"
+  norms:
+  - § 398 BGB
+  - § 399 BGB
+  - § 404 BGB
+  - § 406 BGB
+  - § 407 BGB
+  - § 408 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: "I. Wirksamer Abtretungsvertrag zwischen Zedent und Zessionar, § 398 S. 1 BGB"
+    hinweis: "Verfügungsgeschäft, formfrei, abstrakt vom Kausalgeschäft; Schuldner nicht beteiligt."
+  - label: "II. Bestehen der Forderung und Berechtigung des Zedenten"
+    children:
+    - label: "1. Forderung entstanden (bei künftigen Forderungen: spätestens bei Entstehung)"
+    - label: "2. Zedent ist Inhaber - kein gutgläubiger Forderungserwerb (Ausnahme § 405 BGB); Prioritätsprinzip bei Mehrfachabtretung"
+  - label: "III. Bestimmtheit oder Bestimmbarkeit der Forderung"
+  - label: "IV. Abtretbarkeit"
+    children:
+    - label: "1. Kein Ausschluss wegen Inhaltsänderung, § 399 Alt. 1 BGB"
+    - label: "2. Kein vertragliches Abtretungsverbot, § 399 Alt. 2 BGB (h.M.: absolute Unwirksamkeit)"
+    - label: "3. Keine Unpfändbarkeit, § 400 BGB"
+  - label: "V. Rechtsfolge: Zessionar wird neuer Gläubiger, § 398 S. 2 BGB; Übergang der Nebenrechte, § 401 BGB"
+  - label: "VI. Schuldnerschutz"
+    children:
+    - label: "1. Einwendungen aus der Zeit vor der Abtretung, § 404 BGB"
+    - label: "2. Aufrechnung mit Forderungen gegen den Zedenten, § 406 BGB"
+    - label: "3. Leistung an den Zedenten in Unkenntnis der Abtretung, § 407 BGB"
+    - label: "4. Leistung an den Zweitzessionar bei Mehrfachabtretung, § 408 BGB"
+    - label: "5. Angezeigte, aber unwirksame Abtretung, § 409 BGB; Urkundenvorlage, § 410 BGB"
+faelle:
+- slug: zr-fall-abgetretener-werklohn
+  title: "Der abgetretene Werklohn"
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: "Der Heizungsbauer A baut für den privaten Hausbesitzer B eine neue Heizungsanlage ein; nach Abnahme am 1.3. steht A ein Werklohn von 5.000 EUR zu. Um einen Kredit abzusichern, tritt A die Werklohnforderung am 10.3. schriftlich an die Bank C ab; B wird davon nicht informiert. Am 20.3. überweist B, der von der Abtretung nichts weiß, 2.000 EUR an A. Kurz darauf stellt sich heraus, dass A bei der Montage einen Ventilschaden verursacht hat, den B am 25.3. für 1.500 EUR durch einen anderen Betrieb beheben lässt, nachdem A die Nachbesserung endgültig verweigert hatte. Am 1.4. tritt A dieselbe Werklohnforderung, die er inzwischen als frei verfügbar ansieht, erneut an seinen Lieferanten D ab, der die Erstabtretung nicht kennt. Am 5.4. zeigt C dem B die Abtretung an und verlangt Zahlung von 5.000 EUR. B meint, er habe bereits 2.000 EUR bezahlt und könne mit seinem Kostenerstattungsanspruch von 1.500 EUR aufrechnen. D verlangt seinerseits von B Zahlung."
+  question: "In welcher Höhe kann C von B Zahlung verlangen, und hat D einen Anspruch gegen B?"
+  steps:
+  - prompt: "Ist C durch die Abtretung vom 10.3. Gläubigerin der Werklohnforderung geworden?"
+    erwartung: "Ja. A und C haben einen Abtretungsvertrag nach § 398 S. 1 BGB geschlossen; die Forderung bestand (Werklohn nach Abnahme fällig), A war Inhaber, die Forderung ist bestimmt und abtretbar (kein Fall des § 399 BGB oder § 400 BGB). Mit dem Vertrag ist C nach § 398 S. 2 BGB an die Stelle des A getreten. Eine Anzeige an B war nicht erforderlich."
+  - prompt: "Wirkt die Zahlung der 2.000 EUR an A gegenüber C?"
+    erwartung: "Ja. B hat nach der Abtretung an den bisherigen Gläubiger geleistet, ohne die Abtretung zu kennen. Nach § 407 Abs. 1 BGB muss C diese Leistung gegen sich gelten lassen; die Forderung ist in Höhe von 2.000 EUR erloschen. C kann sich wegen der 2.000 EUR nach § 816 Abs. 2 BGB an A halten."
+  - prompt: "Kann B gegenüber C mit dem Kostenerstattungsanspruch von 1.500 EUR aufrechnen?"
+    erwartung: "Ja. Der Anspruch auf Ersatz der Selbstvornahmekosten aus § 637 Abs. 1 BGB richtet sich gegen A, nicht gegen C, sodass es an der Gegenseitigkeit nach § 387 BGB fehlt. § 406 BGB erlaubt die Aufrechnung dennoch, weil B die Abtretung beim Erwerb der Gegenforderung nicht kannte und die Gegenforderung nicht erst nach Kenntnis von der Abtretung fällig geworden ist; die Aufrechnung ist gegenüber C zu erklären. Zusätzlich war der Mangel schon im Zeitpunkt der Abtretung angelegt, sodass B sich auch auf § 404 BGB berufen könnte. Die Forderung reduziert sich auf 1.500 EUR."
+  - prompt: "Hat D durch die Abtretung vom 1.4. etwas erworben?"
+    erwartung: "Nein. Im Zeitpunkt der Zweitabtretung war A nicht mehr Inhaber der Forderung; nach dem Prioritätsprinzip geht die zweite Abtretung ins Leere, ein gutgläubiger Forderungserwerb ist außerhalb des § 405 BGB nicht möglich. D hat keinen Anspruch gegen B. Hätte B in Unkenntnis der Erstabtretung an D geleistet, wäre er nach § 408 Abs. 1 BGB iVm § 407 Abs. 1 BGB befreit worden; dazu ist es nicht gekommen."
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: "Wirksame Abtretung an C nach § 398 S. 1 BGB geprüft: Abtretungsvertrag, bestehende Forderung, Berechtigung des A, Bestimmtheit, Abtretbarkeit; Rechtsfolge § 398 S. 2 BGB"
+      weight: 2.0
+      required: true
+      norms:
+      - § 398 S. 1 BGB
+      - § 398 S. 2 BGB
+      - § 399 BGB
+      keywords:
+      - "398"
+      - Abtretungsvertrag
+      - Zessionar
+      - Gläubiger
+      card_slugs:
+      - zr-abtretung-vertrag-398-norm
+      - zr-abtretung-ausschluss-399-400
+    - id: p2
+      label: "Erkannt, dass die Abtretung ohne Kenntnis oder Zustimmung des Schuldners wirksam ist und keine Anzeige erfordert"
+      weight: 1.0
+      norms:
+      - § 398 S. 1 BGB
+      keywords:
+      - Anzeige
+      - Zustimmung
+      - Schuldner nicht beteiligt
+      card_slugs:
+      - zr-abtretung-vertrag-398-norm
+    - id: p3
+      label: "Zahlung von 2.000 EUR an A wirkt nach § 407 Abs. 1 BGB gegen C, da B die Abtretung nicht kannte; Verweis auf § 816 Abs. 2 BGB im Verhältnis C-A"
+      weight: 2.0
+      required: true
+      norms:
+      - § 407 Abs. 1 BGB
+      - § 816 Abs. 2 BGB
+      keywords:
+      - "407"
+      - Kenntnis
+      - befreiend
+      - "2.000"
+      card_slugs:
+      - zr-abtretung-leistung-an-zedent-407
+    - id: p4
+      label: "Aufrechnung mit dem Selbstvornahmeanspruch gegenüber C nach § 406 BGB zugelassen (keine Kenntnis beim Erwerb, keine spätere Fälligkeit); § 404 BGB ergänzend genannt"
+      weight: 2.0
+      required: true
+      norms:
+      - § 406 BGB
+      - § 404 BGB
+      - § 387 BGB
+      keywords:
+      - "406"
+      - Aufrechnung
+      - "404"
+      - Gegenseitigkeit
+      card_slugs:
+      - zr-abtretung-aufrechnung-406
+      - zr-abtretung-schuldnerschutz-404
+    - id: p5
+      label: "Zweitabtretung an D geht nach dem Prioritätsprinzip ins Leere; kein gutgläubiger Forderungserwerb außerhalb des § 405 BGB"
+      weight: 2.0
+      required: true
+      norms:
+      - § 398 S. 1 BGB
+      - § 405 BGB
+      - § 408 Abs. 1 BGB
+      keywords:
+      - Priorität
+      - Nichtberechtigter
+      - gutgläubig
+      - "408"
+      card_slugs:
+      - zr-abtretung-mehrfachabtretung-408
+    - id: p6
+      label: "Ergebnis: C kann von B 1.500 EUR verlangen; D hat keinen Anspruch gegen B"
+      weight: 1.0
+      keywords:
+      - "1.500"
+      - "1500"
+      - kein Anspruch
+      - D

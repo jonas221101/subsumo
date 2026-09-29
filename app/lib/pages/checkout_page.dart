@@ -22,7 +22,7 @@ extension on _Plan {
       };
 
   String get detail => switch (this) {
-        _Plan.monthly => 'Monatlich kuendbar.',
+        _Plan.monthly => 'Monatlich kündbar.',
         _Plan.yearly => 'Entspricht 3,25 EUR / Monat.',
       };
 }
@@ -54,13 +54,13 @@ class _CheckoutPageState extends State<CheckoutPage> {
       final uri = Uri.parse(checkoutUrl);
       final opened = await launchUrl(uri, mode: LaunchMode.externalApplication);
       if (!opened && mounted) {
-        setState(() => _error = 'Checkout konnte nicht geoeffnet werden.');
+        setState(() => _error = 'Checkout konnte nicht geöffnet werden.');
       }
     } on ApiException catch (e) {
       if (mounted) setState(() => _error = e.message);
     } on Exception {
       if (mounted) {
-        setState(() => _error = 'Server nicht erreichbar. Bitte spaeter erneut versuchen.');
+        setState(() => _error = 'Server nicht erreichbar. Bitte später erneut versuchen.');
       }
     } finally {
       if (mounted) setState(() => _busyPlan = null);
@@ -84,7 +84,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
               const SizedBox(height: Spacing.md),
               const SubsumoFeedbackBlock(
                 message: 'Preisgarantie: dein Preis bleibt dauerhaft bestehen, '
-                    'auch wenn der Listenpreis spaeter steigt.',
+                    'auch wenn der Listenpreis später steigt.',
                 severity: FeedbackSeverity.hint,
               ),
               const SizedBox(height: Spacing.xl),
@@ -133,7 +133,7 @@ class _PlanCard extends StatelessWidget {
           Text(plan.detail, style: Theme.of(context).textTheme.bodyMedium),
           const SizedBox(height: Spacing.md),
           SubsumoButton.primary(
-            label: busy ? 'Bitte warten ...' : 'Auswaehlen',
+            label: busy ? 'Bitte warten ...' : 'Auswählen',
             onPressed: disabled ? null : onSelect,
           ),
         ],
@@ -186,16 +186,16 @@ class _CheckoutReturnBannerState extends State<CheckoutReturnBanner> {
   Widget build(BuildContext context) {
     final (message, severity) = switch (_outcome) {
       _ReturnOutcome.confirming => (
-          'Zahlung wird bestaetigt ...',
+          'Zahlung wird bestätigt ...',
           FeedbackSeverity.hint,
         ),
       _ReturnOutcome.confirmed => (
-          'Zahlung bestaetigt - du bist jetzt Pro.',
+          'Zahlung bestätigt - du bist jetzt Pro.',
           FeedbackSeverity.positive,
         ),
       _ReturnOutcome.delayed => (
           'Zahlung eingegangen, die Freischaltung kann noch einen Moment '
-              'dauern. Bitte gleich noch einmal pruefen.',
+              'dauern. Bitte gleich noch einmal prüfen.',
           FeedbackSeverity.hint,
         ),
       _ReturnOutcome.cancelled => ('Zahlung abgebrochen.', FeedbackSeverity.neutral),

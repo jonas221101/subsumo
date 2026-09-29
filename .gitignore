@@ -28,3 +28,7 @@ app/web/
 .redaktion-bridge/
 .mission-control/
 work/mission-control/
+
+# Lokale Build-Ablage (EXE-Entpackung) und gerenderte Review-Screenshots
+dist/
+app/test/_screenshots/goldens/

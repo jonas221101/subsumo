@@ -16,10 +16,10 @@ cards:
   type: definition
   front: 'Definiere: abgestufte Verteidigung (Schutzwehr und Trutzwehr)'
   back: Bei der Wahl des erforderlichen Verteidigungsmittels muss der Angegriffene
-    zunaechst das mildeste gleich wirksame Mittel waehlen. Reicht eine blosse Abwehrhandlung
-    (Schutzwehr, z. B. Abblocken, Wegstossen) aus, um den Angriff zu beenden, ist
-    ein Gegenangriff (Trutzwehr, z. B. Zurueckschlagen) nicht erforderlich. Erst wenn
-    die Schutzwehr erkennbar nicht ausreicht, darf zur Trutzwehr uebergegangen werden.
+    zunächst das mildeste gleich wirksame Mittel wählen. Reicht eine bloße Abwehrhandlung
+    (Schutzwehr, z. B. Abblocken, Wegstoßen) aus, um den Angriff zu beenden, ist
+    ein Gegenangriff (Trutzwehr, z. B. Zurückschlagen) nicht erforderlich. Erst wenn
+    die Schutzwehr erkennbar nicht ausreicht, darf zur Trutzwehr übergegangen werden.
   norms:
   - § 32 StGB
   - § 32 Abs. 2 StGB
@@ -33,8 +33,8 @@ cards:
   back: Nothilfe ist die Notwehr zugunsten eines Dritten ("oder einem anderen"). Sie
     setzt dieselbe Notwehrlage voraus wie die Notwehr in eigener Sache. Streitig ist,
     ob der Nothelfer gegen den erkennbaren entgegenstehenden Willen des Angegriffenen
-    eingreifen darf; nach h.M. entfaellt die Rechtfertigung, wenn der Angegriffene
-    ueber ein disponibles Rechtsgut frei verfuegen darf und die Verteidigung erkennbar
+    eingreifen darf; nach h.M. entfällt die Rechtfertigung, wenn der Angegriffene
+    über ein disponibles Rechtsgut frei verfügen darf und die Verteidigung erkennbar
     ablehnt.
   norms:
   - § 32 Abs. 2 StGB
@@ -43,37 +43,37 @@ cards:
   stand: 2026-09
 - slug: sr-notwehr-provokation
   type: streitstand
-  front: 'Streitstand: sozialethische Einschraenkung bei Notwehrprovokation'
+  front: 'Streitstand: sozialethische Einschränkung bei Notwehrprovokation'
   back: 'Problem: Wer den Angriff durch ein vorwerfbares Vorverhalten selbst
 
-    herausgefordert hat, soll sich nicht uneingeschraenkt auf sein
+    herausgefordert hat, soll sich nicht uneingeschränkt auf sein
 
-    Notwehrrecht berufen koennen.
+    Notwehrrecht berufen können.
 
 
-    Rspr./h.M. (abgestufte Loesung): Bei einer schuldhaften, das
+    Rspr./h.M. (abgestufte Lösung): Bei einer schuldhaften, das
 
-    Notwehrrecht nicht generell ausschliessenden Provokation gilt ein
+    Notwehrrecht nicht generell ausschließenden Provokation gilt ein
 
-    dreistufiges Ausweichgebot: (1) Ausweichen, wenn moeglich; (2)
+    dreistufiges Ausweichgebot: (1) Ausweichen, wenn möglich; (2)
 
-    andernfalls nur Schutzwehr; (3) Trutzwehr nur als aeusserstes Mittel,
+    andernfalls nur Schutzwehr; (3) Trutzwehr nur als äußerstes Mittel,
 
     wenn die Schutzwehr erkennbar nicht ausreicht.
 
 
-    Andere Ansicht (vollstaendiger Ausschluss bei Absichtsprovokation): Wer
+    Andere Ansicht (vollständiger Ausschluss bei Absichtsprovokation): Wer
 
-    den Angriff bewusst herbeifuehrt, um den Angreifer unter dem Deckmantel
+    den Angriff bewusst herbeiführt, um den Angreifer unter dem Deckmantel
 
-    der Notwehr zu verletzen, handelt rechtsmissbraeuchlich; das
+    der Notwehr zu verletzen, handelt rechtsmissbräuchlich; das
 
-    Notwehrrecht entfaellt vollstaendig.
+    Notwehrrecht entfällt vollständig.
 
 
-    Konsequenz: Der Umfang der Einschraenkung haengt vom Grad der
+    Konsequenz: Der Umfang der Einschränkung hängt vom Grad der
 
-    Vorwerfbarkeit der Provokation ab - von leichter Fahrlaessigkeit bis
+    Vorwerfbarkeit der Provokation ab - von leichter Fahrlässigkeit bis
 
     zur zielgerichteten Absichtsprovokation.
 
@@ -85,13 +85,13 @@ cards:
   stand: 2026-09
 - slug: sr-notwehr-bagatelle-missverhaeltnis
   type: definition
-  front: 'Definiere: sozialethische Einschraenkung wegen krassen Missverhaeltnisses
+  front: 'Definiere: sozialethische Einschränkung wegen krassen Missverhältnisses
     (Bagatellangriff)'
-  back: Steht der drohende Schaden fuer den Angreifer in einem krassen, unertraeglichen
-    Missverhaeltnis zu dem vom Angriff bedrohten Rechtsgut (z. B. Todesgefahr fuer
-    den Angreifer zur Abwehr eines geringfuegigen Eigentumsangriffs), ist die Verteidigung
-    nicht mehr "geboten" i.S.d. § 32 Abs. 1 StGB. Diese Einschraenkung greift nur
-    in Extremfaellen; das Notwehrrecht kennt grundsaetzlich keine Gueter- und Interessenabwaegung
+  back: Steht der drohende Schaden für den Angreifer in einem krassen, unerträglichen
+    Missverhältnis zu dem vom Angriff bedrohten Rechtsgut (z. B. Todesgefahr für
+    den Angreifer zur Abwehr eines geringfügigen Eigentumsangriffs), ist die Verteidigung
+    nicht mehr "geboten" i.S.d. § 32 Abs. 1 StGB. Diese Einschränkung greift nur
+    in Extremfällen; das Notwehrrecht kennt grundsätzlich keine Güter- und Interessenabwägung
     wie der rechtfertigende Notstand.
   norms:
   - § 32 Abs. 1 StGB
@@ -100,12 +100,12 @@ cards:
   stand: 2026-09
 - slug: sr-notwehr-schuldlos-handelnde
   type: definition
-  front: 'Definiere: Einschraenkung der Notwehr gegenueber erkennbar schuldlos Handelnden'
-  back: 'Ist fuer den Angegriffenen erkennbar, dass der Angreifer schuldlos handelt
+  front: 'Definiere: Einschränkung der Notwehr gegenüber erkennbar schuldlos Handelnden'
+  back: 'Ist für den Angegriffenen erkennbar, dass der Angreifer schuldlos handelt
     (Kinder, erkennbar Betrunkene, erkennbar Geisteskranke i.S.d. § 20 StGB), wird
-    sein Notwehrrecht eingeschraenkt: Er muss vorrangig ausweichen oder sich auf Schutzwehr
-    beschraenken; eine verletzende Trutzwehr ist nur als letztes Mittel gerechtfertigt.
-    Grund: Das Rechtsbewaehrungsprinzip tritt zurueck, wenn kein vorwerfbares Unrecht
+    sein Notwehrrecht eingeschränkt: Er muss vorrangig ausweichen oder sich auf Schutzwehr
+    beschränken; eine verletzende Trutzwehr ist nur als letztes Mittel gerechtfertigt.
+    Grund: Das Rechtsbewährungsprinzip tritt zurück, wenn kein vorwerfbares Unrecht
     des Angreifers droht.'
   norms:
   - § 32 StGB
@@ -116,10 +116,10 @@ cards:
 - slug: sr-notwehrexzess-33
   type: definition
   front: 'Definiere: Notwehrexzess, § 33 StGB'
-  back: Ueberschreitet der Angegriffene aus Verwirrung, Furcht oder Schrecken die
-    Grenzen der Notwehr, handelt er zwar rechtswidrig, wird aber nicht bestraft (persoenlicher
-    Strafausschliessungsgrund auf Schuldebene). Erfasst ist nach h.M. nur der intensive
-    Exzess (Ueberschreitung der erforderlichen Verteidigungsintensitaet), nicht der
+  back: Überschreitet der Angegriffene aus Verwirrung, Furcht oder Schrecken die
+    Grenzen der Notwehr, handelt er zwar rechtswidrig, wird aber nicht bestraft (persönlicher
+    Strafausschließungsgrund auf Schuldebene). Erfasst ist nach h.M. nur der intensive
+    Exzess (Überschreitung der erforderlichen Verteidigungsintensität), nicht der
     extensive Exzess (Verteidigung vor Beginn oder nach Beendigung des Angriffs) -
     dort fehlt es bereits an einer Notwehrlage.
   norms:
@@ -131,10 +131,10 @@ cards:
 - slug: sr-notwehr-erforderlichkeit-kriterien
   type: definition
   front: 'Definiere: Kriterien der Erforderlichkeit einer Notwehrhandlung'
-  back: Erforderlich ist das unter den verfuegbaren Mitteln geeignete und zugleich
-    mildeste, das den Angriff mit Sicherheit sofort beendet. Massgeblich ist eine
+  back: Erforderlich ist das unter den verfügbaren Mitteln geeignete und zugleich
+    mildeste, das den Angriff mit Sicherheit sofort beendet. Maßgeblich ist eine
     Ex-ante-Betrachtung aus Sicht des Angegriffenen im Angriffszeitpunkt, nicht eine
-    nachtraegliche Betrachtung. Der Angegriffene muss kein Risiko eingehen, dass ein
+    nachträgliche Betrachtung. Der Angegriffene muss kein Risiko eingehen, dass ein
     milderes Mittel den Angriff nur unsicher beendet.
   norms:
   - § 32 Abs. 2 StGB
@@ -143,7 +143,7 @@ cards:
   stand: 2026-09
 schemata:
 - slug: sr-schema-notwehrexzess
-  title: 'Pruefung: Notwehr (§ 32 StGB) und Notwehrexzess (§ 33 StGB)'
+  title: 'Prüfung: Notwehr (§ 32 StGB) und Notwehrexzess (§ 33 StGB)'
   norms:
   - § 32 StGB
   - § 33 StGB
@@ -155,26 +155,26 @@ schemata:
   steps:
   - label: I. Notwehrlage
     children:
-    - label: 1. Angriff - jede drohende Verletzung rechtlich geschuetzter Interessen
-    - label: 2. Gegenwaertigkeit - unmittelbar bevorstehend, andauernd oder gerade
+    - label: 1. Angriff - jede drohende Verletzung rechtlich geschützter Interessen
+    - label: 2. Gegenwärtigkeit - unmittelbar bevorstehend, andauernd oder gerade
         stattfindend
     - label: 3. Rechtswidrigkeit des Angriffs
   - label: II. Notwehrhandlung
     children:
     - label: 1. Erforderlichkeit - geeignetes und mildestes gleich sicher wirksames
         Mittel
-    - label: 2. Gebotenheit - keine sozialethische Einschraenkung
+    - label: 2. Gebotenheit - keine sozialethische Einschränkung
       children:
-      - label: a) Krasses Missverhaeltnis (Bagatellangriff)
+      - label: a) Krasses Missverhältnis (Bagatellangriff)
       - label: b) Angriff erkennbar schuldlos Handelnder
-      - label: c) Vorwerfbare Notwehrprovokation - abgestufte Loesung
-      - label: d) Enge persoenliche Beziehung
+      - label: c) Vorwerfbare Notwehrprovokation - abgestufte Lösung
+      - label: d) Enge persönliche Beziehung
   - label: 'III. Subjektives Rechtfertigungselement: Verteidigungswille'
-  - label: 'IV. Ergebnis: Rechtfertigung (+) oder bei Ueberschreitung: Pruefung §
+  - label: 'IV. Ergebnis: Rechtfertigung (+) oder bei Überschreitung: Prüfung §
       33 StGB'
     children:
-    - label: 1. Ueberschreitung der Notwehrgrenzen (intensiver Exzess)
-    - label: 2. Verwirrung, Furcht oder Schrecken als Ueberschreitungsgrund
+    - label: 1. Überschreitung der Notwehrgrenzen (intensiver Exzess)
+    - label: 2. Verwirrung, Furcht oder Schrecken als Überschreitungsgrund
     - label: '3. Rechtsfolge: Entschuldigung, keine Bestrafung'
 faelle:
 - slug: sr-fall-gartenzaunstreit
@@ -185,40 +185,40 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
   stand: 2026-09
-  facts: A und Nachbar N streiten seit Wochen ueber den Verlauf eines Gartenzauns.
+  facts: A und Nachbar N streiten seit Wochen über den Verlauf eines Gartenzauns.
     Eines Abends provoziert A den N absichtlich mit lauten Beleidigungen, um endlich
-    "Klartext zu reden" - er rechnet fest damit, dass N handgreiflich wird, und haelt
-    schon vorsorglich einen schweren Spazierstock bereit. N laeuft tatsaechlich wutentbrannt
-    auf A zu und holt zum Faustschlag aus. A schlaegt N sofort mit voller Wucht den
-    Spazierstock gegen den Kopf, obwohl ein Ausweichen zur nahen Haustuer moeglich
-    gewesen waere. N erleidet eine schwere Kopfverletzung.
-  question: Hat sich A wegen gefaehrlicher Koerperverletzung strafbar gemacht, oder
+    "Klartext zu reden" - er rechnet fest damit, dass N handgreiflich wird, und hält
+    schon vorsorglich einen schweren Spazierstock bereit. N läuft tatsächlich wutentbrannt
+    auf A zu und holt zum Faustschlag aus. A schlägt N sofort mit voller Wucht den
+    Spazierstock gegen den Kopf, obwohl ein Ausweichen zur nahen Haustür möglich
+    gewesen wäre. N erleidet eine schwere Kopfverletzung.
+  question: Hat sich A wegen gefährlicher Körperverletzung strafbar gemacht, oder
     ist er nach § 32 StGB gerechtfertigt?
   steps:
   - prompt: Liegt eine Notwehrlage vor?
-    erwartung: Ja - der Faustschlag des N ist ein gegenwaertiger, rechtswidriger Angriff
-      auf die koerperliche Unversehrtheit des A.
-  - prompt: Ist die Notwehrhandlung durch die Absichtsprovokation eingeschraenkt?
-    erwartung: Nach der hier vertretenen Ansicht (Absichtsprovokation) entfaellt das
-      Notwehrrecht des A vollstaendig, weil er den Angriff bewusst herbeigefuehrt
+    erwartung: Ja - der Faustschlag des N ist ein gegenwärtiger, rechtswidriger Angriff
+      auf die körperliche Unversehrtheit des A.
+  - prompt: Ist die Notwehrhandlung durch die Absichtsprovokation eingeschränkt?
+    erwartung: Nach der hier vertretenen Ansicht (Absichtsprovokation) entfällt das
+      Notwehrrecht des A vollständig, weil er den Angriff bewusst herbeigeführt
       hat, um N unter dem Deckmantel der Notwehr zu verletzen; nach der Gegenansicht
-      (abgestufte Loesung) haette A jedenfalls ausweichen muessen.
-  - prompt: Welche Konsequenz hat das fuer die Rechtfertigung?
-    erwartung: 'A ist in keinem Fall gerechtfertigt: Nach der einen Ansicht entfaellt
-      § 32 StGB vollstaendig, nach der anderen scheitert die Erforderlichkeit/Gebotenheit,
-      weil A trotz Ausweichmoeglichkeit sofort zur Trutzwehr mit einem gefaehrlichen
+      (abgestufte Lösung) hätte A jedenfalls ausweichen müssen.
+  - prompt: Welche Konsequenz hat das für die Rechtfertigung?
+    erwartung: 'A ist in keinem Fall gerechtfertigt: Nach der einen Ansicht entfällt
+      § 32 StGB vollständig, nach der anderen scheitert die Erforderlichkeit/Gebotenheit,
+      weil A trotz Ausweichmöglichkeit sofort zur Trutzwehr mit einem gefährlichen
       Werkzeug griff.'
   expectation:
     pruefpunkte:
     - id: p1
-      label: 'Notwehrlage bejaht: gegenwaertiger rechtswidriger Angriff des N'
+      label: 'Notwehrlage bejaht: gegenwärtiger rechtswidriger Angriff des N'
       weight: 2.0
       required: true
       norms:
       - § 32 StGB
       - § 32 Abs. 2 StGB
       keywords:
-      - gegenwaertig
+      - gegenwärtig
       - rechtswidriger Angriff
       card_slugs:
       - sr-at-angriff
@@ -230,11 +230,11 @@ faelle:
       keywords:
       - Provokation
       - Absichtsprovokation
-      - abgestufte Loesung
+      - abgestufte Lösung
       card_slugs:
       - sr-notwehr-provokation
     - id: p3
-      label: Ausweichmoeglichkeit zur Haustuer als Argument gegen Erforderlichkeit
+      label: Ausweichmöglichkeit zur Haustür als Argument gegen Erforderlichkeit
         der Trutzwehr verarbeitet
       weight: 2.5
       required: true
@@ -255,7 +255,7 @@ faelle:
       card_slugs:
       - sr-notwehr-provokation
     - id: p5
-      label: Pruefung des § 33 StGB (Notwehrexzess) zumindest angesprochen und mangels
+      label: Prüfung des § 33 StGB (Notwehrexzess) zumindest angesprochen und mangels
         Verwirrung/Furcht/Schrecken abgelehnt
       weight: 2.0
       keywords:

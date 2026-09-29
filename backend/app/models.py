@@ -63,6 +63,17 @@ class User(Base):
     # Zieltermin des Examens - Grundlage der Lernplanung.
     exam_date: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), default=None)
     daily_minutes: Mapped[int] = mapped_column(Integer, default=90)
+    # Examensprofil (docs/32-examensvorbereitung.md): Bundesland als Kuerzel
+    # ("BY", "NW", ...) - steuert Landesrecht-Sichtbarkeit, Klausurgewichtung
+    # und Pruefungsordnung; Universitaet als Slug aus content/examen/
+    # universitaeten/ - steuert den Kurskatalog. Beide optional: ohne Profil
+    # verhaelt sich die App wie vor dem Examen-Reiter.
+    bundesland: Mapped[str | None] = mapped_column(String(2), default=None, index=True)
+    universitaet_slug: Mapped[str | None] = mapped_column(String(160), default=None)
+    # Lernprofil (docs/33-individualisierung.md): Semester, Ziel, Schwerpunkte,
+    # Rhythmus, Fokus-/Pause-Themen, eigene Decks. Als JSON, validiert ueber
+    # app.schemas.LernprofilIn - leer = nicht eingerichtet, Defaults greifen.
+    lernprofil: Mapped[dict] = mapped_column(JSON, default=dict)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
     # Entitlement (Release G2, siehe docs/20-release-g2-bezahlstrecke.md Abschnitt 4 B1).
@@ -113,6 +124,9 @@ class Topic(Base):
     # Pruefungsrelevanz 1-5, kuratiert. Steuert Lernplan und Coverage-Gewichtung.
     relevance: Mapped[int] = mapped_column(Integer, default=3)
     position: Mapped[int] = mapped_column(Integer, default=0)
+    # Landesrecht-Thema: nur fuer Nutzer dieses Bundeslands sichtbar (faellige
+    # Karten, Coverage, Lernplan). NULL = bundesrechtlicher Kern, fuer alle.
+    bundesland: Mapped[str | None] = mapped_column(String(2), default=None, index=True)
 
 
 class Card(Base):
@@ -230,7 +244,7 @@ class Submission(Base):
 class CaseAccess(Base):
     """Erster Zugriff eines Nutzers auf einen Fall.
 
-    Grundlage fuer das Free-Tier-Limit "2 gefuehrte Faelle" (docs/20, Abschnitt
+    Grundlage fuer das Free-Tier-Limit "2 geführte Fälle" (docs/20, Abschnitt
     4 B2): bereits gesehene Faelle bleiben erreichbar, nur der jeweils naechste
     *neue* Fall zaehlt gegen das Kontingent.
     """
@@ -372,3 +386,51 @@ class RedeemCodeRedemption(Base):
     redeem_code_id: Mapped[int] = mapped_column(ForeignKey("redeem_codes.id"), index=True)
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
     redeemed_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
+class Bundesland(Base):
+    """Pruefungsprofil eines Bundeslands (docs/32-examensvorbereitung.md).
+
+    Quelle ist ``content/examen/bundeslaender/<code>.yaml``; die Tabelle ist
+    wie bei Karten nur ein Cache. ``data`` traegt das komplette Profil
+    (Klausurstruktur, Landesrecht-Normenspiegel, Pruefungsamt, Checkliste),
+    damit Aenderungen am Format keine Schemaaenderung brauchen.
+    """
+
+    __tablename__ = "bundeslaender"
+
+    code: Mapped[str] = mapped_column(String(2), primary_key=True)
+    name: Mapped[str] = mapped_column(String(80))
+    data: Mapped[dict] = mapped_column(JSON, default=dict)
+    stand: Mapped[str] = mapped_column(String(20), default="")
+
+
+class Universitaet(Base):
+    """Juristische Fakultaet mit Staatsexamens-Studiengang."""
+
+    __tablename__ = "universitaeten"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    slug: Mapped[str] = mapped_column(String(160), unique=True, index=True)
+    name: Mapped[str] = mapped_column(String(240))
+    bundesland: Mapped[str] = mapped_column(String(2), index=True)
+    data: Mapped[dict] = mapped_column(JSON, default=dict)
+    stand: Mapped[str] = mapped_column(String(20), default="")
+
+
+class Kurs(Base):
+    """Kanonischer Kurs (z. B. "Schuldrecht AT") mit Vorbereitungsdeck.
+
+    Ein Deck ist keine Kopie von Karten, sondern eine geordnete Auswahl von
+    Themen (``topic_slugs``) plus Lernziele und Klausurformat - die Karten
+    selbst bleiben die eine Quelle in ``cards``.
+    """
+
+    __tablename__ = "kurse"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    slug: Mapped[str] = mapped_column(String(160), unique=True, index=True)
+    title: Mapped[str] = mapped_column(String(240))
+    area: Mapped[str] = mapped_column(String(32), index=True)
+    data: Mapped[dict] = mapped_column(JSON, default=dict)
+    stand: Mapped[str] = mapped_column(String(20), default="")

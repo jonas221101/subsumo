@@ -72,7 +72,7 @@ void main() {
       expect(find.textContaining('Preisgarantie'), findsOneWidget);
     });
 
-    testWidgets('Planwahl ruft die Checkout-Session ab und oeffnet sie extern', (tester) async {
+    testWidgets('Planwahl ruft die Checkout-Session ab und öffnet sie extern', (tester) async {
       String? requestedPlan;
       final client = MockClient((request) async {
         if (request.url.path == '/v1/billing/checkout-session') {
@@ -83,7 +83,7 @@ void main() {
       });
       await _pumpCheckoutPage(tester, client: client);
 
-      await tester.tap(find.text('Auswaehlen').first);
+      await tester.tap(find.text('Auswählen').first);
       await tester.pumpAndSettle();
 
       expect(requestedPlan, 'monthly');
@@ -94,13 +94,13 @@ void main() {
       final client = MockClient((request) async => _json({'detail': 'stripe_unreachable'}, 502));
       await _pumpCheckoutPage(tester, client: client);
 
-      await tester.tap(find.text('Auswaehlen').first);
+      await tester.tap(find.text('Auswählen').first);
       await tester.pumpAndSettle();
 
       expect(find.text('stripe_unreachable'), findsOneWidget);
     });
 
-    testWidgets('kann der Browser die URL nicht oeffnen, erscheint ein Hinweis', (tester) async {
+    testWidgets('kann der Browser die URL nicht öffnen, erscheint ein Hinweis', (tester) async {
       fakeLauncher = _FakeUrlLauncher(launchResult: false);
       UrlLauncherPlatform.instance = fakeLauncher;
       final client = MockClient(
@@ -108,15 +108,15 @@ void main() {
       );
       await _pumpCheckoutPage(tester, client: client);
 
-      await tester.tap(find.text('Auswaehlen').first);
+      await tester.tap(find.text('Auswählen').first);
       await tester.pumpAndSettle();
 
-      expect(find.text('Checkout konnte nicht geoeffnet werden.'), findsOneWidget);
+      expect(find.text('Checkout konnte nicht geöffnet werden.'), findsOneWidget);
     });
   });
 
   group('CheckoutReturnBanner', () {
-    testWidgets('?checkout=success zeigt die Bestaetigung, sobald proActive gesetzt ist',
+    testWidgets('?checkout=success zeigt die Bestätigung, sobald proActive gesetzt ist',
         (tester) async {
       final state = AppState(
         api: ApiClient(
@@ -139,7 +139,7 @@ void main() {
         ),
       );
       await tester.pumpAndSettle();
-      expect(find.text('Zahlung bestaetigt - du bist jetzt Pro.'), findsOneWidget);
+      expect(find.text('Zahlung bestätigt - du bist jetzt Pro.'), findsOneWidget);
     });
 
     testWidgets('?checkout=cancelled zeigt eine neutrale Meldung ohne Fehlerzustand',

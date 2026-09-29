@@ -10,8 +10,9 @@ from app.api.deps import CurrentUser, DbSession
 from app.config import get_settings
 from app.core.ratelimit import enforce_login_rate_limit, enforce_register_rate_limit
 from app.core.security import create_access_token, hash_password, verify_password
-from app.models import User
+from app.models import Universitaet, User
 from app.schemas import LoginIn, RegisterIn, TokenOut, UserOut, UserUpdateIn
+from app.services.content import BUNDESLAND_CODES
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
@@ -26,6 +27,8 @@ def _user_out(user: User) -> UserOut:
         display_name=user.display_name,
         exam_date=user.exam_date,
         daily_minutes=user.daily_minutes,
+        bundesland=user.bundesland,
+        universitaet_slug=user.universitaet_slug,
         pro_active=pro_active,
         pro_until=user.pro_until,
         cancel_at_period_end=user.cancel_at_period_end,
@@ -76,6 +79,26 @@ def update_me(payload: UserUpdateIn, user: CurrentUser, db: DbSession) -> UserOu
         user.daily_minutes = payload.daily_minutes
     if payload.exam_date is not None:
         user.exam_date = datetime.combine(payload.exam_date, time.min, tzinfo=UTC)
+    if payload.bundesland is not None:
+        code = payload.bundesland.strip().upper()
+        if code and code not in BUNDESLAND_CODES:
+            raise HTTPException(
+                status.HTTP_422_UNPROCESSABLE_ENTITY, f"Unbekanntes Bundesland '{code}'"
+            )
+        user.bundesland = code or None
+    if payload.universitaet_slug is not None:
+        slug = payload.universitaet_slug.strip()
+        uni = db.query(Universitaet).filter_by(slug=slug).one_or_none() if slug else None
+        if slug and uni is None:
+            raise HTTPException(
+                status.HTTP_422_UNPROCESSABLE_ENTITY, f"Unbekannte Universitaet '{slug}'"
+            )
+        user.universitaet_slug = slug or None
+        # Die Universitaet legt das Bundesland fest - sonst wuerde ein Nutzer
+        # mit Uni Muenchen und Bundesland NW nordrhein-westfaelisches
+        # Landesrecht lernen, aber die bayerische Klausurstruktur sehen.
+        if uni is not None and payload.bundesland is None:
+            user.bundesland = uni.bundesland
     db.add(user)
     db.commit()
     return _user_out(user)

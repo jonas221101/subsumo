@@ -83,12 +83,12 @@ def decode_access_token(token: str) -> dict[str, Any]:
     try:
         header_b64, payload_b64, signature_b64 = token.split(".")
     except ValueError as exc:
-        raise TokenError("Token hat kein gueltiges JWT-Format") from exc
+        raise TokenError("Token hat kein gültiges JWT-Format") from exc
 
     signing_input = f"{header_b64}.{payload_b64}".encode("ascii")
     expected = hmac.new(settings.jwt_secret.encode(), signing_input, hashlib.sha256).digest()
     if not hmac.compare_digest(expected, _b64d(signature_b64)):
-        raise TokenError("Signatur ungueltig")
+        raise TokenError("Signatur ungültig")
 
     payload = json.loads(_b64d(payload_b64))
     if payload.get("exp", 0) < time.time():

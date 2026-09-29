@@ -1,0 +1,24 @@
+kurs:
+  slug: or-verwaltungsprozessrecht
+  title: Verwaltungsprozessrecht
+  area: oeffentliches-recht
+  semester_default: 4
+  examenskurs: false
+  stand: 2026-09
+  quellen:
+  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: Anfechtungs- und Verpflichtungsklage sowie vorlaeufiger Rechtsschutz - die Einkleidung
+    fast jeder Klausur im Oeffentlichen Recht.
+  lernziele:
+  - Zulaessigkeit einer verwaltungsgerichtlichen Klage vollstaendig pruefen
+  - §§ 80, 80a und § 123 VwGO abgrenzen und aufbauen
+  klausurformat:
+    typ: Fortgeschrittenenklausur
+    minuten: 180
+  topic_slugs:
+  - or-vwgo-anfechtungsklage
+  - or-vwgo-verpflichtungsklage
+  - or-vwgo-vorlaeufiger-rechtsschutz
+  landesrecht_kategorien: []
+  fehlende_themen: []
