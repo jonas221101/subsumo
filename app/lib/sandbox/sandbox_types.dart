@@ -19,6 +19,7 @@ class SandboxResourceLimits {
     this.timeoutMs = 300,
     this.maxOutputBytes = 8192,
     this.maxSteps = 5000000,
+    this.maxMemoryBytes = 64 * 1024 * 1024,
   });
 
   /// Wall-Clock-Budget je Aufruf in Millisekunden
@@ -44,6 +45,18 @@ class SandboxResourceLimits {
   /// Interpreter in mehreren Sekunden schaffen wuerde), keine Ableitung aus
   /// einem gemeinsamen Vertrag.
   final int maxSteps;
+
+  /// Obergrenze fuer den virtuellen Adressraum des Worker-Prozesses in Byte
+  /// (SUB-382, Prozessisolation fuer Mobile/Desktop) - deckt den gesamten
+  /// Prozess ab (Dart-AOT-Laufzeit + gebundene QuickJS-Bibliothek +
+  /// generierter Code), nicht nur einen JS-Engine-internen Heap. Nur vom
+  /// Io-Pfad durchgesetzt (`sandbox_runtime_io.dart`, POSIX per `ulimit -v`);
+  /// der Web-Pfad hat kein Aequivalent (Browser-Worker haben kein
+  /// konfigurierbares Speicherlimit) und ignoriert dieses Feld, analog zu
+  /// [maxSteps]. Empirisch ermittelter Defaultwert: 64 MiB laesst
+  /// realistische kurze `execute()`-Aufrufe unberuehrt (getestet ab
+  /// ~24 MiB), begrenzt aber ein Speicher-Bombardierungsskript zuverlaessig.
+  final int maxMemoryBytes;
 }
 
 /// Fehlerklasse D aus docs/27 Abschnitt 4.3: eine vom Host erzwungene

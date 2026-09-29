@@ -37,6 +37,10 @@ SandboxErrorClass classifySandboxError(String? error) {
       return SandboxErrorClass.timeout;
     case stepLimitErrorMarker:
       return SandboxErrorClass.stepLimitExceeded;
+    case 'compile_error':
+      return SandboxErrorClass.compileError;
+    case 'memory_limit_exceeded':
+      return SandboxErrorClass.memoryLimitExceeded;
     case 'no_execute_function':
     case 'worker_error':
       return SandboxErrorClass.runtimeError;

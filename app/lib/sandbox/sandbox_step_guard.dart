@@ -7,9 +7,12 @@
 /// empirisch bestaetigten Befund, dass der `timeout`-Parameter (und damit der
 /// zugrunde liegende `JS_SetInterruptHandler`) auf dieser Plattform bei einer
 /// echten synchronen Endlosschleife NICHT greift - ein Wall-Clock-Hard-Kill
-/// braucht dafuer Prozess- oder OS-Thread-Isolation von aussen (offener Punkt,
-/// siehe dortiger Dateikommentar). Der Schrittzaehler hier ist unabhaengig
-/// davon und deckt eine andere Klasse von Endlosschleifen ab: er
+/// braucht dafuer Prozess- oder OS-Thread-Isolation von aussen. Seit SUB-382
+/// per Prozessisolation umgesetzt (`sandbox_worker_main.dart`); der
+/// Schrittzaehler hier bleibt trotzdem sinnvoll als schnellerer,
+/// kooperativer Fehlerpfad (ein JS-seitiger Abbruch ist billiger als das
+/// volle `timeoutMs`-Budget abzuwarten und den Worker-Prozess extern zu
+/// killen) und deckt eine andere Klasse von Endlosschleifen ab: er
 /// instrumentiert den Quelltext selbst, bevor er an die Engine geht, statt
 /// sich auf eine Interpreter-Kooperation zu verlassen - jede `for`/`while`/
 /// `do`-Schleife mit geschweiftem Rumpf bekommt an ihrem Kopf einen

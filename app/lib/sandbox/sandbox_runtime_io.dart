@@ -1,88 +1,61 @@
 /// Mobile/Desktop-Implementierung der Werkbank-Sandbox (SUB-318, docs/27
-/// Ticket 5): ein eingebetteter QuickJS-Interpreter ueber das `flutter_js`-
-/// Paket, pro Aufruf neu instanziiert und danach verworfen.
+/// Ticket 5), seit SUB-382 per Prozessisolation statt In-Process-QuickJS.
 ///
-/// Warum `flutter_js` statt einer eigenen QuickJS-FFI-Bindung: das Paket
-/// bindet QuickJS bereits per FFI fuer Android/Windows/Linux
-/// (`DynamicLibrary.process()`/`.open()`) und JavaScriptCore fuer iOS, und
-/// `QuickJsRuntime2` nimmt `timeout`/`memoryLimit` als native, im
-/// Interpreter selbst durchgesetzte Konstruktorparameter entgegen
-/// (`jsNewRuntime(channel, timeoutMs, port)`, `jsSetMemoryLimit`) statt nur
-/// eine von aussen kooperativ gemessene Zeit. Das entspricht Abschnitt 1.1:
-/// die Grenze wird vom Host/der Engine erzwungen, nicht vom generierten
-/// Code eingehalten.
+/// AELTERER STAND (bis SUB-359/vor SUB-382, nur noch als Kontext):
+/// diese Datei fuehrte QuickJS ueber `package:flutter_js` direkt im
+/// Host-Prozess aus. Empirisch bestaetigt: eine echte `while (true) {}`
+/// haengt sich dabei nicht wie dokumentiert an `JS_SetInterruptHandler`
+/// (`QuickJsRuntime2(timeout: ...)` kehrte nicht zurueck, obwohl `nm -D`
+/// das Symbol als gebunden zeigt) - der native FFI-Aufruf ist synchron und
+/// blockiert den OS-Thread, kein Dart-seitiger Mechanismus (Timer,
+/// Isolate.kill) kann ihn unterbrechen, weil kein Dart-Code laeuft, bis die
+/// native Funktion zurueckkehrt. Zusaetzlich fehlte der Wrapper-Symbolname
+/// `jsSetMemoryLimit` in der gebundenen Linux-`.so` (nur das rohe
+/// `JS_SetMemoryLimit` war exportiert), weshalb kein Speicherlimit gesetzt
+/// wurde.
 ///
-/// KRITISCHER, EMPIRISCH BESTAETIGTER BEFUND (nicht nur eine Vermutung):
-/// `timeout` haengt sich auf dieser Plattform NICHT wie dokumentiert an
-/// QuickJS' `JS_SetInterruptHandler` (der laut `nm -D` zwar von der
-/// gebundenen nativen Bibliothek exportiert wird). Eine echte
-/// `while (true) {}` im generierten Code liess den Aufruf manuell
-/// verifiziert weit ueber `timeoutMs` hinaus (>30s bei konfigurierten 50ms)
-/// unbegrenzt weiterlaufen, bis der Prozess von aussen mit `kill -9`
-/// beendet wurde - der native Aufruf ist synchron und blockiert den
-/// gesamten Isolate/Thread, weshalb ihn kein Dart-seitiger Timer
-/// (auch nicht der Stopwatch-Check unten oder ein `Future.timeout`)
-/// unterbrechen kann: Dart-Code laeuft erst wieder, wenn die native
-/// Funktion zurueckkehrt. Der Stopwatch-Check unten faengt daher nur
-/// Faelle ab, in denen QuickJS *selbst* rechtzeitig zurueckkehrt - er ist
-/// keine Grenzverletzungs-Erkennung fuer einen echten Haenger.
+/// SUB-382-LOESUNG: die QuickJS-Auswertung laeuft jetzt in einem separaten
+/// Worker-Prozess (`sandbox_worker_main.dart`, per `dart compile exe`
+/// uebersetzt), den dieser Host-Code per Wall-Clock-Timeout hart per
+/// SIGKILL beendet (unabhaengig davon, was der Prozess gerade tut - anders
+/// als ein In-Process-Timer funktioniert das garantiert, siehe
+/// `sandbox_worker_main.dart`-Dateikommentar) und dem er per POSIX
+/// `ulimit -v` (siehe [_startMemoryLimitedProcess]) eine Obergrenze fuer den
+/// virtuellen Adressraum mitgibt. Beide vorherigen Luecken sind damit auf
+/// Linux empirisch geschlossen (siehe Kommentare an den jeweiligen
+/// Funktionen unten fuer den genauen Nachweis); macOS teilt denselben
+/// Mechanismus, ist aber nicht auf echter Hardware verifiziert. Windows hat
+/// noch keine durchgesetzte Speicherobergrenze (fehlendes Job-Object,
+/// siehe [_startMemoryLimitedProcess]) - der Wall-Clock-Hard-Kill
+/// funktioniert dort trotzdem, weil `Process.kill()` in `dart:io`
+/// plattformuebergreifend auf `TerminateProcess` abbildet.
 ///
-/// Damit ist Abschnitt 1.1 ("Grenzverletzung -> Interpreter hart beenden")
-/// fuer eine synchrone Endlosschleife auf diesem Implementierungspfad NICHT
-/// erfuellt. Ein echtes Hard-Kill braucht Prozess- oder zumindest
-/// OS-Thread-Isolation von aussen (analog zu `worker.terminate()` im
-/// Web-Pfad, siehe sandbox_runtime_web.dart) - ein reiner Dart-`Isolate`
-/// reicht dafuer vermutlich nicht, weil ein blockierender synchroner
-/// FFI-Aufruf den zugrunde liegenden OS-Thread auch nach `Isolate.kill()`
-/// nicht zwingend freigibt. Deshalb bewusst kein Automatiktest fuer diesen
-/// Fall (siehe `test/sandbox/sandbox_runtime_io_test.dart`, `skip:`-Grund) -
-/// er wuerde CI unbegrenzt haengen statt rot zu werden. Offener Punkt fuer
-/// eine Entscheidung vor Ticket 9 / einem Rollout: entweder eine echte
-/// Prozessisolation bauen, oder einen anderen Engine-Binding-Weg waehlen,
-/// oder das Restrisiko bewusst tragen, solange nichts ausgeliefert wird.
-///
-/// Zweiter, ebenfalls bestaetigter Befund: die vorgebaute native
-/// Bibliothek fuer Linux (`linux/shared/libquickjs_c_bridge_plugin.so`) ist
-/// aelter als die aktuellen Dart-Bindings und exportiert `jsSetMemoryLimit`
-/// nicht (per `nm -D` verifiziert - nur das rohe `JS_SetMemoryLimit` ohne
-/// den Wrapper). `QuickJsRuntime2`s Konstruktor allokiert die native
-/// Runtime (`jsNewRuntime`) *bevor* er `jsSetMemoryLimit` aufloest; ein
-/// Abfangen des daraus resultierenden `ArgumentError` wuerde die bereits
-/// allokierte Runtime undisponiert lassen (`_rt` wird erst danach gesetzt)
-/// - ein Speicher-Leck bei jedem Aufruf. Deshalb wird `memoryLimit` hier
-/// bewusst *nicht* gesetzt, statt das Symbol-Fehlen leck-behaftet
-/// abzufangen. Ob Windows (vorgebaute DLL) und Android/iOS (aus Quellcode
-/// bzw. JavaScriptCore) den Wrapper haben, ist unverifiziert - vor einem
-/// echten Rollout (Ticket 9) auf einem realen Geraet pruefen. Bis dahin
-/// gilt fuer diese Engine-Instanz keine durchgesetzte Speichergrenze.
-///
-/// SUB-359-Stand: der Schrittzaehler aus docs/27 Abschnitt 1.1
-/// ("Rueckfallgrenze gegen Endlosschleifen, die innerhalb von 300 ms viele
-/// kurze Yield-Punkte erzeugen") ist jetzt umgesetzt - per Quelltext-
-/// Instrumentierung (`sandbox_step_guard.dart`), nicht per nativem
-/// Interpreter-Hook, weil letzterer empirisch nicht wie dokumentiert greift
-/// (siehe oben). Die beiden anderen Luecken oben (echter Wall-Clock-Hard-Kill
-/// per Prozessisolation, durchgesetztes Speicherlimit) bleiben offen - beide
-/// haengen an derselben Loesung (ein separater, hart terminierbarer Prozess
-/// pro Ausfuehrung analog zu `worker.terminate()` im Web-Pfad) und brauchen
-/// dafuer neues natives Build-Tooling (AOT-kompilierter Worker je
-/// Desktop-Plattform, gebuendelt in `linux/`/`windows/`/`macos/`) - das faellt
-/// unter "gemeinsames Build-Tooling" und zieht laut Auftrag den
-/// Backend-Developer hinzu.
+/// Weiterhin offen, NICHT Teil dieser Datei: wie die kompilierte
+/// Worker-Binary in einem Release-Build je Desktop-Plattform gebuendelt
+/// wird (natives Build-Tooling: `linux/CMakeLists.txt`, Windows-Runner,
+/// macOS-Xcode-Bundle, CI). Siehe SUB-382, Routing-Entscheidung beim
+/// Lead-Developer noch ausstehend. Ohne eine an [resolveSandboxWorkerExecutable]
+/// auffindbare Binary wirft [execute] absichtlich, statt still auf eine
+/// ungesicherte In-Process-Ausfuehrung zurueckzufallen.
 library;
 
+import 'dart:async';
 import 'dart:convert';
-
-import 'package:flutter_js/flutter_js.dart';
+import 'dart:io';
 
 import 'sandbox_envelope.dart';
-import 'sandbox_step_guard.dart';
 import 'sandbox_types.dart';
 
 SandboxRuntime createSandboxRuntime() => const IoSandboxRuntime();
 
 class IoSandboxRuntime implements SandboxRuntime {
-  const IoSandboxRuntime();
+  const IoSandboxRuntime({this.workerExecutable});
+
+  /// Expliziter Pfad zur Worker-Binary, ueberschreibt
+  /// [resolveSandboxWorkerExecutable]. Hauptsaechlich fuer Tests gedacht
+  /// (siehe test/sandbox/sandbox_runtime_io_test.dart, das die Binary per
+  /// `dart compile exe` in ein Scratch-Verzeichnis uebersetzt).
+  final String? workerExecutable;
 
   @override
   Future<Object?> execute(
@@ -90,139 +63,153 @@ class IoSandboxRuntime implements SandboxRuntime {
     Object? input, {
     SandboxResourceLimits limits = const SandboxResourceLimits(),
   }) async {
-    final runtime = QuickJsRuntime2(timeout: limits.timeoutMs);
+    final executable = workerExecutable ?? resolveSandboxWorkerExecutable();
+    final process = await _startMemoryLimitedProcess(executable, limits.maxMemoryBytes);
+
+    process.stdin.writeln(jsonEncode({
+      'source': source,
+      'input': input,
+      'maxSteps': limits.maxSteps,
+    }));
+    await process.stdin.close();
+
+    // Muss vor dem Warten auf den Exitcode angestossen werden: ein Absturz
+    // unter niedrigem `ulimit -v` (siehe [_startMemoryLimitedProcess]) kann
+    // einen mehrere KB grossen Stacktrace auf stderr schreiben. Ohne
+    // aktives Drainen wuerde der Worker beim Vollschreiben der OS-Pipe
+    // blockieren und nie beenden - der Host wartet dann unbegrenzt auf
+    // einen Exitcode, der nie kommt.
+    final stdoutFuture = process.stdout.transform(utf8.decoder).join();
+    unawaited(process.stderr.drain<void>());
+
+    final int exitCode;
     try {
-      _stripHostBridges(runtime);
-
-      final stopwatch = Stopwatch()..start();
-      final result = runtime.evaluate(buildIoHarness(source, input, maxSteps: limits.maxSteps));
-      stopwatch.stop();
-
-      // Eigenstaendige, von der Engine-Fehlermeldung unabhaengige
-      // Zeitpruefung: selbst wenn `evaluate()` scheinbar erfolgreich
-      // zurueckkommt, aber das Budget ueberschritten hat, gilt der Aufruf
-      // als Grenzverletzung - der Host vertraut nicht darauf, dass die
-      // Engine ihre eigene Deadline immer korrekt meldet.
-      if (stopwatch.elapsedMilliseconds >= limits.timeoutMs) {
-        throw SandboxException(SandboxErrorClass.timeout);
-      }
-      if (result.isError) {
-        throw SandboxException(classifyIoEngineError(result.stringResult));
-      }
-      final Map<String, dynamic> envelope;
-      try {
-        envelope = jsonDecode(result.stringResult) as Map<String, dynamic>;
-      } on FormatException {
-        throw SandboxException(SandboxErrorClass.invalidOutput);
-      }
-      return decodeSandboxEnvelope(envelope, limits);
-    } finally {
-      // "pro Ausfuehrung neu instanziiert und danach verworfen" (docs/27
-      // Abschnitt 1.1) - kein Zustand ueberlebt einen Aufruf.
-      runtime.dispose();
+      exitCode = await process.exitCode.timeout(Duration(milliseconds: limits.timeoutMs));
+    } on TimeoutException {
+      // SIGKILL ist nicht abfangbar oder blockierbar - anders als beim
+      // fruesheren In-Process-Timeout (siehe Dateikommentar) spielt es
+      // deshalb keine Rolle, ob der Worker gerade in einem blockierenden
+      // nativen FFI-Aufruf haengt. Empirisch verifiziert: eine echte
+      // `while (true) {}` im Worker haengt unbegrenzt, bis dieser Kill
+      // eintrifft (siehe sandbox_worker_main.dart), und stirbt dann
+      // zuverlaessig.
+      process.kill(ProcessSignal.sigkill);
+      await process.exitCode; // Kindprozess einsammeln, keinen Zombie hinterlassen.
+      throw SandboxException(SandboxErrorClass.timeout);
     }
-  }
 
-  /// `JavascriptRuntime.init()` injiziert nicht nur `console` und
-  /// `setTimeout`, sondern auch die native Bruecke `sendMessage` selbst
-  /// (`initChannelFunctions()` in `flutter_js`, `QuickJsRuntime2`-
-  /// Konstruktor, *vor* diesem Aufruf) sowie ihre Hilfsvariablen
-  /// `__NATIVE_FLUTTER_JS__setTimeoutCount`/`...Callbacks`. Eine fruehere
-  /// Fassung entfernte nur `console`/`setTimeout` per Denylist - generierter
-  /// Code konnte darum `sendMessage("SetTimeout", ...)` weiterhin direkt
-  /// aufrufen, den `setTimeout`-Denylist umgehen und einen Dart-`Timer`
-  /// scharf schalten, der nach `dispose()` in die bereits verworfene
-  /// Engine-Instanz zurueckruft (SUB-318-Review-Befund, empirisch per
-  /// echtem Testlauf gegen die reale QuickJS-Bibliothek nachgestellt).
-  ///
-  /// Eine Denylist bekannter Namen bleibt strukturell fragil: sie muss jede
-  /// `flutter_js`-Ergaenzung von Hand nachziehen. Stattdessen erzwingt
-  /// [_quickJsBaselineGlobals] eine **Allowlist**: die vollstaendige Menge
-  /// an Namen, die eine frisch initialisierte `QuickJsRuntime2`-Instanz
-  /// *ohne* jeden generierten Code traegt - empirisch per
-  /// `Object.getOwnPropertyNames(globalThis)` gegen die echte gebundene
-  /// QuickJS-Bibliothek ermittelt (nicht aus der Dokumentation abgetippt).
-  /// Jeder Name, der nicht in dieser Liste steht, ist eine von `flutter_js`
-  /// eingehaengte Host-Bruecke und wird entfernt - unabhaengig davon, ob er
-  /// heute schon bekannt ist oder erst durch ein kuenftiges `flutter_js`-
-  /// Update dazukommt.
-  ///
-  /// Zuweisung statt `delete`: die zu entfernenden Eigenschaften sind
-  /// `configurable: false` (per `Object.getOwnPropertyDescriptor`
-  /// verifiziert) - `delete` schlaegt dort im Nicht-Strict-Modus lautlos
-  /// fehl (gibt `false` zurueck, wirft nicht) und die Bindungen blieben
-  /// unbemerkt erreichbar. Sie sind aber `writable: true`, daher entfernt
-  /// eine Ueberschreibung mit `undefined` sie zuverlaessig.
-  static const Set<String> _quickJsBaselineGlobals = {
-    'AggregateError', 'Array', 'ArrayBuffer', 'Boolean', 'DataView', 'Date',
-    'Error', 'EvalError', 'Float32Array', 'Float64Array', 'Function',
-    'Infinity', 'Int16Array', 'Int32Array', 'Int8Array', 'InternalError',
-    'JSON', 'Map', 'Math', 'NaN', 'Number', 'Object', 'Promise', 'Proxy',
-    'RangeError', 'ReferenceError', 'Reflect', 'RegExp', 'Set',
-    'SharedArrayBuffer', 'String', 'Symbol', 'SyntaxError', 'TypeError',
-    'URIError', 'Uint16Array', 'Uint32Array', 'Uint8Array',
-    'Uint8ClampedArray', 'WeakMap', 'WeakSet', '__date_clock', 'decodeURI',
-    'decodeURIComponent', 'encodeURI', 'encodeURIComponent', 'escape',
-    'eval', 'globalThis', 'isFinite', 'isNaN', 'parseFloat', 'parseInt',
-    'undefined', 'unescape',
-  };
-
-  void _stripHostBridges(QuickJsRuntime2 runtime) {
-    final allowlist = jsonEncode(_quickJsBaselineGlobals.toList());
-    final result = runtime.evaluate('''
-(function () {
-  var allowSet = Object.create(null);
-  var allow = $allowlist;
-  for (var i = 0; i < allow.length; i++) { allowSet[allow[i]] = true; }
-  var names = Object.getOwnPropertyNames(globalThis);
-  for (var i = 0; i < names.length; i++) {
-    if (allowSet[names[i]]) continue;
-    globalThis[names[i]] = undefined;
-  }
-})();
-''');
-    if (result.isError) {
-      throw SandboxException(SandboxErrorClass.runtimeError);
+    if (exitCode != 0) {
+      // `sandbox_worker_main.dart` faengt jede erwartbare Fehlerquelle
+      // (Syntaxfehler, Laufzeitfehler, ungueltige Ausgabe) bereits ab und
+      // meldet sie als JSON-Umschlag mit Exitcode 0 - ein von aussen
+      // sichtbarer Absturz bedeutet daher praktisch immer, dass der Worker
+      // die per `ulimit -v` gesetzte Obergrenze ueberschritten hat.
+      // Empirisch verifiziert: die gebundene QuickJS-Bibliothek prueft das
+      // Ergebnis eines fehlgeschlagenen `malloc` nicht ueberall und
+      // segfaultet dann, statt eine JS-Exception zu werfen (siehe
+      // [_startMemoryLimitedProcess]-Dateikommentar) - das ist trotzdem
+      // eine durchgesetzte Grenze, nur ohne sauberen Abbruch.
+      throw SandboxException(SandboxErrorClass.memoryLimitExceeded);
     }
+
+    final Map<String, dynamic> envelope;
+    try {
+      envelope = jsonDecode((await stdoutFuture).trim()) as Map<String, dynamic>;
+    } on FormatException {
+      throw SandboxException(SandboxErrorClass.invalidOutput);
+    }
+    return decodeSandboxEnvelope(envelope, limits);
   }
 }
 
-/// Baut das JS-Programm, das `source` laedt, `execute(input)` aufruft und
-/// das Ergebnis als `{ok, output|error}`-JSON-String zurueckgibt. Oeffentliche
-/// Top-Level-Funktion, damit sie ohne QuickJS-Engine getestet werden kann
-/// (siehe test/sandbox/sandbox_runtime_io_test.dart).
-String buildIoHarness(String source, Object? input, {int? maxSteps}) {
-  final encodedInput = jsonEncode(input);
-  final instrumentedSource = maxSteps == null ? source : instrumentStepLimit(source, maxSteps);
-  return '''
-(function () {
-  try {
-    $instrumentedSource
-    if (typeof execute !== "function") {
-      return JSON.stringify({ok: false, error: "no_execute_function"});
-    }
-    var output = execute($encodedInput);
-    return JSON.stringify({ok: true, output: output === undefined ? null : output});
-  } catch (e) {
-    return JSON.stringify({ok: false, error: String((e && e.message) || e)});
+/// Ermittelt den Pfad zur AOT-kompilierten Worker-Binary
+/// (`sandbox_worker_main.dart`).
+///
+/// Reihenfolge:
+/// 1. `SANDBOX_WORKER_PATH` (Umgebungsvariable) - fuer Tests/CI/Entwicklung,
+///    wo die Binary bei Bedarf per `dart compile exe` in ein temporaeres
+///    Verzeichnis uebersetzt wird (siehe
+///    test/sandbox/sandbox_runtime_io_test.dart). Nutzt einen Dart-SDK-Pfad
+///    zur Uebersetzungszeit, nicht zur Laufzeit - der Worker selbst ist
+///    danach eine eigenstaendige Binary.
+/// 2. Ein Pfad direkt neben der laufenden App-Executable
+///    (`sandbox_worker`/`sandbox_worker.exe`) - der Ort, an dem natives
+///    Build-Tooling (SUB-382, Routing-Entscheidung beim Lead-Developer noch
+///    offen) die Binary in einem Release-Build ablegen muesste.
+///
+/// Wirft absichtlich einen [StateError], wenn keine der beiden Quellen eine
+/// existierende Datei liefert - KEIN stiller Rueckfall auf eine In-Process-
+/// Ausfuehrung ohne Prozessisolation, weil das genau die Sicherheitsgarantie
+/// (harter Wall-Clock-Kill, durchgesetztes Speicherlimit) unterlaufen wuerde,
+/// die dieser gesamte Umbau herstellen soll. Aktuell hat kein Endnutzerpfad
+/// einen Aufrufer dieser Funktion (Werkbank ist weiterhin dark, siehe
+/// docs/27) - dieser Fehlerfall betrifft also nur zukuenftige Integration,
+/// nicht produktiven Betrieb.
+String resolveSandboxWorkerExecutable() {
+  final override = Platform.environment['SANDBOX_WORKER_PATH'];
+  if (override != null && File(override).existsSync()) {
+    return override;
   }
-})();
-''';
+
+  final exeName = Platform.isWindows ? 'sandbox_worker.exe' : 'sandbox_worker';
+  final adjacent = '${File(Platform.resolvedExecutable).parent.path}/$exeName';
+  if (File(adjacent).existsSync()) {
+    return adjacent;
+  }
+
+  throw StateError(
+    'Sandbox-Worker-Binary nicht gefunden (weder SANDBOX_WORKER_PATH="$override" '
+    'noch "$adjacent"). SUB-382: natives Build-Tooling, das diese Binary in '
+    'Release-Builds ausliefert, ist noch nicht entschieden/umgesetzt.',
+  );
 }
 
-/// Bestmoegliche Einordnung einer Top-Level-Engine-Exception (Syntaxfehler,
-/// Interrupt-Abbruch, Speicherlimit) anhand der QuickJS-Fehlermeldung. Nicht
-/// sicherheitsrelevant: jeder Zweig wirft ohnehin eine [SandboxException] mit
-/// fester Nutzermeldung, diese Klassifizierung entscheidet nur, welche der
-/// festen Meldungen angezeigt wird.
-SandboxErrorClass classifyIoEngineError(String message) {
-  final lower = message.toLowerCase();
-  if (lower.contains('syntax')) return SandboxErrorClass.compileError;
-  if (lower.contains('memory') || lower.contains('alloc')) {
-    return SandboxErrorClass.memoryLimitExceeded;
+/// Startet [executable] mit einer vom OS durchgesetzten Obergrenze fuer den
+/// virtuellen Adressraum (`maxMemoryBytes`) - der Wert deckt den gesamten
+/// Worker-Prozess ab (Dart-AOT-Laufzeit + gebundene QuickJS-Bibliothek +
+/// generierter Code), nicht nur eine JS-Engine-interne Heap-Grenze. Das
+/// entspricht dem SUB-382-Fertig-Kriterium woertlich ("durchgesetzte
+/// OS-Speicherobergrenze fuer den Worker-Prozess"), nicht dem vor SUB-382
+/// verfolgten Weg ueber `jsSetMemoryLimit` (Wrapper-Symbol fehlt in der
+/// gebundenen Linux-Bibliothek, waere ausserdem nur eine JS-Heap-Grenze
+/// gewesen, keine echte Prozessgrenze).
+///
+/// Nur fuer Linux empirisch verifiziert: `sh -c 'ulimit -v ...; exec ...'`
+/// setzt `RLIMIT_AS` fuer den per `exec` ersetzten Kindprozess (kein
+/// zusaetzlicher `fork` zwischen Shell und Worker - das Limit gilt darum
+/// fuer den Worker-Prozess selbst, nicht nur fuer die Shell). Gegen die
+/// reale gebundene QuickJS-Bibliothek getestet: ein
+/// Speicher-Bombardierungsskript (verschachtelte grosse Arrays) stuerzt
+/// unterhalb eines niedrigen Limits zuverlaessig ab (Segfault in
+/// `JS_DefineProperty` - prueft das Ergebnis eines fehlgeschlagenen
+/// `malloc` nicht), waehrend ein deutlich grosszuegigeres Limit dieselbe
+/// Ausfuehrung anstandslos durchlaesst und ein normaler kurzer
+/// `execute()`-Aufruf schon ab ca. 24 MiB nicht mehr betroffen ist.
+///
+/// macOS teilt denselben `ulimit -v`-Mechanismus (POSIX), aber der
+/// xnu-Kernel ist dafuer bekannt, `RLIMIT_AS` nicht in jedem Fall
+/// durchzusetzen wie Linux - nicht auf echter Hardware verifiziert, offener
+/// Punkt vor einem macOS-Rollout.
+///
+/// Windows hat kein `rlimit`-Aequivalent - die richtige Entsprechung ist ein
+/// Job Object (`CreateJobObject`/`SetInformationJobObject` mit
+/// `JOBOBJECT_EXTENDED_LIMIT_INFORMATION`, `AssignProcessToJobObject`).
+/// Bewusst NICHT hier implementiert: ungetestete Win32-FFI-Struct-Layouts
+/// ohne echte Windows-Maschine zur Verifikation waeren genau die Art von
+/// unbelegter Behauptung, die dieses Modul an anderer Stelle vermeidet -
+/// offener Punkt fuer SUB-382. Bis dahin greift auf Windows nur der
+/// Wall-Clock-Hard-Kill (funktioniert, weil `Process.kill()` in `dart:io`
+/// dort plattformuebergreifend auf `TerminateProcess` abbildet), keine
+/// durchgesetzte Speicherobergrenze.
+Future<Process> _startMemoryLimitedProcess(String executable, int maxMemoryBytes) {
+  if (Platform.isWindows) {
+    return Process.start(executable, const []);
   }
-  if (lower.contains('interrupt') || lower.contains('timeout')) {
-    return SandboxErrorClass.timeout;
-  }
-  return SandboxErrorClass.runtimeError;
+  final maxMemoryKb = (maxMemoryBytes / 1024).ceil();
+  return Process.start('/bin/sh', [
+    '-c',
+    r'ulimit -v "$1"; exec "$0"',
+    executable,
+    '$maxMemoryKb',
+  ]);
 }
