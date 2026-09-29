@@ -113,6 +113,19 @@ gh pr create --fill
   `app/web/`, `app/.dart_tool/`, `app/pubspec.lock`: **nicht committen** —
   von `flutter create` / `flutter pub get` bei Bedarf neu erzeugt, siehe
   Wurzel-`.gitignore`.
+  - **Benannte Ausnahme (SUB-382):** `app/linux/CMakeLists.txt`,
+    `app/windows/CMakeLists.txt` und
+    `app/macos/Runner.xcodeproj/project.pbxproj` werden abweichend davon
+    committed. Sie bauen die Werkbank-Sandbox-Worker-Binary
+    (`app/lib/sandbox/sandbox_worker_main.dart`) per `dart compile exe` und
+    bundlen sie in Desktop-Release-Builds, wo
+    `resolveSandboxWorkerExecutable()`
+    (`app/lib/sandbox/sandbox_runtime_io.dart`) sie zur Laufzeit erwartet —
+    eine reine `flutter create`-Neuerzeugung wuerde diese Anpassung
+    verwerfen. Der Rest jeder Plattform bleibt generiert/ungetrackt; siehe
+    `.github/workflows/manual-builds.yml` fuer das `git checkout --
+    <Datei>`-Muster, das die drei Dateien nach einem frischen
+    `flutter create` im CI-Lauf wiederherstellt.
 - `backend/.venv/`, `__pycache__/`, `*.db`: nicht committen.
 - KI-Redaktion schreibt nach `content/<gebiet>/<slug>.yaml` — das Ergebnis
   wird wie jede andere Content-Aenderung committed und per PR eingereicht,

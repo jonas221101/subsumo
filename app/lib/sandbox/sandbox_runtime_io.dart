@@ -30,13 +30,16 @@
 /// funktioniert dort trotzdem, weil `Process.kill()` in `dart:io`
 /// plattformuebergreifend auf `TerminateProcess` abbildet.
 ///
-/// Weiterhin offen, NICHT Teil dieser Datei: wie die kompilierte
-/// Worker-Binary in einem Release-Build je Desktop-Plattform gebuendelt
-/// wird (natives Build-Tooling: `linux/CMakeLists.txt`, Windows-Runner,
-/// macOS-Xcode-Bundle, CI). Siehe SUB-382, Routing-Entscheidung beim
-/// Lead-Developer noch ausstehend. Ohne eine an [resolveSandboxWorkerExecutable]
-/// auffindbare Binary wirft [execute] absichtlich, statt still auf eine
-/// ungesicherte In-Process-Ausfuehrung zurueckzufallen.
+/// Wie die kompilierte Worker-Binary in einem Release-Build je
+/// Desktop-Plattform gebuendelt wird, ist NICHT Teil dieser Datei, sondern
+/// des nativen Build-Tooling (`linux/CMakeLists.txt`, `windows/
+/// CMakeLists.txt`, `macos/Runner.xcodeproj/project.pbxproj` - siehe
+/// CONTRIBUTING.md "Generierte Dateien" fuer die benannte Ausnahme von der
+/// sonstigen Nicht-Commit-Konvention dieser Verzeichnisse, sowie
+/// `.github/workflows/manual-builds.yml`). Ohne eine an
+/// [resolveSandboxWorkerExecutable] auffindbare Binary wirft [execute]
+/// absichtlich, statt still auf eine ungesicherte In-Process-Ausfuehrung
+/// zurueckzufallen.
 library;
 
 import 'dart:async';
@@ -64,7 +67,11 @@ class IoSandboxRuntime implements SandboxRuntime {
     SandboxResourceLimits limits = const SandboxResourceLimits(),
   }) async {
     final executable = workerExecutable ?? resolveSandboxWorkerExecutable();
-    final process = await _startMemoryLimitedProcess(executable, limits.maxMemoryBytes);
+    final process = await _startMemoryLimitedProcess(
+      executable,
+      limits.maxMemoryBytes,
+      environment: _quickJsLibraryEnvironment(executable),
+    );
 
     process.stdin.writeln(jsonEncode({
       'source': source,
@@ -164,6 +171,71 @@ String resolveSandboxWorkerExecutable() {
   );
 }
 
+/// Ermittelt eine Umgebungsvariable, die dem Worker-Prozess hilft, die
+/// native QuickJS-Bibliothek zu finden (nur Linux - siehe unten).
+///
+/// EMPIRISCH BESTAETIGTER FUND (SUB-382, per `strace -f -e trace=openat`
+/// gegen einen echten Testlauf verifiziert, nicht nur vermutet): der
+/// Worker-Prozess ist eine eigenstaendige `dart compile exe`-Binary ohne
+/// eigenes RPATH und liegt nicht automatisch neben `libquickjs_c_bridge_
+/// plugin.so` - anders als im alten In-Process-Aufbau, wo derselbe
+/// `DynamicLibrary.open('libquickjs_c_bridge_plugin.so')`-Aufruf aus
+/// `libapp.so` heraus erfolgte, das der Flutter-Linux-Build selbst neben die
+/// Bibliothek in `bundle/lib/` legt (RPATH `$ORIGIN` greift dort). Ohne
+/// diesen Fix bricht jeder Worker-Aufruf mit "cannot open shared object
+/// file" ab, was [execute] faelschlich als [SandboxErrorClass.
+/// memoryLimitExceeded] meldet (siehe Kommentar dort) - nicht nur ein
+/// Theoriefall, sondern der Grund, warum alle QuickJS-Tests in dieser
+/// Umgebung zunaechst mit genau dieser falschen Fehlerklasse fehlschlugen.
+///
+/// `package:flutter_js/quickjs/ffi.dart` liest fuer Linux bewusst eine
+/// Umgebungsvariable als Override, bevor es auf den blossen Dateinamen
+/// zurueckfaellt - genau dafuer gedacht. Zweite empirisch verifizierte Falle
+/// dabei (wieder per `strace`, nicht nur aus dem Quelltext geraten): welche
+/// der beiden Variablen `ffi.dart` liest, haengt von einer DRITTEN Variable
+/// ab, `FLUTTER_TEST` - ist die (wie von `flutter test` fuer den gesamten
+/// Prozessbaum gesetzt und vom Worker-Prozess geerbt) `"true"`, liest
+/// `ffi.dart` `LIBQUICKJSC_TEST_PATH` statt `LIBQUICKJSC_PATH`. Nur eine der
+/// beiden zu setzen, funktioniert deshalb nur in genau einem der beiden
+/// Kontexte - diese Funktion setzt darum beide auf denselben Pfad.
+///
+/// Der Pfad selbst: `<Worker-Verzeichnis>/lib/libquickjs_c_bridge_plugin.so`,
+/// wenn diese Datei existiert (das Layout, das `linux/CMakeLists.txt` fuer
+/// Release-Builds erzeugt: die Worker-Binary im Bundle-Wurzelverzeichnis,
+/// die von `flutter_js`s eigenem `linux/CMakeLists.txt` gebuendelte
+/// Bibliothek eine Ebene darunter in `lib/`, siehe SUB-382-Kommentar dort).
+/// `test/sandbox/sandbox_runtime_io_test.dart` legt fuer denselben Zweck
+/// probeweise eine Kopie in genau dieses `lib/`-Unterverzeichnis neben die
+/// im Scratch-Verzeichnis uebersetzte Test-Binary.
+///
+/// Windows braucht diesen Override nicht: `quickjs_c_bridge.dll` liegt dort
+/// direkt neben der Executable (kein separates `lib/`, siehe windows/
+/// CMakeLists.txt), und Windows' Standard-DLL-Suchreihenfolge prueft das
+/// Executable-Verzeichnis zuerst.
+///
+/// macOS bleibt ungeloest: `ffi.dart` nutzt dort `DynamicLibrary.process()`
+/// statt eines Dateipfads, was voraussetzt, dass die Bibliothek bereits in
+/// den aufrufenden Prozess geladen ist (im alten In-Process-Aufbau der Fall,
+/// weil der Haupt-App-Prozess das Plugin-Framework selbst laedt) - der
+/// separate Worker-Prozess laedt dieses Framework nie und kann es ueber
+/// `ffi.dart`s aktuelle API auch nicht gezielt nachladen. Empirisch NICHT
+/// verifiziert (keine macOS-Hardware verfuegbar), aber aus dem Quelltext von
+/// `ffi.dart` eindeutig ableitbar: die Sandbox duerfte auf macOS mit der
+/// Prozessisolations-Architektur in der jetzigen Form nicht funktionieren,
+/// unabhaengig vom bereits dokumentierten `RLIMIT_AS`-Vorbehalt. Vor einem
+/// macOS-Rollout waere entweder ein Patch/Fork von `flutter_js` noetig (ein
+/// Pfad-Override analog zu `LIBQUICKJSC_PATH`) oder ein anderer Mechanismus.
+Map<String, String>? _quickJsLibraryEnvironment(String executable) {
+  if (!Platform.isLinux) {
+    return null;
+  }
+  final candidate = '${File(executable).parent.path}/lib/libquickjs_c_bridge_plugin.so';
+  if (!File(candidate).existsSync()) {
+    return null;
+  }
+  return {'LIBQUICKJSC_PATH': candidate, 'LIBQUICKJSC_TEST_PATH': candidate};
+}
+
 /// Startet [executable] mit einer vom OS durchgesetzten Obergrenze fuer den
 /// virtuellen Adressraum (`maxMemoryBytes`) - der Wert deckt den gesamten
 /// Worker-Prozess ab (Dart-AOT-Laufzeit + gebundene QuickJS-Bibliothek +
@@ -201,15 +273,23 @@ String resolveSandboxWorkerExecutable() {
 /// Wall-Clock-Hard-Kill (funktioniert, weil `Process.kill()` in `dart:io`
 /// dort plattformuebergreifend auf `TerminateProcess` abbildet), keine
 /// durchgesetzte Speicherobergrenze.
-Future<Process> _startMemoryLimitedProcess(String executable, int maxMemoryBytes) {
+Future<Process> _startMemoryLimitedProcess(
+  String executable,
+  int maxMemoryBytes, {
+  Map<String, String>? environment,
+}) {
   if (Platform.isWindows) {
-    return Process.start(executable, const []);
+    return Process.start(executable, const [], environment: environment);
   }
   final maxMemoryKb = (maxMemoryBytes / 1024).ceil();
-  return Process.start('/bin/sh', [
-    '-c',
-    r'ulimit -v "$1"; exec "$0"',
-    executable,
-    '$maxMemoryKb',
-  ]);
+  return Process.start(
+    '/bin/sh',
+    [
+      '-c',
+      r'ulimit -v "$1"; exec "$0"',
+      executable,
+      '$maxMemoryKb',
+    ],
+    environment: environment,
+  );
 }

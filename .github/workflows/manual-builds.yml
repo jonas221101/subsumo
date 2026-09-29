@@ -1,4 +1,4 @@
-name: Manuelle Testbuilds (Android APK / Windows / iOS)
+name: Manuelle Testbuilds (Android APK / Desktop / iOS)
 
 on:
   workflow_dispatch:
@@ -47,6 +47,47 @@ jobs:
           path: app/build/app/outputs/flutter-apk/app-release.apk
           retention-days: 14
 
+  build-linux:
+    name: Flutter - Linux-Build bauen und zippen
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.ref }}
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      - name: Linux-Desktop-Build-Abhaengigkeiten installieren
+        run: sudo apt-get update && sudo apt-get install -y clang cmake ninja-build pkg-config libgtk-3-dev
+      # app/linux/ ist nicht eingecheckt (siehe CONTRIBUTING.md, "Generierte
+      # Dateien") - vor dem Build einmalig erzeugen.
+      - run: flutter create . --platforms=linux --org de.subsumo
+      # linux/CMakeLists.txt ist eine benannte Ausnahme von dieser Konvention
+      # (SUB-382): sie baut die Werkbank-Sandbox-Worker-Binary per
+      # `dart compile exe` und bundlet sie neben die Haupt-Executable. Der
+      # vorherige `flutter create`-Schritt ueberschreibt sie mit der
+      # unveraenderten Vorlage - auf den committeten Stand zuruecksetzen.
+      - run: git checkout -- linux/CMakeLists.txt
+      - run: flutter pub get
+      - run: flutter build linux --release --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }}
+      # Fertig-Kriterium SUB-382: die Worker-Binary muss tatsaechlich im
+      # Release-Build landen, nicht nur im Dev-/Test-Setup.
+      - name: Werkbank-Sandbox-Worker-Binary im Bundle pruefen
+        run: test -f build/linux/x64/release/bundle/sandbox_worker
+      - name: Build-Ordner zippen
+        run: |
+          cd build/linux/x64/release/bundle
+          zip -qr ../../../../../subsumo-linux.zip .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: subsumo-linux
+          path: app/subsumo-linux.zip
+          retention-days: 14
+
   build-windows:
     name: Flutter - Windows-Build bauen und zippen
     runs-on: windows-latest
@@ -64,8 +105,18 @@ jobs:
       # app/windows/ ist nicht eingecheckt (siehe CONTRIBUTING.md,
       # "Generierte Dateien") - vor dem Build einmalig erzeugen.
       - run: flutter create . --platforms=windows --org de.subsumo
+      # windows/CMakeLists.txt ist eine benannte Ausnahme von dieser
+      # Konvention (SUB-382): sie baut die Werkbank-Sandbox-Worker-Binary per
+      # `dart compile exe` und bundlet sie neben die Haupt-Executable. Der
+      # vorherige `flutter create`-Schritt ueberschreibt sie mit der
+      # unveraenderten Vorlage - auf den committeten Stand zuruecksetzen.
+      - run: git checkout -- windows/CMakeLists.txt
       - run: flutter pub get
       - run: flutter build windows --release --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }}
+      # Fertig-Kriterium SUB-382: die Worker-Binary muss tatsaechlich im
+      # Release-Build landen, nicht nur im Dev-/Test-Setup.
+      - name: Werkbank-Sandbox-Worker-Binary im Bundle pruefen
+        run: Test-Path build\windows\x64\runner\Release\sandbox_worker.exe -PathType Leaf
       # pubspec.yaml bindet die Rechtstexte als ../docs/legal/ ein. Der Web-Build
       # legt sie korrekt neben assets/ ab, der Windows-Build installiert aber nur
       # data/flutter_assets/ - die Engine sucht die Dateien unter
@@ -81,6 +132,50 @@ jobs:
         with:
           name: subsumo-windows
           path: app/subsumo-windows.zip
+          retention-days: 14
+
+  build-macos:
+    name: Flutter - macOS-Build bauen und zippen
+    runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.ref }}
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      # app/macos/ ist nicht eingecheckt (siehe CONTRIBUTING.md, "Generierte
+      # Dateien") - vor dem Build einmalig erzeugen.
+      - run: flutter create . --platforms=macos --org de.subsumo
+      # macos/Runner.xcodeproj/project.pbxproj ist eine benannte Ausnahme von
+      # dieser Konvention (SUB-382): sie enthaelt eine zusaetzliche
+      # Run-Script-Build-Phase, die die Werkbank-Sandbox-Worker-Binary per
+      # `dart compile exe` baut und ins App-Bundle kopiert. Der vorherige
+      # `flutter create`-Schritt ueberschreibt sie mit der unveraenderten
+      # Vorlage - auf den committeten Stand zuruecksetzen.
+      - run: git checkout -- macos/Runner.xcodeproj/project.pbxproj
+      - run: flutter pub get
+      - run: flutter build macos --release --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }}
+      # Fertig-Kriterium SUB-382: die Worker-Binary muss tatsaechlich im
+      # Release-Build landen, nicht nur im Dev-/Test-Setup. Ob sie zur
+      # Laufzeit dort auch die native QuickJS-Bibliothek findet, ist auf
+      # macOS unabhaengig davon offen (siehe Kommentar bei
+      # `_quickJsLibraryEnvironment` in sandbox_runtime_io.dart) - hier wird
+      # nur geprueft, dass das Build-Tooling die Datei ausliefert.
+      - name: Werkbank-Sandbox-Worker-Binary im Bundle pruefen
+        run: test -f build/macos/Build/Products/Release/subsumo.app/Contents/MacOS/sandbox_worker
+      - name: App-Bundle zippen
+        run: |
+          cd build/macos/Build/Products/Release
+          zip -qr ../../../../../subsumo-macos.zip subsumo.app
+      - uses: actions/upload-artifact@v4
+        with:
+          name: subsumo-macos
+          path: app/subsumo-macos.zip
           retention-days: 14
 
   build-ios:

@@ -1,6 +1,7 @@
 @TestOn('vm')
 library;
 
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
@@ -50,6 +51,42 @@ void main() {
       );
     }
     _sandboxWorkerExecutable = outputPath;
+
+    // SUB-382, empirisch per `strace -f -e trace=openat` verifiziert: die
+    // eigenstaendige Worker-Binary hat kein RPATH und findet
+    // `libquickjs_c_bridge_plugin.so` deshalb nicht von selbst (anders als
+    // der alte In-Process-Aufbau, wo derselbe `DynamicLibrary.open`-Aufruf
+    // aus `libapp.so` heraus erfolgte, das der Flutter-Linux-Build selbst
+    // neben die Bibliothek legt). `sandbox_runtime_io.dart`
+    // (`_quickJsLibraryEnvironment`) sucht die Bibliothek unter
+    // `<Worker-Verzeichnis>/lib/libquickjs_c_bridge_plugin.so` - genau das
+    // Layout, das `linux/CMakeLists.txt` fuer einen echten Release-Build
+    // erzeugt (siehe SUB-382-Kommentar dort). Hier wird dasselbe Layout im
+    // Scratch-Verzeichnis nachgebildet, damit der Test exakt denselben
+    // Auffindungsmechanismus uebt statt eines rein testspezifischen.
+    if (Platform.isLinux) {
+      // `Isolate.resolvePackageUri` ist im Test-Host (flutter_tester) nicht
+      // unterstuetzt ("Unsupported operation") - stattdessen direkt
+      // `.dart_tool/package_config.json` lesen, das `pub get` immer erzeugt.
+      final packageConfig = jsonDecode(
+        await File('.dart_tool/package_config.json').readAsString(),
+      ) as Map<String, dynamic>;
+      final packages = (packageConfig['packages'] as List).cast<Map<String, dynamic>>();
+      final flutterJsPackage = packages.firstWhere(
+        (p) => p['name'] == 'flutter_js',
+        orElse: () => throw StateError('package:flutter_js fehlt in package_config.json.'),
+      );
+      final packageRoot = Uri.parse(flutterJsPackage['rootUri'] as String).toFilePath();
+      final bundledLibrary = File('$packageRoot/linux/shared/libquickjs_c_bridge_plugin.so');
+      if (!bundledLibrary.existsSync()) {
+        throw StateError(
+          'libquickjs_c_bridge_plugin.so nicht gefunden unter ${bundledLibrary.path} - '
+          'package:flutter_js-Layout hat sich vermutlich geaendert.',
+        );
+      }
+      final libDir = await Directory('${scratchDir.path}/lib').create();
+      await bundledLibrary.copy('${libDir.path}/libquickjs_c_bridge_plugin.so');
+    }
   });
 
   tearDownAll(() async {

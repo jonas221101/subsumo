@@ -19,10 +19,21 @@ app/*.iml
 app/pubspec.lock
 app/android/
 app/ios/
-app/linux/
-app/macos/
-app/windows/
 app/web/
+
+# app/linux/, app/macos/, app/windows/ sind ebenfalls generiert (siehe oben),
+# mit einer schmalen, benannten Ausnahme fuer das native Build-Tooling, das
+# die Werkbank-Sandbox-Worker-Binary in Desktop-Release-Builds bundlet
+# (SUB-382, siehe CONTRIBUTING.md "Generierte Dateien"). Nur diese drei
+# Dateien werden committet, der Rest jeder Plattform bleibt generiert.
+app/linux/*
+!app/linux/CMakeLists.txt
+app/windows/*
+!app/windows/CMakeLists.txt
+app/macos/*
+!app/macos/Runner.xcodeproj
+app/macos/Runner.xcodeproj/*
+!app/macos/Runner.xcodeproj/project.pbxproj
 
 # Arbeitsverzeichnisse einzelner Laeufe, keine Projektartefakte
 .redaktion-bridge/
