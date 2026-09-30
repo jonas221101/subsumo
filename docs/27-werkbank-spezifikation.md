@@ -103,6 +103,33 @@ Beschränkung entscheidet der Host beim Befüllen des Eingabeobjekts, nicht das
 Modell beim Schreiben des Codes — sie gilt deshalb unabhängig davon, ob sich
 das Modell an eine Anweisung hält.
 
+### 1.4 Mobile-Restrisiko (Android/iOS): bewusst getragen (SUB-384)
+
+SUB-382 hat die OS-Prozessisolation (Wall-Clock-Hard-Kill + Speicherlimit auf
+Betriebssystemebene) bewusst nur für Desktop (Linux/Windows/macOS) umgesetzt.
+Mobile bleibt ohne äquivalenten Mechanismus:
+
+- iOS verbietet Prozess-Spawning für sandboxed Apps grundsätzlich — keine
+  technische Option, kein Aufwandsproblem.
+- Android bräuchte einen nativen, in `jniLibs` gebündelten Helper-Prozess
+  (W^X-Workaround, SELinux-Risiko) — Aufwand und Risiko stehen nicht im
+  Verhältnis zum verbleibenden Restrisiko.
+
+Entscheidung: Restrisiko wird bewusst getragen, keine separate Investition.
+Begründung:
+
+- Der Interpreter-Schrittzähler (Abschnitt 1.1, SUB-359) wirkt auf
+  Interpreter-Ebene, nicht auf OS-Ebene, und deckt damit den häufigen Fall
+  echter Endlosschleifen unabhängig von OS-Prozessisolation bereits auf allen
+  Plattformen inklusive Mobile ab.
+- Die leere Capability-Liste (Abschnitt 1.1) begrenzt den Blast-Radius
+  unverändert: selbst ein durchrutschender Runaway-Fall hat keinen Zugriff auf
+  Netzwerk, Datei, Storage oder andere App-Services — er kann nur CPU/Speicher
+  der eigenen, kurzlebigen Ausführung verbrauchen.
+
+Vergleichbar zu Abschnitt 8 Punkt 1 („kein Anwalt"-Restrisiko, SUB-316):
+technisches Restrisiko, bewusst getragen statt aufgelöst.
+
 ---
 
 ## 2. RDG-Grenze bei generierter Logik
@@ -639,6 +666,10 @@ Paperclip-Betreibers (Abschnitt 5.3) die längste Vorlaufzeit hat.
    durch die bestehende Eingabekontrakt-Durchsetzung (Abschnitt 2.2)
    abgefangen, keine anwaltliche Klärung nötig. `docs/17-release-readiness.md`
    Abschnitt 1 führt die Zeile entsprechend nach.
+6. **Mobile-Restrisiko (Android/iOS) bei der Sandbox-Prozessisolation**
+   (Abschnitt 1.4) — **kein offener Punkt mehr.** Entscheidung getroffen:
+   Restrisiko bewusst getragen (SUB-384), keine separate Investition in
+   native Prozessisolation auf Mobile.
 
 ---
 

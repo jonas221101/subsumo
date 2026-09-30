@@ -18,6 +18,8 @@ class SandboxResourceLimits {
   const SandboxResourceLimits({
     this.timeoutMs = 300,
     this.maxOutputBytes = 8192,
+    this.maxSteps = 5000000,
+    this.maxMemoryBytes = 64 * 1024 * 1024,
   });
 
   /// Wall-Clock-Budget je Aufruf in Millisekunden
@@ -30,6 +32,31 @@ class SandboxResourceLimits {
   /// `backend/app/services/tool_spec.py`, `resource_limits.max_output_bytes`,
   /// docs/27 Abschnitt 3.1).
   final int maxOutputBytes;
+
+  /// Interpreter-Schrittzaehler als Rueckfallgrenze (docs/27 Abschnitt 1.1:
+  /// "Interpreter-Schrittzaehler als Rueckfallgrenze gegen Endlosschleifen,
+  /// die innerhalb von 300 ms viele kurze Yield-Punkte erzeugen"). Kein
+  /// Backend-Vertragsfeld - anders als `timeoutMs`/`maxOutputBytes` gibt es
+  /// dafuer keine Entsprechung in `resource_limits` (`tool_spec.py`), weil
+  /// der generierte Code diese Grenze nie zu Gesicht bekommt und sie rein
+  /// host-seitig durchgesetzt wird (siehe `sandbox_step_guard.dart`). Der
+  /// Defaultwert ist eine konservative technische Schaetzung (deutlich ueber
+  /// realistischen kurzen `execute()`-Aufrufen, deutlich unter dem, was ein
+  /// Interpreter in mehreren Sekunden schaffen wuerde), keine Ableitung aus
+  /// einem gemeinsamen Vertrag.
+  final int maxSteps;
+
+  /// Obergrenze fuer den virtuellen Adressraum des Worker-Prozesses in Byte
+  /// (SUB-382, Prozessisolation fuer Mobile/Desktop) - deckt den gesamten
+  /// Prozess ab (Dart-AOT-Laufzeit + gebundene QuickJS-Bibliothek +
+  /// generierter Code), nicht nur einen JS-Engine-internen Heap. Nur vom
+  /// Io-Pfad durchgesetzt (`sandbox_runtime_io.dart`, POSIX per `ulimit -v`);
+  /// der Web-Pfad hat kein Aequivalent (Browser-Worker haben kein
+  /// konfigurierbares Speicherlimit) und ignoriert dieses Feld, analog zu
+  /// [maxSteps]. Empirisch ermittelter Defaultwert: 64 MiB laesst
+  /// realistische kurze `execute()`-Aufrufe unberuehrt (getestet ab
+  /// ~24 MiB), begrenzt aber ein Speicher-Bombardierungsskript zuverlaessig.
+  final int maxMemoryBytes;
 }
 
 /// Fehlerklasse D aus docs/27 Abschnitt 4.3: eine vom Host erzwungene
@@ -42,6 +69,10 @@ enum SandboxErrorClass {
 
   /// Speicherobergrenze der Engine-Instanz ueberschritten.
   memoryLimitExceeded,
+
+  /// Interpreter-Schrittzaehler-Rueckfallgrenze ueberschritten (docs/27
+  /// Abschnitt 1.1) - unabhaengig vom Wall-Clock-Timeout.
+  stepLimitExceeded,
 
   /// `code.source` ist kein gueltiges JavaScript oder wirft beim Laden.
   compileError,
@@ -59,6 +90,7 @@ enum SandboxErrorClass {
 const Map<SandboxErrorClass, String> sandboxErrorMessages = {
   SandboxErrorClass.timeout: 'Zeitlimit ueberschritten.',
   SandboxErrorClass.memoryLimitExceeded: 'Speicherlimit ueberschritten.',
+  SandboxErrorClass.stepLimitExceeded: 'Zeitlimit ueberschritten.',
   SandboxErrorClass.compileError: 'Werkzeug konnte nicht geladen werden.',
   SandboxErrorClass.runtimeError: 'Werkzeug konnte nicht ausgefuehrt werden.',
   SandboxErrorClass.invalidOutput: 'Werkzeugausgabe ungueltig.',
