@@ -53,9 +53,17 @@ HTML/DOM-Injektion, nie als roher Widget-Baum aus generiertem Code.
 
 Konkrete Runtime:
 
-- **Mobile/Desktop:** ein eingebetteter QuickJS-Interpreter (z. B. über das
-  `flutter_js`-Paket oder eine direkte QuickJS-FFI-Bindung), pro Ausführung
-  neu instanziiert und danach verworfen — kein Zustand überlebt einen Aufruf.
+- **Desktop (Linux/Windows/macOS):** ein eingebetteter QuickJS-Interpreter
+  (über das `flutter_js`-Paket), seit SUB-382 in einem separaten,
+  wall-clock-begrenzten Worker-Prozess statt im Host-Prozess selbst (siehe
+  `app/lib/sandbox/sandbox_runtime_io.dart`), pro Ausführung neu
+  instanziiert und danach verworfen — kein Zustand überlebt einen Aufruf.
+- **Mobile (Android/iOS): keine unterstützte Werkbank-Laufzeit** (SUB-409,
+  Begründung und Korrektur gegenüber einer früheren Fassung dieses
+  Abschnitts in 1.4). Der Werkbank-Sandbox-Einstiegspunkt im Client ist auf
+  Mobile hart gesperrt (`app/lib/sandbox/sandbox_platform_support.dart`) —
+  nicht nur funktional unerreichbar wie zuvor, sondern beabsichtigt und
+  getestet.
 - **Web:** Flutter Web läuft im Browser; dort läuft der generierte Code in
   einem eigenen, same-origin `<iframe sandbox="allow-scripts">` **ohne**
   `allow-same-origin` — das Iframe hat keinen Zugriff auf Cookies,
@@ -103,32 +111,49 @@ Beschränkung entscheidet der Host beim Befüllen des Eingabeobjekts, nicht das
 Modell beim Schreiben des Codes — sie gilt deshalb unabhängig davon, ob sich
 das Modell an eine Anweisung hält.
 
-### 1.4 Mobile-Restrisiko (Android/iOS): bewusst getragen (SUB-384)
+### 1.4 Mobile (Android/iOS): keine unterstützte Werkbank-Laufzeit (SUB-409, korrigiert gegenüber SUB-384)
 
 SUB-382 hat die OS-Prozessisolation (Wall-Clock-Hard-Kill + Speicherlimit auf
-Betriebssystemebene) bewusst nur für Desktop (Linux/Windows/macOS) umgesetzt.
-Mobile bleibt ohne äquivalenten Mechanismus:
+Betriebssystemebene) bewusst nur für Desktop (Linux/Windows/macOS)
+umgesetzt — und mit ihr den einzigen Ausführungspfad, den
+`IoSandboxRuntime` seitdem kennt (kein In-Process-Fallback mehr, siehe
+`app/lib/sandbox/sandbox_runtime_io.dart`). Mobile hat seitdem **keinen**
+Ausführungspfad, nicht nur einen schwächer durchgesetzten:
 
 - iOS verbietet Prozess-Spawning für sandboxed Apps grundsätzlich — keine
   technische Option, kein Aufwandsproblem.
 - Android bräuchte einen nativen, in `jniLibs` gebündelten Helper-Prozess
   (W^X-Workaround, SELinux-Risiko) — Aufwand und Risiko stehen nicht im
-  Verhältnis zum verbleibenden Restrisiko.
+  Verhältnis zum Nutzen.
 
-Entscheidung: Restrisiko wird bewusst getragen, keine separate Investition.
-Begründung:
+**Korrektur gegenüber der Vorfassung dieses Abschnitts (SUB-384):** die
+damalige Entscheidung ging von einem funktionsfähigen, nur schwächer
+abgesicherten Mobile-Pfad aus („Restrisiko bewusst getragen") und begründete
+das unter anderem damit, der Interpreter-Schrittzähler (Abschnitt 1.1,
+SUB-359) decke Endlosschleifen „bereits auf allen Plattformen inklusive
+Mobile" ab. Das war bereits zum Zeitpunkt von SUB-384 falsch: ein
+Interpreter, der auf Mobile nie instanziiert wird (kein Build-Tooling
+bündelt dort eine Worker-Binary, siehe Abschnitt 1.1), hat auch keinen
+Schrittzähler, der etwas abdecken könnte. SUB-369 (Sicherheitsabnahme,
+Abschnitt 7 Ticket 9) hat das unabhängig reproduziert und den Rollout für
+Mobile verweigert; SUB-409 trifft die damit fällige Entscheidung nach.
 
-- Der Interpreter-Schrittzähler (Abschnitt 1.1, SUB-359) wirkt auf
-  Interpreter-Ebene, nicht auf OS-Ebene, und deckt damit den häufigen Fall
-  echter Endlosschleifen unabhängig von OS-Prozessisolation bereits auf allen
-  Plattformen inklusive Mobile ab.
-- Die leere Capability-Liste (Abschnitt 1.1) begrenzt den Blast-Radius
-  unverändert: selbst ein durchrutschender Runaway-Fall hat keinen Zugriff auf
-  Netzwerk, Datei, Storage oder andere App-Services — er kann nur CPU/Speicher
-  der eigenen, kurzlebigen Ausführung verbrauchen.
+**Entscheidung: Mobile wird nicht unterstützt**, statt mit schwächerer
+Durchsetzung weiterbetrieben — kein Restrisiko, das getragen wird, weil es
+keine Ausführung gibt, die ein Risiko tragen könnte. Die Werkbank-Sandbox
+ist dafür als Rollout-Vorbedingung clientseitig hart auf Desktop und Web
+beschränkt (`app/lib/sandbox/sandbox_platform_support.dart`,
+`isWerkbankSandboxSupported`/`assertWerkbankSandboxSupported`) — der
+Einstiegspunkt `createSandboxRuntime()` wirft auf Mobile jetzt explizit und
+getestet, statt zufällig an einer fehlenden Worker-Binary zu scheitern
+(siehe `sandbox_platform_support_test.dart`).
 
-Vergleichbar zu Abschnitt 8 Punkt 1 („kein Anwalt"-Restrisiko, SUB-316):
-technisches Restrisiko, bewusst getragen statt aufgelöst.
+Diese Entscheidung ist enger als SUB-384, nicht weiter: soll Mobile künftig
+unterstützt werden (nativer Android-Helperprozess oder eine
+In-Process-QuickJS-FFI-Bindung für iOS), braucht das eine eigene
+Spec-Änderung dieses Abschnitts und eine Nachabnahme der
+Sicherheitsabnahme (SUB-369) für Mobile — nicht nur das Entfernen dieser
+Clientsperre.
 
 ---
 
@@ -627,7 +652,7 @@ Zählung tatsächlich erfolgter Aktionen statt Client-Parameter):
 | 3 | Intent-Check + Promptvertrag + Generierungsaufruf mit gebundener Reparaturschleife (Abschnitt 4) | Backend-Developer | 1, 2, AVV/`llm_provider` |
 | 4a | Fehlerpfad-UI für die Fehlerklassen A–E aus Abschnitt 4.3 | Frontend-Developer | 3 |
 | 4b | Vorschlags-Kennzeichnung: dauerhaftes, nicht schließbares Badge (Abschnitt 3.2) auf jedem generierten Werkzeug | UI-Developer | 5 |
-| 5 | Sandbox-Runtime im Flutter-Client: QuickJS-Einbindung (Mobile/Desktop) und sandboxed Iframe (Web), leere Capability-Liste, Timeout-/Speicherdurchsetzung (Abschnitt 1.1) — ersetzt den Bausteinaufruf-Interpreter der Vorversion | Frontend-Developer | 2 |
+| 5 | Sandbox-Runtime im Flutter-Client: QuickJS-Einbindung (Desktop) und sandboxed Iframe (Web), leere Capability-Liste, Timeout-/Speicherdurchsetzung (Abschnitt 1.1) — ersetzt den Bausteinaufruf-Interpreter der Vorversion. Mobile (Android/iOS) ist keine unterstützte Laufzeit, hart per Client-Plattformgrenze ausgeschlossen (Abschnitt 1.4, SUB-409) | Frontend-Developer | 2 |
 | 6 | Kontingent + separates Versuchslimit, Erweiterung von `limits.py` nach demselben Muster (Abschnitt 6.2) | Backend-Developer | keine |
 | 7 | Rückkanal: Proposal-Tabelle, Outbox-Zustellung. **Voraussetzung: Risikoentscheidung des Board-/Paperclip-Betreibers zwischen Variante (a)/(b)/(c) aus Abschnitt 5.3 muss vor Implementierung vorliegen** — keine der drei baut auf die dort ursprünglich angenommene, nicht existierende scope-enge Option. Payload muss jetzt `code.source_sha256` und einen Code-Auszug statt nur eine Bausteinstruktur transportieren (Abschnitt 3.3) | Backend-Developer + Rückfrage | keine, aber blockiert auf die Risikoentscheidung Abschnitt 5.3 |
 | 8 | Board-seitige Annahme/Ablehnung eines Vorschlags (fester Einbau ja/nein) — Interaktionsform mit dem Auftraggeber klären (neue Paperclip-Interaktion vs. eigene Ansicht) | Software-Planner + Auftraggeber | 7 |
@@ -666,9 +691,11 @@ Paperclip-Betreibers (Abschnitt 5.3) die längste Vorlaufzeit hat.
    durch die bestehende Eingabekontrakt-Durchsetzung (Abschnitt 2.2)
    abgefangen, keine anwaltliche Klärung nötig. `docs/17-release-readiness.md`
    Abschnitt 1 führt die Zeile entsprechend nach.
-6. **Mobile-Restrisiko (Android/iOS) bei der Sandbox-Prozessisolation**
-   (Abschnitt 1.4) — **kein offener Punkt mehr.** Entscheidung getroffen:
-   Restrisiko bewusst getragen (SUB-384), keine separate Investition in
+6. **Mobile (Android/iOS) als Werkbank-Laufzeit** (Abschnitt 1.4) — **kein
+   offener Punkt mehr.** Entscheidung getroffen (SUB-409, korrigiert
+   gegenüber der ursprünglichen „Restrisiko bewusst getragen"-Fassung aus
+   SUB-384): Mobile wird **nicht unterstützt** und ist über eine harte
+   Client-Plattformgrenze ausgeschlossen, keine separate Investition in
    native Prozessisolation auf Mobile.
 
 ---
