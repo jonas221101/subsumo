@@ -131,7 +131,7 @@ kurs:
 
 def test_gewichtung_ohne_bundesland_ist_gleichverteilt():
     weights = examen.area_weights(None)
-    assert weights == pytest.approx({a: 1 / 3 for a in examen.AREAS})
+    assert weights == pytest.approx({a: 1 / 3 for a in examen.LEGACY_AREAS})
 
 
 def test_gewichtung_folgt_der_klausurverteilung():

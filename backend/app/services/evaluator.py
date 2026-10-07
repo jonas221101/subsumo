@@ -78,14 +78,14 @@ class PruefpunktResult:
 
 @dataclass
 class Evaluation:
-    points: float                 # 0-18 (JAP-Skala)
+    points: float  # 0-18 (JAP-Skala)
     note: str
-    content_ratio: float          # 0..1 gewichtete Trefferquote
-    structure_score: int          # 0..100 aus der Strukturanalyse
+    content_ratio: float  # 0..1 gewichtete Trefferquote
+    structure_score: int  # 0..100 aus der Strukturanalyse
     checkpoints: list[PruefpunktResult]
     missed_required: list[str]
     summary: str
-    engine: str                   # "heuristik" | "llm:<model>"
+    engine: str  # "heuristik" | "llm:<model>"
     disclaimer: str = (
         "Lernhilfe, keine Rechtsberatung. Die Bewertung erfolgt gegen den "
         "hinterlegten Erwartungshorizont dieses Übungsfalls."
@@ -142,6 +142,18 @@ def _digraph_fold(text: str) -> str:
     return text
 
 
+def _gesamtquote(content_ratio: float, structure: GutachtenReport) -> float:
+    """Inhalt zaehlt deutlich schwerer als Form - so bewerten Korrektoren auch.
+
+    Ohne Gutachtenstil-Analyse (``structure.neutral``, Fachrichtungen ausserhalb
+    Jura, docs/34) zaehlt nur der Inhalt - sonst gaebe es 28 % geschenkte
+    Punkte fuer eine Form, die niemand geprueft hat.
+    """
+    if getattr(structure, "neutral", False):
+        return content_ratio
+    return 0.72 * content_ratio + 0.28 * (structure.score / 100)
+
+
 class Evaluator(Protocol):
     def evaluate(
         self, *, text: str, expectation: dict, structure: GutachtenReport
@@ -166,9 +178,7 @@ class HeuristicEvaluator:
 
     name = "heuristik"
 
-    def evaluate(
-        self, *, text: str, expectation: dict, structure: GutachtenReport
-    ) -> Evaluation:
+    def evaluate(self, *, text: str, expectation: dict, structure: GutachtenReport) -> Evaluation:
         checkpoints = parse_expectation(expectation)
         haystack = _normalize(text)
         folded_haystack = _digraph_fold(haystack)
@@ -211,7 +221,7 @@ class HeuristicEvaluator:
         ]
 
         # Inhalt zaehlt deutlich schwerer als Form - so bewerten Korrektoren auch.
-        raw = 0.72 * content_ratio + 0.28 * (structure.score / 100)
+        raw = _gesamtquote(content_ratio, structure)
         points = round(raw * 18 * 2) / 2
         if missed_required:
             # Ein fehlender Kernpunkt deckelt die Bewertung im unteren Bereich.
@@ -289,9 +299,7 @@ class LLMEvaluator:
             "im Gutachten stehen."
         )
 
-    def evaluate(
-        self, *, text: str, expectation: dict, structure: GutachtenReport
-    ) -> Evaluation:
+    def evaluate(self, *, text: str, expectation: dict, structure: GutachtenReport) -> Evaluation:
         base = self.fallback.evaluate(text=text, expectation=expectation, structure=structure)
         client = self.client or get_llm_client()
         if not getattr(client, "available", True):
@@ -331,7 +339,7 @@ class LLMEvaluator:
             for cp, r in zip(checkpoints, results, strict=True)
             if cp.required and not r.hit
         ]
-        raw_score = 0.72 * content_ratio + 0.28 * (structure.score / 100)
+        raw_score = _gesamtquote(content_ratio, structure)
         points = round(raw_score * 18 * 2) / 2
         if missed_required:
             points = min(points, 3.5)

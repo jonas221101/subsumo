@@ -15,32 +15,47 @@ from fastapi import APIRouter, HTTPException, Query, status
 from app.api.deps import CurrentUser, DbSession
 from app.config import get_settings
 from app.core.timeutil import as_utc
-from app.models import Bundesland, Kurs, Universitaet, UserCard
+from app.models import DEFAULT_FACHRICHTUNG, Bundesland, Fachrichtung, Kurs, Universitaet, UserCard
 from app.services import examen, lernprofil, srs
+from app.services.content import bundesland_key
 from app.services.planner import generate_plan
 
 router = APIRouter(prefix="/examen", tags=["examen"])
 
 
+@router.get("/fachrichtungen")
+def fachrichtungen(db: DbSession) -> list[dict]:
+    """Alle Fachrichtungen (docs/34) mit Fachgebieten, Begriffen und Methodik."""
+    return [
+        examen.fachrichtung_info(db, f.slug)
+        for f in db.query(Fachrichtung).order_by(Fachrichtung.slug).all()
+    ]
+
+
 @router.get("/bundeslaender")
-def bundeslaender(db: DbSession) -> list[dict]:
-    """Alle 16 Laender mit Klausurstruktur - fuer die Auswahl im Profil."""
+def bundeslaender(db: DbSession, fachrichtung: str = DEFAULT_FACHRICHTUNG) -> list[dict]:
+    """Alle Laender mit Klausurstruktur je Fachrichtung - fuer die Auswahl im Profil."""
     return [
         examen.bundesland_summary(land)
-        for land in db.query(Bundesland).order_by(Bundesland.name).all()
+        for land in db.query(Bundesland)
+        .filter(Bundesland.fachrichtung == fachrichtung)
+        .order_by(Bundesland.name)
+        .all()
     ]
 
 
 @router.get("/bundeslaender/{code}")
-def bundesland(code: str, db: DbSession) -> dict:
-    land = db.get(Bundesland, code.upper())
+def bundesland(code: str, db: DbSession, fachrichtung: str = DEFAULT_FACHRICHTUNG) -> dict:
+    land = db.get(Bundesland, bundesland_key(fachrichtung, code))
     if land is None:
         raise HTTPException(status.HTTP_404_NOT_FOUND, "Bundesland nicht gefunden")
     return examen.bundesland_profile(db, land)
 
 
 @router.get("/universitaeten")
-def universitaeten(db: DbSession, bundesland: str | None = None) -> list[dict]:
+def universitaeten(
+    db: DbSession, bundesland: str | None = None, fachrichtung: str | None = None
+) -> list[dict]:
     query = db.query(Universitaet)
     if bundesland:
         query = query.filter(Universitaet.bundesland == bundesland.upper())
@@ -52,8 +67,11 @@ def universitaeten(db: DbSession, bundesland: str | None = None) -> list[dict]:
             "stadt": u.data.get("stadt", ""),
             "bundesland": u.bundesland,
             "traegerschaft": u.data.get("traegerschaft", "staatlich"),
+            "fachrichtungen": u.data.get("fachrichtungen") or [DEFAULT_FACHRICHTUNG],
         }
         for u in query.order_by(Universitaet.bundesland, Universitaet.name).all()
+        if fachrichtung is None
+        or fachrichtung in (u.data.get("fachrichtungen") or [DEFAULT_FACHRICHTUNG])
     ]
 
 
@@ -62,19 +80,20 @@ def universitaet(slug: str, db: DbSession) -> dict:
     uni = db.query(Universitaet).filter_by(slug=slug).one_or_none()
     if uni is None:
         raise HTTPException(status.HTTP_404_NOT_FOUND, "Universitaet nicht gefunden")
-    land = db.get(Bundesland, uni.bundesland)
+    land = db.get(Bundesland, bundesland_key(DEFAULT_FACHRICHTUNG, uni.bundesland))
+    angebot = uni.data.get("fachrichtungen") or [DEFAULT_FACHRICHTUNG]
     return {
         **uni.data,
         "pruefstatus": (uni.data.get("redaktion") or {}).get("status", "mensch-freigegeben"),
         "bundesland_name": land.name if land else uni.bundesland,
-        "kurse": examen.university_courses(db, uni),
+        "kurse": [kurs for fach in angebot for kurs in examen.university_courses(db, uni, fach)],
     }
 
 
 @router.get("/kurse")
-def kurse(db: DbSession) -> list[dict]:
-    """Kanonischer Kurskatalog (docs/32 Abschnitt 3.3)."""
-    return examen.university_courses(db, None)
+def kurse(db: DbSession, fachrichtung: str = DEFAULT_FACHRICHTUNG) -> list[dict]:
+    """Kanonischer Kurskatalog je Fachrichtung (docs/32 Abschnitt 3.3, docs/34)."""
+    return examen.university_courses(db, None, fachrichtung)
 
 
 @router.get("/kurse/{slug}/deck")
@@ -102,7 +121,10 @@ def cockpit(
     """
     now = datetime.now(UTC)
     today = date.today()
-    land = db.get(Bundesland, user.bundesland) if user.bundesland else None
+    fach_slug = examen.user_fachrichtung(user)
+    fach = examen.fachrichtung_info(db, fach_slug)
+    areas = [a["slug"] for a in fach["areas"]]
+    land = examen.bundesland_for(db, user)
     uni = (
         db.query(Universitaet).filter_by(slug=user.universitaet_slug).one_or_none()
         if user.universitaet_slug
@@ -110,12 +132,14 @@ def cockpit(
     )
     profil = lernprofil.get_profil(user)
     progress = examen.topic_progress(db, user, now=now)
-    reife = examen.readiness(db, user, progress=progress, land=land, now=now)
+    reife = examen.readiness(
+        db, user, progress=progress, land=land, now=now, areas=areas, fachrichtung=fach
+    )
     phase = examen.phase_info(user, today)
 
     decks = [
         examen.resolve_deck(db, user, kurs, progress=progress)
-        for kurs in _kurse_in_reihenfolge(db, uni)
+        for kurs in _kurse_in_reihenfolge(db, uni, fach_slug)
     ]
     eigene_decks = [
         examen.resolve_eigenes_deck(db, user, d.model_dump(), progress=progress)
@@ -205,6 +229,7 @@ def cockpit(
             "daily_minutes": user.daily_minutes,
             "vollstaendig": bool(land and user.exam_date),
         },
+        "fachrichtung": fach,
         "lernprofil": {
             **profil.model_dump(),
             "eingerichtet": lernprofil.ist_eingerichtet(user),
@@ -241,8 +266,10 @@ def cockpit(
     }
 
 
-def _kurse_in_reihenfolge(db: DbSession, uni: Universitaet | None) -> list[Kurs]:
-    kurse = {k.slug: k for k in db.query(Kurs).all()}
+def _kurse_in_reihenfolge(
+    db: DbSession, uni: Universitaet | None, fachrichtung: str = DEFAULT_FACHRICHTUNG
+) -> list[Kurs]:
+    kurse = {k.slug: k for k in db.query(Kurs).filter(Kurs.fachrichtung == fachrichtung).all()}
     if uni is None:
         return sorted(kurse.values(), key=lambda k: (k.data.get("semester_default") or 99, k.slug))
     ordered: list[Kurs] = []

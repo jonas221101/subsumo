@@ -70,6 +70,7 @@ def export_account(user: CurrentUser, db: DbSession) -> AccountExportOut:
             created_at=user.created_at,
             bundesland=user.bundesland,
             universitaet_slug=user.universitaet_slug,
+            fachrichtung=user.fachrichtung or "jura",
             lernprofil=dict(user.lernprofil or {}),
             stripe_customer_id=user.stripe_customer_id,
             stripe_subscription_id=user.stripe_subscription_id,

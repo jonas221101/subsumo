@@ -10,9 +10,9 @@ from app.api.deps import CurrentUser, DbSession
 from app.config import get_settings
 from app.models import Card, CardStateEnum, Case, Submission, UserCard
 from app.schemas import AnalyzeIn, CaseOut, SubmissionIn
-from app.services import limits
+from app.services import examen, limits
 from app.services.evaluator import Evaluation, get_evaluator, parse_expectation
-from app.services.gutachten import analyze
+from app.services.gutachten import analyze, neutral_report
 
 router = APIRouter(tags=["gutachten"])
 
@@ -84,6 +84,10 @@ def analyze_text(payload: AnalyzeIn, user: CurrentUser, db: DbSession) -> dict:
             raise HTTPException(status.HTTP_404_NOT_FOUND, "Fall nicht gefunden")
         for pruefpunkt in (case.expectation or {}).get("pruefpunkte", []):
             expected.extend(pruefpunkt.get("norms", []))
+    # Fachrichtungen ohne Gutachtenstil (docs/34) bekommen keinen Obersatz-
+    # Befund fuer einen Loesungsweg - der Platzhalter sagt das ehrlich.
+    if not examen.gutachtenstil_aktiv(db, user):
+        return neutral_report(payload.text).to_dict()
     return analyze(payload.text, expected_norms=expected or None).to_dict()
 
 
@@ -115,13 +119,15 @@ def submit_case(slug: str, payload: SubmissionIn, user: CurrentUser, db: DbSessi
     for pruefpunkt in (case.expectation or {}).get("pruefpunkte", []):
         expected_norms.extend(pruefpunkt.get("norms", []))
 
-    structure = analyze(payload.text, expected_norms=expected_norms or None)
+    structure = (
+        analyze(payload.text, expected_norms=expected_norms or None)
+        if examen.gutachtenstil_aktiv(db, user)
+        else neutral_report(payload.text)
+    )
     # Ohne Einwilligung (SUB-133) laeuft ausschliesslich die Heuristik - die
     # Abgabe wird deshalb nie abgelehnt, nur der Evaluator umgeschaltet. Das
     # Ergebnis-Feld "engine" macht sichtbar, welcher Evaluator gelaufen ist.
-    evaluator = get_evaluator(
-        consented=user.ai_review_consent_at is not None, db=db, user=user
-    )
+    evaluator = get_evaluator(consented=user.ai_review_consent_at is not None, db=db, user=user)
     evaluation = evaluator.evaluate(
         text=payload.text, expectation=case.expectation or {}, structure=structure
     )

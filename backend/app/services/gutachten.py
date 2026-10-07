@@ -32,11 +32,52 @@ from enum import StrEnum
 # Abkuerzungen, deren Punkt kein Satzende ist. Ohne diese Liste zerfaellt
 # "§ 433 Abs. 2 S. 1 BGB" in drei Saetze.
 _ABBREVIATIONS = [
-    "Abs.", "S.", "Nr.", "Alt.", "Var.", "lit.", "Hs.", "Halbs.", "Ziff.", "Art.",
-    "i.S.d.", "i.S.v.", "i.V.m.", "i.E.", "i.Ü.", "d.h.", "z.B.", "vgl.", "bzw.",
-    "ggf.", "insb.", "u.a.", "sog.", "evtl.", "grds.", "str.", "h.M.", "a.A.",
-    "e.A.", "m.M.", "st.Rspr.", "Rspr.", "Lit.", "Az.", "Rn.", "Ls.", "Urt.",
-    "Beschl.", "v.", "ff.", "f.", "Nrn.", "Buchst.", "Anm.", "Fn.", "Bd.",
+    "Abs.",
+    "S.",
+    "Nr.",
+    "Alt.",
+    "Var.",
+    "lit.",
+    "Hs.",
+    "Halbs.",
+    "Ziff.",
+    "Art.",
+    "i.S.d.",
+    "i.S.v.",
+    "i.V.m.",
+    "i.E.",
+    "i.Ü.",
+    "d.h.",
+    "z.B.",
+    "vgl.",
+    "bzw.",
+    "ggf.",
+    "insb.",
+    "u.a.",
+    "sog.",
+    "evtl.",
+    "grds.",
+    "str.",
+    "h.M.",
+    "a.A.",
+    "e.A.",
+    "m.M.",
+    "st.Rspr.",
+    "Rspr.",
+    "Lit.",
+    "Az.",
+    "Rn.",
+    "Ls.",
+    "Urt.",
+    "Beschl.",
+    "v.",
+    "ff.",
+    "f.",
+    "Nrn.",
+    "Buchst.",
+    "Anm.",
+    "Fn.",
+    "Bd.",
 ]
 _SENTENCE_END = re.compile(r"(?<=[.!?])\s+(?=[A-ZÄÖÜ§„\"(])")
 
@@ -136,7 +177,7 @@ _URTEILSSTIL_INLINE = re.compile(
 )
 
 _NORM_RE = re.compile(
-    r"§§?\s*\d+[a-z]?"                       # Paragraph
+    r"§§?\s*\d+[a-z]?"  # Paragraph
     r"(?:\s*(?:Abs\.|Absatz)?\s*[IVX]+|\s*Abs\.\s*\d+)?"  # Absatz (roemisch/arabisch)
     r"(?:\s*(?:S\.|Satz)\s*\d+)?"
     r"(?:\s*(?:Nr\.|Alt\.|Var\.)\s*\d+)?"
@@ -214,16 +255,36 @@ class GutachtenReport:
     sentences: int = 0
     avg_sentence_length: float = 0.0
     gutachtenstil_quote: float = 0.0
+    # True, wenn die Fachrichtung keine Gutachtenstil-Analyse kennt (docs/34):
+    # der Report ist dann ein Platzhalter ohne Befunde, und die Bewertung
+    # rechnet ausschliesslich mit dem Inhalt (Evaluator).
+    neutral: bool = False
 
     def to_dict(self) -> dict:
         data = asdict(self)
-        data["findings"] = [
-            {**asdict(f), "severity": f.severity.value} for f in self.findings
-        ]
+        data["findings"] = [{**asdict(f), "severity": f.severity.value} for f in self.findings]
         return data
 
 
 _MAX_PENALTY = {"offener_obersatz": 24, "sprung": 20, "urteilsstil": 30}
+
+
+def neutral_report(text: str) -> GutachtenReport:
+    """Platzhalter fuer Fachrichtungen ohne Gutachtenstil (Elektrotechnik,
+    Maschinenbau, Lehramt): keine Struktur-Befunde, kein Strukturscore-Anteil."""
+    words = len(text.split())
+    return GutachtenReport(
+        score=100,
+        steps=[],
+        counts={},
+        findings=[],
+        norms=[],
+        words=words,
+        sentences=0,
+        avg_sentence_length=0.0,
+        gutachtenstil_quote=0.0,
+        neutral=True,
+    )
 
 
 def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenReport:
@@ -308,8 +369,7 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
                 Finding(
                     Severity.HINWEIS,
                     "offener_obersatz",
-                    "Dieser Prüfungspunkt wird bearbeitet, aber nicht ausdrücklich "
-                    "abgeschlossen.",
+                    "Dieser Prüfungspunkt wird bearbeitet, aber nicht ausdrücklich abgeschlossen.",
                     "Formuliere das Zwischenergebnis ausdrücklich "
                     "('Mithin liegt ein Angebot vor.'). Korrektoren suchen danach.",
                     sentence_index=block["index"],
@@ -330,9 +390,7 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
                 )
             )
 
-    penalties["offener_obersatz"] = min(
-        schwer * 12 + leicht * 5, _MAX_PENALTY["offener_obersatz"]
-    )
+    penalties["offener_obersatz"] = min(schwer * 12 + leicht * 5, _MAX_PENALTY["offener_obersatz"])
     penalties["sprung"] = min(jumps * 10, _MAX_PENALTY["sprung"])
     unclosed = len(stack)
 
@@ -441,8 +499,7 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
                 Finding(
                     Severity.HINWEIS,
                     "norm_nicht_geprueft",
-                    "Erwartete Normen wurden nicht angesprochen: "
-                    + ", ".join(missing_norms),
+                    "Erwartete Normen wurden nicht angesprochen: " + ", ".join(missing_norms),
                     "Prüfe die Anspruchsgrundlagen vollständig und in der "
                     "richtigen Reihenfolge (vertraglich - quasivertraglich - "
                     "dinglich - deliktisch).",
@@ -464,17 +521,16 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
             )
         )
 
-    strukturiert = sum(counts[s.value] for s in (
-        Step.OBERSATZ, Step.DEFINITION, Step.SUBSUMTION, Step.ERGEBNIS
-    ))
+    strukturiert = sum(
+        counts[s.value] for s in (Step.OBERSATZ, Step.DEFINITION, Step.SUBSUMTION, Step.ERGEBNIS)
+    )
     quote = strukturiert / len(sentences) if sentences else 0.0
     if quote >= 0.75 and urteilsstil == 0 and unclosed == 0:
         findings.append(
             Finding(
                 Severity.LOB,
                 "sauberer_aufbau",
-                "Sauberer Gutachtenaufbau: alle Obersätze sind geschlossen, "
-                "kein Urteilsstil.",
+                "Sauberer Gutachtenaufbau: alle Obersätze sind geschlossen, kein Urteilsstil.",
             )
         )
 

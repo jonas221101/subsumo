@@ -33,7 +33,12 @@ def get_lernprofil(user: CurrentUser) -> LernprofilOut:
 
 @router.put("/lernprofil", response_model=LernprofilOut)
 def put_lernprofil(payload: LernprofilIn, user: CurrentUser, db: DbSession) -> LernprofilOut:
-    fehler = lernprofil.validate_topic_refs(db, payload, examen.visible_topic_slugs(db, user))
+    fehler = lernprofil.validate_topic_refs(
+        db,
+        payload,
+        examen.visible_topic_slugs(db, user),
+        areas=examen.areas_for(db, examen.user_fachrichtung(user)),
+    )
     if fehler:
         raise HTTPException(status.HTTP_422_UNPROCESSABLE_ENTITY, "; ".join(fehler))
     user.lernprofil = payload.model_dump()

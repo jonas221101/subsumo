@@ -12,6 +12,9 @@ class RegisterIn(BaseModel):
     email: EmailStr
     password: str = Field(min_length=8, max_length=200)
     display_name: str = ""
+    # Fachrichtung (docs/34): kommt aus dem Build-Flavor der App
+    # (SUBSUMO_FACH), Default Jura. Der Server prueft gegen den Bestand.
+    fachrichtung: str | None = Field(default=None, max_length=40)
 
 
 class LoginIn(BaseModel):
@@ -33,6 +36,7 @@ class UserOut(BaseModel):
     # Examensprofil (docs/32-examensvorbereitung.md); beide optional.
     bundesland: str | None = None
     universitaet_slug: str | None = None
+    fachrichtung: str = "jura"
     pro_active: bool = False
     pro_until: datetime | None = None
     cancel_at_period_end: bool = False
@@ -51,6 +55,7 @@ class UserUpdateIn(BaseModel):
     # den Wert (None heisst hier wie bei den anderen Feldern "nicht aendern").
     bundesland: str | None = Field(default=None, max_length=2)
     universitaet_slug: str | None = Field(default=None, max_length=160)
+    fachrichtung: str | None = Field(default=None, max_length=40)
 
 
 class TopicOut(BaseModel):
@@ -179,7 +184,6 @@ class EigenesDeck(BaseModel):
 
 
 VALID_ZIELE = ("orientierung", "zwischenpruefung", "semesterklausur", "examen", "wiederholung")
-VALID_AREAS_LITERAL = ("zivilrecht", "strafrecht", "oeffentliches-recht")
 
 
 class LernprofilIn(BaseModel):
@@ -190,7 +194,9 @@ class LernprofilIn(BaseModel):
     semester: int | None = Field(default=None, ge=1, le=20)
     ziel: Literal[VALID_ZIELE] | None = None
     zielnote: int | None = Field(default=None, ge=4, le=18)
-    schwerpunkte: list[Literal[VALID_AREAS_LITERAL]] = Field(default_factory=list)
+    # Fachgebiete der eigenen Fachrichtung; fachlich geprueft im Service
+    # (docs/34: die Liste ist je Fachrichtung verschieden).
+    schwerpunkte: list[str] = Field(default_factory=list, max_length=12)
     ruhetage: list[int] = Field(default_factory=list)
     klausur_wochentag: int = Field(default=5, ge=0, le=6)  # 0 = Montag, 5 = Samstag
     wochenklausur: bool = True
@@ -235,6 +241,7 @@ class AccountExportAccountOut(BaseModel):
     created_at: datetime
     bundesland: str | None = None
     universitaet_slug: str | None = None
+    fachrichtung: str = "jura"
     lernprofil: dict = {}
     # Entitlement (Release G2) - Zahlungsanbieter-Referenzen, keine Zahlungsdaten selbst.
     stripe_customer_id: str | None = None

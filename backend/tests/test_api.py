@@ -139,8 +139,8 @@ def test_content_version_ist_unabhaengig_von_abfragereihenfolge_und_deckt_karten
 
 
 def test_alle_drei_rechtsgebiete_sind_vertreten(client):
-    areas = {t["area"] for t in client.get("/v1/content/topics").json()}
-    assert areas == {"zivilrecht", "strafrecht", "oeffentliches-recht"}
+    topics = client.get("/v1/content/topics", params={"fachrichtung": "jura"}).json()
+    assert {t["area"] for t in topics} == {"zivilrecht", "strafrecht", "oeffentliches-recht"}
 
 
 def test_schemata_liefern_verschachtelte_pruefungsschritte(client):

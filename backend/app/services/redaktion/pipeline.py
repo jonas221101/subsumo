@@ -34,8 +34,10 @@ from pathlib import Path
 
 import yaml
 
+from app.models import DEFAULT_FACHRICHTUNG
 from app.services.content import ContentBundle, load_content
 from app.services.redaktion.collector import CollectorAgent, CollectorError, TopicRequest
+from app.services.redaktion.fach_gate import check_fach
 from app.services.redaktion.norm_gate import check_norms
 from app.services.redaktion.reviewer import ReviewerAgent, ReviewerError
 
@@ -70,19 +72,30 @@ def collect_existing_slugs(bundle: ContentBundle) -> list[str]:
     return sorted(set(slugs))
 
 
-def _validate_structure(draft: dict) -> list[str]:
+def _validate_structure(draft: dict, fachrichtungen_dir: Path | None = None) -> list[str]:
     """Prueft den Entwurf mit demselben Validator, den auch die CI faehrt.
 
     Laeuft in einem Temp-Verzeichnis - der Entwurf ist zu diesem Zeitpunkt
-    noch nicht freigegeben und darf nicht im echten content/-Baum landen.
+    noch nicht freigegeben und darf nicht im echten content/-Baum landen. Die
+    Fachrichtungs-Profile kommen aus dem echten Baum mit, sonst kennt der
+    Validator die Fachgebiete ausserhalb Jura nicht (docs/34).
     """
     with tempfile.TemporaryDirectory() as tmp:
         path = Path(tmp) / "entwurf.yaml"
         path.write_text(
             yaml.safe_dump(draft, allow_unicode=True, sort_keys=False), encoding="utf-8"
         )
-        bundle = load_content(Path(tmp))
+        bundle = load_content(Path(tmp), fachrichtungen_dir=fachrichtungen_dir)
     return bundle.errors
+
+
+def fach_profil_fuer(bundle: ContentBundle, area: str) -> dict | None:
+    """Fachrichtungs-Profil zum Fachgebiet; None = Jura-Standard."""
+    slug = bundle.fachrichtung_of_area(area)
+    for fach in bundle.fachrichtungen:
+        if fach["slug"] == slug:
+            return fach
+    return None
 
 
 class RedaktionPipeline:
@@ -100,44 +113,57 @@ class RedaktionPipeline:
         self.max_rounds = max_rounds
 
     def run(self, request: TopicRequest) -> RedaktionResult:
-        existing = collect_existing_slugs(load_content(self.content_dir))
+        bundle = load_content(self.content_dir)
+        existing = collect_existing_slugs(bundle)
+        if request.fach_profil is None:
+            request.fach_profil = fach_profil_fuer(bundle, request.area)
+        methodik = (request.fach_profil or {}).get("methodik") or {"norm_gate": True}
+        fachrichtungen_dir = self.content_dir / "fachrichtungen"
         history: list[str] = []
         feedback = ""
         draft: dict | None = None
 
         for round_no in range(1, self.max_rounds + 1):
             try:
-                draft = self.collector.collect(
-                    request, existing_slugs=existing, feedback=feedback
-                )
+                draft = self.collector.collect(request, existing_slugs=existing, feedback=feedback)
             except CollectorError as exc:
                 history.append(f"Runde {round_no}: Collector-Fehler - {exc}")
                 feedback = str(exc)
                 continue
 
-            struktur_fehler = _validate_structure(draft)
+            struktur_fehler = _validate_structure(draft, fachrichtungen_dir)
             if struktur_fehler:
                 feedback = "Formatfehler:\n" + "\n".join(f"- {e}" for e in struktur_fehler)
                 history.append(f"Runde {round_no}: Struktur-Gate abgelehnt - {feedback}")
                 continue
 
-            norm_fehler = check_norms(draft)
-            if norm_fehler:
-                feedback = "Normzitate abgelehnt:\n" + "\n".join(f"- {e}" for e in norm_fehler)
-                history.append(f"Runde {round_no}: Normzitat-Gate abgelehnt - {feedback}")
-                continue
+            # Fachrichtungsabhaengige Gates (docs/34): Normzitate fuer Jura,
+            # Einheiten/Formeln fuer technische Faecher, Paragraphen-Verbot
+            # fuer alle Nicht-Jura-Fachrichtungen.
+            if methodik.get("norm_gate", True):
+                norm_fehler = check_norms(draft)
+                if norm_fehler:
+                    feedback = "Normzitate abgelehnt:\n" + "\n".join(f"- {e}" for e in norm_fehler)
+                    history.append(f"Runde {round_no}: Normzitat-Gate abgelehnt - {feedback}")
+                    continue
+            else:
+                fach_fehler = check_fach(draft, einheiten_gate=bool(methodik.get("einheiten_gate")))
+                if fach_fehler:
+                    feedback = "Fach-Gate abgelehnt:\n" + "\n".join(f"- {e}" for e in fach_fehler)
+                    history.append(f"Runde {round_no}: Fach-Gate abgelehnt - {feedback}")
+                    continue
 
             try:
-                review = self.reviewer.review(draft, existing_slugs=existing)
+                review = self.reviewer.review(
+                    draft, existing_slugs=existing, fach_profil=request.fach_profil
+                )
             except ReviewerError as exc:
                 history.append(f"Runde {round_no}: Reviewer-Fehler - {exc}")
                 feedback = str(exc)
                 continue
 
             if not review.approved:
-                feedback = (
-                    f"Reviewer lehnt ab ({review.severity}):\n{review.feedback_text}"
-                )
+                feedback = f"Reviewer lehnt ab ({review.severity}):\n{review.feedback_text}"
                 history.append(f"Runde {round_no}: {feedback}")
                 continue
 
@@ -169,7 +195,11 @@ class RedaktionPipeline:
             "status": "ki-freigegeben",
             "normzitate_geprueft": True,
         }
-        area_dir = self.content_dir / request.area
+        # Jura-Inhalte liegen je Rechtsgebiet (content/zivilrecht/), alle anderen
+        # Fachrichtungen je Fachrichtung (content/elektrotechnik/) - docs/34.
+        fach_slug = (request.fach_profil or {}).get("slug")
+        ordner = request.area if fach_slug in (None, DEFAULT_FACHRICHTUNG) else fach_slug
+        area_dir = self.content_dir / ordner
         area_dir.mkdir(parents=True, exist_ok=True)
         path = area_dir / f"{slug}.yaml"
         if path.exists():

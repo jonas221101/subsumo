@@ -29,6 +29,10 @@ class TopicRequest:
     min_cards: int = 6
     min_schemata: int = 1
     min_cases: int = 1
+    # Fachrichtungs-Profil (docs/34), von der Pipeline aus dem Fachgebiet
+    # abgeleitet: Name, Begriffe, Fachgebiete, Kartentypen, Methodik. None =
+    # Jura-Standard, damit bestehende Aufrufe unveraendert laufen.
+    fach_profil: dict | None = None
 
 
 class CollectorError(Exception):
@@ -59,6 +63,7 @@ class CollectorAgent:
         keine stille Fehlertoleranz wie beim Evaluator-Fallback."""
         prompt = collector_prompt(
             area=request.area,
+            fach_profil=request.fach_profil,
             working_title=request.working_title,
             context=request.context or request.working_title,
             min_cards=request.min_cards,

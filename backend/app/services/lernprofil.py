@@ -340,9 +340,21 @@ def technik_tipp(strukturfehler: list[dict[str, Any]]) -> dict[str, Any] | None:
     return None
 
 
-def validate_topic_refs(db: Session, profil: LernprofilIn, sichtbar: set[str]) -> list[str]:
+def validate_topic_refs(
+    db: Session,
+    profil: LernprofilIn,
+    sichtbar: set[str],
+    areas: list[str] | None = None,
+) -> list[str]:
     """Fachliche Pruefung ueber die Pydantic-Validierung hinaus."""
     fehler: list[str] = []
+    if areas is not None:
+        for area in profil.schwerpunkte:
+            if area not in areas:
+                fehler.append(
+                    f"schwerpunkte: '{area}' ist kein Fachgebiet deiner Fachrichtung "
+                    f"(erlaubt: {', '.join(areas)})"
+                )
     bekannt = {t.slug for t in db.query(Topic).all()}
     for feld in ("themen_fokus", "themen_pausiert"):
         for slug in getattr(profil, feld):

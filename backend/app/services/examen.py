@@ -27,10 +27,12 @@ from sqlalchemy.orm import Session
 
 from app.core.timeutil import as_utc
 from app.models import (
+    DEFAULT_FACHRICHTUNG,
     Area,
     Bundesland,
     Card,
     Case,
+    Fachrichtung,
     Kurs,
     Schema,
     Submission,
@@ -40,7 +42,7 @@ from app.models import (
     UserCard,
 )
 from app.services import lernprofil, srs
-from app.services.content import landesrecht_topic_slug
+from app.services.content import bundesland_key, landesrecht_topic_slug
 from app.services.planner import (
     KLAUSUR_WEEKDAY,
     PHASE_ENDSPURT,
@@ -51,7 +53,9 @@ from app.services.planner import (
 )
 
 MATURE_STABILITY_DAYS = 21.0
-AREAS = [a.value for a in Area]
+# Fachgebiete der Standard-Fachrichtung Jura; alle anderen kommen aus der
+# Fachrichtungs-Tabelle (:func:`areas_for`, docs/34).
+LEGACY_AREAS = [a.value for a in Area]
 
 # Gewichte der Examensreife-Komponenten (docs/32 Abschnitt 5). Nicht
 # verfuegbare Komponenten (z. B. Landesrecht ohne Bundesland) fallen weg,
@@ -81,9 +85,63 @@ VORBEREITUNG_MAX_TAGE = 365
 # --------------------------------------------------------------------------- #
 
 
+def user_fachrichtung(user: User) -> str:
+    return user.fachrichtung or DEFAULT_FACHRICHTUNG
+
+
+def fachrichtung_info(db: Session, slug: str) -> dict:
+    """Profil einer Fachrichtung fuer Cockpit und Oberflaeche (docs/34).
+
+    Faellt fuer Jura ohne geladene Profildatei auf die drei Rechtsgebiete
+    zurueck, damit Testverzeichnisse ohne content/fachrichtungen/ laufen.
+    """
+    row = db.get(Fachrichtung, slug)
+    if row is None:
+        return {
+            "slug": slug,
+            "name": "Rechtswissenschaft" if slug == DEFAULT_FACHRICHTUNG else slug,
+            "kurzname": "Jura" if slug == DEFAULT_FACHRICHTUNG else slug,
+            "areas": [{"slug": a, "title": a, "kurz": a} for a in LEGACY_AREAS],
+            "begriffe": {},
+            "kartentypen": {},
+            "methodik": {},
+            "pruefung": {},
+        }
+    data = row.data
+    return {
+        "slug": row.slug,
+        "name": row.name,
+        "kurzname": data.get("kurzname", row.name),
+        "abschluss": data.get("abschluss", ""),
+        "beschreibung": data.get("beschreibung", ""),
+        "areas": data.get("areas") or [],
+        "begriffe": data.get("begriffe") or {},
+        "kartentypen": data.get("kartentypen") or {},
+        "methodik": data.get("methodik") or {},
+        "pruefung": data.get("pruefung") or {},
+        "pruefstatus": (data.get("redaktion") or {}).get("status", "mensch-freigegeben"),
+    }
+
+
+def areas_for(db: Session, slug: str) -> list[str]:
+    return [a["slug"] for a in fachrichtung_info(db, slug)["areas"]]
+
+
+def gutachtenstil_aktiv(db: Session, user: User) -> bool:
+    """Ob die Fachrichtung des Nutzers eine Gutachtenstil-Analyse kennt."""
+    methodik = fachrichtung_info(db, user_fachrichtung(user))["methodik"]
+    return bool(methodik.get("gutachtenstil_analyse", True))
+
+
+def bundesland_for(db: Session, user: User) -> Bundesland | None:
+    if not user.bundesland:
+        return None
+    return db.get(Bundesland, bundesland_key(user_fachrichtung(user), user.bundesland))
+
+
 def visible_topics_query(db: Session, user: User):
-    """Alle bundesrechtlichen Themen plus das Landesrecht des eigenen Landes."""
-    query = db.query(Topic)
+    """Themen der eigenen Fachrichtung: Kernstoff plus Landesrecht des eigenen Landes."""
+    query = db.query(Topic).filter(Topic.fachrichtung == user_fachrichtung(user))
     if user.bundesland:
         return query.filter(or_(Topic.bundesland.is_(None), Topic.bundesland == user.bundesland))
     return query.filter(Topic.bundesland.is_(None))
@@ -189,15 +247,27 @@ def topic_inputs(db: Session, user: User) -> list[TopicInput]:
 # --------------------------------------------------------------------------- #
 
 
-def area_weights(land: Bundesland | None) -> dict[str, float]:
-    """Gewicht je Rechtsgebiet aus der Klausurverteilung des Landes."""
-    if land is None:
-        return {a: 1.0 / len(AREAS) for a in AREAS}
-    verteilung = (land.data.get("klausuren") or {}).get("verteilung") or {}
-    total = sum(float(verteilung.get(a, 0)) for a in AREAS)
+def area_weights(
+    land: Bundesland | None,
+    areas: list[str] | None = None,
+    *,
+    fachrichtung: dict | None = None,
+) -> dict[str, float]:
+    """Gewicht je Fachgebiet: Klausurverteilung des Landes, sonst die der
+    Fachrichtung, sonst Gleichverteilung."""
+    areas = areas or LEGACY_AREAS
+    gleich = {a: 1.0 / len(areas) for a in areas}
+    verteilung: dict = {}
+    if land is not None:
+        verteilung = (land.data.get("klausuren") or {}).get("verteilung") or {}
+    elif fachrichtung is not None:
+        verteilung = ((fachrichtung.get("pruefung") or {}).get("klausuren") or {}).get(
+            "verteilung"
+        ) or {}
+    total = sum(float(verteilung.get(a, 0)) for a in areas)
     if total <= 0:
-        return {a: 1.0 / len(AREAS) for a in AREAS}
-    return {a: float(verteilung.get(a, 0)) / total for a in AREAS}
+        return gleich
+    return {a: float(verteilung.get(a, 0)) / total for a in areas}
 
 
 def bundesland_summary(land: Bundesland) -> dict:
@@ -221,7 +291,7 @@ def bundesland_profile(db: Session, land: Bundesland) -> dict:
     return {
         **land.data,
         "pruefstatus": (land.data.get("redaktion") or {}).get("status", "mensch-freigegeben"),
-        "gewichtung": area_weights(land),
+        "gewichtung": area_weights(land, areas_for(db, land.fachrichtung)),
         "landesrecht_themen": [
             {
                 "slug": t.slug,
@@ -245,6 +315,7 @@ def kurs_summary(kurs: Kurs) -> dict:
         "slug": kurs.slug,
         "title": kurs.title,
         "area": kurs.area,
+        "fachrichtung": kurs.fachrichtung,
         "semester_default": data.get("semester_default"),
         "examenskurs": bool(data.get("examenskurs")),
         "beschreibung": data.get("beschreibung", ""),
@@ -378,10 +449,12 @@ def resolve_eigenes_deck(
     }
 
 
-def university_courses(db: Session, uni: Universitaet | None) -> list[dict]:
+def university_courses(
+    db: Session, uni: Universitaet | None, fachrichtung: str = DEFAULT_FACHRICHTUNG
+) -> list[dict]:
     """Kursliste einer Universitaet in Semesterreihenfolge; ohne Universitaet
-    der komplette Katalog nach ``semester_default``."""
-    kurse = {k.slug: k for k in db.query(Kurs).all()}
+    der komplette Katalog nach ``semester_default`` - je Fachrichtung."""
+    kurse = {k.slug: k for k in db.query(Kurs).filter(Kurs.fachrichtung == fachrichtung).all()}
     if uni is None:
         return sorted(
             (
@@ -411,9 +484,9 @@ def university_courses(db: Session, uni: Universitaet | None) -> list[dict]:
 
 
 def _weighted_area_coverage(
-    progress: dict[str, TopicProgress], weights: dict[str, float]
+    progress: dict[str, TopicProgress], weights: dict[str, float], areas: list[str]
 ) -> tuple[float, dict[str, float]]:
-    """Reife je Rechtsgebiet (nach Themenrelevanz), gesamt nach Klausurgewicht."""
+    """Reife je Fachgebiet (nach Themenrelevanz), gesamt nach Klausurgewicht."""
     num: dict[str, float] = {}
     den: dict[str, float] = {}
     for p in progress.values():
@@ -421,8 +494,8 @@ def _weighted_area_coverage(
             continue  # Landesrecht hat seine eigene Komponente
         num[p.area] = num.get(p.area, 0.0) + p.relevance * p.mastery
         den[p.area] = den.get(p.area, 0.0) + p.relevance
-    by_area = {a: (num[a] / den[a] if den.get(a) else 0.0) for a in AREAS}
-    total = sum(weights[a] * by_area[a] for a in AREAS)
+    by_area = {a: (num[a] / den[a] if den.get(a) else 0.0) for a in areas}
+    total = sum(weights[a] * by_area[a] for a in areas)
     return total, by_area
 
 
@@ -433,10 +506,13 @@ def readiness(
     progress: dict[str, TopicProgress],
     land: Bundesland | None,
     now: datetime | None = None,
+    areas: list[str] | None = None,
+    fachrichtung: dict | None = None,
 ) -> dict:
     now = now or datetime.now(UTC)
-    weights = area_weights(land)
-    wissen, by_area = _weighted_area_coverage(progress, weights)
+    areas = areas or LEGACY_AREAS
+    weights = area_weights(land, areas, fachrichtung=fachrichtung)
+    wissen, by_area = _weighted_area_coverage(progress, weights, areas)
 
     landesrecht_topics = [p for p in progress.values() if p.bundesland is not None]
     lr_total = sum(p.cards_total for p in landesrecht_topics)
@@ -536,7 +612,7 @@ def readiness(
                 if land
                 else None,
             }
-            for a in AREAS
+            for a in areas
         },
     }
 

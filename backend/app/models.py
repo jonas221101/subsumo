@@ -44,6 +44,14 @@ class CardType(StrEnum):
     STREITSTAND = "streitstand"
     NORM = "norm"
     RECHTSPRECHUNG = "rechtsprechung"
+    # Fachrichtungen ausserhalb Jura (docs/34-fachrichtungen.md): Formeln mit
+    # Einheiten (Elektrotechnik, Maschinenbau) und Loesungs-/Lehrverfahren.
+    FORMEL = "formel"
+    VERFAHREN = "verfahren"
+
+
+# Standard-Fachrichtung: alles, was vor docs/34 existierte, ist Jura.
+DEFAULT_FACHRICHTUNG = "jura"
 
 
 class CardStateEnum(StrEnum):
@@ -70,6 +78,10 @@ class User(Base):
     # verhaelt sich die App wie vor dem Examen-Reiter.
     bundesland: Mapped[str | None] = mapped_column(String(2), default=None, index=True)
     universitaet_slug: Mapped[str | None] = mapped_column(String(160), default=None)
+    # Fachrichtung (docs/34-fachrichtungen.md): steuert, welche Themen,
+    # Kurse und Begriffe ein Nutzer sieht. Default Jura, damit Bestandsnutzer
+    # unveraendert weiterlernen.
+    fachrichtung: Mapped[str] = mapped_column(String(40), default=DEFAULT_FACHRICHTUNG, index=True)
     # Lernprofil (docs/33-individualisierung.md): Semester, Ziel, Schwerpunkte,
     # Rhythmus, Fokus-/Pause-Themen, eigene Decks. Als JSON, validiert ueber
     # app.schemas.LernprofilIn - leer = nicht eingerichtet, Defaults greifen.
@@ -127,6 +139,9 @@ class Topic(Base):
     # Landesrecht-Thema: nur fuer Nutzer dieses Bundeslands sichtbar (faellige
     # Karten, Coverage, Lernplan). NULL = bundesrechtlicher Kern, fuer alle.
     bundesland: Mapped[str | None] = mapped_column(String(2), default=None, index=True)
+    # Aus dem Fachgebiet (``area``) abgeleitet, siehe content.py - nie von Hand
+    # gesetzt. Sichtbarkeit: nur Nutzer derselben Fachrichtung.
+    fachrichtung: Mapped[str] = mapped_column(String(40), default=DEFAULT_FACHRICHTUNG, index=True)
 
 
 class Card(Base):
@@ -378,9 +393,7 @@ class RedeemCodeRedemption(Base):
     """
 
     __tablename__ = "redeem_code_redemptions"
-    __table_args__ = (
-        UniqueConstraint("redeem_code_id", "user_id", name="uq_redeem_code_user"),
-    )
+    __table_args__ = (UniqueConstraint("redeem_code_id", "user_id", name="uq_redeem_code_user"),)
 
     id: Mapped[int] = mapped_column(primary_key=True)
     redeem_code_id: Mapped[int] = mapped_column(ForeignKey("redeem_codes.id"), index=True)
@@ -399,7 +412,11 @@ class Bundesland(Base):
 
     __tablename__ = "bundeslaender"
 
-    code: Mapped[str] = mapped_column(String(2), primary_key=True)
+    # "<fachrichtung>:<code>" - ein Land kann je Fachrichtung ein eigenes
+    # Pruefungsprofil haben (Jura-Staatsexamen, Lehramts-Staatsexamen).
+    key: Mapped[str] = mapped_column(String(48), primary_key=True)
+    code: Mapped[str] = mapped_column(String(2), index=True)
+    fachrichtung: Mapped[str] = mapped_column(String(40), default=DEFAULT_FACHRICHTUNG, index=True)
     name: Mapped[str] = mapped_column(String(80))
     data: Mapped[dict] = mapped_column(JSON, default=dict)
     stand: Mapped[str] = mapped_column(String(20), default="")
@@ -432,5 +449,23 @@ class Kurs(Base):
     slug: Mapped[str] = mapped_column(String(160), unique=True, index=True)
     title: Mapped[str] = mapped_column(String(240))
     area: Mapped[str] = mapped_column(String(32), index=True)
+    fachrichtung: Mapped[str] = mapped_column(String(40), default=DEFAULT_FACHRICHTUNG, index=True)
+    data: Mapped[dict] = mapped_column(JSON, default=dict)
+    stand: Mapped[str] = mapped_column(String(20), default="")
+
+
+class Fachrichtung(Base):
+    """Studiengang/Fachrichtung (docs/34-fachrichtungen.md).
+
+    Quelle ist ``content/fachrichtungen/<slug>.yaml``: Fachgebiete, Begriffe
+    fuer die Oberflaeche, Methodik-Schalter (Gutachtenstil-Analyse,
+    Normzitat-Gate, Einheiten-Gate) und Pruefungsstruktur. Ein Fachgebiet
+    (``Topic.area``) gehoert genau einer Fachrichtung.
+    """
+
+    __tablename__ = "fachrichtungen"
+
+    slug: Mapped[str] = mapped_column(String(40), primary_key=True)
+    name: Mapped[str] = mapped_column(String(120))
     data: Mapped[dict] = mapped_column(JSON, default=dict)
     stand: Mapped[str] = mapped_column(String(20), default="")

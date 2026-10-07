@@ -10,7 +10,7 @@ from app.api.deps import CurrentUser, DbSession
 from app.config import get_settings
 from app.core.ratelimit import enforce_login_rate_limit, enforce_register_rate_limit
 from app.core.security import create_access_token, hash_password, verify_password
-from app.models import Universitaet, User
+from app.models import DEFAULT_FACHRICHTUNG, Fachrichtung, Universitaet, User
 from app.schemas import LoginIn, RegisterIn, TokenOut, UserOut, UserUpdateIn
 from app.services.content import BUNDESLAND_CODES
 
@@ -29,6 +29,7 @@ def _user_out(user: User) -> UserOut:
         daily_minutes=user.daily_minutes,
         bundesland=user.bundesland,
         universitaet_slug=user.universitaet_slug,
+        fachrichtung=user.fachrichtung or DEFAULT_FACHRICHTUNG,
         pro_active=pro_active,
         pro_until=user.pro_until,
         cancel_at_period_end=user.cancel_at_period_end,
@@ -50,10 +51,23 @@ def register(payload: RegisterIn, db: DbSession) -> TokenOut:
         email=email,
         password_hash=hash_password(payload.password),
         display_name=payload.display_name or email.split("@")[0],
+        fachrichtung=_fachrichtung_or_422(db, payload.fachrichtung) or DEFAULT_FACHRICHTUNG,
     )
     db.add(user)
     db.commit()
     return TokenOut(access_token=create_access_token(str(user.id)))
+
+
+def _fachrichtung_or_422(db: DbSession, slug: str | None) -> str | None:
+    """Leer/None -> None (Default greift); unbekannt -> 422."""
+    cleaned = (slug or "").strip().lower()
+    if not cleaned:
+        return None
+    if cleaned != DEFAULT_FACHRICHTUNG and db.get(Fachrichtung, cleaned) is None:
+        raise HTTPException(
+            status.HTTP_422_UNPROCESSABLE_ENTITY, f"Unbekannte Fachrichtung '{cleaned}'"
+        )
+    return cleaned
 
 
 @router.post("/login", response_model=TokenOut, dependencies=[Depends(enforce_login_rate_limit)])
@@ -79,6 +93,24 @@ def update_me(payload: UserUpdateIn, user: CurrentUser, db: DbSession) -> UserOu
         user.daily_minutes = payload.daily_minutes
     if payload.exam_date is not None:
         user.exam_date = datetime.combine(payload.exam_date, time.min, tzinfo=UTC)
+    if payload.fachrichtung is not None:
+        neu = _fachrichtung_or_422(db, payload.fachrichtung) or DEFAULT_FACHRICHTUNG
+        if neu != (user.fachrichtung or DEFAULT_FACHRICHTUNG):
+            user.fachrichtung = neu
+            # Universitaet und Lernprofil-Themen gehoeren zur alten
+            # Fachrichtung - zuruecksetzen statt stillschweigend Unpassendes
+            # zu behalten (docs/34 Abschnitt 4).
+            uni = (
+                db.query(Universitaet).filter_by(slug=user.universitaet_slug).one_or_none()
+                if user.universitaet_slug
+                else None
+            )
+            if uni is not None and neu not in (uni.data.get("fachrichtungen") or ["jura"]):
+                user.universitaet_slug = None
+            profil = dict(user.lernprofil or {})
+            for feld in ("schwerpunkte", "themen_fokus", "themen_pausiert", "eigene_decks"):
+                profil.pop(feld, None)
+            user.lernprofil = profil
     if payload.bundesland is not None:
         code = payload.bundesland.strip().upper()
         if code and code not in BUNDESLAND_CODES:
@@ -92,6 +124,13 @@ def update_me(payload: UserUpdateIn, user: CurrentUser, db: DbSession) -> UserOu
         if slug and uni is None:
             raise HTTPException(
                 status.HTTP_422_UNPROCESSABLE_ENTITY, f"Unbekannte Universitaet '{slug}'"
+            )
+        if uni is not None and (user.fachrichtung or DEFAULT_FACHRICHTUNG) not in (
+            uni.data.get("fachrichtungen") or [DEFAULT_FACHRICHTUNG]
+        ):
+            raise HTTPException(
+                status.HTTP_422_UNPROCESSABLE_ENTITY,
+                f"Universitaet '{slug}' bietet die Fachrichtung '{user.fachrichtung}' nicht an",
             )
         user.universitaet_slug = slug or None
         # Die Universitaet legt das Bundesland fest - sonst wuerde ein Nutzer

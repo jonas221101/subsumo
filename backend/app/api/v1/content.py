@@ -52,11 +52,20 @@ def manifest(db: DbSession) -> dict:
     }
 
 
+def _topic_slugs_der_fachrichtung(db: DbSession, fachrichtung: str):
+    """Subquery der Themen-Slugs einer Fachrichtung (docs/34) - fuer die
+    Katalog-Endpunkte, die ohne Login erreichbar sind und deshalb den Filter
+    als Query-Parameter bekommen statt aus dem Nutzerprofil."""
+    return db.query(Topic.slug).filter(Topic.fachrichtung == fachrichtung)
+
+
 @router.get("/topics", response_model=list[TopicOut])
-def topics(db: DbSession, area: str | None = None) -> list[Topic]:
+def topics(db: DbSession, area: str | None = None, fachrichtung: str | None = None) -> list[Topic]:
     query = db.query(Topic)
     if area:
         query = query.filter(Topic.area == area)
+    if fachrichtung:
+        query = query.filter(Topic.fachrichtung == fachrichtung)
     return query.order_by(Topic.area, Topic.position, Topic.slug).all()
 
 
@@ -65,6 +74,7 @@ def cards(
     db: DbSession,
     topic: str | None = None,
     type: str | None = None,
+    fachrichtung: str | None = None,
     limit: int = Query(default=500, le=2000),
 ) -> list[Card]:
     query = db.query(Card)
@@ -72,16 +82,25 @@ def cards(
         query = query.filter(Card.topic_slug == topic)
     if type:
         query = query.filter(Card.type == type)
+    if fachrichtung:
+        query = query.filter(Card.topic_slug.in_(_topic_slugs_der_fachrichtung(db, fachrichtung)))
     return query.order_by(Card.slug).limit(limit).all()
 
 
 @router.get("/schemata", response_model=list[SchemaOut])
-def schemata(db: DbSession, area: str | None = None, topic: str | None = None) -> list[Schema]:
+def schemata(
+    db: DbSession,
+    area: str | None = None,
+    topic: str | None = None,
+    fachrichtung: str | None = None,
+) -> list[Schema]:
     query = db.query(Schema)
     if area:
         query = query.filter(Schema.area == area)
     if topic:
         query = query.filter(Schema.topic_slug == topic)
+    if fachrichtung:
+        query = query.filter(Schema.topic_slug.in_(_topic_slugs_der_fachrichtung(db, fachrichtung)))
     return query.order_by(Schema.slug).all()
 
 
@@ -89,11 +108,14 @@ def schemata(db: DbSession, area: str | None = None, topic: str | None = None) -
 def cases(
     db: DbSession,
     area: str | None = None,
+    fachrichtung: str | None = None,
     max_difficulty: int | None = Query(default=None, ge=1, le=5),
 ) -> list[Case]:
     query = db.query(Case)
     if area:
         query = query.filter(Case.area == area)
+    if fachrichtung:
+        query = query.filter(Case.topic_slug.in_(_topic_slugs_der_fachrichtung(db, fachrichtung)))
     if max_difficulty:
         query = query.filter(Case.difficulty <= max_difficulty)
     return query.order_by(Case.difficulty, Case.slug).all()

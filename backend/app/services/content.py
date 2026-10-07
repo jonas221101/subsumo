@@ -21,11 +21,13 @@ import yaml
 from sqlalchemy.orm import Session
 
 from app.models import (
+    DEFAULT_FACHRICHTUNG,
     Area,
     Bundesland,
     Card,
     CardType,
     Case,
+    Fachrichtung,
     Kurs,
     Schema,
     Topic,
@@ -33,7 +35,12 @@ from app.models import (
     UserCard,
 )
 
-VALID_AREAS = {a.value for a in Area}
+# Fachgebiete der Standard-Fachrichtung Jura. Jede weitere Fachrichtung bringt
+# ihre Fachgebiete in content/fachrichtungen/<slug>.yaml mit (docs/34); der
+# Loader baut daraus die Zuordnung Fachgebiet -> Fachrichtung. Dieses
+# Fallback haelt Testverzeichnisse ohne Fachrichtungs-Dateien lauffaehig.
+LEGACY_AREA_MAP: dict[str, str] = {a.value: DEFAULT_FACHRICHTUNG for a in Area}
+VALID_AREAS = set(LEGACY_AREA_MAP)
 VALID_CARD_TYPES = {t.value for t in CardType}
 # Ab diesem Alter meldet die CI einen Inhalt zur redaktionellen Pruefung.
 STALE_AFTER_MONTHS = 18
@@ -53,7 +60,7 @@ BUNDESLAND_CODES = {
 # Landesrecht-Kategorien, ueber die ein Kurs bundeslandspezifische Themen
 # einbindet. Konvention fuer den Topic-Slug: ``<code klein>-<kategorie>``,
 # z. B. ``by-polizei-ordnungsrecht``. Der Loader prueft die Konvention.
-LANDESRECHT_KATEGORIEN = {"polizei-ordnungsrecht", "landesrecht-allgemein"}
+LANDESRECHT_KATEGORIEN = {"polizei-ordnungsrecht", "landesrecht-allgemein", "schulrecht"}
 
 
 @dataclass
@@ -65,12 +72,23 @@ class ContentBundle:
     bundeslaender: list[dict] = field(default_factory=list)
     universitaeten: list[dict] = field(default_factory=list)
     kurse: list[dict] = field(default_factory=list)
+    fachrichtungen: list[dict] = field(default_factory=list)
+    # Fachgebiet-Slug -> Fachrichtungs-Slug, aus den Fachrichtungs-Dateien
+    # (plus LEGACY_AREA_MAP als Fallback).
+    area_map: dict[str, str] = field(default_factory=lambda: dict(LEGACY_AREA_MAP))
     errors: list[str] = field(default_factory=list)
     warnings: list[str] = field(default_factory=list)
 
     @property
     def ok(self) -> bool:
         return not self.errors
+
+    @property
+    def valid_areas(self) -> set[str]:
+        return set(self.area_map)
+
+    def fachrichtung_of_area(self, area: str) -> str:
+        return self.area_map.get(area, DEFAULT_FACHRICHTUNG)
 
 
 def content_hash(*parts: str) -> str:
@@ -105,12 +123,39 @@ def _check_stand(value: Any, where: str, warnings: list[str], errors: list[str])
     return text
 
 
-def load_content(content_dir: Path) -> ContentBundle:
-    """Liest alle YAML-Dateien unterhalb von ``content_dir`` und validiert sie."""
+def load_content(content_dir: Path, *, fachrichtungen_dir: Path | None = None) -> ContentBundle:
+    """Liest alle YAML-Dateien unterhalb von ``content_dir`` und validiert sie.
+
+    ``fachrichtungen_dir`` liefert die Fachrichtungs-Profile, wenn sie nicht
+    unter ``content_dir`` liegen (KI-Redaktion validiert Entwuerfe in einem
+    Temp-Verzeichnis, braucht aber die Fachgebiete der echten Profile).
+    """
     bundle = ContentBundle()
     if not content_dir.exists():
         bundle.errors.append(f"Content-Verzeichnis nicht gefunden: {content_dir}")
         return bundle
+
+    # Erste Phase: alle Dateien lesen, Fachrichtungen zuerst verarbeiten -
+    # erst danach ist bekannt, welche Fachgebiete es gibt.
+    docs: list[tuple[str, dict]] = []
+    quellen = [content_dir]
+    if fachrichtungen_dir is not None and fachrichtungen_dir.exists():
+        quellen.append(fachrichtungen_dir)
+    for base in quellen:
+        for path in sorted(base.rglob("*.y*ml")):
+            rel = str(path.relative_to(base))
+            try:
+                data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+            except yaml.YAMLError as exc:
+                bundle.errors.append(f"{rel}: YAML nicht lesbar - {exc}")
+                continue
+            if not isinstance(data, dict):
+                bundle.errors.append(f"{rel}: Datei muss ein Mapping auf oberster Ebene sein")
+                continue
+            docs.append((rel, data))
+    for rel, data in docs:
+        if "fachrichtung" in data:
+            _load_fachrichtung(data["fachrichtung"] or {}, f"{rel} fachrichtung", bundle)
 
     slugs: dict[str, str] = {}
     # (where, card_slug) je referenziertem Pruefpunkt.card_slugs - erst nach der
@@ -118,19 +163,11 @@ def load_content(content_dir: Path) -> ContentBundle:
     # spaeter sortierten Datei zum Zeitpunkt der Fall-Validierung noch nicht in
     # ``bundle.cards`` steht.
     card_slug_refs: list[tuple[str, str]] = []
-    for path in sorted(content_dir.rglob("*.y*ml")):
-        rel = path.relative_to(content_dir)
-        try:
-            data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
-        except yaml.YAMLError as exc:
-            bundle.errors.append(f"{rel}: YAML nicht lesbar - {exc}")
+    for rel, data in docs:
+        if "fachrichtung" in data:
             continue
-        if not isinstance(data, dict):
-            bundle.errors.append(f"{rel}: Datei muss ein Mapping auf oberster Ebene sein")
-            continue
-
         if "topic" not in data:
-            _load_examen_file(data, str(rel), bundle)
+            _load_examen_file(data, rel, bundle)
             continue
 
         topic = data.get("topic") or {}
@@ -143,12 +180,13 @@ def load_content(content_dir: Path) -> ContentBundle:
                 f"(erlaubt: {', '.join(sorted(BUNDESLAND_CODES))})"
             )
             continue
-        if topic["area"] not in VALID_AREAS:
+        if topic["area"] not in bundle.valid_areas:
             bundle.errors.append(
-                f"{rel} topic: unbekanntes Rechtsgebiet '{topic['area']}' "
-                f"(erlaubt: {', '.join(sorted(VALID_AREAS))})"
+                f"{rel} topic: unbekanntes Fachgebiet '{topic['area']}' "
+                f"(erlaubt: {', '.join(sorted(bundle.valid_areas))})"
             )
             continue
+        topic["fachrichtung"] = bundle.fachrichtung_of_area(topic["area"])
         topic.setdefault("relevance", 3)
         if not 1 <= int(topic["relevance"]) <= 5:
             bundle.errors.append(f"{rel} topic: 'relevance' muss zwischen 1 und 5 liegen")
@@ -179,6 +217,12 @@ def load_content(content_dir: Path) -> ContentBundle:
                 continue
             if card.get("type", "definition") not in VALID_CARD_TYPES:
                 bundle.errors.append(f"{where}: unbekannter Kartentyp '{card.get('type')}'")
+                continue
+            if card.get("type") == "formel" and not card.get("einheiten"):
+                bundle.errors.append(
+                    f"{where}: Kartentyp 'formel' braucht 'einheiten' (Liste der Groessen "
+                    "mit SI-Einheit) - sonst ist die Formel nicht pruefbar"
+                )
                 continue
             card["stand"] = _check_stand(
                 card.get("stand", topic.get("stand")), where, bundle.warnings, bundle.errors
@@ -272,8 +316,49 @@ def _load_examen_file(data: dict, rel: str, bundle: ContentBundle) -> None:
         _load_kurs(data["kurs"] or {}, f"{rel} kurs", bundle)
     else:
         bundle.errors.append(
-            f"{rel}: oberste Ebene muss 'topic', 'bundesland', 'universitaet' oder 'kurs' sein"
+            f"{rel}: oberste Ebene muss 'topic', 'fachrichtung', 'bundesland', "
+            "'universitaet' oder 'kurs' sein"
         )
+
+
+def _load_fachrichtung(fach: dict, where: str, bundle: ContentBundle) -> None:
+    """Fachrichtungs-Profil (docs/34): Fachgebiete, Begriffe, Methodik."""
+    if not _require(fach, ["slug", "name", "areas", "begriffe", "quellen"], where, bundle.errors):
+        return
+    if any(f["slug"] == fach["slug"] for f in bundle.fachrichtungen):
+        bundle.errors.append(f"{where}: Fachrichtung '{fach['slug']}' bereits vorhanden")
+        return
+    fach["stand"] = _check_stand(fach.get("stand"), where, bundle.warnings, bundle.errors)
+    _check_redaktion(fach, where, bundle)
+    areas = fach["areas"]
+    if not isinstance(areas, list) or not areas:
+        bundle.errors.append(f"{where}: 'areas' muss eine nicht-leere Liste sein")
+        return
+    for i, area in enumerate(areas):
+        if not isinstance(area, dict) or not area.get("slug") or not area.get("title"):
+            bundle.errors.append(f"{where} areas[{i}]: 'slug' und 'title' sind Pflicht")
+            continue
+        vorhanden = bundle.area_map.get(area["slug"])
+        if vorhanden is not None and vorhanden != fach["slug"]:
+            bundle.errors.append(
+                f"{where} areas[{i}]: Fachgebiet '{area['slug']}' gehoert schon zu '{vorhanden}'"
+            )
+            continue
+        bundle.area_map[area["slug"]] = fach["slug"]
+    fach.setdefault("methodik", {})
+    fach.setdefault("kartentypen", {})
+    for typ in fach["kartentypen"]:
+        if typ not in VALID_CARD_TYPES:
+            bundle.errors.append(f"{where}: unbekannter Kartentyp '{typ}' in 'kartentypen'")
+    verteilung = ((fach.get("pruefung") or {}).get("klausuren") or {}).get("verteilung") or {}
+    eigene = {a["slug"] for a in areas if isinstance(a, dict)}
+    fremd = set(verteilung) - eigene
+    if fremd:
+        bundle.errors.append(
+            f"{where}: pruefung.klausuren.verteilung mit fremdem Fachgebiet "
+            f"{', '.join(sorted(fremd))}"
+        )
+    bundle.fachrichtungen.append(fach)
 
 
 def _load_bundesland(land: dict, where: str, bundle: ContentBundle) -> None:
@@ -283,8 +368,14 @@ def _load_bundesland(land: dict, where: str, bundle: ContentBundle) -> None:
     if code not in BUNDESLAND_CODES:
         bundle.errors.append(f"{where}: unbekanntes Bundesland-Kuerzel '{code}'")
         return
-    if any(b["code"] == code for b in bundle.bundeslaender):
-        bundle.errors.append(f"{where}: Profil fuer '{code}' bereits vorhanden")
+    land.setdefault("fachrichtung", DEFAULT_FACHRICHTUNG)
+    if any(
+        b["code"] == code and b["fachrichtung"] == land["fachrichtung"]
+        for b in bundle.bundeslaender
+    ):
+        bundle.errors.append(
+            f"{where}: Profil fuer '{code}' ({land['fachrichtung']}) bereits vorhanden"
+        )
         return
     land["stand"] = _check_stand(land.get("stand"), where, bundle.warnings, bundle.errors)
     _check_redaktion(land, where, bundle)
@@ -295,10 +386,10 @@ def _load_bundesland(land: dict, where: str, bundle: ContentBundle) -> None:
     if not isinstance(verteilung, dict) or not isinstance(anzahl, int):
         bundle.errors.append(f"{where}: 'klausuren' braucht 'anzahl' (int) und 'verteilung'")
         return
-    unbekannt = set(verteilung) - VALID_AREAS
+    unbekannt = set(verteilung) - bundle.valid_areas
     if unbekannt:
         bundle.errors.append(
-            f"{where}: klausuren.verteilung mit unbekanntem Rechtsgebiet "
+            f"{where}: klausuren.verteilung mit unbekanntem Fachgebiet "
             f"{', '.join(sorted(unbekannt))}"
         )
     if sum(int(v) for v in verteilung.values()) != anzahl:
@@ -320,6 +411,9 @@ def _load_universitaet(uni: dict, where: str, bundle: ContentBundle) -> None:
         return
     uni["stand"] = _check_stand(uni.get("stand"), where, bundle.warnings, bundle.errors)
     _check_redaktion(uni, where, bundle)
+    uni.setdefault("fachrichtungen", [DEFAULT_FACHRICHTUNG])
+    if not isinstance(uni["fachrichtungen"], list) or not uni["fachrichtungen"]:
+        bundle.errors.append(f"{where}: 'fachrichtungen' muss eine nicht-leere Liste sein")
     for i, eintrag in enumerate(uni["kurse"]):
         if not isinstance(eintrag, dict) or not eintrag.get("kurs"):
             bundle.errors.append(f"{where} kurse[{i}]: 'kurs' (Slug) fehlt")
@@ -329,9 +423,10 @@ def _load_universitaet(uni: dict, where: str, bundle: ContentBundle) -> None:
 def _load_kurs(kurs: dict, where: str, bundle: ContentBundle) -> None:
     if not _require(kurs, ["slug", "title", "area", "quellen"], where, bundle.errors):
         return
-    if kurs["area"] not in VALID_AREAS:
-        bundle.errors.append(f"{where}: unbekanntes Rechtsgebiet '{kurs['area']}'")
+    if kurs["area"] not in bundle.valid_areas:
+        bundle.errors.append(f"{where}: unbekanntes Fachgebiet '{kurs['area']}'")
         return
+    kurs["fachrichtung"] = bundle.fachrichtung_of_area(kurs["area"])
     if any(k["slug"] == kurs["slug"] for k in bundle.kurse):
         bundle.errors.append(f"{where}: slug '{kurs['slug']}' bereits vergeben")
         return
@@ -353,6 +448,11 @@ def _load_kurs(kurs: dict, where: str, bundle: ContentBundle) -> None:
     bundle.kurse.append(kurs)
 
 
+def bundesland_key(fachrichtung: str, code: str) -> str:
+    """Primaerschluessel eines Bundesland-Profils: ``jura:BY``."""
+    return f"{fachrichtung}:{code.upper()}"
+
+
 def landesrecht_topic_slug(code: str, kategorie: str) -> str:
     """Slug-Konvention fuer Landesrecht-Themen: ``by-polizei-ordnungsrecht``."""
     return f"{code.lower()}-{kategorie}"
@@ -362,7 +462,9 @@ def _cross_check_examen(bundle: ContentBundle) -> None:
     """Querverweise, die erst nach der kompletten Dateischleife pruefbar sind."""
     topic_slugs = {t["slug"] for t in bundle.topics}
     kurs_slugs = {k["slug"] for k in bundle.kurse}
+    kurs_fach = {k["slug"]: k["fachrichtung"] for k in bundle.kurse}
     land_codes = {b["code"] for b in bundle.bundeslaender}
+    fach_slugs = {f["slug"] for f in bundle.fachrichtungen} | {DEFAULT_FACHRICHTUNG}
 
     for topic in bundle.topics:
         land = topic.get("bundesland")
@@ -378,9 +480,12 @@ def _cross_check_examen(bundle: ContentBundle) -> None:
                     f"kurs '{kurs['slug']}': topic_slugs verweist auf unbekanntes Thema '{slug}'"
                 )
         for kategorie in kurs["landesrecht_kategorien"]:
+            codes_der_fachrichtung = {
+                b["code"] for b in bundle.bundeslaender if b["fachrichtung"] == kurs["fachrichtung"]
+            }
             fehlend = [
                 code
-                for code in sorted(land_codes)
+                for code in sorted(codes_der_fachrichtung)
                 if landesrecht_topic_slug(code, kategorie) not in topic_slugs
             ]
             if fehlend:
@@ -394,10 +499,20 @@ def _cross_check_examen(bundle: ContentBundle) -> None:
             bundle.errors.append(
                 f"universitaet '{uni['slug']}': kein Profil fuer Bundesland '{uni['bundesland']}'"
             )
+        for fach in uni.get("fachrichtungen") or []:
+            if fach not in fach_slugs:
+                bundle.errors.append(
+                    f"universitaet '{uni['slug']}': unbekannte Fachrichtung '{fach}'"
+                )
         for eintrag in uni["kurse"]:
             slug = eintrag.get("kurs") if isinstance(eintrag, dict) else None
             if slug and slug not in kurs_slugs:
                 bundle.errors.append(f"universitaet '{uni['slug']}': unbekannter Kurs '{slug}'")
+            elif slug and kurs_fach.get(slug) not in (uni.get("fachrichtungen") or []):
+                bundle.errors.append(
+                    f"universitaet '{uni['slug']}': Kurs '{slug}' gehoert zur Fachrichtung "
+                    f"'{kurs_fach.get(slug)}', die die Universitaet nicht anbietet"
+                )
 
 
 def seed(db: Session, bundle: ContentBundle) -> dict[str, int]:
@@ -411,7 +526,16 @@ def seed(db: Session, bundle: ContentBundle) -> dict[str, int]:
         "bundeslaender": 0,
         "universitaeten": 0,
         "kurse": 0,
+        "fachrichtungen": 0,
     }
+
+    for fach in bundle.fachrichtungen:
+        row = db.get(Fachrichtung, fach["slug"]) or Fachrichtung(slug=fach["slug"])
+        row.name = fach["name"]
+        row.stand = fach.get("stand", "")
+        row.data = _json_safe(fach)
+        db.add(row)
+        stats["fachrichtungen"] += 1
 
     for t in bundle.topics:
         row = db.query(Topic).filter_by(slug=t["slug"]).one_or_none() or Topic(slug=t["slug"])
@@ -420,6 +544,7 @@ def seed(db: Session, bundle: ContentBundle) -> dict[str, int]:
         row.relevance = int(t.get("relevance", 3))
         row.position = int(t.get("position", 0))
         row.bundesland = t.get("bundesland")
+        row.fachrichtung = t.get("fachrichtung", DEFAULT_FACHRICHTUNG)
         db.add(row)
         stats["topics"] += 1
 
@@ -471,7 +596,10 @@ def seed(db: Session, bundle: ContentBundle) -> dict[str, int]:
         stats["cases"] += 1
 
     for land in bundle.bundeslaender:
-        row = db.get(Bundesland, land["code"]) or Bundesland(code=land["code"])
+        key = bundesland_key(land["fachrichtung"], land["code"])
+        row = db.get(Bundesland, key) or Bundesland(key=key)
+        row.code = land["code"]
+        row.fachrichtung = land["fachrichtung"]
         row.name = land["name"]
         row.stand = land.get("stand", "")
         row.data = _json_safe(land)
@@ -493,6 +621,7 @@ def seed(db: Session, bundle: ContentBundle) -> dict[str, int]:
         row = db.query(Kurs).filter_by(slug=kurs["slug"]).one_or_none() or Kurs(slug=kurs["slug"])
         row.title = kurs["title"]
         row.area = kurs["area"]
+        row.fachrichtung = kurs.get("fachrichtung", DEFAULT_FACHRICHTUNG)
         row.stand = kurs.get("stand", "")
         row.data = _json_safe(kurs)
         db.add(row)

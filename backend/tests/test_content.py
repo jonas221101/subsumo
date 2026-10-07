@@ -85,7 +85,7 @@ def test_ungueltiges_standdatum_wird_abgelehnt(tmp_path):
 def test_unbekanntes_rechtsgebiet_wird_abgelehnt(tmp_path):
     bundle = load_content(write(tmp_path, "t.yaml", VALID.replace("zivilrecht", "seerecht")))
     assert not bundle.ok
-    assert any("Rechtsgebiet" in e for e in bundle.errors)
+    assert any("Fachgebiet" in e for e in bundle.errors)
 
 
 def test_doppelte_slugs_werden_erkannt(tmp_path):
