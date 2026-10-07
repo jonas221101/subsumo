@@ -1,0 +1,46 @@
+universitaet:
+  slug: tu-muenchen
+  name: Technische Universitaet Muenchen
+  kurzname: TUM
+  stadt: Muenchen
+  bundesland: BY
+  fachrichtungen:
+  - elektrotechnik
+  - maschinenbau
+  traegerschaft: staatlich
+  stand: 2026-10
+  quellen:
+  - Studien- und Pruefungsordnungen der Fakultaeten (Studienverlaufsplan)
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Kursliste = kanonischer Standard-Studienverlaufsplan je Fachrichtung (docs/34 Abschnitt 4).
+      Lokale Modulnamen und Semesterlage sind nicht verifiziert - ueber die Fachschafts-Beta (docs/28)
+      einholen und als 'titel_lokal'/'semester' nachtragen.
+  besonderheiten: []
+  kurse:
+  - kurs: et-get-1
+    semester: 1
+  - kurs: et-get-2
+    semester: 2
+  - kurs: et-elektronik
+    semester: 3
+  - kurs: et-signale-systeme
+    semester: 4
+  - kurs: et-regelungstechnik
+    semester: 5
+  - kurs: et-abschlusskurs
+    semester: 6
+  - kurs: mb-tm-1
+    semester: 1
+  - kurs: mb-werkstoffkunde
+    semester: 2
+  - kurs: mb-tm-2
+    semester: 2
+  - kurs: mb-thermodynamik-1
+    semester: 3
+  - kurs: mb-maschinenelemente
+    semester: 4
+  - kurs: mb-abschlusskurs
+    semester: 6

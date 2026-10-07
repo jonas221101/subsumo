@@ -1,0 +1,252 @@
+topic:
+  slug: la-srp-aufsichtspflicht
+  area: la-schulrecht-praxis
+  title: Aufsichtspflicht und Haftung
+  relevance: 5
+  stand: 2026-10
+  quellen:
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Fachlicher Entwurf nach Standardlehrbuechern; Zahlenwerte der Aufgaben sind nachgerechnet,
+      der Text ist redaktionell noch nicht freigegeben (docs/34).
+cards:
+- slug: la-srp-aufsichtspflicht-begriff
+  type: definition
+  front: Schulische Aufsichtspflicht
+  back: Pflicht der Schule und ihrer Lehrkräfte, Schülerinnen und Schüler während schulischer Veranstaltungen
+    vor Schäden zu bewahren und zu verhindern, dass sie anderen Schaden zufügen. Sie folgt aus dem Schulverhältnis
+    und den Schulgesetzen der Länder sowie der beamtenrechtlichen Fürsorgepflicht; sie beginnt in angemessener
+    Zeit vor dem Unterricht und endet nach dessen Ende mit dem Verlassen des Schulgeländes bzw. der Veranstaltung.
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-srp-aufsicht-grundsaetze
+  type: definition
+  front: 'Grundsätze: kontinuierlich, aktiv, präventiv'
+  back: 'Kontinuierlich: Aufsicht darf nicht ohne Ersatz unterbrochen werden; Lehrkräfte müssen sich bei
+    Verlassen des Raums vertreten lassen oder kurze Abwesenheiten altersgerecht absichern. Aktiv: Die
+    Lehrkraft muss die Situation wahrnehmen und bei Gefahr eingreifen, nicht nur anwesend sein. Präventiv:
+    Gefahrenquellen vorab erkennen und ausschalten, Regeln und Belehrungen (z. B. vor Experimenten, Sport,
+    Ausflügen) dokumentieren.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-srp-aufsicht-massstab
+  type: definition
+  front: Umfang der Aufsicht im Einzelfall
+  back: 'Maßstab ist, was eine verständige Lehrkraft in der konkreten Lage tun muss. Kriterien: Alter
+    und Entwicklungsstand, Gruppengröße, bekannte Besonderheiten einzelner Kinder, Gefährlichkeit der
+    Tätigkeit (Chemie, Sport, Werken, Schwimmen), Örtlichkeit, Vorhersehbarkeit. Je jünger die Schüler
+    und je gefährlicher die Situation, desto enger die Aufsicht; ältere Schüler dürfen zunehmend Freiräume
+    erhalten (Erziehung zur Selbstständigkeit).'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-srp-amtshaftung
+  type: norm
+  front: Amtshaftung bei Aufsichtspflichtverletzung
+  back: Verletzt eine Lehrkraft schuldhaft ihre Aufsichtspflicht, haftet nach § 839 BGB i. V. m. Art.
+    34 GG der Dienstherr (das Land bzw. bei angestellten Lehrkräften ebenfalls der Träger), nicht die
+    Lehrkraft persönlich. Rückgriff gegen die Lehrkraft nur bei Vorsatz oder grober Fahrlässigkeit (Art.
+    34 S. 2 GG, § 48 BeamtStG). Leichte Fahrlässigkeit bleibt haftungsfrei.
+  norms:
+  - § 839 BGB
+  - Art. 34 GG
+  - § 48 BeamtStG
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-srp-unfallversicherung
+  type: norm
+  front: Gesetzliche Schülerunfallversicherung
+  back: 'Schülerinnen und Schüler sind während des Schulbesuchs, bei Schulveranstaltungen und auf dem
+    direkten Schulweg gesetzlich unfallversichert (§ 2 Abs. 1 Nr. 8 b SGB VII, Träger: Unfallkasse des
+    Landes). Personenschäden werden von der Unfallkasse getragen; zivilrechtliche Ansprüche gegen Lehrkräfte
+    und Mitschüler sind nach §§ 104, 105 SGB VII ausgeschlossen, soweit kein Vorsatz vorliegt (Haftungsprivileg).
+    Sachschäden fallen nicht unter den Schutz.'
+  norms:
+  - § 2 Abs. 1 Nr. 8 b SGB VII
+  - § 104 SGB VII
+  - § 105 SGB VII
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-srp-strafrecht-disziplinar
+  type: norm
+  front: Strafrechtliche und dienstrechtliche Folgen
+  back: Bei Verletzung oder Tod eines Kindes kommt fahrlässige Körperverletzung (§ 229 StGB) oder fahrlässige
+    Tötung (§ 222 StGB) durch Unterlassen (§ 13 StGB, Garantenstellung aus der Aufsichtspflicht) in Betracht.
+    Dienstrechtlich ist die Aufsichtspflichtverletzung ein Dienstvergehen, das disziplinarrechtlich geahndet
+    werden kann (Verweis bis Entfernung aus dem Dienst nach Schwere).
+  norms:
+  - § 229 StGB
+  - § 222 StGB
+  - § 13 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-srp-schulfahrten
+  type: verfahren
+  front: Aufsicht bei Schulfahrten und Sonderveranstaltungen
+  back: 'Vorab: Genehmigung durch Schulleitung, Einverständnis der Eltern mit Belehrung über Programm
+    und Risiken, Gesundheitsinformationen einholen, Begleitpersonen nach Erlasslage (Richtwert ab zwei
+    Begleitpersonen, bei Schwimmen Rettungsfähigkeit), Notfallkontakte. Während der Fahrt: feste Regeln,
+    Zeitfenster für Freizeit altersgerecht, erreichbar bleiben, Alkohol- und Nachtruheregeln durchsetzen,
+    Vorkommnisse dokumentieren.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-srp-delegation
+  type: definition
+  front: Übertragung der Aufsicht
+  back: Aufsicht kann auf andere Lehrkräfte, pädagogische Fachkräfte oder im Einzelfall geeignete Erwachsene
+    (Eltern bei Ausflügen) übertragen werden; die Verantwortung für Auswahl, Einweisung und Überwachung
+    bleibt bei der Lehrkraft. Schülerinnen und Schüler können nur in engen Grenzen (ältere Schüler, kurze
+    Dauer, ungefährliche Situation, Eignung) mit Aufgaben betraut werden - eine echte Übertragung der
+    Aufsicht auf Minderjährige ist unzulässig.
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: la-srp-schema-aufsichtspflichtverletzung
+  title: 'Planungsraster: Aufsichtspflichtverletzung prüfen'
+  norms:
+  - § 839 BGB
+  - Art. 34 GG
+  - § 104 SGB VII
+  - § 105 SGB VII
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: '1. Bestand der Aufsichtspflicht: schulische Veranstaltung, zeitlicher und räumlicher Rahmen'
+  - label: '2. Konkreter Maßstab: Alter, Gruppe, Gefährlichkeit, Örtlichkeit, Vorhersehbarkeit'
+  - label: '3. Verletzung: Wurde eine gebotene Maßnahme unterlassen (Anwesenheit, Belehrung, Eingreifen,
+      Vertretung)?'
+  - label: '4. Kausalität: Hätte die gebotene Maßnahme den Schaden verhindert?'
+  - label: '5. Verschulden: leichte Fahrlässigkeit, grobe Fahrlässigkeit oder Vorsatz?'
+  - label: 6. Rechtsfolgen
+    children:
+    - label: 'a) Zivilrechtlich: Amtshaftung des Dienstherrn (§ 839 BGB, Art. 34 GG), Haftungsprivileg
+        SGB VII bei Personenschäden'
+    - label: b) Rückgriff nur bei Vorsatz oder grober Fahrlässigkeit
+    - label: 'c) Strafrechtlich: §§ 222, 229 StGB i. V. m. § 13 StGB'
+    - label: 'd) Dienstrechtlich: Disziplinarmaßnahme'
+faelle:
+- slug: la-srp-fall-chemieraum
+  title: Allein im Chemieraum
+  difficulty: 2
+  minutes: 40
+  quellen:
+  - Eigene Aufgabe der Redaktion
+  facts: 'Lehrerin L unterrichtet eine 5. Klasse (26 Kinder) im Chemieraum. Auf den Tischen stehen Reagenzgläser
+    und ein Bunsenbrenner, der noch nicht angeschlossen ist. L verlässt den Raum für etwa zehn Minuten,
+    um im Lehrerzimmer Kopien zu holen, und sagt beim Hinausgehen: ''Ihr bleibt ruhig sitzen.'' Eine Vertretung
+    bestellt sie nicht. Während ihrer Abwesenheit beginnen zwei Schüler, mit Reagenzgläsern zu ''fechten'';
+    ein Glas zerbricht, Schüler S schneidet sich tief in die Hand und muss genäht werden. Die Eltern des
+    S verlangen von L persönlich Schmerzensgeld und zeigen sie an.'
+  question: Prüfe, ob L ihre Aufsichtspflicht verletzt hat, und erläutere die zivil-, straf- und dienstrechtlichen
+    Folgen. Müssen die Eltern sich an L persönlich wenden?
+  steps:
+  - prompt: Bestand eine Aufsichtspflicht und welcher Maßstab galt?
+    erwartung: 'Ja, während des Unterrichts. Der Maßstab ist streng: 10- bis 11-jährige Kinder, große
+      Gruppe, Fachraum mit Glasgeräten und Brenner - erhöhte Gefährlichkeit.'
+  - prompt: Hat L die Aufsichtspflicht verletzt?
+    erwartung: Ja. Zehn Minuten Abwesenheit in einem Fachraum mit Gefahrenquellen ohne Vertretung verletzt
+      den Grundsatz der Kontinuität; eine bloße Ermahnung genügt bei Fünftklässlern nicht. Kopien holen
+      ist kein zwingender Grund. Die gebotene Maßnahme (Vertretung holen, Geräte wegräumen, Kinder mitnehmen)
+      hätte den Unfall mit hoher Wahrscheinlichkeit verhindert - Kausalität liegt vor.
+  - prompt: Haftet L den Eltern persönlich auf Schmerzensgeld?
+    erwartung: Nein. L handelt in Ausübung eines öffentlichen Amtes; nach § 839 BGB i. V. m. Art. 34 GG
+      haftet das Land (Amtshaftung). Zudem ist S als Schüler gesetzlich unfallversichert (§ 2 Abs. 1 Nr.
+      8 b SGB VII); die Unfallkasse trägt die Heilbehandlung, zivilrechtliche Ansprüche gegen L sind nach
+      § 105 SGB VII ausgeschlossen, da kein Vorsatz vorliegt. Die Eltern müssen sich an die Unfallkasse
+      bzw. das Land wenden.
+  - prompt: Kann das Land bei L Rückgriff nehmen?
+    erwartung: Nur bei Vorsatz oder grober Fahrlässigkeit (Art. 34 S. 2 GG, § 48 BeamtStG). Zehn Minuten
+      Abwesenheit in einem Chemieraum mit Fünftklässlern ohne jede Sicherung kann als grob fahrlässig
+      gewertet werden - ein Rückgriff ist vertretbar, hängt aber von der Würdigung des Einzelfalls ab.
+  - prompt: Welche straf- und dienstrechtlichen Folgen drohen?
+    erwartung: Strafrechtlich fahrlässige Körperverletzung durch Unterlassen (§§ 229, 13 StGB) - L hat
+      als Aufsichtspflichtige eine Garantenstellung. Dienstrechtlich liegt ein Dienstvergehen vor, das
+      disziplinarisch (etwa Verweis oder Geldbuße) geahndet werden kann.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Strenger Aufsichtsmaßstab wegen Alter und Fachraum begründet
+      weight: 2.0
+      required: false
+      keywords:
+      - Alter
+      - Fachraum
+      - Gefährlichkeit
+      - Gefaehrlichkeit
+      - Fünftklässler
+      - Fuenftklaessler
+      - Maßstab
+      card_slugs:
+      - la-srp-aufsicht-massstab
+    - id: p2
+      label: Aufsichtspflichtverletzung bejaht (Kontinuität, keine Vertretung)
+      weight: 3.0
+      required: true
+      keywords:
+      - verletzt
+      - Verletzung
+      - Vertretung
+      - kontinuierlich
+      - Kontinuität
+      - Kontinuitaet
+      card_slugs:
+      - la-srp-aufsicht-grundsaetze
+    - id: p3
+      label: Amtshaftung des Landes statt persönlicher Haftung (§ 839 BGB, Art. 34 GG)
+      weight: 3.0
+      required: true
+      norms:
+      - § 839 BGB
+      - Art. 34 GG
+      keywords:
+      - Amtshaftung
+      - '839'
+      - Art. 34
+      - Artikel 34
+      - Dienstherr
+      - das Land haftet
+      card_slugs:
+      - la-srp-amtshaftung
+    - id: p4
+      label: Haftungsprivileg der Unfallversicherung (SGB VII) erkannt
+      weight: 2.0
+      required: false
+      norms:
+      - § 105 SGB VII
+      keywords:
+      - SGB VII
+      - Unfallkasse
+      - Unfallversicherung
+      - Haftungsprivileg
+      - '105'
+      card_slugs:
+      - la-srp-unfallversicherung
+    - id: p5
+      label: Rückgriff nur bei grober Fahrlässigkeit oder Vorsatz
+      weight: 2.0
+      required: false
+      keywords:
+      - Rückgriff
+      - Rueckgriff
+      - Regress
+      - grob fahrlässig
+      - grobe Fahrlässigkeit
+      - grober Fahrlaessigkeit
+      card_slugs:
+      - la-srp-amtshaftung
+    - id: p6
+      label: Strafrechtliche Folge (§ 229 StGB, Unterlassen) und Disziplinarrecht genannt
+      weight: 1.0
+      required: false
+      norms:
+      - § 229 StGB
+      keywords:
+      - '229'
+      - fahrlässige Körperverletzung
+      - fahrlaessige Koerperverletzung
+      - Garantenstellung
+      - Disziplinar
+      - Dienstvergehen
+      card_slugs:
+      - la-srp-strafrecht-disziplinar

@@ -1,0 +1,211 @@
+topic:
+  slug: la-did-unterrichtsplanung
+  area: la-didaktik
+  title: 'Unterrichtsplanung: Didaktische Analyse und Lernziele'
+  relevance: 5
+  stand: 2026-10
+  quellen:
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Fachlicher Entwurf nach Standardlehrbuechern; Zahlenwerte der Aufgaben sind nachgerechnet,
+      der Text ist redaktionell noch nicht freigegeben (docs/34).
+cards:
+- slug: la-did-didaktische-analyse-klafki
+  type: verfahren
+  front: Didaktische Analyse nach Klafki
+  back: 'Fünf Grundfragen zur Begründung eines Unterrichtsinhalts: 1. Gegenwartsbedeutung (Welche Bedeutung
+    hat der Inhalt im Leben der Lernenden heute?), 2. Zukunftsbedeutung, 3. exemplarische Bedeutung (Welchen
+    allgemeinen Zusammenhang erschließt der Inhalt?), 4. Struktur des Inhalts (Teilmomente, Schichten,
+    Voraussetzungen), 5. Zugänglichkeit (Wie wird der Inhalt für diese Lerngruppe anschaulich und erfahrbar?).
+    Die Analyse geht der methodischen Planung voraus.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-did-bildungstheoretische-didaktik
+  type: definition
+  front: Bildungstheoretische und kritisch-konstruktive Didaktik
+  back: 'Klafkis Ansatz stellt den Bildungsgehalt des Inhalts ins Zentrum: Bildung als Zusammenspiel von
+    materialer (Inhalt) und formaler (Fähigkeiten) Bildung - kategoriale Bildung. In der kritisch-konstruktiven
+    Weiterentwicklung treten epochaltypische Schlüsselprobleme (Frieden, Umwelt, Ungleichheit, Digitalisierung)
+    als Inhaltsorientierung hinzu und die Lernenden sollen zu Selbstbestimmung, Mitbestimmung und Solidarität
+    befähigt werden.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-did-berliner-modell
+  type: definition
+  front: Lerntheoretische Didaktik (Berliner Modell)
+  back: 'Heimann, Otto und Schulz: Unterricht wird in vier Entscheidungsfeldern geplant - Intention (Ziele),
+    Inhalt (Thematik), Methode, Medien - unter zwei Bedingungsfeldern: anthropogene (Lernvoraussetzungen,
+    Alter, Vorwissen) und soziokulturelle Voraussetzungen (Klasse, Schule, Milieu). Alle Felder sind interdependent:
+    Eine Entscheidung im einen Feld verändert die anderen.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-did-lernziele-taxonomie
+  type: verfahren
+  front: Lernziele formulieren mit der Taxonomie nach Anderson und Krathwohl
+  back: 'Kognitive Prozessdimensionen (überarbeitete Bloom-Taxonomie): erinnern, verstehen, anwenden,
+    analysieren, bewerten, erschaffen. Ein operationalisiertes Lernziel nennt beobachtbares Verhalten
+    mit einem Operator (''erklären'', ''vergleichen'', ''begründen''), den Inhalt und die Bedingung bzw.
+    das Kriterium: ''Die Schülerinnen und Schüler können die Ursachen der Landflucht anhand von zwei Quellen
+    erläutern.'' Vermeiden: ''kennen'', ''wissen'', ''verstehen'' ohne Operator.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-did-kompetenzorientierung
+  type: definition
+  front: Kompetenzorientierung (Weinert)
+  back: Kompetenzen sind die bei Individuen verfügbaren oder erlernbaren kognitiven Fähigkeiten und Fertigkeiten,
+    bestimmte Probleme zu lösen, sowie die damit verbundenen motivationalen, volitionalen und sozialen
+    Bereitschaften, die Problemlösungen in variablen Situationen erfolgreich nutzen zu können (Weinert
+    2001). Die Bildungsstandards der KMK beschreiben erwartete Kompetenzen am Ende einer Jahrgangsstufe;
+    Unterricht wird vom Ergebnis her geplant (Outcome-Orientierung) und in Anforderungsbereichen I bis
+    III gestuft.
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-did-artikulation
+  type: definition
+  front: 'Artikulation: Phasen einer Unterrichtsstunde'
+  back: 'Klassisches Phasenschema: Einstieg (Aufmerksamkeit, Vorwissen aktivieren, Problem, Transparenz),
+    Erarbeitung (Lernende bearbeiten den Inhalt, Sozialform und Methode passend zum Ziel), Sicherung (Ergebnisse
+    festhalten, vergleichen, zusammenfassen), ggf. Vertiefung/Transfer und Reflexion. Jede Phase hat einen
+    Zweck; Phasenwechsel sind Übergänge, die geplant werden müssen.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-did-differenzierung
+  type: definition
+  front: Innere Differenzierung
+  back: 'Anpassung des Unterrichts an heterogene Lernvoraussetzungen innerhalb der Lerngruppe: nach Umfang,
+    Zeit, Schwierigkeit, Hilfen (gestufte Hilfekarten), Zugangsweise, Sozialform oder Produkt. Äußere
+    Differenzierung trennt Lerngruppen organisatorisch (Kurse, Schulformen). Ziel ist, dass alle am gemeinsamen
+    Gegenstand auf ihrem Niveau arbeiten (Prinzip des gemeinsamen Gegenstands nach Feuser).'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-did-sozialformen-methoden
+  type: definition
+  front: Sozialformen und Methoden
+  back: 'Sozialformen: Plenum (Frontalunterricht, Unterrichtsgespräch), Einzelarbeit, Partnerarbeit, Gruppenarbeit.
+    Methoden sind Handlungsmuster innerhalb der Sozialformen (Think-Pair-Share, Gruppenpuzzle, Stationenlernen,
+    Lernen durch Lehren). Die Wahl folgt dem Lernziel: Instruktion für neues Grundwissen, kooperative
+    Formen für Anwendung, Argumentation und soziale Ziele.'
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: la-did-schema-unterrichtsstunde-planen
+  title: 'Planungsraster: Unterrichtsstunde planen'
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: '1. Bedingungsanalyse: Lerngruppe, Vorwissen, Heterogenität, Rahmen (Zeit, Raum, Medien)'
+  - label: '2. Sachanalyse: fachlicher Gegenstand korrekt und strukturiert erfassen'
+  - label: '3. Didaktische Analyse (Klafki): Gegenwarts-, Zukunfts-, exemplarische Bedeutung, Struktur,
+      Zugänglichkeit'
+  - label: '4. Lernziele: ein Stundenziel und operationalisierte Teilziele mit Operatoren (Taxonomiestufe
+      benennen)'
+  - label: '5. Methodische Entscheidungen: Einstieg, Erarbeitung, Sicherung; Sozialformen, Medien, Differenzierung'
+  - label: '6. Verlaufsplan tabellarisch: Phase, Zeit, Lehrer- und Schüleraktivität, Sozialform, Medien'
+    hinweis: Zeitpuffer und Alternativen für den Fall einplanen, dass eine Phase schneller oder langsamer
+      läuft.
+  - label: '7. Sicherung und Lernerfolgskontrolle: Woran ist das Erreichen der Ziele erkennbar?'
+  - label: '8. Reflexion nach der Stunde: Ziele erreicht? Was ändern?'
+faelle:
+- slug: la-did-fall-industrialisierung
+  title: 'Doppelstunde Geschichte: Industrialisierung in einer heterogenen 9. Klasse'
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigene Aufgabe der Redaktion
+  facts: 'Eine Lehrkraft plant für eine 9. Klasse (28 Schülerinnen und Schüler, drei mit Förderbedarf
+    Lernen, mehrere mit Deutsch als Zweitsprache) eine Doppelstunde zur Industrialisierung. Der bisherige
+    Entwurf: 60 Minuten Lehrervortrag mit Folien zur Dampfmaschine, danach sollen alle ''den Text im Buch
+    lesen und die Fragen beantworten''. Als Lernziel ist notiert: ''Die SuS kennen die Industrialisierung.''
+    Die Lehrkraft ist unsicher, warum die Stunde ''irgendwie nicht rund'' ist.'
+  question: 'Überarbeite die Planung: Begründe den Inhalt didaktisch, formuliere ein operationalisiertes
+    Lernziel, strukturiere die Doppelstunde in Phasen und zeige, wie du differenzierst.'
+  steps:
+  - prompt: Was ist am Lernziel 'Die SuS kennen die Industrialisierung' problematisch?
+    erwartung: '''Kennen'' ist kein beobachtbarer Operator, der Inhalt ist nicht eingegrenzt, es fehlen
+      Kriterium und Taxonomiestufe. Besser: ''Die Schülerinnen und Schüler können an einem Beispiel (Weberfamilie
+      um 1850) erklären, wie die Industrialisierung Arbeit und Familienleben veränderte, und zwei Folgen
+      bewerten'' (Stufen verstehen/bewerten).'
+  - prompt: Begründe den Inhalt mit der didaktischen Analyse nach Klafki.
+    erwartung: 'Gegenwartsbedeutung: Digitalisierung als heutiger Strukturwandel von Arbeit; Zukunftsbedeutung:
+      Teilhabe an Debatten über technischen Wandel; exemplarische Bedeutung: Industrialisierung als Beispiel
+      für Zusammenhang von Technik, Wirtschaft und sozialer Lage; Zugänglichkeit über Lebensgeschichten
+      und Bilder statt Mechanik der Dampfmaschine.'
+  - prompt: Strukturiere die Doppelstunde.
+    erwartung: 'Einstieg (10 Min): Bildvergleich Fabrik/Homeoffice, Vorwissen und Frage sammeln. Erarbeitung
+      I (25 Min): kurze Instruktion zu Kernbegriffen, dann Gruppenpuzzle mit Quellen zu Arbeit, Wohnen,
+      Kinderarbeit. Erarbeitung II (25 Min): Stammgruppen erstellen ein Lebensbild der Weberfamilie. Sicherung
+      (20 Min): Galerie, Vergleich, Kernaussagen an der Tafel. Transfer/Reflexion (10 Min): Bezug zur
+      Gegenwart, Rückblick auf das Ziel.'
+  - prompt: Wie differenzierst du für die heterogene Lerngruppe?
+    erwartung: Quellen in zwei Sprachniveaus mit Glossar (DaZ), gestufte Hilfekarten, Wahl des Produkts
+      (Text, Rollenkarte, Zeichnung), Aufgaben nach Anforderungsbereichen I bis III, Partnerzuweisung
+      in den Expertengruppen; für Förderbedarf Lernen reduzierter Textumfang am gemeinsamen Gegenstand.
+  - prompt: Warum ist ein 60-minütiger Lehrervortrag für diese Gruppe ungeeignet?
+    erwartung: Überlastung des Arbeitsgedächtnisses und sinkende Aufmerksamkeit (Cognitive Load), keine
+      Aktivierung, keine Rückmeldung über Verstehen; Instruktion gehört dosiert an den Anfang, die Erarbeitung
+      muss die Lernenden aktiv werden lassen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Lernziel mit Operator und Inhalt operationalisiert
+      weight: 3.0
+      required: true
+      keywords:
+      - Operator
+      - operationalisiert
+      - können erklären
+      - koennen erklaeren
+      - beobachtbar
+      - Taxonomie
+      card_slugs:
+      - la-did-lernziele-taxonomie
+    - id: p2
+      label: Didaktische Analyse nach Klafki angewendet
+      weight: 3.0
+      required: true
+      keywords:
+      - Klafki
+      - Gegenwartsbedeutung
+      - exemplarisch
+      - Zukunftsbedeutung
+      - Zugänglichkeit
+      - Zugaenglichkeit
+      card_slugs:
+      - la-did-didaktische-analyse-klafki
+    - id: p3
+      label: Phasierung Einstieg - Erarbeitung - Sicherung
+      weight: 2.0
+      required: false
+      keywords:
+      - Einstieg
+      - Erarbeitung
+      - Sicherung
+      card_slugs:
+      - la-did-artikulation
+    - id: p4
+      label: Differenzierungsmaßnahmen konkret benannt
+      weight: 2.0
+      required: false
+      keywords:
+      - Differenzierung
+      - differenzier
+      - gestufte Hilfen
+      - Hilfekarten
+      - Sprachniveau
+      - Glossar
+      - Anforderungsbereich
+      card_slugs:
+      - la-did-differenzierung
+    - id: p5
+      label: Kritik am langen Lehrervortrag begründet
+      weight: 1.0
+      required: false
+      keywords:
+      - Lehrervortrag
+      - Vortrag
+      - Aufmerksamkeit
+      - Cognitive Load
+      - Aktivierung
+      - passiv

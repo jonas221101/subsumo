@@ -1,0 +1,31 @@
+kurs:
+  slug: la-examenskurs
+  title: Examensvorbereitung Bildungswissenschaften
+  area: la-bildungswissenschaften
+  semester_default: 7
+  examenskurs: true
+  stand: 2026-10
+  quellen:
+  - 'KMK-Standards fuer die Lehrerbildung: Bildungswissenschaften (2004 i. d. F. 2019)'
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+  beschreibung: Wiederholung des bildungswissenschaftlichen Pruefungsstoffs fuer das Erste Staatsexamen
+    bzw. die Masterpruefung.
+  lernziele:
+  - Pruefungsstoff Bildungswissenschaften, Didaktik und Schulrecht im Zusammenhang wiederholen
+  - Fallvignetten unter Pruefungsbedingungen analysieren
+  klausurformat:
+    typ: Staatsexamensklausur
+    minuten: 240
+  topic_slugs:
+  - la-bw-lerntheorien
+  - la-bw-classroom-management
+  - la-did-unterrichtsplanung
+  - la-did-leistungsbeurteilung
+  - la-srp-aufsichtspflicht
+  - la-srp-inklusion-nachteilsausgleich
+  landesrecht_kategorien:
+  - schulrecht
+  fehlende_themen: []

@@ -1,0 +1,167 @@
+topic:
+  slug: et-el-opv-grundschaltungen
+  area: et-elektronik
+  title: Operationsverstärker-Grundschaltungen
+  relevance: 5
+  stand: 2026-10
+  quellen:
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Fachlicher Entwurf nach Standardlehrbuechern; Zahlenwerte der Aufgaben sind nachgerechnet,
+      der Text ist redaktionell noch nicht freigegeben (docs/34).
+cards:
+- slug: et-el-opv-ideal
+  type: definition
+  front: Idealer Operationsverstärker
+  back: Unendliche Differenzverstärkung, unendlicher Eingangswiderstand (Eingangsströme null), Ausgangswiderstand
+    null, unbegrenzte Bandbreite. Mit Gegenkopplung regelt der OPV seinen Ausgang so, dass die Differenzspannung
+    zwischen den Eingängen null wird (virtueller Kurzschluss).
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-el-opv-goldene-regeln
+  type: verfahren
+  front: Goldene Regeln für OPV mit Gegenkopplung
+  back: '1. In die Eingänge fließt kein Strom (I₊ = I₋ = 0). 2. Bei Gegenkopplung ist U₊ = U₋ (virtuelle
+    Masse am invertierenden Eingang, wenn U₊ = 0). Vorgehen: Knotengleichung am invertierenden Eingang
+    aufstellen, mit Regel 2 die Eingangsspannung einsetzen, nach U_a auflösen. Ohne Gegenkopplung (Komparator)
+    gelten die Regeln nicht - der Ausgang geht in die Sättigung.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-el-opv-invertierend
+  type: formel
+  front: Invertierender Verstärker
+  back: v = U_a / U_e = −R₂ / R₁. Eingangswiderstand = R₁; der invertierende Eingang liegt auf virtueller
+    Masse. Das Minuszeichen bedeutet Phasendrehung um 180°.
+  einheiten:
+  - v in 1
+  - U in V
+  - R in Ω
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-el-opv-nichtinvertierend
+  type: formel
+  front: Nichtinvertierender Verstärker
+  back: 'v = U_a / U_e = 1 + R₂ / R₁. Die Verstärkung ist immer ≥ 1, der Eingangswiderstand sehr hoch
+    (Signal am nichtinvertierenden Eingang). Sonderfall R₂ = 0: Spannungsfolger mit v = 1 (Impedanzwandler).'
+  einheiten:
+  - v in 1
+  - U in V
+  - R in Ω
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-el-opv-summierer
+  type: formel
+  front: Invertierender Summierverstärker
+  back: U_a = −R_f · (U₁/R₁ + U₂/R₂ + …). Jeder Eingang wird mit seinem Faktor R_f/R_i gewichtet; wegen
+    der virtuellen Masse beeinflussen sich die Eingänge nicht gegenseitig.
+  einheiten:
+  - U in V
+  - R in Ω
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-el-opv-integrator
+  type: formel
+  front: Invertierender Integrator
+  back: U_a(t) = −(1 / (R · C)) · ∫ U_e(t) dt + U_a(0). Kondensator in der Rückkopplung; eine konstante
+    Eingangsspannung ergibt eine linear fallende Rampe. In der Praxis ein hochohmiger Widerstand parallel
+    zu C gegen Drift.
+  einheiten:
+  - U in V
+  - R in Ω
+  - C in F
+  - t in s
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-el-opv-komparator
+  type: definition
+  front: Komparator und Schmitt-Trigger
+  back: 'Ohne Rückkopplung vergleicht der OPV U₊ und U₋ und schaltet den Ausgang an die positive oder
+    negative Aussteuergrenze. Mit Mitkopplung (Schmitt-Trigger) entsteht eine Hysterese: zwei Schaltschwellen
+    verhindern Mehrfachschalten bei verrauschten Signalen.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-el-opv-grenzen
+  type: definition
+  front: 'Reale Grenzen: Aussteuerbereich, Slew-Rate, Offset'
+  back: Der Ausgang kann die Versorgungsspannungen nicht überschreiten (bei Standard-OPVs bleibt er ein
+    bis zwei Volt darunter; Rail-to-Rail-Typen kommen näher heran). Die Slew-Rate begrenzt die Anstiegsgeschwindigkeit
+    des Ausgangs, die Offsetspannung erscheint verstärkt am Ausgang, das Verstärkungs-Bandbreite-Produkt
+    begrenzt v bei hohen Frequenzen.
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: et-el-schema-opv-analyse
+  title: 'Lösungsschema: OPV-Schaltung analysieren'
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: 1. Rückkopplungsart erkennen
+    children:
+    - label: 'a) Gegenkopplung (Ausgang auf invertierenden Eingang): linearer Verstärker'
+    - label: 'b) Mitkopplung oder keine Rückkopplung: Komparator/Schmitt-Trigger'
+  - label: '2. Goldene Regeln anwenden: I₊ = I₋ = 0, U₊ = U₋'
+  - label: 3. Knotengleichung am invertierenden Eingang aufstellen
+  - label: 4. Nach U_a auflösen, Verstärkung v = U_a/U_e angeben
+  - label: '5. Aussteuergrenzen prüfen: |U_a| < Versorgungsspannung, sonst Sättigung'
+    hinweis: Rechnerische Werte jenseits der Versorgung sind physikalisch unmöglich.
+  - label: '6. Reale Grenzen bewerten: Bandbreite, Slew-Rate, Offset, Eingangswiderstand'
+faelle:
+- slug: et-el-aufgabe-invertierender-verstaerker
+  title: Invertierender Verstärker mit Aussteuergrenze
+  difficulty: 2
+  minutes: 20
+  quellen:
+  - Eigene Aufgabe der Redaktion
+  facts: 'Ein invertierender Verstärker ist mit R₁ = 10 kΩ und R₂ = 47 kΩ aufgebaut; der OPV wird mit
+    ±12 V versorgt und kann den Ausgang bis etwa ±11 V aussteuern. Fall A: U_e = 0,2 V. Fall B: U_e =
+    3 V.'
+  question: Bestimme die Verstärkung und die Ausgangsspannung in beiden Fällen. Was passiert in Fall B?
+  steps:
+  - prompt: Welche Verstärkung hat die Schaltung?
+    erwartung: v = −R₂/R₁ = −47 kΩ / 10 kΩ = −4,7.
+  - prompt: Berechne U_a für Fall A.
+    erwartung: U_a = −4,7 · 0,2 V = −0,94 V - liegt innerhalb der Aussteuergrenzen.
+  - prompt: Berechne U_a für Fall B rechnerisch.
+    erwartung: U_a = −4,7 · 3 V = −14,1 V (rechnerisch).
+  - prompt: Bewerte das Ergebnis von Fall B.
+    erwartung: '−14,1 V liegt jenseits der negativen Versorgung: Der Ausgang geht in die Sättigung und
+      bleibt bei etwa −11 V. Die Schaltung arbeitet nicht mehr linear, das Signal wird begrenzt (Clipping).'
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Verstärkung v = −4,7
+      weight: 3.0
+      required: true
+      keywords:
+      - -4,7
+      - −4,7
+      - 4,7
+      card_slugs:
+      - et-el-opv-invertierend
+    - id: p2
+      label: 'Fall A: U_a = −0,94 V'
+      weight: 2.0
+      required: true
+      keywords:
+      - 0,94
+    - id: p3
+      label: 'Fall B: rechnerisch −14,1 V'
+      weight: 1.0
+      required: false
+      keywords:
+      - 14,1
+    - id: p4
+      label: Sättigung/Begrenzung durch die Versorgungsspannung erkannt (≈ −11 V)
+      weight: 3.0
+      required: true
+      keywords:
+      - Sättigung
+      - Saettigung
+      - Begrenzung
+      - Clipping
+      - 11 V
+      - Versorgungsspannung
+      card_slugs:
+      - et-el-opv-grenzen

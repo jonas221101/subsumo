@@ -1,0 +1,25 @@
+kurs:
+  slug: et-get-1
+  title: Grundlagen der Elektrotechnik 1
+  area: et-grundlagen
+  semester_default: 1
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - Akkreditierte Modulhandbuecher deutscher Bachelorstudiengaenge (Struktur, kanonischer Studienverlauf)
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+  beschreibung: 'Gleichstromnetzwerke: Ohmsches Gesetz, Kirchhoffsche Regeln, Zweipole, Leistung und Energie.'
+  lernziele:
+  - Gleichstromnetzwerke mit Knoten- und Maschenregel systematisch loesen
+  - Spannungs- und Stromteiler sicher anwenden
+  - Leistungsbilanz eines Netzwerks aufstellen
+  klausurformat:
+    typ: Modulklausur
+    minuten: 120
+  topic_slugs:
+  - et-get-ohm-kirchhoff
+  landesrecht_kategorien: []
+  fehlende_themen: []

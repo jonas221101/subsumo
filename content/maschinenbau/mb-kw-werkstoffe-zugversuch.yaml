@@ -1,0 +1,173 @@
+topic:
+  slug: mb-kw-werkstoffe-zugversuch
+  area: mb-konstruktion-werkstoffe
+  title: Werkstoffkennwerte und Zugversuch
+  relevance: 4
+  stand: 2026-10
+  quellen:
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Fachlicher Entwurf nach Standardlehrbuechern; Zahlenwerte der Aufgaben sind nachgerechnet,
+      der Text ist redaktionell noch nicht freigegeben (docs/34).
+cards:
+- slug: mb-kw-zugversuch
+  type: verfahren
+  front: Zugversuch nach DIN EN ISO 6892-1
+  back: Eine genormte Probe (Anfangsmesslänge L₀, Anfangsquerschnitt S₀) wird mit konstanter Dehnrate
+    bis zum Bruch gezogen; aufgezeichnet wird Kraft über Verlängerung. Daraus entsteht das technische
+    Spannungs-Dehnungs-Diagramm (σ = F/S₀, ε = ΔL/L₀) mit den Kennwerten E, R_e bzw. R_p0,2, R_m, A und
+    Z.
+  norms:
+  - DIN EN ISO 6892-1
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-kw-zugfestigkeit
+  type: formel
+  front: Zugfestigkeit
+  back: R_m = F_max / S₀. Höchste technische Spannung im Zugversuch, bezogen auf den Anfangsquerschnitt.
+    Danach schnürt die Probe ein und die Kraft fällt bis zum Bruch.
+  einheiten:
+  - R_m in N/mm²
+  - F_max in N
+  - S₀ in mm²
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-kw-streckgrenze
+  type: definition
+  front: Streckgrenze und 0,2-%-Dehngrenze
+  back: 'Streckgrenze R_e (obere R_eH, untere R_eL): Spannung, bei der ein Werkstoff mit ausgeprägter
+    Streckgrenze (z. B. Baustahl) zu fließen beginnt. Werkstoffe ohne ausgeprägte Streckgrenze (Aluminium,
+    Vergütungsstähle) nutzen die Dehngrenze R_p0,2: Spannung, bei der nach Entlastung eine plastische
+    Dehnung von 0,2 % bleibt (Parallele zur Hookeschen Geraden).'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-kw-bruchdehnung
+  type: formel
+  front: Bruchdehnung und Brucheinschnürung
+  back: 'A = (L_u − L₀) / L₀ · 100 % (L_u: Messlänge nach dem Bruch, zusammengelegt). Z = (S₀ − S_u) /
+    S₀ · 100 %. Beide sind Maße für die Duktilität; der Index gibt die Probengeometrie an (A₅: L₀ = 5·d₀).'
+  einheiten:
+  - A in %
+  - Z in %
+  - L in mm
+  - S in mm²
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-kw-e-modul
+  type: formel
+  front: Elastizitätsmodul
+  back: E = σ / ε = Δσ / Δε im linear-elastischen Bereich (Steigung der Hookeschen Geraden). Stahl ≈ 210
+    000 N/mm², Aluminium ≈ 70 000 N/mm², Titan ≈ 110 000 N/mm², Kupfer ≈ 120 000 N/mm². E ist nahezu unabhängig
+    von Legierung und Wärmebehandlung.
+  einheiten:
+  - E in N/mm²
+  - σ in N/mm²
+  - ε in 1
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-kw-haertepruefung
+  type: definition
+  front: Härteprüfverfahren
+  back: 'Brinell (HBW): Hartmetallkugel, weiche bis mittelharte Werkstoffe, DIN EN ISO 6506. Vickers (HV):
+    Diamantpyramide 136°, alle Härten, auch Kleinlast, DIN EN ISO 6507. Rockwell (HRC): Diamantkegel,
+    Eindringtiefe direkt abgelesen, schnelle Werkstattprüfung gehärteter Stähle, DIN EN ISO 6508. Für
+    Stahl gilt näherungsweise R_m ≈ 3,2 bis 3,5 · HBW.'
+  norms:
+  - DIN EN ISO 6506-1
+  - DIN EN ISO 6507-1
+  - DIN EN ISO 6508-1
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-kw-werkstoffbezeichnung
+  type: definition
+  front: Werkstoffbezeichnungen für Stahl
+  back: 'S235JR: Baustahl, Mindeststreckgrenze 235 N/mm², Kerbschlagarbeit 27 J bei 20 °C. C45: unlegierter
+    Stahl mit 0,45 % Kohlenstoff. 42CrMo4: niedriglegierter Vergütungsstahl, 0,42 % C, Cr und Mo (Faktor
+    4 für Cr: ≈ 1 % Cr). X5CrNi18-10: hochlegierter nichtrostender Stahl, 0,05 % C, 18 % Cr, 10 % Ni.
+    Werkstoffnummern nach DIN EN 10027-2 (z. B. 1.4301).'
+  norms:
+  - DIN EN 10027-1
+  - DIN EN 10027-2
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-kw-kerbschlagbiegeversuch
+  type: definition
+  front: Kerbschlagbiegeversuch nach Charpy
+  back: Ein Pendelhammer zerschlägt eine gekerbte Probe; die verbrauchte Kerbschlagarbeit KV in J ist
+    ein Maß für die Zähigkeit. Die Übergangstemperatur trennt zähen Verformungsbruch (Hochlage) von sprödem
+    Spaltbruch (Tieflage) - wichtig für kubisch-raumzentrierte Stähle bei Kälte.
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: mb-kw-schema-zugversuch-auswerten
+  title: 'Lösungsschema: Zugversuch auswerten'
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: 1. Anfangsquerschnitt S₀ = π·d₀²/4 und Anfangsmesslänge L₀ festhalten
+  - label: 2. Kraft-Verlängerungs-Kurve in Spannung-Dehnung umrechnen (σ = F/S₀, ε = ΔL/L₀)
+  - label: 3. E-Modul aus der Steigung des linearen Anfangsbereichs
+  - label: '4. Fließbeginn: R_e bei ausgeprägter Streckgrenze, sonst R_p0,2 über die 0,2-%-Parallele'
+  - label: 5. Zugfestigkeit R_m = F_max / S₀
+  - label: 6. Bruchdehnung A und Brucheinschnürung Z aus den Probenmaßen nach dem Bruch
+  - label: 7. Werkstoff einordnen (Festigkeitsklasse, Duktilität) und mit Normwerten vergleichen
+faelle:
+- slug: mb-kw-aufgabe-zugversuch-rundprobe
+  title: Auswertung eines Zugversuchs an einer Rundprobe
+  difficulty: 1
+  minutes: 15
+  quellen:
+  - Eigene Aufgabe der Redaktion
+  facts: Eine Rundprobe aus Vergütungsstahl mit d₀ = 10 mm und L₀ = 50 mm wird im Zugversuch geprüft.
+    Bei F = 28 kN bleibt nach Entlastung eine plastische Dehnung von 0,2 %; die Höchstkraft beträgt F_max
+    = 40 kN. Nach dem Bruch wird L_u = 61 mm gemessen.
+  question: Bestimme S₀, die 0,2-%-Dehngrenze R_p0,2, die Zugfestigkeit R_m und die Bruchdehnung A.
+  steps:
+  - prompt: Berechne den Anfangsquerschnitt.
+    erwartung: S₀ = π · d₀² / 4 = π · 100 mm² / 4 ≈ 78,5 mm².
+  - prompt: Bestimme die 0,2-%-Dehngrenze.
+    erwartung: R_p0,2 = F_p0,2 / S₀ = 28 000 N / 78,5 mm² ≈ 357 N/mm².
+  - prompt: Bestimme die Zugfestigkeit.
+    erwartung: R_m = F_max / S₀ = 40 000 N / 78,5 mm² ≈ 509 N/mm².
+  - prompt: Berechne die Bruchdehnung.
+    erwartung: A = (L_u − L₀) / L₀ · 100 % = (61 − 50) / 50 · 100 % = 22 %.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Anfangsquerschnitt S₀ ≈ 78,5 mm²
+      weight: 2.0
+      required: true
+      keywords:
+      - 78,5
+      - 78,54
+      - '78.5'
+    - id: p2
+      label: R_p0,2 ≈ 357 N/mm²
+      weight: 3.0
+      required: true
+      keywords:
+      - '357'
+      - '356'
+      - 356,5
+      card_slugs:
+      - mb-kw-streckgrenze
+    - id: p3
+      label: R_m ≈ 509 N/mm²
+      weight: 3.0
+      required: true
+      keywords:
+      - '509'
+      - '510'
+      card_slugs:
+      - mb-kw-zugfestigkeit
+    - id: p4
+      label: Bruchdehnung A = 22 %
+      weight: 2.0
+      required: false
+      keywords:
+      - 22 %
+      - 22%
+      card_slugs:
+      - mb-kw-bruchdehnung

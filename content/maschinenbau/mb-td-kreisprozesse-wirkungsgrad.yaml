@@ -1,0 +1,179 @@
+topic:
+  slug: mb-td-kreisprozesse-wirkungsgrad
+  area: mb-thermodynamik
+  title: Kreisprozesse, zweiter Hauptsatz und Wirkungsgrad
+  relevance: 5
+  stand: 2026-10
+  quellen:
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Fachlicher Entwurf nach Standardlehrbuechern; Zahlenwerte der Aufgaben sind nachgerechnet,
+      der Text ist redaktionell noch nicht freigegeben (docs/34).
+cards:
+- slug: mb-td-zweiter-hauptsatz
+  type: definition
+  front: Zweiter Hauptsatz der Thermodynamik
+  back: 'Wärme geht nicht von selbst vom kälteren zum wärmeren Körper über (Clausius); es gibt keine periodisch
+    arbeitende Maschine, die nur Wärme in Arbeit umwandelt (Kelvin-Planck). Formal: Die Entropie eines
+    abgeschlossenen Systems nimmt nie ab, dS ≥ 0; reale Prozesse erzeugen Entropie (Irreversibilität).'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-td-entropie
+  type: formel
+  front: Entropie
+  back: dS = δQ_rev / T; für das ideale Gas Δs = c_p · ln(T₂/T₁) − R_s · ln(p₂/p₁). Die Entropie ist eine
+    Zustandsgröße; im T-s-Diagramm ist die Fläche unter der Zustandskurve die reversibel übertragene Wärme.
+  einheiten:
+  - S in J/K
+  - s in J/(kg·K)
+  - T in K
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-td-kreisprozess
+  type: definition
+  front: Kreisprozess
+  back: 'Folge von Zustandsänderungen, nach der das Arbeitsmedium wieder im Ausgangszustand ist (ΔU =
+    0 je Umlauf). Nutzarbeit = Fläche innerhalb der Prozesskurve im p-V-Diagramm; rechtslaufend: Wärmekraftmaschine
+    (Arbeit wird abgegeben), linkslaufend: Kältemaschine oder Wärmepumpe.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-td-thermischer-wirkungsgrad
+  type: formel
+  front: Thermischer Wirkungsgrad
+  back: η_th = |W_nutz| / Q_zu = 1 − |Q_ab| / Q_zu. Er beschreibt, welcher Anteil der zugeführten Wärme
+    als Arbeit nutzbar wird; der Rest muss zwingend als Abwärme abgeführt werden.
+  einheiten:
+  - η_th in 1
+  - W in J
+  - Q in J
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-td-carnot
+  type: formel
+  front: Carnot-Wirkungsgrad
+  back: η_C = 1 − T_k / T_w (Temperaturen in Kelvin). Höchstmöglicher Wirkungsgrad jeder Wärmekraftmaschine
+    zwischen den Temperaturen T_w und T_k; reale Prozesse bleiben darunter.
+  einheiten:
+  - η_C in 1
+  - T_w in K
+  - T_k in K
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-td-otto
+  type: formel
+  front: Otto-Prozess (Gleichraumprozess)
+  back: η_Otto = 1 − 1 / ε^(κ−1) mit dem Verdichtungsverhältnis ε = V_max / V_min. Zwei Isentropen und
+    zwei Isochoren; der Wirkungsgrad steigt mit ε, begrenzt durch Klopfen des Kraftstoffs.
+  einheiten:
+  - η in 1
+  - ε in 1
+  - κ in 1
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-td-diesel
+  type: formel
+  front: Diesel-Prozess (Gleichdruckprozess)
+  back: η_Diesel = 1 − (φ^κ − 1) / (ε^(κ−1) · κ · (φ − 1)) mit Einspritzverhältnis φ = V₃/V₂. Wärmezufuhr
+    isobar statt isochor; bei gleichem ε geringerer Wirkungsgrad als Otto, in der Praxis höher, weil Dieselmotoren
+    viel höher verdichten.
+  einheiten:
+  - η in 1
+  - ε in 1
+  - φ in 1
+  - κ in 1
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-td-leistungszahl
+  type: formel
+  front: Leistungszahl von Wärmepumpe und Kältemaschine
+  back: ε_WP = |Q_w| / W ≤ T_w / (T_w − T_k); ε_KM = Q_k / W ≤ T_k / (T_w − T_k). Die Leistungszahl kann
+    größer als 1 sein, weil Wärme nur verschoben, nicht erzeugt wird; es gilt ε_WP = ε_KM + 1.
+  einheiten:
+  - ε in 1
+  - Q in J
+  - W in J
+  - T in K
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: mb-td-schema-kreisprozess
+  title: 'Lösungsschema: Kreisprozess auswerten'
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: 1. Teilprozesse benennen (isentrop, isochor, isobar, isotherm) und im p-V- und T-s-Diagramm
+      skizzieren
+  - label: '2. Eckpunkte berechnen: p, V, T an jedem Zustandspunkt'
+  - label: '3. Wärmen je Teilprozess: Q_zu (positiv) und Q_ab (negativ) bestimmen'
+  - label: '4. Nutzarbeit: |W_nutz| = Q_zu − |Q_ab| (erster Hauptsatz über den Umlauf, ΔU = 0)'
+  - label: 5. Thermischer Wirkungsgrad η_th = |W_nutz| / Q_zu
+  - label: 6. Vergleich mit dem Carnot-Wirkungsgrad zwischen T_max und T_min
+    hinweis: η_th > η_C ist ein sicheres Zeichen für einen Rechenfehler.
+  - label: 7. Mitteldruck p_m = |W_nutz| / (V_max − V_min) als Maß für die Motorausnutzung
+faelle:
+- slug: mb-td-aufgabe-otto-wirkungsgrad
+  title: Wirkungsgrad eines Ottomotors
+  difficulty: 2
+  minutes: 20
+  quellen:
+  - Eigene Aufgabe der Redaktion
+  facts: Ein Ottomotor hat das Verdichtungsverhältnis ε = 10. Das Arbeitsmedium wird als Luft mit κ =
+    1,4 behandelt. Die höchste Prozesstemperatur beträgt T_max = 2000 K, die niedrigste T_min = 300 K.
+  question: Berechne den thermischen Wirkungsgrad des idealen Otto-Prozesses und vergleiche ihn mit dem
+    Carnot-Wirkungsgrad zwischen T_max und T_min.
+  steps:
+  - prompt: Berechne den Otto-Wirkungsgrad.
+    erwartung: η_Otto = 1 − 1/ε^(κ−1) = 1 − 1/10^0,4 = 1 − 1/2,512 = 1 − 0,398 ≈ 0,602, also etwa 60,2
+      %.
+  - prompt: Berechne den Carnot-Wirkungsgrad.
+    erwartung: η_C = 1 − T_min/T_max = 1 − 300/2000 = 0,85, also 85 %.
+  - prompt: Vergleiche und erkläre den Unterschied.
+    erwartung: Der Otto-Prozess bleibt mit 60 % deutlich unter Carnot (85 %), weil die Wärmezufuhr und
+      -abfuhr isochor über einen Temperaturbereich und nicht isotherm bei T_max bzw. T_min erfolgt. Reale
+      Motoren liegen wegen Reibung, unvollständiger Verbrennung und Wandwärmeverlusten noch darunter (etwa
+      30 bis 40 %).
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Otto-Wirkungsgrad ≈ 60,2 %
+      weight: 3.0
+      required: true
+      keywords:
+      - 60,2
+      - 0,602
+      - 60 %
+      - 0,60
+      card_slugs:
+      - mb-td-otto
+    - id: p2
+      label: Carnot-Wirkungsgrad 85 %
+      weight: 3.0
+      required: true
+      keywords:
+      - 85 %
+      - 0,85
+      - 85%
+      card_slugs:
+      - mb-td-carnot
+    - id: p3
+      label: Otto unter Carnot - Begründung über nicht-isotherme Wärmeübertragung
+      weight: 2.0
+      required: false
+      keywords:
+      - isochor
+      - isotherm
+      - Temperaturbereich
+      - Carnot
+      card_slugs:
+      - mb-td-zweiter-hauptsatz
+    - id: p4
+      label: Hinweis auf reale Verluste (Reibung, Verbrennung, Wandwärme)
+      weight: 1.0
+      required: false
+      keywords:
+      - Reibung
+      - real
+      - Wandwärme
+      - Verlust

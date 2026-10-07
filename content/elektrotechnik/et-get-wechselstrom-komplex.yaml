@@ -1,0 +1,184 @@
+topic:
+  slug: et-get-wechselstrom-komplex
+  area: et-grundlagen
+  title: Wechselstrom und komplexe Wechselstromrechnung
+  relevance: 5
+  stand: 2026-10
+  quellen:
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Fachlicher Entwurf nach Standardlehrbuechern; Zahlenwerte der Aufgaben sind nachgerechnet,
+      der Text ist redaktionell noch nicht freigegeben (docs/34).
+cards:
+- slug: et-get-effektivwert
+  type: formel
+  front: Effektivwert einer sinusförmigen Wechselspannung
+  back: U_eff = û / √2 ≈ 0,707 · û. Der Effektivwert ist der Gleichspannungswert, der an einem Widerstand
+    dieselbe mittlere Leistung umsetzt. Netzspannung 230 V ist ein Effektivwert; der Scheitelwert beträgt
+    û = 230 V · √2 ≈ 325 V.
+  einheiten:
+  - U_eff in V
+  - û in V
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-get-kreisfrequenz
+  type: formel
+  front: Kreisfrequenz, Frequenz und Periodendauer
+  back: ω = 2π · f = 2π / T. Für das 50-Hz-Netz gilt ω ≈ 314 1/s und T = 20 ms.
+  einheiten:
+  - ω in 1/s
+  - f in Hz
+  - T in s
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-get-impedanz-l
+  type: formel
+  front: Impedanz einer idealen Spule
+  back: Z_L = j·ω·L, Blindwiderstand X_L = ω·L. Der Strom eilt der Spannung um 90° nach. Mit steigender
+    Frequenz wächst X_L - eine Spule sperrt hohe Frequenzen.
+  einheiten:
+  - Z in Ω
+  - X_L in Ω
+  - L in H
+  - ω in 1/s
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-get-impedanz-c
+  type: formel
+  front: Impedanz eines idealen Kondensators
+  back: Z_C = 1 / (j·ω·C) = −j / (ω·C), Blindwiderstand X_C = 1 / (ω·C). Der Strom eilt der Spannung um
+    90° vor. Mit steigender Frequenz sinkt X_C - ein Kondensator leitet hohe Frequenzen.
+  einheiten:
+  - Z in Ω
+  - X_C in Ω
+  - C in F
+  - ω in 1/s
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-get-rc-reihe
+  type: formel
+  front: Impedanz der RC-Reihenschaltung
+  back: Z = R − j·X_C = R − j/(ω·C). Betrag |Z| = √(R² + X_C²), Phasenwinkel φ = −arctan(X_C / R). Der
+    Strom I = U / |Z| eilt der Spannung um |φ| vor.
+  einheiten:
+  - Z in Ω
+  - R in Ω
+  - C in F
+  - φ in °
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-get-leistungen
+  type: formel
+  front: Schein-, Wirk- und Blindleistung
+  back: S = U_eff · I_eff; P = S · cos φ; Q = S · sin φ; S² = P² + Q². cos φ heißt Leistungsfaktor. Nur
+    die Wirkleistung P wird im Mittel in Wärme oder Arbeit umgesetzt, die Blindleistung Q pendelt zwischen
+    Quelle und Speicherelement.
+  einheiten:
+  - S in VA
+  - P in W
+  - Q in var
+  - φ in °
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-get-zeiger
+  type: definition
+  front: Zeigerdarstellung und komplexe Amplitude
+  back: Eine sinusförmige Größe u(t) = û·cos(ωt + φ) wird durch den komplexen Zeiger U = U_eff · e^(jφ)
+    dargestellt. Addition von Zeigern ersetzt die Addition von Zeitfunktionen; Ableitung nach der Zeit
+    wird zur Multiplikation mit jω. Alle Zeiger eines Netzwerks drehen mit derselben Kreisfrequenz, daher
+    genügt die Betrachtung bei t = 0.
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: et-get-schema-komplexe-wechselstromrechnung
+  title: 'Lösungsschema: Komplexe Wechselstromrechnung'
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: '1. Kreisfrequenz bestimmen: ω = 2π·f'
+  - label: 2. Impedanzen der Bauelemente bilden
+    children:
+    - label: 'a) Widerstand: Z_R = R'
+    - label: 'b) Spule: Z_L = jωL'
+    - label: 'c) Kondensator: Z_C = 1/(jωC) = −j/(ωC)'
+  - label: 3. Gesamtimpedanz nach den Regeln der Reihen- und Parallelschaltung
+  - label: 4. Ströme und Spannungen als komplexe Zeiger berechnen (Ohm, Kirchhoff gelten komplex)
+  - label: 5. Betrag und Phase bestimmen
+    hinweis: Betrag über √(Re² + Im²), Phase über arctan(Im/Re) - Quadrant prüfen.
+  - label: '6. Leistungen: S = U·I*, P = Re(S), Q = Im(S)'
+  - label: '7. Bei Bedarf in den Zeitbereich zurück: i(t) = √2·I_eff·cos(ωt + φ_i)'
+faelle:
+- slug: et-get-aufgabe-rc-reihe
+  title: RC-Reihenschaltung am 50-Hz-Netz
+  difficulty: 2
+  minutes: 25
+  quellen:
+  - Eigene Aufgabe der Redaktion
+  facts: Ein Widerstand R = 100 Ω und ein Kondensator C = 10 µF liegen in Reihe an der Netzspannung U
+    = 230 V (Effektivwert), f = 50 Hz.
+  question: Berechne den kapazitiven Blindwiderstand X_C, den Betrag der Impedanz |Z|, den Effektivwert
+    des Stroms I und die Wirkleistung P. Eilt der Strom vor oder nach?
+  steps:
+  - prompt: Bestimme die Kreisfrequenz und den Blindwiderstand des Kondensators.
+    erwartung: ω = 2π · 50 Hz ≈ 314,2 1/s; X_C = 1/(ω·C) = 1/(314,2 · 10·10⁻⁶) ≈ 318 Ω.
+  - prompt: Berechne den Betrag der Gesamtimpedanz.
+    erwartung: '|Z| = √(R² + X_C²) = √(100² + 318²) Ω ≈ √(10 000 + 101 300) Ω ≈ 334 Ω (genauer 333,6 Ω).'
+  - prompt: Berechne den Strom.
+    erwartung: I = U / |Z| = 230 V / 333,6 Ω ≈ 0,69 A.
+  - prompt: Berechne die Wirkleistung und den Phasenwinkel.
+    erwartung: 'P = I² · R = (0,69 A)² · 100 Ω ≈ 47,5 W. φ = −arctan(318/100) ≈ −72,5°: der Strom eilt
+      der Spannung um rund 72,5° vor (kapazitiv).'
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Blindwiderstand X_C ≈ 318 Ω
+      weight: 2.0
+      required: true
+      keywords:
+      - '318'
+      - 318,3
+      card_slugs:
+      - et-get-impedanz-c
+    - id: p2
+      label: Impedanzbetrag |Z| ≈ 334 Ω
+      weight: 2.0
+      required: true
+      keywords:
+      - '333'
+      - '334'
+      card_slugs:
+      - et-get-rc-reihe
+    - id: p3
+      label: Strom I ≈ 0,69 A
+      weight: 2.0
+      required: false
+      keywords:
+      - 0,69
+      - 0,68
+      - 690 mA
+      - 689 mA
+      card_slugs:
+      - et-get-ohm
+    - id: p4
+      label: Wirkleistung P ≈ 47,5 W
+      weight: 1.0
+      required: false
+      keywords:
+      - 47,5
+      - 47 W
+      - 48 W
+      card_slugs:
+      - et-get-leistungen
+    - id: p5
+      label: Strom eilt vor (kapazitiv), φ ≈ −72,5°
+      weight: 1.0
+      required: false
+      keywords:
+      - eilt vor
+      - voreilend
+      - kapazitiv
+      - '72'
+      card_slugs:
+      - et-get-rc-reihe

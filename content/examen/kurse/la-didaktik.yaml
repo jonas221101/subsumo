@@ -1,0 +1,26 @@
+kurs:
+  slug: la-didaktik
+  title: Allgemeine Didaktik und Unterrichtsplanung
+  area: la-didaktik
+  semester_default: 2
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - 'KMK-Standards fuer die Lehrerbildung: Bildungswissenschaften (2004 i. d. F. 2019)'
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+  beschreibung: Didaktische Modelle, Lernziele und Kompetenzen, Unterrichtsplanung, Leistungsbeurteilung.
+  lernziele:
+  - Unterrichtsstunden didaktisch begruendet planen
+  - Lernziele operationalisieren und Kompetenzen zuordnen
+  - Leistungen guetekriterienorientiert beurteilen und rueckmelden
+  klausurformat:
+    typ: Klausur
+    minuten: 90
+  topic_slugs:
+  - la-did-unterrichtsplanung
+  - la-did-leistungsbeurteilung
+  landesrecht_kategorien: []
+  fehlende_themen: []

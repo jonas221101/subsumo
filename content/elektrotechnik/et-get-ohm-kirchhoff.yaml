@@ -1,0 +1,173 @@
+topic:
+  slug: et-get-ohm-kirchhoff
+  area: et-grundlagen
+  title: Ohmsches Gesetz und Kirchhoffsche Regeln
+  relevance: 5
+  stand: 2026-10
+  quellen:
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Fachlicher Entwurf nach Standardlehrbuechern; Zahlenwerte der Aufgaben sind nachgerechnet,
+      der Text ist redaktionell noch nicht freigegeben (docs/34).
+cards:
+- slug: et-get-ohm
+  type: formel
+  front: 'Ohmsches Gesetz: Zusammenhang von Spannung, Strom und Widerstand'
+  back: 'U = R · I. Der Widerstand R ist bei einem ohmschen (linearen) Bauelement konstant; Spannung und
+    Strom sind proportional. Umstellungen: I = U / R und R = U / I.'
+  einheiten:
+  - U in V
+  - I in A
+  - R in Ω
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-get-leistung
+  type: formel
+  front: Elektrische Leistung an einem ohmschen Widerstand
+  back: P = U · I = I² · R = U² / R. Die umgesetzte Leistung erwärmt den Widerstand; die Bauform muss
+    für diese Verlustleistung ausgelegt sein.
+  einheiten:
+  - P in W
+  - U in V
+  - I in A
+  - R in Ω
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-get-knotenregel
+  type: definition
+  front: Kirchhoffsche Knotenregel (1. Kirchhoffsches Gesetz)
+  back: 'In jedem Knoten ist die Summe der zufließenden Ströme gleich der Summe der abfließenden Ströme:
+    Σ I = 0 (mit Vorzeichen nach Zählpfeilrichtung). Grundlage ist die Ladungserhaltung - in einem Knoten
+    kann keine Ladung gespeichert werden.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-get-maschenregel
+  type: definition
+  front: Kirchhoffsche Maschenregel (2. Kirchhoffsches Gesetz)
+  back: 'Beim Umlauf einer geschlossenen Masche ist die Summe aller Teilspannungen null: Σ U = 0. Spannungen
+    in Umlaufrichtung zählen positiv, gegen die Umlaufrichtung negativ. Grundlage ist die Energieerhaltung
+    im elektrischen Feld.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-get-reihen-parallel
+  type: formel
+  front: Gesamtwiderstand bei Reihen- und Parallelschaltung
+  back: 'Reihenschaltung: R_ges = R₁ + R₂ + … (gleicher Strom, Spannungen addieren sich). Parallelschaltung:
+    1/R_ges = 1/R₁ + 1/R₂ + …; für zwei Widerstände R_ges = R₁·R₂/(R₁+R₂) (gleiche Spannung, Ströme addieren
+    sich).'
+  einheiten:
+  - R in Ω
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-get-spannungsteiler
+  type: formel
+  front: Unbelasteter Spannungsteiler
+  back: 'U₂ = U · R₂ / (R₁ + R₂). Die Spannung teilt sich im Verhältnis der Widerstände auf: U₁ : U₂ =
+    R₁ : R₂. Bei Belastung liegt R_L parallel zu R₂ und senkt U₂.'
+  einheiten:
+  - U in V
+  - R in Ω
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-get-stromteiler
+  type: formel
+  front: Stromteiler bei zwei parallelen Widerständen
+  back: 'I₁ = I · R₂ / (R₁ + R₂). Der Strom teilt sich umgekehrt proportional zu den Widerständen: I₁
+    : I₂ = R₂ : R₁ (größerer Widerstand, kleinerer Strom).'
+  einheiten:
+  - I in A
+  - R in Ω
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-get-zaehlpfeile
+  type: verfahren
+  front: Verbraucher- und Erzeugerzählpfeilsystem
+  back: 'Verbraucherzählpfeilsystem: Strom- und Spannungspfeil am Bauelement gleichgerichtet, positive
+    Leistung = aufgenommene Leistung. Erzeugerzählpfeilsystem: Pfeile entgegengesetzt, positive Leistung
+    = abgegebene Leistung. Vor jeder Netzwerkanalyse ein System festlegen und konsequent beibehalten -
+    sonst stimmen Vorzeichen in den Maschengleichungen nicht.'
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: et-get-schema-netzwerkanalyse
+  title: 'Lösungsschema: Gleichstromnetzwerk mit Kirchhoff analysieren'
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: 1. Knoten und Maschen identifizieren
+    hinweis: k Knoten liefern k−1 unabhängige Knotengleichungen.
+  - label: 2. Zählpfeile für alle Ströme und Spannungen festlegen (Verbraucherzählpfeilsystem)
+  - label: 3. Knotengleichungen aufstellen (Σ I = 0)
+  - label: 4. Maschengleichungen aufstellen (Σ U = 0), Spannungen über U = R · I ausdrücken
+  - label: 5. Gleichungssystem lösen
+    children:
+    - label: a) Zahl der Unbekannten = Zahl der unabhängigen Gleichungen prüfen
+    - label: b) Einsetzen oder Matrixverfahren
+  - label: 6. Ergebnis prüfen
+    children:
+    - label: 'a) Einheiten: V, A, Ω, W'
+    - label: 'b) Plausibilität: negatives Vorzeichen = Strom fließt gegen den Zählpfeil'
+    - label: 'c) Leistungsbilanz: Σ P_Quellen = Σ P_Verbraucher'
+faelle:
+- slug: et-get-aufgabe-spannungsteiler
+  title: Spannungsteiler mit zwei gleichen Widerständen
+  difficulty: 1
+  minutes: 15
+  quellen:
+  - Eigene Aufgabe der Redaktion
+  facts: Eine ideale Gleichspannungsquelle mit U = 12 V speist eine Reihenschaltung aus R₁ = 1 kΩ und
+    R₂ = 1 kΩ. Der Spannungsteiler ist unbelastet.
+  question: Bestimme den Strom I, die Spannung U₂ über R₂ und die in R₂ umgesetzte Leistung P₂.
+  steps:
+  - prompt: Wie groß ist der Gesamtwiderstand der Reihenschaltung?
+    erwartung: R_ges = R₁ + R₂ = 1 kΩ + 1 kΩ = 2 kΩ.
+  - prompt: Berechne den Strom I mit dem Ohmschen Gesetz.
+    erwartung: I = U / R_ges = 12 V / 2000 Ω = 6 mA.
+  - prompt: Bestimme U₂ über die Spannungsteilerregel oder über U = R · I.
+    erwartung: 'U₂ = U · R₂/(R₁+R₂) = 12 V · 1/2 = 6 V (Kontrolle: U₂ = R₂ · I = 1000 Ω · 6 mA = 6 V).'
+  - prompt: Berechne die Leistung in R₂.
+    erwartung: 'P₂ = U₂ · I = 6 V · 6 mA = 36 mW (Kontrolle: P₂ = I²·R₂ = (6 mA)² · 1 kΩ = 36 mW).'
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Gesamtwiderstand 2 kΩ (Reihenschaltung)
+      weight: 1.0
+      required: false
+      keywords:
+      - 2 kΩ
+      - 2 kOhm
+      - 2000 Ω
+      - 2000 Ohm
+      card_slugs:
+      - et-get-reihen-parallel
+    - id: p2
+      label: Strom I = 6 mA
+      weight: 2.0
+      required: true
+      keywords:
+      - 6 mA
+      - 6mA
+      - 0,006 A
+      card_slugs:
+      - et-get-ohm
+    - id: p3
+      label: Spannung U₂ = 6 V (Spannungsteilerregel)
+      weight: 2.0
+      required: true
+      keywords:
+      - 6 V
+      - 6V
+      card_slugs:
+      - et-get-spannungsteiler
+    - id: p4
+      label: Leistung P₂ = 36 mW
+      weight: 2.0
+      required: false
+      keywords:
+      - 36 mW
+      - 36mW
+      - 0,036 W
+      card_slugs:
+      - et-get-leistung

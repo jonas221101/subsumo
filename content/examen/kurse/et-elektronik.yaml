@@ -1,0 +1,26 @@
+kurs:
+  slug: et-elektronik
+  title: Elektronische Bauelemente und Schaltungen
+  area: et-elektronik
+  semester_default: 3
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - Akkreditierte Modulhandbuecher deutscher Bachelorstudiengaenge (Struktur, kanonischer Studienverlauf)
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+  beschreibung: Halbleiterbauelemente (Diode, Transistor) und Grundschaltungen mit Operationsverstaerkern.
+  lernziele:
+  - Diodenschaltungen und Gleichrichter dimensionieren
+  - OPV-Schaltungen mit den goldenen Regeln analysieren
+  - Reale Grenzen von Bauelementen in der Auslegung beruecksichtigen
+  klausurformat:
+    typ: Modulklausur
+    minuten: 120
+  topic_slugs:
+  - et-el-diode-gleichrichter
+  - et-el-opv-grundschaltungen
+  landesrecht_kategorien: []
+  fehlende_themen: []

@@ -1,0 +1,25 @@
+kurs:
+  slug: et-get-2
+  title: Grundlagen der Elektrotechnik 2
+  area: et-grundlagen
+  semester_default: 2
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - Akkreditierte Modulhandbuecher deutscher Bachelorstudiengaenge (Struktur, kanonischer Studienverlauf)
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+  beschreibung: 'Wechselstromtechnik: Zeigerdarstellung, komplexe Impedanzen, Leistungen, Resonanz.'
+  lernziele:
+  - Sinusgroessen als komplexe Zeiger darstellen
+  - RLC-Schaltungen mit komplexer Rechnung analysieren
+  - Schein-, Wirk- und Blindleistung berechnen
+  klausurformat:
+    typ: Modulklausur
+    minuten: 120
+  topic_slugs:
+  - et-get-wechselstrom-komplex
+  landesrecht_kategorien: []
+  fehlende_themen: []

@@ -1,0 +1,27 @@
+kurs:
+  slug: la-biwi-1
+  title: 'Bildungswissenschaften 1: Lernen, Entwicklung, Klassenfuehrung'
+  area: la-bildungswissenschaften
+  semester_default: 1
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - 'KMK-Standards fuer die Lehrerbildung: Bildungswissenschaften (2004 i. d. F. 2019)'
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+  beschreibung: 'Paedagogisch-psychologische Grundlagen: Lerntheorien, Motivation, Klassenfuehrung und
+    Umgang mit Stoerungen.'
+  lernziele:
+  - Fallvignetten lerntheoretisch analysieren
+  - Praeventive Klassenfuehrung nach Kounin und Evertson anwenden
+  - Interventionen gestuft und beziehungswahrend planen
+  klausurformat:
+    typ: Klausur
+    minuten: 90
+  topic_slugs:
+  - la-bw-lerntheorien
+  - la-bw-classroom-management
+  landesrecht_kategorien: []
+  fehlende_themen: []

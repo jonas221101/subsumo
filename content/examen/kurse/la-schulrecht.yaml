@@ -1,0 +1,28 @@
+kurs:
+  slug: la-schulrecht
+  title: Schulrecht und Schulpraxis
+  area: la-schulrecht-praxis
+  semester_default: 4
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - 'KMK-Standards fuer die Lehrerbildung: Bildungswissenschaften (2004 i. d. F. 2019)'
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+  beschreibung: 'Rechtliche Grundlagen des Lehrerberufs: Aufsicht und Haftung, Schuelerrechte, Inklusion,
+    Ordnungsmassnahmen.'
+  lernziele:
+  - Aufsichtspflicht im Einzelfall bestimmen und Haftungsfolgen einordnen
+  - Nachteilsausgleich und Notenschutz voneinander abgrenzen
+  - Erziehungs- und Ordnungsmassnahmen rechtssicher anwenden
+  klausurformat:
+    typ: Klausur
+    minuten: 90
+  topic_slugs:
+  - la-srp-aufsichtspflicht
+  - la-srp-inklusion-nachteilsausgleich
+  landesrecht_kategorien:
+  - schulrecht
+  fehlende_themen: []

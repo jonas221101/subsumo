@@ -1,0 +1,26 @@
+kurs:
+  slug: et-regelungstechnik
+  title: Regelungstechnik 1
+  area: et-signale-systeme
+  semester_default: 5
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - Akkreditierte Modulhandbuecher deutscher Bachelorstudiengaenge (Struktur, kanonischer Studienverlauf)
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+  beschreibung: 'Lineare Regelkreise: Regelstrecken, PID-Regler, stationaeres Verhalten, Stabilitaet,
+    Reglereinstellung.'
+  lernziele:
+  - Fuehrungs- und Stoerverhalten eines Regelkreises berechnen
+  - Bleibende Regelabweichung bestimmen und beseitigen
+  - Regler nach Einstellregeln auslegen
+  klausurformat:
+    typ: Modulklausur
+    minuten: 120
+  topic_slugs:
+  - et-ss-regelkreis-pid
+  landesrecht_kategorien: []
+  fehlende_themen: []

@@ -1,0 +1,171 @@
+topic:
+  slug: et-el-diode-gleichrichter
+  area: et-elektronik
+  title: Diode und Gleichrichterschaltungen
+  relevance: 4
+  stand: 2026-10
+  quellen:
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Fachlicher Entwurf nach Standardlehrbuechern; Zahlenwerte der Aufgaben sind nachgerechnet,
+      der Text ist redaktionell noch nicht freigegeben (docs/34).
+cards:
+- slug: et-el-pn-uebergang
+  type: definition
+  front: pn-Übergang und Diffusionsspannung
+  back: Am Übergang zwischen p- und n-dotiertem Halbleiter diffundieren Ladungsträger und hinterlassen
+    eine Raumladungszone mit innerem Feld; die zugehörige Diffusionsspannung beträgt bei Silizium rund
+    0,6 bis 0,7 V. In Durchlassrichtung (p an Plus) wird die Sperrschicht abgebaut, in Sperrrichtung verbreitert
+    - die Diode leitet nur in einer Richtung.
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-el-shockley
+  type: formel
+  front: Shockley-Gleichung (Diodenkennlinie)
+  back: I = I_S · (e^(U / (n · U_T)) − 1). I_S ist der Sättigungssperrstrom, n der Idealitätsfaktor (1
+    bis 2), U_T = k·T/e die Temperaturspannung (≈ 26 mV bei 300 K). In Durchlassrichtung steigt der Strom
+    exponentiell, in Sperrrichtung bleibt er bei ≈ −I_S.
+  einheiten:
+  - I in A
+  - I_S in A
+  - U in V
+  - U_T in V
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-el-flussspannung
+  type: definition
+  front: Flussspannung typischer Dioden
+  back: 'Näherungsweise konstante Spannung in Durchlassrichtung: Silizium-Diode ≈ 0,7 V, Schottky-Diode
+    ≈ 0,3 V, Germanium ≈ 0,3 V, LED je nach Farbe 1,8 V (rot) bis 3,3 V (blau/weiß). In der Schaltungsrechnung
+    ersetzt das Knickmodell die Kennlinie durch Schalter plus Spannungsquelle U_F.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-el-einweggleichrichter
+  type: definition
+  front: Einweggleichrichter (M1)
+  back: Eine Diode in Reihe zur Last lässt nur die positive Halbwelle durch; die negative wird gesperrt.
+    Ausgangsspannung pulsierend mit der Netzfrequenz f, Mittelwert û/π, hoher Rippel, schlechte Trafoausnutzung.
+    Sperrspannung der Diode ≥ û.
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-el-brueckengleichrichter
+  type: verfahren
+  front: Brückengleichrichter (B2) - Funktionsweise
+  back: 'Vier Dioden in Brücke: In jeder Halbwelle leiten zwei diagonal gegenüberliegende Dioden, die
+    Last sieht beide Halbwellen in gleicher Polarität. Ausgangsfrequenz des Rippels f_r = 2·f (100 Hz
+    im 50-Hz-Netz), Spitzenwert am Ausgang û − 2·U_F, Mittelwert ≈ 2û/π. Sperrspannung je Diode ≥ û.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-el-brummspannung
+  type: formel
+  front: Glättungskondensator und Brummspannung
+  back: ΔU ≈ I_L / (f_r · C). Der Ladekondensator wird im Spannungsmaximum nachgeladen und entlädt sich
+    zwischen den Maxima mit dem Laststrom I_L; f_r ist die Rippelfrequenz (f bei M1, 2f bei B2). Je größer
+    C und f_r, desto kleiner die Brummspannung.
+  einheiten:
+  - ΔU in V
+  - I_L in A
+  - f_r in Hz
+  - C in F
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-el-zener
+  type: definition
+  front: Z-Diode zur Spannungsstabilisierung
+  back: Eine Z-Diode wird in Sperrrichtung betrieben; ab der Z-Spannung U_Z steigt der Strom steil an,
+    die Spannung bleibt nahezu konstant. Mit Vorwiderstand ergibt sich eine einfache Spannungsstabilisierung;
+    der Vorwiderstand muss den Strom bei maximaler Eingangsspannung und minimaler Last begrenzen (Verlustleistung
+    P = U_Z · I_Z beachten).
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: et-el-schema-netzteil
+  title: 'Lösungsschema: Gleichrichter-Netzteil dimensionieren'
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: 1. Gleichrichterschaltung festlegen (M1 oder B2) und Rippelfrequenz f_r bestimmen
+  - label: '2. Scheitelwert der Trafospannung: û = U_eff · √2'
+  - label: 3. Diodenflussspannungen abziehen
+    children:
+    - label: 'a) M1: eine Diode, û − U_F'
+    - label: 'b) B2: zwei Dioden in Reihe, û − 2·U_F'
+  - label: '4. Glättungskondensator aus zulässiger Brummspannung: C ≈ I_L / (f_r · ΔU)'
+  - label: '5. Minimale Ausgangsspannung: U_min = û_aus − ΔU'
+    hinweis: Diese Spannung muss noch über der Dropout-Spannung eines nachfolgenden Reglers liegen.
+  - label: '6. Dioden prüfen: Sperrspannung ≥ û, mittlerer Strom ≥ I_L, Einschaltstromstoß'
+  - label: 7. Verlustleistung und Erwärmung abschätzen
+faelle:
+- slug: et-el-aufgabe-brueckengleichrichter
+  title: Brückengleichrichter mit Ladekondensator
+  difficulty: 2
+  minutes: 25
+  quellen:
+  - Eigene Aufgabe der Redaktion
+  facts: Ein Netztransformator liefert sekundär U = 12 V (Effektivwert, 50 Hz). Die Spannung wird mit
+    einem Brückengleichrichter aus Silizium-Dioden (U_F = 0,7 V je Diode) gleichgerichtet und mit C =
+    2200 µF geglättet. Der Laststrom beträgt I_L = 0,5 A.
+  question: Bestimme den Scheitelwert der Trafospannung, die Spitzenspannung am Ausgang, die Rippelfrequenz,
+    die Brummspannung ΔU und die minimale Ausgangsspannung.
+  steps:
+  - prompt: Berechne den Scheitelwert der Sekundärspannung.
+    erwartung: û = 12 V · √2 ≈ 16,97 V.
+  - prompt: Welche Spannung erreicht der Kondensator maximal?
+    erwartung: 'Bei B2 liegen zwei Dioden im Strompfad: û_aus = 16,97 V − 2 · 0,7 V ≈ 15,6 V.'
+  - prompt: Mit welcher Frequenz wird der Kondensator nachgeladen?
+    erwartung: Beide Halbwellen werden genutzt, also f_r = 2 · 50 Hz = 100 Hz.
+  - prompt: Berechne die Brummspannung.
+    erwartung: ΔU ≈ I_L / (f_r · C) = 0,5 A / (100 Hz · 2200·10⁻⁶ F) = 0,5 / 0,22 V ≈ 2,27 V.
+  - prompt: Wie groß ist die minimale Ausgangsspannung?
+    erwartung: U_min ≈ 15,6 V − 2,27 V ≈ 13,3 V.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Scheitelwert û ≈ 16,97 V (U_eff · √2)
+      weight: 2.0
+      required: true
+      keywords:
+      - 16,97
+      - 17 V
+      - 16,9
+      card_slugs:
+      - et-get-effektivwert
+    - id: p2
+      label: 'Zwei Flussspannungen abgezogen: ≈ 15,6 V'
+      weight: 2.0
+      required: true
+      keywords:
+      - 15,6
+      - 15,57
+      - 1,4 V
+      - zwei Dioden
+      card_slugs:
+      - et-el-brueckengleichrichter
+    - id: p3
+      label: Rippelfrequenz 100 Hz
+      weight: 1.0
+      required: false
+      keywords:
+      - 100 Hz
+      - 100Hz
+      card_slugs:
+      - et-el-brueckengleichrichter
+    - id: p4
+      label: Brummspannung ΔU ≈ 2,27 V
+      weight: 2.0
+      required: true
+      keywords:
+      - 2,27
+      - 2,3 V
+      card_slugs:
+      - et-el-brummspannung
+    - id: p5
+      label: Minimale Ausgangsspannung ≈ 13,3 V
+      weight: 1.0
+      required: false
+      keywords:
+      - 13,3
+      - 13,4
+      - 13 V

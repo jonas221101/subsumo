@@ -1,0 +1,25 @@
+kurs:
+  slug: mb-tm-1
+  title: Technische Mechanik 1 (Statik)
+  area: mb-mechanik
+  semester_default: 1
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - Akkreditierte Modulhandbuecher deutscher Bachelorstudiengaenge (Struktur, kanonischer Studienverlauf)
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+  beschreibung: Kraefte und Momente, Gleichgewicht, Lagerreaktionen, Schnittgroessen, Fachwerke, Reibung.
+  lernziele:
+  - Freikoerperbilder zeichnen und Gleichgewichtsbedingungen aufstellen
+  - Lagerreaktionen und Schnittgroessenverlaeufe bestimmen
+  - Statische Bestimmtheit beurteilen
+  klausurformat:
+    typ: Modulklausur
+    minuten: 120
+  topic_slugs:
+  - mb-tm-statik-gleichgewicht
+  landesrecht_kategorien: []
+  fehlende_themen: []

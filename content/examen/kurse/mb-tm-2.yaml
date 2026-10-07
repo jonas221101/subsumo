@@ -1,0 +1,25 @@
+kurs:
+  slug: mb-tm-2
+  title: Technische Mechanik 2 (Festigkeitslehre)
+  area: mb-mechanik
+  semester_default: 2
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - Akkreditierte Modulhandbuecher deutscher Bachelorstudiengaenge (Struktur, kanonischer Studienverlauf)
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+  beschreibung: 'Spannungen und Verformungen: Zug/Druck, Biegung, Torsion, Knicken, Festigkeitshypothesen.'
+  lernziele:
+  - Biegespannungen und Widerstandsmomente berechnen
+  - Festigkeitsnachweise mit Sicherheitsfaktoren fuehren
+  - Verformungen aus dem Hookeschen Gesetz ableiten
+  klausurformat:
+    typ: Modulklausur
+    minuten: 120
+  topic_slugs:
+  - mb-tm-festigkeit-biegung
+  landesrecht_kategorien: []
+  fehlende_themen: []

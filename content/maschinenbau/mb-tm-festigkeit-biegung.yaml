@@ -1,0 +1,186 @@
+topic:
+  slug: mb-tm-festigkeit-biegung
+  area: mb-mechanik
+  title: 'Festigkeitslehre: Spannungen und Biegung'
+  relevance: 5
+  stand: 2026-10
+  quellen:
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Fachlicher Entwurf nach Standardlehrbuechern; Zahlenwerte der Aufgaben sind nachgerechnet,
+      der Text ist redaktionell noch nicht freigegeben (docs/34).
+cards:
+- slug: mb-tm-normalspannung
+  type: formel
+  front: Normalspannung bei Zug und Druck
+  back: σ = F / A. Zug positiv, Druck negativ; gleichmäßige Verteilung über den Querschnitt bei zentrischem
+    Kraftangriff. 1 N/mm² = 1 MPa.
+  einheiten:
+  - σ in N/mm²
+  - F in N
+  - A in mm²
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-tm-dehnung
+  type: formel
+  front: Dehnung
+  back: ε = Δl / l₀. Dimensionslos, oft in % oder ‰ angegeben. Querdehnung ε_q = −ν · ε mit der Querkontraktionszahl
+    ν (Stahl ≈ 0,3).
+  einheiten:
+  - ε in 1
+  - Δl in mm
+  - l₀ in mm
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-tm-hooke
+  type: formel
+  front: Hookesches Gesetz
+  back: 'σ = E · ε im linear-elastischen Bereich. E ist der Elastizitätsmodul (Stahl ≈ 210 000 N/mm²,
+    Aluminium ≈ 70 000 N/mm²). Verlängerung eines Zugstabs: Δl = F · l₀ / (E · A).'
+  einheiten:
+  - σ in N/mm²
+  - E in N/mm²
+  - ε in 1
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-tm-biegespannung
+  type: formel
+  front: Biegespannung
+  back: σ_b = M_b / W. Die Biegespannung ist am Rand maximal (Zug auf der einen, Druck auf der anderen
+    Seite) und in der neutralen Faser null. Allgemein σ(z) = M_b · z / I.
+  einheiten:
+  - σ_b in N/mm²
+  - M_b in N·mm
+  - W in mm³
+  - I in mm⁴
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-tm-widerstandsmoment-rechteck
+  type: formel
+  front: Flächenträgheits- und Widerstandsmoment des Rechtecks
+  back: 'I = b · h³ / 12, W = I / (h/2) = b · h² / 6 (Biegung um die Achse parallel zu b, h in Richtung
+    der Last). Die Höhe geht quadratisch in W ein - ein hochkant gestellter Balken ist deutlich tragfähiger.
+    Kreis: I = π·d⁴/64, W = π·d³/32.'
+  einheiten:
+  - I in mm⁴
+  - W in mm³
+  - b in mm
+  - h in mm
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-tm-schubspannung
+  type: formel
+  front: Schubspannung bei Abscherung
+  back: 'τ_a = F / A_s (mittlere Schubspannung in der Scherfläche, z. B. Bolzen, Niet). Bei zweischnittiger
+    Verbindung verteilt sich F auf zwei Scherflächen. Zulässig etwa τ_zul ≈ 0,6 · σ_zul (Gestaltänderungsenergiehypothese:
+    τ_F = R_e/√3).'
+  einheiten:
+  - τ in N/mm²
+  - F in N
+  - A_s in mm²
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-tm-sicherheit
+  type: formel
+  front: Sicherheitsfaktor und zulässige Spannung
+  back: 'S = R_e / σ_vorh (gegen Fließen) bzw. S = R_m / σ_vorh (gegen Bruch); σ_zul = R_e / S_erf. Übliche
+    erforderliche Sicherheiten: 1,2 bis 2 gegen Fließen, 2 bis 4 gegen Bruch, höher bei dynamischer Last
+    oder Gefahr für Personen.'
+  einheiten:
+  - S in 1
+  - R_e in N/mm²
+  - σ in N/mm²
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-tm-flaechentraegheitsmoment
+  type: definition
+  front: Axiales Flächenträgheitsmoment und Satz von Steiner
+  back: I_y = ∫ z² dA beschreibt den Widerstand eines Querschnitts gegen Biegung um die y-Achse. Für eine
+    parallel verschobene Achse gilt I = I_S + A · a² (Steiner), wobei a der Abstand zur Schwerachse ist.
+    Zusammengesetzte Profile werden flächenweise addiert.
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: mb-tm-schema-festigkeitsnachweis
+  title: 'Lösungsschema: Festigkeitsnachweis bei Biegung'
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: '1. Schnittgrößen bestimmen: Verlauf von M_b(x), Stelle und Betrag von M_max'
+  - label: '2. Querschnittskennwerte: I und W des Profils (Steiner bei zusammengesetzten Profilen)'
+  - label: '3. Vorhandene Spannung: σ_b = M_max / W (Einheiten auf N und mm bringen)'
+  - label: '4. Zulässige Spannung: σ_zul = R_e / S_erf aus Werkstoff und erforderlicher Sicherheit'
+  - label: 5. Vergleich σ_b ≤ σ_zul bzw. vorhandene Sicherheit S = R_e / σ_b
+  - label: '6. Bei Überschreitung: Querschnitt vergrößern (h wirkt quadratisch), Werkstoff wechseln oder
+      Last reduzieren'
+  - label: '7. Ergänzend: Durchbiegung und Knicken prüfen, falls relevant'
+faelle:
+- slug: mb-tm-aufgabe-biegung-rechteck
+  title: Biegespannung in einem Rechteckbalken
+  difficulty: 2
+  minutes: 20
+  quellen:
+  - Eigene Aufgabe der Redaktion
+  facts: Ein Balken aus S235 (Streckgrenze R_e = 235 N/mm²) hat einen Rechteckquerschnitt mit b = 40 mm
+    und h = 80 mm (h in Lastrichtung). Das maximale Biegemoment beträgt M_b = 2 kN·m.
+  question: Berechne das Widerstandsmoment, die maximale Biegespannung und die vorhandene Sicherheit gegen
+    Fließen. Ist eine erforderliche Sicherheit von S_erf = 1,5 eingehalten?
+  steps:
+  - prompt: Berechne das Widerstandsmoment des Rechteckquerschnitts.
+    erwartung: W = b · h² / 6 = 40 mm · (80 mm)² / 6 = 40 · 6400 / 6 mm³ ≈ 42 667 mm³.
+  - prompt: Bringe das Biegemoment auf N·mm und berechne die Biegespannung.
+    erwartung: M_b = 2 kN·m = 2 · 10⁶ N·mm; σ_b = M_b / W = 2 · 10⁶ / 42 667 ≈ 46,9 N/mm².
+  - prompt: Bestimme die vorhandene Sicherheit gegen Fließen.
+    erwartung: S = R_e / σ_b = 235 / 46,9 ≈ 5,0.
+  - prompt: Bewerte das Ergebnis.
+    erwartung: 'S ≈ 5 > S_erf = 1,5: Der Nachweis ist mit großer Reserve erfüllt; der Querschnitt könnte
+      verkleinert werden, sofern Durchbiegung und Knicken das zulassen.'
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Widerstandsmoment W ≈ 42 667 mm³
+      weight: 3.0
+      required: true
+      keywords:
+      - 42 667
+      - '42667'
+      - 42,7
+      - '42.667'
+      - 4,27
+      card_slugs:
+      - mb-tm-widerstandsmoment-rechteck
+    - id: p2
+      label: Biegespannung σ_b ≈ 46,9 N/mm²
+      weight: 3.0
+      required: true
+      keywords:
+      - 46,9
+      - 47 N/mm
+      - 46,875
+      - 47 MPa
+      card_slugs:
+      - mb-tm-biegespannung
+    - id: p3
+      label: Sicherheit S ≈ 5
+      weight: 2.0
+      required: false
+      keywords:
+      - S = 5
+      - S ≈ 5
+      - 5,0
+      - fünffach
+      - 5-fach
+      card_slugs:
+      - mb-tm-sicherheit
+    - id: p4
+      label: Nachweis erfüllt, erforderliche Sicherheit eingehalten
+      weight: 1.0
+      required: false
+      keywords:
+      - erfüllt
+      - erfuellt
+      - eingehalten
+      - ausreichend
+      - Reserve

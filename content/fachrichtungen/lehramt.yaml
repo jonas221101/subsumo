@@ -1,0 +1,59 @@
+fachrichtung:
+  slug: lehramt
+  name: Lehramt
+  kurzname: LA
+  abschluss: Erstes Staatsexamen / Master of Education
+  beschreibung: Bildungswissenschaftlicher und didaktischer Kern des Lehramtsstudiums, ergänzt um Schulrecht
+    und Schulpraxis. Die Fachwissenschaften der Unterrichtsfächer kommen aus den jeweiligen Fachrichtungen.
+  areas:
+  - slug: la-bildungswissenschaften
+    title: Bildungswissenschaften
+    kurz: BiWi
+  - slug: la-didaktik
+    title: Allgemeine Didaktik und Unterricht
+    kurz: Did
+  - slug: la-schulrecht-praxis
+    title: Schulrecht und Schulpraxis
+    kurz: SRP
+  begriffe:
+    fall: Fallvignette
+    faelle: Fallvignetten
+    gutachten: Fallanalyse
+    schema: Planungsraster
+    schemata: Planungsraster
+    pruefpunkt: Analysepunkt
+    examen: Staatsexamen
+    fachgebiet: Fachgebiet
+    fachgebiete: Fachgebiete
+    norm: Grundlage
+    training: Fallanalyse-Training
+  kartentypen:
+    definition: Definition
+    verfahren: Methode
+    schema_step: Planungsschritt
+    streitstand: Kontroverse
+    norm: Rechtsgrundlage
+    rechtsprechung: Rechtsprechung
+  methodik:
+    gutachtenstil_analyse: false
+    norm_gate: false
+    einheiten_gate: false
+    bundesland_profile: false
+    landesrecht: true
+  pruefung:
+    name: Erstes Staatsexamen bzw. Master of Education
+    hinweis: Je nach Bundesland Staatsexamen (z. B. Bayern, Baden-Württemberg) oder Bachelor/Master-Struktur
+      (z. B. NRW, Berlin). Bundesland-Profile für das Lehramt sind noch nicht angelegt.
+    klausuren:
+      anzahl: 3
+      verteilung:
+        la-bildungswissenschaften: 1
+        la-didaktik: 1
+        la-schulrecht-praxis: 1
+  quellen:
+  - 'KMK-Standards für die Lehrerbildung: Bildungswissenschaften (Beschluss 2004 i. d. F. 2019)'
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung

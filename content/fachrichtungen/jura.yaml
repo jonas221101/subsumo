@@ -1,0 +1,51 @@
+fachrichtung:
+  slug: jura
+  name: Rechtswissenschaft
+  kurzname: Jura
+  abschluss: Erste juristische Prüfung (Staatsexamen)
+  beschreibung: Pflichtfachstoff der ersten juristischen Prüfung in Zivilrecht, Strafrecht und Öffentlichem
+    Recht, ergänzt um das Landesrecht des Prüfungslandes.
+  areas:
+  - slug: zivilrecht
+    title: Zivilrecht
+    kurz: ZR
+  - slug: strafrecht
+    title: Strafrecht
+    kurz: SR
+  - slug: oeffentliches-recht
+    title: Öffentliches Recht
+    kurz: ÖR
+  begriffe:
+    fall: Fall
+    faelle: Fälle
+    gutachten: Gutachten
+    schema: Schema
+    schemata: Schemata
+    pruefpunkt: Prüfpunkt
+    examen: Examen
+    fachgebiet: Rechtsgebiet
+    fachgebiete: Rechtsgebiete
+    norm: Norm
+    training: Gutachten-Training
+  kartentypen:
+    definition: Definition
+    schema_step: Schema
+    streitstand: Streitstand
+    norm: Norm
+    rechtsprechung: Rechtsprechung
+  methodik:
+    gutachtenstil_analyse: true
+    norm_gate: true
+    einheiten_gate: false
+    bundesland_profile: true
+    landesrecht: true
+  pruefung:
+    name: Staatliche Pflichtfachprüfung
+    hinweis: Struktur, Termine und Landesrecht je Bundesland - siehe Bundesland-Profile.
+  quellen:
+  - Deutsches Richtergesetz (DRiG), §§ 5 ff.
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: mensch-freigegeben

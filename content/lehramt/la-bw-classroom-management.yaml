@@ -1,0 +1,206 @@
+topic:
+  slug: la-bw-classroom-management
+  area: la-bildungswissenschaften
+  title: Classroom Management und Unterrichtsstörungen
+  relevance: 5
+  stand: 2026-10
+  quellen:
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Fachlicher Entwurf nach Standardlehrbuechern; Zahlenwerte der Aufgaben sind nachgerechnet,
+      der Text ist redaktionell noch nicht freigegeben (docs/34).
+cards:
+- slug: la-bw-kounin
+  type: definition
+  front: Klassenführung nach Kounin
+  back: 'Kounin fand in Beobachtungsstudien, dass nicht die Reaktion auf Störungen, sondern präventive
+    Techniken den Unterschied machen: Allgegenwärtigkeit (withitness - die Lehrkraft signalisiert, dass
+    sie alles mitbekommt), Überlappung (mehrere Dinge gleichzeitig steuern), Reibungslosigkeit und Schwung
+    (keine Sprunghaftigkeit, keine Verzögerungen bei Übergängen), Gruppenmobilisierung (alle beschäftigen,
+    Rechenschaft einfordern), Abwechslung und Herausforderung.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-bw-unterrichtsstoerung
+  type: definition
+  front: Unterrichtsstörung
+  back: Ereignis, das den Lehr-Lern-Prozess beeinträchtigt, unterbricht oder unmöglich macht. Störungen
+    sind kein Merkmal einer Person, sondern einer Interaktion; sie können von Schülerinnen und Schülern,
+    von der Lehrkraft (schlecht geplante Übergänge) oder von außen ausgehen. Verhalten hat eine Funktion
+    (Aufmerksamkeit, Vermeidung, Langeweile, Macht) - die Funktion zu verstehen ist Voraussetzung für
+    die passende Reaktion.
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-bw-praeventiv-evertson
+  type: definition
+  front: Proaktive Klassenführung (Evertson und Emmer)
+  back: 'Die ersten Wochen entscheiden: Regeln und Abläufe werden eingeführt, geübt und konsequent eingefordert;
+    Raum, Material und Übergänge sind vorbereitet; Erwartungen an Arbeitsverhalten sind explizit. Effektive
+    Lehrkräfte verbringen zu Beginn mehr Zeit mit dem Einüben von Routinen und gewinnen diese Zeit über
+    das Jahr vielfach zurück.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-bw-regeln-rituale
+  type: verfahren
+  front: Regeln und Rituale einführen
+  back: Wenige (drei bis fünf), positiv formulierte, beobachtbare Regeln ('Wir lassen andere ausreden');
+    gemeinsam erarbeitet, sichtbar im Raum, mit vereinbarten Konsequenzen. Rituale (Begrüßung, Ruhezeichen,
+    Material-Check, Stundenabschluss) strukturieren Übergänge und entlasten die Lehrkraft von ständigen
+    Einzelanweisungen. Regeln müssen in den ersten Wochen geübt und bei Verstößen sofort, ruhig und vorhersehbar
+    durchgesetzt werden.
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-bw-low-profile
+  type: verfahren
+  front: Niedrigschwellige Intervention (Low-Profile-Techniken)
+  back: 'Störungen so früh und so unauffällig wie möglich beenden, ohne den Unterrichtsfluss zu unterbrechen:
+    Blickkontakt, räumliche Nähe, Namensnennung im Satz, nonverbales Signal, kurze sachliche Erinnerung
+    an die Regel, Aufgabe an die störende Person richten. Erst wenn das nicht wirkt, die Eskalationsstufe
+    erhöhen - die Mehrheit der Klasse darf nicht Publikum werden.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-bw-eskalationsstufen
+  type: verfahren
+  front: Gestufte Reaktion auf Störungen
+  back: 'Stufe 1: nonverbale Signale und Nähe. Stufe 2: kurze verbale Erinnerung, Ich-Botschaft, Wahl
+    anbieten (''Du kannst leise weiterarbeiten oder dich an den Einzeltisch setzen''). Stufe 3: angekündigte
+    Konsequenz umsetzen (vereinbarte Erziehungsmaßnahme). Stufe 4: Gespräch nach der Stunde, Verhaltensvertrag.
+    Stufe 5: Eltern, Klassenkonferenz, Ordnungsmaßnahmen. Grundregel: immer die niedrigste wirksame Stufe,
+    Ankündigungen einhalten, danach Beziehung wiederherstellen.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-bw-lehrer-schueler-beziehung
+  type: definition
+  front: Lehrkraft-Schüler-Beziehung als Grundlage
+  back: 'Eine von Respekt, Verlässlichkeit und Interesse geprägte Beziehung ist nach Hatties Synthese
+    ein bedeutsamer Einflussfaktor auf Lernerfolg und senkt die Störungsrate. Elemente: Schülerinnen und
+    Schüler beim Namen kennen, Interesse an ihrer Perspektive, Fehlerfreundlichkeit, Fairness bei Konsequenzen,
+    Trennung von Person und Verhalten (''Das Verhalten stört'', nicht ''Du bist unmöglich'').'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-bw-uebergaenge
+  type: verfahren
+  front: Übergänge gestalten
+  back: 'Übergänge (Stundenbeginn, Wechsel der Sozialform, Pausenende) sind die störungsanfälligsten Phasen.
+    Vorgehen: Ankündigen (''In zwei Minuten …''), klares Signal, eine Anweisung nach der anderen, Material
+    vorher bereitlegen, Zeitvorgabe, Beginn der nächsten Phase durch eine Aufgabe für alle sichern (Gruppenmobilisierung
+    nach Kounin).'
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: la-bw-schema-stoerung-analysieren
+  title: 'Planungsraster: Unterrichtsstörung analysieren und handeln'
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: '1. Störung beschreiben: wer, was genau, wann in der Stunde, Reaktion der Klasse'
+  - label: 2. Funktion des Verhaltens klären (Aufmerksamkeit, Vermeidung, Langeweile, Beziehung, Überforderung)
+  - label: 3. Präventive Lücke prüfen (Kounin, Evertson)
+    children:
+    - label: a) War der Übergang vorbereitet und klar signalisiert?
+    - label: b) Gab es Allgegenwärtigkeit und Gruppenmobilisierung?
+    - label: c) Sind Regeln und Konsequenzen bekannt und eingeübt?
+  - label: '4. Interventionsstufe wählen: niedrigste wirksame Stufe, Unterrichtsfluss erhalten'
+  - label: '5. Beziehung wahren: Person und Verhalten trennen, Gesichtsverlust vermeiden'
+  - label: '6. Nachbereitung: Gespräch, Vereinbarung, Anpassung der eigenen Planung'
+faelle:
+- slug: la-bw-fall-gruppenarbeit-stoerung
+  title: Unruhe beim Wechsel in die Gruppenarbeit
+  difficulty: 2
+  minutes: 35
+  quellen:
+  - Eigene Aufgabe der Redaktion
+  facts: 'In einer 7. Klasse kündigt die Lehrkraft nach 20 Minuten Lehrervortrag an: ''So, jetzt Gruppenarbeit,
+    sucht euch Gruppen, holt euch die Arbeitsblätter vorne und fangt an.'' Es dauert fünf Minuten, bis
+    alle sitzen. Jonas und Tim bilden keine Gruppe, werfen mit Papierkugeln und rufen über den Raum. Die
+    Lehrkraft ruft von vorne: ''Jonas, Tim, wenn ihr nicht sofort aufhört, gibt es einen Eintrag!'' Die
+    beiden lachen, die Klasse schaut zu. Die Lehrkraft setzt den Eintrag nicht um und wendet sich einer
+    anderen Gruppe zu.'
+  question: Analysiere die Situation mit Blick auf Prävention und Intervention und entwickle einen alternativen
+    Handlungsverlauf.
+  steps:
+  - prompt: Welche präventiven Fehler liegen im Übergang?
+    erwartung: 'Der Übergang ist unvorbereitet: keine Ankündigung, mehrere Anweisungen gleichzeitig, Gruppen
+      und Material nicht vorab festgelegt, keine Zeitvorgabe, keine Aufgabe, die alle sofort bindet -
+      Verstoß gegen Reibungslosigkeit, Schwung und Gruppenmobilisierung (Kounin).'
+  - prompt: Welche Funktion hat das Verhalten von Jonas und Tim?
+    erwartung: Aufmerksamkeit und Status vor der Klasse (die Klasse schaut zu, die beiden lachen); möglicherweise
+      auch Vermeidung einer Aufgabe ohne klare Struktur.
+  - prompt: Bewerte die Reaktion der Lehrkraft.
+    erwartung: Hochschwellige öffentliche Drohung über den Raum statt niedrigschwelliger Intervention
+      - die Klasse wird Publikum; die angekündigte Konsequenz wird nicht umgesetzt, was die Glaubwürdigkeit
+      untergräbt und das Verhalten intermittierend verstärkt.
+  - prompt: Entwickle einen alternativen Verlauf für den Übergang.
+    erwartung: Zwei Minuten vorher ankündigen, Gruppen und Material vorab zuteilen, Ruhezeichen, eine
+      Anweisung nach der anderen, Zeitvorgabe ('In 60 Sekunden sitzt ihr und habt das Blatt gelesen'),
+      erste Aufgabe für alle mit sichtbarem Produkt.
+  - prompt: Wie sollte auf die Störung reagiert werden?
+    erwartung: 'Stufe 1: Nähe aufsuchen, Blickkontakt, leise die Aufgabe zuweisen. Stufe 2: Wahl anbieten
+      (in der Gruppe arbeiten oder Einzelarbeit am Einzeltisch). Bleibt es dabei, die angekündigte Konsequenz
+      ruhig umsetzen und nach der Stunde das Gespräch suchen - Person und Verhalten trennen.'
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: 'Übergang als präventive Lücke erkannt (Kounin: Reibungslosigkeit/Schwung)'
+      weight: 3.0
+      required: true
+      keywords:
+      - Übergang
+      - Uebergang
+      - Reibungslosigkeit
+      - Schwung
+      - Kounin
+      card_slugs:
+      - la-bw-kounin
+      - la-bw-uebergaenge
+    - id: p2
+      label: Funktion des Verhaltens benannt (Aufmerksamkeit/Status)
+      weight: 2.0
+      required: false
+      keywords:
+      - Aufmerksamkeit
+      - Status
+      - Publikum
+      - Funktion
+      card_slugs:
+      - la-bw-unterrichtsstoerung
+    - id: p3
+      label: Öffentliche Drohung und nicht umgesetzte Konsequenz kritisiert
+      weight: 3.0
+      required: true
+      keywords:
+      - nicht umgesetzt
+      - Glaubwürdigkeit
+      - Glaubwuerdigkeit
+      - leere Drohung
+      - Drohung
+      - Konsequenz
+      card_slugs:
+      - la-bw-eskalationsstufen
+    - id: p4
+      label: Niedrigschwellige Intervention vorgeschlagen (Nähe, Blickkontakt, Low-Profile)
+      weight: 2.0
+      required: false
+      keywords:
+      - Nähe
+      - Naehe
+      - Blickkontakt
+      - niedrigschwellig
+      - Low-Profile
+      - nonverbal
+      card_slugs:
+      - la-bw-low-profile
+    - id: p5
+      label: Alternativer Übergang mit Ankündigung, Material, Zeitvorgabe
+      weight: 2.0
+      required: false
+      keywords:
+      - ankündigen
+      - Ankündigung
+      - Zeitvorgabe
+      - Material
+      - Ruhezeichen
+      - Gruppen vorab
+      card_slugs:
+      - la-bw-uebergaenge

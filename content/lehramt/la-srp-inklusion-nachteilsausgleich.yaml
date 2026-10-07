@@ -1,0 +1,226 @@
+topic:
+  slug: la-srp-inklusion-nachteilsausgleich
+  area: la-schulrecht-praxis
+  title: Inklusion, Nachteilsausgleich und Schülerrechte
+  relevance: 4
+  stand: 2026-10
+  quellen:
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Fachlicher Entwurf nach Standardlehrbuechern; Zahlenwerte der Aufgaben sind nachgerechnet,
+      der Text ist redaktionell noch nicht freigegeben (docs/34).
+cards:
+- slug: la-srp-un-brk
+  type: norm
+  front: Recht auf inklusive Bildung (Art. 24 UN-BRK)
+  back: Die UN-Behindertenrechtskonvention verpflichtet die Vertragsstaaten zu einem inklusiven Bildungssystem
+    auf allen Ebenen; Menschen mit Behinderungen dürfen nicht vom allgemeinen Bildungssystem ausgeschlossen
+    werden und haben Anspruch auf angemessene Vorkehrungen und individuelle Unterstützung. In Deutschland
+    seit 2009 in Kraft; die Umsetzung erfolgt durch die Schulgesetze der Länder (z. B. gemeinsames Lernen,
+    Elternwahlrecht zwischen allgemeiner und Förderschule in den meisten Ländern).
+  norms:
+  - Art. 24 UN-BRK
+  - Art. 3 Abs. 3 S. 2 GG
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-srp-nachteilsausgleich
+  type: definition
+  front: Nachteilsausgleich
+  back: 'Anpassung der äußeren Bedingungen einer Leistungserhebung für Schüler mit Behinderung, chronischer
+    Erkrankung oder besonderer Beeinträchtigung (z. B. Lese-Rechtschreib-Störung, Autismus, Sehbehinderung),
+    damit sie ihre Leistung zeigen können. Beispiele: Zeitverlängerung, Hilfsmittel, vergrößerte Schrift,
+    mündliche statt schriftliche Form, separater Raum. Das fachliche Anforderungsniveau bleibt unverändert;
+    der Nachteilsausgleich wird nicht im Zeugnis vermerkt. Rechtsgrundlage: Art. 3 Abs. 3 S. 2 GG, Schulgesetze
+    und Erlasse der Länder.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-srp-notenschutz
+  type: definition
+  front: Notenschutz - Abgrenzung zum Nachteilsausgleich
+  back: 'Beim Notenschutz wird von den Anforderungen abgewichen (z. B. Rechtschreibleistung bei LRS nicht
+    oder weniger gewichtet). Weil damit die Vergleichbarkeit der Note berührt ist, wird Notenschutz in
+    der Regel im Zeugnis vermerkt und nur auf Antrag der Eltern gewährt; die Regelungen sind landesrechtlich
+    unterschiedlich (BVerwG, Urteile vom 29.07.2015 - 6 C 33.14 u. a.: Zeugnisbemerkung bei Notenschutz
+    zulässig, bei bloßem Nachteilsausgleich nicht).'
+  norms:
+  - BVerwG, Urt. v. 29.07.2015 - 6 C 33.14
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-srp-foerderbedarf-verfahren
+  type: verfahren
+  front: Feststellung des sonderpädagogischen Förderbedarfs
+  back: Antrag durch Eltern oder Schule bei der Schulaufsicht; sonderpädagogisches Gutachten (Förderschullehrkraft,
+    ggf. schulärztlich); Anhörung der Eltern; Entscheidung der Schulaufsicht über Förderschwerpunkt (Lernen,
+    Sprache, emotionale und soziale Entwicklung, geistige Entwicklung, körperliche und motorische Entwicklung,
+    Hören, Sehen) und Förderort. Regelmäßige Überprüfung; Entscheidung ist ein Verwaltungsakt, gegen den
+    Widerspruch bzw. Klage vor dem Verwaltungsgericht möglich ist.
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-srp-schulpflicht
+  type: norm
+  front: Schulpflicht und staatliche Schulaufsicht
+  back: 'Nach Art. 7 Abs. 1 GG steht das gesamte Schulwesen unter der Aufsicht des Staates; die Schulpflicht
+    regeln die Länder (meist neun bis zehn Vollzeitschuljahre plus Berufsschulpflicht). Sie umfasst regelmäßige
+    Teilnahme am Unterricht und an verbindlichen Veranstaltungen. Verstöße: Schulzwang, Bußgeld gegen
+    Eltern. Homeschooling ist in Deutschland grundsätzlich nicht zulässig (BVerfG, Beschluss vom 29.04.2003
+    - 1 BvR 436/03).'
+  norms:
+  - Art. 7 Abs. 1 GG
+  - Art. 6 Abs. 2 GG
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-srp-erziehungs-ordnungsmassnahmen
+  type: norm
+  front: Erziehungs- und Ordnungsmaßnahmen
+  back: 'Erziehungsmaßnahmen (Ermahnung, Gespräch, Nacharbeit, zeitweiser Ausschluss aus der Stunde, Wiedergutmachung)
+    sind pädagogische Reaktionen der Lehrkraft ohne förmliches Verfahren. Ordnungsmaßnahmen (schriftlicher
+    Verweis, Umsetzung in Parallelklasse, zeitweiser Unterrichtsausschluss, Überweisung an andere Schule,
+    Entlassung) sind Verwaltungsakte: gesetzliche Grundlage im Schulgesetz, Zuständigkeit (Schulleitung
+    oder Konferenz), Anhörung des Schülers und der Eltern, Verhältnismäßigkeit, Rechtsbehelfsbelehrung.
+    Körperliche Züchtigung ist verboten; Kollektivstrafen sind unzulässig.'
+  norms:
+  - Art. 20 Abs. 3 GG (Verhältnismäßigkeit)
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-srp-elternrecht
+  type: norm
+  front: Elternrecht und staatlicher Erziehungsauftrag
+  back: 'Art. 6 Abs. 2 GG gewährt den Eltern das Recht und die Pflicht zur Pflege und Erziehung; Art.
+    7 Abs. 1 GG begründet einen eigenständigen, gleichgeordneten staatlichen Erziehungsauftrag der Schule.
+    Beide sind im Wege praktischer Konkordanz auszugleichen (BVerfG): Schule darf Erziehungsziele setzen,
+    muss aber Neutralität und Toleranz wahren und Eltern informieren und beteiligen (Elternvertretungen,
+    Schulkonferenz). Konflikte: Sexualkunde, Klassenfahrten, religiöse Befreiungen - Befreiung nur bei
+    Gewissenskonflikt und zumutbaren Alternativen.'
+  norms:
+  - Art. 6 Abs. 2 GG
+  - Art. 7 Abs. 1 GG
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-srp-datenschutz-schule
+  type: definition
+  front: Datenschutz in der Schule
+  back: 'Schulen verarbeiten personenbezogene Daten nur auf gesetzlicher Grundlage (Schulgesetze, Datenschutzverordnungen
+    der Länder, DSGVO). Grundsätze: Zweckbindung, Datenminimierung, Vertraulichkeit (Noten nicht öffentlich
+    aushängen, keine Weitergabe an Dritte ohne Grundlage). Fotos und Videos von Schülern nur mit Einwilligung
+    der Sorgeberechtigten; private Messenger für dienstliche Kommunikation sind in den meisten Ländern
+    untersagt.'
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: la-srp-schema-nachteilsausgleich
+  title: 'Planungsraster: Nachteilsausgleich prüfen und gewähren'
+  norms:
+  - Art. 3 Abs. 3 S. 2 GG
+  - Art. 24 UN-BRK
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: '1. Beeinträchtigung belegen: ärztliche, psychologische oder sonderpädagogische Stellungnahme,
+      Dauer'
+  - label: '2. Zuständigkeit und Verfahren nach Landesrecht: Antrag (Eltern/volljähriger Schüler), Entscheidung
+      durch Schulleitung oder Klassenkonferenz'
+  - label: '3. Art der Maßnahme festlegen: Zeit, Hilfsmittel, Raum, Form - passgenau zur Beeinträchtigung'
+  - label: '4. Abgrenzung zum Notenschutz: Bleibt das Anforderungsniveau unverändert?'
+    hinweis: Wird vom Anforderungsniveau abgewichen, ist es Notenschutz - mit Zeugnisvermerk und eigenem
+      Verfahren.
+  - label: '5. Dokumentation: Entscheidung aktenkundig machen, Lehrkräfte informieren, kein Zeugnisvermerk
+      beim Nachteilsausgleich'
+  - label: 6. Regelmäßige Überprüfung und Anpassung; bei Ablehnung Rechtsbehelf (Widerspruch, Klage)
+faelle:
+- slug: la-srp-fall-lrs-klausur
+  title: Nachteilsausgleich bei Lese-Rechtschreib-Störung
+  difficulty: 2
+  minutes: 35
+  quellen:
+  - Eigene Aufgabe der Redaktion
+  facts: 'Die Eltern der 15-jährigen Nina legen der Schule ein aktuelles Gutachten einer Kinder- und Jugendpsychiaterin
+    vor, das eine Lese-Rechtschreib-Störung bescheinigt, und beantragen für die Englischklausuren 20 Minuten
+    Zeitverlängerung sowie die Nutzung eines Laptops mit Rechtschreibprüfung. Englischlehrer E lehnt ab:
+    ''Dann sind die Noten nicht mehr vergleichbar, und das müsste ja im Zeugnis stehen - das schadet ihr
+    nur.'' Er schlägt stattdessen vor, Ninas Rechtschreibfehler einfach nicht zu werten.'
+  question: Bewerte die Reaktion des Lehrers rechtlich. Wie ist der Antrag zu behandeln und wer entscheidet?
+  steps:
+  - prompt: Worum geht es bei dem Antrag - Nachteilsausgleich oder Notenschutz?
+    erwartung: 'Zeitverlängerung und Laptop verändern die Bedingungen, nicht die Anforderungen: Nachteilsausgleich.
+      Die Rechtschreibprüfung ist grenzwertig, wenn Rechtschreibung Teil der geprüften Leistung ist -
+      dann wäre dieser Teil eher Notenschutz; Zeitverlängerung ist klar Nachteilsausgleich.'
+  - prompt: Ist das Argument der Vergleichbarkeit tragfähig?
+    erwartung: 'Nein. Der Nachteilsausgleich stellt Chancengleichheit erst her (Art. 3 Abs. 3 S. 2 GG,
+      Art. 24 UN-BRK): Die Leistung wird unter Bedingungen erbracht, die den Nachteil kompensieren, das
+      Anforderungsniveau bleibt gleich. Ein Zeugnisvermerk ist beim Nachteilsausgleich gerade nicht vorgesehen
+      (BVerwG 2015).'
+  - prompt: Bewerte den Vorschlag, Rechtschreibfehler nicht zu werten.
+    erwartung: 'Das ist Notenschutz, kein Nachteilsausgleich: Abweichung von den Anforderungen, nach Landesrecht
+      nur auf Antrag der Eltern, meist mit Zeugnisbemerkung. Der Lehrer darf das nicht eigenmächtig und
+      anstelle des beantragten Nachteilsausgleichs einführen.'
+  - prompt: Wer entscheidet und wie?
+    erwartung: Nicht der Fachlehrer allein. Nach den Erlassen der Länder entscheidet die Schulleitung
+      bzw. die Klassenkonferenz auf Antrag der Eltern unter Würdigung des Gutachtens; die Entscheidung
+      wird dokumentiert und allen Lehrkräften mitgeteilt. Eine Ablehnung ist zu begründen und kann mit
+      Widerspruch und Klage angegriffen werden.
+  - prompt: Was sollte E konkret tun?
+    erwartung: Den Antrag an die Schulleitung weiterleiten, den Nachteilsausgleich (Zeitverlängerung,
+      ggf. Laptop ohne Rechtschreibprüfung) umsetzen, mit den Eltern über die Option Notenschutz und deren
+      Folgen (Zeugnisvermerk) getrennt sprechen und die Maßnahmen regelmäßig überprüfen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Nachteilsausgleich korrekt eingeordnet (Bedingungen, nicht Anforderungen)
+      weight: 3.0
+      required: true
+      keywords:
+      - Nachteilsausgleich
+      - Bedingungen
+      - Anforderungsniveau
+      - Anforderungen bleiben
+      card_slugs:
+      - la-srp-nachteilsausgleich
+    - id: p2
+      label: Abgrenzung zum Notenschutz (Nichtwertung der Rechtschreibung)
+      weight: 3.0
+      required: true
+      keywords:
+      - Notenschutz
+      card_slugs:
+      - la-srp-notenschutz
+    - id: p3
+      label: Kein Zeugnisvermerk beim Nachteilsausgleich, Vergleichbarkeitsargument widerlegt
+      weight: 2.0
+      required: false
+      keywords:
+      - Zeugnis
+      - Vergleichbarkeit
+      - vergleichbar
+      - BVerwG
+      card_slugs:
+      - la-srp-notenschutz
+    - id: p4
+      label: Rechtsgrundlage Chancengleichheit / Benachteiligungsverbot
+      weight: 2.0
+      required: false
+      norms:
+      - Art. 3 Abs. 3 S. 2 GG
+      - Art. 24 UN-BRK
+      keywords:
+      - Art. 3
+      - Artikel 3
+      - Benachteiligung
+      - Chancengleichheit
+      - UN-BRK
+      - Behindertenrechtskonvention
+      card_slugs:
+      - la-srp-un-brk
+    - id: p5
+      label: Zuständigkeit Schulleitung/Klassenkonferenz, nicht Fachlehrer allein; Dokumentation
+      weight: 2.0
+      required: false
+      keywords:
+      - Schulleitung
+      - Klassenkonferenz
+      - nicht der Fachlehrer
+      - nicht allein
+      - dokumentier
+      card_slugs:
+      - la-srp-nachteilsausgleich

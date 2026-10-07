@@ -4,6 +4,11 @@ universitaet:
   kurzname: Uni Hannover
   stadt: Hannover
   bundesland: NI
+  fachrichtungen:
+  - jura
+  - elektrotechnik
+  - maschinenbau
+  - lehramt
   traegerschaft: staatlich
   stand: 2026-09
   quellen:
@@ -52,4 +57,36 @@ universitaet:
   - kurs: sr-examenskurs
     semester: 7
   - kurs: or-examenskurs
+    semester: 7
+  - kurs: et-get-1
+    semester: 1
+  - kurs: et-get-2
+    semester: 2
+  - kurs: et-elektronik
+    semester: 3
+  - kurs: et-signale-systeme
+    semester: 4
+  - kurs: et-regelungstechnik
+    semester: 5
+  - kurs: et-abschlusskurs
+    semester: 6
+  - kurs: mb-tm-1
+    semester: 1
+  - kurs: mb-werkstoffkunde
+    semester: 2
+  - kurs: mb-tm-2
+    semester: 2
+  - kurs: mb-thermodynamik-1
+    semester: 3
+  - kurs: mb-maschinenelemente
+    semester: 4
+  - kurs: mb-abschlusskurs
+    semester: 6
+  - kurs: la-biwi-1
+    semester: 1
+  - kurs: la-didaktik
+    semester: 2
+  - kurs: la-schulrecht
+    semester: 4
+  - kurs: la-examenskurs
     semester: 7

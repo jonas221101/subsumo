@@ -1,0 +1,26 @@
+kurs:
+  slug: mb-maschinenelemente
+  title: Maschinenelemente 1
+  area: mb-konstruktion-werkstoffe
+  semester_default: 4
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - Akkreditierte Modulhandbuecher deutscher Bachelorstudiengaenge (Struktur, kanonischer Studienverlauf)
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+  beschreibung: Verbindungselemente, Welle-Nabe-Verbindungen, Toleranzen und Passungen, Grundlagen der
+    Auslegung.
+  lernziele:
+  - Schraubenverbindungen nach VDI 2230 ueberschlaegig auslegen
+  - Passungen und Toleranzen lesen und auswaehlen
+  - Welle-Nabe-Verbindungen nachrechnen
+  klausurformat:
+    typ: Modulklausur
+    minuten: 120
+  topic_slugs:
+  - mb-kw-schraubenverbindung
+  landesrecht_kategorien: []
+  fehlende_themen: []

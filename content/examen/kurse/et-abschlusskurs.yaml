@@ -1,0 +1,29 @@
+kurs:
+  slug: et-abschlusskurs
+  title: Bachelor-Repetitorium Elektrotechnik
+  area: et-grundlagen
+  semester_default: 6
+  examenskurs: true
+  stand: 2026-10
+  quellen:
+  - Akkreditierte Modulhandbuecher deutscher Bachelorstudiengaenge (Struktur, kanonischer Studienverlauf)
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+  beschreibung: Wiederholung der Kernmodule vor der Bachelorarbeit und den letzten Modulpruefungen.
+  lernziele:
+  - Alle Grundlagenmodule im Zusammenhang wiederholen
+  - Rechenaufgaben unter Zeitdruck sicher loesen
+  klausurformat:
+    typ: Modulklausur (Repetitorium)
+    minuten: 180
+  topic_slugs:
+  - et-get-ohm-kirchhoff
+  - et-get-wechselstrom-komplex
+  - et-el-diode-gleichrichter
+  - et-el-opv-grundschaltungen
+  - et-ss-lti-faltung-uebertragung
+  - et-ss-regelkreis-pid
+  landesrecht_kategorien: []
+  fehlende_themen: []

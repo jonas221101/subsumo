@@ -4,6 +4,9 @@ universitaet:
   kurzname: LMU Muenchen
   stadt: Muenchen
   bundesland: BY
+  fachrichtungen:
+  - jura
+  - lehramt
   traegerschaft: staatlich
   stand: 2026-09
   quellen:
@@ -54,4 +57,12 @@ universitaet:
   - kurs: sr-examenskurs
     semester: 7
   - kurs: or-examenskurs
+    semester: 7
+  - kurs: la-biwi-1
+    semester: 1
+  - kurs: la-didaktik
+    semester: 2
+  - kurs: la-schulrecht
+    semester: 4
+  - kurs: la-examenskurs
     semester: 7

@@ -1,0 +1,25 @@
+kurs:
+  slug: mb-werkstoffkunde
+  title: Werkstoffkunde
+  area: mb-konstruktion-werkstoffe
+  semester_default: 2
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - Akkreditierte Modulhandbuecher deutscher Bachelorstudiengaenge (Struktur, kanonischer Studienverlauf)
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+  beschreibung: Aufbau und Eigenschaften metallischer Werkstoffe, Pruefverfahren, Werkstoffbezeichnungen.
+  lernziele:
+  - Zugversuch auswerten und Kennwerte bestimmen
+  - Werkstoffbezeichnungen nach DIN EN 10027 lesen
+  - Pruefverfahren fuer Haerte und Zaehigkeit zuordnen
+  klausurformat:
+    typ: Modulklausur
+    minuten: 90
+  topic_slugs:
+  - mb-kw-werkstoffe-zugversuch
+  landesrecht_kategorien: []
+  fehlende_themen: []

@@ -1,0 +1,161 @@
+topic:
+  slug: et-ss-lti-faltung-uebertragung
+  area: et-signale-systeme
+  title: LTI-Systeme, Faltung und Übertragungsfunktion
+  relevance: 5
+  stand: 2026-10
+  quellen:
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Fachlicher Entwurf nach Standardlehrbuechern; Zahlenwerte der Aufgaben sind nachgerechnet,
+      der Text ist redaktionell noch nicht freigegeben (docs/34).
+cards:
+- slug: et-ss-lti
+  type: definition
+  front: LTI-System (linear, zeitinvariant)
+  back: Ein System ist linear, wenn das Superpositionsprinzip gilt (Skalierung und Addition der Eingänge
+    übertragen sich auf die Ausgänge), und zeitinvariant, wenn eine Verschiebung des Eingangs um t₀ den
+    Ausgang nur um t₀ verschiebt. LTI-Systeme sind durch ihre Impulsantwort vollständig beschrieben.
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-ss-impulsantwort
+  type: definition
+  front: Impulsantwort und Sprungantwort
+  back: 'Die Impulsantwort h(t) ist die Reaktion des Systems auf den Dirac-Impuls δ(t), die Sprungantwort
+    a(t) die Reaktion auf die Sprungfunktion σ(t). Es gilt h(t) = da(t)/dt. Beispiel RC-Tiefpass: h(t)
+    = (1/RC)·e^(−t/RC)·σ(t), a(t) = (1 − e^(−t/RC))·σ(t).'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-ss-faltung
+  type: formel
+  front: Faltungsintegral
+  back: 'y(t) = (x ∗ h)(t) = ∫ x(τ) · h(t − τ) dτ (Integration über alle τ). Der Ausgang eines LTI-Systems
+    ist die Faltung des Eingangs mit der Impulsantwort. Im Laplace- bzw. Frequenzbereich wird die Faltung
+    zur Multiplikation: Y(s) = X(s) · H(s).'
+  einheiten:
+  - t in s
+  - τ in s
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-ss-uebertragungsfunktion
+  type: formel
+  front: Übertragungsfunktion
+  back: H(s) = Y(s) / X(s) = L{h(t)} bei verschwindenden Anfangsbedingungen. Für s = jω ergibt sich der
+    Frequenzgang H(jω) mit Amplitudengang |H(jω)| und Phasengang arg H(jω).
+  einheiten:
+  - s in 1/s
+  - ω in 1/s
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-ss-laplace-korrespondenzen
+  type: formel
+  front: Wichtige Laplace-Korrespondenzen
+  back: 'L{δ(t)} = 1; L{σ(t)} = 1/s; L{e^(−a·t)·σ(t)} = 1/(s + a); L{t·σ(t)} = 1/s²; Differentiation:
+    L{dx/dt} = s·X(s) − x(0); Integration: L{∫x dt} = X(s)/s.'
+  einheiten:
+  - t in s
+  - s in 1/s
+  - a in 1/s
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-ss-rc-tiefpass
+  type: formel
+  front: RC-Tiefpass erster Ordnung
+  back: 'H(jω) = 1 / (1 + jωRC), Grenzfrequenz f_g = 1 / (2π·R·C). Bei f_g: |H| = 1/√2 (−3 dB), Phase
+    −45°. Oberhalb von f_g fällt der Amplitudengang mit −20 dB/Dekade, die Phase geht gegen −90°.'
+  einheiten:
+  - f_g in Hz
+  - R in Ω
+  - C in F
+  - '|H| in dB'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-ss-bode
+  type: verfahren
+  front: Bode-Diagramm zeichnen
+  back: Amplitudengang 20·log₁₀|H| in dB über log f, Phasengang in Grad über log f. Jeder reelle Pol knickt
+    den Amplitudengang um −20 dB/Dekade, jede Nullstelle um +20 dB/Dekade; die Phase ändert sich je Pol
+    um −90° (über zwei Dekaden um die Knickfrequenz). Faktoren im Produkt werden im dB-Maß addiert.
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-ss-stabilitaet-pole
+  type: definition
+  front: Stabilität über die Pollage
+  back: 'Ein kausales LTI-System ist BIBO-stabil, wenn alle Pole von H(s) in der linken s-Halbebene liegen
+    (negativer Realteil). Pole auf der imaginären Achse: Grenzstabilität (Dauerschwingung), Pole rechts:
+    instabil (aufklingende Lösung).'
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: et-ss-schema-uebertragungsverhalten
+  title: 'Lösungsschema: Übertragungsverhalten eines Systems bestimmen'
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: 1. Differentialgleichung des Systems aufstellen (Kirchhoff, Bauelementgleichungen)
+  - label: 2. Laplace-Transformation mit Anfangsbedingungen null
+  - label: 3. Übertragungsfunktion H(s) = Y(s)/X(s) bilden, Zähler und Nenner faktorisieren
+  - label: 4. Pole und Nullstellen bestimmen, Stabilität prüfen
+  - label: '5. Frequenzgang H(jω): Betrag und Phase'
+    children:
+    - label: a) Knickfrequenzen aus den Polen und Nullstellen
+    - label: b) Verstärkung bei ω → 0 und ω → ∞
+  - label: 6. Bode-Diagramm skizzieren (Asymptoten, −3 dB bei Knickfrequenz)
+  - label: '7. Zeitverhalten: Sprungantwort über Rücktransformation, Zeitkonstanten ablesen'
+faelle:
+- slug: et-ss-aufgabe-rc-tiefpass
+  title: 'RC-Tiefpass: Grenzfrequenz und Dämpfung'
+  difficulty: 2
+  minutes: 20
+  quellen:
+  - Eigene Aufgabe der Redaktion
+  facts: Ein RC-Tiefpass besteht aus R = 1,59 kΩ und C = 100 nF.
+  question: Bestimme die Grenzfrequenz f_g, den Amplitudengang in dB bei f = 10 kHz und den Phasenwinkel
+    bei der Grenzfrequenz.
+  steps:
+  - prompt: Berechne die Grenzfrequenz.
+    erwartung: f_g = 1/(2π·R·C) = 1/(2π · 1590 Ω · 100·10⁻⁹ F) ≈ 1/(0,001 s) ≈ 1 kHz (genauer 1001 Hz).
+  - prompt: Bestimme den Betrag des Frequenzgangs bei 10 kHz.
+    erwartung: f/f_g = 10 → |H| = 1/√(1 + 10²) = 1/√101 ≈ 0,0995.
+  - prompt: Rechne in dB um.
+    erwartung: 20·log₁₀(0,0995) ≈ −20 dB (eine Dekade über f_g, −20 dB/Dekade).
+  - prompt: Wie groß ist die Phase bei f_g?
+    erwartung: φ = −arctan(f/f_g) = −arctan(1) = −45°.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Grenzfrequenz f_g ≈ 1 kHz
+      weight: 3.0
+      required: true
+      keywords:
+      - 1 kHz
+      - 1kHz
+      - 1000 Hz
+      - 1001 Hz
+      card_slugs:
+      - et-ss-rc-tiefpass
+    - id: p2
+      label: Betrag bei 10 kHz ≈ 0,1 bzw. −20 dB
+      weight: 3.0
+      required: true
+      keywords:
+      - -20 dB
+      - −20 dB
+      - 20 dB
+      - 0,0995
+      - 0,1
+      card_slugs:
+      - et-ss-bode
+    - id: p3
+      label: Phase bei f_g = −45°
+      weight: 2.0
+      required: false
+      keywords:
+      - 45°
+      - 45 Grad
+      - '-45'
+      - −45
+      card_slugs:
+      - et-ss-rc-tiefpass

@@ -1,0 +1,201 @@
+topic:
+  slug: mb-kw-schraubenverbindung
+  area: mb-konstruktion-werkstoffe
+  title: Schraubenverbindungen und Maschinenelemente
+  relevance: 4
+  stand: 2026-10
+  quellen:
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Fachlicher Entwurf nach Standardlehrbuechern; Zahlenwerte der Aufgaben sind nachgerechnet,
+      der Text ist redaktionell noch nicht freigegeben (docs/34).
+cards:
+- slug: mb-kw-festigkeitsklasse
+  type: definition
+  front: Festigkeitsklassen von Schrauben
+  back: 'Kennzeichnung nach ISO 898-1 mit zwei Zahlen, z. B. 8.8: Die erste Zahl mal 100 ergibt die Mindestzugfestigkeit
+    R_m in N/mm² (800), das Produkt beider Zahlen mal 10 die Mindeststreckgrenze bzw. R_p0,2 (8·8·10 =
+    640 N/mm²). Übliche Klassen: 4.6, 5.6, 8.8, 10.9, 12.9.'
+  norms:
+  - DIN EN ISO 898-1
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-kw-spannungsquerschnitt
+  type: definition
+  front: Spannungsquerschnitt A_S
+  back: 'Rechnerischer Querschnitt des Gewindes, mit dem die Zugspannung in der Schraube berechnet wird;
+    er liegt zwischen Kern- und Flankendurchmesser. Richtwerte (Regelgewinde): M6 20,1 mm², M8 36,6 mm²,
+    M10 58,0 mm², M12 84,3 mm², M16 157 mm², M20 245 mm².'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-kw-vorspannkraft
+  type: formel
+  front: Montagevorspannkraft
+  back: F_M = σ_M · A_S mit σ_M = ν · R_p0,2 (Ausnutzungsgrad ν ≈ 0,9 bei kontrolliertem Anziehen nach
+    VDI 2230). Durch die Vorspannkraft werden die Teile zusammengepresst; die zulässige Betriebskraft
+    ergibt sich aus Vorspannkraft, Setzkraftverlust und Kraftverhältnis.
+  norms:
+  - VDI 2230 Blatt 1
+  einheiten:
+  - F_M in N
+  - σ_M in N/mm²
+  - A_S in mm²
+  - ν in 1
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-kw-anziehmoment
+  type: formel
+  front: Anziehdrehmoment (Näherung)
+  back: 'M_A ≈ K · F_M · d mit dem Reibungsbeiwert K ≈ 0,2 für leicht geölte Stahlschrauben (genauer:
+    M_A = F_M·(0,16·P + 0,58·d₂·µ_G + µ_K·D_Km/2)). Rund 90 % des Moments gehen in Gewinde- und Kopfreibung,
+    nur etwa 10 % erzeugen die Vorspannung - daher die große Streuung beim Anziehen mit Drehmomentschlüssel.'
+  einheiten:
+  - M_A in N·m
+  - F_M in N
+  - d in m
+  - K in 1
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-kw-reibschluss
+  type: formel
+  front: Querkraftübertragung durch Reibschluss
+  back: 'F_Q,max = µ · F_V · n (n: Zahl der Trennfugen, µ ≈ 0,1 bis 0,2 für trockene Stahlflächen). Eine
+    Schraube in der Durchgangsbohrung darf nicht auf Abscherung belastet werden; die Querkraft muss über
+    die Reibung in der Trennfuge gehen, sonst Passschraube oder Scherhülse.'
+  einheiten:
+  - F_Q in N
+  - F_V in N
+  - µ in 1
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-kw-schraubenarten
+  type: definition
+  front: Schraubenverbindungsarten
+  back: 'Durchsteckschraube: Schraube durch beide Teile, Mutter auf der Gegenseite. Einschraubverbindung:
+    Gewinde direkt im Bauteil (Einschraubtiefe nach Werkstoff: Stahl ≈ 1·d, Grauguss ≈ 1,25·d, Aluminium
+    ≈ 2·d). Stiftschraube: beidseitig Gewinde, für häufig gelöste Verbindungen in weichen Werkstoffen.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-kw-passung
+  type: definition
+  front: ISO-Passungssystem
+  back: 'Toleranzfeldlage (Buchstabe) und Toleranzgrad (Zahl) nach DIN EN ISO 286; Großbuchstabe Bohrung,
+    Kleinbuchstabe Welle. System Einheitsbohrung (H7 mit Welle variabel) ist üblich: H7/g6 Spielpassung
+    (Gleitlager), H7/k6 Übergangspassung (Zahnräder), H7/s6 Presspassung.'
+  norms:
+  - DIN EN ISO 286-1
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-kw-passfeder
+  type: formel
+  front: Passfederverbindung - Flächenpressung
+  back: p = 2 · T / (d · h' · l_tr) mit tragender Höhe h' ≈ 0,45·h (Wellennut- und Nabennutanteil) und
+    tragender Länge l_tr (bei Rundstirnform l − b). Nachweis p ≤ p_zul des weicheren Werkstoffs (Stahl
+    ≈ 100 bis 150 N/mm², Grauguss ≈ 50 bis 80 N/mm²).
+  norms:
+  - DIN 6885-1
+  einheiten:
+  - p in N/mm²
+  - T in N·mm
+  - d in mm
+  - l_tr in mm
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: mb-kw-schema-schraubenverbindung
+  title: 'Lösungsschema: Schraubenverbindung auslegen'
+  norms:
+  - VDI 2230 Blatt 1
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: '1. Belastung klären: axiale Betriebskraft, Querkraft, statisch oder dynamisch'
+  - label: 2. Schraubengröße und Festigkeitsklasse vorwählen (A_S, R_p0,2)
+  - label: 3. Montagevorspannkraft F_M = ν · R_p0,2 · A_S (ν ≈ 0,9 bei Drehmomentschlüssel)
+  - label: '4. Querkraft: Reibschluss prüfen, F_Q ≤ µ · F_V / S_erf'
+    hinweis: Setzverluste von der Vorspannkraft abziehen, bevor der Reibschluss geprüft wird.
+  - label: '5. Axialkraft: Kraftverhältnis und Restklemmkraft prüfen (VDI 2230)'
+  - label: 6. Anziehdrehmoment M_A ≈ 0,2 · F_M · d festlegen
+  - label: '7. Bei Nichterfüllung: größere Schraube, höhere Klasse, mehr Schrauben oder Passschraube'
+faelle:
+- slug: mb-kw-aufgabe-m10-reibschluss
+  title: 'M10-Schraube: Vorspannkraft, Anziehmoment und Querkraft'
+  difficulty: 2
+  minutes: 25
+  quellen:
+  - Eigene Aufgabe der Redaktion
+  facts: Eine Durchsteckschraube M10 der Festigkeitsklasse 8.8 (A_S = 58 mm²) wird mit einem Drehmomentschlüssel
+    auf 90 % ihrer 0,2-%-Dehngrenze vorgespannt (Reibungsbeiwert für das Anziehmoment K = 0,2). Die Verbindung
+    mit einer Trennfuge (µ = 0,15) soll eine Querkraft von F_Q = 5 kN mit der Sicherheit S = 1,5 reibschlüssig
+    übertragen.
+  question: Bestimme Montagespannung, Montagevorspannkraft und Anziehmoment. Reicht der Reibschluss aus?
+  steps:
+  - prompt: Bestimme R_p0,2 der Festigkeitsklasse 8.8 und die Montagespannung.
+    erwartung: R_p0,2 = 8 · 8 · 10 = 640 N/mm²; σ_M = 0,9 · 640 = 576 N/mm².
+  - prompt: Berechne die Montagevorspannkraft.
+    erwartung: F_M = σ_M · A_S = 576 N/mm² · 58 mm² ≈ 33 400 N = 33,4 kN.
+  - prompt: Berechne das Anziehmoment.
+    erwartung: M_A ≈ K · F_M · d = 0,2 · 33 400 N · 0,010 m ≈ 67 N·m.
+  - prompt: Prüfe den Reibschluss.
+    erwartung: 'Übertragbare Querkraft F_R = µ · F_M = 0,15 · 33,4 kN ≈ 5,0 kN. Erforderlich: S · F_Q
+      = 1,5 · 5 kN = 7,5 kN. 5,0 kN < 7,5 kN - der Reibschluss reicht nicht aus (S_vorh ≈ 1,0).'
+  - prompt: Welche Abhilfe schlägst du vor?
+    erwartung: 'Größere Schraube (M12, A_S = 84,3 mm²: F_M ≈ 48,6 kN, F_R ≈ 7,3 kN - knapp), höhere Festigkeitsklasse
+      10.9, zwei Schrauben oder eine Passschraube; Setzverluste zusätzlich berücksichtigen.'
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Montagespannung 576 N/mm² (0,9 · 640)
+      weight: 2.0
+      required: true
+      keywords:
+      - '576'
+      - '640'
+      card_slugs:
+      - mb-kw-festigkeitsklasse
+      - mb-kw-vorspannkraft
+    - id: p2
+      label: Vorspannkraft ≈ 33,4 kN
+      weight: 3.0
+      required: true
+      keywords:
+      - 33,4
+      - 33 kN
+      - '33400'
+      - 33 400
+      card_slugs:
+      - mb-kw-vorspannkraft
+    - id: p3
+      label: Anziehmoment ≈ 67 N·m
+      weight: 2.0
+      required: false
+      keywords:
+      - '67'
+      - 66,8
+      - 66,8 Nm
+      card_slugs:
+      - mb-kw-anziehmoment
+    - id: p4
+      label: Reibschluss nicht ausreichend (≈ 5 kN übertragbar, 7,5 kN erforderlich)
+      weight: 3.0
+      required: true
+      keywords:
+      - nicht ausreichend
+      - nicht aus
+      - reicht nicht
+      - 7,5 kN
+      - unzureichend
+      card_slugs:
+      - mb-kw-reibschluss
+    - id: p5
+      label: Abhilfe genannt (M12, 10.9, mehr Schrauben, Passschraube)
+      weight: 1.0
+      required: false
+      keywords:
+      - M12
+      - '10.9'
+      - zwei Schrauben
+      - Passschraube
+      - mehr Schrauben

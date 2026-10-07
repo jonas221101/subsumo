@@ -1,0 +1,26 @@
+kurs:
+  slug: et-signale-systeme
+  title: Signale und Systeme
+  area: et-signale-systeme
+  semester_default: 4
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - Akkreditierte Modulhandbuecher deutscher Bachelorstudiengaenge (Struktur, kanonischer Studienverlauf)
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+  beschreibung: 'LTI-Systeme im Zeit- und Frequenzbereich: Faltung, Laplace-Transformation, Uebertragungsfunktion,
+    Bode-Diagramm.'
+  lernziele:
+  - Systeme ueber Impulsantwort und Uebertragungsfunktion beschreiben
+  - Frequenzgaenge berechnen und als Bode-Diagramm skizzieren
+  - Stabilitaet ueber die Pollage beurteilen
+  klausurformat:
+    typ: Modulklausur
+    minuten: 120
+  topic_slugs:
+  - et-ss-lti-faltung-uebertragung
+  landesrecht_kategorien: []
+  fehlende_themen: []

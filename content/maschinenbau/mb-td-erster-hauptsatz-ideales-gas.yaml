@@ -1,0 +1,175 @@
+topic:
+  slug: mb-td-erster-hauptsatz-ideales-gas
+  area: mb-thermodynamik
+  title: Erster Hauptsatz und ideales Gas
+  relevance: 5
+  stand: 2026-10
+  quellen:
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Fachlicher Entwurf nach Standardlehrbuechern; Zahlenwerte der Aufgaben sind nachgerechnet,
+      der Text ist redaktionell noch nicht freigegeben (docs/34).
+cards:
+- slug: mb-td-system
+  type: definition
+  front: Thermodynamische Systeme
+  back: 'Offenes System: Stoff- und Energieaustausch über die Systemgrenze (Turbine, Düse). Geschlossenes
+    System: nur Energieaustausch, Masse konstant (Zylinder mit Kolben). Abgeschlossenes System: weder
+    Stoff- noch Energieaustausch. Die Wahl der Systemgrenze entscheidet, welche Form des ersten Hauptsatzes
+    gilt.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-td-erster-hauptsatz
+  type: formel
+  front: Erster Hauptsatz für geschlossene Systeme
+  back: 'ΔU = Q₁₂ + W₁₂ (Vorzeichen: zugeführte Wärme und zugeführte Arbeit positiv). Die innere Energie
+    ist eine Zustandsgröße, Wärme und Arbeit sind Prozessgrößen. Für offene Systeme im stationären Fließprozess:
+    Q + P_t = ṁ · (Δh + Δ(c²/2) + g·Δz).'
+  einheiten:
+  - U in J
+  - Q in J
+  - W in J
+  - h in J/kg
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-td-ideales-gas
+  type: formel
+  front: Thermische Zustandsgleichung des idealen Gases
+  back: 'p · V = m · R_s · T = n · R · T. R_s ist die spezifische Gaskonstante (Luft: 287 J/(kg·K)), R
+    = 8,314 J/(mol·K) die universelle Gaskonstante. Temperatur immer in Kelvin einsetzen.'
+  einheiten:
+  - p in Pa
+  - V in m³
+  - m in kg
+  - T in K
+  - R_s in J/(kg·K)
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-td-innere-energie
+  type: formel
+  front: Innere Energie und Enthalpie des idealen Gases
+  back: 'ΔU = m · c_v · ΔT und ΔH = m · c_p · ΔT - beim idealen Gas hängen U und H nur von der Temperatur
+    ab, unabhängig von der Art der Zustandsänderung. Luft: c_v ≈ 0,718 kJ/(kg·K), c_p ≈ 1,005 kJ/(kg·K).'
+  einheiten:
+  - U in J
+  - H in J
+  - c_v in J/(kg·K)
+  - c_p in J/(kg·K)
+  - T in K
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-td-cp-cv
+  type: formel
+  front: Zusammenhang von c_p, c_v, R_s und κ
+  back: c_p − c_v = R_s und κ = c_p / c_v (Isentropenexponent; Luft κ ≈ 1,4, einatomige Gase 1,67). Damit
+    c_v = R_s / (κ − 1) und c_p = κ · R_s / (κ − 1).
+  einheiten:
+  - c_p in J/(kg·K)
+  - c_v in J/(kg·K)
+  - R_s in J/(kg·K)
+  - κ in 1
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-td-zustandsaenderungen
+  type: definition
+  front: Einfache Zustandsänderungen
+  back: 'Isochor (V = const): keine Volumenarbeit, Q = ΔU. Isobar (p = const): W = −p·ΔV, Q = ΔH. Isotherm
+    (T = const): ΔU = 0, Q = −W. Isentrop (s = const, adiabat reversibel): Q = 0, W = ΔU. Polytrop: p·Vⁿ
+    = const als Verallgemeinerung.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-td-volumenarbeit
+  type: formel
+  front: Volumenänderungsarbeit
+  back: 'W₁₂ = −∫ p dV (von 1 nach 2). Isobar: W = −p · (V₂ − V₁). Isotherm (ideales Gas): W = −m · R_s
+    · T · ln(V₂/V₁) = m · R_s · T · ln(p₂/p₁). Isochor: W = 0. Kompression ist zugeführte Arbeit (positiv),
+    Expansion abgegebene Arbeit (negativ).'
+  einheiten:
+  - W in J
+  - p in Pa
+  - V in m³
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: mb-td-isentrope
+  type: formel
+  front: Isentrope Zustandsänderung
+  back: 'p · V^κ = const; T · V^(κ−1) = const; T₂/T₁ = (p₂/p₁)^((κ−1)/κ) = (V₁/V₂)^(κ−1). Arbeit: W₁₂
+    = m · c_v · (T₂ − T₁) = (p₂V₂ − p₁V₁)/(κ − 1).'
+  einheiten:
+  - p in Pa
+  - V in m³
+  - T in K
+  - κ in 1
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: mb-td-schema-zustandsaenderung
+  title: 'Lösungsschema: Zustandsänderung eines idealen Gases berechnen'
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: 1. System und Systemgrenze festlegen (geschlossen oder offen, welche Masse)
+  - label: '2. Zustand 1 vollständig bestimmen: p, V, T, m über p·V = m·R_s·T'
+    hinweis: Temperaturen in Kelvin, Drücke in Pa umrechnen.
+  - label: 3. Art der Zustandsänderung erkennen (isochor, isobar, isotherm, isentrop, polytrop)
+  - label: 4. Zustand 2 aus der Prozessgleichung berechnen
+  - label: 5. Volumenarbeit W₁₂ = −∫ p dV für die jeweilige Zustandsänderung
+  - label: '6. Wärme über den ersten Hauptsatz: Q₁₂ = ΔU − W₁₂ mit ΔU = m·c_v·ΔT'
+  - label: 7. Vorzeichen und Einheiten prüfen, Ergebnis im p-V- oder T-s-Diagramm einordnen
+faelle:
+- slug: mb-td-aufgabe-isochore-erwaermung
+  title: Isochore Erwärmung von Luft
+  difficulty: 1
+  minutes: 15
+  quellen:
+  - Eigene Aufgabe der Redaktion
+  facts: In einem starren Behälter befinden sich m = 2 kg Luft (ideales Gas, c_v = 0,718 kJ/(kg·K), R_s
+    = 0,287 kJ/(kg·K)) bei T₁ = 300 K und p₁ = 1,2 bar. Die Luft wird auf T₂ = 375 K erwärmt.
+  question: Berechne die zugeführte Wärme Q₁₂, die Volumenarbeit W₁₂ und den Enddruck p₂.
+  steps:
+  - prompt: Welche Zustandsänderung liegt vor und was folgt daraus für die Arbeit?
+    erwartung: 'Starrer Behälter: V = const, isochor. Volumenarbeit W₁₂ = −∫ p dV = 0.'
+  - prompt: Berechne die Änderung der inneren Energie.
+    erwartung: ΔU = m · c_v · (T₂ − T₁) = 2 kg · 0,718 kJ/(kg·K) · 75 K = 107,7 kJ.
+  - prompt: Wende den ersten Hauptsatz an.
+    erwartung: Q₁₂ = ΔU − W₁₂ = 107,7 kJ − 0 = 107,7 kJ (zugeführt).
+  - prompt: Bestimme den Enddruck.
+    erwartung: 'Isochor: p/T = const → p₂ = p₁ · T₂/T₁ = 1,2 bar · 375/300 = 1,5 bar.'
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Isochor erkannt, Volumenarbeit null
+      weight: 2.0
+      required: true
+      keywords:
+      - isochor
+      - W = 0
+      - keine Volumenarbeit
+      - Arbeit null
+      - 0 kJ
+      card_slugs:
+      - mb-td-zustandsaenderungen
+    - id: p2
+      label: ΔU = Q ≈ 107,7 kJ
+      weight: 3.0
+      required: true
+      keywords:
+      - 107,7
+      - 108 kJ
+      - 107,7 kJ
+      card_slugs:
+      - mb-td-erster-hauptsatz
+      - mb-td-innere-energie
+    - id: p3
+      label: Enddruck p₂ = 1,5 bar
+      weight: 3.0
+      required: true
+      keywords:
+      - 1,5 bar
+      - 1,5bar
+      - 150 kPa
+      - 150000 Pa
+      card_slugs:
+      - mb-td-ideales-gas

@@ -1,0 +1,26 @@
+kurs:
+  slug: mb-thermodynamik-1
+  title: Technische Thermodynamik 1
+  area: mb-thermodynamik
+  semester_default: 3
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - Akkreditierte Modulhandbuecher deutscher Bachelorstudiengaenge (Struktur, kanonischer Studienverlauf)
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+  beschreibung: Hauptsaetze, ideales Gas, Zustandsaenderungen, Kreisprozesse und Wirkungsgrade.
+  lernziele:
+  - Zustandsaenderungen idealer Gase vollstaendig berechnen
+  - Ersten und zweiten Hauptsatz auf Prozesse anwenden
+  - Kreisprozesse auswerten und mit Carnot vergleichen
+  klausurformat:
+    typ: Modulklausur
+    minuten: 120
+  topic_slugs:
+  - mb-td-erster-hauptsatz-ideales-gas
+  - mb-td-kreisprozesse-wirkungsgrad
+  landesrecht_kategorien: []
+  fehlende_themen: []

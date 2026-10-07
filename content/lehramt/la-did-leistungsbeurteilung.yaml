@@ -1,0 +1,201 @@
+topic:
+  slug: la-did-leistungsbeurteilung
+  area: la-didaktik
+  title: Leistungsbeurteilung und pädagogische Diagnostik
+  relevance: 4
+  stand: 2026-10
+  quellen:
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Fachlicher Entwurf nach Standardlehrbuechern; Zahlenwerte der Aufgaben sind nachgerechnet,
+      der Text ist redaktionell noch nicht freigegeben (docs/34).
+cards:
+- slug: la-did-guetekriterien
+  type: definition
+  front: Gütekriterien der Leistungsmessung
+  back: 'Objektivität: Ergebnis unabhängig von der beurteilenden Person (Durchführungs-, Auswertungs-,
+    Interpretationsobjektivität). Reliabilität: Zuverlässigkeit, Messgenauigkeit bei Wiederholung. Validität:
+    Die Aufgabe misst, was sie messen soll (z. B. Textverständnis, nicht Lesetempo). Objektivität ist
+    Voraussetzung für Reliabilität, diese für Validität.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-did-bezugsnormen
+  type: definition
+  front: Bezugsnormen der Leistungsbewertung
+  back: 'Soziale Bezugsnorm: Vergleich mit der Lerngruppe (Rangplatz). Individuelle Bezugsnorm: Vergleich
+    mit der eigenen früheren Leistung (Lernfortschritt, motivational günstig, Rheinberg). Kriteriale (sachliche)
+    Bezugsnorm: Vergleich mit einem vorab festgelegten Standard oder Erwartungshorizont - Grundlage von
+    Noten in Klassenarbeiten. Lehrkräfte sollten alle drei bewusst und transparent einsetzen.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-did-formativ-summativ
+  type: definition
+  front: Formative und summative Beurteilung
+  back: 'Summativ: abschließende Bewertung eines Lernabschnitts (Klassenarbeit, Zeugnisnote) - Assessment
+    of Learning. Formativ: lernbegleitende Rückmeldung, die den weiteren Lernprozess steuert (Lernstandsabfragen,
+    Peer-Feedback, Selbsteinschätzung) - Assessment for Learning. Formatives Assessment gehört zu den
+    wirksamsten Unterrichtsmerkmalen (Black und Wiliam, Hattie).'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-did-beurteilungsfehler
+  type: definition
+  front: Beurteilungsfehler
+  back: 'Halo-Effekt: ein Merkmal (Sympathie, Handschrift) überstrahlt die Gesamtbeurteilung. Tendenz
+    zur Mitte oder zur Milde/Strenge. Reihenfolgeeffekt: Kontrast zur vorher korrigierten Arbeit. Erwartungseffekt
+    (Pygmalion, Rosenthal und Jacobson): Lehrererwartung beeinflusst Leistung und Bewertung. Logischer
+    Fehler: vermutete Zusammenhänge zwischen Merkmalen. Gegenmittel: Erwartungshorizont vorab, anonymisierte
+    Korrektur, aufgabenweise statt arbeitsweise korrigieren.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-did-feedback-hattie
+  type: verfahren
+  front: Wirksames Feedback (Hattie und Timperley)
+  back: 'Drei Fragen: Feed up - Wohin gehe ich? (Ziel klar), Feed back - Wie komme ich voran? (Stand im
+    Verhältnis zum Ziel), Feed forward - Was ist der nächste Schritt? Vier Ebenen: Aufgabe, Prozess, Selbstregulation,
+    Person - Feedback auf der Personebene (''Du bist klug'') ist am wenigsten wirksam. Feedback muss konkret,
+    zeitnah, auf Kriterien bezogen und umsetzbar sein.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-did-erwartungshorizont
+  type: verfahren
+  front: Erwartungshorizont erstellen
+  back: 'Vor der Korrektur je Aufgabe festhalten: erwartete Lösung, Teilleistungen mit Punkten, Anforderungsbereich
+    (I Reproduktion, II Reorganisation/Transfer, III Reflexion/Problemlösung), Bewertung von Darstellung
+    und Sprache. Punktsumme vorab in Noten umrechnen (Schlüssel bekannt geben). Der Erwartungshorizont
+    sichert Objektivität und ermöglicht kriteriale Rückmeldung.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-did-notenstufen
+  type: norm
+  front: Notenstufen und ihre Definition
+  back: 'Die sechsstufige Notenskala ist durch KMK-Beschluss vom 3. Oktober 1968 definiert: sehr gut (1)
+    - Leistung entspricht den Anforderungen in besonderem Maße; gut (2) - entspricht voll; befriedigend
+    (3) - entspricht im Allgemeinen; ausreichend (4) - weist Mängel auf, entspricht aber noch im Ganzen;
+    mangelhaft (5) - entspricht nicht, notwendige Grundkenntnisse vorhanden; ungenügend (6) - entspricht
+    nicht, Grundkenntnisse lückenhaft. Die Schulgesetze und Verordnungen der Länder übernehmen diese Definitionen.'
+  norms:
+  - KMK-Beschluss vom 03.10.1968 (Notenstufen)
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-did-diagnostik
+  type: definition
+  front: Pädagogische Diagnostik
+  back: 'Systematisches Erfassen von Lernvoraussetzungen, Lernprozessen und Lernergebnissen zur Entscheidung
+    über Fördermaßnahmen. Statusdiagnostik (Ist-Stand, z. B. Lernstandserhebung) vs. Prozessdiagnostik
+    (Lernverlauf, Fehleranalyse). Methoden: Beobachtung, Lernstandstests, Fehleranalyse, Lerntagebuch,
+    diagnostisches Gespräch. Diagnose ohne Förderkonsequenz ist pädagogisch wertlos.'
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: la-did-schema-klassenarbeit-bewerten
+  title: 'Planungsraster: Klassenarbeit konzipieren und bewerten'
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: '1. Ziele und Kompetenzen festlegen, die geprüft werden (Validität: nur, was unterrichtet wurde)'
+  - label: 2. Aufgaben nach Anforderungsbereichen I bis III streuen, Operatoren verwenden
+  - label: 3. Erwartungshorizont mit Punkten je Teilleistung vor der Korrektur schreiben
+  - label: 4. Bewertungsschlüssel Punkte zu Noten festlegen und vorab bekannt geben (kriteriale Bezugsnorm)
+  - label: '5. Korrigieren: aufgabenweise, Namen abdecken, Beurteilungsfehler kontrollieren'
+  - label: '6. Rückmeldung geben: Feed back und Feed forward, nicht nur Note'
+    hinweis: Ein Kommentar mit nächstem Schritt wirkt mehr als die Note allein.
+  - label: '7. Auswerten: Verteilung prüfen, Aufgaben mit Auffälligkeiten überdenken, Förderkonsequenzen
+      ziehen'
+faelle:
+- slug: la-did-fall-aufsatzkorrektur
+  title: Aufsatzkorrektur ohne Erwartungshorizont
+  difficulty: 2
+  minutes: 35
+  quellen:
+  - Eigene Aufgabe der Redaktion
+  facts: 'Ein Lehrer korrigiert 26 Erörterungen einer 10. Klasse am Abend nach dem Sport. Er liest jede
+    Arbeit am Stück, vergibt ''nach Gesamteindruck'' eine Note und schreibt darunter ''Gut gemacht!''
+    oder ''Da fehlt noch viel''. Die Arbeit des engagierten Klassensprechers Ben bewertet er mit 2, obwohl
+    zwei Argumente nur behauptet werden; die inhaltlich ähnliche Arbeit der stillen Sara mit 3-. Am nächsten
+    Tag beschwert sich Sara: Sie wisse nicht, was an ihrer Arbeit schlechter sei.'
+  question: Beurteile das Vorgehen anhand der Gütekriterien und typischer Beurteilungsfehler und zeige,
+    wie Korrektur und Rückmeldung verbessert werden können.
+  steps:
+  - prompt: Welche Gütekriterien sind verletzt?
+    erwartung: Auswertungsobjektivität fehlt (Note nach Gesamteindruck ohne Kriterien), damit auch Reliabilität
+      (eine zweite Korrektur käme zu anderen Noten); die Bewertung ist für Sara nicht nachvollziehbar.
+  - prompt: Welche Beurteilungsfehler sind erkennbar?
+    erwartung: Halo-Effekt (Engagement des Klassensprechers überstrahlt die Argumentationsqualität), Erwartungseffekt,
+      ggf. Reihenfolge- und Ermüdungseffekt beim Korrigieren am Stück nach dem Sport.
+  - prompt: Was fehlt in der Rückmeldung?
+    erwartung: '''Gut gemacht'' und ''Da fehlt noch viel'' sind Feedback auf Personebene ohne Kriterienbezug;
+      es fehlen Feed back (Stand bezogen auf Kriterien) und Feed forward (nächster Schritt), zum Beispiel
+      ''Argument 2 und 3 belegen - Beispiel oder Quelle ergänzen''.'
+  - prompt: Wie sollte die Korrektur ablaufen?
+    erwartung: Erwartungshorizont vorab (Aufbau, Argumentqualität, Belege, Sprache, je mit Punkten und
+      Anforderungsbereichen), kriteriale Bezugsnorm mit bekanntem Notenschlüssel, Namen abdecken, kriterienweise
+      statt arbeitsweise korrigieren, Pausen einplanen.
+  - prompt: Wie gehst du mit Saras Beschwerde um?
+    erwartung: 'Transparenz herstellen: Bewertung an den Kriterien erläutern; sind die Arbeiten tatsächlich
+      gleichwertig, Note korrigieren. Für die Zukunft Kriterienraster mit der Klasse besprechen (Feed
+      up), eventuell Selbst- und Peer-Einschätzung vor der Abgabe.'
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Objektivität (und Reliabilität) als verletzt benannt
+      weight: 3.0
+      required: true
+      keywords:
+      - Objektivität
+      - Objektivitaet
+      - objektiv
+      - Reliabilität
+      - Reliabilitaet
+      card_slugs:
+      - la-did-guetekriterien
+    - id: p2
+      label: Halo-Effekt oder Erwartungseffekt erkannt
+      weight: 3.0
+      required: true
+      keywords:
+      - Halo
+      - Erwartungseffekt
+      - Pygmalion
+      - überstrahlt
+      - ueberstrahlt
+      card_slugs:
+      - la-did-beurteilungsfehler
+    - id: p3
+      label: Erwartungshorizont mit Kriterien vor der Korrektur gefordert
+      weight: 3.0
+      required: true
+      keywords:
+      - Erwartungshorizont
+      - Kriterienraster
+      - Kriterien
+      - Bewertungsraster
+      card_slugs:
+      - la-did-erwartungshorizont
+    - id: p4
+      label: 'Feedback-Qualität: Feed forward / nächster Schritt statt Personebene'
+      weight: 2.0
+      required: false
+      keywords:
+      - Feed forward
+      - nächster Schritt
+      - naechster Schritt
+      - Personebene
+      - Hattie
+      - konkret
+      card_slugs:
+      - la-did-feedback-hattie
+    - id: p5
+      label: Kriteriale Bezugsnorm und Transparenz gegenüber der Klasse
+      weight: 1.0
+      required: false
+      keywords:
+      - kriterial
+      - Bezugsnorm
+      - Transparenz
+      - transparent
+      - Notenschlüssel
+      - Notenschluessel
+      card_slugs:
+      - la-did-bezugsnormen

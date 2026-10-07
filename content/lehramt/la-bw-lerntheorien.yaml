@@ -1,0 +1,205 @@
+topic:
+  slug: la-bw-lerntheorien
+  area: la-bildungswissenschaften
+  title: 'Lerntheorien: Behaviorismus, Kognitivismus, Konstruktivismus'
+  relevance: 5
+  stand: 2026-10
+  quellen:
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Fachlicher Entwurf nach Standardlehrbuechern; Zahlenwerte der Aufgaben sind nachgerechnet,
+      der Text ist redaktionell noch nicht freigegeben (docs/34).
+cards:
+- slug: la-bw-klassische-konditionierung
+  type: definition
+  front: Klassische Konditionierung (Pawlow)
+  back: 'Ein neutraler Reiz wird durch wiederholte Kopplung mit einem unbedingten Reiz zum bedingten Reiz,
+    der die (nun bedingte) Reaktion auslöst. Schulisch relevant für emotionale Reaktionen: Prüfungsangst
+    entsteht, wenn Prüfungssituationen wiederholt mit Misserfolg und Beschämung gekoppelt werden; Löschung
+    durch neue, angstfreie Erfahrungen.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-bw-operante-konditionierung
+  type: definition
+  front: Operante Konditionierung (Skinner)
+  back: 'Verhalten wird durch seine Konsequenzen gesteuert: Positive Verstärkung (angenehmer Reiz folgt),
+    negative Verstärkung (unangenehmer Reiz entfällt) erhöhen die Auftretenswahrscheinlichkeit; Bestrafung
+    senkt sie. Verstärkerpläne: kontinuierliche Verstärkung für den Aufbau, intermittierende für die Stabilisierung.
+    Lob, Token-Systeme und Verhaltensverträge nutzen dies.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-bw-modelllernen
+  type: definition
+  front: Lernen am Modell (Bandura)
+  back: 'Verhalten wird durch Beobachtung eines Modells erworben. Vier Teilprozesse: Aufmerksamkeit, Behalten
+    (Gedächtnis), motorische Reproduktion, Motivation (stellvertretende Verstärkung). Lehrkräfte sind
+    Modelle für Umgangsformen, Fehlerkultur und Fachsprache - auch unbeabsichtigt.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-bw-kognitivismus
+  type: definition
+  front: Kognitivismus und Cognitive-Load-Theorie
+  back: 'Lernen als aktive Informationsverarbeitung: Aufnahme ins sensorische Register, Verarbeitung im
+    begrenzten Arbeitsgedächtnis, Speicherung in Schemata im Langzeitgedächtnis. Cognitive-Load-Theorie
+    (Sweller): intrinsische, extrinsische und lernbezogene Belastung; Unterricht soll extrinsische Belastung
+    (unnötige Ablenkung, geteilte Aufmerksamkeit) senken und Vorwissen aktivieren.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-bw-konstruktivismus
+  type: definition
+  front: 'Konstruktivismus: Piaget und Wygotski'
+  back: 'Wissen wird vom Lernenden aktiv konstruiert, nicht übertragen. Piaget: Assimilation (neue Erfahrung
+    in bestehende Schemata einordnen) und Akkommodation (Schemata anpassen) im Wechsel mit Äquilibration.
+    Wygotski: Zone der nächsten Entwicklung - was mit Unterstützung gelingt, wird morgen allein möglich;
+    daraus Scaffolding und kooperatives Lernen.'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-bw-selbstwirksamkeit-attribution
+  type: definition
+  front: Selbstwirksamkeit und Attribution
+  back: 'Selbstwirksamkeitserwartung (Bandura): Überzeugung, eine Aufgabe aus eigener Kraft bewältigen
+    zu können; Quellen sind eigene Erfolge, Modelle, Zuspruch, Erregungsdeutung. Attribution (Weiner):
+    Erfolg und Misserfolg werden auf Ursachen zurückgeführt (internal/external, stabil/variabel, kontrollierbar).
+    Misserfolg stabil-internal auf Unfähigkeit zu attribuieren führt zu erlernter Hilflosigkeit (Seligman).'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-bw-selbstbestimmungstheorie
+  type: definition
+  front: Selbstbestimmungstheorie der Motivation (Deci und Ryan)
+  back: 'Intrinsische Motivation entsteht, wenn drei Grundbedürfnisse erfüllt sind: Kompetenzerleben,
+    Autonomie und soziale Eingebundenheit. Extrinsische Motivation kann durch Internalisierung in selbstbestimmte
+    Formen übergehen (identifizierte, integrierte Regulation). Kontrollierende Belohnungen können intrinsische
+    Motivation untergraben (Korrumpierungseffekt).'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: la-bw-instruktion-konstruktion
+  type: streitstand
+  front: Instruktion oder Konstruktion?
+  back: 'Position 1 (direkte Instruktion, z. B. Kirschner, Sweller, Clark): Novizen lernen am besten mit
+    klarer Anleitung, ausgearbeiteten Beispielen und Rückmeldung; minimal geführtes Entdecken überlastet
+    das Arbeitsgedächtnis. Position 2 (konstruktivistisch, problembasiert): Eigenaktive Konstruktion in
+    authentischen Problemen fördert Transfer und Motivation. Integrierende Sicht: Expertise-Umkehr-Effekt
+    - mit wachsendem Vorwissen von Instruktion zu offenen Formaten übergehen; Hattie belegt hohe Effekte
+    sowohl für direkte Instruktion als auch für Feedback und Metakognition.'
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: la-bw-schema-lerntheoretische-fallanalyse
+  title: 'Planungsraster: Fallvignette lerntheoretisch analysieren'
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: 1. Beobachtbares Verhalten und Situation präzise beschreiben (wer, was, wann, Konsequenzen)
+  - label: 2. Theoretische Einordnung
+    children:
+    - label: 'a) Behavioristisch: Welche Konsequenzen halten das Verhalten aufrecht?'
+    - label: 'b) Sozial-kognitiv: Modelle, Selbstwirksamkeit, Attributionen'
+    - label: 'c) Kognitiv/konstruktivistisch: Vorwissen, Belastung, Zone der nächsten Entwicklung'
+  - label: 3. Wirkmechanismus benennen und mit Belegen aus der Vignette stützen
+  - label: 4. Theoriegeleitete Intervention ableiten (konkrete Maßnahme je Erklärungsansatz)
+  - label: 5. Grenzen und Alternativerklärungen prüfen
+    hinweis: Eine Vignette trägt selten nur eine Erklärung - Konkurrenz explizit machen.
+  - label: 6. Erfolgskriterium und Evaluation festlegen
+faelle:
+- slug: la-bw-fall-mathe-verweigerung
+  title: Lea verweigert Mathematik
+  difficulty: 2
+  minutes: 40
+  quellen:
+  - Eigene Aufgabe der Redaktion
+  facts: 'Lea (7. Klasse) hat in den letzten vier Mathematikarbeiten jeweils eine Fünf geschrieben. Im
+    Unterricht meldet sie sich nicht mehr, bei Übungsphasen legt sie den Stift weg und sagt: ''Ich kann
+    das sowieso nicht, ich bin einfach schlecht in Mathe.'' Die Lehrkraft lobt regelmäßig die schnellsten
+    richtigen Lösungen vor der Klasse und hängt die Notenliste der Arbeiten aus. Leas Freundin Mia erklärt
+    ihr in der Pause manchmal die Aufgaben; dann löst Lea sie richtig.'
+  question: Analysiere Leas Verhalten mit Hilfe von zwei lerntheoretischen Ansätzen und leite daraus jeweils
+    eine konkrete Maßnahme für die Lehrkraft ab.
+  steps:
+  - prompt: Beschreibe das Verhalten und die aufrechterhaltenden Bedingungen.
+    erwartung: Lea zeigt Vermeidungsverhalten (kein Melden, Stift weglegen) nach einer Serie von Misserfolgen;
+      die Lehrkraft verstärkt öffentlich nur Schnelligkeit und Richtigkeit und macht die soziale Bezugsnorm
+      über die Notenliste sichtbar.
+  - prompt: Ordne die Aussage 'Ich bin einfach schlecht in Mathe' attributionstheoretisch ein.
+    erwartung: Internale, stabile, unkontrollierbare Attribution des Misserfolgs auf mangelnde Fähigkeit
+      - der Attributionsstil der erlernten Hilflosigkeit (Seligman); die Selbstwirksamkeitserwartung ist
+      nach Bandura durch wiederholte Misserfolgserfahrungen gesunken.
+  - prompt: Welche Rolle spielt die Pausensituation mit Mia?
+    erwartung: 'Mit Unterstützung gelingt die Lösung: Die Aufgaben liegen in Leas Zone der nächsten Entwicklung
+      (Wygotski). Mia leistet Scaffolding und ist zugleich ein Modell (Bandura), dem Lea sich ähnlich
+      fühlt.'
+  - prompt: Erkläre behavioristisch, warum das Lob der Lehrkraft Lea nicht erreicht.
+    erwartung: Verstärkt wird nur das Verhalten der Schnellsten; Lea erhält nie Verstärkung, ihr Vermeiden
+      wird negativ verstärkt, weil der unangenehme Vergleich entfällt (operante Konditionierung).
+  - prompt: Leite zwei konkrete Maßnahmen ab.
+    erwartung: '1. Individuelle Bezugsnorm: Lernfortschritte gegenüber Leas eigenem Vorstand rückmelden,
+      Notenliste nicht mehr aushängen, Teilerfolge verstärken (Reattributionstraining: Misserfolg auf
+      variable, kontrollierbare Ursachen wie Anstrengung und Strategie zurückführen). 2. Gestufte Hilfen
+      und Partnerarbeit mit Mia im Unterricht institutionalisieren (Scaffolding in der Zone der nächsten
+      Entwicklung), Aufgaben so wählen, dass Kompetenzerleben möglich ist.'
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Erlernte Hilflosigkeit bzw. ungünstige Attribution erkannt
+      weight: 3.0
+      required: true
+      keywords:
+      - Hilflosigkeit
+      - Attribution
+      - attribuiert
+      - stabil
+      card_slugs:
+      - la-bw-selbstwirksamkeit-attribution
+    - id: p2
+      label: Selbstwirksamkeitserwartung angesprochen
+      weight: 2.0
+      required: false
+      keywords:
+      - Selbstwirksamkeit
+      card_slugs:
+      - la-bw-selbstwirksamkeit-attribution
+    - id: p3
+      label: Zone der nächsten Entwicklung / Scaffolding über die Mia-Situation
+      weight: 2.0
+      required: false
+      keywords:
+      - Zone der nächsten Entwicklung
+      - Zone der naechsten Entwicklung
+      - Scaffolding
+      - Wygotski
+      - Vygotsk
+      card_slugs:
+      - la-bw-konstruktivismus
+    - id: p4
+      label: Verstärkungslogik des Lobs erklärt (operant)
+      weight: 2.0
+      required: false
+      keywords:
+      - Verstärkung
+      - Verstaerkung
+      - verstärkt
+      - operant
+      - Konsequenz
+      card_slugs:
+      - la-bw-operante-konditionierung
+    - id: p5
+      label: 'Maßnahme: individuelle Bezugsnorm oder Reattribution'
+      weight: 2.0
+      required: true
+      keywords:
+      - individuelle Bezugsnorm
+      - Bezugsnorm
+      - Reattribution
+      - Teilerfolg
+      - Lernfortschritt
+    - id: p6
+      label: 'Maßnahme: gestufte Hilfen oder Partnerarbeit'
+      weight: 1.0
+      required: false
+      keywords:
+      - gestufte Hilfen
+      - Partnerarbeit
+      - kooperativ
+      - Hilfestellung
+      - Tutor

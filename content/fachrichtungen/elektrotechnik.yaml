@@ -1,0 +1,58 @@
+fachrichtung:
+  slug: elektrotechnik
+  name: Elektrotechnik
+  kurzname: ET
+  abschluss: Bachelor / Master of Science
+  beschreibung: 'Grundlagenstoff des Bachelorstudiums Elektrotechnik und Informationstechnik: Netzwerkanalyse,
+    Elektronik, Signale und Systeme, Regelungstechnik.'
+  areas:
+  - slug: et-grundlagen
+    title: Grundlagen der Elektrotechnik
+    kurz: GET
+  - slug: et-elektronik
+    title: Elektronik und Schaltungstechnik
+    kurz: EL
+  - slug: et-signale-systeme
+    title: Signale, Systeme und Regelung
+    kurz: SSR
+  begriffe:
+    fall: Aufgabe
+    faelle: Aufgaben
+    gutachten: Lösungsweg
+    schema: Lösungsschema
+    schemata: Lösungsschemata
+    pruefpunkt: Lösungsschritt
+    examen: Abschlussprüfung
+    fachgebiet: Fachgebiet
+    fachgebiete: Fachgebiete
+    norm: Formel
+    training: Aufgaben-Training
+  kartentypen:
+    definition: Definition
+    formel: Formel
+    verfahren: Verfahren
+    schema_step: Lösungsschritt
+    norm: Gesetz/Norm
+  methodik:
+    gutachtenstil_analyse: false
+    norm_gate: false
+    einheiten_gate: true
+    bundesland_profile: false
+    landesrecht: false
+  pruefung:
+    name: Modulprüfungen und Bachelorprüfung
+    hinweis: Schriftliche Modulklausuren (meist 90-180 Minuten) nach der jeweiligen Prüfungsordnung der
+      Hochschule; keine landeseinheitliche Prüfung.
+    klausuren:
+      anzahl: 3
+      verteilung:
+        et-grundlagen: 1
+        et-elektronik: 1
+        et-signale-systeme: 1
+  quellen:
+  - Akkreditierte Modulhandbücher deutscher Elektrotechnik-Bachelorstudiengänge (Struktur)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung

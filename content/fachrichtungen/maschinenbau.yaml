@@ -1,0 +1,58 @@
+fachrichtung:
+  slug: maschinenbau
+  name: Maschinenbau
+  kurzname: MB
+  abschluss: Bachelor / Master of Science
+  beschreibung: 'Grundlagenstoff des Bachelorstudiums Maschinenbau: Technische Mechanik, Thermodynamik,
+    Werkstoffkunde und Maschinenelemente.'
+  areas:
+  - slug: mb-mechanik
+    title: Technische Mechanik
+    kurz: TM
+  - slug: mb-thermodynamik
+    title: Thermodynamik
+    kurz: TD
+  - slug: mb-konstruktion-werkstoffe
+    title: Konstruktion und Werkstoffe
+    kurz: KW
+  begriffe:
+    fall: Aufgabe
+    faelle: Aufgaben
+    gutachten: Lösungsweg
+    schema: Lösungsschema
+    schemata: Lösungsschemata
+    pruefpunkt: Lösungsschritt
+    examen: Abschlussprüfung
+    fachgebiet: Fachgebiet
+    fachgebiete: Fachgebiete
+    norm: Formel
+    training: Aufgaben-Training
+  kartentypen:
+    definition: Definition
+    formel: Formel
+    verfahren: Verfahren
+    schema_step: Lösungsschritt
+    norm: Norm/Richtlinie
+  methodik:
+    gutachtenstil_analyse: false
+    norm_gate: false
+    einheiten_gate: true
+    bundesland_profile: false
+    landesrecht: false
+  pruefung:
+    name: Modulprüfungen und Bachelorprüfung
+    hinweis: Schriftliche Modulklausuren nach der Prüfungsordnung der Hochschule; Technische Mechanik
+      und Thermodynamik sind die klassischen Hürden.
+    klausuren:
+      anzahl: 3
+      verteilung:
+        mb-mechanik: 1
+        mb-thermodynamik: 1
+        mb-konstruktion-werkstoffe: 1
+  quellen:
+  - Akkreditierte Modulhandbücher deutscher Maschinenbau-Bachelorstudiengänge (Struktur)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung

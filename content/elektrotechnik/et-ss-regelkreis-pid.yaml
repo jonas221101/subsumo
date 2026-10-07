@@ -1,0 +1,188 @@
+topic:
+  slug: et-ss-regelkreis-pid
+  area: et-signale-systeme
+  title: Regelkreis und PID-Regler
+  relevance: 5
+  stand: 2026-10
+  quellen:
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Fachlicher Entwurf nach Standardlehrbuechern; Zahlenwerte der Aufgaben sind nachgerechnet,
+      der Text ist redaktionell noch nicht freigegeben (docs/34).
+cards:
+- slug: et-ss-regelkreis
+  type: definition
+  front: 'Standardregelkreis: Größen und Glieder'
+  back: Führungsgröße w (Sollwert), Regelgröße y (Istwert), Regelabweichung e = w − y, Stellgröße u, Störgröße
+    z. Der Regler G_R bildet aus e die Stellgröße u, die Regelstrecke G_S reagiert darauf mit y; die Messung
+    schließt den Kreis (Rückführung).
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-ss-steuerung-regelung
+  type: definition
+  front: Steuerung vs. Regelung
+  back: 'Steuerung: offene Wirkungskette, die Ausgangsgröße wird nicht zurückgeführt - Störungen bleiben
+    unkorrigiert. Regelung: geschlossener Wirkungskreis mit Rückführung und Vergleich Soll/Ist - Störungen
+    werden ausgeregelt, der Kreis kann aber instabil werden (DIN IEC 60050-351).'
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-ss-p-regler
+  type: formel
+  front: P-Regler
+  back: u(t) = K_P · e(t). Schnell, einfach, aber bei Strecken ohne Integralanteil bleibt eine bleibende
+    Regelabweichung; größeres K_P verringert sie, verschlechtert aber Dämpfung und Stabilitätsreserve.
+  einheiten:
+  - K_P in 1
+  - e in V
+  - u in V
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-ss-pid
+  type: formel
+  front: PID-Regler (Zeitbereich und Übertragungsfunktion)
+  back: u(t) = K_P·e(t) + K_I·∫e(t)dt + K_D·de(t)/dt; G_R(s) = K_P·(1 + 1/(T_N·s) + T_V·s) mit Nachstellzeit
+    T_N = K_P/K_I und Vorhaltezeit T_V = K_D/K_P. I-Anteil beseitigt die bleibende Regelabweichung, D-Anteil
+    wirkt dämpfend und beschleunigt, verstärkt aber Messrauschen.
+  einheiten:
+  - K_P in 1
+  - K_I in 1/s
+  - K_D in s
+  - T_N in s
+  - T_V in s
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-ss-pt1
+  type: formel
+  front: PT1-Glied (Verzögerung erster Ordnung)
+  back: 'G(s) = K_S / (1 + T·s). Sprungantwort y(t) = K_S·(1 − e^(−t/T)); nach t = T sind 63 % des Endwerts
+    erreicht, nach 3T etwa 95 %. Typische Beispiele: RC-Glied, Temperaturfühler.'
+  einheiten:
+  - K_S in 1
+  - T in s
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-ss-fuehrungsuebertragungsfunktion
+  type: formel
+  front: Führungsübertragungsfunktion des geschlossenen Kreises
+  back: G_w(s) = Y(s)/W(s) = G_R(s)·G_S(s) / (1 + G_R(s)·G_S(s)) bei Einheitsrückführung. G₀ = G_R·G_S
+    heißt Kreisübertragungsfunktion; die Nullstellen von 1 + G₀(s) sind die Pole des geschlossenen Kreises
+    und bestimmen Stabilität und Dynamik.
+  einheiten:
+  - s in 1/s
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-ss-bleibende-regelabweichung
+  type: formel
+  front: Bleibende Regelabweichung bei P-Regler und PT1-Strecke
+  back: 'e_∞ = 1 / (1 + K_P·K_S) bei Sprung der Führungsgröße (Endwertsatz: e_∞ = lim s→0 s·E(s)). Der
+    Istwert erreicht nur K_P·K_S/(1 + K_P·K_S) des Sollwerts. Mit I-Anteil im Regler wird e_∞ = 0.'
+  einheiten:
+  - e_∞ in 1
+  - K_P in 1
+  - K_S in 1
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: et-ss-ziegler-nichols
+  type: verfahren
+  front: Reglereinstellung nach Ziegler-Nichols (Schwingversuch)
+  back: '1. Regler als reinen P-Regler betreiben, K_P erhöhen, bis der Kreis gerade dauerhaft schwingt:
+    kritische Verstärkung K_krit und Periodendauer T_krit notieren. 2. Einstellregeln: P: K_P = 0,5·K_krit;
+    PI: K_P = 0,45·K_krit, T_N = 0,85·T_krit; PID: K_P = 0,6·K_krit, T_N = 0,5·T_krit, T_V = 0,12·T_krit.
+    Liefert eine schnelle, aber wenig gedämpfte Einstellung.'
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: et-ss-schema-regelkreis
+  title: 'Lösungsschema: Regelkreis berechnen und auslegen'
+  quellen:
+  - Eigenformulierung Redaktion
+  steps:
+  - label: 1. Regelstrecke modellieren (G_S(s), Verstärkung und Zeitkonstanten)
+  - label: 2. Reglerstruktur wählen (P, PI, PID) und G_R(s) aufstellen
+  - label: 3. Kreisübertragungsfunktion G₀ = G_R·G_S und Führungsübertragungsfunktion G_w bilden
+  - label: 4. Stationäres Verhalten
+    children:
+    - label: 'a) Endwertsatz: y_∞ = lim s→0 s·W(s)·G_w(s)'
+    - label: b) Bleibende Regelabweichung e_∞ = w − y_∞
+  - label: '5. Stabilität: Pole des geschlossenen Kreises (Nullstellen von 1 + G₀)'
+  - label: '6. Dynamik: Zeitkonstante, Überschwingen, Ausregelzeit aus G_w ablesen'
+  - label: 7. Parameter anpassen (z. B. Ziegler-Nichols) und erneut prüfen
+faelle:
+- slug: et-ss-aufgabe-p-regler-pt1
+  title: P-Regler an einer PT1-Strecke
+  difficulty: 3
+  minutes: 25
+  quellen:
+  - Eigene Aufgabe der Redaktion
+  facts: Eine Regelstrecke verhält sich als PT1-Glied mit K_S = 3 und T = 4 s. Sie wird mit einem P-Regler
+    mit K_P = 2 bei Einheitsrückführung geregelt. Die Führungsgröße springt von 0 auf 1.
+  question: Bestimme die Führungsübertragungsfunktion, den stationären Endwert der Regelgröße, die bleibende
+    Regelabweichung und die Zeitkonstante des geschlossenen Kreises.
+  steps:
+  - prompt: Stelle die Kreisübertragungsfunktion auf.
+    erwartung: G₀(s) = K_P·K_S/(1 + T·s) = 6/(1 + 4s).
+  - prompt: Bilde die Führungsübertragungsfunktion.
+    erwartung: G_w(s) = G₀/(1 + G₀) = 6/(7 + 4s) = (6/7) / (1 + (4/7)·s).
+  - prompt: Welchen Endwert erreicht die Regelgröße?
+    erwartung: 'Endwertsatz: y_∞ = G_w(0) = 6/7 ≈ 0,857 - der Sollwert 1 wird nicht erreicht.'
+  - prompt: Wie groß ist die bleibende Regelabweichung?
+    erwartung: 'e_∞ = 1 − 6/7 = 1/7 ≈ 0,143, also 14,3 % (Kontrolle: 1/(1 + K_P·K_S) = 1/7).'
+  - prompt: Wie schnell reagiert der geschlossene Kreis?
+    erwartung: Zeitkonstante T_w = T/(1 + K_P·K_S) = 4 s/7 ≈ 0,57 s - der Kreis ist siebenmal schneller
+      als die Strecke allein. Ein I-Anteil würde e_∞ beseitigen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Führungsübertragungsfunktion 6/(7 + 4s)
+      weight: 2.0
+      required: false
+      keywords:
+      - 6/(7
+      - 7 + 4s
+      - 7+4s
+      - 4/7
+      card_slugs:
+      - et-ss-fuehrungsuebertragungsfunktion
+    - id: p2
+      label: Endwert y_∞ = 6/7 ≈ 0,857
+      weight: 2.0
+      required: true
+      keywords:
+      - 6/7
+      - 0,857
+      - 0,86
+      - 85,7
+    - id: p3
+      label: Bleibende Regelabweichung 1/7 ≈ 14,3 %
+      weight: 3.0
+      required: true
+      keywords:
+      - 1/7
+      - 14,3
+      - 0,143
+      - 0,14
+      card_slugs:
+      - et-ss-bleibende-regelabweichung
+    - id: p4
+      label: Zeitkonstante des Kreises ≈ 0,57 s
+      weight: 2.0
+      required: false
+      keywords:
+      - 0,57
+      - 0,571
+      - 4/7 s
+      card_slugs:
+      - et-ss-pt1
+    - id: p5
+      label: I-Anteil als Abhilfe gegen die bleibende Abweichung genannt
+      weight: 1.0
+      required: false
+      keywords:
+      - I-Anteil
+      - Integralanteil
+      - PI-Regler
+      - Integrator
+      card_slugs:
+      - et-ss-pid
