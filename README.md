@@ -23,6 +23,7 @@ ein Feature und eine messbare Metrik abgebildet. Die vier wichtigsten:
 | **Repetitorium kostet 2.000–4.000 €** | Verbindlicher Lernplan mit Load-Balancing bis zum Examenstermin | `backend/app/services/planner.py` |
 | **Jeder lernt denselben Stapel im selben Rhythmus — egal ob 2. Semester oder Monat 9 der Examensvorbereitung** | Lernprofil, das Verhalten ändert: Fokus/Pause/Schwerpunkte sortieren Stapel und Plan, das Sicherheitsniveau verschiebt die FSRS-Intervalle, Ruhetage und Klausurtag formen die Woche, Persona und Schwachstellen bestimmen den nächsten Schritt ([`docs/33`](docs/33-individualisierung.md)) | `backend/app/services/lernprofil.py` |
 | **Das Examen ist Landesrecht — Klausurzahl, Freiversuch und der Landesrechtsanteil unterscheiden sich je Bundesland** | Examen-Reiter: Bundesland- und Universitätsprofil, Landesrecht-Decks, Kurs-Decks je Studienverlauf, Examensreife mit offengelegter Formel ([`docs/32`](docs/32-examensvorbereitung.md)) | `backend/app/services/examen.py` |
+| **Dieselbe Lernmechanik fehlt anderen Studiengängen — Elektrotechnik, Maschinenbau und Lehramt lernen mit Skripten und Altklausuren** | Fachrichtungen als Datenprofil statt Code-Fork: eigene Fachgebiete, Begriffe, Formel- und Verfahrenskarten, Aufgaben mit Lösungsweg, Fach-Gate in der KI-Redaktion, Build-Flavor `SUBSUMO_FACH` ([`docs/34`](docs/34-fachrichtungen.md)) | `content/fachrichtungen/`, `backend/app/services/redaktion/fach_gate.py` |
 
 ---
 

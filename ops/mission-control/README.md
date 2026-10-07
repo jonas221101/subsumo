@@ -38,5 +38,24 @@ Adapter nur für den jeweiligen Agenten hinterlegen.
    fehlgeschlagenen Pflichtcheck protokollieren.
 5. Erst nach drei nachweisbar geprüften Merges den Pilot als bestanden markieren.
 
+## Redaktionsteams je Fachrichtung
+
+Die KI-Redaktion ist als Firmenagenten-Baum angelegt (siehe
+`ops/agents/content/`): ein Content-Koordinator (Jura) mit drei
+Rechtsgebiets-Redakteuren und einem Prüfagenten, darunter je ein Team pro
+weiterer Fachrichtung (`docs/34-fachrichtungen.md`):
+
+| Fachrichtung | Koordinator | Redakteure | Prüfagent |
+|---|---|---|---|
+| Jura | `content-koordinator.md` | `content-<gebiet>-redakteur.md` | `content-pruefagent.md` (Normzitat-Gate) |
+| Elektrotechnik | `elektrotechnik/koordinator.md` | `elektrotechnik/redakteur-et-*.md` | `elektrotechnik/pruefagent.md` (Fach-Gate) |
+| Maschinenbau | `maschinenbau/koordinator.md` | `maschinenbau/redakteur-mb-*.md` | `maschinenbau/pruefagent.md` (Fach-Gate) |
+| Lehramt | `lehramt/koordinator.md` | `lehramt/redakteur-la-*.md` | `lehramt/pruefagent.md` (Fach-Gate) |
+
+Beim Anlegen im Board: zuerst den Fachrichtungs-Koordinator (reportsTo
+Content-Koordinator), dann seine Redakteure und den Prüfagenten (reportsTo
+Fachrichtungs-Koordinator). Jeder Redakteur bekommt genau ein `--area` aus
+`content/fachrichtungen/<slug>.yaml` als Zuständigkeit.
+
 `start-paperclip-pilot.ps1 -Reset` löscht ausschließlich den Pilotzustand nach
 einer interaktiven Eingabe von `yes`.

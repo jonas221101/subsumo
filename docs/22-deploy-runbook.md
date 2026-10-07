@@ -103,6 +103,22 @@ Spalten). Praktisch bedeutet das:
   CREATE INDEX ix_topics_bundesland ON topics (bundesland);
   ```
 
+  Fachrichtungen (docs/34-fachrichtungen.md) ergaenzen drei Spalten und
+  eine Tabelle; `bundeslaender` bekommt einen neuen Primaerschluessel und
+  wird deshalb neu angelegt (der Inhalt kommt beim Start wieder aus
+  `content/`, es haengen keine Nutzerdaten daran):
+
+  ```sql
+  ALTER TABLE users  ADD COLUMN fachrichtung VARCHAR(40) NOT NULL DEFAULT 'jura';
+  ALTER TABLE topics ADD COLUMN fachrichtung VARCHAR(40) NOT NULL DEFAULT 'jura';
+  ALTER TABLE kurse  ADD COLUMN fachrichtung VARCHAR(40) NOT NULL DEFAULT 'jura';
+  CREATE INDEX ix_users_fachrichtung  ON users (fachrichtung);
+  CREATE INDEX ix_topics_fachrichtung ON topics (fachrichtung);
+  CREATE INDEX ix_kurse_fachrichtung  ON kurse (fachrichtung);
+  DROP TABLE bundeslaender;   -- wird von create_all mit key/code/fachrichtung neu angelegt
+  -- fachrichtungen legt create_all beim naechsten Start selbst an
+  ```
+
 ### 2.3 Web-Build
 
 Zugeliefert von SUB-90 (Frontend-Developer, vollstaendig lokal verifiziert,

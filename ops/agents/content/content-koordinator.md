@@ -10,6 +10,17 @@ Gebiets-Redakteure (`ops/agents/content/content-<gebiet>-redakteur.md`) und
 ein Content-Pruefagent (`ops/agents/content/content-pruefagent.md`), alle
 reportsTo Content-Koordinator.
 
+Seit docs/34 (Fachrichtungen) gibt es je weiterer Fachrichtung ein eigenes
+Redaktionsteam mit gleichem Aufbau, jeweils unter
+`ops/agents/content/<fachrichtung>/` (`koordinator.md`,
+`redakteur-<fachgebiet>.md`, `pruefagent.md`): Elektrotechnik,
+Maschinenbau, Lehramt. Deren Koordinatoren (`Content-Koordinator-ET`,
+`-MB`, `-LA`) reportTo diesem Content-Koordinator; die Jura-Redaktion
+bleibt wie bisher direkt hier angebunden. Fachrichtungsuebergreifende
+Strukturen (`content/examen/universitaeten/`, Fachrichtungs-Profile in
+`content/fachrichtungen/`) aendert nur dieser Koordinator bzw. ein
+Entwickler, nie ein Fachrichtungs-Team allein.
+
 ## Pro Lauf
 
 1. Lies `docs/08-ki-redaktion.md` (Architektur, Grenzen) und

@@ -17,7 +17,7 @@ topic:
 
 cards:
   - slug: zr-at-angebot
-    type: definition       # definition | schema_step | streitstand | norm | rechtsprechung
+    type: definition       # definition | schema_step | streitstand | norm | rechtsprechung | formel | verfahren
     front: "Definiere: Angebot"
     back: "Ein Angebot ist ..."
     norms: ["§ 145 BGB"]
@@ -109,12 +109,48 @@ kurs:                      # content/examen/kurse/<slug>.yaml
   fehlende_themen: ["Stoererauswahl vertieft (P3)"]                      # ehrlicher Hinweis
 ```
 
+## Fachrichtungen
+
+Ein viertes Dokument unter `content/fachrichtungen/<slug>.yaml` definiert
+einen Studiengang (docs/34-fachrichtungen.md). Es wird vor allen anderen
+Dateien geladen, weil es die gueltigen Fachgebiete (`area`) festlegt:
+
+```yaml
+fachrichtung:
+  slug: elektrotechnik
+  name: Elektrotechnik
+  kurzname: ET
+  areas:                       # Pflicht; ein Fachgebiet gehoert genau einer Fachrichtung
+    - {slug: et-grundlagen, title: Grundlagen der Elektrotechnik, kurz: GET}
+  begriffe: {fall: Aufgabe, faelle: Aufgaben, gutachten: Loesungsweg, ...}   # Pflicht
+  kartentypen: {definition: Definition, formel: Formel, verfahren: Verfahren}
+  methodik:
+    gutachtenstil_analyse: false
+    norm_gate: false           # KI-Redaktion: Normzitat-Gate aus ...
+    einheiten_gate: true       # ... Fach-Gate mit Einheitenpruefung an
+    bundesland_profile: false
+    landesrecht: false
+  pruefung: {name: ..., klausuren: {anzahl: 3, verteilung: {et-grundlagen: 1, ...}}}
+  quellen: [...]
+  stand: "2026-10"
+```
+
+Themen anderer Fachrichtungen liegen unter `content/<fachrichtung>/` und
+tragen ihr Fachgebiet in `area`; der Loader leitet `fachrichtung` daraus ab.
+Zwei neue Kartentypen: `formel` braucht eine `einheiten`-Liste
+(`["U in V", "R in Ω"]`), `verfahren` beschreibt ein Vorgehen in
+nummerierten Schritten. Universitaeten nennen in `fachrichtungen`, was sie
+anbieten (Default `[jura]`), und duerfen nur Kurse dieser Fachrichtungen
+fuehren; `GET /v1/examen/universitaeten?fachrichtung=` filtert danach.
+
 ## Regeln, die die CI erzwingt
 
 `python backend/scripts/validate_content.py` bricht ab bei:
 
 - fehlenden Pflichtfeldern (`slug`, `front`/`back`, `quellen`, `stand`)
-- unbekanntem Rechtsgebiet oder Kartentyp
+- unbekanntem Fachgebiet (nicht in einem Fachrichtungs-Profil) oder Kartentyp
+- Formel-Karte ohne `einheiten`
+- Universitaet mit unbekannter Fachrichtung oder fremdem Kurs
 - doppelten Slugs ueber das gesamte Repository
 - `relevance` ausserhalb 1–5
 - `stand` in einem anderen Format als `YYYY-MM` oder `YYYY-MM-TT`

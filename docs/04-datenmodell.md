@@ -29,6 +29,7 @@ Eintreffreihenfolge unabhaengig (getestet in
 | `bundeslaender` | Pruefungsprofil je Land (docs/32) | `data` JSON: Klausurstruktur, Normenspiegel, Checkliste |
 | `universitaeten` | Fakultaet mit Studienverlaufsplan | `data.kurse` verweist auf `kurse.slug` |
 | `kurse` | Kanonischer Kurs mit Vorbereitungsdeck | `data.topic_slugs` + `landesrecht_kategorien`; Deck wird zur Laufzeit aufgeloest |
+| `fachrichtungen` | Profil je Studiengang (docs/34) | `data` JSON: Fachgebiete, Begriffe, Kartentypen, Methodik-Schalter |
 
 Vier Spalten fuer Examensvorbereitung und Individualisierung
 (docs/32-examensvorbereitung.md, docs/33-individualisierung.md):
@@ -37,6 +38,13 @@ optional), `users.lernprofil` (JSON, validiert ueber `LernprofilIn`, leer =
 Defaults) sowie `topics.bundesland` (Landesrecht-Thema, nur fuer Nutzer
 dieses Landes sichtbar). Bestehende Installationen brauchen dafuer ein
 manuelles `ALTER TABLE` (docs/22-deploy-runbook.md Abschnitt 2.2).
+
+Fachrichtungen (docs/34-fachrichtungen.md) bringen `users.fachrichtung`,
+`topics.fachrichtung` und `kurse.fachrichtung` (alle Default `jura`,
+abgeleitet aus dem Fachgebiet) sowie die Tabelle `fachrichtungen`.
+`bundeslaender` bekommt den Primaerschluessel `key = "<fachrichtung>:<CODE>"`
+(`jura:BY`), weil ein Land je Fachrichtung ein eigenes Pruefungsprofil
+haben kann; `code` und `fachrichtung` stehen daneben als Spalten.
 
 ## Zwei Entscheidungen, die sich durchziehen
 
