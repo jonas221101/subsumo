@@ -22,6 +22,7 @@ Angebot ohne Impressum, AGB und Datenschutzerklärung abmahnfähig ist.
 | [03-datenschutzerklaerung.md](03-datenschutzerklaerung.md) | DSGVO-Informationspflichten, Art. 13/14 | Entwurf vollständig, Empfänger teils Platzhalter |
 | [04-widerrufsbelehrung.md](04-widerrufsbelehrung.md) | Fernabsatz-Widerrufsrecht, vorzeitiges Erlöschen bei digitalen Produkten | Entwurf vollständig, eine Produktentscheidung offen, eine Rechtsfrage zu Tag 1 offen |
 | [05-cookie-hinweis.md](05-cookie-hinweis.md) | Technisch notwendige Speicherung, kein Tracking in v1.0 | Entwurf vollständig |
+| [06-gewerbeanmeldung.md](06-gewerbeanmeldung.md) | Kosten/Aufwand einer Gewerbeanmeldung, Abgrenzung zur Impressumspflicht | Entscheidungsgrundlage zur Rechtsträger-Frage, kein Nutzertext |
 
 Jedes Dokument trägt am Ende eine **Quellen-/Begründungszeile**, die belegt,
 woraus der Inhalt abgeleitet wurde (Code, Projektdokument oder Gesetzestext).
@@ -67,7 +68,11 @@ Dringlichkeit sortiert (blockiert G4 zuerst).
 
 1. **Rechtsträger fehlt** (s. o.) — ohne Antwort ist das Impressum nicht
    veröffentlichbar. **Blockiert G4 direkt.** Eigentümer: Nutzer, via
-   SUB-39-Interaktion.
+   SUB-39-Interaktion. *Nachtrag 07.10.2026:* Kosten und Aufwand der
+   Gewerbe-Variante sind in [06-gewerbeanmeldung.md](06-gewerbeanmeldung.md)
+   aufgeschlüsselt. Ergebnis für diese Liste: Die Gewerbe-Entscheidung ändert
+   an diesem Punkt nichts — es fehlen Name und ladungsfähige Anschrift, und
+   die sind bei Privatperson und Kleingewerbe identisch.
 2. **Anwaltliche Freigabe — für zwei der fünf Texte bewusst nicht eingeholt.**
    Für AGB (Haftungsklausel) und Widerrufsbelehrung (Widerrufsverzicht
    § 356 V BGB) hat der Auftraggeber am 25.09.2026 entschieden, ohne
