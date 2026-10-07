@@ -38,11 +38,16 @@ def test_alle_16_bundeslaender_haben_ein_profil_und_zwei_landesrecht_themen():
         assert f"{code.lower()}-landesrecht-allgemein" in landesrecht
     assert len(bundle.universitaeten) >= 40
     assert len(bundle.kurse) >= 15
-    # Jede Universitaet hat einen Kursplan mit Examenskursen.
-    examenskurse = {k["slug"] for k in bundle.kurse if k.get("examenskurs")}
+    # Jede Universitaet hat je angebotener Fachrichtung einen Kursplan mit
+    # deren Examenskursen (docs/34).
     for uni in bundle.universitaeten:
         kurse = {e["kurs"] for e in uni["kurse"]}
-        assert examenskurse <= kurse, uni["slug"]
+        examenskurse = {
+            k["slug"]
+            for k in bundle.kurse
+            if k.get("examenskurs") and k["fachrichtung"] in uni["fachrichtungen"]
+        }
+        assert examenskurse and examenskurse <= kurse, uni["slug"]
 
 
 def test_klausurverteilung_muss_zur_anzahl_passen(tmp_path: Path):

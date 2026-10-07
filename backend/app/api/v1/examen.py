@@ -86,7 +86,12 @@ def universitaet(slug: str, db: DbSession) -> dict:
         **uni.data,
         "pruefstatus": (uni.data.get("redaktion") or {}).get("status", "mensch-freigegeben"),
         "bundesland_name": land.name if land else uni.bundesland,
-        "kurse": [kurs for fach in angebot for kurs in examen.university_courses(db, uni, fach)],
+        # Alle angebotenen Fachrichtungen, nach Semester gemischt (stabil, damit
+        # die Reihenfolge innerhalb einer Fachrichtung erhalten bleibt).
+        "kurse": sorted(
+            (kurs for fach in angebot for kurs in examen.university_courses(db, uni, fach)),
+            key=lambda k: k.get("semester") or 0,
+        ),
     }
 
 
