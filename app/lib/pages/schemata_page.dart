@@ -35,7 +35,11 @@ class _SchemataPageState extends State<SchemataPage> {
   Future<void> _load() async {
     setState(() => _loading = true);
     try {
-      final data = await AppScope.of(context).api.schemata(area: _area);
+      final app = AppScope.of(context);
+      final data = await app.api.schemata(
+        area: _area,
+        fachrichtung: app.fachrichtungSlug,
+      );
       if (mounted) setState(() => _schemata = data);
     } on Exception {
       // Inhalte liegen ab M1 lokal vor und werden dann aus dem Cache gelesen.

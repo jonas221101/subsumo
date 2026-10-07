@@ -24,6 +24,13 @@ const _themen = [
   {'slug': 'sr-bt-betrug', 'title': 'Betrug', 'area': 'strafrecht', 'bundesland': null},
 ];
 
+// Fachgebiete der Fachrichtung (docs/34) - bei Jura die drei Rechtsgebiete.
+const _areas = [
+  {'slug': 'zivilrecht', 'title': 'Zivilrecht', 'kurz': 'ZR'},
+  {'slug': 'strafrecht', 'title': 'Strafrecht', 'kurz': 'SR'},
+  {'slug': 'oeffentliches-recht', 'title': 'Öffentliches Recht', 'kurz': 'ÖR'},
+];
+
 const _profil = {
   'semester': 3,
   'ziel': 'semesterklausur',
@@ -76,7 +83,11 @@ void main() {
                   label: 'oeffnen',
                   onPressed: () => Navigator.of(context).push(
                     MaterialPageRoute<bool>(
-                      builder: (_) => const LernprofilPage(profil: _profil, themen: _themen),
+                      builder: (_) => const LernprofilPage(
+                        profil: _profil,
+                        themen: _themen,
+                        areas: _areas,
+                      ),
                     ),
                   ),
                 ),
@@ -99,6 +110,10 @@ void main() {
     expect(find.text('Neue Karten pro Tag: 10'), findsOneWidget);
     expect(find.byType(SegmentedButton<String>), findsOneWidget);
     expect(find.text('Irrtuemer'), findsOneWidget);
+    // Schwerpunkt-Chips und Themen-Abschnitte kommen aus `areas`, nicht aus
+    // einer festen Jura-Liste: je Fachgebiet ein Chip und ein Abschnitt.
+    expect(find.text('Öffentliches Recht'), findsNWidgets(2));
+    expect(find.text('Zivilrecht'), findsNWidgets(2));
 
     // Ziel umschalten und Sicherheitsniveau auf "sicher" stellen.
     await tester.tap(find.text('Examen'));

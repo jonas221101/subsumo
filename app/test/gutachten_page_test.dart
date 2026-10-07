@@ -151,6 +151,43 @@ void main() {
     },
   );
 
+  // Fachrichtungen ohne Gutachtenstil (docs/34): der Struktur-Report kommt
+  // mit `neutral: true` und ohne Befunde - statt leerer Befundliste ein
+  // einzelner neutraler Hinweis.
+  testWidgets('neutraler Struktur-Report zeigt einen Hinweis statt der Befundliste',
+      (tester) async {
+    final client = MockClient((request) async {
+      if (request.url.path == '/v1/cases/zr-dritter-fall') {
+        return _json(_case, 200);
+      }
+      if (request.url.path == '/v1/gutachten/analyze') {
+        return _json({
+          'score': 100,
+          'findings': <Map<String, Object?>>[],
+          'counts': <String, int>{},
+          'neutral': true,
+        }, 200);
+      }
+      return _json({}, 404);
+    });
+    final state = AppState(api: ApiClient(client: client)..setToken('t'));
+
+    await _pump(tester, state);
+    await tester.enterText(
+      find.byType(TextField),
+      'Der Ersatzwiderstand der Reihenschaltung ergibt sich als Summe der Einzelwiderstände.',
+    );
+    await tester.pump(const Duration(milliseconds: 800));
+    await tester.pumpAndSettle();
+
+    expect(
+      find.textContaining('keine Gutachtenstil-Analyse'),
+      findsOneWidget,
+    );
+    expect(find.text('Struktur'), findsNothing);
+    expect(find.text('100/100'), findsNothing);
+  });
+
   // SUB-134: Zustimmungsdialog vor der ersten Abgabe, solange die
   // KI-Korrektur aktiv ist (`ai_correction_enabled`) und keine Entscheidung
   // vorliegt.

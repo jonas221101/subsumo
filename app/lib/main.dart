@@ -118,17 +118,19 @@ class _HomeShellState extends State<HomeShell> {
 
   // Funktionale Navigations-Icons bleiben in jedem Fall Icons.*_outlined,
   // auch fuer den aktiven Tab (docs/25 Abschnitt 5+8.3) - keine gefuellte
-  // Variante als Aktiv-Signal.
-  static const _destinations = [
-    (icon: Icons.today_outlined, label: 'Heute'),
-    (icon: Icons.style_outlined, label: 'Karten'),
-    (icon: Icons.account_tree_outlined, label: 'Schemata'),
-    (icon: Icons.gavel_outlined, label: 'Fälle'),
-    // Examen-Reiter (docs/32-examensvorbereitung.md): Profil, Examensreife,
-    // Kurs-Decks, Landesrecht, Klausurrhythmus - bewusst als eigener Tab
-    // statt als Unterseite des Dashboards.
-    (icon: Icons.school_outlined, label: 'Examen'),
-  ];
+  // Variante als Aktiv-Signal. Das Label des Fall-Tabs traegt den Begriff
+  // der Fachrichtung (docs/34: "Fälle" bei Jura, "Aufgaben" bei
+  // Elektrotechnik), deshalb wird die Liste je Build aus dem AppState gebaut.
+  static List<({IconData icon, String label})> _destinations(AppState app) => [
+        (icon: Icons.today_outlined, label: 'Heute'),
+        (icon: Icons.style_outlined, label: 'Karten'),
+        (icon: Icons.account_tree_outlined, label: 'Schemata'),
+        (icon: Icons.gavel_outlined, label: app.begriff('faelle', 'Fälle')),
+        // Examen-Reiter (docs/32-examensvorbereitung.md): Profil, Examensreife,
+        // Kurs-Decks, Landesrecht, Klausurrhythmus - bewusst als eigener Tab
+        // statt als Unterseite des Dashboards.
+        (icon: Icons.school_outlined, label: 'Examen'),
+      ];
 
   @override
   void initState() {
@@ -163,6 +165,7 @@ class _HomeShellState extends State<HomeShell> {
     // Fehlschlag statt auf eine ungeprueft optimistische Netzstatus-API, im
     // Sinne von "Ehrlichkeit vor Motivation" (docs/01-produktvision.md).
     final offline = app.dueCardsFromCache || app.outbox.isNotEmpty;
+    final destinations = _destinations(app);
 
     return Scaffold(
       appBar: hideChrome
@@ -212,7 +215,13 @@ class _HomeShellState extends State<HomeShell> {
             Expanded(
               child: Row(
                 children: [
-                  if (breit && !hideChrome) _Sidebar(index: _index, onSelect: _select, email: app.user?['email'] as String?),
+                  if (breit && !hideChrome)
+                    _Sidebar(
+                      index: _index,
+                      onSelect: _select,
+                      email: app.user?['email'] as String?,
+                      destinations: destinations,
+                    ),
                   Expanded(child: _page),
                 ],
               ),
@@ -226,7 +235,7 @@ class _HomeShellState extends State<HomeShell> {
               selectedIndex: _index,
               onDestinationSelected: _select,
               destinations: [
-                for (final d in _destinations)
+                for (final d in destinations)
                   NavigationDestination(
                     icon: Icon(d.icon),
                     label: d.label,
@@ -244,11 +253,17 @@ class _HomeShellState extends State<HomeShell> {
 /// Modus statt einer Eigenkonstruktion - Tastatur- und Screenreader-
 /// Verhalten kommen so mit, das Aussehen aus dem Theme.
 class _Sidebar extends StatelessWidget {
-  const _Sidebar({required this.index, required this.onSelect, required this.email});
+  const _Sidebar({
+    required this.index,
+    required this.onSelect,
+    required this.email,
+    required this.destinations,
+  });
 
   final int index;
   final ValueChanged<int> onSelect;
   final String? email;
+  final List<({IconData icon, String label})> destinations;
 
   @override
   Widget build(BuildContext context) {
@@ -286,7 +301,7 @@ class _Sidebar extends StatelessWidget {
               ),
             ),
       destinations: [
-        for (final d in _HomeShellState._destinations)
+        for (final d in destinations)
           NavigationRailDestination(
             icon: Icon(d.icon),
             label: Text(d.label),

@@ -20,12 +20,11 @@ import 'screen_status.dart';
 ///
 /// Gestaltung nach docs/25 Abschnitt 6: Flaeche statt Schatten, eine
 /// Fortschrittsfarbe unabhaengig vom Wert, Outline-Icons, keine Ampel.
-const _areaLabels = {
-  'zivilrecht': 'Zivilrecht',
-  'strafrecht': 'Strafrecht',
-  'oeffentliches-recht': 'Oeffentliches Recht',
-};
-
+///
+/// Fachgebiets-Namen und Begriffe ("Fall"/"Aufgabe", "Rechtsgebiet"/
+/// "Fachgebiet") kommen aus `cockpit.fachrichtung` (docs/34) ueber
+/// [AppState.areaLabel] und [AppState.begriff]; Jura-Fallbacks liegen in
+/// [AppState.legacyAreaLabels].
 const _phaseLabels = {
   'grundlagen': 'Grundlagen',
   'vertiefung': 'Vertiefung',
@@ -104,13 +103,13 @@ class _ExamenPageState extends State<ExamenPage> {
             if (schritt.isNotEmpty) ...[
               _NextStepCard(
                 schritt: schritt,
-                onProfil: () => _openLernprofil(context, lernprofil, themen),
+                onProfil: () => _openLernprofil(context, lernprofil, themen, app.areas),
               ),
               const SizedBox(height: Spacing.lg),
             ],
             _LernprofilCard(
               lernprofil: lernprofil,
-              onEdit: () => _openLernprofil(context, lernprofil, themen),
+              onEdit: () => _openLernprofil(context, lernprofil, themen, app.areas),
             ),
             const SizedBox(height: Spacing.lg),
             if (phase != null) ...[
@@ -167,6 +166,7 @@ class _ProfilSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final fach = AppScope.of(context).fachrichtung['kurzname'] as String?;
     final land = profil['bundesland'] == null ? null : _map(profil['bundesland']);
     final uni = profil['universitaet'] == null ? null : _map(profil['universitaet']);
     final examDate = profil['exam_date'] as String?;
@@ -187,6 +187,7 @@ class _ProfilSummary extends StatelessWidget {
           const SizedBox(height: Spacing.xs),
           Text(
             [
+              if (fach != null && fach.isNotEmpty) fach,
               if (land != null) land['name'] as String,
               if (uni != null) uni['kurzname'] as String,
               if (examDate != null) 'Examen am ${_formatIsoDate(examDate)}',
@@ -200,10 +201,13 @@ class _ProfilSummary extends StatelessWidget {
   }
 }
 
-/// Onboarding und Bearbeitung in einem: Bundesland, Universitaet (aus dem
-/// Bundesland gefiltert), Examensdatum, Tagesbudget. Die Universitaet legt
-/// serverseitig das Bundesland fest, deshalb setzt die Auswahl einer
-/// Universitaet hier auch das Bundesland-Feld.
+/// Onboarding und Bearbeitung in einem: Fachrichtung, Bundesland,
+/// Universitaet (aus Fachrichtung und Bundesland gefiltert), Examensdatum,
+/// Tagesbudget. Die Universitaet legt serverseitig das Bundesland fest,
+/// deshalb setzt die Auswahl einer Universitaet hier auch das
+/// Bundesland-Feld. Das Bundesland-Dropdown erscheint nur, wenn die
+/// Fachrichtung Bundesland-Profile kennt (`methodik.bundesland_profile`,
+/// docs/34) - Examenstermin und Tagesbudget bleiben immer.
 class _ProfilEditor extends StatefulWidget {
   const _ProfilEditor({required this.profil, required this.onSaved, this.onCancel});
 
@@ -216,12 +220,14 @@ class _ProfilEditor extends StatefulWidget {
 }
 
 class _ProfilEditorState extends State<_ProfilEditor> {
+  List<Map<String, dynamic>> _fachrichtungen = [];
   List<Map<String, dynamic>> _laender = [];
   List<Map<String, dynamic>> _unis = [];
   bool _listenLoading = true;
   bool _busy = false;
   String? _error;
 
+  String _fachrichtung = 'jura';
   String? _bundesland;
   String? _universitaet;
   DateTime? _examDate;
@@ -237,7 +243,28 @@ class _ProfilEditorState extends State<_ProfilEditor> {
     final examDate = widget.profil['exam_date'] as String?;
     _examDate = examDate == null ? null : DateTime.tryParse(examDate);
     _minuten = TextEditingController(text: '${widget.profil['daily_minutes'] ?? 90}');
-    WidgetsBinding.instance.addPostFrameCallback((_) => _loadListen());
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _fachrichtung = AppScope.of(context).user?['fachrichtung'] as String? ?? 'jura';
+      _loadListen();
+    });
+  }
+
+  /// Eintrag der gewaehlten Fachrichtung aus `GET /v1/examen/fachrichtungen`.
+  Map<String, dynamic>? get _fachEintrag {
+    for (final f in _fachrichtungen) {
+      if (f['slug'] == _fachrichtung) return f;
+    }
+    return null;
+  }
+
+  /// Ob die gewaehlte Fachrichtung Bundesland-Profile kennt. Solange die
+  /// Liste nicht geladen ist oder das Profil den Schluessel nicht traegt
+  /// (Server-Fallback fuer Jura ohne Profildatei), gilt das bisherige
+  /// Verhalten: Bundesland waehlbar.
+  bool get _hatBundeslandProfile {
+    final eintrag = _fachEintrag;
+    if (eintrag == null) return true;
+    return _map(eintrag['methodik'])['bundesland_profile'] != false;
   }
 
   @override
@@ -249,10 +276,12 @@ class _ProfilEditorState extends State<_ProfilEditor> {
   Future<void> _loadListen() async {
     final api = AppScope.of(context).api;
     try {
+      final fachrichtungen = await api.examenFachrichtungen();
       final laender = await api.examenBundeslaender();
-      final unis = await api.examenUniversitaeten();
+      final unis = await api.examenUniversitaeten(fachrichtung: _fachrichtung);
       if (!mounted) return;
       setState(() {
+        _fachrichtungen = fachrichtungen;
         _laender = laender;
         _unis = unis;
       });
@@ -261,6 +290,27 @@ class _ProfilEditorState extends State<_ProfilEditor> {
       setState(() => _error = 'Auswahllisten konnten nicht geladen werden.');
     } finally {
       if (mounted) setState(() => _listenLoading = false);
+    }
+  }
+
+  /// Fachrichtung wechseln: Universitaeten neu laden (nur die, die diese
+  /// Fachrichtung anbieten) und eine nicht mehr passende Uni abwaehlen.
+  Future<void> _wechsleFachrichtung(String slug) async {
+    setState(() {
+      _fachrichtung = slug;
+      _error = null;
+    });
+    final api = AppScope.of(context).api;
+    try {
+      final unis = await api.examenUniversitaeten(fachrichtung: slug);
+      if (!mounted) return;
+      setState(() {
+        _unis = unis;
+        if (!unis.any((u) => u['slug'] == _universitaet)) _universitaet = null;
+      });
+    } on Exception {
+      if (!mounted) return;
+      setState(() => _error = 'Universitäten konnten nicht geladen werden.');
     }
   }
 
@@ -288,7 +338,10 @@ class _ProfilEditorState extends State<_ProfilEditor> {
     });
     final app = AppScope.of(context);
     final ok = await app.saveProfile({
-      'bundesland': _bundesland ?? '',
+      'fachrichtung': _fachrichtung,
+      // Ohne Bundesland-Profile (docs/34) gibt es nichts zu waehlen - dann
+      // wird das Feld serverseitig geleert statt ein altes Land mitzuziehen.
+      'bundesland': _hatBundeslandProfile ? (_bundesland ?? '') : '',
       'universitaet_slug': _universitaet ?? '',
       if (_examDate != null) 'exam_date': _isoDate(_examDate!),
       'daily_minutes': minuten,
@@ -305,9 +358,14 @@ class _ProfilEditorState extends State<_ProfilEditor> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final unisImLand = _unis.where((u) => _bundesland == null || u['bundesland'] == _bundesland);
+    final hatBundesland = _hatBundeslandProfile;
+    final unisImLand = _unis.where(
+      (u) => !hatBundesland || _bundesland == null || u['bundesland'] == _bundesland,
+    );
     final uniWerte = unisImLand.map((u) => u['slug'] as String).toSet();
     final uniValue = uniWerte.contains(_universitaet) ? _universitaet : null;
+    final fachValue = _fachEintrag == null ? null : _fachrichtung;
+    final landValue = _laender.any((l) => l['code'] == _bundesland) ? _bundesland : null;
 
     return SubsumoCard(
       color: theme.colorScheme.surfaceContainerHighest,
@@ -330,29 +388,56 @@ class _ProfilEditorState extends State<_ProfilEditor> {
             )
           else ...[
             InputDecorator(
-              decoration: const InputDecoration(labelText: 'Bundesland (Pruefungsort)'),
+              decoration: const InputDecoration(labelText: 'Fachrichtung'),
               child: DropdownButton<String?>(
-                key: const ValueKey('bundesland'),
+                key: const ValueKey('fachrichtung'),
                 isExpanded: true,
                 underline: const SizedBox.shrink(),
-                value: _bundesland,
-                hint: const Text('Bitte waehlen'),
+                value: fachValue,
+                hint: const Text('Bitte wählen'),
                 items: [
-                  for (final land in _laender)
+                  for (final fach in _fachrichtungen)
                     DropdownMenuItem<String?>(
-                      value: land['code'] as String,
-                      child: Text(land['name'] as String),
+                      value: fach['slug'] as String,
+                      child: Text(fach['name'] as String? ?? fach['slug'] as String),
                     ),
                 ],
-                onChanged: (value) => setState(() {
-                  _bundesland = value;
-                  if (value != null && _universitaet != null) {
-                    final uni = _unis.where((u) => u['slug'] == _universitaet);
-                    if (uni.isNotEmpty && uni.first['bundesland'] != value) _universitaet = null;
-                  }
-                }),
+                onChanged: (value) {
+                  if (value != null && value != _fachrichtung) _wechsleFachrichtung(value);
+                },
               ),
             ),
+            const SizedBox(height: Spacing.md),
+            if (hatBundesland)
+              InputDecorator(
+                decoration: const InputDecoration(labelText: 'Bundesland (Pruefungsort)'),
+                child: DropdownButton<String?>(
+                  key: const ValueKey('bundesland'),
+                  isExpanded: true,
+                  underline: const SizedBox.shrink(),
+                  value: landValue,
+                  hint: const Text('Bitte waehlen'),
+                  items: [
+                    for (final land in _laender)
+                      DropdownMenuItem<String?>(
+                        value: land['code'] as String,
+                        child: Text(land['name'] as String),
+                      ),
+                  ],
+                  onChanged: (value) => setState(() {
+                    _bundesland = value;
+                    if (value != null && _universitaet != null) {
+                      final uni = _unis.where((u) => u['slug'] == _universitaet);
+                      if (uni.isNotEmpty && uni.first['bundesland'] != value) _universitaet = null;
+                    }
+                  }),
+                ),
+              )
+            else
+              const SubsumoFeedbackBlock(
+                message: 'Für diese Fachrichtung gibt es keine Bundesland-Profile.',
+                severity: FeedbackSeverity.neutral,
+              ),
             const SizedBox(height: Spacing.md),
             InputDecorator(
               decoration: const InputDecoration(labelText: 'Universitaet'),
@@ -372,7 +457,7 @@ class _ProfilEditorState extends State<_ProfilEditor> {
                 ],
                 onChanged: (value) => setState(() {
                   _universitaet = value;
-                  if (value != null) {
+                  if (value != null && hatBundesland) {
                     final uni = _unis.firstWhere((u) => u['slug'] == value);
                     _bundesland = uni['bundesland'] as String?;
                   }
@@ -470,7 +555,9 @@ class _NextStepCard extends StatelessWidget {
           ),
         ),
       'case' => (
-          action['mode'] == 'klausur' ? 'Klausur schreiben' : 'Fall bearbeiten',
+          action['mode'] == 'klausur'
+              ? 'Klausur schreiben'
+              : '${AppScope.of(context).begriff('fall', 'Fall')} bearbeiten',
           Icons.gavel_outlined,
           () => Navigator.of(context).push(
             MaterialPageRoute<void>(
@@ -513,6 +600,7 @@ class _LernprofilCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final app = AppScope.of(context);
     final eingerichtet = lernprofil['eingerichtet'] == true;
     final fokus = _strings(lernprofil['themen_fokus']).length;
     final pause = _strings(lernprofil['themen_pausiert']).length;
@@ -548,7 +636,7 @@ class _LernprofilCard extends StatelessWidget {
                 if (lernprofil['semester'] != null) '${lernprofil['semester']}. Semester',
                 if (lernprofil['zielnote'] != null) 'Ziel ${lernprofil['zielnote']} Punkte',
                 if (schwerpunkte.isNotEmpty)
-                  'Schwerpunkt ${schwerpunkte.map((a) => _areaLabels[a] ?? a).join(', ')}',
+                  'Schwerpunkt ${schwerpunkte.map(app.areaLabel).join(', ')}',
                 'Sicherheit: ${lernprofil['sicherheitsniveau'] ?? 'standard'}',
                 '${lernprofil['neue_karten_pro_tag'] ?? 10} neue Karten/Tag',
                 if (fokus > 0) '$fokus Fokus-Themen',
@@ -568,11 +656,12 @@ Future<void> _openLernprofil(
   BuildContext context,
   Map<String, dynamic> lernprofil,
   List<Map<String, dynamic>> themen,
+  List<Map<String, dynamic>> areas,
 ) async {
   final app = AppScope.of(context);
   final saved = await Navigator.of(context).push<bool>(
     MaterialPageRoute<bool>(
-      builder: (_) => LernprofilPage(profil: lernprofil, themen: themen),
+      builder: (_) => LernprofilPage(profil: lernprofil, themen: themen, areas: areas),
     ),
   );
   // saveLernprofil laedt das Cockpit bereits neu; ein erneuter Aufruf hier
@@ -637,6 +726,7 @@ class _ReifeCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final app = AppScope.of(context);
     final gesamt = (reife['gesamt'] as num).toDouble();
     final komponenten = _map(reife['komponenten']);
     final byArea = _map(reife['by_area']);
@@ -673,11 +763,14 @@ class _ReifeCard extends StatelessWidget {
             ),
           ],
           const SizedBox(height: Spacing.sm),
-          Text('Nach Rechtsgebiet', style: theme.textTheme.titleSmall),
+          Text(
+            'Nach ${app.begriff('fachgebiet', 'Rechtsgebiet')}',
+            style: theme.textTheme.titleSmall,
+          ),
           const SizedBox(height: Spacing.sm),
           for (final area in byArea.entries) ...[
             SubsumoProgressMeter(
-              label: _areaSubtitle(area.key, _map(area.value)),
+              label: _areaSubtitle(app.areaLabel(area.key), _map(area.value)),
               value: (_map(area.value)['coverage'] as num).toDouble(),
             ),
             const SizedBox(height: Spacing.sm),
@@ -687,8 +780,7 @@ class _ReifeCard extends StatelessWidget {
     );
   }
 
-  static String _areaSubtitle(String area, Map<String, dynamic> daten) {
-    final label = _areaLabels[area] ?? area;
+  static String _areaSubtitle(String label, Map<String, dynamic> daten) {
     final klausuren = daten['klausuren'];
     final gewicht = ((daten['gewicht'] as num) * 100).round();
     return klausuren == null
@@ -825,7 +917,7 @@ class _KlausurCard extends StatelessWidget {
             Text(vorschlag['title'] as String, style: theme.textTheme.titleSmall),
             const SizedBox(height: Spacing.xs),
             Text(
-              '${_areaLabels[vorschlag['area']] ?? vorschlag['area']}  ·  '
+              '${AppScope.of(context).areaLabel('${vorschlag['area']}')}  ·  '
               'Schwierigkeit ${vorschlag['difficulty']}/5  ·  ${vorschlag['minutes']} min',
               style: theme.textTheme.bodySmall,
             ),
@@ -1116,6 +1208,7 @@ class _BundeslandCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final app = AppScope.of(context);
     final klausuren = _map(bundesland['klausuren']);
     final verteilung = _map(klausuren['verteilung']);
     final landesrecht = _map(bundesland['landesrecht']);
@@ -1129,7 +1222,7 @@ class _BundeslandCard extends StatelessWidget {
           const SizedBox(height: Spacing.xs),
           Text(
             '${klausuren['anzahl']} Klausuren a ${klausuren['dauer_minuten']} min: '
-            '${verteilung.entries.map((e) => '${_areaLabels[e.key] ?? e.key} ${e.value}').join(', ')}',
+            '${verteilung.entries.map((e) => '${app.areaLabel(e.key)} ${e.value}').join(', ')}',
             style: theme.textTheme.bodyMedium,
           ),
           const SizedBox(height: Spacing.xs),
@@ -1236,6 +1329,7 @@ class DeckDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final app = AppScope.of(context);
     final topics = _maps(deck['topics']);
     final schemata = _maps(deck['schemata']);
     final cases = _maps(deck['cases']);
@@ -1261,7 +1355,7 @@ class DeckDetailPage extends StatelessWidget {
                   Text(
                     deck['eigenes'] == true
                         ? 'Eigenes Deck  ·  ${topics.length} Themen'
-                        : '${_areaLabels[deck['area']] ?? deck['area']}  ·  '
+                        : '${app.areaLabel('${deck['area']}')}  ·  '
                             'Klausur: ${klausur['typ'] ?? '-'}, ${klausur['minuten'] ?? '-'} min',
                     style: theme.textTheme.bodySmall,
                   ),
@@ -1323,7 +1417,7 @@ class DeckDetailPage extends StatelessWidget {
             ],
             if (cases.isNotEmpty) ...[
               const SizedBox(height: Spacing.lg),
-              Text('Faelle', style: theme.textTheme.titleMedium),
+              Text(app.begriff('faelle', 'Fälle'), style: theme.textTheme.titleMedium),
               const SizedBox(height: Spacing.sm),
               for (final fall in cases)
                 ListTile(

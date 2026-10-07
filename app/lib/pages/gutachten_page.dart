@@ -347,8 +347,21 @@ class _GutachtenPageState extends State<GutachtenPage> {
         ),
       );
     } else if (_structure case final structure?) {
-      key = 'structure';
-      child = _StructureView(structure: structure);
+      // Fachrichtungen ohne Gutachtenstil (docs/34) liefern einen Report mit
+      // `neutral: true` und ohne Befunde - dann keine leere Befundliste.
+      if (structure['neutral'] == true) {
+        key = 'structure-neutral';
+        child = const SubsumoCard(
+          child: SubsumoFeedbackBlock(
+            message: 'Für diese Fachrichtung gibt es keine Gutachtenstil-Analyse – '
+                'bewertet wird der Inhalt gegen die Lösungsschritte.',
+            severity: FeedbackSeverity.neutral,
+          ),
+        );
+      } else {
+        key = 'structure';
+        child = _StructureView(structure: structure);
+      }
     } else {
       key = 'hint';
       child = const SubsumoCard(

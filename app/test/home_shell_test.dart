@@ -58,6 +58,31 @@ void main() {
       ..user = {'pro_active': true, 'pro_until': null, 'cancel_at_period_end': false};
   }
 
+  // Fachrichtung (docs/34): das Label des Fall-Tabs traegt den Begriff aus
+  // `cockpit.fachrichtung.begriffe.faelle`; ohne Cockpit den Jura-Fallback.
+  testWidgets('ohne Cockpit heisst der Fall-Tab "Fälle"', (tester) async {
+    await _pumpHomeShell(tester, state: buildState());
+
+    expect(find.text('Fälle'), findsOneWidget);
+    expect(find.text('Aufgaben'), findsNothing);
+  });
+
+  testWidgets('mit Fachrichtungs-Begriffen im Cockpit heisst der Fall-Tab "Aufgaben"',
+      (tester) async {
+    final state = buildState()
+      ..examenCockpit = {
+        'fachrichtung': {
+          'begriffe': {'faelle': 'Aufgaben'},
+        },
+      };
+    await _pumpHomeShell(tester, state: state);
+
+    expect(find.text('Aufgaben'), findsOneWidget);
+    expect(find.text('Fälle'), findsNothing);
+    // Icons bleiben unveraendert - nur das Wort wechselt.
+    expect(find.byIcon(Icons.gavel_outlined), findsOneWidget);
+  });
+
   testWidgets('ohne Fehlschlag-Signal ist kein offline-Hinweis sichtbar', (tester) async {
     await _pumpHomeShell(tester, state: buildState());
 

@@ -112,6 +112,62 @@ class AppState extends ChangeNotifier {
 
   bool get isAuthenticated => api.isAuthenticated;
 
+  // --- Fachrichtung (docs/34) -------------------------------------------------
+  //
+  // Begriffe und Fachgebiete kommen aus `cockpit.fachrichtung`, nicht aus dem
+  // Build-Flavor: derselbe Build traegt jede Fachrichtung. Ohne geladenes
+  // Cockpit (z. B. vor dem ersten Aufruf des Examen-Reiters) gelten die
+  // Jura-Fallbacks, damit kein Screen auf das Cockpit warten muss.
+
+  /// Fallback-Namen der drei juristischen Rechtsgebiete, wenn das Cockpit
+  /// (noch) keine Fachrichtung mit `areas` liefert.
+  static const legacyAreaLabels = {
+    'zivilrecht': 'Zivilrecht',
+    'strafrecht': 'Strafrecht',
+    'oeffentliches-recht': 'Öffentliches Recht',
+  };
+
+  /// Slug der aktiven Fachrichtung: Profil (`user.fachrichtung`), sonst das
+  /// geladene Cockpit, sonst der Build-Flavor [kFachrichtung].
+  String get fachrichtungSlug {
+    final profil = user?['fachrichtung'];
+    if (profil is String && profil.isNotEmpty) return profil;
+    final cockpit = fachrichtung['slug'];
+    if (cockpit is String && cockpit.isNotEmpty) return cockpit;
+    return kFachrichtung;
+  }
+
+  /// `cockpit.fachrichtung` (slug, name, kurzname, areas, begriffe, methodik,
+  /// ...) oder eine leere Map, solange kein Cockpit geladen ist.
+  Map<String, dynamic> get fachrichtung {
+    final raw = examenCockpit?['fachrichtung'];
+    return raw is Map ? Map<String, dynamic>.from(raw) : <String, dynamic>{};
+  }
+
+  /// Oberflaechen-Begriff der Fachrichtung (`begriffe[key]`), sonst [fallback].
+  String begriff(String key, String fallback) {
+    final begriffe = fachrichtung['begriffe'];
+    final value = begriffe is Map ? begriffe[key] : null;
+    return value is String && value.isNotEmpty ? value : fallback;
+  }
+
+  /// Fachgebiete der Fachrichtung (`areas`: slug, title, kurz).
+  List<Map<String, dynamic>> get areas {
+    final raw = fachrichtung['areas'];
+    return raw is List
+        ? [for (final item in raw) if (item is Map) Map<String, dynamic>.from(item)]
+        : <Map<String, dynamic>>[];
+  }
+
+  /// Anzeigename eines Fachgebiets-Slugs: aus [areas], sonst aus den
+  /// Jura-Fallbacks, sonst der Slug selbst.
+  String areaLabel(String slug) {
+    for (final area in areas) {
+      if (area['slug'] == slug) return area['title'] as String? ?? slug;
+    }
+    return legacyAreaLabels[slug] ?? slug;
+  }
+
   // --- Pro-Gating ------------------------------------------------------------
   //
   // Bildet direkt die Felder aus `/auth/me` ab (siehe docs/20 B1). Ist die
@@ -306,7 +362,10 @@ class AppState extends ChangeNotifier {
       }
       if (contentManifest?['content_version'] == version) return true;
 
-      final cards = await api.contentCards(limit: 2000);
+      final cards = await api.contentCards(
+        limit: 2000,
+        fachrichtung: fachrichtungSlug,
+      );
       final encoded = jsonEncode({'manifest': manifest, 'cards': cards});
       final prefs = await SharedPreferences.getInstance();
       final written = await prefs.setString(_contentStateKey, encoded);
@@ -335,8 +394,9 @@ class AppState extends ChangeNotifier {
     bool register = false,
   }) async {
     return _guard(() async {
+      // Der Build-Flavor (docs/34) gibt neuen Konten ihre Fachrichtung vor.
       final token = register
-          ? await api.register(email, password)
+          ? await api.register(email, password, fachrichtung: kFachrichtung)
           : await api.login(email, password);
       await _persistToken(token);
       user = await api.me();
@@ -369,9 +429,10 @@ class AppState extends ChangeNotifier {
         examenCockpit = await api.examenCockpit();
       });
 
-  /// Speichert das Examensprofil (Bundesland, Universitaet, Examensdatum,
-  /// Tagesbudget) und laedt das Cockpit neu - das Bundesland aendert, welche
-  /// Karten und Gewichte gelten, deshalb nie nur lokal aktualisieren.
+  /// Speichert das Examensprofil (Fachrichtung, Bundesland, Universitaet,
+  /// Examensdatum, Tagesbudget) und laedt das Cockpit neu - Fachrichtung und
+  /// Bundesland aendern, welche Karten, Begriffe und Gewichte gelten, deshalb
+  /// nie nur lokal aktualisieren.
   Future<bool> saveProfile(Map<String, dynamic> fields) => _guard(() async {
         user = await api.updateProfile(fields);
         examenCockpit = await api.examenCockpit();

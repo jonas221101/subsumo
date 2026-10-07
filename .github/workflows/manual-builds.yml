@@ -16,6 +16,12 @@ on:
           lokale Tests z.B. http://localhost:8010, wenn Port 8000 belegt ist.
         required: false
         type: string
+      fach:
+        description: >-
+          Fachrichtung des Build-Flavors (SUBSUMO_FACH, siehe app/lib/api.dart):
+          jura | elektrotechnik | maschinenbau | lehramt. Leer = jura.
+        required: false
+        type: string
 
 jobs:
   build-apk:
@@ -40,7 +46,7 @@ jobs:
       # "Generierte Dateien") - vor dem Build einmalig erzeugen.
       - run: flutter create . --platforms=android --org de.subsumo
       - run: flutter pub get
-      - run: flutter build apk --release --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }}
+      - run: flutter build apk --release --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }} --dart-define=SUBSUMO_FACH=${{ inputs.fach || 'jura' }}
       - uses: actions/upload-artifact@v4
         with:
           name: subsumo-android-apk
@@ -73,7 +79,7 @@ jobs:
       # unveraenderten Vorlage - auf den committeten Stand zuruecksetzen.
       - run: git checkout -- linux/CMakeLists.txt
       - run: flutter pub get
-      - run: flutter build linux --release --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }}
+      - run: flutter build linux --release --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }} --dart-define=SUBSUMO_FACH=${{ inputs.fach || 'jura' }}
       # Fertig-Kriterium SUB-382: die Worker-Binary muss tatsaechlich im
       # Release-Build landen, nicht nur im Dev-/Test-Setup.
       - name: Werkbank-Sandbox-Worker-Binary im Bundle pruefen
@@ -112,7 +118,7 @@ jobs:
       # unveraenderten Vorlage - auf den committeten Stand zuruecksetzen.
       - run: git checkout -- windows/CMakeLists.txt
       - run: flutter pub get
-      - run: flutter build windows --release --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }}
+      - run: flutter build windows --release --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }} --dart-define=SUBSUMO_FACH=${{ inputs.fach || 'jura' }}
       # Fertig-Kriterium SUB-382: die Worker-Binary muss tatsaechlich im
       # Release-Build landen, nicht nur im Dev-/Test-Setup.
       - name: Werkbank-Sandbox-Worker-Binary im Bundle pruefen
@@ -159,7 +165,7 @@ jobs:
       # Vorlage - auf den committeten Stand zuruecksetzen.
       - run: git checkout -- macos/Runner.xcodeproj/project.pbxproj
       - run: flutter pub get
-      - run: flutter build macos --release --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }}
+      - run: flutter build macos --release --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }} --dart-define=SUBSUMO_FACH=${{ inputs.fach || 'jura' }}
       # Fertig-Kriterium SUB-382: die Worker-Binary muss tatsaechlich im
       # Release-Build landen, nicht nur im Dev-/Test-Setup. Ob sie zur
       # Laufzeit dort auch die native QuickJS-Bibliothek findet, ist auf
@@ -206,7 +212,7 @@ jobs:
       - run: flutter pub get
       # Ohne Apple-Developer-Account unsigniert bauen. Signiert wird beim
       # Sideloaden (z.B. Sideloadly mit eigener Apple-ID).
-      - run: flutter build ios --release --no-codesign --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }}
+      - run: flutter build ios --release --no-codesign --dart-define=SUBSUMO_API=${{ inputs.api_base || 'http://localhost:8000' }} --dart-define=SUBSUMO_FACH=${{ inputs.fach || 'jura' }}
       - name: Runner.app als IPA verpacken
         run: |
           mkdir Payload

@@ -6,9 +6,13 @@ import '../theme.dart';
 import 'gutachten_page.dart';
 import 'screen_status.dart';
 
-/// Fallsammlung: filterbar nach Rechtsgebiet, durchsuchbar nach Titel.
+/// Fallsammlung: filterbar nach Fachgebiet, durchsuchbar nach Titel.
 /// Schwierigkeit als neutrale Punktreihe (Eigenschaft des Falls, keine
 /// Bewertung des Nutzers), Bearbeitungsdauer als Richtwert.
+///
+/// Begriffe ("Fälle"/"Aufgaben", "Gutachten-Training"/"Aufgaben-Training")
+/// und Fachgebiete kommen aus der Fachrichtung des Cockpits (docs/34); ohne
+/// geladenes Cockpit gelten die Jura-Fallbacks.
 class CasesPage extends StatefulWidget {
   const CasesPage({super.key});
 
@@ -31,7 +35,8 @@ class _CasesPageState extends State<CasesPage> {
   Future<void> _load() async {
     setState(() => _loading = true);
     try {
-      final data = await AppScope.of(context).api.cases();
+      final app = AppScope.of(context);
+      final data = await app.api.cases(fachrichtung: app.fachrichtungSlug);
       if (mounted) setState(() => _cases = data);
     } on Exception {
       // Offline: Faelle kommen ab M1 aus dem lokalen Speicher.
@@ -61,6 +66,14 @@ class _CasesPageState extends State<CasesPage> {
       );
     }
 
+    final app = AppScope.of(context);
+    final faelle = app.begriff('faelle', 'Fälle');
+    final fall = app.begriff('fall', 'Fall');
+    // Filter-Chips: die Fachgebiete der Fachrichtung, sonst die drei
+    // juristischen Rechtsgebiete.
+    final areaSlugs = app.areas.isEmpty
+        ? AppState.legacyAreaLabels.keys.toList()
+        : [for (final a in app.areas) a['slug'] as String];
     final visible = _visible;
     return ReadableWidth(
       maxWidth: 860,
@@ -68,16 +81,16 @@ class _CasesPageState extends State<CasesPage> {
         padding: const EdgeInsets.all(Spacing.xl),
         children: [
           SubsumoPageHeader(
-            eyebrow: 'Gutachten-Training',
-            title: 'Fälle',
-            subtitle: '${_cases.length} geführte Fälle mit Erwartungshorizont.',
+            eyebrow: app.begriff('training', 'Gutachten-Training'),
+            title: faelle,
+            subtitle: '${_cases.length} geführte $faelle mit Erwartungshorizont.',
           ),
           const SizedBox(height: Spacing.xl),
           TextField(
             onChanged: (v) => setState(() => _query = v),
-            decoration: const InputDecoration(
-              hintText: 'Fall suchen',
-              prefixIcon: Icon(Icons.search),
+            decoration: InputDecoration(
+              hintText: '$fall suchen',
+              prefixIcon: const Icon(Icons.search),
             ),
           ),
           const SizedBox(height: Spacing.md),
@@ -85,16 +98,11 @@ class _CasesPageState extends State<CasesPage> {
             spacing: Spacing.sm,
             runSpacing: Spacing.xs,
             children: [
-              for (final entry in const {
-                null: 'Alle',
-                'zivilrecht': 'Zivilrecht',
-                'strafrecht': 'Strafrecht',
-                'oeffentliches-recht': 'Öffentliches Recht',
-              }.entries)
+              for (final slug in <String?>[null, ...areaSlugs])
                 SubsumoChip.filter(
-                  label: entry.value,
-                  selected: _area == entry.key,
-                  onSelected: (_) => setState(() => _area = entry.key),
+                  label: slug == null ? 'Alle' : app.areaLabel(slug),
+                  selected: _area == slug,
+                  onSelected: (_) => setState(() => _area = slug),
                 ),
             ],
           ),
@@ -122,6 +130,7 @@ class _CaseTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final typography = theme.extension<SubsumoTypography>()!;
+    final app = AppScope.of(context);
     final area = fall['area'] as String;
     final difficulty = ((fall['difficulty'] as num?)?.toInt() ?? 0).clamp(0, 5);
 
@@ -158,7 +167,7 @@ class _CaseTile extends StatelessWidget {
                 Text(fall['title'] as String, style: typography.headingSmall),
                 const SizedBox(height: Spacing.xs),
                 Text(
-                  '${_areaLabel(area)}  ·  ${fall['minutes']} min',
+                  '${app.areaLabel(area)}  ·  ${fall['minutes']} min',
                   style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
                 ),
               ],
@@ -182,13 +191,6 @@ class _CaseTile extends StatelessWidget {
       ),
     );
   }
-
-  static String _areaLabel(String area) => switch (area) {
-        'zivilrecht' => 'Zivilrecht',
-        'strafrecht' => 'Strafrecht',
-        'oeffentliches-recht' => 'Öffentliches Recht',
-        _ => area,
-      };
 
   static IconData _areaIcon(String area) => switch (area) {
         'zivilrecht' => Icons.balance_outlined,

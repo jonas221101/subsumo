@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../api.dart' show kFachrichtung;
 import '../../design/design.dart';
 import '../../state.dart';
 import 'public_scaffold.dart';
@@ -439,7 +440,7 @@ class _RechtsgebieteSectionState extends State<_RechtsgebieteSection> {
   Future<List<Map<String, dynamic>>> _loadTopics() async {
     final api = AppScope.of(context).api;
     try {
-      return await api.publicTopics();
+      return await api.publicTopics(fachrichtung: kFachrichtung);
     } on Exception {
       return const [];
     }

@@ -42,6 +42,56 @@ const _bundeslaender = [
   },
 ];
 
+// Fachrichtungs-Profile (docs/34) in der Form von `cockpit.fachrichtung`
+// und `GET /v1/examen/fachrichtungen`.
+const _fachJura = {
+  'slug': 'jura',
+  'name': 'Rechtswissenschaft',
+  'kurzname': 'Jura',
+  'abschluss': 'Erste juristische Prüfung',
+  'beschreibung': 'Pflichtfachstoff.',
+  'areas': [
+    {'slug': 'zivilrecht', 'title': 'Zivilrecht', 'kurz': 'ZR'},
+    {'slug': 'strafrecht', 'title': 'Strafrecht', 'kurz': 'SR'},
+    {'slug': 'oeffentliches-recht', 'title': 'Öffentliches Recht', 'kurz': 'ÖR'},
+  ],
+  'begriffe': {
+    'fall': 'Fall',
+    'faelle': 'Fälle',
+    'gutachten': 'Gutachten',
+    'fachgebiet': 'Rechtsgebiet',
+    'fachgebiete': 'Rechtsgebiete',
+    'training': 'Gutachten-Training',
+  },
+  'kartentypen': {'definition': 'Definition'},
+  'methodik': {'gutachtenstil_analyse': true, 'bundesland_profile': true, 'landesrecht': true},
+  'pruefung': {'name': 'Staatliche Pflichtfachprüfung'},
+};
+
+const _fachEt = {
+  'slug': 'elektrotechnik',
+  'name': 'Elektrotechnik',
+  'kurzname': 'ET',
+  'abschluss': 'Bachelor / Master of Science',
+  'beschreibung': 'Grundlagenstoff des Bachelorstudiums.',
+  'areas': [
+    {'slug': 'et-grundlagen', 'title': 'Grundlagen der Elektrotechnik', 'kurz': 'GET'},
+    {'slug': 'et-elektronik', 'title': 'Elektronik und Schaltungstechnik', 'kurz': 'EL'},
+    {'slug': 'et-signale-systeme', 'title': 'Signale, Systeme und Regelung', 'kurz': 'SSR'},
+  ],
+  'begriffe': {
+    'fall': 'Aufgabe',
+    'faelle': 'Aufgaben',
+    'gutachten': 'Lösungsweg',
+    'fachgebiet': 'Fachgebiet',
+    'fachgebiete': 'Fachgebiete',
+    'training': 'Aufgaben-Training',
+  },
+  'kartentypen': {'formel': 'Formel'},
+  'methodik': {'gutachtenstil_analyse': false, 'bundesland_profile': false, 'landesrecht': false},
+  'pruefung': {'name': 'Modulprüfungen und Bachelorprüfung'},
+};
+
 const _universitaeten = [
   {'slug': 'lmu-muenchen', 'name': 'LMU', 'kurzname': 'LMU Muenchen', 'bundesland': 'BY'},
   {'slug': 'uni-koeln', 'name': 'Koeln', 'kurzname': 'Uni Koeln', 'bundesland': 'NW'},
@@ -117,6 +167,7 @@ const _lernprofilLeer = {
 };
 
 Map<String, dynamic> _cockpitOhneProfil() => {
+      'fachrichtung': _fachJura,
       'lernprofil': _lernprofilLeer,
       'naechster_schritt': {
         'kind': 'profil',
@@ -308,7 +359,54 @@ Map<String, dynamic> _cockpitMitProfil() => {
       ],
     };
 
-Future<AppState> _pump(WidgetTester tester, Map<String, dynamic> cockpit) async {
+/// Elektrotechnik-Cockpit (docs/34): Fachgebiete et-*, Begriffe "Aufgabe"/
+/// "Fachgebiet", kein Bundesland-Profil, kein Landesrecht.
+Map<String, dynamic> _cockpitElektrotechnik() => {
+      ..._cockpitMitProfil(),
+      'fachrichtung': _fachEt,
+      'profil': {
+        'bundesland': null,
+        'universitaet': null,
+        'exam_date': '2027-03-01',
+        'daily_minutes': 120,
+        'vollstaendig': true,
+      },
+      'bundesland': null,
+      'landesrecht_deck': {'topics': <Map<String, Object?>>[], 'cards_total': 0, 'cards_mature': 0, 'cards_due': 0},
+      'naechster_schritt': {
+        'kind': 'fall',
+        'titel': 'Aufgabe zum Schwachpunkt: Knotenpotenzialverfahren',
+        'begruendung': '3 verfehlte Lösungsschritte.',
+        'action': {'type': 'case', 'slug': 'et-aufgabe-knoten', 'title': 'Knotenpotenziale', 'mode': 'uebung'},
+      },
+      'examensreife': {
+        ..._reife(gesamt: 0.3),
+        'by_area': {
+          'et-grundlagen': {'coverage': 0.5, 'gewicht': 0.34, 'klausuren': 1},
+          'et-elektronik': {'coverage': 0.2, 'gewicht': 0.33, 'klausuren': 1},
+          'et-signale-systeme': {'coverage': 0.1, 'gewicht': 0.33, 'klausuren': 1},
+        },
+      },
+      'naechste_klausur': {
+        'datum': '2026-10-03',
+        'vorschlag': {
+          'slug': 'et-aufgabe-filter',
+          'title': 'RC-Tiefpass',
+          'area': 'et-elektronik',
+          'topic_slug': 'et-filter',
+          'difficulty': 3,
+          'minutes': 90,
+          'begruendung': 'Schwächstes Fachgebiet.',
+        },
+      },
+    };
+
+Future<AppState> _pump(
+  WidgetTester tester,
+  Map<String, dynamic> cockpit, {
+  String fachrichtung = 'jura',
+  List<http.Request>? requests,
+}) async {
   // Der Examen-Reiter ist eine lange Liste; ein hoher Viewport baut alle
   // Karten auf, damit die Finder unten nicht am Lazy-Layout scheitern.
   tester.view.physicalSize = const Size(900, 6000);
@@ -317,19 +415,36 @@ Future<AppState> _pump(WidgetTester tester, Map<String, dynamic> cockpit) async 
   addTearDown(tester.view.resetDevicePixelRatio);
 
   final client = MockClient((request) async {
+    requests?.add(request);
     switch (request.url.path) {
       case '/v1/examen/cockpit':
         return _json(cockpit);
+      case '/v1/examen/fachrichtungen':
+        return _json([_fachEt, _fachJura]);
       case '/v1/examen/bundeslaender':
         return _json(_bundeslaender);
       case '/v1/examen/universitaeten':
         return _json(_universitaeten);
+      case '/v1/auth/me':
+        // PATCH spiegelt die geschickte Fachrichtung, GET liefert die aktuelle.
+        final body = request.body.isEmpty ? const <String, dynamic>{} : jsonDecode(request.body) as Map;
+        return _json({
+          'id': 1,
+          'email': 'a@b.de',
+          'fachrichtung': body['fachrichtung'] ?? fachrichtung,
+          'pro_active': true,
+        });
       default:
         return _json({'detail': 'nicht gemockt: ${request.url.path}'}, 404);
     }
   });
   final state = AppState(api: ApiClient(client: client))
-    ..user = {'pro_active': true, 'pro_until': null, 'cancel_at_period_end': false};
+    ..user = {
+      'pro_active': true,
+      'pro_until': null,
+      'cancel_at_period_end': false,
+      'fachrichtung': fachrichtung,
+    };
 
   await tester.pumpWidget(
     AppScope(
@@ -352,6 +467,7 @@ void main() {
     await _pump(tester, _cockpitOhneProfil());
 
     expect(find.text('Examensprofil einrichten'), findsOneWidget);
+    expect(find.byKey(const ValueKey('fachrichtung')), findsOneWidget);
     expect(find.byKey(const ValueKey('bundesland')), findsOneWidget);
     expect(find.byKey(const ValueKey('universitaet')), findsOneWidget);
     expect(find.widgetWithText(SubsumoButton, 'Profil speichern'), findsOneWidget);
@@ -370,7 +486,10 @@ void main() {
     await _pump(tester, _cockpitMitProfil());
 
     expect(find.text('Examensprofil einrichten'), findsNothing);
-    expect(find.textContaining('Bayern  ·  LMU Muenchen  ·  Examen am 01.03.2027'), findsOneWidget);
+    // Fachrichtung (kurzname) steht vorne in der Zusammenfassung.
+    expect(find.textContaining('Jura  ·  Bayern  ·  LMU Muenchen  ·  Examen am 01.03.2027'), findsOneWidget);
+    expect(find.text('Nach Rechtsgebiet'), findsOneWidget);
+    expect(find.textContaining('Öffentliches Recht  ·  2 Klausur(en)'), findsOneWidget);
     expect(find.text('150 Tage bis zum Examen'), findsOneWidget);
     expect(find.text('Phase: Vertiefung'), findsOneWidget);
     expect(find.text('42 %'), findsWidgets);
@@ -430,5 +549,67 @@ void main() {
     expect(find.text('Anspruch aus § 433 BGB'), findsOneWidget);
     expect(find.text('Der Sonderpreis'), findsOneWidget);
     expect(find.widgetWithText(SubsumoButton, 'Deck lernen (2 faellig)'), findsOneWidget);
+  });
+
+  // Fachrichtungen (docs/34): Begriffe und Fachgebiete kommen aus dem
+  // Cockpit, nicht aus festen Jura-Listen.
+  testWidgets('Elektrotechnik-Cockpit zeigt Fachgebiete und Begriffe der Fachrichtung',
+      (tester) async {
+    await _pump(tester, _cockpitElektrotechnik(), fachrichtung: 'elektrotechnik');
+
+    expect(find.text('Nach Fachgebiet'), findsOneWidget);
+    expect(find.text('Nach Rechtsgebiet'), findsNothing);
+    expect(find.textContaining('Grundlagen der Elektrotechnik'), findsOneWidget);
+    expect(find.textContaining('Signale, Systeme und Regelung'), findsOneWidget);
+    expect(find.textContaining('Zivilrecht'), findsNothing);
+    // Naechster Schritt: Fall-Aktion im Uebungsmodus heisst hier "Aufgabe".
+    expect(find.widgetWithText(SubsumoButton, 'Aufgabe bearbeiten'), findsOneWidget);
+    expect(find.widgetWithText(SubsumoButton, 'Fall bearbeiten'), findsNothing);
+    // Klausur-Vorschlag mit ET-Fachgebiet, Zusammenfassung mit Kurzname.
+    expect(find.textContaining('Elektronik und Schaltungstechnik  ·  Schwierigkeit 3/5'), findsOneWidget);
+    expect(find.textContaining('ET  ·  Examen am 01.03.2027'), findsOneWidget);
+    // Ohne Bundesland-Profil keine Landeskarte.
+    expect(find.textContaining('Pruefung in'), findsNothing);
+  });
+
+  testWidgets('Profil-Editor ohne Bundesland-Profile blendet das Bundesland aus und '
+      'schickt die Fachrichtung mit', (tester) async {
+    final requests = <http.Request>[];
+    final cockpit = {..._cockpitOhneProfil(), 'fachrichtung': _fachEt};
+    await _pump(tester, cockpit, fachrichtung: 'elektrotechnik', requests: requests);
+
+    expect(find.byKey(const ValueKey('fachrichtung')), findsOneWidget);
+    expect(find.byKey(const ValueKey('bundesland')), findsNothing);
+    expect(find.text('Für diese Fachrichtung gibt es keine Bundesland-Profile.'), findsOneWidget);
+    expect(find.byKey(const ValueKey('universitaet')), findsOneWidget);
+    // Universitaeten werden je Fachrichtung geladen.
+    final unis = requests.where((r) => r.url.path == '/v1/examen/universitaeten');
+    expect(unis.last.url.queryParameters['fachrichtung'], 'elektrotechnik');
+
+    await tester.tap(find.widgetWithText(SubsumoButton, 'Profil speichern'));
+    await tester.pumpAndSettle();
+
+    final patch = requests.singleWhere((r) => r.method == 'PATCH' && r.url.path == '/v1/auth/me');
+    final body = jsonDecode(patch.body) as Map<String, dynamic>;
+    expect(body['fachrichtung'], 'elektrotechnik');
+    expect(body['bundesland'], '');
+    expect(body['daily_minutes'], 90);
+  });
+
+  testWidgets('Fachrichtungswechsel im Editor laedt die Universitaeten neu', (tester) async {
+    final requests = <http.Request>[];
+    await _pump(tester, _cockpitOhneProfil(), requests: requests);
+
+    expect(find.byKey(const ValueKey('bundesland')), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('fachrichtung')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Elektrotechnik').last);
+    await tester.pumpAndSettle();
+
+    expect(find.byKey(const ValueKey('bundesland')), findsNothing);
+    expect(find.text('Für diese Fachrichtung gibt es keine Bundesland-Profile.'), findsOneWidget);
+    final unis = requests.where((r) => r.url.path == '/v1/examen/universitaeten').toList();
+    expect(unis.first.url.queryParameters['fachrichtung'], 'jura');
+    expect(unis.last.url.queryParameters['fachrichtung'], 'elektrotechnik');
   });
 }

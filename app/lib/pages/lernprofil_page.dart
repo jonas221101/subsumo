@@ -19,12 +19,6 @@ const _ziele = {
   'wiederholung': 'Wiederholung / Auffrischung',
 };
 
-const _areaLabels = {
-  'zivilrecht': 'Zivilrecht',
-  'strafrecht': 'Strafrecht',
-  'oeffentliches-recht': 'Oeffentliches Recht',
-};
-
 const _wochentage = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
 
 const _sicherheitsniveaus = {
@@ -34,13 +28,23 @@ const _sicherheitsniveaus = {
 };
 
 class LernprofilPage extends StatefulWidget {
-  const LernprofilPage({required this.profil, required this.themen, super.key});
+  const LernprofilPage({
+    required this.profil,
+    required this.themen,
+    required this.areas,
+    super.key,
+  });
 
   /// Aktuelles Profil aus dem Cockpit (`lernprofil`).
   final Map<String, dynamic> profil;
 
   /// Sichtbare Themen (`themen` aus dem Cockpit): slug, title, area.
   final List<Map<String, dynamic>> themen;
+
+  /// Fachgebiete der Fachrichtung (`cockpit.fachrichtung.areas`, docs/34):
+  /// slug, title. Bestimmen die Schwerpunkt-Chips und die Gruppierung der
+  /// Fokus-/Pause-Themen - bei Jura die drei Rechtsgebiete.
+  final List<Map<String, dynamic>> areas;
 
   @override
   State<LernprofilPage> createState() => _LernprofilPageState();
@@ -128,6 +132,7 @@ class _LernprofilPageState extends State<LernprofilPage> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final app = AppScope.of(context);
     return Scaffold(
       appBar: AppBar(title: const Text('Lernprofil')),
       body: ReadableWidth(
@@ -197,20 +202,22 @@ class _LernprofilPageState extends State<LernprofilPage> {
             const SizedBox(height: Spacing.lg),
             _section(theme, 'Schwerpunkte'),
             Text(
-              'Rechtsgebiete, die im Stapel und im Plan schwerer wiegen (Faktor 1,25).',
+              '${app.begriff('fachgebiete', 'Rechtsgebiete')}, die im Stapel und im Plan '
+              'schwerer wiegen (Faktor 1,25).',
               style: theme.textTheme.bodySmall,
             ),
             const SizedBox(height: Spacing.xs),
             Wrap(
               spacing: Spacing.sm,
               children: [
-                for (final e in _areaLabels.entries)
+                for (final area in widget.areas)
                   SubsumoChip.filter(
-                    label: e.value,
-                    selected: _schwerpunkte.contains(e.key),
-                    onSelected: (on) => setState(
-                      () => on ? _schwerpunkte.add(e.key) : _schwerpunkte.remove(e.key),
-                    ),
+                    label: _areaTitle(area),
+                    selected: _schwerpunkte.contains(area['slug']),
+                    onSelected: (on) => setState(() {
+                      final slug = area['slug'] as String;
+                      on ? _schwerpunkte.add(slug) : _schwerpunkte.remove(slug);
+                    }),
                   ),
               ],
             ),
@@ -293,10 +300,10 @@ class _LernprofilPageState extends State<LernprofilPage> {
               style: theme.textTheme.bodySmall,
             ),
             const SizedBox(height: Spacing.xs),
-            for (final area in _areaLabels.keys)
+            for (final area in widget.areas)
               _ThemenAbschnitt(
-                titel: _areaLabels[area]!,
-                themen: widget.themen.where((t) => t['area'] == area).toList(),
+                titel: _areaTitle(area),
+                themen: widget.themen.where((t) => t['area'] == area['slug']).toList(),
                 fokus: _fokus,
                 pausiert: _pausiert,
                 onChanged: () => setState(() {}),
@@ -341,6 +348,9 @@ class _LernprofilPageState extends State<LernprofilPage> {
       ),
     );
   }
+
+  static String _areaTitle(Map<String, dynamic> area) =>
+      area['title'] as String? ?? area['slug'] as String;
 
   static Widget _section(ThemeData theme, String titel) => Padding(
         padding: const EdgeInsets.only(bottom: Spacing.sm),

@@ -9,6 +9,20 @@ const String kApiBase = String.fromEnvironment(
   defaultValue: 'http://localhost:8000',
 );
 
+/// Fachrichtung des Build-Flavors (docs/34): `jura`, `elektrotechnik`,
+/// `maschinenbau` oder `lehramt`. Wird beim Build gesetzt:
+/// `flutter build apk --dart-define=SUBSUMO_FACH=elektrotechnik`
+///
+/// Wirkt nur bei der Registrierung: ein neues Konto bekommt diese
+/// Fachrichtung als Voreinstellung (`POST /v1/auth/register`). Danach gilt,
+/// was im Profil steht (`fachrichtung` aus `GET /v1/auth/me`) - derselbe
+/// Build zeigt also die Oberflaeche jeder Fachrichtung, die Begriffe und
+/// Fachgebiete kommen aus dem Cockpit, nicht aus dem Flavor.
+const String kFachrichtung = String.fromEnvironment(
+  'SUBSUMO_FACH',
+  defaultValue: 'jura',
+);
+
 class ApiException implements Exception {
   ApiException(this.statusCode, this.message, {this.upgradeRequired = false});
 
@@ -105,10 +119,17 @@ class ApiClient {
 
   // --- Auth ----------------------------------------------------------------
 
-  Future<String> register(String email, String password) async {
+  /// `fachrichtung` (Slug, docs/34) ist optional - ohne Angabe legt der
+  /// Server das Konto mit dem Default `jura` an.
+  Future<String> register(
+    String email,
+    String password, {
+    String? fachrichtung,
+  }) async {
     final data = await _post('/v1/auth/register', {
       'email': email,
       'password': password,
+      if (fachrichtung != null) 'fachrichtung': fachrichtung,
     });
     return data['access_token'] as String;
   }
@@ -125,9 +146,10 @@ class ApiClient {
       (await _get('/v1/auth/me')) as Map<String, dynamic>;
 
   /// Profil aktualisieren (`PATCH /v1/auth/me`): Examensdatum (`exam_date`,
-  /// ISO-Datum), Tagesbudget, Bundesland-Kuerzel und Universitaets-Slug
-  /// (docs/32-examensvorbereitung.md). Der Server leitet aus der Universitaet
-  /// das Bundesland ab, wenn keines mitgeschickt wird.
+  /// ISO-Datum), Tagesbudget, Bundesland-Kuerzel, Universitaets-Slug
+  /// (docs/32-examensvorbereitung.md) und Fachrichtungs-Slug (docs/34). Der
+  /// Server leitet aus der Universitaet das Bundesland ab, wenn keines
+  /// mitgeschickt wird.
   Future<Map<String, dynamic>> updateProfile(Map<String, dynamic> fields) async =>
       (await _patch('/v1/auth/me', fields)) as Map<String, dynamic>;
 
@@ -169,23 +191,38 @@ class ApiClient {
     return Map<String, dynamic>.from(data);
   }
 
-  Future<List<Map<String, dynamic>>> contentCards({int limit = 2000}) async {
-    final data = await _get('/v1/content/cards', {'limit': limit});
+  Future<List<Map<String, dynamic>>> contentCards({
+    int limit = 2000,
+    String? fachrichtung,
+  }) async {
+    final data = await _get('/v1/content/cards', {
+      'limit': limit,
+      if (fachrichtung != null) 'fachrichtung': fachrichtung,
+    });
     if (data is! List || data.any((card) => card is! Map)) {
       throw const FormatException('Karten-Snapshot ist ungültig');
     }
     return data.map((card) => Map<String, dynamic>.from(card as Map)).toList();
   }
 
-  Future<List<Map<String, dynamic>>> schemata({String? area}) async {
+  Future<List<Map<String, dynamic>>> schemata({
+    String? area,
+    String? fachrichtung,
+  }) async {
     final data = await _get('/v1/content/schemata', {
       if (area != null) 'area': area,
+      if (fachrichtung != null) 'fachrichtung': fachrichtung,
     });
     return (data as List).cast<Map<String, dynamic>>();
   }
 
-  Future<List<Map<String, dynamic>>> cases() async =>
-      ((await _get('/v1/content/cases')) as List).cast<Map<String, dynamic>>();
+  /// Fallkatalog, optional auf eine Fachrichtung eingeschraenkt (docs/34).
+  Future<List<Map<String, dynamic>>> cases({String? fachrichtung}) async {
+    final data = await _get('/v1/content/cases', {
+      if (fachrichtung != null) 'fachrichtung': fachrichtung,
+    });
+    return (data as List).cast<Map<String, dynamic>>();
+  }
 
   Future<Map<String, dynamic>> caseDetail(String slug) async =>
       (await _get('/v1/cases/$slug')) as Map<String, dynamic>;
@@ -196,10 +233,21 @@ class ApiClient {
   Future<List<Map<String, dynamic>>> examenBundeslaender() async =>
       ((await _get('/v1/examen/bundeslaender')) as List).cast<Map<String, dynamic>>();
 
-  /// Universitaeten mit Staatsexamens-Studiengang, optional je Bundesland.
-  Future<List<Map<String, dynamic>>> examenUniversitaeten({String? bundesland}) async {
+  /// Alle Fachrichtungs-Profile (docs/34): slug, name, kurzname, areas,
+  /// begriffe, kartentypen, methodik, pruefung - dieselbe Form wie
+  /// `cockpit.fachrichtung`. Oeffentlich (Profil-Auswahl).
+  Future<List<Map<String, dynamic>>> examenFachrichtungen() async =>
+      ((await _get('/v1/examen/fachrichtungen')) as List).cast<Map<String, dynamic>>();
+
+  /// Universitaeten, optional je Bundesland und je Fachrichtung (jede Uni
+  /// traegt `fachrichtungen: [..]`).
+  Future<List<Map<String, dynamic>>> examenUniversitaeten({
+    String? bundesland,
+    String? fachrichtung,
+  }) async {
     final data = await _get('/v1/examen/universitaeten', {
       if (bundesland != null) 'bundesland': bundesland,
+      if (fachrichtung != null) 'fachrichtung': fachrichtung,
     });
     return (data as List).cast<Map<String, dynamic>>();
   }
@@ -296,8 +344,10 @@ class ApiClient {
 
   /// Themen je Rechtsgebiet fuer die Landing-Page-Teaser (SUB-109 Abschnitt
   /// 6): `GET /v1/content/topics`, oeffentlich ohne Login erreichbar.
-  Future<List<Map<String, dynamic>>> publicTopics() async {
-    final data = await _get('/v1/content/topics');
+  Future<List<Map<String, dynamic>>> publicTopics({String? fachrichtung}) async {
+    final data = await _get('/v1/content/topics', {
+      if (fachrichtung != null) 'fachrichtung': fachrichtung,
+    });
     return (data as List).cast<Map<String, dynamic>>();
   }
 
