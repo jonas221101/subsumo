@@ -305,7 +305,10 @@ def test_cockpit_traegt_lernprofil_persona_und_naechsten_schritt(auth_client):
     assert cockpit["themen"], "Themenliste fuer die Auswahl im Profil"
 
     auth_client.patch("/v1/auth/me", json={"universitaet_slug": "uni-koeln"})
-    auth_client.put("/v1/me/lernprofil", json={"semester": 2, "ziel": "zwischenpruefung"})
+    auth_client.put(
+        "/v1/me/lernprofil",
+        json={"semester": 2, "ziel": "zwischenpruefung", "wochenklausur": False},
+    )
     cockpit = auth_client.get("/v1/examen/cockpit").json()
     assert cockpit["lernprofil"]["persona"] == lernprofil.PERSONA_EINSTIEG
     assert cockpit["lernprofil"]["persona_label"]
