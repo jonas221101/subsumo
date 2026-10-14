@@ -12,6 +12,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:subsumo/api.dart';
 import 'package:subsumo/design/design.dart';
 import 'package:subsumo/main.dart';
+import 'package:subsumo/pages/feedback_page.dart';
 import 'package:subsumo/state.dart';
 import 'package:subsumo/theme.dart';
 
@@ -47,7 +48,11 @@ void main() {
       if (dueUnavailable && request.url.path == '/v1/cards/due') {
         return http.Response('{"detail":"unavailable"}', 503);
       }
-      final body = request.url.path == '/v1/cards/due' ? dueCards : _coverage;
+      final body = switch (request.url.path) {
+        '/v1/cards/due' => dueCards,
+        '/v1/feedback/mine' => const <Object>[],
+        _ => _coverage,
+      };
       return http.Response(
         jsonEncode(body),
         200,
@@ -81,6 +86,17 @@ void main() {
     expect(find.text('Fälle'), findsNothing);
     // Icons bleiben unveraendert - nur das Wort wechselt.
     expect(find.byIcon(Icons.gavel_outlined), findsOneWidget);
+  });
+
+  // Feedback (docs/35): von jedem Tab aus erreichbar, nimmt den Tab als Kontext mit.
+  testWidgets('der Feedback-Button oeffnet die Feedback-Seite mit dem aktiven Tab', (tester) async {
+    await _pumpHomeShell(tester, state: buildState());
+
+    await tester.tap(find.byTooltip('Feedback geben'));
+    await tester.pumpAndSettle();
+
+    expect(find.byType(FeedbackPage), findsOneWidget);
+    expect(find.text('Stelle in der App: Heute'), findsOneWidget);
   });
 
   testWidgets('ohne Fehlschlag-Signal ist kein offline-Hinweis sichtbar', (tester) async {

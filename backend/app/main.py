@@ -17,6 +17,7 @@ from app.api.v1 import (
     consent,
     content,
     examen,
+    feedback,
     gutachten,
     learn,
     lernprofil,
@@ -78,7 +79,7 @@ def create_app() -> FastAPI:
     app.add_middleware(
         CORSMiddleware,
         # Fuer den Web-Client. In Produktion auf die eigene Domain einschraenken.
-        allow_origins=["*"] if settings.environment == "dev" else ["https://app.subsumo.de"],
+        allow_origins=["*"] if settings.environment == "dev" else settings.cors_origin_list(),
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
@@ -97,6 +98,7 @@ def create_app() -> FastAPI:
         public.router,
         billing.router,
         werkbank.router,
+        feedback.router,
     ):
         app.include_router(router, prefix="/v1")
 

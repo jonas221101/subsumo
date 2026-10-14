@@ -96,4 +96,35 @@ void main() {
     expect(body['email'], 'neu@example.com');
     expect(state.user?['fachrichtung'], 'jura');
   });
+
+  // Geschlossene Testphase (docs/35): der Server meldet registration_open=false,
+  // die Registrierung verschwindet, ein Hinweis erklaert den Zugang.
+  testWidgets('geschlossene Testphase blendet die Registrierung aus', (tester) async {
+    final client = MockClient((request) async {
+      final body = request.url.path == '/v1/public/config'
+          ? {'paywall_enabled': false, 'ai_correction_enabled': false, 'registration_open': false}
+          : {'detail': 'nicht gemockt'};
+      return http.Response(
+        jsonEncode(body),
+        request.url.path == '/v1/public/config' ? 200 : 404,
+        headers: {'content-type': 'application/json'},
+      );
+    });
+    final state = AppState(api: ApiClient(client: client));
+
+    await tester.pumpWidget(
+      AppScope(
+        notifier: state,
+        child: MaterialApp(
+          theme: buildTheme(Brightness.light),
+          home: const LoginPage(),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    expect(find.text('Neu hier? Konto erstellen'), findsNothing);
+    expect(find.textContaining('Geschlossene Testphase'), findsOneWidget);
+    expect(find.text('Anmelden'), findsOneWidget);
+  });
 }

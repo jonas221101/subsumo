@@ -55,6 +55,11 @@ und die Kommandos selbst aendern sich dadurch nicht.
 
 ## 2. Deploy-Ablauf (Reihenfolge)
 
+> Geschlossene Testphase mit wenigen eingeladenen Personen (Allowlist,
+> Konten per Skript, Feedback-Endpunkt): `docs/35-geschlossene-testphase.md`
+> baut auf diesem Ablauf auf und ergaenzt nur Umgebungsvariablen und das
+> Konten-Skript.
+
 Reihenfolge pro Release: **Backup → Code aktualisieren → Backend neu
 starten (Schema-Anwendung passiert dabei automatisch) → Web-Build
 ausliefern → Health-Check → ggf. Rollback**.

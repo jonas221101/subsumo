@@ -90,6 +90,27 @@ class Settings(BaseSettings):
     # docs/22-deploy-runbook.md Abschnitt "Monitoring".
     log_json: bool = False
 
+    # Geschlossene Testphase (docs/35-geschlossene-testphase.md): kommagetrennte
+    # E-Mail-Adressen. Ist die Liste nicht leer, ist die Registrierung
+    # geschlossen und Login/Token funktionieren nur fuer diese Adressen -
+    # Konten legt scripts/beta_users.py auf dem Server an. Leer = offen.
+    beta_allowed_emails: str = ""
+    # Erlaubte Browser-Origins fuer den Web-Client ausserhalb von dev
+    # (kommagetrennt). Leer = https://app.subsumo.de.
+    cors_origins: str = ""
+    # Feedback-Endpunkt (docs/35): Obergrenze je Nutzer und Tag gegen Flut.
+    feedback_max_per_day: int = 30
+
+    def beta_allowlist(self) -> frozenset[str]:
+        """Normalisierte Adressen der geschlossenen Testphase (leer = offen)."""
+        return frozenset(
+            e.strip().lower() for e in self.beta_allowed_emails.split(",") if e.strip()
+        )
+
+    def cors_origin_list(self) -> list[str]:
+        origins = [o.strip() for o in self.cors_origins.split(",") if o.strip()]
+        return origins or ["https://app.subsumo.de"]
+
     @model_validator(mode="after")
     def _fail_fast_on_default_jwt_secret_in_production(self) -> Settings:
         # docs/17-release-readiness.md Abschnitt 2 (Gate D): ein Produktions-

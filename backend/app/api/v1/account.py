@@ -13,6 +13,7 @@ from app.models import (
     Card,
     Case,
     CaseAccess,
+    Feedback,
     RedeemCode,
     RedeemCodeRedemption,
     Review,
@@ -22,6 +23,7 @@ from app.models import (
 from app.schemas import (
     AccountDeleteIn,
     AccountExportAccountOut,
+    AccountExportFeedbackOut,
     AccountExportOut,
     AccountExportRedemptionOut,
     AccountExportReviewOut,
@@ -58,6 +60,8 @@ def export_account(user: CurrentUser, db: DbSession) -> AccountExportOut:
         .order_by(RedeemCodeRedemption.redeemed_at)
         .all()
     )
+
+    feedback = db.query(Feedback).filter_by(user_id=user.id).order_by(Feedback.created_at).all()
 
     return AccountExportOut(
         exported_at=datetime.now(UTC),
@@ -122,6 +126,16 @@ def export_account(user: CurrentUser, db: DbSession) -> AccountExportOut:
             )
             for r in redemptions
         ],
+        feedback=[
+            AccountExportFeedbackOut(
+                category=f.category,
+                message=f.message,
+                context=f.context,
+                created_at=f.created_at,
+                erledigt=f.erledigt_at is not None,
+            )
+            for f in feedback
+        ],
     )
 
 
@@ -152,6 +166,7 @@ def delete_account(payload: AccountDeleteIn, user: CurrentUser, db: DbSession) -
     db.query(CaseAccess).filter_by(user_id=user.id).delete()
     db.query(AnalyzeCall).filter_by(user_id=user.id).delete()
     db.query(RedeemCodeRedemption).filter_by(user_id=user.id).delete()
+    db.query(Feedback).filter_by(user_id=user.id).delete()
     db.delete(user)
     db.commit()
     return {"deleted": True}

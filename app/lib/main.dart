@@ -8,6 +8,7 @@ import 'pages/cases_page.dart';
 import 'pages/checkout_page.dart';
 import 'pages/dashboard_page.dart';
 import 'pages/examen_page.dart';
+import 'pages/feedback_page.dart';
 import 'pages/login_page.dart';
 import 'pages/public/public_landing_page.dart';
 import 'pages/public/public_legal_page.dart';
@@ -188,6 +189,17 @@ class _HomeShellState extends State<HomeShell> {
                     icon: const Icon(Icons.cloud_upload_outlined),
                     onPressed: app.flushOutbox,
                   ),
+                // Feedback (docs/35): von jeder Stelle aus erreichbar, nimmt den
+                // aktiven Tab als Kontext mit.
+                IconButton(
+                  tooltip: 'Feedback geben',
+                  icon: const Icon(Icons.rate_review_outlined),
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) => FeedbackPage(context: destinations[_index].label),
+                    ),
+                  ),
+                ),
                 IconButton(
                   tooltip: 'Konto',
                   icon: const Icon(Icons.account_circle_outlined),

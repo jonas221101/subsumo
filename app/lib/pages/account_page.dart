@@ -8,6 +8,7 @@ import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
 import 'checkout_page.dart';
+import 'feedback_page.dart';
 
 /// F3 (docs/20-release-g2-bezahlstrecke.md Abschnitt 4): Konto-/Einstellungsseite.
 /// Existierte vorher nicht - `HomeShell` (main.dart) verlinkt ueber die AppBar
@@ -364,6 +365,8 @@ class _AccountPageState extends State<AccountPage> {
                 onRedeem: _redeemCode,
               ),
               const SizedBox(height: Spacing.lg),
+              const _FeedbackCard(),
+              const SizedBox(height: Spacing.lg),
               _PrivacyCard(
                 exportBusy: _exportBusy,
                 exportError: _exportError,
@@ -517,6 +520,39 @@ class _RedeemCodeCard extends StatelessWidget {
 }
 
 /// SUB-103 (Art. 15/17 DSGVO, siehe SUB-84): Datenexport und Kontoloeschung.
+/// Feedback (docs/35): derselbe Weg wie der Button im App-Bar, hier fuer
+/// alle, die ihn dort uebersehen.
+class _FeedbackCard extends StatelessWidget {
+  const _FeedbackCard();
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return SubsumoCard(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('Feedback', style: theme.textTheme.titleMedium),
+          const SizedBox(height: Spacing.xs),
+          Text(
+            'Fehler, Ideen oder fachliche Zweifel an einer Karte - direkt an den Betreiber.',
+            style: theme.textTheme.bodyMedium,
+          ),
+          const SizedBox(height: Spacing.md),
+          SubsumoButton.secondary(
+            label: 'Feedback geben',
+            icon: Icons.rate_review_outlined,
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute<void>(builder: (_) => const FeedbackPage(context: 'Konto')),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+
 class _PrivacyCard extends StatelessWidget {
   const _PrivacyCard({
     required this.exportBusy,

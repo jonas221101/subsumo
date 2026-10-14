@@ -23,6 +23,13 @@ const String kFachrichtung = String.fromEnvironment(
   defaultValue: 'jura',
 );
 
+/// Versionskennung des Builds, wird mit jeder Rueckmeldung geschickt
+/// (docs/35), z. B. `--dart-define=SUBSUMO_VERSION=$(git rev-parse --short HEAD)`.
+const String kAppVersion = String.fromEnvironment(
+  'SUBSUMO_VERSION',
+  defaultValue: 'dev',
+);
+
 class ApiException implements Exception {
   ApiException(this.statusCode, this.message, {this.upgradeRequired = false});
 
@@ -116,6 +123,29 @@ class ApiClient {
   /// einen Bearer-Token, selbst wenn der Client anderswo eingeloggt ist.
   Future<Map<String, dynamic>> publicConfig() async =>
       (await _get('/v1/public/config')) as Map<String, dynamic>;
+
+  // --- Feedback (docs/35-geschlossene-testphase.md) --------------------------
+
+  /// Rueckmeldung absenden: `POST /v1/feedback`. [context] ist die Stelle in
+  /// der App (Tab/Seite), [platform] der Client - beides nur zur Einordnung.
+  Future<Map<String, dynamic>> sendFeedback({
+    required String category,
+    required String message,
+    String context = '',
+    String platform = '',
+    String appVersion = '',
+  }) async =>
+      (await _post('/v1/feedback', {
+        'category': category,
+        'message': message,
+        'context': context,
+        'platform': platform,
+        'app_version': appVersion,
+      })) as Map<String, dynamic>;
+
+  /// Die eigenen Rueckmeldungen, neueste zuerst.
+  Future<List<Map<String, dynamic>>> myFeedback() async =>
+      ((await _get('/v1/feedback/mine')) as List).cast<Map<String, dynamic>>();
 
   // --- Auth ----------------------------------------------------------------
 

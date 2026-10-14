@@ -20,6 +20,25 @@ class _LoginPageState extends State<LoginPage> {
   final _password = TextEditingController();
   final _formKey = GlobalKey<FormState>();
   bool _register = false;
+  // Geschlossene Testphase (docs/35): der Server sagt ueber
+  // `GET /v1/public/config`, ob Konten selbst angelegt werden koennen.
+  bool _registrationOpen = true;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _loadConfig());
+  }
+
+  Future<void> _loadConfig() async {
+    try {
+      final config = await AppScope.of(context).api.publicConfig();
+      if (!mounted) return;
+      setState(() => _registrationOpen = config['registration_open'] != false);
+    } on Exception {
+      // Ohne Server bleibt der Standard (Registrierung sichtbar).
+    }
+  }
 
   @override
   void dispose() {
@@ -122,10 +141,19 @@ class _LoginPageState extends State<LoginPage> {
             label: app.loading ? 'Bitte warten ...' : (_register ? 'Konto erstellen' : 'Anmelden'),
             onPressed: app.loading ? null : _submit,
           ),
-          SubsumoButton.tertiary(
-            label: _register ? 'Ich habe schon ein Konto' : 'Neu hier? Konto erstellen',
-            onPressed: () => setState(() => _register = !_register),
-          ),
+          if (_registrationOpen)
+            SubsumoButton.tertiary(
+              label: _register ? 'Ich habe schon ein Konto' : 'Neu hier? Konto erstellen',
+              onPressed: () => setState(() => _register = !_register),
+            )
+          else ...[
+            const SizedBox(height: Spacing.md),
+            const SubsumoFeedbackBlock(
+              message: 'Geschlossene Testphase: Dein Konto wurde für dich eingerichtet. '
+                  'Melde dich mit der vereinbarten E-Mail-Adresse und deinem Passwort an.',
+              severity: FeedbackSeverity.neutral,
+            ),
+          ],
         ],
       ),
     );

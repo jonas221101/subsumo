@@ -45,6 +45,14 @@ def _user_out(user: User) -> UserOut:
 )
 def register(payload: RegisterIn, db: DbSession) -> TokenOut:
     email = payload.email.lower()
+    if get_settings().beta_allowlist():
+        # docs/35: in der Testphase gibt es keine Selbstregistrierung - auch
+        # nicht fuer gelistete Adressen, sonst koennte ein Dritter ein Konto
+        # unter fremder Adresse anlegen. Konten kommen von scripts/beta_users.py.
+        raise HTTPException(
+            status.HTTP_403_FORBIDDEN,
+            "Geschlossene Testphase: Konten werden vom Betreiber eingerichtet.",
+        )
     if db.query(User).filter_by(email=email).first():
         raise HTTPException(status.HTTP_409_CONFLICT, "Diese E-Mail ist bereits registriert")
     user = User(
@@ -72,9 +80,14 @@ def _fachrichtung_or_422(db: DbSession, slug: str | None) -> str | None:
 
 @router.post("/login", response_model=TokenOut, dependencies=[Depends(enforce_login_rate_limit)])
 def login(payload: LoginIn, db: DbSession) -> TokenOut:
-    user = db.query(User).filter_by(email=payload.email.lower()).first()
-    # Dieselbe Meldung fuer unbekannte Nutzer und falsche Passwoerter -
-    # sonst laesst sich ueber die API herausfinden, wer registriert ist.
+    email = payload.email.lower()
+    allowlist = get_settings().beta_allowlist()
+    user = db.query(User).filter_by(email=email).first()
+    # Dieselbe Meldung fuer unbekannte Nutzer, falsche Passwoerter und (in der
+    # Testphase, docs/35) nicht gelistete Adressen - sonst laesst sich ueber
+    # die API herausfinden, wer registriert oder eingeladen ist.
+    if allowlist and email not in allowlist:
+        user = None
     if user is None or not verify_password(payload.password, user.password_hash):
         raise HTTPException(status.HTTP_401_UNAUTHORIZED, "E-Mail oder Passwort ist falsch")
     return TokenOut(access_token=create_access_token(str(user.id)))

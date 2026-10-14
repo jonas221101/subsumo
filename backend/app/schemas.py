@@ -287,6 +287,14 @@ class AccountExportRedemptionOut(BaseModel):
     redeemed_at: datetime
 
 
+class AccountExportFeedbackOut(BaseModel):
+    category: str
+    message: str
+    context: str
+    created_at: datetime
+    erledigt: bool
+
+
 class AccountExportOut(BaseModel):
     """Selbstauskunft nach Art. 15 DSGVO - alle zur Nutzer-ID gespeicherten Daten."""
 
@@ -296,6 +304,8 @@ class AccountExportOut(BaseModel):
     reviews: list[AccountExportReviewOut] = []
     submissions: list[AccountExportSubmissionOut] = []
     redemptions: list[AccountExportRedemptionOut] = []
+    # Rueckmeldungen der Testphase (docs/35) - freier Text der Person.
+    feedback: list[AccountExportFeedbackOut] = []
 
 
 class AccountDeleteIn(BaseModel):
@@ -327,3 +337,33 @@ class RedeemCodeIn(BaseModel):
 
 class RedeemCodeOut(BaseModel):
     pro_until: datetime
+
+
+FEEDBACK_KATEGORIEN = ("fehler", "idee", "inhalt", "sonstiges")
+
+
+class FeedbackIn(BaseModel):
+    """Rueckmeldung aus der App (docs/35)."""
+
+    category: Literal["fehler", "idee", "inhalt", "sonstiges"] = "sonstiges"
+    message: str = Field(min_length=3, max_length=4000)
+    context: str = Field(default="", max_length=160)
+    platform: str = Field(default="", max_length=80)
+    app_version: str = Field(default="", max_length=40)
+
+    @field_validator("message")
+    @classmethod
+    def _nicht_leer(cls, value: str) -> str:
+        cleaned = value.strip()
+        if len(cleaned) < 3:
+            raise ValueError("Bitte eine Rueckmeldung mit mindestens drei Zeichen eingeben")
+        return cleaned
+
+
+class FeedbackOut(BaseModel):
+    id: int
+    category: str
+    message: str
+    context: str
+    created_at: datetime
+    erledigt: bool

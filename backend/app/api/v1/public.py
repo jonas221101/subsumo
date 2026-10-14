@@ -26,6 +26,9 @@ def public_config(db: DbSession) -> dict:
     return {
         "paywall_enabled": settings.paywall_enabled,
         "ai_correction_enabled": llm_configured(settings),
+        # Geschlossene Testphase (docs/35): die App blendet dann "Konto
+        # erstellen" aus und erklaert, dass Konten eingerichtet werden.
+        "registration_open": not settings.beta_allowlist(),
         # Fachrichtungen (docs/34) fuer Registrierung und Build-Flavor-Check
         # vor dem Login: Slug, Name und Oberflaechen-Begriffe.
         "fachrichtungen": [

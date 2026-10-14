@@ -401,6 +401,30 @@ class RedeemCodeRedemption(Base):
     redeemed_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
 
+class Feedback(Base):
+    """Rueckmeldung aus der App (docs/35-geschlossene-testphase.md).
+
+    Wird nur geschrieben, nie vom Client geaendert; Lesen fuer den Betreiber
+    ueber ``scripts/beta_users.py feedback`` auf dem Server. ``context`` ist
+    die Stelle in der App (Tab, Seite), ``platform`` der Client.
+    """
+
+    __tablename__ = "feedback"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
+    category: Mapped[str] = mapped_column(String(20))
+    message: Mapped[str] = mapped_column(Text)
+    context: Mapped[str] = mapped_column(String(160), default="")
+    platform: Mapped[str] = mapped_column(String(80), default="")
+    app_version: Mapped[str] = mapped_column(String(40), default="")
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, index=True
+    )
+    # Vom Betreiber gesetzt (scripts/beta_users.py feedback --done ID).
+    erledigt_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), default=None)
+
+
 class Bundesland(Base):
     """Pruefungsprofil eines Bundeslands (docs/32-examensvorbereitung.md).
 
