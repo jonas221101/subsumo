@@ -27,7 +27,7 @@ cards:
   - § 24 GemO BW
   - § 42 GemO BW
   - § 44 GemO BW
-  quellen: &id001
+  quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
@@ -50,7 +50,9 @@ cards:
   - § 42 GemO BW
   - § 44 Abs. 2 GemO BW
   - § 54 GemO BW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-kom-verpflichtung
   type: norm
@@ -67,7 +69,9 @@ cards:
   norms:
   - § 54 GemO BW
   - § 177 BGB
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-kom-befangenheit
   type: norm
@@ -77,15 +81,13 @@ cards:
     Ein Mitglied darf an Beratung und Abstimmung nicht mitwirken, wenn die Entscheidung ihm selbst, einem
     Angehörigen oder einer von ihm vertretenen Person oder Vereinigung einen unmittelbaren Vorteil oder
     Nachteil bringen kann (§ 18 GemO BW). Entscheidend ist die individuelle, unmittelbare Betroffenheit,
-    nicht die bloße Zugehörigkeit zu einer Gruppe mit gleichgerichteten Interessen. Die Mitwirkung eines
-    befangenen Mitglieds macht den Beschluss rechtswidrig. Wegen der Vorschriften über die Heilung (§
-    18 Abs. 6, § 4 Abs. 4 GemO BW) und darüber, ob die Mitwirkung für das Ergebnis ausschlaggebend war,
-    ist jeweils der konkrete Normwortlaut zu prüfen. Im Examen ist stets die Kausalität der Mitwirkung
-    für das Abstimmungsergebnis anzusprechen.
+    nicht die bloße Zugehörigkeit zu einer Gruppe mit gleichgerichteten Interessen. Die Mitwirkung eines befangenen Mitglieds macht den Beschluss rechtswidrig; er ist nach der Regelung der Gemeindeordnung unwirksam, wenn die Mitwirkung für das Abstimmungsergebnis entscheidend war. Der Verstoß kann nach Ablauf der gesetzlichen Frist unbeachtlich werden (§ 4 Abs. 4 GemO BW), sofern er nicht rechtzeitig gerügt wurde. Im Examen ist stets die Kausalität der Mitwirkung für das Abstimmungsergebnis anzusprechen.
   norms:
   - § 18 GemO BW
   - § 4 Abs. 4 GemO BW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-kom-satzung
   type: norm
@@ -106,7 +108,9 @@ cards:
   - § 4 Abs. 4 GemO BW
   - Art. 28 Abs. 2 GG
   - § 47 VwGO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-kom-einrichtung
   type: norm
@@ -124,7 +128,9 @@ cards:
   norms:
   - § 10 Abs. 2 GemO BW
   - Art. 3 Abs. 1 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-kom-anschlusszwang
   type: definition
@@ -139,7 +145,9 @@ cards:
   norms:
   - § 11 GemO BW
   - Art. 14 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-kom-aufsicht
   type: definition
@@ -156,7 +164,9 @@ cards:
   norms:
   - §§ 118 ff. GemO BW
   - Art. 28 Abs. 2 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-kom-kommunalverfassungsstreit
   type: streitstand
@@ -169,15 +179,16 @@ cards:
     Begehren: meist Feststellungs- oder Leistungsklage, da Organakte mangels Außenwirkung keine Verwaltungsakte
     sind. Die Klagebefugnis wird in analoger Anwendung des § 42 Abs. 2 VwGO verlangt: Der Kläger muss
     eine Verletzung eigener organschaftlicher Rechte geltend machen können; Rechte der Gemeinde selbst
-    können nicht geltend gemacht werden. Streitig ist, ob dies zwingend ist oder nur bei Anfechtung von
-    Verwaltungsakten; die h. M. wendet § 42 Abs. 2 VwGO analog an. Beteiligtenfähigkeit nach § 61 Nr.
-    2 VwGO analog (Organteile). Richtiger Beklagter ist das Organ, dessen Handeln gerügt wird.
+    können nicht geltend gemacht werden. Die h. M. wendet § 42 Abs. 2 VwGO analog an, um Popularklagen auszuschließen; eine Gegenansicht lässt die allgemeine Rechtsschutzgarantie genügen. Beteiligtenfähigkeit nach § 61 Nr.
+    2 VwGO analog (Organteile). Wer richtiger Beklagter ist, ist umstritten: nach verbreiteter Ansicht das Organ, dessen Handeln gerügt wird, nach anderer Ansicht die Gemeinde als Rechtsträger.
   norms:
   - § 40 Abs. 1 VwGO
   - § 42 Abs. 2 VwGO analog
   - § 61 VwGO
   - § 63 VwGO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-kom-aufbau
   type: schema_step
@@ -192,7 +203,9 @@ cards:
   - § 4 GemO BW
   - § 18 GemO BW
   - § 35 GemO BW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 schemata:
 - slug: bw-schema-kom-beschluss
@@ -200,7 +213,9 @@ schemata:
   norms:
   - § 4 GemO BW
   - § 18 GemO BW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   steps:
   - label: I. Ermächtigungsgrundlage
     hinweis: >-
@@ -249,8 +264,7 @@ faelle:
       die Mitwirkung war für das Abstimmungsergebnis entscheidend.
   - prompt: Ergebnis?
     erwartung: >-
-      Der Beschluss ist rechtswidrig bzw. unwirksam, sofern keine Heilung nach den Vorschriften der GemO
-      BW eingetreten ist; der Verkauf ist zudem von der Rechtsaufsicht beanstandbar.
+      Der Beschluss ist unter Verstoß gegen das Mitwirkungsverbot zustande gekommen, rechtswidrig und unwirksam; eine Heilung durch Fristablauf nach § 4 Abs. 4 GemO BW (Jahresfrist, Rüge) ist zu prüfen; der Verkauf ist zudem von der Rechtsaufsicht beanstandbar.
   expectation:
     pruefpunkte:
     - id: p1
@@ -290,8 +304,11 @@ faelle:
       keywords:
       - Beschluss rechtswidrig
       - Beschluss unwirksam
+      - unwirksam
       - Verfahrensfehler
       - Heilung
+      - Unbeachtlichkeit
+      - Jahresfrist
       - § 4 Abs. 4 GemO BW
       card_slugs:
       - bw-kom-satzung

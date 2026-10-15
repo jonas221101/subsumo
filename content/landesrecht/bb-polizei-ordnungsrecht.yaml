@@ -9,7 +9,6 @@ topic:
   redaktion:
     erzeugt_von: claude-code (Redaktionsentwurf)
     status: in-pruefung
-    normzitate_geprueft: false
 cards:
 - slug: bb-por-generalklausel
   type: norm
@@ -27,14 +26,13 @@ cards:
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
-  stand: 2026-09
+  stand: 2026-10
 - slug: bb-por-aufbau
   type: schema_step
   front: 'Aufbau: Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Brandenburg'
   back: 'I. Ermächtigungsgrundlage (Brandenburgisches Polizeigesetz (BbgPolG) und Ordnungsbehördengesetz
     (BbgOBG): Standardmaßnahme vor Generalklausel). II. Formelle Rechtmäßigkeit: 1. Zuständigkeit (sachlich:
-    welche Behörde - Ordnungsbehörden (BbgOBG) primär, Polizei (BbgPolG) bei Eilbedürftigkeit (§ 1 Abs.
-    1 BbgPolG); örtlich; instanziell), 2. Verfahren (Anhörung nach dem jeweiligen Landesverwaltungsverfahrensgesetz),
+    welche Behörde - Ordnungsbehörden (BbgOBG) primär, Polizei (BbgPolG) bei Eilbedürftigkeit (§ 1 BbgPolG); örtlich; instanziell), 2. Verfahren (Anhörung nach dem jeweiligen Landesverwaltungsverfahrensgesetz),
     3. Form. III. Materielle Rechtmäßigkeit: 1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose
     ex ante), 2. richtiger Adressat (Störer: §§ 5, 6, 7 BbgPolG; §§ 16, 17, 18 BbgOBG), 3. Rechtsfolge:
     Ermessen und Verhältnismäßigkeit (geeignet, erforderlich, angemessen).'
@@ -46,7 +44,7 @@ cards:
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
-  stand: 2026-09
+  stand: 2026-10
 - slug: bb-por-stoerer
   type: norm
   front: Wo sind Verhaltensstörer, Zustandsstörer und Nichtstörer in Brandenburg geregelt?
@@ -61,11 +59,11 @@ cards:
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
-  stand: 2026-09
+  stand: 2026-10
 - slug: bb-por-zustaendigkeit
   type: definition
   front: Wer ist in Brandenburg für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde oder Polizei?
-  back: 'Ordnungsbehörden (BbgOBG) primär, Polizei (BbgPolG) bei Eilbedürftigkeit (§ 1 Abs. 1 BbgPolG).
+  back: 'Ordnungsbehörden (BbgOBG) primär, Polizei (BbgPolG) bei Eilbedürftigkeit (§ 1 BbgPolG).
     Prüfungsrelevant ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich bei den Verwaltungs-/Ordnungsbehörden;
     der Polizeivollzugsdienst wird tätig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere
     Zuweisung besteht. Ein Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig.'
@@ -74,7 +72,7 @@ cards:
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
-  stand: 2026-09
+  stand: 2026-10
 - slug: bb-por-vollstreckung
   type: norm
   front: Nach welchem Gesetz wird eine Gefahrenabwehrverfügung in Brandenburg vollstreckt?
@@ -87,7 +85,7 @@ cards:
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
-  stand: 2026-09
+  stand: 2026-10
 - slug: bb-por-gefahr
   type: definition
   front: >-
@@ -98,7 +96,7 @@ cards:
       maßgeblich ist die Prognose ex ante aus Sicht eines besonnenen Amtswalters. Konkrete Gefahr: im
       Einzelfall drohend, sie trägt Einzelmaßnahmen (Generalklausel, Standardmaßnahmen). Abstrakte
       Gefahr: nach allgemeiner Lebenserfahrung typischerweise drohend, sie trägt nur den Erlass einer
-      ordnungsbehördliche Verordnung (BbgOBG). Qualifizierte Gefahren erhöhen die Anforderungen:
+      ordnungsbehördlichen Verordnung (BbgOBG). Qualifizierte Gefahren erhöhen die Anforderungen:
       erhebliche Gefahr (bedeutendes Rechtsgut), gegenwärtige Gefahr (Schadenseintritt hat begonnen
       oder steht unmittelbar bevor), Gefahr im Verzug (Abwarten würde den Erfolg der Maßnahme
       gefährden). Vom Gefahrenverdacht spricht man, wenn unklar ist, ob ein Schaden droht; hier kommt
@@ -143,8 +141,7 @@ cards:
       Standardmaßnahmen sind typisierte Eingriffsbefugnisse mit eigenem Tatbestand: Befragung und
       Auskunftspflicht, Vorladung, Identitätsfeststellung, Platzverweisung und Aufenthaltsverbot,
       Gewahrsam, Durchsuchung von Personen und Sachen, Betreten und Durchsuchen von Wohnungen sowie
-      Sicherstellung und Beschlagnahme. Sie sind im BbgPolG geregelt; ob und wie die Befugnisse auch
-      den Ordnungs- bzw. Polizeibehörden zustehen, ist anhand der geltenden Fassung zu prüfen. Sie
+      Sicherstellung und Beschlagnahme. Sie sind im BbgPolG geregelt; die Ordnungsbehörden können sie nur insoweit nutzen, als das BbgOBG sie ihnen zuweist oder auf das BbgPolG verweist. Sie
       gehen der Generalklausel als speziellere Normen vor; ist ihr Tatbestand nicht erfüllt, darf
       nicht ohne Weiteres auf die Generalklausel ausgewichen werden, soweit die Standardmaßnahme die
       Materie abschließend regelt. Verfassungsrechtliche Vorgaben sind zu beachten: Gewahrsam verlangt
@@ -152,7 +149,7 @@ cards:
       grundsätzlich eine richterliche Anordnung (Art. 13 Abs. 2 GG), ihr Betreten zur Gefahrenabwehr
       ist an Art. 13 Abs. 7 GG zu messen.
   norms:
-  - "Standardbefugnisse des BbgPolG (Paragraphen hier nicht angegeben)"
+  
   - "Art. 104 Abs. 2 GG"
   - "Art. 13 Abs. 2 GG"
   - "Art. 13 Abs. 7 GG"
@@ -327,7 +324,7 @@ faelle:
   - prompt: "War die Polizei zuständig?"
     erwartung: >-
         Ja. Für die allgemeine Gefahrenabwehr sind primär die Ordnungsbehörden zuständig; die Polizei
-        wird aber bei Eilbedürftigkeit tätig (§ 1 Abs. 1 BbgPolG). Bei einem laufenden Rettungseinsatz
+        wird aber bei Eilbedürftigkeit tätig (§ 1 BbgPolG). Bei einem laufenden Rettungseinsatz
         können Ordnungsbehörden nicht rechtzeitig handeln, die Eilzuständigkeit der Polizei liegt vor.
   - prompt: "Liegt eine Gefahr vor, und wer ist richtiger Adressat?"
     erwartung: >-
@@ -364,7 +361,7 @@ faelle:
       weight: 1.5
       required: false
       norms:
-      - "§ 1 Abs. 1 BbgPolG"
+      - "§ 1 BbgPolG"
       keywords:
       - "Eilzuständigkeit"
       - "Eilbedürftigkeit"
@@ -409,4 +406,3 @@ faelle:
       - "mildere Mittel"
       card_slugs:
       - "bb-por-stoererauswahl"
-    normzitate_geprueft: false

@@ -52,7 +52,7 @@ cards:
   type: norm
   front: Wann kommt die Genehmigungsfreistellung nach Art. 58 BayBO in Betracht?
   back: >-
-    Die Genehmigungsfreistellung betrifft vor allem Wohngebäude geringer Höhe im Geltungsbereich eines
+    Die Genehmigungsfreistellung betrifft vor allem bestimmte Wohnbauvorhaben im Geltungsbereich eines
     qualifizierten Bebauungsplans, wenn das Vorhaben dessen Festsetzungen nicht widerspricht und die Erschließung
     gesichert ist (Art. 58 BayBO). Der Bauherr reicht die Bauvorlagen bei der Gemeinde ein; er darf mit
     dem Vorhaben beginnen, wenn die Gemeinde nicht innerhalb der gesetzlichen Frist erklärt, dass ein
@@ -71,10 +71,7 @@ cards:
   type: norm
   front: Was prüft die Bauaufsichtsbehörde im vereinfachten Baugenehmigungsverfahren nach Art. 59 BayBO?
   back: >-
-    Das vereinfachte Verfahren gilt für Vorhaben, die keine Sonderbauten sind. Die Bauaufsichtsbehörde
-    prüft nur einen eingeschränkten Katalog (Art. 59 S. 1 BayBO), insbesondere die Zulässigkeit nach Bauplanungsrecht
-    (§§ 29 bis 38 BauGB), beantragte Abweichungen und weitere in Art. 59 S. 1 BayBO genannte öffentlich-rechtliche
-    Anforderungen. Nicht geprüfte Vorschriften gelten gleichwohl materiell, die Baugenehmigung entfaltet
+    Das vereinfachte Verfahren gilt für Vorhaben, die keine Sonderbauten sind. Die Bauaufsichtsbehörde prüft nur einen eingeschränkten Katalog (Art. 59 BayBO), insbesondere die Zulässigkeit nach Bauplanungsrecht (§§ 29 bis 38 BauGB), beantragte Abweichungen und weitere in Art. 59 BayBO abschließend genannte Anforderungen; der genaue Katalog ist dem Gesetzestext zu entnehmen und genau zu subsumieren. Nicht geprüfte Vorschriften gelten gleichwohl materiell, die Baugenehmigung entfaltet
     insoweit aber keine feststellende Wirkung. Das ist für den Nachbarschutz bedeutsam: Der Nachbar muss
     zeigen, dass die Baugenehmigung gerade im Prüfprogramm eine drittschützende Norm verletzt, sonst kann
     er auf das Einschreiten der Bauaufsicht verwiesen werden.
@@ -109,14 +106,14 @@ cards:
   back: >-
     Vor den Außenwänden von Gebäuden sind Abstandsflächen von oberirdischen Gebäuden freizuhalten (Art.
     6 Abs. 1 BayBO). Sie müssen auf dem Grundstück selbst liegen (Art. 6 Abs. 2 BayBO). Die Tiefe bemisst
-    sich nach der Wandhöhe H; sie beträgt 0,4 H, mindestens aber 3 m (Art. 6 Abs. 5 BayBO). Die Wandhöhe
-    wird senkrecht zur Wand vom Schnittpunkt mit der Geländeoberfläche bis zum oberen Abschluss der Wand
+    sich nach der Wandhöhe H; sie beträgt 0,4 H, mindestens aber 3 m (Art. 6 Abs. 5 BayBO). Die Wandhöhe (Art. 6 Abs. 4 BayBO) wird senkrecht zur Wand vom Schnittpunkt mit der Geländeoberfläche bis zum oberen Abschluss der Wand
     gemessen; Dächer sind unter bestimmten Voraussetzungen anzurechnen. Abstandsflächen dienen der Belichtung,
     Belüftung, dem Brandschutz und dem Sozialfrieden. Die Vorschriften sind nachbarschützend, soweit sie
     dem Schutz des Nachbargrundstücks dienen; ein Verstoß ist daher im Nachbarstreit relevant.
   norms:
   - Art. 6 Abs. 1 BayBO
-  - Art. 6 Abs. 2 BayBO
+    - Art. 6 Abs. 2 BayBO
+  - Art. 6 Abs. 4 BayBO
   - Art. 6 Abs. 5 BayBO
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)

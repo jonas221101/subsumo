@@ -27,7 +27,7 @@ cards:
   norms:
   - § 1 PolG BW
   - § 3 PolG BW
-  quellen: &id001
+  quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
@@ -46,7 +46,9 @@ cards:
     vom jeweiligen Landesgesetz ab.
   norms:
   - § 3 PolG BW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-por-schutzgueter
   type: definition
@@ -63,7 +65,9 @@ cards:
     nur zurückhaltend zu bejahen. Das PolG BW nennt beide Schutzgüter in § 1 Abs. 1.
   norms:
   - § 1 PolG BW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-por-standardmassnahmen
   type: norm
@@ -81,7 +85,9 @@ cards:
   - § 3 PolG BW
   - § 26 PolG BW
   - § 27a PolG BW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-por-verhaeltnismaessigkeit
   type: definition
@@ -97,7 +103,9 @@ cards:
     die Ermessensausübung auf der Rechtsfolgenseite.
   norms:
   - PolG BW, Grundsatz der Verhältnismäßigkeit
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-por-anscheinsgefahr
   type: streitstand
@@ -115,15 +123,16 @@ cards:
   norms:
   - § 3 PolG BW
   - § 6 PolG BW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-por-stoerer
   type: norm
   front: >-
     Wo sind Verhaltensstörer, Zustandsstörer und Nichtstörer im PolG BW geregelt?
   back: >-
-    Verhaltensverantwortlichkeit: § 6 PolG BW (Person, die die Gefahr verursacht; Aufsichtspflichtige
-    für Personen unter 14 Jahren oder unter Betreuung). Zustandsverantwortlichkeit: § 7 PolG BW (Eigentümer
+    Verhaltensverantwortlichkeit: § 6 PolG BW (Person, die die Gefahr verursacht; daneben Aufsichtspflichtige bei Kindern). Zustandsverantwortlichkeit: § 7 PolG BW (Eigentümer
     und Inhaber der tatsächlichen Gewalt über eine Sache oder ein Tier, von dem die Gefahr ausgeht). Verursachung
     wird nach der Theorie der unmittelbaren Verursachung beurteilt (Überschreiten der Gefahrenschwelle
     durch die eigene Handlung). Nichtverantwortliche Personen dürfen nur unter den engen Voraussetzungen
@@ -134,7 +143,9 @@ cards:
   - § 6 PolG BW
   - § 7 PolG BW
   - § 9 PolG BW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-por-stoererauswahl
   type: streitstand
@@ -153,24 +164,27 @@ cards:
   - § 6 PolG BW
   - § 7 PolG BW
   - § 114 VwGO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-por-zustaendigkeit
   type: definition
   front: Wer ist in Baden-Württemberg für die Gefahrenabwehr zuständig?
   back: >-
     Das PolG BW unterscheidet die allgemeinen Polizeibehörden (Ortspolizeibehörden: Gemeinden; Kreispolizeibehörden:
-    Landratsämter bzw. Stadtkreise; Regierungspräsidien; Ministerium) vom Polizeivollzugsdienst. Die sachliche
-    Zuständigkeit der Polizeibehörden ergibt sich aus den §§ 105 ff. PolG BW. Grundsätzlich handeln die
+    Landratsämter bzw. Stadtkreise; Regierungspräsidien; Ministerium) vom Polizeivollzugsdienst. Die sachliche Zuständigkeit der Polizeibehörden folgt aus den Zuständigkeitsregeln des PolG BW zum Behördenaufbau. Grundsätzlich handeln die
     Polizeibehörden; der Polizeivollzugsdienst wird tätig, soweit die Polizeibehörden nicht rechtzeitig
     handeln können (Eilzuständigkeit, § 60 PolG BW), und bei besonderen Zuweisungen. Die örtliche Zuständigkeit
     richtet sich nach dem Bezirk. Wird die unzuständige Behörde tätig, ist die Maßnahme formell rechtswidrig;
     die Unbeachtlichkeit nach § 46 LVwVfG ist im Einzelfall zu prüfen.
   norms:
   - § 60 PolG BW
-  - §§ 105 ff. PolG BW
+  
   - § 46 LVwVfG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-por-vollstreckung
   type: norm
@@ -179,7 +193,7 @@ cards:
     Maßgeblich ist das Landesverwaltungsvollstreckungsgesetz (LVwVG). Zwangsmittel sind Zwangsgeld, Ersatzvornahme
     und unmittelbarer Zwang (§ 19 LVwVG). Regelverfahren ist das gestreckte Verfahren: vollstreckbarer
     Verwaltungsakt, Androhung, Festsetzung, Anwendung. Ohne vorausgehenden Verwaltungsakt kann die Behörde
-    bei gegenwärtiger Gefahr im Wege des Sofortvollzugs handeln (§ 21 LVwVG), wenn dies zur Abwehr einer
+    im Wege des Sofortvollzugs handeln (§ 21 LVwVG), wenn dies zur Abwehr einer
     drohenden Gefahr notwendig ist und die Behörde hierbei innerhalb ihrer Befugnisse handelt; die Rechtmäßigkeit
     richtet sich dann nach den hypothetischen Voraussetzungen eines Grundverwaltungsakts. Für den unmittelbaren
     Zwang durch den Polizeivollzugsdienst enthält das PolG BW eigene Regelungen.
@@ -187,7 +201,9 @@ cards:
   - § 19 LVwVG
   - § 21 LVwVG
   - LVwVG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-por-kosten
   type: norm
@@ -198,23 +214,22 @@ cards:
     durch Leistungsbescheid festgesetzt. Beim Abschleppen eines verbotswidrig geparkten Fahrzeugs gilt
     dies entsprechend. Wer als nichtverantwortliche Person nach § 9 PolG BW in Anspruch genommen wird,
     hat einen Ausgleichsanspruch für den entstandenen Schaden (§ 55 PolG BW); Anspruchsgegner ist die
-    Körperschaft, in deren Dienst die Behörde steht. Der Ausgleichsanspruch besteht auch bei rechtswidrigen
-    Maßnahmen gegen Nichtverantwortliche. Daneben bleiben Amtshaftung (§ 839 BGB, Art. 34 GG) und der
+    Körperschaft, in deren Dienst die Behörde steht. Daneben bleiben Amtshaftung (§ 839 BGB, Art. 34 GG) und der
     allgemeine Aufopferungsanspruch möglich. Die Kostenhöhe ist an der Verhältnismäßigkeit zu messen.
   norms:
   - § 9 PolG BW
   - § 55 PolG BW
   - § 839 BGB
   - Art. 34 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-por-rechtsschutz
   type: definition
   front: Welcher Rechtsschutz besteht gegen polizeiliche Maßnahmen?
   back: >-
-    Gegen belastende Verwaltungsakte ist die Anfechtungsklage (§ 42 Abs. 1 Var. 1 VwGO) statthaft; in
-    Baden-Württemberg ist ein Widerspruchsverfahren nur noch teilweise vorgeschrieben (§ 68 VwGO, Landesrecht
-    prüfen). Erledigt sich die Maßnahme (z. B. Platzverweis, Gewahrsam), ist die Fortsetzungsfeststellungsklage
+    Gegen belastende Verwaltungsakte ist die Anfechtungsklage (§ 42 Abs. 1 Var. 1 VwGO) statthaft; zuvor ist das Vorverfahren nach §§ 68 ff. VwGO durchzuführen, soweit es landesrechtlich nicht ausgeschlossen ist. Erledigt sich die Maßnahme (z. B. Platzverweis, Gewahrsam), ist die Fortsetzungsfeststellungsklage
     analog § 113 Abs. 1 S. 4 VwGO statthaft; das berechtigte Interesse folgt häufig aus Wiederholungsgefahr,
     Rehabilitationsinteresse oder tiefgreifendem Grundrechtseingriff. Realakte (Hausdurchsuchung ohne
     Verwaltungsakt) werden mit allgemeiner Feststellungs- oder Leistungsklage angegriffen. Unaufschiebbare
@@ -227,7 +242,9 @@ cards:
   - § 113 Abs. 1 S. 4 VwGO
   - § 80 Abs. 5 VwGO
   - Art. 104 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-por-aufbau
   type: schema_step
@@ -244,7 +261,9 @@ cards:
   - § 3 PolG BW
   - §§ 6, 7, 9 PolG BW
   - § 28 LVwVfG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 schemata:
 - slug: bw-schema-por-massnahme
@@ -252,7 +271,9 @@ schemata:
   norms:
   - § 3 PolG BW
   - §§ 6, 7, 9 PolG BW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   steps:
   - label: I. Ermächtigungsgrundlage
     hinweis: Standardmaßnahme geht der Generalklausel vor; Sperrwirkung beachten.
