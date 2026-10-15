@@ -86,8 +86,8 @@ cards:
     (Täter-Opfer-Ausgleich), seine Tat ganz oder zum überwiegenden Teil wiedergutgemacht
     oder deren Wiedergutmachung ernsthaft erstrebt (§ 46a Nr. 1 StGB), oder hat er
     in einem Fall, in dem die Schadenswiedergutmachung von ihm erhebliche persönliche
-    Leistungen oder persönlichen Verzicht erfordert hat, den Schaden ganz oder zum
-    überwiegenden Teil wiedergutgemacht (§ 46a Nr. 2 StGB), kann das Gericht die Strafe
+    Leistungen oder persönlichen Verzicht erfordert hat, das Opfer ganz oder zum
+    überwiegenden Teil entschädigt (§ 46a Nr. 2 StGB), kann das Gericht die Strafe
     nach § 49 Abs. 1 StGB mildern. Ist keine höhere Strafe als Freiheitsstrafe bis
     zu einem Jahr oder Geldstrafe bis zu 360 Tagessätzen verwirkt, kann es von Strafe
     absehen. Die Vorschrift ist eine Kann-Regelung. Ein bloßes Bezahlen aus eigener
@@ -173,14 +173,14 @@ cards:
   back: >-
     Das Konsumcannabisgesetz (KCanG) ist am 1. April 2024 in Kraft getreten. Cannabis
     wurde damit aus dem Betäubungsmittelrecht ausgegliedert und unterliegt eigenen
-    Regeln. Erlaubt ist Personen ab 18 Jahren mit Wohnsitz oder gewöhnlichem Aufenthalt
-    in Deutschland insbesondere der Besitz von bis zu 25 Gramm Cannabis zum Eigenkonsum
-    (§ 3 Abs. 1 KCanG), am Wohnsitz oder gewöhnlichen Aufenthalt der Besitz von bis zu 50
-    Gramm und von bis zu drei lebenden Cannabispflanzen (§ 3 Abs. 2 KCanG), der private
-    Eigenanbau von bis zu drei Pflanzen (§ 9 KCanG) und der gemeinschaftliche
+    Regeln. Erlaubt ist Personen ab 18 Jahren insbesondere der Besitz von bis zu 25 Gramm
+    Cannabis zum Eigenkonsum (§ 3 Abs. 1 KCanG); am Wohnsitz oder gewöhnlichen Aufenthalt
+    der Besitz von bis zu 50 Gramm (insgesamt) und von bis zu drei lebenden Cannabispflanzen
+    (§ 3 Abs. 2 KCanG); für Personen mit Wohnsitz oder gewöhnlichem Aufenthalt in Deutschland
+    der private Eigenanbau von bis zu drei Pflanzen gleichzeitig (§ 9 KCanG) und der gemeinschaftliche
     nichtgewerbliche Eigenanbau in Anbauvereinigungen (§§ 11 ff. KCanG). Der Konsum
     unterliegt Beschränkungen, etwa in Sichtweite von Schulen, Kinder- und Jugendeinrichtungen
-    sowie in Anwesenheit von Minderjährigen (§ 5 KCanG). Ein Handel ist weiterhin
+    Spielplätzen, Sportstätten und Fußgängerzonen (zwischen 7 und 20 Uhr) sowie in unmittelbarer Gegenwart von Minderjährigen (§ 5 KCanG). Ein Handel ist weiterhin
     nicht erlaubt.
   norms:
   - § 3 KCanG
@@ -195,13 +195,16 @@ cards:
   front: 'KCanG: Was bleibt strafbar (§ 34 KCanG)?'
   back: >-
     § 34 KCanG stellt unter Strafe: unerlaubten Besitz oder Anbau über die erlaubten
-    Mengen hinaus (erhebliche Überschreitungen), unerlaubten Anbau, Handeltreiben,
+    Mengen hinaus (strafbar ab mehr als 30 Gramm außerhalb des Wohnsitzes, mehr als 60 Gramm
+    insgesamt oder mehr als drei lebenden Pflanzen, § 34 Abs. 1 Nr. 1 KCanG), unerlaubten Anbau, Handeltreiben,
     Herstellen, unerlaubte Weitergabe und Abgabe, Verschaffen, Einfuhr und Ausfuhr
     von Cannabis. Der Grundstrafrahmen reicht von Geldstrafe bis zu Freiheitsstrafe von
     drei Jahren (§ 34 Abs. 1 KCanG). Für besonders schwere Fälle und Qualifikationen
     (etwa gewerbsmäßiges oder bandenmäßiges Handeltreiben, Abgabe an Minderjährige)
     sieht § 34 KCanG in weiteren Absätzen erhöhte Strafrahmen vor. Geringe Überschreitungen der
-    Besitzgrenzen sind als Ordnungswidrigkeit zu ahnden (§ 36 KCanG). Das Handeltreiben
+    Besitzgrenzen (mehr als 25 bis 30 Gramm außerhalb des Wohnsitzes, mehr als 50 bis 60 Gramm insgesamt)
+    sind Ordnungswidrigkeiten (§ 36 Abs. 1 Nr. 1 KCanG). Besonders schwere Fälle (§ 34 Abs. 3 KCanG)
+    werden mit Freiheitsstrafe von drei Monaten bis zu fünf Jahren bestraft. Das Handeltreiben
     mit Cannabis wird nicht mehr nach § 29 BtMG verfolgt, sondern nach dem KCanG;
     für medizinisches Cannabis gilt das Medizinal-Cannabisgesetz.
   norms:
@@ -221,7 +224,7 @@ cards:
     entfällt die Strafbarkeit. Für bereits rechtskräftig abgeurteilte Taten enthält
     das Gesetz eine Amnestieregelung: Verhängte, noch nicht vollstreckte Strafen
     für Taten, die nach neuem Recht nicht mehr strafbar sind, werden erlassen; Gesamtstrafen
-    sind unter Beachtung der Neuregelung neu zu bilden (Art. 316p EGStGB in Verbindung
+    sind unter Beachtung der Neuregelung neu zu bilden (Art. 316p EGStGB für vor dem 1. April 2024 verhängte Strafen nach dem BtMG in Verbindung
     mit Art. 313 EGStGB). Die Einzelheiten (Erlass, Neubildung von Gesamtstrafen) regelt Art. 313 EGStGB.
   norms:
   - § 2 Abs. 3 StGB

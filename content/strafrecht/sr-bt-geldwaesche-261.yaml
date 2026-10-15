@@ -37,8 +37,7 @@ cards:
   back: >-
     Gegenstand ist jeder Vermögenswert, nicht nur körperliche Sachen, sondern auch Forderungen,
     Bankguthaben und Rechte. Rechtswidrige Tat ist nach § 11 Abs. 1 Nr. 5 StGB eine Tat, die
-    den Tatbestand eines Strafgesetzes verwirklicht; Ordnungswidrigkeiten genügen nicht. Auch
-    im Ausland begangene Taten kommen in Betracht, wenn sie am Tatort strafbar sind. Ein Gegenstand
+    den Tatbestand eines Strafgesetzes verwirklicht; Ordnungswidrigkeiten genügen nicht. Auch im Ausland begangene Taten kommen nach § 261 Abs. 9 StGB in Betracht, wenn sie am Tatort mit Strafe bedroht sind oder unter die dort genannten EU-Vorgaben fallen und nach deutschem Recht rechtswidrige Taten wären. Ein Gegenstand
     rührt aus der Tat her, wenn der Täter oder ein Beteiligter ihn durch die Tat oder für
     ihre Begehung erlangt hat (Tatertrag), und auch, wenn er an die Stelle des ursprünglichen
     Gegenstands getreten ist (Surrogat). Die Herkunft aus der Tat muss im Zeitpunkt der Tathandlung
@@ -76,7 +75,7 @@ cards:
   back: >-
     Die Tathandlungen sind: (1) Verbergen des Gegenstands; (2) Umtauschen, Übertragen oder
     Verbringen in der Absicht, das Auffinden, die Einziehung oder die Herkunftsermittlung
-    zu vereiteln oder zu gefährden; (3) Sich-oder-einem-Dritten-Verschaffen, also die Erlangung
+    zu vereiteln; (3) Sich-oder-einem-Dritten-Verschaffen, also die Erlangung
     tatsächlicher Verfügungsgewalt; (4) Verwahren oder Verwenden für sich oder einen Dritten,
     wenn der Täter die Herkunft des Gegenstands kennt (maßgeblich ist nach dem Wortlaut die
     Kenntnis zum Zeitpunkt des Erlangens). Verschaffen verlangt bei Nr. 3 im Unterschied zum
@@ -119,8 +118,7 @@ cards:
     durch Annahme eines Honorars verfassungskonform eingeschränkt werden muss (BVerfGE 110,
     226). Zur Wahrung der Berufsfreiheit (Art. 12 Abs. 1 GG) und der Verteidigerstellung ist
     eine Strafbarkeit des Verteidigers nur dann zulässig, wenn er im Zeitpunkt der Annahme
-    des Honorars sichere Kenntnis von der Herkunft des Geldes hat. Dolus eventualis und Leichtfertigkeit
-    genügen nicht. Die Annahme des Honorars ist ein Sich-Verschaffen des Gegenstands. Sie
+    des Honorars sichere Kenntnis von der Herkunft des Geldes hat. Dolus eventualis genügt nicht. Der Gesetzgeber hat dies 2021 in § 261 Abs. 1 Satz 3 StGB (sichere Kenntnis) und Abs. 6 Satz 2 (keine Leichtfertigkeitsstrafbarkeit des Verteidigers) übernommen. Die Beschränkung hat das BVerfG 2015 (2 BvR 2558/14 u. a.) auch auf die Verschleierungsvarianten erstreckt. Die Annahme des Honorars ist ein Sich-Verschaffen des Gegenstands. Sie
     zeigt, dass der weite Tatbestand der Geldwäsche im Einzelfall verfassungskonform einzuschränken
     ist.
   norms:
@@ -137,8 +135,7 @@ cards:
     Wie wird die Strafbarkeit des Vortäters und Vortatbeteiligten wegen Geldwäsche (Selbstgeldwäsche)
     behandelt?
   back: >-
-    Nach § 261 StGB wird wegen Geldwäsche nicht bestraft, wer wegen Beteiligung an der Vortat
-    strafbar ist (Selbstgeldwäsche-Privileg). Der Grund liegt darin, dass die Strafe für die
+    Nach § 261 Abs. 7 StGB wird wegen Geldwäsche nur bestraft, wer wegen Beteiligung an der Vortat strafbar ist, wenn er den Gegenstand in den Verkehr bringt und dabei die Herkunft verschleiert (Selbstgeldwäsche-Privileg); sonst bleibt er straflos. Der Grund liegt darin, dass die Strafe für die
     Vortat den Unrechtsgehalt der bloßen Sicherung und Verwertung der Beute miterfasst
     ("mitbestrafte Nachtat"). Das Privileg gilt nicht, wenn der Vortatbeteiligte den Gegenstand
     in den Verkehr bringt und dabei die rechtswidrige Herkunft verschleiert; dann ist er auch
@@ -178,10 +175,7 @@ cards:
   front: >-
     Welche Rechtsfolgen und Konkurrenzen sind bei § 261 StGB zu beachten?
   back: >-
-    Die Grundstrafe beträgt Freiheitsstrafe von drei Monaten bis zu fünf Jahren; für besonders
-    schwere Fälle (z. B. gewerbsmäßige Begehung oder Begehung als Mitglied einer Bande) ist
-    eine höhere Strafe vorgesehen. Daneben steht die Einziehung nach den §§ 73 ff. StGB. Der
-    Versuch ist strafbar. Eine tätige Reue (freiwillige Anzeige) kann zur Straffreiheit führen.
+    Die Grundstrafe beträgt Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe (Abs. 1); Verpflichtete nach § 2 GwG trifft Freiheitsstrafe von drei Monaten bis zu fünf Jahren (Abs. 4). In besonders schweren Fällen (Regelbeispiele: Gewerbsmäßigkeit, Bande) beträgt der Rahmen sechs Monate bis zehn Jahre (Abs. 5). Leichtfertige Geldwäsche (Abs. 6) wird mit Freiheitsstrafe bis zu zwei Jahren oder Geldstrafe bestraft. Daneben steht die Einziehung nach den §§ 73 ff. StGB. Der Versuch ist strafbar (Abs. 3). Nach Abs. 8 bleibt straffrei, wer die Tat freiwillig anzeigt oder eine Anzeige veranlasst, bevor die Tat entdeckt war, und in den Fällen des Abs. 1 oder 2 zusätzlich die Sicherstellung des Gegenstands bewirkt.
     In Konkurrenz zu §§ 257, 259 StGB (Begünstigung, Hehlerei) ist die Tateinheit in Betracht
     zu ziehen, da die Rechtsgüter unterschiedlich sind. Begünstigung (§ 257 StGB) und Geldwäsche
     unterscheiden sich in der Zielrichtung: Die Begünstigung will dem Vortäter die Vorteile
