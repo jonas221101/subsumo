@@ -8,7 +8,7 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-15'
-    status: ki-freigegeben
+    status: in-pruefung
     normzitate_geprueft: true
 cards:
 - slug: zr-agb-begriff-305
@@ -31,10 +31,10 @@ cards:
     von AGB?
   back: AGB werden nur Vertragsbestandteil, wenn der Verwender bei Vertragsschluss
     die andere Partei ausdrücklich oder, wo dies wegen der Art des Vertragsschlusses
-    nur unter unverhältnismäßigen Schwierigkeiten möglich ist, durch deutlich
-    sichtbaren Aushang auf sie hinweist (§ 305 Abs. 2 Nr. 1 BGB), der anderen Partei
-    die zumutbare Möglichkeit verschafft, in zumutbarer Weise von ihrem Inhalt Kenntnis
-    zu nehmen (§ 305 Abs. 2 Nr. 2 BGB), und die andere Partei mit ihrer Geltung einverstanden
+    nur unter unverhältnismäßigen Schwierigkeiten möglich ist, durch deutlich sichtbaren
+    Aushang auf sie hinweist (§ 305 Abs. 2 Nr. 1 BGB), der anderen Partei die zumutbare
+    Möglichkeit verschafft, in zumutbarer Weise von ihrem Inhalt Kenntnis zu nehmen
+    (§ 305 Abs. 2 Nr. 2 BGB), und die andere Partei mit ihrer Geltung einverstanden
     ist.
   norms:
   - § 305 Abs. 2 BGB
@@ -60,10 +60,10 @@ cards:
   type: norm
   front: Wann wird eine AGB-Klausel nach § 305c Abs. 1 BGB nicht Vertragsbestandteil?
   back: Eine Bestimmung in Allgemeinen Geschäftsbedingungen, die nach den Umständen,
-    insbesondere nach dem äußeren Erscheinungsbild des Vertrags, so ungewöhnlich
-    ist, dass der Vertragspartner des Verwenders mit ihr nicht zu rechnen braucht,
-    wird gemäß § 305c Abs. 1 BGB nicht Vertragsbestandteil - unabhängig von einer
-    inhaltlichen Angemessenheitsprüfung nach § 307 BGB.
+    insbesondere nach dem äußeren Erscheinungsbild des Vertrags, so ungewöhnlich ist,
+    dass der Vertragspartner des Verwenders mit ihr nicht zu rechnen braucht, wird
+    gemäß § 305c Abs. 1 BGB nicht Vertragsbestandteil - unabhängig von einer inhaltlichen
+    Angemessenheitsprüfung nach § 307 BGB.
   norms:
   - § 305c Abs. 1 BGB
   quellen:
@@ -73,11 +73,12 @@ cards:
 - slug: zr-agb-unklarheitenregel-305c2
   type: norm
   front: Was besagt die Unklarheitenregel des § 305c Abs. 2 BGB?
-  back: Bleiben nach Ausschöpfung der anerkannten Auslegungsmethoden Zweifel bei
+  back: 'Bleiben nach Ausschöpfung der anerkannten Auslegungsmethoden Zweifel bei
     der Auslegung einer AGB-Klausel bestehen, gehen diese gemäß § 305c Abs. 2 BGB
     zulasten des Verwenders (contra-proferentem-Regel). Von mehreren vertretbaren
     Auslegungen setzt sich damit im Ergebnis die für den Vertragspartner günstigere
-    durch.
+    durch. Die Auslegung geht der Inhaltskontrolle voraus: Erst wenn feststeht, welchen
+    Inhalt die Klausel hat, kann sie auf ihre Wirksamkeit geprüft werden.'
   norms:
   - § 305c Abs. 2 BGB
   quellen:
@@ -87,17 +88,22 @@ cards:
 - slug: zr-agb-generalklausel-307
   type: definition
   front: 'Definiere: Die Generalklausel des § 307 Abs. 1, Abs. 2 BGB'
-  back: Bestimmungen in Allgemeinen Geschäftsbedingungen sind gemäß § 307 Abs.
-    1 BGB unwirksam, wenn sie den Vertragspartner des Verwenders entgegen den Geboten
-    von Treu und Glauben unangemessen benachteiligen. Eine unangemessene Benachteiligung
+  back: Bestimmungen in Allgemeinen Geschäftsbedingungen sind gemäß § 307 Abs. 1 BGB
+    unwirksam, wenn sie den Vertragspartner des Verwenders entgegen den Geboten von
+    Treu und Glauben unangemessen benachteiligen. Eine unangemessene Benachteiligung
     ist im Zweifel gemäß § 307 Abs. 2 BGB anzunehmen, wenn eine Bestimmung mit wesentlichen
     Grundgedanken der gesetzlichen Regelung, von der abgewichen wird, nicht zu vereinbaren
     ist (Nr. 1) oder wesentliche Rechte oder Pflichten, die sich aus der Natur des
     Vertrags ergeben, so einschränkt, dass die Erreichung des Vertragszwecks gefährdet
-    ist (Nr. 2).
+    ist (Nr. 2). Preis- und Leistungsbeschreibungen sind nach § 307 Abs. 3 S. 1 BGB
+    der Inhaltskontrolle weitgehend entzogen (Kontrollfreiheit); das Transparenzgebot
+    des § 307 Abs. 1 S. 2 BGB bleibt aber anwendbar. Bei Verbraucherverträgen gelten
+    die Vorschriften auch für vorformulierte Einmalbedingungen (§ 310 Abs. 3 BGB).
   norms:
   - § 307 Abs. 1 BGB
   - § 307 Abs. 2 BGB
+  - § 307 Abs. 3 BGB
+  - § 310 Abs. 3 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -105,15 +111,17 @@ cards:
 - slug: zr-agb-klauselverbote-308-309
   type: streitstand
   front: 'Abgrenze: Klauselverbote mit (§ 308 BGB) und ohne (§ 309 BGB) Wertungsmöglichkeit'
-  back: § 309 BGB enthält starre Klauselverbote, bei denen dem Rechtsanwender kein
+  back: '§ 309 BGB enthält starre Klauselverbote, bei denen dem Rechtsanwender kein
     Beurteilungsspielraum verbleibt - liegt der Tatbestand einer Nummer vor, ist die
     Klausel ohne weitere Abwägung unwirksam (z. B. § 309 Nr. 7 BGB zum Ausschluss
-    der Haftung für Körper-, Gesundheits- und Lebensschäden). § 308 BGB enthält
-    dagegen Klauselverbote mit Wertungsmöglichkeit, die unbestimmte Rechtsbegriffe
-    wie "unangemessen lang" oder "ohne sachlichen Grund" verwenden und daher eine
-    Abwägung im Einzelfall erfordern. Beide Kataloge gelten gemäß § 310 Abs. 1
-    BGB nur im Verkehr mit Verbrauchern unmittelbar; im unternehmerischen Verkehr
-    wirken sie über § 307 Abs. 1, 2 BGB als Indiz.
+    der Haftung für Körper-, Gesundheits- und Lebensschäden). § 308 BGB enthält dagegen
+    Klauselverbote mit Wertungsmöglichkeit, die unbestimmte Rechtsbegriffe wie "unangemessen
+    lang" oder "ohne sachlichen Grund" verwenden und daher eine Abwägung im Einzelfall
+    erfordern. Im unternehmerischen Verkehr nimmt § 310 Abs. 1 S. 1 BGB u. a. § 309
+    und § 308 Nr. 1, 2 bis 9 BGB von der unmittelbaren Anwendung aus; sie wirken dort
+    aber über § 307 Abs. 1, 2 BGB als Indiz für die Unangemessenheit. Anwendbar bleiben
+    § 308 Nr. 1a und 1b BGB. Reihenfolge der Inhaltskontrolle: erst § 309, dann §
+    308, zuletzt § 307 BGB.'
   norms:
   - § 308 BGB
   - § 309 BGB
@@ -127,13 +135,16 @@ cards:
   front: Was folgt aus § 306 Abs. 1 und Abs. 2 BGB, wenn eine AGB-Klausel unwirksam
     ist?
   back: Sind AGB ganz oder teilweise nicht Vertragsbestandteil geworden oder unwirksam,
-    bleibt der Vertrag im Übrigen gemäß § 306 Abs. 1 BGB grundsätzlich wirksam.
-    Anstelle der unwirksamen Klausel gelten nach § 306 Abs. 2 BGB die gesetzlichen
-    Vorschriften. Eine geltungserhaltende Reduktion - also die Aufrechterhaltung der
-    Klausel mit gerade noch zulässigem Inhalt - findet nicht statt.
+    bleibt der Vertrag im Übrigen gemäß § 306 Abs. 1 BGB grundsätzlich wirksam. Anstelle
+    der unwirksamen Klausel gelten nach § 306 Abs. 2 BGB die gesetzlichen Vorschriften.
+    Eine geltungserhaltende Reduktion - also die Aufrechterhaltung der Klausel mit
+    gerade noch zulässigem Inhalt - findet nicht statt. Hält der Vertrag ohne die
+    unwirksame Klausel eine unzumutbare Härte für eine Partei bereit, ist er insgesamt
+    unwirksam (§ 306 Abs. 3 BGB).
   norms:
   - § 306 Abs. 1 BGB
   - § 306 Abs. 2 BGB
+  - § 306 Abs. 3 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -146,6 +157,9 @@ schemata:
   - § 305 Abs. 2 BGB
   - § 307 Abs. 1 BGB
   - § 306 Abs. 2 BGB
+  - § 305c Abs. 2 BGB
+  - § 307 Abs. 3 BGB
+  - § 310 Abs. 3 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -154,6 +168,8 @@ schemata:
     children:
     - label: 1. Für eine Vielzahl von Verträgen vorformuliert
     - label: 2. Vom Verwender gestellt
+      hinweis: Bei Verbraucherverträgen genügt die einmalige Verwendung, § 310 Abs.
+        3 Nr. 2 BGB.
   - label: II. Wirksame Einbeziehung, § 305 Abs. 2, 3 BGB
     children:
     - label: 1. Ausdrücklicher Hinweis bzw. deutlich sichtbarer Aushang
@@ -162,16 +178,23 @@ schemata:
   - label: III. Vorrang der Individualabrede, § 305b BGB
     hinweis: Verdrängt eine kollidierende AGB-Klausel vollständig.
   - label: IV. Keine überraschende Klausel, § 305c Abs. 1 BGB
-  - label: V. Inhaltskontrolle
+  - label: V. Auslegung, insbesondere Unklarheitenregel zulasten des Verwenders, §
+      305c Abs. 2 BGB
+    hinweis: Die Auslegung geht der Inhaltskontrolle voraus.
+  - label: VI. Inhaltskontrolle
     children:
-    - label: 1. Klauselverbote ohne Wertungsmöglichkeit, § 309 BGB
-    - label: 2. Klauselverbote mit Wertungsmöglichkeit, § 308 BGB
-    - label: 3. Generalklausel, § 307 Abs. 1, 2 BGB
-    hinweis: Im unternehmerischen Verkehr wirken §§ 308, 309 BGB nur über § 307 BGB,
-      § 310 Abs. 1 BGB.
-  - label: VI. Im Zweifel Auslegung zulasten des Verwenders, § 305c Abs. 2 BGB
-  - label: 'VII. Rechtsfolge: Klausel entfällt, gesetzliches Recht tritt an ihre
-      Stelle, § 306 Abs. 1, 2 BGB'
+    - label: 1. Kontrollfähigkeit, § 307 Abs. 3 BGB
+      hinweis: Preis- und Leistungsbeschreibungen sind weitgehend kontrollfrei (Transparenzgebot
+        bleibt).
+    - label: 2. Klauselverbote ohne Wertungsmöglichkeit, § 309 BGB
+    - label: 3. Klauselverbote mit Wertungsmöglichkeit, § 308 BGB
+    - label: 4. Generalklausel, § 307 Abs. 1, 2 BGB (einschließlich Transparenzgebot,
+        § 307 Abs. 1 S. 2 BGB)
+    hinweis: 'Im unternehmerischen Verkehr wirken §§ 308, 309 BGB nur über § 307 BGB,
+      § 310 Abs. 1 BGB; Verbraucherverträge: § 310 Abs. 3 BGB.'
+  - label: 'VII. Rechtsfolge: Klausel entfällt, gesetzliches Recht tritt an ihre Stelle,
+      § 306 Abs. 1, 2 BGB'
+    hinweis: Gesamtunwirksamkeit nur bei unzumutbarer Härte, § 306 Abs. 3 BGB.
 faelle:
 - slug: zr-fall-moebelhaus-haftungsausschluss
   title: Die beschädigte Wohnungstür
@@ -186,17 +209,16 @@ faelle:
     AGB jederzeit aufgerufen und heruntergeladen werden. Ohne Anklicken der Checkbox
     kann die Bestellung nicht abgeschlossen werden. Die AGB enthalten unter anderem
     folgende, drucktechnisch nicht hervorgehobene Klausel: "Schadensersatzansprüche
-    des Kunden gegen M sind bei leichter Fahrlässigkeit vollständig ausgeschlossen,
-    auch soweit sie auf der Verletzung wesentlicher Vertragspflichten beruhen." Kundin
-    K bestellt bei M ein Sofa. Bei der Anlieferung durch einen Mitarbeiter des M wird
-    die Wohnungstür der K durch leicht fahrlässiges Verhalten des Mitarbeiters beschädigt;
-    die Reparatur kostet 600 Euro. M beruft sich gegenüber K auf den Haftungsausschluss
+    des Kunden gegen M sind bei leichter Fahrlässigkeit vollständig ausgeschlossen,."
+    Kundin K bestellt bei M ein Sofa. Bei der Anlieferung durch einen Mitarbeiter
+    des M wird die Wohnungstür der K durch leicht fahrlässiges Verhalten des Mitarbeiters
+    beschädigt; die Reparatur kostet 600 Euro. M beruft sich gegenüber K auf den Haftungsausschluss
     in seinen AGB.'
   question: Kann K von M Ersatz der Reparaturkosten in Höhe von 600 Euro verlangen?
   steps:
   - prompt: Formuliere den Obersatz zur Anspruchsgrundlage.
-    erwartung: K könnte gegen M einen Anspruch auf Schadensersatz aus § 280 Abs.
-      1 BGB i.V.m. § 241 Abs. 2 BGB wegen Verletzung einer Schutzpflicht bei der Anlieferung
+    erwartung: K könnte gegen M einen Anspruch auf Schadensersatz aus § 280 Abs. 1
+      BGB i.V.m. § 241 Abs. 2 BGB wegen Verletzung einer Schutzpflicht bei der Anlieferung
       haben.
   - prompt: Handelt es sich bei der Klausel um Allgemeine Geschäftsbedingungen, §
       305 Abs. 1 BGB?
@@ -209,17 +231,36 @@ faelle:
   - prompt: Ist die Klausel eine überraschende Klausel nach § 305c Abs. 1 BGB?
     erwartung: Nein - ein Haftungsausschluss in AGB eines Online-Shops ist keine so
       ungewöhnliche Regelung, dass ein Kunde nicht mit ihr rechnen müsste.
-  - prompt: Hält die Klausel der Inhaltskontrolle nach § 307 BGB stand?
-    erwartung: Nein - die Klausel schließt die Haftung für leicht fahrlässige Pflichtverletzungen
-      ausdrücklich auch bei der Verletzung wesentlicher Vertragspflichten (Kardinalpflichten)
-      aus. Das schränkt wesentliche Rechte, die sich aus der Natur des Vertrags ergeben,
-      so ein, dass die Erreichung des Vertragszwecks gefährdet ist, § 307 Abs. 2
-      Nr. 2 BGB - die Klausel benachteiligt K unangemessen und ist nach § 307 Abs.
-      1 BGB unwirksam.
+  - prompt: Ist die Klausel auslegungsbedürftig, § 305c Abs. 2 BGB?
+    erwartung: Nein - die Klausel ist eindeutig; eine Unklarheit, die nach § 305c
+      Abs. 2 BGB zulasten des Verwenders ginge, liegt nicht vor. Die Auslegung geht
+      der Inhaltskontrolle voraus.
+  - prompt: 'Verstößt die Klausel gegen ein Klauselverbot ohne Wertungsmöglichkeit,
+      § 309 BGB (§ 310 Abs. 3 BGB: Verbrauchervertrag)?'
+    erwartung: 'Ja, nach § 309 Nr. 7 a) BGB: Die Klausel schließt die Haftung für
+      Schäden bei leichter Fahrlässigkeit pauschal und ausnahmslos aus und erfasst
+      damit auch Schäden aus der Verletzung von Leben, Körper und Gesundheit. Weil
+      sie nicht zwischen Sach- und Personenschäden differenziert, ist sie insgesamt
+      unwirksam; eine geltungserhaltende Reduktion auf das gerade noch zulässige Maß
+      findet nicht statt. § 309 Nr. 7 b) BGB (grobes Verschulden) ist nicht einschlägig,
+      weil die Klausel nur leichte Fahrlässigkeit betrifft. Die Wertungsvorschrift
+      des § 308 BGB spielt keine Rolle. Die Kontrolle ist eröffnet: Verbrauchervertrag
+      (§ 310 Abs. 3 BGB), keine Kontrollfreiheit nach § 307 Abs. 3 BGB, da die Haftungsklausel
+      von Rechtsvorschriften abweicht.'
+  - prompt: Hielte die Klausel hilfsweise auch der Generalklausel des § 307 BGB nicht
+      stand?
+    erwartung: Ja - die vollständige Freizeichnung auch bei Verletzung wesentlicher
+      Vertragspflichten (Kardinalpflichten) höhlt die Pflichten aus der Natur des
+      Vertrags so aus, dass die Erreichung des Vertragszwecks gefährdet ist, § 307
+      Abs. 2 Nr. 2 BGB; zudem weicht sie von wesentlichen Grundgedanken der §§ 276,
+      280 BGB ab (§ 307 Abs. 2 Nr. 1 BGB). Die Klausel benachteiligt K unangemessen
+      und ist auch nach § 307 Abs. 1 BGB unwirksam. Die verletzte Schutzpflicht (§
+      241 Abs. 2 BGB) ist dafür nicht entscheidend; maßgeblich ist der pauschale Umfang
+      des Ausschlusses.
   - prompt: Welche Rechtsfolge hat die Unwirksamkeit der Klausel für den Kaufvertrag
       und den Anspruch der K?
-    erwartung: Der Kaufvertrag bleibt gemäß § 306 Abs. 1 BGB im Übrigen wirksam;
-      an die Stelle der unwirksamen Klausel tritt nach § 306 Abs. 2 BGB die gesetzliche
+    erwartung: Der Kaufvertrag bleibt gemäß § 306 Abs. 1 BGB im Übrigen wirksam; an
+      die Stelle der unwirksamen Klausel tritt nach § 306 Abs. 2 BGB die gesetzliche
       Regelung, sodass M für die schuldhafte Pflichtverletzung seines Erfüllungsgehilfen
       gemäß § 280 Abs. 1 BGB i.V.m. § 278 BGB haftet.
   - prompt: Ergebnis?
@@ -234,8 +275,11 @@ faelle:
       - § 280 Abs. 1 BGB
       - § 241 Abs. 2 BGB
       keywords:
-      - '280'
-      - '241'
+      - § 280 Abs. 1 i. V. m. § 241 Abs. 2
+      - Schutzpflichtverletzung
+      - Verletzung einer Schutzpflicht
+      - Rücksichtnahmepflicht
+      - Pflichtverletzung bei der Anlieferung
     - id: p2
       label: AGB-Eigenschaft nach § 305 Abs. 1 BGB und wirksame Einbeziehung nach
         § 305 Abs. 2 BGB bejaht
@@ -245,8 +289,12 @@ faelle:
       - § 305 Abs. 1 BGB
       - § 305 Abs. 2 BGB
       keywords:
-      - '305'
-      - Einbeziehung
+      - Verwender
+      - für eine Vielzahl von Verträgen vorformuliert
+      - zumutbare Möglichkeit der Kenntnisnahme
+      - Einverständnis
+      - § 305 Abs. 2
+      - Einbeziehung in den Vertrag
       card_slugs:
       - zr-agb-begriff-305
       - zr-agb-einbeziehung-305-2
@@ -255,22 +303,33 @@ faelle:
       weight: 0.5
       required: false
       keywords:
-      - 305c
-      - überraschend
+      - § 305c Abs. 1
+      - keine überraschende Klausel
+      - nicht ungewöhnlich
+      - Überraschungseffekt
+      - nicht überraschend
       card_slugs:
       - zr-agb-ueberraschende-klausel-305c1
     - id: p4
-      label: Unwirksamkeit der Klausel nach § 307 Abs. 1, Abs. 2 Nr. 2 BGB wegen Ausschlusses
-        der Haftung für die Verletzung wesentlicher Vertragspflichten sauber begründet
+      label: Unwirksamkeit der Klausel zuerst nach § 309 Nr. 7 a) BGB (Klauselverbot
+        ohne Wertungsmöglichkeit), hilfsweise nach § 307 Abs. 1, Abs. 2 Nr. 2 BGB
+        sauber begründet
       weight: 3.5
       required: true
       norms:
+      - § 309 Nr. 7 BGB
       - § 307 Abs. 1 BGB
       - § 307 Abs. 2 BGB
       keywords:
-      - '307'
-      - Kardinalpflicht
-      - wesentliche Vertragspflichten
+      - § 309 Nr. 7
+      - § 309 Nr. 7 a
+      - Klauselverbot ohne Wertungsmöglichkeit
+      - Körper- und Gesundheitsschäden erfasst
+      - Verletzung von Leben, Körper, Gesundheit
+      - pauschaler Haftungsausschluss
+      - Kardinalpflichten
+      - § 307 Abs. 2 Nr. 2
+      - Aushöhlung der Vertragspflichten
       card_slugs:
       - zr-agb-generalklausel-307
     - id: p5
@@ -282,14 +341,23 @@ faelle:
       - § 306 Abs. 1 BGB
       - § 306 Abs. 2 BGB
       keywords:
-      - '306'
-      - gesetzliche Vorschriften
+      - § 306 Abs. 2
+      - § 306 Abs. 1
+      - Gesamtunwirksamkeit der Klausel
+      - keine geltungserhaltende Reduktion
+      - Vertrag bleibt im Übrigen wirksam
+      - gesetzliche Regelung tritt an die Stelle
+      - Haftung für den Erfüllungsgehilfen
       card_slugs:
       - zr-agb-rechtsfolge-306
     - id: p6
-      label: 'Ergebnis: Anspruch der K auf 600 Euro besteht'
+      label: 'Ergebnis: Haftungsausschluss unwirksam, Schadensersatzanspruch der K
+        besteht'
       weight: 1.0
       required: false
       keywords:
-      - 600 Euro
-      - Anspruch besteht
+      - Haftungsausschluss greift nicht
+      - Haftungsausschluss ist unwirksam
+      - M haftet für den Mitarbeiter
+      - Schadensersatzanspruch aus § 280 Abs. 1 (+)
+      - Anspruch auf Ersatz der Reparaturkosten besteht

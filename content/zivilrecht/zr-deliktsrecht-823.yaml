@@ -8,17 +8,19 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-13'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: zr-delikt-rechtsgutsverletzung
   type: definition
   front: Welche Rechtsgüter/Rechte schützt § 823 Abs. 1 BGB?
-  back: '§ 823 Abs. 1 BGB schützt abschließend aufgezählt: Leben, Körper, Gesundheit,
-    Freiheit, Eigentum und sonstige Rechte (absolute Rechte mit Ausschlussfunktion,
-    z. B. dingliche Rechte, das Persönlichkeitsrecht oder als Auffangtatbestand der
-    eingerichtete und ausgeübte Gewerbebetrieb). Reine Vermögensschäden sind nicht
-    erfasst.'
+  back: 'Der Katalog des § 823 Abs. 1 BGB ist abschließend: Leben, Körper, Gesundheit,
+    Freiheit, Eigentum und ein sonstiges Recht. Als sonstiges Recht zählen nur absolute
+    Rechte mit Ausschlussfunktion, etwa beschränkte dingliche Rechte, das berechtigte
+    Besitzrecht, das allgemeine Persönlichkeitsrecht oder das Namensrecht. Das Recht
+    am eingerichteten und ausgeübten Gewerbebetrieb ist ein von der Rechtsprechung
+    entwickelter, subsidiärer Auffangtatbestand und kein Gegenbeispiel zur Abgeschlossenheit
+    des Katalogs. Reine Vermögensschäden sind nicht erfasst.'
   norms:
   - § 823 Abs. 1 BGB
   quellen:
@@ -41,11 +43,10 @@ cards:
   type: definition
   front: 'Definiere: haftungsbegründende Kausalität im Deliktsrecht'
   back: 'Die Verletzungshandlung muss für die Rechtsgutsverletzung nach der Äquivalenztheorie
-    (conditio sine qua non) kausal sein und darf sich nicht als völlig außerhalb
-    jeder Lebenserfahrung liegende, adäquat nicht mehr zurechenbare Folge darstellen
-    (Adäquanztheorie). Zusätzlich begrenzend wirkt der Schutzzweck der Norm: Nur
-    solche Schadensfolgen werden zugerechnet, die gerade in den Schutzbereich des
-    § 823 Abs. 1 BGB fallen.'
+    (conditio sine qua non) kausal sein und darf sich nicht als völlig außerhalb jeder
+    Lebenserfahrung liegende, adäquat nicht mehr zurechenbare Folge darstellen (Adäquanztheorie).
+    Zusätzlich begrenzend wirkt der Schutzzweck der Norm: Nur solche Schadensfolgen
+    werden zugerechnet, die gerade in den Schutzbereich des § 823 Abs. 1 BGB fallen.'
   norms:
   - § 823 Abs. 1 BGB
   quellen:
@@ -53,7 +54,7 @@ cards:
   stand: 2026-09
 - slug: zr-delikt-rechtswidrigkeit
   type: definition
-  front: Wie wird die Rechtswidrigkeit bei § 823 Abs. 1 BGB gepruft (Lehre vom Erfolgsunrecht)?
+  front: Wie wird die Rechtswidrigkeit bei § 823 Abs. 1 BGB geprüft (Lehre vom Erfolgsunrecht)?
   back: 'Nach der Lehre vom Erfolgsunrecht indiziert die Verwirklichung des Tatbestands
     - also die Rechtsgutsverletzung durch die Verletzungshandlung - grundsätzlich
     die Rechtswidrigkeit; sie entfällt nur bei eingreifenden Rechtfertigungsgründen
@@ -69,8 +70,8 @@ cards:
   type: definition
   front: 'Definiere: Fahrlässigkeit im Deliktsrecht, § 276 Abs. 2 BGB'
   back: 'Fahrlässig handelt, wer die im Verkehr erforderliche Sorgfalt außer Acht
-    lässt, § 276 Abs. 2 BGB. Maßgeblich ist ein objektiv-abstrakter Maßstab: Es
-    kommt darauf an, wie sich ein gewissenhafter und besonnener Angehöriger des betroffenen
+    lässt, § 276 Abs. 2 BGB. Maßgeblich ist ein objektiv-abstrakter Maßstab: Es kommt
+    darauf an, wie sich ein gewissenhafter und besonnener Angehöriger des betroffenen
     Verkehrskreises in der konkreten Situation verhalten hätte - individuelle Fähigkeiten
     des Schädigers bleiben grundsätzlich außer Betracht.'
   norms:
@@ -82,11 +83,11 @@ cards:
 - slug: zr-delikt-schaden-haftungsausfuellend
   type: definition
   front: 'Abgrenze: haftungsbegründende und haftungsausfüllende Kausalität'
-  back: Die haftungsbegründende Kausalität verbindet die Verletzungshandlung mit
-    der Rechtsgutsverletzung selbst (dem 'Ob' der Haftung). Die haftungsausfüllende
-    Kausalität verbindet die Rechtsgutsverletzung mit dem daraus resultierenden Schaden
-    (dem 'Wie viel' der Haftung) und bestimmt so den Umfang des nach §§ 249 ff. BGB
-    zu ersetzenden Schadens.
+  back: Die haftungsbegründende Kausalität verbindet die Verletzungshandlung mit der
+    Rechtsgutsverletzung selbst (dem 'Ob' der Haftung). Die haftungsausfüllende Kausalität
+    verbindet die Rechtsgutsverletzung mit dem daraus resultierenden Schaden (dem
+    'Wie viel' der Haftung) und bestimmt so den Umfang des nach §§ 249 ff. BGB zu
+    ersetzenden Schadens.
   norms:
   - § 823 Abs. 1 BGB
   - § 249 BGB
@@ -134,10 +135,14 @@ schemata:
       positiv festzustellen.
   - label: V. Verschulden, § 276 BGB
     children:
+    - label: 0. Deliktsfähigkeit, §§ 827, 828 BGB
+      hinweis: Kinder unter sieben Jahren sowie Bewusstlose bzw. Geistesgestörte haften
+        nicht; Minderjährige zwischen 7 und 17 Jahren nur bei Einsichtsfähigkeit.
     - label: 1. Vorsatz
     - label: 2. oder Fahrlässigkeit (objektiv-abstrakter Maßstab)
-  - label: VI. Schaden und haftungsausfüllende Kausalität
-  - label: 'VII. Rechtsfolge: Schadensersatz, §§ 249 ff. BGB'
+  - label: VI. Schaden und haftungsausfüllende Kausalität; Mitverschulden, § 254 BGB
+  - label: 'VII. Rechtsfolge: Schadensersatz, §§ 249 ff. BGB; bei Körper- oder Gesundheitsverletzung
+      auch Schmerzensgeld, § 253 Abs. 2 BGB'
 faelle:
 - slug: zr-fall-radfahrer-rotlicht
   title: Der abgelenkte Radfahrer
@@ -147,12 +152,16 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - BGB, amtliche Fassung
   facts: Radfahrer R fährt, während er auf sein Mobiltelefon schaut, bei Rotlicht
-    über eine Kreuzung. Fußgänger F, der bei Grün die Fahrbahn überquert, wird
-    von R erfasst und stürzt. F erleidet einen Bruch des rechten Unterarms; die ärztliche
+    über eine Kreuzung. Fußgänger F, der bei Grün die Fahrbahn überquert, wird von
+    R erfasst und stürzt. F erleidet einen Bruch des rechten Unterarms; die ärztliche
     Behandlung kostet 800 Euro. Zudem wird sein Mantel beim Sturz zerrissen; ein gleichwertiger
-    Ersatz kostet 150 Euro. F verlangt von R Ersatz in Höhe von insgesamt 950 Euro.
-  question: Hat F gegen R einen Anspruch auf Schadensersatz in Höhe von 950 Euro
-    aus § 823 Abs. 1 BGB?
+    Ersatz kostet 150 Euro. F hat die Behandlungskosten selbst bezahlt; die Frage
+    eines Forderungsübergangs auf eine Krankenkasse (§ 116 SGB X) ist nicht zu prüfen.
+    F verlangt von R Ersatz in Höhe von insgesamt 950 Euro und außerdem ein angemessenes
+    Schmerzensgeld.
+  question: Hat F gegen R einen Anspruch auf Schadensersatz in Höhe von 950 Euro aus
+    § 823 Abs. 1 BGB? Kommt daneben ein Schmerzensgeldanspruch dem Grunde nach in
+    Betracht?
   steps:
   - prompt: Formuliere den Obersatz.
     erwartung: F könnte gegen R einen Anspruch auf Schadensersatz in Höhe von 950
@@ -164,8 +173,8 @@ faelle:
     erwartung: Im Überfahren der roten Ampel durch R, während er durch sein Mobiltelefon
       abgelenkt war.
   - prompt: Ist die haftungsbegründende Kausalität gegeben?
-    erwartung: Ja - hätte R nicht bei Rot die Kreuzung überquert, wäre es nicht
-      zur Kollision gekommen; der Erfolg liegt auch nicht außerhalb jeder Lebenserfahrung.
+    erwartung: Ja - hätte R nicht bei Rot die Kreuzung überquert, wäre es nicht zur
+      Kollision gekommen; der Erfolg liegt auch nicht außerhalb jeder Lebenserfahrung.
   - prompt: Hat R fahrlässig gehandelt?
     erwartung: 'Ja, § 276 Abs. 2 BGB: Ein gewissenhafter Verkehrsteilnehmer hätte
       das Rotlicht beachtet und sich nicht durch sein Mobiltelefon ablenken lassen;
@@ -173,6 +182,11 @@ faelle:
   - prompt: Wie hoch ist der ersatzfähige Schaden?
     erwartung: 950 Euro - 800 Euro Behandlungskosten und 150 Euro für den zerrissenen
       Mantel.
+  - prompt: Kann F daneben Schmerzensgeld verlangen?
+    erwartung: 'Ja, dem Grunde nach: Wegen der Verletzung von Körper und Gesundheit
+      kann F auch für den immateriellen Schaden eine billige Entschädigung in Geld
+      verlangen, § 253 Abs. 2 BGB; die Höhe bemisst sich nach Art und Schwere der
+      Verletzung und ist hier nicht zu beziffern.'
   expectation:
     pruefpunkte:
     - id: p1
@@ -182,15 +196,19 @@ faelle:
       norms:
       - § 823 Abs. 1 BGB
       keywords:
-      - '823'
+      - Schadensersatzanspruch aus unerlaubter Handlung
+      - deliktischer Anspruch
+      - Anspruch aus unerlaubter Handlung
     - id: p2
       label: Rechtsgutsverletzung (Körper/Gesundheit und Eigentum) benannt
       weight: 1.5
       required: false
       keywords:
       - Rechtsgutsverletzung
-      - Gesundheit
-      - Eigentum
+      - Körper und Gesundheit verletzt
+      - Verletzung des Eigentums am Mantel
+      - Körperverletzung
+      - Eigentumsverletzung
       card_slugs:
       - zr-delikt-rechtsgutsverletzung
     - id: p3
@@ -198,8 +216,10 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - Rotlicht
-      - Verletzungshandlung
+      - Rotlichtverstoß
+      - Missachtung des Rotlichts
+      - Ablenkung durch das Mobiltelefon
+      - Verletzungshandlung durch aktives Tun
       card_slugs:
       - zr-delikt-verletzungshandlung
     - id: p4
@@ -207,8 +227,10 @@ faelle:
       weight: 1.5
       required: false
       keywords:
-      - Kausalität
-      - kausal
+      - haftungsbegründende Kausalität
+      - conditio sine qua non
+      - Äquivalenztheorie
+      - Adäquanz
       card_slugs:
       - zr-delikt-haftungsbegruendende-kausalitaet
     - id: p5
@@ -216,8 +238,10 @@ faelle:
       weight: 1.0
       required: false
       keywords:
+      - Rechtswidrigkeit indiziert
+      - Erfolgsunrecht
+      - keine Rechtfertigungsgründe
       - rechtswidrig
-      - indiziert
       card_slugs:
       - zr-delikt-rechtswidrigkeit
     - id: p6
@@ -228,9 +252,11 @@ faelle:
       norms:
       - § 276 Abs. 2 BGB
       keywords:
+      - § 276 Abs. 2
+      - im Verkehr erforderliche Sorgfalt
+      - objektiv-abstrakter Maßstab
+      - Sorgfaltspflichtverletzung
       - fahrlässig
-      - Sorgfalt
-      - '276'
       card_slugs:
       - zr-delikt-verschulden-276
     - id: p7
@@ -238,15 +264,32 @@ faelle:
       weight: 2.0
       required: true
       keywords:
-      - '950'
-      - '800'
-      - '150'
+      - Heilbehandlungskosten
+      - Ersatz des zerrissenen Mantels
+      - § 249 Abs. 2
+      - haftungsausfüllende Kausalität
+      - Zeitwert
+      - Wiederbeschaffungswert
       card_slugs:
       - zr-delikt-schaden-haftungsausfuellend
     - id: p8
-      label: 'Ergebnis: Anspruch des F gegen R besteht'
+      label: 'Ergebnis: Schadensersatzanspruch des F gegen R besteht'
       weight: 1.0
       required: false
       keywords:
-      - Anspruch besteht
-      - F gegen R
+      - Schadensersatzanspruch aus § 823 Abs. 1 besteht
+      - F kann von R Ersatz verlangen
+      - R haftet für den Schaden
+    - id: p9
+      label: Schmerzensgeld wegen der Körperverletzung dem Grunde nach, § 253 Abs.
+        2 BGB
+      weight: 1.0
+      keywords:
+      - § 253 Abs. 2
+      - immaterieller Schaden
+      - billige Entschädigung in Geld
+      - Schmerzensgeldanspruch dem Grunde nach
+      norms:
+      - § 253 Abs. 2 BGB
+      card_slugs:
+      - zr-delikt-schaden-haftungsausfuellend
