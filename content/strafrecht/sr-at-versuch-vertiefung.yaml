@@ -45,7 +45,7 @@ cards:
     Problem: Mittäter wirken arbeitsteilig; setzt einer von ihnen an, ist fraglich,
     ob dies auch den anderen zuzurechnen ist, die noch nicht tätig geworden sind.
 
-    Gesamtlösung (Rspr., h.M.): Versuchsbeginn liegt für alle Mittäter vor, sobald
+    Gesamtlösung (Rspr. und Teile der Literatur): Versuchsbeginn liegt für alle Mittäter vor, sobald
     einer von ihnen nach dem gemeinsamen Tatplan unmittelbar ansetzt (§ 25 Abs. 2
     StGB: wechselseitige Zurechnung der Tatbeiträge). Der Tatplan ist maßgeblich.
     Auch der Mittäter, der erst später eingreifen soll, setzt damit an.
@@ -58,8 +58,9 @@ cards:
     Differenzierende Ansätze: Zurechnung nur, wenn der vom Tatbeitrag des Einzelnen
     abhängige Teil unmittelbar bevorsteht.
 
-    In Klausuren ist regelmäßig die Gesamtlösung vorzugswürdig; sie harmoniert mit
-    der Mittäterzurechnung.
+    Klausurhinweis: Die Rechtsprechung folgt der Gesamtlösung, die zur wechselseitigen
+    Zurechnung nach § 25 Abs. 2 StGB passt; beide Ansichten sind vertretbar und zu
+    begründen. Entscheidend ist stets der Tatplan.
   norms:
   - § 22 StGB
   - § 25 Abs. 2 StGB
@@ -74,22 +75,22 @@ cards:
     Versuch des Hintermanns beginnt, wenn er auf das Werkzeug einwirkt, oder erst,
     wenn das Werkzeug selbst ansetzt.
 
-    Gesamtlösung (Einwirkungstheorie): Der Hintermann setzt bereits mit der Einwirkung
-    auf das Werkzeug an, wenn er alles Erforderliche getan hat; der Versuch beginnt
-    mit der Einwirkung. Argument: Die Tat des Werkzeugs wird dem Hintermann voll
-    zugerechnet.
+    Einwirkungstheorie (Teil der Lit.): Der Hintermann setzt bereits mit der Einwirkung
+    auf das Werkzeug an. Argument: Die Tat des Werkzeugs wird dem Hintermann voll
+    zugerechnet. Kritik: Der Versuch beginnt sehr früh, auch wenn das Werkzeug noch
+    lange nicht tätig werden soll.
 
-    Einzellösung (Teil der Lit.): Der Versuch beginnt erst, wenn das Werkzeug
-    unmittelbar ansetzt. Argument: Erst dann ist das Rechtsgut gefährdet; ohne
+    Tatmittlertheorie (Einzellösung, Teil der Lit.): Der Versuch beginnt erst, wenn
+    das Werkzeug unmittelbar ansetzt. Argument: Erst dann ist das Rechtsgut gefährdet; ohne
     Handlung des Werkzeugs bleibt die Tat im Vorbereitungsstadium.
 
-    Rspr. und vermittelnde Lösung: Der Versuch beginnt, wenn der Hintermann das
+    Vermittelnde Lösung (Rspr. und h.M.): Der Versuch beginnt, wenn der Hintermann das
     Geschehen aus der Hand gibt und aus seiner Sicht die Tat bei ungestörtem Ablauf
     unmittelbar in die Verwirklichung des Tatbestands einmündet oder das Werkzeug
     sofort tätig werden soll. Wird das Werkzeug erst später tätig, liegt noch kein
     Ansetzen vor.
 
-    Hinweis: Die vermittelnde Lösung ist in Klausuren die gängige Argumentationslinie.
+    Hinweis: Die vermittelnde Lösung (Entlassen des Werkzeugs aus dem Herrschaftsbereich) ist die gängige Argumentationslinie.
   norms:
   - § 22 StGB
   - § 25 Abs. 1 Var. 2 StGB
@@ -114,7 +115,7 @@ cards:
     Gefährdungsansatz (h.M.): Maßgeblich ist, ob der Garant nach seiner Vorstellung
     das Rechtsgut unmittelbar gefährdet sieht und die Gefahr nach dem Tatplan sofort
     in den Erfolg umschlagen kann; dann beginnt der Versuch mit dem Verstreichenlassen
-    der nächsten Möglichkeit.
+    der Möglichkeit, die Gefahr abzuwenden.
 
     Die h.M. bevorzugt den Gefährdungsansatz, weil er die Gefährdungsformel auf
     das Unterlassen überträgt.
@@ -131,8 +132,8 @@ cards:
     Beim untauglichen Versuch irrt der Täter über Tatsachen: Er stellt sich einen
     Sachverhalt vor, der, wenn er vorläge, einen Straftatbestand erfüllen würde (etwa
     er schießt auf eine bereits tote Person, die er für lebend hält). Der untaugliche
-    Versuch ist nach § 22 StGB strafbar (außer er ist grob unverständig, § 23 Abs. 3
-    StGB). Beim Wahndelikt irrt der Täter dagegen über Rechtsfragen: Er hält ein tatsächlich
+    Versuch ist nach § 22 StGB strafbar ; bei grobem Unverstand kann das Gericht von Strafe absehen oder sie mildern
+    (§ 23 Abs. 3 StGB). Beim Wahndelikt irrt der Täter dagegen über Rechtsfragen: Er hält ein tatsächlich
     straflos zulässiges Verhalten für strafbar, weil er eine Strafnorm erfindet oder
     deren Grenzen zu weit zieht (umgekehrter Verbotsirrtum). Das Wahndelikt ist straflos, weil es kein Versuch ist. Maßgeblich ist
     die Frage, ob der Täter einen Tatsachenirrtum (untauglich) oder einen Rechtsirrtum
@@ -162,7 +163,7 @@ cards:
     Subjektive Theorie: Strafgrund ist der betätigte rechtsfeindliche Wille. Kritik:
     Auch der bloße Wille ohne Außenwirkung bliebe strafbar.
 
-    Eindruckstheorie (h.M., Rspr.): Strafgrund ist der durch die Tat betätigte
+    Eindruckstheorie (Rspr. und h.M.): Strafgrund ist der durch die Tat betätigte
     rechtsfeindliche Wille, der geeignet ist, das Vertrauen der Allgemeinheit in die
     Geltung der Rechtsordnung zu erschüttern und den Rechtsfrieden zu stören. Daraus
     folgen die Strafbarkeit des untauglichen Versuchs und die Privilegierung des grob
@@ -226,11 +227,10 @@ cards:
     ist und vom Täter mit dem Willen gesetzt wird, den Erfolg abzuwenden. Der Täter
     muss nicht selbst den Erfolg abwenden; er kann sich Dritter bedienen (etwa durch
     Notruf), muss die Rettung aber selbst in Gang setzen und darf sie nicht dem Zufall
-    überlassen. Die Anforderungen an die Qualität der Rettungsmaßnahmen sind nicht
-    einheitlich: Teile der Literatur verlangen die bestmögliche Rettungsmaßnahme; die
-    Rechtsprechung stellt geringere Anforderungen und lässt genügen, dass der Täter
-    eine nach seiner Vorstellung geeignete Maßnahme ergreift, die für die Nichtvollendung
-    ursächlich wird. Tritt der Erfolg trotz der Bemühung ein, scheidet ein Rücktritt
+    überlassen. Die Anforderungen an die Qualität der Rettungsmaßnahmen sind umstritten:
+    Nach einer Auffassung muss der Täter die aus seiner Sicht bestmögliche Rettungsmöglichkeit
+    ergreifen; nach anderer Auffassung genügt eine nach seiner Vorstellung geeignete
+    Maßnahme, die für die Nichtvollendung ursächlich wird. Tritt der Erfolg trotz der Bemühung ein, scheidet ein Rücktritt
     aus; das bloße Bemühen nach § 24 Abs. 1 S. 2 und Abs. 2 S. 2 StGB genügt nur,
     wenn die Tat ohne Zutun des Täters unvollendet bleibt.
   norms:
@@ -281,11 +281,11 @@ faelle:
     dem Plan soll A eine mit tödlichem Gift versetzte Praline in C's Wohnung auf den
     Tisch legen; B soll C währenddessen im Treppenhaus aufhalten, damit A ungestört
     arbeiten kann. A legt die Praline auf den Tisch, während B im Treppenhaus mit
-    C spricht. C betritt unmittelbar darauf die Wohnung, sieht die Praline sofort und isst sie. A beobachtet
+    C spricht. C, der bekanntermaßen jede Süßigkeit sofort isst, betritt unmittelbar darauf die Wohnung und isst die Praline. A beobachtet
     dies, erschrickt, bereut seine Tat und ruft sofort einen Notarzt. C überlebt dank
     schneller Behandlung. B hat nichts unternommen und von allem nichts bereut.
   question: Wie haben sich A und B wegen versuchten Totschlags (§§ 212 Abs. 1, 22,
-    23 Abs. 1, 25 Abs. 2 StGB) strafbar gemacht? Heimtücke ist nicht zu prüfen.
+    23 Abs. 1, 25 Abs. 2 StGB) strafbar gemacht? Heimtücke und andere Delikte (etwa Körperverletzungsdelikte) sind nicht zu prüfen.
   steps:
   - prompt: Liegen Tatentschluss und unmittelbares Ansetzen bei A und B vor?
     erwartung: Ja. Beide handelten mit Tötungsvorsatz und gemeinsamem Tatplan. A
@@ -302,9 +302,11 @@ faelle:
       eine eigene, ursächliche Rettungshandlung verhindert. Er ist nach § 24 Abs. 2 S. 1
       StGB wegen Versuchs nicht zu bestrafen (persönlicher Strafaufhebungsgrund).
   - prompt: Wirkt der Rücktritt des A auch zugunsten des B?
-    erwartung: Nein. Der Rücktritt wirkt nur persönlich. B hat die Vollendung weder
-      verhindert noch sich ernsthaft darum bemüht. Dass die Tat unvollendet blieb, kam nicht
-      durch sein Zutun. Ein Rücktritt nach § 24 Abs. 2 S. 2 StGB scheidet daher aus.
+    erwartung: Nein. Der Rücktritt des A ist ein persönlicher Strafaufhebungsgrund
+      und wirkt nur persönlich, nicht zugunsten des B. B hat die Vollendung weder
+      verhindert noch sich ernsthaft darum bemüht. Dass die Tat unvollendet blieb,
+      kam nicht durch sein Zutun. Ein Rücktritt des B nach § 24 Abs. 2 StGB scheidet
+      daher aus.
   - prompt: Wie ist die Strafbarkeit von B zu beurteilen?
     erwartung: B ist wegen versuchten Totschlags in Mittäterschaft strafbar (§§ 212
       Abs. 1, 22, 23 Abs. 1, 25 Abs. 2 StGB).

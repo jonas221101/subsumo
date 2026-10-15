@@ -42,9 +42,9 @@ cards:
     verschoben durch besonders schwere Fälle (Regelbeispiele), minder schwere Fälle
     oder gesetzlich vertypte Milderungsgründe nach § 49 StGB (etwa Versuch, § 23
     Abs. 2 StGB, Beihilfe, § 27 Abs. 2 StGB). Beispiel: Bei zeitiger Freiheitsstrafe
-    verringert sich das Höchstmaß auf drei Viertel (§ 49 Abs. 1 Nr. 2 StGB); statt
-    lebenslanger Freiheitsstrafe tritt die Freiheitsstrafe von drei bis fünfzehn Jahren
-    (§ 49 Abs. 1 Nr. 1 StGB). Ein Umstand, der sowohl einen minder schweren Fall als
+    verringert sich das Höchstmaß auf drei Viertel (§ 49 Abs. 1 Nr. 2 StGB); an die Stelle
+    lebenslanger Freiheitsstrafe tritt Freiheitsstrafe nicht unter drei Jahren (§ 49
+    Abs. 1 Nr. 1 StGB; Höchstmaß dann 15 Jahre, § 38 Abs. 2 StGB). Ein Umstand, der sowohl einen minder schweren Fall als
     auch einen gesetzlichen Milderungsgrund begründen würde, darf nur einmal berücksichtigt
     werden (§ 50 StGB). Danach folgt die Zumessung im engeren Sinn innerhalb des Rahmens
     anhand der Umstände nach § 46 StGB.
@@ -114,7 +114,7 @@ cards:
     (Zweiteilung). Eine Freiheitsstrafe unter sechs Monaten darf nur verhängt werden,
     wenn besondere Umstände in der Tat oder der Persönlichkeit des Täters sie zur Einwirkung
     auf den Täter oder zur Verteidigung der Rechtsordnung unerlässlich machen (§ 47
-    Abs. 1 StGB). Sonst ist auf Geldstrafe zu erkennen (§ 47 Abs. 2 StGB).
+    Abs. 1 StGB). Sonst ist auf Geldstrafe zu erkennen; droht das Gesetz keine Geldstrafe an, gilt dies nach § 47 Abs. 2 StGB, wenn keine Freiheitsstrafe von sechs Monaten oder mehr in Betracht kommt.
   norms:
   - § 40 Abs. 1 StGB
   - § 40 Abs. 2 StGB
@@ -154,8 +154,8 @@ cards:
     kann zur Bewährung ausgesetzt werden, wenn nach der Gesamtwürdigung von Tat und
     Persönlichkeit des Verurteilten besondere Umstände vorliegen (§ 56 Abs. 2 S. 1
     StGB). Bei der Prüfung kann auch das Bemühen um Schadenswiedergutmachung
-    berücksichtigt werden (§ 56 Abs. 2 S. 2 StGB). Die Vollstreckung einer Freiheitsstrafe,
-    die nicht mindestens sechs Monate beträgt, wird nicht ausgesetzt, wenn die
+    berücksichtigt werden (§ 56 Abs. 2 S. 2 StGB). Bei einer Verurteilung zu einer Freiheitsstrafe
+    von mindestens sechs Monaten wird die Vollstreckung nicht ausgesetzt, wenn die
     Verteidigung der Rechtsordnung sie gebietet (§ 56 Abs. 3 StGB). Dies ist der
     Fall, wenn die Aussetzung im Hinblick auf das Gewicht der Tat und die Belange der Allgemeinheit
     das Vertrauen in die Rechtsordnung erschüttern würde. Eine Freiheitsstrafe von mehr als zwei Jahren
@@ -222,8 +222,7 @@ cards:
     das Gesetz eine Amnestieregelung: Verhängte, noch nicht vollstreckte Strafen
     für Taten, die nach neuem Recht nicht mehr strafbar sind, werden erlassen; Gesamtstrafen
     sind unter Beachtung der Neuregelung neu zu bilden (Art. 316p EGStGB in Verbindung
-    mit Art. 313 EGStGB). Die Einzelheiten der Übergangsregelung sind vor einer Anwendung
-    am Gesetzestext zu prüfen.
+    mit Art. 313 EGStGB). Die Einzelheiten (Erlass, Neubildung von Gesamtstrafen) regelt Art. 313 EGStGB.
   norms:
   - § 2 Abs. 3 StGB
   - Art. 316p EGStGB
@@ -294,9 +293,11 @@ faelle:
   - prompt: Kommt Strafaussetzung zur Bewährung in Betracht?
     erwartung: Ja. Bei einer Freiheitsstrafe von zehn Monaten (bis ein Jahr) ist nach
       § 56 Abs. 1 StGB bei günstiger Sozialprognose auszusetzen. Hier sprechen fehlende
-      Vorstrafen, fester Arbeitsplatz und Geständnis für die Prognose. Eine
-      Verteidigung der Rechtsordnung nach § 56 Abs. 3 StGB erfordert besondere Umstände,
-      die hier nicht ersichtlich sind; "Abschreckung" ist kein tragfähiger Grund.
+      Vorstrafen, fester Arbeitsplatz und Geständnis für die Prognose. Die
+      Verteidigung der Rechtsordnung (§ 56 Abs. 3 StGB, bei Strafen ab sechs Monaten
+      relevant) gebietet die Vollstreckung nur, wenn die Aussetzung das Vertrauen der
+      Bevölkerung in die Rechtsordnung erschüttern würde; das ist hier nicht ersichtlich,
+      bloße Abschreckung genügt nicht.
   - prompt: Wie ist das Ergebnis?
     erwartung: Die Strafzumessung ist rechtsfehlerhaft (§ 46 Abs. 3 StGB), und die
       Versagung der Bewährung ist nicht tragfähig begründet (§ 56 Abs. 1, 3 StGB).

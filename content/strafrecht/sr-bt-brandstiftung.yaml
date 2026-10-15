@@ -18,8 +18,10 @@ cards:
     Leben von Menschen sowie fremdes Eigentum. § 306 StGB (einfache Brandstiftung)
     erfasst das Inbrandsetzen oder Zerstören bestimmter fremder Tatobjekte und ist
     ein Verbrechen. § 306a Abs. 1 StGB (schwere Brandstiftung) knüpft als abstraktes
-    Gefährdungsdelikt an besonders gefährliche Objekte an (Wohnräume, Kirchen zur
-    Zeit der Religionsausübung, Aufenthaltsräume), § 306a Abs. 2 StGB verlangt
+    Gefährdungsdelikt an besonders gefährliche Objekte an (Wohnräume, Nr. 1; Kirchen
+    und andere der Religionsausübung dienende Gebäude, Nr. 2; Räumlichkeiten, die
+    zeitweise dem Aufenthalt von Menschen dienen, zu einer Zeit, in der sich dort
+    Menschen aufzuhalten pflegen, Nr. 3), § 306a Abs. 2 StGB verlangt
     bei den Objekten des § 306 Abs. 1 die konkrete Gefahr einer Gesundheitsschädigung.
     § 306b StGB enthält Qualifikationen (schwere Gesundheitsschädigung,
     Lebensgefahr, Verdeckungsabsicht), § 306c StGB die Erfolgsqualifikation
@@ -88,8 +90,7 @@ cards:
     Wohnnutzung. Die Widmung kann aufgegeben werden (Entwidmung), wenn alle
     Bewohner das Wohnen endgültig beenden und dies nach außen erkennbar wird; ein
     leerstehendes, nicht mehr bewohntes Haus fällt dann nicht mehr unter Nr. 1. Die
-    Entwidmung durch die Brandlegung selbst oder durch den bloßen Tatentschluss
-    des Täters ist nicht möglich. Schutzzweck ist die Gefahr für Menschen, die
+    Entwidmung durch die Brandlegung selbst ist nicht möglich. Schutzzweck ist die Gefahr für Menschen, die
     sich im Gebäude aufhalten oder helfen.
   norms:
   - § 306a Abs. 1 Nr. 1 StGB
@@ -130,7 +131,7 @@ cards:
     Tathandlung den Wohnbereich erfasst. Unstreitig genügt es, wenn der
     Wohnteil selbst in Brand gesetzt oder teilweise zerstört wird. Wird dagegen
     ausschließlich ein baulich und funktional abgetrennter, gewerblich genutzter
-    Teil in Brand gesetzt, genügt dies nach überwiegender Auffassung nicht, weil
+    Teil in Brand gesetzt, genügt dies nach Rechtsprechung und überwiegender Auffassung nicht, weil
     die Gefahr für die Bewohner, auf die der Tatbestand abzielt, nicht in der
     Tathandlung angelegt ist. Greift das Feuer dagegen über (Treppenhaus,
     gemeinsame Bauteile) oder ist das Gebäude baulich eine Einheit, kann eine
@@ -200,13 +201,13 @@ cards:
     Fällen des § 306a Abs. 2 StGB fahrlässig die Gefahr verursacht. Die Norm
     erfasst also den Täter, der etwa durch eine nicht ausgedrückte Zigarette oder
     einen defekten Heizlüfter das Feuer fahrlässig verursacht. § 306f StGB
-    (Herbeiführen einer Brandgefahr) bestraft das Inbrandbringen feuergefährdeter
-    fremder Betriebe oder Anlagen, land- und forstwirtschaftlicher Betriebe sowie
-    bestimmter Objekte durch Rauchen, offenes Feuer, Wärmeerzeugung, Wegwerfen
-    brennender Gegenstände oder in sonstiger Weise. Hier tritt die Gefahr
-    ein, der Brand selbst bleibt aus. Abs. 2 und 3 regeln die Gefährdung von
-    Menschen oder bedeutenden fremden Sachwerten sowie die fahrlässige
-    Gefahrverursachung.
+    (Herbeiführen einer Brandgefahr) bestraft, wer bestimmte feuergefährdete fremde
+    Objekte (insbesondere land-, ernährungs- und forstwirtschaftliche Anlagen und
+    Erzeugnisse sowie Wälder, Heiden und Moore) durch Rauchen, offenes Feuer oder
+    Licht, Wegwerfen brennender oder glimmender Gegenstände oder in sonstiger Weise
+    in Brandgefahr bringt. Hier tritt die Gefahr ein, der Brand selbst bleibt aus.
+    Die weiteren Absätze erfassen die Gefährdung von Menschen oder bedeutenden fremden
+    Sachwerten sowie die fahrlässige Gefahrverursachung.
   norms:
   - § 306d StGB
   - § 306f StGB
@@ -219,7 +220,7 @@ cards:
   front: Unter welchen Voraussetzungen greift die tätige Reue nach § 306e StGB?
   back: >-
     § 306e Abs. 1 StGB erlaubt dem Gericht, die Strafe nach § 49 Abs. 2 StGB zu
-    mildern oder von einer Bestrafung nach den §§ 306 bis 306c StGB abzusehen, wenn
+    mildern oder von einer Bestrafung nach den §§ 306 bis 306b StGB abzusehen, wenn
     der Täter freiwillig den Brand löscht, bevor ein erheblicher Schaden
     entstanden ist. Bei der fahrlässigen Brandstiftung (§ 306d StGB) wird nach
     Abs. 2 nicht bestraft, wer freiwillig den Brand löscht, bevor ein erheblicher
@@ -251,10 +252,9 @@ cards:
     Tötungsdelikt nicht aus, wenn dessen Unrecht anders nicht erfasst wird. Die
     Brandstiftung zum Zweck des Versicherungsbetrugs ist ein Regelbeispiel
     des § 263 Abs. 3 S. 2 Nr. 5 StGB; beide Taten stehen im Verhältnis der
-    Tateinheit. Für das Verhältnis von § 306 und § 306a StGB zueinander sind die
-    Subsidiarität der leichteren Brandstiftung und der Klarstellungsgedanke zu
-    beachten; in der Klausur ist es üblich, die schwerste Norm zuerst und die
-    übrigen kurz zu prüfen.
+    Tateinheit. Im Verhältnis von § 306 zu § 306a StGB wird die einfache Brandstiftung
+    nach h.M. von der schweren verdrängt; in der Klausur ist es üblich, § 306 StGB
+    als Grundtatbestand zuerst und die schwereren Normen anschließend zu prüfen.
   norms:
   - § 303 StGB
   - § 52 StGB
@@ -317,11 +317,11 @@ faelle:
     Nach einem Streit um eine Grundstücksgrenze will B seinem Nachbarn N "einen
     Denkzettel verpassen". Er weiß, dass N, dessen Ehefrau und die Kinder das
     freistehende Einfamilienhaus des N bewohnen und nachts dort schlafen. Gegen
-    ein Uhr nachts schüttet B Benzin auf die hölzerne Eingangstür samt
-    Vordach und zündet es an. Die Tür und das Vordach brennen, auch nachdem B den
-    Zündstoff entfernt hat, selbstständig weiter. N wird vom Rauchmelder geweckt,
-    löscht das Feuer mit einem Feuerlöscher, bevor es auf das Hausinnere
-    übergreift, und bringt seine Familie ins Freie. Verletzt wird niemand.
+    ein Uhr nachts schüttet B Benzin auf die hölzerne Eingangstür und zündet sie an.
+    Die Tür und die dahinterliegende Holzverkleidung des Hausflurs, auf die das Feuer
+    durchschlägt, brennen weiter, auch nachdem das Benzin verbraucht ist. N wird vom
+    Rauchmelder geweckt, löscht das Feuer mit einem Feuerlöscher, bevor es auf weitere
+    Räume übergreift, und bringt seine Familie ins Freie. Verletzt wird niemand.
   question: Hat sich B wegen Brandstiftung nach den §§ 306, 306a StGB strafbar gemacht?
     Delikte der Körperverletzung und Tötung sind nicht zu prüfen.
   steps:
@@ -329,15 +329,16 @@ faelle:
     erwartung: Ja, das Einfamilienhaus ist ein Gebäude im Sinne des § 306 Abs.
       1 Nr. 1 StGB und steht im Eigentum des N, ist für B also fremd.
   - prompt: Hat B das Gebäude in Brand gesetzt?
-    erwartung: Ja. Die Eingangstür und das Vordach als wesentliche Bestandteile
-      des Gebäudes brannten selbstständig weiter, auch nachdem der Zündstoff entfernt
-      war. Auf die spätere Löschung durch N kommt es für die Vollendung nicht an.
+    erwartung: Ja. Die Eingangstür und die Holzverkleidung des Hausflurs als für den
+      Gebrauch wesentliche Gebäudebestandteile brannten selbstständig weiter, auch
+      ohne fortwirkenden Zündstoff (Gebäude in Brand gesetzt). Auf die spätere Löschung durch N kommt es für die Vollendung nicht an.
   - prompt: Ist auch § 306a Abs. 1 Nr. 1 StGB erfüllt?
-    erwartung: Ja. Das Haus dient der Wohnung von Menschen, nämlich der Familie N,
-      die dort tatsächlich wohnt. Die Brandlegung betrifft einen Teil des Wohnhauses
-      (Eingang, Vordach), eine gemischte Nutzung liegt nicht vor. Eine teleologische
-      Reduktion scheidet aus, weil Menschen im Haus gefährdet sind. B handelte vorsätzlich,
-      ihm war die Wohnnutzung und die Anwesenheit der Familie bekannt.
+    erwartung: Ja. Das Haus dient der Wohnung von Menschen (§ 306a Abs. 1 Nr. 1 StGB). Die Familie N wohnt dort tatsächlich (tatsächliche Wohnnutzung). Die Brandlegung
+      betrifft den Wohnbereich selbst (Eingang, Hausflur). Für eine teleologische
+      Reduktion ist kein Raum (keine teleologische Reduktion), weil eine Gefährdung
+      von Menschen im Haus besteht; das abstrakte Gefährdungsdelikt ist erfüllt. B wusste
+      von der Anwesenheit der Familie und handelte vorsätzlich (Vorsatz bezüglich der
+      Wohnnutzung und der Tathandlung).
   - prompt: Kommen die Qualifikationen der §§ 306b, 306c StGB in Betracht?
     erwartung: Nein. Es ist niemand verletzt oder gestorben, eine schwere Gesundheitsschädigung
       oder der Tod eines Menschen wurde nicht verursacht (§ 306b Abs. 1, § 306c StGB).
