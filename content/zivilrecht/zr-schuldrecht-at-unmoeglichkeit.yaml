@@ -8,15 +8,15 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-13'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: zr-su-unmoeglichkeit-begriff
   type: definition
   front: 'Definiere: Unmöglichkeit und ihre Rechtsfolge (§ 275 Abs. 1 BGB)'
   back: Unmöglichkeit liegt vor, wenn die Leistung für den Schuldner oder für jedermann
-    tatsächlich oder rechtlich nicht erbracht werden kann. Nach § 275 Abs. 1 BGB
-    ist der Anspruch auf die Leistung dann ausgeschlossen - die Norm wirkt als Einwendung,
+    tatsächlich oder rechtlich nicht erbracht werden kann. Nach § 275 Abs. 1 BGB ist
+    der Anspruch auf die Leistung dann ausgeschlossen - die Norm wirkt als Einwendung,
     die von Amts wegen zu berücksichtigen ist, nicht als Einrede.
   norms:
   - § 275 Abs. 1 BGB
@@ -27,15 +27,19 @@ cards:
 - slug: zr-su-unmoeglichkeit-abgrenzung-subj-obj
   type: streitstand
   front: 'Abgrenze: objektive und subjektive Unmöglichkeit'
-  back: Objektive Unmöglichkeit liegt vor, wenn die Leistung von niemandem erbracht
-    werden kann. Subjektive Unmöglichkeit (Unvermögen) liegt vor, wenn nur der konkrete
-    Schuldner die Leistung nicht erbringen kann, ein Dritter aber könnte. § 275 Abs.
-    1 BGB erfasst nach heute einhelliger Auffassung beide Fälle gleichermaßen -
-    die früher relevante Unterscheidung wirkt sich nur noch beim Vertretenmüssen
-    (§ 276 BGB) aus, nicht mehr beim Ausschluss der Leistungspflicht selbst.
+  back: 'Objektive Unmöglichkeit liegt vor, wenn die Leistung von niemandem erbracht
+    werden kann (z. B. die verkaufte Stückschuld ist untergegangen). Subjektive Unmöglichkeit
+    (Unvermögen) liegt vor, wenn nur der konkrete Schuldner die Leistung nicht erbringen
+    kann, ein Dritter aber könnte (z. B. Verkäufer hat die Sache bereits an einen
+    Dritten veräußert). § 275 Abs. 1 BGB erfasst beide Fälle gleichermaßen: Die Leistungspflicht
+    ist ausgeschlossen. Die Unterscheidung hat nur noch Bedeutung bei der Frage, ob
+    der Schuldner das Leistungshindernis zu vertreten hat - insbesondere bei der Beschaffungs-
+    und Garantiehaftung (§ 276 Abs. 1 BGB) - und bei der anfänglichen Unmöglichkeit
+    nach § 311a Abs. 2 BGB (z. B. Verkauf einer fremden, nicht zu beschaffenden Sache).'
   norms:
   - § 275 Abs. 1 BGB
-  - § 276 BGB
+  - § 276 Abs. 1 BGB
+  - § 311a Abs. 2 BGB
   quellen:
   - Eigenformulierung Redaktion
   stand: 2026-09
@@ -45,9 +49,9 @@ cards:
   back: Nach § 275 Abs. 2 BGB kann der Schuldner die Leistung verweigern, wenn sie
     einen Aufwand erfordert, der unter Beachtung des Leistungsinhalts und der Gebote
     von Treu und Glauben in einem groben Missverhältnis zum Leistungsinteresse des
-    Gläubigers steht. Anders als Absatz 1 begründet Absatz 2 nur eine Einrede -
-    der Schuldner muss sich darauf berufen, das Gericht berücksichtigt sie nicht
-    von Amts wegen.
+    Gläubigers steht. Anders als Absatz 1 begründet Absatz 2 nur eine Einrede - der
+    Schuldner muss sich darauf berufen, das Gericht berücksichtigt sie nicht von Amts
+    wegen.
   norms:
   - § 275 Abs. 2 BGB
   quellen:
@@ -69,30 +73,35 @@ cards:
   stand: 2026-09
 - slug: zr-su-283-schadensersatz
   type: norm
-  front: Was regelt § 283 BGB und warum ist dort keine Fristsetzung erforderlich?
-  back: § 283 S. 1 BGB gewährt dem Gläubiger Schadensersatz statt der Leistung,
-    wenn der Schuldner nach § 275 Abs. 1 bis 3 BGB nicht zu leisten braucht und er
-    die Unmöglichkeit gemäß § 280 Abs. 1 BGB zu vertreten hat. Eine Fristsetzung
-    wie bei § 281 BGB wäre hier sinnlos, weil die Leistung ohnehin nicht mehr nachgeholt
-    werden kann - deshalb verweist § 283 BGB nur auf § 280 Abs. 1 BGB, nicht auf §
-    281 BGB.
+  front: Was regelt § 283 BGB und warum ist dort keine Fristsetzung erforderlich (Zusammenspiel
+    mit § 280 Abs. 3 BGB)?
+  back: '§ 280 Abs. 3 BGB lässt Schadensersatz statt der Leistung nur unter den zusätzlichen
+    Voraussetzungen der §§ 281, 282 oder 283 BGB zu (Anspruchsgrundlage daher: §§
+    280 Abs. 1, 3, 283 BGB). § 283 S. 1 BGB gewährt dem Gläubiger Schadensersatz statt
+    der Leistung, wenn der Schuldner nach § 275 Abs. 1 bis 3 BGB nicht zu leisten
+    braucht und er die Unmöglichkeit gemäß § 280 Abs. 1 S. 2 BGB zu vertreten hat.
+    Eine Fristsetzung wie bei § 281 BGB wäre hier sinnlos, weil die Leistung ohnehin
+    nicht mehr nachgeholt werden kann - deshalb verlangt § 283 S. 1 BGB keine Fristsetzung.
+    Nach § 283 S. 2 BGB gilt § 281 Abs. 1 S. 2 und 3 (Teilleistung) sowie Abs. 5 (Rückforderung
+    des Geleisteten, Rücktritt) entsprechend.'
   norms:
   - § 283 BGB
   - § 280 Abs. 1 BGB
+  - § 280 Abs. 3 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: zr-su-anfaengliche-nachtraegliche-unmoeglichkeit
   type: streitstand
-  front: 'Abgrenze: anfängliche und nachträgliche Unmöglichkeit - Bedeutung für
-    den Vertrag'
+  front: 'Abgrenze: anfängliche und nachträgliche Unmöglichkeit - Bedeutung für den
+    Vertrag'
   back: Nachträgliche Unmöglichkeit tritt erst nach Vertragsschluss ein; der Vertrag
     bleibt wirksam, die Leistungspflicht entfällt nur nach § 275 BGB. Anfängliche
-    Unmöglichkeit besteht schon bei Vertragsschluss; seit der Schuldrechtsreform
-    steht § 311a Abs. 1 BGB klar, dass dies der Wirksamkeit des Vertrags nicht entgegensteht
-    - der Gläubiger kann stattdessen nach § 311a Abs. 2 BGB Schadensersatz statt
-    der Leistung verlangen, wenn der Schuldner das Leistungshindernis bei Vertragsschluss
+    Unmöglichkeit besteht schon bei Vertragsschluss; seit der Schuldrechtsreform steht
+    § 311a Abs. 1 BGB klar, dass dies der Wirksamkeit des Vertrags nicht entgegensteht
+    - der Gläubiger kann stattdessen nach § 311a Abs. 2 BGB Schadensersatz statt der
+    Leistung verlangen, wenn der Schuldner das Leistungshindernis bei Vertragsschluss
     kannte oder hätte kennen müssen.
   norms:
   - § 311a Abs. 1 BGB
@@ -117,10 +126,11 @@ cards:
   stand: 2026-09
 schemata:
 - slug: zr-schema-283-unmoeglichkeit
-  title: Schadensersatz statt der Leistung wegen Unmöglichkeit, §§ 280 Abs. 1, 283
-    BGB
+  title: Schadensersatz statt der Leistung wegen Unmöglichkeit, §§ 280 Abs. 1, 3,
+    283 BGB
   norms:
   - § 280 Abs. 1 BGB
+  - § 280 Abs. 3 BGB
   - § 283 BGB
   - § 275 BGB
   quellen:
@@ -134,16 +144,18 @@ schemata:
     - label: 1. Tatsächliche oder rechtliche Unmöglichkeit (Abs. 1)
     - label: 2. Grobes Missverhältnis von Aufwand und Leistungsinteresse (Abs. 2)
       hinweis: Nur prüfen, wenn der Sachverhalt dazu Anlass gibt - Einrede.
-    - label: 3. Persönliche Unzumutbarkeit bei höchstpersönlicher Leistung (Abs.
-        3)
+    - label: 3. Persönliche Unzumutbarkeit bei höchstpersönlicher Leistung (Abs. 3)
       hinweis: Nur bei in Person zu erbringenden Leistungen - Einrede.
   - label: III. Vertretenmüssen des Schuldners, § 280 Abs. 1 S. 2 BGB
     hinweis: 'Wird vermutet; der Schuldner müsste sich entlasten (§ 276 BGB: Vorsatz,
       Fahrlässigkeit).'
   - label: IV. Keine Fristsetzung erforderlich, § 283 S. 1 BGB
     hinweis: Anders als bei § 281 BGB - eine Nachfrist wäre bei Unmöglichkeit sinnlos.
+      § 280 Abs. 3 BGB verweist für den Schadensersatz statt der Leistung auf § 283
+      BGB.
   - label: V. Schaden und haftungsausfüllende Kausalität
-  - label: 'VI. Rechtsfolge: Schadensersatz statt der Leistung'
+  - label: 'VI. Rechtsfolge: Schadensersatz statt der Leistung (Differenzhypothese);
+      Gegenleistung entfällt nach § 326 Abs. 1 S. 1 BGB'
 faelle:
 - slug: zr-fall-zerstoertes-motorrad
   title: Das zerstörte Motorrad
@@ -162,11 +174,11 @@ faelle:
     zu beschaffen. K muss ein vergleichbares Ersatzmotorrad anderweitig für 3.500
     Euro kaufen und verlangt von V Ersatz der Differenz von 500 Euro.
   question: Hat K gegen V einen Anspruch auf Schadensersatz statt der Leistung in
-    Höhe von 500 Euro aus §§ 280 Abs. 1, 283 BGB?
+    Höhe von 500 Euro aus §§ 280 Abs. 1, 3, 283 BGB?
   steps:
   - prompt: Formuliere den Obersatz.
     erwartung: K könnte gegen V einen Anspruch auf Schadensersatz statt der Leistung
-      in Höhe von 500 Euro aus §§ 280 Abs. 1, 283 BGB haben.
+      in Höhe von 500 Euro aus §§ 280 Abs. 1, 3, 283 BGB haben.
   - prompt: Welches Schuldverhältnis besteht zwischen K und V?
     erwartung: Ein wirksamer Kaufvertrag über das Motorrad, § 433 BGB.
   - prompt: Ist die Leistungspflicht des V ausgeschlossen?
@@ -177,23 +189,27 @@ faelle:
     erwartung: 'Ja, § 280 Abs. 1 S. 2 BGB (Vermutung) i. V. m. § 276 BGB: V hat den
       Unfall durch das fahrlässige Überfahren der roten Ampel selbst verschuldet.'
   - prompt: Muss K dem V vor der Geltendmachung von Schadensersatz eine Frist setzen?
-    erwartung: Nein. § 283 S. 1 BGB verweist gerade nicht auf das Fristsetzungserfordernis
-      des § 281 BGB, weil die Leistung ohnehin nicht mehr nachgeholt werden kann.
+    erwartung: Nein. § 283 S. 1 BGB verlangt gerade nicht das Fristsetzungserfordernis
+      des § 281 BGB, weil die Leistung ohnehin nicht mehr nachgeholt werden kann;
+      § 280 Abs. 3 BGB verweist hierfür auf § 283 BGB.
   - prompt: Wie hoch ist der ersatzfähige Schaden?
-    erwartung: 500 Euro - die Differenz zwischen dem vereinbarten Kaufpreis (3.000
-      Euro) und den Kosten der Ersatzbeschaffung (3.500 Euro).
+    erwartung: 500 Euro - die Differenz zwischen den Kosten der Ersatzbeschaffung
+      (3.500 Euro) und dem vereinbarten Kaufpreis (3.000 Euro). Der Kaufpreisanspruch
+      des V ist nach § 326 Abs. 1 S. 1 BGB entfallen, K hat also 3.000 Euro erspart;
+      nach der Differenzhypothese bleibt ein Schaden von 500 Euro.
   expectation:
     pruefpunkte:
     - id: p1
-      label: Obersatz mit §§ 280 Abs. 1, 283 BGB
+      label: Obersatz mit §§ 280 Abs. 1, 3, 283 BGB
       weight: 1.0
       required: false
       norms:
       - § 280 Abs. 1 BGB
       - § 283 BGB
       keywords:
-      - '280'
-      - '283'
+      - § 280 Abs. 3
+      - § 280 Abs. 3 als Verweis auf § 283
+      - Schadensersatz statt der Leistung wegen Unmöglichkeit
       card_slugs:
       - zr-su-283-schadensersatz
     - id: p2
@@ -203,19 +219,23 @@ faelle:
       norms:
       - § 433 BGB
       keywords:
-      - Kaufvertrag
-      - '433'
+      - wirksamer Kaufvertrag
+      - § 433 Abs. 1
+      - Schuldverhältnis im Sinne des § 280 Abs. 1
+      - Primärleistungspflicht
     - id: p3
-      label: Unmöglichkeit nach § 275 Abs. 1 BGB erkannt und auf die Stückschuld
-        subsumiert
+      label: Unmöglichkeit nach § 275 Abs. 1 BGB erkannt und auf die Stückschuld subsumiert
       weight: 3.0
       required: true
       norms:
       - § 275 Abs. 1 BGB
       keywords:
-      - Unmöglichkeit
-      - '275'
+      - § 275 Abs. 1
+      - nachträgliche Unmöglichkeit
       - Stückschuld
+      - kann nicht mehr geliefert werden
+      - Leistungspflicht ausgeschlossen
+      - Untergang der Kaufsache
       card_slugs:
       - zr-su-unmoeglichkeit-begriff
       - zr-su-unmoeglichkeit-abgrenzung-subj-obj
@@ -226,9 +246,12 @@ faelle:
       norms:
       - § 276 BGB
       keywords:
-      - vertreten
-      - Fahrlässigkeit
-      - '276'
+      - Vertretenmüssen des V
+      - § 276 Abs. 2
+      - im Verkehr erforderliche Sorgfalt
+      - Fahrlässigkeit des V
+      - Verschulden des V
+      - § 280 Abs. 1 S. 2
       card_slugs:
       - zr-delikt-verschulden-276
     - id: p5
@@ -238,26 +261,35 @@ faelle:
       norms:
       - § 283 BGB
       keywords:
-      - keine Fristsetzung
-      - '283'
-      - entbehrlich
+      - keine Fristsetzung erforderlich
+      - Fristsetzung entbehrlich
+      - Fristsetzung wäre sinnlos
+      - § 283 S. 1
+      - § 281 nicht anwendbar
+      - Nachholung der Leistung nicht möglich
       card_slugs:
       - zr-su-283-schadensersatz
     - id: p6
-      label: Schadenshöhe korrekt als Differenzschaden von 500 Euro berechnet
+      label: Schadenshöhe als Differenzschaden von 500 Euro berechnet (Kaufpreisanspruch
+        entfällt nach § 326 Abs. 1 S. 1 BGB)
       weight: 1.5
       required: false
       keywords:
-      - '500'
-      - Differenz
+      - Differenzschaden
+      - Differenzhypothese
+      - § 326 Abs. 1
+      - Gegenleistung entfällt
+      - Mehrkosten der Ersatzbeschaffung
+      - Deckungskauf
     - id: p7
       label: 'Ergebnis: Anspruch des K gegen V besteht'
       weight: 1.0
       required: false
       keywords:
-      - Anspruch besteht
-      - K gegen V
-      - Mithin hat K
+      - Schadensersatz statt der Leistung (+)
+      - Anspruch aus §§ 280 Abs. 1, 3, 283 besteht
+      - K kann Ersatz von 500 Euro verlangen
+      - V schuldet Schadensersatz
       card_slugs:
       - zr-su-unmoeglichkeit-begriff
       - zr-su-283-schadensersatz

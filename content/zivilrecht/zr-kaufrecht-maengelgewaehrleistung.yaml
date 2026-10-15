@@ -9,16 +9,16 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-15'
-    status: ki-freigegeben
+    status: in-pruefung
     normzitate_geprueft: true
 cards:
 - slug: zr-kaufrecht-sachmangel-begriff
   type: definition
   front: 'Definiere: Sachmangel, § 434 Abs. 1 BGB'
-  back: Die Kaufsache ist frei von Sachmängeln, wenn sie bei Gefahrübergang den
-    subjektiven Anforderungen, den objektiven Anforderungen und den Montageanforderungen
-    entspricht, § 434 Abs. 1 BGB. Ein Sachmangel liegt vor, wenn mindestens eine dieser
-    Anforderungen nicht erfüllt ist.
+  back: Die Kaufsache ist frei von Sachmängeln, wenn sie bei Gefahrübergang den subjektiven
+    Anforderungen, den objektiven Anforderungen und den Montageanforderungen entspricht,
+    § 434 Abs. 1 BGB. Ein Sachmangel liegt vor, wenn mindestens eine dieser Anforderungen
+    nicht erfüllt ist.
   norms:
   - § 434 Abs. 1 BGB
   quellen:
@@ -41,14 +41,23 @@ cards:
 - slug: zr-kaufrecht-objektive-anforderungen
   type: definition
   front: 'Definiere: objektive Anforderungen an die Kaufsache, § 434 Abs. 3 BGB'
-  back: Ergänzend zu den subjektiven Anforderungen muss sich die Sache für die gewöhnliche
-    Verwendung eignen und eine Beschaffenheit aufweisen, die bei Sachen derselben
-    Art üblich ist und die der Käufer nach Art der Sache erwarten kann - insbesondere
-    unter Berücksichtigung öffentlicher Äußerungen des Verkäufers oder Herstellers.
-    Objektive Anforderungen gelten zusätzlich, auch wenn die subjektiven Anforderungen
-    erfüllt sind.
+  back: 'Soweit nicht wirksam eine abweichende Vereinbarung getroffen wurde, muss
+    die Sache den objektiven Anforderungen des § 434 Abs. 3 BGB entsprechen: Sie muss
+    sich für die gewöhnliche Verwendung eignen (Nr. 1); eine Beschaffenheit aufweisen,
+    die bei Sachen derselben Art üblich ist und die der Käufer erwarten kann - dazu
+    gehören etwa Menge, Qualität, Funktionalität, Kompatibilität, Sicherheit und Haltbarkeit,
+    auch unter Berücksichtigung öffentlicher Äußerungen des Verkäufers oder Herstellers
+    (Nr. 2); der Beschaffenheit einer Probe oder eines Musters entsprechen (Nr. 3);
+    und mit dem üblichen Zubehör einschließlich Verpackung und Anleitungen geliefert
+    werden (Nr. 4). Die objektiven Anforderungen gelten grundsätzlich zusätzlich zu
+    den subjektiven, auch wenn diese erfüllt sind. Eine Abweichung ist möglich, aber
+    an Voraussetzungen geknüpft: Beim Verbrauchsgüterkauf nur, wenn der Verbraucher
+    vor Vertragsschluss eigens von der Abweichung eines bestimmten Merkmals in Kenntnis
+    gesetzt wurde und die Abweichung im Vertrag ausdrücklich und gesondert vereinbart
+    ist (§ 476 Abs. 1 S. 2 BGB).'
   norms:
   - § 434 Abs. 3 BGB
+  - § 476 Abs. 1 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -82,14 +91,13 @@ cards:
   stand: 2026-09
 - slug: zr-kaufrecht-nacherfuellung-verweigerung
   type: norm
-  front: Wann kann der Verkäufer die vom Käufer gewählte Art der Nacherfüllung
-    verweigern?
+  front: Wann kann der Verkäufer die vom Käufer gewählte Art der Nacherfüllung verweigern?
   back: Der Verkäufer kann die vom Käufer gewählte Art der Nacherfüllung unbeschadet
-    des § 275 Abs. 2 und 3 BGB verweigern, wenn sie nur mit unverhältnismäßigen
-    Kosten möglich ist, § 439 Abs. 4 BGB. Bei der Beurteilung sind insbesondere der
-    Wert der Sache in mangelfreiem Zustand, die Bedeutung des Mangels und die Frage
-    zu berücksichtigen, ob auf die andere Art der Nacherfüllung ohne erhebliche
-    Nachteile für den Käufer zurückgegriffen werden könnte.
+    des § 275 Abs. 2 und 3 BGB verweigern, wenn sie nur mit unverhältnismäßigen Kosten
+    möglich ist, § 439 Abs. 4 BGB. Bei der Beurteilung sind insbesondere der Wert
+    der Sache in mangelfreiem Zustand, die Bedeutung des Mangels und die Frage zu
+    berücksichtigen, ob auf die andere Art der Nacherfüllung ohne erhebliche Nachteile
+    für den Käufer zurückgegriffen werden könnte.
   norms:
   - § 439 Abs. 4 BGB
   quellen:
@@ -102,11 +110,11 @@ cards:
     entbehrlich, § 440 BGB?
   back: Der Fristsetzung zur Nacherfüllung bedarf es zusätzlich zu den allgemeinen
     Fällen des § 323 Abs. 2 und des § 281 Abs. 2 BGB dann nicht, wenn der Verkäufer
-    beide Arten der Nacherfüllung nach § 439 Abs. 4 BGB verweigert hat, wenn die
-    Nacherfüllung fehlgeschlagen ist oder wenn dem Käufer die Nacherfüllung unzumutbar
-    ist. Eine Nachbesserung gilt nach zwei erfolglosen Versuchen im Regelfall als
-    fehlgeschlagen, sofern sich nicht aus der Art der Sache, des Mangels oder aus
-    den sonstigen Umständen etwas anderes ergibt.
+    beide Arten der Nacherfüllung nach § 439 Abs. 4 BGB verweigert hat, wenn die Nacherfüllung
+    fehlgeschlagen ist oder wenn dem Käufer die Nacherfüllung unzumutbar ist. Eine
+    Nachbesserung gilt nach zwei erfolglosen Versuchen im Regelfall als fehlgeschlagen,
+    sofern sich nicht aus der Art der Sache, des Mangels oder aus den sonstigen Umständen
+    etwas anderes ergibt.
   norms:
   - § 440 BGB
   quellen:
@@ -129,15 +137,27 @@ cards:
   stand: 2026-09
 - slug: zr-kaufrecht-verjaehrung-maengelanspruch
   type: norm
-  front: Welche Verjährungsfrist gilt für Mängelansprüche beim Sachkauf, § 438
-    BGB?
-  back: Ansprüche wegen eines Sachmangels verjähren beim Sachkauf regelmäßig in
-    zwei Jahren, § 438 Abs. 1 Nr. 3 BGB. Die Frist beginnt mit der Ablieferung der
-    Sache, § 438 Abs. 2 BGB - abweichend von der allgemeinen Regelverjährung des
-    § 199 BGB, die an die Kenntnis des Gläubigers anknüpft.
+  front: Welche Verjährungsfrist gilt für Mängelansprüche beim Sachkauf, § 438 BGB?
+  back: 'Ansprüche wegen eines Sachmangels verjähren beim Sachkauf regelmäßig in zwei
+    Jahren (§ 438 Abs. 1 Nr. 3 BGB); in 30 Jahren, wenn der Mangel in einem dinglichen
+    Recht eines Dritten besteht, auf Grund dessen Herausgabe verlangt werden kann
+    (Nr. 1); in fünf Jahren bei Bauwerken und bei Sachen, die entsprechend ihrer üblichen
+    Verwendung für ein Bauwerk verwendet worden sind und dessen Mangelhaftigkeit verursacht
+    haben (Nr. 2). Die Frist beginnt mit der Ablieferung der Sache (§ 438 Abs. 2 BGB)
+    - abweichend von der allgemeinen Regelverjährung des § 199 BGB, die an die Kenntnis
+    des Gläubigers anknüpft. Hat der Verkäufer den Mangel arglistig verschwiegen,
+    gilt die Regelverjährung der §§ 195, 199 BGB, aber nicht vor Ablauf der Fristen
+    nach Nr. 1 und 2 (§ 438 Abs. 3 BGB). Rücktritt und Minderung sind Gestaltungsrechte:
+    Nach § 438 Abs. 4, 5 BGB i. V. m. § 218 BGB ist der Rücktritt bzw. die Minderung
+    unwirksam, wenn der Nacherfüllungsanspruch verjährt ist und der Verkäufer sich
+    darauf beruft. Beim Verbrauchsgüterkauf gelten ergänzende Sonderregeln (§ 475e
+    BGB).'
   norms:
   - § 438 Abs. 1 Nr. 3 BGB
   - § 438 Abs. 2 BGB
+  - § 438 Abs. 3 BGB
+  - § 438 Abs. 4 BGB
+  - § 218 BGB
   - § 199 BGB
   quellen:
   - BGB, amtliche Fassung
@@ -147,16 +167,19 @@ cards:
   type: streitstand
   front: Können Rücktritt und Schadensersatz statt der Leistung nebeneinander geltend
     gemacht werden?
-  back: Rücktritt und Schadensersatz statt der ganzen Leistung schließen sich nicht
-    gegenseitig aus, § 325 BGB, und können kumulativ geltend gemacht werden. Praktisch
-    bedeutsam ist das etwa, wenn der Käufer nach dem Rücktritt zusätzlich Ersatz
-    eines Mangelfolgeschadens verlangt, der durch die bloße Rückabwicklung nicht
-    ausgeglichen wird. Die Minderung schließt dagegen als Gestaltungsrecht anstelle
-    des Rücktritts eine gleichzeitige Geltendmachung von Schadensersatz statt der
-    Leistung für denselben Mangel grundsätzlich nicht aus, da beide Rechtsbehelfe
-    unterschiedliche Zwecke verfolgen.
+  back: 'Rücktritt und Schadensersatz schließen sich nicht gegenseitig aus, § 325
+    BGB: Der Käufer kann nach dem Rücktritt Schadensersatz statt der ganzen Leistung
+    verlangen, etwa für einen Mangelfolgeschaden, der durch die bloße Rückabwicklung
+    nicht ausgeglichen wird. Die Minderung steht dagegen im Konflikt mit dem Schadensersatz
+    statt der ganzen Leistung: Wer mindert, behält die Sache und den (herabgesetzten)
+    Vertrag; der große Schadensersatz setzt die Rückgabe der Sache voraus und ist
+    daher neben der Minderung ausgeschlossen. Möglich bleibt neben der Minderung nur
+    der kleine Schadensersatz (Ersatz des Mangelschadens bzw. von Folgeschäden), wobei
+    die Minderung auf den Schaden anzurechnen ist, damit der Wertverlust nicht doppelt
+    ersetzt wird.'
   norms:
   - § 325 BGB
+  - § 441 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -166,12 +189,16 @@ cards:
   front: Wie verhalten sich Rücktritt und Minderung zueinander?
   back: 'Rücktritt und Minderung sind alternative Gestaltungsrechte: Statt zurückzutreten,
     kann der Käufer den Kaufpreis durch Erklärung gegenüber dem Verkäufer mindern,
-    § 441 Abs. 1 BGB. Erklärt der Käufer wirksam die Minderung, ist der Rücktritt
-    wegen desselben Mangels ausgeschlossen und umgekehrt. Ein einmal wirksam ausgeübtes
-    Gestaltungsrecht bindet den Käufer; ein Wechsel zum jeweils anderen Recht ist
+    § 441 Abs. 1 BGB. Als ausgeübtes Gestaltungsrecht ist die Erklärung unwiderruflich
+    und bindend: Hat der Käufer wirksam gemindert, bleibt der Vertrag in herabgesetzter
+    Form bestehen, ein späterer Rücktritt wegen desselben Mangels ist ausgeschlossen.
+    Umgekehrt ist nach wirksamem Rücktritt für eine Minderung kein Raum mehr, weil
+    der Vertrag in ein Rückgewährschuldverhältnis (§ 346 Abs. 1 BGB) umgewandelt wurde.
+    Während der Käufer vor Ausübung zwischen beiden wählen kann, ist ein Wechsel danach
     für denselben Mangel nicht mehr möglich.'
   norms:
   - § 441 Abs. 1 BGB
+  - § 346 Abs. 1 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -183,6 +210,8 @@ schemata:
   - § 434 Abs. 1 BGB
   - § 437 BGB
   - § 439 Abs. 1 BGB
+  - § 323 Abs. 5 BGB
+  - § 477 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -203,11 +232,19 @@ schemata:
     children:
     - label: 1. Nacherfüllung, § 439 BGB
     - label: 2. Rücktritt, §§ 440, 323, 326 Abs. 5 BGB
-      hinweis: Fristsetzung zur Nacherfüllung grundsätzlich erforderlich, außer
-        sie ist nach § 440 BGB oder §§ 323 Abs. 2, 326 Abs. 5 BGB entbehrlich.
+      hinweis: Fristsetzung zur Nacherfüllung grundsätzlich erforderlich, außer sie
+        ist nach § 440 BGB oder §§ 323 Abs. 2, 326 Abs. 5 BGB entbehrlich.
+      children:
+      - label: a) Erheblichkeit der Pflichtverletzung, § 323 Abs. 5 S. 2 BGB
+      - label: b) Ausschluss bei überwiegender Verantwortlichkeit des Käufers, § 323
+          Abs. 6 BGB
     - label: 3. Minderung, § 441 BGB
     - label: 4. Schadensersatz, §§ 440, 280, 281, 283, 311a BGB
   - label: V. Keine Verjährung, § 438 BGB
+  - label: VI. Sonderregeln beim Verbrauchsgüterkauf, §§ 474 ff. BGB
+    hinweis: 'Nur Hinweis: Ist der Käufer Verbraucher und der Verkäufer Unternehmer,
+      sind insbesondere § 476 (Abweichungsverbot) und § 477 (Beweislastumkehr bei
+      Mängeln innerhalb eines Jahres) zu beachten.'
 faelle:
 - slug: zr-fall-zurueckgedrehter-tachometer
   title: Der zurückgedrehte Tachometer
@@ -216,95 +253,127 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - BGB, amtliche Fassung
-  facts: 'Händler V verkauft Käufer K einen gebrauchten Pkw für 12.000 Euro. Im
-    Kaufvertrag ist als Beschaffenheit "Kilometerstand lt. Tacho: 60.000 km" vereinbart.
-    Tatsächlich beträgt die Laufleistung 110.000 km; der Tachometer wurde von einem
-    Vorbesitzer manipuliert, was weder V noch K bei Vertragsschluss wussten. Zwei
-    Monate nach Übergabe fällt K die Abweichung bei einer Inspektion auf. K setzt
-    V eine Frist von zwei Wochen zur Nachlieferung eines Fahrzeugs mit tatsächlich
-    60.000 km Laufleistung. V teilt mit, ein Fahrzeug mit exakt diesem Kilometerstand
-    könne er nicht beschaffen; auch die Korrektur des Kilometerstands am vorhandenen
-    Fahrzeug sei technisch nicht möglich. Nach fruchtlosem Fristablauf erklärt K
-    den Rücktritt vom Kaufvertrag und verlangt Rückzahlung des Kaufpreises Zug um
-    Zug gegen Rücknahme des Fahrzeugs.'
-  question: Kann K von V Rückzahlung des Kaufpreises Zug um Zug gegen Rücknahme
-    des Fahrzeugs verlangen?
+  facts: 'Händler V verkauft der Privatperson K (Verbraucherin) einen gebrauchten
+    Pkw für 12.000 Euro. Im Kaufvertrag ist ausdrücklich als Beschaffenheit vereinbart:
+    "Gesamtlaufleistung 60.000 km". Tatsächlich beträgt die Laufleistung 110.000 km;
+    der Tachometer wurde von einem Vorbesitzer manipuliert, was weder V noch K bei
+    Vertragsschluss wussten. Zwei Monate nach Übergabe fällt K die Abweichung bei
+    einer Inspektion auf. K setzt V eine Frist von zwei Wochen zur Nacherfüllung.
+    V teilt mit, es handle sich um ein Einzelstück; ein anderes Fahrzeug mit exakt
+    dieser Laufleistung besitze er nicht, und die tatsächliche Laufleistung des verkauften
+    Fahrzeugs lasse sich nicht verändern. Nach fruchtlosem Fristablauf erklärt K den
+    Rücktritt vom Kaufvertrag und verlangt Rückzahlung des Kaufpreises Zug um Zug
+    gegen Rücknahme des Fahrzeugs.'
+  question: Kann K von V Rückzahlung des Kaufpreises Zug um Zug gegen Rücknahme des
+    Fahrzeugs verlangen?
   steps:
   - prompt: Formuliere den Obersatz.
     erwartung: K könnte gegen V einen Anspruch auf Rückzahlung des Kaufpreises Zug
-      um Zug gegen Rücknahme des Fahrzeugs aus §§ 437 Nr. 2, 440, 323, 346 Abs. 1
-      BGB haben.
+      um Zug gegen Rücknahme des Fahrzeugs aus §§ 437 Nr. 2, 323 Abs. 1, 326 Abs.
+      5, 346 Abs. 1 BGB haben.
   - prompt: Liegt ein Sachmangel vor?
-    erwartung: Ja - die vereinbarte Beschaffenheit "60.000 km" liegt nicht vor, da
-      die tatsächliche Laufleistung 110.000 km beträgt; damit fehlt eine subjektive
-      Anforderung nach § 434 Abs. 2 BGB.
+    erwartung: Ja - die vereinbarte Beschaffenheit "Gesamtlaufleistung 60.000 km"
+      liegt nicht vor, da die tatsächliche Laufleistung 110.000 km beträgt; damit
+      fehlt eine subjektive Anforderung nach § 434 Abs. 2 S. 1 Nr. 1 BGB. Dass die
+      Parteien eine Beschaffenheit über die tatsächliche Laufleistung (nicht nur über
+      die Anzeige des Tachos) vereinbart haben, folgt aus der Auslegung der Vereinbarung
+      nach §§ 133, 157 BGB. Hilfsweise fehlt auch die nach § 434 Abs. 3 S. 1 Nr. 2
+      BGB übliche Beschaffenheit.
   - prompt: Liegt der Sachmangel bereits bei Gefahrübergang vor?
-    erwartung: Ja - die Manipulation erfolgte bereits vor Übergabe durch einen Vorbesitzer,
-      sodass der Mangel bei Gefahrübergang (§ 446 BGB) bereits vorlag.
+    erwartung: 'Ja - die Manipulation erfolgte bereits vor Übergabe durch einen Vorbesitzer,
+      sodass der Mangel bei Gefahrübergang (§ 446 BGB) bereits vorlag. Zusätzlich
+      greift zugunsten der Verbraucherin K die Beweislastumkehr beim Verbrauchsgüterkauf:
+      Zeigt sich der Mangel innerhalb eines Jahres seit Gefahrübergang, wird vermutet,
+      dass er schon bei Gefahrübergang vorlag (§ 477 BGB).'
   - prompt: War die von K gesetzte Frist zur Nacherfüllung erforderlich?
-    erwartung: Grundsätzlich ja (§ 323 Abs. 1 BGB); K hat die Frist ohnehin gesetzt.
-      Die verlangte Nachlieferung eines Fahrzeugs mit exakt 60.000 km Laufleistung
-      ist jedoch unmöglich, da ein solches Fahrzeug nicht existiert - die Nacherfüllung
-      in dieser Art ist nach § 275 Abs. 1 BGB ausgeschlossen.
+    erwartung: 'Grundsätzlich ja (§ 323 Abs. 1 BGB); K hat die Frist ohnehin gesetzt.
+      Beide Arten der Nacherfüllung sind jedoch ausgeschlossen, § 275 Abs. 1 BGB:
+      Die Nachlieferung scheitert beim Stückkauf eines individuellen Gebrauchtwagens
+      daran, dass die Sache nach dem Parteiwillen nicht austauschbar ist (nicht daran,
+      dass kein Fahrzeug mit dieser Laufleistung existiert); die Nachbesserung ist
+      unmöglich, weil sich die tatsächliche Laufleistung als historische Tatsache
+      nicht ändern lässt.'
   - prompt: Welche Rechtsfolge hat die Unmöglichkeit der Nachlieferung für den Rücktritt?
-    erwartung: Nach § 326 Abs. 5 i.V.m. § 323 BGB kann K vom Vertrag zurücktreten,
-      ohne dass es einer (weiteren) Fristsetzung bedarf, da die Nacherfüllung in
-      dieser Art unmöglich ist.
+    erwartung: 'Weil beide Arten der Nacherfüllung nach § 275 Abs. 1 BGB ausgeschlossen
+      sind, kann K nach § 326 Abs. 5 i. V. m. § 323 BGB vom Vertrag zurücktreten,
+      ohne dass es einer (weiteren) Fristsetzung bedarf (§ 326 Abs. 5 Hs. 2 BGB: §
+      323 gilt ohne Fristsetzung). Die Entbehrlichkeit folgt nicht aus § 440 BGB,
+      sondern aus § 326 Abs. 5 BGB.'
   - prompt: Ist die Pflichtverletzung unerheblich im Sinne des § 323 Abs. 5 S. 2 BGB?
     erwartung: Nein - eine Abweichung von rund 50.000 km bei der vereinbarten Laufleistung
       ist angesichts ihrer erheblichen Auswirkung auf den Fahrzeugwert keine unerhebliche
       Pflichtverletzung.
   - prompt: Welche Rechtsfolgen hat der wirksame Rücktritt?
-    erwartung: 'Es entsteht ein Rückgewährschuldverhältnis, § 346 Abs. 1 BGB: V
-      muss den Kaufpreis zurückzahlen, K das Fahrzeug zurückübereignen - beides
-      Zug um Zug.'
+    erwartung: 'Es entsteht ein Rückgewährschuldverhältnis, § 346 Abs. 1 BGB: V muss
+      den Kaufpreis zurückzahlen, K das Fahrzeug zurückübereignen - beides Zug um
+      Zug.'
   expectation:
     pruefpunkte:
     - id: p1
-      label: Obersatz mit §§ 437 Nr. 2, 323, 346 BGB formuliert
+      label: Obersatz mit §§ 437 Nr. 2, 323 Abs. 1, 326 Abs. 5, 346 Abs. 1 BGB formuliert
       weight: 1.0
       required: false
       norms:
       - § 437 BGB
       - § 323 Abs. 1 BGB
       keywords:
-      - '437'
-      - Rücktritt
+      - §§ 437 Nr. 2
+      - § 326 Abs. 5
+      - Rücktritt wegen eines Sachmangels
+      - Rückzahlungsanspruch aus § 346
+      - Rückgewähranspruch aus § 346 Abs. 1
       card_slugs:
       - zr-kaufrecht-rechte-des-kaeufers-437
     - id: p2
       label: Sachmangel wegen Abweichung von der vereinbarten Beschaffenheit (§ 434
-        Abs. 2 BGB) korrekt bejaht
+        Abs. 2 BGB; Auslegung der Laufleistungsvereinbarung) korrekt bejaht
       weight: 2.5
       required: true
       norms:
       - § 434 Abs. 2 BGB
       keywords:
-      - Sachmangel
       - vereinbarte Beschaffenheit
+      - Beschaffenheitsvereinbarung
+      - Auslegung der Vereinbarung
+      - §§ 133, 157
+      - subjektive Anforderungen
+      - § 434 Abs. 2
+      - Laufleistung weicht ab
       card_slugs:
       - zr-kaufrecht-sachmangel-begriff
       - zr-kaufrecht-subjektive-anforderungen
     - id: p3
-      label: Vorliegen des Mangels bei Gefahrübergang gepruft
+      label: Vorliegen des Mangels bei Gefahrübergang geprüft (§ 446 BGB; Beweislastumkehr
+        § 477 BGB)
       weight: 1.0
       required: false
       norms:
       - § 446 BGB
       keywords:
-      - Gefahrübergang
+      - bei Gefahrübergang vorhanden
+      - Manipulation vor Übergabe
+      - Mangel bei Übergabe vorhanden
+      - Beweislastumkehr
+      - § 477
+      - Verbrauchsgüterkauf
+      - § 446
       card_slugs:
       - zr-kaufrecht-sachmangel-begriff
     - id: p4
-      label: Unmöglichkeit der gewählten Nacherfüllungsart nach § 275 Abs. 1 BGB
-        erkannt
+      label: Unmöglichkeit beider Nacherfüllungsarten (Nachlieferung beim Stückkauf,
+        Nachbesserung) nach § 275 Abs. 1 BGB erkannt
       weight: 2.0
       required: true
       norms:
       - § 275 Abs. 1 BGB
       keywords:
-      - Unmöglichkeit
-      - '275'
+      - § 275 Abs. 1
+      - Stückkauf
+      - Stückschuld
+      - nicht austauschbar
+      - Nachlieferung unmöglich
+      - Nachbesserung unmöglich
+      - beide Arten der Nacherfüllung
       card_slugs:
       - zr-kaufrecht-nacherfuellung-verweigerung
     - id: p5
@@ -314,19 +383,26 @@ faelle:
       norms:
       - § 326 Abs. 5 BGB
       keywords:
-      - '326'
+      - § 326 Abs. 5
       - Fristsetzung entbehrlich
+      - Rücktritt ohne Fristsetzung
+      - Fristsetzung wäre sinnlos
+      - § 323 Abs. 2
       card_slugs:
       - zr-kaufrecht-fristsetzung-entbehrlich
     - id: p6
-      label: Unerheblichkeit der Pflichtverletzung nach § 323 Abs. 5 S. 2 BGB gepruft
+      label: Unerheblichkeit der Pflichtverletzung nach § 323 Abs. 5 S. 2 BGB geprüft
         und verneint
       weight: 1.5
       required: false
       norms:
       - § 323 Abs. 5 BGB
       keywords:
-      - unerheblich
+      - § 323 Abs. 5 S. 2
+      - nicht unerheblich
+      - Pflichtverletzung erheblich
+      - Erheblichkeit der Pflichtverletzung
+      - Wertminderung durch höhere Laufleistung
       card_slugs:
       - zr-ruecktritt-unerheblich-323-5-satz-2
     - id: p7
@@ -336,8 +412,12 @@ faelle:
       norms:
       - § 346 Abs. 1 BGB
       keywords:
-      - Zug um Zug
-      - '346'
+      - Rückgewährschuldverhältnis
+      - § 346 Abs. 1
+      - § 348
+      - Kaufpreis zurückzahlen
+      - Fahrzeug zurückübereignen
+      - Zug-um-Zug-Leistung
       card_slugs:
       - zr-ruecktritt-rueckgewaehr-346-1
       - zr-ruecktritt-zug-um-zug-348

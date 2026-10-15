@@ -9,8 +9,8 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-23'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: zr-sr-su-rechtsnatur
   type: definition
@@ -32,9 +32,9 @@ cards:
   type: definition
   front: Wie vollzieht sich die dingliche Übereignung bei der Sicherungsübereignung?
   back: Die Übereignung erfolgt nach §§ 929 S. 1, 930 BGB durch Einigung über den
-    Eigentumsübergang und die Vereinbarung eines Besitzmittlungsverhältnisses im
-    Sinne des § 868 BGB anstelle der tatsächlichen Übergabe. Der Sicherungsgeber
-    bleibt unmittelbarer, der Sicherungsnehmer wird mittelbarer Besitzer; als Besitzmittlungsverhältnis
+    Eigentumsübergang und die Vereinbarung eines Besitzmittlungsverhältnisses im Sinne
+    des § 868 BGB anstelle der tatsächlichen Übergabe. Der Sicherungsgeber bleibt
+    unmittelbarer, der Sicherungsnehmer wird mittelbarer Besitzer; als Besitzmittlungsverhältnis
     dient regelmäßig ein zwischen den Parteien vereinbartes Verwahrungs- oder Leihverhältnis.
   norms:
   - § 929 S. 1 BGB
@@ -64,10 +64,10 @@ cards:
   front: Wie ist die Rechtsstellung des Sicherungsnehmers vor Eintritt des Sicherungsfalls
     einzuordnen?
   back: Der Sicherungsnehmer wird zivilrechtlich Volleigentümer der Sache, ist aber
-    im Verhältnis zum Sicherungsgeber durch die Sicherungsabrede schuldrechtlich
-    gebunden - man spricht von fiduziarischem oder treuhänderischem Eigentum. Er
-    darf das Sicherungsgut vor Eintritt des vereinbarten Sicherungsfalls nicht verwerten
-    und muss es bei Erledigung der gesicherten Forderung zurücktübertragen.
+    im Verhältnis zum Sicherungsgeber durch die Sicherungsabrede schuldrechtlich gebunden
+    - man spricht von fiduziarischem oder treuhänderischem Eigentum. Er darf das Sicherungsgut
+    vor Eintritt des vereinbarten Sicherungsfalls nicht verwerten und muss es bei
+    Erledigung der gesicherten Forderung zurücktübertragen.
   norms:
   - § 903 BGB
   quellen:
@@ -78,10 +78,10 @@ cards:
   type: definition
   front: Wann darf der Sicherungsnehmer das Sicherungsgut verwerten (Verwertungsreife)?
   back: Verwertungsreife tritt regelmäßig ein, wenn die gesicherte Forderung fällig
-    ist und der Sicherungsgeber mit deren Erfüllung in Verzug gerät; die genauen
-    Voraussetzungen richten sich nach der jeweiligen Sicherungsabrede. Erst ab diesem
-    Zeitpunkt darf der Sicherungsnehmer das in seinem Eigentum stehende Sicherungsgut
-    verwerten, etwa durch freihändigen Verkauf.
+    ist und der Sicherungsgeber mit deren Erfüllung in Verzug gerät; die genauen Voraussetzungen
+    richten sich nach der jeweiligen Sicherungsabrede. Erst ab diesem Zeitpunkt darf
+    der Sicherungsnehmer das in seinem Eigentum stehende Sicherungsgut verwerten,
+    etwa durch freihändigen Verkauf.
   norms:
   - § 286 BGB
   quellen:
@@ -123,13 +123,73 @@ cards:
 - slug: zr-sr-su-uebersicherung
   type: definition
   front: Was versteht man unter Übersicherung und welche Rechtsfolge hat sie?
-  back: Übersicherung liegt vor, wenn der Wert des Sicherungsguts nachträglich außer
-    Verhältnis zur Höhe der gesicherten Forderung gerät. Anerkannt ist ein Freigabeanspruch
-    des Sicherungsgebers gegen den Sicherungsnehmer hinsichtlich des überschießenden
-    Teils, der aus ergänzender Auslegung der Sicherungsabrede unter Berücksichtigung
-    von Treu und Glauben (§ 242 BGB) folgt.
+  back: Übersicherung liegt vor, wenn der Wert des Sicherungsguts außer Verhältnis
+    zur Höhe der gesicherten Forderung steht. Man unterscheidet die anfängliche Übersicherung
+    (schon bei Vertragsschluss) von der nachträglichen (der Wert steigt oder die Forderung
+    sinkt später). Anerkannt ist ein Freigabeanspruch des Sicherungsgebers hinsichtlich
+    des überschießenden Teils, der aus der Sicherungsabrede unter Berücksichtigung
+    von Treu und Glauben (§ 242 BGB) folgt, auch ohne ausdrückliche Klausel (vgl.
+    BGH, Beschluss des Großen Zivilsenats vom 27.11.1997). Eine anfängliche Übersicherung
+    führt nicht ohne Weiteres zur Nichtigkeit nach § 138 BGB; formularmäßige Sicherungsabreden
+    ohne angemessene Freigabeklausel können aber nach § 307 BGB unwirksam sein.
   norms:
   - § 242 BGB
+  - § 138 BGB
+  - § 307 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-sr-su-bestimmtheitsgrundsatz
+  type: definition
+  front: Was verlangt der Bestimmtheitsgrundsatz bei der Sicherungsübereignung von
+    Sachgesamtheiten?
+  back: Im Sachenrecht kann nur eine einzelne, bestimmte Sache Gegenstand der Übereignung
+    sein (Spezialitätsgrundsatz). Bei der Sicherungsübereignung eines Warenlagers
+    oder einer Sachgesamtheit müssen die übereigneten Sachen daher im Zeitpunkt der
+    Einigung durch einfache äußere Abgrenzungsmerkmale (z. B. Lagerort, Markierung,
+    Raumsicherungsvertrag) für jeden Dritten bestimmbar sein; eine bloße Gattungsbezeichnung
+    ("alle Maschinen") ohne Abgrenzung genügt nicht.
+  norms:
+  - § 929 S. 1 BGB
+  - § 930 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-sr-su-insolvenz-absonderung
+  type: definition
+  front: Welche Stellung hat der Sicherungseigentümer in der Insolvenz des Sicherungsgebers?
+  back: Der Sicherungseigentümer kann das Sicherungsgut in der Insolvenz des Sicherungsgebers
+    nicht aussondern (§ 47 InsO), weil sein Eigentum nur Sicherungszwecken dient.
+    Er hat ein Recht auf abgesonderte Befriedigung (Absonderungsrecht, § 51 Nr. 1
+    InsO). Befindet sich das Sicherungsgut im Besitz des Insolvenzverwalters, ist
+    dieser zur Verwertung berechtigt (§ 166 Abs. 1 InsO), der Sicherungsnehmer erhält
+    den Erlös abzüglich der Feststellungs- und Verwertungskosten.
+  norms:
+  - § 51 Nr. 1 InsO
+  - § 47 InsO
+  - § 166 InsO
+  quellen:
+  - InsO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-sr-su-weiterveraeusserung-durch-sicherungsgeber
+  type: definition
+  front: Kann ein Dritter vom Sicherungsgeber gutgläubig Eigentum am Sicherungsgut
+    erwerben?
+  back: Veräußert der Sicherungsgeber das sicherungsübereignete Gut an einen Dritten,
+    ist er Nichtberechtigter, weil das Eigentum bei der Bank liegt. Der Dritte kann
+    nach §§ 929 S. 1, 932 BGB gutgläubig Eigentum erwerben, wenn er nicht weiß und
+    nicht grob fahrlässig verkennt, dass die Sache dem Veräußerer nicht gehört; die
+    Sache ist der Bank auch nicht im Sinne des § 935 Abs. 1 BGB abhandengekommen,
+    weil der Besitz des Sicherungsgebers auf freiwilliger Besitzüberlassung beruht.
+    Die Bank kann dann Ersatz vom Sicherungsgeber verlangen (u. a. § 816 Abs. 1 S.
+    1 BGB, Vertragsverletzung).
+  norms:
+  - § 932 BGB
+  - § 935 Abs. 1 BGB
+  - § 816 Abs. 1 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -145,13 +205,13 @@ schemata:
   - Eigenformulierung Redaktion
   steps:
   - label: I. Einigung über den Eigentumsübergang, § 929 S. 1 BGB
-  - label: II. Vereinbarung eines Besitzmittlungsverhältnisses statt Übergabe, §
-      930 BGB
+  - label: II. Vereinbarung eines Besitzmittlungsverhältnisses statt Übergabe, § 930
+      BGB
     hinweis: Z.B. Verwahrung oder Leihe zwischen Sicherungsgeber und Sicherungsnehmer.
   - label: III. Berechtigung des Sicherungsgebers am Sicherungsgut
     hinweis: Fehlt sie, ist gutgläubiger Erwerb nach § 933 BGB erst mit tatsächlicher
-      Besitzübertragung an den Sicherungsnehmer möglich, nicht bereits durch das
-      Besitzkonstitut allein.
+      Besitzübertragung an den Sicherungsnehmer möglich, nicht bereits durch das Besitzkonstitut
+      allein.
   - label: IV. Sicherungsabrede als kausaler Rechtsgrund
   - label: 'V. Rechtsfolge: fiduziarisches Volleigentum beim Sicherungsnehmer'
     children:
@@ -166,34 +226,45 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - BGB, amtliche Fassung
-  facts: Tischlereiinhaber U benötigt einen Betriebsmittelkredit über 40.000 EUR
-    bei der fiktiven Sparkasse S. Zur Absicherung vereinbaren U und S schriftlich
-    eine Sicherungsübereignung der im Betrieb befindlichen Kantenanleimmaschine KAM-500
+  facts: Tischlereiinhaber U benötigt einen Betriebsmittelkredit über 40.000 EUR bei
+    der fiktiven Sparkasse S. Zur Absicherung vereinbaren U und S schriftlich eine
+    Sicherungsübereignung der im Betrieb befindlichen Kantenanleimmaschine KAM-500
     im Wert von 40.000 EUR; im selben Vertrag vereinbaren sie, dass U die Maschine
-    im Rahmen eines Verwahrungsverhältnisses für S besitzt und im Betrieb weiter
-    nutzen darf. Eine tatsächliche Übergabe der Maschine an S findet nie statt,
-    U arbeitet unverändert mit ihr weiter. Als U mit drei aufeinanderfolgenden Kreditraten
-    trotz Mahnung in Verzug gerät, verlangt S die Herausgabe der Maschine zwecks
-    Verwertung. U meint, S sei nie Eigentümerin geworden, da nie eine Übergabe stattgefunden
-    habe.
+    im Rahmen eines Verwahrungsverhältnisses für S besitzt und im Betrieb weiter nutzen
+    darf. Eine tatsächliche Übergabe der Maschine an S findet nie statt, U arbeitet
+    unverändert mit ihr weiter. Nach dem Darlehensvertrag wird die gesamte Restschuld
+    fällig, wenn der Darlehensnehmer mit zwei aufeinanderfolgenden Raten in Verzug
+    gerät und S nach erfolgloser Mahnung mit Fristsetzung die Restschuld kündigt.
+    U gerät mit drei aufeinanderfolgenden Kreditraten trotz Mahnung in Verzug; S kündigt
+    die Restschuld nach erfolgloser Fristsetzung und verlangt die Herausgabe der Maschine
+    zwecks Verwertung. U meint, S sei nie Eigentümerin geworden, da nie eine Übergabe
+    stattgefunden habe.
   question: Ist S Sicherungseigentümerin der Kantenanleimmaschine geworden, und darf
     sie die Maschine wegen des Zahlungsverzugs des U verwerten?
   steps:
   - prompt: Ist eine Einigung über den Eigentumsübergang nach § 929 S. 1 BGB erfolgt?
-    erwartung: Ja, U und S haben sich im Sicherungsvertrag ausdrücklich über den
-      Übergang des Eigentums an der Maschine auf S geeinigt.
+    erwartung: Ja, U und S haben sich im Sicherungsvertrag ausdrücklich über den Übergang
+      des Eigentums an der Maschine auf S geeinigt.
   - prompt: Wieso steht es der Wirksamkeit nicht entgegen, dass nie eine tatsächliche
       Übergabe stattgefunden hat?
     erwartung: Weil § 930 BGB die Übergabe durch die Vereinbarung eines Besitzmittlungsverhältnisses
-      ersetzt; hier haben U und S ein Verwahrungsverhältnis vereinbart, aufgrund
-      dessen U unmittelbarer und S mittelbarer Besitzer ist.
+      ersetzt; hier haben U und S ein Verwahrungsverhältnis vereinbart, aufgrund dessen
+      U unmittelbarer und S mittelbarer Besitzer ist.
   - prompt: War U zur Übereignung berechtigt?
     erwartung: Ja, U war als Eigentümer der selbst erworbenen Maschine zur Übereignung
       berechtigt, sodass es auf einen gutgläubigen Erwerb nicht ankommt.
   - prompt: Liegt Verwertungsreife vor?
-    erwartung: 'Ja: die gesicherte Darlehensforderung ist fällig, und U befindet
-      sich trotz Mahnung mit mehreren Raten in Verzug, sodass die Voraussetzungen
-      der Sicherungsabrede für die Verwertung erfüllt sind.'
+    erwartung: 'Ja: Allein der Verzug mit Raten macht nur die Raten fällig. Erst durch
+      die Kündigung bzw. Gesamtfälligstellung nach dem Darlehensvertrag ist die gesamte
+      gesicherte Restforderung fällig; da U trotz Mahnung und Fristsetzung nicht leistet,
+      sind die Voraussetzungen der Sicherungsabrede für die Verwertung (Fälligkeit
+      der gesicherten Forderung und Verzug) erfüllt. Verwertungsreife liegt vor.'
+  - prompt: Auf welche Anspruchsgrundlage kann S das Herausgabeverlangen stützen?
+    erwartung: 'Auf die Sicherungsabrede in Verbindung mit dem Verwahrungsverhältnis
+      (Rückgabeverlangen des mittelbaren Besitzers, § 695 BGB analog bzw. vertragliche
+      Herausgabepflicht bei Verwertungsreife) sowie auf § 985 BGB: S ist Eigentümerin,
+      U unmittelbare Besitzerin; ihr Recht zum Besitz (§ 986 BGB) aus dem Verwahrungs-
+      und Nutzungsverhältnis ist mit Eintritt der Verwertungsreife erloschen.'
   - prompt: Zu welchem Ergebnis kommt man?
     erwartung: S ist wirksam Sicherungseigentümerin geworden und darf die Maschine
       wegen der eingetretenen Verwertungsreife verwerten.
@@ -206,9 +277,10 @@ faelle:
       norms:
       - § 929 S. 1 BGB
       keywords:
-      - '929'
-      - Einigung
-      - Eigentumsübergang
+      - Einigung über den Eigentumsübergang
+      - § 929 S. 1
+      - dingliche Einigung
+      - Eigentumsübertragung durch Einigung und Übergabesurrogat
       card_slugs:
       - zr-sr-su-929-930-besitzkonstitut
     - id: p2
@@ -218,9 +290,12 @@ faelle:
       norms:
       - § 930 BGB
       keywords:
-      - '930'
       - Besitzmittlungsverhältnis
-      - Verwahrung
+      - § 930
+      - Besitzkonstitut
+      - U ist unmittelbarer, S mittelbarer Besitzer
+      - Übergabe wird ersetzt
+      - § 868
       card_slugs:
       - zr-sr-su-929-930-besitzkonstitut
     - id: p3
@@ -228,26 +303,34 @@ faelle:
         nicht erforderlich
       weight: 1.0
       keywords:
-      - berechtigt
-      - Eigentümer
+      - U war Eigentümer der Maschine
+      - berechtigter Verfügender
+      - kein gutgläubiger Erwerb erforderlich
+      - Verfügungsbefugnis des U
     - id: p4
       label: Sicherungsabrede als kausaler Rechtsgrund benannt
       weight: 1.0
       keywords:
       - Sicherungsabrede
-      - Rechtsgrund
+      - Sicherungsvertrag
+      - kausaler Rechtsgrund der Übereignung
+      - fiduziarisches Eigentum
+      - Treuhandabrede
       card_slugs:
       - zr-sr-su-sicherungsabrede
     - id: p5
-      label: Verwertungsreife wegen Fälligkeit und Zahlungsverzugs bejaht
+      label: 'Verwertungsreife bejaht: Gesamtfälligkeit durch Kündigung/Fälligstellung
+        der gesicherten Forderung und Verzug (nicht schon aus dem Ratenverzug allein)'
       weight: 2.0
       required: true
       norms:
       - § 286 BGB
       keywords:
       - Verwertungsreife
-      - Verzug
-      - fällig
+      - Gesamtfälligstellung
+      - Kündigung der Restschuld
+      - Fälligkeit der gesicherten Forderung
+      - Verzug mit der Rückzahlung
       card_slugs:
       - zr-sr-su-verwertungsreife
     - id: p6
@@ -255,8 +338,22 @@ faelle:
       weight: 1.0
       required: true
       keywords:
-      - Sicherungseigentümerin
-      - darf verwerten
+      - S ist Sicherungseigentümerin
+      - Sicherungseigentum wirksam entstanden
+      - S darf die Maschine verwerten
+      - Verwertungsbefugnis der Bank
       card_slugs:
       - zr-sr-su-fiduziarisches-eigentum
+      - zr-sr-su-verwertungsreife
+    - id: p7
+      label: Anspruchsgrundlage des Herausgabeverlangens benannt (Sicherungsabrede/Verwahrung,
+        § 985 BGB; Recht zum Besitz mit Verwertungsreife erloschen)
+      weight: 1.0
+      keywords:
+      - Herausgabeanspruch aus der Sicherungsabrede
+      - Recht zum Besitz erloschen
+      - § 986
+      - Verwahrungsvertrag
+      - Herausgabeverlangen des mittelbaren Besitzers
+      card_slugs:
       - zr-sr-su-verwertungsreife

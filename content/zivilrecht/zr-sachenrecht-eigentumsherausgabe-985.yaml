@@ -8,8 +8,8 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-14'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: zr-985-anspruchsvoraussetzungen
   type: definition
@@ -27,10 +27,9 @@ cards:
   type: definition
   front: Was bezeichnet der Begriff 'Vindikationslage'?
   back: Die Vindikationslage beschreibt den Zustand, in dem die Voraussetzungen des
-    § 985 BGB vorliegen - der Eigentümer ist nicht (mehr) Besitzer der Sache und
-    der Besitzer hat kein Recht zum Besitz. Sie bildet zugleich die tatbestandliche
-    Grundlage für die Ansprüche des Eigentümer-Besitzer-Verhältnisses aus §§ 987
-    ff. BGB.
+    § 985 BGB vorliegen - der Eigentümer ist nicht (mehr) Besitzer der Sache und der
+    Besitzer hat kein Recht zum Besitz. Sie bildet zugleich die tatbestandliche Grundlage
+    für die Ansprüche des Eigentümer-Besitzer-Verhältnisses aus §§ 987 ff. BGB.
   norms:
   - § 985 BGB
   - § 986 BGB
@@ -52,10 +51,10 @@ cards:
   stand: 2026-09
 - slug: zr-ebv-systematik-987ff
   type: definition
-  front: Welche Anspruchsgruppen regelt das Eigentümer-Besitzer-Verhältnis (EBV)
-    neben dem Herausgabeanspruch?
-  back: 'Das EBV der §§ 987 ff. BGB ergänzt den Herausgabeanspruch aus § 985 BGB
-    um drei weitere Anspruchsgruppen zwischen nichtberechtigtem Besitzer und Eigentümer:
+  front: Welche Anspruchsgruppen regelt das Eigentümer-Besitzer-Verhältnis (EBV) neben
+    dem Herausgabeanspruch?
+  back: 'Das EBV der §§ 987 ff. BGB ergänzt den Herausgabeanspruch aus § 985 BGB um
+    drei weitere Anspruchsgruppen zwischen nichtberechtigtem Besitzer und Eigentümer:
     den Nutzungsherausgabeanspruch (§§ 987, 988, 990, 993 BGB), den Schadensersatzanspruch
     bei Verschlechterung, Untergang oder Unmöglichkeit der Herausgabe (§§ 989, 990,
     991, 992 BGB) und den Verwendungsersatzanspruch des Besitzers gegen den Eigentümer
@@ -73,9 +72,8 @@ cards:
   back: War der Besitzer bereits beim Besitzerwerb bösgläubig - kannte er also sein
     fehlendes Besitzrecht oder kannte er es grob fahrlässig nicht -, oder erfährt
     er dies später, haftet er ab diesem Zeitpunkt wie ein Besitzer, gegen den die
-    Herausgabeklage rechtshängig ist. § 990 BGB erstreckt damit die verschärfte
-    Haftung aus §§ 987, 989 BGB auf den bösgläubigen, aber noch nicht verklagten
-    Besitzer.
+    Herausgabeklage rechtshängig ist. § 990 BGB erstreckt damit die verschärfte Haftung
+    aus §§ 987, 989 BGB auf den bösgläubigen, aber noch nicht verklagten Besitzer.
   norms:
   - § 990 BGB
   - § 987 BGB
@@ -145,9 +143,9 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - BGB, amtliche Fassung
-  facts: Eigentümerin E leiht ihr Mountainbike der L befristet bis zum 1. März,
-    § 604 Abs. 1 BGB. L nutzt das Rad über den vereinbarten Termin hinaus weiter
-    und gibt es trotz Aufforderung der E nicht zurück.
+  facts: Eigentümerin E leiht ihr Mountainbike der L befristet bis zum 1. März, §
+    604 Abs. 1 BGB. L nutzt das Rad über den vereinbarten Termin hinaus weiter und
+    gibt es trotz Aufforderung der E nicht zurück.
   question: Hat E gegen L einen Anspruch auf Herausgabe des Mountainbikes aus § 985
     BGB?
   steps:
@@ -162,8 +160,8 @@ faelle:
       Besitzerin, § 854 Abs. 1 BGB.
   - prompt: Hatte L ein Recht zum Besitz, und besteht es noch?
     erwartung: Ursprünglich ja, aus dem Leihvertrag, § 598 BGB. Mit Ablauf der vereinbarten
-      Leihzeit endete das Leihverhältnis jedoch gemäß § 604 Abs. 1 BGB, sodass
-      das Recht zum Besitz der L erloschen ist.
+      Leihzeit endete das Leihverhältnis jedoch gemäß § 604 Abs. 1 BGB, sodass das
+      Recht zum Besitz der L erloschen ist.
   - prompt: Wie ist der Anspruch zu bescheiden?
     erwartung: E hat gegen L einen Anspruch auf Herausgabe des Mountainbikes aus §
       985 BGB.
@@ -176,7 +174,9 @@ faelle:
       norms:
       - § 985 BGB
       keywords:
-      - '985'
+      - Vindikationslage
+      - Herausgabeanspruch des Eigentümers gegen den Besitzer
+      - Eigentümer-Besitzer-Verhältnis
       card_slugs:
       - zr-985-anspruchsvoraussetzungen
     - id: p2
@@ -184,8 +184,11 @@ faelle:
       weight: 1.5
       required: false
       keywords:
-      - Eigentümerin
-      - Verfügungsgeschäft
+      - Eigentum der E blieb unberührt
+      - Leihe ist kein Verfügungsgeschäft
+      - Leihvertrag verpflichtet nur schuldrechtlich
+      - Trennungs- und Abstraktionsprinzip
+      - keine Übereignung
       card_slugs:
       - zr-985-anspruchsvoraussetzungen
     - id: p3
@@ -195,9 +198,9 @@ faelle:
       norms:
       - § 854 Abs. 1 BGB
       keywords:
-      - unmittelbare
-      - Besitz
-      - '854'
+      - unmittelbare Besitzerin
+      - tatsächliche Sachherrschaft
+      - § 854 Abs. 1
       card_slugs:
       - zr-985-anspruchsvoraussetzungen
     - id: p4
@@ -207,21 +210,25 @@ faelle:
       norms:
       - § 598 BGB
       keywords:
-      - Leihe
-      - '598'
+      - Recht zum Besitz
+      - § 986 Abs. 1
+      - Besitzrecht aus dem Leihvertrag
+      - Besitzrecht aus Leihe
       card_slugs:
       - zr-986-recht-zum-besitz
     - id: p5
-      label: Erlöschen des Besitzrechts mit Fristablauf gemäß § 604 Abs. 1 BGB
-        korrekt begründet
+      label: Erlöschen des Besitzrechts mit Fristablauf gemäß § 604 Abs. 1 BGB korrekt
+        begründet
       weight: 3.0
       required: true
       norms:
       - § 604 Abs. 1 BGB
       keywords:
-      - '604'
-      - Fristablauf
-      - erloschen
+      - Ablauf der Leihzeit
+      - Besitzrecht erloschen
+      - Rückgabepflicht nach Fristablauf
+      - Recht zum Besitz entfallen
+      - Beendigung der Leihe
       card_slugs:
       - zr-986-recht-zum-besitz
     - id: p6
@@ -231,8 +238,9 @@ faelle:
       norms:
       - § 985 BGB
       keywords:
-      - Anspruch besteht
-      - E gegen L
+      - Anspruch aus § 985 besteht
+      - L muss das Mountainbike herausgeben
+      - Herausgabeanspruch der E besteht
       card_slugs:
       - zr-985-vindikationslage
       - zr-985-anspruchsvoraussetzungen

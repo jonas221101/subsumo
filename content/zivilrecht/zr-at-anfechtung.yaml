@@ -9,8 +9,8 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-15'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: zr-at-anfechtung-grundgedanke
   type: definition
@@ -28,10 +28,10 @@ cards:
 - slug: zr-at-anfechtung-inhaltsirrtum
   type: definition
   front: 'Definiere: Inhaltsirrtum, § 119 Abs. 1 Var. 1 BGB'
-  back: Ein Inhaltsirrtum liegt vor, wenn der Erklärende zwar genau das erklärt,
-    was er erklären wollte, sich aber über die Bedeutung oder Tragweite seiner Erklärung
-    irrt - Wille und Erklärung stimmen äußerlich überein, der Erklärende irrt
-    jedoch über den rechtlichen oder tatsächlichen Gehalt des von ihm Erklärten.
+  back: Ein Inhaltsirrtum liegt vor, wenn der Erklärende zwar genau das erklärt, was
+    er erklären wollte, sich aber über die Bedeutung oder Tragweite seiner Erklärung
+    irrt - Wille und Erklärung stimmen äußerlich überein, der Erklärende irrt jedoch
+    über den rechtlichen oder tatsächlichen Gehalt des von ihm Erklärten.
   norms:
   - § 119 Abs. 1 BGB
   quellen:
@@ -40,13 +40,13 @@ cards:
   stand: 2026-09
 - slug: zr-at-anfechtung-erklaerungsirrtum
   type: definition
-  front: 'Definiere: Erklaerungsirrtum, § 119 Abs. 1 Var. 2 BGB'
-  back: Ein Erklaerungsirrtum liegt vor, wenn der Erklaerende schon die von ihm
-    abgegebene Erklaerungshandlung nicht so vornehmen wollte, wie er sie tatsaechlich
-    vorgenommen hat - er verspricht, verschreibt oder vertippt sich, sodass die
-    abgegebene Erklaerung von seinem tatsaechlichen Willen abweicht. Anders als
-    beim Inhaltsirrtum (§ 119 Abs. 1 Var. 1 BGB) fallen hier Wille und Erklaerung
-    bereits auseinander - nicht erst deren Bedeutung oder Tragweite wird verkannt.
+  front: 'Definiere: Erklärungsirrtum, § 119 Abs. 1 Var. 2 BGB'
+  back: Ein Erklärungsirrtum liegt vor, wenn der Erklärende schon die von ihm abgegebene
+    Erklärungshandlung nicht so vornehmen wollte, wie er sie tatsächlich vorgenommen
+    hat - er verspricht, verschreibt oder vertippt sich, sodass die abgegebene Erklärung
+    von seinem tatsächlichen Willen abweicht. Anders als beim Inhaltsirrtum (§ 119
+    Abs. 1 Var. 1 BGB) fallen hier Wille und Erklärung bereits auseinander - nicht
+    erst deren Bedeutung oder Tragweite wird verkannt.
   norms:
   - § 119 Abs. 1 BGB
   quellen:
@@ -56,13 +56,19 @@ cards:
 - slug: zr-at-anfechtung-eigenschaftsirrtum
   type: definition
   front: 'Definiere: Eigenschaftsirrtum, § 119 Abs. 2 BGB'
-  back: Der Eigenschaftsirrtum ist ein gesetzlich als Inhaltsirrtum eingestufter Motivirrtum
-    über verkehrswesentliche Eigenschaften einer Person oder Sache. Verkehrswesentlich
-    sind Eigenschaften, die im Rechtsverkehr allgemein als wertbildend angesehen werden
-    und dem Gegenstand oder der Person unmittelbar und nicht nur vorübergehend anhaften
-    - bloße Werterwartungen oder Marktpreise zählen nicht dazu.
+  back: 'Der Eigenschaftsirrtum (§ 119 Abs. 2 BGB) ist ein Motivirrtum über verkehrswesentliche
+    Eigenschaften einer Person oder Sache, der vom Gesetz einem Irrtum über den Inhalt
+    der Erklärung gleichgestellt wird ("gilt als" Inhaltsirrtum, Fiktion). Verkehrswesentlich
+    sind Eigenschaften, die nach der Verkehrsanschauung für das konkrete Geschäft
+    wesentlich sind und dem Gegenstand oder der Person unmittelbar und nicht nur vorübergehend
+    anhaften - Beispiele: Echtheit eines Kunstwerks, Alter, Herkunft oder Unfallfreiheit
+    einer Sache, Zuverlässigkeit einer Person; reine Werterwartungen und der Marktwert
+    selbst zählen nicht dazu (wohl aber wertbildende Faktoren). Abgrenzung: Nach Gefahrübergang
+    verdrängt das kaufrechtliche Mängelrecht (§§ 434, 437 ff. BGB) die Anfechtung
+    wegen Eigenschaftsirrtums über die Sache.'
   norms:
   - § 119 Abs. 2 BGB
+  - § 437 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -71,14 +77,14 @@ cards:
   type: streitstand
   front: 'Abgrenze: Warum ist der (sonstige) Motivirrtum grundsätzlich unbeachtlich?'
   back: Ein Motivirrtum betrifft die Beweggründe, aus denen jemand eine Willenserklärung
-    abgibt, nicht aber deren Inhalt oder die Erklärungshandlung selbst. Da § 119
-    BGB abschließend regelt, welche Irrtümer zur Anfechtung berechtigen, ist der
-    sonstige Motivirrtum grundsätzlich unbeachtlich - sonst wäre die Bestandskraft
-    von Willenserklärungen im Rechtsverkehr kaum noch verlässlich. Der Eigenschaftsirrtum
-    (§ 119 Abs. 2 BGB) ist die einzige vom Gesetzgeber ausdrücklich als beachtlich
-    erklärte Ausnahme; im Übrigen kommt allenfalls eine Anpassung wegen Störung
-    der Geschäftsgrundlage (§ 313 BGB) in Betracht, wenn die Vorstellung über einen
-    Umstand zur Grundlage des Vertrags geworden ist.
+    abgibt, nicht aber deren Inhalt oder die Erklärungshandlung selbst. Da § 119 BGB
+    abschließend regelt, welche Irrtümer zur Anfechtung berechtigen, ist der sonstige
+    Motivirrtum grundsätzlich unbeachtlich - sonst wäre die Bestandskraft von Willenserklärungen
+    im Rechtsverkehr kaum noch verlässlich. Der Eigenschaftsirrtum (§ 119 Abs. 2 BGB)
+    ist die einzige vom Gesetzgeber ausdrücklich als beachtlich erklärte Ausnahme;
+    im Übrigen kommt allenfalls eine Anpassung wegen Störung der Geschäftsgrundlage
+    (§ 313 BGB) in Betracht, wenn die Vorstellung über einen Umstand zur Grundlage
+    des Vertrags geworden ist.
   norms:
   - § 119 Abs. 2 BGB
   - § 313 BGB
@@ -89,12 +95,11 @@ cards:
 - slug: zr-at-anfechtung-erklaerung-143
   type: norm
   front: Was regelt § 143 Abs. 1 und Abs. 2 BGB zur Anfechtungserklärung?
-  back: Die Anfechtung erfolgt durch empfangsbedürftige Erklärung gegenüber dem
-    Anfechtungsgegner (§ 143 Abs. 1 BGB). Bei einem Vertrag ist Anfechtungsgegner
-    gemäß § 143 Abs. 2 BGB der andere Vertragsteil - eine Erklärung gegenüber
-    Dritten genügt nicht. Eine bestimmte Form ist nicht vorgeschrieben; erforderlich
-    ist nur, dass der Wille, sich vom Geschäft zu lösen, hinreichend deutlich zum
-    Ausdruck kommt.
+  back: Die Anfechtung erfolgt durch empfangsbedürftige Erklärung gegenüber dem Anfechtungsgegner
+    (§ 143 Abs. 1 BGB). Bei einem Vertrag ist Anfechtungsgegner gemäß § 143 Abs. 2
+    BGB der andere Vertragsteil - eine Erklärung gegenüber Dritten genügt nicht. Eine
+    bestimmte Form ist nicht vorgeschrieben; erforderlich ist nur, dass der Wille,
+    sich vom Geschäft zu lösen, hinreichend deutlich zum Ausdruck kommt.
   norms:
   - § 143 Abs. 1 BGB
   - § 143 Abs. 2 BGB
@@ -111,9 +116,11 @@ cards:
     Unverzüglich bedeutet nicht sofort, sondern innerhalb einer den Umständen nach
     angemessenen Überlegungsfrist. Diese Frist ist strenger als die Jahresfrist des
     § 124 BGB für die Anfechtung wegen arglistiger Täuschung oder widerrechtlicher
-    Drohung.
+    Drohung. Unabhängig von der Kenntnis ist die Anfechtung zehn Jahre nach Abgabe
+    der Willenserklärung ausgeschlossen (§ 121 Abs. 2 BGB).
   norms:
   - § 121 Abs. 1 BGB
+  - § 121 Abs. 2 BGB
   - § 124 BGB
   quellen:
   - BGB, amtliche Fassung
@@ -162,7 +169,8 @@ schemata:
       die Erklärung nicht mit diesem Inhalt abgegeben.
   - label: IV. Anfechtungsfrist
     children:
-    - label: 1. § 121 Abs. 1 BGB - unverzüglich bei §§ 119, 120 BGB
+    - label: 1. § 121 Abs. 1 BGB - unverzüglich bei §§ 119, 120 BGB; Ausschlussfrist
+        von zehn Jahren, § 121 Abs. 2 BGB
     - label: 2. § 124 BGB - Jahresfrist bei § 123 BGB (nicht bei Irrtumsanfechtung
         einschlägig)
   - label: 'V. Rechtsfolge: Nichtigkeit von Anfang an, § 142 Abs. 1 BGB'
@@ -189,6 +197,7 @@ faelle:
     hilfsweise, falls die Anfechtung wirksam sein sollte, verlangt sie von K Ersatz
     des Schadens, der ihr dadurch entstanden ist, dass sie im Vertrauen auf den Vertrag
     einem anderen Interessenten, der 7.800 Euro geboten hatte, bereits abgesagt hatte.
+    V hatte den Kombi selbst für 6.000 Euro angekauft.
   question: Ist der Kaufvertrag zwischen K und V wirksam angefochten worden, und kann
     V von K Ersatz des ihr durch die Absage an den anderen Interessenten entstandenen
     Schadens verlangen?
@@ -202,12 +211,12 @@ faelle:
       V zum Kaufvertrag geführt hat.
   - prompt: Liegt ein Inhaltsirrtum oder ein Erklärungsirrtum vor?
     erwartung: Ein Erklärungsirrtum nach § 119 Abs. 1 Var. 2 BGB - K wollte "7.500
-      Euro" erklären, hat sich aber beim Eintippen vertan, sodass die abgegebene
-      Erklärung von seinem tatsächlichen Willen abweicht; kein bloßer Irrtum über
-      die Bedeutung des von ihm bewusst Erklärten.
+      Euro" erklären, hat sich aber beim Eintippen vertan, sodass die abgegebene Erklärung
+      von seinem tatsächlichen Willen abweicht; kein bloßer Irrtum über die Bedeutung
+      des von ihm bewusst Erklärten.
   - prompt: Ist die Kausalität zwischen Irrtum und Erklärung gegeben?
-    erwartung: Ja - bei Kenntnis der Sachlage und verständiger Würdigung hätte
-      K die Erklärung mit dem Inhalt "7.050 Euro" nicht abgegeben.
+    erwartung: Ja - bei Kenntnis der Sachlage und verständiger Würdigung hätte K die
+      Erklärung mit dem Inhalt "7.050 Euro" nicht abgegeben.
   - prompt: Wurde die Anfechtung form- und fristgerecht erklärt?
     erwartung: Die Erklärung gegenüber V als Anfechtungsgegnerin genügt § 143 Abs.
       1, 2 BGB. Die Anfechtung noch am Tag der Entdeckung ist unverzüglich im Sinne
@@ -216,10 +225,14 @@ faelle:
     erwartung: Der Kaufvertrag ist gemäß § 142 Abs. 1 BGB von Anfang an nichtig.
   - prompt: Kann V von K Ersatz ihres Schadens aus der Absage an den anderen Interessenten
       verlangen?
-    erwartung: Ja, dem Grunde nach aus § 122 Abs. 1 BGB als Vertrauensschaden; der
-      Ersatz ist aber der Höhe nach auf das Erfüllungsinteresse begrenzt, ein Ausschluss
-      nach § 122 Abs. 2 BGB scheidet aus, da V den Irrtum weder kannte noch kennen
-      musste.
+    erwartung: 'Ja, dem Grunde nach aus § 122 Abs. 1 BGB als Vertrauensschaden (negatives
+      Interesse): V hätte den Kombi an den anderen Interessenten für 7.800 Euro verkaufen
+      können, ihr Vertrauensschaden (entgangener Gewinn aus diesem Geschäft) beträgt
+      7.800 - 6.000 = 1.800 Euro. Der Ersatz ist aber der Höhe nach auf das Erfüllungsinteresse
+      (positives Interesse) begrenzt: Aus dem Vertrag mit K hätte V nur 7.050 - 6.000
+      = 1.050 Euro verdient. Die Deckelung greift, sodass K nur 1.050 Euro schuldet.
+      Ein Ausschluss nach § 122 Abs. 2 BGB scheidet aus, da V den Irrtum weder kannte
+      noch kennen musste.'
   expectation:
     pruefpunkte:
     - id: p1
@@ -229,8 +242,11 @@ faelle:
       norms:
       - § 142 Abs. 1 BGB
       keywords:
-      - '142'
+      - § 142 Abs. 1
+      - rückwirkend nichtig
+      - ex tunc
       - von Anfang an nichtig
+      - Anfechtung vernichtet den Vertrag
       card_slugs:
       - zr-at-anfechtung-grundgedanke
     - id: p2
@@ -241,7 +257,10 @@ faelle:
       - § 119 Abs. 1 BGB
       keywords:
       - Erklärungsirrtum
-      - '119'
+      - § 119 Abs. 1 Var. 2
+      - § 119 Abs. 1 Alt. 2
+      - Wille und Erklärung fallen auseinander
+      - Erklärungshandlung
       card_slugs:
       - zr-at-anfechtung-erklaerungsirrtum
     - id: p3
@@ -249,21 +268,25 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - Inhaltsirrtum
-      - Motivirrtum
+      - Abgrenzung zum Inhaltsirrtum
+      - Irrtum über die Bedeutung der Erklärung
+      - unbeachtlicher Motivirrtum
+      - kein Inhaltsirrtum
       card_slugs:
       - zr-at-anfechtung-inhaltsirrtum
       - zr-at-anfechtung-motivirrtum-abgrenzung
     - id: p4
-      label: Kausalität zwischen Irrtum und Erklärung gepruft
+      label: Kausalität zwischen Irrtum und Erklärung geprüft
       weight: 1.0
       required: false
       keywords:
-      - Kausalität
-      - verständiger Würdigung
+      - Kausalität des Irrtums
+      - verständige Würdigung
+      - bei Kenntnis der Sachlage
+      - Erheblichkeit des Irrtums
     - id: p5
       label: Anfechtungserklärung und Anfechtungsfrist nach §§ 143, 121 Abs. 1 BGB
-        sauber gepruft
+        sauber geprüft
       weight: 2.0
       required: true
       norms:
@@ -271,23 +294,28 @@ faelle:
       - § 143 Abs. 1 BGB
       keywords:
       - unverzüglich
-      - '121'
-      - '143'
+      - ohne schuldhaftes Zögern
+      - § 121 Abs. 1
+      - § 143 Abs. 2
+      - Anfechtungsgegner
       card_slugs:
       - zr-at-anfechtung-erklaerung-143
       - zr-at-anfechtung-frist-121
     - id: p6
-      label: Schadensersatzanspruch der V aus § 122 Abs. 1 BGB bejaht, inkl. Begrenzung
-        auf das Erfüllungsinteresse und Prüfung des Ausschlusses nach § 122 Abs.
-        2 BGB
+      label: Schadensersatzanspruch der V aus § 122 Abs. 1 BGB bejaht, mit Begrenzung
+        auf das Erfüllungsinteresse (Vertrauensschaden 1.800 Euro, Erfüllungsinteresse
+        1.050 Euro) und Prüfung des Ausschlusses nach § 122 Abs. 2 BGB
       weight: 2.0
       required: false
       norms:
       - § 122 Abs. 1 BGB
       - § 122 Abs. 2 BGB
       keywords:
-      - '122'
       - Vertrauensschaden
-      - Erfüllungsinteresse
+      - negatives Interesse
+      - Begrenzung auf das Erfüllungsinteresse
+      - positives Interesse
+      - § 122 Abs. 2
+      - Deckelung des Schadens
       card_slugs:
       - zr-at-anfechtung-schadensersatz-122
