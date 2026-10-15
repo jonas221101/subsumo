@@ -108,8 +108,8 @@ cards:
     Rücksicht auf diese Frist ist die Anfechtung nach § 124 Abs. 3 BGB ausgeschlossen,
     wenn seit der Abgabe der Willenserklärung zehn Jahre verstrichen sind. Anders
     als bei der Irrtumsanfechtung (§ 121 BGB, unverzüglich) muss die Anfechtung nicht
-    unverzüglich, sondern innerhalb der Jahresfrist erfolgen. Die Anfechtung wird
-    durch Erklärung gegenüber dem Anfechtungsgegner erklärt (§ 143 BGB).
+    unverzüglich, sondern innerhalb der Jahresfrist erfolgen. Die Anfechtung ist
+    gegenüber dem Anfechtungsgegner zu erklären (§ 143 BGB).
   norms:
   - § 124 Abs. 1 BGB
   - § 124 Abs. 2 BGB
@@ -255,14 +255,15 @@ faelle:
       S handelte vorsätzlich.
   - prompt: Ist S Dritter im Sinne des § 123 Abs. 2 BGB?
     erwartung: >-
-      Ja. Erklärungsempfänger der Bürgschaftserklärung ist G. S, der Hauptschuldner, ist
+      Ja, es liegt eine Täuschung durch einen Dritten nach § 123 Abs. 2 S. 1 BGB vor.
+      Erklärungsempfänger der Bürgschaftserklärung ist G. S, der Hauptschuldner, ist
       nicht auf Seiten der G beteiligt; er ist weder Vertreter noch Verhandlungsgehilfe
       der G und damit Dritter.
   - prompt: Konnte G die Täuschung kennen oder kennen müssen?
     erwartung: >-
-      Nein. G wusste nichts und hatte keinen Anlass zu Zweifeln. Die Voraussetzungen des
-      § 123 Abs. 2 S. 1 BGB sind deshalb nicht erfüllt; die Anfechtung gegenüber G ist
-      nicht begründet.
+      Nein. G wusste nichts und hatte keinen Anlass zu Zweifeln, sie war gutgläubig.
+      Die Anfechtung scheitert deshalb an § 123 Abs. 2 S. 1 BGB, weil G die
+      Täuschung weder kannte noch kennen musste.
   - prompt: Ergebnis und Anschlussfrage?
     erwartung: >-
       Die Anfechtung nach § 123 BGB scheitert, die Bürgschaft bleibt wirksam. G kann
@@ -296,6 +297,7 @@ faelle:
       keywords:
       - "§ 123 Abs. 2"
       - "Täuschung durch einen Dritten"
+      - "Täuschung durch Dritten"
       - "Dritter"
       - "kannte oder kennen musste"
       - "Hauptschuldner ist Dritter"
@@ -309,6 +311,7 @@ faelle:
       - "Kennenmüssen"
       - "gutgläubig"
       - "Anfechtung scheitert"
+      - "weder kannte noch kennen musste"
       - "Bürgschaft bleibt wirksam"
       - "§ 765 Abs. 1"
       card_slugs:

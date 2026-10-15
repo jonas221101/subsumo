@@ -80,7 +80,7 @@ cards:
     kann ihn jederzeit kündigen, darf es aber nur in der Weise tun, dass der Auftraggeber
     für die Besorgung des Geschäfts anderweitig Fürsorge treffen kann, es sei denn, es liegt
     ein wichtiger Grund für eine unzeitige Kündigung vor (§ 671 Abs. 2 BGB). Bei Verstoß gegen
-    diese Pflicht haftet der Beauftragte auf Schadensersatz (§ 671 Abs. 2 S. 2 BGB). Das Recht
+    diese Pflicht haftet der Beauftragte auf Schadensersatz (§ 671 Abs. 2 S. 3 BGB). Das Recht
     des Beauftragten zur Kündigung aus wichtigem Grund besteht auch bei vertraglichem Verzicht
     (§ 671 Abs. 3 BGB). Im Zweifel erlischt der Auftrag nicht mit dem Tod des Auftraggebers
     (§ 672 BGB), wohl aber mit dem Tod des Beauftragten (§ 673 BGB). Erlischt der Auftrag
@@ -192,8 +192,9 @@ cards:
     des Dienstberechtigten. Beispiele: Reparatur, Gutachten und Architektenplanung sind Werkverträge;
     anwaltliche Beratung und Prozessvertretung sind Dienstverträge (Geschäftsbesorgung, §
     675 Abs. 1 BGB); die ärztliche Behandlung ist ein Behandlungsvertrag mit Dienstvertragscharakter
-    (§§ 630a ff. BGB). Die Einordnung entscheidet über die Gewährleistung: Nur beim Werk bestehen
-    Mängelrechte (§ 634 BGB).'
+    (§§ 630a ff. BGB). Die Einordnung entscheidet über die Mängelhaftung: Die besonderen Mängelrechte
+    des § 634 BGB gibt es nur beim Werkvertrag, beim Dienstvertrag gelten die
+    allgemeinen Regeln der §§ 280 ff. BGB.'
   norms:
   - § 631 BGB
   - § 611 BGB
@@ -274,8 +275,8 @@ faelle:
   - prompt: Hat B einen Anspruch auf Ersatz seiner Kosten?
     erwartung: 'Ja. Nach § 670 BGB kann B Ersatz der Aufwendungen verlangen, die er den Umständen
       nach für erforderlich halten durfte. Mietkosten des Transporters (120 Euro) und Kraftstoff
-      (30 Euro) waren für den Transport erforderlich. Dass der Auftrag unentgeltlich ist,
-      spielt keine Rolle: Die Unentgeltlichkeit betrifft nur die Vergütung, nicht den Aufwendungsersatz.'
+      (30 Euro) waren für den Transport erforderlich. Die Unentgeltlichkeit des Auftrags
+      betrifft nur die Vergütung; der Aufwendungsersatz bleibt davon unberührt.'
   - prompt: Hat A einen Anspruch auf Rückzahlung des Vorschusses und auf das Klavier?
     erwartung: Ja. Nach § 667 BGB muss B alles herausgeben, was er zur Ausführung des Auftrags
       erhalten und aus der Geschäftsbesorgung erlangt hat. Das ist das Klavier (Übereignung

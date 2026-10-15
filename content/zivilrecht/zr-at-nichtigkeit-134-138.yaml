@@ -42,10 +42,12 @@ cards:
     Besteller dies kennt und bewusst zum eigenen Vorteil ausnutzt; dies gilt etwa
     für eine "Ohne-Rechnung"-Abrede, die die Steuerhinterziehung zum Vertragsinhalt
     macht. Bei einem nur nachträglichen Verstoß ist der Vertrag dagegen grundsätzlich
-    wirksam. Die Folgen für Werklohn-, Mängel- und Bereicherungsansprüche hat die
-    Rechtsprechung mehrfach geändert; hier ist die aktuelle Rechtsprechung zu prüfen.
-    Klausurtypisch ist, dass § 817 S. 2 BGB Rückforderungsansprüche des beiderseitig
-    Verbotsbewussten ausschließen kann (Hinweis auf Bereicherungsrecht).
+    wirksam. Nach der neueren Rechtsprechung des BGH
+    kann der Unternehmer dann weder Werklohn noch Wertersatz nach
+    Bereicherungsrecht verlangen, weil § 817 S. 2 BGB eingreift; dem Besteller
+    stehen keine Mängelansprüche zu (§ 242 BGB). Die Rechtsprechung zu den
+    Rechtsfolgen hat sich mehrfach geändert; in der Klausur ist die
+    Argumentation mit dem Verbotszweck und § 817 S. 2 BGB maßgeblich.
   norms:
   - § 134 BGB
   - § 1 Abs. 2 Nr. 2 SchwarzArbG
@@ -146,10 +148,10 @@ cards:
     festhält, muss dann beweisen, dass die Parteien das Geschäft nicht ohne den
     nichtigen Teil gewollt hätten. Eine geltungserhaltende Reduktion auf das
     gerade noch zulässige Maß findet bei sittenwidrigen Geschäften grundsätzlich
-    nicht statt; in AGB gilt § 306 Abs. 2 BGB.
+    nicht statt; in AGB verdrängt § 306 BGB den § 139 BGB; auch dort ist eine geltungserhaltende Reduktion ausgeschlossen, an die Stelle der unwirksamen Klausel tritt das Gesetz.
   norms:
   - § 139 BGB
-  - § 306 Abs. 2 BGB
+  - § 306 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
