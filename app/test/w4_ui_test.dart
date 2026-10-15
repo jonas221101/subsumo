@@ -9,7 +9,11 @@ import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:subsumo/api.dart';
+import 'package:subsumo/pages/account_page.dart';
+import 'package:subsumo/pages/cases_page.dart';
 import 'package:subsumo/pages/examen_page.dart';
+import 'package:subsumo/pages/lernprofil_page.dart';
+import 'package:subsumo/pages/login_page.dart';
 import 'package:subsumo/pages/review_page.dart';
 import 'package:subsumo/pages/schemata_page.dart';
 import 'package:subsumo/state.dart';
@@ -151,6 +155,100 @@ void main() {
       final textCenter = tester.getCenter(find.text('Fertig für heute.')).dx;
       final buttonCenter = tester.getCenter(find.text('Weitere Karten lernen')).dx;
       expect((textCenter - buttonCenter).abs(), lessThan(2));
+    });
+  });
+
+  group('Konto, Login, Profil', () {
+    testWidgets('Konto: Rechtliches verlinkt, Beta ersetzt Abo-Block', (tester) async {
+      tester.view.physicalSize = const Size(900, 2400);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.reset);
+      final state = AppState(api: ApiClient(client: MockClient((_) async => http.Response('{}', 404))))
+        ..user = {'email': 'a@b.de', 'pro_active': true, 'cancel_at_period_end': false};
+      await tester.pumpWidget(_app(state, const AccountPage(betaMode: true)));
+      await tester.pumpAndSettle();
+      expect(find.text('Testzugang – alle Funktionen freigeschaltet'), findsOneWidget);
+      expect(find.text('Kündigen'), findsNothing);
+      expect(find.text('Pro werden'), findsNothing);
+      for (final t in ['Impressum', 'Datenschutzerklärung', 'AGB']) {
+        expect(find.text(t), findsOneWidget);
+      }
+
+      // Leerer Code: Hinweis statt stiller Nicht-Reaktion.
+      await tester.ensureVisible(find.text('Code einlösen'));
+      await tester.tap(find.text('Code einlösen'));
+      await tester.pumpAndSettle();
+      expect(find.text('Bitte gib zuerst deinen Freischaltcode ein.'), findsOneWidget);
+    });
+
+    testWidgets('Login hat Rechtliches in der Fusszeile', (tester) async {
+      await tester.pumpWidget(_app(AppState(api: ApiClient()), const LoginPage()));
+      await tester.pumpAndSettle();
+      expect(find.text('Impressum'), findsOneWidget);
+      expect(find.text('AGB'), findsOneWidget);
+    });
+
+    testWidgets('Faelle: Hinweis ohne Bundesland, Suche leeren bei Nulltreffern', (tester) async {
+      tester.view.physicalSize = const Size(900, 1200);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.reset);
+      final client = MockClient((r) async => http.Response(
+          jsonEncode([
+            {'slug': 'f1', 'title': 'Kaufrecht', 'area': 'zivilrecht', 'difficulty': 2, 'minutes': 60}
+          ]),
+          200,
+          headers: _hdr));
+      final state = AppState(api: ApiClient(client: client)..setToken('t'))
+        ..examenCockpit = {'profil': {'bundesland': null}};
+      await tester.pumpWidget(_app(state, const Scaffold(body: CasesPage())));
+      await tester.pumpAndSettle();
+      expect(find.textContaining('Landesrecht wird angezeigt, sobald du dein Bundesland einstellst'),
+          findsOneWidget);
+      await tester.enterText(find.byType(TextField), 'zzz');
+      await tester.pumpAndSettle();
+      expect(find.text('Neu laden'), findsNothing);
+      await tester.tap(find.text('Suche leeren').last);
+      await tester.pumpAndSettle();
+      expect(find.text('Kaufrecht'), findsOneWidget);
+
+    });
+
+    testWidgets('Lernprofil: Abschnitt Bundesland & Universitaet, Deck-Dialog gruppiert', (tester) async {
+      tester.view.physicalSize = const Size(900, 6000);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.reset);
+      final client = MockClient((r) async {
+        if (r.url.path.endsWith('/bundeslaender')) {
+          return http.Response(jsonEncode([{'code': 'NW', 'name': 'Nordrhein-Westfalen'}]), 200, headers: _hdr);
+        }
+        if (r.url.path.endsWith('/universitaeten')) return http.Response('[]', 200, headers: _hdr);
+        return http.Response('{}', 404);
+      });
+      final state = AppState(api: ApiClient(client: client)..setToken('t'))
+        ..examenCockpit = {'profil': {'bundesland': null}};
+      await tester.pumpWidget(_app(
+        state,
+        const LernprofilPage(profil: {}, themen: [
+          {'slug': 'b', 'title': 'Zweites', 'area': 'strafrecht'},
+          {'slug': 'a', 'title': 'Erstes', 'area': 'zivilrecht'},
+          {'slug': 'c', 'title': 'Abc', 'area': 'zivilrecht'},
+        ]),
+      ));
+      await tester.pumpAndSettle();
+      expect(find.text('Bundesland & Universität'), findsOneWidget);
+      expect(find.text('Tagesbudget in Minuten'), findsNothing);
+      expect(find.textContaining('FSRS'), findsNothing);
+      expect(find.text('Wie sicher sollen Karten sitzen? Höher = häufigere Wiederholungen.'), findsOneWidget);
+
+      await tester.tap(find.text('Neues Deck'));
+      await tester.pumpAndSettle();
+      final zivil = tester.getTopLeft(find.text('Zivilrecht').last).dy;
+      final abc = tester.getTopLeft(find.text('Abc')).dy;
+      final erstes = tester.getTopLeft(find.text('Erstes')).dy;
+      final straf = tester.getTopLeft(find.text('Strafrecht').last).dy;
+      expect(zivil, lessThan(abc));
+      expect(abc, lessThan(erstes));
+      expect(erstes, lessThan(straf));
     });
   });
 }

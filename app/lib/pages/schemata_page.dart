@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
+import 'bundesland_hint.dart';
 import 'fit_title.dart';
 import 'norm_sheet.dart';
 import 'screen_status.dart';
@@ -85,7 +86,9 @@ class _SchemataPageState extends State<SchemataPage> {
                     ? '${_schemata.length} Schemata${_area == null ? ' in drei Rechtsgebieten' : ''}.'
                     : '${visible.length} von ${_schemata.length} Schemata.'),
           ),
-          const SizedBox(height: Spacing.xl),
+          const SizedBox(height: Spacing.md),
+          const BundeslandHint(),
+          const SizedBox(height: Spacing.sm),
           TextField(
             controller: _search,
             decoration: InputDecoration(
@@ -135,7 +138,13 @@ class _SchemataPageState extends State<SchemataPage> {
               message: _query.isEmpty
                   ? 'Keine Schemata für diese Auswahl.'
                   : 'Kein Schema passt zu „$_query".',
-              onRetry: _load,
+              retryLabel: _query.isNotEmpty ? 'Suche leeren' : 'Neu laden',
+              onRetry: _query.isNotEmpty
+                  ? () {
+                      _search.clear();
+                      setState(() => _query = '');
+                    }
+                  : _load,
             )
           else
             for (final schema in visible)

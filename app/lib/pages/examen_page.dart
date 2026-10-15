@@ -92,7 +92,7 @@ class _ExamenPageState extends State<ExamenPage> {
           padding: const EdgeInsets.all(Spacing.lg),
           children: [
             if (!vollstaendig || _editingProfile)
-              _ProfilEditor(
+              ProfilEditor(
                 profil: profil,
                 onSaved: () => setState(() => _editingProfile = false),
                 onCancel: vollstaendig ? () => setState(() => _editingProfile = false) : null,
@@ -206,18 +206,28 @@ class _ProfilSummary extends StatelessWidget {
 /// Bundesland gefiltert), Examensdatum, Tagesbudget. Die Universitaet legt
 /// serverseitig das Bundesland fest, deshalb setzt die Auswahl einer
 /// Universitaet hier auch das Bundesland-Feld.
-class _ProfilEditor extends StatefulWidget {
-  const _ProfilEditor({required this.profil, required this.onSaved, this.onCancel});
+class ProfilEditor extends StatefulWidget {
+  const ProfilEditor({
+    required this.profil,
+    required this.onSaved,
+    this.onCancel,
+    this.nurOrt = false,
+    super.key,
+  });
+
+  /// Nur Bundesland und Universitaet (Lernprofil-Seite): gleiche Auswahl und
+  /// gleicher API-Weg, aber ohne Examenstermin und Tagesbudget.
+  final bool nurOrt;
 
   final Map<String, dynamic> profil;
   final VoidCallback onSaved;
   final VoidCallback? onCancel;
 
   @override
-  State<_ProfilEditor> createState() => _ProfilEditorState();
+  State<ProfilEditor> createState() => _ProfilEditorState();
 }
 
-class _ProfilEditorState extends State<_ProfilEditor> {
+class _ProfilEditorState extends State<ProfilEditor> {
   List<Map<String, dynamic>> _laender = [];
   List<Map<String, dynamic>> _unis = [];
   bool _listenLoading = true;
@@ -280,7 +290,7 @@ class _ProfilEditorState extends State<_ProfilEditor> {
 
   Future<void> _save() async {
     final minuten = int.tryParse(_minuten.text.trim());
-    if (minuten == null || minuten < 15 || minuten > 600) {
+    if (!widget.nurOrt && (minuten == null || minuten < 15 || minuten > 600)) {
       setState(() => _error = 'Tagesbudget zwischen 15 und 600 Minuten angeben.');
       return;
     }
@@ -292,8 +302,10 @@ class _ProfilEditorState extends State<_ProfilEditor> {
     final ok = await app.saveProfile({
       'bundesland': _bundesland ?? '',
       'universitaet_slug': _universitaet ?? '',
-      if (_examDate != null) 'exam_date': _isoDate(_examDate!),
-      'daily_minutes': minuten,
+      if (!widget.nurOrt) ...{
+        if (_examDate != null) 'exam_date': _isoDate(_examDate!),
+        'daily_minutes': minuten,
+      },
     });
     if (!mounted) return;
     setState(() => _busy = false);
@@ -316,12 +328,15 @@ class _ProfilEditorState extends State<_ProfilEditor> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text('Examensprofil einrichten', style: theme.textTheme.titleMedium),
+          Text(widget.nurOrt ? 'Bundesland & Universität' : 'Examensprofil einrichten',
+              style: theme.textTheme.titleMedium),
           const SizedBox(height: Spacing.xs),
           Text(
-            'Bundesland und Universität bestimmen, welches Landesrecht du lernst, '
-            'wie die Klausuren gewichtet werden und welche Kurs-Decks du siehst. '
-            'Der Examenstermin steuert Phase und Tagesplan.',
+            widget.nurOrt
+                ? 'Bestimmt, welches Landesrecht du lernst und welche Kurs-Decks du siehst.'
+                : 'Bundesland und Universität bestimmen, welches Landesrecht du lernst, '
+                    'wie die Klausuren gewichtet werden und welche Kurs-Decks du siehst. '
+                    'Der Examenstermin steuert Phase und Tagesplan.',
             style: theme.textTheme.bodySmall,
           ),
           const SizedBox(height: Spacing.lg),
@@ -382,6 +397,7 @@ class _ProfilEditorState extends State<_ProfilEditor> {
               ),
             ),
           ],
+          if (!widget.nurOrt) ...[
           const SizedBox(height: Spacing.md),
           Row(
             children: [
@@ -406,6 +422,7 @@ class _ProfilEditorState extends State<_ProfilEditor> {
             controller: _minuten,
             keyboardType: TextInputType.number,
           ),
+          ],
           if (_error != null) ...[
             const SizedBox(height: Spacing.sm),
             SubsumoFeedbackBlock(message: _error!, severity: FeedbackSeverity.negative),
@@ -419,7 +436,7 @@ class _ProfilEditorState extends State<_ProfilEditor> {
               ],
               Expanded(
                 child: SubsumoButton.primary(
-                  label: _busy ? 'Bitte warten ...' : 'Profil speichern',
+                  label: _busy ? 'Bitte warten ...' : (widget.nurOrt ? 'Speichern' : 'Profil speichern'),
                   onPressed: _busy ? null : _save,
                 ),
               ),
