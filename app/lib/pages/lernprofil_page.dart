@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../design/design.dart';
 import '../state.dart';
 import 'beta_feedback.dart';
+import 'examen_page.dart' show ProfilEditor;
 import '../theme.dart';
 
 /// Lernprofil (docs/33-individualisierung.md): alles, was die App an den
@@ -29,9 +30,15 @@ const _areaLabels = {
 const _wochentage = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
 
 const _sicherheitsniveaus = {
-  'kompakt': ('Kompakt', 'weniger Wiederholungen, mehr Vergessensrisiko'),
-  'standard': ('Standard', 'FSRS-Ziel-Retention je Kartentyp'),
-  'sicher': ('Sicher', 'kuerzere Intervalle, mehr Wiederholungen'),
+  'kompakt': (
+    'Kompakt',
+    'Weniger Wiederholungen, dafür vergisst du eher etwas.'
+  ),
+  'standard': ('Standard', 'Ausgewogen: Abstände passend zum Kartentyp.'),
+  'sicher': (
+    'Sicher',
+    'Kürzere Abstände, mehr Wiederholungen, Karten sitzen sicherer.'
+  ),
 };
 
 class LernprofilPage extends StatefulWidget {
@@ -145,6 +152,15 @@ class _LernprofilPageState extends State<LernprofilPage> {
               style: theme.textTheme.bodySmall,
             ),
             const SizedBox(height: Spacing.lg),
+            ProfilEditor(
+              nurOrt: true,
+              profil: _ortProfil(context),
+              onSaved: () => ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                    content: Text('Bundesland und Universität gespeichert.')),
+              ),
+            ),
+            const SizedBox(height: Spacing.lg),
             _section(theme, 'Wo stehst du?'),
             InputDecorator(
               decoration: const InputDecoration(labelText: 'Fachsemester'),
@@ -155,9 +171,11 @@ class _LernprofilPageState extends State<LernprofilPage> {
                 value: _semester,
                 hint: const Text('Keine Angabe'),
                 items: [
-                  const DropdownMenuItem<int?>(value: null, child: Text('Keine Angabe')),
+                  const DropdownMenuItem<int?>(
+                      value: null, child: Text('Keine Angabe')),
                   for (var s = 1; s <= 12; s++)
-                    DropdownMenuItem<int?>(value: s, child: Text('$s. Semester')),
+                    DropdownMenuItem<int?>(
+                        value: s, child: Text('$s. Semester')),
                 ],
                 onChanged: (v) => setState(() => _semester = v),
               ),
@@ -173,7 +191,8 @@ class _LernprofilPageState extends State<LernprofilPage> {
                   SubsumoChip.filter(
                     label: e.value,
                     selected: _ziel == e.key,
-                    onSelected: (on) => setState(() => _ziel = on ? e.key : null),
+                    onSelected: (on) =>
+                        setState(() => _ziel = on ? e.key : null),
                   ),
               ],
             ),
@@ -213,14 +232,17 @@ class _LernprofilPageState extends State<LernprofilPage> {
                     label: e.value,
                     selected: _schwerpunkte.contains(e.key),
                     onSelected: (on) => setState(
-                      () => on ? _schwerpunkte.add(e.key) : _schwerpunkte.remove(e.key),
+                      () => on
+                          ? _schwerpunkte.add(e.key)
+                          : _schwerpunkte.remove(e.key),
                     ),
                   ),
               ],
             ),
             const SizedBox(height: Spacing.lg),
             _section(theme, 'Rhythmus'),
-            Text('Ruhetage (kein Lernpensum im Plan)', style: theme.textTheme.bodySmall),
+            Text('Ruhetage (kein Lernpensum im Plan)',
+                style: theme.textTheme.bodySmall),
             const SizedBox(height: Spacing.xs),
             Wrap(
               spacing: Spacing.sm,
@@ -239,8 +261,10 @@ class _LernprofilPageState extends State<LernprofilPage> {
             const SizedBox(height: Spacing.md),
             SwitchListTile(
               contentPadding: EdgeInsets.zero,
-              title: const Text('Wöchentliche Klausur unter Examensbedingungen'),
-              subtitle: const Text('Ab der Vertiefungsphase ein fester Klausurtag pro Woche.'),
+              title:
+                  const Text('Wöchentliche Klausur unter Examensbedingungen'),
+              subtitle: const Text(
+                  'Ab der Vertiefungsphase ein fester Klausurtag pro Woche.'),
               value: _wochenklausur,
               onChanged: (v) => setState(() => _wochenklausur = v),
             ),
@@ -253,13 +277,15 @@ class _LernprofilPageState extends State<LernprofilPage> {
                 value: _klausurWochentag,
                 items: [
                   for (var i = 0; i < 7; i++)
-                    DropdownMenuItem<int>(value: i, child: Text(_wochentage[i])),
+                    DropdownMenuItem<int>(
+                        value: i, child: Text(_wochentage[i])),
                 ],
                 onChanged: (v) => setState(() => _klausurWochentag = v ?? 5),
               ),
             ),
             const SizedBox(height: Spacing.md),
-            Text('Neue Karten pro Tag: $_neueKarten', style: theme.textTheme.bodyMedium),
+            Text('Neue Karten pro Tag: $_neueKarten',
+                style: theme.textTheme.bodyMedium),
             Slider(
               value: _neueKarten.toDouble(),
               min: 0,
@@ -271,8 +297,7 @@ class _LernprofilPageState extends State<LernprofilPage> {
             const SizedBox(height: Spacing.lg),
             _section(theme, 'Gedächtnis'),
             Text(
-              'Wie sicher sollen Karten sitzen? Verschiebt die Ziel-Retention der '
-              'Wiederholungsplanung um vier Prozentpunkte nach unten oder oben.',
+              'Wie sicher sollen Karten sitzen? Höher = häufigere Wiederholungen.',
               style: theme.textTheme.bodySmall,
             ),
             const SizedBox(height: Spacing.sm),
@@ -282,7 +307,8 @@ class _LernprofilPageState extends State<LernprofilPage> {
                   ButtonSegment(value: e.key, label: Text(e.value.$1)),
               ],
               selected: {_sicherheitsniveau},
-              onSelectionChanged: (s) => setState(() => _sicherheitsniveau = s.first),
+              onSelectionChanged: (s) =>
+                  setState(() => _sicherheitsniveau = s.first),
             ),
             const SizedBox(height: Spacing.xs),
             Text(
@@ -316,9 +342,11 @@ class _LernprofilPageState extends State<LernprofilPage> {
             for (final deck in _eigeneDecks)
               ListTile(
                 contentPadding: EdgeInsets.zero,
-                leading: Icon(Icons.style_outlined, color: theme.colorScheme.onSurfaceVariant),
+                leading: Icon(Icons.style_outlined,
+                    color: theme.colorScheme.onSurfaceVariant),
                 title: Text(deck['title'] as String),
-                subtitle: Text('${(deck['topic_slugs'] as List).length} Themen'),
+                subtitle:
+                    Text('${(deck['topic_slugs'] as List).length} Themen'),
                 trailing: IconButton(
                   tooltip: 'Deck entfernen',
                   icon: const Icon(Icons.delete_outline),
@@ -332,7 +360,8 @@ class _LernprofilPageState extends State<LernprofilPage> {
             ),
             if (_error != null) ...[
               const SizedBox(height: Spacing.md),
-              SubsumoFeedbackBlock(message: _error!, severity: FeedbackSeverity.negative),
+              SubsumoFeedbackBlock(
+                  message: _error!, severity: FeedbackSeverity.negative),
             ],
             const SizedBox(height: Spacing.xl),
             SubsumoButton.primary(
@@ -344,6 +373,11 @@ class _LernprofilPageState extends State<LernprofilPage> {
         ),
       ),
     );
+  }
+
+  Map<String, dynamic> _ortProfil(BuildContext context) {
+    final p = AppScope.of(context).examenCockpit?['profil'];
+    return p is Map ? Map<String, dynamic>.from(p) : <String, dynamic>{};
   }
 
   static Widget _section(ThemeData theme, String titel) => Padding(
@@ -370,7 +404,8 @@ class _ThemenAbschnitt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final markiert = themen.where((t) => fokus.contains(t['slug']) || pausiert.contains(t['slug']));
+    final markiert = themen.where(
+        (t) => fokus.contains(t['slug']) || pausiert.contains(t['slug']));
     return ExpansionTile(
       tilePadding: EdgeInsets.zero,
       shape: const Border(),
@@ -383,7 +418,9 @@ class _ThemenAbschnitt extends StatelessWidget {
         for (final t in themen)
           Row(
             children: [
-              Expanded(child: Text(t['title'] as String, style: theme.textTheme.bodyMedium)),
+              Expanded(
+                  child: Text(t['title'] as String,
+                      style: theme.textTheme.bodyMedium)),
               IconButton(
                 tooltip: 'Fokus: ${t['title']}',
                 isSelected: fokus.contains(t['slug']),
@@ -479,31 +516,61 @@ class _DeckDialogState extends State<_DeckDialog> {
               child: ListView(
                 shrinkWrap: true,
                 children: [
-                  for (final t in widget.themen)
-                    CheckboxListTile(
-                      dense: true,
-                      controlAffinity: ListTileControlAffinity.leading,
-                      title: Text(t['title'] as String),
-                      value: _auswahl.contains(t['slug']),
-                      onChanged: (on) => setState(() {
-                        on == true ? _auswahl.add(t['slug'] as String) : _auswahl.remove(t['slug']);
-                      }),
-                    ),
+                  for (final area in [..._areaLabels.keys, null])
+                    ..._gruppe(area),
                 ],
               ),
             ),
             if (_fehler != null) ...[
               const SizedBox(height: Spacing.sm),
-              SubsumoFeedbackBlock(message: _fehler!, severity: FeedbackSeverity.negative),
+              SubsumoFeedbackBlock(
+                  message: _fehler!, severity: FeedbackSeverity.negative),
             ],
           ],
         ),
       ),
       actions: [
-        TextButton(onPressed: () => Navigator.of(context).pop(), child: const Text('Abbrechen')),
+        TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('Abbrechen')),
         FilledButton(onPressed: _anlegen, child: const Text('Deck anlegen')),
       ],
     );
+  }
+
+  /// Themen eines Rechtsgebiets (`null` = uebrige), alphabetisch, mit Ueberschrift.
+  List<Widget> _gruppe(String? area) {
+    final themen = [
+      for (final t in widget.themen)
+        if (area == null
+            ? !_areaLabels.containsKey(t['area'])
+            : t['area'] == area)
+          t,
+    ]..sort((a, b) => (a['title'] as String)
+        .toLowerCase()
+        .compareTo((b['title'] as String).toLowerCase()));
+    if (themen.isEmpty) return const [];
+    return [
+      Padding(
+        padding: const EdgeInsets.only(top: Spacing.md, bottom: Spacing.xs),
+        child: Text(
+          area == null ? 'Weitere' : _areaLabels[area]!,
+          style: Theme.of(context).textTheme.titleSmall,
+        ),
+      ),
+      for (final t in themen)
+        CheckboxListTile(
+          dense: true,
+          controlAffinity: ListTileControlAffinity.leading,
+          title: Text(t['title'] as String),
+          value: _auswahl.contains(t['slug']),
+          onChanged: (on) => setState(() {
+            on == true
+                ? _auswahl.add(t['slug'] as String)
+                : _auswahl.remove(t['slug']);
+          }),
+        ),
+    ];
   }
 }
 
@@ -516,13 +583,21 @@ String slugify(String text) {
       .replaceAll('ö', 'oe')
       .replaceAll('ü', 'ue')
       .replaceAll('ß', 'ss');
-  final cleaned = lower.replaceAll(RegExp(r'[^a-z0-9]+'), '-').replaceAll(RegExp(r'^-+|-+$'), '');
+  final cleaned = lower
+      .replaceAll(RegExp(r'[^a-z0-9]+'), '-')
+      .replaceAll(RegExp(r'^-+|-+$'), '');
   final slug = cleaned.isEmpty ? 'deck' : cleaned;
-  return slug.length > 60 ? slug.substring(0, 60).replaceAll(RegExp(r'-+$'), '') : slug;
+  return slug.length > 60
+      ? slug.substring(0, 60).replaceAll(RegExp(r'-+$'), '')
+      : slug;
 }
 
 Set<String> _stringSet(Object? value) =>
     value is List ? {for (final v in value) '$v'} : <String>{};
 
-Set<int> _intSet(Object? value) =>
-    value is List ? {for (final v in value) if (v is int) v} : <int>{};
+Set<int> _intSet(Object? value) => value is List
+    ? {
+        for (final v in value)
+          if (v is int) v
+      }
+    : <int>{};

@@ -1,5 +1,7 @@
 import 'package:flutter/foundation.dart';
+import 'package:flutter/gestures.dart' show PointerDeviceKind;
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart' show RendererBinding;
 import 'package:flutter/services.dart';
 
 import '../design/design.dart';
@@ -17,8 +19,9 @@ import 'screen_status.dart';
 ///
 /// Die vier Bewertungen sind bewusst **nicht** farbcodiert (frueher rot/
 /// gelb/gruen/blau): das war eine Ampel und damit ein Bruch mit docs/11
-/// Abschnitt 1. "Gut" ist als haeufigste Antwort die gefuellte Schaltflaeche,
-/// die anderen drei sind Konturen - Gewicht statt Farbe.
+/// Abschnitt 1. Alle vier sind gleichwertige Konturen-Schaltflaechen - keine
+/// wirkt vorausgewaehlt (Testwelle 4); ein Fokusrahmen erscheint nur bei
+/// Tastaturbedienung.
 ///
 /// Tastatur (Desktop/Web): Leertaste oder Enter deckt auf, 1-4 bewertet.
 class ReviewPage extends StatefulWidget {
@@ -45,6 +48,9 @@ class _ReviewPageState extends State<ReviewPage> {
 
   final _scroll = ScrollController();
   bool _moreBelow = false;
+
+  /// Wurde je ein Touch-Zeiger beobachtet (Tablet mit Desktop-Breite)?
+  bool _touchSeen = false;
 
   @override
   void initState() {
@@ -96,7 +102,11 @@ class _ReviewPageState extends State<ReviewPage> {
   /// Tastaturhinweise ("Tasten 1 bis 4", "Leertaste") wuerden dort nur stoeren.
   bool _showKeyboardHints(BuildContext context) {
     final touch = defaultTargetPlatform == TargetPlatform.android ||
-        defaultTargetPlatform == TargetPlatform.iOS;
+        defaultTargetPlatform == TargetPlatform.iOS ||
+        _touchSeen ||
+        // Web auf Tablets meldet oft eine Desktop-Plattform: ohne je
+        // angeschlossene Maus gibt es keine Tastaturbedienung zu bewerben.
+        (kIsWeb && !RendererBinding.instance.mouseTracker.mouseIsConnected);
     return !touch && MediaQuery.sizeOf(context).width >= 600;
   }
 
@@ -110,6 +120,18 @@ class _ReviewPageState extends State<ReviewPage> {
       _revealed = false;
       _shownAt = DateTime.now();
     });
+  }
+
+  /// Chevron unten auf der Karte: eine Bildschirmhoehe weiterscrollen.
+  void _scrollDown() {
+    if (!_scroll.hasClients) return;
+    final pos = _scroll.position;
+    _scroll.animateTo(
+      (pos.pixels + pos.viewportDimension * 0.8)
+          .clamp(0.0, pos.maxScrollExtent),
+      duration: Motion.normal,
+      curve: Motion.curve,
+    );
   }
 
   /// Die naechste Karte beginnt oben, nicht mitten in der alten Antwort.
@@ -138,61 +160,70 @@ class _ReviewPageState extends State<ReviewPage> {
     }
 
     final done = (_sessionTotal - app.dueCards.length).clamp(0, _sessionTotal);
+    final doneState = app.dueCards.isEmpty && app.sessionDone && !app.loading;
 
     return CallbackShortcuts(
-      bindings: {
-        const SingleActivator(LogicalKeyboardKey.space): _reveal,
-        const SingleActivator(LogicalKeyboardKey.enter): _reveal,
-        const SingleActivator(LogicalKeyboardKey.digit1): () => _rate(1),
-        const SingleActivator(LogicalKeyboardKey.digit2): () => _rate(2),
-        const SingleActivator(LogicalKeyboardKey.digit3): () => _rate(3),
-        const SingleActivator(LogicalKeyboardKey.digit4): () => _rate(4),
-        const SingleActivator(LogicalKeyboardKey.numpad1): () => _rate(1),
-        const SingleActivator(LogicalKeyboardKey.numpad2): () => _rate(2),
-        const SingleActivator(LogicalKeyboardKey.numpad3): () => _rate(3),
-        const SingleActivator(LogicalKeyboardKey.numpad4): () => _rate(4),
-      },
-      child: Focus(
-        autofocus: true,
-        child: ReadableWidth(
-          maxWidth: 720,
-          child: Padding(
-            padding: const EdgeInsets.all(Spacing.xl),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                // Immer sichtbar, unabhaengig vom Lade-/Leerzustand (SUB-160):
-                // sonst waere die Rueckkehr aus dem Lesemodus blockiert, sobald
-                // z. B. die letzte faellige Karte bewertet wurde.
-                Row(
+        bindings: {
+          const SingleActivator(LogicalKeyboardKey.space): _reveal,
+          const SingleActivator(LogicalKeyboardKey.enter): _reveal,
+          const SingleActivator(LogicalKeyboardKey.digit1): () => _rate(1),
+          const SingleActivator(LogicalKeyboardKey.digit2): () => _rate(2),
+          const SingleActivator(LogicalKeyboardKey.digit3): () => _rate(3),
+          const SingleActivator(LogicalKeyboardKey.digit4): () => _rate(4),
+          const SingleActivator(LogicalKeyboardKey.numpad1): () => _rate(1),
+          const SingleActivator(LogicalKeyboardKey.numpad2): () => _rate(2),
+          const SingleActivator(LogicalKeyboardKey.numpad3): () => _rate(3),
+          const SingleActivator(LogicalKeyboardKey.numpad4): () => _rate(4),
+        },
+        child: Listener(
+          behavior: HitTestBehavior.translucent,
+          onPointerDown: (e) {
+            if (e.kind == PointerDeviceKind.touch && !_touchSeen) {
+              setState(() => _touchSeen = true);
+            }
+          },
+          child: Focus(
+            autofocus: true,
+            child: ReadableWidth(
+              maxWidth: 720,
+              child: Padding(
+                padding: const EdgeInsets.all(Spacing.xl),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Expanded(
-                      child: SubsumoEyebrow(
-                        _sessionTotal > 0 && app.dueCards.isNotEmpty
-                            ? 'Karteikarten · ${done + 1} von $_sessionTotal'
-                            : 'Karteikarten',
-                      ),
+                    // Immer sichtbar, unabhaengig vom Lade-/Leerzustand (SUB-160):
+                    // sonst waere die Rueckkehr aus dem Lesemodus blockiert, sobald
+                    // z. B. die letzte faellige Karte bewertet wurde.
+                    Row(
+                      children: [
+                        Expanded(
+                          child: SubsumoEyebrow(
+                            _sessionTotal > 0 && app.dueCards.isNotEmpty
+                                ? 'Karteikarten · ${done + 1} von $_sessionTotal'
+                                : 'Karteikarten',
+                          ),
+                        ),
+                        if (!(doneState && !widget.focusMode))
+                          IconButton(
+                            tooltip: widget.focusMode
+                                ? 'Lesemodus verlassen'
+                                : 'Lesemodus',
+                            icon: Icon(
+                              widget.focusMode
+                                  ? Icons.fullscreen_exit_outlined
+                                  : Icons.fullscreen_outlined,
+                            ),
+                            onPressed: widget.onToggleFocusMode,
+                          ),
+                      ],
                     ),
-                    IconButton(
-                      tooltip: widget.focusMode
-                          ? 'Lesemodus verlassen'
-                          : 'Lesemodus',
-                      icon: Icon(
-                        widget.focusMode
-                            ? Icons.fullscreen_exit_outlined
-                            : Icons.fullscreen_outlined,
-                      ),
-                      onPressed: widget.onToggleFocusMode,
-                    ),
+                    Expanded(child: body),
                   ],
                 ),
-                Expanded(child: body),
-              ],
+              ),
             ),
           ),
-        ),
-      ),
-    );
+        ));
   }
 
   Widget _buildDueCard(BuildContext context, AppState app) {
@@ -207,7 +238,9 @@ class _ReviewPageState extends State<ReviewPage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Expanded(
+        // Flexible statt Expanded: die Karte ist nur so hoch wie ihr Inhalt,
+        // der Button folgt direkt darunter statt am unteren Fensterrand.
+        Flexible(
           child: Stack(
             children: [
               Scrollbar(
@@ -217,6 +250,8 @@ class _ReviewPageState extends State<ReviewPage> {
                   controller: _scroll,
                   padding: const EdgeInsets.only(
                       right: Spacing.sm, bottom: Spacing.xl),
+                  // Genug Luft unter den Norm-Chips, damit der Verlauf am
+                  // unteren Rand sie am Scroll-Ende nie ueberdeckt.
                   child: SubsumoCard(
                     padding: const EdgeInsets.all(Spacing.xxl),
                     child: Column(
@@ -262,7 +297,8 @@ class _ReviewPageState extends State<ReviewPage> {
                                     ),
                                     const SubsumoEyebrow('Antwort'),
                                     const SizedBox(height: Spacing.sm),
-                                    CardAnswerText(card['back'] as String? ?? ''),
+                                    CardAnswerText(
+                                        card['back'] as String? ?? ''),
                                     if (norms.isNotEmpty) ...[
                                       const SizedBox(height: Spacing.xl),
                                       Wrap(
@@ -271,7 +307,8 @@ class _ReviewPageState extends State<ReviewPage> {
                                         children: [
                                           for (final norm in norms)
                                             SubsumoChip.action(
-                                              label: norm,
+                                              label:
+                                                  kurzeNormBeschriftung(norm),
                                               icon: Icons.menu_book_outlined,
                                               onPressed: () =>
                                                   showNormText(context, norm),
@@ -293,22 +330,26 @@ class _ReviewPageState extends State<ReviewPage> {
                   left: 0,
                   right: 0,
                   bottom: 0,
-                  child: IgnorePointer(
-                    child: Container(
-                      height: 40,
-                      alignment: Alignment.bottomCenter,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [
-                            theme.scaffoldBackgroundColor.withValues(alpha: 0),
-                            theme.scaffoldBackgroundColor,
-                          ],
-                        ),
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          theme.scaffoldBackgroundColor.withValues(alpha: 0),
+                          theme.scaffoldBackgroundColor,
+                        ],
                       ),
-                      child: Icon(Icons.keyboard_arrow_down,
-                          color: theme.colorScheme.onSurfaceVariant),
+                    ),
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: IconButton(
+                        tooltip: 'Weiter nach unten',
+                        visualDensity: VisualDensity.compact,
+                        icon: Icon(Icons.keyboard_arrow_down,
+                            color: theme.colorScheme.onSurfaceVariant),
+                        onPressed: _scrollDown,
+                      ),
                     ),
                   ),
                 ),
@@ -341,7 +382,6 @@ class _ReviewPageState extends State<ReviewPage> {
                 shortcut: '3',
                 rating: 3,
                 onRate: _rate,
-                emphasized: true,
                 showShortcut: hints,
               ),
               _RateButton(
@@ -385,7 +425,6 @@ class _RateButton extends StatelessWidget {
     required this.shortcut,
     required this.rating,
     required this.onRate,
-    this.emphasized = false,
     this.showShortcut = true,
   });
 
@@ -394,7 +433,6 @@ class _RateButton extends StatelessWidget {
   final String shortcut;
   final int rating;
   final Future<void> Function(int) onRate;
-  final bool emphasized;
 
   @override
   Widget build(BuildContext context) {
@@ -409,9 +447,7 @@ class _RateButton extends StatelessWidget {
           Text(
             shortcut,
             style: theme.textTheme.bodySmall?.copyWith(
-              color: emphasized
-                  ? theme.colorScheme.onPrimary.withValues(alpha: 0.7)
-                  : theme.colorScheme.onSurfaceVariant,
+              color: theme.colorScheme.onSurfaceVariant,
             ),
           ),
       ],
@@ -424,11 +460,8 @@ class _RateButton extends StatelessWidget {
     return Expanded(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: Spacing.xs),
-        child: emphasized
-            ? FilledButton(
-                style: style, onPressed: () => onRate(rating), child: child)
-            : OutlinedButton(
-                style: style, onPressed: () => onRate(rating), child: child),
+        child: OutlinedButton(
+            style: style, onPressed: () => onRate(rating), child: child),
       ),
     );
   }
@@ -456,26 +489,36 @@ class _DoneState extends StatelessWidget {
   final Future<void> Function() onMore;
 
   @override
-  Widget build(BuildContext context) => Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          SubsumoFeedbackBlock(
-            message: 'Fertig für heute.',
-            detail: reviewed > 0
-                ? '$reviewed Karten abgearbeitet. Gut gemacht.'
-                : 'Alle fälligen Karten sind abgearbeitet. Gut gemacht.',
-            severity: FeedbackSeverity.positive,
-          ),
-          const SizedBox(height: Spacing.lg),
-          Center(
-            child: OutlinedButton(
-              onPressed: onMore,
-              child: const Text('Weitere Karten lernen'),
-            ),
-          ),
-        ],
-      );
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final colors = theme.extension<SubsumoColors>();
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Icon(Icons.check_circle_outline,
+            size: 40,
+            color: colors?.feedbackPositive ?? theme.colorScheme.primary),
+        const SizedBox(height: Spacing.md),
+        Text('Fertig für heute.',
+            textAlign: TextAlign.center, style: theme.textTheme.titleLarge),
+        const SizedBox(height: Spacing.xs),
+        Text(
+          reviewed > 0
+              ? '$reviewed Karten abgearbeitet. Gut gemacht.'
+              : 'Alle fälligen Karten sind abgearbeitet. Gut gemacht.',
+          textAlign: TextAlign.center,
+          style: theme.textTheme.bodyMedium
+              ?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+        ),
+        const SizedBox(height: Spacing.lg),
+        OutlinedButton(
+          onPressed: onMore,
+          child: const Text('Weitere Karten lernen'),
+        ),
+      ],
+    );
+  }
 }
 
 /// Einzelne Zeilenumbrueche mitten im Satz (YAML-Literalbloecke mit fester
@@ -511,7 +554,10 @@ class CardAnswerText extends StatelessWidget {
       for (final line in lines) {
         final m = _bulletRe.firstMatch(line);
         if (m != null) {
-          blocks.add((line.substring(0, m.end).trim(), StringBuffer(line.substring(m.end))));
+          blocks.add((
+            line.substring(0, m.end).trim(),
+            StringBuffer(line.substring(m.end))
+          ));
         } else if (blocks.isEmpty) {
           blocks.add((null, StringBuffer(line.trim())));
         } else {
@@ -521,7 +567,8 @@ class CardAnswerText extends StatelessWidget {
       for (final (marker, body) in blocks) {
         if (body.isEmpty) continue;
         children.add(Padding(
-          padding: EdgeInsets.only(bottom: marker == null ? Spacing.md : Spacing.sm),
+          padding:
+              EdgeInsets.only(bottom: marker == null ? Spacing.md : Spacing.sm),
           child: marker == null
               ? Text(body.toString(), style: style)
               : Row(
@@ -529,7 +576,9 @@ class CardAnswerText extends StatelessWidget {
                   children: [
                     SizedBox(
                       width: 28,
-                      child: Text(RegExp(r'^[-*•]$').hasMatch(marker) ? '•' : marker, style: style),
+                      child: Text(
+                          RegExp(r'^[-*•]$').hasMatch(marker) ? '•' : marker,
+                          style: style),
                     ),
                     Expanded(child: Text(body.toString(), style: style)),
                   ],
@@ -537,6 +586,7 @@ class CardAnswerText extends StatelessWidget {
         ));
       }
     }
-    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: children);
+    return Column(
+        crossAxisAlignment: CrossAxisAlignment.start, children: children);
   }
 }

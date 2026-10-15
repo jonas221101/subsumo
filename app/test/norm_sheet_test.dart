@@ -8,6 +8,7 @@ import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:subsumo/api.dart';
+import 'package:subsumo/pages/norm_sheet.dart';
 import 'package:subsumo/pages/review_page.dart';
 import 'package:subsumo/pages/schemata_page.dart';
 import 'package:subsumo/state.dart';
@@ -120,10 +121,34 @@ void main() {
     await tester.tap(find.text('Art. 7 Abs. 2 LStVG'));
     await tester.pumpAndSettle();
 
-    expect(find.textContaining('kein Text hinterlegt – Landesrecht oder nicht erfasst'),
+    expect(find.text('Für diese Norm ist kein Text hinterlegt.'),
         findsOneWidget);
     expect(find.text('Bei gesetze-im-internet.de öffnen'), findsOneWidget);
     expect(find.byKey(const ValueKey('norm-absatz-hervorgehoben')), findsNothing);
+  });
+
+  testWidgets('Normdialog hat einen Schliessen-Button', (tester) async {
+    await _pump(
+        tester, ReviewPage(focusMode: false, onToggleFocusMode: () {}),
+        due: [card]);
+    await reveal(tester);
+    await tester.tap(find.text('§ 433 Abs. 2 BGB'));
+    await tester.pumpAndSettle();
+    expect(find.textContaining('(2) Der Käufer'), findsOneWidget);
+    await tester.tap(find.byTooltip('Schließen'));
+    await tester.pumpAndSettle();
+    expect(find.textContaining('(2) Der Käufer'), findsNothing);
+  });
+
+  test('Linkbeschriftung je Domain und Kuerzung langer Normen', () {
+    expect(quellenLinkLabel('https://eur-lex.europa.eu/eli/reg/2016/679'), 'Bei EUR-Lex öffnen');
+    expect(quellenLinkLabel('https://recht.nrw.de/lmi/x'), 'Im Landesrechtsportal öffnen');
+    expect(quellenLinkLabel('https://www.gesetze-im-internet.de/bgb/'), 'Bei gesetze-im-internet.de öffnen');
+    expect(kurzeNormBeschriftung('§ 433 Abs. 2 BGB'), '§ 433 Abs. 2 BGB');
+    expect(kurzeNormBeschriftung('Art. 6 DSGVO: Rechtmäßigkeit der Verarbeitung'), 'Art. 6 DSGVO');
+    final lang = kurzeNormBeschriftung('Allgemeines Gleichbehandlungsgesetz Abschnitt 3 Unterabschnitt 2 Paragraph');
+    expect(lang.length, 40);
+    expect(lang, endsWith('…'));
   });
 
   testWidgets('Schemata: Normangabe im Kopf ist antippbar', (tester) async {

@@ -104,16 +104,9 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text('Herausgabeanspruch.'), findsOneWidget);
 
-      // Genau eine gefuellte Schaltflaeche ("Gut"), drei Konturen - Gewicht
-      // statt Farbe. Keine der vier nutzt error/positive/hint als Fuellung.
-      final filled = tester.widgetList<FilledButton>(find.byType(FilledButton)).toList();
-      expect(filled, hasLength(1));
-      expect(find.widgetWithText(FilledButton, 'Gut'), findsOneWidget);
-      expect(find.byType(OutlinedButton), findsNWidgets(3));
-      for (final button in filled) {
-        final bg = button.style?.backgroundColor?.resolve({});
-        expect(bg, isNull, reason: 'Bewertungsbutton darf keine eigene Signalfarbe tragen');
-      }
+      // Vier gleichwertige Konturen-Schaltflaechen - keine wirkt vorausgewaehlt.
+      expect(find.byType(FilledButton), findsNothing);
+      expect(find.byType(OutlinedButton), findsNWidgets(4));
 
       await tester.sendKeyEvent(LogicalKeyboardKey.digit3);
       await tester.pumpAndSettle();

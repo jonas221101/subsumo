@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
+import 'bundesland_hint.dart';
 import 'fit_title.dart';
 import 'norm_sheet.dart';
 import 'screen_status.dart';
@@ -85,7 +86,9 @@ class _SchemataPageState extends State<SchemataPage> {
                     ? '${_schemata.length} Schemata${_area == null ? ' in drei Rechtsgebieten' : ''}.'
                     : '${visible.length} von ${_schemata.length} Schemata.'),
           ),
-          const SizedBox(height: Spacing.xl),
+          const SizedBox(height: Spacing.md),
+          const BundeslandHint(),
+          const SizedBox(height: Spacing.sm),
           TextField(
             controller: _search,
             decoration: InputDecoration(
@@ -135,13 +138,19 @@ class _SchemataPageState extends State<SchemataPage> {
               message: _query.isEmpty
                   ? 'Keine Schemata für diese Auswahl.'
                   : 'Kein Schema passt zu „$_query".',
-              onRetry: _load,
+              retryLabel: _query.isNotEmpty ? 'Suche leeren' : 'Neu laden',
+              onRetry: _query.isNotEmpty
+                  ? () {
+                      _search.clear();
+                      setState(() => _query = '');
+                    }
+                  : _load,
             )
           else
             for (final schema in visible)
               Padding(
                 padding: const EdgeInsets.only(bottom: Spacing.md),
-                child: _SchemaTile(schema: schema),
+                child: SchemaTile(schema: schema),
               ),
         ],
       ),
@@ -149,10 +158,11 @@ class _SchemataPageState extends State<SchemataPage> {
   }
 }
 
-class _SchemaTile extends StatelessWidget {
-  const _SchemaTile({required this.schema});
+class SchemaTile extends StatelessWidget {
+  const SchemaTile({required this.schema, this.initiallyExpanded = false, super.key});
 
   final Map<String, dynamic> schema;
+  final bool initiallyExpanded;
 
   @override
   Widget build(BuildContext context) {
@@ -160,9 +170,15 @@ class _SchemaTile extends StatelessWidget {
     final typography = theme.extension<SubsumoTypography>()!;
     final norms = ((schema['norms'] as List?) ?? const []).cast<String>();
     final steps = ((schema['steps'] as List?) ?? const []).cast<Map<String, dynamic>>();
+    // Interner Redaktionsvermerk gehoert nicht in die Nutzeransicht.
+    final quellen = [
+      for (final q in (schema['sources'] as List?) ?? const [])
+        if (!'$q'.contains('Eigenformulierung')) '$q',
+    ];
 
     return Card(
       child: ExpansionTile(
+        initiallyExpanded: initiallyExpanded,
         tilePadding: const EdgeInsets.symmetric(horizontal: Spacing.lg, vertical: Spacing.xs),
         childrenPadding: const EdgeInsets.fromLTRB(Spacing.lg, 0, Spacing.lg, Spacing.lg),
         expandedCrossAxisAlignment: CrossAxisAlignment.start,
@@ -187,8 +203,10 @@ class _SchemaTile extends StatelessWidget {
           ..._buildSteps(context, steps, 0),
           const SizedBox(height: Spacing.lg),
           Text(
-            'Stand: ${schema['stand']}  ·  '
-            'Quellen: ${((schema['sources'] as List?) ?? const []).join('; ')}',
+            [
+              'Stand: ${schema['stand']}',
+              if (quellen.isNotEmpty) 'Quellen: ${quellen.join('; ')}',
+            ].join('  ·  '),
             style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
           ),
         ],
@@ -296,4 +314,63 @@ String _roman(int n) {
     }
   }
   return buffer.toString();
+}
+
+/// Einzelnes Schema (aus einer Deck-Seite geoeffnet): laedt die Schemata und
+/// zeigt das mit dem passenden [slug] aufgeklappt.
+class SchemaDetailPage extends StatefulWidget {
+  const SchemaDetailPage({required this.slug, required this.title, super.key});
+
+  final String slug;
+  final String title;
+
+  @override
+  State<SchemaDetailPage> createState() => _SchemaDetailPageState();
+}
+
+class _SchemaDetailPageState extends State<SchemaDetailPage> {
+  Map<String, dynamic>? _schema;
+  bool _loading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _load());
+  }
+
+  Future<void> _load() async {
+    setState(() => _loading = true);
+    try {
+      final all = await AppScope.of(context).api.schemata();
+      for (final s in all) {
+        if (s['slug'] == widget.slug) {
+          if (mounted) setState(() => _schema = s);
+          break;
+        }
+      }
+    } on Exception {
+      // Fehlerzustand unten.
+    } finally {
+      if (mounted) setState(() => _loading = false);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final schema = _schema;
+    return Scaffold(
+      appBar: AppBar(title: Text(widget.title)),
+      body: _loading
+          ? const ScreenStatus.loading()
+          : schema == null
+              ? ScreenStatus.empty(message: 'Schema nicht gefunden.', onRetry: _load)
+              : ReadableWidth(
+                  maxWidth: 860,
+                  child: ListView(
+                    padding: const EdgeInsets.all(Spacing.lg),
+                    children: [SchemaTile(schema: schema, initiallyExpanded: true)],
+                  ),
+                ),
+    );
+  }
 }

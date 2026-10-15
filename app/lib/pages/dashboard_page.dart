@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../design/design.dart';
+import '../api.dart' show kBetaMode;
 import '../state.dart';
 import '../theme.dart';
 import 'checkout_page.dart';
@@ -93,7 +94,7 @@ class _DashboardPageState extends State<DashboardPage> {
                   subtitle: 'Was jetzt ansteht und was schon sitzt.',
                 ),
                 const SizedBox(height: Spacing.xl),
-                if (app.cancelAtPeriodEnd || !app.proActive) ...[
+                if (!kBetaMode && (app.cancelAtPeriodEnd || !app.proActive)) ...[
                   _ProStatusBanner(app: app),
                   const SizedBox(height: Spacing.lg),
                 ],

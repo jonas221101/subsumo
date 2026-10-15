@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
+import 'bundesland_hint.dart';
 import 'fit_title.dart';
 import 'gutachten_page.dart';
 import 'screen_status.dart';
@@ -49,6 +50,14 @@ class _CasesPageState extends State<CasesPage> {
     } finally {
       if (mounted) setState(() => _loading = false);
     }
+  }
+
+  void _clearFilters() {
+    _search.clear();
+    setState(() {
+      _query = '';
+      _area = null;
+    });
   }
 
   List<Map<String, dynamic>> get _visible {
@@ -109,7 +118,9 @@ class _CasesPageState extends State<CasesPage> {
                 ? '${_cases.length} geführte Fälle mit Erwartungshorizont.'
                 : '${visible.length} von ${_cases.length} Fällen.',
           ),
-          const SizedBox(height: Spacing.xl),
+          const SizedBox(height: Spacing.md),
+          const BundeslandHint(),
+          const SizedBox(height: Spacing.sm),
           TextField(
             controller: _search,
             decoration: InputDecoration(
@@ -147,7 +158,11 @@ class _CasesPageState extends State<CasesPage> {
           ),
           const SizedBox(height: Spacing.xl),
           if (visible.isEmpty)
-            const ScreenStatus.empty(message: 'Kein Fall passt zu dieser Auswahl.')
+            ScreenStatus.empty(
+              message: 'Kein Fall passt zu dieser Auswahl.',
+              retryLabel: _query.isNotEmpty ? 'Suche leeren' : 'Filter zurücksetzen',
+              onRetry: _clearFilters,
+            )
           else
             for (final fall in visible)
               Padding(

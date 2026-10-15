@@ -7,6 +7,7 @@ import '../theme.dart';
 import 'gutachten_page.dart';
 import 'lernprofil_page.dart';
 import 'review_page.dart';
+import 'schemata_page.dart' show SchemaDetailPage;
 import 'screen_status.dart';
 
 /// Examen-Reiter (docs/32-examensvorbereitung.md).
@@ -91,7 +92,7 @@ class _ExamenPageState extends State<ExamenPage> {
           padding: const EdgeInsets.all(Spacing.lg),
           children: [
             if (!vollstaendig || _editingProfile)
-              _ProfilEditor(
+              ProfilEditor(
                 profil: profil,
                 onSaved: () => setState(() => _editingProfile = false),
                 onCancel: vollstaendig ? () => setState(() => _editingProfile = false) : null,
@@ -205,18 +206,28 @@ class _ProfilSummary extends StatelessWidget {
 /// Bundesland gefiltert), Examensdatum, Tagesbudget. Die Universitaet legt
 /// serverseitig das Bundesland fest, deshalb setzt die Auswahl einer
 /// Universitaet hier auch das Bundesland-Feld.
-class _ProfilEditor extends StatefulWidget {
-  const _ProfilEditor({required this.profil, required this.onSaved, this.onCancel});
+class ProfilEditor extends StatefulWidget {
+  const ProfilEditor({
+    required this.profil,
+    required this.onSaved,
+    this.onCancel,
+    this.nurOrt = false,
+    super.key,
+  });
+
+  /// Nur Bundesland und Universitaet (Lernprofil-Seite): gleiche Auswahl und
+  /// gleicher API-Weg, aber ohne Examenstermin und Tagesbudget.
+  final bool nurOrt;
 
   final Map<String, dynamic> profil;
   final VoidCallback onSaved;
   final VoidCallback? onCancel;
 
   @override
-  State<_ProfilEditor> createState() => _ProfilEditorState();
+  State<ProfilEditor> createState() => _ProfilEditorState();
 }
 
-class _ProfilEditorState extends State<_ProfilEditor> {
+class _ProfilEditorState extends State<ProfilEditor> {
   List<Map<String, dynamic>> _laender = [];
   List<Map<String, dynamic>> _unis = [];
   bool _listenLoading = true;
@@ -279,7 +290,7 @@ class _ProfilEditorState extends State<_ProfilEditor> {
 
   Future<void> _save() async {
     final minuten = int.tryParse(_minuten.text.trim());
-    if (minuten == null || minuten < 15 || minuten > 600) {
+    if (!widget.nurOrt && (minuten == null || minuten < 15 || minuten > 600)) {
       setState(() => _error = 'Tagesbudget zwischen 15 und 600 Minuten angeben.');
       return;
     }
@@ -291,8 +302,10 @@ class _ProfilEditorState extends State<_ProfilEditor> {
     final ok = await app.saveProfile({
       'bundesland': _bundesland ?? '',
       'universitaet_slug': _universitaet ?? '',
-      if (_examDate != null) 'exam_date': _isoDate(_examDate!),
-      'daily_minutes': minuten,
+      if (!widget.nurOrt) ...{
+        if (_examDate != null) 'exam_date': _isoDate(_examDate!),
+        'daily_minutes': minuten,
+      },
     });
     if (!mounted) return;
     setState(() => _busy = false);
@@ -315,12 +328,15 @@ class _ProfilEditorState extends State<_ProfilEditor> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text('Examensprofil einrichten', style: theme.textTheme.titleMedium),
+          Text(widget.nurOrt ? 'Bundesland & Universität' : 'Examensprofil einrichten',
+              style: theme.textTheme.titleMedium),
           const SizedBox(height: Spacing.xs),
           Text(
-            'Bundesland und Universität bestimmen, welches Landesrecht du lernst, '
-            'wie die Klausuren gewichtet werden und welche Kurs-Decks du siehst. '
-            'Der Examenstermin steuert Phase und Tagesplan.',
+            widget.nurOrt
+                ? 'Bestimmt, welches Landesrecht du lernst und welche Kurs-Decks du siehst.'
+                : 'Bundesland und Universität bestimmen, welches Landesrecht du lernst, '
+                    'wie die Klausuren gewichtet werden und welche Kurs-Decks du siehst. '
+                    'Der Examenstermin steuert Phase und Tagesplan.',
             style: theme.textTheme.bodySmall,
           ),
           const SizedBox(height: Spacing.lg),
@@ -381,6 +397,7 @@ class _ProfilEditorState extends State<_ProfilEditor> {
               ),
             ),
           ],
+          if (!widget.nurOrt) ...[
           const SizedBox(height: Spacing.md),
           Row(
             children: [
@@ -405,6 +422,7 @@ class _ProfilEditorState extends State<_ProfilEditor> {
             controller: _minuten,
             keyboardType: TextInputType.number,
           ),
+          ],
           if (_error != null) ...[
             const SizedBox(height: Spacing.sm),
             SubsumoFeedbackBlock(message: _error!, severity: FeedbackSeverity.negative),
@@ -418,7 +436,7 @@ class _ProfilEditorState extends State<_ProfilEditor> {
               ],
               Expanded(
                 child: SubsumoButton.primary(
-                  label: _busy ? 'Bitte warten ...' : 'Profil speichern',
+                  label: _busy ? 'Bitte warten ...' : (widget.nurOrt ? 'Speichern' : 'Profil speichern'),
                   onPressed: _busy ? null : _save,
                 ),
               ),
@@ -1068,7 +1086,7 @@ class _SchwachstellenCard extends StatelessWidget {
               spacing: Spacing.sm,
               runSpacing: Spacing.xs,
               children: [
-                for (final f in fehler) SubsumoChip(label: '${f['code']} (${f['anzahl']})'),
+                for (final f in fehler) SubsumoChip(label: '${strukturfehlerLabel(f)} (${f['anzahl']})'),
               ],
             ),
           ],
@@ -1333,6 +1351,15 @@ class DeckDetailPage extends StatelessWidget {
                   leading: Icon(Icons.account_tree_outlined,
                       color: theme.colorScheme.onSurfaceVariant),
                   title: Text(schema['title'] as String),
+                  trailing: const Icon(Icons.chevron_right),
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) => SchemaDetailPage(
+                        slug: schema['slug'] as String,
+                        title: schema['title'] as String,
+                      ),
+                    ),
+                  ),
                 ),
             ],
             if (cases.isNotEmpty) ...[
@@ -1361,9 +1388,9 @@ class DeckDetailPage extends StatelessWidget {
             if (fehlend.isNotEmpty) ...[
               const SizedBox(height: Spacing.lg),
               SubsumoFeedbackBlock(
-                message: 'Noch nicht im Deck (Content in Arbeit):',
+                message: 'Weitere Themen in Vorbereitung',
                 detail: fehlend.join('; '),
-                severity: FeedbackSeverity.hint,
+                severity: FeedbackSeverity.neutral,
               ),
             ],
           ],
@@ -1442,6 +1469,29 @@ Future<void> openDeckReview(BuildContext context, DeckFilter filter) async {
 // --------------------------------------------------------------------------- //
 // Helfer
 // --------------------------------------------------------------------------- //
+
+/// Anzeigename eines Strukturfehlers: `label` der API, sonst bekannte Codes,
+/// sonst der Code lesbar gemacht (Unterstriche -> Leerzeichen, Anfang gross).
+String strukturfehlerLabel(Map<String, dynamic> fehler) {
+  final label = fehler['label'];
+  if (label is String && label.trim().isNotEmpty) return label;
+  final code = '${fehler['code'] ?? ''}';
+  const bekannt = {
+    'offener_obersatz': 'Obersatz ohne Ergebnis',
+    'kein_ergebnis': 'Ergebnis fehlt',
+    'wiederholung': 'Wiederholungen',
+    'sprung_zum_ergebnis': 'Sprung zum Ergebnis',
+    'urteilsstil': 'Urteilsstil',
+    'keine_norm': 'Norm fehlt',
+    'kein_obersatz': 'Obersatz fehlt',
+    'keine_definition': 'Definition fehlt',
+    'keine_subsumtion': 'Subsumtion fehlt',
+  };
+  final hit = bekannt[code];
+  if (hit != null) return hit;
+  final text = code.replaceAll('_', ' ').trim();
+  return text.isEmpty ? code : '${text[0].toUpperCase()}${text.substring(1)}';
+}
 
 Map<String, dynamic> _map(Object? value) =>
     value is Map ? Map<String, dynamic>.from(value) : <String, dynamic>{};
