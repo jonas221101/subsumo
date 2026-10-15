@@ -272,9 +272,9 @@ faelle:
       um Zug gegen Rücknahme des Fahrzeugs aus §§ 437 Nr. 2, 323 Abs. 1, 326 Abs.
       5, 346 Abs. 1 BGB haben.
   - prompt: Liegt ein Sachmangel vor?
-    erwartung: Ja - die vereinbarte Beschaffenheit "Gesamtlaufleistung 60.000 km"
-      liegt nicht vor, da die tatsächliche Laufleistung 110.000 km beträgt; damit
-      fehlt eine subjektive Anforderung nach § 434 Abs. 2 S. 1 Nr. 1 BGB. Dass die
+    erwartung: Ja - die tatsächliche Laufleistung von 110.000 km weicht von der vereinbarten
+      Beschaffenheit "Gesamtlaufleistung 60.000 km" ab; damit fehlt eine subjektive
+      Anforderung nach § 434 Abs. 2 S. 1 Nr. 1 BGB. Dass die
       Parteien eine Beschaffenheit über die tatsächliche Laufleistung (nicht nur über
       die Anzeige des Tachos) vereinbart haben, folgt aus der Auslegung der Vereinbarung
       nach §§ 133, 157 BGB. Hilfsweise fehlt auch die nach § 434 Abs. 3 S. 1 Nr. 2
@@ -361,7 +361,7 @@ faelle:
       - zr-kaufrecht-sachmangel-begriff
     - id: p4
       label: Unmöglichkeit beider Nacherfüllungsarten (Nachlieferung beim Stückkauf,
-        Nachbesserung) nach § 275 Abs. 1 BGB erkannt
+        Nachbesserung) nach § 275 Abs. 1 BGB erkannt, Nacherfüllung ausgeschlossen
       weight: 2.0
       required: true
       norms:

@@ -361,7 +361,10 @@ faelle:
       Herausgabe verweigern, bis er wegen 2.000 EUR befriedigt ist; § 1000 S. 2 BGB
       greift nicht, weil B das Boot nicht durch vorsätzliche unerlaubte Handlung erlangt
       hat. Fällig wird der Anspruch nach § 1001 S. 1 BGB mit Wiedererlangung durch
-      A oder Genehmigung.
+      A oder Genehmigung. Im Ergebnis kann A von B Herausgabe und die 400 EUR Oktobermiete
+      verlangen, nicht aber die 1.800 EUR Sommermieten und nicht die 900 EUR für den
+      Rumpf; B kann Verwendungsersatz von 2.000 EUR verlangen und das Boot bis dahin
+      zurückbehalten.
   expectation:
     pruefpunkte:
     - id: p1
@@ -395,7 +398,8 @@ faelle:
       - Bösgläubigkeit ab Kenntnis
       - Gutgläubigkeit bei Besitzerwerb
       - positive Kenntnis
-      - grobe Fahrlässigkeit
+      - Besitzerwerb war B gutgläubig
+      - ab der Fahndungsmeldung
       card_slugs:
       - zr-990-boesglaeubiger-besitzer
       - zr-ebv-schadensersatz-989-990
@@ -422,7 +426,7 @@ faelle:
       - zr-ebv-privileg-993-1-hs-2
       - zr-ebv-988-unentgeltlicher-besitzer
     - id: p4
-      label: 'Rumpfschaden: kein Schadensersatz - §§ 989, 990 BGB nicht erfüllt, §
+      label: 'Rumpfschaden: Schadensersatz ausgeschlossen - §§ 989, 990 BGB nicht erfüllt, §
         992 BGB nicht einschlägig, kein Fremdbesitzerexzess, § 823 Abs. 1 BGB durch
         § 993 Abs. 1 Hs. 2 BGB gesperrt'
       weight: 2.0
@@ -483,7 +487,7 @@ faelle:
         und das Boot bis dahin zurückbehalten'
       weight: 1.0
       keywords:
-      - Herausgabe und Oktobermiete
-      - keine Herausgabe der Sommermieten
-      - Verwendungsersatz von 2.000
+      - Herausgabe und die 400 EUR Oktobermiete
+      - Verwendungsersatz von 2.000 EUR
+      - bis dahin zurückbehalten
       - Zurückbehaltungsrecht bis zur Befriedigung

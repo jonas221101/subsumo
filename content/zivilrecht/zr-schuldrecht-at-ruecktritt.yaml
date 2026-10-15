@@ -248,7 +248,6 @@ faelle:
       - Rückgewähranspruch
       - wirksam zurückgetreten
       - Rücktrittsrecht aus § 323
-      - Rückgewähranspruch aus dem Rücktritt
     - id: p2
       label: Pflichtverletzung durch Nichtleistung der fälligen Montage bis zum vereinbarten
         Termin festgestellt; Vertragstyp (Werklieferung/Kauf mit Montage) eingeordnet
@@ -257,8 +256,7 @@ faelle:
       keywords:
       - Montage unterblieben
       - nicht rechtzeitig montiert
-      - Leistung nicht bis zum Termin erbracht
-      - Fälligkeit zum 1. April
+      - Termin nicht eingehalten
       - Nichtleistung einer fälligen Leistung
       - Verzögerung der Montage
       card_slugs:

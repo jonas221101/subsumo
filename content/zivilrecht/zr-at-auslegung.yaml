@@ -217,7 +217,6 @@ faelle:
       keywords:
       - § 433 Abs. 1 S. 1
       - Primärleistungsanspruch
-      - Kaufvertrag über das Rennrad
     - id: p2
       label: Erkennt, dass der objektive Wortlaut ('Sprint 300') nicht automatisch
         maßgeblich ist
@@ -226,11 +225,10 @@ faelle:
       norms:
       - § 133 BGB
       keywords:
-      - Wortlaut ist nicht allein maßgeblich
       - wirklicher Wille
-      - nicht am buchstäblichen Sinn haften
       - objektiver Wortlaut
       - Empfängerhorizont
+      - Wortlaut nicht maßgeblich
       card_slugs:
       - zr-at-auslegung-ziel-133-157
     - id: p3
@@ -257,12 +255,12 @@ faelle:
       norms:
       - § 119 Abs. 1 BGB
       keywords:
-      - Vorrang der Auslegung vor der Anfechtung
-      - Anfechtung nicht erforderlich
-      - Wille und Erklärung stimmen überein
+      - Vorrang der Auslegung
       - kein Anfechtungsgrund
-      - kein Auseinanderfallen von Wille und Erklärung
+      - Anfechtungsgrund fehlt
+      - Auseinanderfallen von Wille und Erklärung
       - kein Irrtum
+      - Anfechtung nicht erforderlich
       card_slugs:
       - zr-at-auslegung-vorrang-vor-anfechtung
     - id: p5
@@ -272,9 +270,8 @@ faelle:
       norms:
       - § 433 Abs. 1 S. 1 BGB
       keywords:
-      - Kaufvertrag über das Modell Sprint 200
-      - Vertrag über das gemeinte Rad zustande gekommen
-      - V muss das Sprint 200 übergeben
-      - K kann Übergabe und Übereignung verlangen
+      - Modell Sprint 200
+      - Kaufvertrag über Sprint 200
+      - Übergabe und Übereignung verlangen
       card_slugs:
       - zr-at-auslegung-falsa-demonstratio

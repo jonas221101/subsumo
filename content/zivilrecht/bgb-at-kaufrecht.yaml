@@ -195,8 +195,10 @@ faelle:
     erwartung: K gibt das Angebot ab (§ 145 BGB), V nimmt es mit 'Abgemacht' an (§
       147 Abs. 1 BGB).
   - prompt: Kann V den Vertrag wirksam anfechten?
-    erwartung: Nein. V hat genau die Zahl erklärt, die er erklären wollte; sein Irrtum
-      liegt allein in der Kalkulation und damit im Beweggrund (unbeachtlicher Motivirrtum).
+    erwartung: Nein. Eine Anfechtung nach § 142 Abs. 1 BGB scheitert, denn V hat genau
+      die Zahl erklärt, die er erklären wollte; sein Irrtum liegt allein in der Kalkulation
+      und damit im Beweggrund (unbeachtlicher Motivirrtum). Der Kaufvertrag bleibt
+      wirksam, sodass K Übereignung verlangen kann.
   expectation:
     pruefpunkte:
     - id: p1
@@ -213,7 +215,8 @@ faelle:
       card_slugs:
       - zr-at-willenserklaerung
     - id: p2
-      label: Schaufensterauslage als invitatio ad offerendum eingeordnet
+      label: Schaufensterauslage als invitatio ad offerendum eingeordnet (Abgrenzung
+        vom bindenden Angebot)
       weight: 2.5
       required: true
       keywords:

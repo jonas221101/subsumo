@@ -171,7 +171,8 @@ faelle:
       Mantel verletzt sein Eigentum.
   - prompt: Worin liegt die Verletzungshandlung?
     erwartung: Im Überfahren der roten Ampel durch R, während er durch sein Mobiltelefon
-      abgelenkt war.
+      abgelenkt war. Die Rechtswidrigkeit ist durch die Rechtsgutsverletzung indiziert
+      (Erfolgsunrecht), Rechtfertigungsgründe sind nicht ersichtlich.
   - prompt: Ist die haftungsbegründende Kausalität gegeben?
     erwartung: Ja - hätte R nicht bei Rot die Kreuzung überquert, wäre es nicht zur
       Kollision gekommen; der Erfolg liegt auch nicht außerhalb jeder Lebenserfahrung.
@@ -181,7 +182,7 @@ faelle:
       R hat die im Verkehr erforderliche Sorgfalt außer Acht gelassen.'
   - prompt: Wie hoch ist der ersatzfähige Schaden?
     erwartung: 950 Euro - 800 Euro Behandlungskosten und 150 Euro für den zerrissenen
-      Mantel.
+      Mantel. Der Schadensersatzanspruch des F gegen R besteht damit in Höhe von 950 Euro.
   - prompt: Kann F daneben Schmerzensgeld verlangen?
     erwartung: 'Ja, dem Grunde nach: Wegen der Verletzung von Körper und Gesundheit
       kann F auch für den immateriellen Schaden eine billige Entschädigung in Geld
@@ -204,11 +205,11 @@ faelle:
       weight: 1.5
       required: false
       keywords:
-      - Rechtsgutsverletzung
-      - Körper und Gesundheit verletzt
-      - Verletzung des Eigentums am Mantel
-      - Körperverletzung
+      - Körper und Gesundheit des F
+      - verletzt sein Eigentum
       - Eigentumsverletzung
+      - Körperverletzung
+      - Verletzung von Körper und Gesundheit
       card_slugs:
       - zr-delikt-rechtsgutsverletzung
     - id: p3
@@ -216,9 +217,10 @@ faelle:
       weight: 1.0
       required: false
       keywords:
+      - Überfahren der roten Ampel
       - Rotlichtverstoß
       - Missachtung des Rotlichts
-      - Ablenkung durch das Mobiltelefon
+      - durch sein Mobiltelefon abgelenkt
       - Verletzungshandlung durch aktives Tun
       card_slugs:
       - zr-delikt-verletzungshandlung
@@ -227,6 +229,7 @@ faelle:
       weight: 1.5
       required: false
       keywords:
+      - wäre es nicht zur Kollision gekommen
       - haftungsbegründende Kausalität
       - conditio sine qua non
       - Äquivalenztheorie
@@ -238,6 +241,7 @@ faelle:
       weight: 1.0
       required: false
       keywords:
+      - Rechtswidrigkeit ist indiziert
       - Rechtswidrigkeit indiziert
       - Erfolgsunrecht
       - keine Rechtfertigungsgründe
@@ -264,10 +268,11 @@ faelle:
       weight: 2.0
       required: true
       keywords:
+      - 800 Euro Behandlungskosten
+      - 150 Euro für den zerrissenen Mantel
       - Heilbehandlungskosten
       - Ersatz des zerrissenen Mantels
       - § 249 Abs. 2
-      - haftungsausfüllende Kausalität
       - Zeitwert
       - Wiederbeschaffungswert
       card_slugs:
@@ -277,6 +282,7 @@ faelle:
       weight: 1.0
       required: false
       keywords:
+      - Schadensersatzanspruch des F gegen R besteht
       - Schadensersatzanspruch aus § 823 Abs. 1 besteht
       - F kann von R Ersatz verlangen
       - R haftet für den Schaden
