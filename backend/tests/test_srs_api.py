@@ -211,7 +211,7 @@ def test_faelligkeit_cards_due_cockpit_plan_forecast_stimmen_ueberein(auth_clien
     auth_client.patch("/v1/auth/me", json={"exam_date": exam})
     cockpit = auth_client.get("/v1/examen/cockpit").json()
     wh = [b for b in cockpit["plan"][0]["blocks"] if b["kind"] == "wiederholung"]
-    assert wh and wh[0]["title"] == f"{min(erwartet, 10**6)} faellige Karten"
+    assert wh and wh[0]["title"] == f"{min(erwartet, 10**6)} fällige Karten"
     plan = auth_client.post("/v1/plan", json={"exam_date": exam}).json()
     wh2 = [b for b in plan["days"][0]["blocks"] if b["kind"] == "wiederholung"]
     assert wh2[0]["title"] == wh[0]["title"]

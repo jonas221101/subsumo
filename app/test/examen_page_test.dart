@@ -382,7 +382,7 @@ void main() {
     expect(find.widgetWithText(SubsumoButton, 'Klausur schreiben'), findsOneWidget);
     expect(find.text('Landesrecht-Deck'), findsOneWidget);
     expect(find.text('Prüfung in Bayern'), findsOneWidget);
-    expect(find.textContaining('6 Klausuren a 300 min'), findsOneWidget);
+    expect(find.textContaining('6 Klausuren à 300 min'), findsOneWidget);
     expect(find.textContaining('Redaktionsstatus: in Prüfung'), findsWidgets);
     expect(find.text('Zugelassene Hilfsmittel besorgen'), findsOneWidget);
     // Individualisierung (docs/33): naechster Schritt, Lernprofil, Semesterstoff,

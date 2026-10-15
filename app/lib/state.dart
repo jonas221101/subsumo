@@ -321,7 +321,7 @@ class AppState extends ChangeNotifier {
       }
       if (contentManifest?['content_version'] == version) return true;
 
-      final cards = await api.contentCards(limit: 2000);
+      final cards = await api.contentCards();
       final encoded = jsonEncode({'manifest': manifest, 'cards': cards});
       final prefs = await SharedPreferences.getInstance();
       final written = await prefs.setString(_contentStateKey, encoded);

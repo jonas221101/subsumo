@@ -7,6 +7,7 @@ from datetime import UTC, datetime
 from fastapi import APIRouter, HTTPException, status
 
 from app.api.deps import CurrentUser, DbSession
+from app.api.v1.content import annotate_bundesland
 from app.config import get_settings
 from app.models import Card, CardStateEnum, Case, Submission, UserCard
 from app.schemas import AnalyzeIn, CaseOut, SubmissionIn
@@ -96,7 +97,7 @@ def get_case(slug: str, user: CurrentUser, db: DbSession) -> Case:
     settings = get_settings()
     if limits.is_free_tier(user, settings):
         limits.enforce_case_access(db, user, case)
-    return case
+    return annotate_bundesland(db, [case])[0]
 
 
 @router.post("/cases/{slug}/submit", status_code=status.HTTP_201_CREATED)

@@ -198,12 +198,20 @@ class ApiClient {
     return Map<String, dynamic>.from(data);
   }
 
-  Future<List<Map<String, dynamic>>> contentCards({int limit = 2000}) async {
-    final data = await _get('/v1/content/cards', {'limit': limit});
-    if (data is! List || data.any((card) => card is! Map)) {
-      throw const FormatException('Karten-Snapshot ist ungültig');
+  /// Laedt ALLE Karten seitenweise (offset-Paging bis eine Seite nicht voll ist).
+  Future<List<Map<String, dynamic>>> contentCards({int pageSize = 1000}) async {
+    final all = <Map<String, dynamic>>[];
+    for (var offset = 0;; offset += pageSize) {
+      final data = await _get('/v1/content/cards', {
+        'limit': pageSize,
+        'offset': offset,
+      });
+      if (data is! List || data.any((card) => card is! Map)) {
+        throw const FormatException('Karten-Snapshot ist ungültig');
+      }
+      all.addAll(data.map((card) => Map<String, dynamic>.from(card as Map)));
+      if (data.length < pageSize) return all;
     }
-    return data.map((card) => Map<String, dynamic>.from(card as Map)).toList();
   }
 
   Future<List<Map<String, dynamic>>> schemata({String? area}) async {

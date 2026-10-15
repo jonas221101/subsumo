@@ -148,10 +148,25 @@ def due_cards(
         # Ueber alle ungesehenen Karten sortieren, nicht ueber eine
         # Vorauswahl - sonst laeuft ein Fokus-Thema am Ende des Alphabets
         # an der Gewichtung vorbei. Der Kartenbestand ist klein genug.
-        neu = sorted(
-            neu_query.all(),
-            key=lambda c: (-gewicht.get(c.topic_slug, 3.0), c.slug),
-        )[:rest]
+        stufen = examen.topic_stufen(db, user, profil)
+        semester = examen.topic_semesters(db)
+        areas = {t.slug: t.area for t in db.query(Topic).all()}
+        fokus = set(profil.themen_fokus)
+        schwerpunkte = set(profil.schwerpunkte)
+
+        def sortierung(c):
+            area = areas.get(c.topic_slug, "")
+            return (
+                0 if c.topic_slug in fokus else 1,
+                stufen.get(c.topic_slug, 99 if stufen else 0),
+                0 if area in schwerpunkte else 1,
+                semester.get(c.topic_slug, 99) if stufen else 0,
+                examen.GEBIET_RANG.get(area, 9),
+                -gewicht.get(c.topic_slug, 3.0),
+                c.slug,
+            )
+
+        neu = sorted(neu_query.all(), key=sortierung)[:rest]
         result.extend(
             DueCardOut(
                 slug=c.slug,

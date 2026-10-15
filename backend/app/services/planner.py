@@ -42,6 +42,9 @@ class TopicInput:
     # Kartenbestand: bereits gestartete Themen sind nicht "neu".
     cards_total: int = 0
     cards_started: int = 0
+    # Reihenfolge-Stufe (0 = sofort): Stoff spaeterer Semester kommt erst nach
+    # dem Stoff des aktuellen Semesters. Gleiche Stufe = nach Prioritaet.
+    stufe: int = 0
 
     @property
     def started_share(self) -> float:
@@ -126,13 +129,21 @@ class StudyPlan:
 
 
 def _interleave_by_area(topics: list[TopicInput]) -> list[TopicInput]:
+    """Stufenweise (Semesterstoff zuerst), je Stufe Round-Robin ueber die Gebiete."""
+    ordered: list[TopicInput] = []
+    for stufe in sorted({t.stufe for t in topics}):
+        ordered.extend(_interleave_tier([t for t in topics if t.stufe == stufe]))
+    return ordered
+
+
+def _interleave_tier(topics: list[TopicInput]) -> list[TopicInput]:
     """Round-Robin ueber die Rechtsgebiete, innerhalb je nach Prioritaet."""
     by_area: dict[str, list[TopicInput]] = {}
     for topic in sorted(topics, key=lambda t: (-t.priority, t.slug)):
         by_area.setdefault(topic.area, []).append(topic)
 
     ordered: list[TopicInput] = []
-    areas = sorted(by_area, key=lambda a: -max(t.priority for t in by_area[a]))
+    areas = sorted(by_area, key=lambda a: (-max(t.priority for t in by_area[a]), a))
     while any(by_area.values()):
         for area in areas:
             if by_area[area]:
@@ -258,7 +269,9 @@ def generate_plan(
         if klausuren and current.weekday() == klausur_weekday and phase != PHASE_GRUNDLAGEN:
             minutes = 300 if phase == PHASE_ENDSPURT else 120
             day.blocks.append(
-                PlanBlock("klausur", f"Klausur unter Examensbedingungen ({minutes} min)", minutes)
+                PlanBlock(
+                    "klausur", f"Übungsklausur unter Examensbedingungen ({minutes} min)", minutes
+                )
             )
             day.review_backlog = backlog + (
                 due_forecast[offset] if offset < len(due_forecast) else 0
@@ -276,7 +289,7 @@ def generate_plan(
             doable = int(max_review_minutes * cards_per_minute)
             done = min(due_today, doable)
             minutes = max(1, math.ceil(done / cards_per_minute))
-            day.blocks.append(PlanBlock("wiederholung", f"{done} faellige Karten", minutes))
+            day.blocks.append(PlanBlock("wiederholung", f"{done} fällige Karten", minutes))
             budget -= minutes
             backlog = due_today - done
         else:
