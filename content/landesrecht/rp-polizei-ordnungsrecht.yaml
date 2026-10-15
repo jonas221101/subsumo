@@ -5,7 +5,7 @@ topic:
   parent: or-sicherheitsrecht-generalklausel-standardmassnahmen
   bundesland: RP
   relevance: 4
-  stand: 2026-09
+  stand: 2026-10
   redaktion:
     erzeugt_von: claude-code (Redaktionsentwurf)
     status: in-pruefung
@@ -85,3 +85,294 @@ cards:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
+- slug: rp-por-gefahr
+  type: definition
+  front: >-
+      Welche Gefahrbegriffe sind im Gefahrenabwehrrecht in Rheinland-Pfalz zu unterscheiden?
+  back: >-
+      Gefahr ist eine Sachlage, die bei ungehindertem Geschehensablauf mit hinreichender
+      Wahrscheinlichkeit in absehbarer Zeit zu einem Schaden für ein polizeiliches Schutzgut führt;
+      maßgeblich ist die Prognose ex ante aus Sicht eines besonnenen Amtswalters. Konkrete Gefahr: im
+      Einzelfall drohend, sie trägt Einzelmaßnahmen (Generalklausel, Standardmaßnahmen). Abstrakte
+      Gefahr: nach allgemeiner Lebenserfahrung typischerweise drohend, sie trägt nur den Erlass einer
+      Gefahrenabwehrverordnung (POG). Qualifizierte Gefahren erhöhen die Anforderungen: erhebliche
+      Gefahr (bedeutendes Rechtsgut), gegenwärtige Gefahr (Schadenseintritt hat begonnen oder steht
+      unmittelbar bevor), Gefahr im Verzug (Abwarten würde den Erfolg der Maßnahme gefährden). Vom
+      Gefahrenverdacht spricht man, wenn unklar ist, ob ein Schaden droht; hier kommt nur ein
+      Gefahrerforschungseingriff in Betracht. Welche Qualifikation eine Standardmaßnahme verlangt,
+      ergibt sich aus ihrem Tatbestand.
+  norms:
+  - "§ 9 Abs. 1 POG RP"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: rp-por-anschein
+  type: streitstand
+  front: >-
+      Anscheinsgefahr, Gefahrenverdacht und Putativgefahr: Wie sind sie abzugrenzen und welche
+      Rechtsfolgen hat eine Fehlprognose?
+  back: >-
+      Anscheinsgefahr: Bei Erlass der Maßnahme sprach aus Sicht eines besonnenen Amtswalters ex ante
+      alles für einen drohenden Schaden, tatsächlich bestand keine Gefahr. Nach h. M. liegt eine
+      Gefahr im Rechtssinn vor, die Maßnahme ist rechtmäßig (Prognoseentscheidung). Gefahrenverdacht:
+      Die Tatsachenlage ist unklar; zulässig ist grundsätzlich nur eine vorläufige, der Aufklärung
+      dienende Maßnahme. Putativgefahr: Der Amtswalter nimmt ohne objektiv tragfähigen Anschein eine
+      Gefahr an; die Maßnahme ist rechtswidrig. Streitig sind die Folgefragen beim Anscheinsstörer:
+      Nach h. M. wird dem zu Unrecht Herangezogenen, der den Anschein nicht zurechenbar gesetzt hat,
+      ein Ausgleich entsprechend dem Nichtstörer zugestanden und er wird nicht mit Kosten belastet;
+      wer den Anschein zurechenbar veranlasst hat (etwa Fehlalarm durch Fahrlässigkeit), trägt die
+      Kosten. Anderer Ansatz: Die Rechtmäßigkeit der Maßnahme schließe jeden Ausgleich aus.
+  norms:
+  - "§ 9 Abs. 1 POG RP"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: rp-por-standard
+  type: norm
+  front: >-
+      Welche Standardmaßnahmen kennt das Gefahrenabwehrrecht in Rheinland-Pfalz und wie verhalten sie
+      sich zur Generalklausel?
+  back: >-
+      Standardmaßnahmen sind typisierte Eingriffsbefugnisse mit eigenem Tatbestand: Befragung und
+      Auskunftspflicht, Vorladung, Identitätsfeststellung, Platzverweisung und Aufenthaltsverbot,
+      Gewahrsam, Durchsuchung von Personen und Sachen, Betreten und Durchsuchen von Wohnungen sowie
+      Sicherstellung und Beschlagnahme. Sie sind im POG geregelt; ob und wie die Befugnisse auch den
+      Ordnungs- bzw. Polizeibehörden zustehen, ist anhand der geltenden Fassung zu prüfen. Sie gehen
+      der Generalklausel als speziellere Normen vor; ist ihr Tatbestand nicht erfüllt, darf nicht ohne
+      Weiteres auf die Generalklausel ausgewichen werden, soweit die Standardmaßnahme die Materie
+      abschließend regelt. Verfassungsrechtliche Vorgaben sind zu beachten: Gewahrsam verlangt eine
+      richterliche Entscheidung (Art. 104 Abs. 2 GG), die Durchsuchung von Wohnungen grundsätzlich
+      eine richterliche Anordnung (Art. 13 Abs. 2 GG), ihr Betreten zur Gefahrenabwehr ist an Art. 13
+      Abs. 7 GG zu messen.
+  norms:
+  - "Standardbefugnisse des POG (Paragraphen hier nicht angegeben)"
+  - "Art. 104 Abs. 2 GG"
+  - "Art. 13 Abs. 2 GG"
+  - "Art. 13 Abs. 7 GG"
+  - "§ 9 Abs. 1 POG RP"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: rp-por-stoererauswahl
+  type: streitstand
+  front: >-
+      Wie wählt die Behörde zwischen mehreren Verantwortlichen aus, und wie wird der Zweckveranlasser
+      behandelt?
+  back: >-
+      Gibt es mehrere Störer, wählt die Behörde nach pflichtgemäßem Ermessen aus. Leitlinie ist die
+      effektive, schnelle und sichere Gefahrenabwehr; eine feste Rangfolge zwischen Verhaltens- und
+      Zustandsstörer besteht nicht. Zu berücksichtigen sind Nähe zur Gefahr, Leistungsfähigkeit,
+      Verursachungsbeitrag und Gleichbehandlung. Nichtstörer dürfen dagegen nur im polizeilichen
+      Notstand herangezogen werden. Streitig ist die Reichweite der Verhaltensverantwortlichkeit: Nach
+      der Theorie der unmittelbaren Verursachung ist nur verantwortlich, wer selbst die Gefahrengrenze
+      überschreitet. Die Rechtsprechung und Teile des Schrifttums erweitern dies auf den
+      Zweckveranlasser, der die unmittelbare Verursachung durch einen Dritten bezweckt oder sie als
+      zwangsläufige Folge seines Tuns herbeiführt. Die Gegenansicht lehnt die Figur ab, weil sie die
+      Unmittelbarkeit auflöse und die Verantwortlichkeit nicht gesetzlich gedeckt sei.
+  norms:
+  - "§ 4 POG RP"
+  - "§ 5 POG RP"
+  - "§ 7 POG RP"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: rp-por-zwang
+  type: definition
+  front: >-
+      Wie läuft die Vollstreckung einer Gefahrenabwehrverfügung in Rheinland-Pfalz ab, und was gilt
+      beim Sofortvollzug?
+  back: >-
+      Regelfall ist das gestreckte Verfahren: wirksame und vollstreckbare Grundverfügung (unanfechtbar
+      oder sofort vollziehbar, § 80 Abs. 2 VwGO), Androhung des Zwangsmittels mit angemessener Frist,
+      Festsetzung, Anwendung. Zwangsmittel sind Ersatzvornahme, Zwangsgeld und als letztes Mittel
+      unmittelbarer Zwang; sie müssen verhältnismäßig sein. Das Landesverwaltungsvollstreckungsgesetz
+      (LVwVG) regelt den Verwaltungszwang; für die Polizei enthält das POG ergänzende Vorschriften zum
+      unmittelbaren Zwang. Bei gegenwärtiger Gefahr kann die Behörde im Sofortvollzug (unmittelbare
+      Ausführung) ohne vorausgehenden Verwaltungsakt handeln, wenn die Maßnahme zur Abwehr der Gefahr
+      notwendig ist und die Verantwortlichen nicht rechtzeitig herangezogen werden können. Typische
+      Klausurkonstellation ist das Abschleppen eines Fahrzeugs; geprüft wird dann, ob die
+      Grundverfügung, etwa ein Verkehrszeichen, wirksam war, ob Androhung und Festsetzung entbehrlich
+      waren und ob das Zwangsmittel verhältnismäßig war.
+  norms:
+  - "Landesverwaltungsvollstreckungsgesetz (LVwVG RP)"
+  - "§ 80 Abs. 2 S. 1 Nr. 2 VwGO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: rp-por-kosten
+  type: norm
+  front: >-
+      Wer trägt die Kosten von Ersatzvornahme, unmittelbarer Ausführung und Zwang, und wo liegen die
+      Grenzen der Kostenhaftung?
+  back: >-
+      Die Kosten einer Ersatzvornahme, des unmittelbaren Zwangs oder einer unmittelbaren Ausführung
+      trägt grundsätzlich der Pflichtige bzw. der für die Gefahr Verantwortliche; sie werden durch
+      Kostenbescheid (Leistungsbescheid) geltend gemacht und nach den Vorschriften der
+      Verwaltungsvollstreckung beigetrieben. Bei Sofortvollzug ohne Grundverfügung prüft die
+      Kostenentscheidung inzident, ob die Maßnahme rechtmäßig gewesen wäre, insbesondere ob eine
+      Gefahr vorlag, der Kostenschuldner Störer war und die Maßnahme verhältnismäßig war. Für den
+      Zustandsstörer ist die Kostenhaftung nach der Rechtsprechung des Bundesverfassungsgerichts aus
+      Art. 14 GG begrenzt; sie darf nach Zumutbarkeit insbesondere den Wert des Grundstücks nach
+      Sanierung nicht übersteigen, wenn die Gefahr nicht dem Risikobereich des Eigentümers zuzurechnen
+      ist. Der Nichtstörer wird nicht mit Kosten belastet; ihm steht bei Inanspruchnahme ein
+      Entschädigungsanspruch zu.
+  norms:
+  - "Art. 14 Abs. 1 GG"
+  - "Art. 14 Abs. 2 GG"
+  - "Landesverwaltungsvollstreckungsgesetz (LVwVG RP)"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "BVerfGE 102, 1 (Altlasten, Zustandsverantwortlichkeit)"
+  stand: 2026-10
+- slug: rp-por-doppel
+  type: streitstand
+  front: >-
+      Was gilt bei doppelfunktionalen Maßnahmen der Polizei (Gefahrenabwehr und Strafverfolgung)?
+  back: >-
+      Verfolgt eine polizeiliche Maßnahme zugleich präventive und repressive Zwecke, sind
+      Rechtsgrundlage und Rechtsweg abhängig von ihrem Schwerpunkt. Nach h. M. und der Rechtsprechung
+      entscheidet der erkennbare Schwerpunkt, der sich aus dem Anlass, dem Zweck und dem
+      Gesamteindruck der Maßnahme ergibt. Überwiegt die Gefahrenabwehr, ist die Befugnis im POG bzw.
+      im Ordnungsrecht zu suchen und der Verwaltungsrechtsweg eröffnet (§ 40 Abs. 1 VwGO). Überwiegt
+      die Strafverfolgung, gilt die StPO; der Rechtsschutz richtet sich dann nach § 98 Abs. 2 S. 2
+      StPO analog bzw. nach den §§ 23 ff. EGGVG. Lassen sich die Zwecke nicht gewichten, werden
+      teilweise beide Regelungskomplexe nebeneinander angewendet oder dem Betroffenen ein Wahlrecht
+      zugestanden. Die Klausur verlangt deshalb stets eine ausdrückliche Zuordnung des Handelns, bevor
+      die Ermächtigungsgrundlage geprüft wird.
+  norms:
+  - "§ 40 Abs. 1 VwGO"
+  - "§ 98 Abs. 2 StPO"
+  - "§ 23 EGGVG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: rp-schema-por-gefahrenprognose
+  title: "Rechtmäßigkeit eines Eingriffs bei Anscheinsgefahr nach dem POG RP"
+  norms:
+  - "§ 9 Abs. 1 POG RP"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  steps:
+  - label: "I. Ermächtigungsgrundlage"
+    hinweis: "Standardmaßnahme (z. B. Betreten einer Wohnung) vor Generalklausel."
+  - label: "II. Formelle Rechtmäßigkeit"
+    children:
+    - label: >-
+        1. Zuständigkeit: allgemeine Ordnungsbehörde oder Polizei bei Eilbedürftigkeit
+    - label: "2. Verfahren und Form"
+  - label: "III. Materielle Rechtmäßigkeit"
+    children:
+    - label: "1. Gefahrenprognose ex ante"
+      hinweis: >-
+          Maßgeblich ist der Erkenntnisstand bei Erlass, nicht das spätere Ergebnis.
+      children:
+      - label: "a) Objektiver Anschein einer Gefahr (Anscheinsgefahr)"
+      - label: "b) Abgrenzung zu Gefahrenverdacht und Putativgefahr"
+    - label: "2. Verfassungsrechtliche Schranken (Art. 13 Abs. 7 GG bei Wohnungen)"
+    - label: "3. Adressat"
+    - label: >-
+        4. Verhältnismäßigkeit: mildere Mittel zuerst
+  - label: "IV. Folgeansprüche (Ausgleich, Kosten) gesondert prüfen"
+faelle:
+- slug: rp-fall-por-hilferufe-wohnung
+  title: "Hilferufe aus der Nachbarwohnung"
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "Art. 13 Abs. 7 GG"
+  facts: >-
+      Gegen 23 Uhr ruft die Nachbarin N in Mainz die Polizei, weil sie aus der Wohnung des B seit zehn
+      Minuten laute Schreie und ein „Hilfe, hört mich jemand?“ hört. Polizeibeamte klingeln und
+      klopfen mehrfach, niemand öffnet. Weil die Schreie weiter zu hören sind, öffnen sie die
+      Wohnungstür gewaltsam und beschädigen sie dabei. In der Wohnung finden sie B allein vor dem
+      Fernseher: Er hat einen Horrorfilm bei hoher Lautstärke angesehen und die Türklingel nicht
+      gehört. B verlangt Ersatz für die beschädigte Tür.
+  question: >-
+      War das Aufbrechen der Tür und das Betreten der Wohnung rechtmäßig? Auf einen Ersatzanspruch ist
+      nicht einzugehen.
+  steps:
+  - prompt: "Wie ist die Lage aus Sicht der Beamten zu beurteilen?"
+    erwartung: >-
+        Maßgeblich ist die Prognose ex ante. Aus Sicht eines besonnenen Amtswalters sprachen die Schreie
+        und die Hilferufe bei Nichtöffnen der Tür für eine drohende Gefahr für Leib oder Leben einer
+        Person (Anscheinsgefahr). Dass sich später herausstellt, dass keine Gefahr bestand, ändert an
+        der Rechtmäßigkeit nichts.
+  - prompt: >-
+        Handelt es sich um eine bloße Putativgefahr oder einen Gefahrenverdacht?
+    erwartung: >-
+        Nein. Es bestand ein objektiv tragfähiger Anschein und nicht bloß eine ungeklärte Lage
+        (Gefahrenverdacht). Eine Putativgefahr, also eine Fehlvorstellung ohne objektiven Anschein,
+        liegt ebenfalls nicht vor.
+  - prompt: >-
+        Welche verfassungsrechtlichen Vorgaben gelten für das Betreten der Wohnung?
+    erwartung: >-
+        Art. 13 Abs. 7 GG erlaubt Eingriffe zur Abwehr einer gemeinen Gefahr oder einer Lebensgefahr für
+        einzelne Personen auch ohne richterliche Anordnung. Die Voraussetzung einer Lebensgefahr war
+        nach der Ex-ante-Sicht erfüllt.
+  - prompt: "Ist das Aufbrechen der Tür verhältnismäßig?"
+    erwartung: >-
+        Ja. Mildere Mittel (Klingeln, Klopfen, Rufen) blieben erfolglos; ein Zuwarten hätte das Leben
+        einer Person gefährdet. Die Beschädigung der Tür stand nicht außer Verhältnis zum
+        Rettungsinteresse.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+          Anscheinsgefahr nach der Ex-ante-Prognose erkannt und als Gefahr im Rechtssinn gewertet
+      weight: 3.0
+      required: true
+      keywords:
+      - "Anscheinsgefahr"
+      - "Prognose ex ante"
+      - "ex ante"
+      - "besonnener Amtswalter"
+      card_slugs:
+      - "rp-por-anschein"
+      - "rp-por-gefahr"
+    - id: p2
+      label: "Abgrenzung zu Putativgefahr und Gefahrenverdacht"
+      weight: 1.5
+      required: false
+      keywords:
+      - "Putativgefahr"
+      - "Gefahrenverdacht"
+      - "objektiv tragfähiger Anschein"
+      - "bloße Fehlvorstellung"
+      card_slugs:
+      - "rp-por-anschein"
+    - id: p3
+      label: >-
+          Verfassungsrechtliche Rechtfertigung des Wohnungseingriffs über Art. 13 Abs. 7 GG
+      weight: 2.5
+      required: true
+      norms:
+      - "Art. 13 Abs. 7 GG"
+      keywords:
+      - "Art. 13 Abs. 7 GG"
+      - "Lebensgefahr"
+      - "ohne richterliche Anordnung"
+      - "Unverletzlichkeit der Wohnung"
+      card_slugs:
+      - "rp-por-standard"
+    - id: p4
+      label: "Verhältnismäßigkeit des Aufbrechens geprüft"
+      weight: 1.5
+      required: false
+      keywords:
+      - "Verhältnismäßigkeit"
+      - "mildere Mittel"
+      - "erforderlich"
+      card_slugs:
+      - "rp-por-standard"
+    normzitate_geprueft: false

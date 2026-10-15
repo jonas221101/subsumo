@@ -1,0 +1,304 @@
+topic:
+  slug: sn-bauordnungsrecht
+  area: oeffentliches-recht
+  title: "Bauordnungsrecht Sachsen"
+  parent: oeffentliches-recht
+  bundesland: SN
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sn-bau-verfahren
+  type: definition
+  front: >-
+      Welche Genehmigungsverfahren kennt die SächsBO, und wie verhält sich das Bauordnungsrecht zum
+      Bauplanungsrecht?
+  back: >-
+      Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedarf nach der Sächsische
+      Bauordnung (SächsBO) grundsätzlich der Baugenehmigung. Ausnahmen: verfahrensfreie Vorhaben
+      (kleine, unbedeutende Anlagen, die ein Katalog der SächsBO aufzählt), die
+      Genehmigungsfreistellung für bestimmte Wohnbauvorhaben im Geltungsbereich qualifizierter
+      Bebauungspläne (gegen vorherige Anzeige; die Gemeinde kann ein Genehmigungsverfahren verlangen)
+      sowie das vereinfachte Verfahren mit eingeschränktem Prüfumfang für die meisten Gebäude und das
+      umfassende Verfahren für Sonderbauten. Verfahrensfreiheit bedeutet nicht materielle Freiheit:
+      Die materiellen Anforderungen des Bauplanungs- und Bauordnungsrechts sind einzuhalten, die
+      Bauaufsicht kann bei Verstößen einschreiten. Das Bauplanungsrecht (§§ 29 ff. BauGB) regelt als
+      Bundesrecht die bodenrechtliche Zulässigkeit, das Bauordnungsrecht als Landesrecht
+      Gefahrenabwehr, Gestaltung und Verfahren.
+  norms:
+  - >-
+      Vorschriften der SächsBO zu Genehmigungspflicht und Verfahren (Paragraphen hier nicht angegeben)
+  - "§ 29 BauGB"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sn-bau-anspruch
+  type: norm
+  front: >-
+      Hat der Bauherr einen Anspruch auf die Baugenehmigung, und wie wird er durchgesetzt?
+  back: >-
+      Die Baugenehmigung ist eine gebundene Entscheidung: Sie ist zu erteilen, wenn dem Vorhaben keine
+      öffentlich-rechtlichen Vorschriften entgegenstehen, die im Genehmigungsverfahren zu prüfen sind
+      (Art. 14 Abs. 1 GG schützt die in der Eigentumsgarantie liegende Baufreiheit im Rahmen der
+      Gesetze). Der Prüfumfang hängt vom Verfahren ab; im vereinfachten Verfahren prüft die
+      Bauaufsichtsbehörde das Bauplanungsrecht, bestimmte Teile der SächsBO und sonstiges öffentliches
+      Recht. Das Bauplanungsrecht folgt aus §§ 30, 34, 35 BauGB je nach Gebietslage (beplanter
+      Bereich, Innenbereich, Außenbereich); wo die Gemeinde nicht selbst Genehmigungsbehörde ist, ist
+      ihr Einvernehmen nach § 36 BauGB erforderlich. Die Genehmigung ergeht unbeschadet privater
+      Rechte Dritter. Rechtsschutz: Verpflichtungsklage nach § 42 Abs. 1 Var. 2 VwGO, nach erfolglosem
+      Antrag bzw. nach Versagung; mit Bauvorbescheid lassen sich einzelne Fragen vorab klären.
+  norms:
+  - "Art. 14 Abs. 1 GG"
+  - "§ 36 BauGB"
+  - "§ 42 Abs. 1 VwGO"
+  - >-
+      Vorschriften der SächsBO zur Baugenehmigung (Paragraphen hier nicht angegeben)
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sn-bau-abstandsflaechen
+  type: norm
+  front: "Was regeln die Abstandsflächen, und sind sie nachbarschützend?"
+  back: >-
+      Vor den Außenwänden oberirdischer Gebäude sind Flächen von Gebäuden und baulichen Anlagen
+      freizuhalten (Abstandsflächen). Ihre Tiefe bemisst sich nach der Wandhöhe H multipliziert mit
+      einem landesrechtlichen Faktor; als Regelwert des Musterbauordnungsrechts gilt 0,4 H mit einer
+      Mindesttiefe von meist 3 m, die Zahlen sind in der SächsBO nachzuschlagen. Die Abstandsflächen
+      müssen grundsätzlich auf dem Baugrundstück selbst liegen und dürfen sich nicht überdecken.
+      Zwecke sind ausreichende Belichtung, Belüftung, Brandschutz und Wahrung des Wohnfriedens. Das
+      Abstandsflächenrecht ist nachbarschützend, soweit seine Zwecke dem Nachbarn dienen; der Nachbar
+      kann seine Verletzung daher rügen. An der Grenze darf gebaut werden, wenn das Planungsrecht
+      Grenzbebauung vorschreibt oder zulässt (geschlossene Bauweise, § 22 BauNVO). Abweichungen sind
+      möglich, wenn der Schutzzweck gewahrt bleibt und nachbarliche Interessen angemessen
+      berücksichtigt werden.
+  norms:
+  - "§ 6 SächsBO"
+  - "§ 22 BauNVO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sn-bau-nachbarschutz
+  type: streitstand
+  front: >-
+      Unter welchen Voraussetzungen kann ein Nachbar eine Baugenehmigung erfolgreich angreifen, und
+      welche Rolle spielt § 212a BauGB?
+  back: >-
+      Die Drittanfechtung hat nur Erfolg, wenn die Genehmigung rechtswidrig ist und gerade gegen eine
+      nachbarschützende Norm verstößt (Schutznormtheorie, § 113 Abs. 1 S. 1 VwGO). Nachbarschützend
+      sind insbesondere das Abstandsflächenrecht, die Festsetzungen zur Art der baulichen Nutzung
+      (Gebietserhaltungsanspruch) und das Gebot der Rücksichtnahme, das über § 15 Abs. 1 S. 2 BauNVO,
+      § 34 Abs. 1 BauGB (Einfügen) oder § 35 Abs. 3 BauGB wirkt. Widerspruch und Anfechtungsklage des
+      Nachbarn haben nach § 212a Abs. 1 BauGB keine aufschiebende Wirkung; der Bauherr darf auf
+      Grundlage der Genehmigung bauen. Vorläufiger Rechtsschutz: Antrag auf Anordnung der
+      aufschiebenden Wirkung nach § 80a Abs. 3 i. V. m. § 80 Abs. 5 VwGO. Streitig ist, ob schon die
+      formelle Rechtswidrigkeit wegen unterbliebener Nachbarbeteiligung allein zum Erfolg führt; nach
+      h. M. kommt es auf eine materielle Verletzung subjektiv-öffentlicher Nachbarrechte an.
+  norms:
+  - "§ 212a Abs. 1 BauGB"
+  - "§ 80a Abs. 3 VwGO"
+  - "§ 80 Abs. 5 VwGO"
+  - "§ 15 Abs. 1 S. 2 BauNVO"
+  - "§ 113 Abs. 1 S. 1 VwGO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sn-bau-eingriff
+  type: definition
+  front: >-
+      Welche bauaufsichtlichen Eingriffsmaßnahmen gibt es, und wann dürfen sie ergehen?
+  back: >-
+      Die Bauaufsichtsbehörde überwacht die Einhaltung des öffentlichen Baurechts und kann nach der
+      SächsBO einschreiten. Baueinstellung: Stilllegung einer Baustelle, die rechtswidrig begonnen
+      wurde; sie setzt formelle Illegalität (fehlende Genehmigung) oder sonstigen Verstoß voraus und
+      dient der Sicherung. Nutzungsuntersagung: Verbot einer rechtswidrigen Nutzung, regelmäßig bei
+      formeller Illegalität, wenn die Nutzung nicht ohne Weiteres genehmigungsfähig ist.
+      Beseitigungsanordnung: die schärfste Maßnahme; sie setzt grundsätzlich formelle und materielle
+      Illegalität voraus, weil eine Beseitigung bei materiell legalem Vorhaben unverhältnismäßig wäre.
+      Alle Maßnahmen stehen im Ermessen der Behörde und müssen verhältnismäßig sein; Adressaten sind
+      Bauherr, Eigentümer oder Nutzer. Ein Anspruch des Nachbarn auf Einschreiten besteht nur
+      ausnahmsweise bei Verletzung nachbarschützender Vorschriften und Ermessensreduktion auf Null.
+  norms:
+  - >-
+      Eingriffsbefugnisse der Bauaufsicht nach der SächsBO (Paragraphen hier nicht angegeben)
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sn-bau-abweichung
+  type: definition
+  front: >-
+      Wie unterscheiden sich Abweichung (Bauordnungsrecht) und Ausnahme bzw. Befreiung
+      (Bauplanungsrecht)?
+  back: >-
+      Im Bauordnungsrecht kann die Bauaufsichtsbehörde Abweichungen von Anforderungen der SächsBO
+      zulassen, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der
+      öffentlich-rechtlich geschützten nachbarlichen Belange mit den öffentlichen Belangen vereinbar
+      sind; die Voraussetzungen im Einzelnen regelt das Landesrecht. Im Bauplanungsrecht lässt § 31
+      Abs. 1 BauGB Ausnahmen zu, soweit der Bebauungsplan sie vorsieht. Nach § 31 Abs. 2 BauGB ist
+      eine Befreiung von Festsetzungen möglich, wenn die Grundzüge der Planung nicht berührt werden
+      und einer der Befreiungsgründe (Allgemeinwohl, städtebauliche Vertretbarkeit, offenbar nicht
+      beabsichtigte Härte) vorliegt; die Abweichung muss zudem mit den öffentlichen Belangen vereinbar
+      sein und nachbarliche Interessen würdigen. Wird von nachbarschützenden Festsetzungen befreit,
+      hat der Nachbar einen Anspruch auf Würdigung seiner Belange.
+  norms:
+  - "§ 31 Abs. 1 BauGB"
+  - "§ 31 Abs. 2 BauGB"
+  - "Abweichungsvorschrift der SächsBO (Paragraph hier nicht angegeben)"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sn-bau-bestandsschutz
+  type: definition
+  front: "Was schützt der Bestandsschutz, und wo liegen seine Grenzen?"
+  back: >-
+      Passiver Bestandsschutz folgt aus Art. 14 Abs. 1 GG: Eine bauliche Anlage, die zu irgendeinem
+      Zeitpunkt rechtmäßig genehmigt oder materiell legal errichtet wurde, darf in ihrem genehmigten
+      Bestand und ihrer Nutzung erhalten bleiben, auch wenn sich später die Rechtslage geändert hat;
+      bauaufsichtliche Eingriffe wie Beseitigungsanordnung oder Nutzungsuntersagung scheiden aus,
+      solange die Voraussetzungen fortbestehen. Der Schutz erlischt, wenn die Anlage zerstört, ihre
+      Substanz in wesentlichem Umfang erneuert oder die Nutzung aufgegeben wird; die Identität der
+      Anlage muss gewahrt sein. Einen aktiven Bestandsschutz, also einen unmittelbar aus Art. 14 GG
+      abgeleiteten Anspruch auf Erweiterung oder Änderung, erkennt das Bundesverwaltungsgericht nicht
+      mehr an. Bei Gefahren für Leben und Gesundheit lassen die Bauordnungen Anpassungsverlangen zu;
+      die Voraussetzungen sind nach der geltenden Fassung zu prüfen.
+  norms:
+  - "Art. 14 Abs. 1 GG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: sn-schema-bau-nutzungsuntersagung
+  title: "Nutzungsuntersagung durch die Bauaufsichtsbehörde (SächsBO)"
+  norms:
+  - >-
+      Eingriffsbefugnisse der Bauaufsicht nach der SächsBO (Paragraphen hier nicht angegeben)
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  steps:
+  - label: "I. Ermächtigungsgrundlage in der SächsBO"
+  - label: "II. Formelle Rechtmäßigkeit"
+    hinweis: "Zuständigkeit der Bauaufsichtsbehörde, Anhörung, Form."
+  - label: "III. Materielle Rechtmäßigkeit"
+    children:
+    - label: "1. Rechtswidrige Nutzung"
+      children:
+      - label: >-
+          a) Formelle Illegalität: Nutzung bedarf der Genehmigung und ist nicht genehmigt
+      - label: >-
+          b) Materielle Illegalität: Widerspruch zum öffentlichen Baurecht
+        hinweis: "Nicht stets erforderlich, aber für Verhältnismäßigkeit bedeutsam."
+    - label: "2. Kein Bestandsschutz"
+    - label: >-
+        3. Adressat: Eigentümer, Nutzer
+    - label: "4. Ermessen und Verhältnismäßigkeit"
+      hinweis: "Genehmigungsfähigkeit durch Bauantrag möglich?"
+faelle:
+- slug: sn-fall-bau-nutzungsuntersagung-wohnnutzung
+  title: "Wohnen in der Lagerhalle"
+  difficulty: 3
+  minutes: 50
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "§ 8 BauNVO"
+  facts: >-
+      E ist Eigentümer einer Lagerhalle in einem durch Bebauungsplan festgesetzten Gewerbegebiet in
+      Sachsen. Er baut zwei Räume zu Wohnungen um und vermietet sie ohne Baugenehmigung an Arbeiter
+      eines Subunternehmers, die dort dauerhaft wohnen. Die Wohnungen dienen weder einem
+      Betriebsinhaber noch einer Aufsichts- oder Bereitschaftsperson des Gewerbebetriebs. Die
+      Bauaufsichtsbehörde erfährt davon und untersagt E durch Verfügung die Nutzung der Räume zu
+      Wohnzwecken. E meint, die Bauaufsicht müsse zunächst prüfen, ob die Nutzung nicht doch
+      genehmigungsfähig sei; er habe die Räume sicher und ordentlich hergerichtet.
+  question: "Ist die Nutzungsuntersagung rechtmäßig?"
+  steps:
+  - prompt: >-
+        Welche Ermächtigungsgrundlage kommt in Betracht, und wann darf eine Nutzung untersagt werden?
+    erwartung: >-
+        Die SächsBO ermächtigt die Bauaufsichtsbehörde, rechtswidrige Nutzungen zu untersagen. Eine
+        Nutzungsuntersagung setzt eine formell rechtswidrige Nutzung voraus, regelmäßig bei fehlender
+        Genehmigung, bei der die Nutzung zudem nicht offensichtlich genehmigungsfähig ist.
+  - prompt: "Ist die Nutzung formell rechtswidrig?"
+    erwartung: >-
+        Ja. Die Umnutzung von Gewerberäumen zu Wohnungen ist eine genehmigungsbedürftige
+        Nutzungsänderung; eine Baugenehmigung liegt nicht vor.
+  - prompt: "Ist die Nutzung auch materiell rechtswidrig?"
+    erwartung: >-
+        Ja. Im Gewerbegebiet sind Wohnungen nach der BauNVO nur ausnahmsweise für Betriebsinhaber sowie
+        Aufsichts- und Bereitschaftspersonen zulässig (§ 8 BauNVO). Die Wohnnutzung durch Arbeiter eines
+        Subunternehmers erfüllt diesen Ausnahmetatbestand nicht. Die Nutzung ist daher auch nicht
+        genehmigungsfähig.
+  - prompt: "Ist die Maßnahme ermessensfehlerfrei und verhältnismäßig?"
+    erwartung: >-
+        Ja. Die Untersagung ist geeignet und erforderlich, um den rechtswidrigen Zustand zu beenden;
+        mildere Mittel scheiden angesichts der Nichtgenehmigungsfähigkeit aus. Dass die Räume ordentlich
+        hergerichtet sind, ist unerheblich. Bestandsschutz besteht nicht, da die Nutzung nie rechtmäßig
+        war. Die Nutzungsuntersagung ist rechtmäßig.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+          Formelle Illegalität: genehmigungsbedürftige Nutzungsänderung ohne Genehmigung
+      weight: 2.5
+      required: true
+      keywords:
+      - "Nutzungsänderung"
+      - "formelle Illegalität"
+      - "ohne Baugenehmigung"
+      - "genehmigungsbedürftig"
+      - "formell rechtswidrig"
+      card_slugs:
+      - "sn-bau-eingriff"
+      - "sn-bau-verfahren"
+    - id: p2
+      label: >-
+          Materielle Illegalität: Wohnnutzung im Gewerbegebiet nach § 8 BauNVO unzulässig
+      weight: 3.0
+      required: true
+      norms:
+      - "§ 8 BauNVO"
+      keywords:
+      - "§ 8 BauNVO"
+      - "Gewerbegebiet"
+      - "Betriebsinhaber"
+      - "Aufsichts- und Bereitschaftspersonen"
+      - "materielle Illegalität"
+      - "nicht genehmigungsfähig"
+      card_slugs:
+      - "sn-bau-eingriff"
+      - "sn-bau-verfahren"
+    - id: p3
+      label: "Ermessen und Verhältnismäßigkeit der Nutzungsuntersagung geprüft"
+      weight: 1.5
+      required: false
+      keywords:
+      - "Verhältnismäßigkeit"
+      - "Ermessen"
+      - "geeignet"
+      - "erforderlich"
+      - "mildere Mittel"
+      card_slugs:
+      - "sn-bau-eingriff"
+    - id: p4
+      label: "Kein Bestandsschutz für nie rechtmäßige Nutzung"
+      weight: 1.0
+      required: false
+      norms:
+      - "Art. 14 Abs. 1 GG"
+      keywords:
+      - "Bestandsschutz"
+      - "nie rechtmäßig"
+      - "passiver Bestandsschutz"
+      - "Art. 14 Abs. 1 GG"
+      card_slugs:
+      - "sn-bau-bestandsschutz"
+    normzitate_geprueft: false

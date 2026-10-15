@@ -6,16 +6,16 @@ kurs:
   examenskurs: false
   stand: 2026-09
   quellen:
-  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
   beschreibung: 'Leistungsstörungsrecht und allgemeines Schuldrecht: Unmöglichkeit, Verzug, Schadensersatz statt der Leistung, Rücktritt, vorvertragliche Pflichten, AGB-Kontrolle, Abtretung und Schadensrecht (§§ 249-254 BGB). Grundstock; es fehlen noch Verschulden/Zurechnung (§§ 276, 278), Erlöschen der Schuld und Verträge mit Drittbezug.'
   lernziele:
   - Das System der §§ 280 ff. BGB als Anspruchsgrundlagen-Baukasten beherrschen
-  - Unmoeglichkeit (§ 275 BGB) und ihre Rechtsfolgen (§§ 283, 326 BGB) pruefen
-  - Verzug und Ruecktritt in der Klausur sauber voneinander trennen
+  - Unmöglichkeit (§ 275 BGB) und ihre Rechtsfolgen (§§ 283, 326 BGB) prüfen
+  - Verzug und Rücktritt in der Klausur sauber voneinander trennen
   - AGB-Kontrolle als Einbettung in einen Vertragsfall anwenden
   klausurformat:
-    typ: Anfaengerklausur
+    typ: Anfängerklausur
     minuten: 120
   topic_slugs:
   - zr-schuldrecht-at-unmoeglichkeit

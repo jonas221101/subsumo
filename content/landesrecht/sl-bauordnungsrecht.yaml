@@ -1,0 +1,297 @@
+topic:
+  slug: sl-bauordnungsrecht
+  area: oeffentliches-recht
+  title: "Bauordnungsrecht Saarland"
+  parent: oeffentliches-recht
+  bundesland: SL
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sl-bau-verfahren
+  type: definition
+  front: >-
+      Welche Genehmigungsverfahren kennt die LBO Saar, und wie verhält sich das Bauordnungsrecht zum
+      Bauplanungsrecht?
+  back: >-
+      Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedarf nach der Landesbauordnung
+      des Saarlandes (LBO Saar) grundsätzlich der Baugenehmigung. Ausnahmen: verfahrensfreie Vorhaben
+      (kleine, unbedeutende Anlagen, die ein Katalog der LBO Saar aufzählt), die
+      Genehmigungsfreistellung für bestimmte Wohnbauvorhaben im Geltungsbereich qualifizierter
+      Bebauungspläne (gegen vorherige Anzeige; die Gemeinde kann ein Genehmigungsverfahren verlangen)
+      sowie das vereinfachte Verfahren mit eingeschränktem Prüfumfang für die meisten Gebäude und das
+      umfassende Verfahren für Sonderbauten. Verfahrensfreiheit bedeutet nicht materielle Freiheit:
+      Die materiellen Anforderungen des Bauplanungs- und Bauordnungsrechts sind einzuhalten, die
+      Bauaufsicht kann bei Verstößen einschreiten. Das Bauplanungsrecht (§§ 29 ff. BauGB) regelt als
+      Bundesrecht die bodenrechtliche Zulässigkeit, das Bauordnungsrecht als Landesrecht
+      Gefahrenabwehr, Gestaltung und Verfahren.
+  norms:
+  - >-
+      Vorschriften der LBO Saar zu Genehmigungspflicht und Verfahren (Paragraphen hier nicht
+      angegeben)
+  - "§ 29 BauGB"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sl-bau-anspruch
+  type: norm
+  front: >-
+      Hat der Bauherr einen Anspruch auf die Baugenehmigung, und wie wird er durchgesetzt?
+  back: >-
+      Die Baugenehmigung ist eine gebundene Entscheidung: Sie ist zu erteilen, wenn dem Vorhaben keine
+      öffentlich-rechtlichen Vorschriften entgegenstehen, die im Genehmigungsverfahren zu prüfen sind
+      (Art. 14 Abs. 1 GG schützt die in der Eigentumsgarantie liegende Baufreiheit im Rahmen der
+      Gesetze). Der Prüfumfang hängt vom Verfahren ab; im vereinfachten Verfahren prüft die
+      Bauaufsichtsbehörde das Bauplanungsrecht, bestimmte Teile der LBO Saar und sonstiges
+      öffentliches Recht. Das Bauplanungsrecht folgt aus §§ 30, 34, 35 BauGB je nach Gebietslage
+      (beplanter Bereich, Innenbereich, Außenbereich); wo die Gemeinde nicht selbst
+      Genehmigungsbehörde ist, ist ihr Einvernehmen nach § 36 BauGB erforderlich. Die Genehmigung
+      ergeht unbeschadet privater Rechte Dritter. Rechtsschutz: Verpflichtungsklage nach § 42 Abs. 1
+      Var. 2 VwGO, nach erfolglosem Antrag bzw. nach Versagung; mit Bauvorbescheid lassen sich
+      einzelne Fragen vorab klären.
+  norms:
+  - "Art. 14 Abs. 1 GG"
+  - "§ 36 BauGB"
+  - "§ 42 Abs. 1 VwGO"
+  - >-
+      Vorschriften der LBO Saar zur Baugenehmigung (Paragraphen hier nicht angegeben)
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sl-bau-abstandsflaechen
+  type: norm
+  front: "Was regeln die Abstandsflächen, und sind sie nachbarschützend?"
+  back: >-
+      Vor den Außenwänden oberirdischer Gebäude sind Flächen von Gebäuden und baulichen Anlagen
+      freizuhalten (Abstandsflächen). Ihre Tiefe bemisst sich nach der Wandhöhe H multipliziert mit
+      einem landesrechtlichen Faktor; als Regelwert des Musterbauordnungsrechts gilt 0,4 H mit einer
+      Mindesttiefe von meist 3 m, die Zahlen sind in der LBO Saar nachzuschlagen. Die Abstandsflächen
+      müssen grundsätzlich auf dem Baugrundstück selbst liegen und dürfen sich nicht überdecken.
+      Zwecke sind ausreichende Belichtung, Belüftung, Brandschutz und Wahrung des Wohnfriedens. Das
+      Abstandsflächenrecht ist nachbarschützend, soweit seine Zwecke dem Nachbarn dienen; der Nachbar
+      kann seine Verletzung daher rügen. An der Grenze darf gebaut werden, wenn das Planungsrecht
+      Grenzbebauung vorschreibt oder zulässt (geschlossene Bauweise, § 22 BauNVO). Abweichungen sind
+      möglich, wenn der Schutzzweck gewahrt bleibt und nachbarliche Interessen angemessen
+      berücksichtigt werden.
+  norms:
+  - "§ 7 LBO Saar"
+  - "§ 22 BauNVO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sl-bau-nachbarschutz
+  type: streitstand
+  front: >-
+      Unter welchen Voraussetzungen kann ein Nachbar eine Baugenehmigung erfolgreich angreifen, und
+      welche Rolle spielt § 212a BauGB?
+  back: >-
+      Die Drittanfechtung hat nur Erfolg, wenn die Genehmigung rechtswidrig ist und gerade gegen eine
+      nachbarschützende Norm verstößt (Schutznormtheorie, § 113 Abs. 1 S. 1 VwGO). Nachbarschützend
+      sind insbesondere das Abstandsflächenrecht, die Festsetzungen zur Art der baulichen Nutzung
+      (Gebietserhaltungsanspruch) und das Gebot der Rücksichtnahme, das über § 15 Abs. 1 S. 2 BauNVO,
+      § 34 Abs. 1 BauGB (Einfügen) oder § 35 Abs. 3 BauGB wirkt. Widerspruch und Anfechtungsklage des
+      Nachbarn haben nach § 212a Abs. 1 BauGB keine aufschiebende Wirkung; der Bauherr darf auf
+      Grundlage der Genehmigung bauen. Vorläufiger Rechtsschutz: Antrag auf Anordnung der
+      aufschiebenden Wirkung nach § 80a Abs. 3 i. V. m. § 80 Abs. 5 VwGO. Streitig ist, ob schon die
+      formelle Rechtswidrigkeit wegen unterbliebener Nachbarbeteiligung allein zum Erfolg führt; nach
+      h. M. kommt es auf eine materielle Verletzung subjektiv-öffentlicher Nachbarrechte an.
+  norms:
+  - "§ 212a Abs. 1 BauGB"
+  - "§ 80a Abs. 3 VwGO"
+  - "§ 80 Abs. 5 VwGO"
+  - "§ 15 Abs. 1 S. 2 BauNVO"
+  - "§ 113 Abs. 1 S. 1 VwGO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sl-bau-eingriff
+  type: definition
+  front: >-
+      Welche bauaufsichtlichen Eingriffsmaßnahmen gibt es, und wann dürfen sie ergehen?
+  back: >-
+      Die Bauaufsichtsbehörde überwacht die Einhaltung des öffentlichen Baurechts und kann nach der
+      LBO Saar einschreiten. Baueinstellung: Stilllegung einer Baustelle, die rechtswidrig begonnen
+      wurde; sie setzt formelle Illegalität (fehlende Genehmigung) oder sonstigen Verstoß voraus und
+      dient der Sicherung. Nutzungsuntersagung: Verbot einer rechtswidrigen Nutzung, regelmäßig bei
+      formeller Illegalität, wenn die Nutzung nicht ohne Weiteres genehmigungsfähig ist.
+      Beseitigungsanordnung: die schärfste Maßnahme; sie setzt grundsätzlich formelle und materielle
+      Illegalität voraus, weil eine Beseitigung bei materiell legalem Vorhaben unverhältnismäßig wäre.
+      Alle Maßnahmen stehen im Ermessen der Behörde und müssen verhältnismäßig sein; Adressaten sind
+      Bauherr, Eigentümer oder Nutzer. Ein Anspruch des Nachbarn auf Einschreiten besteht nur
+      ausnahmsweise bei Verletzung nachbarschützender Vorschriften und Ermessensreduktion auf Null.
+  norms:
+  - >-
+      Eingriffsbefugnisse der Bauaufsicht nach der LBO Saar (Paragraphen hier nicht angegeben)
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sl-bau-abweichung
+  type: definition
+  front: >-
+      Wie unterscheiden sich Abweichung (Bauordnungsrecht) und Ausnahme bzw. Befreiung
+      (Bauplanungsrecht)?
+  back: >-
+      Im Bauordnungsrecht kann die Bauaufsichtsbehörde Abweichungen von Anforderungen der LBO Saar
+      zulassen, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der
+      öffentlich-rechtlich geschützten nachbarlichen Belange mit den öffentlichen Belangen vereinbar
+      sind; die Voraussetzungen im Einzelnen regelt das Landesrecht. Im Bauplanungsrecht lässt § 31
+      Abs. 1 BauGB Ausnahmen zu, soweit der Bebauungsplan sie vorsieht. Nach § 31 Abs. 2 BauGB ist
+      eine Befreiung von Festsetzungen möglich, wenn die Grundzüge der Planung nicht berührt werden
+      und einer der Befreiungsgründe (Allgemeinwohl, städtebauliche Vertretbarkeit, offenbar nicht
+      beabsichtigte Härte) vorliegt; die Abweichung muss zudem mit den öffentlichen Belangen vereinbar
+      sein und nachbarliche Interessen würdigen. Wird von nachbarschützenden Festsetzungen befreit,
+      hat der Nachbar einen Anspruch auf Würdigung seiner Belange.
+  norms:
+  - "§ 31 Abs. 1 BauGB"
+  - "§ 31 Abs. 2 BauGB"
+  - "Abweichungsvorschrift der LBO Saar (Paragraph hier nicht angegeben)"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sl-bau-bestandsschutz
+  type: definition
+  front: "Was schützt der Bestandsschutz, und wo liegen seine Grenzen?"
+  back: >-
+      Passiver Bestandsschutz folgt aus Art. 14 Abs. 1 GG: Eine bauliche Anlage, die zu irgendeinem
+      Zeitpunkt rechtmäßig genehmigt oder materiell legal errichtet wurde, darf in ihrem genehmigten
+      Bestand und ihrer Nutzung erhalten bleiben, auch wenn sich später die Rechtslage geändert hat;
+      bauaufsichtliche Eingriffe wie Beseitigungsanordnung oder Nutzungsuntersagung scheiden aus,
+      solange die Voraussetzungen fortbestehen. Der Schutz erlischt, wenn die Anlage zerstört, ihre
+      Substanz in wesentlichem Umfang erneuert oder die Nutzung aufgegeben wird; die Identität der
+      Anlage muss gewahrt sein. Einen aktiven Bestandsschutz, also einen unmittelbar aus Art. 14 GG
+      abgeleiteten Anspruch auf Erweiterung oder Änderung, erkennt das Bundesverwaltungsgericht nicht
+      mehr an. Bei Gefahren für Leben und Gesundheit lassen die Bauordnungen Anpassungsverlangen zu;
+      die Voraussetzungen sind nach der geltenden Fassung zu prüfen.
+  norms:
+  - "Art. 14 Abs. 1 GG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: sl-schema-bau-baueinstellung
+  title: "Baueinstellung als bauaufsichtliche Maßnahme (LBO Saar)"
+  norms:
+  - >-
+      Eingriffsbefugnisse der Bauaufsicht nach der LBO Saar (Paragraphen hier nicht angegeben)
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  steps:
+  - label: "I. Ermächtigungsgrundlage in der LBO Saar"
+  - label: "II. Formelle Rechtmäßigkeit"
+    hinweis: "Zuständigkeit, Anhörung, Form; Sofortvollzug beachten."
+  - label: "III. Materielle Rechtmäßigkeit"
+    children:
+    - label: >-
+        1. Baumaßnahme ohne erforderliche Genehmigung oder in Abweichung davon (formelle Illegalität)
+      hinweis: >-
+          Für die Baueinstellung genügt formelle Illegalität; materielle Rechtmäßigkeit entlastet nicht.
+    - label: >-
+        2. Adressat: Bauherr, Unternehmer, Bauleiter
+    - label: "3. Ermessen und Verhältnismäßigkeit"
+      hinweis: "Baueinstellung als vorläufige Sicherungsmaßnahme."
+  - label: "IV. Vollstreckung und vorläufiger Rechtsschutz"
+    hinweis: "Anordnung der sofortigen Vollziehung, § 80 Abs. 2 S. 1 Nr. 4 VwGO."
+faelle:
+- slug: sl-fall-bau-baueinstellung
+  title: "Baubeginn ohne Genehmigung"
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "§ 80 Abs. 2 S. 1 Nr. 4 VwGO"
+  facts: >-
+      B beginnt in einer saarländischen Gemeinde mit dem Neubau eines Einfamilienhauses, ohne eine
+      Baugenehmigung beantragt zu haben. Das Grundstück liegt in einem Wohngebiet, für das ein
+      Bebauungsplan besteht; das Vorhaben würde nach Einschätzung der Bauaufsichtsbehörde den
+      Festsetzungen des Plans entsprechen und wäre genehmigungsfähig. Das Haus ist nicht
+      verfahrensfrei. Die Bauaufsichtsbehörde ordnet nach Anhörung die Einstellung der Bauarbeiten an
+      und ordnet die sofortige Vollziehung an. B hält die Anordnung für rechtswidrig, weil sein
+      Vorhaben ohnehin genehmigungsfähig sei.
+  question: "Ist die Baueinstellung rechtmäßig?"
+  steps:
+  - prompt: >-
+        Welche Ermächtigungsgrundlage kommt in Betracht, und welche Art von Rechtswidrigkeit genügt?
+    erwartung: >-
+        Die LBO Saar ermächtigt die Bauaufsichtsbehörde, die Einstellung von Bauarbeiten anzuordnen, die
+        ohne die erforderliche Genehmigung ausgeführt werden. Für die Baueinstellung genügt die formelle
+        Illegalität.
+  - prompt: "Liegt formelle Illegalität vor?"
+    erwartung: >-
+        Ja. Ein Einfamilienhaus ist genehmigungsbedürftig und nicht verfahrensfrei; B hat keine
+        Baugenehmigung beantragt oder erhalten.
+  - prompt: "Ist die materielle Genehmigungsfähigkeit relevant?"
+    erwartung: >-
+        Nein. Die Baueinstellung sichert das bauaufsichtliche Genehmigungsverfahren und vermeidet
+        vollendete Tatsachen; sie setzt keine materielle Illegalität voraus. Dass das Vorhaben
+        genehmigungsfähig wäre, ändert an der Rechtmäßigkeit nichts, B kann einen Bauantrag stellen.
+  - prompt: "Ist die Maßnahme ermessensfehlerfrei und verhältnismäßig?"
+    erwartung: >-
+        Ja. Die Baueinstellung ist ein vorläufiges, mildes Mittel gegenüber Nutzungsuntersagung oder
+        Beseitigung und geeignet, das Genehmigungsverfahren zu sichern. Die sofortige Vollziehung ist
+        wegen des öffentlichen Interesses an der Einhaltung des Genehmigungsvorbehalts gerechtfertigt (§
+        80 Abs. 2 S. 1 Nr. 4 VwGO). Die Baueinstellung ist rechtmäßig.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+          Baueinstellung bei formeller Illegalität: Genehmigungsbedürftigkeit und fehlende Genehmigung
+      weight: 3.0
+      required: true
+      keywords:
+      - "Baueinstellung"
+      - "formelle Illegalität"
+      - "ohne Baugenehmigung"
+      - "genehmigungsbedürftig"
+      - "nicht verfahrensfrei"
+      card_slugs:
+      - "sl-bau-eingriff"
+      - "sl-bau-verfahren"
+    - id: p2
+      label: >-
+          Materielle Genehmigungsfähigkeit ist für die Baueinstellung unerheblich
+      weight: 2.5
+      required: true
+      keywords:
+      - "materielle Genehmigungsfähigkeit unerheblich"
+      - "Sicherung des Genehmigungsverfahrens"
+      - "vollendete Tatsachen"
+      - "Genehmigungsvorbehalt"
+      card_slugs:
+      - "sl-bau-eingriff"
+    - id: p3
+      label: "Ermessen und Verhältnismäßigkeit; Baueinstellung als mildes Mittel"
+      weight: 1.5
+      required: false
+      keywords:
+      - "Verhältnismäßigkeit"
+      - "Ermessen"
+      - "mildes Mittel"
+      - "vorläufige Maßnahme"
+      - "geeignet"
+      card_slugs:
+      - "sl-bau-eingriff"
+    - id: p4
+      label: "Anordnung der sofortigen Vollziehung nach § 80 Abs. 2 S. 1 Nr. 4 VwGO"
+      weight: 1.0
+      required: false
+      norms:
+      - "§ 80 Abs. 2 S. 1 Nr. 4 VwGO"
+      keywords:
+      - "sofortige Vollziehung"
+      - "§ 80 Abs. 2 S. 1 Nr. 4 VwGO"
+      - "öffentliches Interesse an der sofortigen Vollziehung"
+      card_slugs:
+      - "sl-bau-eingriff"
+    normzitate_geprueft: false

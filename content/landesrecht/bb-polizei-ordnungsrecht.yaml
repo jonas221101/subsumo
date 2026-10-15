@@ -5,7 +5,7 @@ topic:
   parent: or-sicherheitsrecht-generalklausel-standardmassnahmen
   bundesland: BB
   relevance: 4
-  stand: 2026-09
+  stand: 2026-10
   redaktion:
     erzeugt_von: claude-code (Redaktionsentwurf)
     status: in-pruefung
@@ -88,3 +88,325 @@ cards:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
+- slug: bb-por-gefahr
+  type: definition
+  front: >-
+      Welche Gefahrbegriffe sind im Gefahrenabwehrrecht in Brandenburg zu unterscheiden?
+  back: >-
+      Gefahr ist eine Sachlage, die bei ungehindertem Geschehensablauf mit hinreichender
+      Wahrscheinlichkeit in absehbarer Zeit zu einem Schaden für ein polizeiliches Schutzgut führt;
+      maßgeblich ist die Prognose ex ante aus Sicht eines besonnenen Amtswalters. Konkrete Gefahr: im
+      Einzelfall drohend, sie trägt Einzelmaßnahmen (Generalklausel, Standardmaßnahmen). Abstrakte
+      Gefahr: nach allgemeiner Lebenserfahrung typischerweise drohend, sie trägt nur den Erlass einer
+      ordnungsbehördliche Verordnung (BbgOBG). Qualifizierte Gefahren erhöhen die Anforderungen:
+      erhebliche Gefahr (bedeutendes Rechtsgut), gegenwärtige Gefahr (Schadenseintritt hat begonnen
+      oder steht unmittelbar bevor), Gefahr im Verzug (Abwarten würde den Erfolg der Maßnahme
+      gefährden). Vom Gefahrenverdacht spricht man, wenn unklar ist, ob ein Schaden droht; hier kommt
+      nur ein Gefahrerforschungseingriff in Betracht. Welche Qualifikation eine Standardmaßnahme
+      verlangt, ergibt sich aus ihrem Tatbestand.
+  norms:
+  - "§ 10 Abs. 1 BbgPolG"
+  - "§ 13 Abs. 1 BbgOBG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: bb-por-anschein
+  type: streitstand
+  front: >-
+      Anscheinsgefahr, Gefahrenverdacht und Putativgefahr: Wie sind sie abzugrenzen und welche
+      Rechtsfolgen hat eine Fehlprognose?
+  back: >-
+      Anscheinsgefahr: Bei Erlass der Maßnahme sprach aus Sicht eines besonnenen Amtswalters ex ante
+      alles für einen drohenden Schaden, tatsächlich bestand keine Gefahr. Nach h. M. liegt eine
+      Gefahr im Rechtssinn vor, die Maßnahme ist rechtmäßig (Prognoseentscheidung). Gefahrenverdacht:
+      Die Tatsachenlage ist unklar; zulässig ist grundsätzlich nur eine vorläufige, der Aufklärung
+      dienende Maßnahme. Putativgefahr: Der Amtswalter nimmt ohne objektiv tragfähigen Anschein eine
+      Gefahr an; die Maßnahme ist rechtswidrig. Streitig sind die Folgefragen beim Anscheinsstörer:
+      Nach h. M. wird dem zu Unrecht Herangezogenen, der den Anschein nicht zurechenbar gesetzt hat,
+      ein Ausgleich entsprechend dem Nichtstörer zugestanden und er wird nicht mit Kosten belastet;
+      wer den Anschein zurechenbar veranlasst hat (etwa Fehlalarm durch Fahrlässigkeit), trägt die
+      Kosten. Anderer Ansatz: Die Rechtmäßigkeit der Maßnahme schließe jeden Ausgleich aus.
+  norms:
+  - "§ 10 Abs. 1 BbgPolG"
+  - "§ 13 Abs. 1 BbgOBG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: bb-por-standard
+  type: norm
+  front: >-
+      Welche Standardmaßnahmen kennt das Gefahrenabwehrrecht in Brandenburg und wie verhalten sie sich
+      zur Generalklausel?
+  back: >-
+      Standardmaßnahmen sind typisierte Eingriffsbefugnisse mit eigenem Tatbestand: Befragung und
+      Auskunftspflicht, Vorladung, Identitätsfeststellung, Platzverweisung und Aufenthaltsverbot,
+      Gewahrsam, Durchsuchung von Personen und Sachen, Betreten und Durchsuchen von Wohnungen sowie
+      Sicherstellung und Beschlagnahme. Sie sind im BbgPolG geregelt; ob und wie die Befugnisse auch
+      den Ordnungs- bzw. Polizeibehörden zustehen, ist anhand der geltenden Fassung zu prüfen. Sie
+      gehen der Generalklausel als speziellere Normen vor; ist ihr Tatbestand nicht erfüllt, darf
+      nicht ohne Weiteres auf die Generalklausel ausgewichen werden, soweit die Standardmaßnahme die
+      Materie abschließend regelt. Verfassungsrechtliche Vorgaben sind zu beachten: Gewahrsam verlangt
+      eine richterliche Entscheidung (Art. 104 Abs. 2 GG), die Durchsuchung von Wohnungen
+      grundsätzlich eine richterliche Anordnung (Art. 13 Abs. 2 GG), ihr Betreten zur Gefahrenabwehr
+      ist an Art. 13 Abs. 7 GG zu messen.
+  norms:
+  - "Standardbefugnisse des BbgPolG (Paragraphen hier nicht angegeben)"
+  - "Art. 104 Abs. 2 GG"
+  - "Art. 13 Abs. 2 GG"
+  - "Art. 13 Abs. 7 GG"
+  - "§ 10 Abs. 1 BbgPolG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: bb-por-stoererauswahl
+  type: streitstand
+  front: >-
+      Wie wählt die Behörde zwischen mehreren Verantwortlichen aus, und wie wird der Zweckveranlasser
+      behandelt?
+  back: >-
+      Gibt es mehrere Störer, wählt die Behörde nach pflichtgemäßem Ermessen aus. Leitlinie ist die
+      effektive, schnelle und sichere Gefahrenabwehr; eine feste Rangfolge zwischen Verhaltens- und
+      Zustandsstörer besteht nicht. Zu berücksichtigen sind Nähe zur Gefahr, Leistungsfähigkeit,
+      Verursachungsbeitrag und Gleichbehandlung. Nichtstörer dürfen dagegen nur im polizeilichen
+      Notstand herangezogen werden. Streitig ist die Reichweite der Verhaltensverantwortlichkeit: Nach
+      der Theorie der unmittelbaren Verursachung ist nur verantwortlich, wer selbst die Gefahrengrenze
+      überschreitet. Die Rechtsprechung und Teile des Schrifttums erweitern dies auf den
+      Zweckveranlasser, der die unmittelbare Verursachung durch einen Dritten bezweckt oder sie als
+      zwangsläufige Folge seines Tuns herbeiführt. Die Gegenansicht lehnt die Figur ab, weil sie die
+      Unmittelbarkeit auflöse und die Verantwortlichkeit nicht gesetzlich gedeckt sei.
+  norms:
+  - "§ 5 BbgPolG"
+  - "§ 6 BbgPolG"
+  - "§ 7 BbgPolG"
+  - "§ 16 BbgOBG"
+  - "§ 17 BbgOBG"
+  - "§ 18 BbgOBG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: bb-por-zwang
+  type: definition
+  front: >-
+      Wie läuft die Vollstreckung einer Gefahrenabwehrverfügung in Brandenburg ab, und was gilt beim
+      Sofortvollzug?
+  back: >-
+      Regelfall ist das gestreckte Verfahren: wirksame und vollstreckbare Grundverfügung (unanfechtbar
+      oder sofort vollziehbar, § 80 Abs. 2 VwGO), Androhung des Zwangsmittels mit angemessener Frist,
+      Festsetzung, Anwendung. Zwangsmittel sind Ersatzvornahme, Zwangsgeld und als letztes Mittel
+      unmittelbarer Zwang; sie müssen verhältnismäßig sein. Das Verwaltungsvollstreckungsgesetz für
+      das Land Brandenburg (VwVGBbg) regelt die Zwangsmittel; für den Polizeivollzug sehen BbgPolG und
+      die Vollzugsregeln zusätzlich Vorschriften zum unmittelbaren Zwang vor. Bei gegenwärtiger Gefahr
+      kann die Behörde im Sofortvollzug (unmittelbare Ausführung) ohne vorausgehenden Verwaltungsakt
+      handeln, wenn die Maßnahme zur Abwehr der Gefahr notwendig ist und die Verantwortlichen nicht
+      rechtzeitig herangezogen werden können. Typische Klausurkonstellation ist das Abschleppen eines
+      Fahrzeugs; geprüft wird dann, ob die Grundverfügung, etwa ein Verkehrszeichen, wirksam war, ob
+      Androhung und Festsetzung entbehrlich waren und ob das Zwangsmittel verhältnismäßig war.
+  norms:
+  - "Verwaltungsvollstreckungsgesetz für das Land Brandenburg (VwVGBbg)"
+  - "§ 80 Abs. 2 S. 1 Nr. 2 VwGO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: bb-por-kosten
+  type: norm
+  front: >-
+      Wer trägt die Kosten von Ersatzvornahme, unmittelbarer Ausführung und Zwang, und wo liegen die
+      Grenzen der Kostenhaftung?
+  back: >-
+      Die Kosten einer Ersatzvornahme, des unmittelbaren Zwangs oder einer unmittelbaren Ausführung
+      trägt grundsätzlich der Pflichtige bzw. der für die Gefahr Verantwortliche; sie werden durch
+      Kostenbescheid (Leistungsbescheid) geltend gemacht und nach den Vorschriften der
+      Verwaltungsvollstreckung beigetrieben. Bei Sofortvollzug ohne Grundverfügung prüft die
+      Kostenentscheidung inzident, ob die Maßnahme rechtmäßig gewesen wäre, insbesondere ob eine
+      Gefahr vorlag, der Kostenschuldner Störer war und die Maßnahme verhältnismäßig war. Für den
+      Zustandsstörer ist die Kostenhaftung nach der Rechtsprechung des Bundesverfassungsgerichts aus
+      Art. 14 GG begrenzt; sie darf nach Zumutbarkeit insbesondere den Wert des Grundstücks nach
+      Sanierung nicht übersteigen, wenn die Gefahr nicht dem Risikobereich des Eigentümers zuzurechnen
+      ist. Der Nichtstörer wird nicht mit Kosten belastet; ihm steht bei Inanspruchnahme ein
+      Entschädigungsanspruch zu.
+  norms:
+  - "Art. 14 Abs. 1 GG"
+  - "Art. 14 Abs. 2 GG"
+  - "Verwaltungsvollstreckungsgesetz für das Land Brandenburg (VwVGBbg)"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "BVerfGE 102, 1 (Altlasten, Zustandsverantwortlichkeit)"
+  stand: 2026-10
+- slug: bb-por-doppel
+  type: streitstand
+  front: >-
+      Was gilt bei doppelfunktionalen Maßnahmen der Polizei (Gefahrenabwehr und Strafverfolgung)?
+  back: >-
+      Verfolgt eine polizeiliche Maßnahme zugleich präventive und repressive Zwecke, sind
+      Rechtsgrundlage und Rechtsweg abhängig von ihrem Schwerpunkt. Nach h. M. und der Rechtsprechung
+      entscheidet der erkennbare Schwerpunkt, der sich aus dem Anlass, dem Zweck und dem
+      Gesamteindruck der Maßnahme ergibt. Überwiegt die Gefahrenabwehr, ist die Befugnis im BbgPolG
+      bzw. im Ordnungsrecht zu suchen und der Verwaltungsrechtsweg eröffnet (§ 40 Abs. 1 VwGO).
+      Überwiegt die Strafverfolgung, gilt die StPO; der Rechtsschutz richtet sich dann nach § 98 Abs.
+      2 S. 2 StPO analog bzw. nach den §§ 23 ff. EGGVG. Lassen sich die Zwecke nicht gewichten, werden
+      teilweise beide Regelungskomplexe nebeneinander angewendet oder dem Betroffenen ein Wahlrecht
+      zugestanden. Die Klausur verlangt deshalb stets eine ausdrückliche Zuordnung des Handelns, bevor
+      die Ermächtigungsgrundlage geprüft wird.
+  norms:
+  - "§ 40 Abs. 1 VwGO"
+  - "§ 98 Abs. 2 StPO"
+  - "§ 23 EGGVG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: bb-schema-por-standardmassnahme
+  title: "Rechtmäßigkeit einer Standardmaßnahme nach BbgPolG und BbgOBG"
+  norms:
+  - "§ 10 Abs. 1 BbgPolG"
+  - "§ 13 Abs. 1 BbgOBG"
+  - "§ 80 Abs. 2 VwGO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  steps:
+  - label: "I. Ermächtigungsgrundlage"
+    hinweis: >-
+        Standardmaßnahme vor Generalklausel (Spezialität); Generalklausel nur, wenn kein
+        Standardtatbestand passt.
+  - label: "II. Formelle Rechtmäßigkeit"
+    children:
+    - label: >-
+        1. Zuständigkeit: Ordnungsbehörde (BbgOBG) oder Polizei (BbgPolG) im Eilfall
+      hinweis: "Eilzuständigkeit der Polizei begründen, nicht bloß behaupten."
+    - label: >-
+        2. Verfahren: Anhörung, Ausnahme bei Gefahr im Verzug
+    - label: >-
+        3. Form: mündlicher Verwaltungsakt genügt, Begründung auf Verlangen
+  - label: "III. Materielle Rechtmäßigkeit"
+    children:
+    - label: "1. Tatbestand der Standardmaßnahme"
+      hinweis: >-
+          Qualifizierte Gefahr (erheblich/gegenwärtig) nur, wenn der Tatbestand sie verlangt.
+    - label: "2. Konkrete Gefahr für ein Schutzgut, Prognose ex ante"
+    - label: >-
+        3. Richtiger Adressat: Verhaltens-, Zustands-, ausnahmsweise Nichtstörer
+      hinweis: "Störerauswahl mit Ermessen begründen."
+    - label: >-
+        4. Ermessen und Verhältnismäßigkeit: geeignet, erforderlich, angemessen
+  - label: "IV. Vollstreckung, falls Zwang angewendet wurde"
+    hinweis: "Gestrecktes Verfahren oder Sofortvollzug; Androhung nicht vergessen."
+faelle:
+- slug: bb-fall-por-platzverweis
+  title: "Der Gaffer an der Unfallstelle"
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "Art. 104 Abs. 2 GG"
+  facts: >-
+      Auf einer Landstraße im Landkreis Barnim kommt es zu einem schweren Verkehrsunfall.
+      Polizeibeamte sperren die Unfallstelle ab, Rettungskräfte versorgen Schwerverletzte. G steht mit
+      seinem Smartphone zwei Meter neben dem Rettungswagen und filmt; er versperrt dadurch den Weg,
+      auf dem der Notarzt eine Trage zum Wagen bringen muss. Polizeikommissar P fordert G mündlich
+      auf, sich sofort hinter die Absperrung, 50 Meter entfernt, zu begeben. G weigert sich mit der
+      Begründung, er sei Pressevertreter und dürfe filmen. G ist tatsächlich nicht Journalist.
+  question: >-
+      Ist die Aufforderung des P an G rechtmäßig? Auf Vollstreckungsfragen ist nicht einzugehen.
+  steps:
+  - prompt: >-
+        Auf welche Ermächtigungsgrundlage kann P die Aufforderung stützen und in welchem Verhältnis
+        steht sie zur Generalklausel?
+    erwartung: >-
+        Die Aufforderung ist eine Platzverweisung, also eine Standardmaßnahme des Polizeirechts. Sie
+        geht als speziellere Norm der Generalklausel (§ 10 Abs. 1 BbgPolG) vor, die deshalb nicht zu
+        prüfen ist.
+  - prompt: "War die Polizei zuständig?"
+    erwartung: >-
+        Ja. Für die allgemeine Gefahrenabwehr sind primär die Ordnungsbehörden zuständig; die Polizei
+        wird aber bei Eilbedürftigkeit tätig (§ 1 Abs. 1 BbgPolG). Bei einem laufenden Rettungseinsatz
+        können Ordnungsbehörden nicht rechtzeitig handeln, die Eilzuständigkeit der Polizei liegt vor.
+  - prompt: "Liegt eine Gefahr vor, und wer ist richtiger Adressat?"
+    erwartung: >-
+        Es besteht eine konkrete, gegenwärtige Gefahr für Leben und Gesundheit der Verletzten, weil G
+        die Rettungskräfte behindert. G ist Verhaltensstörer, da er die Behinderung unmittelbar selbst
+        verursacht (Theorie der unmittelbaren Verursachung).
+  - prompt: "Ist die Maßnahme verhältnismäßig?"
+    erwartung: >-
+        Ja. Der Platzverweis ist geeignet und erforderlich, weil kein milderes gleich wirksames Mittel
+        ersichtlich ist (G ließ sich nicht umstimmen). Er ist angemessen, da das Interesse an der
+        Rettung von Leben und Gesundheit das Interesse des G am Filmen überwiegt. Eine Berufung auf die
+        Pressefreiheit scheitert, weil G nicht Journalist ist; selbst bei einem Journalisten dürfen
+        Rettungseinsätze nicht behindert werden.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+          Platzverweisung als Standardmaßnahme mit Vorrang vor der Generalklausel erkannt
+      weight: 2.5
+      required: true
+      norms:
+      - "§ 10 Abs. 1 BbgPolG"
+      keywords:
+      - "Platzverweisung"
+      - "Platzverweis"
+      - "Standardmaßnahme"
+      - "Vorrang vor der Generalklausel"
+      - "Spezialität"
+      card_slugs:
+      - "bb-por-standard"
+      - "bb-por-generalklausel"
+    - id: p2
+      label: "Eilzuständigkeit der Polizei begründet"
+      weight: 1.5
+      required: false
+      norms:
+      - "§ 1 Abs. 1 BbgPolG"
+      keywords:
+      - "Eilzuständigkeit"
+      - "Eilbedürftigkeit"
+      - "Polizei bei Eilbedürftigkeit"
+      - "Ordnungsbehörde nicht rechtzeitig"
+      card_slugs:
+      - "bb-por-zustaendigkeit"
+    - id: p3
+      label: "Konkrete gegenwärtige Gefahr für Leben und Gesundheit bejaht"
+      weight: 2.0
+      required: true
+      keywords:
+      - "Gefahr für Leben und Gesundheit"
+      - "gegenwärtige Gefahr"
+      - "konkrete Gefahr"
+      - "Behinderung der Rettungskräfte"
+      - "Prognose ex ante"
+      card_slugs:
+      - "bb-por-gefahr"
+    - id: p4
+      label: "G als Verhaltensstörer eingeordnet (unmittelbare Verursachung)"
+      weight: 2.0
+      required: false
+      norms:
+      - "§ 5 BbgPolG"
+      keywords:
+      - "Verhaltensstörer"
+      - "unmittelbare Verursachung"
+      - "Theorie der unmittelbaren Verursachung"
+      - "§ 5 BbgPolG"
+      card_slugs:
+      - "bb-por-stoerer"
+    - id: p5
+      label: "Verhältnismäßigkeit geprüft und bejaht"
+      weight: 1.5
+      required: false
+      keywords:
+      - "Verhältnismäßigkeit"
+      - "geeignet"
+      - "erforderlich"
+      - "angemessen"
+      - "mildere Mittel"
+      card_slugs:
+      - "bb-por-stoererauswahl"
+    normzitate_geprueft: false

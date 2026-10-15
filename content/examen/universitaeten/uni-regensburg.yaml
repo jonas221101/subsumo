@@ -1,19 +1,19 @@
 universitaet:
   slug: uni-regensburg
-  name: Universitaet Regensburg
+  name: Universität Regensburg
   kurzname: Uni Regensburg
   stadt: Regensburg
   bundesland: BY
   traegerschaft: staatlich
   stand: 2026-09
   quellen:
-  - Studien- und Pruefungsordnungen der Fakultaet (Studienverlaufsplan)
+  - Studien- und Prüfungsordnungen der Fakultät (Studienverlaufsplan)
   - Eigenformulierung Redaktion
   redaktion:
     erzeugt_von: claude-code (Redaktionsentwurf)
     status: in-pruefung
     hinweis: Kursliste = kanonischer Standard-Studienverlaufsplan (docs/32 Abschnitt 3.3). Lokale Modulnamen
-      und Semesterlage sind nicht verifiziert - ueber die Fachschafts-Beta (docs/28) einholen und als
+      und Semesterlage sind nicht verifiziert - über die Fachschafts-Beta (docs/28) einholen und als
       'titel_lokal'/'semester' nachtragen.
   besonderheiten: []
   kurse:

@@ -5,7 +5,7 @@ topic:
   parent: or-sicherheitsrecht-generalklausel-standardmassnahmen
   bundesland: SL
   relevance: 4
-  stand: 2026-09
+  stand: 2026-10
   redaktion:
     erzeugt_von: claude-code (Redaktionsentwurf)
     status: in-pruefung
@@ -83,3 +83,301 @@ cards:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
+- slug: sl-por-gefahr
+  type: definition
+  front: >-
+      Welche Gefahrbegriffe sind im Gefahrenabwehrrecht im Saarland zu unterscheiden?
+  back: >-
+      Gefahr ist eine Sachlage, die bei ungehindertem Geschehensablauf mit hinreichender
+      Wahrscheinlichkeit in absehbarer Zeit zu einem Schaden für ein polizeiliches Schutzgut führt;
+      maßgeblich ist die Prognose ex ante aus Sicht eines besonnenen Amtswalters. Konkrete Gefahr: im
+      Einzelfall drohend, sie trägt Einzelmaßnahmen (Generalklausel, Standardmaßnahmen). Abstrakte
+      Gefahr: nach allgemeiner Lebenserfahrung typischerweise drohend, sie trägt nur den Erlass einer
+      Polizeiverordnung (SPolG). Qualifizierte Gefahren erhöhen die Anforderungen: erhebliche Gefahr
+      (bedeutendes Rechtsgut), gegenwärtige Gefahr (Schadenseintritt hat begonnen oder steht
+      unmittelbar bevor), Gefahr im Verzug (Abwarten würde den Erfolg der Maßnahme gefährden). Vom
+      Gefahrenverdacht spricht man, wenn unklar ist, ob ein Schaden droht; hier kommt nur ein
+      Gefahrerforschungseingriff in Betracht. Welche Qualifikation eine Standardmaßnahme verlangt,
+      ergibt sich aus ihrem Tatbestand.
+  norms:
+  - "§ 8 Abs. 1 SPolG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sl-por-anschein
+  type: streitstand
+  front: >-
+      Anscheinsgefahr, Gefahrenverdacht und Putativgefahr: Wie sind sie abzugrenzen und welche
+      Rechtsfolgen hat eine Fehlprognose?
+  back: >-
+      Anscheinsgefahr: Bei Erlass der Maßnahme sprach aus Sicht eines besonnenen Amtswalters ex ante
+      alles für einen drohenden Schaden, tatsächlich bestand keine Gefahr. Nach h. M. liegt eine
+      Gefahr im Rechtssinn vor, die Maßnahme ist rechtmäßig (Prognoseentscheidung). Gefahrenverdacht:
+      Die Tatsachenlage ist unklar; zulässig ist grundsätzlich nur eine vorläufige, der Aufklärung
+      dienende Maßnahme. Putativgefahr: Der Amtswalter nimmt ohne objektiv tragfähigen Anschein eine
+      Gefahr an; die Maßnahme ist rechtswidrig. Streitig sind die Folgefragen beim Anscheinsstörer:
+      Nach h. M. wird dem zu Unrecht Herangezogenen, der den Anschein nicht zurechenbar gesetzt hat,
+      ein Ausgleich entsprechend dem Nichtstörer zugestanden und er wird nicht mit Kosten belastet;
+      wer den Anschein zurechenbar veranlasst hat (etwa Fehlalarm durch Fahrlässigkeit), trägt die
+      Kosten. Anderer Ansatz: Die Rechtmäßigkeit der Maßnahme schließe jeden Ausgleich aus.
+  norms:
+  - "§ 8 Abs. 1 SPolG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sl-por-standard
+  type: norm
+  front: >-
+      Welche Standardmaßnahmen kennt das Gefahrenabwehrrecht im Saarland und wie verhalten sie sich
+      zur Generalklausel?
+  back: >-
+      Standardmaßnahmen sind typisierte Eingriffsbefugnisse mit eigenem Tatbestand: Befragung und
+      Auskunftspflicht, Vorladung, Identitätsfeststellung, Platzverweisung und Aufenthaltsverbot,
+      Gewahrsam, Durchsuchung von Personen und Sachen, Betreten und Durchsuchen von Wohnungen sowie
+      Sicherstellung und Beschlagnahme. Sie sind im SPolG geregelt; ob und wie die Befugnisse auch den
+      Ordnungs- bzw. Polizeibehörden zustehen, ist anhand der geltenden Fassung zu prüfen. Sie gehen
+      der Generalklausel als speziellere Normen vor; ist ihr Tatbestand nicht erfüllt, darf nicht ohne
+      Weiteres auf die Generalklausel ausgewichen werden, soweit die Standardmaßnahme die Materie
+      abschließend regelt. Verfassungsrechtliche Vorgaben sind zu beachten: Gewahrsam verlangt eine
+      richterliche Entscheidung (Art. 104 Abs. 2 GG), die Durchsuchung von Wohnungen grundsätzlich
+      eine richterliche Anordnung (Art. 13 Abs. 2 GG), ihr Betreten zur Gefahrenabwehr ist an Art. 13
+      Abs. 7 GG zu messen.
+  norms:
+  - "Standardbefugnisse des SPolG (Paragraphen hier nicht angegeben)"
+  - "Art. 104 Abs. 2 GG"
+  - "Art. 13 Abs. 2 GG"
+  - "Art. 13 Abs. 7 GG"
+  - "§ 8 Abs. 1 SPolG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sl-por-stoererauswahl
+  type: streitstand
+  front: >-
+      Wie wählt die Behörde zwischen mehreren Verantwortlichen aus, und wie wird der Zweckveranlasser
+      behandelt?
+  back: >-
+      Gibt es mehrere Störer, wählt die Behörde nach pflichtgemäßem Ermessen aus. Leitlinie ist die
+      effektive, schnelle und sichere Gefahrenabwehr; eine feste Rangfolge zwischen Verhaltens- und
+      Zustandsstörer besteht nicht. Zu berücksichtigen sind Nähe zur Gefahr, Leistungsfähigkeit,
+      Verursachungsbeitrag und Gleichbehandlung. Nichtstörer dürfen dagegen nur im polizeilichen
+      Notstand herangezogen werden. Streitig ist die Reichweite der Verhaltensverantwortlichkeit: Nach
+      der Theorie der unmittelbaren Verursachung ist nur verantwortlich, wer selbst die Gefahrengrenze
+      überschreitet. Die Rechtsprechung und Teile des Schrifttums erweitern dies auf den
+      Zweckveranlasser, der die unmittelbare Verursachung durch einen Dritten bezweckt oder sie als
+      zwangsläufige Folge seines Tuns herbeiführt. Die Gegenansicht lehnt die Figur ab, weil sie die
+      Unmittelbarkeit auflöse und die Verantwortlichkeit nicht gesetzlich gedeckt sei.
+  norms:
+  - "§ 4 SPolG"
+  - "§ 5 SPolG"
+  - "§ 6 SPolG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sl-por-zwang
+  type: definition
+  front: >-
+      Wie läuft die Vollstreckung einer Gefahrenabwehrverfügung im Saarland ab, und was gilt beim
+      Sofortvollzug?
+  back: >-
+      Regelfall ist das gestreckte Verfahren: wirksame und vollstreckbare Grundverfügung (unanfechtbar
+      oder sofort vollziehbar, § 80 Abs. 2 VwGO), Androhung des Zwangsmittels mit angemessener Frist,
+      Festsetzung, Anwendung. Zwangsmittel sind Ersatzvornahme, Zwangsgeld und als letztes Mittel
+      unmittelbarer Zwang; sie müssen verhältnismäßig sein. Das Saarländische
+      Verwaltungsvollstreckungsgesetz (SVwVG) regelt den Verwaltungszwang; für die Vollzugspolizei
+      enthält das SPolG ergänzende Vorschriften zum unmittelbaren Zwang. Bei gegenwärtiger Gefahr kann
+      die Behörde im Sofortvollzug (unmittelbare Ausführung) ohne vorausgehenden Verwaltungsakt
+      handeln, wenn die Maßnahme zur Abwehr der Gefahr notwendig ist und die Verantwortlichen nicht
+      rechtzeitig herangezogen werden können. Typische Klausurkonstellation ist das Abschleppen eines
+      Fahrzeugs; geprüft wird dann, ob die Grundverfügung, etwa ein Verkehrszeichen, wirksam war, ob
+      Androhung und Festsetzung entbehrlich waren und ob das Zwangsmittel verhältnismäßig war.
+  norms:
+  - "Saarländisches Verwaltungsvollstreckungsgesetz (SVwVG)"
+  - "§ 80 Abs. 2 S. 1 Nr. 2 VwGO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sl-por-kosten
+  type: norm
+  front: >-
+      Wer trägt die Kosten von Ersatzvornahme, unmittelbarer Ausführung und Zwang, und wo liegen die
+      Grenzen der Kostenhaftung?
+  back: >-
+      Die Kosten einer Ersatzvornahme, des unmittelbaren Zwangs oder einer unmittelbaren Ausführung
+      trägt grundsätzlich der Pflichtige bzw. der für die Gefahr Verantwortliche; sie werden durch
+      Kostenbescheid (Leistungsbescheid) geltend gemacht und nach den Vorschriften der
+      Verwaltungsvollstreckung beigetrieben. Bei Sofortvollzug ohne Grundverfügung prüft die
+      Kostenentscheidung inzident, ob die Maßnahme rechtmäßig gewesen wäre, insbesondere ob eine
+      Gefahr vorlag, der Kostenschuldner Störer war und die Maßnahme verhältnismäßig war. Für den
+      Zustandsstörer ist die Kostenhaftung nach der Rechtsprechung des Bundesverfassungsgerichts aus
+      Art. 14 GG begrenzt; sie darf nach Zumutbarkeit insbesondere den Wert des Grundstücks nach
+      Sanierung nicht übersteigen, wenn die Gefahr nicht dem Risikobereich des Eigentümers zuzurechnen
+      ist. Der Nichtstörer wird nicht mit Kosten belastet; ihm steht bei Inanspruchnahme ein
+      Entschädigungsanspruch zu.
+  norms:
+  - "Art. 14 Abs. 1 GG"
+  - "Art. 14 Abs. 2 GG"
+  - "Saarländisches Verwaltungsvollstreckungsgesetz (SVwVG)"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "BVerfGE 102, 1 (Altlasten, Zustandsverantwortlichkeit)"
+  stand: 2026-10
+- slug: sl-por-doppel
+  type: streitstand
+  front: >-
+      Was gilt bei doppelfunktionalen Maßnahmen der Polizei (Gefahrenabwehr und Strafverfolgung)?
+  back: >-
+      Verfolgt eine polizeiliche Maßnahme zugleich präventive und repressive Zwecke, sind
+      Rechtsgrundlage und Rechtsweg abhängig von ihrem Schwerpunkt. Nach h. M. und der Rechtsprechung
+      entscheidet der erkennbare Schwerpunkt, der sich aus dem Anlass, dem Zweck und dem
+      Gesamteindruck der Maßnahme ergibt. Überwiegt die Gefahrenabwehr, ist die Befugnis im SPolG bzw.
+      im Ordnungsrecht zu suchen und der Verwaltungsrechtsweg eröffnet (§ 40 Abs. 1 VwGO). Überwiegt
+      die Strafverfolgung, gilt die StPO; der Rechtsschutz richtet sich dann nach § 98 Abs. 2 S. 2
+      StPO analog bzw. nach den §§ 23 ff. EGGVG. Lassen sich die Zwecke nicht gewichten, werden
+      teilweise beide Regelungskomplexe nebeneinander angewendet oder dem Betroffenen ein Wahlrecht
+      zugestanden. Die Klausur verlangt deshalb stets eine ausdrückliche Zuordnung des Handelns, bevor
+      die Ermächtigungsgrundlage geprüft wird.
+  norms:
+  - "§ 40 Abs. 1 VwGO"
+  - "§ 98 Abs. 2 StPO"
+  - "§ 23 EGGVG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: sl-schema-por-gewahrsam
+  title: "Rechtmäßigkeit eines Schutzgewahrsams nach dem SPolG"
+  norms:
+  - "§ 8 Abs. 1 SPolG"
+  - "Art. 104 Abs. 2 GG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  steps:
+  - label: >-
+      I. Ermächtigungsgrundlage: Gewahrsam als Standardmaßnahme
+    hinweis: >-
+        Vorrang vor der Generalklausel; Gewahrsamsgründe im SPolG nach Fassung zitieren.
+  - label: "II. Formelle Rechtmäßigkeit"
+    children:
+    - label: >-
+        1. Zuständigkeit: Vollzugspolizei
+    - label: >-
+        2. Verfahren: Bekanntgabe von Grund und Rechtsfolgen, Benachrichtigung von Angehörigen
+      hinweis: "Verfahrensvorgaben nach Fassung prüfen."
+  - label: "III. Materielle Rechtmäßigkeit"
+    children:
+    - label: >-
+        1. Gewahrsamsgrund, z. B. Schutz vor Gefahr für Leib oder Leben bei hilfloser Lage
+    - label: "2. Konkrete Gefahr, Prognose ex ante"
+    - label: >-
+        3. Verhältnismäßigkeit: mildere Mittel wie Verbringen zu Angehörigen oder in ein Krankenhaus
+  - label: "IV. Richterliche Entscheidung nach Art. 104 Abs. 2 GG"
+    hinweis: >-
+        Unverzüglich herbeiführen, entbehrlich nur, wenn die Entlassung vor dem Ergehen der Entscheidung
+        sicher erfolgt.
+faelle:
+- slug: sl-fall-por-schutzgewahrsam
+  title: "Die Nacht auf der Parkbank"
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "Art. 104 Abs. 2 GG"
+  facts: >-
+      Im Januar gegen 1 Uhr nachts, bei minus fünf Grad, finden Polizeibeamte in Saarbrücken den P
+      stark alkoholisiert auf einer Parkbank liegend. P ist kaum ansprechbar, hat keine Jacke und kann
+      nicht angeben, wo er wohnt; ein Alkoholtest ergibt 2,8 Promille. Er lehnt jede Hilfe ab und
+      äußert nur, er wolle hier schlafen. Die Beamten bringen P in eine Zelle des Polizeireviers und
+      nehmen ihn in Gewahrsam; eine richterliche Entscheidung holen sie nicht ein. Um 8 Uhr morgens,
+      nüchtern geworden, wird P entlassen.
+  question: >-
+      War der Gewahrsam rechtmäßig, und musste eine richterliche Entscheidung herbeigeführt werden?
+  steps:
+  - prompt: >-
+        Auf welcher Rechtsgrundlage und mit welchem Vorrang ist die Maßnahme zu prüfen?
+    erwartung: >-
+        Der Gewahrsam ist eine Standardmaßnahme des SPolG und geht der Generalklausel (§ 8 Abs. 1 SPolG)
+        als speziellere Norm vor. Gewahrsamsgrund ist hier der Schutz des P vor Gefahr für Leib oder
+        Leben in hilfloser Lage.
+  - prompt: "Liegt eine Gefahr vor?"
+    erwartung: >-
+        Ja. Eine konkrete, gegenwärtige Gefahr für Leib und Leben des P besteht wegen Unterkühlung bei
+        minus fünf Grad, Alkoholisierung und Hilflosigkeit. Die Prognose ex ante rechtfertigt den
+        Eingriff.
+  - prompt: "Ist der Gewahrsam verhältnismäßig?"
+    erwartung: >-
+        Ja. Mildere Mittel (Verbringen zu Angehörigen oder in eine Unterkunft) scheiden aus, weil P
+        keine Angaben macht, jede Hilfe ablehnt und nicht ansprechbar ist. Die Freiheitsentziehung ist
+        auf die Zeit der Gefahr beschränkt, die Entlassung erfolgte nach Nüchternwerden.
+  - prompt: "Musste eine richterliche Entscheidung eingeholt werden?"
+    erwartung: >-
+        Art. 104 Abs. 2 GG verlangt für eine Freiheitsentziehung grundsätzlich unverzüglich eine
+        richterliche Entscheidung. Sie ist aber entbehrlich, wenn feststeht, dass die Entlassung vor dem
+        Ergehen der Entscheidung erfolgt. Das ist hier der Fall, weil P am Morgen nüchtern entlassen
+        wurde und die Maßnahme nur wenige Stunden dauerte.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+          Gewahrsam als Standardmaßnahme mit Vorrang vor der Generalklausel erkannt
+      weight: 2.0
+      required: true
+      norms:
+      - "§ 8 Abs. 1 SPolG"
+      keywords:
+      - "Gewahrsam"
+      - "Schutzgewahrsam"
+      - "Standardmaßnahme"
+      - "Vorrang vor der Generalklausel"
+      - "Spezialität"
+      card_slugs:
+      - "sl-por-standard"
+      - "sl-por-generalklausel"
+    - id: p2
+      label: "Konkrete gegenwärtige Gefahr für Leib und Leben bejaht"
+      weight: 2.0
+      required: true
+      keywords:
+      - "Gefahr für Leib und Leben"
+      - "hilflose Lage"
+      - "konkrete Gefahr"
+      - "gegenwärtige Gefahr"
+      card_slugs:
+      - "sl-por-gefahr"
+    - id: p3
+      label: "Verhältnismäßigkeit mit Blick auf mildere Mittel geprüft"
+      weight: 1.5
+      required: false
+      keywords:
+      - "Verhältnismäßigkeit"
+      - "mildere Mittel"
+      - "erforderlich"
+      - "angemessen"
+      card_slugs:
+      - "sl-por-stoererauswahl"
+    - id: p4
+      label: >-
+          Richterliche Entscheidung nach Art. 104 Abs. 2 GG: Entbehrlichkeit wegen Entlassung vor der
+          Entscheidung
+      weight: 2.5
+      required: true
+      norms:
+      - "Art. 104 Abs. 2 GG"
+      keywords:
+      - "Art. 104 Abs. 2 GG"
+      - "richterliche Entscheidung"
+      - "Richtervorbehalt"
+      - "unverzüglich"
+      - "vor Ergehen der Entscheidung entlassen"
+      card_slugs:
+      - "sl-por-standard"
+    normzitate_geprueft: false

@@ -1,20 +1,20 @@
 kurs:
   slug: sr-at-2
-  title: 'Strafrecht AT II: Versuch, Beteiligung, Unterlassen, Fahrlaessigkeit'
+  title: 'Strafrecht AT II: Versuch, Beteiligung, Unterlassen, Fahrlässigkeit'
   area: strafrecht
   semester_default: 2
   examenskurs: false
   stand: 2026-09
   quellen:
-  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
   beschreibung: Die Erweiterungen des Grunddelikts (Versuch/Rücktritt, Täterschaft/Teilnahme, Unterlassen, Fahrlässigkeit) und die Konkurrenzen §§ 52, 53 StGB.
   lernziele:
-  - Versuchsaufbau mit Tatentschluss und unmittelbarem Ansetzen, Ruecktritt nach § 24 StGB
-  - Taeterschaft und Teilnahme (§§ 25-27 StGB) abgrenzen
-  - Unterlassungsdelikt (§ 13 StGB) und Fahrlaessigkeitsdelikt aufbauen
+  - Versuchsaufbau mit Tatentschluss und unmittelbarem Ansetzen, Rücktritt nach § 24 StGB
+  - Täterschaft und Teilnahme (§§ 25-27 StGB) abgrenzen
+  - Unterlassungsdelikt (§ 13 StGB) und Fahrlässigkeitsdelikt aufbauen
   klausurformat:
-    typ: Anfaengerklausur
+    typ: Anfängerklausur
     minuten: 120
   topic_slugs:
   - sr-versuch-ruecktritt
