@@ -28,7 +28,7 @@ cards:
   type: norm
   front: "Welche Zulässigkeitsvoraussetzungen hat der Bund-Länder-Streit (§§ 68, 69, 64 BVerfGG)?"
   back: >-
-    Der Antrag ist zulässig, wenn die Beteiligten antragsberechtigt sind (Bundesregierung, Landesregierung, § 68 BVerfGG) und ein tauglicher Antragsgegenstand vorliegt: eine rechtserhebliche Maßnahme oder Unterlassung des Antragsgegners (§ 69 in Verbindung mit § 64 Abs. 1 BVerfGG). Der Antragsteller muss geltend machen, durch die Maßnahme oder Unterlassung in seinen verfassungsmäßigen Rechten und Pflichten verletzt oder unmittelbar gefährdet zu sein (Antragsbefugnis, Möglichkeitstheorie). Der Antrag ist binnen sechs Monaten zu stellen, nachdem die Maßnahme oder Unterlassung dem Antragsteller bekannt geworden ist (§ 69 in Verbindung mit § 64 Abs. 3 BVerfGG). Hinzu kommt das allgemeine Rechtsschutzbedürfnis. Art. 93 Abs. 1 Nr. 4 GG (andere öffentlich-rechtliche Streitigkeiten zwischen Bund und Ländern) tritt als Auffangtatbestand zurück, wenn der Streit unter Nr. 3 fällt. Streitigkeiten innerhalb eines Landes entscheidet das Landesverfassungsgericht (Art. 99 GG).
+    Der Antrag ist zulässig, wenn die Beteiligten antragsberechtigt sind (Bundesregierung, Landesregierung, § 68 BVerfGG) und ein tauglicher Antragsgegenstand vorliegt: eine rechtserhebliche Maßnahme oder Unterlassung des Antragsgegners (§ 69 in Verbindung mit § 64 Abs. 1 BVerfGG). Der Antragsteller muss geltend machen, durch die Maßnahme oder Unterlassung in seinen verfassungsmäßigen Rechten und Pflichten verletzt oder unmittelbar gefährdet zu sein (Antragsbefugnis, Möglichkeitstheorie). Der Antrag ist binnen sechs Monaten zu stellen, nachdem die Maßnahme oder Unterlassung dem Antragsteller bekannt geworden ist (§ 69 in Verbindung mit § 64 Abs. 3 BVerfGG). Hinzu kommt das allgemeine Rechtsschutzbedürfnis. Art. 93 Abs. 1 Nr. 4 GG (andere öffentlich-rechtliche Streitigkeiten zwischen Bund und Ländern) tritt als Auffangtatbestand zurück, wenn der Streit unter Nr. 3 fällt. Verfassungsstreitigkeiten innerhalb eines Landes entscheidet grundsätzlich das Landesverfassungsgericht; Art. 99 GG erlaubt dem Land lediglich, sie dem Bundesverfassungsgericht zuzuweisen.
   norms:
   - Art. 93 Abs. 1 Nr. 3 GG
   - § 69 BVerfGG
@@ -75,7 +75,7 @@ cards:
   type: norm
   front: "Wie läuft das Verfahren der einstweiligen Anordnung ab, und wie lange wirkt sie?"
   back: >-
-    Die einstweilige Anordnung kann ohne mündliche Verhandlung ergehen (§ 32 Abs. 2 S. 1 BVerfGG). Den Äußerungsberechtigten, etwa dem Antragsgegner, ist vor der Entscheidung Gelegenheit zur Stellungnahme zu geben (S. 2); bei besonderer Dringlichkeit kann davon abgesehen werden. Wird die einstweilige Anordnung ohne mündliche Verhandlung erlassen, kann Widerspruch eingelegt werden, über den nach mündlicher Verhandlung entschieden wird (Abs. 3), der Widerspruch hat keine aufschiebende Wirkung. Die einstweilige Anordnung tritt nach sechs Monaten außer Kraft (Abs. 6 S. 1); sie kann mit Zweidrittelmehrheit wiederholt werden (S. 2). Mit der Entscheidung in der Hauptsache endet die einstweilige Anordnung.
+    Die einstweilige Anordnung kann ohne mündliche Verhandlung ergehen (§ 32 Abs. 2 S. 1 BVerfGG). Den Äußerungsberechtigten, etwa dem Antragsgegner, ist vor der Entscheidung Gelegenheit zur Stellungnahme zu geben (S. 2); bei besonderer Dringlichkeit kann davon abgesehen werden. Gegen den Erlass oder die Ablehnung durch Beschluss kann Widerspruch erhoben werden, nicht aber vom Beschwerdeführer im Verfahren der Verfassungsbeschwerde; über ihn entscheidet das Gericht nach mündlicher Verhandlung, und er hat keine aufschiebende Wirkung (Abs. 3). Die einstweilige Anordnung tritt nach sechs Monaten außer Kraft (Abs. 6 S. 1); sie kann mit Zweidrittelmehrheit wiederholt werden (S. 2). Mit der Entscheidung in der Hauptsache endet die einstweilige Anordnung.
   norms:
   - § 32 Abs. 2 BVerfGG
   - § 32 Abs. 3 BVerfGG
@@ -86,9 +86,9 @@ cards:
   stand: 2026-10
 - slug: or-bl-kommunalverfassungsbeschwerde-zulaessigkeit
   type: norm
-  front: "Welche Zulässigkeitsvoraussetzungen hat die Kommunalverfassungsbeschwerde (Art. 93 Abs. 1 Nr. 4b GG, § 91 BVerfGG)?"
+  front: "Wann ist die Gemeinde durch ein Gesetz unmittelbar betroffen, und wie wirken Subsidiarität und Landesverfassungsbeschwerde auf die Kommunalverfassungsbeschwerde (§ 91 BVerfGG)?"
   back: >-
-    Gemeinden und Gemeindeverbände können wegen Verletzung des Rechts auf Selbstverwaltung nach Art. 28 GG durch ein Gesetz Verfassungsbeschwerde erheben (Art. 93 Abs. 1 Nr. 4b GG, § 91 BVerfGG). Beschwerdeführer sind also Gemeinden, Kreise und sonstige kommunale Zusammenschlüsse; sie sind nicht grundrechtsfähig im Sinne des Art. 19 Abs. 3 GG, können sich daher nur auf Art. 28 Abs. 2 GG berufen. Gegenstand ist ein Bundes- oder Landesgesetz. Die Beschwerdebefugnis verlangt die Möglichkeit einer Verletzung von Art. 28 Abs. 2 GG sowie die eigene, gegenwärtige und unmittelbare Betroffenheit. Die Beschwerde ist binnen eines Jahres nach Inkrafttreten des Gesetzes zu erheben (§ 93 Abs. 3 BVerfGG). Bei Landesgesetzen ist die Beschwerde zum Bundesverfassungsgericht ausgeschlossen, soweit Beschwerde zum Landesverfassungsgericht erhoben werden kann (§ 91 S. 2 BVerfGG, Subsidiarität). Nach dem Grundsatz der materiellen Subsidiarität ist zudem der fachgerichtliche Rechtsweg zu beschreiten, wenn er die Rechte der Gemeinde schützen kann.
+    Gemeinden und Gemeindeverbände können nach Art. 93 Abs. 1 Nr. 4b GG, § 91 BVerfGG Gesetze angreifen, die ihr Selbstverwaltungsrecht aus Art. 28 GG verletzen. Die Beschwerdebefugnis verlangt die Möglichkeit einer Verletzung des Art. 28 Abs. 2 GG; die Gemeinde muss selbst, gegenwärtig und unmittelbar betroffen sein. Unmittelbarkeit liegt vor, wenn das Gesetz ohne weiteren Vollzugsakt wirkt, wie bei einer Legalplanung. Bedarf es eines Vollzugsakts, ist grundsätzlich zunächst der fachgerichtliche Rechtsweg zu beschreiten (Subsidiarität). Bei Landesgesetzen ist die Beschwerde zum Bundesverfassungsgericht ausgeschlossen, soweit Beschwerde zum Landesverfassungsgericht erhoben werden kann (§ 91 S. 2 BVerfGG); gegen Bundesgesetze steht sie unmittelbar offen. Die Frist beträgt ein Jahr seit Inkrafttreten (§ 93 Abs. 3 BVerfGG). Gemeinden sind nicht allgemein grundrechtsfähig, können sich aber auf Art. 28 Abs. 2 GG und die Verfahrensgrundrechte der Art. 101 und 103 GG berufen.
   norms:
   - Art. 93 Abs. 1 Nr. 4b GG
   - § 91 BVerfGG
@@ -100,12 +100,11 @@ cards:
   stand: 2026-10
 - slug: or-bl-selbstverwaltungsgarantie-rastede
   type: rechtsprechung
-  front: "Welchen Maßstab legt das Bundesverfassungsgericht an die kommunale Selbstverwaltungsgarantie an (BVerfGE 79, 127 – Rastede)?"
+  front: "Wie prüft man den Eingriff eines Gesetzes in die gemeindliche Planungshoheit, und welche Rolle spielt der Rastede-Maßstab (BVerfGE 79, 127)?"
   back: >-
-    Art. 28 Abs. 2 S. 1 GG gewährleistet den Gemeinden das Recht, alle Angelegenheiten der örtlichen Gemeinschaft im Rahmen der Gesetze in eigener Verantwortung zu regeln. Das Bundesverfassungsgericht hat daraus eine Regelzuständigkeit der Gemeinden für Aufgaben mit örtlichem Charakter abgeleitet (Aufgabenverteilungsprinzip); sie dürfen ihnen nur aus Gründen des Gemeininteresses, insbesondere zur Sicherung einer ordnungsgemäßen Aufgabenwahrnehmung, entzogen werden (BVerfGE 79, 127). Dem Gesetzgeber ist ein Kernbereich der Selbstverwaltung verwehrt, der nicht ausgehöhlt werden darf. Außerhalb dieses Kerns ist die Selbstverwaltung gesetzlich ausgestaltbar, verlangt aber einen Eingriff nur aus Gründen des öffentlichen Wohls unter Wahrung der Verhältnismäßigkeit. Die Planungshoheit ist als Teil der Selbstverwaltung geschützt. Hinzu kommt die Garantie angemessener Finanzausstattung (Art. 28 Abs. 2 S. 3 GG). Gemeinden müssen vor Eingriffen im Rahmen des Gesetzgebungsverfahrens angemessen angehört werden.
+    Die Planungshoheit ist als Teil der Selbstverwaltung nach Art. 28 Abs. 2 S. 1 GG geschützt. Ein Gesetz, das den Bau einer Straße auf Gemeindegebiet selbst anordnet (Legalplanung), greift in dieses Recht ein, soweit es die gemeindliche Planung verdrängt. Geprüft wird in drei Schritten. Erstens ist der Kernbereich der Selbstverwaltung unantastbar. Zweitens darf außerhalb des Kerns in die Planungshoheit nur aus Gründen des Gemeinwohls eingegriffen werden, also zur Verfolgung überörtlicher Interessen, die das Gewicht der gemeindlichen Belange überwiegen. Drittens muss der Eingriff verhältnismäßig sein. Für Aufgabenentzüge gilt nach Rastede ein Regel-Ausnahme-Verhältnis zugunsten der Gemeinde; sie dürfen ihr nur aus Gründen des Gemeininteresses entzogen werden, bloße Verwaltungsvereinfachung genügt nicht. Landesverfassungen sehen teilweise Anhörungsrechte der Gemeinden im Gesetzgebungsverfahren vor; das Grundgesetz verlangt sie nicht ausdrücklich.
   norms:
-  - Art. 28 Abs. 2 S. 1 GG
-  - Art. 28 Abs. 2 S. 3 GG
+    - Art. 28 Abs. 2 S. 1 GG
   quellen:
   - GG, amtliche Fassung
   - BVerfGE 79, 127
@@ -159,13 +158,13 @@ faelle:
   question: Ist die Kommunalverfassungsbeschwerde zulässig, und hat der Eilantrag der G Erfolg?
   steps:
   - prompt: Ist die Kommunalverfassungsbeschwerde der G zulässig?
-    erwartung: Ja. G ist Gemeinde und damit beschwerdeführungsberechtigt nach Art. 93 Abs. 1 Nr. 4b GG, § 91 BVerfGG; Gegenstand ist ein Bundesgesetz; es erscheint möglich, dass die Planungshoheit als Teil der Selbstverwaltung nach Art. 28 Abs. 2 S. 1 GG verletzt ist; G ist selbst, gegenwärtig und unmittelbar betroffen, weil das Gesetz ohne weiteren Vollzugsakt wirkt; die Jahresfrist des § 93 Abs. 3 BVerfGG ist mit drei Monaten gewahrt. Der Vorrang des Landesverfassungsgerichts (§ 91 S. 2 BVerfGG) betrifft nur Landesgesetze.
+    erwartung: Ja. G ist als Gemeinde beschwerdeführungsberechtigt nach Art. 93 Abs. 1 Nr. 4b GG, § 91 BVerfGG; Gegenstand ist ein Bundesgesetz; es erscheint möglich, dass die Planungshoheit als Teil der Selbstverwaltung nach Art. 28 Abs. 2 S. 1 GG verletzt ist; G ist selbst, gegenwärtig und unmittelbar betroffen, weil das Gesetz ohne weiteren Vollzugsakt wirkt; die Jahresfrist des § 93 Abs. 3 BVerfGG ist mit drei Monaten gewahrt. Der Vorrang des Landesverfassungsgerichts (§ 91 S. 2 BVerfGG) betrifft nur Landesgesetze.
   - prompt: Ist der Eilantrag zulässig, und sind die Erfolgsaussichten in der Hauptsache offensichtlich ausgeschlossen?
     erwartung: Der Antrag ist zulässig, die Beschwerde ist anhängig und nicht offensichtlich unzulässig. In der Hauptsache ist der Ausgang offen. Überörtliche Verkehrsinteressen können einen Eingriff in die Planungshoheit rechtfertigen, die Abwägung ist aber nicht von vornherein entschieden. Die Beschwerde ist deshalb weder offensichtlich unbegründet noch offensichtlich begründet.
   - prompt: Wie fällt die Folgenabwägung aus?
     erwartung: Ohne einstweilige Anordnung und bei späterem Erfolg der Hauptsache wären die erschlossenen Flächen unwiederbringlich überbaut, die Planungshoheit wäre endgültig vereitelt. Mit einstweiliger Anordnung und späterem Misserfolg der Hauptsache würde das Straßenprojekt nur um etwa ein halbes Jahr verzögert. Der irreversible Schaden wiegt schwerer; die einstweilige Anordnung ist zum Schutz vor schweren Nachteilen dringend geboten. Der strenge Maßstab bei Gesetzen steht dem nicht entgegen, weil die Nachteile besonderes Gewicht haben.
   - prompt: Wie ist der Antrag insgesamt zu bescheiden?
-    erwartung: Dem Antrag ist stattzugeben. Das Gericht setzt den Vollzug des Gesetzes im Bereich der Gemarkung vorläufig aus (§ 32 Abs. 1 BVerfGG).
+    erwartung: Dem Antrag ist stattzugeben, die einstweilige Anordnung ergeht. Das Gericht setzt den Vollzug des Gesetzes im Bereich der Gemarkung vorläufig aus (§ 32 Abs. 1 BVerfGG).
   expectation:
     pruefpunkte:
     - id: p1
@@ -232,7 +231,8 @@ faelle:
       required: false
       keywords:
       - Antrag ist begründet
-      - Vollzug vorläufig ausgesetzt
+      - dem Antrag ist stattzugeben
+      - Vollzug des Gesetzes vorläufig aus
       - einstweilige Anordnung ergeht
       card_slugs:
       - or-bl-ea-verfahren-wirkung

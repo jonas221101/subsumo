@@ -22,13 +22,12 @@ cards:
     oder Feststellungsklage. Praktisch geht es um die vorläufige Erteilung einer Begünstigung,
     um die Sicherung eines Anspruchs und um Abwehr oder Unterlassung von Realakten. Maßgeblich
     ist, welche Klageart in der Hauptsache zu wählen wäre; die Abgrenzung entscheidet sich
-    also an der statthaften Klageart. § 123 VwGO enthält keine eigene Anfechtungsbefugnis
-    gegenüber Verwaltungsakten, die mit der Anfechtungsklage angegriffen werden können.
+    also an der statthaften Klageart. § 123 VwGO ist nicht anwendbar, wenn der Verwaltungsakt mit der Anfechtungsklage angegriffen werden kann; dort greift § 80 bzw. § 80a VwGO.
   norms:
   - § 123 Abs. 1 VwGO
   - § 123 Abs. 5 VwGO
   - § 80 Abs. 5 VwGO
-  quellen: &id001
+  quellen:
   - VwGO, amtliche Fassung
   - Eigenformulierung Redaktion
   stand: 2026-10
@@ -51,7 +50,9 @@ cards:
   norms:
   - § 123 Abs. 1 S. 1 VwGO
   - § 123 Abs. 1 S. 2 VwGO
-  quellen: *id001
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-vwgo-ea-zulaessigkeit-zustaendigkeit
   type: norm
@@ -74,7 +75,7 @@ cards:
   - § 123 Abs. 4 VwGO
   - § 42 Abs. 2 VwGO analog
   - § 78 VwGO analog
-  quellen: &id002
+  quellen:
   - VwGO, amtliche Fassung
   - Eigenformulierung Redaktion
   - ZPO, amtliche Fassung
@@ -98,7 +99,10 @@ cards:
   - § 920 Abs. 2 ZPO
   - § 294 ZPO
   - § 114 VwGO
-  quellen: *id002
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  - ZPO, amtliche Fassung
   stand: 2026-10
 - slug: or-vwgo-ea-anordnungsgrund
   type: definition
@@ -118,7 +122,10 @@ cards:
   - § 123 Abs. 1 S. 2 VwGO
   - § 123 Abs. 3 VwGO
   - § 920 Abs. 2 ZPO
-  quellen: *id002
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  - ZPO, amtliche Fassung
   stand: 2026-10
 - slug: or-vwgo-ea-vorwegnahme-hauptsache
   type: definition
@@ -216,7 +223,9 @@ schemata:
   title: Antrag auf einstweilige Anordnung, § 123 VwGO
   norms:
   - § 123 VwGO
-  quellen: *id001
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
   steps:
   - label: A. Zulässigkeit
     children:
@@ -250,7 +259,7 @@ faelle:
     solle in drei Tagen erfolgen. B hält die Auswahl für rechtswidrig. Sie möchte verhindern,
     dass die Stelle endgültig besetzt wird, bevor über ihre Rechte entschieden ist. Eine Hauptsacheklage
     hat sie noch nicht erhoben.
-  question: Welchen Rechtsbehelf soll B wählen, und hat er Aussicht auf Erfolg?
+  question: Welchen Rechtsbehelf soll B wählen, und hat sie Aussicht auf Erfolg?
   steps:
   - prompt: Ist der Verwaltungsrechtsweg eröffnet, und welcher Rechtsbehelf ist statthaft?
     erwartung: Der Verwaltungsrechtsweg folgt aus § 126 Abs. 1 BBG. B begehrt keine Aufhebung
