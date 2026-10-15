@@ -1,0 +1,327 @@
+topic:
+  slug: zr-at-arglist-drohung-123
+  area: zivilrecht
+  title: Anfechtung wegen arglistiger Täuschung und widerrechtlicher Drohung, §§ 123, 124 BGB
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-at-arg-taeuschung
+  type: definition
+  front: 'Definiere: arglistige Täuschung, § 123 Abs. 1 Var. 1 BGB, und nenne die Prüfungspunkte'
+  back: >-
+    Täuschung ist jedes Verhalten, das bei einem anderen eine unrichtige Vorstellung
+    über Tatsachen hervorruft, bestärkt oder aufrechterhält. Sie kann durch Vorspiegeln
+    oder Entstellen von Tatsachen (aktives Tun) oder durch Verschweigen geschehen. Das
+    Verschweigen ist nur dann eine Täuschung, wenn eine Aufklärungspflicht bestand,
+    etwa auf Nachfrage oder bei Umständen, die für den Vertragspartner erkennbar von
+    wesentlicher Bedeutung sind und deren Mitteilung er nach Treu und Glauben und der
+    Verkehrsauffassung erwarten durfte. Es muss ein dadurch hervorgerufener Irrtum
+    vorliegen, der für die Abgabe der Erklärung kausal war (Täuschung als
+    Mitursache genügt). Arglist ist Vorsatz: Der Täuschende weiß oder nimmt in Kauf, dass
+    der andere durch die Täuschung zu einer Erklärung bestimmt wird; Schädigungs- oder
+    Bereicherungsabsicht ist nicht erforderlich.
+  norms:
+  - § 123 Abs. 1 BGB
+  - § 242 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-arg-aufklaerung
+  type: definition
+  front: 'Definiere: Aufklärungspflicht - Wann ist Verschweigen eine Täuschung?'
+  back: >-
+    Grundsätzlich trägt jeder Vertragspartner das Risiko, sich selbst die für seine
+    Entscheidung wichtigen Informationen zu beschaffen (Eigenverantwortung). Eine
+    Aufklärungspflicht besteht ausnahmsweise bei besonderem Vertrauensverhältnis,
+    wenn der Verkäufer nach Fragen des Käufers antwortet (dann vollständig und
+    wahrheitsgemäß), und bei Umständen, die für den Vertragszweck offensichtlich
+    von wesentlicher Bedeutung sind und deren Mitteilung der andere nach Treu und
+    Glauben erwarten durfte, etwa verschwiegene Unfallschäden beim Gebrauchtwagen oder
+    schwerwiegende, nicht erkennbare Mängel. Eine Pflicht zur ungefragten Offenlegung
+    geht umso weiter, je größer das Informationsgefälle ist;
+    die Rechtsprechung stellt auf die Verkehrserwartung nach Treu und Glauben ab.
+    Leicht erkennbare Umstände oder bloße Werturteile lösen keine Pflicht aus.
+  norms:
+  - § 123 Abs. 1 BGB
+  - § 242 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-arg-drohung
+  type: definition
+  front: 'Definiere: widerrechtliche Drohung, § 123 Abs. 1 Var. 2 BGB'
+  back: >-
+    Drohung ist das Inaussichtstellen eines künftigen Übels, auf dessen Eintritt der
+    Drohende Einfluss zu haben vorgibt, um den Bedrohten zu einer Willenserklärung
+    zu bestimmen. Die Drohung muss für die Erklärung kausal sein. Sie ist widerrechtlich,
+    wenn Mittel (das angedrohte Übel), Zweck (das erstrebte Ergebnis) oder die
+    Mittel-Zweck-Relation (Inadäquanz) rechtswidrig sind. Beispiel: Die Drohung
+    mit einer Strafanzeige ist rechtmäßig, wenn der Drohende einen berechtigten
+    Anspruch geltend machen will, der mit der Straftat in innerem
+    Zusammenhang steht; sie ist widerrechtlich, wenn kein solcher Zusammenhang
+    besteht. Zu unterscheiden ist die vis absoluta (Fehlen des Handlungswillens,
+    keine Willenserklärung) von der Drohung als vis compulsiva, die zur Anfechtung
+    berechtigt.
+  norms:
+  - § 123 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-arg-dritter-123-2
+  type: norm
+  front: Wie wirkt die Täuschung durch einen Dritten, § 123 Abs. 2 BGB?
+  back: >-
+    Wurde die Täuschung nicht vom Erklärungsempfänger, sondern von einem Dritten
+    begangen, ist die Erklärung nach § 123 Abs. 2 S. 1 BGB nur anfechtbar, wenn der
+    Empfänger die Täuschung kannte oder kennen musste (Fahrlässigkeit, § 122 Abs. 2
+    BGB). Das Anfechtungsrecht ist damit zum Schutz des gutgläubigen Empfängers
+    beschränkt. Nach § 123 Abs. 2 S. 2 BGB gilt Entsprechendes, wenn ein anderer als
+    der Erklärungsempfänger aus der Erklärung unmittelbar ein Recht erworben hat
+    (z. B. beim Vertrag zugunsten Dritter): Dann ist die Erklärung ihm gegenüber
+    anfechtbar, wenn er die Täuschung kannte oder kennen musste. Dritter ist
+    nicht, wer auf Seiten des Empfängers steht, also dessen Vertreter,
+    Verhandlungsgehilfe oder Vertrauensperson; deren Täuschung wird dem
+    Empfänger zugerechnet. Bei der Bürgschaft ist der Hauptschuldner im Verhältnis
+    zum Gläubiger regelmäßig Dritter.
+  norms:
+  - § 123 Abs. 2 S. 1 BGB
+  - § 123 Abs. 2 S. 2 BGB
+  - § 122 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-arg-frist-124
+  type: norm
+  front: Welche Frist gilt für die Anfechtung nach § 123 BGB, § 124 BGB?
+  back: >-
+    Die Anfechtung einer nach § 123 BGB anfechtbaren Willenserklärung kann nur
+    binnen Jahresfrist erfolgen (§ 124 Abs. 1 BGB). Die Frist beginnt bei arglistiger
+    Täuschung mit dem Zeitpunkt, in dem der Anfechtungsberechtigte die Täuschung
+    entdeckt (§ 124 Abs. 2 S. 1 BGB), bei Drohung mit dem Zeitpunkt, in dem die
+    Zwangslage aufhört. Auf den Lauf der Frist finden die für die Verjährung
+    geltenden Vorschriften der §§ 206, 210, 211 BGB entsprechende Anwendung. Ohne
+    Rücksicht auf diese Frist ist die Anfechtung nach § 124 Abs. 3 BGB ausgeschlossen,
+    wenn seit der Abgabe der Willenserklärung zehn Jahre verstrichen sind. Anders
+    als bei der Irrtumsanfechtung (§ 121 BGB, unverzüglich) muss die Anfechtung nicht
+    unverzüglich, sondern innerhalb der Jahresfrist erfolgen. Die Anfechtung wird
+    durch Erklärung gegenüber dem Anfechtungsgegner erklärt (§ 143 BGB).
+  norms:
+  - § 124 Abs. 1 BGB
+  - § 124 Abs. 2 BGB
+  - § 124 Abs. 3 BGB
+  - § 143 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-arg-kein-122
+  type: norm
+  front: Welche Rechtsfolgen hat die Anfechtung nach § 123 BGB und gilt § 122 BGB?
+  back: >-
+    Die wirksame Anfechtung führt nach § 142 Abs. 1 BGB dazu, dass das Rechtsgeschäft
+    als von Anfang an nichtig anzusehen ist. Anders als bei §§ 119, 120 BGB muss der
+    Anfechtende dem Anfechtungsgegner keinen Vertrauensschaden nach § 122 BGB ersetzen;
+    § 122 BGB nennt nur die Fälle der §§ 118, 119 und 120 BGB. Das ist
+    gerechtfertigt, weil der Anfechtungsgegner (Täuscher oder Drohender) nicht
+    schutzwürdig ist. Wurde ein Vertrag erfüllt, erfolgt die Rückabwicklung nach §
+    812 Abs. 1 S. 1 Alt. 1 BGB; die Verfügung
+    ist wegen des Abstraktionsprinzips gesondert zu betrachten, doch liegt häufig
+    Fehleridentität vor, weil dieselbe Täuschung auch die Verfügung trägt. Daneben
+    kommen Schadensersatzansprüche aus §§ 280 Abs. 1, 311 Abs. 2, 241 Abs. 2 BGB (culpa
+    in contrahendo), § 823 Abs. 2 BGB i. V. m. § 263 StGB und § 826 BGB in Betracht.
+  norms:
+  - § 142 Abs. 1 BGB
+  - § 122 Abs. 1 BGB
+  - § 812 Abs. 1 S. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-arg-konkurrenz-119
+  type: streitstand
+  front: 'Konkurrenzen: Wie verhält sich § 123 BGB zu § 119 Abs. 2 BGB, zum Kaufmängelrecht
+    und zur c.i.c.?'
+  back: >-
+    Ein Anfechtungsgrund nach § 123 BGB und ein Irrtum nach § 119 Abs. 2 BGB können
+    nebeneinander bestehen; die Anfechtung nach § 123 BGB hat den Vorzug, dass sie
+    nicht zum Ersatz des Vertrauensschadens führt und die Frist länger ist. Gegenüber
+    dem Kaufmängelrecht (§§ 434, 437 ff. BGB) verdrängt dieses nach Gefahrübergang die
+    Irrtumsanfechtung nach § 119 Abs. 2 BGB; die Anfechtung nach § 123 BGB bleibt
+    nach ganz h. M. möglich, weil der arglistig Täuschende nicht schutzwürdig ist.
+    Das Verhältnis zur c.i.c. ist umstritten: Der BGH lässt als Rechtsfolge der
+    c.i.c. (§§ 280 Abs. 1, 311 Abs. 2, 241 Abs. 2 BGB) auch bei fahrlässiger
+    Aufklärungspflichtverletzung die Aufhebung des Vertrags als Naturalrestitution
+    (§ 249 Abs. 1 BGB) zu. Kritiker wenden ein, dies umgehe die Wertung des § 123 BGB, der Arglist verlangt und die Anfechtung auf ein Jahr befristet.
+  norms:
+  - § 123 BGB
+  - § 119 Abs. 2 BGB
+  - § 437 BGB
+  - § 311 Abs. 2 BGB
+  - § 249 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-arg-kausalitaet
+  type: definition
+  front: 'Kausalität und Vorsatz bei § 123 BGB: Was muss bewiesen werden?'
+  back: >-
+    Der Anfechtende muss darlegen und beweisen, dass der Anfechtungsgegner oder
+    ein Zurechnungssubjekt über Tatsachen getäuscht hat, dass er dadurch einem
+    Irrtum unterlag und dass die Täuschung für seine Erklärung ursächlich war
+    (Mitursächlichkeit genügt, Wegdenken der Täuschung führt zur nicht mehr
+    abgegebenen oder anders abgegebenen Erklärung). Die Täuschung muss sich auf
+    Tatsachen oder auf Vorgänge in der Vergangenheit oder Gegenwart beziehen, nicht
+    auf reine Werturteile oder Anpreisungen ("Spitzenqualität"); jedoch kann auch
+    eine rein subjektive Wertung täuschen, wenn sie bestimmte Tatsachen impliziert.
+    Der Vorsatz (Arglist) erfasst die Täuschungshandlung, den Irrtum und die
+    Erklärungsbestimmung; bedingter Vorsatz genügt. Bei Erklärungen "ins Blaue hinein"
+    liegt Arglist vor, wenn der Erklärende die Unrichtigkeit für möglich hält und
+    billigend in Kauf nimmt.
+  norms:
+  - § 123 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-at-arg-123
+  title: Anfechtung wegen arglistiger Täuschung oder Drohung, §§ 123, 124, 142 BGB
+  norms:
+  - § 123 Abs. 1 BGB
+  - § 123 Abs. 2 BGB
+  - § 124 BGB
+  - § 143 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Anfechtungserklärung, § 143 BGB
+    hinweis: Gegenüber dem Anfechtungsgegner; bei Verträgen der andere Vertragsteil.
+  - label: II. Anfechtungsgrund, § 123 Abs. 1 BGB
+    children:
+    - label: 1. Arglistige Täuschung
+      children:
+      - label: a) Täuschungshandlung (Vorspiegeln, Entstellen oder Verschweigen
+          bei Aufklärungspflicht)
+      - label: b) Irrtum
+      - label: c) Kausalität
+      - label: d) Arglist (Vorsatz, auch bedingt)
+      - label: e) Rechtswidrigkeit
+    - label: 2. Widerrechtliche Drohung
+      children:
+      - label: a) Inaussichtstellen eines Übels
+      - label: b) Widerrechtlichkeit (Mittel, Zweck, Mittel-Zweck-Relation)
+      - label: c) Kausalität
+  - label: III. Täuschung durch Dritten, § 123 Abs. 2 BGB
+    hinweis: Dritter ist nicht, wer auf Seiten des Empfängers steht
+      (Verhandlungsgehilfe, Vertrauensperson). Kennen oder Kennenmüssen.
+  - label: IV. Anfechtungsfrist, § 124 BGB
+    hinweis: Ein Jahr ab Entdeckung der Täuschung bzw. ab Ende der Zwangslage;
+      zehn Jahre Höchstfrist.
+  - label: V. Rechtsfolge - Nichtigkeit von Anfang an, § 142 Abs. 1 BGB
+    hinweis: Kein Schadensersatz nach § 122 BGB; Rückabwicklung nach §§ 812 ff. BGB.
+faelle:
+- slug: zr-fall-at-arg-buergschaft
+  title: Die getäuschte Bürgin
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Die Bank G gewährt dem Unternehmer S ein Darlehen über 50.000 Euro. Die
+    Freundin B des S unterzeichnet schriftlich eine Bürgschaftserklärung zugunsten der
+    G. Zuvor hat S der B erklärt, das Darlehen sei durch eine Grundschuld auf seinem
+    Betriebsgrundstück voll abgesichert und die Bürgschaft nur eine Formalie.
+    Tatsächlich ist die Grundschuld bereits für andere Gläubiger ausgeschöpft, was S
+    wusste. G wusste davon nichts und hatte keinen Anlass zu Zweifeln. Zwei Monate später
+    erfährt B die Wahrheit und erklärt gegenüber G die Anfechtung der Bürgschaft.
+    G verlangt, nachdem S nicht zahlt, Zahlung von B. Unterstellt, die Bürgschaft ist
+    nicht aus anderen Gründen unwirksam.
+  question: Ist die Bürgschaft wirksam angefochten worden, sodass G nicht aus § 765 Abs.
+    1 BGB von B Zahlung verlangen kann?
+  steps:
+  - prompt: Formuliere den Obersatz.
+    erwartung: >-
+      Der Anspruch der G gegen B aus § 765 Abs. 1 BGB könnte durch eine Anfechtung
+      der Bürgschaftserklärung nach § 123 Abs. 1 BGB, § 142 Abs. 1 BGB als von Anfang an
+      nichtig anzusehen sein.
+  - prompt: Liegt eine arglistige Täuschung vor?
+    erwartung: >-
+      Ja. S hat B über eine Tatsache (Absicherung durch Grundschuld) getäuscht, die
+      Täuschung rief einen Irrtum hervor und war für die Bürgschaftserklärung kausal.
+      S handelte vorsätzlich.
+  - prompt: Ist S Dritter im Sinne des § 123 Abs. 2 BGB?
+    erwartung: >-
+      Ja. Erklärungsempfänger der Bürgschaftserklärung ist G. S, der Hauptschuldner, ist
+      nicht auf Seiten der G beteiligt; er ist weder Vertreter noch Verhandlungsgehilfe
+      der G und damit Dritter.
+  - prompt: Konnte G die Täuschung kennen oder kennen müssen?
+    erwartung: >-
+      Nein. G wusste nichts und hatte keinen Anlass zu Zweifeln. Die Voraussetzungen des
+      § 123 Abs. 2 S. 1 BGB sind deshalb nicht erfüllt; die Anfechtung gegenüber G ist
+      nicht begründet.
+  - prompt: Ergebnis und Anschlussfrage?
+    erwartung: >-
+      Die Anfechtung nach § 123 BGB scheitert, die Bürgschaft bleibt wirksam. G kann
+      von B aus § 765 Abs. 1 BGB Zahlung verlangen. Die Frist des § 124 BGB wäre
+      gewahrt gewesen, ist aber ohne Anfechtungsgrund unerheblich. Hätte ein
+      Mitarbeiter der G die Täuschung gekannt, wäre die Kenntnis der G zuzurechnen
+      und die Anfechtung begründet.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Arglistige Täuschung durch S bejaht (Tatsache, Irrtum, Kausalität, Vorsatz)
+      weight: 2.0
+      required: true
+      norms:
+      - § 123 Abs. 1 BGB
+      keywords:
+      - "arglistige Täuschung"
+      - "§ 123 Abs. 1"
+      - "Kausalität"
+      - "Irrtum"
+      - "Vorsatz"
+      card_slugs:
+      - zr-at-arg-taeuschung
+      - zr-at-arg-kausalitaet
+    - id: p2
+      label: Täuschung durch Dritten - S als Dritter, § 123 Abs. 2 S. 1 BGB
+      weight: 3.0
+      required: true
+      norms:
+      - § 123 Abs. 2 S. 1 BGB
+      keywords:
+      - "§ 123 Abs. 2"
+      - "Täuschung durch einen Dritten"
+      - "Dritter"
+      - "kannte oder kennen musste"
+      - "Hauptschuldner ist Dritter"
+      card_slugs:
+      - zr-at-arg-dritter-123-2
+    - id: p3
+      label: Keine Kenntnis oder fahrlässige Unkenntnis der G, daher keine wirksame Anfechtung
+      weight: 2.0
+      required: true
+      keywords:
+      - "Kennenmüssen"
+      - "gutgläubig"
+      - "Anfechtung scheitert"
+      - "Bürgschaft bleibt wirksam"
+      - "§ 765 Abs. 1"
+      card_slugs:
+      - zr-at-arg-dritter-123-2
+    - id: p4
+      label: Anfechtungsfrist nach § 124 BGB eingehalten
+      weight: 1.0
+      required: false
+      norms:
+      - § 124 BGB
+      keywords:
+      - "§ 124"
+      - "Jahresfrist"
+      - "Entdeckung der Täuschung"
+      card_slugs:
+      - zr-at-arg-frist-124
