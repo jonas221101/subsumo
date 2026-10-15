@@ -20,15 +20,15 @@ cards:
     nichts Abweichendes bestimmen (§ 72 Abs. 1 VwVfG). Das Verfahren besteht aus dem Anhörungsverfahren
     (§ 73 VwVfG: Plan des Vorhabenträgers, Auslegung, Einwendungen, Stellungnahmen der Behörden,
     Erörterung, Stellungnahme der Anhörungsbehörde) und der Entscheidung der Planfeststellungsbehörde
-    durch Planfeststellungsbeschluss (§ 74 VwVfG), der Verwaltungsakt ist. Bei Vorhaben von
-    unwesentlicher Bedeutung genügt statt der Planfeststellung eine Plangenehmigung (§ 74
-    Abs. 6 VwVfG). Die Landesverwaltungsverfahrensgesetze enthalten entsprechende Vorschriften;
+    durch Planfeststellungsbeschluss (§ 74 VwVfG), der Verwaltungsakt ist. Unter den Voraussetzungen des § 74a VwVfG kann statt des Planfeststellungsbeschlusses eine Plangenehmigung erteilt werden;
+    in Fällen von unwesentlicher Bedeutung entfallen Planfeststellung und Plangenehmigung (§ 74b VwVfG). Die Landesverwaltungsverfahrensgesetze enthalten entsprechende Vorschriften;
     die Fachplanungsgesetze der Länder weichen im Einzelnen ab.
   norms:
   - § 72 VwVfG
   - § 73 VwVfG
   - § 74 VwVfG
-  - § 74 Abs. 6 VwVfG
+  - § 74a VwVfG
+  - § 74b VwVfG
   quellen:
   - VwVfG, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -40,18 +40,18 @@ cards:
     Der Planfeststellungsbeschluss hat Konzentrationswirkung: Neben ihm sind andere behördliche
     Entscheidungen, insbesondere öffentlich-rechtliche Genehmigungen, Verleihungen, Erlaubnisse,
     Bewilligungen, Zustimmungen und Planfeststellungen nicht erforderlich (§ 75 Abs. 1 S.
-    1 VwVfG). Die Konzentration ist formell, das heißt die materiellen Anforderungen der konzentrierten
+    2 VwVfG). Die Konzentration ist formell, das heißt die materiellen Anforderungen der konzentrierten
     Genehmigungen bleiben zu beachten; für wasserrechtliche Erlaubnisse und Bewilligungen enthält das Wasserhaushaltsgesetz Sonderregeln.
     Zudem hat der Beschluss Gestaltungswirkung: Er regelt alle öffentlich-rechtlichen Beziehungen
     zwischen dem Vorhabenträger und den durch den Plan Betroffenen rechtsgestaltend (§ 75
-    Abs. 1 S. 2 VwVfG). Nach § 75 Abs. 2 S. 1 VwVfG sind nach Unanfechtbarkeit Ansprüche auf
+    Abs. 1 S. 3 VwVfG). Nach § 75 Abs. 4 S. 1 VwVfG sind nach Unanfechtbarkeit Ansprüche auf
     Unterlassung, Beseitigung oder Änderung ausgeschlossen (Ausschlusswirkung gegenüber privatrechtlichen
     Abwehransprüchen). Bei nicht voraussehbaren Wirkungen sind Schutzvorkehrungen oder Entschädigung
-    vorgesehen (§ 75 Abs. 2 S. 2 bis 4 VwVfG). Daneben besteht enteignungsrechtliche Vorwirkung
+    vorgesehen (§ 75 Abs. 4 S. 2 bis 5 VwVfG). Daneben besteht enteignungsrechtliche Vorwirkung
     nach Fachgesetz.
   norms:
   - § 75 Abs. 1 VwVfG
-  - § 75 Abs. 2 VwVfG
+  - § 75 Abs. 4 VwVfG
   quellen:
   - VwVfG, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -100,19 +100,19 @@ cards:
   stand: 2026-10
 - slug: or-vwr-plan-planerhaltung-75-abs1a
   type: norm
-  front: Welche Folgen haben Fehler im Planfeststellungsbeschluss (§ 75 Abs. 1a VwVfG)?
+  front: Welche Folgen haben Fehler im Planfeststellungsbeschluss (§ 75 Abs. 2 VwVfG)?
   back: >-
     Mängel bei der Abwägung sind nur erheblich, wenn sie offensichtlich und auf das Abwägungsergebnis
-    von Einfluss gewesen sind, § 75 Abs. 1a S. 1 VwVfG. Erhebliche Mängel führen nur dann
+    von Einfluss gewesen sind, § 75 Abs. 2 S. 1 VwVfG. Erhebliche Mängel führen nur dann
     zur Aufhebung des Planfeststellungsbeschlusses oder zur Feststellung seiner Rechtswidrigkeit
     und Nichtvollziehbarkeit, wenn sie nicht durch Planergänzung oder durch ein ergänzendes
-    Verfahren behoben werden können, § 75 Abs. 1a S. 2 VwVfG (Planerhaltungsgrundsatz). Der
+    Verfahren behoben werden können, § 75 Abs. 2 S. 2 VwVfG (Planerhaltungsgrundsatz). Der
     Kläger hat daher regelmäßig nur Anspruch auf Planergänzung (Schutzauflagen nach § 74 Abs.
     2 S. 2 VwVfG) und nicht auf Aufhebung, wenn der Fehler behebbar ist und das Gesamtkonzept
     nicht berührt. Bei Verfahrensfehlern ist § 46 VwVfG zu beachten. Maßgeblich ist die Sach-
     und Rechtslage im Zeitpunkt des Beschlusses.
   norms:
-  - § 75 Abs. 1a VwVfG
+  - § 75 Abs. 2 VwVfG
   - § 74 Abs. 2 S. 2 VwVfG
   - § 46 VwVfG
   quellen:
@@ -133,11 +133,11 @@ cards:
     und auf Einhaltung drittschützender Normen. Zuständig ist wegen der Bedeutung der Vorhaben
     oft das Oberverwaltungsgericht oder das Bundesverwaltungsgericht in erster Instanz (§
     48, § 50 VwGO). Einwendungen müssen im Anhörungsverfahren rechtzeitig erhoben werden;
-    nach Ablauf der Einwendungsfrist sind sie nach § 73 Abs. 4 S. 3 VwVfG ausgeschlossen (materielle
+    nach Ablauf der Einwendungsfrist sind sie nach § 73 Abs. 2 VwVfG ausgeschlossen (materielle
     Präklusion), was unionsrechtlich und im Umweltrecht eingeschränkt wurde.
   norms:
   - § 42 VwGO
-  - § 73 Abs. 4 VwVfG
+  - § 73 Abs. 2 VwVfG
   - § 48 VwGO
   - § 50 VwGO
   - Art. 14 Abs. 3 GG
@@ -238,7 +238,7 @@ schemata:
     - label: 2. Planungsleitsätze (zwingendes Recht) und Optimierungsgebote
     - label: 3. Abwägungsgebot (Rechtsstaatsprinzip, Fachplanungsrecht)
       hinweis: Abwägungsausfall, -defizit, -fehleinschätzung, -disproportionalität.
-  - label: 'IV. Fehlerfolgen: Planergänzung vor Aufhebung, § 75 Abs. 1a VwVfG'
+  - label: 'IV. Fehlerfolgen: Planergänzung vor Aufhebung, § 75 Abs. 2 VwVfG'
     hinweis: Nur erhebliche Abwägungsfehler; Planerhaltung.
   - label: 'V. Wirkungen: Konzentration, Gestaltung, Ausschluss privatrechtlicher Abwehransprüche,
       § 75 VwVfG'
@@ -269,9 +269,9 @@ faelle:
       drittschützender Immissionsvorschriften zu. Die Verletzung ist möglich, § 42 Abs. 2
       VwGO. Seine Einwendungen waren rechtzeitig, eine Präklusion greift nicht.
   - prompt: Liegt ein Fehler im Planfeststellungsbeschluss vor?
-    erwartung: 'Ja, es liegt ein Abwägungsdefizit hinsichtlich der Lärmbelange vor: Die Behörde hat den relevanten Belang des Lärmschutzes nicht ermittelt und nicht in die Abwägung eingestellt. Der Mangel ist offensichtlich und auf das Ergebnis von Einfluss (§ 75 Abs. 1a S. 1 VwVfG), zudem werden drittschützende Immissionsgrenzwerte überschritten.'
+    erwartung: 'Ja, es liegt ein Abwägungsdefizit hinsichtlich der Lärmbelange vor: Die Behörde hat den relevanten Belang des Lärmschutzes nicht ermittelt und nicht in die Abwägung eingestellt. Der Mangel ist offensichtlich und auf das Ergebnis von Einfluss (§ 75 Abs. 2 S. 1 VwVfG), zudem werden drittschützende Immissionsgrenzwerte überschritten.'
   - prompt: Führt der Fehler zur Aufhebung des Beschlusses?
-    erwartung: Nein. Nach § 75 Abs. 1a S. 2 VwVfG kommt eine Aufhebung nur in Betracht, wenn
+    erwartung: Nein. Nach § 75 Abs. 2 S. 2 VwVfG kommt eine Aufhebung nur in Betracht, wenn
       der Mangel nicht durch Planergänzung oder ein ergänzendes Verfahren behoben werden kann.
       Hier lässt sich der Mangel durch Schutzvorkehrungen (Lärmschutzwand) beheben (§ 74 Abs.
       2 S. 2 VwVfG). A hat nur Anspruch auf Planergänzung; sein Aufhebungsantrag ist auszulegen
@@ -312,15 +312,15 @@ faelle:
       card_slugs:
       - or-vwr-plan-abwaegungsgebot
     - id: p3
-      label: 'Planerhaltung: Planergänzung statt Aufhebung nach § 75 Abs. 1a S. 2 VwVfG'
+      label: 'Planerhaltung: Planergänzung statt Aufhebung nach § 75 Abs. 2 S. 2 VwVfG'
       weight: 3.0
       required: true
       norms:
-      - § 75 Abs. 1a VwVfG
+      - § 75 Abs. 2 VwVfG
       - § 74 Abs. 2 S. 2 VwVfG
       keywords:
       - Planergänzung
-      - § 75 Abs. 1a S. 2 VwVfG
+      - § 75 Abs. 2 S. 2 VwVfG
       - ergänzendes Verfahren
       - Schutzauflagen
       - Planerhaltung

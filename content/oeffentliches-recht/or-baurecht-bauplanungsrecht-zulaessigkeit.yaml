@@ -41,10 +41,14 @@ cards:
     Wohls der Allgemeinheit, städtebauliche Vertretbarkeit oder eine offenbar nicht beabsichtigte Härte.
     Zusätzlich muss die Abweichung unter Würdigung nachbarlicher Interessen mit den öffentlichen Belangen
     vereinbar sein. Der Unterschied: Die Ausnahme ist im Plan vorgesehen, die Befreiung eine
-    nicht planmäßige Abweichung. Daneben ermöglicht seit 2025 der befristete
-    § 246e BauGB („Bau-Turbo“) für den Wohnungsbau unter Mitwirkung der Gemeinde
-    weitere Abweichungen; er ist in der Klausur nur bei entsprechendem Hinweis
-    im Sachverhalt zu prüfen.
+    nicht planmäßige Abweichung. Für den Wohnungsbau kann die Gemeinde
+    zudem einer Befreiung zustimmen (§ 31 Abs. 3 BauGB). Daneben ermöglicht der befristete
+    § 246e BauGB („Bau-Turbo“) mit Zustimmung der Gemeinde bis zum 31.12.2030 Abweichungen von den
+    Vorschriften des BauGB, wenn sie unter Würdigung nachbarlicher Interessen mit den öffentlichen
+    Belangen vereinbar sind und der Errichtung, Erweiterung oder Nutzungsänderung zu Wohnzwecken
+    dienen (§ 246e Abs. 1 BauGB); im Außenbereich nur im räumlichen Zusammenhang mit Flächen nach
+    § 30 oder § 34 (Abs. 3). Er ist in der Klausur nur bei entsprechendem Hinweis im Sachverhalt
+    zu prüfen.
   norms:
   - § 30 Abs. 1 BauGB
   - § 31 Abs. 1 BauGB
@@ -154,7 +158,7 @@ cards:
     Teil der Betriebsfläche einnehmen (Nr. 1), gartenbauliche Erzeugung (Nr. 2), Vorhaben der öffentlichen Versorgung
     (Nr. 3), Vorhaben, die wegen ihrer besonderen Anforderungen, ihrer nachteiligen Wirkung auf die Umgebung oder
     ihrer besonderen Zweckbestimmung nur im Außenbereich ausgeführt werden sollen (Nr. 4), sowie Anlagen der
-    Windenergie (Nr. 5) und weitere Vorhaben der Energiegewinnung. Ein Vorhaben „dient“ dem Betrieb, wenn ein
+    Windenergie, Geothermie und Wasserenergie (Nr. 5) und weitere Vorhaben der Energiegewinnung und -speicherung (Nr. 6 bis 12). Ein Vorhaben „dient“ dem Betrieb, wenn ein
     vernünftiger Landwirt es unter Berücksichtigung des Gebots größtmöglicher Schonung des Außenbereichs
     auch errichten würde und es dem Betrieb zu dienen bestimmt und in angemessenem Umfang zugeordnet ist.
   norms:
@@ -196,9 +200,13 @@ cards:
     überprüfbar. Ob ein Flächennutzungsplan einem privilegierten Vorhaben entgegensteht, richtet sich nach dem Planvorbehalt des
     § 35 Abs. 3 S. 3 BauGB (Konzentrationsflächenplanung, vor allem bei der Windenergie, mit Ausschlusswirkung für
     andere Standorte); allgemeine Darstellungen des Plans verdrängen die Privilegierung nicht.
-    Für Windenergieanlagen ist dieser Planvorbehalt seit 2023 durch § 249 BauGB und das
-    Windenergieflächenbedarfsgesetz modifiziert: Ob die Ausschlusswirkung greift, hängt
-    davon ab, ob die gesetzlichen Flächenziele erreicht sind.
+    Für Windenergieanlagen ist dieser Planvorbehalt durch § 249 BauGB und das
+    Windenergieflächenbedarfsgesetz modifiziert: § 35 Abs. 3 S. 3 BauGB ist auf Windenergievorhaben
+    nach § 35 Abs. 1 Nr. 5 nicht anzuwenden (§ 249 Abs. 1 BauGB); ist ein Flächenbeitragswert des Landes
+    erreicht, sind solche Vorhaben außerhalb der Windenergiegebiete nur noch ausnahmsweise nach
+    § 35 Abs. 2 zulässig (§ 249 Abs. 2 BauGB); werden die Flächenziele zum Stichtag nicht erreicht,
+    können Darstellungen und Ziele den Vorhaben nicht mehr entgegengehalten werden (§ 249 Abs. 7 BauGB).
+    Die Länder können Mindestabstände bis höchstens 1 000 m vorsehen (§ 249 Abs. 9 BauGB).
   norms:
   - § 35 Abs. 1 BauGB
   - § 35 Abs. 3 BauGB
