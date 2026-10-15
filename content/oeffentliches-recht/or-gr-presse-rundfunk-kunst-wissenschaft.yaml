@@ -1,0 +1,324 @@
+topic:
+  slug: or-gr-presse-rundfunk-kunst-wissenschaft
+  area: oeffentliches-recht
+  title: 'Art. 5 Abs. 1 S. 2 und Abs. 3 GG: Presse-, Rundfunk-, Kunst- und Wissenschaftsfreiheit'
+  parent: or-grundrechte
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-gr-prwk-pressefreiheit-schutzbereich
+  type: definition
+  front: "Was schützt die Pressefreiheit (Art. 5 Abs. 1 S. 2 Alt. 1 GG)?"
+  back: >-
+    Presse sind alle zur Verbreitung geeigneten und bestimmten Druckerzeugnisse,
+    unabhängig von ihrem Inhalt und Niveau; der Pressebegriff ist formal und
+    wird auf digitale Publikationen übertragen, die nach Funktion und Wirkung der
+    Presse vergleichbar sind. Geschützt ist die gesamte Tätigkeit von der
+    Beschaffung der Information über Redaktion und Herstellung bis zum Vertrieb
+    des Presseerzeugnisses. Dazu gehören das Redaktionsgeheimnis, der
+    Informantenschutz und das Vertrauensverhältnis zwischen Presse und Informanten
+    (BVerfGE 20, 162, Spiegel). Die Pressefreiheit hat zugleich eine objektiv-
+    rechtliche Dimension: Sie gewährleistet die institutionelle Eigenständigkeit
+    der Presse und eine freie, unabhängige, nicht staatlich gelenkte Presse; der
+    Staat muss eine Meinungsvielfalt sichern. Sie schützt Verleger wie
+    Journalisten, auch juristische Personen (Art. 19 Abs. 3 GG). Ein Zensurverbot
+    (Art. 5 Abs. 1 S. 3 GG) ergänzt den Schutz.
+  norms:
+  - Art. 5 Abs. 1 S. 2 GG
+  - Art. 5 Abs. 1 S. 3 GG
+  quellen:
+  - BVerfGE 20, 162 (Spiegel)
+  - GG, amtliche Fassung
+- slug: or-gr-prwk-redaktionsgeheimnis-cicero
+  type: rechtsprechung
+  front: "Welche Grenzen setzt die Pressefreiheit der Durchsuchung von Redaktionsräumen (Cicero)?"
+  back: >-
+    Im Cicero-Urteil (BVerfGE 117, 244, 2007) ging es um die Durchsuchung der
+    Redaktionsräume und der Wohnung eines Journalisten, nachdem ein Magazin aus
+    einem als geheim eingestuften Bericht des BKA zitiert hatte. Das BVerfG sah
+    darin eine Verletzung der Pressefreiheit. Der Schutz des Vertrauensverhältnisses
+    zu den Informanten gehört zum Kern der Pressefreiheit. Durchsuchungen und
+    Beschlagnahmen in Redaktionen sind daher nur zulässig, wenn hinreichende
+    Verdachtsmomente gegen den Journalisten selbst bestehen; die bloße Veröffentlichung
+    eines Dienstgeheimnisses begründet keinen Verdacht der Beihilfe zum
+    Geheimnisverrat. Eine Durchsuchung, die allein oder vorwiegend dem Zweck dient,
+    den Informanten aufzudecken, verletzt Art. 5 Abs. 1 S. 2 GG. Der Gesetzgeber
+    hat dies später in § 353b Abs. 3a StGB nachvollzogen, der die bloße
+    Entgegennahme und Veröffentlichung nicht rechtswidrig sein lässt.
+  norms:
+  - Art. 5 Abs. 1 S. 2 GG
+  - § 353b Abs. 3a StGB
+  - § 102 StPO
+  quellen:
+  - BVerfGE 117, 244 (Cicero)
+- slug: or-gr-prwk-schranken-presse-rundfunk
+  type: norm
+  front: "Welche Schranken gelten für Presse- und Rundfunkfreiheit?"
+  back: >-
+    Presse- und Rundfunkfreiheit stehen unter dem Schrankenvorbehalt des Art. 5
+    Abs. 2 GG. Sie sind zulässig begrenzbar durch allgemeine Gesetze, gesetzliche
+    Bestimmungen zum Schutz der Jugend und das Recht der persönlichen Ehre. Wie bei
+    der Meinungsfreiheit gilt die Wechselwirkungslehre: Das einschränkende Gesetz
+    muss im Licht der Bedeutung des Grundrechts ausgelegt und gewichtet werden. Allgemeine
+    Gesetze sind solche, die sich nicht gegen eine bestimmte Meinung oder gegen die
+    Presse als solche richten, sondern ein schlechthin zu schützendes Rechtsgut
+    schützen, also etwa die Normen der StPO, des Strafrechts, des Datenschutz- oder
+    Persönlichkeitsrechts. Presse- und Rundfunkfreiheit verleihen kein
+    Privileg gegenüber dem allgemeinen Recht, etwa im Steuer- oder Arbeitsrecht;
+    Sonderregeln wie das Zeugnisverweigerungsrecht (§ 53 Abs. 1 Nr. 5 StPO)
+    gibt das einfache Recht. Die Verhältnismäßigkeit ist unter besonderer
+    Berücksichtigung der öffentlichen Aufgabe der Presse zu prüfen.
+  norms:
+  - Art. 5 Abs. 2 GG
+  - Art. 5 Abs. 1 S. 2 GG
+  - § 53 Abs. 1 Nr. 5 StPO
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: or-gr-prwk-rundfunkfreiheit-dienende-freiheit
+  type: definition
+  front: "Was bedeutet es, dass die Rundfunkfreiheit eine „dienende Freiheit“ ist?"
+  back: >-
+    Rundfunk im Sinne des Art. 5 Abs. 1 S. 2 Alt. 2 GG ist die an eine
+    unbestimmte Vielzahl von Personen gerichtete Verbreitung von Darbietungen
+    in Wort, Ton und Bild mittels elektromagnetischer Schwingungen; auch
+    Telemedien mit rundfunkähnlicher Wirkung können erfasst sein. Anders als
+    die Pressefreiheit ist die Rundfunkfreiheit nach der Rechtsprechung des BVerfG
+    eine dienende Freiheit: Sie dient der freien individuellen und öffentlichen
+    Meinungsbildung (Art. 5 Abs. 1 GG insgesamt). Wegen der besonderen
+    Breitenwirkung und Suggestivkraft und des beschränkten Frequenzspektrums ist der
+    Gesetzgeber verpflichtet, eine positive Ordnung zu schaffen, die Vielfalt
+    und Staatsferne sichert. Die Rundfunkfreiheit ist deshalb keine Freiheit
+    zur beliebigen Betätigung wie ein Abwehrrecht, sondern eine
+    ausgestaltungsbedürftige Garantie. Die Gestaltungsfreiheit des Gesetzgebers hat
+    ihrerseits Grenzen, nämlich die Sicherung der Vielfalt und der Programmfreiheit.
+  norms:
+  - Art. 5 Abs. 1 S. 2 GG
+  quellen:
+  - BVerfGE 12, 205 (1. Rundfunkentscheidung)
+  - Eigenformulierung Redaktion
+- slug: or-gr-prwk-duale-ordnung-staatsferne
+  type: rechtsprechung
+  front: "Was verlangen Staatsferne und duale Rundfunkordnung, und was hat das BVerfG zum ZDF-Staatsvertrag und zum Rundfunkbeitrag entschieden?"
+  back: >-
+    Das BVerfG hält an der dualen Rundfunkordnung fest, nach der der öffentlich-
+    rechtliche Rundfunk die Grundversorgung (inhaltliche Vielfalt, Qualität,
+    Staatsferne) sicherstellt und der private Rundfunk unter geringeren
+    Anforderungen zulässig ist, solange die Grundversorgung gewährleistet wird.
+    Das Gebot der Staatsferne verbietet es, dass staatliche oder staatsnahe
+    Vertreter die Gremien der Anstalten dominieren; im ZDF-Urteil (BVerfGE 136, 9,
+    2014) hat das Gericht den Anteil staatlicher und staatsnaher Mitglieder in den
+    Aufsichtsgremien auf ein Drittel begrenzt. Der Rundfunkbeitrag ist nach BVerfGE
+    149, 222 (2018) im Wesentlichen verfassungsgemäß, weil er als Vorzugslast
+    die Möglichkeit der Nutzung des Angebots abgilt; verfassungswidrig war
+    nur die fehlende Befreiung für Zweitwohnungen. Die Rundfunkanstalten sind
+    ausnahmsweise grundrechtsfähig. Die Finanzierung muss funktionsgerecht und
+    frei von Einflussnahme erfolgen.
+  norms:
+  - Art. 5 Abs. 1 S. 2 GG
+  - Art. 105 GG
+  quellen:
+  - BVerfGE 136, 9 (ZDF-Staatsvertrag)
+  - BVerfGE 149, 222 (Rundfunkbeitrag)
+- slug: or-gr-prwk-kunstbegriff
+  type: streitstand
+  front: "Wie wird Kunst im Sinne des Art. 5 Abs. 3 S. 1 GG definiert?"
+  back: >-
+    Das Grundgesetz definiert Kunst nicht. Das BVerfG nähert sich mit einem offenen
+    Kunstbegriff und drei Ansätzen. Der materielle Kunstbegriff stellt auf das
+    Wesen künstlerischer Tätigkeit ab: die freie schöpferische Gestaltung, in der
+    Eindrücke, Erfahrungen und Erlebnisse des Künstlers durch das Medium einer
+    bestimmten Formensprache zu unmittelbarer Anschauung gebracht werden
+    (BVerfGE 30, 173). Der formale Kunstbegriff knüpft an anerkannte Werktypen
+    (Malerei, Skulptur, Dichtung) an. Der Zeichenbegriff hebt hervor, dass Kunst
+    mehrdeutig ist und nicht abschließend interpretiert werden kann (BVerfGE 67,
+    213, Anachronistischer Zug). Das Gericht kombiniert diese Ansätze; der Staat darf
+    keine Niveaukontrolle vornehmen und Kunst nicht nach Gefälligkeit oder
+    Wert bewerten. Streit besteht, ob Kunst einen eigenen Begriff braucht, weil ein zu
+    weiter Begriff die vorbehaltlose Gewährleistung auf zu viele Verhaltensweisen
+    ausdehnt (Kunst als Deckmantel).
+  norms:
+  - Art. 5 Abs. 3 S. 1 GG
+  quellen:
+  - BVerfGE 30, 173 (Mephisto)
+  - BVerfGE 67, 213
+- slug: or-gr-prwk-kunstfreiheit-werk-wirkbereich-mephisto
+  type: rechtsprechung
+  front: "Was besagt die Mephisto-Entscheidung zu Werkbereich und Wirkbereich der Kunstfreiheit?"
+  back: >-
+    Im Mephisto-Beschluss (BVerfGE 30, 173, 1971) hat das BVerfG die Kunstfreiheit
+    als vorbehaltloses Grundrecht beschrieben, das nicht durch die Schranken des Art. 5
+    Abs. 2 GG, auch nicht durch die verfassungsmäßige Ordnung oder das
+    Sittengesetz des Art. 2 Abs. 1 GG, eingeschränkt wird. Geschützt ist nicht
+    nur die künstlerische Betätigung (Werkbereich), sondern auch die Darbietung
+    und Verbreitung des Kunstwerks, die für die Begegnung mit dem Publikum
+    unentbehrlich ist (Wirkbereich); deshalb können sich auch Verleger und
+    Galeristen auf Art. 5 Abs. 3 GG berufen. Schranken ergeben sich nur aus
+    kollidierendem Verfassungsrecht, im Fall das postmortale Persönlichkeitsrecht
+    (Art. 1 Abs. 1 GG). Zwischen beiden Rechten ist im Wege der praktischen
+    Konkordanz abzuwägen. Die Verfassungsbeschwerde des Verlags gegen das Verbot des Romans blieb wegen Stimmengleichheit im Senat (4:4) ohne Erfolg; die tragende Argumentation und das Ergebnis sind in der Literatur teilweise kritisiert worden.
+  norms:
+  - Art. 5 Abs. 3 S. 1 GG
+  - Art. 1 Abs. 1 GG
+  quellen:
+  - BVerfGE 30, 173 (Mephisto)
+- slug: or-gr-prwk-wissenschaftsbegriff-hochschulurteil
+  type: definition
+  front: "Was schützt die Wissenschaftsfreiheit (Art. 5 Abs. 3 S. 1 GG), und wie wird Wissenschaft definiert?"
+  back: >-
+    Wissenschaft ist nach dem BVerfG alles, was nach Inhalt und Form als ernsthafter,
+    planmäßiger Versuch zur Ermittlung der Wahrheit anzusehen ist
+    (BVerfGE 35, 79, Hochschulurteil). Sie umfasst Forschung und Lehre. Forschung
+    ist die geistige Tätigkeit mit dem Ziel, in methodischer, systematischer und
+    nachprüfbarer Weise neue Erkenntnisse zu gewinnen. Lehre ist die
+    wissenschaftlich fundierte Übermittlung der Erkenntnisse. Als
+    Abwehrrecht schützt Art. 5 Abs. 3 GG vor staatlicher Einflussnahme auf Fragestellung,
+    Methode und Bewertung der Ergebnisse. Das Grundrecht steht allen zu, die
+    wissenschaftlich tätig sind, nicht nur Professoren, sondern auch Doktoranden
+    und wissenschaftlichen Mitarbeitern. Es enthält zudem eine objektive
+    Wertentscheidung und verpflichtet den Staat, funktionsfähige Institutionen zur
+    Pflege der freien Wissenschaft bereitzustellen und Teilhabe zu sichern. Die
+    Hochschulen sind insoweit grundrechtsfähig.
+  norms:
+  - Art. 5 Abs. 3 S. 1 GG
+  quellen:
+  - BVerfGE 35, 79 (Hochschulurteil)
+- slug: or-gr-prwk-lehrfreiheit-treueklausel
+  type: norm
+  front: "Was bedeutet die Treueklausel des Art. 5 Abs. 3 S. 2 GG, und welche Schranken gelten für die Wissenschaftsfreiheit?"
+  back: >-
+    Art. 5 Abs. 3 S. 1 GG ist vorbehaltlos gewährleistet. Die Schranken des Art. 5
+    Abs. 2 GG gelten nicht; eine Beschränkung ist nur durch kollidierendes
+    Verfassungsrecht möglich, etwa die Grundrechte der Studierenden, die
+    Funktionsfähigkeit der Hochschule und Schutzpflichten für Leben und Gesundheit.
+    Die Treueklausel (Art. 5 Abs. 3 S. 2 GG), nach der die Freiheit der Lehre nicht
+    von der Treue zur Verfassung entbindet, ist kein Schrankenvorbehalt, sondern
+    verlangt, dass sich der Lehrende zur Verfassung nicht in Widerspruch setzt,
+    soweit sie in der Lehre zur Entfaltung kommt. Kritik an der Verfassung bleibt zulässig; erst die grundsätzliche Missachtung der Verfassungsordnung in der Lehre kann Maßnahmen rechtfertigen. Hochschulgesetze, die die akademische
+    Selbstverwaltung ausgestalten, müssen die Freiheit von Forschung und Lehre
+    wahren. 
+  norms:
+  - Art. 5 Abs. 3 S. 1 GG
+  - Art. 5 Abs. 3 S. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 35, 79
+schemata:
+- slug: or-schema-gr-prwk-pressefreiheit
+  title: Prüfung eines Eingriffs in Art. 5 Abs. 1 S. 2 GG (Presse, Rundfunk)
+  norms:
+  - Art. 5 Abs. 1 S. 2 GG
+  - Art. 5 Abs. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Schutzbereich
+    children:
+    - label: 1. Persönlich (Verleger, Journalisten, Rundfunkanstalten; Art. 19 Abs. 3 GG)
+    - label: 2. Sachlich
+      children:
+      - label: a) Presse - Druckerzeugnisse, Redaktionsgeheimnis, Informantenschutz
+      - label: b) Rundfunk - Programmfreiheit, dienende Freiheit
+  - label: II. Eingriff
+    hinweis: Durchsuchung, Beschlagnahme, Zeugniszwang oder Auskunftspflichten sind
+      Eingriffe in die Pressefreiheit, wenn sie die Redaktionsarbeit oder das
+      Vertrauensverhältnis zu Informanten beeinträchtigen.
+  - label: III. Rechtfertigung
+    children:
+    - label: 1. Schranke - allgemeines Gesetz (Art. 5 Abs. 2 GG)
+    - label: 2. Schranken-Schranken
+      children:
+      - label: a) Wechselwirkungslehre
+      - label: b) Verhältnismäßigkeit unter Berücksichtigung der öffentlichen Aufgabe der Presse
+        hinweis: Bei Durchsuchungen von Redaktionen sind hinreichende
+          Verdachtsmomente gegen den Journalisten selbst erforderlich (Cicero).
+  - label: IV. Ergebnis
+faelle:
+- slug: or-fall-gr-prwk-redaktionsdurchsuchung
+  title: Die Durchsuchung der Redaktion wegen eines internen Papiers
+  difficulty: 4
+  minutes: 50
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  facts: >-
+    Das Politmagazin M veröffentlicht einen Artikel, der aus einem amtlichen, als
+    Verschlusssache eingestuften Lagebericht einer Landesbehörde zitiert.
+    Daraufhin leitet die Staatsanwaltschaft ein Ermittlungsverfahren gegen
+    einen unbekannten Amtsträger wegen Verletzung eines Dienstgeheimnisses ein
+    und nimmt auch den Redakteur R, der den Artikel verfasst hat, wegen des Verdachts der Beihilfe in den Blick, allein gestützt auf die Veröffentlichung des Artikels. Das Amtsgericht ordnet die Durchsuchung der Redaktionsräume
+    und der Wohnung des R an. Ziel der Durchsuchung ist, Hinweise auf den
+    Informanten zu finden. R erhebt Verfassungsbeschwerde.
+  question: Wird R durch die Durchsuchungsanordnung in der Pressefreiheit verletzt?
+  steps:
+  - prompt: Ist der Schutzbereich des Art. 5 Abs. 1 S. 2 GG eröffnet, und liegt ein Eingriff vor?
+    erwartung: Ja. R ist Journalist und Magazin M ist Presse. Der Schutz erfasst die
+      Redaktionsarbeit einschließlich des Vertrauensverhältnisses zu den Informanten
+      und des Redaktionsgeheimnisses. Die Durchsuchung der Redaktionsräume ist ein
+      Eingriff, weil sie die Arbeit der Redaktion beeinträchtigt und die Informantenquelle
+      gefährdet.
+  - prompt: Welche Schranke greift?
+    erwartung: Die Durchsuchung stützt sich auf die Vorschriften der StPO (§§ 102
+      ff.), also ein allgemeines Gesetz im Sinne des Art. 5 Abs. 2 GG. Dieses muss nach
+      der Wechselwirkungslehre im Licht der Pressefreiheit angewendet werden.
+  - prompt: Ist die Durchsuchung verhältnismäßig?
+    erwartung: Nein. Die Veröffentlichung eines Dienstgeheimnisses begründet keinen
+      hinreichenden Verdacht der Beihilfe gegen den Journalisten; ein
+      Anfangsverdacht muss auf weitere Umstände gestützt sein. Die Durchsuchung diente
+      im Kern der Aufdeckung des Informanten und ist deshalb mit der Pressefreiheit
+      unvereinbar (Cicero-Entscheidung). R wird in Art. 5 Abs. 1 S. 2 GG verletzt.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Schutzbereich Pressefreiheit einschließlich Redaktionsgeheimnis und Informantenschutz; Eingriff durch Durchsuchung
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 5 Abs. 1 S. 2 GG
+      keywords:
+      - Pressefreiheit
+      - Redaktionsgeheimnis
+      - Informantenschutz
+      - Vertrauensverhältnis
+      - Art. 5 Abs. 1 S. 2 GG
+      card_slugs:
+      - or-gr-prwk-pressefreiheit-schutzbereich
+    - id: p2
+      label: Schranke allgemeines Gesetz (StPO) und Wechselwirkungslehre
+      weight: 1.5
+      required: false
+      norms:
+      - Art. 5 Abs. 2 GG
+      keywords:
+      - allgemeines Gesetz
+      - Wechselwirkungslehre
+      - Art. 5 Abs. 2 GG
+      - §§ 102 ff. StPO
+      card_slugs:
+      - or-gr-prwk-schranken-presse-rundfunk
+    - id: p3
+      label: Kein hinreichender Verdacht allein aufgrund der Veröffentlichung, Durchsuchung zur Quellenermittlung unverhältnismäßig
+      weight: 3.0
+      required: true
+      keywords:
+      - Cicero
+      - Beihilfe zum Geheimnisverrat
+      - Quellenermittlung
+      - Aufdeckung des Informanten
+      - hinreichender Verdacht
+      - § 353b Abs. 3a StGB
+      card_slugs:
+      - or-gr-prwk-redaktionsgeheimnis-cicero
+    - id: p4
+      label: Ergebnis - Verletzung der Pressefreiheit
+      weight: 1.0
+      required: false
+      keywords:
+      - Verletzung der Pressefreiheit
+      - Verletzung von Art. 5 Abs. 1 S. 2 GG
+      - unverhältnismäßig
