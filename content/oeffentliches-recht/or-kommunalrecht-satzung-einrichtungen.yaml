@@ -1,0 +1,358 @@
+topic:
+  slug: or-kommunalrecht-satzung-einrichtungen
+  area: oeffentliches-recht
+  title: Gemeindliche Satzung, öffentliche Einrichtungen, Anschluss- und Benutzungszwang
+  parent: oeffentliches-recht
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-kr-se-satzung-begriff
+  type: definition
+  front: Was ist eine kommunale Satzung, und woraus folgt die Satzungsbefugnis der Gemeinde?
+  back: >-
+    Eine Satzung ist eine Rechtsnorm, die eine juristische Person des öffentlichen Rechts im Rahmen der ihr
+    verliehenen Autonomie zur Regelung ihrer eigenen Angelegenheiten erlässt. Die Gemeinde hat Satzungshoheit
+    als Teil der Selbstverwaltung (Art. 28 Abs. 2 S. 1 GG). Die Gemeindeordnungen ermächtigen die Gemeinden
+    allgemein, ihre Angelegenheiten im Rahmen der Gesetze durch Satzung zu regeln (Generalklausel), und sehen
+    zusätzlich Einzelermächtigungen vor (Anschluss- und Benutzungszwang, Kommunalabgaben, Bebauungsplan
+    als Satzung nach § 10 Abs. 1 BauGB). Die Satzung wirkt nach außen gegenüber den Einwohnern und
+    steht im Rang unter dem Gesetz. Sie muss den Vorrang und den Vorbehalt des Gesetzes beachten.
+  norms:
+  - Art. 28 Abs. 2 S. 1 GG
+  - § 10 Abs. 1 BauGB
+  quellen:
+  - GG, amtliche Fassung
+  - Gemeindeordnungen der Länder (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-se-satzung-ermaechtigung
+  type: streitstand
+  front: Genügt die gemeindliche Satzungsgeneralklausel als Ermächtigung für belastende Satzungen?
+  back: >-
+    Die Generalklausel der Gemeindeordnung genügt für Satzungen, die nicht in Grundrechte eingreifen, etwa
+    für die Regelung der inneren Organisation und die Benutzung einer Einrichtung durch die Einwohner.
+    Belastende Satzungen, die in Freiheit und Eigentum der Bürger eingreifen (etwa Bußgeld,
+    Anschlusszwang, Abgaben), benötigen nach dem Vorbehalt des Gesetzes und der Wesentlichkeitstheorie eine
+    ausreichend bestimmte spezielle gesetzliche Ermächtigung, deren Inhalt, Zweck und Ausmaß hinreichend
+    bestimmt ist. Das folgt aus dem Rechtsstaats- und dem Demokratieprinzip (Facharztbeschluss, BVerfGE
+    33, 125); die Satzungsautonomie ändert daran nichts. Teilweise wird angenommen, dass die Generalklausel
+    auch für Grundrechtseingriffe genügt, wenn die Gemeinde nur ihre eigenen Angelegenheiten regelt. Die
+    Rechtsprechung folgt dem nicht, weil der Gemeinderat zwar demokratisch legitimiert ist, die
+    wesentlichen Entscheidungen aber vom Parlament getroffen werden müssen.
+  norms:
+  - Art. 20 Abs. 3 GG
+  - Art. 28 Abs. 2 S. 1 GG
+  quellen:
+  - BVerfGE 33, 125 (Facharztbeschluss)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-se-satzung-verfahren
+  type: norm
+  front: Wie kommt eine Satzung formell zustande?
+  back: >-
+    Zuständig für den Erlass ist die Gemeindevertretung (Gemeinderat, Rat); die Zuständigkeit ist nach allen
+    Gemeindeordnungen ausschließlich und nicht auf den Bürgermeister oder einen Ausschuss übertragbar. Der
+    Beschluss setzt eine ordnungsgemäß einberufene, beschlussfähige Sitzung, Beachtung der
+    Mitwirkungsverbote (Befangenheit) und den Beschluss mit der erforderlichen Mehrheit voraus. Die
+    Satzung wird danach vom Bürgermeister ausgefertigt (Bestätigung, dass der Text mit dem Beschluss
+    übereinstimmt und das Verfahren eingehalten wurde) und öffentlich bekannt gemacht, in der
+    nach der Hauptsatzung vorgeschriebenen Form. Sie tritt zum festgesetzten Zeitpunkt, mangels Bestimmung
+    am Tag nach der Bekanntmachung in Kraft. Einzelne Satzungen (z. B. bestimmte Abgabensatzungen) benötigen
+    zusätzlich eine aufsichtsbehördliche Genehmigung oder Anzeige.
+  norms:
+  - Art. 28 Abs. 2 S. 1 GG
+  quellen:
+  - Gemeindeordnungen der Länder (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-se-satzung-fehlerfolgen
+  type: definition
+  front: Welche Folgen haben formelle und materielle Fehler einer Satzung?
+  back: >-
+    Ein materieller Fehler, also ein Verstoß gegen höherrangiges Recht (Gesetz, Verfassung), führt
+    grundsätzlich zur Nichtigkeit der Satzung, soweit die Vorschrift nicht teilbar ist; sonst kann eine
+    Teilnichtigkeit eintreten, wenn der Rest sinnvoll bestehen bleibt und der Rat ihn auch allein
+    beschlossen hätte. Bei Verfahrens- und Formfehlern gilt dasselbe, jedoch haben die Gemeindeordnungen
+    Heilungs- und Unbeachtlichkeitsvorschriften geschaffen: Ein Verstoß gegen Verfahrens- oder
+    Formvorschriften der Gemeindeordnung ist nach Ablauf einer Frist (häufig ein Jahr) unbeachtlich, wenn er
+    nicht gegenüber der Gemeinde schriftlich gerügt wurde und die Gemeinde bei der Bekanntmachung auf diese
+    Rechtsfolge hingewiesen hat. Ausgenommen sind je nach Land die Fälle fehlender Ausfertigung oder
+    Bekanntmachung, Verstöße gegen die Genehmigungspflicht und die Mitwirkung befangener Mitglieder.
+    Ein Verstoß gegen höherrangiges materielles Recht wird durch die Frist nicht geheilt.
+  norms:
+  - Art. 20 Abs. 3 GG
+  quellen:
+  - Gemeindeordnungen der Länder (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-se-satzung-rechtsschutz
+  type: norm
+  front: Welche Rechtsschutzmöglichkeiten gibt es gegen eine kommunale Satzung?
+  back: >-
+    Der Bürger kann eine Satzung nicht unmittelbar durch Anfechtungsklage angreifen, weil sie eine Rechtsnorm
+    und kein Verwaltungsakt ist. Möglich ist die Normenkontrolle vor dem Oberverwaltungsgericht
+    (Verwaltungsgerichtshof) nach § 47 VwGO. Für Satzungen nach dem Baugesetzbuch folgt sie unmittelbar aus
+    § 47 Abs. 1 Nr. 1 VwGO; für sonstige Satzungen und Rechtsverordnungen nur, soweit das Landesrecht dies
+    bestimmt (§ 47 Abs. 1 Nr. 2 VwGO). Der Antrag ist binnen eines Jahres nach Bekanntmachung zu stellen,
+    § 47 Abs. 2 S. 1 VwGO; Antragsbefugt ist, wer geltend macht, durch die Norm oder ihre Anwendung in seinen
+    Rechten verletzt zu sein oder in absehbarer Zeit verletzt zu werden. Daneben kommt die Inzidentkontrolle
+    in einem Rechtsstreit gegen eine Vollzugsmaßnahme (z. B. einen Bescheid auf der Grundlage der Satzung)
+    in Betracht, ebenso eine Feststellungsklage nach § 43 VwGO gegen die Gemeinde.
+  norms:
+  - § 47 Abs. 1 VwGO
+  - § 47 Abs. 2 VwGO
+  - § 43 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-se-einrichtung-begriff
+  type: definition
+  front: Was ist eine öffentliche Einrichtung der Gemeinde, und wodurch entsteht sie?
+  back: >-
+    Eine öffentliche Einrichtung ist eine von der Gemeinde im öffentlichen Interesse unterhaltene Sachgesamtheit
+    (Anlage, Gebäude, auch Personal), die durch Widmung der Benutzung durch die Einwohner zur Verfügung
+    gestellt wird. Beispiele sind Stadthalle, Schwimmbad, Friedhof, Bibliothek, Kindergarten, Stadtbücherei
+    und Volksfest. Durch die Widmung legt die Gemeinde Zweck, Art und Umfang der Nutzung sowie den
+    Benutzerkreis fest. Die Widmung kann durch Satzung, Beschluss oder konkludent aufgrund einer
+    Verwaltungspraxis (tatsächliche Zulassung der Nutzung) erfolgen. Die Gemeinde hat bei der Schaffung der
+    Einrichtung und bei der Widmung einen weiten Gestaltungsspielraum; ist die Einrichtung aber geschaffen,
+    ist sie an die Widmung gebunden (Selbstbindung der Verwaltung, Art. 3 Abs. 1 GG). Die Wahl der
+    Organisationsform (Regiebetrieb, Eigengesellschaft) ändert daran nichts.
+  norms:
+  - Art. 28 Abs. 2 S. 1 GG
+  - Art. 3 Abs. 1 GG
+  quellen:
+  - Gemeindeordnungen der Länder (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-se-einrichtung-zulassungsanspruch
+  type: norm
+  front: Worauf stützt sich der Anspruch auf Zulassung zu einer öffentlichen Einrichtung, und wer ist anspruchsberechtigt?
+  back: >-
+    Die Gemeindeordnungen gewähren den Einwohnern (und Grundbesitzern) das Recht, die öffentlichen
+    Einrichtungen der Gemeinde im Rahmen des geltenden Rechts und der Widmung zu benutzen. Der Anspruch
+    umfasst juristische Personen und Personenvereinigungen, soweit sie im Gemeindegebiet ansässig sind. Auswärtige
+    haben nach den Gemeindeordnungen keinen Anspruch; ein solcher kann sich aber aus Art. 3 Abs. 1 GG
+    in Verbindung mit der Verwaltungspraxis ergeben, wenn die Gemeinde Auswärtige gewöhnlich zulässt. Für
+    politische Parteien gewährt § 5 Abs. 1 PartG einen Anspruch auf gleiche Behandlung bei der
+    Überlassung öffentlicher Einrichtungen, wenn die Gemeinde sie anderen Parteien zur Verfügung stellt; der
+    Umfang kann nach der Bedeutung der Partei abgestuft sein. Der Anspruch besteht nur im Rahmen der
+    Widmung und der vorhandenen Kapazität.
+  norms:
+  - Art. 3 Abs. 1 GG
+  - § 5 Abs. 1 PartG
+  quellen:
+  - Gemeindeordnungen der Länder (Landesrechtsportale)
+  - PartG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-se-einrichtung-zwei-stufen
+  type: streitstand
+  front: Was besagt die Zwei-Stufen-Theorie bei der Zulassung zur öffentlichen Einrichtung?
+  back: >-
+    Nach der Zwei-Stufen-Theorie ist die Entscheidung, ob jemand zur Einrichtung zugelassen wird (erste Stufe,
+    „Ob“), stets öffentlich-rechtlich und ergeht durch Verwaltungsakt. Die Ausgestaltung der Nutzung
+    (zweite Stufe, „Wie“, etwa Miete, Entgelt) kann hingegen öffentlich-rechtlich oder privatrechtlich
+    erfolgen, je nachdem, wie die Gemeinde die Benutzung organisiert hat. Zulassungsstreitigkeiten gehören
+    deshalb vor die Verwaltungsgerichte (Verpflichtungsklage, im Eilfall § 123 VwGO). Kritiker
+    (Einstufentheorie) wenden ein, die Trennung sei künstlich und die gesamte Benutzung einheitlich nach
+    öffentlichem Recht zu beurteilen, wenn die Einrichtung öffentlich-rechtlich gewidmet ist; die Rechtsprechung
+    hält an der Zwei-Stufen-Theorie für den Zulassungsanspruch fest. Das gilt auch, wenn die Gemeinde die
+    Einrichtung durch eine Eigengesellschaft in Privatrechtsform betreibt: Die Gemeinde muss dann auf die
+    Zulassung hinwirken.
+  norms:
+  - § 40 Abs. 1 VwGO
+  - § 123 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-se-einrichtung-kapazitaet
+  type: definition
+  front: Welche Grenzen hat der Zulassungsanspruch (Widmung, Kapazität, Gefahrenabwehr), und wie wird bei Engpässen entschieden?
+  back: >-
+    Der Anspruch besteht nur, soweit der Zweck der Veranstaltung von der Widmung gedeckt ist; die Gemeinde
+    darf die Zulassung nicht wegen der politischen Meinung oder Ausrichtung des Antragstellers verweigern,
+    solange er sich im Rahmen der Widmung hält und nicht gesetzlich verboten ist (Parteienprivileg des
+    Art. 21 Abs. 2 GG: ein Verbot ist dem Bundesverfassungsgericht vorbehalten). Er ist ferner durch die
+    vorhandene Kapazität begrenzt (Überbelegung). Bei konkurrierenden Anträgen entscheidet die Gemeinde nach
+    sachgerechten Kriterien, in der Praxis nach der Reihenfolge der Anträge („Windhund“), mit Gleichbehandlung
+    (Art. 3 Abs. 1 GG). Schließlich darf die Gemeinde ablehnen oder Auflagen erteilen, wenn konkrete Gefahren für
+    die öffentliche Sicherheit oder die Einrichtung selbst drohen, etwa bei hinreichend belegten
+    Gewaltausbrüchen; bloße Vermutungen oder die Sorge vor Gegendemonstrationen genügen nicht.
+  norms:
+  - Art. 3 Abs. 1 GG
+  - Art. 21 Abs. 2 GG
+  - § 5 PartG
+  quellen:
+  - GG, amtliche Fassung
+  - PartG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-se-anschluss-benutzungszwang
+  type: definition
+  front: Was ist der Anschluss- und Benutzungszwang, und wann ist er zulässig?
+  back: >-
+    Anschlusszwang verpflichtet Grundstückseigentümer, ihr Grundstück an eine öffentliche Einrichtung der
+    Gemeinde (Wasserleitung, Kanalisation, Fernwärme, Straßenreinigung, Müllabfuhr) anzuschließen, der
+    Benutzungszwang verpflichtet sie, die Einrichtung zu nutzen. Die Gemeindeordnungen ermächtigen die
+    Gemeinde, ihn durch Satzung anzuordnen, wenn ein dringendes öffentliches Bedürfnis (insbesondere im
+    Interesse der Volksgesundheit und des Umweltschutzes) besteht. Er greift in Art. 2 Abs. 1 GG, Art. 14 GG
+    und teilweise in Art. 12 GG ein und ist nur bei Vorliegen eines legitimen Zwecks und bei Verhältnismäßigkeit
+    gerechtfertigt. Zu beachten sind Ausnahmen und Befreiungen für atypische Fälle (unzumutbare
+    Härte). Der Pflichtige kann Rechtsschutz durch Inzidentkontrolle der Satzung oder Normenkontrolle erlangen.
+  norms:
+  - Art. 2 Abs. 1 GG
+  - Art. 14 Abs. 1 GG
+  - Art. 12 Abs. 1 GG
+  quellen:
+  - Gemeindeordnungen der Länder (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-se-kommunalabgaben
+  type: definition
+  front: Welche Kommunalabgaben gibt es, und wie unterscheiden sie sich?
+  back: >-
+    Steuern sind voraussetzungslos auferlegte Geldleistungen ohne Gegenleistung zur Erzielung von Einnahmen;
+    die Gemeinden erheben vor allem Gewerbe- und Grundsteuer (mit Hebesatzrecht, Art. 28 Abs. 2 S. 3 GG,
+    Art. 106 Abs. 6 GG) sowie örtliche Verbrauch- und Aufwandsteuern (Art. 105 Abs. 2a GG). Gebühren
+    sind Entgelte für eine besondere Inanspruchnahme der Verwaltung (Verwaltungsgebühr) oder einer
+    öffentlichen Einrichtung (Benutzungsgebühr). Für sie gelten Kostendeckungs- und Äquivalenzprinzip sowie der
+    Gleichheitssatz. Beiträge werden für die Möglichkeit der Inanspruchnahme einer Einrichtung erhoben, die dem
+    Grundstück einen Vorteil bringt (z. B. Erschließungsbeitrag nach §§ 127 ff. BauGB). Die Länder regeln die
+    Einzelheiten in Kommunalabgabengesetzen. Abgaben bedürfen einer Satzung, die Abgabenschuldner,
+    Tatbestand, Maßstab und Satz bestimmt.
+  norms:
+  - Art. 105 Abs. 2a GG
+  - Art. 106 Abs. 6 GG
+  - § 127 BauGB
+  quellen:
+  - GG, amtliche Fassung
+  - BauGB, amtliche Fassung
+  - Kommunalabgabengesetze der Länder (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: or-schema-kr-se-satzung-rechtmaessigkeit
+  title: Rechtmäßigkeit einer kommunalen Satzung
+  norms:
+  - Art. 28 Abs. 2 S. 1 GG
+  - Art. 20 Abs. 3 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Gemeindeordnungen der Länder (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Ermächtigungsgrundlage
+    hinweis: Bei Grundrechtseingriffen spezielle gesetzliche Ermächtigung (Wesentlichkeitstheorie), nicht nur Generalklausel.
+  - label: II. Formelle Rechtmäßigkeit
+    children:
+    - label: 1. Zuständigkeit – Gemeindevertretung, nicht übertragbar
+    - label: 2. Verfahren – Einberufung, Beschlussfähigkeit, Mitwirkungsverbote, Mehrheit
+    - label: 3. Ausfertigung und Bekanntmachung
+    - label: 4. Form- und Verfahrensfehler – Heilung und Unbeachtlichkeit nach Landesrecht
+  - label: III. Materielle Rechtmäßigkeit
+    children:
+    - label: 1. Vereinbarkeit mit höherrangigem Recht (Grundrechte, Gleichheitssatz, Gesetze)
+    - label: 2. Bestimmtheit
+    - label: 3. Verhältnismäßigkeit
+    - label: 4. Ermessens- und Abwägungsfehler
+  - label: IV. Rechtsfolge bei Fehlern – Nichtigkeit, Teilnichtigkeit
+faelle:
+- slug: or-fall-kr-se-stadthalle
+  title: Die Zulassung zur Stadthalle
+  difficulty: 3
+  minutes: 50
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  - PartG, amtliche Fassung
+  - VwGO, amtliche Fassung
+  facts: >-
+    Die Stadt S betreibt die Stadthalle als öffentliche Einrichtung. Nach der Benutzungsordnung steht sie
+    „Vereinen, Parteien und Verbänden der Stadt für kulturelle, gesellschaftliche und politische
+    Veranstaltungen“ zur Verfügung. In der Vergangenheit haben alle im Stadtrat vertretenen Parteien die Halle
+    für Parteitage und Wahlkampfveranstaltungen genutzt. Die Partei P, die ihren Ortsverband in S hat und die
+    nicht verboten ist, beantragt die Halle für ein Bürgerfest ihres Ortsverbands am 14. November; die Halle ist an
+    diesem Tag frei. Der Bürgermeister lehnt den Antrag formlos ab, weil ihm die politische Ausrichtung der
+    P missfällt und er Proteste in der Stadt befürchtet. Konkrete Hinweise auf Gewalttaten gibt es nicht. Die
+    Stadt wirft P vor, es handele sich in Wahrheit um eine Wahlkampfveranstaltung.
+  question: Hat P einen Anspruch auf Zulassung zur Stadthalle, und wie kann sie ihn durchsetzen?
+  steps:
+  - prompt: Welche Anspruchsgrundlage kommt in Betracht, und ist der Verwaltungsrechtsweg eröffnet?
+    erwartung: Der Zulassungsanspruch folgt aus der Gemeindeordnung (Benutzung der öffentlichen Einrichtungen im Rahmen des geltenden Rechts) sowie aus § 5 Abs. 1 PartG und Art. 3 Abs. 1 GG. Die Entscheidung über das „Ob“ der Zulassung ist öffentlich-rechtlich (Zwei-Stufen-Theorie); der Verwaltungsrechtsweg ist nach § 40 Abs. 1 VwGO eröffnet.
+  - prompt: Liegt eine öffentliche Einrichtung vor, und ist P anspruchsberechtigt?
+    erwartung: Die Stadthalle ist durch die Benutzungsordnung (Widmung) für Vereine, Parteien und Verbände zur Verfügung gestellt und damit öffentliche Einrichtung. P ist als im Stadtgebiet ansässiger Ortsverband einer Partei vom Kreis der Zugelassenen erfasst.
+  - prompt: Ist die Veranstaltung von der Widmung gedeckt, und steht der Zulassung ein Grund entgegen?
+    erwartung: Das Bürgerfest ist eine gesellschaftliche und politische Veranstaltung und damit gedeckt; die Widmung erfasst auch Wahlkampf. Die Halle ist frei, die Kapazität kein Hindernis. Die politische Ausrichtung ist kein zulässiger Grund (Parteienprivileg, Art. 21 Abs. 2 GG), Gewalt wird nur befürchtet, nicht mit konkreten Tatsachen belegt. Weil die Stadt andere Parteien zugelassen hat, folgt ein Gleichbehandlungsanspruch.
+  - prompt: Wie kann P den Anspruch durchsetzen?
+    erwartung: Verpflichtungsklage auf Zulassung; wegen des nahen Termins Antrag auf einstweilige Anordnung nach § 123 VwGO (Regelungsanordnung), Anordnungsanspruch und Anordnungsgrund (Eilbedürftigkeit) sind glaubhaft zu machen (§ 123 Abs. 3 VwGO, § 920 Abs. 2 ZPO).
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Zulassungsanspruch aus der Gemeindeordnung, § 5 Abs. 1 PartG und Art. 3 Abs. 1 GG erkannt; Zwei-Stufen-Theorie und Rechtsweg zu den Verwaltungsgerichten
+      weight: 2.0
+      required: true
+      norms:
+      - § 5 Abs. 1 PartG
+      - Art. 3 Abs. 1 GG
+      - § 40 Abs. 1 VwGO
+      keywords:
+      - § 5 Abs. 1 PartG
+      - Zwei-Stufen-Theorie
+      - Zulassungsanspruch
+      - öffentliche Einrichtung
+      - Gleichbehandlung
+      card_slugs:
+      - or-kr-se-einrichtung-zulassungsanspruch
+      - or-kr-se-einrichtung-zwei-stufen
+    - id: p2
+      label: Öffentliche Einrichtung durch Widmung (Benutzungsordnung) und Bindung an die Widmung festgestellt
+      weight: 1.5
+      required: false
+      keywords:
+      - Widmung
+      - Benutzungsordnung
+      - Selbstbindung
+      - Widmungszweck
+      card_slugs:
+      - or-kr-se-einrichtung-begriff
+    - id: p3
+      label: Politische Ausrichtung als Ablehnungsgrund verneint (Parteienprivileg, Art. 21 Abs. 2 GG); keine konkrete Gefahr
+      weight: 3.0
+      required: true
+      norms:
+      - Art. 21 Abs. 2 GG
+      keywords:
+      - Parteienprivileg
+      - Art. 21 Abs. 2 GG
+      - politische Ausrichtung
+      - konkrete Gefahr
+      - Bundesverfassungsgericht
+      card_slugs:
+      - or-kr-se-einrichtung-kapazitaet
+    - id: p4
+      label: Durchsetzung durch Verpflichtungsklage und einstweilige Anordnung nach § 123 VwGO
+      weight: 2.0
+      required: true
+      norms:
+      - § 123 VwGO
+      keywords:
+      - Verpflichtungsklage
+      - § 123 VwGO
+      - einstweilige Anordnung
+      - Anordnungsgrund
+      - Anordnungsanspruch
+    - id: p5
+      label: 'Ergebnis: P hat Anspruch auf Zulassung'
+      weight: 1.0
+      required: false
+      keywords:
+      - hat Anspruch auf Zulassung
+      - Anspruch auf Zulassung besteht
+      - Ablehnung ist rechtswidrig
