@@ -119,7 +119,7 @@ cards:
     und das IT-Grundrecht (BVerfGE 115, 166). Eingriffe sind Überwachung,
     Auswertung und Speicherung, etwa die Vorratsdatenspeicherung (BVerfGE 125,
     260). Schranke ist Art. 10 Abs. 2 GG: ein einfacher Gesetzesvorbehalt, der
-    für den Schutz der Verfassung abweichend vom Rechtsweg anstelle des Rechtswegs eine Nachprüfung durch Organe und Hilfsorgane der Volksvertretung zulässt und die Mitteilung an den Betroffenen ausschließen kann (Satz 2).
+    dem Schutz der freiheitlichen demokratischen Grundordnung oder des Bestandes des Bundes oder eines Landes dient, kann das Gesetz bestimmen, dass der Betroffene nicht unterrichtet wird und an die Stelle des Rechtswegs die Nachprüfung durch von der Volksvertretung bestellte Organe und Hilfsorgane tritt (Satz 2).
   norms:
   - Art. 10 Abs. 1 GG
   - Art. 10 Abs. 2 GG
@@ -175,22 +175,16 @@ cards:
   - BVerfGE 51, 97
 - slug: or-gr-wfr-art13-gefahr-im-verzug
   type: rechtsprechung
-  front: "Wann darf eine Durchsuchung ohne richterliche Anordnung erfolgen (Gefahr im Verzug)?"
+  front: "Welche verfassungsrechtlichen Anforderungen stellt Art. 13 Abs. 2 GG an eine Durchsuchung ohne richterliche Anordnung, und was folgt aus einem Verstoß?"
   back: >-
-    Nach Art. 13 Abs. 2 GG darf eine Durchsuchung grundsätzlich nur der Richter
-    anordnen, bei Gefahr im Verzug auch die in den Gesetzen vorgesehenen anderen
-    Organe (§ 105 Abs. 1 StPO: Staatsanwaltschaft und Ermittlungspersonen). Der
-    Richtervorbehalt ist die Regel, die Eilkompetenz die enge Ausnahme. Gefahr im
-    Verzug liegt vor, wenn die vorherige Einholung der richterlichen Entscheidung den
-    Erfolg der Durchsuchung gefährden würde, und muss mit Tatsachen begründet werden,
-    die einzelfallbezogen und nachprüfbar sind; spekulative, hypothetische
-    Erwägungen genügen nicht. Gerichte und Behörden sind verpflichtet, durch
-    einen Bereitschaftsdienst (richterlicher Eildienst) dafür zu sorgen, dass der
-    Richtervorbehalt praktisch wirksam wird (BVerfGE 103, 142). Die Behörde darf
-    die Eilbedürftigkeit nicht selbst herbeiführen, indem sie etwa mit der
-    Antragstellung zögert. Fehlen die Voraussetzungen, ist die Durchsuchung
-    rechtswidrig und verletzt Art. 13 Abs. 1, 2 GG; ein Beweisverwertungsverbot
-    folgt daraus nicht automatisch.
+    Art. 13 Abs. 2 GG weist die Anordnung einer Durchsuchung grundsätzlich dem Richter zu; bei Gefahr im Verzug können auch die gesetzlich
+    vorgesehenen anderen Organe handeln (einfachrechtlich § 105 Abs. 1 StPO). Der Richtervorbehalt ist die Regel, die Eilkompetenz
+    die enge Ausnahme. Gefahr im Verzug erfordert einzelfallbezogene, nachprüfbare Tatsachen dafür, dass der Durchsuchungserfolg durch
+    das Einholen der richterlichen Entscheidung gefährdet würde; bloße Vermutungen oder Aufwand genügen nicht, und die Behörde darf die
+    Eilbedürftigkeit nicht selbst herbeiführen. Die Gerichte müssen durch einen Eildienst sicherstellen, dass der Richtervorbehalt
+    praktisch wirksam wird (BVerfGE 103, 142). Die Annahme von Gefahr im Verzug unterliegt voller gerichtlicher Kontrolle. Fehlen die
+    Voraussetzungen, verletzt die Durchsuchung Art. 13 Abs. 1, 2 GG; ein Beweisverwertungsverbot folgt daraus nicht automatisch, sondern
+    nur bei schwerwiegenden oder bewussten Verstößen.
   norms:
   - Art. 13 Abs. 2 GG
   - § 105 Abs. 1 StPO
@@ -237,9 +231,10 @@ cards:
     dem die Anwendung der Genfer Flüchtlingskonvention und der EMRK sichergestellt
     ist (sichere Drittstaaten), kann sich nicht auf Abs. 1 berufen; die Staaten
     bestimmt ein zustimmungspflichtiges Gesetz. Nach Abs. 3 kann bei sicheren
-    Herkunftsstaaten die Verfolgung widerlegbar verneint werden. Praktisch ist der unionsrechtlich geprägte Flüchtlingsschutz (§ 3 AsylG, Genfer Flüchtlingskonvention) bedeutsamer als Art. 16a Abs. 1 GG. Das Asylverfahrensrecht
-    ändert sich durch das reformierte Gemeinsame Europäische Asylsystem; die
-    Einzelheiten sind aktuell zu prüfen.
+    Herkunftsstaaten die Verfolgung widerlegbar verneint werden. Praktisch ist der unionsrechtlich geprägte Flüchtlingsschutz (§ 3 AsylG, Genfer Flüchtlingskonvention) bedeutsamer als Art. 16a Abs. 1 GG. Das Asylverfahren
+    wird durch die Reform des Gemeinsamen Europäischen Asylsystems (GEAS,
+    Anwendung ab Juni 2026) neu geregelt; für die verfassungsrechtliche Prüfung
+    bleibt Art. 16a GG der Maßstab.
   norms:
   - Art. 16a Abs. 1 GG
   - Art. 16a Abs. 2 GG
@@ -361,3 +356,5 @@ faelle:
       - Verletzung von Art. 13
       - Verletzung der Unverletzlichkeit der Wohnung
       - Verstoß gegen Art. 13 Abs. 2 GG
+      - verletzt Art. 13
+      - Art. 13 Abs. 1, 2 GG verletzt

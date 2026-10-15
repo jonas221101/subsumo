@@ -29,7 +29,7 @@ cards:
   - Art. 34 S. 1 GG
   - Art. 34 S. 2 GG
   - § 839 Abs. 2 BGB
-  quellen: &id001
+  quellen:
   - BGB und GG, amtliche Fassung
   - Eigenformulierung Redaktion
   stand: 2026-10
@@ -53,7 +53,9 @@ cards:
   - § 839 BGB
   - § 31 BGB
   - § 831 BGB
-  quellen: *id001
+  quellen:
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-sh-drittbezogenheit
   type: definition
@@ -73,7 +75,9 @@ cards:
   norms:
   - § 839 Abs. 1 S. 1 BGB
   - Art. 34 S. 1 GG
-  quellen: *id001
+  quellen:
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-sh-verschulden-richterprivileg
   type: norm
@@ -87,8 +91,8 @@ cards:
     Bei der Pflichtverletzung bei dem Urteil in einer Rechtssache (Richterspruchprivileg,
     § 839 Abs. 2 S. 1 BGB) haftet der Richter nur, wenn die Pflichtverletzung in einer Straftat
     besteht, z. B. Rechtsbeugung, § 339 StGB. Das Privileg gilt nicht bei Verweigerung oder
-    Verzögerung der Amtsausübung (§ 839 Abs. 2 S. 2 BGB); für überlange Gerichtsverfahren
-    gilt die Sonderregelung der §§ 198 ff. GVG.
+    Verzögerung der Amtsausübung (§ 839 Abs. 2 S. 2 BGB); bei überlangen Gerichtsverfahren
+    besteht daneben der verschuldensunabhängige Entschädigungsanspruch nach §§ 198 ff. GVG.
   norms:
   - § 276 BGB
   - § 839 Abs. 2 S. 1 BGB
@@ -107,8 +111,10 @@ cards:
     Fällt dem Amtsträger nur Fahrlässigkeit zur Last, kann er (und über Art. 34 GG der Staat)
     nur in Anspruch genommen werden, wenn der Verletzte nicht auf andere Weise Ersatz zu erlangen
     vermag (Subsidiarität der Amtshaftung). Anderweitige Ersatzmöglichkeiten sind z. B. rechtlich
-    durchsetzbare Ansprüche gegen einen anderen Schädiger, gegen eine Versicherung oder gegen
-    einen Sozialversicherungsträger. Das Verweisungsprivileg gilt nicht bei Vorsatz und nach
+    durchsetzbare Ansprüche gegen einen anderen Schädiger, gegen den Dienstherrn oder
+    Arbeitgeber oder gegen einen Sozialversicherungsträger; Leistungen aus einer vom Geschädigten
+    selbst abgeschlossenen Schadensversicherung (etwa Kaskoversicherung) werden dagegen nicht
+    angerechnet. Das Verweisungsprivileg gilt nicht bei Vorsatz und nach
     der Rechtsprechung nicht, wenn der Amtsträger ohne Inanspruchnahme von Sonderrechten am
     allgemeinen Straßenverkehr teilnimmt und dabei einen Unfall verursacht: Er unterliegt
     dann denselben Pflichten wie jeder Verkehrsteilnehmer, sodass der Geschädigte nicht auf
@@ -118,7 +124,9 @@ cards:
   norms:
   - § 839 Abs. 1 S. 2 BGB
   - Art. 34 GG
-  quellen: *id001
+  quellen:
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-sh-rechtsmittelversaeumnis
   type: norm
@@ -137,7 +145,9 @@ cards:
   norms:
   - § 839 Abs. 3 BGB
   - § 254 BGB
-  quellen: *id001
+  quellen:
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-sh-folgenbeseitigung
   type: definition
@@ -161,7 +171,6 @@ cards:
   quellen:
   - VwGO, amtliche Fassung
   - Eigenformulierung Redaktion
-  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-sh-enteignungsgleicher-eingriff
   type: definition
@@ -183,7 +192,9 @@ cards:
   - Art. 14 GG
   - § 75 Einl. ALR
   - Art. 14 Abs. 3 GG
-  quellen: *id001
+  quellen:
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-sh-nassauskiesung
   type: rechtsprechung
@@ -216,14 +227,17 @@ cards:
     Eingriff in ein nichtvermögenswertes Recht (Leben, Gesundheit, Freiheit), (2) Unmittelbarkeit
     des Eingriffs, (3) Sonderopfer des Betroffenen, das ihm im Interesse der Allgemeinheit
     abverlangt wird, (4) Rechtmäßigkeit oder Rechtswidrigkeit des Eingriffs unerheblich. Der
-    Anspruch geht auf Entschädigung in Geld für vermögensrechtliche Schäden; ein Schmerzensgeld
-    wird nach der Rechtsprechung grundsätzlich nicht gewährt. Er wird durch Spezialregelungen
+    Anspruch ist auf angemessene Entschädigung in Geld gerichtet, vor allem für vermögensrechtliche
+    Nachteile; ein Schmerzensgeld wird nach der traditionellen Rechtsprechung nicht gewährt
+    (Einzelfragen sind umstritten). Er wird durch Spezialregelungen
     verdrängt, z. B. bei Impfschäden durch Versorgungsregelungen des Infektionsschutzgesetzes.
     Geltend zu machen ist er vor den ordentlichen Gerichten (§ 40 Abs. 2 S. 1 VwGO).
   norms:
   - § 40 Abs. 2 S. 1 VwGO
   - § 75 Einl. ALR
-  quellen: *id001
+  quellen:
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-sh-rechtsweg
   type: norm
@@ -259,7 +273,9 @@ schemata:
   norms:
   - § 839 BGB
   - Art. 34 GG
-  quellen: *id001
+  quellen:
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
   steps:
   - label: 'I. Rechtsweg: ordentliche Gerichte (Landgericht), Art. 34 S. 3 GG, § 71 Abs. 2
       Nr. 2 GVG'
@@ -292,7 +308,7 @@ faelle:
   facts: Der Angestellte M des Ordnungsamts der Stadt S fährt mit einem Dienstwagen zu einer
     Gewerbekontrolle, die er im Auftrag der Behörde durchführen soll. Beim Abbiegen übersieht
     er fahrlässig das vorfahrtsberechtigte Auto der G. Bei dem Zusammenstoß entsteht an dem
-    Fahrzeug der G ein Sachschaden von 8.000 Euro. G hat keine Vollkaskoversicherung. Sonderrechte
+    Fahrzeug der G ein Sachschaden von 8.000 Euro. Weitere Ersatzmöglichkeiten hat G nicht. Sonderrechte
     nach der StVO nimmt M nicht in Anspruch. Der Unfall wäre bei Beachtung der Vorfahrtsregeln
     vermeidbar gewesen.
   question: Hat G Anspruch auf Ersatz des Schadens gegen die Stadt S oder gegen M? Welches
@@ -308,7 +324,7 @@ faelle:
   - prompt: Steht das Verweisungsprivileg des § 839 Abs. 1 S. 2 BGB entgegen?
     erwartung: Nein. Bei Teilnahme am allgemeinen Straßenverkehr ohne Sonderrechte gilt das
       Verweisungsprivileg nach der Rechtsprechung nicht; im Übrigen hat G keine anderweitige
-      Ersatzmöglichkeit (keine Vollkasko).
+      Ersatzmöglichkeit gegen einen Dritten.
   - prompt: Wer haftet, und welcher Rechtsweg ist eröffnet?
     erwartung: Anspruchsgegner ist die Stadt S (Haftungsüberleitung, Art. 34 S. 1 GG), nicht
       M persönlich. Zuständig sind die ordentlichen Gerichte, Landgericht (Art. 34 S. 3 GG,
@@ -350,7 +366,7 @@ faelle:
       - or-sh-drittbezogenheit
       - or-sh-verschulden-richterprivileg
     - id: p3
-      label: Verweisungsprivileg des § 839 Abs. 1 S. 2 BGB nicht anwendbar (allgemeiner Straßenverkehr)
+      label: Verweisungsprivileg des § 839 Abs. 1 S. 2 BGB verneint (allgemeiner Straßenverkehr)
       weight: 3.0
       required: true
       norms:
