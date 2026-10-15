@@ -141,6 +141,12 @@ void main() {
       await tester.pump(const Duration(milliseconds: 800));
       await tester.pumpAndSettle();
 
+      // Die ganze Seite scrollt: das Feedback liegt unter dem Editor.
+      await tester.scrollUntilVisible(
+        find.text('Strukturfeedback ist diese Woche mit Free aufgebraucht.'),
+        200,
+        scrollable: find.byType(Scrollable).first,
+      );
       expect(
         find.text('Strukturfeedback ist diese Woche mit Free aufgebraucht.'),
         findsOneWidget,
@@ -206,6 +212,8 @@ void main() {
       // erst beim naechsten Rebuild neu aus, den die Analyse ausloest.
       await tester.pump(const Duration(milliseconds: 800));
       await tester.pumpAndSettle();
+      await tester.ensureVisible(find.widgetWithText(SubsumoButton, 'Abgeben und bewerten lassen'));
+      await tester.pumpAndSettle();
       await tester.tap(find.widgetWithText(SubsumoButton, 'Abgeben und bewerten lassen'));
       await tester.pumpAndSettle();
 
@@ -224,6 +232,8 @@ void main() {
       // Debounce (700ms) abwarten: der Submit-Button wertet die Textlaenge
       // erst beim naechsten Rebuild neu aus, den die Analyse ausloest.
       await tester.pump(const Duration(milliseconds: 800));
+      await tester.pumpAndSettle();
+      await tester.ensureVisible(find.widgetWithText(SubsumoButton, 'Abgeben und bewerten lassen'));
       await tester.pumpAndSettle();
       await tester.tap(find.widgetWithText(SubsumoButton, 'Abgeben und bewerten lassen'));
       await tester.pumpAndSettle();
@@ -252,6 +262,8 @@ void main() {
       // Debounce (700ms) abwarten: der Submit-Button wertet die Textlaenge
       // erst beim naechsten Rebuild neu aus, den die Analyse ausloest.
       await tester.pump(const Duration(milliseconds: 800));
+      await tester.pumpAndSettle();
+      await tester.ensureVisible(find.widgetWithText(SubsumoButton, 'Abgeben und bewerten lassen'));
       await tester.pumpAndSettle();
       await tester.tap(find.widgetWithText(SubsumoButton, 'Abgeben und bewerten lassen'));
       await tester.pumpAndSettle();
@@ -294,6 +306,8 @@ void main() {
       // erst beim naechsten Rebuild neu aus, den die Analyse ausloest.
       await tester.pump(const Duration(milliseconds: 800));
       await tester.pumpAndSettle();
+      await tester.ensureVisible(find.widgetWithText(SubsumoButton, 'Abgeben und bewerten lassen'));
+      await tester.pumpAndSettle();
       await tester.tap(find.widgetWithText(SubsumoButton, 'Abgeben und bewerten lassen'));
       await tester.pumpAndSettle();
 
@@ -316,6 +330,8 @@ void main() {
       // Debounce (700ms) abwarten: der Submit-Button wertet die Textlaenge
       // erst beim naechsten Rebuild neu aus, den die Analyse ausloest.
       await tester.pump(const Duration(milliseconds: 800));
+      await tester.pumpAndSettle();
+      await tester.ensureVisible(find.widgetWithText(SubsumoButton, 'Abgeben und bewerten lassen'));
       await tester.pumpAndSettle();
       await tester.tap(find.widgetWithText(SubsumoButton, 'Abgeben und bewerten lassen'));
       await tester.pumpAndSettle();
