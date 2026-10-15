@@ -52,14 +52,12 @@ cards:
   front: 'Definiere: Ware mit digitalen Elementen und grenze sie von digitalen Produkten ab'
   back: Eine Ware mit digitalen Elementen ist eine bewegliche Sache, die in einer Weise digitale
     Inhalte oder digitale Dienstleistungen enthält oder mit ihnen verbunden ist, dass sie
-    ihre Funktionen ohne diese digitalen Elemente nicht erfüllen kann (§ 327a BGB). Beispiele
+    ihre Funktionen ohne diese digitalen Elemente nicht erfüllen kann (§ 327a Abs. 3 BGB). Beispiele
     sind ein Smartphone, ein Smart-TV oder ein vernetztes Auto. Für den Kauf solcher Waren
     durch einen Verbraucher gelten nicht die §§ 327 ff. BGB, sondern das Kaufrecht in Verbindung
     mit den §§ 475b ff. BGB, die insbesondere eine Aktualisierungspflicht des Verkäufers vorsehen.
     Wird dagegen ein digitaler Inhalt separat verkauft, etwa als Download-Software, gelten
-    die §§ 327 ff. BGB. Ein Datenträger, der ausschließlich als Träger digitaler Inhalte dient,
-    folgt nach § 475a BGB ebenfalls dem Recht der digitalen Produkte (Sonderregel, Einzelheiten
-    vor Verwendung prüfen).
+    die §§ 327 ff. BGB. Auch beim Kauf eines Datenträgers, der ausschließlich als Träger digitaler Inhalte dient, gelten für Mängel nicht die §§ 434 ff. BGB, sondern die §§ 327 ff. BGB (§ 475a Abs. 1 BGB); Gleiches gilt nach § 475a Abs. 2 BGB für digitale Bestandteile einer Ware, die ihre Funktionen auch ohne diese erfüllen kann.
   norms:
   - § 327a BGB
   - § 475a BGB
@@ -74,12 +72,7 @@ cards:
   back: Der Unternehmer hat das digitale Produkt unverzüglich nach Vertragsschluss bereitzustellen,
     sofern die Parteien nichts anderes vereinbart haben (§ 327b Abs. 1 BGB). Bereitgestellt
     ist es, wenn der Verbraucher Zugriff darauf erhält (bei digitalen Inhalten etwa durch
-    Download-Möglichkeit) oder die digitale Dienstleistung für ihn zugänglich ist. Stellt
-    der Unternehmer das Produkt nicht bereit, kann der Verbraucher ihn zur Bereitstellung
-    auffordern und ihm hierfür eine Frist setzen. Bleibt die Bereitstellung aus, kann der
-    Verbraucher den Vertrag beenden (§ 327c BGB), ohne dass es eines Rücktritts bedarf. Die
-    Fristsetzung ist entbehrlich, wenn der Unternehmer die Bereitstellung verweigert oder
-    ein Fixgeschäft vorliegt; daneben kann Schadensersatz nach §§ 280 ff. BGB verlangt werden.
+    Download-Möglichkeit) oder die digitale Dienstleistung für ihn zugänglich ist. Stellt der Unternehmer das Produkt nicht bereit, kann der Verbraucher ihn zur Bereitstellung auffordern; eine Fristsetzung ist dafür nicht erforderlich. Leistet der Unternehmer nicht unverzüglich nach der Aufforderung, kann der Verbraucher den Vertrag beenden (§ 327c Abs. 1 BGB), ohne dass es eines Rücktritts bedarf. Die Aufforderung ist entbehrlich, wenn der Unternehmer die Bereitstellung verweigert, sich aus den Umständen ergibt, dass er nicht leisten wird, oder ein Fixgeschäft vorliegt (§ 327c Abs. 3 BGB); daneben kann Schadensersatz verlangt werden (§ 327c Abs. 2 BGB).
   norms:
   - § 327b BGB
   - § 327c BGB
@@ -132,13 +125,7 @@ cards:
     ff. BGB)?
   back: 'Der Verbraucher hat bei einem Mangel gestufte Rechte, die dem Kaufrecht nachgebildet
     sind: Nacherfüllung (§ 327l BGB), also Herstellung der Vertragsmäßigkeit innerhalb angemessener
-    Frist und ohne erhebliche Unannehmlichkeiten, bei Erfolglosigkeit oder Entbehrlichkeit
-    der Fristsetzung Vertragsbeendigung (§ 327m BGB) oder Minderung (§ 327n BGB) sowie Schadens-
-    und Aufwendungsersatz nach den allgemeinen Vorschriften (§ 327i BGB). Anders als im Kaufrecht
-    heißt das Lösungsrecht Vertragsbeendigung und tritt durch Erklärung ein; die Rückabwicklung
-    folgt Sonderregeln (§§ 327o ff. BGB), nicht dem allgemeinen Rücktrittsrecht. Bei einem
-    unerheblichen Mangel ist die Vertragsbeendigung ausgeschlossen, soweit der Verbraucher
-    einen Preis zahlt; wer nur Daten bereitstellt, kann auch dann beenden. Die Verjährung
+    Frist und ohne erhebliche Unannehmlichkeiten, und, wenn Nacherfüllung ausgeschlossen ist, nicht oder nicht ordnungsgemäß erbracht wird oder der Mangel besonders schwer wiegt, Vertragsbeendigung (§ 327m Abs. 1 BGB) oder Minderung (§ 327n BGB) sowie Schadensersatz und Ersatz vergeblicher Aufwendungen (§ 327i Nr. 3 BGB). Anders als im Kaufrecht ist keine Fristsetzung erforderlich; das Lösungsrecht heißt Vertragsbeendigung, und die Rückabwicklung folgt Sonderregeln (§§ 327o ff. BGB), nicht dem allgemeinen Rücktrittsrecht. Bei einem unerheblichen Mangel ist die Vertragsbeendigung ausgeschlossen (§ 327m Abs. 2 BGB); das gilt nicht, wenn der Verbraucher nur Daten bereitstellt. Die Verjährung
     beträgt im Regelfall zwei Jahre (§ 327j BGB).'
   norms:
   - § 327i BGB
@@ -155,10 +142,7 @@ cards:
   back: Zeigt sich bei einer einmaligen Bereitstellung innerhalb eines Jahres seit Bereitstellung
     ein Produktmangel, wird vermutet, dass das digitale Produkt schon bei Bereitstellung mangelhaft
     war (§ 327k Abs. 1 BGB). Bei dauerhafter Bereitstellung gilt die Vermutung für Mängel,
-    die während der Dauer des Bereitstellungszeitraums auftreten (§ 327k Abs. 2 BGB). Der
-    Verbraucher muss bei der Feststellung der Ursache mitwirken, soweit technisch möglich
-    und zumutbar; unterlässt er dies, kann sich der Unternehmer darauf berufen, dass die Vermutung
-    nicht gilt. Die Regelung entspricht § 477 BGB beim Verbrauchsgüterkauf.
+    die während der Dauer des Bereitstellungszeitraums auftreten (§ 327k Abs. 2 BGB). Die Vermutung gilt nicht, wenn die digitale Umgebung des Verbrauchers mit den technischen Anforderungen des Produkts unvereinbar war oder wenn der Verbraucher eine erforderliche und zumutbare Mitwirkung bei der Feststellung dieser Umgebung verweigert (§ 327k Abs. 3 BGB); beides setzt voraus, dass der Unternehmer vor Vertragsschluss klar darüber informiert hat (§ 327k Abs. 4 BGB). Die Regelung entspricht § 477 BGB beim Verbrauchsgüterkauf.
   norms:
   - § 327k BGB
   - § 477 BGB
@@ -171,9 +155,7 @@ cards:
   back: 'Gibt der Verbraucher als Gegenleistung personenbezogene Daten, so lässt der Widerruf
     einer datenschutzrechtlichen Einwilligung oder ein Widerspruch gegen die Verarbeitung
     die Wirksamkeit des Vertrags nach § 327q Abs. 1 BGB unberührt; der Vertrag besteht fort.
-    Der Unternehmer kann den Vertrag aber außerordentlich kündigen, wenn ihm unter Berücksichtigung
-    der Umstände und der beiderseitigen Interessen die Fortsetzung bis zum vereinbarten Ende
-    nicht zugemutet werden kann (§ 327q Abs. 2 BGB). Damit werden Datenschutzrecht (Art. 7
+    Bei Verträgen über eine dauerhafte Bereitstellung oder eine Reihe einzelner Bereitstellungen kann der Unternehmer nach Widerruf der Einwilligung oder Widerspruch ohne Einhaltung einer Kündigungsfrist kündigen, wenn ihm unter Berücksichtigung des noch zulässigen Umfangs der Datenverarbeitung und der beiderseitigen Interessen die Fortsetzung bis zum vereinbarten Ende nicht zugemutet werden kann (§ 327q Abs. 2 BGB). Schadensersatz wegen der Einschränkung der Datenverarbeitung kann er nicht verlangen (§ 327q Abs. 3 BGB). Damit werden Datenschutzrecht (Art. 7
     Abs. 3 DSGVO) und Vertragsrecht verzahnt: Der Verbraucher bleibt in seiner datenschutzrechtlichen
     Selbstbestimmung frei, der Unternehmer ist nicht schutzlos.'
   norms:
@@ -190,8 +172,7 @@ cards:
     dies vorsieht und einen triftigen Grund nennt, dem Verbraucher keine zusätzlichen Kosten
     entstehen und der Verbraucher klar und verständlich über die Änderung informiert wird
     (§ 327r Abs. 1 BGB). Beeinträchtigt die Änderung den Zugang zum Produkt oder seine Nutzbarkeit
-    mehr als nur geringfügig, hat der Verbraucher ein Recht auf Vertragsbeendigung binnen
-    30 Tagen, auf das er in der Information hinzuweisen ist (§ 327r Abs. 3 BGB). Die Regelung
+    mehr als nur geringfügig, hat der Verbraucher ein Recht auf kostenfreie Vertragsbeendigung binnen 30 Tagen (§ 327r Abs. 3 BGB), auf das er in der Information auf einem dauerhaften Datenträger hinzuweisen ist (§ 327r Abs. 2 BGB). Die Regelung
     begrenzt einseitige Anpassungen bei Abonnements und Plattformdiensten und ergänzt die
     AGB-Kontrolle (§§ 307 ff. BGB).
   norms:
@@ -256,13 +237,10 @@ faelle:
     erwartung: Ja. U hätte nach § 327f Abs. 1 BGB Aktualisierungen bereitstellen müssen, die
       zum Erhalt der Vertragsmäßigkeit erforderlich sind, für den Zeitraum, den der Verbraucher
       erwarten darf. Die Nichtbereitstellung eines Kompatibilitäts-Updates führt zu einem
-      Produktmangel (§ 327e BGB). V trifft keine Obliegenheit, die Aktualisierung zu installieren,
-      weil U keine bereitgestellt hat (§ 327f Abs. 2 BGB).
+      Produktmangel (§ 327e BGB). Auf eine Haftungsbefreiung nach § 327f Abs. 2 BGB kann sich U nicht berufen, denn V trifft keine Obliegenheit zur Installation, weil U keine Aktualisierung bereitgestellt hat.
   - prompt: Welche Rechte stehen V zu und in welcher Reihenfolge?
     erwartung: Vorrangig kann V Nacherfüllung verlangen (§ 327l BGB), also Bereitstellung
-      einer kompatiblen Version. Diese hat V mit angemessener Fristsetzung verlangt; U hat
-      sie nicht erbracht. Damit sind die Voraussetzungen der Vertragsbeendigung nach § 327m
-      Abs. 1 BGB erfüllt; ein Fall der Unerheblichkeit des Mangels liegt nicht vor.
+      einer kompatiblen Version. Diese hat V verlangt; U hat sie nicht innerhalb angemessener Frist erbracht. Damit sind die Voraussetzungen der Vertragsbeendigung nach § 327m Abs. 1 Nr. 2 BGB erfüllt; ein Fall der Unerheblichkeit des Mangels liegt nicht vor.
   - prompt: Ergebnis?
     erwartung: V kann den Vertrag durch Erklärung gegenüber U beenden (§ 327m BGB) und die
       Erstattung der gezahlten 49 Euro verlangen. Die Rückabwicklung richtet sich nach den
@@ -303,8 +281,7 @@ faelle:
       - zr-dig-aktualisierung
       - zr-dig-produktmangel
     - id: p3
-      label: Keine Haftungsbefreiung des Unternehmers (Verbraucher hat Update nicht unterlassen,
-        § 327f Abs. 2 BGB)
+      label: Haftungsbefreiung des Unternehmers nach § 327f Abs. 2 BGB scheidet aus (keine Installationsobliegenheit des Verbrauchers)
       weight: 1.0
       required: false
       norms:
@@ -315,7 +292,7 @@ faelle:
       - nicht installiert
       - § 327f Abs. 2 BGB
     - id: p4
-      label: Nacherfüllung mit Fristsetzung als Vorrang (§ 327l BGB); erfolglose Frist
+      label: Vorrang der Nacherfüllung (§ 327l BGB); keine Nacherfüllung innerhalb angemessener Frist
       weight: 2.0
       required: true
       norms:

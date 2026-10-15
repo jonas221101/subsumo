@@ -84,8 +84,7 @@ cards:
     oder zur Zeit des Eintritts der Bedürftigkeit seit der Leistung des Geschenks zehn Jahre
     verstrichen sind (§ 529 Abs. 1 BGB), sowie, wenn der Beschenkte bei Berücksichtigung seiner
     sonstigen Verpflichtungen außerstande ist, das Geschenk herauszugeben, ohne dass sein
-    standesmäßiger Unterhalt gefährdet wird (§ 529 Abs. 2 BGB). Praktisch bedeutsam ist, dass
-    der Anspruch auf den Sozialhilfeträger übergeleitet werden kann.
+    standesmäßiger Unterhalt gefährdet wird (§ 529 Abs. 2 BGB). Bei einem nicht teilbaren Geschenk ist der Anspruch nach der Rechtsprechung auf den zur Deckung des Bedarfs erforderlichen Betrag beschränkt. Praktisch bedeutsam ist, dass der Anspruch vom Sozialhilfeträger auf sich übergeleitet werden kann (§ 93 SGB XII).
   norms:
   - § 528 Abs. 1 BGB
   - § 529 Abs. 1 BGB
@@ -123,8 +122,7 @@ cards:
   back: Bei der Schenkung unter Auflage (§ 525 Abs. 1 BGB) verpflichtet sich der Beschenkte
     zu einer Leistung, die ihm der Schenker auferlegt, etwa zu einer Pflege oder einem Wohnrecht;
     die Auflage ist keine Gegenleistung im Gegenseitigkeitsverhältnis, sondern mindert die
-    Bereicherung. Der Schenker kann Vollziehung verlangen, nach seinem Tod auch der Erbe,
-    bei öffentlichem Interesse die zuständige Behörde (§ 525 Abs. 2 BGB). Eine gemischte Schenkung
+    Bereicherung. Der Schenker kann die Vollziehung verlangen, wenn er seinerseits geleistet hat (§ 525 Abs. 1 BGB); liegt sie im öffentlichen Interesse, kann nach seinem Tod auch die zuständige Behörde Vollziehung verlangen (§ 525 Abs. 2 BGB). Eine gemischte Schenkung
     liegt vor, wenn die Zuwendung teils entgeltlich und teils unentgeltlich ist und die Parteien
     sich über die Teilunentgeltlichkeit einig sind, etwa bei einem Verkauf deutlich unter
     Wert. Nach der Rechtsprechung gilt das Schenkungsrecht für den unentgeltlichen Teil; bei
@@ -244,11 +242,7 @@ faelle:
       S wird durch die Herausgabe in seinem angemessenen Unterhalt nicht gefährdet (§ 529
       Abs. 2 BGB).
   - prompt: Welche Rechtsfolge ergibt sich, und welche Abwendungsmöglichkeit hat S?
-    erwartung: M kann Herausgabe des Geschenks nach den Vorschriften über die Herausgabe einer
-      ungerechtfertigten Bereicherung verlangen (§ 528 Abs. 1 S. 1 BGB), grundsätzlich also
-      Rückübertragung des Grundstücks. S kann die Herausgabe aber nach § 528 Abs. 1 S. 2 BGB
-      durch laufende Zahlung des für den Unterhalt erforderlichen Betrags, hier 600 Euro monatlich,
-      abwenden.
+    erwartung: M kann Herausgabe des Geschenks nach den Vorschriften über die Herausgabe einer ungerechtfertigten Bereicherung verlangen (§ 528 Abs. 1 S. 1 BGB). Weil der Bedarf nur 600 Euro monatlich beträgt und ein Grundstück nicht teilbar ist, richtet sich der Anspruch nach der Rechtsprechung auf den jeweils erforderlichen Betrag. S kann die Herausgabe nach § 528 Abs. 1 S. 2 BGB durch laufende Zahlung des für den Unterhalt erforderlichen Betrags, hier 600 Euro monatlich, abwenden.
   expectation:
     pruefpunkte:
     - id: p1
@@ -286,8 +280,7 @@ faelle:
       card_slugs:
       - zr-schenk-notbedarf-528
     - id: p3
-      label: 'Kein Ausschluss nach § 529 BGB: weder Zehnjahresfrist noch selbstverschuldete
-        Bedürftigkeit noch Gefährdung des Unterhalts des Sohnes'
+      label: 'Ausschluss nach § 529 BGB scheidet aus: weder Zehnjahresfrist noch selbstverschuldete Bedürftigkeit noch Gefährdung des Unterhalts des Sohnes'
       weight: 2.0
       required: true
       norms:

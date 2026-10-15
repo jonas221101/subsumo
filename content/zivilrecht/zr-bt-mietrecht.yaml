@@ -75,8 +75,7 @@ cards:
   back: Ist ein Mangel bei Vertragsschluss vorhanden, haftet der Vermieter nach § 536a Abs.
     1 Var. 1 BGB verschuldensunabhängig auf Schadensersatz (Garantiehaftung). Tritt der Mangel
     erst später auf, haftet er nur, wenn er den Mangel zu vertreten hat (Var. 2), oder bei
-    Verzug mit der Mängelbeseitigung (Var. 3). Erfasst sind Mangelfolgeschäden und bei Verzug
-    auch der Mangelschaden; Der Mieter kann den Mangel nach § 536a Abs. 2 BGB selbst beseitigen
+    Verzug mit der Mängelbeseitigung (Var. 3). Erfasst sind Mangelfolgeschäden und bei Verzug auch der Mangelschaden. Der Mieter kann den Mangel nach § 536a Abs. 2 BGB selbst beseitigen
     und Ersatz der erforderlichen Aufwendungen verlangen, wenn der Vermieter mit der Mängelbeseitigung
     im Verzug ist oder die umgehende Beseitigung zur Erhaltung oder Wiederherstellung des
     Bestands der Mietsache notwendig ist. Die Mietminderung tritt daneben ohne Verschulden
@@ -140,9 +139,7 @@ cards:
     Nr. 1 BGB), bei Eigenbedarf (Nr. 2) und bei Hinderung angemessener wirtschaftlicher Verwertung
     (Nr. 3). Die Kündigung bedarf der Schriftform (§ 568 Abs. 1 BGB); die Gründe sind im Kündigungsschreiben
     anzugeben (§ 573 Abs. 3 BGB), nicht angegebene Gründe werden nur berücksichtigt, wenn
-    sie nachträglich entstanden sind. Die Kündigungsfrist beträgt für den Mieter drei Monate,
-    für den Vermieter drei Monate, die sich nach fünf und acht Jahren seit Überlassung um
-    jeweils drei Monate verlängern (§ 573c Abs. 1 BGB). Der Mieter kann nach §§ 574 ff. BGB
+    sie nachträglich entstanden sind. Die Kündigung muss spätestens am dritten Werktag eines Monats zugehen und wirkt zum Ablauf des übernächsten Monats; für den Mieter beträgt die Frist damit drei Monate, für den Vermieter verlängert sie sich nach fünf und nach acht Jahren seit Überlassung um jeweils drei Monate (§ 573c Abs. 1 BGB). Der Mieter kann nach §§ 574 ff. BGB
     wegen einer Härte widersprechen (Sozialklausel).
   norms:
   - § 573 Abs. 1 BGB
@@ -165,7 +162,7 @@ cards:
     weit überhöht, und der Vermieter muss dem Mieter eine andere freie, vergleichbare Wohnung
     im selben Haus oder in derselben Wohnanlage, die ihm zur Verfügung steht, anbieten (Anbietpflicht).
     Verstößt er dagegen, ist die Kündigung wegen Rechtsmissbrauchs (§ 242 BGB) unwirksam.
-    Nach Umwandlung in Wohnungseigentum gelten Sperrfristen (§ 577a BGB).'
+    Wird nach der Überlassung an den Mieter Wohnungseigentum begründet und die Wohnung veräußert, gilt eine Kündigungssperrfrist (§ 577a BGB).'
   norms:
   - § 573 Abs. 2 Nr. 2 BGB
   - § 242 BGB
@@ -182,9 +179,7 @@ cards:
     (§ 543 Abs. 1 BGB). Wichtiger Grund für den Mieter ist namentlich der Entzug des vertragsgemäßen
     Gebrauchs (§ 543 Abs. 2 S. 1 Nr. 1 BGB), für den Vermieter ein Zahlungsrückstand (Nr.
     3): Verzug mit zwei aufeinanderfolgenden Terminen mit der Miete oder einem nicht unerheblichen
-    Teil, oder Rückstand in Höhe von zwei Monatsmieten über mehr als zwei Termine. Sofern
-    Abhilfe möglich ist, ist grundsätzlich eine Frist zur Abhilfe oder Abmahnung nötig (§
-    543 Abs. 3 BGB). Bei Wohnraum ist ein Rückstand nur erheblich, wenn er eine Monatsmiete
+    Teil, oder Rückstand in Höhe von zwei Monatsmieten über mehr als zwei Termine. Beruht der wichtige Grund auf der Verletzung einer Vertragspflicht, ist grundsätzlich eine Frist zur Abhilfe oder eine Abmahnung nötig; beim Zahlungsverzug nach Abs. 2 Nr. 3 ist beides entbehrlich (§ 543 Abs. 3 BGB). Bei Wohnraum ist ein Rückstand nur erheblich, wenn er eine Monatsmiete
     übersteigt (§ 569 Abs. 3 Nr. 1 BGB); die Kündigung wird unwirksam, wenn der Mieter binnen
     zwei Monaten nach Rechtshängigkeit des Räumungsanspruchs den Vermieter befriedigt (§ 569
     Abs. 3 Nr. 2 BGB, Schonfrist).'
@@ -243,14 +238,12 @@ cards:
   front: Wie kann der Vermieter die Wohnraummiete erhöhen (§§ 557 ff. BGB)?
   back: Die Miete kann durch Vereinbarung (§ 557 Abs. 1 BGB), durch Staffel- oder Indexmiete
     (§§ 557a, 557b BGB), nach Modernisierung (§ 559 BGB) oder bis zur ortsüblichen Vergleichsmiete
-    erhöht werden (§ 558 Abs. 1 BGB). Die Zustimmung zur Erhöhung auf die ortsübliche Vergleichsmiete
-    kann der Vermieter verlangen, wenn die Miete seit 15 Monaten unverändert ist; das Erhöhungsverlangen
+    erhöht werden (§ 558 Abs. 1 BGB). Die Zustimmung zur Erhöhung auf die ortsübliche Vergleichsmiete kann der Vermieter verlangen, wenn die Miete bei Wirksamwerden der Erhöhung seit 15 Monaten unverändert ist; das Verlangen ist frühestens ein Jahr nach der letzten Erhöhung zulässig; das Erhöhungsverlangen
     muss in Textform ergehen und begründet werden (§ 558a BGB, etwa durch Mietspiegel). Die
     Miete darf sich innerhalb von drei Jahren nicht um mehr als 20 Prozent erhöhen (Kappungsgrenze,
     § 558 Abs. 3 BGB), in Gebieten mit angespanntem Wohnungsmarkt um höchstens 15 Prozent.
     Der Mieter hat eine Überlegungsfrist bis zum Ende des zweiten Kalendermonats nach Zugang
-    (§ 558b BGB) und ein Sonderkündigungsrecht (§ 561 BGB). Bei Neuvermietung in angespannten
-    Märkten begrenzt die Mietpreisbremse die Miete (§ 556d BGB).
+    (§ 558b BGB) und ein Sonderkündigungsrecht (§ 561 BGB). Bei Neuvermietung in Gebieten mit angespanntem Wohnungsmarkt darf die Miete die ortsübliche Vergleichsmiete grundsätzlich um höchstens 10 Prozent übersteigen (Mietpreisbremse, § 556d Abs. 1 BGB).
   norms:
   - § 558 BGB
   - § 558a BGB
@@ -294,8 +287,7 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - BGB, amtliche Fassung
   facts: Vermieter V ist Eigentümer eines Mehrfamilienhauses. Er hat die Wohnung im ersten
-    Obergeschoss vor neun Jahren an Mieter M vermietet (drei Zimmer, 70 Quadratmeter). Im
-    August erklärt V schriftlich die Kündigung zum Ablauf von neun Monaten. Im Kündigungsschreiben
+    Obergeschoss vor neun Jahren an Mieter M vermietet (drei Zimmer, 70 Quadratmeter). Am zweiten Werktag des Monats August erklärt V schriftlich die Kündigung zum 30. April des Folgejahres. Im Kündigungsschreiben
     heißt es, seine Tochter T (27) habe nach dem Studium eine Stelle in der Stadt angetreten
     und benötige die Wohnung für sich. Der Bedarf der T ist ernsthaft. Im gleichen Haus steht
     seit Monaten die gleich geschnittene Wohnung im zweiten Obergeschoss leer; V hat sie weder
@@ -304,9 +296,7 @@ faelle:
   question: Hat V gegen M einen Anspruch auf Räumung und Herausgabe der Wohnung?
   steps:
   - prompt: Welche Anspruchsgrundlage kommt in Betracht und was ist Voraussetzung?
-    erwartung: '§ 546 Abs. 1 BGB: Der Mieter ist bei Beendigung des Mietverhältnisses zur
-      Rückgabe der Mietsache verpflichtet. Zu prüfen ist, ob das Mietverhältnis durch die
-      Kündigung beendet wurde.'
+    erwartung: Anspruchsgrundlage ist § 546 Abs. 1 BGB, wonach der Mieter bei Beendigung des Mietverhältnisses zur Rückgabe der Mietsache verpflichtet ist. Zu prüfen ist, ob das Mietverhältnis durch die Kündigung beendet wurde.
   - prompt: Sind Form, Begründung und Frist der Kündigung gewahrt?
     erwartung: Ja. Die Kündigung ist schriftlich erklärt (§ 568 Abs. 1 BGB) und im Schreiben
       begründet (§ 573 Abs. 3 BGB). Die Kündigungsfrist beträgt für den Vermieter nach neun
@@ -334,7 +324,8 @@ faelle:
       keywords:
       - Rückgabe der Mietsache
       - § 546 Abs. 1 BGB
-      - Räumung
+      - Mietverhältnis beendet
+
       - Beendigung des Mietverhältnisses
     - id: p2
       label: 'Formale Wirksamkeit: Schriftform, Begründung, Kündigungsfrist von neun Monaten'

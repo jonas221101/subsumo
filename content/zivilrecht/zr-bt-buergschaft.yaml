@@ -38,9 +38,7 @@ cards:
     Hauptschuld durch ein Rechtsgeschäft des Hauptschuldners nach Übernahme der Bürgschaft
     erhöht die Haftung des Bürgen aber nicht (§ 767 Abs. 1 S. 3 BGB). Der Bürge haftet ferner
     für Nebenkosten der Rechtsverfolgung (§ 767 Abs. 2 BGB). Wird die Hauptforderung abgetreten,
-    geht die Bürgschaft nach § 401 Abs. 1 BGB mit über. Akzessorietät bedeutet auch, dass
-    die Bürgschaft nicht entsteht oder erlischt, wenn die Hauptschuld nicht besteht oder erloschen
-    ist.
+    geht die Bürgschaft nach § 401 Abs. 1 BGB mit über. Der Gläubiger kann den Bürgen daher nur insoweit in Anspruch nehmen, als die Hauptforderung besteht.
   norms:
   - § 767 Abs. 1 BGB
   - § 767 Abs. 2 BGB
@@ -77,8 +75,8 @@ cards:
     Daneben hat der Bürge die Einrede der Vorausklage (§ 771 BGB): Er kann die Befriedigung
     des Gläubigers verweigern, solange dieser nicht ohne Erfolg eine Zwangsvollstreckung gegen
     den Hauptschuldner versucht hat. Sie ist ausgeschlossen bei Verzicht, besonders bei der
-    selbstschuldnerischen Bürgschaft (§ 773 Abs. 1 Nr. 1 BGB), bei Zahlungsunfähigkeit des
-    Hauptschuldners (Nr. 4) und für Kaufleute im Handelsgeschäft (§ 349 HGB).'
+    selbstschuldnerischen Bürgschaft (§ 773 Abs. 1 Nr. 1 BGB), bei Aussichtslosigkeit der Vollstreckung gegen den
+    Hauptschuldners (Nr. 4: Zwangsvollstreckung voraussichtlich aussichtslos), bei Eröffnung des Insolvenzverfahrens (Nr. 3) und für Kaufleute, wenn die Bürgschaft für sie ein Handelsgeschäft ist (§ 349 HGB).'
   norms:
   - § 768 BGB
   - § 770 BGB
@@ -93,10 +91,9 @@ cards:
   front: Wie nimmt der Bürge Rückgriff (§ 774 BGB)?
   back: Soweit der Bürge den Gläubiger befriedigt, geht die Forderung des Gläubigers gegen
     den Hauptschuldner auf ihn über (§ 774 Abs. 1 S. 1 BGB, gesetzlicher Forderungsübergang).
-    Mit der Forderung gehen nach § 401 BGB akzessorische Sicherheiten über. Der Übergang kann
+    Mit der Forderung gehen die akzessorischen Sicherheiten über (§§ 412, 401 BGB). Der Übergang kann
     nicht zum Nachteil des Gläubigers geltend gemacht werden (§ 774 Abs. 1 S. 2 BGB); der
-    Gläubiger behält Vorrang, wenn die Mittel nur zu einer Teilbefriedigung reichen. Einwendungen
-    des Hauptschuldners bleiben bestehen (§ 774 Abs. 1 S. 3 BGB). Daneben hat der Bürge einen
+    Gläubiger behält Vorrang, wenn die Mittel nur zu einer Teilbefriedigung reichen. Einwendungen des Hauptschuldners aus dem Rechtsverhältnis zum Bürgen, etwa aus dem Auftrag, bleiben unberührt (§ 774 Abs. 1 S. 3 BGB). Daneben hat der Bürge einen
     Anspruch aus dem Innenverhältnis zum Hauptschuldner, meist Auftrag (§ 670 BGB) oder Geschäftsführung
     ohne Auftrag (§§ 683, 670 BGB). Gibt der Gläubiger eine mit der Forderung verbundene Sicherheit
     auf, wird der Bürge frei, soweit er daraus hätte Ersatz erlangen können (§ 776 BGB).
@@ -140,8 +137,7 @@ cards:
     sich aus emotionaler Verbundenheit ohne Rücksicht auf das eigene Risiko verpflichtet hat
     und der Gläubiger dies in sittlich anstößiger Weise ausgenutzt hat. Der Gläubiger kann
     die Vermutung widerlegen, etwa durch ein eigenes wirtschaftliches Interesse des Bürgen
-    am Darlehen. Schutzwürdig sind Bürgen nicht, wenn sie als Gesellschafter oder Geschäftsführer
-    unmittelbaren Einfluss haben.
+    am Darlehen. Die Vermutung greift regelmäßig nicht, wenn der Bürge als Gesellschafter oder Geschäftsführer unmittelbaren Einfluss auf das finanzierte Unternehmen hat und eigene wirtschaftliche Vorteile erwartet.
   norms:
   - § 138 Abs. 1 BGB
   - § 765 BGB
@@ -150,24 +146,23 @@ cards:
   - Eigenformulierung Redaktion
 - slug: zr-buerg-abgrenzung
   type: definition
-  front: 'Abgrenzung: Bürgschaft, Schuldbeitritt und selbstständige Garantie'
-  back: 'Die Bürgschaft (§ 765 BGB) ist akzessorisch und formbedürftig (§ 766 BGB). Der Schuldbeitritt
-    (kumulative Schuldübernahme) begründet eine eigene Verbindlichkeit des Beitretenden neben
-    dem Altschuldner; beide haften als Gesamtschuldner (§ 421 BGB). Er ist formfrei, soweit
-    die Hauptschuld keine Form verlangt, und im Bestand nicht akzessorisch. Die selbstständige
-    Garantie (§ 311 Abs. 1 BGB) ist ein Vertrag, durch den der Garantiegeber verspricht, für
-    einen bestimmten Erfolg oder das Ausbleiben eines Schadens einzustehen; sie ist nicht
-    akzessorisch und formfrei, Einwendungen aus dem Verhältnis zwischen Gläubiger und Hauptschuldner
-    kann der Garant dem Gläubiger nicht entgegenhalten. Entscheidend ist die Auslegung der
-    Erklärung (§§ 133, 157 BGB): Ein wirtschaftliches Eigeninteresse des Erklärenden an der
-    Erfüllung spricht für Schuldbeitritt, das Fehlen eines solchen Interesses im Zweifel für
-    Bürgschaft. Ein formloser Schuldbeitritt kann einer Umgehung der Formvorschrift dienen
-    und ist dann wie die Bürgschaft zu behandeln.'
+  front: 'Abgrenzung: Bürgschaft, selbstständige Garantie und Kreditauftrag'
+  back: 'Die Bürgschaft (§ 765 BGB) ist akzessorisch, einseitig verpflichtend und formbedürftig
+    (§ 766 BGB). Die selbstständige Garantie (§ 311 Abs. 1 BGB) ist ein Vertrag, durch den der
+    Garantiegeber verspricht, für einen bestimmten Erfolg oder das Ausbleiben eines Schadens einzustehen;
+    sie ist nicht akzessorisch und formfrei. Der Garant kann dem Gläubiger deshalb Einwendungen
+    aus dem Verhältnis zwischen Gläubiger und Hauptschuldner grundsätzlich nicht entgegenhalten.
+    Beim Kreditauftrag (§ 778 BGB) beauftragt jemand einen anderen, im eigenen Namen und auf eigene
+    Rechnung einem Dritten Kredit zu geben; er haftet dem Beauftragten dann für die Verbindlichkeit
+    des Dritten als Bürge. Entscheidend für die Einordnung ist die Auslegung der Erklärung (§§
+    133, 157 BGB): Wer nur für die Schuld eines anderen einstehen will, gibt im Zweifel eine Bürgschaft
+    ab, wer unabhängig vom Bestand der Hauptschuld einen Erfolg zusagt, eine Garantie. Zur Abgrenzung
+    vom Schuldbeitritt siehe das Thema Schuldübernahme und Schuldbeitritt.'
   norms:
   - § 765 BGB
   - § 766 BGB
-  - § 421 BGB
   - § 311 Abs. 1 BGB
+  - § 778 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -176,7 +171,7 @@ cards:
   front: Welche Arten von Bürgschaften sind zu unterscheiden?
   back: Bei der gewöhnlichen Bürgschaft steht dem Bürgen die Einrede der Vorausklage zu (§
     771 BGB). Bei der selbstschuldnerischen Bürgschaft hat er auf sie verzichtet (§ 773 Abs.
-    1 Nr. 1 BGB), bei Kaufleuten ist sie ohnehin ausgeschlossen (§ 349 HGB). Die Höchstbetragsbürgschaft
+    1 Nr. 1 BGB), bei Kaufleuten ist sie im Handelsgeschäft ohnehin ausgeschlossen (§ 349 HGB). Die Höchstbetragsbürgschaft
     begrenzt die Haftung auf einen festen Betrag, die Ausfallbürgschaft setzt den Ausfall
     des Gläubigers bei der Zwangsvollstreckung voraus. Mitbürgen haften als Gesamtschuldner
     (§ 769 BGB). Ein Nachbürge bürgt für die Erfüllung der Verpflichtung des Bürgen; ein Rückbürge
@@ -197,8 +192,7 @@ cards:
   back: Der BGH hat entschieden, dass eine in Allgemeinen Geschäftsbedingungen des Gläubigers
     enthaltene weite Zweckerklärung, durch die die Bürgschaft nicht nur die Verbindlichkeit
     sichert, aus Anlass derer sie übernommen wurde, sondern auch alle künftigen Verbindlichkeiten
-    des Hauptschuldners aus der Geschäftsverbindung, überraschend und unangemessen benachteiligend
-    ist (BGHZ 130, 19). Eine solche Klausel gilt nicht als Vertragsbestandteil (§ 305c Abs.
+    des Hauptschuldners aus der Geschäftsverbindung, überraschend ist und zudem dem Grundsatz des § 767 Abs. 1 S. 3 BGB widerspricht (BGHZ 130, 19). Eine solche Klausel gilt nicht als Vertragsbestandteil (§ 305c Abs.
     1 BGB) und hält der Inhaltskontrolle nicht stand (§ 307 BGB), weil sie das Haftungsrisiko
     des Bürgen unkalkulierbar macht und seine Dispositionsfreiheit aushöhlt. Wirksam bleibt
     die Bürgschaft für die Verbindlichkeit, die der Anlass der Bürgschaft war. Bei individuell

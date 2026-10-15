@@ -135,8 +135,7 @@ cards:
     oder wenn der Fehler nach dem Stand von Wissenschaft und Technik zum Zeitpunkt
     des Inverkehrbringens nicht erkannt werden konnte (Nr. 5, sogenanntes Entwicklungsrisiko).
     Der Ausschluss der Nr. 5 betrifft nicht Konstruktions- oder Fabrikationsfehler,
-    die erkennbar waren. Für Arzneimittelschäden gilt die Sonderregelung des AMG (§
-    15 ProdHaftG).
+    die erkennbar waren. Für Schäden durch Humanarzneimittel ist das ProdHaftG nicht anwendbar (§ 15 Abs. 1 ProdHaftG).
   norms:
   - § 1 Abs. 2 ProdHaftG
   - § 15 ProdHaftG
@@ -197,16 +196,10 @@ cards:
     Wie wird der Schaden bei einem Unfall zwischen mehreren Kraftfahrzeugen nach §
     17 StVG verteilt?
   back: >-
-    Sind an einem Unfall mehrere Kraftfahrzeuge beteiligt, haften die Halter dem Geschädigten
-    als Gesamtschuldner (§ 17 Abs. 1 StVG); im Innenverhältnis hängt die Ausgleichspflicht
-    von den Umständen ab, insbesondere davon, wie weit der Schaden überwiegend von
-    dem einen oder dem anderen Teil verursacht wurde. Dieselbe Abwägung gilt, wenn
-    die Halter Schäden voneinander ersetzt verlangen (§ 17 Abs. 2 StVG). In die Abwägung
+    Sind an einem Unfall mehrere Kraftfahrzeuge beteiligt, haften die Halter einem geschädigten Dritten als Gesamtschuldner (§ 840 Abs. 1 BGB); im Verhältnis der Halter zueinander hängt die Ausgleichspflicht von den Umständen ab, insbesondere davon, wie weit der Schaden überwiegend von dem einen oder dem anderen Teil verursacht wurde (§ 17 Abs. 1 StVG). Dieselbe Abwägung gilt, wenn ein Halter vom anderen Ersatz seines eigenen Schadens verlangt (§ 17 Abs. 2 StVG). In die Abwägung
     fließen die Betriebsgefahr jedes Fahrzeugs und das erwiesene Verschulden der Fahrer
     ein; nicht bewiesene Umstände bleiben außer Betracht. Unabwendbares Ereignis:
-    Die Ersatzpflicht ist nach § 17 Abs. 3 StVG ausgeschlossen, wenn der Unfall für
-    den Halter und Fahrer auch bei äußerster Sorgfalt nicht abzuwenden war, was eine
-    über die gewöhnliche Sorgfalt hinausgehende Anforderung ist.
+    Die Ersatzpflicht ist nach § 17 Abs. 3 StVG ausgeschlossen, wenn der Unfall durch ein unabwendbares Ereignis verursacht wurde, das nicht auf einem Fehler des Fahrzeugs oder dem Versagen seiner Vorrichtungen beruht. Unabwendbar ist es nur, wenn Halter und Fahrer jede nach den Umständen gebotene Sorgfalt beachtet haben; das ist ein strenger Maßstab.
   norms:
   - § 17 Abs. 1 StVG
   - § 17 Abs. 2 StVG
@@ -328,8 +321,7 @@ faelle:
       1 S. 1 ProdHaftG.
   - prompt: Liegt ein Produktfehler vor?
     erwartung: >-
-      Ja, ein Konstruktionsfehler: Der Mixer bot nicht die berechtigterweise erwartbare
-      Sicherheit (§ 3 Abs. 1 ProdHaftG); der Fehler lag beim Inverkehrbringen vor.
+      Ja, der Mixer hat einen Konstruktionsfehler, weil er die berechtigterweise erwartbare Sicherheit verfehlt (§ 3 Abs. 1 ProdHaftG); der Fehler lag beim Inverkehrbringen vor.
   - prompt: Welche Rechtsgutsverletzungen sind gegeben?
     erwartung: >-
       Verletzung des Körpers und der Gesundheit (Verbrennung der Hand) sowie Beschädigung
@@ -344,9 +336,7 @@ faelle:
       Fehler nach dem Stand der Technik erkennbar war.
   - prompt: Welche Ersatzposten kann P verlangen, und welche Kürzung gilt?
     erwartung: >-
-      Heilbehandlungskosten und Schmerzensgeld (§ 8 S. 2 ProdHaftG i. V. m. § 253
-      Abs. 2 BGB) sowie für die Arbeitsplatte 1.200 Euro abzüglich des Selbstbehalts
-      von 500 Euro nach § 11 ProdHaftG, also 700 Euro.
+      P kann Heilbehandlungskosten und Schmerzensgeld (§ 8 S. 2 ProdHaftG) sowie für die Arbeitsplatte 1.200 Euro abzüglich des Selbstbehalts von 500 Euro nach § 11 ProdHaftG, also 700 Euro, ersetzt verlangen.
   expectation:
     pruefpunkte:
     - id: p1

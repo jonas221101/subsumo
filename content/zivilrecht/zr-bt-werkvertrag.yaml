@@ -36,11 +36,7 @@ cards:
     nicht nach der Beschaffenheit des Werkes die Abnahme ausgeschlossen ist (§ 640 Abs. 1
     S. 1 BGB). Abnahme ist die körperliche Entgegennahme (Besitzverschaffung) verbunden mit
     der Billigung des Werkes als im Wesentlichen vertragsgemäß. Wegen unwesentlicher Mängel
-    darf die Abnahme nicht verweigert werden (§ 640 Abs. 1 S. 2 BGB). Nimmt der Besteller
-    das Werk nicht innerhalb einer vom Unternehmer gesetzten angemessenen Frist ab, obwohl
-    er dazu verpflichtet ist, gilt es als abgenommen (§ 640 Abs. 2 BGB, fiktive Abnahme);
-    gegenüber Verbrauchern nur, wenn der Unternehmer sie auf die Folgen in Textform hingewiesen
-    hat. Nimmt der Besteller ein mangelhaftes Werk in Kenntnis des Mangels ab, stehen ihm
+    darf die Abnahme nicht verweigert werden (§ 640 Abs. 1 S. 2 BGB). Das Werk gilt als abgenommen, wenn der Unternehmer dem Besteller nach Fertigstellung eine angemessene Frist zur Abnahme gesetzt hat und der Besteller die Abnahme nicht innerhalb dieser Frist unter Angabe zumindest eines Mangels verweigert hat (§ 640 Abs. 2 S. 1 BGB, fiktive Abnahme); gegenüber Verbrauchern nur, wenn der Unternehmer sie auf diese Folge in Textform hingewiesen hat (§ 640 Abs. 2 S. 2 BGB). Nimmt der Besteller ein mangelhaftes Werk in Kenntnis des Mangels ab, stehen ihm
     die Rechte nach § 634 Nr. 1 bis 3 BGB nur bei Vorbehalt zu (§ 640 Abs. 3 BGB).
   norms:
   - § 640 Abs. 1 BGB
@@ -144,8 +140,7 @@ cards:
     Verträgen über nicht vertretbare Sachen, also solche, die individuell nach den Vorgaben
     des Bestellers anzufertigen sind, werden einzelne werkvertragliche Vorschriften (etwa
     §§ 642, 643, 645, 648, 649 BGB) ergänzt, wobei an die Stelle der Abnahme der Zeitpunkt
-    des Gefahrübergangs nach §§ 446, 447 BGB tritt. Werkvertragsrecht bleibt anwendbar, wenn
-    eine unbewegliche Sache betroffen ist (Bauwerk) oder eine Sache repariert, verändert oder
+    des Gefahrübergangs nach §§ 446, 447 BGB tritt. Gegenüber Verbrauchern gelten für digitale Produkte die Sonderregeln der §§ 327 ff. BGB (§ 650 Abs. 2 BGB). Werkvertragsrecht bleibt anwendbar, wenn eine unbewegliche Sache betroffen ist (Bauwerk) oder eine Sache repariert, verändert oder
     ein unkörperlicher Erfolg wie ein Gutachten geschuldet ist.'
   norms:
   - § 650 BGB
@@ -162,11 +157,9 @@ cards:
     zum Bau eines neuen Gebäudes oder zu erheblichen Umbaumaßnahmen an einem bestehenden Gebäude
     verpflichtet wird (§ 650i Abs. 1 BGB). Er bedarf der Textform (§ 650i Abs. 2 BGB). Der
     Unternehmer muss dem Verbraucher rechtzeitig vor Vertragsschluss eine Baubeschreibung
-    zur Verfügung stellen (§ 650j BGB), die Vertragsinhalt wird (§ 650k BGB). Dem Verbraucher
-    steht ein Widerrufsrecht zu (§ 650l BGB, 14 Tage); Abschlagszahlungen sind auf 90 Prozent
+    zur Verfügung stellen (§ 650j BGB), die Vertragsinhalt wird (§ 650k BGB). Dem Verbraucher steht ein Widerrufsrecht zu (§ 650l BGB, 14 Tage), außer der Vertrag wurde notariell beurkundet; Abschlagszahlungen sind auf 90 Prozent
     der Gesamtvergütung begrenzt (§ 650m BGB), und der Verbraucher kann bei der ersten Abschlagszahlung
-    eine Sicherheit für die rechtzeitige Herstellung ohne wesentliche Mängel verlangen (§
-    650m Abs. 2 BGB). Der Verbraucherbauvertrag ist ein Unterfall des Bauvertrags (§ 650a
+    eine Sicherheit von fünf Prozent für die rechtzeitige Herstellung ohne wesentliche Mängel verlangen (§ 650m Abs. 2 BGB). Der Verbraucherbauvertrag ist ein Unterfall des Bauvertrags (§ 650a
     BGB), für den das Anordnungsrecht des Bestellers (§ 650b BGB) und die Vergütungsanpassung
     (§ 650c BGB) gelten.
   norms:
@@ -313,8 +306,7 @@ faelle:
     zunächst 2.000 Euro. Eine Woche später setzt B dem U schriftlich eine Frist von 14 Tagen
     zur Beseitigung des Gefälles. U reagiert nicht. B beauftragt daraufhin die Fachfirma F,
     das Gefälle durch Ausbau und Neuverlegung der Fliesen im Duschbereich zu korrigieren;
-    F berechnet 1.800 Euro, die B bezahlt. Die Kosten sind für die Beseitigung erforderlich
-    und angemessen. U verlangt von B den Restwerklohn von 4.000 Euro.
+    F berechnet 1.800 Euro, die B bezahlt. Die Kosten sind für die Beseitigung erforderlich und angemessen. B erklärt gegenüber U die Aufrechnung mit seinem Erstattungsanspruch. U verlangt von B den Restwerklohn von 4.000 Euro.
   question: Kann U von B Zahlung von 4.000 Euro verlangen?
   steps:
   - prompt: Ist der Vergütungsanspruch entstanden und fällig?

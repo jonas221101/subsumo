@@ -33,18 +33,10 @@ cards:
 - slug: zr-darl-kuendigung-489-490
   type: norm
   front: Wann kann ein Darlehen gekündigt werden (§§ 489, 490 BGB)?
-  back: 'Der Darlehensnehmer kann ein Darlehen mit gebundenem Sollzinssatz in jedem Fall nach
-    zehn Jahren seit dem vollständigen Empfang mit einer Frist von sechs Monaten kündigen
-    (§ 489 Abs. 1 Nr. 3 BGB); bei variablem Zins kann er jederzeit mit einer Frist von drei
-    Monaten kündigen (§ 489 Abs. 2 BGB). Außerdem kann der Darlehensnehmer, wenn die Zinsbindung
-    vor Ablauf der Vertragszeit endet, zum Ende der Zinsbindung kündigen (§ 489 Abs. 1 Nr.
-    1 BGB), und er kann nach Ablauf der Zinsbindung ohne neue Vereinbarung jederzeit kündigen
-    (§ 489 Abs. 1 Nr. 2 BGB). Beide Parteien können außerordentlich kündigen: Der Darlehensgeber,
+  back: 'Der Darlehensnehmer kann ein Darlehen mit gebundenem Sollzinssatz, dessen Zinsbindung vor der vereinbarten Rückzahlung endet und für das keine neue Zinsvereinbarung getroffen wurde, mit einer Frist von einem Monat zum Ende der Zinsbindung kündigen (§ 489 Abs. 1 Nr. 1 BGB). Unabhängig davon kann er jedes Darlehen nach zehn Jahren seit dem vollständigen Empfang mit einer Frist von sechs Monaten kündigen (§ 489 Abs. 1 Nr. 2 BGB). Bei veränderlichem Zinssatz kann er jederzeit mit einer Frist von drei Monaten kündigen (§ 489 Abs. 2 BGB). Beide Parteien können außerordentlich kündigen: Der Darlehensgeber,
     wenn in den Vermögensverhältnissen des Darlehensnehmers oder in der Werthaltigkeit einer
     Sicherheit eine wesentliche Verschlechterung eintritt oder einzutreten droht und dadurch
-    die Rückerstattung gefährdet wird (§ 490 Abs. 1 BGB); der Darlehensnehmer bei berechtigtem
-    Interesse, etwa bei Verkauf des beliehenen Grundstücks, unter Zahlung einer Vorfälligkeitsentschädigung
-    (§ 490 Abs. 2 BGB). Die allgemeine Kündigung aus wichtigem Grund (§ 314 BGB) bleibt unberührt.'
+    die Rückerstattung gefährdet wird (§ 490 Abs. 1 BGB); der Darlehensnehmer bei gebundenem Sollzinssatz und Sicherung durch Grund- oder Schiffspfandrecht, wenn seine berechtigten Interessen es gebieten, etwa bei Verkauf des beliehenen Grundstücks, frühestens sechs Monate nach vollständigem Empfang und gegen Ersatz des dem Darlehensgeber entstehenden Schadens (Vorfälligkeitsentschädigung, § 490 Abs. 2 BGB). Die allgemeine Kündigung aus wichtigem Grund (§ 314 BGB) bleibt unberührt.'
   norms:
   - § 489 Abs. 1 BGB
   - § 489 Abs. 2 BGB
@@ -59,11 +51,10 @@ cards:
   front: 'Definiere: Verbraucherdarlehensvertrag, § 491 BGB, und seine Form (§ 492 BGB)'
   back: Ein Verbraucherdarlehensvertrag ist ein entgeltlicher Darlehensvertrag zwischen einem
     Unternehmer als Darlehensgeber und einem Verbraucher als Darlehensnehmer (§ 491 Abs. 1
-    BGB), im Unterschied zum Immobiliar-Verbraucherdarlehensvertrag (§ 491 Abs. 3 BGB), der
-    durch Grundpfandrechte gesichert ist. Ausnahmen bestehen, etwa bei Darlehen mit einem
+    BGB), mit dem Immobiliar-Verbraucherdarlehensvertrag (§ 491 Abs. 3 BGB) als Sonderform, der etwa durch Grundpfandrechte gesichert ist oder dem Erwerb von Grundstücken dient. Ausnahmen bestehen, etwa bei Darlehen mit einem
     Nettodarlehensbetrag unter 200 Euro (§ 491 Abs. 2 BGB). Die Vorschriften der §§ 491 ff.
     BGB schützen den Verbraucher durch Informations- und Formvorschriften, die einseitig zwingend
-    sind (§ 512 BGB). Der Vertrag bedarf der Textform (§ 492 Abs. 1 BGB) und muss die Pflichtangaben
+    sind (§ 512 BGB). Der Vertrag bedarf der Schriftform (§ 492 Abs. 1 S. 1 BGB) und muss die Pflichtangaben
     nach Art. 247 EGBGB enthalten, insbesondere Nettodarlehensbetrag, Sollzinssatz, effektiven
     Jahreszins und Gesamtbetrag (§ 492 Abs. 2 BGB). Der Unternehmer muss vorvertraglich informieren
     (Art. 247 § 3 EGBGB) und die Kreditwürdigkeit prüfen (§ 505a BGB).
@@ -80,16 +71,12 @@ cards:
 - slug: zr-darl-formmangel-494
   type: norm
   front: Welche Folgen hat ein Formmangel beim Verbraucherdarlehen (§ 494 BGB)?
-  back: Ein Verbraucherdarlehensvertrag ist nichtig, wenn die vorgeschriebene Form nicht eingehalten
-    wird oder eine der nach Art. 247 EGBGB erforderlichen Pflichtangaben über Art und Betrag
-    des Darlehens, den effektiven Jahreszins oder den Gesamtbetrag fehlt (§ 494 Abs. 1 BGB).
+  back: Ein Verbraucherdarlehensvertrag ist nichtig, wenn die Schriftform insgesamt nicht eingehalten wird oder eine der in Art. 247 §§ 6, 10 bis 13 EGBGB vorgeschriebenen Angaben fehlt (§ 494 Abs. 1 BGB).
     Der Mangel wird jedoch geheilt, soweit dem Darlehensnehmer das Darlehen ausbezahlt oder
     er es in Anspruch nimmt (§ 494 Abs. 2 S. 1 BGB). Zugleich ermäßigt sich der Sollzinssatz
     auf den gesetzlichen Zinssatz, wenn Angaben zum Sollzinssatz, zum effektiven Jahreszins
     oder zum Gesamtbetrag fehlen (§ 494 Abs. 2 S. 2 BGB); Kosten sind dann nicht geschuldet.
-    Die Rechtsfolge soll den Darlehensgeber zu vollständiger Information anhalten und gewährleistet,
-    dass der Darlehensnehmer nicht schlechter steht als bei ordnungsgemäßer Belehrung, ohne
-    aber die Rückzahlung des tatsächlich Empfangenen auszuschließen.
+    Die Rechtsfolge soll den Darlehensgeber zu vollständiger Information anhalten, schließt aber die Rückzahlung des tatsächlich Empfangenen nicht aus.
   norms:
   - § 494 Abs. 1 BGB
   - § 494 Abs. 2 BGB
@@ -102,15 +89,9 @@ cards:
   front: Wie funktioniert der Widerruf des Verbraucherdarlehens (§§ 495, 355, 356b BGB)?
   back: 'Dem Darlehensnehmer steht bei einem Verbraucherdarlehensvertrag ein Widerrufsrecht
     nach § 355 BGB zu (§ 495 Abs. 1 BGB). Die Widerrufsfrist beträgt 14 Tage (§ 355 Abs. 2
-    S. 1 BGB). Sie beginnt nicht vor Vertragsschluss und erst, wenn der Darlehensgeber dem
-    Darlehensnehmer die Vertragsurkunde mit allen Pflichtangaben (§ 492 Abs. 2 BGB) und die
-    Widerrufsinformation zur Verfügung gestellt hat (§ 356b Abs. 1 BGB). Fehlen Pflichtangaben,
-    können sie nachgeholt werden, die Frist beginnt dann mit der Nachholung (§ 356b Abs. 2
-    BGB). Der Widerruf erfolgt durch Erklärung gegenüber dem Darlehensgeber, eine Begründung
+    S. 1 BGB). Sie beginnt nicht vor Vertragsschluss und nicht, bevor der Darlehensgeber dem Darlehensnehmer die Vertragsurkunde, den schriftlichen Antrag oder eine Abschrift davon zur Verfügung gestellt hat (§ 356b Abs. 1 BGB). Fehlen in der Urkunde die Pflichtangaben nach § 492 Abs. 2 BGB (dazu gehören die Angaben zum Widerrufsrecht), beginnt die Frist erst mit deren Nachholung nach § 492 Abs. 6 BGB und beträgt dann einen Monat (§ 356b Abs. 2 BGB). Der Widerruf erfolgt durch Erklärung gegenüber dem Darlehensgeber, eine Begründung
     ist nicht erforderlich (§ 355 Abs. 1 BGB); zur Fristwahrung genügt die rechtzeitige Absendung
-    (§ 355 Abs. 1 S. 5 BGB). Die Rückabwicklung richtet sich nach § 357a BGB: Beide Seiten
-    müssen die empfangenen Leistungen binnen 30 Tagen zurückgewähren. Ein Widerruf kann nur
-    im Rahmen der Grenzen von Treu und Glauben ausgeübt werden (Rechtsmissbrauch, Verwirkung).'
+    (§ 355 Abs. 1 S. 5 BGB). Für die Rückabwicklung gilt § 357b BGB: Die empfangenen Leistungen sind spätestens nach 30 Tagen zurückzugewähren. Der Widerruf unterliegt den Grenzen von Treu und Glauben (Rechtsmissbrauch, Verwirkung).'
   norms:
   - § 495 Abs. 1 BGB
   - § 355 BGB
@@ -121,18 +102,20 @@ cards:
   - Eigenformulierung Redaktion
 - slug: zr-darl-verbundene-vertraege-358
   type: norm
-  front: Was sind verbundene Verträge, und welche Wirkung hat der Widerruf (§ 358 BGB)?
-  back: Ein Verbraucherdarlehensvertrag und ein Vertrag über die Lieferung einer Ware oder
-    die Erbringung einer anderen Leistung sind verbunden, wenn das Darlehen ganz oder teilweise
-    der Finanzierung des anderen Vertrags dient und beide Verträge eine wirtschaftliche Einheit
-    bilden (§ 358 Abs. 3 S. 1 BGB). Eine wirtschaftliche Einheit ist besonders anzunehmen,
-    wenn der Unternehmer selbst finanziert oder der Darlehensgeber sich bei Vorbereitung oder
-    Abschluss des Darlehensvertrags der Mitwirkung des Unternehmers bedient (§ 358 Abs. 3
-    S. 2 BGB). Wirksamer Widerruf des Warenvertrags erstreckt sich auf den Darlehensvertrag
-    (§ 358 Abs. 1 BGB), wirksamer Widerruf des Darlehensvertrags auf den verbundenen Vertrag
-    (§ 358 Abs. 2 BGB). Ist das Darlehen dem Unternehmer bereits zugeflossen, tritt der Darlehensgeber
+  front: Wann bilden Darlehen und finanzierter Vertrag eine wirtschaftliche Einheit (§ 358 Abs.
+    3 BGB), und wie wirkt der Widerruf?
+  back: 'Ein Verbraucherdarlehensvertrag und ein Vertrag über eine Ware oder andere Leistung sind
+    verbunden, wenn das Darlehen ganz oder teilweise der Finanzierung des anderen Vertrags dient
+    und beide Verträge eine wirtschaftliche Einheit bilden (§ 358 Abs. 3 S. 1 BGB). Sie wird besonders
+    angenommen, wenn der Unternehmer selbst finanziert oder sich der Darlehensgeber bei Vorbereitung
+    oder Abschluss des Darlehensvertrags der Mitwirkung des Unternehmers bedient (§ 358 Abs. 3
+    S. 2 BGB). Bei finanziertem Grundstückserwerb liegt sie nur vor, wenn der Darlehensgeber das
+    Grundstück selbst verschafft oder über die Kreditgewährung hinaus den Erwerb fördert (§ 358
+    Abs. 3 S. 3 BGB). Rechtsfolge: Der Widerruf des Warenvertrags erstreckt sich auf den Darlehensvertrag
+    (§ 358 Abs. 1 BGB), der Widerruf des Darlehensvertrags auf den verbundenen Vertrag (§ 358
+    Abs. 2 BGB). Ist das Darlehen dem Unternehmer bereits zugeflossen, tritt der Darlehensgeber
     im Verhältnis zum Verbraucher in die Rechte und Pflichten des Unternehmers aus der Rückabwicklung
-    ein (§ 358 Abs. 4 BGB).
+    ein (§ 358 Abs. 4 S. 5 BGB).'
   norms:
   - § 358 Abs. 1 BGB
   - § 358 Abs. 2 BGB
@@ -143,17 +126,16 @@ cards:
   - Eigenformulierung Redaktion
 - slug: zr-darl-einwendungsdurchgriff-359
   type: norm
-  front: Was ermöglicht der Einwendungsdurchgriff (§ 359 BGB)?
+  front: Welche Grenzen hat der Einwendungsdurchgriff nach § 359 BGB?
   back: Bei verbundenen Verträgen kann der Darlehensnehmer die Rückzahlung des Darlehens verweigern,
     soweit Einwendungen aus dem verbundenen Vertrag ihn gegenüber dem Unternehmer zur Verweigerung
-    seiner Leistung berechtigen (§ 359 Abs. 1 S. 1 BGB). Das durchbricht die Trennung von
-    Darlehens- und Kaufvertrag und schützt den Verbraucher vor dem Risiko, das Darlehen trotz
-    mangelhafter Leistung des Verkäufers zurückzahlen zu müssen. Der Durchgriff ist ausgeschlossen
-    bei Einwendungen, die auf einer nach Abschluss des Darlehensvertrags vereinbarten Vertragsänderung
-    beruhen (§ 359 Abs. 1 S. 2 BGB), und bei geringen Beträgen unter 200 Euro (§ 359 Abs.
-    2 BGB). Wegen eines Mangels kann der Darlehensnehmer die Rückzahlung erst verweigern,
-    wenn die Nacherfüllung fehlgeschlagen ist (§ 359 Abs. 1 S. 3 BGB). Der Darlehensgeber
-    behält eigene Rechte gegen den Unternehmer.
+    seiner Leistung berechtigen (§ 359 Abs. 1 S. 1 BGB). Das durchbricht die Trennung von Darlehens-
+    und Kaufvertrag und schützt den Verbraucher vor dem Risiko, das Darlehen trotz mangelhafter
+    Leistung des Verkäufers zurückzahlen zu müssen. Der Durchgriff ist ausgeschlossen bei Einwendungen,
+    die auf einer nach Abschluss des Darlehensvertrags vereinbarten Vertragsänderung beruhen (§
+    359 Abs. 1 S. 2 BGB), und bei geringen Beträgen unter 200 Euro (§ 359 Abs. 2 BGB). Wegen eines
+    Mangels kann der Darlehensnehmer die Rückzahlung erst verweigern, wenn die Nacherfüllung fehlgeschlagen
+    ist (§ 359 Abs. 1 S. 3 BGB). Der Darlehensgeber behält eigene Rechte gegen den Unternehmer.
   norms:
   - § 359 Abs. 1 BGB
   - § 359 Abs. 2 BGB
@@ -189,9 +171,7 @@ cards:
     aus einem Verbraucherdarlehensvertrag jederzeit ganz oder teilweise vorzeitig erfüllen
     (§ 500 Abs. 2 BGB). In diesem Fall kann der Darlehensgeber unter den Voraussetzungen des
     § 502 BGB eine angemessene Vorfälligkeitsentschädigung für den unmittelbar mit der vorzeitigen
-    Rückzahlung zusammenhängenden Schaden verlangen, die Höchstgrenzen von 1 Prozent des vorzeitig
-    zurückgezahlten Betrags (0,5 Prozent, wenn der Zeitraum zwischen Rückzahlung und vereinbartem
-    Ende ein Jahr nicht übersteigt) nicht überschreiten darf (§ 502 Abs. 3 BGB). Die Entschädigung
+    Rückzahlung zusammenhängenden Schaden verlangen, sofern bei Rückzahlung ein gebundener Sollzinssatz geschuldet wird (§ 502 Abs. 1 BGB). Die Entschädigung darf 1 Prozent des vorzeitig zurückgezahlten Betrags (0,5 Prozent, wenn der Zeitraum zwischen Rückzahlung und vereinbartem Ende ein Jahr nicht übersteigt) und den Sollzins für diese Restlaufzeit nicht überschreiten (§ 502 Abs. 3 BGB). Die Entschädigung
     entfällt in den Fällen des § 502 Abs. 2 BGB, etwa wenn die Rückzahlung aus einer Versicherung
     finanziert wird oder Angaben im Vertrag zur Kündigung oder Berechnung fehlen.
   norms:
@@ -220,8 +200,7 @@ schemata:
   - label: III. Wirksamer Widerruf
     children:
     - label: 1. Widerrufserklärung gegenüber dem Darlehensgeber, § 355 Abs. 1 BGB
-    - label: 2. Widerrufsfrist von 14 Tagen, § 355 Abs. 2 BGB; Fristbeginn nach § 356b Abs.
-        1 BGB (Vertragsschluss und Pflichtangaben)
+    - label: 2. Widerrufsfrist von 14 Tagen, § 355 Abs. 2 BGB; Fristbeginn nach § 356b BGB (Vertragsschluss, Urkunde, Pflichtangaben)
     - label: 3. Kein Ausschluss durch Rechtsmissbrauch oder Verwirkung
   - label: IV. Verbundener Vertrag, § 358 Abs. 3 BGB
     children:
@@ -256,23 +235,17 @@ faelle:
       Verbraucher, B Unternehmer, entgeltliches Darlehen). Nach § 495 Abs. 1 BGB steht V das
       Widerrufsrecht nach § 355 BGB zu.
   - prompt: Ist der Widerruf rechtzeitig und formgerecht?
-    erwartung: Ja. Die Frist beträgt 14 Tage (§ 355 Abs. 2 S. 1 BGB) und beginnt mit Vertragsschluss,
-      weil V am 1. Juni alle Pflichtangaben und die Widerrufsinformation erhalten hat (§ 356b
-      Abs. 1 BGB). Der Widerruf am 10. Juni erfolgte gegenüber dem Darlehensgeber innerhalb
+    erwartung: Ja. Die Frist beträgt 14 Tage (§ 355 Abs. 2 S. 1 BGB) und beginnt mit Vertragsschluss, weil V am 1. Juni die Vertragsurkunde mit allen Pflichtangaben und der Widerrufsinformation erhalten hat (§ 356b BGB). Der Widerruf am 10. Juni erfolgte gegenüber dem Darlehensgeber innerhalb
       der Frist.
   - prompt: Sind Darlehens- und Kaufvertrag verbundene Verträge?
     erwartung: Ja. Das Darlehen dient der Finanzierung des Kaufpreises und wurde direkt an
       A ausgezahlt; B hat sich bei Vorbereitung und Abschluss der Mitwirkung des Autohauses
       bedient. Beide Verträge bilden eine wirtschaftliche Einheit (§ 358 Abs. 3 BGB).
   - prompt: Welche Wirkung hat der Widerruf auf den Kaufvertrag?
-    erwartung: Mit dem Widerruf des Darlehensvertrags ist V auch an seine auf den Abschluss
-      des verbundenen Kaufvertrags gerichtete Willenserklärung nicht mehr gebunden (§ 358
-      Abs. 2 BGB). Der Kaufvertrag wird rückabgewickelt.
+    erwartung: Der Widerruf des Darlehensvertrags erstreckt sich nach § 358 Abs. 2 BGB auf den verbundenen Kaufvertrag. V ist auch an seine auf den Abschluss des Kaufvertrags gerichtete Willenserklärung nicht mehr gebunden, der Kaufvertrag wird rückabgewickelt.
   - prompt: Wie erfolgt die Rückabwicklung?
     erwartung: Da B das Darlehen bereits an A ausgezahlt hat, tritt B im Verhältnis zu V in
-      die Rechte und Pflichten des A aus der Rückabwicklung ein (§ 358 Abs. 4 BGB). V muss
-      den Pkw (mit Wertersatz für Nutzung) herausgeben, schuldet B aber keine Rückzahlung
-      der an A gezahlten Darlehenssumme.
+      die Rechte und Pflichten des A aus der Rückabwicklung ein (§ 358 Abs. 4 BGB). V muss den Pkw herausgeben, gegebenenfalls mit Wertersatz für einen Wertverlust (§ 358 Abs. 4 S. 1, § 357a BGB), schuldet B aber keine Rückzahlung der an A gezahlten Darlehenssumme und keine Zinsen oder Kosten.
   expectation:
     pruefpunkte:
     - id: p1
@@ -334,6 +307,8 @@ faelle:
       - Kaufvertrag entfällt
       - Widerruf erstreckt sich
       - Erstreckung des Widerrufs
+      - erstreckt sich auf den verbundenen Kaufvertrag
+      - Kaufvertrag rückabgewickelt
       card_slugs:
       - zr-darl-verbundene-vertraege-358
     - id: p5
