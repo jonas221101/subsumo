@@ -207,12 +207,28 @@ class SchemaTile extends StatelessWidget {
                   children: [
                     if (landesLabel(schema['bundesland']) case final land?)
                       SubsumoChip(label: land, icon: Icons.location_on_outlined),
-                    for (final norm in norms) NormLink(norm),
+                    // Im Kopf nur Text: ein antippbarer Link im Untertitel
+                    // uebernimmt bei genau einer Norm die ganze Kachel (Tippen
+                    // oeffnete den Normtext statt das Schema, Welle 5).
+                    for (final norm in norms)
+                      Text(
+                        kurzeNormBeschriftung(norm),
+                        style: theme.textTheme.bodySmall
+                            ?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+                      ),
                   ],
                 ),
               ),
         children: [
           const Divider(),
+          if (norms.isNotEmpty) ...[
+            const SizedBox(height: Spacing.sm),
+            Wrap(
+              spacing: Spacing.md,
+              runSpacing: Spacing.xs,
+              children: [for (final norm in norms) NormLink(norm)],
+            ),
+          ],
           const SizedBox(height: Spacing.md),
           ..._buildSteps(context, steps, 0),
           const SizedBox(height: Spacing.lg),

@@ -8,6 +8,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:subsumo/pages/norm_sheet.dart';
 import 'package:subsumo/api.dart';
 import 'package:subsumo/pages/account_page.dart';
 import 'package:subsumo/pages/cases_page.dart';
@@ -68,7 +69,13 @@ void main() {
     expect(find.text('Anspruch entstanden'), findsNothing);
     expect(find.byIcon(Icons.close), findsNothing);
 
+    // Die Norm im Kopf ist nur Text - Tippen klappt auf, statt den Dialog zu
+    // oeffnen (Welle 5). Der Link sitzt im aufgeklappten Inhalt.
     await tester.tap(find.text('§ 433 Abs. 2 BGB'));
+    await tester.pumpAndSettle();
+    expect(find.text('Anspruch entstanden'), findsOneWidget);
+    expect(find.byIcon(Icons.close), findsNothing);
+    await tester.tap(find.byType(NormLink));
     await tester.pumpAndSettle();
     expect(find.byIcon(Icons.close), findsOneWidget);
   });

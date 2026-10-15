@@ -151,7 +151,7 @@ void main() {
     expect(lang, endsWith('…'));
   });
 
-  testWidgets('Schemata: Normangabe im Kopf ist antippbar', (tester) async {
+  testWidgets('Schemata: Normangabe ist nach dem Aufklappen antippbar', (tester) async {
     final client = MockClient((r) async {
       if (r.url.path.endsWith('/v1/normen')) return _normResponse(r);
       return http.Response(
@@ -182,7 +182,12 @@ void main() {
     ));
     await tester.pumpAndSettle();
 
+    // Im Kopf nur Text; Tippen klappt das Schema auf.
     await tester.tap(find.text('§ 433 Abs. 2 BGB'));
+    await tester.pumpAndSettle();
+    expect(find.textContaining('(2) Der Käufer'), findsNothing);
+    // Im aufgeklappten Inhalt ist die Norm ein Link.
+    await tester.tap(find.byType(NormLink));
     await tester.pumpAndSettle();
 
     expect(find.textContaining('(2) Der Käufer'), findsOneWidget);
