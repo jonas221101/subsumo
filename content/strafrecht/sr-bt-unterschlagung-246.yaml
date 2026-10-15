@@ -144,18 +144,18 @@ faelle:
     um an einem Amateurrennen teilzunehmen. Beide vereinbaren, dass A das Rad am Sonntagabend
     zurückgibt. Am Montag verkauft A das Rad stattdessen über ein Online-Verkaufsportal
     an den gutgläubigen Dritten C, weil er dringend Geld benötigt.
-  question: Hat sich A gegenüber B wegen (veruntreuender) Unterschlagung gemäß
-    § 246 StGB strafbar gemacht?
+  question: Hat sich A gegenüber B wegen (veruntreuender) Unterschlagung gemäß § 246
+    StGB strafbar gemacht?
   steps:
   - prompt: Formuliere den Obersatz.
-    erwartung: A könnte sich durch den Verkauf des Rennrads wegen Unterschlagung
-      gemäß § 246 Abs. 1, Abs. 2 StGB strafbar gemacht haben.
+    erwartung: A könnte sich durch den Verkauf des Rennrads wegen Unterschlagung gemäß
+      § 246 Abs. 1, Abs. 2 StGB strafbar gemacht haben.
   - prompt: Ist das Rennrad eine fremde bewegliche Sache?
     erwartung: Ja - es steht im Eigentum des B.
   - prompt: Liegt eine Zueignung vor?
     erwartung: Ja - durch den Verkauf an C hat A seinen Willen, das Rad dauerhaft
-      dem eigenen Vermögen einzuverleiben und B davon dauerhaft auszuschließen,
-      nach außen manifestiert.
+      dem eigenen Vermögen einzuverleiben und B davon dauerhaft auszuschließen, nach
+      außen manifestiert.
   - prompt: War das Rad dem A anvertraut, § 246 Abs. 2 StGB?
     erwartung: Ja - A hatte das Rad aufgrund der Leihabrede mit B, also eines Vertrauensverhältnisses,
       in Besitz, mit der Maßgabe, es zurückzugeben.
@@ -164,8 +164,8 @@ faelle:
       fehlt an einem Gewahrsamsbruch. Ein Diebstahl scheidet daher aus, § 246 StGB
       bleibt anwendbar.
   - prompt: Formuliere das Ergebnis.
-    erwartung: A hat sich gegenüber B wegen veruntreuender Unterschlagung gemäß
-      § 246 Abs. 1, Abs. 2 StGB strafbar gemacht.
+    erwartung: A hat sich gegenüber B wegen veruntreuender Unterschlagung gemäß §
+      246 Abs. 1, Abs. 2 StGB strafbar gemacht.
   expectation:
     pruefpunkte:
     - id: p1
@@ -175,7 +175,9 @@ faelle:
       norms:
       - § 246 Abs. 1 StGB
       keywords:
-      - '246'
+      - § 246 Abs. 1
+      - § 246 Abs. 2
+      - Unterschlagung gemäß § 246
       card_slugs:
       - sr-unterschlagung-zueignungsbegriff
     - id: p2
@@ -195,8 +197,10 @@ faelle:
       norms:
       - § 246 Abs. 1 StGB
       keywords:
-      - Zueignung
-      - manifestiert
+      - Manifestation des Zueignungswillens
+      - Zueignung manifestiert
+      - Zueignungsakt
+      - Zueignung durch Verkauf
       card_slugs:
       - sr-unterschlagung-zueignungsbegriff
       - sr-unterschlagung-manifestation-beispiele
@@ -207,7 +211,8 @@ faelle:
       norms:
       - § 246 Abs. 1 StGB
       keywords:
-      - rechtswidrig
+      - rechtswidrige Zueignung
+      - Rechtswidrigkeit der Zueignung
       card_slugs:
       - sr-diebstahl-rechtswidrigkeit-zueignung
     - id: p5
@@ -218,6 +223,7 @@ faelle:
       - § 246 Abs. 2 StGB
       keywords:
       - anvertraut
+      - Anvertrautsein
       - Vertrauensverhältnis
       card_slugs:
       - sr-unterschlagung-anvertrautsein
@@ -228,8 +234,9 @@ faelle:
       norms:
       - § 242 StGB
       keywords:
-      - Gewahrsamsbruch
-      - subsidiär
+      - kein Gewahrsamsbruch
+      - Subsidiaritätsklausel
+      - Subsidiarität
       card_slugs:
       - sr-unterschlagung-abgrenzung-diebstahl-242
       - sr-unterschlagung-subsidiaritaetsklausel
@@ -241,6 +248,6 @@ faelle:
       - § 246 Abs. 2 StGB
       keywords:
       - veruntreuende Unterschlagung
-      - strafbar gemacht
+      - § 246 Abs. 2
       card_slugs:
       - sr-unterschlagung-veruntreuende-qualifikation

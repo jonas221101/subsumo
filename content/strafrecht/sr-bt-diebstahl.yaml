@@ -9,8 +9,8 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-13'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: sr-diebstahl-fremde-bewegliche-sache
   type: definition
@@ -52,35 +52,13 @@ cards:
   stand: 2026-09
 - slug: sr-diebstahl-vollendung-gewahrsamsenklave
   type: streitstand
-  front: Wann ist die Wegnahme vollendet? Historische Theorien und heutige Lösung
-  back: 'Historisch wurden verschiedene Zeitpunkte vertreten: Kontrektationstheorie
+  front: Wann ist die Wegnahme vollendet? Theorien, Gewahrsamswechsel und Beobachtung
+  back: |-
+    Historisch wurden verschiedene Zeitpunkte der Vollendung vertreten: Kontrektationstheorie (schon jede Berührung genügt), Apprehensionstheorie (das Ergreifen genügt), Ablationstheorie (die Sache muss aus dem Herrschaftsbereich des Berechtigten fortgetragen werden) und Illationstheorie (die Sache muss an den vom Täter erstrebten Ort gebracht werden). Heute maßgeblich ist die Gewahrsamswechseltheorie: Die Wegnahme ist vollendet, sobald der alte Gewahrsam gebrochen und neuer, eigener Gewahrsam begründet ist - beurteilt nach der Verkehrsanschauung.
 
-    (schon jede Berührung der Sache genügt), Apprehensionstheorie (das
+    Bei kleinen, leicht verbergbaren Gegenständen genügt dafür das Einstecken in die am Körper getragene Kleidung oder Tasche: Der Täter begründet damit eigenen Gewahrsam innerhalb der fremden Gewahrsamssphäre (Gewahrsamsenklave); die Kleidung gehört zu seiner persönlichen Sphäre, der Zugriff des Berechtigten ist wegen des Zugriffs auf den Körper erschwert. Der Täter muss den Verkaufsraum nicht verlassen haben. Bei sperrigen Gegenständen (Fernseher) braucht es dagegen regelmäßig das Fortschaffen aus dem Herrschaftsbereich.
 
-    Ergreifen der Sache genügt) und Ablationstheorie (die Sache muss aus dem
-
-    Herrschaftsbereich des Berechtigten fortgetragen werden). Alle drei gelten
-
-    heute als zu weit bzw. zu eng.
-
-
-    Heute maßgeblich ist die Gewahrsamswechseltheorie: Wegnahme ist vollendet,
-
-    sobald der alte Gewahrsam gebrochen und neuer, eigener Gewahrsam begründet
-
-    ist - beurteilt nach der Verkehrsanschauung. Bei kleinen, leicht in der
-
-    Kleidung oder einer Tasche verbergbaren Gegenständen genügt dafür
-
-    bereits das Einstecken in einen dem Zugriff Dritter entzogenen Bereich
-
-    (sog. Gewahrsamsenklave) - der Täter muss den Herrschaftsbereich des
-
-    bisherigen Gewahrsamsinhabers (z. B. den Verkaufsraum) noch nicht
-
-    verlassen haben.
-
-    '
+    Beobachtung: Wird der Täter von einem Detektiv oder Mitarbeiter beobachtet, hindert das die Vollendung nicht. Der Gewahrsamsbruch ist ein objektiver Gewahrsamswechsel; er hängt weder von der Heimlichkeit der Tat noch davon ab, dass der bisherige Inhaber den Verlust bemerkt (h.M.). Bloße Beobachtung und die Bereitschaft zum Eingreifen lassen den neu begründeten Gewahrsam nicht entfallen.
   norms:
   - § 242 Abs. 1 StGB
   quellen:
@@ -103,11 +81,15 @@ cards:
   type: definition
   front: Wann ist die erstrebte Zueignung rechtswidrig?
   back: Die erstrebte Zueignung ist rechtswidrig, wenn dem Täter kein fälliger und
-    einredefreier Anspruch auf Übereignung gerade dieser konkreten Sache zusteht.
-    Hat der Täter dagegen einen fälligen Anspruch auf eine gleichartige Sache aus
-    einer Gattung (z. B. Geld), fehlt es bereits an der Gleichartigkeit mit dem geschuldeten
-    Gegenstand - der Anspruch auf eine andere Sache derselben Gattung schließt die
-    Rechtswidrigkeit der Zueignung der konkreten weggenommenen Sache nicht aus.
+    einredefreier Anspruch auf Übereignung gerade dieser Sache zusteht. Bei einer
+    Stückschuld (konkrete Sache geschuldet) und fälligem Anspruch ist die Zueignung
+    nicht rechtswidrig. Bei einer Gattungsschuld (z. B. Geld) hat der Täter lediglich
+    einen Anspruch auf Leistung durch den Schuldner; die Konkretisierung steht dem
+    Schuldner zu (Wahlrecht, § 243 BGB). Der Täter hat kein Selbsthilferecht, sich
+    irgendeine Sache der Gattung zu nehmen. Die Zueignung bleibt daher auch bei fälliger
+    Gattungsschuld rechtswidrig (h.M.). Eine Gegenansicht stellt auf die wirtschaftliche
+    Deckung von Anspruch und Erlangtem ab; sie verkennt die Entscheidungsbefugnis
+    des Schuldners.
   norms:
   - § 242 Abs. 1 StGB
   quellen:
@@ -144,8 +126,9 @@ schemata:
       children:
       - label: a) Fremde bewegliche Sache
       - label: b) Wegnahme (Bruch fremden, Begründung neuen Gewahrsams)
-        hinweis: Bei kleinen Gegenständen genügt das Einstecken in eine Gewahrsamsenklave,
-          ohne dass der Täter den Tatort verlassen haben muss.
+        hinweis: Bei kleinen Gegenständen genügt das Einstecken in die Kleidung (eigener
+          Gewahrsam in der Gewahrsamsenklave); Beobachtung durch Dritte hindert die
+          Vollendung nicht. Der Täter muss den Tatort nicht verlassen haben.
     - label: 2. Subjektiver Tatbestand
       children:
       - label: a) Vorsatz bzgl. aller objektiven Tatbestandsmerkmale, § 15 StGB
@@ -167,12 +150,11 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
-  facts: A betritt eine Drogerie und nimmt eine Flasche Parfüm aus dem Regal. Um
-    sie nicht bezahlen zu müssen, steckt er sie in die Innentasche seiner Jacke und
-    geht in Richtung Ausgang. Kurz bevor er den Kassenbereich erreicht, wird er vom
-    aufmerksamen Kaufhausdetektiv D angehalten, der die gesamte Szene beobachtet hatte;
-    die Flasche wird sichergestellt. A hat das Ladengeschäft zu keinem Zeitpunkt
-    verlassen.
+  facts: A betritt eine Drogerie und nimmt eine Flasche Parfüm aus dem Regal. Um sie
+    nicht bezahlen zu müssen, steckt er sie in die Innentasche seiner Jacke und geht
+    in Richtung Ausgang. Kurz bevor er den Kassenbereich erreicht, wird er vom aufmerksamen
+    Kaufhausdetektiv D angehalten, der die gesamte Szene beobachtet hatte; die Flasche
+    wird sichergestellt. A hat das Ladengeschäft zu keinem Zeitpunkt verlassen.
   question: Hat sich A wegen vollendeten Diebstahls gemäß § 242 Abs. 1 StGB strafbar
     gemacht?
   steps:
@@ -183,9 +165,12 @@ faelle:
     erwartung: Ja - sie steht im Eigentum der Drogerie und ist beweglich.
   - prompt: Liegt eine vollendete Wegnahme vor, obwohl A den Laden nicht verlassen
       hat?
-    erwartung: 'Ja. Durch das Einstecken in die Innentasche hat A eine Gewahrsamsenklave
-      gebildet: Der Gewahrsam der Drogerie ist gebrochen, eigener neuer Gewahrsam
-      des A begründet - das Verlassen des Ladens ist dafür nicht erforderlich.'
+    erwartung: 'Ja. Durch das Einstecken in die Innentasche der Jacke hat A eigenen
+      neuen Gewahrsam in einer Gewahrsamsenklave innerhalb der fremden Gewahrsamssphäre
+      begründet; der Gewahrsam der Drogerie ist gebrochen. Das Verlassen des Ladens
+      ist nicht erforderlich. Dass der Detektiv D alles beobachtet hat, ändert nichts:
+      Der Gewahrsamswechsel ist ein objektiver Vorgang und hängt nicht von Heimlichkeit
+      ab; Beobachtung und Eingreifbereitschaft hindern die Vollendung nicht.'
   - prompt: Liegt Zueignungsabsicht vor?
     erwartung: Ja - A wollte die Flasche seinem eigenen Vermögen einverleiben (Aneignung)
       und die Drogerie dauerhaft von ihrem Eigentum ausschließen (Enteignung).
@@ -201,7 +186,8 @@ faelle:
       norms:
       - § 242 Abs. 1 StGB
       keywords:
-      - '242'
+      - § 242 Abs. 1
+      - Diebstahl gemäß § 242
     - id: p2
       label: Fremde bewegliche Sache bejaht
       weight: 1.0
@@ -210,7 +196,8 @@ faelle:
       - § 242 Abs. 1 StGB
       keywords:
       - fremde bewegliche Sache
-      - bewegliche Sache
+      - Eigentum der Drogerie
+      - Parfümflasche ist eine Sache
       card_slugs:
       - sr-diebstahl-fremde-bewegliche-sache
     - id: p3
@@ -221,10 +208,25 @@ faelle:
       - § 242 Abs. 1 StGB
       keywords:
       - Gewahrsamsenklave
+      - Gewahrsamswechsel
       - neuen Gewahrsam
-      - Gewahrsam
+      - Einstecken
+      - Gewahrsamsbruch
+      - Beobachtung hindert die Vollendung nicht
       card_slugs:
       - sr-diebstahl-wegnahme-begriff
+      - sr-diebstahl-vollendung-gewahrsamsenklave
+    - id: p3b
+      label: Beobachtung durch den Detektiv hindert die Vollendung nicht (objektiver
+        Gewahrsamswechsel)
+      weight: 1.0
+      required: false
+      keywords:
+      - Beobachtung hindert
+      - Detektiv
+      - beobachtet
+      - Heimlichkeit
+      card_slugs:
       - sr-diebstahl-vollendung-gewahrsamsenklave
     - id: p4
       label: Zueignungsabsicht mit Aneignungs- und Enteignungskomponente bejaht
@@ -234,8 +236,10 @@ faelle:
       - § 242 Abs. 1 StGB
       keywords:
       - Zueignungsabsicht
-      - Aneignung
-      - Enteignung
+      - Aneignungskomponente
+      - Enteignungskomponente
+      - Aneignungsabsicht
+      - Enteignungsvorsatz
       card_slugs:
       - sr-diebstahl-zueignungsabsicht
     - id: p5
@@ -245,9 +249,11 @@ faelle:
       norms:
       - § 242 Abs. 1 StGB
       keywords:
-      - rechtswidrig
+      - Rechtswidrigkeit der Zueignung
       - keinen Anspruch
       - fälligen Anspruch
+      - einredefreien Anspruch
+      - rechtswidrige Zueignung
       card_slugs:
       - sr-diebstahl-rechtswidrigkeit-zueignung
     - id: p6
@@ -257,7 +263,10 @@ faelle:
       norms:
       - § 15 StGB
       keywords:
-      - Vorsatz
+      - Vorsatz bezüglich
+      - Vorsatz hinsichtlich
+      - Tatbestandsvorsatz
+      - § 15 StGB
       card_slugs:
       - sr-at-vorsatz
     - id: p7
@@ -267,7 +276,9 @@ faelle:
       norms:
       - § 242 Abs. 1 StGB
       keywords:
-      - strafbar gemacht
-      - A hat sich
+      - vollendeten Diebstahls strafbar
+      - Diebstahl ist vollendet
+      - vollendeter Diebstahl
+      - Diebstahl gemäß § 242 Abs. 1 StGB erfüllt
       card_slugs:
       - sr-diebstahl-vollendung-gewahrsamsenklave

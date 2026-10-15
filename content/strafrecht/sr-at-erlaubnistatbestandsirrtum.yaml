@@ -8,7 +8,7 @@ topic:
   redaktion:
     erzeugt_von: claude-fable-5-1
     status: in-pruefung
-    normzitate_geprueft: true
+    normzitate_geprueft: false
 cards:
 - slug: sr-eti-begriff
   type: definition
@@ -265,60 +265,52 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
   stand: 2026-09
-  facts: >-
-    A geht spätabends mit seinem Bekannten C durch einen schlecht beleuchteten
+  facts: 'A geht spätabends mit seinem Bekannten C durch einen schlecht beleuchteten
     Park. Plötzlich läuft B in dunkler Sportkleidung schnell auf die beiden zu und
     greift dabei in seine Jackentasche, um sein Mobiltelefon herauszuholen, dessen
-    Wecker gerade klingelt. C erkennt B sofort als seinen Nachbarn, der hier
-    regelmäßig joggt, und weiß, dass B völlig harmlos ist. Trotzdem ruft C dem A zu:
-    "Der hat ein Messer, schlag zu!" A, der B nicht kennt und in der Dunkelheit
-    tatsächlich glaubt, gleich mit einem Messer angegriffen zu werden, schlägt B
-    mit der Faust ins Gesicht. B erleidet einen Nasenbruch. Bei ruhiger Betrachtung
-    hätte A erkennen können, dass B lediglich nach seinem Telefon griff.
+    Wecker gerade klingelt. C erkennt B sofort als seinen Nachbarn, der hier regelmäßig
+    joggt, und weiß, dass B völlig harmlos ist. Trotzdem ruft C dem A zu: "Der hat
+    ein Messer, schlag zu!" A, der B nicht kennt und in der Dunkelheit tatsächlich
+    glaubt, gleich mit einem Messer angegriffen zu werden, schlägt B mit der Faust
+    ins Gesicht. B erleidet einen Nasenbruch. Bei ruhiger Betrachtung hätte A erkennen
+    können, dass B lediglich nach seinem Telefon griff.'
   question: Wie haben sich A und C strafbar gemacht?
   steps:
   - prompt: Hat A den Tatbestand des § 223 Abs. 1 StGB erfüllt?
-    erwartung: >-
-      Ja - der Faustschlag mit Nasenbruch ist körperliche Misshandlung und
+    erwartung: Ja - der Faustschlag mit Nasenbruch ist körperliche Misshandlung und
       Gesundheitsschädigung; A wusste und wollte, dass er B schlägt (Tatbestandsvorsatz).
   - prompt: Ist A durch Notwehr, § 32 StGB, gerechtfertigt?
-    erwartung: >-
-      Nein - objektiv lag kein Angriff des B vor; B wollte nur sein Telefon aus der
-      Tasche holen. Ohne Notwehrlage scheidet eine Rechtfertigung aus.
+    erwartung: Nein - objektiv lag kein Angriff des B vor; B wollte nur sein Telefon
+      aus der Tasche holen. Ohne Notwehrlage scheidet eine Rechtfertigung aus.
   - prompt: Welcher Irrtum liegt bei A vor und wie ist er von § 17 StGB abzugrenzen?
-    erwartung: >-
-      A stellte sich einen gegenwärtigen rechtswidrigen Angriff mit einem Messer
-      vor. Hätte diese Vorstellung zugetroffen, wäre der Faustschlag als
-      erforderliche Verteidigung nach § 32 StGB gerechtfertigt gewesen. A irrt also
-      über die tatsächlichen Voraussetzungen eines anerkannten Rechtfertigungsgrundes
-      (Erlaubnistatbestandsirrtum, Putativnotwehr) und nicht über dessen rechtliche
-      Grenzen; § 17 StGB passt nicht.
+    erwartung: A stellte sich einen gegenwärtigen rechtswidrigen Angriff mit einem
+      Messer vor. Hätte diese Vorstellung zugetroffen, wäre der Faustschlag als erforderliche
+      Verteidigung nach § 32 StGB gerechtfertigt gewesen. A irrt also über die tatsächlichen
+      Voraussetzungen eines anerkannten Rechtfertigungsgrundes (Erlaubnistatbestandsirrtum,
+      Putativnotwehr) und nicht über dessen rechtliche Grenzen; § 17 StGB passt nicht.
   - prompt: Welche Rechtsfolge hat der Erlaubnistatbestandsirrtum für A?
-    erwartung: >-
-      Nach der strengen Schuldtheorie bliebe A Vorsatztäter (§ 17 StGB, Irrtum
-      vermeidbar). Nach der Lehre von den negativen Tatbestandsmerkmalen und der
-      vorsatzunrechtsverneinenden eingeschränkten Schuldtheorie entfällt der Vorsatz
-      nach § 16 Abs. 1 S. 1 StGB (direkt bzw. analog). Nach der
-      rechtsfolgenverweisenden eingeschränkten Schuldtheorie (h.M.) bleibt der
-      Tatbestandsvorsatz bestehen, aber die Vorsatzschuld entfällt. Der h.M. ist zu
-      folgen: A ist nicht wegen vorsätzlicher Körperverletzung strafbar.
+    erwartung: 'Nach der strengen Schuldtheorie bliebe A Vorsatztäter (§ 17 StGB,
+      Irrtum vermeidbar). Nach der Lehre von den negativen Tatbestandsmerkmalen und
+      der vorsatzunrechtsverneinenden eingeschränkten Schuldtheorie entfällt der Vorsatz
+      nach § 16 Abs. 1 S. 1 StGB (direkt bzw. analog). Nach der rechtsfolgenverweisenden
+      eingeschränkten Schuldtheorie (h.M.) bleibt der Tatbestandsvorsatz bestehen,
+      aber die Vorsatzschuld entfällt. Der h.M. ist zu folgen: A ist nicht wegen vorsätzlicher
+      Körperverletzung strafbar.'
   - prompt: Hat sich A wegen fahrlässiger Körperverletzung, § 229 StGB, strafbar gemacht?
-    erwartung: >-
-      Ja - § 16 Abs. 1 S. 2 StGB lässt die Fahrlässigkeitsstrafbarkeit unberührt.
-      A hätte bei ruhiger Betrachtung erkennen können, dass B nur nach seinem
-      Telefon griff; der Irrtum war vermeidbar, A verletzte die gebotene Sorgfalt
-      bei der Prüfung der Lage. Der Nasenbruch war vorhersehbar. A ist nach § 229 StGB
-      strafbar.
+    erwartung: Ja - § 16 Abs. 1 S. 2 StGB lässt die Fahrlässigkeitsstrafbarkeit unberührt.
+      A hätte bei ruhiger Betrachtung erkennen können, dass B nur nach seinem Telefon
+      griff; der Irrtum war vermeidbar, A verletzte die gebotene Sorgfalt bei der
+      Prüfung der Lage. Der Nasenbruch war vorhersehbar. A ist nach § 229 StGB strafbar.
   - prompt: Wie hat sich C strafbar gemacht?
-    erwartung: >-
-      C hat A durch seinen Zuruf zur Tat bestimmt und dabei den Irrtum des A
-      bewusst hervorgerufen. Nach h.M. liegt eine vorsätzliche rechtswidrige
-      Haupttat vor, sodass Anstiftung, § 26 StGB, zu § 223 StGB möglich ist. Weil C
-      kraft überlegenen Wissens das Geschehen beherrschte, kommt vorrangig mittelbare
-      Täterschaft, § 25 Abs. 1 Alt. 2 StGB, in Betracht; dahinter tritt die
-      Anstiftung zurück. Nach den vorsatzverneinenden Theorien fehlt eine
-      vorsätzliche Haupttat, sodass nur mittelbare Täterschaft in Betracht kommt -
-      hier mit demselben Ergebnis.
+    erwartung: C hat A durch seinen Zuruf zur Tat bestimmt und dabei den Irrtum des
+      A bewusst hervorgerufen. Nach h.M. (rechtsfolgenverweisende eingeschränkte Schuldtheorie)
+      liegt eine vorsätzliche rechtswidrige Haupttat vor, sodass Anstiftung, § 26
+      StGB, zu § 223 StGB zu bejahen ist. Ob daneben oder vorrangig mittelbare Täterschaft
+      kraft überlegenen Wissens (§ 25 Abs. 1 Alt. 2 StGB) in Betracht kommt, ist umstritten,
+      da A als Werkzeug vorsätzlich handelt; dann träte die Anstiftung zurück. Nach
+      den vorsatzverneinenden Theorien fehlt eine vorsätzliche Haupttat, sodass nur
+      mittelbare Täterschaft bleibt - hier mit demselben Ergebnis (Strafbarkeit des
+      C).
   expectation:
     pruefpunkte:
     - id: p1
@@ -329,7 +321,8 @@ faelle:
       - § 223 Abs. 1 StGB
       keywords:
       - körperliche Misshandlung
-      - Vorsatz
+      - Tatbestandsvorsatz
+      - § 223 Abs. 1 StGB erfüllt
       card_slugs:
       - sr-eti-pruefungsstandort-aufbau
     - id: p2
@@ -339,12 +332,15 @@ faelle:
       norms:
       - § 32 StGB
       keywords:
-      - kein Angriff
-      - Notwehrlage
+      - kein gegenwärtiger Angriff
+      - objektiv kein Angriff
+      - Notwehrlage lag nicht vor
+      - keine Notwehrlage
       card_slugs:
       - sr-eti-pruefungsstandort-aufbau
     - id: p3
-      label: Erlaubnistatbestandsirrtum erkannt und vom Verbotsirrtum bzw. Erlaubnisirrtum abgegrenzt
+      label: Erlaubnistatbestandsirrtum erkannt und vom Verbotsirrtum bzw. Erlaubnisirrtum
+        abgegrenzt
       weight: 2.5
       required: true
       norms:
@@ -353,13 +349,14 @@ faelle:
       keywords:
       - Erlaubnistatbestandsirrtum
       - Putativnotwehr
-      - § 17
+      - Abgrenzung zum Verbotsirrtum
       card_slugs:
       - sr-eti-begriff
       - sr-eti-abgrenzung-erlaubnisirrtum-doppelirrtum
       - sr-eti-gesetzliche-regelungen-16-17
     - id: p4
-      label: Streitstand zu den Schuldtheorien dargestellt und mit der rechtsfolgenverweisenden eingeschränkten Schuldtheorie entschieden
+      label: Streitstand zu den Schuldtheorien dargestellt und mit der rechtsfolgenverweisenden
+        eingeschränkten Schuldtheorie entschieden
       weight: 3.0
       required: true
       norms:
@@ -369,11 +366,13 @@ faelle:
       - rechtsfolgenverweisend
       - strenge Schuldtheorie
       - Vorsatzschuld
+      - negative Tatbestandsmerkmale
       card_slugs:
       - sr-eti-theorien-streitstand
       - sr-eti-rechtsfolgenverweisend-vorsatzschuld
     - id: p5
-      label: Fahrlässige Körperverletzung, § 229 StGB, über § 16 Abs. 1 S. 2 StGB geprüft und wegen Vermeidbarkeit des Irrtums bejaht
+      label: Fahrlässige Körperverletzung, § 229 StGB, über § 16 Abs. 1 S. 2 StGB
+        geprüft und wegen Vermeidbarkeit des Irrtums bejaht
       weight: 2.0
       required: true
       norms:
@@ -381,12 +380,14 @@ faelle:
       - § 16 Abs. 1 S. 2 StGB
       keywords:
       - § 229
-      - fahrlässig
-      - vermeidbar
+      - fahrlässige Körperverletzung
+      - Irrtum war vermeidbar
+      - vermeidbarer Irrtum
       card_slugs:
       - sr-eti-fahrlaessigkeit-vermeidbarkeit
     - id: p6
-      label: Teilnahmeproblem bei C erkannt - Anstiftung nach h.M. möglich, vorrangig mittelbare Täterschaft kraft überlegenen Wissens
+      label: 'Teilnahmeproblem bei C erkannt - h.M.: Anstiftung zu § 223 StGB (ggf.
+        mittelbare Täterschaft kraft überlegenen Wissens, str.)'
       weight: 2.5
       required: true
       norms:
@@ -396,6 +397,7 @@ faelle:
       - Anstiftung
       - mittelbare Täterschaft
       - überlegenes Wissen
-      - Akzessorietät
+      - limitierte Akzessorietät
+      - Anstiftung zu § 223
       card_slugs:
       - sr-eti-teilnahmeproblem-streitstand

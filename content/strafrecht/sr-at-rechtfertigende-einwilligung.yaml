@@ -258,54 +258,48 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
   stand: 2026-09
-  facts: >-
-    A (24 Jahre) und B (25 Jahre) wollen einen alten Streit "wie Männer" klären.
-    Sie verabreden auf einem Parkplatz einen Faustkampf ohne Waffen mit der
-    ausdrücklichen Regel, dass der Kampf endet, sobald einer "Ich gebe auf" ruft.
-    Der gemeinsame Freund C soll auf die Einhaltung achten. Im Kampf trifft A den B
-    mit einem Faustschlag im Gesicht und bricht ihm die Nase. B geht zu Boden und
-    ruft deutlich hörbar "Ich gebe auf". A, der das hört, tritt dem am Boden
-    liegenden B dennoch einmal mit dem Turnschuh in die Rippen, wodurch B eine
-    Prellung erleidet. Zu keinem Zeitpunkt bestand für B Lebensgefahr.
+  facts: A (24 Jahre) und B (25 Jahre) wollen einen alten Streit "wie Männer" klären.
+    Sie verabreden auf einem Parkplatz einen Faustkampf ohne Waffen mit der ausdrücklichen
+    Regel, dass der Kampf endet, sobald einer "Ich gebe auf" ruft. Der gemeinsame
+    Freund C soll auf die Einhaltung achten. Im Kampf trifft A den B mit einem Faustschlag
+    im Gesicht und bricht ihm die Nase. B geht zu Boden und ruft deutlich hörbar "Ich
+    gebe auf". A, der das hört, tritt dem am Boden liegenden B dennoch einmal mit
+    dem Turnschuh in die Rippen, wodurch B eine Prellung erleidet. Zu keinem Zeitpunkt
+    bestand für B Lebensgefahr.
   question: Hat sich A wegen Körperverletzung nach § 223 Abs. 1 StGB strafbar gemacht?
   steps:
   - prompt: Ist der Faustschlag ins Gesicht tatbestandsmäßig nach § 223 Abs. 1 StGB?
-    erwartung: >-
-      Ja - der Nasenbruch ist eine üble, unangemessene Behandlung, die das
+    erwartung: Ja - der Nasenbruch ist eine üble, unangemessene Behandlung, die das
       körperliche Wohlbefinden mehr als nur unerheblich beeinträchtigt (körperliche
-      Misshandlung), und zugleich das Hervorrufen eines pathologischen Zustands
-      (Gesundheitsschädigung). A handelte vorsätzlich.
+      Misshandlung), und zugleich das Hervorrufen eines pathologischen Zustands (Gesundheitsschädigung).
+      A handelte vorsätzlich.
   - prompt: Wirkt die Zustimmung des B als Einverständnis oder als Einwilligung?
-    erwartung: >-
-      § 223 StGB setzt kein Handeln gegen den Willen des Opfers voraus; die
-      Zustimmung kann daher nach h.M. den Tatbestand nicht ausschließen, sondern
-      wirkt nur als rechtfertigende Einwilligung.
+    erwartung: § 223 StGB setzt kein Handeln gegen den Willen des Opfers voraus; die
+      Zustimmung kann daher nach h.M. den Tatbestand nicht ausschließen, sondern wirkt
+      nur als rechtfertigende Einwilligung.
   - prompt: Liegen die allgemeinen Voraussetzungen einer wirksamen Einwilligung vor?
-    erwartung: >-
-      Ja - die körperliche Unversehrtheit ist ein disponibles Individualrechtsgut,
+    erwartung: Ja - die körperliche Unversehrtheit ist ein disponibles Individualrechtsgut,
       B ist als Erwachsener einwilligungsfähig, Willensmängel sind nicht ersichtlich
       und die Einwilligung wurde vor dem Kampf ausdrücklich erklärt.
   - prompt: Ist die Tat trotz Einwilligung sittenwidrig im Sinne des § 228 StGB?
-    erwartung: >-
-      Nein - nach dem Maßstab der Rspr. kommt es auf Art und Gewicht des Eingriffs
-      an. Ein Faustkampf zwischen zwei Personen ohne Waffen, mit vereinbarter
+    erwartung: Nein - nach dem Maßstab der Rspr. kommt es auf Art und Gewicht des
+      Eingriffs an. Ein Faustkampf zwischen zwei Personen ohne Waffen, mit vereinbarter
       Abbruchregel und einem Aufpasser, bei dem keine konkrete Lebensgefahr bestand,
       verstößt nicht gegen die guten Sitten. Die Einwilligung in den Faustschlag ist
       wirksam.
   - prompt: Handelte A beim Faustschlag mit dem erforderlichen subjektiven Rechtfertigungselement?
-    erwartung: >-
-      Ja - A kannte die Verabredung und handelte innerhalb ihres Rahmens. Der
-      Faustschlag ist gerechtfertigt.
+    erwartung: Ja - A kannte die Verabredung und handelte innerhalb ihres Rahmens.
+      Der Faustschlag ist gerechtfertigt.
   - prompt: Wie ist der Tritt in die Rippen nach dem Aufgabe-Ruf zu beurteilen?
-    erwartung: >-
-      Mit dem Ruf "Ich gebe auf" hat B die Einwilligung nach der vereinbarten Regel
-      wirksam widerrufen; das hat A auch wahrgenommen. Der Tritt liegt außerhalb der
-      Einwilligung und ist nicht gerechtfertigt. A hat sich insoweit nach § 223
+    erwartung: Mit dem Ruf "Ich gebe auf" hat B die Einwilligung nach der vereinbarten
+      Regel wirksam widerrufen; das hat A auch wahrgenommen. Der Tritt liegt außerhalb
+      der Einwilligung und ist nicht gerechtfertigt. A hat sich insoweit nach § 223
       Abs. 1 StGB strafbar gemacht.
   expectation:
     pruefpunkte:
     - id: p1
-      label: Tatbestand des § 223 Abs. 1 StGB für den Faustschlag bejaht (körperliche Misshandlung, Gesundheitsschädigung)
+      label: Tatbestand des § 223 Abs. 1 StGB für den Faustschlag bejaht (körperliche
+        Misshandlung, Gesundheitsschädigung)
       weight: 1.0
       required: false
       norms:
@@ -316,19 +310,21 @@ faelle:
       card_slugs:
       - sr-einwilligung-voraussetzungen-ueberblick
     - id: p2
-      label: Zustimmung als rechtfertigende Einwilligung eingeordnet, nicht als tatbestandsausschließendes Einverständnis
+      label: Zustimmung als rechtfertigende Einwilligung eingeordnet, nicht als tatbestandsausschließendes
+        Einverständnis
       weight: 2.0
       required: true
       norms:
       - § 223 Abs. 1 StGB
       keywords:
-      - Einwilligung
-      - Einverständnis
-      - Rechtfertigung
+      - rechtfertigende Einwilligung
+      - Einwilligung als Rechtfertigungsgrund
+      - kein tatbestandsausschließendes Einverständnis
       card_slugs:
       - sr-einwilligung-abgrenzung-einverstaendnis-streitstand
     - id: p3
-      label: Allgemeine Voraussetzungen der Einwilligung geprüft (disponibles Rechtsgut, Einwilligungsfähigkeit, keine Willensmängel, Erklärung vor der Tat)
+      label: Allgemeine Voraussetzungen der Einwilligung geprüft (disponibles Rechtsgut,
+        Einwilligungsfähigkeit, keine Willensmängel, Erklärung vor der Tat)
       weight: 2.0
       required: true
       keywords:
@@ -339,15 +335,17 @@ faelle:
       - sr-einwilligung-voraussetzungen-ueberblick
       - sr-einwilligung-faehigkeit
     - id: p4
-      label: Sittenwidrigkeit nach § 228 StGB mit dem Maßstab der Rspr. (konkrete Lebensgefahr, Eskalationsgefahr) geprüft und verneint
+      label: Sittenwidrigkeit nach § 228 StGB mit dem Maßstab der Rspr. (konkrete
+        Lebensgefahr, Eskalationsgefahr) geprüft und verneint
       weight: 2.5
       required: true
       norms:
       - § 228 StGB
       keywords:
-      - § 228
-      - sittenwidrig
-      - Lebensgefahr
+      - § 228 StGB
+      - Sittenwidrigkeit der Tat
+      - konkrete Lebensgefahr
+      - Art und Schwere der Körperverletzung
       card_slugs:
       - sr-einwilligung-228-sittenwidrigkeit
     - id: p5
@@ -355,20 +353,23 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - Kenntnis
+      - Kenntnis der Einwilligung
       - subjektives Rechtfertigungselement
+      - in Kenntnis der Einwilligung
       card_slugs:
       - sr-einwilligung-subjektives-element
     - id: p6
-      label: Widerruf der Einwilligung durch den Aufgabe-Ruf erkannt, Tritt als nicht gerechtfertigte Körperverletzung bewertet
+      label: Widerruf der Einwilligung durch den Aufgabe-Ruf erkannt, Tritt als nicht
+        gerechtfertigte Körperverletzung bewertet
       weight: 2.5
       required: true
       norms:
       - § 223 Abs. 1 StGB
       keywords:
-      - Widerruf
-      - widerrufen
-      - nicht gerechtfertigt
+      - Widerruf der Einwilligung
+      - Einwilligung widerrufen
+      - Einwilligung wurde widerrufen
+      - nicht von der Einwilligung gedeckt
       card_slugs:
       - sr-einwilligung-subjektives-element
       - sr-einwilligung-voraussetzungen-ueberblick

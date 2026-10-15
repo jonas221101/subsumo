@@ -155,14 +155,14 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
   facts: A wird von Polizeibeamtin P im Rahmen einer Verkehrskontrolle angehalten.
-    Über die aus seiner Sicht überzogen strenge Kontrolle empört, bezeichnet A
-    die Beamtin P lautstark als "unfähigen Vollidioten". Nach Erhalt der Anzeige
-    beruft sich A darauf, er sei felsenfest davon überzeugt gewesen, im Rahmen der
-    grundgesetzlich garantierten Meinungsfreiheit dürfe er Polizeibeamte während
-    einer Kontrolle in jeder Form kritisieren, ohne sich dabei strafbar zu machen.
+    Über die aus seiner Sicht überzogen strenge Kontrolle empört, bezeichnet A die
+    Beamtin P lautstark als "unfähigen Vollidioten". Nach Erhalt der Anzeige beruft
+    sich A darauf, er sei felsenfest davon überzeugt gewesen, im Rahmen der grundgesetzlich
+    garantierten Meinungsfreiheit dürfe er Polizeibeamte während einer Kontrolle in
+    jeder Form kritisieren, ohne sich dabei strafbar zu machen.
   question: 'Unterstellt, der objektive und subjektive Tatbestand der Beleidigung
-    gemäß § 185 StGB liegt vor und die Tat ist rechtswidrig: Handelte A gemäß
-    § 17 StGB ohne Schuld?'
+    gemäß § 185 StGB liegt vor und die Tat ist rechtswidrig: Handelte A gemäß § 17
+    StGB ohne Schuld?'
   steps:
   - prompt: Formuliere den Prüfungsansatz.
     erwartung: A handelte gemäß § 17 StGB ohne Schuld, wenn ihm die Einsicht fehlte,
@@ -177,8 +177,8 @@ faelle:
   - prompt: War der Irrtum vermeidbar?
     erwartung: Ja - jedermann muss damit rechnen, dass eine gezielte Herabwürdigung
       wie die Bezeichnung als 'unfähiger Vollidiot' die Grenzen zulässiger Kritik
-      überschreitet. A hätte dies bei Anspannung seines Gewissens erkennen oder
-      sich erkundigen können.
+      überschreitet. A hätte dies bei Anspannung seines Gewissens erkennen oder sich
+      erkundigen können.
   - prompt: Welche Rechtsfolge ergibt sich daraus?
     erwartung: Da der Irrtum vermeidbar war, entfällt die Schuld nicht. Die Strafe
       kann jedoch nach § 17 Satz 2 StGB i.V.m. § 49 Abs. 1 StGB gemildert werden.
@@ -211,8 +211,11 @@ faelle:
       norms:
       - § 17 StGB
       keywords:
-      - vermeidbar
+      - Irrtum war vermeidbar
+      - vermeidbarer Verbotsirrtum
+      - Anspannung des Gewissens
       - Anspannung seines Gewissens
+      - Erkundigungspflicht
       card_slugs:
       - sr-verbotsirrtum-vermeidbarkeit
     - id: p4
@@ -223,8 +226,10 @@ faelle:
       - § 17 Satz 2 StGB
       - § 49 Abs. 1 StGB
       keywords:
-      - Milderung
-      - § 49
+      - fakultative Milderung
+      - § 49 Abs. 1
+      - § 17 Satz 2
+      - Strafmilderung möglich
       card_slugs:
       - sr-verbotsirrtum-rechtsfolgen
     - id: p5
@@ -234,7 +239,9 @@ faelle:
       norms:
       - § 16 StGB
       keywords:
-      - Tatbestandsirrtum
+      - Abgrenzung zum Tatbestandsirrtum
+      - § 16 StGB
+      - Tatbestandsirrtum liegt nicht vor
       card_slugs:
       - sr-verbotsirrtum-abgrenzung-tatbestandsirrtum-16
     - id: p6
@@ -242,5 +249,6 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - schuldhaft
-      - Ergebnis
+      - handelte schuldhaft
+      - Schuld bleibt bestehen
+      - Strafmilderung nach § 49 Abs. 1

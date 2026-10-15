@@ -10,13 +10,17 @@ topic:
 cards:
   - slug: sr-at-handlung
     type: definition
-    front: "Definiere: strafrechtliche Handlung"
-    back: >-
-      Eine Handlung ist jedes vom menschlichen Willen beherrschte oder
-      beherrschbare Verhalten. Keine Handlungen sind daher vis absoluta,
-      Reflexbewegungen und Bewegungen im Zustand der Bewusstlosigkeit.
-    norms: ["§ 13 StGB"]
-    quellen: ["StGB, amtliche Fassung", "Eigenformulierung Redaktion"]
+    front: 'Definiere: strafrechtliche Handlung'
+    back: 'Eine Handlung ist jedes vom menschlichen Willen beherrschte oder beherrschbare
+      Verhalten (kausaler/sozialer Handlungsbegriff, in der Klausur h.M.). Keine Handlungen
+      sind daher vis absoluta, Reflexbewegungen und Bewegungen im Zustand der Bewusstlosigkeit.
+      Der Handlungsbegriff wird im Gutachten nur bei konkreten Zweifeln ausdrücklich
+      geprüft (z. B. Reflex, Schlaf, Zwang). Die Abgrenzung von Tun und Unterlassen
+      ist davon zu trennen (Unterlassen: § 13 StGB).'
+    norms: []
+    quellen:
+    - StGB, amtliche Fassung
+    - Eigenformulierung Redaktion
 
   - slug: sr-at-kausalitaet
     type: definition
@@ -165,71 +169,120 @@ schemata:
 
 faelle:
   - slug: sr-fall-notwehr-schlagstock
-    title: "Der Schlagstock"
+    title: Der Schlagstock
     difficulty: 3
     minutes: 60
-    quellen: ["Eigener Sachverhalt der Redaktion", "StGB, amtliche Fassung"]
-    facts: >-
-      A und B geraten vor einer Kneipe in Streit. B, der deutlich kräftiger ist,
-      holt mit der Faust aus, um A ins Gesicht zu schlagen. A weicht zurück,
-      zieht einen Teleskopschlagstock und schlägt B damit einmal kräftig auf
-      den Oberarm. B erleidet eine Prellung und lässt von A ab. A hätte auch
-      weglaufen können; die Straße war frei.
-    question: "Hat sich A nach § 223 Abs. 1 StGB strafbar gemacht?"
+    quellen:
+    - Eigener Sachverhalt der Redaktion
+    - StGB, amtliche Fassung
+    facts: A und B geraten vor einer Kneipe in Streit. B, der deutlich kräftiger ist,
+      holt mit der Faust aus, um A ins Gesicht zu schlagen. A weicht zurück, zieht einen
+      Teleskopschlagstock und schlägt B damit einmal kräftig auf den Oberarm. B erleidet
+      eine Prellung und lässt von A ab. A hätte auch weglaufen können; die Straße war
+      frei.
+    question: Hat sich A nach § 223 Abs. 1 StGB strafbar gemacht?
     steps:
-      - prompt: "Formuliere den Obersatz für die Strafbarkeit des A."
-        erwartung: "A könnte sich durch den Schlag mit dem Teleskopschlagstock wegen Körperverletzung nach § 223 Abs. 1 StGB strafbar gemacht haben."
-      - prompt: "Ist der objektive Tatbestand erfüllt?"
-        erwartung: "Ja - die Prellung ist sowohl körperliche Misshandlung als auch Gesundheitsschädigung."
-      - prompt: "Liegt eine Notwehrlage vor?"
-        erwartung: "Ja - der unmittelbar bevorstehende Faustschlag ist ein gegenwärtiger rechtswidriger Angriff."
-      - prompt: "War die Verteidigung erforderlich, obwohl A hätte fliehen können?"
-        erwartung: "Ja. Flucht ist kein Verteidigungsmittel; das Recht muss dem Unrecht nicht weichen. Erforderlich ist das mildeste gleich wirksame Verteidigungsmittel."
+    - prompt: Formuliere den Obersatz für die Strafbarkeit des A.
+      erwartung: A könnte sich durch den Schlag mit dem Teleskopschlagstock wegen Körperverletzung
+        nach § 223 Abs. 1 StGB strafbar gemacht haben.
+    - prompt: Ist der objektive Tatbestand erfüllt?
+      erwartung: Ja - die Prellung ist sowohl körperliche Misshandlung als auch Gesundheitsschädigung.
+    - prompt: Liegt eine Notwehrlage vor?
+      erwartung: Ja - der unmittelbar bevorstehende Faustschlag ist ein gegenwärtiger
+        rechtswidriger Angriff.
+    - prompt: War die Verteidigung erforderlich, obwohl A hätte fliehen können?
+      erwartung: Ja. Flucht ist kein Verteidigungsmittel; das Recht muss dem Unrecht
+        nicht weichen. Erforderlich ist das mildeste gleich wirksame Verteidigungsmittel.
     expectation:
       pruefpunkte:
-        - id: p1
-          label: "Obersatz mit § 223 Abs. 1 StGB"
-          weight: 1.5
-          required: true
-          norms: ["§ 223 Abs. 1 StGB", "§ 223 StGB"]
-          keywords: ["223"]
-          card_slugs: ["sr-kv-koerperliche-misshandlung"]
-        - id: p2
-          label: "Körperliche Misshandlung und/oder Gesundheitsschädigung definiert und subsumiert"
-          weight: 2.5
-          required: true
-          keywords: ["körperliche Misshandlung", "Gesundheitsschädigung", "Wohlbefinden"]
-          card_slugs: ["sr-kv-koerperliche-misshandlung", "sr-kv-gesundheitsschaedigung"]
-        - id: p3
-          label: "Vorsatz bejaht, § 15 StGB"
-          weight: 1.0
-          norms: ["§ 15 StGB"]
-          keywords: ["Vorsatz"]
-          card_slugs: ["sr-at-vorsatz"]
-        - id: p4
-          label: "Notwehrlage: gegenwärtiger rechtswidriger Angriff"
-          weight: 2.5
-          required: true
-          norms: ["§ 32 StGB", "§ 32 Abs. 2 StGB"]
-          keywords: ["gegenwärtig", "rechtswidriger Angriff", "Notwehrlage"]
-          card_slugs: ["sr-at-angriff", "sr-at-notwehr"]
-        - id: p5
-          label: "Erforderlichkeit: Flucht ist kein milderes Mittel, das Recht muss dem Unrecht nicht weichen"
-          weight: 3.0
-          required: true
-          keywords: ["erforderlich", "Flucht", "mildeste", "muss dem Unrecht nicht weichen"]
-          card_slugs: ["sr-at-notwehr"]
-        - id: p6
-          label: "Gebotenheit / sozialethische Einschränkungen geprüft"
-          weight: 1.5
-          keywords: ["geboten", "sozialethisch"]
-          card_slugs: ["sr-at-notwehr"]
-        - id: p7
-          label: "Verteidigungswille als subjektives Rechtfertigungselement"
-          weight: 1.0
-          keywords: ["Verteidigungswille", "subjektives Rechtfertigungselement"]
-          card_slugs: ["sr-at-notwehr"]
-        - id: p8
-          label: "Ergebnis: A ist gerechtfertigt und nicht strafbar"
-          weight: 1.0
-          keywords: ["gerechtfertigt", "nicht strafbar"]
+      - id: p1
+        label: Obersatz mit § 223 Abs. 1 StGB
+        weight: 1.5
+        required: true
+        norms:
+        - § 223 Abs. 1 StGB
+        - § 223 StGB
+        keywords:
+        - § 223 Abs. 1
+        - Körperverletzung gemäß § 223
+        card_slugs:
+        - sr-kv-koerperliche-misshandlung
+      - id: p2
+        label: Körperliche Misshandlung und/oder Gesundheitsschädigung definiert und
+          subsumiert
+        weight: 2.5
+        required: true
+        keywords:
+        - körperliche Misshandlung
+        - Gesundheitsschädigung
+        - üble, unangemessene Behandlung
+        - Wohlbefinden
+        card_slugs:
+        - sr-kv-koerperliche-misshandlung
+        - sr-kv-gesundheitsschaedigung
+      - id: p3
+        label: Vorsatz bejaht, § 15 StGB
+        weight: 1.0
+        norms:
+        - § 15 StGB
+        keywords:
+        - Vorsatz bezüglich
+        - Tatbestandsvorsatz
+        - § 15 StGB
+        - Vorsatz hinsichtlich
+        card_slugs:
+        - sr-at-vorsatz
+      - id: p4
+        label: 'Notwehrlage: gegenwärtiger rechtswidriger Angriff'
+        weight: 2.5
+        required: true
+        norms:
+        - § 32 StGB
+        - § 32 Abs. 2 StGB
+        keywords:
+        - gegenwärtiger rechtswidriger Angriff
+        - gegenwärtiger Angriff
+        - Notwehrlage liegt vor
+        - Notwehrlage ist gegeben
+        card_slugs:
+        - sr-at-angriff
+        - sr-at-notwehr
+      - id: p5
+        label: 'Erforderlichkeit: Flucht ist kein milderes Mittel, das Recht muss dem
+          Unrecht nicht weichen'
+        weight: 3.0
+        required: true
+        keywords:
+        - Erforderlichkeit der Verteidigung
+        - mildestes Mittel
+        - mildeste Mittel
+        - muss dem Unrecht nicht weichen
+        - Flucht ist kein milderes Mittel
+        card_slugs:
+        - sr-at-notwehr
+      - id: p6
+        label: Gebotenheit / sozialethische Einschränkungen geprüft
+        weight: 1.5
+        keywords:
+        - Gebotenheit
+        - sozialethische Einschränkungen
+        - sozialethisch
+        card_slugs:
+        - sr-at-notwehr
+      - id: p7
+        label: Verteidigungswille als subjektives Rechtfertigungselement
+        weight: 1.0
+        keywords:
+        - Verteidigungswille
+        - Verteidigungswillen
+        - subjektives Rechtfertigungselement
+        card_slugs:
+        - sr-at-notwehr
+      - id: p8
+        label: 'Ergebnis: A ist gerechtfertigt und nicht strafbar'
+        weight: 1.0
+        keywords:
+        - gerechtfertigt nach § 32
+        - durch Notwehr gerechtfertigt
+        - Rechtfertigung durch Notwehr
+        - Notwehr gemäß § 32 StGB

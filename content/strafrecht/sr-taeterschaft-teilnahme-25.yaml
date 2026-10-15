@@ -9,8 +9,8 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-14'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: sr-taeterschaft-tatherrschaftslehre
   type: definition
@@ -59,10 +59,14 @@ cards:
   front: 'Definiere: Mittäterschaft, § 25 Abs. 2 StGB'
   back: 'Mittäter ist, wer eine Straftat gemeinschaftlich mit einem anderen begeht
     (§ 25 Abs. 2 StGB). Voraussetzung sind (1) ein gemeinsamer Tatentschluss (Vorsatz
-    bzgl. arbeitsteiligen Vorgehens) und (2) ein eigener, im Ausführungsstadium geleisteter
-    Tatbeitrag von einigem Gewicht, der nach der Tatherrschaftslehre funktionale Tatherrschaft
-    begründet - eine eigenhändige Verwirklichung aller Tatbestandsmerkmale ist nicht
-    erforderlich. Rechtsfolge ist die wechselseitige Zurechnung der Tatbeiträge:
+    bzgl. arbeitsteiligen Vorgehens) und (2) ein eigener Tatbeitrag, der nach der
+    Tatherrschaftslehre funktionale Tatherrschaft begründet; meist wird dafür ein
+    Beitrag von einigem Gewicht im Ausführungsstadium verlangt. Nach der Rspr. (wertende
+    Gesamtbetrachtung von Tatinteresse, Umfang der Tatbeteiligung, Tatherrschaft oder
+    Wille zur Tatherrschaft) kann auch ein Beitrag im Vorbereitungsstadium (Tatplaner,
+    Bandenchef) Mittäterschaft begründen, wenn der Beteiligte die Tat wesentlich mitgestaltet
+    und ein erhebliches Eigeninteresse hat. Eigenhändige Verwirklichung aller Tatbestandsmerkmale
+    ist nicht erforderlich. Rechtsfolge ist die wechselseitige Zurechnung der Tatbeiträge:
     jeder Mittäter haftet für die Tat als Ganzes, soweit sie vom gemeinsamen Tatplan
     gedeckt ist.'
   norms:
@@ -120,69 +124,20 @@ cards:
   stand: 2026-09
 - slug: sr-taeterschaft-abgrenzung-mittaeterschaft-beihilfe
   type: streitstand
-  front: 'Streitstand: Abgrenzung Mittäterschaft (§ 25 Abs. 2 StGB) und Beihilfe
-    (§ 27 StGB)'
-  back: 'Problem: Ob ein Tatbeteiligter, der die Tatbestandsmerkmale nicht
+  front: 'Streitstand: Abgrenzung Mittäterschaft (§ 25 Abs. 2 StGB) und Beihilfe (§
+    27 StGB)'
+  back: |-
+    Problem: Ob ein Tatbeteiligter, der die Tatbestandsmerkmale nicht eigenhändig verwirklicht, als Mittäter oder nur als Gehilfe haftet, entscheidet über die volle Zurechnung fremder Tatbeiträge (§ 25 Abs. 2 StGB) oder eine obligatorische Strafmilderung (§§ 27 Abs. 2, 49 Abs. 1 StGB).
 
-    eigenhändig verwirklicht, als Mittäter oder nur als Gehilfe haftet,
+    Subjektive Theorie (früher Rspr.): Maßgeblich ist der animus auctoris - will der Beteiligte die Tat als eigene (Täterwille), liegt Mittäterschaft vor; will er sie nur fremden Willen unterstützen (animus socii), ist er Gehilfe. Kritik: kaum justiziables, manipulationsanfälliges Kriterium ohne objektiven Anknüpfungspunkt.
 
-    entscheidet über die volle Zurechnung fremder Tatbeiträge (§ 25 Abs.
+    Tatherrschaftslehre (h.L.): Maßgeblich ist, ob der Beteiligte durch einen eigenen Beitrag von einigem Gewicht, typischerweise im Ausführungsstadium, funktionale Tatherrschaft über das Geschehen erlangt - er muss das Ob und Wie der Tatbestandsverwirklichung mitsteuern können. Ein Beitrag, der nur im Vorbereitungsstadium liegt (Roxin, enge Linie) oder nur fördert, ohne das Geschehen mitzubestimmen, begründet lediglich Beihilfe. Vorteil: objektiv nachprüfbares Kriterium.
 
-    2 StGB) oder eine obligatorische Strafmilderung (§§ 27 Abs. 2, 49 Abs.
+    Rspr. (normativ-wertende Gesamtbetrachtung): Wertet Tatinteresse, Umfang der Tatbeteiligung und Tatherrschaft bzw. den Willen zu ihr in einer Gesamtwürdigung. Danach kann auch ein Beitrag im Vorbereitungsstadium Mittäterschaft begründen; ein Beitrag im Ausführungsstadium begründet sie nicht zwingend, wenn Eigeninteresse und Herrschaftswille fehlen.
 
-    1 StGB).
+    Beim Schmierestehen ist die Lit. gespalten: Teile sehen im Absichern der Tat funktionale Tatherrschaft (Mittäterschaft), andere nur Beihilfe, weil der Aufpasser das Ob und Wie nicht steuert. Die Rspr. entscheidet nach Tatinteresse (Beuteanteil, Planungsgleichrang).
 
-
-    Subjektive Theorie (früher Rspr.): Maßgeblich ist der animus auctoris
-
-    - will der Beteiligte die Tat "als eigene" (Täterwille), liegt
-
-    Mittäterschaft vor; will er sie nur fremden Willen unterstützen
-
-    (animus socii), ist er Gehilfe. Kritik: kaum justiziables,
-
-    manipulationsanfälliges Kriterium ohne objektiven Anknüpfungspunkt.
-
-
-    Tatherrschaftslehre (heute h.M.): Maßgeblich ist, ob der Beteiligte
-
-    durch einen eigenen Beitrag von einigem Gewicht im Ausführungsstadium
-
-    funktionale Tatherrschaft über das Geschehen erlangt - er muss das
-
-    "Ob" und "Wie" der Tatbestandsverwirklichung mitsteuern können. Ein
-
-    Beitrag, der nur im Vorbereitungsstadium liegt oder nur fördert, ohne
-
-    das Geschehen mitzubestimmen, begründet lediglich Beihilfe. Argumente:
-
-    objektiv nachprüfbares Kriterium, das an den tatsächlichen Einfluss
-
-    auf das Tatgeschehen anknüpft statt an eine schwer feststellbare innere
-
-    Willensrichtung.
-
-
-    Rspr. (normativ-kombinierte Betrachtung): Wertet seit jeher Tatinteresse,
-
-    Umfang der Tatbeteiligung und Tatherrschaft bzw. den Willen zu ihr in
-
-    einer Gesamtwürdigung. In der Sache nähert sich die Rechtsprechung
-
-    damit zunehmend der Tatherrschaftslehre an, betont aber weiterhin eine
-
-    wertende Gesamtbetrachtung statt starrer Kriterien.
-
-
-    Konsequenz: In Klausuren ist die Tatherrschaftslehre als Ausgangspunkt
-
-    zu wählen; bei Abweichungen zur (kombinierten) Rspr.-Betrachtung ist
-
-    der Streit offenzulegen, wenn beide Ansätze zu unterschiedlichen
-
-    Ergebnissen führen.
-
-    '
+    Konsequenz: In Klausuren sind beide Ansätze darzustellen, wenn sie zu unterschiedlichen Ergebnissen führen; der Streit ist offenzulegen.
   norms:
   - § 25 Abs. 2 StGB
   - § 27 StGB
@@ -202,8 +157,8 @@ schemata:
   steps:
   - label: I. Vorprüfung
     children:
-    - label: 1. Keine Alleintäterschaft eines Beteiligten (dann kein Bedarf für
-        § 25 Abs. 2 StGB)
+    - label: 1. Keine Alleintäterschaft eines Beteiligten (dann kein Bedarf für §
+        25 Abs. 2 StGB)
     - label: 2. Tatbestandsmäßige Haupttat (mindestens im Versuchsstadium)
   - label: II. Gemeinsamer Tatentschluss
     children:
@@ -213,7 +168,8 @@ schemata:
   - label: III. Gemeinsame Tatbegehung (objektiver Tatbeitrag)
     children:
     - label: 1. Eigener Tatbeitrag von einigem Gewicht
-    - label: 2. Beitrag (jedenfalls auch) im Ausführungsstadium erbracht
+    - label: 2. Beitrag jedenfalls auch im Ausführungsstadium (nach der Rspr. auch
+        Vorbereitungsstadium bei Tatherrschaft/Tatinteresse)
     - label: '3. Funktionale Tatherrschaft: Mitbeherrschung von Ob und Wie der Tatbestandsverwirklichung'
   - label: IV. Zurechnung der Tatbeiträge, § 25 Abs. 2 StGB
     children:
@@ -233,12 +189,13 @@ faelle:
     Tatplan steigt A durch ein gekipptes Fenster in das Haus ein und packt Schmuck
     im Wert von 5.000 Euro in eine mitgebrachte Tasche, während B verabredungsgemäß
     vor dem Haus Schmiere steht und A per Handyzeichen warnen soll, falls sich jemand
-    nähert. Während der gesamten Tatausführung erscheint niemand; A verlässt das
-    Haus unbehelligt mit der Beute, B hat währenddessen ständig die Zufahrtsstraße
-    im Blick.
-  question: Hat sich B wegen (mittäterschaftlich begangenen) Diebstahls gemäß §§
-    242 Abs. 1, 25 Abs. 2 StGB oder nur wegen Beihilfe zum Diebstahl gemäß §§ 242
-    Abs. 1, 27 StGB strafbar gemacht?
+    nähert. Während der gesamten Tatausführung erscheint niemand; A verlässt das Haus
+    unbehelligt mit der Beute, B hat währenddessen ständig die Zufahrtsstraße im Blick.
+    B hat den Einbruch gemeinsam mit A gleichberechtigt geplant und soll 40 % der
+    Beute erhalten.
+  question: Hat sich B als Mittäter strafbar gemacht (Diebstahl in Form des Wohnungseinbruchs,
+    §§ 244 Abs. 1 Nr. 3, 25 Abs. 2 StGB) oder nur wegen Beihilfe, §§ 244 Abs. 1 Nr.
+    3, 27 StGB? Gehe auf die Qualifikation kurz ein.
   steps:
   - prompt: Hat B selbst eine Wegnahmehandlung vorgenommen?
     erwartung: Nein - B hat die Sache nicht selbst weggenommen; eine Alleintäterschaft
@@ -250,35 +207,44 @@ faelle:
     erwartung: Ja - B erbringt seinen Beitrag während der eigentlichen Tatausführung
       und sichert die Tat unmittelbar ab; sein Beitrag ist für das ungestörte Gelingen
       des Diebstahls funktional bedeutsam.
-  - prompt: Woran lässt sich die Abgrenzung zu einer bloßen Beihilfe festmachen?
-    erwartung: Beihilfe wäre anzunehmen, wenn der Beitrag nur im Vorbereitungsstadium
-      liegt (z. B. bloßes Auskundschaften des Objekts vor der Tat) oder nicht das
-      für Tatherrschaft notwendige Gewicht erreicht. Hier sichert B während der
-      laufenden Tatausführung fortlaufend die Tatbegehung ab und mitbeherrscht dadurch
-      das Ob und Wie der Tatvollendung - das begründet funktionale Tatherrschaft
-      und damit Mittäterschaft.
+  - prompt: Woran lässt sich die Abgrenzung zur Beihilfe festmachen? Wie entscheiden
+      Tatherrschaftslehre und Rspr.?
+    erwartung: 'Nach der Tatherrschaftslehre ist der Tatbeitrag im Ausführungsstadium
+      und von Gewicht; das Absichern begründet bei laufender Tatausführung funktionale
+      Tatherrschaft, nach strenger Sicht (Aufpasser steuert das Ob und Wie nicht)
+      nur Beihilfe - die Lit. ist gespalten. Die Rspr. wertet das Tatinteresse (hier:
+      Beuteanteil von 40 %, gleichrangige Planung, Eigeninteresse) und kommt ebenfalls
+      zur Mittäterschaft. Mittäterschaft ist daher gut vertretbar; die Gegenansicht
+      (Beihilfe) ist bei sauberer Argumentation ebenfalls vertretbar.'
   - prompt: Ergebnis?
-    erwartung: B ist Mittäter des Diebstahls, §§ 242 Abs. 1, 25 Abs. 2 StGB; ihm
-      wird die von A vorgenommene Wegnahme gemäß § 25 Abs. 2 StGB zugerechnet.
+    erwartung: B ist Mittäter des Diebstahls, §§ 242 Abs. 1, 25 Abs. 2 StGB; ihm wird
+      die von A vorgenommene Wegnahme gemäß § 25 Abs. 2 StGB zugerechnet.
+  - prompt: Welche Qualifikation ist verwirklicht?
+    erwartung: 'A steigt durch das gekippte Fenster in die Ferienvilla ein: § 244
+      Abs. 1 Nr. 3 StGB (Wohnungseinbruchdiebstahl); eine dauerhaft genutzte Privatwohnung
+      im Sinne des Abs. 4 liegt bei der leerstehenden Ferienvilla nicht vor. Für B
+      gilt dies über § 25 Abs. 2 StGB (bzw. bei Beihilfe über § 27 StGB).'
   expectation:
     pruefpunkte:
     - id: p1
-      label: Obersatz mit §§ 242 Abs. 1, 25 Abs. 2 StGB
+      label: Obersatz mit §§ 244 Abs. 1 Nr. 3 (bzw. § 242 Abs. 1), 25 Abs. 2 StGB
       weight: 1.0
       required: false
       norms:
       - § 242 Abs. 1 StGB
       - § 25 Abs. 2 StGB
       keywords:
-      - '242'
-      - 25 Abs. 2
+      - § 25 Abs. 2
+      - §§ 242 Abs. 1, 25 Abs. 2
+      - §§ 244 Abs. 1 Nr. 3, 25 Abs. 2
     - id: p2
       label: Eigene Alleintäterschaft des B verneint, da keine eigene Wegnahmehandlung
       weight: 1.0
       required: false
       keywords:
       - keine eigene Wegnahme
-      - Alleintäterschaft
+      - Alleintäterschaft scheidet aus
+      - keine unmittelbare Täterschaft
       card_slugs:
       - sr-taeterschaft-unmittelbar
     - id: p3
@@ -289,6 +255,7 @@ faelle:
       - § 25 Abs. 2 StGB
       keywords:
       - gemeinsamer Tatentschluss
+      - gemeinsamer Tatplan
       - Tatplan
       card_slugs:
       - sr-taeterschaft-mittaeterschaft
@@ -300,30 +267,46 @@ faelle:
       norms:
       - § 25 Abs. 2 StGB
       keywords:
-      - Ausführungsstadium
       - funktionale Tatherrschaft
-      - Tatbeitrag
+      - Ausführungsstadium
+      - Tatbeitrag von einigem Gewicht
+      - mitbeherrscht
       card_slugs:
       - sr-taeterschaft-mittaeterschaft
       - sr-taeterschaft-tatherrschaftslehre
     - id: p5
-      label: 'Abgrenzung zur Beihilfe (Tatherrschaftslehre: Vorbereitungsstadium/geringeres
-        Gewicht begründet nur § 27 StGB) sauber dargestellt'
+      label: 'Abgrenzung zur Beihilfe: Tatherrschaftslehre, Rspr. (Tatinteresse/Gesamtbetrachtung)
+        und gespaltene Lit. beim Schmierestehen dargestellt; Ergebnis begründet'
       weight: 3.0
       required: true
       norms:
       - § 27 StGB
       keywords:
-      - Beihilfe
+      - Tatinteresse
+      - Gesamtbetrachtung
+      - animus auctoris
       - Tatherrschaftslehre
-      - Vorbereitungsstadium
+      - Beuteanteil
+      - Eigeninteresse
       card_slugs:
       - sr-taeterschaft-abgrenzung-mittaeterschaft-beihilfe
       - sr-taeterschaft-beihilfe
+    - id: p5b
+      label: Qualifikation § 244 Abs. 1 Nr. 3 StGB (Einsteigen in Wohnung) erkannt
+      weight: 1.0
+      required: false
+      keywords:
+      - § 244 Abs. 1 Nr. 3
+      - Wohnungseinbruchdiebstahl
+      - Einsteigen
+      card_slugs: []
     - id: p6
       label: 'Ergebnis: B ist Mittäter gemäß § 25 Abs. 2 StGB, Zurechnung der Wegnahme'
       weight: 1.0
       required: false
       keywords:
-      - Mittäter
-      - Zurechnung
+      - Mittäter gemäß § 25 Abs. 2
+      - als Mittäter strafbar
+      - Zurechnung der Wegnahme
+      - wechselseitige Zurechnung
+      - Beihilfe gemäß § 27

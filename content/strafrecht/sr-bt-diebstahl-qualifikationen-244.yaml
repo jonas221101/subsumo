@@ -8,7 +8,7 @@ topic:
   redaktion:
     erzeugt_von: claude-fable-5-1
     status: in-pruefung
-    normzitate_geprueft: true
+    normzitate_geprueft: false
 cards:
 - slug: sr-dq-243-regelbeispiele-systematik
   type: norm
@@ -179,21 +179,22 @@ cards:
   stand: 2026-09
 - slug: sr-dq-244-nr3-abs4-wohnungseinbruch
   type: norm
-  front: 'Was regeln § 244 Abs. 1 Nr. 3 StGB und § 244 Abs. 4 StGB (Wohnungseinbruchdiebstahl)?'
-  back: >-
-    Nach § 244 Abs. 1 Nr. 3 StGB wird qualifiziert bestraft, wer einen Diebstahl
+  front: Was regeln § 244 Abs. 1 Nr. 3 StGB und § 244 Abs. 4 StGB (Wohnungseinbruchdiebstahl)?
+  back: Nach § 244 Abs. 1 Nr. 3 StGB wird qualifiziert bestraft, wer einen Diebstahl
     begeht, bei dem er zur Ausführung der Tat in eine Wohnung einbricht, einsteigt,
-    mit einem falschen Schlüssel oder einem anderen nicht zur ordnungsmäßigen
-    Öffnung bestimmten Werkzeug eindringt oder sich in der Wohnung verborgen hält.
-    Die Tatmodalitäten entsprechen § 243 Abs. 1 S. 2 Nr. 1 StGB, der insoweit
-    verdrängt wird. Wohnung ist jede abgeschlossene und überdachte Räumlichkeit, die
-    Menschen zumindest vorübergehend als Unterkunft dient; nach h.M. gehören
-    Nebenräume wie Keller nur dazu, wenn sie mit dem Wohnbereich verbunden sind.
-    Grund der Qualifikation ist der Schutz der Privatsphäre. § 244 Abs. 4 StGB
-    erhöht den Strafrahmen auf ein bis zehn Jahre, wenn die Tat eine dauerhaft
-    genutzte Privatwohnung betrifft; die Tat ist dann Verbrechen im Sinne des § 12
-    Abs. 1 StGB, ein minder schwerer Fall ist nach § 244 Abs. 3 StGB nur für
-    Abs. 1 vorgesehen. Der Versuch ist nach § 244 Abs. 2 StGB strafbar.
+    mit einem falschen Schlüssel oder einem anderen nicht zur ordnungsmäßigen Öffnung
+    bestimmten Werkzeug eindringt oder sich in der Wohnung verborgen hält. Die Tatmodalitäten
+    entsprechen § 243 Abs. 1 S. 2 Nr. 1 StGB, der insoweit verdrängt wird. Wohnung
+    ist jede abgeschlossene und überdachte Räumlichkeit, die Menschen zumindest vorübergehend
+    als Unterkunft dient; nach h.M. gehören Nebenräume wie Keller nur dazu, wenn sie
+    mit dem Wohnbereich verbunden sind. Grund der Qualifikation ist der Schutz der
+    Privatsphäre. § 244 Abs. 4 StGB erhöht die Mindeststrafe auf ein Jahr (ein bis
+    zehn Jahre), wenn der Wohnungseinbruchdiebstahl eine dauerhaft genutzte Privatwohnung
+    betrifft; die Tat ist dann Verbrechen im Sinne des § 12 Abs. 1 StGB. Ein minder
+    schwerer Fall (drei Monate bis fünf Jahre) ist in § 244 Abs. 3 StGB für die Fälle
+    des Abs. 1 Nr. 1 bis 3 geregelt; die Reichweite für den Qualifikationstatbestand
+    des Abs. 4 ist am aktuellen Gesetzestext zu verifizieren (redaktionelle Prüfung
+    offen). Der Versuch ist nach § 244 Abs. 2 StGB strafbar.
   norms:
   - § 244 Abs. 1 Nr. 3 StGB
   - § 244 Abs. 4 StGB
@@ -241,7 +242,8 @@ schemata:
   - label: I. Grundtatbestand § 242 Abs. 1 StGB
     children:
     - label: 1. Objektiver Tatbestand - fremde bewegliche Sache, Wegnahme
-    - label: 2. Subjektiver Tatbestand - Vorsatz, Zueignungsabsicht, Vorsatz bezüglich der Rechtswidrigkeit der Zueignung
+    - label: 2. Subjektiver Tatbestand - Vorsatz, Zueignungsabsicht, Vorsatz bezüglich
+        der Rechtswidrigkeit der Zueignung
   - label: II. Qualifikation § 244 Abs. 1 StGB
     children:
     - label: 1. Nr. 1a - Waffe oder anderes gefährliches Werkzeug
@@ -249,12 +251,16 @@ schemata:
       - label: a) Waffe im technischen Sinn oder objektiv gefährliches Werkzeug (str.)
       - label: b) Beisichführen zwischen Versuchsbeginn und Beendigung
       - label: c) Bewusstsein der Verfügbarkeit
-    - label: 2. Nr. 1b - sonstiges Werkzeug oder Mittel mit Verwendungsabsicht gegen Personen
+    - label: 2. Nr. 1b - sonstiges Werkzeug oder Mittel mit Verwendungsabsicht gegen
+        Personen
       hinweis: Keine offensichtlich ungefährlichen Scheinwaffen.
-    - label: 3. Nr. 2 - Bandendiebstahl (mindestens drei Personen, Bandenabrede, Mitwirkung eines anderen Mitglieds)
-    - label: 4. Nr. 3 - Wohnungseinbruchdiebstahl (Wohnung, Einbrechen, Einsteigen, falscher Schlüssel, Verborgenhalten)
+    - label: 3. Nr. 2 - Bandendiebstahl (mindestens drei Personen, Bandenabrede, Mitwirkung
+        eines anderen Mitglieds)
+    - label: 4. Nr. 3 - Wohnungseinbruchdiebstahl (Wohnung, Einbrechen, Einsteigen,
+        falscher Schlüssel, Verborgenhalten)
   - label: III. Dauerhaft genutzte Privatwohnung, § 244 Abs. 4 StGB
-    hinweis: Verbrechen; kein minder schwerer Fall.
+    hinweis: 'Verbrechen (Mindeststrafe ein Jahr). Minder schwerer Fall nach § 244
+      Abs. 3 StGB (Abs. 1 Nr. 1 bis 3): Anwendbarkeit auf Abs. 4 am Normtext prüfen.'
   - label: IV. Rechtswidrigkeit
   - label: V. Schuld
   - label: VI. Strafzumessung und Konkurrenzen
@@ -271,55 +277,48 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
   stand: 2026-09
-  facts: >-
-    A beobachtet, dass B abends sein Einfamilienhaus verlässt, in dem B seit Jahren
-    wohnt. Ein Schlafzimmerfenster im Erdgeschoss steht auf Kipp. A klettert durch
-    das gekippte Fenster in das Haus, um Schmuck zu stehlen. In seiner Hosentasche
+  facts: A beobachtet, dass B abends sein Einfamilienhaus verlässt, in dem B seit
+    Jahren wohnt. Ein Schlafzimmerfenster im Erdgeschoss steht auf Kipp. A klettert
+    durch das gekippte Fenster in das Haus, um Schmuck zu stehlen. In seiner Hosentasche
     trägt er wie immer sein Taschenmesser mit einer 8 cm langen Klinge, das er zum
-    Öffnen von Paketen benutzt; er hat nicht vor, es bei der Tat gegen Menschen
-    einzusetzen, weiß aber, dass er es dabei hat. A nimmt aus dem Nachttisch eine
-    goldene Uhr im Wert von 2.000 Euro und verlässt das Haus durch die Terrassentür.
-  question: Hat sich A wegen Diebstahls in einer Qualifikation nach § 244 StGB strafbar gemacht?
+    Öffnen von Paketen benutzt; er hat nicht vor, es bei der Tat gegen Menschen einzusetzen,
+    weiß aber, dass er es dabei hat. A nimmt aus dem Nachttisch eine goldene Uhr im
+    Wert von 2.000 Euro und verlässt das Haus durch die Terrassentür.
+  question: Hat sich A wegen Diebstahls in einer Qualifikation nach § 244 StGB strafbar
+    gemacht?
   steps:
   - prompt: Ist der Grundtatbestand des § 242 Abs. 1 StGB erfüllt?
-    erwartung: >-
-      Ja - die Uhr ist für A eine fremde bewegliche Sache; er hat den Gewahrsam des B
-      gebrochen und eigenen begründet. A handelte vorsätzlich und mit
-      Zueignungsabsicht; die Zueignung war rechtswidrig und A wusste das.
+    erwartung: Ja - die Uhr ist für A eine fremde bewegliche Sache; er hat den Gewahrsam
+      des B gebrochen und eigenen begründet. A handelte vorsätzlich und mit Zueignungsabsicht;
+      die Zueignung war rechtswidrig und A wusste das.
   - prompt: Liegt ein Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB vor?
-    erwartung: >-
-      Ja - das Einfamilienhaus ist eine Wohnung. A ist durch das gekippte Fenster,
-      also auf einem nicht zum Eintritt bestimmten Weg unter Überwindung eines
-      Hindernisses, eingestiegen. Das Einsteigen diente der Ausführung des
-      Diebstahls.
+    erwartung: Ja - das Einfamilienhaus ist eine Wohnung. A ist durch das gekippte
+      Fenster, also auf einem nicht zum Eintritt bestimmten Weg unter Überwindung
+      eines Hindernisses, eingestiegen. Das Einsteigen diente der Ausführung des Diebstahls.
   - prompt: Ist § 244 Abs. 4 StGB einschlägig?
-    erwartung: >-
-      Ja - B bewohnt das Haus seit Jahren, es handelt sich um eine dauerhaft genutzte
-      Privatwohnung. Die Tat ist damit Verbrechen mit einem Strafrahmen von einem bis
-      zu zehn Jahren.
-  - prompt: Ist das Taschenmesser ein gefährliches Werkzeug im Sinne des § 244 Abs. 1 Nr. 1a StGB?
-    erwartung: >-
-      Streitig. Nach der Rspr. und h.M. genügt die objektive Eignung, erhebliche
-      Verletzungen herbeizuführen; ein Messer mit 8 cm Klinge erfüllt sie ohne
-      Weiteres, eine Verwendungsabsicht ist nicht erforderlich. Subjektive Ansätze
-      der Literatur verlangen einen Verwendungsvorbehalt und würden Nr. 1a hier
-      verneinen. Mit der Rspr. ist das Taschenmesser gefährliches Werkzeug.
+    erwartung: Ja - B bewohnt das Haus seit Jahren, es handelt sich um eine dauerhaft
+      genutzte Privatwohnung. Die Tat ist damit Verbrechen mit einem Strafrahmen von
+      einem bis zu zehn Jahren (Mindeststrafe ein Jahr).
+  - prompt: Ist das Taschenmesser ein gefährliches Werkzeug im Sinne des § 244 Abs.
+      1 Nr. 1a StGB?
+    erwartung: Streitig. Nach der Rspr. und h.M. genügt die objektive Eignung, erhebliche
+      Verletzungen herbeizuführen; ein Messer mit 8 cm Klinge erfüllt sie ohne Weiteres,
+      eine Verwendungsabsicht ist nicht erforderlich. Subjektive Ansätze der Literatur
+      verlangen einen Verwendungsvorbehalt und würden Nr. 1a hier verneinen. Mit der
+      Rspr. ist das Taschenmesser gefährliches Werkzeug.
   - prompt: Führte A das Messer bei sich?
-    erwartung: >-
-      Ja - A trug das Messer während der gesamten Tat griffbereit in der Hosentasche
-      und war sich dessen bewusst. Dass er es nicht einsetzen wollte, ist bei Nr. 1a
-      unerheblich.
+    erwartung: Ja - A trug das Messer während der gesamten Tat griffbereit in der
+      Hosentasche und war sich dessen bewusst. Dass er es nicht einsetzen wollte,
+      ist bei Nr. 1a unerheblich.
   - prompt: Kommt auch § 244 Abs. 1 Nr. 1b StGB in Betracht?
-    erwartung: >-
-      Nein - Nr. 1b setzt die Absicht voraus, das Werkzeug gegen Personen einzusetzen.
-      A hatte keine solche Absicht; zudem ist ein gefährliches Werkzeug bereits von
-      Nr. 1a erfasst.
+    erwartung: Nein - Nr. 1b setzt die Absicht voraus, das Werkzeug gegen Personen
+      einzusetzen. A hatte keine solche Absicht; zudem ist ein gefährliches Werkzeug
+      bereits von Nr. 1a erfasst.
   - prompt: Wie sind die Konkurrenzen zu beurteilen?
-    erwartung: >-
-      A hat sich nach § 244 Abs. 1 Nr. 1a und Nr. 3, Abs. 4 StGB strafbar gemacht;
-      es liegt eine Tat vor. § 242 StGB wird verdrängt, § 243 Abs. 1 S. 2 Nr. 1 StGB
-      kommt neben der Qualifikation nicht zur Anwendung, § 123 StGB tritt als
-      konsumierte Begleittat zurück.
+    erwartung: A hat sich nach § 244 Abs. 1 Nr. 1a und Nr. 3, Abs. 4 StGB strafbar
+      gemacht; es liegt eine Tat vor. § 242 StGB wird verdrängt, § 243 Abs. 1 S. 2
+      Nr. 1 StGB kommt neben der Qualifikation nicht zur Anwendung, § 123 StGB tritt
+      als konsumierte Begleittat zurück.
   expectation:
     pruefpunkte:
     - id: p1
@@ -329,20 +328,23 @@ faelle:
       norms:
       - § 242 Abs. 1 StGB
       keywords:
-      - Wegnahme
+      - fremde bewegliche Sache
       - Zueignungsabsicht
+      - Gewahrsamsbruch
       card_slugs:
       - sr-dq-konkurrenzen-242-243-244
     - id: p2
-      label: Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB durch Einsteigen bejaht
+      label: Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB durch Einsteigen
+        bejaht
       weight: 2.0
       required: true
       norms:
       - § 244 Abs. 1 Nr. 3 StGB
       keywords:
       - Einsteigen
-      - Wohnung
-      - Wohnungseinbruch
+      - Wohnungseinbruchdiebstahl
+      - § 244 Abs. 1 Nr. 3
+      - gekippte Fenster
       card_slugs:
       - sr-dq-244-nr3-abs4-wohnungseinbruch
       - sr-dq-243-nr1-einbrechen-einsteigen
@@ -353,22 +355,25 @@ faelle:
       norms:
       - § 244 Abs. 4 StGB
       keywords:
-      - Privatwohnung
-      - dauerhaft genutzt
-      - Abs. 4
+      - dauerhaft genutzte Privatwohnung
+      - § 244 Abs. 4
+      - Mindeststrafe von einem Jahr
+      - Verbrechen
       card_slugs:
       - sr-dq-244-nr3-abs4-wohnungseinbruch
     - id: p4
-      label: Streitstand zum gefährlichen Werkzeug bei § 244 Abs. 1 Nr. 1a StGB dargestellt und mit der Rspr. (objektive Bestimmung) gelöst
+      label: Streitstand zum gefährlichen Werkzeug bei § 244 Abs. 1 Nr. 1a StGB dargestellt
+        und mit der Rspr. (objektive Bestimmung) gelöst
       weight: 3.0
       required: true
       norms:
       - § 244 Abs. 1 Nr. 1a StGB
       keywords:
       - gefährliches Werkzeug
-      - objektiv
-      - Verwendungsabsicht
-      - Taschenmesser
+      - objektive Bestimmung
+      - Verwendungsabsicht ist nicht erforderlich
+      - objektive Beschaffenheit
+      - subjektive Ansätze
       card_slugs:
       - sr-dq-gefaehrliches-werkzeug-streitstand
       - sr-dq-244-nr1a-waffe
@@ -382,6 +387,7 @@ faelle:
       - bei sich führt
       - Beisichführen
       - griffbereit
+      - Bewusstsein der Verfügbarkeit
       card_slugs:
       - sr-dq-beisichfuehren
     - id: p6
@@ -392,20 +398,24 @@ faelle:
       - § 244 Abs. 1 Nr. 1b StGB
       keywords:
       - Nr. 1b
-      - Verwendungsabsicht
+      - Absicht, das Werkzeug gegen Personen einzusetzen
+      - keine Verwendungsabsicht
       card_slugs:
       - sr-dq-244-nr1b-sonstiges-werkzeug
     - id: p7
-      label: Konkurrenzen richtig gelöst (§ 242 verdrängt, § 243 nicht anwendbar, § 123 konsumiert)
+      label: Konkurrenzen richtig gelöst (§ 242 verdrängt, § 243 nicht anwendbar,
+        § 123 konsumiert)
       weight: 1.0
       required: false
       norms:
       - § 243 Abs. 1 S. 2 Nr. 1 StGB
       - § 123 StGB
       keywords:
-      - Konkurrenz
-      - verdrängt
-      - konsumiert
+      - Konkurrenzen
+      - § 242 wird verdrängt
+      - Spezialität
+      - § 123 konsumiert
+      - Hausfriedensbruch tritt zurück
       card_slugs:
       - sr-dq-konkurrenzen-242-243-244
       - sr-dq-243-regelbeispiele-systematik

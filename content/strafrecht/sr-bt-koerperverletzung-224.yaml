@@ -9,8 +9,8 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-15'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: sr-kv-koerperliche-misshandlung
   type: definition
@@ -184,7 +184,8 @@ schemata:
         Qualifikationsmerkmal, § 15 StGB'
   - label: II. Rechtswidrigkeit (insb. § 32 StGB, Einwilligung, § 228 StGB)
   - label: III. Schuld
-  - label: IV. Strafantrag/Konkurrenzen
+  - label: IV. Konkurrenzen (Offizialdelikt, kein Strafantrag nach § 230 StGB wie
+      beim Grunddelikt)
 faelle:
 - slug: sr-fall-stiefeltritt-zu-zweit
   title: Der Stiefeltritt zu zweit
@@ -198,8 +199,8 @@ faelle:
     mehrfach kräftig gegen den Rumpf des O, während B gleichzeitig neben A steht,
     auf O einschlägt und so verhindert, dass O sich aufrichten oder fliehen kann.
     O erleidet mehrere schmerzhafte Rippenprellungen.
-  question: Hat sich A wegen gefährlicher Körperverletzung gemäß §§ 223 Abs. 1,
-    224 Abs. 1 Nr. 2, Nr. 4 StGB strafbar gemacht?
+  question: Hat sich A wegen gefährlicher Körperverletzung gemäß §§ 223 Abs. 1, 224
+    Abs. 1 Nr. 2, Nr. 4 StGB strafbar gemacht?
   steps:
   - prompt: Formuliere den Obersatz.
     erwartung: A könnte sich durch die Tritte gegen O wegen gefährlicher Körperverletzung
@@ -232,8 +233,9 @@ faelle:
       - § 223 Abs. 1 StGB
       - § 224 Abs. 1 StGB
       keywords:
-      - '223'
-      - '224'
+      - §§ 223 Abs. 1, 224 Abs. 1
+      - § 224 Abs. 1 Nr. 2 und Nr. 4
+      - gefährliche Körperverletzung gemäß § 224
       card_slugs:
       - sr-kv-224-qualifikationen-ueberblick
     - id: p2
@@ -245,6 +247,7 @@ faelle:
       keywords:
       - körperliche Misshandlung
       - Gesundheitsschädigung
+      - Rippenprellungen sind
       card_slugs:
       - sr-kv-koerperliche-misshandlung
       - sr-kv-gesundheitsschaedigung
@@ -256,23 +259,37 @@ faelle:
       - § 224 Abs. 1 Nr. 2 StGB
       keywords:
       - gefährliches Werkzeug
-      - Stiefel
-      - Werkzeug
+      - vom Körper verschiedener Gegenstand
+      - nach Beschaffenheit und Verwendung
+      - Stiefel ist ein gefährliches Werkzeug
+      - der Fuß ist kein Werkzeug
       card_slugs:
       - sr-kv-gefaehrliches-werkzeug
       - sr-kv-abgrenzung-werkzeug-koerperteil
     - id: p4
-      label: Gemeinschaftliches Handeln mit B i.S.d. Nr. 4 begründet, ohne volle
-        Mittäterschaft zu verlangen
+      label: Gemeinschaftliches Handeln mit B i.S.d. Nr. 4 begründet, ohne volle Mittäterschaft
+        zu verlangen
       weight: 3.0
       required: true
       norms:
       - § 224 Abs. 1 Nr. 4 StGB
       keywords:
+      - Nr. 4
+      - einverständliches Zusammenwirken
+      - Gehilfe genügt
       - gemeinschaftlich
-      - Beteiligter
+      - am Tatort zusammenwirken
       card_slugs:
       - sr-kv-gemeinschaftlich
+    - id: p4b
+      label: 'Hinweis: § 224 Abs. 1 Nr. 5 (lebensgefährdende Behandlung) geprüft oder
+        ausgeklammert'
+      weight: 0.5
+      required: false
+      keywords:
+      - Nr. 5
+      - lebensgefährdende Behandlung
+      card_slugs: []
     - id: p5
       label: Vorsatz bzgl. Grundtatbestand und Qualifikationsmerkmalen erwähnt
       weight: 1.0
@@ -280,18 +297,21 @@ faelle:
       norms:
       - § 15 StGB
       keywords:
-      - Vorsatz
+      - Vorsatz bezüglich der Qualifikationsmerkmale
+      - Vorsatz hinsichtlich
+      - Tatbestandsvorsatz
+      - § 15 StGB
       card_slugs:
       - sr-at-vorsatz
     - id: p6
-      label: 'Ergebnis: A hat sich wegen gefährlicher Körperverletzung strafbar
-        gemacht'
+      label: 'Ergebnis: A hat sich wegen gefährlicher Körperverletzung strafbar gemacht'
       weight: 1.0
       required: false
       norms:
       - § 224 Abs. 1 StGB
       keywords:
-      - strafbar gemacht
-      - gefährliche Körperverletzung
+      - gefährliche Körperverletzung gemäß §§ 223, 224
+      - wegen gefährlicher Körperverletzung strafbar
+      - §§ 223 Abs. 1, 224 Abs. 1 Nr. 2, Nr. 4 erfüllt
       card_slugs:
       - sr-kv-224-qualifikationen-ueberblick

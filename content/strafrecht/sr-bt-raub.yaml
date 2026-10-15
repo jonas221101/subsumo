@@ -224,7 +224,8 @@ faelle:
       norms:
       - § 249 Abs. 1 StGB
       keywords:
-      - '249'
+      - § 249 Abs. 1
+      - Raub gemäß § 249
       card_slugs:
       - sr-raub-grundtatbestand
     - id: p2
@@ -310,9 +311,9 @@ faelle:
       keywords:
       - Vorsatz bezüglich
       - Vorsatz hinsichtlich
-      - vorsätzlich
       - Tatbestandsvorsatz
       - § 15 StGB
+      - Wissen und Wollen
       card_slugs:
       - sr-at-vorsatz
     - id: p7

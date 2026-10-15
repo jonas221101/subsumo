@@ -204,8 +204,8 @@ faelle:
   facts: A verursacht fahrlässig einen Verkehrsunfall, bei dem B einen offenen Beinbruch
     erleidet. B wird in ein Krankenhaus eingeliefert. Dort vertauscht eine Krankenschwester
     infolge einer Verwechslung der Patientenakten ein für B kontraindiziertes Medikament,
-    das bei ihm eine allergische Reaktion mit tödlichem Kreislaufschock auslöst.
-    B stirbt nicht an den Unfallverletzungen, sondern an der Medikamentenreaktion.
+    das bei ihm eine allergische Reaktion mit tödlichem Kreislaufschock auslöst. B
+    stirbt nicht an den Unfallverletzungen, sondern an der Medikamentenreaktion.
   question: Ist A der Tod des B im Rahmen des § 222 StGB objektiv zurechenbar?
   steps:
   - prompt: Ist A für den Tod des B äquivalent kausal geworden?
@@ -213,8 +213,8 @@ faelle:
       gekommen und die tödliche Fehlmedikation wäre unterblieben.
   - prompt: Hat A durch den Unfall eine rechtlich missbilligte Gefahr geschaffen?
     erwartung: Ja - das fahrlässige Verursachen eines Verkehrsunfalls mit erheblicher
-      Verletzungsfolge begründet eine rechtlich missbilligte Gefahr für Leib und
-      Leben des B.
+      Verletzungsfolge begründet eine rechtlich missbilligte Gefahr für Leib und Leben
+      des B.
   - prompt: Realisiert sich im Tod des B gerade diese von A geschaffene Gefahr?
     erwartung: Nein - die grob fehlerhafte Medikamentenverwechslung durch die Krankenschwester
       steht in keinem inneren Zusammenhang mit der Art der Unfallverletzung und stellt
@@ -232,8 +232,10 @@ faelle:
       weight: 1.5
       required: false
       keywords:
-      - hinweggedacht
-      - kausal
+      - conditio sine qua non
+      - nicht hinweggedacht werden
+      - Äquivalenztheorie
+      - kausal für den Tod
       card_slugs:
       - sr-at-kausalitaet
     - id: p2
@@ -244,15 +246,18 @@ faelle:
       norms:
       - § 222 StGB
       keywords:
-      - missbilligte Gefahr
+      - rechtlich missbilligte Gefahr
+      - missbilligte Gefahr geschaffen
     - id: p3
       label: Atypischer Kausalverlauf durch die grob fehlerhafte Medikamentenverwechslung
         erkannt und begründet
       weight: 3.0
       required: true
       keywords:
-      - atypisch
-      - außergewöhnlich
+      - atypischer Kausalverlauf
+      - völlig außergewöhnlich
+      - außerhalb jeder Lebenserfahrung
+      - nicht mehr vom Risiko des Unfalls erfasst
       card_slugs:
       - sr-zurechnung-atypischer-kausalverlauf
     - id: p4
@@ -262,7 +267,9 @@ faelle:
       required: true
       keywords:
       - Risikorealisierung
-      - eigenständig
+      - realisiert sich nicht
+      - Gefahrzusammenhang
+      - eigenständige Gefahrenquelle
       card_slugs:
       - sr-zurechnung-schutzzweck-der-norm
     - id: p5
@@ -270,8 +277,10 @@ faelle:
       weight: 1.5
       required: true
       keywords:
-      - nicht zurechenbar
-      - verneint
+      - nicht objektiv zurechenbar
+      - objektive Zurechnung entfällt
+      - objektive Zurechnung scheidet aus
+      - Zurechnung ist zu verneinen
       card_slugs:
       - sr-zurechnung-atypischer-kausalverlauf
     - id: p6
@@ -282,6 +291,7 @@ faelle:
       norms:
       - § 229 StGB
       keywords:
-      - '229'
+      - § 229
+      - fahrlässige Körperverletzung
       card_slugs:
       - sr-fahrlaessigkeit-begriff

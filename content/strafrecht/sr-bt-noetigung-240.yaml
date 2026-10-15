@@ -156,12 +156,12 @@ faelle:
     teil und setzt sich zusammen mit anderen Demonstranten auf die Fahrbahn unmittelbar
     vor die Zufahrt zum Werksgelände. Der herannahende LKW-Fahrer F muss unmittelbar
     vor den sitzenden Demonstranten anhalten, weil er sonst über sie hinwegfahren
-    müsste. Im Laufe der nächsten Minuten reihen sich hinter F weitere Fahrzeuge
-    auf; deren Fahrer, darunter N, kommen an F nicht vorbei und bleiben ebenfalls
-    stehen, ohne selbst von Demonstranten blockiert zu sein. Die Blockade dauert 20
-    Minuten, bis die Polizei die Sitzenden wegträgt.
-  question: Hat sich A gegenüber F und gegenüber N jeweils wegen Nötigung gemäß
-    § 240 Abs. 1 StGB strafbar gemacht?
+    müsste. Im Laufe der nächsten Minuten reihen sich hinter F weitere Fahrzeuge auf;
+    deren Fahrer, darunter N, kommen an F nicht vorbei und bleiben ebenfalls stehen,
+    ohne selbst von Demonstranten blockiert zu sein. Die Blockade dauert 20 Minuten,
+    bis die Polizei die Sitzenden wegträgt.
+  question: Hat sich A gegenüber F und gegenüber N jeweils wegen Nötigung gemäß §
+    240 Abs. 1 StGB strafbar gemacht?
   steps:
   - prompt: Formuliere den Obersatz für das Verhältnis A/F.
     erwartung: A könnte sich durch das Sitzen vor dem Fahrzeug des F wegen Nötigung
@@ -175,11 +175,11 @@ faelle:
       gezwungen wird.
   - prompt: Ist die Tat gegenüber F auch verwerflich i.S.d. § 240 Abs. 2 StGB?
     erwartung: Im Ergebnis ja - bei einer längeren, gezielten Blockade eines Einzelnen
-      überwiegt regelmäßig das Interesse an ungehinderter Fortbewegung gegenüber
-      dem Protestanliegen.
+      überwiegt regelmäßig das Interesse an ungehinderter Fortbewegung gegenüber dem
+      Protestanliegen.
   - prompt: Formuliere den Obersatz für das Verhältnis A/N.
-    erwartung: A könnte sich auch gegenüber N wegen Nötigung gemäß § 240 Abs.
-      1 StGB strafbar gemacht haben.
+    erwartung: A könnte sich auch gegenüber N wegen Nötigung gemäß § 240 Abs. 1 StGB
+      strafbar gemacht haben.
   - prompt: Liegt gegenüber N Gewalt vor?
     erwartung: Nein - N wird nicht durch die körperliche Anwesenheit der Demonstranten,
       sondern nur durch das vor ihm stehende Fahrzeug des F am Weiterfahren gehindert.
@@ -197,8 +197,10 @@ faelle:
       norms:
       - § 240 Abs. 1 StGB
       keywords:
-      - Gewalt
-      - körperlich
+      - körperlich vermittelte Zwangswirkung
+      - Gewaltbegriff
+      - vergeistigter Gewaltbegriff
+      - Zwangswirkung
       card_slugs:
       - sr-noetigung-gewaltbegriff
     - id: p2
@@ -207,7 +209,7 @@ faelle:
       required: false
       keywords:
       - Nötigungserfolg
-      - Weiterfahrt
+      - Handlung, Duldung oder Unterlassung
       card_slugs:
       - sr-noetigung-noetigungserfolg
     - id: p3
@@ -217,7 +219,8 @@ faelle:
       norms:
       - § 240 Abs. 2 StGB
       keywords:
-      - verwerflich
+      - Verwerflichkeit
+      - § 240 Abs. 2 StGB
       card_slugs:
       - sr-noetigung-verwerflichkeit
     - id: p4
@@ -228,8 +231,9 @@ faelle:
       norms:
       - § 240 Abs. 1 StGB
       keywords:
-      - psychisch vermittelt
-      - keine Gewalt
+      - psychisch vermittelte Zwangswirkung
+      - keine Gewalt gegenüber N
+      - Zweite-Reihe-Rechtsprechung
       card_slugs:
       - sr-noetigung-gewaltbegriff
       - sr-noetigung-sitzblockade-zweite-reihe
@@ -250,5 +254,6 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - gegenüber F
-      - gegenüber N
+      - strafbar gegenüber F
+      - nicht strafbar gegenüber N
+      - Nötigung gegenüber F
