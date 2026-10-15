@@ -48,6 +48,14 @@ NOTENSTUFEN: list[tuple[float, str]] = [
 ]
 
 
+def _de_zahl(x: float) -> str:
+    """Deutsche Schreibweise: ``3.5`` -> ``3,5``, ganze Zahlen ohne ``,0``."""
+    text = f"{x:.1f}"
+    if text.endswith(".0"):
+        text = text[:-2]
+    return text.replace(".", ",")
+
+
 def note_fuer_punkte(points: float) -> str:
     for untergrenze, name in NOTENSTUFEN:
         if points >= untergrenze:
@@ -660,8 +668,8 @@ class HeuristicEvaluator:
             )
             if req_grenze is not None and req_grenze < points_roh:
                 satz += (
-                    f" Die Punktzahl ist deshalb auf {points:g} begrenzt "
-                    f"(ohne diese Begrenzung: {points_roh:g})."
+                    f" Die Punktzahl ist deshalb auf {_de_zahl(points)} begrenzt "
+                    f"(ohne diese Begrenzung: {_de_zahl(points_roh)})."
                 )
             hinweise.insert(1 if wrong_case else 0, satz)
 
@@ -670,7 +678,7 @@ class HeuristicEvaluator:
             summary = (
                 "Die automatische Bewertung prüft, ob die erwarteten Prüfungspunkte "
                 "angesprochen werden – nicht, wie überzeugend argumentiert wird. "
-                f"Deshalb vergibt sie höchstens {HEURISTIK_MAX_PUNKTE:.0f} Punkte."
+                f"Deshalb vergibt sie höchstens {_de_zahl(HEURISTIK_MAX_PUNKTE)} Punkte."
             )
         if hinweise:
             summary = (summary + " " if summary else "") + " ".join(hinweise)

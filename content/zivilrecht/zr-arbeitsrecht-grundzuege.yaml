@@ -296,12 +296,15 @@ faelle:
       - § 611a BGB
       - Rücksichtnahmepflicht
       - § 241 Abs. 2 BGB
+      - Arbeitsvertrag
+      - Pflichtverletzung
+      - Schadensersatz
       card_slugs:
       - zr-arb-arbeitnehmerbegriff-611a
     - id: p2
       label: Beweislast für Vertretenmüssen nach § 619a BGB beim Arbeitgeber
       weight: 2.0
-      required: true
+      required: false
       norms:
       - § 619a BGB
       keywords:
@@ -310,6 +313,19 @@ faelle:
       - Arbeitgeber muss Verschulden beweisen
       - Vermutung des § 280 Abs. 1 S. 2 BGB entfällt
       - Vertretenmüssen
+      - § 619a
+      - Beweislastumkehr
+      - Darlegungs- und Beweislast
+      - trägt die Beweislast
+      - muss das Verschulden beweisen
+      - muss beweisen
+      - G beweisen
+      - Arbeitgeber beweisen
+      - beweisen müsste
+      - beweisen muss
+      - Beweislast liegt
+      - Verschulden nachweisen
+      - Beweis des Verschuldens
       card_slugs:
       - zr-arb-beweislast-619a
     - id: p3
@@ -322,6 +338,20 @@ faelle:
       - Haftungsprivilegierung
       - leichteste Fahrlässigkeit
       - Haftungsabstufung
+      - Abstufung
+      - Haftungsprivileg
+      - betrieblich veranlasste Tätigkeit
+      - betrieblich bedingt
+      - Schadensausgleich
+      - Schadensverteilung
+      - dreistufig
+      - mittlere Fahrlässigkeit
+      - grobe Fahrlässigkeit
+      - Quotelung
+      - Schadensquote
+      - leichte Fahrlässigkeit
+      - geringste Fahrlässigkeit
+      - Verschuldensgrad
       card_slugs:
       - zr-arb-arbeitnehmerhaftung-stufen
       - zr-arb-arbeitnehmerhaftung-grundlage
@@ -335,5 +365,14 @@ faelle:
       - leichteste Fahrlässigkeit
       - kein Anspruch auf Schadensersatz
       - Anspruch besteht nicht
+      - haftet nicht
+      - Haftung entfällt
+      - entfällt die Haftung
+      - kein Ersatzanspruch
+      - kein Schadensersatzanspruch
+      - keinen Anspruch
+      - keinen Schadensersatz
+      - trägt den Schaden allein
+      - Arbeitgeber trägt den Schaden
       card_slugs:
       - zr-arb-arbeitnehmerhaftung-stufen
