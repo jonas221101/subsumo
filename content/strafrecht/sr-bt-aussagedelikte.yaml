@@ -12,7 +12,7 @@ topic:
 cards:
 - slug: sr-aus-systematik
   type: norm
-  front: Wie sind die Aussagedelikte der §§ 153 bis 163 StGB systematisch aufgebaut?
+  front: Wie sind die Aussagedelikte der §§ 153 bis 162 StGB systematisch aufgebaut?
   back: >-
     Die Aussagedelikte schützen die staatliche Rechtspflege, die auf wahrheitsgemäße
     Angaben vor Gericht und anderen Stellen angewiesen ist. § 153 StGB bestraft
@@ -22,14 +22,14 @@ cards:
     an Eides statt vor einer zuständigen Behörde. § 157 StGB regelt den
     Aussagenotstand, § 158 StGB die Berichtigung falscher Angaben, § 159 StGB die
     Strafbarkeit des Versuchs der Anstiftung. § 160 StGB bestraft das Verleiten
-    zur Falschaussage, § 163 StGB die fahrlässige Begehung der Eidesdelikte. Es
+    zur Falschaussage, § 161 StGB die fahrlässige Begehung der Eidesdelikte. Es
     sind eigenhändige Delikte: Täter kann nur sein, wer selbst aussagt oder schwört.
   norms:
   - § 153 StGB
   - § 154 StGB
   - § 156 StGB
   - § 160 StGB
-  - § 163 StGB
+  - § 161 StGB
   quellen:
   - StGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -48,11 +48,11 @@ cards:
     muss sich auf die Falschheit der Aussage und auf die Zuständigkeit der Stelle
     erstrecken; Eventualvorsatz genügt (Rechtsfolge: Freiheitsstrafe von drei
     Monaten bis zu fünf Jahren). Hält der Zeuge seine Aussage für richtig, obwohl
-    sie objektiv falsch ist, bleibt er straflos oder kommt nur nach § 163 StGB
+    sie objektiv falsch ist, bleibt er straflos oder kommt nur nach § 161 StGB
     in Betracht, soweit ein Eid geleistet wurde.
   norms:
   - § 153 StGB
-  - § 163 StGB
+  - § 161 StGB
   quellen:
   - StGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -156,10 +156,10 @@ cards:
     muss das richtige Tatsachenbild vollständig herstellen. Anders als beim
     Rücktritt (§ 24 StGB) bewirkt die Berichtigung bei den Vorsatzdelikten nur
     eine Milderung bzw. fakultatives Absehen von Strafe; bei fahrlässigen Delikten
-    (§ 163 Abs. 2 StGB) führt sie dagegen zur Straflosigkeit.
+    (§ 161 Abs. 2 StGB) führt sie dagegen zur Straflosigkeit.
   norms:
   - § 158 StGB
-  - § 163 Abs. 2 StGB
+  - § 161 Abs. 2 StGB
   quellen:
   - StGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -192,14 +192,14 @@ cards:
   stand: 2026-10
 - slug: sr-aus-160-163
   type: norm
-  front: Was regeln § 160 StGB (Verleitung zur Falschaussage) und § 163 StGB (fahrlässiger Falscheid)?
+  front: Was regeln § 160 StGB (Verleitung zur Falschaussage) und § 161 StGB (fahrlässiger Falscheid)?
   back: >-
     § 160 StGB erfasst, wer einen anderen zur Ableistung eines falschen Eides oder
     zur Abgabe einer falschen Versicherung an Eides statt verleitet, ohne dass
     dieser vorsätzlich handelt. Die Norm schließt die Lücke, die wegen der
     Eigenhändigkeit der Aussagedelikte entsteht: Eine mittelbare Täterschaft
     des Hintermannes ist ausgeschlossen. Der Versuch ist strafbar. Die Tat ist
-    ein Vergehen. § 163 StGB bestraft den fahrlässigen Falscheid und die
+    ein Vergehen. § 161 StGB bestraft den fahrlässigen Falscheid und die
     fahrlässige falsche Versicherung an Eides statt mit Freiheitsstrafe bis zu
     einem Jahr oder Geldstrafe; wer die falsche Angabe rechtzeitig berichtigt,
     bleibt nach Abs. 2 straffrei. Eine fahrlässige uneidliche Falschaussage ist nicht
@@ -207,7 +207,7 @@ cards:
     sicher erinnert, unter Eid als sicher bekundet, ohne seine Unsicherheit offenzulegen.
   norms:
   - § 160 StGB
-  - § 163 StGB
+  - § 161 StGB
   quellen:
   - StGB, amtliche Fassung
   - Eigenformulierung Redaktion
