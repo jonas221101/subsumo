@@ -1,0 +1,355 @@
+topic:
+  slug: sr-bt-geldwaesche-261
+  area: strafrecht
+  title: Geldwäsche, § 261 StGB
+  parent: sr-at
+  relevance: 3
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-gw-reform-2021
+  type: norm
+  front: >-
+    Was hat die Reform des § 261 StGB im Jahr 2021 geändert (All-Crimes-Ansatz)?
+  back: >-
+    Seit der Reform (Gesetz zur Verbesserung der strafrechtlichen Bekämpfung der Geldwäsche,
+    in Kraft seit März 2021) knüpft § 261 StGB nicht mehr an einen Katalog bestimmter Vortaten
+    an, sondern an jede rechtswidrige Tat (All-Crimes-Ansatz). Jeder Gegenstand, der aus einer
+    rechtswidrigen Tat herrührt, kann Tatobjekt sein; der frühere Vortatenkatalog entfällt.
+    Damit ist der Anwendungsbereich erheblich größer; das Ziel ist, die Verschleierung inkriminierter
+    Vermögenswerte umfassend zu erfassen und die Bekämpfung der Organisierten Kriminalität
+    zu verbessern. Die Reform dient auch der Umsetzung europäischer Vorgaben. Die Verhältnismäßigkeit
+    wird vor allem über die subjektiven Voraussetzungen, namentlich die Kenntnis der Herkunft,
+    gewahrt.
+  norms:
+  - § 261 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-gw-tatobjekt-herruehren
+  type: definition
+  front: >-
+    Definiere: Gegenstand, der aus einer rechtswidrigen Tat herrührt, § 261 StGB
+  back: >-
+    Gegenstand ist jeder Vermögenswert, nicht nur körperliche Sachen, sondern auch Forderungen,
+    Bankguthaben und Rechte. Rechtswidrige Tat ist nach § 11 Abs. 1 Nr. 5 StGB eine Tat, die
+    den Tatbestand eines Strafgesetzes verwirklicht; Ordnungswidrigkeiten genügen nicht. Auch
+    im Ausland begangene Taten kommen in Betracht, wenn sie am Tatort strafbar sind. Ein Gegenstand
+    rührt aus der Tat her, wenn der Täter oder ein Beteiligter ihn durch die Tat oder für
+    ihre Begehung erlangt hat (Tatertrag), und auch, wenn er an die Stelle des ursprünglichen
+    Gegenstands getreten ist (Surrogat). Die Herkunft aus der Tat muss im Zeitpunkt der Tathandlung
+    feststehen.
+  norms:
+  - § 261 StGB
+  - § 11 Abs. 1 Nr. 5 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-gw-kontamination-streit
+  type: streitstand
+  front: >-
+    Streitstand: Wann ist ein Bankguthaben, auf das legale und illegale Gelder fließen, "inkriminiert"?
+  back: >-
+    Bei Vermischung von Geldern auf einem Konto stellt sich die Frage, ob das gesamte Guthaben
+    als aus der Vortat herrührend anzusehen ist. Nach der Totalkontamination ist jede Verfügung
+    über ein vermischtes Guthaben Geldwäsche, wenn ein Teil inkriminiert ist; das schützt
+    die Verfolgbarkeit der Spur, ist aber sehr weit. Die Gegenauffassung beschränkt die Kontamination
+    auf den wertmäßigen Anteil des Guthabens, der auf die inkriminierte Herkunft zurückgeht,
+    und verlangt bei geringfügigen Beträgen die Einhaltung einer Bagatellgrenze, weil das
+    Guthaben sonst nahezu jeden Geschäftsverkehr unmöglich macht. Eine einheitliche Linie
+    hat sich nicht durchgesetzt; in der Klausur ist die gewählte Lösung zu begründen und der
+    Einzelfall zu würdigen.
+  norms:
+  - § 261 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-gw-tathandlungen
+  type: definition
+  front: Welche Tathandlungen erfasst § 261 Abs. 1 StGB?
+  back: >-
+    Die Tathandlungen sind: (1) Verbergen des Gegenstands; (2) Umtauschen, Übertragen oder
+    Verbringen in der Absicht, das Auffinden, die Einziehung oder die Herkunftsermittlung
+    zu vereiteln oder zu gefährden; (3) Sich-oder-einem-Dritten-Verschaffen, also die Erlangung
+    tatsächlicher Verfügungsgewalt; (4) Verwahren oder Verwenden für sich oder einen Dritten,
+    wenn der Täter die Herkunft des Gegenstands zum Zeitpunkt der Tat kennt. Verschaffen verlangt
+    bei Nr. 3 im Unterschied zum bloßen Verwahren einverständliche Erlangung einer eigenen
+    Verfügungsgewalt. Die Absicht der Verschleierung gehört bei Nr. 2 zum Tatbestand; bei
+    Nr. 3 und 4 genügt die Kenntnis der Herkunft.
+  norms:
+  - § 261 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-gw-subjektiv-leichtfertig
+  type: norm
+  front: >-
+    Welche subjektiven Anforderungen stellt § 261 StGB (Kenntnis, Leichtfertigkeit)?
+  back: >-
+    Für die Vorsatztat nach § 261 Abs. 1 StGB muss der Täter die Herkunft des Gegenstands
+    aus einer rechtswidrigen Tat kennen (bei den Verschaffens- und Verwahrensvarianten zum
+    Zeitpunkt der Tathandlung) und die Tathandlung wollen. Für Verschaffen und Verwahren oder
+    Verwenden verlangt das Gesetz positive Kenntnis der Herkunft; bei den übrigen Handlungen
+    genügt bedingter Vorsatz. Daneben stellt § 261 StGB auch die leichtfertige Unkenntnis
+    der Herkunft unter Strafe. Leichtfertigkeit ist eine gesteigerte Form der Fahrlässigkeit
+    und liegt vor, wenn sich dem Täter die Herkunft aus einer rechtswidrigen Tat geradezu
+    aufdrängen musste und er dies aus besonderer Gleichgültigkeit oder grober Unachtsamkeit
+    außer Acht lässt.
+  norms:
+  - § 261 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-gw-verteidigerhonorar
+  type: rechtsprechung
+  front: >-
+    Welche Grenzen setzt das Bundesverfassungsgericht der Strafbarkeit des Strafverteidigers,
+    der ein Honorar aus inkriminierten Mitteln annimmt? (BVerfGE 110, 226)
+  back: >-
+    Das BVerfG hat entschieden, dass die Strafbarkeit des Strafverteidigers wegen Geldwäsche
+    durch Annahme eines Honorars verfassungskonform eingeschränkt werden muss (BVerfGE 110,
+    226). Zur Wahrung der Berufsfreiheit (Art. 12 Abs. 1 GG) und der Verteidigerstellung ist
+    eine Strafbarkeit des Verteidigers nur dann zulässig, wenn er im Zeitpunkt der Annahme
+    des Honorars sichere Kenntnis von der Herkunft des Geldes hat. Dolus eventualis und Leichtfertigkeit
+    genügen nicht. Die Annahme des Honorars ist ein Sich-Verschaffen des Gegenstands. Sie
+    zeigt, dass der weite Tatbestand der Geldwäsche im Einzelfall verfassungskonform einzuschränken
+    ist.
+  norms:
+  - § 261 StGB
+  - Art. 12 Abs. 1 GG
+  quellen:
+  - StGB, amtliche Fassung
+  - BVerfGE 110, 226
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-gw-vortaeter-privileg
+  type: streitstand
+  front: >-
+    Wie wird die Strafbarkeit des Vortäters und Vortatbeteiligten wegen Geldwäsche (Selbstgeldwäsche)
+    behandelt?
+  back: >-
+    Wer an der Vortat beteiligt ist, soll nach dem Grundgedanken des Gesetzes nicht zusätzlich
+    wegen Geldwäsche bestraft werden, soweit er lediglich die Beute sichert oder verwertet.
+    Die Strafe für die Vortat erfasst den Unrechtsgehalt der Aneignung ("mitbestrafte Nachtat").
+    Ausnahmen sind für den Fall vorgesehen, dass der Vortäter die inkriminierten Werte in
+    den Wirtschaftskreislauf einspeist und dadurch ihre Herkunft verschleiert. Die Reichweite
+    der Privilegierung ist im Einzelnen im aktuellen Gesetzeswortlaut nachzulesen, weil sie
+    durch die Reform 2021 verändert wurde. In der Klausur ist die Vortatbeteiligung stets
+    zu prüfen. Wer nicht an der Vortat beteiligt ist, kann ohne Einschränkung Täter sein.
+  norms:
+  - § 261 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-gw-abgrenzung-hehlerei
+  type: definition
+  front: >-
+    Wie unterscheiden sich Geldwäsche (§ 261 StGB) und Hehlerei (§ 259 StGB)?
+  back: >-
+    Die Hehlerei (§ 259 StGB) setzt eine Sache voraus, die ein anderer gestohlen oder sonst
+    durch eine gegen fremdes Vermögen gerichtete rechtswidrige Tat erlangt hat. Sie schützt
+    vor der Aufrechterhaltung der rechtswidrigen Vermögenslage (Perpetuierung) und verlangt
+    ein einverständliches, abgeleitetes Erwerben (Ankaufen, Sich-Verschaffen) oder Absetzen(-Helfen).
+    Die Geldwäsche erfasst dagegen jeden Gegenstand aus jeder rechtswidrigen Tat und schützt
+    vorrangig die Rechtspflege; Handlungen sind auch Verbergen, Verwahren oder Verwenden.
+    Eine bloße Verwahrung ohne eigene Verfügungsgewalt ist daher regelmäßig Geldwäsche, aber
+    keine Hehlerei. Beide Delikte können in Tateinheit stehen (§ 52 StGB), wenn dieselbe Handlung
+    beide Tatbestände erfüllt. Die Hehlerei verlangt außerdem Bereicherungsabsicht, die Geldwäsche
+    Kenntnis oder (bei den übrigen Handlungen) Vorsatz hinsichtlich der Herkunft.
+  norms:
+  - § 261 StGB
+  - § 259 StGB
+  - § 52 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-gw-konkurrenz-strafzumessung
+  type: norm
+  front: >-
+    Welche Rechtsfolgen und Konkurrenzen sind bei § 261 StGB zu beachten?
+  back: >-
+    Die Grundstrafe beträgt Freiheitsstrafe von drei Monaten bis zu fünf Jahren; für besonders
+    schwere Fälle (z. B. gewerbsmäßige Begehung oder Begehung als Mitglied einer Bande) ist
+    eine höhere Strafe vorgesehen. Daneben steht die Einziehung nach den §§ 73 ff. StGB. Der
+    Versuch ist strafbar. Eine tätige Reue (freiwillige Anzeige) kann zur Straffreiheit führen.
+    In Konkurrenz zu §§ 257, 259 StGB (Begünstigung, Hehlerei) ist die Tateinheit in Betracht
+    zu ziehen, da die Rechtsgüter unterschiedlich sind. Begünstigung (§ 257 StGB) und Geldwäsche
+    unterscheiden sich in der Zielrichtung: Die Begünstigung will dem Vortäter die Vorteile
+    sichern, die Geldwäsche die Herkunft verschleiern.
+  norms:
+  - § 261 StGB
+  - § 257 StGB
+  - § 259 StGB
+  - §§ 73 ff. StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: sr-schema-261
+  title: Geldwäsche, § 261 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+  norms:
+  - § 261 StGB
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: >-
+          a) Tatobjekt: Gegenstand, der aus einer rechtswidrigen Tat herrührt
+        hinweis: >-
+          Seit 2021 jede rechtswidrige Tat (All-Crimes); Ordnungswidrigkeit genügt nicht;
+          Surrogate und Vermischung beachten.
+      - label: >-
+          b) Tathandlung: Verbergen, Umtauschen/Übertragen/Verbringen (mit Vereitelungsabsicht),
+          Verschaffen, Verwahren/Verwenden
+    - label: 2. Subjektiver Tatbestand
+      children:
+      - label: >-
+          a) Vorsatz; Kenntnis der Herkunft bei Verschaffen/Verwahren
+      - label: >-
+          b) Bei Nr. 2: Absicht, Auffinden, Einziehung oder Herkunftsermittlung zu vereiteln
+  - label: II. Rechtswidrigkeit
+  - label: III. Schuld
+  - label: 'IV. Persönliche Ausnahmen: Vortatbeteiligung'
+    hinweis: >-
+      Prüfen, ob der Täter an der Vortat beteiligt war und wie weit die Privilegierung reicht;
+      Verteidigerhonorar: sichere Kenntnis nötig.
+  - label: V. Leichtfertigkeitsvariante
+    hinweis: >-
+      Nur prüfen, wenn Vorsatz bezüglich der Herkunft fehlt.
+  - label: VI. Konkurrenzen
+    hinweis: >-
+      Hehlerei, Begünstigung, Betrug: Abgrenzung nach Tathandlung und Schutzgut.
+faelle:
+- slug: sr-fall-gw-bargeld-wohnung
+  title: Das Bargeld im Wäscheschrank
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: >-
+    A erlangt durch einen betrügerischen Verkauf gefälschter Eintrittskarten 10.000 Euro in
+    bar. Er bittet seinen Freund F, dem er den Betrug offen schildert, das Geld für einige
+    Wochen in dessen Wohnung aufzubewahren, bis "Gras über die Sache gewachsen" sei. F willigt
+    ein und legt das Bargeld in seinen Wäscheschrank. F will das Geld nicht für sich verwenden
+    und erhält auch keine Gegenleistung. Er rechnet nicht mit der Rückgabe an die Betrogenen.
+    Nach drei Wochen holt A das Geld ab.
+  question: >-
+    Hat sich F wegen Geldwäsche nach § 261 StGB strafbar gemacht? Hat er sich wegen Hehlerei
+    nach § 259 StGB strafbar gemacht?
+  steps:
+  - prompt: Rührt das Geld aus einer rechtswidrigen Tat her?
+    erwartung: >-
+      Ja - die 10.000 Euro sind Ertrag eines vollendeten Betrugs (§ 263 StGB) des A und damit
+      ein Gegenstand, der aus einer rechtswidrigen Tat herrührt. Auf einen Vortatenkatalog
+      kommt es seit der Reform 2021 nicht mehr an.
+  - prompt: Welche Tathandlung hat F vorgenommen?
+    erwartung: >-
+      F hat das Geld verwahrt, § 261 Abs. 1 Nr. 4 StGB, für A (einen Dritten). Verbergen kommt
+      daneben in Betracht, weil er es im Wäscheschrank versteckt.
+  - prompt: Kannte F die Herkunft?
+    erwartung: >-
+      Ja - A hat ihm den Betrug offen geschildert; F handelte mit Kenntnis und Vorsatz.
+  - prompt: Liegt auch Hehlerei nach § 259 StGB vor?
+    erwartung: >-
+      Nein - F hat sich die Sache nicht verschafft, weil er keine eigene Verfügungsgewalt
+      erlangt hat, und hat auch nicht abgesetzt oder beim Absatz geholfen. Eine bloße Verwahrung
+      genügt für § 259 StGB nicht.
+  - prompt: Ergebnis?
+    erwartung: >-
+      F ist wegen Geldwäsche nach § 261 Abs. 1 StGB (Verwahren in Kenntnis der Herkunft) strafbar.
+      Eine Strafbarkeit nach § 259 StGB scheidet aus.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Herrühren: Geld aus Betrug als Gegenstand aus rechtswidriger Tat (kein Vortatenkatalog
+        mehr)
+      weight: 2.0
+      required: true
+      norms:
+      - § 261 StGB
+      - § 263 StGB
+      keywords:
+      - herrührt
+      - rechtswidrige Tat
+      - All-Crimes
+      - Vortatenkatalog
+      - Tatobjekt
+      card_slugs:
+      - sr-gw-tatobjekt-herruehren
+      - sr-gw-reform-2021
+    - id: p2
+      label: >-
+        Tathandlung: Verwahren (und Verbergen) für einen Dritten
+      weight: 2.0
+      required: true
+      norms:
+      - § 261 Abs. 1 StGB
+      keywords:
+      - Verwahren
+      - verwahrt
+      - Verbergen
+      - § 261 Abs. 1 Nr. 4
+      - für einen Dritten
+      card_slugs:
+      - sr-gw-tathandlungen
+    - id: p3
+      label: Kenntnis der Herkunft / Vorsatz
+      weight: 1.5
+      required: false
+      norms:
+      - § 261 Abs. 1 StGB
+      keywords:
+      - Kenntnis der Herkunft
+      - kannte
+      - Herkunft bekannt
+      - wissentlich
+      - Vorsatz bezüglich der Herkunft
+      card_slugs:
+      - sr-gw-subjektiv-leichtfertig
+    - id: p4
+      label: >-
+        Hehlerei verneint: keine eigene Verfügungsgewalt, kein Absetzen
+      weight: 2.5
+      required: true
+      norms:
+      - § 259 StGB
+      keywords:
+      - Sich-Verschaffen
+      - Verschaffen
+      - keine Verfügungsgewalt
+      - Absetzen
+      - bloße Verwahrung
+      - § 259
+      card_slugs:
+      - sr-gw-abgrenzung-hehlerei
+    - id: p5
+      label: 'Ergebnis: Strafbarkeit nach § 261 StGB'
+      weight: 1.0
+      required: false
+      norms:
+      - § 261 StGB
+      keywords:
+      - strafbar nach § 261
+      - Geldwäsche nach § 261
+      - Geldwäsche gemäß § 261
+      - Geldwäsche strafbar
+      card_slugs:
+      - sr-gw-tathandlungen

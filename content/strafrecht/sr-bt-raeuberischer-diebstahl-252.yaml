@@ -1,0 +1,407 @@
+topic:
+  slug: sr-bt-raeuberischer-diebstahl-252
+  area: strafrecht
+  title: >-
+    Räuberischer Diebstahl und räuberischer Angriff auf Kraftfahrer, §§ 252, 316a StGB
+  parent: sr-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-rd-252-tatbestand
+  type: norm
+  front: Was bestraft § 252 StGB (räuberischer Diebstahl)?
+  back: >-
+    § 252 StGB bestraft, wer bei einem Diebstahl auf frischer Tat betroffen gegen eine Person
+    Gewalt verübt oder Drohungen mit gegenwärtiger Gefahr für Leib oder Leben anwendet, um
+    sich im Besitz des gestohlenen Gutes zu erhalten. Der Täter wird "gleich einem Räuber"
+    bestraft, das heißt mit dem Strafrahmen des § 249 StGB. Die Vorschrift ist ein selbständiges
+    Delikt, kein bloßer Strafzumessungsverweis; sie erfasst die Fälle, in denen die Nötigung
+    erst nach Vollendung des Diebstahls erfolgt, sodass § 249 StGB nicht greift. Bei Gewalt
+    nach Beendigung der Wegnahme fehlt der für den Raub nötige finale Zusammenhang zwischen
+    Nötigung und Wegnahme. Das Delikt wird deshalb auch als "Raub mit umgekehrter Reihenfolge"
+    bezeichnet.
+  norms:
+  - § 252 StGB
+  - § 249 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rd-252-vortat-betreffen
+  type: definition
+  front: >-
+    Definiere: "bei einem Diebstahl auf frischer Tat betroffen", § 252 StGB
+  back: >-
+    Vortat ist ein vollendeter Diebstahl, auch in den Formen der §§ 243 und 244 StGB; der
+    bloße Versuch genügt nach h. M. nicht, da der Täter das Gut bereits erlangt haben muss,
+    um es "behalten" zu wollen. Betroffen ist der Täter, wenn er am Tatort oder in unmittelbarer
+    Nähe in zeitlichem Zusammenhang mit der Tat von einem anderen wahrgenommen wird. Es genügt,
+    dass der Täter bemerkt wird, auch wenn er das nicht weiß. Auf frischer Tat ist der Täter
+    betroffen, solange die Tat noch nicht beendet ist oder jedenfalls in unmittelbarem räumlich-zeitlichen
+    Zusammenhang steht (Flucht, Verfolgung).
+  norms:
+  - § 252 StGB
+  - § 242 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rd-252-betreffen-streit
+  type: streitstand
+  front: >-
+    Streitstand: Wie weit reicht das "Betreffen auf frischer Tat" in räumlicher und zeitlicher
+    Hinsicht?
+  back: >-
+    Die Rspr. versteht das Betreffen weit: Der Täter kann auch noch nach Verlassen des Tatorts
+    angetroffen werden, solange ein enger räumlich-zeitlicher Zusammenhang besteht; die Verfolgung
+    kann sich über eine gewisse Strecke und Zeit erstrecken. Entscheidend ist, dass der Täter
+    die Beute noch nicht gesichert hat und die Tat deshalb noch "frisch" ist. Ein Teil der
+    Lit. will das Merkmal restriktiver auslegen und verlangt ein Betreffen am Tatort selbst
+    oder in unmittelbarer Nähe, weil sonst der Charakter des § 252 StGB als Nötigung zur Besitzerhaltung
+    verloren geht. Für die Klausur genügt meist die Feststellung, dass der Täter wenige Minuten
+    und Meter vom Tatort entfernt wahrgenommen und verfolgt wird. Nach beiden Ansichten ist
+    dies ausreichend.
+  norms:
+  - § 252 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rd-252-besitzerhaltung
+  type: definition
+  front: 'Definiere: Besitzerhaltungsabsicht, § 252 StGB'
+  back: >-
+    Der Täter muss Gewalt oder Drohung einsetzen, um sich im Besitz des gestohlenen Gutes
+    zu erhalten. Die Besitzerhaltungsabsicht (finaler Zusammenhang) ist als überschießende
+    Innentendenz ein subjektives Tatbestandsmerkmal: Sie muss das Handlungsziel sein, ist
+    aber nicht notwendig das einzige oder vorrangige Motiv; erforderlich ist aber zielgerichtetes
+    Wollen, nicht bloßes Wissen. Der Täter muss zumindest auch die Beute behalten wollen.
+    Handelt er nur, um zu fliehen oder einer Festnahme zu entgehen, ohne die Beute behalten
+    zu wollen, fehlt die Absicht; es verbleiben §§ 240, 223 StGB. "Besitz" ist hier untechnisch
+    zu verstehen und meint die tatsächliche Herrschaft über das gestohlene Gut.
+  norms:
+  - § 252 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rd-252-noetigungsmittel-rechtsfolge
+  type: norm
+  front: >-
+    Welche Nötigungsmittel setzt § 252 StGB voraus und welche Rechtsfolge gilt?
+  back: >-
+    Erforderlich ist Gewalt gegen eine Person (wie bei § 249 StGB) oder eine Drohung mit gegenwärtiger
+    Gefahr für Leib oder Leben. Gewalt gegen Sachen genügt nicht. Die Nötigung muss sich nicht
+    gegen den Bestohlenen richten; Adressat kann jeder sein, der den Täter am Behalten hindert,
+    etwa ein Passant oder Verfolger. Rechtsfolge ist die Bestrafung "gleich einem Räuber".
+    Die Qualifikationen der §§ 250 und 251 StGB sind anwendbar, wenn ihre Merkmale erfüllt
+    sind (z. B. Mitführen einer Waffe oder eines gefährlichen Werkzeugs, das beim Entdeckt-Werden
+    eingesetzt wird). Als Verbrechen ist auch der Versuch des § 252 StGB strafbar.
+  norms:
+  - § 252 StGB
+  - § 250 StGB
+  - § 251 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rd-252-konkurrenzen
+  type: definition
+  front: >-
+    Wie verhalten sich Diebstahl, § 252 StGB und Körperverletzung zueinander?
+  back: >-
+    Der Täter des räuberischen Diebstahls ist zugleich Täter der Vortat. Diebstahl und § 252
+    StGB werden nach h. M. in Tatmehrheit angenommen, weil sie auf zwei selbständigen Handlungen
+    beruhen; die Klausurpraxis folgt dieser Linie, was aber nicht zwingend ist. Wird bei der
+    Nötigung zugleich eine Körperverletzung begangen, steht § 252 StGB damit in Tateinheit;
+    die Körperverletzung ist nicht Bestandteil des § 252 StGB.
+  norms:
+  - § 252 StGB
+  - § 52 StGB
+  - § 53 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rd-316a-tatbestand
+  type: norm
+  front: Wie lautet der Tatbestand des § 316a Abs. 1 StGB?
+  back: >-
+    § 316a Abs. 1 StGB bestraft, wer zur Begehung eines Raubes (§§ 249, 250), eines räuberischen
+    Diebstahls (§ 252) oder einer räuberischen Erpressung (§§ 253, 255) einen Angriff auf
+    Leib, Leben oder die Entschlussfreiheit des Führers eines Kraftfahrzeugs oder eines Mitfahrers
+    unter Ausnutzung der besonderen Verhältnisse des Straßenverkehrs verübt. Die Mindeststrafe
+    beträgt fünf Jahre Freiheitsstrafe; ein minder schwerer Fall ist in Abs. 2 geregelt, die
+    Todesfolge bei Leichtfertigkeit in Abs. 3. § 316a StGB ist ein Delikt mit vorverlagerter
+    Vollendung: Die Tat ist vollendet, sobald der Angriff verübt ist, auch wenn es nicht zum
+    Raub kommt. Die Absicht, eines der genannten Delikte zu begehen, ist überschießende Innentendenz.
+  norms:
+  - § 316a Abs. 1 StGB
+  - § 316a Abs. 2 StGB
+  - § 316a Abs. 3 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rd-316a-angriff
+  type: definition
+  front: >-
+    Definiere: Angriff auf Leib, Leben oder Entschlussfreiheit, § 316a StGB
+  back: >-
+    Ein Angriff ist jede feindselige Einwirkung auf Leib, Leben oder die Entschlussfreiheit
+    des Opfers, die sich gegen das Opfer als Fahrzeugführer oder Mitfahrer richtet. Er muss
+    nicht auf einen Erfolg gerichtet sein, wohl aber den Angriffswillen des Täters erkennen
+    lassen. Eine Verletzung ist nicht nötig; es genügt jedes Einwirken, das die Entschlussfreiheit
+    beeinträchtigen soll, z. B. das Vorhalten einer Waffe. Die Entschlussfreiheit wird angegriffen,
+    wenn der Täter versucht, den Willen des Opfers durch Nötigungsmittel zu beeinflussen.
+    Der Angriff liegt zeitlich vor dem beabsichtigten Raub oder der beabsichtigten Erpressung
+    und soll diese vorbereiten oder ermöglichen.
+  norms:
+  - § 316a Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rd-316a-besondere-verhaeltnisse
+  type: streitstand
+  front: >-
+    Streitstand: Wann nutzt der Täter "die besonderen Verhältnisse des Straßenverkehrs" aus?
+  back: >-
+    Die Rspr. des BGH legt das Merkmal restriktiv aus. Der Täter muss gerade die Umstände
+    ausnutzen, die dem Kraftfahrer im Verkehr eine besondere Schutzlosigkeit verleihen: Das
+    Opfer ist durch die Beanspruchung als Fahrer (Konzentration auf Verkehr, Bindung an das
+    Fahrzeug) in der Verteidigungsmöglichkeit eingeschränkt. Es genügt nicht, dass sich der
+    Angriff im Straßenverkehr oder gegen den Fahrer eines Fahrzeugs ereignet; bei ruhendem
+    Fahrzeug fehlt der Zusammenhang, wenn das Opfer in seiner Rolle als Fahrer nicht mehr
+    beeinträchtigt ist. Die Lit. fordert teils noch strengere Begrenzungen wegen der hohen
+    Mindeststrafe und des unklaren Rechtsguts. Ein Angriff während der Fahrt oder beim Halt
+    an einer Ampel kann genügen, wenn das Opfer in der Fahrerrolle bleibt.
+  norms:
+  - § 316a Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rd-316a-konkurrenzen
+  type: definition
+  front: >-
+    Wie ist § 316a StGB von Raub und räuberischer Erpressung abzugrenzen und welche Konkurrenzen
+    gelten?
+  back: >-
+    § 316a StGB tritt als zusätzlicher Tatbestand neben Raub oder räuberische Erpressung,
+    wenn diese begangen werden; die Tat ist ein eigenständiges Delikt, das schon im Vorfeld
+    vollendet ist. Kommt es zum Raub oder zur räuberischen Erpressung, besteht Tateinheit,
+    weil die Angriffshandlung zugleich Nötigungsmittel sein kann. Der Täter muss die besonderen
+    Verhältnisse des Straßenverkehrs erkennen und sich bewusst zunutze machen; bloßes Zusammentreffen
+    von Angriff und Verkehrssituation genügt nicht. Wegen der Strafdrohung (mindestens fünf
+    Jahre) ist die sorgfältige Prüfung der Voraussetzungen, namentlich der Ausnutzung, in
+    der Klausur wichtig.
+  norms:
+  - § 316a StGB
+  - § 249 StGB
+  - § 255 StGB
+  - § 52 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: sr-schema-252
+  title: Räuberischer Diebstahl, § 252 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+  norms:
+  - § 252 StGB
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: 'a) Vortat: vollendeter Diebstahl'
+        hinweis: >-
+          Zuerst den Diebstahl (§ 242 StGB) vollständig prüfen oder inzident feststellen;
+          der Versuch genügt nicht.
+      - label: b) Auf frischer Tat betroffen
+        hinweis: >-
+          Räumlich-zeitlicher Zusammenhang; Wahrnehmung durch einen anderen genügt.
+      - label: >-
+          c) Nötigungsmittel: Gewalt gegen eine Person oder Drohung mit gegenwärtiger Gefahr
+          für Leib oder Leben
+    - label: 2. Subjektiver Tatbestand
+      children:
+      - label: a) Vorsatz
+      - label: >-
+          b) Absicht, sich im Besitz des gestohlenen Gutes zu erhalten
+        hinweis: >-
+          Nur Flucht oder Festnahmevermeidung ohne Beutewillen genügt nicht.
+  - label: II. Rechtswidrigkeit
+  - label: III. Schuld
+  - label: IV. Qualifikationen, §§ 250, 251 StGB
+  - label: V. Konkurrenzen
+    hinweis: >-
+      § 242 StGB und § 252 StGB meist in Tatmehrheit; Körperverletzung in Tateinheit mit §
+      252 StGB.
+- slug: sr-schema-316a
+  title: Räuberischer Angriff auf Kraftfahrer, § 316a StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+  norms:
+  - § 316a Abs. 1 StGB
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: >-
+          a) Opfer: Führer eines Kraftfahrzeugs oder Mitfahrer
+      - label: b) Angriff auf Leib, Leben oder Entschlussfreiheit
+      - label: >-
+          c) Ausnutzung der besonderen Verhältnisse des Straßenverkehrs
+        hinweis: >-
+          Restriktive Rspr.: besondere Schutzlosigkeit gerade als Kraftfahrer; Stillstand
+          allein genügt nicht.
+    - label: 2. Subjektiver Tatbestand
+      children:
+      - label: a) Vorsatz hinsichtlich Angriff und Ausnutzung
+      - label: >-
+          b) Absicht zur Begehung von Raub, räuberischem Diebstahl oder räuberischer Erpressung
+  - label: II. Rechtswidrigkeit
+  - label: III. Schuld
+  - label: 'IV. Strafzumessung: § 316a Abs. 2, 3 StGB'
+    hinweis: Minder schwerer Fall; Todesfolge leichtfertig.
+faelle:
+- slug: sr-fall-rd-kaufhausdetektiv
+  title: Der Kaufhausdetektiv
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: >-
+    A steckt in einem Elektronikmarkt unbemerkt ein Smartphone im Wert von 600 Euro in seine
+    Jackentasche und verlässt das Geschäft, ohne zu bezahlen. Der Kaufhausdetektiv D hat den
+    Vorgang im Markt unmittelbar beobachtet und folgt A. Auf dem Parkplatz vor dem Markt,
+    etwa 30 Meter vom Ausgang entfernt und knapp eine Minute nach dem Verlassen des Geschäfts,
+    hält D den A am Arm fest und fordert ihn auf, das Telefon herauszugeben. A will das Smartphone
+    behalten und der Festnahme entgehen. Er schlägt D mit der Faust ins Gesicht, sodass dieser
+    eine Platzwunde erleidet, und rennt davon.
+  question: >-
+    Hat sich A wegen räuberischen Diebstahls strafbar gemacht?
+  steps:
+  - prompt: Hat A einen Diebstahl begangen?
+    erwartung: >-
+      Ja - A hat das fremde bewegliche Smartphone weggenommen (Bruch fremden und Begründung
+      neuen Gewahrsams) und handelte in Zueignungsabsicht, § 242 Abs. 1 StGB. Der Diebstahl
+      ist vollendet, weil A das Gerät in der Jackentasche hatte und das Geschäft verlassen
+      hat.
+  - prompt: War A auf frischer Tat betroffen?
+    erwartung: >-
+      Ja - D hat A beim Diebstahl beobachtet und trifft ihn wenige Meter hinter dem Ausgang
+      und kurz nach der Tat an. Er wird von D, der die Tat beobachtet hat, in unmittelbarem
+      räumlich-zeitlichen Zusammenhang gestellt; das genügt auch nach der engeren Lit.-Ansicht.
+  - prompt: Hat A Gewalt gegen eine Person angewendet?
+    erwartung: >-
+      Ja - der Faustschlag gegen D ist Gewalt gegen eine Person.
+  - prompt: Handelte A mit der erforderlichen Absicht?
+    erwartung: >-
+      Ja - A wollte das gestohlene Smartphone behalten; die zusätzliche Absicht, der Festnahme
+      zu entgehen, schadet nicht.
+  - prompt: Weitere Delikte und Ergebnis?
+    erwartung: >-
+      A ist wegen räuberischen Diebstahls nach § 252 StGB strafbar, in Tateinheit mit Körperverletzung,
+      § 223 Abs. 1 StGB. Zum Verhältnis zum Diebstahl wird auf die Konkurrenzlehre verwiesen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: 'Vortat: vollendeter Diebstahl, § 242 StGB'
+      weight: 1.5
+      required: true
+      norms:
+      - § 242 StGB
+      keywords:
+      - § 242
+      - Diebstahl vollendet
+      - Wegnahme
+      - Zueignungsabsicht
+      - Diebstahl als Vortat
+      card_slugs:
+      - sr-rd-252-vortat-betreffen
+    - id: p2
+      label: >-
+        Auf frischer Tat betroffen: räumlich-zeitlicher Zusammenhang
+      weight: 2.0
+      required: true
+      norms:
+      - § 252 StGB
+      keywords:
+      - frischer Tat
+      - betroffen
+      - räumlich-zeitlicher Zusammenhang
+      - unmittelbare Nähe
+      - Verfolgung
+      card_slugs:
+      - sr-rd-252-vortat-betreffen
+      - sr-rd-252-betreffen-streit
+    - id: p3
+      label: Gewalt gegen eine Person (Faustschlag)
+      weight: 1.5
+      required: false
+      norms:
+      - § 252 StGB
+      keywords:
+      - Gewalt gegen eine Person
+      - Faustschlag
+      - körperlich wirkender Zwang
+      - Gewalt verübt
+      card_slugs:
+      - sr-rd-252-noetigungsmittel-rechtsfolge
+    - id: p4
+      label: Besitzerhaltungsabsicht
+      weight: 2.5
+      required: true
+      norms:
+      - § 252 StGB
+      keywords:
+      - Besitzerhaltungsabsicht
+      - sich im Besitz zu erhalten
+      - Beute behalten
+      - Besitz des gestohlenen Gutes
+      - Absicht, die Beute zu behalten
+      card_slugs:
+      - sr-rd-252-besitzerhaltung
+    - id: p5
+      label: >-
+        Rechtsfolge: gleich einem Räuber; Konkurrenz mit § 223 StGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 252 StGB
+      - § 223 StGB
+      keywords:
+      - gleich einem Räuber
+      - § 249
+      - Tateinheit
+      - § 223 Abs. 1
+      - Körperverletzung
+      card_slugs:
+      - sr-rd-252-konkurrenzen
+    - id: p6
+      label: 'Ergebnis: § 252 StGB'
+      weight: 1.0
+      required: false
+      norms:
+      - § 252 StGB
+      keywords:
+      - räuberischer Diebstahl nach § 252
+      - strafbar nach § 252
+      - räuberischen Diebstahls gemäß § 252
+      card_slugs:
+      - sr-rd-252-tatbestand

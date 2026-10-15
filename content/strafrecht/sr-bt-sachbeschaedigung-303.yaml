@@ -1,0 +1,394 @@
+topic:
+  slug: sr-bt-sachbeschaedigung-303
+  area: strafrecht
+  title: Sachbeschädigung, §§ 303 ff. StGB
+  parent: sr-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-sachb-grundtatbestand
+  type: norm
+  front: >-
+    Welche Tatbestände enthält § 303 StGB und was ist die Rechtsfolge?
+  back: >-
+    § 303 Abs. 1 StGB bestraft, wer rechtswidrig eine fremde Sache beschädigt oder zerstört.
+    § 303 Abs. 2 StGB erfasst, wer unbefugt das Erscheinungsbild einer fremden Sache nicht
+    nur unerheblich und nicht nur vorübergehend verändert. Beide Absätze sind selbständige
+    Tatbestände, die in der Klausur getrennt zu prüfen sind. Die Strafandrohung lautet Freiheitsstrafe
+    bis zu zwei Jahren oder Geldstrafe. Der Versuch ist nach § 303 Abs. 3 StGB strafbar. Eine
+    fahrlässige Sachbeschädigung ist nicht strafbar; sie ist allein zivilrechtlich relevant
+    (§ 823 Abs. 1 BGB). Die Tat wird grundsätzlich nur auf Strafantrag verfolgt, § 303c StGB.
+  norms:
+  - § 303 Abs. 1 StGB
+  - § 303 Abs. 2 StGB
+  - § 303 Abs. 3 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sachb-fremde-sache
+  type: definition
+  front: 'Definiere: fremde Sache im Sinne des § 303 StGB'
+  back: >-
+    Sache ist jeder körperliche Gegenstand im Sinne des § 90 BGB. Tiere sind nach § 90a BGB
+    keine Sachen, werden aber für das Strafrecht wie Sachen behandelt; auch ihre Verletzung
+    oder Tötung kann daher § 303 StGB erfüllen. Fremd ist eine Sache, die zumindest auch im
+    Eigentum eines anderen steht und nicht herrenlos ist. Maßgeblich ist das zivilrechtliche
+    Eigentum; Miteigentum genügt für die Fremdheit. Eigene Sachen schützt § 303 StGB nicht,
+    auch wenn Dritte daran Nutzungs- oder Sicherungsrechte haben (hier kommen etwa § 289 StGB
+    oder § 136 StGB in Betracht). Herrenlose Sachen (z. B. dereliktierte Gegenstände) sind
+    nicht fremd.
+  norms:
+  - § 303 Abs. 1 StGB
+  - § 90 BGB
+  - § 90a BGB
+  quellen:
+  - StGB, amtliche Fassung
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sachb-beschaedigen
+  type: definition
+  front: >-
+    Definiere: Beschädigen einer Sache, § 303 Abs. 1 StGB
+  back: >-
+    Beschädigen ist jede nicht unerhebliche körperliche Einwirkung auf die Sache, durch die
+    ihre stoffliche Substanz verletzt oder ihre bestimmungsgemäße Brauchbarkeit nicht unerheblich
+    beeinträchtigt wird. Typische Beispiele sind Zerkratzen, Eindellen, Zerschneiden oder
+    Zerbrechen. Die Brauchbarkeitsbeeinträchtigung muss nicht in einer dauerhaften Substanzverletzung
+    bestehen; es genügt, dass die Sache ihre Funktion nicht mehr oder nur eingeschränkt erfüllt
+    und die Wiederherstellung einen nicht nur unerheblichen Aufwand erfordert. Ein ganz geringfügiger
+    oder ohne nennenswerten Aufwand sofort behebbarer Eingriff ist kein Beschädigen.
+  norms:
+  - § 303 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sachb-zerstoeren
+  type: definition
+  front: >-
+    Definiere: Zerstören einer Sache, § 303 Abs. 1 StGB
+  back: >-
+    Zerstören ist die so weitgehende Beeinträchtigung der Sache, dass sie ihre Gebrauchsfähigkeit
+    vollständig verliert oder als Sache in ihrer bisherigen Art nicht mehr existiert. Das
+    Zerstören ist die intensivste Form des Beschädigens; die Unterscheidung hat für die Rechtsfolge
+    im Grundtatbestand keine praktische Bedeutung, weil beide Handlungen gleich bestraft werden.
+    In der Klausur genügt deshalb die Feststellung, dass die Sache "zumindest beschädigt"
+    ist. Beispiele sind das Zertrümmern einer Vase, das Verbrennen eines Buchs oder das Töten
+    eines fremden Tieres. Auch der Verbrauch oder das Vernichten der Substanz fällt hierunter.
+  norms:
+  - § 303 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sachb-brauchbarkeit-streit
+  type: streitstand
+  front: >-
+    Streitstand: Genügt die bloße Beeinträchtigung der Brauchbarkeit ohne Substanzverletzung
+    für das Beschädigen (Beispiel: Luft aus Fahrzeugreifen lassen)?
+  back: >-
+    Eine enge Auffassung verlangt für das Beschädigen eine Substanzverletzung. Die Rspr. und
+    die h. M. in der Lit. lassen dagegen auch eine nicht unerhebliche Beeinträchtigung der
+    bestimmungsgemäßen Brauchbarkeit genügen, weil der Wortlaut "beschädigen" nicht auf den
+    Stoff beschränkt ist und die Sache als Gebrauchsgut geschützt wird. Beim Ablassen der
+    Luft aus einem Reifen wird die Brauchbarkeit zwar vorübergehend aufgehoben, der Zustand
+    ist aber mit wenig Aufwand (Aufpumpen) behebbar. Nach verbreiteter Ansicht fehlt es deshalb
+    an der erforderlichen Erheblichkeit; wer einen größeren Aufwand verlangt (etwa Abschleppen,
+    Reparatur), kommt zu einem anderen Ergebnis. Es kommt auf die Umstände des Einzelfalls
+    an.
+  norms:
+  - § 303 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sachb-erscheinungsbild
+  type: definition
+  front: >-
+    Was setzt § 303 Abs. 2 StGB (Veränderung des Erscheinungsbilds) voraus?
+  back: >-
+    Abs. 2 wurde eingeführt, weil das Besprühen oder Bekleben von Flächen (Graffiti, Plakate)
+    nach der früheren Rspr. nur dann eine Sachbeschädigung war, wenn die Substanz verletzt
+    wurde. Die Vorschrift verlangt eine unbefugte Veränderung des äußeren Erscheinungsbilds,
+    die nicht nur unerheblich und nicht nur vorübergehend ist. Erheblich ist die Veränderung,
+    wenn sie von einem objektiven Betrachter als nachteilig wahrgenommen wird und nicht ganz
+    unwesentlich ist. Nicht nur vorübergehend ist sie, wenn die Beseitigung nur mit nennenswertem
+    Aufwand möglich ist; ein durch Regen abwaschbarer Kreidestrich genügt nicht. "Unbefugt"
+    bedeutet ohne Einverständnis des Berechtigten; ein Einverständnis schließt schon den Tatbestand
+    aus.
+  norms:
+  - § 303 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sachb-datensachb-303a-303b
+  type: norm
+  front: Was regeln §§ 303a und 303b StGB?
+  back: >-
+    § 303a StGB (Datenveränderung) bestraft, wer rechtswidrig Daten im Sinne des § 202a Abs.
+    2 StGB löscht, unterdrückt, unbrauchbar macht oder verändert. Geschützt ist das Verfügungsrecht
+    des Berechtigten über die Daten, nicht das Eigentum am Datenträger. § 303b StGB (Computersabotage)
+    erfasst die erhebliche Störung einer Datenverarbeitung, die für einen anderen von wesentlicher
+    Bedeutung ist, durch eine Tat nach § 303a, durch Eingabe oder Übermittlung von Daten in
+    Nachteilszufügungsabsicht oder durch Zerstören, Beschädigen oder Beseitigen einer Datenverarbeitungsanlage
+    oder eines Datenträgers. Handelt es sich um den Betrieb, das Unternehmen oder die Behörde
+    eines anderen, ist die Strafe nach § 303b Abs. 2 StGB höher; Abs. 4 enthält Regelbeispiele.
+  norms:
+  - § 303a StGB
+  - § 303b StGB
+  - § 202a Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sachb-gemeinschaedlich-305
+  type: norm
+  front: >-
+    Wodurch unterscheiden sich §§ 304 und 305 StGB von § 303 StGB?
+  back: >-
+    § 304 StGB (gemeinschädliche Sachbeschädigung) schützt Gegenstände, die der Allgemeinheit
+    dienen oder öffentlich zugänglich sind, etwa Gegenstände der Verehrung einer Religionsgesellschaft,
+    Grabmäler, öffentliche Denkmäler, Naturdenkmäler, Kunstwerke in öffentlichen Sammlungen
+    oder Sachen, die dem öffentlichen Nutzen oder der Verschönerung dienen. Anders als bei
+    § 303 StGB kommt es nicht auf die Fremdheit der Sache an; auch der Eigentümer kann Täter
+    sein. Die Tat wird von Amts wegen verfolgt. § 305 StGB (Zerstörung von Bauwerken) erfasst
+    die ganze oder teilweise Zerstörung fremder Gebäude, Schiffe, Brücken, Dämme, Straßen
+    oder sonstiger Bauwerke und ist mit höherer Strafe bedroht. Beide Vorschriften sind gegenüber
+    § 303 StGB eigenständige Tatbestände mit eigenem Unrechtsgehalt.
+  norms:
+  - § 304 StGB
+  - § 305 StGB
+  - § 303 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sachb-strafantrag-303c
+  type: norm
+  front: >-
+    Wann ist für die Sachbeschädigung ein Strafantrag nötig, § 303c StGB?
+  back: >-
+    Nach § 303c StGB werden § 303, § 303a Abs. 1 und 2 sowie § 303b Abs. 1 bis 3 StGB nur
+    auf Antrag verfolgt, es sei denn, die Strafverfolgungsbehörde hält wegen des besonderen
+    öffentlichen Interesses an der Strafverfolgung ein Einschreiten von Amts wegen für geboten.
+    Der Strafantrag ist Prozessvoraussetzung, kein Tatbestandsmerkmal. Antragsberechtigt ist
+    der Verletzte (§ 77 StGB), bei der Sachbeschädigung in der Regel der Eigentümer. Die Frist
+    beträgt drei Monate ab Kenntnis von Tat und Täter, § 77b StGB. Ein fehlender Antrag steht
+    der Strafbarkeit nicht entgegen, sondern führt zum Verfahrenshindernis. Die §§ 304 und
+    305 StGB sind Offizialdelikte.
+  norms:
+  - § 303c StGB
+  - § 77 StGB
+  - § 77b StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sachb-konkurrenzen-versuch
+  type: norm
+  front: >-
+    Welche Besonderheiten gelten für Vorsatz, Versuch und Konkurrenzen bei § 303 StGB?
+  back: >-
+    Erforderlich ist Vorsatz (bedingter Vorsatz genügt) hinsichtlich der Fremdheit der Sache
+    und des Beschädigens, Zerstörens oder der Veränderung des Erscheinungsbilds. Ein Irrtum
+    über die Fremdheit ist ein Tatbestandsirrtum nach § 16 Abs. 1 StGB. Der Versuch ist nach
+    § 303 Abs. 3 StGB strafbar. Zur Abgrenzung: Der Diebstahl erfasst die Wegnahme, die Sachbeschädigung
+    die Beeinträchtigung der Substanz oder des Erscheinungsbilds. Wird eine Sache zerstört,
+    um sie zu beseitigen, ohne sie sich zuzueignen, kommt nur § 303 StGB in Betracht. Tateinheit
+    kommt etwa mit § 123 StGB (Hausfriedensbruch) in Betracht, beim Einbruch auch mit den
+    Diebstahlsdelikten; die Einzelheiten der Konkurrenz richten sich nach dem Verhältnis der
+    Taten.
+  norms:
+  - § 303 Abs. 3 StGB
+  - § 16 Abs. 1 StGB
+  - § 123 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: sr-schema-sachb-303
+  title: Sachbeschädigung, § 303 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+  norms:
+  - § 303 Abs. 1 StGB
+  - § 303 Abs. 2 StGB
+  - § 303c StGB
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: 'a) Tatobjekt: fremde Sache'
+        hinweis: >-
+          Tiere werden nach § 90a S. 3 BGB wie Sachen behandelt; Eigentum eines anderen, keine
+          Herrenlosigkeit.
+      - label: >-
+          b) Tathandlung nach Abs. 1: Beschädigen oder Zerstören
+        hinweis: >-
+          Substanzverletzung oder nicht unerhebliche Beeinträchtigung der bestimmungsgemäßen
+          Brauchbarkeit; bei bloßer Verschmutzung ohne Substanzverletzung zusätzlich Abs.
+          2 prüfen.
+      - label: >-
+          c) Alternativ Abs. 2: unbefugte, nicht nur unerhebliche und nicht nur vorübergehende
+          Veränderung des Erscheinungsbilds
+        hinweis: >-
+          Klassiker Graffiti, Plakate; Einverständnis des Berechtigten schließt den Tatbestand
+          aus; kurzzeitig entfernbare Verschmutzung genügt nicht.
+    - label: >-
+        2. Subjektiver Tatbestand: Vorsatz (bedingter Vorsatz genügt)
+  - label: II. Rechtswidrigkeit
+    hinweis: >-
+      Bei Abs. 1 Merkmal im Tatbestand; Rechtfertigungsgründe prüfen, z. B. Notstand (§ 34
+      StGB, § 904 BGB), Notwehr, Einwilligung.
+  - label: III. Schuld
+  - label: IV. Strafantrag, § 303c StGB
+    hinweis: >-
+      Prozessvoraussetzung, nicht Tatbestandsmerkmal; Frist drei Monate, § 77b StGB; Verfolgung
+      von Amts wegen bei besonderem öffentlichen Interesse.
+  - label: V. Ergebnis und Konkurrenzen
+    hinweis: >-
+      Tateinheit mit § 123 StGB möglich; §§ 304, 305 StGB nur bei gesonderten Anhaltspunkten
+      (öffentliche Sachen, Bauwerke).
+faelle:
+- slug: sr-fall-sachb-garagentor
+  title: Das besprühte Garagentor
+  difficulty: 2
+  minutes: 35
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: >-
+    A sprüht nachts mit einer Spraydose in roter Farbe seinen Schriftzug auf das helle Garagentor
+    des Hauseigentümers E. Der Lack des Tors wird nicht angegriffen, die Farbe haftet aber
+    fest. Das Tor lässt sich weiterhin ohne Einschränkungen öffnen und schließen. Ein Fachbetrieb
+    kann den Schriftzug mit Spezialreiniger in mehreren Arbeitsstunden entfernen; die Kosten
+    betragen rund 400 Euro. E erfährt am nächsten Morgen vom Täter und stellt eine Woche später
+    Strafantrag.
+  question: Hat sich A nach § 303 StGB strafbar gemacht?
+  steps:
+  - prompt: Ist das Garagentor eine fremde Sache?
+    erwartung: >-
+      Ja - es ist ein körperlicher Gegenstand im Eigentum des E und damit für A fremd.
+  - prompt: >-
+      Hat A das Tor beschädigt oder zerstört, § 303 Abs. 1 StGB?
+    erwartung: >-
+      Nein - eine Substanzverletzung liegt nicht vor, und auch die Brauchbarkeit ist nicht
+      beeinträchtigt, weil das Tor weiterhin voll funktionsfähig ist. Die bloße Verschmutzung
+      ohne Funktionsbeeinträchtigung genügt für Abs. 1 nicht.
+  - prompt: >-
+      Liegt eine Veränderung des Erscheinungsbilds nach § 303 Abs. 2 StGB vor?
+    erwartung: >-
+      Ja - A hat das Erscheinungsbild unbefugt (ohne Einverständnis des E) verändert. Die
+      Veränderung ist nicht nur unerheblich, weil der Schriftzug deutlich sichtbar ist, und
+      nicht nur vorübergehend, weil die Beseitigung nur mit Spezialreiniger, mehrstündigem
+      Aufwand und Kosten von etwa 400 Euro möglich ist.
+  - prompt: Hat A vorsätzlich gehandelt?
+    erwartung: >-
+      Ja - A wollte den Schriftzug aufbringen und wusste, dass das Tor einem anderen gehört.
+  - prompt: Ist ein Strafantrag erforderlich und gestellt?
+    erwartung: >-
+      Ja - nach § 303c StGB ist ein Strafantrag nötig. E hat ihn innerhalb der Dreimonatsfrist
+      des § 77b StGB gestellt.
+  - prompt: Ergebnis?
+    erwartung: >-
+      A ist wegen Sachbeschädigung nach § 303 Abs. 2 StGB strafbar.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Obersatz § 303 StGB und Prüfung beider Absätze getrennt
+      weight: 1.0
+      required: false
+      norms:
+      - § 303 StGB
+      keywords:
+      - § 303 Abs. 1
+      - § 303 Abs. 2
+      - Sachbeschädigung gemäß § 303
+      card_slugs:
+      - sr-sachb-grundtatbestand
+    - id: p2
+      label: >-
+        Abs. 1 verneint: keine Substanzverletzung und keine Brauchbarkeitsbeeinträchtigung
+      weight: 2.0
+      required: true
+      norms:
+      - § 303 Abs. 1 StGB
+      keywords:
+      - keine Substanzverletzung
+      - Brauchbarkeit nicht beeinträchtigt
+      - Brauchbarkeit
+      - Beschädigen verneint
+      - bestimmungsgemäße Brauchbarkeit
+      card_slugs:
+      - sr-sachb-beschaedigen
+      - sr-sachb-brauchbarkeit-streit
+    - id: p3
+      label: >-
+        Abs. 2 bejaht: Erscheinungsbild verändert, nicht nur unerheblich und nicht nur vorübergehend
+      weight: 3.0
+      required: true
+      norms:
+      - § 303 Abs. 2 StGB
+      keywords:
+      - Erscheinungsbild
+      - nicht nur vorübergehend
+      - nicht nur unerheblich
+      - unbefugt
+      - Graffiti
+      - Beseitigung nur mit Aufwand
+      card_slugs:
+      - sr-sachb-erscheinungsbild
+    - id: p4
+      label: Fremde Sache und Vorsatz
+      weight: 1.0
+      required: false
+      norms:
+      - § 303 StGB
+      - § 15 StGB
+      keywords:
+      - fremde Sache
+      - Eigentum des E
+      - Fremdheit
+      - Vorsatz
+      card_slugs:
+      - sr-sachb-fremde-sache
+      - sr-sachb-konkurrenzen-versuch
+    - id: p5
+      label: Strafantrag, § 303c StGB, Frist § 77b StGB
+      weight: 1.5
+      required: false
+      norms:
+      - § 303c StGB
+      - § 77b StGB
+      keywords:
+      - § 303c
+      - Strafantrag
+      - Antragsdelikt
+      - drei Monate
+      - § 77b
+      card_slugs:
+      - sr-sachb-strafantrag-303c
+    - id: p6
+      label: 'Ergebnis: § 303 Abs. 2 StGB'
+      weight: 1.0
+      required: false
+      norms:
+      - § 303 Abs. 2 StGB
+      keywords:
+      - strafbar gemäß § 303 Abs. 2
+      - Sachbeschädigung nach § 303 Abs. 2
+      - Sachbeschädigung gemäß § 303 Abs. 2
+      card_slugs:
+      - sr-sachb-erscheinungsbild
