@@ -16,9 +16,9 @@ cards:
   type: definition
   front: 'Definiere: Verwaltungsakt, § 35 S. 1 VwVfG'
   back: Ein Verwaltungsakt ist jede Verfügung, Entscheidung oder andere hoheitliche
-    Maßnahme, die eine Behörde zur Regelung eines Einzelfalls auf dem Gebiet des
-    öffentlichen Rechts trifft und die auf unmittelbare Rechtswirkung nach außen
-    gerichtet ist. Diese fünf Merkmale müssen kumulativ vorliegen.
+    Maßnahme, die eine Behörde zur Regelung eines Einzelfalls auf dem Gebiet des öffentlichen
+    Rechts trifft und die auf unmittelbare Rechtswirkung nach außen gerichtet ist.
+    Diese fünf Merkmale müssen kumulativ vorliegen.
   norms:
   - § 35 VwVfG
   quellen:
@@ -28,7 +28,7 @@ cards:
 - slug: or-vwvfg-va-hoheitliche-massnahme
   type: definition
   front: Wann handelt eine Behörde 'hoheitlich' i.S.d. § 35 VwVfG?
-  back: Hoheitlich handelt eine Behörde, wenn sie einseitig kraft oeffentlich-rechtlicher
+  back: Hoheitlich handelt eine Behörde, wenn sie einseitig kraft öffentlich-rechtlicher
     Befugnis auftritt - im Unterschied zum Handeln in Formen des Privatrechts (etwa
     beim fiskalischen Hilfsgeschäft) oder zu schlicht tatsächlichem Verwaltungshandeln
     ohne Regelungsanspruch. Die Behörde muss dem Bürger in einem Über-/Unterordnungsverhältnis
@@ -43,9 +43,9 @@ cards:
   front: 'Definiere: ''Regelung'' i.S.d. § 35 VwVfG und grenze sie vom Realakt ab'
   back: Eine Regelung liegt vor, wenn die Maßnahme auf die Setzung einer verbindlichen
     Rechtsfolge gerichtet ist - Begründung, Änderung, Aufhebung oder verbindliche
-    Feststellung eines Rechtsverhältnisses. Daran fehlt es beim Realakt, der nur
-    eine tatsächliche Wirkung entfaltet, ohne selbst eine Rechtsfolge auszusprechen
-    (z. B. die tatsächliche Durchführung einer angeordneten Maßnahme, eine unverbindliche
+    Feststellung eines Rechtsverhältnisses. Daran fehlt es beim Realakt, der nur eine
+    tatsächliche Wirkung entfaltet, ohne selbst eine Rechtsfolge auszusprechen (z.
+    B. die tatsächliche Durchführung einer angeordneten Maßnahme, eine unverbindliche
     Auskunft oder ein bloßer Hinweis).
   norms:
   - § 35 VwVfG
@@ -57,7 +57,7 @@ cards:
   front: Was ist eine Allgemeinverfügung, § 35 S. 2 VwVfG?
   back: Die Allgemeinverfügung ist ein Verwaltungsakt, der sich an einen nach allgemeinen
     Merkmalen bestimmten oder bestimmbaren Personenkreis richtet (personenbezogene
-    Allgemeinverfügung) oder die oeffentlich-rechtliche Eigenschaft einer Sache oder
+    Allgemeinverfügung) oder die öffentlich-rechtliche Eigenschaft einer Sache oder
     ihre Benutzung durch die Allgemeinheit betrifft (sachbezogene Allgemeinverfügung).
     Sie ist trotz der Vielzahl Betroffener weiterhin ein Einzelfall i.S.d. § 35 S.
     1 VwVfG, keine abstrakt-generelle Regelung wie eine Rechtsnorm.
@@ -73,10 +73,9 @@ cards:
   back: Außenwirkung fehlt bei rein verwaltungsinternen Maßnahmen, die sich innerhalb
     eines Über-/Unterordnungsverhältnisses derselben Verwaltungsorganisation erschöpfen
     und keinen Außenstehenden unmittelbar in eigenen Rechten betreffen - etwa Weisungen
-    an nachgeordnete Behörden oder Dienstanweisungen an Beamte in ihrer Funktion
-    als Amtsträger. Betrifft die Maßnahme den Beamten hingegen in seiner Rechtsstellung
-    als Grundrechtsträger (z. B. eine Disziplinarmaßnahme), liegt Außenwirkung
-    vor.
+    an nachgeordnete Behörden oder Dienstanweisungen an Beamte in ihrer Funktion als
+    Amtsträger. Betrifft die Maßnahme den Beamten hingegen in seiner Rechtsstellung
+    als Grundrechtsträger (z. B. eine Disziplinarmaßnahme), liegt Außenwirkung vor.
   norms:
   - § 35 VwVfG
   quellen:
@@ -87,10 +86,14 @@ cards:
   front: Wann ist ein Verwaltungsakt nichtig, § 44 Abs. 1 VwVfG?
   back: Ein Verwaltungsakt ist nichtig, soweit er an einem besonders schwerwiegenden
     Fehler leidet und dies bei verständiger Würdigung aller in Betracht kommenden
-    Umstände offensichtlich ist, § 44 Abs. 1 VwVfG. § 44 Abs. 2 VwVfG nennt hierzu
-    nicht abschließende Regelbeispiele (z. B. schriftlicher Erlass ohne erkennbare
-    erlassende Behörde, Verstoß gegen die guten Sitten), § 44 Abs. 3 VwVfG Gegenbeispiele,
-    die für sich allein die Nichtigkeit gerade nicht begründen.
+    Umstände offensichtlich ist, § 44 Abs. 1 VwVfG. § 44 Abs. 2 VwVfG zählt abschließend
+    Fälle auf, in denen ein Verwaltungsakt ohne Rücksicht auf die Voraussetzungen
+    des Absatzes 1 stets nichtig ist (z. B. schriftlicher oder elektronischer Erlass,
+    bei dem die erlassende Behörde nicht erkennbar ist, Nr. 1; Verstoß gegen die guten
+    Sitten, Nr. 6); in anderen Fällen kann die Nichtigkeit nur über die Generalklausel
+    des Absatzes 1 begründet werden. § 44 Abs. 3 VwVfG nennt Fälle, die für sich allein
+    die Nichtigkeit gerade nicht begründen (z. B. Verstöße gegen Vorschriften über
+    die örtliche Zuständigkeit).
   norms:
   - § 44 Abs. 1 VwVfG
   - § 44 Abs. 2 VwVfG
@@ -150,25 +153,25 @@ faelle:
   facts: Die zuständige Katasterbehörde ordnet gegenüber dem Grundstückseigentümer
     E schriftlich an, dass er die Betretung seines Grundstücks durch Vermessungspersonal
     am 15. des Monats zur Durchführung einer Grenzvermessung zu dulden habe (Duldungsverfügung),
-    gestützt auf eine gesetzliche Ermächtigung. E meint, hierbei handele es sich
-    lediglich um die Ankündigung eines rein tatsächlichen Vorgangs, gegen den er
-    sich nicht gesondert zur Wehr setzen könne.
+    gestützt auf eine gesetzliche Ermächtigung. E meint, hierbei handele es sich lediglich
+    um die Ankündigung eines rein tatsächlichen Vorgangs, gegen den er sich nicht
+    gesondert zur Wehr setzen könne.
   question: Ist die Duldungsverfügung ein Verwaltungsakt i.S.d. § 35 VwVfG?
   steps:
   - prompt: Liegt eine hoheitliche Maßnahme einer Behörde vor?
-    erwartung: Ja - die Katasterbehörde ist Behörde i.S.d. § 1 Abs. 4 VwVfG und
-      handelt einseitig kraft oeffentlich-rechtlicher Befugnis.
+    erwartung: Ja - die Katasterbehörde ist Behörde i.S.d. § 1 Abs. 4 VwVfG und handelt
+      einseitig kraft öffentlich-rechtlicher Befugnis.
   - prompt: Liegt eine Regelung vor, oder handelt es sich nur um einen Realakt?
     erwartung: Die Duldungsverfügung selbst ist eine Regelung, da sie verbindlich
-      eine Duldungspflicht des E begründet. Die spätere tatsächliche Vermessung
-      dagegen ist ein Realakt ohne eigenen Regelungscharakter.
+      eine Duldungspflicht des E begründet. Die spätere tatsächliche Vermessung dagegen
+      ist ein Realakt ohne eigenen Regelungscharakter.
   - prompt: Liegt ein Einzelfall vor?
     erwartung: Ja - die Anordnung richtet sich an den individuell bestimmten E hinsichtlich
       eines konkreten Grundstücks.
   - prompt: Liegt Außenwirkung vor?
     erwartung: Ja - E ist als Grundstückseigentümer ein der Verwaltung nicht eingegliederter
-      Außenstehender, der unmittelbar in seiner Rechtsstellung (Duldungspflicht)
-      betroffen wird.
+      Außenstehender, der unmittelbar in seiner Rechtsstellung (Duldungspflicht) betroffen
+      wird.
   expectation:
     pruefpunkte:
     - id: p1
@@ -176,8 +179,11 @@ faelle:
       weight: 1.5
       required: false
       keywords:
-      - Behörde
+      - hoheitliche Maßnahme
       - hoheitlich
+      - § 1 Abs. 4 VwVfG
+      - Katasterbehörde
+      - öffentlich-rechtliche Befugnis
       card_slugs:
       - or-vwvfg-va-hoheitliche-massnahme
     - id: p2
@@ -188,9 +194,7 @@ faelle:
       norms:
       - § 35 VwVfG
       keywords:
-      - Regelung
-      - Realakt
-      - Rechtsfolge
+      - Duldungspflicht
       card_slugs:
       - or-vwvfg-va-regelung-abgrenzung-realakt
     - id: p3
@@ -198,7 +202,9 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - Einzelfall
+      - individuell bestimmt
+      - konkretes Grundstück
+      - individuell-konkret
       card_slugs:
       - or-vwvfg-va-einzelfall-allgemeinverfuegung
     - id: p4
@@ -208,6 +214,8 @@ faelle:
       keywords:
       - Außenwirkung
       - Außenstehender
+      - nicht eingegliedert
+      - Grundstückseigentümer
       card_slugs:
       - or-vwvfg-va-aussenwirkung
     - id: p5
@@ -217,8 +225,9 @@ faelle:
       norms:
       - § 35 VwVfG
       keywords:
-      - Verwaltungsakt
-      - § 35
-
+      - Verwaltungsakt im Sinne des § 35
+      - Verwaltungsakt i.S.d. § 35
+      - § 35 S. 1 VwVfG
+      - Duldungsverfügung ist ein Verwaltungsakt
       card_slugs:
       - or-vwvfg-va-begriff

@@ -31,9 +31,9 @@ cards:
   front: Nenne die Ausnahmen vom Suspensiveffekt nach § 80 Abs. 2 VwGO
   back: Die aufschiebende Wirkung entfällt bei (1) der Anforderung von öffentlichen
     Abgaben und Kosten, (2) unaufschiebbaren Anordnungen und Maßnahmen von Polizeivollzugsbeamten,
-    (3) sonstigen bundes- oder landesrechtlich angeordneten Fällen sowie (4) der
-    behördlichen Anordnung der sofortigen Vollziehung im öffentlichen Interesse
-    oder im überwiegenden Interesse eines Beteiligten.
+    (3) sonstigen bundes- oder landesrechtlich angeordneten Fällen sowie (4) der behördlichen
+    Anordnung der sofortigen Vollziehung im öffentlichen Interesse oder im überwiegenden
+    Interesse eines Beteiligten.
   norms:
   - § 80 Abs. 2 VwGO
   quellen:
@@ -78,8 +78,8 @@ cards:
     Abs. 5 VwGO?
   back: 'Das Gericht trifft eine eigene Ermessensentscheidung aufgrund einer Interessenabwägung
     zwischen dem Vollzugsinteresse und dem Aussetzungsinteresse des Antragstellers.
-    Maßgeblich orientiert sich diese Abwägung an den nach summarischer Prüfung
-    erkennbaren Erfolgsaussichten der Hauptsache: Sind ernstliche Zweifel an der Rechtmäßigkeit
+    Maßgeblich orientiert sich diese Abwägung an den nach summarischer Prüfung erkennbaren
+    Erfolgsaussichten der Hauptsache: Sind ernstliche Zweifel an der Rechtmäßigkeit
     des Verwaltungsakts erkennbar oder ist er offensichtlich rechtswidrig, überwiegt
     regelmäßig das Aussetzungsinteresse; ist er offensichtlich rechtmäßig, überwiegt
     regelmäßig das Vollzugsinteresse.'
@@ -126,12 +126,12 @@ schemata:
         Sofortvollzugsanordnung, § 80 Abs. 2 Nr. 4 VwGO
   - label: III. Antragsbefugnis, § 42 Abs. 2 VwGO analog
   - label: IV. Ordnungsgemäße Antragstellung, allgemeines Rechtsschutzbedürfnis
-    hinweis: Bei Var. 2 regelmäßig vorheriger erfolgloser Antrag auf Aussetzung
-      bei der Behörde, § 80 Abs. 6 VwGO (bei Abgaben/Kosten).
+    hinweis: Bei Var. 2 regelmäßig vorheriger erfolgloser Antrag auf Aussetzung bei
+      der Behörde, § 80 Abs. 6 VwGO (bei Abgaben/Kosten).
   - label: V. Begründetheit
     children:
-    - label: 1. Formelle Rechtmäßigkeit der Vollziehungsanordnung, insbesondere
-        Begründung nach § 80 Abs. 3 VwGO
+    - label: 1. Formelle Rechtmäßigkeit der Vollziehungsanordnung, insbesondere Begründung
+        nach § 80 Abs. 3 VwGO
     - label: 2. Interessenabwägung anhand der Erfolgsaussichten der Hauptsache
   - label: VI. Ergebnis
 faelle:
@@ -142,12 +142,12 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - VwGO, amtliche Fassung
-  facts: Die zuständige Behörde untersagt dem G die Ausübung seines Gewerbes und
-    ordnet zugleich die sofortige Vollziehung an. Zur Begründung der Vollziehungsanordnung
+  facts: Die zuständige Behörde untersagt dem G die Ausübung seines Gewerbes und ordnet
+    zugleich die sofortige Vollziehung an. Zur Begründung der Vollziehungsanordnung
     führt sie lediglich aus, "die sofortige Vollziehung liegt im öffentlichen Interesse",
     ohne auf die konkreten Umstände des Falles einzugehen. G legt fristgerecht Widerspruch
-    ein und möchte vorläufigen Rechtsschutz erlangen, bevor über den Widerspruch
-    entschieden ist.
+    ein und möchte vorläufigen Rechtsschutz erlangen, bevor über den Widerspruch entschieden
+    ist.
   question: Welcher Antrag ist statthaft, und hat er Aussicht auf Erfolg?
   steps:
   - prompt: Welcher Antrag ist statthaft?
@@ -160,8 +160,8 @@ faelle:
   - prompt: Genügt die Begründung der Vollziehungsanordnung den Anforderungen des
       § 80 Abs. 3 VwGO?
     erwartung: Nein - die Formel 'liegt im öffentlichen Interesse' ist eine floskelhafte
-      Wendung ohne Bezug zu den konkreten Umständen des Falles und erfüllt nicht
-      die Anforderungen an eine einzelfallbezogene Begründung.
+      Wendung ohne Bezug zu den konkreten Umständen des Falles und erfüllt nicht die
+      Anforderungen an eine einzelfallbezogene Begründung.
   - prompt: Wie wirkt sich der Begründungsmangel auf den Erfolg des Antrags aus?
     erwartung: Die Vollziehungsanordnung ist formell rechtswidrig; unabhängig von
       der materiellen Rechtmäßigkeit der Gewerbeuntersagung selbst überwiegt deshalb
@@ -177,9 +177,9 @@ faelle:
       norms:
       - § 80 Abs. 5 VwGO
       keywords:
-      - Wiederherstellung
-      - Var. 2
-      - § 80 Abs. 5
+      - Wiederherstellung der aufschiebenden Wirkung
+      - § 80 Abs. 5 S. 1 Var. 2 VwGO
+      - § 80 Abs. 5 VwGO
       card_slugs:
       - or-vwgo-vrs-anordnung-vs-wiederherstellung
     - id: p2
@@ -189,21 +189,24 @@ faelle:
       norms:
       - § 80 Abs. 2 VwGO
       keywords:
-      - § 80 Abs. 2 Nr. 4
-      - behördliche Anordnung
+      - § 80 Abs. 2 S. 1 Nr. 4 VwGO
+      - § 80 Abs. 2 Nr. 4 VwGO
+      - behördlich angeordnete sofortige Vollziehung
+      - Anordnung der sofortigen Vollziehung
       card_slugs:
       - or-vwgo-vrs-ausnahmen-80-abs2
     - id: p3
-      label: Begründungsmangel nach § 80 Abs. 3 VwGO erkannt und als floskelhaft
-        qualifiziert
+      label: Begründungsmangel nach § 80 Abs. 3 VwGO erkannt und als floskelhaft qualifiziert
       weight: 3.0
       required: true
       norms:
       - § 80 Abs. 3 VwGO
       keywords:
-      - Begründung
+      - § 80 Abs. 3 VwGO
       - floskelhaft
-      - Einzelfall
+      - formelhafte Begründung
+      - Begründung des besonderen Vollzugsinteresses
+      - einzelfallbezogen
       card_slugs:
       - or-vwgo-vrs-begruendungspflicht-sofortvollzug
     - id: p4
@@ -211,14 +214,19 @@ faelle:
       weight: 1.0
       required: false
       keywords:
+      - antragsbefugt
       - Antragsbefugnis
+      - § 42 Abs. 2 VwGO analog
+      - Adressat der Gewerbeuntersagung
     - id: p5
       label: 'Ergebnis: Antrag begründet, aufschiebende Wirkung wird wiederhergestellt'
       weight: 1.5
       required: false
       keywords:
-      - begründet
-      - wiederhergestellt
-
+      - aufschiebende Wirkung wird wiederhergestellt
+      - aufschiebende Wirkung wiederhergestellt
+      - Antrag ist begründet
+      - Vollziehungsanordnung ist formell rechtswidrig
+      - Aussetzungsinteresse überwiegt
       card_slugs:
       - or-vwgo-vrs-pruefungsmassstab

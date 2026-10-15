@@ -18,8 +18,8 @@ cards:
   back: Ermessen ist der auf der Rechtsfolgenseite einer Norm eröffnete Entscheidungsspielraum
     der Verwaltung, erkennbar an Formulierungen wie 'kann' oder 'darf'. Man unterscheidet
     Entschließungsermessen (Ob des Handelns) und Auswahlermessen (Wie des Handelns,
-    insbesondere bei mehreren zulässigen Maßnahmen). Die Ermessensermächtigung
-    ist nach § 40 VwVfG entsprechend dem Zweck der Ermächtigung auszuüben; die gesetzlichen
+    insbesondere bei mehreren zulässigen Maßnahmen). Die Ermessensermächtigung ist
+    nach § 40 VwVfG entsprechend dem Zweck der Ermächtigung auszuüben; die gesetzlichen
     Grenzen des Ermessens sind einzuhalten.
   norms:
   - § 40 VwVfG
@@ -30,14 +30,14 @@ cards:
 - slug: or-vwvfg-ermessensfehler-arten
   type: definition
   front: Nenne die vier klassischen Arten von Ermessensfehlern
-  back: '(1) Ermessensausfall: Die Behörde verkennt, dass ihr überhaupt Ermessen
-    zusteht, und trifft eine gebundene Entscheidung. (2) Ermessensüberschreitung:
-    Die gewählte Rechtsfolge liegt außerhalb des gesetzlich eröffneten Rahmens.
-    (3) Ermessensfehlgebrauch: Die Behörde übt das Ermessen zwar aus, stützt sich
-    dabei aber auf sachfremde Erwägungen oder verstößt gegen den Zweck der Ermächtigung,
-    gegen Grundrechte, den Gleichheitssatz oder den Verhältnismäßigkeitsgrundsatz.
-    (4) Ermessensunterschreitung (Ermessensdefizit): Die Behörde erkennt zwar ihr
-    Ermessen, ermittelt aber nicht alle abwägungsrelevanten Gesichtspunkte.'
+  back: '(1) Ermessensausfall: Die Behörde verkennt, dass ihr überhaupt Ermessen zusteht,
+    und trifft eine gebundene Entscheidung. (2) Ermessensüberschreitung: Die gewählte
+    Rechtsfolge liegt außerhalb des gesetzlich eröffneten Rahmens. (3) Ermessensfehlgebrauch:
+    Die Behörde übt das Ermessen zwar aus, stützt sich dabei aber auf sachfremde Erwägungen
+    oder verstößt gegen den Zweck der Ermächtigung, gegen Grundrechte, den Gleichheitssatz
+    oder den Verhältnismäßigkeitsgrundsatz. (4) Ermessensunterschreitung (Ermessensdefizit):
+    Die Behörde erkennt zwar ihr Ermessen, ermittelt aber nicht alle abwägungsrelevanten
+    Gesichtspunkte.'
   norms:
   - § 40 VwVfG
   quellen:
@@ -48,11 +48,11 @@ cards:
   front: In welchem Umfang kontrollieren Gerichte Ermessensentscheidungen, § 114 S.
     1 VwGO?
   back: Das Gericht prüft nach § 114 S. 1 VwGO nur, ob der Verwaltungsakt rechtswidrig
-    ist, weil die gesetzlichen Grenzen des Ermessens überschritten sind oder von
-    dem Ermessen in einer dem Zweck der Ermächtigung nicht entsprechenden Weise Gebrauch
-    gemacht wurde. Eine eigene Zweckmäßigkeitsentscheidung an Stelle der Behörde
-    trifft das Gericht nicht - es kontrolliert nur Ermessensfehler, übt das Ermessen
-    aber nicht selbst aus.
+    ist, weil die gesetzlichen Grenzen des Ermessens überschritten sind oder von dem
+    Ermessen in einer dem Zweck der Ermächtigung nicht entsprechenden Weise Gebrauch
+    gemacht wurde. Eine eigene Zweckmäßigkeitsentscheidung an Stelle der Behörde trifft
+    das Gericht nicht - es kontrolliert nur Ermessensfehler, übt das Ermessen aber
+    nicht selbst aus.
   norms:
   - § 114 VwGO
   quellen:
@@ -95,12 +95,12 @@ cards:
     Kontrollmaßstab
   back: Anerkannt sind u. a. prüfungsähnliche Entscheidungen (z. B. Examensbewertungen),
     Entscheidungen weisungsfreier, pluralistisch zusammengesetzter Gremien (z. B.
-    Prüfungsausschüsse) sowie bestimmte Prognose- und Risiköntscheidungen in hochkomplexen
+    Prüfungsausschüsse) sowie bestimmte Prognose- und Risikoentscheidungen in hochkomplexen
     fachlichen Zusammenhängen. Die gerichtliche Kontrolle beschränkt sich dann darauf,
-    ob die Behörde ein ordnungsgemäßes Verfahren eingehalten, den anzuwendenden
-    Rechtsbegriff nicht verkannt, keine sachfremden Erwägungen angestellt und allgemein
-    gültige Bewertungsmaßstäbe beachtet hat (Beurteilungsfehler) - nicht, ob die
-    Entscheidung inhaltlich 'richtig' ist.
+    ob die Behörde ein ordnungsgemäßes Verfahren eingehalten, den anzuwendenden Rechtsbegriff
+    nicht verkannt, keine sachfremden Erwägungen angestellt und allgemein gültige
+    Bewertungsmaßstäbe beachtet hat (Beurteilungsfehler) - nicht, ob die Entscheidung
+    inhaltlich 'richtig' ist.
   norms:
   - Art. 19 Abs. 4 GG
   - § 114 VwGO
@@ -144,20 +144,19 @@ faelle:
     bestätigt akute Einsturzgefahr binnen weniger Tage. Nach der einschlägigen (fiktiven)
     Ermächtigungsnorm ist die zuständige Bauaufsichtsbehörde befugt, "die zur Abwehr
     der Gefahr erforderlichen Maßnahmen zu treffen". Trotz mehrfacher Hinweise lehnt
-    die Behörde ein Einschreiten ab und begründet dies damit, sie habe "aktuell
-    keine personellen Kapazitäten". Der täglich die Fußgängerzone passierende
-    Nachbar N verlangt behördliches Einschreiten.
+    die Behörde ein Einschreiten ab und begründet dies damit, sie habe "aktuell keine
+    personellen Kapazitäten". Der täglich die Fußgängerzone passierende Nachbar N
+    verlangt behördliches Einschreiten.
   question: Ist die Ablehnung des Einschreitens ermessensfehlerfrei?
   steps:
   - prompt: Räumt die Ermächtigungsnorm der Behörde Ermessen ein?
     erwartung: Ja - die Formulierung 'ist befugt, die erforderlichen Maßnahmen zu
       treffen' eröffnet Entschließungsermessen (Ob des Einschreitens).
   - prompt: Ist das Ermessen im vorliegenden Fall eingeschränkt?
-    erwartung: 'Ja - angesichts der akuten Gefahr für Leben und Gesundheit einer
-      unbestimmten Vielzahl von Passanten ist das Entschließungsermessen auf Null
-      reduziert: Jede andere Entscheidung als ein Einschreiten wäre ermessensfehlerhaft.'
-  - prompt: Ist die Berufung auf fehlende personelle Kapazitäten eine tragfähige
-      Erwägung?
+    erwartung: 'Ja - angesichts der akuten Gefahr für Leben und Gesundheit einer unbestimmten
+      Vielzahl von Passanten ist das Entschließungsermessen auf Null reduziert: Jede
+      andere Entscheidung als ein Einschreiten wäre ermessensfehlerhaft.'
+  - prompt: Ist die Berufung auf fehlende personelle Kapazitäten eine tragfähige Erwägung?
     erwartung: Nein - organisatorische Kapazitätsengpässe sind gegenüber der akuten
       Gefahr für Leib und Leben eine sachfremde Erwägung und vermögen die gebotene
       Maßnahme nicht zurückzustellen; es liegt ein Ermessensfehlgebrauch vor.
@@ -171,8 +170,10 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - Ermessen
       - Entschließungsermessen
+      - Ob des Einschreitens
+      - ist befugt
+      - Ermessen eingeräumt
       card_slugs:
       - or-vwvfg-ermessen-begriff
     - id: p2
@@ -184,8 +185,10 @@ faelle:
       - § 40 VwVfG
       keywords:
       - Ermessensreduzierung auf Null
-      - Gefahr
+      - Ermessen auf Null reduziert
+      - akute Gefahr
       - Leib und Leben
+      - Leben und Gesundheit
       card_slugs:
       - or-vwvfg-ermessensreduzierung-null
     - id: p3
@@ -194,9 +197,11 @@ faelle:
       weight: 2.5
       required: true
       keywords:
+      - sachfremde Erwägung
       - sachfremd
       - Ermessensfehlgebrauch
-      - Kapazitäten
+      - fehlende personelle Kapazitäten
+      - Kapazitätsengpässe
       card_slugs:
       - or-vwvfg-ermessensfehler-arten
     - id: p4
@@ -204,8 +209,9 @@ faelle:
       weight: 1.5
       required: true
       keywords:
-      - Anspruch
-      - Einschreiten
-
+      - Anspruch auf behördliches Einschreiten
+      - Anspruch auf Einschreiten
+      - Anspruch des N
+      - Ablehnung ist ermessensfehlerhaft
       card_slugs:
       - or-vwvfg-ermessensreduzierung-null

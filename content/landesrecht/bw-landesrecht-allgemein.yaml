@@ -1,7 +1,7 @@
 topic:
   slug: bw-landesrecht-allgemein
   area: oeffentliches-recht
-  title: 'Landesrecht Baden-Wuerttemberg: Verfassung, Verwaltungsverfahren, Kommunal- und Baurecht'
+  title: 'Landesrecht Baden-Württemberg: Verfassung, Verwaltungsverfahren, Kommunal- und Baurecht'
   parent: or-vwvfg-verwaltungsakt
   bundesland: BW
   relevance: 4
@@ -13,9 +13,9 @@ topic:
 cards:
 - slug: bw-lra-vwvfg
   type: norm
-  front: Welches Verwaltungsverfahrensgesetz gilt fuer Landesbehoerden in Baden-Wuerttemberg?
-  back: Landesverwaltungsverfahrensgesetz (LVwVfG) - Vollgesetz. Das VwVfG des Bundes gilt nur fuer Bundesbehoerden
-    (§ 1 VwVfG); fuer Landes- und Kommunalbehoerden ist das Landesgesetz massgeblich. Bei Verweisungsgesetzen
+  front: Welches Verwaltungsverfahrensgesetz gilt für Landesbehörden in Baden-Württemberg?
+  back: Landesverwaltungsverfahrensgesetz (LVwVfG) - Vollgesetz. Das VwVfG des Bundes gilt nur für Bundesbehörden
+    (§ 1 VwVfG); für Landes- und Kommunalbehörden ist das Landesgesetz maßgeblich. Bei Verweisungsgesetzen
     werden die Bundesnormen 'entsprechend' angewendet und sind so zu zitieren (z. B. '§ 35 VwVfG i. V.
     m. § 1 des Landesgesetzes'), bei Vollgesetzen ist die Landesnorm selbst zu zitieren.
   norms:
@@ -26,39 +26,39 @@ cards:
   stand: 2026-09
 - slug: bw-lra-verfassungsgericht
   type: norm
-  front: Gibt es in Baden-Wuerttemberg eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
-  back: 'Ja - § 55 VerfGHG (seit 2013). Zustaendiges Gericht: Verfassungsgerichtshof fuer das Land Baden-Wuerttemberg
-    auf Grundlage der Verfassung des Landes Baden-Wuerttemberg (LV BW). Verfahrensgegenstand ist nur die
-    Verletzung von Landesgrundrechten durch Landesstaatsgewalt; Bundesrecht ist Pruefungsmassstab nur,
-    soweit die Landesverfassung darauf verweist. Daneben steht immer die Verfassungsbeschwerde zum BVerfG
-    (Art. 93 Abs. 1 Nr. 4a GG).'
+  front: Gibt es in Baden-Württemberg eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
+  back: 'Ja - § 55 VerfGHG (seit 2013). Zuständiges Gericht: Verfassungsgerichtshof für das Land Baden-Württemberg
+    auf Grundlage der Verfassung des Landes Baden-Württemberg (LV BW). Verfahrensgegenstand ist nur die
+    Verletzung von Landesgrundrechten durch Landesstaatsgewalt; Bundesrecht ist Prüfungsmaßstab nur, soweit
+    die Landesverfassung darauf verweist. Daneben steht immer die Verfassungsbeschwerde zum BVerfG (Art.
+    93 Abs. 1 Nr. 4a GG).'
   norms:
-  - Verfassung des Landes Baden-Wuerttemberg (LV BW)
+  - Verfassung des Landes Baden-Württemberg (LV BW)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: bw-lra-kommunalverfassung
   type: norm
-  front: Welches Gesetz regelt die Kommunalverfassung in Baden-Wuerttemberg und welche Hauptorgane hat
+  front: Welches Gesetz regelt die Kommunalverfassung in Baden-Württemberg und welche Hauptorgane hat
     die Gemeinde?
-  back: 'Gemeindeordnung (GemO BW): Gemeinderat (§ 24) und Buergermeister (§ 42). Grundlage ist die Selbstverwaltungsgarantie
+  back: 'Gemeindeordnung (GemO BW): Gemeinderat (§ 24) und Bürgermeister (§ 42). Grundlage ist die Selbstverwaltungsgarantie
     (Art. 28 Abs. 2 GG und Landesverfassung): eigenverantwortliche Regelung aller Angelegenheiten der
-    oertlichen Gemeinschaft. Klausurklassiker: Zustaendigkeitsstreit zwischen Vertretung und Verwaltungsspitze,
+    örtlichen Gemeinschaft. Klausurklassiker: Zuständigkeitsstreit zwischen Vertretung und Verwaltungsspitze,
     Kommunalverfassungsstreit, Rechtsaufsicht.'
   norms:
-  - 'Gemeindeordnung (GemO BW): Gemeinderat (§ 24) und Buergermeister (§ 42)'
+  - 'Gemeindeordnung (GemO BW): Gemeinderat (§ 24) und Bürgermeister (§ 42)'
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: bw-lra-bauordnung
   type: norm
-  front: Wie heisst die Bauordnung in Baden-Wuerttemberg und wie ist eine Baugenehmigung zu pruefen?
-  back: 'Landesbauordnung (LBO BW). Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben keine oeffentlich-rechtlichen
-    Vorschriften entgegenstehen: Genehmigungs-beduerftigkeit (Errichtung, Aenderung, Nutzungsaenderung),
-    keine Genehmigungsfreiheit, bauplanungsrechtliche Zulaessigkeit nach §§ 29 ff. BauGB (Bundesrecht),
-    bauordnungsrechtliche Zulaessigkeit nach der Landesbauordnung (Abstandsflaechen, Gestaltung, Stellplaetze).'
+  front: Wie heißt die Bauordnung in Baden-Württemberg und wie ist eine Baugenehmigung zu prüfen?
+  back: 'Landesbauordnung (LBO BW). Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben keine öffentlich-rechtlichen
+    Vorschriften entgegenstehen: Genehmigungsbedürftigkeit (Errichtung, Änderung, Nutzungsänderung), keine
+    Genehmigungsfreiheit, bauplanungsrechtliche Zulässigkeit nach §§ 29 ff. BauGB (Bundesrecht), bauordnungsrechtliche
+    Zulässigkeit nach der Landesbauordnung (Abstandsflächen, Gestaltung, Stellplätze).'
   norms:
   - Landesbauordnung (LBO BW)
   - §§ 29 ff. BauGB
@@ -68,11 +68,10 @@ cards:
   stand: 2026-09
 - slug: bw-lra-pflichtstoff
   type: definition
-  front: Welche Landesrechtsgebiete gehoeren in Baden-Wuerttemberg zum Pflichtstoff des Oeffentlichen
-    Rechts?
+  front: Welche Landesrechtsgebiete gehören in Baden-Württemberg zum Pflichtstoff des Öffentlichen Rechts?
   back: Polizeirecht (PolG BW); Kommunalrecht (GemO BW); Bauordnungsrecht (LBO BW); Landesverfassungsrecht.
     Landesrecht wird im Examen fast nie isoliert, sondern eingebettet in eine verwaltungsprozessuale Einkleidung
-    (Anfechtungs-/Verpflichtungsklage, vorlaeufiger Rechtsschutz) geprueft - die Landesnorm ist die Ermaechtigungsgrundlage,
+    (Anfechtungs-/Verpflichtungsklage, vorläufiger Rechtsschutz) geprüft - die Landesnorm ist die Ermächtigungsgrundlage,
     der Aufbau bleibt der allgemeine.
   norms: []
   quellen:

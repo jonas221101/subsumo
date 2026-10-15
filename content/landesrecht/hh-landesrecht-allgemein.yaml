@@ -13,9 +13,9 @@ topic:
 cards:
 - slug: hh-lra-vwvfg
   type: norm
-  front: Welches Verwaltungsverfahrensgesetz gilt fuer Landesbehoerden in Hamburg?
+  front: Welches Verwaltungsverfahrensgesetz gilt für Landesbehörden in Hamburg?
   back: Hamburgisches Verwaltungsverfahrensgesetz (HmbVwVfG) - Vollgesetz. Das VwVfG des Bundes gilt nur
-    fuer Bundesbehoerden (§ 1 VwVfG); fuer Landes- und Kommunalbehoerden ist das Landesgesetz massgeblich.
+    für Bundesbehörden (§ 1 VwVfG); für Landes- und Kommunalbehörden ist das Landesgesetz maßgeblich.
     Bei Verweisungsgesetzen werden die Bundesnormen 'entsprechend' angewendet und sind so zu zitieren
     (z. B. '§ 35 VwVfG i. V. m. § 1 des Landesgesetzes'), bei Vollgesetzen ist die Landesnorm selbst zu
     zitieren.
@@ -28,11 +28,11 @@ cards:
 - slug: hh-lra-verfassungsgericht
   type: norm
   front: Gibt es in Hamburg eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
-  back: 'Nein - keine Individualverfassungsbeschwerde zum Hamburgischen Verfassungsgericht. Zustaendiges
+  back: 'Nein - keine Individualverfassungsbeschwerde zum Hamburgischen Verfassungsgericht. Zuständiges
     Gericht: Hamburgisches Verfassungsgericht auf Grundlage der Verfassung der Freien und Hansestadt Hamburg
     (HV). Verfahrensgegenstand ist nur die Verletzung von Landesgrundrechten durch Landesstaatsgewalt;
-    Bundesrecht ist Pruefungsmassstab nur, soweit die Landesverfassung darauf verweist. Daneben steht
-    immer die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
+    Bundesrecht ist Prüfungsmaßstab nur, soweit die Landesverfassung darauf verweist. Daneben steht immer
+    die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
   norms:
   - Verfassung der Freien und Hansestadt Hamburg (HV)
   quellen:
@@ -41,25 +41,30 @@ cards:
   stand: 2026-09
 - slug: hh-lra-kommunalverfassung
   type: norm
-  front: Welches Gesetz regelt die Kommunalverfassung in Hamburg und welche Hauptorgane hat die Gemeinde?
-  back: 'Keine Gemeinden - Bezirksverwaltung nach dem Bezirksverwaltungsgesetz (BezVG). Grundlage ist
-    die Selbstverwaltungsgarantie (Art. 28 Abs. 2 GG und Landesverfassung): eigenverantwortliche Regelung
-    aller Angelegenheiten der oertlichen Gemeinschaft. Klausurklassiker: Zustaendigkeitsstreit zwischen
-    Vertretung und Verwaltungsspitze, Kommunalverfassungsstreit, Rechtsaufsicht.'
+  front: Wie ist die Verwaltung in Hamburg organisiert - gibt es Gemeinden im Sinne des Art. 28 Abs. 2
+    GG und eine Kommunalaufsicht?
+  back: 'Hamburg ist Einheitsgemeinde: Die Freie und Hansestadt Hamburg ist zugleich Land und Gemeinde,
+    eine Kommunalverfassung im Sinne der Flächenländer gibt es nicht. Die Bezirke haben keine Gemeindequalität;
+    sie genießen keine Selbstverwaltungsgarantie nach Art. 28 Abs. 2 GG. Grundlage ist das Bezirksverwaltungsgesetz
+    (BezVG): Organe sind die Bezirksversammlung und das Bezirksamt. Statt der Kommunalaufsicht besteht
+    die Aufsicht des Senats über die Bezirke. Klausurrelevant: Streitigkeiten zwischen Bezirk und Senat
+    sind keine kommunalrechtlichen Streitigkeiten nach Art. 28 Abs. 2 GG, sondern Fragen der landesinternen
+    Organisation.'
   norms:
-  - Keine Gemeinden - Bezirksverwaltung nach dem Bezirksverwaltungsgesetz (BezVG)
+  - Verfassung der Freien und Hansestadt Hamburg (HV)
+  - Bezirksverwaltungsgesetz (BezVG)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: hh-lra-bauordnung
   type: norm
-  front: Wie heisst die Bauordnung in Hamburg und wie ist eine Baugenehmigung zu pruefen?
+  front: Wie heißt die Bauordnung in Hamburg und wie ist eine Baugenehmigung zu prüfen?
   back: 'Hamburgische Bauordnung (HBauO). Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben keine
-    oeffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungs-beduerftigkeit (Errichtung, Aenderung,
-    Nutzungsaenderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulaessigkeit nach §§ 29 ff.
-    BauGB (Bundesrecht), bauordnungsrechtliche Zulaessigkeit nach der Landesbauordnung (Abstandsflaechen,
-    Gestaltung, Stellplaetze).'
+    öffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungsbedürftigkeit (Errichtung, Änderung,
+    Nutzungsänderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulässigkeit nach §§ 29 ff. BauGB
+    (Bundesrecht), bauordnungsrechtliche Zulässigkeit nach der Landesbauordnung (Abstandsflächen, Gestaltung,
+    Stellplätze).'
   norms:
   - Hamburgische Bauordnung (HBauO)
   - §§ 29 ff. BauGB
@@ -69,10 +74,10 @@ cards:
   stand: 2026-09
 - slug: hh-lra-pflichtstoff
   type: definition
-  front: Welche Landesrechtsgebiete gehoeren in Hamburg zum Pflichtstoff des Oeffentlichen Rechts?
+  front: Welche Landesrechtsgebiete gehören in Hamburg zum Pflichtstoff des Öffentlichen Rechts?
   back: Ordnungsrecht (SOG HH); Bezirksverwaltung; Bauordnungsrecht (HBauO). Landesrecht wird im Examen
     fast nie isoliert, sondern eingebettet in eine verwaltungsprozessuale Einkleidung (Anfechtungs-/Verpflichtungsklage,
-    vorlaeufiger Rechtsschutz) geprueft - die Landesnorm ist die Ermaechtigungsgrundlage, der Aufbau bleibt
+    vorläufiger Rechtsschutz) geprüft - die Landesnorm ist die Ermächtigungsgrundlage, der Aufbau bleibt
     der allgemeine.
   norms: []
   quellen:

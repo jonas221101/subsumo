@@ -15,10 +15,10 @@ cards:
 - slug: or-vwvfg-nb-begriff
   type: definition
   front: 'Definiere: Nebenbestimmung i.S.d. § 36 VwVfG'
-  back: 'Eine Nebenbestimmung ist eine dem Verwaltungsakt beigefügte zusätzliche
-    Regelung, die den eigentlichen Regelungsgehalt des Verwaltungsakts (Hauptregelung)
-    einschränkt, ergänzt oder von einem zukünftigen Ereignis abhängig macht. §
-    36 Abs. 2 VwVfG zählt fünf Typen abschließend auf: Befristung, Bedingung, Widerrufsvorbehalt,
+  back: 'Eine Nebenbestimmung ist eine dem Verwaltungsakt beigefügte zusätzliche Regelung,
+    die den eigentlichen Regelungsgehalt des Verwaltungsakts (Hauptregelung) einschränkt,
+    ergänzt oder von einem zukünftigen Ereignis abhängig macht. § 36 Abs. 2 VwVfG
+    zählt fünf Typen abschließend auf: Befristung, Bedingung, Widerrufsvorbehalt,
     Auflage und Auflagenvorbehalt.'
   norms:
   - § 36 VwVfG
@@ -43,8 +43,8 @@ cards:
   type: definition
   front: Was ist eine Bedingung, § 36 Abs. 2 Nr. 2 VwVfG, und welche Arten gibt es?
   back: Bei der Bedingung hängt der Eintritt oder der Wegfall einer Vergünstigung
-    oder Belastung vom ungewissen Eintritt eines zukünftigen Ereignisses ab. Bei
-    der aufschiebenden Bedingung wird die Regelung erst mit Bedingungseintritt wirksam,
+    oder Belastung vom ungewissen Eintritt eines zukünftigen Ereignisses ab. Bei der
+    aufschiebenden Bedingung wird die Regelung erst mit Bedingungseintritt wirksam,
     bei der auflösenden Bedingung endet eine bereits wirksame Regelung mit Bedingungseintritt.
     Anders als bei der Befristung ist ungewiss, OB das Ereignis eintritt, nicht nur
     WANN.
@@ -56,8 +56,8 @@ cards:
 - slug: or-vwvfg-nb-widerrufsvorbehalt
   type: definition
   front: Was bewirkt ein Widerrufsvorbehalt, § 36 Abs. 2 Nr. 3 VwVfG?
-  back: Der Widerrufsvorbehalt behält der Behörde vor, den an sich rechtmäßigen
-    und wirksamen Verwaltungsakt später durch eigene neue Entscheidung zu widerrufen,
+  back: Der Widerrufsvorbehalt behält der Behörde vor, den an sich rechtmäßigen und
+    wirksamen Verwaltungsakt später durch eigene neue Entscheidung zu widerrufen,
     ohne dass es hierfür noch eines Widerrufsgrundes nach § 49 Abs. 2 VwVfG bedürfte.
     Er unterscheidet sich von der auflösenden Bedingung dadurch, dass der Wegfall
     nicht automatisch mit einem Ereignis eintritt, sondern eine erneute Ermessensentscheidung
@@ -72,8 +72,8 @@ cards:
   front: Was ist eine Auflage, § 36 Abs. 2 Nr. 4 VwVfG?
   back: Die Auflage schreibt dem Begünstigten eines Verwaltungsakts ein zusätzliches
     Tun, Dulden oder Unterlassen vor, ohne dass die Wirksamkeit der Hauptregelung
-    selbst davon abhängt. Der Verwaltungsakt wird also unabhängig davon wirksam,
-    ob die Auflage erfüllt wird - ihre Nichterfüllung kann aber Vollstreckungsmaßnahmen
+    selbst davon abhängt. Der Verwaltungsakt wird also unabhängig davon wirksam, ob
+    die Auflage erfüllt wird - ihre Nichterfüllung kann aber Vollstreckungsmaßnahmen
     oder einen Widerruf nach § 49 Abs. 2 S. 1 Nr. 2 VwVfG nach sich ziehen.
   norms:
   - § 36 Abs. 2 Nr. 4 VwVfG
@@ -87,12 +87,12 @@ cards:
   back: 'Bei der auflösenden Bedingung hängt die Wirksamkeit der Hauptregelung selbst
     automatisch vom Bedingungseintritt ab - der Verwaltungsakt erledigt sich ''von
     selbst'', sobald das Ereignis eintritt. Bei der Auflage bleibt die Hauptregelung
-    unabhängig von der Erfüllung der zusätzlichen Pflicht wirksam; die Behörde
-    muss bei Nichterfüllung aktiv werden (Vollstreckung oder Widerruf). Im Zweifel
-    ist bei mehrdeutigem Wortlaut die mildere Auflage anzunehmen, da sie den Bestand
-    des Verwaltungsakts nicht automatisch gefährdet. Die Abgrenzung entscheidet zugleich
-    über den statthaften Rechtsschutz: nur gegen die Auflage kommt nach ständiger
-    Rechtsprechung eine isolierte Anfechtungsklage in Betracht.'
+    unabhängig von der Erfüllung der zusätzlichen Pflicht wirksam; die Behörde muss
+    bei Nichterfüllung aktiv werden (Vollstreckung oder Widerruf). Im Zweifel ist
+    bei mehrdeutigem Wortlaut die mildere Auflage anzunehmen, da sie den Bestand des
+    Verwaltungsakts nicht automatisch gefährdet. Die Abgrenzung ist auch für den Rechtsschutz
+    bedeutsam: Die Auflage ist als eigenständiger Verwaltungsakt unstreitig isoliert
+    anfechtbar, bei der Bedingung ist die statthafte Klageart dagegen umstritten.'
   norms:
   - § 36 Abs. 2 Nr. 2 VwVfG
   - § 36 Abs. 2 Nr. 4 VwVfG
@@ -118,11 +118,11 @@ cards:
   type: norm
   front: Wann ist eine Nebenbestimmung bei einem Ermessens-Verwaltungsakt (kein Anspruch)
     zulässig?
-  back: 'Besteht kein Anspruch auf den Verwaltungsakt, darf die Behörde ihn nach
-    § 36 Abs. 2 VwVfG unbeschadet des Absatzes 1 grundsätzlich mit jeder der fünf
-    dort genannten Nebenbestimmungen versehen - dies folgt aus dem Erst-recht-Schluss,
-    dass wer den VA insgesamt versagen dürfte, ihn erst recht nur eingeschränkt
-    erlassen darf. Grenze ist das Kopplungsverbot des § 36 Abs. 3 VwVfG: die Nebenbestimmung
+  back: 'Besteht kein Anspruch auf den Verwaltungsakt, darf die Behörde ihn nach §
+    36 Abs. 2 VwVfG unbeschadet des Absatzes 1 grundsätzlich mit jeder der fünf dort
+    genannten Nebenbestimmungen versehen - dies folgt aus dem Erst-recht-Schluss,
+    dass wer den VA insgesamt versagen dürfte, ihn erst recht nur eingeschränkt erlassen
+    darf. Grenze ist das Kopplungsverbot des § 36 Abs. 3 VwVfG: die Nebenbestimmung
     darf dem Zweck des Verwaltungsakts nicht zuwiderlaufen und muss pflichtgemäßem
     Ermessen entsprechen, insbesondere verhältnismäßig sein.'
   norms:
@@ -136,15 +136,18 @@ cards:
   type: streitstand
   front: Ist die Auflage isoliert, also ohne den begünstigenden Haupt-Verwaltungsakt,
     anfechtbar?
-  back: Nach ständiger Rechtsprechung ist die Auflage ein eigenständiger, von der
-    Hauptregelung abtrennbarer Verwaltungsakt und daher stets statthafter Gegenstand
-    einer eigenen Anfechtungsklage - die Frage, ob der begünstigende Verwaltungsakt
-    auch ohne die Auflage rechtmäßig erlassen werden durfte (Teilbarkeit), betrifft
-    nach dieser Auffassung nicht die Zulässigkeit, sondern erst die Begründetheit
-    der Klage. Teile der Literatur wollen dagegen bereits die statthafte Klageart
-    nach der Art der Nebenbestimmung differenzieren und bei untrennbar mit der Hauptregelung
-    verknüpften Nebenbestimmungen (Bedingung, Befristung) nur eine Verpflichtungsklage
-    auf Erlass ohne Nebenbestimmung zulassen.
+  back: 'Nach ständiger Rechtsprechung des Bundesverwaltungsgerichts sind Nebenbestimmungen
+    grundsätzlich isoliert mit der Anfechtungsklage angreifbar; die Auflage ist ohnehin
+    ein eigenständiger, von der Hauptregelung abtrennbarer Verwaltungsakt. Ob der
+    begünstigende Verwaltungsakt auch ohne die Nebenbestimmung rechtmäßig erlassen
+    werden durfte (Teilbarkeit), betrifft nach dieser Auffassung nicht die Zulässigkeit,
+    sondern erst die Begründetheit der Klage. Ausnahme ist die modifizierende Auflage,
+    die den Inhalt der Hauptregelung verändert und deshalb nur mit der Verpflichtungsklage
+    angegriffen werden kann. Teile der Literatur differenzieren dagegen nach der Art
+    der Nebenbestimmung: Die Auflage sei isoliert anfechtbar, bei untrennbar mit der
+    Hauptregelung verknüpften Nebenbestimmungen (Bedingung, Befristung, Widerrufsvorbehalt)
+    komme nur eine Verpflichtungsklage auf Erlass des Verwaltungsakts ohne Nebenbestimmung
+    in Betracht.'
   norms:
   - § 42 Abs. 1 Var. 1 VwGO
   quellen:
@@ -201,14 +204,14 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - VwVfG, amtliche Fassung
-  facts: Die (fiktive) Ordnungsbehörde erteilt dem G eine gaststättenrechtliche
-    Erlaubnis, auf die G nach dem einschlägigen (fiktiven) Fachrecht keinen strikten
-    Rechtsanspruch hat, sondern die im Ermessen der Behörde steht. Die Erlaubnis
-    wird mit der Nebenbestimmung versehen, dass G eine schalldämmende Tür einbauen
-    und diese ab 22 Uhr geschlossen halten muss, um die Nachbarschaft vor Lärm zu
-    schützen. G hält die Auflage für unverhältnismäßig, da bereits die bestehende
-    Bausubstanz ausreichenden Lärmschutz biete, und möchte allein gegen die Nebenbestimmung
-    vorgehen, ohne die Erlaubnis als solche infrage zu stellen.
+  facts: Die (fiktive) Ordnungsbehörde erteilt dem G eine gaststättenrechtliche Erlaubnis,
+    auf die G nach dem einschlägigen (fiktiven) Fachrecht keinen strikten Rechtsanspruch
+    hat, sondern die im Ermessen der Behörde steht. Die Erlaubnis wird mit der Nebenbestimmung
+    versehen, dass G eine schalldämmende Tür einbauen und diese ab 22 Uhr geschlossen
+    halten muss, um die Nachbarschaft vor Lärm zu schützen. G hält die Auflage für
+    unverhältnismäßig, da bereits die bestehende Bausubstanz ausreichenden Lärmschutz
+    biete, und möchte allein gegen die Nebenbestimmung vorgehen, ohne die Erlaubnis
+    als solche infrage zu stellen.
   question: Ist eine isolierte Anfechtungsklage des G gegen die Nebenbestimmung zulässig,
     und hat sie in der Sache Aussicht auf Erfolg, wenn die Lärmschutzauflage tatsächlich
     unverhältnismäßig ist?
@@ -219,23 +222,24 @@ faelle:
       Erlaubnis selbst unabhängig davon wirksam ist.
   - prompt: Ist die isolierte Anfechtungsklage gegen die Auflage statthaft?
     erwartung: Ja - nach ständiger Rechtsprechung ist die Auflage ein eigenständiger
-      Verwaltungsakt und daher stets isoliert mit der Anfechtungsklage angreifbar;
-      die Frage der Teilbarkeit ist erst in der Begründetheit zu prüfen.
+      Verwaltungsakt und daher isoliert mit der Anfechtungsklage angreifbar (nur die
+      modifizierende Auflage wäre anders zu behandeln); die Frage der Teilbarkeit
+      ist erst in der Begründetheit zu prüfen.
   - prompt: War die Auflage nach § 36 Abs. 2 VwVfG dem Grunde nach zulässig?
     erwartung: Ja - da kein Anspruch auf die Gaststättenerlaubnis besteht, durfte
       die Behörde sie nach § 36 Abs. 2 Nr. 4 VwVfG mit einer Auflage versehen.
   - prompt: Verstößt die konkrete Auflage gegen das Kopplungsverbot des § 36 Abs.
       3 VwVfG?
-    erwartung: 'Ja, wenn sie unverhältnismäßig ist: Eine Auflage, die über das
-      zum Lärmschutz Erforderliche hinausgeht, obwohl die vorhandene Bausubstanz
-      bereits ausreicht, widerspricht dem Grundsatz der Verhältnismäßigkeit und
-      damit dem Kopplungsverbot.'
+    erwartung: 'Ja, wenn sie unverhältnismäßig ist: Eine Auflage, die über das zum
+      Lärmschutz Erforderliche hinausgeht, obwohl die vorhandene Bausubstanz bereits
+      ausreicht, widerspricht dem Grundsatz der Verhältnismäßigkeit und damit dem
+      Kopplungsverbot.'
   - prompt: Wie wirkt sich die Rechtswidrigkeit der Auflage auf die Erlaubnis selbst
       aus?
     erwartung: Die Aufhebung der Auflage lässt die Gaststättenerlaubnis im Übrigen
-      unberührt, wenn die Behörde die Erlaubnis auch ohne diese konkrete Auflage
-      in rechtmäßiger Weise hätte erlassen können - das ist hier der Fall, da
-      die Erlaubnis als solche nicht von der Lärmschutzfrage abhängt.
+      unberührt, wenn die Behörde die Erlaubnis auch ohne diese konkrete Auflage in
+      rechtmäßiger Weise hätte erlassen können - das ist hier der Fall, da die Erlaubnis
+      als solche nicht von der Lärmschutzfrage abhängt.
   expectation:
     pruefpunkte:
     - id: p1
@@ -245,8 +249,8 @@ faelle:
       norms:
       - § 36 Abs. 2 Nr. 4 VwVfG
       keywords:
-      - Auflage
-      - Nr. 4
+      - § 36 Abs. 2 Nr. 4 VwVfG
+      - zusätzliches Tun
       card_slugs:
       - or-vwvfg-nb-auflage
     - id: p2
@@ -254,9 +258,10 @@ faelle:
       weight: 2.5
       required: true
       keywords:
-      - isoliert
-      - Anfechtungsklage
+      - isolierte Anfechtungsklage
+      - isoliert anfechtbar
       - eigenständiger Verwaltungsakt
+      - selbständig anfechtbar
       card_slugs:
       - or-vwvfg-nb-isolierte-anfechtbarkeit
     - id: p3
@@ -266,8 +271,10 @@ faelle:
       required: true
       keywords:
       - Kopplungsverbot
-      - Abs. 3
-      - Verhältnismäßigkeit
+      - § 36 Abs. 3 VwVfG
+      - dem Zweck des Verwaltungsakts nicht zuwiderlaufen
+      - Verhältnismäßigkeit der Auflage
+      - pflichtgemäßes Ermessen
       card_slugs:
       - or-vwvfg-nb-zulaessigkeit-ermessens-va
     - id: p4
@@ -277,8 +284,10 @@ faelle:
       required: true
       keywords:
       - Teilbarkeit
-      - ohne die Auflage
-      - unberührt
+      - Erlaubnis auch ohne die Auflage
+      - ohne diese Auflage
+      - Erlaubnis bleibt unberührt
+      - lässt die Gaststättenerlaubnis im Übrigen unberührt
       card_slugs:
       - or-vwvfg-nb-isolierte-anfechtbarkeit
     - id: p5
@@ -286,5 +295,7 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - begründet
-      - rechtswidrig
+      - Anfechtungsklage ist zulässig und begründet
+      - Auflage ist rechtswidrig
+      - Klage ist begründet
+      - Aufhebung der Auflage

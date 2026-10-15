@@ -15,14 +15,17 @@ cards:
 - slug: or-sr-schutzgut-oeffentliche-sicherheit
   type: definition
   front: Was schützt das Schutzgut 'öffentliche Sicherheit' im Polizei- und Ordnungsrecht?
-  back: Öffentliche Sicherheit umfasst die Unverletzlichkeit der objektiven Rechtsordnung
-    (aller Rechtsnormen des geschriebenen Rechts), der subjektiven Rechte und Rechtsgüter
-    des Einzelnen (Leben, Gesundheit, Eigentum, Ehre) sowie des Bestands des Staates
-    und seiner Einrichtungen. Ein Verstoß gegen irgendeine Rechtsnorm - auch des
-    Zivil- oder Strafrechts - begründet grundsätzlich bereits eine Gefahr für die
-    öffentliche Sicherheit; dieses weite Verständnis ist bewusst gewählt, damit
-    polizeiliches Einschreiten nicht von einer abschließenden Aufzählung geschützter
-    Interessen abhängt.
+  back: 'Öffentliche Sicherheit umfasst die Unverletzlichkeit der objektiven Rechtsordnung
+    (aller Normen des öffentlichen Rechts einschließlich des Straf- und Ordnungswidrigkeitenrechts),
+    der subjektiven Rechte und Rechtsgüter des Einzelnen (Leben, Gesundheit, Eigentum,
+    Ehre) sowie des Bestands des Staates und seiner Einrichtungen. Ein Verstoß gegen
+    eine Norm des öffentlichen Rechts begründet grundsätzlich bereits eine Gefahr
+    für die öffentliche Sicherheit. Der Schutz privater Rechte ist dagegen nur subsidiär
+    Aufgabe der Polizei: Sie wird hier nur tätig, wenn gerichtlicher Schutz nicht
+    rechtzeitig zu erlangen ist und ohne polizeiliche Hilfe die Verwirklichung des
+    Rechts vereitelt oder wesentlich erschwert würde (vgl. die Subsidiaritätsklauseln
+    der Polizeigesetze der Länder). Bloße Verstöße gegen Zivilrecht sind daher für
+    sich keine Gefahr für die öffentliche Sicherheit.'
   norms: []
   quellen:
   - Eigenformulierung Redaktion
@@ -32,13 +35,13 @@ cards:
   front: Was ist die 'öffentliche Ordnung', und warum hat dieses Schutzgut praktisch
     an Bedeutung verloren?
   back: Die öffentliche Ordnung bezeichnet die Gesamtheit der ungeschriebenen Regeln,
-    deren Befolgung nach den jeweils herrschenden Anschauungen als unerlässliche
-    Voraussetzung eines gedeihlichen Zusammenlebens innerhalb eines bestimmten Gebiets
-    angesehen wird. Wegen des rechtsstaatlichen Bestimmtheitsgebots und der zunehmenden
-    Ausdifferenzierung geschriebenen Rechts ist der eigenständige Anwendungsbereich
-    dieses Schutzguts heute sehr klein geworden - die Rechtsprechung verlangt einen
-    begründeten Ausnahmefall, in dem kein geschriebenes Recht einschlägig ist, aber
-    ein Verhalten evident als grob sozialwidrig empfunden wird.
+    deren Befolgung nach den jeweils herrschenden Anschauungen als unerlässliche Voraussetzung
+    eines gedeihlichen Zusammenlebens innerhalb eines bestimmten Gebiets angesehen
+    wird. Wegen des rechtsstaatlichen Bestimmtheitsgebots und der zunehmenden Ausdifferenzierung
+    geschriebenen Rechts ist der eigenständige Anwendungsbereich dieses Schutzguts
+    heute sehr klein geworden - die Rechtsprechung verlangt einen begründeten Ausnahmefall,
+    in dem kein geschriebenes Recht einschlägig ist, aber ein Verhalten evident als
+    grob sozialwidrig empfunden wird.
   norms:
   - Art. 20 Abs. 3 GG
   quellen:
@@ -64,14 +67,16 @@ cards:
   back: 'Eine Anscheinsgefahr liegt vor, wenn ein pflichtgemäß und sachkundig handelnder
     Amtsträger bei verständiger Würdigung der im Zeitpunkt des Handelns erkennbaren
     Umstände (ex-ante-Sicht) das Vorliegen einer Gefahr bejahen durfte, sich aber
-    im Nachhinein (ex-post) herausstellt, dass tatsächlich keine Gefahr bestand.
-    Nach heute herrschender Auffassung ist die Anscheinsgefahr polizeirechtlich einer
-    echten Gefahr gleichgestellt - die Maßnahme ist rechtmäßig, wenn die Ex-ante-Prognose
+    im Nachhinein (ex-post) herausstellt, dass tatsächlich keine Gefahr bestand. Die
+    Prognose fällt also bereits ex ante positiv aus; der Schaden tritt nur objektiv
+    nicht ein. Nach heute herrschender Auffassung ist die Anscheinsgefahr polizeirechtlich
+    einer echten Gefahr gleichgestellt - die Maßnahme ist rechtmäßig, wenn die Ex-ante-Prognose
     sorgfältig war. Streitig ist dagegen, wer die Kosten einer daraufhin ergriffenen
     Maßnahme trägt, wenn sich die Prognose als falsch erweist: nach einer Ansicht
     der vermeintliche Handlungsstörer (da er den Anschein gesetzt hat), nach anderer
     Ansicht die Allgemeinheit, wenn den vermeintlichen Störer kein Verschulden an
-    der Fehlvorstellung trifft.'
+    der Fehlvorstellung trifft. Abzugrenzen ist der Gefahrenverdacht, bei dem schon
+    ex ante offen ist, ob eine Gefahr besteht.'
   norms: []
   quellen:
   - Eigenformulierung Redaktion
@@ -80,14 +85,17 @@ cards:
   type: definition
   front: Wie unterscheidet sich der Gefahrenverdacht von der Anscheinsgefahr, und
     welche Maßnahmen sind dort zulässig?
-  back: Beim Gefahrenverdacht ist - anders als bei der Anscheinsgefahr, wo die Prognose
-    über den Geschehensablauf unsicher ist - bereits ungewiss, ob der zugrunde liegende
-    Sachverhalt selbst tatsächlich vorliegt; die Behörde kennt die Tatsachenbasis
-    nicht vollständig, hält eine Gefahr aber für möglich. Auf dieser unsicheren
-    Tatsachengrundlage können keine endgültigen Gefahrenabwehrmaßnahmen gestützt
-    werden, sondern nur sogenannte Gefahrerforschungseingriffe - vorläufige, auf
-    Sachverhaltsaufklärung gerichtete Maßnahmen, die verhältnismäßig auf das
-    zur Aufklärung Erforderliche zu begrenzen sind.
+  back: 'Beim Gefahrenverdacht bleibt bereits ex ante ungewiss, ob eine Gefahr besteht:
+    Es gibt Anhaltspunkte für einen möglichen Schadenseintritt, aber die Behörde kann
+    das Vorliegen der Gefahr (Sachverhalt oder Wahrscheinlichkeit des Schadenseintritts)
+    noch nicht verlässlich beurteilen. Bei der Anscheinsgefahr dagegen bejaht der
+    Amtsträger die Gefahr ex ante auf sorgfältiger Grundlage; nur ex post zeigt sich,
+    dass objektiv keine Gefahr bestand. Auf einen bloßen Gefahrenverdacht können keine
+    endgültigen Gefahrenabwehrmaßnahmen gestützt werden, sondern nur sogenannte Gefahrerforschungseingriffe
+    - vorläufige, auf Sachverhaltsaufklärung gerichtete Maßnahmen, die verhältnismäßig
+    auf das zur Aufklärung Erforderliche zu begrenzen sind. Ob und in welchem Umfang
+    das Landesrecht Eingriffe schon bei bloßem Verdacht zulässt, richtet sich nach
+    der jeweiligen Befugnisnorm.'
   norms: []
   quellen:
   - Eigenformulierung Redaktion
@@ -96,15 +104,17 @@ cards:
   type: definition
   front: In welchem Verhältnis stehen die polizeiliche Generalklausel und die Standardmaßnahmen
     zueinander?
-  back: Standardmaßnahmen (z. B. Identitätsfeststellung, Platzverweis, Durchsuchung,
+  back: 'Standardmaßnahmen (z. B. Identitätsfeststellung, Platzverweis, Durchsuchung,
     Sicherstellung) sind bereichsspezifische, vom Gesetzgeber für typische, wiederkehrende
-    Eingriffssituationen ausformulierte Befugnisnormen und gehen der Generalklausel
-    als spezielleres Recht vor (lex specialis). Die Generalklausel - im Aufbau des
-    Musterentwurfs eines einheitlichen Polizeigesetzes die Ermächtigung, die nötigen
-    Maßnahmen zur Abwehr einer im Einzelfall bestehenden Gefahr zu treffen, soweit
-    keine speziellere Vorschrift eingreift - ist subsidiär und kommt nur zum Zug,
-    wenn keine Standardmaßnahme die konkrete Maßnahme erfasst. Diese Subsidiarität
-    ist in der Klausur stets VOR Rücgriff auf die Generalklausel zu prüfen.
+    Eingriffssituationen ausformulierte Befugnisnormen mit eigenen, meist engeren
+    Voraussetzungen und gehen der Generalklausel als spezielleres Recht vor (lex specialis).
+    Fällt die Maßnahme in den Anwendungsbereich einer Standardmaßnahme, entfaltet
+    diese Sperrwirkung: Die Generalklausel darf dann nicht herangezogen werden, um
+    deren Voraussetzungen zu umgehen. Die Generalklausel - die Ermächtigung, die nötigen
+    Maßnahmen zur Abwehr einer im Einzelfall bestehenden Gefahr zu treffen - ist subsidiär
+    und kommt nur zum Zug, wenn keine Standardmaßnahme die konkrete Maßnahme erfasst.
+    Diese Subsidiarität ist in der Klausur stets VOR dem Rückgriff auf die Generalklausel
+    zu prüfen.'
   norms:
   - Art. 20 Abs. 3 GG
   quellen:
@@ -116,28 +126,33 @@ cards:
   back: Handlungsstörer ist, wer die Gefahr durch eigenes Verhalten unmittelbar verursacht
     hat. Zustandsstörer ist, wer die tatsächliche oder rechtliche Gewalt über eine
     Sache innehat, von der die Gefahr ausgeht, unabhängig von eigenem Verschulden.
-    Ein Nichtstörer kann nur unter engen, kumulativen Voraussetzungen des polizeilichen
-    Notstands in Anspruch genommen werden - insbesondere bei einer gegenwärtigen
-    erheblichen Gefahr, wenn Maßnahmen gegen Störer nicht oder nicht rechtzeitig
-    möglich sind und die Behörde nicht anders und nicht rechtzeitig selbst handeln
-    kann.
+    Zwischen mehreren Verantwortlichen trifft die Behörde eine Störerauswahl nach
+    pflichtgemäßem Ermessen, vorrangig nach dem Gebot effektiver Gefahrenabwehr (Schnelligkeit
+    und Wirksamkeit), nicht nach Verschulden oder Leistungsfähigkeit; auch auf Seiten
+    des Verantwortlichen gilt das Verhältnismäßigkeitsgebot. Ein Nichtstörer kann
+    nur unter engen, kumulativen Voraussetzungen des polizeilichen Notstands in Anspruch
+    genommen werden - insbesondere bei einer gegenwärtigen erheblichen Gefahr, wenn
+    Maßnahmen gegen Störer nicht oder nicht rechtzeitig möglich sind und die Behörde
+    nicht anders und nicht rechtzeitig selbst handeln kann. Für die dadurch entstandenen
+    Nachteile steht dem in Anspruch genommenen Nichtstörer nach den Polizei- und Ordnungsgesetzen
+    der Länder ein Entschädigungs- bzw. Ausgleichsanspruch zu.
   norms: []
   quellen:
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: or-sr-verhaeltnismaessigkeit-eingriffsgrundlage
   type: norm
-  front: Woraus folgt das Verhältnismäßigkeitsgebot für polizeiliche Maßnahmen,
-    und was bedeutet es für die Auswahl zwischen Generalklausel und Ermessen?
-  back: Das Verhältnismäßigkeitsgebot folgt aus dem Rechtsstaatsprinzip (Art. 20
-    Abs. 3 GG) und begrenzt jeden Grundrechtseingriff - im Sicherheitsrecht häufig
-    einen Eingriff in die allgemeine Handlungsfreiheit (Art. 2 Abs. 1 GG) des Betroffenen.
+  front: Woraus folgt das Verhältnismäßigkeitsgebot für polizeiliche Maßnahmen, und
+    was bedeutet es für die Auswahl zwischen Generalklausel und Ermessen?
+  back: Das Verhältnismäßigkeitsgebot folgt aus dem Rechtsstaatsprinzip (Art. 20 Abs.
+    3 GG) und begrenzt jeden Grundrechtseingriff - im Sicherheitsrecht häufig einen
+    Eingriff in die allgemeine Handlungsfreiheit (Art. 2 Abs. 1 GG) des Betroffenen.
     Die Maßnahme muss geeignet, erforderlich und angemessen sein. Sowohl die Generalklausel
     als auch die meisten Standardmaßnahmen sind zudem als Ermessensvorschriften ausgestaltet
     ('kann'), sodass zusätzlich zur tatbestandlichen Rechtmäßigkeit eine fehlerfreie
     Ermessensausübung hinzutreten muss - vergleichbar dem allgemeinen Ermessensmaßstab
-    des § 40 VwVfG, auch wenn das Sicherheitsrecht regelmäßig eigene, dem VwVfG
-    vorgehende Ermessensvorschriften enthält.
+    des § 40 VwVfG, auch wenn das Sicherheitsrecht regelmäßig eigene, dem VwVfG vorgehende
+    Ermessensvorschriften enthält.
   norms:
   - Art. 20 Abs. 3 GG
   - Art. 2 Abs. 1 GG
@@ -149,7 +164,7 @@ cards:
   stand: 2026-09
 schemata:
 - slug: or-schema-sicherheitsrecht-generalklausel
-  title: Rechtmäßigkeit einer Maßnahme auf Grundlage der polizeilichen Generalklausel
+  title: 'Rechtmäßigkeit einer polizeilichen Maßnahme: Standardmaßnahme und Generalklausel'
   norms:
   - Art. 20 Abs. 3 GG
   quellen:
@@ -157,12 +172,18 @@ schemata:
   steps:
   - label: I. Ermächtigungsgrundlage
     children:
-    - label: 1. Vorrang einer Standardmaßnahme? (Subsidiaritätsprüfung)
-      hinweis: Nur wenn keine speziellere, bereichsspezifische Befugnisnorm einschlägig
-        ist, kommt die Generalklausel zur Anwendung.
-    - label: '2. Formelle Voraussetzungen: sachliche und örtliche Zuständigkeit,
-        Verfahren'
-  - label: II. Materielle Voraussetzungen der Generalklausel
+    - label: 1. Vorrang einer Standardmaßnahme? (Subsidiaritäts- und Sperrwirkungsprüfung)
+      hinweis: Zuerst die speziellen Befugnisnormen (z. B. Platzverweis, Identitätsfeststellung,
+        Gewahrsam, Durchsuchung, Sicherstellung) prüfen. Greift eine Standardmaßnahme,
+        ist die Generalklausel gesperrt; nur wenn keine Standardmaßnahme die Maßnahme
+        erfasst, kommt die Generalklausel zur Anwendung.
+    - label: 2. Generalklausel als Auffangbefugnis, falls keine Standardmaßnahme einschlägig
+  - label: II. Formelle Rechtmäßigkeit
+    children:
+    - label: 1. Sachliche und örtliche Zuständigkeit (Polizei- oder Ordnungsbehörde,
+        Eilzuständigkeit)
+    - label: 2. Verfahren (Anhörung, soweit nicht entbehrlich) und Form
+  - label: III. Materielle Voraussetzungen der gewählten Befugnisnorm
     children:
     - label: '1. Schutzgut: öffentliche Sicherheit oder öffentliche Ordnung betroffen'
     - label: 2. Gefahr
@@ -171,14 +192,16 @@ schemata:
       - label: b) Anscheinsgefahr - polizeirechtlich der Gefahr gleichgestellt bei
           sorgfältiger Ex-ante-Prognose
       - label: c) Gefahrenverdacht - nur Gefahrerforschungseingriffe zulässig
-  - label: III. Richtiger Adressat
+  - label: IV. Richtiger Adressat (Störerauswahl)
     children:
-    - label: 1. Handlungsstörer oder Zustandsstörer
-    - label: 2. Ausnahmsweise Nichtstörer bei polizeilichem Notstand
-  - label: IV. Ermessen und Verhältnismäßigkeit
-    hinweis: Geeignetheit, Erforderlichkeit, Angemessenheit; Rechtsstaatsprinzip,
-      Art. 20 Abs. 3 GG.
-  - label: V. Ergebnis
+    - label: 1. Handlungs- oder Zustandsstörer
+    - label: 2. Auswahl unter mehreren Störern nach dem Gebot effektiver Gefahrenabwehr
+    - label: 3. Ausnahmsweise Nichtstörer bei polizeilichem Notstand (kumulative Voraussetzungen);
+        Ausgleichs- bzw. Entschädigungsanspruch
+  - label: V. Ermessen und Verhältnismäßigkeit
+    hinweis: Entschließungs- und Auswahlermessen; Geeignetheit, Erforderlichkeit,
+      Angemessenheit; Rechtsstaatsprinzip, Art. 20 Abs. 3 GG.
+  - label: VI. Ergebnis
 faelle:
 - slug: or-fall-herrenloser-koffer-bahnhofsvorplatz
   title: Der herrenlose Koffer auf dem Bahnhofsvorplatz
@@ -187,18 +210,17 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   facts: Auf dem Vorplatz eines (fiktiven) Hauptbahnhofs entdecken zwei Streifenbeamte
-    der zuständigen Polizeibehörde einen unbeaufsichtigten Koffer, der mehrfach
-    tickende Geräusche von sich gibt. Da zur selben Zeit in der naheliegenden Innenstadt
-    eine große öffentliche Veranstaltung stattfindet, gehen die Beamten nach pflichtgemäßer
-    Einschätzung der Lage von einer möglichen Sprengvorrichtung aus und sperren
-    den Vorplatz großräumig ab; alle Personen im Umkreis von 50 Metern werden zum
-    Verlassen des Bereichs aufgefordert. Eine anschließende Untersuchung durch den
-    Entschärfungsdienst ergibt, dass es sich um einen vergessenen Wecker mit tickendem
-    Uhrwerk in einer harmlosen Reisetasche handelte - eine tatsächliche Gefahr bestand
-    zu keinem Zeitpunkt. Der Reisende R, der den Bahnhofsvorplatz während der Absperrung
-    nicht betreten durfte und dadurch seinen Zug verpasste, hält die Maßnahme für
-    rechtswidrig, weil sich im Nachhinein herausgestellt habe, dass gar keine Gefahr
-    vorlag.
+    der zuständigen Polizeibehörde einen unbeaufsichtigten Koffer, der mehrfach tickende
+    Geräusche von sich gibt. Da zur selben Zeit in der naheliegenden Innenstadt eine
+    große öffentliche Veranstaltung stattfindet, gehen die Beamten nach pflichtgemäßer
+    Einschätzung der Lage von einer möglichen Sprengvorrichtung aus und sperren den
+    Vorplatz großräumig ab; alle Personen im Umkreis von 50 Metern werden zum Verlassen
+    des Bereichs aufgefordert. Eine anschließende Untersuchung durch den Entschärfungsdienst
+    ergibt, dass es sich um einen vergessenen Wecker mit tickendem Uhrwerk in einer
+    harmlosen Reisetasche handelte - eine tatsächliche Gefahr bestand zu keinem Zeitpunkt.
+    Der Reisende R, der den Bahnhofsvorplatz während der Absperrung nicht betreten
+    durfte und dadurch seinen Zug verpasste, hält die Maßnahme für rechtswidrig, weil
+    sich im Nachhinein herausgestellt habe, dass gar keine Gefahr vorlag.
   question: War die Absperrung des Bahnhofsvorplatzes und die Platzverweisung der
     anwesenden Personen rechtmäßig?
   steps:
@@ -207,27 +229,39 @@ faelle:
       Sachlage (tickender Koffer, große Veranstaltung in der Nähe) sachkundig von
       einer Gefahr ausgehen, obwohl sich ex-post herausstellte, dass keine echte Gefahr
       bestand.
-  - prompt: Ist die Anscheinsgefahr für die Rechtmäßigkeit der Maßnahme einer
-      echten Gefahr gleichgestellt?
+  - prompt: Ist die Anscheinsgefahr für die Rechtmäßigkeit der Maßnahme einer echten
+      Gefahr gleichgestellt?
     erwartung: Ja - nach heute herrschender Auffassung reicht für die Rechtmäßigkeit
       des Einschreitens eine sorgfältige, pflichtgemäße Ex-ante-Prognose aus; dass
       sich die Gefahr im Nachhinein nicht bestätigt, macht die Maßnahme nicht rückwirkend
       rechtswidrig.
   - prompt: War vorrangig eine Standardmaßnahme statt der Generalklausel zu prüfen?
-    erwartung: Die großräumige Absperrung eines Bereichs und die pauschale Platzverweisung
-      mehrerer Personen zur Gefahrenabwehr sind hier nicht durch eine engere, speziellere
-      Standardmaßnahme (etwa eine Identitätsfeststellung gegenüber einer Einzelperson)
-      abgedeckt, sodass auf die Generalklausel zurückgegriffen werden darf.
+    erwartung: Ja - die Aufforderung an die Anwesenden, den Bereich zu verlassen,
+      und das Verbot, ihn zu betreten (großräumige Absperrung), ist ein Platzverweis,
+      also eine Standardmaßnahme (z. B. Art. 16 PAG, § 34 PolG NRW, § 29 ASOG Bln).
+      Diese ist gegenüber der Generalklausel vorrangig und entfaltet Sperrwirkung;
+      auf die Generalklausel darf nicht zurückgegriffen werden. Der Platzverweis setzt
+      eine (hier ex ante bejahte) Gefahr voraus, und die Anwesenden sind weder Handlungs-
+      noch Zustandsstörer.
+  - prompt: Gegen wen durfte sich die Maßnahme richten (Störer oder Nichtstörer)?
+    erwartung: 'Die anwesenden Passanten und Reisenden sind weder Handlungs- noch
+      Zustandsstörer, sondern Nichtstörer. Ihre Inanspruchnahme ist nur im polizeilichen
+      Notstand zulässig (z. B. Art. 10 PAG, § 6 PolG NRW): gegenwärtige erhebliche
+      Gefahr, keine rechtzeitig mögliche Inanspruchnahme eines Störers (der Eigentümer
+      des Koffers ist unbekannt), keine eigene rechtzeitige Abhilfe durch die Behörde
+      und keine eigene erhebliche Gefährdung der Betroffenen. Diese Voraussetzungen
+      liegen hier vor. Die Betroffenen können nach den Polizeigesetzen der Länder
+      für ihre Nachteile Entschädigung bzw. Ausgleich verlangen.'
   - prompt: War die Maßnahme verhältnismäßig?
-    erwartung: Ja - angesichts der potenziell hochrangigen bedrohten Rechtsgüter
-      (Leben, Gesundheit einer Vielzahl von Personen) war die großräumige, zeitlich
-      auf die Gefahraufklärung begrenzte Absperrung geeignet, erforderlich und angemessen,
+    erwartung: Ja - angesichts der potenziell hochrangigen bedrohten Rechtsgüter (Leben,
+      Gesundheit einer Vielzahl von Personen) war die großräumige, zeitlich auf die
+      Gefahraufklärung begrenzte Absperrung geeignet, erforderlich und angemessen,
       auch wenn einzelne Reisende dadurch Nachteile wie einen verpassten Zug erlitten.
   - prompt: Ist der Einwand des R durchgreifend, die Maßnahme sei rechtswidrig, weil
       sich im Nachhinein keine echte Gefahr bestätigt habe?
-    erwartung: Nein - für die Rechtmäßigkeitsbeurteilung ist die Ex-ante-Sicht
-      eines pflichtgemäß handelnden Amtsträgers maßgeblich, nicht das später
-      bekannt gewordene tatsächliche Ergebnis. Der Einwand des R geht daher fehl.
+    erwartung: Nein - für die Rechtmäßigkeitsbeurteilung ist die Ex-ante-Sicht eines
+      pflichtgemäß handelnden Amtsträgers maßgeblich, nicht das später bekannt gewordene
+      tatsächliche Ergebnis. Der Einwand des R geht daher fehl.
   expectation:
     pruefpunkte:
     - id: p1
@@ -236,7 +270,10 @@ faelle:
       required: true
       keywords:
       - Anscheinsgefahr
-      - Ex-ante
+      - ex ante
+      - Ex-ante-Sicht
+      - kein Gefahrenverdacht
+      - objektiv keine Gefahr
       card_slugs:
       - or-sr-anscheinsgefahr
       - or-sr-gefahrenverdacht
@@ -246,45 +283,76 @@ faelle:
       weight: 2.5
       required: true
       keywords:
-      - gleichgestellt
+      - der Gefahr gleichgestellt
+      - einer echten Gefahr gleichgestellt
       - sorgfältige Prognose
-      - pflichtgemäß
+      - pflichtgemäße Prognose
+      - pflichtgemäß handelnden Amtsträger
       card_slugs:
       - or-sr-anscheinsgefahr
     - id: p3
-      label: Subsidiaritätsprüfung gegenüber Standardmaßnahmen zumindest angesprochen
-      weight: 1.5
-      required: false
+      label: 'Platzverweis als Standardmaßnahme erkannt: Vorrang und Sperrwirkung
+        gegenüber der Generalklausel geprüft'
+      weight: 2.0
+      required: true
       keywords:
-      - Subsidiarität
+      - Platzverweis
       - Standardmaßnahme
-      - Generalklausel
+      - Sperrwirkung
+      - Vorrang der Standardmaßnahme
+      - Generalklausel ist gesperrt
+      - Art. 16 PAG
+      - § 34 PolG NRW
+      - § 29 ASOG
       card_slugs:
       - or-sr-subsidiaritaet-generalklausel
     - id: p4
-      label: Verhältnismäßigkeitsprüfung mit Abwägung Rechtsgüter vs. Nachteil
-        des R durchgeführt
+      label: 'Adressaten als Nichtstörer eingeordnet: Voraussetzungen des polizeilichen
+        Notstands und Entschädigungsanspruch angesprochen'
+      weight: 1.5
+      required: false
+      keywords:
+      - Nichtstörer
+      - polizeilicher Notstand
+      - Notstand
+      - Entschädigungsanspruch
+      - Ausgleichsanspruch
+      - weder Handlungs- noch Zustandsstörer
+      card_slugs:
+      - or-sr-stoererbegriffe
+    - id: p5
+      label: Verhältnismäßigkeitsprüfung mit Abwägung Rechtsgüter vs. Nachteil des
+        R durchgeführt
       weight: 2.0
       required: true
       keywords:
       - Verhältnismäßigkeit
-      - geeignet
-      - erforderlich
-      - angemessen
+      - Geeignetheit
+      - Erforderlichkeit
+      - Angemessenheit
+      - hochrangige Rechtsgüter
+      - Leben und Gesundheit
       card_slugs:
       - or-sr-verhaeltnismaessigkeit-eingriffsgrundlage
-    - id: p5
+    - id: p6
       label: Einwand des R zur Ex-post-Betrachtung zutreffend zurückgewiesen
       weight: 1.5
       required: false
       keywords:
-      - Ex-ante maßgeblich
-      - nicht rückwirkend rechtswidrig
+      - Ex-ante-Sicht maßgeblich
+      - ex ante maßgeblich
+      - Ex-post-Betrachtung ist unerheblich
+      - späteres Ergebnis unerheblich
+      - Einwand des R greift nicht
+      - Einwand des R geht fehl
       card_slugs:
       - or-sr-anscheinsgefahr
-    - id: p6
+    - id: p7
       label: 'Ergebnis: Maßnahme rechtmäßig'
       weight: 0.5
       required: false
       keywords:
-      - rechtmäßig
+      - Absperrung war rechtmäßig
+      - Maßnahme war rechtmäßig
+      - Platzverweis war rechtmäßig
+      - Maßnahme ist rechtmäßig
