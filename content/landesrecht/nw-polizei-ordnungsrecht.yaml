@@ -73,8 +73,7 @@ cards:
   front: Welche Standardmaßnahmen enthält das PolG NRW und welche Wirkung haben sie?
   back: 'Das PolG NRW regelt die Standardmaßnahmen in §§ 9 ff.: u. a. Befragung und Auskunftspflicht (§
     9), Identitätsfeststellung (§ 12), Platzverweisung und Aufenthaltsverbot (§ 34), Gewahrsam (§ 35),
-    Durchsuchung von Personen (§ 39) und Sicherstellung (§ 43). Für Ordnungsbehörden gelten diese Befugnisse
-    über § 24 OBG NRW entsprechend (Verweisung auf das PolG). Die Standardmaßnahmen sind abschließend:
+    Durchsuchung von Personen (§ 39) und Sicherstellung (§ 43). Die Ordnungsbehörden haben eigene, den polizeilichen Befugnissen nachgebildete Standardbefugnisse in §§ 24 ff. OBG NRW (z. B. Identitätsfeststellung § 24c, Platzverweisung und Aufenthaltsverbot § 24o seit 1. Juli 2026, Gewahrsam § 24p OBG NRW). Die Standardmaßnahmen sind abschließend:
     Fehlt eine Voraussetzung, darf die Generalklausel nicht zur Umgehung herangezogen werden (Sperrwirkung).
     Freiheitsentziehung steht unter Richtervorbehalt (Art. 104 Abs. 2 GG).'
   norms:
@@ -90,13 +89,9 @@ cards:
 - slug: nw-por-platzverweis
   type: norm
   front: Was setzt der Platzverweis nach § 34 PolG NRW voraus?
-  back: 'Nach § 34 PolG NRW kann die Polizei zur Abwehr einer Gefahr oder zur Beseitigung einer Störung
-    eine Person vorübergehend von einem Ort verweisen oder ihr das Betreten eines Ortes vorübergehend
-    verbieten. Daneben ist ein Aufenthaltsverbot für einen bestimmten Bereich möglich; die Wohnungsverweisung
+  back: 'Nach § 34 Abs. 1 PolG NRW kann die Polizei zur Abwehr einer Gefahr eine Person vorübergehend von einem Ort verweisen oder ihr das Betreten eines Ortes vorübergehend verbieten; das gilt ferner gegen eine Person, die den Einsatz der Feuerwehr oder von Hilfs- oder Rettungsdiensten behindert. Daneben ist nach § 34 Abs. 2 PolG NRW ein Aufenthaltsverbot für einen bestimmten örtlichen Bereich (Gemeindegebiet oder Gebietsteil) für eine bestimmte Zeit, höchstens drei Monate, möglich, wenn Tatsachen die Annahme rechtfertigen, dass die Person dort eine Straftat begehen oder zu ihrer Begehung beitragen wird; die Wohnungsverweisung
     bei häuslicher Gewalt ist gesondert geregelt. Platzverweis ist ein Verwaltungsakt, der mit der Androhung
-    unmittelbaren Zwangs durchgesetzt werden kann. Auch gegen Personen, von denen die Gefahr nicht ausgeht
-    (etwa Gaffer), kann ein Platzverweis in Betracht kommen; Verantwortlichkeit und Verhältnismäßigkeit
-    sind dann besonders sorgfältig zu prüfen (vgl. § 6 PolG NRW). Typische Fälle: Randalierer bei Veranstaltung,
+    unmittelbaren Zwangs durchgesetzt werden kann. Auch gegen Personen, die den Einsatz von Feuerwehr oder Rettungsdiensten behindern (etwa Gaffer), kann ein Platzverweis angeordnet werden (§ 34 Abs. 1 S. 2 PolG NRW); die Verhältnismäßigkeit ist dann besonders sorgfältig zu prüfen. Typische Fälle: Randalierer bei Veranstaltung,
     Behinderung von Rettungskräften (Gaffer), Aufenthalt in Szenen der Drogenkriminalität. Rechtsschutz
     nach Erledigung: Fortsetzungsfeststellungsklage analog § 113 Abs. 1 S. 4 VwGO.'
   norms:
@@ -189,8 +184,7 @@ cards:
 - slug: nw-por-zustaendigkeit
   type: definition
   front: Wer ist in NRW für die Gefahrenabwehr zuständig - Ordnungsbehörde oder Polizei?
-  back: 'Die allgemeine Gefahrenabwehr ist Aufgabe der Ordnungsbehörden (§ 1 OBG NRW): Dies sind insbesondere
-    die Gemeinden als örtliche Ordnungsbehörden (Bürgermeister), Kreise und Bezirksregierungen. Die Polizei
+  back: 'Die allgemeine Gefahrenabwehr ist Aufgabe der Ordnungsbehörden (§ 1 OBG NRW): Die Aufgaben der örtlichen Ordnungsbehörden nehmen die Gemeinden wahr, die der Kreisordnungsbehörden die Kreise und kreisfreien Städte; Landesordnungsbehörden sind die Bezirksregierungen (§ 3 OBG NRW). Für die Gefahrenabwehr sind grundsätzlich die örtlichen Ordnungsbehörden zuständig (§ 5 Abs. 1 OBG NRW). Die Polizei
     wird tätig, wenn die Abwehr durch eine andere Behörde nicht oder nicht rechtzeitig möglich erscheint
     (§ 1 Abs. 1 S. 3 PolG NRW) und in den ihr besonders zugewiesenen Aufgaben (z. B. Strafverfolgung als
     Ermittlungsperson, Vollzugshilfe). Ein Handeln der unzuständigen Stelle macht die Maßnahme formell

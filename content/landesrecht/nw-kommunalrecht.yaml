@@ -14,11 +14,7 @@ cards:
 - slug: nw-kom-organe
   type: norm
   front: Welche Organe hat die Gemeinde nach der GO NRW?
-  back: Organe der Gemeinde sind der Rat und der Bürgermeister. Der Rat ist die Vertretung der Bürgerschaft
-    und das Hauptorgan der Gemeinde (§ 40 GO NRW); er legt die Grundsätze der Verwaltung fest und überwacht
-    ihre Durchführung. Der Bürgermeister wird in Nordrhein-Westfalen von den Bürgern direkt gewählt, ist
-    Vorsitzender des Rates, Leiter der Verwaltung und repräsentiert die Gemeinde (§ 62 GO NRW). Die Gemeinde
-    wird nach außen durch den Bürgermeister vertreten. Die Ausschüsse des Rates bereiten Entscheidungen
+  back: Organe der Gemeinde sind der Rat und der Bürgermeister. Die Bürgerschaft wird durch den Rat und den Bürgermeister vertreten; der Rat besteht aus den gewählten Ratsmitgliedern und dem Bürgermeister als Mitglied kraft Gesetzes (§ 40 Abs. 2 GO NRW). Der Rat ist für alle Angelegenheiten der Gemeindeverwaltung zuständig, soweit die GO nichts anderes bestimmt; die allgemeinen Grundsätze der Verwaltung kann er nicht übertragen (§ 41 Abs. 1 GO NRW). Der Bürgermeister wird von den Bürgerinnen und Bürgern direkt gewählt (§ 65 GO NRW), führt den Vorsitz im Rat und hat im Rat Stimmrecht (§ 40 Abs. 2 GO NRW), ist verantwortlich für die Leitung und Beaufsichtigung des Geschäftsgangs der gesamten Verwaltung und bereitet die Ratsbeschlüsse vor und führt sie durch (§ 62 GO NRW). Gesetzlicher Vertreter der Gemeinde in Rechts- und Verwaltungsgeschäften ist der Bürgermeister (§ 63 Abs. 1 GO NRW). Die Ausschüsse des Rates bereiten Entscheidungen
     vor oder entscheiden anstelle des Rates, soweit dieser Aufgaben übertragen hat. Die Verfassung folgt
     der Einheitsspitze mit Bürgermeister als Verwaltungschef.
   norms:
@@ -33,9 +29,7 @@ cards:
   front: Wie sind die Zuständigkeiten von Rat und Bürgermeister abgegrenzt?
   back: 'Der Rat ist für alle Angelegenheiten der Gemeinde zuständig, soweit das Gesetz nichts anderes
     bestimmt (Allzuständigkeit, § 41 GO NRW); § 41 Abs. 1 enthält einen Katalog nicht übertragbarer Angelegenheiten
-    (z. B. Satzungen, Haushalt, wichtige Verträge). Der Bürgermeister entscheidet in Geschäften der laufenden
-    Verwaltung, die nach Regelmäßigkeit und Bedeutung nicht in den Rat gehören, und in Eilfällen (Dringlichkeitsentscheidung
-    mit nachträglicher Genehmigung). Handelt der Bürgermeister in einer Rat-Angelegenheit, ist die Zuständigkeit
+    (z. B. Satzungen, Haushalt, wichtige Verträge). Geschäfte der laufenden Verwaltung gelten im Namen des Rates als auf den Bürgermeister übertragen, soweit der Rat sich nicht einen bestimmten Kreis von Geschäften oder den Einzelfall vorbehält (§ 41 Abs. 3 GO NRW). In Eilfällen entscheidet nach § 60 Abs. 1 GO NRW zunächst der Hauptausschuss (Eilentscheidung); ist auch dessen Einberufung nicht rechtzeitig möglich, kann der Bürgermeister mit einem Ratsmitglied entscheiden (Dringlichkeitsentscheidung); beide Entscheidungen sind dem Rat in der nächsten Sitzung zur Genehmigung vorzulegen. Handelt der Bürgermeister in einer Rat-Angelegenheit, ist die Zuständigkeit
     verletzt. Zu unterscheiden sind Innenzuständigkeit (organschaftlich) und Vertretungsmacht nach außen
     (§ 63, § 64 GO NRW): Formverstöße der Vertretung berühren die Wirksamkeit gegenüber Dritten.'
   norms:
@@ -50,9 +44,7 @@ cards:
 - slug: nw-kom-verpflichtung
   type: norm
   front: Welche Form gilt für Verpflichtungserklärungen der Gemeinde in NRW?
-  back: Erklärungen, durch die die Gemeinde verpflichtet werden soll, bedürfen der Schriftform (§ 64 GO
-    NRW). Sie sind grundsätzlich vom Bürgermeister oder seinem Vertreter und einem weiteren vertretungsberechtigten
-    Bediensteten handschriftlich zu unterzeichnen. Ausnahmen gelten für Geschäfte der laufenden Verwaltung.
+  back: Erklärungen, durch die die Gemeinde verpflichtet werden soll, bedürfen nach § 64 Abs. 1 GO NRW (Fassung seit 17. Juli 2025) der Textform nach § 126b BGB und sind durch den Bürgermeister oder die zur Vertretung im Amt bestellte Person zu unterzeichnen. Die Formvorschrift gilt nicht für Geschäfte der laufenden Verwaltung, die für die Gemeinde geldlich nicht von erheblicher Bedeutung sind, und für Geschäfte auf Grund einer in der Form des Absatzes 1 ausgestellten Vollmacht (§ 64 Abs. 2 GO NRW). Frühere Fassungen der Vorschrift verlangten Schriftform und teilweise zwei Unterschriften; für Altfälle ist die zum Zeitpunkt der Erklärung geltende Fassung maßgeblich.
     Wird die Form nicht eingehalten, fehlt dem Vertreter die Vertretungsmacht; der Vertrag ist schwebend
     unwirksam und kann durch formgerechte Genehmigung wirksam werden (§ 177 BGB analog). Ein Vertrauensschutz
     des Vertragspartners besteht nicht, weil die Vorschrift die Gemeinde schützt und für jedermann erkennbar
@@ -73,9 +65,7 @@ cards:
     Vorteil oder Nachteil bringen kann (§ 31 GO NRW, für Ratsmitglieder anwendbar über § 43 GO NRW). Bei
     Gruppeninteressen, die nur die Zugehörigkeit zu einer Berufs- oder Bevölkerungsgruppe betreffen, greift
     der Ausschluss nicht. Das befangene Mitglied hat die Befangenheit anzuzeigen und den Sitzungsraum
-    zu verlassen. Hat ein Befangener mitgewirkt, ist der Beschluss rechtswidrig; ob er unwirksam ist,
-    hängt von den Regelungen des § 31 GO NRW über die Kausalität und Heilung ab. Die Mitwirkung ist für
-    das Ergebnis erheblich, wenn ohne die Stimme eine andere Mehrheit bestanden hätte.
+    zu verlassen. Die Mitwirkung eines wegen Befangenheit Betroffenen kann nach Beendigung der Abstimmung nur geltend gemacht werden, wenn sie für das Abstimmungsergebnis entscheidend war (§ 31 Abs. 6 GO NRW); das ist der Fall, wenn ohne die Stimme eine andere Mehrheit bestanden hätte.
   norms:
   - § 31 GO NRW
   - § 43 GO NRW
@@ -89,12 +79,7 @@ cards:
   back: 'Die Gemeinde kann ihre Angelegenheiten durch Satzung regeln, soweit Gesetze nichts anderes bestimmen
     (§ 7 Abs. 1 GO NRW); das folgt aus Art. 28 Abs. 2 GG. Eingriffe in Grundrechte erfordern eine gesetzliche
     Ermächtigung (Wesentlichkeitstheorie). Formal sind Ratsbeschluss, Ausfertigung und öffentliche Bekanntmachung
-    notwendig. Nach § 7 Abs. 6 GO NRW wird die Verletzung von Verfahrens- oder Formvorschriften unbeachtlich,
-    wenn sie nicht innerhalb einer Frist nach Bekanntmachung gerügt wird (Heilung); dies gilt insbesondere
-    nicht, wenn die Satzung nicht ordnungsgemäß öffentlich bekannt gemacht wurde, bei fehlendem Hinweis
-    auf die Rügefrist und bei rechtzeitiger Rüge. Materielle Fehler werden nicht geheilt. Rechtsschutz:
-    Normenkontrolle nach § 47 VwGO, soweit das Landesrecht sie eröffnet, sonst inzidente Kontrolle im
-    Verfahren gegen den Vollzugsakt.'
+    notwendig. Nach § 7 Abs. 6 GO NRW kann die Verletzung von Verfahrens- oder Formvorschriften der GO gegen Satzungen nach Ablauf von sechs Monaten seit ihrer Verkündung nicht mehr geltend gemacht werden, es sei denn, eine vorgeschriebene Genehmigung fehlt oder ein vorgeschriebenes Anzeigeverfahren wurde nicht durchgeführt, die Satzung ist nicht ordnungsgemäß öffentlich bekannt gemacht worden, der Bürgermeister hat den Ratsbeschluss vorher beanstandet oder der Mangel ist gegenüber der Gemeinde vorher gerügt worden. Bei der Bekanntmachung ist auf diese Rechtsfolgen hinzuweisen. Materielle Fehler werden nicht geheilt. Rechtsschutz: Normenkontrolle nach § 47 Abs. 1 Nr. 2 VwGO i. V. m. § 109a JustG NRW (Zuständigkeit des OVG), daneben inzidente Kontrolle im Verfahren gegen den Vollzugsakt.'
   norms:
   - § 7 GO NRW
   - Art. 28 Abs. 2 GG
@@ -108,9 +93,7 @@ cards:
   front: Wann besteht ein Anspruch auf Zulassung zu einer öffentlichen Einrichtung?
   back: 'Die Gemeinde schafft die für ihre Einwohner erforderlichen öffentlichen Einrichtungen (§ 8 Abs.
     1 GO NRW). Alle Einwohner sind im Rahmen der bestehenden Vorschriften berechtigt, die öffentlichen
-    Einrichtungen zu benutzen (§ 8 Abs. 2 GO NRW), und verpflichtet, die Lasten zu tragen. Der Anspruch
-    besteht im Rahmen von Widmung und Kapazität; juristische Personen und auswärtige Personen können nach
-    der Widmung zugelassen sein. Grenzen bilden Art. 3 Abs. 1 GG und bei Parteien § 5 PartG (Gleichbehandlung
+    Einrichtungen zu benutzen (§ 8 Abs. 2 GO NRW), und verpflichtet, die Lasten zu tragen. Der Anspruch besteht im Rahmen von Widmung und Kapazität; für Grundbesitzer und Gewerbetreibende ohne Wohnsitz in der Gemeinde gilt § 8 Abs. 3 GO NRW, für juristische Personen und Personenvereinigungen § 8 Abs. 4 GO NRW entsprechend. Grenzen bilden Art. 3 Abs. 1 GG und bei Parteien § 5 PartG (Gleichbehandlung
     im Rahmen der Widmung). Ein Ausschluss wegen der politischen Ausrichtung kommt nach dem Parteienprivileg
     (Art. 21 Abs. 4 GG) solange nicht in Betracht, wie das BVerfG die Verfassungswidrigkeit der Partei
     nicht festgestellt hat (Art. 21 Abs. 2 GG). Zweistufentheorie: Zulassung als Verwaltungsakt, Nutzungsverhältnis
@@ -127,9 +110,7 @@ cards:
 - slug: nw-kom-anschlusszwang
   type: definition
   front: Was ist der Anschluss- und Benutzungszwang?
-  back: Die Gemeinde kann aus Gründen des öffentlichen Wohls durch Satzung den Anschluss an Einrichtungen
-    wie Wasserversorgung, Abwasserbeseitigung und Fernwärme sowie deren Benutzung vorschreiben (§ 9 GO
-    NRW). Der Zwang greift in Art. 2 Abs. 1 und Art. 14 GG ein, ist aber durch Gründe des Gemeinwohls
+  back: Die Gemeinde kann bei öffentlichem Bedürfnis durch Satzung für die Grundstücke ihres Gebiets den Anschluss an Wasserleitung, Kanalisation und ähnliche der Volksgesundheit dienende Einrichtungen sowie an Einrichtungen zur Versorgung mit Fernwärme (Anschlusszwang) und die Benutzung dieser Einrichtungen und der Schlachthöfe (Benutzungszwang) vorschreiben (§ 9 GO NRW); die Satzung kann Ausnahmen zulassen und den Zwang auf bestimmte Gebietsteile oder Gruppen beschränken. Der Zwang greift in Art. 2 Abs. 1 und Art. 14 GG ein, ist aber durch Gründe des Gemeinwohls
     gerechtfertigt (Volksgesundheit, Umwelt- und Klimaschutz). Er ist verhältnismäßig, wenn Ausnahmen
     für unzumutbare Härten bestehen. Als Satzungsregelung bedarf er einer wirksamen Satzung; die Konkretisierung
     erfolgt durch Verwaltungsakt.
@@ -143,8 +124,7 @@ cards:
 - slug: nw-kom-aufsicht
   type: definition
   front: Welche Aufsichtsformen und Mittel kennt die GO NRW?
-  back: Die Gemeinden unterliegen der Kommunalaufsicht (§§ 119 ff. GO NRW). Bei Selbstverwaltungsaufgaben
-    ist sie Rechtsaufsicht, bei Weisungsaufgaben Fachaufsicht. Die Aufsichtsbehörde (Landrat bzw. Bezirksregierung
+  back: Die Gemeinden unterliegen der Kommunalaufsicht (§§ 119 ff. GO NRW). Die allgemeine Aufsicht (§ 119 Abs. 1 GO NRW) sichert die Verwaltung im Einklang mit den Gesetzen; bei Weisungsaufgaben richtet sich die Aufsicht als Sonderaufsicht nach den hierfür erlassenen Gesetzen (§ 119 Abs. 2 GO NRW). Die Aufsichtsbehörde (Landrat bzw. Bezirksregierung
     bzw. Ministerium) prüft die Rechtmäßigkeit, nicht die Zweckmäßigkeit. Mittel sind Unterrichtung, Beanstandung
     rechtswidriger Beschlüsse, Anordnung bestimmter Maßnahmen, Ersatzvornahme und Bestellung eines Beauftragten.
     Die Aufsicht steht im Ermessen; sie dient dem öffentlichen Interesse, ein Dritter hat keinen Anspruch

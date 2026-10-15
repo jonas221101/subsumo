@@ -15,13 +15,10 @@ cards:
   type: norm
   front: Welche Verfahrensarten kennt die LBO BW?
   back: >-
-    Die LBO BW unterscheidet verfahrensfreie Vorhaben (§ 50 LBO BW mit Anhang), das Kenntnisgabeverfahren
-    (§ 51 LBO BW; bestimmte Wohnbauvorhaben im Geltungsbereich eines qualifizierten Bebauungsplans),
+    Die LBO BW unterscheidet verfahrensfreie Vorhaben (§ 50 LBO BW mit Anhang), das Kenntnisgabeverfahren (§ 51 LBO BW; u. a. Wohngebäude und sonstige Gebäude der Gebäudeklassen 1 bis 3 außer Gaststätten, bei Vorliegen der Voraussetzungen des § 51 Abs. 2 LBO BW, insbesondere planungsrechtlicher Art),
     das vereinfachte Baugenehmigungsverfahren (§ 52 LBO BW) und das reguläre Baugenehmigungsverfahren.
-    Auch verfahrensfreie Vorhaben müssen dem materiellen Recht genügen (§ 50 LBO BW); sie sind
-    nur von der Pflicht zur Durchführung eines Genehmigungsverfahrens befreit. Im vereinfachten Verfahren
-    beschränkt sich die Prüfung der Behörde auf bestimmte Vorschriften, das Bauplanungsrecht und weitere
-    öffentlich-rechtliche Vorschriften werden aber geprüft. Die Baugenehmigung ist zu erteilen, wenn dem
+    Auch verfahrensfreie Vorhaben müssen dem materiellen Recht genügen (§ 50 Abs. 5 LBO BW); sie sind
+    nur von der Pflicht zur Durchführung eines Genehmigungsverfahrens befreit. Im vereinfachten Verfahren prüft die Baurechtsbehörde die Übereinstimmung mit dem Bauplanungsrecht (§§ 14 und 29 bis 38 BauGB), mit den Abstandsflächenvorschriften der §§ 5 bis 7 LBO BW und mit bestimmten anderen öffentlich-rechtlichen Vorschriften außerhalb der LBO (§ 52 Abs. 2 LBO BW); die übrigen bauordnungsrechtlichen Vorschriften sind nicht Prüfgegenstand. Die Baugenehmigung ist zu erteilen, wenn dem
     Vorhaben keine öffentlich-rechtlichen Vorschriften entgegenstehen (§ 58 Abs. 1 LBO BW).
   norms:
   - § 49 LBO BW
@@ -38,13 +35,10 @@ cards:
   front: >-
     Wann ist ein Vorhaben genehmigungspflichtig, und welche Rolle spielt der Begriff der baulichen Anlage?
   back: >-
-    Die Errichtung, Änderung, Nutzungsänderung und der Abbruch baulicher Anlagen bedürfen grundsätzlich
-    der Baugenehmigung, soweit nicht Ausnahmen (verfahrensfrei, Kenntnisgabe) greifen. Eine bauliche Anlage
+    Die Errichtung und der Abbruch baulicher Anlagen sowie der in § 50 aufgeführten anderen Anlagen und Einrichtungen bedürfen der Baugenehmigung, soweit in §§ 50, 51, 69 oder 70 LBO BW nichts anderes bestimmt ist (§ 49 LBO BW). Eine bauliche Anlage
     ist eine mit dem Erdboden verbundene, aus Bauprodukten hergestellte Anlage; als solche gelten auch
     bestimmte aufgeschüttete und ähnliche Anlagen. Entscheidend ist die Prüfung in zwei Schritten: Anlage
-    im Sinn der LBO BW, dann Verfahrensfreiheit nach dem Anhang zu § 50 LBO BW. Eine Nutzungsänderung
-    ist genehmigungspflichtig, wenn für die neue Nutzung andere öffentlich-rechtliche Anforderungen gelten
-    können. Das materielle Bauplanungsrecht (§§ 29 ff. BauGB) ist über die Prüfung nach § 58 LBO BW Bestandteil
+    im Sinn der LBO BW, dann Verfahrensfreiheit nach dem Anhang zu § 50 LBO BW. Eine Nutzungsänderung ist nach § 50 Abs. 2 LBO BW verfahrensfrei, wenn für die neue Nutzung keine anderen oder weitergehenden Anforderungen gelten als für die bisherige Nutzung oder wenn dadurch Wohnraum im Innenbereich geschaffen wird; andernfalls bedarf sie der Genehmigung. Das materielle Bauplanungsrecht (§§ 29 ff. BauGB) ist über die Prüfung nach § 58 LBO BW Bestandteil
     der Genehmigung.
   norms:
   - § 49 LBO BW
@@ -77,8 +71,7 @@ cards:
   front: Wie werden Abstandsflächen nach der LBO BW bemessen?
   back: >-
     Vor den Außenwänden von Gebäuden sind Abstandsflächen von oberirdischen Gebäuden freizuhalten (§ 5
-    LBO BW). Die Tiefe bemisst sich nach der Wandhöhe: in der Regel 0,4 der Wandhöhe, mindestens 2,5 m
-    (§ 5 Abs. 7 LBO BW). Die Abstandsflächen müssen auf dem Grundstück selbst liegen und dürfen sich nicht
+    LBO BW). Die Tiefe bemisst sich nach der Wandhöhe: allgemein 0,4 der Wandhöhe, in Kern-, Dorf-, urbanen und einigen weiteren Gebieten 0,2 und in Gewerbe- und Industriegebieten 0,125; sie darf 2,5 m, bei Wänden bis 5 m Breite 2 m, nicht unterschreiten (§ 5 Abs. 7 LBO BW). Die Abstandsflächen müssen auf dem Grundstück selbst liegen und dürfen sich nicht
     überdecken (Ausnahmen bestehen für zulässige Grenzbebauung). Sie dienen Belichtung, Belüftung, Brandschutz
     und Wahrung des Wohnfriedens. Abweichungen sind nach § 56 LBO BW unter Würdigung der nachbarlichen
     Interessen möglich. Die Vorschriften sind nachbarschützend, soweit sie dem Schutz des Nachbargrundstücks
@@ -95,11 +88,7 @@ cards:
   type: norm
   front: Wie werden Nachbarn am Baugenehmigungsverfahren beteiligt?
   back: >-
-    Die Gemeinde (Baurechtsbehörde) benachrichtigt die Angrenzer vom Bauantrag und gibt ihnen Gelegenheit,
-    innerhalb einer Frist Einwendungen vorzubringen (§ 55 LBO BW). Die Baugenehmigung wird dem Angrenzer,
-    der Einwendungen erhoben hat, zugestellt. Hat der Nachbar dem Bauvorhaben auf den Lageplänen zugestimmt, entfällt seine Benachrichtigung, und seine Zustimmung schließt spätere öffentlich-rechtliche Einwendungen weitgehend aus (§ 55 LBO BW). Die Beteiligung ist Grundlage
-    des Nachbarschutzes: Verletzt die Behörde sie, führt das nicht für sich allein zur Aufhebung der Genehmigung;
-    entscheidend ist die materielle Verletzung drittschützender Normen.
+    Soll eine Abweichung, Ausnahme oder Befreiung von nachbarschützenden Vorschriften erteilt werden, benachrichtigt die Gemeinde auf Veranlassung der Baurechtsbehörde die Angrenzer innerhalb von fünf Arbeitstagen ab Eingang der vollständigen Bauvorlagen (§ 55 Abs. 1 LBO BW); sonst ist keine Benachrichtigung vorgesehen. Einwendungen sind innerhalb von zwei Wochen nach Zustellung oder Bekanntgabe der Benachrichtigung vorzubringen; nicht fristgemäß geltend gemachte Einwendungen sind ausgeschlossen (materielle Präklusion, § 55 Abs. 2 LBO BW). Die Benachrichtigung entfällt bei Angrenzern, die in Textform zugestimmt oder die Bauvorlagen unterschrieben haben (§ 55 Abs. 1 S. 2 LBO BW). Die Baugenehmigung ist Angrenzern zuzustellen, deren Einwendungen nicht entsprochen wird oder deren geschützte Belange berührt sein können (§ 58 Abs. 1 LBO BW). Verletzt die Behörde die Beteiligungsvorschriften, führt das nicht für sich allein zur Aufhebung der Genehmigung; entscheidend ist die materielle Verletzung drittschützender Normen.
   norms:
   - § 55 LBO BW
   quellen:
