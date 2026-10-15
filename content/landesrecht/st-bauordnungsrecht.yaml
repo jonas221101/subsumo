@@ -170,7 +170,7 @@ cards:
       Anlage muss gewahrt sein. Einen aktiven Bestandsschutz, also einen unmittelbar aus Art. 14 GG
       abgeleiteten Anspruch auf Erweiterung oder Änderung, erkennt das Bundesverwaltungsgericht nicht
       mehr an. Bei Gefahren für Leben und Gesundheit lassen die Bauordnungen Anpassungsverlangen zu;
-      die Voraussetzungen sind nach der geltenden Fassung zu prüfen.
+      die Voraussetzungen ergeben sich aus der jeweiligen Landesbauordnung.
   norms:
   - "Art. 14 Abs. 1 GG"
   quellen:
@@ -244,10 +244,7 @@ faelle:
         nicht genehmigungsfähig.
   - prompt: "Ist die Beseitigung ermessensfehlerfrei und verhältnismäßig?"
     erwartung: >-
-        Ja. Ein milderes Mittel, etwa eine Duldung, scheidet aus, weil der Zustand dauerhaft
-        rechtswidrig bliebe und eine Gleichbehandlung mit rechtstreuen Bauherren dies verlangt.
-        Bestandsschutz besteht nicht, da das Haus nie legal war. Die Beseitigungsanordnung ist
-        rechtmäßig.
+        Ja. Die Anordnung ist ermessensfehlerfrei und verhältnismäßig: Eine dauerhafte Duldung würde den rechtswidrigen Zustand verfestigen und die Gleichbehandlung mit rechtstreuen Bauherren verletzen. Auf Bestandsschutz kann sich A nicht berufen, da das Haus nie legal war. Die Beseitigungsanordnung ist rechtmäßig.
   expectation:
     pruefpunkte:
     - id: p1
@@ -301,6 +298,9 @@ faelle:
       keywords:
       - "Verhältnismäßigkeit"
       - "Ermessen"
+      - "ermessensfehlerfrei"
+      - "verhältnismäßig"
+      - "Gleichbehandlung"
       - "Bestandsschutz"
       - "Duldung"
       - "milderes Mittel"

@@ -50,7 +50,7 @@ cards:
     unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer: Inhaber der tatsächlichen
     Gewalt bzw. Eigentümer einer gefährlichen Sache. Nichtstörer: Inanspruchnahme nur unter den engen
     Voraussetzungen des polizeilichen Notstands (gegenwärtige erhebliche Gefahr, Störer nicht greifbar,
-    Behörde selbst nicht in der Lage), mit Entschädigungsanspruch.'
+    Behörde selbst nicht in der Lage), mit Entschädigungsanspruch. Die Verantwortlichkeit knüpft an die objektive Zurechnung der Gefahr an, nicht an ein Verschulden. Bei mehreren Verantwortlichen trifft die Behörde die Auswahl nach pflichtgemäßem Ermessen (Störerauswahl).'
   norms:
   - §§ 4, 5, 6 SPolG
   quellen:
@@ -60,9 +60,7 @@ cards:
 - slug: sl-por-zustaendigkeit
   type: definition
   front: Wer ist in Saarland für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde oder Polizei?
-  back: 'Polizeiverwaltungsbehörden und Vollzugspolizei nach dem SPolG. Prüfungsrelevant ist die Abgrenzung:
-    Die allgemeine Gefahrenabwehr liegt grundsätzlich bei den Verwaltungs-/Ordnungsbehörden; der Polizeivollzugsdienst
-    wird tätig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere Zuweisung besteht.
+  back: 'Das SPolG unterscheidet zwischen den Polizeibehörden (Verwaltungsbehörden) und der Vollzugspolizei; welche Behörde sachlich und örtlich zuständig ist, ist dem SPolG zu entnehmen (Paragraphen hier nicht angegeben). Prüfungsrelevant ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich bei den Verwaltungsbehörden; die Vollzugspolizei wird tätig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere Zuweisung besteht.
     Ein Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig.'
   norms:
   - Saarländisches Polizeigesetz (SPolG)
@@ -76,7 +74,7 @@ cards:
   back: 'Saarländisches Verwaltungsvollstreckungsgesetz (SVwVG). Regelfall ist das gestreckte Verfahren:
     Grundverfügung - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme, Zwangsgeld,
     unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausführung ohne vorausgehenden
-    Verwaltungsakt möglich; die Kosten trägt der Pflichtige.'
+    Verwaltungsakt möglich; die Kosten trägt der Pflichtige. Voraussetzungen des gestreckten Verfahrens sind ein wirksamer und vollstreckbarer Verwaltungsakt (unanfechtbar oder sofort vollziehbar), die Androhung mit angemessener Frist und die Festsetzung. Das Zwangsmittel muss verhältnismäßig sein, unmittelbarer Zwang ist nur letztes Mittel. Die Kosten werden dem Pflichtigen durch Kostenbescheid auferlegt.'
   norms:
   - Saarländisches Verwaltungsvollstreckungsgesetz (SVwVG)
   quellen:
@@ -136,8 +134,7 @@ cards:
       Standardmaßnahmen sind typisierte Eingriffsbefugnisse mit eigenem Tatbestand: Befragung und
       Auskunftspflicht, Vorladung, Identitätsfeststellung, Platzverweisung und Aufenthaltsverbot,
       Gewahrsam, Durchsuchung von Personen und Sachen, Betreten und Durchsuchen von Wohnungen sowie
-      Sicherstellung und Beschlagnahme. Sie sind im SPolG geregelt; ob und wie die Befugnisse auch den
-      Ordnungs- bzw. Polizeibehörden zustehen, ist anhand der geltenden Fassung zu prüfen. Sie gehen
+      Sicherstellung und Beschlagnahme. Sie sind im SPolG geregelt; ob und in welchem Umfang die Befugnisse auch den Ordnungs- bzw. Polizeibehörden zustehen, richtet sich nach dem jeweiligen Landesgesetz. Sie gehen
       der Generalklausel als speziellere Normen vor; ist ihr Tatbestand nicht erfüllt, darf nicht ohne
       Weiteres auf die Generalklausel ausgewichen werden, soweit die Standardmaßnahme die Materie
       abschließend regelt. Verfassungsrechtliche Vorgaben sind zu beachten: Gewahrsam verlangt eine
@@ -264,14 +261,14 @@ schemata:
   - label: >-
       I. Ermächtigungsgrundlage: Gewahrsam als Standardmaßnahme
     hinweis: >-
-        Vorrang vor der Generalklausel; Gewahrsamsgründe im SPolG nach Fassung zitieren.
+        Vorrang vor der Generalklausel; Gewahrsamsgründe des SPolG als Tatbestand zitieren.
   - label: "II. Formelle Rechtmäßigkeit"
     children:
     - label: >-
         1. Zuständigkeit: Vollzugspolizei
     - label: >-
         2. Verfahren: Bekanntgabe von Grund und Rechtsfolgen, Benachrichtigung von Angehörigen
-      hinweis: "Verfahrensvorgaben nach Fassung prüfen."
+      hinweis: "Verfahrensvorgaben des SPolG zum Gewahrsam beachten."
   - label: "III. Materielle Rechtmäßigkeit"
     children:
     - label: >-

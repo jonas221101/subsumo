@@ -33,7 +33,7 @@ cards:
   front: 'Aufbau: Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Thüringen'
   back: 'I. Ermächtigungsgrundlage (Thüringer Polizeiaufgabengesetz (ThürPAG) und Thüringer Ordnungsbehördengesetz
     (ThürOBG): Standardmaßnahme vor Generalklausel). II. Formelle Rechtmäßigkeit: 1. Zuständigkeit (sachlich:
-    welche Behörde - Ordnungsbehörden primär (ThürOBG), Polizei bei Eilbedürftigkeit (§ 3 ThürPAG); örtlich;
+    welche Behörde - Ordnungsbehörden primär (ThürOBG), Polizei bei Eilbedürftigkeit (Eilzuständigkeit nach dem ThürPAG); örtlich;
     instanziell), 2. Verfahren (Anhörung nach dem jeweiligen Landesverwaltungsverfahrensgesetz), 3. Form.
     III. Materielle Rechtmäßigkeit: 1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose ex ante),
     2. richtiger Adressat (Störer: §§ 7, 8, 10 ThürPAG; §§ 10, 11, 12 ThürOBG), 3. Rechtsfolge: Ermessen
@@ -54,7 +54,7 @@ cards:
     verursacht (Theorie der unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer:
     Inhaber der tatsächlichen Gewalt bzw. Eigentümer einer gefährlichen Sache. Nichtstörer: Inanspruchnahme
     nur unter den engen Voraussetzungen des polizeilichen Notstands (gegenwärtige erhebliche Gefahr, Störer
-    nicht greifbar, Behörde selbst nicht in der Lage), mit Entschädigungsanspruch.'
+    nicht greifbar, Behörde selbst nicht in der Lage), mit Entschädigungsanspruch. Die Verantwortlichkeit knüpft an die objektive Zurechnung der Gefahr an, nicht an ein Verschulden. Bei mehreren Verantwortlichen trifft die Behörde die Auswahl nach pflichtgemäßem Ermessen (Störerauswahl).'
   norms:
   - §§ 7, 8, 10 ThürPAG
   - §§ 10, 11, 12 ThürOBG
@@ -65,10 +65,10 @@ cards:
 - slug: th-por-zustaendigkeit
   type: definition
   front: Wer ist in Thüringen für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde oder Polizei?
-  back: 'Ordnungsbehörden primär (ThürOBG), Polizei bei Eilbedürftigkeit (§ 3 ThürPAG). Prüfungsrelevant
+  back: 'Ordnungsbehörden primär (ThürOBG), Polizei bei Eilbedürftigkeit (Eilzuständigkeit nach dem ThürPAG; Paragraph hier nicht angegeben). Prüfungsrelevant
     ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich bei den Verwaltungs-/Ordnungsbehörden;
     der Polizeivollzugsdienst wird tätig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere
-    Zuweisung besteht. Ein Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig.'
+    Zuweisung besteht. Ein Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig. Die Eilzuständigkeit der Polizei setzt voraus, dass die zuständige Behörde nicht rechtzeitig handeln kann; die zuständige Stelle ist dann in der Regel unverzüglich zu unterrichten (Einzelheiten nach dem jeweiligen Landesgesetz).'
   norms:
   - Thüringer Polizeiaufgabengesetz (ThürPAG) und Thüringer Ordnungsbehördengesetz (ThürOBG)
   quellen:
@@ -81,7 +81,7 @@ cards:
   back: 'Thüringer Verwaltungszustellungs- und Vollstreckungsgesetz (ThürVwZVG). Regelfall ist das gestreckte
     Verfahren: Grundverfügung - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme,
     Zwangsgeld, unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausführung
-    ohne vorausgehenden Verwaltungsakt möglich; die Kosten trägt der Pflichtige.'
+    ohne vorausgehenden Verwaltungsakt möglich; die Kosten trägt der Pflichtige. Voraussetzungen des gestreckten Verfahrens sind ein wirksamer und vollstreckbarer Verwaltungsakt (unanfechtbar oder sofort vollziehbar), die Androhung mit angemessener Frist und die Festsetzung. Das Zwangsmittel muss verhältnismäßig sein, unmittelbarer Zwang ist nur letztes Mittel. Die Kosten werden dem Pflichtigen durch Kostenbescheid auferlegt.'
   norms:
   - Thüringer Verwaltungszustellungs- und Vollstreckungsgesetz (ThürVwZVG)
   quellen:
@@ -97,8 +97,7 @@ cards:
       Wahrscheinlichkeit in absehbarer Zeit zu einem Schaden für ein polizeiliches Schutzgut führt;
       maßgeblich ist die Prognose ex ante aus Sicht eines besonnenen Amtswalters. Konkrete Gefahr: im
       Einzelfall drohend, sie trägt Einzelmaßnahmen (Generalklausel, Standardmaßnahmen). Abstrakte
-      Gefahr: nach allgemeiner Lebenserfahrung typischerweise drohend, sie trägt nur den Erlass einer
-      ordnungsbehördliche Verordnung (ThürOBG). Qualifizierte Gefahren erhöhen die Anforderungen:
+      Gefahr: nach allgemeiner Lebenserfahrung typischerweise drohend, sie trägt nur den Erlass einer ordnungsbehördlichen Verordnung (ThürOBG). Qualifizierte Gefahren erhöhen die Anforderungen:
       erhebliche Gefahr (bedeutendes Rechtsgut), gegenwärtige Gefahr (Schadenseintritt hat begonnen
       oder steht unmittelbar bevor), Gefahr im Verzug (Abwarten würde den Erfolg der Maßnahme
       gefährden). Vom Gefahrenverdacht spricht man, wenn unklar ist, ob ein Schaden droht; hier kommt
@@ -143,8 +142,7 @@ cards:
       Standardmaßnahmen sind typisierte Eingriffsbefugnisse mit eigenem Tatbestand: Befragung und
       Auskunftspflicht, Vorladung, Identitätsfeststellung, Platzverweisung und Aufenthaltsverbot,
       Gewahrsam, Durchsuchung von Personen und Sachen, Betreten und Durchsuchen von Wohnungen sowie
-      Sicherstellung und Beschlagnahme. Sie sind im ThürPAG geregelt; ob und wie die Befugnisse auch
-      den Ordnungs- bzw. Polizeibehörden zustehen, ist anhand der geltenden Fassung zu prüfen. Sie
+      Sicherstellung und Beschlagnahme. Sie sind im ThürPAG geregelt; ob und in welchem Umfang die Befugnisse auch den Ordnungs- bzw. Polizeibehörden zustehen, richtet sich nach dem jeweiligen Landesgesetz. Sie
       gehen der Generalklausel als speziellere Normen vor; ist ihr Tatbestand nicht erfüllt, darf
       nicht ohne Weiteres auf die Generalklausel ausgewichen werden, soweit die Standardmaßnahme die
       Materie abschließend regelt. Verfassungsrechtliche Vorgaben sind zu beachten: Gewahrsam verlangt
@@ -332,9 +330,7 @@ faelle:
   - prompt: >-
         War die Auswahl des H ermessensfehlerfrei, und besteht eine Kostengrenze?
     erwartung: >-
-        Ja. Der unbekannte Fahrer stand für eine effektive Gefahrenabwehr nicht zur Verfügung; H war
-        bekannt, erreichbar und konnte die Beseitigung finanzieren. Die Kosten von 1.800 Euro sind nicht
-        unzumutbar und liegen weit unter dem Wert des Lieferwagens. Die Kostenpflicht des H besteht.
+        Ja. Die Störerauswahl liegt im Auswahlermessen der Behörde; maßgeblich ist die Effektivität der Gefahrenabwehr, eine feste Rangfolge gibt es nicht. Der unbekannte Fahrer stand für eine effektive Gefahrenabwehr nicht zur Verfügung; H war bekannt, erreichbar und konnte die Beseitigung finanzieren. Die Kostenlast von 1.800 Euro ist für H zumutbar und verhältnismäßig, denn sie liegt weit unter dem Wert des Lieferwagens. Die Kostenpflicht des H besteht.
   expectation:
     pruefpunkte:
     - id: p1
@@ -369,6 +365,7 @@ faelle:
       keywords:
       - "Störerauswahl"
       - "Effektivität"
+      - "effektive Gefahrenabwehr"
       - "Auswahlermessen"
       - "keine feste Rangfolge"
       card_slugs:
@@ -379,6 +376,7 @@ faelle:
       required: false
       keywords:
       - "Zumutbarkeit"
+      - "zumutbar"
       - "Kostenlast"
       - "Verhältnismäßigkeit"
       - "Wert der Sache"

@@ -17,8 +17,7 @@ cards:
       Welche Genehmigungsverfahren kennt die SächsBO, und wie verhält sich das Bauordnungsrecht zum
       Bauplanungsrecht?
   back: >-
-      Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedarf nach der Sächsische
-      Bauordnung (SächsBO) grundsätzlich der Baugenehmigung. Ausnahmen: verfahrensfreie Vorhaben
+      Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedarf nach der Sächsischen Bauordnung (SächsBO) grundsätzlich der Baugenehmigung. Ausnahmen: verfahrensfreie Vorhaben
       (kleine, unbedeutende Anlagen, die ein Katalog der SächsBO aufzählt), die
       Genehmigungsfreistellung für bestimmte Wohnbauvorhaben im Geltungsbereich qualifizierter
       Bebauungspläne (gegen vorherige Anzeige; die Gemeinde kann ein Genehmigungsverfahren verlangen)
@@ -168,7 +167,7 @@ cards:
       Anlage muss gewahrt sein. Einen aktiven Bestandsschutz, also einen unmittelbar aus Art. 14 GG
       abgeleiteten Anspruch auf Erweiterung oder Änderung, erkennt das Bundesverwaltungsgericht nicht
       mehr an. Bei Gefahren für Leben und Gesundheit lassen die Bauordnungen Anpassungsverlangen zu;
-      die Voraussetzungen sind nach der geltenden Fassung zu prüfen.
+      die Voraussetzungen ergeben sich aus der jeweiligen Landesbauordnung.
   norms:
   - "Art. 14 Abs. 1 GG"
   quellen:
@@ -214,8 +213,7 @@ faelle:
   facts: >-
       E ist Eigentümer einer Lagerhalle in einem durch Bebauungsplan festgesetzten Gewerbegebiet in
       Sachsen. Er baut zwei Räume zu Wohnungen um und vermietet sie ohne Baugenehmigung an Arbeiter
-      eines Subunternehmers, die dort dauerhaft wohnen. Die Wohnungen dienen weder einem
-      Betriebsinhaber noch einer Aufsichts- oder Bereitschaftsperson des Gewerbebetriebs. Die
+      eines Subunternehmers, die dort dauerhaft wohnen. Die Wohnungen dienen weder dem Betriebsinhaber oder einem Betriebsleiter noch einer Aufsichts- oder Bereitschaftsperson des Gewerbebetriebs. Die
       Bauaufsichtsbehörde erfährt davon und untersagt E durch Verfügung die Nutzung der Räume zu
       Wohnzwecken. E meint, die Bauaufsicht müsse zunächst prüfen, ob die Nutzung nicht doch
       genehmigungsfähig sei; er habe die Räume sicher und ordentlich hergerichtet.
@@ -233,8 +231,7 @@ faelle:
         Nutzungsänderung; eine Baugenehmigung liegt nicht vor.
   - prompt: "Ist die Nutzung auch materiell rechtswidrig?"
     erwartung: >-
-        Ja. Im Gewerbegebiet sind Wohnungen nach der BauNVO nur ausnahmsweise für Betriebsinhaber sowie
-        Aufsichts- und Bereitschaftspersonen zulässig (§ 8 BauNVO). Die Wohnnutzung durch Arbeiter eines
+        Ja. Im Gewerbegebiet sind Wohnungen nach der BauNVO nur ausnahmsweise für Aufsichts- und Bereitschaftspersonen sowie für Betriebsinhaber und Betriebsleiter zulässig, wenn sie dem Gewerbebetrieb zugeordnet und ihm gegenüber in Grundfläche und Baumasse untergeordnet sind (§ 8 Abs. 3 Nr. 1 BauNVO). Die Wohnnutzung durch Arbeiter eines
         Subunternehmers erfüllt diesen Ausnahmetatbestand nicht. Die Nutzung ist daher auch nicht
         genehmigungsfähig.
   - prompt: "Ist die Maßnahme ermessensfehlerfrei und verhältnismäßig?"
@@ -268,6 +265,7 @@ faelle:
       - "§ 8 BauNVO"
       keywords:
       - "§ 8 BauNVO"
+      - "§ 8 Abs. 3 Nr. 1 BauNVO"
       - "Gewerbegebiet"
       - "Betriebsinhaber"
       - "Aufsichts- und Bereitschaftspersonen"

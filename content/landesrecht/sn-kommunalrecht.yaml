@@ -62,7 +62,7 @@ cards:
       Wie sind die Zuständigkeiten von Gemeinderat und Bürgermeister in Sachsen verteilt, und welche
       Anforderungen gelten für Verpflichtungserklärungen?
   back: >-
-      Die Gemeinderat ist das Hauptorgan der Gemeinde und entscheidet über die grundlegenden
+      Der Gemeinderat ist das Hauptorgan der Gemeinde und entscheidet über die grundlegenden
       Angelegenheiten, insbesondere Satzungen, den Haushalt, wesentliche Vermögensverfügungen und die
       Grundsätze der Verwaltung. Der Bürgermeister leitet die Verwaltung, führt die Beschlüsse aus,
       erledigt die laufenden Angelegenheiten und vertritt die Gemeinde nach außen. Die Abgrenzung der
@@ -185,8 +185,7 @@ cards:
       Sonderinteresse des Betroffenen ohne weiteren Vollzugsakt; ein Vorteil, den er mit einer
       Vielzahl von Personen teilt (Gruppeninteresse), genügt regelmäßig nicht. Beispiel: Eigentümer
       eines Grundstücks im Plangebiet bei der Beschlussfassung über den Bebauungsplan. Das betroffene
-      Mitglied hat den Verhandlungsraum zu verlassen. Ein Verstoß ist ein Verfahrensfehler; der
-      Beschluss ist rechtswidrig, wenn die Mitwirkung für das Abstimmungsergebnis ausschlaggebend sein
+      Mitglied hat den Verhandlungsraum zu verlassen. Ein Verstoß ist ein Verfahrensfehler; der Beschluss ist (je nach Gemeindeordnung rechtswidrig oder unwirksam) fehlerhaft, wenn die Mitwirkung für das Abstimmungsergebnis ausschlaggebend sein
       konnte. Die Gemeindeordnungen enthalten Unbeachtlichkeits- und Heilungsvorschriften, die
       gesondert zu prüfen sind. Bei Satzungen können die Fehler nach Fristablauf unbeachtlich werden.
   norms:
@@ -217,7 +216,7 @@ schemata:
     - label: "1. Teilnahme an Beratung und Abstimmung trotz Verbots"
     - label: >-
         2. Kausalität: war die Stimme für das Ergebnis ausschlaggebend?
-      hinweis: "Ohne die Stimme des Befangenen Mehrheit prüfen."
+      hinweis: "Abstimmungsergebnis ohne die Stimme des Befangenen berechnen."
   - label: "III. Rechtsfolge für den Beschluss"
     children:
     - label: "1. Rechtswidrigkeit des Beschlusses"
@@ -244,8 +243,8 @@ faelle:
   steps:
   - prompt: "Liegt ein Mitwirkungsverbot vor?"
     erwartung: >-
-        Ja. Die Entscheidung kann R einen unmittelbaren Vorteil bringen: Als Eigentümer eines
-        Grundstücks im Plangebiet erfährt er einen erheblichen Wertzuwachs. Es handelt sich nicht um ein
+        Ja, es besteht ein Mitwirkungsverbot wegen Befangenheit. Die Entscheidung kann R einen unmittelbaren Vorteil bringen: Als Eigentümer eines
+        Grundstücks im Plangebiet erfährt er einen erheblichen Wertzuwachs (Sonderinteresse). Es handelt sich nicht um ein
         bloßes Gruppeninteresse, das R mit einer Vielzahl von Personen teilt.
   - prompt: "Welche Verpflichtung hatte R, und wie hat er sich verhalten?"
     erwartung: >-
@@ -253,8 +252,7 @@ faelle:
         teilnehmen und hätte den Beratungsraum verlassen müssen. Er hat stattdessen mitgestimmt.
   - prompt: "War die Mitwirkung für das Ergebnis ausschlaggebend?"
     erwartung: >-
-        Ja. Ohne die Stimme des R hätte der Beschluss keine Mehrheit gefunden (10 zu 10); die Mitwirkung
-        war kausal für das Ergebnis.
+        Ja. Die Stimme des R war ausschlaggebend: Mit ihr ergibt sich 11 zu 10, ohne sie bestünde Stimmengleichheit (10 zu 10) und der Plan wäre nicht beschlossen. Die Mitwirkung war damit kausal für das Ergebnis.
   - prompt: "Wie ist der Beschluss zu beurteilen?"
     erwartung: >-
         Der Beschluss ist verfahrensfehlerhaft zustande gekommen und damit formell rechtswidrig.
@@ -269,8 +267,11 @@ faelle:
       keywords:
       - "Mitwirkungsverbot"
       - "unmittelbarer Vorteil"
+      - "unmittelbaren Vorteil"
       - "Befangenheit"
+      - "befangen"
       - "Sonderinteresse"
+      - "Wertzuwachs"
       card_slugs:
       - "sn-kom-mitwirkung"
     - id: p2
@@ -291,7 +292,7 @@ faelle:
       keywords:
       - "ausschlaggebend"
       - "Stimme des R"
-      - "Mehrheit"
+      - "kausal"
       - "kausal für das Ergebnis"
       - "ohne die Stimme"
       card_slugs:
