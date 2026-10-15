@@ -4,6 +4,7 @@ import '../api.dart';
 import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
+import 'legal_links.dart';
 
 /// Anmeldung/Registrierung. Ab 800px zweigeteilt: links die Markenflaeche
 /// (Hero-Verlauf, Serifen-Claim), rechts das Formular. Darunter einspaltig
@@ -148,6 +149,8 @@ class _LoginPageState extends State<LoginPage> {
                   : 'Neu hier? Konto erstellen',
               onPressed: () => setState(() => _register = !_register),
             ),
+          const SizedBox(height: Spacing.lg),
+          const LegalLinks(),
         ],
       ),
     );
