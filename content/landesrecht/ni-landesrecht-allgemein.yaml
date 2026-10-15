@@ -27,10 +27,20 @@ cards:
   stand: 2026-09
 - slug: ni-lra-verfassungsgericht
   type: norm
-  front: Welche Verfahren stehen vor dem Niedersächsischen Staatsgerichtshof offen und wie verhält sich das zur Verfassungsbeschwerde zum BVerfG?
-  back: 'Zuständiges Gericht ist der Niedersächsische Staatsgerichtshof auf Grundlage der Niedersächsischen Verfassung (NV). Er entscheidet u. a. in Organstreitigkeiten, in Normenkontrollverfahren und über kommunale Verfassungsbeschwerden; Prüfungsmaßstab ist die Landesverfassung, Bundesrecht nur, soweit die Landesverfassung darauf verweist. Ob und in welchem Umfang einzelne Bürger Landesgrundrechte mit einer Individualverfassungsbeschwerde geltend machen können, richtet sich nach der NV und dem Gesetz über den Staatsgerichtshof und ist dort nachzulesen (redaktionell zu verifizieren). Daneben steht immer die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG), die gegenüber Landesverfassungsrechtsbehelfen eigenständig ist.'
+  front: Welche Verfahren stehen vor dem Niedersächsischen Staatsgerichtshof offen und wie verhält sich
+    das zur Verfassungsbeschwerde zum BVerfG?
+  back: 'Zuständig ist der Niedersächsische Staatsgerichtshof (Bückeburg) auf Grundlage der Niedersächsischen
+    Verfassung (NV). Er entscheidet unter anderem in Organstreitigkeiten, in Normenkontrollverfahren,
+    über kommunale Verfassungsbeschwerden und über Verfassungsbeschwerden von jedermann: Die Individualverfassungsbeschwerde
+    ist in Niedersachsen möglich, wenn der Beschwerdeführer geltend macht, durch die öffentliche Gewalt
+    des Landes in einem in der NV enthaltenen Recht verletzt zu sein. Sie setzt grundsätzlich die Erschöpfung
+    des Rechtswegs voraus. Prüfungsmaßstab ist die Landesverfassung, Bundesrecht nur, soweit die Landesverfassung
+    darauf verweist. Daneben steht immer die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG);
+    sie ist gegenüber der Landesverfassungsbeschwerde eigenständig, beide Verfahren können nebeneinander
+    betrieben werden.'
   norms:
   - Niedersächsische Verfassung (NV)
+  - Art. 93 Abs. 1 Nr. 4a GG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -39,14 +49,16 @@ cards:
   type: norm
   front: Welches Gesetz regelt die Kommunalverfassung in Niedersachsen und welche Hauptorgane hat die
     Gemeinde?
-  back: 'Niedersächsisches Kommunalverfassungsgesetz (NKomVG): Rat (§ 45), Verwaltungsausschuss (§ 74)
-    und Hauptverwaltungsbeamter (§ 80). Grundlage ist die Selbstverwaltungsgarantie (Art. 28 Abs. 2 GG
-    und Landesverfassung): eigenverantwortliche Regelung aller Angelegenheiten der örtlichen Gemeinschaft.
-    Klausurklassiker: Zuständigkeitsstreit zwischen Vertretung und Verwaltungsspitze, Kommunalverfassungsstreit,
+  back: 'Niedersächsisches Kommunalverfassungsgesetz (NKomVG): Hauptorgane der Gemeinde sind die Vertretung
+    (Rat), der Hauptausschuss (früher Verwaltungsausschuss) und die Hauptverwaltungsbeamtin bzw. der Hauptverwaltungsbeamte
+    (Bürgermeister). Der Rat trifft die grundlegenden Entscheidungen, der Hauptausschuss bereitet sie
+    vor und entscheidet in den ihm zugewiesenen Angelegenheiten, der Hauptverwaltungsbeamte leitet die
+    Verwaltung und vertritt die Gemeinde nach außen. Grundlage ist die Selbstverwaltungsgarantie (Art.
+    28 Abs. 2 GG und Landesverfassung): eigenverantwortliche Regelung aller Angelegenheiten der örtlichen
+    Gemeinschaft. Klausurklassiker: Zuständigkeitsstreit zwischen Vertretung und Verwaltungsspitze, Kommunalverfassungsstreit,
     Rechtsaufsicht.'
   norms:
-  - 'Niedersächsisches Kommunalverfassungsgesetz (NKomVG): Rat (§ 45), Verwaltungsausschuss (§ 74) und
-    Hauptverwaltungsbeamter (§ 80)'
+  - Niedersächsisches Kommunalverfassungsgesetz (NKomVG)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -54,11 +66,12 @@ cards:
 - slug: ni-lra-bauordnung
   type: norm
   front: Wie heißt die Bauordnung in Niedersachsen und wie ist eine Baugenehmigung zu prüfen?
-  back: 'Niedersächsische Bauordnung (NBauO). Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben keine
-    öffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungsbedürftigkeit (Errichtung, Änderung,
-    Nutzungsänderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulässigkeit nach §§ 29 ff. BauGB
-    (Bundesrecht), bauordnungsrechtliche Zulässigkeit nach der Landesbauordnung (Abstandsflächen, Gestaltung,
-    Stellplätze).'
+  back: Niedersächsische Bauordnung (NBauO). Ein Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben
+    keine öffentlich-rechtlichen Vorschriften entgegenstehen. Zu prüfen sind die Genehmigungsbedürftigkeit
+    (Errichtung, Änderung, Nutzungsänderung; keine Verfahrensfreiheit), die bauplanungsrechtliche Zulässigkeit
+    nach §§ 29 ff. BauGB (Bundesrecht) und die bauordnungsrechtliche Zulässigkeit nach der NBauO (Abstandsflächen,
+    Gestaltung, Stellplätze), soweit das jeweilige Verfahren sie zum Prüfprogramm macht. Die Baugenehmigung
+    ergeht unbeschadet der Rechte Dritter; bei Ablehnung ist die Verpflichtungsklage statthaft.
   norms:
   - Niedersächsische Bauordnung (NBauO)
   - §§ 29 ff. BauGB
@@ -69,10 +82,12 @@ cards:
 - slug: ni-lra-pflichtstoff
   type: definition
   front: Welche Landesrechtsgebiete gehören in Niedersachsen zum Pflichtstoff des Öffentlichen Rechts?
-  back: Polizei- und Ordnungsrecht (NPOG); Kommunalrecht (NKomVG); Bauordnungsrecht (NBauO). Landesrecht
-    wird im Examen fast nie isoliert, sondern eingebettet in eine verwaltungsprozessuale Einkleidung (Anfechtungs-/Verpflichtungsklage,
-    vorläufiger Rechtsschutz) geprüft - die Landesnorm ist die Ermächtigungsgrundlage, der Aufbau bleibt
-    der allgemeine.
+  back: Zum Pflichtstoff des Öffentlichen Rechts gehören in Niedersachsen das Polizei- und Ordnungsrecht
+    (Niedersächsisches Polizei- und Ordnungsbehördengesetz, NPOG), das Kommunalrecht (NKomVG) und das
+    Bauordnungsrecht (NBauO). Landesrecht wird im Examen fast nie isoliert geprüft, sondern in eine verwaltungsprozessuale
+    Einkleidung eingebettet (Anfechtungs- oder Verpflichtungsklage, vorläufiger Rechtsschutz). Die Landesnorm
+    liefert dann die Ermächtigungsgrundlage oder den Zuständigkeits- und Verfahrensmaßstab, der Aufbau
+    bleibt der allgemeine.
   norms: []
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)

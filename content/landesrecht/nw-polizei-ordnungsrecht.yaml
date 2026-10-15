@@ -13,221 +13,221 @@ topic:
 cards:
 - slug: nw-por-generalklausel
   type: norm
-  front: >-
-    Wo stehen die Generalklauseln in Nordrhein-Westfalen und wie verhalten sie sich zueinander?
-  back: >-
-    NRW trennt Polizei und Ordnungsbehörden: Die Polizei handelt nach § 8 Abs. 1 PolG NRW, die Ordnungsbehörden
+  front: Wo stehen die Generalklauseln in Nordrhein-Westfalen und wie verhalten sie sich zueinander?
+  back: 'NRW trennt Polizei und Ordnungsbehörden: Die Polizei handelt nach § 8 Abs. 1 PolG NRW, die Ordnungsbehörden
     nach § 14 Abs. 1 OBG NRW. Beide ermächtigen zu den notwendigen Maßnahmen, um eine im Einzelfall bestehende
     konkrete Gefahr für die öffentliche Sicherheit oder Ordnung abzuwehren. Beide Generalklauseln sind
     gegenüber Standardmaßnahmen und Spezialgesetzen subsidiär. Die Polizei ist nur im Rahmen des § 1 Abs.
     1 S. 3 PolG NRW zuständig, wenn die Gefahrenabwehr durch eine andere Behörde nicht oder nicht rechtzeitig
     möglich erscheint (Eilzuständigkeit). Die Rechtsfolge steht im pflichtgemäßen Ermessen, begrenzt durch
     den Verhältnismäßigkeitsgrundsatz. Wegen der Geltung des OBG für die Ordnungsbehörden gilt für die
-    Verantwortlichen nicht das PolG, sondern das OBG.
+    Verantwortlichen nicht das PolG, sondern das OBG.'
   norms:
   - § 8 Abs. 1 PolG NRW
   - § 14 Abs. 1 OBG NRW
   - § 1 PolG NRW
-  quellen: &id001
+  quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-por-gefahrbegriffe
   type: definition
-  front: >-
-    Welche Gefahrbegriffe sind zu unterscheiden und wo sind sie im NRW-Recht relevant?
-  back: >-
-    Konkrete Gefahr (§ 8 Abs. 1 PolG NRW, § 14 Abs. 1 OBG NRW): Sachlage, in der bei ungehindertem Ablauf
-    des Geschehens mit hinreichender Wahrscheinlichkeit in absehbarer Zeit ein Schaden für ein Schutzgut
-    eintritt; Maßstab ist die Prognose ex ante. Abstrakte Gefahr: typische Gefahrenlage, die nur den Erlass
-    von ordnungsbehördlichen Verordnungen (§ 25 OBG NRW) rechtfertigt, nicht den Einzelfalleingriff. Gegenwärtige
-    Gefahr: Der Schaden ist bereits eingetreten oder steht unmittelbar bevor; sie wird für gesteigerte
-    Befugnisse verlangt (z. B. Eingriffe gegenüber Nichtstörern). Erhebliche Gefahr: Gefahr für ein bedeutsames
-    Rechtsgut. Daneben steht die Gefahr im Verzug, die Zuständigkeitsfragen und Verfahrenserleichterungen
-    auslöst.
+  front: Welche Gefahrbegriffe sind zu unterscheiden und wo sind sie im NRW-Recht relevant?
+  back: 'Konkrete Gefahr (§ 8 Abs. 1 PolG NRW, § 14 Abs. 1 OBG NRW): Sachlage, in der bei ungehindertem
+    Ablauf des Geschehens mit hinreichender Wahrscheinlichkeit in absehbarer Zeit ein Schaden für ein
+    Schutzgut eintritt; Maßstab ist die Prognose ex ante. Abstrakte Gefahr: typische Gefahrenlage, die
+    nur den Erlass von ordnungsbehördlichen Verordnungen (§ 25 OBG NRW) rechtfertigt, nicht den Einzelfalleingriff.
+    Gegenwärtige Gefahr: Der Schaden ist bereits eingetreten oder steht unmittelbar bevor; sie wird für
+    gesteigerte Befugnisse verlangt (z. B. Eingriffe gegenüber Nichtstörern). Erhebliche Gefahr: Gefahr
+    für ein bedeutsames Rechtsgut. Daneben steht die Gefahr im Verzug, die Zuständigkeitsfragen und Verfahrenserleichterungen
+    auslöst.'
   norms:
   - § 8 Abs. 1 PolG NRW
   - § 14 Abs. 1 OBG NRW
   - § 25 OBG NRW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-por-schutzgueter
   type: definition
-  front: >-
-    Was sind die Schutzgüter öffentliche Sicherheit und öffentliche Ordnung?
-  back: >-
-    Öffentliche Sicherheit umfasst die Unversehrtheit der objektiven Rechtsordnung, der subjektiven Rechte
-    und Rechtsgüter des Einzelnen sowie des Staates und seiner Einrichtungen. Jeder Verstoß gegen Strafnormen
-    oder zwingende öffentlich-rechtliche Vorschriften ist eine Verletzung der öffentlichen Sicherheit.
-    Öffentliche Ordnung bezeichnet die ungeschriebenen Regeln für das Verhalten des Einzelnen in der Öffentlichkeit,
-    deren Befolgung nach den herrschenden sozialen und ethischen Anschauungen als unerlässliche Voraussetzung
-    eines geordneten staatsbürgerlichen Gemeinschaftslebens betrachtet wird. Das NRW-Recht (§ 8 PolG,
-    § 14 OBG) nennt beide Schutzgüter. Wegen des Bestimmtheitsgebots und der Wandelbarkeit sozialer Anschauungen
-    ist die öffentliche Ordnung im Examen zurückhaltend und mit Begründung zu bejahen (z. B. BVerfG zu
-    Versammlungen).
+  front: Was sind die Schutzgüter öffentliche Sicherheit und öffentliche Ordnung?
+  back: Öffentliche Sicherheit umfasst die Unversehrtheit der objektiven Rechtsordnung, der subjektiven
+    Rechte und Rechtsgüter des Einzelnen sowie des Staates und seiner Einrichtungen. Jeder Verstoß gegen
+    Strafnormen oder zwingende öffentlich-rechtliche Vorschriften ist eine Verletzung der öffentlichen
+    Sicherheit. Öffentliche Ordnung bezeichnet die ungeschriebenen Regeln für das Verhalten des Einzelnen
+    in der Öffentlichkeit, deren Befolgung nach den herrschenden sozialen und ethischen Anschauungen als
+    unerlässliche Voraussetzung eines geordneten staatsbürgerlichen Gemeinschaftslebens betrachtet wird.
+    Das NRW-Recht (§ 8 PolG, § 14 OBG) nennt beide Schutzgüter. Wegen des Bestimmtheitsgebots und der
+    Wandelbarkeit sozialer Anschauungen ist die öffentliche Ordnung im Examen zurückhaltend und mit Begründung
+    zu bejahen (z. B. BVerfG zu Versammlungen).
   norms:
   - § 8 Abs. 1 PolG NRW
   - § 14 Abs. 1 OBG NRW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-por-standardmassnahmen
   type: norm
-  front: >-
-    Welche Standardmaßnahmen enthält das PolG NRW und welche Wirkung haben sie?
-  back: >-
-    Das PolG NRW regelt die Standardmaßnahmen in §§ 9 ff.: u. a. Befragung und Auskunftspflicht (§ 9),
-    Identitätsfeststellung (§ 12), Platzverweisung und Aufenthaltsverbot (§ 34), Gewahrsam (§ 35), Durchsuchung
-    von Personen (§ 39) und Sicherstellung (§ 43). Für Ordnungsbehörden gelten diese Befugnisse über §
-    24 OBG NRW entsprechend (Verweisung auf das PolG). Die Standardmaßnahmen sind abschließend: Fehlt
-    eine Voraussetzung, darf die Generalklausel nicht zur Umgehung herangezogen werden (Sperrwirkung).
-    Freiheitsentziehung steht unter Richtervorbehalt (Art. 104 Abs. 2 GG).
+  front: Welche Standardmaßnahmen enthält das PolG NRW und welche Wirkung haben sie?
+  back: 'Das PolG NRW regelt die Standardmaßnahmen in §§ 9 ff.: u. a. Befragung und Auskunftspflicht (§
+    9), Identitätsfeststellung (§ 12), Platzverweisung und Aufenthaltsverbot (§ 34), Gewahrsam (§ 35),
+    Durchsuchung von Personen (§ 39) und Sicherstellung (§ 43). Für Ordnungsbehörden gelten diese Befugnisse
+    über § 24 OBG NRW entsprechend (Verweisung auf das PolG). Die Standardmaßnahmen sind abschließend:
+    Fehlt eine Voraussetzung, darf die Generalklausel nicht zur Umgehung herangezogen werden (Sperrwirkung).
+    Freiheitsentziehung steht unter Richtervorbehalt (Art. 104 Abs. 2 GG).'
   norms:
   - § 12 PolG NRW
   - § 34 PolG NRW
   - § 35 PolG NRW
   - § 43 PolG NRW
   - Art. 104 Abs. 2 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-por-platzverweis
   type: norm
   front: Was setzt der Platzverweis nach § 34 PolG NRW voraus?
-  back: >-
-    Nach § 34 PolG NRW kann die Polizei zur Abwehr einer Gefahr oder zur Beseitigung einer Störung eine
-    Person vorübergehend von einem Ort verweisen oder ihr das Betreten eines Ortes vorübergehend verbieten.
-    Daneben ist ein Aufenthaltsverbot für einen bestimmten Bereich möglich; die Wohnungsverweisung bei
-    häuslicher Gewalt ist gesondert geregelt. Platzverweis ist ein Verwaltungsakt, der mit der Androhung
-    unmittelbaren Zwangs durchgesetzt werden kann. Die Gefahr muss nicht vom Adressaten ausgehen, wenn
-    die Voraussetzungen gegen Nichtverantwortliche erfüllt sind (Notstand, § 6 PolG NRW). Typische Fälle:
-    Randalierer bei Veranstaltung, Behinderung von Rettungskräften (Gaffer), Aufenthalt in Szenen der
-    Drogenkriminalität. Rechtsschutz nach Erledigung: Fortsetzungsfeststellungsklage analog § 113 Abs.
-    1 S. 4 VwGO.
+  back: 'Nach § 34 PolG NRW kann die Polizei zur Abwehr einer Gefahr oder zur Beseitigung einer Störung
+    eine Person vorübergehend von einem Ort verweisen oder ihr das Betreten eines Ortes vorübergehend
+    verbieten. Daneben ist ein Aufenthaltsverbot für einen bestimmten Bereich möglich; die Wohnungsverweisung
+    bei häuslicher Gewalt ist gesondert geregelt. Platzverweis ist ein Verwaltungsakt, der mit der Androhung
+    unmittelbaren Zwangs durchgesetzt werden kann. Auch gegen Personen, von denen die Gefahr nicht ausgeht
+    (etwa Gaffer), kann ein Platzverweis in Betracht kommen; Verantwortlichkeit und Verhältnismäßigkeit
+    sind dann besonders sorgfältig zu prüfen (vgl. § 6 PolG NRW). Typische Fälle: Randalierer bei Veranstaltung,
+    Behinderung von Rettungskräften (Gaffer), Aufenthalt in Szenen der Drogenkriminalität. Rechtsschutz
+    nach Erledigung: Fortsetzungsfeststellungsklage analog § 113 Abs. 1 S. 4 VwGO.'
   norms:
   - § 34 PolG NRW
   - § 6 PolG NRW
   - § 113 Abs. 1 S. 4 VwGO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-por-verhaeltnismaessigkeit
   type: definition
   front: Wie wirken Verhältnismäßigkeit und Ermessen nach dem PolG NRW?
-  back: >-
-    Das PolG NRW enthält Regeln zum Ermessen und zur Verhältnismäßigkeit (§ 2 und § 3 PolG NRW; für Ordnungsbehörden
-    § 15 und § 16 OBG NRW). Die Polizei hat von mehreren möglichen und geeigneten Maßnahmen diejenige
-    zu treffen, die den Einzelnen und die Allgemeinheit voraussichtlich am wenigsten beeinträchtigt. Eine
-    Maßnahme darf nicht zu einem Nachteil führen, der erkennbar außer Verhältnis zum beabsichtigten Erfolg
-    steht. Sie ist nur solange zulässig, bis ihr Zweck erreicht ist oder sich zeigt, dass er nicht erreicht
-    werden kann. Prüfungsschema: legitimer Zweck, Eignung, Erforderlichkeit (mildestes Mittel), Angemessenheit.
-    Ermessensfehler (Nichtgebrauch, Überschreitung, Fehlgebrauch, § 40 VwVfG NRW, § 114 VwGO) führen zur
-    Rechtswidrigkeit.
+  back: 'Das PolG NRW enthält Regeln zum Ermessen und zur Verhältnismäßigkeit (§ 2 und § 3 PolG NRW; für
+    Ordnungsbehörden § 15 und § 16 OBG NRW). Die Polizei hat von mehreren möglichen und geeigneten Maßnahmen
+    diejenige zu treffen, die den Einzelnen und die Allgemeinheit voraussichtlich am wenigsten beeinträchtigt.
+    Eine Maßnahme darf nicht zu einem Nachteil führen, der erkennbar außer Verhältnis zum beabsichtigten
+    Erfolg steht. Sie ist nur solange zulässig, bis ihr Zweck erreicht ist oder sich zeigt, dass er nicht
+    erreicht werden kann. Prüfungsschema: legitimer Zweck, Eignung, Erforderlichkeit (mildestes Mittel),
+    Angemessenheit. Ermessensfehler (Nichtgebrauch, Überschreitung, Fehlgebrauch, § 40 VwVfG NRW, § 114
+    VwGO) führen zur Rechtswidrigkeit.'
   norms:
   - § 2 PolG NRW
   - § 3 PolG NRW
   - § 15 OBG NRW
   - § 16 OBG NRW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-por-anscheinsgefahr
   type: streitstand
-  front: >-
-    Anscheinsgefahr: Wer haftet für Einsatzkosten, wenn sich die Gefahr als Irrtum erweist?
-  back: >-
-    Eine Anscheinsgefahr liegt vor, wenn bei objektiver Betrachtung ex ante hinreichende Anhaltspunkte
+  front: 'Anscheinsgefahr: Wer haftet für Einsatzkosten, wenn sich die Gefahr als Irrtum erweist?'
+  back: 'Eine Anscheinsgefahr liegt vor, wenn bei objektiver Betrachtung ex ante hinreichende Anhaltspunkte
     für eine Gefahr bestehen, die sich später nicht bestätigt. Das behördliche Einschreiten ist rechtmäßig,
     weil die Prognose ex ante maßgeblich ist. Streitig ist, ob der Anscheinsverursacher als Störer in
     Anspruch genommen und zur Kostentragung herangezogen werden darf: Die h. M. bejaht dies, wenn er den
     Anschein veranlasst oder zurechenbar gesetzt hat; die Gegenansicht lehnt eine Störerhaftung wegen
     fehlender objektiver Gefahr ab und sieht nur den Nichtstörer. Bei der Putativgefahr (bloße Einbildung
     des Beamten) ist das Eingreifen rechtswidrig. Beim Gefahrenverdacht sind Gefahrerforschungsmaßnahmen
-    zulässig.
+    zulässig.'
   norms:
   - § 4 PolG NRW
   - § 17 OBG NRW
   - § 8 PolG NRW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-por-stoerer
   type: norm
-  front: >-
-    Wo sind Verhaltens-, Zustands- und Nichtverantwortliche in NRW geregelt?
-  back: >-
-    Polizei: Verhaltensverantwortlichkeit § 4 PolG NRW, Zustandsverantwortlichkeit § 5 PolG NRW, Inanspruchnahme
-    nicht verantwortlicher Personen § 6 PolG NRW. Ordnungsbehörden: §§ 17, 18, 19 OBG NRW (Verhaltens-,
-    Zustandsverantwortlichkeit und Nichtverantwortliche). Der Verhaltensstörer verursacht die Gefahr durch
-    sein Verhalten (Theorie der unmittelbaren Verursachung); der Zustandsstörer ist Eigentümer oder Inhaber
-    der tatsächlichen Gewalt über die gefährliche Sache. Der Nichtstörer darf nur herangezogen werden
-    bei gegenwärtiger erheblicher Gefahr, wenn Maßnahmen gegen Verantwortliche nicht oder nicht rechtzeitig
-    möglich sind, die Behörde die Gefahr nicht selbst abwehren kann und der Nichtstörer ohne erhebliche
-    eigene Gefährdung und ohne Verletzung höherwertiger Pflichten in Anspruch genommen wird. Die Maßnahme
-    darf nur so lange dauern, wie unerlässlich.
+  front: Wo sind Verhaltens-, Zustands- und Nichtverantwortliche in NRW geregelt?
+  back: 'Polizei: Verhaltensverantwortlichkeit § 4 PolG NRW, Zustandsverantwortlichkeit § 5 PolG NRW,
+    Inanspruchnahme nicht verantwortlicher Personen § 6 PolG NRW. Ordnungsbehörden: §§ 17, 18, 19 OBG
+    NRW (Verhaltens-, Zustandsverantwortlichkeit und Nichtverantwortliche). Der Verhaltensstörer verursacht
+    die Gefahr durch sein Verhalten (Theorie der unmittelbaren Verursachung); der Zustandsstörer ist Eigentümer
+    oder Inhaber der tatsächlichen Gewalt über die gefährliche Sache. Der Nichtstörer darf nur herangezogen
+    werden bei gegenwärtiger erheblicher Gefahr, wenn Maßnahmen gegen Verantwortliche nicht oder nicht
+    rechtzeitig möglich sind, die Behörde die Gefahr nicht selbst abwehren kann und der Nichtstörer ohne
+    erhebliche eigene Gefährdung und ohne Verletzung höherwertiger Pflichten in Anspruch genommen wird.
+    Die Maßnahme darf nur so lange dauern, wie unerlässlich.'
   norms:
   - § 4 PolG NRW
   - § 5 PolG NRW
   - § 6 PolG NRW
   - §§ 17, 18, 19 OBG NRW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-por-stoererauswahl
   type: streitstand
   front: Wie erfolgt die Störerauswahl, und wann geht der Zustandsstörer vor?
-  back: >-
-    Auswahl zwischen mehreren Verantwortlichen steht im pflichtgemäßen Ermessen der Behörde. Entscheidend
+  back: 'Auswahl zwischen mehreren Verantwortlichen steht im pflichtgemäßen Ermessen der Behörde. Entscheidend
     ist die effektive Gefahrenabwehr: die Heranziehung desjenigen, der die Gefahr am schnellsten und sichersten
     beseitigen kann. Ein genereller Vorrang des Verhaltens- gegenüber dem Zustandsstörer besteht nicht;
     die Behörde darf auch den solventen Zustandsstörer heranziehen, wenn der Verhaltensstörer unbekannt,
     nicht greifbar oder zahlungsunfähig ist. Bei gleichwertiger Effektivität kann der Verursacher der
     Vorzug zukommen. Auf Rückgriffsansprüche des Inanspruchgenommenen kommt es für die Rechtmäßigkeit
     der Verfügung nicht an; sie sind zivilrechtlich auszugleichen. Die Opfergrenze (Wert des Grundstücks
-    nach Sanierung) kann die Haftung des Zustandsstörers beschränken.
+    nach Sanierung) kann die Haftung des Zustandsstörers beschränken.'
   norms:
   - § 4 PolG NRW
   - § 5 PolG NRW
   - § 114 VwGO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-por-zustaendigkeit
   type: definition
-  front: >-
-    Wer ist in NRW für die Gefahrenabwehr zuständig - Ordnungsbehörde oder Polizei?
-  back: >-
-    Die allgemeine Gefahrenabwehr ist Aufgabe der Ordnungsbehörden (§ 1 OBG NRW): Dies sind insbesondere
+  front: Wer ist in NRW für die Gefahrenabwehr zuständig - Ordnungsbehörde oder Polizei?
+  back: 'Die allgemeine Gefahrenabwehr ist Aufgabe der Ordnungsbehörden (§ 1 OBG NRW): Dies sind insbesondere
     die Gemeinden als örtliche Ordnungsbehörden (Bürgermeister), Kreise und Bezirksregierungen. Die Polizei
     wird tätig, wenn die Abwehr durch eine andere Behörde nicht oder nicht rechtzeitig möglich erscheint
     (§ 1 Abs. 1 S. 3 PolG NRW) und in den ihr besonders zugewiesenen Aufgaben (z. B. Strafverfolgung als
-    Ermittlungsperson, Vollzugshilfe). Beide Behörden können im Eilfall auch zuständig sein. Ein Handeln
-    der unzuständigen Stelle macht die Maßnahme formell rechtswidrig; § 46 VwVfG NRW (Unbeachtlichkeit)
-    ist zu prüfen. Wegen der Trennung findet auf die Polizei das PolG, auf die Ordnungsbehörden das OBG
-    Anwendung.
+    Ermittlungsperson, Vollzugshilfe). Ein Handeln der unzuständigen Stelle macht die Maßnahme formell
+    rechtswidrig; § 46 VwVfG NRW (Unbeachtlichkeit) ist zu prüfen. Wegen der Trennung findet auf die Polizei
+    das PolG, auf die Ordnungsbehörden das OBG Anwendung.'
   norms:
   - § 1 OBG NRW
   - § 1 PolG NRW
   - § 46 VwVfG NRW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-por-vollstreckung
   type: norm
   front: Wie wird eine Gefahrenabwehrverfügung in NRW vollstreckt?
-  back: >-
-    Maßgeblich ist das Verwaltungsvollstreckungsgesetz NRW (VwVG NRW). Zwangsmittel sind Ersatzvornahme,
+  back: 'Maßgeblich ist das Verwaltungsvollstreckungsgesetz NRW (VwVG NRW). Zwangsmittel sind Ersatzvornahme,
     Zwangsgeld und unmittelbarer Zwang (§ 57 VwVG NRW). Der Verwaltungsakt kann im gestreckten Verfahren
     vollstreckt werden: Grundverfügung, Androhung (§ 63), Festsetzung, Anwendung. Im sofortigen Vollzug
     nach § 55 Abs. 2 VwVG NRW darf die Behörde ohne vorausgehenden Verwaltungsakt Zwang anwenden, wenn
     dies zur Abwehr einer gegenwärtigen Gefahr notwendig ist und sie innerhalb ihrer Befugnisse handelt;
     hypothetisch muss ein rechtmäßiger Verwaltungsakt möglich gewesen sein. Die Polizei kann unmittelbaren
     Zwang nach den Sondervorschriften des PolG NRW anwenden. Kosten der Ersatzvornahme trägt der Pflichtige
-    und werden im Wege der Vollstreckung geltend gemacht.
+    und werden im Wege der Vollstreckung geltend gemacht.'
   norms:
   - § 55 Abs. 2 VwVG NRW
   - § 57 VwVG NRW
   - § 63 VwVG NRW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-por-entschaedigung-rechtsschutz
   type: definition
   front: Welche Ersatz- und Rechtsschutzmöglichkeiten bestehen in NRW?
-  back: >-
-    Wird ein Nichtverantwortlicher in Anspruch genommen, steht ihm ein Entschädigungsanspruch gegen die
-    Körperschaft zu (§ 39 Abs. 1 OBG NRW, § 67 PolG NRW), ebenso bei rechtswidrigen Maßnahmen (Haftung
+  back: Wird ein Nichtverantwortlicher in Anspruch genommen, steht ihm ein Entschädigungsanspruch gegen
+    die Körperschaft zu (§ 39 Abs. 1 OBG NRW, § 67 PolG NRW), ebenso bei rechtswidrigen Maßnahmen (Haftung
     unabhängig vom Verschulden). Daneben bestehen Amtshaftung (§ 839 BGB, Art. 34 GG) und, bei Verletzung
     der Entschädigungspflicht, der allgemeine Aufopferungsanspruch. Gegen Verwaltungsakte ist die Anfechtungsklage
     statthaft; in NRW ist das Vorverfahren nach § 68 VwGO weitgehend abgeschafft (§ 110 JustG NRW, mit
@@ -239,23 +239,25 @@ cards:
   - § 67 PolG NRW
   - § 110 JustG NRW
   - § 80 Abs. 5 VwGO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-por-aufbau
   type: schema_step
-  front: >-
-    Aufbau: Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Nordrhein-Westfalen
-  back: >-
-    I. Ermächtigungsgrundlage (Standardmaßnahme vor Generalklausel; PolG NRW für die Polizei, OBG NRW
-    für Ordnungsbehörden). II. Formelle Rechtmäßigkeit: Zuständigkeit (Ordnungsbehörde, Polizei bei Eilfall),
-    Verfahren (Anhörung § 28 VwVfG NRW), Form. III. Materielle Rechtmäßigkeit: Tatbestand (Schutzgut,
+  front: 'Aufbau: Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Nordrhein-Westfalen'
+  back: 'I. Ermächtigungsgrundlage (Standardmaßnahme vor Generalklausel; PolG NRW für die Polizei, OBG
+    NRW für Ordnungsbehörden). II. Formelle Rechtmäßigkeit: Zuständigkeit (Ordnungsbehörde, Polizei bei
+    Eilfall), Verfahren (Anhörung § 28 VwVfG NRW), Form. III. Materielle Rechtmäßigkeit: Tatbestand (Schutzgut,
     konkrete Gefahr, Prognose ex ante), Adressat (§§ 4-6 PolG NRW bzw. §§ 17-19 OBG NRW), Ermessen und
-    Verhältnismäßigkeit. IV. Vollstreckung nach VwVG NRW.
+    Verhältnismäßigkeit. IV. Vollstreckung nach VwVG NRW.'
   norms:
   - § 8 PolG NRW
   - § 14 OBG NRW
   - § 28 VwVfG NRW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 schemata:
 - slug: nw-schema-por-massnahme
@@ -263,27 +265,26 @@ schemata:
   norms:
   - § 8 PolG NRW
   - § 14 OBG NRW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   steps:
   - label: I. Ermächtigungsgrundlage
-    hinweis: >-
-      Spezialgesetz, dann Standardmaßnahme, zuletzt Generalklausel (§ 8 PolG NRW bzw. § 14 OBG NRW).
+    hinweis: Spezialgesetz, dann Standardmaßnahme, zuletzt Generalklausel (§ 8 PolG NRW bzw. § 14 OBG
+      NRW).
   - label: II. Formelle Rechtmäßigkeit
     children:
-    - label: >-
-        1. Zuständigkeit: Ordnungsbehörde (§ 1 OBG), Polizei nur im Eilfall (§ 1 Abs. 1 S. 3 PolG)
+    - label: '1. Zuständigkeit: Ordnungsbehörde (§ 1 OBG), Polizei nur im Eilfall (§ 1 Abs. 1 S. 3 PolG)'
     - label: '2. Verfahren: Anhörung, § 28 VwVfG NRW'
     - label: 3. Form
   - label: III. Materielle Rechtmäßigkeit
     children:
     - label: '1. Tatbestand: Schutzgut, konkrete Gefahr, Prognose ex ante'
-    - label: >-
-        2. Adressat: Verhaltensstörer § 4 PolG / § 17 OBG, Zustandsstörer § 5 / § 18, Nichtstörer § 6
-        / § 19
+    - label: '2. Adressat: Verhaltensstörer § 4 PolG / § 17 OBG, Zustandsstörer § 5 / § 18, Nichtstörer
+        § 6 / § 19'
     - label: 3. Ermessen und Verhältnismäßigkeit
   - label: IV. Vollstreckung
-    hinweis: >-
-      VwVG NRW: Androhung, Festsetzung oder Sofortvollzug, § 55 Abs. 2 VwVG NRW.
+    hinweis: 'VwVG NRW: Androhung, Festsetzung oder Sofortvollzug, § 55 Abs. 2 VwVG NRW.'
   stand: 2026-10
 faelle:
 - slug: nw-fall-por-platzverweis
@@ -293,39 +294,35 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
-  facts: >-
-    Polizeibeamte stellen am Abend vor dem Hauptbahnhof fest, dass A in einer Gruppe lautstark Passanten
+  facts: Polizeibeamte stellen am Abend vor dem Hauptbahnhof fest, dass A in einer Gruppe lautstark Passanten
     bedrängt und eine ältere Frau am Betreten des Gebäudes hindert. Nach zweimaliger vergeblicher Aufforderung
     erteilen sie dem A einen Platzverweis für den Bahnhofsvorplatz für den Rest des Abends. A bleibt stehen;
     die Beamten führen ihn daraufhin weg. Später klagt A und meint, die Maßnahme sei rechtswidrig gewesen,
     weil er "nur diskutiert" habe und die Polizei nicht zuständig gewesen sei, da das Ordnungsamt zuständig
-    sei. Die Maßnahme hat sich zwischenzeitlich erledigt.
+    sei. Die Maßnahme hat sich zwischenzeitlich erledigt. Das städtische Ordnungsamt ist abends nicht
+    besetzt und hätte nicht rechtzeitig eingreifen können.
   question: Welche Klageart ist statthaft, und war der Platzverweis rechtmäßig?
   steps:
   - prompt: Welche Klageart ist statthaft?
-    erwartung: >-
-      Fortsetzungsfeststellungsklage analog § 113 Abs. 1 S. 4 VwGO, da sich der Verwaltungsakt (Platzverweis)
-      erledigt hat; ein Fortsetzungsfeststellungsinteresse ergibt sich aus Rehabilitationsinteresse bzw.
-      Wiederholungsgefahr.
+    erwartung: Fortsetzungsfeststellungsklage analog § 113 Abs. 1 S. 4 VwGO, da sich der Verwaltungsakt
+      (Platzverweis) erledigt hat; ein Fortsetzungsfeststellungsinteresse ergibt sich aus Rehabilitationsinteresse
+      bzw. Wiederholungsgefahr.
   - prompt: Welche Ermächtigungsgrundlage greift?
-    erwartung: >-
-      § 34 PolG NRW (Platzverweisung) als Standardmaßnahme; sie geht der Generalklausel (§ 8 Abs. 1 PolG)
-      vor.
+    erwartung: § 34 PolG NRW (Platzverweisung) als Standardmaßnahme; sie geht der Generalklausel (§ 8
+      Abs. 1 PolG) vor.
   - prompt: War die Polizei zuständig?
-    erwartung: >-
-      Ja. Die Polizei ist zuständig, wenn die Abwehr durch die Ordnungsbehörde nicht oder nicht rechtzeitig
-      möglich erscheint (§ 1 Abs. 1 S. 3 PolG NRW); am Abend ist das Ordnungsamt nicht erreichbar, die
-      Gefahr duldet keinen Aufschub (Eilzuständigkeit).
+    erwartung: 'Ja. Die Polizei ist zuständig, weil die Abwehr durch die Ordnungsbehörde nicht oder nicht
+      rechtzeitig möglich erscheint: Das Ordnungsamt ist abends nicht besetzt, die Gefahr duldet keinen
+      Aufschub. Damit liegt die Eilzuständigkeit der Polizei nach § 1 Abs. 1 S. 3 PolG NRW vor, und die
+      Polizei ist zuständig.'
   - prompt: Lagen die materiellen Voraussetzungen vor?
-    erwartung: >-
-      Ja. Es lag eine Gefahr bzw. Störung vor (Bedrängen und Behindern von Passanten, Nötigungsnähe);
+    erwartung: Ja. Es lag eine Gefahr bzw. Störung vor (Bedrängen und Behindern von Passanten, Nötigungsnähe);
       A ist Verhaltensstörer (§ 4 PolG NRW). Die Maßnahme ist geeignet, erforderlich (vorherige Aufforderung
       blieb erfolglos) und angemessen, da räumlich und zeitlich begrenzt.
   expectation:
     pruefpunkte:
     - id: p1
-      label: >-
-        Fortsetzungsfeststellungsklage analog § 113 Abs. 1 S. 4 VwGO als statthafte Klageart
+      label: Fortsetzungsfeststellungsklage analog § 113 Abs. 1 S. 4 VwGO als statthafte Klageart
       weight: 2.0
       required: true
       keywords:
@@ -337,8 +334,7 @@ faelle:
       card_slugs:
       - nw-por-entschaedigung-rechtsschutz
     - id: p2
-      label: >-
-        Platzverweis nach § 34 PolG NRW als Standardmaßnahme vor der Generalklausel
+      label: Platzverweis nach § 34 PolG NRW als Standardmaßnahme vor der Generalklausel
       weight: 2.5
       required: true
       norms:
@@ -357,15 +353,15 @@ faelle:
       weight: 2.0
       required: true
       keywords:
-      - § 1 Abs. 1 S. 3 PolG NRW
       - Eilzuständigkeit
+      - § 1 Abs. 1 S. 3 PolG NRW
       - nicht rechtzeitig
-      - Ordnungsbehörde nicht erreichbar
+      - Zuständigkeit der Polizei
+      - Ordnungsamt nicht besetzt
       card_slugs:
       - nw-por-zustaendigkeit
     - id: p4
-      label: >-
-        Verhaltensverantwortlichkeit des A und Verhältnismäßigkeit der Maßnahme
+      label: Verhaltensverantwortlichkeit des A und Verhältnismäßigkeit der Maßnahme
       weight: 2.0
       required: false
       keywords:

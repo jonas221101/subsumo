@@ -15,12 +15,11 @@ cards:
   type: norm
   front: Wo steht die polizeiliche Generalklausel in Niedersachsen und was setzt sie voraus?
   back: 'Fundstelle: § 11 NPOG. Die Generalklausel ermächtigt zu den notwendigen Maßnahmen, um eine im
-    Einzelfall bestehende Gefahr für die öffentliche Sicherheit oder Ordnung abzuwehren. Sie ist subsidiär:
-    Greift eine Standardmaßnahme oder ein Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite besteht
-    Ermessen, begrenzt durch den Grundsatz der Verhältnismäßigkeit. Zum Schutz privater Rechte wird die
-    Gefahrenabwehr nur subsidiär tätig: Ein Einschreiten kommt nur in Betracht, wenn gerichtlicher Schutz
-    nicht rechtzeitig zu erlangen ist und ohne die Maßnahme die Vereitelung oder wesentliche Erschwerung
-    der Rechtsverwirklichung droht.'
+    Einzelfall bestehende Gefahr abzuwehren. Sie ist subsidiär: Greift eine Standardmaßnahme oder ein
+    Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite besteht Ermessen, begrenzt durch den Grundsatz
+    der Verhältnismäßigkeit. Zum Schutz privater Rechte wird die Gefahrenabwehr nur subsidiär tätig: Ein
+    Einschreiten kommt nur in Betracht, wenn gerichtlicher Schutz nicht rechtzeitig zu erlangen ist und
+    ohne die Maßnahme die Vereitelung oder wesentliche Erschwerung der Rechtsverwirklichung droht.'
   norms:
   - § 11 NPOG
   quellen:
@@ -30,11 +29,18 @@ cards:
 - slug: ni-por-standardmassnahmen
   type: norm
   front: Wo stehen die polizeilichen Standardmaßnahmen in Niedersachsen?
-  back: '§§ 12 ff. NPOG - unter anderem Identitätsfeststellung, Platzverweis, Gewahrsam, Durchsuchung
-    von Personen und Sachen, Sicherstellung. Standardmaßnahmen sind abschließende Spezialregelungen: Liegen
-    ihre Voraussetzungen nicht vor, darf nicht auf die Generalklausel ausgewichen werden (Sperrwirkung).'
+  back: 'Die Standardmaßnahmen stehen im NPOG im Anschluss an die Generalklausel (§ 11 NPOG); dazu gehören
+    unter anderem Identitätsfeststellung, Platzverweisung (§ 17 NPOG), Gewahrsam (§ 18 NPOG), Durchsuchung
+    von Personen und Sachen sowie Sicherstellung. Standardmaßnahmen sind abschließende Spezialregelungen
+    für typische Gefahrensituationen: Liegen ihre Voraussetzungen nicht vor, darf nicht auf die Generalklausel
+    ausgewichen werden (Sperrwirkung). In der Klausur wird deshalb zuerst die speziellere Befugnisnorm
+    geprüft; die Generalklausel kommt nur für atypische Gefahren in Betracht. Freiheitsentziehungen stehen
+    unter Richtervorbehalt (Art. 104 Abs. 2 GG).'
   norms:
-  - §§ 12 ff. NPOG
+  - § 11 NPOG
+  - § 17 NPOG
+  - § 18 NPOG
+  - Art. 104 Abs. 2 GG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -44,7 +50,7 @@ cards:
   front: 'Aufbau: Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Niedersachsen'
   back: 'I. Ermächtigungsgrundlage (Niedersächsisches Polizei- und Ordnungsbehördengesetz (NPOG): Standardmaßnahme
     vor Generalklausel). II. Formelle Rechtmäßigkeit: 1. Zuständigkeit (sachlich: welche Behörde - Verwaltungsbehörden
-    (Gemeinden, Landkreise) und Polizei nach § 1 NPOG; Polizei bei Eilbedürftigkeit (§ 1 Abs. 2 NPOG);
+    (Gemeinden, Landkreise) und Polizei nach dem NPOG; Polizei bei Eilbedürftigkeit (Eilzuständigkeit);
     örtlich; instanziell), 2. Verfahren (Anhörung nach dem jeweiligen Landesverwaltungsverfahrensgesetz),
     3. Form. III. Materielle Rechtmäßigkeit: 1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose
     ex ante), 2. richtiger Adressat (Störer: §§ 6, 7, 8 NPOG), 3. Rechtsfolge: Ermessen und Verhältnismäßigkeit
@@ -74,11 +80,13 @@ cards:
   type: definition
   front: Wer ist in Niedersachsen für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde oder
     Polizei?
-  back: 'Verwaltungsbehörden (Gemeinden, Landkreise) und Polizei nach § 1 NPOG; Polizei bei Eilbedürftigkeit
-    (§ 1 Abs. 2 NPOG). Prüfungsrelevant ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich
+  back: 'Verwaltungsbehörden (Gemeinden, Landkreise) und Polizei nach dem NPOG; Polizei bei Eilbedürftigkeit
+    (Eilzuständigkeit). Prüfungsrelevant ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich
     bei den Verwaltungs-/Ordnungsbehörden; der Polizeivollzugsdienst wird tätig, wenn die Abwehr keinen
     Aufschub duldet (Eilfall) oder eine besondere Zuweisung besteht. Ein Handeln der unzuständigen Behörde
-    macht die Maßnahme formell rechtswidrig.'
+    macht die Maßnahme formell rechtswidrig. Die Verwaltungsbehörden sind im Regelfall die Gemeinden und
+    Landkreise in ihrem Zuständigkeitsbereich; die Polizei handelt im Eilfall, ohne dass die Zuständigkeit
+    der Verwaltungsbehörde dadurch dauerhaft verdrängt wird.'
   norms:
   - Niedersächsisches Polizei- und Ordnungsbehördengesetz (NPOG)
   quellen:
@@ -88,46 +96,43 @@ cards:
 - slug: ni-por-vollstreckung
   type: norm
   front: Nach welchem Gesetz wird eine Gefahrenabwehrverfügung in Niedersachsen vollstreckt?
-  back: 'Niedersächsisches Verwaltungsvollstreckungsgesetz (NVwVG); Zwang nach §§ 64 ff. NPOG. Regelfall
-    ist das gestreckte Verfahren: Grundverfügung - Androhung - Festsetzung - Anwendung des Zwangsmittels
-    (Ersatzvornahme, Zwangsgeld, unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare
-    Ausführung ohne vorausgehenden Verwaltungsakt möglich; die Kosten trägt der Pflichtige.'
+  back: 'Niedersächsisches Verwaltungsvollstreckungsgesetz (NVwVG) in Verbindung mit den Zwangsvorschriften
+    des NPOG. Regelfall ist das gestreckte Verfahren: Grundverfügung - Androhung - Festsetzung - Anwendung
+    des Zwangsmittels (Ersatzvornahme, Zwangsgeld, unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug
+    bzw. unmittelbare Ausführung ohne vorausgehenden Verwaltungsakt möglich; die Kosten trägt der Pflichtige.
+    Zwangsmittel müssen angedroht werden und verhältnismäßig sein; die Androhung kann mit der Grundverfügung
+    verbunden werden.'
   norms:
   - Niedersächsisches Verwaltungsvollstreckungsgesetz (NVwVG)
-  - Zwang nach §§ 64 ff. NPOG
+  - Zwangsvorschriften des NPOG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: ni-por-gefahr
   type: definition
-  front: >-
-    Was ist eine Gefahr im Polizei- und Ordnungsrecht in Niedersachsen und wie wird die Gefahrenprognose
+  front: Was ist eine Gefahr im Polizei- und Ordnungsrecht in Niedersachsen und wie wird die Gefahrenprognose
     angestellt?
-  back: >-
-    Gefahr ist eine Sachlage, die bei ungehindertem Ablauf des objektiv zu erwartenden Geschehens mit
-    hinreichender Wahrscheinlichkeit in absehbarer Zeit zu einem Schaden für ein Schutzgut führt. Die
-    Generalklausel (§ 11 NPOG) setzt eine konkrete Gefahr im Einzelfall voraus; die abstrakte Gefahr (typisierend,
-    für Fallgruppen) ist Grundlage für Gefahrenabwehrverordnungen. Die Prognose erfolgt ex ante aus der
-    Sicht eines verständigen, durchschnittlich erfahrenen Amtswalters auf Grundlage der im Handlungszeitpunkt
-    erkennbaren Tatsachen. Nach der Je-desto-Formel sinken die Anforderungen an die Wahrscheinlichkeit,
-    je höher der drohende Schaden und je bedeutender das Schutzgut ist. Schutzgut ist die öffentliche
-    Sicherheit (Rechtsordnung, Individualrechtsgüter, Bestand staatlicher Einrichtungen); ob daneben die
-    öffentliche Ordnung genannt ist, ergibt sich aus dem Wortlaut der jeweiligen Landesnorm.
+  back: Gefahr ist eine Sachlage, die bei ungehindertem Ablauf des objektiv zu erwartenden Geschehens
+    mit hinreichender Wahrscheinlichkeit in absehbarer Zeit zu einem Schaden für ein Schutzgut führt.
+    Die Generalklausel (§ 11 NPOG) setzt eine konkrete Gefahr im Einzelfall voraus; die abstrakte Gefahr
+    (typisierend, für Fallgruppen) ist Grundlage für Gefahrenabwehrverordnungen. Die Prognose erfolgt
+    ex ante aus der Sicht eines verständigen, durchschnittlich erfahrenen Amtswalters auf Grundlage der
+    im Handlungszeitpunkt erkennbaren Tatsachen. Nach der Je-desto-Formel sinken die Anforderungen an
+    die Wahrscheinlichkeit, je höher der drohende Schaden und je bedeutender das Schutzgut ist. Schutzgut
+    ist die öffentliche Sicherheit (Rechtsordnung, Individualrechtsgüter, Bestand staatlicher Einrichtungen);
+    ob daneben die öffentliche Ordnung genannt ist, ergibt sich aus dem Wortlaut der jeweiligen Landesnorm.
   norms:
-  - >-
-    § 11 NPOG
+  - § 11 NPOG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: ni-por-gefahrenstufen
   type: definition
-  front: >-
-    Welche qualifizierten Gefahrbegriffe unterscheidet das Landesrecht von Niedersachsen (gegenwärtige,
+  front: Welche qualifizierten Gefahrbegriffe unterscheidet das Landesrecht von Niedersachsen (gegenwärtige,
     erhebliche Gefahr, Gefahr im Verzug)?
-  back: >-
-    Qualifizierte Gefahrbegriffe erhöhen die Eingriffsschwelle oder erweitern Befugnisse. Eine gegenwärtige
+  back: Qualifizierte Gefahrbegriffe erhöhen die Eingriffsschwelle oder erweitern Befugnisse. Eine gegenwärtige
     Gefahr liegt vor, wenn das schädigende Ereignis bereits eingetreten ist oder unmittelbar oder in allernächster
     Zeit mit an Sicherheit grenzender Wahrscheinlichkeit eintreten wird. Eine erhebliche Gefahr betrifft
     ein bedeutsames Rechtsgut (etwa Leben, Gesundheit, Freiheit, wesentliche Sachwerte). Gefahr im Verzug
@@ -136,63 +141,53 @@ cards:
     den Landespolizeigesetzen unterschiedlich ausgeprägt; maßgeblich ist stets die in der jeweiligen Befugnisnorm
     verlangte Qualifikation (NPOG).
   norms:
-  - >-
-    § 11 NPOG
+  - § 11 NPOG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: ni-por-anscheinsgefahr
   type: definition
-  front: >-
-    Was unterscheiden Anscheinsgefahr, Gefahrenverdacht und Putativgefahr bei Maßnahmen nach § 11 NPOG?
-  back: >-
-    Anscheinsgefahr: Bei verständiger Würdigung der erkennbaren Tatsachen im Handlungszeitpunkt (ex ante)
-    liegt eine Gefahr vor, tatsächlich besteht aber keine. Sie wird wie eine echte Gefahr behandelt; die
-    Maßnahme ist rechtmäßig. Gefahrenverdacht: Es ist unklar, ob eine Gefahr besteht; zulässig sind Gefahrerforschungsmaßnahmen,
-    weitergehende Eingriffe grundsätzlich erst bei Bestätigung der Gefahr. Putativgefahr: Die Behörde
-    nimmt eine Gefahr an, die auch bei verständiger Würdigung nicht erkennbar vorlag; die Maßnahme ist
-    rechtswidrig (bloße Vermutung). Streitig ist die Kostenpflicht des Anscheinsverursachers: Sie wird
-    überwiegend nur bejaht, wenn er den Anschein zurechenbar veranlasst hat.
+  front: Was unterscheiden Anscheinsgefahr, Gefahrenverdacht und Putativgefahr bei Maßnahmen nach § 11
+    NPOG?
+  back: 'Anscheinsgefahr: Bei verständiger Würdigung der erkennbaren Tatsachen im Handlungszeitpunkt (ex
+    ante) liegt eine Gefahr vor, tatsächlich besteht aber keine. Sie wird wie eine echte Gefahr behandelt;
+    die Maßnahme ist rechtmäßig. Gefahrenverdacht: Es ist unklar, ob eine Gefahr besteht; zulässig sind
+    Gefahrerforschungsmaßnahmen, weitergehende Eingriffe grundsätzlich erst bei Bestätigung der Gefahr.
+    Putativgefahr: Die Behörde nimmt eine Gefahr an, die auch bei verständiger Würdigung nicht erkennbar
+    vorlag; die Maßnahme ist rechtswidrig (bloße Vermutung). Streitig ist die Kostenpflicht des Anscheinsverursachers:
+    Sie wird überwiegend nur bejaht, wenn er den Anschein zurechenbar veranlasst hat.'
   norms:
-  - >-
-    § 11 NPOG
+  - § 11 NPOG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: ni-por-platzverweis
   type: norm
-  front: >-
-    Was ist ein Platzverweis nach dem Landesrecht von Niedersachsen und wie unterscheidet er sich von
-    Aufenthaltsverbot und Gewahrsam?
-  back: >-
-    Der Platzverweis (§ 17 NPOG) ist eine Standardmaßnahme: Eine Person wird zur Abwehr einer Gefahr vorübergehend
-    von einem Ort verwiesen oder ihr wird das Betreten untersagt. Er ist ein Verwaltungsakt in Gestalt
-    eines Gebots oder Verbots und kann mündlich ergehen. Bei Anordnung durch Polizeivollzugsbeamte ist
-    er regelmäßig eine unaufschiebbare Maßnahme, deren Vollziehung nach § 80 Abs. 2 S. 1 Nr. 2 VwGO sofort
-    möglich ist. Vom Platzverweis zu unterscheiden ist das längerfristige Aufenthaltsverbot für ein bestimmtes
-    Gebiet, für das höhere Anforderungen gelten. Wird ein Platzverweis nicht befolgt, kommt als Durchsetzung
-    Zwang in Betracht; der Gewahrsam (§ 18 NPOG) ist eine Freiheitsentziehung und erfordert unverzüglich
-    eine richterliche Entscheidung (Art. 104 Abs. 2 GG).
+  front: Was ist ein Platzverweis nach dem Landesrecht von Niedersachsen und wie unterscheidet er sich
+    von Aufenthaltsverbot und Gewahrsam?
+  back: 'Der Platzverweis (§ 17 NPOG) ist eine Standardmaßnahme: Eine Person wird zur Abwehr einer Gefahr
+    vorübergehend von einem Ort verwiesen oder ihr wird das Betreten untersagt. Er ist ein Verwaltungsakt
+    in Gestalt eines Gebots oder Verbots und kann mündlich ergehen. Bei Anordnung durch Polizeivollzugsbeamte
+    ist er regelmäßig eine unaufschiebbare Maßnahme, deren Vollziehung nach § 80 Abs. 2 S. 1 Nr. 2 VwGO
+    sofort möglich ist. Vom Platzverweis zu unterscheiden ist das längerfristige Aufenthaltsverbot für
+    ein bestimmtes Gebiet, für das höhere Anforderungen gelten. Wird ein Platzverweis nicht befolgt, kommt
+    als Durchsetzung Zwang in Betracht; der Gewahrsam (§ 18 NPOG) ist eine Freiheitsentziehung und erfordert
+    unverzüglich eine richterliche Entscheidung (Art. 104 Abs. 2 GG).'
   norms:
-  - >-
-    § 17 NPOG
-  - >-
-    § 18 NPOG
+  - § 17 NPOG
+  - § 18 NPOG
   - Art. 104 Abs. 2 GG
-  - >-
-    § 80 Abs. 2 S. 1 Nr. 2 VwGO
+  - § 80 Abs. 2 S. 1 Nr. 2 VwGO
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: ni-por-zweckveranlasser
   type: streitstand
-  front: >-
-    Ist der Zweckveranlasser Verhaltensstörer (§ 6 NPOG)? Wie wird der Streit entschieden?
-  back: >-
-    Unstreitig ist, wer die Gefahr unmittelbar verursacht, Verhaltensstörer. Streitig ist die Verantwortlichkeit
+  front: Ist der Zweckveranlasser Verhaltensstörer (§ 6 NPOG)? Wie wird der Streit entschieden?
+  back: 'Unstreitig ist, wer die Gefahr unmittelbar verursacht, Verhaltensstörer. Streitig ist die Verantwortlichkeit
     des Veranlassers, der die Gefahr nur mittelbar auslöst, indem ein Dritter die Gefahrenschwelle überschreitet.
     Nach der strengen Theorie der unmittelbaren Verursachung ist Störer nur, wer selbst die Gefahrenschwelle
     überschreitet; der bloße Veranlasser ist nicht verantwortlich. Die herrschende Meinung erweitert die
@@ -200,21 +195,18 @@ cards:
     Folge seines Verhaltens objektiv unvermeidlich (klassisch: Schaufensterpuppen-Fall). Für die Ausweitung
     spricht die Effektivität der Gefahrenabwehr; dagegen die Begrenzung der Störerhaftung auf rechtlich
     zurechenbare Verursachung und die gesetzliche Unterscheidung von Störer und Nichtstörer. In der Klausur
-    ist die Zurechnung sauber zu begründen.
+    ist die Zurechnung sauber zu begründen.'
   norms:
-  - >-
-    §§ 6, 7, 8 NPOG
+  - §§ 6, 7, 8 NPOG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: ni-por-kosten
   type: definition
-  front: >-
-    Wer trägt die Kosten einer Ersatzvornahme oder unmittelbaren Ausführung im Landesrecht von Niedersachsen
+  front: Wer trägt die Kosten einer Ersatzvornahme oder unmittelbaren Ausführung im Landesrecht von Niedersachsen
     und was ist für den Kostenbescheid zu prüfen?
-  back: >-
-    Die Kosten trägt der Pflichtige bzw. der Störer, der bei rechtmäßigem Vorgehen hätte herangezogen
+  back: Die Kosten trägt der Pflichtige bzw. der Störer, der bei rechtmäßigem Vorgehen hätte herangezogen
     werden können. Beim gestreckten Verfahren (Grundverfügung, Androhung, Festsetzung, Ersatzvornahme)
     muss die Vollstreckung rechtmäßig sein; für den Kostenbescheid genügt, dass die Grundverfügung wirksam
     und vollziehbar war, auf ihre Rechtmäßigkeit kommt es nicht an. Bei Sofortvollzug und unmittelbarer
@@ -231,61 +223,49 @@ cards:
   stand: 2026-10
 schemata:
 - slug: ni-schema-por-massnahme
-  title: >-
-    Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Niedersachsen
+  title: Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Niedersachsen
   norms:
-  - >-
-    § 11 NPOG
-  - >-
-    §§ 6, 7, 8 NPOG
+  - § 11 NPOG
+  - §§ 6, 7, 8 NPOG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   steps:
   - label: I. Ermächtigungsgrundlage
-    hinweis: >-
-      Spezialgesetzliche Befugnis (Standardmaßnahme) vor Generalklausel prüfen; Sperrwirkung beachten.
+    hinweis: Spezialgesetzliche Befugnis (Standardmaßnahme) vor Generalklausel prüfen; Sperrwirkung beachten.
     children:
-    - label: >-
-        1. Standardmaßnahme, soweit einschlägig (z. B. Platzverweis § 17 NPOG)
+    - label: 1. Standardmaßnahme, soweit einschlägig (z. B. Platzverweis § 17 NPOG)
     - label: 2. Hilfsweise Generalklausel, § 11 NPOG
   - label: II. Formelle Rechtmäßigkeit
     children:
-    - label: >-
-        1. Zuständigkeit: Verwaltungsbehörden (Gemeinden, Landkreise), Polizei nur bei Eilbedürftigkeit
-        (§ 1 Abs. 2 NPOG)
-    - label: >-
-        2. Verfahren: Anhörung nach dem Landesverwaltungsverfahrensgesetz (Ausnahme bei Gefahr im Verzug)
+    - label: '1. Zuständigkeit: Verwaltungsbehörden (Gemeinden, Landkreise), Polizei nur bei Eilbedürftigkeit
+        (Eilzuständigkeit)'
+    - label: '2. Verfahren: Anhörung nach dem Landesverwaltungsverfahrensgesetz (Ausnahme bei Gefahr im
+        Verzug)'
     - label: 3. Form und Begründung (mündlicher Verwaltungsakt zulässig)
   - label: III. Materielle Rechtmäßigkeit
     children:
     - label: 1. Tatbestand
-      hinweis: >-
-        Konkrete Gefahr im Einzelfall, ex ante prüfen; Anscheinsgefahr einbeziehen.
+      hinweis: Konkrete Gefahr im Einzelfall, ex ante prüfen; Anscheinsgefahr einbeziehen.
       children:
       - label: a) Schutzgut (öffentliche Sicherheit, ggf. Ordnung)
-      - label: >-
-          b) Gefahr: hinreichende Wahrscheinlichkeit eines Schadens in absehbarer Zeit
+      - label: 'b) Gefahr: hinreichende Wahrscheinlichkeit eines Schadens in absehbarer Zeit'
       - label: c) ggf. qualifizierte Gefahr (gegenwärtig, erheblich)
     - label: 2. Richtiger Adressat (§§ 6, 7, 8 NPOG)
-      hinweis: >-
-        Verhaltensstörer, Zustandsstörer, Nichtstörer (nur im Notstand); Zweckveranlasser und Auswahl
+      hinweis: Verhaltensstörer, Zustandsstörer, Nichtstörer (nur im Notstand); Zweckveranlasser und Auswahl
         unter mehreren Störern begründen.
       children:
       - label: a) Verhaltensstörer, § 6 NPOG
       - label: b) Zustandsstörer, § 7 NPOG
       - label: c) Nichtstörer, § 8 NPOG
     - label: 3. Rechtsfolge
-      hinweis: >-
-        Ermessen: Entschließungs- und Auswahlermessen; Verhältnismäßigkeit nie auslassen.
+      hinweis: 'Ermessen: Entschließungs- und Auswahlermessen; Verhältnismäßigkeit nie auslassen.'
       children:
       - label: a) Ermessensfehlerfreiheit
-      - label: >-
-          b) Verhältnismäßigkeit: legitimer Zweck, geeignet, erforderlich, angemessen
+      - label: 'b) Verhältnismäßigkeit: legitimer Zweck, geeignet, erforderlich, angemessen'
       - label: c) Bestimmtheit der Anordnung
   - label: IV. Vollstreckung (falls Zwang angewandt wurde)
-    hinweis: >-
-      Gestrecktes Verfahren oder Sofortvollzug; Rechtmäßigkeit des Zwangsmittels gesondert prüfen.
+    hinweis: Gestrecktes Verfahren oder Sofortvollzug; Rechtmäßigkeit des Zwangsmittels gesondert prüfen.
     children:
     - label: 1. Grundverfügung wirksam und vollziehbar
     - label: 2. Androhung und Festsetzung des Zwangsmittels
@@ -298,49 +278,39 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - NPOG, amtliche Fassung
-  facts: >-
-    Um 23.30 Uhr kommt es vor einer Gaststätte in Hannover zu einem Streit zwischen mehreren Gästen. A
-    beschimpft laut eine Gruppe, schubst einen der Männer und ruft, man solle "das draußen klären". Zwei
-    Beamte der Polizei greifen ein. Sie fordern A mündlich auf, den Vorplatz der Gaststätte bis 6 Uhr
-    des Folgetages zu verlassen und nicht zu betreten. A weigert sich mit dem Hinweis, er dürfe sich auf
-    öffentlichem Grund aufhalten. Nach dem Einschreiten beruhigen sich die übrigen Gäste.
+  facts: Um 23.30 Uhr kommt es vor einer Gaststätte in Hannover zu einem Streit zwischen mehreren Gästen.
+    A beschimpft laut eine Gruppe, schubst einen der Männer und ruft, man solle "das draußen klären".
+    Zwei Beamte der Polizei greifen ein. Sie fordern A mündlich auf, den Vorplatz der Gaststätte bis 6
+    Uhr des Folgetages zu verlassen und nicht zu betreten. A weigert sich mit dem Hinweis, er dürfe sich
+    auf öffentlichem Grund aufhalten. Nach dem Einschreiten beruhigen sich die übrigen Gäste.
   question: Ist der mündlich ausgesprochene Platzverweis rechtmäßig?
   steps:
   - prompt: Welche Ermächtigungsgrundlage kommt in Betracht?
-    erwartung: >-
-      Der Platzverweis ist als Standardmaßnahme in § 17 NPOG geregelt. Er geht der Generalklausel des
-      § 11 NPOG vor (Sperrwirkung); auf § 11 NPOG darf nicht ausgewichen werden.
-  - prompt: >-
-      Ist die Polizei zuständig und ist die mündliche Form zulässig?
-    erwartung: >-
-      Die allgemeine Gefahrenabwehr liegt bei den Verwaltungsbehörden; die Polizei ist nach § 1 Abs. 2
-      NPOG bei Eilbedürftigkeit zuständig. Hier war ein sofortiges Einschreiten nötig. Der Platzverweis
+    erwartung: Der Platzverweis ist als Standardmaßnahme in § 17 NPOG geregelt. Er geht der Generalklausel
+      des § 11 NPOG vor (Sperrwirkung); auf § 11 NPOG darf nicht ausgewichen werden.
+  - prompt: Ist die Polizei zuständig und ist die mündliche Form zulässig?
+    erwartung: Die allgemeine Gefahrenabwehr liegt bei den Verwaltungsbehörden; die Polizei ist bei Eilbedürftigkeit
+      nach dem NPOG zuständig (Eilzuständigkeit). Hier war ein sofortiges Einschreiten nötig. Der Platzverweis
       ist ein Verwaltungsakt, der mündlich ergehen darf.
   - prompt: Liegt eine Gefahr vor und wer ist richtiger Adressat?
-    erwartung: >-
-      Es besteht eine konkrete Gefahr für die öffentliche Sicherheit (Gefahr weiterer Körperverletzungen
+    erwartung: Es besteht eine konkrete Gefahr für die öffentliche Sicherheit (Gefahr weiterer Körperverletzungen
       und Straftaten), ex ante aus Sicht der Beamten. A hat die Gefahr durch sein Verhalten verursacht;
       er ist Verhaltensstörer nach § 6 NPOG.
   - prompt: Ist der Platzverweis verhältnismäßig?
-    erwartung: >-
-      Ja: Er ist geeignet, die Situation zu entschärfen; ein milderes gleich wirksames Mittel (bloße Ansprache)
-      hat sich nicht als ausreichend erwiesen, da A sich weigerte. Er ist räumlich auf den Vorplatz und
-      zeitlich bis 6 Uhr begrenzt und damit angemessen. Der Platzverweis ist rechtmäßig.
+    erwartung: 'Ja: Er ist geeignet, die Situation zu entschärfen; ein milderes gleich wirksames Mittel
+      (bloße Ansprache) hat sich nicht als ausreichend erwiesen, da A sich weigerte. Er ist räumlich auf
+      den Vorplatz und zeitlich bis 6 Uhr begrenzt und damit angemessen. Der Platzverweis ist rechtmäßig.'
   expectation:
     pruefpunkte:
     - id: p1
-      label: >-
-        Platzverweis als Standardmaßnahme (§ 17 NPOG) vor der Generalklausel erkannt
+      label: Platzverweis als Standardmaßnahme (§ 17 NPOG) vor der Generalklausel erkannt
       weight: 2.0
       required: true
       norms:
-      - >-
-        § 17 NPOG
-      - >-
-        § 11 NPOG
+      - § 17 NPOG
+      - § 11 NPOG
       keywords:
-      - >-
-        § 17 NPOG
+      - § 17 NPOG
       - Standardmaßnahme
       - Sperrwirkung
       - Platzverweisung
@@ -349,24 +319,20 @@ faelle:
       - ni-por-platzverweis
       - ni-por-standardmassnahmen
     - id: p2
-      label: >-
-        Zuständigkeit der Polizei wegen Eilbedürftigkeit und Verwaltungsaktqualität (mündlich) geprüft
+      label: Zuständigkeit der Polizei wegen Eilbedürftigkeit und Verwaltungsaktqualität (mündlich) geprüft
       weight: 1.0
       required: false
-      norms:
-      - >-
-        § 1 Abs. 2 NPOG
+      norms: []
       keywords:
-      - >-
-        § 1 Abs. 2 NPOG
-      - Eilbedürftigkeit
       - Eilzuständigkeit
+      - Eilbedürftigkeit
       - mündlicher Verwaltungsakt
+      - nicht rechtzeitig
+      - Ordnungsbehörde
       card_slugs:
       - ni-por-zustaendigkeit
     - id: p3
-      label: >-
-        Konkrete Gefahr für die öffentliche Sicherheit mit Prognose ex ante bejaht
+      label: Konkrete Gefahr für die öffentliche Sicherheit mit Prognose ex ante bejaht
       weight: 2.0
       required: true
       keywords:
@@ -382,19 +348,17 @@ faelle:
       weight: 2.0
       required: false
       norms:
-      - >-
-        § 6 NPOG
+      - § 6 NPOG
       keywords:
       - Verhaltensstörer
-      - >-
-        § 6 NPOG
+      - § 6 NPOG
       - unmittelbare Verursachung
       - Verhaltensverantwortlichkeit
       card_slugs:
       - ni-por-stoerer
     - id: p5
-      label: >-
-        Verhältnismäßigkeit (geeignet, erforderlich, angemessen; zeitlich und räumlich begrenzt) geprüft
+      label: Verhältnismäßigkeit (geeignet, erforderlich, angemessen; zeitlich und räumlich begrenzt)
+        geprüft
       weight: 2.5
       required: true
       keywords:

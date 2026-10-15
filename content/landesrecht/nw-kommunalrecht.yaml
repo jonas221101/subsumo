@@ -14,8 +14,7 @@ cards:
 - slug: nw-kom-organe
   type: norm
   front: Welche Organe hat die Gemeinde nach der GO NRW?
-  back: >-
-    Organe der Gemeinde sind der Rat und der Bürgermeister. Der Rat ist die Vertretung der Bürgerschaft
+  back: Organe der Gemeinde sind der Rat und der Bürgermeister. Der Rat ist die Vertretung der Bürgerschaft
     und das Hauptorgan der Gemeinde (§ 40 GO NRW); er legt die Grundsätze der Verwaltung fest und überwacht
     ihre Durchführung. Der Bürgermeister wird in Nordrhein-Westfalen von den Bürgern direkt gewählt, ist
     Vorsitzender des Rates, Leiter der Verwaltung und repräsentiert die Gemeinde (§ 62 GO NRW). Die Gemeinde
@@ -25,34 +24,34 @@ cards:
   norms:
   - § 40 GO NRW
   - § 62 GO NRW
-  quellen: &id001
+  quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-kom-zustaendigkeit
   type: definition
   front: Wie sind die Zuständigkeiten von Rat und Bürgermeister abgegrenzt?
-  back: >-
-    Der Rat ist für alle Angelegenheiten der Gemeinde zuständig, soweit das Gesetz nichts anderes bestimmt
-    (Allzuständigkeit, § 41 GO NRW); § 41 Abs. 1 enthält einen Katalog nicht übertragbarer Angelegenheiten
+  back: 'Der Rat ist für alle Angelegenheiten der Gemeinde zuständig, soweit das Gesetz nichts anderes
+    bestimmt (Allzuständigkeit, § 41 GO NRW); § 41 Abs. 1 enthält einen Katalog nicht übertragbarer Angelegenheiten
     (z. B. Satzungen, Haushalt, wichtige Verträge). Der Bürgermeister entscheidet in Geschäften der laufenden
     Verwaltung, die nach Regelmäßigkeit und Bedeutung nicht in den Rat gehören, und in Eilfällen (Dringlichkeitsentscheidung
     mit nachträglicher Genehmigung). Handelt der Bürgermeister in einer Rat-Angelegenheit, ist die Zuständigkeit
     verletzt. Zu unterscheiden sind Innenzuständigkeit (organschaftlich) und Vertretungsmacht nach außen
-    (§ 63, § 64 GO NRW): Formverstöße der Vertretung berühren die Wirksamkeit gegenüber Dritten.
+    (§ 63, § 64 GO NRW): Formverstöße der Vertretung berühren die Wirksamkeit gegenüber Dritten.'
   norms:
   - § 41 GO NRW
   - § 62 GO NRW
   - § 63 GO NRW
   - § 64 GO NRW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-kom-verpflichtung
   type: norm
   front: Welche Form gilt für Verpflichtungserklärungen der Gemeinde in NRW?
-  back: >-
-    Erklärungen, durch die die Gemeinde verpflichtet werden soll, bedürfen der Schriftform (§ 64 GO NRW).
-    Sie sind grundsätzlich vom Bürgermeister oder seinem Vertreter und einem weiteren vertretungsberechtigten
+  back: Erklärungen, durch die die Gemeinde verpflichtet werden soll, bedürfen der Schriftform (§ 64 GO
+    NRW). Sie sind grundsätzlich vom Bürgermeister oder seinem Vertreter und einem weiteren vertretungsberechtigten
     Bediensteten handschriftlich zu unterzeichnen. Ausnahmen gelten für Geschäfte der laufenden Verwaltung.
     Wird die Form nicht eingehalten, fehlt dem Vertreter die Vertretungsmacht; der Vertrag ist schwebend
     unwirksam und kann durch formgerechte Genehmigung wirksam werden (§ 177 BGB analog). Ein Vertrauensschutz
@@ -62,67 +61,73 @@ cards:
   - § 64 GO NRW
   - § 177 BGB
   - § 54 VwVfG NRW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-kom-befangenheit
   type: norm
   front: Wann ist ein Ratsmitglied befangen und was folgt aus der Mitwirkung?
-  back: >-
-    Ein Ratsmitglied darf nicht beraten oder entscheiden, wenn die Entscheidung ihm selbst, einem Angehörigen
-    oder einer von ihm vertretenen natürlichen oder juristischen Person einen unmittelbaren Vorteil oder
-    Nachteil bringen kann (§ 31 GO NRW, für Ratsmitglieder anwendbar über § 43 GO NRW). Bei Gruppeninteressen,
-    die nur die Zugehörigkeit zu einer Berufs- oder Bevölkerungsgruppe betreffen, greift der Ausschluss
-    nicht. Das befangene Mitglied hat die Befangenheit anzuzeigen und den Sitzungsraum zu verlassen. Hat
-    ein Befangener mitgewirkt, ist der Beschluss rechtswidrig; ob er unwirksam ist, hängt von den Regelungen
-    des § 31 GO NRW über die Kausalität und Heilung ab. Die Mitwirkung ist für das Ergebnis erheblich,
-    wenn ohne die Stimme eine andere Mehrheit bestanden hätte.
+  back: Ein Ratsmitglied darf nicht beraten oder entscheiden, wenn die Entscheidung ihm selbst, einem
+    Angehörigen oder einer von ihm vertretenen natürlichen oder juristischen Person einen unmittelbaren
+    Vorteil oder Nachteil bringen kann (§ 31 GO NRW, für Ratsmitglieder anwendbar über § 43 GO NRW). Bei
+    Gruppeninteressen, die nur die Zugehörigkeit zu einer Berufs- oder Bevölkerungsgruppe betreffen, greift
+    der Ausschluss nicht. Das befangene Mitglied hat die Befangenheit anzuzeigen und den Sitzungsraum
+    zu verlassen. Hat ein Befangener mitgewirkt, ist der Beschluss rechtswidrig; ob er unwirksam ist,
+    hängt von den Regelungen des § 31 GO NRW über die Kausalität und Heilung ab. Die Mitwirkung ist für
+    das Ergebnis erheblich, wenn ohne die Stimme eine andere Mehrheit bestanden hätte.
   norms:
   - § 31 GO NRW
   - § 43 GO NRW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-kom-satzung
   type: norm
-  front: >-
-    Wie entsteht eine wirksame Satzung in NRW und wie werden Verfahrensfehler geheilt?
-  back: >-
-    Die Gemeinde kann ihre Angelegenheiten durch Satzung regeln, soweit Gesetze nichts anderes bestimmen
+  front: Wie entsteht eine wirksame Satzung in NRW und wie werden Verfahrensfehler geheilt?
+  back: 'Die Gemeinde kann ihre Angelegenheiten durch Satzung regeln, soweit Gesetze nichts anderes bestimmen
     (§ 7 Abs. 1 GO NRW); das folgt aus Art. 28 Abs. 2 GG. Eingriffe in Grundrechte erfordern eine gesetzliche
     Ermächtigung (Wesentlichkeitstheorie). Formal sind Ratsbeschluss, Ausfertigung und öffentliche Bekanntmachung
     notwendig. Nach § 7 Abs. 6 GO NRW wird die Verletzung von Verfahrens- oder Formvorschriften unbeachtlich,
-    wenn sie nicht innerhalb einer Frist nach Bekanntmachung gerügt wird (Heilung); dies gilt nicht für
-    Verstöße gegen Ausfertigung oder Bekanntmachung und bei fehlendem Hinweis auf die Rügefrist. Materielle
-    Fehler werden nicht geheilt. Normenkontrolle: § 47 Abs. 1 Nr. 2 VwGO i. V. m. § 109a JustG NRW.
+    wenn sie nicht innerhalb einer Frist nach Bekanntmachung gerügt wird (Heilung); dies gilt insbesondere
+    nicht, wenn die Satzung nicht ordnungsgemäß öffentlich bekannt gemacht wurde, bei fehlendem Hinweis
+    auf die Rügefrist und bei rechtzeitiger Rüge. Materielle Fehler werden nicht geheilt. Rechtsschutz:
+    Normenkontrolle nach § 47 VwGO, soweit das Landesrecht sie eröffnet, sonst inzidente Kontrolle im
+    Verfahren gegen den Vollzugsakt.'
   norms:
   - § 7 GO NRW
   - Art. 28 Abs. 2 GG
   - § 47 VwGO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-kom-einrichtung
   type: norm
-  front: >-
-    Wann besteht ein Anspruch auf Zulassung zu einer öffentlichen Einrichtung?
-  back: >-
-    Die Gemeinde schafft die für ihre Einwohner erforderlichen öffentlichen Einrichtungen (§ 8 Abs. 1
-    GO NRW). Alle Einwohner sind im Rahmen der bestehenden Vorschriften berechtigt, die öffentlichen Einrichtungen
-    zu benutzen (§ 8 Abs. 2 GO NRW), und verpflichtet, die Lasten zu tragen. Der Anspruch besteht im Rahmen
-    von Widmung und Kapazität; juristische Personen und auswärtige Personen können nach der Widmung zugelassen
-    sein. Grenzen bilden Art. 3 Abs. 1 GG und bei Parteien § 5 PartG (Gleichbehandlung im Rahmen der Widmung).
-    Ein Ausschluss wegen der politischen Ausrichtung ist nur bei Verbot der Partei (Art. 21 Abs. 2 GG)
-    zulässig. Zweistufentheorie: Zulassung als Verwaltungsakt, Nutzungsverhältnis ggf. privatrechtlich.
+  front: Wann besteht ein Anspruch auf Zulassung zu einer öffentlichen Einrichtung?
+  back: 'Die Gemeinde schafft die für ihre Einwohner erforderlichen öffentlichen Einrichtungen (§ 8 Abs.
+    1 GO NRW). Alle Einwohner sind im Rahmen der bestehenden Vorschriften berechtigt, die öffentlichen
+    Einrichtungen zu benutzen (§ 8 Abs. 2 GO NRW), und verpflichtet, die Lasten zu tragen. Der Anspruch
+    besteht im Rahmen von Widmung und Kapazität; juristische Personen und auswärtige Personen können nach
+    der Widmung zugelassen sein. Grenzen bilden Art. 3 Abs. 1 GG und bei Parteien § 5 PartG (Gleichbehandlung
+    im Rahmen der Widmung). Ein Ausschluss wegen der politischen Ausrichtung kommt nach dem Parteienprivileg
+    (Art. 21 Abs. 4 GG) solange nicht in Betracht, wie das BVerfG die Verfassungswidrigkeit der Partei
+    nicht festgestellt hat (Art. 21 Abs. 2 GG). Zweistufentheorie: Zulassung als Verwaltungsakt, Nutzungsverhältnis
+    ggf. privatrechtlich.'
   norms:
   - § 8 GO NRW
   - Art. 3 Abs. 1 GG
   - § 5 PartG
   - Art. 21 Abs. 2 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-kom-anschlusszwang
   type: definition
   front: Was ist der Anschluss- und Benutzungszwang?
-  back: >-
-    Die Gemeinde kann aus Gründen des öffentlichen Wohls durch Satzung den Anschluss an Einrichtungen
+  back: Die Gemeinde kann aus Gründen des öffentlichen Wohls durch Satzung den Anschluss an Einrichtungen
     wie Wasserversorgung, Abwasserbeseitigung und Fernwärme sowie deren Benutzung vorschreiben (§ 9 GO
     NRW). Der Zwang greift in Art. 2 Abs. 1 und Art. 14 GG ein, ist aber durch Gründe des Gemeinwohls
     gerechtfertigt (Volksgesundheit, Umwelt- und Klimaschutz). Er ist verhältnismäßig, wenn Ausnahmen
@@ -131,13 +136,14 @@ cards:
   norms:
   - § 9 GO NRW
   - Art. 14 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-kom-aufsicht
   type: definition
   front: Welche Aufsichtsformen und Mittel kennt die GO NRW?
-  back: >-
-    Die Gemeinden unterliegen der Kommunalaufsicht (§§ 119 ff. GO NRW). Bei Selbstverwaltungsaufgaben
+  back: Die Gemeinden unterliegen der Kommunalaufsicht (§§ 119 ff. GO NRW). Bei Selbstverwaltungsaufgaben
     ist sie Rechtsaufsicht, bei Weisungsaufgaben Fachaufsicht. Die Aufsichtsbehörde (Landrat bzw. Bezirksregierung
     bzw. Ministerium) prüft die Rechtmäßigkeit, nicht die Zweckmäßigkeit. Mittel sind Unterrichtung, Beanstandung
     rechtswidriger Beschlüsse, Anordnung bestimmter Maßnahmen, Ersatzvornahme und Bestellung eines Beauftragten.
@@ -147,13 +153,14 @@ cards:
   norms:
   - §§ 119 ff. GO NRW
   - Art. 28 Abs. 2 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-kom-kommunalverfassungsstreit
   type: streitstand
   front: Wie wird ein Kommunalverfassungsstreit prozessual behandelt?
-  back: >-
-    Der Streit zwischen Organen oder Organteilen derselben Gemeinde (z. B. Ratsmitglied oder Fraktion
+  back: Der Streit zwischen Organen oder Organteilen derselben Gemeinde (z. B. Ratsmitglied oder Fraktion
     gegen Bürgermeister oder Rat) ist eine nichtverfassungsrechtliche öffentlich-rechtliche Streitigkeit,
     sodass der Verwaltungsrechtsweg nach § 40 Abs. 1 VwGO eröffnet ist. Statthaft sind meist Feststellungs-
     und Leistungsklage, da Organhandeln mangels Außenwirkung kein Verwaltungsakt ist. Die Klagebefugnis
@@ -166,29 +173,32 @@ cards:
   - § 40 Abs. 1 VwGO
   - § 42 Abs. 2 VwGO analog
   - § 61 VwGO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: nw-kom-aufbau
   type: schema_step
-  front: >-
-    Aufbau: Anspruch auf Zulassung zu einer öffentlichen Einrichtung (§ 8 Abs. 2 GO NRW)
-  back: >-
-    I. Anspruchsgrundlage § 8 Abs. 2 GO NRW (ggf. Art. 3 Abs. 1 GG, § 5 PartG). II. Öffentliche Einrichtung:
+  front: 'Aufbau: Anspruch auf Zulassung zu einer öffentlichen Einrichtung (§ 8 Abs. 2 GO NRW)'
+  back: 'I. Anspruchsgrundlage § 8 Abs. 2 GO NRW (ggf. Art. 3 Abs. 1 GG, § 5 PartG). II. Öffentliche Einrichtung:
     Widmung für einen bestimmten Zweck, Benutzerkreis. III. Berechtigter: Einwohner bzw. nach Widmung
     zugelassene Gruppe. IV. Benutzung im Rahmen der Widmung und Kapazität. V. Keine Ausschlussgründe (Verbot
-    der Partei; Satzungsgrenzen). VI. Rechtsfolge: Zulassung; Zweistufentheorie.
+    der Partei; Satzungsgrenzen). VI. Rechtsfolge: Zulassung; Zweistufentheorie.'
   norms:
   - § 8 Abs. 2 GO NRW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 schemata:
 - slug: nw-schema-kom-einrichtung
-  title: >-
-    Anspruch auf Zulassung zu einer öffentlichen Einrichtung nach § 8 GO NRW
+  title: Anspruch auf Zulassung zu einer öffentlichen Einrichtung nach § 8 GO NRW
   norms:
   - § 8 GO NRW
   - Art. 3 Abs. 1 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   steps:
   - label: I. Anspruchsgrundlage
     hinweis: § 8 Abs. 2 GO NRW; für Parteien zusätzlich § 5 PartG.
@@ -203,8 +213,7 @@ schemata:
   - label: IV. Kein Ausschlussgrund
     hinweis: Kapazität, Satzung, Störungsgefahr; Gleichheitssatz; Parteienprivileg.
   - label: V. Rechtsfolge und Rechtsschutz
-    hinweis: >-
-      Zulassung durch Verwaltungsakt; Verpflichtungsklage; § 123 VwGO bei Eilbedürftigkeit.
+    hinweis: Zulassung durch Verwaltungsakt; Verpflichtungsklage; § 123 VwGO bei Eilbedürftigkeit.
   stand: 2026-10
 faelle:
 - slug: nw-fall-kom-stadthalle
@@ -214,39 +223,33 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
-  facts: >-
-    Die Stadt S (NRW) betreibt eine Stadthalle, die nach ihrer Benutzungsordnung für kulturelle, sportliche
-    und politische Veranstaltungen von Vereinen und Parteien zur Verfügung steht. Die Partei P, die vom
-    Bundesverfassungsgericht nicht verboten wurde, beantragt die Halle für einen Landesparteitag. Der
-    Bürgermeister lehnt ab: Die Partei sei "nicht mit den Werten der Stadt vereinbar", außerdem sei Ärger
-    zu erwarten. Die Halle ist an dem Termin frei. P möchte die Halle nutzen.
+  facts: 'Die Stadt S (NRW) betreibt eine Stadthalle, die nach ihrer Benutzungsordnung für kulturelle,
+    sportliche und politische Veranstaltungen von Vereinen und Parteien zur Verfügung steht. Die Partei
+    P, die vom Bundesverfassungsgericht nicht verboten wurde, beantragt die Halle für einen Landesparteitag.
+    Der Bürgermeister lehnt ab: Die Partei sei "nicht mit den Werten der Stadt vereinbar", außerdem sei
+    Ärger zu erwarten. Die Halle ist an dem Termin frei. P möchte die Halle nutzen.'
   question: Kann P die Überlassung der Stadthalle verlangen?
   steps:
   - prompt: Auf welche Anspruchsgrundlage kann P sich stützen?
-    erwartung: >-
-      § 8 Abs. 2 GO NRW i. V. m. der Widmung der Stadthalle als öffentliche Einrichtung; ergänzend Art.
-      3 Abs. 1 GG i. V. m. § 5 Abs. 1 PartG (Gleichbehandlung der Parteien, wenn die Gemeinde Einrichtungen
+    erwartung: § 8 Abs. 2 GO NRW i. V. m. der Widmung der Stadthalle als öffentliche Einrichtung; ergänzend
+      Art. 3 Abs. 1 GG i. V. m. § 5 Abs. 1 PartG (Gleichbehandlung der Parteien, wenn die Gemeinde Einrichtungen
       für Parteien zur Verfügung stellt).
   - prompt: Fällt die Nutzung in den Widmungszweck?
-    erwartung: >-
-      Ja. Die Benutzungsordnung nennt politische Veranstaltungen von Parteien; ein Parteitag ist davon
-      erfasst.
+    erwartung: Ja. Die Benutzungsordnung nennt politische Veranstaltungen von Parteien; ein Parteitag
+      ist davon erfasst.
   - prompt: Darf die Stadt wegen der politischen Ausrichtung ablehnen?
-    erwartung: >-
-      Nein. Solange die Partei nicht nach Art. 21 Abs. 2 GG verboten ist (Parteienprivileg, Art. 21 Abs.
-      4 GG: Entscheidung des BVerfG), darf die Gemeinde nicht wegen ihrer Ausrichtung ausschließen. Die
-      Wertegemeinschaft der Stadt ist kein zulässiger Ablehnungsgrund; die vage Befürchtung von Ärger
-      genügt nicht, solange sich Störungen mit polizeilichen Mitteln beherrschen lassen.
+    erwartung: 'Nein. Solange die Partei nicht nach Art. 21 Abs. 2 GG verboten ist (Parteienprivileg,
+      Art. 21 Abs. 4 GG: Entscheidung des BVerfG), darf die Gemeinde nicht wegen ihrer Ausrichtung ausschließen.
+      Die Wertegemeinschaft der Stadt ist kein zulässiger Ablehnungsgrund; die vage Befürchtung von Ärger
+      genügt nicht, solange sich Störungen mit polizeilichen Mitteln beherrschen lassen.'
   - prompt: Wie wird der Anspruch durchgesetzt?
-    erwartung: >-
-      Verpflichtungsklage auf Zulassung (Zweistufentheorie: Zulassung als Verwaltungsakt); wegen der Terminlage
-      einstweilige Anordnung nach § 123 VwGO.
+    erwartung: 'Verpflichtungsklage auf Zulassung (Zweistufentheorie: Zulassung als Verwaltungsakt); wegen
+      der Terminlage einstweilige Anordnung nach § 123 VwGO.'
   expectation:
     pruefpunkte:
     - id: p1
-      label: >-
-        Anspruch aus § 8 Abs. 2 GO NRW (öffentliche Einrichtung, Widmung) und Gleichbehandlung (Art. 3
-        GG, § 5 PartG)
+      label: Anspruch aus § 8 Abs. 2 GO NRW (öffentliche Einrichtung, Widmung) und Gleichbehandlung (Art.
+        3 GG, § 5 PartG)
       weight: 2.5
       required: true
       norms:
@@ -260,8 +263,7 @@ faelle:
       card_slugs:
       - nw-kom-einrichtung
     - id: p2
-      label: >-
-        Nutzung innerhalb des Widmungszwecks (politische Veranstaltungen von Parteien)
+      label: Nutzung innerhalb des Widmungszwecks (politische Veranstaltungen von Parteien)
       weight: 1.5
       required: false
       keywords:
@@ -272,9 +274,8 @@ faelle:
       card_slugs:
       - nw-kom-einrichtung
     - id: p3
-      label: >-
-        Kein Ausschluss wegen politischer Ausrichtung ohne Parteiverbot (Parteienprivileg, Art. 21 Abs.
-        2, 4 GG)
+      label: Ausschluss wegen der politischen Ausrichtung abgelehnt (Parteienprivileg, Art. 21 Abs. 2,
+        4 GG)
       weight: 3.0
       required: true
       keywords:
