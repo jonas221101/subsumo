@@ -27,18 +27,14 @@ cards:
   stand: 2026-09
 - slug: ni-lra-verfassungsgericht
   type: norm
-  front: Gibt es in Niedersachsen eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
-  back: 'Nein - keine Individualverfassungsbeschwerde zum Staatsgerichtshof. Zuständiges Gericht: Niedersächsischer
-    Staatsgerichtshof auf Grundlage der Niedersächsische Verfassung (NV). Verfahrensgegenstand ist nur
-    die Verletzung von Landesgrundrechten durch Landesstaatsgewalt; Bundesrecht ist Prüfungsmaßstab nur,
-    soweit die Landesverfassung darauf verweist. Daneben steht immer die Verfassungsbeschwerde zum BVerfG
-    (Art. 93 Abs. 1 Nr. 4a GG).'
+  front: Welche Verfahren stehen vor dem Niedersächsischen Staatsgerichtshof offen und wie verhält sich das zur Verfassungsbeschwerde zum BVerfG?
+  back: 'Zuständiges Gericht ist der Niedersächsische Staatsgerichtshof auf Grundlage der Niedersächsischen Verfassung (NV). Er entscheidet u. a. in Organstreitigkeiten, in Normenkontrollverfahren und über kommunale Verfassungsbeschwerden; Prüfungsmaßstab ist die Landesverfassung, Bundesrecht nur, soweit die Landesverfassung darauf verweist. Ob und in welchem Umfang einzelne Bürger Landesgrundrechte mit einer Individualverfassungsbeschwerde geltend machen können, richtet sich nach der NV und dem Gesetz über den Staatsgerichtshof und ist dort nachzulesen (redaktionell zu verifizieren). Daneben steht immer die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG), die gegenüber Landesverfassungsrechtsbehelfen eigenständig ist.'
   norms:
   - Niedersächsische Verfassung (NV)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
-  stand: 2026-09
+  stand: 2026-10
 - slug: ni-lra-kommunalverfassung
   type: norm
   front: Welches Gesetz regelt die Kommunalverfassung in Niedersachsen und welche Hauptorgane hat die

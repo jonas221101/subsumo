@@ -85,3 +85,315 @@ cards:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
+- slug: mv-por-standardmassnahmen
+  type: norm
+  front: >-
+    Wo stehen die polizeilichen Standardmaßnahmen im Landesrecht von Mecklenburg-Vorpommern und welche
+    Wirkung haben sie gegenüber der Generalklausel?
+  back: >-
+    Die Standardmaßnahmen sind im SOG M-V im Anschluss an die Generalklausel (§ 13 SOG M-V) spezialgesetzlich
+    geregelt. Typisch sind Befragung, Identitätsfeststellung, Platzverweis, Gewahrsam, Durchsuchung von
+    Personen und Sachen, Betreten und Durchsuchen von Wohnungen und Sicherstellung. Die einzelnen Befugnisse
+    sind in ihren Paragraphen im Gesetzestext nachzuschlagen und genau zu zitieren. Standardmaßnahmen
+    sind abschließende Spezialregelungen für typische Gefahrensituationen: Liegen ihre Voraussetzungen
+    nicht vor, darf nicht auf die Generalklausel ausgewichen werden (Sperrwirkung). In der Klausur wird
+    die speziellere Befugnisnorm zuerst geprüft und genau zitiert; die Generalklausel kommt nur für atypische
+    Gefahren in Betracht.
+  norms:
+  - >-
+    § 13 SOG M-V
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: mv-por-gefahr
+  type: definition
+  front: >-
+    Was ist eine Gefahr im Polizei- und Ordnungsrecht in Mecklenburg-Vorpommern und wie wird die Gefahrenprognose
+    angestellt?
+  back: >-
+    Gefahr ist eine Sachlage, die bei ungehindertem Ablauf des objektiv zu erwartenden Geschehens mit
+    hinreichender Wahrscheinlichkeit in absehbarer Zeit zu einem Schaden für ein Schutzgut führt. Die
+    Generalklausel (§ 13 SOG M-V) setzt eine konkrete Gefahr im Einzelfall voraus; die abstrakte Gefahr
+    (typisierend, für Fallgruppen) ist Grundlage für Gefahrenabwehrverordnungen. Die Prognose erfolgt
+    ex ante aus der Sicht eines verständigen, durchschnittlich erfahrenen Amtswalters auf Grundlage der
+    im Handlungszeitpunkt erkennbaren Tatsachen. Nach der Je-desto-Formel sinken die Anforderungen an
+    die Wahrscheinlichkeit, je höher der drohende Schaden und je bedeutender das Schutzgut ist. Schutzgut
+    ist die öffentliche Sicherheit (Rechtsordnung, Individualrechtsgüter, Bestand staatlicher Einrichtungen);
+    ob daneben die öffentliche Ordnung genannt ist, ergibt sich aus dem Wortlaut der jeweiligen Landesnorm.
+  norms:
+  - >-
+    § 13 SOG M-V
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: mv-por-gefahrenstufen
+  type: definition
+  front: >-
+    Welche qualifizierten Gefahrbegriffe unterscheidet das Landesrecht von Mecklenburg-Vorpommern (gegenwärtige,
+    erhebliche Gefahr, Gefahr im Verzug)?
+  back: >-
+    Qualifizierte Gefahrbegriffe erhöhen die Eingriffsschwelle oder erweitern Befugnisse. Eine gegenwärtige
+    Gefahr liegt vor, wenn das schädigende Ereignis bereits eingetreten ist oder unmittelbar oder in allernächster
+    Zeit mit an Sicherheit grenzender Wahrscheinlichkeit eintreten wird. Eine erhebliche Gefahr betrifft
+    ein bedeutsames Rechtsgut (etwa Leben, Gesundheit, Freiheit, wesentliche Sachwerte). Gefahr im Verzug
+    besteht, wenn bei Einhaltung der regulären Zuständigkeit oder des regulären Verfahrens der Zweck der
+    Maßnahme vereitelt würde; sie ermöglicht Eilzuständigkeiten und Eilverfahren. Die Begriffe sind in
+    den Landespolizeigesetzen unterschiedlich ausgeprägt; maßgeblich ist stets die in der jeweiligen Befugnisnorm
+    verlangte Qualifikation (SOG M-V).
+  norms:
+  - >-
+    § 13 SOG M-V
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: mv-por-anscheinsgefahr
+  type: definition
+  front: >-
+    Was unterscheiden Anscheinsgefahr, Gefahrenverdacht und Putativgefahr bei Maßnahmen nach § 13 SOG
+    M-V?
+  back: >-
+    Anscheinsgefahr: Bei verständiger Würdigung der erkennbaren Tatsachen im Handlungszeitpunkt (ex ante)
+    liegt eine Gefahr vor, tatsächlich besteht aber keine. Sie wird wie eine echte Gefahr behandelt; die
+    Maßnahme ist rechtmäßig. Gefahrenverdacht: Es ist unklar, ob eine Gefahr besteht; zulässig sind Gefahrerforschungsmaßnahmen,
+    weitergehende Eingriffe grundsätzlich erst bei Bestätigung der Gefahr. Putativgefahr: Die Behörde
+    nimmt eine Gefahr an, die auch bei verständiger Würdigung nicht erkennbar vorlag; die Maßnahme ist
+    rechtswidrig (bloße Vermutung). Streitig ist die Kostenpflicht des Anscheinsverursachers: Sie wird
+    überwiegend nur bejaht, wenn er den Anschein zurechenbar veranlasst hat.
+  norms:
+  - >-
+    § 13 SOG M-V
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: mv-por-platzverweis
+  type: norm
+  front: >-
+    Was ist ein Platzverweis nach dem Landesrecht von Mecklenburg-Vorpommern und wie unterscheidet er
+    sich von Aufenthaltsverbot und Gewahrsam?
+  back: >-
+    Der Platzverweis ist eine Standardmaßnahme: Eine Person wird zur Abwehr einer Gefahr vorübergehend
+    von einem Ort verwiesen oder ihr wird das Betreten untersagt. Er ist ein Verwaltungsakt in Gestalt
+    eines Gebots oder Verbots und kann mündlich ergehen. Bei Anordnung durch Polizeivollzugsbeamte ist
+    er regelmäßig eine unaufschiebbare Maßnahme, deren Vollziehung nach § 80 Abs. 2 S. 1 Nr. 2 VwGO sofort
+    möglich ist. Vom Platzverweis zu unterscheiden ist das längerfristige Aufenthaltsverbot für ein bestimmtes
+    Gebiet, für das höhere Anforderungen gelten. Wird ein Platzverweis nicht befolgt, kommt als Durchsetzung
+    Zwang in Betracht; der Gewahrsam ist eine Freiheitsentziehung und erfordert unverzüglich eine richterliche
+    Entscheidung (Art. 104 Abs. 2 GG).
+  norms:
+  - Art. 104 Abs. 2 GG
+  - >-
+    § 80 Abs. 2 S. 1 Nr. 2 VwGO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: mv-por-zweckveranlasser
+  type: streitstand
+  front: >-
+    Ist der Zweckveranlasser Verhaltensstörer (§ 69 SOG M-V)? Wie wird der Streit entschieden?
+  back: >-
+    Unstreitig ist, wer die Gefahr unmittelbar verursacht, Verhaltensstörer. Streitig ist die Verantwortlichkeit
+    des Veranlassers, der die Gefahr nur mittelbar auslöst, indem ein Dritter die Gefahrenschwelle überschreitet.
+    Nach der strengen Theorie der unmittelbaren Verursachung ist Störer nur, wer selbst die Gefahrenschwelle
+    überschreitet; der bloße Veranlasser ist nicht verantwortlich. Die herrschende Meinung erweitert die
+    Verantwortlichkeit auf den Zweckveranlasser: Er hat die Störung bezweckt oder sie war als zwangsläufige
+    Folge seines Verhaltens objektiv unvermeidlich (klassisch: Schaufensterpuppen-Fall). Für die Ausweitung
+    spricht die Effektivität der Gefahrenabwehr; dagegen die Begrenzung der Störerhaftung auf rechtlich
+    zurechenbare Verursachung und die gesetzliche Unterscheidung von Störer und Nichtstörer. In der Klausur
+    ist die Zurechnung sauber zu begründen.
+  norms:
+  - >-
+    §§ 69, 70, 71 SOG M-V
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: mv-por-kosten
+  type: definition
+  front: >-
+    Wer trägt die Kosten einer Ersatzvornahme oder unmittelbaren Ausführung im Landesrecht von Mecklenburg-Vorpommern
+    und was ist für den Kostenbescheid zu prüfen?
+  back: >-
+    Die Kosten trägt der Pflichtige bzw. der Störer, der bei rechtmäßigem Vorgehen hätte herangezogen
+    werden können. Beim gestreckten Verfahren (Grundverfügung, Androhung, Festsetzung, Ersatzvornahme)
+    muss die Vollstreckung rechtmäßig sein; für den Kostenbescheid genügt, dass die Grundverfügung wirksam
+    und vollziehbar war, auf ihre Rechtmäßigkeit kommt es nicht an. Bei Sofortvollzug und unmittelbarer
+    Ausführung ohne vorherigen Verwaltungsakt wird dagegen geprüft, ob die Maßnahme rechtmäßig war und
+    ob ein Verwaltungsakt gegen den Kostenschuldner rechtmäßig hätte ergehen dürfen (hypothetischer Verwaltungsakt).
+    Die Kosten werden durch Kostenbescheid festgesetzt (Verwaltungsakt, Anfechtungsklage). Maßgeblich
+    sind die Vollstreckungsregeln (Verwaltungsvollstreckungsgesetz M-V) und die kostenrechtlichen Vorschriften
+    des Landes; die Höhe muss erforderlich und angemessen sein.
+  norms:
+  - Verwaltungsvollstreckungsgesetz M-V (VwVG M-V)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: mv-schema-por-massnahme
+  title: >-
+    Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Mecklenburg-Vorpommern
+  norms:
+  - >-
+    § 13 SOG M-V
+  - >-
+    §§ 69, 70, 71 SOG M-V
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Ermächtigungsgrundlage
+    hinweis: >-
+      Spezialgesetzliche Befugnis (Standardmaßnahme) vor Generalklausel prüfen; Sperrwirkung beachten.
+    children:
+    - label: 1. Standardmaßnahme, soweit einschlägig
+    - label: 2. Hilfsweise Generalklausel, § 13 SOG M-V
+  - label: II. Formelle Rechtmäßigkeit
+    children:
+    - label: >-
+        1. Zuständigkeit: Ordnungsbehörden bzw. Polizei im Eilfall nach dem SOG M-V
+    - label: >-
+        2. Verfahren: Anhörung nach dem Landesverwaltungsverfahrensgesetz (Ausnahme bei Gefahr im Verzug)
+    - label: 3. Form und Begründung (mündlicher Verwaltungsakt zulässig)
+  - label: III. Materielle Rechtmäßigkeit
+    children:
+    - label: 1. Tatbestand
+      hinweis: >-
+        Konkrete Gefahr im Einzelfall, ex ante prüfen; Anscheinsgefahr einbeziehen.
+      children:
+      - label: a) Schutzgut (öffentliche Sicherheit, ggf. Ordnung)
+      - label: >-
+          b) Gefahr: hinreichende Wahrscheinlichkeit eines Schadens in absehbarer Zeit
+      - label: c) ggf. qualifizierte Gefahr (gegenwärtig, erheblich)
+    - label: 2. Richtiger Adressat (§§ 69, 70, 71 SOG M-V)
+      hinweis: >-
+        Verhaltensstörer, Zustandsstörer, Nichtstörer (nur im Notstand); Zweckveranlasser und Auswahl
+        unter mehreren Störern begründen.
+      children:
+      - label: a) Verhaltensstörer, § 69 SOG M-V
+      - label: b) Zustandsstörer, § 70 SOG M-V
+      - label: c) Nichtstörer, § 71 SOG M-V
+    - label: 3. Rechtsfolge
+      hinweis: >-
+        Ermessen: Entschließungs- und Auswahlermessen; Verhältnismäßigkeit nie auslassen.
+      children:
+      - label: a) Ermessensfehlerfreiheit
+      - label: >-
+          b) Verhältnismäßigkeit: legitimer Zweck, geeignet, erforderlich, angemessen
+      - label: c) Bestimmtheit der Anordnung
+  - label: IV. Vollstreckung (falls Zwang angewandt wurde)
+    hinweis: >-
+      Gestrecktes Verfahren oder Sofortvollzug; Rechtmäßigkeit des Zwangsmittels gesondert prüfen.
+    children:
+    - label: 1. Grundverfügung wirksam und vollziehbar
+    - label: 2. Androhung und Festsetzung des Zwangsmittels
+    - label: 3. Anwendung des mildesten geeigneten Zwangsmittels
+faelle:
+- slug: mv-fall-por-zweckveranlasser
+  title: Der Aktionsstand auf der Fahrbahn
+  difficulty: 4
+  minutes: 50
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - SOG M-V, amtliche Fassung
+  facts: >-
+    Einzelhändler H stellt zu einer Werbeaktion in Rostock bewusst einen Aktionsstand mit kostenlosen
+    Proben auf die Fahrbahn der Hauptstraße vor seinem Geschäft, damit Passanten stehen bleiben und sein
+    Angebot wahrnehmen. Die Passanten bilden einen dichten Pulk auf der Fahrbahn, der Verkehr kommt zum
+    Erliegen und Fußgänger geraten in Gefahr durch ausweichende Fahrzeuge. Die zuständige Ordnungsbehörde
+    untersagt H durch Bescheid, den Stand auf der Fahrbahn aufzustellen. H wendet ein, nicht er, sondern
+    die Passanten hätten die Fahrbahn betreten; er sei deshalb nicht Störer.
+  question: Ist H der richtige Adressat der Untersagung?
+  steps:
+  - prompt: Liegt eine Gefahr vor?
+    erwartung: >-
+      Ja: Die blockierte Fahrbahn und der Pulk von Passanten begründen eine konkrete Gefahr für die öffentliche
+      Sicherheit (Verkehrssicherheit, Leib und Leben der Passanten).
+  - prompt: Hat H die Gefahr unmittelbar verursacht?
+    erwartung: >-
+      Nach der Theorie der unmittelbaren Verursachung hat zunächst die Gefahrenschwelle überschritten,
+      wer selbst die Fahrbahn betritt, also die Passanten; H hat nur mittelbar veranlasst. Nach dieser
+      strengen Ansicht wäre H nicht Verhaltensstörer.
+  - prompt: Ist H Zweckveranlasser?
+    erwartung: >-
+      Die herrschende Meinung bezieht den Zweckveranlasser in die Verhaltensverantwortlichkeit ein: Er
+      hat die Störung bezweckt oder sie war objektiv zwangsläufige Folge seines Handelns. H wollte Passanten
+      gezielt zum Stehenbleiben auf der Fahrbahn bewegen; die Blockade war die unvermeidliche Folge. H
+      ist daher Verhaltensstörer nach § 69 SOG M-V.
+  - prompt: Wie ist der Streit zu entscheiden?
+    erwartung: >-
+      Für die herrschende Meinung spricht die Effektivität der Gefahrenabwehr: Die Passanten handeln auf
+      Veranlassung des H und sind als Adressaten ungeeignet. Die Untersagung gegenüber H ist daher richtig
+      adressiert. Nach der Gegenansicht wäre H nicht Verhaltensstörer und könnte nur als Nichtstörer unter
+      den engen Voraussetzungen des polizeilichen Notstands (§ 71 SOG M-V) herangezogen werden; diese
+      liegen hier nicht vor, weil die Behörde die Passanten selbst wegweisen kann.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Konkrete Gefahr für die öffentliche Sicherheit bejaht
+      weight: 1.0
+      required: false
+      keywords:
+      - konkrete Gefahr
+      - Verkehrssicherheit
+      - Gefahr für Leib und Leben
+      - Gefahrenprognose
+      card_slugs:
+      - mv-por-gefahr
+    - id: p2
+      label: >-
+        Streit um die Verantwortlichkeit des Veranlassers dargestellt (unmittelbare Verursachung vs. Zweckveranlasser)
+      weight: 3.0
+      required: true
+      keywords:
+      - Theorie der unmittelbaren Verursachung
+      - Zweckveranlasser
+      - mittelbare Verursachung
+      - Veranlasser
+      - Schaufensterpuppen
+      card_slugs:
+      - mv-por-zweckveranlasser
+    - id: p3
+      label: >-
+        Zweckveranlassung bejaht (bezweckt oder objektiv zwangsläufig)
+      weight: 2.5
+      required: true
+      keywords:
+      - bezweckt
+      - zwangsläufige Folge
+      - objektiv unvermeidlich
+      - Zweckveranlassung
+      card_slugs:
+      - mv-por-zweckveranlasser
+    - id: p4
+      label: >-
+        H als Verhaltensstörer (§ 69 SOG M-V) richtiger Adressat; Nichtstörer (§ 71 SOG M-V) nicht erfüllt
+      weight: 2.0
+      required: true
+      norms:
+      - >-
+        § 69 SOG M-V
+      - >-
+        § 71 SOG M-V
+      keywords:
+      - Verhaltensstörer
+      - >-
+        § 69 SOG M-V
+      - >-
+        § 71 SOG M-V
+      - Nichtstörer
+      - Adressat
+      card_slugs:
+      - mv-por-stoerer
+    - id: p5
+      label: Wirksamkeit der Gefahrenabwehr (Effektivität) als Argument
+      weight: 1.0
+      required: false
+      keywords:
+      - Effektivität der Gefahrenabwehr
+      - effektive Gefahrenabwehr
+      - Passanten als Adressaten ungeeignet

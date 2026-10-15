@@ -1,0 +1,351 @@
+topic:
+  slug: ni-bauordnungsrecht
+  area: oeffentliches-recht
+  title: Bauordnungsrecht Niedersachsen
+  parent: or-vwvfg-verwaltungsakt
+  bundesland: NI
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: ni-bo-abgrenzung
+  type: definition
+  front: >-
+    Wie grenzen sich Bauplanungsrecht und Bauordnungsrecht ab und welche Rolle spielt die NBauO?
+  back: >-
+    Das Bauplanungsrecht regelt die städtebauliche Ordnung der Bodennutzung (Bebauungsplan, Zulässigkeit
+    nach §§ 29 ff. BauGB); es ist Bundesrecht (Art. 74 Abs. 1 Nr. 18 GG). Das Bauordnungsrecht regelt
+    als Landesrecht die Anforderungen an das einzelne Bauvorhaben im Sinne der Gefahrenabwehr: Standsicherheit,
+    Brandschutz, Abstandsflächen, Gestaltung, Stellplätze und das Verfahren. Rechtsgrundlage in Niedersachsen
+    ist die Niedersächsische Bauordnung (NBauO). Im Genehmigungsverfahren sind beide Bereiche zu prüfen:
+    Das Vorhaben muss bauplanungsrechtlich zulässig sein und darf bauordnungsrechtlichen Vorschriften
+    nicht widersprechen. In der Klausur ist die Trennung der Prüfungsebenen wichtig, weil die Rechtsfolgen
+    (Befreiung, § 31 Abs. 2 BauGB; Abweichung nach Landesrecht) unterschiedlich sind.
+  norms:
+  - Niedersächsische Bauordnung (NBauO)
+  - >-
+    §§ 29 ff. BauGB
+  - Art. 74 Abs. 1 Nr. 18 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: ni-bo-baugenehmigung
+  type: norm
+  front: >-
+    Unter welchen Voraussetzungen besteht in Niedersachsen ein Anspruch auf Baugenehmigung?
+  back: >-
+    Der Bauherr hat Anspruch auf die Baugenehmigung, wenn dem Vorhaben keine öffentlich-rechtlichen Vorschriften
+    entgegenstehen. Zu prüfen sind: (1) Genehmigungsbedürftigkeit (Errichtung, Änderung, Nutzungsänderung;
+    keine Verfahrensfreiheit), (2) bauplanungsrechtliche Zulässigkeit (§§ 29 ff. BauGB; Einvernehmen der
+    Gemeinde, § 36 BauGB), (3) bauordnungsrechtliche Zulässigkeit nach der NBauO, soweit das Verfahren
+    sie zum Prüfprogramm macht, und (4) sonstiges öffentliches Recht. Die Baugenehmigung ist ein Verwaltungsakt,
+    der unbeschadet der Rechte Dritter ergeht. Untere Bauaufsichtsbehörden sind insbesondere die Landkreise
+    sowie die kreisfreien und größeren Städte; die Gemeinde wirkt als Planungsträgerin mit (Einvernehmen
+    nach § 36 BauGB). Rechtsschutz bei Ablehnung: Verpflichtungsklage nach § 42 Abs. 1 Var. 2 VwGO.
+  norms:
+  - >-
+    § 70 Abs. 1 NBauO
+  - >-
+    § 59 NBauO
+  - Niedersächsische Bauordnung (NBauO)
+  - >-
+    § 36 BauGB
+  - >-
+    § 42 Abs. 1 VwGO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: ni-bo-verfahrensarten
+  type: definition
+  front: >-
+    Welche Verfahrensarten kennt das Bauordnungsrecht in Niedersachsen und was folgt daraus für die materielle
+    Rechtmäßigkeit?
+  back: >-
+    Die NBauO unterscheidet nach Gefährdungspotential und Größe des Vorhabens: verfahrensfreie Vorhaben,
+    die Genehmigungsfreistellung bei qualifiziertem Bebauungsplan, das vereinfachte Genehmigungsverfahren
+    mit eingeschränktem Prüfprogramm und das reguläre Genehmigungsverfahren mit umfassender Prüfung. Entscheidend
+    ist: Verfahrensfreiheit oder eingeschränkte Prüfung bedeuten nicht, dass materielle Anforderungen
+    entfallen; sie besagen nur, dass die Bauaufsichtsbehörde das Vorhaben nicht oder nicht vollständig
+    vorab prüft. Auch verfahrensfreie Vorhaben müssen dem materiellen Recht entsprechen, und die Bauaufsichtsbehörde
+    kann bei Verstößen einschreiten. Eine Baugenehmigung im vereinfachten Verfahren stellt nur die Vereinbarkeit
+    mit den in diesem Verfahren geprüften Vorschriften fest.
+  norms:
+  - Niedersächsische Bauordnung (NBauO)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: ni-bo-abstandsflaechen
+  type: norm
+  front: >-
+    Was regelt das Abstandsflächenrecht der NBauO und welche Rechtsfolgen hat sein Verstoß?
+  back: >-
+    Abstandsflächen (§ 5 NBauO) sind von oberirdischen Gebäuden freizuhaltende Flächen vor den Außenwänden.
+    Sie dienen dem Brandschutz, der Belichtung, Belüftung und Besonnung sowie dem Wohnfrieden. Die Tiefe
+    bemisst sich nach der Wandhöhe mit einem landesrechtlich festgelegten Faktor und einem Mindestmaß;
+    der konkrete Faktor ist dem Gesetz zu entnehmen. Grundsätzlich liegt die Abstandsfläche auf dem Baugrundstück.
+    Das Abstandsflächenrecht ist weitgehend drittschützend: Ein Nachbar kann sich gegen eine Baugenehmigung
+    wehren, die diese Vorschriften verletzt. Unterschreitungen können im Wege der Abweichung (Landesrecht)
+    gestattet werden, wenn Zweck und öffentliche Belange gewahrt sind. Ein Verstoß macht das Vorhaben
+    materiell rechtswidrig und kann bauaufsichtliche Maßnahmen begründen.
+  norms:
+  - >-
+    § 5 NBauO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: ni-bo-nachbarschutz
+  type: definition
+  front: >-
+    Unter welchen Voraussetzungen kann ein Nachbar in Niedersachsen gegen eine Baugenehmigung vorgehen?
+  back: >-
+    Der Nachbar kann die Baugenehmigung mit Widerspruch bzw. Anfechtungsklage (Drittanfechtung) angreifen.
+    Klagebefugt (§ 42 Abs. 2 VwGO) ist er, wenn er die Verletzung einer drittschützenden Norm geltend
+    machen kann: nachbarschützend sind etwa die Abstandsflächenvorschriften der NBauO, bestimmte Festsetzungen
+    eines Bebauungsplans (Gebietserhaltungsanspruch) und das Gebot der Rücksichtnahme. Begründet ist die
+    Klage nur, wenn die Genehmigung rechtswidrig ist und den Nachbarn in einem subjektiven öffentlichen
+    Recht verletzt (Schutznormtheorie); allgemeine objektive Rechtsverstöße genügen nicht. Widerspruch
+    und Anfechtungsklage des Nachbarn haben nach § 212a Abs. 1 BauGB keine aufschiebende Wirkung; vorläufiger
+    Rechtsschutz wird über § 80a Abs. 3 i. V. m. § 80 Abs. 5 VwGO gewährt.
+  norms:
+  - >-
+    § 42 Abs. 2 VwGO
+  - >-
+    § 212a Abs. 1 BauGB
+  - >-
+    § 80a Abs. 3 VwGO
+  - >-
+    § 80 Abs. 5 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: ni-bo-eingriff
+  type: norm
+  front: >-
+    Welche bauaufsichtlichen Eingriffsmaßnahmen gibt es in Niedersachsen und wann genügt formelle Illegalität?
+  back: >-
+    Die Bauaufsichtsbehörde kann bei rechtswidrigen baulichen Anlagen nach der NBauO einschreiten, insbesondere
+    durch Baueinstellung (Stilllegungsverfügung), Nutzungsuntersagung und Beseitigungsanordnung. Zu unterscheiden
+    sind formelle Illegalität (fehlende erforderliche Genehmigung) und materielle Illegalität (Widerspruch
+    zu materiellem Recht). Für Baueinstellung und Nutzungsuntersagung genügt regelmäßig formelle Illegalität;
+    wegen der Schwere des Eingriffs setzt die Beseitigungsanordnung nach h. M. materielle Illegalität
+    voraus, weil sonst eine genehmigungsfähige Anlage beseitigt würde. Die Maßnahmen stehen im Ermessen;
+    zu beachten sind Verhältnismäßigkeit, Gleichbehandlung und Bestandsschutz. Adressat ist regelmäßig
+    der Bauherr oder der Eigentümer.
+  norms:
+  - >-
+    § 79 NBauO
+  - Niedersächsische Bauordnung (NBauO)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: ni-bo-bestandsschutz
+  type: definition
+  front: >-
+    Was bedeutet Bestandsschutz im Bauordnungsrecht von Niedersachsen?
+  back: >-
+    Bestandsschutz folgt aus Art. 14 Abs. 1 GG: Eine rechtmäßig errichtete bauliche Anlage darf in ihrem
+    genehmigten Zustand und in der genehmigten Nutzung fortbestehen, auch wenn sich das Recht später ändert.
+    Voraussetzung ist, dass die Anlage genehmigt oder zumindest zu irgendeinem Zeitpunkt materiell legal
+    war. Eine Beseitigungsanordnung allein wegen späterer Rechtsänderung ist rechtswidrig. Nachträgliche
+    Anpassungsverlangen sind nur nach ausdrücklicher gesetzlicher Ermächtigung und bei erheblicher Gefahr
+    für Leben, Gesundheit oder öffentliche Sicherheit zulässig. Kein Bestandsschutz genießen Schwarzbauten,
+    die nie genehmigt und nie genehmigungsfähig waren. Weitergehende Veränderungen (Erweiterung, Nutzungsänderung)
+    sind vom Bestandsschutz nicht gedeckt.
+  norms:
+  - Art. 14 Abs. 1 GG
+  - Niedersächsische Bauordnung (NBauO)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: ni-bo-abweichung
+  type: definition
+  front: >-
+    Wann kann in Niedersachsen von Anforderungen der NBauO abgewichen werden und wie unterscheidet sich
+    das von der Befreiung nach dem BauGB?
+  back: >-
+    Die NBauO erlaubt es der Bauaufsichtsbehörde, Abweichungen von bauordnungsrechtlichen Anforderungen
+    zuzulassen, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der nachbarlichen
+    Belange mit den öffentlichen Belangen vereinbar sind. Es handelt sich um eine Ermessensentscheidung,
+    die bei Erfüllung der Voraussetzungen und ohne entgegenstehende Gründe auf null reduziert sein kann.
+    Die Befreiung nach § 31 Abs. 2 BauGB betrifft dagegen Festsetzungen eines Bebauungsplans und ist Bauplanungsrecht.
+    In der Klausur sind beide Instrumente zu trennen; für die Nachbarschutzprüfung ist maßgeblich, ob
+    die verletzte Norm drittschützend ist und ob die Abweichung die nachbarlichen Belange würdigt.
+  norms:
+  - >-
+    § 31 Abs. 2 BauGB
+  - Niedersächsische Bauordnung (NBauO)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: ni-schema-bo-eingriff
+  title: >-
+    Rechtmäßigkeit einer bauaufsichtlichen Eingriffsverfügung nach der NBauO
+  norms:
+  - Niedersächsische Bauordnung (NBauO)
+  - >-
+    § 79 NBauO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Ermächtigungsgrundlage
+    hinweis: >-
+      Eingriffsbefugnis der NBauO (Baueinstellung, Nutzungsuntersagung, Beseitigungsanordnung) benennen.
+  - label: II. Formelle Rechtmäßigkeit
+    children:
+    - label: 1. Zuständigkeit der Bauaufsichtsbehörde
+    - label: 2. Anhörung
+    - label: 3. Form, Bestimmtheit, Begründung
+  - label: III. Materielle Rechtmäßigkeit
+    children:
+    - label: >-
+        1. Tatbestand: rechtswidrige bauliche Anlage oder Nutzung
+      hinweis: >-
+        Zwischen formeller und materieller Illegalität unterscheiden; Beseitigung setzt materielle Illegalität
+        voraus.
+      children:
+      - label: >-
+          a) Genehmigungsbedürftigkeit und fehlende Genehmigung (formelle Illegalität)
+      - label: >-
+          b) Widerspruch zu bauplanungs- oder bauordnungsrechtlichen Vorschriften (materielle Illegalität)
+      - label: >-
+          c) Verfahrensfreiheit schließt materielle Illegalität nicht aus
+    - label: 2. Kein Bestandsschutz (Art. 14 Abs. 1 GG)
+    - label: >-
+        3. Richtiger Adressat: Bauherr, Eigentümer, Nutzer
+    - label: 4. Rechtsfolge
+      hinweis: >-
+        Ermessen: Entschließung, Auswahl der Maßnahme, Verhältnismäßigkeit, Gleichbehandlung (keine Gleichheit
+        im Unrecht).
+      children:
+      - label: a) Geeignetheit
+      - label: b) Erforderlichkeit (milderes Mittel, etwa Nachgenehmigung)
+      - label: c) Angemessenheit
+  - label: IV. Rechtsschutz
+    children:
+    - label: 1. Anfechtungsklage gegen die Verfügung
+    - label: >-
+        2. Vorläufiger Rechtsschutz, § 80 Abs. 5 VwGO, soweit sofort vollziehbar
+faelle:
+- slug: ni-fall-bo-nutzungsuntersagung
+  title: Die Wohnungen in der Lagerhalle
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - NBauO, amtliche Fassung
+  - BauGB, amtliche Fassung
+  facts: >-
+    E ist Eigentümerin einer genehmigten Lagerhalle im Landkreis L in Niedersachsen. Das Grundstück liegt
+    in einem durch Bebauungsplan festgesetzten Gewerbegebiet. Ohne Baugenehmigung baut E einen Teil der
+    Halle zu Wohnungen aus und vermietet diese. Die zuständige Bauaufsichtsbehörde stellt fest, dass die
+    Nutzungsänderung genehmigungsbedürftig, aber nicht genehmigt ist, die Wohnnutzung im Gewerbegebiet
+    bauplanungsrechtlich unzulässig ist und die Brandschutzanforderungen für Wohnungen nicht erfüllt sind.
+    Sie untersagt E nach Anhörung die Wohnnutzung und setzt eine Frist von drei Monaten, damit die Mieter
+    ausziehen können.
+  question: Ist die Nutzungsuntersagung rechtmäßig?
+  steps:
+  - prompt: >-
+      Auf welcher Grundlage kann die Behörde einschreiten und ist sie zuständig?
+    erwartung: >-
+      Die NBauO ermächtigt die Bauaufsichtsbehörde, bei rechtswidrigen Nutzungen einzuschreiten (§ 79
+      NBauO). Zuständig ist die untere Bauaufsichtsbehörde; Verfahrensfehler (Anhörung) bestehen nicht.
+  - prompt: Liegt eine rechtswidrige Nutzung vor?
+    erwartung: >-
+      Ja: Die Nutzungsänderung von Lager zu Wohnen ist genehmigungsbedürftig und nicht genehmigt (formelle
+      Illegalität). Zudem ist die Wohnnutzung im Gewerbegebiet planungsrechtlich unzulässig und verstößt
+      gegen Brandschutzanforderungen (materielle Illegalität).
+  - prompt: Genießt die Nutzung Bestandsschutz und wer ist Adressat?
+    erwartung: >-
+      Nein: Die Wohnnutzung war nie genehmigt und nie genehmigungsfähig; Bestandsschutz besteht nur für
+      die genehmigte gewerbliche Nutzung. E ist als Eigentümerin und Bauherrin richtige Adressatin.
+  - prompt: Ist die Untersagung ermessensfehlerfrei und verhältnismäßig?
+    erwartung: >-
+      Ja: Sie ist geeignet und erforderlich, da eine Nachgenehmigung ausscheidet; sie ist angemessen,
+      weil die Brandgefahr für die Mieter überwiegt und die Frist von drei Monaten die Interessen der
+      Mieter berücksichtigt. Die Nutzungsuntersagung ist rechtmäßig.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Eingriffsbefugnis der NBauO und Zuständigkeit der Bauaufsichtsbehörde benannt
+      weight: 1.0
+      required: false
+      norms:
+      - >-
+        § 79 NBauO
+      keywords:
+      - >-
+        § 79 NBauO
+      - Eingriffsbefugnis
+      - Bauaufsichtsbehörde
+      - untere Bauaufsicht
+      - NBauO
+      card_slugs:
+      - ni-bo-eingriff
+    - id: p2
+      label: Formelle und materielle Illegalität der Wohnnutzung geprüft
+      weight: 3.0
+      required: true
+      keywords:
+      - formelle Illegalität
+      - materielle Illegalität
+      - Nutzungsänderung
+      - genehmigungsbedürftig
+      - Brandschutz
+      - bauplanungsrechtlich unzulässig
+      card_slugs:
+      - ni-bo-eingriff
+      - ni-bo-baugenehmigung
+    - id: p3
+      label: Kein Bestandsschutz für die nie genehmigte Wohnnutzung
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 14 Abs. 1 GG
+      keywords:
+      - Bestandsschutz
+      - Art. 14 Abs. 1 GG
+      - nie genehmigt
+      - nicht genehmigungsfähig
+      - keine Legalität
+      card_slugs:
+      - ni-bo-bestandsschutz
+    - id: p4
+      label: E als Eigentümerin und Bauherrin richtige Adressatin
+      weight: 1.0
+      required: false
+      keywords:
+      - Adressat
+      - Eigentümerin
+      - Bauherrin
+      - Störer
+      - Handlungsstörer
+    - id: p5
+      label: >-
+        Ermessen und Verhältnismäßigkeit der Nutzungsuntersagung mit Frist
+      weight: 2.5
+      required: true
+      keywords:
+      - Verhältnismäßigkeit
+      - Ermessen
+      - erforderlich
+      - Nachgenehmigung
+      - angemessen
+      - Frist
+      card_slugs:
+      - ni-bo-eingriff

@@ -1,0 +1,256 @@
+topic:
+  slug: hb-kommunalrecht
+  area: oeffentliches-recht
+  title: Kommunalrecht Bremen und Bremerhaven
+  parent: or-vwvfg-verwaltungsakt
+  bundesland: HB
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: hb-kr-zwei-staedte-staat
+  type: norm
+  front: Wie ist das Land Bremen kommunalrechtlich verfasst?
+  back: >-
+    Das Land Freie Hansestadt Bremen besteht aus den beiden Stadtgemeinden Bremen und Bremerhaven (Zwei-Städte-Staat).
+    Beide sind Gemeinden im Sinne des Art. 28 Abs. 2 GG. Die Stadtgemeinde Bremen hat keine eigene Gemeindeordnung
+    wie die Flächenländer; ihre Verfassung ergibt sich aus der Landesverfassung der Freien Hansestadt
+    Bremen (BremLV). Die Stadtgemeinde Bremerhaven hat eine eigene Verfassung (Verfassung für die Stadt
+    Bremerhaven). Land und Stadtgemeinde Bremen sind rechtlich getrennt, werden aber durch dieselben Organe
+    in Personalunion geführt. Für die Klausur ist daher stets zuerst die Aufgabe dem Land, der Stadtgemeinde
+    Bremen oder der Stadtgemeinde Bremerhaven zuzuordnen.
+  norms:
+  - Landesverfassung der Freien Hansestadt Bremen (BremLV)
+  - Art. 28 Abs. 2 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-kr-stadt-bremen-organe
+  type: definition
+  front: Welche Organe hat die Stadtgemeinde Bremen?
+  back: >-
+    Organe der Stadtgemeinde Bremen sind die Stadtbürgerschaft und der Senat. Die Stadtbürgerschaft besteht
+    aus den in der Stadt Bremen gewählten Mitgliedern der Bürgerschaft (Landtag) und trifft die Entscheidungen
+    der Stadtgemeinde; der Senat ist als Landesregierung zugleich Verwaltungsorgan der Stadtgemeinde Bremen
+    (Personalunion). Die Aufgaben der Stadtgemeinde Bremen werden von den Senatsressorts und den Ämtern
+    wahrgenommen, die zugleich Landes- und Stadtaufgaben erledigen. Beiräte und Ortsämter bilden die Stadtteilebene.
+    Eine kommunale Vertretung wie der Rat in den Flächenländern existiert in der Stadtgemeinde Bremen
+    nicht.
+  norms:
+  - Landesverfassung der Freien Hansestadt Bremen (BremLV)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-kr-bremerhaven-organe
+  type: definition
+  front: Welche Organe hat die Stadtgemeinde Bremerhaven?
+  back: >-
+    Die Stadtgemeinde Bremerhaven hat nach ihrer eigenen Verfassung (Verfassung für die Stadt Bremerhaven)
+    die Stadtverordnetenversammlung als Vertretung der Bürger und den Magistrat als Verwaltungsorgan unter
+    dem Oberbürgermeister. Die Stadtverordnetenversammlung beschließt über die wichtigen Angelegenheiten
+    der Stadt, etwa Satzungen und Haushalt, und kontrolliert den Magistrat. Der Magistrat führt die Verwaltung
+    und vertritt die Stadt nach außen. Bremerhaven steht unter der Staatsaufsicht des Landes Bremen; als
+    Gemeinde kann es sich auf die Selbstverwaltungsgarantie des Art. 28 Abs. 2 GG berufen.
+  norms:
+  - Verfassung für die Stadt Bremerhaven
+  - Art. 28 Abs. 2 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-kr-beiraete
+  type: definition
+  front: Was sind Beiräte und Ortsämter in der Stadtgemeinde Bremen?
+  back: >-
+    Die Stadtgemeinde Bremen gliedert sich in Stadtbezirke und Ortsteile. In den Stadtteilen bestehen
+    Beiräte, die nach dem Ortsgesetz über Beiräte und Ortsämter gebildet werden und an den Entscheidungen
+    der Stadtbehörden mitwirken (insbesondere Beteiligungs- und Anhörungsrechte sowie Entscheidungsrechte
+    in bestimmten Stadtteilangelegenheiten). Die Ortsämter sind die Verwaltungseinheiten der Stadtteile.
+    Beiräte haben nicht den Status eines Gemeinderats; ihre Rechte ergeben sich aus dem Ortsgesetz.
+  norms:
+  - Ortsgesetz über Beiräte und Ortsämter
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-kr-abgrenzung-land-stadt
+  type: definition
+  front: >-
+    Wie werden Aufgaben zwischen Land und Stadtgemeinden in Bremen zugeordnet und wen verklagt man?
+  back: >-
+    Landesaufgaben und Stadtaufgaben sind zu unterscheiden. Die Zuordnung ergibt sich aus der Verfassung,
+    den Fachgesetzen und der Aufgabe selbst; Landesaufgaben (z. B. weite Teile der Polizei, Hochschulen)
+    nimmt das Land wahr, Gemeindeaufgaben die Stadtgemeinden. Da die Behörden häufig für beide Ebenen
+    tätig werden, ist im Einzelfall zu klären, in wessen Namen die Behörde gehandelt hat. Beklagter ist
+    nach § 78 Abs. 1 Nr. 1 VwGO der Rechtsträger, dessen Behörde den Verwaltungsakt erlassen hat, also
+    je nach Zuordnung das Land Bremen, die Stadtgemeinde Bremen oder die Stadtgemeinde Bremerhaven. Eine
+    falsche Zuordnung führt zum falschen Beklagten.
+  norms:
+  - >-
+    § 78 Abs. 1 Nr. 1 VwGO
+  - Landesverfassung der Freien Hansestadt Bremen (BremLV)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-kr-staatsaufsicht
+  type: norm
+  front: Wie wird die Stadtgemeinde Bremerhaven beaufsichtigt?
+  back: >-
+    Die Stadtgemeinde Bremerhaven steht unter der Staatsaufsicht des Landes Bremen. Die Aufsicht ist in
+    den Selbstverwaltungsangelegenheiten Rechtsaufsicht und in den übertragenen Angelegenheiten zusätzlich
+    Fachaufsicht. Zu den Aufsichtsmitteln zählen Beanstandung, Anordnung, Ersatzvornahme und die Einsetzung
+    eines Beauftragten; sie sind verhältnismäßig auszuüben. Gegen aufsichtliche Verfügungen kann sich
+    die Stadtgemeinde Bremerhaven mit der Anfechtungsklage wehren und dabei die Selbstverwaltungsgarantie
+    (Art. 28 Abs. 2 GG) geltend machen. Für die Stadtgemeinde Bremen besteht dieses Aufsichtsverhältnis
+    wegen der Personalunion der Organe nicht in gleicher Weise.
+  norms:
+  - Art. 28 Abs. 2 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-kr-kommunalverfassungsstreit
+  type: definition
+  front: >-
+    Was ist ein Kommunalverfassungsstreit (Organstreit) und welche prozessualen Besonderheiten gelten?
+  back: >-
+    Der Kommunalverfassungsstreit ist ein Innenrechtsstreit zwischen Organen oder Organteilen einer Körperschaft
+    um organschaftliche Rechte und Pflichten. Der Verwaltungsrechtsweg ist nach § 40 Abs. 1 VwGO eröffnet.
+    Klageart ist mangels Verwaltungsakt die Feststellungsklage (§ 43 VwGO) oder die allgemeine Leistungsklage.
+    § 42 Abs. 2 VwGO gilt analog: Das Organ muss die Verletzung eigener organschaftlicher Rechte geltend
+    machen; die Beteiligtenfähigkeit folgt aus § 61 Nr. 2 VwGO analog. Passivlegitimiert ist das Organ,
+    das die Rechte bestreitet. Bei Streitigkeiten zwischen Verfassungsorganen des Landes kann der Weg
+    zum Landesverfassungsgericht eröffnet sein; eine verfassungsrechtliche Streitigkeit ist dann nicht
+    verwaltungsgerichtlich zu klären (§ 40 Abs. 1 VwGO).
+  norms:
+  - >-
+    § 40 Abs. 1 VwGO
+  - >-
+    § 43 VwGO
+  - >-
+    § 61 Nr. 2 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: hb-schema-kr-zuordnung
+  title: Zuordnung von Aufgabe und Rechtsträger im Land Bremen
+  norms:
+  - >-
+    § 78 Abs. 1 Nr. 1 VwGO
+  - Landesverfassung der Freien Hansestadt Bremen (BremLV)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Wer hat gehandelt?
+    hinweis: >-
+      Behörde bzw. Organ bestimmen (Senatsressort, Amt, Magistrat Bremerhaven).
+  - label: II. Zuordnung der Aufgabe
+    hinweis: >-
+      Landesaufgabe, Aufgabe der Stadtgemeinde Bremen oder der Stadtgemeinde Bremerhaven; Doppelfunktion
+      der Behörden beachten.
+    children:
+    - label: 1. Gesetzliche Zuweisung im Fachgesetz
+    - label: 2. Verfassungsrechtliche Zuordnung (BremLV)
+  - label: III. Zuständiges Organ
+    children:
+    - label: >-
+        1. Stadt Bremen: Stadtbürgerschaft oder Senat
+    - label: >-
+        2. Bremerhaven: Stadtverordnetenversammlung oder Magistrat
+  - label: IV. Richtiger Beklagter
+    children:
+    - label: 1. Rechtsträgerprinzip, § 78 Abs. 1 Nr. 1 VwGO
+    - label: 2. Land, Stadtgemeinde Bremen oder Stadtgemeinde Bremerhaven
+  - label: V. Aufsicht
+    hinweis: >-
+      Bremerhaven: Staatsaufsicht des Landes; Rechtsschutz der Stadtgemeinde über Art. 28 Abs. 2 GG.
+  - label: VI. Materielle Rechtmäßigkeit
+    hinweis: Nach dem jeweiligen Fachgesetz prüfen.
+faelle:
+- slug: hb-fall-kr-bremerhaven-beklagter
+  title: Die abgelehnte Sondernutzungserlaubnis in Bremerhaven
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VwGO, amtliche Fassung
+  - Verfassung für die Stadt Bremerhaven, amtliche Fassung
+  facts: >-
+    G betreibt in Bremerhaven einen Blumenstand und beantragt beim Magistrat der Stadt Bremerhaven die
+    Erlaubnis, einen Verkaufsstand auf dem Gehweg aufzustellen. Der Magistrat lehnt den Antrag durch Bescheid
+    ab. Die Entscheidung betrifft eine Angelegenheit der Stadtgemeinde. G möchte klagen und fragt, ob
+    er das Land Bremen, die Stadtgemeinde Bremen, die Stadtgemeinde Bremerhaven oder den Magistrat verklagen
+    muss, und welches Organ der Stadt zuständig war.
+  question: >-
+    Gegen wen ist die Klage zu richten, und welches Organ ist zuständig?
+  steps:
+  - prompt: Welche Rechtsperson hat gehandelt?
+    erwartung: >-
+      Die Stadtgemeinde Bremerhaven: Der Magistrat ist als Verwaltungsorgan der Stadt tätig geworden;
+      es handelt sich um eine Angelegenheit der Stadtgemeinde, nicht des Landes und nicht der Stadtgemeinde
+      Bremen.
+  - prompt: Wer ist richtiger Beklagter?
+    erwartung: >-
+      Nach dem Rechtsträgerprinzip des § 78 Abs. 1 Nr. 1 VwGO ist die Stadtgemeinde Bremerhaven zu verklagen
+      (vertreten durch den Magistrat). Eine Klage gegen das Land Bremen, die Stadtgemeinde Bremen oder
+      den Magistrat als solchen wäre falsch adressiert.
+  - prompt: Welches Organ war zuständig?
+    erwartung: >-
+      Der Magistrat führt als Verwaltungsorgan die Verwaltungsgeschäfte und entscheidet über Einzelfälle
+      wie die Sondernutzungserlaubnis; die Stadtverordnetenversammlung beschließt nur über die wichtigen
+      Angelegenheiten wie Satzungen und Haushalt. Der Magistrat war zuständig.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Handeln der Stadtgemeinde Bremerhaven (nicht des Landes oder der Stadtgemeinde Bremen) erkannt
+      weight: 2.0
+      required: true
+      keywords:
+      - Stadtgemeinde Bremerhaven
+      - Zwei-Städte-Staat
+      - Zuordnung der Aufgabe
+      - Magistrat der Stadt Bremerhaven
+      card_slugs:
+      - hb-kr-zwei-staedte-staat
+      - hb-kr-abgrenzung-land-stadt
+    - id: p2
+      label: >-
+        Stadtgemeinde Bremerhaven als Beklagte nach dem Rechtsträgerprinzip (§ 78 Abs. 1 Nr. 1 VwGO)
+      weight: 3.0
+      required: true
+      norms:
+      - >-
+        § 78 Abs. 1 Nr. 1 VwGO
+      keywords:
+      - Rechtsträgerprinzip
+      - >-
+        § 78 Abs. 1 Nr. 1 VwGO
+      - Stadtgemeinde Bremerhaven
+      - vertreten durch den Magistrat
+      - falscher Beklagter
+      card_slugs:
+      - hb-kr-abgrenzung-land-stadt
+    - id: p3
+      label: >-
+        Zuständigkeit des Magistrats als Verwaltungsorgan; Stadtverordnetenversammlung nur für wichtige
+        Angelegenheiten
+      weight: 2.0
+      required: false
+      keywords:
+      - Magistrat
+      - Stadtverordnetenversammlung
+      - Verwaltungsorgan
+      - Einzelfallentscheidung
+      - Oberbürgermeister
+      card_slugs:
+      - hb-kr-bremerhaven-organe

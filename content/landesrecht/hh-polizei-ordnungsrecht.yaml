@@ -85,3 +85,324 @@ cards:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
+- slug: hh-por-standardmassnahmen
+  type: norm
+  front: >-
+    Wo stehen die polizeilichen Standardmaßnahmen im Landesrecht von Hamburg und welche Wirkung haben
+    sie gegenüber der Generalklausel?
+  back: >-
+    Die Standardmaßnahmen sind im SOG HH im Anschluss an die Generalklausel (§ 3 Abs. 1 SOG HH) spezialgesetzlich
+    geregelt. Typisch sind Befragung, Identitätsfeststellung, Platzverweis, Gewahrsam, Durchsuchung von
+    Personen und Sachen, Betreten und Durchsuchen von Wohnungen und Sicherstellung. Beispiele: Platzverweis
+    § 12b SOG HH, Ingewahrsamnahme § 13 SOG HH. Standardmaßnahmen sind abschließende Spezialregelungen
+    für typische Gefahrensituationen: Liegen ihre Voraussetzungen nicht vor, darf nicht auf die Generalklausel
+    ausgewichen werden (Sperrwirkung). In der Klausur wird die speziellere Befugnisnorm zuerst geprüft
+    und genau zitiert; die Generalklausel kommt nur für atypische Gefahren in Betracht.
+  norms:
+  - >-
+    § 3 Abs. 1 SOG HH
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-por-gefahr
+  type: definition
+  front: >-
+    Was ist eine Gefahr im Polizei- und Ordnungsrecht in Hamburg und wie wird die Gefahrenprognose angestellt?
+  back: >-
+    Gefahr ist eine Sachlage, die bei ungehindertem Ablauf des objektiv zu erwartenden Geschehens mit
+    hinreichender Wahrscheinlichkeit in absehbarer Zeit zu einem Schaden für ein Schutzgut führt. Die
+    Generalklausel (§ 3 Abs. 1 SOG HH) setzt eine konkrete Gefahr im Einzelfall voraus; die abstrakte
+    Gefahr (typisierend, für Fallgruppen) ist Grundlage für Gefahrenabwehrverordnungen. Die Prognose erfolgt
+    ex ante aus der Sicht eines verständigen, durchschnittlich erfahrenen Amtswalters auf Grundlage der
+    im Handlungszeitpunkt erkennbaren Tatsachen. Nach der Je-desto-Formel sinken die Anforderungen an
+    die Wahrscheinlichkeit, je höher der drohende Schaden und je bedeutender das Schutzgut ist. Schutzgut
+    ist die öffentliche Sicherheit (Rechtsordnung, Individualrechtsgüter, Bestand staatlicher Einrichtungen);
+    ob daneben die öffentliche Ordnung genannt ist, ergibt sich aus dem Wortlaut der jeweiligen Landesnorm.
+  norms:
+  - >-
+    § 3 Abs. 1 SOG HH
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-por-gefahrenstufen
+  type: definition
+  front: >-
+    Welche qualifizierten Gefahrbegriffe unterscheidet das Landesrecht von Hamburg (gegenwärtige, erhebliche
+    Gefahr, Gefahr im Verzug)?
+  back: >-
+    Qualifizierte Gefahrbegriffe erhöhen die Eingriffsschwelle oder erweitern Befugnisse. Eine gegenwärtige
+    Gefahr liegt vor, wenn das schädigende Ereignis bereits eingetreten ist oder unmittelbar oder in allernächster
+    Zeit mit an Sicherheit grenzender Wahrscheinlichkeit eintreten wird. Eine erhebliche Gefahr betrifft
+    ein bedeutsames Rechtsgut (etwa Leben, Gesundheit, Freiheit, wesentliche Sachwerte). Gefahr im Verzug
+    besteht, wenn bei Einhaltung der regulären Zuständigkeit oder des regulären Verfahrens der Zweck der
+    Maßnahme vereitelt würde; sie ermöglicht Eilzuständigkeiten und Eilverfahren. Die Begriffe sind in
+    den Landespolizeigesetzen unterschiedlich ausgeprägt; maßgeblich ist stets die in der jeweiligen Befugnisnorm
+    verlangte Qualifikation (SOG HH).
+  norms:
+  - >-
+    § 3 Abs. 1 SOG HH
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-por-anscheinsgefahr
+  type: definition
+  front: >-
+    Was unterscheiden Anscheinsgefahr, Gefahrenverdacht und Putativgefahr bei Maßnahmen nach § 3 Abs.
+    1 SOG HH?
+  back: >-
+    Anscheinsgefahr: Bei verständiger Würdigung der erkennbaren Tatsachen im Handlungszeitpunkt (ex ante)
+    liegt eine Gefahr vor, tatsächlich besteht aber keine. Sie wird wie eine echte Gefahr behandelt; die
+    Maßnahme ist rechtmäßig. Gefahrenverdacht: Es ist unklar, ob eine Gefahr besteht; zulässig sind Gefahrerforschungsmaßnahmen,
+    weitergehende Eingriffe grundsätzlich erst bei Bestätigung der Gefahr. Putativgefahr: Die Behörde
+    nimmt eine Gefahr an, die auch bei verständiger Würdigung nicht erkennbar vorlag; die Maßnahme ist
+    rechtswidrig (bloße Vermutung). Streitig ist die Kostenpflicht des Anscheinsverursachers: Sie wird
+    überwiegend nur bejaht, wenn er den Anschein zurechenbar veranlasst hat.
+  norms:
+  - >-
+    § 3 Abs. 1 SOG HH
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-por-platzverweis
+  type: norm
+  front: >-
+    Was ist ein Platzverweis nach dem Landesrecht von Hamburg und wie unterscheidet er sich von Aufenthaltsverbot
+    und Gewahrsam?
+  back: >-
+    Der Platzverweis (§ 12b SOG HH) ist eine Standardmaßnahme: Eine Person wird zur Abwehr einer Gefahr
+    vorübergehend von einem Ort verwiesen oder ihr wird das Betreten untersagt. Er ist ein Verwaltungsakt
+    in Gestalt eines Gebots oder Verbots und kann mündlich ergehen. Bei Anordnung durch Polizeivollzugsbeamte
+    ist er regelmäßig eine unaufschiebbare Maßnahme, deren Vollziehung nach § 80 Abs. 2 S. 1 Nr. 2 VwGO
+    sofort möglich ist. Vom Platzverweis zu unterscheiden ist das längerfristige Aufenthaltsverbot für
+    ein bestimmtes Gebiet, für das höhere Anforderungen gelten. Wird ein Platzverweis nicht befolgt, kommt
+    als Durchsetzung Zwang in Betracht; der Gewahrsam (§ 13 SOG HH) ist eine Freiheitsentziehung und erfordert
+    unverzüglich eine richterliche Entscheidung (Art. 104 Abs. 2 GG).
+  norms:
+  - >-
+    § 12b SOG HH
+  - >-
+    § 13 SOG HH
+  - Art. 104 Abs. 2 GG
+  - >-
+    § 80 Abs. 2 S. 1 Nr. 2 VwGO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-por-zweckveranlasser
+  type: streitstand
+  front: >-
+    Ist der Zweckveranlasser Verhaltensstörer (§ 8 SOG HH)? Wie wird der Streit entschieden?
+  back: >-
+    Unstreitig ist, wer die Gefahr unmittelbar verursacht, Verhaltensstörer. Streitig ist die Verantwortlichkeit
+    des Veranlassers, der die Gefahr nur mittelbar auslöst, indem ein Dritter die Gefahrenschwelle überschreitet.
+    Nach der strengen Theorie der unmittelbaren Verursachung ist Störer nur, wer selbst die Gefahrenschwelle
+    überschreitet; der bloße Veranlasser ist nicht verantwortlich. Die herrschende Meinung erweitert die
+    Verantwortlichkeit auf den Zweckveranlasser: Er hat die Störung bezweckt oder sie war als zwangsläufige
+    Folge seines Verhaltens objektiv unvermeidlich (klassisch: Schaufensterpuppen-Fall). Für die Ausweitung
+    spricht die Effektivität der Gefahrenabwehr; dagegen die Begrenzung der Störerhaftung auf rechtlich
+    zurechenbare Verursachung und die gesetzliche Unterscheidung von Störer und Nichtstörer. In der Klausur
+    ist die Zurechnung sauber zu begründen.
+  norms:
+  - >-
+    §§ 8, 9, 10 SOG HH
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-por-kosten
+  type: definition
+  front: >-
+    Wer trägt die Kosten einer Ersatzvornahme oder unmittelbaren Ausführung im Landesrecht von Hamburg
+    und was ist für den Kostenbescheid zu prüfen?
+  back: >-
+    Die Kosten trägt der Pflichtige bzw. der Störer, der bei rechtmäßigem Vorgehen hätte herangezogen
+    werden können. Beim gestreckten Verfahren (Grundverfügung, Androhung, Festsetzung, Ersatzvornahme)
+    muss die Vollstreckung rechtmäßig sein; für den Kostenbescheid genügt, dass die Grundverfügung wirksam
+    und vollziehbar war, auf ihre Rechtmäßigkeit kommt es nicht an. Bei Sofortvollzug und unmittelbarer
+    Ausführung ohne vorherigen Verwaltungsakt wird dagegen geprüft, ob die Maßnahme rechtmäßig war und
+    ob ein Verwaltungsakt gegen den Kostenschuldner rechtmäßig hätte ergehen dürfen (hypothetischer Verwaltungsakt).
+    Die Kosten werden durch Kostenbescheid festgesetzt (Verwaltungsakt, Anfechtungsklage). Maßgeblich
+    sind die Vollstreckungsregeln (Hamburgisches Verwaltungsvollstreckungsgesetz) und die kostenrechtlichen
+    Vorschriften des Landes; die Höhe muss erforderlich und angemessen sein.
+  norms:
+  - Hamburgisches Verwaltungsvollstreckungsgesetz (HmbVwVG)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: hh-schema-por-massnahme
+  title: >-
+    Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Hamburg
+  norms:
+  - >-
+    § 3 Abs. 1 SOG HH
+  - >-
+    §§ 8, 9, 10 SOG HH
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Ermächtigungsgrundlage
+    hinweis: >-
+      Spezialgesetzliche Befugnis (Standardmaßnahme) vor Generalklausel prüfen; Sperrwirkung beachten.
+    children:
+    - label: >-
+        1. Standardmaßnahme, soweit einschlägig (z. B. Platzverweis § 12b SOG HH)
+    - label: 2. Hilfsweise Generalklausel, § 3 Abs. 1 SOG HH
+  - label: II. Formelle Rechtmäßigkeit
+    children:
+    - label: >-
+        1. Zuständigkeit: Verwaltungsbehörden bzw. Polizei nach dem SOG HH
+    - label: >-
+        2. Verfahren: Anhörung nach dem Landesverwaltungsverfahrensgesetz (Ausnahme bei Gefahr im Verzug)
+    - label: 3. Form und Begründung (mündlicher Verwaltungsakt zulässig)
+  - label: III. Materielle Rechtmäßigkeit
+    children:
+    - label: 1. Tatbestand
+      hinweis: >-
+        Konkrete Gefahr im Einzelfall, ex ante prüfen; Anscheinsgefahr einbeziehen.
+      children:
+      - label: a) Schutzgut (öffentliche Sicherheit, ggf. Ordnung)
+      - label: >-
+          b) Gefahr: hinreichende Wahrscheinlichkeit eines Schadens in absehbarer Zeit
+      - label: c) ggf. qualifizierte Gefahr (gegenwärtig, erheblich)
+    - label: 2. Richtiger Adressat (§§ 8, 9, 10 SOG HH)
+      hinweis: >-
+        Verhaltensstörer, Zustandsstörer, Nichtstörer (nur im Notstand); Zweckveranlasser und Auswahl
+        unter mehreren Störern begründen.
+      children:
+      - label: a) Verhaltensstörer, § 8 SOG HH
+      - label: b) Zustandsstörer, § 9 SOG HH
+      - label: c) Nichtstörer, § 10 SOG HH
+    - label: 3. Rechtsfolge
+      hinweis: >-
+        Ermessen: Entschließungs- und Auswahlermessen; Verhältnismäßigkeit nie auslassen.
+      children:
+      - label: a) Ermessensfehlerfreiheit
+      - label: >-
+          b) Verhältnismäßigkeit: legitimer Zweck, geeignet, erforderlich, angemessen
+      - label: c) Bestimmtheit der Anordnung
+  - label: IV. Vollstreckung (falls Zwang angewandt wurde)
+    hinweis: >-
+      Gestrecktes Verfahren oder Sofortvollzug; Rechtmäßigkeit des Zwangsmittels gesondert prüfen.
+    children:
+    - label: 1. Grundverfügung wirksam und vollziehbar
+    - label: 2. Androhung und Festsetzung des Zwangsmittels
+    - label: 3. Anwendung des mildesten geeigneten Zwangsmittels
+faelle:
+- slug: hh-fall-por-anscheinsgefahr
+  title: Der vermeintliche Kindesentführer
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - SOG HH, amtliche Fassung
+  facts: >-
+    An einem Samstagnachmittag meldet eine Passantin der Polizei in Hamburg, auf einem Spielplatz zerre
+    ein Mann ein schreiendes Kind zu einem Auto. Als zwei Streifenbeamte eintreffen, sehen sie, wie der
+    Mann M ein sich heftig sträubendes Kind zum Pkw trägt; das Kind ruft: "Lass mich los!". Die Beamten
+    halten M an und erteilen ihm für die Dauer der Sachverhaltsklärung, höchstens eine Stunde, einen Platzverweis
+    für den Spielplatz. Kurz darauf stellt sich heraus, dass M der Vater ist und das Kind lediglich einen
+    Trotzanfall hatte. M hält den Platzverweis für rechtswidrig.
+  question: War der Platzverweis rechtmäßig?
+  steps:
+  - prompt: Welche Ermächtigungsgrundlage kommt in Betracht?
+    erwartung: >-
+      Der Platzverweis ist als Standardmaßnahme in § 12b SOG HH geregelt und geht der Generalklausel des
+      § 3 Abs. 1 SOG HH vor.
+  - prompt: >-
+      Lag eine Gefahr vor? Wie wirkt sich aus, dass tatsächlich keine Gefahr bestand?
+    erwartung: >-
+      Objektiv bestand keine Gefahr. Maßgeblich ist aber die Sicht eines verständigen Amtswalters im Handlungszeitpunkt
+      (ex ante). Nach dem Notruf und dem beobachteten Geschehen lag eine Anscheinsgefahr vor, die wie
+      eine echte Gefahr behandelt wird. Eine bloße Putativgefahr liegt nicht vor, da die Annahme einer
+      Gefahr nicht auf einer bloßen Vermutung beruhte.
+  - prompt: Ist M richtiger Adressat?
+    erwartung: >-
+      M hat durch sein Verhalten den Anschein der Gefahr zurechenbar gesetzt und darf daher als Verhaltensstörer
+      (§ 8 SOG HH) in Anspruch genommen werden (Anscheinsstörer).
+  - prompt: Ist der Platzverweis verhältnismäßig?
+    erwartung: >-
+      Ja: Er ist auf die Dauer der Klärung (höchstens eine Stunde) und den Spielplatz begrenzt, geeignet
+      zur Klärung des Sachverhalts und das mildeste Mittel, um das Kind zu schützen. Der Platzverweis
+      war rechtmäßig, obwohl sich die Gefahr als Schein erwies.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Platzverweis nach § 12b SOG HH als Standardmaßnahme vor der Generalklausel erkannt
+      weight: 1.5
+      required: false
+      norms:
+      - >-
+        § 12b SOG HH
+      - >-
+        § 3 Abs. 1 SOG HH
+      keywords:
+      - >-
+        § 12b SOG HH
+      - Platzverweis
+      - Standardmaßnahme
+      - Sperrwirkung
+      card_slugs:
+      - hh-por-platzverweis
+    - id: p2
+      label: >-
+        Anscheinsgefahr erkannt und nach der Ex-ante-Sicht wie eine echte Gefahr behandelt
+      weight: 3.0
+      required: true
+      keywords:
+      - Anscheinsgefahr
+      - ex ante
+      - verständiger Amtswalter
+      - Sicht im Handlungszeitpunkt
+      - Anschein einer Gefahr
+      card_slugs:
+      - hh-por-anscheinsgefahr
+      - hh-por-gefahr
+    - id: p3
+      label: Abgrenzung zur Putativgefahr (bloße Vermutung) vorgenommen
+      weight: 1.5
+      required: false
+      keywords:
+      - Putativgefahr
+      - bloße Vermutung
+      - Gefahrenverdacht
+      - nicht erkennbar
+      card_slugs:
+      - hh-por-anscheinsgefahr
+    - id: p4
+      label: >-
+        M als (Anscheins-)Verhaltensstörer nach § 8 SOG HH richtig adressiert
+      weight: 2.0
+      required: true
+      norms:
+      - >-
+        § 8 SOG HH
+      keywords:
+      - Verhaltensstörer
+      - >-
+        § 8 SOG HH
+      - Anscheinsstörer
+      - zurechenbar veranlasst
+      card_slugs:
+      - hh-por-stoerer
+    - id: p5
+      label: >-
+        Verhältnismäßigkeit des zeitlich und räumlich begrenzten Platzverweises
+      weight: 2.0
+      required: false
+      keywords:
+      - Verhältnismäßigkeit
+      - geeignet
+      - erforderlich
+      - zeitlich begrenzt
+      - angemessen
+      card_slugs:
+      - hh-por-aufbau

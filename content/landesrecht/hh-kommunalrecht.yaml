@@ -1,0 +1,262 @@
+topic:
+  slug: hh-kommunalrecht
+  area: oeffentliches-recht
+  title: Kommunalrecht und Bezirksverwaltung Hamburg
+  parent: or-vwvfg-verwaltungsakt
+  bundesland: HH
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: hh-kr-einheitsgemeinde
+  type: norm
+  front: >-
+    Welchen Status hat Hamburg im Verhältnis von Land und Gemeinde?
+  back: >-
+    Hamburg ist Freie und Hansestadt und zugleich Land der Bundesrepublik. Es ist Einheitsgemeinde: Staatliche
+    und gemeindliche Aufgaben werden von derselben Rechtsperson, der Freien und Hansestadt Hamburg (FHH),
+    wahrgenommen; eine Gemeindeordnung wie in den Flächenländern gibt es nicht. Die Verwaltung gliedert
+    sich in die Senatsverwaltung mit den Fachbehörden und die Bezirksverwaltung. Rechtsgrundlagen sind
+    die Verfassung der Freien und Hansestadt Hamburg (HV) und das Bezirksverwaltungsgesetz (BezVG). Für
+    die Klausur werden die Fragen, die in Flächenländern kommunalrechtlich zu prüfen wären, in Hamburg
+    anhand der Bezirksverwaltung und des BezVG beantwortet.
+  norms:
+  - Verfassung der Freien und Hansestadt Hamburg (HV)
+  - Bezirksverwaltungsgesetz (BezVG)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-kr-bezirke
+  type: definition
+  front: Welche Rechtsstellung haben die Hamburger Bezirke?
+  back: >-
+    Hamburg gliedert sich in sieben Bezirke (Hamburg-Mitte, Altona, Eimsbüttel, Hamburg-Nord, Wandsbek,
+    Bergedorf, Harburg). Sie sind Verwaltungseinheiten der Freien und Hansestadt Hamburg ohne eigene Rechtspersönlichkeit
+    und keine Gemeinden im Sinne des Art. 28 Abs. 2 GG. Die Bezirke nehmen Aufgaben der Bezirksverwaltung
+    nach dem BezVG wahr; Rechtsträger ihrer Handlungen ist die FHH. Folgen: Die Bezirke sind nicht klagefähig
+    gegen die FHH und nicht selbst Beklagte; zu verklagen ist die Freie und Hansestadt Hamburg.
+  norms:
+  - Bezirksverwaltungsgesetz (BezVG)
+  - Art. 28 Abs. 2 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-kr-organe
+  type: definition
+  front: Welche Organe hat der Hamburger Bezirk?
+  back: >-
+    Organe der Bezirksverwaltung sind die Bezirksversammlung und das Bezirksamt. Die Bezirksversammlung
+    wird von den Wahlberechtigten des Bezirks gewählt, kontrolliert die Verwaltung des Bezirks, beschließt
+    in den ihr zugewiesenen Angelegenheiten und wirkt bei der Wahl der Bezirksamtsleitung mit. Das Bezirksamt
+    unter der Leitung der Bezirksamtsleiterin bzw. des Bezirksamtsleiters führt die Verwaltungsgeschäfte
+    des Bezirks aus. Die Bezirksversammlung ist kein Parlament mit Gesetzgebungskompetenz; ihre Entscheidungsbefugnisse
+    sind durch das BezVG und die Weisungsrechte des Senats begrenzt.
+  norms:
+  - Bezirksverwaltungsgesetz (BezVG)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-kr-weisungsrecht
+  type: norm
+  front: >-
+    Welche Weisungs- und Eingriffsrechte hat der Senat gegenüber den Bezirken?
+  back: >-
+    Der Senat und die Fachbehörden können die Bezirke in bestimmten Aufgabenbereichen durch Fachanweisungen
+    steuern; für Angelegenheiten von gesamtstädtischer Bedeutung kann der Senat Entscheidungen an sich
+    ziehen (Evokationsrecht nach dem BezVG). Die Bezirksaufsicht umfasst die Rechtsaufsicht über die Selbstverwaltungsangelegenheiten
+    der Bezirke und die Fachaufsicht, soweit die Bezirke Aufgaben nach Weisung erfüllen. Da Bezirk und
+    Senat derselben Rechtsperson angehören, sind diese Maßnahmen Binnenrecht der Verwaltung. Ein Rechtsschutz
+    des Bezirks gegen die FHH nach Art. 28 Abs. 2 GG besteht nicht.
+  norms:
+  - Bezirksverwaltungsgesetz (BezVG)
+  - Art. 28 Abs. 2 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-kr-beklagter
+  type: definition
+  front: >-
+    Gegen wen richtet sich die Klage gegen einen Verwaltungsakt des Bezirksamts?
+  back: >-
+    Nach § 78 Abs. 1 Nr. 1 VwGO ist die Klage gegen den Bund, das Land oder die Körperschaft zu richten,
+    deren Behörde den angefochtenen Verwaltungsakt erlassen hat (Rechtsträgerprinzip). Da die Bezirke
+    keine eigene Rechtspersönlichkeit haben, ist Beklagte die Freie und Hansestadt Hamburg; eine landesrechtliche
+    Bestimmung des Behördenprinzips nach § 78 Abs. 1 Nr. 2 VwGO ist nicht ersichtlich. Die Behörde, die
+    den Verwaltungsakt erlassen hat, ist anzugeben. Beteiligtenfähig ist die FHH nach § 61 Nr. 1 VwGO.
+    Wer den Bezirk selbst oder das Bezirksamt als Beklagten benennt, wählt den falschen Beklagten.
+  norms:
+  - >-
+    § 78 Abs. 1 Nr. 1 VwGO
+  - >-
+    § 61 Nr. 1 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-kr-keine-gemeinde
+  type: streitstand
+  front: >-
+    Können sich Hamburger Bezirke auf Art. 28 Abs. 2 GG und die kommunale Selbstverwaltung berufen?
+  back: >-
+    Nein. Die Bezirke sind unselbständige Teile der Hamburger Verwaltung ohne Rechtspersönlichkeit und
+    deshalb weder Gemeinden noch Gemeindeverbände im Sinne des Art. 28 Abs. 2 GG. Art. 28 Abs. 2 GG schützt
+    Gebietskörperschaften mit eigenen Rechtsträgern. Hamburg ist selbst Gemeinde und Land zugleich; eine
+    Aufspaltung durch Bezirke ändert daran nichts. Die BVerfG-Kommunalverfassungsbeschwerde nach Art.
+    93 Abs. 1 Nr. 4b GG steht den Bezirken daher nicht offen. Dem Bezirk bleiben die im BezVG eingeräumten
+    organschaftlichen Rechte im Innenverhältnis, die nicht im Außenrechtsweg gegen die FHH durchgesetzt
+    werden.
+  norms:
+  - Art. 28 Abs. 2 GG
+  - Art. 93 Abs. 1 Nr. 4b GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-kr-buergerbegehren
+  type: norm
+  front: >-
+    Welche Beteiligungsrechte der Einwohner gibt es auf Bezirksebene in Hamburg?
+  back: >-
+    Auf Bezirksebene sieht das BezVG Instrumente der Bürgerbeteiligung vor, insbesondere das Bürgerbegehren
+    und den Bürgerentscheid in Angelegenheiten der Bezirksverwaltung. Der Bürgerentscheid ersetzt in bestimmten
+    Bezirksangelegenheiten einen Beschluss der Bezirksversammlung. Ausgeschlossen sind Angelegenheiten,
+    die der Senat bzw. die Fachbehörden zu entscheiden haben, und Fälle, in denen der Senat sein Evokationsrecht
+    ausübt. Die Zulässigkeitsvoraussetzungen (Gegenstand, Unterschriftenquorum, Frist) sind dem BezVG
+    zu entnehmen. Prüfungsrelevant ist die Abgrenzung zwischen Bezirksangelegenheiten und Senatsangelegenheiten.
+  norms:
+  - Bezirksverwaltungsgesetz (BezVG)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: hh-schema-kr-bezirksverwaltung
+  title: >-
+    Klage gegen Handeln der Hamburger Bezirksverwaltung: Zuständigkeit und Beklagter
+  norms:
+  - >-
+    § 78 Abs. 1 Nr. 1 VwGO
+  - Bezirksverwaltungsgesetz (BezVG)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Wer hat gehandelt?
+    hinweis: >-
+      Bezirksamt, Bezirksversammlung oder Fachbehörde bzw. Senat unterscheiden.
+  - label: II. Zuständigkeit
+    children:
+    - label: >-
+        1. Aufgabe der Fachbehörde oder des Senats (gesamtstädtische Bedeutung, Evokation)
+    - label: 2. Sonst Zuständigkeit des Bezirksamts nach dem BezVG
+    - label: 3. Fachgesetzliche Zuständigkeitsregeln
+  - label: III. Rechtsträger
+    hinweis: >-
+      Der Bezirk hat keine Rechtspersönlichkeit; die FHH ist Rechtsträger.
+  - label: IV. Richtiger Beklagter
+    children:
+    - label: 1. Rechtsträgerprinzip, § 78 Abs. 1 Nr. 1 VwGO
+    - label: 2. Bezeichnung der erlassenden Behörde
+  - label: V. Weisungen und Evokation
+    hinweis: >-
+      Binnenrecht; kein Klagerecht des Bezirks nach Art. 28 Abs. 2 GG.
+  - label: VI. Materielle Rechtmäßigkeit
+    hinweis: Nach dem jeweiligen Fachgesetz prüfen.
+faelle:
+- slug: hh-fall-kr-bezirksamt-beklagter
+  title: Die abgelehnte Erlaubnis für die Außengastronomie
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VwGO, amtliche Fassung
+  - BezVG, amtliche Fassung
+  facts: >-
+    Gastwirt G beantragt beim Bezirksamt Hamburg-Nord die Erlaubnis, vor seinem Lokal auf dem Gehweg Tische
+    aufzustellen. Das Bezirksamt lehnt den Antrag durch Bescheid ab. Die Angelegenheit ist eine örtliche
+    Bezirksangelegenheit ohne gesamtstädtische Bedeutung. G will klagen. Er fragt, ob er das Bezirksamt,
+    den Bezirk Hamburg-Nord oder eine Fachbehörde verklagen muss, und ob sich der Bezirk gegen eine Weisung
+    des Senats, die Erlaubnis zu erteilen, gerichtlich wehren könnte.
+  question: >-
+    Wer ist richtiger Beklagter, und kann sich der Bezirk auf kommunale Selbstverwaltung berufen?
+  steps:
+  - prompt: Wer ist für die Entscheidung zuständig?
+    erwartung: >-
+      Das Bezirksamt als Behörde der Bezirksverwaltung; es liegt eine örtliche Bezirksangelegenheit vor,
+      die nicht dem Senat oder einer Fachbehörde vorbehalten ist.
+  - prompt: Wen muss G verklagen?
+    erwartung: >-
+      Die Bezirke haben keine Rechtspersönlichkeit. Rechtsträger ist die Freie und Hansestadt Hamburg;
+      nach § 78 Abs. 1 Nr. 1 VwGO ist die Klage gegen die FHH zu richten. Eine Klage gegen das Bezirksamt
+      oder den Bezirk wäre falsch adressiert.
+  - prompt: >-
+      Kann der Bezirk eine Weisung des Senats gerichtlich angreifen?
+    erwartung: >-
+      Nein: Der Bezirk ist keine Gemeinde im Sinne des Art. 28 Abs. 2 GG und gehört derselben Rechtsperson
+      wie der Senat an. Die Weisung ist Binnenrecht der Verwaltung; ein Außenrechtsstreit scheidet aus.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Zuständigkeit des Bezirksamts für die örtliche Bezirksangelegenheit festgestellt
+      weight: 1.5
+      required: false
+      keywords:
+      - Bezirksamt
+      - Bezirksverwaltungsgesetz
+      - BezVG
+      - Bezirksangelegenheit
+      - Fachbehörde
+      card_slugs:
+      - hh-kr-bezirke
+    - id: p2
+      label: >-
+        Freie und Hansestadt Hamburg als Beklagte nach dem Rechtsträgerprinzip (§ 78 Abs. 1 Nr. 1 VwGO)
+      weight: 3.0
+      required: true
+      norms:
+      - >-
+        § 78 Abs. 1 Nr. 1 VwGO
+      keywords:
+      - Freie und Hansestadt Hamburg
+      - Rechtsträgerprinzip
+      - >-
+        § 78 Abs. 1 Nr. 1 VwGO
+      - keine Rechtspersönlichkeit
+      - Bezirk nicht Beklagter
+      card_slugs:
+      - hh-kr-beklagter
+    - id: p3
+      label: Bezirk ist keine Gemeinde im Sinne des Art. 28 Abs. 2 GG
+      weight: 2.5
+      required: true
+      norms:
+      - Art. 28 Abs. 2 GG
+      keywords:
+      - Art. 28 Abs. 2 GG
+      - keine Gemeinde
+      - unselbständige Verwaltungseinheit
+      - Selbstverwaltungsgarantie
+      - Einheitsgemeinde
+      card_slugs:
+      - hh-kr-keine-gemeinde
+      - hh-kr-einheitsgemeinde
+    - id: p4
+      label: Weisung des Senats als Binnenrecht ohne Außenrechtsschutz
+      weight: 1.5
+      required: false
+      keywords:
+      - Weisung
+      - Binnenrecht
+      - Evokationsrecht
+      - Fachanweisung
+      - derselben Rechtsperson
+      card_slugs:
+      - hh-kr-weisungsrecht
