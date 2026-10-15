@@ -191,10 +191,9 @@ cards:
     Privatsphäre. § 244 Abs. 4 StGB erhöht die Mindeststrafe auf ein Jahr (ein bis
     zehn Jahre), wenn der Wohnungseinbruchdiebstahl eine dauerhaft genutzte Privatwohnung
     betrifft; die Tat ist dann Verbrechen im Sinne des § 12 Abs. 1 StGB. Ein minder
-    schwerer Fall (drei Monate bis fünf Jahre) ist in § 244 Abs. 3 StGB für die Fälle
-    des Abs. 1 Nr. 1 bis 3 geregelt; die Reichweite für den Qualifikationstatbestand
-    des Abs. 4 ist am aktuellen Gesetzestext zu verifizieren (redaktionelle Prüfung
-    offen). Der Versuch ist nach § 244 Abs. 2 StGB strafbar.
+    schwerer Fall (drei Monate bis fünf Jahre) ist nach § 244 Abs. 3 StGB nur für
+    die Fälle des Abs. 1 Nr. 1 bis 3 vorgesehen; für den Privatwohnungseinbruch des
+    Abs. 4 hat der Gesetzgeber 2017 bewusst keinen minder schweren Fall geregelt. Der Versuch ist nach § 244 Abs. 2 StGB strafbar.
   norms:
   - § 244 Abs. 1 Nr. 3 StGB
   - § 244 Abs. 4 StGB
@@ -260,7 +259,7 @@ schemata:
         falscher Schlüssel, Verborgenhalten)
   - label: III. Dauerhaft genutzte Privatwohnung, § 244 Abs. 4 StGB
     hinweis: 'Verbrechen (Mindeststrafe ein Jahr). Minder schwerer Fall nach § 244
-      Abs. 3 StGB (Abs. 1 Nr. 1 bis 3): Anwendbarkeit auf Abs. 4 am Normtext prüfen.'
+      Abs. 3 StGB nur für Abs. 1 Nr. 1 bis 3; für Abs. 4 kein minder schwerer Fall.'
   - label: IV. Rechtswidrigkeit
   - label: V. Schuld
   - label: VI. Strafzumessung und Konkurrenzen
