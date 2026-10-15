@@ -4,6 +4,7 @@ import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
 import 'fit_title.dart';
+import 'norm_sheet.dart';
 import 'screen_status.dart';
 
 /// Pruefungsschemata als Gliederung mit juristischer Nummerierung
@@ -167,9 +168,10 @@ class _SchemaTile extends StatelessWidget {
             ? null
             : Padding(
                 padding: const EdgeInsets.only(top: Spacing.xs),
-                child: Text(
-                  norms.join(' · '),
-                  style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+                child: Wrap(
+                  spacing: Spacing.md,
+                  runSpacing: Spacing.xs,
+                  children: [for (final norm in norms) NormLink(norm)],
                 ),
               ),
         children: [
