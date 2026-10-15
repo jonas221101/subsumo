@@ -34,11 +34,11 @@ cards:
     Behörde - Ordnungsbehörden und Polizei nach dem Gefahrenabwehrrecht des LVwG SH (ab § 162); örtlich;
     instanziell), 2. Verfahren (Anhörung nach dem jeweiligen Landesverwaltungsverfahrensgesetz), 3. Form.
     III. Materielle Rechtmäßigkeit: 1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose ex ante),
-    2. richtiger Adressat (Störer: Verantwortlichkeitsvorschriften des LVwG SH), 3. Rechtsfolge: Ermessen
+    2. richtiger Adressat (Störer: §§ 218 bis 220 LVwG SH), 3. Rechtsfolge: Ermessen
     und Verhältnismäßigkeit (geeignet, erforderlich, angemessen).'
   norms:
   - § 174 LVwG SH
-  - Verantwortlichkeitsvorschriften des LVwG SH
+  - §§ 218 bis 220 LVwG SH
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -46,14 +46,11 @@ cards:
 - slug: sh-por-stoerer
   type: norm
   front: Wo sind Verhaltensstörer, Zustandsstörer und Nichtstörer in Schleswig-Holstein geregelt?
-  back: 'Verantwortlichkeitsvorschriften des LVwG SH. Verhaltensstörer: wer die Gefahr durch sein Verhalten
-    verursacht (Theorie der unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer:
-    Inhaber der tatsächlichen Gewalt bzw. Eigentümer einer gefährlichen Sache. Nichtstörer: Inanspruchnahme
-    nur unter den engen Voraussetzungen des polizeilichen Notstands (gegenwärtige erhebliche Gefahr, Störer
-    nicht greifbar, Behörde selbst nicht in der Lage), mit Entschädigungsanspruch. Bei mehreren Verantwortlichen
+  back: 'Verhaltensstörer (§ 218 LVwG SH): wer die Gefahr durch sein Verhalten
+    verursacht (Theorie der unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer (§ 219 LVwG SH): Eigentümer und Inhaber der tatsächlichen Gewalt einer gefährlichen Sache. Nichtstörer (§ 220 LVwG SH): Inanspruchnahme nur unter den engen Voraussetzungen des polizeilichen Notstands (Beseitigung einer Störung oder Abwehr einer gegenwärtigen Gefahr, Verantwortliche nicht oder nicht rechtzeitig greifbar, Behörde kann nicht selbst abhelfen, keine erhebliche eigene Gefährdung), mit Entschädigungsanspruch (§ 221 LVwG SH). Bei mehreren Verantwortlichen
     wählt die Behörde nach pflichtgemäßem Ermessen; maßgeblich ist die effektive Gefahrenabwehr.'
   norms:
-  - Verantwortlichkeitsvorschriften des LVwG SH
+  - §§ 218 bis 220 LVwG SH
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -62,7 +59,7 @@ cards:
   type: definition
   front: Wer ist in Schleswig-Holstein für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde
     oder Polizei?
-  back: 'Ordnungsbehörden und Polizei nach dem Gefahrenabwehrrecht des LVwG SH (ab § 162). Prüfungsrelevant
+  back: 'Ordnungsbehörden (§§ 164, 165 LVwG SH) und Polizei (§ 168 LVwG SH) nach dem Gefahrenabwehrrecht des LVwG SH (ab § 162). Prüfungsrelevant
     ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich bei den Verwaltungs-/Ordnungsbehörden;
     der Polizeivollzugsdienst wird tätig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere
     Zuweisung besteht. Ein Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig.
@@ -79,8 +76,7 @@ cards:
   front: Nach welchem Gesetz wird eine Gefahrenabwehrverfügung in Schleswig-Holstein vollstreckt?
   back: 'Verwaltungszwang nach §§ 228 ff. LVwG SH. Regelfall ist das gestreckte Verfahren: Grundverfügung
     - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme, Zwangsgeld, unmittelbarer
-    Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausführung ohne vorausgehenden Verwaltungsakt
-    möglich; die Kosten trägt der Pflichtige. Zwangsmittel müssen angedroht werden und verhältnismäßig
+    Zwang). Bei gegenwärtiger Gefahr ist der sofortige Vollzug ohne vorausgehenden Verwaltungsakt möglich (§ 230 LVwG SH); die Kosten trägt der Pflichtige. Zwangsmittel müssen angedroht werden und verhältnismäßig
     sein; die Androhung kann mit der Grundverfügung verbunden werden. Rechtsschutz richtet sich gegen
     die jeweilige Vollstreckungsmaßnahme.'
   norms:
@@ -194,20 +190,19 @@ cards:
     zurechenbare Verursachung und die gesetzliche Unterscheidung von Störer und Nichtstörer. In der Klausur
     ist die Zurechnung sauber zu begründen.'
   norms:
-  - Verantwortlichkeitsvorschriften des LVwG SH
+  - §§ 218 bis 220 LVwG SH
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: sh-por-kosten
   type: definition
-  front: Wer trägt die Kosten einer Ersatzvornahme oder unmittelbaren Ausführung im Landesrecht von Schleswig-Holstein
+  front: Wer trägt die Kosten einer Ersatzvornahme oder des sofortigen Vollzugs im Landesrecht von Schleswig-Holstein
     und was ist für den Kostenbescheid zu prüfen?
   back: Die Kosten trägt der Pflichtige bzw. der Störer, der bei rechtmäßigem Vorgehen hätte herangezogen
     werden können. Beim gestreckten Verfahren (Grundverfügung, Androhung, Festsetzung, Ersatzvornahme)
     muss die Vollstreckung rechtmäßig sein; für den Kostenbescheid genügt, dass die Grundverfügung wirksam
-    und vollziehbar war, auf ihre Rechtmäßigkeit kommt es nicht an. Bei Sofortvollzug und unmittelbarer
-    Ausführung ohne vorherigen Verwaltungsakt wird dagegen geprüft, ob die Maßnahme rechtmäßig war und
+    und vollziehbar war, auf ihre Rechtmäßigkeit kommt es nicht an. Beim sofortigen Vollzug ohne vorherigen Verwaltungsakt wird dagegen geprüft, ob die Maßnahme rechtmäßig war und
     ob ein Verwaltungsakt gegen den Kostenschuldner rechtmäßig hätte ergehen dürfen (hypothetischer Verwaltungsakt).
     Die Kosten werden durch Kostenbescheid festgesetzt (Verwaltungsakt, Anfechtungsklage). Maßgeblich
     sind die Vollstreckungsregeln (Verwaltungszwang nach §§ 228 ff. LVwG SH) und die kostenrechtlichen
@@ -223,7 +218,7 @@ schemata:
   title: Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Schleswig-Holstein
   norms:
   - § 174 LVwG SH
-  - Verantwortlichkeitsvorschriften des LVwG SH
+  - §§ 218 bis 220 LVwG SH
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -247,7 +242,7 @@ schemata:
       - label: a) Schutzgut (öffentliche Sicherheit, ggf. Ordnung)
       - label: 'b) Gefahr: hinreichende Wahrscheinlichkeit eines Schadens in absehbarer Zeit'
       - label: c) ggf. qualifizierte Gefahr (gegenwärtig, erheblich)
-    - label: 2. Richtiger Adressat (Verantwortlichkeitsvorschriften des LVwG SH)
+    - label: 2. Richtiger Adressat (§§ 218 bis 220 LVwG SH)
       hinweis: Verhaltensstörer, Zustandsstörer, Nichtstörer (nur im Notstand); Zweckveranlasser und Auswahl
         unter mehreren Störern begründen.
       children:

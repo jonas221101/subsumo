@@ -14,13 +14,13 @@ cards:
 - slug: mv-lra-vwvfg
   type: norm
   front: Welches Verwaltungsverfahrensgesetz gilt für Landesbehörden in Mecklenburg-Vorpommern?
-  back: Landesverwaltungsverfahrensgesetz M-V (VwVfG M-V) - Verweisung auf das VwVfG des Bundes. Das VwVfG
+  back: Landesverwaltungsverfahrensgesetz M-V (VwVfG M-V) - eigenes Vollgesetz (z. B. § 35 VwVfG M-V zum Verwaltungsakt, § 20 VwVfG M-V zu ausgeschlossenen Personen; Geltungsbereich § 1 VwVfG M-V). Das VwVfG
     des Bundes gilt nur für Bundesbehörden (§ 1 VwVfG); für Landes- und Kommunalbehörden ist das Landesgesetz
     maßgeblich. Bei Verweisungsgesetzen werden die Bundesnormen 'entsprechend' angewendet und sind so
     zu zitieren (z. B. '§ 35 VwVfG i. V. m. § 1 des Landesgesetzes'), bei Vollgesetzen ist die Landesnorm
     selbst zu zitieren.
   norms:
-  - Landesverwaltungsverfahrensgesetz M-V (VwVfG M-V) - Verweisung auf das VwVfG des Bundes
+  - Landesverwaltungsverfahrensgesetz M-V (VwVfG M-V)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -28,13 +28,16 @@ cards:
 - slug: mv-lra-verfassungsgericht
   type: norm
   front: Gibt es in Mecklenburg-Vorpommern eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
-  back: 'Ja - Art. 53 Nr. 6 Verf M-V. Zuständiges Gericht: Landesverfassungsgericht Mecklenburg-Vorpommern
-    auf Grundlage der Verfassung des Landes Mecklenburg-Vorpommern (Verf M-V). Verfahrensgegenstand ist
-    nur die Verletzung von Landesgrundrechten durch Landesstaatsgewalt; Bundesrecht ist Prüfungsmaßstab
-    nur, soweit die Landesverfassung darauf verweist. Daneben steht immer die Verfassungsbeschwerde zum
-    BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
+  back: 'Ja, aber begrenzt. Zuständig ist das Landesverfassungsgericht Mecklenburg-Vorpommern (Greifswald).
+    Art. 53 Nr. 6 Verf M-V (§ 52 LVerfGG): Verfassungsbeschwerde gegen ein Landesgesetz wegen unmittelbarer
+    Verletzung von Grundrechten oder staatsbürgerlichen Rechten (Frist: ein Jahr seit Inkrafttreten, § 53
+    LVerfGG). Art. 53 Nr. 7 Verf M-V (§ 58 LVerfGG): Verfassungsbeschwerde gegen Akte der öffentlichen Gewalt
+    wegen Verletzung der Grundrechte der Art. 6 bis 10 Verf M-V, nach Rechtswegerschöpfung und nur, soweit
+    keine Zuständigkeit des BVerfG gegeben ist (Frist: ein Monat, § 59 LVerfGG). Daneben steht die Verfassungsbeschwerde
+    zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
   norms:
-  - Verfassung des Landes Mecklenburg-Vorpommern (Verf M-V)
+  - Art. 53 Nr. 6 Verf M-V
+  - Art. 53 Nr. 7 Verf M-V
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion

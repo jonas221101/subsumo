@@ -29,16 +29,15 @@ cards:
   type: norm
   front: Welche Verfahren stehen vor dem Niedersächsischen Staatsgerichtshof offen und wie verhält sich
     das zur Verfassungsbeschwerde zum BVerfG?
-  back: Zuständig ist der Niedersächsische Staatsgerichtshof (Bückeburg) auf Grundlage der Niedersächsischen
-    Verfassung (NV) und des Gesetzes über den Staatsgerichtshof. Er entscheidet unter anderem in Organstreitigkeiten,
+  back: Zuständig ist der Niedersächsische Staatsgerichtshof (Bückeburg) auf Grundlage von Art. 54 der Niedersächsischen Verfassung (NV) und des Gesetzes über den Staatsgerichtshof (NStGHG, dort § 8). Er entscheidet unter anderem in Organstreitigkeiten,
     in abstrakten und konkreten Normenkontrollverfahren, in Wahlprüfungssachen und über kommunale Verfassungsbeschwerden
-    von Gemeinden und Landkreisen wegen Verletzung des Selbstverwaltungsrechts. Eine allgemeine Individualverfassungsbeschwerde
+    von Gemeinden und Landkreisen wegen Verletzung des Selbstverwaltungsrechts durch ein Landesgesetz (Art. 54 Nr. 5 NV). Eine allgemeine Individualverfassungsbeschwerde
     von Bürgerinnen und Bürgern zum Staatsgerichtshof sieht das niedersächsische Landesrecht nicht vor.
     Grundrechtsschutz gegen Akte der Landesstaatsgewalt erlangt der Einzelne daher über die Verfassungsbeschwerde
     zum Bundesverfassungsgericht nach Art. 93 Abs. 1 Nr. 4a GG. In der Klausur ist deshalb bei einer niedersächsischen
     Grundrechtsrüge regelmäßig die Bundesverfassungsbeschwerde zu prüfen.
   norms:
-  - Niedersächsische Verfassung (NV)
+  - Art. 54 NV
   - Art. 93 Abs. 1 Nr. 4a GG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -68,8 +67,7 @@ cards:
   back: Niedersächsische Bauordnung (NBauO). Ein Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben
     keine öffentlich-rechtlichen Vorschriften entgegenstehen. Zu prüfen sind die Genehmigungsbedürftigkeit
     (Errichtung, Änderung, Nutzungsänderung; keine Verfahrensfreiheit), die bauplanungsrechtliche Zulässigkeit
-    nach §§ 29 ff. BauGB (Bundesrecht) und die bauordnungsrechtliche Zulässigkeit nach der NBauO (Abstandsflächen,
-    Gestaltung, Stellplätze), soweit das jeweilige Verfahren sie zum Prüfprogramm macht. Die Baugenehmigung
+    nach §§ 29 ff. BauGB (Bundesrecht) und die bauordnungsrechtliche Zulässigkeit nach der NBauO (Grenzabstände, Gestaltung, Stellplätze), soweit das jeweilige Verfahren sie zum Prüfprogramm macht. Die Baugenehmigung
     ergeht unbeschadet der Rechte Dritter; bei Ablehnung ist die Verpflichtungsklage statthaft.
   norms:
   - Niedersächsische Bauordnung (NBauO)

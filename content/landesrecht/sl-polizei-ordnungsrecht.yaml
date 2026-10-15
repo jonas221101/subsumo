@@ -50,7 +50,7 @@ cards:
     unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer: Inhaber der tatsächlichen
     Gewalt bzw. Eigentümer einer gefährlichen Sache. Nichtstörer: Inanspruchnahme nur unter den engen
     Voraussetzungen des polizeilichen Notstands (gegenwärtige erhebliche Gefahr, Störer nicht greifbar,
-    Behörde selbst nicht in der Lage), mit Entschädigungsanspruch. Die Verantwortlichkeit knüpft an die objektive Zurechnung der Gefahr an, nicht an ein Verschulden. Bei mehreren Verantwortlichen trifft die Behörde die Auswahl nach pflichtgemäßem Ermessen (Störerauswahl).'
+    Behörde selbst nicht in der Lage), mit Anspruch auf angemessenen Schadensausgleich (§ 68 SPolG). Die Verantwortlichkeit knüpft an die objektive Zurechnung der Gefahr an, nicht an ein Verschulden. Bei mehreren Verantwortlichen trifft die Behörde die Auswahl nach pflichtgemäßem Ermessen (Störerauswahl).'
   norms:
   - §§ 4, 5, 6 SPolG
   quellen:
@@ -60,7 +60,7 @@ cards:
 - slug: sl-por-zustaendigkeit
   type: definition
   front: Wer ist in Saarland für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde oder Polizei?
-  back: 'Das SPolG unterscheidet zwischen den Polizeibehörden (Verwaltungsbehörden) und der Vollzugspolizei; welche Behörde sachlich und örtlich zuständig ist, ist dem SPolG zu entnehmen (Paragraphen hier nicht angegeben). Prüfungsrelevant ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich bei den Verwaltungsbehörden; die Vollzugspolizei wird tätig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere Zuweisung besteht.
+  back: 'Das SPolG unterscheidet zwischen den Polizeibehörden (Verwaltungsbehörden) und der Vollzugspolizei; welche Behörde sachlich und örtlich zuständig ist, ist dem SPolG zu entnehmen (Begriff der Polizei: § 1 Abs. 1 SPolG). Prüfungsrelevant ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich bei den Verwaltungsbehörden; die Vollzugspolizei wird tätig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere Zuweisung besteht.
     Ein Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig.'
   norms:
   - Saarländisches Polizeigesetz (SPolG)
@@ -71,11 +71,12 @@ cards:
 - slug: sl-por-vollstreckung
   type: norm
   front: Nach welchem Gesetz wird eine Gefahrenabwehrverfügung in Saarland vollstreckt?
-  back: 'Saarländisches Verwaltungsvollstreckungsgesetz (SVwVG). Regelfall ist das gestreckte Verfahren:
+  back: 'Für die Polizei regeln die §§ 44 bis 50 SPolG den Verwaltungszwang (Zwangsmittel: Ersatzvornahme, Zwangsgeld, unmittelbarer Zwang, § 45 SPolG); für andere Behörden gilt das Saarländische Verwaltungsvollstreckungsgesetz (SVwVG, Zwangsmittel §§ 13 ff.). Regelfall ist das gestreckte Verfahren:
     Grundverfügung - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme, Zwangsgeld,
     unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausführung ohne vorausgehenden
     Verwaltungsakt möglich; die Kosten trägt der Pflichtige. Voraussetzungen des gestreckten Verfahrens sind ein wirksamer und vollstreckbarer Verwaltungsakt (unanfechtbar oder sofort vollziehbar), die Androhung mit angemessener Frist und die Festsetzung. Das Zwangsmittel muss verhältnismäßig sein, unmittelbarer Zwang ist nur letztes Mittel. Die Kosten werden dem Pflichtigen durch Kostenbescheid auferlegt.'
   norms:
+  - §§ 44 bis 50 SPolG
   - Saarländisches Verwaltungsvollstreckungsgesetz (SVwVG)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -134,7 +135,7 @@ cards:
       Standardmaßnahmen sind typisierte Eingriffsbefugnisse mit eigenem Tatbestand: Befragung und
       Auskunftspflicht, Vorladung, Identitätsfeststellung, Platzverweisung und Aufenthaltsverbot,
       Gewahrsam, Durchsuchung von Personen und Sachen, Betreten und Durchsuchen von Wohnungen sowie
-      Sicherstellung und Beschlagnahme. Sie sind im SPolG geregelt; ob und in welchem Umfang die Befugnisse auch den Ordnungs- bzw. Polizeibehörden zustehen, richtet sich nach dem jeweiligen Landesgesetz. Sie gehen
+      Sicherstellung und Beschlagnahme. Sie sind im SPolG geregelt (Identitätsfeststellung § 9, Befragung/Vorladung § 11, Platzverweisung u. a. § 12, Gewahrsam § 13, Durchsuchung §§ 17, 18, Wohnungen §§ 19, 20, Sicherstellung § 21); ob und in welchem Umfang die Befugnisse auch den Ordnungs- bzw. Polizeibehörden zustehen, richtet sich nach dem jeweiligen Landesgesetz. Sie gehen
       der Generalklausel als speziellere Normen vor; ist ihr Tatbestand nicht erfüllt, darf nicht ohne
       Weiteres auf die Generalklausel ausgewichen werden, soweit die Standardmaßnahme die Materie
       abschließend regelt. Verfassungsrechtliche Vorgaben sind zu beachten: Gewahrsam verlangt eine
@@ -142,7 +143,7 @@ cards:
       eine richterliche Anordnung (Art. 13 Abs. 2 GG), ihr Betreten zur Gefahrenabwehr ist an Art. 13
       Abs. 7 GG zu messen.
   norms:
-  - "Standardbefugnisse des SPolG (Paragraphen hier nicht angegeben)"
+  - "§§ 9 bis 25 SPolG"
   - "Art. 104 Abs. 2 GG"
   - "Art. 13 Abs. 2 GG"
   - "Art. 13 Abs. 7 GG"
@@ -184,15 +185,17 @@ cards:
       Regelfall ist das gestreckte Verfahren: wirksame und vollstreckbare Grundverfügung (unanfechtbar
       oder sofort vollziehbar, § 80 Abs. 2 VwGO), Androhung des Zwangsmittels mit angemessener Frist,
       Festsetzung, Anwendung. Zwangsmittel sind Ersatzvornahme, Zwangsgeld und als letztes Mittel
-      unmittelbarer Zwang; sie müssen verhältnismäßig sein. Das Saarländische
-      Verwaltungsvollstreckungsgesetz (SVwVG) regelt den Verwaltungszwang; für die Vollzugspolizei
-      enthält das SPolG ergänzende Vorschriften zum unmittelbaren Zwang. Bei gegenwärtiger Gefahr kann
-      die Behörde im Sofortvollzug (unmittelbare Ausführung) ohne vorausgehenden Verwaltungsakt
+      unmittelbarer Zwang; sie müssen verhältnismäßig sein. Für die Polizei
+      regeln die §§ 44 bis 50 SPolG den Verwaltungszwang (Sofortvollzug ohne vorausgehenden Verwaltungsakt:
+      § 44 Abs. 2 SPolG; Androhung: § 50 SPolG), für andere Behörden das Saarländische
+      Verwaltungsvollstreckungsgesetz (SVwVG, dort § 18). Bei gegenwärtiger Gefahr kann
+      die Behörde im Sofortvollzug ohne vorausgehenden Verwaltungsakt
       handeln, wenn die Maßnahme zur Abwehr der Gefahr notwendig ist und die Verantwortlichen nicht
       rechtzeitig herangezogen werden können. Typische Klausurkonstellation ist das Abschleppen eines
       Fahrzeugs; geprüft wird dann, ob die Grundverfügung, etwa ein Verkehrszeichen, wirksam war, ob
       Androhung und Festsetzung entbehrlich waren und ob das Zwangsmittel verhältnismäßig war.
   norms:
+  - "§§ 44 bis 50 SPolG"
   - "Saarländisches Verwaltungsvollstreckungsgesetz (SVwVG)"
   - "§ 80 Abs. 2 S. 1 Nr. 2 VwGO"
   quellen:
@@ -208,17 +211,19 @@ cards:
       Die Kosten einer Ersatzvornahme, des unmittelbaren Zwangs oder einer unmittelbaren Ausführung
       trägt grundsätzlich der Pflichtige bzw. der für die Gefahr Verantwortliche; sie werden durch
       Kostenbescheid (Leistungsbescheid) geltend gemacht und nach den Vorschriften der
-      Verwaltungsvollstreckung beigetrieben. Bei Sofortvollzug ohne Grundverfügung prüft die
+      Verwaltungsvollstreckung beigetrieben (für die Ersatzvornahme der Polizei: § 46 Abs. 1 S. 2 SPolG). Bei Sofortvollzug ohne Grundverfügung prüft die
       Kostenentscheidung inzident, ob die Maßnahme rechtmäßig gewesen wäre, insbesondere ob eine
       Gefahr vorlag, der Kostenschuldner Störer war und die Maßnahme verhältnismäßig war. Für den
       Zustandsstörer ist die Kostenhaftung nach der Rechtsprechung des Bundesverfassungsgerichts aus
       Art. 14 GG begrenzt; sie darf nach Zumutbarkeit insbesondere den Wert des Grundstücks nach
       Sanierung nicht übersteigen, wenn die Gefahr nicht dem Risikobereich des Eigentümers zuzurechnen
-      ist. Der Nichtstörer wird nicht mit Kosten belastet; ihm steht bei Inanspruchnahme ein
-      Entschädigungsanspruch zu.
+      ist. Der Nichtstörer wird nicht mit Kosten belastet; ihm steht bei rechtmäßiger Inanspruchnahme nach
+      § 6 SPolG ein angemessener Schadensausgleich zu (§ 68 Abs. 1 S. 1 SPolG).
   norms:
   - "Art. 14 Abs. 1 GG"
   - "Art. 14 Abs. 2 GG"
+  - "§ 46 SPolG"
+  - "§ 68 SPolG"
   - "Saarländisches Verwaltungsvollstreckungsgesetz (SVwVG)"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
@@ -253,6 +258,8 @@ schemata:
   title: "Rechtmäßigkeit eines Schutzgewahrsams nach dem SPolG"
   norms:
   - "§ 8 Abs. 1 SPolG"
+  - "§ 13 SPolG"
+  - "§ 14 SPolG"
   - "Art. 104 Abs. 2 GG"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
@@ -261,14 +268,14 @@ schemata:
   - label: >-
       I. Ermächtigungsgrundlage: Gewahrsam als Standardmaßnahme
     hinweis: >-
-        Vorrang vor der Generalklausel; Gewahrsamsgründe des SPolG als Tatbestand zitieren.
+        Vorrang vor der Generalklausel (§ 8 Abs. 1 SPolG); Gewahrsamsgründe: § 13 SPolG.
   - label: "II. Formelle Rechtmäßigkeit"
     children:
     - label: >-
         1. Zuständigkeit: Vollzugspolizei
     - label: >-
         2. Verfahren: Bekanntgabe von Grund und Rechtsfolgen, Benachrichtigung von Angehörigen
-      hinweis: "Verfahrensvorgaben des SPolG zum Gewahrsam beachten."
+      hinweis: "Verfahrensvorgaben der §§ 14 bis 16 SPolG zum Gewahrsam beachten."
   - label: "III. Materielle Rechtmäßigkeit"
     children:
     - label: >-
@@ -278,8 +285,8 @@ schemata:
         3. Verhältnismäßigkeit: mildere Mittel wie Verbringen zu Angehörigen oder in ein Krankenhaus
   - label: "IV. Richterliche Entscheidung nach Art. 104 Abs. 2 GG"
     hinweis: >-
-        Unverzüglich herbeiführen, entbehrlich nur, wenn die Entlassung vor dem Ergehen der Entscheidung
-        sicher erfolgt.
+        Unverzüglich herbeiführen (§ 14 Abs. 1 S. 1 SPolG), entbehrlich nur, wenn anzunehmen ist, dass die
+        Entscheidung erst nach Wegfall des Grundes der Maßnahme ergehen würde (§ 14 Abs. 1 S. 2 SPolG).
 faelle:
 - slug: sl-fall-por-schutzgewahrsam
   title: "Die Nacht auf der Parkbank"
@@ -302,7 +309,7 @@ faelle:
   - prompt: >-
         Auf welcher Rechtsgrundlage und mit welchem Vorrang ist die Maßnahme zu prüfen?
     erwartung: >-
-        Der Gewahrsam ist eine Standardmaßnahme des SPolG und geht der Generalklausel (§ 8 Abs. 1 SPolG)
+        Der Gewahrsam ist eine Standardmaßnahme (§ 13 SPolG) und geht der Generalklausel (§ 8 Abs. 1 SPolG)
         als speziellere Norm vor. Gewahrsamsgrund ist hier der Schutz des P vor Gefahr für Leib oder
         Leben in hilfloser Lage.
   - prompt: "Liegt eine Gefahr vor?"

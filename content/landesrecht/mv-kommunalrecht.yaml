@@ -77,15 +77,20 @@ cards:
     abgegrenzt?
   back: >-
     Die Gemeindevertretung entscheidet nach § 22 KV M-V in den wichtigen Selbstverwaltungsangelegenheiten,
-    insbesondere über Satzungen, Haushalt und wesentliche Vermögensgeschäfte; sie kann Entscheidungen
-    auf Ausschüsse oder den Bürgermeister übertragen, soweit das Gesetz keine ausschließliche Zuständigkeit
-    vorsieht. Der Bürgermeister führt die laufenden Geschäfte der Verwaltung und bereitet die Beschlüsse
-    der Vertretung vor und vollzieht sie. Die Abgrenzung der laufenden Verwaltung richtet sich nach der
-    Bedeutung des Geschäfts für die Gemeinde und wird in der Hauptsatzung konkretisiert. In der Klausur
+    insbesondere über Satzungen und die Haushaltssatzung; sie kann Entscheidungen auf den Hauptausschuss
+    oder den Bürgermeister übertragen, soweit nicht die nicht übertragbaren Angelegenheiten des § 22 Abs. 3
+    KV M-V betroffen sind (§ 22 Abs. 2 KV M-V); bestimmte Vermögensgeschäfte bis zu Wertgrenzen kann
+    die Hauptsatzung dem Hauptausschuss oder dem Bürgermeister zuweisen (§ 22 Abs. 4 KV M-V). Der Bürgermeister
+    leitet die Verwaltung, bereitet im eigenen Wirkungskreis die Beschlüsse der Vertretung und des Hauptausschusses
+    vor, führt sie aus und ist für die Geschäfte der laufenden Verwaltung zuständig (§ 38 Abs. 2, 3 KV M-V
+    für den hauptamtlichen Bürgermeister). Die laufende Verwaltung umfasst nach § 38 Abs. 3 S. 3 KV M-V
+    insbesondere Entscheidungen von geringer wirtschaftlicher Bedeutung, Entscheidungen zur Aufrechterhaltung
+    des Verwaltungsbetriebs sowie gesetzlich oder tariflich gebundene Entscheidungen. In der Klausur
     ist zuerst das zuständige Organ zu bestimmen; die Entscheidung eines unzuständigen Organs ist formell
     rechtswidrig.
   norms:
   - § 22 KV M-V
+  - § 38 KV M-V
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -102,7 +107,7 @@ cards:
     (Wesentlichkeitslehre). (2) Formelle Rechtmäßigkeit: Zuständigkeit der Vertretung, ordnungsgemäßer
     Beschluss, Ausfertigung und Bekanntmachung. (3) Materielle Rechtmäßigkeit: Vereinbarkeit mit höherrangigem
     Recht, Bestimmtheit, Verhältnismäßigkeit und Gleichheitssatz. Rechtsschutz: Inzidentkontrolle oder
-    Normenkontrolle nach § 47 VwGO, soweit das Landesrecht sie vorsieht.
+    Normenkontrolle nach § 47 Abs. 1 Nr. 2 VwGO; in Mecklenburg-Vorpommern eröffnet § 13 GerStrukGAG M-V das Verfahren vor dem Oberverwaltungsgericht auch gegen im Rang unter dem Landesgesetz stehende Rechtsvorschriften.
   norms:
   - Art. 28 Abs. 2 GG
   - § 47 VwGO
@@ -117,11 +122,14 @@ cards:
     Nach § 24 KV M-V darf ein Mitglied der Gemeindevertretung nicht beratend oder entscheidend mitwirken,
     wenn die Entscheidung ihm selbst, einem Angehörigen oder einer von ihm vertretenen natürlichen oder
     juristischen Person einen unmittelbaren Vorteil oder Nachteil bringen kann. Es genügt die konkrete
-    Möglichkeit eines Sonderinteresses; tatsächliche Befangenheit ist nicht erforderlich. Das Verbot sichert
+    Möglichkeit eines Sonderinteresses (Wortlaut: Entscheidung "bringen kann"); tatsächliche Befangenheit ist nicht erforderlich. Das Verbot sichert
     die Unbefangenheit der Entscheidung und das Vertrauen in die Gemeindeorgane. Ausnahmen gelten u. a.
     für Wahlen und Entscheidungen, die nur ein Gruppeninteresse berühren. Wirkt ein Ausgeschlossener mit,
-    ist der Beschluss fehlerhaft, wenn die Mitwirkung für das Abstimmungsergebnis ursächlich sein konnte;
-    Heilungs- und Unbeachtlichkeitsregeln des Landesrechts sind zu beachten.
+    ist die Entscheidung nach § 24 Abs. 4 S. 1 KV M-V unwirksam; eine Kausalitätsklausel enthält der Wortlaut
+    nicht. Der Verstoß kann nach Ablauf eines Jahres nicht mehr geltend gemacht werden, es sei denn, er
+    wurde innerhalb der Frist schriftlich gegenüber der Gemeinde gerügt (§ 24 Abs. 5 KV M-V); zu beachten
+    ist ferner die Unbeachtlichkeit eines ungerechtfertigten Ausschlusses bei nachträglicher Zustimmung
+    (§ 24 Abs. 4 S. 2 KV M-V).
   norms:
   - § 24 KV M-V
   quellen:
@@ -158,13 +166,14 @@ cards:
     Die Kommunalaufsicht ist Rechtsaufsicht in den Selbstverwaltungsangelegenheiten und, soweit gesetzlich
     vorgesehen, Fachaufsicht in den übertragenen Angelegenheiten. Ihre Mittel reichen von der Beratung
     und Beanstandung über die Anordnung und die Ersatzvornahme bis zur Einsetzung eines Beauftragten und
-    sind nach dem Verhältnismäßigkeitsgrundsatz zu wählen. Aufsichtsbehörde ist für kreisangehörige Gemeinden
-    regelmäßig der Landrat als untere Rechtsaufsichtsbehörde, im Übrigen die oberste Aufsichtsbehörde;
-    Einzelheiten sind der KV M-V zu entnehmen. Gegen aufsichtsrechtliche Verfügungen kann die Gemeinde
-    mit der Anfechtungsklage vorgehen; ihre Klagebefugnis folgt aus der Selbstverwaltungsgarantie (Art.
+    sind nach dem Verhältnismäßigkeitsgrundsatz zu wählen. Rechtsaufsichtsbehörde ist für kreisangehörige Gemeinden im Übrigen
+    der Landrat als untere staatliche Verwaltungsbehörde, für kreisfreie und große kreisangehörige Städte
+    das Ministerium für Kommunalangelegenheiten (§ 79 KV M-V). Mittel: Beanstandung (§ 81), Anordnung und
+    Ersatzvornahme (§ 82), Beauftragter (§ 83) KV M-V. Gegen Maßnahmen der Rechtsaufsichtsbehörde sind
+    Widerspruch und Anfechtungsklage gegeben (§ 85 KV M-V); ihre Klagebefugnis folgt aus der Selbstverwaltungsgarantie (Art.
     28 Abs. 2 GG). Ein Anspruch Dritter auf aufsichtsrechtliches Einschreiten besteht grundsätzlich nicht.
   norms:
-  - Kommunalverfassung für das Land Mecklenburg-Vorpommern (KV M-V), Abschnitt Aufsicht
+  - §§ 78 ff. KV M-V
   - Art. 28 Abs. 2 GG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -212,8 +221,9 @@ schemata:
     - label: 2. Ordnungsgemäße Einberufung, Ladung, Öffentlichkeit der Sitzung, Beschlussfähigkeit
     - label: 3. Mitwirkungsverbote
       hinweis: >-
-        Klausurklassiker: unmittelbarer Vorteil oder Nachteil für das Mitglied oder Angehörige; Kausalität
-        der Mitwirkung für das Abstimmungsergebnis prüfen.
+        Klausurklassiker: unmittelbarer Vorteil oder Nachteil für das Mitglied oder Angehörige; Rechtsfolge
+        nach § 24 Abs. 4 KV M-V: Unwirksamkeit; Jahresfrist des § 24 Abs. 5 KV M-V beachten. Ob die Mitwirkung
+        für das Abstimmungsergebnis ursächlich war, ist nach dem Wortlaut nicht Tatbestandsvoraussetzung.
       children:
       - label: a) Voraussetzungen des Mitwirkungsverbots (§ 24 KV M-V)
       - label: b) Rechtsfolge für Beschluss und Heilung/Unbeachtlichkeit nach Landesrecht
@@ -231,8 +241,7 @@ schemata:
   - label: IV. Rechtsschutz
     children:
     - label: >-
-        1. Außenrechtsstreit: Anfechtungs- oder Verpflichtungsklage; Normenkontrolle nach § 47 VwGO nur,
-        soweit das Landesrecht sie vorsieht
+        1. Außenrechtsstreit: Anfechtungs- oder Verpflichtungsklage; Normenkontrolle nach § 47 Abs. 1 Nr. 2 VwGO (in M-V nach § 13 GerStrukGAG M-V eröffnet)
     - label: >-
         2. Innenrechtsstreit (Kommunalverfassungsstreit): Feststellungs- oder Leistungsklage, § 42 Abs.
         2 VwGO analog
@@ -263,10 +272,11 @@ faelle:
       abstimmen.
   - prompt: Welche Folge hat der Verstoß für den Beschluss?
     erwartung: >-
-      Der Beschluss ist fehlerhaft, wenn die Mitwirkung für das Abstimmungsergebnis ursächlich sein konnte.
-      Hier wurde der Beschluss mit nur einer Stimme Mehrheit gefasst, sodass ohne die Stimme des befangenen
-      Mitglieds keine Mehrheit bestanden hätte. Der Beschluss ist damit rechtswidrig bzw. unwirksam; Heilung
-      oder Unbeachtlichkeit nach Landesrecht (z. B. durch Fristablauf, Neubeschluss) ist zu prüfen; dem
+      Nach § 24 Abs. 4 S. 1 KV M-V ist die unter Verstoß gegen das Mitwirkungsverbot zustande gekommene Entscheidung
+      unwirksam; auf die Kausalität der Mitwirkung kommt es nach dem Wortlaut nicht an. Hier wurde der Beschluss mit nur einer Stimme Mehrheit gefasst, sodass ohne die Stimme des befangenen
+      Mitglieds keine Mehrheit bestanden hätte. Der Beschluss ist damit unwirksam; Unbeachtlichkeit nach
+      Landesrecht (Jahresfrist des § 24 Abs. 5 KV M-V, wenn der Verstoß nicht rechtzeitig schriftlich gerügt wurde)
+      oder Neubeschluss ist zu prüfen; dem
       Sachverhalt sind dafür keine Anhaltspunkte zu entnehmen.
   expectation:
     pruefpunkte:
@@ -307,7 +317,7 @@ faelle:
       card_slugs:
       - mv-kr-mitwirkungsverbot
     - id: p4
-      label: 'Kausalität: ohne die Stimme des Befangenen keine Mehrheit; Beschluss fehlerhaft'
+      label: 'Rechtsfolge: Beschluss unwirksam (§ 24 Abs. 4 KV M-V); ohne die Stimme des Befangenen keine Mehrheit'
       weight: 3.0
       required: true
       keywords:

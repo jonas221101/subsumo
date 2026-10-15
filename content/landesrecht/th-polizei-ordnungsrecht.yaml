@@ -36,13 +36,13 @@ cards:
     welche Behörde - Ordnungsbehörden primär (ThürOBG), Polizei bei Eilbedürftigkeit (Eilzuständigkeit nach dem ThürPAG); örtlich;
     instanziell), 2. Verfahren (Anhörung nach dem jeweiligen Landesverwaltungsverfahrensgesetz), 3. Form.
     III. Materielle Rechtmäßigkeit: 1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose ex ante),
-    2. richtiger Adressat (Störer: §§ 7, 8, 10 ThürPAG; §§ 10, 11, 12 ThürOBG), 3. Rechtsfolge: Ermessen
+    2. richtiger Adressat (Störer: §§ 7, 8, 10 ThürPAG; §§ 10, 11, 13 ThürOBG), 3. Rechtsfolge: Ermessen
     und Verhältnismäßigkeit (geeignet, erforderlich, angemessen).'
   norms:
   - § 12 Abs. 1 ThürPAG
   - § 5 Abs. 1 ThürOBG
   - §§ 7, 8, 10 ThürPAG
-  - §§ 10, 11, 12 ThürOBG
+  - §§ 10, 11, 13 ThürOBG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -50,14 +50,14 @@ cards:
 - slug: th-por-stoerer
   type: norm
   front: Wo sind Verhaltensstörer, Zustandsstörer und Nichtstörer in Thüringen geregelt?
-  back: '§§ 7, 8, 10 ThürPAG; §§ 10, 11, 12 ThürOBG. Verhaltensstörer: wer die Gefahr durch sein Verhalten
+  back: '§§ 7, 8, 10 ThürPAG; §§ 10, 11, 13 ThürOBG. Verhaltensstörer: wer die Gefahr durch sein Verhalten
     verursacht (Theorie der unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer:
     Inhaber der tatsächlichen Gewalt bzw. Eigentümer einer gefährlichen Sache. Nichtstörer: Inanspruchnahme
     nur unter den engen Voraussetzungen des polizeilichen Notstands (gegenwärtige erhebliche Gefahr, Störer
     nicht greifbar, Behörde selbst nicht in der Lage), mit Entschädigungsanspruch. Die Verantwortlichkeit knüpft an die objektive Zurechnung der Gefahr an, nicht an ein Verschulden. Bei mehreren Verantwortlichen trifft die Behörde die Auswahl nach pflichtgemäßem Ermessen (Störerauswahl).'
   norms:
   - §§ 7, 8, 10 ThürPAG
-  - §§ 10, 11, 12 ThürOBG
+  - §§ 10, 11, 13 ThürOBG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -65,11 +65,13 @@ cards:
 - slug: th-por-zustaendigkeit
   type: definition
   front: Wer ist in Thüringen für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde oder Polizei?
-  back: 'Ordnungsbehörden primär (ThürOBG), Polizei bei Eilbedürftigkeit (Eilzuständigkeit nach dem ThürPAG; Paragraph hier nicht angegeben). Prüfungsrelevant
+  back: 'Ordnungsbehörden primär (ThürOBG), Polizei bei Eilbedürftigkeit (Vorrang der Ordnungsbehörde: § 3 Abs. 1 ThürOBG; Subsidiarität der Polizei, Eilzuständigkeit: § 3 S. 1 ThürPAG). Prüfungsrelevant
     ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich bei den Verwaltungs-/Ordnungsbehörden;
     der Polizeivollzugsdienst wird tätig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere
     Zuweisung besteht. Ein Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig. Die Eilzuständigkeit der Polizei setzt voraus, dass die zuständige Behörde nicht rechtzeitig handeln kann; die zuständige Stelle ist dann in der Regel unverzüglich zu unterrichten (Einzelheiten nach dem jeweiligen Landesgesetz).'
   norms:
+  - § 3 ThürPAG
+  - § 3 Abs. 1 ThürOBG
   - Thüringer Polizeiaufgabengesetz (ThürPAG) und Thüringer Ordnungsbehördengesetz (ThürOBG)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -78,11 +80,13 @@ cards:
 - slug: th-por-vollstreckung
   type: norm
   front: Nach welchem Gesetz wird eine Gefahrenabwehrverfügung in Thüringen vollstreckt?
-  back: 'Thüringer Verwaltungszustellungs- und Vollstreckungsgesetz (ThürVwZVG). Regelfall ist das gestreckte
+  back: 'Polizei: Verwaltungszwang nach den §§ 51 ff. ThürPAG; Ordnungsbehörden: Vollstreckung nach dem Thüringer Verwaltungszustellungs- und Vollstreckungsgesetz (ThürVwZVG), das ThürOBG enthält keine eigenen Zwangsvorschriften; unmittelbare Ausführung: § 12 ThürOBG. Regelfall ist das gestreckte
     Verfahren: Grundverfügung - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme,
     Zwangsgeld, unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausführung
     ohne vorausgehenden Verwaltungsakt möglich; die Kosten trägt der Pflichtige. Voraussetzungen des gestreckten Verfahrens sind ein wirksamer und vollstreckbarer Verwaltungsakt (unanfechtbar oder sofort vollziehbar), die Androhung mit angemessener Frist und die Festsetzung. Das Zwangsmittel muss verhältnismäßig sein, unmittelbarer Zwang ist nur letztes Mittel. Die Kosten werden dem Pflichtigen durch Kostenbescheid auferlegt.'
   norms:
+  - §§ 51 ff. ThürPAG
+  - § 12 ThürOBG
   - Thüringer Verwaltungszustellungs- und Vollstreckungsgesetz (ThürVwZVG)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -142,7 +146,7 @@ cards:
       Standardmaßnahmen sind typisierte Eingriffsbefugnisse mit eigenem Tatbestand: Befragung und
       Auskunftspflicht, Vorladung, Identitätsfeststellung, Platzverweisung und Aufenthaltsverbot,
       Gewahrsam, Durchsuchung von Personen und Sachen, Betreten und Durchsuchen von Wohnungen sowie
-      Sicherstellung und Beschlagnahme. Sie sind im ThürPAG geregelt; ob und in welchem Umfang die Befugnisse auch den Ordnungs- bzw. Polizeibehörden zustehen, richtet sich nach dem jeweiligen Landesgesetz. Sie
+      Sicherstellung und Beschlagnahme. Für die Polizei stehen sie im ThürPAG (z. B. § 14 Identitätsfeststellung, § 18 Platzverweisung, § 19 Gewahrsam, §§ 23-27); die Ordnungsbehörden haben im ThürOBG eigene Befugnisse (§§ 15-22, u. a. Identitätsfeststellung, § 17 Platzverweisung, Durchsuchung, Sicherstellung), aber keinen Gewahrsam. Sie
       gehen der Generalklausel als speziellere Normen vor; ist ihr Tatbestand nicht erfüllt, darf
       nicht ohne Weiteres auf die Generalklausel ausgewichen werden, soweit die Standardmaßnahme die
       Materie abschließend regelt. Verfassungsrechtliche Vorgaben sind zu beachten: Gewahrsam verlangt
@@ -150,7 +154,8 @@ cards:
       grundsätzlich eine richterliche Anordnung (Art. 13 Abs. 2 GG), ihr Betreten zur Gefahrenabwehr
       ist an Art. 13 Abs. 7 GG zu messen.
   norms:
-  - "Standardbefugnisse des ThürPAG (Paragraphen hier nicht angegeben)"
+  - "§§ 13 ff. ThürPAG"
+  - "§§ 15 ff. ThürOBG"
   - "Art. 104 Abs. 2 GG"
   - "Art. 13 Abs. 2 GG"
   - "Art. 13 Abs. 7 GG"
@@ -181,7 +186,7 @@ cards:
   - "§ 10 ThürPAG"
   - "§ 10 ThürOBG"
   - "§ 11 ThürOBG"
-  - "§ 12 ThürOBG"
+  - "§ 13 ThürOBG"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -195,9 +200,10 @@ cards:
       Regelfall ist das gestreckte Verfahren: wirksame und vollstreckbare Grundverfügung (unanfechtbar
       oder sofort vollziehbar, § 80 Abs. 2 VwGO), Androhung des Zwangsmittels mit angemessener Frist,
       Festsetzung, Anwendung. Zwangsmittel sind Ersatzvornahme, Zwangsgeld und als letztes Mittel
-      unmittelbarer Zwang; sie müssen verhältnismäßig sein. Das Thüringer Verwaltungszustellungs- und
-      Vollstreckungsgesetz (ThürVwZVG) regelt die Zwangsmittel; für den unmittelbaren Zwang der
-      Polizei gelten ergänzend die Vorschriften des ThürPAG. Bei gegenwärtiger Gefahr kann die Behörde
+      unmittelbarer Zwang; sie müssen verhältnismäßig sein. Für die Polizei regeln die §§ 51 ff. ThürPAG
+      den Verwaltungszwang; für die Ordnungsbehörden gilt das Thüringer Verwaltungszustellungs- und
+      Vollstreckungsgesetz (ThürVwZVG), das ThürOBG enthält keine eigenen Zwangsvorschriften
+      (unmittelbare Ausführung: § 12 ThürOBG). Bei gegenwärtiger Gefahr kann die Behörde
       im Sofortvollzug (unmittelbare Ausführung) ohne vorausgehenden Verwaltungsakt handeln, wenn die
       Maßnahme zur Abwehr der Gefahr notwendig ist und die Verantwortlichen nicht rechtzeitig
       herangezogen werden können. Typische Klausurkonstellation ist das Abschleppen eines Fahrzeugs;
@@ -270,7 +276,7 @@ schemata:
   - "§ 10 ThürPAG"
   - "§ 10 ThürOBG"
   - "§ 11 ThürOBG"
-  - "§ 12 ThürOBG"
+  - "§ 13 ThürOBG"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"

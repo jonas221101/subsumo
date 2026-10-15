@@ -19,7 +19,7 @@ cards:
     Das Bauplanungsrecht regelt die städtebauliche Ordnung der Bodennutzung (Bebauungsplan, Zulässigkeit
     nach §§ 29 ff. BauGB); es ist Bundesrecht (Art. 74 Abs. 1 Nr. 18 GG). Das Bauordnungsrecht regelt
     als Landesrecht die Anforderungen an das einzelne Bauvorhaben im Sinne der Gefahrenabwehr: Standsicherheit,
-    Brandschutz, Abstandsflächen, Gestaltung, Stellplätze und das Verfahren. Rechtsgrundlage in Niedersachsen
+    Brandschutz, Grenzabstände, Gestaltung, Stellplätze und das Verfahren. Rechtsgrundlage in Niedersachsen
     ist die Niedersächsische Bauordnung (NBauO). Im Genehmigungsverfahren sind beide Bereiche zu prüfen:
     Das Vorhaben muss bauplanungsrechtlich zulässig sein und darf bauordnungsrechtlichen Vorschriften
     nicht widersprechen. In der Klausur ist die Trennung der Prüfungsebenen wichtig, weil die Rechtsfolgen
@@ -41,8 +41,7 @@ cards:
     keine Verfahrensfreiheit), (2) bauplanungsrechtliche Zulässigkeit (§§ 29 ff. BauGB; Einvernehmen der
     Gemeinde, § 36 BauGB), (3) bauordnungsrechtliche Zulässigkeit nach der NBauO, soweit das Verfahren
     sie zum Prüfprogramm macht, und (4) sonstiges öffentliches Recht. Die Baugenehmigung ist ein Verwaltungsakt,
-    der unbeschadet der Rechte Dritter ergeht. Untere Bauaufsichtsbehörden sind insbesondere die Landkreise
-    sowie die kreisfreien und größeren Städte; die Gemeinde wirkt als Planungsträgerin mit (Einvernehmen
+    der unbeschadet der Rechte Dritter ergeht. Untere Bauaufsichtsbehörden sind die Landkreise, die kreisfreien Städte und die großen selbständigen Städte (§ 57 Abs. 1 NBauO); die Gemeinde wirkt als Planungsträgerin mit (Einvernehmen
     nach § 36 BauGB). Rechtsschutz bei Ablehnung: Verpflichtungsklage nach § 42 Abs. 1 Var. 2 VwGO.
   norms:
   - § 70 Abs. 1 NBauO
@@ -61,11 +60,10 @@ cards:
     Rechtmäßigkeit?
   back: >-
     Die NBauO unterscheidet nach Gefährdungspotential und Größe des Vorhabens: verfahrensfreie Vorhaben,
-    die Genehmigungsfreistellung bei qualifiziertem Bebauungsplan, das vereinfachte Genehmigungsverfahren
-    mit eingeschränktem Prüfprogramm und das reguläre Genehmigungsverfahren mit umfassender Prüfung. Entscheidend
+    die genehmigungsfreien Baumaßnahmen (§§ 61, 62 NBauO, etwa Wohngebäude in durch Bebauungsplan festgesetzten Wohngebieten), das vereinfachte Baugenehmigungsverfahren (§ 63) mit eingeschränktem Prüfprogramm und das reguläre Baugenehmigungsverfahren (§ 64) mit umfassender Prüfung; verfahrensfreie Baumaßnahmen regelt § 60. Entscheidend
     ist: Verfahrensfreiheit oder eingeschränkte Prüfung bedeuten nicht, dass materielle Anforderungen
     entfallen; sie besagen nur, dass die Bauaufsichtsbehörde das Vorhaben nicht oder nicht vollständig
-    vorab prüft. Auch verfahrensfreie Vorhaben müssen dem materiellen Recht entsprechen, und die Bauaufsichtsbehörde
+    vorab prüft. Auch verfahrensfreie und genehmigungsfreie Vorhaben müssen dem materiellen Recht entsprechen (§ 59 Abs. 3 NBauO), und die Bauaufsichtsbehörde
     kann bei Verstößen einschreiten. Eine Baugenehmigung im vereinfachten Verfahren stellt nur die Vereinbarkeit
     mit den in diesem Verfahren geprüften Vorschriften fest.
   norms:
@@ -76,15 +74,9 @@ cards:
   stand: 2026-10
 - slug: ni-bo-abstandsflaechen
   type: norm
-  front: Was regelt das Abstandsflächenrecht der NBauO und welche Rechtsfolgen hat sein Verstoß?
+  front: Was regeln die Grenzabstände nach der NBauO und welche Rechtsfolgen hat ihr Verstoß?
   back: >-
-    Abstandsflächen (§ 5 NBauO) sind von oberirdischen Gebäuden freizuhaltende Flächen vor den Außenwänden.
-    Sie dienen dem Brandschutz, der Belichtung, Belüftung und Besonnung sowie dem Wohnfrieden. Die Tiefe
-    bemisst sich nach der Wandhöhe mit einem landesrechtlich festgelegten Faktor und einem Mindestmaß;
-    der konkrete Faktor ist dem Gesetz zu entnehmen. Grundsätzlich liegt die Abstandsfläche auf dem Baugrundstück.
-    Das Abstandsflächenrecht ist weitgehend drittschützend: Ein Nachbar kann sich gegen eine Baugenehmigung
-    wehren, die diese Vorschriften verletzt. Unterschreitungen können im Wege der Abweichung (Landesrecht)
-    gestattet werden, wenn Zweck und öffentliche Belange gewahrt sind. Ein Verstoß macht das Vorhaben
+    Die NBauO kennt keine Abstandsflächen, sondern Grenzabstände (§ 5 NBauO). Gebäude müssen von den Grenzen des Baugrundstücks Abstand halten, gemessen zur nächsten Lotrechten über der Grenzlinie und abhängig von der Höhe H des jeweiligen Punktes über der Geländeoberfläche. Der Abstand beträgt 0,4 H, mindestens 3 m; in Gewerbe- und Industriegebieten 0,2 H, mindestens 3 m (§ 5 Abs. 2 NBauO). Abstände zwischen Gebäuden auf demselben Grundstück regelt § 7 NBauO. Die Grenzabstandsvorschriften sind weitgehend drittschützend: Ein Nachbar kann sich gegen eine Baugenehmigung wehren, die sie verletzt. Unterschreitungen können im Wege der Abweichung nach § 66 NBauO gestattet werden, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der nachbarlichen Belange mit den öffentlichen Belangen vereinbar sind. Ein Verstoß macht das Vorhaben
     materiell rechtswidrig und kann bauaufsichtliche Maßnahmen begründen.
   norms:
   - § 5 NBauO
@@ -99,7 +91,7 @@ cards:
   back: >-
     Der Nachbar kann die Baugenehmigung mit Widerspruch bzw. Anfechtungsklage (Drittanfechtung) angreifen.
     Klagebefugt (§ 42 Abs. 2 VwGO) ist er, wenn er die Verletzung einer drittschützenden Norm geltend
-    machen kann: nachbarschützend sind etwa die Abstandsflächenvorschriften der NBauO, bestimmte Festsetzungen
+    machen kann: nachbarschützend sind etwa die Grenzabstandsvorschriften der NBauO (§ 5), bestimmte Festsetzungen
     eines Bebauungsplans (Gebietserhaltungsanspruch) und das Gebot der Rücksichtnahme. Begründet ist die
     Klage nur, wenn die Genehmigung rechtswidrig ist und den Nachbarn in einem subjektiven öffentlichen
     Recht verletzt (Schutznormtheorie); allgemeine objektive Rechtsverstöße genügen nicht. Widerspruch
@@ -120,8 +112,7 @@ cards:
   front: >-
     Welche bauaufsichtlichen Eingriffsmaßnahmen gibt es in Niedersachsen und wann genügt formelle Illegalität?
   back: >-
-    Die Bauaufsichtsbehörde kann bei rechtswidrigen baulichen Anlagen nach der NBauO einschreiten, insbesondere
-    durch Baueinstellung (Stilllegungsverfügung), Nutzungsuntersagung und Beseitigungsanordnung. Zu unterscheiden
+    Die Bauaufsichtsbehörde kann bei rechtswidrigen baulichen Anlagen nach § 79 Abs. 1 NBauO nach pflichtgemäßem Ermessen die Maßnahmen anordnen, die zur Herstellung oder Sicherung rechtmäßiger Zustände erforderlich sind, namentlich Baueinstellung (Nr. 1), Beseitigung (Nr. 4) und Nutzungsuntersagung (Nr. 5); Adressaten sind die nach §§ 52 bis 56 NBauO Verantwortlichen. Zu unterscheiden
     sind formelle Illegalität (fehlende erforderliche Genehmigung) und materielle Illegalität (Widerspruch
     zu materiellem Recht). Für Baueinstellung und Nutzungsuntersagung genügt regelmäßig formelle Illegalität;
     wegen der Schwere des Eingriffs setzt die Beseitigungsanordnung nach h. M. materielle Illegalität
@@ -129,6 +120,7 @@ cards:
     zu beachten sind Verhältnismäßigkeit, Gleichbehandlung und Bestandsschutz. Adressat ist regelmäßig
     der Bauherr oder der Eigentümer.
   norms:
+  - § 79 Abs. 1 NBauO
   - Niedersächsische Bauordnung (NBauO)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -159,7 +151,7 @@ cards:
     Wann kann in Niedersachsen von Anforderungen der NBauO abgewichen werden und wie unterscheidet sich
     das von der Befreiung nach dem BauGB?
   back: >-
-    Die NBauO erlaubt es der Bauaufsichtsbehörde, Abweichungen von bauordnungsrechtlichen Anforderungen
+    Nach § 66 Abs. 1 NBauO kann die Bauaufsichtsbehörde Abweichungen von bauordnungsrechtlichen Anforderungen
     zuzulassen, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der nachbarlichen
     Belange mit den öffentlichen Belangen vereinbar sind. Es handelt sich um eine Ermessensentscheidung,
     die bei Erfüllung der Voraussetzungen und ohne entgegenstehende Gründe auf null reduziert sein kann.
@@ -185,7 +177,7 @@ schemata:
   steps:
   - label: I. Ermächtigungsgrundlage
     hinweis: >-
-      Eingriffsbefugnis der NBauO (Baueinstellung, Nutzungsuntersagung, Beseitigungsanordnung) benennen.
+      Eingriffsbefugnis der NBauO (§ 79 Abs. 1 NBauO: Baueinstellung, Nutzungsuntersagung, Beseitigungsanordnung) benennen.
   - label: II. Formelle Rechtmäßigkeit
     children:
     - label: 1. Zuständigkeit der Bauaufsichtsbehörde
@@ -237,7 +229,7 @@ faelle:
   steps:
   - prompt: Auf welcher Grundlage kann die Behörde einschreiten und ist sie zuständig?
     erwartung: >-
-      Die NBauO ermächtigt die Bauaufsichtsbehörde, bei rechtswidrigen Nutzungen einzuschreiten. Zuständig
+      Die NBauO ermächtigt die Bauaufsichtsbehörde, bei rechtswidrigen Nutzungen einzuschreiten (§ 79 Abs. 1 Nr. 5 NBauO: Benutzung untersagen). Zuständig
       ist die untere Bauaufsichtsbehörde; Verfahrensfehler (Anhörung) bestehen nicht.
   - prompt: Liegt eine rechtswidrige Nutzung vor?
     erwartung: >-

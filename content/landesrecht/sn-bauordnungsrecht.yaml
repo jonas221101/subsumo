@@ -17,19 +17,16 @@ cards:
       Welche Genehmigungsverfahren kennt die SächsBO, und wie verhält sich das Bauordnungsrecht zum
       Bauplanungsrecht?
   back: >-
-      Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedarf nach der Sächsischen Bauordnung (SächsBO) grundsätzlich der Baugenehmigung. Ausnahmen: verfahrensfreie Vorhaben
-      (kleine, unbedeutende Anlagen, die ein Katalog der SächsBO aufzählt), die
-      Genehmigungsfreistellung für bestimmte Wohnbauvorhaben im Geltungsbereich qualifizierter
-      Bebauungspläne (gegen vorherige Anzeige; die Gemeinde kann ein Genehmigungsverfahren verlangen)
-      sowie das vereinfachte Verfahren mit eingeschränktem Prüfumfang für die meisten Gebäude und das
-      umfassende Verfahren für Sonderbauten. Verfahrensfreiheit bedeutet nicht materielle Freiheit:
+      Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedarf nach der Sächsischen Bauordnung (SächsBO) grundsätzlich der Baugenehmigung (§ 59 Abs. 1 SächsBO). Ausnahmen: verfahrensfreie Vorhaben
+      (kleine, unbedeutende Anlagen, die ein Katalog der SächsBO aufzählt), die Genehmigungsfreistellung (§ 62 SächsBO) im Geltungsbereich qualifizierter bzw. vorhabenbezogener Bebauungspläne, wenn das Vorhaben den Festsetzungen nicht widerspricht und die Erschließung gesichert ist (ausgenommen Sonderbauten, UVP-pflichtige Vorhaben u. a.; Unterlagen sind vor Baubeginn einzureichen, die Gemeinde kann innerhalb der Frist das vereinfachte Genehmigungsverfahren verlangen)
+      sowie das vereinfachte Verfahren mit eingeschränktem Prüfumfang (§ 63 SächsBO; geprüft werden u. a. §§ 29 bis 38 BauGB und beantragte Abweichungen) für die meisten Vorhaben und das umfassende Verfahren für Sonderbauten und UVP-pflichtige Anlagen (§ 64 SächsBO). Verfahrensfreiheit bedeutet nicht materielle Freiheit:
       Die materiellen Anforderungen des Bauplanungs- und Bauordnungsrechts sind einzuhalten, die
       Bauaufsicht kann bei Verstößen einschreiten. Das Bauplanungsrecht (§§ 29 ff. BauGB) regelt als
       Bundesrecht die bodenrechtliche Zulässigkeit, das Bauordnungsrecht als Landesrecht
       Gefahrenabwehr, Gestaltung und Verfahren.
   norms:
-  - >-
-      Vorschriften der SächsBO zu Genehmigungspflicht und Verfahren (Paragraphen hier nicht angegeben)
+  - § 59 SächsBO
+  - §§ 61 bis 64 SächsBO
   - "§ 29 BauGB"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
@@ -40,7 +37,7 @@ cards:
   front: >-
       Hat der Bauherr einen Anspruch auf die Baugenehmigung, und wie wird er durchgesetzt?
   back: >-
-      Die Baugenehmigung ist eine gebundene Entscheidung: Sie ist zu erteilen, wenn dem Vorhaben keine
+      Die Baugenehmigung ist eine gebundene Entscheidung: Sie ist nach § 72 Abs. 1 SächsBO zu erteilen, wenn dem Vorhaben keine
       öffentlich-rechtlichen Vorschriften entgegenstehen, die im Genehmigungsverfahren zu prüfen sind
       (Art. 14 Abs. 1 GG schützt die in der Eigentumsgarantie liegende Baufreiheit im Rahmen der
       Gesetze). Der Prüfumfang hängt vom Verfahren ab; im vereinfachten Verfahren prüft die
@@ -54,8 +51,8 @@ cards:
   - "Art. 14 Abs. 1 GG"
   - "§ 36 BauGB"
   - "§ 42 Abs. 1 VwGO"
-  - >-
-      Vorschriften der SächsBO zur Baugenehmigung (Paragraphen hier nicht angegeben)
+  - § 72 Abs. 1 SächsBO
+  - § 75 SächsBO
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -65,9 +62,7 @@ cards:
   front: "Was regeln die Abstandsflächen, und sind sie nachbarschützend?"
   back: >-
       Vor den Außenwänden oberirdischer Gebäude sind Flächen von Gebäuden und baulichen Anlagen
-      freizuhalten (Abstandsflächen). Ihre Tiefe bemisst sich nach der Wandhöhe H multipliziert mit
-      einem landesrechtlichen Faktor; als Regelwert des Musterbauordnungsrechts gilt 0,4 H mit einer
-      Mindesttiefe von meist 3 m, die Zahlen sind in der SächsBO nachzuschlagen. Die Abstandsflächen
+      freizuhalten (Abstandsflächen). Ihre Tiefe bemisst sich nach der Wandhöhe H (§ 6 Abs. 4 SächsBO) und beträgt nach § 6 Abs. 5 SächsBO 0,4 H, mindestens 3 m; in Gewerbe- und Industriegebieten genügen 0,2 H, mindestens 3 m, vor Außenwänden von Wohngebäuden der Gebäudeklassen 1 und 2 mit höchstens drei oberirdischen Geschossen genügen 3 m. Die Abstandsflächen
       müssen grundsätzlich auf dem Baugrundstück selbst liegen und dürfen sich nicht überdecken.
       Zwecke sind ausreichende Belichtung, Belüftung, Brandschutz und Wahrung des Wohnfriedens. Das
       Abstandsflächenrecht ist nachbarschützend, soweit seine Zwecke dem Nachbarn dienen; der Nachbar
@@ -113,8 +108,7 @@ cards:
   front: >-
       Welche bauaufsichtlichen Eingriffsmaßnahmen gibt es, und wann dürfen sie ergehen?
   back: >-
-      Die Bauaufsichtsbehörde überwacht die Einhaltung des öffentlichen Baurechts und kann nach der
-      SächsBO einschreiten. Baueinstellung: Stilllegung einer Baustelle, die rechtswidrig begonnen
+      Die Bauaufsichtsbehörde überwacht die Einhaltung des öffentlichen Baurechts und kann nach der SächsBO einschreiten (§ 58 Abs. 2 SächsBO; Einstellung der Arbeiten § 79, Beseitigung und Nutzungsuntersagung § 80 SächsBO). Die Beseitigung setzt nach § 80 S. 1 SächsBO voraus, dass nicht auf andere Weise rechtmäßige Zustände hergestellt werden können; die Nutzungsuntersagung knüpft nach § 80 S. 2 SächsBO an eine Nutzung im Widerspruch zu öffentlich-rechtlichen Vorschriften an. Baueinstellung: Stilllegung einer Baustelle, die rechtswidrig begonnen
       wurde; sie setzt formelle Illegalität (fehlende Genehmigung) oder sonstigen Verstoß voraus und
       dient der Sicherung. Nutzungsuntersagung: Verbot einer rechtswidrigen Nutzung, regelmäßig bei
       formeller Illegalität, wenn die Nutzung nicht ohne Weiteres genehmigungsfähig ist.
@@ -124,8 +118,8 @@ cards:
       Bauherr, Eigentümer oder Nutzer. Ein Anspruch des Nachbarn auf Einschreiten besteht nur
       ausnahmsweise bei Verletzung nachbarschützender Vorschriften und Ermessensreduktion auf Null.
   norms:
-  - >-
-      Eingriffsbefugnisse der Bauaufsicht nach der SächsBO (Paragraphen hier nicht angegeben)
+  - § 79 SächsBO
+  - § 80 SächsBO
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -139,7 +133,7 @@ cards:
       Im Bauordnungsrecht kann die Bauaufsichtsbehörde Abweichungen von Anforderungen der SächsBO
       zulassen, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der
       öffentlich-rechtlich geschützten nachbarlichen Belange mit den öffentlichen Belangen vereinbar
-      sind; die Voraussetzungen im Einzelnen regelt das Landesrecht. Im Bauplanungsrecht lässt § 31
+      sind; nach § 67 Abs. 1 SächsBO „soll“ die Behörde die Abweichung zulassen, wenn diese Voraussetzungen erfüllt sind. Im Bauplanungsrecht lässt § 31
       Abs. 1 BauGB Ausnahmen zu, soweit der Bebauungsplan sie vorsieht. Nach § 31 Abs. 2 BauGB ist
       eine Befreiung von Festsetzungen möglich, wenn die Grundzüge der Planung nicht berührt werden
       und einer der Befreiungsgründe (Allgemeinwohl, städtebauliche Vertretbarkeit, offenbar nicht
@@ -149,7 +143,7 @@ cards:
   norms:
   - "§ 31 Abs. 1 BauGB"
   - "§ 31 Abs. 2 BauGB"
-  - "Abweichungsvorschrift der SächsBO (Paragraph hier nicht angegeben)"
+  - "§ 67 Abs. 1 SächsBO"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -178,13 +172,13 @@ schemata:
 - slug: sn-schema-bau-nutzungsuntersagung
   title: "Nutzungsuntersagung durch die Bauaufsichtsbehörde (SächsBO)"
   norms:
-  - >-
-      Eingriffsbefugnisse der Bauaufsicht nach der SächsBO (Paragraphen hier nicht angegeben)
+  - § 79 SächsBO
+  - § 80 SächsBO
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
   steps:
-  - label: "I. Ermächtigungsgrundlage in der SächsBO"
+  - label: "I. Ermächtigungsgrundlage in der SächsBO (§ 80 S. 2 SächsBO)"
   - label: "II. Formelle Rechtmäßigkeit"
     hinweis: "Zuständigkeit der Bauaufsichtsbehörde, Anhörung, Form."
   - label: "III. Materielle Rechtmäßigkeit"
@@ -222,7 +216,7 @@ faelle:
   - prompt: >-
         Welche Ermächtigungsgrundlage kommt in Betracht, und wann darf eine Nutzung untersagt werden?
     erwartung: >-
-        Die SächsBO ermächtigt die Bauaufsichtsbehörde, rechtswidrige Nutzungen zu untersagen. Eine
+        Die SächsBO ermächtigt die Bauaufsichtsbehörde, rechtswidrige Nutzungen zu untersagen (§ 80 S. 2 SächsBO). Eine
         Nutzungsuntersagung setzt eine formell rechtswidrige Nutzung voraus, regelmäßig bei fehlender
         Genehmigung, bei der die Nutzung zudem nicht offensichtlich genehmigungsfähig ist.
   - prompt: "Ist die Nutzung formell rechtswidrig?"

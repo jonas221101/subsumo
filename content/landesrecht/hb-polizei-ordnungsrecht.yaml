@@ -16,7 +16,7 @@ cards:
   front: Wo steht die polizeiliche Generalklausel in Bremen und was setzt sie voraus?
   back: >-
     Fundstelle: § 10 Abs. 1 BremPolG. Die Generalklausel ermächtigt zu den notwendigen Maßnahmen, um eine
-    im Einzelfall bestehende Gefahr für die öffentliche Sicherheit oder Ordnung abzuwehren. Sie ist subsidiär:
+    im Einzelfall bestehende Gefahr für die öffentliche Sicherheit abzuwehren. Sie ist subsidiär:
     Greift eine Standardmaßnahme oder ein Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite besteht
     Ermessen, begrenzt durch den Grundsatz der Verhältnismäßigkeit. Zum Schutz privater Rechte wird die
     Gefahrenabwehr nur subsidiär tätig: Ein Einschreiten kommt nur in Betracht, wenn gerichtlicher Schutz
@@ -34,8 +34,7 @@ cards:
   back: >-
     I. Ermächtigungsgrundlage (Bremisches Polizeigesetz (BremPolG): Standardmaßnahme vor Generalklausel).
     II. Formelle Rechtmäßigkeit: 1. Zuständigkeit (sachlich: welche Behörde - Polizeibehörden (Ortspolizeibehörden)
-    und Polizeivollzugsdienst nach dem BremPolG; örtlich; instanziell), 2. Verfahren (Anhörung nach §
-    28 BremVwVfG), 3. Form. III. Materielle Rechtmäßigkeit: 1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose
+    und Polizeivollzugsdienst nach dem BremPolG; örtlich; instanziell), 2. Verfahren (Anhörung nach § 28 VwVfG i. V. m. § 1 BremVwVfG), 3. Form. III. Materielle Rechtmäßigkeit: 1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose
     ex ante), 2. richtiger Adressat (Störer: §§ 5, 6, 7 BremPolG), 3. Rechtsfolge: Ermessen und Verhältnismäßigkeit
     (geeignet, erforderlich, angemessen).
   norms:
@@ -49,11 +48,10 @@ cards:
   type: norm
   front: Wo sind Verhaltensstörer, Zustandsstörer und Nichtstörer in Bremen geregelt?
   back: >-
-    §§ 5, 6, 7 BremPolG. Verhaltensstörer: wer die Gefahr durch sein Verhalten verursacht (Theorie der
-    unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer: Inhaber der tatsächlichen
-    Gewalt bzw. Eigentümer einer gefährlichen Sache. Nichtstörer: Inanspruchnahme nur unter den engen
+    §§ 5, 6, 7 BremPolG. Verhaltensstörer (§ 5): wer die Gefahr durch sein Verhalten verursacht (Theorie der
+    unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer: Inhaber der tatsächlichen Gewalt, daneben der Eigentümer (§ 6 BremPolG). Nichtstörer: Inanspruchnahme nur unter den engen
     Voraussetzungen des polizeilichen Notstands (gegenwärtige erhebliche Gefahr, Störer nicht greifbar,
-    Behörde selbst nicht in der Lage), mit Entschädigungsanspruch.
+    Behörde selbst nicht in der Lage), mit Ausgleichsanspruch (§ 117 BremPolG).
   norms:
   - §§ 5, 6, 7 BremPolG
   quellen:
@@ -66,12 +64,9 @@ cards:
     Wer ist in Bremen für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde oder Polizei?
   back: >-
     Das BremPolG regelt die Gefahrenabwehr durch Polizei- und Ordnungsbehörden in einem Gesetz. Welche
-    Behörde handelt (Ortspolizeibehörde, Polizeivollzugsdienst, Fachbehörde), ergibt sich aus den Zuständigkeitsvorschriften
-    des BremPolG und der Fachgesetze, die im Einzelfall nachzuschlagen sind. Prüfungsrelevant ist die
-    Abgrenzung zwischen allgemeiner Gefahrenabwehr und Eilzuständigkeit: Der Polizeivollzugsdienst wird
-    regelmäßig tätig, wenn die Abwehr keinen Aufschub duldet oder eine besondere Zuweisung besteht. Ein
-    Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig; eine Heilung kommt nach
-    § 46 BremVwVfG nur in engen Grenzen in Betracht.
+    Behörde handelt (Landespolizeibehörde, Ortspolizeibehörde, Polizeivollzugsdienst, Sonderpolizeibehörde), ergibt sich aus §§ 124 bis 140 BremPolG und den Fachgesetzen. Prüfungsrelevant ist die
+    Abgrenzung zwischen allgemeiner Gefahrenabwehr und Eilzuständigkeit: Nach § 125 Abs. 1 S. 2 BremPolG ist der Polizeivollzugsdienst neben den Polizeibehörden nur für Maßnahmen zuständig, die nach pflichtgemäßem Ermessen unaufschiebbar notwendig erscheinen (soweit nichts anderes bestimmt ist). Ein
+    Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig; die Unbeachtlichkeit nach § 46 VwVfG (i. V. m. § 1 BremVwVfG) erfasst nur Verfahrens-, Form- und Fehler der örtlichen Zuständigkeit, nicht die sachliche Unzuständigkeit.
   norms:
   - Bremisches Polizeigesetz (BremPolG)
   quellen:
@@ -84,8 +79,7 @@ cards:
   back: >-
     Bremisches Verwaltungsvollstreckungsgesetz (BremVwVG). Regelfall ist das gestreckte Verfahren: Grundverfügung
     - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme, Zwangsgeld, unmittelbarer
-    Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausführung ohne vorausgehenden Verwaltungsakt
-    möglich; die Kosten trägt der Pflichtige.
+    Zwang). Verwaltungszwang kann nach § 11 Abs. 2 BremVwVG ohne vorausgehenden Verwaltungsakt angewendet werden, wenn dies zur Verhinderung einer rechtswidrigen Tat oder zur Abwendung einer drohenden Gefahr geboten erscheint; die Kosten trägt der Pflichtige.
   norms:
   - Bremisches Verwaltungsvollstreckungsgesetz (BremVwVG)
   quellen:
@@ -177,14 +171,12 @@ cards:
     Was ist ein Platzverweis nach dem Landesrecht von Bremen und wie unterscheidet er sich von Aufenthaltsverbot
     und Gewahrsam?
   back: >-
-    Der Platzverweis ist eine Standardmaßnahme: Eine Person wird zur Abwehr einer Gefahr vorübergehend
+    Der Platzverweis (§ 11 Abs. 1 BremPolG) ist eine Standardmaßnahme: Eine Person wird zur Abwehr einer Gefahr vorübergehend
     von einem Ort verwiesen oder ihr wird das Betreten untersagt. Er ist ein Verwaltungsakt in Gestalt
     eines Gebots oder Verbots und kann mündlich ergehen. Bei Anordnung durch Polizeivollzugsbeamte ist
     er regelmäßig eine unaufschiebbare Maßnahme, deren Vollziehung nach § 80 Abs. 2 S. 1 Nr. 2 VwGO sofort
-    möglich ist. Vom Platzverweis zu unterscheiden ist das längerfristige Aufenthaltsverbot für ein bestimmtes
-    Gebiet, für das höhere Anforderungen gelten. Wird ein Platzverweis nicht befolgt, kommt als Durchsetzung
-    Zwang in Betracht; der Gewahrsam ist eine Freiheitsentziehung und erfordert unverzüglich eine richterliche
-    Entscheidung (Art. 104 Abs. 2 GG).
+    möglich ist. Vom Platzverweis zu unterscheiden ist das Betretens- und Aufenthaltsverbot für einen örtlichen Bereich (§ 11 Abs. 2 BremPolG), für das höhere Anforderungen gelten (Tatsachen für eine bevorstehende Straftat, zeitliche und örtliche Beschränkung). Wird ein Platzverweis nicht befolgt, kommt als Durchsetzung
+    Zwang in Betracht; der Gewahrsam (§ 13 BremPolG) ist eine Freiheitsentziehung und erfordert unverzüglich eine richterliche Entscheidung (§ 14 BremPolG, Art. 104 Abs. 2 GG).
   norms:
   - Art. 104 Abs. 2 GG
   - § 80 Abs. 2 S. 1 Nr. 2 VwGO
@@ -214,14 +206,13 @@ cards:
 - slug: hb-por-kosten
   type: definition
   front: >-
-    Wer trägt die Kosten einer Ersatzvornahme oder unmittelbaren Ausführung im Landesrecht von Bremen
+    Wer trägt die Kosten einer Ersatzvornahme oder des Verwaltungszwangs ohne vorausgehenden Verwaltungsakt im Landesrecht von Bremen
     und was ist für den Kostenbescheid zu prüfen?
   back: >-
     Die Kosten trägt der Pflichtige bzw. der Störer, der bei rechtmäßigem Vorgehen hätte herangezogen
     werden können. Beim gestreckten Verfahren (Grundverfügung, Androhung, Festsetzung, Ersatzvornahme)
     muss die Vollstreckung rechtmäßig sein; für den Kostenbescheid genügt, dass die Grundverfügung wirksam
-    und vollziehbar war, auf ihre Rechtmäßigkeit kommt es nicht an. Bei Sofortvollzug und unmittelbarer
-    Ausführung ohne vorherigen Verwaltungsakt wird dagegen geprüft, ob die Maßnahme rechtmäßig war und
+    und vollziehbar war, auf ihre Rechtmäßigkeit kommt es nicht an. Beim Verwaltungszwang ohne vorherigen Verwaltungsakt (§ 11 Abs. 2 BremVwVG) wird dagegen geprüft, ob die Maßnahme rechtmäßig war und
     ob ein Verwaltungsakt gegen den Kostenschuldner rechtmäßig hätte ergehen dürfen (hypothetischer Verwaltungsakt).
     Die Kosten werden durch Kostenbescheid festgesetzt (Verwaltungsakt, Anfechtungsklage). Maßgeblich
     sind die Vollstreckungsregeln (Bremisches Verwaltungsvollstreckungsgesetz) und die kostenrechtlichen
@@ -303,7 +294,7 @@ faelle:
   - prompt: Durfte die Behörde ohne vorherigen Verwaltungsakt tätig werden?
     erwartung: >-
       Ja: Bei einer gegenwärtigen Gefahr, die ein sofortiges Tätigwerden verlangt, und bei nicht erreichbarem
-      Verpflichteten darf die Behörde die Maßnahme selbst durchführen (unmittelbare Ausführung bzw. Sofortvollzug).
+      Verpflichteten darf die Behörde die Maßnahme selbst durchführen (Verwaltungszwang ohne vorausgehenden Verwaltungsakt nach § 11 Abs. 2 BremVwVG, Sofortvollzug).
       Eine vorherige Verfügung gegen E war nicht erforderlich.
   - prompt: Wäre E bei rechtmäßigem Vorgehen verantwortlich gewesen?
     erwartung: >-
@@ -323,7 +314,7 @@ faelle:
   expectation:
     pruefpunkte:
     - id: p1
-      label: Unmittelbare Ausführung bzw. Sofortvollzug mangels Erreichbarkeit der Pflichtigen zulässig
+      label: Sofortvollzug (Verwaltungszwang ohne vorausgehenden Verwaltungsakt, § 11 Abs. 2 BremVwVG) mangels Erreichbarkeit der Pflichtigen zulässig
       weight: 2.5
       required: true
       keywords:

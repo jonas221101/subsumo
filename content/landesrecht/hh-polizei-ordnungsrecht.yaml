@@ -15,11 +15,10 @@ cards:
   type: norm
   front: Wo steht die polizeiliche Generalklausel in Hamburg und was setzt sie voraus?
   back: >-
-    Fundstelle: § 3 Abs. 1 SOG HH. Die Generalklausel ermächtigt zu den notwendigen Maßnahmen, um eine
+    Fundstelle: § 3 Abs. 1 SOG HH. Die Generalklausel ermächtigt die Verwaltungsbehörden zu den im Einzelfall erforderlichen Maßnahmen, um eine
     im Einzelfall bestehende Gefahr für die öffentliche Sicherheit oder Ordnung abzuwehren. Sie ist subsidiär:
     Greift eine Standardmaßnahme oder ein Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite besteht
-    Ermessen, begrenzt durch den Grundsatz der Verhältnismäßigkeit. Zum Schutz privater Rechte wird die
-    Gefahrenabwehr nur subsidiär tätig: Ein Einschreiten kommt nur in Betracht, wenn gerichtlicher Schutz
+    Ermessen, begrenzt durch den Grundsatz der Verhältnismäßigkeit. Zum Schutz privater Rechte wird die Gefahrenabwehr nur subsidiär tätig (§ 3 Abs. 3 SOG HH): Ein Einschreiten kommt nur in Betracht, wenn gerichtlicher Schutz
     nicht rechtzeitig zu erlangen ist und ohne die Maßnahme die Vereitelung oder wesentliche Erschwerung
     der Rechtsverwirklichung droht.
   norms:
@@ -51,10 +50,7 @@ cards:
   front: Wo sind Verhaltensstörer, Zustandsstörer und Nichtstörer in Hamburg geregelt?
   back: >-
     §§ 8, 9, 10 SOG HH. Verhaltensstörer: wer die Gefahr durch sein Verhalten verursacht (Theorie der
-    unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer: Inhaber der tatsächlichen
-    Gewalt bzw. Eigentümer einer gefährlichen Sache. Nichtstörer: Inanspruchnahme nur unter den engen
-    Voraussetzungen des polizeilichen Notstands (gegenwärtige erhebliche Gefahr, Störer nicht greifbar,
-    Behörde selbst nicht in der Lage), mit Entschädigungsanspruch.
+    unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer (§ 9 SOG HH): Eigentümer der Sache, daneben auch der Inhaber der tatsächlichen Gewalt; wer die Gewalt gegen den Willen des Eigentümers ausübt, ist allein verantwortlich. Nichtstörer (§ 10 SOG HH): Inanspruchnahme nur, wenn eine unmittelbar bevorstehende Gefahr bzw. Störung auf andere Weise nicht abgewehrt oder beseitigt werden kann und die Verwaltungsbehörde nicht über ausreichende eigene Kräfte und Mittel verfügt; auf Antrag besteht grundsätzlich ein Anspruch auf angemessene Entschädigung (§ 10 Abs. 3 SOG HH).
   norms:
   - §§ 8, 9, 10 SOG HH
   quellen:
@@ -67,8 +63,7 @@ cards:
     Wer ist in Hamburg für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde oder Polizei?
   back: >-
     Das SOG HH regelt die Gefahrenabwehr durch Verwaltungsbehörden und Polizei in einem Gesetz; Hamburg
-    ist Einheitsgemeinde mit Bezirken (BezVG). Welche Behörde im Einzelfall zuständig ist, ergibt sich
-    aus den Zuständigkeitsvorschriften des SOG HH und der Fachgesetze, die nachzuschlagen sind. Prüfungsrelevant
+    ist Einheitsgemeinde mit Bezirken (BezVG). Grundsätzlich handeln die Verwaltungsbehörden im Rahmen ihres Geschäftsbereichs (§ 3 Abs. 1 SOG HH); unaufschiebbare Maßnahmen darf neben ihnen auch die Vollzugspolizei in allen Fällen der Gefahrenabwehr treffen (§ 3 Abs. 2 SOG HH). Weitere Zuständigkeiten ergeben sich aus den Fachgesetzen. Prüfungsrelevant
     ist die Abgrenzung zwischen den Verwaltungsbehörden (etwa den Bezirksämtern) und der Polizei, die
     insbesondere bei Eilbedürftigkeit tätig wird. Ein Handeln der unzuständigen Behörde macht die Maßnahme
     formell rechtswidrig.
@@ -103,7 +98,7 @@ cards:
     Die Standardmaßnahmen sind im SOG HH im Anschluss an die Generalklausel (§ 3 Abs. 1 SOG HH) spezialgesetzlich
     geregelt. Typisch sind Befragung, Identitätsfeststellung, Platzverweis, Gewahrsam, Durchsuchung von
     Personen und Sachen, Betreten und Durchsuchen von Wohnungen und Sicherstellung. Beispiele: Platzverweis
-    § 12b SOG HH, Ingewahrsamnahme § 13 SOG HH. Standardmaßnahmen sind abschließende Spezialregelungen
+    § 12a SOG HH, Ingewahrsamnahme § 13 SOG HH. Standardmaßnahmen sind abschließende Spezialregelungen
     für typische Gefahrensituationen: Liegen ihre Voraussetzungen nicht vor, darf nicht auf die Generalklausel
     ausgewichen werden (Sperrwirkung). In der Klausur wird die speziellere Befugnisnorm zuerst geprüft
     und genau zitiert; die Generalklausel kommt nur für atypische Gefahren in Betracht.
@@ -178,16 +173,15 @@ cards:
     Was ist ein Platzverweis nach dem Landesrecht von Hamburg und wie unterscheidet er sich von Aufenthaltsverbot
     und Gewahrsam?
   back: >-
-    Der Platzverweis (§ 12b SOG HH) ist eine Standardmaßnahme: Eine Person wird zur Abwehr einer Gefahr
+    Der Platzverweis (§ 12a SOG HH) ist eine Standardmaßnahme: Eine Person wird zur Abwehr einer Gefahr
     vorübergehend von einem Ort verwiesen oder ihr wird das Betreten untersagt. Er ist ein Verwaltungsakt
     in Gestalt eines Gebots oder Verbots und kann mündlich ergehen. Bei Anordnung durch Polizeivollzugsbeamte
     ist er regelmäßig eine unaufschiebbare Maßnahme, deren Vollziehung nach § 80 Abs. 2 S. 1 Nr. 2 VwGO
-    sofort möglich ist. Vom Platzverweis zu unterscheiden ist das längerfristige Aufenthaltsverbot für
-    ein bestimmtes Gebiet, für das höhere Anforderungen gelten. Wird ein Platzverweis nicht befolgt, kommt
+    sofort möglich ist. Vom Platzverweis zu unterscheiden ist das längerfristige Aufenthaltsverbot für bestimmte Orte oder Gebiete (§ 12b Abs. 2 SOG HH: zur Verhütung von Straftaten, höchstens sechs Monate), für das höhere Anforderungen gelten. Wird ein Platzverweis nicht befolgt, kommt
     als Durchsetzung Zwang in Betracht; der Gewahrsam (§ 13 SOG HH) ist eine Freiheitsentziehung und erfordert
     unverzüglich eine richterliche Entscheidung (Art. 104 Abs. 2 GG).
   norms:
-  - § 12b SOG HH
+  - § 12a SOG HH
   - § 13 SOG HH
   - Art. 104 Abs. 2 GG
   - § 80 Abs. 2 S. 1 Nr. 2 VwGO
@@ -249,7 +243,7 @@ schemata:
     hinweis: >-
       Spezialgesetzliche Befugnis (Standardmaßnahme) vor Generalklausel prüfen; Sperrwirkung beachten.
     children:
-    - label: 1. Standardmaßnahme, soweit einschlägig (z. B. Platzverweis § 12b SOG HH)
+    - label: 1. Standardmaßnahme, soweit einschlägig (z. B. Platzverweis § 12a SOG HH)
     - label: 2. Hilfsweise Generalklausel, § 3 Abs. 1 SOG HH
   - label: II. Formelle Rechtmäßigkeit
     children:
@@ -305,7 +299,7 @@ faelle:
   steps:
   - prompt: Welche Ermächtigungsgrundlage kommt in Betracht?
     erwartung: >-
-      Der Platzverweis ist als Standardmaßnahme in § 12b SOG HH geregelt und geht der Generalklausel des
+      Der Platzverweis ist als Standardmaßnahme in § 12a SOG HH geregelt und geht der Generalklausel des
       § 3 Abs. 1 SOG HH vor.
   - prompt: Lag eine Gefahr vor? Wie wirkt sich aus, dass tatsächlich keine Gefahr bestand?
     erwartung: >-
@@ -325,14 +319,14 @@ faelle:
   expectation:
     pruefpunkte:
     - id: p1
-      label: Platzverweis nach § 12b SOG HH als Standardmaßnahme vor der Generalklausel erkannt
+      label: Platzverweis nach § 12a SOG HH als Standardmaßnahme vor der Generalklausel erkannt
       weight: 1.5
       required: false
       norms:
-      - § 12b SOG HH
+      - § 12a SOG HH
       - § 3 Abs. 1 SOG HH
       keywords:
-      - § 12b SOG HH
+      - § 12a SOG HH
       - Platzverweis
       - Standardmaßnahme
       - Sperrwirkung

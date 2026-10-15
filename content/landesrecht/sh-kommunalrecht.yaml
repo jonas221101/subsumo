@@ -104,14 +104,14 @@ cards:
 - slug: sh-kr-mitwirkungsverbot
   type: norm
   front: Wann gilt in Schleswig-Holstein ein Mitwirkungsverbot für Gemeindevertreter?
-  back: Nach § 22 GO SH darf ein Mitglied der Gemeindevertretung nicht beratend oder entscheidend mitwirken,
+  back: Nach § 32 Abs. 3 i. V. m. § 22 GO SH darf ein Mitglied der Gemeindevertretung nicht beratend oder entscheidend mitwirken,
     wenn die Entscheidung ihm selbst, einem Angehörigen oder einer von ihm vertretenen natürlichen oder
     juristischen Person einen unmittelbaren Vorteil oder Nachteil bringen kann. Maßgeblich ist die konkrete
     Möglichkeit eines Sonderinteresses; auf tatsächliche Befangenheit kommt es nicht an. Das Verbot soll
     die Unbefangenheit der Entscheidung und das Vertrauen der Bürger in die Gemeindeorgane sichern. Ausnahmen
     gelten insbesondere für Wahlen und für Entscheidungen, die nur ein Gruppeninteresse berühren. Ein
     Verstoß macht den Beschluss fehlerhaft, wenn die Mitwirkung für das Ergebnis ursächlich sein konnte;
-    Heilungs- und Unbeachtlichkeitsregeln sind zu beachten.
+    Nach § 22 Abs. 5 GO SH kann der Verstoß nicht mehr geltend gemacht werden, wenn die Mitwirkung für das Abstimmungsergebnis nicht entscheidend war oder nach Ablauf eines Jahres (außer bei vorherigem Widerspruch, Beanstandung oder Rechtsbehelf).
   norms:
   - § 22 GO SH
   quellen:
@@ -144,10 +144,8 @@ cards:
     dagegen wehren?
   back: 'Die Kommunalaufsicht ist in erster Linie Rechtsaufsicht: Sie wacht darüber, dass die Gemeinde
     im Einklang mit dem Recht handelt. In Angelegenheiten, die der Gemeinde zur Erfüllung nach Weisung
-    übertragen sind, besteht daneben Fachaufsicht. Aufsichtsmittel sind Beanstandung, Aufhebung rechtswidriger
-    Beschlüsse, Anordnung und Ersatzvornahme sowie der Beauftragte; sie sind nach dem Verhältnismäßigkeitsgrundsatz
-    zu wählen. Aufsichtsbehörde ist für kreisangehörige Gemeinden regelmäßig der Landrat bzw. die Landrätin,
-    im Übrigen das Land. Gegen aufsichtsrechtliche Verfügungen kann die Gemeinde klagen und sich auf die
+    übertragen sind, besteht daneben Fachaufsicht. Aufsichtsmittel sind Beanstandung mit einstweiliger Anordnung (§ 123 GO SH), Anordnung (§ 124 GO SH) und Ersatzvornahme (§ 125 GO SH); sie sind nach dem Verhältnismäßigkeitsgrundsatz
+    zu wählen. Kommunalaufsichtsbehörde ist für die Gemeinden und kreisangehörigen Städte bis 20.000 Einwohner der Landrat bzw. die Landrätin, für größere Städte sowie als oberste Behörde das Innenministerium (§ 121 GO SH). Gegen aufsichtsrechtliche Verfügungen kann die Gemeinde klagen und sich auf die
     Selbstverwaltungsgarantie (Art. 28 Abs. 2 GG) berufen; Dritte haben grundsätzlich keinen Anspruch
     auf aufsichtsrechtliches Einschreiten.'
   norms:
