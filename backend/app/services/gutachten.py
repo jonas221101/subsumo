@@ -37,6 +37,10 @@ _ABBREVIATIONS = [
     "ggf.", "insb.", "u.a.", "sog.", "evtl.", "grds.", "str.", "h.M.", "a.A.",
     "e.A.", "m.M.", "st.Rspr.", "Rspr.", "Lit.", "Az.", "Rn.", "Ls.", "Urt.",
     "Beschl.", "v.", "ff.", "f.", "Nrn.", "Buchst.", "Anm.", "Fn.", "Bd.",
+    # Schreibweisen mit Leerzeichen, wie sie in Klausuren ueblich sind - laengere
+    # zuerst, damit "i. S. d." nicht als "S." geschuetzt und dann zerlegt wird.
+    "i. S. d.", "i. S. v.", "i. V. m.", "st. Rspr.", "z. B.", "d. h.", "u. a.",
+    "h. M.", "a. A.", "e. A.", "m. M.", "i. E.", "a. F.", "n. F.", "o. g.", "s. o.", "s. u.",
 ]
 _DATUM_TAG = re.compile(
     r"\b(\d{1,2})\.(?=\s+(?:Januar|Februar|März|April|Mai|Juni|Juli|August|September"
@@ -48,7 +52,8 @@ _SENTENCE_END = re.compile(r"(?<=[.!?])\s+(?=[A-ZÄÖÜ§„\"(])")
 def split_sentences(text: str) -> list[str]:
     """Trennt Saetze, ohne an juristischen Abkuerzungen zu zerbrechen."""
     guarded = text
-    for i, abbr in enumerate(_ABBREVIATIONS):
+    # Laengste zuerst: sonst zerlegt "S." die Kette "i. S. d." vorab.
+    for i, abbr in sorted(enumerate(_ABBREVIATIONS), key=lambda e: -len(e[1])):
         guarded = guarded.replace(abbr, f"\x00{i}\x00")
     # "§ 823 I 1" oder "Art. 2 I" - ein Punkt zwischen Ziffern ist kein Satzende.
     guarded = re.sub(r"(\d)\.(\s*\d)", "\\1\x01\\2", guarded)

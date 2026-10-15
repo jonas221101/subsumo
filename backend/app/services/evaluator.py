@@ -216,6 +216,7 @@ _KEIN_VERB = frozenset(
 _VERB_FORM = re.compile(r"^[a-z]{3,}(?:t|te|ten|en)$")
 MIN_SATZ_WOERTER = 6
 MAX_KOMMA_DICHTE = 0.3
+MIN_LISTEN_ABSCHNITTE = 6
 
 _ZAHL_KEYWORD = re.compile(r"\d+[a-z]?")
 _PARAGRAPH_TOKEN = re.compile(r"§§?|art\.?|[^\s,]+|,")
@@ -244,12 +245,22 @@ def _ist_vollstaendiger_satz(satz: str) -> bool:
         return False
     if satz.count(",") / len(woerter) > MAX_KOMMA_DICHTE:
         return False
-    norm = _normalize(satz)
+    # Lange Stichwortketten ("Antragsbefugnis, § 80 Abs. 5 VwGO, Eilbeduerftigkeit, ...")
+    # druecken die Kommadichte, weil Normzitate viele "Woerter" haben. Ab sechs
+    # Kommaabschnitten zaehlt es nur als Satz, wenn mehr als ein Abschnitt ein Verb traegt.
+    abschnitte = [a for a in re.split(r"[,;]", satz) if a.strip()]
+    if len(abschnitte) >= MIN_LISTEN_ABSCHNITTE:
+        return sum(_hat_verb(a) for a in abschnitte) > 1
+    return _hat_verb(satz)
+
+
+def _hat_verb(text: str) -> bool:
+    norm = _normalize(text)
     tokens = re.findall(r"[a-z0-9]+", norm)
     if any(t in _VERBEN for t in tokens) or _PARTIZIP.search(norm):
         return True
     # Kleingeschriebene Formen auf -t/-te/-ten im Originalsatz ("kommt", "bevorstand" nicht).
-    klein = re.findall(r"(?<![\wäöüÄÖÜß])[a-zäöüß]+", satz)
+    klein = re.findall(r"(?<![\wäöüÄÖÜß])[a-zäöüß]+", text)
     return any(
         _VERB_FORM.match(_normalize(w)) and _normalize(w) not in _KEIN_VERB for w in klein
     )

@@ -367,3 +367,16 @@ def test_leere_abgabe_wird_mit_deutscher_meldung_abgelehnt(auth_client, text):
     assert "String should" not in response.text
     # Es wird keine 0-Punkte-Abgabe gespeichert.
     assert auth_client.get("/v1/submissions").json() == vorher
+
+
+def test_lange_stichwortkette_mit_normzitaten_ist_kein_satz():
+    from app.services.evaluator import _ist_vollstaendiger_satz
+
+    kette = (
+        "Antragsbefugnis analog § 42 Abs. 2 VwGO, § 80 Abs. 5 S. 1 Alt. 2 VwGO, "
+        "Interessenabwaegung, Erfolgsaussichten in der Hauptsache, besonderes "
+        "Vollzugsinteresse, § 80 Abs. 3 VwGO Begruendung, formelle Rechtmaessigkeit"
+    )
+    assert not _ist_vollstaendiger_satz(kette)
+    satz = "Notwehrlage, Notwehrhandlung und Verteidigungswille liegen hier vor."
+    assert _ist_vollstaendiger_satz(satz)

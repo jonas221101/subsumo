@@ -1,7 +1,8 @@
 topic:
   slug: or-gr-apr-informationelle-selbstbestimmung
   area: oeffentliches-recht
-  title: 'Allgemeines Persönlichkeitsrecht (Art. 2 Abs. 1 i. V. m. Art. 1 Abs. 1 GG) und informationelle Selbstbestimmung'
+  title: Allgemeines Persönlichkeitsrecht (Art. 2 Abs. 1 i. V. m. Art. 1 Abs. 1 GG) und informationelle
+    Selbstbestimmung
   parent: or-grundrechte
   relevance: 5
   stand: 2026-10
@@ -12,20 +13,17 @@ topic:
 cards:
 - slug: or-gr-apr-herleitung-fallgruppen
   type: definition
-  front: "Woraus wird das allgemeine Persönlichkeitsrecht (APR) hergeleitet, und welche Fallgruppen werden unterschieden?"
-  back: >-
-    Das APR ist ein ungeschriebenes, vom BVerfG entwickeltes Grundrecht, das aus
-    Art. 2 Abs. 1 i. V. m. Art. 1 Abs. 1 GG folgt. Es soll die engere persönliche
-    Lebenssphäre und die Erhaltung ihrer Grundbedingungen sichern, die die
-    speziellen Freiheitsrechte nicht abschließend erfassen, und ist daher gegenüber
-    Art. 2 Abs. 1 GG eigenständig und speziell. Es ist ein Jedermannrecht; juristische
-    Personen können sich nach Art. 19 Abs. 3 GG nur auf einzelne Ausprägungen
-    berufen (etwa Namens-, Ehr- und Selbstdarstellungsschutz). Üblich ist eine
-    Einteilung in drei Fallgruppen. Selbstbestimmung umfasst die Freiheit, eigene
-    Lebensentscheidungen zu treffen, einschließlich der informationellen
-    Selbstbestimmung. Selbstbewahrung schützt den Rückzug in die Privatsphäre.
-    Selbstdarstellung schützt, wie der Mensch in der Öffentlichkeit erscheint, also
-    Recht am eigenen Bild und Wort, Ehre und Namen.
+  front: Woraus wird das allgemeine Persönlichkeitsrecht (APR) hergeleitet, und welche Fallgruppen werden
+    unterschieden?
+  back: Das APR ist ein ungeschriebenes, vom BVerfG entwickeltes Grundrecht, das aus Art. 2 Abs. 1 i.
+    V. m. Art. 1 Abs. 1 GG folgt. Es soll die engere persönliche Lebenssphäre und die Erhaltung ihrer
+    Grundbedingungen sichern, die die speziellen Freiheitsrechte nicht abschließend erfassen, und ist
+    daher gegenüber Art. 2 Abs. 1 GG eigenständig und speziell. Es ist ein Jedermannrecht; juristische
+    Personen können sich nach Art. 19 Abs. 3 GG nur auf einzelne Ausprägungen berufen (etwa Namens-, Ehr-
+    und Selbstdarstellungsschutz). Üblich ist eine Einteilung in drei Fallgruppen. Selbstbestimmung umfasst
+    die Freiheit, eigene Lebensentscheidungen zu treffen, einschließlich der informationellen Selbstbestimmung.
+    Selbstbewahrung schützt den Rückzug in die Privatsphäre. Selbstdarstellung schützt, wie der Mensch
+    in der Öffentlichkeit erscheint, also Recht am eigenen Bild und Wort, Ehre und Namen.
   norms:
   - Art. 2 Abs. 1 GG
   - Art. 1 Abs. 1 GG
@@ -34,21 +32,17 @@ cards:
   - Eigenformulierung Redaktion
 - slug: or-gr-apr-spaerentheorie
   type: definition
-  front: "Was besagt die Sphärentheorie, und welche Rolle spielt sie heute?"
-  back: >-
-    Die Sphärentheorie unterscheidet drei Bereiche des Persönlichkeitsschutzes.
-    Die Sozialsphäre betrifft das Auftreten in der Öffentlichkeit und im
-    beruflichen und gesellschaftlichen Leben. Hier sind Eingriffe schon aus
-    sachlichen Gründen und bei Verhältnismäßigkeit zulässig. Die Privatsphäre
-    umfasst Familie, Wohnen und das persönliche Umfeld; Eingriffe bedürfen eines
-    überwiegenden Allgemeininteresses und müssen verhältnismäßig sein. Die
-    Intimsphäre als Kernbereich privater Lebensgestaltung, etwa Sexualität,
-    Tagebuch, Selbstgespräche, ist unantastbar und einer Abwägung entzogen
-    (BVerfGE 80, 367, Tagebuch; BVerfGE 109, 279, Großer Lauschangriff). Das BVerfG
-    versteht die Sphären nicht als starre Schichten. Entscheidend ist der soziale
-    Bezug der Information; ein Kommunikationsinhalt, der den Kernbereich berührt,
-    verliert den Schutz, wenn er unmittelbar Straftaten betrifft. Die Theorie
-    dient heute als Orientierungshilfe für die Verhältnismäßigkeitsprüfung.
+  front: Was besagt die Sphärentheorie, und welche Rolle spielt sie heute?
+  back: Die Sphärentheorie unterscheidet drei Bereiche des Persönlichkeitsschutzes. Die Sozialsphäre betrifft
+    das Auftreten in der Öffentlichkeit und im beruflichen und gesellschaftlichen Leben. Hier sind Eingriffe
+    schon aus sachlichen Gründen und bei Verhältnismäßigkeit zulässig. Die Privatsphäre umfasst Familie,
+    Wohnen und das persönliche Umfeld; Eingriffe bedürfen eines überwiegenden Allgemeininteresses und
+    müssen verhältnismäßig sein. Die Intimsphäre als Kernbereich privater Lebensgestaltung, etwa Sexualität,
+    Tagebuch, Selbstgespräche, ist unantastbar und einer Abwägung entzogen (BVerfGE 80, 367, Tagebuch;
+    BVerfGE 109, 279, Großer Lauschangriff). Das BVerfG versteht die Sphären nicht als starre Schichten.
+    Entscheidend ist der soziale Bezug der Information; ein Kommunikationsinhalt, der den Kernbereich
+    berührt, verliert den Schutz, wenn er unmittelbar Straftaten betrifft. Die Theorie dient heute als
+    Orientierungshilfe für die Verhältnismäßigkeitsprüfung.
   norms:
   - Art. 2 Abs. 1 GG
   - Art. 1 Abs. 1 GG
@@ -57,20 +51,16 @@ cards:
   - BVerfGE 109, 279
 - slug: or-gr-apr-volkszaehlungsurteil
   type: rechtsprechung
-  front: "Was ist der Kern des Volkszählungsurteils zur informationellen Selbstbestimmung?"
-  back: >-
-    Das Volkszählungsurteil (BVerfGE 65, 1, 1983) leitet aus dem APR das Recht auf
-    informationelle Selbstbestimmung ab: die Befugnis des Einzelnen, grundsätzlich
-    selbst über Preisgabe und Verwendung seiner personenbezogenen Daten zu
-    bestimmen. Maßgeblich war, dass unter den Bedingungen automatisierter
-    Datenverarbeitung ein belangloses Datum nicht mehr existiert, weil sich
-    Informationen beliebig verknüpfen lassen. Eingriffe sind nur im überwiegenden
-    Allgemeininteresse zulässig und bedürfen einer gesetzlichen Grundlage, die den
-    Verwendungszweck bereichsspezifisch und präzise bestimmt (Normenklarheit,
-    Zweckbindung). Hinzu kommen verfahrensrechtliche Vorkehrungen wie Aufklärungs-,
-    Auskunfts- und Löschungspflichten sowie Schutz vor Zweckentfremdung. Seit
-    der Entscheidung gilt jede Erhebung, Speicherung, Verwendung und Weitergabe
-    personenbezogener Daten als Eingriff.
+  front: Was ist der Kern des Volkszählungsurteils zur informationellen Selbstbestimmung?
+  back: 'Das Volkszählungsurteil (BVerfGE 65, 1, 1983) leitet aus dem APR das Recht auf informationelle
+    Selbstbestimmung ab: die Befugnis des Einzelnen, grundsätzlich selbst über Preisgabe und Verwendung
+    seiner personenbezogenen Daten zu bestimmen. Maßgeblich war, dass unter den Bedingungen automatisierter
+    Datenverarbeitung ein belangloses Datum nicht mehr existiert, weil sich Informationen beliebig verknüpfen
+    lassen. Eingriffe sind nur im überwiegenden Allgemeininteresse zulässig und bedürfen einer gesetzlichen
+    Grundlage, die den Verwendungszweck bereichsspezifisch und präzise bestimmt (Normenklarheit, Zweckbindung).
+    Hinzu kommen verfahrensrechtliche Vorkehrungen wie Aufklärungs-, Auskunfts- und Löschungspflichten
+    sowie Schutz vor Zweckentfremdung. Seit der Entscheidung gilt jede Erhebung, Speicherung, Verwendung
+    und Weitergabe personenbezogener Daten als Eingriff.'
   norms:
   - Art. 2 Abs. 1 GG
   - Art. 1 Abs. 1 GG
@@ -78,21 +68,16 @@ cards:
   - BVerfGE 65, 1 (Volkszählung)
 - slug: or-gr-apr-informationelle-selbstbestimmung-eingriff-rechtfertigung
   type: schema_step
-  front: "Wie prüft man einen Eingriff in das Recht auf informationelle Selbstbestimmung?"
-  back: >-
-    Zum Schutzbereich zählen alle personenbezogenen Daten, also Einzelangaben über
-    persönliche oder sachliche Verhältnisse einer bestimmten oder bestimmbaren
-    Person; auf die Sensibilität kommt es nicht an. Als Eingriff gilt jede Erhebung,
-    Speicherung, Verwendung oder Weitergabe solcher Daten ohne Einwilligung. Die
-    Schranke ist die verfassungsmäßige Ordnung (Art. 2 Abs. 1 GG), es bedarf
-    also eines Gesetzes. Dieses muss die Schranken-Schranken wahren: Es
-    muss hinreichend bestimmt sein und den Zweck der Datenverarbeitung
-    bereichsspezifisch festlegen (Zweckbindung), muss verhältnismäßig sein
-    und organisatorische und verfahrensrechtliche Vorkehrungen enthalten. Die
-    Anforderungen steigen mit der Eingriffsintensität: Heimlichkeit, Streubreite,
-    Verknüpfbarkeit und Sensibilität der Daten erhöhen das Gewicht. Eine
-    Einwilligung schließt den Eingriff aus, soweit sie freiwillig erfolgt.
-    Kernbereichsschutz bleibt unabhängig davon bestehen.
+  front: Wie prüft man einen Eingriff in das Recht auf informationelle Selbstbestimmung?
+  back: 'Zum Schutzbereich zählen alle personenbezogenen Daten, also Einzelangaben über persönliche oder
+    sachliche Verhältnisse einer bestimmten oder bestimmbaren Person; auf die Sensibilität kommt es nicht
+    an. Als Eingriff gilt jede Erhebung, Speicherung, Verwendung oder Weitergabe solcher Daten ohne Einwilligung.
+    Die Schranke ist die verfassungsmäßige Ordnung (Art. 2 Abs. 1 GG), es bedarf also eines Gesetzes.
+    Dieses muss die Schranken-Schranken wahren: Es muss hinreichend bestimmt sein und den Zweck der Datenverarbeitung
+    bereichsspezifisch festlegen (Zweckbindung), muss verhältnismäßig sein und organisatorische und verfahrensrechtliche
+    Vorkehrungen enthalten. Die Anforderungen steigen mit der Eingriffsintensität: Heimlichkeit, Streubreite,
+    Verknüpfbarkeit und Sensibilität der Daten erhöhen das Gewicht. Eine Einwilligung schließt den Eingriff
+    aus, soweit sie freiwillig erfolgt. Kernbereichsschutz bleibt unabhängig davon bestehen.'
   norms:
   - Art. 2 Abs. 1 GG
   - Art. 1 Abs. 1 GG
@@ -101,21 +86,18 @@ cards:
   - Eigenformulierung Redaktion
 - slug: or-gr-apr-it-grundrecht
   type: rechtsprechung
-  front: "Was schützt das IT-Grundrecht (Online-Durchsuchung), und unter welchen Voraussetzungen ist ein Eingriff gerechtfertigt?"
-  back: >-
-    Mit der Entscheidung zur Online-Durchsuchung (BVerfGE 120, 274, 2008) hat das
-    BVerfG aus dem APR das Grundrecht auf Gewährleistung der Vertraulichkeit und
-    Integrität informationstechnischer Systeme entwickelt. Geschützt sind
-    Systeme, die allein oder in ihrer Vernetzung personenbezogene Daten in einem
-    Umfang und in einer Vielfalt enthalten, dass ein Zugriff einen Einblick in
-    wesentliche Teile der Lebensgestaltung oder ein aussagekräftiges Bild der
-    Persönlichkeit ermöglicht, also Computer, Smartphones, Cloud-Speicher. Das Recht
-    ist subsidiär zu Art. 10 und Art. 13 GG sowie zur informationellen
-    Selbstbestimmung. Eingriffe in das Recht, etwa die heimliche Infiltration eines
-    Systems, sind nur zulässig, wenn tatsächliche Anhaltspunkte für eine konkrete
-    Gefahr für ein überragend wichtiges Rechtsgut bestehen (Leib, Leben, Freiheit
-    der Person oder Bestand des Staates), sie unter Richtervorbehalt stehen und
-    Vorkehrungen zum Kernbereichsschutz getroffen sind.
+  front: Was schützt das IT-Grundrecht (Online-Durchsuchung), und unter welchen Voraussetzungen ist ein
+    Eingriff gerechtfertigt?
+  back: Mit der Entscheidung zur Online-Durchsuchung (BVerfGE 120, 274, 2008) hat das BVerfG aus dem APR
+    das Grundrecht auf Gewährleistung der Vertraulichkeit und Integrität informationstechnischer Systeme
+    entwickelt. Geschützt sind Systeme, die allein oder in ihrer Vernetzung personenbezogene Daten in
+    einem Umfang und in einer Vielfalt enthalten, dass ein Zugriff einen Einblick in wesentliche Teile
+    der Lebensgestaltung oder ein aussagekräftiges Bild der Persönlichkeit ermöglicht, also Computer,
+    Smartphones, Cloud-Speicher. Das Recht ist subsidiär zu Art. 10 und Art. 13 GG sowie zur informationellen
+    Selbstbestimmung. Eingriffe in das Recht, etwa die heimliche Infiltration eines Systems, sind nur
+    zulässig, wenn tatsächliche Anhaltspunkte für eine konkrete Gefahr für ein überragend wichtiges Rechtsgut
+    bestehen (Leib, Leben, Freiheit der Person oder Bestand des Staates), sie unter Richtervorbehalt stehen
+    und Vorkehrungen zum Kernbereichsschutz getroffen sind.
   norms:
   - Art. 2 Abs. 1 GG
   - Art. 1 Abs. 1 GG
@@ -123,24 +105,20 @@ cards:
   - BVerfGE 120, 274 (Online-Durchsuchung)
 - slug: or-gr-apr-abgrenzung-art10-art13-it
   type: streitstand
-  front: "Wie sind APR, informationelle Selbstbestimmung, Art. 10, Art. 13 GG und das IT-Grundrecht voneinander abzugrenzen?"
-  back: >-
-    Art. 10 GG schützt die laufende Fernkommunikation auf dem Übertragungsweg;
-    nach BVerfGE 115, 166 endet der Schutz, sobald die Kommunikation
-    beim Empfänger angekommen und im Herrschaftsbereich des Teilnehmers
-    gespeichert ist, dann greifen informationelle Selbstbestimmung oder das
-    IT-Grundrecht. Die Quellen-Telekommunikationsüberwachung, die nur laufende
-    Kommunikation abgreift, ist an Art. 10 GG zu messen, sofern technisch sichergestellt
-    ist, dass nur die laufende Kommunikation erfasst wird; geht der Zugriff
-    darüber hinaus, ist das IT-Grundrecht einschlägig. Art. 13 GG schützt den
-    räumlichen Rückzugsbereich der Wohnung und verdrängt das IT-Grundrecht, wenn
-    der Zugriff durch ein Eindringen in die Wohnung erfolgt (etwa Betreten zur
-    Installation oder Beschlagnahme vor Ort); ein Zugriff über das Netz
-    berührt Art. 13 GG nicht. Das IT-Grundrecht und das Recht auf
-    informationelle Selbstbestimmung sind Ausprägungen des APR und treten als
-    Auffangrechte hinter die speziellen Garantien zurück. Umstritten ist
-    teilweise, ob das IT-Grundrecht neben der informationellen
-    Selbstbestimmung ein eigenständiges Grundrecht ist.
+  front: Wie sind APR, informationelle Selbstbestimmung, Art. 10, Art. 13 GG und das IT-Grundrecht voneinander
+    abzugrenzen?
+  back: Art. 10 GG schützt die laufende Fernkommunikation auf dem Übertragungsweg; nach BVerfGE 115, 166
+    endet der Schutz, sobald die Kommunikation beim Empfänger angekommen und im Herrschaftsbereich des
+    Teilnehmers gespeichert ist, dann greifen informationelle Selbstbestimmung oder das IT-Grundrecht.
+    Die Quellen-Telekommunikationsüberwachung, die nur laufende Kommunikation abgreift, ist an Art. 10
+    GG zu messen, sofern technisch sichergestellt ist, dass nur die laufende Kommunikation erfasst wird;
+    geht der Zugriff darüber hinaus, ist das IT-Grundrecht einschlägig. Art. 13 GG schützt den räumlichen
+    Rückzugsbereich der Wohnung und verdrängt das IT-Grundrecht, wenn der Zugriff durch ein Eindringen
+    in die Wohnung erfolgt (etwa Betreten zur Installation oder Beschlagnahme vor Ort); ein Zugriff über
+    das Netz berührt Art. 13 GG nicht. Das IT-Grundrecht und das Recht auf informationelle Selbstbestimmung
+    sind Ausprägungen des APR und treten als Auffangrechte hinter die speziellen Garantien zurück. Umstritten
+    ist teilweise, ob das IT-Grundrecht neben der informationellen Selbstbestimmung ein eigenständiges
+    Grundrecht ist.
   norms:
   - Art. 10 Abs. 1 GG
   - Art. 13 Abs. 1 GG
@@ -151,20 +129,16 @@ cards:
   - BVerfGE 141, 220
 - slug: or-gr-apr-recht-am-eigenen-bild-ehre
   type: definition
-  front: "Was gehört zur Selbstdarstellung im APR (Recht am eigenen Bild, am gesprochenen Wort, Ehre)?"
-  back: >-
-    Zum APR gehört die Befugnis, über die Darstellung der eigenen Person in der
-    Öffentlichkeit selbst zu bestimmen. Hierzu zählen das Recht am eigenen Bild,
-    das Recht am gesprochenen Wort (keine heimliche Aufzeichnung, keine Verwertung
-    ohne Einwilligung), der Schutz vor Entstellung und unwahren Behauptungen sowie
-    Ehrschutz, ebenso der Anspruch auf Gegendarstellung, Berichtigung und Widerruf.
-    Das APR kollidiert dabei regelmäßig mit der Meinungs-, Presse- und
-    Rundfunkfreiheit (Art. 5 GG), die den Eingriff rechtfertigen können, wenn die
-    Abwägung zugunsten der Berichterstattung ausfällt. Maßgeblich sind die
-    Intensität der Persönlichkeitsverletzung, der Wahrheitsgehalt der Äußerung
-    und der Beitrag zur öffentlichen Meinungsbildung. Nach dem Tod
-    schützt die Menschenwürde (Art. 1 Abs. 1 GG) weiter vor Herabwürdigung
-    (Mephisto, BVerfGE 30, 173), wobei der Schutz mit der Zeit schwächer wird.
+  front: Was gehört zur Selbstdarstellung im APR (Recht am eigenen Bild, am gesprochenen Wort, Ehre)?
+  back: Zum APR gehört die Befugnis, über die Darstellung der eigenen Person in der Öffentlichkeit selbst
+    zu bestimmen. Hierzu zählen das Recht am eigenen Bild, das Recht am gesprochenen Wort (keine heimliche
+    Aufzeichnung, keine Verwertung ohne Einwilligung), der Schutz vor Entstellung und unwahren Behauptungen
+    sowie Ehrschutz, ebenso der Anspruch auf Gegendarstellung, Berichtigung und Widerruf. Das APR kollidiert
+    dabei regelmäßig mit der Meinungs-, Presse- und Rundfunkfreiheit (Art. 5 GG), die den Eingriff rechtfertigen
+    können, wenn die Abwägung zugunsten der Berichterstattung ausfällt. Maßgeblich sind die Intensität
+    der Persönlichkeitsverletzung, der Wahrheitsgehalt der Äußerung und der Beitrag zur öffentlichen Meinungsbildung.
+    Nach dem Tod schützt die Menschenwürde (Art. 1 Abs. 1 GG) weiter vor Herabwürdigung (Mephisto, BVerfGE
+    30, 173), wobei der Schutz mit der Zeit schwächer wird.
   norms:
   - Art. 2 Abs. 1 GG
   - Art. 1 Abs. 1 GG
@@ -174,22 +148,16 @@ cards:
   - BVerfGE 35, 202 (Lebach)
 - slug: or-gr-apr-recht-auf-vergessen
   type: rechtsprechung
-  front: "Was haben die Entscheidungen Recht auf Vergessen I und II (2019) entschieden?"
-  back: >-
-    Beide Beschlüsse vom 6.11.2019 (BVerfGE 152, 152 und 152, 216) behandeln, wann
-    Presseberichte über länger zurückliegende Straftaten im Internet abrufbar
-    bleiben dürfen. Recht auf Vergessen I betrifft Bereiche, in denen das
-    Fachrecht nicht vollständig durch Unionsrecht determiniert ist: Das BVerfG
-    prüft am Maßstab des Grundgesetzes, hier APR gegen Pressefreiheit, und hat
-    betont, dass dem Betroffenen ein Anspruch zustehen kann, weil sich die
-    Persönlichkeitsbelastung durch Zeitablauf und leichte Auffindbarkeit
-    verstärkt.
-    Recht auf Vergessen II betrifft die Auslistung durch Suchmaschinen,
-    die vollständig unionsrechtlich geregelt ist (DSGVO). Hier prüft das BVerfG
-    ausnahmsweise unmittelbar an den Unionsgrundrechten der GRCh (Art. 7, 8, 11),
-    weil das Grundgesetz bei vollständig vereinheitlichtem Unionsrecht
-    zurücktritt. Die Entscheidungen konkretisieren das Verhältnis von
-    nationalem und europäischem Grundrechtsschutz.
+  front: Was haben die Entscheidungen Recht auf Vergessen I und II (2019) entschieden?
+  back: 'Beide Beschlüsse vom 6.11.2019 (BVerfGE 152, 152 und 152, 216) behandeln, wann Presseberichte
+    über länger zurückliegende Straftaten im Internet abrufbar bleiben dürfen. Recht auf Vergessen I betrifft
+    Bereiche, in denen das Fachrecht nicht vollständig durch Unionsrecht determiniert ist: Das BVerfG
+    prüft am Maßstab des Grundgesetzes, hier APR gegen Pressefreiheit, und hat betont, dass dem Betroffenen
+    ein Anspruch zustehen kann, weil sich die Persönlichkeitsbelastung durch Zeitablauf und leichte Auffindbarkeit
+    verstärkt. Recht auf Vergessen II betrifft die Auslistung durch Suchmaschinen, die vollständig unionsrechtlich
+    geregelt ist (DSGVO). Hier prüft das BVerfG ausnahmsweise unmittelbar an den Unionsgrundrechten der
+    GRCh (Art. 7, 8, 11), weil das Grundgesetz bei vollständig vereinheitlichtem Unionsrecht zurücktritt.
+    Die Entscheidungen konkretisieren das Verhältnis von nationalem und europäischem Grundrechtsschutz.'
   norms:
   - Art. 2 Abs. 1 GG
   - Art. 1 Abs. 1 GG
@@ -200,21 +168,17 @@ cards:
   - BVerfGE 152, 216 (Recht auf Vergessen II)
 - slug: or-gr-apr-schutzpflicht-privat
   type: norm
-  front: "Welche Bedeutung hat das APR zwischen Privaten, und welche Rolle spielt die Schranke der Rechte anderer?"
-  back: >-
-    Auch im Verhältnis zwischen Privaten entfaltet das APR über die
-    zivilrechtlichen Generalklauseln mittelbare Drittwirkung. Das
-    Bürgerliche Recht schützt es über § 823 Abs. 1 BGB als sonstiges Recht, über §
-    1004 BGB analog sowie in Sonderfällen über die Geldentschädigung bei
-    schweren Verletzungen (Soraya, BVerfGE 34, 269). Hinzu kommen die
-    Schutzpflicht des Staates, personenbezogene Daten auch gegenüber Dritten zu
-    schützen (z. B. Datenschutzrecht, DSGVO), und der Auskunftsanspruch. Kollidiert
-    das APR mit anderen Grundrechten, etwa Art. 5 oder Art. 14 GG, sind die Interessen
-    im Wege der praktischen Konkordanz auszugleichen. Maßgeblich ist, ob die
-    Äußerung einen Beitrag zu einer die Öffentlichkeit berührenden Frage leistet;
-    dann überwiegt tendenziell die Meinungsfreiheit. Bei bloßer Neugier
-    des Publikums und Eingriffen in die Privatsphäre überwiegt der
-    Persönlichkeitsschutz.
+  front: Welche Bedeutung hat das APR zwischen Privaten, und welche Rolle spielt die Schranke der Rechte
+    anderer?
+  back: Auch im Verhältnis zwischen Privaten entfaltet das APR über die zivilrechtlichen Generalklauseln
+    mittelbare Drittwirkung. Das Bürgerliche Recht schützt es über § 823 Abs. 1 BGB als sonstiges Recht,
+    über § 1004 BGB analog sowie in Sonderfällen über die Geldentschädigung bei schweren Verletzungen
+    (Soraya, BVerfGE 34, 269). Hinzu kommen die Schutzpflicht des Staates, personenbezogene Daten auch
+    gegenüber Dritten zu schützen (z. B. Datenschutzrecht, DSGVO), und der Auskunftsanspruch. Kollidiert
+    das APR mit anderen Grundrechten, etwa Art. 5 oder Art. 14 GG, sind die Interessen im Wege der praktischen
+    Konkordanz auszugleichen. Maßgeblich ist, ob die Äußerung einen Beitrag zu einer die Öffentlichkeit
+    berührenden Frage leistet; dann überwiegt tendenziell die Meinungsfreiheit. Bei bloßer Neugier des
+    Publikums und Eingriffen in die Privatsphäre überwiegt der Persönlichkeitsschutz.
   norms:
   - Art. 2 Abs. 1 GG
   - Art. 1 Abs. 1 GG
@@ -238,20 +202,18 @@ schemata:
     - label: 2. Sachlich
       children:
       - label: a) Spezielleres Grundrecht einschlägig (Art. 10, Art. 13 GG)?
-        hinweis: APR und IT-Grundrecht sind subsidiär. Zuerst Art. 10 und Art. 13 GG
-          prüfen.
+        hinweis: APR und IT-Grundrecht sind subsidiär. Zuerst Art. 10 und Art. 13 GG prüfen.
       - label: b) Fallgruppe (Selbstbestimmung, Selbstbewahrung, Selbstdarstellung)
       - label: c) Datenerhebung - informationelle Selbstbestimmung, IT-Grundrecht
   - label: II. Eingriff
-    hinweis: Jede Erhebung, Speicherung, Verwendung oder Weitergabe personenbezogener
-      Daten ohne Einwilligung.
+    hinweis: Jede Erhebung, Speicherung, Verwendung oder Weitergabe personenbezogener Daten ohne Einwilligung.
   - label: III. Rechtfertigung
     children:
     - label: 1. Schranke - verfassungsmäßige Ordnung (Art. 2 Abs. 1 GG)
     - label: 2. Gesetzliche Grundlage mit Normenklarheit und Zweckbindung
     - label: 3. Verhältnismäßigkeit
-      hinweis: Bei Abwägung mit Art. 5 GG Gewicht der Persönlichkeitsverletzung und
-        Beitrag zur Meinungsbildung gegenüberstellen. Intimsphäre ist abwägungsfest.
+      hinweis: Bei Abwägung mit Art. 5 GG Gewicht der Persönlichkeitsverletzung und Beitrag zur Meinungsbildung
+        gegenüberstellen. Intimsphäre ist abwägungsfest.
     - label: 4. Kernbereichsschutz (Art. 1 Abs. 1 GG)
   - label: IV. Ergebnis
 faelle:
@@ -262,34 +224,27 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - GG, amtliche Fassung
-  facts: >-
-    Die Gemeinde G veröffentlicht auf ihrer Internetseite eine Liste „säumiger
-    Zahler“ von Abfallgebühren mit Namen, Anschrift und offenem Betrag, um
-    Zahlungsmoral und Abschreckung zu verbessern. Eine spezielle gesetzliche Regelung
-    für die Veröffentlichung existiert nicht; die Gemeinde stützt sich auf die
-    allgemeine Aufgabenzuweisung zur Gebührenerhebung. Der auf der Liste genannte
-    S, dessen Gebührenbescheid er angefochten hat, erhebt gegen die Veröffentlichung
-    Klage und beruft sich auf seine Grundrechte.
+  facts: Die Gemeinde G veröffentlicht auf ihrer Internetseite eine Liste „säumiger Zahler“ von Abfallgebühren
+    mit Namen, Anschrift und offenem Betrag, um Zahlungsmoral und Abschreckung zu verbessern. Eine spezielle
+    gesetzliche Regelung für die Veröffentlichung existiert nicht; die Gemeinde stützt sich auf die allgemeine
+    Aufgabenzuweisung zur Gebührenerhebung. Der auf der Liste genannte S, dessen Gebührenbescheid er angefochten
+    hat, erhebt gegen die Veröffentlichung Klage und beruft sich auf seine Grundrechte.
   question: Verletzt die Veröffentlichung den S in seinen Grundrechten?
   steps:
   - prompt: Welches Grundrecht ist einschlägig, und liegt ein Eingriff vor?
-    erwartung: Das Recht auf informationelle Selbstbestimmung aus Art. 2 Abs. 1 i. V.
-      m. Art. 1 Abs. 1 GG. Namen, Anschrift und Zahlungsrückstand sind personenbezogene
-      Daten. Die Veröffentlichung im Internet ist eine Weitergabe an die
-      Allgemeinheit ohne Einwilligung und damit ein Eingriff.
+    erwartung: Das Recht auf informationelle Selbstbestimmung aus Art. 2 Abs. 1 i. V. m. Art. 1 Abs. 1
+      GG. Namen, Anschrift und Zahlungsrückstand sind personenbezogene Daten. Die Veröffentlichung im
+      Internet ist eine Weitergabe an die Allgemeinheit ohne Einwilligung und damit ein Eingriff.
   - prompt: Genügt die allgemeine Aufgabenzuweisung als Rechtsgrundlage?
-    erwartung: Nein. Eingriffe in die informationelle Selbstbestimmung bedürfen einer
-      bereichsspezifischen, normenklaren Rechtsgrundlage, die den Verwendungszweck
-      präzise bestimmt. Außerdem erfordert die Wesentlichkeitstheorie bei einem
-      so intensiven Eingriff eine Entscheidung des Gesetzgebers selbst. Die
-      allgemeine Aufgabenzuweisung genügt nicht.
+    erwartung: Nein. Eingriffe in die informationelle Selbstbestimmung bedürfen einer bereichsspezifischen,
+      normenklaren Rechtsgrundlage, die den Verwendungszweck präzise bestimmt. Außerdem erfordert die
+      Wesentlichkeitstheorie bei einem so intensiven Eingriff eine Entscheidung des Gesetzgebers selbst.
+      Die allgemeine Aufgabenzuweisung genügt nicht.
   - prompt: Wäre der Eingriff auch bei Rechtsgrundlage verhältnismäßig?
-    erwartung: Auch hilfsweise nein. Die weltweite
-      Abrufbarkeit im Internet, die Streubreite und die Prangerwirkung stehen
-      außer Verhältnis zum Zweck, die Zahlungsmoral zu erhöhen. Mildere Mittel
-      wie Vollstreckung oder Mahnung stehen zur Verfügung. Im Ergebnis liegt schon wegen der fehlenden Rechtsgrundlage eine
-      Verletzung der informationellen Selbstbestimmung (Art. 2 Abs. 1 i. V. m.
-      Art. 1 Abs. 1 GG) vor.
+    erwartung: Auch hilfsweise nein. Die weltweite Abrufbarkeit im Internet, die Streubreite und die Prangerwirkung
+      stehen außer Verhältnis zum Zweck, die Zahlungsmoral zu erhöhen. Mildere Mittel wie Vollstreckung
+      oder Mahnung stehen zur Verfügung. Im Ergebnis liegt schon wegen der fehlenden Rechtsgrundlage eine
+      Verletzung der informationellen Selbstbestimmung (Art. 2 Abs. 1 i. V. m. Art. 1 Abs. 1 GG) vor.
   expectation:
     pruefpunkte:
     - id: p1
@@ -335,6 +290,6 @@ faelle:
       weight: 1.0
       required: false
       keywords:
+      - verfassungswidrig
+      - Grundrechtsverletzung
       - Verletzung der informationellen Selbstbestimmung
-      - Verletzung des allgemeinen Persönlichkeitsrechts
-      - Verstoß gegen Art. 2 Abs. 1 i. V. m. Art. 1 Abs. 1 GG
