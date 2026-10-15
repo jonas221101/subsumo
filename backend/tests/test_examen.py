@@ -265,6 +265,8 @@ def test_deck_filter_in_cards_due(auth_client):
     assert deck
     assert _slugs(deck) <= {
         "or-sicherheitsrecht-generalklausel-standardmassnahmen",
+        "or-polizeirecht-vertiefung",
+        "or-versammlungsrecht",
         "nw-polizei-ordnungsrecht",
     }
     assert "nw-polizei-ordnungsrecht" in _slugs(deck)
@@ -274,7 +276,9 @@ def test_deck_filter_in_cards_due(auth_client):
 def test_deck_ist_auf_das_bundesland_zugeschnitten(auth_client):
     ohne = auth_client.get("/v1/examen/kurse/or-polizei-ordnungsrecht/deck").json()
     assert {t["slug"] for t in ohne["topics"]} == {
-        "or-sicherheitsrecht-generalklausel-standardmassnahmen"
+        "or-sicherheitsrecht-generalklausel-standardmassnahmen",
+        "or-polizeirecht-vertiefung",
+        "or-versammlungsrecht",
     }
     assert ohne["landesrecht_fehlt"] == []
     assert ohne["cards_total"] > 0

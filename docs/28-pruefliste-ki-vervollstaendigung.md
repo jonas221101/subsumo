@@ -1,12 +1,5 @@
-# Prüfliste für die menschliche Fachprüfung: KI-Vervollständigung 2026-10-15
-
-Kopie der Arbeitsliste aus der Vervollständigung des Pflichtstoffs (Stand 2026-10-15,
-siehe `docs/12-content-produktionsplan.md`, Abschnitt 1.2). Die Liste nennt je
-Themengruppe die Fundstellen, Normen und Streitstände, die ein Fachprüfer gegen die
-Primärquelle verifizieren muss. Alle neuen Inhalte haben `status: in-pruefung` und
-`normzitate_geprueft: false`; sie dürfen erst nach dieser Prüfung auf `ki-freigegeben`
-bzw. `freigegeben` gesetzt werden.
-
+# Prüfliste für menschliche Fachprüfung (KI-Vervollständigung 2026-10-15)
+Alle neuen Themen: status in-pruefung, normzitate_geprueft false.
 
 ## Z1 BGB AT (zr-at-vertragsschluss, -willenserklaerung-willensmaengel, -form, -nichtigkeit-134-138, -arglist-drohung-123, -bedingung-befristung, -fristen-einwilligung-genehmigung)
 - Fundstellen prüfen: BGHZ 149, 129 (Internet-Auktion); BGHZ 91, 324 (Trierer Weinversteigerung); RGZ 99, 147 (Haakjöringsköd); BVerfGE 89, 214 (Bürgschaft)
@@ -132,3 +125,18 @@ bzw. `freigegeben` gesetzt werden.
 - § 356b II, §§ 489 I, 494 II/III, 359; § 358 IV Rückabwicklung
 - § 650 n. F., § 650m II, § 648a V, § 650h, Mängelrechte vor Abnahme; § 573c I, Anbietpflicht Eigenbedarf, § 569 III, § 558 Kappungsgrenze
 - gemischte Schenkung/unbenannte Zuwendung, § 2301, § 529 II; Angehörigenbürgschaft-Kriterien, Bürgschaft auf erstes Anfordern
+
+## Fachprüfung lr-01 (HB/HE/HH/MV/NI): korrigiert; offen: BremPolG §§ 5–7, 10; HSOG/HGO/HBO-Nummern; SOG HH, BezVG; SOG M-V §§ 13, 69–71; NKomVG; NBauO § 5/Eingriffsbefugnis (§ 79 entfernt); mv-fall-por-zweckveranlasser Sondernutzungsrecht; 10 Kurzkarten < 60 Wörter
+
+## Fachprüfung or-01: korrigiert; offen: Aufopferung/Schmerzensgeld, Verweisungsprivileg (Kasko), Kollegialgerichts-Richtlinie, § 426 analog, latenter Störer, ParlBG §§ 5, 8, Wahlrecht 2 BvF 1/23, NPD 6 Jahre, GEAS 06/2026, § 3a UWG, Elfes/BVerfGE 115, 166
+
+## Fachprüfung lr-03 (SL/SN/ST/TH): korrigiert (§ 3 ThürPAG entfernt, § 8 III Nr. 1 BauNVO); offen: SPolG §§ 4–6, 8; SOG LSA §§ 7, 8, 10, 13; ThürPAG §§ 7, 8, 10, 12; ThürOBG §§ 5, 10–12; § 12 KSVG; SächsGemO §§ 4, 14; Abstandsflächen-Normen; Genehmigungsfreistellung je Land; § 47 I Nr. 2 VwGO je Land
+
+## Fachprüfung sr-01: korrigiert (§ 239a Zwei-Personen-Verhältnis, § 261 subjektiv, Hausverbot/Stadionverbot, § 252 Vollendung u. a.); offen: § 261 I Nr. 4/Privileg/tätige Reue, § 241 I–IV, § 188, § 194 I 2, § 238, § 225/§ 28, § 231, § 252/§ 316a-Rspr., §§ 239a/b-Konkurrenz, 1 BvR 3080/09, RiStBV 234, Strafrahmen §§ 239, 239a, 305
+
+## Fachprüfung zr-00/zr-03: korrigiert (Internetauktion, § 129 II, § 311b, § 883 III, § 892 I 2, § 934 Alt. 2, § 1006, DSL u. a.); offen: Schwarzarbeit-Rspr., Angehörigenbürgschaft, KBS-Anfechtung, Zugangsvereitelung, Bereicherung Direktanspruch, § 619a, § 23 Nr. 1 GVG 10.000 € seit 1.1.2026, BGHZ 20, 88, Obhut-DSL, § 1193 II, §§ 939–941, § 767 II Aufrechnung
+
+## Fachprüfung or-00/or-02/sr-00: korrigiert (Art. 39, 58 S. 2, 87, 99 GG, § 32 III BVerfGG, § 214 BauGB, § 49 I Nr. 1, § 56 III, § 160, § 306e/f, 'Lederriemen' u. a.); offen: Recht auf Vergessen-Ausgänge, BVerfGE 153, 1; § 246e/§ 249 BauGB, § 3 II/§ 17 BauGB; Zitiergebot-Ausnahmen; Art. 87, 90, 109/115/143h GG n. F.; § 18 III VersG; Länder-VersG; BVerfGE 122, 342; BGHSt 36, 1; 40, 218; 47, 160; 35, 347; §§ 157, 158 III, 306e/f, 263a II; KCanG-Stand; § 265a-Entkriminalisierung?
+
+## Fachprüfung lr-00 (BB/BE/BW/BY): korrigiert (BayGO Vertretungsmacht, §§ 29/30 ASOG statt 18 ff., Platzhalter-norms entfernt u. a.); offen: PAG Art. 2, 10, 11 III, 53 ff., 87; BayGO Art. 21, 24; BayBO Art. 58, 59, 66; PolG BW §§ 5, 55, 60; LVwVG § 21; GemO BW §§ 11, 18 VI, 54; LBO BW §§ 51, 52 II, 55; BbgPolG/BbgOBG/BbgKVerf; ASOG Bln §§ 13–17, 29, 30; BremLBO § 6
+## Fachprüfung zr-02: korrigiert (§ 1975, Art. 21 EuErbVO, §§ 1643/1824/1850 ff., HGB n. F. §§ 105, 107, 124–130, 137, GbR §§ 715, 719–722, § 356 IV/V, § 356a u. a.); offen: Erfüllungstheorien, § 1365-Richtwerte, § 1359, Kürzungsmodell, XII ZR 8/21, Form Schuldbeitritt, § 31 analog GbR, Kindschaftsrechtsreform
