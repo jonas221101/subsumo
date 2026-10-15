@@ -13,8 +13,7 @@ topic:
 cards:
 - slug: ni-kr-selbstverwaltung
   type: norm
-  front: >-
-    Was gewährleistet die kommunale Selbstverwaltung in Niedersachsen und woraus folgt sie?
+  front: Was gewährleistet die kommunale Selbstverwaltung in Niedersachsen und woraus folgt sie?
   back: >-
     Die Gemeinden haben das Recht, alle Angelegenheiten der örtlichen Gemeinschaft im Rahmen der Gesetze
     in eigener Verantwortung zu regeln (Art. 28 Abs. 2 S. 1 GG; Art. 57 NV). Man unterscheidet die Rechtssubjektsgarantie,
@@ -34,28 +33,26 @@ cards:
 - slug: ni-kr-rastede
   type: rechtsprechung
   front: >-
-    Welchen Grundsatz hat das BVerfG in der Rastede-Entscheidung zur Aufgabenverteilung zwischen Gemeinden
-    und höheren Ebenen aufgestellt?
+    Wie ist die gesetzliche Verlagerung einer Gemeindeaufgabe auf Kreis- oder Landesebene am Rastede-Maßstab
+    zu prüfen?
   back: >-
-    Nach BVerfGE 79, 127 (Rastede) umfasst Art. 28 Abs. 2 S. 1 GG eine Zuständigkeitsvermutung zugunsten
-    der Gemeinden: Sie sind grundsätzlich für alle Angelegenheiten der örtlichen Gemeinschaft zuständig
-    (Universalität des Aufgabenbereichs). Der Entzug örtlicher Aufgaben und ihre Verlagerung auf eine
-    höhere Ebene ist nur aus Gründen des Gemeinwohls zulässig, insbesondere wenn eine ordnungsgemäße Aufgabenwahrnehmung
-    auf Gemeindeebene sonst nicht sichergestellt wäre; bloße Verwaltungsvereinfachung oder Zuständigkeitskonzentration
-    genügt nicht. Für den Kernbereich gilt eine absolute Schranke, für den Randbereich das Verhältnismäßigkeitsprinzip.
-    Für die Klausur: erst Betroffenheit des Schutzbereichs (örtliche Angelegenheit), dann Rechtfertigung
-    des Eingriffs prüfen.
+    Wird eine Aufgabe der örtlichen Gemeinschaft durch Gesetz der Gemeinde entzogen, ist der Schutzbereich
+    des Art. 28 Abs. 2 S. 1 GG und des Art. 57 NV eröffnet. Nach BVerfGE 79, 127 (Rastede) besteht eine
+    Zuständigkeitsvermutung zugunsten der Gemeinde. Der Entzug ist nur aus Gründen des Gemeinwohls zulässig,
+    insbesondere wenn eine ordnungsgemäße Aufgabenwahrnehmung auf Gemeindeebene sonst nicht gewährleistet
+    wäre; bloße Verwaltungsvereinfachung oder Wirtschaftlichkeitserwägungen genügen nicht. Im Kernbereich
+    gilt eine absolute Schranke, im Randbereich das Verhältnismäßigkeitsprinzip. Dem Gesetzgeber steht
+    bei der Einschätzung ein Spielraum zu, der gerichtlich nur eingeschränkt überprüfbar ist. Rechtsschutz:
+    Kommunalverfassungsbeschwerde nach Art. 93 Abs. 1 Nr. 4b GG oder landesverfassungsrechtliche Rechtsbehelfe.
   norms:
   - Art. 28 Abs. 2 S. 1 GG
   quellen:
-  - >-
-    Rechtsprechung: BVerfGE 79, 127 (Rastede)
+  - 'Rechtsprechung: BVerfGE 79, 127 (Rastede)'
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: ni-kr-organe
   type: norm
-  front: >-
-    Welche Organe hat die Kommune nach dem NKomVG und wie ist die Einheitsspitze ausgestaltet?
+  front: Welche Organe hat die Kommune nach dem NKomVG und wie ist die Einheitsspitze ausgestaltet?
   back: >-
     Das NKomVG folgt dem Modell der Einheitsspitze. Hauptorgane sind die Vertretung (Rat in Gemeinden
     und Städten, Kreistag im Landkreis; § 45 NKomVG), der Verwaltungsausschuss (§ 74 NKomVG) und die Hauptverwaltungsbeamtin
@@ -66,12 +63,9 @@ cards:
     die bestimmte Aufgaben für ihre Mitgliedsgemeinden wahrnimmt.
   norms:
   - Niedersächsisches Kommunalverfassungsgesetz (NKomVG)
-  - >-
-    § 45 NKomVG
-  - >-
-    § 74 NKomVG
-  - >-
-    § 80 NKomVG
+  - § 45 NKomVG
+  - § 74 NKomVG
+  - § 80 NKomVG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -89,20 +83,16 @@ cards:
     der laufenden Verwaltung und die Auftragsangelegenheiten zuständig. Die Abgrenzung wird in der Hauptsatzung
     konkretisiert. Ein Handeln des unzuständigen Organs macht die Entscheidung formell rechtswidrig.
   norms:
-  - >-
-    § 58 NKomVG
-  - >-
-    § 76 NKomVG
-  - >-
-    § 85 NKomVG
+  - § 58 NKomVG
+  - § 76 NKomVG
+  - § 85 NKomVG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: ni-kr-satzung
   type: definition
-  front: >-
-    Unter welchen Voraussetzungen ist eine gemeindliche Satzung in Niedersachsen rechtmäßig?
+  front: Unter welchen Voraussetzungen ist eine gemeindliche Satzung in Niedersachsen rechtmäßig?
   back: >-
     Eine Satzung ist eine von der Gemeinde im Rahmen ihrer Selbstverwaltung erlassene Rechtsnorm (Art.
     28 Abs. 2 GG). Prüfung: (1) Ermächtigungsgrundlage: Die allgemeine Satzungsbefugnis der Gemeindeordnung
@@ -114,16 +104,14 @@ cards:
     Normenkontrolle nach § 47 VwGO, soweit das Landesrecht sie vorsieht.
   norms:
   - Art. 28 Abs. 2 GG
-  - >-
-    § 47 VwGO
+  - § 47 VwGO
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: ni-kr-mitwirkungsverbot
   type: norm
-  front: >-
-    Wann gilt in Niedersachsen ein Mitwirkungsverbot für Ratsmitglieder?
+  front: Wann gilt in Niedersachsen ein Mitwirkungsverbot für Ratsmitglieder?
   back: >-
     Nach § 41 NKomVG dürfen Abgeordnete der Vertretung weder beraten noch abstimmen, wenn die Entscheidung
     ihnen selbst, einem Angehörigen (u. a. Ehegatten, Lebenspartner, Verwandte in gerader Linie und weitere
@@ -135,8 +123,7 @@ cards:
     Mitwirkung für das Abstimmungsergebnis ausschlaggebend war; Heilungs- und Unbeachtlichkeitsregeln
     sind zu beachten.
   norms:
-  - >-
-    § 41 NKomVG
+  - § 41 NKomVG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -176,8 +163,7 @@ cards:
     kann sich die Gemeinde mit der Anfechtungsklage wehren; ihre Klagebefugnis folgt aus der Selbstverwaltungsgarantie
     (Art. 28 Abs. 2 GG). Dagegen besteht kein Anspruch Dritter auf aufsichtsbehördliches Einschreiten.
   norms:
-  - >-
-    §§ 170 ff. NKomVG
+  - §§ 170 ff. NKomVG
   - Art. 28 Abs. 2 GG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -186,23 +172,20 @@ cards:
 - slug: ni-kr-kommunalverfassungsstreit
   type: definition
   front: >-
-    Was ist ein Kommunalverfassungsstreit und welche prozessualen Besonderheiten gelten?
+    Wie sind Klageart, Klagebefugnis und Beklagter im Streit eines Ratsmitglieds mit der Verwaltungsspitze
+    zu bestimmen?
   back: >-
-    Der Kommunalverfassungsstreit ist ein Innenrechtsstreit zwischen Organen oder Organteilen einer Gemeinde
-    (z. B. Ratsmitglied gegen Bürgermeister oder Vertretung) um organschaftliche Rechte und Pflichten.
-    Der Verwaltungsrechtsweg ist nach § 40 Abs. 1 VwGO eröffnet. Klageart ist mangels Verwaltungsakt die
-    Feststellungsklage (§ 43 VwGO) oder die allgemeine Leistungsklage (Unterlassung, Herausgabe). § 42
-    Abs. 2 VwGO gilt analog: Das Organ muss geltend machen, in eigenen organschaftlichen Rechten verletzt
-    zu sein; die Beteiligtenfähigkeit folgt aus § 61 Nr. 2 VwGO analog. Passivlegitimiert ist das Organ,
-    das die Rechte bestreitet, nicht die Gemeinde. Das allgemeine Rechtsschutzbedürfnis fehlt, wenn das
-    Organ nur objektive Rechtmäßigkeitskontrolle begehrt.
+    Verweigert die Hauptverwaltungsbeamtin einem Ratsmitglied etwa eine Auskunft, die dieses aus seinem
+    Mandat herleitet, liegt ein Kommunalverfassungsstreit vor. Der Rechtsweg ist nach § 40 Abs. 1 VwGO
+    eröffnet. Mangels Verwaltungsakt kommen die Feststellungsklage (§ 43 VwGO) oder die allgemeine Leistungsklage
+    auf Auskunft in Betracht. Analog § 42 Abs. 2 VwGO muss das Ratsmitglied die Verletzung eigener organschaftlicher
+    Rechte geltend machen; die Beteiligtenfähigkeit von Organen und Organteilen folgt aus § 61 Nr. 2 VwGO
+    analog. Beklagt wird das Organ bzw. der Amtsträger, der das Recht bestreitet, nicht die Gemeinde.
+    Das Rechtsschutzbedürfnis fehlt, wenn lediglich eine objektive Rechtmäßigkeitskontrolle begehrt wird.
   norms:
-  - >-
-    § 40 Abs. 1 VwGO
-  - >-
-    § 43 VwGO
-  - >-
-    § 61 Nr. 2 VwGO
+  - § 40 Abs. 1 VwGO
+  - § 43 VwGO
+  - § 61 Nr. 2 VwGO
   quellen:
   - VwGO, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -212,11 +195,9 @@ schemata:
   title: >-
     Rechtmäßigkeit eines Beschlusses der Gemeindevertretung nach dem Kommunalrecht von Niedersachsen
   norms:
-  - >-
-    § 41 NKomVG
+  - § 41 NKomVG
   - Art. 28 Abs. 2 GG
-  - >-
-    § 47 VwGO
+  - § 47 VwGO
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -226,16 +207,14 @@ schemata:
     - label: >-
         1. Zuständigkeit: Vertretung oder Verwaltungsspitze (Hauptsatzung, Gemeindeordnung), Verbandskompetenz
         der Gemeinde
-    - label: >-
-        2. Ordnungsgemäße Einberufung, Ladung, Öffentlichkeit der Sitzung, Beschlussfähigkeit
+    - label: 2. Ordnungsgemäße Einberufung, Ladung, Öffentlichkeit der Sitzung, Beschlussfähigkeit
     - label: 3. Mitwirkungsverbote
       hinweis: >-
         Klausurklassiker: unmittelbarer Vorteil oder Nachteil für das Mitglied oder Angehörige; Kausalität
         der Mitwirkung für das Abstimmungsergebnis prüfen.
       children:
       - label: a) Voraussetzungen des Mitwirkungsverbots (§ 41 NKomVG)
-      - label: >-
-          b) Rechtsfolge für Beschluss und Heilung/Unbeachtlichkeit nach Landesrecht
+      - label: b) Rechtsfolge für Beschluss und Heilung/Unbeachtlichkeit nach Landesrecht
     - label: 4. Erforderliche Mehrheit und Beschlussfassung
   - label: II. Materielle Rechtmäßigkeit
     children:
@@ -271,8 +250,7 @@ faelle:
     Mitbewerber M, dessen höheres Angebot nicht berücksichtigt wurde, hält den Beschluss für rechtswidrig.
   question: Ist der Beschluss der Vertretung rechtmäßig?
   steps:
-  - prompt: >-
-      Liegt ein Beschluss im Zuständigkeitsbereich der Vertretung vor?
+  - prompt: Liegt ein Beschluss im Zuständigkeitsbereich der Vertretung vor?
     erwartung: >-
       Ja: Nach der Hauptsatzung entscheidet der Rat über Grundstücksverkäufe dieser Größe; er war ordnungsgemäß
       geladen und beschlussfähig. Insoweit liegt kein formeller Mangel vor.
@@ -286,13 +264,12 @@ faelle:
       Der Beschluss ist fehlerhaft, wenn die Mitwirkung für das Abstimmungsergebnis ursächlich sein konnte.
       Hier wurde der Beschluss mit nur einer Stimme Mehrheit gefasst, sodass ohne die Stimme des befangenen
       Mitglieds keine Mehrheit bestanden hätte. Der Beschluss ist damit rechtswidrig bzw. unwirksam; Heilung
-      oder Unbeachtlichkeit nach Landesrecht (z. B. durch Fristablauf, Neubeschluss) ist zu prüfen und
-      liegt hier nicht vor.
+      oder Unbeachtlichkeit nach Landesrecht (z. B. durch Fristablauf, Neubeschluss) ist zu prüfen; dem
+      Sachverhalt sind dafür keine Anhaltspunkte zu entnehmen.
   expectation:
     pruefpunkte:
     - id: p1
-      label: >-
-        Zuständigkeit der Vertretung und ordnungsgemäße Beschlussfassung festgestellt
+      label: Zuständigkeit der Vertretung und ordnungsgemäße Beschlussfassung festgestellt
       weight: 1.0
       required: false
       keywords:
@@ -303,25 +280,21 @@ faelle:
       card_slugs:
       - ni-kr-zustaendigkeit
     - id: p2
-      label: >-
-        Mitwirkungsverbot (§ 41 NKomVG) wegen unmittelbaren Vorteils bejaht
+      label: Mitwirkungsverbot (§ 41 NKomVG) wegen unmittelbaren Vorteils bejaht
       weight: 3.0
       required: true
       norms:
-      - >-
-        § 41 NKomVG
+      - § 41 NKomVG
       keywords:
       - Mitwirkungsverbot
       - unmittelbarer Vorteil
       - persönliches Interesse
       - Befangenheit
-      - >-
-        § 41 NKomVG
+      - § 41 NKomVG
       card_slugs:
       - ni-kr-mitwirkungsverbot
     - id: p3
-      label: >-
-        Zurechnung des Interesses des Angehörigen bzw. des Unternehmens
+      label: Zurechnung des Interesses des Angehörigen bzw. des Unternehmens
       weight: 1.5
       required: false
       keywords:
@@ -332,8 +305,7 @@ faelle:
       card_slugs:
       - ni-kr-mitwirkungsverbot
     - id: p4
-      label: >-
-        Kausalität: ohne die Stimme des Befangenen keine Mehrheit; Beschluss fehlerhaft
+      label: 'Kausalität: ohne die Stimme des Befangenen keine Mehrheit; Beschluss fehlerhaft'
       weight: 3.0
       required: true
       keywords:

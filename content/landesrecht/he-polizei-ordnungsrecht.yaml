@@ -25,7 +25,7 @@ cards:
   norms:
   - § 11 HSOG
   - §§ 12 ff. HSOG
-  quellen: &id001
+  quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
@@ -43,7 +43,9 @@ cards:
   norms:
   - § 2 Nr. 1 HSOG
   - § 11 HSOG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-por-schutzgueter
   type: definition
@@ -59,7 +61,9 @@ cards:
     zu begründen.
   norms:
   - § 11 HSOG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-por-standardmassnahmen
   type: norm
@@ -76,7 +80,9 @@ cards:
   - § 31 HSOG
   - § 32 HSOG
   - Art. 104 Abs. 2 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-por-verhaeltnismaessigkeit
   type: definition
@@ -93,12 +99,13 @@ cards:
   - § 3 HSOG
   - § 4 HSOG
   - § 114 VwGO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-por-anscheinsgefahr
   type: streitstand
-  front: >-
-    Anscheinsgefahr, Putativgefahr und Gefahrenverdacht - was ist rechtmäßig?
+  front: Anscheinsgefahr, Putativgefahr und Gefahrenverdacht - was ist rechtmäßig?
   back: >-
     Anscheinsgefahr: Nach objektiver Betrachtung ex ante bestehen hinreichende Anhaltspunkte für eine
     Gefahr, die sich später als nicht bestehend erweist. Das Einschreiten ist rechtmäßig, weil die Gefahrenprognose
@@ -111,12 +118,13 @@ cards:
   - § 11 HSOG
   - § 6 HSOG
   - § 9 HSOG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-por-stoerer
   type: norm
-  front: >-
-    Wo sind Verhaltensstörer, Zustandsstörer und Nichtverantwortliche im HSOG geregelt?
+  front: Wo sind Verhaltensstörer, Zustandsstörer und Nichtverantwortliche im HSOG geregelt?
   back: >-
     Verhaltensverantwortlichkeit: § 6 HSOG (Verursachung der Gefahr durch eigenes Verhalten oder durch
     Personen, die zu beaufsichtigen sind). Zustandsverantwortlichkeit: § 7 HSOG (Eigentümer und Inhaber
@@ -130,12 +138,13 @@ cards:
   - § 6 HSOG
   - § 7 HSOG
   - § 9 HSOG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-por-stoererauswahl
   type: streitstand
-  front: >-
-    Nach welchen Kriterien wird zwischen mehreren Verantwortlichen ausgewählt?
+  front: Nach welchen Kriterien wird zwischen mehreren Verantwortlichen ausgewählt?
   back: >-
     Bei mehreren Verantwortlichen entscheidet die Behörde nach pflichtgemäßem Ermessen (Auswahlermessen).
     Maßgebend ist die effektive Gefahrenabwehr: Heranzuziehen ist, wer die Gefahr am schnellsten und wirksamsten
@@ -148,7 +157,9 @@ cards:
   - § 6 HSOG
   - § 7 HSOG
   - § 114 VwGO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-por-zustaendigkeit
   type: definition
@@ -164,7 +175,9 @@ cards:
   norms:
   - § 1 HSOG
   - § 46 HVwVfG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-por-vollstreckung
   type: norm
@@ -180,17 +193,19 @@ cards:
   norms:
   - HessVwVG
   - HSOG, Vorschriften zum Verwaltungszwang
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-por-kosten-rechtsschutz
   type: definition
   front: Welche Ersatz- und Rechtsschutzmöglichkeiten bestehen in Hessen?
   back: >-
     Nichtverantwortliche, die nach § 9 HSOG in Anspruch genommen werden, haben einen Entschädigungsanspruch
-    (Schadensausgleich); dieser besteht auch bei rechtswidrigen Maßnahmen gegen Nichtverantwortliche.
-    Daneben bestehen Amtshaftung (§ 839 BGB, Art. 34 GG) und Aufopferung. Rechtsschutz: Anfechtungsklage
-    gegen Verwaltungsakte (§ 42 Abs. 1 Var. 1 VwGO); ein Vorverfahren nach § 68 VwGO ist in Hessen für
-    viele Verfahren nur nach Maßgabe des Landesrechts erforderlich. Nach Erledigung ist die Fortsetzungsfeststellungsklage
+    (Schadensausgleich); Näheres regeln die Schadensausgleichsvorschriften des HSOG. Daneben bestehen
+    Amtshaftung (§ 839 BGB, Art. 34 GG) und Aufopferung. Rechtsschutz: Anfechtungsklage gegen Verwaltungsakte
+    (§ 42 Abs. 1 Var. 1 VwGO); ob ein Vorverfahren nach § 68 VwGO erforderlich ist, richtet sich nach
+    dem hessischen Landesrecht, das bestimmte Verfahren davon ausnimmt. Nach Erledigung ist die Fortsetzungsfeststellungsklage
     analog § 113 Abs. 1 S. 4 VwGO statthaft. Vorläufiger Rechtsschutz: § 80 Abs. 5 VwGO. Freiheitsentziehungen
     sind richterlich zu überprüfen (Art. 104 GG).
   norms:
@@ -199,7 +214,9 @@ cards:
   - Art. 34 GG
   - § 113 Abs. 1 S. 4 VwGO
   - Art. 104 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-por-aufbau
   type: schema_step
@@ -213,7 +230,9 @@ cards:
   - § 11 HSOG
   - §§ 6, 7, 9 HSOG
   - § 28 HVwVfG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 schemata:
 - slug: he-schema-por-massnahme
@@ -221,21 +240,21 @@ schemata:
   norms:
   - § 11 HSOG
   - §§ 6, 7, 9 HSOG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   steps:
   - label: I. Ermächtigungsgrundlage
     hinweis: Standardmaßnahme (§§ 12 ff. HSOG) vor Generalklausel (§ 11 HSOG).
   - label: II. Formelle Rechtmäßigkeit
     children:
-    - label: >-
-        1. Zuständigkeit: Gefahrenabwehrbehörde; Polizeibehörde im Eilfall (§ 1 Abs. 4 HSOG)
+    - label: '1. Zuständigkeit: Gefahrenabwehrbehörde; Polizeibehörde im Eilfall (§ 1 Abs. 4 HSOG)'
     - label: '2. Verfahren: Anhörung, § 28 HVwVfG'
     - label: 3. Form
   - label: III. Materielle Rechtmäßigkeit
     children:
     - label: '1. Tatbestand: Schutzgut, konkrete Gefahr, Prognose ex ante'
-    - label: >-
-        2. Adressat: Verhaltensstörer § 6, Zustandsstörer § 7, Nichtverantwortlicher § 9
+    - label: '2. Adressat: Verhaltensstörer § 6, Zustandsstörer § 7, Nichtverantwortlicher § 9'
     - label: '3. Ermessen: Auswahlermessen, Verhältnismäßigkeit'
   - label: IV. Vollstreckung
     hinweis: 'HessVwVG: Androhung, Festsetzung oder Sofortvollzug.'
@@ -316,8 +335,7 @@ faelle:
       card_slugs:
       - he-por-stoerer
     - id: p4
-      label: >-
-        Störerauswahl: Effektivität der Gefahrenabwehr, kein Vorrang des Verhaltensstörers
+      label: 'Störerauswahl: Effektivität der Gefahrenabwehr, kein Vorrang des Verhaltensstörers'
       weight: 3.0
       required: true
       keywords:

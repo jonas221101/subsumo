@@ -27,14 +27,13 @@ cards:
   - §§ 50, 51 HGO
   - §§ 65, 66 HGO
   - § 70 HGO
-  quellen: &id001
+  quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-kom-zustaendigkeit
   type: definition
-  front: >-
-    Wie sind die Zuständigkeiten zwischen Gemeindevertretung und Gemeindevorstand abgegrenzt?
+  front: Wie sind die Zuständigkeiten zwischen Gemeindevertretung und Gemeindevorstand abgegrenzt?
   back: >-
     Die Gemeindevertretung entscheidet über alle Angelegenheiten der Gemeinde, soweit sie nicht kraft
     Gesetzes dem Gemeindevorstand obliegen (§ 51 HGO); ihr sind wesentliche Entscheidungen wie Satzungen,
@@ -46,7 +45,9 @@ cards:
   - § 51 HGO
   - § 66 HGO
   - § 71 HGO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-kom-verpflichtung
   type: norm
@@ -65,7 +66,9 @@ cards:
   - § 71 HGO
   - § 177 BGB
   - § 242 BGB
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-kom-befangenheit
   type: norm
@@ -76,13 +79,15 @@ cards:
     wenn die Entscheidung ihm selbst, einem Angehörigen oder einer von ihm vertretenen natürlichen oder
     juristischen Person einen unmittelbaren Vorteil oder Nachteil bringen kann. Es genügt die konkrete
     Möglichkeit eines Vorteils; auf tatsächliche Beeinflussung kommt es nicht an. Nicht erfasst ist die
-    bloße Gruppenbetroffenheit. Das Mitglied hat den Widerstreit anzuzeigen und den Sitzungsraum zu verlassen.
+    bloße Gruppenbetroffenheit. Das Mitglied darf nach Maßgabe des § 25 HGO weder beraten noch abstimmen.
     Die Mitwirkung eines Ausgeschlossenen macht den Beschluss rechtswidrig; ob und wie die Folgen eingeschränkt
     werden (Kausalität für das Ergebnis, Heilung), bestimmt sich nach den Absätzen des § 25 HGO. Bei Prüfungen
     ist die Stimmenmehrheit ohne den Ausgeschlossenen zu berechnen.
   norms:
   - § 25 HGO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-kom-satzung
   type: norm
@@ -93,13 +98,16 @@ cards:
     eine gesetzliche Ermächtigung (Wesentlichkeitstheorie). Formell sind Beschluss der Gemeindevertretung,
     Ausfertigung und öffentliche Bekanntmachung nötig; Verfahrens- und Formfehler können nach Maßgabe
     des § 5 HGO unbeachtlich werden, wenn sie nicht rechtzeitig gerügt werden, nicht aber Fehler bei Ausfertigung
-    und Bekanntmachung. Materielle Fehler werden nicht geheilt. Normenkontrolle: § 47 Abs. 1 Nr. 2 VwGO
-    i. V. m. Landesrecht.
+    und Bekanntmachung. Materielle Fehler werden nicht geheilt. Rechtsschutz: Inzidentkontrolle; die Normenkontrolle
+    nach § 47 Abs. 1 Nr. 2 VwGO setzt eine landesrechtliche Bestimmung voraus, bei Satzungen nach dem
+    BauGB gilt § 47 Abs. 1 Nr. 1 VwGO.
   norms:
   - § 5 HGO
   - Art. 28 Abs. 2 GG
   - § 47 VwGO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-kom-einrichtung
   type: norm
@@ -109,49 +117,56 @@ cards:
     Die Gemeinde schafft die für das wirtschaftliche, soziale und kulturelle Wohl ihrer Einwohner erforderlichen
     öffentlichen Einrichtungen (§ 19 HGO). Die Einwohner sind im Rahmen der bestehenden Vorschriften berechtigt,
     diese Einrichtungen zu benutzen (§ 20 HGO). Der Anspruch ist durch Widmung und Kapazität begrenzt;
-    Gleichheitssatz und bei Parteien § 5 PartG begrenzen die Auswahl. Ein Ausschluss wegen der politischen
-    Richtung ist nur bei Verbot der Partei zulässig. Das Ob der Zulassung ist öffentlich-rechtlich (Verwaltungsakt),
-    das Wie kann privatrechtlich geregelt werden (Zweistufentheorie). Auswärtige und juristische Personen
-    haben Anspruch nur im Rahmen der Widmung.
+    Gleichheitssatz und bei Parteien § 5 PartG begrenzen die Auswahl. Allein die politische Richtung einer
+    nicht verbotenen Partei rechtfertigt keinen Ausschluss. Das Ob der Zulassung ist öffentlich-rechtlich
+    (Verwaltungsakt), das Wie kann privatrechtlich geregelt werden (Zweistufentheorie). Auswärtige und
+    juristische Personen haben Anspruch nur im Rahmen der Widmung.
   norms:
   - § 19 HGO
   - § 20 HGO
   - Art. 3 Abs. 1 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-kom-aufsicht
   type: definition
   front: Welche Aufsichtsformen und -mittel kennt die HGO?
   back: >-
     Die Gemeinden unterstehen der Rechtsaufsicht des Landes bei Selbstverwaltungsangelegenheiten und der
-    Fachaufsicht bei Weisungsaufgaben (§§ 135 ff. HGO). Aufsichtsbehörden sind der Landrat, das Regierungspräsidium
-    und das Ministerium des Innern. Die Aufsicht prüft die Rechtmäßigkeit, nicht die Zweckmäßigkeit. Mittel
-    sind Informationsrecht, Beanstandung rechtswidriger Beschlüsse, Anordnung, Ersatzvornahme und Bestellung
-    eines Beauftragten. Das Einschreiten steht im Ermessen; Dritte haben keinen Anspruch auf aufsichtliches
-    Einschreiten. Die Gemeinde kann sich gegen Aufsichtsmaßnahmen auf Art. 28 Abs. 2 GG berufen und klagen.
+    Fachaufsicht bei Weisungsaufgaben (§§ 135 ff. HGO). Aufsichtsbehörden sind je nach Gemeindeart und
+    Aufsichtsstufe der Landrat, das Regierungspräsidium und das Ministerium des Innern. Die Aufsicht prüft
+    die Rechtmäßigkeit, nicht die Zweckmäßigkeit. Mittel sind Informationsrecht, Beanstandung rechtswidriger
+    Beschlüsse, Anordnung, Ersatzvornahme und Bestellung eines Beauftragten. Das Einschreiten steht im
+    Ermessen; Dritte haben keinen Anspruch auf aufsichtliches Einschreiten. Die Gemeinde kann sich gegen
+    Aufsichtsmaßnahmen auf Art. 28 Abs. 2 GG berufen und klagen.
   norms:
   - §§ 135 ff. HGO
   - Art. 28 Abs. 2 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-kom-kommunalverfassungsstreit
   type: streitstand
   front: >-
-    Wie wird der Kommunalverfassungsstreit im Verwaltungsprozess behandelt?
+    Wie sind Zulässigkeit und richtiger Beklagter im hessischen Kommunalverfassungsstreit zu prüfen?
   back: >-
-    Streitigkeiten zwischen Organen oder Organteilen der Gemeinde (Fraktion, Gemeindevertreter, Gemeindevorstand,
-    Bürgermeister) sind nichtverfassungsrechtliche öffentlich-rechtliche Streitigkeiten; der Verwaltungsrechtsweg
-    nach § 40 Abs. 1 VwGO ist eröffnet. Klageart: meist Feststellungs- oder Leistungsklage, da das Organhandeln
-    keine Außenwirkung hat und kein Verwaltungsakt ist. Klagebefugnis: nach der h. M. entsprechend § 42
-    Abs. 2 VwGO bei möglicher Verletzung eigener Organrechte; das Organ darf nicht Rechte der Gemeinde
-    oder anderer Organe geltend machen. Beteiligtenfähigkeit der Organteile: § 61 Nr. 2 VwGO analog. Beklagter
-    ist das Organ, dessen Handeln gerügt wird. Gegenansicht: keine Analogie, aber Rechtsschutzbedürfnis
-    ausreichend.
+    Streitet etwa eine Fraktion mit dem Vorsitzenden der Stadtverordnetenversammlung um Rederecht oder
+    Tagesordnung, ist der Verwaltungsrechtsweg als nichtverfassungsrechtliche Streitigkeit nach § 40 Abs.
+    1 VwGO eröffnet. Mangels Verwaltungsakt kommen Feststellungs- oder allgemeine Leistungsklage in Betracht.
+    Die Fraktion ist als Organteil analog § 61 Nr. 2 VwGO beteiligtenfähig; nach h. M. muss sie analog
+    § 42 Abs. 2 VwGO die Verletzung eigener organschaftlicher Rechte geltend machen, nicht Rechte der
+    Gemeinde oder anderer Organe. Beklagter ist der Amtsträger oder das Organ, das das Recht bestreitet.
+    Die Gegenansicht verzichtet auf die Analogie und verlangt ein allgemeines Rechtsschutzbedürfnis. Ein
+    Vorverfahren findet mangels Verwaltungsakt nicht statt.
   norms:
   - § 40 Abs. 1 VwGO
   - § 42 Abs. 2 VwGO analog
   - § 61 VwGO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-kom-aufbau
   type: schema_step
@@ -164,7 +179,9 @@ cards:
   norms:
   - § 71 HGO
   - § 177 BGB
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 schemata:
 - slug: he-schema-kom-vertretung
@@ -172,14 +189,15 @@ schemata:
   norms:
   - § 71 HGO
   - § 177 BGB
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   steps:
   - label: I. Vertragsschluss
     hinweis: Angebot und Annahme; Vertrag der Gemeinde mit Privaten.
   - label: II. Vertretung der Gemeinde
     children:
-    - label: >-
-        1. Handelnder: Bürgermeister oder Vertreter, Gemeindevorstand als Organ
+    - label: '1. Handelnder: Bürgermeister oder Vertreter, Gemeindevorstand als Organ'
     - label: 2. Innenzuständigkeit (Gemeindevertretung vs. Gemeindevorstand)
     - label: >-
         3. Form: Schriftform und handschriftliche Unterschrift von zwei Vertretungsberechtigten, § 71
@@ -213,9 +231,11 @@ faelle:
       Gemeinde durch B.
   - prompt: Hat B Vertretungsmacht?
     erwartung: >-
-      Nur bei Einhaltung der Formvorschrift des § 71 HGO. B hat allein unterzeichnet; es fehlt die Unterschrift
-      eines weiteren Mitglieds des Gemeindevorstands, und es liegt kein Geschäft der laufenden Verwaltung
-      vor. Die Form ist verletzt, B hatte keine Vertretungsmacht.
+      Die Vertretungsmacht des Bürgermeisters bemisst sich nach der Formvorschrift des § 71 HGO. Erforderlich
+      sind Schriftform und zwei Unterschriften, nämlich die handschriftliche Unterschrift des Bürgermeisters
+      und die eines weiteren Mitglieds des Gemeindevorstands, sofern kein Geschäft der laufenden Verwaltung
+      vorliegt. B hat allein unterzeichnet und die Form nicht eingehalten. Damit liegt ein Formverstoß
+      vor, und B hatte deshalb keine Vertretungsmacht.
   - prompt: Folgen des Formverstoßes?
     erwartung: >-
       Der Vertrag ist schwebend unwirksam (§ 177 BGB analog) und wird erst durch formgerechte Genehmigung
@@ -243,8 +263,7 @@ faelle:
       card_slugs:
       - he-kom-verpflichtung
     - id: p2
-      label: >-
-        Formverstoß erkannt (Schriftform, zwei Unterschriften; keine laufende Verwaltung)
+      label: Formverstoß erkannt (Schriftform, zwei Unterschriften; keine laufende Verwaltung)
       weight: 2.0
       required: true
       keywords:
@@ -256,8 +275,7 @@ faelle:
       card_slugs:
       - he-kom-verpflichtung
     - id: p3
-      label: >-
-        Rechtsfolge: schwebende Unwirksamkeit, § 177 BGB analog, Genehmigung fehlt
+      label: 'Rechtsfolge: schwebende Unwirksamkeit, § 177 BGB analog, Genehmigung fehlt'
       weight: 2.5
       required: true
       keywords:
