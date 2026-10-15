@@ -1,0 +1,268 @@
+topic:
+  slug: he-bauordnungsrecht
+  area: oeffentliches-recht
+  title: 'Bauordnungsrecht Hessen: Hessische Bauordnung (HBO)'
+  parent: oeffentliches-recht
+  bundesland: HE
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: he-bau-verfahren
+  type: norm
+  front: Welche Verfahrensarten kennt die HBO?
+  back: >-
+    Die HBO unterscheidet verfahrensfreie Bauvorhaben (§ 63 HBO), die Genehmigungsfreistellung (§ 64 HBO)
+    für Vorhaben im Geltungsbereich qualifizierter Bebauungspläne, das vereinfachte Baugenehmigungsverfahren
+    (§ 65 HBO) und das reguläre Baugenehmigungsverfahren (insbesondere für Sonderbauten). Verfahrensfreiheit
+    entbindet nur vom Genehmigungsverfahren, nicht von der Pflicht zur Einhaltung des materiellen Baurechts.
+    Im vereinfachten Verfahren ist die Prüfung der Bauaufsichtsbehörde auf bestimmte Vorschriften beschränkt,
+    das Bauplanungsrecht (§§ 29 ff. BauGB) gehört dazu. Die Baugenehmigung ist zu erteilen, wenn dem Vorhaben
+    keine öffentlich-rechtlichen Vorschriften entgegenstehen.
+  norms:
+  - § 63 HBO
+  - § 64 HBO
+  - § 65 HBO
+  - §§ 29 ff. BauGB
+  quellen: &id001
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: he-bau-genehmigungspflicht
+  type: definition
+  front: Wann bedarf ein Vorhaben in Hessen der Baugenehmigung?
+  back: >-
+    Errichtung, Änderung, Nutzungsänderung und Abbruch baulicher Anlagen bedürfen grundsätzlich der Baugenehmigung,
+    soweit nicht Ausnahmen (verfahrensfrei, Genehmigungsfreistellung) greifen. Bauliche Anlagen sind mit
+    dem Erdboden verbundene, aus Bauprodukten hergestellte Anlagen. Die Nutzungsänderung ist genehmigungspflichtig,
+    wenn für die neue Nutzung andere oder weitergehende öffentlich-rechtliche Anforderungen gelten. Erst
+    wenn der Ausnahmetatbestand nicht greift, ist der Genehmigungsantrag zu stellen. Wer ohne Genehmigung
+    baut, handelt formell illegal.
+  norms:
+  - § 63 HBO
+  - § 65 HBO
+  quellen: *id001
+  stand: 2026-10
+- slug: he-bau-genehmigung
+  type: definition
+  front: Welche Rechtsnatur und Wirkungen hat die Baugenehmigung?
+  back: >-
+    Die Baugenehmigung ist ein feststellender Verwaltungsakt mit verfügendem Element: Sie stellt die Vereinbarkeit
+    des Vorhabens mit dem öffentlichen Baurecht fest und gestattet die Ausführung. Sie wird unbeschadet
+    der privaten Rechte Dritter erteilt. Aus Art. 14 Abs. 1 GG (Baufreiheit) folgt ein Anspruch auf Erteilung,
+    wenn das Vorhaben genehmigungsfähig ist. Sie begründet Bestandsschutz. Eine rechtswidrige Genehmigung
+    kann nach § 48 HVwVfG zurückgenommen werden. Nachbarn können sie nur anfechten, wenn sie in nachbarschützenden
+    Rechten verletzt sind.
+  norms:
+  - Art. 14 Abs. 1 GG
+  - § 48 HVwVfG
+  quellen: *id001
+  stand: 2026-10
+- slug: he-bau-abstandsflaechen
+  type: norm
+  front: Wie werden Abstandsflächen nach der HBO bemessen?
+  back: >-
+    Vor Außenwänden von Gebäuden sind Abstandsflächen von oberirdischen Gebäuden freizuhalten (§ 6 HBO).
+    Die Tiefe beträgt grundsätzlich 0,4 H (H = Wandhöhe), mindestens 3 m. Die Abstandsflächen müssen auf
+    dem Grundstück selbst liegen und dürfen sich nicht überdecken; für die planungsrechtlich zulässige
+    Grenzbebauung bestehen Ausnahmen. Abweichungen von bauordnungsrechtlichen Anforderungen sind unter
+    Würdigung der nachbarlichen Interessen möglich. Die Vorschriften dienen Belichtung, Belüftung, Brandschutz
+    und sozialem Frieden und sind nachbarschützend.
+  norms:
+  - § 6 HBO
+  quellen: *id001
+  stand: 2026-10
+- slug: he-bau-nachbarbeteiligung
+  type: norm
+  front: >-
+    Wie werden Nachbarn beteiligt, und welche Bedeutung hat die Zustimmung?
+  back: >-
+    Die Bauaufsichtsbehörde beteiligt die Nachbarn im Genehmigungsverfahren (HBO, Vorschriften über die
+    Nachbarbeteiligung) und gibt ihnen Gelegenheit zur Stellungnahme. Haben Nachbarn dem Bauvorhaben schriftlich
+    zugestimmt, sind Einwendungen ausgeschlossen. Die Beteiligung dient der Information und beeinflusst
+    die Rechtsbehelfsfrist: Wird dem Nachbarn die Genehmigung nicht bekannt gegeben, läuft die Frist nicht;
+    bei Kenntnis oder Kennenmüssen kann das Rügerecht nach Treu und Glauben verwirkt sein. Ein Verstoß
+    gegen die Beteiligung allein führt nicht zur Aufhebung; maßgeblich ist die Verletzung nachbarschützender
+    Normen.
+  norms:
+  - HBO (Nachbarbeteiligung)
+  quellen: *id001
+  stand: 2026-10
+- slug: he-bau-nachbarschutz
+  type: definition
+  front: Wann ist die Nachbarklage gegen eine Baugenehmigung begründet?
+  back: >-
+    Die Anfechtungsklage des Nachbarn ist begründet, wenn die Baugenehmigung rechtswidrig ist und den
+    Nachbarn in eigenen Rechten verletzt (§ 113 Abs. 1 S. 1 VwGO). Maßgeblich ist die Schutznormtheorie.
+    Nachbarschützend sind die Abstandsflächenvorschriften (§ 6 HBO), der Gebietserhaltungsanspruch (Festsetzung
+    der Baugebietsart, §§ 2 ff. BauNVO) und das Rücksichtnahmegebot (§ 15 Abs. 1 BauNVO; § 34 BauGB).
+    Ein Verstoß gegen rein objektives Baurecht genügt nicht. Widerspruch und Klage haben keine aufschiebende
+    Wirkung (§ 212a Abs. 1 BauGB); vorläufiger Rechtsschutz nach §§ 80a, 80 Abs. 5 VwGO.
+  norms:
+  - § 113 Abs. 1 S. 1 VwGO
+  - § 6 HBO
+  - § 15 BauNVO
+  - § 212a Abs. 1 BauGB
+  quellen: *id001
+  stand: 2026-10
+- slug: he-bau-massnahmen
+  type: norm
+  front: >-
+    Welche bauaufsichtlichen Maßnahmen gibt es bei rechtswidrigen Bauvorhaben?
+  back: >-
+    Die Bauaufsichtsbehörde überwacht die Einhaltung des öffentlichen Baurechts und trifft nach pflichtgemäßem
+    Ermessen die erforderlichen Maßnahmen (Generalklausel der Bauaufsicht in der HBO). Typisch sind Baueinstellung,
+    Nutzungsuntersagung und Beseitigungsverfügung. Die Baueinstellung ist als vorläufige Maßnahme schon
+    bei formeller Illegalität zulässig. Die Beseitigung setzt nach h. M. formelle und materielle Illegalität
+    voraus, weil ein genehmigungsfähiges Bauwerk nicht beseitigt werden darf. Für die Nutzungsuntersagung
+    genügt nach der Rechtsprechung die formelle Illegalität, wenn die Nutzung nicht offensichtlich genehmigungsfähig
+    ist. Adressat ist der Verantwortliche; die Anordnung muss verhältnismäßig sein und den Gleichheitssatz
+    beachten.
+  norms:
+  - HBO (Aufgaben und Befugnisse der Bauaufsichtsbehörde)
+  - Art. 14 Abs. 1 GG
+  quellen: *id001
+  stand: 2026-10
+- slug: he-bau-abbruch
+  type: streitstand
+  front: Setzt eine Beseitigungsverfügung materielle Illegalität voraus?
+  back: >-
+    Nach h. M. ist für die Beseitigung neben der formellen auch die materielle Illegalität erforderlich:
+    Ein ohne Genehmigung errichtetes, aber genehmigungsfähiges Bauwerk darf nicht beseitigt werden, weil
+    der Abbruch unverhältnismäßig wäre; der Bauherr ist stattdessen zum Bauantrag aufzufordern. Die Gegenansicht
+    stellt auf die formelle Illegalität ab: Das Genehmigungsverfahren dürfe nicht umgangen werden (Vollzugsargument).
+    Sie überzeugt für den Abbruch nicht, weil der Eingriff in Art. 14 GG schwer wiegt und nach Genehmigung
+    rechtmäßig wäre. Bei der Nutzungsuntersagung wird die formelle Illegalität eher als ausreichend angesehen,
+    weil sie aufhebbar ist.
+  norms:
+  - Art. 14 Abs. 1 GG
+  quellen: *id001
+  stand: 2026-10
+- slug: he-bau-aufbau
+  type: schema_step
+  front: 'Aufbau: bauaufsichtliche Beseitigungsverfügung'
+  back: >-
+    I. Ermächtigungsgrundlage (Generalklausel der Bauaufsicht, HBO). II. Formelle Rechtmäßigkeit: Zuständigkeit
+    der Bauaufsichtsbehörde, Anhörung (§ 28 HVwVfG), Form. III. Materielle Rechtmäßigkeit: 1. Rechtswidriger
+    Zustand (formelle und materielle Illegalität), 2. richtiger Adressat, 3. Ermessen und Verhältnismäßigkeit,
+    Gleichbehandlung. IV. Vollstreckung.
+  norms:
+  - § 28 HVwVfG
+  quellen: *id001
+  stand: 2026-10
+schemata:
+- slug: he-schema-bau-beseitigung
+  title: Prüfung einer Beseitigungsverfügung nach der HBO
+  norms:
+  - § 28 HVwVfG
+  - Art. 14 Abs. 1 GG
+  quellen: *id001
+  steps:
+  - label: I. Ermächtigungsgrundlage
+    hinweis: Generalklausel der Bauaufsicht der HBO.
+  - label: II. Formelle Rechtmäßigkeit
+    children:
+    - label: '1. Zuständigkeit: Bauaufsichtsbehörde'
+    - label: 2. Anhörung, § 28 HVwVfG
+    - label: 3. Form
+  - label: III. Materielle Rechtmäßigkeit
+    children:
+    - label: 1. Rechtswidriger Zustand
+      hinweis: >-
+        Formelle Illegalität (Genehmigung erforderlich und fehlt) und materielle Illegalität (Vorhaben
+        nicht genehmigungsfähig).
+    - label: '2. Adressat: Bauherr, Eigentümer'
+    - label: 3. Ermessen und Verhältnismäßigkeit; Gleichbehandlung
+  - label: IV. Vollstreckung
+    hinweis: HessVwVG; Rechtsschutz nach § 80 Abs. 5 VwGO.
+  stand: 2026-10
+faelle:
+- slug: he-fall-bau-beseitigung
+  title: Der ungenehmigte Wintergarten
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  facts: >-
+    E errichtet an seinem Wohnhaus ohne Baugenehmigung einen Wintergarten, der genehmigungsbedürftig ist.
+    Das Grundstück liegt in einem Gebiet mit Bebauungsplan, der Wohnnutzung und eine Bebauung in dem Umfang
+    zulässt; der Wintergarten hält alle Abstandsflächen und die Festsetzungen des Bebauungsplans ein und
+    verstößt gegen keine bauordnungsrechtliche Vorschrift. Die Bauaufsichtsbehörde erfährt davon, hört
+    E an und ordnet dann die Beseitigung des Wintergartens an, weil dieser ohne Genehmigung errichtet
+    worden sei. E hält die Verfügung für rechtswidrig.
+  question: Ist die Beseitigungsverfügung rechtmäßig?
+  steps:
+  - prompt: Auf welche Rechtsgrundlage stützt sich die Verfügung?
+    erwartung: >-
+      Auf die Generalklausel der Bauaufsicht in der HBO; die Bauaufsichtsbehörde ist zuständig, E wurde
+      angehört (§ 28 HVwVfG).
+  - prompt: Liegt formelle Illegalität vor?
+    erwartung: >-
+      Ja. Der Wintergarten ist genehmigungsbedürftig und wurde ohne Genehmigung errichtet.
+  - prompt: Liegt materielle Illegalität vor?
+    erwartung: >-
+      Nein. Der Wintergarten verstößt weder gegen Bauplanungsrecht noch gegen Bauordnungsrecht (Abstandsflächen
+      eingehalten); er wäre genehmigungsfähig, E hätte Anspruch auf Erteilung der Baugenehmigung.
+  - prompt: Folge?
+    erwartung: >-
+      Die Beseitigung setzt nach h. M. materielle Illegalität voraus; sie ist unverhältnismäßig, weil
+      die Behörde E auf das Bauantragsverfahren verweisen kann (milderes Mittel). Die Verfügung ist rechtswidrig;
+      zulässig wäre die Aufforderung zum Bauantrag oder ggf. Baueinstellung.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Formelle Illegalität (genehmigungsbedürftig, keine Genehmigung) erkannt
+      weight: 1.5
+      required: true
+      keywords:
+      - formelle Illegalität
+      - genehmigungsbedürftig
+      - ohne Baugenehmigung
+      - keine Genehmigung
+      card_slugs:
+      - he-bau-genehmigungspflicht
+      - he-bau-abbruch
+    - id: p2
+      label: 'Materielle Illegalität verneint: Vorhaben genehmigungsfähig'
+      weight: 3.0
+      required: true
+      keywords:
+      - materielle Illegalität
+      - genehmigungsfähig
+      - Anspruch auf Baugenehmigung
+      - keine Verstöße gegen Baurecht
+      - Abstandsflächen eingehalten
+      card_slugs:
+      - he-bau-abbruch
+    - id: p3
+      label: >-
+        Beseitigung nur bei formeller und materieller Illegalität; Verhältnismäßigkeit
+      weight: 2.5
+      required: true
+      keywords:
+      - formelle und materielle Illegalität
+      - Verhältnismäßigkeit
+      - Beseitigungsverfügung
+      - unverhältnismäßig
+      - milderes Mittel
+      card_slugs:
+      - he-bau-massnahmen
+      - he-bau-abbruch
+    - id: p4
+      label: >-
+        Alternativen genannt: Aufforderung zum Bauantrag, Baueinstellung; Streitstand zum Vollzugsargument
+      weight: 1.0
+      required: false
+      keywords:
+      - Bauantrag
+      - Baueinstellung
+      - Vollzugsargument
+      - Aufforderung zum Bauantrag
+      card_slugs:
+      - he-bau-abbruch
+  stand: 2026-10
