@@ -1,0 +1,400 @@
+topic:
+  slug: zr-zpo-erkenntnisverfahren
+  area: zivilrecht
+  title: 'ZPO: Erkenntnisverfahren, Zulässigkeit der Klage, Versäumnisurteil (in Grundzügen;
+    Prüfungsumfang je Bundesland unterschiedlich)'
+  parent: zivilrecht
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-zpo-erk-zulaessigkeit-ueberblick
+  type: schema_step
+  front: Welche Zulässigkeitsvoraussetzungen sind bei einer Klage im Zivilprozess zu prüfen?
+  back: 'Vor der Begründetheit ist die Zulässigkeit der Klage zu prüfen. Zu den Sachurteilsvoraussetzungen
+    zählen: (1) deutsche Gerichtsbarkeit und Rechtsweg zu den ordentlichen Gerichten (§ 13
+    GVG); (2) Zuständigkeit des angerufenen Gerichts, und zwar sachlich (§§ 23, 71 GVG), örtlich
+    (§§ 12 ff. ZPO) und gegebenenfalls funktional; (3) ordnungsgemäße Klageerhebung durch
+    Zustellung einer Klageschrift (§§ 253, 261 ZPO), mit bestimmtem Antrag (§ 253 Abs. 2 Nr.
+    2 ZPO); (4) Partei- und Prozessfähigkeit sowie ordnungsgemäße Vertretung (§§ 50 ff. ZPO);
+    (5) Prozessführungsbefugnis; (6) Postulationsfähigkeit, also Anwaltszwang vor Landgerichten
+    und höheren Gerichten (§ 78 Abs. 1 ZPO); (7) allgemeines Rechtsschutzbedürfnis; (8) keine
+    entgegenstehende Rechtshängigkeit (§ 261 Abs. 3 Nr. 1 ZPO) und keine entgegenstehende
+    Rechtskraft (§ 322 ZPO). Fehlt eine Voraussetzung, ist die Klage durch Prozessurteil als
+    unzulässig abzuweisen; ein Sachurteil darf dann nicht ergehen.'
+  norms:
+  - § 13 GVG
+  - § 253 ZPO
+  - § 261 Abs. 3 ZPO
+  - § 78 Abs. 1 ZPO
+  - § 322 ZPO
+  quellen:
+  - ZPO und GVG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-erk-zustaendigkeit
+  type: norm
+  front: Wie bestimmt sich die sachliche und örtliche Zuständigkeit (§§ 23, 71 GVG, §§ 12
+    ff. ZPO)?
+  back: Sachlich zuständig ist das Amtsgericht für Streitigkeiten bis zum Zuständigkeitsstreitwert
+    des § 23 Nr. 1 GVG (zuletzt 5.000 Euro; eine Anhebung auf 10.000 Euro war zum 1.1.2026
+    vorgesehen; aktuelle Gesetzesfassung prüfen) und unabhängig vom Wert für Wohnraummietsachen
+    (§ 23 Nr. 2 Buchst. a GVG), im Übrigen das Landgericht (§ 71 Abs. 1 GVG). Örtlich ist
+    grundsätzlich der allgemeine Gerichtsstand des Beklagten am Wohnsitz maßgeblich (§§ 12,
+    13 ZPO), bei juristischen Personen am Sitz (§ 17 ZPO). Besondere Gerichtsstände sind insbesondere
+    der Erfüllungsort für Streitigkeiten aus einem Vertragsverhältnis (§ 29 ZPO; für Geldschulden
+    der Wohnsitz des Schuldners, §§ 269, 270 Abs. 4 BGB) und der Ort der unerlaubten Handlung
+    (§ 32 ZPO, Handlungs- und Erfolgsort). Der Kläger kann zwischen mehreren Gerichtsständen
+    wählen (§ 35 ZPO). Ausschließlich zuständig ist unter anderem das Gericht der belegenen
+    Sache bei dinglichen Klagen über Grundstücke (§ 24 ZPO). Gerichtsstandsvereinbarungen
+    sind nur eingeschränkt zulässig, insbesondere unter Kaufleuten (§ 38 ZPO); bei Unzuständigkeit
+    wird auf Antrag verwiesen (§ 281 ZPO).
+  norms:
+  - § 23 GVG
+  - § 71 GVG
+  - § 12 ZPO
+  - § 13 ZPO
+  - § 29 ZPO
+  - § 32 ZPO
+  - § 38 ZPO
+  - § 281 ZPO
+  quellen:
+  - ZPO und GVG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-erk-partei-prozessfaehigkeit
+  type: norm
+  front: Was versteht die ZPO unter Parteifähigkeit, Prozessfähigkeit und Prozessführungsbefugnis
+    (§§ 50 bis 52 ZPO)?
+  back: Parteifähig ist, wer rechtsfähig ist (§ 50 Abs. 1 ZPO), also natürliche und juristische
+    Personen sowie rechtsfähige Personengesellschaften wie OHG, KG und die rechtsfähige GbR.
+    Ein nicht rechtsfähiger Verein kann verklagt werden (§ 50 Abs. 2 ZPO). Prozessfähig ist,
+    wer sich durch Verträge verpflichten kann (§ 52 ZPO), also im Wesentlichen wer voll geschäftsfähig
+    ist; Minderjährige und Geschäftsunfähige handeln durch den gesetzlichen Vertreter. Die
+    Prozessführungsbefugnis berechtigt, über das streitige Recht im eigenen Namen einen Prozess
+    zu führen; sie liegt regelmäßig beim Rechtsinhaber. Ausnahmsweise kann ein Dritter ein
+    fremdes Recht im eigenen Namen geltend machen, nämlich als gesetzlicher Prozessstandschafter
+    (zum Beispiel Testamentsvollstrecker) oder als gewillkürter Prozessstandschafter, wenn
+    der Rechtsinhaber ihn ermächtigt und er ein eigenes schutzwürdiges Interesse an der Geltendmachung
+    hat. Die Partei- und Prozessfähigkeit sind in jeder Lage des Verfahrens von Amts wegen
+    zu prüfen.
+  norms:
+  - § 50 ZPO
+  - § 51 ZPO
+  - § 52 ZPO
+  quellen:
+  - ZPO und GVG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-erk-klagearten-rechtsschutzbeduerfnis
+  type: definition
+  front: Welche Klagearten gibt es und wann ist eine Feststellungsklage zulässig (§ 256 ZPO)?
+  back: Die Leistungsklage zielt auf Verurteilung zu einem Tun, Dulden oder Unterlassen; sie
+    ist die häufigste Klageart, auch als Klage auf künftige Leistung nach §§ 257 bis 259 ZPO
+    möglich. Die Feststellungsklage ist auf die Feststellung des Bestehens oder Nichtbestehens
+    eines Rechtsverhältnisses (oder der Echtheit einer Urkunde) gerichtet und setzt ein rechtliches
+    Interesse an der alsbaldigen Feststellung voraus (Feststellungsinteresse, § 256 Abs. 1
+    ZPO). Es fehlt, wenn der Kläger auf Leistung klagen kann; die Leistungsklage hat Vorrang,
+    weil sie vollstreckbar ist. Die Gestaltungsklage erstrebt die Änderung einer Rechtslage
+    durch Urteil, etwa die Vollstreckungsabwehrklage nach § 767 ZPO oder die Drittwiderspruchsklage
+    nach § 771 ZPO; sie ist nur in den gesetzlich bestimmten Fällen zulässig. Das allgemeine
+    Rechtsschutzbedürfnis fehlt, wenn ein einfacherer, billigerer Weg zum Ziel führt oder
+    die Rechtsverfolgung missbräuchlich ist.
+  norms:
+  - § 256 Abs. 1 ZPO
+  - § 257 ZPO
+  - § 767 ZPO
+  - § 771 ZPO
+  quellen:
+  - ZPO und GVG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-erk-klageaenderung
+  type: norm
+  front: Wann ist eine Klageänderung zulässig (§§ 263, 264 ZPO)?
+  back: Eine Klageänderung liegt vor, wenn der Streitgegenstand nach Eintritt der Rechtshängigkeit
+    geändert wird, also der Klageantrag oder der zugrunde liegende Lebenssachverhalt. Sie
+    ist zulässig, wenn der Beklagte einwilligt oder das Gericht die Änderung für sachdienlich
+    hält (§ 263 ZPO); die Einwilligung wird vermutet, wenn sich der Beklagte, ohne zu widersprechen,
+    in einem Schriftsatz oder in der mündlichen Verhandlung auf die geänderte Klage eingelassen
+    hat (§ 267 ZPO). Keine Klageänderung sind die Ergänzung oder Berichtigung tatsächlicher
+    oder rechtlicher Anführungen (§ 264 Nr. 1 ZPO), die Erweiterung oder Beschränkung des
+    Klageantrags in der Hauptsache oder in Bezug auf Nebenforderungen ohne Änderung des Klagegrundes
+    (§ 264 Nr. 2 ZPO) und der Übergang auf einen anderen Gegenstand oder das Interesse wegen
+    einer später eingetretenen Veränderung (§ 264 Nr. 3 ZPO). Die Entscheidung über die Sachdienlichkeit
+    ist nicht selbständig anfechtbar.
+  norms:
+  - § 263 ZPO
+  - § 264 ZPO
+  - § 267 ZPO
+  quellen:
+  - ZPO und GVG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-erk-streitgegenstand
+  type: streitstand
+  front: Wie wird der Streitgegenstand bestimmt (zweigliedriger oder eingliedriger Begriff)?
+  back: Nach Rechtsprechung und h. M. bestimmt sich der Streitgegenstand zweigliedrig aus
+    dem Klageantrag (der begehrten Rechtsfolge) und dem Lebenssachverhalt (Klagegrund), aus
+    dem die Rechtsfolge hergeleitet wird. Danach liegt eine Klageänderung auch dann vor, wenn
+    der Kläger bei gleichem Antrag auf einen anderen Lebenssachverhalt umstellt, und die materielle
+    Rechtskraft (§ 322 ZPO) erstreckt sich auf den gesamten Lebenssachverhalt, auch wenn mehrere
+    Anspruchsgrundlagen in Betracht kommen. Die Gegenauffassung (eingliedriger Streitgegenstandsbegriff)
+    stellt allein auf den Antrag ab, dessen Reichweite sich aus dem materiellen Recht ergebe;
+    sie hält den Lebenssachverhalt für entbehrlich, weil der Antrag den Streitgegenstand hinreichend
+    kennzeichne. Der zweigliedrige Begriff überzeugt, weil er die Identität des Streitstoffs
+    klarer bestimmt, auch bei Rechtshängigkeit und Rechtskraft. Für Klausuren ist der zweigliedrige
+    Begriff maßgeblich.
+  norms:
+  - § 253 Abs. 2 Nr. 2 ZPO
+  - § 261 Abs. 3 ZPO
+  - § 322 ZPO
+  - § 263 ZPO
+  quellen:
+  - ZPO und GVG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-erk-versaeumnisurteil
+  type: norm
+  front: Unter welchen Voraussetzungen ergeht ein Versäumnisurteil und wie wehrt sich der
+    Beklagte (§§ 330 ff. ZPO)?
+  back: 'Erscheint der Kläger nicht, ergeht auf Antrag des Beklagten ein klageabweisendes
+    Versäumnisurteil (§ 330 ZPO). Erscheint der Beklagte nicht, ergeht auf Antrag des Klägers
+    ein Versäumnisurteil gegen ihn (§ 331 Abs. 1 ZPO), wenn die Klage zulässig und schlüssig
+    ist: das tatsächliche mündliche Vorbringen des Klägers gilt als zugestanden, rechtlich
+    muss die Klage aber den Antrag tragen, andernfalls wird sie abgewiesen (§ 331 Abs. 2 ZPO).
+    Weitere Voraussetzungen sind die ordnungsgemäße und rechtzeitige Ladung (§ 335 Abs. 1
+    Nr. 2 ZPO). Gegen das Versäumnisurteil ist der Einspruch statthaft (§ 338 ZPO), der innerhalb
+    von zwei Wochen ab Zustellung des Urteils einzulegen ist (Notfrist, § 339 Abs. 1 ZPO),
+    durch Einspruchsschrift (§ 340 ZPO). Ein unzulässiger Einspruch wird verworfen (§ 341
+    ZPO), ein zulässiger versetzt den Prozess in die Lage vor der Säumnis zurück (§ 342 ZPO).
+    Bleibt die Partei im Einspruchstermin erneut säumig, ergeht ein zweites Versäumnisurteil
+    (§ 345 ZPO), gegen das nur eingeschränkte Rechtsmittel besteht (§ 514 Abs. 2 ZPO).'
+  norms:
+  - § 330 ZPO
+  - § 331 ZPO
+  - § 338 ZPO
+  - § 339 Abs. 1 ZPO
+  - § 342 ZPO
+  - § 345 ZPO
+  quellen:
+  - ZPO und GVG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-erk-erledigung-91a
+  type: norm
+  front: Wie wirkt eine Erledigung der Hauptsache (§ 91a ZPO)?
+  back: Erklären die Parteien den Rechtsstreit in der Hauptsache übereinstimmend für erledigt,
+    entscheidet das Gericht nur noch über die Kosten durch Beschluss nach billigem Ermessen
+    unter Berücksichtigung des bisherigen Sach- und Streitstands (§ 91a Abs. 1 S. 1 ZPO);
+    regelmäßig trägt die Kosten, wer ohne das erledigende Ereignis voraussichtlich unterlegen
+    wäre. Der Erklärung des Beklagten gleich steht das Ausbleiben eines Widerspruchs innerhalb
+    von zwei Wochen (§ 91a Abs. 1 S. 2 ZPO). Erklärt nur der Kläger die Erledigung, widerspricht
+    der Beklagte aber, handelt es sich nach h. M. um eine Klageänderung (privilegiert nach
+    § 264 Nr. 2 ZPO analog) hin zu dem Antrag, die Erledigung der Hauptsache festzustellen.
+    Dieser Antrag ist begründet, wenn die Klage bis zum erledigenden Ereignis zulässig und
+    begründet war und das Ereignis nach Rechtshängigkeit eingetreten ist; die Kosten richten
+    sich dann nach § 91 ZPO. Ein einseitiges Erledigungsereignis vor Rechtshängigkeit führt
+    nicht zur Begründetheit des Feststellungsantrags.
+  norms:
+  - § 91a Abs. 1 ZPO
+  - § 91 ZPO
+  - § 264 ZPO
+  quellen:
+  - ZPO und GVG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-erk-beweislast
+  type: definition
+  front: Wer trägt die Beweislast im Zivilprozess und welches Beweismaß gilt?
+  back: 'Die Beweislast regelt, wer die Folgen der Unaufklärbarkeit einer Tatsache trägt (non
+    liquet). Nach der Normentheorie (Rosenberg) hat jede Partei die Voraussetzungen der ihr
+    günstigen Norm zu beweisen: Der Anspruchsteller die rechtsbegründenden Tatsachen, der
+    Anspruchsgegner die rechtshindernden, rechtsvernichtenden und rechtshemmenden Tatsachen
+    (zum Beispiel Erfüllung, Anfechtung, Verjährung). Gesetzliche Vermutungen (§ 292 ZPO)
+    verschieben die Beweislast; zulässig ist der Beweis des Gegenteils. Vom Beweis ist die
+    Darlegungslast zu trennen; bei Informationsgefälle trifft den Gegner eine sekundäre Darlegungslast.
+    Das Beweismaß ist die volle richterliche Überzeugung (§ 286 ZPO), für die Höhe eines Schadens
+    genügt Schätzung (§ 287 ZPO). Zugestandene Tatsachen sind nicht beweisbedürftig (§ 288
+    ZPO); nicht bestrittene Tatsachen gelten als zugestanden (§ 138 Abs. 3 ZPO). Der Strengbeweis
+    kennt Zeugen, Sachverständige, Augenschein, Urkunden und Parteivernehmung.'
+  norms:
+  - § 286 ZPO
+  - § 287 ZPO
+  - § 288 ZPO
+  - § 292 ZPO
+  - § 138 Abs. 3 ZPO
+  quellen:
+  - ZPO und GVG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-erk-prozessmaximen
+  type: definition
+  front: Welche Verfahrensgrundsätze prägen den Zivilprozess?
+  back: 'Der Zivilprozess ist von der Dispositionsmaxime geprägt: Die Parteien bestimmen über
+    Einleitung, Gegenstand und Beendigung des Verfahrens; das Gericht darf einer Partei nichts
+    zusprechen, was nicht beantragt ist (§ 308 Abs. 1 ZPO, Bindung an den Antrag). Nach dem
+    Beibringungs- oder Verhandlungsgrundsatz tragen die Parteien den Tatsachenstoff vor und
+    benennen die Beweismittel; das Gericht verwertet nur den vorgetragenen Stoff und prüft
+    nicht von Amts wegen, ob Tatsachen vorliegen. Dem entspricht die Wahrheitspflicht der
+    Parteien (§ 138 Abs. 1 ZPO) und die richterliche Hinweispflicht (§ 139 ZPO). Weitere Grundsätze
+    sind Mündlichkeit (§ 128 Abs. 1 ZPO), Unmittelbarkeit der Beweisaufnahme (§ 355 ZPO) und
+    Öffentlichkeit (§ 169 GVG). Die Zulässigkeitsvoraussetzungen der Klage sind dagegen grundsätzlich
+    von Amts wegen zu prüfen; die örtliche Zuständigkeit wird in Vermögensstreitigkeiten allerdings
+    durch rügelose Einlassung begründet (§ 39 ZPO).'
+  norms:
+  - § 308 Abs. 1 ZPO
+  - § 138 ZPO
+  - § 139 ZPO
+  - § 128 ZPO
+  quellen:
+  - ZPO und GVG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: zr-schema-zpo-zulaessigkeit
+  title: Zulässigkeit der Klage
+  norms:
+  - § 253 ZPO
+  - § 261 ZPO
+  - § 78 ZPO
+  quellen:
+  - ZPO und GVG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Rechtsweg und Gerichtsbarkeit, § 13 GVG
+  - label: II. Zuständigkeit
+    hinweis: Bei Unzuständigkeit Verweisung auf Antrag, § 281 ZPO.
+    children:
+    - label: 1. Sachlich, §§ 23, 71 GVG
+    - label: 2. Örtlich, §§ 12 ff. ZPO (allgemeiner und besonderer Gerichtsstand, Wahlrecht
+        § 35 ZPO)
+    - label: 3. Ausschließliche Gerichtsstände vorrangig
+  - label: III. Ordnungsgemäße Klageerhebung
+    children:
+    - label: 1. Klageschrift mit bestimmtem Antrag, § 253 Abs. 2 ZPO
+    - label: 2. Zustellung, Rechtshängigkeit, § 261 ZPO
+  - label: IV. Parteien
+    children:
+    - label: 1. Parteifähigkeit, § 50 ZPO
+    - label: 2. Prozessfähigkeit, § 52 ZPO
+    - label: 3. Prozessführungsbefugnis
+    - label: 4. Postulationsfähigkeit, § 78 ZPO
+  - label: V. Rechtsschutzbedürfnis
+    hinweis: Bei Feststellungsklage zusätzlich Feststellungsinteresse, § 256 Abs. 1 ZPO; Vorrang
+      der Leistungsklage.
+  - label: VI. Keine entgegenstehende Rechtshängigkeit oder Rechtskraft, §§ 261 Abs. 3 Nr.
+      1, 322 ZPO
+faelle:
+- slug: zr-fall-zpo-kaufpreisklage
+  title: Die Kaufpreisklage und das Versäumnisurteil
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - ZPO und GVG, amtliche Fassung
+  facts: Der in Köln wohnende K verkauft dem in München wohnenden B privat einen Oldtimer
+    für 20.000 Euro. B zahlt nicht. K lässt sich von Rechtsanwalt R vertreten und klagt auf
+    Zahlung von 20.000 Euro vor dem Landgericht München I. Zum Termin zur mündlichen Verhandlung,
+    zu dem B ordnungsgemäß und rechtzeitig geladen war, erscheint B nicht. K beantragt Versäumnisurteil;
+    das Gericht erlässt es antragsgemäß. Das Versäumnisurteil wird B am Montag, den 2. März
+    2026, zugestellt. B lässt durch seinen Rechtsanwalt am 20. März 2026 Einspruch einlegen,
+    ohne Wiedereinsetzungsgründe vorzutragen.
+  question: War die Klage zulässig, durfte das Versäumnisurteil ergehen, und hat der Einspruch
+    des B Erfolg?
+  steps:
+  - prompt: Ist das Landgericht München I sachlich und örtlich zuständig?
+    erwartung: 'Sachlich: Der Streitwert von 20.000 Euro übersteigt die Grenze des § 23 Nr.
+      1 GVG, damit ist das Landgericht zuständig (§ 71 Abs. 1 GVG). Örtlich: B hat in München
+      seinen Wohnsitz, allgemeiner Gerichtsstand nach §§ 12, 13 ZPO; zudem Erfüllungsort der
+      Geldschuld am Wohnsitz des Schuldners (§ 29 ZPO i. V. m. §§ 269, 270 Abs. 4 BGB).'
+  - prompt: Sind die übrigen Zulässigkeitsvoraussetzungen erfüllt?
+    erwartung: K und B sind parteifähig und prozessfähig (§§ 50, 52 ZPO). Die Postulationsfähigkeit
+      ist durch die Vertretung durch Rechtsanwalt R gewahrt (§ 78 Abs. 1 ZPO). Der Antrag
+      ist bestimmt (§ 253 Abs. 2 Nr. 2 ZPO). Die Klage ist zulässig.
+  - prompt: Durfte das Versäumnisurteil ergehen?
+    erwartung: Ja. Nach § 331 Abs. 1 ZPO ergeht es auf Antrag des Klägers gegen den im Termin
+      nicht erschienenen Beklagten, wenn die Klage zulässig und schlüssig ist. Die Ladung
+      war ordnungsgemäß und rechtzeitig (§ 335 Abs. 1 Nr. 2 ZPO). Das Tatsachenvorbringen
+      des K (Kaufvertrag, Nichtzahlung) gilt als zugestanden und trägt den Antrag aus § 433
+      Abs. 2 BGB.
+  - prompt: Hat der Einspruch des B Erfolg?
+    erwartung: Nein. Der Einspruch muss binnen zwei Wochen ab Zustellung eingelegt werden
+      (§ 339 Abs. 1 ZPO, Notfrist). Die Frist begann am 2. März 2026 und endete am 16. März
+      2026. Der Einspruch vom 20. März 2026 ist verspätet und wird als unzulässig verworfen
+      (§ 341 Abs. 1 ZPO); Wiedereinsetzung kommt mangels Vortrags nicht in Betracht (§ 233
+      ZPO). Das Versäumnisurteil wird rechtskräftig.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Sachliche und örtliche Zuständigkeit des Landgerichts München I
+      weight: 2.0
+      required: true
+      keywords:
+      - sachliche Zuständigkeit
+      - örtliche Zuständigkeit
+      - § 71 Abs. 1 GVG
+      - allgemeiner Gerichtsstand
+      - § 13 ZPO
+      - § 29 ZPO
+      card_slugs:
+      - zr-zpo-erk-zustaendigkeit
+      - zr-zpo-erk-zulaessigkeit-ueberblick
+    - id: p2
+      label: 'Übrige Zulässigkeit: Parteifähigkeit, Prozessfähigkeit, Anwaltszwang'
+      weight: 1.0
+      required: false
+      keywords:
+      - Parteifähigkeit
+      - Prozessfähigkeit
+      - Anwaltszwang
+      - § 78 ZPO
+      - Postulationsfähigkeit
+      card_slugs:
+      - zr-zpo-erk-partei-prozessfaehigkeit
+    - id: p3
+      label: Voraussetzungen des Versäumnisurteils nach § 331 ZPO (Säumnis, Antrag, Ladung,
+        Schlüssigkeit)
+      weight: 3.0
+      required: true
+      norms:
+      - § 331 ZPO
+      keywords:
+      - § 331 Abs. 1 ZPO
+      - Versäumnisurteil
+      - Säumnis
+      - Schlüssigkeit
+      - zugestanden
+      - ordnungsgemäße Ladung
+      card_slugs:
+      - zr-zpo-erk-versaeumnisurteil
+    - id: p4
+      label: Einspruchsfrist von zwei Wochen nach § 339 Abs. 1 ZPO und Fristberechnung
+      weight: 3.0
+      required: true
+      norms:
+      - § 339 Abs. 1 ZPO
+      keywords:
+      - § 339 Abs. 1 ZPO
+      - zwei Wochen
+      - Notfrist
+      - Zustellung
+      - verspätet
+      - Einspruch unzulässig
+      card_slugs:
+      - zr-zpo-erk-versaeumnisurteil
+    - id: p5
+      label: 'Rechtsfolge: Verwerfung des Einspruchs und Rechtskraft, keine Wiedereinsetzung'
+      weight: 1.0
+      required: false
+      keywords:
+      - § 341 ZPO
+      - Verwerfung des Einspruchs
+      - Wiedereinsetzung
+      - § 233 ZPO
+      - rechtskräftig
+      card_slugs:
+      - zr-zpo-erk-versaeumnisurteil

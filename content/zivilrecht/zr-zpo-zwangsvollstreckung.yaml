@@ -1,0 +1,464 @@
+topic:
+  slug: zr-zpo-zwangsvollstreckung
+  area: zivilrecht
+  title: 'ZPO: Zwangsvollstreckung und Vollstreckungsrechtsbehelfe (in Grundzügen; Prüfungsumfang
+    je Bundesland unterschiedlich)'
+  parent: zivilrecht
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-zpo-zv-voraussetzungen
+  type: definition
+  front: Welche allgemeinen Voraussetzungen hat die Zwangsvollstreckung (Titel, Klausel, Zustellung)?
+  back: 'Die Zwangsvollstreckung setzt drei Dinge voraus. Erstens einen vollstreckbaren Titel:
+    Endurteile sind vollstreckbar, wenn sie rechtskräftig oder für vorläufig vollstreckbar
+    erklärt sind (§ 704 ZPO); weitere Titel nennt § 794 Abs. 1 ZPO, zum Beispiel der gerichtliche
+    Vergleich (Nr. 1), der Vollstreckungsbescheid (Nr. 4) und die notarielle Urkunde mit Unterwerfung
+    unter die sofortige Zwangsvollstreckung (Nr. 5). Zweitens die Vollstreckungsklausel: Die
+    Zwangsvollstreckung erfolgt auf Grund einer vollstreckbaren Ausfertigung (§ 724 Abs. 1
+    ZPO); bei Rechtsnachfolge ist der Titel umzuschreiben (§ 727 ZPO). Drittens die Zustellung
+    des Titels spätestens bei Beginn der Vollstreckung (§ 750 Abs. 1 ZPO). Bei vorläufiger
+    Vollstreckbarkeit gegen Sicherheit muss diese geleistet und nachgewiesen sein (§ 751 Abs.
+    2 ZPO, §§ 709 ff. ZPO). Materielle Einwendungen gegen den Anspruch prüft das Vollstreckungsorgan
+    nicht; sie sind mit der Klage nach § 767 ZPO geltend zu machen. Zudem sind die allgemeinen
+    Prozessvoraussetzungen der Vollstreckung zu beachten, etwa Partei- und Prozessfähigkeit.'
+  norms:
+  - § 704 ZPO
+  - § 794 Abs. 1 ZPO
+  - § 724 ZPO
+  - § 750 Abs. 1 ZPO
+  - § 751 Abs. 2 ZPO
+  quellen:
+  - ZPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-zv-vollstreckungsorgane
+  type: definition
+  front: Welche Vollstreckungsorgane gibt es und wofür sind sie zuständig?
+  back: Die Zwangsvollstreckung wegen Geldforderungen in bewegliche körperliche Sachen führt
+    der Gerichtsvollzieher durch (§ 753 ZPO, Pfändung nach § 808 ZPO). Für die Vollstreckung
+    in Forderungen und andere Vermögensrechte ist das Vollstreckungsgericht, also das Amtsgericht,
+    zuständig (§ 828 Abs. 1 ZPO, § 764 ZPO). Die Zwangsvollstreckung in das unbewegliche Vermögen
+    erfolgt durch Eintragung einer Zwangshypothek (§ 867 ZPO, Grundbuchamt) sowie durch Zwangsversteigerung
+    und Zwangsverwaltung (§ 869 ZPO, ZVG; Vollstreckungsgericht). Die Erwirkung von Handlungen,
+    Duldungen und Unterlassungen obliegt dem Prozessgericht des ersten Rechtszugs (§§ 887,
+    888, 890 ZPO). Die Herausgabevollstreckung wegen beweglicher Sachen führt der Gerichtsvollzieher
+    durch (§ 883 ZPO). Für Rechtsbehelfe ist grundsätzlich das Vollstreckungsgericht zuständig
+    (§ 764 Abs. 1, § 766 ZPO).
+  norms:
+  - § 753 ZPO
+  - § 764 ZPO
+  - § 828 ZPO
+  - § 867 ZPO
+  - § 887 ZPO
+  quellen:
+  - ZPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-zv-pfaendung-bewegliche-sachen
+  type: norm
+  front: Wie läuft die Pfändung beweglicher Sachen ab (§§ 808 ff. ZPO)?
+  back: Die Pfändung körperlicher Sachen, die sich im Gewahrsam des Schuldners befinden, erfolgt
+    dadurch, dass der Gerichtsvollzieher sie in Besitz nimmt (§ 808 Abs. 1 ZPO). Bleiben die
+    Sachen im Gewahrsam des Schuldners, ist die Pfändung nur wirksam, wenn sie durch Anlegung
+    von Siegeln oder auf sonstige Weise ersichtlich gemacht wird (§ 808 Abs. 2 S. 2 ZPO).
+    Befindet sich die Sache im Gewahrsam eines herausgabebereiten Dritten oder des Gläubigers,
+    ist die Pfändung ebenfalls zulässig (§ 809 ZPO). Der Gerichtsvollzieher prüft nicht, wem
+    die Sache gehört; maßgeblich ist der Gewahrsam des Schuldners. Gegenüber Ehegatten gilt
+    die Gewahrsamsvermutung des § 739 ZPO, verbunden mit der Eigentumsvermutung des § 1362
+    BGB. Es darf nicht mehr gepfändet werden, als zur Befriedigung des Gläubigers und zur
+    Deckung der Kosten erforderlich ist (§ 803 Abs. 1 S. 2 ZPO), und eine Pfändung, von der
+    sich kein Überschuss über die Kosten erwarten lässt, unterbleibt (§ 803 Abs. 2 ZPO). Durch
+    die Pfändung erlangt der Gläubiger ein Pfandrecht an der Sache (§ 804 Abs. 1 ZPO).
+  norms:
+  - § 808 Abs. 1 ZPO
+  - § 808 Abs. 2 ZPO
+  - § 809 ZPO
+  - § 803 ZPO
+  - § 804 ZPO
+  - § 739 ZPO
+  quellen:
+  - ZPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-zv-pfaendungspfandrecht-theorien
+  type: streitstand
+  front: Welche Rechtsnatur hat das Pfändungspfandrecht (§ 804 ZPO)?
+  back: 'Mit der wirksamen Pfändung entsteht zunächst die Verstrickung, also die hoheitliche
+    Beschlagnahme der Sache, die dem Schuldner die Verfügungsgewalt entzieht. Streitig ist,
+    ob und unter welchen Voraussetzungen zusätzlich ein Pfändungspfandrecht entsteht (§ 804
+    ZPO). Nach der öffentlich-rechtlichen Theorie ist das Pfandrecht ausschließlich Wirkung
+    der staatlichen Verstrickung; nach der privatrechtlichen Theorie entsteht es wie ein rechtsgeschäftliches
+    Pfandrecht nur, wenn Forderung besteht und die Sache dem Schuldner gehört. Die h. M. folgt
+    der gemischten Theorie: Die Verstrickung folgt öffentlichem Recht; das Pfändungspfandrecht
+    entsteht zusätzlich als privatrechtliches Pfandrecht, aber nur, wenn die Sache dem Schuldner
+    gehört und die titulierte Forderung besteht. Bei der Pfändung einer fremden Sache entsteht
+    daher kein Pfandrecht, wohl aber die Verstrickung, gegen die sich der Eigentümer mit der
+    Klage nach § 771 ZPO wehrt. Wird die Sache später Eigentum des Schuldners, entsteht das
+    Pfandrecht nach dieser Ansicht dann.'
+  norms:
+  - § 804 ZPO
+  - § 808 ZPO
+  - § 771 ZPO
+  quellen:
+  - ZPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-zv-unpfaendbarkeit
+  type: norm
+  front: Welche Sachen sind unpfändbar (§ 811 ZPO)?
+  back: Bestimmte Sachen sind aus sozialen Gründen der Pfändung entzogen (§ 811 Abs. 1 ZPO).
+    Dazu gehören insbesondere die dem persönlichen Gebrauch oder dem Haushalt dienenden Sachen,
+    namentlich Kleidungsstücke, Wäsche, Betten, Haus- und Küchengeräte, soweit der Schuldner
+    ihrer zu einer seiner Berufstätigkeit und seiner Verschuldung angemessenen, bescheidenen
+    Lebens- und Haushaltsführung bedarf (§ 811 Abs. 1 Nr. 1 ZPO), sowie bei Personen, die
+    aus ihrer körperlichen oder geistigen Arbeit ihren Erwerb ziehen, die zur Fortsetzung
+    dieser Erwerbstätigkeit erforderlichen Gegenstände (§ 811 Abs. 1 Nr. 5 ZPO). Die Unpfändbarkeit
+    ist von Amts wegen zu beachten; ein Verstoß ist mit der Erinnerung nach § 766 ZPO rügbar.
+    Der Schuldner kann nicht im Voraus auf den Pfändungsschutz verzichten. Eine unzulässige
+    Pfändung bleibt wirksam, bis sie aufgehoben ist (Verstrickung). Gläubiger können in bestimmten
+    Fällen die Austauschpfändung beantragen (§ 811a ZPO). Bei sittenwidriger Härte ist ein
+    Vollstreckungsschutzantrag nach § 765a ZPO möglich.
+  norms:
+  - § 811 Abs. 1 ZPO
+  - § 811a ZPO
+  - § 765a ZPO
+  - § 766 ZPO
+  quellen:
+  - ZPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-zv-verwertung
+  type: norm
+  front: Wie werden gepfändete Sachen verwertet (§§ 814 ff. ZPO)?
+  back: Gepfändetes Geld wird dem Gläubiger abgeliefert (§ 815 Abs. 1 ZPO). Andere Sachen
+    werden durch den Gerichtsvollzieher öffentlich versteigert (§ 814 ZPO), grundsätzlich
+    frühestens eine Woche nach der Pfändung (§ 816 Abs. 1 ZPO). Der Zuschlag erfolgt an den
+    Meistbietenden (§ 817 Abs. 1 ZPO); die Sache darf dem Ersteher nur gegen Barzahlung abgeliefert
+    werden (§ 817 Abs. 2 ZPO). Mit Zuschlag und Ablieferung geht das Eigentum auf den Ersteher
+    über; es handelt sich um einen Hoheitsakt, der auch bei Mängeln des Verfahrens (nicht
+    bei Fehlen der Voraussetzungen der Zwangsvollstreckung selbst) wirksam bleibt. Nach h.
+    M. erwirbt der Ersteher auch dann Eigentum, wenn die Sache nicht dem Schuldner gehörte;
+    der wahre Eigentümer ist auf Bereicherungsansprüche gegen den Gläubiger verwiesen. Nimmt
+    der Gerichtsvollzieher den Erlös entgegen, gilt der Gläubiger als befriedigt, soweit der
+    Erlös reicht (§ 819 ZPO); anschließend wird der Erlös an ihn ausgekehrt (§ 815 ZPO, §
+    819 ZPO). Anderweitige Verwertung ist auf Antrag möglich (§ 825 ZPO).
+  norms:
+  - § 814 ZPO
+  - § 816 ZPO
+  - § 817 ZPO
+  - § 819 ZPO
+  - § 825 ZPO
+  quellen:
+  - ZPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-zv-erinnerung-766
+  type: norm
+  front: Wann und wie ist die Vollstreckungserinnerung nach § 766 ZPO statthaft?
+  back: Mit der Erinnerung nach § 766 Abs. 1 ZPO werden Anträge, Einwendungen und Erinnerungen
+    gegen die Art und Weise der Zwangsvollstreckung oder das vom Gerichtsvollzieher bei ihr
+    zu beobachtende Verfahren erhoben; gleiches gilt bei Weigerung des Gerichtsvollziehers,
+    einen Vollstreckungsauftrag zu übernehmen (§ 766 Abs. 2 ZPO). Zuständig ist das Vollstreckungsgericht.
+    Gerügt werden also Verfahrensfehler, etwa die Pfändung unpfändbarer Sachen, die Überpfändung,
+    fehlende Voraussetzungen der Vollstreckung wie Titel, Klausel oder Zustellung. Erinnerungsbefugt
+    ist der Schuldner, aber auch ein Dritter, wenn er geltend macht, durch einen Verfahrensverstoß
+    in seinen Rechten verletzt zu sein. Materiell-rechtliche Einwendungen gegen den titulierten
+    Anspruch gehören nicht hierher, sondern in die Klage nach § 767 ZPO. Gegen die Entscheidung
+    des Vollstreckungsgerichts, die ohne mündliche Verhandlung ergehen kann, ist die sofortige
+    Beschwerde statthaft (§ 793 ZPO). Die Erinnerung ist unbefristet, bis die Vollstreckung
+    beendet ist.
+  norms:
+  - § 766 Abs. 1 ZPO
+  - § 766 Abs. 2 ZPO
+  - § 793 ZPO
+  - § 764 ZPO
+  quellen:
+  - ZPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-zv-vollstreckungsabwehrklage-767
+  type: norm
+  front: Wann kann der Schuldner die Vollstreckungsabwehrklage nach § 767 ZPO erheben?
+  back: Einwendungen, die den durch das Urteil festgestellten Anspruch selbst betreffen, sind
+    vom Schuldner im Wege der Klage bei dem Prozessgericht des ersten Rechtszugs geltend zu
+    machen (§ 767 Abs. 1 ZPO). Es handelt sich um eine prozessuale Gestaltungsklage, die darauf
+    zielt, die Zwangsvollstreckung aus dem Titel für unzulässig zu erklären. Typische Einwendungen
+    sind Erfüllung (§ 362 BGB), Erlass, Stundung, Verjährung und Aufrechnung. Sie sind nur
+    zulässig, soweit die Gründe, auf denen sie beruhen, erst nach dem Schluss der mündlichen
+    Verhandlung entstanden sind, in der Einwendungen spätestens hätten geltend gemacht werden
+    müssen, und durch Einspruch nicht mehr geltend gemacht werden können (§ 767 Abs. 2 ZPO,
+    zeitliche Präklusion). Der Schuldner muss alle Einwendungen gleichzeitig geltend machen
+    (§ 767 Abs. 3 ZPO). Auf Antrag kann das Gericht die Zwangsvollstreckung einstweilen einstellen
+    (§ 769 ZPO). Bei Vollstreckungsbescheid und notarieller Urkunde gelten Sonderregeln (§§
+    796, 797 ZPO).
+  norms:
+  - § 767 Abs. 1 ZPO
+  - § 767 Abs. 2 ZPO
+  - § 767 Abs. 3 ZPO
+  - § 769 ZPO
+  - § 797 ZPO
+  - § 796 ZPO
+  quellen:
+  - ZPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-zv-drittwiderspruchsklage-771
+  type: norm
+  front: Wann ist die Drittwiderspruchsklage nach § 771 ZPO begründet?
+  back: Behauptet ein Dritter, dass ihm an dem Gegenstand der Zwangsvollstreckung ein die
+    Veräußerung hinderndes Recht zustehe, so kann er auf Grund seines Rechts Widerspruch gegen
+    die Zwangsvollstreckung erheben (§ 771 Abs. 1 ZPO). Die Klage ist beim Gericht zu erheben,
+    in dessen Bezirk die Zwangsvollstreckung erfolgt, und zielt auf die Erklärung der Unzulässigkeit
+    der Zwangsvollstreckung in den Gegenstand (prozessuale Gestaltungsklage). Begründet ist
+    sie, wenn dem Kläger ein die Veräußerung hinderndes Recht zusteht, zum Beispiel Eigentum,
+    Anwartschaftsrecht des Vorbehaltskäufers, Nießbrauch, Sicherungseigentum (Streit, siehe
+    eigene Karte) oder Treuhandeigentum, und dem Beklagten keine Einwendung zusteht, die das
+    Recht des Klägers entkräftet. Bis zur Entscheidung kann die einstweilige Einstellung der
+    Zwangsvollstreckung angeordnet werden (§ 771 Abs. 3 i. V. m. § 769 ZPO). Ein bloßes Pfandrecht
+    ohne Besitz berechtigt nicht; dafür ist § 805 ZPO einschlägig. Der Gerichtsvollzieher
+    prüft das Recht des Dritten nicht; die Klage ist der richtige Weg, weil keine Verfahrensverletzung
+    vorliegt.
+  norms:
+  - § 771 Abs. 1 ZPO
+  - § 771 Abs. 3 ZPO
+  - § 769 ZPO
+  - § 805 ZPO
+  quellen:
+  - ZPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-zv-sicherungseigentum-771-805
+  type: streitstand
+  front: Kann der Sicherungseigentümer Drittwiderspruchsklage erheben oder nur Klage auf vorzugsweise
+    Befriedigung?
+  back: Pfändet ein Gläubiger des Sicherungsgebers eine zur Sicherheit übereignete Sache,
+    die beim Sicherungsgeber verblieben ist, stellt sich die Frage, welchen Rechtsbehelf der
+    Sicherungsnehmer hat. Die Rechtsprechung gewährt dem Sicherungseigentümer die Drittwiderspruchsklage
+    nach § 771 ZPO, weil er formal Eigentümer ist und das Eigentum ein die Veräußerung hinderndes
+    Recht darstellt. Die Gegenansicht in der Literatur verweist ihn auf die Klage auf vorzugsweise
+    Befriedigung nach § 805 ZPO, da die Sicherungsübereignung wirtschaftlich nur ein besitzloses
+    Pfandrecht verschafft und er nur Befriedigung aus dem Erlös verlangen könne; dafür spricht
+    auch die Absonderungsberechtigung in der Insolvenz (§ 51 Nr. 1 InsO). Für die Klausur
+    genügt die Darstellung der Rechtsprechung mit Hinweis auf die Gegenansicht. Der Eigentumsvorbehaltsverkäufer
+    kann nach h. M. dagegen stets § 771 ZPO nutzen, solange das Eigentum nicht übergegangen
+    ist.
+  norms:
+  - § 771 ZPO
+  - § 805 ZPO
+  - § 51 Nr. 1 InsO
+  quellen:
+  - ZPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-zv-vorzugsklage-805
+  type: norm
+  front: Wofür dient die Klage auf vorzugsweise Befriedigung (§ 805 ZPO)?
+  back: Wer an einer gepfändeten Sache ein Pfandrecht oder ein Vorzugsrecht auf Befriedigung
+    aus dem Erlös hat, ohne im Besitz der Sache zu sein, kann, wenn der Erlös nicht an ihn
+    ausgekehrt wird, seinen Anspruch im Wege der Klage auf vorzugsweise Befriedigung geltend
+    machen (§ 805 Abs. 1 ZPO). Praktisch wichtigstes Beispiel ist das Vermieterpfandrecht
+    (§ 562 BGB), weiter das besitzlose vertragliche Pfandrecht und das Pfändungspfandrecht
+    eines Gläubigers mit besserem Rang (§ 804 Abs. 3 ZPO). Anders als bei § 771 ZPO hindert
+    das Recht die Veräußerung nicht; der Kläger erstrebt Befriedigung vor dem Vollstreckungsgläubiger
+    aus dem Erlös. Die Klage ist bei dem Gericht zu erheben, in dessen Bezirk die Pfändung
+    erfolgt ist (§ 805 Abs. 2 ZPO). Bis zur Entscheidung wird der Erlös hinterlegt (§ 805
+    Abs. 4 ZPO). Der Beklagte kann einwenden, dass das Pfandrecht nicht besteht oder nicht
+    rangbesser ist.
+  norms:
+  - § 805 Abs. 1 ZPO
+  - § 805 Abs. 2 ZPO
+  - § 562 BGB
+  - § 804 Abs. 3 ZPO
+  quellen:
+  - ZPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-zpo-zv-rechtsbehelfe-abgrenzung
+  type: schema_step
+  front: Wie sind die Rechtsbehelfe der Zwangsvollstreckung voneinander abzugrenzen?
+  back: Entscheidend ist, was gerügt wird. Wird ein Fehler im Verfahren oder in der Art und
+    Weise der Vollstreckung gerügt (unpfändbare Sache, fehlende Klausel, Überpfändung), ist
+    die Erinnerung nach § 766 ZPO bzw. gegen Entscheidungen des Gerichts die sofortige Beschwerde
+    nach § 793 ZPO statthaft. Werden materiell-rechtliche Einwendungen gegen den titulierten
+    Anspruch erhoben (Erfüllung, Stundung, Erlass), muss der Schuldner nach § 767 ZPO klagen.
+    Macht ein Dritter geltend, dass ihm ein die Veräußerung hinderndes Recht (Eigentum, Anwartschaft)
+    zusteht, ist die Drittwiderspruchsklage nach § 771 ZPO einschlägig. Hat ein Dritter nur
+    ein Pfand- oder Vorzugsrecht ohne Besitz, bleibt ihm die Klage auf vorzugsweise Befriedigung
+    nach § 805 ZPO. Eine Klage kann gleichzeitig mit der Erinnerung erhoben werden; sie schließen
+    sich nicht aus. Ergänzend können einstweilige Einstellung (§§ 769, 771 Abs. 3 ZPO), Vollstreckungsschutz
+    (§ 765a ZPO) und Antrag auf Klauselerinnerung (§ 732 ZPO) in Betracht kommen.
+  norms:
+  - § 766 ZPO
+  - § 767 ZPO
+  - § 771 ZPO
+  - § 805 ZPO
+  - § 732 ZPO
+  quellen:
+  - ZPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: zr-schema-zpo-zv-drittwiderspruch
+  title: Drittwiderspruchsklage, § 771 ZPO
+  norms:
+  - § 771 Abs. 1 ZPO
+  quellen:
+  - ZPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Zulässigkeit
+    children:
+    - label: '1. Zuständigkeit: Gericht, in dessen Bezirk vollstreckt wird, § 771 Abs. 1 ZPO'
+    - label: '2. Klageantrag: Zwangsvollstreckung in den Gegenstand für unzulässig erklären'
+    - label: 3. Zwangsvollstreckung hat begonnen und ist noch nicht beendet (Rechtsschutzbedürfnis)
+  - label: II. Begründetheit
+    hinweis: 'Sicherungseigentum: Streit zwischen § 771 und § 805 ZPO.'
+    children:
+    - label: 1. Dritter ist nicht Vollstreckungsschuldner
+    - label: 2. Veräußerungshinderndes Recht des Klägers (Eigentum, Anwartschaft, Nießbrauch)
+    - label: 3. Keine Einwendungen des Beklagten (z. B. Anfechtungsrecht, Duldungspflicht,
+        Rechtsmissbrauch)
+  - label: III. Rechtsfolge
+    hinweis: Zwangsvollstreckung wird für unzulässig erklärt; vorläufig einstweilige Einstellung
+      nach §§ 771 Abs. 3, 769 ZPO möglich.
+- slug: zr-schema-zpo-zv-voraussetzungen
+  title: Zulässigkeit der Zwangsvollstreckung wegen einer Geldforderung
+  norms:
+  - § 704 ZPO
+  - § 724 ZPO
+  - § 750 ZPO
+  - § 808 ZPO
+  quellen:
+  - ZPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Titel
+    children:
+    - label: 1. Vollstreckbarer Titel, §§ 704, 794 ZPO
+    - label: 2. Rechtskraft oder vorläufige Vollstreckbarkeit, §§ 708 ff. ZPO
+  - label: II. Klausel
+    children:
+    - label: 1. Vollstreckbare Ausfertigung, § 724 ZPO
+    - label: 2. Umschreibung bei Rechtsnachfolge, § 727 ZPO
+  - label: III. Zustellung, § 750 Abs. 1 ZPO
+    hinweis: Bei Sicherheitsleistung zusätzlich § 751 Abs. 2 ZPO.
+  - label: IV. Zuständiges Vollstreckungsorgan
+    children:
+    - label: 1. Gerichtsvollzieher für bewegliche Sachen, §§ 753, 808 ZPO
+    - label: 2. Vollstreckungsgericht für Forderungen, § 828 ZPO
+    - label: 3. Grundbuchamt und Vollstreckungsgericht für Grundstücke
+  - label: V. Vollstreckungshindernisse
+    children:
+    - label: 1. Unpfändbarkeit, § 811 ZPO
+    - label: 2. Vollstreckungsschutz, § 765a ZPO
+faelle:
+- slug: zr-fall-zpo-zv-gepfaendetes-fahrrad
+  title: Das gepfändete Rennrad
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - ZPO, amtliche Fassung
+  facts: Gläubiger G hat gegen Schuldner S ein rechtskräftiges, mit Vollstreckungsklausel
+    versehenes und zugestelltes Urteil über 5.000 Euro. Die letzte mündliche Verhandlung fand
+    im Mai statt. Im Juni überweist S den vollen Betrag von 5.000 Euro an G; G bestätigt den
+    Eingang, betreibt aber dennoch die Zwangsvollstreckung. Im August pfändet Gerichtsvollzieher
+    V bei S in dessen Wohnung ein hochwertiges Rennrad im Wert von 4.500 Euro und legt Pfandsiegel
+    an. Das Rennrad gehört D, einem Freund des S, der es S für den Sommer geliehen hatte.
+    D und S erfahren von der Pfändung.
+  question: Welche Rechtsbehelfe haben D und S, und haben sie Erfolg?
+  steps:
+  - prompt: Welchen Rechtsbehelf hat D?
+    erwartung: D ist Dritter. Er kann die Drittwiderspruchsklage nach § 771 Abs. 1 ZPO erheben,
+      weil ihm als Eigentümer ein die Veräußerung hinderndes Recht am Rennrad zusteht.
+  - prompt: Hat die Erinnerung des D nach § 766 ZPO Erfolg?
+    erwartung: 'Nein. Der Gerichtsvollzieher hat das Verfahren ordnungsgemäß durchgeführt:
+      Er pfändet Sachen im Gewahrsam des Schuldners und prüft nicht, wem sie gehören (§ 808
+      Abs. 1 ZPO). Ein Verfahrensfehler liegt nicht vor; Eigentum ist mit § 771 ZPO geltend
+      zu machen.'
+  - prompt: Ist die Drittwiderspruchsklage des D begründet?
+    erwartung: Ja. D ist Eigentümer, hat das Rad lediglich geliehen; Einwendungen des G gegen
+      sein Eigentum sind nicht ersichtlich. Das Gericht erklärt die Zwangsvollstreckung in
+      das Rennrad für unzulässig; vorläufig kann die Einstellung nach §§ 771 Abs. 3, 769 ZPO
+      beantragt werden.
+  - prompt: Welchen Rechtsbehelf hat S und mit welchem Erfolg?
+    erwartung: S kann die Vollstreckungsabwehrklage nach § 767 Abs. 1 ZPO beim Prozessgericht
+      des ersten Rechtszugs erheben. Die Einwendung der Erfüllung (§ 362 Abs. 1 BGB) betrifft
+      den titulierten Anspruch und ist erst nach Schluss der mündlichen Verhandlung (Mai)
+      im Juni entstanden, sodass die Präklusion des § 767 Abs. 2 ZPO nicht greift. Die Klage
+      ist begründet; die Zwangsvollstreckung aus dem Titel wird für unzulässig erklärt. Einstweilige
+      Einstellung nach § 769 ZPO ist möglich.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Drittwiderspruchsklage des D nach § 771 ZPO als richtiger Rechtsbehelf
+      weight: 3.0
+      required: true
+      norms:
+      - § 771 ZPO
+      keywords:
+      - § 771 Abs. 1 ZPO
+      - Drittwiderspruchsklage
+      - veräußerungshinderndes Recht
+      - Eigentümer
+      - Dritter
+      card_slugs:
+      - zr-zpo-zv-drittwiderspruchsklage-771
+    - id: p2
+      label: 'Abgrenzung zur Erinnerung nach § 766 ZPO: kein Verfahrensfehler, Gewahrsam des
+        Schuldners'
+      weight: 2.0
+      required: true
+      keywords:
+      - § 766 ZPO
+      - Erinnerung
+      - kein Verfahrensfehler
+      - Gewahrsam
+      - Gerichtsvollzieher prüft das Eigentum nicht
+      card_slugs:
+      - zr-zpo-zv-erinnerung-766
+      - zr-zpo-zv-pfaendung-bewegliche-sachen
+    - id: p3
+      label: Vollstreckungsabwehrklage des S nach § 767 ZPO wegen Erfüllung
+      weight: 3.0
+      required: true
+      norms:
+      - § 767 ZPO
+      keywords:
+      - § 767 Abs. 1 ZPO
+      - Vollstreckungsabwehrklage
+      - Erfüllung
+      - § 362 BGB
+      - Prozessgericht des ersten Rechtszugs
+      card_slugs:
+      - zr-zpo-zv-vollstreckungsabwehrklage-767
+    - id: p4
+      label: 'Zeitliche Grenze: Einwendung nach Schluss der mündlichen Verhandlung entstanden,
+        § 767 Abs. 2 ZPO'
+      weight: 2.0
+      required: true
+      keywords:
+      - § 767 Abs. 2 ZPO
+      - Präklusion
+      - nach Schluss der mündlichen Verhandlung
+      - zeitliche Grenze
+      - Einwendung entstanden
+      card_slugs:
+      - zr-zpo-zv-vollstreckungsabwehrklage-767
+    - id: p5
+      label: Einstweilige Einstellung der Zwangsvollstreckung und Ergebnis
+      weight: 1.0
+      required: false
+      keywords:
+      - § 769 ZPO
+      - einstweilige Einstellung
+      - § 771 Abs. 3 ZPO
+      - für unzulässig erklärt
+      card_slugs:
+      - zr-zpo-zv-drittwiderspruchsklage-771
+      - zr-zpo-zv-rechtsbehelfe-abgrenzung
