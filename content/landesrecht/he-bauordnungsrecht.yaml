@@ -27,7 +27,7 @@ cards:
   - § 64 HBO
   - § 65 HBO
   - §§ 29 ff. BauGB
-  quellen: &id001
+  quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
@@ -44,7 +44,9 @@ cards:
   norms:
   - § 63 HBO
   - § 65 HBO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-bau-genehmigung
   type: definition
@@ -59,26 +61,29 @@ cards:
   norms:
   - Art. 14 Abs. 1 GG
   - § 48 HVwVfG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-bau-abstandsflaechen
   type: norm
   front: Wie werden Abstandsflächen nach der HBO bemessen?
   back: >-
-    Vor Außenwänden von Gebäuden sind Abstandsflächen von oberirdischen Gebäuden freizuhalten (§ 6 HBO).
-    Die Tiefe beträgt grundsätzlich 0,4 H (H = Wandhöhe), mindestens 3 m. Die Abstandsflächen müssen auf
-    dem Grundstück selbst liegen und dürfen sich nicht überdecken; für die planungsrechtlich zulässige
-    Grenzbebauung bestehen Ausnahmen. Abweichungen von bauordnungsrechtlichen Anforderungen sind unter
-    Würdigung der nachbarlichen Interessen möglich. Die Vorschriften dienen Belichtung, Belüftung, Brandschutz
-    und sozialem Frieden und sind nachbarschützend.
+    Vor den Außenwänden oberirdischer Gebäude sind Abstandsflächen freizuhalten (§ 6 HBO). Die Tiefe beträgt
+    grundsätzlich 0,4 H (H = Wandhöhe), mindestens 3 m. Die Abstandsflächen müssen auf dem Grundstück
+    selbst liegen und dürfen sich nicht überdecken; für die planungsrechtlich zulässige Grenzbebauung
+    bestehen Ausnahmen. Abweichungen von bauordnungsrechtlichen Anforderungen sind unter Würdigung der
+    nachbarlichen Interessen möglich. Die Vorschriften dienen Belichtung, Belüftung, Brandschutz und Wohnfrieden
+    und sind nachbarschützend.
   norms:
   - § 6 HBO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-bau-nachbarbeteiligung
   type: norm
-  front: >-
-    Wie werden Nachbarn beteiligt, und welche Bedeutung hat die Zustimmung?
+  front: Wie werden Nachbarn beteiligt, und welche Bedeutung hat die Zustimmung?
   back: >-
     Die Bauaufsichtsbehörde beteiligt die Nachbarn im Genehmigungsverfahren (HBO, Vorschriften über die
     Nachbarbeteiligung) und gibt ihnen Gelegenheit zur Stellungnahme. Haben Nachbarn dem Bauvorhaben schriftlich
@@ -89,7 +94,9 @@ cards:
     Normen.
   norms:
   - HBO (Nachbarbeteiligung)
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-bau-nachbarschutz
   type: definition
@@ -106,12 +113,13 @@ cards:
   - § 6 HBO
   - § 15 BauNVO
   - § 212a Abs. 1 BauGB
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-bau-massnahmen
   type: norm
-  front: >-
-    Welche bauaufsichtlichen Maßnahmen gibt es bei rechtswidrigen Bauvorhaben?
+  front: Welche bauaufsichtlichen Maßnahmen gibt es bei rechtswidrigen Bauvorhaben?
   back: >-
     Die Bauaufsichtsbehörde überwacht die Einhaltung des öffentlichen Baurechts und trifft nach pflichtgemäßem
     Ermessen die erforderlichen Maßnahmen (Generalklausel der Bauaufsicht in der HBO). Typisch sind Baueinstellung,
@@ -124,7 +132,9 @@ cards:
   norms:
   - HBO (Aufgaben und Befugnisse der Bauaufsichtsbehörde)
   - Art. 14 Abs. 1 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-bau-abbruch
   type: streitstand
@@ -139,7 +149,9 @@ cards:
     weil sie aufhebbar ist.
   norms:
   - Art. 14 Abs. 1 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: he-bau-aufbau
   type: schema_step
@@ -151,7 +163,9 @@ cards:
     Gleichbehandlung. IV. Vollstreckung.
   norms:
   - § 28 HVwVfG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 schemata:
 - slug: he-schema-bau-beseitigung
@@ -159,7 +173,9 @@ schemata:
   norms:
   - § 28 HVwVfG
   - Art. 14 Abs. 1 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   steps:
   - label: I. Ermächtigungsgrundlage
     hinweis: Generalklausel der Bauaufsicht der HBO.
@@ -201,8 +217,7 @@ faelle:
       Auf die Generalklausel der Bauaufsicht in der HBO; die Bauaufsichtsbehörde ist zuständig, E wurde
       angehört (§ 28 HVwVfG).
   - prompt: Liegt formelle Illegalität vor?
-    erwartung: >-
-      Ja. Der Wintergarten ist genehmigungsbedürftig und wurde ohne Genehmigung errichtet.
+    erwartung: Ja. Der Wintergarten ist genehmigungsbedürftig und wurde ohne Genehmigung errichtet.
   - prompt: Liegt materielle Illegalität vor?
     erwartung: >-
       Nein. Der Wintergarten verstößt weder gegen Bauplanungsrecht noch gegen Bauordnungsrecht (Abstandsflächen
@@ -215,8 +230,7 @@ faelle:
   expectation:
     pruefpunkte:
     - id: p1
-      label: >-
-        Formelle Illegalität (genehmigungsbedürftig, keine Genehmigung) erkannt
+      label: Formelle Illegalität (genehmigungsbedürftig, keine Genehmigung) erkannt
       weight: 1.5
       required: true
       keywords:
@@ -240,8 +254,7 @@ faelle:
       card_slugs:
       - he-bau-abbruch
     - id: p3
-      label: >-
-        Beseitigung nur bei formeller und materieller Illegalität; Verhältnismäßigkeit
+      label: Beseitigung nur bei formeller und materieller Illegalität; Verhältnismäßigkeit
       weight: 2.5
       required: true
       keywords:

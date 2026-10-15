@@ -14,13 +14,14 @@ cards:
 - slug: hb-por-generalklausel
   type: norm
   front: Wo steht die polizeiliche Generalklausel in Bremen und was setzt sie voraus?
-  back: 'Fundstelle: § 10 Abs. 1 BremPolG. Die Generalklausel ermächtigt zu den notwendigen Maßnahmen,
-    um eine im Einzelfall bestehende Gefahr für die öffentliche Sicherheit oder Ordnung abzuwehren. Sie
-    ist subsidiär: Greift eine Standardmaßnahme oder ein Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite
-    besteht Ermessen, begrenzt durch den Grundsatz der Verhältnismäßigkeit. Zum Schutz privater Rechte
-    wird die Gefahrenabwehr nur subsidiär tätig: Ein Einschreiten kommt nur in Betracht, wenn gerichtlicher
-    Schutz nicht rechtzeitig zu erlangen ist und ohne die Maßnahme die Vereitelung oder wesentliche Erschwerung
-    der Rechtsverwirklichung droht.'
+  back: >-
+    Fundstelle: § 10 Abs. 1 BremPolG. Die Generalklausel ermächtigt zu den notwendigen Maßnahmen, um eine
+    im Einzelfall bestehende Gefahr für die öffentliche Sicherheit oder Ordnung abzuwehren. Sie ist subsidiär:
+    Greift eine Standardmaßnahme oder ein Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite besteht
+    Ermessen, begrenzt durch den Grundsatz der Verhältnismäßigkeit. Zum Schutz privater Rechte wird die
+    Gefahrenabwehr nur subsidiär tätig: Ein Einschreiten kommt nur in Betracht, wenn gerichtlicher Schutz
+    nicht rechtzeitig zu erlangen ist und ohne die Maßnahme die Vereitelung oder wesentliche Erschwerung
+    der Rechtsverwirklichung droht.
   norms:
   - § 10 Abs. 1 BremPolG
   quellen:
@@ -30,12 +31,13 @@ cards:
 - slug: hb-por-aufbau
   type: schema_step
   front: 'Aufbau: Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Bremen'
-  back: 'I. Ermächtigungsgrundlage (Bremisches Polizeigesetz (BremPolG): Standardmaßnahme vor Generalklausel).
+  back: >-
+    I. Ermächtigungsgrundlage (Bremisches Polizeigesetz (BremPolG): Standardmaßnahme vor Generalklausel).
     II. Formelle Rechtmäßigkeit: 1. Zuständigkeit (sachlich: welche Behörde - Polizeibehörden (Ortspolizeibehörden)
     und Polizeivollzugsdienst nach dem BremPolG; örtlich; instanziell), 2. Verfahren (Anhörung nach §
     28 BremVwVfG), 3. Form. III. Materielle Rechtmäßigkeit: 1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose
     ex ante), 2. richtiger Adressat (Störer: §§ 5, 6, 7 BremPolG), 3. Rechtsfolge: Ermessen und Verhältnismäßigkeit
-    (geeignet, erforderlich, angemessen).'
+    (geeignet, erforderlich, angemessen).
   norms:
   - § 10 Abs. 1 BremPolG
   - §§ 5, 6, 7 BremPolG
@@ -46,11 +48,12 @@ cards:
 - slug: hb-por-stoerer
   type: norm
   front: Wo sind Verhaltensstörer, Zustandsstörer und Nichtstörer in Bremen geregelt?
-  back: '§§ 5, 6, 7 BremPolG. Verhaltensstörer: wer die Gefahr durch sein Verhalten verursacht (Theorie
-    der unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer: Inhaber der tatsächlichen
+  back: >-
+    §§ 5, 6, 7 BremPolG. Verhaltensstörer: wer die Gefahr durch sein Verhalten verursacht (Theorie der
+    unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer: Inhaber der tatsächlichen
     Gewalt bzw. Eigentümer einer gefährlichen Sache. Nichtstörer: Inanspruchnahme nur unter den engen
     Voraussetzungen des polizeilichen Notstands (gegenwärtige erhebliche Gefahr, Störer nicht greifbar,
-    Behörde selbst nicht in der Lage), mit Entschädigungsanspruch.'
+    Behörde selbst nicht in der Lage), mit Entschädigungsanspruch.
   norms:
   - §§ 5, 6, 7 BremPolG
   quellen:
@@ -59,11 +62,16 @@ cards:
   stand: 2026-09
 - slug: hb-por-zustaendigkeit
   type: definition
-  front: Wer ist in Bremen für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde oder Polizei?
-  back: 'Polizeibehörden (Ortspolizeibehörden) und Polizeivollzugsdienst nach dem BremPolG. Prüfungsrelevant
-    ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich bei den Verwaltungs-/Ordnungsbehörden;
-    der Polizeivollzugsdienst wird tätig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere
-    Zuweisung besteht. Ein Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig.'
+  front: >-
+    Wer ist in Bremen für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde oder Polizei?
+  back: >-
+    Das BremPolG regelt die Gefahrenabwehr durch Polizei- und Ordnungsbehörden in einem Gesetz. Welche
+    Behörde handelt (Ortspolizeibehörde, Polizeivollzugsdienst, Fachbehörde), ergibt sich aus den Zuständigkeitsvorschriften
+    des BremPolG und der Fachgesetze, die im Einzelfall nachzuschlagen sind. Prüfungsrelevant ist die
+    Abgrenzung zwischen allgemeiner Gefahrenabwehr und Eilzuständigkeit: Der Polizeivollzugsdienst wird
+    regelmäßig tätig, wenn die Abwehr keinen Aufschub duldet oder eine besondere Zuweisung besteht. Ein
+    Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig; eine Heilung kommt nach
+    § 46 BremVwVfG nur in engen Grenzen in Betracht.
   norms:
   - Bremisches Polizeigesetz (BremPolG)
   quellen:
@@ -73,10 +81,11 @@ cards:
 - slug: hb-por-vollstreckung
   type: norm
   front: Nach welchem Gesetz wird eine Gefahrenabwehrverfügung in Bremen vollstreckt?
-  back: 'Bremisches Verwaltungsvollstreckungsgesetz (BremVwVG). Regelfall ist das gestreckte Verfahren:
-    Grundverfügung - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme, Zwangsgeld,
-    unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausführung ohne vorausgehenden
-    Verwaltungsakt möglich; die Kosten trägt der Pflichtige.'
+  back: >-
+    Bremisches Verwaltungsvollstreckungsgesetz (BremVwVG). Regelfall ist das gestreckte Verfahren: Grundverfügung
+    - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme, Zwangsgeld, unmittelbarer
+    Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausführung ohne vorausgehenden Verwaltungsakt
+    möglich; die Kosten trägt der Pflichtige.
   norms:
   - Bremisches Verwaltungsvollstreckungsgesetz (BremVwVG)
   quellen:
@@ -98,8 +107,7 @@ cards:
     die speziellere Befugnisnorm zuerst geprüft und genau zitiert; die Generalklausel kommt nur für atypische
     Gefahren in Betracht.
   norms:
-  - >-
-    § 10 Abs. 1 BremPolG
+  - § 10 Abs. 1 BremPolG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -119,8 +127,7 @@ cards:
     ist die öffentliche Sicherheit (Rechtsordnung, Individualrechtsgüter, Bestand staatlicher Einrichtungen);
     ob daneben die öffentliche Ordnung genannt ist, ergibt sich aus dem Wortlaut der jeweiligen Landesnorm.
   norms:
-  - >-
-    § 10 Abs. 1 BremPolG
+  - § 10 Abs. 1 BremPolG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -140,8 +147,7 @@ cards:
     den Landespolizeigesetzen unterschiedlich ausgeprägt; maßgeblich ist stets die in der jeweiligen Befugnisnorm
     verlangte Qualifikation (BremPolG).
   norms:
-  - >-
-    § 10 Abs. 1 BremPolG
+  - § 10 Abs. 1 BremPolG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -160,8 +166,7 @@ cards:
     rechtswidrig (bloße Vermutung). Streitig ist die Kostenpflicht des Anscheinsverursachers: Sie wird
     überwiegend nur bejaht, wenn er den Anschein zurechenbar veranlasst hat.
   norms:
-  - >-
-    § 10 Abs. 1 BremPolG
+  - § 10 Abs. 1 BremPolG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -182,16 +187,14 @@ cards:
     Entscheidung (Art. 104 Abs. 2 GG).
   norms:
   - Art. 104 Abs. 2 GG
-  - >-
-    § 80 Abs. 2 S. 1 Nr. 2 VwGO
+  - § 80 Abs. 2 S. 1 Nr. 2 VwGO
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: hb-por-zweckveranlasser
   type: streitstand
-  front: >-
-    Ist der Zweckveranlasser Verhaltensstörer (§ 5 BremPolG)? Wie wird der Streit entschieden?
+  front: Ist der Zweckveranlasser Verhaltensstörer (§ 5 BremPolG)? Wie wird der Streit entschieden?
   back: >-
     Unstreitig ist, wer die Gefahr unmittelbar verursacht, Verhaltensstörer. Streitig ist die Verantwortlichkeit
     des Veranlassers, der die Gefahr nur mittelbar auslöst, indem ein Dritter die Gefahrenschwelle überschreitet.
@@ -203,8 +206,7 @@ cards:
     zurechenbare Verursachung und die gesetzliche Unterscheidung von Störer und Nichtstörer. In der Klausur
     ist die Zurechnung sauber zu begründen.
   norms:
-  - >-
-    §§ 5, 6, 7 BremPolG
+  - §§ 5, 6, 7 BremPolG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -232,13 +234,10 @@ cards:
   stand: 2026-10
 schemata:
 - slug: hb-schema-por-massnahme
-  title: >-
-    Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Bremen
+  title: Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Bremen
   norms:
-  - >-
-    § 10 Abs. 1 BremPolG
-  - >-
-    §§ 5, 6, 7 BremPolG
+  - § 10 Abs. 1 BremPolG
+  - §§ 5, 6, 7 BremPolG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -251,20 +250,17 @@ schemata:
     - label: 2. Hilfsweise Generalklausel, § 10 Abs. 1 BremPolG
   - label: II. Formelle Rechtmäßigkeit
     children:
-    - label: >-
-        1. Zuständigkeit: Ortspolizeibehörden bzw. Polizei nach dem BremPolG
+    - label: '1. Zuständigkeit: Ortspolizeibehörden bzw. Polizei nach dem BremPolG'
     - label: >-
         2. Verfahren: Anhörung nach dem Landesverwaltungsverfahrensgesetz (Ausnahme bei Gefahr im Verzug)
     - label: 3. Form und Begründung (mündlicher Verwaltungsakt zulässig)
   - label: III. Materielle Rechtmäßigkeit
     children:
     - label: 1. Tatbestand
-      hinweis: >-
-        Konkrete Gefahr im Einzelfall, ex ante prüfen; Anscheinsgefahr einbeziehen.
+      hinweis: Konkrete Gefahr im Einzelfall, ex ante prüfen; Anscheinsgefahr einbeziehen.
       children:
       - label: a) Schutzgut (öffentliche Sicherheit, ggf. Ordnung)
-      - label: >-
-          b) Gefahr: hinreichende Wahrscheinlichkeit eines Schadens in absehbarer Zeit
+      - label: 'b) Gefahr: hinreichende Wahrscheinlichkeit eines Schadens in absehbarer Zeit'
       - label: c) ggf. qualifizierte Gefahr (gegenwärtig, erheblich)
     - label: 2. Richtiger Adressat (§§ 5, 6, 7 BremPolG)
       hinweis: >-
@@ -275,12 +271,10 @@ schemata:
       - label: b) Zustandsstörer, § 6 BremPolG
       - label: c) Nichtstörer, § 7 BremPolG
     - label: 3. Rechtsfolge
-      hinweis: >-
-        Ermessen: Entschließungs- und Auswahlermessen; Verhältnismäßigkeit nie auslassen.
+      hinweis: 'Ermessen: Entschließungs- und Auswahlermessen; Verhältnismäßigkeit nie auslassen.'
       children:
       - label: a) Ermessensfehlerfreiheit
-      - label: >-
-          b) Verhältnismäßigkeit: legitimer Zweck, geeignet, erforderlich, angemessen
+      - label: 'b) Verhältnismäßigkeit: legitimer Zweck, geeignet, erforderlich, angemessen'
       - label: c) Bestimmtheit der Anordnung
   - label: IV. Vollstreckung (falls Zwang angewandt wurde)
     hinweis: >-
@@ -306,8 +300,7 @@ faelle:
     eine Verfügung gegen sie erlassen müssen; für einen Sturmschaden sei sie nicht verantwortlich.
   question: Ist der Kostenbescheid rechtmäßig?
   steps:
-  - prompt: >-
-      Durfte die Behörde ohne vorherigen Verwaltungsakt tätig werden?
+  - prompt: Durfte die Behörde ohne vorherigen Verwaltungsakt tätig werden?
     erwartung: >-
       Ja: Bei einer gegenwärtigen Gefahr, die ein sofortiges Tätigwerden verlangt, und bei nicht erreichbarem
       Verpflichteten darf die Behörde die Maßnahme selbst durchführen (unmittelbare Ausführung bzw. Sofortvollzug).
@@ -330,8 +323,7 @@ faelle:
   expectation:
     pruefpunkte:
     - id: p1
-      label: >-
-        Unmittelbare Ausführung bzw. Sofortvollzug mangels Erreichbarkeit der Pflichtigen zulässig
+      label: Unmittelbare Ausführung bzw. Sofortvollzug mangels Erreichbarkeit der Pflichtigen zulässig
       weight: 2.5
       required: true
       keywords:
@@ -344,17 +336,14 @@ faelle:
       - hb-por-vollstreckung
       - hb-por-kosten
     - id: p2
-      label: >-
-        E als Zustandsstörerin (§ 6 BremPolG), Verantwortlichkeit unabhängig von Verschulden
+      label: E als Zustandsstörerin (§ 6 BremPolG), Verantwortlichkeit unabhängig von Verschulden
       weight: 2.5
       required: true
       norms:
-      - >-
-        § 6 BremPolG
+      - § 6 BremPolG
       keywords:
       - Zustandsstörer
-      - >-
-        § 6 BremPolG
+      - § 6 BremPolG
       - Eigentümerin
       - unabhängig von Verschulden
       - Zustandsverantwortlichkeit
@@ -383,8 +372,7 @@ faelle:
       card_slugs:
       - hb-por-aufbau
     - id: p5
-      label: >-
-        Kostenpflicht über den hypothetischen Verwaltungsakt begründet
+      label: Kostenpflicht über den hypothetischen Verwaltungsakt begründet
       weight: 2.0
       required: true
       keywords:

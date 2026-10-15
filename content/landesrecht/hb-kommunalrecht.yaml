@@ -91,8 +91,7 @@ cards:
     je nach Zuordnung das Land Bremen, die Stadtgemeinde Bremen oder die Stadtgemeinde Bremerhaven. Eine
     falsche Zuordnung führt zum falschen Beklagten.
   norms:
-  - >-
-    § 78 Abs. 1 Nr. 1 VwGO
+  - § 78 Abs. 1 Nr. 1 VwGO
   - Landesverfassung der Freien Hansestadt Bremen (BremLV)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -104,9 +103,9 @@ cards:
   back: >-
     Die Stadtgemeinde Bremerhaven steht unter der Staatsaufsicht des Landes Bremen. Die Aufsicht ist in
     den Selbstverwaltungsangelegenheiten Rechtsaufsicht und in den übertragenen Angelegenheiten zusätzlich
-    Fachaufsicht. Zu den Aufsichtsmitteln zählen Beanstandung, Anordnung, Ersatzvornahme und die Einsetzung
-    eines Beauftragten; sie sind verhältnismäßig auszuüben. Gegen aufsichtliche Verfügungen kann sich
-    die Stadtgemeinde Bremerhaven mit der Anfechtungsklage wehren und dabei die Selbstverwaltungsgarantie
+    Fachaufsicht. Welche Aufsichtsmittel im Einzelnen zur Verfügung stehen, richtet sich nach den Aufsichtsvorschriften
+    des bremischen Landesrechts; sie sind stets verhältnismäßig auszuüben. Gegen aufsichtliche Verfügungen
+    kann sich die Stadtgemeinde Bremerhaven mit der Anfechtungsklage wehren und dabei die Selbstverwaltungsgarantie
     (Art. 28 Abs. 2 GG) geltend machen. Für die Stadtgemeinde Bremen besteht dieses Aufsichtsverhältnis
     wegen der Personalunion der Organe nicht in gleicher Weise.
   norms:
@@ -118,23 +117,21 @@ cards:
 - slug: hb-kr-kommunalverfassungsstreit
   type: definition
   front: >-
-    Was ist ein Kommunalverfassungsstreit (Organstreit) und welche prozessualen Besonderheiten gelten?
+    Wie wird ein Streit zwischen Organen oder Organteilen in Bremerhaven prozessual eingeordnet?
   back: >-
-    Der Kommunalverfassungsstreit ist ein Innenrechtsstreit zwischen Organen oder Organteilen einer Körperschaft
-    um organschaftliche Rechte und Pflichten. Der Verwaltungsrechtsweg ist nach § 40 Abs. 1 VwGO eröffnet.
-    Klageart ist mangels Verwaltungsakt die Feststellungsklage (§ 43 VwGO) oder die allgemeine Leistungsklage.
-    § 42 Abs. 2 VwGO gilt analog: Das Organ muss die Verletzung eigener organschaftlicher Rechte geltend
-    machen; die Beteiligtenfähigkeit folgt aus § 61 Nr. 2 VwGO analog. Passivlegitimiert ist das Organ,
-    das die Rechte bestreitet. Bei Streitigkeiten zwischen Verfassungsorganen des Landes kann der Weg
-    zum Landesverfassungsgericht eröffnet sein; eine verfassungsrechtliche Streitigkeit ist dann nicht
-    verwaltungsgerichtlich zu klären (§ 40 Abs. 1 VwGO).
+    Streiten etwa eine Fraktion der Stadtverordnetenversammlung und deren Vorsitzender um Rederecht oder
+    Tagesordnung, liegt ein Kommunalverfassungsstreit vor: ein Innenrechtsstreit um organschaftliche Rechte.
+    Der Rechtsweg ist als nichtverfassungsrechtliche öffentlich-rechtliche Streitigkeit nach § 40 Abs.
+    1 VwGO eröffnet. Mangels Verwaltungsakt ist die Feststellungsklage (§ 43 VwGO) oder die allgemeine
+    Leistungsklage statthaft. Die Fraktion ist als Organteil analog § 61 Nr. 2 VwGO beteiligtenfähig und
+    muss analog § 42 Abs. 2 VwGO die Verletzung eigener organschaftlicher Rechte geltend machen. Beklagter
+    ist der Amtsträger oder das Organ, das das Recht bestreitet, nicht die Stadtgemeinde. Eine bloße objektive
+    Rechtmäßigkeitskontrolle ist nicht Ziel dieser Klage. Ein Vorverfahren findet mangels Verwaltungsakt
+    nicht statt. Streitigkeiten zwischen Verfassungsorganen des Landes gehören dagegen vor das Landesverfassungsgericht.
   norms:
-  - >-
-    § 40 Abs. 1 VwGO
-  - >-
-    § 43 VwGO
-  - >-
-    § 61 Nr. 2 VwGO
+  - § 40 Abs. 1 VwGO
+  - § 43 VwGO
+  - § 61 Nr. 2 VwGO
   quellen:
   - VwGO, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -143,16 +140,14 @@ schemata:
 - slug: hb-schema-kr-zuordnung
   title: Zuordnung von Aufgabe und Rechtsträger im Land Bremen
   norms:
-  - >-
-    § 78 Abs. 1 Nr. 1 VwGO
+  - § 78 Abs. 1 Nr. 1 VwGO
   - Landesverfassung der Freien Hansestadt Bremen (BremLV)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   steps:
   - label: I. Wer hat gehandelt?
-    hinweis: >-
-      Behörde bzw. Organ bestimmen (Senatsressort, Amt, Magistrat Bremerhaven).
+    hinweis: Behörde bzw. Organ bestimmen (Senatsressort, Amt, Magistrat Bremerhaven).
   - label: II. Zuordnung der Aufgabe
     hinweis: >-
       Landesaufgabe, Aufgabe der Stadtgemeinde Bremen oder der Stadtgemeinde Bremerhaven; Doppelfunktion
@@ -162,10 +157,8 @@ schemata:
     - label: 2. Verfassungsrechtliche Zuordnung (BremLV)
   - label: III. Zuständiges Organ
     children:
-    - label: >-
-        1. Stadt Bremen: Stadtbürgerschaft oder Senat
-    - label: >-
-        2. Bremerhaven: Stadtverordnetenversammlung oder Magistrat
+    - label: '1. Stadt Bremen: Stadtbürgerschaft oder Senat'
+    - label: '2. Bremerhaven: Stadtverordnetenversammlung oder Magistrat'
   - label: IV. Richtiger Beklagter
     children:
     - label: 1. Rechtsträgerprinzip, § 78 Abs. 1 Nr. 1 VwGO
@@ -190,8 +183,7 @@ faelle:
     ab. Die Entscheidung betrifft eine Angelegenheit der Stadtgemeinde. G möchte klagen und fragt, ob
     er das Land Bremen, die Stadtgemeinde Bremen, die Stadtgemeinde Bremerhaven oder den Magistrat verklagen
     muss, und welches Organ der Stadt zuständig war.
-  question: >-
-    Gegen wen ist die Klage zu richten, und welches Organ ist zuständig?
+  question: Gegen wen ist die Klage zu richten, und welches Organ ist zuständig?
   steps:
   - prompt: Welche Rechtsperson hat gehandelt?
     erwartung: >-
@@ -229,12 +221,10 @@ faelle:
       weight: 3.0
       required: true
       norms:
-      - >-
-        § 78 Abs. 1 Nr. 1 VwGO
+      - § 78 Abs. 1 Nr. 1 VwGO
       keywords:
       - Rechtsträgerprinzip
-      - >-
-        § 78 Abs. 1 Nr. 1 VwGO
+      - § 78 Abs. 1 Nr. 1 VwGO
       - Stadtgemeinde Bremerhaven
       - vertreten durch den Magistrat
       - falscher Beklagter
