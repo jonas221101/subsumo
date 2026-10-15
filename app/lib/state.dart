@@ -436,7 +436,8 @@ class AppState extends ChangeNotifier {
   Future<bool> learnMoreCards() {
     sessionDone = false;
     reviewedInSession = 0;
-    return loadDueCards();
+    // Bewusst ueber das Tageslimit neuer Karten hinaus (Backend: extra=true).
+    return loadDueCards(extra: true);
   }
 
   /// Laedt faellige Karten. Schlaegt der Netzaufruf fehl, bleibt der zuletzt
