@@ -107,6 +107,12 @@ def submit_case(slug: str, payload: SubmissionIn, user: CurrentUser, db: DbSessi
     Erwartungshorizont dieses Uebungsfalls. Einen Endpunkt fuer beliebige
     Sachverhalte gibt es bewusst nicht (siehe docs/06-recht-compliance.md).
     """
+    if not payload.text.strip():
+        raise HTTPException(
+            422,
+            "Dein Gutachten ist leer. Bitte schreibe zuerst deine Lösung, "
+            "bevor du sie abgibst.",
+        )
     case = db.query(Case).filter_by(slug=slug).one_or_none()
     if case is None:
         raise HTTPException(status.HTTP_404_NOT_FOUND, "Fall nicht gefunden")

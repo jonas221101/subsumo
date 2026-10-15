@@ -141,7 +141,9 @@ class AnalyzeIn(BaseModel):
 
 
 class SubmissionIn(BaseModel):
-    text: str = Field(min_length=1, max_length=120_000)
+    # Leere bzw. nur aus Leerraum bestehende Texte lehnt der Endpunkt mit einer
+    # deutschen Meldung ab (kein englischer Pydantic-Roh-Fehler, kein 0-Punkte-Eintrag).
+    text: str = Field(max_length=120_000)
     mode: str = Field(default="uebung", pattern="^(uebung|klausur)$")
     duration_s: int = 0
 

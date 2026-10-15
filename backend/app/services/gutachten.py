@@ -101,6 +101,17 @@ _DEFINITION_PATTERNS = [
     # "Ein Kaufvertrag kommt durch Angebot und Annahme zustande."
     r"^(ein|eine)\s+[\wäöüß-]+\s+kommt\b[^.]{0,80}\bzustande\b",
     r"\bist\s+eine?\s+[\wäöüß-]+,\s+(die|der|das)\b",
+    # "Eine Misshandlung ist jede Behandlung, die ..." / "spricht man von ..."
+    r"\bspricht\s+man\b",
+    r"\bgilt\s+(als|dann)\b",
+    r"\bwird\s+(dann\s+)?(angenommen|bejaht|verwirklicht|erfüllt),\s+(wenn|sofern|soweit)\b",
+    r"\bliegt\s+(dann|immer|stets|nur|bereits)\b[^.]{0,30}\bvor\b",
+    r"\bbedeutet\b",
+    r"\bdefiniert\b",
+    r"\bist\s+(dann|nur|immer|stets)\b[^.]{0,40}\b(wenn|sofern|soweit|gegeben|erfüllt)\b",
+    r"\bdarunter\s+(ist|fällt|fallen)\b",
+    r"\bunter\b[^.]{3,}\bversteht\b",
+    r"\b(erforderlich|maßgeblich|entscheidend)\s+ist\b",
 ]
 
 _SUBSUMTION_PATTERNS = [
@@ -113,7 +124,22 @@ _SUBSUMTION_PATTERNS = [
     r"\bdies\s+ist\s+der\s+fall\b",
     r"\bso\s+liegt\s+es\b",
     r"\bdaran\s+fehlt\s+es\b",
+    r"\bim\s+(konkreten|vorliegenden|hiesigen)\s+(fall|sachverhalt)\b",
+    r"\bim\s+sachverhalt\b",
+    r"\bdies\s+(ist|war|trifft)\b[^.]{0,20}\b(der\s+fall|zu|hier|gegeben)\b",
+    r"\bdas\s+(ist|war|trifft)\b[^.]{0,20}\b(hier|vorliegend|zu)\b",
+    r"\bdemnach\s+hat\b",
+    r"\bsachverhalt\b[^.]{0,40}\b(ergibt|zeigt|entnehmen)\b",
 ]
+
+# Subsumtion in eigenen Worten: ein Beteiligter (Einzelbuchstabe) tut oder erleidet
+# etwas im Sachverhalt ("A hat ...", "B erlitt ..."). Gross-/Kleinschreibung zaehlt
+# hier, deshalb getrennt vom lower()-Abgleich.
+_SUBSUMTION_BETEILIGTER = re.compile(
+    r"(?:^|[\s(])[A-Z]\s+(?:hat|hatte|wollte|wusste|handelte|erlitt|schlug|war|ist|"
+    r"erklärte|gab|bot|legte|holte|befand|konnte|musste|tat|zeigte|nahm|sagte|"
+    r"schrieb|tippte|kannte|wurde)\b"
+)
 
 _ERGEBNIS_PATTERNS = [
     r"\bmithin\b",
@@ -126,6 +152,11 @@ _ERGEBNIS_PATTERNS = [
     r"\bist\s+(daher|somit|folglich)\s+zu\s+(bejahen|verneinen)\b",
     r"\bder\s+anspruch\s+(besteht|ist\s+begründet)\b",
     r"\bhat\s+sich\b.*\bstrafbar\s+gemacht\b",
+    r"\bzusammenfassend\b",
+    r"\b(deshalb|daher|also)\b[^.]{0,60}\b(liegt|ist|sind|besteht|bestand|scheidet|entfällt)\b",
+    r"\bsomit\w*\b",
+    r"\bmithin\w*\b",
+    r"\bfolglich\w*\b",
 ]
 
 # Urteilsstil: das Ergebnis steht vorn, die Begruendung folgt mit "da"/"weil".
@@ -141,6 +172,13 @@ _NORM_RE = re.compile(
     r"(?:\s*(?:S\.|Satz)\s*\d+)?"
     r"(?:\s*(?:Nr\.|Alt\.|Var\.)\s*\d+)?"
     r"(?:\s+[A-ZÄÖÜ][A-Za-zÄÖÜäöü]{1,9}(?:G|O|B|GB|VO|StGB|GG))?"
+    r"|"
+    # Verfassungs-/Unionsrecht: "Art. 5 Abs. 3 GG", "Art. 12 I GG", "Art. 5 I 1 GG"
+    r"\bArt\.?\s*\d+[a-z]?"
+    r"(?:\s*(?:Abs\.|Absatz)\s*\d+|\s+[IVX]+\b)?"
+    r"(?:\s*(?:S\.|Satz)\s*\d+|\s+\d\b)?"
+    r"(?:\s*(?:Nr\.|Alt\.|Var\.)\s*\d+[a-z]?)?"
+    r"(?:\s+(?:GG|EMRK|GRCh|EUV|AEUV|WRV)\b)?"
 )
 _GESETZ_RE = re.compile(
     r"\b(BGB|StGB|GG|StPO|ZPO|VwGO|VwVfG|HGB|GmbHG|AktG|ArbGG|BauGB|"
@@ -167,16 +205,96 @@ def classify_sentence(sentence: str) -> Step:
         return Step.ERGEBNIS
     if _matches_any(low, _DEFINITION_PATTERNS):
         return Step.DEFINITION
-    if _matches_any(low, _SUBSUMTION_PATTERNS):
+    if _matches_any(low, _SUBSUMTION_PATTERNS) or _SUBSUMTION_BETEILIGTER.search(sentence):
         return Step.SUBSUMTION
     return Step.SONSTIGES
 
 
+_ROEMISCH = {"I": "1", "II": "2", "III": "3", "IV": "4", "V": "5", "VI": "6"}
+_NORM_PARTS_RE = re.compile(
+    r"(?P<art>§§?|Art\.?)\s*(?P<num>\d+[a-z]?)"
+    r"(?:\s*(?:Abs\.|Absatz)\s*(?P<abs>\d+)|\s+(?P<rom>[IVX]+)\b)?",
+    re.IGNORECASE,
+)
+
+
+def norm_parts(norm: str) -> tuple[str, str, str, str] | None:
+    """Zerlegt ein Normzitat in (Art/§, Nummer, Absatz, Gesetz) fuer den Abgleich.
+
+    ``"Art. 12 I GG"`` und ``"Art. 12 Abs. 1 GG"`` ergeben dasselbe Tupel.
+    Nicht zerlegbare Zitate liefern ``None``.
+    """
+    m = _NORM_PARTS_RE.search(norm)
+    if not m:
+        return None
+    art = "art" if m.group("art").lower().startswith("art") else "§"
+    absatz = m.group("abs") or _ROEMISCH.get((m.group("rom") or "").upper(), "")
+    gesetze = _GESETZ_RE.findall(norm)
+    gesetz = gesetze[-1].lower() if gesetze else ""
+    return art, m.group("num").lower(), absatz, gesetz
+
+
+def norm_matches(expected: str, found: str) -> bool:
+    """Ob ein zitiertes Norm ``found`` die erwartete ``expected`` abdeckt.
+
+    Nummer und (falls beide es nennen) Gesetz muessen uebereinstimmen. Ein
+    fehlender Absatz beim Studierenden ist unschaedlich: ``§ 223 StGB``
+    deckt ``§ 223 Abs. 1 StGB``. Fallback auf den alten Textabgleich fuer
+    exotische Zitate.
+    """
+    e, f = norm_parts(expected), norm_parts(found)
+    if e is None or f is None:
+        a = re.sub(r"\s+", "", expected).lower()
+        b = re.sub(r"\s+", "", found).lower()
+        return a in b or b in a
+    if e[0] != f[0] or e[1] != f[1]:
+        return False
+    if e[3] and f[3] and e[3] != f[3]:
+        return False
+    return True
+
+
+def collapse_expected_norms(expected: list[str]) -> list[str]:
+    """Fasst Alternativen derselben Norm zusammen (``§ 223 StGB`` / ``§ 223 Abs. 1 StGB``).
+
+    Ein Erwartungshorizont fuehrt die gleiche Norm oft in mehreren Schreibweisen
+    auf, damit der Abgleich grosszuegig ist. Als *fehlend* darf sie aber nur
+    einmal gemeldet werden. Angezeigt wird die kuerzeste Schreibweise.
+    """
+    groups: dict[tuple, str] = {}
+    for norm in expected:
+        parts = norm_parts(norm)
+        key = (parts[0], parts[1], parts[3]) if parts else (norm,)
+        if key not in groups or len(norm) < len(groups[key]):
+            groups[key] = norm
+    return list(groups.values())
+
+
+_NORM_LIST_RE = re.compile(
+    r"§§\s*(?P<nums>(?:\d+[a-z]?\s*(?:,|und|sowie|u\.|bis)\s*)+\d+[a-z]?)"
+    r"(?:\s*(?:Abs\.\s*[\d, ]+|[IVX]+\b))?"
+    r"(?:\s+(?P<gesetz>" + _GESETZ_RE.pattern.split("(", 1)[1].rsplit(")", 1)[0] + r"))?"
+)
+
+
 def extract_norms(text: str) -> list[str]:
     """Alle Paragraphenzitate in Reihenfolge des Auftretens, dedupliziert."""
-    found = [re.sub(r"\s+", " ", m.group(0)).strip() for m in _NORM_RE.finditer(text)]
+    listen = list(_NORM_LIST_RE.finditer(text))
+    found: list[tuple[int, str]] = []
+    for m in _NORM_RE.finditer(text):
+        if any(l.start() <= m.start() < l.end() for l in listen):  # noqa: E741
+            continue
+        found.append((m.start(), re.sub(r"\s+", " ", m.group(0)).strip()))
+    # "§§ 143, 121 BGB": die Aufzaehlung traegt Gesetz nur einmal am Ende.
+    for m in listen:
+        gesetz = f" {m.group('gesetz')}" if m.group("gesetz") else ""
+        found.extend(
+            (m.start(), f"§ {n}{gesetz}") for n in re.findall(r"\d+[a-z]?", m.group("nums"))
+        )
+    found.sort(key=lambda item: item[0])
+    found_norms = [n for _, n in found]
     seen: dict[str, None] = {}
-    for norm in found:
+    for norm in found_norms:
         seen.setdefault(norm, None)
     return list(seen)
 
@@ -214,6 +332,8 @@ class GutachtenReport:
     sentences: int = 0
     avg_sentence_length: float = 0.0
     gutachtenstil_quote: float = 0.0
+    # Anteil wortgleich wiederholter Saetze (Copy-Paste), 0..1; nur Saetze ab 4 Woertern.
+    duplicate_ratio: float = 0.0
 
     def to_dict(self) -> dict:
         data = asdict(self)
@@ -223,7 +343,61 @@ class GutachtenReport:
         return data
 
 
+def _norm_hinweis(missing: list[str]) -> str:
+    """Hinweistext passend zum Rechtsgebiet der fehlenden Normen."""
+    text = " ".join(missing)
+    if re.search(r"\b(StGB|StPO|OWiG)\b", text):
+        return (
+            "Prüfe die Strafbarkeit vollständig und in der richtigen Reihenfolge "
+            "(Tatbestand - Rechtswidrigkeit - Schuld) und nenne die einschlägigen Normen."
+        )
+    if re.search(r"\b(GG|VwGO|VwVfG|BauGB|EMRK|GRCh|POG|PolG)\b", text):
+        return (
+            "Prüfe die einschlägigen Normen vollständig und in der richtigen "
+            "Reihenfolge (z. B. Schutzbereich - Eingriff - Rechtfertigung bzw. "
+            "Zulässigkeit - Begründetheit)."
+        )
+    if re.search(r"\b(BGB|HGB|ZPO|GmbHG|AktG)\b", text):
+        return (
+            "Prüfe die Anspruchsgrundlagen vollständig und in der richtigen "
+            "Reihenfolge (vertraglich - quasivertraglich - dinglich - deliktisch)."
+        )
+    return "Prüfe die einschlägigen Normen vollständig und in der richtigen Reihenfolge."
+
+
 _MAX_PENALTY = {"offener_obersatz": 24, "sprung": 20, "urteilsstil": 30}
+
+
+def duplicate_ratio(sentences: list[str]) -> float:
+    """Anteil wortgleich wiederholter Saetze (ab 4 Woertern); 0 bei kurzen Texten."""
+    normalized = [re.sub(r"\W+", " ", s.lower()).strip() for s in sentences]
+    normalized = [n for n in normalized if len(n.split()) >= 4]
+    if len(normalized) < 6:
+        return 0.0
+    return round(1 - len(set(normalized)) / len(normalized), 3)
+
+
+def _collapse_findings(findings: list[Finding]) -> list[Finding]:
+    """Fasst gleiche Befunde (Code + Textstelle) zusammen, statt sie 40-fach zu listen."""
+    seen: dict[tuple[str, str], int] = {}
+    result: list[Finding] = []
+    counts: dict[tuple[str, str], int] = {}
+    for f in findings:
+        key = (f.code, f.excerpt)
+        if not f.excerpt or key not in seen:
+            seen[key] = len(result)
+            counts[key] = 1
+            result.append(f)
+        else:
+            counts[key] += 1
+    for key, idx in seen.items():
+        if counts[key] > 1:
+            f = result[idx]
+            result[idx] = Finding(
+                f.severity, f.code, f"{f.message} (×{counts[key]})", f.hint,
+                f.sentence_index, f.excerpt,
+            )
+    return result
 
 
 def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenReport:
@@ -287,6 +461,11 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
         elif step in (Step.SUBSUMTION, Step.DEFINITION) and stack:
             key = "subsumed" if step is Step.SUBSUMTION else "defined"
             stack[-1][key] = True
+        elif step is Step.SONSTIGES and stack and len(sentence.split()) >= 9:
+            # Ein ausformulierter Argumentationssatz ohne Signalphrase ist keine
+            # Luecke: Wer in eigenen Worten schreibt ("Der Hieb hat eine Prellung
+            # verursacht ..."), springt nicht zum Ergebnis.
+            stack[-1]["defined"] = True
         elif step is Step.ERGEBNIS and stack:
             # Das Schlussergebnis eines Gutachtens beantwortet die Fallfrage und
             # schliesst damit auch alle noch offenen uebergeordneten Obersaetze.
@@ -412,9 +591,9 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
             Finding(
                 Severity.FEHLER,
                 "keine_norm",
-                "Es wird keine Anspruchsgrundlage bzw. Norm zitiert.",
+                "Es wird keine Norm zitiert.",
                 "Jeder Obersatz nennt die Norm mit Absatz, Satz und Alternative, "
-                "z. B. '§ 433 Abs. 2 BGB'.",
+                "z. B. '§ 433 Abs. 2 BGB', '§ 223 Abs. 1 StGB' oder 'Art. 5 Abs. 1 S. 1 GG'.",
             )
         )
     elif not _GESETZ_RE.search(text):
@@ -430,10 +609,8 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
 
     missing_norms: list[str] = []
     if expected_norms:
-        normalized = {re.sub(r"\s+", "", n).lower() for n in norms}
-        for expected in expected_norms:
-            key = re.sub(r"\s+", "", expected).lower()
-            if not any(key in n or n in key for n in normalized):
+        for expected in collapse_expected_norms(expected_norms):
+            if not any(norm_matches(expected, n) for n in norms):
                 missing_norms.append(expected)
         if missing_norms:
             score -= min(8 * len(missing_norms), 20)
@@ -443,9 +620,7 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
                     "norm_nicht_geprueft",
                     "Erwartete Normen wurden nicht angesprochen: "
                     + ", ".join(missing_norms),
-                    "Prüfe die Anspruchsgrundlagen vollständig und in der "
-                    "richtigen Reihenfolge (vertraglich - quasivertraglich - "
-                    "dinglich - deliktisch).",
+                    _norm_hinweis(missing_norms),
                 )
             )
 
@@ -478,6 +653,20 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
             )
         )
 
+    dup = duplicate_ratio(sentences)
+    if dup > 0.25:
+        score -= 20
+        findings.append(
+            Finding(
+                Severity.FEHLER,
+                "wiederholung",
+                f"{dup:.0%} der Sätze sind wortgleiche Wiederholungen.",
+                "Wiederholter Text zählt nur einmal. Entwickle jeden Prüfungspunkt "
+                "einmal vollständig, statt Passagen zu kopieren.",
+            )
+        )
+    findings = _collapse_findings(findings)
+
     return GutachtenReport(
         score=max(0, min(100, int(round(score)))),
         steps=[s.value for s in steps],
@@ -489,4 +678,5 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
         sentences=len(sentences),
         avg_sentence_length=round(words / len(sentences), 1) if sentences else 0.0,
         gutachtenstil_quote=round(quote, 2),
+        duplicate_ratio=dup,
     )

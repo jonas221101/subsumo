@@ -28,7 +28,12 @@ from app.config import Settings, get_settings
 from app.core.llm import LLMClient, get_llm_client
 from app.models import User
 from app.services import limits
-from app.services.gutachten import GutachtenReport
+from app.services.gutachten import (
+    GutachtenReport,
+    extract_norms,
+    norm_matches,
+    split_sentences,
+)
 
 # Notenskala der juristischen Staatspruefungen (JurNotSkalV): untere Grenze
 # der jeweiligen Notenstufe in Punkten.
@@ -86,6 +91,10 @@ class Evaluation:
     missed_required: list[str]
     summary: str
     engine: str                   # "heuristik" | "llm:<model>"
+    # Einzelne, klar formulierte Hinweise zur Deckelung (wichtigster zuerst).
+    hinweise: list[str] = field(default_factory=list)
+    # Punkte vor den gestaffelten Obergrenzen (nur Heuristik; sonst None).
+    points_uncapped: float | None = None
     disclaimer: str = (
         "Lernhilfe, keine Rechtsberatung. Die Bewertung erfolgt gegen den "
         "hinterlegten Erwartungshorizont dieses Übungsfalls."
@@ -102,12 +111,13 @@ def parse_expectation(raw: dict[str, Any] | None) -> list[Pruefpunkt]:
     return [
         Pruefpunkt(
             id=str(p.get("id") or f"p{i}"),
-            label=p.get("label", ""),
+            label=str(p.get("label", "")),
             weight=float(p.get("weight", 1.0)),
-            keywords=list(p.get("keywords", [])),
-            norms=list(p.get("norms", [])),
+            # YAML liest ``- 43`` als int; ohne str() stuerzt der Abgleich ab.
+            keywords=[str(k) for k in (p.get("keywords") or [])],
+            norms=[str(n) for n in (p.get("norms") or [])],
             required=bool(p.get("required", False)),
-            card_slugs=list(p.get("card_slugs", [])),
+            card_slugs=[str(c) for c in (p.get("card_slugs") or [])],
         )
         for i, p in enumerate(points)
     ]
@@ -156,12 +166,204 @@ class Evaluator(Protocol):
 HEURISTIK_MAX_PUNKTE = 11.0
 
 
+# --------------------------------------------------------------------------- #
+# Stichwortabgleich: Wortgrenzen, Negation, Satzkontext
+# --------------------------------------------------------------------------- #
+
+# Verneinung *vor* dem Treffer (innerhalb derselben Satzteils, max. 3 Woerter):
+# "nicht erforderlich", "keine Enteignung", "ohne Rechtfertigung".
+_NEG_VOR = frozenset(
+    {
+        "nicht", "kein", "keine", "keinen", "keinem", "keiner", "keines", "nie",
+        "niemals", "ohne", "weder", "mangels", "fehlende", "fehlenden", "fehlender",
+        "fehlendes",
+    }
+)
+# Verneinung *nach* dem Treffer ("Ein Eingriff liegt nicht vor", "Der Angriff
+# fehlt", "Die Notwehrlage scheidet aus") - nur mit Praedikat, damit
+# "Meinungen und keine Tatsachen" ein Treffer auf "Meinung" bleibt.
+_NEG_NACH = re.compile(
+    r"\b(?:nicht|kein\w*|nie|niemals)\s+(?:vor|gegeben|erfullt|eroffnet|gewahrt|"
+    r"einschlagig|ersichtlich|gedeckt|betroffen|verletzt|gerechtfertigt|zu\s+bejahen|"
+    r"anzunehmen|zutreffend|erforderlich|begrundet|wirksam|der\s+fall)\b"
+    r"|\b(?:fehlt|fehlen|entfallt|entfallen|ausgeschlossen|abzulehnen|zu\s+verneinen|"
+    r"verneint|verneinen|mangelt)\b|\bscheidet\s+(?:\w+\s+)?aus\b"
+)
+# Pruefpunkte, deren Label selbst eine Verneinung/Abgrenzung verlangt: dort ist
+# "liegt nicht vor" die *richtige* Antwort und kein Widerspruch.
+_LABEL_VERNEINUNG_ERLAUBT = re.compile(
+    r"verneint|unbeachtlich|abgrenz|abgelehnt|entfallt|scheidet aus|ausgeschlossen"
+)
+_VERBEN = frozenset(
+    "ist sind war waren wird werden wurde wurden hat haben hatte hatten kann kann "
+    "konnte koennte muss muesste musste soll liegt liegen lag besteht bestand gilt "
+    "gelten greift entfaellt scheidet handelt handelte erfuellt erfolgt steht bleibt "
+    "macht fuehrt zeigt ergibt folgt verlangt setzt genuegt reicht bedeutet stellt "
+    "hindert begruendet schuetzt verstoesst verstoesst verletzt trifft wollte wusste "
+    "besteht".split()
+)
+_ARTIKEL = frozenset(
+    "ein eine einen einem einer eines der die das den dem des dieser diese dieses".split()
+)
+_PARTIZIP = re.compile(r"\bge[a-z]{3,}(?:t|en)\b")
+# Kleingeschriebene Wortformen auf -t/-te/-ten/-en gelten (ausser diesen) als finites Verb.
+_KEIN_VERB = frozenset(
+    "nicht jetzt bereits zumindest weit erst selbst zuletzt jedoch damit sowie "
+    "gerecht oft meist nebst samt statt trotz zudem hingegen entsprechend "
+    "bestimmt gemeint gewiss allerdings gegen neben zwischen wegen innen aussen "
+    "unten oben hinten vorn".split()
+)
+_VERB_FORM = re.compile(r"^[a-z]{3,}(?:t|te|ten|en)$")
+MIN_SATZ_WOERTER = 6
+MAX_KOMMA_DICHTE = 0.3
+
+_ZAHL_KEYWORD = re.compile(r"\d+[a-z]?")
+_PARAGRAPH_TOKEN = re.compile(r"§§?|art\.?|[^\s,]+|,")
+_PARAGRAPH_KETTE = frozenset(
+    {"abs", "abs.", "absatz", "s.", "satz", "nr.", "alt.", "var.", "und", "bis", "u.", "/", ",",
+     "i", "ii", "iii", "iv", "v", "vi", "f.", "ff."}
+)
+
+
+def _kw_muster(kwn: str) -> re.Pattern[str]:
+    if _ZAHL_KEYWORD.fullmatch(kwn):
+        ende = r"(?![a-z0-9])"
+    else:
+        ende = r"(?!\d)" if kwn[-1:].isdigit() else ""
+    return re.compile(r"(?<![a-z0-9])" + re.escape(kwn) + ende)
+
+
+def _ist_vollstaendiger_satz(satz: str) -> bool:
+    """Heuristik: Satz mit Verb, ausreichend lang und keine Aufzaehlung.
+
+    Stichwortlisten ("Notwehrlage, gegenwaertiger Angriff, erforderlich") sollen
+    keine Inhaltspunkte liefern: Ein Treffer zaehlt nur im Satzzusammenhang.
+    """
+    woerter = re.findall(r"[\wäöüÄÖÜß]+", satz)
+    if len(woerter) < MIN_SATZ_WOERTER:
+        return False
+    if satz.count(",") / len(woerter) > MAX_KOMMA_DICHTE:
+        return False
+    norm = _normalize(satz)
+    tokens = re.findall(r"[a-z0-9]+", norm)
+    if any(t in _VERBEN for t in tokens) or _PARTIZIP.search(norm):
+        return True
+    # Kleingeschriebene Formen auf -t/-te/-ten im Originalsatz ("kommt", "bevorstand" nicht).
+    klein = re.findall(r"(?<![\wäöüÄÖÜß])[a-zäöüß]+", satz)
+    return any(
+        _VERB_FORM.match(_normalize(w)) and _normalize(w) not in _KEIN_VERB for w in klein
+    )
+
+
+def _saetze(text: str) -> list[str]:
+    """Saetze des Textes; Zeilenumbrueche trennen auch ohne Satzzeichen."""
+    result: list[str] = []
+    for zeile in re.split(r"\n+", text):
+        if zeile.strip():
+            result.extend(split_sentences(zeile))
+    return result
+
+
+def _wortende(satz: str, pos: int) -> int:
+    while pos < len(satz) and satz[pos].isalnum():
+        pos += 1
+    return pos
+
+
+def _verneint(satz: str, start: int, ende: int, *, nach: bool = True) -> bool:
+    """Steht der Treffer ``satz[start:ende]`` im Verneinungsfenster?"""
+    vorher = re.split(r"[,;:]", satz[:start])[-1]
+    if any(
+        t in _NEG_VOR or t.startswith("kein")
+        for t in re.findall(r"[a-z0-9]+", vorher)[-3:]
+    ):
+        return True
+    if not nach:
+        return False
+    # Nach dem Treffer: bis zum Satzteil-Ende. Ein Komma beendet den Satzteil nur,
+    # wenn davor ein Verb stand - sonst ist es eine Aufzaehlung ("Ein Erklaerungsirrtum,
+    # ein Inhaltsirrtum und ein Motivirrtum liegen nicht vor").
+    rest = satz[_wortende(satz, ende):]
+    nachher: list[str] = []
+    # Aufzaehlung nur, wenn der Treffer ein Substantiv am Satzteil-Anfang ist
+    # ("Ein Erklaerungsirrtum, ..."), nicht ein Praedikat ("war auch geboten, ...").
+    davor = re.findall(r"[a-z0-9]+", vorher)
+    aufzaehlung = not davor or davor[-1] in _ARTIKEL
+    for teil in re.split(r"(?<=[;:])|,", rest)[:4]:
+        nachher.append(teil)
+        verb = any(t in _VERBEN for t in re.findall(r"[a-z0-9]+", teil))
+        if verb or teil.endswith((";", ":")) or not aufzaehlung:
+            break
+    return bool(_NEG_NACH.search(" ".join(" ".join(nachher).split()[:12])))
+
+
+def _in_paragraphkette(satz: str, start: int) -> bool:
+    """Steht die Zahl an ``start`` hinter einem ``§``/``Art.``-Zitat?"""
+    vorher = satz[max(0, start - 70):start]
+    for token in reversed(_PARAGRAPH_TOKEN.findall(vorher)):
+        if token in ("§", "§§") or token.startswith("art"):
+            return True
+        if token in _PARAGRAPH_KETTE or re.fullmatch(r"\d+[a-z]?", token):
+            continue
+        return False
+    return False
+
+
+def _vorkommen(satz: str, kwn: str) -> list[tuple[str, int, int]]:
+    """Alle Treffer eines normalisierten Stichworts im normalisierten Satz.
+
+    Wortanfang statt Substring ("unbeendeter Versuch" trifft nicht "beendeter
+    Versuch"); reine Zahlen nur hinter einem Paragraphen-/Artikelzeichen.
+    Erst direkt, dann mit ae/oe/ue-Faltung auf beiden Seiten.
+    """
+    varianten = [(satz, kwn)]
+    gefaltet = (_digraph_fold(satz), _digraph_fold(kwn))
+    if gefaltet != varianten[0]:
+        varianten.append(gefaltet)
+    zahl = bool(_ZAHL_KEYWORD.fullmatch(kwn))
+    for text, kw in varianten:
+        treffer = []
+        for m in _kw_muster(kw).finditer(text):
+            if zahl and not _in_paragraphkette(text, m.start()):
+                continue
+            treffer.append((text, m.start(), m.end()))
+        if treffer:
+            return treffer
+    return []
+
+
+def _kw_negation_erwartet(label_n: str, kwn: str) -> bool:
+    """Das Stichwort ist selbst verneinend oder steht im Label hinter einer Verneinung."""
+    if any(t in _NEG_VOR for t in kwn.split()):
+        return True
+    return bool(
+        re.search(
+            r"\b(?:nicht|kein\w*|ohne|nie|weder)\s+(?:\w+\s+){0,2}" + re.escape(kwn), label_n
+        )
+    )
+
+
+def _punkte_aus_roh(roh: float) -> float:
+    return round(roh * 18 * 2) / 2
+
+
+def _runde_halb(x: float) -> float:
+    return round(x * 2) / 2
+
+
 class HeuristicEvaluator:
     """Stichwort- und Normabgleich gegen den Erwartungshorizont.
 
     Bewusst konservativ und gedeckelt: er erkennt, *ob* ein Pruefpunkt
     angesprochen wurde, nicht ob die Argumentation traegt. Das ist ehrlicher
     als eine Scheinnote und als Fallback ohne Netz belastbar.
+
+    Schutz gegen die offensichtlichsten Umgehungen (Test 8, Stresstest):
+
+    * Wortgrenzen und Verneinungserkennung ("nicht erforderlich" ist kein Treffer),
+    * Treffer zaehlen nur in vollstaendigen Saetzen (keine Stichwortlisten),
+    * gestaffelte Deckel statt harter Klippe: fehlende Kernpunkte, kaputte
+      Struktur, Copy-Paste und ein Text zum falschen Fall senken die Obergrenze.
     """
 
     name = "heuristik"
@@ -170,25 +372,68 @@ class HeuristicEvaluator:
         self, *, text: str, expectation: dict, structure: GutachtenReport
     ) -> Evaluation:
         checkpoints = parse_expectation(expectation)
-        haystack = _normalize(text)
-        folded_haystack = _digraph_fold(haystack)
-        norms_seen = {_normalize(n).replace(" ", "") for n in structure.norms}
+
+        # Nur Saetze mit Verb und Satzbau zaehlen als inhaltliche Aussage.
+        gesehen: set[str] = set()
+        saetze: list[str] = []
+        for satz in _saetze(text):
+            if not _ist_vollstaendiger_satz(satz):
+                continue
+            n = _normalize(satz)
+            if n not in gesehen:
+                gesehen.add(n)
+                saetze.append(n)
+        norms_seen = extract_norms(" ".join(_saetze_roh(text)))
 
         results: list[PruefpunktResult] = []
+        widerspruch: list[tuple[str, str]] = []  # (Label, Stichwort)
         for cp in checkpoints:
-            evidence = ""
-            hit = False
+            label_n = _normalize(cp.label)
+            # "... geprueft": ein Ergebnis wie "Einschraenkungen sind nicht ersichtlich"
+            # ist dort richtig; nur die Verneinung *vor* dem Stichwort zaehlt.
+            nur_vor = "gepruft" in label_n and "sauber" not in label_n
+            verneinung_ok = bool(_LABEL_VERNEINUNG_ERLAUBT.search(label_n))
+            hit, evidence, contra = False, "", ""
             for kw in cp.keywords:
-                normalized_kw = _normalize(kw)
-                if normalized_kw in haystack or _digraph_fold(normalized_kw) in folded_haystack:
-                    hit, evidence = True, kw
-                    break
-            if not hit:
+                kwn = _normalize(kw)
+                if not kwn:
+                    continue
+                zahl = bool(_ZAHL_KEYWORD.fullmatch(kwn))
+                geprueft = not verneinung_ok and not _kw_negation_erwartet(label_n, kwn)
+                positiv = negativ = False
+                for satz in saetze:
+                    for variante, a, b in _vorkommen(satz, kwn):
+                        if geprueft and not zahl and _verneint(
+                            variante, a, b, nach=not nur_vor
+                        ):
+                            negativ = True
+                        else:
+                            positiv = True
+                    if positiv:
+                        break
+                if positiv:
+                    if not hit:
+                        hit, evidence = True, kw
+                elif negativ and not contra:
+                    contra = kw
+            if contra:
+                # Ein ausdruecklich verneintes Kernstichwort ist ein Widerspruch zum
+                # erwarteten Ergebnis - auch dann, wenn ein anderes Stichwort traf.
+                hit, evidence = False, ""
+                widerspruch.append((cp.label, contra))
+            elif not hit:
                 for norm in cp.norms:
-                    key = _normalize(norm).replace(" ", "")
-                    if any(key in seen or seen in key for seen in norms_seen):
+                    if any(norm_matches(norm, seen) for seen in norms_seen):
                         hit, evidence = True, norm
                         break
+            if hit:
+                comment = ""
+            elif contra:
+                comment = (
+                    f"Du erwähnst „{contra}“, verneinst es aber. Erwartet wird: {cp.label}."
+                )
+            else:
+                comment = f"Dieser Prüfpunkt wird nicht angesprochen. Erwartet: {cp.label}."
             results.append(
                 PruefpunktResult(
                     id=cp.id,
@@ -196,7 +441,7 @@ class HeuristicEvaluator:
                     weight=cp.weight,
                     hit=hit,
                     evidence=evidence,
-                    comment="" if hit else "Dieser Prüfpunkt wird nicht angesprochen.",
+                    comment=comment,
                 )
             )
 
@@ -204,34 +449,104 @@ class HeuristicEvaluator:
         achieved = sum(cp.weight for cp, r in zip(checkpoints, results, strict=True) if r.hit)
         content_ratio = achieved / total_weight
 
+        required = [cp for cp in checkpoints if cp.required]
         missed_required = [
             cp.label
             for cp, r in zip(checkpoints, results, strict=True)
             if cp.required and not r.hit
         ]
+        getroffen = sum(1 for r in results if r.hit)
 
         # Inhalt zaehlt deutlich schwerer als Form - so bewerten Korrektoren auch.
         raw = 0.72 * content_ratio + 0.28 * (structure.score / 100)
-        points = round(raw * 18 * 2) / 2
-        if missed_required:
-            # Ein fehlender Kernpunkt deckelt die Bewertung im unteren Bereich.
-            points = min(points, 3.5)
-        gedeckelt = points > HEURISTIK_MAX_PUNKTE
-        points = max(0.0, min(HEURISTIK_MAX_PUNKTE, points))
+        wrong_case = bool(checkpoints) and getroffen == 0
+        if wrong_case:
+            # Struktur allein ist kein Verdienst, wenn nichts zum Fall passt.
+            raw = 0.0
+        points_roh = min(HEURISTIK_MAX_PUNKTE, _punkte_aus_roh(raw))
 
-        getroffen = sum(1 for r in results if r.hit)
+        # Gestaffelte Obergrenzen: (Grenze, Hinweis). Es zaehlt die niedrigste.
+        deckel: list[tuple[float, str]] = []
+        if wrong_case:
+            deckel.append((
+                1.0,
+                "Deine Lösung passt offenbar nicht zum Sachverhalt: Kein einziger "
+                "Prüfpunkt wurde erkannt.",
+            ))
+        req_grenze = None
+        if missed_required:
+            anteil = len(missed_required) / len(required)
+            grenze = max(3.5, _runde_halb(HEURISTIK_MAX_PUNKTE - 7.5 * anteil))
+            req_grenze = grenze
+            deckel.append((grenze, ""))
+        if widerspruch:
+            grenze = max(3.0, HEURISTIK_MAX_PUNKTE - 2.0 * len(widerspruch))
+            deckel.append((
+                grenze,
+                "Bei "
+                + ", ".join(f"„{lab}“ (du schreibst: {kw} verneint)" for lab, kw in widerspruch)
+                + " widerspricht deine Formulierung dem erwarteten Ergebnis.",
+            ))
+        if structure.score == 0:
+            deckel.append((
+                4.0,
+                "Ohne erkennbaren Gutachtenaufbau (Strukturscore 0, z. B. Stichwortliste, "
+                "Urteilsstil oder zu kurzer Text) sind höchstens 4 Punkte möglich.",
+            ))
+        elif structure.score < 30:
+            deckel.append((
+                6.0,
+                "Wegen des schwachen Gutachtenaufbaus (Strukturscore unter 30, z. B. "
+                "Urteilsstil statt Gutachtenstil) sind höchstens 6 Punkte möglich.",
+            ))
+        dup = getattr(structure, "duplicate_ratio", 0.0)
+        if dup > 0.5:
+            deckel.append((
+                3.0,
+                f"Der Text besteht zu {dup:.0%} aus wortgleichen Wiederholungen; "
+                "wiederholter Text zählt nur einmal.",
+            ))
+        elif dup > 0.25:
+            deckel.append((
+                6.0,
+                f"{dup:.0%} der Sätze sind wortgleiche Wiederholungen; "
+                "wiederholter Text zählt nur einmal.",
+            ))
+
+        points = points_roh
+        for grenze, _ in deckel:
+            points = min(points, grenze)
+        points = max(0.0, points)
+
+        # --- Rueckmeldung: wichtigste Einschraenkung zuerst --------------------
+        hinweise: list[str] = []
+        for grenze, hinweis in deckel:
+            if hinweis and (grenze < points_roh or wrong_case):
+                hinweise.append(hinweis)
+        if missed_required:
+            namen = ", ".join(missed_required)
+            satz = (
+                f"Kernprüfpunkte fehlen: {namen} - nicht erkannt. Falls du sie anders "
+                "formuliert hast, kann der Stichwortabgleich sie übersehen."
+            )
+            if req_grenze is not None and req_grenze < points_roh:
+                satz += (
+                    f" Die Punktzahl ist deshalb auf {points:g} begrenzt "
+                    f"(ohne diese Begrenzung: {points_roh:g})."
+                )
+            hinweise.insert(1 if wrong_case else 0, satz)
+
         summary = (
-            f"{getroffen} von {len(results)} Pruefpunkten angesprochen "
+            f"Hinweis: Ohne KI-Korrektur ist die Punktzahl bei "
+            f"{HEURISTIK_MAX_PUNKTE:.0f} Punkten gedeckelt. Der Stichwortabgleich "
+            "prüft, ob ein Punkt angesprochen wurde, nicht ob die Argumentation überzeugt."
+        )
+        if hinweise:
+            summary += " " + " ".join(hinweise)
+        summary += (
+            f" Ergebnis: {getroffen} von {len(results)} Prüfpunkten angesprochen "
             f"(gewichtet {content_ratio:.0%}), Strukturscore {structure.score}/100."
         )
-        if missed_required:
-            summary += " Kernprüfpunkte fehlen: " + ", ".join(missed_required) + "."
-        if gedeckelt:
-            summary += (
-                f" Ohne KI-Korrektur wird bei {HEURISTIK_MAX_PUNKTE:.0f} Punkten "
-                "gedeckelt: Der Stichwortabgleich prüft, ob ein Punkt "
-                "angesprochen wurde, nicht ob die Argumentation überzeugt."
-            )
 
         return Evaluation(
             points=points,
@@ -242,7 +557,14 @@ class HeuristicEvaluator:
             missed_required=missed_required,
             summary=summary,
             engine=self.name,
+            hinweise=hinweise,
+            points_uncapped=points_roh,
         )
+
+
+def _saetze_roh(text: str) -> list[str]:
+    """Volle Saetze (unnormalisiert), fuer die Normerkennung im Satzzusammenhang."""
+    return [s for s in _saetze(text) if _ist_vollstaendiger_satz(s)]
 
 
 class LLMEvaluator:
