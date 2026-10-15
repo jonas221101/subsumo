@@ -8,6 +8,7 @@ import '../design/design.dart';
 import '../state.dart';
 import '../eingabe_art.dart';
 import '../text_schutz.dart';
+import '../util/touch_geraet.dart';
 import '../theme.dart';
 import 'fit_title.dart';
 import 'norm_sheet.dart';
@@ -108,6 +109,7 @@ class _ReviewPageState extends State<ReviewPage> {
         defaultTargetPlatform == TargetPlatform.iOS ||
         _touchSeen ||
         touchErkannt.value ||
+        istTouchGeraet() ||
         // Web auf Tablets meldet oft eine Desktop-Plattform: ohne je
         // angeschlossene Maus gibt es keine Tastaturbedienung zu bewerben.
         (kIsWeb && !RendererBinding.instance.mouseTracker.mouseIsConnected);

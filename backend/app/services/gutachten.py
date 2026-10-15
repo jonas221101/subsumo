@@ -95,6 +95,13 @@ _OBERSATZ_PATTERNS = [
     r"\bes\s+müsste\b",
     r"\bdies\s+setzt\s+voraus\b",
     r"\bhätte\s+sich\b.*\bstrafbar\s+gemacht\b",
+    # Konditionaler Obersatz: "Die Klage hat Erfolg, wenn ..." / "Das Vorhaben ist
+    # zulaessig, wenn ..." (Nutzertest W10/W12; so schlaegt es auch der Platzhalter vor).
+    # Nur mit bestimmtem Subjekt - "Rechtswidrig ist ein Verwaltungsakt, wenn ..."
+    # bleibt eine Definition.
+    r"^(die|der|das|diese[rs]?)\s(?:(?!\bein(?:e|er|es|en|em)?\b)[^,]){0,120}"
+    r"\b(zulässig|begründet|erfolg|rechtmäßig|rechtswidrig|strafbar)\b"
+    r"[^,]{0,40},\s*(wenn|sofern|soweit)\b",
 ]
 
 _DEFINITION_PATTERNS = [

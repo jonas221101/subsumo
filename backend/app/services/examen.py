@@ -609,7 +609,11 @@ def readiness(
             "label": "Gutachtentechnik",
             "value": None if technik is None else round(technik, 3),
             "detail": (
-                f"Aufbau-Bewertung der letzten {len(letzte)} Abgaben."
+                (
+                    "Aufbau-Bewertung der letzten Abgabe."
+                    if len(letzte) == 1
+                    else f"Aufbau-Bewertung der letzten {len(letzte)} Abgaben."
+                )
                 if letzte
                 else "Noch keine Abgabe - Struktur-Feedback im Gutachten-Trainer."
             ),

@@ -30,3 +30,18 @@ def test_kurzer_ergebnissatz_trifft():
 def test_stichwortzeile_ohne_satz_trifft_nicht():
     assert not _eval("Vorhaben ist unzulässig, Außenbereich, § 35 BauGB").checkpoints[0].hit
     assert not _eval("Vorhaben unzulässig").checkpoints[0].hit
+
+
+def test_konditionaler_obersatz_wird_erkannt():
+    from app.services.gutachten import Step, classify_sentence
+
+    assert classify_sentence("Die Klage hat Erfolg, wenn sie zulässig und begründet ist.") is (
+        Step.OBERSATZ
+    )
+    assert classify_sentence(
+        "Das Vorhaben ist bauplanungsrechtlich zulässig, wenn § 35 BauGB erfüllt ist."
+    ) is Step.OBERSATZ
+    # Definitionen bleiben Definitionen.
+    assert classify_sentence(
+        "Eine Sache ist fremd, wenn sie nicht im Alleineigentum des Täters steht."
+    ) is Step.DEFINITION

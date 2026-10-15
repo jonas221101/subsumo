@@ -181,7 +181,7 @@ cards:
 schemata:
 - slug: ni-schema-kr-beschluss
   title: >-
-    Rechtmäßigkeit eines Beschlusses der Gemeindevertretung nach dem Kommunalrecht von Niedersachsen
+    Rechtmäßigkeit eines Ratsbeschlusses (Beschluss der Vertretung) nach dem Kommunalrecht von Niedersachsen
   norms:
   - § 41 NKomVG
   - Art. 28 Abs. 2 GG
@@ -193,8 +193,8 @@ schemata:
   - label: I. Formelle Rechtmäßigkeit des Beschlusses
     children:
     - label: >-
-        1. Zuständigkeit: Vertretung oder Verwaltungsspitze (Hauptsatzung, Gemeindeordnung), Verbandskompetenz
-        der Gemeinde
+        1. Zuständigkeit: Vertretung (Rat), Hauptausschuss (§ 76 NKomVG) oder Hauptverwaltungsbeamter
+        (§ 85 NKomVG), Abgrenzung in der Hauptsatzung; Verbandskompetenz der Gemeinde
     - label: 2. Ordnungsgemäße Einberufung, Ladung, Öffentlichkeit der Sitzung, Beschlussfähigkeit
     - label: 3. Mitwirkungsverbote
       hinweis: >-
