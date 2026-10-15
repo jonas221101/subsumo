@@ -4,12 +4,13 @@ kurs:
   area: zivilrecht
   semester_default: 4
   examenskurs: false
-  stand: 2026-09
+  stand: 2026-10
   quellen:
   - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Deliktsrecht (§§ 823 ff. BGB) und Bereicherungsrecht (§§ 812 ff. BGB) - die beiden Anspruchsgruppen,
-    die in fast jeder Zivilrechtsklausur auftauchen.
+  beschreibung: Deliktsrecht (§§ 823 ff. BGB, Verkehrspflichten, Gefährdungshaftung nach ProdHaftG und StVG) und
+    Bereicherungsrecht (§§ 812 ff. BGB, auch im Mehrpersonenverhältnis) sowie die GoA - die Anspruchsgruppen, die
+    in fast jeder Zivilrechtsklausur auftauchen.
   lernziele:
   - § 823 Abs. 1, Abs. 2 und § 826 BGB sowie § 831 und § 833 BGB als Anspruchsgrundlagen prüfen
   - Leistungskondiktion von der Nichtleistungskondiktion (§§ 812 Abs. 1 S. 1 Alt. 2, 816 BGB) abgrenzen
@@ -25,7 +26,10 @@ kurs:
   - zr-goa-677-ff
   - zr-bereicherungsrecht-nichtleistungskondiktion
   - zr-deliktsrecht-831-833
+  - zr-bereicherung-mehrpersonen
+  - zr-delikt-823-vertiefung
+  - zr-delikt-gefaehrdungshaftung
   landesrecht_kategorien: []
   fehlende_themen:
-  - Bereicherungsrecht bei Mehrpersonenverhältnissen (Anweisung, Abtretung, Vertrag zugunsten Dritter) (P1)
-  - 'Deliktsrecht vertiefen: Produkthaftung, § 7 StVG, Amtshaftung § 839 BGB/Art. 34 GG (P2)'
+  - 'Amtshaftung nach § 839 BGB/Art. 34 GG: siehe Kurs Staatshaftung und Verwaltungsvollstreckung (Öffentliches
+    Recht)'

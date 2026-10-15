@@ -4,14 +4,18 @@ kurs:
   area: strafrecht
   semester_default: 7
   examenskurs: true
-  stand: 2026-09
+  stand: 2026-10
   quellen:
   - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Wiederholung von AT und BT auf Examensniveau, mit Blick auf mehrpersonale Sachverhalte und Konkurrenzfragen. Grundstock mit Schwerpunkt AT und Vermögensdelikten; Randdelikte (Brandstiftung, Aussage, Straßenverkehr), Freiheitsdelikte und die StPO fehlen noch.
+  beschreibung: 'Wiederholung des Strafrechts auf Examensniveau: Allgemeiner Teil, Delikte gegen Person und Vermögen,
+    Randdelikte (Brandstiftung, Aussage, Straßenverkehr, Amtsdelikte) und Strafprozessrecht, mit Blick auf mehrpersonale
+    Sachverhalte und Konkurrenzfragen.'
   lernziele:
   - Mehrpersonale Sachverhalte nach Tatkomplexen und Beteiligten gliedern
   - AT-Figuren (Versuch, Irrtum, Beteiligung) innerhalb der BT-Delikte sicher anwenden
+  - Konkurrenzen im Gutachten sauber auflösen
+  - Strafprozessuale Zusatzfragen (Beweisverwertung, Zwangsmaßnahmen, Rechtsmittel) in die Klausur einbetten
   klausurformat:
     typ: Examensklausur
     minuten: 300
@@ -43,20 +47,32 @@ kurs:
   - sr-bt-koerperverletzung-226-227
   - sr-bt-diebstahl-qualifikationen-244
   - sr-bt-anschlussdelikte-257-259
+  - sr-at-rechtfertigung-sonstige
+  - sr-at-vorsatz-fahrlaessigkeit-formen
+  - sr-at-versuch-vertiefung
+  - sr-at-beteiligung-vertiefung
+  - sr-at-strafzumessung-kcang
+  - sr-bt-mord-ergaenzung
+  - sr-bt-koerperverletzung-ergaenzung
+  - sr-bt-aussetzung-221
+  - sr-bt-freiheitsdelikte
+  - sr-bt-erpresserischer-menschenraub
+  - sr-bt-sexualdelikte-grundzuege
+  - sr-bt-ehrdelikte
+  - sr-bt-hausfriedensbruch-123
+  - sr-bt-sachbeschaedigung-303
+  - sr-bt-computerbetrug-263a
+  - sr-bt-raeuberischer-diebstahl-252
+  - sr-bt-urkundendelikte-erweitert
+  - sr-bt-brandstiftung
+  - sr-bt-strassenverkehr
+  - sr-bt-aussagedelikte
+  - sr-bt-strafvereitelung-amtsdelikte
+  - sr-bt-widerstand-unterlassene-hilfe
+  - sr-bt-geldwaesche-261
+  - sr-stpo-grundzuege
+  - sr-stpo-rechtsmittel-zwangsmassnahmen
   landesrecht_kategorien: []
   fehlende_themen:
-  - Brandstiftungsdelikte §§ 306 ff. StGB (P1)
-  - Sachbeschädigung §§ 303 ff. StGB (P1)
-  - § 263a, § 265a StGB (P1)
-  - Aussagedelikte §§ 153 ff., Falsche Verdächtigung § 164 StGB (P1)
-  - Straßenverkehrsdelikte §§ 315b, 315c, 316, 142, 315d StGB (P1)
-  - § 252, § 316a StGB (P1)
-  - Urkundendelikte §§ 268, 269, 271, 274 StGB (P2)
-  - Freiheitsdelikte §§ 239, 239a, 239b StGB (P1)
-  - 'Beteiligung vertiefen: § 28, Mord-Beteiligung, Organisationsherrschaft, § 30 StGB (P1)'
-  - Strafprozessrecht Grundzüge (P1)
-  - § 123, §§ 185 ff. StGB (P2)
-  - §§ 113, 114, 323c StGB (P2)
-  - 'Notrechte: § 127 StPO, §§ 229, 859 BGB (P2)'
-  - §§ 225, 229, 231 StGB (P2)
-  - Rücktritt vertiefen, Amtsdelikte §§ 331 ff. StGB (P2)
+  - Betäubungsmittel-, Wirtschafts- und Umweltstrafrecht (P3)
+  - Mehrstufige Examensfälle als eigenes Format (P2)

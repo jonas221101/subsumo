@@ -1,0 +1,34 @@
+kurs:
+  slug: zr-nebengebiete
+  title: Zivilrechtliche Nebengebiete (Grundzüge)
+  area: zivilrecht
+  semester_default: 6
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: 'Die Nebengebiete des Zivilrechts in Grundzügen: Handelsrecht, Gesellschaftsrecht nach MoPeG, Erbrecht,
+    Familienrecht, Arbeitsrecht sowie ZPO (Erkenntnisverfahren und Zwangsvollstreckung). Der Prüfungsumfang unterscheidet
+    sich je Bundesland; die Themen decken den gemeinsamen Kern ab.'
+  lernziele:
+  - Kaufmannseigenschaft, Registerpublizität und Vertretung im Handelsrecht prüfen
+  - GbR, OHG, KG und GmbH nach MoPeG unterscheiden und Haftungsfragen lösen
+  - Gesetzliche und gewillkürte Erbfolge, Testament und Pflichtteil einordnen
+  - Zulässigkeit der Klage und Rechtsbehelfe der Zwangsvollstreckung aufbauen
+  klausurformat:
+    typ: Fortgeschrittenenklausur
+    minuten: 180
+  topic_slugs:
+  - zr-handelsrecht
+  - zr-gesellschaftsrecht
+  - zr-erbrecht-grundzuege
+  - zr-familienrecht-grundzuege
+  - zr-arbeitsrecht-grundzuege
+  - zr-zpo-erkenntnisverfahren
+  - zr-zpo-zwangsvollstreckung
+  landesrecht_kategorien: []
+  fehlende_themen:
+  - Insolvenzrecht (P3)
+  - Vertiefung Familienrecht (Unterhalt, Abstammung) und Erbrecht (Erbengemeinschaft, Erbschein) (P3)
+  - Wertpapier- und Kapitalmarktrecht (P3)

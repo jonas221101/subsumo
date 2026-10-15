@@ -4,16 +4,22 @@ kurs:
   area: zivilrecht
   semester_default: 2
   examenskurs: false
-  stand: 2026-09
+  stand: 2026-10
   quellen:
   - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: 'Leistungsstörungsrecht und allgemeines Schuldrecht: Unmöglichkeit, Verzug, Schadensersatz statt der Leistung, Rücktritt, vorvertragliche Pflichten, AGB-Kontrolle, Abtretung und Schadensrecht (§§ 249-254 BGB). Grundstock; es fehlen noch Verschulden/Zurechnung (§§ 276, 278), Erlöschen der Schuld und Verträge mit Drittbezug.'
+  beschreibung: 'Leistungsstörungsrecht und allgemeines Schuldrecht: Vertretenmüssen und Gehilfenzurechnung, Unmöglichkeit,
+    Verzug, Gläubigerverzug, Schadensersatz statt der Leistung, Rücktritt, vorvertragliche Pflichten, AGB-Kontrolle,
+    Abtretung, Schuldübernahme, Erlöschen, Gesamtschuld, Verträge mit Drittwirkung, Störung der Geschäftsgrundlage,
+    Verbraucherwiderruf und Schadensrecht (§§ 249-254 BGB). Der Pflichtstoff ist abgedeckt.'
   lernziele:
   - Das System der §§ 280 ff. BGB als Anspruchsgrundlagen-Baukasten beherrschen
+  - Vertretenmüssen (§§ 276, 278 BGB) und Gehilfenzurechnung in der Klausur sauber prüfen
   - Unmöglichkeit (§ 275 BGB) und ihre Rechtsfolgen (§§ 283, 326 BGB) prüfen
-  - Verzug und Rücktritt in der Klausur sauber voneinander trennen
-  - AGB-Kontrolle als Einbettung in einen Vertragsfall anwenden
+  - Verzug, Gläubigerverzug und Rücktritt in der Klausur sauber voneinander trennen
+  - Erlöschenstatbestände, Gesamtschuld und Gesamtschuldnerausgleich anwenden
+  - Verträge mit Drittwirkung (§ 328 BGB, Schutzwirkung, Drittschadensliquidation) abgrenzen
+  - AGB-Kontrolle und Verbraucherwiderruf als Einbettung in einen Vertragsfall anwenden
   klausurformat:
     typ: Anfängerklausur
     minuten: 120
@@ -26,9 +32,13 @@ kurs:
   - zr-schuldrecht-at-agb-kontrolle
   - zr-abtretung-398
   - zr-schadensrecht-249-254
+  - zr-sat-vertretenmuessen-278
+  - zr-sat-glaeubigerverzug
+  - zr-sat-erloeschen
+  - zr-sat-gesamtschuld-regress
+  - zr-sat-vertrag-dritte
+  - zr-sat-schulduebernahme-beitritt
+  - zr-sat-stoerung-geschaeftsgrundlage-313
+  - zr-sat-verbraucherwiderruf
   landesrecht_kategorien: []
-  fehlende_themen:
-  - §§ 276, 278 BGB (Vertretenmüssen, Erfüllungsgehilfe) als eigenes Thema (P1)
-  - Gesamtschuld, Aufrechnung, Erfüllung und Erfüllungssurrogate (P1)
-  - Vertrag mit Schutzwirkung zugunsten Dritter, § 328 BGB, Drittschadensliquidation (P1)
-  - Störung der Geschäftsgrundlage, § 313 BGB (P2)
+  fehlende_themen: []

@@ -4,14 +4,18 @@ kurs:
   area: oeffentliches-recht
   semester_default: 1
   examenskurs: false
-  stand: 2026-09
+  stand: 2026-10
   quellen:
   - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Staatsstrukturprinzipien und Wahlrechtsgrundsätze, Gesetzgebungskompetenzen und -verfahren, Organstreit und Normenkontrolle - ergänzt um die Verfassung des eigenen Bundeslands. Verfassungsorgane und Abgeordnetenrecht fehlen noch.
+  beschreibung: Staatsstrukturprinzipien und Wahlrechtsgrundsätze, Verfassungsorgane, Abgeordnete und Parteien,
+    Gesetzgebungskompetenzen und -verfahren, Verwaltungskompetenzen und Finanzverfassung, Bundestreue sowie die
+    Verfahren Organstreit, Normenkontrolle und Bund-Länder-Streit - ergänzt um die Verfassung des eigenen Bundeslands.
   lernziele:
   - Gesetzgebungsverfahren (Art. 76 ff. GG) mit Zustimmungs-/Einspruchsgesetz prüfen
-  - Organstreitverfahren in Zulässigkeit und Begründetheit aufbauen
+  - Stellung und Befugnisse der Verfassungsorgane sowie Abgeordnetenstatus und Parteienrecht einordnen
+  - Organstreitverfahren und Bund-Länder-Streit in Zulässigkeit und Begründetheit aufbauen
+  - Verwaltungskompetenzen und Finanzverfassung (Art. 83 ff., 104a ff. GG) anwenden
   - Landesverfassung und Landesverfassungsgericht des eigenen Bundeslands einordnen
   klausurformat:
     typ: Anfängerklausur
@@ -22,10 +26,11 @@ kurs:
   - or-staatsorganisationsrecht-staatsstrukturprinzipien
   - or-staatsorganisationsrecht-gesetzgebungskompetenzen
   - or-verfassungsprozessrecht-normenkontrolle-93-100
+  - or-staatsorganisationsrecht-verfassungsorgane
+  - or-staatsorganisationsrecht-abgeordnete-parteien
+  - or-staatsorganisationsrecht-bundestreue-wehrverfassung
+  - or-staatsorganisationsrecht-verwaltungskompetenzen-finanzen
+  - or-verfassungsprozessrecht-bund-laender-eilrechtsschutz
   landesrecht_kategorien:
   - landesrecht-allgemein
-  fehlende_themen:
-  - 'Verfassungsorgane (Art. 62 ff. GG: Bundespräsident, Bundesregierung, Bundesrat) (P1)'
-  - Abgeordnete und Parteien (Art. 21, 38, 46-48 GG) (P1)
-  - Bund-Länder-Streit, § 32 BVerfGG, Finanzverfassung (P2)
-  - Europarecht/Unionsrecht Grundzüge (P1)
+  fehlende_themen: []

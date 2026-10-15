@@ -4,14 +4,19 @@ kurs:
   area: oeffentliches-recht
   semester_default: 7
   examenskurs: true
-  stand: 2026-09
+  stand: 2026-10
   quellen:
   - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Wiederholung von Staats- und Verwaltungsrecht auf Examensniveau, ergänzt um das Landesrecht-Wegweiserdeck des eigenen Bundeslands (Polizei, Verfassung, Kommunal-/Baurecht als Orientierung). Grundstock; Kommunal-, Bau- und Europarecht, Staatshaftung sowie viele Grundrechte fehlen noch.
+  beschreibung: 'Wiederholung des Öffentlichen Rechts auf Examensniveau: Staatsorganisationsrecht, Grundrechte,
+    Verfassungsprozess, Verwaltungsrecht AT und BT (Polizei-, Kommunal-, Baurecht), Verwaltungsprozess, Staatshaftung,
+    Verwaltungsvollstreckung und Europarecht, ergänzt um das Landesrecht des eigenen Bundeslands (Polizei, Verfassung,
+    Kommunal- und Bauordnungsrecht).'
   lernziele:
-  - Verwaltungsrechtliche Examensklausur mit Landesrecht als Ermächtigungsgrundlage strukturieren (soweit abgedeckt)
+  - Verwaltungsrechtliche Examensklausur mit Landesrecht als Ermächtigungsgrundlage strukturieren
   - Verfassungsrechtliche Klausur mit Verfassungsbeschwerde, Normenkontrolle oder Organstreit aufbauen
+  - Kommunal- und baurechtliche Einkleidungen in Verwaltungsprozessklausuren lösen
+  - Unionsrechtliche Bezüge und Staatshaftungsansprüche in die Klausur einbetten
   klausurformat:
     typ: Examensklausur
     minuten: 300
@@ -41,19 +46,40 @@ kurs:
   - or-vwgo-allgemeine-leistungsklage-feststellungsklage
   - or-vwgo-fortsetzungsfeststellungsklage
   - or-vwgo-normenkontrolle-47
+  - or-staatsorganisationsrecht-verfassungsorgane
+  - or-staatsorganisationsrecht-abgeordnete-parteien
+  - or-staatsorganisationsrecht-bundestreue-wehrverfassung
+  - or-staatsorganisationsrecht-verwaltungskompetenzen-finanzen
+  - or-verfassungsprozessrecht-bund-laender-eilrechtsschutz
+  - or-grundrechte-allgemeine-lehren
+  - or-gr-menschenwuerde-leben
+  - or-gr-apr-informationelle-selbstbestimmung
+  - or-gr-religionsfreiheit-art4
+  - or-gr-presse-rundfunk-kunst-wissenschaft
+  - or-gr-weitere-freiheitsrechte
+  - or-gr-gleichheitsrechte-speziell
+  - or-gr-justizgrundrechte-art33
+  - or-vwr-oeffentlich-rechtlicher-vertrag-realakt
+  - or-vwr-planfeststellung-subventionen
+  - or-vwgo-sachentscheidungsvoraussetzungen
+  - or-vwgo-einstweilige-anordnung-123
+  - or-polizeirecht-vertiefung
+  - or-versammlungsrecht
+  - or-kommunalrecht-selbstverwaltung
+  - or-kommunalrecht-organe-kommunalverfassungsstreit
+  - or-kommunalrecht-satzung-einrichtungen
+  - or-kommunalrecht-aufsicht-wirtschaft
+  - or-baurecht-bauleitplanung
+  - or-baurecht-bauplanungsrecht-zulaessigkeit
+  - or-baurecht-bauordnungsrecht-nachbarschutz
+  - or-staatshaftung
+  - or-vwr-verwaltungsvollstreckung
+  - or-europarecht-grundzuege
   landesrecht_kategorien:
   - polizei-ordnungsrecht
   - landesrecht-allgemein
+  - kommunalrecht
+  - bauordnungsrecht
   fehlende_themen:
-  - Kommunalrecht (P1)
-  - Bauplanungsrecht §§ 29 ff. BauGB und Bauordnungsrecht/Nachbarschutz (P1)
-  - Europarecht/Unionsrecht Grundzüge (P1)
-  - Verfassungsorgane Art. 62 ff., Abgeordnete/Parteien Art. 21, 38, 46-48 GG (P1)
-  - Grundrechte AT und weitere Grundrechte (Art. 4, 5 Abs. 3, 2 Abs. 2, 1 GG) (P1)
-  - Verwaltungsrechtsweg § 40 VwGO, Widerspruchsverfahren, § 123 VwGO als eigenes Thema (P1)
-  - Staatshaftung (P1)
-  - 'Polizeirecht vertiefen: Störerauswahl, Zwang, Kosten (P1)'
-  - Justizgrundrechte, Art. 13, 10, 9, 11, 6 GG (P2)
-  - Öffentlich-rechtlicher Vertrag, Realakt (P2)
-  - Verwaltungsvollstreckung, Art. 83 ff. GG (P2)
-  - Bund-Länder-Streit, § 32 BVerfGG, Finanzverfassung (P2)
+  - Landesschemata und Landesfälle für alle Länder in gleicher Tiefe (P2)
+  - Wirtschafts-, Umwelt- und Beamtenrecht (je nach Land) (P3)

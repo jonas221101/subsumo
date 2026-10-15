@@ -1,0 +1,33 @@
+kurs:
+  slug: sr-bt-3
+  title: 'Strafrecht BT III: Gemeingefahr, Rechtspflege und Staat'
+  area: strafrecht
+  semester_default: 5
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: 'Straftaten gegen die Allgemeinheit und die Rechtspflege: erweiterte Urkundendelikte, Brandstiftung,
+    Straßenverkehrsdelikte, Aussagedelikte und falsche Verdächtigung, Strafvereitelung und Amtsdelikte, Widerstand
+    gegen Vollstreckungsbeamte, unterlassene Hilfeleistung und Geldwäsche.'
+  lernziele:
+  - Urkundendelikte jenseits des § 267 StGB (§§ 268, 269, 271, 274 StGB) abgrenzen
+  - Brandstiftungsdelikte (§§ 306 ff. StGB) mit Konkurrenzen aufbauen
+  - Straßenverkehrsdelikte (§§ 315b, 315c, 315d, 316, 142 StGB) prüfen
+  - Aussagedelikte, Strafvereitelung und Amtsdelikte voneinander abgrenzen
+  klausurformat:
+    typ: Fortgeschrittenenklausur
+    minuten: 180
+  topic_slugs:
+  - sr-bt-urkundendelikte-erweitert
+  - sr-bt-brandstiftung
+  - sr-bt-strassenverkehr
+  - sr-bt-aussagedelikte
+  - sr-bt-strafvereitelung-amtsdelikte
+  - sr-bt-widerstand-unterlassene-hilfe
+  - sr-bt-geldwaesche-261
+  landesrecht_kategorien: []
+  fehlende_themen:
+  - Betäubungsmittel- und Nebenstrafrecht (P3)
+  - Umwelt- und Wirtschaftsstrafrecht (P3)
