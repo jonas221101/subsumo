@@ -1,0 +1,380 @@
+topic:
+  slug: sr-at-versuch-vertiefung
+  area: strafrecht
+  title: Versuch vertieft - unmittelbares Ansetzen bei Beteiligung, Wahndelikt, Rücktritt mehrerer
+  parent: sr-at
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-versv-ansetzen-formeln
+  type: streitstand
+  front: 'Streitstand: Mit welcher Formel wird das unmittelbare Ansetzen (§ 22 StGB) bestimmt?'
+  back: >-
+    Problem: Die Grenze zwischen straflosem Vorbereiten und strafbarem Versuch ist
+    nur schwer zu ziehen. Die Definition (Handlungen, die nach der Vorstellung des
+    Täters ohne wesentliche Zwischenschritte in die Tatbestandserfüllung einmünden
+    und das Rechtsgut konkret gefährden) wird durch Formeln konkretisiert.
+
+    Zwischenaktstheorie: Ein unmittelbares Ansetzen liegt vor, wenn zwischen der
+    Handlung und der Tatbestandsverwirklichung keine wesentlichen Zwischenakte mehr
+    liegen.
+
+    Gefährdungsformel (Rspr., kombiniert mit der Zwischenaktsformel): Der Täter setzt
+    an, sobald sein Tun aus seiner Sicht in ein Stadium der unmittelbaren Rechtsgutsgefährdung
+    eintritt (Jetzt-geht-es-los).
+
+    Sphärentheorie: Maßgeblich ist das Eindringen in die Schutzsphäre des Opfers
+    (etwa das Betreten der Wohnung oder das Einwirken auf das Opfer).
+
+    Die Formeln sind nicht trennscharf; in der Klausur ist die Subsumtion unter die
+    Rechtsprechungsformel mit den Indizien (Nähe zur Verwirklichung, Zwischenakte,
+    Gefährdung, Tatplan) entscheidend.
+  norms:
+  - § 22 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-versv-ansetzen-mittaeter
+  type: streitstand
+  front: 'Streitstand: Unmittelbares Ansetzen bei Mittäterschaft (§§ 22, 25 Abs. 2 StGB)'
+  back: >-
+    Problem: Mittäter wirken arbeitsteilig; setzt einer von ihnen an, ist fraglich,
+    ob dies auch den anderen zuzurechnen ist, die noch nicht tätig geworden sind.
+
+    Gesamtlösung (Rspr., h.M.): Versuchsbeginn liegt für alle Mittäter vor, sobald
+    einer von ihnen nach dem gemeinsamen Tatplan unmittelbar ansetzt (§ 25 Abs. 2
+    StGB: wechselseitige Zurechnung der Tatbeiträge). Der Tatplan ist maßgeblich.
+    Auch der Mittäter, der erst später eingreifen soll, setzt damit an.
+
+    Einzellösung (Teile der Literatur): Für jeden Mittäter ist gesondert zu prüfen,
+    ob er selbst nach seiner Vorstellung unmittelbar angesetzt hat. Argument: Ein
+    Mittäter, der noch gar nichts tut, kann allein durch das Tun des anderen noch
+    nicht in die Versuchsstrafbarkeit geraten (individuelle Gefährlichkeit).
+
+    Differenzierende Ansätze: Zurechnung nur, wenn der vom Tatbeitrag des Einzelnen
+    abhängige Teil unmittelbar bevorsteht.
+
+    In Klausuren ist regelmäßig die Gesamtlösung vorzugswürdig; sie harmoniert mit
+    der Mittäterzurechnung.
+  norms:
+  - § 22 StGB
+  - § 25 Abs. 2 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-versv-ansetzen-mittelbar
+  type: streitstand
+  front: 'Streitstand: Unmittelbares Ansetzen bei mittelbarer Täterschaft (§§ 22, 25 Abs. 1 Var. 2 StGB)'
+  back: >-
+    Problem: Der Hintermann bedient sich eines Werkzeugs. Fraglich ist, ob der
+    Versuch des Hintermanns beginnt, wenn er auf das Werkzeug einwirkt, oder erst,
+    wenn das Werkzeug selbst ansetzt.
+
+    Gesamtlösung (Einwirkungstheorie): Der Hintermann setzt bereits mit der Einwirkung
+    auf das Werkzeug an, wenn er alles Erforderliche getan hat; der Versuch beginnt
+    mit der Einwirkung. Argument: Die Tat des Werkzeugs wird dem Hintermann voll
+    zugerechnet.
+
+    Einzellösung (Teil der Lit.): Der Versuch beginnt erst, wenn das Werkzeug
+    unmittelbar ansetzt. Argument: Erst dann ist das Rechtsgut gefährdet; ohne
+    Handlung des Werkzeugs bleibt die Tat im Vorbereitungsstadium.
+
+    Rspr. und vermittelnde Lösung: Der Versuch beginnt, wenn der Hintermann das
+    Geschehen aus der Hand gibt und aus seiner Sicht die Tat bei ungestörtem Ablauf
+    unmittelbar in die Verwirklichung des Tatbestands einmündet oder das Werkzeug
+    sofort tätig werden soll. Wird das Werkzeug erst später tätig, liegt noch kein
+    Ansetzen vor.
+
+    Hinweis: Die vermittelnde Lösung ist in Klausuren die gängige Argumentationslinie.
+  norms:
+  - § 22 StGB
+  - § 25 Abs. 1 Var. 2 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-versv-ansetzen-unterlassen
+  type: streitstand
+  front: 'Streitstand: Unmittelbares Ansetzen beim unechten Unterlassungsdelikt (§§ 13, 22 StGB)'
+  back: >-
+    Problem: Beim Unterlassen fehlt eine Ausführungshandlung. Fraglich ist, wann der
+    Garant unmittelbar zur Tatbestandsverwirklichung ansetzt.
+
+    Erste Rettungsmöglichkeit (Mindermeinung): Der Versuch beginnt, sobald der Garant
+    die erste Rettungsmöglichkeit ungenutzt lässt. Kritik: zu weit, bloß wartende
+    Passivität würde zu früh strafbar.
+
+    Letzte Rettungsmöglichkeit (Teile der Lit.): Der Versuch beginnt erst, wenn der
+    Garant die letzte Gelegenheit zum Eingreifen verstreichen lässt. Kritik: Der
+    Versuch würde mit der Vollendung zusammenfallen.
+
+    Gefährdungsansatz (h.M.): Maßgeblich ist, ob der Garant nach seiner Vorstellung
+    das Rechtsgut unmittelbar gefährdet sieht und die Gefahr nach dem Tatplan sofort
+    in den Erfolg umschlagen kann; dann beginnt der Versuch mit dem Verstreichenlassen
+    der nächsten Möglichkeit.
+
+    Die h.M. bevorzugt den Gefährdungsansatz, weil er die Gefährdungsformel auf
+    das Unterlassen überträgt.
+  norms:
+  - § 13 StGB
+  - § 22 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-versv-wahndelikt
+  type: definition
+  front: 'Abgrenzung: untauglicher Versuch und Wahndelikt'
+  back: >-
+    Beim untauglichen Versuch irrt der Täter über Tatsachen: Er stellt sich einen
+    Sachverhalt vor, der, wenn er vorläge, einen Straftatbestand erfüllen würde (etwa
+    er schießt auf eine bereits tote Person, die er für lebend hält). Der untaugliche
+    Versuch ist nach § 22 StGB strafbar (außer er ist grob unverständig, § 23 Abs. 3
+    StGB). Beim Wahndelikt irrt der Täter dagegen über Rechtsfragen: Er hält ein tatsächlich
+    straflos zulässiges Verhalten für strafbar, weil er eine Strafnorm erfindet oder
+    deren Grenzen zu weit zieht (umgekehrter Verbotsirrtum). Das Wahndelikt ist straflos, weil es kein Versuch ist. Maßgeblich ist
+    die Frage, ob der Täter einen Tatsachenirrtum (untauglich) oder einen Rechtsirrtum
+    (Wahn) erleidet: Die Tat läge vor, wenn der vorgestellte Sachverhalt wirklich
+    wäre (Versuch), nicht schon dann, wenn die Rechtsansicht des Täters zuträfe. Zur
+    Abgrenzung kann auf die umgekehrte Irrtumslehre zurückgegriffen werden (umgekehrter
+    Subsumtionsirrtum ist Wahndelikt, umgekehrter Tatbestandsirrtum ist Versuch).
+  norms:
+  - § 22 StGB
+  - § 23 Abs. 3 StGB
+  - § 16 Abs. 1 StGB
+  - § 17 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-versv-strafgrund
+  type: streitstand
+  front: 'Streitstand: Strafgrund des Versuchs (objektive, subjektive, Eindruckstheorie)'
+  back: >-
+    Problem: Der Versuch lässt den Erfolg ausbleiben; zu klären ist, warum er dennoch
+    strafbar ist.
+
+    Objektive Theorie: Strafgrund ist die objektive Gefährdung des Rechtsguts. Der
+    untaugliche Versuch müsste danach straflos sein; er ist es aber nach § 22 StGB
+    gerade nicht.
+
+    Subjektive Theorie: Strafgrund ist der betätigte rechtsfeindliche Wille. Kritik:
+    Auch der bloße Wille ohne Außenwirkung bliebe strafbar.
+
+    Eindruckstheorie (h.M., Rspr.): Strafgrund ist der durch die Tat betätigte
+    rechtsfeindliche Wille, der geeignet ist, das Vertrauen der Allgemeinheit in die
+    Geltung der Rechtsordnung zu erschüttern und den Rechtsfrieden zu stören. Daraus
+    folgen die Strafbarkeit des untauglichen Versuchs und die Privilegierung des grob
+    unverständigen Versuchs (§ 23 Abs. 3 StGB), weil dieser keinen Eindruck hinterlässt.
+
+    Bedeutung: Der Streit erklärt die Systematik, ist in Klausuren aber nur selten
+    zu entscheiden.
+  norms:
+  - § 22 StGB
+  - § 23 Abs. 3 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-versv-ruecktritt-24-abs2
+  type: norm
+  front: Was regelt § 24 Abs. 2 StGB (Rücktritt bei mehreren Beteiligten)?
+  back: >-
+    Sind an der Tat mehrere beteiligt, so wird nach § 24 Abs. 2 S. 1 StGB wegen
+    Versuchs nicht bestraft, wer freiwillig die Vollendung verhindert. Jedoch genügt
+    zu seiner Straflosigkeit sein freiwilliges und ernsthaftes Bemühen, die Vollendung
+    zu verhindern, wenn die Tat ohne sein Zutun nicht vollendet oder unabhängig von seinem
+    früheren Tatbeitrag begangen wird (§ 24 Abs. 2 S. 2 StGB). Entscheidend ist:
+    Für den Beteiligten, der seinen Tatbeitrag bereits geleistet hat, genügt die
+    bloße Aufgabe des eigenen Tuns nicht. Er muss die Vollendung aktiv verhindern.
+    Der Rücktritt wirkt als persönlicher Strafaufhebungsgrund nur für den Zurücktretenden;
+    er ist für jeden Beteiligten gesondert zu prüfen.
+  norms:
+  - § 24 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-versv-ruecktritt-beteiligte
+  type: definition
+  front: Wie ist der Rücktritt von Mittätern, Anstiftern und Gehilfen (§ 24 Abs. 2 StGB) zu prüfen?
+  back: >-
+    Für jeden Beteiligten ist gesondert zu prüfen: (1) Kein Fehlschlag (der Fehlschlag
+    ist nach den Vorstellungen des jeweiligen Beteiligten zu beurteilen). (2) Je nach
+    Fortschritt ein beendeter oder unbeendeter Versuch; bei Mittätern genügt es
+    nicht, wenn ein Mittäter sein Tun einstellt, sofern die anderen weitermachen: Er
+    muss die Vollendung verhindern. (3) Hat der Beteiligte seinen Beitrag
+    schon geleistet (Anstifter, Gehilfe, Mittäter im Vorbereitungsstadium), kann er
+    die Vollendung durch Abbruch der Tat, Einwirkung auf die anderen oder Anzeige
+    verhindern; reines Passivbleiben genügt nicht. (4) Freiwilligkeit. Erreicht er
+    die Verhinderung nicht, hat er aber ernsthaft versucht, und die Tat bleibt ohne
+    sein Zutun unvollendet oder wird unabhängig von seinem Beitrag vollendet, genügt
+    sein ernsthaftes Bemühen. Der Rücktritt eines Beteiligten wirkt nicht für die
+    übrigen Beteiligten.
+  norms:
+  - § 24 Abs. 2 StGB
+  - § 24 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-versv-ruecktritt-verhindern
+  type: definition
+  front: 'Rücktritt vom beendeten Versuch: Wann liegt ein "Verhindern der Vollendung" vor?'
+  back: >-
+    Verhindern im Sinne des § 24 Abs. 1 S. 1 Var. 2, Abs. 2 S. 1 StGB setzt eine
+    Rücktrittshandlung voraus, die für die Nichtvollendung (zumindest mit-)ursächlich
+    ist und vom Täter mit dem Willen gesetzt wird, den Erfolg abzuwenden. Der Täter
+    muss nicht selbst den Erfolg abwenden; er kann sich Dritter bedienen (etwa durch
+    Notruf), muss die Rettung aber selbst in Gang setzen und darf sie nicht dem Zufall
+    überlassen. Die Anforderungen an die Qualität der Rettungsmaßnahmen sind nicht
+    einheitlich: Teile der Literatur verlangen die bestmögliche Rettungsmaßnahme; die
+    Rechtsprechung stellt geringere Anforderungen und lässt genügen, dass der Täter
+    eine nach seiner Vorstellung geeignete Maßnahme ergreift, die für die Nichtvollendung
+    ursächlich wird. Tritt der Erfolg trotz der Bemühung ein, scheidet ein Rücktritt
+    aus; das bloße Bemühen nach § 24 Abs. 1 S. 2 und Abs. 2 S. 2 StGB genügt nur,
+    wenn die Tat ohne Zutun des Täters unvollendet bleibt.
+  norms:
+  - § 24 Abs. 1 S. 1 StGB
+  - § 24 Abs. 2 S. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: sr-schema-versv-ansetzen-ruecktritt-beteiligte
+  title: Unmittelbares Ansetzen und Rücktritt bei mehreren Beteiligten
+  norms:
+  - § 22 StGB
+  - § 24 Abs. 2 StGB
+  - § 25 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Vorprüfung
+    children:
+    - label: 1. Nicht vollendet, Strafbarkeit des Versuchs (§ 23 Abs. 1 StGB)
+  - label: II. Tatentschluss (jedes Beteiligten)
+  - label: III. Unmittelbares Ansetzen
+    hinweis: Bei Mittäterschaft Gesamtlösung vs. Einzellösung, bei mittelbarer Täterschaft
+      Einwirkungs- bzw. Entlassungskriterium offenlegen.
+    children:
+    - label: 1. Täter (§ 22 StGB)
+    - label: 2. Zurechnung bei Mittäterschaft (§ 25 Abs. 2 StGB)
+    - label: 3. Zurechnung bei mittelbarer Täterschaft (§ 25 Abs. 1 Var. 2 StGB)
+  - label: IV. Rechtswidrigkeit und Schuld
+  - label: V. Rücktritt, § 24 StGB - für jeden Beteiligten gesondert
+    children:
+    - label: 1. Kein Fehlschlag
+    - label: 2. Beendeter oder unbeendeter Versuch (Rücktrittshorizont)
+    - label: 3. Rücktrittshandlung - Verhindern (Abs. 2 S. 1) oder ernsthaftes Bemühen (Abs. 2 S. 2)
+    - label: 4. Freiwilligkeit
+  - label: VI. Ergebnis je Beteiligtem
+faelle:
+- slug: sr-fall-versv-giftpraline
+  title: Die vergiftete Praline
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: A und B beschließen, gemeinsam den C zu töten, der ihnen Geld schuldet. Nach
+    dem Plan soll A eine mit tödlichem Gift versetzte Praline in C's Wohnung auf den
+    Tisch legen; B soll C währenddessen im Treppenhaus aufhalten, damit A ungestört
+    arbeiten kann. A legt die Praline auf den Tisch, während B im Treppenhaus mit
+    C spricht. C betritt unmittelbar darauf die Wohnung, sieht die Praline sofort und isst sie. A beobachtet
+    dies, erschrickt, bereut seine Tat und ruft sofort einen Notarzt. C überlebt dank
+    schneller Behandlung. B hat nichts unternommen und von allem nichts bereut.
+  question: Wie haben sich A und B wegen versuchten Totschlags (§§ 212 Abs. 1, 22,
+    23 Abs. 1, 25 Abs. 2 StGB) strafbar gemacht? Heimtücke ist nicht zu prüfen.
+  steps:
+  - prompt: Liegen Tatentschluss und unmittelbares Ansetzen bei A und B vor?
+    erwartung: Ja. Beide handelten mit Tötungsvorsatz und gemeinsamem Tatplan. A
+      setzte mit dem Auslegen der Praline unmittelbar an. Nach der Gesamtlösung (§ 25
+      Abs. 2 StGB) ist dies auch B zuzurechnen, dessen Beitrag (Ablenkung) zur gleichen
+      Zeit stattfand. Es liegt also ein gemeinschaftlicher versuchter Totschlag vor.
+  - prompt: Ist der Versuch fehlgeschlagen oder beendet?
+    erwartung: Nicht fehlgeschlagen. Nachdem C die Praline gegessen hatte, hielt A den
+      Tod für möglich und hatte alles aus seiner Sicht Erforderliche getan; es liegt
+      ein beendeter Versuch vor, bei dem § 24 Abs. 1 S. 1 Var. 2, Abs. 2 S. 1 StGB ein
+      Verhindern verlangt.
+  - prompt: Ist A wirksam zurückgetreten?
+    erwartung: Ja. A hat freiwillig den Notarzt gerufen und damit die Vollendung durch
+      eine eigene, ursächliche Rettungshandlung verhindert. Er ist nach § 24 Abs. 2 S. 1
+      StGB wegen Versuchs nicht zu bestrafen (persönlicher Strafaufhebungsgrund).
+  - prompt: Wirkt der Rücktritt des A auch zugunsten des B?
+    erwartung: Nein. Der Rücktritt wirkt nur persönlich. B hat die Vollendung weder
+      verhindert noch sich ernsthaft darum bemüht. Dass die Tat unvollendet blieb, kam nicht
+      durch sein Zutun. Ein Rücktritt nach § 24 Abs. 2 S. 2 StGB scheidet daher aus.
+  - prompt: Wie ist die Strafbarkeit von B zu beurteilen?
+    erwartung: B ist wegen versuchten Totschlags in Mittäterschaft strafbar (§§ 212
+      Abs. 1, 22, 23 Abs. 1, 25 Abs. 2 StGB).
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Tatentschluss und unmittelbares Ansetzen des A bejaht; Zurechnung auf
+        B über § 25 Abs. 2 StGB (Gesamtlösung)
+      weight: 1.5
+      required: false
+      norms:
+      - § 22 StGB
+      - § 25 Abs. 2 StGB
+      keywords:
+      - unmittelbares Ansetzen
+      - Gesamtlösung
+      - gemeinsamer Tatplan
+      - Zurechnung des Ansetzens
+      - wechselseitige Zurechnung
+      card_slugs:
+      - sr-versv-ansetzen-mittaeter
+    - id: p2
+      label: Beendeter Versuch bei A - Verhindern erforderlich
+      weight: 1.5
+      required: false
+      keywords:
+      - beendeter Versuch
+      - Verhinderung der Vollendung
+      - Vollendung verhindert
+      - aktives Verhindern
+      card_slugs:
+      - sr-versv-ruecktritt-verhindern
+    - id: p3
+      label: Wirksamer Rücktritt des A nach § 24 Abs. 2 S. 1 StGB (Notarzt, freiwillig)
+      weight: 3.0
+      required: true
+      norms:
+      - § 24 Abs. 2 StGB
+      keywords:
+      - § 24 Abs. 2
+      - Rücktritt des A
+      - freiwillig
+      - Notarzt gerufen
+      - Strafaufhebungsgrund
+      card_slugs:
+      - sr-versv-ruecktritt-24-abs2
+    - id: p4
+      label: Rücktritt wirkt nur persönlich, kein Rücktritt des B
+      weight: 3.0
+      required: true
+      keywords:
+      - persönlicher Strafaufhebungsgrund
+      - wirkt nur für ihn
+      - wirkt nicht zugunsten
+      - nur persönlich
+      - nicht zugunsten des B
+      - kein Rücktritt des B
+      card_slugs:
+      - sr-versv-ruecktritt-24-abs2
+      - sr-versv-ruecktritt-beteiligte
+    - id: p5
+      label: Strafbarkeit des B wegen versuchten Totschlags in Mittäterschaft
+      weight: 1.0
+      required: false
+      norms:
+      - § 212 Abs. 1 StGB
+      - § 25 Abs. 2 StGB
+      keywords:
+      - versuchten Totschlags
+      - Mittäterschaft
+      - B ist strafbar
+      - B bleibt strafbar
+      - §§ 212 Abs. 1, 22, 23 Abs. 1, 25 Abs. 2
