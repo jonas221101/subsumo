@@ -383,7 +383,7 @@ void main() {
     expect(find.text('Landesrecht-Deck'), findsOneWidget);
     expect(find.text('Prüfung in Bayern'), findsOneWidget);
     expect(find.textContaining('6 Klausuren à 300 min'), findsOneWidget);
-    expect(find.textContaining('Redaktionsstatus: in Prüfung'), findsWidgets);
+    expect(find.textContaining('noch nicht juristisch freigegeben'), findsWidgets);
     expect(find.text('Zugelassene Hilfsmittel besorgen'), findsOneWidget);
     // Individualisierung (docs/33): naechster Schritt, Lernprofil, Semesterstoff,
     // eigene Decks, Technik-Tipp.

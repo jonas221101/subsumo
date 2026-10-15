@@ -92,7 +92,7 @@ void main() {
     testWidgets('Leertaste deckt auf, Ziffer bewertet - Bewertungen ohne Ampelfarben',
         (tester) async {
       final state = await pump(tester);
-      expect(find.text('Was regelt § 985 BGB?'), findsOneWidget);
+      expect(find.text('Was regelt §\u00A0985 BGB?'), findsOneWidget);
       expect(find.text('Herausgabeanspruch.'), findsNothing);
 
       // Ziffern vor dem Aufdecken bewerten nichts.
@@ -111,7 +111,7 @@ void main() {
       await tester.sendKeyEvent(LogicalKeyboardKey.digit3);
       await tester.pumpAndSettle();
       expect(state.dueCards.length, 1);
-      expect(find.text('Was regelt § 433 BGB?'), findsOneWidget);
+      expect(find.text('Was regelt §\u00A0433 BGB?'), findsOneWidget);
       // Eyebrow setzt in Versalien.
       expect(find.textContaining('2 VON 2'), findsOneWidget);
     });

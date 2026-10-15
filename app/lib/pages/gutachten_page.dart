@@ -8,6 +8,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../api.dart';
 import '../design/design.dart';
 import '../state.dart';
+import '../text_schutz.dart';
 import 'beta_feedback.dart';
 import 'fit_title.dart';
 import 'landesbezug.dart';
@@ -62,6 +63,7 @@ class _GutachtenPageState extends State<GutachtenPage> {
   /// Text zum Zeitpunkt der letzten erfolgreichen Abgabe - weicht der aktuelle
   /// Text davon ab, ist das Ergebnis veraltet.
   String? _submittedText;
+  final _feedbackKey = GlobalKey();
   Timer? _saveDebounce;
   Timer? _ticker;
   bool _restoring = false;
@@ -292,6 +294,13 @@ class _GutachtenPageState extends State<GutachtenPage> {
           _result = result;
           _submittedText = text;
         });
+        // Schmale Ansicht: Ergebnis steht unter dem Editor - dorthin scrollen.
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          final ctx = _feedbackKey.currentContext;
+          if (ctx != null) {
+            Scrollable.ensureVisible(ctx, duration: Motion.normal, curve: Motion.curve);
+          }
+        });
       }
       // Abgegeben: der lokale Entwurf wird nicht mehr gebraucht.
       _saveDebounce?.cancel();
@@ -365,11 +374,19 @@ class _GutachtenPageState extends State<GutachtenPage> {
           ),
         ],
       ),
+      bottomNavigationBar: _schmal(context)
+          ? SafeArea(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(Spacing.lg, Spacing.sm, Spacing.lg, Spacing.sm),
+                child: _submitButton(),
+              ),
+            )
+          : null,
       body: ReadableWidth(
         maxWidth: 1100,
         child: LayoutBuilder(
           builder: (context, constraints) {
-            final zweispaltig = constraints.maxWidth > 900;
+            final zweispaltig = !_schmal(context);
             final feedback = _buildFeedback();
             if (!zweispaltig) {
               // Die ganze Seite scrollt: Sachverhalt vollstaendig, darunter
@@ -384,10 +401,10 @@ class _GutachtenPageState extends State<GutachtenPage> {
                       height: _klausur
                           ? max(560, MediaQuery.sizeOf(context).height * 0.75)
                           : 420,
-                      child: _buildEditor(),
+                      child: _buildEditor(mitButton: false),
                     ),
                     const SizedBox(height: Spacing.lg),
-                    feedback,
+                    KeyedSubtree(key: _feedbackKey, child: feedback),
                   ],
                 ),
               );
@@ -448,7 +465,7 @@ class _GutachtenPageState extends State<GutachtenPage> {
                 const SubsumoEyebrow('Sachverhalt'),
                 const SizedBox(height: Spacing.sm),
                 Text(
-                  _case!['facts'] as String? ?? '',
+                  normUmbruchschutz(_case!['facts'] as String? ?? ''),
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
                 const SizedBox(height: Spacing.md),
@@ -494,7 +511,16 @@ class _GutachtenPageState extends State<GutachtenPage> {
     );
   }
 
-  Widget _buildEditor() => Column(
+  /// Schmale Ansicht: Abgabe-Button in fester Leiste am unteren Rand, damit er
+  /// am Handy nicht unterhalb des sichtbaren Bereichs liegt (Nutzertest W10).
+  bool _schmal(BuildContext context) => min(MediaQuery.sizeOf(context).width, 1100) <= 900;
+
+  Widget _submitButton() => SubsumoButton.primary(
+        label: 'Abgeben und bewerten lassen',
+        onPressed: _busy || _controller.text.trim().length < 40 ? null : _submit,
+      );
+
+  Widget _buildEditor({bool mitButton = true}) => Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           if (_klausur) _buildTimer(),
@@ -514,11 +540,10 @@ class _GutachtenPageState extends State<GutachtenPage> {
               ),
             ),
           ),
-          const SizedBox(height: Spacing.md),
-          SubsumoButton.primary(
-            label: 'Abgeben und bewerten lassen',
-            onPressed: _busy || _controller.text.trim().length < 40 ? null : _submit,
-          ),
+          if (mitButton) ...[
+            const SizedBox(height: Spacing.md),
+            _submitButton(),
+          ],
         ],
       );
 

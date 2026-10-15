@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../design/design.dart';
 import '../state.dart';
+import '../text_schutz.dart';
 import '../theme.dart';
 import 'bundesland_hint.dart';
 import 'fit_title.dart';
@@ -59,6 +60,14 @@ class _SchemataPageState extends State<SchemataPage> {
     }
   }
 
+  /// Alle Texte der (verschachtelten) Prueffolge als ein Suchtext.
+  static String _schrittText(Object? node) => switch (node) {
+        final String text => text,
+        final List<Object?> list => list.map(_schrittText).join(' '),
+        final Map<Object?, Object?> map => map.values.map(_schrittText).join(' '),
+        _ => '',
+      };
+
   List<Map<String, dynamic>> get _visible {
     final q = _query.trim().toLowerCase();
     if (q.isEmpty) return _schemata;
@@ -68,12 +77,18 @@ class _SchemataPageState extends State<SchemataPage> {
         q,
         '${s['title']} ${((s['norms'] as List?) ?? const []).join(' ')} ${landesSuchtext(s['bundesland'])}',
       );
-      if (r != null) ranks[s] = r;
+      if (r != null) {
+        ranks[s] = r;
+      } else if (suchRang(q, _schrittText(s['steps'])) != null) {
+        // Treffer nur im Schema-Text (z. B. "drohende Gefahr"): nach den
+        // Titel-/Normtreffern anzeigen (Nutzertest W10).
+        ranks[s] = 2;
+      }
     }
     final hits = ranks.keys.toList();
     // Stabil: Volltreffer zuerst, sonst urspruengliche Reihenfolge.
     return [
-      for (final r in [0, 1])
+      for (final r in [0, 1, 2])
         for (final s in hits)
           if (ranks[s] == r) s,
     ];
@@ -271,14 +286,14 @@ class SchemaTile extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      label,
+                      normUmbruchschutz(label),
                       style: depth == 0 ? theme.textTheme.titleSmall : theme.textTheme.bodyMedium,
                     ),
                     if (hinweis != null)
                       Padding(
                         padding: const EdgeInsets.only(top: 2),
                         child: Text(
-                          hinweis,
+                          normUmbruchschutz(hinweis),
                           style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
                         ),
                       ),

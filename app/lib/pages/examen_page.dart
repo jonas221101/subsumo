@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../design/design.dart';
 import '../state.dart';
+import '../text_schutz.dart';
 import 'beta_feedback.dart';
 import '../theme.dart';
 import 'gutachten_page.dart';
@@ -695,8 +696,8 @@ class _ReifeCard extends StatelessWidget {
           SubsumoProgressMeter(value: gesamt),
           const SizedBox(height: Spacing.md),
           Text(
-            'Kein Notenersatz: gewichteter Mittelwert der messbaren Komponenten. '
-            'Formel: ${reife['formel']}',
+            'Kein Notenersatz, sondern eine Lernstands-Schätzung. '
+            '${reifeGewichtung('${reife['formel'] ?? ''}')}',
             style: theme.textTheme.bodySmall,
           ),
           const SizedBox(height: Spacing.lg),
@@ -919,8 +920,9 @@ class _LandesrechtCard extends StatelessWidget {
           if (pruefstatus == 'in-pruefung') ...[
             const SizedBox(height: Spacing.sm),
             const SubsumoFeedbackBlock(
-              message: 'Redaktionsstatus: in Prüfung.',
-              detail: 'Normzitate gegen die aktuelle Gesetzesfassung deines Landes prüfen.',
+              message: 'Noch nicht juristisch freigegeben.',
+              detail: 'Diese Inhalte werden gerade fachlich geprüft. Im Zweifel gilt der '
+                  'aktuelle Wortlaut des Landesgesetzes.',
               severity: FeedbackSeverity.hint,
             ),
           ],
@@ -949,7 +951,7 @@ class _TopicRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    final row = Row(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         Expanded(
@@ -968,6 +970,8 @@ class _TopicRow extends StatelessWidget {
         ],
       ],
     );
+    // Die ganze Zeile oeffnet das Thema, nicht nur das Symbol (Nutzertest W10).
+    return onLearn == null ? row : InkWell(onTap: onLearn, child: row);
   }
 }
 
@@ -1184,7 +1188,7 @@ class _BundeslandCard extends StatelessWidget {
           if (bundesland['pruefstatus'] == 'in-pruefung') ...[
             const SizedBox(height: Spacing.sm),
             const SubsumoFeedbackBlock(
-              message: 'Angaben ohne Gewähr - Redaktionsstatus: in Prüfung.',
+              message: 'Angaben ohne Gewähr - noch nicht juristisch freigegeben.',
               detail: 'Maßgeblich sind JAG/JAPO und die Bekanntmachungen des Prüfungsamts.',
               severity: FeedbackSeverity.hint,
             ),
@@ -1335,7 +1339,7 @@ class DeckDetailPage extends StatelessWidget {
               for (final ziel in lernziele)
                 Padding(
                   padding: const EdgeInsets.only(bottom: Spacing.xs),
-                  child: SubsumoFeedbackBlock(message: ziel, severity: FeedbackSeverity.neutral),
+                  child: SubsumoFeedbackBlock(message: normUmbruchschutz(ziel), severity: FeedbackSeverity.neutral),
                 ),
             ],
             if (landesrechtFehlt.isNotEmpty) ...[
@@ -1351,7 +1355,15 @@ class DeckDetailPage extends StatelessWidget {
             Text('Themen', style: theme.textTheme.titleMedium),
             const SizedBox(height: Spacing.sm),
             for (final topic in topics) ...[
-              _TopicRow(topic: topic),
+              _TopicRow(
+                topic: topic,
+                onLearn: topic['slug'] is String
+                    ? () => _openDeck(
+                          context,
+                          DeckFilter(title: topic['title'] as String, topic: topic['slug'] as String),
+                        )
+                    : null,
+              ),
               const SizedBox(height: Spacing.sm),
             ],
             if (schemata.isNotEmpty) ...[
@@ -1465,6 +1477,23 @@ class _DeckReviewPageState extends State<DeckReviewPage> {
       ),
     );
   }
+}
+
+/// Macht aus der API-Formel ("0.41 x wissen + 0.12 x landesrecht ...") einen
+/// lesbaren Satz ("Gewichtung: Wissen 41 %, Landesrecht 12 % ...").
+String reifeGewichtung(String formel) {
+  const namen = {
+    'wissen': 'Wissen',
+    'landesrecht': 'Landesrecht',
+    'anwendung': 'Anwendung',
+    'klausurpraxis': 'Klausurpraxis',
+  };
+  final teile = [
+    for (final m in RegExp(r'([0-9]+(?:[.,][0-9]+)?)\s*[x×*]\s*([a-zäöüß_]+)').allMatches(formel))
+      '${namen[m.group(2)] ?? m.group(2)} '
+          '${(double.parse(m.group(1)!.replaceAll(',', '.')) * 100).round()} %',
+  ];
+  return teile.isEmpty ? '' : 'Gewichtung: ${teile.join(', ')}.';
 }
 
 Future<void> _openDeck(BuildContext context, DeckFilter filter) =>

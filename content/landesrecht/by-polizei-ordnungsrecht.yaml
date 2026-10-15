@@ -293,6 +293,8 @@ schemata:
   - Art. 11 PAG
   - Art. 16 PAG
   - Art. 7 PAG
+  - Art. 11a PAG
+  - Art. 70 PAG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -321,7 +323,8 @@ schemata:
     - label: '3. Rechtsfolge: Ermessen und Verhältnismäßigkeit'
       hinweis: Geeignet, erforderlich, angemessen; Art. 4 und 5 PAG.
   - label: IV. Vollstreckung (falls eine Zwangsmaßnahme angegriffen wird)
-    hinweis: Grundverfügung, Androhung, Festsetzung, Anwendung; Sofortvollzug nur bei Gefahr im Verzug.
+    hinweis: 'Polizei: Art. 70 ff. PAG; Sicherheitsbehörden: Art. 29 ff. VwZVG. Grundverfügung, Androhung,
+      Festsetzung, Anwendung; Sofortvollzug nur bei Gefahr im Verzug.'
   stand: 2026-10
 faelle:
 - slug: by-fall-por-platzverweis

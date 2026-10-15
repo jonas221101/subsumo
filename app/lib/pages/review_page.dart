@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 
 import '../design/design.dart';
 import '../state.dart';
+import '../text_schutz.dart';
 import '../theme.dart';
 import 'fit_title.dart';
 import 'norm_sheet.dart';
@@ -65,7 +66,8 @@ class _ReviewPageState extends State<ReviewPage> {
         if (mounted) setState(() {});
         return;
       }
-      await app.loadDueCards();
+      // Im Deck gilt das Tageslimit neuer Karten nicht (wie in startDeck).
+      await app.loadDueCards(extra: app.activeDeck != null);
       if (mounted) setState(() => _sessionTotal = app.dueCards.length);
     });
   }
@@ -154,7 +156,7 @@ class _ReviewPageState extends State<ReviewPage> {
     } else if (app.dueCards.isEmpty) {
       body = app.sessionDone
           ? _DoneState(reviewed: app.reviewedInSession, onMore: _learnMore)
-          : _EmptyState(onReload: app.loadDueCards);
+          : _EmptyState(onMore: _learnMore, imDeck: app.activeDeck != null);
     } else {
       body = _buildDueCard(context, app);
     }
@@ -468,16 +470,44 @@ class _RateButton extends StatelessWidget {
 }
 
 class _EmptyState extends StatelessWidget {
-  const _EmptyState({required this.onReload});
+  const _EmptyState({required this.onMore, required this.imDeck});
 
-  final Future<void> Function() onReload;
+  final Future<void> Function() onMore;
+  final bool imDeck;
 
   @override
-  Widget build(BuildContext context) => ScreenStatus.empty(
-        message: 'Nichts fällig. Gut gemacht.',
-        severity: FeedbackSeverity.positive,
-        onRetry: onReload,
-      );
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(Spacing.lg),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(Icons.check_circle_outline, size: 40, color: theme.colorScheme.primary),
+            const SizedBox(height: Spacing.md),
+            Text('Gerade ist nichts fällig.',
+                style: theme.textTheme.titleMedium, textAlign: TextAlign.center),
+            const SizedBox(height: Spacing.sm),
+            Text(
+              imDeck
+                  ? 'In diesem Deck wartet heute keine Karte mehr.'
+                  : 'Alle fälligen Wiederholungen sind erledigt und dein Tageslimit '
+                      'für neue Karten ist erreicht (änderbar im Lernprofil).',
+              style: theme.textTheme.bodyMedium,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: Spacing.lg),
+            FilledButton(
+              key: const ValueKey('weitere-karten'),
+              onPressed: onMore,
+              child: const Text('Weitere Karten lernen'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }
 
 /// Fertig fuer heute: der Stapel ist abgearbeitet; weitere Karten gibt es nur
@@ -532,7 +562,7 @@ String reflowCardText(String text) => text.replaceAllMapped(
 /// Geschuetztes Leerzeichen vor "?" und "!" - das Satzzeichen steht nie allein
 /// in einer Zeile.
 String _protectQuestionMark(String text) =>
-    text.replaceAllMapped(RegExp(r'\s+([?!])'), (m) => '\u00A0${m.group(1)}');
+    normUmbruchschutz(text).replaceAllMapped(RegExp(r'\s+([?!])'), (m) => '\u00A0${m.group(1)}');
 
 final _bulletRe = RegExp(r'^\s*(?:[-*•]|\d+[.)]|[a-z]\))\s+');
 
@@ -547,7 +577,7 @@ class CardAnswerText extends StatelessWidget {
   Widget build(BuildContext context) {
     final style = Theme.of(context).textTheme.bodyLarge?.copyWith(height: 1.6);
     final children = <Widget>[];
-    for (final para in text.trim().split(RegExp(r'\n\s*\n'))) {
+    for (final para in normUmbruchschutz(text).trim().split(RegExp(r'\n\s*\n'))) {
       final lines = para.split('\n');
       // Zeilen ohne Aufzaehlungszeichen gehoeren zum Satz davor (Umbruch im Quelltext).
       final blocks = <(String?, StringBuffer)>[];

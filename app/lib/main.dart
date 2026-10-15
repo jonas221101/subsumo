@@ -39,6 +39,26 @@ void main() {
 /// [HomeShell]) bleibt unveraendert unter `/app` erreichbar (SUB-108).
 GoRouter _buildRouter({required String initialLocation}) => GoRouter(
       initialLocation: initialLocation,
+      // Unbekannte Adresse: deutsche Seite mit Weg zurueck statt GoException.
+      errorBuilder: (context, state) => Scaffold(
+        appBar: AppBar(title: const Text('Seite nicht gefunden')),
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Text('Diese Seite gibt es nicht.', textAlign: TextAlign.center),
+                const SizedBox(height: 16),
+                FilledButton(
+                  onPressed: () => context.go('/app'),
+                  child: const Text('Zur Startseite'),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
       // Test-Zugang: Marketing-/Preisseiten ueberspringen, direkt in die App.
       redirect: (context, state) => kBetaMode &&
               !state.matchedLocation.startsWith('/app') &&

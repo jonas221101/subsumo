@@ -102,14 +102,14 @@ void main() {
 
     expect(find.byType(AppBar), findsOneWidget);
     expect(find.byType(NavigationRail), findsOneWidget);
-    expect(find.text('Was regelt § 985 BGB?'), findsOneWidget);
+    expect(find.text('Was regelt §\u00A0985 BGB?'), findsOneWidget);
 
     await tester.tap(find.byIcon(Icons.fullscreen_outlined));
     await tester.pumpAndSettle();
 
     expect(find.byType(AppBar), findsNothing);
     expect(find.byType(NavigationRail), findsNothing);
-    expect(find.text('Was regelt § 985 BGB?'), findsOneWidget);
+    expect(find.text('Was regelt §\u00A0985 BGB?'), findsOneWidget);
 
     await tester.tap(find.byIcon(Icons.fullscreen_exit_outlined));
     await tester.pumpAndSettle();

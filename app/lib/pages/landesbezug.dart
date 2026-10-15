@@ -58,6 +58,7 @@ int? suchRang(String query, String haystack) {
 
 /// Gebraeuchliche Kuerzel je internem Landescode (zusaetzlich zum Code selbst).
 const bundeslandAliasse = <String, List<String>>{
+  'BE': ['Bln'],
   'NW': ['NRW'],
   'RP': ['RLP'],
   'ST': ['LSA'],
