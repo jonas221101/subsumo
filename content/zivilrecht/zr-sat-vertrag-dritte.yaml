@@ -1,0 +1,333 @@
+topic:
+  slug: zr-sat-vertrag-dritte
+  area: zivilrecht
+  title: Verträge mit Drittwirkung - § 328 BGB, Vertrag mit Schutzwirkung, Drittschadensliquidation
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-vsd-328-echt-unecht
+  type: definition
+  front: >-
+    Definiere: echter und unechter Vertrag zugunsten Dritter, § 328 Abs. 1 BGB.
+  back: >-
+    Beim Vertrag zugunsten Dritter versprechen Versprechender und Versprechensempfänger
+    (Gläubiger) eine Leistung an einen Dritten. Beim echten Vertrag zugunsten Dritter
+    erwirbt der Dritte nach § 328 Abs. 1 BGB unmittelbar ein eigenes Forderungsrecht
+    gegen den Versprechenden. Beim unechten Vertrag ist der Dritte nur Empfangsberechtigter:
+    Der Versprechende kann mit befreiender Wirkung an ihn leisten, ein eigenes Forderungsrecht
+    hat der Dritte aber nicht (Zahlungsanweisung, Ermächtigung im Sinne des § 185
+    BGB). Ob ein Forderungsrecht entsteht, ist durch Auslegung nach § 328 Abs. 2
+    BGB zu ermitteln. Daneben kann nach § 335 BGB im Zweifel auch der Versprechensempfänger
+    die Leistung an den Dritten verlangen. Der Dritte kann das Recht nach § 333 BGB
+    durch Erklärung gegenüber dem Versprechenden zurückweisen.
+  norms:
+  - § 328 Abs. 1 BGB
+  - § 328 Abs. 2 BGB
+  - § 333 BGB
+  - § 335 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vsd-deckung-valuta
+  type: definition
+  front: >-
+    Erkläre das Dreiecksverhältnis beim Vertrag zugunsten Dritter: Deckungs- und
+    Valutaverhältnis.
+  back: >-
+    Das Deckungsverhältnis besteht zwischen Versprechendem und Versprechensempfänger;
+    aus ihm folgt, was der Versprechende schuldet. Das Valutaverhältnis besteht zwischen
+    Versprechensempfänger und Drittem; es bildet den Rechtsgrund dafür, dass der Dritte
+    die Leistung behalten darf (etwa Schenkung oder Erfüllung einer Schuld). Der Versprechende
+    kann dem Dritten Einwendungen aus dem Deckungsverhältnis entgegenhalten (§ 334
+    BGB), nicht aber solche aus dem Valutaverhältnis. Fehlt der Rechtsgrund im Valutaverhältnis,
+    wickelt der Versprechensempfänger dort nach Bereicherungsrecht ab (Leistungskondiktion
+    gegen den Dritten); fehlt er im Deckungsverhältnis, kondiziert der Versprechende
+    beim Versprechensempfänger, weil dieser als Leistender anzusehen ist. Ein Durchgriff
+    des Versprechenden gegen den Dritten ist grundsätzlich ausgeschlossen.
+  norms:
+  - § 328 BGB
+  - § 334 BGB
+  - § 812 Abs. 1 S. 1 Alt. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vsd-schutzwirkung-voraussetzungen
+  type: definition
+  front: >-
+    Welche Voraussetzungen hat der Vertrag mit Schutzwirkung zugunsten Dritter?
+  back: >-
+    Der Vertrag mit Schutzwirkung zugunsten Dritter erstreckt vertragliche Schutz-
+    und Sorgfaltspflichten (§ 241 Abs. 2 BGB) auf einen Dritten, der selbst keinen
+    Leistungsanspruch hat. Nach h. M. sind erforderlich (1) Leistungsnähe: Der Dritte
+    kommt bestimmungsgemäß mit der Leistung in Berührung und ist deren Gefahren ausgesetzt;
+    (2) Einbeziehungsinteresse: Der Gläubiger hat ein berechtigtes Interesse am Schutz
+    des Dritten, etwa wegen Fürsorge- oder personenrechtlicher Beziehung, oder ein
+    ähnliches Interesse, das sich aus dem Vertragszweck ergibt; (3) Erkennbarkeit
+    für den Schuldner, dass der Dritte einbezogen ist; (4) Schutzbedürftigkeit des
+    Dritten, an der es fehlt, wenn ihm ein eigener, inhaltsgleicher vertraglicher
+    Anspruch gegen den Schuldner oder einen anderen zusteht. Deliktische Ansprüche
+    schließen die Schutzbedürftigkeit nicht aus, weil sie (etwa durch § 831 Abs. 1
+    S. 2 BGB) lückenhaft sind.
+  norms:
+  - § 241 Abs. 2 BGB
+  - § 328 Abs. 2 BGB
+  - § 311 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vsd-schutzwirkung-rechtsgrundlage
+  type: streitstand
+  front: >-
+    Auf welche dogmatische Grundlage wird der Vertrag mit Schutzwirkung zugunsten
+    Dritter gestützt, und welche Rechtsfolgen hat er?
+  back: >-
+    Die Rechtsprechung leitet die Schutzwirkung aus der ergänzenden Vertragsauslegung
+    (§§ 133, 157 BGB) in Verbindung mit § 328 BGB ab; häufig wird auf § 328 Abs.
+    2 BGB analog verwiesen. Nach anderer Ansicht ist § 311 Abs. 3 S. 1 BGB der Anknüpfungspunkt
+    (Schuldverhältnis mit Pflichten nach § 241 Abs. 2 BGB auch gegenüber Nichtvertragspartnern).
+    Für die Falllösung genügt es meist, das Institut mit seinen vier Voraussetzungen
+    zu prüfen. Rechtsfolge ist ein eigener Schadensersatzanspruch des Dritten aus
+    § 280 Abs. 1 BGB in Verbindung mit dem Vertrag; ein Primärleistungsanspruch fehlt.
+    Der Dritte muss sich Einwendungen aus dem Vertrag (§ 334 BGB analog) und ein Mitverschulden
+    des Gläubigers (§ 254 BGB) entgegenhalten lassen. Praktisch bedeutsam ist, dass
+    auch Schmerzensgeld verlangt werden kann (§ 253 Abs. 2 BGB).
+  norms:
+  - § 328 Abs. 2 BGB
+  - § 311 Abs. 3 BGB
+  - § 280 Abs. 1 BGB
+  - § 334 BGB
+  - § 253 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vsd-schutzwirkung-fallgruppen
+  type: streitstand
+  front: >-
+    In welchen Fallgruppen wird der Vertrag mit Schutzwirkung zugunsten Dritter typischerweise
+    bejaht, und welche Grenze besteht?
+  back: >-
+    Typische Fälle sind Mietverträge, die Familienangehörige und Hausgenossen des
+    Mieters einbeziehen, Arbeits- und Dienstverträge, bei denen der Dienstberechtigte
+    Fürsorgepflichten hat, sowie Gutachter- und Auskunftsverträge, bei denen ein Sachverständiger
+    erkennbar auch gegenüber Dritten (etwa einem Kaufinteressenten oder Kreditgeber)
+    Verantwortung übernimmt (Expertenhaftung). Entscheidend ist stets die Erkennbarkeit
+    für den Schuldner und die Schutzbedürftigkeit des Dritten. Eine Grenze ergibt
+    sich daraus, dass die Haftung nicht uferlos ausgeweitet werden soll: Der Kreis
+    der einbezogenen Dritten muss für den Schuldner objektiv abgrenzbar sein und seine
+    Haftung ist kalkulierbar zu halten. Reine Vermögensschäden Dritter werden außerhalb der Expertenfälle nur
+    zurückhaltend ersetzt.
+  norms:
+  - § 241 Abs. 2 BGB
+  - § 280 Abs. 1 BGB
+  - § 311 Abs. 3 S. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vsd-dsl-voraussetzungen
+  type: definition
+  front: >-
+    Definiere: Drittschadensliquidation und ihre Voraussetzungen.
+  back: >-
+    Bei der Drittschadensliquidation macht der Anspruchsinhaber (Gläubiger) den Schaden
+    eines Dritten im eigenen Namen geltend. Sie gleicht eine Zufallsverlagerung des
+    Schadens aus: Der Gläubiger hat einen Anspruch gegen den Schädiger, aber keinen
+    Schaden, während der Dritte, der den Schaden erleidet, keinen Anspruch hat. Der
+    Schuldner würde sonst durch Zufall entlastet. Voraussetzungen sind daher (1) ein
+    Anspruch des Gläubigers gegen den Schädiger, (2) ein Schaden des Dritten, der
+    nach dem Schutzzweck des Anspruchs beim Gläubiger entstanden wäre, (3) eine zufällige
+    Schadensverlagerung auf den Dritten aufgrund einer rechtlichen Sonderbeziehung
+    zwischen Gläubiger und Drittem. Der Gläubiger kann Leistung an den Dritten verlangen
+    oder, wenn der Dritte ihm die Ansprüche gegen den Schädiger abtritt, Zahlung an
+    sich.
+  norms:
+  - § 280 Abs. 1 BGB
+  - § 398 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vsd-dsl-fallgruppen
+  type: definition
+  front: >-
+    Nenne die anerkannten Fallgruppen der Drittschadensliquidation mit je einem Beispiel.
+  back: >-
+    Anerkannt sind insbesondere (1) die mittelbare Stellvertretung: Der Kommissionär
+    schließt im eigenen Namen für Rechnung des Kommittenten ab; der Schaden fällt
+    beim Kommittenten an. (2) Die obligatorische Gefahrentlastung: Beim Versendungskauf
+    trägt der Käufer die Preisgefahr (§ 447 Abs. 1 BGB), geht die Ware beim Transport
+    unter, hat der Verkäufer einen Anspruch gegen den Frachtführer, aber keinen Schaden,
+    während der Käufer weiterzahlen muss. (3) Die Obhutsverhältnisse: Der Gläubiger hat eine fremde Sache in Obhut (etwa als Mieter, Entleiher oder Verwahrer) ohne dem Eigentümer
+    für den Verlust einzustehen; beschädigt der Schuldner die Sache, fällt der Schaden
+    beim Eigentümer an, während der Gläubiger keinen Schaden hat. (4) Teilweise wird
+    die Treuhand genannt, bei der der Schaden beim Treugeber anfällt.
+  norms:
+  - § 447 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vsd-abgrenzung
+  type: streitstand
+  front: >-
+    Grenze ab: Vertrag zugunsten Dritter, Vertrag mit Schutzwirkung und Drittschadensliquidation.
+  back: >-
+    Der echte Vertrag zugunsten Dritter (§ 328 BGB) gibt dem Dritten einen eigenen
+    Primäranspruch auf die Leistung. Der Vertrag mit Schutzwirkung gibt ihm keinen
+    Leistungsanspruch, aber einen eigenen Schadensersatzanspruch wegen der Verletzung
+    von Schutzpflichten; der Dritte liquidiert also seinen eigenen Schaden. Bei der
+    Drittschadensliquidation hat dagegen der Dritte keinen eigenen Anspruch, vielmehr
+    macht der Vertragspartner den Schaden des Dritten geltend. Wegen dieser Unterschiede
+    werden beide Institute nicht beliebig ausgetauscht: Die Drittschadensliquidation
+    ist nur dort erforderlich, wo eine Lücke des Schadensersatzrechts besteht. Entsteht
+    der Schaden beim Dritten, der selbst über den Vertrag mit Schutzwirkung geschützt
+    ist, bedarf es der Drittschadensliquidation grundsätzlich nicht. In der Klausur
+    ist daher regelmäßig zuerst der Vertrag mit Schutzwirkung zu prüfen.
+  norms:
+  - § 328 BGB
+  - § 280 Abs. 1 BGB
+  - § 241 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-vsd-schutzwirkung
+  title: Anspruch des Dritten aus Vertrag mit Schutzwirkung, § 280 Abs. 1 BGB
+  norms:
+  - § 280 Abs. 1 BGB
+  - § 241 Abs. 2 BGB
+  - § 328 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Wirksamer Vertrag zwischen Gläubiger und Schuldner
+    hinweis: Der Dritte ist am Vertrag nicht beteiligt und hat keinen Leistungsanspruch.
+  - label: II. Einbeziehung des Dritten in den Schutzbereich
+    children:
+    - label: 1. Leistungsnähe
+      hinweis: Der Dritte kommt bestimmungsgemäß mit der Leistung in Berührung.
+    - label: 2. Einbeziehungsinteresse des Gläubigers
+      hinweis: Fürsorge- oder personenrechtliche Beziehung bzw. vergleichbares Interesse.
+    - label: 3. Erkennbarkeit für den Schuldner
+    - label: 4. Schutzbedürftigkeit des Dritten
+      hinweis: Fehlt bei eigenem, inhaltsgleichem vertraglichem Anspruch des Dritten;
+        deliktische Ansprüche genügen nicht.
+  - label: III. Pflichtverletzung (§ 241 Abs. 2 BGB oder Leistungspflicht)
+  - label: IV. Vertretenmüssen, § 280 Abs. 1 S. 2, § 276, § 278 BGB
+  - label: V. Schaden, einschließlich Schmerzensgeld nach § 253 Abs. 2 BGB
+  - label: VI. Einwendungen und Mitverschulden
+    children:
+    - label: 1. § 334 BGB analog - Einwendungen aus dem Vertrag
+    - label: 2. § 254 BGB - Mitverschulden des Gläubigers
+faelle:
+- slug: zr-fall-vsd-gasheizung
+  title: Die defekte Gastherme
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Vermieter V hat an Mieter M eine Wohnung vermietet, in der die Gasheizung nach
+    dem Mietvertrag von V instand zu halten ist. V versäumt trotz mehrfacher Mängelanzeige
+    des M fahrlässig die Wartung. Wegen eines Defekts tritt Kohlenmonoxid aus. M
+    ist an diesem Tag abwesend. Seine Ehefrau F, die mit M in der Wohnung lebt, und
+    der gemeinsame 8-jährige Sohn S erleiden Vergiftungen und werden im Krankenhaus
+    behandelt. F und S verlangen von V Ersatz der Behandlungskosten und Schmerzensgeld.
+    V wendet ein, er habe nur mit M einen Vertrag geschlossen. Deliktische Ansprüche
+    sind nicht zu prüfen.
+  question: >-
+    Haben F und S Ansprüche gegen V auf Schadensersatz und Schmerzensgeld?
+  steps:
+  - prompt: Welche Anspruchsgrundlage kommt in Betracht und warum ist der Vertragspartnerstatus
+      von F und S fraglich?
+    erwartung: >-
+      § 280 Abs. 1 BGB in Verbindung mit dem Mietvertrag. Vertragspartei ist nur
+      M. F und S können Ansprüche daher nur aus einem Vertrag mit Schutzwirkung zugunsten
+      Dritter herleiten.
+  - prompt: Liegen Leistungsnähe und Einbeziehungsinteresse vor?
+    erwartung: >-
+      Ja. F und S wohnen bestimmungsgemäß in der Wohnung und kommen mit der Heizung
+      in Berührung. M hat als Ehemann und Vater ein Interesse am Schutz seiner Familie;
+      es besteht eine Fürsorgebeziehung.
+  - prompt: Sind Erkennbarkeit und Schutzbedürftigkeit gegeben?
+    erwartung: >-
+      Für V ist erkennbar, dass Familienangehörige des M die Wohnung nutzen. F und
+      S haben keinen eigenen vertraglichen Anspruch gegen V und sind daher schutzbedürftig.
+  - prompt: Worin liegt die Pflichtverletzung und hat V sie zu vertreten?
+    erwartung: >-
+      V verletzt die Instandhaltungspflicht aus § 535 Abs. 1 S. 2 BGB und die Schutzpflicht
+      aus § 241 Abs. 2 BGB durch unterlassene Wartung. Er handelt fahrlässig (§ 276
+      Abs. 2 BGB); das Vertretenmüssen wird nach § 280 Abs. 1 S. 2 BGB vermutet.
+  - prompt: Welchen Schaden können F und S verlangen?
+    erwartung: >-
+      Ersatz der Heilbehandlungskosten (§ 249 Abs. 2 S. 1 BGB) und Schmerzensgeld
+      nach § 253 Abs. 2 BGB, weil Körper und Gesundheit verletzt wurden. Ein Mitverschulden
+      des M trifft F und S nicht, weil M die Mängelanzeige erstattet hat.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Anspruchsgrundlage § 280 Abs. 1 BGB mit Mietvertrag und fehlender Vertragsbeteiligung
+        von F und S erkannt
+      weight: 1.0
+      required: false
+      norms:
+      - § 280 Abs. 1 BGB
+      keywords:
+      - § 280 Abs. 1
+      - Mietvertrag
+      - nicht Vertragspartei
+      - Dritte
+    - id: p2
+      label: Vertrag mit Schutzwirkung zugunsten Dritter als Prüfungsansatz benannt
+        und dogmatisch verortet
+      weight: 2.0
+      required: true
+      norms:
+      - § 328 BGB
+      keywords:
+      - Vertrag mit Schutzwirkung zugunsten Dritter
+      - Schutzwirkung
+      - § 328 Abs. 2 analog
+      - ergänzende Vertragsauslegung
+      card_slugs:
+      - zr-vsd-schutzwirkung-rechtsgrundlage
+    - id: p3
+      label: Leistungsnähe und Einbeziehungsinteresse sauber subsumiert
+      weight: 3.0
+      required: true
+      keywords:
+      - Leistungsnähe
+      - Einbeziehungsinteresse
+      - Fürsorgebeziehung
+      - Gläubigernähe
+      - bestimmungsgemäßer Kontakt
+      card_slugs:
+      - zr-vsd-schutzwirkung-voraussetzungen
+    - id: p4
+      label: Erkennbarkeit für den Vermieter und Schutzbedürftigkeit geprüft
+      weight: 2.0
+      required: false
+      keywords:
+      - Erkennbarkeit
+      - Schutzbedürftigkeit
+      - kein eigener vertraglicher Anspruch
+      card_slugs:
+      - zr-vsd-schutzwirkung-voraussetzungen
+    - id: p5
+      label: Pflichtverletzung, Vertretenmüssen und Rechtsfolge einschließlich Schmerzensgeld
+        nach § 253 Abs. 2 BGB
+      weight: 2.0
+      required: false
+      norms:
+      - § 241 Abs. 2 BGB
+      - § 253 Abs. 2 BGB
+      keywords:
+      - § 253 Abs. 2
+      - Schmerzensgeld
+      - § 241 Abs. 2
+      - Instandhaltungspflicht
+      - § 535 Abs. 1 S. 2
