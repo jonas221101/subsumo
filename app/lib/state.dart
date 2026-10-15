@@ -409,7 +409,8 @@ class AppState extends ChangeNotifier {
     activeDeck = filter;
     sessionDone = false;
     reviewedInSession = 0;
-    return loadDueCards();
+    // Bewusst ueber das Tageslimit neuer Karten hinaus (Backend: extra=true).
+    return loadDueCards(extra: true);
   }
 
   /// Ohne `notifyListeners`: wird beim Verlassen der Deck-Route aufgerufen,
@@ -442,7 +443,7 @@ class AppState extends ChangeNotifier {
   /// zwischengespeicherte Stapel sichtbar (siehe [dueCardsFromCache]) statt
   /// eines leeren Bildschirms - Offline-Lernen ist der Regelfall, nicht die
   /// Ausnahme (siehe docs/01-produktvision.md, "Offline ist Pflicht").
-  Future<bool> loadDueCards() async {
+  Future<bool> loadDueCards({bool extra = false}) async {
     loading = true;
     error = null;
     notifyListeners();
@@ -450,7 +451,12 @@ class AppState extends ChangeNotifier {
       final filter = activeDeck;
       sessionDone = false;
       final fetched =
-          await api.dueCards(limit: 30, deck: filter?.deck, topic: filter?.topic);
+          await api.dueCards(
+            limit: 30,
+            deck: filter?.deck,
+            topic: filter?.topic,
+            extra: extra,
+          );
       dueCards = [
         for (final c in fetched)
           if (!reviewedSlugs.contains(c['slug'])) c,

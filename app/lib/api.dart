@@ -168,11 +168,13 @@ class ApiClient {
     int limit = 20,
     String? deck,
     String? topic,
+    bool extra = false,
   }) async {
     final data = await _get('/v1/cards/due', {
       'limit': limit,
       if (deck != null) 'deck': deck,
       if (topic != null) 'topic': topic,
+      if (extra) 'extra': true,
     });
     return (data as List).cast<Map<String, dynamic>>();
   }
