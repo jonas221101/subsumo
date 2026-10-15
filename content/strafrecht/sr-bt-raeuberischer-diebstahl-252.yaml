@@ -20,9 +20,9 @@ cards:
     sich im Besitz des gestohlenen Gutes zu erhalten. Der Täter wird "gleich einem Räuber"
     bestraft, das heißt mit dem Strafrahmen des § 249 StGB. Die Vorschrift ist ein selbständiges
     Delikt, kein bloßer Strafzumessungsverweis; sie erfasst die Fälle, in denen die Nötigung
-    erst nach Vollendung des Diebstahls erfolgt, sodass § 249 StGB nicht greift. Bei Gewalt
-    nach Beendigung der Wegnahme fehlt der für den Raub nötige finale Zusammenhang zwischen
-    Nötigung und Wegnahme. Das Delikt wird deshalb auch als "Raub mit umgekehrter Reihenfolge"
+    erst nach Vollendung des Diebstahls (Gewahrsamswechsel) erfolgt, sodass § 249 StGB nicht
+    greift. Bei Gewalt nach vollendeter Wegnahme fehlt der für den Raub nötige finale
+    Zusammenhang zwischen Nötigung und Wegnahme. Das Delikt wird deshalb auch als "Raub mit umgekehrter Reihenfolge"
     bezeichnet.
   norms:
   - § 252 StGB
@@ -62,8 +62,8 @@ cards:
     die Beute noch nicht gesichert hat und die Tat deshalb noch "frisch" ist. Ein Teil der
     Lit. will das Merkmal restriktiver auslegen und verlangt ein Betreffen am Tatort selbst
     oder in unmittelbarer Nähe, weil sonst der Charakter des § 252 StGB als Nötigung zur Besitzerhaltung
-    verloren geht. Für die Klausur genügt meist die Feststellung, dass der Täter wenige Minuten
-    und Meter vom Tatort entfernt wahrgenommen und verfolgt wird. Nach beiden Ansichten ist
+    verloren geht. Für die Klausur genügt meist die Feststellung, dass der Täter nach wenigen Minuten
+    und in geringer Entfernung vom Tatort wahrgenommen und verfolgt wird. Nach beiden Ansichten ist
     dies ausreichend.
   norms:
   - § 252 StGB
@@ -114,9 +114,10 @@ cards:
   front: >-
     Wie verhalten sich Diebstahl, § 252 StGB und Körperverletzung zueinander?
   back: >-
-    Der Täter des räuberischen Diebstahls ist zugleich Täter der Vortat. Diebstahl und § 252
-    StGB werden nach h. M. in Tatmehrheit angenommen, weil sie auf zwei selbständigen Handlungen
-    beruhen; die Klausurpraxis folgt dieser Linie, was aber nicht zwingend ist. Wird bei der
+    Der Täter des räuberischen Diebstahls ist zugleich Täter der Vortat. Das Verhältnis zur
+    Vortat wird nicht einheitlich beurteilt: Überwiegend tritt der Vortatdiebstahl im Wege der
+    Gesetzeskonkurrenz hinter § 252 StGB zurück; teilweise wird wegen der zwei selbständigen
+    Handlungen Tatmehrheit angenommen. In der Klausur ist die gewählte Lösung kurz zu begründen. Wird bei der
     Nötigung zugleich eine Körperverletzung begangen, steht § 252 StGB damit in Tateinheit;
     die Körperverletzung ist nicht Bestandteil des § 252 StGB.
   norms:
@@ -178,8 +179,9 @@ cards:
     Angriff im Straßenverkehr oder gegen den Fahrer eines Fahrzeugs ereignet; bei ruhendem
     Fahrzeug fehlt der Zusammenhang, wenn das Opfer in seiner Rolle als Fahrer nicht mehr
     beeinträchtigt ist. Die Lit. fordert teils noch strengere Begrenzungen wegen der hohen
-    Mindeststrafe und des unklaren Rechtsguts. Ein Angriff während der Fahrt oder beim Halt
-    an einer Ampel kann genügen, wenn das Opfer in der Fahrerrolle bleibt.
+    Mindeststrafe und des unklaren Rechtsguts. Ein Angriff während der Fahrt kann genügen; beim
+    Halt (etwa an einer Ampel) kommt es darauf an, ob das Opfer noch durch seine Rolle als
+    Fahrer in seiner Verteidigungsmöglichkeit beeinträchtigt ist.
   norms:
   - § 316a Abs. 1 StGB
   quellen:
@@ -245,7 +247,7 @@ schemata:
   - label: IV. Qualifikationen, §§ 250, 251 StGB
   - label: V. Konkurrenzen
     hinweis: >-
-      § 242 StGB und § 252 StGB meist in Tatmehrheit; Körperverletzung in Tateinheit mit §
+      Verhältnis zur Vortat (§ 242 StGB) kurz klären; Körperverletzung in Tateinheit mit §
       252 StGB.
 - slug: sr-schema-316a
   title: Räuberischer Angriff auf Kraftfahrer, § 316a StGB
@@ -304,8 +306,8 @@ faelle:
       hat.
   - prompt: War A auf frischer Tat betroffen?
     erwartung: >-
-      Ja - D hat A beim Diebstahl beobachtet und trifft ihn wenige Meter hinter dem Ausgang
-      und kurz nach der Tat an. Er wird von D, der die Tat beobachtet hat, in unmittelbarem
+      Ja - D hat A beim Diebstahl beobachtet und trifft ihn etwa 30 Meter hinter dem Ausgang
+      und knapp eine Minute nach der Tat an. Er wird von D, der die Tat beobachtet hat, in unmittelbarem
       räumlich-zeitlichen Zusammenhang gestellt; das genügt auch nach der engeren Lit.-Ansicht.
   - prompt: Hat A Gewalt gegen eine Person angewendet?
     erwartung: >-
@@ -317,7 +319,8 @@ faelle:
   - prompt: Weitere Delikte und Ergebnis?
     erwartung: >-
       A ist wegen räuberischen Diebstahls nach § 252 StGB strafbar, in Tateinheit mit Körperverletzung,
-      § 223 Abs. 1 StGB. Zum Verhältnis zum Diebstahl wird auf die Konkurrenzlehre verwiesen.
+      § 223 Abs. 1 StGB. Das Verhältnis zum vorausgegangenen Diebstahl ist
+      Konkurrenzfrage (überwiegend Gesetzeskonkurrenz, teilweise Tatmehrheit).
   expectation:
     pruefpunkte:
     - id: p1

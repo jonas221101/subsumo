@@ -47,7 +47,7 @@ cards:
     ein verständiger Dritter die Äußerung versteht. Die Kundgabe kann
     ausdrücklich oder konkludent erfolgen (Worte, Gesten, Tätlichkeiten); die
     Äußerung muss das Opfer oder einen Dritten erreichen. Tätliche Beleidigung
-    (Abs. 1 Var. 2) liegt vor, wenn die Missachtung durch eine Tätlichkeit zum
+    (§ 185 Alt. 2 StGB) liegt vor, wenn die Missachtung durch eine Tätlichkeit zum
     Ausdruck kommt, etwa durch eine Ohrfeige oder Anspucken; sie wird mit
     höherer Strafe bedroht. Subjektiv genügt bedingter Vorsatz bezüglich des
     ehrverletzenden Inhalts; eine besondere Beleidigungsabsicht ist nicht
@@ -122,9 +122,9 @@ cards:
     Strafbarkeit: Der Vorsatz muss sich darauf nicht beziehen, und der Täter
     trägt faktisch das Beweisrisiko, denn bleibt die Wahrheit unaufklärbar, geht
     dies zu seinen Lasten (der Zweifelssatz gilt für die Wahrheit nicht).
-    Erwiesene Unwahrheit ist nicht erforderlich. Abs. 2 qualifiziert die
-    Begehung öffentlich, in einer Versammlung oder durch Verbreiten eines
-    Inhalts. Beachte § 190 StGB (Wahrheitsbeweis durch rechtskräftige
+    Erwiesene Unwahrheit ist nicht erforderlich. Der Strafrahmen ist erhöht,
+    wenn die Tat öffentlich, in einer Versammlung oder durch Verbreiten eines
+    Inhalts begangen wird. Beachte § 190 StGB (Wahrheitsbeweis durch rechtskräftige
     Verurteilung).
   norms:
   - "§ 186 StGB"
@@ -165,13 +165,12 @@ cards:
     begangen wird, aus Beweggründen erfolgt, die mit der Stellung des
     Beleidigten im öffentlichen Leben zusammenhängen, und geeignet ist, dessen
     öffentliches Wirken erheblich zu erschweren. Seit der Reform 2021 erfasst
-    die Vorschrift Personen des politischen Lebens auf allen Ebenen (Bund,
-    Länder, Kommunen, Europäische Union), nicht mehr nur der Bundes- und
-    Landesebene. § 188 StGB ist eine Qualifikation der §§ 185 bis 187 StGB. Der
+    die Vorschrift auch die Beleidigung und reicht das politische Leben des
+    Volkes ausdrücklich bis hin zur kommunalen Ebene. § 188 StGB ist eine Qualifikation der §§ 185 bis 187 StGB. Der
     Vorsatz muss die Eignung zur Erschwerung des öffentlichen Wirkens umfassen.
     Die Vorschrift ist selten Klausurgegenstand; wichtig ist der Hinweis, dass
-    hier die Qualifikation neben dem Grundtatbestand zu prüfen ist und die Tat
-    nur auf Antrag verfolgt wird (§ 194 Abs. 1 StGB).
+    die Qualifikation neben dem Grundtatbestand zu prüfen ist und dass für die
+    Verfolgung die Antragsregeln des § 194 StGB zu beachten sind.
   norms:
   - "§ 188 StGB"
   - "§ 194 Abs. 1 StGB"
@@ -189,9 +188,9 @@ cards:
     sich um eine Klarstellung, dass der Wahrheitsbeweis eine Beleidigung nach §
     185 StGB nicht ausschließt. § 190 StGB: Ist die behauptete oder verbreitete
     Tatsache eine Straftat, so ist der Wahrheitsbeweis durch eine rechtskräftige
-    Verurteilung des Beleidigten wegen dieser Tat erbracht; ein vorheriger
+    Verurteilung des Beleidigten wegen dieser Tat erbracht; ein rechtskräftiger
     Freispruch schließt den Wahrheitsbeweis aus. § 189 StGB: Wer das Andenken
-    eines Verstorbenen verunglimpft, wird bestraft; Antragsberechtigt sind die
+    eines Verstorbenen verunglimpft, wird bestraft; antragsberechtigt sind die
     Angehörigen (§ 194 Abs. 2 StGB). Diese Normen sind als Ergänzungen zu den
     Grundtatbeständen bekannt zu halten, aber selten vertieft zu prüfen.
   norms:
@@ -264,10 +263,9 @@ cards:
     Gruppen nicht ohne Weiteres jeden Angehörigen beleidigen: Eine Verurteilung
     wegen Beleidigung setze voraus, dass die Äußerung erkennbar auf einen
     hinreichend überschaubaren Personenkreis bezogen sei, sodass die Zuordnung
-    zu den einzelnen Mitgliedern möglich ist. Ferner muss die Meinungsfreiheit
-    gewahrt werden: Außerdem verlangt Art. 5 Abs. 1 GG, dass die Gerichte bei
-    mehrdeutigen Äußerungen alle plausiblen Deutungen prüfen, bevor sie die zur
-    Verurteilung führende wählen.
+    zu den einzelnen Mitgliedern möglich ist. Außerdem verlangt Art. 5 Abs. 1
+    GG, dass die Gerichte bei mehrdeutigen Äußerungen alle plausiblen Deutungen
+    prüfen, bevor sie die zur Verurteilung führende wählen.
   norms:
   - "§ 185 StGB"
   - "§ 194 Abs. 3 StGB"
@@ -286,10 +284,11 @@ cards:
     Verletzte (§ 77 Abs. 1 StGB), bei Verstorbenen die Angehörigen (§ 194 Abs. 2
     StGB), bei Beleidigung von Amtsträgern auch der Dienstvorgesetzte (§ 194
     Abs. 3 StGB). Die Antragsfrist beträgt drei Monate ab Kenntnis von Tat und
-    Täter (§ 77b StGB). Besondere Regeln gelten nach § 194 Abs. 1 S. 2 StGB,
-    wenn die Beleidigung durch Verbreiten eines Inhalts oder in einer
-    Versammlung gegen Angehörige einer unter der nationalsozialistischen
-    Gewaltherrschaft verfolgten Gruppe begangen wird. Prozessual sind
+    Täter (§ 77b StGB). Eine Sonderregel gilt für Beleidigungen, die durch
+    Verbreiten eines Inhalts oder in einer Versammlung gegen Angehörige einer
+    unter der nationalsozialistischen Gewaltherrschaft verfolgten Gruppe
+    begangen werden und mit dieser Verfolgung zusammenhängen: Hier ist unter
+    den Voraussetzungen des § 194 Abs. 1 S. 2 StGB kein Strafantrag erforderlich. Prozessual sind
     Beleidigungsdelikte Privatklagedelikte (§ 374 Abs. 1 Nr. 2 StPO): Die
     Staatsanwaltschaft erhebt öffentliche Klage nur, wenn dies im öffentlichen
     Interesse liegt (§ 376 StPO); regelmäßig ist ein Sühneversuch vorgeschaltet
@@ -379,12 +378,15 @@ faelle:
   - prompt: >-
       Liegt eine üble Nachrede (§ 186 StGB) vor?
     erwartung: >-
-      Ja. Die Behauptung, K habe Geld aus der Kasse genommen, ist eine dem
-      Beweis zugängliche Tatsache, die geeignet ist, K in der öffentlichen
-      Meinung herabzuwürdigen. A hat sie gegenüber Dritten behauptet bzw.
-      verbreitet. Die Tatsache ist nicht erweislich wahr; das ist eine objektive
-      Bedingung der Strafbarkeit, auf die sich der Vorsatz nicht beziehen muss.
-      Das Beweisrisiko trägt A. A handelte vorsätzlich.
+      Ja, A macht sich wegen übler Nachrede nach § 186 StGB strafbar. Die
+      Äußerung über die Kasse ist eine Tatsachenbehauptung, weil sie dem Beweis
+      zugänglich ist, und sie ist geeignet, K in der öffentlichen Meinung
+      herabzuwürdigen. A hat die Tatsache gegenüber Dritten verbreitet, denn er
+      hat eine fremde Behauptung weitergegeben. Die Tatsache ist nicht
+      erweislich wahr. Diese Nichterweislichkeit ist eine objektive Bedingung
+      der Strafbarkeit, der Vorsatz muss sich darauf nicht erstrecken. Das
+      Beweisrisiko trägt A. A handelte bezüglich der übrigen Merkmale
+      vorsätzlich.
   - prompt: >-
       Ist die Tat nach § 193 StGB gerechtfertigt?
     erwartung: >-
@@ -441,7 +443,6 @@ faelle:
       - "nicht erweislich wahr"
       - "Beweisrisiko"
       - "Nichterweislichkeit"
-      - "erweislich wahr"
       card_slugs:
       - sr-ehre-186-ueble-nachrede
     - id: p3
