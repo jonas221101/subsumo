@@ -374,7 +374,7 @@ class _GutachtenPageState extends State<GutachtenPage> {
           ),
         ],
       ),
-      bottomNavigationBar: _schmal(context)
+      bottomNavigationBar: _caseUpgradeMessage == null
           ? SafeArea(
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(Spacing.lg, Spacing.sm, Spacing.lg, Spacing.sm),
@@ -401,7 +401,7 @@ class _GutachtenPageState extends State<GutachtenPage> {
                       height: _klausur
                           ? max(560, MediaQuery.sizeOf(context).height * 0.75)
                           : 420,
-                      child: _buildEditor(mitButton: false),
+                      child: _buildEditor(),
                     ),
                     const SizedBox(height: Spacing.lg),
                     KeyedSubtree(key: _feedbackKey, child: feedback),
@@ -511,8 +511,9 @@ class _GutachtenPageState extends State<GutachtenPage> {
     );
   }
 
-  /// Schmale Ansicht: Abgabe-Button in fester Leiste am unteren Rand, damit er
-  /// am Handy nicht unterhalb des sichtbaren Bereichs liegt (Nutzertest W10).
+  /// Zweispaltig erst ab 900 px; der Abgabe-Button steht in jeder Ansicht in
+  /// einer festen Leiste am unteren Rand, damit er nie unterhalb des sichtbaren
+  /// Bereichs liegt (Nutzertest W10, Handy und Desktop).
   bool _schmal(BuildContext context) => min(MediaQuery.sizeOf(context).width, 1100) <= 900;
 
   Widget _submitButton() => SubsumoButton.primary(
@@ -520,7 +521,7 @@ class _GutachtenPageState extends State<GutachtenPage> {
         onPressed: _busy || _controller.text.trim().length < 40 ? null : _submit,
       );
 
-  Widget _buildEditor({bool mitButton = true}) => Column(
+  Widget _buildEditor() => Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           if (_klausur) _buildTimer(),
@@ -540,10 +541,6 @@ class _GutachtenPageState extends State<GutachtenPage> {
               ),
             ),
           ),
-          if (mitButton) ...[
-            const SizedBox(height: Spacing.md),
-            _submitButton(),
-          ],
         ],
       );
 
