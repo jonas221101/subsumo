@@ -1,0 +1,290 @@
+topic:
+  slug: bw-bauordnungsrecht
+  area: oeffentliches-recht
+  title: 'Bauordnungsrecht Baden-Württemberg: Landesbauordnung'
+  parent: oeffentliches-recht
+  bundesland: BW
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: bw-bau-verfahren
+  type: norm
+  front: Welche Verfahrensarten kennt die LBO BW?
+  back: >-
+    Die LBO BW unterscheidet verfahrensfreie Vorhaben (§ 50 LBO BW mit Anhang), das Kenntnisgabeverfahren
+    (§ 51 LBO BW; Wohngebäude geringer und mittlerer Höhe im Geltungsbereich eines qualifizierten Bebauungsplans),
+    das vereinfachte Baugenehmigungsverfahren (§ 52 LBO BW) und das reguläre Baugenehmigungsverfahren.
+    Auch verfahrensfreie Vorhaben müssen dem materiellen Recht genügen (§ 50 Abs. 5 LBO BW); sie sind
+    nur von der Pflicht zur Durchführung eines Genehmigungsverfahrens befreit. Im vereinfachten Verfahren
+    beschränkt sich die Prüfung der Behörde auf bestimmte Vorschriften, das Bauplanungsrecht und weitere
+    öffentlich-rechtliche Vorschriften werden aber geprüft. Die Baugenehmigung ist zu erteilen, wenn dem
+    Vorhaben keine öffentlich-rechtlichen Vorschriften entgegenstehen (§ 58 Abs. 1 LBO BW).
+  norms:
+  - § 49 LBO BW
+  - § 50 LBO BW
+  - § 51 LBO BW
+  - § 52 LBO BW
+  - § 58 Abs. 1 LBO BW
+  quellen: &id001
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-bau-genehmigungspflicht
+  type: definition
+  front: >-
+    Wann ist ein Vorhaben genehmigungspflichtig, und welche Rolle spielt der Begriff der baulichen Anlage?
+  back: >-
+    Die Errichtung, Änderung, Nutzungsänderung und der Abbruch baulicher Anlagen bedürfen grundsätzlich
+    der Baugenehmigung, soweit nicht Ausnahmen (verfahrensfrei, Kenntnisgabe) greifen. Eine bauliche Anlage
+    ist eine mit dem Erdboden verbundene, aus Bauprodukten hergestellte Anlage; als solche gelten auch
+    bestimmte aufgeschüttete und ähnliche Anlagen. Entscheidend ist die Prüfung in zwei Schritten: Anlage
+    im Sinn der LBO BW, dann Verfahrensfreiheit nach dem Anhang zu § 50 LBO BW. Eine Nutzungsänderung
+    ist genehmigungspflichtig, wenn für die neue Nutzung andere öffentlich-rechtliche Anforderungen gelten
+    können. Das materielle Bauplanungsrecht (§§ 29 ff. BauGB) ist über die Prüfung nach § 58 LBO BW Bestandteil
+    der Genehmigung.
+  norms:
+  - § 49 LBO BW
+  - § 50 LBO BW
+  - §§ 29 ff. BauGB
+  quellen: *id001
+  stand: 2026-10
+- slug: bw-bau-genehmigung
+  type: definition
+  front: Welche Wirkungen hat eine Baugenehmigung?
+  back: >-
+    Die Baugenehmigung ist ein feststellender Verwaltungsakt mit Verfügungselement: Sie stellt fest, dass
+    dem Vorhaben keine öffentlich-rechtlichen Vorschriften entgegenstehen, und gestattet die Ausführung
+    (Bauschein). Sie ergeht unbeschadet der privaten Rechte Dritter (Grundsatz der Baufreiheit mit Vorbehalt
+    von Rechten Dritter). Sie vermittelt einen Anspruch auf Erteilung, wenn das Vorhaben genehmigungsfähig
+    ist (gebundene Entscheidung, Art. 14 Abs. 1 GG). Die Genehmigung gewährt Bestandsschutz im Rahmen
+    des Genehmigungsinhalts. Eine Verletzung von Rechten Dritter macht sie nur dann rechtswidrig mit Folge
+    der Aufhebung durch Drittanfechtung, wenn die verletzte Norm Nachbarschutz vermittelt.
+  norms:
+  - § 58 LBO BW
+  - Art. 14 Abs. 1 GG
+  quellen: *id001
+  stand: 2026-10
+- slug: bw-bau-abstandsflaechen
+  type: norm
+  front: Wie werden Abstandsflächen nach der LBO BW bemessen?
+  back: >-
+    Vor den Außenwänden von Gebäuden sind Abstandsflächen von oberirdischen Gebäuden freizuhalten (§ 5
+    LBO BW). Die Tiefe bemisst sich nach der Wandhöhe: in der Regel 0,4 der Wandhöhe, mindestens 2,5 m
+    (§ 5 Abs. 7 LBO BW). Die Abstandsflächen müssen auf dem Grundstück selbst liegen und dürfen sich nicht
+    überdecken (Ausnahmen bestehen für zulässige Grenzbebauung). Sie dienen Belichtung, Belüftung, Brandschutz
+    und Wahrung des Wohnfriedens. Abweichungen sind nach § 56 LBO BW unter Würdigung der nachbarlichen
+    Interessen möglich. Die Vorschriften sind nachbarschützend, soweit sie dem Schutz des Nachbargrundstücks
+    dienen.
+  norms:
+  - § 5 LBO BW
+  - § 5 Abs. 7 LBO BW
+  - § 56 LBO BW
+  quellen: *id001
+  stand: 2026-10
+- slug: bw-bau-nachbarbeteiligung
+  type: norm
+  front: Wie werden Nachbarn am Baugenehmigungsverfahren beteiligt?
+  back: >-
+    Die Gemeinde (Baurechtsbehörde) benachrichtigt die Angrenzer vom Bauantrag und gibt ihnen Gelegenheit,
+    innerhalb einer Frist Einwendungen vorzubringen (§ 55 LBO BW). Die Baugenehmigung wird dem Angrenzer,
+    der Einwendungen erhoben hat, zugestellt. Hat der Nachbar dem Bauvorhaben auf den Lageplänen zugestimmt,
+    sind seine öffentlich-rechtlichen Einwendungen ausgeschlossen (§ 55 LBO BW). Die Beteiligung ist Grundlage
+    des Nachbarschutzes: Verletzt die Behörde sie, führt das nicht für sich allein zur Aufhebung der Genehmigung;
+    entscheidend ist die materielle Verletzung drittschützender Normen.
+  norms:
+  - § 55 LBO BW
+  quellen: *id001
+  stand: 2026-10
+- slug: bw-bau-nachbarschutz
+  type: definition
+  front: Wann kann ein Nachbar eine Baugenehmigung erfolgreich anfechten?
+  back: >-
+    Die Nachbarklage ist begründet, wenn die Baugenehmigung rechtswidrig ist und den Nachbarn in seinen
+    Rechten verletzt (§ 113 Abs. 1 S. 1 VwGO). Maßgeblich ist die Schutznormtheorie: Nur die Verletzung
+    nachbarschützender Normen führt zur Aufhebung. Nachbarschützend sind insbesondere die Vorschriften
+    über Abstandsflächen, der Gebietserhaltungsanspruch (Festsetzung der Baugebietsart nach §§ 2 ff. BauNVO)
+    und das Gebot der Rücksichtnahme (§ 15 Abs. 1 BauNVO) bzw. bei § 34 BauGB das Einfügungsgebot als
+    Rücksichtnahmegebot. Nicht ausreichend ist ein reiner Verstoß gegen objektives Recht. Nach § 212a
+    Abs. 1 BauGB haben Widerspruch und Anfechtungsklage des Nachbarn keine aufschiebende Wirkung; vorläufiger
+    Rechtsschutz richtet sich nach § 80a, § 80 Abs. 5 VwGO.
+  norms:
+  - § 113 Abs. 1 S. 1 VwGO
+  - § 212a Abs. 1 BauGB
+  - § 80a VwGO
+  - § 15 BauNVO
+  quellen: *id001
+  stand: 2026-10
+- slug: bw-bau-einstellung
+  type: norm
+  front: >-
+    Welche bauaufsichtlichen Maßnahmen gibt es bei rechtswidrigen Vorhaben?
+  back: >-
+    Die Baurechtsbehörde kann bei formeller oder materieller Rechtswidrigkeit einschreiten: Baueinstellung
+    (§ 64 LBO BW) bei Bau ohne erforderliche Genehmigung, Abbruchsanordnung und Nutzungsuntersagung (§
+    65 LBO BW) bei Vorhaben, die gegen öffentlich-rechtliche Vorschriften verstoßen. Eine Baueinstellung
+    ist schon bei formeller Illegalität zulässig, weil sie nur vorläufig ist. Der Abbruch setzt nach h.
+    M. materielle Illegalität voraus, weil sonst ein Genehmigungsverfahren nachzuholen wäre; deshalb muss
+    die Behörde prüfen, ob der Bau genehmigungsfähig ist. Das Ermessen ist durch die Verhältnismäßigkeit
+    und den Gleichheitssatz begrenzt (keine Anordnung "nach Kassenlage"). Adressat ist der Verantwortliche
+    (Bauherr, Eigentümer).
+  norms:
+  - § 64 LBO BW
+  - § 65 LBO BW
+  quellen: *id001
+  stand: 2026-10
+- slug: bw-bau-abbruch
+  type: streitstand
+  front: Reicht formelle Illegalität für eine Abbruchsanordnung aus?
+  back: >-
+    Die h. M. verlangt für den Abbruch einer baulichen Anlage formelle und materielle Illegalität. Ein
+    Gebäude, das zwar ohne Genehmigung errichtet wurde, aber genehmigungsfähig wäre, darf nicht abgerissen
+    werden: Der Abbruch wäre unverhältnismäßig, weil ein milderes Mittel (Aufforderung zum Bauantrag)
+    zur Verfügung steht und nach Genehmigung die Rechtmäßigkeit hergestellt wird. Teilweise wird die formelle
+    Illegalität als hinreichender Eingriffsgrund angesehen, mit dem Argument, das Genehmigungsverfahren
+    dürfe nicht umgangen werden (Vollzugsargument). Dem folgt die Rechtsprechung nur für vorläufige Maßnahmen
+    wie Baueinstellung und eingeschränkt für die Nutzungsuntersagung. Entscheidend sind Verhältnismäßigkeit
+    und Gleichbehandlung.
+  norms:
+  - § 65 LBO BW
+  - Art. 14 Abs. 1 GG
+  quellen: *id001
+  stand: 2026-10
+- slug: bw-bau-aufbau
+  type: schema_step
+  front: 'Aufbau: Nachbarklage gegen eine Baugenehmigung'
+  back: >-
+    A. Zulässigkeit: Verwaltungsrechtsweg § 40 Abs. 1 VwGO, Anfechtungsklage § 42 Abs. 1 Var. 1 VwGO,
+    Klagebefugnis (§ 42 Abs. 2 VwGO; Schutznormtheorie), Widerspruchsverfahren, Frist. B. Begründetheit:
+    1. Baugenehmigung rechtswidrig (Genehmigungsfähigkeit nach LBO, BauGB), 2. Verletzung nachbarschützender
+    Vorschriften, 3. Rechtsverletzung des Nachbarn (§ 113 Abs. 1 S. 1 VwGO).
+  norms:
+  - § 42 Abs. 2 VwGO
+  - § 113 Abs. 1 S. 1 VwGO
+  quellen: *id001
+  stand: 2026-10
+schemata:
+- slug: bw-schema-bau-nachbarklage
+  title: Nachbarklage gegen eine Baugenehmigung in Baden-Württemberg
+  norms:
+  - § 42 Abs. 2 VwGO
+  - § 113 Abs. 1 S. 1 VwGO
+  quellen: *id001
+  steps:
+  - label: A. Zulässigkeit
+    children:
+    - label: I. Verwaltungsrechtsweg, § 40 Abs. 1 VwGO
+    - label: 'II. Statthafte Klageart: Anfechtungsklage, § 42 Abs. 1 Var. 1 VwGO'
+    - label: III. Klagebefugnis, § 42 Abs. 2 VwGO
+    - label: IV. Vorverfahren (Drittwiderspruch) und Frist
+    - label: V. Beteiligte, Gericht
+  - label: B. Begründetheit
+    children:
+    - label: I. Rechtswidrigkeit der Baugenehmigung
+    - label: 1. Verfahren, Zuständigkeit
+    - label: '2. Genehmigungsfähigkeit: Bauplanungsrecht und LBO'
+    - label: II. Rechtsverletzung des Nachbarn
+      hinweis: Nur drittschützende Normen zählen (Schutznormtheorie).
+      children:
+      - label: 1. Abstandsflächen, § 5 LBO BW
+      - label: 2. Gebietserhaltungsanspruch
+      - label: 3. Rücksichtnahmegebot
+  - label: C. Vorläufiger Rechtsschutz
+    hinweis: >-
+      § 212a Abs. 1 BauGB: keine aufschiebende Wirkung; § 80a, § 80 Abs. 5 VwGO.
+  stand: 2026-10
+faelle:
+- slug: bw-fall-bau-abstandsflaeche
+  title: Der zu nahe Anbau
+  difficulty: 3
+  minutes: 50
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  facts: >-
+    B erhält im vereinfachten Baugenehmigungsverfahren eine Baugenehmigung für den Anbau eines Wohnhauses
+    mit einer Wandhöhe von 9 m, dessen Außenwand 2,5 m von der Grenze zum Grundstück des Nachbarn N entfernt
+    liegt. Eine Abweichung wurde nicht beantragt oder erteilt. Der Bebauungsplan setzt allgemeines Wohngebiet
+    fest; das Vorhaben entspricht den planungsrechtlichen Festsetzungen. N wurde beteiligt, erhob Einwendungen
+    und legte fristgerecht Widerspruch ein, der zurückgewiesen wurde. Er erhebt Anfechtungsklage zum Verwaltungsgericht.
+    Es sind die Vorschriften der LBO BW anzuwenden; die Tiefe der Abstandsfläche beträgt in der Regel
+    0,4 der Wandhöhe, mindestens 2,5 m.
+  question: Hat die Klage des N Erfolg?
+  steps:
+  - prompt: Ist die Klage zulässig?
+    erwartung: >-
+      Ja. Der Verwaltungsrechtsweg ist eröffnet (§ 40 Abs. 1 VwGO), die Anfechtungsklage ist statthaft.
+      N ist als Nachbar klagebefugt, weil die Abstandsflächenvorschriften möglicherweise drittschützend
+      sind. Vorverfahren und Frist wurden gewahrt.
+  - prompt: Ist die Baugenehmigung rechtswidrig?
+    erwartung: >-
+      Ja. Erforderlich wäre eine Abstandsfläche von 0,4 x 9 m = 3,6 m; vorhanden sind nur 2,5 m. Das Vorhaben
+      verstößt gegen § 5 LBO BW und ist ohne Abweichung nicht genehmigungsfähig. Auch im vereinfachten
+      Verfahren werden die Abstandsflächen geprüft, soweit nicht abweichend zugelassen.
+  - prompt: Wird N in seinen Rechten verletzt?
+    erwartung: >-
+      Ja. Die Abstandsflächenvorschriften schützen den Nachbarn (Belichtung, Belüftung, Wohnfrieden) und
+      sind nachbarschützend.
+  - prompt: Wie ist der Eilrechtsschutz?
+    erwartung: >-
+      Widerspruch und Klage haben nach § 212a Abs. 1 BauGB keine aufschiebende Wirkung; N muss nach §§
+      80a, 80 Abs. 5 VwGO einen Antrag auf Anordnung der aufschiebenden Wirkung stellen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Zulässigkeit: Anfechtungsklage, Klagebefugnis des Nachbarn über die Schutznormtheorie
+      weight: 2.0
+      required: true
+      norms:
+      - § 42 Abs. 2 VwGO
+      keywords:
+      - Anfechtungsklage
+      - Klagebefugnis
+      - Schutznormtheorie
+      - drittschützend
+      - nachbarschützend
+      card_slugs:
+      - bw-bau-nachbarschutz
+    - id: p2
+      label: >-
+        Abstandsfläche korrekt berechnet (0,4 x 9 m = 3,6 m, vorhanden 2,5 m) und Verstoß gegen § 5 LBO
+        BW festgestellt
+      weight: 3.0
+      required: true
+      keywords:
+      - 3,6 m
+      - 0,4 der Wandhöhe
+      - § 5 LBO BW
+      - Abstandsfläche unterschritten
+      - Abstandsflächen
+      card_slugs:
+      - bw-bau-abstandsflaechen
+    - id: p3
+      label: >-
+        Rechtsverletzung des Nachbarn wegen Nachbarschutz der Abstandsflächenvorschriften; Klage begründet
+      weight: 2.5
+      required: true
+      keywords:
+      - Rechtsverletzung
+      - nachbarschützende Norm
+      - Aufhebung der Baugenehmigung
+      - § 113 Abs. 1 S. 1 VwGO
+      - Klage ist begründet
+      card_slugs:
+      - bw-bau-nachbarschutz
+    - id: p4
+      label: 'Eilrechtsschutz: § 212a BauGB, §§ 80a, 80 Abs. 5 VwGO'
+      weight: 1.0
+      required: false
+      keywords:
+      - § 212a
+      - keine aufschiebende Wirkung
+      - § 80a VwGO
+      - Antrag auf Anordnung der aufschiebenden Wirkung
+      card_slugs:
+      - bw-bau-nachbarschutz
+  stand: 2026-10
