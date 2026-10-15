@@ -112,8 +112,8 @@ cards:
     begangener unerlaubter Handlung (§ 393 BGB) und bei unpfändbaren Forderungen
     (§ 394 BGB). Eine Aufrechnung mit einer verjährten Forderung bleibt nach § 215
     BGB möglich, wenn die Aufrechnungslage bereits vor Eintritt der Verjährung bestand.
-    Bei Abtretung ist § 406 BGB zu beachten, wonach der Schuldner auch gegenüber dem
-    neuen Gläubiger aufrechnen kann. Vertragliche und AGB-rechtliche Aufrechnungsverbote
+    Bei Abtretung ist § 406 BGB zu beachten, wonach der Schuldner unter den dort genannten Voraussetzungen
+    auch gegenüber dem neuen Gläubiger aufrechnen kann. Vertragliche und AGB-rechtliche Aufrechnungsverbote
     sind in den Grenzen des § 309 Nr. 3 BGB zulässig.
   norms:
   - § 389 BGB
@@ -240,7 +240,7 @@ faelle:
   steps:
   - prompt: Liegt eine Aufrechnungslage vor?
     erwartung: >-
-      Ja. B ist Gläubiger der Darlehensforderung (Gegenforderung) und Schuldner des
+      Ja, eine Aufrechnungslage nach § 387 BGB liegt vor. B ist Gläubiger der Darlehensforderung (Gegenforderung) und Schuldner des
       Werklohns (Hauptforderung); beide sind gegenseitig und gleichartig (Geld);
       die Gegenforderung ist wirksam, durchsetzbar und seit dem 1. März fällig, die
       Hauptforderung ist erfüllbar.
@@ -278,7 +278,10 @@ faelle:
       keywords:
       - Aufrechnungslage
       - Gegenseitigkeit
+      - gegenseitig
       - Gleichartigkeit
+      - gleichartig
+      - erfüllbar
       - Gegenforderung fällig und durchsetzbar
       - Hauptforderung erfüllbar
       card_slugs:

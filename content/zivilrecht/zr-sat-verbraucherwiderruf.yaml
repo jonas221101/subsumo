@@ -24,8 +24,9 @@ cards:
     Seit der Neufassung gelten die Vorschriften auch für Verträge über digitale Produkte,
     bei denen der Verbraucher personenbezogene Daten bereitstellt (§ 312 Abs. 1a BGB).
     § 312 Abs. 2 BGB nimmt bestimmte Verträge ganz oder teilweise aus, etwa notariell
-    beurkundete Verträge, Verträge über Pauschalreisen oder bestimmte Verträge
-    über Finanzdienstleistungen, für die teilweise eigene Regeln gelten.
+    beurkundete Verträge (Nr. 1), Verträge über Grundstücke (Nr. 2) oder die Vermietung von Wohnraum
+    (Nr. 5); für Pauschalreiseverträge (§ 312 Abs. 6 BGB) und Versicherungsverträge (§ 312 Abs. 4
+    BGB) gelten nur einzelne Vorschriften, für Finanzdienstleistungen teilweise eigene Regeln.
   norms:
   - § 312 Abs. 1 BGB
   - § 13 BGB
@@ -45,7 +46,8 @@ cards:
     1, etwa Haustürgeschäft). Ihm gleich stehen Verträge, bei denen der Verbraucher
     außerhalb der Geschäftsräume ein Angebot abgegeben hat (Nr. 2), die Verträge,
     die unmittelbar nach persönlichem und individuellem Ansprechen des Verbrauchers
-    außerhalb der Geschäftsräume im Geschäftsraum geschlossen werden (Nr. 3), und
+    außerhalb der Geschäftsräume in den Geschäftsräumen oder per Fernkommunikationsmittel
+    geschlossen werden (Nr. 3), und
     Verträge auf einem vom Unternehmer organisierten Ausflug (Nr. 4). Typische Beispiele
     sind Vertragsabschlüsse an der Haustür, auf der Straße oder bei Kaffeefahrten.
     Maßgeblich ist der Schutz vor Überrumpelung. Die Widerrufsbefugnis folgt aus §
@@ -116,8 +118,9 @@ cards:
     Erklärung ist formfrei, die Rücksendung der Ware allein genügt nicht. Zur Fristwahrung
     reicht die rechtzeitige Absendung (§ 355 Abs. 1 S. 5 BGB). Die Widerrufsfrist
     beträgt 14 Tage (§ 355 Abs. 2 S. 1 BGB) und beginnt bei Fernabsatz- und Außergeschäftsraumverträgen
-    über Waren grundsätzlich nicht vor Erhalt der Ware (§ 356 Abs. 2 Nr. 1 BGB), bei Dienstleistungsverträgen
-    mit Vertragsschluss (§ 355 Abs. 2 S. 2 BGB).
+    über Waren grundsätzlich nicht vor Erhalt der Ware, bei mehreren getrennt gelieferten Waren
+    einer einheitlichen Bestellung erst mit Erhalt der letzten Ware (§ 356 Abs. 2 Nr. 1 BGB),
+    bei Dienstleistungsverträgen mit Vertragsschluss (§ 355 Abs. 2 S. 2 BGB).
     Sie beginnt außerdem nicht, bevor der Unternehmer den Verbraucher ordnungsgemäß
     über das Widerrufsrecht unterrichtet hat (§ 356 Abs. 3 S. 1 BGB).
   norms:
@@ -139,15 +142,16 @@ cards:
     ordnungsgemäße Verwendung die gesetzlichen Anforderungen erfüllt. Unterbleibt
     die Unterrichtung, beginnt die Widerrufsfrist nicht zu laufen; das Widerrufsrecht
     erlischt dann spätestens zwölf Monate und 14 Tage nach dem maßgeblichen Zeitpunkt
-    des Fristbeginns (§ 356 Abs. 3 S. 2 BGB). Unabhängig davon erlischt es bei Dienstleistungsverträgen,
-    wenn der Unternehmer die Dienstleistung vollständig erbracht hat und der Verbraucher
-    zuvor ausdrücklich zugestimmt und bestätigt hat, dass er sein Widerrufsrecht bei
-    vollständiger Vertragserfüllung verliert (§ 356 Abs. 4 BGB). Wird die Belehrung
+    des Fristbeginns (§ 356 Abs. 4 S. 1 BGB). Unabhängig davon erlischt es bei entgeltlichen
+    Dienstleistungsverträgen, wenn der Unternehmer die Dienstleistung vollständig erbracht hat
+    und der Verbraucher zuvor ausdrücklich zugestimmt und bestätigt hat, dass er sein Widerrufsrecht
+    bei vollständiger Vertragserfüllung verliert (§ 356 Abs. 5 Nr. 2 BGB). Wird die Belehrung
     nachträglich ordnungsgemäß erteilt, beginnt die Frist erst mit der Nachholung
     zu laufen.
   norms:
   - § 356 Abs. 3 BGB
   - § 356 Abs. 4 BGB
+  - § 356 Abs. 5 BGB
   - Art. 246a § 1 Abs. 2 EGBGB
   quellen:
   - BGB, amtliche Fassung
@@ -161,14 +165,15 @@ cards:
     Mit dem Widerruf sind die Parteien nicht mehr an ihre auf den Vertragsschluss
     gerichteten Willenserklärungen gebunden (§ 355 Abs. 1 S. 1 BGB); das Schuldverhältnis
     wird in ein Rückgewährschuldverhältnis umgewandelt. Die empfangenen Leistungen
-    sind nach § 357 Abs. 1 BGB unverzüglich, spätestens nach 14 Tagen zurückzugewähren.
+    sind unverzüglich (§ 355 Abs. 3 S. 1 BGB), spätestens nach 14 Tagen (§ 357 Abs. 1 BGB) zurückzugewähren.
     Der Unternehmer muss die erhaltenen Zahlungen, einschließlich der Standardlieferkosten,
-    erstatten und darf die Rückzahlung bis zum Erhalt der Ware oder bis zum Nachweis
-    der Absendung verweigern. Der Verbraucher muss die Ware zurücksenden; die unmittelbaren
-    Kosten der Rücksendung trägt er, wenn er hierüber unterrichtet wurde. Für einen
+    erstatten und darf beim Verbrauchsgüterkauf die Rückzahlung bis zum Erhalt der Ware oder bis zum Nachweis
+    der Absendung verweigern (§ 357 Abs. 2, 4 BGB). Der Verbraucher muss die Ware zurücksenden; die unmittelbaren
+    Kosten der Rücksendung trägt er, wenn er hierüber unterrichtet wurde (§ 357 Abs. 5 BGB). Für einen
     Wertverlust der Ware hat er nur Wertersatz zu leisten, wenn der Wertverlust auf
     einen Umgang zurückzuführen ist, der zur Prüfung der Beschaffenheit, Eigenschaften
-    und Funktionsweise nicht notwendig war (§ 357a BGB). Weitere Ansprüche sind nach
+    und Funktionsweise nicht notwendig war, und er über das Widerrufsrecht unterrichtet wurde
+    (§ 357a Abs. 1 BGB). Weitere Ansprüche sind nach
     § 361 BGB grundsätzlich ausgeschlossen.
   norms:
   - § 355 Abs. 1 BGB
@@ -214,14 +219,16 @@ cards:
     Bestellung über eine Schaltfläche, muss sie gut lesbar mit den Wörtern zahlungspflichtig
     bestellen oder einer entsprechenden Formulierung beschriftet sein (Button-Lösung).
     Verstößt der Unternehmer dagegen, kommt der Vertrag nach § 312j Abs. 4 BGB nicht
-    zustande. Unionsrechtlich ist zudem eine elektronische Widerrufsfunktion für online
-    geschlossene Fernabsatzverträge vorgesehen, die nach der Richtlinie (EU) 2023/2673
-    ab dem 19. Juni 2026 anzuwenden ist; die genaue Ausgestaltung im BGB sollte
-    vor Verwendung nachgeschlagen werden.
+    zustande. Bei über eine Online-Benutzeroberfläche geschlossenen Fernabsatzverträgen
+    muss der Unternehmer zudem eine elektronische Widerrufsfunktion bereitstellen, die mit
+    "Vertrag widerrufen" beschriftet ist und über eine Bestätigungsfunktion verfügt; den
+    Eingang des Widerrufs hat er unverzüglich auf einem dauerhaften Datenträger zu bestätigen
+    (§ 356a BGB, Umsetzung der Richtlinie (EU) 2023/2673).
   norms:
   - § 312j Abs. 2 BGB
   - § 312j Abs. 3 BGB
   - § 312j Abs. 4 BGB
+  - § 356a BGB
   quellen:
   - BGB, amtliche Fassung
   - Richtlinie (EU) 2023/2673
@@ -251,7 +258,7 @@ schemata:
     - label: 1. 14 Tage ab Fristbeginn (Erhalt der Ware, Vertragsschluss bei Dienstleistung)
     - label: 2. Ordnungsgemäße Belehrung - sonst kein Fristbeginn
     - label: 3. Fristwahrung durch rechtzeitige Absendung
-    - label: 4. Erlöschen spätestens 12 Monate und 14 Tage ohne Belehrung
+    - label: 4. Erlöschen spätestens 12 Monate und 14 Tage ohne Belehrung, § 356 Abs. 4 BGB
   - label: IV. Rechtsfolgen, §§ 355 Abs. 3, 357, 357a, 361 BGB
     children:
     - label: 1. Rückgewähr der Leistungen binnen 14 Tagen
@@ -288,9 +295,11 @@ faelle:
   - prompt: Ist der Widerruf des Notebook-Kaufs fristgerecht erklärt?
     erwartung: >-
       Ja. Die 14-tägige Frist (§ 355 Abs. 2 BGB) beginnt mit dem Erhalt der Ware
-      am 4. Mai (§ 356 Abs. 2 Nr. 1 BGB), die Belehrung wurde ordnungsgemäß
-      erteilt. Die E-Mail vom 15. Mai genügt als formfreie Erklärung und wahrt die
-      Frist.
+      (§ 356 Abs. 2 Nr. 1 BGB), die Belehrung wurde ordnungsgemäß erteilt. Beim Notebook
+      ist das der 4. Mai; wegen der einheitlichen Bestellung mehrerer getrennt gelieferter
+      Waren beginnt die Frist sogar erst mit dem Erhalt der letzten Ware am 12. Mai
+      (§ 356 Abs. 2 Nr. 1 Buchst. b BGB). Die E-Mail vom 15. Mai genügt als formfreie Erklärung
+      und wahrt die Frist in jedem Fall.
   - prompt: Ist der Widerruf bezüglich der Küchenfront ausgeschlossen?
     erwartung: >-
       Ja. Die Küchenfront wurde nach den Maßangaben der A angefertigt, sodass die
@@ -300,8 +309,8 @@ faelle:
     erwartung: >-
       Rückgewähr nach § 357 BGB: H muss den Kaufpreis erstatten (darf die Rückzahlung
       bis zum Erhalt oder Nachweis der Rücksendung verweigern), A muss das Notebook
-      binnen 14 Tagen zurücksenden und trägt die Rücksendekosten, weil sie hierüber
-      unterrichtet wurde.
+      binnen 14 Tagen zurücksenden (§ 357 Abs. 1 BGB) und trägt die Rücksendekosten, weil
+      sie hierüber unterrichtet wurde (§ 357 Abs. 5 BGB).
   - prompt: Kann H Wertersatz für die Inbetriebnahme verlangen?
     erwartung: >-
       Nein. Wertersatz setzt nach § 357a BGB einen Wertverlust voraus, der auf einen

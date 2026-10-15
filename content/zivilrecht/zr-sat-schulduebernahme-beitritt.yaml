@@ -38,13 +38,15 @@ cards:
   back: >-
     Wird die Schuld durch Vertrag zwischen dem bisherigen Schuldner und dem Übernehmer
     übernommen, hängt die Wirksamkeit von der Genehmigung des Gläubigers ab (§ 415
-    Abs. 1 S. 1 BGB). Bis zur Genehmigung können die Vertragsparteien den Vertrag
-    ändern oder aufheben (§ 415 Abs. 1 S. 2 BGB). Der Gläubiger kann durch die Parteien
+    Abs. 1 S. 1 BGB). Die Genehmigung kann erst nach Mitteilung der Schuldübernahme an den Gläubiger
+    erfolgen (§ 415 Abs. 1 S. 2 BGB); bis zur Genehmigung können die Vertragsparteien den Vertrag
+    ändern oder aufheben (§ 415 Abs. 1 S. 3 BGB). Der Gläubiger kann durch die Parteien
     zur Genehmigung aufgefordert werden; die Genehmigung kann dann nur bis zum Ablauf
     der gesetzten Frist erklärt werden, anderenfalls gilt sie als verweigert (§ 415
-    Abs. 2 BGB). Wird die Genehmigung verweigert, ist im Zweifel der Übernehmer
-    im Verhältnis zum Schuldner verpflichtet, den Gläubiger rechtzeitig zu befriedigen
-    (Erfüllungsübernahme, § 415 Abs. 3 BGB). Ein bloßes Schweigen des Gläubigers
+    Abs. 2 S. 2 BGB). Wird die Genehmigung verweigert, gilt die Schuldübernahme als nicht erfolgt
+    (§ 415 Abs. 2 S. 1 BGB), und im Zweifel ist der Übernehmer im Verhältnis zum Schuldner
+    verpflichtet, den Gläubiger rechtzeitig zu befriedigen (Erfüllungsübernahme, § 415 Abs. 3
+    BGB). Ein bloßes Schweigen des Gläubigers
     ist grundsätzlich keine Genehmigung.
   norms:
   - § 415 Abs. 1 BGB
@@ -138,8 +140,8 @@ cards:
     des Erklärenden an der Erfüllung der Schuld (wirtschaftliches oder rechtliches
     Interesse, Mitbenutzung der Leistung) spricht für Beitritt, das Fehlen eines solchen
     und das Anliegen, einem anderen zu helfen, für Bürgschaft. Wegen der Gefahr der
-    Umgehung des § 766 BGB und der Warnfunktion ist im Zweifel eher Bürgschaft anzunehmen,
-    wenn der Erklärende kein eigenes Interesse hat. Verwendet er ausdrücklich Begriffe
+    Umgehung des § 766 BGB und der Warnfunktion wird bei Zweifeln und fehlendem eigenen
+    Interesse des Erklärenden verbreitet eher eine Bürgschaft angenommen. Verwendet er ausdrücklich Begriffe
     wie Einstehen für fremde Schuld, spricht das für Bürgschaft.
   norms:
   - § 765 BGB
@@ -241,10 +243,10 @@ faelle:
     die Gaststätte und möchte den bestehenden Bierlieferungsvertrag mit B fortführen,
     um sofort weiter beliefert zu werden. B erklärt, sie liefere nur weiter, wenn
     auch die Altschuld von N beglichen werde. Daraufhin sagt N mündlich gegenüber
-    B: "Die 10.000 Euro von W zahle ich notfalls auch selbst. Liefern Sie mir ab Montag."
+    B: "Die 10.000 Euro von W übernehme ich mit; Sie können sich deswegen auch an mich halten. Liefern Sie mir ab Montag."
     B liefert weiter, W zahlt nicht. B verlangt von N Zahlung von 10.000 Euro. N
     meint, er habe höchstens eine Bürgschaft versprochen, die mangels Schriftform
-    unwirksam sei. Im Verhältnis zu W hat N keine Pflicht zur Begleichung der Altschuld übernommen. Alle Beteiligten sind keine Kaufleute im Sinne des HGB.
+    unwirksam sei. Im Verhältnis zu W hat N keine Pflicht zur Begleichung der Altschuld übernommen. Von einer Entlassung des W aus seiner Schuld ist nicht die Rede. Handelsrechtliche Besonderheiten bleiben außer Betracht.
   question: >-
     Kann B von N die Zahlung von 10.000 Euro verlangen und welchen Anspruch hat N
     gegebenenfalls gegen W?
@@ -258,10 +260,10 @@ faelle:
     erwartung: >-
       Nein. Eine Bürgschaft wäre mangels Schriftform nach § 766 S. 1, § 125 S. 1 BGB
       nichtig (Heilung durch Erfüllung der Hauptverbindlichkeit nach § 766 S. 3 BGB
-      liegt nicht vor). Die Auslegung ergibt aber keine Bürgschaft: N sagt "notfalls
-      selbst zahlen" und knüpft die Belieferung ab Montag daran; er verfolgt ein eigenes
+      liegt nicht vor). Die Auslegung ergibt aber keine Bürgschaft: N erklärt, die
+      Schuld "mitzuübernehmen", und knüpft die Belieferung ab Montag daran; er verfolgt ein eigenes
       wirtschaftliches Interesse an der Fortführung der Belieferung. Er will nicht
-      subsidiär einstehen.
+      nur akzessorisch und subsidiär für fremde Schuld einstehen.
   - prompt: Liegt eine befreiende Schuldübernahme oder ein Schuldbeitritt vor?
     erwartung: >-
       Ein Schuldbeitritt. W soll nicht frei werden; B will sich ausdrücklich eine
