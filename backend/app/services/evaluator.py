@@ -185,14 +185,23 @@ _NEG_VOR = frozenset(
 _NEG_NACH = re.compile(
     r"\b(?:nicht|kein\w*|nie|niemals)\s+(?:vor|gegeben|erfullt|eroffnet|gewahrt|"
     r"einschlagig|ersichtlich|gedeckt|betroffen|verletzt|gerechtfertigt|zu\s+bejahen|"
-    r"anzunehmen|zutreffend|erforderlich|begrundet|wirksam|der\s+fall)\b"
+    r"anzunehmen|zutreffend|erforderlich|begrundet|wirksam|nachgewiesen|der\s+fall)\b"
     r"|\b(?:fehlt|fehlen|entfallt|entfallen|ausgeschlossen|abzulehnen|zu\s+verneinen|"
-    r"verneint|verneinen|mangelt)\b|\bscheidet\s+(?:\w+\s+)?aus\b"
+    r"verneint|verneinen|mangelt)\b"
+    # Plural und Singular: "scheidet/scheiden (hier) aus"
+    r"|\bscheid(?:et|en)\s+(?:\w+\s+)?aus\b"
+    r"|\bkomm(?:t|en)\s+(?:\w+\s+)?nicht\s+in\s+betracht\b"
+    r"|\bbesteh(?:t|en)\s+(?:\w+\s+)?nicht\b"
+    r"|\bgreif(?:t|en)\s+(?:\w+\s+)?nicht\b"
+    r"|\b(?:ist|sind)\s+(?:\w+\s+)?(?:unzulassig|unbegrundet)\b"
 )
 # Pruefpunkte, deren Label selbst eine Verneinung/Abgrenzung verlangt: dort ist
 # "liegt nicht vor" die *richtige* Antwort und kein Widerspruch.
 _LABEL_VERNEINUNG_ERLAUBT = re.compile(
     r"verneint|unbeachtlich|abgrenz|abgelehnt|entfallt|scheidet aus|ausgeschlossen"
+    # Label *beginnt* mit der Verneinung ("Keine taetige Reue", "Ergebnis: kein ...");
+    # ein "kein" mitten im Label ("...; Kein Raeumungsanspruch") erlaubt sie nicht.
+    r"|^(?:[a-z ]{1,30}:\s*)?keine?n?\b"
 )
 _VERBEN = frozenset(
     "ist sind war waren wird werden wurde wurden hat haben hatte hatten kann kann "
@@ -214,6 +223,12 @@ _KEIN_VERB = frozenset(
     "unten oben hinten vorn".split()
 )
 _VERB_FORM = re.compile(r"^[a-z]{3,}(?:t|te|ten|en)$")
+_PRAEPOSITIONEN = frozenset(
+    "in an auf aus bei mit nach von vor zu zur zum zwischen unter uber durch fur gegen "
+    "ohne um seit bis am im vom beim ins ans aufs hinter neben wegen trotz gemass "
+    "innerhalb ausserhalb als so wie dieselbe derselbe".split()
+)
+_ADJEKTIV_ENDUNG = ("e", "en", "er", "es", "em")
 MIN_SATZ_WOERTER = 6
 MAX_KOMMA_DICHTE = 0.3
 MIN_LISTEN_ABSCHNITTE = 6
@@ -243,6 +258,15 @@ def _ist_vollstaendiger_satz(satz: str) -> bool:
     woerter = re.findall(r"[\wäöüÄÖÜß]+", satz)
     if len(woerter) < MIN_SATZ_WOERTER:
         return False
+    # Zeile ohne Satzschlusszeichen, aber mit Aufzaehlungs-/Zitatmerkmalen
+    # ("Antragsbefugnis, § 80 Abs. 5 VwGO, aufschiebende Wirkung"): nur mit
+    # echtem finitem Verb aus der Liste ein Satz.
+    streng = not satz.rstrip().endswith((".", "!", "?")) and (
+        satz.count(",") >= 2 or satz.count("§") >= 2
+    )
+    if streng and not _hat_listenverb(satz):
+        return False
+    verb = _hat_listenverb if streng else _hat_verb
     if satz.count(",") / len(woerter) > MAX_KOMMA_DICHTE:
         return False
     # Lange Stichwortketten ("Antragsbefugnis, § 80 Abs. 5 VwGO, Eilbeduerftigkeit, ...")
@@ -250,20 +274,80 @@ def _ist_vollstaendiger_satz(satz: str) -> bool:
     # Kommaabschnitten zaehlt es nur als Satz, wenn mehr als ein Abschnitt ein Verb traegt.
     abschnitte = [a for a in re.split(r"[,;]", satz) if a.strip()]
     if len(abschnitte) >= MIN_LISTEN_ABSCHNITTE:
-        return sum(_hat_verb(a) for a in abschnitte) > 1
-    return _hat_verb(satz)
+        mit_verb = sum(verb(a) for a in abschnitte)
+        # Echte Satzgefuege tragen in den meisten Abschnitten ein Verb; eine Stichwortkette
+        # mit ein paar "X ist Y"-Stichworten tut das nicht.
+        return mit_verb > 1 and mit_verb >= 0.4 * len(abschnitte)
+    return verb(satz)
+
+
+def _hat_listenverb(text: str) -> bool:
+    return any(t in _VERBEN for t in re.findall(r"[a-z0-9]+", _normalize(text)))
+
+
+def _adjektiv_positionen(woerter: list[str]) -> set[int]:
+    """Indizes dekliniert gebrauchter Adjektive ("am selben Tag", "die konkrete Gefahr").
+
+    Ein kleingeschriebenes Wort auf -e/-en/-er/-es/-em direkt vor einem
+    grossgeschriebenen Nomen und hinter Artikel/Praeposition (oder hinter einem
+    weiteren Adjektiv, auch ueber "und"/"oder") ist kein Verb.
+    """
+    norm = [_normalize(w) for w in woerter]
+    adj: set[int] = set()
+    for i, w in enumerate(woerter):
+        if i == 0 or i + 1 >= len(woerter):
+            continue
+        if not w[:1].islower() or not woerter[i + 1][:1].isupper():
+            continue
+        if norm[i] in _VERBEN or not norm[i].endswith(_ADJEKTIV_ENDUNG):
+            continue
+        prev = norm[i - 1]
+        if (
+            prev in _ARTIKEL
+            or prev in _PRAEPOSITIONEN
+            or prev.startswith(("kein", "mein", "sein", "ihr", "unser", "dies", "jen", "jed"))
+            or (i - 1) in adj
+            or (prev in ("und", "oder") and i >= 2 and (i - 2) in adj)
+            or (
+                prev in ("und", "oder")
+                and i >= 3
+                and woerter[i - 2][:1].islower()
+                and norm[i - 2].endswith(_ADJEKTIV_ENDUNG)
+                and (norm[i - 3] in _ARTIKEL or norm[i - 3] in _PRAEPOSITIONEN)
+            )
+        ):
+            adj.add(i)
+    # "die konkrete und unmittelbare Gefahr": das erste Adjektiv steht vor "und"/"oder".
+    for i in range(len(woerter) - 3, 0, -1):
+        if (
+            woerter[i][:1].islower()
+            and norm[i] not in _VERBEN
+            and norm[i].endswith(_ADJEKTIV_ENDUNG)
+            and norm[i + 1] in ("und", "oder")
+            and (i + 2) in adj
+            and (norm[i - 1] in _ARTIKEL or norm[i - 1] in _PRAEPOSITIONEN)
+        ):
+            adj.add(i)
+    return adj
 
 
 def _hat_verb(text: str) -> bool:
     norm = _normalize(text)
     tokens = re.findall(r"[a-z0-9]+", norm)
-    if any(t in _VERBEN for t in tokens) or _PARTIZIP.search(norm):
+    if any(t in _VERBEN for t in tokens):
         return True
-    # Kleingeschriebene Formen auf -t/-te/-ten im Originalsatz ("kommt", "bevorstand" nicht).
-    klein = re.findall(r"(?<![\wäöüÄÖÜß])[a-zäöüß]+", text)
-    return any(
-        _VERB_FORM.match(_normalize(w)) and _normalize(w) not in _KEIN_VERB for w in klein
-    )
+    woerter = re.findall(r"[\wäöüÄÖÜß]+", text)
+    adj = _adjektiv_positionen(woerter)
+    for i, w in enumerate(woerter):
+        if i in adj:
+            continue
+        n = _normalize(w)
+        if re.fullmatch(r"ge[a-z]{3,}(?:t|en)", n):
+            return True
+        # Kleingeschriebene Formen auf -t/-te/-ten im Originalsatz ("kommt").
+        if w[:1].islower() and _VERB_FORM.match(n) and n not in _KEIN_VERB:
+            return True
+    return False
 
 
 def _saetze(text: str) -> list[str]:
@@ -283,7 +367,9 @@ def _wortende(satz: str, pos: int) -> int:
 
 def _verneint(satz: str, start: int, ende: int, *, nach: bool = True) -> bool:
     """Steht der Treffer ``satz[start:ende]`` im Verneinungsfenster?"""
-    vorher = re.split(r"[,;:]", satz[:start])[-1]
+    # "nicht Nichtstoerer, sondern Verhaltensstoerer": die Verneinung gilt nur bis
+    # zur Gegenueberstellung, nicht fuer den Teil dahinter.
+    vorher = re.split(r"[,;:]|\b(?:sondern|vielmehr|aber)\b", satz[:start])[-1]
     if any(
         t in _NEG_VOR or t.startswith("kein")
         for t in re.findall(r"[a-z0-9]+", vorher)[-3:]
@@ -343,6 +429,11 @@ def _vorkommen(satz: str, kwn: str) -> list[tuple[str, int, int]]:
     return []
 
 
+def _ist_normstichwort(kwn: str) -> bool:
+    """Stichwort ist ein reines Normzitat ("§ 242", "art. 14")."""
+    return bool(re.match(r"(?:§|art\b)", kwn)) or bool(_ZAHL_KEYWORD.fullmatch(kwn))
+
+
 def _kw_negation_erwartet(label_n: str, kwn: str) -> bool:
     """Das Stichwort ist selbst verneinend oder steht im Label hinter einer Verneinung."""
     if any(t in _NEG_VOR for t in kwn.split()):
@@ -394,7 +485,13 @@ class HeuristicEvaluator:
             if n not in gesehen:
                 gesehen.add(n)
                 saetze.append(n)
-        norms_seen = extract_norms(" ".join(_saetze_roh(text)))
+        saetze_roh = _saetze_roh(text)
+        alle_stichworte = [
+            kwn
+            for cp in checkpoints
+            for kwn in (_normalize(k) for k in cp.keywords)
+            if kwn and not _ZAHL_KEYWORD.fullmatch(kwn)
+        ]
 
         results: list[PruefpunktResult] = []
         widerspruch: list[tuple[str, str]] = []  # (Label, Stichwort)
@@ -405,36 +502,57 @@ class HeuristicEvaluator:
             nur_vor = "gepruft" in label_n and "sauber" not in label_n
             verneinung_ok = bool(_LABEL_VERNEINUNG_ERLAUBT.search(label_n))
             hit, evidence, contra = False, "", ""
+            norm_treffer = ""
+            positive: list[tuple[str, int, int]] = []  # (Stichwort, Satzindex, Position)
+            verneint_ab: dict[int, int] = {}  # Satzindex -> frueheste verneinte Position
             for kw in cp.keywords:
                 kwn = _normalize(kw)
                 if not kwn:
                     continue
                 zahl = bool(_ZAHL_KEYWORD.fullmatch(kwn))
                 geprueft = not verneinung_ok and not _kw_negation_erwartet(label_n, kwn)
-                positiv = negativ = False
-                for satz in saetze:
+                pos_idx: int | None = None
+                pos_start = 0
+                neg_idx: list[tuple[int, int]] = []
+                for idx, satz in enumerate(saetze):
                     for variante, a, b in _vorkommen(satz, kwn):
                         if geprueft and not zahl and _verneint(
                             variante, a, b, nach=not nur_vor
                         ):
-                            negativ = True
-                        else:
-                            positiv = True
-                    if positiv:
+                            neg_idx.append((idx, a))
+                        elif pos_idx is None:
+                            pos_idx, pos_start = idx, a
+                    if pos_idx is not None:
                         break
-                if positiv:
-                    if not hit:
-                        hit, evidence = True, kw
-                elif negativ and not contra:
-                    contra = kw
-            if contra:
-                # Ein ausdruecklich verneintes Kernstichwort ist ein Widerspruch zum
-                # erwarteten Ergebnis - auch dann, wenn ein anderes Stichwort traf.
-                hit, evidence = False, ""
+                if pos_idx is not None:
+                    positive.append((kw, pos_idx, pos_start))
+                elif neg_idx:
+                    for n_idx, n_start in neg_idx:
+                        verneint_ab[n_idx] = min(n_start, verneint_ab.get(n_idx, n_start))
+                    contra = contra or kw
+            for kw, idx, start in positive:
+                if _ist_normstichwort(_normalize(kw)):
+                    norm_treffer = norm_treffer or kw
+                # Steht die Verneinung eines Stichworts im selben Satz VOR dem zweiten
+                # Stichwort ("Die Verteidigung war nicht erforderlich, denn A haette Flucht
+                # ergreifen muessen"), gilt sie auch dafuer; steht es davor, bleibt es positiv.
+                elif start < verneint_ab.get(idx, start + 1) and not hit:
+                    hit, evidence = True, kw
+            if hit:
+                # Ein positiver inhaltlicher Treffer in einem ANDEREN Satz gilt, auch wenn ein
+                # weiteres Stichwort desselben Pruefpunkts verneint wurde ("Ein Notstand liegt
+                # nicht vor ... die Versammlung ist verboten").
+                contra = ""
+            elif contra:
+                # Kein inhaltliches Stichwort trifft unverneint, eines ist verneint:
+                # Widerspruch zum erwarteten Ergebnis. Ein blosses Normzitat als
+                # Stichwort ("§ 242") hebt das nicht auf - ein Zitat ist keine Stellung.
                 widerspruch.append((cp.label, contra))
-            elif not hit:
+            elif norm_treffer:
+                hit, evidence = True, norm_treffer
+            else:
                 for norm in cp.norms:
-                    if any(norm_matches(norm, seen) for seen in norms_seen):
+                    if _norm_fallback_gilt(norm, checkpoints, saetze_roh, alle_stichworte):
                         hit, evidence = True, norm
                         break
             if hit:
@@ -571,6 +689,35 @@ class HeuristicEvaluator:
             hinweise=hinweise,
             points_uncapped=points_roh,
         )
+
+
+def _norm_fallback_gilt(
+    norm: str,
+    checkpoints: list[Pruefpunkt],
+    saetze_roh: list[str],
+    alle_stichworte: list[str],
+) -> bool:
+    """Trifft ``norm`` allein ueber ein Normzitat - und ist das belastbar?
+
+    Eine Norm, die in mehr als zwei Pruefpunkten des Falls steht, ist kein
+    Unterscheidungsmerkmal (z. B. eine Generalnorm). Ausserdem muss der zitierende
+    Satz mehr als das Zitat enthalten: ein weiteres inhaltliches Stichwort
+    (irgendeines Pruefpunkts) oder ein Verb aus ``_VERBEN``.
+    """
+    vorkommen = sum(
+        1 for cp in checkpoints if any(norm_matches(norm, other) for other in cp.norms)
+    )
+    if vorkommen > 2:
+        return False
+    for satz in saetze_roh:
+        if not any(norm_matches(norm, seen) for seen in extract_norms(satz)):
+            continue
+        if _hat_listenverb(satz):
+            return True
+        satz_n = _normalize(satz)
+        if any(_vorkommen(satz_n, kwn) for kwn in alle_stichworte):
+            return True
+    return False
 
 
 def _saetze_roh(text: str) -> list[str]:

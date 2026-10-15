@@ -188,6 +188,7 @@ faelle:
       - § 246 Abs. 1 StGB
       keywords:
       - fremde bewegliche Sache
+      - im Eigentum des B
       card_slugs:
       - sr-diebstahl-fremde-bewegliche-sache
     - id: p3
@@ -201,6 +202,8 @@ faelle:
       - Zueignung manifestiert
       - Zueignungsakt
       - Zueignung durch Verkauf
+      - nach außen manifestiert
+      - einzuverleiben
       card_slugs:
       - sr-unterschlagung-zueignungsbegriff
       - sr-unterschlagung-manifestation-beispiele
@@ -249,5 +252,7 @@ faelle:
       keywords:
       - veruntreuende Unterschlagung
       - § 246 Abs. 2
+      - wegen veruntreuender Unterschlagung
+      - veruntreuender Unterschlagung
       card_slugs:
       - sr-unterschlagung-veruntreuende-qualifikation

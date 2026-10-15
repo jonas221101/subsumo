@@ -195,6 +195,8 @@ faelle:
       - Vermögensbetreuungspflicht
       - Pflicht zur Wahrnehmung fremder Vermögensinteressen
       - Vermögensbetreuungspflicht von gewisser Bedeutung
+      - Organstellung
+      - eigenverantwortlichen Wahrnehmung der Vermögensinteressen
       card_slugs:
       - sr-untreue-vermoegensbetreuungspflicht
       - sr-untreue-treubruchtatbestand
@@ -222,6 +224,9 @@ faelle:
       - Vermögensnachteil
       - Gesamtsaldierung
       - keine gleichwertige Gegenleistung
+      - gleichwertiger Ausgleich
+      - Vermögen der GmbH verringert
+      - verringert
       card_slugs:
       - sr-untreue-vermoegensnachteil
     - id: p5
@@ -235,6 +240,8 @@ faelle:
       - Vorsatz bezüglich des Nachteils
       - bedingter Vorsatz
       - Vorsatz bezüglich
+      - wusste um seine Pflichtenstellung
+      - wollte den Nachteil
       card_slugs:
       - sr-at-vorsatz
     - id: p6
@@ -246,5 +253,6 @@ faelle:
       keywords:
       - Untreue gemäß § 266 Abs. 1 erfüllt
       - wegen Untreue strafbar
+      - wegen Untreue gemäß § 266
       card_slugs:
       - sr-untreue-grundtatbestand

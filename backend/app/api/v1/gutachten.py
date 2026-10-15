@@ -79,13 +79,15 @@ def analyze_text(payload: AnalyzeIn, user: CurrentUser, db: DbSession) -> dict:
         limits.enforce_analyze_quota(db, user, now=datetime.now(UTC))
 
     expected: list[str] = []
+    area: str | None = None
     if payload.case_slug:
         case = db.query(Case).filter_by(slug=payload.case_slug).one_or_none()
         if case is None:
             raise HTTPException(status.HTTP_404_NOT_FOUND, "Fall nicht gefunden")
+        area = case.area
         for pruefpunkt in (case.expectation or {}).get("pruefpunkte", []):
             expected.extend(pruefpunkt.get("norms", []))
-    return analyze(payload.text, expected_norms=expected or None).to_dict()
+    return analyze(payload.text, expected_norms=expected or None, area=area).to_dict()
 
 
 @router.get("/cases/{slug}", response_model=CaseOut)
@@ -122,7 +124,9 @@ def submit_case(slug: str, payload: SubmissionIn, user: CurrentUser, db: DbSessi
     for pruefpunkt in (case.expectation or {}).get("pruefpunkte", []):
         expected_norms.extend(pruefpunkt.get("norms", []))
 
-    structure = analyze(payload.text, expected_norms=expected_norms or None)
+    structure = analyze(
+        payload.text, expected_norms=expected_norms or None, area=case.area
+    )
     # Ohne Einwilligung (SUB-133) laeuft ausschliesslich die Heuristik - die
     # Abgabe wird deshalb nie abgelehnt, nur der Evaluator umgeschaltet. Das
     # Ergebnis-Feld "engine" macht sichtbar, welcher Evaluator gelaufen ist.

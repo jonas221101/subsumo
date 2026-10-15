@@ -205,6 +205,8 @@ faelle:
       - Vermögensverfügung
       - Verfügung des Opfers
       - Weggabe statt Wegnahme
+      - verfügt eigenhändig über sein Vermögen
+      - Überweisung selbst vor
       card_slugs:
       - sr-erpressung-vermoegensverfuegung-streitstand
       - sr-erpressung-abgrenzung-raub-249
@@ -214,6 +216,8 @@ faelle:
       required: false
       keywords:
       - Vermögensnachteil
+      - Vermögen des U verringert
+      - verringert
       card_slugs:
       - sr-erpressung-vermoegensschaden
     - id: p4
@@ -225,6 +229,8 @@ faelle:
       keywords:
       - Bereicherungsabsicht
       - stoffgleich
+      - bereichern
+      - um den U geschädigt wird
       card_slugs:
       - sr-erpressung-stoffgleichheit
     - id: p5
@@ -236,6 +242,8 @@ faelle:
       keywords:
       - Verwerflichkeit
       - § 253 Abs. 2 StGB
+      - offensichtlich verwerflich
+      - verwerflich
       card_slugs:
       - sr-erpressung-verwerflichkeit
     - id: p6
