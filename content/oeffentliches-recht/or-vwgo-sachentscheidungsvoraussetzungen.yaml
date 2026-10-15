@@ -63,9 +63,7 @@ cards:
     Entgelt) kann privatrechtlich ausgestaltet sein. Entsprechend ist für das „Ob“ der Verwaltungsrechtsweg,
     für das „Wie“ der ordentliche Rechtsweg eröffnet. Anwendungsfelder sind Subventionsvergabe,
     Zulassung zu öffentlichen Einrichtungen (z. B. Gemeindehalle) und die Vergabe kommunaler
-    Leistungen. Kritisiert wird die Aufspaltung eines Lebenssachverhalts und die damit verbundene
-    Rechtswegzersplitterung; die Verwaltung kann die Abwicklung auch öffentlich-rechtlich
-    regeln. Das Gericht des zulässigen Rechtswegs entscheidet den Rechtsstreit nach § 17 Abs.
+    Leistungen. Kritisiert wird die Aufspaltung eines Lebenssachverhalts und die damit verbundene Rechtswegzersplitterung; die Verwaltung kann die Abwicklung auch öffentlich-rechtlich regeln, dann liegt ein einstufiges Rechtsverhältnis vor. Die Theorie wird daher nur noch zurückhaltend angewandt. Das Gericht des zulässigen Rechtswegs entscheidet den Rechtsstreit nach § 17 Abs.
     2 S. 1 GVG unter allen rechtlichen Gesichtspunkten.
   norms:
   - § 40 Abs. 1 S. 1 VwGO
@@ -96,8 +94,8 @@ cards:
   - § 126 Abs. 1 BBG
   quellen:
   - VwGO, amtliche Fassung
-  - Eigenformulierung Redaktion
-  - Eigenformulierung Redaktion
+    - Eigenformulierung Redaktion
+
   stand: 2026-10
 - slug: or-vwgo-sev-beteiligten-prozessfaehigkeit
   type: norm
@@ -111,13 +109,11 @@ cards:
     vorzunehmen) folgt aus § 62 VwGO: Geschäftsfähige nach BGB (Abs. 1 Nr. 1), beschränkt
     Geschäftsfähige, soweit sie durch Vorschriften des bürgerlichen oder öffentlichen Rechts
     für den Gegenstand des Verfahrens als geschäftsfähig anerkannt sind (Abs. 1 Nr. 2, z.
-    B. bei Ausübung bestimmter Rechte kraft Sondervorschriften). Juristische Personen und
-    Vereinigungen handeln durch gesetzliche Vertreter oder Vorstände, Behörden durch ihre
-    Leiter (§ 62 Abs. 3 VwGO).
+    B. bei Ausübung bestimmter Rechte kraft Sondervorschriften). Für Vereinigungen und Behörden handeln ihre gesetzlichen Vertreter, Vorstände oder besonders Beauftragten (§ 62 Abs. 3 VwGO).
   norms:
   - § 61 VwGO
   - § 62 VwGO
-  quellen: &id001
+  quellen:
   - VwGO, amtliche Fassung
   - Eigenformulierung Redaktion
   stand: 2026-10
@@ -132,16 +128,16 @@ cards:
     gegen die Behörde selbst zu richten ist (Behördenprinzip), sofern das Landesrecht dies
     vorsieht. Einige Länder haben davon Gebrauch gemacht; die Regelung ist landesrechtlich
     unterschiedlich und stets zu prüfen. Wurde ein Widerspruchsbescheid erlassen, ist grundsätzlich
-    weiterhin der Rechtsträger der Ausgangsbehörde zu verklagen; gegen die Widerspruchsbehörde
-    richtet sich die Klage nur bei erstmaliger Beschwer (§ 79 Abs. 1 Nr. 2, Abs. 2 VwGO, §
-    78 Abs. 2 VwGO). Eine fehlerhafte Beklagtenbezeichnung ist durch Auslegung (§ 88 VwGO)
+    weiterhin der Rechtsträger der Ausgangsbehörde zu verklagen; gegen die Widerspruchsbehörde richtet sich die Klage nur, soweit der Widerspruchsbescheid eine erstmalige oder zusätzliche selbständige Beschwer enthält (§ 79 Abs. 1 Nr. 2 VwGO). Eine fehlerhafte Beklagtenbezeichnung ist durch Auslegung (§ 88 VwGO)
     und Rubrumsberichtigung zu korrigieren.
   norms:
   - § 78 Abs. 1 VwGO
-  - § 78 Abs. 2 VwGO
+  
   - § 79 VwGO
   - § 88 VwGO
-  quellen: *id001
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-vwgo-sev-klagebefugnis-vertiefung
   type: streitstand
@@ -188,7 +184,9 @@ cards:
   - § 72 VwGO
   - § 73 VwGO
   - § 58 Abs. 2 VwGO
-  quellen: *id001
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-vwgo-sev-reformatio-in-peius
   type: streitstand
@@ -229,7 +227,9 @@ cards:
   - § 65 VwGO
   - § 66 VwGO
   - § 121 Nr. 1 VwGO
-  quellen: *id001
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 schemata:
 - slug: or-schema-vwgo-sev-sachentscheidungsvoraussetzungen
@@ -241,7 +241,9 @@ schemata:
   - § 62 VwGO
   - § 68 VwGO
   - § 78 VwGO
-  quellen: *id001
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
   steps:
   - label: I. Verwaltungsrechtsweg
     children:
@@ -301,8 +303,7 @@ faelle:
       lief bis zum 23. Juni; die Klage vom 20. Juni ist fristgerecht.
   - prompt: Wer ist richtiger Beklagter?
     erwartung: Nach dem Rechtsträgerprinzip (§ 78 Abs. 1 Nr. 1 VwGO) ist die Stadt S zu verklagen,
-      nicht der Oberbürgermeister. Die Bezeichnung ist durch Auslegung (§ 88 VwGO) als Klage
-      gegen die Stadt zu verstehen und im Rubrum zu berichtigen; die Klage ist insgesamt zulässig.
+      nicht der Oberbürgermeister. Die Bezeichnung ist durch Auslegung (§ 88 VwGO) als Klage gegen die Stadt zu verstehen und im Rubrum zu berichtigen. Die Klage ist daher insgesamt zulässig.
   expectation:
     pruefpunkte:
     - id: p1
@@ -379,6 +380,7 @@ faelle:
       required: false
       keywords:
       - Klage ist zulässig
+      - insgesamt zulässig
       - Klage wäre zulässig
       - zulässige Anfechtungsklage
       card_slugs:

@@ -29,7 +29,7 @@ cards:
   norms:
   - § 54 S. 1 VwVfG
   - § 62 S. 2 VwVfG
-  quellen: &id001
+  quellen:
   - VwVfG, amtliche Fassung
   - Eigenformulierung Redaktion
   stand: 2026-10
@@ -54,7 +54,9 @@ cards:
   - § 55 VwVfG
   - § 56 VwVfG
   - § 59 Abs. 2 VwVfG
-  quellen: *id001
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-vwr-vertrag-vergleichsvertrag-55
   type: norm
@@ -64,8 +66,7 @@ cards:
     oder der Rechtslage bestehende Ungewissheit im Wege gegenseitigen Nachgebens beseitigt
     wird (Vergleichsvertrag), kann geschlossen werden, wenn die Behörde den Abschluss nach
     pflichtgemäßem Ermessen zur Beseitigung der Ungewissheit für zweckmäßig hält, § 55 VwVfG.
-    Erforderlich sind also: (1) Ungewissheit über Sach- oder Rechtslage, die sich nicht oder
-    nur mit unverhältnismäßigem Aufwand beseitigen lässt, (2) gegenseitiges Nachgeben und
+    Erforderlich sind also: (1) Ungewissheit über Sach- oder Rechtslage, die nach der Rechtsprechung nicht oder nur mit unverhältnismäßigem Aufwand aufklärbar sein darf, (2) gegenseitiges Nachgeben und
     (3) pflichtgemäßes Ermessen der Behörde. Die Ungewissheit muss objektiv bestehen; sie
     darf nicht bloß vorgeschoben werden. Ein Vergleichsvertrag darf nicht dazu dienen, eindeutig
     bestehende gesetzliche Pflichten zu umgehen. Fehlt es an den Voraussetzungen und wäre
@@ -74,7 +75,9 @@ cards:
   norms:
   - § 55 VwVfG
   - § 59 Abs. 2 Nr. 3 VwVfG
-  quellen: *id001
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-vwr-vertrag-austauschvertrag-56
   type: norm
@@ -120,7 +123,9 @@ cards:
   - § 58 VwVfG
   - § 125 BGB
   - § 36 BauGB
-  quellen: *id001
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-vwr-vertrag-nichtigkeit-59
   type: norm
@@ -142,7 +147,9 @@ cards:
   - § 59 Abs. 2 VwVfG
   - § 59 Abs. 3 VwVfG
   - § 46 VwVfG
-  quellen: *id001
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-vwr-vertrag-anpassung-kuendigung-60
   type: norm
@@ -163,7 +170,9 @@ cards:
   - § 60 VwVfG
   - § 61 VwVfG
   - § 313 BGB
-  quellen: *id001
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-vwr-vertrag-realakt-begriff
   type: definition
@@ -182,7 +191,9 @@ cards:
   norms:
   - § 35 S. 1 VwVfG
   - § 38 VwVfG
-  quellen: *id001
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-vwr-vertrag-realakt-rechtsschutz
   type: norm
@@ -218,7 +229,9 @@ schemata:
   - § 57 VwVfG
   - § 58 VwVfG
   - § 59 VwVfG
-  quellen: *id001
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
   steps:
   - label: I. Öffentlich-rechtlicher Vertrag, § 54 S. 1 VwVfG
     hinweis: Abgrenzung zum privatrechtlichen Vertrag nach dem Vertragsgegenstand.
@@ -258,15 +271,9 @@ faelle:
   - prompt: Handelt es sich um einen öffentlich-rechtlichen Vertrag, und ist er subordinationsrechtlich?
     erwartung: Ja. Gegenstand ist die Erteilung einer Baugenehmigung, also hoheitliches Handeln
       (§ 54 S. 1 VwVfG). Die Behörde steht B in einem Über-/Unterordnungsverhältnis gegenüber
-      und hätte durch Verwaltungsakt handeln können; es liegt ein subordinationsrechtlicher
-      Austauschvertrag vor (§ 54 S. 2 VwVfG, § 56 VwVfG).
+      und hätte durch Verwaltungsakt handeln können; es liegt ein subordinationsrechtlicher Austauschvertrag vor (§ 54 S. 2 VwVfG, § 56 VwVfG). Die Schriftform des § 57 VwVfG ist eingehalten, ein Formmangel besteht daher nicht.
   - prompt: Ist der Vertrag nach § 56 VwVfG zulässig?
-    erwartung: Nein. Die Gegenleistung fließt in den allgemeinen Haushalt und ist nicht für
-      einen bestimmten, im Vertrag vereinbarten Zweck der Aufgabenerfüllung bestimmt; ein
-      sachlicher Zusammenhang mit der Baugenehmigung fehlt (§ 56 Abs. 1 VwVfG). Zudem hatte
-      B einen Anspruch auf die Genehmigung; eine Gegenleistung wäre nur zulässig, wenn sie
-      Gegenstand einer Nebenbestimmung sein könnte (§ 56 Abs. 2 VwVfG), was nicht der Fall
-      ist.
+    erwartung: Nein. Der Vertrag verstößt gegen das Koppelungsverbot des § 56 VwVfG. Nach § 56 Abs. 1 VwVfG muss die Gegenleistung einem bestimmten Zweck der Aufgabenerfüllung dienen; sie fließt hier aber in den allgemeinen Haushalt. Auch der sachliche Zusammenhang mit der Baugenehmigung mangelt, die Zahlung steht allein im Austausch gegen die Genehmigung. Zudem hatte B einen Anspruch auf die Genehmigung. Nach § 56 Abs. 2 VwVfG ist dann nur eine Gegenleistung zulässig, die Inhalt einer Nebenbestimmung nach § 36 VwVfG sein könnte; eine Geldzahlung für den Haushalt kann das nicht sein.
   - prompt: Welche Rechtsfolge hat dies, und besteht ein Rückzahlungsanspruch?
     erwartung: Der Vertrag ist nach § 59 Abs. 2 Nr. 4 VwVfG nichtig, da sich die Behörde eine
       unzulässige Gegenleistung versprechen ließ. Die Zahlung erfolgte ohne Rechtsgrund; B

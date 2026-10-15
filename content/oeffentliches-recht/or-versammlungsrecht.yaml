@@ -17,14 +17,10 @@ cards:
     Seit der Föderalismusreform 2006 ist das Versammlungsrecht Landesrecht: Die Gesetzgebungskompetenz
     für das Versammlungsrecht ist auf die Länder übergegangen (Art. 70 Abs. 1 GG; Art. 74
     Abs. 1 Nr. 3 GG a. F. wurde gestrichen). Das Versammlungsgesetz des Bundes (VersG) gilt
-    in den Ländern ohne eigenes Gesetz als Bundesrecht fort, Art. 125a Abs. 1 GG. Einzelne
-    Länder haben eigene Versammlungsgesetze erlassen, u. a. Bayern (BayVersG), Nordrhein-Westfalen
-    (VersG NRW), Berlin (VersFG BE), Niedersachsen, Sachsen, Sachsen-Anhalt und Schleswig-Holstein;
-    sie ersetzen das Bundesgesetz in ihrem Land. Die Struktur ähnelt dem Bundesgesetz (Anmeldung,
+    in den Ländern ohne eigenes Gesetz als Bundesrecht fort, Art. 125a Abs. 1 GG. Mehrere Länder haben eigene Versammlungsgesetze erlassen, u. a. Bayern (BayVersG), Nordrhein-Westfalen (VersG NRW), Berlin (VersFG BE), Niedersachsen, Sachsen, Sachsen-Anhalt und Schleswig-Holstein; weitere Länder sind gefolgt, die Liste ist daher für das jeweilige Land zu prüfen. Das Landesgesetz ersetzt das Bundesgesetz in seinem Land. Die Struktur ähnelt dem Bundesgesetz (Anmeldung,
     Beschränkung, Verbot, Auflösung), im Detail gibt es erhebliche Abweichungen. In Klausuren
     wird die einschlägige Norm meist vorgegeben oder auf § 15 VersG als Muster abgestellt.
-    Maßgeblich bleibt Art. 8 GG als Schranke der Schranken. Die Paragraphen sind landesrechtlich
-    unterschiedlich; maßgeblich ist das jeweilige Landesversammlungsgesetz.
+    Maßgeblich bleibt Art. 8 GG als Schranke der Schranken.
   norms:
   - Art. 70 Abs. 1 GG
   - Art. 125a Abs. 1 GG
@@ -45,14 +41,12 @@ cards:
     Schranken des Art. 8 Abs. 2 GG sollen nur gesetzlich ausformuliert werden. Streitig ist
     die Reichweite im Vorfeld: Eine Auffassung hält Maßnahmen nach dem Polizeirecht vor Versammlungsbeginn
     (Gefährderansprache, Meldeauflagen, Aufenthaltsverbote, Ingewahrsamnahme zur Verhinderung
-    der Teilnahme) für zulässig, soweit sie nicht die Versammlung als solche betreffen; die
-    h. M. nimmt Polizeifestigkeit auch im Vorfeld an, wenn die Maßnahme erkennbar die Teilnahme
-    an der Versammlung verhindern soll. Gegen Nichtteilnehmer und bei nicht versammlungsbezogenen
+    der Teilnahme) für zulässig, soweit sie nicht die Versammlung als solche betreffen; nach überwiegender Auffassung gilt die Polizeifestigkeit auch im Vorfeld, wenn die Maßnahme erkennbar die Teilnahme an der Versammlung verhindern soll. Gegen Nichtteilnehmer und bei nicht versammlungsbezogenen
     Gefahren (Strafverfolgung, Verkehr) bleibt das allgemeine Polizeirecht anwendbar. Die
     Differenzierung ist im Einzelnen landesrechtlich unterschiedlich.
   norms:
   - Art. 8 Abs. 2 GG
-  quellen: &id001
+  quellen:
   - VersG des Bundes und Versammlungsgesetze der Länder, amtliche Fassungen
   - Eigenformulierung Redaktion
   stand: 2026-10
@@ -68,14 +62,15 @@ cards:
     Anmeldung nicht möglich ist; bei Eilversammlungen, die zwar geplant, aber wegen eines
     aktuellen Anlasses nur kurzfristig durchführbar sind, entfällt die Frist, die Anmeldung
     ist unverzüglich nachzuholen. Die Versammlung verliert dann nicht den Schutz des Art.
-    8 GG. Wird eine anmeldepflichtige Versammlung nicht angemeldet, ist dies Auflösungsgrund
-    nach § 15 Abs. 3 VersG, aber nicht zwingend; die Behörde muss verhältnismäßig handeln.
+    8 GG. Wird eine anmeldepflichtige Versammlung nicht angemeldet, ist dies Auflösungsgrund nach § 15 Abs. 3 VersG, führt aber nicht zwingend zur Auflösung; die Behörde muss verhältnismäßig handeln.
     Die Paragraphen sind landesrechtlich unterschiedlich; maßgeblich ist das jeweilige Landesversammlungsgesetz.
   norms:
   - § 14 Abs. 1 VersG
   - § 15 Abs. 3 VersG
   - Art. 8 Abs. 1 GG
-  quellen: *id001
+  quellen:
+  - VersG des Bundes und Versammlungsgesetze der Länder, amtliche Fassungen
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-versr-auflagen-verbot-15
   type: norm
@@ -98,7 +93,9 @@ cards:
   - § 15 Abs. 1 VersG
   - § 15 Abs. 2 VersG
   - Art. 8 Abs. 2 GG
-  quellen: *id001
+  quellen:
+  - VersG des Bundes und Versammlungsgesetze der Länder, amtliche Fassungen
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-versr-aufloesung
   type: norm
@@ -121,7 +118,9 @@ cards:
   - § 15 Abs. 3 VersG
   - § 13 VersG
   - § 18 Abs. 3 VersG
-  quellen: *id001
+  quellen:
+  - VersG des Bundes und Versammlungsgesetze der Länder, amtliche Fassungen
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-versr-gegendemonstration-notstand
   type: streitstand
@@ -141,7 +140,9 @@ cards:
   norms:
   - Art. 8 Abs. 1 GG
   - § 15 Abs. 1 VersG
-  quellen: *id001
+  quellen:
+  - VersG des Bundes und Versammlungsgesetze der Länder, amtliche Fassungen
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-versr-wunsiedel
   type: rechtsprechung
@@ -171,8 +172,7 @@ cards:
   front: Was folgt aus der Entscheidung des BVerfG zum Bayerischen Versammlungsgesetz für
     Eingriffe in das Versammlungsgeschehen?
   back: >-
-    In der Entscheidung zum Bayerischen Versammlungsgesetz (BVerfGE 122, 342) hat das BVerfG
-    betont, dass schon die Erwartung von Datenerhebung und -speicherung, Bußgeldandrohung
+    In der Eilentscheidung zum Bayerischen Versammlungsgesetz (BVerfGE 122, 342) hat das BVerfG betont, dass schon die Erwartung von Datenerhebung und -speicherung, Bußgeldandrohung
     und Verpflichtungen im Zusammenhang mit der Teilnahme abschreckend wirken kann („Einschüchterungseffekt“,
     chilling effect) und damit die Ausübung der Versammlungsfreiheit unverhältnismäßig erschwert.
     Eingriffsermächtigungen müssen daher hinreichend bestimmt sein und an eine konkrete Gefahr
@@ -222,8 +222,7 @@ cards:
     Teilnehmer?
   back: >-
     Der Veranstalter leitet die Versammlung (Leiter) und sorgt für ihren ordnungsgemäßen Ablauf;
-    er kann sich Ordner bedienen, die weiße Armbinden tragen. Verboten sind nach dem Bundesgesetz
-    das Tragen von Waffen (§ 2 Abs. 3 VersG), das Tragen von Uniformen, Uniformteilen oder
+    er kann sich Ordner bedienen, die weiße Armbinden tragen. Verboten sind nach dem Bundesgesetz das Mitführen von Waffen und gefährlichen Gegenständen (§ 2 Abs. 3 VersG), das Tragen von Uniformen, Uniformteilen oder
     gleichartiger Kleidung als Ausdruck gemeinsamer politischer Gesinnung (Uniformierungsverbot,
     § 3 VersG) sowie bei Versammlungen unter freiem Himmel das Mitführen von Schutzwaffen,
     die geeignet und bestimmt sind, Vollstreckungsmaßnahmen abzuwehren, und die Vermummung,
@@ -236,7 +235,9 @@ cards:
   - § 2 Abs. 3 VersG
   - § 3 VersG
   - § 17a VersG
-  quellen: *id001
+  quellen:
+  - VersG des Bundes und Versammlungsgesetze der Länder, amtliche Fassungen
+  - Eigenformulierung Redaktion
   stand: 2026-10
 schemata:
 - slug: or-schema-versr-verbot-aufloesung
@@ -244,7 +245,9 @@ schemata:
   norms:
   - § 15 VersG
   - Art. 8 GG
-  quellen: *id001
+  quellen:
+  - VersG des Bundes und Versammlungsgesetze der Länder, amtliche Fassungen
+  - Eigenformulierung Redaktion
   steps:
   - label: 'I. Anwendbares Recht: Landesversammlungsgesetz oder VersG des Bundes'
     hinweis: 'Polizeifestigkeit: keine Generalklausel gegen die Versammlung.'

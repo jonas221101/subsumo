@@ -29,7 +29,7 @@ cards:
   - § 6 Abs. 1 VwVG
   - § 9 Abs. 1 VwVG
   - § 1 VwVG
-  quellen: &id001
+  quellen:
   - VwVG, amtliche Fassung (Bund)
   - Eigenformulierung Redaktion
   stand: 2026-10
@@ -53,7 +53,9 @@ cards:
   - § 14 VwVG
   - § 9 Abs. 2 VwVG
   - § 43 VwVfG
-  quellen: *id001
+  quellen:
+  - VwVG, amtliche Fassung (Bund)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-vwr-vollstr-sofortvollzug-6-abs2
   type: norm
@@ -72,7 +74,9 @@ cards:
   norms:
   - § 6 Abs. 2 VwVG
   - § 13 Abs. 1 VwVG
-  quellen: *id001
+  quellen:
+  - VwVG, amtliche Fassung (Bund)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-vwr-vollstr-zwangsmittel
   type: definition
@@ -86,7 +90,7 @@ cards:
     werden und beträgt im Bund mindestens 25 und höchstens 25 000 Euro. Der unmittelbare Zwang
     (§ 12 VwVG) ist anwendbar, wenn andere Zwangsmittel nicht zum Ziel führen oder untunlich
     sind; er ist das schwerste Mittel und unterliegt besonders strengen Verhältnismäßigkeitsanforderungen.
-    Wirkt das Zwangsgeld nicht, kann zudem Ersatzzwangshaft angeordnet werden (§ 16 VwVG).
+    Ist das Zwangsgeld uneinbringlich, kann das Verwaltungsgericht auf Antrag der Vollzugsbehörde Ersatzzwangshaft anordnen (§ 16 VwVG).
     Die Behörde wählt unter Beachtung des Verhältnismäßigkeitsgrundsatzes das mildeste geeignete
     Mittel, § 9 Abs. 2 VwVG; ein bestimmtes Mittel ist anzudrohen.
   norms:
@@ -95,7 +99,9 @@ cards:
   - § 12 VwVG
   - § 9 Abs. 2 VwVG
   - § 16 VwVG
-  quellen: *id001
+  quellen:
+  - VwVG, amtliche Fassung (Bund)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-vwr-vollstr-androhung
   type: norm
@@ -114,7 +120,9 @@ cards:
   norms:
   - § 13 VwVG
   - § 6 Abs. 2 VwVG
-  quellen: *id001
+  quellen:
+  - VwVG, amtliche Fassung (Bund)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-vwr-vollstr-konnexitaet
   type: streitstand
@@ -138,7 +146,9 @@ cards:
   - § 43 VwVfG
   - § 44 VwVfG
   - Art. 19 Abs. 4 GG
-  quellen: *id001
+  quellen:
+  - VwVG, amtliche Fassung (Bund)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-vwr-vollstr-kostenbescheid
   type: norm
@@ -195,7 +205,9 @@ schemata:
   - § 6 VwVG
   - § 9 VwVG
   - § 13 VwVG
-  quellen: *id001
+  quellen:
+  - VwVG, amtliche Fassung (Bund)
+  - Eigenformulierung Redaktion
   steps:
   - label: 'I. Ermächtigungsgrundlage: VwVG (Bund) bzw. Landesvollstreckungsrecht'
     hinweis: Landesrechtlich unterschiedlich; sonst § 6 VwVG als Muster verwenden.

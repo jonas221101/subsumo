@@ -29,7 +29,7 @@ cards:
   - § 73 VwVfG
   - § 74 VwVfG
   - § 74 Abs. 6 VwVfG
-  quellen: &id001
+  quellen:
   - VwVfG, amtliche Fassung
   - Eigenformulierung Redaktion
   stand: 2026-10
@@ -41,8 +41,7 @@ cards:
     Entscheidungen, insbesondere öffentlich-rechtliche Genehmigungen, Verleihungen, Erlaubnisse,
     Bewilligungen, Zustimmungen und Planfeststellungen nicht erforderlich (§ 75 Abs. 1 S.
     1 VwVfG). Die Konzentration ist formell, das heißt die materiellen Anforderungen der konzentrierten
-    Genehmigungen bleiben zu beachten; ausgenommen sind nach § 75 Abs. 1 S. 1 VwVfG wasserrechtliche
-    Erlaubnisse und Bewilligungen, für die das Wasserhaushaltsgesetz Sonderregeln enthält.
+    Genehmigungen bleiben zu beachten; für wasserrechtliche Erlaubnisse und Bewilligungen enthält das Wasserhaushaltsgesetz Sonderregeln.
     Zudem hat der Beschluss Gestaltungswirkung: Er regelt alle öffentlich-rechtlichen Beziehungen
     zwischen dem Vorhabenträger und den durch den Plan Betroffenen rechtsgestaltend (§ 75
     Abs. 1 S. 2 VwVfG). Nach § 75 Abs. 2 S. 1 VwVfG sind nach Unanfechtbarkeit Ansprüche auf
@@ -53,7 +52,9 @@ cards:
   norms:
   - § 75 Abs. 1 VwVfG
   - § 75 Abs. 2 VwVfG
-  quellen: *id001
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-vwr-plan-planrechtfertigung-planungsleitsaetze
   type: definition
@@ -71,7 +72,9 @@ cards:
     Planungsleitsätze und Optimierungsgebote, sodann Abwägung.
   norms:
   - § 74 Abs. 1 VwVfG
-  quellen: *id001
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-vwr-plan-abwaegungsgebot
   type: definition
@@ -92,8 +95,8 @@ cards:
   - Art. 20 Abs. 3 GG
   quellen:
   - VwVfG, amtliche Fassung
-  - Eigenformulierung Redaktion
-  - Eigenformulierung Redaktion
+    - Eigenformulierung Redaktion
+
   stand: 2026-10
 - slug: or-vwr-plan-planerhaltung-75-abs1a
   type: norm
@@ -112,7 +115,9 @@ cards:
   - § 75 Abs. 1a VwVfG
   - § 74 Abs. 2 S. 2 VwVfG
   - § 46 VwVfG
-  quellen: *id001
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-vwr-plan-planfeststellung-rechtsschutz
   type: norm
@@ -165,15 +170,13 @@ cards:
   stand: 2026-10
 - slug: or-vwr-plan-subvention-zwei-stufen
   type: definition
-  front: Wie wirkt die Zwei-Stufen-Theorie bei Subventionen, und was gilt für Rückforderung?
+  front: "Wie wird eine Subvention rechtlich abgewickelt und zurückgefordert, und was bleibt von der Zwei-Stufen-Theorie?"
   back: >-
     Bei Subventionen unterscheidet die Zwei-Stufen-Theorie die Entscheidung über das „Ob“
     der Gewährung von der Abwicklung („Wie“): Die Bewilligung ist öffentlich-rechtlich (Verwaltungsakt,
     Bewilligungsbescheid), die Abwicklung kann privatrechtlich erfolgen, etwa durch Darlehensvertrag
     mit der Bank oder Zahlung auf privatrechtlicher Grundlage. Rechtsweg: für das „Ob“ Verwaltungsgerichte,
-    für das „Wie“ ordentliche Gerichte. Bei Zuschüssen wird heute überwiegend die einstufige
-    Lösung vertreten: Bewilligung durch Verwaltungsakt, Abwicklung durch Zuwendungsbescheid
-    mit Nebenbestimmungen, sodass alles öffentlich-rechtlich ist. Wird die Subvention durch
+    für das „Wie“ ordentliche Gerichte. Bei Zuschüssen wird heute überwiegend die einstufige Lösung vertreten: Bewilligung und Abwicklung erfolgen durch Zuwendungsbescheid mit Nebenbestimmungen, sodass alles öffentlich-rechtlich ist. Wird die Subvention durch
     Verwaltungsakt bewilligt, richtet sich die Rückforderung nach den §§ 48, 49 Abs. 3, 49a
     VwVfG, nicht nach Bereicherungsrecht; bei privatrechtlicher Abwicklung nach Vertragsrecht.
     Der Verwaltungsakt bleibt Anknüpfungspunkt, und die Behörde muss den Verwaltungsakt zuerst
@@ -199,8 +202,7 @@ cards:
     3). Neue Beihilfen sind bei der Kommission anzumelden und dürfen vor deren Genehmigung
     nicht gewährt werden (Durchführungsverbot, Art. 108 Abs. 3 AEUV). Eine unter Verstoß gegen
     das Durchführungsverbot gewährte Beihilfe ist rechtswidrig; die nationalen Behörden und
-    Gerichte müssen sie zurückfordern, der Empfänger kann sich auf Vertrauensschutz nur ausnahmsweise
-    berufen, wenn das Verfahren nicht eingehalten wurde. Im nationalen Recht werden §§ 48,
+    Gerichte müssen sie zurückfordern, der Empfänger kann auf die Rechtmäßigkeit der Beihilfe grundsätzlich nur vertrauen, wenn das Beihilfeverfahren nach Art. 108 AEUV eingehalten wurde. Im nationalen Recht werden §§ 48,
     49a VwVfG unionsrechtskonform ausgelegt (Effektivitätsgrundsatz). Ausnahmen bestehen für
     De-minimis-Beihilfen und Gruppenfreistellungen.
   norms:
@@ -220,7 +222,9 @@ schemata:
   - § 73 VwVfG
   - § 74 VwVfG
   - § 75 VwVfG
-  quellen: *id001
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
   steps:
   - label: 'I. Ermächtigungsgrundlage: Fachplanungsgesetz i. V. m. §§ 72 ff. VwVfG'
   - label: II. Formelle Rechtmäßigkeit
@@ -265,10 +269,7 @@ faelle:
       drittschützender Immissionsvorschriften zu. Die Verletzung ist möglich, § 42 Abs. 2
       VwGO. Seine Einwendungen waren rechtzeitig, eine Präklusion greift nicht.
   - prompt: Liegt ein Fehler im Planfeststellungsbeschluss vor?
-    erwartung: 'Ja, ein Abwägungsdefizit (Abwägungsausfall hinsichtlich der Lärmbelange):
-      Die Behörde hat den relevanten Belang des Lärmschutzes nicht ermittelt und nicht in
-      die Abwägung eingestellt. Der Mangel ist offensichtlich und auf das Ergebnis von Einfluss
-      (§ 75 Abs. 1a S. 1 VwVfG), zudem werden Immissionsgrenzwerte verletzt.'
+    erwartung: 'Ja, es liegt ein Abwägungsdefizit hinsichtlich der Lärmbelange vor: Die Behörde hat den relevanten Belang des Lärmschutzes nicht ermittelt und nicht in die Abwägung eingestellt. Der Mangel ist offensichtlich und auf das Ergebnis von Einfluss (§ 75 Abs. 1a S. 1 VwVfG), zudem werden drittschützende Immissionsgrenzwerte überschritten.'
   - prompt: Führt der Fehler zur Aufhebung des Beschlusses?
     erwartung: Nein. Nach § 75 Abs. 1a S. 2 VwVfG kommt eine Aufhebung nur in Betracht, wenn
       der Mangel nicht durch Planergänzung oder ein ergänzendes Verfahren behoben werden kann.

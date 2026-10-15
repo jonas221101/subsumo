@@ -14,7 +14,7 @@ cards:
   type: norm
   front: "Wie organisiert sich der Bundestag selbst und mit welcher Mehrheit beschließt er (Art. 39–42 GG)?"
   back: >-
-    Der Bundestag wird auf vier Jahre gewählt (Art. 39 Abs. 1 S. 1 GG); nach Ablauf der Wahlperiode oder einer Auflösung findet die Neuwahl innerhalb von 60 Tagen statt (Art. 39 Abs. 1 S. 3 GG). Er wählt seinen Präsidenten, dessen Stellvertreter und die Schriftführer und gibt sich eine Geschäftsordnung (Art. 40 Abs. 1 GG, Geschäftsordnungsautonomie). Der Präsident übt das Hausrecht und die Polizeigewalt im Gebäude aus (Art. 40 Abs. 2 GG). Der Bundestag verhandelt öffentlich (Art. 42 Abs. 1 GG). Beschlüsse fasst er mit der Mehrheit der abgegebenen Stimmen, soweit das Grundgesetz nichts anderes bestimmt (Art. 42 Abs. 2 S. 1 GG); abweichende Mehrheitserfordernisse gelten etwa bei der Kanzlerwahl (Mehrheit der Mitglieder, Art. 63 Abs. 2 GG) und bei Verfassungsänderungen (Zweidrittelmehrheit der Mitglieder, Art. 79 Abs. 2 GG). Die Geschäftsordnung ist Binnenrecht, begründet aber organschaftliche Rechte der Fraktionen und Abgeordneten, die im Organstreit geltend gemacht werden können.
+    Der Bundestag wird auf vier Jahre gewählt (Art. 39 Abs. 1 S. 1 GG); die Neuwahl findet frühestens 46, spätestens 48 Monate nach Beginn der Wahlperiode statt (Art. 39 Abs. 1 S. 2 GG), im Fall einer Auflösung innerhalb von 60 Tagen (Art. 39 Abs. 1 S. 3 GG). Er wählt seinen Präsidenten, dessen Stellvertreter und die Schriftführer und gibt sich eine Geschäftsordnung (Art. 40 Abs. 1 GG, Geschäftsordnungsautonomie). Der Präsident übt das Hausrecht und die Polizeigewalt im Gebäude aus (Art. 40 Abs. 2 GG). Der Bundestag verhandelt öffentlich (Art. 42 Abs. 1 GG). Beschlüsse fasst er mit der Mehrheit der abgegebenen Stimmen, soweit das Grundgesetz nichts anderes bestimmt (Art. 42 Abs. 2 S. 1 GG); abweichende Mehrheitserfordernisse gelten etwa bei der Kanzlerwahl (Mehrheit der Mitglieder, Art. 63 Abs. 2 GG) und bei Verfassungsänderungen (Zweidrittelmehrheit der Mitglieder, Art. 79 Abs. 2 GG). Die Geschäftsordnung ist Binnenrecht, begründet aber organschaftliche Rechte der Fraktionen und Abgeordneten, die im Organstreit geltend gemacht werden können.
   norms:
   - Art. 39 Abs. 1 GG
   - Art. 40 Abs. 1 GG
@@ -79,11 +79,11 @@ cards:
   type: norm
   front: "Wie funktionieren Vertrauensfrage und Bundestagsauflösung nach Art. 68 GG?"
   back: >-
-    Findet ein Antrag des Bundeskanzlers, ihm das Vertrauen auszusprechen, nicht die Zustimmung der Mehrheit der Mitglieder des Bundestages, kann der Bundespräsident auf Vorschlag des Kanzlers binnen 21 Tagen den Bundestag auflösen (Art. 68 Abs. 1 S. 1 GG). Das Auflösungsrecht erlischt, sobald der Bundestag mit der Mehrheit seiner Mitglieder einen anderen Kanzler wählt (S. 2). Zwischen Antrag und Abstimmung müssen 48 Stunden liegen (Abs. 2). Der Bundespräsident entscheidet nach pflichtgemäßem Ermessen, ob er auflöst; eine Neuwahl muss innerhalb von 60 Tagen stattfinden (Art. 39 Abs. 1 S. 4 GG). Der Kanzler muss die Vertrauensfrage nicht stellen, und er ist an die Auflösung nicht gebunden. Das Grundgesetz kennt kein Selbstauflösungsrecht des Bundestages; die Vertrauensfrage ist daher der einzige Weg zur vorzeitigen Neuwahl neben dem Scheitern der Kanzlerwahl (Art. 63 Abs. 4 GG).
+    Findet ein Antrag des Bundeskanzlers, ihm das Vertrauen auszusprechen, nicht die Zustimmung der Mehrheit der Mitglieder des Bundestages, kann der Bundespräsident auf Vorschlag des Kanzlers binnen 21 Tagen den Bundestag auflösen (Art. 68 Abs. 1 S. 1 GG). Das Auflösungsrecht erlischt, sobald der Bundestag mit der Mehrheit seiner Mitglieder einen anderen Kanzler wählt (S. 2). Zwischen Antrag und Abstimmung müssen 48 Stunden liegen (Abs. 2). Der Bundespräsident entscheidet nach pflichtgemäßem Ermessen, ob er auflöst; eine Neuwahl muss innerhalb von 60 Tagen stattfinden (Art. 39 Abs. 1 S. 3 GG). Der Kanzler muss die Vertrauensfrage nicht stellen, und er ist an die Auflösung nicht gebunden. Das Grundgesetz kennt kein Selbstauflösungsrecht des Bundestages; die Vertrauensfrage ist daher der einzige Weg zur vorzeitigen Neuwahl neben dem Scheitern der Kanzlerwahl (Art. 63 Abs. 4 GG).
   norms:
   - Art. 68 Abs. 1 GG
   - Art. 68 Abs. 2 GG
-  - Art. 39 Abs. 1 S. 4 GG
+  - Art. 39 Abs. 1 S. 3 GG
   quellen:
   - GG, amtliche Fassung
   stand: 2026-10
@@ -103,7 +103,7 @@ cards:
   type: definition
   front: "Welche Stellung und welche Aufgaben hat der Bundespräsident nach Art. 54–61 GG?"
   back: >-
-    Der Bundespräsident wird von der Bundesversammlung (Mitglieder des Bundestages und eine gleiche Zahl von den Landesparlamenten gewählter Mitglieder) auf fünf Jahre gewählt; eine einmalige Wiederwahl ist zulässig (Art. 54 GG). Wählbar ist jeder Deutsche, der das Wahlrecht zum Bundestag besitzt und das 40. Lebensjahr vollendet hat. Er vertritt den Bund völkerrechtlich und schließt Verträge mit auswärtigen Staaten (Art. 59 Abs. 1 GG), ernennt und entlässt Bundesrichter, Bundesbeamte und Soldaten (Art. 60 Abs. 1 GG) und übt das Begnadigungsrecht aus (Art. 60 Abs. 2 GG). Er hat überwiegend repräsentative und integrierende Funktion; Reservefunktionen hat er bei der Kanzlerwahl (Art. 63 GG), der Auflösung des Bundestages (Art. 68 GG) und der Gesetzgebungsnotstand-Erklärung (Art. 81 GG). Seine Anordnungen und Verfügungen bedürfen grundsätzlich der Gegenzeichnung durch den Bundeskanzler oder den zuständigen Minister (Art. 58 S. 1 GG); Ausnahmen gelten insbesondere für die Ernennung und Entlassung des Kanzlers sowie die Auflösung des Bundestages (Art. 58 S. 2 GG).
+    Der Bundespräsident wird von der Bundesversammlung (Mitglieder des Bundestages und eine gleiche Zahl von den Landesparlamenten gewählter Mitglieder) auf fünf Jahre gewählt; eine einmalige Wiederwahl ist zulässig (Art. 54 GG). Wählbar ist jeder Deutsche, der das Wahlrecht zum Bundestag besitzt und das 40. Lebensjahr vollendet hat. Er vertritt den Bund völkerrechtlich und schließt Verträge mit auswärtigen Staaten (Art. 59 Abs. 1 GG), ernennt und entlässt Bundesrichter, Bundesbeamte und Soldaten (Art. 60 Abs. 1 GG) und übt das Begnadigungsrecht aus (Art. 60 Abs. 2 GG). Er hat überwiegend repräsentative und integrierende Funktion; Reservefunktionen hat er bei der Kanzlerwahl (Art. 63 GG), der Auflösung des Bundestages (Art. 68 GG) und der Erklärung des Gesetzgebungsnotstands (Art. 81 GG). Seine Anordnungen und Verfügungen bedürfen grundsätzlich der Gegenzeichnung durch den Bundeskanzler oder den zuständigen Minister (Art. 58 S. 1 GG); Ausnahmen gelten nach Art. 58 S. 2 GG für die Ernennung und Entlassung des Bundeskanzlers, die Auflösung des Bundestages gemäß Art. 63 GG und das Ersuchen nach Art. 69 Abs. 3 GG; die Auflösung nach Art. 68 GG bedarf dagegen der Gegenzeichnung.
   norms:
   - Art. 54 GG
   - Art. 58 GG
@@ -115,9 +115,9 @@ cards:
   stand: 2026-10
 - slug: or-vo-pruefungsrecht-bundespraesident-art82
   type: streitstand
-  front: "Darf der Bundespräsident die Ausfertigung eines Gesetzes verweigern (Prüfungsrecht, Art. 82 Abs. 1 GG)?"
+  front: "Welche Meinungen gibt es zum materiellen Prüfungsrecht des Bundespräsidenten bei der Ausfertigung, was bedeutet „Evidenz“, und wie wird der Streit gerichtlich ausgetragen?"
   back: >-
-    Nach Art. 82 Abs. 1 S. 1 GG werden die „nach den Vorschriften dieses Grundgesetzes zustande gekommenen Gesetze“ nach Gegenzeichnung vom Bundespräsidenten ausgefertigt und im Bundesgesetzblatt verkündet. Das formelle Prüfungsrecht (Zuständigkeit, Verfahren, Form) ist unstreitig. Beim materiellen Prüfungsrecht werden drei Auffassungen vertreten. Eine Mindermeinung verneint es, weil das Bundesverfassungsgericht das Verwerfungsmonopol hat und der Präsident sonst politisch in den Gesetzgebungsprozess eingreift. Eine Gegenmeinung bejaht ein umfassendes Recht, weil der Präsident auf das Grundgesetz vereidigt ist (Art. 56 GG) und nur verfassungsgemäße Gesetze „zustande gekommen“ sind. Die herrschende Meinung und die Staatspraxis vermitteln: Eine Ausfertigung darf nur bei evidenter, offensichtlicher Verfassungswidrigkeit verweigert werden. Das Bundesverfassungsgericht hat die Frage bislang nicht abschließend entschieden. Der Streit zwischen Bundespräsident und den übrigen Organen ist im Organstreit nach Art. 93 Abs. 1 Nr. 1 GG austragbar.
+    Nach Art. 82 Abs. 1 S. 1 GG werden die „nach den Vorschriften dieses Grundgesetzes zustande gekommenen Gesetze“ nach Gegenzeichnung vom Bundespräsidenten ausgefertigt und im Bundesgesetzblatt verkündet. Das formelle Prüfungsrecht (Zuständigkeit, Verfahren, Form) ist unstreitig. Beim materiellen Prüfungsrecht werden drei Auffassungen vertreten. Eine Mindermeinung verneint es, weil das Bundesverfassungsgericht das Verwerfungsmonopol hat und der Präsident sonst politisch in den Gesetzgebungsprozess eingreift. Eine Gegenmeinung bejaht ein umfassendes Recht, weil der Präsident auf das Grundgesetz vereidigt ist (Art. 56 GG) und nur verfassungsgemäße Gesetze „zustande gekommen“ sind. Die herrschende Meinung und die Staatspraxis vermitteln: Eine Ausfertigung darf nur bei evidenter, offensichtlicher Verfassungswidrigkeit verweigert werden. Das Bundesverfassungsgericht hat die Frage bislang nicht abschließend entschieden. Evident ist ein Verstoß nur, wenn er offenkundig und schwerwiegend ist; eine bloß vertretbar bestreitbare oder umstrittene Verfassungsfrage genügt nicht. Der Streit zwischen Bundespräsident und den übrigen Organen ist im Organstreit nach Art. 93 Abs. 1 Nr. 1 GG austragbar.
   norms:
   - Art. 82 Abs. 1 S. 1 GG
   - Art. 56 GG
@@ -181,13 +181,13 @@ faelle:
   question: Durfte P die Ausfertigung des Gesetzes verweigern? Welcher Rechtsschutz steht der Bundesregierung offen?
   steps:
   - prompt: Ist das Gesetz formell ordnungsgemäß zustande gekommen?
-    erwartung: Ja - Bundestagsbeschluss, kein Einspruch des Bundesrates bei einem Einspruchsgesetz (Art. 78 GG), Gegenzeichnung nach Art. 58 GG. Ein formelles Hindernis für die Ausfertigung besteht nicht.
+    erwartung: Ja, das Gesetz ist formell ordnungsgemäß zustande gekommen. Der Bundestag hat beschlossen, bei diesem Einspruchsgesetz ist das Gesetz nach Art. 78 GG zustande gekommen, und der Bundeskanzler hat nach Art. 58 GG gegengezeichnet. Die Ausfertigung scheitert daher nicht an einem formellen Mangel.
   - prompt: Hat der Bundespräsident ein materielles Prüfungsrecht?
     erwartung: Streitig. Verneinung (Verwerfungsmonopol des Bundesverfassungsgerichts), umfassendes Recht (Eid, Art. 56 GG) oder die herrschende vermittelnde Auffassung, die Verweigerung nur bei evidenter Verfassungswidrigkeit zulässt.
   - prompt: Liegt hier ein evidenter Verfassungsverstoß vor?
-    erwartung: Nein - die Vereinbarkeit mit Art. 12 Abs. 1 GG ist vertretbar in beide Richtungen umstritten; bloße Zweifel genügen nicht. Auch nach der weitesten vertretbaren Auffassung (Evidenz) darf P nicht verweigern.
+    erwartung: Nein. Die Vereinbarkeit mit Art. 12 Abs. 1 GG ist vertretbar in beide Richtungen umstritten, und bloße Zweifel ändern daran nichts. Maßgeblich ist der Evidenzmaßstab, und die Frage bleibt vertretbar. P ist daher zur Ausfertigung verpflichtet, die Verweigerung ist unzulässig.
   - prompt: Welcher Rechtsschutz besteht?
-    erwartung: Organstreit nach Art. 93 Abs. 1 Nr. 1 GG, §§ 63 ff. BVerfGG; die Bundesregierung (und der Bundestag bzw. eine Fraktion in Prozessstandschaft) kann geltend machen, dass P durch die Verweigerung die ihm obliegende Ausfertigungspflicht aus Art. 82 Abs. 1 GG und damit Rechte der Antragsteller im Gesetzgebungsverfahren verletzt. Das Gericht stellt die Verletzung fest, § 67 BVerfGG.
+    erwartung: Rechtsschutz bietet der Organstreit nach Art. 93 Abs. 1 Nr. 1 GG, §§ 63 ff. BVerfGG. Die Bundesregierung (und der Bundestag bzw. eine Fraktion in Prozessstandschaft) kann geltend machen, dass P durch die Verweigerung die ihm obliegende Ausfertigungspflicht aus Art. 82 Abs. 1 GG und damit Rechte der Antragsteller im Gesetzgebungsverfahren verletzt. Das Gericht stellt die Verletzung fest, § 67 BVerfGG.
   expectation:
     pruefpunkte:
     - id: p1
@@ -201,7 +201,8 @@ faelle:
       - Einspruchsgesetz
       - Gegenzeichnung
       - Art. 78 GG
-      - formell zustande gekommen
+      - formell ordnungsgemäß zustande gekommen
+      - formell ordnungsgemäß
       card_slugs:
       - or-vo-pruefungsrecht-bundespraesident-art82
     - id: p2
@@ -250,6 +251,7 @@ faelle:
       required: false
       keywords:
       - zur Ausfertigung verpflichtet
+      - darf die Ausfertigung nicht verweigern
       - durfte die Ausfertigung nicht verweigern
       - Verweigerung unzulässig
       card_slugs:
