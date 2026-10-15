@@ -24,6 +24,7 @@ from __future__ import annotations
 
 import json
 import os
+import posixpath
 import threading
 from datetime import UTC, datetime
 from pathlib import Path
@@ -95,6 +96,9 @@ class BetaGuard:
         root = scope.get("root_path", "")
         if root and path.startswith(root):
             path = path[len(root) :]
+        # "//v1/auth/register", "/./v1/..." oder "/v1/x/../auth/register" duerfen
+        # die Sperrliste nicht umgehen (Sicherheitstest 2026-10-15).
+        path = posixpath.normpath("/" + path.lstrip("/")) if path else "/"
         method = scope["method"]
         if method == "OPTIONS":
             return await _json(405, "Nicht erlaubt")(scope, receive, send)

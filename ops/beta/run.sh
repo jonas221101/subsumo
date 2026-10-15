@@ -8,4 +8,4 @@ cd "$repo/backend"
 export PYTHONPATH="$repo/backend${PYTHONPATH:+:$PYTHONPATH}"
 exec "$repo/backend/.venv/bin/uvicorn" gateway:app \
   --app-dir "$here" --host 127.0.0.1 --port "${PORT:-8095}" \
-  --proxy-headers --forwarded-allow-ips 127.0.0.1 --no-server-header
+  --no-proxy-headers --no-server-header
