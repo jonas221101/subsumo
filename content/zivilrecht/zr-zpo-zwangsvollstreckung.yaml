@@ -111,12 +111,7 @@ cards:
   type: norm
   front: Welche Sachen sind unpfändbar (§ 811 ZPO)?
   back: Bestimmte Sachen sind aus sozialen Gründen der Pfändung entzogen (§ 811 Abs. 1 ZPO).
-    Dazu gehören insbesondere die dem persönlichen Gebrauch oder dem Haushalt dienenden Sachen,
-    namentlich Kleidungsstücke, Wäsche, Betten, Haus- und Küchengeräte, soweit der Schuldner
-    ihrer zu einer seiner Berufstätigkeit und seiner Verschuldung angemessenen, bescheidenen
-    Lebens- und Haushaltsführung bedarf (§ 811 Abs. 1 Nr. 1 ZPO), sowie bei Personen, die
-    aus ihrer körperlichen oder geistigen Arbeit ihren Erwerb ziehen, die zur Fortsetzung
-    dieser Erwerbstätigkeit erforderlichen Gegenstände (§ 811 Abs. 1 Nr. 5 ZPO). Die Unpfändbarkeit
+    Dazu gehören nach der geltenden Fassung insbesondere Sachen, die der Schuldner oder eine mit ihm im gemeinsamen Haushalt lebende Person für eine bescheidene Lebens- und Haushaltsführung benötigt (§ 811 Abs. 1 Nr. 1 Buchst. a ZPO, etwa Kleidung, Wäsche, Betten, Haus- und Küchengeräte), für die Ausübung einer Erwerbstätigkeit oder damit zusammenhängende Aus- oder Fortbildung (Nr. 1 Buchst. b) oder aus gesundheitlichen Gründen (Nr. 1 Buchst. c); daneben Bargeld in begrenzter Höhe (Nr. 3), bestimmte Unterlagen (Nr. 4) und Tiere, die nicht zu Erwerbszwecken gehalten werden (Nr. 8). Die Unpfändbarkeit
     ist von Amts wegen zu beachten; ein Verstoß ist mit der Erinnerung nach § 766 ZPO rügbar.
     Der Schuldner kann nicht im Voraus auf den Pfändungsschutz verzichten. Eine unzulässige
     Pfändung bleibt wirksam, bis sie aufgehoben ist (Verstrickung). Gläubiger können in bestimmten
@@ -264,9 +259,7 @@ cards:
     (§ 562 BGB), weiter andere gesetzliche Pfandrechte und das besitzlose vertragliche
     Pfandrecht. Anders als bei § 771 ZPO hindert
     das Recht die Veräußerung nicht; der Kläger erstrebt Befriedigung vor dem Vollstreckungsgläubiger
-    aus dem Erlös. Die Klage ist bei dem Gericht zu erheben, in dessen Bezirk die Pfändung
-    erfolgt ist (§ 805 Abs. 2 ZPO). Bis zur Entscheidung wird der Erlös hinterlegt (§ 805
-    Abs. 4 ZPO). Der Beklagte kann einwenden, dass das Pfandrecht nicht besteht oder nicht
+    aus dem Erlös. Die Klage ist beim Vollstreckungsgericht zu erheben, gehört der Streitgegenstand nicht zur Zuständigkeit der Amtsgerichte, beim Landgericht, in dessen Bezirk das Vollstreckungsgericht seinen Sitz hat (§ 805 Abs. 2 ZPO). Wird der Anspruch glaubhaft gemacht, ordnet das Gericht die Hinterlegung des Erlöses an (§ 805 Abs. 4 ZPO). Der Beklagte kann einwenden, dass das Pfandrecht nicht besteht oder nicht
     rangbesser ist.
   norms:
   - § 805 Abs. 1 ZPO

@@ -67,9 +67,9 @@ cards:
   type: norm
   front: Was versteht die ZPO unter Parteifähigkeit, Prozessfähigkeit und Prozessführungsbefugnis
     (§§ 50 bis 52 ZPO)?
-  back: Parteifähig ist, wer rechtsfähig ist (§ 50 Abs. 1 ZPO), also natürliche und juristische
+  back: Parteifähig ist, wer rechtsfähig ist (§ 50 ZPO), also natürliche und juristische
     Personen sowie rechtsfähige Personengesellschaften wie OHG, KG und die rechtsfähige GbR.
-    Ein nicht rechtsfähiger Verein kann verklagt werden (§ 50 Abs. 2 ZPO). Prozessfähig ist,
+    Der frühere § 50 Abs. 2 ZPO (Passivlegitimation des nicht rechtsfähigen Vereins) besteht nicht mehr; für Vereine ohne Rechtspersönlichkeit gilt § 54 BGB. Prozessfähig ist,
     wer sich durch Verträge verpflichten kann (§ 52 ZPO), also im Wesentlichen wer voll geschäftsfähig
     ist; Minderjährige und Geschäftsunfähige handeln durch den gesetzlichen Vertreter. Die
     Prozessführungsbefugnis berechtigt, über das streitige Recht im eigenen Namen einen Prozess
@@ -116,9 +116,7 @@ cards:
   back: Eine Klageänderung liegt vor, wenn der Streitgegenstand nach Eintritt der Rechtshängigkeit
     geändert wird, also der Klageantrag oder der zugrunde liegende Lebenssachverhalt. Sie
     ist zulässig, wenn der Beklagte einwilligt oder das Gericht die Änderung für sachdienlich
-    hält (§ 263 ZPO); die Einwilligung wird vermutet, wenn sich der Beklagte, ohne zu widersprechen,
-    in einem Schriftsatz oder in der mündlichen Verhandlung auf die geänderte Klage eingelassen
-    hat (§ 267 ZPO). Keine Klageänderung sind die Ergänzung oder Berichtigung tatsächlicher
+    hält (§ 263 ZPO); die Einwilligung wird vermutet, wenn sich der Beklagte, ohne zu widersprechen, in einer mündlichen Verhandlung auf die geänderte Klage eingelassen hat (§ 267 ZPO). Keine Klageänderung sind die Ergänzung oder Berichtigung tatsächlicher
     oder rechtlicher Anführungen (§ 264 Nr. 1 ZPO), die Erweiterung oder Beschränkung des
     Klageantrags in der Hauptsache oder in Bezug auf Nebenforderungen ohne Änderung des Klagegrundes
     (§ 264 Nr. 2 ZPO) und der Übergang auf einen anderen Gegenstand oder das Interesse wegen
@@ -189,8 +187,7 @@ cards:
     entscheidet das Gericht nur noch über die Kosten durch Beschluss nach billigem Ermessen
     unter Berücksichtigung des bisherigen Sach- und Streitstands (§ 91a Abs. 1 S. 1 ZPO);
     regelmäßig trägt die Kosten, wer ohne das erledigende Ereignis voraussichtlich unterlegen
-    wäre. Der Erklärung des Beklagten gleich steht das Ausbleiben eines Widerspruchs innerhalb
-    von zwei Wochen (§ 91a Abs. 1 S. 2 ZPO). Erklärt nur der Kläger die Erledigung, widerspricht
+    wäre. Der Erklärung des Beklagten gleich steht das Ausbleiben eines Widerspruchs innerhalb einer Notfrist von zwei Wochen seit Zustellung des Schriftsatzes, wenn der Beklagte zuvor auf diese Folge hingewiesen wurde (§ 91a Abs. 1 S. 2 ZPO). Erklärt nur der Kläger die Erledigung, widerspricht
     der Beklagte aber, handelt es sich nach h. M. um eine Klageänderung (privilegiert nach
     § 264 Nr. 2 ZPO analog) hin zu dem Antrag, die Erledigung der Hauptsache festzustellen.
     Dieser Antrag ist begründet, wenn die Klage bis zum erledigenden Ereignis zulässig und

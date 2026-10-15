@@ -107,7 +107,7 @@ cards:
     (§ 133 BGB, § 2084 BGB). Nach Rechtsprechung und h. M. ist die Auslegung dennoch an die
     Form gebunden: Umstände außerhalb der Urkunde dürfen nur herangezogen werden, wenn der
     ermittelte Wille in der Urkunde wenigstens andeutungsweise oder versteckt Ausdruck gefunden
-    hat (Andeutungstheorie, Formwahrung nach § 2247 BGB). Kritiker in der Literatur halten
+    hat (Andeutungstheorie, Formwahrung nach § 2247 BGB; vgl. BGH, 10.11.2021, IV ZB 30/20: eine nicht einmal angedeutete Erbeinsetzung ist formnichtig, § 125 S. 1 BGB). Kritiker in der Literatur halten
     die Form schon dann für gewahrt, wenn der Wille durch die Urkunde nicht ausgeschlossen
     wird; sie wollen die Auslegung stärker am tatsächlichen Willen ausrichten. Für Klausuren
     genügt es regelmäßig, den Maßstab der h. M. anzuwenden: Erst Wortlaut und Urkundeninhalt,
@@ -175,8 +175,7 @@ cards:
     wenn sie durch Verfügung von Todes wegen von der Erbfolge ausgeschlossen sind (§ 2303
     Abs. 1, 2 BGB); Eltern nur, wenn keine Abkömmlinge vorhanden sind (§ 2309 BGB). Der Pflichtteil
     ist ein reiner Geldanspruch gegen den Erben in Höhe der Hälfte des Werts des gesetzlichen
-    Erbteils (§ 2303 Abs. 1 S. 2 BGB); er ist mit dem Erbfall entstanden und fällig (§ 2317
-    Abs. 1 BGB). Berechnungsgrundlage ist der Nachlasswert nach Abzug der Nachlassverbindlichkeiten.
+    Erbteils (§ 2303 Abs. 1 S. 2 BGB); er entsteht mit dem Erbfall (§ 2317 Abs. 1 BGB) und ist mangels abweichender Bestimmung sofort fällig (§ 271 BGB). Berechnungsgrundlage ist der Nachlasswert nach Abzug der Nachlassverbindlichkeiten.
     Zur Durchsetzung steht dem Berechtigten ein Auskunftsanspruch zu (§ 2314 BGB). Schenkungen
     des Erblassers in den letzten zehn Jahren erhöhen den Nachlass fiktiv für einen Ergänzungsanspruch,
     wobei sie nach § 2325 Abs. 3 BGB zeitlich abgeschmolzen werden. Die Entziehung des Pflichtteils
@@ -272,7 +271,7 @@ schemata:
   - label: IV. Schuldner und Inhalt
     children:
     - label: 1. Erbe als Schuldner, § 2303 Abs. 1 BGB
-    - label: 2. Geldanspruch, sofort fällig, § 2317 Abs. 1 BGB
+    - label: 2. Geldanspruch, entsteht mit dem Erbfall (§ 2317 Abs. 1 BGB), sofort fällig (§ 271 BGB)
     - label: 3. Hilfsanspruch auf Auskunft und Wertermittlung, § 2314 BGB
   - label: V. Einwendungen und Verjährung
     children:
@@ -309,7 +308,7 @@ faelle:
     erwartung: 'Der Pflichtteil beträgt die Hälfte des gesetzlichen Erbteils (§ 2303 Abs.
       1 S. 2 BGB): 1/2 von 1/2 = 1/4 des Nachlasses, also 30.000 Euro.'
   - prompt: Wann ist der Anspruch fällig und wie kann K die Höhe überprüfen?
-    erwartung: Der Anspruch ist mit dem Erbfall entstanden und fällig (§ 2317 Abs. 1 BGB).
+    erwartung: Der Anspruch ist mit dem Erbfall entstanden (§ 2317 Abs. 1 BGB) und mangels abweichender Bestimmung sofort fällig (§ 271 BGB).
       K kann von F Auskunft über den Nachlassbestand verlangen (§ 2314 BGB). Er ist ein reiner
       Geldanspruch und verjährt nach den Regelfristen der §§ 195, 199 BGB.
   expectation:

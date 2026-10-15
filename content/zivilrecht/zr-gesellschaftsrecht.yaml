@@ -22,7 +22,7 @@ cards:
     dem gemeinsamen Willen der Gesellschafter am Rechtsverkehr teilnehmen soll; die nicht
     rechtsfähige Gesellschaft (Innen-GbR) dient nur der Ausgestaltung der Rechtsbeziehungen
     der Gesellschafter untereinander, zum Beispiel einer Fahrgemeinschaft oder einem Lottotipp.
-    Die rechtsfähige GbR ist parteifähig (§ 50 Abs. 1 ZPO). Sie entsteht im Verhältnis
+    Die rechtsfähige GbR ist parteifähig (§ 50 ZPO). Sie entsteht im Verhältnis
     zu Dritten, sobald sie mit Zustimmung sämtlicher Gesellschafter am Rechtsverkehr teilnimmt,
     spätestens mit der Eintragung im Gesellschaftsregister (§ 719 Abs. 1 BGB). Betreiben die
     Gesellschafter ein Unternehmen unter gemeinschaftlichem Namen, wird die Teilnahme am Rechtsverkehr
@@ -32,7 +32,7 @@ cards:
   - § 705 Abs. 2 BGB
   - § 705 Abs. 3 BGB
   - § 719 Abs. 1 BGB
-  - § 50 Abs. 1 ZPO
+  - § 50 ZPO
   quellen:
   - BGB, amtliche Fassung (Stand nach MoPeG, seit 1.1.2024)
   - HGB und GmbHG, amtliche Fassung
@@ -164,9 +164,7 @@ cards:
   type: norm
   front: Wie wird die OHG vertreten (§ 124 HGB n. F.; früher § 125 HGB)?
   back: Zur Vertretung der OHG ist jeder Gesellschafter befugt, wenn der Gesellschaftsvertrag
-    nichts anderes bestimmt (Einzelvertretung, § 124 Abs. 1 HGB). Der Gesellschaftsvertrag
-    kann einzelne Gesellschafter von der Vertretung ausschließen oder Gesamtvertretung anordnen
-    (§ 124 Abs. 2 HGB);
+    nichts anderes bestimmt (Einzelvertretung, § 124 Abs. 1 HGB). Der Gesellschaftsvertrag kann einzelne Gesellschafter von der Vertretung ausschließen (§ 124 Abs. 1 HGB) oder Gesamtvertretung anordnen (§ 124 Abs. 2 HGB);
     solche Abweichungen sind in das Handelsregister einzutragen und wirken gegenüber Dritten
     nur nach § 15 HGB. Die Vertretungsmacht ist grundsätzlich unbeschränkt und unbeschränkbar;
     eine Beschränkung ist Dritten gegenüber unwirksam (§ 124 Abs. 4 HGB). Der vertretungsbefugte Gesellschafter handelt als Organ der OHG; deren
