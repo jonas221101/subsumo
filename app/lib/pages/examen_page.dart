@@ -622,7 +622,16 @@ Future<void> _openLernprofil(
   // saveLernprofil laedt das Cockpit bereits neu; ein erneuter Aufruf hier
   // deckt nur den Fall ab, dass die Seite ohne Speichern verlassen wurde und
   // trotzdem frische Daten (z. B. faellige Karten) sinnvoll sind.
-  if (saved != true) await app.loadExamen();
+  if (saved != true) {
+    await app.loadExamen();
+  } else if (context.mounted) {
+    // Nach dem Ruecksprung auf der sichtbaren Seite bestaetigen; 8 s, weil die
+    // Meldung erst nach dem Speichern kommt (Nutzertest W16/W17).
+    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+      duration: Duration(seconds: 8),
+      content: Text('Gespeichert: Bundesland, Universität und Lernprofil.'),
+    ));
+  }
 }
 
 // --------------------------------------------------------------------------- //

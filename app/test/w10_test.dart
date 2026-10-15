@@ -6,6 +6,8 @@ import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:subsumo/api.dart';
+import 'package:subsumo/design/design.dart';
+import 'package:subsumo/pages/account_page.dart';
 import 'package:subsumo/pages/examen_page.dart';
 import 'package:subsumo/pages/gutachten_page.dart';
 import 'package:subsumo/state.dart';
@@ -78,5 +80,40 @@ void main() {
     await tester.tap(button);
     await tester.pumpAndSettle();
     expect(submitted, isTrue);
+  });
+
+  testWidgets('Lernprofil: Bestaetigung erscheint nach dem Ruecksprung ins Konto', (tester) async {
+    tester.view.physicalSize = const Size(820, 1180);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final client = MockClient((r) async {
+      switch (r.url.path) {
+        case '/v1/examen/cockpit':
+          return _json({'lernprofil': {'semester': 3}, 'themen': [], 'profil': {}});
+        case '/v1/examen/bundeslaender':
+          return _json([{'code': 'BY', 'name': 'Bayern'}]);
+        case '/v1/examen/universitaeten':
+          return _json([]);
+        case '/v1/me/lernprofil':
+          return _json({...jsonDecode(r.body) as Map, 'eingerichtet': true});
+        case '/v1/auth/me':
+          return _json({'id': 1, 'email': 'a@b.de'});
+      }
+      return _json({}, 404);
+    });
+    final state = AppState(api: ApiClient(client: client)..setToken('t'));
+    await tester.pumpWidget(AppScope(
+      notifier: state,
+      child: MaterialApp(theme: buildTheme(Brightness.light), home: const AccountPage()),
+    ));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Lernprofil'));
+    await tester.pumpAndSettle();
+    final speichern = find.widgetWithText(SubsumoButton, 'Speichern');
+    await tester.scrollUntilVisible(speichern, 300, scrollable: find.byType(Scrollable).first);
+    await tester.tap(speichern);
+    await tester.pumpAndSettle();
+    expect(find.byType(AccountPage), findsOneWidget);
+    expect(find.text('Gespeichert: Bundesland, Universität und Lernprofil.'), findsOneWidget);
   });
 }

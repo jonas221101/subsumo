@@ -128,12 +128,8 @@ class _LernprofilPageState extends State<LernprofilPage> {
     if (!mounted) return;
     setState(() => _busy = false);
     if (ok) {
-      // Laenger als die 4-s-Vorgabe: die Meldung erscheint erst nach dem Speichern
-      // und dem Ruecksprung ins Konto (Nutzertest W16/W17: leicht zu verpassen).
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-        duration: Duration(seconds: 8),
-        content: Text('Gespeichert: Bundesland, Universität und Lernprofil.'),
-      ));
+      // Die Bestaetigung zeigt die aufrufende Seite nach dem Ruecksprung (siehe
+      // _openLernprofil) - von hier aus ging sie am Tablet mit der Seite verloren.
       Navigator.of(context).pop(true);
     } else {
       setState(() => _error = app.error ?? 'Speichern fehlgeschlagen.');
