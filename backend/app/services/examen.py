@@ -18,6 +18,7 @@ durch dieses Modul ziehen:
 
 from __future__ import annotations
 
+import re
 from collections import Counter
 from dataclasses import dataclass
 from datetime import UTC, date, datetime, timedelta
@@ -204,11 +205,49 @@ def visible_card_states(
     return states
 
 
+# Ab diesem Semester (oder mit Examenspersona) gilt der gesamte Stoff als gleich nah.
+_STUFUNG_BIS_SEMESTER = 6
+GEBIET_RANG = {"zivilrecht": 0, "strafrecht": 1, "oeffentliches-recht": 2}
+
+
+def topic_semesters(db: Session) -> dict[str, int]:
+    """Fruehestes Semester je Thema (aus ``semester_default`` der Kurse); 99 = ohne Kurs."""
+    result: dict[str, int] = {}
+    for kurs in db.query(Kurs).all():
+        sem = kurs.data.get("semester_default") or 99
+        for slug in kurs.data.get("topic_slugs") or []:
+            result[slug] = min(result.get(slug, 99), sem)
+    return result
+
+
+def topic_stufen(db: Session, user: User, profil=None) -> dict[str, int]:
+    """Reihenfolge-Stufe je Thema nach dem Semester des Profils.
+
+    Leer (= keine Stufung) bei hohem Semester oder - ohne Semester - bei
+    Examens-/Wiederholungspersona. Mit Semester: Stoff bis zum eigenen Semester Stufe 0, spaeterer
+    Stoff nach seinem Semester. Ohne Semester: niedrigste Semester zuerst.
+    """
+    profil = profil if profil is not None else lernprofil.get_profil(user)
+    cap = profil.semester
+    if cap is None and lernprofil.persona(profil, user) in (
+        lernprofil.PERSONA_EXAMEN,
+        lernprofil.PERSONA_WIEDERHOLUNG,
+    ):
+        return {}
+    if cap is not None and cap > _STUFUNG_BIS_SEMESTER:
+        return {}
+    sems = topic_semesters(db)
+    if cap is None:
+        return sems
+    return {slug: (0 if sem <= cap else sem) for slug, sem in sems.items()}
+
+
 def topic_inputs(db: Session, user: User) -> list[TopicInput]:
     """Eingabe fuer :func:`app.services.planner.generate_plan` - nur sichtbare
     Themen, individuell gewichtet, pausierte Themen ausgenommen (docs/33)."""
     profil = lernprofil.get_profil(user)
     inputs: list[TopicInput] = []
+    stufen = topic_stufen(db, user, profil)
     for p in topic_progress(db, user).values():
         weight = lernprofil.topic_weight(profil, p.slug, p.area)
         if weight <= 0:
@@ -223,6 +262,7 @@ def topic_inputs(db: Session, user: User) -> list[TopicInput]:
                 weight=weight,
                 cards_total=p.cards_total,
                 cards_started=p.cards_started,
+                stufe=stufen.get(p.slug, 99 if stufen else 0),
             )
         )
     return inputs
@@ -244,6 +284,19 @@ def area_weights(land: Bundesland | None) -> dict[str, float]:
     return {a: float(verteilung.get(a, 0)) / total for a in AREAS}
 
 
+HINWEIS_NUTZER = "Angaben ohne Gewähr – bitte mit der Prüfungsordnung abgleichen"
+
+
+_INTERNE_FELDER = {"redaktion", "pruefliste_redaktion"}
+
+
+def public_data(data: dict) -> dict:
+    """Katalogdaten ohne interne Redaktionsangaben (``redaktion``-Block)."""
+    out = {k: v for k, v in data.items() if k not in _INTERNE_FELDER}
+    out["hinweis_nutzer"] = HINWEIS_NUTZER
+    return out
+
+
 def bundesland_summary(land: Bundesland) -> dict:
     data = land.data
     return {
@@ -263,7 +316,7 @@ def bundesland_profile(db: Session, land: Bundesland) -> dict:
         c.topic_slug for c in db.query(Card).filter(Card.topic_slug.in_([t.slug for t in topics]))
     )
     return {
-        **land.data,
+        **public_data(land.data),
         "pruefstatus": (land.data.get("redaktion") or {}).get("status", "mensch-freigegeben"),
         "gewichtung": area_weights(land),
         "landesrecht_themen": [
@@ -313,6 +366,16 @@ def deck_topic_slugs(kurs: Kurs, bundesland: str | None) -> list[str]:
     return slugs
 
 
+_PRIO_KUERZEL = re.compile(r"\s*\(P\d\)\s*$")
+_SIEHE_KURS = re.compile(r"\s*[:;,-]?\s*siehe Kurs\b.*$", re.DOTALL)
+
+
+def _nutzer_themenzeile(text: str) -> str:
+    """Interne Kuerzel (``(P3)``, ``siehe Kurs ...``) gehoeren nicht in die Nutzeransicht."""
+    text = _SIEHE_KURS.sub("", str(text))
+    return _PRIO_KUERZEL.sub("", text).strip()
+
+
 def resolve_deck(
     db: Session,
     user: User,
@@ -348,7 +411,9 @@ def resolve_deck(
     return {
         **kurs_summary(kurs),
         "lernziele": kurs.data.get("lernziele") or [],
-        "fehlende_themen": kurs.data.get("fehlende_themen") or [],
+        "fehlende_themen": [
+            _nutzer_themenzeile(t) for t in kurs.data.get("fehlende_themen") or []
+        ],
         "landesrecht_fehlt": landesrecht_fehlt,
         "topics": [t.to_dict() for t in topics],
         "schemata": [
@@ -532,10 +597,10 @@ def readiness(
             ),
         },
         "anwendung": {
-            "label": "Anwendung (bestandene Faelle)",
+            "label": "Anwendung (bestandene Fälle)",
             "value": round(anwendung, 3),
             "detail": (
-                f"{bestanden} von {len(cases)} Faellen mit mindestens "
+                f"{bestanden} von {len(cases)} Fällen mit mindestens "
                 f"{BESTANDEN_PUNKTE:.0f} Punkten."
             ),
         },
@@ -552,7 +617,7 @@ def readiness(
             "label": "Klausurpraxis",
             "value": round(klausurpraxis, 3),
             "detail": (
-                f"{len(klausuren)} Klausur(en) unter Examensbedingungen in den letzten "
+                f"{len(klausuren)} Übungsklausur(en) unter Examensbedingungen in den letzten "
                 f"{KLAUSURPRAXIS_WOCHEN} Wochen (Ziel: eine pro Woche)."
             ),
         },
@@ -680,7 +745,7 @@ def next_klausur(
         "difficulty": c.difficulty,
         "minutes": c.minutes,
         "begruendung": (
-            "Schwaechstes Rechtsgebiet nach Klausurgewicht; Fall noch nicht unter "
+            "Schwächstes Rechtsgebiet nach Klausurgewicht; Fall noch nicht unter "
             "Examensbedingungen geschrieben."
         ),
     }
@@ -697,16 +762,32 @@ def ist_klausurtag(today: date, weekday: int = KLAUSUR_WEEKDAY) -> bool:
     return today.weekday() == weekday
 
 
-def schwaechstes_thema(progress: dict[str, TopicProgress], profil) -> tuple[str, str, float] | None:
-    """Thema mit der hoechsten individuellen Prioritaet (Relevanz x Luecke x Gewicht)."""
-    best: tuple[float, str, str, float] | None = None
+def schwaechstes_thema(
+    progress: dict[str, TopicProgress],
+    profil,
+    stufen: dict[str, int] | None = None,
+) -> tuple[str, str, float] | None:
+    """Thema mit der hoechsten individuellen Prioritaet (Relevanz x Luecke x Gewicht).
+
+    Mit ``stufen`` (:func:`topic_stufen`) gewinnt die niedrigste Stufe mit
+    lernbaren Themen; bei Gleichstand Prioritaet, dann Gebiet (Zivilrecht vor
+    Strafrecht vor OeR), dann Slug - deterministisch.
+    """
+    stufen = stufen or {}
+    best: tuple[tuple, str, str, float] | None = None
     for p in progress.values():
         weight = lernprofil.topic_weight(profil, p.slug, p.area)
         if weight <= 0 or p.cards_total == 0:
             continue
         prio = p.relevance * (1.0 - p.mastery) * weight
-        if best is None or prio > best[0]:
-            best = (prio, p.slug, p.title, p.mastery)
+        key = (
+            stufen.get(p.slug, 99 if stufen else 0),
+            -prio,
+            GEBIET_RANG.get(p.area, 9),
+            p.slug,
+        )
+        if best is None or key < best[0]:
+            best = (key, p.slug, p.title, p.mastery)
     return None if best is None else (best[1], best[2], best[3])
 
 

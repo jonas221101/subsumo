@@ -283,7 +283,7 @@ void main() {
             return _json(_manifest('v1'));
           }
           if (request.url.path == '/v1/content/cards') {
-            expect(request.url.queryParameters['limit'], '2000');
+            expect(request.url.queryParameters['limit'], '1000');
             return _json([_snapshotCard]);
           }
           return _json({}, status: 404);

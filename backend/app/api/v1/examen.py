@@ -60,10 +60,10 @@ def universitaeten(db: DbSession, bundesland: str | None = None) -> list[dict]:
 def universitaet(slug: str, db: DbSession) -> dict:
     uni = db.query(Universitaet).filter_by(slug=slug).one_or_none()
     if uni is None:
-        raise HTTPException(status.HTTP_404_NOT_FOUND, "Universitaet nicht gefunden")
+        raise HTTPException(status.HTTP_404_NOT_FOUND, "Universität nicht gefunden")
     land = db.get(Bundesland, uni.bundesland)
     return {
-        **uni.data,
+        **examen.public_data(uni.data),
         "pruefstatus": (uni.data.get("redaktion") or {}).get("status", "mensch-freigegeben"),
         "bundesland_name": land.name if land else uni.bundesland,
         "kurse": examen.university_courses(db, uni),
@@ -147,7 +147,9 @@ def cockpit(
             semester=profil.semester,
             schwachstellen=schwachstellen["themen"],
             faelle_je_thema=lernprofil.faelle_je_thema(db, set(progress) - pausiert),
-            schwaechstes_thema=examen.schwaechstes_thema(progress, profil),
+            schwaechstes_thema=examen.schwaechstes_thema(
+                progress, profil, examen.topic_stufen(db, user, profil)
+            ),
             klausur_heute=klausur_heute,
             klausur_vorschlag=klausur_vorschlag,
         )

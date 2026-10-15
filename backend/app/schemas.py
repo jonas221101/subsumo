@@ -48,7 +48,8 @@ class UserUpdateIn(BaseModel):
     daily_minutes: int | None = Field(default=None, ge=15, le=600)
     # Kuerzel eines Bundeslands (BY, NW, ...) bzw. Slug einer Universitaet aus
     # content/examen/. Der Server prueft gegen den geladenen Bestand; "" loescht
-    # den Wert (None heisst hier wie bei den anderen Feldern "nicht aendern").
+    # den Wert. Fehlt ein Feld, bleibt es unveraendert; explizites null loescht
+    # exam_date und bundesland.
     bundesland: str | None = Field(default=None, max_length=2)
     universitaet_slug: str | None = Field(default=None, max_length=160)
 
@@ -89,6 +90,8 @@ class SchemaOut(BaseModel):
     steps: list = []
     sources: list[str] = []
     stand: str = ""
+    # Bundesland-Code bei Landesrecht, sonst None (Bundesrecht).
+    bundesland: str | None = None
 
 
 class CaseSummaryOut(BaseModel):
@@ -98,11 +101,14 @@ class CaseSummaryOut(BaseModel):
     title: str
     difficulty: int
     minutes: int
+    # Fallfrage fuer die Suche in der Liste (ohne den Sachverhalt).
+    question: str = ""
+    # Bundesland-Code bei Landesrecht, sonst None (Bundesrecht).
+    bundesland: str | None = None
 
 
 class CaseOut(CaseSummaryOut):
     facts: str
-    question: str
     steps: list = []
     # Der Erwartungshorizont wird nicht ausgeliefert, solange nicht abgegeben
     # wurde - sonst waere jede Uebung wertlos.

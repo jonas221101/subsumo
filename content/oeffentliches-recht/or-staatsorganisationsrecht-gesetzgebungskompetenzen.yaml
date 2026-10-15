@@ -299,7 +299,7 @@ schemata:
       Art. 31 GG nur bei Kollision kompetenzgemäßer Normen; Art. 125a GG für Altrecht.
 faelle:
 - slug: or-fall-landesmietendeckel-kompetenz
-  title: Der Mietendeckel des Landes L
+  title: Der Mietendeckel eines Landes
   difficulty: 5
   minutes: 60
   quellen:
@@ -307,7 +307,7 @@ faelle:
   - GG, amtliche Fassung
   - BGB, amtliche Fassung
   facts: Angesichts stark steigender Mieten in den Großstädten beschließt der Landtag
-    des Landes L ein "Gesetz zur Begrenzung der Wohnraummieten". Es friert die Mieten
+    eines Landes ein "Gesetz zur Begrenzung der Wohnraummieten". Es friert die Mieten
     für nicht preisgebundenen Wohnraum für fünf Jahre auf dem Stand eines Stichtags
     ein, legt für Neuvermietungen absolute Obergrenzen je Quadratmeter fest, verpflichtet
     Vermieter zur Absenkung bereits vereinbarter "überhöhter" Mieten und bewehrt Verstöße
@@ -321,9 +321,9 @@ faelle:
     2 BGB die Befugnis eingeräumt, durch Rechtsverordnung Gebiete mit angespanntem
     Wohnungsmarkt zu bestimmen. Ein Viertel der Mitglieder des Bundestages hält das
     Landesgesetz für kompetenzwidrig und beantragt die abstrakte Normenkontrolle.
-    Das Land L verteidigt sich mit dem Argument, das Gesetz regele als öffentliches
+    Das Land verteidigt sich mit dem Argument, das Gesetz regele als öffentliches
     Recht eine andere Materie als das BGB und ergänze dieses lediglich.
-  question: Ist das Gesetz des Landes L mit der Kompetenzordnung des Grundgesetzes
+  question: Ist das Gesetz des Landes mit der Kompetenzordnung des Grundgesetzes
     vereinbar?
   steps:
   - prompt: Ist der Antrag auf abstrakte Normenkontrolle zulässig?

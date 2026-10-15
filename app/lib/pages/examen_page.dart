@@ -1129,7 +1129,7 @@ class _BundeslandCard extends StatelessWidget {
           Text('Prüfung in ${bundesland['name']}', style: theme.textTheme.titleMedium),
           const SizedBox(height: Spacing.xs),
           Text(
-            '${klausuren['anzahl']} Klausuren a ${klausuren['dauer_minuten']} min: '
+            'Im Examen: ${klausuren['anzahl']} Klausuren à ${klausuren['dauer_minuten']} min: '
             '${verteilung.entries.map((e) => '${_areaLabels[e.key] ?? e.key} ${e.value}').join(', ')}',
             style: theme.textTheme.bodyMedium,
           ),
