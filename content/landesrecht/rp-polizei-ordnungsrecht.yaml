@@ -14,10 +14,13 @@ cards:
 - slug: rp-por-generalklausel
   type: norm
   front: Wo steht die polizeiliche Generalklausel in Rheinland-Pfalz und was setzt sie voraus?
-  back: 'Fundstelle: § 9 Abs. 1 POG RP. Die Generalklausel ermaechtigt zu den notwendigen Massnahmen,
-    um eine im Einzelfall bestehende Gefahr fuer die oeffentliche Sicherheit oder Ordnung abzuwehren.
-    Sie ist subsidiaer: Greift eine Standardmassnahme oder ein Spezialgesetz, geht dieses vor. Auf der
-    Rechtsfolgenseite besteht Ermessen, begrenzt durch den Grundsatz der Verhaeltnismaessigkeit.'
+  back: 'Fundstelle: § 9 Abs. 1 POG RP. Die Generalklausel ermächtigt zu den notwendigen Maßnahmen, um
+    eine im Einzelfall bestehende Gefahr für die öffentliche Sicherheit oder Ordnung abzuwehren. Sie ist
+    subsidiär: Greift eine Standardmaßnahme oder ein Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite
+    besteht Ermessen, begrenzt durch den Grundsatz der Verhältnismäßigkeit. Zum Schutz privater Rechte
+    wird die Gefahrenabwehr nur subsidiär tätig: Ein Einschreiten kommt nur in Betracht, wenn gerichtlicher
+    Schutz nicht rechtzeitig zu erlangen ist und ohne die Maßnahme die Vereitelung oder wesentliche Erschwerung
+    der Rechtsverwirklichung droht.'
   norms:
   - § 9 Abs. 1 POG RP
   quellen:
@@ -26,13 +29,14 @@ cards:
   stand: 2026-09
 - slug: rp-por-aufbau
   type: schema_step
-  front: 'Aufbau: Rechtmaessigkeit einer Gefahrenabwehrmassnahme nach dem Landesrecht von Rheinland-Pfalz'
-  back: 'I. Ermaechtigungsgrundlage (Polizei- und Ordnungsbehoerdengesetz (POG RP): Standardmassnahme
-    vor Generalklausel). II. Formelle Rechtmaessigkeit: 1. Zustaendigkeit (sachlich: welche Behoerde -
-    Allgemeine Ordnungsbehoerden und Polizei nach § 1 POG; Polizei bei Eilbeduerftigkeit; oertlich; instanziell),
-    2. Verfahren (Anhoerung, § 28 VwVfG bzw. Landesrecht), 3. Form. III. Materielle Rechtmaessigkeit:
-    1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose ex ante), 2. richtiger Adressat (Stoerer:
-    §§ 4, 5, 7 POG RP), 3. Rechtsfolge: Ermessen und Verhaeltnismaessigkeit (geeignet, erforderlich, angemessen).'
+  front: 'Aufbau: Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Rheinland-Pfalz'
+  back: 'I. Ermächtigungsgrundlage (Polizei- und Ordnungsbehördengesetz (POG RP): Standardmaßnahme vor
+    Generalklausel). II. Formelle Rechtmäßigkeit: 1. Zuständigkeit (sachlich: welche Behörde - Allgemeine
+    Ordnungsbehörden und Polizei nach § 1 POG; Polizei bei Eilbedürftigkeit; örtlich; instanziell), 2.
+    Verfahren (Anhörung nach dem jeweiligen Landesverwaltungsverfahrensgesetz), 3. Form. III. Materielle
+    Rechtmäßigkeit: 1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose ex ante), 2. richtiger Adressat
+    (Störer: §§ 4, 5, 7 POG RP), 3. Rechtsfolge: Ermessen und Verhältnismäßigkeit (geeignet, erforderlich,
+    angemessen).'
   norms:
   - § 9 Abs. 1 POG RP
   - §§ 4, 5, 7 POG RP
@@ -42,12 +46,12 @@ cards:
   stand: 2026-09
 - slug: rp-por-stoerer
   type: norm
-  front: Wo sind Verhaltensstoerer, Zustandsstoerer und Nichtstoerer in Rheinland-Pfalz geregelt?
-  back: '§§ 4, 5, 7 POG RP. Verhaltensstoerer: wer die Gefahr durch sein Verhalten verursacht (Theorie
-    der unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstoerer: Inhaber der tatsaechlichen
-    Gewalt bzw. Eigentuemer einer gefaehrlichen Sache. Nichtstoerer: Inanspruchnahme nur unter den engen
-    Voraussetzungen des polizeilichen Notstands (gegenwaertige erhebliche Gefahr, Stoerer nicht greifbar,
-    Behoerde selbst nicht in der Lage), mit Entschaedigungsanspruch.'
+  front: Wo sind Verhaltensstörer, Zustandsstörer und Nichtstörer in Rheinland-Pfalz geregelt?
+  back: '§§ 4, 5, 7 POG RP. Verhaltensstörer: wer die Gefahr durch sein Verhalten verursacht (Theorie
+    der unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer: Inhaber der tatsächlichen
+    Gewalt bzw. Eigentümer einer gefährlichen Sache. Nichtstörer: Inanspruchnahme nur unter den engen
+    Voraussetzungen des polizeilichen Notstands (gegenwärtige erhebliche Gefahr, Störer nicht greifbar,
+    Behörde selbst nicht in der Lage), mit Entschädigungsanspruch.'
   norms:
   - §§ 4, 5, 7 POG RP
   quellen:
@@ -56,25 +60,25 @@ cards:
   stand: 2026-09
 - slug: rp-por-zustaendigkeit
   type: definition
-  front: Wer ist in Rheinland-Pfalz fuer die Gefahrenabwehr zustaendig - Ordnungs-/Sicherheitsbehoerde
-    oder Polizei?
-  back: 'Allgemeine Ordnungsbehoerden und Polizei nach § 1 POG; Polizei bei Eilbeduerftigkeit. Pruefungsrelevant
-    ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsaetzlich bei den Verwaltungs-/Ordnungsbehoerden;
-    der Polizeivollzugsdienst wird taetig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine
-    besondere Zuweisung besteht. Ein Handeln der unzustaendigen Behoerde macht die Massnahme formell rechtswidrig.'
+  front: Wer ist in Rheinland-Pfalz für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde oder
+    Polizei?
+  back: 'Allgemeine Ordnungsbehörden und Polizei nach § 1 POG; Polizei bei Eilbedürftigkeit. Prüfungsrelevant
+    ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich bei den Verwaltungs-/Ordnungsbehörden;
+    der Polizeivollzugsdienst wird tätig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere
+    Zuweisung besteht. Ein Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig.'
   norms:
-  - Polizei- und Ordnungsbehoerdengesetz (POG RP)
+  - Polizei- und Ordnungsbehördengesetz (POG RP)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: rp-por-vollstreckung
   type: norm
-  front: Nach welchem Gesetz wird eine Gefahrenabwehrverfuegung in Rheinland-Pfalz vollstreckt?
-  back: 'Landesverwaltungsvollstreckungsgesetz (LVwVG RP). Regelfall ist das gestreckte Verfahren: Grundverfuegung
+  front: Nach welchem Gesetz wird eine Gefahrenabwehrverfügung in Rheinland-Pfalz vollstreckt?
+  back: 'Landesverwaltungsvollstreckungsgesetz (LVwVG RP). Regelfall ist das gestreckte Verfahren: Grundverfügung
     - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme, Zwangsgeld, unmittelbarer
-    Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausfuehrung ohne vorausgehenden
-    Verwaltungsakt moeglich; die Kosten traegt der Pflichtige.'
+    Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausführung ohne vorausgehenden Verwaltungsakt
+    möglich; die Kosten trägt der Pflichtige.'
   norms:
   - Landesverwaltungsvollstreckungsgesetz (LVwVG RP)
   quellen:

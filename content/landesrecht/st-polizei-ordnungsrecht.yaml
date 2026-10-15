@@ -14,10 +14,13 @@ cards:
 - slug: st-por-generalklausel
   type: norm
   front: Wo steht die polizeiliche Generalklausel in Sachsen-Anhalt und was setzt sie voraus?
-  back: 'Fundstelle: § 13 SOG LSA. Die Generalklausel ermaechtigt zu den notwendigen Massnahmen, um eine
-    im Einzelfall bestehende Gefahr fuer die oeffentliche Sicherheit oder Ordnung abzuwehren. Sie ist
-    subsidiaer: Greift eine Standardmassnahme oder ein Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite
-    besteht Ermessen, begrenzt durch den Grundsatz der Verhaeltnismaessigkeit.'
+  back: 'Fundstelle: § 13 SOG LSA. Die Generalklausel ermächtigt zu den notwendigen Maßnahmen, um eine
+    im Einzelfall bestehende Gefahr für die öffentliche Sicherheit oder Ordnung abzuwehren. Sie ist subsidiär:
+    Greift eine Standardmaßnahme oder ein Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite besteht
+    Ermessen, begrenzt durch den Grundsatz der Verhältnismäßigkeit. Zum Schutz privater Rechte wird die
+    Gefahrenabwehr nur subsidiär tätig: Ein Einschreiten kommt nur in Betracht, wenn gerichtlicher Schutz
+    nicht rechtzeitig zu erlangen ist und ohne die Maßnahme die Vereitelung oder wesentliche Erschwerung
+    der Rechtsverwirklichung droht.'
   norms:
   - § 13 SOG LSA
   quellen:
@@ -26,14 +29,14 @@ cards:
   stand: 2026-09
 - slug: st-por-aufbau
   type: schema_step
-  front: 'Aufbau: Rechtmaessigkeit einer Gefahrenabwehrmassnahme nach dem Landesrecht von Sachsen-Anhalt'
-  back: 'I. Ermaechtigungsgrundlage (Gesetz ueber die oeffentliche Sicherheit und Ordnung des Landes Sachsen-Anhalt
-    (SOG LSA): Standardmassnahme vor Generalklausel). II. Formelle Rechtmaessigkeit: 1. Zustaendigkeit
-    (sachlich: welche Behoerde - Sicherheitsbehoerden und Polizei nach dem SOG LSA; Polizei bei Eilbeduerftigkeit;
-    oertlich; instanziell), 2. Verfahren (Anhoerung, § 28 VwVfG bzw. Landesrecht), 3. Form. III. Materielle
-    Rechtmaessigkeit: 1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose ex ante), 2. richtiger
-    Adressat (Stoerer: §§ 7, 8, 10 SOG LSA), 3. Rechtsfolge: Ermessen und Verhaeltnismaessigkeit (geeignet,
-    erforderlich, angemessen).'
+  front: 'Aufbau: Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Sachsen-Anhalt'
+  back: 'I. Ermächtigungsgrundlage (Gesetz über die öffentliche Sicherheit und Ordnung des Landes Sachsen-Anhalt
+    (SOG LSA): Standardmaßnahme vor Generalklausel). II. Formelle Rechtmäßigkeit: 1. Zuständigkeit (sachlich:
+    welche Behörde - Sicherheitsbehörden und Polizei nach dem SOG LSA; Polizei bei Eilbedürftigkeit; örtlich;
+    instanziell), 2. Verfahren (Anhörung nach dem jeweiligen Landesverwaltungsverfahrensgesetz), 3. Form.
+    III. Materielle Rechtmäßigkeit: 1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose ex ante),
+    2. richtiger Adressat (Störer: §§ 7, 8, 10 SOG LSA), 3. Rechtsfolge: Ermessen und Verhältnismäßigkeit
+    (geeignet, erforderlich, angemessen).'
   norms:
   - § 13 SOG LSA
   - §§ 7, 8, 10 SOG LSA
@@ -43,12 +46,12 @@ cards:
   stand: 2026-09
 - slug: st-por-stoerer
   type: norm
-  front: Wo sind Verhaltensstoerer, Zustandsstoerer und Nichtstoerer in Sachsen-Anhalt geregelt?
-  back: '§§ 7, 8, 10 SOG LSA. Verhaltensstoerer: wer die Gefahr durch sein Verhalten verursacht (Theorie
-    der unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstoerer: Inhaber der tatsaechlichen
-    Gewalt bzw. Eigentuemer einer gefaehrlichen Sache. Nichtstoerer: Inanspruchnahme nur unter den engen
-    Voraussetzungen des polizeilichen Notstands (gegenwaertige erhebliche Gefahr, Stoerer nicht greifbar,
-    Behoerde selbst nicht in der Lage), mit Entschaedigungsanspruch.'
+  front: Wo sind Verhaltensstörer, Zustandsstörer und Nichtstörer in Sachsen-Anhalt geregelt?
+  back: '§§ 7, 8, 10 SOG LSA. Verhaltensstörer: wer die Gefahr durch sein Verhalten verursacht (Theorie
+    der unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer: Inhaber der tatsächlichen
+    Gewalt bzw. Eigentümer einer gefährlichen Sache. Nichtstörer: Inanspruchnahme nur unter den engen
+    Voraussetzungen des polizeilichen Notstands (gegenwärtige erhebliche Gefahr, Störer nicht greifbar,
+    Behörde selbst nicht in der Lage), mit Entschädigungsanspruch.'
   norms:
   - §§ 7, 8, 10 SOG LSA
   quellen:
@@ -57,25 +60,25 @@ cards:
   stand: 2026-09
 - slug: st-por-zustaendigkeit
   type: definition
-  front: Wer ist in Sachsen-Anhalt fuer die Gefahrenabwehr zustaendig - Ordnungs-/Sicherheitsbehoerde
-    oder Polizei?
-  back: 'Sicherheitsbehoerden und Polizei nach dem SOG LSA; Polizei bei Eilbeduerftigkeit. Pruefungsrelevant
-    ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsaetzlich bei den Verwaltungs-/Ordnungsbehoerden;
-    der Polizeivollzugsdienst wird taetig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine
-    besondere Zuweisung besteht. Ein Handeln der unzustaendigen Behoerde macht die Massnahme formell rechtswidrig.'
+  front: Wer ist in Sachsen-Anhalt für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde oder
+    Polizei?
+  back: 'Sicherheitsbehörden und Polizei nach dem SOG LSA; Polizei bei Eilbedürftigkeit. Prüfungsrelevant
+    ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich bei den Verwaltungs-/Ordnungsbehörden;
+    der Polizeivollzugsdienst wird tätig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere
+    Zuweisung besteht. Ein Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig.'
   norms:
-  - Gesetz ueber die oeffentliche Sicherheit und Ordnung des Landes Sachsen-Anhalt (SOG LSA)
+  - Gesetz über die öffentliche Sicherheit und Ordnung des Landes Sachsen-Anhalt (SOG LSA)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: st-por-vollstreckung
   type: norm
-  front: Nach welchem Gesetz wird eine Gefahrenabwehrverfuegung in Sachsen-Anhalt vollstreckt?
+  front: Nach welchem Gesetz wird eine Gefahrenabwehrverfügung in Sachsen-Anhalt vollstreckt?
   back: 'Verwaltungsvollstreckungsgesetz Sachsen-Anhalt (VwVG LSA); Zwang nach SOG LSA. Regelfall ist
-    das gestreckte Verfahren: Grundverfuegung - Androhung - Festsetzung - Anwendung des Zwangsmittels
-    (Ersatzvornahme, Zwangsgeld, unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare
-    Ausfuehrung ohne vorausgehenden Verwaltungsakt moeglich; die Kosten traegt der Pflichtige.'
+    das gestreckte Verfahren: Grundverfügung - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme,
+    Zwangsgeld, unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausführung
+    ohne vorausgehenden Verwaltungsakt möglich; die Kosten trägt der Pflichtige.'
   norms:
   - Verwaltungsvollstreckungsgesetz Sachsen-Anhalt (VwVG LSA)
   - Zwang nach SOG LSA

@@ -13,14 +13,14 @@ topic:
 cards:
 - slug: be-lra-vwvfg
   type: norm
-  front: Welches Verwaltungsverfahrensgesetz gilt fuer Landesbehoerden in Berlin?
-  back: Gesetz ueber das Verfahren der Berliner Verwaltung (VwVfG Bln) - Verweisung auf das VwVfG des
-    Bundes (§ 1 VwVfG Bln). Das VwVfG des Bundes gilt nur fuer Bundesbehoerden (§ 1 VwVfG); fuer Landes-
-    und Kommunalbehoerden ist das Landesgesetz massgeblich. Bei Verweisungsgesetzen werden die Bundesnormen
-    'entsprechend' angewendet und sind so zu zitieren (z. B. '§ 35 VwVfG i. V. m. § 1 des Landesgesetzes'),
-    bei Vollgesetzen ist die Landesnorm selbst zu zitieren.
+  front: Welches Verwaltungsverfahrensgesetz gilt für Landesbehörden in Berlin?
+  back: Gesetz über das Verfahren der Berliner Verwaltung (VwVfG Bln) - Verweisung auf das VwVfG des Bundes
+    (§ 1 VwVfG Bln). Das VwVfG des Bundes gilt nur für Bundesbehörden (§ 1 VwVfG); für Landes- und Kommunalbehörden
+    ist das Landesgesetz maßgeblich. Bei Verweisungsgesetzen werden die Bundesnormen 'entsprechend' angewendet
+    und sind so zu zitieren (z. B. '§ 35 VwVfG i. V. m. § 1 des Landesgesetzes'), bei Vollgesetzen ist
+    die Landesnorm selbst zu zitieren.
   norms:
-  - Gesetz ueber das Verfahren der Berliner Verwaltung (VwVfG Bln) - Verweisung auf das VwVfG des Bundes
+  - Gesetz über das Verfahren der Berliner Verwaltung (VwVfG Bln) - Verweisung auf das VwVfG des Bundes
     (§ 1 VwVfG Bln)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -29,9 +29,9 @@ cards:
 - slug: be-lra-verfassungsgericht
   type: norm
   front: Gibt es in Berlin eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
-  back: 'Ja - § 49 VerfGHG Bln. Zustaendiges Gericht: Verfassungsgerichtshof des Landes Berlin auf Grundlage
+  back: 'Ja - § 49 VerfGHG Bln. Zuständiges Gericht: Verfassungsgerichtshof des Landes Berlin auf Grundlage
     der Verfassung von Berlin (VvB). Verfahrensgegenstand ist nur die Verletzung von Landesgrundrechten
-    durch Landesstaatsgewalt; Bundesrecht ist Pruefungsmassstab nur, soweit die Landesverfassung darauf
+    durch Landesstaatsgewalt; Bundesrecht ist Prüfungsmaßstab nur, soweit die Landesverfassung darauf
     verweist. Daneben steht immer die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
   norms:
   - Verfassung von Berlin (VvB)
@@ -41,27 +41,32 @@ cards:
   stand: 2026-09
 - slug: be-lra-kommunalverfassung
   type: norm
-  front: Welches Gesetz regelt die Kommunalverfassung in Berlin und welche Hauptorgane hat die Gemeinde?
-  back: 'Bezirksverwaltungsgesetz (BezVG): Bezirksverordnetenversammlung und Bezirksamt - keine Gemeinden.
-    Grundlage ist die Selbstverwaltungsgarantie (Art. 28 Abs. 2 GG und Landesverfassung): eigenverantwortliche
-    Regelung aller Angelegenheiten der oertlichen Gemeinschaft. Klausurklassiker: Zustaendigkeitsstreit
-    zwischen Vertretung und Verwaltungsspitze, Kommunalverfassungsstreit, Rechtsaufsicht.'
+  front: Wie ist die Verwaltung in Berlin organisiert - gibt es Gemeinden im Sinne des Art. 28 Abs. 2
+    GG und eine Kommunalaufsicht?
+  back: 'Berlin ist Einheitsgemeinde: Land und Gemeinde sind identisch, eine Kommunalverfassung im Sinne
+    der Flächenländer gibt es nicht. Die Bezirke sind keine Gemeinden, sondern Verwaltungseinheiten des
+    Landes ohne eigene Rechtspersönlichkeit; sie genießen keine Selbstverwaltungsgarantie nach Art. 28
+    Abs. 2 GG. Grundlage ist das Bezirksverwaltungsgesetz (BezVG): Organe sind die Bezirksverordnetenversammlung
+    (BVV) und das Bezirksamt. Statt der Kommunalaufsicht besteht die Bezirksaufsicht durch den Senat.
+    Klausurrelevant: Streitigkeiten zwischen Bezirk und Land sind keine kommunalrechtlichen Streitigkeiten
+    nach Art. 28 Abs. 2 GG, sondern Fragen der landesinternen Organisation.'
   norms:
-  - 'Bezirksverwaltungsgesetz (BezVG): Bezirksverordnetenversammlung und Bezirksamt - keine Gemeinden'
+  - Verfassung von Berlin (VvB)
+  - Bezirksverwaltungsgesetz (BezVG)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: be-lra-bauordnung
   type: norm
-  front: Wie heisst die Bauordnung in Berlin und wie ist eine Baugenehmigung zu pruefen?
-  back: 'Bauordnung fuer Berlin (BauO Bln). Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben keine
-    oeffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungs-beduerftigkeit (Errichtung, Aenderung,
-    Nutzungsaenderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulaessigkeit nach §§ 29 ff.
-    BauGB (Bundesrecht), bauordnungsrechtliche Zulaessigkeit nach der Landesbauordnung (Abstandsflaechen,
-    Gestaltung, Stellplaetze).'
+  front: Wie heißt die Bauordnung in Berlin und wie ist eine Baugenehmigung zu prüfen?
+  back: 'Bauordnung für Berlin (BauO Bln). Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben keine
+    öffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungsbedürftigkeit (Errichtung, Änderung,
+    Nutzungsänderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulässigkeit nach §§ 29 ff. BauGB
+    (Bundesrecht), bauordnungsrechtliche Zulässigkeit nach der Landesbauordnung (Abstandsflächen, Gestaltung,
+    Stellplätze).'
   norms:
-  - Bauordnung fuer Berlin (BauO Bln)
+  - Bauordnung für Berlin (BauO Bln)
   - §§ 29 ff. BauGB
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -69,11 +74,11 @@ cards:
   stand: 2026-09
 - slug: be-lra-pflichtstoff
   type: definition
-  front: Welche Landesrechtsgebiete gehoeren in Berlin zum Pflichtstoff des Oeffentlichen Rechts?
+  front: Welche Landesrechtsgebiete gehören in Berlin zum Pflichtstoff des Öffentlichen Rechts?
   back: Ordnungsrecht (ASOG); Bezirksverwaltung statt Kommunalrecht; Bauordnungsrecht (BauO Bln); Verfassung
     von Berlin. Landesrecht wird im Examen fast nie isoliert, sondern eingebettet in eine verwaltungsprozessuale
-    Einkleidung (Anfechtungs-/Verpflichtungsklage, vorlaeufiger Rechtsschutz) geprueft - die Landesnorm
-    ist die Ermaechtigungsgrundlage, der Aufbau bleibt der allgemeine.
+    Einkleidung (Anfechtungs-/Verpflichtungsklage, vorläufiger Rechtsschutz) geprüft - die Landesnorm
+    ist die Ermächtigungsgrundlage, der Aufbau bleibt der allgemeine.
   norms: []
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
