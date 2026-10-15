@@ -262,6 +262,10 @@ faelle:
       - physisch-reale Handlungsmöglichkeit
       - Handlungsmöglichkeit bestand
       - hätte retten können
+      - hätte sie selbst eingreifen
+      - Rettungsschwimmer alarmieren
+      - Handlungsmöglichkeit
+      - tatsächlich in der Lage
       card_slugs:
       - sr-unterlassen-voraussetzungen
     - id: p4
@@ -305,6 +309,9 @@ faelle:
       - Garantenstellungsvorsatz
       - Vorsatz bezüglich
       - Vorsatz hinsichtlich
+      - erkannter Lebensgefahr
+      - trotz erkannter Lebensgefahr
+      - Tatbestandsvorsatz
     - id: p8
       label: 'Ergebnis: Totschlag durch Unterlassen, §§ 212 Abs. 1, 13 StGB'
       weight: 1.0

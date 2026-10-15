@@ -236,6 +236,10 @@ faelle:
       - nicht hinweggedacht werden
       - Äquivalenztheorie
       - kausal für den Tod
+      - wäre B nicht ins Krankenhaus gekommen
+      - hätte A den Unfall nicht verursacht
+      - äquivalent kausal
+      - Unfall hinweggedacht
       card_slugs:
       - sr-at-kausalitaet
     - id: p2
@@ -248,6 +252,9 @@ faelle:
       keywords:
       - rechtlich missbilligte Gefahr
       - missbilligte Gefahr geschaffen
+      - rechtlich missbilligte Gefahr für Leib und Leben
+      - missbilligte Gefahr
+      - Verkehrsunfall begründet eine Gefahr
     - id: p3
       label: Atypischer Kausalverlauf durch die grob fehlerhafte Medikamentenverwechslung
         erkannt und begründet
@@ -258,6 +265,11 @@ faelle:
       - völlig außergewöhnlich
       - außerhalb jeder Lebenserfahrung
       - nicht mehr vom Risiko des Unfalls erfasst
+      - außergewöhnlichen Kausalverlauf
+      - grob fehlerhafte Medikamentenverwechslung
+      - eigenständiger Kausalverlauf
+      - außergewöhnlich
+      - atypisch
       card_slugs:
       - sr-zurechnung-atypischer-kausalverlauf
     - id: p4
@@ -270,6 +282,10 @@ faelle:
       - realisiert sich nicht
       - Gefahrzusammenhang
       - eigenständige Gefahrenquelle
+      - realisiert sich
+      - Behandlungsrisiko
+      - neues Behandlungsrisiko
+      - nicht mehr das vom Unfall ausgehende
       card_slugs:
       - sr-zurechnung-schutzzweck-der-norm
     - id: p5
@@ -281,6 +297,10 @@ faelle:
       - objektive Zurechnung entfällt
       - objektive Zurechnung scheidet aus
       - Zurechnung ist zu verneinen
+      - objektiv nicht zurechenbar
+      - Tod des B ist A objektiv nicht zurechenbar
+      - Zurechnung entfällt
+      - nicht zurechenbar
       card_slugs:
       - sr-zurechnung-atypischer-kausalverlauf
     - id: p6
@@ -293,5 +313,6 @@ faelle:
       keywords:
       - § 229
       - fahrlässige Körperverletzung
+      - 'Körperverletzung, § 229'
       card_slugs:
       - sr-fahrlaessigkeit-begriff

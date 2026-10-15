@@ -198,9 +198,10 @@ faelle:
       - § 240 Abs. 1 StGB
       keywords:
       - körperlich vermittelte Zwangswirkung
-      - Gewaltbegriff
       - vergeistigter Gewaltbegriff
       - Zwangswirkung
+      - körperliche Anwesenheit
+      - körperlich vermittelte
       card_slugs:
       - sr-noetigung-gewaltbegriff
     - id: p2
@@ -209,7 +210,9 @@ faelle:
       required: false
       keywords:
       - Nötigungserfolg
-      - Handlung, Duldung oder Unterlassung
+      - 'Handlung, Duldung oder Unterlassung'
+      - unterlässt die Weiterfahrt
+      - dazu gezwungen
       card_slugs:
       - sr-noetigung-noetigungserfolg
     - id: p3
@@ -221,6 +224,9 @@ faelle:
       keywords:
       - Verwerflichkeit
       - § 240 Abs. 2 StGB
+      - überwiegt regelmäßig das Interesse
+      - ungehinderter Fortbewegung
+      - Protestanliegen
       card_slugs:
       - sr-noetigung-verwerflichkeit
     - id: p4
@@ -234,6 +240,8 @@ faelle:
       - psychisch vermittelte Zwangswirkung
       - keine Gewalt gegenüber N
       - Zweite-Reihe-Rechtsprechung
+      - psychisch vermittelt
+      - nur psychisch vermittelte Zwangswirkung
       card_slugs:
       - sr-noetigung-gewaltbegriff
       - sr-noetigung-sitzblockade-zweite-reihe
@@ -257,3 +265,5 @@ faelle:
       - strafbar gegenüber F
       - nicht strafbar gegenüber N
       - Nötigung gegenüber F
+      - gegenüber F wegen Nötigung
+      - mangels Gewalt dagegen nicht
