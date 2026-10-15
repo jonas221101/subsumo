@@ -38,6 +38,10 @@ _ABBREVIATIONS = [
     "e.A.", "m.M.", "st.Rspr.", "Rspr.", "Lit.", "Az.", "Rn.", "Ls.", "Urt.",
     "Beschl.", "v.", "ff.", "f.", "Nrn.", "Buchst.", "Anm.", "Fn.", "Bd.",
 ]
+_DATUM_TAG = re.compile(
+    r"\b(\d{1,2})\.(?=\s+(?:Januar|Februar|März|April|Mai|Juni|Juli|August|September"
+    r"|Oktober|November|Dezember)\b)"
+)
 _SENTENCE_END = re.compile(r"(?<=[.!?])\s+(?=[A-ZÄÖÜ§„\"(])")
 
 
@@ -48,6 +52,9 @@ def split_sentences(text: str) -> list[str]:
         guarded = guarded.replace(abbr, f"\x00{i}\x00")
     # "§ 823 I 1" oder "Art. 2 I" - ein Punkt zwischen Ziffern ist kein Satzende.
     guarded = re.sub(r"(\d)\.(\s*\d)", "\\1\x01\\2", guarded)
+    # "am 1. April" - der Punkt nach einer Tageszahl vor einem Monatsnamen ist
+    # kein Satzende (Nutzertest 2026-10-15: Fristen in Faellen zerfielen).
+    guarded = _DATUM_TAG.sub("\\1\x01", guarded)
 
     parts = [p.strip() for p in _SENTENCE_END.split(guarded) if p.strip()]
 

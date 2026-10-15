@@ -200,3 +200,12 @@ def test_report_ist_json_serialisierbar():
     import json
 
     json.dumps(analyze(SAUBER).to_dict())
+
+
+def test_datum_mit_monatsname_ist_kein_satzende():
+    from app.services.gutachten import split_sentences
+
+    assert split_sentences("Die Lieferung sollte am 1. April 2026 erfolgen. Danach trat K zurück.") == [
+        "Die Lieferung sollte am 1. April 2026 erfolgen.",
+        "Danach trat K zurück.",
+    ]
