@@ -746,7 +746,7 @@ class _ResultView extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            '${evaluation['points']} Punkte · ${evaluation['note']}',
+            '${_punkteText(evaluation['points'])} Punkte · ${evaluation['note']}',
             style: theme.textTheme.headlineSmall,
           ),
           if (showEngine) ...[
@@ -949,4 +949,13 @@ String _oerPlatzhalter(String? question, String? facts) {
     return '$text ist rechtmäßig, wenn ...';
   }
   return 'Die Klage hat Erfolg, wenn sie zulässig und begründet ist.';
+}
+
+
+/// "3.5" -> "3,5", "11.0" -> "11" (deutsche Schreibweise der Punktzahl).
+String _punkteText(Object? points) {
+  final n = points is num ? points : num.tryParse('$points');
+  if (n == null) return '$points';
+  if (n == n.roundToDouble()) return n.round().toString();
+  return n.toString().replaceAll('.', ',');
 }
