@@ -145,6 +145,49 @@ def test_forecast_load_verteilt_karten_auf_tagesbuckets():
         CardState(stability=1, difficulty=5, due=T0 + timedelta(days=99), last_review=T0),
     ]
     buckets = forecast_load(states, days=7, now=T0)
-    assert buckets[0] == 2  # heute faellig + in 5 Stunden
+    assert buckets[0] == 1  # Tag 0 = bereits faellig (== /cards/due)
+    assert buckets[1] == 1  # in 5 Stunden: im Fenster (0, 1 d]
     assert buckets[2] == 1
     assert sum(buckets) == 3  # die Karte in 99 Tagen faellt aus dem Fenster
+
+
+def test_lernschritte_gut_nach_nochmal_bleibt_im_relearning():
+    """Regression: Gut nach Nochmal sprang direkt auf +1 Tag."""
+    card = mature(stability=50.0)
+    at = T0 + timedelta(days=50)
+    st = review(card, Rating.AGAIN, now=at)
+    assert st.state == State.RELEARNING
+    st2 = review(st, Rating.GOOD, now=st.due)
+    # RELEARNING_STEPS_MIN hat einen Schritt -> Gut schliesst ihn ab.
+    assert st2.state == State.REVIEW
+    # Schwer wiederholt den Schritt statt zu graduieren (war: +7 Tage).
+    st3 = review(st, Rating.HARD, now=st.due)
+    assert st3.state == State.RELEARNING
+    assert st3.due - st.due == timedelta(minutes=10)
+    assert st3.lapses == 1  # Schritt-Wiederholung ist kein weiterer Lapse
+
+
+def test_lernschritt_index_wird_fortgeschrieben_und_gut_graduiert_erst_am_ende():
+    st = review(CardState(), Rating.AGAIN, now=T0)
+    assert (st.state, st.step) == (State.LEARNING, 0)
+    st = review(st, Rating.GOOD, now=st.due)
+    assert (st.state, st.step) == (State.LEARNING, 1)
+    assert st.due - st.last_review == timedelta(minutes=10)
+    # Schwer auf Schritt 1 bleibt auf Schritt 1.
+    hart = review(st, Rating.HARD, now=st.due)
+    assert (hart.state, hart.step) == (State.LEARNING, 1)
+    # Nochmal setzt zurueck, ohne Lapse bei einer Lernkarte.
+    neu = review(st, Rating.AGAIN, now=st.due)
+    assert (neu.state, neu.step, neu.lapses) == (State.LEARNING, 0, 0)
+    fertig = review(st, Rating.GOOD, now=st.due)
+    assert fertig.state == State.REVIEW
+    assert fertig.due - fertig.last_review >= timedelta(days=1)
+
+
+def test_forecast_load_tag_null_ist_exakt_die_faellige_menge():
+    states = [
+        CardState(stability=1, difficulty=5, due=T0 - timedelta(days=3), last_review=T0),
+        CardState(stability=1, difficulty=5, due=T0, last_review=T0),
+        CardState(stability=1, difficulty=5, due=T0 + timedelta(seconds=1), last_review=T0),
+    ]
+    assert forecast_load(states, days=3, now=T0) == [2, 1, 0]

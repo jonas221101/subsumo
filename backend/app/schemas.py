@@ -111,8 +111,10 @@ class CaseOut(CaseSummaryOut):
 class ReviewIn(BaseModel):
     client_id: str = Field(min_length=8, max_length=64)
     card_slug: str
-    rating: int = Field(ge=1, le=4)
+    # strict: true/"3" sind keine Bewertungen.
+    rating: int = Field(ge=1, le=4, strict=True)
     reviewed_at: datetime
+    # Wird serverseitig auf 0..10 Minuten geklemmt (siehe learn.submit_reviews).
     elapsed_ms: int = 0
 
 
@@ -133,6 +135,8 @@ class ReviewBatchOut(BaseModel):
     duplicates: int
     unknown_cards: list[str] = []
     results: list[ReviewResultOut] = []
+    # Anzahl Eintraege, deren reviewed_at ausserhalb [jetzt-7d, jetzt+5min] lag.
+    clamped: int = 0
 
 
 class AnalyzeIn(BaseModel):

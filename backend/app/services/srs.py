@@ -23,6 +23,12 @@ from enum import IntEnum
 
 # FSRS-4.5 Standardgewichte. Spaeter pro Nutzer aus dem eigenen Review-Verlauf
 # optimierbar (Backlog M4).
+# Bewusst unveraendert: w[0..3] sind die FSRS-Anfangsstabilitaeten in Tagen
+# (Nochmal 0.5, Schwer 1.4, Gut 3.7, Leicht 13.8). Daher ~4 Tage nach "Gut"
+# bzw. ~14 Tage nach "Leicht" einer neuen Karte - das ist FSRS-Standard bei
+# 90 % Ziel-Retention und kein Fehler, sondern gegenueber Anki-SM-2 (1 bzw.
+# 4 Tage) der Effizienzgewinn von FSRS. Wer vorsichtiger lernen will, hebt die
+# Ziel-Retention im Lernprofil an (Sicherheitsniveau, docs/33 Abschnitt 4.3).
 DEFAULT_WEIGHTS: tuple[float, ...] = (
     0.4872, 1.4003, 3.7145, 13.8206, 5.1618, 1.2298, 0.8975, 0.0310, 1.6474,
     0.1367, 1.0461, 2.1072, 0.0793, 0.3246, 1.5870, 0.2272, 2.8755,
@@ -169,40 +175,62 @@ def review(
         desired_retention = DESIRED_RETENTION_BY_TYPE.get(card_type or "", DEFAULT_RETENTION)
     w = weights
 
+    in_steps = state.state in (State.LEARNING, State.RELEARNING)
+
     if state.is_new:
         stability = _initial_stability(rating, w)
         difficulty = _initial_difficulty(rating, w)
-        new_state = State.REVIEW if rating == Rating.EASY else State.LEARNING
+    elif in_steps:
+        # Innerhalb der Lernschritte aendert sich das Gedaechtnismodell nicht:
+        # Minuten spaeter ist r ~ 1, ein Lapse ist es auch nicht (Anki/FSRS).
+        stability = state.stability
+        difficulty = state.difficulty
     else:
         r = retrievability(state, now)
         difficulty = _next_difficulty(state.difficulty, rating, w)
         if rating == Rating.AGAIN:
             stability = _stability_after_lapse(state.stability, difficulty, r, w)
-            new_state = State.RELEARNING
         else:
             stability = _stability_after_recall(state.stability, difficulty, r, rating, w)
-            new_state = State.REVIEW
 
-    # Kurzfristige Lernschritte: erst wenn sie durchlaufen sind, wechselt die
-    # Karte in den Tagesrhythmus.
-    if new_state in (State.LEARNING, State.RELEARNING) and rating != Rating.EASY:
-        steps = LEARNING_STEPS_MIN if new_state == State.LEARNING else RELEARNING_STEPS_MIN
-        idx = state.step if state.state == new_state else 0
-        idx = 0 if rating == Rating.AGAIN else idx + 1
+    # Lernschritt-Automat (Anki-Verhalten): Nochmal -> zurueck auf Schritt 0,
+    # Schwer -> Schritt wiederholen, Gut -> naechster Schritt, Leicht -> sofort
+    # raus. Erst nach dem letzten Schritt wechselt die Karte in den Tagesrhythmus.
+    if state.is_new:
+        step_state, idx = State.LEARNING, 0
+    elif in_steps:
+        step_state, idx = state.state, state.step
+    else:
+        step_state, idx = State.RELEARNING, 0  # nur bei AGAIN relevant
+
+    lapse = rating == Rating.AGAIN and state.state == State.REVIEW
+    if rating == Rating.AGAIN:
+        idx = 0
+        stays = True
+        in_learning = state.state in (State.NEW, State.LEARNING)
+        step_state = State.LEARNING if in_learning else State.RELEARNING
+    elif rating == Rating.HARD:
+        stays = state.is_new or in_steps
+    elif rating == Rating.GOOD:
+        stays = state.is_new or in_steps
+        idx += 1
+    else:  # EASY
+        stays = False
+
+    if stays:
+        steps = LEARNING_STEPS_MIN if step_state == State.LEARNING else RELEARNING_STEPS_MIN
         if idx < len(steps):
-            due = now + timedelta(minutes=steps[idx])
             return replace(
                 state,
                 stability=stability,
                 difficulty=difficulty,
-                due=due,
+                due=now + timedelta(minutes=steps[idx]),
                 last_review=now,
                 reps=state.reps + 1,
-                lapses=state.lapses + (1 if rating == Rating.AGAIN and not state.is_new else 0),
-                state=new_state,
+                lapses=state.lapses + (1 if lapse else 0),
+                state=step_state,
                 step=idx,
             )
-        new_state = State.REVIEW
 
     days = _clamp(
         round(interval_for_retention(stability, desired_retention)),
@@ -216,8 +244,8 @@ def review(
         due=now + timedelta(days=days),
         last_review=now,
         reps=state.reps + 1,
-        lapses=state.lapses + (1 if rating == Rating.AGAIN and not state.is_new else 0),
-        state=new_state,
+        lapses=state.lapses + (1 if lapse else 0),
+        state=State.REVIEW,
         step=0,
     )
 
@@ -243,6 +271,10 @@ def rebuild_from_reviews(
 def forecast_load(states: list[CardState], days: int, *, now: datetime | None = None) -> list[int]:
     """Anzahl faelliger Karten je Tag fuer die naechsten ``days`` Tage.
 
+    Tag 0 = bereits faellig (``due <= now``) - exakt die Menge, die
+    ``/cards/due`` ausliefert. Tag ``i >= 1`` = faellig im Fenster
+    ``(now + (i-1) d, now + i d]``.
+
     Grundlage fuer das Load-Balancing im Lernplaner (Challenge 9): ein
     400-Karten-Rueckstand nach dem Urlaub ist der haeufigste Abbruchgrund.
     """
@@ -252,7 +284,7 @@ def forecast_load(states: list[CardState], days: int, *, now: datetime | None = 
         if st.due is None:
             continue
         offset = (st.due - now).total_seconds() / 86400.0
-        idx = max(0, math.floor(offset))
+        idx = 0 if offset <= 0 else math.ceil(offset)
         if idx < days:
             buckets[idx] += 1
     return buckets

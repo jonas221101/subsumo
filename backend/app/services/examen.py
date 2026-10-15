@@ -162,6 +162,48 @@ def topic_progress(
     return progress
 
 
+def visible_card_states(
+    db: Session, user: User, *, now: datetime | None = None
+) -> list[srs.CardState]:
+    """Kartenzustaende, die der Nutzer tatsaechlich zu sehen bekommt.
+
+    Gemeinsame Grundlage fuer ``/cards/due``-Zaehlung, Forecast, Lernplan und
+    Cockpit: nur sichtbare Themen (kein Landesrecht anderer Laender), keine
+    pausierten Themen. Karten mit geaendertem Inhalt gelten als sofort faellig
+    (``content_changed``), genau wie in ``/cards/due``.
+    """
+    now = now or datetime.now(UTC)
+    sichtbar = visible_topic_slugs(db, user) - lernprofil.pausierte_themen(
+        lernprofil.get_profil(user)
+    )
+    if not sichtbar:
+        return []
+    rows = (
+        db.query(UserCard)
+        .join(Card, Card.id == UserCard.card_id)
+        .filter(UserCard.user_id == user.id, Card.topic_slug.in_(sichtbar))
+        .all()
+    )
+    states: list[srs.CardState] = []
+    for uc in rows:
+        due = as_utc(uc.due)
+        if uc.content_changed and (due is None or due > now):
+            due = now
+        states.append(
+            srs.CardState(
+                stability=uc.stability,
+                difficulty=uc.difficulty,
+                due=due,
+                last_review=as_utc(uc.last_review),
+                reps=uc.reps,
+                lapses=uc.lapses,
+                state=uc.state,
+                step=uc.step or 0,
+            )
+        )
+    return states
+
+
 def topic_inputs(db: Session, user: User) -> list[TopicInput]:
     """Eingabe fuer :func:`app.services.planner.generate_plan` - nur sichtbare
     Themen, individuell gewichtet, pausierte Themen ausgenommen (docs/33)."""
@@ -179,6 +221,8 @@ def topic_inputs(db: Session, user: User) -> list[TopicInput]:
                 relevance=p.relevance,
                 mastery=p.mastery,
                 weight=weight,
+                cards_total=p.cards_total,
+                cards_started=p.cards_started,
             )
         )
     return inputs
