@@ -261,7 +261,8 @@ faelle:
       sich im Nachhinein keine echte Gefahr bestätigt habe?
     erwartung: Nein - für die Rechtmäßigkeitsbeurteilung ist die Ex-ante-Sicht eines
       pflichtgemäß handelnden Amtsträgers maßgeblich, nicht das später bekannt gewordene
-      tatsächliche Ergebnis. Der Einwand des R geht daher fehl.
+      tatsächliche Ergebnis. Der Einwand des R geht daher fehl;
+      die Maßnahme war insgesamt rechtmäßig.
   expectation:
     pruefpunkte:
     - id: p1
@@ -332,6 +333,9 @@ faelle:
       - Angemessenheit
       - hochrangige Rechtsgüter
       - Leben und Gesundheit
+      - erforderlich und angemessen
+      - bedrohten Rechtsgüter
+      - "geeignet, erforderlich"
       card_slugs:
       - or-sr-verhaeltnismaessigkeit-eingriffsgrundlage
     - id: p6
@@ -345,6 +349,8 @@ faelle:
       - späteres Ergebnis unerheblich
       - Einwand des R greift nicht
       - Einwand des R geht fehl
+      - Einwand des R geht daher fehl
+      - Ex-ante-Sicht eines pflichtgemäß handelnden Amtsträgers
       card_slugs:
       - or-sr-anscheinsgefahr
     - id: p7
@@ -356,3 +362,4 @@ faelle:
       - Maßnahme war rechtmäßig
       - Platzverweis war rechtmäßig
       - Maßnahme ist rechtmäßig
+      - insgesamt rechtmäßig

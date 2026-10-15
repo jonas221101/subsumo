@@ -231,7 +231,8 @@ faelle:
       Behörde hatte bereits im Vorfeld Gelegenheit zum Dialog, und die kooperative
       Haltung der Veranstalter hätte bei der Verhältnismäßigkeitsprüfung zugunsten
       mildererer Maßnahmen berücksichtigt werden müssen, statt die gesamte Kundgebung
-      ohne vorherige Ankündigung aufzulösen.'
+      ohne vorherige Ankündigung aufzulösen. Die Auflösung war rechtswidrig: Sie ist unverhältnismäßig
+      und mit Art. 8 Abs. 1 GG unvereinbar.'
   expectation:
     pruefpunkte:
     - id: p1
@@ -244,6 +245,10 @@ faelle:
       - Kollektivunfriedlichkeit
       - friedliche Mehrheit
       - Schutzbereich ist für die gesamte Versammlung eröffnet
+      - nicht kollektiv unfriedlich
+      - überwiegende Mehrheit
+      - verdrängt die Versammlung
+      - überwiegend friedlich
       card_slugs:
       - or-gr-art8-friedlich-ohne-waffen
     - id: p2

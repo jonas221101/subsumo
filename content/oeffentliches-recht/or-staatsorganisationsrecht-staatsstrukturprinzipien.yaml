@@ -356,7 +356,7 @@ faelle:
     pruefpunkte:
     - id: p1
       label: Rechtsstaatsprinzip aus Art. 20 Abs. 3 GG als Maßstab benannt und Art.
-        103 Abs. 2 GG als nicht einschlägig abgegrenzt
+        103 Abs. 2 GG als nicht einschlägig verneint
       weight: 1.0
       required: false
       norms:
@@ -423,10 +423,12 @@ faelle:
       norms:
       - Art. 20 Abs. 3 GG
       keywords:
-      - Übergangsregelung
       - kreditfinanzierte Investition
       - schutzwürdiges Vertrauen
       - Änderungsinteresse
+      - Härtefallklausel
+      - Bestandsinteresse
+      - besonders schutzwürdig
       card_slugs:
       - or-ssp-rueckwirkung-ausnahmen-abwaegung
       - or-gr-verhaeltnismaessigkeit
@@ -439,7 +441,6 @@ faelle:
       - Art. 14 Abs. 1 GG
       - Art. 2 Abs. 1 GG
       keywords:
-      - Eigenleistung
       - Art. 14 Abs. 1 GG
       - kein Eigentum
       - Art. 2 Abs. 1 GG

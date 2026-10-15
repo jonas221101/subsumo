@@ -163,7 +163,7 @@ faelle:
   steps:
   - prompt: Lag ein Anhörungsmangel vor?
     erwartung: Ja - § 28 Abs. 1 VwVfG (in Ländern mit eigenem Verwaltungsverfahrensgesetz
-      die entsprechende Landesnorm, z. B. Art. 28 Abs. 1 BayVwVfG) verlangt vor Erlass
+      die entsprechende Landesnorm, etwa Art. 28 Abs. 1 BayVwVfG) verlangt vor Erlass
       eines belastenden Verwaltungsakts Gelegenheit zur Äußerung; diese fehlte hier
       vollständig, eine Ausnahme nach § 28 Abs. 2 VwVfG ist nicht ersichtlich.
   - prompt: Kann der Mangel geheilt werden?
@@ -179,11 +179,12 @@ faelle:
   - prompt: Zu welchem Ergebnis führt das?
     erwartung: Der ursprüngliche Verfahrensfehler wurde durch Nachholung der Anhörung
       im Widerspruchsverfahren geheilt; der Bescheid ist in der Gestalt des Widerspruchsbescheids
-      formell rechtmäßig.
+      formell rechtmäßig. Zuständigkeit und Ermächtigungsgrundlage sind unproblematisch
+      gegeben (zuständige Ordnungsbehörde, einschlägige gewerberechtliche Ermächtigungsgrundlage).
   expectation:
     pruefpunkte:
     - id: p1
-      label: Anhörungsmangel nach § 28 Abs. 1 VwVfG erkannt, keine Ausnahme ersichtlich
+      label: Anhörungsmangel nach § 28 Abs. 1 VwVfG erkannt, Ausnahme nach § 28 Abs. 2 VwVfG verneint
       weight: 2.0
       required: true
       norms:

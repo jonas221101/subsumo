@@ -171,7 +171,8 @@ faelle:
   - prompt: Liegt Außenwirkung vor?
     erwartung: Ja - E ist als Grundstückseigentümer ein der Verwaltung nicht eingegliederter
       Außenstehender, der unmittelbar in seiner Rechtsstellung (Duldungspflicht) betroffen
-      wird.
+      wird. Die Maßnahme hat damit Außenwirkung. Die Duldungsverfügung ist daher ein
+      Verwaltungsakt im Sinne des § 35 S. 1 VwVfG.
   expectation:
     pruefpunkte:
     - id: p1
@@ -195,6 +196,8 @@ faelle:
       - § 35 VwVfG
       keywords:
       - Duldungspflicht
+      - ist eine Regelung
+      - verbindlich
       card_slugs:
       - or-vwvfg-va-regelung-abgrenzung-realakt
     - id: p3
@@ -213,9 +216,9 @@ faelle:
       required: true
       keywords:
       - Außenwirkung
-      - Außenstehender
       - nicht eingegliedert
       - Grundstückseigentümer
+      - Rechtsstellung
       card_slugs:
       - or-vwvfg-va-aussenwirkung
     - id: p5
@@ -225,9 +228,7 @@ faelle:
       norms:
       - § 35 VwVfG
       keywords:
-      - Verwaltungsakt im Sinne des § 35
-      - Verwaltungsakt i.S.d. § 35
-      - § 35 S. 1 VwVfG
       - Duldungsverfügung ist ein Verwaltungsakt
+      - Duldungsverfügung ist daher ein Verwaltungsakt
       card_slugs:
       - or-vwvfg-va-begriff

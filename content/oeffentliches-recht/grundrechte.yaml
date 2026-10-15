@@ -211,6 +211,9 @@ faelle:
       - faktisch unmöglich
       - Eingriff in die Versammlungsfreiheit
       - beschränkt die Versammlung
+      - rechtsförmiger Eingriff
+      - moderner Eingriffsbegriff
+      - Eingriff in den Schutzbereich
       card_slugs:
       - or-gr-eingriff
     - id: p4
@@ -270,3 +273,6 @@ faelle:
       - Auflage ist verfassungswidrig
       - Art. 8 Abs. 1 GG verletzt
       - nicht gerechtfertigt
+      - nicht erforderlich
+      - unverhältnismäßig
+      - Auflage ist rechtswidrig

@@ -272,7 +272,7 @@ faelle:
       Recht auf gerechte Abwägung ihrer eigenen Belange berufen: Die Lärmbelastung
       eines angrenzenden Wohngrundstücks durch mehrere hundert Lkw-Fahrten täglich
       ist mehr als geringfügig, schutzwürdig und für die Stadt S erkennbar - ein abwägungserheblicher
-      Belang, dessen Verletzung nicht offensichtlich ausgeschlossen ist.'
+      Belang, dessen Verletzung möglich erscheint.'
   - prompt: Ist B antragsbefugt?
     erwartung: Nein - B ist weder Eigentümer im Plangebiet noch im Einwirkungsbereich
       des Plans. Sein gelegentliches Vorbeifahren begründet keinen eigenen abwägungserheblichen
@@ -327,6 +327,8 @@ faelle:
       - abwägungserheblich
       - außerhalb des Plangebiets
       - § 47 Abs. 2 S. 1 VwGO
+      - Recht auf gerechte Abwägung
+      - Möglichkeit einer Rechtsverletzung
       card_slugs:
       - or-vwgo-nk47-antragsbefugnis
       - or-vwgo-nk47-antragsbefugnis-abwaegungsbelang

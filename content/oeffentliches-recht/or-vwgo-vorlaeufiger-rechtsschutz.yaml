@@ -178,8 +178,6 @@ faelle:
       - § 80 Abs. 5 VwGO
       keywords:
       - Wiederherstellung der aufschiebenden Wirkung
-      - § 80 Abs. 5 S. 1 Var. 2 VwGO
-      - § 80 Abs. 5 VwGO
       card_slugs:
       - or-vwgo-vrs-anordnung-vs-wiederherstellung
     - id: p2
@@ -189,8 +187,6 @@ faelle:
       norms:
       - § 80 Abs. 2 VwGO
       keywords:
-      - § 80 Abs. 2 S. 1 Nr. 4 VwGO
-      - § 80 Abs. 2 Nr. 4 VwGO
       - behördlich angeordnete sofortige Vollziehung
       - Anordnung der sofortigen Vollziehung
       card_slugs:
@@ -202,7 +198,6 @@ faelle:
       norms:
       - § 80 Abs. 3 VwGO
       keywords:
-      - § 80 Abs. 3 VwGO
       - floskelhaft
       - formelhafte Begründung
       - Begründung des besonderen Vollzugsinteresses
@@ -216,8 +211,9 @@ faelle:
       keywords:
       - antragsbefugt
       - Antragsbefugnis
-      - § 42 Abs. 2 VwGO analog
       - Adressat der Gewerbeuntersagung
+      - möglicherweise eine Rechtsverletzung
+      - Adressat der belastenden
     - id: p5
       label: 'Ergebnis: Antrag begründet, aufschiebende Wirkung wird wiederhergestellt'
       weight: 1.5
