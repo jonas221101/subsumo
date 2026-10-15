@@ -1,0 +1,412 @@
+topic:
+  slug: zr-bt-werkvertrag
+  area: zivilrecht
+  title: Werkvertrag, §§ 631 ff. BGB
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-werk-begriff
+  type: definition
+  front: 'Definiere: Werkvertrag, § 631 BGB, und grenze ihn vom Dienstvertrag ab'
+  back: 'Durch den Werkvertrag wird der Unternehmer zur Herstellung des versprochenen Werkes,
+    der Besteller zur Zahlung der vereinbarten Vergütung verpflichtet (§ 631 Abs. 1 BGB).
+    Gegenstand kann nach § 631 Abs. 2 BGB sowohl die Herstellung oder Veränderung einer Sache
+    als auch ein anderer durch Arbeit oder Dienstleistung herbeizuführender Erfolg sein, etwa
+    ein Gutachten, eine Reparatur oder ein Bauwerk. Kennzeichnend ist die Erfolgsschuld: Der
+    Unternehmer schuldet das Gelingen, nicht bloß das Bemühen. Dies unterscheidet den Werkvertrag
+    vom Dienstvertrag (§ 611 BGB), bei dem allein die Tätigkeit geschuldet ist. Maßgeblich
+    ist der Vertragsinhalt, wie er sich durch Auslegung ergibt (§§ 133, 157 BGB); die Bezeichnung
+    durch die Parteien ist nicht entscheidend.'
+  norms:
+  - § 631 Abs. 1 BGB
+  - § 631 Abs. 2 BGB
+  - § 611 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-werk-abnahme-640
+  type: norm
+  front: Wie ist die Abnahme in § 640 BGB geregelt?
+  back: Der Besteller ist verpflichtet, das vertragsgemäß hergestellte Werk abzunehmen, sofern
+    nicht nach der Beschaffenheit des Werkes die Abnahme ausgeschlossen ist (§ 640 Abs. 1
+    S. 1 BGB). Abnahme ist die körperliche Entgegennahme (Besitzverschaffung) verbunden mit
+    der Billigung des Werkes als im Wesentlichen vertragsgemäß. Wegen unwesentlicher Mängel
+    darf die Abnahme nicht verweigert werden (§ 640 Abs. 1 S. 2 BGB). Nimmt der Besteller
+    das Werk nicht innerhalb einer vom Unternehmer gesetzten angemessenen Frist ab, obwohl
+    er dazu verpflichtet ist, gilt es als abgenommen (§ 640 Abs. 2 BGB, fiktive Abnahme);
+    gegenüber Verbrauchern nur, wenn der Unternehmer sie auf die Folgen in Textform hingewiesen
+    hat. Nimmt der Besteller ein mangelhaftes Werk in Kenntnis des Mangels ab, stehen ihm
+    die Rechte nach § 634 Nr. 1 bis 3 BGB nur bei Vorbehalt zu (§ 640 Abs. 3 BGB).
+  norms:
+  - § 640 Abs. 1 BGB
+  - § 640 Abs. 2 BGB
+  - § 640 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-werk-abnahme-wirkungen
+  type: norm
+  front: Welche Rechtsfolgen hat die Abnahme?
+  back: 'Die Abnahme ist der zentrale Wendepunkt des Werkvertrags: Mit ihr wird die Vergütung
+    fällig (§ 641 Abs. 1 BGB), die Vergütungsgefahr geht auf den Besteller über (§ 644 Abs.
+    1 S. 1 BGB), und das Werk konkretisiert sich auf das hergestellte Werk, sodass die Mängelrechte
+    des § 634 BGB entstehen. Die Verjährung der Mängelansprüche beginnt mit der Abnahme (§
+    634a Abs. 2 BGB). Die Beweislast für Mängel kehrt sich um: Vor der Abnahme muss der Unternehmer
+    beweisen, dass das Werk mangelfrei ist, danach der Besteller, dass es mangelhaft ist.
+    Außerdem muss sich der Besteller bei Kenntnis von Mängeln seine Rechte vorbehalten (§
+    640 Abs. 3 BGB). In der Klausur ist die Abnahme daher regelmäßig die erste Weiche für
+    Fälligkeit und Mängelrechte.'
+  norms:
+  - § 641 Abs. 1 BGB
+  - § 644 BGB
+  - § 634a Abs. 2 BGB
+  - § 640 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-werk-maengelrechte-634
+  type: norm
+  front: Welche Mängelrechte hat der Besteller nach § 634 BGB?
+  back: Ist das Werk mangelhaft (§ 633 BGB), kann der Besteller nach § 634 BGB, wenn die Voraussetzungen
+    der folgenden Vorschriften vorliegen und soweit nichts anderes bestimmt ist, Nacherfüllung
+    nach § 635 BGB verlangen (Nr. 1), den Mangel nach § 637 BGB selbst beseitigen und Ersatz
+    der erforderlichen Aufwendungen verlangen (Nr. 2), nach den §§ 636, 323 und 326 Abs. 5
+    BGB vom Vertrag zurücktreten oder nach § 638 BGB die Vergütung mindern (Nr. 3) sowie nach
+    den §§ 636, 280, 281, 283 und 311a BGB Schadensersatz oder nach § 284 BGB Ersatz vergeblicher
+    Aufwendungen verlangen (Nr. 4). Das Gesetz folgt der Struktur des Kaufrechts (§ 437 BGB),
+    kennt aber mit der Selbstvornahme ein eigenes Recht. Der Unternehmer kann die Nacherfüllung
+    nach § 635 Abs. 3 BGB bei unverhältnismäßigen Kosten verweigern.
+  norms:
+  - § 634 BGB
+  - § 633 BGB
+  - § 635 BGB
+  - § 637 BGB
+  - § 638 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-werk-selbstvornahme-637
+  type: norm
+  front: Unter welchen Voraussetzungen kann der Besteller den Mangel selbst beseitigen (§
+    637 BGB)?
+  back: Die Selbstvornahme setzt voraus, dass ein Mangel besteht, der Besteller dem Unternehmer
+    eine angemessene Frist zur Nacherfüllung gesetzt hat und diese erfolglos abgelaufen ist
+    (§ 637 Abs. 1 BGB). Die Fristsetzung ist unter den Voraussetzungen des § 637 Abs. 2 BGB
+    iVm § 323 Abs. 2 BGB entbehrlich, etwa bei ernsthafter und endgültiger Verweigerung oder
+    Fehlschlagen der Nacherfüllung. Die Selbstvornahme ist ausgeschlossen, wenn der Unternehmer
+    die Nacherfüllung zu Recht nach § 635 Abs. 3 BGB verweigert. Liegen die Voraussetzungen
+    vor, kann der Besteller Ersatz der erforderlichen Aufwendungen verlangen. Erforderlich
+    sind die Kosten, die ein vernünftiger, wirtschaftlich denkender Besteller aufgewendet
+    hätte. Er kann auch Vorschuss in Höhe der voraussichtlichen Kosten verlangen (§ 637 Abs.
+    3 BGB), der abzurechnen ist.
+  norms:
+  - § 637 Abs. 1 BGB
+  - § 637 Abs. 2 BGB
+  - § 637 Abs. 3 BGB
+  - § 635 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-werk-bgh-fiktive-kosten
+  type: rechtsprechung
+  front: Kann der Besteller Schadensersatz auf Grundlage fiktiver Mängelbeseitigungskosten
+    verlangen?
+  back: 'Nach BGH, Urteil vom 22.02.2018 - VII ZR 46/17, kann der Besteller, der das Werk
+    behält und den Mangel nicht beseitigen lässt, im Rahmen des Schadensersatzes statt der
+    Leistung (§§ 634 Nr. 4, 280, 281 BGB) den Schaden nicht nach den voraussichtlichen, aber
+    nicht angefallenen Mängelbeseitigungskosten bemessen. Der Schaden liegt vielmehr in der
+    Wertminderung des Werkes, die im Wege der Schätzung ermittelt werden kann, oder, wenn
+    der Besteller den Mangel beseitigen lässt, in den tatsächlich angefallenen Kosten. Der
+    Besteller ist nicht schutzlos: Er kann Vorschuss nach § 637 Abs. 3 BGB verlangen, wenn
+    er die Beseitigung durchführen will, und der Schaden kann auch ausgehend vom Wert des
+    Werkes ohne Mangel bemessen werden. Die Rechtsprechung gab damit die frühere Praxis der
+    fiktiven Abrechnung für das Werkvertragsrecht auf.'
+  norms:
+  - § 634 Nr. 4 BGB
+  - § 281 BGB
+  - § 637 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - BGH, Urteil vom 22.02.2018 - VII ZR 46/17
+  - Eigenformulierung Redaktion
+- slug: zr-werk-abgrenzung-650
+  type: norm
+  front: Wann gilt Kaufrecht statt Werkvertragsrecht (§ 650 BGB)?
+  back: 'Verträge über die Lieferung herzustellender oder zu erzeugender beweglicher Sachen
+    unterliegen nach § 650 BGB dem Kaufrecht (Werklieferungsvertrag), auch wenn der Unternehmer
+    das Material liefert oder die Sache nach Wünschen des Bestellers anfertigt. Es kommt auf
+    den Schwerpunkt an: Steht die Verschaffung der Sache im Vordergrund, gilt Kaufrecht; bei
+    Verträgen über nicht vertretbare Sachen, also solche, die individuell nach den Vorgaben
+    des Bestellers anzufertigen sind, werden einzelne werkvertragliche Vorschriften (etwa
+    §§ 642, 643, 645, 648, 649 BGB) ergänzt, wobei an die Stelle der Abnahme der Zeitpunkt
+    des Gefahrübergangs nach §§ 446, 447 BGB tritt. Werkvertragsrecht bleibt anwendbar, wenn
+    eine unbewegliche Sache betroffen ist (Bauwerk) oder eine Sache repariert, verändert oder
+    ein unkörperlicher Erfolg wie ein Gutachten geschuldet ist.'
+  norms:
+  - § 650 BGB
+  - § 446 BGB
+  - § 447 BGB
+  - § 631 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-werk-verbraucherbauvertrag
+  type: norm
+  front: Was kennzeichnet den Verbraucherbauvertrag (§§ 650i ff. BGB)?
+  back: Ein Verbraucherbauvertrag ist ein Vertrag, durch den der Unternehmer von einem Verbraucher
+    zum Bau eines neuen Gebäudes oder zu erheblichen Umbaumaßnahmen an einem bestehenden Gebäude
+    verpflichtet wird (§ 650i Abs. 1 BGB). Er bedarf der Textform (§ 650i Abs. 2 BGB). Der
+    Unternehmer muss dem Verbraucher rechtzeitig vor Vertragsschluss eine Baubeschreibung
+    zur Verfügung stellen (§ 650j BGB), die Vertragsinhalt wird (§ 650k BGB). Dem Verbraucher
+    steht ein Widerrufsrecht zu (§ 650l BGB, 14 Tage); Abschlagszahlungen sind auf 90 Prozent
+    der Gesamtvergütung begrenzt (§ 650m BGB), und der Verbraucher kann bei der ersten Abschlagszahlung
+    eine Sicherheit für die rechtzeitige Herstellung ohne wesentliche Mängel verlangen (§
+    650m Abs. 2 BGB). Der Verbraucherbauvertrag ist ein Unterfall des Bauvertrags (§ 650a
+    BGB), für den das Anordnungsrecht des Bestellers (§ 650b BGB) und die Vergütungsanpassung
+    (§ 650c BGB) gelten.
+  norms:
+  - § 650i BGB
+  - § 650j BGB
+  - § 650l BGB
+  - § 650m BGB
+  - § 650a BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-werk-unternehmerpfandrecht-647
+  type: norm
+  front: Was gewährt das Werkunternehmerpfandrecht (§ 647 BGB)?
+  back: 'Der Unternehmer hat für seine Forderungen aus dem Vertrag ein gesetzliches Pfandrecht
+    an den beweglichen Sachen des Bestellers, die er zum Zwecke der Herstellung oder Ausbesserung
+    in Besitz genommen hat (§ 647 BGB). Es ist ein besitzabhängiges gesetzliches Pfandrecht:
+    Es entsteht mit dem Besitz an der Sache, erlischt mit dem Verlust des Besitzes (§§ 1257,
+    1253 BGB) und sichert die Vergütungsforderung und die mit dem Vertrag zusammenhängenden
+    Forderungen. Die Verwertung richtet sich nach §§ 1228 ff. BGB und setzt Pfandreife voraus.
+    Das Pfandrecht entsteht nur an Sachen, die dem Besteller gehören, nicht an Sachen Dritter.
+    Für Bauwerke gilt stattdessen die Sicherungshypothek des Bauunternehmers (§ 650e BGB)
+    und die Bauhandwerkersicherung (§ 650f BGB).'
+  norms:
+  - § 647 BGB
+  - § 1257 BGB
+  - § 1228 BGB
+  - § 650e BGB
+  - § 650f BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-werk-gutglaeubig-pfandrecht
+  type: streitstand
+  front: 'Streitstand: Kann das Werkunternehmerpfandrecht gutgläubig erworben werden, wenn
+    die Sache nicht dem Besteller gehört?'
+  back: 'Die herrschende Meinung, der sich die Rechtsprechung angeschlossen hat, lehnt den
+    gutgläubigen Erwerb des gesetzlichen Werkunternehmerpfandrechts ab: Das Pfandrecht nach
+    § 647 BGB setzt voraus, dass die Sache dem Besteller gehört. Die Vorschriften über den
+    gutgläubigen Erwerb des Pfandrechts (§§ 1207, 1208 BGB) gelten für rechtsgeschäftlich
+    bestellte Pfandrechte, nicht für das gesetzliche Pfandrecht, bei dem der Erwerb nicht
+    auf einem Rechtsgeschäft beruht. Auch der Rechtsschein, der den Verkehrsschutz begründet,
+    fehlt, weil der Unternehmer die Sache nicht vom Eigentümer erhält. Die Gegenauffassung
+    in der Literatur befürwortet eine entsprechende Anwendung der §§ 1207, 932 ff. BGB, jedenfalls
+    wenn der Besteller als Eigentümer erscheint, um den Unternehmer zu schützen. Gegen sie
+    spricht die fehlende gesetzliche Verweisung und der Vorrang des Eigentumsschutzes des
+    Dritten.'
+  norms:
+  - § 647 BGB
+  - § 1257 BGB
+  - § 1207 BGB
+  - § 932 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-werk-kuendigung-648
+  type: norm
+  front: Wann kann der Besteller den Werkvertrag kündigen (§§ 648, 648a BGB)?
+  back: Der Besteller kann bis zur Vollendung des Werkes jederzeit ohne Grund kündigen (§
+    648 S. 1 BGB). Der Unternehmer behält den Vergütungsanspruch, muss sich aber ersparte
+    Aufwendungen und anderweitigen Erwerb anrechnen lassen (§ 648 S. 2 BGB); es wird vermutet,
+    dass dem Unternehmer 5 Prozent der auf den noch nicht erbrachten Teil der Werkleistung
+    entfallenden Vergütung zustehen (§ 648 S. 3 BGB). Daneben kann jede Partei den Vertrag
+    aus wichtigem Grund kündigen, wenn ihr unter Berücksichtigung aller Umstände und Abwägung
+    der beiderseitigen Interessen die Fortsetzung bis zur Fertigstellung nicht zugemutet werden
+    kann (§ 648a Abs. 1 BGB). Im Fall des § 648a BGB schuldet der Besteller nur die bis dahin
+    erbrachten Leistungen (§ 648a Abs. 5 BGB). Beim Bauvertrag bedarf die Kündigung der Schriftform
+    (§ 650h BGB).
+  norms:
+  - § 648 BGB
+  - § 648a BGB
+  - § 650h BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-werk-maengelrechte-vor-abnahme
+  type: streitstand
+  front: 'Streitstand: Stehen dem Besteller die Mängelrechte des § 634 BGB schon vor der Abnahme
+    zu?'
+  back: Nach h. M. und ständiger Rechtsprechung entstehen die Mängelrechte des § 634 BGB mit
+    Rücktritt, Minderung und Selbstvornahme grundsätzlich erst mit der Abnahme; davor hat
+    der Besteller nur den Erfüllungsanspruch auf mangelfreie Herstellung (§§ 631 Abs. 1, 633
+    Abs. 1 BGB) sowie die Rechte aus dem allgemeinen Leistungsstörungsrecht (§§ 280 ff., 323
+    BGB). Ausnahmen gelten, wenn der Besteller nicht mehr die Erfüllung, sondern nur noch
+    Schadensersatz oder Minderung verlangt und das Vertragsverhältnis in ein Abrechnungsverhältnis
+    übergegangen ist, etwa nach Kündigung oder wenn die Abnahme zu Recht verweigert wurde.
+    Die Gegenansicht, die ein Wahlrecht des Bestellers schon vor der Abnahme annimmt, stellt
+    auf Praktikabilität ab, überspielt aber die gesetzliche Zäsur der Abnahme als Beginn des
+    Gewährleistungsstadiums.
+  norms:
+  - § 634 BGB
+  - § 640 BGB
+  - § 631 Abs. 1 BGB
+  - § 633 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-werk-maengelrechte
+  title: Mängelrechte des Bestellers, §§ 633 ff. BGB
+  norms:
+  - § 631 BGB
+  - § 633 BGB
+  - § 634 BGB
+  - § 640 BGB
+  - § 637 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Wirksamer Werkvertrag, § 631 BGB
+    hinweis: Abgrenzung zu Kauf (§ 650 BGB) und Dienstvertrag (§ 611 BGB).
+  - label: II. Mangel, § 633 BGB
+    children:
+    - label: 1. Subjektive Anforderungen, § 633 Abs. 2 S. 1 BGB
+    - label: 2. Objektive Anforderungen, § 633 Abs. 2 S. 2 BGB
+    - label: 3. Rechtsmangel, § 633 Abs. 3 BGB
+  - label: III. Mangel bei Abnahme / Gefahrübergang
+    hinweis: Abnahme, § 640 BGB; Beweislast vor und nach Abnahme. Bei Kenntnis Vorbehalt,
+      § 640 Abs. 3 BGB.
+  - label: IV. Kein Ausschluss der Rechte
+    hinweis: Haftungsausschluss nur eingeschränkt, § 639 BGB; Kenntnis des Bestellers.
+  - label: V. Rechtsfolgen, § 634 BGB
+    children:
+    - label: 1. Nacherfüllung, § 635 BGB
+    - label: '2. Selbstvornahme, § 637 BGB: Frist, Aufwendungsersatz, Vorschuss'
+    - label: 3. Rücktritt oder Minderung, §§ 636, 323, 638 BGB
+    - label: 4. Schadensersatz, §§ 636, 280, 281 BGB
+  - label: VI. Verjährung, § 634a BGB
+    hinweis: Zwei Jahre bei Werken zur Herstellung, Wartung oder Veränderung einer Sache,
+      fünf Jahre bei Bauwerken; Beginn mit Abnahme.
+faelle:
+- slug: zr-fall-werk-fliesen
+  title: Das Bad mit falschem Gefälle
+  difficulty: 3
+  minutes: 50
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: Unternehmer U verlegt im Bad des Bestellers B Bodenfliesen für eine vereinbarte Vergütung
+    von 6.000 Euro. Bei der förmlichen Abnahme erklärt B, das Werk im Wesentlichen zu billigen;
+    er behält sich aber ausdrücklich Rechte wegen eines von ihm festgestellten zu geringen
+    Gefälles der bodengleichen Dusche vor, bei dem Wasser stehen bleibt. B zahlt auf die Vergütung
+    zunächst 2.000 Euro. Eine Woche später setzt B dem U schriftlich eine Frist von 14 Tagen
+    zur Beseitigung des Gefälles. U reagiert nicht. B beauftragt daraufhin die Fachfirma F,
+    das Gefälle durch Ausbau und Neuverlegung der Fliesen im Duschbereich zu korrigieren;
+    F berechnet 1.800 Euro, die B bezahlt. Die Kosten sind für die Beseitigung erforderlich
+    und angemessen. U verlangt von B den Restwerklohn von 4.000 Euro.
+  question: Kann U von B Zahlung von 4.000 Euro verlangen?
+  steps:
+  - prompt: Ist der Vergütungsanspruch entstanden und fällig?
+    erwartung: Ja. Es besteht ein wirksamer Werkvertrag (§ 631 Abs. 1 BGB), das Werk wurde
+      abgenommen (§ 640 Abs. 1 BGB), sodass der Restwerklohn nach § 641 Abs. 1 BGB fällig
+      ist.
+  - prompt: Hat B Mängelrechte, obwohl er abgenommen hat?
+    erwartung: Ja. B hat die Abnahme in Kenntnis des Mangels erklärt, sich seine Rechte aber
+      ausdrücklich vorbehalten (§ 640 Abs. 3 BGB). Das zu geringe Gefälle ist ein Mangel nach
+      § 633 Abs. 2 BGB, da die Dusche für die gewöhnliche Verwendung nicht geeignet ist.
+  - prompt: Liegen die Voraussetzungen der Selbstvornahme vor?
+    erwartung: Ja. Nach § 637 Abs. 1 BGB kann B den Mangel selbst beseitigen und Ersatz der
+      erforderlichen Aufwendungen verlangen, wenn er dem Unternehmer erfolglos eine angemessene
+      Frist zur Nacherfüllung bestimmt hat. B hat eine Frist von 14 Tagen gesetzt, U hat nicht
+      reagiert. Ein Verweigerungsrecht nach § 635 Abs. 3 BGB ist nicht ersichtlich.
+  - prompt: Was folgt aus dem Aufwendungsersatzanspruch für die Forderung des U?
+    erwartung: B hat gegen U einen Anspruch auf Ersatz der erforderlichen Aufwendungen von
+      1.800 Euro (§§ 634 Nr. 2, 637 Abs. 1 BGB). Beide Forderungen sind gleichartig und fällig;
+      B kann nach §§ 387, 389 BGB aufrechnen. Die Forderung des U erlischt in Höhe von 1.800
+      Euro.
+  - prompt: Ergebnis?
+    erwartung: U kann von B noch 4.000 Euro - 1.800 Euro = 2.200 Euro verlangen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Wirksamer Werkvertrag (Herstellung, Erfolgsschuld), Fälligkeit des Werklohns
+        nach Abnahme, § 641 BGB
+      weight: 1.5
+      required: false
+      norms:
+      - § 631 BGB
+      - § 641 BGB
+      keywords:
+      - Werkvertrag
+      - § 631 BGB
+      - Abnahme
+      - § 640 BGB
+      - Fälligkeit
+      - § 641 BGB
+      card_slugs:
+      - zr-werk-begriff
+      - zr-werk-abnahme-wirkungen
+    - id: p2
+      label: Mangel des Werkes (Sollbeschaffenheit, Gefälle der Fliesen) nach § 633 BGB
+      weight: 1.5
+      required: false
+      norms:
+      - § 633 BGB
+      keywords:
+      - Mangel
+      - § 633 BGB
+      - Sachmangel
+      - Beschaffenheit
+      - übliche Verwendung
+    - id: p3
+      label: Voraussetzungen der Selbstvornahme nach § 637 Abs. 1 BGB (Mangel, Fristsetzung,
+        fruchtloser Fristablauf)
+      weight: 3.0
+      required: true
+      norms:
+      - § 637 Abs. 1 BGB
+      - § 634 Nr. 2 BGB
+      keywords:
+      - Selbstvornahme
+      - § 637 BGB
+      - Fristsetzung
+      - fruchtlos
+      - Aufwendungsersatz
+      - erforderliche Aufwendungen
+      card_slugs:
+      - zr-werk-selbstvornahme-637
+      - zr-werk-maengelrechte-634
+    - id: p4
+      label: Aufrechnung des Bestellers mit dem Aufwendungsersatzanspruch (Erlöschen in Höhe
+        der Gegenforderung)
+      weight: 2.0
+      required: true
+      norms:
+      - § 387 BGB
+      - § 389 BGB
+      keywords:
+      - Aufrechnung
+      - § 387 BGB
+      - § 389 BGB
+      - erlischt
+      - Gegenforderung
+    - id: p5
+      label: 'Rechenergebnis: restlicher Werklohn von 2.200 Euro'
+      weight: 1.5
+      required: false
+      keywords:
+      - Aufrechnung mindert den Werklohn
+      - Restwerklohn
+      - abzüglich der Aufwendungen
+      - Forderung erlischt in Höhe
