@@ -107,8 +107,8 @@ def test_endpoint_unbekannt_404_mit_quelle(auth_client, fixture_dir, zitat):
     r = auth_client.get("/v1/normen", params={"zitat": zitat})
     assert r.status_code == 404
     detail = r.json()["detail"]
-    assert "kein Text hinterlegt" in detail["message"]
-    assert detail["quelle_url"].startswith("https://www.gesetze-im-internet.de/")
+    assert detail["message"]
+    assert detail["quelle_url"]
 
 
 def test_echte_daten_zentrale_normen(auth_client):
@@ -148,3 +148,49 @@ def test_import_parse_xml_artikel_kontext_und_absaetze():
     out = mod.parse_xml(xml)
     assert list(out) == ["Art. 246a § 1"]
     assert out["Art. 246a § 1"]["text"] == "(1) Eins\n1. a\n2. b\n(2) Zwei"
+
+
+@pytest.mark.parametrize(
+    ("zitat", "kategorie", "url_teil"),
+    [
+        ("Art. 267 AEUV", "eu", "CELEX:12016E/TXT"),
+        ("Art. 4 EUV", "eu", "CELEX:12016M/TXT"),
+        ("Art. 7 GRCh", "eu", "CELEX:12016P/TXT"),
+        ("§ 12 GO NRW", "landesrecht", "https://recht.nrw.de"),
+        ("Art. 7 Abs. 2 LStVG", "landesrecht", "gesetze-bayern.de"),
+        ("§ 3 HSOG", "landesrecht", "rv.hessenrecht.hessen.de"),
+        ("§ 3 LBO BW", "landesrecht", "landesrecht-bw.de"),
+        ("§ 3 NPOG", "landesrecht", "voris.wolterskluwer-online.de"),
+        ("§ 3 BauO Bln", "landesrecht", "gesetze.berlin.de"),
+    ],
+)
+def test_404_unterscheidet_unionsrecht_und_landesrecht(auth_client, zitat, kategorie, url_teil):
+    r = auth_client.get("/v1/normen", params={"zitat": zitat})
+    assert r.status_code == 404
+    d = r.json()["detail"]
+    assert d["kategorie"] == kategorie
+    assert url_teil in d["quelle_url"]
+    if kategorie == "eu":
+        assert d["message"] == "Unionsrecht – Text bei EUR-Lex"
+        assert "eur-lex.europa.eu" in d["quelle_url"]
+    else:
+        assert d["message"].startswith("Landesrecht ")
+        assert "Landesrechtsportal" in d["message"]
+
+
+def test_404_landesrecht_ohne_land_generisch_ohne_link(auth_client):
+    d = auth_client.get("/v1/normen", params={"zitat": "§ 5 PolG"}).json()["detail"]
+    assert d["kategorie"] == "landesrecht"
+    assert d["quelle_url"] is None
+    assert len(d["portale"]) == 16
+
+
+def test_mehrfachzitat_liefert_weitere(auth_client):
+    r = auth_client.get("/v1/normen", params={"zitat": "§§ 214, 215 BauGB"})
+    assert r.status_code == 200
+    assert r.json()["norm"] == "§ 214"
+    assert r.json()["weitere"] == ["§ 215 BauGB"]
+    r = auth_client.get("/v1/normen", params={"zitat": "§ 433 Abs. 1 BGB"})
+    assert r.json()["weitere"] == []
+    r = auth_client.get("/v1/normen", params={"zitat": "§§ 280 Abs. 1 und 2 BGB"})
+    assert r.json()["weitere"] == []

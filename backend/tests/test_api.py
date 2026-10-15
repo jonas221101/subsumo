@@ -428,3 +428,32 @@ def test_lernplan_respektiert_ruhetage(auth_client):
     ).json()
     sonntage = [d for d in plan["days"] if date.fromisoformat(d["date"]).weekday() == 6]
     assert sonntage and all(d["total_minutes"] == 0 for d in sonntage)
+
+
+def test_tageslimit_neue_karten_wird_pro_tag_verbraucht(auth_client):
+    """Heute erstmals bewertete Karten zaehlen gegen ``new_limit``; ``extra=true``
+    ueberschreitet das Tageslimit bewusst."""
+    erste = auth_client.get("/v1/cards/due", params={"limit": 30, "new_limit": 3})
+    karten = erste.json()
+    assert len(karten) == 3
+    assert erste.headers["X-Neue-Karten-Rest"] == "3"
+    reviews = [
+        {
+            "client_id": f"tageslimit-{i}",
+            "card_slug": k["slug"],
+            "rating": 3,
+            "reviewed_at": datetime.now(UTC).isoformat(),
+        }
+        for i, k in enumerate(karten)
+    ]
+    assert auth_client.post("/v1/reviews/batch", json={"reviews": reviews}).json()["applied"] == 3
+
+    danach = auth_client.get("/v1/cards/due", params={"limit": 30, "new_limit": 3})
+    assert [k for k in danach.json() if k["state"] == "new"] == []
+    assert danach.headers["X-Neue-Karten-Heute"] == "3"
+    assert danach.headers["X-Neue-Karten-Rest"] == "0"
+
+    mehr = auth_client.get("/v1/cards/due", params={"limit": 30, "new_limit": 3, "extra": "true"})
+    neu = [k for k in mehr.json() if k["state"] == "new"]
+    assert len(neu) == 3
+    assert not {k["slug"] for k in neu} & {k["slug"] for k in karten}

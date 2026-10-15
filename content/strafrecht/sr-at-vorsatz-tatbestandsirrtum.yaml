@@ -145,16 +145,16 @@ schemata:
   steps:
   - label: 'I. Feststellung: worauf bezieht sich die Fehlvorstellung?'
     children:
-    - label: 1. Umstand gehört zum gesetzlichen Tatbestand -> weiter mit II.
-    - label: 2. Umstand betrifft nur die rechtliche Bewertung/Erlaubtheit -> Verbotsirrtum,
+    - label: 1. Umstand gehört zum gesetzlichen Tatbestand → weiter mit II.
+    - label: 2. Umstand betrifft nur die rechtliche Bewertung/Erlaubtheit → Verbotsirrtum,
         § 17 StGB
   - label: II. Tatbestandsirrtum, § 16 Abs. 1 StGB
     children:
     - label: 1. Error in persona vel objecto (Verwechslung des Tatobjekts)
       children:
-      - label: a) Gleichwertigkeit der Tatobjekte -> Irrtum unbeachtlich, Vorsatz
+      - label: a) Gleichwertigkeit der Tatobjekte → Irrtum unbeachtlich, Vorsatz
           (+)
-      - label: b) Keine Gleichwertigkeit -> Vorsatz bzgl. getroffenem Objekt (-)
+      - label: b) Keine Gleichwertigkeit → Vorsatz bzgl. getroffenem Objekt (-)
     - label: 2. Aberratio ictus (Fehlgehen der Tat)
       children:
       - label: a) Vorsatz bzgl. anvisiertem Objekt (-) hinsichtlich Vollendung
