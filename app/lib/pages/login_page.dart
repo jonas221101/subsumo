@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../api.dart';
 import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
@@ -53,7 +54,9 @@ class _LoginPageState extends State<LoginPage> {
                     child: SingleChildScrollView(
                       child: ReadableWidth(
                         maxWidth: 420,
-                        child: Padding(padding: const EdgeInsets.all(Spacing.xxl), child: form),
+                        child: Padding(
+                            padding: const EdgeInsets.all(Spacing.xxl),
+                            child: form),
                       ),
                     ),
                   ),
@@ -64,7 +67,8 @@ class _LoginPageState extends State<LoginPage> {
               child: SingleChildScrollView(
                 child: ReadableWidth(
                   maxWidth: 420,
-                  child: Padding(padding: const EdgeInsets.all(Spacing.xl), child: form),
+                  child: Padding(
+                      padding: const EdgeInsets.all(Spacing.xl), child: form),
                 ),
               ),
             ),
@@ -87,11 +91,13 @@ class _LoginPageState extends State<LoginPage> {
           ],
           SubsumoEyebrow(_register ? 'Neues Konto' : 'Willkommen zurück'),
           const SizedBox(height: Spacing.sm),
-          Text(_register ? 'Konto erstellen' : 'Melde dich an', style: typography.headingLarge),
+          Text(_register ? 'Konto erstellen' : 'Melde dich an',
+              style: typography.headingLarge),
           const SizedBox(height: Spacing.xs),
           Text(
             'Jura lernen vom ersten Semester bis zum Examen.',
-            style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+            style: theme.textTheme.bodyMedium
+                ?.copyWith(color: theme.colorScheme.onSurfaceVariant),
           ),
           const SizedBox(height: Spacing.xl),
           SubsumoTextField(
@@ -99,7 +105,9 @@ class _LoginPageState extends State<LoginPage> {
             controller: _email,
             keyboardType: TextInputType.emailAddress,
             autofillHints: const [AutofillHints.email],
-            validator: (v) => (v == null || !v.contains('@')) ? 'Bitte E-Mail eingeben' : null,
+            validator: (v) => (v == null || !v.contains('@'))
+                ? 'Bitte E-Mail eingeben'
+                : null,
           ),
           const SizedBox(height: Spacing.md),
           SubsumoTextField(
@@ -107,7 +115,8 @@ class _LoginPageState extends State<LoginPage> {
             controller: _password,
             obscureText: true,
             autofillHints: const [AutofillHints.password],
-            validator: (v) => (v == null || v.length < 8) ? 'Mindestens 8 Zeichen' : null,
+            validator: (v) =>
+                (v == null || v.length < 8) ? 'Mindestens 8 Zeichen' : null,
             onFieldSubmitted: (_) => _submit(),
           ),
           if (app.error != null) ...[
@@ -119,13 +128,26 @@ class _LoginPageState extends State<LoginPage> {
           ],
           const SizedBox(height: Spacing.xl),
           SubsumoButton.primary(
-            label: app.loading ? 'Bitte warten ...' : (_register ? 'Konto erstellen' : 'Anmelden'),
+            label: app.loading
+                ? 'Bitte warten ...'
+                : (_register ? 'Konto erstellen' : 'Anmelden'),
             onPressed: app.loading ? null : _submit,
           ),
-          SubsumoButton.tertiary(
-            label: _register ? 'Ich habe schon ein Konto' : 'Neu hier? Konto erstellen',
-            onPressed: () => setState(() => _register = !_register),
-          ),
+          if (kBetaMode) ...[
+            const SizedBox(height: Spacing.md),
+            Text(
+              'Geschlossener Testzugang - Anmeldung nur mit persönlichen Zugangsdaten.',
+              textAlign: TextAlign.center,
+              style: theme.textTheme.bodySmall
+                  ?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+            ),
+          ] else
+            SubsumoButton.tertiary(
+              label: _register
+                  ? 'Ich habe schon ein Konto'
+                  : 'Neu hier? Konto erstellen',
+              onPressed: () => setState(() => _register = !_register),
+            ),
         ],
       ),
     );
@@ -169,7 +191,9 @@ class _BrandPane extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Theme(
-                    data: theme.copyWith(colorScheme: theme.colorScheme.copyWith(primary: white)),
+                    data: theme.copyWith(
+                        colorScheme:
+                            theme.colorScheme.copyWith(primary: white)),
                     child: const SubsumoWordmark(accent: true),
                   ),
                   Padding(
@@ -197,12 +221,16 @@ class _BrandPane extends StatelessWidget {
                                   child: Container(
                                     width: 6,
                                     height: 6,
-                                    decoration: BoxDecoration(color: colors.accent, shape: BoxShape.circle),
+                                    decoration: BoxDecoration(
+                                        color: colors.accent,
+                                        shape: BoxShape.circle),
                                   ),
                                 ),
                                 const SizedBox(width: Spacing.md),
                                 Expanded(
-                                  child: Text(line, style: theme.textTheme.bodyLarge?.copyWith(color: muted)),
+                                  child: Text(line,
+                                      style: theme.textTheme.bodyLarge
+                                          ?.copyWith(color: muted)),
                                 ),
                               ],
                             ),

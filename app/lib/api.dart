@@ -9,6 +9,11 @@ const String kApiBase = String.fromEnvironment(
   defaultValue: 'http://localhost:8000',
 );
 
+/// Geschlossener Test-Zugang (ops/beta): keine Registrierung, Start direkt in
+/// der App, Feedback-Knopf in der Kopfleiste.
+/// `flutter build web --dart-define=SUBSUMO_BETA=true`
+const bool kBetaMode = bool.fromEnvironment('SUBSUMO_BETA');
+
 class ApiException implements Exception {
   ApiException(this.statusCode, this.message, {this.upgradeRequired = false});
 
@@ -68,7 +73,8 @@ class ApiClient {
       } on FormatException {
         message = body;
       }
-      throw ApiException(response.statusCode, message, upgradeRequired: upgradeRequired);
+      throw ApiException(response.statusCode, message,
+          upgradeRequired: upgradeRequired);
     }
     return jsonDecode(body);
   }
@@ -85,11 +91,13 @@ class ApiClient {
       _decode(await _client.delete(_uri(path), headers: _headers));
 
   Future<dynamic> _patch(String path, Object? body) async => _decode(
-        await _client.patch(_uri(path), headers: _headers, body: jsonEncode(body)),
+        await _client.patch(_uri(path),
+            headers: _headers, body: jsonEncode(body)),
       );
 
   Future<dynamic> _put(String path, Object? body) async => _decode(
-        await _client.put(_uri(path), headers: _headers, body: jsonEncode(body)),
+        await _client.put(_uri(path),
+            headers: _headers, body: jsonEncode(body)),
       );
 
   // --- Oeffentlich (ohne Login) ----------------------------------------------
@@ -121,6 +129,19 @@ class ApiClient {
     return data['access_token'] as String;
   }
 
+  /// Nur im Test-Zugang (ops/beta/gateway.py) vorhanden.
+  Future<void> sendFeedback({
+    required String message,
+    required String category,
+    required String screen,
+  }) async {
+    await _post('/beta/feedback', {
+      'message': message,
+      'category': category,
+      'screen': screen,
+    });
+  }
+
   Future<Map<String, dynamic>> me() async =>
       (await _get('/v1/auth/me')) as Map<String, dynamic>;
 
@@ -128,7 +149,8 @@ class ApiClient {
   /// ISO-Datum), Tagesbudget, Bundesland-Kuerzel und Universitaets-Slug
   /// (docs/32-examensvorbereitung.md). Der Server leitet aus der Universitaet
   /// das Bundesland ab, wenn keines mitgeschickt wird.
-  Future<Map<String, dynamic>> updateProfile(Map<String, dynamic> fields) async =>
+  Future<Map<String, dynamic>> updateProfile(
+          Map<String, dynamic> fields) async =>
       (await _patch('/v1/auth/me', fields)) as Map<String, dynamic>;
 
   // --- Lernen ---------------------------------------------------------------
@@ -194,10 +216,12 @@ class ApiClient {
 
   /// Alle 16 Laender mit Klausurstruktur, oeffentlich (Profil-Auswahl).
   Future<List<Map<String, dynamic>>> examenBundeslaender() async =>
-      ((await _get('/v1/examen/bundeslaender')) as List).cast<Map<String, dynamic>>();
+      ((await _get('/v1/examen/bundeslaender')) as List)
+          .cast<Map<String, dynamic>>();
 
   /// Universitaeten mit Staatsexamens-Studiengang, optional je Bundesland.
-  Future<List<Map<String, dynamic>>> examenUniversitaeten({String? bundesland}) async {
+  Future<List<Map<String, dynamic>>> examenUniversitaeten(
+      {String? bundesland}) async {
     final data = await _get('/v1/examen/universitaeten', {
       if (bundesland != null) 'bundesland': bundesland,
     });
@@ -222,7 +246,8 @@ class ApiClient {
 
   /// Ersetzt das Lernprofil komplett (`PUT /v1/me/lernprofil`). Der Server
   /// prueft Themen-Slugs, Fokus/Pause-Konflikte und Deck-Slugs (422).
-  Future<Map<String, dynamic>> saveLernprofil(Map<String, dynamic> profil) async =>
+  Future<Map<String, dynamic>> saveLernprofil(
+          Map<String, dynamic> profil) async =>
       (await _put('/v1/me/lernprofil', profil)) as Map<String, dynamic>;
 
   // --- Gutachten ------------------------------------------------------------
@@ -289,7 +314,8 @@ class ApiClient {
   /// Aufrufer bildet daraus die passende Nutzermeldung.
   Future<DateTime> redeemCode(String code) async {
     final data = await _post('/v1/account/redeem', {'code': code});
-    return DateTime.parse((data as Map<String, dynamic>)['pro_until'] as String);
+    return DateTime.parse(
+        (data as Map<String, dynamic>)['pro_until'] as String);
   }
 
   // --- Oeffentlich (ohne Login) ---------------------------------------------
