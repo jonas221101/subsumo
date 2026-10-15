@@ -1,22 +1,22 @@
 universitaet:
   slug: viadrina-frankfurt-oder
-  name: Europa-Universitaet Viadrina Frankfurt (Oder)
+  name: Europa-Universität Viadrina Frankfurt (Oder)
   kurzname: Viadrina
   stadt: Frankfurt (Oder)
   bundesland: BB
   traegerschaft: staatlich
   stand: 2026-09
   quellen:
-  - Studien- und Pruefungsordnungen der Fakultaet (Studienverlaufsplan)
+  - Studien- und Prüfungsordnungen der Fakultät (Studienverlaufsplan)
   - Eigenformulierung Redaktion
   redaktion:
     erzeugt_von: claude-code (Redaktionsentwurf)
     status: in-pruefung
     hinweis: Kursliste = kanonischer Standard-Studienverlaufsplan (docs/32 Abschnitt 3.3). Lokale Modulnamen
-      und Semesterlage sind nicht verifiziert - ueber die Fachschafts-Beta (docs/28) einholen und als
+      und Semesterlage sind nicht verifiziert - über die Fachschafts-Beta (docs/28) einholen und als
       'titel_lokal'/'semester' nachtragen.
   besonderheiten:
-  - Deutsch-polnische Rechtsstudiengaenge neben dem Staatsexamen
+  - Deutsch-polnische Rechtsstudiengänge neben dem Staatsexamen
   kurse:
   - kurs: zr-bgb-at
     semester: 1

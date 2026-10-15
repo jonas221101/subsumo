@@ -5,7 +5,7 @@ topic:
   parent: or-sicherheitsrecht-generalklausel-standardmassnahmen
   bundesland: SN
   relevance: 4
-  stand: 2026-09
+  stand: 2026-10
   redaktion:
     erzeugt_von: claude-code (Redaktionsentwurf)
     status: in-pruefung
@@ -33,7 +33,7 @@ cards:
   type: schema_step
   front: 'Aufbau: Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Sachsen'
   back: 'I. Ermächtigungsgrundlage (Sächsisches Polizeivollzugsdienstgesetz (SächsPVDG) und Sächsisches
-    Polizeibehördengesetz (SächsPBG) - seit 2019 anstelle des SächsPolG: Standardmaßnahme vor Generalklausel).
+    Polizeibehördengesetz (SächsPBG) - seit 2020 anstelle des SächsPolG: Standardmaßnahme vor Generalklausel).
     II. Formelle Rechtmäßigkeit: 1. Zuständigkeit (sachlich: welche Behörde - Polizeibehörden (Gemeinden,
     Landkreise, Landesdirektion) nach SächsPBG; Polizeivollzugsdienst nach SächsPVDG; örtlich; instanziell),
     2. Verfahren (Anhörung nach dem jeweiligen Landesverwaltungsverfahrensgesetz), 3. Form. III. Materielle
@@ -73,7 +73,7 @@ cards:
     macht die Maßnahme formell rechtswidrig.'
   norms:
   - Sächsisches Polizeivollzugsdienstgesetz (SächsPVDG) und Sächsisches Polizeibehördengesetz (SächsPBG)
-    - seit 2019 anstelle des SächsPolG
+    - seit 2020 anstelle des SächsPolG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -91,3 +91,296 @@ cards:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
+- slug: sn-por-gefahr
+  type: definition
+  front: >-
+      Welche Gefahrbegriffe sind im Gefahrenabwehrrecht in Sachsen zu unterscheiden?
+  back: >-
+      Gefahr ist eine Sachlage, die bei ungehindertem Geschehensablauf mit hinreichender
+      Wahrscheinlichkeit in absehbarer Zeit zu einem Schaden für ein polizeiliches Schutzgut führt;
+      maßgeblich ist die Prognose ex ante aus Sicht eines besonnenen Amtswalters. Konkrete Gefahr: im
+      Einzelfall drohend, sie trägt Einzelmaßnahmen (Generalklausel, Standardmaßnahmen). Abstrakte
+      Gefahr: nach allgemeiner Lebenserfahrung typischerweise drohend, sie trägt nur den Erlass einer
+      Polizeiverordnung (SächsPBG). Qualifizierte Gefahren erhöhen die Anforderungen: erhebliche
+      Gefahr (bedeutendes Rechtsgut), gegenwärtige Gefahr (Schadenseintritt hat begonnen oder steht
+      unmittelbar bevor), Gefahr im Verzug (Abwarten würde den Erfolg der Maßnahme gefährden). Vom
+      Gefahrenverdacht spricht man, wenn unklar ist, ob ein Schaden droht; hier kommt nur ein
+      Gefahrerforschungseingriff in Betracht. Welche Qualifikation eine Standardmaßnahme verlangt,
+      ergibt sich aus ihrem Tatbestand.
+  norms:
+  - "SächsPVDG (Polizeivollzugsdienst), Generalklausel"
+  - "SächsPBG (Polizeibehörden), Generalklausel"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sn-por-anschein
+  type: streitstand
+  front: >-
+      Anscheinsgefahr, Gefahrenverdacht und Putativgefahr: Wie sind sie abzugrenzen und welche
+      Rechtsfolgen hat eine Fehlprognose?
+  back: >-
+      Anscheinsgefahr: Bei Erlass der Maßnahme sprach aus Sicht eines besonnenen Amtswalters ex ante
+      alles für einen drohenden Schaden, tatsächlich bestand keine Gefahr. Nach h. M. liegt eine
+      Gefahr im Rechtssinn vor, die Maßnahme ist rechtmäßig (Prognoseentscheidung). Gefahrenverdacht:
+      Die Tatsachenlage ist unklar; zulässig ist grundsätzlich nur eine vorläufige, der Aufklärung
+      dienende Maßnahme. Putativgefahr: Der Amtswalter nimmt ohne objektiv tragfähigen Anschein eine
+      Gefahr an; die Maßnahme ist rechtswidrig. Streitig sind die Folgefragen beim Anscheinsstörer:
+      Nach h. M. wird dem zu Unrecht Herangezogenen, der den Anschein nicht zurechenbar gesetzt hat,
+      ein Ausgleich entsprechend dem Nichtstörer zugestanden und er wird nicht mit Kosten belastet;
+      wer den Anschein zurechenbar veranlasst hat (etwa Fehlalarm durch Fahrlässigkeit), trägt die
+      Kosten. Anderer Ansatz: Die Rechtmäßigkeit der Maßnahme schließe jeden Ausgleich aus.
+  norms:
+  - "SächsPVDG (Polizeivollzugsdienst), Generalklausel"
+  - "SächsPBG (Polizeibehörden), Generalklausel"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sn-por-standard
+  type: norm
+  front: >-
+      Welche Standardmaßnahmen kennt das Gefahrenabwehrrecht in Sachsen und wie verhalten sie sich zur
+      Generalklausel?
+  back: >-
+      Standardmaßnahmen sind typisierte Eingriffsbefugnisse mit eigenem Tatbestand: Befragung und
+      Auskunftspflicht, Vorladung, Identitätsfeststellung, Platzverweisung und Aufenthaltsverbot,
+      Gewahrsam, Durchsuchung von Personen und Sachen, Betreten und Durchsuchen von Wohnungen sowie
+      Sicherstellung und Beschlagnahme. Sie sind im SächsPVDG geregelt; ob und wie die Befugnisse auch
+      den Ordnungs- bzw. Polizeibehörden zustehen, ist anhand der geltenden Fassung zu prüfen. Sie
+      gehen der Generalklausel als speziellere Normen vor; ist ihr Tatbestand nicht erfüllt, darf
+      nicht ohne Weiteres auf die Generalklausel ausgewichen werden, soweit die Standardmaßnahme die
+      Materie abschließend regelt. Verfassungsrechtliche Vorgaben sind zu beachten: Gewahrsam verlangt
+      eine richterliche Entscheidung (Art. 104 Abs. 2 GG), die Durchsuchung von Wohnungen
+      grundsätzlich eine richterliche Anordnung (Art. 13 Abs. 2 GG), ihr Betreten zur Gefahrenabwehr
+      ist an Art. 13 Abs. 7 GG zu messen.
+  norms:
+  - "Standardbefugnisse des SächsPVDG (Paragraphen hier nicht angegeben)"
+  - "Art. 104 Abs. 2 GG"
+  - "Art. 13 Abs. 2 GG"
+  - "Art. 13 Abs. 7 GG"
+  - "SächsPVDG (Polizeivollzugsdienst), Generalklausel"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sn-por-stoererauswahl
+  type: streitstand
+  front: >-
+      Wie wählt die Behörde zwischen mehreren Verantwortlichen aus, und wie wird der Zweckveranlasser
+      behandelt?
+  back: >-
+      Gibt es mehrere Störer, wählt die Behörde nach pflichtgemäßem Ermessen aus. Leitlinie ist die
+      effektive, schnelle und sichere Gefahrenabwehr; eine feste Rangfolge zwischen Verhaltens- und
+      Zustandsstörer besteht nicht. Zu berücksichtigen sind Nähe zur Gefahr, Leistungsfähigkeit,
+      Verursachungsbeitrag und Gleichbehandlung. Nichtstörer dürfen dagegen nur im polizeilichen
+      Notstand herangezogen werden. Streitig ist die Reichweite der Verhaltensverantwortlichkeit: Nach
+      der Theorie der unmittelbaren Verursachung ist nur verantwortlich, wer selbst die Gefahrengrenze
+      überschreitet. Die Rechtsprechung und Teile des Schrifttums erweitern dies auf den
+      Zweckveranlasser, der die unmittelbare Verursachung durch einen Dritten bezweckt oder sie als
+      zwangsläufige Folge seines Tuns herbeiführt. Die Gegenansicht lehnt die Figur ab, weil sie die
+      Unmittelbarkeit auflöse und die Verantwortlichkeit nicht gesetzlich gedeckt sei.
+  norms:
+  - "Verantwortlichkeitsregeln im SächsPVDG und SächsPBG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sn-por-zwang
+  type: definition
+  front: >-
+      Wie läuft die Vollstreckung einer Gefahrenabwehrverfügung in Sachsen ab, und was gilt beim
+      Sofortvollzug?
+  back: >-
+      Regelfall ist das gestreckte Verfahren: wirksame und vollstreckbare Grundverfügung (unanfechtbar
+      oder sofort vollziehbar, § 80 Abs. 2 VwGO), Androhung des Zwangsmittels mit angemessener Frist,
+      Festsetzung, Anwendung. Zwangsmittel sind Ersatzvornahme, Zwangsgeld und als letztes Mittel
+      unmittelbarer Zwang; sie müssen verhältnismäßig sein. Das Sächsische
+      Verwaltungsvollstreckungsgesetz (SächsVwVG) regelt den Verwaltungszwang; für den
+      Polizeivollzugsdienst enthält das SächsPVDG ergänzende Vorschriften zum unmittelbaren Zwang. Bei
+      gegenwärtiger Gefahr kann die Behörde im Sofortvollzug (unmittelbare Ausführung) ohne
+      vorausgehenden Verwaltungsakt handeln, wenn die Maßnahme zur Abwehr der Gefahr notwendig ist und
+      die Verantwortlichen nicht rechtzeitig herangezogen werden können. Typische Klausurkonstellation
+      ist das Abschleppen eines Fahrzeugs; geprüft wird dann, ob die Grundverfügung, etwa ein
+      Verkehrszeichen, wirksam war, ob Androhung und Festsetzung entbehrlich waren und ob das
+      Zwangsmittel verhältnismäßig war.
+  norms:
+  - "Sächsisches Verwaltungsvollstreckungsgesetz (SächsVwVG)"
+  - "§ 80 Abs. 2 S. 1 Nr. 2 VwGO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sn-por-kosten
+  type: norm
+  front: >-
+      Wer trägt die Kosten von Ersatzvornahme, unmittelbarer Ausführung und Zwang, und wo liegen die
+      Grenzen der Kostenhaftung?
+  back: >-
+      Die Kosten einer Ersatzvornahme, des unmittelbaren Zwangs oder einer unmittelbaren Ausführung
+      trägt grundsätzlich der Pflichtige bzw. der für die Gefahr Verantwortliche; sie werden durch
+      Kostenbescheid (Leistungsbescheid) geltend gemacht und nach den Vorschriften der
+      Verwaltungsvollstreckung beigetrieben. Bei Sofortvollzug ohne Grundverfügung prüft die
+      Kostenentscheidung inzident, ob die Maßnahme rechtmäßig gewesen wäre, insbesondere ob eine
+      Gefahr vorlag, der Kostenschuldner Störer war und die Maßnahme verhältnismäßig war. Für den
+      Zustandsstörer ist die Kostenhaftung nach der Rechtsprechung des Bundesverfassungsgerichts aus
+      Art. 14 GG begrenzt; sie darf nach Zumutbarkeit insbesondere den Wert des Grundstücks nach
+      Sanierung nicht übersteigen, wenn die Gefahr nicht dem Risikobereich des Eigentümers zuzurechnen
+      ist. Der Nichtstörer wird nicht mit Kosten belastet; ihm steht bei Inanspruchnahme ein
+      Entschädigungsanspruch zu.
+  norms:
+  - "Art. 14 Abs. 1 GG"
+  - "Art. 14 Abs. 2 GG"
+  - "Sächsisches Verwaltungsvollstreckungsgesetz (SächsVwVG)"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "BVerfGE 102, 1 (Altlasten, Zustandsverantwortlichkeit)"
+  stand: 2026-10
+- slug: sn-por-pvdg-pbg
+  type: streitstand
+  front: >-
+      Wie sind Polizeivollzugsdienst und Polizeibehörden in Sachsen seit der Neuordnung des
+      Polizeirechts abzugrenzen?
+  back: >-
+      Seit der Neustrukturierung des sächsischen Polizeirechts (Gesetze Ende 2019 verkündet, seit 2020
+      in Kraft) regeln zwei Gesetze die Gefahrenabwehr: das Polizeivollzugsdienstgesetz (SächsPVDG)
+      für die Polizei des Freistaates als Vollzugsdienst und das Polizeibehördengesetz (SächsPBG) für
+      die Polizeibehörden, also die Gemeinden, Landkreise und die Landesdirektion als allgemeine
+      Gefahrenabwehrbehörden. Beide Gesetze enthalten eigene Befugnisnormen; deshalb ist in der
+      Klausur zuerst die handelnde Stelle zu bestimmen und dann die Befugnisnorm des passenden
+      Gesetzes zu zitieren. Grundsatz ist die Zuständigkeit der Polizeibehörden für die allgemeine
+      Gefahrenabwehr; der Polizeivollzugsdienst wird in den gesetzlich geregelten Fällen tätig, vor
+      allem bei Eilbedürftigkeit, wenn die Polizeibehörde nicht rechtzeitig handeln kann. Ältere
+      Lernmaterialien, die noch ein einheitliches SächsPolG zitieren, sind überholt.
+  norms:
+  - "SächsPVDG (Polizeivollzugsdienst), Generalklausel"
+  - "SächsPBG (Polizeibehörden), Generalklausel"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: sn-schema-por-pbg-pvdg
+  title: >-
+      Gefahrenabwehrmaßnahme in Sachsen: Zuständigkeit von Polizeibehörde und Polizeivollzugsdienst
+  norms:
+  - "SächsPVDG (Polizeivollzugsdienst), Generalklausel"
+  - "SächsPBG (Polizeibehörden), Generalklausel"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  steps:
+  - label: "I. Handelnde Stelle bestimmen"
+    hinweis: >-
+        Seit der Neuordnung sind SächsPBG (Polizeibehörden) und SächsPVDG (Polizeivollzugsdienst)
+        getrennte Gesetze.
+  - label: "II. Ermächtigungsgrundlage im Gesetz der handelnden Stelle"
+    hinweis: >-
+        Standardmaßnahme vor Generalklausel; Normen des richtigen Gesetzes zitieren.
+  - label: "III. Formelle Rechtmäßigkeit"
+    children:
+    - label: >-
+        1. Sachliche Zuständigkeit: Polizeibehörde als Regelfall
+      hinweis: >-
+          Eilzuständigkeit des Polizeivollzugsdienstes nur bei Eilbedürftigkeit; Unterrichtung der
+          zuständigen Stelle beachten.
+    - label: "2. Örtliche und instanzielle Zuständigkeit"
+    - label: "3. Verfahren und Form"
+  - label: "IV. Materielle Rechtmäßigkeit"
+    children:
+    - label: "1. Konkrete Gefahr, Prognose ex ante"
+    - label: "2. Richtiger Adressat (Verhaltens-, Zustands-, Nichtstörer)"
+    - label: "3. Ermessen und Verhältnismäßigkeit"
+faelle:
+- slug: sn-fall-por-eilzustaendigkeit
+  title: "Der Baum nach dem Sturm"
+  difficulty: 3
+  minutes: 50
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  facts: >-
+      An einem Sonntagabend knickt ein Sturm eine Pappel auf dem Grundstück des E in einer sächsischen
+      Stadt so weit um, dass sie jeden Moment auf den angrenzenden öffentlichen Gehweg zu stürzen
+      droht. Eine Streife des Polizeivollzugsdienstes bemerkt das. Die Polizeibehörde der Stadt
+      (Ordnungsamt) ist am Sonntagabend nicht besetzt und telefonisch nicht rechtzeitig zu erreichen.
+      Die Beamten sperren den Gehweg ab und fordern E, den sie am Haus antreffen, auf, den Baum sofort
+      durch eine Fachfirma sichern zu lassen. E hält das für rechtswidrig: Er habe den Sturm nicht
+      verursacht, außerdem sei der Polizeivollzugsdienst gar nicht zuständig.
+  question: "War das Vorgehen der Beamten gegenüber E rechtmäßig?"
+  steps:
+  - prompt: >-
+        Welches Gesetz regelt das Handeln der Beamten, und wer ist grundsätzlich zuständig?
+    erwartung: >-
+        Die Beamten gehören zum Polizeivollzugsdienst; ihre Befugnisse ergeben sich aus dem SächsPVDG.
+        Für die allgemeine Gefahrenabwehr sind grundsätzlich die Polizeibehörden nach dem SächsPBG
+        zuständig, hier das Ordnungsamt der Stadt.
+  - prompt: "Durfte der Polizeivollzugsdienst trotzdem handeln?"
+    erwartung: >-
+        Ja, kraft Eilzuständigkeit: Die Gefahr ist gegenwärtig, die zuständige Polizeibehörde kann nicht
+        rechtzeitig tätig werden. Die zuständige Stelle ist über das Eingreifen zu unterrichten.
+  - prompt: "Liegt eine Gefahr vor, und ist E richtiger Adressat?"
+    erwartung: >-
+        Es liegt eine konkrete und gegenwärtige Gefahr für Leib und Leben der Passanten sowie für
+        Sachgüter vor. E ist als Eigentümer der Pappel Zustandsstörer. Dass er den Sturm nicht
+        verursacht hat, ist unerheblich, weil die Zustandsverantwortlichkeit nicht an ein Verschulden
+        anknüpft.
+  - prompt: "Ist die Maßnahme verhältnismäßig?"
+    erwartung: >-
+        Ja. Das Absperren und die Aufforderung zur Sicherung sind geeignet und erforderlich; mildere
+        Mittel sind angesichts der Gefahr nicht gleich wirksam. Die Kosten für den Eigentümer stehen
+        nicht außer Verhältnis zur Gefahr.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+          Zuständigkeitsgrenze zwischen Polizeibehörde (SächsPBG) und Polizeivollzugsdienst (SächsPVDG)
+          dargestellt
+      weight: 2.5
+      required: true
+      keywords:
+      - "SächsPVDG"
+      - "SächsPBG"
+      - "Polizeibehörde"
+      - "Polizeivollzugsdienst"
+      - "Trennung der Gesetze"
+      card_slugs:
+      - "sn-por-pvdg-pbg"
+      - "sn-por-zustaendigkeit"
+    - id: p2
+      label: "Eilzuständigkeit des Polizeivollzugsdienstes bejaht"
+      weight: 2.5
+      required: true
+      keywords:
+      - "Eilzuständigkeit"
+      - "Eilbedürftigkeit"
+      - "nicht rechtzeitig"
+      - "Polizeibehörde nicht erreichbar"
+      - "gegenwärtige Gefahr"
+      card_slugs:
+      - "sn-por-pvdg-pbg"
+    - id: p3
+      label: "E als Zustandsstörer (Eigentümer) eingeordnet, Verschulden irrelevant"
+      weight: 2.0
+      required: true
+      keywords:
+      - "Zustandsstörer"
+      - "Eigentümer"
+      - "Zustandsverantwortlichkeit"
+      - "Verschulden unerheblich"
+      - "Inhaber der tatsächlichen Gewalt"
+      card_slugs:
+      - "sn-por-stoerer"
+    - id: p4
+      label: "Verhältnismäßigkeit der Sicherungsanordnung geprüft"
+      weight: 1.0
+      required: false
+      keywords:
+      - "Verhältnismäßigkeit"
+      - "geeignet"
+      - "erforderlich"
+      - "angemessen"
+      card_slugs:
+      - "sn-por-generalklausel"
+    normzitate_geprueft: false
