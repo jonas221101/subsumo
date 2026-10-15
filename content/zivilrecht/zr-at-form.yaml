@@ -87,17 +87,18 @@ cards:
     zwingend gleichzeitige Anwesenheit). Die notarielle Beurkundung wird nach §
     127a BGB bei einem gerichtlichen Vergleich durch die Aufnahme der Erklärungen in
     das nach den Vorschriften der ZPO errichtete Protokoll ersetzt. Die öffentliche
-    Beglaubigung (§ 129 BGB) verlangt eine schriftlich abgefasste Erklärung,
-    deren Unterschrift von einem Notar beglaubigt wird; der Notar bestätigt nur
-    die Echtheit der Unterschrift, nicht den Inhalt. Sie wird durch die
-    notarielle Beurkundung ersetzt, § 129 Abs. 2 BGB. Die notarielle
-    Beurkundung ersetzt ihrerseits die gesetzliche Schriftform, § 126 Abs. 4
+    Beglaubigung (§ 129 Abs. 1 BGB) verlangt eine schriftlich abgefasste Erklärung,
+    deren Unterschrift von einem Notar beglaubigt wird (alternativ eine elektronisch
+    abgefasste Erklärung mit notariell beglaubigter qualifizierter elektronischer Signatur);
+    der Notar bestätigt nur die Echtheit der Unterschrift, nicht den Inhalt. Sie wird durch die
+    notarielle Beurkundung ersetzt, § 129 Abs. 4 BGB. Die notarielle
+    Beurkundung ersetzt ihrerseits die gesetzliche Schriftform, § 126 Abs. 5
     BGB.
   norms:
   - § 127a BGB
   - § 128 BGB
   - § 129 BGB
-  - § 126 Abs. 4 BGB
+  - § 126 Abs. 5 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion

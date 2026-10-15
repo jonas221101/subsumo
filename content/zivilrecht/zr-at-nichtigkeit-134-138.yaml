@@ -41,11 +41,13 @@ cards:
     nichtig, wenn der Unternehmer vorsätzlich gegen dieses Verbot verstößt und der
     Besteller dies kennt und bewusst zum eigenen Vorteil ausnutzt; dies gilt etwa
     für eine "Ohne-Rechnung"-Abrede, die die Steuerhinterziehung zum Vertragsinhalt
-    macht. Bei einem nur nachträglichen Verstoß ist der Vertrag dagegen grundsätzlich
-    wirksam. Nach der neueren Rechtsprechung des BGH
-    kann der Unternehmer dann weder Werklohn noch Wertersatz nach
-    Bereicherungsrecht verlangen, weil § 817 S. 2 BGB eingreift; dem Besteller
-    stehen keine Mängelansprüche zu (§ 242 BGB). Die Rechtsprechung zu den
+    macht. Die Nichtigkeit erfasst den gesamten Vertrag, auch wenn die Abrede nur einen
+    Teil des Werklohns betrifft; sie tritt auch ein, wenn ein zunächst wirksamer Vertrag
+    nachträglich entsprechend abgeändert wird (BGH, 16.03.2017 - VII ZR 197/16). Der
+    Unternehmer kann dann weder Werklohn noch Wertersatz nach Bereicherungsrecht
+    verlangen, dem Besteller stehen keine Mängelansprüche zu, und seine Rückforderung
+    gezahlten Werklohns scheitert an § 817 S. 2 BGB (BGH, 01.08.2013 - VII ZR 6/13;
+    10.04.2014 - VII ZR 241/13; 11.06.2015 - VII ZR 216/14). Die Rechtsprechung zu den
     Rechtsfolgen hat sich mehrfach geändert; in der Klausur ist die
     Argumentation mit dem Verbotszweck und § 817 S. 2 BGB maßgeblich.
   norms:
@@ -53,6 +55,7 @@ cards:
   - § 1 Abs. 2 Nr. 2 SchwarzArbG
   - § 817 S. 2 BGB
   quellen:
+  - BGH, Urteil vom 16.03.2017 - VII ZR 197/16
   - BGB, amtliche Fassung
   - SchwarzArbG, amtliche Fassung
 - slug: zr-at-nicht-138-sittenwidrig
