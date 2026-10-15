@@ -363,3 +363,14 @@ def test_lernplan_kennt_nur_sichtbare_themen(auth_client):
     alle = set(plan["covered_topics"]) | set(plan["uncovered_topics"])
     assert "sh-landesrecht-allgemein" in alle
     assert "by-landesrecht-allgemein" not in alle
+
+
+def test_kurs_decks_ohne_uni_beginnen_mit_zivilrecht(auth_client):
+    # Nutzertest 2026-10-15: Erstsemester ohne Uni bekamen als erstes Deck
+    # Staatsrecht (alphabetisch vor BGB AT) statt Zivilrecht empfohlen.
+    decks = auth_client.get("/v1/examen/cockpit").json()["kurs_decks"]
+    semester_1 = [d["slug"] for d in decks if d.get("semester_default") == 1]
+    assert semester_1[0].startswith("zr-")
+    assert [s.split("-", 1)[0] for s in semester_1] == sorted(
+        (s.split("-", 1)[0] for s in semester_1), key=["zr", "sr", "or"].index
+    )

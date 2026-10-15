@@ -250,10 +250,24 @@ def _klausur_termin(user, profil, phase: dict | None, today: date) -> tuple[date
     )
 
 
+# Ohne Uni-Kursplan: innerhalb eines Semesters Zivilrecht vor Strafrecht vor
+# Oeffentlichem Recht (Gewicht in der Pflichtfachpruefung). Alphabetisch kam
+# sonst Staatsrecht vor BGB AT, und Erstsemester bekamen GG-Karten als
+# erstes Deck empfohlen (Nutzertest 2026-10-15).
+_GEBIET_RANG = {"zr": 0, "sr": 1, "or": 2}
+
+
 def _kurse_in_reihenfolge(db: DbSession, uni: Universitaet | None) -> list[Kurs]:
     kurse = {k.slug: k for k in db.query(Kurs).all()}
     if uni is None:
-        return sorted(kurse.values(), key=lambda k: (k.data.get("semester_default") or 99, k.slug))
+        return sorted(
+            kurse.values(),
+            key=lambda k: (
+                k.data.get("semester_default") or 99,
+                _GEBIET_RANG.get(k.slug.split("-", 1)[0], 9),
+                k.slug,
+            ),
+        )
     ordered: list[Kurs] = []
     for eintrag in uni.data.get("kurse") or []:
         kurs = kurse.get(eintrag.get("kurs"))
