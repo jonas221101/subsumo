@@ -1,0 +1,381 @@
+topic:
+  slug: or-versammlungsrecht
+  area: oeffentliches-recht
+  title: 'Versammlungsrecht: VersG und Landesgesetze, Polizeifestigkeit, § 15 VersG'
+  parent: oeffentliches-recht
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-versr-rechtsquellen-kompetenz
+  type: definition
+  front: Welche Gesetze regeln das Versammlungsrecht, und wer ist zuständig?
+  back: >-
+    Seit der Föderalismusreform 2006 ist das Versammlungsrecht Landesrecht: Die Gesetzgebungskompetenz
+    für das Versammlungsrecht ist auf die Länder übergegangen (Art. 70 Abs. 1 GG; Art. 74
+    Abs. 1 Nr. 3 GG a. F. wurde gestrichen). Das Versammlungsgesetz des Bundes (VersG) gilt
+    in den Ländern ohne eigenes Gesetz als Bundesrecht fort, Art. 125a Abs. 1 GG. Einzelne
+    Länder haben eigene Versammlungsgesetze erlassen, u. a. Bayern (BayVersG), Nordrhein-Westfalen
+    (VersG NRW), Berlin (VersFG BE), Niedersachsen, Sachsen, Sachsen-Anhalt und Schleswig-Holstein;
+    sie ersetzen das Bundesgesetz in ihrem Land. Die Struktur ähnelt dem Bundesgesetz (Anmeldung,
+    Beschränkung, Verbot, Auflösung), im Detail gibt es erhebliche Abweichungen. In Klausuren
+    wird die einschlägige Norm meist vorgegeben oder auf § 15 VersG als Muster abgestellt.
+    Maßgeblich bleibt Art. 8 GG als Schranke der Schranken. Die Paragraphen sind landesrechtlich
+    unterschiedlich; maßgeblich ist das jeweilige Landesversammlungsgesetz.
+  norms:
+  - Art. 70 Abs. 1 GG
+  - Art. 125a Abs. 1 GG
+  - Art. 8 GG
+  quellen:
+  - VersG des Bundes und Versammlungsgesetze der Länder, amtliche Fassungen
+  - Eigenformulierung Redaktion
+  - GG, amtliche Fassung
+  stand: 2026-10
+- slug: or-versr-polizeifestigkeit
+  type: streitstand
+  front: Was bedeutet „Polizeifestigkeit“ des Versammlungsrechts, und wo liegen ihre Grenzen?
+  back: >-
+    Das Versammlungsgesetz enthält für Versammlungen ein abschließendes Gefahrenabwehrregime.
+    Rückgriff auf polizeiliche Generalklausel und Standardmaßnahmen ist gegenüber Versammlung
+    und Teilnehmern ausgeschlossen, soweit versammlungsspezifische Gefahren in Rede stehen
+    (Polizeifestigkeit des Versammlungsrechts). Das Gesetz würde sonst unterlaufen, und die
+    Schranken des Art. 8 Abs. 2 GG sollen nur gesetzlich ausformuliert werden. Streitig ist
+    die Reichweite im Vorfeld: Eine Auffassung hält Maßnahmen nach dem Polizeirecht vor Versammlungsbeginn
+    (Gefährderansprache, Meldeauflagen, Aufenthaltsverbote, Ingewahrsamnahme zur Verhinderung
+    der Teilnahme) für zulässig, soweit sie nicht die Versammlung als solche betreffen; die
+    h. M. nimmt Polizeifestigkeit auch im Vorfeld an, wenn die Maßnahme erkennbar die Teilnahme
+    an der Versammlung verhindern soll. Gegen Nichtteilnehmer und bei nicht versammlungsbezogenen
+    Gefahren (Strafverfolgung, Verkehr) bleibt das allgemeine Polizeirecht anwendbar. Die
+    Differenzierung ist im Einzelnen landesrechtlich unterschiedlich.
+  norms:
+  - Art. 8 Abs. 2 GG
+  quellen: &id001
+  - VersG des Bundes und Versammlungsgesetze der Länder, amtliche Fassungen
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-versr-anmeldung-spontan-eil
+  type: definition
+  front: Wann besteht eine Anmeldepflicht, und was sind Spontan- und Eilversammlung?
+  back: >-
+    Versammlungen unter freiem Himmel sind nach § 14 Abs. 1 VersG spätestens 48 Stunden vor
+    Bekanntgabe der Versammlung bei der zuständigen Behörde anzumelden; Versammlungen in geschlossenen
+    Räumen sind nicht anmeldepflichtig. Die Anmeldepflicht ist verfassungsgemäß, aber nach
+    der Brokdorf-Entscheidung des BVerfG verfassungskonform auszulegen: Sie gilt nicht für
+    Spontanversammlungen, die sich aus aktuellem Anlass unmittelbar bilden und bei denen eine
+    Anmeldung nicht möglich ist; bei Eilversammlungen, die zwar geplant, aber wegen eines
+    aktuellen Anlasses nur kurzfristig durchführbar sind, entfällt die Frist, die Anmeldung
+    ist unverzüglich nachzuholen. Die Versammlung verliert dann nicht den Schutz des Art.
+    8 GG. Wird eine anmeldepflichtige Versammlung nicht angemeldet, ist dies Auflösungsgrund
+    nach § 15 Abs. 3 VersG, aber nicht zwingend; die Behörde muss verhältnismäßig handeln.
+    Die Paragraphen sind landesrechtlich unterschiedlich; maßgeblich ist das jeweilige Landesversammlungsgesetz.
+  norms:
+  - § 14 Abs. 1 VersG
+  - § 15 Abs. 3 VersG
+  - Art. 8 Abs. 1 GG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-versr-auflagen-verbot-15
+  type: norm
+  front: Unter welchen Voraussetzungen sind Beschränkungen und Verbot nach § 15 Abs. 1 VersG
+    zulässig?
+  back: >-
+    Nach § 15 Abs. 1 VersG kann die zuständige Behörde die Versammlung oder den Aufzug verbieten
+    oder von bestimmten Auflagen abhängig machen, wenn nach den zur Zeit des Erlasses der
+    Verfügung erkennbaren Umständen die öffentliche Sicherheit oder Ordnung bei Durchführung
+    der Versammlung oder des Aufzugs unmittelbar gefährdet ist. Erforderlich ist eine unmittelbare
+    Gefährdung, die auf nachweisbaren Tatsachen als Grundlage der Gefahrenprognose beruht
+    (bloße Verdachtsmomente genügen nicht). Schutzgut der öffentlichen Sicherheit sind insbesondere
+    Rechtsgüter Dritter und Strafrechtsnormen; die öffentliche Ordnung darf als Eingriffsgrund
+    nur zurückhaltend herangezogen werden, insbesondere nicht für inhaltsbezogene Verbote
+    (vgl. Wunsiedel). Auflage und Verbot stehen im Stufenverhältnis (Übermaßverbot): Ein Verbot
+    ist ultima ratio und nur zulässig, wenn mildere Mittel nicht genügen. § 15 Abs. 2 VersG
+    erfasst Versammlungen an Gedenkstätten für Opfer der nationalsozialistischen Gewaltherrschaft.
+    Die Paragraphen sind landesrechtlich unterschiedlich; maßgeblich ist das jeweilige Landesversammlungsgesetz.
+  norms:
+  - § 15 Abs. 1 VersG
+  - § 15 Abs. 2 VersG
+  - Art. 8 Abs. 2 GG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-versr-aufloesung
+  type: norm
+  front: Wann darf eine Versammlung aufgelöst werden, und was gilt für den Ausschluss einzelner
+    Teilnehmer?
+  back: >-
+    Nach § 15 Abs. 3 VersG kann die Behörde eine Versammlung unter freiem Himmel auflösen,
+    wenn sie nicht angemeldet ist, von den Angaben der Anmeldung abweicht oder den Auflagen
+    zuwiderhandelt oder wenn die Voraussetzungen für ein Verbot nach § 15 Abs. 1 oder 2 VersG
+    gegeben sind. Auch hier gilt der Verhältnismäßigkeitsgrundsatz: Die Auflösung ist die
+    schärfste Maßnahme (ultima ratio) und kommt nur in Betracht, wenn die Gefahr nicht durch
+    Auflagen, Ausschluss einzelner Störer oder Einsatz von Polizeikräften abgewendet werden
+    kann; ein bloßer Verstoß gegen die Anmeldepflicht rechtfertigt sie nicht automatisch.
+    Für Versammlungen in geschlossenen Räumen gilt § 13 VersG (Auflösungsgründe). Einzelne
+    grobe Störer können, statt die Gesamtversammlung aufzulösen, ausgeschlossen werden (vgl.
+    § 18 Abs. 3 VersG). Nach Auflösung sind die Teilnehmer verpflichtet, sich unverzüglich
+    zu entfernen; die Entfernung kann nach den Vollstreckungsregeln erzwungen werden. Die
+    Paragraphen sind landesrechtlich unterschiedlich; maßgeblich ist das jeweilige Landesversammlungsgesetz.
+  norms:
+  - § 15 Abs. 3 VersG
+  - § 13 VersG
+  - § 18 Abs. 3 VersG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-versr-gegendemonstration-notstand
+  type: streitstand
+  front: Darf eine Versammlung verboten werden, weil Gegendemonstranten Gewalt androhen?
+  back: >-
+    Gefahren, die von Gegendemonstranten oder Dritten ausgehen, rechtfertigen ein Verbot der
+    Versammlung nur unter strengen Voraussetzungen. Ausgangspunkt ist, dass die Behörde zuerst
+    gegen die Störer vorzugehen und die Versammlung zu schützen hat. Ein Verbot gegen die
+    friedliche Versammlung als sog. Nichtstörerin kommt nur im Rahmen des polizeilichen Notstands
+    in Betracht: Es muss eine unmittelbare erhebliche Gefahr bestehen, die Polizei muss auch
+    bei Ausschöpfung aller verfügbaren Kräfte zur Gefahrenabwehr nicht in der Lage sein und
+    Maßnahmen gegen die Störer müssen aussichtslos sein. Im Zweifel hat die Behörde zuerst
+    mildere Mittel zu ergreifen: räumliche und zeitliche Trennung, Änderung der Route, Auflagen
+    für beide Lager. Nach der Brokdorf-Rechtsprechung wiegt das Versammlungsrecht schwer;
+    die Behörde muss ihre Prognose auf konkrete Tatsachen stützen. Sind Kräfte vorhanden,
+    ist ein Verbot rechtswidrig.
+  norms:
+  - Art. 8 Abs. 1 GG
+  - § 15 Abs. 1 VersG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-versr-wunsiedel
+  type: rechtsprechung
+  front: Wie behandelt das BVerfG Versammlungsverbote bei Verherrlichung der NS-Herrschaft
+    (Wunsiedel)?
+  back: >-
+    Im Wunsiedel-Beschluss (BVerfGE 124, 300) hat das Bundesverfassungsgericht § 130 Abs.
+    4 StGB (Billigung, Verherrlichung oder Rechtfertigung der NS-Gewalt- und Willkürherrschaft)
+    als mit Art. 5 Abs. 1 und 2 GG vereinbar bestätigt, obwohl die Norm nicht allgemeines
+    Gesetz im Sinne des Art. 5 Abs. 2 GG ist; sie ist eine Ausnahme vom Verbot inhaltsbezogener
+    Beschränkungen, begründet aus dem Unrecht und Schrecken des Nationalsozialismus als gegenläufigem
+    Leitbild der Verfassungsordnung. Für das Versammlungsrecht folgt daraus: Versammlungen
+    können wegen ihres Inhalts grundsätzlich nur beschränkt werden, wenn eine Strafnorm oder
+    ein anderes allgemeines Gesetz verletzt wird. Die öffentliche Ordnung allein trägt ein
+    inhaltsbezogenes Verbot nicht. Die Wertung ist auch für die Auslegung des § 15 Abs. 2
+    VersG von Bedeutung.
+  norms:
+  - Art. 5 Abs. 2 GG
+  - Art. 8 Abs. 2 GG
+  - § 130 Abs. 4 StGB
+  - BVerfGE 124, 300
+  quellen:
+  - BVerfGE 124, 300 (Wunsiedel)
+  stand: 2026-10
+- slug: or-versr-bayversg-chilling-effect
+  type: rechtsprechung
+  front: Was folgt aus der Entscheidung des BVerfG zum Bayerischen Versammlungsgesetz für
+    Eingriffe in das Versammlungsgeschehen?
+  back: >-
+    In der Entscheidung zum Bayerischen Versammlungsgesetz (BVerfGE 122, 342) hat das BVerfG
+    betont, dass schon die Erwartung von Datenerhebung und -speicherung, Bußgeldandrohung
+    und Verpflichtungen im Zusammenhang mit der Teilnahme abschreckend wirken kann („Einschüchterungseffekt“,
+    chilling effect) und damit die Ausübung der Versammlungsfreiheit unverhältnismäßig erschwert.
+    Eingriffsermächtigungen müssen daher hinreichend bestimmt sein und an eine konkrete Gefahr
+    oder zumindest an tatsächliche Anhaltspunkte anknüpfen. Dies betrifft insbesondere Übersichtsaufnahmen
+    und Videoaufzeichnungen sowie Anzeige- und Mitwirkungspflichten für Veranstalter. Für
+    die Klausur folgt daraus ein strenger Bestimmtheits- und Verhältnismäßigkeitsmaßstab,
+    wenn Behörden versammlungsbezogene Daten erheben oder Eingriffe an die bloße Teilnahme
+    anknüpfen.
+  norms:
+  - Art. 8 Abs. 1 GG
+  - Art. 8 Abs. 2 GG
+  - BVerfGE 122, 342
+  quellen:
+  - BVerfGE 122, 342 (Bayerisches Versammlungsgesetz)
+  stand: 2026-10
+- slug: or-versr-rechtsschutz
+  type: norm
+  front: Welcher Rechtsschutz besteht gegen Verbot, Auflagen und Auflösung?
+  back: >-
+    Beschränkende Verfügungen und das Verbot sind Verwaltungsakte. Wegen der Eilbedürftigkeit
+    ordnet die Behörde regelmäßig die sofortige Vollziehung an (§ 80 Abs. 2 S. 1 Nr. 4 VwGO),
+    was begründet sein muss (§ 80 Abs. 3 VwGO); der Veranstalter beantragt die Wiederherstellung
+    der aufschiebenden Wirkung nach § 80 Abs. 5 S. 1 Var. 2 VwGO. Das Gericht entscheidet
+    nach Erfolgsaussichten der Hauptsache, hilfsweise nach Interessenabwägung; wegen Art.
+    8 GG und Art. 19 Abs. 4 GG ist eine eingehende Prüfung geboten. Gegen die ablehnende Entscheidung
+    ist die Beschwerde nach § 146 VwGO statthaft; danach kommt eine Verfassungsbeschwerde
+    mit einstweiliger Anordnung nach § 32 BVerfGG in Betracht. Nach Erledigung (Ablauf des
+    Versammlungstermins, vollzogene Auflösung) ist die Fortsetzungsfeststellungsklage analog
+    § 113 Abs. 1 S. 4 VwGO statthaft; das Feststellungsinteresse folgt aus dem Grundrechtseingriff
+    in Art. 8 GG (tiefgreifender, typischerweise kurzfristig erledigter Grundrechtseingriff)
+    oder aus Wiederholungsgefahr.
+  norms:
+  - § 80 Abs. 2 S. 1 Nr. 4 VwGO
+  - § 80 Abs. 3 VwGO
+  - § 80 Abs. 5 VwGO
+  - § 146 VwGO
+  - § 32 BVerfGG
+  - § 113 Abs. 1 S. 4 VwGO analog
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  - BVerfGG, amtliche Fassung
+  stand: 2026-10
+- slug: or-versr-vermummung-waffen
+  type: norm
+  front: Welche Pflichten und Verbote enthält das Versammlungsgesetz für Veranstalter und
+    Teilnehmer?
+  back: >-
+    Der Veranstalter leitet die Versammlung (Leiter) und sorgt für ihren ordnungsgemäßen Ablauf;
+    er kann sich Ordner bedienen, die weiße Armbinden tragen. Verboten sind nach dem Bundesgesetz
+    das Tragen von Waffen (§ 2 Abs. 3 VersG), das Tragen von Uniformen, Uniformteilen oder
+    gleichartiger Kleidung als Ausdruck gemeinsamer politischer Gesinnung (Uniformierungsverbot,
+    § 3 VersG) sowie bei Versammlungen unter freiem Himmel das Mitführen von Schutzwaffen,
+    die geeignet und bestimmt sind, Vollstreckungsmaßnahmen abzuwehren, und die Vermummung,
+    die geeignet und darauf gerichtet ist, die Identitätsfeststellung zu verhindern (Schutzwaffen-
+    und Vermummungsverbot, § 17a VersG). Verstöße sind straf- oder bußgeldbewehrt. Die Länder
+    haben eigene Regelungen getroffen; die Landesversammlungsgesetze enthalten teils abweichende
+    Verbotskataloge. Die Paragraphen sind landesrechtlich unterschiedlich; maßgeblich ist
+    das jeweilige Landesversammlungsgesetz.
+  norms:
+  - § 2 Abs. 3 VersG
+  - § 3 VersG
+  - § 17a VersG
+  quellen: *id001
+  stand: 2026-10
+schemata:
+- slug: or-schema-versr-verbot-aufloesung
+  title: Rechtmäßigkeit von Auflage, Verbot oder Auflösung einer Versammlung, § 15 VersG
+  norms:
+  - § 15 VersG
+  - Art. 8 GG
+  quellen: *id001
+  steps:
+  - label: 'I. Anwendbares Recht: Landesversammlungsgesetz oder VersG des Bundes'
+    hinweis: 'Polizeifestigkeit: keine Generalklausel gegen die Versammlung.'
+  - label: II. Formelle Rechtmäßigkeit
+    children:
+    - label: 1. Zuständigkeit
+    - label: 2. Verfahren (Anhörung, ggf. Kooperationsgespräch)
+    - label: 3. Form und Begründung (bei Sofortvollzug § 80 Abs. 3 VwGO)
+  - label: III. Materielle Rechtmäßigkeit
+    children:
+    - label: '1. Schutzbereich Art. 8 GG: Versammlung (friedlich, ohne Waffen)'
+    - label: 2. Ermächtigungsgrundlage § 15 Abs. 1 / 2 / 3 VersG
+    - label: 3. Unmittelbare Gefährdung der öffentlichen Sicherheit
+      hinweis: 'Gefahrenprognose auf nachweisbaren Tatsachen; Gegendemonstranten: Notstand.'
+    - label: '4. Verhältnismäßigkeit: Stufenverhältnis Auflage - Verbot - Auflösung'
+      hinweis: Verbot und Auflösung nur als ultima ratio.
+    - label: 5. Richtiger Adressat und Ermessen
+faelle:
+- slug: or-fall-versr-verbot-gegendemo
+  title: Das Verbot wegen der Gegendemonstration
+  difficulty: 4
+  minutes: 75
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VersG des Bundes und Versammlungsgesetze der Länder, amtliche Fassungen
+  - Eigenformulierung Redaktion
+  facts: Der Verein V meldet sechs Tage vorher bei der zuständigen Versammlungsbehörde einen
+    Aufzug unter freiem Himmel durch die Innenstadt zum Thema Mietenpolitik an. Die Behörde
+    verbietet den Aufzug unter Berufung auf § 15 Abs. 1 VersG, weil aus dem Umfeld einer angekündigten
+    Gegendemonstration Gewalt gegen die Teilnehmer drohe. Sie ordnet die sofortige Vollziehung
+    an und begründet dies schriftlich damit, dass der Aufzug sonst nicht mehr verhindert werden
+    könne. Nach der Lagebeurteilung der Polizei stehen ausreichend Einsatzkräfte zur Verfügung,
+    um den Aufzug zu schützen und die Gegendemonstration durch räumliche Trennung und Routenführung
+    zu begrenzen. Das Land hat kein eigenes Versammlungsgesetz; das VersG des Bundes gilt.
+    V möchte den Aufzug durchführen und sucht vorläufigen Rechtsschutz beim Verwaltungsgericht.
+  question: Welchen Antrag muss V stellen, und hat er Aussicht auf Erfolg?
+  steps:
+  - prompt: Welcher Antrag ist statthaft?
+    erwartung: Statthaft ist der Antrag auf Wiederherstellung der aufschiebenden Wirkung des
+      Widerspruchs bzw. der Klage nach § 80 Abs. 5 S. 1 Var. 2 VwGO, weil die Behörde die
+      sofortige Vollziehung nach § 80 Abs. 2 S. 1 Nr. 4 VwGO angeordnet hat.
+  - prompt: Ist die Anordnung der sofortigen Vollziehung formell rechtmäßig?
+    erwartung: Ja. Die Behörde hat das besondere Vollzugsinteresse schriftlich begründet,
+      § 80 Abs. 3 S. 1 VwGO.
+  - prompt: War das Verbot nach § 15 Abs. 1 VersG rechtmäßig?
+    erwartung: Nein. Ein Verbot setzt eine unmittelbare Gefährdung der öffentlichen Sicherheit
+      voraus; die Gefahr geht von Dritten (Gegendemonstranten) aus. Die Behörde muss zunächst
+      die Versammlung schützen und gegen die Störer vorgehen. Ein Verbot der friedlichen Versammlung
+      kommt nur im polizeilichen Notstand in Betracht, wenn die Polizei auch mit allen verfügbaren
+      Kräften nicht in der Lage ist, die Gefahr abzuwehren. Hier stehen ausreichend Kräfte
+      zur Verfügung; mildere Mittel (Auflagen, Routenänderung, räumliche Trennung) genügen.
+      Das Verbot ist unverhältnismäßig und rechtswidrig.
+  - prompt: Wie entscheidet das Gericht?
+    erwartung: Da die Hauptsache offensichtlich Erfolg hat, überwiegt das Aussetzungsinteresse
+      des V. Der Antrag ist begründet; die aufschiebende Wirkung wird wiederhergestellt. Die
+      Behörde kann stattdessen Auflagen (z. B. Route, Trennung) erlassen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: 'Statthafter Antrag: § 80 Abs. 5 S. 1 Var. 2 VwGO (Wiederherstellung der aufschiebenden
+        Wirkung) wegen angeordneter sofortiger Vollziehung'
+      weight: 1.5
+      required: false
+      norms:
+      - § 80 Abs. 5 VwGO
+      - § 80 Abs. 2 S. 1 Nr. 4 VwGO
+      keywords:
+      - § 80 Abs. 5 S. 1 Var. 2 VwGO
+      - Wiederherstellung der aufschiebenden Wirkung
+      - sofortige Vollziehung
+      - § 80 Abs. 2 S. 1 Nr. 4 VwGO
+      - § 80 Abs. 5 VwGO
+      card_slugs:
+      - or-versr-rechtsschutz
+    - id: p2
+      label: Verbot nach § 15 Abs. 1 VersG nur bei unmittelbarer Gefährdung; Gefahrenprognose
+        auf Tatsachen
+      weight: 2.0
+      required: false
+      norms:
+      - § 15 Abs. 1 VersG
+      keywords:
+      - unmittelbare Gefährdung
+      - Gefahrenprognose
+      - § 15 Abs. 1 VersG
+      - nachweisbare Tatsachen
+      - öffentliche Sicherheit
+      card_slugs:
+      - or-versr-auflagen-verbot-15
+    - id: p3
+      label: 'Gefahr durch Gegendemonstranten: zuerst Schutz der Versammlung und Maßnahmen
+        gegen Störer; Verbot nur im polizeilichen Notstand'
+      weight: 3.0
+      required: true
+      norms:
+      - Art. 8 Abs. 1 GG
+      keywords:
+      - Gegendemonstranten
+      - polizeilicher Notstand
+      - Nichtstörer
+      - Schutz der Versammlung
+      - Maßnahmen gegen die Störer
+      - Brokdorf
+      card_slugs:
+      - or-versr-gegendemonstration-notstand
+    - id: p4
+      label: 'Verhältnismäßigkeit: mildere Mittel (Auflagen, Routenänderung, räumliche Trennung)
+        vor Verbot'
+      weight: 2.5
+      required: true
+      norms:
+      - Art. 8 Abs. 2 GG
+      keywords:
+      - mildere Mittel
+      - Auflagen
+      - Auflage vor Verbot
+      - ultima ratio
+      - Routenänderung
+      - Verhältnismäßigkeit
+      - räumliche Trennung
+      card_slugs:
+      - or-versr-auflagen-verbot-15
+      - or-versr-aufloesung
+    - id: p5
+      label: 'Ergebnis: Antrag begründet, aufschiebende Wirkung wird wiederhergestellt'
+      weight: 1.0
+      required: false
+      keywords:
+      - Antrag ist begründet
+      - Antrag begründet
+      - Wiederherstellung
+      - Antrag hat Erfolg
+      card_slugs:
+      - or-versr-rechtsschutz

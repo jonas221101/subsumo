@@ -1,0 +1,349 @@
+topic:
+  slug: or-vwr-oeffentlich-rechtlicher-vertrag-realakt
+  area: oeffentliches-recht
+  title: Öffentlich-rechtlicher Vertrag, §§ 54 ff. VwVfG, und Realakt
+  parent: oeffentliches-recht
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-vwr-vertrag-begriff-abgrenzung
+  type: definition
+  front: Wann liegt ein öffentlich-rechtlicher Vertrag vor, und wie unterscheidet er sich
+    vom privatrechtlichen Vertrag?
+  back: >-
+    Ein öffentlich-rechtlicher Vertrag ist ein zweiseitiges Rechtsgeschäft, durch das ein
+    Rechtsverhältnis auf dem Gebiet des öffentlichen Rechts begründet, geändert oder aufgehoben
+    wird, § 54 S. 1 VwVfG. Ob ein Vertrag öffentlich-rechtlich oder privatrechtlich ist, bestimmt
+    sich nach dem Vertragsgegenstand, also nach dem Gegenstand und Zweck der Regelung und
+    danach, ob die streitentscheidenden Normen dem öffentlichen Recht angehören; maßgeblich
+    ist die modifizierte Subjektstheorie, nicht die gewählte Bezeichnung. Ein öffentlich-rechtlicher
+    Vertrag liegt vor, wenn sich der Vertrag auf einen Gegenstand bezieht, der öffentlich-rechtlich
+    geregelt ist (z. B. Baugenehmigung, Planung, Subventionsabrede) oder der Vertrag öffentlich-rechtliche
+    Verpflichtungen begründet. Die VwVfG-Regeln (§§ 54 ff.) gelten für öffentlich-rechtliche
+    Verträge der Verwaltung; ergänzend gelten gemäß § 62 S. 2 VwVfG die Vorschriften des BGB
+    entsprechend.
+  norms:
+  - § 54 S. 1 VwVfG
+  - § 62 S. 2 VwVfG
+  quellen: &id001
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vwr-vertrag-koordination-subordination
+  type: definition
+  front: Unterscheide koordinationsrechtliche und subordinationsrechtliche öffentlich-rechtliche
+    Verträge. Wo spielt die Unterscheidung eine Rolle?
+  back: >-
+    Koordinationsrechtliche Verträge werden zwischen gleichgeordneten Rechtsträgern geschlossen,
+    etwa zwei Gemeinden (Zweckvereinbarungen, Verwaltungsabkommen); sie lösen keine hoheitliche
+    Über-/Unterordnung auf. Subordinationsrechtliche Verträge werden zwischen Verwaltung und
+    Bürger geschlossen, in einem Verhältnis, in dem die Behörde sonst durch Verwaltungsakt
+    handeln könnte; hierfür enthält § 54 S. 2 VwVfG die Ermächtigung, einen Vertrag „statt“
+    eines Verwaltungsakts zu schließen. Die Sonderregelungen der §§ 55, 56 VwVfG (Vergleichs-
+    und Austauschvertrag) und die zusätzlichen Nichtigkeitsgründe des § 59 Abs. 2 VwVfG gelten
+    nur für subordinationsrechtliche Verträge. Zwischen Hoheitsträgern gilt § 59 Abs. 1 VwVfG
+    i. V. m. BGB. Die Abgrenzung folgt dem Rechtsverhältnis: Entscheidend ist, ob die Behörde
+    dem Vertragspartner als Träger hoheitlicher Gewalt gegenübersteht, der hoheitliche Anordnungen
+    treffen könnte.
+  norms:
+  - § 54 S. 2 VwVfG
+  - § 55 VwVfG
+  - § 56 VwVfG
+  - § 59 Abs. 2 VwVfG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-vwr-vertrag-vergleichsvertrag-55
+  type: norm
+  front: Was ist ein Vergleichsvertrag nach § 55 VwVfG, und wann ist er zulässig?
+  back: >-
+    Ein öffentlich-rechtlicher Vertrag, durch den eine bei verständiger Würdigung des Sachverhalts
+    oder der Rechtslage bestehende Ungewissheit im Wege gegenseitigen Nachgebens beseitigt
+    wird (Vergleichsvertrag), kann geschlossen werden, wenn die Behörde den Abschluss nach
+    pflichtgemäßem Ermessen zur Beseitigung der Ungewissheit für zweckmäßig hält, § 55 VwVfG.
+    Erforderlich sind also: (1) Ungewissheit über Sach- oder Rechtslage, die sich nicht oder
+    nur mit unverhältnismäßigem Aufwand beseitigen lässt, (2) gegenseitiges Nachgeben und
+    (3) pflichtgemäßes Ermessen der Behörde. Die Ungewissheit muss objektiv bestehen; sie
+    darf nicht bloß vorgeschoben werden. Ein Vergleichsvertrag darf nicht dazu dienen, eindeutig
+    bestehende gesetzliche Pflichten zu umgehen. Fehlt es an den Voraussetzungen und wäre
+    ein inhaltsgleicher Verwaltungsakt rechtswidrig, ist der Vertrag nach § 59 Abs. 2 Nr.
+    3 VwVfG nichtig.
+  norms:
+  - § 55 VwVfG
+  - § 59 Abs. 2 Nr. 3 VwVfG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-vwr-vertrag-austauschvertrag-56
+  type: norm
+  front: Welche Voraussetzungen stellt § 56 VwVfG an den Austauschvertrag?
+  back: >-
+    Ein Austauschvertrag, in dem sich der Vertragspartner der Behörde zu einer Gegenleistung
+    verpflichtet, ist nach § 56 Abs. 1 VwVfG zulässig, wenn (1) die Gegenleistung für einen
+    bestimmten Zweck im Vertrag vereinbart wird, (2) sie der Behörde zur Erfüllung ihrer öffentlichen
+    Aufgaben dient, (3) sie den gesamten Umständen nach angemessen ist und (4) im sachlichen
+    Zusammenhang mit der vertraglichen Leistung der Behörde steht. Besteht auf die Leistung
+    der Behörde ein Anspruch, kann nur eine Gegenleistung vereinbart werden, die Gegenstand
+    einer Nebenbestimmung nach § 36 VwVfG sein könnte, § 56 Abs. 2 VwVfG. Die Regelung verwirklicht
+    das Koppelungsverbot, die Angemessenheit und den Schutz vor „Verkauf von Hoheitsrechten“.
+    Unzulässige Gegenleistungen führen nach § 59 Abs. 2 Nr. 4 VwVfG zur Nichtigkeit. Im Baurecht
+    sind städtebauliche Verträge besonders geregelt (§ 11 BauGB).
+  norms:
+  - § 56 Abs. 1 VwVfG
+  - § 56 Abs. 2 VwVfG
+  - § 59 Abs. 2 Nr. 4 VwVfG
+  - § 36 VwVfG
+  - § 11 BauGB
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  - BauGB, amtliche Fassung
+  stand: 2026-10
+- slug: or-vwr-vertrag-form-zustimmung
+  type: norm
+  front: Welche Form- und Zustimmungserfordernisse gelten für den öffentlich-rechtlichen Vertrag
+    (§§ 57, 58 VwVfG)?
+  back: >-
+    Ein öffentlich-rechtlicher Vertrag ist schriftlich zu schließen, soweit nicht durch Rechtsvorschrift
+    eine andere Form vorgeschrieben ist, § 57 VwVfG. Bei Verstoß ist er nach § 125 BGB i.
+    V. m. § 59 Abs. 1 VwVfG nichtig. Ein Vertrag, der in Rechte eines Dritten eingreift, wird
+    erst wirksam, wenn der Dritte schriftlich zustimmt, § 58 Abs. 1 VwVfG. Ist beim Erlass
+    eines Verwaltungsakts die Genehmigung, Zustimmung oder das Einvernehmen einer anderen
+    Behörde erforderlich, so wird auch ein öffentlich-rechtlicher Vertrag, der anstelle des
+    Verwaltungsakts geschlossen wird, erst wirksam, wenn die andere Behörde in der vorgeschriebenen
+    Form mitgewirkt hat, § 58 Abs. 2 VwVfG. Typisches Beispiel ist das Einvernehmen der Gemeinde
+    nach § 36 BauGB.
+  norms:
+  - § 57 VwVfG
+  - § 58 VwVfG
+  - § 125 BGB
+  - § 36 BauGB
+  quellen: *id001
+  stand: 2026-10
+- slug: or-vwr-vertrag-nichtigkeit-59
+  type: norm
+  front: Wann ist ein öffentlich-rechtlicher Vertrag nichtig, § 59 VwVfG?
+  back: >-
+    Nach § 59 Abs. 1 VwVfG ist ein öffentlich-rechtlicher Vertrag nichtig, wenn sich die Nichtigkeit
+    aus der entsprechenden Anwendung des BGB ergibt (z. B. §§ 125, 134, 138 BGB, Anfechtung
+    nach §§ 119 ff. BGB). Für subordinationsrechtliche Verträge enthält § 59 Abs. 2 VwVfG
+    zusätzliche Nichtigkeitsgründe: Nichtig ist der Vertrag, wenn (1) ein Verwaltungsakt mit
+    entsprechendem Inhalt nichtig wäre, (2) ein Verwaltungsakt mit entsprechendem Inhalt nicht
+    nur wegen eines Verfahrens- oder Formfehlers (§ 46 VwVfG) rechtswidrig wäre und dies den
+    Vertragschließenden bekannt war, (3) die Voraussetzungen zum Abschluss eines Vergleichsvertrags
+    nach § 55 VwVfG nicht vorlagen und ein Verwaltungsakt mit entsprechendem Inhalt rechtswidrig
+    wäre oder (4) sich die Behörde eine nach § 56 VwVfG unzulässige Gegenleistung versprechen
+    lässt. Betrifft die Nichtigkeit nur einen Teil, ist der ganze Vertrag nichtig, wenn er
+    nicht auch ohne den nichtigen Teil geschlossen worden wäre, § 59 Abs. 3 VwVfG.
+  norms:
+  - § 59 Abs. 1 VwVfG
+  - § 59 Abs. 2 VwVfG
+  - § 59 Abs. 3 VwVfG
+  - § 46 VwVfG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-vwr-vertrag-anpassung-kuendigung-60
+  type: norm
+  front: Wann können öffentlich-rechtliche Verträge angepasst oder gekündigt werden (§ 60
+    VwVfG)?
+  back: >-
+    Haben sich die für die Festsetzung des Vertragsinhalts maßgebend gewesenen Verhältnisse
+    seit Vertragsschluss so wesentlich geändert, dass einem Vertragsbeteiligten das Festhalten
+    an der ursprünglichen Regelung nicht zuzumuten ist, so kann dieser eine Anpassung des
+    Vertragsinhalts an die geänderten Verhältnisse verlangen oder, sofern eine Anpassung nicht
+    möglich oder einem Vertragsteil nicht zuzumuten ist, den Vertrag kündigen, § 60 Abs. 1
+    S. 1 VwVfG. Die Behörde kann zudem kündigen, um schwere Nachteile für das Gemeinwohl zu
+    verhüten oder zu beseitigen, § 60 Abs. 1 S. 2 VwVfG. Die Kündigung bedarf der Schriftform,
+    soweit nicht eine andere Form vorgeschrieben ist, § 60 Abs. 2 VwVfG. Die Regelung entspricht
+    dem Wegfall der Geschäftsgrundlage (§ 313 BGB). Für die sofortige Vollstreckung kann sich
+    der Vertragspartner nach § 61 VwVfG unterwerfen.
+  norms:
+  - § 60 VwVfG
+  - § 61 VwVfG
+  - § 313 BGB
+  quellen: *id001
+  stand: 2026-10
+- slug: or-vwr-vertrag-realakt-begriff
+  type: definition
+  front: Was ist ein Realakt, und wie grenzt er sich vom Verwaltungsakt ab?
+  back: >-
+    Ein Realakt (schlicht-hoheitliches Handeln) ist eine hoheitliche Handlung, die auf einen
+    tatsächlichen Erfolg und nicht auf die Setzung einer Rechtsfolge gerichtet ist, z. B.
+    Streifenfahrt, Warnung, Auskunft, Betrieb einer Kläranlage. Anders als der Verwaltungsakt
+    (§ 35 S. 1 VwVfG) enthält er keine Regelung. Bei der Abgrenzung kommt es nach dem objektiven
+    Empfängerhorizont darauf an, ob die Behörde verbindlich eine Rechtsfolge setzen will oder
+    nur tatsächlich handelt oder informiert. Realakte bedürfen als Eingriffe in Grundrechte
+    einer gesetzlichen Ermächtigung (Vorbehalt des Gesetzes). Verwaltungsakt und Realakt können
+    zusammentreffen, etwa wenn die Behörde zuerst per Verwaltungsakt eine Duldung anordnet
+    und dann tatsächlich handelt. Zu trennen ist zudem die Zusicherung (§ 38 VwVfG) als verbindliche
+    Selbstbindung.
+  norms:
+  - § 35 S. 1 VwVfG
+  - § 38 VwVfG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-vwr-vertrag-realakt-rechtsschutz
+  type: norm
+  front: Welcher Rechtsschutz besteht gegen Realakte der Verwaltung?
+  back: >-
+    Gegen Realakte ist die Anfechtungsklage mangels Verwaltungsakts nicht statthaft. In Betracht
+    kommt die allgemeine Leistungsklage (nicht ausdrücklich geregelt, aber anerkannt, vgl.
+    §§ 43 Abs. 2 S. 1, 111, 113 Abs. 4 VwGO), gerichtet auf Unterlassung, Widerruf (z. B.
+    einer ehrenrührigen Äußerung), Folgenbeseitigung oder Vornahme einer Handlung. Daneben
+    ist die Feststellungsklage (§ 43 VwGO) denkbar, soweit die Leistungsklage nicht vorgeht.
+    Die Klagebefugnis wird in analoger Anwendung des § 42 Abs. 2 VwGO verlangt, soweit man
+    sie nicht aus dem Rechtsschutzbedürfnis herleitet. Vorbeugender Rechtsschutz (vorbeugende
+    Unterlassungsklage) setzt ein qualifiziertes Rechtsschutzbedürfnis voraus: Es muss ein
+    hinreichend konkretes Handeln drohen, und es darf nicht zumutbar sein, nachträglichen
+    Rechtsschutz abzuwarten. Eilrechtsschutz ist nach § 123 VwGO zu suchen, nicht nach § 80
+    VwGO. Materiell kommen Unterlassungsanspruch und Folgenbeseitigungsanspruch in Betracht.
+  norms:
+  - § 43 VwGO
+  - § 42 Abs. 2 VwGO analog
+  - § 123 VwGO
+  - § 80 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: or-schema-vwr-vertrag-subordination
+  title: Wirksamkeit eines subordinationsrechtlichen öffentlich-rechtlichen Vertrags
+  norms:
+  - § 54 VwVfG
+  - § 55 VwVfG
+  - § 56 VwVfG
+  - § 57 VwVfG
+  - § 58 VwVfG
+  - § 59 VwVfG
+  quellen: *id001
+  steps:
+  - label: I. Öffentlich-rechtlicher Vertrag, § 54 S. 1 VwVfG
+    hinweis: Abgrenzung zum privatrechtlichen Vertrag nach dem Vertragsgegenstand.
+  - label: II. Subordinationsrechtliches Verhältnis, § 54 S. 2 VwVfG
+  - label: III. Zulässigkeit der Handlungsform
+    children:
+    - label: 1. Keine Rechtsvorschrift, die den Vertrag ausschließt (Vertragsformverbot)
+    - label: 2. Vergleichsvertrag, § 55 VwVfG
+    - label: 3. Austauschvertrag, § 56 VwVfG
+      hinweis: Zweckbindung, Angemessenheit, sachlicher Zusammenhang; bei Anspruch auf die
+        Behördenleistung § 56 Abs. 2 VwVfG.
+  - label: IV. Form und Zustimmungserfordernisse, §§ 57, 58 VwVfG
+  - label: V. Kein Nichtigkeitsgrund, § 59 VwVfG
+    children:
+    - label: 1. § 59 Abs. 1 VwVfG i. V. m. BGB
+    - label: 2. § 59 Abs. 2 Nr. 1 bis 4 VwVfG
+  - label: 'VI. Rechtsfolge: Erfüllungs- bzw. Rückabwicklungsansprüche'
+    hinweis: Bei Nichtigkeit öffentlich-rechtlicher Erstattungsanspruch.
+faelle:
+- slug: or-fall-vwr-vertrag-baugenehmigung-spende
+  title: Baugenehmigung gegen Spende
+  difficulty: 3
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  facts: Bauherr B beantragt bei der Bauaufsichtsbehörde der Stadt S eine Baugenehmigung für
+    ein Einfamilienhaus. Das Vorhaben erfüllt alle bauordnungs- und bauplanungsrechtlichen
+    Voraussetzungen; B hat Anspruch auf die Genehmigung. Der zuständige Sachbearbeiter erklärt,
+    die Genehmigung werde „schneller und problemlos“ erteilt, wenn B der Stadt 20.000 Euro
+    für den allgemeinen städtischen Haushalt zuwende. B und S schließen daraufhin einen schriftlichen
+    Vertrag, in dem sich S zur Erteilung der Baugenehmigung und B zur Zahlung von 20.000 Euro
+    verpflichten. B zahlt und erhält die Genehmigung. Später verlangt B das Geld zurück.
+  question: Ist der Vertrag wirksam? Hat B einen Anspruch auf Rückzahlung der 20.000 Euro?
+  steps:
+  - prompt: Handelt es sich um einen öffentlich-rechtlichen Vertrag, und ist er subordinationsrechtlich?
+    erwartung: Ja. Gegenstand ist die Erteilung einer Baugenehmigung, also hoheitliches Handeln
+      (§ 54 S. 1 VwVfG). Die Behörde steht B in einem Über-/Unterordnungsverhältnis gegenüber
+      und hätte durch Verwaltungsakt handeln können; es liegt ein subordinationsrechtlicher
+      Austauschvertrag vor (§ 54 S. 2 VwVfG, § 56 VwVfG).
+  - prompt: Ist der Vertrag nach § 56 VwVfG zulässig?
+    erwartung: Nein. Die Gegenleistung fließt in den allgemeinen Haushalt und ist nicht für
+      einen bestimmten, im Vertrag vereinbarten Zweck der Aufgabenerfüllung bestimmt; ein
+      sachlicher Zusammenhang mit der Baugenehmigung fehlt (§ 56 Abs. 1 VwVfG). Zudem hatte
+      B einen Anspruch auf die Genehmigung; eine Gegenleistung wäre nur zulässig, wenn sie
+      Gegenstand einer Nebenbestimmung sein könnte (§ 56 Abs. 2 VwVfG), was nicht der Fall
+      ist.
+  - prompt: Welche Rechtsfolge hat dies, und besteht ein Rückzahlungsanspruch?
+    erwartung: Der Vertrag ist nach § 59 Abs. 2 Nr. 4 VwVfG nichtig, da sich die Behörde eine
+      unzulässige Gegenleistung versprechen ließ. Die Zahlung erfolgte ohne Rechtsgrund; B
+      hat gegen S einen öffentlich-rechtlichen Erstattungsanspruch (in entsprechender Anwendung
+      der §§ 812 ff. BGB) auf Rückzahlung der 20.000 Euro. Die Baugenehmigung bleibt als eigenständiger
+      Verwaltungsakt unberührt.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Öffentlich-rechtlicher, subordinationsrechtlicher Vertrag (Austauschvertrag)
+        erkannt
+      weight: 1.5
+      required: false
+      norms:
+      - § 54 VwVfG
+      keywords:
+      - öffentlich-rechtlicher Vertrag
+      - § 54 S. 2 VwVfG
+      - subordinationsrechtlich
+      - Austauschvertrag
+      - Über-/Unterordnung
+      card_slugs:
+      - or-vwr-vertrag-begriff-abgrenzung
+      - or-vwr-vertrag-koordination-subordination
+    - id: p2
+      label: Unzulässigkeit der Gegenleistung nach § 56 VwVfG (Zweckbindung, sachlicher Zusammenhang,
+        Anspruch auf Genehmigung)
+      weight: 3.0
+      required: true
+      norms:
+      - § 56 Abs. 1 VwVfG
+      - § 56 Abs. 2 VwVfG
+      keywords:
+      - § 56 Abs. 1 VwVfG
+      - § 56 Abs. 2 VwVfG
+      - sachlicher Zusammenhang
+      - Koppelungsverbot
+      - allgemeiner Haushalt
+      - keine Zweckbindung
+      - Anspruch auf die Genehmigung
+      card_slugs:
+      - or-vwr-vertrag-austauschvertrag-56
+    - id: p3
+      label: Nichtigkeit nach § 59 Abs. 2 Nr. 4 VwVfG
+      weight: 2.5
+      required: true
+      norms:
+      - § 59 Abs. 2 Nr. 4 VwVfG
+      keywords:
+      - § 59 Abs. 2 Nr. 4 VwVfG
+      - nichtig
+      - Nichtigkeit
+      - unzulässige Gegenleistung
+      card_slugs:
+      - or-vwr-vertrag-nichtigkeit-59
+    - id: p4
+      label: 'Rückzahlungsanspruch: öffentlich-rechtlicher Erstattungsanspruch'
+      weight: 2.0
+      required: true
+      keywords:
+      - öffentlich-rechtlicher Erstattungsanspruch
+      - Erstattungsanspruch
+      - § 812 BGB analog
+      - ohne Rechtsgrund
+      - Rückzahlung
+      - Rückforderung
+      card_slugs:
+      - or-vwr-vertrag-nichtigkeit-59
+    - id: p5
+      label: Schriftform eingehalten (§ 57 VwVfG), daher Nichtigkeit nicht aus Formmangel
+      weight: 1.0
+      required: false
+      norms:
+      - § 57 VwVfG
+      keywords:
+      - § 57 VwVfG
+      - Schriftform
+      - schriftlich geschlossen
+      card_slugs:
+      - or-vwr-vertrag-form-zustimmung
