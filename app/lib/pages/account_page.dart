@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import '../api.dart';
 import '../design/design.dart';
 import '../state.dart';
+import 'beta_feedback.dart';
 import '../theme.dart';
 import 'checkout_page.dart';
 
@@ -320,7 +321,10 @@ class _AccountPageState extends State<AccountPage> {
   Widget build(BuildContext context) {
     final app = AppScope.of(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('Konto')),
+      appBar: AppBar(
+        title: const Text('Konto'),
+        actions: const [BetaFeedbackAction(screen: 'Konto')],
+      ),
       body: ReadableWidth(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(Spacing.lg),

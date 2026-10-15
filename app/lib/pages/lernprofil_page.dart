@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../design/design.dart';
 import '../state.dart';
+import 'beta_feedback.dart';
 import '../theme.dart';
 
 /// Lernprofil (docs/33-individualisierung.md): alles, was die App an den
@@ -13,7 +14,7 @@ import '../theme.dart';
 /// Speichern ersetzt das Profil komplett (`PUT /v1/me/lernprofil`).
 const _ziele = {
   'orientierung': 'Orientierung (erste Semester)',
-  'zwischenpruefung': 'Zwischenpruefung',
+  'zwischenpruefung': 'Zwischenprüfung',
   'semesterklausur': 'Semesterklausuren',
   'examen': 'Examen',
   'wiederholung': 'Wiederholung / Auffrischung',
@@ -22,7 +23,7 @@ const _ziele = {
 const _areaLabels = {
   'zivilrecht': 'Zivilrecht',
   'strafrecht': 'Strafrecht',
-  'oeffentliches-recht': 'Oeffentliches Recht',
+  'oeffentliches-recht': 'Öffentliches Recht',
 };
 
 const _wochentage = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
@@ -129,15 +130,18 @@ class _LernprofilPageState extends State<LernprofilPage> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('Lernprofil')),
+      appBar: AppBar(
+        title: const Text('Lernprofil'),
+        actions: const [BetaFeedbackAction(screen: 'Lernprofil')],
+      ),
       body: ReadableWidth(
         child: ListView(
           padding: const EdgeInsets.all(Spacing.lg),
           children: [
             Text(
-              'Jede Einstellung hier veraendert, was die App dir vorlegt: welche Karten '
+              'Jede Einstellung hier verändert, was die App dir vorlegt: welche Karten '
               'zuerst kommen, wie oft du wiederholst, wie der Plan deine Woche einteilt '
-              'und was der naechste Schritt ist.',
+              'und was der nächste Schritt ist.',
               style: theme.textTheme.bodySmall,
             ),
             const SizedBox(height: Spacing.lg),
@@ -235,7 +239,7 @@ class _LernprofilPageState extends State<LernprofilPage> {
             const SizedBox(height: Spacing.md),
             SwitchListTile(
               contentPadding: EdgeInsets.zero,
-              title: const Text('Woechentliche Klausur unter Examensbedingungen'),
+              title: const Text('Wöchentliche Klausur unter Examensbedingungen'),
               subtitle: const Text('Ab der Vertiefungsphase ein fester Klausurtag pro Woche.'),
               value: _wochenklausur,
               onChanged: (v) => setState(() => _wochenklausur = v),
@@ -265,7 +269,7 @@ class _LernprofilPageState extends State<LernprofilPage> {
               onChanged: (v) => setState(() => _neueKarten = v.round()),
             ),
             const SizedBox(height: Spacing.lg),
-            _section(theme, 'Gedaechtnis'),
+            _section(theme, 'Gedächtnis'),
             Text(
               'Wie sicher sollen Karten sitzen? Verschiebt die Ziel-Retention der '
               'Wiederholungsplanung um vier Prozentpunkte nach unten oder oben.',
@@ -289,7 +293,7 @@ class _LernprofilPageState extends State<LernprofilPage> {
             _section(theme, 'Themen: Fokus und Pause'),
             Text(
               'Fokus zieht ein Thema im Stapel und im Plan nach vorn (Faktor 1,5). Pause '
-              'nimmt es komplett heraus - fuer Stoff, den du anderswo abgedeckt hast.',
+              'nimmt es komplett heraus - für Stoff, den du anderswo abgedeckt hast.',
               style: theme.textTheme.bodySmall,
             ),
             const SizedBox(height: Spacing.xs),
@@ -304,7 +308,7 @@ class _LernprofilPageState extends State<LernprofilPage> {
             const SizedBox(height: Spacing.lg),
             _section(theme, 'Eigene Decks'),
             Text(
-              'Eine eigene Themenauswahl, z. B. fuer die naechste Vorlesungsklausur - '
+              'Eine eigene Themenauswahl, z. B. für die nächste Vorlesungsklausur - '
               'lernbar wie jedes Kurs-Deck.',
               style: theme.textTheme.bodySmall,
             ),
@@ -444,7 +448,7 @@ class _DeckDialogState extends State<_DeckDialog> {
       return;
     }
     if (_auswahl.isEmpty) {
-      setState(() => _fehler = 'Mindestens ein Thema auswaehlen.');
+      setState(() => _fehler = 'Mindestens ein Thema auswählen.');
       return;
     }
     var slug = 'mein-${slugify(titel)}';

@@ -94,6 +94,7 @@ class _BetaFeedbackDialogState extends State<_BetaFeedbackDialog> {
               const SizedBox(height: Spacing.md),
               DropdownButtonFormField<String>(
                 initialValue: _category,
+                isExpanded: true,
                 decoration: const InputDecoration(labelText: 'Art'),
                 items: [
                   for (final c in _categories)
@@ -128,6 +129,30 @@ class _BetaFeedbackDialogState extends State<_BetaFeedbackDialog> {
           child: Text(_sending ? 'Sende ...' : 'Senden'),
         ),
       ],
+    );
+  }
+}
+
+/// Feedback-Schaltflaeche fuer `AppBar.actions` von per Navigator gepushten
+/// Screens (Fall, Deck, Konto ...). Rendert nur im Test-Zugang ([kBetaMode],
+/// oder erzwungen ueber [force] in Tests) und sonst nichts. [screen] landet
+/// als Bereichsangabe im Feedback, z. B. "Fall: Wohnungseinbruchdiebstahl".
+class BetaFeedbackAction extends StatelessWidget {
+  const BetaFeedbackAction({required this.screen, this.force = false, super.key});
+
+  final String screen;
+
+  /// Nur fuer Tests: `kBetaMode` ist eine Compile-Zeit-Konstante.
+  @visibleForTesting
+  final bool force;
+
+  @override
+  Widget build(BuildContext context) {
+    if (!kBetaMode && !force) return const SizedBox.shrink();
+    return IconButton(
+      tooltip: 'Feedback geben',
+      icon: const Icon(Icons.rate_review_outlined),
+      onPressed: () => showBetaFeedbackDialog(context, screen: screen),
     );
   }
 }
