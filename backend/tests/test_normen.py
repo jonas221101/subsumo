@@ -12,12 +12,17 @@ from app.services import normen
 FIXTURE_BGB = {
     "§ 433": {
         "titel": "Vertragstypische Pflichten beim Kaufvertrag",
-        "text": "(1) Durch den Kaufvertrag wird der Verkaeufer verpflichtet.\n(2) Der Kaeufer ist verpflichtet.",
+        "text": (
+            "(1) Durch den Kaufvertrag wird der Verkaeufer verpflichtet.\n"
+            "(2) Der Kaeufer ist verpflichtet."
+        ),
     },
     "§ 280": {"titel": "Schadensersatz", "text": "(1) Verletzt der Schuldner ..."},
 }
 FIXTURE_GG = {"Art. 12": {"titel": "", "text": "(1) Alle Deutschen ...\n(2) Niemand ..."}}
-FIXTURE_EGBGB = {"Art. 246a § 1": {"titel": "Informationspflichten", "text": "(1) Der Unternehmer ..."}}
+FIXTURE_EGBGB = {
+    "Art. 246a § 1": {"titel": "Informationspflichten", "text": "(1) Der Unternehmer ..."}
+}
 
 
 @pytest.fixture
