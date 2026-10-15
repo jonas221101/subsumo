@@ -1,0 +1,400 @@
+topic:
+  slug: zr-bereicherung-mehrpersonen
+  area: zivilrecht
+  title: >-
+    Bereicherung im Mehrpersonenverhältnis: Anweisung, Durchgriff, § 816, § 822, Saldotheorie
+  parent: zr-bereicherungsrecht-leistungskondiktion
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-bmp-grundsatz-leistungsbeziehung
+  type: definition
+  front: >-
+    Warum erfolgt die Rückabwicklung im Mehrpersonenverhältnis grundsätzlich entlang
+    der Leistungsbeziehungen?
+  back: >-
+    Der Vorrang der Leistungskondiktion (Subsidiarität der Nichtleistungskondiktion)
+    besagt, dass ein Bereicherungsausgleich in erster Linie zwischen den Parteien
+    stattfindet, die durch eine Leistung verbunden sind. Leistung ist die bewusste
+    und zweckgerichtete Mehrung fremden Vermögens; maßgeblich ist der objektive Empfängerhorizont
+    (Zweckbestimmung des Leistenden aus Sicht eines verständigen Empfängers). Dahinter
+    steht der Gedanke, dass jeder Beteiligte sich seinen Vertragspartner ausgesucht
+    hat und dessen Einwendungen sowie Insolvenzrisiko tragen soll; ein Durchgriff
+    auf Dritte würde diese Risikoverteilung unterlaufen. Prüfungsreihenfolge: Erst
+    klären, wer an wen geleistet hat (Zuordnung der Leistungen), dann den Mangel im
+    jeweiligen Rechtsverhältnis lokalisieren.
+  norms:
+  - § 812 Abs. 1 S. 1 Alt. 1 BGB
+  - § 812 Abs. 1 S. 1 Alt. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-bmp-anweisung-dreieck
+  type: definition
+  front: >-
+    Wie sind Deckungs- und Valutaverhältnis bei der Anweisung strukturiert, und wer
+    leistet an wen?
+  back: >-
+    Bei der Anweisung weist der Anweisende (A) den Angewiesenen (B) an, an den Empfänger
+    (C) zu leisten. Zu unterscheiden sind das Deckungsverhältnis zwischen A und B
+    (warum B für A leistet, z. B. Girovertrag oder Auftrag) und das Valutaverhältnis
+    zwischen A und C (warum A dem C etwas zuwenden will, z. B. Kaufvertrag, Schenkung).
+    Die Zahlung des B an C ist eine Leistung des B an A (im Deckungsverhältnis) und
+    zugleich eine Leistung des A an C (im Valutaverhältnis). Wichtig: Es entsteht
+    keine Leistungsbeziehung zwischen B und C. Praktisch bedeutsam ist dies bei Überweisungen,
+    Scheck und Lieferung auf Anweisung. Der Bereicherungsausgleich folgt dem jeweils
+    gestörten Verhältnis.
+  norms:
+  - § 812 Abs. 1 S. 1 Alt. 1 BGB
+  - § 675f BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-bmp-anweisung-mangel
+  type: streitstand
+  front: >-
+    Wie wird die Anweisung bereicherungsrechtlich abgewickelt, wenn ein Mangel im
+    Deckungs- oder Valutaverhältnis vorliegt?
+  back: >-
+    Ist nur das Deckungsverhältnis (A–B) fehlerhaft, kondiziert B bei A, denn B hat
+    an A geleistet; ein Durchgriff auf C ist ausgeschlossen. Ist nur das Valutaverhältnis
+    (A–C) mangelhaft, kondiziert A bei C, weil A an C geleistet hat; B hat gegen A
+    einen Aufwendungsersatzanspruch aus dem Deckungsverhältnis (z. B. §§ 675c, 670
+    BGB). Beim Doppelmangel (beide Verhältnisse fehlerhaft) bleibt es nach der heute
+    herrschenden Lehre bei der Abwicklung entlang der Leistungsbeziehungen: B kondiziert
+    bei A, A bei C. Ein Direktanspruch des B gegen C wird überwiegend abgelehnt, weil
+    er A als Zwischenglied mit seinen Einwendungen und dem Insolvenzrisiko des jeweiligen
+    Partners umgehen würde. Teile der älteren Rechtsprechung ließen den Durchgriff
+    zu.
+  norms:
+  - § 812 Abs. 1 S. 1 Alt. 1 BGB
+  - § 670 BGB
+  - § 675c BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-bmp-fehlende-anweisung
+  type: streitstand
+  front: >-
+    Was gilt, wenn die Anweisung fehlt, widerrufen oder dem Anweisenden nicht zurechenbar
+    ist?
+  back: >-
+    Fehlt die Anweisung (z. B. gefälschter Überweisungsauftrag, Geschäftsunfähigkeit
+    oder wirksamer Widerruf), leistet der Angewiesene nicht für den Anweisenden. Es
+    fehlt dann an einer Leistung des A an C und an einer Leistung des B an A, soweit
+    B bei objektiver Betrachtung nicht als Leistender für A auftritt. Nach h. M. kann
+    B den Empfänger C unmittelbar nach § 812 Abs. 1 S. 1 Alt. 2 BGB (Nichtleistungskondiktion
+    in Form der Rückgriffskondiktion) in Anspruch nehmen. Maßgeblich ist, ob der Empfänger
+    die Zahlung als Leistung des Anweisenden verstehen durfte und ob dieser sie zurechenbar
+    veranlasst hat (Zurechnung nach Rechtsscheingesichtspunkten). Ob C bereits Rechtsscheinschutz
+    hat, ist ein wichtiger Streitpunkt; im Zahlungsdiensterecht regeln §§ 675u ff.
+    BGB Erstattungsansprüche des Kunden gegen seine Bank.
+  norms:
+  - § 812 Abs. 1 S. 1 Alt. 2 BGB
+  - § 675u BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-bmp-leistungskette-durchgriff
+  type: streitstand
+  front: >-
+    Warum ist bei der Leistungskette ein Durchgriff vom ersten auf das letzte Glied
+    grundsätzlich ausgeschlossen?
+  back: >-
+    In der Leistungskette (A liefert an B, B an C, und zwar durch Direktlieferung
+    des A an C) leistet jeder an seinen Vertragspartner. Ist das Verhältnis A–B fehlerhaft,
+    kann A nur B in Anspruch nehmen, nicht den Endempfänger C (Vorrang der Leistungsbeziehungen).
+    Der Durchgriff würde C wegen Mängeln in einem Verhältnis haften lassen, in das
+    er nicht eingebunden ist, ihm Einwendungen aus seinem Vertrag mit B abschneiden
+    und das Insolvenzrisiko des B auf C verlagern. Ausnahmen sind gesetzlich angeordnet,
+    etwa § 822 BGB (unentgeltliche Weitergabe), § 816 Abs. 1 S. 2 BGB (unentgeltliche
+    Verfügung eines Nichtberechtigten) und bei Scheingeschäften oder fehlender Zurechenbarkeit.
+    Allgemeine Durchgriffskondiktion gibt es deshalb nicht.
+  norms:
+  - § 822 BGB
+  - § 816 Abs. 1 S. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-bmp-822
+  type: norm
+  front: Wann haftet ein Dritter nach § 822 BGB auf Herausgabe?
+  back: >-
+    Hat der Empfänger das Erlangte unentgeltlich einem Dritten zugewendet, ist dieser
+    anstelle des Empfängers zur Herausgabe verpflichtet, soweit durch die Zuwendung
+    die Verpflichtung des Empfängers zur Herausgabe ausgeschlossen ist (§ 822 BGB).
+    Voraussetzungen: (1) Bereicherungsanspruch gegen den Empfänger (z. B. aus Leistungskondiktion),
+    (2) unentgeltliche Zuwendung an den Dritten, (3) Wegfall der Haftung des Empfängers
+    wegen Entreicherung (§ 818 Abs. 3 BGB), und zwar gerade infolge dieser Zuwendung.
+    Der Dritte haftet nur im Umfang seiner Bereicherung und hat gegen den ersten Schuldner
+    keinen Ausgleichsanspruch. Die Vorschrift ist ein Ausnahmefall der Dritthaftung
+    und schützt den Gläubiger vor dem Entreicherungseinwand des Zwischenempfängers.
+  norms:
+  - § 822 BGB
+  - § 818 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-bmp-816-abs1
+  type: norm
+  front: Welche Voraussetzungen und Rechtsfolgen hat § 816 Abs. 1 BGB?
+  back: >-
+    § 816 Abs. 1 S. 1 BGB gibt dem Berechtigten einen Anspruch gegen den Nichtberechtigten,
+    der über einen Gegenstand verfügt hat, wenn die Verfügung dem Berechtigten gegenüber
+    wirksam ist (etwa durch gutgläubigen Erwerb nach §§ 932 ff. BGB oder Genehmigung
+    nach § 185 Abs. 2 BGB) und der Nichtberechtigte entgeltlich verfügt hat. Herauszugeben
+    ist das durch die Verfügung Erlangte, also der Erlös; ob darüber hinaus ein erzielter
+    Mehrerlös herauszugeben ist, ist streitig. Genehmigt der Berechtigte eine unwirksame
+    Verfügung, verzichtet er auf den dinglichen Anspruch zugunsten des Erlöses (Wahlrecht).
+    Erfolgt die Verfügung unentgeltlich, ist der Erwerber selbst zur Herausgabe verpflichtet
+    (§ 816 Abs. 1 S. 2 BGB); der Anspruch richtet sich dann gegen ihn, nicht gegen
+    den Verfügenden.
+  norms:
+  - § 816 Abs. 1 S. 1 BGB
+  - § 816 Abs. 1 S. 2 BGB
+  - § 185 Abs. 2 BGB
+  - § 932 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-bmp-816-abs2
+  type: norm
+  front: Wann besteht ein Anspruch nach § 816 Abs. 2 BGB?
+  back: >-
+    Wird an einen Nichtberechtigten eine Leistung bewirkt, die dem Berechtigten gegenüber
+    wirksam ist, hat der Nichtberechtigte das Geleistete an den Berechtigten herauszugeben
+    (§ 816 Abs. 2 BGB). Typische Fallgruppen: Zahlung des Schuldners an den Altgläubiger
+    nach Abtretung ohne Kenntnis (§ 407 BGB), Leistung an den Scheinerben (Erbschein,
+    § 2367 BGB), Leistung an den Inhaber einer Schuldurkunde. Gegenstand der Leistung
+    kann Geld, aber auch ein Sachwert sein. Anspruchsgegner ist der Nichtberechtigte
+    (Empfänger), nicht der Leistende. Ob die Leistung dem Berechtigten gegenüber wirksam
+    ist, ist anhand der jeweiligen Schutzvorschrift zu prüfen; fehlt sie, bleibt der
+    Schuldner dem Berechtigten weiter zur Leistung verpflichtet.
+  norms:
+  - § 816 Abs. 2 BGB
+  - § 407 BGB
+  - § 2367 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-bmp-saldotheorie
+  type: streitstand
+  front: >-
+    Was besagt die Saldotheorie, und wie unterscheidet sie sich von der Zweikondiktionentheorie?
+  back: >-
+    Bei der Rückabwicklung gegenseitiger, nichtiger oder angefochtener Verträge entstehen
+    zwei Bereicherungsansprüche. Nach der Zweikondiktionentheorie stehen sie selbständig
+    nebeneinander; jeder Teil kann sich auf Wegfall der Bereicherung (§ 818 Abs. 3
+    BGB) berufen, sodass etwa der Käufer, dessen Kaufsache zufällig untergegangen
+    ist, den vollen Kaufpreis zurückverlangen kann, ohne Wertersatz zu schulden. Die
+    Saldotheorie (Rechtsprechung, früher h. M.) verrechnet die Ansprüche zu einem
+    einzigen Saldo; wer die Gegenleistung nicht mehr herausgeben kann, ist nicht entreichert,
+    weil sein Anspruch auf Rückzahlung des Preises um den Wert der untergegangenen
+    Sache gekürzt wird. Sie wird aus dem faktischen Synallagma abgeleitet. Ausnahmen:
+    Schutzbedürftige wie Minderjährige und arglistig Getäuschte sollen sich auf §
+    818 Abs. 3 BGB berufen können (BGHZ 53, 144).
+  norms:
+  - § 818 Abs. 3 BGB
+  - § 812 Abs. 1 S. 1 Alt. 1 BGB
+  quellen:
+  - BGHZ 53, 144
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-bmp-818-abs3
+  type: norm
+  front: >-
+    Wann entfällt die Bereicherung nach § 818 Abs. 3 BGB, und wie wirken §§ 818 Abs.
+    4, 819 BGB?
+  back: >-
+    Die Herausgabepflicht ist ausgeschlossen, soweit der Empfänger nicht mehr bereichert
+    ist (§ 818 Abs. 3 BGB). Es kommt auf einen Vergleich des heutigen Vermögens mit
+    dem Vermögen ohne den Erwerb an (Saldierung). Entreicherung liegt etwa vor, wenn
+    das Erlangte untergegangen ist oder wenn es ersatzlos weggegeben wurde (Schenkung
+    an Dritte, dann ggf. § 822 BGB). Vermögensnachteile, die der Empfänger im Vertrauen
+    auf den Fortbestand des Erwerbs erlitten hat (etwa Ausgaben, die er sonst nicht
+    getätigt hätte), mindern die Bereicherung; ersparte eigene Aufwendungen bleiben
+    dagegen als Bereicherung bestehen. Die Beweislast für die Entreicherung trägt
+    der Empfänger. Mit Rechtshängigkeit (§ 818 Abs. 4) und bei Kenntnis des Mangels
+    (§ 819 Abs. 1) haftet der Empfänger nach den allgemeinen Vorschriften und kann
+    sich nicht mehr auf Entreicherung berufen.
+  norms:
+  - § 818 Abs. 3 BGB
+  - § 818 Abs. 4 BGB
+  - § 819 Abs. 1 BGB
+  - § 822 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: zr-schema-bmp-anweisung
+  title: Bereicherungsausgleich in Anweisungsfällen
+  norms:
+  - § 812 Abs. 1 S. 1 Alt. 1 BGB
+  - § 812 Abs. 1 S. 1 Alt. 2 BGB
+  - § 818 Abs. 3 BGB
+  - § 822 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Zuordnung der Leistungen
+    children:
+    - label: >-
+        1. Wer hat wem etwas zugewendet (Anweisender, Angewiesener, Empfänger)?
+    - label: 2. Anweisung vorhanden und dem Anweisenden zurechenbar?
+      hinweis: >-
+        Fehlt sie, scheidet die Leistung des Angewiesenen für den Anweisenden aus;
+        dann Kondiktion gegen den Empfänger (Nichtleistung).
+  - label: II. Lokalisierung des Mangels
+    children:
+    - label: >-
+        1. Deckungsverhältnis fehlerhaft: Kondiktion Angewiesener gegen Anweisenden
+    - label: '2. Valutaverhältnis fehlerhaft: Kondiktion Anweisender gegen Empfänger'
+    - label: '3. Doppelmangel: Kondiktion jeweils im eigenen Verhältnis'
+      hinweis: Kein Durchgriff des Angewiesenen auf den Empfänger.
+  - label: III. Anspruch aus § 812 Abs. 1 S. 1 Alt. 1 BGB
+    children:
+    - label: 1. etwas erlangt
+    - label: 2. durch Leistung
+    - label: 3. ohne Rechtsgrund
+  - label: IV. Umfang und Einwendungen
+    hinweis: >-
+      § 818 Abs. 1, 2 BGB, Entreicherung § 818 Abs. 3 BGB, verschärfte Haftung §§
+      818 Abs. 4, 819 BGB.
+  - label: V. Dritthaftung
+    hinweis: Bei unentgeltlicher Weitergabe § 822 BGB.
+faelle:
+- slug: zr-fall-bmp-ueberweisung-kaufpreis
+  title: Der angefochtene Laptopkauf
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    A kauft von V einen Laptop und erklärt sich beim Preis versehentlich mit 1.200
+    Euro einverstanden, obwohl er 120 Euro erklären wollte; V hielt den Preis für
+    zutreffend, ohne den Irrtum zu erkennen. A weist seine Bank B an, 1.200 Euro an
+    V zu überweisen. B führt die Überweisung wirksam aus. V schenkt davon 1.000 Euro
+    sofort seinem Sohn S, der nichts vom Hintergrund weiß; 200 Euro hat V noch. Nachdem
+    A den Irrtum bemerkt, ficht er den Kaufvertrag unverzüglich an. Das Girovertragsverhältnis
+    zwischen A und B war in Ordnung; der Laptop ist noch nicht geliefert.
+  question: Welche Ansprüche bestehen zwischen B, A, V und S (ohne § 122 BGB)?
+  steps:
+  - prompt: Wer hat an wen geleistet, und wie ist das Verhältnis der Beteiligten?
+    erwartung: >-
+      Anweisungsfall. Deckungsverhältnis A–B, Valutaverhältnis A–V. Die Zahlung der
+      B an V ist Leistung der B an A und Leistung des A an V. Zwischen B und V besteht
+      keine Leistungsbeziehung.
+  - prompt: Hat B einen Anspruch gegen V oder gegen A?
+    erwartung: >-
+      Kein Anspruch gegen V (kein Durchgriff). Gegen A hat B Aufwendungsersatz aus
+      dem wirksamen Deckungsverhältnis (§§ 675c, 670 BGB); das Deckungsverhältnis
+      ist fehlerfrei, B kann ohne Weiteres belasten.
+  - prompt: Hat A einen Anspruch gegen V auf Rückzahlung?
+    erwartung: >-
+      Ja, § 812 Abs. 1 S. 1 Alt. 1 BGB: V hat 1.200 Euro durch Leistung des A erlangt;
+      der Kaufvertrag ist nach Anfechtung wegen Erklärungsirrtums von Anfang an nichtig
+      (§§ 119 Abs. 1, 142 Abs. 1 BGB), also fehlt der Rechtsgrund.
+  - prompt: Kann V sich auf Entreicherung berufen?
+    erwartung: >-
+      Ja, in Höhe von 1.000 Euro, die er unentgeltlich an S weitergegeben hat (§ 818
+      Abs. 3 BGB). V kannte die Anfechtbarkeit nicht und musste sie nicht kennen (kein
+      § 142 Abs. 2 BGB), eine verschärfte Haftung nach § 819 BGB besteht nicht. Nur
+      200 Euro schuldet er.
+  - prompt: Haftet S?
+    erwartung: >-
+      Ja, A kann von S 1.000 Euro nach § 822 BGB verlangen: V hat unentgeltlich an
+      S zugewendet, und dadurch ist V von seiner Herausgabepflicht frei geworden.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Dreiecksverhältnis (Anweisung) mit Deckungs- und Valutaverhältnis erkannt
+      weight: 2.0
+      required: true
+      norms:
+      - § 812 Abs. 1 S. 1 Alt. 1 BGB
+      keywords:
+      - Anweisung
+      - Deckungsverhältnis
+      - Valutaverhältnis
+      - Leistung des A an V
+      - Anweisungsfall
+      card_slugs:
+      - zr-bmp-anweisung-dreieck
+    - id: p2
+      label: Kein Durchgriff der B gegen V; Aufwendungsersatzanspruch gegen A
+      weight: 1.5
+      required: false
+      norms:
+      - § 670 BGB
+      keywords:
+      - kein Durchgriff
+      - Aufwendungsersatz
+      - § 670 BGB
+      - § 675c BGB
+      - Leistungsbeziehung
+      card_slugs:
+      - zr-bmp-anweisung-mangel
+      - zr-bmp-leistungskette-durchgriff
+    - id: p3
+      label: >-
+        Leistungskondiktion A gegen V: Anfechtung führt zu fehlendem Rechtsgrund
+      weight: 2.5
+      required: true
+      norms:
+      - § 812 Abs. 1 S. 1 Alt. 1 BGB
+      - § 142 Abs. 1 BGB
+      keywords:
+      - § 812 Abs. 1 S. 1 Alt. 1
+      - Rechtsgrund
+      - Anfechtung
+      - § 142 Abs. 1
+      - nichtig
+      card_slugs:
+      - zr-bmp-anweisung-mangel
+      - zr-bmp-grundsatz-leistungsbeziehung
+    - id: p4
+      label: Entreicherung des V in Höhe von 1.000 Euro, keine verschärfte Haftung
+      weight: 2.0
+      required: true
+      norms:
+      - § 818 Abs. 3 BGB
+      - § 819 Abs. 1 BGB
+      keywords:
+      - Entreicherung
+      - § 818 Abs. 3
+      - Wegfall der Bereicherung
+      - unentgeltlich weitergegeben
+      - verschärfte Haftung
+      card_slugs:
+      - zr-bmp-818-abs3
+    - id: p5
+      label: Anspruch A gegen S aus § 822 BGB in Höhe von 1.000 Euro
+      weight: 2.0
+      required: true
+      norms:
+      - § 822 BGB
+      keywords:
+      - § 822
+      - unentgeltliche Zuwendung
+      - Dritthaftung
+      - unentgeltliche Weitergabe
+      - Herausgabe durch den Dritten
+      card_slugs:
+      - zr-bmp-822
+  stand: 2026-10
