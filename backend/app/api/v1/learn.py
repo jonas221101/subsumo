@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 
 from fastapi import APIRouter, HTTPException, Query, status
 from sqlalchemy import or_, select
@@ -27,6 +27,14 @@ router = APIRouter(tags=["lernen"])
 # Semester und zaehlt fuer die Coverage.
 MATURE_STABILITY_DAYS = 21.0
 
+# Zeitfenster fuer ``reviewed_at``: Die Offline-Outbox sendet Bewertungen der
+# letzten Tage nach (7 Tage Puffer, z. B. Urlaub ohne Netz), Zukunft nur im
+# Rahmen normaler Uhr-Abweichung.
+REVIEW_MAX_AGE = timedelta(days=7)
+REVIEW_FUTURE_TOLERANCE = timedelta(minutes=5)
+# Antwortzeit: ueber 10 Minuten ist die Karte offen liegen geblieben.
+MAX_ELAPSED_MS = 600_000
+
 
 def _to_state(row: UserCard) -> srs.CardState:
     return srs.CardState(
@@ -37,6 +45,7 @@ def _to_state(row: UserCard) -> srs.CardState:
         reps=row.reps,
         lapses=row.lapses,
         state=row.state,
+        step=row.step or 0,
     )
 
 
@@ -64,6 +73,10 @@ def due_cards(
     """
     now = datetime.now(UTC)
     settings = get_settings()
+
+    # Unbekanntes Thema ist wie ein unbekanntes Deck ein 404, nicht eine leere Liste.
+    if topic and db.query(Topic.id).filter(Topic.slug == topic).first() is None:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, "Thema nicht gefunden")
 
     # Lernprofil (docs/33): pausierte Themen fallen weg, neue Karten pro Tag
     # kommen aus dem Profil, Fokus/Schwerpunkt sortiert neue Karten nach vorn.
@@ -164,15 +177,21 @@ def submit_reviews(payload: ReviewBatchIn, user: CurrentUser, db: DbSession) -> 
     Doppelte Uebertragungen (Netzabbruch, Retry) werden still verworfen; der
     Client muss nicht wissen, was schon angekommen ist.
     """
-    applied = duplicates = 0
+    applied = duplicates = clamped = 0
+    now = datetime.now(UTC)
     unknown: list[str] = []
     results: list[ReviewResultOut] = []
     # Sicherheitsniveau aus dem Lernprofil verschiebt die Ziel-Retention
     # (docs/33 Abschnitt 4.3) - identisch fuer jede Karte dieses Batches.
     profil = lernprofil.get_profil(user)
 
-    for item in sorted(payload.reviews, key=lambda r: r.reviewed_at):
-        if db.query(Review).filter_by(client_id=item.client_id).first():
+    def _aware(value: datetime) -> datetime:
+        return value if value.tzinfo is not None else value.replace(tzinfo=UTC)
+
+    for item in sorted(payload.reviews, key=lambda r: _aware(r.reviewed_at)):
+        # Idempotenz pro Nutzer: dieselbe client_id eines anderen Nutzers ist
+        # kein Duplikat.
+        if db.query(Review).filter_by(user_id=user.id, client_id=item.client_id).first():
             duplicates += 1
             continue
         card = db.query(Card).filter_by(slug=item.card_slug).one_or_none()
@@ -180,15 +199,49 @@ def submit_reviews(payload: ReviewBatchIn, user: CurrentUser, db: DbSession) -> 
             unknown.append(item.card_slug)
             continue
 
+        reviewed_at = _aware(item.reviewed_at)
+        # Zeitstempel klemmen statt ablehnen: Ein abgelehnter Eintrag bliebe
+        # fuer immer in der Offline-Outbox haengen und der Retry scheiterte
+        # endlos. Uhr-Abweichungen des Geraets (Zukunft) und sehr alte
+        # Eintraege werden auf die Grenze gesetzt, die Bewertung zaehlt.
+        if reviewed_at > now + REVIEW_FUTURE_TOLERANCE:
+            reviewed_at = now
+            clamped += 1
+        elif reviewed_at < now - REVIEW_MAX_AGE:
+            reviewed_at = now - REVIEW_MAX_AGE
+            clamped += 1
+
         row = db.query(UserCard).filter_by(user_id=user.id, card_id=card.id).one_or_none()
         if row is None:
-            row = UserCard(user_id=user.id, card_id=card.id, due=item.reviewed_at)
+            row = UserCard(user_id=user.id, card_id=card.id, due=reviewed_at)
             db.add(row)
             db.flush()
 
-        reviewed_at = item.reviewed_at
-        if reviewed_at.tzinfo is None:
-            reviewed_at = reviewed_at.replace(tzinfo=UTC)
+        # Eine rueckdatierte Bewertung (aelter als die juengste bekannte) wird
+        # protokolliert, dreht den Kartenzustand aber nicht zurueck.
+        last = as_utc(row.last_review)
+        if last is not None and reviewed_at < last:
+            db.add(
+                Review(
+                    client_id=item.client_id,
+                    user_id=user.id,
+                    card_id=card.id,
+                    rating=item.rating,
+                    reviewed_at=reviewed_at,
+                    elapsed_ms=max(0, min(item.elapsed_ms, MAX_ELAPSED_MS)),
+                )
+            )
+            applied += 1
+            results.append(
+                ReviewResultOut(
+                    card_slug=card.slug,
+                    accepted=True,
+                    due=as_utc(row.due),
+                    state=row.state,
+                    stability_days=round(row.stability, 2),
+                )
+            )
+            continue
 
         new_state = srs.review(
             _to_state(row),
@@ -204,6 +257,7 @@ def submit_reviews(payload: ReviewBatchIn, user: CurrentUser, db: DbSession) -> 
         row.reps = new_state.reps
         row.lapses = new_state.lapses
         row.state = new_state.state
+        row.step = new_state.step
         row.content_changed = False
 
         db.add(
@@ -213,7 +267,7 @@ def submit_reviews(payload: ReviewBatchIn, user: CurrentUser, db: DbSession) -> 
                 card_id=card.id,
                 rating=item.rating,
                 reviewed_at=reviewed_at,
-                elapsed_ms=item.elapsed_ms,
+                elapsed_ms=max(0, min(item.elapsed_ms, MAX_ELAPSED_MS)),
             )
         )
         applied += 1
@@ -229,7 +283,11 @@ def submit_reviews(payload: ReviewBatchIn, user: CurrentUser, db: DbSession) -> 
 
     db.commit()
     return ReviewBatchOut(
-        applied=applied, duplicates=duplicates, unknown_cards=unknown, results=results
+        applied=applied,
+        duplicates=duplicates,
+        unknown_cards=unknown,
+        results=results,
+        clamped=clamped,
     )
 
 
@@ -295,8 +353,10 @@ def coverage(user: CurrentUser, db: DbSession) -> CoverageOut:
 def forecast(user: CurrentUser, db: DbSession, days: int = Query(default=30, ge=1, le=365)) -> dict:
     """Wie viele Karten werden in den naechsten Tagen faellig?"""
     settings = get_settings()
-    rows = db.query(UserCard).filter(UserCard.user_id == user.id).all()
-    buckets = srs.forecast_load([_to_state(r) for r in rows], days)
+    now = datetime.now(UTC)
+    # Gleiche Sichtbarkeit wie /cards/due: keine pausierten Themen, kein
+    # Landesrecht anderer Laender; Tag 0 == aktuell faellige Karten.
+    buckets = srs.forecast_load(examen.visible_card_states(db, user, now=now), days, now=now)
     return {
         "days": days,
         "due_per_day": buckets,

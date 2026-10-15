@@ -28,6 +28,7 @@ from app.config import get_settings
 from app.core.observability import configure_logging
 from app.core.ratelimit import RateLimiter
 from app.db import Base, SessionLocal, engine
+from app.db_migrate import migrate
 from app.services.content import load_content, seed
 
 log = logging.getLogger("subsumo")
@@ -37,6 +38,7 @@ log = logging.getLogger("subsumo")
 async def lifespan(app: FastAPI):
     settings = get_settings()
     Base.metadata.create_all(bind=engine)
+    migrate(engine)
     if settings.seed_on_startup:
         bundle = load_content(settings.content_dir)
         for error in bundle.errors:
