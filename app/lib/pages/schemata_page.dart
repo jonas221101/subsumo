@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
+import 'fit_title.dart';
 import 'screen_status.dart';
 
 /// Pruefungsschemata als Gliederung mit juristischer Nummerierung
@@ -25,6 +26,13 @@ class _SchemataPageState extends State<SchemataPage> {
   bool _loading = true;
   String? _area;
   String _query = '';
+  final _search = TextEditingController();
+
+  @override
+  void dispose() {
+    _search.dispose();
+    super.dispose();
+  }
 
   @override
   void initState() {
@@ -70,10 +78,21 @@ class _SchemataPageState extends State<SchemataPage> {
           ),
           const SizedBox(height: Spacing.xl),
           TextField(
+            controller: _search,
             onChanged: (v) => setState(() => _query = v),
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               hintText: 'Schema oder Norm suchen, z. B. § 823 oder Anfechtung',
-              prefixIcon: Icon(Icons.search),
+              prefixIcon: const Icon(Icons.search),
+              suffixIcon: _query.isEmpty
+                  ? null
+                  : IconButton(
+                      tooltip: 'Suche leeren',
+                      icon: const Icon(Icons.clear),
+                      onPressed: () {
+                        _search.clear();
+                        setState(() => _query = '');
+                      },
+                    ),
             ),
           ),
           const SizedBox(height: Spacing.md),
@@ -143,7 +162,7 @@ class _SchemaTile extends StatelessWidget {
         // kategorischen Akzenttoene aus SubsumoColors.legalArea* bleiben
         // oeffentlichen Flaechen vorbehalten (docs/25 Abschnitt 3.6).
         leading: Icon(_areaIcon(schema['area'] as String? ?? ''), color: theme.colorScheme.onSurfaceVariant),
-        title: Text(schema['title'] as String, style: typography.headingSmall),
+        title: FitTitle(schema['title'] as String, style: typography.headingSmall),
         subtitle: norms.isEmpty
             ? null
             : Padding(

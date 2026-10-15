@@ -43,7 +43,7 @@ bool isWerkbankSandboxSupported({TargetPlatform? platformOverride}) {
 void assertWerkbankSandboxSupported({TargetPlatform? platformOverride}) {
   if (!isWerkbankSandboxSupported(platformOverride: platformOverride)) {
     throw UnsupportedError(
-      'Werkbank-Sandbox ist auf Mobile (Android/iOS) nicht unterstuetzt '
+      'Werkbank-Sandbox ist auf Mobile (Android/iOS) nicht unterstützt '
       '(docs/27 Abschnitt 1.4, SUB-409) - der Einstiegspunkt ist auf dieser '
       'Plattform absichtlich nicht erreichbar.',
     );

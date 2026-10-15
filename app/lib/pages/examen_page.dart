@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../design/design.dart';
 import '../state.dart';
+import 'beta_feedback.dart';
 import '../theme.dart';
 import 'gutachten_page.dart';
 import 'lernprofil_page.dart';
@@ -23,7 +24,7 @@ import 'screen_status.dart';
 const _areaLabels = {
   'zivilrecht': 'Zivilrecht',
   'strafrecht': 'Strafrecht',
-  'oeffentliches-recht': 'Oeffentliches Recht',
+  'oeffentliches-recht': 'Öffentliches Recht',
 };
 
 const _phaseLabels = {
@@ -317,7 +318,7 @@ class _ProfilEditorState extends State<_ProfilEditor> {
           Text('Examensprofil einrichten', style: theme.textTheme.titleMedium),
           const SizedBox(height: Spacing.xs),
           Text(
-            'Bundesland und Universitaet bestimmen, welches Landesrecht du lernst, '
+            'Bundesland und Universität bestimmen, welches Landesrecht du lernst, '
             'wie die Klausuren gewichtet werden und welche Kurs-Decks du siehst. '
             'Der Examenstermin steuert Phase und Tagesplan.',
             style: theme.textTheme.bodySmall,
@@ -330,13 +331,13 @@ class _ProfilEditorState extends State<_ProfilEditor> {
             )
           else ...[
             InputDecorator(
-              decoration: const InputDecoration(labelText: 'Bundesland (Pruefungsort)'),
+              decoration: const InputDecoration(labelText: 'Bundesland (Prüfungsort)'),
               child: DropdownButton<String?>(
                 key: const ValueKey('bundesland'),
                 isExpanded: true,
                 underline: const SizedBox.shrink(),
                 value: _bundesland,
-                hint: const Text('Bitte waehlen'),
+                hint: const Text('Bitte wählen'),
                 items: [
                   for (final land in _laender)
                     DropdownMenuItem<String?>(
@@ -355,7 +356,7 @@ class _ProfilEditorState extends State<_ProfilEditor> {
             ),
             const SizedBox(height: Spacing.md),
             InputDecorator(
-              decoration: const InputDecoration(labelText: 'Universitaet'),
+              decoration: const InputDecoration(labelText: 'Universität'),
               child: DropdownButton<String?>(
                 key: const ValueKey('universitaet'),
                 isExpanded: true,
@@ -392,7 +393,7 @@ class _ProfilEditorState extends State<_ProfilEditor> {
                 ),
               ),
               SubsumoButton.secondary(
-                label: _examDate == null ? 'Termin waehlen' : 'Termin aendern',
+                label: _examDate == null ? 'Termin wählen' : 'Termin ändern',
                 icon: Icons.calendar_today_outlined,
                 onPressed: _pickDate,
               ),
@@ -451,7 +452,7 @@ class _NextStepCard extends StatelessWidget {
       'review' => (
           'Karten wiederholen',
           Icons.style_outlined,
-          () => _openDeck(context, const DeckFilter(title: 'Faellige Karten')),
+          () => _openDeck(context, const DeckFilter(title: 'Fällige Karten')),
         ),
       'deck' => (
           'Deck lernen',
@@ -489,7 +490,7 @@ class _NextStepCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Naechster Schritt', style: theme.textTheme.bodySmall),
+          Text('Nächster Schritt', style: theme.textTheme.bodySmall),
           const SizedBox(height: Spacing.xs),
           Text(schritt['titel'] as String? ?? '', style: theme.textTheme.titleMedium),
           const SizedBox(height: Spacing.xs),
@@ -601,7 +602,7 @@ class _PhaseCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            tage > 0 ? '$tage Tage bis zum Examen' : 'Examen laeuft',
+            tage > 0 ? '$tage Tage bis zum Examen' : 'Examen läuft',
             style: theme.textTheme.titleMedium,
           ),
           const SizedBox(height: Spacing.xs),
@@ -619,7 +620,7 @@ class _PhaseCard extends StatelessWidget {
           const SizedBox(height: Spacing.xs),
           Text(
             'Vorbereitungsbeginn ${_formatIsoDate(phase['vorbereitungsbeginn'] as String)} - '
-            'die Phase haengt an diesem Datum, nicht am heutigen Aufruf.',
+            'die Phase hängt an diesem Datum, nicht am heutigen Aufruf.',
             style: theme.textTheme.bodySmall,
           ),
         ],
@@ -668,7 +669,7 @@ class _ReifeCard extends StatelessWidget {
             SubsumoProgressMeter(
               label: 'Bis ${semesterstoff!['semester']}. Semester  ·  '
                   '${semesterstoff!['cards_mature']} von ${semesterstoff!['cards_total']} '
-                  'Karten reif  ·  ${semesterstoff!['cards_due']} faellig',
+                  'Karten reif  ·  ${semesterstoff!['cards_due']} fällig',
               value: (semesterstoff!['mastery'] as num? ?? 0).toDouble(),
             ),
           ],
@@ -763,17 +764,17 @@ class _HeuteCard extends StatelessWidget {
             ),
           if ((heute['review_backlog'] as int? ?? 0) > 0)
             Text(
-              'Rueckstand: ${heute['review_backlog']} Karten werden auf die Folgetage verteilt.',
+              'Rückstand: ${heute['review_backlog']} Karten werden auf die Folgetage verteilt.',
               style: theme.textTheme.bodySmall,
             ),
           if (plan.length > 1) ...[
             const Divider(height: Spacing.xl),
-            Text('Naechste Tage', style: theme.textTheme.titleSmall),
+            Text('Nächste Tage', style: theme.textTheme.titleSmall),
             const SizedBox(height: Spacing.xs),
             for (final tag in plan.skip(1))
               Text(
                 '${_weekdayOf(tag['date'] as String)} ${_formatIsoDate(tag['date'] as String)}: '
-                '${tag['total_minutes']} min, ${_maps(tag['blocks']).length} Bloecke',
+                '${tag['total_minutes']} min, ${_maps(tag['blocks']).length} Blöcke',
                 style: theme.textTheme.bodySmall,
               ),
           ],
@@ -805,20 +806,20 @@ class _KlausurCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Naechste Klausur unter Examensbedingungen', style: theme.textTheme.titleMedium),
+          Text('Nächste Klausur unter Examensbedingungen', style: theme.textTheme.titleMedium),
           const SizedBox(height: Spacing.xs),
           Text(
             klausur['aktiv'] == false
                 ? 'Wochenklausur im Lernprofil ausgeschaltet - der Vorschlag bleibt, '
                     'der Plan reserviert keinen Klausurtag.'
-                : '${_weekdayOf(datum)}, ${_formatIsoDate(datum)}  ·  fuenf Stunden, nur '
+                : '${_weekdayOf(datum)}, ${_formatIsoDate(datum)}  ·  fünf Stunden, nur '
                     'zugelassene Hilfsmittel, ohne Unterbrechung.',
             style: theme.textTheme.bodySmall,
           ),
           const SizedBox(height: Spacing.md),
           if (vorschlag == null)
             const SubsumoFeedbackBlock(
-              message: 'Noch kein Fall verfuegbar.',
+              message: 'Noch kein Fall verfügbar.',
               severity: FeedbackSeverity.neutral,
             )
           else ...[
@@ -870,14 +871,14 @@ class _LandesrechtCard extends StatelessWidget {
           const SizedBox(height: Spacing.xs),
           Text(
             '${deck['cards_mature']} von ${deck['cards_total']} Karten reif  ·  '
-            '${deck['cards_due']} faellig',
+            '${deck['cards_due']} fällig',
             style: theme.textTheme.bodySmall,
           ),
           if (pruefstatus == 'in-pruefung') ...[
             const SizedBox(height: Spacing.sm),
             const SubsumoFeedbackBlock(
-              message: 'Redaktionsstatus: in Pruefung.',
-              detail: 'Normzitate gegen die aktuelle Gesetzesfassung deines Landes pruefen.',
+              message: 'Redaktionsstatus: in Prüfung.',
+              detail: 'Normzitate gegen die aktuelle Gesetzesfassung deines Landes prüfen.',
               severity: FeedbackSeverity.hint,
             ),
           ],
@@ -950,10 +951,10 @@ class _DecksCard extends StatelessWidget {
           const SizedBox(height: Spacing.xs),
           Text(
             hatUniversitaet
-                ? 'In der Reihenfolge des Studienverlaufsplans deiner Universitaet. '
-                    'Jedes Deck enthaelt die Karten, Schemata und Faelle seiner Themen - '
-                    'plus das Landesrecht deines Bundeslands, wo es hingehoert.'
-                : 'Der komplette Kurskatalog. Mit einer Universitaet im Profil erscheint '
+                ? 'In der Reihenfolge des Studienverlaufsplans deiner Universität. '
+                    'Jedes Deck enthält die Karten, Schemata und Fälle seiner Themen - '
+                    'plus das Landesrecht deines Bundeslands, wo es hingehört.'
+                : 'Der komplette Kurskatalog. Mit einer Universität im Profil erscheint '
                     'hier der Studienverlaufsplan in Semesterreihenfolge.',
             style: theme.textTheme.bodySmall,
           ),
@@ -969,7 +970,7 @@ class _DecksCard extends StatelessWidget {
               subtitle: Text(
                 'Semester ${deck['semester_default']}  ·  '
                 '${deck['cards_mature']} von ${deck['cards_total']} Karten reif  ·  '
-                '${deck['cards_due']} faellig',
+                '${deck['cards_due']} fällig',
               ),
               trailing: const Icon(Icons.chevron_right),
               onTap: () => Navigator.of(context).push(
@@ -987,7 +988,7 @@ class _DecksCard extends StatelessWidget {
                 subtitle: Text(
                   '${_maps(deck['topics']).length} Themen  ·  '
                   '${deck['cards_mature']} von ${deck['cards_total']} Karten reif  ·  '
-                  '${deck['cards_due']} faellig',
+                  '${deck['cards_due']} fällig',
                 ),
                 trailing: const Icon(Icons.chevron_right),
                 onTap: () => Navigator.of(context).push(
@@ -1027,7 +1028,7 @@ class _SchwachstellenCard extends StatelessWidget {
           const SizedBox(height: Spacing.sm),
           if (themen.isEmpty && fehler.isEmpty)
             const SubsumoFeedbackBlock(
-              message: 'Keine verfehlten Pruefpunkte und keine Strukturfehler.',
+              message: 'Keine verfehlten Prüfpunkte und keine Strukturfehler.',
               severity: FeedbackSeverity.positive,
             ),
           for (final thema in themen)
@@ -1037,7 +1038,7 @@ class _SchwachstellenCard extends StatelessWidget {
               leading: Icon(Icons.flag_outlined, color: theme.colorScheme.onSurfaceVariant),
               title: Text(thema['title'] as String),
               subtitle: Text(
-                '${thema['verfehlte_pruefpunkte']} verfehlte Pruefpunkte'
+                '${thema['verfehlte_pruefpunkte']} verfehlte Prüfpunkte'
                 '${_strings(thema['beispiele']).isEmpty ? '' : ': ${_strings(thema['beispiele']).join('; ')}'}',
               ),
             ),
@@ -1051,7 +1052,7 @@ class _SchwachstellenCard extends StatelessWidget {
           ],
           if (fehler.isNotEmpty) ...[
             const SizedBox(height: Spacing.sm),
-            Text('Haeufigste Strukturfehler', style: theme.textTheme.titleSmall),
+            Text('Häufigste Strukturfehler', style: theme.textTheme.titleSmall),
             const SizedBox(height: Spacing.xs),
             Wrap(
               spacing: Spacing.sm,
@@ -1125,7 +1126,7 @@ class _BundeslandCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Pruefung in ${bundesland['name']}', style: theme.textTheme.titleMedium),
+          Text('Prüfung in ${bundesland['name']}', style: theme.textTheme.titleMedium),
           const SizedBox(height: Spacing.xs),
           Text(
             '${klausuren['anzahl']} Klausuren a ${klausuren['dauer_minuten']} min: '
@@ -1141,8 +1142,8 @@ class _BundeslandCard extends StatelessWidget {
           if (bundesland['pruefstatus'] == 'in-pruefung') ...[
             const SizedBox(height: Spacing.sm),
             const SubsumoFeedbackBlock(
-              message: 'Angaben ohne Gewaehr - Redaktionsstatus: in Pruefung.',
-              detail: 'Massgeblich sind JAG/JAPO und die Bekanntmachungen des Pruefungsamts.',
+              message: 'Angaben ohne Gewähr - Redaktionsstatus: in Prüfung.',
+              detail: 'Maßgeblich sind JAG/JAPO und die Bekanntmachungen des Prüfungsamts.',
               severity: FeedbackSeverity.hint,
             ),
           ],
@@ -1153,7 +1154,7 @@ class _BundeslandCard extends StatelessWidget {
               'Freiversuch: ${_map(bundesland['freiversuch'])['beschreibung']}',
               'Abschichtung: ${_map(bundesland['abschichtung'])['beschreibung']}',
               'Notenverbesserung: ${_map(bundesland['notenverbesserung'])['beschreibung']}',
-              'Muendliche Pruefung: ${_map(bundesland['muendliche_pruefung'])['beschreibung']}',
+              'Mündliche Prüfung: ${_map(bundesland['muendliche_pruefung'])['beschreibung']}',
             ],
           ),
           _Abschnitt(
@@ -1180,9 +1181,9 @@ class _BundeslandCard extends StatelessWidget {
   static String _normLabel(String key) => switch (key) {
         'polizeigesetz' => 'Polizeigesetz',
         'polizei_generalklausel' => 'Generalklausel',
-        'standardmassnahmen' => 'Standardmassnahmen',
-        'stoerer' => 'Stoerer',
-        'ordnungsbehoerden' => 'Zustaendigkeit',
+        'standardmassnahmen' => 'Standardmaßnahmen',
+        'stoerer' => 'Störer',
+        'ordnungsbehoerden' => 'Zuständigkeit',
         'verwaltungsverfahrensgesetz' => 'VwVfG',
         'vollstreckung' => 'Vollstreckung',
         'kommunalverfassung' => 'Kommunalverfassung',
@@ -1246,7 +1247,10 @@ class DeckDetailPage extends StatelessWidget {
     final mastery = (deck['mastery'] as num? ?? 0).toDouble();
 
     return Scaffold(
-      appBar: AppBar(title: Text(deck['title'] as String)),
+      appBar: AppBar(
+        title: Text(deck['title'] as String),
+        actions: [BetaFeedbackAction(screen: 'Deck: ${deck['title']}')],
+      ),
       body: ReadableWidth(
         child: ListView(
           padding: const EdgeInsets.all(Spacing.lg),
@@ -1272,7 +1276,7 @@ class DeckDetailPage extends StatelessWidget {
                   ),
                   const SizedBox(height: Spacing.md),
                   SubsumoButton.primary(
-                    label: 'Deck lernen (${deck['cards_due']} faellig)',
+                    label: 'Deck lernen (${deck['cards_due']} fällig)',
                     icon: Icons.style_outlined,
                     onPressed: () => _openDeck(
                       context,
@@ -1296,7 +1300,7 @@ class DeckDetailPage extends StatelessWidget {
               const SizedBox(height: Spacing.lg),
               const SubsumoFeedbackBlock(
                 message: 'Landesrecht fehlt in diesem Deck.',
-                detail: 'Waehle im Examen-Reiter ein Bundesland, dann kommt das passende '
+                detail: 'Wähle im Examen-Reiter ein Bundesland, dann kommt das passende '
                     'Landesrecht dazu.',
                 severity: FeedbackSeverity.hint,
               ),
@@ -1323,7 +1327,7 @@ class DeckDetailPage extends StatelessWidget {
             ],
             if (cases.isNotEmpty) ...[
               const SizedBox(height: Spacing.lg),
-              Text('Faelle', style: theme.textTheme.titleMedium),
+              Text('Fälle', style: theme.textTheme.titleMedium),
               const SizedBox(height: Spacing.sm),
               for (final fall in cases)
                 ListTile(
@@ -1389,7 +1393,12 @@ class _DeckReviewPageState extends State<DeckReviewPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: _focusMode ? null : AppBar(title: Text('Deck: ${widget.filter.title}')),
+      appBar: _focusMode
+          ? null
+          : AppBar(
+              title: Text('Deck: ${widget.filter.title}'),
+              actions: [BetaFeedbackAction(screen: 'Deck: ${widget.filter.title}')],
+            ),
       body: SafeArea(
         top: _focusMode,
         child: ReviewPage(
@@ -1401,7 +1410,12 @@ class _DeckReviewPageState extends State<DeckReviewPage> {
   }
 }
 
-Future<void> _openDeck(BuildContext context, DeckFilter filter) async {
+Future<void> _openDeck(BuildContext context, DeckFilter filter) =>
+    openDeckReview(context, filter);
+
+/// Oeffnet die Lernschleife fuer ein Deck oder Thema (auch von der Startseite
+/// "Heute" genutzt: Tap auf eine Themenzeile).
+Future<void> openDeckReview(BuildContext context, DeckFilter filter) async {
   final app = AppScope.of(context);
   app.activeDeck = filter;
   await Navigator.of(context).push(

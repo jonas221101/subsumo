@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -6,6 +7,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../api.dart';
 import '../design/design.dart';
 import '../state.dart';
+import 'beta_feedback.dart';
 import '../theme.dart';
 
 /// Gutachten-Trainer (Challenge 1 und 4).
@@ -18,6 +20,7 @@ class GutachtenPage extends StatefulWidget {
     required this.caseSlug,
     required this.caseTitle,
     this.mode = 'uebung',
+    this.area,
     super.key,
   });
 
@@ -28,6 +31,11 @@ class GutachtenPage extends StatefulWidget {
   /// aus dem Examen-Reiter (docs/32 Abschnitt 5) zaehlen serverseitig fuer die
   /// Klausurpraxis; der Editor selbst ist in beiden Modi derselbe.
   final String mode;
+
+  /// Rechtsgebiet des Falls (`zivilrecht`, `strafrecht`, `oeffentliches-recht`),
+  /// steuert den Platzhalter im Loesungsfeld. Fehlt es, kommt es aus dem
+  /// geladenen Fall.
+  final String? area;
 
   String get _titel => mode == 'klausur' ? '$caseTitle (Klausur)' : caseTitle;
 
@@ -206,7 +214,10 @@ class _GutachtenPageState extends State<GutachtenPage> {
     final caseUpgradeMessage = _caseUpgradeMessage;
     if (caseUpgradeMessage != null) {
       return Scaffold(
-        appBar: AppBar(title: Text(widget._titel)),
+        appBar: AppBar(
+          title: Text(widget._titel),
+          actions: [BetaFeedbackAction(screen: 'Fall: ${widget.caseTitle}')],
+        ),
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(Spacing.xl),
@@ -230,6 +241,7 @@ class _GutachtenPageState extends State<GutachtenPage> {
       appBar: AppBar(
         title: _focusMode ? null : Text(widget._titel),
         actions: [
+          BetaFeedbackAction(screen: 'Fall: ${widget.caseTitle}'),
           IconButton(
             tooltip: _focusMode ? 'Lesemodus verlassen' : 'Lesemodus',
             icon: Icon(_focusMode ? Icons.fullscreen_exit_outlined : Icons.fullscreen_outlined),
@@ -242,28 +254,52 @@ class _GutachtenPageState extends State<GutachtenPage> {
         child: LayoutBuilder(
           builder: (context, constraints) {
             final zweispaltig = constraints.maxWidth > 900;
-            final editor = _buildEditor();
             final feedback = _buildFeedback();
             if (!zweispaltig) {
-              return ListView(
-                padding: const EdgeInsets.all(Spacing.lg),
-                children: [
-                  SizedBox(height: 420, child: editor),
-                  const SizedBox(height: Spacing.lg),
-                  feedback,
-                ],
+              // Die ganze Seite scrollt: Sachverhalt vollstaendig, darunter
+              // Editor mit fester Hoehe, dann das Feedback.
+              return Scrollbar(
+                child: ListView(
+                  padding: const EdgeInsets.all(Spacing.lg),
+                  children: [
+                    ..._buildFacts(),
+                    SizedBox(height: 420, child: _buildEditor()),
+                    const SizedBox(height: Spacing.lg),
+                    feedback,
+                  ],
+                ),
               );
             }
+            // Zweispaltig scrollen beide Spalten getrennt: links Sachverhalt
+            // + Editor, rechts Feedback/Ergebnis.
             return Padding(
               padding: const EdgeInsets.all(Spacing.lg),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Expanded(flex: 3, child: editor),
+                  Expanded(
+                    flex: 3,
+                    child: Scrollbar(
+                      child: SingleChildScrollView(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            ..._buildFacts(),
+                            SizedBox(
+                              height: max(420, constraints.maxHeight * 0.6),
+                              child: _buildEditor(),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
                   const SizedBox(width: Spacing.lg),
                   Expanded(
                     flex: 2,
-                    child: SingleChildScrollView(child: feedback),
+                    child: Scrollbar(
+                      child: SingleChildScrollView(child: feedback),
+                    ),
                   ),
                 ],
               ),
@@ -274,52 +310,51 @@ class _GutachtenPageState extends State<GutachtenPage> {
     );
   }
 
+  /// Sachverhalt und Fallfrage vollstaendig, ohne eigene Hoehenbegrenzung -
+  /// der umgebende Scrollbereich traegt die Hoehe (Nutzertest: ein
+  /// abgeschnittener Sachverhalt macht die Fallfrage unlesbar).
+  List<Widget> _buildFacts() => [
+        if (_case != null) ...[
+          SubsumoCard(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const SubsumoEyebrow('Sachverhalt'),
+                const SizedBox(height: Spacing.sm),
+                Text(
+                  _case!['facts'] as String? ?? '',
+                  style: Theme.of(context).textTheme.bodyMedium,
+                ),
+                const SizedBox(height: Spacing.md),
+                const SubsumoEyebrow('Fallfrage'),
+                const SizedBox(height: Spacing.xs),
+                Text(
+                  _case!['question'] as String? ?? '',
+                  style: Theme.of(context).extension<SubsumoTypography>()!.headingSmall,
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: Spacing.md),
+        ],
+      ];
+
   Widget _buildEditor() => Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          if (_case != null)
-            // Feste Hoehenobergrenze mit eigenem Scroll: `_buildEditor` sitzt
-            // im schmalen Layout in einem hoehenbegrenzten `SizedBox` (siehe
-            // `build()`), zusammen mit dem `Expanded`-Editor darunter. Ohne
-            // Obergrenze ueberschreitet ein langer Sachverhalt (z. B. Fall
-            // "Der Hund im Auto") allein schon die verfuegbare Hoehe, und der
-            // Text laeuft unbemerkt in den nachfolgenden Feedback-Hinweis
-            // hinein (SUB-257-Befund) statt den Editor darunter zu verkleinern.
-            ConstrainedBox(
-              constraints: const BoxConstraints(maxHeight: 180),
-              child: SubsumoCard(
-                child: SingleChildScrollView(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const SubsumoEyebrow('Sachverhalt'),
-                      const SizedBox(height: Spacing.sm),
-                      Text(
-                        _case!['facts'] as String? ?? '',
-                        style: Theme.of(context).textTheme.bodyMedium,
-                      ),
-                      const SizedBox(height: Spacing.md),
-                      const SubsumoEyebrow('Fallfrage'),
-                      const SizedBox(height: Spacing.xs),
-                      Text(
-                        _case!['question'] as String? ?? '',
-                        style: Theme.of(context).extension<SubsumoTypography>()!.headingSmall,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          const SizedBox(height: Spacing.md),
           Expanded(
             child: TextField(
               controller: _controller,
               maxLines: null,
               expands: true,
               textAlignVertical: TextAlignVertical.top,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 alignLabelWithHint: true,
-                hintText: 'A könnte gegen B einen Anspruch auf ... aus § ... haben.',
+                hintText: gutachtenPlatzhalter(
+                  area: widget.area ?? _case?['area'] as String?,
+                  question: _case?['question'] as String?,
+                  facts: _case?['facts'] as String?,
+                ),
               ),
             ),
           ),
@@ -596,7 +631,7 @@ class _AiConsentDialog extends StatelessWidget {
               SizedBox(height: Spacing.md),
               Text(
                 'Du kannst deine Zustimmung jederzeit in den '
-                'Kontöinstellungen widerrufen.',
+                'Kontoeinstellungen widerrufen.',
               ),
               SizedBox(height: Spacing.sm),
               _DatenschutzLink(),
@@ -634,5 +669,51 @@ class _DatenschutzLink extends StatelessWidget {
         child: const Text('Datenschutzerklärung'),
       ),
     );
+  }
+}
+
+/// Beteiligte aus dem Fall: einzelne Grossbuchstaben bzw. Kuerzel wie "V",
+/// "K", "T1" (in Reihenfolge des ersten Auftretens). Typische Abkuerzungen und
+/// Rechtsbegriffe sind ausgenommen.
+List<String> parteikuerzel(String? text) {
+  if (text == null) return const [];
+  const ignorieren = {'BGB', 'StGB', 'GG', 'ZPO', 'StPO', 'VwGO', 'VwVfG', 'HGB', 'EU', 'II', 'III', 'IV'};
+  final seen = <String>[];
+  for (final m in RegExp(r'(?<![\wÄÖÜäöüß-])([A-Z]\d?|[A-Z]{2})(?![\wÄÖÜäöüß])').allMatches(text)) {
+    final k = m.group(1)!;
+    if (!ignorieren.contains(k) && !seen.contains(k)) seen.add(k);
+  }
+  return seen;
+}
+
+/// Platzhalter im Loesungsfeld je Rechtsgebiet des Falls (Zivilrecht:
+/// Anspruchsaufbau, Strafrecht: Strafbarkeitspruefung, Oeffentliches Recht:
+/// Erfolgsaussichten). Parteikuerzel kommen, wenn erkennbar, aus dem Fall.
+String gutachtenPlatzhalter({String? area, String? question, String? facts}) {
+  final parteien = parteikuerzel(question);
+  final alle = parteien.length >= 2 ? parteien : parteikuerzel('${question ?? ''} ${facts ?? ''}');
+  switch (area) {
+    case 'zivilrecht':
+      if (alle.length >= 2) {
+        return '${alle[0]} könnte gegen ${alle[1]} einen Anspruch auf ... aus § ... haben.';
+      }
+      return 'Ein Anspruch auf ... aus § ... könnte bestehen.';
+    case 'strafrecht':
+      final tater = alle.contains('T') ? 'T' : (alle.isNotEmpty ? alle.first : null);
+      if (tater != null) {
+        return '$tater könnte sich wegen ... gemäß § ... strafbar gemacht haben.';
+      }
+      return 'Die handelnde Person könnte sich wegen ... gemäß § ... strafbar gemacht haben.';
+    case 'oeffentliches-recht':
+      final text = '${question ?? ''} ${facts ?? ''}'.toLowerCase();
+      if (text.contains('verfassungsgemäß') ||
+          text.contains('verfassungsgemaess') ||
+          text.contains('verfassungsmäßig') ||
+          text.contains('gesetz') && text.contains('verfassung')) {
+        return 'Das Gesetz ist verfassungsgemäß, wenn es formell und materiell mit dem Grundgesetz vereinbar ist.';
+      }
+      return 'Die Klage hat Erfolg, wenn sie zulässig und begründet ist.';
+    default:
+      return 'Beginne mit dem Obersatz im Gutachtenstil: ... könnte ... , wenn ...';
   }
 }

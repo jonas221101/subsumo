@@ -4,6 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../api.dart';
 import '../design/design.dart';
 import '../state.dart';
+import 'beta_feedback.dart';
 import '../theme.dart';
 
 /// Plaene aus docs/19-kosten-preis-budget.md Abschnitt 4, unveraendert
@@ -70,7 +71,10 @@ class _CheckoutPageState extends State<CheckoutPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Pro werden')),
+      appBar: AppBar(
+        title: const Text('Pro werden'),
+        actions: const [BetaFeedbackAction(screen: 'Pro werden')],
+      ),
       body: ReadableWidth(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(Spacing.lg),

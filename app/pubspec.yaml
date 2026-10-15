@@ -11,6 +11,11 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
+  # Deutsche Material-Texte (Datepicker, Dialoge, Tooltips) - die App ist
+  # durchgehend deutschsprachig. Ohne intl-Direktabhaengigkeit: die Version
+  # kommt vom Flutter-SDK.
+  flutter_localizations:
+    sdk: flutter
   # Bewusst minimal im M0-Geruest: nur HTTP und lokaler Key-Value-Speicher.
   # Riverpod (State) und drift (Offline-SQLite) kommen in M1 dazu, sobald die
   # Offline-Synchronisierung gebaut wird - siehe docs/03-roadmap.md.

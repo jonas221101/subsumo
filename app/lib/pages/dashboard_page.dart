@@ -4,6 +4,8 @@ import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
 import 'checkout_page.dart';
+import 'examen_page.dart' show openDeckReview;
+import 'fit_title.dart';
 import 'screen_status.dart';
 
 /// Startseite "Heute": was jetzt ansteht (faellige Karten mit Direkteinstieg)
@@ -65,6 +67,7 @@ class _DashboardPageState extends State<DashboardPage> {
     final dueTile = _DueTile(
       count: app.dueCards.length,
       fromCache: app.dueCardsFromCache,
+      done: app.sessionDone,
       onStart: widget.onStartReview,
     );
     final coverageTile = _CoverageTile(value: gesamt);
@@ -138,9 +141,17 @@ class _DashboardPageState extends State<DashboardPage> {
 /// warten"), kein Ziel und kein Rueckstand - deshalb ohne Vergleich zu
 /// gestern und ohne Farbwechsel.
 class _DueTile extends StatelessWidget {
-  const _DueTile({required this.count, required this.fromCache, required this.onStart});
+  const _DueTile({
+    required this.count,
+    required this.fromCache,
+    required this.onStart,
+    this.done = false,
+  });
 
   final int count;
+
+  /// Stapel abgearbeitet ("Fertig für heute").
+  final bool done;
   final bool fromCache;
   final VoidCallback? onStart;
 
@@ -164,6 +175,7 @@ class _DueTile extends StatelessWidget {
           const SizedBox(height: Spacing.xs),
           Text(
             switch (count) {
+              0 when done => 'Fertig für heute. Gut gemacht.',
               0 => 'Keine Karte wartet. Du bist auf Stand.',
               1 => 'Eine Karte wartet auf dich.',
               _ => 'Karten warten auf dich.',
@@ -324,7 +336,14 @@ class _TopicRow extends StatelessWidget {
     // genauso "neutral" aus wie eines mit 80 % - siehe docs/11-designsystem.md.
     // Die Relevanz-Punkte sind eine feste Eigenschaft des Themas, kein
     // Lernstand.
-    return Padding(
+    final slug = topic['slug'] as String?;
+    final title = topic['title'] as String;
+    return InkWell(
+      // Tap: Karten genau dieses Themas lernen (`/v1/cards/due?topic=<slug>`).
+      onTap: slug == null
+          ? null
+          : () => openDeckReview(context, DeckFilter(title: title, topic: slug)),
+      child: Padding(
       padding: const EdgeInsets.symmetric(horizontal: Spacing.lg, vertical: Spacing.md),
       child: Row(
         children: [
@@ -334,7 +353,7 @@ class _TopicRow extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(topic['title'] as String, style: typography.headingSmall),
+                FitTitle(title, style: typography.headingSmall),
                 const SizedBox(height: Spacing.xs),
                 Row(
                   children: [
@@ -351,7 +370,12 @@ class _TopicRow extends StatelessWidget {
           ),
           const SizedBox(width: Spacing.md),
           Text('${(mastery * 100).round()} %', style: theme.textTheme.titleMedium),
+          if (slug != null) ...[
+            const SizedBox(width: Spacing.xs),
+            Icon(Icons.chevron_right, color: theme.colorScheme.onSurfaceVariant),
+          ],
         ],
+      ),
       ),
     );
   }

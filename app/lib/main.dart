@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:go_router/go_router.dart';
 
@@ -76,6 +77,13 @@ class SubsumoApp extends StatelessWidget {
       child: MaterialApp.router(
         title: 'Subsumo',
         debugShowCheckedModeBanner: false,
+        locale: const Locale('de', 'DE'),
+        supportedLocales: const [Locale('de', 'DE')],
+        localizationsDelegates: const [
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
         theme: buildTheme(Brightness.light),
         darkTheme: buildTheme(Brightness.dark),
         routerConfig: _buildRouter(initialLocation: initialLocation),

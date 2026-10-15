@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
+import 'fit_title.dart';
 import 'gutachten_page.dart';
 import 'screen_status.dart';
 
@@ -21,6 +22,13 @@ class _CasesPageState extends State<CasesPage> {
   bool _loading = true;
   String? _area;
   String _query = '';
+  final _search = TextEditingController();
+
+  @override
+  void dispose() {
+    _search.dispose();
+    super.dispose();
+  }
 
   @override
   void initState() {
@@ -74,10 +82,21 @@ class _CasesPageState extends State<CasesPage> {
           ),
           const SizedBox(height: Spacing.xl),
           TextField(
+            controller: _search,
             onChanged: (v) => setState(() => _query = v),
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               hintText: 'Fall suchen',
-              prefixIcon: Icon(Icons.search),
+              prefixIcon: const Icon(Icons.search),
+              suffixIcon: _query.isEmpty
+                  ? null
+                  : IconButton(
+                      tooltip: 'Suche leeren',
+                      icon: const Icon(Icons.clear),
+                      onPressed: () {
+                        _search.clear();
+                        setState(() => _query = '');
+                      },
+                    ),
             ),
           ),
           const SizedBox(height: Spacing.md),
@@ -132,6 +151,7 @@ class _CaseTile extends StatelessWidget {
           builder: (_) => GutachtenPage(
             caseSlug: fall['slug'] as String,
             caseTitle: fall['title'] as String,
+            area: area,
           ),
         ),
       ),
@@ -155,7 +175,7 @@ class _CaseTile extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(fall['title'] as String, style: typography.headingSmall),
+                FitTitle(fall['title'] as String, style: typography.headingSmall),
                 const SizedBox(height: Spacing.xs),
                 Text(
                   '${_areaLabel(area)}  ·  ${fall['minutes']} min',
@@ -164,16 +184,20 @@ class _CaseTile extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(width: Spacing.lg),
+          const SizedBox(width: Spacing.md),
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               SubsumoDots(value: difficulty, label: 'Schwierigkeit'),
-              const SizedBox(height: Spacing.xs),
-              Text(
-                'Schwierigkeit',
-                style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
-              ),
+              // Auf schmalen Screens bekommt der Titel die Breite statt der
+              // Beschriftung.
+              if (MediaQuery.sizeOf(context).width >= 520) ...[
+                const SizedBox(height: Spacing.xs),
+                Text(
+                  'Schwierigkeit',
+                  style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+                ),
+              ],
             ],
           ),
           const SizedBox(width: Spacing.sm),
