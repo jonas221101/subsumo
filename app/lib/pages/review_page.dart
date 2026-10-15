@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 
 import '../design/design.dart';
 import '../state.dart';
+import '../eingabe_art.dart';
 import '../text_schutz.dart';
 import '../theme.dart';
 import 'fit_title.dart';
@@ -106,6 +107,7 @@ class _ReviewPageState extends State<ReviewPage> {
     final touch = defaultTargetPlatform == TargetPlatform.android ||
         defaultTargetPlatform == TargetPlatform.iOS ||
         _touchSeen ||
+        touchErkannt.value ||
         // Web auf Tablets meldet oft eine Desktop-Plattform: ohne je
         // angeschlossene Maus gibt es keine Tastaturbedienung zu bewerben.
         (kIsWeb && !RendererBinding.instance.mouseTracker.mouseIsConnected);
@@ -181,6 +183,7 @@ class _ReviewPageState extends State<ReviewPage> {
           behavior: HitTestBehavior.translucent,
           onPointerDown: (e) {
             if (e.kind == PointerDeviceKind.touch && !_touchSeen) {
+              touchErkannt.value = true;
               setState(() => _touchSeen = true);
             }
           },
@@ -491,18 +494,23 @@ class _EmptyState extends StatelessWidget {
             const SizedBox(height: Spacing.sm),
             Text(
               imDeck
-                  ? 'In diesem Deck wartet heute keine Karte mehr.'
+                  ? 'Alle Karten hier sind für heute gelernt. Die nächste Wiederholung '
+                      'plant die App automatisch ein.'
                   : 'Alle fälligen Wiederholungen sind erledigt und dein Tageslimit '
                       'für neue Karten ist erreicht (änderbar im Lernprofil).',
               style: theme.textTheme.bodyMedium,
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: Spacing.lg),
-            FilledButton(
-              key: const ValueKey('weitere-karten'),
-              onPressed: onMore,
-              child: const Text('Weitere Karten lernen'),
-            ),
+            // Im Deck laedt "Weitere" ohnehin schon ueber das Tageslimit hinaus -
+            // ein zweiter Tipp braechte nichts (Nutzertest W11: Schleife).
+            if (!imDeck) ...[
+              const SizedBox(height: Spacing.lg),
+              OutlinedButton(
+                key: const ValueKey('weitere-karten'),
+                onPressed: onMore,
+                child: const Text('Weitere Karten lernen'),
+              ),
+            ],
           ],
         ),
       ),

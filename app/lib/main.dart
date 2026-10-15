@@ -1,9 +1,11 @@
+import 'package:flutter/gestures.dart' show PointerDeviceKind;
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:go_router/go_router.dart';
 
 import 'design/design.dart';
+import 'eingabe_art.dart';
 import 'api.dart';
 import 'pages/account_page.dart';
 import 'pages/beta_feedback.dart';
@@ -95,6 +97,13 @@ class SubsumoApp extends StatelessWidget {
     return AppScope(
       notifier: state,
       child: MaterialApp.router(
+        builder: (context, child) => Listener(
+          behavior: HitTestBehavior.translucent,
+          onPointerDown: (e) {
+            if (e.kind == PointerDeviceKind.touch) touchErkannt.value = true;
+          },
+          child: child,
+        ),
         title: 'Subsumo',
         debugShowCheckedModeBanner: false,
         locale: const Locale('de', 'DE'),

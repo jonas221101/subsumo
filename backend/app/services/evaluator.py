@@ -238,6 +238,7 @@ _PRAEPOSITIONEN = frozenset(
 )
 _ADJEKTIV_ENDUNG = ("e", "en", "er", "es", "em")
 MIN_SATZ_WOERTER = 6
+MIN_KURZSATZ_WOERTER = 3
 MAX_KOMMA_DICHTE = 0.3
 MIN_LISTEN_ABSCHNITTE = 6
 
@@ -265,7 +266,15 @@ def _ist_vollstaendiger_satz(satz: str) -> bool:
     """
     woerter = re.findall(r"[\wäöüÄÖÜß]+", satz)
     if len(woerter) < MIN_SATZ_WOERTER:
-        return False
+        # Kurze Ergebnissaetze ("Das Vorhaben ist unzulaessig.") sind echte
+        # Aussagen: ab drei Woertern mit Satzpunkt, ohne Komma und mit finitem
+        # Verb aus der Verbliste (Nutzertest W11).
+        return (
+            len(woerter) >= MIN_KURZSATZ_WOERTER
+            and satz.rstrip().endswith((".", "!"))
+            and "," not in satz
+            and _hat_listenverb(satz)
+        )
     # Zeile ohne Satzschlusszeichen, aber mit Aufzaehlungs-/Zitatmerkmalen
     # ("Antragsbefugnis, § 80 Abs. 5 VwGO, aufschiebende Wirkung"): nur mit
     # echtem finitem Verb aus der Liste ein Satz.

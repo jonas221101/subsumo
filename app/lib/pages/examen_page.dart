@@ -1486,6 +1486,7 @@ String reifeGewichtung(String formel) {
     'wissen': 'Wissen',
     'landesrecht': 'Landesrecht',
     'anwendung': 'Anwendung',
+    'technik': 'Gutachtentechnik',
     'klausurpraxis': 'Klausurpraxis',
   };
   final teile = [
