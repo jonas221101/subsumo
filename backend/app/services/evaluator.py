@@ -238,6 +238,7 @@ _PRAEPOSITIONEN = frozenset(
 )
 _ADJEKTIV_ENDUNG = ("e", "en", "er", "es", "em")
 MIN_SATZ_WOERTER = 6
+INHALT_VOLL_SCHWELLE = 0.75
 MIN_KURZSATZ_WOERTER = 3
 MAX_KOMMA_DICHTE = 0.3
 MIN_LISTEN_ABSCHNITTE = 6
@@ -632,6 +633,14 @@ class HeuristicEvaluator:
                 "Bei "
                 + ", ".join(f"„{lab}“ (du schreibst: {kw} verneint)" for lab, kw in widerspruch)
                 + " widerspricht deine Formulierung dem erwarteten Ergebnis.",
+            ))
+        if not wrong_case and content_ratio < INHALT_VOLL_SCHWELLE:
+            # Oberhalb von ~2/3 getroffener Pruefpunkte erreichte die Rohskala sonst
+            # schon den Deckel - 5 von 8 Punkten zaehlten wie 8 von 8 (Nutzertest W16).
+            deckel.append((
+                9.0,
+                f"Es fehlen noch wesentliche Prüfpunkte ({content_ratio:.0%} gewichtet "
+                "angesprochen) - deshalb höchstens 9 Punkte.",
             ))
         if structure.score == 0:
             deckel.append((

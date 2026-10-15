@@ -37,11 +37,13 @@ def test_mae_ueber_synthetisches_fixture_set_stimmt_mit_handrechnung_ueberein():
 
     by_slug = {r.slug: r for r in results}
     assert by_slug["vollstaendig"].predicted == 11.0
-    assert by_slug["teilweise"].predicted == 10.5
+    # Teilweise geloest: hoechstens 9 Punkte (Inhalts-Deckel, Nutzertest W16) -
+    # naeher an der menschlichen Bewertung 9,5 als zuvor 10,5.
+    assert by_slug["teilweise"].predicted == 9.0
     assert by_slug["ohne_kernpunkt"].predicted == 3.5
     assert by_slug["nichts"].predicted == 0.0
 
-    assert mae(results) == 0.875
+    assert mae(results) == 0.75
 
 
 def test_leere_referenzmenge_liefert_fehler():

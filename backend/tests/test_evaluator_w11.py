@@ -38,13 +38,19 @@ def test_konditionaler_obersatz_wird_erkannt():
     assert classify_sentence("Die Klage hat Erfolg, wenn sie zulässig und begründet ist.") is (
         Step.OBERSATZ
     )
-    assert classify_sentence(
-        "Das Vorhaben ist bauplanungsrechtlich zulässig, wenn § 35 BauGB erfüllt ist."
-    ) is Step.OBERSATZ
+    assert (
+        classify_sentence(
+            "Das Vorhaben ist bauplanungsrechtlich zulässig, wenn § 35 BauGB erfüllt ist."
+        )
+        is Step.OBERSATZ
+    )
     # Definitionen bleiben Definitionen.
-    assert classify_sentence(
-        "Eine Sache ist fremd, wenn sie nicht im Alleineigentum des Täters steht."
-    ) is Step.DEFINITION
+    assert (
+        classify_sentence(
+            "Eine Sache ist fremd, wenn sie nicht im Alleineigentum des Täters steht."
+        )
+        is Step.DEFINITION
+    )
 
 
 def test_kurzer_schlusssatz_ist_ergebnis():
@@ -53,9 +59,12 @@ def test_kurzer_schlusssatz_ist_ergebnis():
     assert classify_sentence("A haftet nicht.") is Step.ERGEBNIS
     assert classify_sentence("G hat keinen Anspruch gegen A.") is Step.ERGEBNIS
     # Ein Rechtssatz ueber "den Arbeitnehmer" bleibt kein Ergebnis.
-    assert classify_sentence(
-        "Nach den Grundsätzen des Schadensausgleichs haftet der Arbeitnehmer nicht."
-    ) is not Step.ERGEBNIS
+    assert (
+        classify_sentence(
+            "Nach den Grundsätzen des Schadensausgleichs haftet der Arbeitnehmer nicht."
+        )
+        is not Step.ERGEBNIS
+    )
 
 
 def test_beispiele_nennen_die_parteien_des_falls():
@@ -64,3 +73,22 @@ def test_beispiele_nennen_die_parteien_des_falls():
     bsp = _mit_parteien(_BEISPIELE["zivilrecht"], "G könnte gegen A einen Anspruch haben.")
     assert bsp["ergebnis"].startswith("Mithin hat G gegen A")
     assert _mit_parteien(_BEISPIELE["zivilrecht"], "Ohne Kürzel.") == _BEISPIELE["zivilrecht"]
+
+
+def test_teilweise_geloest_hoechstens_9_punkte():
+    exp = {
+        "pruefpunkte": [
+            {"id": f"p{i}", "label": f"Punkt {i}", "keywords": [kw]}
+            for i, kw in enumerate(
+                ["Gewahrsam", "Zueignungsabsicht", "Rechtswidrigkeit", "Ergebnis"]
+            )
+        ]
+    }
+    text = (
+        "T könnte sich wegen Diebstahls nach § 242 Abs. 1 StGB strafbar gemacht haben. "
+        "Er hat fremden Gewahrsam gebrochen und neuen Gewahrsam begründet. "
+        "T handelte mit Zueignungsabsicht, weil er das Parfüm behalten wollte."
+    )
+    e = HeuristicEvaluator().evaluate(text=text, expectation=exp, structure=analyze(text))
+    assert sum(c.hit for c in e.checkpoints) == 2
+    assert e.points <= 9.0
