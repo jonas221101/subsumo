@@ -122,6 +122,23 @@ def parse_xml(xml_bytes: bytes) -> dict[str, dict[str, str]]:
     return out
 
 
+# Vom BVerfG fuer nichtig erklaerte Vorschriften, die gesetze-im-internet.de
+# weiter im Wortlaut fuehrt.
+NICHTIG_HINWEISE: dict[str, dict[str, str]] = {
+    "stpo": {
+        "§ 362": "Hinweis: Nr. 5 ist nach BVerfG, Urteil vom 31.10.2023 – 2 BvR 900/22, "
+        "mit dem Grundgesetz unvereinbar und nichtig.",
+    },
+}
+
+
+def mit_hinweisen(abk: str, norms: dict[str, dict[str, str]]) -> dict[str, dict[str, str]]:
+    for key, hinweis in NICHTIG_HINWEISE.get(abk, {}).items():
+        if key in norms and hinweis not in norms[key]["text"]:
+            norms[key]["text"] += "\n\n" + hinweis
+    return norms
+
+
 def fetch(abk: str) -> bytes:
     req = urllib.request.Request(
         BASE_URL.format(abk=abk), headers={"User-Agent": "subsumo-normtexte-import/1.0"}
@@ -149,7 +166,7 @@ def main(argv: list[str] | None = None) -> int:
         if args.only and abk not in args.only:
             continue
         try:
-            norms = parse_xml(fetch(abk))
+            norms = mit_hinweisen(abk, parse_xml(fetch(abk)))
         except Exception as exc:  # noqa: BLE001 - Einzelfehler soll Rest nicht stoppen
             print(f"FEHLER {abk}: {exc}", file=sys.stderr)
             failed += 1
