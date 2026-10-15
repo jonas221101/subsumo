@@ -44,7 +44,7 @@ NOTENSTUFEN: list[tuple[float, str]] = [
     (7.0, "befriedigend"),
     (4.0, "ausreichend"),
     (1.5, "mangelhaft"),
-    (0.0, "ungenuegend"),
+    (0.0, "ungenügend"),
 ]
 
 
@@ -52,7 +52,7 @@ def note_fuer_punkte(points: float) -> str:
     for untergrenze, name in NOTENSTUFEN:
         if points >= untergrenze:
             return name
-    return "ungenuegend"
+    return "ungenügend"
 
 
 @dataclass
@@ -619,13 +619,13 @@ class HeuristicEvaluator:
         if structure.score == 0:
             deckel.append((
                 4.0,
-                "Ohne erkennbaren Gutachtenaufbau (Strukturscore 0, z. B. Stichwortliste, "
+                "Ohne erkennbaren Gutachtenaufbau (z. B. Stichwortliste, "
                 "Urteilsstil oder zu kurzer Text) sind höchstens 4 Punkte möglich.",
             ))
         elif structure.score < 30:
             deckel.append((
                 6.0,
-                "Wegen des schwachen Gutachtenaufbaus (Strukturscore unter 30, z. B. "
+                "Wegen des schwachen Gutachtenaufbaus (z. B. "
                 "Urteilsstil statt Gutachtenstil) sind höchstens 6 Punkte möglich.",
             ))
         dup = getattr(structure, "duplicate_ratio", 0.0)
@@ -656,7 +656,7 @@ class HeuristicEvaluator:
             namen = ", ".join(missed_required)
             satz = (
                 f"Kernprüfpunkte fehlen: {namen} - nicht erkannt. Falls du sie anders "
-                "formuliert hast, kann der Stichwortabgleich sie übersehen."
+                "formuliert hast, kann die automatische Bewertung sie übersehen."
             )
             if req_grenze is not None and req_grenze < points_roh:
                 satz += (
@@ -665,17 +665,20 @@ class HeuristicEvaluator:
                 )
             hinweise.insert(1 if wrong_case else 0, satz)
 
-        summary = (
-            f"Hinweis: Ohne KI-Korrektur ist die Punktzahl bei "
-            f"{HEURISTIK_MAX_PUNKTE:.0f} Punkten gedeckelt. Der Stichwortabgleich "
-            "prüft, ob ein Punkt angesprochen wurde, nicht ob die Argumentation überzeugt."
-        )
+        summary = ""
+        if points >= HEURISTIK_MAX_PUNKTE:
+            summary = (
+                "Die automatische Bewertung prüft, ob die erwarteten Prüfungspunkte "
+                "angesprochen werden – nicht, wie überzeugend argumentiert wird. "
+                f"Deshalb vergibt sie höchstens {HEURISTIK_MAX_PUNKTE:.0f} Punkte."
+            )
         if hinweise:
-            summary += " " + " ".join(hinweise)
+            summary = (summary + " " if summary else "") + " ".join(hinweise)
         summary += (
             f" Ergebnis: {getroffen} von {len(results)} Prüfpunkten angesprochen "
-            f"(gewichtet {content_ratio:.0%}), Strukturscore {structure.score}/100."
+            f"(gewichtet {content_ratio:.0%}), Aufbau {structure.score}/100 Punkte."
         )
+        summary = summary.strip()
 
         return Evaluation(
             points=points,

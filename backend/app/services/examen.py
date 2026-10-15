@@ -42,6 +42,7 @@ from app.models import (
 )
 from app.services import lernprofil, srs
 from app.services.content import landesrecht_topic_slug
+from app.services.gutachten import finding_label
 from app.services.planner import (
     KLAUSUR_WEEKDAY,
     PHASE_ENDSPURT,
@@ -608,7 +609,7 @@ def readiness(
             "label": "Gutachtentechnik",
             "value": None if technik is None else round(technik, 3),
             "detail": (
-                f"Strukturscore der letzten {len(letzte)} Abgaben."
+                f"Aufbau-Bewertung der letzten {len(letzte)} Abgaben."
                 if letzte
                 else "Noch keine Abgabe - Struktur-Feedback im Gutachten-Trainer."
             ),
@@ -700,7 +701,9 @@ def weak_spots(db: Session, user: User, *, limit: int = 20) -> dict:
             if slug
         ],
         "strukturfehler": [
-            {"code": code, "anzahl": n} for code, n in strukturfehler.most_common(5) if code
+            {"code": code, "label": finding_label(code), "anzahl": n}
+            for code, n in strukturfehler.most_common(5)
+            if code
         ],
     }
 

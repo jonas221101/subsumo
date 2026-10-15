@@ -256,11 +256,17 @@ def test_loesung_zum_falschen_fall_bekommt_hinweis_und_fast_keine_punkte():
 # --------------------------------------------------------------------------- #
 
 
-def test_deckelungs_hinweis_steht_am_anfang_der_zusammenfassung():
+def test_deckelungs_hinweis_nur_am_deckel_und_ohne_jargon():
     for slug in FALLER:
-        summary = _bewerte(slug, _variante(slug, "2 exakte Begriffe")).summary
-        assert summary.startswith("Hinweis: Ohne KI-Korrektur")
-        assert "gedeckelt" in summary.split(".")[0]
+        ev = _bewerte(slug, _variante(slug, "2 exakte Begriffe"))
+        assert "Strukturscore" not in ev.summary
+        assert "Stichwortabgleich" not in ev.summary
+        assert "gedeckelt" not in ev.summary
+        if ev.points >= 11:
+            assert ev.summary.startswith("Die automatische Bewertung prüft")
+            assert "höchstens 11 Punkte" in ev.summary
+        else:
+            assert "höchstens 11 Punkte" not in ev.summary
 
 
 # --------------------------------------------------------------------------- #

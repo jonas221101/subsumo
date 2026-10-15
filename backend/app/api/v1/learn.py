@@ -4,8 +4,8 @@ from __future__ import annotations
 
 from datetime import UTC, datetime, timedelta
 
-from fastapi import APIRouter, HTTPException, Query, status
-from sqlalchemy import or_, select
+from fastapi import APIRouter, HTTPException, Query, Response, status
+from sqlalchemy import distinct, func, or_, select
 
 from app.api.deps import CurrentUser, DbSession
 from app.config import get_settings
@@ -49,14 +49,33 @@ def _to_state(row: UserCard) -> srs.CardState:
     )
 
 
+def neue_karten_heute(db, user_id: int, start_of_day: datetime) -> int:
+    """Karten, die der Nutzer heute (UTC-Kalendertag) zum ersten Mal bewertet hat."""
+    heute = select(Review.card_id).where(
+        Review.user_id == user_id, Review.reviewed_at >= start_of_day
+    )
+    frueher = select(Review.card_id).where(
+        Review.user_id == user_id, Review.reviewed_at < start_of_day
+    )
+    return (
+        db.query(func.count(distinct(Review.card_id)))
+        .filter(Review.card_id.in_(heute), Review.card_id.not_in(frueher))
+        .filter(Review.user_id == user_id)
+        .scalar()
+        or 0
+    )
+
+
 @router.get("/cards/due", response_model=list[DueCardOut])
 def due_cards(
+    response: Response,
     user: CurrentUser,
     db: DbSession,
     limit: int = Query(default=20, ge=1, le=200),
     new_limit: int | None = Query(default=None, ge=0, le=100),
     topic: str | None = None,
     deck: str | None = None,
+    extra: bool = False,
 ) -> list[DueCardOut]:
     """Faellige Wiederholungen zuerst, danach neue Karten.
 
@@ -70,6 +89,13 @@ def due_cards(
     ``deck`` (docs/32 Abschnitt 3.3) beschraenkt auf die Themen eines
     Kurs-Decks inklusive des Landesrechts des eigenen Bundeslands. Landesrecht
     anderer Laender ist nie dabei (:func:`examen.visible_topic_slugs`).
+
+    Das Tageslimit neuer Karten (``new_limit`` bzw. Lernprofil
+    ``neue_karten_pro_tag``) gilt pro UTC-Kalendertag: heute bereits erstmals
+    bewertete Karten werden abgezogen. ``extra=true`` ("Weitere Karten lernen")
+    ueberschreitet das Tageslimit bewusst und liefert bis zu ``new_limit``
+    weitere neue Karten. Die Header ``X-Neue-Karten-Heute`` (heute begonnen) und
+    ``X-Neue-Karten-Rest`` (Tageskontingent minus begonnen) informieren den Client.
     """
     now = datetime.now(UTC)
     settings = get_settings()
@@ -130,7 +156,12 @@ def due_cards(
         for uc, card in faellig
     ]
 
-    rest = min(new_limit, limit - len(result))
+    start_of_day = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    neu_heute = neue_karten_heute(db, user.id, start_of_day)
+    tages_rest = max(0, new_limit - neu_heute)
+    response.headers["X-Neue-Karten-Heute"] = str(neu_heute)
+    response.headers["X-Neue-Karten-Rest"] = str(tages_rest)
+    rest = min(new_limit if extra else tages_rest, limit - len(result))
     if rest > 0:
         bekannt = select(UserCard.card_id).where(UserCard.user_id == user.id)
         neu_query = db.query(Card).filter(Card.id.not_in(bekannt))

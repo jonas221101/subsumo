@@ -357,3 +357,7 @@ def test_pausiertes_thema_fehlt_im_plan_und_technik_tipp_nach_abgabe(auth_client
     tipp = cockpit["schwachstellen"]["technik_tipp"]
     assert tipp is not None and tipp["code"] in lernprofil.TECHNIK_TIPPS
     assert tipp["titel"] and tipp["tipp"]
+    assert tipp["label"] and "_" not in tipp["label"]
+    assert "'" not in tipp["tipp"]
+    for f in cockpit["schwachstellen"]["strukturfehler"]:
+        assert f["label"] and "_" not in f["label"]

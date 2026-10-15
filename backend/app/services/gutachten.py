@@ -273,6 +273,15 @@ def norm_parts(norm: str) -> tuple[str, str, str, str] | None:
     return art, m.group("num").lower(), absatz, gesetz
 
 
+_NR_RE = re.compile(r"\b(?:Nr\.|Nummer)\s*(\d+)\s?([a-z])?(?![A-Za-zÄÖÜäöü])")
+
+
+def norm_nummer(norm: str) -> str:
+    """Nummer eines Normzitats samt Buchstabenzusatz (``"Nr. 4a"`` -> ``"4a"``), sonst ``""``."""
+    m = _NR_RE.search(norm)
+    return f"{m.group(1)}{m.group(2) or ''}" if m else ""
+
+
 def norm_matches(expected: str, found: str) -> bool:
     """Ob ein zitiertes Norm ``found`` die erwartete ``expected`` abdeckt.
 
@@ -289,6 +298,10 @@ def norm_matches(expected: str, found: str) -> bool:
     if e[0] != f[0] or e[1] != f[1]:
         return False
     if e[3] and f[3] and e[3] != f[3]:
+        return False
+    # Nummer ("Nr. 4a"): exakt, sobald beide sie nennen (4a != 1 != 4).
+    nr_e, nr_f = norm_nummer(expected), norm_nummer(found)
+    if nr_e and nr_f and nr_e != nr_f:
         return False
     return True
 
@@ -343,6 +356,30 @@ def extract_norms(text: str) -> list[str]:
 # --------------------------------------------------------------------------- #
 
 
+# Nutzerlesbare Bezeichnungen der Befund-Codes (fuer Anzeige statt des Rohcodes).
+FINDING_LABELS: dict[str, str] = {
+    "zu_kurz": "Text zu kurz",
+    "kein_obersatz": "Obersatz fehlt",
+    "offener_obersatz": "Obersatz ohne Ergebnis",
+    "keine_definition": "Definition fehlt",
+    "keine_subsumtion": "Subsumtion fehlt",
+    "sprung_zum_ergebnis": "Sprung zum Ergebnis",
+    "kein_ergebnis": "Ergebnis fehlt",
+    "urteilsstil": "Urteilsstil statt Gutachtenstil",
+    "keine_norm": "Keine Norm zitiert",
+    "gesetz_fehlt": "Gesetz beim Zitat fehlt",
+    "norm_nicht_geprueft": "Erwartete Norm nicht geprüft",
+    "schachtelsatz": "Zu lange Sätze",
+    "wiederholung": "Wiederholungen",
+    "sauberer_aufbau": "Sauberer Aufbau",
+}
+
+
+def finding_label(code: str) -> str:
+    """Lesbare Bezeichnung zu einem Befund-Code (unbekannt: Code ohne Unterstriche)."""
+    return FINDING_LABELS.get(code) or code.replace("_", " ").capitalize()
+
+
 class Severity(StrEnum):
     FEHLER = "fehler"
     HINWEIS = "hinweis"
@@ -377,7 +414,8 @@ class GutachtenReport:
     def to_dict(self) -> dict:
         data = asdict(self)
         data["findings"] = [
-            {**asdict(f), "severity": f.severity.value} for f in self.findings
+            {**asdict(f), "severity": f.severity.value, "label": finding_label(f.code)}
+            for f in self.findings
         ]
         return data
 
@@ -444,14 +482,14 @@ _BEISPIELE = {
         "obersatz": "A könnte gegen B einen Anspruch auf ... aus § ... haben.",
         "zwischen": "Mithin liegt ein wirksamer Vertrag vor.",
         "ergebnis": "Mithin hat A gegen B einen Anspruch aus § ... bzw. keinen Anspruch.",
-        "norm": "'§ 433 Abs. 2 BGB'",
+        "norm": "„§ 433 Abs. 2 BGB“",
     },
     "strafrecht": {
         "obersatz": "A könnte sich wegen ... nach § ... StGB strafbar gemacht haben.",
         "zwischen": "Mithin ist der Tatbestand des § ... StGB erfüllt.",
         "ergebnis": "A hat sich somit wegen ... nach § ... StGB strafbar gemacht "
         "(bzw. nicht strafbar gemacht).",
-        "norm": "'§ 223 Abs. 1 StGB'",
+        "norm": "„§ 223 Abs. 1 StGB“",
     },
     "oeffentliches-recht": {
         "obersatz": "Die Klage könnte zulässig und begründet sein. / "
@@ -460,14 +498,14 @@ _BEISPIELE = {
         "Schutzbereich vor.",
         "ergebnis": "Die Maßnahme ist mithin rechtmäßig bzw. rechtswidrig; die Klage "
         "hat (keinen) Erfolg.",
-        "norm": "'Art. 5 Abs. 1 S. 1 GG', '§ 80 Abs. 5 VwGO' oder '§ 22 GO SH'",
+        "norm": "„Art. 5 Abs. 1 S. 1 GG“, „§ 80 Abs. 5 VwGO“ oder „§ 22 GO SH“",
     },
 }
 _BEISPIELE_NEUTRAL = {
     "obersatz": "Es könnte ... vorliegen (Fragestellung mit Norm).",
     "zwischen": "Mithin ist das Merkmal erfüllt (bzw. nicht erfüllt).",
     "ergebnis": "Mithin ist ... (Antwort auf die Fallfrage).",
-    "norm": "'§ 433 Abs. 2 BGB', '§ 223 Abs. 1 StGB' oder 'Art. 5 Abs. 1 S. 1 GG'",
+    "norm": "„§ 433 Abs. 2 BGB“, „§ 223 Abs. 1 StGB“ oder „Art. 5 Abs. 1 S. 1 GG“",
 }
 
 
@@ -527,7 +565,7 @@ def analyze(
                     "sprung_zum_ergebnis",
                     "Zwischen Obersatz und Ergebnis fehlt die Subsumtion.",
                     "Definiere erst das Tatbestandsmerkmal und wende es dann "
-                    "ausdrücklich auf den Sachverhalt an ('Hier hat A ...').",
+                    "ausdrücklich auf den Sachverhalt an („Hier hat A ...“).",
                     sentence_index=block["index"],
                     excerpt=block["text"][:160],
                 )
@@ -588,7 +626,7 @@ def analyze(
                 "Dieser Prüfungspunkt wird bearbeitet, aber nicht ausdrücklich "
                 f"abgeschlossen{mehrere}.",
                 "Formuliere das Zwischenergebnis ausdrücklich "
-                f"(z. B. '{bsp['zwischen']}'). Korrektoren suchen danach.",
+                f"(z. B. „{bsp['zwischen']}“). Korrektoren suchen danach.",
                 sentence_index=erster["index"],
                 excerpt=erster["text"][:160],
             )
@@ -611,8 +649,8 @@ def analyze(
                     Severity.FEHLER,
                     "urteilsstil",
                     "Urteilsstil: Das Ergebnis steht vor der Begründung.",
-                    "Im Gutachten wird hypothetisch formuliert: erst 'Fraglich ist, "
-                    "ob ...', dann Definition, dann Subsumtion, dann das Ergebnis. "
+                    "Im Gutachten wird hypothetisch formuliert: erst „Fraglich ist, "
+                    "ob ...“, dann Definition, dann Subsumtion, dann das Ergebnis. "
                     "Nur das Endergebnis darf im Urteilsstil stehen.",
                     sentence_index=idx,
                     excerpt=sentence[:160],
@@ -629,7 +667,7 @@ def analyze(
                 Severity.FEHLER,
                 "kein_obersatz",
                 "Es gibt keinen erkennbaren Obersatz.",
-                f"Beginne mit: '{bsp['obersatz']}'",
+                f"Beginne mit: „{bsp['obersatz']}“",
             )
         )
     if counts[Step.DEFINITION.value] == 0:
@@ -650,8 +688,8 @@ def analyze(
                 Severity.FEHLER,
                 "keine_subsumtion",
                 "Der Sachverhalt wird nicht erkennbar unter die Norm subsumiert.",
-                "Beziehe dich ausdrücklich auf den Sachverhalt: 'Hier hat A ...', "
-                "'Vorliegend ...'. Ohne Sachverhaltsbezug keine Subsumtion.",
+                "Beziehe dich ausdrücklich auf den Sachverhalt: „Hier hat A ...“, "
+                "„Vorliegend ...“. Ohne Sachverhaltsbezug keine Subsumtion.",
             )
         )
     if counts[Step.ERGEBNIS.value] == 0:
@@ -661,7 +699,7 @@ def analyze(
                 Severity.FEHLER,
                 "kein_ergebnis",
                 "Es fehlt ein abschließendes Ergebnis.",
-                f"Schließe mit z. B.: '{bsp['ergebnis']}'",
+                f"Schließe mit z. B.: „{bsp['ergebnis']}“",
             )
         )
 
@@ -687,7 +725,7 @@ def analyze(
                 Severity.HINWEIS,
                 "gesetz_fehlt",
                 "Die Paragraphen werden ohne Gesetzesangabe zitiert.",
-                "Nenne das Gesetz mindestens beim ersten Zitat ('§ 433 Abs. 2 BGB').",
+                "Nenne das Gesetz mindestens beim ersten Zitat („§ 433 Abs. 2 BGB“).",
             )
         )
 
@@ -716,7 +754,7 @@ def analyze(
             Finding(
                 Severity.HINWEIS,
                 "schachtelsatz",
-                f"{len(long_sentences)} Satz/Saetze mit mehr als 45 Woertern.",
+                f"{len(long_sentences)} Satz/Sätze mit mehr als 45 Wörtern.",
                 "Ein Gedanke pro Satz. Korrektoren lesen unter Zeitdruck.",
                 sentence_index=long_sentences[0],
                 excerpt=sentences[long_sentences[0]][:160],

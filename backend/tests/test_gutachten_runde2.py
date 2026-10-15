@@ -120,3 +120,15 @@ def test_norm_ohne_absatz_und_mit_leerzeichen_trifft():
     assert any(norm_matches(erwartet, n) for n in extract_norms("Nach § 311 b Abs. 1 BGB ..."))
     assert not norm_matches(erwartet, "§ 311")
     assert not norm_matches(erwartet, "§ 312b")
+
+
+def test_norm_nummer_mit_buchstabenzusatz_wird_exakt_verglichen():
+    nr1 = "Art. 93 Abs. 1 Nr. 1 GG"
+    nr4a = "Art. 93 Abs. 1 Nr. 4a GG"
+    assert not norm_matches(nr1, nr4a)
+    assert not norm_matches(nr4a, nr1)
+    assert not norm_matches("Art. 93 Abs. 1 Nr. 4 GG", nr4a)
+    assert norm_matches(nr4a, "Art. 93 I Nr. 4a GG")
+    # Nummer im Text nicht angegeben: grosszuegig
+    assert norm_matches(nr4a, "Art. 93 Abs. 1 GG")
+    assert not any(norm_matches(nr1, n) for n in extract_norms("Nach Art. 93 Abs. 1 Nr. 4a GG ..."))

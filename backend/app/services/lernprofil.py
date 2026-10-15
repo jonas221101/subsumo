@@ -30,6 +30,7 @@ from sqlalchemy.orm import Session
 from app.models import Case, Topic, User
 from app.schemas import LernprofilIn
 from app.services import srs
+from app.services.gutachten import finding_label
 
 # Verschiebung der Ziel-Retention je Sicherheitsniveau. +/-0.04 entspricht bei
 # FSRS grob einem Drittel weniger bzw. mehr Wiederholungen - spuerbar, aber
@@ -59,45 +60,45 @@ TECHNIK_TIPPS: dict[str, dict[str, str]] = {
         "tipp": (
             "Jede Prüfung beginnt mit einem Obersatz im Konjunktiv: 'A könnte gegen B "
             "einen Anspruch auf ... aus § ... haben.' Ohne ihn erkennt der Korrektor die "
-            "Methode nicht - das kostet mehr als jeder inhaltliche Fehler."
+            "Methode nicht – das kostet mehr als jeder inhaltliche Fehler."
         ),
     },
     "sprung_zum_ergebnis": {
         "titel": "Subsumtion statt Behauptung",
         "tipp": (
             "Zwischen Definition und Ergebnis fehlt der Schritt, der den Sachverhalt unter "
-            "die Definition zieht. Schreibe für jedes Merkmal einen Satz, der mit 'Hier ...' "
-            "oder 'Vorliegend ...' beginnt."
+            "die Definition zieht. Schreibe für jedes Merkmal einen Satz, der mit „Hier ...“ "
+            "oder „Vorliegend ...“ beginnt."
         ),
     },
     "keine_subsumtion": {
         "titel": "Subsumtion statt Behauptung",
         "tipp": (
             "Definition und Ergebnis stehen da, aber nicht der Weg dazwischen. Nenne die "
-            "Tatsache aus dem Sachverhalt, die das Merkmal erfuellt, bevor du das Ergebnis "
+            "Tatsache aus dem Sachverhalt, die das Merkmal erfüllt, bevor du das Ergebnis "
             "feststellst."
         ),
     },
     "urteilsstil": {
         "titel": "Gutachten- statt Urteilsstil",
         "tipp": (
-            "'Da ..., ist ...' gehört ins Urteil, nicht ins Gutachten. Im Gutachten steht "
-            "erst die Frage (könnte), dann die Prüfung, dann das Ergebnis - nur bei "
-            "unproblematischen Punkten darf der Urteilsstil verkuerzen."
+            "„Da ..., ist ...“ gehört ins Urteil, nicht ins Gutachten. Im Gutachten steht "
+            "erst die Frage (könnte), dann die Prüfung, dann das Ergebnis – nur bei "
+            "unproblematischen Punkten darf der Urteilsstil verkürzen."
         ),
     },
     "offener_obersatz": {
         "titel": "Prüfungspunkte abschließen",
         "tipp": (
             "Ein aufgeworfener Obersatz braucht einen Ergebnissatz. Lies vor der Abgabe jeden "
-            "'könnte'-Satz und prüfe, ob ein 'somit'/'folglich' dazu existiert."
+            "„könnte“-Satz und prüfe, ob ein „somit“/„folglich“ dazu existiert."
         ),
     },
     "keine_definition": {
         "titel": "Definition vor Subsumtion",
         "tipp": (
             "Ein Tatbestandsmerkmal wird erst definiert, dann subsumiert. Die Definitionskarten "
-            "des Themas liefern den Wortlaut - sie sind dafür da, wörtlich zu sitzen."
+            "des Themas liefern den Wortlaut – sie sind dafür da, wörtlich zu sitzen."
         ),
     },
     "kein_ergebnis": {
@@ -112,18 +113,18 @@ TECHNIK_TIPPS: dict[str, dict[str, str]] = {
         "titel": "Normen zitieren",
         "tipp": (
             "Jede Anspruchsgrundlage und jedes Tatbestandsmerkmal braucht die Norm mit Absatz "
-            "und Satz. Die Norm-Karten des Themas sind dafür da - zieh sie vor."
+            "und Satz. Die Norm-Karten des Themas sind dafür da – zieh sie vor."
         ),
     },
     "gesetz_fehlt": {
         "titel": "Gesetz zur Norm",
-        "tipp": "'§ 433 Abs. 2' ohne 'BGB' ist unvollständig - das Gesetz gehört zu jedem Zitat.",
+        "tipp": "„§ 433 Abs. 2“ ohne „BGB“ ist unvollständig – das Gesetz gehört zu jedem Zitat.",
     },
     "schachtelsatz": {
         "titel": "Kurze Sätze",
         "tipp": (
             "Ein Gedanke, ein Satz. Lange Schachtelsätze kosten den Korrektor Zeit und dich "
-            "Präzision - teile Sätze mit mehr als zwei Nebensätzen."
+            "Präzision – teile Sätze mit mehr als zwei Nebensätzen."
         ),
     },
 }
@@ -336,7 +337,13 @@ def technik_tipp(strukturfehler: list[dict[str, Any]]) -> dict[str, Any] | None:
     for eintrag in strukturfehler:
         tipp = TECHNIK_TIPPS.get(str(eintrag.get("code", "")))
         if tipp is not None:
-            return {**tipp, "code": eintrag["code"], "anzahl": eintrag.get("anzahl", 0)}
+            code = str(eintrag["code"])
+            return {
+                **tipp,
+                "code": code,
+                "label": finding_label(code),
+                "anzahl": eintrag.get("anzahl", 0),
+            }
     return None
 
 

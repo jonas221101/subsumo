@@ -87,7 +87,7 @@ def test_vollstaendiges_gutachten_trifft_alle_pruefpunkte(evaluator):
     # Gedeckelt: ein Stichwortabgleich rechtfertigt kein Praedikat.
     assert result.points == HEURISTIK_MAX_PUNKTE
     assert result.note == "vollbefriedigend"
-    assert "gedeckelt" in result.summary
+    assert "höchstens 11 Punkte" in result.summary
 
 
 def test_jeder_treffer_traegt_einen_beleg(evaluator):
@@ -136,7 +136,7 @@ def test_fehlender_kernpunkt_deckelt_die_punktzahl(evaluator):
     )
     assert result.missed_required == ["Anspruchsgrundlage § 433 Abs. 2 BGB"]
     assert result.points <= 3.5
-    assert result.note in ("mangelhaft", "ungenuegend")
+    assert result.note in ("mangelhaft", "ungenügend")
     assert "Kernprüfpunkte fehlen" in result.summary
 
 
@@ -174,7 +174,7 @@ def test_ohne_llm_greift_die_heuristik(evaluator):
 
 @pytest.mark.parametrize(
     ("punkte", "note"),
-    [(0, "ungenuegend"), (2, "mangelhaft"), (5, "ausreichend"), (8, "befriedigend"),
+    [(0, "ungenügend"), (2, "mangelhaft"), (5, "ausreichend"), (8, "befriedigend"),
      (11, "vollbefriedigend"), (14, "gut"), (17, "sehr gut")],
 )
 def test_notenskala(punkte, note):
