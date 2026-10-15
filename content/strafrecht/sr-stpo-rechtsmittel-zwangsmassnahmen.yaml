@@ -109,8 +109,8 @@ cards:
     herausgegeben, bedürfen sie der Beschlagnahme (§ 94 Abs. 2 StPO). Die Beschlagnahme
     darf nur durch den Richter, bei Gefahr im Verzug auch durch die Staatsanwaltschaft
     und ihre Ermittlungspersonen angeordnet werden (§ 98 Abs. 1 StPO). Ordnet die
-    Staatsanwaltschaft oder die Polizei an, ist binnen drei Tagen die richterliche
-    Bestätigung zu beantragen, wenn bei der Beschlagnahme weder der Betroffene noch
+    Staatsanwaltschaft oder die Polizei an, soll binnen drei Tagen die richterliche
+    Bestätigung beantragt werden, wenn bei der Beschlagnahme weder der Betroffene noch
     ein erwachsener Angehöriger anwesend war oder der Betroffene ausdrücklich
     widersprochen hat (§ 98 Abs. 2 S. 1 StPO). Beschlagnahmeverbote bestehen etwa
     für Mitteilungen zwischen dem Beschuldigten und Zeugnisverweigerungsberechtigten,
@@ -135,8 +135,9 @@ cards:
     besteht, dass der Beschuldigte Täter oder Teilnehmer ist. Haftgründe sind Flucht
     oder Verstecken (Nr. 1), Fluchtgefahr (Nr. 2) und Verdunkelungsgefahr (Nr. 3,
     § 112 Abs. 2 StPO). Die Wiederholungsgefahr ist ein besonderer Haftgrund für
-    bestimmte Straftaten (§ 112a StPO); bei Schwerstkriminalität besteht ein
-    Haftgrund wegen der Tatschwere (§ 112 Abs. 3 StPO). Die Untersuchungshaft ist
+    bestimmte Straftaten (§ 112a StPO); bei bestimmten Katalogtaten der Schwerstkriminalität genügt die Tatschwere
+    (§ 112 Abs. 3 StPO), verfassungskonform nur bei nicht auszuschließender Flucht-
+    oder Verdunkelungsgefahr. Die Untersuchungshaft ist
     nur zulässig, wenn mildere Mittel nicht ausreichen (§ 116 StPO: Haftverschonung).
     Dabei gilt die Unschuldsvermutung.
   norms:
@@ -153,8 +154,8 @@ cards:
   front: 'Verfahren der Untersuchungshaft: Haftbefehl, Vorführung, Haftprüfung (§§ 114, 115, 117, 121 StPO)'
   back: >-
     Die Untersuchungshaft wird durch schriftlichen Haftbefehl des Richters angeordnet
-    (§ 114 StPO), der den Beschuldigten, die Tat, den Haftgrund und die Beweismittel
-    bezeichnen muss. Wer festgenommen wird, ist unverzüglich, spätestens am Tag nach
+    (§ 114 StPO), der den Beschuldigten, die Tat sowie die Tatsachen, aus denen sich
+    dringender Tatverdacht und Haftgrund ergeben, bezeichnen muss. Wer festgenommen wird, ist unverzüglich, spätestens am Tag nach
     der Festnahme dem Richter vorzuführen (Art. 104 Abs. 3 GG, § 115 StPO, § 128 StPO).
     Der Beschuldigte kann jederzeit Haftprüfung beantragen (§ 117 Abs. 1 StPO) oder
     Haftbeschwerde einlegen (§ 304 StPO). Dauert die Untersuchungshaft länger als
@@ -228,8 +229,8 @@ cards:
     Bei den absoluten Revisionsgründen wird die Beruhung des Urteils auf dem Rechtsfehler
     unwiderleglich vermutet (§ 338 StPO). Sie sind: (1) vorschriftswidrige Besetzung
     des Gerichts, (2) Mitwirkung eines kraft Gesetzes ausgeschlossenen Richters,
-    (3) Mitwirkung eines wegen Besorgnis der Befangenheit erfolgreich abgelehnten
-    Richters, (4) Annahme der Zuständigkeit durch das Gericht zu Unrecht, (5) Abwesenheit
+    (3) Mitwirkung eines Richters, nachdem er wegen Besorgnis der Befangenheit
+    abgelehnt und das Gesuch für begründet erklärt oder zu Unrecht verworfen wurde, (4) Annahme der Zuständigkeit durch das Gericht zu Unrecht, (5) Abwesenheit
     einer Person, deren Anwesenheit das Gesetz vorschreibt (etwa Angeklagter,
     Staatsanwalt, notwendiger Verteidiger), (6) Verstoß gegen die Vorschriften über
     die Öffentlichkeit, (7) Fehlen der Urteilsgründe oder deren Nachholung nach Ablauf
@@ -330,8 +331,9 @@ faelle:
       des BGH). Die Frist zur Einlegung beträgt eine Woche (§ 341 StPO), die Begründung ist binnen eines
       Monats einzureichen (§ 345 Abs. 1 StPO). Die unzulässige Verwertung wird mit der
       Verfahrensrüge geltend gemacht; die Tatsachen müssen nach § 344 Abs. 2 S. 2 StPO
-      angegeben werden. Berufung ist gegen Urteile des Landgerichts im ersten Rechtszug
-      nicht möglich.
+      angegeben werden. Die Berufung ist nicht statthaft, weil das Landgericht im ersten
+      Rechtszug entschieden hat; die Berufung ist keine Instanz gegen erstinstanzliche
+      Landgerichtsurteile.
   expectation:
     pruefpunkte:
     - id: p1
@@ -358,6 +360,8 @@ faelle:
       required: false
       keywords:
       - Richter erreichbar
+      - Richter war erreichbar
+      - Tatsachen nicht
       - keine konkreten Tatsachen
       - rechtswidrige Durchsuchung
       - Durchsuchung war rechtswidrig
@@ -399,5 +403,7 @@ faelle:
       - keine Berufung
       - Berufung nicht statthaft
       - erstinstanzliches Urteil
+      - Berufung nicht möglich
+      - Berufung unzulässig
       card_slugs:
       - sr-stpoz-berufung

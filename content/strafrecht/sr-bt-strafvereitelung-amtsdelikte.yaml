@@ -145,7 +145,8 @@ cards:
     ein inhaltlicher Zusammenhang (Verknüpfung) zwischen dem Vorteil und der
     Dienstausübung bzw. Diensthandlung. Bloße Sozialadäquanz oder allgemeine
     Klimapflege genügen nicht. Nach § 331 Abs. 3 StGB ist die Annahme eines nicht
-    geforderten Vorteils straflos, wenn die zuständige Behörde sie genehmigt.
+    geforderten Vorteils straflos, wenn die zuständige Behörde sie vorher
+    genehmigt hat oder auf unverzügliche Anzeige des Amtsträgers nachträglich genehmigt.
   norms:
   - § 11 Abs. 1 Nr. 2 StGB
   - § 331 Abs. 1 StGB
@@ -165,8 +166,8 @@ cards:
     pflichtwidrig sein, also gegen seine Dienstpflichten verstoßen. Bei
     Ermessensentscheidungen genügt nach § 332 Abs. 3 StGB, dass der Amtsträger
     sich dem anderen gegenüber bereit gezeigt hat, bei der Entscheidung den Vorteil
-    zu berücksichtigen. In der Klausur ist zuerst § 332 StGB zu prüfen, dann
-    § 331 StGB.
+    zu berücksichtigen. Liegt eine pflichtwidrige Diensthandlung nahe, empfiehlt es sich in der
+    Klausur, zuerst § 332 StGB und danach § 331 StGB zu prüfen.
   norms:
   - § 331 Abs. 1 StGB
   - § 332 Abs. 1 StGB
@@ -207,8 +208,8 @@ cards:
     begehen lässt. Die Tat ist ein unechtes Amtsdelikt: Sie verwirklicht den
     Tatbestand der Körperverletzung (§ 223 StGB) und qualifiziert ihn durch die
     Amtsträgereigenschaft (Freiheitsstrafe von drei Monaten bis zu fünf Jahren).
-    Begehen lässt die Körperverletzung ein Vorgesetzter oder Amtsträger, der sie
-    nicht verhindert. Für Teilnehmer, die keine Amtsträger sind, gilt § 28 Abs. 2
+    Begehen lässt die Körperverletzung, wer als Amtsträger einen anderen
+    zur Tat veranlasst oder sie von ihm ausführen lässt (etwa durch Anordnung). Für Teilnehmer, die keine Amtsträger sind, gilt § 28 Abs. 2
     StGB, sie werden aus § 223 StGB bestraft. Abs. 2 stellt den Versuch unter
     Strafe, Abs. 3 verweist auf §§ 224 bis 229 StGB. Rechtfertigung kommt durch
     unmittelbaren Zwang (Landes- und Bundespolizeirecht, UZwG) in Betracht; die
@@ -343,8 +344,8 @@ faelle:
       - § 258 Abs. 5 StGB
       - § 258 Abs. 6 StGB
       keywords:
-      - § 258 Abs. 5
       - Selbstbegünstigung
+      - Selbstbegünstigungsprivileg
       - kein Angehöriger
       - nicht verwandt
       card_slugs:
