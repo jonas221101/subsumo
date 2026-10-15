@@ -174,4 +174,49 @@ void main() {
     expect(jsonDecode(patch.body)['bundesland'], 'NW');
     expect(requests.any((r) => r.method == 'PUT' && r.url.path == '/v1/me/lernprofil'), isTrue);
   });
+
+  testWidgets('Lernprofil am Handy: Bundesland bleibt nach Scrollen zum Speichern erhalten',
+      (tester) async {
+    // Regression Welle 7: In einer ListView wurde der Bundesland-Editor beim
+    // Scrollen verworfen und das Bundesland still nicht gespeichert.
+    tester.view.physicalSize = const Size(390, 844);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final requests = <http.Request>[];
+    final client = MockClient((r) async {
+      requests.add(r);
+      switch (r.url.path) {
+        case '/v1/examen/bundeslaender':
+          return _json([{'code': 'NW', 'name': 'Nordrhein-Westfalen'}]);
+        case '/v1/examen/universitaeten':
+          return _json([]);
+        case '/v1/me/lernprofil':
+          return _json({...jsonDecode(r.body) as Map, 'eingerichtet': true});
+        case '/v1/auth/me':
+          return _json({'id': 1, 'email': 'a@b.de'});
+      }
+      return _json({'profil': {}});
+    });
+    final state = AppState(api: ApiClient(client: client)..setToken('t'));
+    await tester.pumpWidget(AppScope(
+      notifier: state,
+      child: MaterialApp(
+        theme: buildTheme(Brightness.light),
+        home: const LernprofilPage(profil: {'semester': 3}, themen: []),
+      ),
+    ));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('bundesland')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Nordrhein-Westfalen').last);
+    await tester.pumpAndSettle();
+    final speichern = find.widgetWithText(SubsumoButton, 'Speichern');
+    await tester.scrollUntilVisible(speichern, 300, scrollable: find.byType(Scrollable).first);
+    await tester.pumpAndSettle();
+    await tester.tap(speichern);
+    await tester.pumpAndSettle();
+
+    final patch = requests.singleWhere((r) => r.method == 'PATCH');
+    expect(jsonDecode(patch.body)['bundesland'], 'NW');
+  });
 }
