@@ -1,0 +1,25 @@
+kurs:
+  slug: sr-stpo
+  title: Strafprozessrecht
+  area: strafrecht
+  semester_default: 6
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: 'Grundzüge des Strafverfahrens: Verfahrensablauf, Beschuldigtenrechte und Beweisverwertungsverbote,
+    Zwangsmaßnahmen (Durchsuchung, Untersuchungshaft) und Rechtsmittel (Berufung, Revision).'
+  lernziele:
+  - Beschuldigtenrechte und Beweisverwertungsverbote in der Klausur prüfen
+  - Durchsuchung, Beschlagnahme und Untersuchungshaft nach ihren Voraussetzungen aufbauen
+  - Rechtsmittel (Berufung, Revision) und ihre Zulässigkeit einordnen
+  klausurformat:
+    typ: Fortgeschrittenenklausur
+    minuten: 180
+  topic_slugs:
+  - sr-stpo-grundzuege
+  - sr-stpo-rechtsmittel-zwangsmassnahmen
+  landesrecht_kategorien: []
+  fehlende_themen:
+  - Besondere Verfahrensarten (Strafbefehl, Privatklage, Adhäsion) und Jugendstrafverfahren (P3)

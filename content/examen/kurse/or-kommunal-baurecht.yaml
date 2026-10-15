@@ -4,21 +4,34 @@ kurs:
   area: oeffentliches-recht
   semester_default: 5
   examenskurs: false
-  stand: 2026-09
+  stand: 2026-10
   quellen:
   - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: In Vorbereitung. Derzeit nur die Landesrecht-Wegweiserkarten des eigenen Bundeslands zu Kommunalverfassung und Bauordnung (je eine Orientierungskarte); eigene Themen zu Kommunalrecht, Bauplanungs- und Bauordnungsrecht folgen und sind examenszentral.
+  beschreibung: Kommunalrecht (Selbstverwaltung, Gemeindeorgane und Kommunalverfassungsstreit, Satzung und öffentliche
+    Einrichtungen, Kommunalaufsicht und Gemeindewirtschaft) sowie Baurecht (Bauleitplanung, bauplanungsrechtliche
+    Zulässigkeit nach §§ 29 ff. BauGB, Bauordnungsrecht, Baugenehmigung und Nachbarschutz). Bundesrechtliche Themen
+    werden durch die Landesrecht-Karten zur Kommunalverfassung und Bauordnung des eigenen Bundeslands ergänzt.
   lernziele:
-  - Das Gesetz zur Kommunalverfassung und die Bauordnung des eigenen Landes benennen und einordnen (Orientierung, noch keine Klausurtiefe)
-  - Hauptorgane der Gemeinde nach dem Landesrecht des eigenen Bundeslands nennen
+  - Kommunale Selbstverwaltung (Art. 28 Abs. 2 GG) und Aufgabenarten einordnen
+  - Gemeindeorgane, Ratsbeschlüsse und Kommunalverfassungsstreit prüfen
+  - Satzungen, Anschluss- und Benutzungszwang sowie Kommunalaufsicht in der Klausur aufbauen
+  - Bauplanungsrechtliche Zulässigkeit eines Vorhabens nach §§ 29 ff. BauGB prüfen
+  - Baugenehmigung, Nachbarschutz und Bauleitplanung (Abwägungsgebot, Planerhaltung) klausurtauglich bearbeiten
+  - Landeskommunalverfassung und Bauordnung des eigenen Landes mit Fundstellen zitieren
   klausurformat:
     typ: Fortgeschrittenenklausur
     minuten: 180
-  topic_slugs: []
+  topic_slugs:
+  - or-kommunalrecht-selbstverwaltung
+  - or-kommunalrecht-organe-kommunalverfassungsstreit
+  - or-kommunalrecht-satzung-einrichtungen
+  - or-kommunalrecht-aufsicht-wirtschaft
+  - or-baurecht-bauleitplanung
+  - or-baurecht-bauplanungsrecht-zulaessigkeit
+  - or-baurecht-bauordnungsrecht-nachbarschutz
   landesrecht_kategorien:
-  - landesrecht-allgemein
+  - kommunalrecht
+  - bauordnungsrecht
   fehlende_themen:
-  - Kommunalrecht (Gemeindeorgane, Satzung, Kommunalaufsicht, Gemeindewirtschaft) (P1)
-  - Bauplanungsrecht §§ 29 ff. BauGB (P1)
-  - Bauordnungsrecht und Nachbarschutz (P1)
+  - Straßen- und Wegerecht, Denkmalschutz (P3)

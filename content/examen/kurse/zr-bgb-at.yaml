@@ -4,16 +4,19 @@ kurs:
   area: zivilrecht
   semester_default: 1
   examenskurs: false
-  stand: 2026-09
+  stand: 2026-10
   quellen:
   - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: 'Rechtsgeschäftslehre als Fundament des gesamten Zivilrechts: Willenserklärung, Vertragsschluss,
-    Stellvertretung, Anfechtung, Geschäftsfähigkeit, Verjährung.'
+  beschreibung: 'Rechtsgeschäftslehre als Fundament des gesamten Zivilrechts: Willenserklärung und Willensmängel,
+    Vertragsschluss, Form, Nichtigkeit (§§ 134, 138), Anfechtung (auch §§ 123, 124), Bedingung und Befristung, Stellvertretung,
+    Zustimmung und Genehmigung, Geschäftsfähigkeit, Verjährung. Der Pflichtstoff des BGB AT ist damit abgedeckt.'
   lernziele:
-  - Zustandekommen und Auslegung eines Vertrags im Gutachtenstil prüfen
-  - Anfechtungsgründe sicher voneinander abgrenzen (§§ 119, 123 BGB)
-  - Stellvertretung inklusive Vertreter ohne Vertretungsmacht aufbauen
+  - Willenserklärung, Zugang und Vertragsschluss (Angebot, Annahme, Dissens) sauber voneinander trennen
+  - Anfechtungsgründe sicher voneinander abgrenzen (§§ 119, 120, 123 BGB) und Fristen prüfen
+  - Formvorschriften, Verbotsgesetze und Sittenwidrigkeit (§§ 125, 134, 138 BGB) samt Rechtsfolgen (§§ 139, 140
+    BGB) anwenden
+  - Stellvertretung inklusive Vertreter ohne Vertretungsmacht und Genehmigung (§§ 177, 184 BGB) aufbauen
   - Minderjährigenrecht (§§ 104 ff. BGB) auf Fälle anwenden
   klausurformat:
     typ: Anfängerklausur
@@ -26,8 +29,12 @@ kurs:
   - zr-at-stellvertretung
   - zr-at-vertreter-ohne-vertretungsmacht
   - zr-at-verjaehrung
+  - zr-at-willenserklaerung-willensmaengel
+  - zr-at-vertragsschluss
+  - zr-at-form
+  - zr-at-nichtigkeit-134-138
+  - zr-at-arglist-drohung-123
+  - zr-at-bedingung-befristung
+  - zr-at-fristen-einwilligung-genehmigung
   landesrecht_kategorien: []
-  fehlende_themen:
-  - Form, Verbotsgesetz und Sittenwidrigkeit (§§ 125, 134, 138 BGB) (P1)
-  - Bedingung, Befristung und Scheingeschäft/Mentalreservation (§§ 158 ff., 116-118 BGB) (P1)
-  - Verbraucherwiderruf, §§ 312 ff., 355 BGB (P2)
+  fehlende_themen: []

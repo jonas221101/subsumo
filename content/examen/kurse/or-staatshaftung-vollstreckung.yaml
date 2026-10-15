@@ -1,0 +1,25 @@
+kurs:
+  slug: or-staatshaftung-vollstreckung
+  title: Staatshaftung und Verwaltungsvollstreckung
+  area: oeffentliches-recht
+  semester_default: 5
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: Haftung des Staates für rechtswidriges Verhalten (Amtshaftung, Folgenbeseitigung, Aufopferung und
+    Entschädigung) sowie die Vollstreckung von Verwaltungsakten (Zwangsmittel, Sofortvollzug, Kosten).
+  lernziele:
+  - Amtshaftungsanspruch (§ 839 BGB i. V. m. Art. 34 GG) vollständig prüfen
+  - Folgenbeseitigung, Aufopferung und Entschädigungsansprüche abgrenzen
+  - Rechtmäßigkeit von Verwaltungszwang (Zwangsmittel, Sofortvollzug) und Kostenfolgen prüfen
+  klausurformat:
+    typ: Fortgeschrittenenklausur
+    minuten: 180
+  topic_slugs:
+  - or-staatshaftung
+  - or-vwr-verwaltungsvollstreckung
+  landesrecht_kategorien: []
+  fehlende_themen:
+  - Staatshaftung nach dem Recht der DDR/StHG (P3)

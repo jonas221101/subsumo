@@ -4,11 +4,13 @@ kurs:
   area: strafrecht
   semester_default: 2
   examenskurs: false
-  stand: 2026-09
+  stand: 2026-10
   quellen:
   - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Die Erweiterungen des Grunddelikts (Versuch/Rücktritt, Täterschaft/Teilnahme, Unterlassen, Fahrlässigkeit) und die Konkurrenzen §§ 52, 53 StGB.
+  beschreibung: Die Erweiterungen des Grunddelikts (Versuch/Rücktritt, Täterschaft/Teilnahme, Unterlassen, Fahrlässigkeit),
+    die Konkurrenzen §§ 52, 53 StGB sowie Strafzumessung und Strafaussetzung. Versuch und Beteiligung sind auch
+    in der Vertiefung (§ 28, mittelbare Täterschaft, § 30) abgedeckt.
   lernziele:
   - Versuchsaufbau mit Tatentschluss und unmittelbarem Ansetzen, Rücktritt nach § 24 StGB
   - Täterschaft und Teilnahme (§§ 25-27 StGB) abgrenzen
@@ -22,7 +24,8 @@ kurs:
   - sr-at-unterlassungsdelikte
   - sr-bt-fahrlaessige-toetung-222
   - sr-at-konkurrenzen
+  - sr-at-versuch-vertiefung
+  - sr-at-beteiligung-vertiefung
+  - sr-at-strafzumessung-kcang
   landesrecht_kategorien: []
-  fehlende_themen:
-  - 'Beteiligung vertiefen: § 28 StGB, Mord-Beteiligung, Organisationsherrschaft, § 30 StGB (P1)'
-  - Rücktritt vertiefen (Rücktrittshorizont, mehrere Beteiligte) (P2)
+  fehlende_themen: []

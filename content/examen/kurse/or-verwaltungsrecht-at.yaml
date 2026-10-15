@@ -4,12 +4,12 @@ kurs:
   area: oeffentliches-recht
   semester_default: 3
   examenskurs: false
-  stand: 2026-09
+  stand: 2026-10
   quellen:
   - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Verwaltungsakt, Rechtmäßigkeitsprüfung, Ermessen, Nebenbestimmungen, Rücknahme und
-    Widerruf - nach dem Verwaltungsverfahrensgesetz des eigenen Bundeslands.
+  beschreibung: Verwaltungsakt, Rechtmäßigkeitsprüfung, Ermessen, Nebenbestimmungen, Rücknahme und Widerruf, öffentlich-rechtlicher
+    Vertrag und Realakt, Planfeststellung und Subventionen - nach dem Verwaltungsverfahrensgesetz des eigenen Bundeslands.
   lernziele:
   - Verwaltungsakt (§ 35 VwVfG) definieren und abgrenzen
   - Formelle und materielle Rechtmäßigkeit eines VA vollständig prüfen
@@ -24,9 +24,8 @@ kurs:
   - or-vwvfg-ermessen-beurteilungsspielraum
   - or-vwvfg-nebenbestimmungen
   - or-vwvfg-ruecknahme-widerruf
+  - or-vwr-oeffentlich-rechtlicher-vertrag-realakt
+  - or-vwr-planfeststellung-subventionen
   landesrecht_kategorien:
   - landesrecht-allgemein
-  fehlende_themen:
-  - Staatshaftung (Amtshaftung, Folgenbeseitigung, Aufopferung) (P1)
-  - Öffentlich-rechtlicher Vertrag §§ 54 ff. VwVfG, Realakt (P2)
-  - Verwaltungsvollstreckung, Art. 83 ff. GG (P2)
+  fehlende_themen: []

@@ -298,13 +298,50 @@ gilt dafür nicht mehr. Dasselbe gilt für die Strafrechts-Randdelikte
 (Brandstiftung, Sachbeschädigung, Aussagedelikte, Straßenverkehr) und
 die StPO-Grundzüge, soweit sie in den Prüfungsgebieten stehen.
 
-**Kurs-Struktur (derselbe Stichtag):** Alle 22 Themen, die in keinem Kurs
-standen, sind in thematische Kurse und die Examenskurse eingeordnet; die
-`fehlende_themen`-Listen der Kurse führen nur noch tatsächlich fehlende
-Themen mit Priorität. Die Examenskurse sind als „Grundstock" beschrieben,
-nicht als Gesamtwiederholung des Pflichtstoffs. `or-kommunal-baurecht` ist
-als „in Vorbereitung" gekennzeichnet; es besteht derzeit nur aus den
-Landesrecht-Wegweiserkarten.
+**Kurs-Struktur (Zwischenstand, 2026-10-15 vormittags):** Alle 22 Themen, die
+in keinem Kurs standen, waren in thematische Kurse und die Examenskurse
+eingeordnet; die Examenskurse waren als „Grundstock" beschrieben und
+`or-kommunal-baurecht` als „in Vorbereitung" gekennzeichnet. Dieser
+Zwischenstand ist durch den folgenden Abschnitt überholt.
+
+### Neuer Stand nach der Vervollständigung (2026-10-15)
+
+Die in den Lückenberichten (Zivilrecht, Strafrecht, Öffentliches Recht,
+Struktur) priorisierten Lücken wurden durch 125 neue Themendateien
+geschlossen. Alle neuen Themen sind Redaktionsentwürfe der KI
+(`status: in-pruefung`, `normzitate_geprueft: false`); **eine menschliche
+Fachprüfung steht aus**. Die Prüfliste je Themengruppe (Fundstellen, Normen,
+Streitstände, Länderlisten) liegt als `docs/28-pruefliste-ki-vervollstaendigung.md`
+im Repo.
+
+| Gebiet | Themen (Bundesrecht) | Karten | Bemerkung |
+|---|---|---|---|
+| Zivilrecht | 68 | 613 | BGB AT, Schuldrecht AT/BT, Sachenrecht (Mobiliar und Immobiliar) und Nebengebiete (Handels-, Gesellschafts-, Erb-, Familien-, Arbeitsrecht, ZPO) abgedeckt |
+| Strafrecht | 52 | 461 | AT vertieft, BT Person/Vermögen/Allgemeinheit/Rechtspflege, StPO-Grundzüge |
+| Öffentliches Recht | 54 | 484 | Staatsorganisation, Grundrechte vollständig, Verfassungs- und Verwaltungsprozess, Polizei-, Kommunal-, Baurecht, Staatshaftung, Europarecht |
+| Landesrecht | 64 Dateien (16 Länder, 4 Kategorien: Polizei/Ordnungsrecht, Landesrecht allgemein, Kommunalrecht, Bauordnungsrecht) | 540 | Wegweiser- und Normenkarten, keine vollständigen Schemata je Land |
+| **Summe** | **174 Bundesrechtsthemen + 64 Landesrechtsdateien** | **1.558 + 540** | |
+
+(Der Bestand umfasst die 125 neuen und die bisherigen Themen. Tiefe: Die
+neuen Themen haben je 8-14 Karten; Schemata und Fälle sind weiterhin nur in
+den älteren Themen und vereinzelt vorhanden.)
+
+**Kurs-Struktur:** Jedes Bundesrechtsthema steht in mindestens einem
+thematischen Kurs und im Examenskurs seines Gebiets. Neue Kurse:
+`zr-nebengebiete`, `sr-bt-3`, `sr-stpo`, `or-staatshaftung-vollstreckung`,
+`or-europarecht` (insgesamt jetzt 23 Kurse); sie stehen in den Kursplänen
+aller 41 Universitäten. `or-kommunal-baurecht` führt die vier
+Kommunalrechts- und drei Baurechtsthemen und die Landesrecht-Kategorien
+`kommunalrecht` und `bauordnungsrecht`; `or-polizei-ordnungsrecht` umfasst
+zusätzlich Polizeirecht vertieft und Versammlungsrecht. Die
+`fehlende_themen`-Listen führen nur noch echte Restlücken (überwiegend P3,
+z. B. Insolvenz-, Reise-, Wirtschafts- und Umweltrecht, Betäubungsmittel-
+und Nebenstrafrecht, Straßen- und Denkmalrecht).
+
+**Offen:** (1) menschliche Fachprüfung aller neuen Inhalte anhand von
+`docs/28-pruefliste-ki-vervollstaendigung.md`, (2) Landesrecht der Länder
+BW/NW/HE und NI/BE/HH/HB/SH/MV/BB/SN/ST/TH/RP/SL wurde nur stichprobenartig
+gegengelesen, (3) mehrstufige Examensfälle und Schemata je Land.
 
 ## 2. Zuschnitt eines Themas
 

@@ -4,11 +4,12 @@ kurs:
   area: strafrecht
   semester_default: 1
   examenskurs: false
-  stand: 2026-09
+  stand: 2026-10
   quellen:
   - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Aufbau des vollendeten Vorsatzdelikts, Kausalität und objektive Zurechnung, Vorsatz und Irrtümer (inkl. Erlaubnistatbestandsirrtum), Rechtfertigungsgründe (Notwehr, Notstand, Einwilligung) und Schuld.
+  beschreibung: 'Allgemeiner Teil I: Deliktsaufbau, Vorsatzformen und Fahrlässigkeit, Kausalität und objektive Zurechnung,
+    Irrtümer, Rechtfertigungsgründe (Notwehr, Notstand, Einwilligung und sonstige Gründe) und Schuld.'
   lernziele:
   - Dreistufigen Deliktsaufbau sicher im Gutachtenstil schreiben
   - Tatbestands- und Verbotsirrtum (§§ 16, 17 StGB) voneinander abgrenzen
@@ -26,5 +27,7 @@ kurs:
   - sr-at-schuld-20-35
   - sr-at-rechtfertigende-einwilligung
   - sr-at-erlaubnistatbestandsirrtum
+  - sr-at-rechtfertigung-sonstige
+  - sr-at-vorsatz-fahrlaessigkeit-formen
   landesrecht_kategorien: []
   fehlende_themen: []
