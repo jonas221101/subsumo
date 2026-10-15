@@ -66,7 +66,7 @@ cards:
     Ist die Leistungszeit nicht bestimmt oder darf der Schuldner vor der bestimmten
     Zeit leisten, so wird der Gläubiger nicht dadurch in Verzug gesetzt, dass er vorübergehend
     an der Annahme der angebotenen Leistung verhindert ist (§ 299 BGB). Der Schuldner kann dann zwar jederzeit leisten, der
-    Gläubiger braucht aber nicht jederzeit bereit zu sein. Etwas anderes gilt nur, wenn der Schuldner die Leistung eine angemessene Zeit
+    Gläubiger braucht aber nicht jederzeit bereit zu sein. Etwas anderes gilt nur, wenn der Schuldner die Leistung einige Zeit
     vorher angekündigt hat. Praktisch betrifft dies Fälle, in denen der Gläubiger
     kurzzeitig nicht angetroffen wird, ohne dass die Leistungszeit bindend vereinbart
     war. Bei fester Leistungszeit tritt Annahmeverzug
@@ -258,7 +258,7 @@ faelle:
       Pellets wird V nach § 275 Abs. 1 BGB von seiner Leistungspflicht frei, soweit
       die Gattungsschuld nicht mehr erfüllbar ist (hier: nur wenn die Gattungsschuld
       beschränkt oder konkretisiert ist). Nach § 326 Abs. 1 S. 1 BGB würde der Kaufpreisanspruch
-      grundsätzlich entfallen.
+      grundsätzlich wegfallen.
   - prompt: Befand sich K im Annahmeverzug?
     erwartung: >-
       Ja. V hat die Pellets zur vereinbarten Zeit am Erfüllungsort tatsächlich angeboten
@@ -282,7 +282,7 @@ faelle:
     pruefpunkte:
     - id: p1
       label: Anspruch aus § 433 Abs. 2 BGB mit Wegfall der Leistungspflicht nach §
-        275 Abs. 1 BGB und grundsätzlichem Entfallen nach § 326 Abs. 1 S. 1 BGB
+        275 Abs. 1 BGB und grundsätzlichem Wegfall der Gegenleistung nach § 326 Abs. 1 S. 1 BGB
       weight: 1.0
       required: false
       norms:

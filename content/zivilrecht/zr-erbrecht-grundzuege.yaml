@@ -81,8 +81,9 @@ cards:
     eine vom Erblasser eigenhändig geschriebene und unterschriebene Erklärung (eigenhändiges
     Testament) errichtet werden (§ 2231 BGB). Beim eigenhändigen Testament muss der gesamte
     Text handschriftlich verfasst und unterschrieben sein (§ 2247 Abs. 1 BGB); Angaben zu
-    Zeit und Ort der Errichtung sollen enthalten sein, ihr Fehlen macht das Testament aber
-    nicht unwirksam (§ 2247 Abs. 2, 5 BGB). Maschinenschrift, Computerausdruck oder ein von
+    Zeit und Ort der Errichtung sollen enthalten sein; ihr Fehlen macht das Testament nicht
+    unwirksam, außer es ergeben sich daraus Zweifel an Gültigkeit oder Inhalt (§ 2247 Abs. 2,
+    5 BGB). Maschinenschrift, Computerausdruck oder ein von
     Dritten geschriebener Text genügen nicht; der Formverstoß führt zur Nichtigkeit (§ 125
     S. 1 BGB). Das Testament ist höchstpersönlich (§ 2064 BGB); Testierfähigkeit besteht ab
     16 Jahren, wobei Minderjährige nur ein öffentliches Testament errichten können (§ 2229
@@ -198,7 +199,7 @@ cards:
   front: Wie haftet der Erbe für Nachlassverbindlichkeiten und wie kann er seine Haftung beschränken?
   back: Der Erbe haftet für die Nachlassverbindlichkeiten (§ 1967 BGB); zunächst haftet er
     mit Nachlass und Eigenvermögen. Er kann die Haftung auf den Nachlass beschränken durch
-    Nachlassverwaltung (§ 1975 BGB) oder Nachlassinsolvenzverfahren (§ 1980 BGB). Reicht der
+    Nachlassverwaltung (§ 1975 BGB) oder Nachlassinsolvenzverfahren (§ 1975 BGB, §§ 315 ff. InsO). Reicht der
     Nachlass nicht einmal für die Verfahrenskosten, kann er die Dürftigkeitseinrede erheben
     (§ 1990 BGB). In den ersten drei Monaten nach Annahme steht ihm die Dreimonatseinrede
     zu (§ 2014 BGB). Ausschlagen kann der Erbe binnen sechs Wochen ab Kenntnis vom Anfall
@@ -208,7 +209,7 @@ cards:
   norms:
   - § 1967 BGB
   - § 1975 BGB
-  - § 1980 BGB
+  - §§ 315 ff. InsO
   - § 1990 BGB
   - § 1944 BGB
   - § 2058 BGB
@@ -253,7 +254,8 @@ schemata:
   steps:
   - label: I. Anspruch entstanden, § 2303 BGB
     children:
-    - label: 1. Erbfall eingetreten, Erblasser mit letztem Wohnsitz im Inland
+    - label: 1. Erbfall eingetreten, deutsches Erbrecht anwendbar (Art. 21 EuErbVO, gewöhnlicher
+        Aufenthalt des Erblassers)
     - label: '2. Berechtigter: Abkömmling, Ehegatte oder Eltern (Eltern nur ohne Abkömmlinge,
         § 2309 BGB)'
     - label: 3. Ausschluss von der Erbfolge durch Verfügung von Todes wegen (Testament oder
@@ -275,7 +277,7 @@ schemata:
     - label: 3. Hilfsanspruch auf Auskunft und Wertermittlung, § 2314 BGB
   - label: V. Einwendungen und Verjährung
     children:
-    - label: 1. Pflichtteilsunwürdigkeit oder Entziehung, §§ 2333 ff. BGB
+    - label: 1. Pflichtteilsentziehung (§ 2333 BGB) oder Pflichtteilsunwürdigkeit (§ 2345 Abs. 2 BGB)
     - label: 2. Verjährung nach §§ 195, 199 BGB
   - label: VI. Pflichtteilsergänzung bei Schenkungen, § 2325 BGB
     hinweis: Nur prüfen, wenn der Sachverhalt Schenkungen innerhalb der letzten zehn Jahre
@@ -302,8 +304,8 @@ faelle:
     erwartung: E war verwitwet; gesetzliche Erben der ersten Ordnung sind K und T je zur Hälfte
       (§ 1924 BGB).
   - prompt: Welcher Anspruch kommt für K in Betracht?
-    erwartung: 'Ein Pflichtteilsanspruch gegen den Erben F nach § 2303 Abs. 1 BGB: K ist Abkömmling
-      und durch Testament von der Erbfolge ausgeschlossen.'
+    erwartung: 'Ein Pflichtteilsanspruch gegen den Erben F nach § 2303 Abs. 1 BGB. K ist als
+      Abkömmling pflichtteilsberechtigt. Er wurde durch das Testament enterbt.'
   - prompt: Wie hoch ist der Anspruch?
     erwartung: 'Der Pflichtteil beträgt die Hälfte des gesetzlichen Erbteils (§ 2303 Abs.
       1 S. 2 BGB): 1/2 von 1/2 = 1/4 des Nachlasses, also 30.000 Euro.'
@@ -337,6 +339,7 @@ faelle:
       - § 2303 Abs. 1 BGB
       - Pflichtteil
       - pflichtteilsberechtigt
+      - enterbt
       - von der Erbfolge ausgeschlossen
       - Abkömmling
       card_slugs:

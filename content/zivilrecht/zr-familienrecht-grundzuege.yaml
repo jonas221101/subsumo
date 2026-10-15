@@ -45,8 +45,9 @@ cards:
     mit Genehmigung wirksam (§ 1366 Abs. 1 BGB); wird die Genehmigung verweigert, ist es endgültig
     unwirksam (§ 1366 Abs. 4 BGB). Auch die Erfüllung, also die Verfügung, ist nur mit Einwilligung
     möglich (§ 1365 Abs. 1 S. 2 BGB). Verweigert der andere Ehegatte die Zustimmung ohne ausreichenden
-    Grund, kann das Familiengericht sie ersetzen (§ 1365 Abs. 2 BGB). Der übergangene Ehegatte
-    kann die Unwirksamkeit auch selbst gerichtlich geltend machen (§ 1368 BGB).
+    Grund, kann das Familiengericht sie ersetzen (§ 1365 Abs. 2 BGB). Hat der andere Ehegatte
+    ohne die erforderliche Einwilligung verfügt, kann der übergangene Ehegatte die Rechte aus
+    der Unwirksamkeit auch selbst gegen den Dritten gerichtlich geltend machen (§ 1368 BGB).
   norms:
   - § 1365 Abs. 1 BGB
   - § 1365 Abs. 2 BGB
@@ -61,7 +62,8 @@ cards:
   front: Wann betrifft ein einzelnes Geschäft das "Vermögen im Ganzen" (§ 1365 BGB)?
   back: 'Nach der Rechtsprechung (Einzeltheorie) greift § 1365 BGB auch dann, wenn nur ein
     einzelner Gegenstand veräußert wird, sofern dieser (nahezu) das ganze Vermögen ausmacht.
-    Maßgeblich ist wirtschaftliche Betrachtung: Verbleibt dem Ehegatten nur ein geringer Restwert,
+    Maßgeblich ist eine wirtschaftliche Betrachtung; die erhaltene Gegenleistung
+    bleibt außer Betracht. Verbleibt dem Ehegatten nur ein geringer Restwert,
     ist das Geschäft erfasst; als Richtwerte nennt die Rechtsprechung bei kleineren Vermögen
     eine verbleibende Quote unter etwa 15 Prozent, bei größeren Vermögen unter etwa 10 Prozent.
     Die Gegenauffassung (Gesamttheorie) will nur Verträge erfassen, die ausdrücklich das gesamte
@@ -80,7 +82,7 @@ cards:
   type: definition
   front: Welche Güterstände kennt das BGB und wie wird er gewählt (§§ 1363, 1408 ff. BGB)?
   back: 'Gesetzlicher Güterstand ist die Zugewinngemeinschaft (§ 1363 Abs. 1 BGB). Die Vermögen
-    von Mann und Frau werden nicht gemeinschaftliches Vermögen; auch das Vermögen, das ein
+    der Ehegatten werden nicht gemeinschaftliches Vermögen; auch das Vermögen, das ein
     Ehegatte während der Ehe erwirbt, bleibt sein eigenes (§ 1363 Abs. 2 S. 1 BGB). Der während
     der Ehe erzielte Zugewinn wird erst bei Beendigung des Güterstands ausgeglichen. Ehegatten
     können durch Ehevertrag einen anderen Güterstand vereinbaren (§ 1408 Abs. 1 BGB): die
@@ -110,9 +112,10 @@ cards:
     (§ 1374 Abs. 3, § 1375 Abs. 1 S. 2 BGB). Endvermögen ist das Vermögen bei Beendigung des
     Güterstands (§ 1375 BGB). Der Ehegatte mit dem geringeren Zugewinn hat gegen den anderen
     eine Ausgleichsforderung in Höhe der Hälfte des Überschusses (§ 1378 Abs. 1 BGB), begrenzt
-    auf den Wert des vorhandenen Vermögens (§ 1378 Abs. 2 BGB). Maßgeblicher Stichtag für
-    Endvermögen und Ausgleichsforderung bei Scheidung ist die Rechtshängigkeit des Scheidungsantrags
-    (§ 1384 BGB). Auskunft kann nach § 1379 BGB verlangt werden. Die Forderung verjährt in
+    auf den Wert des vorhandenen Vermögens (§ 1378 Abs. 2 BGB). Bei Scheidung
+    tritt für die Berechnung des Zugewinns an die Stelle der Beendigung des Güterstands die
+    Rechtshängigkeit des Scheidungsantrags (§ 1384 BGB); die Forderung selbst entsteht mit
+    Beendigung des Güterstands (§ 1378 Abs. 3 S. 1 BGB). Auskunft kann nach § 1379 BGB verlangt werden. Die Forderung verjährt in
     drei Jahren (§ 195 BGB).
   norms:
   - § 1373 BGB
@@ -151,20 +154,15 @@ cards:
   back: Die elterliche Sorge umfasst die Personensorge und die Vermögenssorge (§ 1626 Abs.
     1 BGB); sie umfasst die Vertretung des Kindes (§ 1629 Abs. 1 S. 1 BGB). Stehen den Eltern
     die Sorge gemeinsam zu, vertreten sie das Kind gemeinschaftlich (§ 1629 Abs. 1 S. 2 BGB).
-    Ist eine Willenserklärung dem Kind gegenüber abzugeben, genügt die Abgabe gegenüber einem
-    Elternteil (§ 1629 Abs. 1 S. 2 Halbs. 2 BGB); bei Gefahr im Verzug ist jeder Elternteil
-    zur Vertretung berechtigt (§ 1629 Abs. 1 S. 4 BGB). Verheiratete Eltern haben die gemeinsame
-    Sorge; nicht miteinander verheiratete Eltern haben sie, wenn sie Sorgeerklärungen abgeben,
-    heiraten oder das Familiengericht die Sorge gemeinsam überträgt, andernfalls hat die Mutter
-    die alleinige Sorge (§ 1626a BGB). Von der Vertretung sind Eltern ausgeschlossen, wo der
-    Vormund ausgeschlossen wäre, insbesondere bei Rechtsgeschäften zwischen Kind und Elternteil
-    oder dessen Ehegatten (§ 1629 Abs. 2 S. 1 i. V. m. § 1824 BGB); dort muss ein Ergänzungspfleger
-    bestellt werden.
+    Gegenüber dem Kind genügt die Abgabe einer Willenserklärung an einen Elternteil (§ 1629 Abs. 1 S. 2 Halbs. 2 BGB); bei Gefahr im Verzug ist jeder Elternteil vertretungsbefugt (§ 1629 Abs. 1 S. 4 BGB). Nicht miteinander verheiratete Eltern haben die gemeinsame Sorge nur bei Sorgeerklärungen, Heirat oder gerichtlicher Übertragung, sonst hat die Mutter die alleinige Sorge (§ 1626a BGB). Von der Vertretung sind Eltern insoweit ausgeschlossen, als nach § 1824 BGB ein Betreuer ausgeschlossen wäre, insbesondere bei Rechtsgeschäften zwischen dem Kind und dem Ehegatten oder einem Verwandten in gerader Linie des vertretenden Elternteils (§ 1629 Abs. 2 S. 1 i. V. m. § 1824 Abs. 1 Nr. 1 BGB); beim Insichgeschäft des Elternteils selbst gilt § 181 BGB. In diesen Fällen muss ein Ergänzungspfleger bestellt werden (§ 1809 BGB).
   norms:
   - § 1626 BGB
   - § 1626a BGB
   - § 1629 Abs. 1 BGB
-  - § 1629 Abs. 2 BGB
+    - § 1629 Abs. 2 BGB
+  - § 1824 BGB
+  - § 1809 BGB
+
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -174,19 +172,14 @@ cards:
   front: Wann brauchen Eltern für Rechtsgeschäfte des Kindes eine familiengerichtliche Genehmigung
     (§ 1643 BGB)?
   back: Die Eltern bedürfen für bestimmte Rechtsgeschäfte im Namen des Kindes der Genehmigung
-    des Familiengerichts (§ 1643 Abs. 1 BGB). Das gilt nach der Verweisung auf das Vormundschaftsrecht
-    (§§ 1848 ff. BGB in der seit 1.1.2023 geltenden Fassung, vorher §§ 1821, 1822 BGB) etwa
-    für Verträge über Grundstücke und Rechte an Grundstücken, für den Beginn eines Erwerbsgeschäfts
-    oder den Abschluss eines Gesellschaftsvertrags zum Betrieb eines Erwerbsgeschäfts sowie
-    für bestimmte Darlehens- und Verpflichtungsgeschäfte. Auch die Ausschlagung einer Erbschaft
-    durch die Eltern ist genehmigungsbedürftig, es sei denn, die Erbschaft ist erst infolge
-    der Ausschlagung eines Elternteils angefallen, der das Kind vertritt (§ 1643 Abs. 2 BGB).
+    des Familiengerichts (§ 1643 Abs. 1 BGB). Das gilt nach der Verweisung auf die Genehmigungstatbestände des Betreuungsrechts (§§ 1850 bis 1854 BGB in der seit 1.1.2023 geltenden Fassung, vorher §§ 1821, 1822 BGB) etwa für Verfügungen über Grundstücke und Rechte an Grundstücken (§ 1850 BGB), für den Erwerb eines Erwerbsgeschäfts oder den Abschluss eines Gesellschaftsvertrags zum Betrieb eines Erwerbsgeschäfts (§ 1852 BGB) sowie für langfristige Verträge über wiederkehrende Leistungen (§ 1853 BGB, mit Abweichungen in § 1643 Abs. 4 BGB). Auch die Ausschlagung einer Erbschaft durch die Eltern ist genehmigungsbedürftig (§ 1851 Nr. 1 BGB), es sei denn, die Erbschaft ist dem Kind erst infolge der Ausschlagung eines Elternteils angefallen, der das Kind vertritt, und dieser war nicht neben dem Kind berufen (§ 1643 Abs. 3 BGB).
     Ohne Genehmigung ist ein genehmigungspflichtiges Geschäft schwebend unwirksam; wird sie
     verweigert, ist es endgültig unwirksam. Handelt das Kind selbst mit Einwilligung der Eltern,
     gelten die §§ 107 ff. BGB.
   norms:
   - § 1643 Abs. 1 BGB
-  - § 1643 Abs. 2 BGB
+    - § 1643 Abs. 3 BGB
+
   - § 107 BGB
   quellen:
   - BGB, amtliche Fassung
@@ -242,7 +235,7 @@ schemata:
     - label: 1. Verpflichtungsgeschäft schwebend unwirksam, bei Verweigerung der Genehmigung
         endgültig unwirksam, § 1366 Abs. 4 BGB
     - label: 2. Erfüllung (Verfügung) nur mit Einwilligung, § 1365 Abs. 1 S. 2 BGB
-    - label: 3. Geltendmachung auch durch den übergangenen Ehegatten, § 1368 BGB
+    - label: "3. Bei Verfügungen: Geltendmachung auch durch den übergangenen Ehegatten, § 1368 BGB"
 faelle:
 - slug: zr-fall-fam-hausverkauf
   title: Der Hausverkauf ohne Ehefrau
@@ -265,15 +258,17 @@ faelle:
   - prompt: Sind die Voraussetzungen des § 1365 Abs. 1 BGB erfüllt?
     erwartung: M und F leben im gesetzlichen Güterstand der Zugewinngemeinschaft. Das Grundstück
       macht 96 Prozent des Gesamtvermögens aus; nach der Einzeltheorie genügt die Veräußerung
-      eines einzelnen Gegenstands, der nahezu das gesamte Vermögen darstellt. Das Restvermögen
-      von 20.000 Euro beträgt nur 4 Prozent. Subjektiv kennt K die maßgeblichen Umstände.
+      eines einzelnen Gegenstands, der nahezu das gesamte Vermögen darstellt; der Kaufpreis
+      bleibt als Gegenleistung außer Betracht. Das Restvermögen von 20.000 Euro beträgt nur
+      4 Prozent. Subjektiv ist die Kenntnis des K erforderlich und gegeben, denn K kennt die
+      maßgeblichen Umstände (subjektive Einschränkung).
   - prompt: Hat F eingewilligt oder genehmigt?
     erwartung: Nein. Eine Einwilligung lag nicht vor, und F hat die Genehmigung nach § 1366
       Abs. 1 BGB verweigert.
   - prompt: Welche Rechtsfolge ergibt sich?
     erwartung: Der Kaufvertrag war schwebend unwirksam und ist durch die Verweigerung der
       Genehmigung endgültig unwirksam (§ 1366 Abs. 4 BGB). Ein Anspruch auf Übereignung besteht
-      nicht. Die Unwirksamkeit kann auch F gegenüber K geltend machen (§ 1368 BGB).
+      nicht.
   expectation:
     pruefpunkte:
     - id: p1
@@ -308,6 +303,7 @@ faelle:
       keywords:
       - Kenntnis
       - Kenntnis der Umstände
+      - kennt die maßgeblichen Umstände
       - subjektive Einschränkung
       - wusste
       - Vertragspartner kannte
@@ -335,6 +331,6 @@ faelle:
       - unwirksam
       - endgültig unwirksam
       - kein Anspruch auf Übereignung
-      - § 1368 BGB
+      - § 1366 Abs. 4 BGB
       card_slugs:
       - zr-fam-verfuegung-ganzes-vermoegen-1365
