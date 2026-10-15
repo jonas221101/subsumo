@@ -116,7 +116,7 @@ cards:
   back: >-
     Eine öffentliche Einrichtung ist eine von der Gemeinde im öffentlichen Interesse unterhaltene Sachgesamtheit
     (Anlage, Gebäude, auch Personal), die durch Widmung der Benutzung durch die Einwohner zur Verfügung
-    gestellt wird. Beispiele sind Stadthalle, Schwimmbad, Friedhof, Bibliothek, Kindergarten, Stadtbücherei
+    gestellt wird. Beispiele sind Stadthalle, Schwimmbad, Friedhof, Bibliothek, Kindergarten
     und Volksfest. Durch die Widmung legt die Gemeinde Zweck, Art und Umfang der Nutzung sowie den
     Benutzerkreis fest. Die Widmung kann durch Satzung, Beschluss oder konkludent aufgrund einer
     Verwaltungspraxis (tatsächliche Zulassung der Nutzung) erfolgen. Die Gemeinde hat bei der Schaffung der
@@ -178,8 +178,9 @@ cards:
   back: >-
     Der Anspruch besteht nur, soweit der Zweck der Veranstaltung von der Widmung gedeckt ist; die Gemeinde
     darf die Zulassung nicht wegen der politischen Meinung oder Ausrichtung des Antragstellers verweigern,
-    solange er sich im Rahmen der Widmung hält und nicht gesetzlich verboten ist (Parteienprivileg des
-    Art. 21 Abs. 2 GG: ein Verbot ist dem Bundesverfassungsgericht vorbehalten). Er ist ferner durch die
+    solange er sich im Rahmen der Widmung hält und nicht gesetzlich verboten ist (Parteienprivileg,
+    Art. 21 Abs. 2 und 4 GG: Über die Verfassungswidrigkeit einer Partei entscheidet allein das
+    Bundesverfassungsgericht). Er ist ferner durch die
     vorhandene Kapazität begrenzt (Überbelegung). Bei konkurrierenden Anträgen entscheidet die Gemeinde nach
     sachgerechten Kriterien, in der Praxis nach der Reihenfolge der Anträge („Windhund“), mit Gleichbehandlung
     (Art. 3 Abs. 1 GG). Schließlich darf die Gemeinde ablehnen oder Auflagen erteilen, wenn konkrete Gefahren für
@@ -188,6 +189,7 @@ cards:
   norms:
   - Art. 3 Abs. 1 GG
   - Art. 21 Abs. 2 GG
+  - Art. 21 Abs. 4 GG
   - § 5 PartG
   quellen:
   - GG, amtliche Fassung
@@ -199,7 +201,7 @@ cards:
   front: Was ist der Anschluss- und Benutzungszwang, und wann ist er zulässig?
   back: >-
     Anschlusszwang verpflichtet Grundstückseigentümer, ihr Grundstück an eine öffentliche Einrichtung der
-    Gemeinde (Wasserleitung, Kanalisation, Fernwärme, Straßenreinigung, Müllabfuhr) anzuschließen, der
+    Gemeinde (Wasserleitung, Kanalisation, Fernwärme, Abwasserbeseitigung, Müllabfuhr) anzuschließen, der
     Benutzungszwang verpflichtet sie, die Einrichtung zu nutzen. Die Gemeindeordnungen ermächtigen die
     Gemeinde, ihn durch Satzung anzuordnen, wenn ein dringendes öffentliches Bedürfnis (insbesondere im
     Interesse der Volksgesundheit und des Umweltschutzes) besteht. Er greift in Art. 2 Abs. 1 GG, Art. 14 GG
@@ -289,9 +291,9 @@ faelle:
   - prompt: Liegt eine öffentliche Einrichtung vor, und ist P anspruchsberechtigt?
     erwartung: Die Stadthalle ist durch die Benutzungsordnung (Widmung) für Vereine, Parteien und Verbände zur Verfügung gestellt und damit öffentliche Einrichtung. P ist als im Stadtgebiet ansässiger Ortsverband einer Partei vom Kreis der Zugelassenen erfasst.
   - prompt: Ist die Veranstaltung von der Widmung gedeckt, und steht der Zulassung ein Grund entgegen?
-    erwartung: Das Bürgerfest ist eine gesellschaftliche und politische Veranstaltung und damit gedeckt; die Widmung erfasst auch Wahlkampf. Die Halle ist frei, die Kapazität kein Hindernis. Die politische Ausrichtung ist kein zulässiger Grund (Parteienprivileg, Art. 21 Abs. 2 GG), Gewalt wird nur befürchtet, nicht mit konkreten Tatsachen belegt. Weil die Stadt andere Parteien zugelassen hat, folgt ein Gleichbehandlungsanspruch.
+    erwartung: Das Bürgerfest ist eine gesellschaftliche und politische Veranstaltung und damit gedeckt; die Widmung erfasst auch Wahlkampf. Die Halle ist frei, die Kapazität kein Hindernis. Die politische Ausrichtung ist kein zulässiger Grund (Parteienprivileg, Art. 21 Abs. 2 und 4 GG), Gewalt wird nur befürchtet, nicht mit konkreten Tatsachen belegt. Weil die Stadt andere Parteien zugelassen hat, folgt ein Gleichbehandlungsanspruch. P hat damit einen Anspruch auf Zulassung zur Stadthalle; die Ablehnung ist rechtswidrig.
   - prompt: Wie kann P den Anspruch durchsetzen?
-    erwartung: Verpflichtungsklage auf Zulassung; wegen des nahen Termins Antrag auf einstweilige Anordnung nach § 123 VwGO (Regelungsanordnung), Anordnungsanspruch und Anordnungsgrund (Eilbedürftigkeit) sind glaubhaft zu machen (§ 123 Abs. 3 VwGO, § 920 Abs. 2 ZPO).
+    erwartung: Verpflichtungsklage auf Zulassung; wegen des nahen Termins Antrag auf einstweilige Anordnung nach § 123 VwGO (Regelungsanordnung; die Vorwegnahme der Hauptsache ist wegen des nahen Termins und Art. 19 Abs. 4 GG ausnahmsweise zulässig), Anordnungsanspruch und Anordnungsgrund (Eilbedürftigkeit) sind glaubhaft zu machen (§ 123 Abs. 3 VwGO, § 920 Abs. 2 ZPO).
   expectation:
     pruefpunkte:
     - id: p1
@@ -331,6 +333,8 @@ faelle:
       keywords:
       - Parteienprivileg
       - Art. 21 Abs. 2 GG
+      - Art. 21 Abs. 4 GG
+      - Art. 21 Abs. 2 und 4 GG
       - politische Ausrichtung
       - konkrete Gefahr
       - Bundesverfassungsgericht

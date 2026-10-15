@@ -22,12 +22,12 @@ cards:
     und Verfügbarkeit des Pflichtigen. Eine feste Rangfolge zwischen Handlungs- und Zustandsstörer
     besteht nicht; oft liegt die Inanspruchnahme des Verhaltensverantwortlichen näher, weil
     er die Gefahr unmittelbar gesetzt hat, doch kann die Behörde den leichter greifbaren Zustandsstörer
-    wählen. Gleichheitsgrundsatz und Verhältnismäßigkeit sind zu beachten; Die Auswahl ist
+    wählen. Gleichheitsgrundsatz und Verhältnismäßigkeit sind zu beachten; die Auswahl ist
     zu begründen.
   norms:
   - Art. 3 Abs. 1 GG
   - Art. 20 Abs. 3 GG
-  quellen: &id001
+  quellen:
   - Musterentwurf eines einheitlichen Polizeigesetzes (MEPolG) und Polizei-/Ordnungsgesetze
     der Länder
   - Eigenformulierung Redaktion
@@ -50,7 +50,10 @@ cards:
     unterschiedlich.
   norms:
   - Art. 20 Abs. 3 GG
-  quellen: *id001
+  quellen:
+  - Musterentwurf eines einheitlichen Polizeigesetzes (MEPolG) und Polizei-/Ordnungsgesetze
+    der Länder
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-pol-anscheins-und-scheinstoerer
   type: definition
@@ -63,13 +66,17 @@ cards:
     zurechenbar ist (Verhaltens- oder Zustandsverantwortlichkeit), obwohl objektiv keine Gefahr
     bestand. Die Maßnahme ist rechtmäßig; Kosten- und Entschädigungsfragen richten sich nach
     Landesrecht (teilweise Entschädigung entsprechend der Nichtstörerhaftung). Scheinstörer
-    ist, wer ohne Verantwortlichkeit für den gefahrverdächtigen Zustand in Anspruch genommen
-    wird, weil die Polizei irrtümlich von seiner Verantwortlichkeit ausgeht; hier fehlt es
-    an der Störereigenschaft, die Maßnahme ist (jedenfalls gegenüber dem Scheinstörer) rechtswidrig.
+    ist, wer von der Polizei aufgrund einer Fehleinschätzung als Verantwortlicher behandelt wird,
+    obwohl bei verständiger Würdigung der Umstände weder eine Gefahr noch eine Verantwortlichkeit
+    des Betroffenen erkennbar war; hier fehlt es an der Störereigenschaft, die Maßnahme ist
+    rechtswidrig.
     Zu trennen ist der Gefahrenverdacht (Gefahrerforschungseingriff).
   norms:
   - Art. 20 Abs. 3 GG
-  quellen: *id001
+  quellen:
+  - Musterentwurf eines einheitlichen Polizeigesetzes (MEPolG) und Polizei-/Ordnungsgesetze
+    der Länder
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-pol-latenter-stoerer
   type: streitstand
@@ -89,7 +96,10 @@ cards:
     der Betroffene bei fehlender Gefahr nicht als Störer zu behandeln.
   norms:
   - Art. 20 Abs. 3 GG
-  quellen: *id001
+  quellen:
+  - Musterentwurf eines einheitlichen Polizeigesetzes (MEPolG) und Polizei-/Ordnungsgesetze
+    der Länder
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-pol-altlasten-bverfge102
   type: rechtsprechung
@@ -130,9 +140,12 @@ cards:
     von Fahrzeugen und Wohnraum bei Gefahren für Leben und Gesundheit. Die Paragraphen sind
     landesrechtlich unterschiedlich; maßgeblich ist das jeweilige Landesgesetz.
   norms:
-  - Art. 14 Abs. 3 GG
   - Art. 20 Abs. 3 GG
-  quellen: *id001
+  - Art. 3 Abs. 1 GG
+  quellen:
+  - Musterentwurf eines einheitlichen Polizeigesetzes (MEPolG) und Polizei-/Ordnungsgesetze
+    der Länder
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-pol-kosten-ersatzansprueche
   type: norm
@@ -177,7 +190,10 @@ cards:
   norms:
   - Art. 3 Abs. 3 GG
   - Art. 2 Abs. 1 i. V. m. Art. 1 Abs. 1 GG
-  quellen: *id001
+  quellen:
+  - Musterentwurf eines einheitlichen Polizeigesetzes (MEPolG) und Polizei-/Ordnungsgesetze
+    der Länder
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: or-pol-gewahrsam
   type: norm
@@ -234,7 +250,10 @@ schemata:
   title: Inanspruchnahme eines Verantwortlichen oder Nichtverantwortlichen im Polizeirecht
   norms:
   - Art. 20 Abs. 3 GG
-  quellen: *id001
+  quellen:
+  - Musterentwurf eines einheitlichen Polizeigesetzes (MEPolG) und Polizei-/Ordnungsgesetze
+    der Länder
+  - Eigenformulierung Redaktion
   steps:
   - label: 'I. Ermächtigungsgrundlage: Standardmaßnahme vor Generalklausel'
     hinweis: Landesrecht beachten; Sperrwirkung der Standardmaßnahmen.

@@ -91,16 +91,16 @@ cards:
   stand: 2026-10
 - slug: or-kr-sv-rastede
   type: rechtsprechung
-  front: Was hat das Bundesverfassungsgericht im Rastede-Beschluss zur Aufgabenverteilung zwischen Gemeinden und Kreisen entschieden?
+  front: "Welche Anforderungen stellt das Rastede-Prinzip (BVerfGE 79, 127) an die Hochzonung einer Aufgabe von der Gemeinde auf den Kreis?"
   back: >-
-    Im Rastede-Beschluss (BVerfGE 79, 127) hat das Bundesverfassungsgericht entschieden, dass Art. 28 Abs. 2
-    S. 1 GG den Gemeinden ein Aufgabenverteilungsprinzip zugunsten der Gemeinde gewährleistet: Örtliche
-    Aufgaben sind grundsätzlich den Gemeinden zugewiesen; ihnen darf eine Aufgabe nur aus Gründen des
-    Gemeininteresses entzogen werden, namentlich wenn die ordnungsgemäße Aufgabenwahrnehmung anders nicht
-    sicherzustellen wäre. Das bloße Ziel der Verwaltungsvereinfachung oder der Zuständigkeitskonzentration
-    genügt dafür nicht. Aufgabenverlagerungen auf die Kreisebene („Hochzonungen“) sind deshalb
-    rechtfertigungsbedürftig. Die Entscheidung ist die Grundlage für die Prüfung der
-    Rechtfertigung eines Aufgabenentzugs im Randbereich der Selbstverwaltung.
+    Wird eine örtliche Aufgabe den Gemeinden entzogen und höheren Verwaltungsebenen zugewiesen („Hochzonung“), ist in der Prüfung
+    zunächst der Kernbereich abzugrenzen; bei einer einzelnen Aufgabe geht es regelmäßig um den Randbereich. Dort gilt das
+    Regel-Ausnahme-Verhältnis zugunsten der Gemeinde: Der Entzug bedarf eines Grundes des Gemeininteresses. Ausreichend ist vor allem,
+    dass die ordnungsgemäße Aufgabenwahrnehmung auf Gemeindeebene sonst nicht gewährleistet wäre, etwa weil ein überörtlicher Bezug
+    oder fehlende Leistungsfähigkeit besteht. Das bloße Ziel der Verwaltungsvereinfachung, der Zuständigkeitskonzentration oder der
+    Kostenersparnis genügt nicht. Der Gesetzgeber hat bei der Bewertung dieser Gründe einen Einschätzungsspielraum, muss seine
+    Prognose aber auf tragfähige Tatsachen stützen und die betroffenen Gemeinden anhören. Die Grundsätze gehen auf den
+    Rastede-Beschluss (BVerfGE 79, 127) zurück.
   norms:
   - Art. 28 Abs. 2 S. 1 GG
   quellen:
@@ -172,7 +172,7 @@ cards:
   back: >-
     Art. 28 Abs. 2 S. 3 GG sichert die Grundlagen der finanziellen Eigenverantwortung. Dazu zählt seit der
     Grundgesetzänderung von 1997 eine den Gemeinden zustehende wirtschaftskraftbezogene Steuerquelle mit
-    Hebesatzrecht (vgl. Art. 106 Abs. 6 GG, insbesondere Gewerbesteuer und Grundsteuer). Aus der
+    Hebesatzrecht (vgl. Art. 106 Abs. 6 GG; typischerweise die Gewerbesteuer, daneben steht den Gemeinden das Aufkommen der Grundsteuer zu). Aus der
     Garantie folgt kein Anspruch auf eine bestimmte Mindestausstattung im Einzelfall; die Länder haben
     aber über den kommunalen Finanzausgleich eine angemessene Finanzausstattung sicherzustellen, die den
     Gemeinden eine freiwillige Aufgabenwahrnehmung (nicht nur Pflichtaufgaben) ermöglicht. Bei einer
@@ -189,17 +189,16 @@ cards:
   stand: 2026-10
 - slug: or-kr-sv-kommunalverfassungsbeschwerde
   type: norm
-  front: Unter welchen Voraussetzungen ist die Kommunalverfassungsbeschwerde zulässig?
+  front: "Welche Rechtsschutzwege hat die Gemeinde gegen Eingriffe in die Selbstverwaltung, und wann kommt die Kommunalverfassungsbeschwerde in Betracht?"
   back: >-
-    Nach Art. 93 Abs. 1 Nr. 4b GG, §§ 13 Nr. 8a, 91 BVerfGG können Gemeinden und Gemeindeverbände wegen
-    Verletzung des Rechts auf Selbstverwaltung nach Art. 28 GG durch ein Gesetz Verfassungsbeschwerde
-    erheben. Beschwerdegegenstand ist ein Bundes- oder Landesgesetz (Rechtsnorm). Die Beschwerdebefugnis
-    setzt die Möglichkeit einer Verletzung des Art. 28 Abs. 2 GG voraus, und zwar selbst, gegenwärtig und
-    unmittelbar. Die Beschwerde ist binnen eines Jahres seit Inkrafttreten des Gesetzes zu erheben,
-    § 93 Abs. 3 BVerfGG. Subsidiär ist sie gegenüber der Verfassungsbeschwerde zum Landesverfassungsgericht,
-    soweit das Landesrecht eine solche vorsieht (§ 91 S. 2 BVerfGG) und es sich um Landesrecht handelt.
-    Prüfungsmaßstab ist Art. 28 Abs. 2 GG; Gemeinden können sich in der
-    Regel nicht auf Grundrechte stützen (Art. 19 Abs. 3 GG).
+    Der Rechtsschutz der Gemeinde richtet sich nach dem Angriffsgegenstand. Gegen ein Bundes- oder Landesgesetz, das ihr Recht auf
+    Selbstverwaltung verletzt, steht die Kommunalverfassungsbeschwerde zum Bundesverfassungsgericht offen (Art. 93 Abs. 1 Nr. 4b GG,
+    §§ 13 Nr. 8a, 91 BVerfGG). Die Gemeinde muss selbst, gegenwärtig und unmittelbar betroffen sein und die Beschwerde binnen eines
+    Jahres seit Inkrafttreten des Gesetzes erheben (§ 93 Abs. 3 BVerfGG). Bei Landesgesetzen geht eine nach Landesrecht eröffnete
+    Verfassungsbeschwerde zum Landesverfassungsgericht vor (§ 91 S. 2 BVerfGG, Subsidiarität). Prüfungsmaßstab ist allein
+    Art. 28 Abs. 2 GG, weil die Gemeinde als Teil der Staatsorganisation sich grundsätzlich nicht auf Grundrechte berufen kann. Gegen
+    Verwaltungsakte, etwa aufsichtliche Maßnahmen, klagt sie vor dem Verwaltungsgericht; ihre Klagebefugnis folgt ebenfalls aus
+    Art. 28 Abs. 2 GG. Die Kommunalverfassungsbeschwerde ist kein Rechtsbehelf gegen Verwaltungsakte.
   norms:
   - Art. 93 Abs. 1 Nr. 4b GG
   - § 91 BVerfGG
@@ -216,7 +215,9 @@ cards:
     Grundsätzlich nicht. Gemeinden sind juristische Personen des öffentlichen Rechts und gehören zur
     staatlichen Organisation. Grundrechte sind Abwehrrechte des Bürgers gegen den Staat; ein Träger
     öffentlicher Gewalt kann deshalb nicht zugleich Grundrechtsberechtigter sein (Konfusionsargument). Art. 19 Abs. 3 GG erstreckt die Grundrechte
-    nur auf inländische juristische Personen des Privatrechts. Ausnahmen gelten für die
+    grundsätzlich nur auf inländische juristische Personen des Privatrechts; Ausnahmen für Einrichtungen des
+    öffentlichen Rechts gibt es nur, wenn sie unmittelbar einem grundrechtsgeschützten Lebensbereich zugeordnet
+    sind (etwa Universitäten oder Rundfunkanstalten), nicht aber für Gemeinden. Ausnahmen gelten für die
     Verfahrensgrundrechte Art. 101 Abs. 1 S. 2 und Art. 103 Abs. 1 GG, die in jedem gerichtlichen Verfahren
     gelten.
     Für den Schutz ihrer Rechtsstellung dient Art. 28 Abs. 2 GG; im Verwaltungsprozess folgt die
@@ -358,5 +359,7 @@ faelle:
       required: false
       keywords:
       - verletzt Art. 28 Abs. 2 S. 1 GG
+      - verletzt G in ihrem Recht aus Art. 28
+      - Verletzung des Art. 28 Abs. 2
       - Verfassungsbeschwerde ist begründet
-      - verfassungswidrig
+      - zulässig und begründet
