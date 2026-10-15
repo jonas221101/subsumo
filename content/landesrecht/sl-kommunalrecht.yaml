@@ -24,9 +24,7 @@ cards:
       Organisations-, Personal-, Finanz-, Planungs- und Satzungshoheit. Eingriffe durch Gesetz sind
       zulässig, soweit der Kernbereich unangetastet bleibt und Aufgaben mit örtlichem Charakter nur
       aus Gründen des Gemeinwohls, insbesondere zur Sicherung einer ordnungsgemäßen
-      Aufgabenwahrnehmung, entzogen werden (Rastede-Beschluss). Aufgabenarten nach der KSVG:
-      freiwillige Selbstverwaltungsaufgaben, pflichtige Selbstverwaltungsaufgaben und
-      Weisungsaufgaben; für Selbstverwaltungsaufgaben besteht nur Rechtsaufsicht, für Weisungsaufgaben
+      Aufgabenwahrnehmung, entzogen werden (Rastede-Beschluss). Aufgabenarten: Selbstverwaltungsaufgaben (freiwillige und pflichtige) sowie Weisungs- bzw. Auftragsangelegenheiten (Einzelheiten im KSVG); für Selbstverwaltungsaufgaben besteht nur Rechtsaufsicht, für Weisungsaufgaben
       Fachaufsicht.
   norms:
   - "Art. 28 Abs. 2 S. 1 GG"
@@ -60,11 +58,11 @@ cards:
       Wie sind die Zuständigkeiten von Gemeinderat und Bürgermeister im Saarland verteilt, und welche
       Anforderungen gelten für Verpflichtungserklärungen?
   back: >-
-      Die Gemeinderat ist das Hauptorgan der Gemeinde und entscheidet über die grundlegenden
+      Der Gemeinderat ist das Hauptorgan der Gemeinde und entscheidet über die grundlegenden
       Angelegenheiten, insbesondere Satzungen, den Haushalt, wesentliche Vermögensverfügungen und die
       Grundsätze der Verwaltung. Der Bürgermeister leitet die Verwaltung, führt die Beschlüsse aus,
       erledigt die laufenden Angelegenheiten und vertritt die Gemeinde nach außen. Die Abgrenzung der
-      Zuständigkeiten ergibt sich aus der KSVG und der Hauptsatzung; ein Beschluss des unzuständigen
+      Zuständigkeiten ergibt sich aus dem KSVG und der Hauptsatzung; ein Beschluss des unzuständigen
       Organs ist formell rechtswidrig. Verpflichtungserklärungen, mit denen die Gemeinde zu Leistungen
       verpflichtet werden soll, bedürfen nach den Gemeindeordnungen einer besonderen Form (regelmäßig
       Schriftform und Unterschrift der Vertretungsberechtigten). Diese Formvorschriften sind nach h.
@@ -83,7 +81,7 @@ cards:
       Welche Anforderungen stellt das Recht im Saarland an eine gemeindliche Satzung?
   back: >-
       Die Gemeinden können ihre Angelegenheiten durch Satzung regeln (Satzungshoheit). Eine allgemeine
-      Satzungsermächtigung in der KSVG genügt für Eingriffe in Grundrechte allerdings nicht; nach der
+      Satzungsermächtigung im KSVG genügt für Eingriffe in Grundrechte allerdings nicht; nach der
       Wesentlichkeitstheorie braucht es eine spezielle gesetzliche Ermächtigung (z. B. für Anschluss-
       und Benutzungszwang oder Abgaben). Prüfungsaufbau: I. Ermächtigungsgrundlage. II. Formelle
       Rechtmäßigkeit: Zuständigkeit des Gemeindeorgans (Gemeinderat), Verfahren (Beschlussfassung,
@@ -218,10 +216,10 @@ schemata:
     - label: >-
         1. Gesetzliche Formvorschrift (Schriftform, Unterschrift der Vertretungsberechtigten)
     - label: >-
-        2. Rechtsfolge eines Formverstoßes: Unwirksamkeit
+        2. Rechtsfolge eines Formverstoßes: Unwirksamkeit (Vertrag zunächst schwebend unwirksam)
   - label: "IV. Nachträgliche Genehmigung / Vertrauensschutz"
     hinweis: >-
-        Formvorschrift ist zwingend; Rechtsscheinsgrundsätze greifen grundsätzlich nicht.
+        Genehmigung in entsprechender Anwendung des § 177 BGB durch das zuständige Organ in der gebotenen Form möglich; Rechtsscheinsgrundsätze greifen wegen des Schutzzwecks der Formvorschrift grundsätzlich nicht.
 faelle:
 - slug: sl-fall-kom-verpflichtungserklaerung
   title: "Der telefonisch bestellte Dachausbau"
@@ -254,8 +252,7 @@ faelle:
   - prompt: "Welche Folge hat der Formverstoß?"
     erwartung: >-
         Die Formvorschrift gehört zur Vertretungsregelung; der Formverstoß hat Unwirksamkeit der
-        Verpflichtungserklärung zur Folge. Die Gemeinde ist an die telefonische Bestellung nicht
-        gebunden. Auf Rechtsscheingrundsätze oder Treu und Glauben kann sich U grundsätzlich nicht
+        Verpflichtungserklärung zur Folge. Der Vertrag ist schwebend unwirksam und kann nur durch formgerechte Genehmigung (§ 177 BGB analog) wirksam werden; eine solche liegt nicht vor. Die Gemeinde ist an die telefonische Bestellung nicht gebunden. Auf Rechtsscheingrundsätze oder Treu und Glauben kann sich U grundsätzlich nicht
         stützen, weil die Formvorschrift den Schutz der Gemeinde bezweckt.
   - prompt: "Ergebnis?"
     erwartung: >-
@@ -308,6 +305,9 @@ faelle:
       - "kein Zahlungsanspruch"
       - "kein vertraglicher Anspruch"
       - "Vergütungsanspruch besteht nicht"
+      - "kein vertraglicher Zahlungsanspruch"
+      - "Zahlungsanspruch besteht nicht"
+      - "keine Vergütung aus Vertrag"
       card_slugs:
       - "sl-kom-organe"
     normzitate_geprueft: false

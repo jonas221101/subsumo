@@ -168,7 +168,7 @@ cards:
       Anlage muss gewahrt sein. Einen aktiven Bestandsschutz, also einen unmittelbar aus Art. 14 GG
       abgeleiteten Anspruch auf Erweiterung oder Änderung, erkennt das Bundesverwaltungsgericht nicht
       mehr an. Bei Gefahren für Leben und Gesundheit lassen die Bauordnungen Anpassungsverlangen zu;
-      die Voraussetzungen sind nach der geltenden Fassung zu prüfen.
+      die Voraussetzungen ergeben sich aus der jeweiligen Landesbauordnung.
   norms:
   - "Art. 14 Abs. 1 GG"
   quellen:
@@ -193,7 +193,7 @@ schemata:
         2. Statthaftigkeit: § 42 Abs. 1 Var. 2 VwGO
     - label: >-
         3. Klagebefugnis des Bauherrn: Möglichkeit eines Anspruchs, Art. 14 Abs. 1 GG
-    - label: "4. Vorverfahren (landesrechtlich prüfen), Klagefrist"
+    - label: "4. Vorverfahren (soweit landesrechtlich vorgesehen), Klagefrist"
   - label: >-
       II. Begründetheit: Anspruch auf Baugenehmigung
     children:
@@ -235,8 +235,8 @@ faelle:
   - prompt: "Welche Anspruchsgrundlage kommt in Betracht und was ist der Maßstab?"
     erwartung: >-
         Anspruchsgrundlage ist die Genehmigungsvorschrift der ThürBO. Die Baugenehmigung ist eine
-        gebundene Entscheidung: Sie ist zu erteilen, wenn dem Vorhaben keine im Prüfumfang zu prüfenden
-        öffentlich-rechtlichen Vorschriften entgegenstehen.
+        gebundene Entscheidung: Die Baugenehmigung ist zu erteilen, wenn dem Vorhaben keine im Prüfumfang zu prüfenden
+        öffentlich-rechtlichen Vorschriften entgegenstehen; es besteht dann ein Anspruch auf Baugenehmigung.
   - prompt: "Ist das Vorhaben planungs- und bauordnungsrechtlich zulässig?"
     erwartung: >-
         Ja. Das Vorhaben liegt im Geltungsbereich eines qualifizierten Bebauungsplans und ist nach § 30
@@ -275,7 +275,7 @@ faelle:
       - "gebundene Entscheidung"
       - "Anspruch auf Baugenehmigung"
       - "kein entgegenstehendes öffentliches Recht"
-      - "Prüfumfang"
+      - "Baugenehmigung ist zu erteilen"
       card_slugs:
       - "th-bau-anspruch"
     - id: p3
