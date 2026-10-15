@@ -1,0 +1,363 @@
+topic:
+  slug: or-gr-weitere-freiheitsrechte
+  area: oeffentliches-recht
+  title: 'Weitere Freiheitsrechte: Art. 6, 9, 10, 11, 13 und 16a GG'
+  parent: or-grundrechte
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-gr-wfr-art6-ehe-familie
+  type: definition
+  front: "Was schützt Art. 6 Abs. 1 GG (Ehe und Familie), und welche Funktionen hat die Norm?"
+  back: >-
+    Art. 6 Abs. 1 GG stellt Ehe und Familie unter den besonderen Schutz der
+    staatlichen Ordnung. Die Norm ist zugleich Abwehrrecht, Institutsgarantie und
+    wertentscheidende Grundsatznorm mit Förderungs- und Benachteiligungsverbot. Ehe
+    ist die auf Dauer angelegte, rechtlich verfasste Lebensgemeinschaft von zwei
+    Personen; nach der Einführung der Ehe für alle (§ 1353 Abs. 1 BGB, 2017)
+    umfasst sie nach überwiegender Meinung auch gleichgeschlechtliche Paare,
+    wobei das BVerfG dies nicht abschließend entschieden hat. Familie ist die
+    Gemeinschaft von Eltern und Kindern, unabhängig davon, ob die Eltern verheiratet
+    sind, und umfasst auch Pflege- und Adoptivfamilien. Eingriffe liegen etwa in
+    der Benachteiligung Verheirateter gegenüber Unverheirateten, in
+    Eheverboten oder der Verweigerung des Familiennachzugs. Der Schutz der
+    Ehe verlangt keine Privilegierung gegenüber anderen Lebensformen.
+  norms:
+  - Art. 6 Abs. 1 GG
+  - § 1353 Abs. 1 BGB
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 105, 313 (Lebenspartnerschaftsgesetz)
+- slug: or-gr-wfr-art6-elternrecht-waechteramt
+  type: definition
+  front: "Wie sind Elternrecht, staatliches Wächteramt und Schulerziehung (Art. 6 Abs. 2, 3, Art. 7 GG) abzugrenzen?"
+  back: >-
+    Art. 6 Abs. 2 S. 1 GG garantiert Eltern Pflege und Erziehung ihrer Kinder als
+    natürliches Recht und zuvörderst ihnen obliegende Pflicht. Das Elternrecht ist ein
+    fremdnütziges Recht, das im Interesse des Kindeswohls besteht (BVerfGE 24,
+    119). Der Staat wacht über die Ausübung (Wächteramt, Art. 6 Abs. 2 S. 2 GG), darf
+    aber nicht an die Stelle der Eltern treten. Kinder dürfen nach Art. 6 Abs. 3 GG nur
+    aufgrund eines Gesetzes von der Familie getrennt werden, wenn die
+    Erziehungsberechtigten versagen oder die Kinder aus anderen Gründen zu
+    verwahrlosen drohen. Im Schulwesen steht der staatliche Erziehungsauftrag
+    (Art. 7 Abs. 1 GG) gleichrangig neben dem Elternrecht; Staat und Eltern haben
+    ihn in sinnvoller Zusammenarbeit zu verwirklichen. Obligatorischer
+    Sexualkundeunterricht ist zulässig, soweit er Zurückhaltung wahrt und
+    keine einseitige Indoktrination betreibt (BVerfGE 47, 46).
+  norms:
+  - Art. 6 Abs. 2 GG
+  - Art. 6 Abs. 3 GG
+  - Art. 7 Abs. 1 GG
+  quellen:
+  - BVerfGE 24, 119
+  - BVerfGE 47, 46
+- slug: or-gr-wfr-art9-vereinigungsfreiheit
+  type: definition
+  front: "Was schützt Art. 9 Abs. 1 GG, und wann ist ein Vereinsverbot nach Art. 9 Abs. 2 GG zulässig?"
+  back: >-
+    Art. 9 Abs. 1 GG ist ein Deutschenrecht und schützt die Freiheit, Vereine
+    und Gesellschaften zu bilden, ihnen beizutreten, in ihnen zu verbleiben und
+    sie zu verlassen (positive und negative Vereinigungsfreiheit), außerdem den
+    Verein selbst in seinem Bestand und seiner Selbstbestimmung. Vereinigung ist
+    ein freiwilliger Zusammenschluss mehrerer natürlicher oder juristischer
+    Personen für längere Zeit zu einem gemeinsamen Zweck mit organisierter
+    Willensbildung (vgl. § 2 VereinsG). Ausländische Vereine und Ausländer
+    werden über Art. 2 Abs. 1 GG und das einfache Recht geschützt. Art. 9 Abs. 2
+    GG enthält keinen Gesetzesvorbehalt, sondern ordnet das Verbot an: Vereinigungen, die
+    nach Zweck oder Tätigkeit den Strafgesetzen zuwiderlaufen, sich gegen die
+    verfassungsmäßige Ordnung oder gegen den Gedanken der Völkerverständigung
+    richten, sind verboten. Das Verbot wird durch Verwaltungsakt der Behörde
+    ausgesprochen (§ 3 VereinsG). Politische Parteien genießen das
+    Parteienprivileg des Art. 21 Abs. 2, 4 GG: Über die Verfassungswidrigkeit entscheidet allein das BVerfG.
+  norms:
+  - Art. 9 Abs. 1 GG
+  - Art. 9 Abs. 2 GG
+  - § 3 VereinsG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: or-gr-wfr-art9-abs3-koalitionsfreiheit
+  type: definition
+  front: "Was gewährleistet die Koalitionsfreiheit (Art. 9 Abs. 3 GG)?"
+  back: >-
+    Art. 9 Abs. 3 GG gewährleistet jedermann und für alle Berufe das Recht,
+    Vereinigungen zur Wahrung und Förderung der Arbeits- und
+    Wirtschaftsbedingungen zu bilden. Geschützt ist zunächst die individuelle
+    Koalitionsfreiheit, einer Koalition beizutreten, in ihr zu bleiben und aus ihr
+    auszutreten, einschließlich der negativen Koalitionsfreiheit, ihr fernzubleiben. Die
+    kollektive Koalitionsfreiheit schützt die Koalition selbst in Bestand,
+    Organisation und koalitionsspezifischer Betätigung, vor allem in der
+    Tarifautonomie und dem Arbeitskampf (der Arbeitskampf als Mittel, den Art. 9 Abs. 3 S. 3 GG voraussetzt). Das Grundrecht wirkt nach Satz 2
+    unmittelbar auch zwischen Privaten. Es ist vorbehaltlos gewährleistet und
+    kann nur durch kollidierendes Verfassungsrecht beschränkt werden. Das BVerfG hat
+    das Tarifeinheitsgesetz (BVerfGE 146, 71) im Wesentlichen für vereinbar
+    erklärt, aber verlangt, dass der Gesetzgeber Vorkehrungen gegen die
+    einseitige Verdrängung kleiner Gewerkschaften trifft.
+  norms:
+  - Art. 9 Abs. 3 GG
+  - § 4a TVG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 146, 71 (Tarifeinheitsgesetz)
+- slug: or-gr-wfr-art10-brief-post-fernmeldegeheimnis
+  type: norm
+  front: "Was schützt Art. 10 GG, und wo liegen seine Grenzen?"
+  back: >-
+    Art. 10 Abs. 1 GG schützt Brief-, Post- und Fernmeldegeheimnis. Das
+    Fernmeldegeheimnis erfasst die unkörperliche Übermittlung von Informationen
+    an individuelle Empfänger mit Hilfe des Telekommunikationsverkehrs, also
+    Telefon, E-Mail, Messenger. Geschützt sind der Inhalt und auch die
+    näheren Umstände der Kommunikation (Verkehrsdaten: wer, wann, mit wem). Es ist ein
+    Jedermannrecht, das auch Ausländer im Ausland gegenüber der deutschen
+    Staatsgewalt schützt (BVerfGE 154, 152). Der Schutz endet, wenn die
+    Nachricht beim Empfänger angekommen und im Herrschaftsbereich des Teilnehmers
+    gespeichert ist; dann gelten das Recht auf informationelle Selbstbestimmung
+    und das IT-Grundrecht (BVerfGE 115, 166). Eingriffe sind Überwachung,
+    Auswertung und Speicherung, etwa die Vorratsdatenspeicherung (BVerfGE 125,
+    260). Schranke ist Art. 10 Abs. 2 GG: ein einfacher Gesetzesvorbehalt, der
+    für den Schutz der Verfassung abweichend vom Rechtsweg anstelle des Rechtswegs eine Nachprüfung durch Organe und Hilfsorgane der Volksvertretung zulässt und die Mitteilung an den Betroffenen ausschließen kann (Satz 2).
+  norms:
+  - Art. 10 Abs. 1 GG
+  - Art. 10 Abs. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 115, 166
+  - BVerfGE 125, 260
+  - BVerfGE 154, 152
+- slug: or-gr-wfr-art11-freizuegigkeit
+  type: definition
+  front: "Was schützt die Freizügigkeit (Art. 11 GG), und welche Schranken gelten?"
+  back: >-
+    Art. 11 Abs. 1 GG gewährleistet allen Deutschen das Recht, sich im
+    gesamten Bundesgebiet frei zu bewegen, Aufenthalt und Wohnsitz zu nehmen und
+    einzureisen. Er ist ein Deutschenrecht. Nicht geschützt ist die Ausreise ins
+    Ausland, die nach der Rechtsprechung dem Auffanggrundrecht aus Art. 2 Abs.
+    1 GG unterfällt (Elfes, BVerfGE 6, 32). Das Recht schützt auch die Entscheidung,
+    bestimmte Orte aufzusuchen oder zu verlassen. Schranke ist der qualifizierte
+    Gesetzesvorbehalt des Art. 11 Abs. 2 GG: Das Recht darf nur durch Gesetz oder
+    aufgrund eines Gesetzes und nur in den dort genannten Fällen eingeschränkt
+    werden, etwa wenn eine ausreichende Lebensgrundlage fehlt und der
+    Allgemeinheit dadurch besondere Lasten entstünden, zur Abwehr von Gefahren für die
+    freiheitliche demokratische Grundordnung, zur Bekämpfung von Seuchengefahr,
+    Naturkatastrophen oder besonders schweren Unglücksfällen, zum Schutz der
+    Jugend vor Verwahrlosung oder zur Verhütung strafbarer Handlungen.
+  norms:
+  - Art. 11 Abs. 1 GG
+  - Art. 11 Abs. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 6, 32 (Elfes)
+- slug: or-gr-wfr-art13-wohnung-durchsuchung
+  type: definition
+  front: "Was ist Wohnung im Sinne des Art. 13 GG, und was gilt als Durchsuchung?"
+  back: >-
+    Wohnung ist jeder Raum, der der allgemeinen Zugänglichkeit durch eine
+    räumliche Abschottung entzogen und zur Stätte privaten Lebens und Wirkens
+    gemacht ist. Das BVerfG versteht den Begriff weit und bezieht Arbeits-, Betriebs-
+    und Geschäftsräume ein (BVerfGE 32, 54), allerdings mit geringerem
+    Schutzniveau bei Räumen mit Publikumsverkehr. Art. 13 ist ein Jedermannrecht;
+    Träger sind auch juristische Personen (Art. 19 Abs. 3 GG). Eine Durchsuchung ist
+    das ziel- und zweckgerichtete Suchen staatlicher Organe nach Personen oder
+    Sachen oder zur Ermittlung eines Sachverhalts, um etwas aufzuspüren, was
+    der Wohnungsinhaber von sich aus nicht offenlegen oder herausgeben will
+    (BVerfGE 51, 97). Sie ist von sonstigen Eingriffen zu unterscheiden, etwa bloßem
+    Betreten, Besichtigung oder Beschlagnahme. Die Durchsuchung unterliegt nach
+    Art. 13 Abs. 2 GG dem Richtervorbehalt.
+  norms:
+  - Art. 13 Abs. 1 GG
+  - Art. 13 Abs. 2 GG
+  quellen:
+  - BVerfGE 32, 54
+  - BVerfGE 51, 97
+- slug: or-gr-wfr-art13-gefahr-im-verzug
+  type: rechtsprechung
+  front: "Wann darf eine Durchsuchung ohne richterliche Anordnung erfolgen (Gefahr im Verzug)?"
+  back: >-
+    Nach Art. 13 Abs. 2 GG darf eine Durchsuchung grundsätzlich nur der Richter
+    anordnen, bei Gefahr im Verzug auch die in den Gesetzen vorgesehenen anderen
+    Organe (§ 105 Abs. 1 StPO: Staatsanwaltschaft und Ermittlungspersonen). Der
+    Richtervorbehalt ist die Regel, die Eilkompetenz die enge Ausnahme. Gefahr im
+    Verzug liegt vor, wenn die vorherige Einholung der richterlichen Entscheidung den
+    Erfolg der Durchsuchung gefährden würde, und muss mit Tatsachen begründet werden,
+    die einzelfallbezogen und nachprüfbar sind; spekulative, hypothetische
+    Erwägungen genügen nicht. Gerichte und Behörden sind verpflichtet, durch
+    einen Bereitschaftsdienst (richterlicher Eildienst) dafür zu sorgen, dass der
+    Richtervorbehalt praktisch wirksam wird (BVerfGE 103, 142). Die Behörde darf
+    die Eilbedürftigkeit nicht selbst herbeiführen, indem sie etwa mit der
+    Antragstellung zögert. Fehlen die Voraussetzungen, ist die Durchsuchung
+    rechtswidrig und verletzt Art. 13 Abs. 1, 2 GG; ein Beweisverwertungsverbot
+    folgt daraus nicht automatisch.
+  norms:
+  - Art. 13 Abs. 2 GG
+  - § 105 Abs. 1 StPO
+  quellen:
+  - BVerfGE 103, 142
+- slug: or-gr-wfr-art13-abs3-4-7-schranken
+  type: norm
+  front: "Welche Schranken kennt Art. 13 GG außer der Durchsuchung (Abs. 3, 4, 7)?"
+  back: >-
+    Art. 13 GG enthält ein differenziertes System von Schranken. Abs. 2 betrifft
+    die Durchsuchung (Richtervorbehalt, Gefahr im Verzug). Abs. 3 erlaubt zur
+    Verfolgung besonders schwerer, einzeln im Gesetz bestimmter Straftaten die
+    akustische Wohnraumüberwachung (Großer Lauschangriff) aufgrund richterlicher
+    Anordnung durch einen mit drei Richtern besetzten Spruchkörper, bei Gefahr im
+    Verzug durch einen einzelnen Richter; sie ist subsidiär und fordert
+    Kernbereichsschutz (BVerfGE 109, 279). Abs. 4 erlaubt technische Mittel zur
+    Überwachung zur Abwehr dringender Gefahren für die öffentliche Sicherheit, vor
+    allem einer gemeinen Gefahr oder Lebensgefahr. Abs. 7 regelt sonstige Eingriffe und
+    Beschränkungen: Sie sind zulässig zur Abwehr einer gemeinen Gefahr oder einer
+    Lebensgefahr für einzelne Personen, auf Grund eines Gesetzes auch zur Verhütung
+    dringender Gefahren für die öffentliche Sicherheit und Ordnung, insbesondere
+    zur Behebung der Raumnot, zur Bekämpfung von Seuchengefahr oder zum Schutz
+    gefährdeter Jugendlicher. Abs. 7 gilt für alle Eingriffe, die keine Durchsuchung
+    oder Überwachung sind, etwa Betreten und Besichtigung.
+  norms:
+  - Art. 13 Abs. 2 GG
+  - Art. 13 Abs. 3 GG
+  - Art. 13 Abs. 4 GG
+  - Art. 13 Abs. 7 GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 109, 279
+- slug: or-gr-wfr-art16a-asylgrundrecht
+  type: definition
+  front: "Was sind die Grundzüge des Asylgrundrechts (Art. 16a GG)?"
+  back: >-
+    Art. 16a Abs. 1 GG gewährt politisch Verfolgten Asyl. Politisch verfolgt ist, wer
+    wegen seiner politischen Überzeugung, seiner religiösen Grundentscheidung oder
+    unverfügbarer Merkmale, die sein Anderssein prägen, durch den Staat oder
+    staatsähnliche Organisationen in seinen Rechtsgütern verletzt wird, sodass er
+    ausweglos zur Flucht gezwungen ist (BVerfGE 80, 315). Das Grundrecht ist ein
+    Individualrecht für jeden Ausländer. Es wird durch Abs. 2 erheblich begrenzt:
+    Wer aus einem Mitgliedstaat der EU oder einem anderen Drittstaat einreist, in
+    dem die Anwendung der Genfer Flüchtlingskonvention und der EMRK sichergestellt
+    ist (sichere Drittstaaten), kann sich nicht auf Abs. 1 berufen; die Staaten
+    bestimmt ein zustimmungspflichtiges Gesetz. Nach Abs. 3 kann bei sicheren
+    Herkunftsstaaten die Verfolgung widerlegbar verneint werden. Praktisch ist der unionsrechtlich geprägte Flüchtlingsschutz (§ 3 AsylG, Genfer Flüchtlingskonvention) bedeutsamer als Art. 16a Abs. 1 GG. Das Asylverfahrensrecht
+    ändert sich durch das reformierte Gemeinsame Europäische Asylsystem; die
+    Einzelheiten sind aktuell zu prüfen.
+  norms:
+  - Art. 16a Abs. 1 GG
+  - Art. 16a Abs. 2 GG
+  - Art. 16a Abs. 3 GG
+  - § 3 AsylG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 80, 315
+schemata:
+- slug: or-schema-gr-wfr-art13-durchsuchung
+  title: Prüfung einer Wohnungsdurchsuchung am Maßstab des Art. 13 GG
+  norms:
+  - Art. 13 Abs. 1 GG
+  - Art. 13 Abs. 2 GG
+  - Art. 13 Abs. 7 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Schutzbereich
+    children:
+    - label: 1. Persönlich (Jedermannrecht, Art. 19 Abs. 3 GG)
+    - label: 2. Sachlich - Wohnung (auch Arbeits-, Betriebs- und Geschäftsräume)
+  - label: II. Eingriff
+    children:
+    - label: 1. Durchsuchung (Art. 13 Abs. 2 GG)
+    - label: 2. Sonstiger Eingriff (Art. 13 Abs. 7 GG)
+      hinweis: Durchsuchung, Überwachung oder sonstiger Eingriff? Die Einordnung
+        bestimmt die Schranke.
+  - label: III. Rechtfertigung
+    children:
+    - label: 1. Gesetzliche Grundlage (z. B. §§ 102 ff. StPO)
+    - label: 2. Anordnung durch den Richter
+      hinweis: Gefahr im Verzug ist eng auszulegen und mit Tatsachen zu belegen;
+        Eildienst beachten (BVerfGE 103, 142).
+    - label: 3. Form und Verhältnismäßigkeit
+      hinweis: Konkreter Tatverdacht, Auffindeerwartung, Verhältnismäßigkeit im
+        engeren Sinne.
+  - label: IV. Ergebnis
+faelle:
+- slug: or-fall-gr-wfr-durchsuchung-ohne-richter
+  title: Die Durchsuchung durch die Polizei ohne Richterbeschluss
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  facts: >-
+    Die Staatsanwaltschaft ermittelt gegen den Gewerbetreibenden G wegen
+    Betrugsverdachts. Am Dienstagvormittag, 10 Uhr, entscheidet der Staatsanwalt,
+    die Wohnung des G durchsuchen zu lassen, um Geschäftsunterlagen sicherzustellen.
+    Er verzichtet auf eine richterliche Anordnung, weil die Einholung einen
+    Aufwand bedeute und G die Unterlagen vernichten könne. Konkrete Anhaltspunkte,
+    dass G von den Ermittlungen weiß oder Unterlagen beiseite schafft, gibt es nicht.
+    Ein Ermittlungsrichter ist beim Amtsgericht erreichbar. Die Polizei durchsucht
+    noch am Vormittag die Wohnung und beschlagnahmt Unterlagen. G erhebt nach
+    Erschöpfung des Rechtswegs Verfassungsbeschwerde.
+  question: Verletzt die Durchsuchung den G in Art. 13 GG?
+  steps:
+  - prompt: Ist der Schutzbereich des Art. 13 Abs. 1 GG eröffnet, und liegt ein Eingriff vor?
+    erwartung: Ja. Die Wohnung des G ist geschützt. Das gezielte Suchen nach
+      Unterlagen, die G nicht freiwillig herausgeben will, ist eine Durchsuchung
+      im Sinne von Art. 13 Abs. 2 GG und damit ein Eingriff.
+  - prompt: Welche Anforderungen stellt Art. 13 Abs. 2 GG an die Anordnung?
+    erwartung: Die Durchsuchung darf grundsätzlich nur der Richter anordnen. Nur bei
+      Gefahr im Verzug dürfen auch andere Organe, etwa die Staatsanwaltschaft,
+      die Anordnung treffen (§ 105 Abs. 1 StPO). Die Eilkompetenz ist die enge
+      Ausnahme.
+  - prompt: Lag Gefahr im Verzug vor?
+    erwartung: Nein. Gefahr im Verzug erfordert einzelfallbezogene Tatsachen, aus
+      denen sich ergibt, dass die Einholung der richterlichen Entscheidung den Erfolg
+      der Durchsuchung gefährden würde. Bloße Vermutungen oder der Aufwand genügen
+      nicht. Es gab keine Anhaltspunkte für Beweismittelvernichtung, und der
+      Ermittlungsrichter war erreichbar. Die Durchsuchung verletzt Art. 13 Abs. 1,
+      2 GG.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Schutzbereich Wohnung und Eingriff durch Durchsuchung festgestellt
+      weight: 1.5
+      required: true
+      norms:
+      - Art. 13 Abs. 1 GG
+      keywords:
+      - Art. 13 Abs. 1 GG
+      - Art. 13 Abs. 2 GG
+      - Unverletzlichkeit der Wohnung
+      - zielgerichtetes Suchen
+      card_slugs:
+      - or-gr-wfr-art13-wohnung-durchsuchung
+    - id: p2
+      label: Richtervorbehalt als Regel, Eilkompetenz als enge Ausnahme
+      weight: 2.0
+      required: true
+      keywords:
+      - Richtervorbehalt
+      - richterliche Anordnung
+      - Gefahr im Verzug
+      - § 105 Abs. 1 StPO
+      card_slugs:
+      - or-gr-wfr-art13-gefahr-im-verzug
+    - id: p3
+      label: Gefahr im Verzug verneint - keine einzelfallbezogenen Tatsachen, Richter erreichbar
+      weight: 3.0
+      required: true
+      keywords:
+      - einzelfallbezogene Tatsachen
+      - Eildienst
+      - Ermittlungsrichter erreichbar
+      - bloße Vermutung
+      - Beweismittelvernichtung
+      card_slugs:
+      - or-gr-wfr-art13-gefahr-im-verzug
+    - id: p4
+      label: Ergebnis - Verletzung des Art. 13 GG
+      weight: 1.0
+      required: false
+      keywords:
+      - Verletzung von Art. 13
+      - Verletzung der Unverletzlichkeit der Wohnung
+      - Verstoß gegen Art. 13 Abs. 2 GG
