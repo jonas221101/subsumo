@@ -270,7 +270,8 @@ faelle:
       ist auch tatsächlich gegeben. Ein Auftrag oder eine sonstige Berechtigung fehlt.
       Die Übernahme entspricht dem objektiven Interesse des B (Abwendung von Folgeschäden)
       und seinem mutmaßlichen Willen, da ein wirklicher Wille mangels Erreichbarkeit
-      nicht feststellbar war (§ 683 S. 1 BGB). Die GoA ist berechtigt.
+      nicht feststellbar war (§ 683 S. 1 BGB). Die GoA ist berechtigt, sodass A dem Grunde nach Aufwendungsersatz
+      nach §§ 677, 683 S. 1, 670 BGB verlangen kann.
   - prompt: Welche Positionen kann A als Aufwendungen nach §§ 683 S. 1, 670 BGB ersetzt
       verlangen?
     erwartung: Die Materialkosten von 600 EUR sind freiwillige Vermögensopfer, die
@@ -286,7 +287,9 @@ faelle:
       B verweigert, § 679 BGB greift nicht. Die GoA ist insoweit unberechtigt. A kann
       nach § 684 S. 1 BGB nur Herausgabe des Erlangten nach Bereicherungsrecht verlangen;
       da der Anstrich eines zum Abriss bestimmten Zauns für B keinen Vermögenswert
-      hat (aufgedrängte Bereicherung), schuldet B nichts.
+      hat (aufgedrängte Bereicherung), schuldet B nichts. Im Ergebnis kann A von
+      B Aufwendungsersatz von insgesamt 1.050 EUR verlangen, nicht aber die 80 EUR für
+      die Zaunfarbe.
   expectation:
     pruefpunkte:
     - id: p1
@@ -298,9 +301,9 @@ faelle:
       - § 683 S. 1 BGB
       - § 670 BGB
       keywords:
-      - § 677
-      - § 683 S. 1
-      - § 670
+      - §§ 677, 683 S. 1, 670
+      - § 677 ff.
+      - Aufwendungsersatz nach §§ 677
       - berechtigte Geschäftsführung ohne Auftrag
       - Aufwendungsersatz aus Geschäftsführung ohne Auftrag
       card_slugs:
@@ -327,11 +330,11 @@ faelle:
       norms:
       - § 683 S. 1 BGB
       keywords:
-      - mutmaßlicher Wille des Geschäftsherrn
-      - Interesse des Geschäftsherrn
-      - wirklicher Wille nicht feststellbar
+      - mutmaßlichen Willen
+      - mutmaßlicher Wille
+      - Interesse des B
+      - wirklicher Wille
       - Abwendung von Folgeschäden
-      - Übernahme entspricht dem Interesse
       card_slugs:
       - zr-goa-berechtigung-683-679-684
     - id: p4
@@ -370,8 +373,8 @@ faelle:
       - zr-goa-berechtigung-683-679-684
       - zr-goa-unberechtigte-goa-684-678
     - id: p6
-      label: 'Rechtsfolge § 684 S. 1 BGB: nur Bereicherungsausgleich, wegen aufgedrängter
-        Bereicherung kein Anspruch auf die 80 EUR'
+      label: 'Rechtsfolge § 684 S. 1 BGB: nur Bereicherungsausgleich, Anspruch auf die
+        80 EUR wegen aufgedrängter Bereicherung abgelehnt'
       weight: 1.5
       norms:
       - § 684 S. 1 BGB
@@ -380,15 +383,15 @@ faelle:
       - § 684 S. 1
       - aufgedrängte Bereicherung
       - Bereicherungsausgleich
-      - Rechtsfolgenverweisung auf das Bereicherungsrecht
-      - kein Vermögenswert für B
+      - Bereicherungsrecht
+      - Rechtsfolgenverweisung
       card_slugs:
       - zr-goa-unberechtigte-goa-684-678
     - id: p7
       label: 'Ergebnis: A kann 1.050 EUR verlangen, nicht die 80 EUR für die Zaunfarbe'
       weight: 0.5
       keywords:
-      - Aufwendungsersatz von insgesamt 1.050
+      - Aufwendungsersatz von insgesamt 1.050 EUR
+      - A kann 1.050 EUR verlangen
       - Zaunfarbe nicht ersatzfähig
       - keine Erstattung der Zaunfarbe
-      - Anspruch wegen des Dachs, nicht wegen des Zauns

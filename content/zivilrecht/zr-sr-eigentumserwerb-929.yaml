@@ -193,7 +193,8 @@ faelle:
   - prompt: Kann L sich gegenüber K darauf berufen, nur V zu kennen?
     erwartung: Nein. Mit wirksamer Abtretung und Anzeige an L ist K neuer Berechtigter
       des Herausgabeanspruchs geworden; L muss nun an K leisten und hat kein eigenes
-      Besitzrecht gegenüber K.
+      Besitzrecht gegenüber K. Damit ist K Eigentümer geworden und kann von L die
+      Herausgabe des Klaviers verlangen, § 985 BGB.
   expectation:
     pruefpunkte:
     - id: p1
@@ -205,7 +206,6 @@ faelle:
       keywords:
       - Vindikationslage
       - Herausgabeanspruch des Eigentümers
-      - Eigentümer und Besitzer ohne Recht zum Besitz
       - § 985
       card_slugs:
       - zr-sr-929-voraussetzungen
@@ -213,10 +213,10 @@ faelle:
       label: Prüfung des Eigentumserwerbs des K über § 929 S. 1 iVm § 931 BGB
       weight: 1.5
       keywords:
-      - § 929 S. 1 i. V. m. § 931
+      - § 929 S. 1 iVm § 931
       - Einigung und Übergabesurrogat
       - Eigentumsübertragung nach § 929
-      - dingliche Einigung und Abtretung des Herausgabeanspruchs
+      - Abtretung des Herausgabeanspruchs
       card_slugs:
       - zr-sr-929-voraussetzungen
       - zr-sr-abtretung-herausgabeanspruch-931
@@ -225,8 +225,7 @@ faelle:
       weight: 1.0
       keywords:
       - dingliche Einigung
-      - Einigung über den Eigentumsübergang
-      - Trennungs- und Abstraktionsprinzip
+      - Einigung zwischen V und K
       - Verfügungsgeschäft
       card_slugs:
       - zr-sr-dingliche-einigung-abstraktionsprinzip
@@ -240,9 +239,8 @@ faelle:
       keywords:
       - Übergabesurrogat
       - § 931
-      - Abtretung des Herausgabeanspruchs gegen L
+      - statt Übergabe
       - mittelbarer Besitz
-      - Ersatz der Übergabe durch Abtretung
       card_slugs:
       - zr-sr-abtretung-herausgabeanspruch-931
     - id: p5
@@ -251,8 +249,8 @@ faelle:
       keywords:
       - Berechtigung der V
       - V war Eigentümerin
+      - Eigentümerin des Klaviers
       - Verfügungsbefugnis
-      - Berechtigte als Veräußerin
       card_slugs:
       - zr-sr-929-berechtigung-veraeusserers
     - id: p6
@@ -260,6 +258,7 @@ faelle:
       weight: 1.0
       keywords:
       - K ist Eigentümer geworden
+      - K Eigentümer geworden
       - Eigentumsübergang auf K
       - K hat das Eigentum erworben
     - id: p7
@@ -270,10 +269,9 @@ faelle:
       norms:
       - § 985 BGB
       keywords:
+      - kein eigenes Besitzrecht
       - kein Recht zum Besitz
-      - § 986
       - Anzeige der Abtretung
-      - Einwendungen gegen den Zessionar
       - § 986 Abs. 2
       card_slugs:
       - zr-sr-abtretung-herausgabeanspruch-931
@@ -281,6 +279,6 @@ faelle:
       label: 'Ergebnis: K kann von L die Herausgabe verlangen'
       weight: 1.0
       keywords:
-      - Herausgabeanspruch des K gegen L besteht
-      - L muss das Klavier an K herausgeben
+      - von L die Herausgabe
+      - Herausgabeanspruch des K
       - Anspruch aus § 985 (+)

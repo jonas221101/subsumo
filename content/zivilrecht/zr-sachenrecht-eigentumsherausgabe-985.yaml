@@ -175,8 +175,8 @@ faelle:
       - § 985 BGB
       keywords:
       - Vindikationslage
-      - Herausgabeanspruch des Eigentümers gegen den Besitzer
       - Eigentümer-Besitzer-Verhältnis
+      - Herausgabeanspruch des Eigentümers
       card_slugs:
       - zr-985-anspruchsvoraussetzungen
     - id: p2
@@ -184,10 +184,10 @@ faelle:
       weight: 1.5
       required: false
       keywords:
-      - Eigentum der E blieb unberührt
-      - Leihe ist kein Verfügungsgeschäft
-      - Leihvertrag verpflichtet nur schuldrechtlich
-      - Trennungs- und Abstraktionsprinzip
+      - Eigentum bleibt unberührt
+      - schuldrechtliches Rechtsgeschäft
+      - kein Verfügungsgeschäft
+      - Trennungsprinzip
       - keine Übereignung
       card_slugs:
       - zr-985-anspruchsvoraussetzungen
@@ -212,8 +212,8 @@ faelle:
       keywords:
       - Recht zum Besitz
       - § 986 Abs. 1
-      - Besitzrecht aus dem Leihvertrag
       - Besitzrecht aus Leihe
+      - Besitzrecht aus dem Leihvertrag
       card_slugs:
       - zr-986-recht-zum-besitz
     - id: p5
@@ -225,9 +225,10 @@ faelle:
       - § 604 Abs. 1 BGB
       keywords:
       - Ablauf der Leihzeit
+      - vereinbarten Leihzeit
+      - Recht zum Besitz erloschen
       - Besitzrecht erloschen
-      - Rückgabepflicht nach Fristablauf
-      - Recht zum Besitz entfallen
+      - § 604 Abs. 1
       - Beendigung der Leihe
       card_slugs:
       - zr-986-recht-zum-besitz
@@ -238,9 +239,10 @@ faelle:
       norms:
       - § 985 BGB
       keywords:
-      - Anspruch aus § 985 besteht
-      - L muss das Mountainbike herausgeben
-      - Herausgabeanspruch der E besteht
+      - E hat gegen L einen Anspruch
+      - Anspruch der E besteht
+      - Herausgabeanspruch der E
+      - L muss herausgeben
       card_slugs:
       - zr-985-vindikationslage
       - zr-985-anspruchsvoraussetzungen

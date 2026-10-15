@@ -277,10 +277,10 @@ faelle:
       norms:
       - § 929 S. 1 BGB
       keywords:
+      - Übergang des Eigentums
       - Einigung über den Eigentumsübergang
       - § 929 S. 1
       - dingliche Einigung
-      - Eigentumsübertragung durch Einigung und Übergabesurrogat
       card_slugs:
       - zr-sr-su-929-930-besitzkonstitut
     - id: p2
@@ -303,9 +303,10 @@ faelle:
         nicht erforderlich
       weight: 1.0
       keywords:
-      - U war Eigentümer der Maschine
+      - U war als Eigentümer
+      - zur Übereignung berechtigt
       - berechtigter Verfügender
-      - kein gutgläubiger Erwerb erforderlich
+      - gutgläubigen Erwerb nicht ankommt
       - Verfügungsbefugnis des U
     - id: p4
       label: Sicherungsabrede als kausaler Rechtsgrund benannt
@@ -338,9 +339,9 @@ faelle:
       weight: 1.0
       required: true
       keywords:
-      - S ist Sicherungseigentümerin
-      - Sicherungseigentum wirksam entstanden
-      - S darf die Maschine verwerten
+      - S ist wirksam Sicherungseigentümerin
+      - Sicherungseigentümerin geworden
+      - S darf die Maschine
       - Verwertungsbefugnis der Bank
       card_slugs:
       - zr-sr-su-fiduziarisches-eigentum

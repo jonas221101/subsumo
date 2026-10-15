@@ -199,9 +199,10 @@ faelle:
       - § 823 Abs. 1 BGB
       keywords:
       - reiner Vermögensschaden
-      - Vermögen nicht von § 823 Abs. 1 geschützt
-      - Auffangtatbestand für reine Vermögensschäden
-      - sittenwidrige vorsätzliche Schädigung
+      - Vermögen als solches
+      - Auffangtatbestand
+      - sittenwidrige Schädigung
+      - § 826 BGB
       card_slugs:
       - zr-826-reine-vermoegensschaeden
       - zr-826-abgrenzung-823-1
@@ -213,10 +214,10 @@ faelle:
       - § 826 BGB
       keywords:
       - sittenwidrig
-      - Anstandsgefühl aller billig und gerecht Denkenden
+      - Sittenordnung
       - Anlagetäuschung
-      - Täuschung über die wirtschaftliche Lage
-      - Verstoß gegen die guten Sitten
+      - gute Sitten
+      - Anstandsgefühl
       card_slugs:
       - zr-826-sittenwidrigkeit-begriff
     - id: p3
@@ -228,7 +229,7 @@ faelle:
       keywords:
       - Schädigungsvorsatz
       - dolus eventualis
-      - billigend in Kauf genommen
+      - billigend in Kauf
       - bedingter Vorsatz
       card_slugs:
       - zr-826-schaedigungsvorsatz
@@ -236,10 +237,11 @@ faelle:
       label: Vorsatz bzgl. der sittenwidrigkeitsbegründenden Umstände erkannt
       weight: 1.0
       keywords:
-      - Vorsatz bezüglich der Umstände der Sittenwidrigkeit
-      - Kenntnis der sittenwidrigkeitsbegründenden Tatsachen
       - kannte die Unrichtigkeit
-      - Bewusstsein der Sittenwidrigkeit nicht erforderlich
+      - kannte sowohl die Unrichtigkeit
+      - täuschende Zielrichtung
+      - Kenntnis der Umstände
+      - Sittenwidrigkeitsbewusstsein
       card_slugs:
       - zr-826-vorsatz-sittenwidrige-umstaende
     - id: p5
@@ -251,15 +253,15 @@ faelle:
       - Vermögensschaden
       - Differenzhypothese
       - Verlust der Einlage
-      - Kausalität der Täuschung
       - Rückzahlung der Einlage
+      - 25.000 EUR Schaden
       card_slugs:
       - zr-826-reine-vermoegensschaeden
     - id: p6
       label: 'Ergebnis: Anspruch besteht'
       weight: 0.5
       keywords:
-      - Schadensersatzanspruch aus § 826 besteht
-      - I kann von G Ersatz verlangen
+      - Anspruch auf Schadensersatz in Höhe
       - G haftet
       - Anspruch aus § 826 (+)
+      - I kann von G Ersatz verlangen
