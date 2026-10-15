@@ -1,6 +1,14 @@
 # Prüfliste für menschliche Fachprüfung (KI-Vervollständigung 2026-10-15)
 Alle neuen Themen: status in-pruefung, normzitate_geprueft false.
 
+## Stand nach Quellenprüfung (KI, 2026-10-15)
+Alle Abschnitte unten wurden ein zweites Mal von KI-Prüfern gegen Primärquellen abgeglichen: Bundesrecht gegen den amtlichen Wortlaut (`content/normtexte/`, gesetze-im-internet.de), Landesrecht gegen die Landesportale, Rechtsprechung gegen bundesverfassungsgericht.de/bundesgerichtshof.de. Ergebnisse je Bereich in `docs/28-verifikation/` (Tabellen *Bestätigt*, *Korrigiert*, *Offen*):
+[zr1](28-verifikation/zr1.md) (Z1–Z3) · [zr2](28-verifikation/zr2.md) (Z4–Z5) · [sr](28-verifikation/sr.md) (S1–S4) · [or](28-verifikation/or.md) (O1–O4) · [lr1](28-verifikation/lr1.md) (BY/BW/NW/HE/BE/BB) · [lr2](28-verifikation/lr2.md) (übrige 10 Länder).
+
+**Für die menschliche Prüfung zählt jetzt vor allem Tabelle 3 („Offen“) jeder Datei.** Hauptgruppen: Streitstände/Rechtsprechung ohne frei zugängliche Primärquelle; Bandfundstellen (BVerfGE/BGHZ/BGHSt) ohne Online-Bestätigung; Landesrecht NI/HH/HB/SH/MV/SN/ST/TH/RP/SL nur über den nicht-amtlichen Volltextdienst gesetze.co abgeglichen (amtlicher Stand gegenlesen).
+Die Punkte unten sind der ursprüngliche Auftrag; viele davon sind inzwischen bestätigt oder korrigiert – maßgeblich ist die jeweilige Ergebnisdatei.
+
+
 ## Z1 BGB AT (zr-at-vertragsschluss, -willenserklaerung-willensmaengel, -form, -nichtigkeit-134-138, -arglist-drohung-123, -bedingung-befristung, -fristen-einwilligung-genehmigung)
 - Fundstellen prüfen: BGHZ 149, 129 (Internet-Auktion); BGHZ 91, 324 (Trierer Weinversteigerung); RGZ 99, 147 (Haakjöringsköd); BVerfGE 89, 214 (Bürgschaft)
 - Schwarzarbeit-Karte (zr-at-nicht-schwarzarbeit) ohne Fundstelle: aktuelle BGH-Linie (Werklohn, Mängel, § 817 S. 2) prüfen
