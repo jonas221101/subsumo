@@ -87,10 +87,12 @@ cards:
     zwingend gleichzeitige Anwesenheit). Die notarielle Beurkundung wird nach §
     127a BGB bei einem gerichtlichen Vergleich durch die Aufnahme der Erklärungen in
     das nach den Vorschriften der ZPO errichtete Protokoll ersetzt. Die öffentliche
-    Beglaubigung (§ 129 BGB) verlangt eine schriftliche Erklärung, die von einem
-    Notar beglaubigt wird (Unterschriftsbeglaubigung); sie ersetzt nur die
-    Schriftform, nicht die Beurkundung. Die Beurkundung ersetzt ihrerseits die
-    Schriftform, § 126 Abs. 4 BGB.
+    Beglaubigung (§ 129 BGB) verlangt eine schriftlich abgefasste Erklärung,
+    deren Unterschrift von einem Notar beglaubigt wird; der Notar bestätigt nur
+    die Echtheit der Unterschrift, nicht den Inhalt. Sie wird durch die
+    notarielle Beurkundung ersetzt, § 129 Abs. 2 BGB. Die notarielle
+    Beurkundung ersetzt ihrerseits die gesetzliche Schriftform, § 126 Abs. 4
+    BGB.
   norms:
   - § 127a BGB
   - § 128 BGB
@@ -112,7 +114,7 @@ cards:
     Auflassung und die Eintragung in das Grundbuch erfolgen. Die Auflassung selbst
     ist nach § 925 BGB bei gleichzeitiger Anwesenheit vor dem Notar zu erklären und
     nicht bedingungsfähig. Der Formzwang dient vor allem der Warnung und Beratung der
-    Parteien. Entsprechende Regelungen enthält § 311b Abs. 2 und 3 BGB.
+    Parteien. Daneben verlangt § 311b Abs. 3 BGB die Beurkundung bei der Verpflichtung zur Übertragung des gesamten gegenwärtigen Vermögens; ein Vertrag über das künftige Vermögen ist nach § 311b Abs. 2 BGB nichtig.
   norms:
   - § 311b Abs. 1 S. 1 BGB
   - § 311b Abs. 1 S. 2 BGB
@@ -127,7 +129,7 @@ cards:
     Zur Gültigkeit des Bürgschaftsvertrags ist nach § 766 S. 1 BGB schriftliche Erteilung
     der Bürgschaftserklärung erforderlich. Es genügt die eigenhändig unterzeichnete
     Erklärung des Bürgen (§ 126 BGB), nicht die des Gläubigers; die Erteilung in
-    elektronischer Form ist nach § 766 S. 2 BGB ausgeschlossen. Der wesentliche Inhalt (Gläubiger, Hauptschuld, Bürgenwille) muss aus der Urkunde hervorgehen. Der Mangel der
+    elektronischer Form ist nach § 766 S. 2 BGB ausgeschlossen. Der wesentliche Inhalt (Gläubiger, Hauptschuldner, Hauptschuld, Bürgschaftswille) muss aus der Urkunde hervorgehen. Der Mangel der
     Form wird nach § 766 S. 3 BGB geheilt, soweit der Bürge die Hauptverbindlichkeit
     erfüllt. Der Formzweck liegt in der Warnung des Bürgen vor der gefährlichen, einseitig
     verpflichtenden Bürgschaft. Eine Ausnahme enthält § 350 HGB: Ist die Bürgschaft für den Bürgen ein Handelsgeschäft, gilt § 766 S. 1 BGB nicht.
@@ -171,11 +173,11 @@ cards:
     der einen Partei durch die Nichtigkeit; zum anderen eine besonders schwere
     Treuepflichtverletzung der sich auf den Formmangel berufenden Partei, etwa wenn sie
     den Formmangel arglistig herbeigeführt hat oder die andere Seite durch eigene
-    Zusicherungen vom Formgebrauch abgehalten hat. Die bloße Tatsache, dass
-    schon Leistungen erbracht wurden, genügt nicht. Die Literatur verlangt teils
-    zusätzliche Schutzzweckprüfung der konkreten Formvorschrift und zieht eine
-    Schadensersatzlösung (culpa in contrahendo) vor, die das Interesse des
-    Geschädigten ausgleicht, ohne den Formzwang zu umgehen.
+    Zusicherungen von der Einhaltung der Form abgehalten hat. Die bloße Tatsache, dass
+    schon Leistungen erbracht wurden, genügt nicht. Teile der Literatur verlangen
+    zusätzlich eine Schutzzweckprüfung der konkreten Formvorschrift und ziehen eine
+    Schadensersatzlösung (culpa in contrahendo) vor, die den
+    Geschädigten entschädigt, ohne den Formzwang zu umgehen.
   norms:
   - § 242 BGB
   - § 125 S. 1 BGB

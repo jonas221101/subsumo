@@ -86,8 +86,7 @@ cards:
     ist, etwa Ehegatten oder Mitbewohner, Büropersonal. Bei ihm gilt die
     Erklärung erst dann als zugegangen, wenn nach dem regelmäßigen Verlauf der
     Dinge die Weiterleitung an den Empfänger zu erwarten ist. Verzögert der
-    Bote die Weiterleitung, geht das Risiko zulasten des Erklärenden. Kinder
-    oder zufällig Anwesende sind keine Empfangsboten.
+    Bote die Weiterleitung, geht das Risiko zulasten des Erklärenden. Kleinkinder oder zufällig Anwesende sind keine Empfangsboten.
   norms:
   - § 130 Abs. 1 BGB
   - § 164 Abs. 3 BGB
@@ -128,8 +127,11 @@ cards:
     Zeitpunkt, in dem der Antragende den Eingang der Antwort unter regelmäßigen
     Umständen erwarten darf, § 147 Abs. 2 BGB (Übermittlungs-, Überlegungs- und
     Rückübermittlungszeit). Hat der Antragende eine Frist bestimmt, kann die
-    Annahme nur innerhalb dieser Frist erfolgen, § 148 BGB. Verspätet zugehende
-    Annahme ist nach § 150 Abs. 1 BGB ein neuer Antrag. Nach § 151 S. 1 BGB
+    Annahme nur innerhalb dieser Frist erfolgen, § 148 BGB. Eine verspätet zugehende
+    Annahme gilt nach § 150 Abs. 1 BGB als neuer Antrag. Wäre sie bei
+    regelmäßiger Beförderung rechtzeitig zugegangen und musste der Antragende
+    dies erkennen, so muss er die Verspätung unverzüglich anzeigen, sonst
+    gilt die Annahme als rechtzeitig, § 149 BGB. Nach § 151 S. 1 BGB
     bedarf es des Zugangs der Annahmeerklärung nicht, wenn eine solche nach
     der Verkehrssitte nicht zu erwarten ist oder der Antragende darauf
     verzichtet; Annahme ist dann etwa das Betätigen des Annahmewillens
@@ -184,9 +186,7 @@ cards:
     Zusammenhang; es gibt das Verhandlungsergebnis zutreffend oder nur
     unerheblich abweichend wieder; der Absender ist schutzwürdig; der Empfänger
     widerspricht nicht unverzüglich. Dann gilt der Vertrag mit dem bestätigten
-    Inhalt. Umstritten ist, ob das Schweigen einer Willenserklärung gleichsteht
-    (dann Anfechtung analog § 119 Abs. 1 BGB) oder nur eine Beweis- und
-    Vertrauensfolge auslöst.
+    Inhalt. Die dogmatische Einordnung ist umstritten (Schweigen als Erklärung kraft Verkehrssitte oder bloße Vertrauens- und Beweislastfolge); nach h. M. kann der Empfänger, der die Bedeutung seines Schweigens verkannte, in entsprechender Anwendung des § 119 Abs. 1 BGB anfechten.
   norms:
   - § 362 HGB
   - § 516 Abs. 2 BGB
@@ -226,18 +226,17 @@ cards:
   back: >-
     Nach BGHZ 149, 129 (Internet-Auktion) kommt der Vertrag bei einer
     Plattform mit Auktionscharakter nicht durch einen Zuschlag nach § 156 BGB
-    zustande, denn es fehlt der Auktionator. Die Freischaltung des
-    Verkaufsangebots durch den Anbieter ist ein bindendes, an den späteren
-    Höchstbietenden gerichtetes Angebot (ad incertas personas), auf das der
-    Anbieter mit dem Einstellen im Voraus eine Annahme erklärt. Das Gebot des
-    Bieters ist die Annahmeerklärung. Der Vertrag kommt mit dem zum Fristende
-    Höchstbietenden zustande. Die Bedingungen der Plattform sind für die
+    zustande, denn es fehlt der Auktionator. Das
+    Einstellen des Artikels durch den Anbieter ist ein bindendes, an die
+    Teilnehmer der Plattform gerichtetes Verkaufsangebot (nicht bloß eine
+    invitatio ad offerendum). Es steht unter der Bedingung, dass bei
+    Auktionsende kein höheres Gebot vorliegt. Das Gebot des Bieters ist die
+    Annahme unter der auflösenden Bedingung eines Übergebots. Der Vertrag
+    kommt mit dem bei Fristende Höchstbietenden zustande. Die Bedingungen der Plattform sind für die
     Auslegung der Erklärungen maßgeblich. Der Fall zeigt die Technik, beim
-    Online-Handel zunächst Angebot und Annahme sauber zu trennen und die
-    jeweiligen Zugangsvoraussetzungen zu prüfen (§ 151 BGB).
+    Online-Handel zunächst Angebot und Annahme sauber zu trennen.
   norms:
   - § 145 BGB
-  - § 151 BGB
   - § 156 BGB
   quellen:
   - BGB, amtliche Fassung

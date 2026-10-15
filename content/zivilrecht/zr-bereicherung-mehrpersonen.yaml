@@ -70,8 +70,7 @@ cards:
     herrschenden Lehre bei der Abwicklung entlang der Leistungsbeziehungen: B kondiziert
     bei A, A bei C. Ein Direktanspruch des B gegen C wird überwiegend abgelehnt, weil
     er A als Zwischenglied mit seinen Einwendungen und dem Insolvenzrisiko des jeweiligen
-    Partners umgehen würde. Teile der älteren Rechtsprechung ließen den Durchgriff
-    zu.
+    Partners umgehen würde. Die Rechtsprechung lehnt einen Durchgriff auch bei Doppelmangel ab.
   norms:
   - § 812 Abs. 1 S. 1 Alt. 1 BGB
   - § 670 BGB
@@ -90,8 +89,9 @@ cards:
     oder wirksamer Widerruf), leistet der Angewiesene nicht für den Anweisenden. Es
     fehlt dann an einer Leistung des A an C und an einer Leistung des B an A, soweit
     B bei objektiver Betrachtung nicht als Leistender für A auftritt. Nach h. M. kann
-    B den Empfänger C unmittelbar nach § 812 Abs. 1 S. 1 Alt. 2 BGB (Nichtleistungskondiktion
-    in Form der Rückgriffskondiktion) in Anspruch nehmen. Maßgeblich ist, ob der Empfänger
+    B in diesem Fall den Empfänger C unmittelbar bereicherungsrechtlich in Anspruch
+    nehmen; ob dies als Leistungskondiktion (§ 812 Abs. 1 S. 1 Alt. 1 BGB) oder als
+    Nichtleistungskondiktion (Alt. 2) einzuordnen ist, wird unterschiedlich beurteilt. Maßgeblich ist, ob der Empfänger
     die Zahlung als Leistung des Anweisenden verstehen durfte und ob dieser sie zurechenbar
     veranlasst hat (Zurechnung nach Rechtsscheingesichtspunkten). Ob C bereits Rechtsscheinschutz
     hat, ist ein wichtiger Streitpunkt; im Zahlungsdiensterecht regeln §§ 675u ff.
@@ -135,8 +135,7 @@ cards:
     Voraussetzungen: (1) Bereicherungsanspruch gegen den Empfänger (z. B. aus Leistungskondiktion),
     (2) unentgeltliche Zuwendung an den Dritten, (3) Wegfall der Haftung des Empfängers
     wegen Entreicherung (§ 818 Abs. 3 BGB), und zwar gerade infolge dieser Zuwendung.
-    Der Dritte haftet nur im Umfang seiner Bereicherung und hat gegen den ersten Schuldner
-    keinen Ausgleichsanspruch. Die Vorschrift ist ein Ausnahmefall der Dritthaftung
+    Der Dritte haftet nur in dem Umfang, in dem der Empfänger frei geworden ist, und kann sich seinerseits auf § 818 Abs. 3 BGB berufen. Die Vorschrift ist ein Ausnahmefall der Dritthaftung
     und schützt den Gläubiger vor dem Entreicherungseinwand des Zwischenempfängers.
   norms:
   - § 822 BGB
@@ -153,10 +152,11 @@ cards:
     der über einen Gegenstand verfügt hat, wenn die Verfügung dem Berechtigten gegenüber
     wirksam ist (etwa durch gutgläubigen Erwerb nach §§ 932 ff. BGB oder Genehmigung
     nach § 185 Abs. 2 BGB) und der Nichtberechtigte entgeltlich verfügt hat. Herauszugeben
-    ist das durch die Verfügung Erlangte, also der Erlös; ob darüber hinaus ein erzielter
-    Mehrerlös herauszugeben ist, ist streitig. Genehmigt der Berechtigte eine unwirksame
+    ist das durch die Verfügung Erlangte, also der Erlös; nach der Rechtsprechung gehört dazu der gesamte erzielte Erlös, auch ein den
+    Sachwert übersteigender Mehrerlös; ein Teil der Literatur will den Anspruch
+    auf den objektiven Wert beschränken. Genehmigt der Berechtigte eine unwirksame
     Verfügung, verzichtet er auf den dinglichen Anspruch zugunsten des Erlöses (Wahlrecht).
-    Erfolgt die Verfügung unentgeltlich, ist der Erwerber selbst zur Herausgabe verpflichtet
+    Erfolgt die Verfügung unentgeltlich, ist derjenige, der unmittelbar einen rechtlichen Vorteil erlangt (der Erwerber), selbst zur Herausgabe verpflichtet
     (§ 816 Abs. 1 S. 2 BGB); der Anspruch richtet sich dann gegen ihn, nicht gegen
     den Verfügenden.
   norms:
@@ -257,7 +257,7 @@ schemata:
     - label: 2. Anweisung vorhanden und dem Anweisenden zurechenbar?
       hinweis: >-
         Fehlt sie, scheidet die Leistung des Angewiesenen für den Anweisenden aus;
-        dann Kondiktion gegen den Empfänger (Nichtleistung).
+        dann Direktanspruch gegen den Empfänger (Einordnung umstritten).
   - label: II. Lokalisierung des Mangels
     children:
     - label: >-
@@ -289,7 +289,7 @@ faelle:
     Euro einverstanden, obwohl er 120 Euro erklären wollte; V hielt den Preis für
     zutreffend, ohne den Irrtum zu erkennen. A weist seine Bank B an, 1.200 Euro an
     V zu überweisen. B führt die Überweisung wirksam aus. V schenkt davon 1.000 Euro
-    sofort seinem Sohn S, der nichts vom Hintergrund weiß; 200 Euro hat V noch. Nachdem
+    sofort seinem Sohn S, der nichts vom Hintergrund weiß und das Geld noch hat; 200 Euro hat V noch. Nachdem
     A den Irrtum bemerkt, ficht er den Kaufvertrag unverzüglich an. Das Girovertragsverhältnis
     zwischen A und B war in Ordnung; der Laptop ist noch nicht geliefert.
   question: Welche Ansprüche bestehen zwischen B, A, V und S (ohne § 122 BGB)?

@@ -21,10 +21,7 @@ cards:
     subjektive Tatbestand wird üblicherweise in drei Stufen geprüft:
     Handlungswille (bewusstes Verhalten), Erklärungsbewusstsein (Bewusstsein,
     irgendetwas rechtlich Erhebliches zu erklären) und Geschäftswille (Wille,
-    gerade diese Rechtsfolge herbeizuführen). Nur der Handlungswille ist nach
-    allgemeiner Meinung unverzichtbar; das Fehlen von Erklärungsbewusstsein und
-    Geschäftswille führt nicht zum Fehlen der Willenserklärung, sondern allenfalls
-    zur Anfechtbarkeit.
+    gerade diese Rechtsfolge herbeizuführen). Nur der Handlungswille ist unstreitig unverzichtbar. Der fehlende Geschäftswille führt nicht zur Unwirksamkeit, sondern allenfalls zur Anfechtbarkeit (§ 119 Abs. 1 BGB). Beim fehlenden Erklärungsbewusstsein ist die Einordnung streitig; nach h. M. liegt bei Zurechenbarkeit gleichwohl eine anfechtbare Willenserklärung vor.
   norms:
   - § 133 BGB
   - § 157 BGB
@@ -154,8 +151,8 @@ cards:
     ist, dass der Erklärende erwartet, der Empfänger werde den Mangel erkennen;
     es genügt nicht, dass er es nur hofft. Verkennt der Empfänger den Scherz
     und vertraut er auf die Wirksamkeit, ist der Erklärende dem Empfänger zum
-    Ersatz des Vertrauensschadens verpflichtet (§ 122 BGB); dies gilt auch hier
-    unmittelbar nach dem Wortlaut. Die Abgrenzung zu § 116 BGB liegt darin,
+    Ersatz des Vertrauensschadens verpflichtet, denn § 122 Abs. 1 BGB nennt
+    die nach § 118 BGB nichtige Erklärung ausdrücklich. Die Abgrenzung zu § 116 BGB liegt darin,
     dass beim Scherz der Erklärende die Erkennbarkeit erwartet, beim geheimen
     Vorbehalt dagegen das Verborgenbleiben des fehlenden Geltungswillens.
   norms:
@@ -176,8 +173,9 @@ cards:
     gemeint war. Maßgeblich war das gemeinsam Gewollte. Der Grundsatz folgt aus
     § 133 BGB (Erforschung des wirklichen Willens) und gilt nach h. M. auch bei
     formbedürftigen Geschäften, etwa bei übereinstimmend falsch bezeichnetem
-    Grundstück; einer Andeutung im Urkundentext bedarf es dann nicht, weil
-    kein schutzwürdiger Dritter betroffen ist. Voraussetzung ist ein tatsächlich
+    Grundstück; einer Andeutung im Urkundentext bedarf es dann bei
+    empfangsbedürftigen Verträgen nicht, weil die Formzwecke (Warnung,
+    Beweis) nicht beeinträchtigt sind. Voraussetzung ist ein tatsächlich
     übereinstimmendes Verständnis; fehlt es, bleibt es bei der normativen
     Auslegung und gegebenenfalls der Anfechtung.
   norms:
@@ -260,50 +258,57 @@ faelle:
     Auf einer öffentlichen Kunstauktion hebt G die Hand, um einem Bekannten in
     der letzten Reihe zuzuwinken. Der Auktionator A, dem das Gemälde gehört und der es selbst
     versteigert, versteht dies als Gebot über 2.000 Euro für
-    ein Gemälde und erteilt G den Zuschlag. G hat zuvor keine Gebote abgegeben
+    das Gemälde und erteilt G den Zuschlag. G hat zuvor keine Gebote abgegeben
     und wusste, dass bei Auktionen das Heben der Hand als Gebot gilt, hat es aber in
     der Aufregung nicht bedacht. Sofort nach dem Zuschlag erklärt G, er habe nicht
-    bieten wollen, und ficht sein Gebot an. A, der das Bild nur noch mit zusätzlichen Aufwendungen von 100 Euro für eine
-    erneute Versteigerung veräußern kann, verlangt Erfüllung, hilfsweise Ersatz.
+    bieten wollen, und ficht sein Gebot an. A muss das Bild neu versteigern und hat dafür zusätzliche Kosten von 100 Euro. Er verlangt von G Erfüllung, hilfsweise Ersatz.
   question: Ist zwischen G und A ein Kaufvertrag zustande gekommen, und kann A
     jedenfalls Schadensersatz von G verlangen?
   steps:
   - prompt: Liegt eine Willenserklärung des G in Form eines Gebots vor?
     erwartung: >-
-      Ja. Das Handheben ist eine Erklärungshandlung, die nach dem objektiven
-      Empfängerhorizont als Gebot zu verstehen ist. G handelte willentlich
-      (Handlungswille). Es fehlt das Erklärungsbewusstsein.
+      Das Handheben ist eine Erklärungshandlung, die nach dem objektiven
+      Empfängerhorizont als Gebot zu verstehen ist. G handelte mit
+      Handlungswillen, denn er hat die Hand bewusst gehoben; anders als bei vis
+      absoluta wurde sein Arm nicht geführt. Es fehlt das Erklärungsbewusstsein.
   - prompt: Schadet das fehlende Erklärungsbewusstsein?
     erwartung: >-
-      Nach h. M. nicht. Die Erklärung ist zurechenbar, wenn G bei Anwendung der
-      im Verkehr erforderlichen Sorgfalt hätte erkennen und vermeiden können, dass
-      sein Verhalten als Gebot aufgefasst wird, und A es so verstanden hat. Da G
-      die Regeln der Auktion kannte, hätte er das erkennen können. Die
-      Gegenansicht verneint die Willenserklärung, schützt aber A über eine
-      analoge Anwendung des § 122 BGB.
+      Nach h. M. ist es unbeachtlich, wenn die Erklärung zurechenbar ist. Die
+      Zurechnung setzt voraus, dass G bei Anwendung der im Verkehr
+      erforderlichen Sorgfalt hätte erkennen und vermeiden können, dass sein
+      Verhalten als Gebot aufgefasst wird, und dass A es so verstanden hat
+      (Trierer Weinversteigerung). Da G die Regeln der Auktion kannte, hätte er
+      das erkennen können. Die Gegenansicht verneint die Willenserklärung, schützt
+      aber A über eine analoge Anwendung des § 122 BGB. Mit dem Zuschlag nach
+      § 156 BGB hat A das Gebot angenommen, ein Kaufvertrag ist zunächst
+      zustande gekommen.
   - prompt: Kann G die Erklärung anfechten?
     erwartung: >-
-      Ja, entsprechend § 119 Abs. 1 BGB, weil Erklärungsbewusstsein und
-      Geschäftswille fehlen. Die Anfechtung erfolgt gegenüber A (§ 143 BGB)
-      unverzüglich (§ 121 Abs. 1 BGB). Der Vertrag ist nach § 142 Abs. 1 BGB
-      rückwirkend nichtig. Ein Erfüllungsanspruch besteht deshalb nicht.
+      Ja, eine Anfechtung analog § 119 Abs. 1 BGB ist möglich. Sie erfasst den
+      Fall, dass G das Gebot so nicht erklären wollte. Die Anfechtung erfolgt
+      gegenüber A (§ 143 BGB) unverzüglich (§ 121 Abs. 1 BGB). Der Vertrag ist
+      nach § 142 Abs. 1 BGB von Anfang an nichtig. A hat deshalb keinen
+      Erfüllungsanspruch.
   - prompt: Kann A Schadensersatz verlangen?
     erwartung: >-
-      Ja, in entsprechender Anwendung des § 122 Abs. 1 BGB hat G den
-      Vertrauensschaden zu ersetzen, also etwa die Kosten der erneuten
-      Versteigerung in Höhe von 100 Euro, begrenzt auf das Erfüllungsinteresse (§
-      122 Abs. 1 a. E. BGB). Ein Ausschluss nach § 122 Abs. 2 BGB scheidet
-      aus, da A die Anfechtbarkeit nicht kannte oder kennen musste.
+      Ja, G hat in entsprechender Anwendung des § 122 Abs. 1 BGB den
+      Vertrauensschaden (negatives Interesse) zu ersetzen, also die Kosten der
+      erneuten Versteigerung in Höhe von 100 Euro. Der Ersatz ist auf das
+      Erfüllungsinteresse begrenzt (§ 122 Abs. 1 a. E. BGB), das hier die 100
+      Euro übersteigt. Die Haftung ist nach § 122 Abs. 2 BGB nur dann
+      ausgeschlossen, wenn A die Anfechtbarkeit kannte oder kennen musste. Das
+      ist hier nicht der Fall.
   expectation:
     pruefpunkte:
     - id: p1
-      label: Willenserklärung bejaht trotz fehlendem Erklärungsbewusstsein (Zurechnung
+      label: Fehlendes Erklärungsbewusstsein unbeachtlich - Willenserklärung bejaht (Zurechnung
         bei Fahrlässigkeit)
       weight: 3.0
       required: true
       keywords:
       - "Erklärungsbewusstsein"
       - "Zurechnung"
+      - "zurechenbar"
       - "im Verkehr erforderliche Sorgfalt"
       - "Trierer Weinversteigerung"
       - "objektiver Empfängerhorizont"
@@ -319,6 +324,7 @@ faelle:
       - § 142 Abs. 1 BGB
       keywords:
       - "§ 119 Abs. 1 analog"
+      - "analog § 119 Abs. 1"
       - "Anfechtung analog"
       - "§ 142 Abs. 1"
       - "von Anfang an nichtig"
@@ -336,7 +342,7 @@ faelle:
       - "Vertrauensschaden"
       - "negatives Interesse"
       - "Erfüllungsinteresse"
-      - "§ 122 Abs. 2"
+      - "§ 122 Abs. 1 a. E."
       card_slugs:
       - zr-at-we-geschaeftswille
     - id: p4
@@ -345,6 +351,7 @@ faelle:
       required: false
       keywords:
       - "Handlungswille"
+      - "Handlungswillen"
       - "bewusstes Verhalten"
       - "vis absoluta"
       - "willentliches Handeln"

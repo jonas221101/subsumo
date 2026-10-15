@@ -216,7 +216,7 @@ faelle:
     E leiht dem Bekannten H eine Spezialmaschine für drei Monate. H verkauft und
     übergibt die Maschine für 5.000 Euro an K. K, der weiß, dass die Maschine E gehört und H sie nur geliehen hat, zahlt den Kaufpreis.
     Als E dies erfährt, schreibt er H einen Brief, in dem er den Verkauf nachträglich
-    "billigt" und von H die 5.000 Euro verlangt. Zugleich verlangt er aber von K
+    "billigt" und von H die 5.000 Euro verlangt. Danach verlangt er aber auch von K
     Herausgabe der Maschine. Der Wert der Maschine beträgt 5.000 Euro.
   question: Wer ist Eigentümer der Maschine, und kann E von H Herausgabe der 5.000
     Euro verlangen?
@@ -235,7 +235,9 @@ faelle:
   - prompt: Kann E von K Herausgabe nach § 985 BGB verlangen?
     erwartung: >-
       Nein. E hat durch die wirksame Genehmigung sein Eigentum verloren; K ist
-      Eigentümer und hat ein Recht zum Besitz.
+      Eigentümer und hat ein Recht zum Besitz. Die Genehmigung ist einmal
+      erteilt unwiderruflich, daran ändert auch das spätere Herausgabeverlangen
+      nichts.
   - prompt: Kann E von H die 5.000 Euro verlangen?
     erwartung: >-
       Ja, aus § 816 Abs. 1 S. 1 BGB. H hat als Nichtberechtigter entgeltlich über die
