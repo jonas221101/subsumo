@@ -1,0 +1,406 @@
+topic:
+  slug: zr-delikt-823-vertiefung
+  area: zivilrecht
+  title: >-
+    Deliktsrecht vertieft: Verkehrspflichten, Persönlichkeitsrecht, §§ 832, 836, 842
+    ff.
+  parent: zr-deliktsrecht-823
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-d823v-verkehrssicherungspflicht
+  type: definition
+  front: Was ist eine Verkehrssicherungspflicht, und wie weit reicht sie?
+  back: >-
+    Wer in seinem Verantwortungsbereich eine Gefahrenquelle schafft oder andauern
+    lässt, muss die nach den Umständen erforderlichen und zumutbaren Vorkehrungen
+    treffen, um Schädigungen Dritter zu verhindern. Dogmatisch ist sie eine Verkehrspflicht:
+    Sie macht die Haftung für mittelbare Verletzungen und Unterlassen erst möglich
+    und begründet insoweit die Rechtswidrigkeit. Absolute Sicherheit wird nicht verlangt;
+    maßgeblich ist, welche Sicherungsmaßnahmen ein verständiger, umsichtiger Mensch
+    für ausreichend halten darf, um andere vor Schäden zu bewahren. Mitzudenken sind
+    die Erkennbarkeit der Gefahr, die Eigenverantwortung des Gefährdeten, Aufwand
+    und Zumutbarkeit der Maßnahme. Typische Fälle: Streu- und Räumpflicht, Baugruben,
+    Verkaufsräume, Spielgeräte, Gefahren durch Bäume.
+  norms:
+  - § 823 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-d823v-mittelbare-verletzung
+  type: streitstand
+  front: >-
+    Wie wird die Rechtswidrigkeit bei mittelbaren Verletzungen und Unterlassen im
+    Rahmen des § 823 Abs. 1 BGB begründet?
+  back: >-
+    Bei unmittelbaren Verletzungen durch positives Tun indiziert der Erfolg die Rechtswidrigkeit
+    (Lehre vom Erfolgsunrecht, h. M. und Rspr. für diese Fälle). Bei mittelbaren Verletzungen
+    (etwa Schaden durch das Zwischenhandeln eines Dritten) und bei Unterlassen ist
+    das Verhalten dagegen nur rechtswidrig, wenn eine Verkehrspflicht verletzt wurde;
+    sonst würde die Haftung uferlos. Die Verkehrspflichtverletzung wird teilweise
+    erst auf der Rechtswidrigkeitsebene (Lehre vom Handlungsunrecht), teilweise schon
+    bei der Tatbestandsmäßigkeit (Verletzungshandlung) geprüft; ein praktischer Unterschied
+    besteht kaum. Für die Klausur genügt eine klare Verortung. Bei Unterlassen muss
+    außerdem eine Pflicht zum Handeln bestehen, also eine Garantenstellung oder Verkehrspflicht.
+  norms:
+  - § 823 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-d823v-apr
+  type: definition
+  front: >-
+    Wie wird das allgemeine Persönlichkeitsrecht als sonstiges Recht im Sinne des
+    § 823 Abs. 1 BGB geschützt?
+  back: >-
+    Das allgemeine Persönlichkeitsrecht ist als sonstiges Recht anerkannt; es leitet
+    sich aus Art. 1 Abs. 1 und Art. 2 Abs. 1 GG ab und schützt die Würde und die freie
+    Entfaltung der Persönlichkeit (u. a. Ehre, Privatsphäre, Recht am eigenen Bild,
+    informationelle Selbstbestimmung). Es ist ein offener Rahmenbestandteil: Die Rechtswidrigkeit
+    wird nicht durch den Eingriff indiziert, sondern durch eine umfassende Güter-
+    und Interessenabwägung im Einzelfall festgestellt, namentlich gegen Meinungs-
+    und Pressefreiheit (Art. 5 GG). Rechtsfolgen: Unterlassung und Beseitigung (§
+    1004 BGB analog), Gegendarstellung, Widerruf und Schadensersatz. Eine Geldentschädigung
+    wegen immaterieller Schäden kommt nur bei schwerwiegender Verletzung in Betracht,
+    wenn die Beeinträchtigung nicht anders auszugleichen ist.
+  norms:
+  - § 823 Abs. 1 BGB
+  - § 1004 BGB
+  - Art. 1 Abs. 1 GG
+  - Art. 2 Abs. 1 GG
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-d823v-apr-geldentschaedigung
+  type: rechtsprechung
+  front: >-
+    Worauf stützt sich die Geldentschädigung bei Persönlichkeitsrechtsverletzungen,
+    und was entschied der BGH im Fall Caroline?
+  back: >-
+    Der Anspruch auf Geldentschädigung wegen schwerer Persönlichkeitsverletzung ist
+    keine Schmerzensgeldforderung nach § 253 Abs. 2 BGB, denn das Persönlichkeitsrecht
+    ist dort nicht aufgezählt. Er beruht auf dem verfassungsrechtlichen Schutzauftrag
+    aus Art. 1 und Art. 2 Abs. 1 GG, wird aber im Rahmen des § 823 Abs. 1 BGB geltend
+    gemacht. Voraussetzung ist ein schwerer Eingriff, der sich nicht auf andere Weise
+    befriedigend ausgleichen lässt (Subsidiarität); die Entschädigung hat Genugtuungs-
+    und Präventionsfunktion. Der BGH hat dies in der Entscheidung zu erfundenen Interviews
+    mit Caroline von Monaco bestätigt und die Prävention als Bemessungsfaktor anerkannt
+    (BGHZ 128, 1; bereits zuvor BGHZ 26, 349 Herrenreiter).
+  norms:
+  - § 823 Abs. 1 BGB
+  - § 253 Abs. 2 BGB
+  - Art. 2 Abs. 1 GG
+  quellen:
+  - BGHZ 128, 1 (Caroline)
+  - BGHZ 26, 349 (Herrenreiter)
+  stand: 2026-10
+- slug: zr-d823v-gewerbebetrieb
+  type: streitstand
+  front: >-
+    Wann ist das Recht am eingerichteten und ausgeübten Gewerbebetrieb verletzt, und
+    warum ist es nur ein Auffangtatbestand?
+  back: >-
+    Das von der Rechtsprechung entwickelte Recht am eingerichteten und ausgeübten
+    Gewerbebetrieb schützt den Betrieb in seinem Bestand und seinen Erscheinungsformen
+    gegen unmittelbare Eingriffe. Weil § 823 Abs. 1 BGB das Vermögen als solches gerade
+    nicht schützt, darf der Auffangtatbestand nicht zu einem allgemeinen Vermögensschutz
+    ausufern; er ist daher subsidiär: Es greift nur, wenn kein speziellerer Schutz
+    (etwa § 823 Abs. 1 wegen Eigentums, UWG, Kartellrecht) besteht. Erforderlich ist
+    ein betriebsbezogener Eingriff, der gegen den Betrieb als solchen gerichtet ist
+    und nicht bloß zufällig Betriebsangehörige oder Betriebsmittel trifft. Die Rechtswidrigkeit
+    ist nicht indiziert, sondern durch Güterabwägung zu bestimmen. Stromkabelfall:
+    Bloße Betriebsstörung durch Stromunterbrechung genügt nicht (BGHZ 29, 65).
+  norms:
+  - § 823 Abs. 1 BGB
+  quellen:
+  - BGHZ 29, 65 (Stromkabel)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-d823v-schockschaden
+  type: streitstand
+  front: >-
+    Unter welchen Voraussetzungen ist ein Schockschaden als Gesundheitsverletzung
+    nach § 823 Abs. 1 BGB ersatzfähig?
+  back: >-
+    Seelische Erschütterungen sind eine Gesundheitsverletzung, wenn sie medizinisch
+    fassbar sind und über das hinausgehen, was nach allgemeiner Lebenserfahrung bei
+    vergleichbaren Anlässen ohne pathologischen Befund hinzunehmen ist (Krankheitswert;
+    Rechtsprechung). Bei Schockschäden Dritter, die die Verletzung oder den Tod eines
+    nahen Angehörigen erfahren, sind außerdem erforderlich: eine enge persönliche
+    Beziehung und ein Anlass, der auch für einen gesunden Menschen verständlich ist
+    (Zurechnungsbegrenzung, sonst wäre jede Trauer ersatzfähig). Das Hinterbliebenengeld
+    nach § 844 Abs. 3 BGB ersetzt keine Gesundheitsverletzung, sondern schützt das
+    seelische Leid bei Tötung, auch ohne pathologischen Befund. Grundlegend: BGHZ
+    56, 163 (Schockschaden).
+  norms:
+  - § 823 Abs. 1 BGB
+  - § 844 Abs. 3 BGB
+  - § 253 Abs. 2 BGB
+  quellen:
+  - BGHZ 56, 163 (Schockschaden)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-d823v-832-aufsichtspflicht
+  type: norm
+  front: >-
+    Unter welchen Voraussetzungen haftet der Aufsichtspflichtige nach § 832 BGB?
+  back: >-
+    Wer kraft Gesetzes (Eltern, Vormund) oder durch Vertrag (Kindergarten, Schule,
+    Babysitter) zur Aufsicht über eine Person verpflichtet ist, die wegen Minderjährigkeit
+    oder geistigen bzw. körperlichen Zustands der Beaufsichtigung bedarf, haftet für
+    den Schaden, den diese einem Dritten widerrechtlich zufügt (§ 832 Abs. 1 S. 1
+    BGB). Erforderlich ist eine objektiv rechtswidrige Handlung des Aufsichtsbedürftigen;
+    sein Verschulden ist nicht nötig. Die Verletzung der Aufsichtspflicht wird vermutet;
+    der Aufsichtspflichtige kann sich entlasten, wenn er seiner Pflicht genügt hat
+    oder der Schaden auch bei gehöriger Aufsicht entstanden wäre (§ 832 Abs. 1 S.
+    2). Der Umfang richtet sich nach Alter, Eigenart und Charakter des Kindes, der
+    Vorhersehbarkeit des Schadens und der Zumutbarkeit. Vertragliche Übernahme: §
+    832 Abs. 2 BGB.
+  norms:
+  - § 832 Abs. 1 BGB
+  - § 832 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-d823v-836-gebaeude
+  type: norm
+  front: Wann haftet der Gebäudebesitzer nach § 836 BGB?
+  back: >-
+    Wird durch den Einsturz eines mit einem Grundstück verbundenen Gebäudes oder eines
+    anderen Werkes oder durch die Ablösung von Teilen des Gebäudes oder Werkes ein
+    Mensch getötet, verletzt oder eine Sache beschädigt, ist der Besitzer des Grundstücks
+    zum Ersatz verpflichtet, wenn der Einsturz oder die Ablösung die Folge fehlerhafter
+    Errichtung oder mangelhafter Unterhaltung ist (§ 836 Abs. 1 S. 1 BGB). Das Verschulden
+    wird vermutet; der Besitzer kann sich entlasten, wenn er zur Abwendung der Gefahr
+    die im Verkehr erforderliche Sorgfalt beobachtet hat (§ 836 Abs. 1 S. 2). Der
+    frühere Besitzer haftet bei Besitzwechsel noch ein Jahr (§ 836 Abs. 2). Daneben
+    haftet nach § 837 BGB, wer das Gebäude in Ausübung eines Rechts besitzt (z. B.
+    Nießbraucher), und nach § 838 BGB der zur Unterhaltung Verpflichtete.
+  norms:
+  - § 836 Abs. 1 BGB
+  - § 836 Abs. 2 BGB
+  - § 837 BGB
+  - § 838 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-d823v-842-846-umfang
+  type: norm
+  front: >-
+    Welche besonderen Schadensposten regeln die §§ 842 bis 846 BGB bei Personenschäden?
+  back: >-
+    Bei Verletzung des Körpers oder der Gesundheit umfasst der Schadensersatz auch
+    Nachteile für Erwerb und Fortkommen (§ 842 BGB). Wird infolge der Verletzung die
+    Erwerbsfähigkeit aufgehoben oder gemindert oder tritt eine Vermehrung der Bedürfnisse
+    ein, ist dem Verletzten eine Geldrente zu zahlen (§ 843 Abs. 1 BGB); sie ist vierteljährlich
+    im Voraus zu entrichten (§ 843 Abs. 2 BGB i. V. m. § 760), eine Kapitalabfindung
+    kommt bei wichtigem Grund in Betracht (§ 843 Abs. 3). Bei Tötung sind Beerdigungskosten
+    (§ 844 Abs. 1), Unterhaltsschaden (§ 844 Abs. 2) und Hinterbliebenengeld (§ 844
+    Abs. 3) zu ersetzen; § 845 BGB gibt Ersatz für entgehende Dienste. Das Mitverschulden
+    des Verletzten wirkt auch gegenüber den Ansprüchen Dritter (§ 846 BGB). § 847
+    BGB a. F. wurde 2002 durch § 253 Abs. 2 BGB ersetzt.
+  norms:
+  - § 842 BGB
+  - § 843 BGB
+  - § 844 BGB
+  - § 845 BGB
+  - § 846 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-d823v-253-abs2-schmerzensgeld
+  type: norm
+  front: >-
+    Unter welchen Voraussetzungen kann nach § 253 Abs. 2 BGB Schmerzensgeld verlangt
+    werden?
+  back: >-
+    Wegen eines Schadens, der nicht Vermögensschaden ist, kann eine billige Entschädigung
+    in Geld gefordert werden, wenn Schadensersatz wegen der Verletzung des Körpers,
+    der Gesundheit, der Freiheit oder der sexuellen Selbstbestimmung zu leisten ist
+    (§ 253 Abs. 2 BGB). Die Vorschrift ist keine eigene Anspruchsgrundlage, sondern
+    erweitert den Ersatzumfang eines bestehenden Schadensersatzanspruchs aus Vertrag,
+    Delikt oder Gefährdungshaftung (z. B. § 11 S. 2 StVG, § 8 S. 2 ProdHaftG). Eigentum
+    und Vermögen sind nicht erfasst. Das Schmerzensgeld hat Ausgleichs- und Genugtuungsfunktion;
+    die Höhe richtet sich nach Art und Schwere der Verletzung, Dauer der Beeinträchtigung,
+    Verschulden und den Verhältnissen der Parteien (Billigkeit).
+  norms:
+  - § 253 Abs. 2 BGB
+  - § 11 StVG
+  - § 8 ProdHaftG
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: zr-schema-d823v-verkehrspflicht
+  title: >-
+    § 823 Abs. 1 BGB bei Verkehrspflichtverletzung (mittelbare Verletzung/Unterlassen)
+  norms:
+  - § 823 Abs. 1 BGB
+  - § 276 BGB
+  - § 249 BGB
+  - § 253 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: >-
+        1. Verletztes Rechtsgut: Leben, Körper, Gesundheit, Freiheit, Eigentum oder
+        sonstiges Recht
+    - label: 2. Verletzungshandlung durch Tun oder Unterlassen
+      hinweis: 'Bei Unterlassen: Pflicht zum Handeln, regelmäßig aus Verkehrspflicht.'
+    - label: >-
+        3. Haftungsbegründende Kausalität (Äquivalenz und Adäquanz, Schutzzweck)
+  - label: II. Rechtswidrigkeit
+    hinweis: >-
+      Bei mittelbarer Verletzung und Unterlassen nur bei Verletzung einer Verkehrspflicht;
+      Gefahrenquelle, Erkennbarkeit, Zumutbarkeit prüfen. Beim Persönlichkeitsrecht
+      und Gewerbebetrieb: Güter- und Interessenabwägung.
+  - label: III. Verschulden, § 276 BGB
+    hinweis: Vorsatz oder Fahrlässigkeit (Voraussehbarkeit und Vermeidbarkeit).
+  - label: IV. Schaden und haftungsausfüllende Kausalität
+    children:
+    - label: 1. Materielle Schäden, §§ 249 ff., 842 ff. BGB
+    - label: 2. Schmerzensgeld, § 253 Abs. 2 BGB
+  - label: V. Mitverschulden, § 254 BGB
+faelle:
+- slug: zr-fall-d823v-winterdienst
+  title: Glatteis vor dem Haus
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Die Stadt hat die Räum- und Streupflicht für den Gehweg vor dem Haus des Eigentümers
+    E durch Satzung auf die Anlieger übertragen; Werktags muss ab 7 Uhr geräumt und
+    gestreut sein. E beauftragt den selbständigen Winterdienstunternehmer D schriftlich
+    mit dem Winterdienst. E hat D sorgfältig ausgewählt, ihn seit Jahren als zuverlässig
+    kennengelernt und kontrolliert stichprobenartig. Am Morgen eines Werktags streut
+    D wegen eines Fahrzeugdefekts nicht, obwohl Glatteis angekündigt war und er ein
+    anderes Fahrzeug oder Handarbeit hätte einsetzen können. Passant P, der festes
+    Schuhwerk trägt, stürzt um 7:30 Uhr auf dem ungestreuten Gehweg und bricht sich
+    das Handgelenk. P verlangt von E und D Ersatz seiner Heilbehandlungs- und Verdienstausfallkosten
+    sowie Schmerzensgeld.
+  question: Welche Ansprüche hat P gegen D und gegen E?
+  steps:
+  - prompt: >-
+      Welche Anspruchsgrundlage kommt gegen D in Betracht, und liegt eine Verkehrspflicht
+      vor?
+    erwartung: >-
+      § 823 Abs. 1 BGB. D hat die Winterdienstpflicht rechtsgeschäftlich übernommen
+      und ist deshalb selbst Verkehrssicherungspflichtiger; er hat die Streupflicht
+      verletzt, die ab 7 Uhr bestand und zumutbar war.
+  - prompt: Sind Verletzung, Kausalität und Verschulden gegeben?
+    erwartung: >-
+      Körper- und Gesundheitsverletzung (Handgelenkbruch) durch Unterlassen; die unterlassene
+      Streuung ist ursächlich. D handelte fahrlässig, da er das Glatteis kannte und
+      das Streuen mit zumutbaren Mitteln hätte sichern können (§ 276 Abs. 2 BGB).
+  - prompt: Welche Schadensposten kann P ersetzt verlangen?
+    erwartung: >-
+      Heilbehandlungskosten und Verdienstausfall (§§ 249, 252, 842 BGB) sowie Schmerzensgeld
+      nach § 253 Abs. 2 BGB. Ein Mitverschulden nach § 254 BGB liegt nicht vor, P
+      trug festes Schuhwerk.
+  - prompt: Haftet E nach § 823 Abs. 1 BGB?
+    erwartung: >-
+      E bleibt als Anlieger Träger der Pflicht, hat sie aber auf D übertragen. Es
+      bleiben nur Auswahl- und Überwachungspflichten, die E durch sorgfältige Auswahl
+      und stichprobenartige Kontrolle erfüllt hat; eine eigene Pflichtverletzung liegt
+      nicht vor.
+  - prompt: Kommt eine Haftung des E nach § 831 BGB in Betracht?
+    erwartung: >-
+      Nein. D ist selbständiger Unternehmer und nicht weisungsabhängiger Verrichtungsgehilfe;
+      zudem könnte sich E nach § 831 Abs. 1 S. 2 BGB durch sorgfältige Auswahl und
+      Überwachung entlasten.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Verkehrssicherungspflicht des D aus übernommenem Winterdienst und deren Verletzung
+      weight: 3.0
+      required: true
+      norms:
+      - § 823 Abs. 1 BGB
+      keywords:
+      - Verkehrssicherungspflicht
+      - Verkehrspflicht
+      - Streupflicht
+      - Unterlassen
+      - Räum- und Streupflicht übernommen
+      card_slugs:
+      - zr-d823v-verkehrssicherungspflicht
+      - zr-d823v-mittelbare-verletzung
+    - id: p2
+      label: >-
+        Rechtsgutsverletzung Körper/Gesundheit, Kausalität und Fahrlässigkeit des
+        D
+      weight: 2.0
+      required: true
+      norms:
+      - § 823 Abs. 1 BGB
+      - § 276 Abs. 2 BGB
+      keywords:
+      - Körperverletzung
+      - Gesundheitsverletzung
+      - fahrlässig
+      - § 276 Abs. 2 BGB
+      - Kausalität
+      card_slugs:
+      - zr-d823v-verkehrssicherungspflicht
+    - id: p3
+      label: >-
+        Schadensposten: Heilbehandlung, Verdienstausfall, Schmerzensgeld, kein Mitverschulden
+      weight: 1.5
+      required: false
+      norms:
+      - § 253 Abs. 2 BGB
+      - § 842 BGB
+      keywords:
+      - Schmerzensgeld
+      - § 253 Abs. 2 BGB
+      - Verdienstausfall
+      - § 842 BGB
+      - kein Mitverschulden
+      card_slugs:
+      - zr-d823v-253-abs2-schmerzensgeld
+      - zr-d823v-842-846-umfang
+    - id: p4
+      label: >-
+        Keine eigene Haftung des E: nur Auswahl- und Überwachungspflicht erfüllt
+      weight: 2.0
+      required: true
+      norms:
+      - § 823 Abs. 1 BGB
+      keywords:
+      - Auswahl- und Überwachungspflicht
+      - Überwachungspflicht
+      - sorgfältig ausgewählt
+      - Übertragung der Verkehrssicherungspflicht
+      - Delegation
+      card_slugs:
+      - zr-d823v-verkehrssicherungspflicht
+    - id: p5
+      label: '§ 831 BGB gegen E: D kein Verrichtungsgehilfe, hilfsweise Exkulpation'
+      weight: 1.5
+      required: false
+      norms:
+      - § 831 Abs. 1 BGB
+      keywords:
+      - § 831
+      - Verrichtungsgehilfe
+      - selbständiger Unternehmer
+      - Exkulpation
+      - Weisungsabhängigkeit
+  stand: 2026-10

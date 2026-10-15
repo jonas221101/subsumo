@@ -1,0 +1,448 @@
+topic:
+  slug: zr-sr-immobiliarsachenrecht
+  area: zivilrecht
+  title: 'Immobiliarsachenrecht: Auflassung, Grundbuch, § 892, Vormerkung, § 894'
+  parent: zr-sachenrecht-eigentumsherausgabe-985
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-immo-873-925-erwerb
+  type: norm
+  front: >-
+    Welche Voraussetzungen hat der rechtsgeschäftliche Erwerb von Grundstückseigentum
+    nach §§ 873, 925 BGB?
+  back: >-
+    Zur Übertragung des Eigentums an einem Grundstück sind die Einigung des Berechtigten
+    und des Erwerbers über den Eigentumsübergang (Auflassung) und die Eintragung der
+    Rechtsänderung in das Grundbuch erforderlich (§ 873 Abs. 1 BGB). Die Auflassung
+    muss bei gleichzeitiger Anwesenheit beider Teile vor einer zuständigen Stelle
+    erklärt werden, in der Praxis vor dem Notar (§ 925 Abs. 1 BGB), und kann nicht
+    unter einer Bedingung oder Zeitbestimmung erfolgen (§ 925 Abs. 2 BGB). Der Grundstückskaufvertrag
+    bedarf der notariellen Beurkundung (§ 311b Abs. 1 S. 1 BGB); der Formmangel wird
+    durch Auflassung und Eintragung geheilt (§ 311b Abs. 1 S. 2). Die Einigung ist
+    nach § 873 Abs. 2 BGB bindend, sobald sie notariell beurkundet oder vor dem Grundbuchamt
+    erklärt oder dort eingereicht ist oder der Berechtigte dem anderen Teil die Eintragungsbewilligung
+    ausgehändigt hat. Formalrechtlich setzt die Eintragung Bewilligung (§ 19 GBO)
+    und Antrag (§ 13 GBO) voraus.
+  norms:
+  - § 873 Abs. 1 BGB
+  - § 925 BGB
+  - § 311b Abs. 1 BGB
+  - § 19 GBO
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-immo-grundbuch-funktion
+  type: definition
+  front: Wie ist das Grundbuch aufgebaut, und welche Funktionen hat es?
+  back: >-
+    Das Grundbuch ist das öffentliche Register für Rechtsverhältnisse an Grundstücken.
+    Es besteht aus dem Bestandsverzeichnis (Grundstück), Abteilung I (Eigentümer),
+    Abteilung II (Lasten und Beschränkungen außer Grundpfandrechten, z. B. Dienstbarkeiten,
+    Vorkaufsrechte, Vormerkungen, Widersprüche) und Abteilung III (Grundpfandrechte).
+    Es gilt der Eintragungsgrundsatz: Rechtsänderungen an Grundstücken treten rechtsgeschäftlich
+    erst mit der Eintragung ein (§ 873 BGB). Das Grundbuch dient der Rechtsklarheit
+    und dem Verkehrsschutz: Es begründet die Vermutung der Richtigkeit (§ 891 BGB)
+    und genießt öffentlichen Glauben (§ 892 BGB). Verfahrensrechtlich gelten Antragsgrundsatz
+    (§ 13 GBO), Bewilligungsgrundsatz (§ 19 GBO) und Voreintragungsgrundsatz (§ 39
+    GBO). Der Rang der Rechte ergibt sich aus der Reihenfolge der Eintragung (§ 879
+    BGB).
+  norms:
+  - § 891 BGB
+  - § 892 BGB
+  - § 873 BGB
+  - § 879 BGB
+  - § 19 GBO
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-immo-892-voraussetzungen
+  type: norm
+  front: >-
+    Welche Voraussetzungen hat der gutgläubige Erwerb nach § 892 Abs. 1 BGB?
+  back: >-
+    Zugunsten desjenigen, der ein Recht an einem Grundstück oder ein Recht an einem
+    solchen Recht durch Rechtsgeschäft erwirbt, gilt der Inhalt des Grundbuchs als
+    richtig (§ 892 Abs. 1 S. 1 BGB). Erforderlich sind: (1) ein Verkehrsgeschäft,
+    also ein rechtsgeschäftlicher Erwerb durch einen vom Veräußerer verschiedenen
+    Erwerber (kein Erwerb kraft Gesetzes oder Erbfalls, keine wirtschaftliche Identität
+    der Beteiligten), (2) ein unrichtiges Grundbuch, (3) eine Eintragung als Rechtsscheinträger
+    für den Veräußerer oder das Recht, (4) fehlende Kenntnis des Erwerbers von der
+    Unrichtigkeit (nur positive Kenntnis schadet, nicht Fahrlässigkeit) und (5) kein
+    eingetragener Widerspruch. Für die Kenntnis kommt es auf die Vollendung des Rechtserwerbs
+    an; ist zur Entstehung des Rechts die Eintragung erforderlich, ist nach § 892
+    Abs. 2 BGB der Zeitpunkt der Antragstellung maßgebend, bei späterer Einigung der
+    Zeitpunkt der Einigung.
+  norms:
+  - § 892 Abs. 1 BGB
+  - § 892 Abs. 2 BGB
+  - § 891 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-immo-892-reichweite
+  type: streitstand
+  front: Was schützt § 892 BGB nicht?
+  back: >-
+    Der öffentliche Glaube des Grundbuchs schützt nur das Vertrauen in die Richtigkeit
+    der Eintragung hinsichtlich Bestand und Inhalt dinglicher Rechte (Eigentum, Belastungen,
+    Verfügungsbeschränkungen). Er ersetzt nicht fehlende Wirksamkeitsvoraussetzungen
+    des Verfügungsgeschäfts selbst, etwa die Geschäftsunfähigkeit oder fehlende Vertretungsmacht
+    des Verfügenden bei der Auflassung, den Dissens oder die Anfechtung des Erwerbsgeschäfts.
+    Ebenso schützt er nicht, wenn das Grundbuch in tatsächlichen Angaben (Grenzen,
+    Größe des Grundstücks) unzutreffend ist. Verfügungsbeschränkungen sind nur geschützt,
+    soweit sie eintragungsfähig sind und nicht eingetragen wurden (§ 892 Abs. 1 S.
+    2 BGB). Der wahre Berechtigte kann sich durch Eintragung eines Widerspruchs (§
+    899 BGB) schützen.
+  norms:
+  - § 892 Abs. 1 BGB
+  - § 899 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-immo-vormerkung-883
+  type: definition
+  front: Was ist eine Vormerkung, und welche Wirkung hat sie nach § 883 BGB?
+  back: >-
+    Die Vormerkung sichert den Anspruch auf Einräumung oder Aufhebung eines Rechts
+    an einem Grundstück oder auf Änderung des Inhalts oder Rangs eines solchen Rechts
+    (§ 883 Abs. 1 S. 1 BGB), typischerweise den Anspruch des Käufers auf Übereignung.
+    Sie kann auch für künftige oder bedingte Ansprüche eingetragen werden (§ 883 Abs.
+    1 S. 2). Sie entsteht durch Bewilligung des Betroffenen und Eintragung (§ 885
+    BGB). Wirkung: Eine nach der Eintragung vorgenommene Verfügung ist insoweit unwirksam,
+    als sie den gesicherten Anspruch vereiteln oder beeinträchtigen würde (§ 883 Abs.
+    2 BGB, relative Unwirksamkeit); der Anspruchsberechtigte kann von dem Dritten
+    Zustimmung zur Eintragung oder Löschung verlangen (§ 888 BGB). Der Rang richtet
+    sich nach der Vormerkung (§ 883 Abs. 3). In der Insolvenz des Verpflichteten ist
+    die Vormerkung geschützt (§ 106 InsO).
+  norms:
+  - § 883 BGB
+  - § 885 BGB
+  - § 888 BGB
+  - § 106 InsO
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-immo-vormerkung-akzessorietaet
+  type: definition
+  front: Was bedeutet die Akzessorietät der Vormerkung?
+  back: >-
+    Die Vormerkung ist akzessorisch zu dem gesicherten schuldrechtlichen Anspruch:
+    Sie setzt dessen wirksames Bestehen voraus, bleibt von ihm abhängig und geht mit
+    ihm über. Fehlt der Anspruch, entsteht die Vormerkung nicht; erlischt er später
+    (z. B. durch Rücktritt oder wirksame Anfechtung des Kaufvertrags), wird das Grundbuch
+    unrichtig und der Eigentümer kann Berichtigung verlangen (§ 894 BGB). Bei Abtretung
+    des gesicherten Anspruchs geht die Vormerkung entsprechend § 401 BGB auf den neuen
+    Gläubiger über, ohne Eintragung. Die Vormerkung ist kein dingliches Recht, sondern
+    ein Sicherungsmittel eigener Art, das den Anspruch auf Rechtsänderung schützt.
+    Steht dem Eigentümer eine dauernde Einrede gegen den gesicherten Anspruch zu,
+    kann er die Beseitigung der Vormerkung verlangen (§ 886 BGB).
+  norms:
+  - § 883 BGB
+  - § 401 BGB
+  - § 886 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-immo-vormerkung-gutglaeubig
+  type: streitstand
+  front: Kann eine Vormerkung gutgläubig erworben werden?
+  back: >-
+    Bewilligt ein Nichtberechtigter, der im Grundbuch als Eigentümer eingetragen ist,
+    eine Vormerkung zur Sicherung eines wirksamen Anspruchs des Käufers, kann der
+    Käufer die Vormerkung nach h. M. gutgläubig erwerben (gutgläubiger Ersterwerb),
+    denn die Vormerkung stützt sich auf den Rechtsschein des Grundbuchs; die Redlichkeit
+    richtet sich nach § 892 BGB entsprechend (h. M. wendet § 893 Alt. 2 BGB analog
+    an). Voraussetzung ist, dass der gesicherte Anspruch wirksam besteht; nur die
+    Berechtigung des Bewilligenden fehlt. Ein gutgläubiger Zweiterwerb, bei dem der
+    Anspruch überhaupt nicht besteht und die Vormerkung deshalb nicht entstanden ist,
+    ist wegen der Akzessorietät ausgeschlossen: Der gute Glaube ersetzt nicht den
+    fehlenden Anspruch. Kenntnis zum Zeitpunkt der Eintragung der Vormerkung schadet;
+    später erlangte Kenntnis schadet nicht, wenn die Vormerkung bereits gutgläubig
+    erworben wurde.
+  norms:
+  - § 883 BGB
+  - § 892 BGB
+  - § 893 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-immo-894-berichtigung
+  type: norm
+  front: >-
+    Wie kann der wahre Berechtigte nach §§ 894, 899 BGB eine Grundbuchberichtigung
+    erreichen?
+  back: >-
+    Steht der Inhalt des Grundbuchs in Ansehung eines Rechts an dem Grundstück nicht
+    mit der wirklichen Rechtslage im Einklang, kann derjenige, dessen Recht nicht
+    oder nicht richtig eingetragen ist, von dem, dessen Recht durch die Berichtigung
+    betroffen wird, die Zustimmung zur Berichtigung verlangen (§ 894 BGB). Der Anspruch
+    ist ein dinglicher Anspruch und unverjährbar (§ 898 BGB). Verfahrensrechtlich
+    genügt Berichtigungsbewilligung (§ 19 GBO) oder Nachweis der Unrichtigkeit (§
+    22 GBO). Zur Verhinderung gutgläubigen Erwerbs kann ein Widerspruch gegen die
+    Richtigkeit des Grundbuchs eingetragen werden (§ 899 BGB), und zwar auf Bewilligung
+    oder aufgrund einstweiliger Verfügung (§ 899 Abs. 2 BGB). Der Widerspruch zerstört
+    den öffentlichen Glauben (§ 892 Abs. 1 S. 1 BGB), solange er eingetragen ist.
+  norms:
+  - § 894 BGB
+  - § 898 BGB
+  - § 899 BGB
+  - § 22 GBO
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-immo-rang-879
+  type: norm
+  front: Wie bestimmt sich der Rang von Grundstücksrechten nach § 879 BGB?
+  back: >-
+    Das Rangverhältnis mehrerer Rechte an einem Grundstück richtet sich, wenn die
+    Rechte in derselben Abteilung des Grundbuchs eingetragen sind, nach der Reihenfolge
+    der Eintragung (§ 879 Abs. 1 S. 1 BGB). Sind sie in verschiedenen Abteilungen
+    eingetragen, hat das Recht den Vorrang, das unter Angabe eines früheren Tages
+    eingetragen ist; bei gleichem Datum sind sie gleichrangig (§ 879 Abs. 1 S. 2).
+    Der Rang hat Bedeutung für die Befriedigung in der Zwangsversteigerung (§ 10 ZVG):
+    Das ranghöhere Recht wird zuerst befriedigt, nachrangige Rechte können erlöschen.
+    Der Rang kann durch Rangänderung nach § 880 BGB und durch Rangvorbehalt (§ 881)
+    verändert werden. Eine Vormerkung hat den Rang des gesicherten Rechts (§ 883 Abs.
+    3 BGB).
+  norms:
+  - § 879 BGB
+  - § 880 BGB
+  - § 883 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-immo-belastungen-ueberblick
+  type: definition
+  front: Welche beschränkten dinglichen Rechte am Grundstück sind zu kennen?
+  back: >-
+    Zu unterscheiden sind Nutzungsrechte (Grunddienstbarkeit, § 1018 BGB, zugunsten
+    des jeweiligen Eigentümers eines anderen Grundstücks; beschränkte persönliche
+    Dienstbarkeit, § 1090 BGB, zugunsten einer bestimmten Person; Nießbrauch, § 1030
+    BGB; Erbbaurecht nach dem ErbbauRG), Erwerbsrechte (dingliches Vorkaufsrecht,
+    § 1094 BGB) und Verwertungsrechte (Hypothek, Grundschuld, Rentenschuld, Reallast).
+    Alle entstehen durch Einigung und Eintragung (§ 873 BGB). Die Rechte sind in Abteilung
+    II oder III einzutragen und belasten das Grundstück gegenüber jedem Eigentümer
+    (Dinglichkeit). Beim Erwerb sind sie nach § 892 BGB zu beachten: Eingetragene
+    Rechte werden vom gutgläubigen Erwerber übernommen, nicht eingetragene fallen
+    außer bei Kenntnis weg.
+  norms:
+  - § 1018 BGB
+  - § 1090 BGB
+  - § 1030 BGB
+  - § 1094 BGB
+  - § 873 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: zr-schema-immo-eigentumserwerb
+  title: >-
+    Rechtsgeschäftlicher Eigentumserwerb am Grundstück, §§ 873, 925, 892 BGB
+  norms:
+  - § 873 BGB
+  - § 925 BGB
+  - § 892 BGB
+  - § 894 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Einigung (Auflassung), §§ 873 Abs. 1, 925 BGB
+    hinweis: >-
+      Gleichzeitige Anwesenheit vor dem Notar, bedingungsfeindlich; Wirksamkeit der
+      Willenserklärungen prüfen.
+  - label: II. Eintragung im Grundbuch
+    children:
+    - label: 1. Antrag und Bewilligung, §§ 13, 19 GBO
+    - label: 2. Eintragung des Erwerbers in Abteilung I
+  - label: III. Einigsein im Zeitpunkt der Eintragung
+    hinweis: Bindung nach § 873 Abs. 2 BGB; Widerruf bis dahin möglich.
+  - label: IV. Berechtigung des Veräußerers
+    children:
+    - label: 1. Eintragung als Eigentümer und wirkliche Berechtigung
+    - label: '2. Hilfsweise: Gutgläubiger Erwerb nach § 892 BGB'
+      hinweis: >-
+        Verkehrsgeschäft, Unrichtigkeit, Rechtsscheinträger, keine Kenntnis, kein
+        Widerspruch.
+    - label: 3. Beachte § 892 Abs. 2 BGB (Zeitpunkt der Kenntnis)
+  - label: V. Rechtsfolge
+    hinweis: >-
+      Erwerb des Eigentums; Grundbuchberichtigungsanspruch des wahren Eigentümers
+      entfällt, ggf. § 816 Abs. 1 BGB gegen den Veräußerer.
+- slug: zr-schema-immo-vormerkung
+  title: Vormerkung und Anspruch aus § 888 BGB
+  norms:
+  - § 883 BGB
+  - § 885 BGB
+  - § 888 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Gesicherter Anspruch auf Rechtsänderung, § 883 Abs. 1 BGB
+    hinweis: 'Akzessorietät: Wirksamer Anspruch erforderlich.'
+  - label: II. Bewilligung des Betroffenen und Eintragung, § 885 BGB
+    hinweis: 'Bei Nichtberechtigtem: gutgläubiger Ersterwerb, § 893 BGB analog.'
+  - label: III. Beeinträchtigende Verfügung nach Eintragung
+    children:
+    - label: 1. Spätere Verfügung, die den Anspruch vereitelt oder beeinträchtigt
+    - label: 2. Relative Unwirksamkeit, § 883 Abs. 2 BGB
+  - label: IV. Anspruch gegen den Dritten
+    hinweis: Zustimmung zur Eintragung oder Löschung, § 888 BGB.
+  - label: V. Rang
+    hinweis: Rang des Rechts nach der Vormerkung, § 883 Abs. 3 BGB.
+faelle:
+- slug: zr-fall-immo-grundstueck
+  title: Das irrtümlich eingetragene Grundstück
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    B war Eigentümer eines Grundstücks. Im Jahr 2020 übertrug er es durch notarielle
+    Auflassung an A und A wurde eingetragen. Die Auflassung war jedoch nichtig, weil
+    B zum Zeitpunkt geschäftsunfähig war. Am 1. Juni schließt A mit C einen notariellen
+    Kaufvertrag über das Grundstück, am selben Tag wird zugunsten des C auf Bewilligung
+    des A eine Auflassungsvormerkung eingetragen. C kennt die Geschäftsunfähigkeit
+    des B nicht und hat keinen Anlass dazu. Am 10. Juni wird die Auflassung erklärt,
+    am 20. Juni wird C als Eigentümer eingetragen. In der Zwischenzeit, am 15. Juni,
+    hat A zugunsten der Bank G eine Grundschuld bestellt; G wurde am 17. Juni als
+    Gläubigerin eingetragen und kannte die Umstände nicht. Ein Widerspruch zugunsten
+    des B ist erst im Juli eingetragen worden.
+  question: >-
+    Wer ist Eigentümer, und kann C von G Löschung der Grundschuld verlangen?
+  steps:
+  - prompt: Hat C das Eigentum erworben?
+    erwartung: >-
+      Ja. Einigung (Auflassung, §§ 873, 925 BGB) und Eintragung liegen vor. A war
+      nicht Eigentümer, weil die Auflassung des B nichtig war, jedoch erwirbt C nach
+      § 892 Abs. 1 S. 1 BGB gutgläubig: Verkehrsgeschäft, unrichtiges Grundbuch, A
+      als Eigentümer eingetragen, C ohne Kenntnis, kein Widerspruch im Zeitpunkt des
+      Erwerbs.
+  - prompt: Spielt die Geschäftsunfähigkeit des B im Verhältnis A–C eine Rolle?
+    erwartung: >-
+      Nein. § 892 BGB überwindet nur die fehlende Berechtigung des A. Die Wirksamkeit
+      der Auflassung A–C ist nicht berührt; die Nichtigkeit der Auflassung B–A ist
+      Grund der Unrichtigkeit.
+  - prompt: Ist die Vormerkung des C wirksam entstanden?
+    erwartung: >-
+      Ja. Der gesicherte Anspruch auf Übereignung aus dem Kaufvertrag besteht wirksam.
+      A war nicht Berechtigter, aber C hat die Vormerkung gutgläubig erworben (gutgläubiger
+      Ersterwerb, § 893 BGB analog / § 892 BGB).
+  - prompt: Welche Wirkung hat die Vormerkung gegenüber der Grundschuld der G?
+    erwartung: >-
+      Die Grundschuld wurde nach der Vormerkung bestellt und beeinträchtigt den Anspruch
+      des C auf lastenfreien Eigentumserwerb; sie ist ihm gegenüber relativ unwirksam
+      (§ 883 Abs. 2 BGB). C kann von G Zustimmung zur Löschung verlangen (§ 888 Abs.
+      1 BGB).
+  - prompt: Wie steht B zu A?
+    erwartung: >-
+      B kann von A den Erlös aus dem Verkauf nach § 816 Abs. 1 S. 1 BGB herausverlangen,
+      weil A als Nichtberechtigter wirksam verfügt hat. Der Berichtigungsanspruch
+      nach § 894 BGB ist mit dem Erwerb des C untergegangen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Gutgläubiger Eigentumserwerb des C nach §§ 873, 925, 892 Abs. 1 BGB mit allen
+        Merkmalen
+      weight: 3.0
+      required: true
+      norms:
+      - § 892 Abs. 1 BGB
+      - § 873 BGB
+      - § 925 BGB
+      keywords:
+      - gutgläubiger Erwerb
+      - § 892 Abs. 1
+      - Verkehrsgeschäft
+      - öffentlicher Glaube des Grundbuchs
+      - unrichtiges Grundbuch
+      card_slugs:
+      - zr-immo-892-voraussetzungen
+      - zr-immo-873-925-erwerb
+    - id: p2
+      label: >-
+        Unterscheidung: Geschäftsunfähigkeit betrifft das Verhältnis B–A, nicht das
+        Verhältnis A–C
+      weight: 1.5
+      required: false
+      norms:
+      - § 892 BGB
+      keywords:
+      - Geschäftsunfähigkeit
+      - nichtige Auflassung
+      - Berechtigung
+      - Rechtsscheinträger
+      card_slugs:
+      - zr-immo-892-reichweite
+    - id: p3
+      label: >-
+        Vormerkung zugunsten des C: gesicherter Anspruch, Akzessorietät und gutgläubiger
+        Ersterwerb
+      weight: 2.0
+      required: true
+      norms:
+      - § 883 BGB
+      - § 893 BGB
+      keywords:
+      - Vormerkung
+      - Akzessorietät
+      - gutgläubiger Ersterwerb
+      - § 883 Abs. 1
+      - § 893
+      card_slugs:
+      - zr-immo-vormerkung-883
+      - zr-immo-vormerkung-akzessorietaet
+      - zr-immo-vormerkung-gutglaeubig
+    - id: p4
+      label: >-
+        Relative Unwirksamkeit der Grundschuld nach § 883 Abs. 2 BGB und Anspruch
+        aus § 888 BGB
+      weight: 3.0
+      required: true
+      norms:
+      - § 883 Abs. 2 BGB
+      - § 888 BGB
+      keywords:
+      - relative Unwirksamkeit
+      - § 883 Abs. 2
+      - § 888
+      - Zustimmung zur Löschung
+      - beeinträchtigende Verfügung
+      card_slugs:
+      - zr-immo-vormerkung-883
+    - id: p5
+      label: >-
+        Ansprüche des B: § 816 Abs. 1 S. 1 BGB gegen A, kein Berichtigungsanspruch
+        mehr
+      weight: 1.5
+      required: false
+      norms:
+      - § 816 Abs. 1 BGB
+      - § 894 BGB
+      keywords:
+      - § 816 Abs. 1 S. 1
+      - § 894
+      - Grundbuchberichtigung
+      - Erlös
+      - Widerspruch
+      card_slugs:
+      - zr-immo-894-berichtigung
+  stand: 2026-10

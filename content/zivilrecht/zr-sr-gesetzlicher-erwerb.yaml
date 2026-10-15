@@ -1,0 +1,392 @@
+topic:
+  slug: zr-sr-gesetzlicher-erwerb
+  area: zivilrecht
+  title: >-
+    Gesetzlicher Eigentumserwerb: Verbindung, Vermischung, Verarbeitung, Fund, Ersitzung
+  parent: zr-sachenrecht-eigentumsherausgabe-985
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-ger-systematik
+  type: definition
+  front: >-
+    Was kennzeichnet den gesetzlichen Eigentumserwerb, und welche Fälle sind klausurrelevant?
+  back: >-
+    Beim gesetzlichen Eigentumserwerb geht das Eigentum kraft Gesetzes über, ohne
+    dass es auf Einigung und Übergabe (§ 929 BGB) ankommt. Der Eigentümer verliert
+    sein Recht gegen seinen Willen, wenn der Tatbestand erfüllt ist; Gutgläubigkeit
+    des Erwerbers ist keine allgemeine Voraussetzung. Klausurrelevant sind Verbindung
+    mit einem Grundstück (§ 946 BGB), Verbindung beweglicher Sachen (§ 947 BGB), Vermischung
+    (§ 948 BGB), Verarbeitung (§ 950 BGB), der Fund (§§ 965 ff. BGB) und die Ersitzung
+    (§ 937 BGB). Die Rechtsfolge ist in den Fällen der §§ 946 bis 950 BGB ein Ausgleich
+    nach § 951 BGB. Typische Konstellation: Baumaterial wird unter Eigentumsvorbehalt
+    geliefert und eingebaut, oder ein Dritter verarbeitet fremdes Material.
+  norms:
+  - § 946 BGB
+  - § 947 BGB
+  - § 950 BGB
+  - § 951 BGB
+  - § 937 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ger-wesentlicher-bestandteil
+  type: definition
+  front: >-
+    Wann ist eine Sache wesentlicher Bestandteil eines Grundstücks, und was sind Scheinbestandteile?
+  back: >-
+    Bestandteile einer Sache sind solche, die nicht ohne Zerstörung oder Wesensveränderung
+    vom Ganzen getrennt werden können; wesentliche Bestandteile des Grundstücks sind
+    die mit dem Grund und Boden fest verbundenen Sachen, insbesondere Gebäude (§ 94
+    Abs. 1 BGB), sowie die zur Herstellung des Gebäudes eingefügten Sachen (§ 94 Abs.
+    2 BGB). Sie können nicht Gegenstand besonderer Rechte sein (§ 93 BGB). Scheinbestandteile
+    sind nur zu einem vorübergehenden Zweck mit dem Grundstück verbundene Sachen (§
+    95 Abs. 1 S. 1 BGB), zum Beispiel ein vom Mieter errichtetes Gebäude oder eine
+    zum Zweck der Miete eingebaute Einrichtung; sie bleiben sonderrechtsfähig. Entscheidend
+    ist der Wille des Einfügenden zur Zeit der Verbindung. Gebäude, die in Ausübung
+    eines Rechts an einem fremden Grundstück verbunden wurden, gehören dem Berechtigten
+    (§ 95 Abs. 1 S. 2).
+  norms:
+  - § 93 BGB
+  - § 94 BGB
+  - § 95 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ger-946-grundstueck
+  type: norm
+  front: >-
+    Welche Rechtsfolge hat die Verbindung einer beweglichen Sache mit einem Grundstück
+    nach § 946 BGB?
+  back: >-
+    Wird eine bewegliche Sache mit einem Grundstück dergestalt verbunden, dass sie
+    wesentlicher Bestandteil des Grundstücks wird, erstreckt sich das Eigentum an
+    dem Grundstück auf diese Sache (§ 946 BGB). Das gilt unabhängig vom Willen oder
+    der Kenntnis der Beteiligten und selbst dann, wenn die Sache gestohlen oder unter
+    Eigentumsvorbehalt geliefert wurde. Ein vorbehaltenes Eigentum des Lieferanten
+    erlischt mit dem Einbau; auch Rechte Dritter an der Sache gehen unter (§ 949 BGB).
+    Ob das Material wesentlicher Bestandteil wird, bestimmt sich nach §§ 93, 94 BGB;
+    bei Scheinbestandteilen (§ 95 BGB) tritt der Eigentumsübergang nicht ein. Der
+    frühere Eigentümer ist auf den Ausgleichsanspruch nach § 951 BGB beschränkt.
+  norms:
+  - § 946 BGB
+  - § 949 BGB
+  - § 951 BGB
+  - § 94 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ger-947-948-verbindung-vermischung
+  type: norm
+  front: >-
+    Wie wird das Eigentum bei Verbindung beweglicher Sachen und bei Vermischung verteilt
+    (§§ 947, 948 BGB)?
+  back: >-
+    Werden bewegliche Sachen miteinander dergestalt verbunden, dass sie wesentliche
+    Bestandteile einer einheitlichen Sache werden, erwerben die bisherigen Eigentümer
+    Miteigentum an der neuen Sache, und zwar nach dem Verhältnis des Wertes, den die
+    Sachen zur Zeit der Verbindung hatten (§ 947 Abs. 1 BGB). Ist eine der Sachen
+    als Hauptsache anzusehen, erwirbt deren Eigentümer das Alleineigentum (§ 947 Abs.
+    2 BGB); Hauptsache ist, was nach der Verkehrsauffassung für das Ganze prägend
+    ist, nicht allein der höhere Wert. Für die Vermischung vertretbarer Sachen (z.
+    B. Getreide, Geld, Flüssigkeiten), die untrennbar oder nur mit unverhältnismäßigen
+    Kosten trennbar ist, gilt § 947 entsprechend (§ 948 Abs. 1 BGB); der Untrennbarkeit
+    steht es gleich, wenn die Trennung unverhältnismäßige Kosten verursachen würde
+    (§ 948 Abs. 2 BGB). Ausgleich: § 951 BGB.
+  norms:
+  - § 947 Abs. 1 BGB
+  - § 947 Abs. 2 BGB
+  - § 948 BGB
+  - § 951 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ger-949-erloeschen-dritter-rechte
+  type: norm
+  front: >-
+    Was geschieht mit Rechten Dritter an Sachen, die nach den §§ 946 bis 948 BGB Eigentum
+    wechseln?
+  back: >-
+    Erlischt nach den §§ 946 bis 948 BGB das Eigentum an einer Sache, erlöschen auch
+    die sonstigen Rechte an der Sache (§ 949 S. 1 BGB), etwa Pfandrechte oder Sicherungsrechte.
+    Erwirbt der Eigentümer der belasteten Sache Miteigentum, bestehen die Rechte an
+    dem Anteil fort, der an die Stelle der Sache tritt (§ 949 S. 2 BGB). Wird er Alleineigentümer,
+    erstrecken sich die Rechte auf die hinzutretende Sache (§ 949 S. 3 BGB). Dies
+    schützt die Inhaber dinglicher Rechte, solange der Belastete Eigentümer bleibt.
+    Ein Eigentumsvorbehalt oder ein Pfandrecht an eingebautem Material geht dagegen
+    unter, sodass der Gläubiger auf den Ausgleichsanspruch nach § 951 BGB angewiesen
+    ist.
+  norms:
+  - § 949 BGB
+  - § 951 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ger-950-verarbeitung
+  type: norm
+  front: >-
+    Wann erwirbt der Verarbeiter Eigentum an der neuen Sache nach § 950 BGB?
+  back: >-
+    Wer durch Verarbeitung oder Umbildung eines oder mehrerer Stoffe eine neue bewegliche
+    Sache herstellt, erwirbt das Eigentum an der neuen Sache, sofern nicht der Wert
+    der Verarbeitung oder Umbildung erheblich geringer ist als der Wert des Stoffes
+    (§ 950 Abs. 1 S. 1 BGB). Eine neue Sache liegt nach der Verkehrsauffassung vor,
+    wenn sie sich in Art und Funktion vom Ausgangsstoff unterscheidet (z. B. Möbel
+    aus Holz). Maßgeblich ist der Wertvergleich zwischen den Stoffwerten und dem durch
+    die Verarbeitung hinzugekommenen Wert; reines Reparieren oder bloße Veredelung
+    genügt nicht. Mit dem Eigentumserwerb erlöschen die Rechte Dritter an den Stoffen
+    (§ 950 Abs. 2 BGB). Der Verlierer wird nach § 951 BGB entschädigt; das Gesetz
+    sieht keine Wiederherstellung des früheren Zustands vor (§ 951 Abs. 1 S. 2 BGB).
+  norms:
+  - § 950 Abs. 1 BGB
+  - § 950 Abs. 2 BGB
+  - § 951 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ger-hersteller-950
+  type: streitstand
+  front: >-
+    Wer ist Hersteller im Sinne des § 950 BGB, und wie wirken Verarbeitungsklauseln?
+  back: >-
+    Hersteller ist nach h. M. nicht notwendig derjenige, der die Arbeit selbst verrichtet,
+    sondern derjenige, für den nach der Verkehrsanschauung die Verarbeitung erfolgt
+    und der die Herstellung wirtschaftlich organisiert und verantwortet (wirtschaftliche
+    Betrachtung). Bei der Herstellung im Auftrag ist dies in der Regel der Auftraggeber,
+    wenn er das Material stellt, den Verarbeiter überwacht und das wirtschaftliche
+    Risiko trägt. Verarbeitungsklauseln im verlängerten Eigentumsvorbehalt, nach denen
+    der Lieferant als Hersteller gilt, sind nach der Rechtsprechung grundsätzlich
+    möglich; sie wirken als Bestimmung des Herstellerbegriffs und nicht als Vorausabtretung.
+    Die Wirksamkeit solcher Klauseln ist nicht unumstritten: Teile der Literatur sehen
+    darin eine unzulässige Umgehung des § 950 BGB, weil die Herstellereigenschaft
+    vertraglich zugewiesen wird.
+  norms:
+  - § 950 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ger-951-ausgleich
+  type: streitstand
+  front: >-
+    Welche Rechtsnatur hat der Ausgleichsanspruch nach § 951 BGB, und wie steht er
+    zu anderen Ansprüchen?
+  back: >-
+    Wer infolge der §§ 946 bis 950 BGB einen Rechtsverlust erleidet, kann von demjenigen,
+    zu dessen Gunsten die Rechtsänderung eintritt, Vergütung in Geld nach den Vorschriften
+    über die Herausgabe einer ungerechtfertigten Bereicherung verlangen (§ 951 Abs.
+    1 S. 1 BGB). Eine Wiederherstellung des früheren Zustands ist ausgeschlossen (S.
+    2). Nach h. M. ist § 951 BGB eine Rechtsgrundverweisung auf § 812 Abs. 1 S. 1
+    Alt. 2 BGB, sodass die Eingriffskondiktion in vollem Umfang zu prüfen ist, namentlich
+    fehlender Rechtsgrund und Subsidiarität gegenüber Leistungsbeziehungen. Die Gegenauffassung
+    sieht in § 951 BGB eine Rechtsfolgenverweisung. Herauszugeben ist der Wert des
+    verlorenen Rechts, nicht der Wert der neuen Sache. Ansprüche aus unerlaubter Handlung
+    bleiben unberührt (§ 951 Abs. 2 S. 1 BGB).
+  norms:
+  - § 951 Abs. 1 BGB
+  - § 951 Abs. 2 BGB
+  - § 812 Abs. 1 S. 1 Alt. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ger-fund-965
+  type: norm
+  front: Welche Pflichten und Rechte hat der Finder nach §§ 965 ff. BGB?
+  back: >-
+    Wer eine verlorene Sache findet und an sich nimmt, hat dem Verlierer oder Eigentümer
+    unverzüglich Anzeige zu machen (§ 965 Abs. 1 BGB); sind Eigentümer oder Empfangsberechtigter
+    unbekannt, ist die Anzeige bei der zuständigen Behörde (Fundbehörde) zu erstatten,
+    wenn der Wert der Sache über 10 Euro liegt (§ 965 Abs. 2). Der Finder hat die
+    Sache zu verwahren (§ 966 BGB) und haftet nur für Vorsatz und grobe Fahrlässigkeit
+    (§ 968 BGB). Er kann Ersatz seiner Aufwendungen verlangen (§ 970 BGB) und Finderlohn:
+    5 Prozent des Wertes bis 500 Euro, darüber 3 Prozent (§ 971 Abs. 1 BGB). Mit Ablauf
+    eines Jahres nach der Anzeige bei der Behörde erwirbt der Finder das Eigentum,
+    wenn sich der Empfangsberechtigte nicht gemeldet hat (§ 973 Abs. 1 BGB). Der Schatzfund
+    (§ 984 BGB) wird zur Hälfte zwischen Entdecker und Eigentümer geteilt.
+  norms:
+  - § 965 BGB
+  - § 966 BGB
+  - § 971 BGB
+  - § 973 BGB
+  - § 984 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ger-ersitzung-937
+  type: norm
+  front: Welche Voraussetzungen hat die Ersitzung nach § 937 BGB?
+  back: >-
+    Wer eine bewegliche Sache zehn Jahre im Eigenbesitz hat, erwirbt das Eigentum
+    (§ 937 Abs. 1 BGB). Eigenbesitz bedeutet, die Sache wie ein Eigentümer zu besitzen
+    (§ 872 BGB). Die Ersitzung ist ausgeschlossen, wenn der Erwerber bei dem Erwerb
+    des Eigenbesitzes nicht in gutem Glauben ist oder später erfährt, dass ihm das
+    Eigentum nicht zusteht (§ 937 Abs. 2 BGB). Rechte Dritter erlöschen mit der Ersitzung
+    (§ 945 BGB). Die Ersitzungsfrist kann gehemmt oder unterbrochen werden, insbesondere
+    durch Herausgabeklage des Eigentümers (§§ 939, 941 BGB). Bei Grundstücken erwirbt
+    nach § 900 BGB, wer 30 Jahre als Eigentümer eingetragen ist und das Grundstück
+    in Eigenbesitz hatte, das Eigentum (Buchersitzung). Die Ersitzung hat in der Praxis
+    geringe Bedeutung, ist aber wegen der Möglichkeit eines Eigentumserwerbs trotz
+    Abhandenkommens (§ 935 BGB) von Interesse.
+  norms:
+  - § 937 BGB
+  - § 872 BGB
+  - § 945 BGB
+  - § 900 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: zr-schema-ger-verbindung-verarbeitung
+  title: >-
+    Gesetzlicher Eigentumserwerb durch Verbindung, Vermischung und Verarbeitung
+  norms:
+  - § 946 BGB
+  - § 947 BGB
+  - § 948 BGB
+  - § 950 BGB
+  - § 951 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: 'I. Ausgangslage: Eigentum am Material beim Anspruchsteller'
+  - label: II. Verbindung mit einem Grundstück, § 946 BGB
+    children:
+    - label: 1. Verbindung mit dem Grundstück
+    - label: >-
+        2. Wesentlicher Bestandteil (§ 94 BGB), kein Scheinbestandteil (§ 95 BGB)
+  - label: III. Verbindung oder Vermischung beweglicher Sachen, §§ 947, 948 BGB
+    children:
+    - label: 1. Wesentlicher Bestandteil einer einheitlichen Sache
+    - label: 2. Hauptsache? Dann Alleineigentum, sonst Miteigentum nach Wertanteil
+  - label: IV. Verarbeitung, § 950 BGB
+    children:
+    - label: 1. Neue Sache nach der Verkehrsauffassung
+    - label: 2. Hersteller (wirtschaftliche Betrachtung)
+    - label: 3. Wert der Verarbeitung nicht erheblich geringer als Stoffwert
+  - label: V. Erlöschen von Rechten Dritter, §§ 949, 950 Abs. 2 BGB
+  - label: VI. Ausgleich, § 951 BGB
+    hinweis: >-
+      Rechtsgrundverweisung auf § 812 Abs. 1 S. 1 Alt. 2 BGB; Subsidiarität gegenüber
+      Leistungsbeziehungen; Vergütung in Geld.
+faelle:
+- slug: zr-fall-ger-tisch
+  title: Der verwechselte Holzstapel
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Schreiner S baut aus Eichenholz einen Esstisch (Verkaufswert 2.400 Euro). Das
+    Holz (Wert 300 Euro) gehörte nicht ihm, sondern dem Händler E: S hatte in seinem
+    Lager zwei gleich aussehende Stapel verwechselt, ohne die Etiketten zu prüfen.
+    Die Arbeit des S ist handwerklich aufwendig; der Wert der Verarbeitung beträgt
+    1.800 Euro. E verlangt von S den Tisch heraus, hilfsweise Ersatz.
+  question: Wem gehört der Tisch, und welche Ansprüche hat E gegen S?
+  steps:
+  - prompt: Kann E den Tisch nach § 985 BGB herausverlangen?
+    erwartung: >-
+      Nein, wenn E sein Eigentum verloren hat. S ist Hersteller einer neuen Sache
+      und erwirbt das Eigentum an dem Tisch nach § 950 Abs. 1 S. 1 BGB, denn der Wert
+      der Verarbeitung (1.800 Euro) ist nicht erheblich geringer als der Stoffwert
+      (300 Euro).
+  - prompt: Erlöschen Rechte des E am Holz?
+    erwartung: >-
+      Ja, mit dem Eigentumserwerb des S erlischt das Eigentum des E an dem Holz (§
+      950 Abs. 2 BGB).
+  - prompt: Welcher Ausgleichsanspruch besteht?
+    erwartung: >-
+      E hat einen Anspruch aus § 951 Abs. 1 S. 1 BGB i. V. m. § 812 Abs. 1 S. 1 Alt.
+      2 BGB auf Vergütung in Geld in Höhe des Wertes des verlorenen Rechts, also 300
+      Euro. S ist in dieser Höhe bereichert; ein Rechtsgrund besteht nicht, und eine
+      Leistung des E liegt nicht vor. Nicht der Wert des Tisches ist maßgeblich.
+  - prompt: Besteht daneben ein deliktischer Anspruch?
+    erwartung: >-
+      Ja, § 823 Abs. 1 BGB (Eigentumsverletzung durch den Verlust nach § 950 BGB),
+      da S das Holz bei Anwendung der erforderlichen Sorgfalt (Prüfen der Etiketten)
+      nicht verwechselt hätte, § 276 Abs. 2 BGB. § 951 Abs. 2 S. 1 BGB lässt dies
+      unberührt. Der Schaden beträgt ebenfalls 300 Euro (Wiederbeschaffungswert),
+      eine Doppelung findet nicht statt.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Eigentumserwerb des S an dem Tisch nach § 950 Abs. 1 BGB (neue Sache, Hersteller,
+        Wertvergleich)
+      weight: 3.0
+      required: true
+      norms:
+      - § 950 Abs. 1 BGB
+      keywords:
+      - § 950 Abs. 1
+      - Verarbeitung
+      - neue Sache
+      - Hersteller
+      - Wert der Verarbeitung
+      card_slugs:
+      - zr-ger-950-verarbeitung
+      - zr-ger-hersteller-950
+    - id: p2
+      label: >-
+        Kein Herausgabeanspruch aus § 985 BGB, weil E sein Eigentum verloren hat
+      weight: 1.5
+      required: true
+      norms:
+      - § 985 BGB
+      - § 950 Abs. 2 BGB
+      keywords:
+      - § 985
+      - Eigentum verloren
+      - Eigentum erloschen
+      - § 950 Abs. 2
+      - kein Herausgabeanspruch
+      card_slugs:
+      - zr-ger-950-verarbeitung
+    - id: p3
+      label: >-
+        Ausgleichsanspruch aus § 951 Abs. 1 BGB als Eingriffskondiktion in Höhe von
+        300 Euro
+      weight: 3.0
+      required: true
+      norms:
+      - § 951 Abs. 1 BGB
+      - § 812 Abs. 1 S. 1 Alt. 2 BGB
+      keywords:
+      - § 951
+      - Eingriffskondiktion
+      - § 812 Abs. 1 S. 1 Alt. 2
+      - Rechtsgrundverweisung
+      - Wert des verlorenen Rechts
+      card_slugs:
+      - zr-ger-951-ausgleich
+    - id: p4
+      label: >-
+        Deliktischer Anspruch aus § 823 Abs. 1 BGB, unberührt nach § 951 Abs. 2 BGB
+      weight: 1.5
+      required: false
+      norms:
+      - § 823 Abs. 1 BGB
+      - § 951 Abs. 2 BGB
+      keywords:
+      - § 823 Abs. 1
+      - Eigentumsverletzung
+      - § 951 Abs. 2
+      - Fahrlässigkeit
+      - deliktisch
+      card_slugs:
+      - zr-ger-951-ausgleich
+  stand: 2026-10
