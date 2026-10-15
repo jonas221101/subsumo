@@ -20,7 +20,7 @@ cards:
     die Willensentschließungs- und Willensbetätigungsfreiheit (dazu das eigene
     Thema Nötigung). § 241 StGB schützt das individuelle Sicherheitsgefühl und
     den Rechtsfrieden der bedrohten Person. § 238 StGB schützt die Freiheit der
-    Lebensgestaltung vor beharrlicher Nachstellung. Wichtig für die Klausur: §
+    Lebensgestaltung vor wiederholter Nachstellung. Wichtig für die Klausur: §
     239 StGB ist ein Dauerdelikt; Tat und Beendigung fallen auseinander, was für
     Teilnahme, Notwehr und Verjährung relevant sein kann. Die Entführungs- und
     Geiseldelikte (§§ 239a, 239b StGB) sind eigene Tatbestände und nicht
@@ -105,13 +105,10 @@ cards:
   type: norm
   front: "Was regeln § 239 Abs. 3 bis 5 StGB und wie verhält sich § 239 StGB zu anderen Delikten?"
   back: >-
-    § 239 Abs. 3 StGB enthält Qualifikationen mit erhöhtem Strafrahmen: die
+    § 239 Abs. 3 StGB enthält Qualifikationen mit erhöhtem Strafrahmen (ein Jahr bis zehn Jahre): die
     Freiheitsberaubung dauert länger als eine Woche (Nr. 1), oder durch die Tat
     bzw. eine während der Tat begangene Handlung wird eine schwere
-    Gesundheitsschädigung verursacht (Nr. 2). Abs. 4 qualifiziert die
-    leichtfertige Verursachung des Todes des Opfers (Erfolgsqualifikation,
-    Mindeststrafe drei Jahre). Abs. 5 sieht für minder schwere Fälle einen
-    geminderten Strafrahmen vor. Konkurrenzen: Wird die Freiheitsberaubung als
+    Gesundheitsschädigung verursacht (Nr. 2). Abs. 4 qualifiziert die Verursachung des Todes des Opfers durch die Tat oder eine während der Tat begangene Handlung (Erfolgsqualifikation, Freiheitsstrafe nicht unter drei Jahren; der Wortlaut verlangt keine Leichtfertigkeit, nach § 18 StGB genügt Fahrlässigkeit hinsichtlich der Todesfolge). Abs. 5 sieht für minder schwere Fälle des Abs. 3 sechs Monate bis fünf Jahre, des Abs. 4 ein bis zehn Jahre vor. Konkurrenzen: Wird die Freiheitsberaubung als
     Mittel einer Nötigung eingesetzt oder zugleich mit Gewalt gegen das Opfer
     begangen, besteht regelmäßig Tateinheit mit § 240 StGB; dient das Einsperren
     der Wegnahme, kommt Tateinheit mit §§ 249, 255 StGB in Betracht. Bei
@@ -189,7 +186,10 @@ cards:
     jetzt eine höher bestrafte Variante (Abs. 2). Abs. 3 erfasst das
     Vortäuschen, dass die Verwirklichung einer solchen Tat bevorstehe. Abs. 4
     erhöht den Strafrahmen, wenn die Tat öffentlich, in einer Versammlung oder
-    durch Verbreiten eines Inhalts begangen wird. Erfasst sind also auch
+    durch Verbreiten eines Inhalts begangen wird. Die Strafrahmen betragen im Grundfall
+    (Abs. 1) bis zu einem Jahr, bei Bedrohung mit einem Verbrechen oder Vortäuschen
+    (Abs. 2, 3) bis zu zwei Jahren, in den Fällen des Abs. 4 bis zu zwei bzw. drei Jahren;
+    nach Abs. 5 gelten die Antragsvorschriften der angedrohten Tat entsprechend. Erfasst sind also auch
     Drohungen mit einfacher Körperverletzung oder mit einer Sachbeschädigung von
     bedeutendem Wert, nicht aber Drohungen gegen die Ehre oder das Vermögen im
     Übrigen.
@@ -229,49 +229,54 @@ cards:
   type: norm
   front: "Was regelt § 238 StGB (Nachstellung) in den Grundzügen?"
   back: >-
-    Nach § 238 Abs. 1 StGB macht sich strafbar, wer einer anderen Person
-    unbefugt in einer Weise nachstellt, die geeignet ist, deren Lebensgestaltung
-    nicht unerheblich zu beeinträchtigen, indem er beharrlich bestimmte
-    Handlungen vornimmt. Der Katalog nennt unter anderem das Aufsuchen
-    räumlicher Nähe, das Herstellen von Kontakt unter Verwendung von
-    Kommunikationsmitteln oder über Dritte, die missbräuchliche Verwendung
-    personenbezogener Daten (z. B. Bestellungen im Namen des Opfers),
-    Bedrohungen, das Verbreiten oder Veröffentlichen von Abbildungen oder
-    Inhalten sowie andere vergleichbare Handlungen. Seit der Reform 2021 ist §
-    238 StGB ein Eignungsdelikt: Es kommt nicht mehr darauf an, dass das Opfer
-    seine Lebensgestaltung tatsächlich verändert hat, sondern dass die
-    Handlungen dazu objektiv geeignet sind. Es gibt Qualifikationen und
-    Regelbeispiele für besonders schwere Fälle, eine Erfolgsqualifikation bei
-    Todesverursachung sowie ein Strafantragserfordernis mit der Möglichkeit, bei
-    besonderem öffentlichem Interesse von Amts wegen zu verfolgen.
+    Nach § 238 Abs. 1 StGB (aktuelle Fassung) macht sich mit Freiheitsstrafe bis zu
+    drei Jahren oder Geldstrafe strafbar, wer einer anderen Person in einer Weise
+    unbefugt nachstellt, die geeignet ist, deren Lebensgestaltung nicht unerheblich
+    zu beeinträchtigen, indem er wiederholt eine der in Nr. 1 bis 8 genannten
+    Handlungen vornimmt. Der Katalog nennt das Aufsuchen räumlicher Nähe (Nr. 1),
+    den Kontaktversuch mit Kommunikationsmitteln oder über Dritte (Nr. 2), die
+    missbräuchliche Verwendung personenbezogener Daten (Nr. 3), Bedrohungen (Nr. 4),
+    Taten nach §§ 202a bis 202c (Nr. 5), das Verbreiten von Abbildungen (Nr. 6),
+    das Verbreiten verächtlich machender Inhalte unter Vortäuschung der Urheberschaft
+    der Person (Nr. 7) und vergleichbare Handlungen (Nr. 8). § 238 StGB ist ein
+    Eignungsdelikt: Es kommt nicht darauf an, dass das Opfer seine Lebensgestaltung
+    tatsächlich verändert hat, sondern dass die Handlungen dazu objektiv geeignet
+    sind. Abs. 2 sieht für besonders schwere Fälle (Regelbeispiele, u. a.
+    Gesundheitsschädigung, Todesgefahr, Nachstellung über mindestens sechs Monate
+    mit einer Vielzahl von Handlungen, Stalkerware, Täter über 21 und Opfer unter
+    16 Jahren) Freiheitsstrafe von drei Monaten bis zu fünf Jahren vor, Abs. 3 für
+    die Verursachung des Todes Freiheitsstrafe von einem bis zu zehn Jahren. Ein
+    Strafantragserfordernis enthält die Vorschrift in der aktuellen Fassung nicht
+    mehr.
   norms:
   - "§ 238 Abs. 1 StGB"
+  - "§ 238 Abs. 2 StGB"
+  - "§ 238 Abs. 3 StGB"
   quellen:
-  - "StGB, amtliche Fassung"
-  - "Gesetz zur Änderung des Strafgesetzbuches - effektivere Bekämpfung der Nachstellung, 2021"
+  - "StGB, amtliche Fassung (Abruf 2026-10-15)"
+  - "Eigenformulierung Redaktion"
   stand: 2026-10
 - slug: sr-frei-238-beharrlich
   type: definition
-  front: "Definiere: Beharrlichkeit und Eignung zur Beeinträchtigung der Lebensgestaltung, § 238 Abs. 1 StGB"
+  front: "Definiere: Wiederholte Begehung und Eignung zur Beeinträchtigung der Lebensgestaltung, § 238 Abs. 1 StGB"
   back: >-
-    Beharrlich handelt, wer wiederholt und hartnäckig vorgeht und dadurch eine
-    Haltung offenbart, die ihn zur Fortsetzung der Handlungen entschlossen oder
-    gleichgültig gegenüber dem entgegenstehenden Willen des Opfers macht. Eine
-    einzelne Handlung genügt nicht; es braucht mehrere, in einem inneren
-    Zusammenhang stehende Handlungen, wobei die Zahl nicht starr festgelegt ist.
-    Hat das Opfer klar zu erkennen gegeben, dass es keinen Kontakt wünscht,
-    spricht ein Fortsetzen für Beharrlichkeit. Die Handlungen müssen zusätzlich
-    in ihrer Gesamtheit geeignet sein, die Lebensgestaltung nicht unerheblich zu
-    beeinträchtigen, d. h. einen Einfluss auf Gewohnheiten, Wohnort, Arbeit oder
-    soziale Kontakte haben können. Unbefugt handelt, wer keinen
-    Rechtfertigungsgrund hat; die Einordnung des Merkmals (Tatbestand oder
-    allgemeines Verbrechensmerkmal der Rechtswidrigkeit) ist umstritten, für die
-    Klausur genügt eine knappe Prüfung der Befugnis (z. B. berechtigter Kontakt
-    zur Wahrnehmung des Umgangsrechts). Vorsatz einschließlich der
-    Beharrlichkeit ist erforderlich; bedingter Vorsatz genügt.
+    Das Gesetz verlangt in der aktuellen Fassung, dass der Täter die Handlung
+    wiederholt vornimmt; das früher verlangte Merkmal der Beharrlichkeit steht
+    nicht mehr im Wortlaut. Eine einzelne Handlung genügt nicht; erforderlich sind
+    mehrere Handlungen nach Nr. 1 bis 8, die in einem inneren Zusammenhang stehen.
+    Die Handlungen müssen zusätzlich in ihrer Gesamtheit geeignet sein, die
+    Lebensgestaltung nicht unerheblich zu beeinträchtigen, d. h. einen Einfluss auf
+    Gewohnheiten, Wohnort, Arbeit oder soziale Kontakte haben können. Hat das Opfer
+    klar zu erkennen gegeben, dass es keinen Kontakt wünscht, spricht ein
+    Fortsetzen für die Eignung. Unbefugt handelt, wer keinen Rechtfertigungsgrund
+    hat; die Einordnung des Merkmals (Tatbestand oder allgemeines
+    Verbrechensmerkmal der Rechtswidrigkeit) ist umstritten, für die Klausur genügt
+    eine knappe Prüfung der Befugnis (z. B. berechtigter Kontakt zur Wahrnehmung
+    des Umgangsrechts). Vorsatz ist erforderlich; bedingter Vorsatz genügt.
   norms:
   - "§ 238 Abs. 1 StGB"
   quellen:
+  - "StGB, amtliche Fassung (Abruf 2026-10-15)"
   - "Eigenformulierung Redaktion"
   stand: 2026-10
 schemata:
@@ -304,7 +309,7 @@ schemata:
   - label: "IV. Qualifikationen, § 239 Abs. 3 bis 5 StGB"
     hinweis: >-
       Nur bei Anlass: Dauer über eine Woche, schwere Gesundheitsschädigung,
-      leichtfertige Todesverursachung.
+      Todesverursachung (Abs. 4, § 18 StGB).
   - label: "V. Konkurrenzen"
     hinweis: >-
       Tateinheit mit § 240 StGB bei Nötigungscharakter; Dauerdelikt beachten.

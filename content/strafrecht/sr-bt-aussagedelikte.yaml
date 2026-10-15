@@ -130,8 +130,8 @@ cards:
     StGB zu mildern, bei uneidlicher Aussage auch von Strafe abzusehen, wenn ein
     Zeuge oder Sachverständiger sich einer falschen uneidlichen Aussage (§ 153 StGB)
     oder eines Falscheides (§ 154 StGB) schuldig gemacht hat, um von sich oder einem Angehörigen
-    die Gefahr abzuwenden, bestraft oder einer Maßnahme (§ 11 Abs. 1 Nr. 8 StGB)
-    unterworfen zu werden. Es handelt sich um einen persönlichen Strafmilderungs-
+    die Gefahr abzuwenden, bestraft oder einer freiheitsentziehenden Maßregel der Besserung
+    und Sicherung unterworfen zu werden. Es handelt sich um einen persönlichen Strafmilderungs-
     oder Strafausschließungsgrund (§ 28 Abs. 2 StGB), der nur dem Täter
     zugutekommt, in dessen Person er vorliegt. Der Aussagende muss in der Absicht
     handeln, die Gefahr abzuwenden; es genügt, dass er sie annimmt. Die Norm
@@ -155,9 +155,9 @@ cards:
     verwertet werden kann, wenn aus der falschen Angabe ein Nachteil für einen anderen
     entstanden ist oder wenn
     eine Anzeige gegen den Täter erstattet oder eine Untersuchung gegen ihn
-    eingeleitet wurde (Abs. 2). Die Berichtigung kann bei der Stelle erfolgen, bei
-    der die falsche Angabe gemacht wurde, oder bei einer für die Entscheidung der
-    Sache zuständigen Stelle (Abs. 3). Sie
+    eingeleitet wurde (Abs. 2). Die Berichtigung kann bei der Stelle erfolgen, der die
+    falsche Angabe gemacht worden ist oder die sie im Verfahren zu prüfen hat, sowie
+    bei einem Gericht, einem Staatsanwalt oder einer Polizeibehörde (Abs. 3). Sie
     muss das richtige Tatsachenbild vollständig herstellen. Anders als beim
     Rücktritt (§ 24 StGB) bewirkt die Berichtigung bei den Vorsatzdelikten nur
     eine Milderung bzw. fakultatives Absehen von Strafe; bei fahrlässigen Delikten
@@ -179,7 +179,8 @@ cards:
     Beihilfe (§ 27 StGB) zu einer vorsätzlichen Haupttat sind möglich. Wer
     einen gutgläubigen Zeugen zu einem Falscheid oder einer falschen Versicherung
     an Eides statt verleitet, wird nach § 160 StGB bestraft; zur bloß uneidlichen
-    Falschaussage verleitet § 160 StGB nicht (Strafbarkeitslücke). Umstritten ist,
+    Falschaussage verleitet, wird ebenfalls nach § 160 StGB bestraft (dort mit
+    geringerem Strafrahmen). Umstritten ist,
     ob die Zeugenstellung ein besonderes persönliches Merkmal im Sinne des § 28
     Abs. 1 StGB ist: Wird dies bejaht, wäre die Strafe des nichtzeugen Teilnehmers
     nach § 49 Abs. 1 StGB zu mildern; andere sehen die Zeugenstellung als bloßen
@@ -201,8 +202,8 @@ cards:
   type: norm
   front: Was regeln § 160 StGB (Verleitung zur Falschaussage) und § 161 StGB (fahrlässiger Falscheid)?
   back: >-
-    § 160 StGB erfasst, wer einen anderen zur Ableistung eines falschen Eides oder
-    zur Abgabe einer falschen Versicherung an Eides statt verleitet, ohne dass
+    § 160 StGB erfasst, wer einen anderen zur Ableistung eines falschen Eides (Freiheitsstrafe bis zu zwei Jahren oder Geldstrafe) oder
+    zur Abgabe einer falschen Versicherung an Eides statt oder einer falschen uneidlichen Aussage (Freiheitsstrafe bis zu sechs Monaten oder Geldstrafe bis zu 180 Tagessätzen) verleitet, ohne dass
     dieser vorsätzlich oder fahrlässig falsch schwört bzw. versichert. Die Norm schließt die Lücke, die wegen der
     Eigenhändigkeit der Aussagedelikte entsteht: Eine mittelbare Täterschaft
     des Hintermannes ist ausgeschlossen. Der Versuch ist strafbar. Die Tat ist
@@ -296,8 +297,8 @@ schemata:
   - label: II. Strafbarkeit des Hintermannes
     children:
     - label: 1. Täterschaft ausgeschlossen (eigenhändiges Delikt)
-      hinweis: Mittelbare Täterschaft nicht möglich; bei gutgläubigem Zeugen nur § 160 StGB (Eid
-        oder Versicherung an Eides statt).
+      hinweis: Mittelbare Täterschaft nicht möglich; bei gutgläubigem Zeugen nur § 160 StGB (Eid,
+        Versicherung an Eides statt oder uneidliche Aussage).
     - label: 2. Anstiftung, §§ 153, 26 StGB
       children:
       - label: a) Vorsätzliche rechtswidrige Haupttat
