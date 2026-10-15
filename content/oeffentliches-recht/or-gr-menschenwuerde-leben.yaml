@@ -67,7 +67,7 @@ cards:
     verstoße die Regelung gegen Art. 2 Abs. 2 S. 1 i. V. m. Art. 1 Abs. 1 GG,
     soweit der Abschuss Unbeteiligte an Bord treffe. Diese würden zum bloßen
     Objekt staatlichen Handelns gemacht und zur Rettung anderer instrumentalisiert;
-    ihr Leben werde nach Zahl verrechnet.  Das Lebensrecht der Unbeteiligten
+    ihr Leben werde nach Zahl verrechnet. Das Lebensrecht der Unbeteiligten
     steht nicht zur Disposition des Staates, auch nicht wegen der Schutzpflicht
     gegenüber den Menschen am Boden, denn diese rechtfertigt keinen Eingriff in
     die Menschenwürde.
@@ -82,9 +82,10 @@ cards:
   front: "Wie weit reichen das Recht auf Leben und das Recht auf körperliche Unversehrtheit (Art. 2 Abs. 2 S. 1 GG)?"
   back: >-
     Das Recht auf Leben schützt das biologisch-physische Dasein ab Entstehung des
-    menschlichen Lebens; nach h. M. und BVerfG beginnt der Schutz mit der
-    Nidation, nach teilweise vertretener Ansicht schon mit der Verschmelzung von
-    Ei- und Samenzelle. Er endet mit dem Tod (Hirntod). Das Grundrecht begründet keine Pflicht zu leben; das selbstbestimmte Sterben ist als Teil des allgemeinen Persönlichkeitsrechts geschützt (BVerfG 2020 zur geschäftsmäßigen Sterbehilfe). Das Recht auf körperliche Unversehrtheit erfasst die
+    menschlichen Lebens; nach der Rechtsprechung des BVerfG besteht der Schutz
+    jedenfalls ab der Nidation (den frühesten Zeitpunkt hat das Gericht offen
+    gelassen), nach teilweise vertretener Ansicht schon mit der Verschmelzung von
+    Ei- und Samenzelle. Er endet mit dem Tod (nach h. M. Hirntod). Das Grundrecht begründet keine Pflicht zu leben; das selbstbestimmte Sterben ist als Teil des allgemeinen Persönlichkeitsrechts geschützt (BVerfG 2020 zur geschäftsmäßigen Sterbehilfe). Das Recht auf körperliche Unversehrtheit erfasst die
     Gesundheit im biologisch-physiologischen Sinn und, soweit
     mit Schmerzen oder körperlichen Folgen verbunden, auch seelische
     Beeinträchtigungen. Eingriffe sind etwa die Tötung, Zwangsbehandlung,
@@ -129,8 +130,9 @@ cards:
     Nach BVerfGE 39, 1 und 88, 203 erstreckt sich der Schutz des Art. 2 Abs. 2 S.
     1 GG i. V. m. Art. 1 Abs. 1 GG auch auf das ungeborene Leben. Der Staat ist
     verpflichtet, dieses auch gegenüber der Mutter zu schützen. Der Schwangerschaftsabbruch ist grundsätzlich als Unrecht anzusehen, der Gesetzgeber darf
-    aber ein Beratungskonzept wählen: Ein Abbruch kann nach Beratung
-    tatbestandslos bleiben, ohne dass der Staat die Abtreibung billigt. Dem
+    aber ein Beratungskonzept wählen: Ein Abbruch nach Beratung darf
+    straflos bleiben, darf aber nicht für gerechtfertigt erklärt werden; der
+    Staat billigt die Abtreibung nicht. Dem
     Untermaßverbot genügt der Schutz, wenn er angemessen und wirksam ist. Die
     Verfassung verlangt nicht in jedem Fall den Einsatz des Strafrechts, aber ein
     Mindestmaß an Schutz, das sich am Rechtsgut orientiert und
@@ -152,8 +154,8 @@ cards:
     Recht, einen Ort aufzusuchen oder zu verlassen, soweit er tatsächlich und
     rechtlich zugänglich ist. Art. 104 GG konkretisiert die Schranken-Schranken.
     Zu unterscheiden sind zwei Eingriffsstufen. Freiheitsbeschränkung ist die
-    Einschränkung der Bewegungsfreiheit in einzelne Richtungen, etwa Platzverweis,
-    Aufenthaltsverbot oder Meldeauflage; hier genügt nach Art. 104 Abs. 1 S. 1 GG
+    Einschränkung der Bewegungsfreiheit in einzelne Richtungen, etwa Platzverweis
+    oder Aufenthaltsverbot; hier genügt nach Art. 104 Abs. 1 S. 1 GG
     ein förmliches Gesetz. Freiheitsentziehung ist die Aufhebung der Bewegungsfreiheit
     nach allen Seiten gegen den Willen des Betroffenen, etwa Untersuchungshaft,
     Gewahrsam oder Unterbringung. Sie ist zusätzlich nur auf Grundlage einer
@@ -286,7 +288,7 @@ faelle:
     erwartung: Ja. Die Ermächtigung zum Abschuss erlaubt die vorsätzliche Tötung
       der Menschen an Bord und greift damit in das Recht auf Leben ein. Das
       Gesetz selbst wirkt für P bereits belastend, weil sie als regelmäßige
-      Fluggast betroffen sein kann.
+      Fluggästin betroffen sein kann.
   - prompt: Verstößt der Eingriff gegen Art. 1 Abs. 1 GG?
     erwartung: Ja. Die unbeteiligten Passagiere werden vom Staat zum bloßen
       Objekt gemacht, ihr Leben wird nach Zahl verrechnet und zur Rettung anderer

@@ -69,8 +69,9 @@ cards:
     Verfahrensgrundrechte der Art. 101 Abs. 1 S. 2 und Art. 103 Abs. 1 GG
     berufen, weil diese ein rechtsstaatliches Verfahren sichern. Gemeinden
     können sich dagegen nicht auf materielle Grundrechte stützen; ihnen steht
-    Art. 28 Abs. 2 GG zu. Für Verfassungsbeschwerden verweist § 90 Abs. 1
-    BVerfGG ohnehin auf grundrechtsberechtigte Beschwerdeführer.
+    die Selbstverwaltungsgarantie des Art. 28 Abs. 2 GG zu, die sie mit der
+    Kommunalverfassungsbeschwerde (Art. 93 Abs. 1 Nr. 4b GG) geltend machen
+    können.
   norms:
   - Art. 19 Abs. 3 GG
   - Art. 5 Abs. 3 S. 1 GG
@@ -89,11 +90,10 @@ cards:
     privatrechtlichen Formen um (Verwaltungsprivatrecht), bleibt sie voll an die
     Grundrechte gebunden; die Flucht ins Privatrecht ändert daran nichts. Das gilt
     auch für privatrechtlich organisierte Einheiten in öffentlicher Hand, etwa
-    eine kommunale GmbH, die eine öffentliche Aufgabe erfüllt. Anders ist es nur
-    bei fiskalischen Hilfsgeschäften, etwa dem Einkauf von Büromaterial: Hier
-    tritt der Staat wie jeder Private auf, wird aber nach heute ganz
-    überwiegender Ansicht jedenfalls durch Art. 3 Abs. 1 GG und das
-    Willkürverbot gebunden. Die Grundrechtsbindung des Gesetzgebers umfasst auch
+    eine kommunale GmbH, die eine öffentliche Aufgabe erfüllt. Bei
+    fiskalischen Hilfsgeschäften, etwa dem Einkauf von Büromaterial, tritt der
+    Staat wie jeder Private auf; auch hier wird er nach heute ganz überwiegender
+    Ansicht jedenfalls durch Art. 3 Abs. 1 GG und das Willkürverbot gebunden. Die Grundrechtsbindung des Gesetzgebers umfasst auch
     das Unionsrecht umsetzende Gesetze, soweit dem deutschen Gesetzgeber
     Gestaltungsspielraum verbleibt.
   norms:
@@ -106,19 +106,20 @@ cards:
   type: rechtsprechung
   front: "Was hat das BVerfG im Fraport-Urteil zur Grundrechtsbindung gemischtwirtschaftlicher Unternehmen entschieden?"
   back: >-
-    In der Fraport-Entscheidung (BVerfGE 128, 226) ging es um ein Flughafen-
-    Betreiberunternehmen in privater Rechtsform, an dem die öffentliche Hand
-    mehrheitlich beteiligt war. Das BVerfG hat entschieden, dass Unternehmen
+    In der Fraport-Entscheidung (BVerfGE 128, 226) ging es um ein Hausverbot der
+    Betreiberin des Frankfurter Flughafens, einer Aktiengesellschaft, an der die
+    öffentliche Hand mehrheitlich beteiligt war, gegen eine Abschiebungsgegnerin,
+    die im Terminal Flugblätter verteilt hatte. Das BVerfG hat entschieden, dass Unternehmen
     in Privatrechtsform, die von der öffentlichen Hand beherrscht werden
     (Mehrheitsbeteiligung), unmittelbar an die Grundrechte gebunden sind, und
     zwar unabhängig davon, ob sie Verwaltungsaufgaben im engeren Sinne oder
     erwerbswirtschaftlich tätig sind. Eine bloße Minderheitsbeteiligung oder
     ein rein privates Unternehmen genügt dagegen nicht. Zugleich hat das Gericht
-    angedeutet, dass die unmittelbare Bindung privater Unternehmen sich im
-    Einzelfall auch aus einer tatsächlichen Garantenstellung bei der Eröffnung
-    von Kommunikationsräumen ergeben kann (Ausstrahlung, siehe Stadionverbot).
-    Das Unternehmen selbst kann sich wegen der Bindung nicht auf Grundrechte,
-    etwa Art. 12 oder Art. 14 GG, berufen.
+    offengelassen, ob eine der staatlichen Bindung nahekommende Verpflichtung
+    privater Unternehmen im Einzelfall in Betracht kommt, wenn sie die
+    Rahmenbedingungen öffentlicher Kommunikation selbst übernehmen. Das
+    beherrschte Unternehmen selbst kann sich wegen der Bindung nicht auf
+    Grundrechte, etwa Art. 12 oder Art. 14 GG, berufen.
   norms:
   - Art. 1 Abs. 3 GG
   - Art. 19 Abs. 3 GG
@@ -209,8 +210,9 @@ cards:
     tatsächlich. Die Gefahr einer Uferlosigkeit wird durch Zusatzkriterien
     (Zurechenbarkeit, Intensität, Erheblichkeit) begrenzt; reine Bagatellen und
     Folgen, die erst durch das freie Verhalten Dritter entstehen, sind
-    regelmäßig kein Eingriff. Der klassische Eingriffsbegriff behält Bedeutung
-    für die Frage, ob ein Gesetzesvorbehalt besteht.
+    regelmäßig kein Eingriff. Damit können auch faktisch-mittelbare
+    Beeinträchtigungen grundrechtsrelevant sein, etwa staatliches
+    Informationshandeln wie die Warnung vor Produkten (Glykol).
   norms:
   - Art. 1 Abs. 3 GG
   - Art. 19 Abs. 1 GG
@@ -228,8 +230,10 @@ cards:
     wesentlichen Fragen muss der Gesetzgeber selbst entscheiden (Wesentlichkeit,
     Parlamentsvorbehalt). Hinzu treten das Verbot des grundrechtseinschränkenden
     Einzelfallgesetzes (Art. 19 Abs. 1 S. 1 GG), das Zitiergebot (Art. 19 Abs. 1
-    S. 2 GG, nur für Grundrechte mit qualifiziertem oder einfachem
-    Gesetzesvorbehalt, die dadurch ausdrücklich eingeschränkt werden), die
+    S. 2 GG, nur für Grundrechte, die durch oder aufgrund eines Gesetzes
+    eingeschränkt werden können; nach der Rechtsprechung gilt es nicht für
+    Art. 2 Abs. 1, Art. 12 Abs. 1 und Art. 14 GG sowie nicht für bloße
+    Ausgestaltungen und vorkonstitutionelles Recht), die
     Wesensgehaltsgarantie (Art. 19 Abs. 2 GG) und vor allem der
     Verhältnismäßigkeitsgrundsatz. Rückwirkende Belastungen sind an den
     Grundsätzen des Vertrauensschutzes zu messen. Für vorbehaltlos gewährleistete
@@ -254,8 +258,8 @@ cards:
     vorbehaltlose Spezialrechte der allgemeinen Handlungsfreiheit vor. Zwischen
     gleichrangigen Grundrechten besteht Idealkonkurrenz, sie sind nebeneinander
     zu prüfen, etwa Art. 5 Abs. 1 und Art. 8 GG bei einer Demonstration, wobei
-    die Versammlungsfreiheit für die Form der kollektiven Meinungskundgabe
-    vorgeht, oder Art. 12 und Art. 14 GG (Art. 12 schützt den Erwerb, Art. 14 das
+    Art. 8 GG die Art und Weise der Versammlung, Art. 5 Abs. 1 GG den Inhalt
+    der Äußerung schützt, oder Art. 12 und Art. 14 GG (Art. 12 schützt den Erwerb, Art. 14 das
     Erworbene). Maßstab für die Rechtfertigung ist bei Idealkonkurrenz jedes
     Grundrecht mit seinen eigenen Schranken, wobei strengere Schranken nicht
     durch die Schranken eines anderen Grundrechts unterlaufen werden dürfen.
@@ -327,8 +331,9 @@ faelle:
       Privatrechtsform, die von der öffentlichen Hand beherrscht werden, unmittelbar
       nach Art. 1 Abs. 3 GG an die Grundrechte gebunden. Das gilt bei der
       Mehrheitsbeteiligung von Land und Stadt von 51 Prozent; auf die
-      Privatbeteiligung von 49 Prozent kommt es nicht an. F kann sich nicht auf Art. 14
-      GG als Schutz des Hausrechts berufen.
+      Privatbeteiligung von 49 Prozent kommt es nicht an. F ist als Adressatin der
+      Grundrechte selbst nicht grundrechtsberechtigt (Art. 19 Abs. 3 GG,
+      Konfusion) und kann sich nicht auf Art. 14 GG als Schutz des Hausrechts berufen.
   - prompt: Kann sich T auf die Versammlungsfreiheit (Art. 8 GG) berufen?
     erwartung: Nein. Art. 8 Abs. 1 GG ist ein Deutschenrecht; T ist türkische
       Staatsangehörige. Als Ausländerin kann sie sich insoweit nur auf Art. 2
@@ -395,5 +400,8 @@ faelle:
       - nicht grundrechtsberechtigt
       - Art. 19 Abs. 3 GG
       - Adressat der Grundrechte
+      - Adressatin der Grundrechte
+      - kann sich nicht auf Art. 14 GG berufen
+      - keine Grundrechtsträgerin
       card_slugs:
       - or-gr-allg-juristische-personen-des-oeffentlichen-rechts

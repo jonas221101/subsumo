@@ -134,7 +134,9 @@ cards:
     ist, dass nur die laufende Kommunikation erfasst wird; geht der Zugriff
     darüber hinaus, ist das IT-Grundrecht einschlägig. Art. 13 GG schützt den
     räumlichen Rückzugsbereich der Wohnung und verdrängt das IT-Grundrecht, wenn
-    in der Wohnung Daten erhoben werden. Das IT-Grundrecht und das Recht auf
+    der Zugriff durch ein Eindringen in die Wohnung erfolgt (etwa Betreten zur
+    Installation oder Beschlagnahme vor Ort); ein Zugriff über das Netz
+    berührt Art. 13 GG nicht. Das IT-Grundrecht und das Recht auf
     informationelle Selbstbestimmung sind Ausprägungen des APR und treten als
     Auffangrechte hinter die speziellen Garantien zurück. Umstritten ist
     teilweise, ob das IT-Grundrecht neben der informationellen
@@ -160,9 +162,9 @@ cards:
     Rundfunkfreiheit (Art. 5 GG), die den Eingriff rechtfertigen können, wenn die
     Abwägung zugunsten der Berichterstattung ausfällt. Maßgeblich sind die
     Intensität der Persönlichkeitsverletzung, der Wahrheitsgehalt der Äußerung
-    und der Beitrag zur öffentlichen Meinungsbildung. Das Recht ist auch nach
-    dem Tod nachwirkend geschützt (Mephisto, BVerfGE 30, 173), wobei der
-    Schutz mit der Zeit schwächer wird.
+    und der Beitrag zur öffentlichen Meinungsbildung. Nach dem Tod
+    schützt die Menschenwürde (Art. 1 Abs. 1 GG) weiter vor Herabwürdigung
+    (Mephisto, BVerfGE 30, 173), wobei der Schutz mit der Zeit schwächer wird.
   norms:
   - Art. 2 Abs. 1 GG
   - Art. 1 Abs. 1 GG
@@ -181,8 +183,8 @@ cards:
     prüft am Maßstab des Grundgesetzes, hier APR gegen Pressefreiheit, und hat
     betont, dass dem Betroffenen ein Anspruch zustehen kann, weil sich die
     Persönlichkeitsbelastung durch Zeitablauf und leichte Auffindbarkeit
-    verstärkt. Recht
-    auf Vergessen II betrifft die Auslistung durch Suchmaschinen,
+    verstärkt.
+    Recht auf Vergessen II betrifft die Auslistung durch Suchmaschinen,
     die vollständig unionsrechtlich geregelt ist (DSGVO). Hier prüft das BVerfG
     ausnahmsweise unmittelbar an den Unionsgrundrechten der GRCh (Art. 7, 8, 11),
     weil das Grundgesetz bei vollständig vereinheitlichtem Unionsrecht
@@ -285,7 +287,9 @@ faelle:
     erwartung: Auch hilfsweise nein. Die weltweite
       Abrufbarkeit im Internet, die Streubreite und die Prangerwirkung stehen
       außer Verhältnis zum Zweck, die Zahlungsmoral zu erhöhen. Mildere Mittel
-      wie Vollstreckung oder Mahnung stehen zur Verfügung. Im Ergebnis liegt schon wegen der fehlenden Rechtsgrundlage eine Verletzung des S in Art. 2 Abs. 1 i. V. m. Art. 1 Abs. 1 GG.
+      wie Vollstreckung oder Mahnung stehen zur Verfügung. Im Ergebnis liegt schon wegen der fehlenden Rechtsgrundlage eine
+      Verletzung der informationellen Selbstbestimmung (Art. 2 Abs. 1 i. V. m.
+      Art. 1 Abs. 1 GG) vor.
   expectation:
     pruefpunkte:
     - id: p1
