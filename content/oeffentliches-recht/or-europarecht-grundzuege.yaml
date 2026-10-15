@@ -1,0 +1,322 @@
+topic:
+  slug: or-europarecht-grundzuege
+  area: oeffentliches-recht
+  title: Europarecht, Grundzüge
+  parent: oeffentliches-recht
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-eu-anwendungsvorrang
+  type: definition
+  front: "Was bedeutet der Anwendungsvorrang des Unionsrechts, und wie begründen EuGH und Bundesverfassungsgericht ihn?"
+  back: >-
+    Unionsrecht hat Vorrang vor entgegenstehendem mitgliedstaatlichem Recht. Der EuGH leitet dies aus der Eigenständigkeit der Unionsrechtsordnung ab (EuGH, Rs. 6/64, Costa/ENEL); er gilt auch gegenüber nationalem Verfassungsrecht (EuGH, Rs. 11/70, Internationale Handelsgesellschaft). Der Vorrang ist ein Anwendungsvorrang, kein Geltungsvorrang: Das kollidierende nationale Recht bleibt gültig, darf im Einzelfall aber nicht angewendet werden; alle staatlichen Stellen, auch Behörden, sind dazu verpflichtet (EuGH, Rs. 106/77, Simmenthal). Das Bundesverfassungsgericht begründet den Vorrang dagegen nicht mit dem Unionsrecht selbst, sondern mit dem Rechtsanwendungsbefehl des Zustimmungsgesetzes zu den Verträgen, Art. 23 Abs. 1 GG. Aus dieser Sicht reicht der Vorrang nur so weit, wie die Verfassung die Übertragung von Hoheitsrechten zulässt (Art. 23 Abs. 1 S. 3 in Verbindung mit Art. 79 Abs. 3 GG).
+  norms:
+  - Art. 23 Abs. 1 GG
+  - Art. 79 Abs. 3 GG
+  quellen:
+  - GG, amtliche Fassung
+  - EuGH, Rs. 6/64 (Costa/ENEL)
+  - EuGH, Rs. 106/77 (Simmenthal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-eu-unmittelbare-wirkung-primaerrecht-vo
+  type: definition
+  front: "Wann wirken Primärrecht und Verordnungen unmittelbar?"
+  back: >-
+    Unionsrechtliche Normen können Einzelnen unmittelbar Rechte verleihen, die diese vor nationalen Gerichten geltend machen können (EuGH, Rs. 26/62, van Gend & Loos). Voraussetzung für Vertragsbestimmungen ist, dass sie hinreichend klar und genau, unbedingt und nicht von weiteren Durchführungsakten abhängig sind. Danach sind etwa die Grundfreiheiten und das Diskriminierungsverbot unmittelbar anwendbar. Verordnungen gelten nach Art. 288 Abs. 2 AEUV allgemein, in allen Teilen verbindlich und unmittelbar in jedem Mitgliedstaat, ohne dass es eines Umsetzungsaktes bedarf. Sie begründen unmittelbar Rechte und Pflichten, auch im Verhältnis zwischen Privaten (horizontale Wirkung). Entgegenstehendes nationales Recht wird verdrängt. Deutschland darf Verordnungen grundsätzlich auch nicht wiederholen. Ergänzende nationale Durchführungsregelungen sind nur zulässig, soweit die Verordnung dies zulässt oder erfordert.
+  norms:
+  - Art. 288 Abs. 2 AEUV
+  quellen:
+  - AEUV, amtliche Fassung
+  - EuGH, Rs. 26/62 (van Gend & Loos)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-eu-richtlinie-unmittelbare-wirkung
+  type: streitstand
+  front: "Wann wirken Richtlinien unmittelbar, und welche Folgen hat eine unterbliebene Umsetzung?"
+  back: >-
+    Richtlinien sind für jeden Mitgliedstaat hinsichtlich des zu erreichenden Ziels verbindlich und überlassen den Stellen die Wahl von Form und Mitteln (Art. 288 Abs. 3 AEUV); sie müssen grundsätzlich in nationales Recht umgesetzt werden. Ausnahmsweise wirken sie unmittelbar, wenn die Umsetzungsfrist abgelaufen ist, die Bestimmung inhaltlich unbedingt und hinreichend genau ist und sie sich zugunsten Einzelner gegen den Staat richtet (vertikale Wirkung); der Staatsbegriff ist weit gefasst. Eine unmittelbare Verpflichtung Privater (horizontale Wirkung) lehnt der EuGH ab (EuGH, Rs. C-91/92, Faccini Dori). Im Übrigen sind nationale Gerichte zur richtlinienkonformen Auslegung verpflichtet (EuGH, Rs. 14/83, von Colson und Kamann), ohne dass die Auslegung contra legem erfolgen muss. Bleibt die Umsetzung aus, können Einzelne bei hinreichend qualifiziertem Verstoß Staatshaftung verlangen (EuGH, verb. Rs. C-6/90 und C-9/90, Francovich; Rs. C-46/93 und C-48/93, Brasserie du Pêcheur und Factortame).
+  norms:
+  - Art. 288 Abs. 3 AEUV
+  quellen:
+  - AEUV, amtliche Fassung
+  - EuGH, Rs. C-91/92 (Faccini Dori)
+  - EuGH, verb. Rs. C-6/90 und C-9/90 (Francovich)
+  stand: 2026-10
+- slug: or-eu-grundfreiheiten-pruefung
+  type: schema_step
+  front: "Wie sind die Grundfreiheiten im Überblick aufgebaut und zu prüfen?"
+  back: >-
+    Die Grundfreiheiten des AEUV sind die Warenverkehrsfreiheit (Art. 28, 34 ff. AEUV), die Arbeitnehmerfreizügigkeit (Art. 45), die Niederlassungsfreiheit (Art. 49), die Dienstleistungsfreiheit (Art. 56) und die Kapital- und Zahlungsverkehrsfreiheit (Art. 63). Alle werden in drei Schritten geprüft. Zuerst der Schutzbereich: persönlich (Unionsbürger, Unternehmen), sachlich und mit grenzüberschreitendem Bezug. Dann die Beeinträchtigung: Diskriminierung wegen der Staatsangehörigkeit oder Herkunft oder sonstige Beschränkung, die den Marktzugang behindert. Schließlich die Rechtfertigung: durch geschriebene Gründe (etwa Art. 36 AEUV: öffentliche Sittlichkeit, Ordnung, Sicherheit, Gesundheit) oder durch ungeschriebene zwingende Erfordernisse des Allgemeininteresses, die jedoch nur bei unterschiedslos anwendbaren Maßnahmen in Betracht kommen. Zudem ist die Verhältnismäßigkeit zu wahren. Die Grundfreiheiten binden die Mitgliedstaaten und wirken in Teilen auch gegenüber Privaten.
+  norms:
+  - Art. 34 AEUV
+  - Art. 36 AEUV
+  - Art. 45 AEUV
+  - Art. 49 AEUV
+  - Art. 56 AEUV
+  - Art. 63 AEUV
+  quellen:
+  - AEUV, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-eu-dassonville-massnahme-gleicher-wirkung
+  type: rechtsprechung
+  front: "Was ist eine Maßnahme gleicher Wirkung wie eine mengenmäßige Beschränkung (EuGH, Rs. 8/74, Dassonville)?"
+  back: >-
+    Art. 34 AEUV verbietet mengenmäßige Einfuhrbeschränkungen und alle Maßnahmen gleicher Wirkung zwischen den Mitgliedstaaten. Nach der Dassonville-Formel ist jede Handelsregelung der Mitgliedstaaten, die geeignet ist, den innergemeinschaftlichen Handel unmittelbar oder mittelbar, tatsächlich oder potenziell zu behindern, als Maßnahme gleicher Wirkung anzusehen (EuGH, Rs. 8/74). Die Definition ist weit und erfasst nicht nur diskriminierende Regelungen, sondern jede Beschränkung des Marktzugangs. Ein Nachweis tatsächlicher Handelsbehinderung ist nicht erforderlich; potenzielle Wirkung genügt. Beispiele sind Produktvorschriften über Zusammensetzung, Verpackung oder Bezeichnung und Einfuhrerfordernisse. Wegen dieser Weite werden unterschiedslos anwendbare Maßnahmen nach der Cassis-Rechtsprechung gerechtfertigt, und bloße Verkaufsmodalitäten nach der Keck-Rechtsprechung ausgenommen.
+  norms:
+  - Art. 34 AEUV
+  quellen:
+  - AEUV, amtliche Fassung
+  - EuGH, Rs. 8/74 (Dassonville)
+  stand: 2026-10
+- slug: or-eu-cassis-de-dijon
+  type: rechtsprechung
+  front: "Welche Bedeutung hat die Cassis-Entscheidung (EuGH, Rs. 120/78) für die Warenverkehrsfreiheit?"
+  back: >-
+    Die Entscheidung betraf die deutsche Regelung eines Mindestalkoholgehalts für Trinkbranntweine, die den Verkauf des französischen Cassis de Dijon verhinderte. Der EuGH stellte klar, dass Waren, die in einem Mitgliedstaat rechtmäßig hergestellt und in Verkehr gebracht wurden, grundsätzlich in allen anderen Mitgliedstaaten verkehrsfähig sein müssen (Prinzip der gegenseitigen Anerkennung). Auch unterschiedslos anwendbare Produktvorschriften können eine Maßnahme gleicher Wirkung sein. Sie sind aber gerechtfertigt, soweit sie notwendig sind, um zwingenden Erfordernissen gerecht zu werden, etwa der Wirksamkeit der steuerlichen Kontrolle, dem Schutz der öffentlichen Gesundheit, der Lauterkeit des Handelsverkehrs oder dem Verbraucherschutz. Die Maßnahme muss geeignet, erforderlich und angemessen sein. Das mildere Mittel, etwa eine Kennzeichnungspflicht, geht einem Verbot vor. Die Rechtfertigung durch zwingende Erfordernisse gilt nur für unterschiedslos anwendbare Maßnahmen.
+  norms:
+  - Art. 34 AEUV
+  - Art. 36 AEUV
+  quellen:
+  - AEUV, amtliche Fassung
+  - EuGH, Rs. 120/78 (Cassis de Dijon)
+  stand: 2026-10
+- slug: or-eu-keck-verkaufsmodalitaeten
+  type: rechtsprechung
+  front: "Was besagt die Keck-Rechtsprechung zu Verkaufsmodalitäten (EuGH, verb. Rs. C-267/91 und C-268/91)?"
+  back: >-
+    Nach der Keck-Entscheidung fallen nationale Bestimmungen, die bestimmte Verkaufsmodalitäten beschränken oder verbieten, nicht unter Art. 34 AEUV, sofern sie für alle betroffenen Wirtschaftsteilnehmer gelten, die ihre Tätigkeit im Inland ausüben, und den Absatz inländischer Erzeugnisse und solcher aus anderen Mitgliedstaaten rechtlich wie tatsächlich in der gleichen Weise berühren. Typische Beispiele sind Ladenöffnungszeiten, Vertriebswege und Werbebeschränkungen. Produktbezogene Regelungen, die die Beschaffenheit der Ware betreffen (Bezeichnung, Form, Größe, Aufmachung, Verpackung), bleiben dagegen am Maßstab von Dassonville und Cassis zu prüfen. Der Zweck der Rechtsprechung ist, die weite Dassonville-Formel auf grenzüberschreitende Beschränkungen zu begrenzen. Diskriminierende Verkaufsmodalitäten fallen weiterhin unter Art. 34 AEUV. In neuerer Rechtsprechung stellt der EuGH zunehmend auf den Marktzugang ab.
+  norms:
+  - Art. 34 AEUV
+  quellen:
+  - AEUV, amtliche Fassung
+  - EuGH, verb. Rs. C-267/91 und C-268/91 (Keck)
+  stand: 2026-10
+- slug: or-eu-vorabentscheidung-art267
+  type: norm
+  front: "Wann können oder müssen nationale Gerichte dem EuGH nach Art. 267 AEUV vorlegen?"
+  back: >-
+    Im Vorabentscheidungsverfahren entscheidet der EuGH über die Auslegung der Verträge und über Gültigkeit und Auslegung der Handlungen der Organe der Union (Art. 267 Abs. 1 AEUV). Jedes mitgliedstaatliche Gericht darf vorlegen, wenn es die Frage für entscheidungserheblich hält (Abs. 2). Ein Gericht, dessen Entscheidung nicht mehr mit Rechtsmitteln des innerstaatlichen Rechts angefochten werden kann, muss vorlegen (Abs. 3). Ausnahmen gelten, wenn die Frage bereits geklärt ist (acte éclairé) oder die richtige Anwendung des Unionsrechts so offenkundig ist, dass kein vernünftiger Zweifel besteht (acte clair; EuGH, Rs. 283/81, CILFIT). An der Gültigkeit von Sekundärrecht darf nur der EuGH Zweifel feststellen (Verwerfungsmonopol, EuGH, Rs. 314/85, Foto-Frost). Das Verfahren dient der einheitlichen Auslegung. Eine willkürlich unterlassene Vorlage verletzt das Recht auf den gesetzlichen Richter, Art. 101 Abs. 1 S. 2 GG (vgl. BVerfGE 82, 159).
+  norms:
+  - Art. 267 AEUV
+  - Art. 101 Abs. 1 S. 2 GG
+  quellen:
+  - AEUV, amtliche Fassung
+  - EuGH, Rs. 283/81 (CILFIT)
+  - BVerfGE 82, 159
+  stand: 2026-10
+- slug: or-eu-vertragsverletzungsverfahren-art258
+  type: norm
+  front: "Wie läuft das Vertragsverletzungsverfahren nach Art. 258 AEUV ab?"
+  back: >-
+    Hat ein Mitgliedstaat nach Auffassung der Kommission gegen Unionsrecht verstoßen, gibt sie ihm im Vorverfahren Gelegenheit zur Äußerung (Mahnschreiben) und richtet dann eine mit Gründen versehene Stellungnahme an ihn (Art. 258 Abs. 1 AEUV). Kommt der Staat dieser innerhalb der gesetzten Frist nicht nach, kann die Kommission den EuGH anrufen (Abs. 2). Die Kommission hat bei der Einleitung ein Ermessen. Daneben kann auch ein Mitgliedstaat gegen einen anderen Staat klagen (Art. 259 AEUV, Staatenklage). Das Verfahren richtet sich gegen den Mitgliedstaat als Ganzes, unabhängig davon, welches innerstaatliche Organ (Gesetzgeber, Verwaltung, Gerichte) den Verstoß verursacht hat. Der EuGH stellt den Verstoß durch Urteil fest; kommt der Staat dem nicht nach, kann auf einen weiteren Antrag der Kommission ein Pauschalbetrag oder Zwangsgeld festgesetzt werden (Art. 260 AEUV).
+  norms:
+  - Art. 258 AEUV
+  - Art. 259 AEUV
+  - Art. 260 AEUV
+  quellen:
+  - AEUV, amtliche Fassung
+  stand: 2026-10
+- slug: or-eu-nichtigkeitsklage-art263
+  type: norm
+  front: "Welche Zulässigkeitsvoraussetzungen hat die Nichtigkeitsklage nach Art. 263 AEUV?"
+  back: >-
+    Mit der Nichtigkeitsklage überprüft der Gerichtshof der Europäischen Union die Rechtmäßigkeit von Gesetzgebungsakten und Handlungen von Organen, Einrichtungen und sonstigen Stellen, soweit sie Rechtswirkungen gegenüber Dritten entfalten. Klageberechtigt sind Mitgliedstaaten, Parlament, Rat und Kommission ohne weitere Voraussetzungen (privilegiert, Abs. 2). Natürliche und juristische Personen können gegen an sie gerichtete Handlungen klagen sowie gegen Handlungen, die sie unmittelbar und individuell betreffen, und gegen Rechtsakte mit Verordnungscharakter, die sie unmittelbar betreffen und keine Durchführungsmaßnahmen nach sich ziehen (Abs. 4). Individuelle Betroffenheit setzt voraus, dass der Kläger aus einem Kreis herausgehoben ist wie ein Adressat (EuGH, Rs. 25/62, Plaumann). Die Klage ist binnen zwei Monaten zu erheben (Abs. 6). Klagegründe sind Unzuständigkeit, Verletzung wesentlicher Formvorschriften, Vertragsverletzung und Ermessensmissbrauch (Abs. 2). Ist die Klage begründet, erklärt der Gerichtshof die Handlung für nichtig (Art. 264 AEUV).
+  norms:
+  - Art. 263 AEUV
+  - Art. 264 AEUV
+  quellen:
+  - AEUV, amtliche Fassung
+  - EuGH, Rs. 25/62 (Plaumann)
+  stand: 2026-10
+- slug: or-eu-art23-integrationsverantwortung
+  type: norm
+  front: "Welche Vorgaben macht Art. 23 GG für die europäische Integration, und was ist die Integrationsverantwortung?"
+  back: >-
+    Art. 23 Abs. 1 S. 1 GG verpflichtet Deutschland, zur Verwirklichung eines vereinten Europas an der Entwicklung der Europäischen Union mitzuwirken, die demokratischen, rechtsstaatlichen, sozialen und föderativen Grundsätzen und dem Grundsatz der Subsidiarität verpflichtet ist und einen dem Grundgesetz im Wesentlichen vergleichbaren Grundrechtsschutz gewährleistet (Struktursicherungsklausel). Hoheitsrechte können nur durch Gesetz mit Zustimmung des Bundesrates übertragen werden (S. 2); für Änderungen der vertraglichen Grundlagen gilt Art. 79 Abs. 2 und 3 GG (S. 3). Die Integrationsverantwortung der deutschen Verfassungsorgane umfasst die Pflicht, darauf zu achten, dass die Union im Rahmen der übertragenen Zuständigkeiten bleibt und die Verfassungsidentität gewahrt wird (BVerfGE 123, 267 – Lissabon). Bundestag und Bundesrat wirken in Angelegenheiten der Union nach Art. 23 Abs. 2 bis 7 GG mit. Die Integrationsgrenze liegt in Art. 79 Abs. 3 GG.
+  norms:
+  - Art. 23 Abs. 1 GG
+  - Art. 79 Abs. 3 GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 123, 267
+  stand: 2026-10
+- slug: or-eu-ultra-vires-identitaetskontrolle
+  type: streitstand
+  front: "Wie weit reicht die Ultra-vires- und Identitätskontrolle des Bundesverfassungsgerichts?"
+  back: >-
+    Das Bundesverfassungsgericht beansprucht neben der Grundrechtskontrolle zwei Vorbehalte gegenüber Unionsakten. Die Ultra-vires-Kontrolle prüft, ob Organe der Union die ihnen übertragenen Kompetenzen offensichtlich und in strukturell bedeutsamer Weise überschreiten; sie ist zurückhaltend und europarechtsfreundlich auszuüben und setzt regelmäßig vorherige Vorlage an den EuGH voraus (BVerfGE 126, 286 – Honeywell; BVerfGE 134, 366 und 142, 123 – OMT). Die Identitätskontrolle prüft, ob der unantastbare Kern der Verfassungsidentität nach Art. 79 Abs. 3 GG berührt wird (BVerfGE 123, 267; 140, 317 – Europäischer Haftbefehl II). Im PSPP-Urteil hat das Gericht erstmals eine EuGH-Entscheidung als kompetenzwidrig angesehen (BVerfGE 154, 17). Der EuGH beansprucht dagegen das Letztentscheidungsrecht über die Gültigkeit und Auslegung des Unionsrechts. Kritiker sehen in den Vorbehalten eine Gefährdung der einheitlichen Anwendung des Unionsrechts, Befürworter eine notwendige demokratische Rückbindung der Integration.
+  norms:
+  - Art. 23 Abs. 1 GG
+  - Art. 79 Abs. 3 GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 126, 286
+  - BVerfGE 123, 267
+  - BVerfGE 154, 17
+  stand: 2026-10
+- slug: or-eu-solange-grundrechtsschutz
+  type: rechtsprechung
+  front: "Wie entwickelte sich das Verhältnis des Bundesverfassungsgerichts zum EU-Grundrechtsschutz (Solange I, II, Bananenmarkt)?"
+  back: >-
+    In der Solange-I-Entscheidung hielt das Bundesverfassungsgericht deutsche Grundrechte als Maßstab für abgeleitetes Gemeinschaftsrecht für anwendbar, solange der Integrationsprozess keinen vergleichbaren Katalog garantierte (BVerfGE 37, 271). In Solange II gab es diese Prüfung auf: Solange die Europäischen Gemeinschaften einen wirksamen Grundrechtsschutz gewährleisten, der dem des Grundgesetzes im Wesentlichen gleichkommt, übt das Gericht seine Gerichtsbarkeit über Sekundärrecht nicht mehr aus (BVerfGE 73, 339). Im Bananenmarkt-Beschluss wurde konkretisiert, dass Vorlagen und Verfassungsbeschwerden nur zulässig sind, wenn dargelegt wird, dass der europäische Grundrechtsstandard generell unter das unabdingbare Maß abgesunken ist (BVerfGE 102, 147). Seit dem Vertrag von Lissabon ist zudem die Grundrechte-Charta rechtsverbindlich (Art. 6 Abs. 1 EUV), sodass der Grundrechtsschutz auf Unionsebene durch den EuGH gesichert wird; die Solange-Linie bleibt der Hintergrund der Grundrechtskontrolle.
+  norms:
+  - Art. 23 Abs. 1 S. 1 GG
+  - Art. 6 Abs. 1 EUV
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 37, 271
+  - BVerfGE 73, 339
+  - BVerfGE 102, 147
+  stand: 2026-10
+- slug: or-eu-recht-auf-vergessen
+  type: rechtsprechung
+  front: "Welche Maßstäbe gelten nach Recht auf Vergessen I und II für Grundrechtsprüfung bei Unionsrechtsbezug?"
+  back: >-
+    Mit den Beschlüssen vom 6.11.2019 hat das Bundesverfassungsgericht die Prüfung neu geordnet. Bei innerstaatlichem Recht, das nicht vollständig unionsrechtlich determiniert ist, bleibt das Grundgesetz Maßstab; es wird vermutet, dass dadurch auch der Grundrechtsschutz der Grundrechte-Charta gewahrt ist (Recht auf Vergessen I, BVerfGE 152, 152). Bei vollständig vereinheitlichtem Unionsrecht prüft das Gericht dagegen unmittelbar am Maßstab der Unionsgrundrechte, soweit sie die Grundrechte des Grundgesetzes verdrängen (Recht auf Vergessen II, BVerfGE 152, 216). Dies folgt aus der Funktionsübernahme des Gerichts: Es sichert den Grundrechtsschutz auch dann, wenn kein Rechtsweg zum EuGH besteht, und legt notfalls dem EuGH vor. Die Entscheidungen erweitern die Verfassungsbeschwerde, weil Einzelne sich auf die Charta-Grundrechte stützen können. Der Anwendungsbereich der Charta ist in Art. 51 Abs. 1 GRCh geregelt: Sie bindet die Mitgliedstaaten ausschließlich bei der Durchführung des Rechts der Union.
+  norms:
+  - Art. 23 Abs. 1 GG
+  - Art. 51 Abs. 1 GRCh
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 152, 152
+  - BVerfGE 152, 216
+  stand: 2026-10
+schemata:
+- slug: or-schema-eu-warenverkehrsfreiheit
+  title: Warenverkehrsfreiheit, Art. 34 ff. AEUV
+  norms:
+  - Art. 34 AEUV
+  - Art. 36 AEUV
+  quellen:
+  - AEUV, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Schutzbereich
+    children:
+    - label: 1. Persönlich - jedermann, auch Drittstaatsangehörige als Importeure
+    - label: 2. Sachlich - Ware, d. h. körperlicher Gegenstand mit Handelswert
+    - label: 3. Grenzüberschreitender Bezug zwischen Mitgliedstaaten
+  - label: II. Beeinträchtigung
+    children:
+    - label: 1. Zölle und Abgaben gleicher Wirkung, Art. 30 AEUV
+    - label: 2. Mengenmäßige Beschränkung oder Maßnahme gleicher Wirkung, Art. 34 AEUV
+    - label: 3. Dassonville-Formel - Eignung zur Behinderung
+    - label: 4. Ausnahme Verkaufsmodalitäten - Keck, wenn nicht diskriminierend
+    hinweis: Produktbezogene Regelungen fallen nicht unter Keck.
+  - label: III. Rechtfertigung
+    children:
+    - label: 1. Geschriebene Gründe, Art. 36 AEUV
+    - label: 2. Ungeschriebene zwingende Erfordernisse (Cassis) - nur bei unterschiedslos anwendbaren Maßnahmen
+    - label: 3. Verhältnismäßigkeit - Geeignetheit, Erforderlichkeit, Angemessenheit
+    hinweis: Milderes Mittel (Kennzeichnung, Warnhinweis) geht dem Verbot vor.
+  - label: IV. Rechtsfolge
+    hinweis: Anwendungsvorrang - die nationale Regelung bleibt unangewendet; ggf. Vorlage nach Art. 267 AEUV.
+- slug: or-schema-eu-nichtigkeitsklage
+  title: Nichtigkeitsklage, Art. 263 AEUV
+  norms:
+  - Art. 263 AEUV
+  - Art. 264 AEUV
+  quellen:
+  - AEUV, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Zulässigkeit
+    children:
+    - label: 1. Zuständigkeit - Gericht, Art. 256 Abs. 1 AEUV, bzw. Gerichtshof
+    - label: 2. Klagegegenstand - Handlung mit verbindlichen Rechtswirkungen
+    - label: 3. Klagebefugnis - privilegiert (Abs. 2), Adressat oder unmittelbar und individuell Betroffener (Abs. 4)
+    - label: 4. Klagefrist von zwei Monaten, Abs. 6
+  - label: II. Begründetheit
+    children:
+    - label: 1. Unzuständigkeit
+    - label: 2. Verletzung wesentlicher Formvorschriften
+    - label: 3. Verletzung der Verträge oder einer bei ihrer Durchführung anzuwendenden Rechtsnorm
+    - label: 4. Ermessensmissbrauch
+  - label: III. Rechtsfolge
+    hinweis: Nichtigerklärung ex tunc, Art. 264 AEUV; Wirkungen können aufrechterhalten werden.
+faelle:
+- slug: or-fall-eu-importverbot-nahrungsergaenzung
+  title: Das Verbot des spanischen Vitaminpräparats
+  difficulty: 4
+  minutes: 55
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - AEUV, amtliche Fassung
+  - GG, amtliche Fassung
+  facts: >-
+    Die spanische Herstellerin S vertreibt ein Nahrungsergänzungsmittel mit einem Vitamingehalt oberhalb eines in Deutschland festgesetzten Höchstwertes; in Spanien ist es rechtmäßig im Verkehr. Eine deutsche Verordnung untersagt das Inverkehrbringen solcher Präparate generell, ohne Rücksicht auf Herkunft. Die deutsche Behörde B untersagt der Importeurin I den Vertrieb des Mittels. Die Höchstwerte beruhen auf allgemeinen Vorsichtserwägungen; konkrete Gesundheitsgefahren bei dem festgesetzten Gehalt sind nicht belegt, ein Warnhinweis auf der Packung würde den Verbraucher ausreichend informieren. I klagt vor dem Verwaltungsgericht auf Aufhebung der Untersagung. Das Verwaltungsgericht ist unsicher, wie der EuGH die Frage beurteilt.
+  question: Verstößt das Verbot gegen die Warenverkehrsfreiheit? Muss oder darf das Verwaltungsgericht dem EuGH vorlegen?
+  steps:
+  - prompt: Liegt eine Maßnahme gleicher Wirkung wie eine mengenmäßige Beschränkung vor?
+    erwartung: Ja. Das Verbot betrifft die Beschaffenheit der Ware (Produktvorschrift) und ist geeignet, den Handel zwischen den Mitgliedstaaten zumindest mittelbar zu behindern (Dassonville). Die Keck-Ausnahme für Verkaufsmodalitäten greift bei produktbezogenen Regelungen nicht. Das Verbot gilt unterschiedslos, ist aber gleichwohl eine Beschränkung.
+  - prompt: Ist die Maßnahme gerechtfertigt?
+    erwartung: Zwingende Erfordernisse des Allgemeininteresses beziehungsweise Art. 36 AEUV kommen mit dem Gesundheitsschutz in Betracht; das Ziel ist legitim. Das Verbot ist aber unverhältnismäßig, weil konkrete Gefahren nicht belegt sind und ein Warnhinweis ein milderes, gleich geeignetes Mittel ist. Die Rechtfertigung scheitert.
+  - prompt: Welche Folge hat der Verstoß für die deutsche Regelung?
+    erwartung: Die deutsche Regelung genießt keinen Vorrang; sie bleibt wegen des Anwendungsvorrangs des Unionsrechts im Fall unangewendet. Die Untersagung der B ist rechtswidrig.
+  - prompt: Muss oder darf das Verwaltungsgericht vorlegen?
+    erwartung: Es darf vorlegen (Art. 267 Abs. 2 AEUV), muss es aber nicht, da seine Entscheidung noch mit Rechtsmitteln anfechtbar ist (keine Vorlagepflicht nach Abs. 3). Bei klarer Rechtslage (acte clair) bedarf es ohnehin keiner Vorlage.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Maßnahme gleicher Wirkung nach Dassonville bejaht, Keck-Ausnahme abgelehnt
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 34 AEUV
+      keywords:
+      - Maßnahme gleicher Wirkung
+      - Dassonville
+      - Art. 34 AEUV
+      - produktbezogene Regelung
+      - Keck
+      card_slugs:
+      - or-eu-dassonville-massnahme-gleicher-wirkung
+      - or-eu-keck-verkaufsmodalitaeten
+    - id: p2
+      label: Rechtfertigung durch Gesundheitsschutz geprüft und am Verhältnismäßigkeitsgrundsatz scheiternd
+      weight: 3.0
+      required: true
+      norms:
+      - Art. 36 AEUV
+      keywords:
+      - zwingende Erfordernisse
+      - Art. 36 AEUV
+      - Gesundheitsschutz
+      - Verhältnismäßigkeit
+      - milderes Mittel
+      - Warnhinweis
+      card_slugs:
+      - or-eu-cassis-de-dijon
+      - or-eu-grundfreiheiten-pruefung
+    - id: p3
+      label: Anwendungsvorrang - nationale Regelung bleibt unangewendet
+      weight: 2.0
+      required: true
+      keywords:
+      - Anwendungsvorrang
+      - unangewendet
+      - Vorrang des Unionsrechts
+      - nicht anwenden
+      card_slugs:
+      - or-eu-anwendungsvorrang
+    - id: p4
+      label: Vorlagerecht ohne Vorlagepflicht nach Art. 267 AEUV
+      weight: 1.5
+      required: false
+      norms:
+      - Art. 267 AEUV
+      keywords:
+      - Art. 267 Abs. 2 AEUV
+      - Vorlagerecht
+      - keine Vorlagepflicht
+      - Vorabentscheidungsverfahren
+      - letztinstanzliches Gericht
+      card_slugs:
+      - or-eu-vorabentscheidung-art267
