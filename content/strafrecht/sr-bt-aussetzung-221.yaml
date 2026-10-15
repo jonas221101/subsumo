@@ -1,0 +1,364 @@
+topic:
+  slug: sr-bt-aussetzung-221
+  area: strafrecht
+  title: "Aussetzung, § 221 StGB"
+  parent: sr-at
+  relevance: 3
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-aussetz-221-norm
+  type: norm
+  front: "Was regelt § 221 StGB (Aussetzung) und wie ist die Vorschrift aufgebaut?"
+  back: >-
+    § 221 Abs. 1 StGB bestraft (Freiheitsstrafe von drei Monaten bis zu fünf
+    Jahren), wer einen Menschen in eine hilflose Lage versetzt (Nr. 1) oder in
+    einer hilflosen Lage im Stich lässt, obwohl er ihn in seiner Obhut hat oder
+    ihm sonst beizustehen verpflichtet ist (Nr. 2), und ihn dadurch der Gefahr
+    des Todes oder einer schweren Gesundheitsschädigung aussetzt. Nr. 1 ist ein
+    Allgemeindelikt, das durch aktives Tun begangen wird; Nr. 2 ist ein
+    Sonderdelikt und echtes Unterlassungsdelikt, das eine besondere
+    Beistandspflicht voraussetzt. Beide Varianten sind konkrete
+    Gefährdungsdelikte: Es muss eine konkrete Gefahr für Leben oder Gesundheit
+    eingetreten sein, nicht aber ein Verletzungserfolg. Abs. 2 qualifiziert die
+    Tat gegen das eigene Kind oder eine zur Erziehung oder Betreuung anvertraute
+    Person sowie bei Verursachung einer schweren Gesundheitsschädigung, Abs. 3
+    die Verursachung des Todes. Abs. 4 sieht Strafmilderung für minder schwere
+    Fälle vor. Der Versuch ist nur bei den als Verbrechen eingestuften
+    Qualifikationen strafbar (§ 23 Abs. 1 StGB), nicht beim Grundtatbestand.
+  norms:
+  - "§ 221 Abs. 1 StGB"
+  - "§ 221 Abs. 2 StGB"
+  - "§ 221 Abs. 3 StGB"
+  - "§ 221 Abs. 4 StGB"
+  - "§ 23 Abs. 1 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-aussetz-221-hilflose-lage
+  type: definition
+  front: "Definiere: Hilflose Lage i.S.d. § 221 Abs. 1 StGB"
+  back: >-
+    Hilflos ist die Lage einer Person, wenn sie sich aus eigener Kraft nicht
+    gegen eine Gefahr für Leib oder Leben schützen kann und deshalb fremder
+    Hilfe bedarf. Die Hilflosigkeit kann auf äußeren Umständen (abgeschiedener
+    Ort, Dunkelheit, verschlossene Räume) oder auf persönlichen Eigenschaften
+    beruhen (Kleinkind, schwere Erkrankung, hohes Alter, Bewusstlosigkeit,
+    starke Alkoholisierung). Sie muss nicht vollständig sein; es genügt, dass
+    die Person bei den gegebenen Umständen ohne Hilfe nicht ausreichend
+    geschützt ist. Maßgeblich ist die konkrete Situation, nicht das bloße
+    Bestehen eines persönlichen Defizits. Bei Kindern hängt die Hilflosigkeit
+    vom Alter und von der konkreten Gefahrenlage ab; ein Kleinkind ist in einer
+    unbeaufsichtigten Wohnung regelmäßig hilflos.
+  norms:
+  - "§ 221 Abs. 1 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-aussetz-221-versetzen
+  type: definition
+  front: "Definiere: Versetzen in eine hilflose Lage, § 221 Abs. 1 Nr. 1 StGB"
+  back: >-
+    In eine hilflose Lage versetzt, wer durch aktives Tun eine Lage herbeiführt,
+    in der das Opfer ohne fremde Hilfe der Gefahr des Todes oder einer schweren
+    Gesundheitsschädigung ausgesetzt ist. Das kann durch räumliche Trennung vom
+    Schutz geschehen (Aussetzen in der Wildnis, Wegfahren und Zurücklassen) oder
+    durch Herbeiführen eines Zustands der Hilflosigkeit (z. B. Betäuben). Wer
+    ein Opfer, das bereits hilflos ist, lediglich in einer hilflosen Lage
+    belässt, versetzt es nicht; hier kommt nur Nr. 2 in Betracht. Nr. 1 setzt
+    keine besondere Beziehung zum Opfer voraus. Zwischen der Handlung und der
+    Hilflosigkeit muss Kausalität bestehen. Zusätzlich muss dadurch die Gefahr
+    des Todes oder einer schweren Gesundheitsschädigung eintreten.
+  norms:
+  - "§ 221 Abs. 1 Nr. 1 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-aussetz-221-im-stich-lassen
+  type: definition
+  front: "Definiere: Im-Stich-Lassen und Obhut- bzw. Beistandspflicht, § 221 Abs. 1 Nr. 2 StGB"
+  back: >-
+    Im Stich lässt, wer in einer bereits bestehenden hilflosen Lage die gebotene
+    Hilfe unterlässt, obwohl er sie leisten könnte. Täter kann nur sein, wer das
+    Opfer in seiner Obhut hat oder zum Beistand verpflichtet ist. Obhut bedeutet
+    tatsächliche Fürsorge für die Sicherheit des Opfers (z. B. Betreuer,
+    Babysitter, Pfleger, vorübergehend übernommene Aufsicht); die
+    Beistandspflicht kann sich aus Gesetz (Eltern, § 1626 BGB, § 1353 BGB unter
+    Ehegatten), Vertrag oder enger Lebensgemeinschaft ergeben und entspricht der
+    Garantenstellung aus § 13 StGB. Die Pflicht muss gerade den Schutz vor der
+    konkreten Gefahr umfassen. Eine bloße Hilfspflicht aus § 323c StGB
+    (allgemeine Hilfeleistungspflicht bei Unglücksfällen) reicht für Nr. 2
+    nicht. Ob das Im-Stich-Lassen eine räumliche Trennung voraussetzt, ist
+    streitig (eigene Karte).
+  norms:
+  - "§ 221 Abs. 1 Nr. 2 StGB"
+  - "§ 13 StGB"
+  - "§ 1626 BGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-aussetz-221-raeumliche-trennung
+  type: streitstand
+  front: "Streitstand: Setzt das Im-Stich-Lassen (§ 221 Abs. 1 Nr. 2 StGB) eine räumliche Trennung voraus?"
+  back: >-
+    Problem: Wer sich neben dem hilflosen Opfer befindet, ohne zu helfen (z. B.
+    Mutter sieht im Raum zu, wie das Kind in Gefahr gerät), könnte im Stich
+    lassen, auch ohne sich zu entfernen. Teile der Lit. verlangen eine räumliche
+    Trennung zwischen Täter und Opfer: Im Stich lassen bedeute das Verlassen des
+    Opfers und das Sich-Überlassen seiner Gefährdung; sonst verwische die Norm
+    die Grenze zur Tötung oder Körperverletzung durch Unterlassen. Die
+    überwiegende Ansicht verlangt keine räumliche Trennung: Entscheidend sei die
+    Verweigerung der gebotenen Hilfe trotz bestehender Obhutspflicht; auch der
+    anwesende Obhutspflichtige lasse das Opfer im Stich, wenn er ihm nicht
+    beisteht. Argumente: Wortlaut und Schutzzweck erfassen auch das untätige
+    Dabeibleiben, und die räumliche Trennung ist kein sachgerechtes
+    Abgrenzungskriterium. Für die Klausur genügt es, die Streitfrage
+    anzusprechen, wenn der Täter am Ort bleibt; in den typischen Klausurfällen
+    (Eltern verlassen das Kind) ist sie nicht entscheidungserheblich.
+  norms:
+  - "§ 221 Abs. 1 Nr. 2 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-aussetz-221-gefahr
+  type: definition
+  front: "Definiere: Gefahr des Todes oder einer schweren Gesundheitsschädigung, § 221 Abs. 1 StGB"
+  back: >-
+    Es muss eine konkrete Gefahr eingetreten sein, d. h. ein Zustand, in dem
+    nach den konkreten Umständen der Eintritt der Verletzung nur noch vom Zufall
+    abhängt (Beinahe-Schaden) oder die Gefahr so nahe liegt, dass ihr Ausbleiben
+    nicht erklärbar wäre. Die abstrakte Möglichkeit einer Gefährdung reicht
+    nicht. Zu bejahen ist die Gefahr z. B. bei Kleinkindern allein in einer
+    Wohnung mit offenem Balkon, bei Hilflosen in lebensbedrohlicher Kälte oder
+    bei Ausbleiben dringender medizinischer Versorgung. Gefahr einer schweren
+    Gesundheitsschädigung ist nicht auf die Fälle des § 226 StGB beschränkt,
+    aber es muss sich um erhebliche, gewichtige Beeinträchtigungen handeln (z.
+    B. ernste dauernde Krankheit, erhebliche Beeinträchtigung der Gesundheit).
+    Die Gefahr muss durch die Tathandlung (Nr. 1) bzw. das Im-Stich-Lassen (Nr.
+    2) verursacht oder verschärft worden sein. Der Vorsatz muss die Gefahr
+    einschließen; bedingter Vorsatz genügt.
+  norms:
+  - "§ 221 Abs. 1 StGB"
+  - "§ 15 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-aussetz-221-qualifikationen
+  type: norm
+  front: "Welche Qualifikationen enthält § 221 Abs. 2 bis 4 StGB?"
+  back: >-
+    Abs. 2 sieht einen erhöhten Strafrahmen (Freiheitsstrafe von einem Jahr bis
+    zu zehn Jahren) vor, wenn der Täter die Tat gegen sein Kind oder eine ihm
+    zur Erziehung oder zur Betreuung in der Lebensführung anvertraute Person
+    begeht (Nr. 1) oder durch die Tat eine schwere Gesundheitsschädigung des
+    Opfers verursacht (Nr. 2). Abs. 3 enthält eine Erfolgsqualifikation für die
+    Verursachung des Todes des Opfers (Freiheitsstrafe nicht unter drei Jahren).
+    Wegen der Erfolgsqualifikation ist § 18 StGB zu beachten: Hinsichtlich der
+    besonderen Folge ist wenigstens Fahrlässigkeit erforderlich; die Tat ist in
+    diesem Fall Verbrechen, der Versuch ist strafbar. Bei vorsätzlicher
+    Herbeiführung des Todes besteht Tateinheit mit den Tötungsdelikten. Abs. 4
+    sieht für minder schwere Fälle der Abs. 2 und 3 einen milderen Strafrahmen
+    vor. Nach Abs. 2 Nr. 1 reicht jedes Kind (auch das eigene Kind des Täters),
+    unabhängig vom Alter; für 'anvertraute Personen' kommt es auf die
+    tatsächliche Betreuungsbeziehung an.
+  norms:
+  - "§ 221 Abs. 2 StGB"
+  - "§ 221 Abs. 3 StGB"
+  - "§ 221 Abs. 4 StGB"
+  - "§ 18 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-aussetz-221-abgrenzung
+  type: definition
+  front: "Abgrenzung und Konkurrenzen: § 221 StGB, § 323c StGB, Unterlassungsdelikte (§§ 13, 212, 223 StGB)"
+  back: >-
+    § 323c StGB (unterlassene Hilfeleistung) ist ein Jedermann-Delikt bei
+    Unglücksfällen; § 221 Abs. 1 Nr. 2 StGB setzt eine besondere Obhuts- oder
+    Beistandspflicht voraus und geht als spezieller vor. Wer Garant ist und es
+    unterlässt, einen Erfolg abzuwenden, kann außerdem wegen Tötungs- oder
+    Körperverletzungsdelikten durch Unterlassen nach § 13 StGB strafbar sein;
+    das setzt Verletzungsvorsatz (oder Fahrlässigkeit) voraus. Dann ist § 221
+    StGB regelmäßig Vorstufe: Hatte der Täter nur Gefährdungsvorsatz und ist der
+    Erfolg nicht eingetreten, bleibt es bei § 221 StGB; tritt der Erfolg ein,
+    wird § 221 StGB je nach Vorsatz verdrängt oder besteht in Tateinheit mit §§
+    212, 223 ff., 222, 229 StGB. In Klausuren ist § 221 StGB häufig mit der
+    Verletzung der Fürsorgepflicht (§ 171 StGB) und § 225 StGB zusammen zu
+    prüfen. Hat der Täter ein Kind aktiv gefährdet, ist nach Nr. 1 zu prüfen;
+    hat er untätig zugesehen, nach Nr. 2.
+  norms:
+  - "§ 221 StGB"
+  - "§ 323c StGB"
+  - "§ 13 StGB"
+  - "§ 171 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: sr-aussetz-schema-221
+  title: "Aussetzung, § 221 StGB"
+  norms:
+  - "§ 221 Abs. 1 StGB"
+  - "§ 221 Abs. 2 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+  steps:
+  - label: "I. Tatbestand"
+    children:
+    - label: "1. Objektiver Tatbestand"
+      children:
+      - label: "a) Tatobjekt: ein Mensch"
+      - label: "b) Tathandlung"
+        children:
+        - label: "aa) Nr. 1: Versetzen in eine hilflose Lage (aktives Tun)"
+        - label: "bb) Nr. 2: Im-Stich-Lassen in hilfloser Lage bei Obhut oder Beistandspflicht (Unterlassen)"
+          hinweis: >-
+            Garantenstellung/Obhut prüfen; räumliche Trennung nur bei Anlass
+            erörtern.
+      - label: "c) Hilflose Lage"
+      - label: "d) Kausal herbeigeführte konkrete Gefahr des Todes oder einer schweren Gesundheitsschädigung"
+        hinweis: >-
+          Konkrete Gefahr: Eintritt der Verletzung hängt vom Zufall ab.
+    - label: "2. Subjektiver Tatbestand: Vorsatz bezüglich aller Merkmale einschließlich Gefahr"
+      hinweis: >-
+        Bedingter Vorsatz genügt.
+  - label: "II. Rechtswidrigkeit"
+  - label: "III. Schuld"
+  - label: "IV. Qualifikationen, § 221 Abs. 2 und 3 StGB"
+    hinweis: >-
+      Eigenes Kind/anvertraute Person, schwere Gesundheitsschädigung,
+      Todesverursachung (§ 18 StGB).
+  - label: "V. Konkurrenzen"
+    hinweis: >-
+      Zu §§ 323c, 171, 225 und den Verletzungs-/Tötungsdelikten durch
+      Unterlassen.
+faelle:
+- slug: sr-aussetz-fall-balkon
+  title: "Das Kind auf dem Balkon"
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - "Eigener Sachverhalt der Redaktion"
+  stand: 2026-10
+  facts: >-
+    M ist alleinerziehende Mutter eines zweijährigen Sohnes S. Sie wohnt mit S
+    in einer Wohnung im vierten Stock; zur Wohnung gehört ein Balkon, dessen
+    Brüstung nur hüfthoch ist. S kann seit einigen Wochen selbstständig die
+    Balkontür öffnen, was M weiß. Eines Abends möchte M ausgehen und findet
+    keine Betreuung. Sie lässt S schlafend allein zurück, schließt die
+    Wohnungstür ab und lässt die Balkontür unverschlossen; sie rechnet damit,
+    dass S nicht aufwachen wird, hält es aber für möglich und nimmt das hin.
+    Nach etwa zwei Stunden erwacht S, öffnet die Balkontür, tritt auf den Balkon
+    und versucht, auf einen dort stehenden Stuhl zu klettern. Ein Nachbar
+    bemerkt dies, alarmiert die Feuerwehr und rettet S durch Klingeln und
+    Eindringen in die Wohnung rechtzeitig. S bleibt unverletzt.
+  question: >-
+    Wie hat sich M nach § 221 StGB strafbar gemacht? Tötungs- und
+    Körperverletzungsdelikte sowie §§ 171 und 323c StGB sind nicht zu prüfen.
+  steps:
+  - prompt: >-
+      Welche Variante des § 221 Abs. 1 StGB kommt in Betracht und warum?
+    erwartung: >-
+      In Betracht kommt Nr. 2 (Im-Stich-Lassen). S war als Zweijähriger allein
+      in der Wohnung bereits hilflos; M hat ihn nicht erst in diese Lage
+      versetzt (Nr. 1 scheidet aus), sondern ihn in seiner hilflosen Lage allein
+      gelassen. M ist als Mutter Obhutspflichtige (§ 1626 BGB) und Garantin.
+  - prompt: >-
+      Ist S der Gefahr des Todes oder einer schweren Gesundheitsschädigung
+      ausgesetzt worden?
+    erwartung: >-
+      Ja. Durch die unverschlossene Balkontür im vierten Stock bei hüfthoher
+      Brüstung bestand eine konkrete Gefahr eines Sturzes mit tödlichen oder
+      schweren Verletzungen; es war nur dem rettenden Eingreifen des Nachbarn zu
+      verdanken, dass nichts geschah.
+  - prompt: >-
+      Handelte M vorsätzlich?
+    erwartung: >-
+      Ja, mit bedingtem Vorsatz. M wusste, dass S die Tür öffnen kann, hielt
+      sein Erwachen für möglich und nahm die Gefahr billigend in Kauf. Ein
+      Vertrauen auf ein Ausbleiben der Gefahr (bewusste Fahrlässigkeit) ist
+      angesichts des Wissens nicht plausibel.
+  - prompt: >-
+      Welche Qualifikation ist einschlägig?
+    erwartung: >-
+      § 221 Abs. 2 Nr. 1 StGB: Die Tat richtet sich gegen das eigene Kind. Eine
+      schwere Gesundheitsschädigung (Abs. 2 Nr. 2) oder der Tod (Abs. 3) sind
+      nicht eingetreten. Rechtfertigungs- oder Entschuldigungsgründe liegen
+      nicht vor; der Mangel an Betreuung rechtfertigt das Alleinlassen nicht.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: "Variante Nr. 2 (Im-Stich-Lassen) gewählt, Nr. 1 abgegrenzt"
+      weight: 2.0
+      required: true
+      norms:
+      - "§ 221 Abs. 1 Nr. 2 StGB"
+      keywords:
+      - "Im-Stich-Lassen"
+      - "im Stich gelassen"
+      - "hilflose Lage"
+      - "§ 221 Abs. 1 Nr. 2"
+      - "Versetzen in eine hilflose Lage"
+      card_slugs:
+      - sr-aussetz-221-im-stich-lassen
+      - sr-aussetz-221-versetzen
+    - id: p2
+      label: "Obhut/Beistandspflicht der Mutter (Garantenstellung) festgestellt"
+      weight: 2.0
+      required: true
+      norms:
+      - "§ 221 Abs. 1 Nr. 2 StGB"
+      - "§ 1626 BGB"
+      - "§ 13 StGB"
+      keywords:
+      - "Obhut"
+      - "Beistandspflicht"
+      - "Garantenstellung"
+      - "Sorgepflicht"
+      - "elterliche Sorge"
+      card_slugs:
+      - sr-aussetz-221-im-stich-lassen
+    - id: p3
+      label: "Konkrete Gefahr des Todes/schwerer Gesundheitsschädigung bejaht"
+      weight: 2.5
+      required: true
+      norms:
+      - "§ 221 Abs. 1 StGB"
+      keywords:
+      - "konkrete Gefahr"
+      - "Gefahr des Todes"
+      - "schwere Gesundheitsschädigung"
+      - "konkretes Gefährdungsdelikt"
+      - "Beinahe-Schaden"
+      card_slugs:
+      - sr-aussetz-221-gefahr
+    - id: p4
+      label: "Bedingter Vorsatz bezüglich der Gefahr"
+      weight: 1.5
+      required: false
+      norms:
+      - "§ 15 StGB"
+      keywords:
+      - "bedingter Vorsatz"
+      - "billigend in Kauf"
+      - "dolus eventualis"
+      - "bewusste Fahrlässigkeit"
+      card_slugs:
+      - sr-aussetz-221-gefahr
+    - id: p5
+      label: "Qualifikation § 221 Abs. 2 Nr. 1 StGB (eigenes Kind)"
+      weight: 1.5
+      required: false
+      norms:
+      - "§ 221 Abs. 2 StGB"
+      keywords:
+      - "§ 221 Abs. 2 Nr. 1"
+      - "eigenes Kind"
+      - "gegen sein Kind"
+      - "Qualifikation"
+      card_slugs:
+      - sr-aussetz-221-qualifikationen
