@@ -81,8 +81,9 @@ cards:
     mutmaßlichen Willen des Berechtigten widerspricht; sie wird wegen ihrer Weite kritisiert
     und würde fast jede vertragswidrige Nutzung erfassen. Die computerspezifische Auffassung
     verlangt eine Einwirkung, die gegenüber dem Computer selbst unbefugt ist, etwa die Überwindung
-    von Sicherungen oder das Verwenden fremder Zugangsdaten; sie ist zu eng, weil vom Wortlaut
-    auch die Manipulation von Eingaben ohne Täuschungsähnlichkeit abgedeckt wäre. Die h. M.
+    von Sicherungen oder das Verwenden fremder Zugangsdaten; sie wird kritisiert, weil sie die
+    Verwendung echter Daten durch Nichtberechtigte (etwa bei bloßer Eingabe von Karte
+    und PIN) nur schwer erfassen kann und den Bezug zum Betrug als Leitbild aufgibt. Die h. M.
     und die Rspr. vertreten die betrugsspezifische Auslegung: Unbefugt ist die Verwendung
     nur dann, wenn sie gegenüber einer natürlichen Person, die den Vorgang prüfen würde, eine
     Täuschung über die Berechtigung darstellen würde (Täuschungsäquivalenz). Diese Auslegung
@@ -355,9 +356,9 @@ faelle:
       eingetreten?
     erwartung: >-
       Ja - der Automat gibt 500 Euro aus, die Auszahlung ist die unmittelbare Folge. Ein Schaden
-      entsteht bei der Bank, die dem Konto des O belastet und ihm den Betrag erstattet hat,
-      ohne ihn von O ersetzt verlangen zu können; das Vermögen der Bank ist um 500 Euro gemindert
-      (Gesamtsaldierung).
+      entsteht bei der Bank: Sie hat dem O den belasteten Betrag erstattet, ohne von
+      ihm Ersatz verlangen zu können; ihr Vermögen ist um 500 Euro gemindert (Vermögensschaden
+      der Bank, Gesamtsaldierung).
   - prompt: >-
       Handelte D vorsätzlich und mit Bereicherungsabsicht?
     erwartung: >-
@@ -365,9 +366,9 @@ faelle:
       verschaffen (Stoffgleichheit).
   - prompt: Ergebnis?
     erwartung: >-
-      D ist wegen Computerbetrugs nach § 263a Abs. 1 Var. 3 StGB strafbar. Ein Diebstahl am
-      ausgegebenen Geld liegt nach der h. M. mangels Wegnahme nicht vor (Gewahrsamsübertragung
-      durch den Automaten).
+      D ist wegen Computerbetrugs nach § 263a Abs. 1 Var. 3 StGB strafbar. Es liegt
+      kein Diebstahl am ausgegebenen Geld vor, denn der Automat gibt es im Wege der
+      Gewahrsamsübertragung aus; es fehlt der Gewahrsamsbruch.
   expectation:
     pruefpunkte:
     - id: p1

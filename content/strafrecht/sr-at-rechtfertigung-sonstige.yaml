@@ -46,7 +46,7 @@ cards:
     kommt ein Erlaubnistatbestandsirrtum in Betracht (Behandlung: eingeschränkte
     Schuldtheorie; Vorsatzschuld entfällt entsprechend § 16 Abs. 1 StGB).
 
-    Prozessrechtliche Auffassung und Teile der Rspr.: Es genügt ein dringender Tatverdacht,
+    Prozessrechtlich orientierte Auffassung (Teile der Literatur): Es genügt ein dringender Tatverdacht,
     weil die Festnahme gerade der Klärung dient und der Verdächtige Eingriffe dulden
     muss. Rechtfertigung auch bei Unschuld, wenn der Verdacht objektiv bestand.
 
@@ -90,11 +90,12 @@ cards:
     handelt nicht widerrechtlich, wenn obrigkeitliche Hilfe nicht rechtzeitig zu
     erlangen ist und ohne sofortiges Eingreifen die Gefahr besteht, dass die Verwirklichung
     des Anspruchs vereitelt oder wesentlich erschwert wird (§ 229 BGB). Erforderlich
-    ist ein durchsetzbarer, fälliger Anspruch (nicht bloß Einrede). Die Selbsthilfe
+    ist ein durchsetzbarer, fälliger und einredefreier Anspruch. Die Selbsthilfe
     darf nicht weiter gehen, als zur Abwendung der Gefahr erforderlich ist (§ 230
-    Abs. 1 BGB). Die Wegnahme verlangt unverzüglich einen Antrag auf dinglichen
-    Arrest (§ 230 Abs. 2 BGB); bei Festnahme ist der Verpflichtete unverzüglich dem
-    Gericht vorzuführen (§ 230 Abs. 3 BGB). Im Strafrecht rechtfertigt § 229 BGB
+    Abs. 1 BGB). Nach einer Wegnahme ist, sofern nicht Zwangsvollstreckung erwirkt
+    wird, der dingliche Arrest zu beantragen (§ 230 Abs. 2 BGB); bei einer Festnahme
+    ist der persönliche Sicherheitsarrest zu beantragen und der Verpflichtete unverzüglich
+    dem Amtsgericht vorzuführen (§ 230 Abs. 3 BGB). Im Strafrecht rechtfertigt § 229 BGB
     etwa § 303 StGB (Sachbeschädigung), § 240 StGB und § 239 StGB.
   norms:
   - § 229 BGB
@@ -142,8 +143,9 @@ cards:
     dem Eigentümer entstehenden Schaden unverhältnismäßig groß ist. Der Eigentümer
     kann Ersatz des Schadens verlangen. Maßgeblich ist, ob die Gefahr von der Sache
     ausgeht (§ 228 BGB) oder von außen, die Sache also unbeteiligter Dritter ist (§ 904 BGB).
-    Beide Normen können § 303 StGB rechtfertigen; § 34 StGB tritt demgegenüber als
-    allgemeiner Rechtfertigungsgrund hinter den spezielleren Vorschriften zurück.
+    Beide Normen können § 303 StGB rechtfertigen; § 34 StGB tritt als
+    allgemeiner Rechtfertigungsgrund insoweit hinter diese spezielleren Vorschriften
+    zurück.
   norms:
   - § 228 BGB
   - § 904 BGB
@@ -300,15 +302,18 @@ faelle:
       und Gesundheitsschädigung (§ 223 Abs. 1 StGB). Das Festhalten hindert K an der
       Fortbewegung und ist eine Freiheitsberaubung (§ 239 Abs. 1 StGB).
   - prompt: Kommt eine Rechtfertigung nach § 127 Abs. 1 S. 1 StPO in Betracht?
-    erwartung: Ja. K hat einen Diebstahl begangen (§ 242 Abs. 1 StGB) und wurde bei
-      der Tat betroffen bzw. unmittelbar danach verfolgt. K wollte fliehen und weigerte
-      sich, seine Identität zu nennen; damit liegt ein Festnahmegrund vor.
+    erwartung: Ja. K hat einen Diebstahl begangen (§ 242 Abs. 1 StGB) und wurde auf
+      frischer Tat verfolgt. K wollte fliehen (Fluchtverdacht) und weigerte sich, seine
+      Identität zu nennen, sodass die Identität nicht sofort festgestellt werden konnte;
+      damit liegt ein Festnahmegrund vor.
   - prompt: War die Gewaltanwendung erforderlich und verhältnismäßig?
-    erwartung: Ja. Das Festhalten am Arm ist das mildeste Mittel zur Sicherung der
-      Festnahme; die leichte Prellung ist eine unvermeidbare Folge und steht nicht
-      außer Verhältnis. Es wurde keine überzogene Gewalt angewandt.
+    erwartung: Ja, die Gewalt war erforderlich und verhältnismäßig. Das Festhalten
+      am Arm ist das mildeste Mittel zur Sicherung der Festnahme; die leichte Prellung
+      ist eine unvermeidbare Folge und steht nicht außer Verhältnis. Es wurde keine
+      überzogene Gewalt angewandt.
   - prompt: Hatte D das subjektive Rechtfertigungselement?
-    erwartung: Ja. D wollte K festhalten, um ihn der Polizei zu übergeben.
+    erwartung: Ja. D handelte mit Festnahmewille (subjektives Rechtfertigungselement) und
+      wollte K festhalten, um ihn der Polizei zu übergeben (Übergabe an die Polizei).
   - prompt: Wie ist das Ergebnis?
     erwartung: D ist gerechtfertigt (§ 127 Abs. 1 S. 1 StPO) und daher nicht strafbar.
   expectation:
@@ -345,9 +350,12 @@ faelle:
       keywords:
       - auf frischer Tat
       - frischer Tat betroffen
+      - frischer Tat verfolgt
       - Fluchtverdacht
+      - der Flucht verdächtig
       - Identität nicht sofort festgestellt
       - Identität nicht feststellbar
+      - Festnahmegrund
       card_slugs:
       - sr-rsonst-127-voraussetzungen
     - id: p4

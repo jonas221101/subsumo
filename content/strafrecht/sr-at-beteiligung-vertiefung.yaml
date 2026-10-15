@@ -55,7 +55,7 @@ cards:
   stand: 2026-10
 - slug: sr-beteil-28-mordmerkmale
   type: streitstand
-  front: 'Streitstand: § 28 StGB und die täterbezogenen Mordmerkmale (§ 211 Abs. 2 Gruppe 1 und 3)'
+  front: 'Streitstand: Rechtsnatur des § 211 StGB (eigener Tatbestand oder Qualifikation) und die Folgen für § 28 StGB'
   back: >-
     Problem: Habgier, Mordlust oder Verdeckungsabsicht sind besondere persönliche
     Merkmale. Offen ist, ob sie bei einer Beteiligung nach § 28 Abs. 1 oder Abs. 2
@@ -112,7 +112,8 @@ cards:
   back: >-
     Im Katzenkönig-Fall (BGHSt 35, 347) hatte der Hintermann beim Vordermann durch
     Irrtumserregung einen (vermeidbaren) Verbotsirrtum hervorgerufen. Der Vordermann
-    war damit selbst vorsätzlich handelnder und strafbarer Täter. Der BGH nahm gleichwohl
+    war damit selbst vorsätzlich handelnder und (bei Vermeidbarkeit des Irrtums) strafbarer
+    Täter. Der BGH nahm gleichwohl
     mittelbare Täterschaft des Hintermanns an: Wer einen anderen durch gezielte Täuschung
     in einen vermeidbaren Verbotsirrtum versetzt, beherrscht dessen Tat kraft überlegenen
     Wissens. Der Hintermann ist deshalb Täter hinter dem voll verantwortlichen Täter.
@@ -155,7 +156,7 @@ cards:
     Zu klären ist, ob der Hintermann gleichwohl mittelbarer Täter (§ 25 Abs. 1 Var. 2
     StGB) sein kann.
 
-    Rechtsprechung und h.L. (Roxin): Ja. Die organisatorische Herrschaft über einen
+    Rechtsprechung und ein Teil der Literatur (Roxin): Ja. Die organisatorische Herrschaft über einen
     rechtsgelösten Apparat mit austauschbaren Ausführenden begründet eine eigenständige
     Form der Tatherrschaft. Der Hintermann beherrscht die Tat durch den Apparat; die
     Verantwortlichkeit des Vordermanns steht dem nicht entgegen.
@@ -250,26 +251,25 @@ cards:
     Problem: Der Anstifter bestimmt den Haupttäter, einen bestimmten O zu töten;
     der Haupttäter verwechselt O mit einem anderen und tötet diesen (error in persona
     des Haupttäters, Rose-Rosahl-Fall, Preußisches Obertribunal 1859). Für den
-    Haupttäter ist der Irrtum unbeachtlich, weil Tatobjekte gleichwertig sind. Für
-    den Anstifter ist streitig:
+    Haupttäter ist der Irrtum unbeachtlich, weil die Tatobjekte gleichwertig sind.
+    Für den Anstifter ist streitig:
 
-    Unbeachtlichkeitslehre (früher h.M.): Die Verwechslung ist für den Anstifter
-    eine unwesentliche Abweichung vom vorgestellten Kausalverlauf; er haftet wegen
-    vollendeter Anstiftung.
+    Unbeachtlichkeitslehre (klassische Lösung seit Rose-Rosahl): Die Verwechslung
+    ist für den Anstifter eine unwesentliche Abweichung vom vorgestellten Geschehen;
+    er haftet wegen vollendeter Anstiftung.
 
-    Aberratio-ictus-Lehre (heute h.L.): Aus Sicht des Anstifters hat der Haupttäter
-    das konkretisierte Opfer verfehlt (aberratio ictus). Der Anstifter haftet nur
-    wegen versuchter Anstiftung (§ 30 Abs. 1 StGB) in Tateinheit mit etwaiger Fahrlässigkeit
-    am tatsächlich getroffenen Opfer. Argument: Die Verwechslung ist vom Anstiftervorsatz nicht gedeckt;
-    bei Unbeachtlichkeit könnte der Anstifter ferner mehrfach haften, wenn der
-    Haupttäter den Irrtum bemerkt und anschließend das gemeinte Opfer tötet (Blutbadargument).
+    Aberratio-ictus-Lehre (von einem erheblichen Teil der Literatur vertreten): Aus
+    Sicht des Anstifters hat der Haupttäter das konkretisierte Opfer verfehlt. Er
+    haftet nur wegen versuchter Anstiftung (§ 30 Abs. 1 StGB), gegebenenfalls in
+    Tateinheit mit Fahrlässigkeit am getroffenen Opfer. Argument: Die Verwechslung
+    ist vom Anstiftervorsatz nicht gedeckt; sonst könnte der Anstifter mehrfach haften,
+    wenn der Haupttäter den Irrtum bemerkt und anschließend auch O tötet (Blutbadargument).
 
-    Differenzierende Lösung: Hat der Anstifter die Individualisierung des Opfers dem
-    Haupttäter überlassen, ist der Irrtum für ihn unbeachtlich; hat er das Opfer
-    selbst genau bestimmt, liegt eine wesentliche Abweichung vor (aberratio ictus).
+    Differenzierende Lösung: Hat der Anstifter die Auswahl des Opfers dem Haupttäter
+    überlassen, ist der Irrtum unbeachtlich; hat er das Opfer selbst bestimmt, liegt
+    eine wesentliche Abweichung vor.
 
-    Klausurhinweis: Streit offenlegen; die Auflösung hängt vom Maß der Individualisierung
-    ab.
+    Klausurhinweis: Streit offenlegen und begründet entscheiden.
   norms:
   - § 26 StGB
   - § 30 Abs. 1 StGB
@@ -328,9 +328,10 @@ faelle:
     zu seinem gutgläubigen Bekannten B wahrheitswidrig, das Fahrrad im Hof gehöre
     ihm, und bittet B, es zu holen. B nimmt das Rad aus dem Hof mit und übergibt es
     A, der es für sich behält. Später ist A wegen eines Erbschaftsstreits wütend auf
-    seinen Bruder E. Er bittet seinen Freund D, den E für 5.000 Euro zu töten. D lehnt
+    seinen Bruder E. Er bittet seinen Freund D, den E zu töten, damit endlich Ruhe herrsche; eine Belohnung
+    verspricht er nicht. D lehnt
     entschieden ab und ruft die Polizei.
-  question: Wie haben sich A (und B) strafbar gemacht?
+  question: Wie haben sich A (und B) strafbar gemacht? Mordmerkmale sind nicht zu prüfen.
   steps:
   - prompt: Ist B strafbar?
     erwartung: Nein. B handelt ohne Vorsatz hinsichtlich der Fremdheit der Sache (§ 16
@@ -373,8 +374,11 @@ faelle:
       - § 25 Abs. 1 Var. 2 StGB
       keywords:
       - mittelbare Täterschaft
+      - mittelbarer Täterschaft
+      - mittelbarer Täter
       - § 25 Abs. 1 Var. 2
       - überlegenes Wissen
+      - überlegenen Wissens
       - Wissensherrschaft
       - Werkzeug
       - Tatherrschaft kraft Irrtumsherrschaft

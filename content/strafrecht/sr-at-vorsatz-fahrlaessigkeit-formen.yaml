@@ -95,29 +95,29 @@ cards:
   stand: 2026-10
 - slug: sr-vorf-dolus-eventualis-theorien
   type: streitstand
-  front: 'Streitstand: Wie wird dolus eventualis von bewusster Fahrlässigkeit abgegrenzt?'
+  front: 'Streitstand: Möglichkeits-, Wahrscheinlichkeits-, Billigungs- und Gleichgültigkeitstheorie - Stärken, Schwächen und Anwendung in der Klausur'
   back: >-
-    Problem: Bei Wissen um die Möglichkeit des Erfolgs ist zu klären, wann dies
-    noch als bewusste Fahrlässigkeit und wann als bedingter Vorsatz gilt.
+    Problem: Beim Wissen um die Möglichkeit des Erfolgs ist zu klären, ab wann
+    bedingter Vorsatz statt bewusster Fahrlässigkeit vorliegt.
 
-    Möglichkeitstheorie: Vorsatz, sobald der Täter die konkrete Möglichkeit des
-    Erfolgs erkennt. Kritik: macht jede bewusste Fahrlässigkeit zu Vorsatz.
+    Möglichkeitstheorie: Vorsatz, sobald der Täter die konkrete Möglichkeit erkennt.
+    Schwäche: Das Willenselement entfällt, bewusste Fahrlässigkeit würde praktisch
+    verschwinden.
 
     Wahrscheinlichkeitstheorie: Vorsatz, wenn der Täter den Erfolg für wahrscheinlich
-    hält. Kritik: Der Wahrscheinlichkeitsgrad ist nicht bestimmbar, das Willenselement
-    wird vernachlässigt.
+    hält. Schwäche: Der Grad ist nicht bestimmbar, das Wollen bleibt unbeachtet.
 
     Billigungs- bzw. Einwilligungstheorie (Rspr.): Vorsatz, wenn der Täter den Erfolg
-    für möglich hält und billigend in Kauf nimmt oder sich mit ihm abfindet. Der
-    Täter muss den Erfolg nicht wünschen. Maßgeblich ist eine Gesamtbetrachtung aller
-    objektiven und subjektiven Umstände. Vorteil: berücksichtigt beide Elemente.
+    für möglich hält und billigend in Kauf nimmt oder sich mit ihm abfindet; er muss
+    ihn nicht wünschen. Stärke: Beide Elemente werden berücksichtigt.
 
-    Gleichgültigkeitstheorie und Ernstnahme- bzw. Vermeidungstheorien (Lit.): Vorsatz,
-    wenn der Täter die Gefahr ernst nimmt und keine eigenen Vermeidungsbemühungen
-    erkennen lässt bzw. sich mit dem Erfolg abfindet.
+    Gleichgültigkeits- und Ernstnahmetheorien (Lit.): Vorsatz bei Gleichgültigkeit
+    des Täters bzw. wenn er die Gefahr ernst nimmt und keine Vermeidebemühungen
+    zeigt.
 
-    Ergebnis: Die Rspr. folgt der Billigungstheorie; in Klausuren sind die Abweichungen
-    gering, meist genügt die Darstellung der Rspr.-Formel mit Prüfung aller Umstände.
+    Anwendung: Die Theorien führen meist zum selben Ergebnis. Dann genügt die Anwendung
+    der Rspr.-Formel in einer Gesamtbetrachtung aller objektiven und subjektiven
+    Umstände; ein Streit ist nur zu entscheiden, wenn die Ergebnisse divergieren.
   norms:
   - § 15 StGB
   quellen:
@@ -125,9 +125,9 @@ cards:
   stand: 2026-10
 - slug: sr-vorf-hemmschwelle-lederriemen
   type: rechtsprechung
-  front: 'Rspr.: Tötungsvorsatz bei gefährlicher Gewalt - "Hemmschwelle" (BGHSt 36, 1, Lederriemen-Fall)'
+  front: 'Rspr.: Beweisanzeichen für bedingten Tötungsvorsatz bei äußerst gefährlicher Gewalt (BGHSt 36, 1)'
   back: >-
-    Im Lederriemen-Fall (BGHSt 36, 1) befasste sich der BGH mit der Frage, wann bei
+    In BGHSt 36, 1 befasste sich der BGH mit der Frage, wann bei
     äußerst gefährlichen Gewalthandlungen bedingter Tötungsvorsatz anzunehmen ist.
     Die Entscheidung gilt als Ausgangspunkt der Hemmschwellenrechtsprechung: Bei
     Tötungsdelikten sei die Hemmschwelle gegenüber der Tötung eines Menschen hoch,
@@ -290,8 +290,10 @@ faelle:
       Strömung, kaltes Wasser, Höhe) und hielt den Tod des O daher für möglich.
   - prompt: Liegt das Willenselement vor?
     erwartung: Ja. T war der Tod gleichgültig und er nahm ihn damit billigend in Kauf.
-      Auch nach der Möglichkeits-, Wahrscheinlichkeits- und Gleichgültigkeitstheorie
-      ist Vorsatz zu bejahen; ein Streit ist nicht zu entscheiden.
+      Nach der Billigungstheorie der Rspr. ist Vorsatz zu bejahen; auch Möglichkeitstheorie,
+      Wahrscheinlichkeitstheorie und Gleichgültigkeitstheorie kommen zum selben Ergebnis,
+      ein Streit ist daher nicht zu entscheiden. T ist damit wegen Totschlags nach
+      § 212 Abs. 1 StGB strafbar (Gesamtbetrachtung aller Umstände).
   - prompt: Wäre die Wertung anders, wenn T ernsthaft darauf vertraut hätte, O
       werde ans Ufer kommen?
     erwartung: Dann läge bewusste Fahrlässigkeit vor; in Betracht käme eine Strafbarkeit

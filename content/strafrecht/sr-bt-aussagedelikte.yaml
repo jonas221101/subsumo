@@ -87,9 +87,11 @@ cards:
     Wer vor Gericht oder einer anderen zur Abnahme von Eiden zuständigen Stelle
     falsch schwört, wird mit Freiheitsstrafe nicht unter einem Jahr bestraft; die Tat
     ist ein Verbrechen. Abs. 2 sieht einen minder schweren Fall vor. Der Eid
-    bekräftigt die gesamte Aussage zur Sache. Nach h.M. ist § 154 StGB eine
-    Qualifikation der falschen uneidlichen Aussage, sodass § 153 StGB zurücktritt. Für Teilnehmer folgt daraus, dass Anstiftung zum
-    Meineid nur bei Vorsatz auch hinsichtlich der Eidesleistung vorliegt. Schwört
+    bekräftigt die gesamte Aussage zur Sache. Im Verhältnis
+    zu § 153 StGB tritt die uneidliche Aussage im Wege der Gesetzeskonkurrenz zurück
+    (die dogmatische Einordnung als Qualifikation oder eigenständiger Tatbestand
+    wird unterschiedlich vorgenommen). Für Teilnehmer folgt daraus, dass Anstiftung
+    zum Meineid nur bei Vorsatz auch hinsichtlich der Eidesleistung vorliegt. Schwört
     der Täter einen falschen Eid, nachdem er uneidlich falsch ausgesagt hat, liegt
     nur ein Delikt vor, nicht zwei.
   norms:
@@ -125,8 +127,9 @@ cards:
   front: Was regelt der Aussagenotstand, § 157 StGB?
   back: >-
     § 157 Abs. 1 StGB gewährt dem Gericht ein Ermessen, die Strafe nach § 49 Abs. 2
-    StGB zu mildern oder von Strafe abzusehen, wenn der Täter eines Aussagedelikts
-    (§§ 153 bis 156 StGB) die Tat begangen hat, um von sich oder einem Angehörigen
+    StGB zu mildern, bei uneidlicher Aussage auch von Strafe abzusehen, wenn ein
+    Zeuge oder Sachverständiger sich einer falschen uneidlichen Aussage (§ 153 StGB)
+    oder eines Falscheides (§ 154 StGB) schuldig gemacht hat, um von sich oder einem Angehörigen
     die Gefahr abzuwenden, bestraft oder einer Maßnahme (§ 11 Abs. 1 Nr. 8 StGB)
     unterworfen zu werden. Es handelt sich um einen persönlichen Strafmilderungs-
     oder Strafausschließungsgrund (§ 28 Abs. 2 StGB), der nur dem Täter
@@ -148,11 +151,13 @@ cards:
   back: >-
     Nach § 158 Abs. 1 StGB kann das Gericht die Strafe nach § 49 Abs. 2 StGB mildern
     oder von Strafe absehen, wenn der Täter die falsche Angabe rechtzeitig
-    berichtigt. Die Berichtigung ist nur rechtzeitig, wenn sie erfolgt, bevor aus
-    der falschen Angabe ein Nachteil für einen anderen entstanden ist und bevor
+    berichtigt. Die Berichtigung ist verspätet, wenn sie bei der Entscheidung nicht mehr
+    verwertet werden kann, wenn aus der falschen Angabe ein Nachteil für einen anderen
+    entstanden ist oder wenn
     eine Anzeige gegen den Täter erstattet oder eine Untersuchung gegen ihn
-    eingeleitet wurde (Abs. 2). Die Berichtigung muss bei der Stelle erfolgen, bei
-    der die falsche Angabe gemacht wurde oder die sie weiterverfolgt (Abs. 3). Sie
+    eingeleitet wurde (Abs. 2). Die Berichtigung kann bei der Stelle erfolgen, bei
+    der die falsche Angabe gemacht wurde, oder bei einer für die Entscheidung der
+    Sache zuständigen Stelle (Abs. 3). Sie
     muss das richtige Tatsachenbild vollständig herstellen. Anders als beim
     Rücktritt (§ 24 StGB) bewirkt die Berichtigung bei den Vorsatzdelikten nur
     eine Milderung bzw. fakultatives Absehen von Strafe; bei fahrlässigen Delikten
@@ -172,7 +177,9 @@ cards:
     Täterschaft und Mittäterschaft aus: Wer einen anderen zur Falschaussage bringt,
     ohne selbst auszusagen, kann nur Teilnehmer sein. Anstiftung (§ 26 StGB) und
     Beihilfe (§ 27 StGB) zu einer vorsätzlichen Haupttat sind möglich. Wer
-    einen gutgläubigen Zeugen verleitet, wird nach § 160 StGB bestraft. Umstritten ist,
+    einen gutgläubigen Zeugen zu einem Falscheid oder einer falschen Versicherung
+    an Eides statt verleitet, wird nach § 160 StGB bestraft; zur bloß uneidlichen
+    Falschaussage verleitet § 160 StGB nicht (Strafbarkeitslücke). Umstritten ist,
     ob die Zeugenstellung ein besonderes persönliches Merkmal im Sinne des § 28
     Abs. 1 StGB ist: Wird dies bejaht, wäre die Strafe des nichtzeugen Teilnehmers
     nach § 49 Abs. 1 StGB zu mildern; andere sehen die Zeugenstellung als bloßen
@@ -196,7 +203,7 @@ cards:
   back: >-
     § 160 StGB erfasst, wer einen anderen zur Ableistung eines falschen Eides oder
     zur Abgabe einer falschen Versicherung an Eides statt verleitet, ohne dass
-    dieser vorsätzlich handelt. Die Norm schließt die Lücke, die wegen der
+    dieser vorsätzlich oder fahrlässig falsch schwört bzw. versichert. Die Norm schließt die Lücke, die wegen der
     Eigenhändigkeit der Aussagedelikte entsteht: Eine mittelbare Täterschaft
     des Hintermannes ist ausgeschlossen. Der Versuch ist strafbar. Die Tat ist
     ein Vergehen. § 161 StGB bestraft den fahrlässigen Falscheid und die
@@ -289,7 +296,8 @@ schemata:
   - label: II. Strafbarkeit des Hintermannes
     children:
     - label: 1. Täterschaft ausgeschlossen (eigenhändiges Delikt)
-      hinweis: Mittelbare Täterschaft nicht möglich; bei gutgläubigem Zeugen § 160 StGB.
+      hinweis: Mittelbare Täterschaft nicht möglich; bei gutgläubigem Zeugen nur § 160 StGB (Eid
+        oder Versicherung an Eides statt).
     - label: 2. Anstiftung, §§ 153, 26 StGB
       children:
       - label: a) Vorsätzliche rechtswidrige Haupttat
@@ -330,8 +338,9 @@ faelle:
       StGB mildern oder von Strafe absehen; es ist eine Ermessensentscheidung.
   - prompt: Kann C Täter eines Aussagedelikts sein?
     erwartung: Nein. Aussagedelikte sind eigenhändige Delikte. C hat nicht selbst
-      ausgesagt und kann daher weder Täter noch mittelbarer Täter oder Mittäter
-      sein. Z handelte vorsätzlich, § 160 StGB scheidet aus.
+      ausgesagt; er kann nicht Täter sein, und Mittäterschaft ausgeschlossen ist
+      ebenso die mittelbare Täterschaft. Z handelte vorsätzlich, § 160 StGB scheidet
+      aus.
   - prompt: Hat sich C wegen Anstiftung strafbar gemacht?
     erwartung: Ja, nach §§ 153, 26 StGB. Es liegt eine vorsätzliche rechtswidrige
       Haupttat des Z vor; C hat den Tatentschluss des Z hervorgerufen (Bestimmen)
