@@ -9,8 +9,8 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-23'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: sr-fahrlaessigkeit-begriff
   type: definition
@@ -56,12 +56,17 @@ cards:
   type: streitstand
   front: Was bedeutet Pflichtwidrigkeitszusammenhang, und welche Rolle spielt rechtmäßiges
     Alternativverhalten?
-  back: Der Erfolg muss gerade auf der Sorgfaltspflichtverletzung beruhen. Wäre derselbe
+  back: 'Der Erfolg muss gerade auf der Sorgfaltspflichtverletzung beruhen. Wäre derselbe
     Erfolg mit an Sicherheit grenzender Wahrscheinlichkeit auch bei pflichtgemäßem
-    Verhalten eingetreten, fehlt es am Pflichtwidrigkeitszusammenhang und die objektive
-    Zurechnung entfällt. Nach der im Vordringen befindlichen Risikörhöhungslehre
+    Verhalten eingetreten (rechtmäßiges Alternativverhalten), fehlt der Pflichtwidrigkeitszusammenhang.
+    Streitstand bei Zweifeln, ob der Erfolg auch bei pflichtgemäßem Verhalten eingetreten
+    wäre: Die Rspr. und h.M. folgen der Vermeidbarkeitstheorie: Der Erfolg ist nur
+    zurechenbar, wenn er bei pflichtgemäßem Verhalten mit an Sicherheit grenzender
+    Wahrscheinlichkeit vermieden worden wäre; verbleibende Zweifel gehen nach in dubio
+    pro reo zugunsten des Täters. Nach der Risikoerhöhungslehre (Teile der Lit., Minderheitsansicht)
     genügt es dagegen, dass das pflichtwidrige Verhalten das Risiko des Erfolgseintritts
-    gegenüber pflichtgemäßem Verhalten messbar erhöht hat.
+    gegenüber pflichtgemäßem Verhalten messbar erhöht hat. Kritik: Die Risikoerhöhungslehre
+    verwandelt das Erfolgsdelikt in ein Gefährdungsdelikt und verstößt gegen den Zweifelsgrundsatz.'
   norms:
   - § 222 StGB
   quellen:
@@ -83,15 +88,19 @@ cards:
   type: streitstand
   front: Wann schließt eigenverantwortliche Selbstgefährdung des Opfers die objektive
     Zurechnung aus?
-  back: Begibt sich das Opfer in voller Kenntnis des Risikos freiwillig und eigenverantwortlich
-    selbst in eine Gefahr, die sich anschließend realisiert, fällt der Erfolg in
-    seinen eigenen Verantwortungsbereich. Wer die Selbstgefährdung lediglich ermöglicht
-    oder fördert, ohne selbst die Tatherrschaft über den gefährdenden Akt zu haben,
-    haftet dafür grundsätzlich nicht wegen eines Fahrlässigkeitsdelikts - vorausgesetzt,
+  back: 'Begibt sich das Opfer in voller Kenntnis des Risikos freiwillig und eigenverantwortlich
+    selbst in eine Gefahr, die sich anschließend realisiert, fällt der Erfolg in seinen
+    eigenen Verantwortungsbereich. Wer die Selbstgefährdung lediglich ermöglicht oder
+    fördert, ohne selbst die Tatherrschaft über den gefährdenden Akt zu haben, haftet
+    dafür grundsätzlich nicht wegen eines Fahrlässigkeitsdelikts - vorausgesetzt,
     das Opfer durchschaut Art und Ausmaß des Risikos ebenso wie derjenige, der die
-    Gefahr fördert. Anders liegt es bei der einverständlichen Fremdgefährdung,
-    bei der ein anderer die Tatherrschaft behält und das Opfer sich lediglich in
-    dessen Gefahrenbereich begibt - hier bleibt eine Zurechnung grundsätzlich möglich.
+    Gefahr fördert. Die Abgrenzung richtet sich nach der Tatherrschaft über den gefährdenden
+    Akt: Wer den lebensgefährlichen Akt selbst vollzieht, gefährdet sich selbst; hat
+    dagegen der andere den gefährdenden Akt in der Hand (und das Opfer lässt sich
+    nur darauf ein), liegt keine Selbstgefährdung vor (vgl. BGHSt 53, 55). Anders
+    liegt es bei der einverständlichen Fremdgefährdung, bei der ein anderer die Tatherrschaft
+    behält und das Opfer sich lediglich in dessen Gefahrenbereich begibt - hier bleibt
+    eine Zurechnung grundsätzlich möglich.'
   norms:
   - § 222 StGB
   quellen:
@@ -149,12 +158,14 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
   facts: Auf einer privaten Sommerfeier bietet A, ein selbsternannter Extremsport-Enthusiast
-    ohne einschlägige Ausbildung, den Gästen einen improvisierten Bungee-Sprung
-    von einer alten Brücke an. A weist den volljährigen B ausdrücklich darauf hin,
-    dass das von ihm mitgebrachte Seil selbstgebaut und nicht geprüft sei und durchaus
+    ohne einschlägige Ausbildung, den Gästen einen improvisierten Bungee-Sprung von
+    einer alten Brücke an. A weist den volljährigen B ausdrücklich darauf hin, dass
+    das von ihm mitgebrachte Seil selbstgebaut und nicht geprüft sei und durchaus
     reißen könne. B, der das Risiko genau versteht, meldet sich dennoch freiwillig,
-    lässt sich das Seil um die Füße binden und springt. Das Seil reißt, B stürzt
-    in die Tiefe und stirbt an den Folgen des Sturzes.
+    befestigt das Seil nach kurzer Einweisung selbst am Brückengeländer, bindet es
+    sich selbst um die Füße und springt aus eigenem Entschluss. A steht während des
+    Sprungs nur daneben. Das Seil reißt, B stürzt in die Tiefe und stirbt an den Folgen
+    des Sturzes.
   question: Hat sich A dadurch, dass er den Sprung angeboten und das mangelhafte Seil
     zur Verfügung gestellt hat, wegen fahrlässiger Tötung gemäß § 222 StGB strafbar
     gemacht?
@@ -173,9 +184,11 @@ faelle:
       des B?
     erwartung: Ja - B kannte das Risiko genau, weil A ihn ausdrücklich gewarnt hatte,
       und hat sich freiwillig und eigenverantwortlich für den Sprung entschieden.
-      Die Tatherrschaft über den lebensgefährlichen Akt selbst lag allein bei B;
-      A hat die Gefahr lediglich ermöglicht. Der Erfolg fällt daher in Bs eigenen
-      Verantwortungsbereich.
+      B befestigte das Seil selbst und vollzog den gefährdenden Akt (den Sprung) selbst;
+      die Tatherrschaft lag allein bei B, A hat die Gefahr lediglich ermöglicht. Es
+      liegt eine eigenverantwortliche Selbstgefährdung und keine einverständliche
+      Fremdgefährdung vor (bei dieser behielte der Täter die Tatherrschaft über den
+      gefährdenden Akt). Der Erfolg fällt daher in Bs eigenen Verantwortungsbereich.
   - prompt: Formuliere das Ergebnis.
     erwartung: A hat sich mangels objektiver Zurechnung des Erfolgs nicht wegen fahrlässiger
       Tötung gemäß § 222 StGB strafbar gemacht.
@@ -188,13 +201,16 @@ faelle:
       norms:
       - § 222 StGB
       keywords:
-      - '222'
+      - § 222 StGB
+      - fahrlässige Tötung gemäß § 222
     - id: p2
       label: Objektive Sorgfaltspflichtverletzung bejaht (mangelhaftes Seil)
       weight: 1.5
       required: false
       keywords:
       - Sorgfaltspflichtverletzung
+      - Sorgfaltspflicht verletzt
+      - ungeprüftes Seil
       card_slugs:
       - sr-fahrlaessigkeit-objektive-sorgfaltspflichtverletzung
     - id: p3
@@ -202,7 +218,9 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - vorhersehbar
+      - objektiv vorhersehbar
+      - Vorhersehbarkeit
+      - Kausalität
       card_slugs:
       - sr-fahrlaessigkeit-objektive-vorhersehbarkeit
     - id: p4
@@ -214,7 +232,9 @@ faelle:
       - § 222 StGB
       keywords:
       - eigenverantwortliche Selbstgefährdung
-      - Zurechnung
+      - einverständliche Fremdgefährdung
+      - Selbstgefährdung
+      - Schutzzweck
       card_slugs:
       - sr-fahrlaessigkeit-eigenverantwortliche-selbstgefaehrdung
     - id: p5
@@ -223,8 +243,11 @@ faelle:
       weight: 2.0
       required: true
       keywords:
-      - Tatherrschaft
-      - eigene Entscheidung
+      - Tatherrschaft über den gefährdenden Akt
+      - Tatherrschaft des B
+      - befestigte das Seil selbst
+      - freie Entscheidung
+      - eigenverantwortlich entschieden
       card_slugs:
       - sr-fahrlaessigkeit-eigenverantwortliche-selbstgefaehrdung
     - id: p6
@@ -232,5 +255,7 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - nicht strafbar
-      - keine Zurechnung
+      - mangels objektiver Zurechnung
+      - Zurechnung scheidet aus
+      - keine objektive Zurechnung
+      - nicht wegen fahrlässiger Tötung strafbar

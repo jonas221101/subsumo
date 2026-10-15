@@ -131,7 +131,7 @@ cards:
     Verwirklichung des gesetzlichen Tatbestandes durch aktives Tun entsprechen (§
     13 Abs. 1 a.E. StGB). Bei schlichten Erfolgsdelikten, bei denen das Gesetz nur
     den Erfolg, nicht eine bestimmte Handlungsweise voraussetzt, hat die Entsprechungsklausel
-    regelmäßig keine eigenständige Bedeutung, da Tun und Unterlassen gleichermässen
+    regelmäßig keine eigenständige Bedeutung, da Tun und Unterlassen gleichermaßen
     zum Erfolg führen können.
   norms:
   - § 13 Abs. 1 StGB
@@ -191,21 +191,20 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
   facts: M ist die Mutter des vierjährigen S. Bei einem gemeinsamen Ausflug an einen
-    See gerät S beim Spielen unbemerkt von anderen Badegästen in tieferes Wasser
-    und droht zu ertrinken. M bemerkt dies als Einzige, erkennt die Lebensgefahr für
-    S klar und hätte S - selbst erfahrene Schwimmerin - ohne eigenes Risiko retten
-    oder durch lautes Rufen sofort einen wenige Meter entfernten Rettungsschwimmer
-    auf die Situation aufmerksam machen können. Da M sich seit längerem mit dem
-    Vater des S um das alleinige Sorgerecht streitet und sich erhofft, von den belastenden
+    See gerät S beim Spielen unbemerkt von anderen Badegästen in tieferes Wasser und
+    droht zu ertrinken. M bemerkt dies als Einzige, erkennt die Lebensgefahr für S
+    klar und hätte S - selbst erfahrene Schwimmerin - ohne eigenes Risiko retten oder
+    durch lautes Rufen sofort einen wenige Meter entfernten Rettungsschwimmer auf
+    die Situation aufmerksam machen können. Da M sich seit längerem mit dem Vater
+    des S um das alleinige Sorgerecht streitet und sich erhofft, von den belastenden
     Auseinandersetzungen befreit zu sein, wenn S nicht mehr lebt, unternimmt sie bewusst
-    nichts und sieht dem Ertrinken des S tatenlos zu. S ertrinkt. Hätte M sofort
-    eingegriffen oder Hilfe herbeigerufen, wäre S mit an Sicherheit grenzender Wahrscheinlichkeit
+    nichts und sieht dem Ertrinken des S tatenlos zu. S ertrinkt. Hätte M sofort eingegriffen
+    oder Hilfe herbeigerufen, wäre S mit an Sicherheit grenzender Wahrscheinlichkeit
     gerettet worden.
   question: Hat sich M wegen Totschlags durch Unterlassen gemäß §§ 212 Abs. 1, 13
     StGB strafbar gemacht?
   steps:
-  - prompt: Ist der Tod des S ein tatbestandsmäßiger Erfolg i.S.d. § 212 Abs. 1
-      StGB?
+  - prompt: Ist der Tod des S ein tatbestandsmäßiger Erfolg i.S.d. § 212 Abs. 1 StGB?
     erwartung: Ja - der Tod eines Menschen ist der von § 212 Abs. 1 StGB vorausgesetzte
       Erfolg.
   - prompt: Hat M durch aktives Tun gehandelt oder unterlassen?
@@ -224,8 +223,8 @@ faelle:
   - prompt: Bedarf es hier zusätzlich der Entsprechungsklausel des § 13 Abs. 1 a.E.
       StGB?
     erwartung: Nein - § 212 StGB ist ein schlichtes Erfolgsdelikt ohne besondere Tatmodalität,
-      sodass Tun und Unterlassen gleichermässen tatbestandsmäßig sein können;
-      die Entsprechungsklausel hat hier keine eigenständige Bedeutung.
+      sodass Tun und Unterlassen gleichermaßen tatbestandsmäßig sein können; die Entsprechungsklausel
+      hat hier keine eigenständige Bedeutung.
   - prompt: Ergebnis?
     erwartung: M hat sich wegen Totschlags durch Unterlassen gemäß §§ 212 Abs. 1,
       13 StGB strafbar gemacht.
@@ -239,8 +238,9 @@ faelle:
       - § 212 Abs. 1 StGB
       - § 13 StGB
       keywords:
-      - '212'
-      - '13'
+      - §§ 212 Abs. 1, 13
+      - § 212 Abs. 1 i.V.m. § 13
+      - Totschlag durch Unterlassen
     - id: p2
       label: Erfolgseintritt und Unterlassen statt Tun zutreffend erkannt
       weight: 1.5
@@ -248,7 +248,10 @@ faelle:
       norms:
       - § 212 Abs. 1 StGB
       keywords:
-      - Unterlassen
+      - Unterlassen statt Tun
+      - Tod durch Unterlassen
+      - Abgrenzung von Tun und Unterlassen
+      - Schwerpunkt der Vorwerfbarkeit
       card_slugs:
       - sr-unterlassen-echte-unechte
     - id: p3
@@ -256,7 +259,9 @@ faelle:
       weight: 1.5
       required: true
       keywords:
-      - Handlungsmöglichkeit
+      - physisch-reale Handlungsmöglichkeit
+      - Handlungsmöglichkeit bestand
+      - hätte retten können
       card_slugs:
       - sr-unterlassen-voraussetzungen
     - id: p4
@@ -296,10 +301,15 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - Vorsatz
+      - Vorsatz bezüglich der Garantenstellung
+      - Garantenstellungsvorsatz
+      - Vorsatz bezüglich
+      - Vorsatz hinsichtlich
     - id: p8
       label: 'Ergebnis: Totschlag durch Unterlassen, §§ 212 Abs. 1, 13 StGB'
       weight: 1.0
       required: false
       keywords:
-      - Ergebnis
+      - Totschlag durch Unterlassen strafbar
+      - §§ 212 Abs. 1, 13 StGB verwirklicht
+      - wegen Totschlags durch Unterlassen

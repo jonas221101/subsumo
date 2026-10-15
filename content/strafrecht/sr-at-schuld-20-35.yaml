@@ -278,51 +278,45 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
   stand: 2026-09
-  facts: >-
-    A ist wütend auf seinen Arbeitskollegen B, der ihn vor anderen bloßgestellt hat.
-    Er beschließt, B am Abend in dessen Stammkneipe "eine Abreibung zu verpassen".
+  facts: A ist wütend auf seinen Arbeitskollegen B, der ihn vor anderen bloßgestellt
+    hat. Er beschließt, B am Abend in dessen Stammkneipe "eine Abreibung zu verpassen".
     Weil er weiß, dass er sich nüchtern nicht trauen wird, trinkt A zu Hause gezielt
     eine Flasche Schnaps, um sich Mut anzutrinken, und geht dann zur Kneipe. Dort
     schlägt er dem B mehrfach mit der Faust ins Gesicht; B erleidet eine Platzwunde
-    und einen Nasenbruch. Eine später entnommene Blutprobe ergibt für den
-    Tatzeitpunkt eine Blutalkoholkonzentration von 3,3 Promille. Das Gericht geht
-    nach sachverständiger Beratung davon aus, dass die Steuerungsfähigkeit des A im
-    Zeitpunkt der Schläge aufgehoben war.
-  question: Hat sich A wegen vorsätzlicher Körperverletzung nach § 223 Abs. 1 StGB strafbar gemacht?
+    und einen Nasenbruch. Eine später entnommene Blutprobe ergibt für den Tatzeitpunkt
+    eine Blutalkoholkonzentration von 3,3 Promille. Das Gericht geht nach sachverständiger
+    Beratung davon aus, dass die Steuerungsfähigkeit des A im Zeitpunkt der Schläge
+    aufgehoben war.
+  question: Hat sich A wegen vorsätzlicher Körperverletzung nach § 223 Abs. 1 StGB
+    strafbar gemacht?
   steps:
   - prompt: Ist der Tatbestand des § 223 Abs. 1 StGB erfüllt und die Tat rechtswidrig?
-    erwartung: >-
-      Ja - die Faustschläge sind körperliche Misshandlung und Gesundheitsschädigung;
-      A handelte auch im Rausch mit natürlichem Vorsatz. Rechtfertigungsgründe
-      liegen nicht vor.
+    erwartung: Ja - die Faustschläge sind körperliche Misshandlung und Gesundheitsschädigung;
+      A handelte auch im Rausch mit natürlichem Vorsatz. Rechtfertigungsgründe liegen
+      nicht vor.
   - prompt: War A im Zeitpunkt der Schläge schuldfähig?
-    erwartung: >-
-      Nein - der akute Alkoholrausch mit 3,3 Promille ist eine krankhafte seelische
-      Störung im Sinne des § 20 StGB (Eingangsmerkmal), und die Steuerungsfähigkeit
-      war nach den Feststellungen aufgehoben. Bei Begehung der Tat, § 8 StGB, war A
-      schuldunfähig.
+    erwartung: Nein - der akute Alkoholrausch mit 3,3 Promille ist eine krankhafte
+      seelische Störung im Sinne des § 20 StGB (Eingangsmerkmal), und die Steuerungsfähigkeit
+      war nach den Feststellungen aufgehoben. Bei Begehung der Tat, § 8 StGB, war
+      A schuldunfähig.
   - prompt: Welches Problem stellt sich angesichts des gezielten Sichbetrinkens?
-    erwartung: >-
-      A hat seine Schuldunfähigkeit selbst und vorsätzlich herbeigeführt, um die
-      geplante Tat zu begehen. Es stellt sich die Frage einer Bestrafung nach den
-      Grundsätzen der vorsätzlichen actio libera in causa.
+    erwartung: A hat seine Schuldunfähigkeit selbst und vorsätzlich herbeigeführt,
+      um die geplante Tat zu begehen. Es stellt sich die Frage einer Bestrafung nach
+      den Grundsätzen der vorsätzlichen actio libera in causa.
   - prompt: Wie wird die actio libera in causa begründet und ist sie hier anwendbar?
-    erwartung: >-
-      Nach dem Tatbestandsmodell (Rspr., h.M.) ist das Sichbetrinken bereits Teil der
-      tatbestandlichen Handlung; A setzte sich als schuldunfähiges Werkzeug gegen B
-      ein. § 223 StGB ist ein Erfolgsdelikt, das Modell ist daher anwendbar. Beim
-      Trinken war A schuldfähig und hatte Doppelvorsatz: Er wollte sich berauschen und
-      wollte in diesem Zustand B verletzen. Das Ausnahmemodell begründet dasselbe
-      Ergebnis, ist aber wegen Art. 103 Abs. 2 GG abzulehnen.
+    erwartung: 'Nach dem Tatbestandsmodell (Rspr., h.M.) ist das Sichbetrinken bereits
+      Teil der tatbestandlichen Handlung; A setzte sich als schuldunfähiges Werkzeug
+      gegen B ein. § 223 StGB ist ein Erfolgsdelikt, das Modell ist daher anwendbar.
+      Beim Trinken war A schuldfähig und hatte Doppelvorsatz: Er wollte sich berauschen
+      und wollte in diesem Zustand B verletzen. Das Ausnahmemodell begründet dasselbe
+      Ergebnis, ist aber wegen Art. 103 Abs. 2 GG abzulehnen.'
   - prompt: Zu welchem Ergebnis führt das?
-    erwartung: >-
-      A ist wegen vorsätzlicher Körperverletzung nach § 223 Abs. 1 StGB strafbar. § 323a
-      StGB tritt dahinter zurück.
+    erwartung: A ist wegen vorsätzlicher Körperverletzung nach § 223 Abs. 1 StGB strafbar.
+      § 323a StGB tritt dahinter zurück.
   - prompt: Was gälte, wenn die actio libera in causa abgelehnt würde?
-    erwartung: >-
-      Dann käme eine Strafbarkeit nach § 323a Abs. 1 StGB in Betracht: A hat sich
-      vorsätzlich in einen Rausch versetzt und darin eine rechtswidrige Tat begangen,
-      für die er wegen Schuldunfähigkeit nicht bestraft werden könnte.
+    erwartung: 'Dann käme eine Strafbarkeit nach § 323a Abs. 1 StGB in Betracht: A
+      hat sich vorsätzlich in einen Rausch versetzt und darin eine rechtswidrige Tat
+      begangen, für die er wegen Schuldunfähigkeit nicht bestraft werden könnte.'
   expectation:
     pruefpunkte:
     - id: p1
@@ -337,15 +331,17 @@ faelle:
       card_slugs:
       - sr-schuld-begriff-elemente
     - id: p2
-      label: Schuldunfähigkeit nach § 20 StGB zweistufig geprüft (Alkoholrausch als krankhafte seelische Störung, aufgehobene Steuerungsfähigkeit)
+      label: Schuldunfähigkeit nach § 20 StGB zweistufig geprüft (Alkoholrausch als
+        krankhafte seelische Störung, aufgehobene Steuerungsfähigkeit)
       weight: 2.0
       required: true
       norms:
       - § 20 StGB
       keywords:
-      - § 20
-      - krankhafte seelische Störung
+      - § 20 StGB
       - Steuerungsfähigkeit
+      - Blutalkoholkonzentration
+      - Schuldunfähigkeit
       card_slugs:
       - sr-schuld-schuldunfaehigkeit-20
       - sr-schuld-verminderte-schuldfaehigkeit-21
@@ -363,7 +359,8 @@ faelle:
       card_slugs:
       - sr-schuld-alic-streitstand
     - id: p4
-      label: Streitstand dargestellt (Tatbestandsmodell, Ausnahmemodell) und Tatbestandsmodell mit Doppelvorsatz angewendet
+      label: Streitstand dargestellt (Tatbestandsmodell, Ausnahmemodell) und Tatbestandsmodell
+        mit Doppelvorsatz angewendet
       weight: 3.0
       required: true
       norms:
@@ -376,14 +373,16 @@ faelle:
       card_slugs:
       - sr-schuld-alic-streitstand
     - id: p5
-      label: 'Ergebnis: Strafbarkeit nach § 223 Abs. 1 StGB über die vorsätzliche actio libera in causa'
+      label: 'Ergebnis: Strafbarkeit nach § 223 Abs. 1 StGB über die vorsätzliche
+        actio libera in causa'
       weight: 1.5
       required: true
       norms:
       - § 223 Abs. 1 StGB
       keywords:
-      - strafbar
-      - vorsätzliche Körperverletzung
+      - über die actio libera in causa strafbar
+      - Strafbarkeit nach § 223
+      - vorsätzliche actio libera in causa
       card_slugs:
       - sr-schuld-alic-streitstand
     - id: p6

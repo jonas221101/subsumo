@@ -8,7 +8,7 @@ topic:
   redaktion:
     erzeugt_von: claude-fable-5-1
     status: in-pruefung
-    normzitate_geprueft: true
+    normzitate_geprueft: false
 cards:
 - slug: sr-kv226-erfolgsqualifikation-begriff
   type: definition
@@ -164,14 +164,14 @@ cards:
     Streitig ist, ob diese Gefahr vom Verletzungserfolg oder schon von der
     Verletzungshandlung ausgehen muss.
 
-    Letalitätslehre (Teile der Literatur): Der Tod muss aus dem
+    Letalitätslehre (in der Lit. weit verbreitet): Der Tod muss aus dem
     Körperverletzungserfolg hervorgehen; die zugefügte Verletzung selbst muss
     tödlich sein. Stirbt das Opfer an Umständen, die nicht die Verletzung, sondern
     die Angriffshandlung ausgelöst hat (Sturz bei der Flucht), fehlt der
     Zusammenhang. Begründung: Der Wortlaut "durch die Körperverletzung" knüpfe an
     den Erfolg an, und nur so bleibe der Strafrahmen begrenzt.
 
-    Rspr. und h.M.: Es genügt, dass sich die dem Körperverletzungsgeschehen in
+    Rspr. (handlungsbezogene Linie, bestätigt u. a. in der Gubener Verfolgungsjagd, BGHSt 48, 34): Es genügt, dass sich die dem Körperverletzungsgeschehen in
     seiner konkreten Gestalt anhaftende Gefahr im Tod realisiert; anknüpfen kann
     auch die Körperverletzungshandlung. Deshalb ist der Zusammenhang auch gegeben,
     wenn das Opfer bei einer durch die Misshandlung ausgelösten panischen Flucht
@@ -180,7 +180,7 @@ cards:
     eigenverantwortlichen Selbstgefährdung des Opfers oder auf dem völlig
     atypischen Dazwischentreten Dritter beruht.
 
-    Konsequenz: Nach h.M. sind Fluchtfälle regelmäßig von § 227 StGB erfasst, nach
+    Konsequenz: Nach der Rspr. sind Fluchtfälle regelmäßig von § 227 StGB erfasst, nach
     der Letalitätslehre nur §§ 223, 222 StGB in Tateinheit. Die Rspr. bejaht den
     Zusammenhang zudem beim erfolgsqualifizierten Versuch, weil schon die Handlung
     tödliche Gefahr bergen kann.
@@ -254,7 +254,7 @@ schemata:
     - label: 3. Kausalität zwischen Körperverletzung und schwerer Folge
     - label: 4. Tatbestandsspezifischer Gefahrzusammenhang (Unmittelbarkeitszusammenhang)
       children:
-      - label: a) Anknüpfung an Erfolg oder Handlung (Letalitätslehre gegen h.M.)
+      - label: 'a) Anknüpfung an Erfolg oder Handlung (Rspr. handlungsbezogen gegen verbreitete Lit.: Letalitätslehre)'
       - label: b) Kein Ausschluss durch eigenverantwortliche Selbstgefährdung oder atypisches Dazwischentreten
     - label: 5. Wenigstens Fahrlässigkeit hinsichtlich der Folge, § 18 StGB - objektive Vorhersehbarkeit
       hinweis: Bei § 226 Abs. 2 StGB stattdessen Absicht oder Wissentlichkeit.
@@ -278,65 +278,62 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
   stand: 2026-09
-  facts: >-
-    A stellt den B im dritten Stock eines Mietshauses zur Rede, weil B ihm Geld
+  facts: A stellt den B im dritten Stock eines Mietshauses zur Rede, weil B ihm Geld
     schuldet. Als B ausweichend antwortet, schlägt A ihm mehrfach mit der Faust ins
     Gesicht und ruft, er werde ihn "fertigmachen". B, der aus Nase und Lippe blutet,
-    reißt sich los und rennt in Panik die Treppe hinunter, um A zu entkommen. A
-    setzt ihm nach. Auf der Treppe zwischen erstem Stock und Erdgeschoss stolpert B,
-    stürzt kopfüber die Stufen hinab und schlägt mit dem Kopf auf dem Steinboden auf.
-    B stirbt noch am Unfallort an den Kopfverletzungen. A wollte B nicht töten und
-    hatte an einen tödlichen Ausgang nicht gedacht.
-  question: Hat sich A wegen Körperverletzung mit Todesfolge nach § 227 Abs. 1 StGB strafbar gemacht?
+    reißt sich los und rennt in Panik die Treppe hinunter, um A zu entkommen. A setzt
+    ihm nach. Auf der Treppe zwischen erstem Stock und Erdgeschoss stolpert B, stürzt
+    kopfüber die Stufen hinab und schlägt mit dem Kopf auf dem Steinboden auf. B stirbt
+    noch am Unfallort an den Kopfverletzungen. A wollte B nicht töten und hatte an
+    einen tödlichen Ausgang nicht gedacht.
+  question: Hat sich A wegen Körperverletzung mit Todesfolge nach § 227 Abs. 1 StGB
+    strafbar gemacht?
   steps:
   - prompt: Liegt eine vorsätzliche Körperverletzung als Grunddelikt vor?
-    erwartung: >-
-      Ja - die Faustschläge ins Gesicht mit blutender Nase und Lippe sind eine
-      vollendete vorsätzliche Körperverletzung nach § 223 Abs. 1 StGB (körperliche
+    erwartung: Ja - die Faustschläge ins Gesicht mit blutender Nase und Lippe sind
+      eine vollendete vorsätzliche Körperverletzung nach § 223 Abs. 1 StGB (körperliche
       Misshandlung und Gesundheitsschädigung).
   - prompt: Ist der Tod des B durch die Körperverletzung verursacht?
-    erwartung: >-
-      Ja - ohne die Schläge und die Verfolgung wäre B nicht in Panik die Treppe
-      hinuntergerannt und nicht gestürzt. Die Körperverletzung ist nicht
-      hinwegzudenken, ohne dass der Tod entfiele.
-  - prompt: Besteht der tatbestandsspezifische Gefahrzusammenhang zwischen Körperverletzung und Tod?
-    erwartung: >-
-      Streitig. Nach der Letalitätslehre müsste der Tod aus dem Verletzungserfolg
-      folgen; die Nasen- und Lippenverletzung war aber nicht tödlich, sodass § 227 StGB
-      ausschiede. Nach Rspr. und h.M. genügt, dass sich die der Körperverletzungshandlung
-      anhaftende Gefahr im Tod verwirklicht. Die panische Flucht vor einem
-      Angreifer, der weiter zuschlägt und nachsetzt, ist die naheliegende Reaktion
-      auf die Gewalt; der Sturz im Treppenhaus ist die Verwirklichung genau dieser
-      Gefahr. Eine eigenverantwortliche Selbstgefährdung des B liegt nicht vor, weil
-      B unter dem unmittelbaren Druck des Angriffs handelte. Der h.M. ist zu folgen;
-      der Zusammenhang ist gegeben.
+    erwartung: Ja - ohne die Schläge und die Verfolgung wäre B nicht in Panik die
+      Treppe hinuntergerannt und nicht gestürzt. Die Körperverletzung ist nicht hinwegzudenken,
+      ohne dass der Tod entfiele.
+  - prompt: Besteht der tatbestandsspezifische Gefahrzusammenhang zwischen Körperverletzung
+      und Tod?
+    erwartung: Streitig. Nach der Letalitätslehre müsste der Tod aus dem Verletzungserfolg
+      folgen; die Nasen- und Lippenverletzung war aber nicht tödlich, sodass § 227
+      StGB ausschiede. Nach Rspr. und h.M. genügt, dass sich die der Körperverletzungshandlung
+      anhaftende Gefahr im Tod verwirklicht. Die panische Flucht vor einem Angreifer,
+      der weiter zuschlägt und nachsetzt, ist die naheliegende Reaktion auf die Gewalt;
+      der Sturz im Treppenhaus ist die Verwirklichung genau dieser Gefahr. Eine eigenverantwortliche
+      Selbstgefährdung des B liegt nicht vor, weil B unter dem unmittelbaren Druck
+      des Angriffs handelte. Der h.M. ist zu folgen; der Zusammenhang ist gegeben.
   - prompt: Handelte A hinsichtlich des Todes wenigstens fahrlässig, § 18 StGB?
-    erwartung: >-
-      Ja - dass ein blutendes, in Panik versetztes Opfer bei der Flucht über eine
-      Treppe stürzt und sich tödlich verletzt, liegt nicht außerhalb der
-      Lebenserfahrung. Der Tod war für einen besonnenen Menschen in der Lage des A
-      objektiv vorhersehbar; A selbst hätte ihn vorhersehen können. Dass er nicht
-      daran dachte, ist gerade der Fahrlässigkeitsvorwurf.
+    erwartung: Ja - dass ein blutendes, in Panik versetztes Opfer bei der Flucht über
+      eine Treppe stürzt und sich tödlich verletzt, liegt nicht außerhalb der Lebenserfahrung.
+      Der Tod war für einen besonnenen Menschen in der Lage des A objektiv vorhersehbar;
+      A selbst hätte ihn vorhersehen können. Dass er nicht daran dachte, ist gerade
+      der Fahrlässigkeitsvorwurf.
   - prompt: Ist § 227 StGB durch ein vorsätzliches Tötungsdelikt verdrängt?
-    erwartung: >-
-      Nein - A hatte keinen Tötungsvorsatz; §§ 212, 211 StGB scheiden aus. § 227 StGB
-      bleibt anwendbar.
+    erwartung: Nein - A hatte keinen Tötungsvorsatz; §§ 212, 211 StGB scheiden aus.
+      § 227 StGB bleibt anwendbar.
   - prompt: Wie lautet das Ergebnis, und wie ist das Konkurrenzverhältnis?
-    erwartung: >-
-      A hat sich nach § 227 Abs. 1 StGB strafbar gemacht. § 223 StGB und § 222 StGB
-      treten dahinter zurück; die Bedrohung durch den Ausruf ist als mitbestrafte
+    erwartung: A hat sich nach § 227 Abs. 1 StGB strafbar gemacht. § 223 StGB und
+      § 222 StGB treten dahinter zurück; die Bedrohung durch den Ausruf ist als mitbestrafte
       Begleittat ohne eigenständiges Gewicht.
   expectation:
     pruefpunkte:
     - id: p1
-      label: Vollendete vorsätzliche Körperverletzung, § 223 Abs. 1 StGB, als Grunddelikt bejaht
+      label: Vollendete vorsätzliche Körperverletzung, § 223 Abs. 1 StGB, als Grunddelikt
+        bejaht
       weight: 1.0
       required: true
       norms:
       - § 223 Abs. 1 StGB
       keywords:
       - Grunddelikt
+      - § 223 Abs. 1
       - körperliche Misshandlung
+      - Gesundheitsschädigung
       card_slugs:
       - sr-kv227-tatbestand
     - id: p2
@@ -346,13 +343,14 @@ faelle:
       norms:
       - § 227 Abs. 1 StGB
       keywords:
-      - kausal
-      - Kausalität
-      - conditio
+      - conditio sine qua non
+      - Kausalität zwischen Körperverletzung und Tod
+      - Äquivalenztheorie
       card_slugs:
       - sr-kv227-tatbestand
     - id: p3
-      label: Unmittelbarkeitszusammenhang als Problem erkannt, Letalitätslehre und h.M. dargestellt
+      label: Unmittelbarkeitszusammenhang als Problem erkannt, Letalitätslehre und
+        h.M. dargestellt
       weight: 3.0
       required: true
       norms:
@@ -360,42 +358,50 @@ faelle:
       keywords:
       - Unmittelbarkeitszusammenhang
       - Gefahrzusammenhang
-      - Letalität
+      - Letalitätslehre
+      - Gubener Verfolgungsjagd
       card_slugs:
       - sr-kv227-unmittelbarkeitszusammenhang-streitstand
       - sr-kv226-erfolgsqualifikation-begriff
     - id: p4
-      label: Fluchtfall mit der h.M. gelöst - panische Flucht als naheliegende Reaktion, keine eigenverantwortliche Selbstgefährdung
+      label: Fluchtfall mit der h.M. gelöst - panische Flucht als naheliegende Reaktion,
+        keine eigenverantwortliche Selbstgefährdung
       weight: 2.0
       required: true
       keywords:
-      - Flucht
-      - Selbstgefährdung
+      - Fluchtfall
+      - panische Flucht
       - naheliegende Reaktion
+      - Selbstgefährdung des Opfers
       card_slugs:
       - sr-kv227-unmittelbarkeitszusammenhang-streitstand
     - id: p5
-      label: Fahrlässigkeit hinsichtlich des Todes nach § 18 StGB geprüft (objektive und subjektive Vorhersehbarkeit)
+      label: Fahrlässigkeit hinsichtlich des Todes nach § 18 StGB geprüft (objektive
+        und subjektive Vorhersehbarkeit)
       weight: 2.0
       required: true
       norms:
       - § 18 StGB
       keywords:
-      - § 18
-      - vorhersehbar
-      - Fahrlässigkeit
+      - § 18 StGB
+      - objektive Vorhersehbarkeit
+      - wenigstens fahrlässig
+      - Fahrlässigkeit hinsichtlich der Todesfolge
       card_slugs:
       - sr-kv226-18-fahrlaessigkeit-folge
     - id: p6
-      label: Tötungsvorsatz verneint, Konkurrenz zu §§ 212, 222, 223 StGB richtig gelöst
+      label: Tötungsvorsatz verneint, Konkurrenz zu §§ 212, 222, 223 StGB richtig
+        gelöst
       weight: 1.0
       required: false
       norms:
       - § 212 StGB
       - § 222 StGB
       keywords:
-      - Tötungsvorsatz
-      - verdrängt
-      - Konkurrenz
+      - Tötungsvorsatz verneint
+      - kein Tötungsvorsatz
+      - § 227 verdrängt
+      - Konkurrenz zu § 222
+      - Konkurrenzen
       card_slugs:
       - sr-kv226-227-konkurrenzen
