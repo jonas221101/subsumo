@@ -89,7 +89,7 @@ cards:
 - slug: sr-diebstahl-zueignungsabsicht
   type: definition
   front: 'Definiere: Absicht rechtswidriger Zueignung, § 242 Abs. 1 StGB'
-  back: 'Züignungsabsicht setzt zwei Komponenten voraus: die Aneignungskomponente
+  back: 'Zueignungsabsicht setzt zwei Komponenten voraus: die Aneignungskomponente
     - der Täter will die Sache oder zumindest den in ihr verkörperten Wert wenigstens
     vorübergehend seinem eigenen Vermögen einverleiben (insoweit ist dolus directus
     1. Grades erforderlich) - und die Enteignungskomponente - er will den Eigentümer
@@ -186,7 +186,7 @@ faelle:
     erwartung: 'Ja. Durch das Einstecken in die Innentasche hat A eine Gewahrsamsenklave
       gebildet: Der Gewahrsam der Drogerie ist gebrochen, eigener neuer Gewahrsam
       des A begründet - das Verlassen des Ladens ist dafür nicht erforderlich.'
-  - prompt: Liegt Züignungsabsicht vor?
+  - prompt: Liegt Zueignungsabsicht vor?
     erwartung: Ja - A wollte die Flasche seinem eigenen Vermögen einverleiben (Aneignung)
       und die Drogerie dauerhaft von ihrem Eigentum ausschließen (Enteignung).
   - prompt: War die erstrebte Zueignung rechtswidrig?
@@ -227,13 +227,13 @@ faelle:
       - sr-diebstahl-wegnahme-begriff
       - sr-diebstahl-vollendung-gewahrsamsenklave
     - id: p4
-      label: Züignungsabsicht mit Aneignungs- und Enteignungskomponente bejaht
+      label: Zueignungsabsicht mit Aneignungs- und Enteignungskomponente bejaht
       weight: 2.5
       required: true
       norms:
       - § 242 Abs. 1 StGB
       keywords:
-      - Züignungsabsicht
+      - Zueignungsabsicht
       - Aneignung
       - Enteignung
       card_slugs:

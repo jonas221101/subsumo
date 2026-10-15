@@ -28,7 +28,7 @@ cards:
   stand: 2026-09
 - slug: sr-unterschlagung-manifestation-beispiele
   type: streitstand
-  front: Welche Verhaltensweisen manifestieren typischerweise den Züignungswillen
+  front: Welche Verhaltensweisen manifestieren typischerweise den Zueignungswillen
     bei § 246 StGB?
   back: Als Manifestation anerkannt sind insbesondere die Weiterveräußerung oder
     Verpfändung der Sache, ihr Verbrauch oder Einbau in eine eigene Sache sowie die
@@ -44,9 +44,9 @@ cards:
   type: norm
   front: Was bewirkt die Subsidiaritätsklausel des § 246 Abs. 1 a. E. StGB?
   back: § 246 StGB tritt zurück, wenn die Tat zugleich einen anderen, schwerer bestraften
-    Züignungstatbestand erfüllt - insbesondere Diebstahl, § 242 StGB. Die Klausel
+    Zueignungstatbestand erfüllt - insbesondere Diebstahl, § 242 StGB. Die Klausel
     verhindert, dass der Auffangtatbestand der Unterschlagung neben einer spezielleren
-    und schwerer bedrohten Züignungsvorschrift eigenständig zur Anwendung kommt.
+    und schwerer bedrohten Zueignungsvorschrift eigenständig zur Anwendung kommt.
   norms:
   - § 246 Abs. 1 StGB
   - § 242 StGB
@@ -89,7 +89,7 @@ cards:
     Täter hat die Sache regelmäßig bereits selbst rechtmäßig in Gewahrsam oder
     Besitz - etwa als Finder, Mieter oder Entleiher - und muss sie sich lediglich
     noch durch eine nach außen tretende Handlung zueignen. § 246 StGB ist daher das
-    Auffangdelikt für Züignungen ohne Gewahrsamsbruch.'
+    Auffangdelikt für Zueignungen ohne Gewahrsamsbruch.'
   norms:
   - § 242 StGB
   - § 246 Abs. 1 StGB
@@ -102,7 +102,7 @@ cards:
     Tat im Einzelfall nicht verfolgbar ist (z. B. verjährt)?
   back: 'Nach ganz h.M. ist die Subsidiaritätsklausel des § 246 Abs. 1 a. E. StGB
     rein formell zu verstehen: Es genügt, dass der Täter tatbestandlich auch eine
-    andere, schwerer bedrohte Züignungsvorschrift erfüllt hat. Auf die tatsächliche
+    andere, schwerer bedrohte Zueignungsvorschrift erfüllt hat. Auf die tatsächliche
     Verfolgbarkeit dieser Tat im Einzelfall - etwa bei Verjährung oder fehlendem
     Strafantrag - kommt es nicht an; § 246 StGB bleibt auch dann zurückgedrängt.'
   norms:
@@ -122,7 +122,7 @@ schemata:
   - label: I. Tatbestand
     children:
     - label: 1. Fremde bewegliche Sache
-    - label: 2. Zueignung (nach außen tretende Manifestation des Züignungswillens)
+    - label: 2. Zueignung (nach außen tretende Manifestation des Zueignungswillens)
     - label: 3. Rechtswidrigkeit der Zueignung
     - label: '4. Qualifikation: Anvertrautsein, § 246 Abs. 2 StGB'
       hinweis: Nur prüfen, wenn der Sachverhalt ein Vertrauensverhältnis zeigt (z.
@@ -130,7 +130,7 @@ schemata:
   - label: II. Rechtswidrigkeit
   - label: III. Schuld
   - label: IV. Subsidiarität, § 246 Abs. 1 a. E. StGB
-    hinweis: Prüfen, ob eine andere, schwerer bedrohte Züignungsvorschrift (insb.
+    hinweis: Prüfen, ob eine andere, schwerer bedrohte Zueignungsvorschrift (insb.
       § 242 StGB) tatbestandlich erfüllt ist.
 faelle:
 - slug: sr-fall-verkauftes-rennrad

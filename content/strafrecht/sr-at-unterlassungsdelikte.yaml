@@ -131,7 +131,7 @@ cards:
     Verwirklichung des gesetzlichen Tatbestandes durch aktives Tun entsprechen (§
     13 Abs. 1 a.E. StGB). Bei schlichten Erfolgsdelikten, bei denen das Gesetz nur
     den Erfolg, nicht eine bestimmte Handlungsweise voraussetzt, hat die Entsprechungsklausel
-    regelmäßig keine eigenständige Bedeutung, da Tun und Unterlassen gleichermässen
+    regelmäßig keine eigenständige Bedeutung, da Tun und Unterlassen gleichermaßen
     zum Erfolg führen können.
   norms:
   - § 13 Abs. 1 StGB
@@ -224,7 +224,7 @@ faelle:
   - prompt: Bedarf es hier zusätzlich der Entsprechungsklausel des § 13 Abs. 1 a.E.
       StGB?
     erwartung: Nein - § 212 StGB ist ein schlichtes Erfolgsdelikt ohne besondere Tatmodalität,
-      sodass Tun und Unterlassen gleichermässen tatbestandsmäßig sein können;
+      sodass Tun und Unterlassen gleichermaßen tatbestandsmäßig sein können;
       die Entsprechungsklausel hat hier keine eigenständige Bedeutung.
   - prompt: Ergebnis?
     erwartung: M hat sich wegen Totschlags durch Unterlassen gemäß §§ 212 Abs. 1,

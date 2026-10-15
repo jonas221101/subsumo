@@ -9,8 +9,8 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-16'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: sr-toetung-totschlag-212
   type: definition
@@ -50,12 +50,19 @@ cards:
 - slug: sr-toetung-heimtuecke
   type: definition
   front: 'Definiere: Heimtücke i.S.d. § 211 Abs. 2 StGB'
-  back: Heimtückisch tötet, wer die Arg- und Wehrlosigkeit des Opfers bewusst zur
-    Tat ausnutzt. Arglosigkeit setzt voraus, dass das Opfer sich im Angriffszeitpunkt
-    keines erheblichen Angriffs auf sein Leben versieht; Wehrlosigkeit knüpft an
-    die dadurch eingeschränkte Verteidigungsmöglichkeit an. Für das subjektive
-    Ausnutzungsbewusstsein genügt, dass der Täter die die Heimtücke begründenden
-    Umstände in ihrer Bedeutung für die Tatbegehung erfasst.
+  back: 'Heimtückisch tötet, wer die Arg- und Wehrlosigkeit des Opfers bewusst zur
+    Tat ausnutzt. Arglos ist, wer sich zu Beginn des ersten mit Tötungsvorsatz geführten
+    Angriffs keines Angriffs auf sein Leben versieht; auch Schlafende sind arglos,
+    wenn sie sich vor dem Einschlafen keines Angriffs versehen mussten. Wehrlos ist,
+    wer infolge der Arglosigkeit in seiner Verteidigungsmöglichkeit zumindest erheblich
+    eingeschränkt ist. Bei Kleinkindern und anderen Personen, die schon aus körperlichen
+    Gründen arg- und wehrlos sind, kommt es nach der Rspr. auf die Arglosigkeit schutzbereiter
+    Dritter an, deren Schutz der Täter ausschaltet. Subjektiv ist das Ausnutzungsbewusstsein
+    erforderlich: Der Täter muss die Arg- und Wehrlosigkeit in ihrer Bedeutung für
+    die Tatbegehung erfassen; im Affekt oder bei Erregung kann es fehlen. Die Rspr.
+    verlangt zusätzlich eine feindliche Willensrichtung (fehlt bei Tötung aus Mitleid);
+    Teile der Lit. fordern darüber hinaus als Tatbestandsrestriktion einen verwerflichen
+    Vertrauensbruch (Perfidie).'
   norms:
   - § 211 Abs. 2 StGB
   quellen:
@@ -129,11 +136,18 @@ cards:
 - slug: sr-toetung-niedrige-beweggruende
   type: definition
   front: 'Definiere: sonstige niedrige Beweggründe i.S.d. § 211 Abs. 2 StGB'
-  back: Niedrig sind Beweggründe, die nach allgemeiner sittlicher Wertung auf tiefster
-    Stufe stehen und in deutlichem Missverhältnis zum Anlass der Tat stehen, mithin
-    besonders verwerflich sind. Erforderlich ist eine Gesamtwürdigung der Umstände
-    der Tat und der Persönlichkeit des Täters; bloße Verachtung des Opfers oder
-    spontane Wut allein genügen nicht ohne Weiteres.
+  back: 'Niedrig sind Beweggründe, die nach allgemeiner sittlicher Wertung auf tiefster
+    Stufe stehen, durch hemmungslose, triebhafte Eigensucht bestimmt und deshalb besonders
+    verwerflich, ja verächtlich sind. Erforderlich ist eine Gesamtwürdigung aller
+    äußeren und inneren Umstände der Tat, der Lebensverhältnisse des Täters und seiner
+    Persönlichkeit (Motivbündel). Positivbeispiele: Tötung aus Hass auf bestimmte
+    Gruppen (z. B. Rassenhass), Tötung aus Besitzdenken bei Trennung (Trennungstötung,
+    wenn der Täter dem Opfer das Recht auf ein eigenes Leben abspricht), Tötung aus
+    Eifersucht in Form des Besitzdenkens, Tötung zur Beseitigung eines unliebsamen
+    Menschen aus bloßer Bequemlichkeit. Negativbeispiele: Tötung aus Verzweiflung,
+    aus Angst, im Affekt aus einer Konfliktlage heraus, aus Mitleid, wenn die Motive
+    nachvollziehbar sind. Verachtung des Opfers und spontane Wut können also je nach
+    Gesamtwürdigung niedrig sein oder nicht; entscheidend ist die Wertung im Einzelfall.'
   norms:
   - § 211 Abs. 2 StGB
   quellen:
@@ -189,10 +203,17 @@ cards:
 - slug: sr-toetung-auf-verlangen-216
   type: definition
   front: 'Definiere: Tötung auf Verlangen, § 216 StGB'
-  back: Wer durch das ausdruckliche und ernstliche Verlangen des Getöteten zur Tötung
-    bestimmt worden ist, wird nach dem gegenüber § 212 StGB milderen § 216 StGB bestraft.
-    Das Verlangen muss vor der Tat ernstlich, ausdrücklich und in Kenntnis der Tragweite
-    geäußert worden sein; bloße Einwilligung ohne aktives Verlangen genügt nicht.
+  back: 'Wer durch das ausdrückliche und ernstliche Verlangen des Getöteten zur Tötung
+    bestimmt worden ist, wird nach dem gegenüber § 212 StGB milderen § 216 StGB bestraft
+    (Freiheitsstrafe von sechs Monaten bis zu fünf Jahren). Das Verlangen muss vor
+    der Tat ernstlich, ausdrücklich und in Kenntnis der Tragweite geäußert worden
+    sein; bloße Einwilligung ohne aktives Verlangen genügt nicht (dann § 212 StGB,
+    ggf. § 213 StGB). Abgrenzung zur straflosen Teilnahme an der Selbsttötung: Entscheidend
+    ist die Tatherrschaft über den letzten lebensbeendenden Akt. Führt der Sterbewillige
+    ihn selbst eigenverantwortlich aus (Selbsttötung), ist die Mitwirkung als Teilnahme
+    an einer straflosen Haupttat nicht strafbar; liegt die Tatherrschaft beim Dritten,
+    liegt § 216 StGB vor. Der frühere § 217 StGB (geschäftsmäßige Förderung der Selbsttötung)
+    ist durch das BVerfG (Urteil vom 26.02.2020) für nichtig erklärt worden.'
   norms:
   - § 216 StGB
   quellen:
@@ -216,17 +237,28 @@ schemata:
     children:
     - label: '1. Objektiver Tatbestand: Tod eines anderen Menschen, Kausalität, objektive
         Zurechnung'
-    - label: '2. Subjektiver Tatbestand: Vorsatz, § 15 StGB'
-  - label: II. Qualifizierende Mordmerkmale, § 211 Abs. 2 StGB
+    - label: '2. Subjektiver Tatbestand: Vorsatz, § 15 StGB (bedingter Vorsatz genügt)'
+  - label: 'II. Privilegierung: Tötung auf Verlangen, § 216 StGB'
+    hinweis: Gehört in die Tatbestandsprüfung (Sperrwirkung gegenüber §§ 211, 212).
+      Nur prüfen, wenn der Sachverhalt ein Verlangen des Opfers nahelegt. Abgrenzung
+      zur straflosen Teilnahme an der Selbsttötung nach der Tatherrschaft.
+    children:
+    - label: 1. Ausdrückliches und ernstliches Verlangen des Getöteten
+    - label: 2. Täter ist durch das Verlangen zur Tötung bestimmt worden
+  - label: III. Qualifizierende Mordmerkmale, § 211 Abs. 2 StGB
+    hinweis: 'Aufbau umstritten: Nach der h.L. (Qualifikationstheorie) wird § 212
+      vor § 211 geprüft; die Rspr. (Selbstständigkeitstheorie) sieht § 211 als eigenständigen
+      Tatbestand. Der Streit wirkt sich bei Beteiligung mehrerer über § 28 StGB aus.'
     children:
     - label: '1. Erste Gruppe (Taterantrieb): Mordlust, Befriedigung des Geschlechtstriebs,
         Habgier, sonstige niedrige Beweggründe'
     - label: '2. Zweite Gruppe (Tatausführung): Heimtücke, Grausamkeit, gemeingefährliche
         Mittel'
     - label: '3. Dritte Gruppe (Tatzweck): Ermöglichungsabsicht, Verdeckungsabsicht'
-  - label: III. Rechtswidrigkeit und Schuld
-  - label: 'IV. Sonderfall: Tötung auf Verlangen, § 216 StGB (Privilegierung)'
+  - label: IV. Rechtswidrigkeit und Schuld
   - label: V. Ergebnis und Konkurrenzen
+    hinweis: Bei § 212 StGB ggf. minder schwerer Fall, § 213 StGB (Provokation durch
+      Misshandlung oder schwere Beleidigung).
 faelle:
 - slug: sr-fall-nachtschicht-wachmann
   title: Der Wachmann
@@ -236,12 +268,13 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
   stand: 2026-09
-  facts: Wächter W entdeckt während seiner Nachtschicht in einer Lagerhalle den
-    Einbrecher E, der gerade dabei ist, Elektronikware in einen Transporter zu laden.
-    Um nicht als Zeuge identifiziert zu werden und straflos zu bleiben, beschließt
-    E, den W zu töten. Er schleicht sich von hinten an den ahnungslosen W heran,
-    der ihm den Rücken zudreht und mit seinem Diensttelefon beschäftigt ist, und
-    ersticht ihn mit einem mitgeführten Messer, bevor W reagieren kann.
+  facts: Wächter W sieht in einer Lagerhalle den Einbrecher E, der gerade Elektronikware
+    in einen Transporter lädt. W hält E für einen Mitarbeiter der Spedition, grüßt
+    freundlich und wendet sich seinem Diensttelefon zu. E bemerkt, dass W ihn gesehen
+    hat und später beschreiben könnte, und beschließt, W zu töten, um nicht als Täter
+    des Diebstahls identifiziert zu werden und straflos zu bleiben. Er schleicht sich
+    von hinten an den ahnungslosen W heran, der ihm den Rücken zudreht, und ersticht
+    ihn mit einem mitgeführten Messer, bevor W reagieren kann.
   question: Wie hat sich E strafbar gemacht?
   steps:
   - prompt: Ist der Grundtatbestand des § 212 Abs. 1 StGB erfüllt?
@@ -263,8 +296,10 @@ faelle:
       norms:
       - § 212 Abs. 1 StGB
       keywords:
-      - '212'
-      - Totschlag
+      - § 212 Abs. 1
+      - Totschlag gemäß § 212
+      - vorsätzliche Tötung
+      - Grundtatbestand des Totschlags
       card_slugs:
       - sr-toetung-totschlag-212
     - id: p2
@@ -274,9 +309,10 @@ faelle:
       norms:
       - § 211 Abs. 2 StGB
       keywords:
-      - arglos
-      - wehrlos
-      - Heimtücke
+      - Arglosigkeit
+      - Wehrlosigkeit
+      - Arg- und Wehrlosigkeit
+      - rechnete nicht mit einem Angriff
       card_slugs:
       - sr-toetung-heimtuecke
     - id: p3
@@ -285,6 +321,8 @@ faelle:
       keywords:
       - Ausnutzungsbewusstsein
       - bewusst ausgenutzt
+      - Ausnutzen der Arg- und Wehrlosigkeit
+      - bewusste Ausnutzung
       card_slugs:
       - sr-toetung-heimtuecke
     - id: p4
@@ -297,14 +335,19 @@ faelle:
       keywords:
       - Verdeckungsabsicht
       - finaler Zusammenhang
+      - Verdeckung der Vortat
+      - um die Tat zu verdecken
       card_slugs:
       - sr-toetung-verdeckungsabsicht
     - id: p5
       label: Streitstand zum Verhältnis § 211/§ 212 StGB zumindest angesprochen
       weight: 1.0
       keywords:
-      - Qualifikation
-      - eigenständig
+      - Selbstständigkeitstheorie
+      - Qualifikationstheorie
+      - Qualifikationstatbestand
+      - eigenständiger Tatbestand
+      - § 28 Abs. 2
       card_slugs:
       - sr-toetung-abgrenzung-211-212
     - id: p6
@@ -312,8 +355,21 @@ faelle:
       weight: 1.0
       required: true
       keywords:
-      - § 211
-      - Mord
-      - strafbar
+      - Mord gemäß § 211
+      - Mord, § 211
+      - § 211 Abs. 2
+      - wegen Mordes
+      - Mord in Tatmehrheit
       card_slugs:
       - sr-toetung-mord-211-systematik
+    - id: p7
+      label: Konkurrenzen zum vorangegangenen Diebstahl benannt
+      weight: 1.0
+      required: false
+      keywords:
+      - Konkurrenzen
+      - Tatmehrheit
+      - Tateinheit
+      - § 53
+      - § 52
+      card_slugs: []
