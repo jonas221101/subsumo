@@ -155,9 +155,12 @@ cards:
     Bei öffentlich zugänglichen Geschäftsräumen (Kaufhaus, Gaststätte) hat der
     private Inhaber ein Hausrecht, das er durch ein Hausverbot gegenüber einzelnen
     Personen ausüben darf. Das Hausverbot beseitigt das generelle Einverständnis;
-    wer es missachtet, dringt ein. Das Hausverbot braucht grundsätzlich keinen
-    sachlichen Grund, ist aber durch das AGG und zivilrechtliche Schranken
-    begrenzt. Bei Räumen in staatlicher Hand gilt die Grundrechtsbindung. Das
+    wer es missachtet, dringt ein. Private Betreiber üben das Hausrecht grundsätzlich
+    frei aus, sind aber durch das AGG und zivilrechtliche Schranken gebunden; nach dem
+    Stadionverbot-Beschluss des BVerfG vom 11.04.2018 (1 BvR 3080/09) strahlt zudem der
+    Gleichheitssatz (Art. 3 Abs. 1 GG) mittelbar auf Hausverbote aus, wenn sie Veranstaltungen
+    mit großer Zahl von Besuchern betreffen, die über die Teilhabe am gesellschaftlichen Leben
+    entscheiden; dann ist ein sachlicher Grund erforderlich. Bei Räumen in staatlicher Hand gilt die Grundrechtsbindung. Das
     Bundesverfassungsgericht hat im Fraport-Urteil (BVerfGE 128, 226) entschieden,
     dass auch gemischtwirtschaftliche Unternehmen in öffentlicher Hand, die
     einen für die Allgemeinheit geöffneten Raum der Kommunikation betreiben
@@ -169,6 +172,7 @@ cards:
   - § 123 Abs. 1 StGB
   - Art. 8 Abs. 1 GG
   - Art. 5 Abs. 1 GG
+  - Art. 3 Abs. 1 GG
   quellen:
   - BVerfGE 128, 226 (Fraport)
   - StGB, amtliche Fassung
@@ -187,8 +191,8 @@ cards:
     Zahl nicht mehr überschaubare Personenmehrheit; die Zusammenrottung muss
     öffentlich geschehen, also für einen unbestimmten Personenkreis wahrnehmbar
     oder zugänglich. Sie steht in engem Zusammenhang mit dem
-    Landfriedensbruch (§ 125 StGB). Der Teilnehmer muss die Gewaltabsicht der Menge
-    kennen.
+    Landfriedensbruch (§ 125 StGB). Der Teilnehmer muss vorsätzlich handeln; sein Vorsatz
+    muss auch die Gewaltabsicht der Menge erfassen.
   norms:
   - § 124 StGB
   - § 125 StGB
@@ -282,7 +286,8 @@ faelle:
       widerrechtlich eingedrungen. Rechtfertigungsgründe sind nicht ersichtlich.
   - prompt: Wie ist das Verbleiben nach der Aufforderung zu bewerten?
     erwartung: Auch die zweite Variante (Verweilen nach Aufforderung) ist erfüllt, weil
-      G nach der deutlichen Aufforderung nicht sofort ging. Sie tritt hinter das
+      G nach der deutlichen Aufforderung auch nach angemessener Zeit nicht ging; er
+      hätte nur aufstehen müssen. Sie tritt hinter das
       Eindringen zurück; beide Varianten bilden eine Tat.
   - prompt: Sind Vorsatz, Schuld und Strafantrag gegeben?
     erwartung: G kannte das Hausverbot und handelte vorsätzlich. Schuld liegt vor. W hat als

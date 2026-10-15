@@ -17,9 +17,9 @@ cards:
     Wie lautet der Tatbestand des erpresserischen Menschenraubs, § 239a Abs. 1 StGB?
   back: >-
     § 239a Abs. 1 StGB bestraft, wer einen Menschen entführt oder sich eines Menschen bemächtigt,
-    um die Sorge eines Dritten um das Wohl des Opfers zu einer Erpressung (§ 253 StGB) auszunutzen
-    (1. Alt.), oder wer die von ihm durch eine solche Handlung geschaffene Lage eines Menschen
-    zu einer solchen Erpressung ausnutzt (2. Alt.). Die Mindeststrafe beträgt fünf Jahre Freiheitsstrafe.
+    um die Sorge des Opfers um sein Wohl oder die Sorge eines Dritten um das Wohl des Opfers
+    zu einer Erpressung (§ 253 StGB) auszunutzen (1. Alt.), oder wer die von ihm durch eine
+    solche Handlung geschaffene Lage eines anderen zu einer solchen Erpressung ausnutzt (2. Alt.). Die Mindeststrafe beträgt fünf Jahre Freiheitsstrafe.
     Abs. 2 sieht für minder schwere Fälle einen Strafrahmen von einem bis zu zehn Jahren vor.
     Abs. 3 regelt die Todesfolge bei Leichtfertigkeit (lebenslange Freiheitsstrafe oder Freiheitsstrafe
     nicht unter zehn Jahren). Abs. 4 enthält eine Milderungsmöglichkeit, wenn der Täter das
@@ -61,11 +61,11 @@ cards:
   front: >-
     Welche Absicht verlangt § 239a Abs. 1 StGB und wer ist "Dritter"?
   back: >-
-    Der Täter muss die Absicht haben, die Sorge eines Dritten um das Wohl des Opfers zu einer
-    Erpressung auszunutzen. Ausgenutzt wird die Sorge eines Dritten, wenn der Täter erwartet,
-    dass dieser aus Angst um das Wohlergehen des Opfers der Forderung nachkommt. Dritter ist
-    nach dem Wortlaut jede vom Opfer verschiedene Person, die die Sorge um das Opfer hat,
-    z. B. Angehörige oder Freunde des Opfers. Die Absicht (zielgerichtetes Wollen) ist überschießende
+    Der Täter muss die Absicht haben, die Sorge des Opfers um sein eigenes Wohl oder die Sorge
+    eines Dritten um das Wohl des Opfers zu einer Erpressung auszunutzen. Ausgenutzt wird die
+    Sorge, wenn der Täter erwartet, dass der Sorgende aus Angst um das Wohlergehen des Opfers
+    der Forderung nachkommt. Dritter ist jede vom Opfer verschiedene Person, die die Sorge um
+    das Opfer hat, z. B. Angehörige oder Freunde des Opfers (Drei-Personen-Verhältnis). Die Absicht (zielgerichtetes Wollen) ist überschießende
     Innentendenz. Die Erpressung muss nicht stattfinden; § 239a StGB ist ein kupiertes Erfolgsdelikt,
     vollendet mit der Entführung oder Bemächtigung. Die beabsichtigte Erpressung muss die
     Voraussetzungen des § 253 StGB erfüllen (Vermögensvorteil, Bereicherungsabsicht).
@@ -79,17 +79,18 @@ cards:
 - slug: sr-emr-zweipersonen-streit
   type: streitstand
   front: >-
-    Streitstand: Erfasst § 239a StGB auch das Zwei-Personen-Verhältnis?
+    Streitstand: Wie weit reicht § 239a StGB im Zwei-Personen-Verhältnis (Restriktion des Tatbestands)?
   back: >-
     Beim Zwei-Personen-Verhältnis ist das Opfer zugleich Adressat der Erpressung: Der Täter
     bemächtigt sich des Opfers und fordert von ihm selbst Geld, ohne dass ein Dritter besorgt
-    ist. Der Wortlaut ("Sorge eines Dritten") spricht gegen eine Erfassung, weil der Genötigte
-    nicht Dritter ist. Die Rspr. des BGH bezieht auch die Sorge des Opfers um das eigene Wohl
-    ein, schränkt den Tatbestand aber ein: Es muss eine stabile Bemächtigungslage mit einer
-    gewissen Dauer geschaffen worden sein, in der die Bemächtigung eine eigenständige Bedeutung
-    gegenüber dem beabsichtigten Raub oder der Erpressung hat. Die Lit. kritisiert diese Ausweitung
-    vielfach wegen der hohen Mindeststrafe als zu weit; teilweise wird eine Beschränkung auf
-    Dreipersonenverhältnisse gefordert.
+    ist. Der Wortlaut erfasst auch die Sorge des Opfers um sein eigenes Wohl, deckt also diese
+    Konstellation. Wegen der hohen Mindeststrafe von fünf Jahren und der Abgrenzung zu Raub und
+    räuberischer Erpressung ist der Tatbestand aber nach der Rspr. des BGH teleologisch zu
+    beschränken: Es muss eine stabile Bemächtigungslage mit einer gewissen Dauer geschaffen
+    worden sein, in der die Bemächtigung eine eigenständige Bedeutung gegenüber dem beabsichtigten
+    Raub oder der Erpressung hat und das Opfer der Einwirkung des Täters ausgeliefert ist. Teile
+    der Lit. halten diese Restriktion für nicht weitgehend genug und fordern stärkere
+    Einschränkungen, etwa im Hinblick auf das Verhältnis der Bemächtigung zur Nötigungshandlung.
   norms:
   - § 239a Abs. 1 StGB
   quellen:
@@ -148,10 +149,9 @@ cards:
     sich oder einen Dritten durch Vermögensschädigung zu bereichern. § 239b StGB verlangt
     eine Nötigung zu einer beliebigen Handlung, Duldung oder Unterlassung durch Drohung mit
     dem Tod, schwerer Körperverletzung oder längerer Freiheitsentziehung. Die Freiheitsberaubung
-    (§ 239 StGB, eigenes Thema) ist Grundlage beider Tatbestände, ihr Unrecht tritt bei Verwirklichung
-    von § 239a oder § 239b StGB aber nach verbreiteter Ansicht regelmäßig zurück, soweit die
-    Bemächtigung die Freiheitsentziehung bewirkt; die Konkurrenzfrage ist im Einzelnen nicht
-    einheitlich geklärt. Zum Raub (§ 249 StGB): Bei bloßer Gewaltanwendung zur Wegnahme liegt
+    (§ 239 StGB, eigenes Thema) ist Grundlage beider Tatbestände, ob sie bei Verwirklichung von
+    § 239a oder § 239b StGB zurücktritt oder in Tateinheit (§ 52 StGB) steht, wird nicht einheitlich
+    beantwortet; in der Klausur ist die gewählte Lösung kurz zu begründen. Zum Raub (§ 249 StGB): Bei bloßer Gewaltanwendung zur Wegnahme liegt
     Raub vor; erst die stabile Bemächtigungslage mit Erpressungsabsicht führt zu § 239a StGB.
   norms:
   - § 239a StGB
@@ -216,7 +216,8 @@ schemata:
           (§ 239a) bzw. durch Drohung mit Tod, schwerer Körperverletzung oder Freiheitsentziehung
           über eine Woche zu nötigen (§ 239b)
         hinweis: >-
-          Zwei-Personen-Verhältnis: Streit; BGH bejaht bei stabiler Bemächtigungslage.
+          Zwei-Personen-Verhältnis: vom Wortlaut erfasst (Sorge des Opfers um sein Wohl); Restriktion
+          durch das Erfordernis einer stabilen Bemächtigungslage.
   - label: II. Rechtswidrigkeit
   - label: III. Schuld
   - label: 'IV. Strafzumessung: § 239a Abs. 2 bis 4 StGB'

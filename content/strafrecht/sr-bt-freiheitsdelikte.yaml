@@ -360,13 +360,16 @@ faelle:
   - prompt: >-
       Erfüllt A § 239 Abs. 1 StGB, obwohl M das Einsperren nicht bemerkt hat?
     erwartung: >-
-      A hat M durch Abschließen der Tür eingesperrt. Nach der Rspr. und h.M.
-      schützt § 239 StGB die potentielle Fortbewegungsfreiheit; auch eine
-      Schlafende wird erfasst. Die Gegenauffassung (aktuelle
-      Fortbewegungsfreiheit) würde den Tatbestand verneinen. Die h.M. überzeugt,
-      weil das Rechtsgut nicht davon abhängen darf, ob das Opfer die Freiheit
-      gerade ausüben will. Die Dauer von drei Stunden ist erheblich. A handelte
-      vorsätzlich. Er ist wegen Freiheitsberaubung strafbar.
+      A hat M durch Abschließen der Tür eingesperrt und damit ihr Verlassen des
+      Zimmers verhindert. Nach der Rechtsprechung und herrschenden Meinung
+      schützt § 239 StGB die potentielle Fortbewegungsfreiheit, deshalb wird
+      auch eine Schlafende erfasst. Die Gegenauffassung stellt auf die aktuelle
+      Fortbewegungsfreiheit ab und käme hier zu einem anderen Ergebnis. Die
+      herrschende Meinung überzeugt, weil das Rechtsgut nicht davon abhängen
+      darf, ob das Opfer die Freiheit gerade ausüben will. Die Dauer von drei
+      Stunden ist eine nicht ganz unerhebliche Dauer. A handelte mit bedingtem
+      Vorsatz. Er hat sich deshalb wegen Freiheitsberaubung nach § 239 StGB
+      strafbar gemacht.
   - prompt: >-
       Ist die Tat gerechtfertigt?
     erwartung: >-
@@ -402,7 +405,6 @@ faelle:
       keywords:
       - "Freiheitsberaubung"
       - "eingesperrt"
-      - "Einsperren"
       - "Fortbewegungsfreiheit"
       - "§ 239 StGB"
       card_slugs:

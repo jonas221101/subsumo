@@ -65,17 +65,20 @@ cards:
   type: norm
   front: "Wie verhält sich § 225 StGB zu den §§ 223 ff. StGB?"
   back: >-
-    § 225 StGB ist nach h.M. ein selbständiger Tatbestand und kein bloßer
-    Qualifikationstatbestand zu § 223 StGB. Die Nähebeziehung und die besondere
-    Verwerflichkeit der Tat begründen eigenes Unrecht. Folgerungen: (1) Die
+    Die Einordnung des § 225 StGB ist umstritten. Überwiegend wird er als
+    selbständiger Tatbestand und nicht als bloße Qualifikation zu § 223 StGB
+    angesehen: Die Nähebeziehung und die besondere Verwerflichkeit der Tat
+    begründen eigenes Unrecht. Wer ihn dagegen als Qualifikation einordnet, wendet
+    auf die Beteiligung § 28 Abs. 2 StGB an. Folgerungen nach der überwiegenden
+    Ansicht: (1) Die
     Strafbarkeit nach §§ 223, 224, 226 StGB bleibt daneben zu prüfen; die
     Delikte stehen meist in Tateinheit (§ 52 StGB). (2) Der Strafrahmen von §
     225 StGB (Freiheitsstrafe von sechs Monaten bis zu zehn Jahren) ist höher
     als der von § 223 StGB. (3) Für die Beteiligung gilt § 28 Abs. 1 StGB, weil
     die Nähebeziehung strafbegründend wirkt. (4) Bei einer Körperverletzung ohne
     gefühllose Gesinnung gegenüber einem Kind bleibt es bei §§ 223, 224 StGB;
-    der Schlag bei einem Erziehungsfehler ist noch nicht per se ein Fall des §
-    225 StGB. Bei Todesfolge kommen §§ 222, 227 StGB in Betracht; Verweis auf
+    ein einzelner Schlag ist noch nicht per se ein Fall des § 225 StGB, auch wenn
+    körperliche Bestrafungen nach § 1631 Abs. 2 BGB unzulässig sind. Bei Todesfolge kommen §§ 222, 227 StGB in Betracht; Verweis auf
     die Themen sr-bt-koerperverletzung-226-227 und sr-bt-koerperverletzung-224.
   norms:
   - "§ 225 StGB"
@@ -176,9 +179,9 @@ cards:
     erhebt die Beteiligung selbst zur Tat. Der Beteiligte muss die Schlägerei
     wollen oder zumindest billigend in Kauf nehmen. Die schwere Folge muss durch
     die Schlägerei oder den Angriff als Ganzes verursacht worden sein, also in
-    einem kausalen Zusammenhang zu dem Tumult stehen; ob sie auf einer Handlung
-    eines Beteiligten oder eines unbeteiligten Dritten beruht, ist unerheblich,
-    solange sie dem Gruppengeschehen entspringt.
+    einem kausalen Zusammenhang zu dem Tumult stehen; von welchem Beteiligten
+    sie herrührt, ist unerheblich, solange sie dem Gruppengeschehen entspringt. Wer erst
+    nach Eintritt der schweren Folge hinzutritt, ist nach der Rspr. nicht erfasst.
   norms:
   - "§ 231 Abs. 1 StGB"
   quellen:
@@ -323,7 +326,7 @@ faelle:
   facts: >-
     Vor einer Gaststätte eskaliert ein Streit zwischen A und B. Wenig später
     greift auch C ein, der mit A befreundet ist. A und C schlagen gemeinsam auf
-    B ein, bis dieser zu Boden geht. Als B am Boden liegt, trifft ihn ein Schlag
+    B ein, der sich nicht wehrt, bis dieser zu Boden geht. Als B am Boden liegt, trifft ihn ein Schlag
     oder Tritt am Auge; später stellt sich heraus, dass B auf einem Auge das
     Sehvermögen auf Dauer verloren hat. Wer von beiden diesen Schlag oder Tritt
     ausgeführt hat, ist nicht aufklärbar. D, ein Passant, versucht, die

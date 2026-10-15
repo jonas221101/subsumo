@@ -78,10 +78,11 @@ cards:
     Verbringen in der Absicht, das Auffinden, die Einziehung oder die Herkunftsermittlung
     zu vereiteln oder zu gefährden; (3) Sich-oder-einem-Dritten-Verschaffen, also die Erlangung
     tatsächlicher Verfügungsgewalt; (4) Verwahren oder Verwenden für sich oder einen Dritten,
-    wenn der Täter die Herkunft des Gegenstands zum Zeitpunkt der Tat kennt. Verschaffen verlangt
-    bei Nr. 3 im Unterschied zum bloßen Verwahren einverständliche Erlangung einer eigenen
-    Verfügungsgewalt. Die Absicht der Verschleierung gehört bei Nr. 2 zum Tatbestand; bei
-    Nr. 3 und 4 genügt die Kenntnis der Herkunft.
+    wenn der Täter die Herkunft des Gegenstands kennt (maßgeblich ist nach dem Wortlaut die
+    Kenntnis zum Zeitpunkt des Erlangens). Verschaffen verlangt bei Nr. 3 im Unterschied zum
+    bloßen Verwahren die einverständliche Erlangung einer eigenen Verfügungsgewalt. Die Absicht
+    der Verschleierung gehört nur bei Nr. 2 zum Tatbestand; bei Nr. 1 und 3 genügt bedingter
+    Vorsatz hinsichtlich der Herkunft, bei Nr. 4 ist positive Kenntnis erforderlich.
   norms:
   - § 261 Abs. 1 StGB
   quellen:
@@ -93,11 +94,11 @@ cards:
   front: >-
     Welche subjektiven Anforderungen stellt § 261 StGB (Kenntnis, Leichtfertigkeit)?
   back: >-
-    Für die Vorsatztat nach § 261 Abs. 1 StGB muss der Täter die Herkunft des Gegenstands
-    aus einer rechtswidrigen Tat kennen (bei den Verschaffens- und Verwahrensvarianten zum
-    Zeitpunkt der Tathandlung) und die Tathandlung wollen. Für Verschaffen und Verwahren oder
-    Verwenden verlangt das Gesetz positive Kenntnis der Herkunft; bei den übrigen Handlungen
-    genügt bedingter Vorsatz. Daneben stellt § 261 StGB auch die leichtfertige Unkenntnis
+    Für die Vorsatztat nach § 261 Abs. 1 StGB muss der Täter die Tathandlung wollen und die
+    Herkunft des Gegenstands aus einer rechtswidrigen Tat zumindest für möglich halten und
+    billigend in Kauf nehmen (bedingter Vorsatz). Für Verwahren und Verwenden (Nr. 4) verlangt
+    das Gesetz darüber hinaus positive Kenntnis der Herkunft, nach dem Wortlaut bezogen auf den
+    Zeitpunkt des Erlangens; bei den übrigen Handlungen genügt bedingter Vorsatz. Daneben stellt § 261 StGB auch die leichtfertige Unkenntnis
     der Herkunft unter Strafe. Leichtfertigkeit ist eine gesteigerte Form der Fahrlässigkeit
     und liegt vor, wenn sich dem Täter die Herkunft aus einer rechtswidrigen Tat geradezu
     aufdrängen musste und er dies aus besonderer Gleichgültigkeit oder grober Unachtsamkeit
@@ -136,13 +137,12 @@ cards:
     Wie wird die Strafbarkeit des Vortäters und Vortatbeteiligten wegen Geldwäsche (Selbstgeldwäsche)
     behandelt?
   back: >-
-    Wer an der Vortat beteiligt ist, soll nach dem Grundgedanken des Gesetzes nicht zusätzlich
-    wegen Geldwäsche bestraft werden, soweit er lediglich die Beute sichert oder verwertet.
-    Die Strafe für die Vortat erfasst den Unrechtsgehalt der Aneignung ("mitbestrafte Nachtat").
-    Ausnahmen sind für den Fall vorgesehen, dass der Vortäter die inkriminierten Werte in
-    den Wirtschaftskreislauf einspeist und dadurch ihre Herkunft verschleiert. Die Reichweite
-    der Privilegierung ist im Einzelnen im aktuellen Gesetzeswortlaut nachzulesen, weil sie
-    durch die Reform 2021 verändert wurde. In der Klausur ist die Vortatbeteiligung stets
+    Nach § 261 StGB wird wegen Geldwäsche nicht bestraft, wer wegen Beteiligung an der Vortat
+    strafbar ist (Selbstgeldwäsche-Privileg). Der Grund liegt darin, dass die Strafe für die
+    Vortat den Unrechtsgehalt der bloßen Sicherung und Verwertung der Beute miterfasst
+    ("mitbestrafte Nachtat"). Das Privileg gilt nicht, wenn der Vortatbeteiligte den Gegenstand
+    in den Verkehr bringt und dabei die rechtswidrige Herkunft verschleiert; dann ist er auch
+    wegen Geldwäsche strafbar. In der Klausur ist die Vortatbeteiligung stets
     zu prüfen. Wer nicht an der Vortat beteiligt ist, kann ohne Einschränkung Täter sein.
   norms:
   - § 261 StGB
@@ -261,8 +261,8 @@ faelle:
       kommt es seit der Reform 2021 nicht mehr an.
   - prompt: Welche Tathandlung hat F vorgenommen?
     erwartung: >-
-      F hat das Geld verwahrt, § 261 Abs. 1 Nr. 4 StGB, für A (einen Dritten). Verbergen kommt
-      daneben in Betracht, weil er es im Wäscheschrank versteckt.
+      F hat das Geld verwahrt, § 261 Abs. 1 Nr. 4 StGB. Verbergen nach Nr. 1 kommt daneben in
+      Betracht, weil er es im Wäscheschrank versteckt.
   - prompt: Kannte F die Herkunft?
     erwartung: >-
       Ja - A hat ihm den Betrug offen geschildert; F handelte mit Kenntnis und Vorsatz.
@@ -297,7 +297,7 @@ faelle:
       - sr-gw-reform-2021
     - id: p2
       label: >-
-        Tathandlung: Verwahren (und Verbergen) für einen Dritten
+        Tathandlung: Verwahren (und Verbergen) des Geldes
       weight: 2.0
       required: true
       norms:
@@ -307,7 +307,7 @@ faelle:
       - verwahrt
       - Verbergen
       - § 261 Abs. 1 Nr. 4
-      - für einen Dritten
+      - Verwahren des Geldes
       card_slugs:
       - sr-gw-tathandlungen
     - id: p3
