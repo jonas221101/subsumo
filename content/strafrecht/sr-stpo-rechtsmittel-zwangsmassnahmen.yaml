@@ -1,0 +1,403 @@
+topic:
+  slug: sr-stpo-rechtsmittel-zwangsmassnahmen
+  area: strafrecht
+  title: Strafprozessrecht - Zwangsmaßnahmen und Rechtsmittel (Durchsuchung, U-Haft, Berufung, Revision)
+  parent: strafrecht
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-stpoz-durchsuchung-102
+  type: norm
+  front: Unter welchen Voraussetzungen ist die Durchsuchung beim Verdächtigen zulässig (§ 102 StPO)?
+  back: >-
+    Bei dem, der als Täter oder Teilnehmer einer Straftat oder der Datenhehlerei,
+    Begünstigung, Strafvereitelung oder Hehlerei verdächtig ist, darf eine Durchsuchung
+    der Wohnung und anderer Räume sowie seiner Person und der ihm gehörenden Sachen
+    sowohl zum Zweck seiner Ergreifung als auch dann vorgenommen werden, wenn zu
+    vermuten ist, dass die Durchsuchung zur Auffindung von Beweismitteln führen wird
+    (§ 102 StPO). Erforderlich ist ein Anfangsverdacht, der auf konkreten Tatsachen
+    beruht und über vage Anhaltspunkte hinausgeht, sowie die Verhältnismäßigkeit
+    im engeren Sinn (Tat, Gewicht des Eingriffs, Auffindewahrscheinlichkeit). Der
+    Eingriff in die Wohnung greift in Art. 13 Abs. 1 GG ein; deshalb sind die formellen
+    Vorgaben streng zu wahren. Die Durchsuchung der Person ist zusätzlich durch die
+    Menschenwürde und das allgemeine Persönlichkeitsrecht begrenzt.
+  norms:
+  - § 102 StPO
+  - Art. 13 Abs. 1 GG
+  quellen:
+  - StPO, amtliche Fassung
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpoz-durchsuchung-103
+  type: norm
+  front: Wann darf bei Dritten (Unverdächtigen) durchsucht werden (§ 103 StPO)?
+  back: >-
+    Bei anderen Personen sind Durchsuchungen nur zur Ergreifung des Beschuldigten
+    oder zur Verfolgung von Spuren einer Straftat oder zur Beschlagnahme bestimmter
+    Gegenstände und nur dann zulässig, wenn Tatsachen vorliegen, aus denen zu schließen
+    ist, dass die gesuchte Person, Spur oder Sache sich in den zu durchsuchenden Räumen
+    befindet (§ 103 Abs. 1 S. 1 StPO). Die Anforderungen sind höher als bei § 102
+    StPO, weil der Betroffene unbeteiligt ist: Es genügt nicht die bloße Vermutung,
+    es bedarf konkreter Tatsachen. Die Gegenstände müssen zudem bestimmt bezeichnet
+    sein. Eine Ausnahme bilden bestimmte Räume, in denen sich der Beschuldigte während der
+    Verfolgung aufgehalten hat (§ 103 Abs. 1 S. 2 StPO). Zufallsfunde, die auf eine
+    andere Straftat hindeuten, sind einstweilen zu beschlagnahmen (§ 108 StPO).
+  norms:
+  - § 103 Abs. 1 StPO
+  - § 108 StPO
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpoz-richtervorbehalt-105
+  type: norm
+  front: Wer darf eine Durchsuchung anordnen (§ 105 Abs. 1 StPO, Art. 13 Abs. 2 GG)?
+  back: >-
+    Durchsuchungen dürfen nur durch den Richter, bei Gefahr im Verzug auch durch
+    die Staatsanwaltschaft und ihre Ermittlungspersonen angeordnet werden (§ 105
+    Abs. 1 S. 1 StPO). Der Grundsatz folgt aus Art. 13 Abs. 2 GG (Richtervorbehalt)
+    und ist als Regel zu verstehen: Die Anordnung durch den Richter ist der Normalfall,
+    die Gefahr im Verzug die eng auszulegende Ausnahme. Gefahr im Verzug liegt vor,
+    wenn die vorherige richterliche Anordnung den Erfolg der Durchsuchung gefährden
+    würde, weil der Beweismittelverlust droht; sie ist mit Tatsachen zu begründen,
+    die auf den Einzelfall bezogen sind und zu dokumentieren. Eine bloße Vermutung
+    oder eine pauschale Annahme genügt nicht. Die Strafverfolgungsbehörden dürfen
+    den Eintritt der Gefahr nicht durch zögerliches Handeln herbeiführen. Ein Verstoß
+    gegen den Richtervorbehalt kann ein Beweisverwertungsverbot begründen.
+  norms:
+  - § 105 Abs. 1 StPO
+  - Art. 13 Abs. 2 GG
+  quellen:
+  - StPO, amtliche Fassung
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpoz-gefahr-im-verzug
+  type: rechtsprechung
+  front: 'Rspr.: Gefahr im Verzug und Richtervorbehalt (BVerfGE 103, 142)'
+  back: >-
+    Das Bundesverfassungsgericht hat in BVerfGE 103, 142 klargestellt, dass die Gefahr
+    im Verzug in Art. 13 Abs. 2 GG eng auszulegen ist. Der Richtervorbehalt soll
+    den Grundrechtseingriff durch eine unabhängige und neutrale Instanz vorab kontrollieren.
+    Gefahr im Verzug ist nur anzunehmen, wenn die vorherige richterliche Anordnung
+    den Erfolg der Durchsuchung gefährden würde; die Annahme muss auf Tatsachen
+    gestützt und nachvollziehbar dokumentiert sein. Die Strafverfolgungsbehörden
+    müssen regelmäßig versuchen, eine richterliche Entscheidung zu erlangen, bevor
+    sie selbst handeln; die Gerichte haben die Erreichbarkeit eines Ermittlungsrichters
+    (Eildienst) zu gewährleisten. Die gerichtliche Kontrolle der Annahme der Gefahr
+    im Verzug ist uneingeschränkt; den Ermittlungsbehörden steht kein Beurteilungsspielraum
+    zu.
+  norms:
+  - Art. 13 Abs. 2 GG
+  - § 105 Abs. 1 StPO
+  quellen:
+  - BVerfGE 103, 142
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpoz-beschlagnahme-94
+  type: norm
+  front: Wie funktioniert die Beschlagnahme von Beweisgegenständen (§§ 94, 98 StPO)?
+  back: >-
+    Gegenstände, die als Beweismittel für die Untersuchung von Bedeutung sein können,
+    sind in Verwahrung zu nehmen oder in anderer Weise sicherzustellen (§ 94 Abs. 1
+    StPO). Befinden sie sich in Gewahrsam einer Person und werden nicht freiwillig
+    herausgegeben, bedürfen sie der Beschlagnahme (§ 94 Abs. 2 StPO). Die Beschlagnahme
+    darf nur durch den Richter, bei Gefahr im Verzug auch durch die Staatsanwaltschaft
+    und ihre Ermittlungspersonen angeordnet werden (§ 98 Abs. 1 StPO). Ordnet die
+    Staatsanwaltschaft oder die Polizei an, ist binnen drei Tagen die richterliche
+    Bestätigung zu beantragen, wenn bei der Beschlagnahme weder der Betroffene noch
+    ein erwachsener Angehöriger anwesend war oder der Betroffene ausdrücklich
+    widersprochen hat (§ 98 Abs. 2 S. 1 StPO). Beschlagnahmeverbote bestehen etwa
+    für Mitteilungen zwischen dem Beschuldigten und Zeugnisverweigerungsberechtigten,
+    z. B. dem Verteidiger (§ 97 StPO). Die Beschlagnahme muss verhältnismäßig
+    sein.
+  norms:
+  - § 94 StPO
+  - § 98 StPO
+  - § 97 StPO
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpoz-uhaft-112
+  type: norm
+  front: Unter welchen Voraussetzungen darf Untersuchungshaft angeordnet werden (§ 112 StPO)?
+  back: >-
+    Die Untersuchungshaft darf gegen den Beschuldigten angeordnet werden, wenn er
+    der Tat dringend verdächtig ist, ein Haftgrund besteht und die Anordnung nicht
+    außer Verhältnis zur Bedeutung der Sache und der zu erwartenden Strafe steht
+    (§ 112 Abs. 1 StPO). Dringender Tatverdacht liegt vor, wenn die große Wahrscheinlichkeit
+    besteht, dass der Beschuldigte Täter oder Teilnehmer ist. Haftgründe sind Flucht
+    oder Verstecken (Nr. 1), Fluchtgefahr (Nr. 2) und Verdunkelungsgefahr (Nr. 3,
+    § 112 Abs. 2 StPO). Die Wiederholungsgefahr ist ein besonderer Haftgrund für
+    bestimmte Straftaten (§ 112a StPO); bei Schwerstkriminalität besteht ein
+    Haftgrund wegen der Tatschwere (§ 112 Abs. 3 StPO). Die Untersuchungshaft ist
+    nur zulässig, wenn mildere Mittel nicht ausreichen (§ 116 StPO: Haftverschonung).
+    Dabei gilt die Unschuldsvermutung.
+  norms:
+  - § 112 Abs. 1 StPO
+  - § 112 Abs. 2 StPO
+  - § 112a StPO
+  - § 116 StPO
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpoz-haftverfahren
+  type: definition
+  front: 'Verfahren der Untersuchungshaft: Haftbefehl, Vorführung, Haftprüfung (§§ 114, 115, 117, 121 StPO)'
+  back: >-
+    Die Untersuchungshaft wird durch schriftlichen Haftbefehl des Richters angeordnet
+    (§ 114 StPO), der den Beschuldigten, die Tat, den Haftgrund und die Beweismittel
+    bezeichnen muss. Wer festgenommen wird, ist unverzüglich, spätestens am Tag nach
+    der Festnahme dem Richter vorzuführen (Art. 104 Abs. 3 GG, § 115 StPO, § 128 StPO).
+    Der Beschuldigte kann jederzeit Haftprüfung beantragen (§ 117 Abs. 1 StPO) oder
+    Haftbeschwerde einlegen (§ 304 StPO). Dauert die Untersuchungshaft länger als
+    sechs Monate, prüft das Oberlandesgericht die Fortdauer; sie ist nur zulässig,
+    wenn die besondere Schwierigkeit oder der besondere Umfang der Ermittlungen oder
+    ein anderer wichtiger Grund das Urteil noch nicht zulassen (§ 121 StPO). Die Aufhebung ist vorgesehen, wenn
+    die Voraussetzungen nicht mehr vorliegen (§ 120 StPO). Das Beschleunigungsgebot
+    gilt auch in Haftsachen.
+  norms:
+  - § 114 StPO
+  - § 115 StPO
+  - § 121 StPO
+  - Art. 104 Abs. 3 GG
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpoz-berufung
+  type: norm
+  front: Berufung im Strafverfahren (§§ 312 ff. StPO) - Zuständigkeit und Frist
+  back: >-
+    Gegen Urteile des Strafrichters und des Schöffengerichts beim Amtsgericht ist die
+    Berufung zum Landgericht statthaft (§ 312 StPO). Die Berufung ist binnen einer
+    Woche nach Verkündung des Urteils beim Amtsgericht einzulegen (§ 314 Abs. 1 StPO);
+    eine Begründung ist nicht zwingend, aber üblich (§ 317 StPO). Berufung ist eine
+    zweite Tatsacheninstanz: Das Landgericht (kleine oder große Strafkammer) führt eine
+    neue Hauptverhandlung mit vollständiger Beweisaufnahme und entscheidet in der
+    Sache selbst. Die Berufung kann auf bestimmte Beschwerdepunkte beschränkt werden,
+    etwa auf die Rechtsfolgen (§ 318 StPO). Es gilt das Verbot der reformatio in peius
+    (§ 331 StPO), wenn nur der Angeklagte Berufung einlegt. Gegen das Berufungsurteil
+    ist die Revision statthaft.
+  norms:
+  - § 312 StPO
+  - § 314 Abs. 1 StPO
+  - § 318 StPO
+  - § 331 StPO
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpoz-revision
+  type: norm
+  front: Revision im Strafverfahren (§§ 333 ff. StPO) - Voraussetzungen und Rügen
+  back: >-
+    Die Revision ist ein Rechtsmittel gegen Urteile, das ausschließlich die
+    Rechtsanwendung überprüft (keine neue Tatsachenfeststellung). Statthaft ist sie
+    gegen Berufungsurteile und erstinstanzliche Urteile der Landgerichte sowie erstinstanzliche
+    Urteile der Oberlandesgerichte (§ 333 StPO) und als Sprungrevision gegen amtsgerichtliche
+    Urteile (§ 335 StPO). Die Revision ist binnen einer Woche nach Verkündung
+    einzulegen (§ 341 StPO) und innerhalb eines Monats nach Ablauf der Einlegungsfrist,
+    bei späterer Zustellung des Urteils nach der Zustellung, zu begründen (§ 345 Abs. 1 StPO). Das Urteil kann nur auf eine Gesetzesverletzung
+    gestützt werden, auf der es beruht (§ 337 StPO). Die Sachrüge verlangt nur die
+    Rüge der Verletzung materiellen Rechts; die Verfahrensrüge setzt voraus, dass die
+    den Mangel enthaltenden Tatsachen angegeben werden (§ 344 Abs. 2 S. 2 StPO). Über
+    die Revision entscheidet bei erstinstanzlichen Urteilen der Landgerichte der
+    Bundesgerichtshof (§ 135 GVG), bei Berufungsurteilen und der Sprungrevision das
+    Oberlandesgericht (§ 121 GVG).
+  norms:
+  - § 333 StPO
+  - § 337 StPO
+  - § 344 Abs. 2 StPO
+  - § 345 Abs. 1 StPO
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpoz-absolute-revisionsgruende-338
+  type: norm
+  front: Welche absoluten Revisionsgründe nennt § 338 StPO?
+  back: >-
+    Bei den absoluten Revisionsgründen wird die Beruhung des Urteils auf dem Rechtsfehler
+    unwiderleglich vermutet (§ 338 StPO). Sie sind: (1) vorschriftswidrige Besetzung
+    des Gerichts, (2) Mitwirkung eines kraft Gesetzes ausgeschlossenen Richters,
+    (3) Mitwirkung eines wegen Besorgnis der Befangenheit erfolgreich abgelehnten
+    Richters, (4) Annahme der Zuständigkeit durch das Gericht zu Unrecht, (5) Abwesenheit
+    einer Person, deren Anwesenheit das Gesetz vorschreibt (etwa Angeklagter,
+    Staatsanwalt, notwendiger Verteidiger), (6) Verstoß gegen die Vorschriften über
+    die Öffentlichkeit, (7) Fehlen der Urteilsgründe oder deren Nachholung nach Ablauf
+    der Frist und (8) unzulässige Beschränkung der Verteidigung durch einen Gerichtsbeschluss.
+    Der Verstoß ist mit einer Verfahrensrüge geltend zu machen. Die relativen Revisionsgründe
+    (§ 337 StPO) setzen demgegenüber voraus, dass das Urteil auf der Rechtsverletzung
+    beruht.
+  norms:
+  - § 338 StPO
+  - § 337 StPO
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpoz-relative-absolute
+  type: definition
+  front: 'Unterschied: relative und absolute Revisionsgründe, Sach- und Verfahrensrüge'
+  back: >-
+    Relative Revisionsgründe (§ 337 StPO) setzen eine Gesetzesverletzung und die Beruhung
+    des Urteils darauf voraus: Es muss die Möglichkeit bestehen, dass das Urteil ohne den
+    Fehler anders ausgefallen wäre; die bloße Möglichkeit genügt (nicht erforderlich
+    ist sichere Kausalität). Bei den absoluten Revisionsgründen (§ 338 StPO) wird
+    die Beruhung unwiderleglich vermutet. Die Sachrüge beanstandet Fehler bei der Anwendung
+    des materiellen Rechts auf den festgestellten Sachverhalt; das Revisionsgericht
+    prüft sie von Amts wegen anhand der Urteilsgründe vollständig. Die Verfahrensrüge
+    erfordert dagegen eine ausdrückliche Rüge mit Tatsachenvortrag (§ 344 Abs. 2 S. 2
+    StPO), deren Formerfordernisse streng sind. Verfahrenshindernisse (Verjährung,
+    fehlender Strafantrag) beachtet das Revisionsgericht von Amts wegen.
+  norms:
+  - § 337 StPO
+  - § 338 StPO
+  - § 344 Abs. 2 StPO
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: sr-schema-stpoz-durchsuchung
+  title: Rechtmäßigkeit einer Durchsuchung (§§ 102 ff. StPO)
+  norms:
+  - § 102 StPO
+  - § 103 StPO
+  - § 105 StPO
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Ermächtigungsgrundlage
+    children:
+    - label: 1. Beim Verdächtigen, § 102 StPO
+    - label: 2. Bei Dritten, § 103 StPO
+  - label: II. Materielle Voraussetzungen
+    children:
+    - label: 1. Anfangsverdacht auf konkreter Tatsachengrundlage
+    - label: 2. Auffindevermutung (Beweismittel, Ergreifung)
+    - label: 3. Verhältnismäßigkeit
+  - label: III. Formelle Voraussetzungen
+    children:
+    - label: 1. Anordnung durch den Richter, § 105 Abs. 1 S. 1 StPO
+      hinweis: Ausnahme Gefahr im Verzug eng auslegen - Tatsachen nennen und dokumentieren.
+    - label: 2. Durchführung (Zeugen, § 105 Abs. 2 StPO, Bekanntgabe, Zeit, § 104 StPO)
+  - label: IV. Folgen von Fehlern
+    children:
+    - label: 1. Rechtswidrigkeit der Durchsuchung
+    - label: 2. Beweisverwertungsverbot (Abwägung; bewusste Missachtung oder willkürliche Umgehung)
+faelle:
+- slug: sr-fall-stpoz-durchsuchung-ohne-richter
+  title: Die Durchsuchung ohne Richter
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StPO, amtliche Fassung
+  facts: Gegen V besteht aufgrund eines konkreten Hinweises der Verdacht des Handeltreibens
+    mit Betäubungsmitteln. Die Polizei plant daher am Dienstagvormittag die Durchsuchung
+    der Wohnung des V. Der zuständige Ermittlungsrichter ist erreichbar; die Polizisten
+    wollen aber vermeiden, dass er die Durchsuchung ablehnt oder Auflagen erteilt. Sie rufen ihn daher nicht an und berufen sich später auf "Gefahr im Verzug".
+    Konkrete Anhaltspunkte, dass V Beweismittel beiseiteschaffen wolle, bestanden
+    nicht. In der Wohnung finden sie 200 Gramm Kokain. Verteidiger R widerspricht
+    in der Hauptverhandlung vor dem Landgericht der Verwertung. V wird verurteilt.
+  question: War die Durchsuchung rechtmäßig? Dürfen die Funde verwertet werden? Wie kann V
+    sich gegen das Urteil wehren?
+  steps:
+  - prompt: War die Anordnung durch die Polizei zulässig?
+    erwartung: Nein. Nach § 105 Abs. 1 S. 1 StPO und Art. 13 Abs. 2 GG ist grundsätzlich
+      der Richter zuständig. Gefahr im Verzug erfordert konkrete Tatsachen für einen
+      drohenden Beweismittelverlust und ist eng auszulegen; hier bestanden solche
+      Tatsachen nicht, der Richter war erreichbar.
+  - prompt: Folgt aus dem Verstoß ein Beweisverwertungsverbot?
+    erwartung: Ja. Nach der Abwägungslehre führt nicht jeder Verstoß zum Verbot; ein
+      Verwertungsverbot ist jedoch anzunehmen, wenn der Richtervorbehalt bewusst
+      übergangen oder willkürlich umgangen wurde. Hier haben die Polizisten die
+      richterliche Kontrolle gezielt vermieden. Der Einwand des hypothetisch rechtmäßigen
+      Ermittlungsverlaufs greift in solchen Fällen nicht. Das Verwertungsverbot wird
+      durch den rechtzeitigen Widerspruch gewahrt.
+  - prompt: Wie kann V sich gegen das Urteil wehren?
+    erwartung: Mit der Revision (erstinstanzliches Urteil des Landgerichts, Zuständigkeit
+      des BGH). Die Frist zur Einlegung beträgt eine Woche (§ 341 StPO), die Begründung ist binnen eines
+      Monats einzureichen (§ 345 Abs. 1 StPO). Die unzulässige Verwertung wird mit der
+      Verfahrensrüge geltend gemacht; die Tatsachen müssen nach § 344 Abs. 2 S. 2 StPO
+      angegeben werden. Berufung ist gegen Urteile des Landgerichts im ersten Rechtszug
+      nicht möglich.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Richtervorbehalt (§ 105 Abs. 1, Art. 13 Abs. 2 GG) und enge Auslegung der
+        Gefahr im Verzug
+      weight: 3.0
+      required: true
+      norms:
+      - § 105 Abs. 1 StPO
+      - Art. 13 Abs. 2 GG
+      keywords:
+      - Richtervorbehalt
+      - Gefahr im Verzug
+      - § 105 Abs. 1
+      - Art. 13 Abs. 2
+      - eng auszulegen
+      card_slugs:
+      - sr-stpoz-richtervorbehalt-105
+      - sr-stpoz-gefahr-im-verzug
+    - id: p2
+      label: Durchsuchung rechtswidrig - keine konkreten Tatsachen für Gefahr im Verzug,
+        Richter erreichbar
+      weight: 1.5
+      required: false
+      keywords:
+      - Richter erreichbar
+      - keine konkreten Tatsachen
+      - rechtswidrige Durchsuchung
+      - Durchsuchung war rechtswidrig
+      card_slugs:
+      - sr-stpoz-gefahr-im-verzug
+    - id: p3
+      label: Beweisverwertungsverbot wegen bewusster Umgehung des Richtervorbehalts
+      weight: 3.0
+      required: true
+      keywords:
+      - Beweisverwertungsverbot
+      - Verwertungsverbot
+      - bewusste Umgehung
+      - willkürliche Umgehung
+      - bewusste Missachtung
+      - Abwägung
+      card_slugs:
+      - sr-stpoz-richtervorbehalt-105
+    - id: p4
+      label: Revision zum BGH und Verfahrensrüge nach § 344 Abs. 2 S. 2 StPO
+      weight: 1.5
+      required: false
+      norms:
+      - § 344 Abs. 2 StPO
+      keywords:
+      - Revision
+      - Verfahrensrüge
+      - § 344 Abs. 2
+      - Bundesgerichtshof
+      - § 341
+      card_slugs:
+      - sr-stpoz-revision
+      - sr-stpoz-relative-absolute
+    - id: p5
+      label: Keine Berufung gegen das erstinstanzliche Landgerichtsurteil
+      weight: 1.0
+      required: false
+      keywords:
+      - keine Berufung
+      - Berufung nicht statthaft
+      - erstinstanzliches Urteil
+      card_slugs:
+      - sr-stpoz-berufung

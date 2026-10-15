@@ -1,0 +1,371 @@
+topic:
+  slug: sr-at-vorsatz-fahrlaessigkeit-formen
+  area: strafrecht
+  title: Vorsatzformen und Fahrlässigkeit - dolus eventualis, § 11 Abs. 2, § 18 StGB
+  parent: sr-at
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-vorf-vorsatz-begriff
+  type: definition
+  front: 'Definiere: Vorsatz (§ 15 StGB) mit Wissens- und Willenselement'
+  back: >-
+    Vorsatz ist das Wissen und Wollen der Verwirklichung des objektiven Tatbestands
+    (§ 15 StGB in Verbindung mit § 16 Abs. 1 S. 1 StGB). Das Wissenselement (kognitiv)
+    verlangt, dass der Täter die objektiven Tatumstände kennt, bei normativen
+    Merkmalen in einer Parallelwertung in der Laiensphäre. Das Willenselement
+    (volitiv) verlangt, dass er die Verwirklichung will oder zumindest billigend
+    in Kauf nimmt. Vorsatz muss bei Begehung der Tat vorliegen (Koinzidenzprinzip,
+    § 16 Abs. 1 S. 1 StGB, § 8 StGB); ein späterer Vorsatz (dolus subsequens) oder
+    ein bloß früherer Vorsatz (dolus antecedens) genügt nicht. Die Vorsatzformen
+    unterscheiden sich in der Intensität dieser beiden Elemente.
+  norms:
+  - § 15 StGB
+  - § 16 Abs. 1 StGB
+  - § 8 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-vorf-dolus-directus-1
+  type: definition
+  front: 'Definiere: dolus directus 1. Grades (Absicht)'
+  back: >-
+    Absicht (dolus directus 1. Grades) liegt vor, wenn es dem Täter gerade auf den
+    Eintritt des tatbestandlichen Erfolgs ankommt, er diesen also als Ziel seines
+    Handelns anstrebt. Auf das Wissenselement kommt es nicht entscheidend an: Der
+    Täter handelt auch dann mit Absicht, wenn er den Erfolg nur für möglich hält,
+    sofern er ihn erreichen will. Absicht verlangt das Gesetz etwa bei der
+    Zueignungsabsicht (§ 242 StGB), der Bereicherungsabsicht (§ 263 StGB) und der
+    Verdeckungsabsicht (§ 211 StGB). Bei der Zueignungsabsicht ist Absicht nur
+    hinsichtlich der Aneignung erforderlich, hinsichtlich der Enteignung genügt
+    dolus eventualis. Verlangt der Tatbestand "absichtlich", genügt bloßer
+    Eventualvorsatz nicht.
+  norms:
+  - § 15 StGB
+  - § 242 Abs. 1 StGB
+  - § 263 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-vorf-dolus-directus-2
+  type: definition
+  front: 'Definiere: dolus directus 2. Grades (Wissentlichkeit)'
+  back: >-
+    Wissentlichkeit (dolus directus 2. Grades) liegt vor, wenn der Täter den Eintritt
+    des tatbestandlichen Erfolgs oder das Vorliegen eines Tatumstands für sicher
+    hält, ihn aber nicht anstrebt, sondern als notwendige Nebenfolge seines Handelns
+    hinnimmt. Das Wissenselement ist damit maximal ausgeprägt, das Willenselement
+    reduziert sich auf das Inkaufnehmen. Beispiel: Wer ein Flugzeug zur Erlangung
+    der Versicherungssumme sprengt, ohne Tötungsabsicht, aber im sicheren Wissen um
+    den Tod der Passagiere, handelt hinsichtlich der Tötung wissentlich. Wissentlichkeit
+    verlangt das Gesetz etwa in § 258 Abs. 1 StGB, § 145d StGB (wider besseres Wissen)
+    und § 164 StGB. "Wider besseres Wissen" bedeutet sicheres Wissen, also dolus directus
+    2. Grades.
+  norms:
+  - § 15 StGB
+  - § 258 Abs. 1 StGB
+  - § 164 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-vorf-dolus-eventualis
+  type: definition
+  front: 'Definiere: dolus eventualis (bedingter Vorsatz) und Abgrenzung zur bewussten Fahrlässigkeit'
+  back: >-
+    Bedingt vorsätzlich handelt, wer die Verwirklichung des Tatbestands ernsthaft
+    für möglich hält und sie billigend in Kauf nimmt oder sich mit ihr abfindet. Das
+    Wissenselement (Für-möglich-Halten) ist auch bei bewusster Fahrlässigkeit
+    erfüllt; der Unterschied liegt im Willenselement: Der bewusst fahrlässig Handelnde
+    vertraut ernsthaft und nicht nur vage darauf, dass der Erfolg ausbleibt. Dem
+    bedingt Vorsätzlichen ist der Erfolgseintritt dagegen zumindest gleichgültig.
+    Dolus eventualis genügt für alle Vorsatzdelikte, soweit das Gesetz keine höhere
+    Vorsatzform (Absicht, Wissentlichkeit) verlangt. Bei Tötungsdelikten ist die
+    Abgrenzung besonders klausurrelevant (§ 212 StGB gegenüber § 222 StGB).
+  norms:
+  - § 15 StGB
+  - § 212 StGB
+  - § 222 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-vorf-dolus-eventualis-theorien
+  type: streitstand
+  front: 'Streitstand: Wie wird dolus eventualis von bewusster Fahrlässigkeit abgegrenzt?'
+  back: >-
+    Problem: Bei Wissen um die Möglichkeit des Erfolgs ist zu klären, wann dies
+    noch als bewusste Fahrlässigkeit und wann als bedingter Vorsatz gilt.
+
+    Möglichkeitstheorie: Vorsatz, sobald der Täter die konkrete Möglichkeit des
+    Erfolgs erkennt. Kritik: macht jede bewusste Fahrlässigkeit zu Vorsatz.
+
+    Wahrscheinlichkeitstheorie: Vorsatz, wenn der Täter den Erfolg für wahrscheinlich
+    hält. Kritik: Der Wahrscheinlichkeitsgrad ist nicht bestimmbar, das Willenselement
+    wird vernachlässigt.
+
+    Billigungs- bzw. Einwilligungstheorie (Rspr.): Vorsatz, wenn der Täter den Erfolg
+    für möglich hält und billigend in Kauf nimmt oder sich mit ihm abfindet. Der
+    Täter muss den Erfolg nicht wünschen. Maßgeblich ist eine Gesamtbetrachtung aller
+    objektiven und subjektiven Umstände. Vorteil: berücksichtigt beide Elemente.
+
+    Gleichgültigkeitstheorie und Ernstnahme- bzw. Vermeidungstheorien (Lit.): Vorsatz,
+    wenn der Täter die Gefahr ernst nimmt und keine eigenen Vermeidungsbemühungen
+    erkennen lässt bzw. sich mit dem Erfolg abfindet.
+
+    Ergebnis: Die Rspr. folgt der Billigungstheorie; in Klausuren sind die Abweichungen
+    gering, meist genügt die Darstellung der Rspr.-Formel mit Prüfung aller Umstände.
+  norms:
+  - § 15 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-vorf-hemmschwelle-lederriemen
+  type: rechtsprechung
+  front: 'Rspr.: Tötungsvorsatz bei gefährlicher Gewalt - "Hemmschwelle" (BGHSt 36, 1, Lederriemen-Fall)'
+  back: >-
+    Im Lederriemen-Fall (BGHSt 36, 1) befasste sich der BGH mit der Frage, wann bei
+    äußerst gefährlichen Gewalthandlungen bedingter Tötungsvorsatz anzunehmen ist.
+    Die Entscheidung gilt als Ausgangspunkt der Hemmschwellenrechtsprechung: Bei
+    Tötungsdelikten sei die Hemmschwelle gegenüber der Tötung eines Menschen hoch,
+    sodass allein aus der objektiven Gefährlichkeit nicht ohne Weiteres auf Billigen
+    geschlossen werden dürfe. Gefordert wird eine Gesamtschau aller objektiven und
+    subjektiven Tatumstände (Persönlichkeit, Tatmotiv, Handlungsablauf). Die spätere
+    Rechtsprechung hat diese Linie relativiert: Eine bloße Hemmschwellen-Formel
+    ersetzt keine Prüfung des konkreten Einzelfalls; Anzeichen für Vorsatz sind etwa
+    besonders gefährliche Gewalthandlungen gegen lebenswichtige Körperregionen, die
+    der Täter als solche erkennt.
+  norms:
+  - § 15 StGB
+  - § 212 StGB
+  quellen:
+  - BGHSt 36, 1
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-vorf-bewusste-fahrlaessigkeit
+  type: definition
+  front: 'Bewusste und unbewusste Fahrlässigkeit, § 15 StGB'
+  back: >-
+    Fahrlässig handelt, wer die objektiv gebotene Sorgfalt außer Acht lässt, obwohl
+    er nach seinen persönlichen Fähigkeiten zur Sorgfalt verpflichtet und in der Lage
+    war, und dadurch den Taterfolg herbeiführt, den er hätte voraussehen und vermeiden
+    können. Bei der bewussten Fahrlässigkeit erkennt der Täter die Möglichkeit des
+    Erfolgs, vertraut aber ernsthaft auf dessen Ausbleiben. Bei der unbewussten
+    Fahrlässigkeit erkennt er die Gefahr nicht, obwohl er sie hätte erkennen müssen.
+    Beide Formen werden gleich bestraft; die Unterscheidung kann aber für die
+    Strafzumessung bedeutsam sein. Fahrlässigkeit ist nur strafbar, wenn das Gesetz
+    sie ausdrücklich unter Strafe stellt (§ 15 StGB), etwa § 222, § 229 StGB.
+  norms:
+  - § 15 StGB
+  - § 222 StGB
+  - § 229 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-vorf-vorsatz-fahrlaessigkeit-kombination
+  type: norm
+  front: Was regelt § 11 Abs. 2 StGB (Vorsatz-Fahrlässigkeits-Kombination)?
+  back: >-
+    Nach § 11 Abs. 2 StGB ist eine Tat auch dann vorsätzlich im Sinne des Gesetzes,
+    wenn sie einen Straftatbestand verwirklicht, der hinsichtlich der Handlung
+    Vorsatz voraussetzt, hinsichtlich einer dadurch verursachten besonderen Folge
+    jedoch Fahrlässigkeit ausreichen lässt. Die Vorschrift erfasst die sogenannte
+    Vorsatz-Fahrlässigkeits-Kombination, etwa § 315c Abs. 1 Nr. 1 i.V.m. Abs. 3
+    Nr. 1 StGB (vorsätzliche Handlung, Gefährdung fahrlässig). Die
+    Tat gilt als Vorsatztat, mit der Folge, dass etwa Teilnahme, Versuch und die
+    Rechtsfolgen der Vorsatztat anwendbar sind. Auch die Erfolgsqualifikationen
+    (§ 18 StGB) fallen darunter; § 11 Abs. 2 StGB ist aber nicht darauf beschränkt,
+    sondern erfasst jede im Tatbestand angelegte Kombination von Handlungsvorsatz
+    und fahrlässiger Folge.
+  norms:
+  - § 11 Abs. 2 StGB
+  - § 315c StGB
+  - § 316 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-vorf-erfolgsqualifikation-18
+  type: norm
+  front: Was verlangt § 18 StGB bei Erfolgsqualifikationen (besondere Tatfolge)?
+  back: >-
+    Knüpft das Gesetz an eine besondere Folge der Tat eine schwerere Strafe, so trifft
+    sie den Täter oder den Teilnehmer nur, wenn ihm hinsichtlich dieser Folge wenigstens
+    Fahrlässigkeit zur Last fällt (§ 18 StGB). Erfolgsqualifikationen (z. B. § 227 StGB, Körperverletzung
+    mit Todesfolge) sind damit Vorsatz-Fahrlässigkeits-Kombinationen im Sinne
+    des § 11 Abs. 2 StGB. Neben der Fahrlässigkeit bezüglich der schweren Folge
+    verlangt die Rspr. einen spezifischen Gefahrzusammenhang: Die schwere Folge muss
+    sich gerade aus der tatbestandsspezifischen Gefahr des Grunddelikts verwirklichen.
+    Der Teilnehmer haftet nur, wenn ihm hinsichtlich der Folge selbst Fahrlässigkeit
+    vorzuwerfen ist; es gilt also kein Zurechnungsautomatismus. Manche Tatbestände
+    verlangen mit Leichtfertigkeit eine gesteigerte Fahrlässigkeit (z. B. § 251 StGB).
+  norms:
+  - § 18 StGB
+  - § 11 Abs. 2 StGB
+  - § 227 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-vorf-vorsatzgrad-im-tatbestand
+  type: definition
+  front: Wie ist die vom Gesetz geforderte Vorsatzform in einem Tatbestand zu lesen?
+  back: >-
+    Das Gesetz verwendet unterschiedliche Vorsatzanforderungen. Ohne besonderen
+    Zusatz genügt dolus eventualis (§ 15 StGB). Verlangt der Tatbestand "absichtlich"
+    oder "in der Absicht", ist dolus directus 1. Grades nötig (z. B. Zueignungsabsicht
+    in § 242 StGB, Verdeckungsabsicht in § 211 StGB). Verlangt er "wissentlich" oder
+    "wider besseres Wissen", genügt sicheres Wissen (dolus directus 2. Grades; etwa
+    § 164, § 187, § 258 Abs. 1 StGB), bloßes Für-möglich-Halten reicht nicht. Bei
+    mehraktigen Delikten kann für Teile des Tatbestands unterschiedlicher Vorsatz
+    gelten: Bei § 242 StGB genügt dolus eventualis für die Enteignung, Absicht ist
+    nur für die Aneignung erforderlich. In der Klausur ist der Vorsatz stets an
+    jedem objektiven Tatbestandsmerkmal und an der geforderten Vorsatzform
+    auszurichten.
+  norms:
+  - § 15 StGB
+  - § 242 Abs. 1 StGB
+  - § 164 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: sr-schema-vorf-vorsatz
+  title: Prüfung des Vorsatzes im subjektiven Tatbestand
+  norms:
+  - § 15 StGB
+  - § 16 Abs. 1 StGB
+  - § 11 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Wissenselement
+    children:
+    - label: 1. Kenntnis aller objektiven Tatbestandsmerkmale (auch normative, in der Parallelwertung)
+    - label: 2. Für-möglich-Halten oder sicheres Wissen
+  - label: II. Willenselement
+    children:
+    - label: 1. Absicht (dolus directus 1. Grades)
+    - label: 2. Wissentlichkeit (dolus directus 2. Grades)
+    - label: 3. Bedingter Vorsatz (dolus eventualis)
+      hinweis: 'Abgrenzung zur bewussten Fahrlässigkeit: Billigen/Abfinden gegenüber
+        ernsthaftem Vertrauen auf das Ausbleiben. Gesamtschau aller Umstände, nicht allein
+        die Gefährlichkeit der Handlung.'
+  - label: III. Geforderte Vorsatzform im Tatbestand beachten
+    hinweis: Absicht, Wissentlichkeit, "wider besseres Wissen" sind Sonderanforderungen
+      gegenüber dem Grundfall des dolus eventualis.
+  - label: IV. Zeitpunkt (Koinzidenz)
+    children:
+    - label: Vorsatz bei Begehung der Tat, § 16 Abs. 1 S. 1 StGB
+  - label: V. Vorsatz-Fahrlässigkeits-Kombination und Erfolgsqualifikation
+    hinweis: Nur prüfen, wenn der Tatbestand eine besondere Folge mit Fahrlässigkeit
+      verknüpft (§ 11 Abs. 2, § 18 StGB).
+faelle:
+- slug: sr-fall-vorf-bruecke
+  title: Der Stoß von der Brücke
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: T gerät auf einer 8 Meter hohen Brücke über einen Fluss mit O in Streit.
+    T weiß, dass O nicht schwimmen kann, dass die Strömung stark ist und das Wasser
+    im Winter nur wenige Grad hat. Wütend stößt T den O über das Geländer. Auf die
+    Frage der Polizei antwortet er später, was mit O passiere, sei ihm in diesem Moment
+    egal gewesen. O ertrinkt.
+  question: Hat sich T wegen Totschlags (§ 212 Abs. 1 StGB) strafbar gemacht? Mordmerkmale
+    sind nicht zu prüfen.
+  steps:
+  - prompt: Welche Vorsatzform kommt in Betracht und wie ist sie von der bewussten Fahrlässigkeit abzugrenzen?
+    erwartung: Mangels Absicht oder sicheren Wissens kommt nur bedingter Vorsatz
+      (dolus eventualis) in Betracht. Er setzt voraus, dass T den Tod des O ernsthaft
+      für möglich hält und billigend in Kauf nimmt oder sich damit abfindet; bewusste
+      Fahrlässigkeit läge bei ernsthaftem Vertrauen auf das Ausbleiben des Erfolgs vor.
+  - prompt: Liegt das Wissenselement vor?
+    erwartung: Ja. T kannte alle gefahrerhöhenden Umstände (Nichtschwimmer, starke
+      Strömung, kaltes Wasser, Höhe) und hielt den Tod des O daher für möglich.
+  - prompt: Liegt das Willenselement vor?
+    erwartung: Ja. T war der Tod gleichgültig und er nahm ihn damit billigend in Kauf.
+      Auch nach der Möglichkeits-, Wahrscheinlichkeits- und Gleichgültigkeitstheorie
+      ist Vorsatz zu bejahen; ein Streit ist nicht zu entscheiden.
+  - prompt: Wäre die Wertung anders, wenn T ernsthaft darauf vertraut hätte, O
+      werde ans Ufer kommen?
+    erwartung: Dann läge bewusste Fahrlässigkeit vor; in Betracht käme eine Strafbarkeit
+      nach § 222 StGB. Das ernsthafte Vertrauen auf das Ausbleiben des Erfolgs
+      schließt das Billigen aus.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Bedingten Vorsatz als maßgebliche Vorsatzform erkannt (kein dolus directus)
+      weight: 1.5
+      required: false
+      keywords:
+      - bedingter Vorsatz
+      - dolus eventualis
+      - Eventualvorsatz
+      - keine Absicht
+      card_slugs:
+      - sr-vorf-dolus-eventualis
+    - id: p2
+      label: Wissenselement bejaht (Tod ernsthaft für möglich gehalten)
+      weight: 1.5
+      required: false
+      keywords:
+      - für möglich gehalten
+      - Wissenselement
+      - ernsthaft für möglich
+      - Möglichkeit des Todes erkannt
+      card_slugs:
+      - sr-vorf-vorsatz-begriff
+    - id: p3
+      label: Willenselement bejaht (billigend in Kauf genommen, Gleichgültigkeit)
+      weight: 3.0
+      required: true
+      keywords:
+      - billigend in Kauf
+      - Billigen
+      - abgefunden
+      - sich damit abgefunden
+      - Willenselement
+      - gleichgültig
+      card_slugs:
+      - sr-vorf-dolus-eventualis
+      - sr-vorf-dolus-eventualis-theorien
+    - id: p4
+      label: Abgrenzung zur bewussten Fahrlässigkeit (Vertrauen auf Ausbleiben)
+      weight: 3.0
+      required: true
+      keywords:
+      - bewusste Fahrlässigkeit
+      - bewusst fahrlässig
+      - Vertrauen auf das Ausbleiben
+      - ernsthaft darauf vertraut
+      card_slugs:
+      - sr-vorf-bewusste-fahrlaessigkeit
+      - sr-vorf-dolus-eventualis
+    - id: p5
+      label: Streit zu den Vorsatztheorien benannt, Rspr.-Formel angewandt
+      weight: 1.0
+      required: false
+      keywords:
+      - Billigungstheorie
+      - Einwilligungstheorie
+      - Möglichkeitstheorie
+      - Wahrscheinlichkeitstheorie
+      - Gesamtbetrachtung
+      card_slugs:
+      - sr-vorf-dolus-eventualis-theorien
+    - id: p6
+      label: Ergebnis - Strafbarkeit nach § 212 Abs. 1 StGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 212 Abs. 1 StGB
+      keywords:
+      - § 212 Abs. 1
+      - Totschlag strafbar
+      - strafbar wegen Totschlags
