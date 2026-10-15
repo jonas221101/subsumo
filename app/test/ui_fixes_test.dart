@@ -164,9 +164,16 @@ void main() {
       tester.view.physicalSize = size;
       tester.view.devicePixelRatio = 1;
       addTearDown(tester.view.reset);
+      var reviewed = false;
       final client = MockClient((request) async {
-        if (request.url.path == '/v1/cards/due') return _json(due ?? [card]);
-        if (request.url.path == '/v1/reviews') return _json({});
+        if (request.url.path == '/v1/cards/due') {
+          // Nach einer Bewertung liefert der Server eine neue Karte (bewertete kommen nicht zurueck).
+          return _json(due ?? [reviewed ? {...card, 'slug': 'c2'} : card]);
+        }
+        if (request.url.path.startsWith('/v1/reviews')) {
+          reviewed = true;
+          return _json({});
+        }
         return _json({}, 404);
       });
       final state = AppState(api: ApiClient(client: client)..setToken('t'));

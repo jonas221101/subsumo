@@ -58,7 +58,7 @@ class SubsumoFeedbackBlock extends StatelessWidget {
     };
 
     return Semantics(
-      label: '$semanticLabel$message${detail == null ? '' : '. $detail'}',
+      label: '$semanticLabel${detail == null ? message : '${_withoutDot(message)}. $detail'}',
       excludeSemantics: true,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -82,3 +82,5 @@ class SubsumoFeedbackBlock extends StatelessWidget {
     );
   }
 }
+
+String _withoutDot(String m) => m.endsWith('.') ? m.substring(0, m.length - 1) : m;

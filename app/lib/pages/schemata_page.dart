@@ -38,6 +38,10 @@ class _SchemataPageState extends State<SchemataPage> {
   @override
   void initState() {
     super.initState();
+    // Filter folgt immer dem Feldinhalt - kein Auseinanderlaufen von Text und Suche.
+    _search.addListener(() {
+      if (_search.text != _query && mounted) setState(() => _query = _search.text);
+    });
     WidgetsBinding.instance.addPostFrameCallback((_) => _load());
   }
 
@@ -75,12 +79,15 @@ class _SchemataPageState extends State<SchemataPage> {
           SubsumoPageHeader(
             eyebrow: 'Prüfungsaufbau',
             title: 'Schemata',
-            subtitle: _loading ? null : '${_schemata.length} Schemata${_area == null ? ' in drei Rechtsgebieten' : ''}.',
+            subtitle: _loading
+                ? null
+                : (visible.length == _schemata.length
+                    ? '${_schemata.length} Schemata${_area == null ? ' in drei Rechtsgebieten' : ''}.'
+                    : '${visible.length} von ${_schemata.length} Schemata.'),
           ),
           const SizedBox(height: Spacing.xl),
           TextField(
             controller: _search,
-            onChanged: (v) => setState(() => _query = v),
             decoration: InputDecoration(
               hintText: 'Schema oder Norm suchen, z. B. § 823 oder Anfechtung',
               prefixIcon: const Icon(Icons.search),

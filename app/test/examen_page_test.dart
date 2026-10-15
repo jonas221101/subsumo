@@ -429,6 +429,6 @@ void main() {
     expect(find.text('Vertragsschluss pruefen'), findsOneWidget);
     expect(find.text('Anspruch aus § 433 BGB'), findsOneWidget);
     expect(find.text('Der Sonderpreis'), findsOneWidget);
-    expect(find.widgetWithText(SubsumoButton, 'Deck lernen (2 fällig)'), findsOneWidget);
+    expect(find.widgetWithText(SubsumoButton, 'Deck lernen'), findsOneWidget);
   });
 }

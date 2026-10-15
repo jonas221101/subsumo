@@ -565,6 +565,16 @@ class _LernprofilCard extends StatelessWidget {
   }
 }
 
+/// Oeffnet das Lernprofil von ausserhalb des Examen-Reiters (z. B. Konto);
+/// laedt das Cockpit bei Bedarf nach.
+Future<void> openLernprofilFromAnywhere(BuildContext context) async {
+  final app = AppScope.of(context);
+  if (app.examenCockpit == null) await app.loadExamen();
+  final cockpit = app.examenCockpit;
+  if (cockpit == null || !context.mounted) return;
+  await _openLernprofil(context, _map(cockpit['lernprofil']), _maps(cockpit['themen']));
+}
+
 Future<void> _openLernprofil(
   BuildContext context,
   Map<String, dynamic> lernprofil,
@@ -669,7 +679,7 @@ class _ReifeCard extends StatelessWidget {
             SubsumoProgressMeter(
               label: 'Bis ${semesterstoff!['semester']}. Semester  ·  '
                   '${semesterstoff!['cards_mature']} von ${semesterstoff!['cards_total']} '
-                  'Karten reif  ·  ${semesterstoff!['cards_due']} fällig',
+                  'Karten reif  ·  ${semesterstoff!['cards_due']} Wiederholungen fällig',
               value: (semesterstoff!['mastery'] as num? ?? 0).toDouble(),
             ),
           ],
@@ -871,7 +881,7 @@ class _LandesrechtCard extends StatelessWidget {
           const SizedBox(height: Spacing.xs),
           Text(
             '${deck['cards_mature']} von ${deck['cards_total']} Karten reif  ·  '
-            '${deck['cards_due']} fällig',
+            '${deck['cards_due']} Wiederholungen fällig',
             style: theme.textTheme.bodySmall,
           ),
           if (pruefstatus == 'in-pruefung') ...[
@@ -970,7 +980,7 @@ class _DecksCard extends StatelessWidget {
               subtitle: Text(
                 'Semester ${deck['semester_default']}  ·  '
                 '${deck['cards_mature']} von ${deck['cards_total']} Karten reif  ·  '
-                '${deck['cards_due']} fällig',
+                '${deck['cards_due']} Wiederholungen fällig',
               ),
               trailing: const Icon(Icons.chevron_right),
               onTap: () => Navigator.of(context).push(
@@ -988,7 +998,7 @@ class _DecksCard extends StatelessWidget {
                 subtitle: Text(
                   '${_maps(deck['topics']).length} Themen  ·  '
                   '${deck['cards_mature']} von ${deck['cards_total']} Karten reif  ·  '
-                  '${deck['cards_due']} fällig',
+                  '${deck['cards_due']} Wiederholungen fällig',
                 ),
                 trailing: const Icon(Icons.chevron_right),
                 onTap: () => Navigator.of(context).push(
@@ -1276,7 +1286,7 @@ class DeckDetailPage extends StatelessWidget {
                   ),
                   const SizedBox(height: Spacing.md),
                   SubsumoButton.primary(
-                    label: 'Deck lernen (${deck['cards_due']} fällig)',
+                    label: 'Deck lernen',
                     icon: Icons.style_outlined,
                     onPressed: () => _openDeck(
                       context,
@@ -1396,7 +1406,13 @@ class _DeckReviewPageState extends State<DeckReviewPage> {
       appBar: _focusMode
           ? null
           : AppBar(
-              title: Text('Deck: ${widget.filter.title}'),
+              toolbarHeight: 64,
+              title: Text(
+                'Deck: ${widget.filter.title}',
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
               actions: [BetaFeedbackAction(screen: 'Deck: ${widget.filter.title}')],
             ),
       body: SafeArea(

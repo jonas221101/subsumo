@@ -39,7 +39,11 @@ class _DashboardPageState extends State<DashboardPage> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      AppScope.of(context).loadDashboard();
+      final app = AppScope.of(context);
+      app.loadDashboard();
+      // Lernprofil und Kurs-Decks sortieren die Themenliste; fehlt das Cockpit
+      // noch, still nachladen (Fehler ist hier unkritisch).
+      if (app.examenCockpit == null) app.loadExamen();
     });
   }
 
@@ -66,6 +70,7 @@ class _DashboardPageState extends State<DashboardPage> {
 
     final dueTile = _DueTile(
       count: app.dueCards.length,
+      newCount: app.dueCards.where((c) => c['state'] == 'new').length,
       fromCache: app.dueCardsFromCache,
       done: app.sessionDone,
       onStart: widget.onStartReview,
@@ -117,17 +122,32 @@ class _DashboardPageState extends State<DashboardPage> {
                 const SizedBox(height: Spacing.xxl),
                 _SectionTitle('Themen', detail: '${topics.length} im Register'),
                 const SizedBox(height: Spacing.md),
-                SubsumoPanel(
-                  padding: EdgeInsets.zero,
-                  child: Column(
-                    children: [
-                      for (var i = 0; i < topics.length; i++) ...[
-                        if (i > 0) const Divider(),
-                        _TopicRow(topic: topics[i]),
-                      ],
-                    ],
+                for (final gruppe in groupTopics(
+                  topics,
+                  schwerpunkte: _stringList(
+                      (app.examenCockpit?['lernprofil'] as Map?)?['schwerpunkte']),
+                  kursDecks: app.examenCockpit?['kurs_decks'],
+                )) ...[
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: Spacing.sm, top: Spacing.sm),
+                    child: Text(
+                      '${_areaLabels[gruppe.$1] ?? gruppe.$1} · ${gruppe.$2.length}',
+                      style: Theme.of(context).textTheme.titleSmall,
+                    ),
                   ),
-                ),
+                  SubsumoPanel(
+                    padding: EdgeInsets.zero,
+                    child: Column(
+                      children: [
+                        for (var i = 0; i < gruppe.$2.length; i++) ...[
+                          if (i > 0) const Divider(),
+                          _TopicRow(topic: gruppe.$2[i]),
+                        ],
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: Spacing.md),
+                ],
               ],
             ),
           ),
@@ -143,12 +163,16 @@ class _DashboardPageState extends State<DashboardPage> {
 class _DueTile extends StatelessWidget {
   const _DueTile({
     required this.count,
+    this.newCount = 0,
     required this.fromCache,
     required this.onStart,
     this.done = false,
   });
 
   final int count;
+
+  /// Davon neue Karten (noch nie gelernt); der Rest sind Wiederholungen.
+  final int newCount;
 
   /// Stapel abgearbeitet ("Fertig für heute").
   final bool done;
@@ -166,7 +190,7 @@ class _DueTile extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          SubsumoEyebrow('Fällig', color: theme.colorScheme.onPrimaryContainer),
+          SubsumoEyebrow('Heute dran', color: theme.colorScheme.onPrimaryContainer),
           const SizedBox(height: Spacing.md),
           Text(
             '$count',
@@ -177,8 +201,7 @@ class _DueTile extends StatelessWidget {
             switch (count) {
               0 when done => 'Fertig für heute. Gut gemacht.',
               0 => 'Keine Karte wartet. Du bist auf Stand.',
-              1 => 'Eine Karte wartet auf dich.',
-              _ => 'Karten warten auf dich.',
+              _ => '$newCount neu, ${count - newCount} Wiederholungen',
             },
             style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onPrimaryContainer),
           ),
@@ -447,3 +470,54 @@ const _months = [
 /// gebraucht wird und die App durchgehend deutschsprachig ist.
 String _formatToday(DateTime now) =>
     '${_weekdays[now.weekday - 1]}, ${now.day}. ${_months[now.month - 1]}';
+
+List<String> _stringList(Object? v) => v is List ? [for (final e in v) '$e'] : const [];
+
+/// Gruppiert Themen nach Rechtsgebiet: Schwerpunkte des Lernprofils zuerst,
+/// dann Zivilrecht, Strafrecht, Oeffentliches Recht. Innerhalb eines Gebiets
+/// nach Semesterlage (kleinstes `semester_default` der Kurs-Decks, die das
+/// Thema enthalten); Themen ohne Deck folgen in Register-Reihenfolge.
+List<(String, List<Map<String, dynamic>>)> groupTopics(
+  List<Map<String, dynamic>> topics, {
+  List<String> schwerpunkte = const [],
+  Object? kursDecks,
+}) {
+  final semester = <String, int>{};
+  if (kursDecks is List) {
+    for (final deck in kursDecks) {
+      if (deck is! Map) continue;
+      final sem = (deck['semester_default'] as num?)?.toInt();
+      final deckTopics = deck['topics'];
+      if (sem == null || deckTopics is! List) continue;
+      for (final t in deckTopics) {
+        final slug = t is Map ? t['slug'] as String? : (t is String ? t : null);
+        if (slug != null && (semester[slug] == null || sem < semester[slug]!)) semester[slug] = sem;
+      }
+    }
+  }
+  const standard = ['zivilrecht', 'strafrecht', 'oeffentliches-recht'];
+  final order = [
+    ...schwerpunkte.where(standard.contains),
+    ...standard.where((a) => !schwerpunkte.contains(a)),
+  ];
+  final areas = {for (final t in topics) t['area'] as String? ?? ''};
+  for (final a in areas) {
+    if (!order.contains(a)) order.add(a);
+  }
+  final result = <(String, List<Map<String, dynamic>>)>[];
+  for (final area in order) {
+    final inArea = [
+      for (final t in topics)
+        if ((t['area'] as String? ?? '') == area) t,
+    ];
+    if (inArea.isEmpty) continue;
+    final indexed = [for (var i = 0; i < inArea.length; i++) (i, inArea[i])];
+    indexed.sort((a, b) {
+      final sa = semester[a.$2['slug']] ?? 99;
+      final sb = semester[b.$2['slug']] ?? 99;
+      return sa != sb ? sa.compareTo(sb) : a.$1.compareTo(b.$1);
+    });
+    result.add((area, [for (final e in indexed) e.$2]));
+  }
+  return result;
+}

@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
+import 'fit_title.dart';
 import 'norm_sheet.dart';
 import 'screen_status.dart';
 
@@ -82,6 +83,7 @@ class _ReviewPageState extends State<ReviewPage> {
     final app = AppScope.of(context);
     await app.learnMoreCards();
     if (mounted) {
+      _resetScroll();
       setState(() {
         _sessionTotal = app.dueCards.length;
         _revealed = false;
@@ -103,10 +105,16 @@ class _ReviewPageState extends State<ReviewPage> {
     final elapsed = DateTime.now().difference(_shownAt).inMilliseconds;
     await AppScope.of(context).rateTopCard(rating, elapsedMs: elapsed);
     if (!mounted) return;
+    _resetScroll();
     setState(() {
       _revealed = false;
       _shownAt = DateTime.now();
     });
+  }
+
+  /// Die naechste Karte beginnt oben, nicht mitten in der alten Antwort.
+  void _resetScroll() {
+    if (_scroll.hasClients) _scroll.jumpTo(0);
   }
 
   void _reveal() {
@@ -232,8 +240,12 @@ class _ReviewPageState extends State<ReviewPage> {
                           ],
                         ),
                         const SizedBox(height: Spacing.xl),
-                        Text(card['front'] as String? ?? '',
-                            style: typography.reading),
+                        FitTitle(
+                          _protectQuestionMark(card['front'] as String? ?? ''),
+                          style: typography.reading,
+                          maxLines: 1000,
+                          minScale: 0.6,
+                        ),
                         AnimatedSwitcher(
                           duration: Motion.normal,
                           switchInCurve: Motion.curve,
@@ -250,10 +262,7 @@ class _ReviewPageState extends State<ReviewPage> {
                                     ),
                                     const SubsumoEyebrow('Antwort'),
                                     const SizedBox(height: Spacing.sm),
-                                    Text(
-                                        reflowCardText(
-                                            card['back'] as String? ?? ''),
-                                        style: theme.textTheme.bodyLarge),
+                                    CardAnswerText(card['back'] as String? ?? ''),
                                     if (norms.isNotEmpty) ...[
                                       const SizedBox(height: Spacing.xl),
                                       Wrap(
@@ -476,3 +485,58 @@ String reflowCardText(String text) => text.replaceAllMapped(
       RegExp(r'([^\n])\n(?!\n|\s*(?:[-*•]|\d+[.)]|[a-z]\)))'),
       (m) => '${m.group(1)} ',
     );
+
+/// Geschuetztes Leerzeichen vor "?" und "!" - das Satzzeichen steht nie allein
+/// in einer Zeile.
+String _protectQuestionMark(String text) =>
+    text.replaceAllMapped(RegExp(r'\s+([?!])'), (m) => '\u00A0${m.group(1)}');
+
+final _bulletRe = RegExp(r'^\s*(?:[-*•]|\d+[.)]|[a-z]\))\s+');
+
+/// Lesefreundliche Antwort: Absaetze mit Abstand, Aufzaehlungen mit haengendem
+/// Einzug, grosszuegiger Zeilenabstand. Der Text selbst bleibt unveraendert.
+class CardAnswerText extends StatelessWidget {
+  const CardAnswerText(this.text, {super.key});
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final style = Theme.of(context).textTheme.bodyLarge?.copyWith(height: 1.6);
+    final children = <Widget>[];
+    for (final para in text.trim().split(RegExp(r'\n\s*\n'))) {
+      final lines = para.split('\n');
+      // Zeilen ohne Aufzaehlungszeichen gehoeren zum Satz davor (Umbruch im Quelltext).
+      final blocks = <(String?, StringBuffer)>[];
+      for (final line in lines) {
+        final m = _bulletRe.firstMatch(line);
+        if (m != null) {
+          blocks.add((line.substring(0, m.end).trim(), StringBuffer(line.substring(m.end))));
+        } else if (blocks.isEmpty) {
+          blocks.add((null, StringBuffer(line.trim())));
+        } else {
+          blocks.last.$2.write(' ${line.trim()}');
+        }
+      }
+      for (final (marker, body) in blocks) {
+        if (body.isEmpty) continue;
+        children.add(Padding(
+          padding: EdgeInsets.only(bottom: marker == null ? Spacing.md : Spacing.sm),
+          child: marker == null
+              ? Text(body.toString(), style: style)
+              : Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: 28,
+                      child: Text(RegExp(r'^[-*•]$').hasMatch(marker) ? '•' : marker, style: style),
+                    ),
+                    Expanded(child: Text(body.toString(), style: style)),
+                  ],
+                ),
+        ));
+      }
+    }
+    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: children);
+  }
+}
