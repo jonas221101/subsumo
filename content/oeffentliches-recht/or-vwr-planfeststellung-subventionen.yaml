@@ -1,0 +1,356 @@
+topic:
+  slug: or-vwr-planfeststellung-subventionen
+  area: oeffentliches-recht
+  title: 'Planfeststellung und Subventionen: Grundzüge'
+  parent: oeffentliches-recht
+  relevance: 3
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-vwr-plan-planfeststellung-verfahren
+  type: definition
+  front: Was ist die Planfeststellung, und wie läuft das Verfahren nach §§ 72 ff. VwVfG ab?
+  back: >-
+    Die Planfeststellung ist ein förmliches Verwaltungsverfahren für Vorhaben, bei denen Gesetz
+    (Fachplanungsrecht) sie vorschreibt, etwa Straßen (§ 17 FStrG), Eisenbahnen (§ 18 AEG)
+    oder Flughäfen (§ 8 LuftVG). Für das Verfahren gelten die §§ 72 bis 78 VwVfG, soweit Fachgesetze
+    nichts Abweichendes bestimmen (§ 72 Abs. 1 VwVfG). Das Verfahren besteht aus dem Anhörungsverfahren
+    (§ 73 VwVfG: Plan des Vorhabenträgers, Auslegung, Einwendungen, Stellungnahmen der Behörden,
+    Erörterung, Stellungnahme der Anhörungsbehörde) und der Entscheidung der Planfeststellungsbehörde
+    durch Planfeststellungsbeschluss (§ 74 VwVfG), der Verwaltungsakt ist. Bei Vorhaben von
+    unwesentlicher Bedeutung genügt statt der Planfeststellung eine Plangenehmigung (§ 74
+    Abs. 6 VwVfG). Die Landesverwaltungsverfahrensgesetze enthalten entsprechende Vorschriften;
+    die Fachplanungsgesetze der Länder weichen im Einzelnen ab.
+  norms:
+  - § 72 VwVfG
+  - § 73 VwVfG
+  - § 74 VwVfG
+  - § 74 Abs. 6 VwVfG
+  quellen: &id001
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vwr-plan-konzentrationswirkung-75
+  type: definition
+  front: Welche Wirkungen hat der Planfeststellungsbeschluss nach § 75 VwVfG?
+  back: >-
+    Der Planfeststellungsbeschluss hat Konzentrationswirkung: Neben ihm sind andere behördliche
+    Entscheidungen, insbesondere öffentlich-rechtliche Genehmigungen, Verleihungen, Erlaubnisse,
+    Bewilligungen, Zustimmungen und Planfeststellungen nicht erforderlich (§ 75 Abs. 1 S.
+    1 VwVfG). Die Konzentration ist formell, das heißt die materiellen Anforderungen der konzentrierten
+    Genehmigungen bleiben zu beachten; ausgenommen sind nach § 75 Abs. 1 S. 1 VwVfG wasserrechtliche
+    Erlaubnisse und Bewilligungen, für die das Wasserhaushaltsgesetz Sonderregeln enthält.
+    Zudem hat der Beschluss Gestaltungswirkung: Er regelt alle öffentlich-rechtlichen Beziehungen
+    zwischen dem Vorhabenträger und den durch den Plan Betroffenen rechtsgestaltend (§ 75
+    Abs. 1 S. 2 VwVfG). Nach § 75 Abs. 2 S. 1 VwVfG sind nach Unanfechtbarkeit Ansprüche auf
+    Unterlassung, Beseitigung oder Änderung ausgeschlossen (Ausschlusswirkung gegenüber privatrechtlichen
+    Abwehransprüchen). Bei nicht voraussehbaren Wirkungen sind Schutzvorkehrungen oder Entschädigung
+    vorgesehen (§ 75 Abs. 2 S. 2 bis 4 VwVfG). Daneben besteht enteignungsrechtliche Vorwirkung
+    nach Fachgesetz.
+  norms:
+  - § 75 Abs. 1 VwVfG
+  - § 75 Abs. 2 VwVfG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-vwr-plan-planrechtfertigung-planungsleitsaetze
+  type: definition
+  front: Was bedeuten Planrechtfertigung und Planungsleitsätze?
+  back: >-
+    Die Planrechtfertigung ist die erste Stufe der materiellen Rechtmäßigkeit: Das Vorhaben
+    muss gemessen an den Zielen des Fachplanungsgesetzes erforderlich sein, das heißt vernünftigerweise
+    geboten (nicht zwingend unausweichlich). Es besteht ein Planungsbedarf, wenn die Ziele
+    des Gesetzes das Vorhaben rechtfertigen (z. B. Verbesserung der Verkehrsverhältnisse).
+    Planungsleitsätze sind zwingende gesetzliche Vorgaben, die der Abwägung nicht zugänglich
+    sind und strikt zu beachten sind (z. B. Immissionsgrenzwerte, artenschutzrechtliche Verbote,
+    Vorschriften des Naturschutzes mit Verbotscharakter); ihre Verletzung führt zur Rechtswidrigkeit,
+    wenn keine Ausnahme oder Befreiung vorliegt. Optimierungsgebote sind demgegenüber Abwägungsdirektiven,
+    die möglichst weitgehend zu verwirklichen sind. Die Prüfung folgt dem Dreischritt: Planrechtfertigung,
+    Planungsleitsätze und Optimierungsgebote, sodann Abwägung.
+  norms:
+  - § 74 Abs. 1 VwVfG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-vwr-plan-abwaegungsgebot
+  type: definition
+  front: Was verlangt das Abwägungsgebot, und welche Abwägungsfehler gibt es?
+  back: >-
+    Die Planfeststellungsbehörde hat bei ihrer Entscheidung planerische Gestaltungsfreiheit
+    (Planungsermessen), die durch das Abwägungsgebot gebunden ist: Sie muss alle von dem Vorhaben
+    berührten öffentlichen und privaten Belange ermitteln, gewichten und in einen gerechten
+    Ausgleich bringen (Rechtsstaatsprinzip; Fachplanungsrecht). Die Abwägungsfehlerlehre unterscheidet:
+    Abwägungsausfall (es findet keine Abwägung statt), Abwägungsdefizit (relevante Belange
+    werden nicht ermittelt oder nicht eingestellt), Abwägungsfehleinschätzung (Bedeutung eines
+    Belangs wird verkannt) und Abwägungsdisproportionalität (der Ausgleich steht außer Verhältnis
+    zur objektiven Gewichtung der Belange). Das Gericht kontrolliert nur die Einhaltung dieser
+    Grenzen, nicht die Zweckmäßigkeit der Planung; die Abwägungsentscheidung selbst ist Planungsermessen.
+    Betroffene haben ein subjektives Recht auf gerechte Abwägung ihrer eigenen Belange.
+  norms:
+  - § 74 Abs. 1 VwVfG
+  - Art. 20 Abs. 3 GG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vwr-plan-planerhaltung-75-abs1a
+  type: norm
+  front: Welche Folgen haben Fehler im Planfeststellungsbeschluss (§ 75 Abs. 1a VwVfG)?
+  back: >-
+    Mängel bei der Abwägung sind nur erheblich, wenn sie offensichtlich und auf das Abwägungsergebnis
+    von Einfluss gewesen sind, § 75 Abs. 1a S. 1 VwVfG. Erhebliche Mängel führen nur dann
+    zur Aufhebung des Planfeststellungsbeschlusses oder zur Feststellung seiner Rechtswidrigkeit
+    und Nichtvollziehbarkeit, wenn sie nicht durch Planergänzung oder durch ein ergänzendes
+    Verfahren behoben werden können, § 75 Abs. 1a S. 2 VwVfG (Planerhaltungsgrundsatz). Der
+    Kläger hat daher regelmäßig nur Anspruch auf Planergänzung (Schutzauflagen nach § 74 Abs.
+    2 S. 2 VwVfG) und nicht auf Aufhebung, wenn der Fehler behebbar ist und das Gesamtkonzept
+    nicht berührt. Bei Verfahrensfehlern ist § 46 VwVfG zu beachten. Maßgeblich ist die Sach-
+    und Rechtslage im Zeitpunkt des Beschlusses.
+  norms:
+  - § 75 Abs. 1a VwVfG
+  - § 74 Abs. 2 S. 2 VwVfG
+  - § 46 VwVfG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-vwr-plan-planfeststellung-rechtsschutz
+  type: norm
+  front: Wer kann sich gegen einen Planfeststellungsbeschluss wehren, und welche Klageart
+    ist statthaft?
+  back: >-
+    Statthaft ist die Anfechtungsklage gegen den Planfeststellungsbeschluss (Verwaltungsakt,
+    § 42 Abs. 1 VwGO) oder, wenn der Kläger nur Schutzvorkehrungen begehrt, die Verpflichtungsklage
+    auf Planergänzung. Die Klagebefugnis (§ 42 Abs. 2 VwGO) hängt vom Maß der Betroffenheit
+    ab: Der Enteignungsbetroffene kann im Wege der Anfechtung die objektive Rechtmäßigkeit
+    des Beschlusses umfassend prüfen lassen (Art. 14 Abs. 3 GG); sonstige Betroffene (z. B.
+    Anlieger mit Lärmbetroffenheit) haben nur Anspruch auf gerechte Abwägung ihrer Belange
+    und auf Einhaltung drittschützender Normen. Zuständig ist wegen der Bedeutung der Vorhaben
+    oft das Oberverwaltungsgericht oder das Bundesverwaltungsgericht in erster Instanz (§
+    48, § 50 VwGO). Einwendungen müssen im Anhörungsverfahren rechtzeitig erhoben werden;
+    nach Ablauf der Einwendungsfrist sind sie nach § 73 Abs. 4 S. 3 VwVfG ausgeschlossen (materielle
+    Präklusion), was unionsrechtlich und im Umweltrecht eingeschränkt wurde.
+  norms:
+  - § 42 VwGO
+  - § 73 Abs. 4 VwVfG
+  - § 48 VwGO
+  - § 50 VwGO
+  - Art. 14 Abs. 3 GG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  - VwGO, amtliche Fassung
+  stand: 2026-10
+- slug: or-vwr-plan-subvention-begriff-rechtsgrundlage
+  type: streitstand
+  front: Was ist eine Subvention, und genügt der Haushaltsplan als Rechtsgrundlage?
+  back: >-
+    Eine Subvention ist eine Leistung der öffentlichen Hand an Private ohne marktübliche Gegenleistung
+    zur Förderung eines öffentlichen Zwecks (Zuschuss, Darlehen, Bürgschaft, Steuervergünstigung).
+    Die Vergabe erfolgt meist nach Förderrichtlinien (Verwaltungsvorschriften) im Ermessen
+    der Behörde. Streitig ist, ob für die Gewährung ein Parlamentsgesetz erforderlich ist.
+    Die Rechtsprechung lässt für begünstigende Subventionen im Grundsatz den Haushaltsplan
+    (haushaltsrechtliche Ermächtigung) und Förderrichtlinien genügen, sofern nicht in Grundrechte
+    Dritter eingegriffen wird; die Gleichbehandlung folgt aus der Selbstbindung der Verwaltung
+    (Art. 3 Abs. 1 GG). Die Gegenauffassung verlangt nach der Wesentlichkeitstheorie ein Gesetz,
+    wenn die Subvention wesentlich ist, insbesondere wenn sie wettbewerbsrelevant ist und
+    die Grundrechte von Konkurrenten berührt (Art. 12 Abs. 1 GG). Ein Anspruch auf Subvention
+    besteht nur bei gesetzlicher Zusage oder bei Selbstbindung; im Übrigen Anspruch auf fehlerfreie
+    Ermessensentscheidung.
+  norms:
+  - Art. 3 Abs. 1 GG
+  - Art. 12 Abs. 1 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vwr-plan-subvention-zwei-stufen
+  type: definition
+  front: Wie wirkt die Zwei-Stufen-Theorie bei Subventionen, und was gilt für Rückforderung?
+  back: >-
+    Bei Subventionen unterscheidet die Zwei-Stufen-Theorie die Entscheidung über das „Ob“
+    der Gewährung von der Abwicklung („Wie“): Die Bewilligung ist öffentlich-rechtlich (Verwaltungsakt,
+    Bewilligungsbescheid), die Abwicklung kann privatrechtlich erfolgen, etwa durch Darlehensvertrag
+    mit der Bank oder Zahlung auf privatrechtlicher Grundlage. Rechtsweg: für das „Ob“ Verwaltungsgerichte,
+    für das „Wie“ ordentliche Gerichte. Bei Zuschüssen wird heute überwiegend die einstufige
+    Lösung vertreten: Bewilligung durch Verwaltungsakt, Abwicklung durch Zuwendungsbescheid
+    mit Nebenbestimmungen, sodass alles öffentlich-rechtlich ist. Wird die Subvention durch
+    Verwaltungsakt bewilligt, richtet sich die Rückforderung nach den §§ 48, 49 Abs. 3, 49a
+    VwVfG, nicht nach Bereicherungsrecht; bei privatrechtlicher Abwicklung nach Vertragsrecht.
+    Der Verwaltungsakt bleibt Anknüpfungspunkt, und die Behörde muss den Verwaltungsakt zuerst
+    aufheben, bevor sie zurückfordert.
+  norms:
+  - § 48 VwVfG
+  - § 49 Abs. 3 VwVfG
+  - § 49a VwVfG
+  - § 17 Abs. 2 GVG
+  quellen:
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  - GVG, amtliche Fassung
+  stand: 2026-10
+- slug: or-vwr-plan-beihilfenrecht
+  type: norm
+  front: Welche Rolle spielt das EU-Beihilfenrecht bei Subventionen?
+  back: >-
+    Staatliche oder aus staatlichen Mitteln gewährte Beihilfen gleich welcher Art, die durch
+    Begünstigung bestimmter Unternehmen oder Produktionszweige den Wettbewerb verfälschen
+    oder zu verfälschen drohen, sind mit dem Binnenmarkt unvereinbar, soweit sie den Handel
+    zwischen Mitgliedstaaten beeinträchtigen, Art. 107 Abs. 1 AEUV (Ausnahmen in Abs. 2 und
+    3). Neue Beihilfen sind bei der Kommission anzumelden und dürfen vor deren Genehmigung
+    nicht gewährt werden (Durchführungsverbot, Art. 108 Abs. 3 AEUV). Eine unter Verstoß gegen
+    das Durchführungsverbot gewährte Beihilfe ist rechtswidrig; die nationalen Behörden und
+    Gerichte müssen sie zurückfordern, der Empfänger kann sich auf Vertrauensschutz nur ausnahmsweise
+    berufen, wenn das Verfahren nicht eingehalten wurde. Im nationalen Recht werden §§ 48,
+    49a VwVfG unionsrechtskonform ausgelegt (Effektivitätsgrundsatz). Ausnahmen bestehen für
+    De-minimis-Beihilfen und Gruppenfreistellungen.
+  norms:
+  - Art. 107 Abs. 1 AEUV
+  - Art. 108 Abs. 3 AEUV
+  - § 48 VwVfG
+  - § 49a VwVfG
+  quellen:
+  - AEUV, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: or-schema-vwr-planfeststellungsbeschluss
+  title: Rechtmäßigkeit eines Planfeststellungsbeschlusses
+  norms:
+  - § 72 VwVfG
+  - § 73 VwVfG
+  - § 74 VwVfG
+  - § 75 VwVfG
+  quellen: *id001
+  steps:
+  - label: 'I. Ermächtigungsgrundlage: Fachplanungsgesetz i. V. m. §§ 72 ff. VwVfG'
+  - label: II. Formelle Rechtmäßigkeit
+    children:
+    - label: 1. Zuständigkeit der Planfeststellungsbehörde
+    - label: 2. Anhörungsverfahren, § 73 VwVfG (Auslegung, Einwendungen, Erörterung)
+    - label: 3. UVP und Beteiligung nach Fachrecht
+  - label: III. Materielle Rechtmäßigkeit
+    children:
+    - label: 1. Planrechtfertigung
+    - label: 2. Planungsleitsätze (zwingendes Recht) und Optimierungsgebote
+    - label: 3. Abwägungsgebot (Rechtsstaatsprinzip, Fachplanungsrecht)
+      hinweis: Abwägungsausfall, -defizit, -fehleinschätzung, -disproportionalität.
+  - label: 'IV. Fehlerfolgen: Planergänzung vor Aufhebung, § 75 Abs. 1a VwVfG'
+    hinweis: Nur erhebliche Abwägungsfehler; Planerhaltung.
+  - label: 'V. Wirkungen: Konzentration, Gestaltung, Ausschluss privatrechtlicher Abwehransprüche,
+      § 75 VwVfG'
+faelle:
+- slug: or-fall-vwr-plan-laermschutz-anlieger
+  title: Straßenplanung ohne Lärmschutz
+  difficulty: 4
+  minutes: 70
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VwVfG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  facts: Die zuständige Planfeststellungsbehörde stellt den Plan für den Neubau einer Landesstraße
+    fest. Anlieger A wohnt etwa 40 Meter von der geplanten Trasse entfernt; sein Grundstück
+    wird nicht in Anspruch genommen. A hat rechtzeitig Einwendungen erhoben und auf zu erwartende
+    Lärmimmissionen hingewiesen. Ein im Verfahren eingereichtes Lärmgutachten zeigt, dass
+    die für Wohngebiete maßgeblichen Grenzwerte am Haus des A überschritten werden. Die Behörde
+    hat dieses Gutachten nicht berücksichtigt und keine Lärmschutzmaßnahmen angeordnet; der
+    Beschluss enthält dazu keine Erwägungen. Die Planrechtfertigung ist unproblematisch gegeben.
+    Weitere Mängel liegen nicht vor. Durch Lärmschutzvorkehrungen (z. B. Schallschutzwand)
+    ließe sich der Mangel beheben, ohne dass das Gesamtkonzept der Planung berührt würde.
+    A erhebt Klage und beantragt die Aufhebung des gesamten Planfeststellungsbeschlusses.
+  question: Ist die Klage zulässig, und mit welchem Ergebnis ist sie begründet?
+  steps:
+  - prompt: Ist A klagebefugt?
+    erwartung: Ja. A ist als Anlieger mit Lärmbetroffenheit nicht Enteignungsbetroffener;
+      ihm steht aber ein subjektives Recht auf gerechte Abwägung seiner Belange und auf Einhaltung
+      drittschützender Immissionsvorschriften zu. Die Verletzung ist möglich, § 42 Abs. 2
+      VwGO. Seine Einwendungen waren rechtzeitig, eine Präklusion greift nicht.
+  - prompt: Liegt ein Fehler im Planfeststellungsbeschluss vor?
+    erwartung: 'Ja, ein Abwägungsdefizit (Abwägungsausfall hinsichtlich der Lärmbelange):
+      Die Behörde hat den relevanten Belang des Lärmschutzes nicht ermittelt und nicht in
+      die Abwägung eingestellt. Der Mangel ist offensichtlich und auf das Ergebnis von Einfluss
+      (§ 75 Abs. 1a S. 1 VwVfG), zudem werden Immissionsgrenzwerte verletzt.'
+  - prompt: Führt der Fehler zur Aufhebung des Beschlusses?
+    erwartung: Nein. Nach § 75 Abs. 1a S. 2 VwVfG kommt eine Aufhebung nur in Betracht, wenn
+      der Mangel nicht durch Planergänzung oder ein ergänzendes Verfahren behoben werden kann.
+      Hier lässt sich der Mangel durch Schutzvorkehrungen (Lärmschutzwand) beheben (§ 74 Abs.
+      2 S. 2 VwVfG). A hat nur Anspruch auf Planergänzung; sein Aufhebungsantrag ist auszulegen
+      (§ 88 VwGO) und hat nur als Minus, nämlich als Begehren auf Verpflichtung zur Planergänzung,
+      Erfolg; im Übrigen wird die Klage abgewiesen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: 'Klagebefugnis des Anliegers: Recht auf gerechte Abwägung seiner Belange (nicht
+        Enteignungsbetroffener)'
+      weight: 1.5
+      required: false
+      norms:
+      - § 42 Abs. 2 VwGO
+      keywords:
+      - Recht auf gerechte Abwägung
+      - Klagebefugnis
+      - nicht enteignungsbetroffen
+      - Lärmbetroffenheit
+      - Anlieger
+      - subjektives Recht auf Abwägung
+      card_slugs:
+      - or-vwr-plan-planfeststellung-rechtsschutz
+      - or-vwr-plan-abwaegungsgebot
+    - id: p2
+      label: Abwägungsfehler (Abwägungsdefizit/-ausfall) bezüglich der Lärmbelange erkannt
+      weight: 3.0
+      required: true
+      norms:
+      - § 74 Abs. 1 VwVfG
+      keywords:
+      - Abwägungsdefizit
+      - Abwägungsausfall
+      - Abwägungsgebot
+      - Lärmschutz
+      - nicht in die Abwägung eingestellt
+      - Belange nicht ermittelt
+      card_slugs:
+      - or-vwr-plan-abwaegungsgebot
+    - id: p3
+      label: 'Planerhaltung: Planergänzung statt Aufhebung nach § 75 Abs. 1a S. 2 VwVfG'
+      weight: 3.0
+      required: true
+      norms:
+      - § 75 Abs. 1a VwVfG
+      - § 74 Abs. 2 S. 2 VwVfG
+      keywords:
+      - Planergänzung
+      - § 75 Abs. 1a S. 2 VwVfG
+      - ergänzendes Verfahren
+      - Schutzauflagen
+      - Planerhaltung
+      - Schutzvorkehrungen
+      - Aufhebung nicht
+      card_slugs:
+      - or-vwr-plan-planerhaltung-75-abs1a
+    - id: p4
+      label: 'Ergebnis: kein Anspruch auf vollständige Aufhebung, aber Anspruch auf Schutzvorkehrungen/Planergänzung'
+      weight: 2.0
+      required: true
+      keywords:
+      - kein Anspruch auf Aufhebung
+      - Anspruch auf Planergänzung
+      - Verpflichtungsklage auf Planergänzung
+      - Aufhebungsantrag
+      - Lärmschutzwand
+      card_slugs:
+      - or-vwr-plan-planerhaltung-75-abs1a
+      - or-vwr-plan-planfeststellung-rechtsschutz
+    - id: p5
+      label: Wirkungen des Planfeststellungsbeschlusses (Konzentrations- und Gestaltungswirkung)
+        erwähnt
+      weight: 1.0
+      required: false
+      norms:
+      - § 75 Abs. 1 VwVfG
+      keywords:
+      - Konzentrationswirkung
+      - Gestaltungswirkung
+      - § 75 Abs. 1 VwVfG
+      - Planfeststellungsbeschluss
+      card_slugs:
+      - or-vwr-plan-konzentrationswirkung-75

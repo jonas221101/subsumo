@@ -1,0 +1,332 @@
+topic:
+  slug: or-vwr-verwaltungsvollstreckung
+  area: oeffentliches-recht
+  title: 'Verwaltungsvollstreckung: Zwangsmittel, Sofortvollzug, Kosten'
+  parent: oeffentliches-recht
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-vwr-vollstr-ueberblick-landesrecht
+  type: definition
+  front: Wie ist die Verwaltungsvollstreckung geregelt, und welches Recht ist anwendbar?
+  back: >-
+    Die Verwaltungsvollstreckung ermöglicht der Behörde, Verwaltungsakte ohne Titel der Gerichte
+    selbst durchzusetzen (Selbsttitulierung und Selbstvollstreckung). Das Verwaltungs-Vollstreckungsgesetz
+    des Bundes (VwVG) gilt für Bundesbehörden; es unterscheidet die Vollstreckung wegen Geldforderungen
+    (§§ 1 ff. VwVG) von der Erzwingung von Handlungen, Duldungen und Unterlassungen (§§ 6
+    ff. VwVG). Für Landesbehörden gelten die Verwaltungsvollstreckungsgesetze der Länder (z.
+    B. VwVG NRW, BayVwZVG, LVwVG BW), die weitgehend parallel aufgebaut, im Einzelnen aber
+    landesrechtlich unterschiedlich sind; im Polizei- und Ordnungsrecht enthalten die Polizeigesetze
+    häufig eigene Zwangsvorschriften. In der Klausur ist daher stets das einschlägige Landesrecht
+    zugrunde zu legen oder, wenn kein Landesrecht vorgegeben ist, das VwVG des Bundes als
+    Maßstab zu verwenden. Zwangsmittel sind Ersatzvornahme, Zwangsgeld und unmittelbarer Zwang
+    (§ 9 Abs. 1 VwVG).
+  norms:
+  - § 6 Abs. 1 VwVG
+  - § 9 Abs. 1 VwVG
+  - § 1 VwVG
+  quellen: &id001
+  - VwVG, amtliche Fassung (Bund)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vwr-vollstr-gestrecktes-verfahren
+  type: norm
+  front: Welche Voraussetzungen hat das gestreckte Vollstreckungsverfahren, § 6 Abs. 1 VwVG?
+  back: >-
+    Ein Verwaltungsakt, der auf die Herausgabe einer Sache oder auf Vornahme einer Handlung
+    oder auf Duldung oder Unterlassung gerichtet ist, kann mit Zwangsmitteln durchgesetzt
+    werden, wenn er unanfechtbar ist oder wenn ein Rechtsmittel keine aufschiebende Wirkung
+    hat, § 6 Abs. 1 VwVG (Vollstreckbarkeit). Das Verfahren verläuft in Stufen: (1) Grundverwaltungsakt
+    (vollstreckbarer Titel), (2) Androhung des Zwangsmittels (§ 13 VwVG), (3) bei Zwangsgeld
+    Festsetzung (§ 14 VwVG), (4) Anwendung des Zwangsmittels. Die Behörde muss zuständig sein,
+    der Grundverwaltungsakt wirksam (§ 43 Abs. 1, 3 VwVfG), hinreichend bestimmt und mit dem
+    Inhalt einer Handlungs-, Duldungs- oder Unterlassungspflicht versehen sein. Hinzu kommt
+    die Verhältnismäßigkeit des gewählten Mittels, § 9 Abs. 2 VwVG. Dieses Prüfprogramm gilt
+    in den Ländern entsprechend, im Einzelnen mit abweichenden Paragraphen.
+  norms:
+  - § 6 Abs. 1 VwVG
+  - § 13 VwVG
+  - § 14 VwVG
+  - § 9 Abs. 2 VwVG
+  - § 43 VwVfG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-vwr-vollstr-sofortvollzug-6-abs2
+  type: norm
+  front: Was ermöglicht der Sofortvollzug nach § 6 Abs. 2 VwVG, und wie wird er geprüft?
+  back: >-
+    Nach § 6 Abs. 2 VwVG können Zwangsmittel ohne vorausgehenden Verwaltungsakt angewendet
+    werden, wenn das zur Verhinderung einer rechtswidrigen Tat, die einen Straf- oder Bußgeldtatbestand
+    verwirklicht, oder zur Abwehr einer drohenden Gefahr notwendig ist und die Behörde hierbei
+    innerhalb ihrer Befugnisse handelt. Es fehlt ein Grundverwaltungsakt; geprüft wird stattdessen
+    ein hypothetischer Verwaltungsakt: Die Maßnahme muss rechtmäßig sein, d. h. die Behörde
+    hätte bei gleicher Sachlage einen entsprechenden Verwaltungsakt erlassen dürfen (Ermächtigungsgrundlage,
+    Gefahr, Störer, Verhältnismäßigkeit). Androhung und Fristsetzung entfallen, weil die Umstände
+    sie nicht zulassen. Der Sofortvollzug ist nicht mit der unmittelbaren Ausführung im Polizeirecht
+    gleichzusetzen, bei der die Behörde die Maßnahme selbst ausführt, ohne dass der Verantwortliche
+    rechtzeitig tätig werden kann; Landesrecht regelt beide Konstellationen unterschiedlich.
+  norms:
+  - § 6 Abs. 2 VwVG
+  - § 13 Abs. 1 VwVG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-vwr-vollstr-zwangsmittel
+  type: definition
+  front: Welche Zwangsmittel kennt das Verwaltungsvollstreckungsrecht und wann kommt welches
+    in Betracht?
+  back: >-
+    Die Ersatzvornahme (§ 10 VwVG) kommt bei vertretbaren Handlungen in Betracht: Die Behörde
+    führt die Handlung selbst oder durch einen Dritten auf Kosten des Pflichtigen aus. Das
+    Zwangsgeld (§ 11 VwVG) ist ein Beugemittel zur Durchsetzung unvertretbarer Handlungen
+    sowie von Duldungen und Unterlassungen; es ist keine Strafe, kann wiederholt festgesetzt
+    werden und beträgt im Bund mindestens 25 und höchstens 25 000 Euro. Der unmittelbare Zwang
+    (§ 12 VwVG) ist anwendbar, wenn andere Zwangsmittel nicht zum Ziel führen oder untunlich
+    sind; er ist das schwerste Mittel und unterliegt besonders strengen Verhältnismäßigkeitsanforderungen.
+    Wirkt das Zwangsgeld nicht, kann zudem Ersatzzwangshaft angeordnet werden (§ 16 VwVG).
+    Die Behörde wählt unter Beachtung des Verhältnismäßigkeitsgrundsatzes das mildeste geeignete
+    Mittel, § 9 Abs. 2 VwVG; ein bestimmtes Mittel ist anzudrohen.
+  norms:
+  - § 10 VwVG
+  - § 11 VwVG
+  - § 12 VwVG
+  - § 9 Abs. 2 VwVG
+  - § 16 VwVG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-vwr-vollstr-androhung
+  type: norm
+  front: Welche Anforderungen gelten an die Androhung eines Zwangsmittels, § 13 VwVG?
+  back: >-
+    Zwangsmittel sind möglichst schriftlich anzudrohen, § 13 Abs. 1 S. 1 VwVG. Dem Pflichtigen
+    ist eine angemessene Frist zur Erfüllung der Verpflichtung zu bestimmen, innerhalb der
+    dem Pflichtigen der Vollzug billigerweise zuzumuten ist (§ 13 Abs. 1 S. 2 VwVG). Die Androhung
+    kann mit dem Grundverwaltungsakt verbunden werden (§ 13 Abs. 2 VwVG). Sie muss das Zwangsmittel
+    bestimmt bezeichnen (§ 13 Abs. 3 VwVG), bei Zwangsgeld zudem einen bestimmten Betrag nennen
+    (§ 13 Abs. 5 VwVG); bei Ersatzvornahme ist der voraussichtliche Kostenbetrag anzugeben
+    (§ 13 Abs. 4 VwVG). Die Androhung ist selbst Verwaltungsakt und eigenständig anfechtbar.
+    Sie ist entbehrlich im Sofortvollzug (§ 6 Abs. 2 VwVG), weil die Umstände sie nicht zulassen.
+    Wegen der Ländergesetze: Form und Inhalt der Androhung sind landesrechtlich unterschiedlich
+    geregelt; die Grundstruktur ist aber gleich.
+  norms:
+  - § 13 VwVG
+  - § 6 Abs. 2 VwVG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-vwr-vollstr-konnexitaet
+  type: streitstand
+  front: Muss der Grundverwaltungsakt rechtmäßig sein, damit die Vollstreckung rechtmäßig
+    ist (Konnexität)?
+  back: >-
+    Nach h. M. (Rechtsprechung und überwiegende Lehre) hängt die Rechtmäßigkeit der Vollstreckung
+    im gestreckten Verfahren nicht von der Rechtmäßigkeit des Grundverwaltungsakts ab. Vorausgesetzt
+    werden nur dessen Wirksamkeit und Vollstreckbarkeit (§ 6 Abs. 1 VwVG, § 43 VwVfG): Der
+    Betroffene soll Einwendungen gegen den Grundverwaltungsakt in dem hierfür vorgesehenen
+    Rechtsbehelfsverfahren geltend machen; die Vollstreckung bleibt auch bei rechtswidrigem,
+    aber wirksamem und bestandskräftigem Grundverwaltungsakt rechtmäßig. Nur die Nichtigkeit
+    (§ 44 VwVfG) schließt die Vollstreckung aus. Die Gegenauffassung verlangt die Rechtmäßigkeit
+    des Grundverwaltungsakts, weil sonst rechtswidriger Zwang zulässig sei und Art. 19 Abs.
+    4 GG verkürzt werde. Im Sofortvollzug (§ 6 Abs. 2 VwVG) ist dagegen die Rechtmäßigkeit
+    des hypothetischen Verwaltungsakts zu prüfen, da kein wirksamer Titel besteht. Die Rechtswidrigkeit
+    des Grundverwaltungsakts wirkt sich allerdings aus, wenn dieser aufgehoben wird: Dann
+    entfällt die Vollstreckbarkeit.
+  norms:
+  - § 6 Abs. 1 VwVG
+  - § 43 VwVfG
+  - § 44 VwVfG
+  - Art. 19 Abs. 4 GG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-vwr-vollstr-kostenbescheid
+  type: norm
+  front: Wann ist ein Kostenbescheid für eine Ersatzvornahme rechtmäßig?
+  back: >-
+    Die Kosten einer Ersatzvornahme trägt der Pflichtige (§ 10 VwVG); sie werden durch Leistungsbescheid
+    (Kostenbescheid) festgesetzt und im Verwaltungsvollstreckungsverfahren beigetrieben. Der
+    Kostenbescheid ist rechtmäßig, wenn (1) eine Ermächtigung besteht (Kostenvorschrift des
+    VwVG bzw. Landesrechts, vgl. § 19 VwVG), (2) die Behörde zuständig ist, das Verfahren
+    und die Form beachtet wurden und (3) die Ersatzvornahme selbst rechtmäßig war, d. h. die
+    Vollstreckungsvoraussetzungen im gestreckten Verfahren (Vollstreckbarkeit, Androhung,
+    Fristsetzung) vorlagen oder, im Sofortvollzug, die Maßnahme einschließlich hypothetischen
+    Verwaltungsakts rechtmäßig war. Hinzu kommen die Höhe der tatsächlich entstandenen Kosten
+    (nur erforderliche, angemessene Kosten, keine überhöhten Unternehmerpreise) und die Auswahl
+    des richtigen Kostenschuldners. Der Kostenbescheid kann mit Anfechtungsklage angegriffen
+    werden; die aufschiebende Wirkung entfällt je nach Einordnung der Kosten nach § 80 Abs.
+    2 S. 1 Nr. 1 VwGO oder aufgrund Landesrechts.
+  norms:
+  - § 10 VwVG
+  - § 19 VwVG
+  - § 80 Abs. 2 S. 1 Nr. 1 VwGO
+  quellen:
+  - VwVG, amtliche Fassung (Bund)
+  - Eigenformulierung Redaktion
+  - VwGO, amtliche Fassung
+  stand: 2026-10
+- slug: or-vwr-vollstr-rechtsschutz-vollstreckung
+  type: norm
+  front: Welcher Rechtsschutz besteht gegen Maßnahmen der Verwaltungsvollstreckung?
+  back: >-
+    Androhung, Festsetzung des Zwangsgelds und Kostenbescheid sind Verwaltungsakte und mit
+    der Anfechtungsklage angreifbar, regelmäßig nach vorherigem Widerspruch, soweit das Landesrecht
+    ein Vorverfahren vorsieht. Nach § 80 Abs. 2 S. 2 VwGO können die Länder bestimmen, dass
+    Rechtsbehelfe gegen Maßnahmen der Verwaltungsvollstreckung keine aufschiebende Wirkung
+    haben; hiervon macht das Landesrecht überwiegend Gebrauch, sodass der Antrag nach § 80
+    Abs. 5 VwGO die Regel ist. Die Anwendung unmittelbaren Zwangs ist ein Realakt, der sich
+    regelmäßig schnell erledigt; Rechtsschutz bietet dann die Fortsetzungsfeststellungsklage
+    (analog § 113 Abs. 1 S. 4 VwGO). Einwendungen gegen den Grundverwaltungsakt sind nach
+    h. M. im Vollstreckungsverfahren nicht zu prüfen, wohl aber Einwände gegen die Vollstreckungsvoraussetzungen
+    (Vollstreckbarkeit, Androhung, Verhältnismäßigkeit). Die Zulässigkeit der Rechtsbehelfe
+    unterliegt dem Landesrecht.
+  norms:
+  - § 80 Abs. 2 VwGO
+  - § 80 Abs. 5 VwGO
+  - § 113 Abs. 1 S. 4 VwGO analog
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: or-schema-vwr-vollstreckung-zwangsmittel
+  title: Rechtmäßigkeit einer Maßnahme der Verwaltungsvollstreckung (Zwangsmittel)
+  norms:
+  - § 6 VwVG
+  - § 9 VwVG
+  - § 13 VwVG
+  quellen: *id001
+  steps:
+  - label: 'I. Ermächtigungsgrundlage: VwVG (Bund) bzw. Landesvollstreckungsrecht'
+    hinweis: Landesrechtlich unterschiedlich; sonst § 6 VwVG als Muster verwenden.
+  - label: II. Formelle Rechtmäßigkeit
+    children:
+    - label: 1. Zuständigkeit der Vollstreckungsbehörde
+    - label: 2. Verfahren und Form (Anhörung, Schriftform)
+  - label: 'III. Materielle Rechtmäßigkeit: Gestrecktes Verfahren'
+    children:
+    - label: 1. Grundverwaltungsakt vorhanden, wirksam, auf Handlung/Duldung/Unterlassung
+        gerichtet
+      hinweis: Rechtmäßigkeit des Grund-VA nicht Voraussetzung (h. M.); nur Wirksamkeit.
+    - label: '2. Vollstreckbarkeit: unanfechtbar oder sofort vollziehbar, § 6 Abs. 1 VwVG'
+    - label: 3. Androhung, § 13 VwVG (Frist, bestimmtes Zwangsmittel)
+    - label: 4. Festsetzung (bei Zwangsgeld) und Anwendung des Zwangsmittels
+    - label: 5. Zwangsmittel zulässig und verhältnismäßig, §§ 9 bis 12 VwVG
+  - label: 'IV. Alternativ: Sofortvollzug, § 6 Abs. 2 VwVG'
+    hinweis: Hypothetischer Verwaltungsakt rechtmäßig? Gefahr, Notwendigkeit.
+  - label: 'V. Kosten: Kostenbescheid rechtmäßig, Höhe und Schuldner'
+faelle:
+- slug: or-fall-vwr-vollstr-schrottauto-ersatzvornahme
+  title: Das Schrottauto im Hof
+  difficulty: 3
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VwVG, amtliche Fassung (Bund)
+  - Eigenformulierung Redaktion
+  facts: Die zuständige Behörde ordnet gegenüber dem Eigentümer E durch schriftlichen Verwaltungsakt
+    an, ein abgestelltes, nicht mehr fahrbereites Fahrzeug von seinem Grundstück zu entfernen
+    und ordnungsgemäß zu entsorgen. Sie stützt sich dabei auf eine rechtlich vorgesehene Ermächtigung;
+    ob die Anordnung materiell rechtmäßig war, ist zweifelhaft. E ficht den Bescheid nicht
+    an; er wird bestandskräftig. Nach Ablauf der gesetzten Frist droht die Behörde in einem
+    weiteren schriftlichen Bescheid unter Setzung einer angemessenen Frist die Ersatzvornahme
+    an und nennt voraussichtliche Kosten von 850 Euro. E bleibt untätig. Die Behörde beauftragt
+    einen Abschleppunternehmer, der das Fahrzeug entfernt und 850 Euro in Rechnung stellt.
+    Die Behörde setzt die Kosten gegenüber E durch Kostenbescheid fest. E meint, die Grundverfügung
+    sei rechtswidrig gewesen und deshalb auch der Kostenbescheid. Es gelten Vorschriften,
+    die dem VwVG des Bundes entsprechen.
+  question: Ist der Kostenbescheid rechtmäßig?
+  steps:
+  - prompt: Welche Vollstreckungsform liegt vor, und welche Voraussetzungen müssen erfüllt
+      sein?
+    erwartung: 'Gestrecktes Verfahren nach § 6 Abs. 1 VwVG: wirksamer, vollstreckbarer Grundverwaltungsakt,
+      Androhung (§ 13 VwVG) mit Fristsetzung, dann Ersatzvornahme (§ 10 VwVG), weil die Entsorgung
+      eine vertretbare Handlung ist.'
+  - prompt: War der Grundverwaltungsakt vollstreckbar, und ist seine Rechtswidrigkeit zu prüfen?
+    erwartung: Er ist bestandskräftig und damit unanfechtbar (§ 6 Abs. 1 VwVG), wirksam (§
+      43 VwVfG) und nicht nichtig (§ 44 VwVfG). Nach h. M. ist seine Rechtmäßigkeit im Vollstreckungsverfahren
+      nicht zu prüfen (keine Konnexität); der Einwand des E greift nicht durch.
+  - prompt: War die Androhung ordnungsgemäß und die Ersatzvornahme das richtige Mittel?
+    erwartung: Ja. Die Androhung erfolgte schriftlich mit angemessener Frist, benannte das
+      Zwangsmittel bestimmt und nannte voraussichtliche Kosten (§ 13 VwVG). Die Entsorgung
+      ist eine vertretbare Handlung, die Ersatzvornahme verhältnismäßig (§ 9 Abs. 2 VwVG).
+  - prompt: Ist der Kostenbescheid rechtmäßig?
+    erwartung: Ja. Der Pflichtige trägt die Kosten der Ersatzvornahme (§ 10 VwVG); die Kosten
+      sind tatsächlich entstanden und angemessen (850 Euro); der Kostenbescheid ist rechtmäßig.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: 'Gestrecktes Vollstreckungsverfahren erkannt: bestandskräftiger Grundverwaltungsakt
+        als Titel, § 6 Abs. 1 VwVG'
+      weight: 2.0
+      required: true
+      norms:
+      - § 6 Abs. 1 VwVG
+      keywords:
+      - gestrecktes Verfahren
+      - § 6 Abs. 1 VwVG
+      - Grundverwaltungsakt
+      - Vollstreckbarkeit
+      - unanfechtbar
+      - bestandskräftig
+      card_slugs:
+      - or-vwr-vollstr-gestrecktes-verfahren
+    - id: p2
+      label: Rechtswidrigkeit des Grundverwaltungsakts für die Vollstreckung unbeachtlich
+        (Konnexität h. M.)
+      weight: 3.0
+      required: true
+      norms:
+      - § 43 VwVfG
+      - § 44 VwVfG
+      keywords:
+      - Konnexität
+      - Wirksamkeit genügt
+      - nicht nichtig
+      - § 44 VwVfG
+      - Bestandskraft
+      - Rechtswidrigkeit unbeachtlich
+      card_slugs:
+      - or-vwr-vollstr-konnexitaet
+    - id: p3
+      label: Ersatzvornahme als Zwangsmittel (vertretbare Handlung), Androhung nach § 13 VwVG
+      weight: 2.0
+      required: false
+      norms:
+      - § 10 VwVG
+      - § 13 VwVG
+      keywords:
+      - Ersatzvornahme
+      - § 10 VwVG
+      - vertretbare Handlung
+      - Androhung
+      - § 13 VwVG
+      - Frist zur Erfüllung
+      card_slugs:
+      - or-vwr-vollstr-zwangsmittel
+      - or-vwr-vollstr-androhung
+    - id: p4
+      label: 'Kostenerstattung: Pflichtiger trägt Kosten der Ersatzvornahme, Höhe angemessen'
+      weight: 2.0
+      required: true
+      norms:
+      - § 10 VwVG
+      keywords:
+      - Kosten der Ersatzvornahme
+      - Kostenbescheid
+      - Leistungsbescheid
+      - Pflichtiger trägt
+      - tatsächlich entstandene Kosten
+      - angemessen
+      card_slugs:
+      - or-vwr-vollstr-kostenbescheid
+    - id: p5
+      label: 'Ergebnis: Kostenbescheid rechtmäßig'
+      weight: 1.0
+      required: false
+      keywords:
+      - Kostenbescheid ist rechtmäßig
+      - Kostenbescheid rechtmäßig
+      - rechtmäßig festgesetzt
+      card_slugs:
+      - or-vwr-vollstr-kostenbescheid

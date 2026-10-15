@@ -1,0 +1,353 @@
+topic:
+  slug: or-polizeirecht-vertiefung
+  area: oeffentliches-recht
+  title: 'Polizeirecht vertieft: Störerauswahl, Nichtstörer, Kosten, Standardmaßnahmen'
+  parent: oeffentliches-recht
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-pol-stoererauswahl
+  type: definition
+  front: Nach welchen Kriterien erfolgt die Störerauswahl bei mehreren Verantwortlichen?
+  back: >-
+    Sind mehrere Personen verantwortlich (Handlungs- und/oder Zustandsstörer), liegt die Auswahl
+    im pflichtgemäßen Ermessen der Behörde (Auswahlermessen). Leitgedanke ist die Effektivität
+    der Gefahrenabwehr: Die Behörde wählt denjenigen, durch dessen Inanspruchnahme die Gefahr
+    schnell, sicher und wirksam beseitigt werden kann, nach h. M. insbesondere unter Berücksichtigung
+    der Nähe zur Gefahr (zeitlich, räumlich, nach dem Verursachungsbeitrag), der Leistungsfähigkeit
+    und Verfügbarkeit des Pflichtigen. Eine feste Rangfolge zwischen Handlungs- und Zustandsstörer
+    besteht nicht; oft liegt die Inanspruchnahme des Verhaltensverantwortlichen näher, weil
+    er die Gefahr unmittelbar gesetzt hat, doch kann die Behörde den leichter greifbaren Zustandsstörer
+    wählen. Gleichheitsgrundsatz und Verhältnismäßigkeit sind zu beachten; Die Auswahl ist
+    zu begründen.
+  norms:
+  - Art. 3 Abs. 1 GG
+  - Art. 20 Abs. 3 GG
+  quellen: &id001
+  - Musterentwurf eines einheitlichen Polizeigesetzes (MEPolG) und Polizei-/Ordnungsgesetze
+    der Länder
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-pol-zweckveranlasser
+  type: streitstand
+  front: Ist der Zweckveranlasser Störer?
+  back: >-
+    Zweckveranlasser ist, wer eine Gefahrenlage subjektiv oder objektiv bezweckt oder in Kauf
+    nimmt, dass ein Dritter unmittelbar die Gefahr verursacht, wie im klassischen Schaufensterfall
+    (Reklame führt zum Menschenauflauf auf der Straße). Streitig ist, ob er als Verhaltensstörer
+    in Anspruch genommen werden darf, obwohl der Dritte die Gefahr unmittelbar setzt. Ein
+    Teil der Literatur lehnt dies ab: Maßgeblich sei die Unmittelbarkeitstheorie, nach der
+    nur der Verantwortliche ist, der die Gefahrengrenze selbst überschreitet; der Veranlasser
+    sei allenfalls Nichtstörer. Die h. M. erkennt die Zweckveranlassung als Ausnahme an, weil
+    der Veranlasser durch seine Handlung die Gefahrenschwelle mittelbar überschreitet und
+    sonst Verantwortlichkeiten durch Einschaltung Dritter umgangen werden könnten. Voraussetzung
+    ist ein enger Wirkzusammenhang: Die Gefahr muss die typische, bezweckte oder zumindest
+    in Kauf genommene Folge der Veranlassung sein. Die gesetzliche Regelung ist landesrechtlich
+    unterschiedlich.
+  norms:
+  - Art. 20 Abs. 3 GG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-pol-anscheins-und-scheinstoerer
+  type: definition
+  front: Unterscheide Anscheinsstörer und Scheinstörer.
+  back: >-
+    Anscheinsstörer ist, wer bei verständiger Würdigung der objektiven Umstände den Anschein
+    einer Gefahr verursacht (Anscheinsgefahr), die sich später nicht bestätigt. Die Polizei
+    darf ihn wie einen Störer in Anspruch nehmen, wenn aus Sicht eines objektiven Dritten
+    ex ante eine Gefahr bestand und sie dem Betroffenen nach den Verantwortlichkeitsregeln
+    zurechenbar ist (Verhaltens- oder Zustandsverantwortlichkeit), obwohl objektiv keine Gefahr
+    bestand. Die Maßnahme ist rechtmäßig; Kosten- und Entschädigungsfragen richten sich nach
+    Landesrecht (teilweise Entschädigung entsprechend der Nichtstörerhaftung). Scheinstörer
+    ist, wer ohne Verantwortlichkeit für den gefahrverdächtigen Zustand in Anspruch genommen
+    wird, weil die Polizei irrtümlich von seiner Verantwortlichkeit ausgeht; hier fehlt es
+    an der Störereigenschaft, die Maßnahme ist (jedenfalls gegenüber dem Scheinstörer) rechtswidrig.
+    Zu trennen ist der Gefahrenverdacht (Gefahrerforschungseingriff).
+  norms:
+  - Art. 20 Abs. 3 GG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-pol-latenter-stoerer
+  type: streitstand
+  front: Was versteht man unter einem „latenten Störer“, und darf er als Störer in Anspruch
+    genommen werden?
+  back: >-
+    Mit dem Begriff des latenten Störers wird bezeichnet, wessen Verhalten oder Sache noch
+    keine konkrete Gefahr darstellt, aber bei Hinzutreten weiterer Umstände zu einer Gefahr
+    werden kann (potentielle Störung). Die Terminologie ist uneinheitlich. Nach überwiegender
+    Auffassung fehlt es für polizeiliche Maßnahmen gegen den latenten Störer an einer konkreten
+    Gefahr und damit an der Störereigenschaft; Maßnahmen im Vorfeld sind Gefahrenvorsorge
+    und bedürfen einer ausdrücklichen gesetzlichen Befugnis, die Generalklausel trägt sie
+    nicht. Eine Gegenauffassung will den Betroffenen bei hinreichender Wahrscheinlichkeit
+    des Gefahreintritts bereits wie einen Störer behandeln, damit wirksame Gefahrenabwehr
+    nicht vereitelt wird; dagegen spricht, dass die Anforderungen an die Gefahrenprognose
+    sonst unterlaufen werden. Klausurpraktisch ist von der konkreten Gefahr auszugehen und
+    der Betroffene bei fehlender Gefahr nicht als Störer zu behandeln.
+  norms:
+  - Art. 20 Abs. 3 GG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-pol-altlasten-bverfge102
+  type: rechtsprechung
+  front: Welche Grenze der Zustandsverantwortlichkeit hat das BVerfG im Altlastenbeschluss
+    gezogen?
+  back: >-
+    Das BVerfG hat in seinem Beschluss zur Zustandsverantwortlichkeit des Grundstückseigentümers
+    für Altlasten (BVerfGE 102, 1) entschieden, dass die Zustandsverantwortlichkeit als Inhalts-
+    und Schrankenbestimmung des Eigentums (Art. 14 Abs. 1 GG) grundsätzlich zulässig ist,
+    ihre Verhältnismäßigkeit aber begrenzt ist: Die Belastung mit Sanierungskosten kann unzumutbar
+    sein, wenn sie den Verkehrswert des Grundstücks nach Sanierung übersteigt und der Eigentümer
+    die Gefahr nicht selbst zu verantworten hat. Zu berücksichtigen sind insbesondere, ob
+    der Eigentümer das Risiko bewusst eingegangen ist, ob er Einfluss auf die Entstehung hatte
+    und ob das Grundstück die wesentliche Vermögensgrundlage ist (Existenzschutz). Zustandsstörer
+    haften regelmäßig nicht unbegrenzt; die Behörde hat die Opfergrenze bei der Ermessensausübung
+    zu prüfen. Die Entscheidung erging zur Altlastensanierung; ihr Gedanke wird auf die Zustandsverantwortlichkeit
+    im Gefahrenabwehrrecht übertragen.
+  norms:
+  - Art. 14 Abs. 1 GG
+  - BVerfGE 102, 1
+  quellen:
+  - BVerfGE 102, 1 (Altlasten)
+  stand: 2026-10
+- slug: or-pol-nichtstoerer
+  type: norm
+  front: Unter welchen Voraussetzungen darf die Polizei einen Nichtstörer in Anspruch nehmen
+    (polizeilicher Notstand)?
+  back: >-
+    Nach dem Muster der Polizeigesetze darf die Polizei Maßnahmen gegen Personen richten,
+    die weder Handlungs- noch Zustandsstörer sind, nur unter engen Voraussetzungen (polizeilicher
+    Notstand): (1) eine gegenwärtige erhebliche Gefahr besteht, (2) Maßnahmen gegen Störer
+    sind nicht oder nicht rechtzeitig möglich oder versprechen keinen Erfolg, (3) die Polizei
+    kann die Gefahr nicht oder nicht rechtzeitig selbst oder durch Beauftragte abwehren, und
+    (4) die Personen können ohne erhebliche eigene Gefährdung und ohne Verletzung höherwertiger
+    Pflichten in Anspruch genommen werden. Die Maßnahme darf nur so lange aufrechterhalten
+    werden, wie es notwendig ist. Der Nichtstörer hat Anspruch auf angemessene Entschädigung
+    für den ihm durch die Maßnahme entstandenen Schaden. Beispiele sind die Inanspruchnahme
+    von Fahrzeugen und Wohnraum bei Gefahren für Leben und Gesundheit. Die Paragraphen sind
+    landesrechtlich unterschiedlich; maßgeblich ist das jeweilige Landesgesetz.
+  norms:
+  - Art. 14 Abs. 3 GG
+  - Art. 20 Abs. 3 GG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-pol-kosten-ersatzansprueche
+  type: norm
+  front: Welche Kosten- und Ersatzansprüche bestehen im Polizeirecht?
+  back: >-
+    Kosten von Maßnahmen können dem Verantwortlichen nur auferlegt werden, wenn das Gesetz
+    dies vorsieht: Bei Ersatzvornahme trägt der Pflichtige die Kosten (Vollstreckungsrecht);
+    bei unmittelbarer Ausführung durch die Polizei kann sie nach Landesrecht Kostenersatz
+    vom Verantwortlichen verlangen (Kostenbescheid); beim Sofortvollzug ist die Rechtmäßigkeit
+    des hypothetischen Verwaltungsakts zu prüfen. Bei mehreren Störern besteht zwischen ihnen
+    ein Ausgleichsanspruch nach § 426 BGB analog. Dem Nichtstörer steht eine Entschädigung
+    nach Landesrecht zu; ähnlich kann ein rechtmäßig als Störer in Anspruch genommener Anscheinsstörer
+    entschädigt werden. Für rechtswidrige Maßnahmen ergeben sich Amtshaftungsansprüche (§
+    839 BGB, Art. 34 GG) und Ansprüche aus enteignungsgleichem Eingriff. Die Grundlage der
+    Kostenerhebung muss gesetzlich bestimmt sein; Geschäftsführung ohne Auftrag ersetzt sie
+    nicht. Die Einzelheiten sind landesrechtlich unterschiedlich.
+  norms:
+  - § 426 BGB
+  - § 839 BGB
+  - Art. 34 GG
+  quellen:
+  - Musterentwurf eines einheitlichen Polizeigesetzes (MEPolG) und Polizei-/Ordnungsgesetze
+    der Länder
+  - Eigenformulierung Redaktion
+  - BGB und GG, amtliche Fassung
+  stand: 2026-10
+- slug: or-pol-identitaetsfeststellung
+  type: norm
+  front: Unter welchen Voraussetzungen darf die Polizei die Identität feststellen?
+  back: >-
+    Die Polizei darf die Identität einer Person feststellen, um eine im einzelnen Fall bestehende
+    Gefahr abzuwehren, nach den Polizeigesetzen daneben an bestimmten gefährlichen oder gefährdeten
+    Orten, an Kontrollstellen und in Grenzgebieten. Zur Identitätsfeststellung darf die Polizei
+    die Person anhalten, befragen, die Aushändigung mitgeführter Ausweispapiere verlangen
+    und, wenn die Identität sonst nicht oder nur unter erheblichen Schwierigkeiten festgestellt
+    werden kann, die Person festhalten und Sachen durchsuchen. Es gelten Verhältnismäßigkeit
+    und Zweckbindung. Die Auswahl der Kontrollierten darf nicht an verbotene Merkmale anknüpfen
+    (Art. 3 Abs. 3 GG; Racial Profiling ist unzulässig). Erkennungsdienstliche Maßnahmen sind
+    eigene Befugnisse mit strengeren Voraussetzungen. Die Befugnisnormen sind landesrechtlich
+    unterschiedlich geregelt; in der Klausur ist die einschlägige Standardmaßnahme zu zitieren
+    und die Sperrwirkung gegenüber der Generalklausel zu beachten.
+  norms:
+  - Art. 3 Abs. 3 GG
+  - Art. 2 Abs. 1 i. V. m. Art. 1 Abs. 1 GG
+  quellen: *id001
+  stand: 2026-10
+- slug: or-pol-gewahrsam
+  type: norm
+  front: Welche Gewahrsamsformen gibt es, und welche verfassungsrechtlichen Grenzen gelten?
+  back: >-
+    Typische Gewahrsamstatbestände sind der Schutzgewahrsam (zum Schutz der Person, etwa bei
+    Hilflosigkeit oder Selbstgefährdung) und der Unterbindungsgewahrsam (zur Verhinderung
+    unmittelbar bevorstehender erheblicher Straftaten oder Ordnungswidrigkeiten); weitere
+    Fälle betreffen Durchsetzung eines Platzverweises und Rückführung Entwichener. Der Gewahrsam
+    ist Freiheitsentziehung im Sinne des Art. 104 Abs. 2 GG: Über Zulässigkeit und Fortdauer
+    hat nur der Richter zu entscheiden (Art. 104 Abs. 2 S. 1 GG); ohne richterliche Anordnung
+    ist unverzüglich eine richterliche Entscheidung herbeizuführen (S. 2), und die Polizei
+    darf aus eigener Machtvollkommenheit niemanden länger als bis zum Ende des Tages nach
+    dem Ergreifen in eigenem Gewahrsam halten (Art. 104 Abs. 2 S. 3 GG). Höchstdauer, Voraussetzungen
+    und Verfahren sind landesrechtlich unterschiedlich; einige Länder haben die Dauer des
+    Unterbindungsgewahrsams ausgedehnt. Der Gewahrsam ist verhältnismäßig, wenn kein milderes
+    Mittel genügt, und endet mit Wegfall des Grundes.
+  norms:
+  - Art. 104 Abs. 2 GG
+  - Art. 2 Abs. 2 S. 2 GG
+  quellen:
+  - Musterentwurf eines einheitlichen Polizeigesetzes (MEPolG) und Polizei-/Ordnungsgesetze
+    der Länder
+  - Eigenformulierung Redaktion
+  - GG, amtliche Fassung
+  stand: 2026-10
+- slug: or-pol-durchsuchung-platzverweis
+  type: norm
+  front: Was gilt für Durchsuchung (Person, Sache, Wohnung) und Platzverweis?
+  back: >-
+    Die Durchsuchung von Personen und Sachen ist nach den Polizeigesetzen unter bestimmten
+    Voraussetzungen zulässig, etwa bei Festnahme, Gewahrsam, Identitätsfeststellung oder Anhaltspunkten
+    für das Mitführen gefährlicher Gegenstände; sie ist Eingriff in Art. 2 Abs. 1 i. V. m.
+    Art. 1 Abs. 1 GG bzw. Art. 13 GG bei Wohnungen. Für Wohnungsdurchsuchungen gelten wegen
+    Art. 13 Abs. 2 GG grundsätzlich ein Richtervorbehalt und Gefahr im Verzug als Ausnahme;
+    Betreten zur Gefahrenabwehr ist nach Art. 13 Abs. 7 GG besonders geregelt. Der Platzverweis
+    ist ein kurzfristiges Verbot des Aufenthalts an einem Ort (Verwaltungsakt, meist mündlich);
+    das Aufenthaltsverbot gilt für längere Zeit und greift in die Freizügigkeit ein (Art.
+    11 GG, Landesrecht). Der Platzverweis ist eine Standardmaßnahme, die an eine Gefahr oder
+    Störung anknüpft. Wird er missachtet, kann er mit Zwangsmitteln oder Gewahrsam durchgesetzt
+    werden. Einzelheiten sind landesrechtlich unterschiedlich.
+  norms:
+  - Art. 13 GG
+  - Art. 11 GG
+  - Art. 2 Abs. 1 GG
+  quellen:
+  - Musterentwurf eines einheitlichen Polizeigesetzes (MEPolG) und Polizei-/Ordnungsgesetze
+    der Länder
+  - Eigenformulierung Redaktion
+  - GG, amtliche Fassung
+  stand: 2026-10
+schemata:
+- slug: or-schema-pol-stoererauswahl-notstand
+  title: Inanspruchnahme eines Verantwortlichen oder Nichtverantwortlichen im Polizeirecht
+  norms:
+  - Art. 20 Abs. 3 GG
+  quellen: *id001
+  steps:
+  - label: 'I. Ermächtigungsgrundlage: Standardmaßnahme vor Generalklausel'
+    hinweis: Landesrecht beachten; Sperrwirkung der Standardmaßnahmen.
+  - label: II. Formelle Rechtmäßigkeit (Zuständigkeit, Verfahren, Form)
+  - label: III. Materielle Rechtmäßigkeit
+    children:
+    - label: 1. Tatbestand der Befugnisnorm (konkrete Gefahr; Anscheinsgefahr ex ante)
+    - label: 2. Richtiger Adressat
+      children:
+      - label: a) Handlungs-, Zustandsverantwortlicher; Zweckveranlasser, Anscheinsstörer
+      - label: b) Auswahl unter mehreren Störern (Effektivität der Gefahrenabwehr)
+        hinweis: Auswahlermessen; Opfergrenze bei Zustandsstörern (BVerfGE 102, 1).
+      - label: c) Nichtstörer nur im polizeilichen Notstand
+    - label: '3. Rechtsfolge: Entschließungs- und Auswahlermessen, Verhältnismäßigkeit'
+  - label: IV. Kosten und Ausgleich (Entschädigung, Kostenersatz)
+faelle:
+- slug: or-fall-pol-nichtstoerer-fahrzeug
+  title: Das angehaltene Auto
+  difficulty: 3
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - Musterentwurf eines einheitlichen Polizeigesetzes (MEPolG) und Polizei-/Ordnungsgesetze
+    der Länder
+  - Eigenformulierung Redaktion
+  facts: Auf einer Landstraße liegt nach einem Alleinunfall der Motorradfahrer X lebensgefährlich
+    verletzt am Straßenrand. Der Rettungswagen ist wegen eines anderen Einsatzes erst in etwa
+    40 Minuten vor Ort; ein Rettungshubschrauber ist nicht verfügbar. Der Streifenbeamte P
+    hat keinen Platz im Streifenwagen für einen Liegendtransport. Er hält das vorbeifahrende
+    Auto des unbeteiligten A an und verlangt, A solle X sofort ins nahegelegene Krankenhaus
+    fahren (zehn Minuten Fahrt). A will wegen eines Termins weiter und weigert sich zunächst,
+    fährt dann aber. Dabei wird der Rücksitz durch Blut verschmutzt, Reinigungskosten 300
+    Euro. Das einschlägige Landesrecht entspricht in diesem Punkt dem Muster der Polizeigesetze
+    (polizeilicher Notstand mit Entschädigungsanspruch).
+  question: War die Inanspruchnahme des A rechtmäßig? Kann A Ersatz der Reinigungskosten verlangen?
+  steps:
+  - prompt: Welche Befugnisnorm ist einschlägig, und ist A Störer?
+    erwartung: Einschlägig ist die Regelung über die Inanspruchnahme von Nichtverantwortlichen
+      (polizeilicher Notstand, landesrechtlich). A ist weder Handlungs- noch Zustandsstörer
+      (Nichtstörer).
+  - prompt: Liegen die Voraussetzungen des polizeilichen Notstands vor?
+    erwartung: 'Ja: (1) gegenwärtige erhebliche Gefahr für Leben und Gesundheit des X; (2)
+      Maßnahmen gegen einen Störer sind nicht möglich (Alleinunfall, kein anderer Verantwortlicher);
+      (3) Polizei und Rettungsdienst können die Gefahr nicht rechtzeitig selbst oder durch
+      Beauftragte abwehren; (4) A wird nicht erheblich gefährdet und keine höherwertige Pflicht
+      verletzt (Termin ist nachrangig). Die Maßnahme ist zeitlich auf den Transport begrenzt
+      und verhältnismäßig.'
+  - prompt: Hat A einen Ersatzanspruch?
+    erwartung: Ja. Der rechtmäßig in Anspruch genommene Nichtstörer hat nach dem Landesrecht
+      Anspruch auf angemessene Entschädigung für den entstandenen Schaden (hier 300 Euro Reinigungskosten);
+      der Ausgleichsanspruch richtet sich gegen den Rechtsträger der Polizei.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Nichtstörer erkannt; Inanspruchnahme nur im polizeilichen Notstand
+      weight: 2.0
+      required: true
+      keywords:
+      - Nichtstörer
+      - polizeilicher Notstand
+      - Notstand
+      - nicht verantwortlich
+      - Inanspruchnahme von Nichtverantwortlichen
+      card_slugs:
+      - or-pol-nichtstoerer
+    - id: p2
+      label: Gegenwärtige erhebliche Gefahr (Leben/Gesundheit) bejaht
+      weight: 2.0
+      required: false
+      keywords:
+      - gegenwärtige erhebliche Gefahr
+      - Gefahr für Leben und Gesundheit
+      - erhebliche Gefahr
+      - Lebensgefahr
+      card_slugs:
+      - or-pol-nichtstoerer
+    - id: p3
+      label: 'Subsidiarität: Störer nicht in Anspruch zu nehmen, Polizei/Rettungsdienst können
+        nicht rechtzeitig selbst abwehren'
+      weight: 3.0
+      required: true
+      keywords:
+      - Maßnahmen gegen Störer nicht möglich
+      - Subsidiarität
+      - nicht rechtzeitig selbst
+      - Rettungsdienst nicht rechtzeitig
+      - kein Störer verfügbar
+      - Störer nicht erreichbar
+      card_slugs:
+      - or-pol-nichtstoerer
+    - id: p4
+      label: 'Zumutbarkeit: keine erhebliche eigene Gefährdung, keine höherwertige Pflicht
+        verletzt; zeitliche Begrenzung'
+      weight: 1.5
+      required: false
+      keywords:
+      - keine erhebliche eigene Gefährdung
+      - höherwertige Pflicht
+      - zumutbar
+      - zeitlich begrenzt
+      - Verhältnismäßigkeit
+      card_slugs:
+      - or-pol-nichtstoerer
+    - id: p5
+      label: Entschädigungsanspruch des Nichtstörers für Reinigungskosten
+      weight: 2.0
+      required: true
+      keywords:
+      - Entschädigung
+      - Entschädigungsanspruch
+      - angemessene Entschädigung
+      - Ausgleich des Schadens
+      - Nichtstörer hat Anspruch
+      card_slugs:
+      - or-pol-kosten-ersatzansprueche
+      - or-pol-nichtstoerer
