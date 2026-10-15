@@ -192,6 +192,8 @@ def test_bundeslaender_liste_und_profil(client):
     assert {t["slug"] for t in profil["landesrecht_themen"]} == {
         "by-polizei-ordnungsrecht",
         "by-landesrecht-allgemein",
+        "by-kommunalrecht",
+        "by-bauordnungsrecht",
     }
     assert profil["landesrecht"]["normenspiegel"]["polizei_generalklausel"].startswith("Art. 11")
     assert client.get("/v1/examen/bundeslaender/xx").status_code == 404
@@ -325,6 +327,8 @@ def test_cockpit_mit_profil_plan_und_gewichtung(auth_client):
     assert {t["slug"] for t in cockpit["landesrecht_deck"]["topics"]} == {
         "nw-polizei-ordnungsrecht",
         "nw-landesrecht-allgemein",
+        "nw-kommunalrecht",
+        "nw-bauordnungsrecht",
     }
     assert cockpit["checkliste"], "Checkliste des Landes wird mitgeliefert"
     assert any(item["jetzt_dran"] for item in cockpit["checkliste"])
