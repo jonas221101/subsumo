@@ -16,9 +16,9 @@ cards:
   front: Welche Verfahrensarten kennt die LBO BW?
   back: >-
     Die LBO BW unterscheidet verfahrensfreie Vorhaben (§ 50 LBO BW mit Anhang), das Kenntnisgabeverfahren
-    (§ 51 LBO BW; Wohngebäude geringer und mittlerer Höhe im Geltungsbereich eines qualifizierten Bebauungsplans),
+    (§ 51 LBO BW; bestimmte Wohnbauvorhaben im Geltungsbereich eines qualifizierten Bebauungsplans),
     das vereinfachte Baugenehmigungsverfahren (§ 52 LBO BW) und das reguläre Baugenehmigungsverfahren.
-    Auch verfahrensfreie Vorhaben müssen dem materiellen Recht genügen (§ 50 Abs. 5 LBO BW); sie sind
+    Auch verfahrensfreie Vorhaben müssen dem materiellen Recht genügen (§ 50 LBO BW); sie sind
     nur von der Pflicht zur Durchführung eines Genehmigungsverfahrens befreit. Im vereinfachten Verfahren
     beschränkt sich die Prüfung der Behörde auf bestimmte Vorschriften, das Bauplanungsrecht und weitere
     öffentlich-rechtliche Vorschriften werden aber geprüft. Die Baugenehmigung ist zu erteilen, wenn dem
@@ -29,7 +29,7 @@ cards:
   - § 51 LBO BW
   - § 52 LBO BW
   - § 58 Abs. 1 LBO BW
-  quellen: &id001
+  quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
@@ -50,7 +50,9 @@ cards:
   - § 49 LBO BW
   - § 50 LBO BW
   - §§ 29 ff. BauGB
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-bau-genehmigung
   type: definition
@@ -66,7 +68,9 @@ cards:
   norms:
   - § 58 LBO BW
   - Art. 14 Abs. 1 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-bau-abstandsflaechen
   type: norm
@@ -83,7 +87,9 @@ cards:
   - § 5 LBO BW
   - § 5 Abs. 7 LBO BW
   - § 56 LBO BW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-bau-nachbarbeteiligung
   type: norm
@@ -91,13 +97,14 @@ cards:
   back: >-
     Die Gemeinde (Baurechtsbehörde) benachrichtigt die Angrenzer vom Bauantrag und gibt ihnen Gelegenheit,
     innerhalb einer Frist Einwendungen vorzubringen (§ 55 LBO BW). Die Baugenehmigung wird dem Angrenzer,
-    der Einwendungen erhoben hat, zugestellt. Hat der Nachbar dem Bauvorhaben auf den Lageplänen zugestimmt,
-    sind seine öffentlich-rechtlichen Einwendungen ausgeschlossen (§ 55 LBO BW). Die Beteiligung ist Grundlage
+    der Einwendungen erhoben hat, zugestellt. Hat der Nachbar dem Bauvorhaben auf den Lageplänen zugestimmt, entfällt seine Benachrichtigung, und seine Zustimmung schließt spätere öffentlich-rechtliche Einwendungen weitgehend aus (§ 55 LBO BW). Die Beteiligung ist Grundlage
     des Nachbarschutzes: Verletzt die Behörde sie, führt das nicht für sich allein zur Aufhebung der Genehmigung;
     entscheidend ist die materielle Verletzung drittschützender Normen.
   norms:
   - § 55 LBO BW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-bau-nachbarschutz
   type: definition
@@ -116,7 +123,9 @@ cards:
   - § 212a Abs. 1 BauGB
   - § 80a VwGO
   - § 15 BauNVO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-bau-einstellung
   type: norm
@@ -134,7 +143,9 @@ cards:
   norms:
   - § 64 LBO BW
   - § 65 LBO BW
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-bau-abbruch
   type: streitstand
@@ -151,7 +162,9 @@ cards:
   norms:
   - § 65 LBO BW
   - Art. 14 Abs. 1 GG
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: bw-bau-aufbau
   type: schema_step
@@ -164,7 +177,9 @@ cards:
   norms:
   - § 42 Abs. 2 VwGO
   - § 113 Abs. 1 S. 1 VwGO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 schemata:
 - slug: bw-schema-bau-nachbarklage
@@ -172,7 +187,9 @@ schemata:
   norms:
   - § 42 Abs. 2 VwGO
   - § 113 Abs. 1 S. 1 VwGO
-  quellen: *id001
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   steps:
   - label: A. Zulässigkeit
     children:
@@ -184,8 +201,9 @@ schemata:
   - label: B. Begründetheit
     children:
     - label: I. Rechtswidrigkeit der Baugenehmigung
-    - label: 1. Verfahren, Zuständigkeit
-    - label: '2. Genehmigungsfähigkeit: Bauplanungsrecht und LBO'
+      children:
+      - label: 1. Verfahren, Zuständigkeit
+      - label: '2. Genehmigungsfähigkeit: Bauplanungsrecht und LBO'
     - label: II. Rechtsverletzung des Nachbarn
       hinweis: Nur drittschützende Normen zählen (Schutznormtheorie).
       children:
@@ -206,8 +224,7 @@ faelle:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   facts: >-
     B erhält im vereinfachten Baugenehmigungsverfahren eine Baugenehmigung für den Anbau eines Wohnhauses
-    mit einer Wandhöhe von 9 m, dessen Außenwand 2,5 m von der Grenze zum Grundstück des Nachbarn N entfernt
-    liegt. Eine Abweichung wurde nicht beantragt oder erteilt. Der Bebauungsplan setzt allgemeines Wohngebiet
+    mit einer Wandhöhe von 9 m, dessen Außenwand 2,5 m von der Grenze zum Grundstück des Nachbarn N entfernt liegt. Die Baurechtsbehörde hat in der Genehmigung die Einhaltung der Abstandsflächen ausdrücklich bejaht; eine Abweichung wurde nicht beantragt oder erteilt. Der Bebauungsplan setzt allgemeines Wohngebiet
     fest; das Vorhaben entspricht den planungsrechtlichen Festsetzungen. N wurde beteiligt, erhob Einwendungen
     und legte fristgerecht Widerspruch ein, der zurückgewiesen wurde. Er erhebt Anfechtungsklage zum Verwaltungsgericht.
     Es sind die Vorschriften der LBO BW anzuwenden; die Tiefe der Abstandsfläche beträgt in der Regel
@@ -221,13 +238,10 @@ faelle:
       sind. Vorverfahren und Frist wurden gewahrt.
   - prompt: Ist die Baugenehmigung rechtswidrig?
     erwartung: >-
-      Ja. Erforderlich wäre eine Abstandsfläche von 0,4 x 9 m = 3,6 m; vorhanden sind nur 2,5 m. Das Vorhaben
-      verstößt gegen § 5 LBO BW und ist ohne Abweichung nicht genehmigungsfähig. Auch im vereinfachten
-      Verfahren werden die Abstandsflächen geprüft, soweit nicht abweichend zugelassen.
+      Ja. Erforderlich wäre eine Abstandsfläche von 0,4 x 9 m = 3,6 m; vorhanden sind nur 2,5 m. Das Vorhaben verstößt gegen § 5 LBO BW und ist ohne Abweichung nicht genehmigungsfähig; die Baugenehmigung ist nach § 58 Abs. 1 LBO BW nur zu erteilen, wenn keine öffentlich-rechtlichen Vorschriften entgegenstehen.
   - prompt: Wird N in seinen Rechten verletzt?
     erwartung: >-
-      Ja. Die Abstandsflächenvorschriften schützen den Nachbarn (Belichtung, Belüftung, Wohnfrieden) und
-      sind nachbarschützend.
+      Ja. Die Abstandsflächenvorschriften schützen den Nachbarn (Belichtung, Belüftung, Wohnfrieden) und sind nachbarschützend. Die Baugenehmigung ist damit rechtswidrig und verletzt N in seinen Rechten (Rechtsverletzung, § 113 Abs. 1 S. 1 VwGO); die Klage ist begründet, die Baugenehmigung wird aufgehoben.
   - prompt: Wie ist der Eilrechtsschutz?
     erwartung: >-
       Widerspruch und Klage haben nach § 212a Abs. 1 BauGB keine aufschiebende Wirkung; N muss nach §§

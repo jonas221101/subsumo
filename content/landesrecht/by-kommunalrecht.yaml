@@ -40,8 +40,7 @@ cards:
     Vorsitzender des Gemeinderats und eigenständiges Organ. Der Gemeinderat kann Aufgaben auf beschließende
     Ausschüsse übertragen; Ausnahmen gelten für Angelegenheiten, die ihm vorbehalten sind. Die Zuständigkeitsverteilung
     ist Teil der formellen Rechtmäßigkeit von Verwaltungsentscheidungen und Satzungen: Handelt das unzuständige
-    Organ, ist die Entscheidung formell rechtswidrig, teils im Außenverhältnis bei Vertretungsmacht auch
-    unwirksam.
+    Organ, ist die Entscheidung formell rechtswidrig; die Vertretungsmacht des ersten Bürgermeisters nach außen (Art. 38 BayGO) bleibt davon grundsätzlich unberührt.
   norms:
   - Art. 29 BayGO
   - Art. 37 BayGO
@@ -76,9 +75,7 @@ cards:
     dem Vertreter zu unterschreiben; ausgenommen sind Geschäfte der laufenden Verwaltung, die keine erheblichen
     Verpflichtungen begründen. Eine Verletzung der Vorschrift macht eine Erklärung nach h. M. nicht bloß
     rechtswidrig, sondern mangels Vertretungsmacht schwebend unwirksam, was für zivilrechtliche Ansprüche
-    gegen die Gemeinde von Bedeutung ist. Die Vertretungsbefugnis des Bürgermeisters geht damit nicht
-    weiter als die gesetzliche Form und die Zuständigkeit im Innenverhältnis; das schützt die Gemeinde
-    als Rechtsträger vor eigenmächtigen Verpflichtungen.
+    gegen die Gemeinde von Bedeutung ist. Die Formvorschrift schützt die Gemeinde als Rechtsträger vor eigenmächtigen Verpflichtungen; eine bloße Überschreitung der Zuständigkeit im Innenverhältnis lässt die Vertretungsmacht dagegen unberührt.
   norms:
   - Art. 38 BayGO
   quellen:
@@ -95,11 +92,10 @@ cards:
     er sich aus dem Beschluss selbst und nicht erst aus weiteren Entscheidungen ergibt; die Betroffenheit
     als Teil der Allgemeinheit (Gruppeninteresse) schließt nicht aus. Hat ein ausgeschlossenes Mitglied
     mitgewirkt, ist der Beschluss rechtswidrig, wenn die Mitwirkung für das Abstimmungsergebnis entscheidend
-    war (Art. 49 Abs. 3 BayGO). Bei Satzungen und Bebauungsplänen wird dies häufig geprüft, auch im Hinblick
+    war (Art. 49 BayGO). Bei Satzungen und Bebauungsplänen wird dies häufig geprüft, auch im Hinblick
     auf Heilung und Planerhaltung.
   norms:
   - Art. 49 BayGO
-  - Art. 49 Abs. 3 BayGO
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -133,8 +129,7 @@ cards:
     eine öffentliche Einrichtung (etwa Wasserversorgung, Abwasserbeseitigung, Fernwärme) und deren Benutzung
     vorschreiben, wenn ein dringendes öffentliches Bedürfnis besteht. Der Zwang greift in Art. 14 GG und
     Art. 2 Abs. 1 GG ein und ist daher an der Verhältnismäßigkeit zu messen. Für Gründe des Gemeinwohls
-    reicht zum Beispiel der Schutz der Gesundheit, der Einwohner oder der Umwelt; wirtschaftliche Interessen
-    der Gemeinde allein genügen nicht. Ausnahmen und Befreiungen sind zu regeln, wenn der Zwang im Einzelfall
+    reicht zum Beispiel der Schutz der Gesundheit, der Einwohner oder der Umwelt; rein fiskalische Interessen der Gemeinde genügen nach überwiegender Auffassung nicht. Ausnahmen und Befreiungen sind zu regeln, wenn der Zwang im Einzelfall
     unzumutbar ist. Kontrollfragen sind Satzungsermächtigung, Bekanntmachung, dringendes öffentliches
     Bedürfnis und Verhältnismäßigkeit.
   norms:
@@ -288,8 +283,7 @@ faelle:
       aus dem Stadtgebiet gewidmet; W hat ihren Sitz in X.
   - prompt: Darf die Stadt die Zulassung aus politischer Missbilligung versagen?
     erwartung: >-
-      Nein: Die politische Ausrichtung ist kein sachlicher Versagungsgrund; die Ablehnung verstößt gegen
-      den Gleichbehandlungsgrundsatz. Kapazitätsgründe liegen nicht vor, die Halle ist frei.
+      Nein: Politische Missbilligung ist unzulässig und trägt die Ablehnung nicht; der Gleichbehandlungsgrundsatz verlangt Neutralität gegenüber den Wählergruppen. Sachliche Gründe wie die Kapazität fehlen, die Halle ist frei.
   - prompt: Wie kann W den Anspruch kurzfristig durchsetzen?
     erwartung: >-
       Mit einem Antrag auf einstweilige Anordnung nach § 123 Abs. 1 S. 2 VwGO (Regelungsanordnung); Anordnungsanspruch
@@ -321,15 +315,18 @@ faelle:
       - Art. 3 Abs. 1 GG
       - Selbstbindung der Verwaltung
       - Zulassungspraxis
-      - Parteienprivileg
+      - Chancengleichheit
       card_slugs:
       - by-kom-einrichtungen
     - id: p3
-      label: Keine sachlichen Versagungsgründe, politische Missbilligung unzulässig
+      label: Sachliche Versagungsgründe verneint, politische Missbilligung unzulässig
       weight: 2.0
       required: false
       keywords:
       - politische Missbilligung
+      - politische Ausrichtung
+      - sachlicher Versagungsgrund
+      - Kapazitätsgründe
       - sachlicher Grund
       - Kapazität
       - Versagungsgrund

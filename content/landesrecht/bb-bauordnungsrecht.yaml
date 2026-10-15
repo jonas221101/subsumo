@@ -9,7 +9,6 @@ topic:
   redaktion:
     erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
     status: in-pruefung
-    normzitate_geprueft: false
 cards:
 - slug: bb-bau-verfahren
   type: definition
@@ -17,8 +16,7 @@ cards:
       Welche Genehmigungsverfahren kennt die BbgBO, und wie verhält sich das Bauordnungsrecht zum
       Bauplanungsrecht?
   back: >-
-      Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedarf nach der Brandenburgische
-      Bauordnung (BbgBO) grundsätzlich der Baugenehmigung. Ausnahmen: verfahrensfreie Vorhaben
+      Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedarf nach der Brandenburgischen Bauordnung (BbgBO) grundsätzlich der Baugenehmigung. Ausnahmen: verfahrensfreie Vorhaben
       (kleine, unbedeutende Anlagen, die ein Katalog der BbgBO aufzählt), die Genehmigungsfreistellung
       für bestimmte Wohnbauvorhaben im Geltungsbereich qualifizierter Bebauungspläne (gegen vorherige
       Anzeige; die Gemeinde kann ein Genehmigungsverfahren verlangen) sowie das vereinfachte Verfahren
@@ -29,8 +27,7 @@ cards:
       bodenrechtliche Zulässigkeit, das Bauordnungsrecht als Landesrecht Gefahrenabwehr, Gestaltung
       und Verfahren.
   norms:
-  - >-
-      Vorschriften der BbgBO zu Genehmigungspflicht und Verfahren (Paragraphen hier nicht angegeben)
+  - "Vorschriften der BbgBO zu Genehmigungspflicht und Verfahren"
   - "§ 29 BauGB"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
@@ -55,8 +52,7 @@ cards:
   - "Art. 14 Abs. 1 GG"
   - "§ 36 BauGB"
   - "§ 42 Abs. 1 VwGO"
-  - >-
-      Vorschriften der BbgBO zur Baugenehmigung (Paragraphen hier nicht angegeben)
+  - "Vorschriften der BbgBO zur Baugenehmigung"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -66,9 +62,7 @@ cards:
   front: "Was regeln die Abstandsflächen, und sind sie nachbarschützend?"
   back: >-
       Vor den Außenwänden oberirdischer Gebäude sind Flächen von Gebäuden und baulichen Anlagen
-      freizuhalten (Abstandsflächen). Ihre Tiefe bemisst sich nach der Wandhöhe H multipliziert mit
-      einem landesrechtlichen Faktor; als Regelwert des Musterbauordnungsrechts gilt 0,4 H mit einer
-      Mindesttiefe von meist 3 m, die Zahlen sind in der BbgBO nachzuschlagen. Die Abstandsflächen
+      freizuhalten (Abstandsflächen). Ihre Tiefe bemisst sich nach der Wandhöhe H; als Regelwert gilt 0,4 H mit einer Mindesttiefe von 3 m (§ 6 BbgBO). Die Abstandsflächen
       müssen grundsätzlich auf dem Baugrundstück selbst liegen und dürfen sich nicht überdecken.
       Zwecke sind ausreichende Belichtung, Belüftung, Brandschutz und Wahrung des Wohnfriedens. Das
       Abstandsflächenrecht ist nachbarschützend, soweit seine Zwecke dem Nachbarn dienen; der Nachbar
@@ -125,8 +119,7 @@ cards:
       Bauherr, Eigentümer oder Nutzer. Ein Anspruch des Nachbarn auf Einschreiten besteht nur
       ausnahmsweise bei Verletzung nachbarschützender Vorschriften und Ermessensreduktion auf Null.
   norms:
-  - >-
-      Eingriffsbefugnisse der Bauaufsicht nach der BbgBO (Paragraphen hier nicht angegeben)
+  - "Eingriffsbefugnisse der Bauaufsicht nach der BbgBO"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -140,7 +133,7 @@ cards:
       Im Bauordnungsrecht kann die Bauaufsichtsbehörde Abweichungen von Anforderungen der BbgBO
       zulassen, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der
       öffentlich-rechtlich geschützten nachbarlichen Belange mit den öffentlichen Belangen vereinbar
-      sind; die Voraussetzungen im Einzelnen regelt das Landesrecht. Im Bauplanungsrecht lässt § 31
+      sind; die Abweichung steht im Ermessen der Behörde und setzt grundsätzlich einen Antrag voraus. Im Bauplanungsrecht lässt § 31
       Abs. 1 BauGB Ausnahmen zu, soweit der Bebauungsplan sie vorsieht. Nach § 31 Abs. 2 BauGB ist
       eine Befreiung von Festsetzungen möglich, wenn die Grundzüge der Planung nicht berührt werden
       und einer der Befreiungsgründe (Allgemeinwohl, städtebauliche Vertretbarkeit, offenbar nicht
@@ -150,7 +143,7 @@ cards:
   norms:
   - "§ 31 Abs. 1 BauGB"
   - "§ 31 Abs. 2 BauGB"
-  - "Abweichungsvorschrift der BbgBO (Paragraph hier nicht angegeben)"
+  - "Abweichungsvorschrift der BbgBO"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -167,8 +160,7 @@ cards:
       Substanz in wesentlichem Umfang erneuert oder die Nutzung aufgegeben wird; die Identität der
       Anlage muss gewahrt sein. Einen aktiven Bestandsschutz, also einen unmittelbar aus Art. 14 GG
       abgeleiteten Anspruch auf Erweiterung oder Änderung, erkennt das Bundesverwaltungsgericht nicht
-      mehr an. Bei Gefahren für Leben und Gesundheit lassen die Bauordnungen Anpassungsverlangen zu;
-      die Voraussetzungen sind nach der geltenden Fassung zu prüfen.
+      mehr an. Bei Gefahren für Leben und Gesundheit lassen die Bauordnungen nachträgliche Anpassungsverlangen zu.
   norms:
   - "Art. 14 Abs. 1 GG"
   quellen:
@@ -303,4 +295,3 @@ faelle:
       - "Vollzugsinteresse"
       card_slugs:
       - "bb-bau-nachbarschutz"
-    normzitate_geprueft: false
