@@ -346,8 +346,9 @@ faelle:
       - Art. 8 Abs. 1 GG
       keywords:
       - Gegendemonstranten
-      - polizeilicher Notstand
+      - Notstand
       - Nichtstörer
+      - Verhaltensstörer
       - Schutz der Versammlung
       - Maßnahmen gegen die Störer
       - Brokdorf
@@ -374,7 +375,7 @@ faelle:
     - id: p5
       label: 'Ergebnis: Antrag begründet, aufschiebende Wirkung wird wiederhergestellt'
       weight: 1.0
-      required: false
+      required: true
       keywords:
       - Antrag ist begründet
       - Antrag begründet

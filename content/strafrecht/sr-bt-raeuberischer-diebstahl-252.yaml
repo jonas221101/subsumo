@@ -350,6 +350,7 @@ faelle:
       - räumlich-zeitlicher Zusammenhang
       - unmittelbare Nähe
       - Verfolgung
+      - räumlich-zeitlichen Zusammenhang
       card_slugs:
       - sr-rd-252-vortat-betreffen
       - sr-rd-252-betreffen-streit
@@ -378,6 +379,8 @@ faelle:
       - Beute behalten
       - Besitz des gestohlenen Gutes
       - Absicht, die Beute zu behalten
+      - Smartphone behalten
+      - das gestohlene Gut behalten
       card_slugs:
       - sr-rd-252-besitzerhaltung
     - id: p5
@@ -406,5 +409,7 @@ faelle:
       - räuberischer Diebstahl nach § 252
       - strafbar nach § 252
       - räuberischen Diebstahls gemäß § 252
+      - wegen räuberischen Diebstahls strafbar
+      - räuberischen Diebstahls nach § 252
       card_slugs:
       - sr-rd-252-tatbestand

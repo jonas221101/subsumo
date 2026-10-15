@@ -426,7 +426,9 @@ faelle:
       keywords:
       - Bereicherungsabsicht
       - rechtswidriger Vermögensvorteil
+      - rechtswidrigen Vermögensvorteil
       - Stoffgleichheit
+      - stoffgleich
       card_slugs:
       - sr-cb-grundtatbestand
     - id: p5
@@ -453,5 +455,6 @@ faelle:
       - strafbar nach § 263a
       - Computerbetrug gemäß § 263a
       - Computerbetrug strafbar
+      - nach § 263a Abs. 1 StGB strafbar
       card_slugs:
       - sr-cb-grundtatbestand

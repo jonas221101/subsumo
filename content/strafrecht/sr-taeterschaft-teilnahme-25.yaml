@@ -245,6 +245,8 @@ faelle:
       - keine eigene Wegnahme
       - Alleintäterschaft scheidet aus
       - keine unmittelbare Täterschaft
+      - Alleintäterschaft
+      - nicht selbst weggenommen
       card_slugs:
       - sr-taeterschaft-unmittelbar
     - id: p3
@@ -257,6 +259,8 @@ faelle:
       - gemeinsamer Tatentschluss
       - gemeinsamer Tatplan
       - Tatplan
+      - gemeinsam geplant
+      - einvernehmlich verteilt
       card_slugs:
       - sr-taeterschaft-mittaeterschaft
     - id: p4
@@ -310,3 +314,5 @@ faelle:
       - Zurechnung der Wegnahme
       - wechselseitige Zurechnung
       - Beihilfe gemäß § 27
+      - B ist Mittäter
+      - zugerechnet

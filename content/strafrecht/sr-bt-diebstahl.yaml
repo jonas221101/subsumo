@@ -240,6 +240,9 @@ faelle:
       - Enteignungskomponente
       - Aneignungsabsicht
       - Enteignungsvorsatz
+      - Aneignung
+      - Enteignung
+      - einverleiben
       card_slugs:
       - sr-diebstahl-zueignungsabsicht
     - id: p5
@@ -254,6 +257,7 @@ faelle:
       - fälligen Anspruch
       - einredefreien Anspruch
       - rechtswidrige Zueignung
+      - fälligen und einredefreien Anspruch
       card_slugs:
       - sr-diebstahl-rechtswidrigkeit-zueignung
     - id: p6

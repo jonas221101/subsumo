@@ -159,13 +159,28 @@ _ERGEBNIS_PATTERNS = [
     r"\bfolglich\b",
     r"\bdemnach\b",
     r"\bim\s+ergebnis\b",
-    r"\bergebnis:\b",
+    r"\bergebnis\s*:",
+    # "Damit hat K keinen Anspruch ...", "IV. Damit ist die Klage unbegruendet." -
+    # am Satzanfang; "damit" als Konjunktion ("damit der Vertrag ...") bleibt aussen vor.
+    r"^\W*(?:[ivx]+\.\s*|\d+\.\s*)?damit\s+(?:\w+\s+){0,3}"
+    r"(?:hat|haben|ist|sind|steht|besteht|liegt|bleibt|kann|muss|wird)\b",
+    # Ausformuliertes Ergebnis ohne Signalwort (OeR/SR); Definitionen ("..., wenn")
+    # bleiben aussen vor.
+    r"\b(?:ist|sind|war|bleibt)\b[^.;]{0,80}\b(?:rechtswidrig|rechtmäßig|unwirksam|nichtig|"
+    r"verfassungswidrig|verfassungsgemäß|unbegründet|unzulässig)\b"
+    r"(?![^.]*\b(?:wenn|sofern|soweit|falls)\b)",
+    r"\b(?:ist|sind)\s+(?:\w+\s+){0,2}(?:strafbar|begründet)\b(?![^.]*\b(?:wenn|sofern|soweit|falls)\b)",
+    r"\bhat\s+(?:\w+\s+){0,2}erfolg\b(?![^.]*\b(?:wenn|sofern|soweit|falls)\b)",
+    r"\b(?:kann|darf|muss|hat|ist)\s+(?:\w+\s+)?(?:deshalb|daher|folglich)\b",
+    r"\bmacht(?:e|en)?\s+sich\b[^.]{0,80}\bstrafbar\b",
+    r"\bstrafbar\s+gemacht\b",
     r"\bdamit\s+(ist|steht|besteht|liegt)\b",
     r"\bist\s+(daher|somit|folglich)\s+zu\s+(bejahen|verneinen)\b",
     r"\bder\s+anspruch\s+(besteht|ist\s+begründet)\b",
     r"\bhat\s+sich\b.*\bstrafbar\s+gemacht\b",
     r"\bzusammenfassend\b",
-    r"\b(deshalb|daher|also)\b[^.]{0,60}\b(liegt|ist|sind|besteht|bestand|scheidet|entfällt)\b",
+    r"\b(deshalb|daher|also)\b[^.]{0,60}\b(liegt|ist|sind|besteht|bestand|scheidet|entfällt|"
+    r"kann|hat|haben|steht|muss|darf)\b",
     r"\bsomit\w*\b",
     r"\bmithin\w*\b",
     r"\bfolglich\w*\b",
@@ -174,28 +189,38 @@ _ERGEBNIS_PATTERNS = [
 # Urteilsstil: das Ergebnis steht vorn, die Begruendung folgt mit "da"/"weil".
 _URTEILSSTIL_OPENERS = re.compile(r"^\s*(Da|Weil|Nachdem|Aufgrund|Infolge)\s+", re.UNICODE)
 _URTEILSSTIL_INLINE = re.compile(
-    r"\b(ist|hat|liegt\s+vor|besteht|greift|entfällt)\b[^.]{0,80},\s*(da|weil)\s+",
+    r"\b(ist|hat|liegt\s+vor|besteht|greift|entfällt)\b[^.,]{0,70},\s*(da|weil)\s+",
     re.IGNORECASE,
 )
 
+# Gesetzeskuerzel hinter einer Norm: mindestens zwei Grossbuchstaben ("BGB", "GO", "BauO",
+# "PolG"), optional mit Laenderkuerzel ("GO SH", "BauO NRW", "PolG BW"); reine roemische
+# Ziffern ("II") sind Absaetze, kein Gesetz.
+_LAENDER = r"(?:SH|NRW|BW|BY|BE|BB|HB|HH|HE|MV|NI|RP|SL|SN|ST|TH|LSA|Bay|Bbg)"
+_GESETZ_WORT = (
+    r"(?![IVX]+\b)[A-ZÄÖÜ][A-Za-zÄÖÜäöü]*[A-ZÄÖÜ][A-Za-zÄÖÜäöü]*(?:\s+" + _LAENDER + r"\b)?"
+)
+_GESETZ_IN_NORM = re.compile(r"\s(?:" + _GESETZ_WORT + r")$")
+
 _NORM_RE = re.compile(
-    r"§§?\s*\d+[a-z]?"                       # Paragraph
+    r"§§?\s*\d+(?:\s?[a-z](?![A-Za-zÄÖÜäöü]))?"                       # Paragraph
     r"(?:\s*(?:Abs\.|Absatz)?\s*[IVX]+|\s*Abs\.\s*\d+)?"  # Absatz (roemisch/arabisch)
     r"(?:\s*(?:S\.|Satz)\s*\d+)?"
     r"(?:\s*(?:Nr\.|Alt\.|Var\.)\s*\d+)?"
-    r"(?:\s+[A-ZÄÖÜ][A-Za-zÄÖÜäöü]{1,9}(?:G|O|B|GB|VO|StGB|GG))?"
+    r"(?:\s+" + _GESETZ_WORT + r")?"
     r"|"
     # Verfassungs-/Unionsrecht: "Art. 5 Abs. 3 GG", "Art. 12 I GG", "Art. 5 I 1 GG"
     r"\bArt\.?\s*\d+[a-z]?"
     r"(?:\s*(?:Abs\.|Absatz)\s*\d+|\s+[IVX]+\b)?"
     r"(?:\s*(?:S\.|Satz)\s*\d+|\s+\d\b)?"
     r"(?:\s*(?:Nr\.|Alt\.|Var\.)\s*\d+[a-z]?)?"
-    r"(?:\s+(?:GG|EMRK|GRCh|EUV|AEUV|WRV)\b)?"
+    r"(?:\s+(?:GG|EMRK|GRCh|EUV|AEUV|WRV|" + _GESETZ_WORT + r")\b)?"
 )
 _GESETZ_RE = re.compile(
     r"\b(BGB|StGB|GG|StPO|ZPO|VwGO|VwVfG|HGB|GmbHG|AktG|ArbGG|BauGB|"
     r"OWiG|UWG|MarkenG|UrhG|PatG|SGB|AO|EStG|GewO|BImSchG|POG|PolG|"
-    r"StVO|StVG|VVG|WEG|InsO|GVG|EGBGB|AEUV|EUV|GRCh|EMRK)\b"
+    r"StVO|StVG|VVG|WEG|InsO|GVG|EGBGB|AEUV|EUV|GRCh|EMRK|GO|BauO|LBO|BayBO|PAG|ASOG|SOG|"
+    r"LKrO|KrO|HGO|NBauO|HBauO|BbgBO|BauOBln|SächsBO|ThürBO|BauO|LVwG|LVwVfG)\b"
 )
 
 
@@ -236,6 +261,8 @@ def norm_parts(norm: str) -> tuple[str, str, str, str] | None:
     ``"Art. 12 I GG"`` und ``"Art. 12 Abs. 1 GG"`` ergeben dasselbe Tupel.
     Nicht zerlegbare Zitate liefern ``None``.
     """
+    # "§ 311 b" und "§ 311b" sind dieselbe Norm.
+    norm = re.sub(r"(\d)\s([a-z])(?![A-Za-zÄÖÜäöü])", r"\1\2", norm)
     m = _NORM_PARTS_RE.search(norm)
     if not m:
         return None
@@ -412,8 +439,47 @@ def _collapse_findings(findings: list[Finding]) -> list[Finding]:
     return result
 
 
-def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenReport:
-    """Analysiert ein Gutachten und liefert Score plus konkrete Befunde."""
+_BEISPIELE = {
+    "zivilrecht": {
+        "obersatz": "A könnte gegen B einen Anspruch auf ... aus § ... haben.",
+        "zwischen": "Mithin liegt ein wirksamer Vertrag vor.",
+        "ergebnis": "Mithin hat A gegen B einen Anspruch aus § ... bzw. keinen Anspruch.",
+        "norm": "'§ 433 Abs. 2 BGB'",
+    },
+    "strafrecht": {
+        "obersatz": "A könnte sich wegen ... nach § ... StGB strafbar gemacht haben.",
+        "zwischen": "Mithin ist der Tatbestand des § ... StGB erfüllt.",
+        "ergebnis": "A hat sich somit wegen ... nach § ... StGB strafbar gemacht "
+        "(bzw. nicht strafbar gemacht).",
+        "norm": "'§ 223 Abs. 1 StGB'",
+    },
+    "oeffentliches-recht": {
+        "obersatz": "Die Klage könnte zulässig und begründet sein. / "
+        "Die Maßnahme könnte rechtswidrig sein.",
+        "zwischen": "Mithin ist die Klage zulässig. / Mithin liegt ein Eingriff in den "
+        "Schutzbereich vor.",
+        "ergebnis": "Die Maßnahme ist mithin rechtmäßig bzw. rechtswidrig; die Klage "
+        "hat (keinen) Erfolg.",
+        "norm": "'Art. 5 Abs. 1 S. 1 GG', '§ 80 Abs. 5 VwGO' oder '§ 22 GO SH'",
+    },
+}
+_BEISPIELE_NEUTRAL = {
+    "obersatz": "Es könnte ... vorliegen (Fragestellung mit Norm).",
+    "zwischen": "Mithin ist das Merkmal erfüllt (bzw. nicht erfüllt).",
+    "ergebnis": "Mithin ist ... (Antwort auf die Fallfrage).",
+    "norm": "'§ 433 Abs. 2 BGB', '§ 223 Abs. 1 StGB' oder 'Art. 5 Abs. 1 S. 1 GG'",
+}
+
+
+def analyze(
+    text: str, *, expected_norms: list[str] | None = None, area: str | None = None
+) -> GutachtenReport:
+    """Analysiert ein Gutachten und liefert Score plus konkrete Befunde.
+
+    ``area`` (zivilrecht | strafrecht | oeffentliches-recht) waehlt passende
+    Formulierungsbeispiele in den Hinweisen; ohne Angabe gelten neutrale.
+    """
+    bsp = _BEISPIELE.get(area or "", _BEISPIELE_NEUTRAL)
     sentences = split_sentences(text)
     steps = [classify_sentence(s) for s in sentences]
     words = len(re.findall(r"\b[\wÄÖÜäöüß]+\b", text))
@@ -491,22 +557,12 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
 
     # Was jetzt noch offen ist, wurde tatsaechlich nie beantwortet.
     schwer = leicht = 0
+    unabgeschlossen: list[dict] = []
     for block in stack:
         hatte_substanz = block["subsumed"] or block["defined"]
         if hatte_substanz:
             leicht += 1
-            findings.append(
-                Finding(
-                    Severity.HINWEIS,
-                    "offener_obersatz",
-                    "Dieser Prüfungspunkt wird bearbeitet, aber nicht ausdrücklich "
-                    "abgeschlossen.",
-                    "Formuliere das Zwischenergebnis ausdrücklich "
-                    "('Mithin liegt ein Angebot vor.'). Korrektoren suchen danach.",
-                    sentence_index=block["index"],
-                    excerpt=block["text"][:160],
-                )
-            )
+            unabgeschlossen.append(block)
         else:
             schwer += 1
             findings.append(
@@ -521,8 +577,24 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
                 )
             )
 
+    if unabgeschlossen:
+        erster = unabgeschlossen[0]
+        # Gleichartige Hinweise werden gebuendelt, nicht je Prüfungspunkt wiederholt.
+        mehrere = f" (×{len(unabgeschlossen)})" if len(unabgeschlossen) > 1 else ""
+        findings.append(
+            Finding(
+                Severity.HINWEIS,
+                "offener_obersatz",
+                "Dieser Prüfungspunkt wird bearbeitet, aber nicht ausdrücklich "
+                f"abgeschlossen{mehrere}.",
+                "Formuliere das Zwischenergebnis ausdrücklich "
+                f"(z. B. '{bsp['zwischen']}'). Korrektoren suchen danach.",
+                sentence_index=erster["index"],
+                excerpt=erster["text"][:160],
+            )
+        )
     penalties["offener_obersatz"] = min(
-        schwer * 12 + leicht * 5, _MAX_PENALTY["offener_obersatz"]
+        schwer * 12 + leicht * 4, _MAX_PENALTY["offener_obersatz"]
     )
     penalties["sprung"] = min(jumps * 10, _MAX_PENALTY["sprung"])
     unclosed = len(stack)
@@ -546,7 +618,7 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
                     excerpt=sentence[:160],
                 )
             )
-    penalties["urteilsstil"] = min(urteilsstil * 8, _MAX_PENALTY["urteilsstil"])
+    penalties["urteilsstil"] = min(urteilsstil * 10, _MAX_PENALTY["urteilsstil"])
 
     # --- Grundbausteine ------------------------------------------------------ #
     score = 100
@@ -557,7 +629,7 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
                 Severity.FEHLER,
                 "kein_obersatz",
                 "Es gibt keinen erkennbaren Obersatz.",
-                "Beginne mit: 'A könnte gegen B einen Anspruch auf ... aus § ... haben.'",
+                f"Beginne mit: '{bsp['obersatz']}'",
             )
         )
     if counts[Step.DEFINITION.value] == 0:
@@ -589,7 +661,7 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
                 Severity.FEHLER,
                 "kein_ergebnis",
                 "Es fehlt ein abschließendes Ergebnis.",
-                "Schließe mit 'Mithin hat A gegen B einen Anspruch aus § ...'.",
+                f"Schließe mit z. B.: '{bsp['ergebnis']}'",
             )
         )
 
@@ -605,10 +677,10 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
                 "keine_norm",
                 "Es wird keine Norm zitiert.",
                 "Jeder Obersatz nennt die Norm mit Absatz, Satz und Alternative, "
-                "z. B. '§ 433 Abs. 2 BGB', '§ 223 Abs. 1 StGB' oder 'Art. 5 Abs. 1 S. 1 GG'.",
+                f"z. B. {bsp['norm']}.",
             )
         )
-    elif not _GESETZ_RE.search(text):
+    elif not _GESETZ_RE.search(text) and not any(_GESETZ_IN_NORM.search(n) for n in norms):
         score -= 5
         findings.append(
             Finding(

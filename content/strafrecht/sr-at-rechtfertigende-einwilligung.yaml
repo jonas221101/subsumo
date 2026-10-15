@@ -356,6 +356,8 @@ faelle:
       - Kenntnis der Einwilligung
       - subjektives Rechtfertigungselement
       - in Kenntnis der Einwilligung
+      - kannte die Verabredung
+      - handelte innerhalb ihres Rahmens
       card_slugs:
       - sr-einwilligung-subjektives-element
     - id: p6
@@ -370,6 +372,10 @@ faelle:
       - Einwilligung widerrufen
       - Einwilligung wurde widerrufen
       - nicht von der Einwilligung gedeckt
+      - Einwilligung wirksam widerrufen
+      - außerhalb der Einwilligung
+      - wirksam widerrufen
+      - Der Tritt liegt
       card_slugs:
       - sr-einwilligung-subjektives-element
       - sr-einwilligung-voraussetzungen-ueberblick
