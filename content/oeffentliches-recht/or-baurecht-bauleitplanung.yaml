@@ -37,8 +37,10 @@ cards:
     Der Flächennutzungsplan ist der vorbereitende Bauleitplan, § 1 Abs. 2 BauGB. Er stellt für das gesamte
     Gemeindegebiet die sich aus der beabsichtigten städtebaulichen Entwicklung ergebende Art der Bodennutzung
     in den Grundzügen dar, § 5 Abs. 1 BauGB. Er ist keine Rechtsnorm, entfaltet gegenüber dem Bürger keine
-    unmittelbare Rechtswirkung und kann daher nicht Gegenstand einer Normenkontrolle nach § 47 VwGO sein; bindend
-    wirkt er nur für die Gemeinde (Entwicklungsgebot) und im Rahmen des § 35 Abs. 3 BauGB. Der Bebauungsplan ist der
+    unmittelbare Rechtswirkung und kann daher grundsätzlich nicht Gegenstand einer Normenkontrolle nach § 47 VwGO
+    sein; bindend wirkt er nur für die Gemeinde (Entwicklungsgebot) und im Rahmen des § 35 Abs. 3 BauGB. Eine
+    Ausnahme macht die Rechtsprechung für Darstellungen mit Ausschlusswirkung nach § 35 Abs. 3 S. 3 BauGB
+    (Konzentrationsflächen), gegen die die Normenkontrolle entsprechend § 47 Abs. 1 Nr. 1 VwGO eröffnet ist. Der Bebauungsplan ist der
     verbindliche Bauleitplan, § 1 Abs. 2 BauGB. Er enthält die rechtsverbindlichen Festsetzungen für die städtebauliche
     Ordnung nach § 9 BauGB und wird als Satzung beschlossen, § 10 Abs. 1 BauGB. Der Bebauungsplan ist aus dem
     Flächennutzungsplan zu entwickeln, § 8 Abs. 2 BauGB.
@@ -115,8 +117,8 @@ cards:
   type: rechtsprechung
   front: Welche Abwägungsfehler unterscheidet die Abwägungsfehlerlehre des Bundesverwaltungsgerichts?
   back: >-
-    Das Bundesverwaltungsgericht hat das Abwägungsgebot in der Entscheidung BVerwGE 34, 301 konkretisiert und
-    vier Fehlerformen unterschieden, die auch bei der Prüfung des Bebauungsplans heranzuziehen sind. Ein
+    Das Bundesverwaltungsgericht hat das Abwägungsgebot in der Entscheidung BVerwGE 34, 301 konkretisiert; daran
+    anknüpfend werden vier Fehlerformen unterschieden, die auch bei der Prüfung des Bebauungsplans heranzuziehen sind. Ein
     Abwägungsausfall liegt vor, wenn eine Abwägung überhaupt nicht stattgefunden hat. Ein Abwägungsdefizit
     besteht, wenn in die Abwägung nicht eingestellt wurde, was nach Lage der Dinge eingestellt werden musste.
     Eine Abwägungsfehleinschätzung liegt vor, wenn die Bedeutung der betroffenen privaten Belange verkannt
@@ -136,13 +138,12 @@ cards:
   back: >-
     § 214 BauGB regelt die Planerhaltung. Nach § 214 Abs. 1 S. 1 BauGB ist die Verletzung bestimmter Verfahrens- und
     Formvorschriften beachtlich, etwa der Vorschriften über die Beteiligung der Öffentlichkeit und der Behörden. Ein
-    Ermittlungs- und Bewertungsfehler nach § 2 Abs. 3 BauGB ist nur beachtlich, wenn Belange, die der Gemeinde bekannt
+    Ermittlungs- und Bewertungsfehler nach § 2 Abs. 3 BauGB fällt unter § 214 Abs. 1 S. 1 Nr. 1 BauGB (nicht unter
+    Abs. 3 S. 2) und ist nur beachtlich, wenn Belange, die der Gemeinde bekannt
     waren oder hätten bekannt sein müssen, in wesentlichen Punkten nicht zutreffend ermittelt oder bewertet wurden und der
-    Mangel offensichtlich und auf das Ergebnis des Verfahrens von Einfluss gewesen ist (Nr. 1). Für die Abwägung
+    Mangel offensichtlich und auf das Ergebnis des Verfahrens von Einfluss gewesen ist (Nr. 1). Für den Abwägungsvorgang im Übrigen
     gilt § 214 Abs. 3 S. 2 BauGB: Mängel im Abwägungsvorgang sind nur erheblich, wenn sie offensichtlich und auf
-    das Abwägungsergebnis von Einfluss gewesen sind. Ein Mangel ist offensichtlich, wenn er sich aus Akten
-    und Planunterlagen ergibt, und von Einfluss, wenn nach den Umständen die konkrete Möglichkeit besteht, dass ohne ihn
-    anders geplant worden wäre. Maßgeblich ist die Sach- und Rechtslage bei Beschlussfassung über die Satzung, § 214
+    das Abwägungsergebnis von Einfluss gewesen sind. Offensichtlich ist, was sich aus Akten und Planunterlagen ergibt; von Einfluss ist ein Mangel bei konkreter Möglichkeit anderer Planung. Maßgeblich ist die Sach- und Rechtslage bei Beschlussfassung über die Satzung, § 214
     Abs. 3 S. 1 BauGB. Fehler im Abwägungsergebnis sind stets erheblich.
   norms:
   - § 214 Abs. 1 BauGB
@@ -282,7 +283,7 @@ faelle:
   facts: >-
     Die Gemeinde G beschließt als Satzung den Bebauungsplan „Gewerbepark Ost“, der auf einer bislang unbebauten
     Fläche ein Gewerbegebiet im Sinne von § 8 BauNVO festsetzt. Die Fläche grenzt unmittelbar an das Wohnhaus des N,
-    das in einem allgemeinen Wohngebiet liegt. Während der öffentlichen Auslegung hat N schriftlich vorgetragen, der
+    das in einem allgemeinen Wohngebiet liegt. Während der Beteiligung der Öffentlichkeit hat N schriftlich vorgetragen, der
     zu erwartende Lärm von Lkw-Verkehr und Betrieben werde ihn unzumutbar beeinträchtigen, und ein Gutachten gefordert.
     Der Gemeinderat hat den Einwand in der Sitzung nicht erörtert, kein Lärmgutachten eingeholt und keine
     Lärmschutzfestsetzungen aufgenommen; die Begründung des Plans enthält zum Lärm keine Ausführungen. Der Plan wird am
@@ -294,9 +295,9 @@ faelle:
   - prompt: Ist der Normenkontrollantrag zulässig?
     erwartung: Statthaft nach § 47 Abs. 1 Nr. 1 VwGO (Bebauungsplan als Satzung nach dem BauGB). N ist antragsbefugt, weil seine Lärmschutzinteressen abwägungserheblich sind und er in seinem Recht auf gerechte Abwägung nach § 1 Abs. 7 BauGB verletzt sein kann (§ 47 Abs. 2 S. 1 VwGO). Die Jahresfrist ist gewahrt (Antrag am 1. November, Bekanntmachung am 1. März).
   - prompt: Liegt ein Fehler im Verfahren oder in der Abwägung vor?
-    erwartung: Ja. Die Lärmbelange des N waren der Gemeinde bekannt (Einwand im Auslegungsverfahren); sie hat sie nicht ermittelt und bewertet (§ 2 Abs. 3 BauGB) und nicht in die Abwägung eingestellt. Das ist ein Ermittlungs- und Abwägungsdefizit im Sinne der Abwägungsfehlerlehre, § 1 Abs. 7 BauGB.
+    erwartung: Ja. Die Lärmbelange des N waren der Gemeinde bekannt (Einwand im Auslegungsverfahren); sie hat sie nicht ermittelt und bewertet (§ 2 Abs. 3 BauGB) und nicht in die Abwägung eingestellt. Das ist ein Ermittlungs- und Bewertungsdefizit (§ 2 Abs. 3 BauGB) und zugleich ein Abwägungsdefizit im Sinne der Abwägungsfehlerlehre, § 1 Abs. 7 BauGB.
   - prompt: Ist der Mangel nach den §§ 214, 215 BauGB beachtlich?
-    erwartung: Der Mangel ist offensichtlich (ergibt sich aus Akten und Begründung) und von Einfluss auf das Abwägungsergebnis, weil bei Berücksichtigung des Lärms konkret möglich ist, dass die Gemeinde anders geplant hätte (z. B. Gliederung, Lärmkontingente). Er ist nicht unbeachtlich geworden, weil N ihn innerhalb eines Jahres seit Bekanntmachung schriftlich gerügt hat (§ 215 Abs. 1 BauGB). Der Hinweis nach § 215 Abs. 2 BauGB wurde erteilt.
+    erwartung: Der Ermittlungs- und Bewertungsfehler ist nach § 214 Abs. 1 S. 1 Nr. 1 BauGB beachtlich, denn er betrifft wesentliche, der Gemeinde bekannte Belange, ist offensichtlich (ergibt sich aus Akten und Begründung) und von Einfluss auf das Ergebnis des Verfahrens, weil bei Berücksichtigung des Lärms konkret möglich ist, dass die Gemeinde anders geplant hätte (z. B. Gliederung, Lärmkontingente). Für den Abwägungsvorgang im Übrigen gilt dasselbe nach § 214 Abs. 3 S. 2 BauGB. Der Mangel ist nicht unbeachtlich geworden, weil N ihn innerhalb eines Jahres seit Bekanntmachung schriftlich gerügt hat (§ 215 Abs. 1 BauGB). Der Hinweis nach § 215 Abs. 2 BauGB wurde erteilt.
   - prompt: Welche Rechtsfolge hat die Entscheidung des Gerichts, und was kann die Gemeinde tun?
     erwartung: Der Antrag ist begründet. Das Gericht erklärt den Bebauungsplan für unwirksam, die Entscheidung ist allgemein verbindlich (§ 47 Abs. 5 S. 2 VwGO). Die Gemeinde kann den Mangel in einem ergänzenden Verfahren beheben und den Plan ggf. rückwirkend in Kraft setzen (§ 214 Abs. 4 BauGB).
   expectation:
@@ -338,9 +339,11 @@ faelle:
       weight: 2.5
       required: true
       norms:
+      - § 214 Abs. 1 BauGB
       - § 214 Abs. 3 BauGB
       - § 215 Abs. 1 BauGB
       keywords:
+      - § 214 Abs. 1 S. 1 Nr. 1 BauGB
       - § 214 Abs. 3 S. 2 BauGB
       - offensichtlich
       - von Einfluss auf das Ergebnis

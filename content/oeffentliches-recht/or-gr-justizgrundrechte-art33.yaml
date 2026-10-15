@@ -143,8 +143,9 @@ cards:
     und billigte Ausnahmen im Interesse materieller Gerechtigkeit. Das BVerfG hat
     mit Urteil vom 31.10.2023 (2 BvR 900/22) entschieden, dass § 362 Nr. 5
     StPO, der die Wiederaufnahme wegen neuer Tatsachen oder Beweismittel zulässt,
-    gegen Art. 103 Abs. 3 GG verstößt und nichtig ist. Der Gesetzgeber
-    kann eine abschließende Rechtskraft nicht durch Ausnahmen aufheben.
+    gegen Art. 103 Abs. 3 GG verstößt und nichtig ist. Die Entscheidung
+    betrifft nur Nr. 5; die übrigen Wiederaufnahmegründe des § 362 StPO waren
+    nicht Verfahrensgegenstand.
   norms:
   - Art. 103 Abs. 3 GG
   - § 362 Nr. 5 StPO
@@ -296,7 +297,7 @@ faelle:
   - prompt: War die Auswahl des C rechtmäßig?
     erwartung: Nein. B ist nach der Beurteilung besser. Das Dienstalter ist nur ein
       Hilfskriterium, das bei im Wesentlichen gleichem Leistungsstand
-      herangezogen werden darf. Hier besteht kein Leistungsgleichstand. Die
+      herangezogen werden darf. Hier ist B aber besser beurteilt (Spitzennote). Die
       Entscheidung verletzt Art. 33 Abs. 2 GG und den Bewerbungsverfahrensanspruch
       des B.
   - prompt: Wie kann B die Ernennung des C verhindern?
@@ -331,8 +332,9 @@ faelle:
       keywords:
       - Hilfskriterium
       - Dienstalter
-      - Leistungsgleichstand
+      - gleichwertige Leistung
       - Beurteilung
+      - Spitzennote
       card_slugs:
       - or-gr-jgr-art33-abs2-bestenauslese
     - id: p3
