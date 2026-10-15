@@ -1,0 +1,282 @@
+topic:
+  slug: zr-at-bedingung-befristung
+  area: zivilrecht
+  title: Bedingung und Befristung, §§ 158 bis 163 BGB
+  parent: zr-bgb-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-at-bed-begriff
+  type: definition
+  front: 'Definiere: Bedingung, aufschiebende und auflösende, § 158 BGB'
+  back: >-
+    Eine Bedingung ist eine rechtsgeschäftliche Bestimmung, die die Wirkung des
+    Rechtsgeschäfts von einem zukünftigen ungewissen Ereignis abhängig macht. Ungewiss ist, ob das Ereignis überhaupt eintritt. Bei der aufschiebenden Bedingung (Suspensivbedingung) tritt die Wirkung
+    des Rechtsgeschäfts erst mit Eintritt der Bedingung ein, § 158 Abs. 1 BGB. Bei
+    der auflösenden Bedingung (Resolutivbedingung) endet die Wirkung mit dem
+    Bedingungseintritt, und der frühere Rechtszustand tritt wieder ein, § 158 Abs. 2
+    BGB. Keine Bedingung im Rechtssinne sind die Rechtsbedingung (gesetzliche
+    Wirksamkeitsvoraussetzung wie behördliche Genehmigung) und eine Gegenwartsbedingung,
+    die an gegenwärtige, nur den Parteien unbekannte Umstände anknüpft.
+  norms:
+  - § 158 Abs. 1 BGB
+  - § 158 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-bed-befristung
+  type: definition
+  front: 'Grenze Bedingung zu Befristung: Was regelt § 163 BGB?'
+  back: >-
+    Bei der Befristung ist das zukünftige Ereignis gewiss; ungewiss kann nur der
+    Zeitpunkt sein (etwa der Tod einer Person). Wird für die Wirkung eines
+    Rechtsgeschäfts ein Anfangs- oder Endtermin bestimmt, finden nach § 163 BGB die für
+    die aufschiebende und die auflösende Bedingung geltenden Vorschriften des § 158
+    Abs. 1 und 2 BGB entsprechende Anwendung. Beim Anfangstermin ruht die Wirkung bis
+    zum Termin, beim Endtermin endet sie. Der Unterschied zur Bedingung liegt im
+    Eintritt: Beim Zeitpunkt ist der Eintritt sicher, bei der Bedingung ungewiss. Der
+    Tod einer Person ist beispielsweise ein sicheres Ereignis (Befristung), das Überleben
+    bis zu einem bestimmten Tag dagegen eine Bedingung.
+  norms:
+  - § 163 BGB
+  - § 158 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-bed-arten
+  type: definition
+  front: 'Unterscheide: Zufalls-, Potestativ- und gemischte Bedingung'
+  back: >-
+    Nach dem Ereignis unterscheidet man Zufallsbedingungen (der Eintritt hängt
+    vom Zufall oder Dritten ab), Potestativbedingungen (der Eintritt hängt vom Willen
+    einer Partei ab, etwa "wenn ich das Haus verkaufe") und gemischte Bedingungen
+    (teils vom Willen einer Partei, teils vom Zufall oder von Dritten, z. B.
+    "wenn ich die Prüfung bestehe"). Potestativbedingungen sind grundsätzlich zulässig,
+    sofern die Wirkung nicht ausschließlich vom reinen Belieben des Verpflichteten
+    abhängt, dann fehlt der Rechtsbindungswille. Besonders bedeutsam ist die
+    Abgrenzung für Gestaltungsrechte, die bedingungsfeindlich sind, weil sie dem
+    Erklärungsgegner keine Ungewissheit zumuten dürfen. Zulässig sind aber
+    Bedingungen, deren Eintritt allein vom Willen des Erklärungsgegners abhängt
+    (z. B. Änderungskündigung).
+  norms:
+  - § 158 BGB
+  - § 388 S. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-bed-bedingungsfeindlich
+  type: norm
+  front: Welche Rechtsgeschäfte sind bedingungsfeindlich?
+  back: >-
+    Bedingungsfeindlich sind Rechtsgeschäfte, bei denen Rechtsklarheit und
+    Rechtssicherheit eine bedingte Erklärung verbieten. Das betrifft Gestaltungsrechte
+    wie Anfechtung, Rücktritt, Kündigung und Aufrechnung (§ 388 S. 2 BGB), weil
+    der Gegner nicht in einen Schwebezustand versetzt werden darf. Gesetzlich
+    angeordnet ist die Bedingungsfeindlichkeit zum Beispiel bei der Auflassung
+    (§ 925 Abs. 2 BGB), bei der Eheschließung (§ 1311 S. 2 BGB) und bei der Annahme und Ausschlagung der Erbschaft (§ 1947 BGB). Unschädlich sind Rechtsbedingungen und Bedingungen, deren Eintritt allein vom Willen des Erklärungsempfängers abhängt, weil hier keine Rechtsunsicherheit entsteht.
+  norms:
+  - § 388 S. 2 BGB
+  - § 925 Abs. 2 BGB
+  - § 1311 S. 2 BGB
+  - § 1947 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-bed-schwebezeit-160
+  type: norm
+  front: Wie ist die Schwebezeit geschützt, §§ 160, 161 BGB?
+  back: >-
+    Wer unter einer aufschiebenden Bedingung berechtigt ist, kann im Fall des Eintritts
+    Schadensersatz von dem anderen Teil verlangen, wenn dieser während der Schwebezeit
+    das von der Bedingung abhängige Recht durch sein Verschulden vereitelt oder
+    beeinträchtigt (§ 160 Abs. 1 BGB). Entsprechendes gilt bei auflösender Bedingung
+    für den früheren Rechtszustand (§ 160 Abs. 2 BGB). Verfügt der Veräußerer während der Schwebezeit über den Gegenstand, ist die Verfügung nach § 161 Abs. 1 BGB
+    im Falle des Bedingungseintritts insoweit unwirksam, als sie die von der Bedingung
+    abhängige Wirkung vereiteln oder beeinträchtigen würden (absolute Unwirksamkeit
+    im Zeitpunkt des Eintritts). Ein gutgläubiger Erwerb bleibt nach § 161 Abs. 3
+    BGB möglich. Die Bedingung wirkt grundsätzlich nur für die Zukunft; eine Rückbeziehung kann nur schuldrechtlich vereinbart werden (§ 159 BGB).
+  norms:
+  - § 160 Abs. 1 BGB
+  - § 161 Abs. 1 BGB
+  - § 161 Abs. 3 BGB
+  - § 159 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-bed-treuwidrig-162
+  type: norm
+  front: Was gilt bei treuwidriger Herbeiführung oder Verhinderung der Bedingung, § 162 BGB?
+  back: >-
+    Wird der Eintritt der Bedingung von der Partei, zu deren Nachteil er gereichen
+    würde, wider Treu und Glauben verhindert, gilt die Bedingung als eingetreten (§ 162
+    Abs. 1 BGB). Wird der Eintritt von der Partei, zu deren Vorteil er gereicht, wider
+    Treu und Glauben herbeigeführt, gilt der Eintritt als nicht erfolgt (§ 162 Abs. 2
+    BGB). Maßgeblich ist, ob das Verhalten gegen Treu und Glauben
+    verstößt; bloße Ursächlichkeit genügt nicht, ein Verschulden im engeren Sinne
+    ist aber nicht erforderlich. Wer lediglich vertragliche oder gesetzliche Rechte
+    ausübt, handelt nicht treuwidrig. Zwischen beiden Absätzen besteht ein Gleichlauf:
+    Wer die Bedingung treuwidrig verhindert, soll daraus keinen Vorteil ziehen.
+  norms:
+  - § 162 Abs. 1 BGB
+  - § 162 Abs. 2 BGB
+  - § 242 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-bed-anwartschaft
+  type: definition
+  front: 'Verweis: Was ist ein Anwartschaftsrecht und wie hängt es mit der aufschiebenden
+    Bedingung zusammen?'
+  back: >-
+    Ein Anwartschaftsrecht ist eine gesicherte Rechtsposition, die aus einem
+    mehraktigen Erwerbstatbestand hervorgeht, von dem nur noch Ereignisse
+    ausstehen, auf die der Erwerber keinen Einfluss mehr hat. Das Standardbeispiel
+    ist der Erwerb unter Eigentumsvorbehalt (§ 449 BGB): Der Käufer erhält das
+    Eigentum aufschiebend bedingt durch vollständige Kaufpreiszahlung (§ 158 Abs.
+    1 BGB); der Verkäufer kann die Rechtsposition des Käufers nach § 161 Abs. 1 BGB
+    nicht mehr einseitig vereiteln. Das Anwartschaftsrecht ist als wesensgleiches
+    Minus zum Vollrecht übertragbar (§§ 929 ff. BGB analog), pfändbar und nach §
+    823 Abs. 1 BGB als sonstiges Recht geschützt. Mit Bedingungseintritt erwirbt der
+    Inhaber das Eigentum unmittelbar. Vertiefung im Sachenrecht (Eigentumserwerb, Sicherungsübereignung).
+  norms:
+  - § 449 BGB
+  - § 158 Abs. 1 BGB
+  - § 161 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-bed-abgrenzung
+  type: definition
+  front: 'Abgrenze: Bedingung, Rücktrittsvorbehalt, Auflage und Geschäftsgrundlage'
+  back: >-
+    Die Bedingung (§ 158 BGB) macht die Wirksamkeit des Geschäfts selbst vom
+    Eintritt eines ungewissen Ereignisses abhängig; tritt sie ein oder aus, wirkt
+    das automatisch (dinglich oder schuldrechtlich). Beim Rücktrittsvorbehalt ist das
+    Geschäft zunächst voll wirksam; es kann erst durch eine Rücktrittserklärung
+    beseitigt werden (§ 346 BGB). Die Auflage (etwa bei der Schenkung, § 525 BGB)
+    verpflichtet den Empfänger zu einer Leistung, lässt aber die Wirksamkeit der
+    Zuwendung unberührt. Die Störung der Geschäftsgrundlage (§ 313 BGB) betrifft
+    gemeinsame Vorstellungen, die nicht Vertragsinhalt wurden, und führt zu Anpassung
+    oder Rücktritt, nicht zum automatischen Wegfall. Die Abgrenzung erfolgt durch
+    Auslegung (§§ 133, 157 BGB): Wollten die Parteien die Wirksamkeit oder nur eine
+    Pflicht vom Ereignis abhängig machen?
+  norms:
+  - § 158 BGB
+  - § 346 BGB
+  - § 525 BGB
+  - § 313 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-at-bed-pruefung
+  title: Prüfung einer Bedingung oder Befristung
+  norms:
+  - § 158 BGB
+  - § 162 BGB
+  - § 163 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Vorliegen einer Bedingung oder Befristung
+    children:
+    - label: 1. Ungewisses künftiges Ereignis - Bedingung, § 158 BGB
+      hinweis: Gewisses Ereignis mit ungewissem Zeitpunkt = Befristung, § 163 BGB.
+    - label: 2. Rechtsgeschäftliche Bestimmung (keine Rechtsbedingung)
+  - label: II. Zulässigkeit
+    hinweis: Bedingungsfeindliche Geschäfte (Gestaltungsrechte, Auflassung,
+      Eheschließung)?
+  - label: III. Art der Bedingung - aufschiebend oder auflösend
+  - label: IV. Eintritt der Bedingung
+    children:
+    - label: 1. Tatsächlicher Eintritt
+    - label: 2. Fiktion nach § 162 BGB
+      hinweis: Verhindert die benachteiligte Partei treuwidrig, gilt die Bedingung als
+        eingetreten.
+  - label: V. Rechtsfolge
+    children:
+    - label: 1. Wirkung ex nunc, § 158 BGB (keine Rückbeziehung, § 159 BGB nur vereinbart)
+    - label: 2. Schutz in der Schwebezeit, §§ 160, 161 BGB
+faelle:
+- slug: zr-fall-at-bed-finanzierung
+  title: Die vereitelte Kreditzusage
+  difficulty: 3
+  minutes: 35
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Der Autohändler V und die Privatperson K schließen einen schriftlichen
+    Kaufvertrag über einen bestimmten Neuwagen (Fahrgestellnummer im Vertrag) für 30.000 Euro. Der Vertrag soll nur wirksam
+    werden, wenn die Hausbank des K bis zum 1. Dezember den Kauf finanziert. K stellt
+    den Kreditantrag. Am 20. November ruft V bei der Hausbank an und rät von der
+    Kreditgewährung ab, weil er das Fahrzeug lieber an einen anderen Kunden mit
+    höherem Preis verkaufen möchte. Die Bank lehnt daraufhin den Kredit ab. V verkauft und übereignet das Fahrzeug an einen Dritten für 32.000 Euro. K verlangt Schadensersatz.
+  question: Besteht der Kaufvertrag trotz der Ablehnung des Kredits, und kann K
+    Ersatz verlangen?
+  steps:
+  - prompt: Formuliere den Obersatz zum Kaufvertrag.
+    erwartung: >-
+      Zwischen K und V ist ein Kaufvertrag geschlossen worden; fraglich ist, ob er
+      wirksam geworden ist, weil er unter einer aufschiebenden Bedingung stand.
+  - prompt: Welche Art von Bedingung vereinbarten die Parteien?
+    erwartung: >-
+      Eine aufschiebende Bedingung nach § 158 Abs. 1 BGB. Die Finanzierung der Bank
+      ist ein zukünftiges ungewisses Ereignis, vom Zufall und von Dritten abhängig
+      (Zufallsbedingung). Sie ist nicht bedingungsfeindlich.
+  - prompt: Ist die Bedingung eingetreten?
+    erwartung: >-
+      Tatsächlich nicht, weil die Bank den Kredit abgelehnt hat. Nach § 162 Abs. 1 BGB
+      gilt die Bedingung aber als eingetreten, weil V den Eintritt treuwidrig verhindert
+      hat. Er hat durch sein Abraten gegen Treu und Glauben verstoßen und ist die
+      Partei, zu deren Nachteil der Eintritt gereichen würde.
+  - prompt: Rechtsfolge und Schadensersatz?
+    erwartung: >-
+      Der Kaufvertrag ist mit der Fiktion des Bedingungseintritts wirksam
+      geworden. V schuldet Übereignung und Übergabe (§ 433 Abs. 1 BGB); nach der Übereignung an den Dritten liegt ein Fall der Unmöglichkeit nach § 275 Abs. 1 BGB vor, sodass K dem Grunde nach Schadensersatz statt der Leistung nach §§ 280 Abs. 1, 3, 283 BGB verlangen kann (alternativ Herausgabe des Erlangten nach § 285 BGB). Die Ablehnung des Kredits entlastet V nicht, weil er sie selbst herbeigeführt hat.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Aufschiebende Bedingung nach § 158 Abs. 1 BGB erkannt
+      weight: 1.0
+      required: false
+      norms:
+      - § 158 Abs. 1 BGB
+      keywords:
+      - "aufschiebende Bedingung"
+      - "§ 158 Abs. 1"
+      - "ungewisses Ereignis"
+      - "Zufallsbedingung"
+      card_slugs:
+      - zr-at-bed-begriff
+    - id: p2
+      label: Fiktion des Bedingungseintritts nach § 162 Abs. 1 BGB wegen treuwidriger Verhinderung
+      weight: 3.0
+      required: true
+      norms:
+      - § 162 Abs. 1 BGB
+      keywords:
+      - "§ 162 Abs. 1"
+      - "treuwidrig verhindert"
+      - "gilt als eingetreten"
+      - "wider Treu und Glauben"
+      - "Bedingungseintritt fingiert"
+      card_slugs:
+      - zr-at-bed-treuwidrig-162
+    - id: p3
+      label: Wirksamer Kaufvertrag und Schadensersatz statt der Leistung nach §§ 280, 283 BGB
+      weight: 2.0
+      required: true
+      norms:
+      - § 283 BGB
+      keywords:
+      - "§ 283"
+      - "Schadensersatz statt der Leistung"
+      - "§ 275 Abs. 1"
+      - "Unmöglichkeit"
+      - "§ 280 Abs. 1"

@@ -1,0 +1,352 @@
+topic:
+  slug: zr-at-willenserklaerung-willensmaengel
+  area: zivilrecht
+  title: Willenserklärung und Willensmängel - Tatbestand, §§ 116 bis 118 BGB, falsa demonstratio
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-at-we-tatbestand
+  type: definition
+  front: 'Definiere: Willenserklärung und ihre Tatbestandsmerkmale'
+  back: >-
+    Eine Willenserklärung ist die Äußerung eines auf die Herbeiführung einer
+    Rechtsfolge gerichteten Willens. Der objektive Tatbestand besteht in der
+    Erklärungshandlung, deren Sinn sich nach dem objektiven Empfängerhorizont
+    (§§ 133, 157 BGB) als Äußerung eines Rechtsbindungswillens darstellt. Der
+    subjektive Tatbestand wird üblicherweise in drei Stufen geprüft:
+    Handlungswille (bewusstes Verhalten), Erklärungsbewusstsein (Bewusstsein,
+    irgendetwas rechtlich Erhebliches zu erklären) und Geschäftswille (Wille,
+    gerade diese Rechtsfolge herbeizuführen). Nur der Handlungswille ist nach
+    allgemeiner Meinung unverzichtbar; das Fehlen von Erklärungsbewusstsein und
+    Geschäftswille führt nicht zum Fehlen der Willenserklärung, sondern allenfalls
+    zur Anfechtbarkeit.
+  norms:
+  - § 133 BGB
+  - § 157 BGB
+  - § 119 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-we-handlungswille
+  type: definition
+  front: 'Handlungswille: Wann fehlt er und was folgt daraus?'
+  back: >-
+    Der Handlungswille ist der Wille, überhaupt zu handeln. Er fehlt bei Reflexen,
+    im Schlaf, in Bewusstlosigkeit und bei unmittelbarem körperlichem Zwang (vis
+    absoluta), etwa wenn dem Erklärenden die Hand geführt wird. Ohne
+    Handlungswille liegt schon keine Willenserklärung vor; es entsteht auch
+    kein Anfechtungsbedürfnis, weil nichts anzufechten ist, und die Haftung nach
+    § 122 BGB greift nicht ein. Abzugrenzen ist die Drohung mit einem Übel (vis
+    compulsiva): Hier besteht der Wille zu handeln, wenn auch unfrei gebildet.
+    Die Willenserklärung ist wirksam, aber nach § 123 Abs. 1 BGB anfechtbar.
+  norms:
+  - § 123 Abs. 1 BGB
+  - § 122 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-we-erklaerungsbewusstsein
+  type: streitstand
+  front: 'Fehlendes Erklärungsbewusstsein (Trierer Weinversteigerung): Liegt eine Willenserklärung
+    vor?'
+  back: >-
+    Fall: Ein Besucher hebt in einer Weinversteigerung den Arm, um einen Bekannten
+    zu grüßen; der Auktionator erteilt den Zuschlag. Nach der h. M. und dem BGH
+    liegt eine Willenserklärung vor, wenn der Erklärende bei Anwendung der im
+    Verkehr erforderlichen Sorgfalt hätte erkennen und vermeiden können, dass
+    sein Verhalten nach Treu und Glauben als Willenserklärung aufgefasst wird,
+    und der Empfänger es auch so verstanden hat (Zurechnung). Der Erklärende
+    kann entsprechend § 119 Abs. 1 BGB anfechten und haftet dann auf den
+    Vertrauensschaden nach § 122 BGB. Die Gegenansicht verlangt das
+    Erklärungsbewusstsein als Teil des Tatbestands: Ohne es liegt keine
+    Willenserklärung vor, der Empfänger wird aber nach § 122 BGB analog
+    geschützt. Praktisch führen beide Ansichten oft zu gleichen Ergebnissen; die
+    h. M. ist Klausurstandard. Das Ergebnis hängt von der Fahrlässigkeit ab: Bei
+    unvorhersehbarer Missdeutung fehlt es an der Zurechenbarkeit.
+  norms:
+  - § 119 Abs. 1 BGB
+  - § 122 Abs. 1 BGB
+  - § 133 BGB
+  - § 157 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - BGH, BGHZ 91, 324 (Trierer Weinversteigerung)
+- slug: zr-at-we-geschaeftswille
+  type: definition
+  front: 'Geschäftswille und Irrtum: Wie hängt das Fehlen des Geschäftswillens mit
+    §§ 119 ff. BGB zusammen?'
+  back: >-
+    Der Geschäftswille ist der Wille, gerade das konkrete Rechtsgeschäft mit
+    seinem Inhalt vorzunehmen. Weicht die objektiv erklärte Bedeutung davon ab,
+    liegt keine Unwirksamkeit, sondern ein Willensmangel vor: Die Erklärung
+    gilt mit dem Inhalt, den ein objektiver Empfänger ihr beimessen durfte
+    (Vertrauensschutz, Verkehrsschutz). Der Erklärende wird durch die
+    Anfechtung nach §§ 119 Abs. 1, 120 BGB geschützt, muss dann aber den
+    Vertrauensschaden ersetzen (§ 122 BGB). Der Konflikt zwischen
+    Privatautonomie (Willensprinzip) und Verkehrsschutz (Vertrauensprinzip) wird
+    also im Grundsatz zugunsten des Verkehrsschutzes entschieden und durch die
+    Anfechtung korrigiert. Wo der Empfänger den wahren Willen kennt, gilt
+    dagegen das Gewollte (falsa demonstratio).
+  norms:
+  - § 119 Abs. 1 BGB
+  - § 120 BGB
+  - § 122 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-we-vorbehalt-116
+  type: norm
+  front: Was regelt § 116 BGB zum geheimen Vorbehalt?
+  back: >-
+    Ein geheimer Vorbehalt (Mentalreservation) liegt vor, wenn der Erklärende
+    sich insgeheim vorbehält, das Erklärte nicht zu wollen. Nach § 116 S. 1
+    BGB ist die Willenserklärung nicht deshalb nichtig, weil der Erklärende
+    sich insgeheim vorbehält, das Erklärte nicht zu wollen; der Verkehrsschutz
+    geht dem inneren Willen vor. Nach § 116 S. 2 BGB ist eine Erklärung, die
+    einem anderen gegenüber abzugeben ist, dagegen nichtig, wenn dieser den
+    Vorbehalt kennt (nicht: kennen muss). Der Vorbehalt ist damit nur dann
+    beachtlich, wenn der Erklärungsempfänger bösgläubig ist. Zu unterscheiden ist
+    das Scheingeschäft (§ 117 BGB), bei dem beide Parteien den fehlenden
+    Geltungswillen teilen, und der Scherz (§ 118 BGB), bei dem der Erklärende
+    erwartet, dass der Mangel erkannt wird.
+  norms:
+  - § 116 S. 1 BGB
+  - § 116 S. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-we-scheingeschaeft-117
+  type: norm
+  front: Was gilt beim Scheingeschäft nach § 117 BGB, insbesondere beim Schwarzkauf?
+  back: >-
+    Ein Scheingeschäft liegt vor, wenn die Parteien einvernehmlich nur den Schein
+    eines Rechtsgeschäfts erzeugen wollen, ohne dessen Rechtsfolgen eintreten zu
+    lassen. Das Scheingeschäft ist nach § 117 Abs. 1 BGB nichtig. Wird dadurch ein
+    anderes Rechtsgeschäft verdeckt (Dissimulation), gelten für dieses nach §
+    117 Abs. 2 BGB die für das verdeckte Geschäft maßgeblichen Vorschriften,
+    insbesondere über Form, Genehmigung und Verbote. Typisch ist der
+    Schwarzkauf: Die Parteien beurkunden einen niedrigeren Preis, vereinbaren aber
+    mündlich den höheren. Das beurkundete Geschäft ist ein Scheingeschäft; das
+    verdeckte Geschäft ist wegen Verstoßes gegen die Form des § 311b Abs. 1 S. 1
+    BGB nach § 125 S. 1 BGB nichtig, kann aber durch Auflassung und Eintragung
+    nach § 311b Abs. 1 S. 2 BGB geheilt werden. Die Heilung erfasst den
+    wirklich gewollten Vertrag.
+  norms:
+  - § 117 Abs. 1 BGB
+  - § 117 Abs. 2 BGB
+  - § 311b Abs. 1 BGB
+  - § 125 S. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-we-scherz-118
+  type: norm
+  front: Was gilt für die nicht ernstlich gemeinte Willenserklärung, § 118 BGB?
+  back: >-
+    Wer eine Willenserklärung in der Erwartung abgibt, der Mangel der Ernstlichkeit
+    werde nicht verkannt, erklärt einen Scherz. Die Erklärung ist nach § 118 BGB
+    nichtig. Beispiele sind Übertreibungen, Spott und Lehrbeispiele. Erforderlich
+    ist, dass der Erklärende erwartet, der Empfänger werde den Mangel erkennen;
+    es genügt nicht, dass er es nur hofft. Verkennt der Empfänger den Scherz
+    und vertraut er auf die Wirksamkeit, ist der Erklärende dem Empfänger zum
+    Ersatz des Vertrauensschadens verpflichtet (§ 122 BGB); dies gilt auch hier
+    unmittelbar nach dem Wortlaut. Die Abgrenzung zu § 116 BGB liegt darin,
+    dass beim Scherz der Erklärende die Erkennbarkeit erwartet, beim geheimen
+    Vorbehalt dagegen das Verborgenbleiben des fehlenden Geltungswillens.
+  norms:
+  - § 118 BGB
+  - § 122 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-we-falsa-demonstratio
+  type: rechtsprechung
+  front: Was besagt der Grundsatz "falsa demonstratio non nocet" (Haakjöringsköd)?
+  back: >-
+    Verwenden beide Parteien eine Bezeichnung übereinstimmend in einem anderen
+    Sinn als dem objektiv üblichen, gilt das übereinstimmend Gewollte, nicht das
+    objektiv Erklärte. Nach dem RG-Urteil zum "Haakjöringsköd" (RGZ 99, 147)
+    sollten die Parteien Walfischfleisch kaufen, nannten die Ware aber
+    übereinstimmend "Haakjöringsköd", womit nach dem Wortsinn Haifischfleisch
+    gemeint war. Maßgeblich war das gemeinsam Gewollte. Der Grundsatz folgt aus
+    § 133 BGB (Erforschung des wirklichen Willens) und gilt nach h. M. auch bei
+    formbedürftigen Geschäften, etwa bei übereinstimmend falsch bezeichnetem
+    Grundstück; einer Andeutung im Urkundentext bedarf es dann nicht, weil
+    kein schutzwürdiger Dritter betroffen ist. Voraussetzung ist ein tatsächlich
+    übereinstimmendes Verständnis; fehlt es, bleibt es bei der normativen
+    Auslegung und gegebenenfalls der Anfechtung.
+  norms:
+  - § 133 BGB
+  - § 157 BGB
+  - § 119 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - RG, RGZ 99, 147
+- slug: zr-at-we-abgrenzung-119
+  type: definition
+  front: 'Abgrenze: Wann ist eine Erklärung nicht schon wegen Missverständnisses
+    unwirksam, sondern anfechtbar (§ 119 BGB)?'
+  back: >-
+    Zunächst ist die Erklärung nach §§ 133, 157 BGB aus der Sicht eines
+    objektiven Empfängers auszulegen. Ergibt sich ein einheitlicher Sinn
+    (normativ oder durch übereinstimmendes Verständnis), ist der Fall gelöst
+    und es besteht kein Irrtum mit Anfechtungsmöglichkeit (falsa demonstratio).
+    Weicht der objektive Erklärungsgehalt vom Willen des Erklärenden ab,
+    entsteht ein Willensmangel: Beim Inhaltsirrtum irrt er über die Bedeutung
+    des Erklärten, beim Erklärungsirrtum verspricht oder verschreibt er sich (§
+    119 Abs. 1 BGB), beim Eigenschaftsirrtum über verkehrswesentliche
+    Eigenschaften (§ 119 Abs. 2 BGB). Ein beiderseitiges Missverständnis
+    führt zum Dissens (§§ 154, 155 BGB). Erst danach kommt die Anfechtung nach
+    § 143 BGB in Betracht, zu deren Details das Thema Anfechtung führt.
+  norms:
+  - § 119 Abs. 1 BGB
+  - § 119 Abs. 2 BGB
+  - § 133 BGB
+  - § 157 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-at-we-tatbestand
+  title: Prüfung einer Willenserklärung und ihrer Willensmängel
+  norms:
+  - § 133 BGB
+  - § 116 BGB
+  - § 117 BGB
+  - § 118 BGB
+  - § 119 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Objektiver Tatbestand
+    children:
+    - label: 1. Erklärungshandlung (ausdrücklich oder konkludent)
+    - label: 2. Auslegung nach dem objektiven Empfängerhorizont, §§ 133, 157 BGB
+      hinweis: Rechtsbindungswille abgrenzen von Gefälligkeit, invitatio ad
+        offerendum und Scherz.
+  - label: II. Subjektiver Tatbestand
+    children:
+    - label: 1. Handlungswille
+      hinweis: Fehlt bei vis absoluta, Reflex, Schlaf - dann keine Willenserklärung.
+    - label: 2. Erklärungsbewusstsein
+      hinweis: Streit; nach h. M. genügt die Zurechenbarkeit bei Fahrlässigkeit
+        (Trierer Weinversteigerung), Anfechtung analog § 119 Abs. 1 BGB.
+    - label: 3. Geschäftswille
+      hinweis: Fehlt er, Anfechtbarkeit nach §§ 119 ff. BGB, nicht Unwirksamkeit.
+  - label: III. Bewusstes Auseinanderfallen von Wille und Erklärung
+    children:
+    - label: 1. Geheimer Vorbehalt, § 116 BGB
+      hinweis: Wirksam; nichtig nur bei Kenntnis des Empfängers, § 116 S. 2 BGB.
+    - label: 2. Scheingeschäft, § 117 BGB
+      hinweis: Nichtig; verdecktes Geschäft nach § 117 Abs. 2 BGB.
+    - label: 3. Scherzerklärung, § 118 BGB
+  - label: IV. Unbewusstes Auseinanderfallen - Irrtumsanfechtung
+    hinweis: Zuerst Auslegung und falsa demonstratio, dann §§ 119, 120, 122 BGB.
+faelle:
+- slug: zr-fall-at-we-auktion-gruss
+  title: Der Gruß in der Auktion
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Auf einer öffentlichen Kunstauktion hebt G die Hand, um einem Bekannten in
+    der letzten Reihe zuzuwinken. Der Auktionator A, dem das Gemälde gehört und der es selbst
+    versteigert, versteht dies als Gebot über 2.000 Euro für
+    ein Gemälde und erteilt G den Zuschlag. G hat zuvor keine Gebote abgegeben
+    und wusste, dass bei Auktionen das Heben der Hand als Gebot gilt, hat es aber in
+    der Aufregung nicht bedacht. Sofort nach dem Zuschlag erklärt G, er habe nicht
+    bieten wollen, und ficht sein Gebot an. A, der das Bild nur noch mit zusätzlichen Aufwendungen von 100 Euro für eine
+    erneute Versteigerung veräußern kann, verlangt Erfüllung, hilfsweise Ersatz.
+  question: Ist zwischen G und A ein Kaufvertrag zustande gekommen, und kann A
+    jedenfalls Schadensersatz von G verlangen?
+  steps:
+  - prompt: Liegt eine Willenserklärung des G in Form eines Gebots vor?
+    erwartung: >-
+      Ja. Das Handheben ist eine Erklärungshandlung, die nach dem objektiven
+      Empfängerhorizont als Gebot zu verstehen ist. G handelte willentlich
+      (Handlungswille). Es fehlt das Erklärungsbewusstsein.
+  - prompt: Schadet das fehlende Erklärungsbewusstsein?
+    erwartung: >-
+      Nach h. M. nicht. Die Erklärung ist zurechenbar, wenn G bei Anwendung der
+      im Verkehr erforderlichen Sorgfalt hätte erkennen und vermeiden können, dass
+      sein Verhalten als Gebot aufgefasst wird, und A es so verstanden hat. Da G
+      die Regeln der Auktion kannte, hätte er das erkennen können. Die
+      Gegenansicht verneint die Willenserklärung, schützt aber A über eine
+      analoge Anwendung des § 122 BGB.
+  - prompt: Kann G die Erklärung anfechten?
+    erwartung: >-
+      Ja, entsprechend § 119 Abs. 1 BGB, weil Erklärungsbewusstsein und
+      Geschäftswille fehlen. Die Anfechtung erfolgt gegenüber A (§ 143 BGB)
+      unverzüglich (§ 121 Abs. 1 BGB). Der Vertrag ist nach § 142 Abs. 1 BGB
+      rückwirkend nichtig. Ein Erfüllungsanspruch besteht deshalb nicht.
+  - prompt: Kann A Schadensersatz verlangen?
+    erwartung: >-
+      Ja, in entsprechender Anwendung des § 122 Abs. 1 BGB hat G den
+      Vertrauensschaden zu ersetzen, also etwa die Kosten der erneuten
+      Versteigerung in Höhe von 100 Euro, begrenzt auf das Erfüllungsinteresse (§
+      122 Abs. 1 a. E. BGB). Ein Ausschluss nach § 122 Abs. 2 BGB scheidet
+      aus, da A die Anfechtbarkeit nicht kannte oder kennen musste.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Willenserklärung bejaht trotz fehlendem Erklärungsbewusstsein (Zurechnung
+        bei Fahrlässigkeit)
+      weight: 3.0
+      required: true
+      keywords:
+      - "Erklärungsbewusstsein"
+      - "Zurechnung"
+      - "im Verkehr erforderliche Sorgfalt"
+      - "Trierer Weinversteigerung"
+      - "objektiver Empfängerhorizont"
+      card_slugs:
+      - zr-at-we-erklaerungsbewusstsein
+      - zr-at-we-tatbestand
+    - id: p2
+      label: Anfechtung analog § 119 Abs. 1 BGB, Rechtsfolge § 142 Abs. 1 BGB
+      weight: 2.0
+      required: true
+      norms:
+      - § 119 Abs. 1 BGB
+      - § 142 Abs. 1 BGB
+      keywords:
+      - "§ 119 Abs. 1 analog"
+      - "Anfechtung analog"
+      - "§ 142 Abs. 1"
+      - "von Anfang an nichtig"
+      - "kein Erfüllungsanspruch"
+      card_slugs:
+      - zr-at-we-geschaeftswille
+    - id: p3
+      label: Schadensersatz nach § 122 Abs. 1 BGB (analog) mit Begrenzung auf das Erfüllungsinteresse
+      weight: 2.0
+      required: false
+      norms:
+      - § 122 Abs. 1 BGB
+      keywords:
+      - "§ 122 Abs. 1"
+      - "Vertrauensschaden"
+      - "negatives Interesse"
+      - "Erfüllungsinteresse"
+      - "§ 122 Abs. 2"
+      card_slugs:
+      - zr-at-we-geschaeftswille
+    - id: p4
+      label: Handlungswille bejaht und gegen vis absoluta abgegrenzt
+      weight: 1.0
+      required: false
+      keywords:
+      - "Handlungswille"
+      - "bewusstes Verhalten"
+      - "vis absoluta"
+      - "willentliches Handeln"
+      card_slugs:
+      - zr-at-we-handlungswille

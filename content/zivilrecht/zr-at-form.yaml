@@ -1,0 +1,338 @@
+topic:
+  slug: zr-at-form
+  area: zivilrecht
+  title: Form von Rechtsgeschäften, §§ 125 bis 129 BGB, § 311b, § 766, § 518 BGB
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-at-form-grundsatz-125
+  type: norm
+  front: Welche Rechtsfolge hat der Formmangel, § 125 BGB?
+  back: >-
+    Grundsatz ist die Formfreiheit; Formzwang besteht nur, wenn das Gesetz oder die
+    Parteien ihn anordnen. Ein Rechtsgeschäft, das der durch Gesetz vorgeschriebenen
+    Form ermangelt, ist nach § 125 S. 1 BGB nichtig. Ein Mangel der durch
+    Rechtsgeschäft bestimmten Form hat nach § 125 S. 2 BGB im Zweifel gleichfalls
+    Nichtigkeit zur Folge. Die Nichtigkeit tritt von selbst ein und ist von Amts wegen
+    zu beachten; auf sie kann sich jeder berufen. Die Formvorschrift ist
+    schutzzweckorientiert auszulegen: Sie erfasst das Rechtsgeschäft einschließlich
+    aller Nebenabreden, die nach dem Willen der Parteien Teil des Gesamtgeschäfts
+    sein sollen (Vollständigkeitsgrundsatz). Nachträgliche Abänderungen sind
+    ebenfalls formbedürftig, soweit sie die formgeschützten Pflichten ändern.
+  norms:
+  - § 125 S. 1 BGB
+  - § 125 S. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-form-zwecke
+  type: definition
+  front: 'Nenne die Formzwecke und ordne sie zu: Warnfunktion, Beweisfunktion, Beratungsfunktion und Abschlussfunktion'
+  back: >-
+    Formvorschriften dienen verschiedenen Zwecken. Die Warnfunktion (Übereilungsschutz)
+    soll den Erklärenden vor übereilten, folgenreichen Bindungen schützen
+    (§§ 518, 766 BGB). Die Beweisfunktion sichert Inhalt und Abgabe der Erklärung
+    für die Zukunft (Schriftform, § 126 BGB). Die Beratungs- und Belehrungsfunktion
+    wird durch die notarielle Beurkundung erreicht (§§ 311b, 518 BGB, §
+    17 BeurkG). Die Abschlussfunktion (Gültigkeitsfunktion)
+    bedeutet, dass die Form Wirksamkeitsvoraussetzung ist und den verbindlichen
+    Vertragsschluss klar von bloßen Vorverhandlungen abgrenzt. Welche Zwecke eine
+    Norm verfolgt, bestimmt, wie streng die Formvorschrift auszulegen ist und ob
+    eine Heilung oder die Durchbrechung nach § 242 BGB in Betracht kommt.
+  norms:
+  - § 125 BGB
+  - § 126 BGB
+  - § 311b Abs. 1 BGB
+  - § 518 BGB
+  - § 766 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-form-schriftform-126
+  type: norm
+  front: Wie wird die gesetzliche Schriftform gewahrt, §§ 126, 126a, 126b, 127 BGB?
+  back: >-
+    Bei gesetzlicher Schriftform muss die Urkunde nach § 126 Abs. 1 BGB vom Aussteller
+    eigenhändig durch Namensunterschrift oder notariell beglaubigtes Handzeichen
+    unterzeichnet werden. Bei einem Vertrag muss die Unterzeichnung durch beide
+    Parteien auf derselben Urkunde erfolgen; werden mehrere gleichlautende Urkunden
+    aufgenommen, genügt die Unterzeichnung der für die jeweils andere Partei
+    bestimmten Urkunde (§ 126 Abs. 2 BGB). Die schriftliche Form kann durch die
+    elektronische Form mit qualifizierter elektronischer Signatur ersetzt werden
+    (§ 126 Abs. 3, § 126a BGB), wenn sich nicht aus dem Gesetz ein anderes ergibt.
+    Textform nach § 126b BGB verlangt nur eine lesbare Erklärung auf einem dauerhaften
+    Datenträger, aus der die Person des Erklärenden hervorgeht. Für vereinbarte Schriftform
+    genügt nach § 127 Abs. 2 S. 1 BGB im Zweifel die telekommunikative Übermittlung.
+  norms:
+  - § 126 Abs. 1 BGB
+  - § 126 Abs. 2 BGB
+  - § 126a BGB
+  - § 126b BGB
+  - § 127 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-form-beurkundung-128
+  type: norm
+  front: Wie funktionieren Beurkundung und Beglaubigung, §§ 127a, 128, 129 BGB?
+  back: >-
+    Ist notarielle Beurkundung vorgeschrieben, wird sie nach den Vorschriften des
+    Beurkundungsgesetzes vorgenommen. Bei einem Vertrag genügt nach § 128 BGB, dass
+    zuerst der Antrag und sodann die Annahme getrennt beurkundet werden (nicht
+    zwingend gleichzeitige Anwesenheit). Die notarielle Beurkundung wird nach §
+    127a BGB bei einem gerichtlichen Vergleich durch die Aufnahme der Erklärungen in
+    das nach den Vorschriften der ZPO errichtete Protokoll ersetzt. Die öffentliche
+    Beglaubigung (§ 129 BGB) verlangt eine schriftliche Erklärung, die von einem
+    Notar beglaubigt wird (Unterschriftsbeglaubigung); sie ersetzt nur die
+    Schriftform, nicht die Beurkundung. Die Beurkundung ersetzt ihrerseits die
+    Schriftform, § 126 Abs. 4 BGB.
+  norms:
+  - § 127a BGB
+  - § 128 BGB
+  - § 129 BGB
+  - § 126 Abs. 4 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-form-311b
+  type: norm
+  front: Welchen Formzwang und welche Heilung regelt § 311b Abs. 1 BGB?
+  back: >-
+    Ein Vertrag, durch den sich ein Teil verpflichtet, das Eigentum an einem Grundstück
+    zu übertragen oder zu erwerben, bedarf nach § 311b Abs. 1 S. 1 BGB der notariellen
+    Beurkundung. Der Formzwang erfasst alle Vereinbarungen, aus denen sich nach dem
+    Willen der Parteien das schuldrechtliche Veräußerungsgeschäft zusammensetzt,
+    auch Nebenabreden und Vorverträge sowie Optionen und bindende Angebote, soweit sie zur Veräußerung oder zum Erwerb verpflichten. Ein ohne Beachtung der Form geschlossener Vertrag
+    wird nach § 311b Abs. 1 S. 2 BGB seinem ganzen Inhalt nach gültig, wenn die
+    Auflassung und die Eintragung in das Grundbuch erfolgen. Die Auflassung selbst
+    ist nach § 925 BGB bei gleichzeitiger Anwesenheit vor dem Notar zu erklären und
+    nicht bedingungsfähig. Der Formzwang dient vor allem der Warnung und Beratung der
+    Parteien. Entsprechende Regelungen enthält § 311b Abs. 2 und 3 BGB.
+  norms:
+  - § 311b Abs. 1 S. 1 BGB
+  - § 311b Abs. 1 S. 2 BGB
+  - § 925 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-form-766
+  type: norm
+  front: Welche Form verlangt die Bürgschaft und wann heilt der Mangel, § 766 BGB?
+  back: >-
+    Zur Gültigkeit des Bürgschaftsvertrags ist nach § 766 S. 1 BGB schriftliche Erteilung
+    der Bürgschaftserklärung erforderlich. Es genügt die eigenhändig unterzeichnete
+    Erklärung des Bürgen (§ 126 BGB), nicht die des Gläubigers; die Erteilung in
+    elektronischer Form ist nach § 766 S. 2 BGB ausgeschlossen. Der wesentliche Inhalt (Gläubiger, Hauptschuld, Bürgenwille) muss aus der Urkunde hervorgehen. Der Mangel der
+    Form wird nach § 766 S. 3 BGB geheilt, soweit der Bürge die Hauptverbindlichkeit
+    erfüllt. Der Formzweck liegt in der Warnung des Bürgen vor der gefährlichen, einseitig
+    verpflichtenden Bürgschaft. Eine Ausnahme enthält § 350 HGB: Ist die Bürgschaft für den Bürgen ein Handelsgeschäft, gilt § 766 S. 1 BGB nicht.
+  norms:
+  - § 766 S. 1 BGB
+  - § 766 S. 2 BGB
+  - § 766 S. 3 BGB
+  - § 350 HGB
+  quellen:
+  - BGB, amtliche Fassung
+  - HGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-form-518
+  type: norm
+  front: Wann ist ein Schenkungsversprechen formbedürftig und wie wird der Mangel
+    geheilt, § 518 BGB?
+  back: >-
+    Zur Gültigkeit eines Vertrags, durch den eine Leistung schenkweise versprochen
+    wird, ist nach § 518 Abs. 1 S. 1 BGB die notarielle Beurkundung des Versprechens
+    erforderlich. Gleiches gilt für ein schenkweise erteiltes Schuldversprechen
+    oder Schuldanerkenntnis (§ 518 Abs. 1 S. 2 BGB). Der Mangel der Form wird nach §
+    518 Abs. 2 BGB durch die Bewirkung der versprochenen Leistung geheilt. Der Formzwang
+    schützt den Schenker vor übereilter Weggabe seines Vermögens (Warnfunktion) und
+    sichert den Nachweis. Die Handschenkung (Vollzug sofort) ist formfrei, weil sie
+    schon durch den Vollzug "gewarnt" ist. 
+  norms:
+  - § 518 Abs. 1 BGB
+  - § 518 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-form-242
+  type: streitstand
+  front: 'Wann darf die Berufung auf den Formmangel nach § 242 BGB treuwidrig sein
+    (Durchbrechung des Formzwangs)?'
+  back: >-
+    Die Rechtsprechung lässt eine Durchbrechung des Formzwangs nur ausnahmsweise zu, weil
+    sie die Formvorschrift sonst aushöhlte. Voraussetzung ist, dass die Nichtigkeit
+    zu einem schlechthin untragbaren, mit Treu und Glauben unvereinbaren Ergebnis
+    führt. Anerkannt sind zwei Fallgruppen: Zum einen die Existenzgefährdung
+    der einen Partei durch die Nichtigkeit; zum anderen eine besonders schwere
+    Treuepflichtverletzung der sich auf den Formmangel berufenden Partei, etwa wenn sie
+    den Formmangel arglistig herbeigeführt hat oder die andere Seite durch eigene
+    Zusicherungen vom Formgebrauch abgehalten hat. Die bloße Tatsache, dass
+    schon Leistungen erbracht wurden, genügt nicht. Die Literatur verlangt teils
+    zusätzliche Schutzzweckprüfung der konkreten Formvorschrift und zieht eine
+    Schadensersatzlösung (culpa in contrahendo) vor, die das Interesse des
+    Geschädigten ausgleicht, ohne den Formzwang zu umgehen.
+  norms:
+  - § 242 BGB
+  - § 125 S. 1 BGB
+  - § 311b Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-form-rechtsgeschaeftlich
+  type: definition
+  front: 'Gewillkürte Form: Was gilt bei vereinbarter Schriftform, § 125 S. 2, § 127
+    BGB?'
+  back: >-
+    Haben die Parteien Schriftform vereinbart, gilt § 127 BGB: Mangels abweichender
+    Vereinbarung genügen nach § 127 Abs. 2 BGB die telekommunikative Übermittlung und
+    bei einem Vertrag der Briefwechsel; nach § 127 Abs. 1 BGB sind sonst die
+    Vorschriften der §§ 126, 126a, 126b BGB sinngemäß anzuwenden. Der Formmangel
+    führt nach § 125 S. 2 BGB nur im Zweifel zur Nichtigkeit; die Parteien können
+    die Form jederzeit formlos aufheben, auch konkludent, indem sie das Geschäft
+    erkennbar formlos gelten lassen wollen. In Allgemeinen Geschäftsbedingungen
+    kann eine Schriftformklausel den Vorrang einer mündlichen Individualabrede
+    nicht beseitigen, § 305b BGB. Anders als beim gesetzlichen Formzwang gibt es
+    hier keine Heilungsvorschriften; maßgeblich ist der Parteiwille.
+  norms:
+  - § 125 S. 2 BGB
+  - § 127 BGB
+  - § 305b BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-at-form-pruefung
+  title: Prüfung der Formwirksamkeit eines Rechtsgeschäfts
+  norms:
+  - § 125 BGB
+  - § 126 BGB
+  - § 311b Abs. 1 BGB
+  - § 242 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Formbedürftigkeit
+    children:
+    - label: 1. Gesetzlicher Formzwang, z. B. § 311b Abs. 1, § 518, § 766 BGB
+      hinweis: Auf den Zweck der Norm achten (Warn-, Beweis-, Beratungsfunktion).
+    - label: 2. Vereinbarte Form, §§ 125 S. 2, 127 BGB
+  - label: II. Einhaltung der Form
+    children:
+    - label: 1. Schriftform, § 126 BGB / Textform, § 126b BGB
+    - label: 2. Notarielle Beurkundung, §§ 127a, 128 BGB
+      hinweis: Vollständigkeit der Beurkundung - alle Abreden, die Teil des
+        Geschäfts sind (Schwarzkauf, § 117 BGB).
+  - label: III. Rechtsfolge des Formmangels - Nichtigkeit, § 125 BGB
+  - label: IV. Heilung des Formmangels
+    children:
+    - label: 1. § 311b Abs. 1 S. 2 BGB - Auflassung und Eintragung
+    - label: 2. § 518 Abs. 2 BGB - Bewirken der Leistung
+    - label: 3. § 766 S. 3 BGB - Erfüllung der Hauptschuld
+  - label: V. Durchbrechung nach § 242 BGB
+    hinweis: Nur bei schlechthin untragbarem Ergebnis - Existenzgefährdung oder
+      besonders schwere Treuepflichtverletzung.
+faelle:
+- slug: zr-fall-at-form-grundstueckskauf
+  title: Der Handschlag unter Nachbarn
+  difficulty: 2
+  minutes: 30
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Der Nachbar V verkauft dem K mündlich per Handschlag ein unbebautes Grundstück
+    für 80.000 Euro. K überweist 8.000 Euro als Anzahlung und beginnt, das Grundstück zu vermessen. Beide halten den Handschlag für verbindlich. Ein Notartermin findet nicht statt. Als der Wert des Grundstücks
+    steigt, weigert sich V, das Grundstück zu übereignen, und beruft sich auf die
+    fehlende Beurkundung. K verlangt Übereignung, hilfsweise Rückzahlung der
+    Anzahlung. K ist nicht auf das Grundstück angewiesen und hat noch keine weiteren
+    Investitionen getätigt.
+  question: Kann K von V Übereignung des Grundstücks aus § 433 Abs. 1 S. 1 BGB
+    oder zumindest Rückzahlung der Anzahlung verlangen?
+  steps:
+  - prompt: Formuliere den Obersatz.
+    erwartung: >-
+      K könnte gegen V einen Anspruch auf Übereignung des Grundstücks aus § 433
+      Abs. 1 S. 1 BGB haben, wenn ein wirksamer Kaufvertrag zustande gekommen ist.
+  - prompt: Ist der Kaufvertrag formwirksam?
+    erwartung: >-
+      Nein. Ein Vertrag, der zur Übertragung von Grundstückseigentum verpflichtet,
+      bedarf nach § 311b Abs. 1 S. 1 BGB der notariellen Beurkundung. Der
+      mündliche Vertrag ist daher nach § 125 S. 1 BGB nichtig.
+  - prompt: Ist der Formmangel geheilt worden?
+    erwartung: >-
+      Nein. Eine Heilung nach § 311b Abs. 1 S. 2 BGB setzt Auflassung und
+      Eintragung im Grundbuch voraus; beides ist nicht erfolgt. Die Zahlung der
+      Anzahlung heilt den Formmangel nicht.
+  - prompt: Kann V sich nach § 242 BGB nicht auf den Formmangel berufen?
+    erwartung: >-
+      Nein. Die Durchbrechung ist nur bei schlechthin untragbarem Ergebnis
+      möglich (Existenzgefährdung oder besonders schwere Treuepflichtverletzung).
+      Hier fehlt beides: K ist nicht existenziell betroffen und V hat K nicht
+      arglistig getäuscht. Ein Erfüllungsanspruch besteht nicht.
+  - prompt: Kann K die Anzahlung zurückverlangen?
+    erwartung: >-
+      Ja. Die Zahlung erfolgte ohne Rechtsgrund; K kann sie nach § 812 Abs. 1 S. 1
+      Alt. 1 BGB (Leistungskondiktion) zurückverlangen. Der Anspruch ist nicht nach § 814 BGB ausgeschlossen, weil K die Formnichtigkeit nicht kannte, sondern von der Wirksamkeit ausging.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Formbedürftigkeit nach § 311b Abs. 1 S. 1 BGB und Nichtigkeit nach §
+        125 S. 1 BGB
+      weight: 3.0
+      required: true
+      norms:
+      - § 311b Abs. 1 S. 1 BGB
+      - § 125 S. 1 BGB
+      keywords:
+      - "§ 311b Abs. 1 S. 1"
+      - "notarielle Beurkundung"
+      - "§ 125 S. 1"
+      - "Formmangel"
+      - "formnichtig"
+      card_slugs:
+      - zr-at-form-311b
+      - zr-at-form-grundsatz-125
+    - id: p2
+      label: Keine Heilung nach § 311b Abs. 1 S. 2 BGB mangels Auflassung und Eintragung
+      weight: 2.0
+      required: true
+      norms:
+      - § 311b Abs. 1 S. 2 BGB
+      keywords:
+      - "§ 311b Abs. 1 S. 2"
+      - "Auflassung und Eintragung"
+      - "Heilung"
+      - "keine Heilung"
+      card_slugs:
+      - zr-at-form-311b
+    - id: p3
+      label: Durchbrechung nach § 242 BGB abgelehnt (kein untragbares Ergebnis)
+      weight: 2.0
+      required: false
+      norms:
+      - § 242 BGB
+      keywords:
+      - "§ 242"
+      - "Treu und Glauben"
+      - "schlechthin untragbar"
+      - "Existenzgefährdung"
+      - "Treuepflichtverletzung"
+      card_slugs:
+      - zr-at-form-242
+    - id: p4
+      label: Rückzahlung der Anzahlung nach § 812 Abs. 1 S. 1 Alt. 1 BGB
+      weight: 2.0
+      required: false
+      norms:
+      - § 812 Abs. 1 S. 1 BGB
+      keywords:
+      - "§ 812 Abs. 1 S. 1 Alt. 1"
+      - "Leistungskondiktion"
+      - "ohne rechtlichen Grund"
+      - "condictio indebiti"

@@ -1,0 +1,403 @@
+topic:
+  slug: zr-at-vertragsschluss
+  area: zivilrecht
+  title: Vertragsschluss - Angebot, Annahme, Zugang und Dissens, §§ 145 ff. BGB
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-at-vs-angebot-annahme
+  type: definition
+  front: 'Definiere: Angebot (Antrag) und Annahme, §§ 145 ff. BGB'
+  back: >-
+    Ein Vertrag kommt durch zwei übereinstimmende, aufeinander bezogene
+    Willenserklärungen zustande. Das Angebot ist die empfangsbedürftige
+    Willenserklärung, die so bestimmt oder bestimmbar ist, dass die Annahme
+    durch bloßes "Ja" möglich ist (essentialia negotii, beim Kauf Parteien,
+    Kaufsache und Preis), und die mit Rechtsbindungswillen abgegeben wird. Die
+    Annahme ist die vorbehaltlose Zustimmung zu diesem Angebot. Wer ein Angebot
+    macht, ist daran nach § 145 BGB gebunden, sofern er die Bindung nicht
+    ausgeschlossen hat (etwa durch "freibleibend"). Maßgeblich ist stets der
+    objektive Empfängerhorizont (§§ 133, 157 BGB).
+  norms:
+  - § 145 BGB
+  - § 147 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-vs-invitatio
+  type: definition
+  front: 'Abgrenze: Angebot und invitatio ad offerendum - welche typischen Fälle sind
+    nur eine Aufforderung zur Angebotsabgabe?'
+  back: >-
+    Eine invitatio ad offerendum ist die Aufforderung an andere, ihrerseits
+    Angebote abzugeben; es fehlt der Rechtsbindungswille zum Vertragsschluss
+    durch bloße Annahme. Maßgeblich ist die Auslegung nach dem objektiven
+    Empfängerhorizont (§§ 133, 157 BGB). Typische Fälle sind Schaufensterauslagen,
+    Preislisten, Kataloge, Zeitungsanzeigen und die Warenpräsentation im
+    Online-Shop: Der Anbieter will sich nicht ohne Prüfung von Lagerbestand und
+    Bonität an eine unbegrenzte Zahl von Käufern binden. Das Angebot gibt dann
+    der Kunde ab (Bestellung, Gang zur Kasse im Selbstbedienungsladen), der
+    Anbieter nimmt an. Die automatische Eingangsbestätigung im Online-Shop nach
+    § 312i Abs. 1 S. 1 Nr. 3 BGB ist in der Regel noch keine Annahme.
+  norms:
+  - § 145 BGB
+  - § 133 BGB
+  - § 157 BGB
+  - § 312i Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-vs-zugang-130
+  type: norm
+  front: Wann geht eine Willenserklärung unter Abwesenden zu, § 130 Abs. 1 BGB?
+  back: >-
+    Eine empfangsbedürftige Willenserklärung unter Abwesenden wird nach § 130
+    Abs. 1 S. 1 BGB in dem Zeitpunkt wirksam, in dem sie dem Empfänger zugeht.
+    Zugegangen ist sie, wenn sie so in den Machtbereich des Empfängers gelangt
+    ist, dass dieser unter normalen Umständen die Möglichkeit der Kenntnisnahme
+    hat und mit der Kenntnisnahme nach der Verkehrsanschauung zu rechnen ist.
+    Auf die tatsächliche Kenntnisnahme kommt es nicht an. Beim Hausbriefkasten
+    ist das der Zeitpunkt der üblichen Leerung, bei der E-Mail im Privatverkehr
+    in der Regel der Abruf bzw. der nächstmögliche übliche Abruf, bei
+    Geschäftsleuten die Geschäftszeit. Ein rechtzeitig oder gleichzeitig
+    zugehender Widerruf verhindert das Wirksamwerden, § 130 Abs. 1 S. 2 BGB.
+    Tod oder Geschäftsunfähigkeit des Erklärenden nach Abgabe schaden nicht, §
+    130 Abs. 2 BGB.
+  norms:
+  - § 130 Abs. 1 BGB
+  - § 130 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-vs-empfangsbote-vertreter
+  type: definition
+  front: 'Unterscheide: Empfangsbote und Empfangsvertreter beim Zugang'
+  back: >-
+    Empfangsvertreter ist, wer mit Vertretungsmacht für den Empfänger
+    Willenserklärungen entgegennehmen darf (passive Stellvertretung, § 164 Abs.
+    3 BGB). Die Erklärung geht schon im Zeitpunkt der Übergabe an den Vertreter
+    dem Vertretenen zu. Empfangsbote ist, wer vom Empfänger zur Entgegennahme
+    bestellt oder nach der Verkehrsanschauung als hierzu ermächtigt anzusehen
+    ist, etwa Ehegatten oder Mitbewohner, Büropersonal. Bei ihm gilt die
+    Erklärung erst dann als zugegangen, wenn nach dem regelmäßigen Verlauf der
+    Dinge die Weiterleitung an den Empfänger zu erwarten ist. Verzögert der
+    Bote die Weiterleitung, geht das Risiko zulasten des Erklärenden. Kinder
+    oder zufällig Anwesende sind keine Empfangsboten.
+  norms:
+  - § 130 Abs. 1 BGB
+  - § 164 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-vs-zugangsvereitelung
+  type: streitstand
+  front: 'Zugangsvereitelung: Welche Folgen hat es, wenn der Empfänger den Zugang
+    treuwidrig verhindert?'
+  back: >-
+    Wer den Zugang einer Erklärung treuwidrig verhindert, darf sich nach § 242
+    BGB nicht auf den fehlenden Zugang berufen. Voraussetzung ist, dass er mit
+    rechtserheblichen Mitteilungen rechnen musste (etwa bei bestehender
+    Vertragsbeziehung oder laufendem Streit) und den Zugang ohne triftigen Grund
+    verhindert, zum Beispiel durch Annahmeverweigerung oder Entfernen des
+    Briefkastens. Folge: Die Erklärung gilt nach überwiegender Auffassung als
+    in dem Zeitpunkt zugegangen, in dem sie ohne die Vereitelung zugegangen
+    wäre. Teile der Rechtsprechung (insbesondere im Arbeitsrecht) verlangen
+    zusätzlich, dass der Erklärende nach dem Fehlschlag unverzüglich einen
+    neuen Zustellversuch unternimmt. Das bloße Hinterlegen eines
+    Benachrichtigungszettels beim Einschreiben ist nach der Rechtsprechung noch
+    kein Zugang des Einschreibens; eine bloße Nichtabholung genügt für die
+    Vereitelung nicht ohne Weiteres.
+  norms:
+  - § 130 Abs. 1 BGB
+  - § 242 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-vs-annahmefrist
+  type: norm
+  front: Bis wann kann ein Angebot angenommen werden, §§ 146 bis 149 und 151 BGB?
+  back: >-
+    Das Angebot erlischt durch Ablehnung oder Fristablauf (§ 146 BGB). Ein
+    Angebot unter Anwesenden kann nur sofort angenommen werden, § 147 Abs. 1 BGB
+    (gilt auch für Telefon). Unter Abwesenden gilt die Annahmefrist bis zu dem
+    Zeitpunkt, in dem der Antragende den Eingang der Antwort unter regelmäßigen
+    Umständen erwarten darf, § 147 Abs. 2 BGB (Übermittlungs-, Überlegungs- und
+    Rückübermittlungszeit). Hat der Antragende eine Frist bestimmt, kann die
+    Annahme nur innerhalb dieser Frist erfolgen, § 148 BGB. Verspätet zugehende
+    Annahme ist nach § 150 Abs. 1 BGB ein neuer Antrag. Nach § 151 S. 1 BGB
+    bedarf es des Zugangs der Annahmeerklärung nicht, wenn eine solche nach
+    der Verkehrssitte nicht zu erwarten ist oder der Antragende darauf
+    verzichtet; Annahme ist dann etwa das Betätigen des Annahmewillens
+    (Versendung der Ware).
+  norms:
+  - § 146 BGB
+  - § 147 BGB
+  - § 148 BGB
+  - § 150 Abs. 1 BGB
+  - § 151 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-vs-aenderung-150
+  type: norm
+  front: Was gilt, wenn der Annehmende das Angebot nur mit Änderungen annimmt, §
+    150 Abs. 2 BGB?
+  back: >-
+    Eine Annahme unter Erweiterungen, Einschränkungen oder sonstigen Änderungen
+    gilt nach § 150 Abs. 2 BGB als Ablehnung verbunden mit einem neuen Antrag.
+    Das ursprüngliche Angebot erlischt dadurch (§ 146 BGB) und kann nicht mehr
+    angenommen werden. Ein Vertrag kommt nur zustande, wenn der ursprüngliche
+    Antragende das neue Angebot seinerseits annimmt. Das Schweigen auf das
+    geänderte Angebot ist grundsätzlich keine Annahme. Die Abgrenzung zwischen
+    bloßer Annahme und Änderung erfolgt durch Auslegung: Unwesentliche, nur
+    klarstellende Zusätze können unschädlich sein. Kollidieren die
+    Allgemeinen Geschäftsbedingungen beider Seiten ("battle of forms"),
+    kommt der Vertrag nach h. M. gleichwohl zustande, wenn die Parteien ihn
+    durchführen; die sich widersprechenden Klauseln entfallen und es gilt das
+    Gesetz, § 306 Abs. 2 BGB.
+  norms:
+  - § 150 Abs. 2 BGB
+  - § 146 BGB
+  - § 306 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-vs-schweigen
+  type: streitstand
+  front: 'Schweigen im Rechtsverkehr: Wann hat es ausnahmsweise Erklärungswert, insbesondere
+    beim kaufmännischen Bestätigungsschreiben?'
+  back: >-
+    Schweigen ist grundsätzlich keine Willenserklärung und keine Zustimmung
+    ("Wer schweigt, stimmt nicht zu"). Ausnahmen: (1) Die Parteien haben
+    vereinbart, dass Schweigen als Annahme gilt. (2) Das Gesetz ordnet es an,
+    etwa § 362 Abs. 1 HGB (Kaufmann, dessen Gewerbe Geschäftsbesorgung für
+    andere umfasst) oder § 516 Abs. 2 S. 2 BGB (Schenkungsangebot nach
+    Fristsetzung). (3) Das kaufmännische Bestätigungsschreiben nach
+    Gewohnheitsrecht. Dessen Voraussetzungen: Beide Seiten nehmen als Kaufleute
+    oder in vergleichbarer Weise am Geschäftsverkehr teil; es gingen
+    Vertragsverhandlungen voraus; das Schreiben folgt in engem zeitlichen
+    Zusammenhang; es gibt das Verhandlungsergebnis zutreffend oder nur
+    unerheblich abweichend wieder; der Absender ist schutzwürdig; der Empfänger
+    widerspricht nicht unverzüglich. Dann gilt der Vertrag mit dem bestätigten
+    Inhalt. Umstritten ist, ob das Schweigen einer Willenserklärung gleichsteht
+    (dann Anfechtung analog § 119 Abs. 1 BGB) oder nur eine Beweis- und
+    Vertrauensfolge auslöst.
+  norms:
+  - § 362 HGB
+  - § 516 Abs. 2 BGB
+  - § 119 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - HGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-vs-dissens
+  type: norm
+  front: 'Unterscheide: offener Dissens, § 154 BGB, und versteckter Dissens, § 155
+    BGB'
+  back: >-
+    Ein Vertrag setzt Einigung über alle Punkte voraus, die zumindest eine
+    Partei für regelungsbedürftig hält. Beim offenen Dissens wissen die
+    Parteien, dass sie sich noch nicht über alle Punkte geeinigt haben: Nach §
+    154 Abs. 1 S. 1 BGB ist im Zweifel kein Vertrag geschlossen, solange sich
+    die Parteien nicht über alle Punkte geeinigt haben, über die nach der
+    Erklärung auch nur einer Partei eine Vereinbarung getroffen werden soll;
+    nach § 154 Abs. 2 BGB gilt dasselbe, wenn eine Beurkundung verabredet ist.
+    Beim versteckten Dissens glauben die Parteien irrtümlich, sich geeinigt zu
+    haben (§ 155 BGB). Der Vertrag gilt, soweit anzunehmen ist, dass er auch
+    ohne Bestimmung über den ungeregelten Punkt geschlossen worden wäre. Vorrangig
+    ist stets die normative Auslegung (§§ 133, 157 BGB): Ein Dissens liegt nur
+    vor, wenn auch sie keine Einigung ergibt.
+  norms:
+  - § 154 BGB
+  - § 155 BGB
+  - § 133 BGB
+  - § 157 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-vs-versteigerung-online
+  type: rechtsprechung
+  front: Wie qualifiziert der BGH Vertragsschlüsse bei einer Internetauktion?
+  back: >-
+    Nach BGHZ 149, 129 (Internet-Auktion) kommt der Vertrag bei einer
+    Plattform mit Auktionscharakter nicht durch einen Zuschlag nach § 156 BGB
+    zustande, denn es fehlt der Auktionator. Die Freischaltung des
+    Verkaufsangebots durch den Anbieter ist ein bindendes, an den späteren
+    Höchstbietenden gerichtetes Angebot (ad incertas personas), auf das der
+    Anbieter mit dem Einstellen im Voraus eine Annahme erklärt. Das Gebot des
+    Bieters ist die Annahmeerklärung. Der Vertrag kommt mit dem zum Fristende
+    Höchstbietenden zustande. Die Bedingungen der Plattform sind für die
+    Auslegung der Erklärungen maßgeblich. Der Fall zeigt die Technik, beim
+    Online-Handel zunächst Angebot und Annahme sauber zu trennen und die
+    jeweiligen Zugangsvoraussetzungen zu prüfen (§ 151 BGB).
+  norms:
+  - § 145 BGB
+  - § 151 BGB
+  - § 156 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - BGH, BGHZ 149, 129
+schemata:
+- slug: zr-schema-at-vs-vertragsschluss
+  title: Zustandekommen eines Vertrags durch Angebot und Annahme
+  norms:
+  - § 145 BGB
+  - § 130 BGB
+  - § 147 BGB
+  - § 150 BGB
+  - § 154 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Angebot (Antrag), § 145 BGB
+    children:
+    - label: 1. Willenserklärung mit Rechtsbindungswillen
+      hinweis: Abgrenzung zur invitatio ad offerendum (Schaufenster, Katalog,
+        Online-Shop-Präsentation).
+    - label: 2. Hinreichende Bestimmtheit - Annahme durch bloßes Ja möglich
+    - label: 3. Wirksamwerden durch Zugang, § 130 Abs. 1 BGB
+      hinweis: Machtbereich plus Möglichkeit der Kenntnisnahme; Empfangsbote
+        oder Empfangsvertreter beachten.
+    - label: 4. Keine Bindung ausgeschlossen, kein Widerruf nach § 130 Abs. 1 S. 2 BGB
+  - label: II. Kein Erlöschen des Angebots, §§ 146 ff. BGB
+    children:
+    - label: 1. Keine Ablehnung, § 146 BGB
+      hinweis: Annahme mit Änderungen = Ablehnung plus neues Angebot, § 150 Abs. 2 BGB.
+    - label: 2. Annahme rechtzeitig, §§ 147, 148, 150 Abs. 1 BGB
+  - label: III. Annahme
+    children:
+    - label: 1. Annahmeerklärung, grundsätzlich zugangsbedürftig
+      hinweis: Schweigen ist keine Annahme; Ausnahmen kaufmännisches
+        Bestätigungsschreiben, § 362 HGB.
+    - label: 2. Ausnahme § 151 BGB - Zugang entbehrlich
+    - label: 3. Deckungsgleichheit mit dem Angebot
+  - label: IV. Kein Dissens, §§ 154, 155 BGB
+    hinweis: Zuerst Auslegung nach §§ 133, 157 BGB, erst danach Dissens.
+  - label: V. Ergebnis - Vertrag zustande gekommen
+faelle:
+- slug: zr-fall-at-vs-gebrauchtwagen
+  title: Das geänderte Angebot
+  difficulty: 2
+  minutes: 30
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Die Privatperson V bietet der Privatperson K schriftlich einen
+    gebrauchten Pkw für 8.000 Euro an und bestimmt, dass sie sich bis zum
+    10. Oktober an das Angebot gebunden hält. Der Brief wird am 2. Oktober
+    gegen 10 Uhr in den Hausbriefkasten des K geworfen. Am 8. Oktober
+    schickt K eine E-Mail an V: "Einverstanden, aber nur für 7.500 Euro." V
+    liest die E-Mail, antwortet aber nicht. Am 12. Oktober erklärt K per E-Mail:
+    "Ich nehme den Wagen jetzt doch für 8.000 Euro." V schweigt weiter und
+    verkauft den Pkw am 14. Oktober an einen Dritten. K verlangt Übereignung
+    des Pkw.
+  question: Besteht zwischen K und V ein Kaufvertrag, aus dem K Übereignung des
+    Pkw verlangen kann?
+  steps:
+  - prompt: Formuliere den Obersatz zum Anspruch des K.
+    erwartung: >-
+      K könnte gegen V einen Anspruch auf Übergabe und Übereignung des Pkw aus
+      § 433 Abs. 1 S. 1 BGB haben, wenn zwischen beiden ein Kaufvertrag durch
+      übereinstimmende Willenserklärungen zustande gekommen ist.
+  - prompt: Liegt ein wirksames Angebot des V vor?
+    erwartung: >-
+      Ja. Der Brief enthält die wesentlichen Vertragsbestandteile (Parteien,
+      Kaufsache, Preis) mit Rechtsbindungswillen und ist am 2. Oktober mit dem
+      Einwurf in den Hausbriefkasten gemäß § 130 Abs. 1 S. 1 BGB zugegangen. V
+      ist nach § 145 BGB bis zum 10. Oktober gebunden (§ 148 BGB).
+  - prompt: Hat K das Angebot am 8. Oktober angenommen?
+    erwartung: >-
+      Nein. Die Erklärung unter Änderung des Preises ist nach § 150 Abs. 2 BGB
+      eine Ablehnung verbunden mit einem neuen Antrag. Das ursprüngliche Angebot
+      des V ist damit nach § 146 BGB erloschen.
+  - prompt: Hat V das neue Angebot des K über 7.500 Euro angenommen?
+    erwartung: >-
+      Nein. Schweigen ist grundsätzlich keine Annahme. Es fehlt eine
+      Vereinbarung, eine gesetzliche Anordnung (§ 362 HGB gilt nicht) und ein
+      kaufmännisches Bestätigungsschreiben, da beide Privatpersonen sind.
+  - prompt: Was bewirkt die Erklärung des K vom 12. Oktober?
+    erwartung: >-
+      Das Angebot des V war bereits durch die Ablehnung erloschen (und die
+      Frist am 10. Oktober abgelaufen, § 148 BGB). Die verspätete Annahme ist
+      daher nach § 150 Abs. 1 BGB ein neuer Antrag des K über 8.000 Euro. V hat
+      ihn nicht angenommen, sein Schweigen ist keine Annahme.
+  - prompt: Ergebnis?
+    erwartung: >-
+      Es ist kein Kaufvertrag zustande gekommen. K hat keinen Anspruch aus §
+      433 Abs. 1 S. 1 BGB.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Angebot des V wirksam durch Zugang, Bindung bis Fristende
+      weight: 1.0
+      required: false
+      norms:
+      - § 130 Abs. 1 BGB
+      - § 145 BGB
+      keywords:
+      - "§ 130 Abs. 1"
+      - "Zugang"
+      - "Machtbereich"
+      - "Bindung an das Angebot"
+      - "§ 145 BGB"
+      card_slugs:
+      - zr-at-vs-zugang-130
+      - zr-at-vs-angebot-annahme
+    - id: p2
+      label: Erklärung vom 8. Oktober als Ablehnung mit neuem Antrag nach § 150 Abs.
+        2 BGB, Erlöschen des Angebots
+      weight: 3.0
+      required: true
+      norms:
+      - § 150 Abs. 2 BGB
+      - § 146 BGB
+      keywords:
+      - "§ 150 Abs. 2"
+      - "Ablehnung verbunden mit neuem Antrag"
+      - "Annahme unter Änderungen"
+      - "Angebot erloschen"
+      - "§ 146 BGB"
+      card_slugs:
+      - zr-at-vs-aenderung-150
+    - id: p3
+      label: Schweigen des V ist keine Annahme
+      weight: 2.0
+      required: true
+      keywords:
+      - "Schweigen ist keine Willenserklärung"
+      - "Schweigen als Annahme"
+      - "kein Bestätigungsschreiben"
+      - "§ 362 HGB"
+      - "keine Annahme durch Schweigen"
+      card_slugs:
+      - zr-at-vs-schweigen
+    - id: p4
+      label: Spätere Erklärung des K als verspätete Annahme, die als neuer Antrag gilt
+      weight: 2.0
+      required: false
+      norms:
+      - § 150 Abs. 1 BGB
+      - § 148 BGB
+      keywords:
+      - "§ 150 Abs. 1"
+      - "verspätete Annahme"
+      - "neuer Antrag"
+      - "Annahmefrist abgelaufen"
+      - "§ 148 BGB"
+      card_slugs:
+      - zr-at-vs-annahmefrist
+    - id: p5
+      label: Ergebnis - kein Kaufvertrag, kein Anspruch aus § 433 Abs. 1 BGB
+      weight: 1.0
+      required: false
+      keywords:
+      - "kein Kaufvertrag zustande gekommen"
+      - "kein Anspruch aus § 433 Abs. 1"
+      - "Vertrag nicht geschlossen"
