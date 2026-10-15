@@ -162,8 +162,7 @@ cards:
     sich der Eigentümer in der notariellen Urkunde der sofortigen Zwangsvollstreckung
     (§ 794 Abs. 1 Nr. 5 ZPO), ergänzend mit abstraktem Schuldanerkenntnis (§ 780,
     781 BGB). Die Verwertung erfolgt durch Zwangsversteigerung oder Zwangsverwaltung
-    nach dem ZVG. Die Grundschuld wird fällig durch Kündigung (§ 1193 Abs. 1 BGB,
-    Frist sechs Monate), sofern nichts anderes bestimmt ist. Die Haftung erstreckt
+    nach dem ZVG. Das Kapital der Grundschuld wird erst nach Kündigung fällig, die Eigentümer wie Gläubiger zusteht (§ 1193 Abs. 1 BGB, Frist sechs Monate); abweichende Bestimmungen sind nur zulässig, solange die Grundschuld nicht der Sicherung einer Geldforderung dient (§ 1193 Abs. 2 BGB), bei der Sicherungsgrundschuld also nicht. Die Haftung erstreckt
     sich auf das Grundstück samt Bestandteilen, Erzeugnissen, Zubehör und Miet- und
     Pachtzinsen (Haftungsverband, §§ 1120 ff. BGB). Einreden des Eigentümers sind
     im Duldungsprozess zu prüfen.
@@ -210,8 +209,7 @@ cards:
     Der Pfandgläubiger befriedigt sich aus dem Pfand durch Verkauf (§ 1228 Abs. 1
     BGB). Der Verkauf ist erst zulässig, wenn die Forderung ganz oder teilweise fällig
     ist (Pfandreife, § 1228 Abs. 2 BGB), und hat im Wege öffentlicher Versteigerung
-    zu erfolgen (§ 1235 Abs. 1 BGB). Der Verkauf ist dem Verpfänder zuvor anzudrohen,
-    und es ist eine Wartefrist einzuhalten (§ 1234 BGB). Der Erwerber erlangt bei
+    zu erfolgen (§ 1235 Abs. 1 BGB). Der Verkauf ist dem Eigentümer zuvor anzudrohen (die Androhung darf unterbleiben, wenn sie untunlich ist), und es ist eine Wartefrist von einem Monat nach der Androhung einzuhalten (§ 1234 BGB). Der Erwerber erlangt bei
     rechtmäßiger Veräußerung das Eigentum, als hätte er es vom Eigentümer erworben
     (§ 1242 Abs. 1 BGB); bei Verfahrensmängeln gilt § 1244 BGB. Der Erlös tritt an
     die Stelle des Pfandes. Vereinbarungen vor Pfandreife, nach denen dem Gläubiger
@@ -275,7 +273,7 @@ schemata:
     - label: 2. Eintragung oder Brief bei der Übertragung
   - label: III. Fälligkeit
     hinweis: >-
-      Kündigung, § 1193 BGB (Frist sechs Monate); Zahlungsverzug ist keine
+      Kündigung, § 1193 Abs. 1 BGB (Frist sechs Monate, bei Sicherungsgrundschuld nicht abdingbar, § 1193 Abs. 2 S. 2); Zahlungsverzug ist keine
       Voraussetzung der Fälligkeit; Vollstreckung setzt einen Duldungstitel voraus.
   - label: IV. Kein Anspruchsausschluss durch Einreden
     children:

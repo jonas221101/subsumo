@@ -40,8 +40,7 @@ cards:
   front: Welche Sonderregeln gelten für Handelsgeschäfte (§§ 343 ff. HGB)?
   back: Handelsgeschäfte sind alle Geschäfte eines Kaufmanns, die zum Betrieb seines Handelsgewerbes
     gehören (§ 343 Abs. 1 HGB). Die von einem Kaufmann vorgenommenen Rechtsgeschäfte gelten
-    im Zweifel als zum Betrieb des Handelsgewerbes gehörig (§ 344 Abs. 1 HGB); ein Schuldschein
-    gilt im Zweifel als im Betrieb gezeichnet (§ 344 Abs. 2 HGB). Unter Kaufleuten ist auf
+    im Zweifel als zum Betrieb des Handelsgewerbes gehörig (§ 344 Abs. 1 HGB); ein von einem Kaufmann gezeichneter Schuldschein gilt als im Betrieb gezeichnet, sofern sich aus der Urkunde nicht das Gegenteil ergibt (§ 344 Abs. 2 HGB). Unter Kaufleuten ist auf
     die im Handelsverkehr geltenden Gewohnheiten und Gebräuche Rücksicht zu nehmen (§ 346
     HGB), und die Sorgfalt eines ordentlichen Kaufmanns ist maßgeblich (§ 347 Abs. 1 HGB).
     Zu den Sondervorschriften zählen ferner die Formfreiheit von Bürgschaft, Schuldversprechen
@@ -170,8 +169,7 @@ cards:
     nach Entdeckung gerügt werden, sonst gilt die Ware ebenfalls als genehmigt (§ 377 Abs.
     3 HGB). Die Rechtzeitigkeit der Absendung genügt (§ 377 Abs. 4 HGB). Auf Arglist des Verkäufers
     kann er sich nicht berufen (§ 377 Abs. 5 HGB). Rechtsfolge ist der Verlust der Mängelrechte
-    aus § 437 BGB (Genehmigungsfiktion), nicht der Erfüllungsanspruch. Die Rügeobliegenheit
-    trifft auch Falsch- und Zuweniglieferungen, die nach § 434 Abs. 5 BGB dem Sachmangel gleichstehen.
+    aus § 437 BGB (Genehmigungsfiktion), nicht der Erfüllungsanspruch. Die Rügeobliegenheit trifft auch die Falschlieferung (Aliud, die nach § 434 Abs. 5 BGB dem Sachmangel gleichsteht) sowie Mengenabweichungen (Menge gehört zur Beschaffenheit, § 434 Abs. 2 S. 2, Abs. 3 S. 2 BGB).
     Sie gilt nur unter Kaufleuten, nicht gegenüber einem Verbraucher.
   norms:
   - § 377 Abs. 1 HGB
