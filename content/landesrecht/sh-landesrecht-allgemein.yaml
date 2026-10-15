@@ -28,18 +28,14 @@ cards:
   stand: 2026-09
 - slug: sh-lra-verfassungsgericht
   type: norm
-  front: Gibt es in Schleswig-Holstein eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
-  back: 'Nein - keine Individualverfassungsbeschwerde zum Landesverfassungsgericht. Zuständiges Gericht:
-    Schleswig-Holsteinisches Landesverfassungsgericht auf Grundlage der Verfassung des Landes Schleswig-Holstein
-    (LV SH). Verfahrensgegenstand ist nur die Verletzung von Landesgrundrechten durch Landesstaatsgewalt;
-    Bundesrecht ist Prüfungsmaßstab nur, soweit die Landesverfassung darauf verweist. Daneben steht immer
-    die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
+  front: Welche Verfahren stehen vor dem Schleswig-Holsteinischen Landesverfassungsgericht offen und wie verhält sich das zur Verfassungsbeschwerde zum BVerfG?
+  back: 'Zuständiges Gericht ist das Schleswig-Holsteinische Landesverfassungsgericht auf Grundlage der Verfassung des Landes Schleswig-Holstein (LV SH). Es entscheidet u. a. in Organstreitigkeiten, in Normenkontrollverfahren und über kommunale Verfassungsbeschwerden; Prüfungsmaßstab ist die Landesverfassung, Bundesrecht nur, soweit die Landesverfassung darauf verweist. Ob und in welchem Umfang einzelne Bürger Landesgrundrechte mit einer Individualverfassungsbeschwerde geltend machen können, richtet sich nach der LV SH und dem Landesverfassungsgerichtsgesetz und ist dort nachzulesen (redaktionell zu verifizieren). Daneben steht immer die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG), die gegenüber Landesverfassungsrechtsbehelfen eigenständig ist.'
   norms:
   - Verfassung des Landes Schleswig-Holstein (LV SH)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
-  stand: 2026-09
+  stand: 2026-10
 - slug: sh-lra-kommunalverfassung
   type: norm
   front: Welches Gesetz regelt die Kommunalverfassung in Schleswig-Holstein und welche Hauptorgane hat

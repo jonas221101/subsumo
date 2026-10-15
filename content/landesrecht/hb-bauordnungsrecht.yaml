@@ -1,0 +1,341 @@
+topic:
+  slug: hb-bauordnungsrecht
+  area: oeffentliches-recht
+  title: Bauordnungsrecht Bremen
+  parent: or-vwvfg-verwaltungsakt
+  bundesland: HB
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: hb-bo-abgrenzung
+  type: definition
+  front: >-
+    Wie grenzen sich Bauplanungsrecht und Bauordnungsrecht ab und welche Rolle spielt die BremLBO?
+  back: >-
+    Das Bauplanungsrecht regelt die städtebauliche Ordnung der Bodennutzung (Bebauungsplan, Zulässigkeit
+    nach §§ 29 ff. BauGB); es ist Bundesrecht (Art. 74 Abs. 1 Nr. 18 GG). Das Bauordnungsrecht regelt
+    als Landesrecht die Anforderungen an das einzelne Bauvorhaben im Sinne der Gefahrenabwehr: Standsicherheit,
+    Brandschutz, Abstandsflächen, Gestaltung, Stellplätze und das Verfahren. Rechtsgrundlage in Bremen
+    ist die Bremische Landesbauordnung (BremLBO). Im Genehmigungsverfahren sind beide Bereiche zu prüfen:
+    Das Vorhaben muss bauplanungsrechtlich zulässig sein und darf bauordnungsrechtlichen Vorschriften
+    nicht widersprechen. In der Klausur ist die Trennung der Prüfungsebenen wichtig, weil die Rechtsfolgen
+    (Befreiung, § 31 Abs. 2 BauGB; Abweichung nach Landesrecht) unterschiedlich sind.
+  norms:
+  - Bremische Landesbauordnung (BremLBO)
+  - >-
+    §§ 29 ff. BauGB
+  - Art. 74 Abs. 1 Nr. 18 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-bo-baugenehmigung
+  type: norm
+  front: >-
+    Unter welchen Voraussetzungen besteht in Bremen ein Anspruch auf Baugenehmigung?
+  back: >-
+    Der Bauherr hat Anspruch auf die Baugenehmigung, wenn dem Vorhaben keine öffentlich-rechtlichen Vorschriften
+    entgegenstehen. Zu prüfen sind: (1) Genehmigungsbedürftigkeit (Errichtung, Änderung, Nutzungsänderung;
+    keine Verfahrensfreiheit), (2) bauplanungsrechtliche Zulässigkeit (§§ 29 ff. BauGB; Einvernehmen der
+    Gemeinde, § 36 BauGB), (3) bauordnungsrechtliche Zulässigkeit nach der BremLBO, soweit das Verfahren
+    sie zum Prüfprogramm macht, und (4) sonstiges öffentliches Recht. Die Baugenehmigung ist ein Verwaltungsakt,
+    der unbeschadet der Rechte Dritter ergeht. Bauaufsichtsbehörden sind die Bauordnungsbehörden der Stadtgemeinden
+    Bremen und Bremerhaven; Beklagte ist je nach Zuordnung die jeweilige Stadtgemeinde bzw. das Land.
+    Rechtsschutz bei Ablehnung: Verpflichtungsklage nach § 42 Abs. 1 Var. 2 VwGO.
+  norms:
+  - Bremische Landesbauordnung (BremLBO)
+  - >-
+    § 36 BauGB
+  - >-
+    § 42 Abs. 1 VwGO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-bo-verfahrensarten
+  type: definition
+  front: >-
+    Welche Verfahrensarten kennt das Bauordnungsrecht in Bremen und was folgt daraus für die materielle
+    Rechtmäßigkeit?
+  back: >-
+    Die BremLBO unterscheidet nach Gefährdungspotential und Größe des Vorhabens: verfahrensfreie Vorhaben,
+    die Genehmigungsfreistellung bei qualifiziertem Bebauungsplan, das vereinfachte Genehmigungsverfahren
+    mit eingeschränktem Prüfprogramm und das reguläre Genehmigungsverfahren mit umfassender Prüfung. Entscheidend
+    ist: Verfahrensfreiheit oder eingeschränkte Prüfung bedeuten nicht, dass materielle Anforderungen
+    entfallen; sie besagen nur, dass die Bauaufsichtsbehörde das Vorhaben nicht oder nicht vollständig
+    vorab prüft. Auch verfahrensfreie Vorhaben müssen dem materiellen Recht entsprechen, und die Bauaufsichtsbehörde
+    kann bei Verstößen einschreiten. Eine Baugenehmigung im vereinfachten Verfahren stellt nur die Vereinbarkeit
+    mit den in diesem Verfahren geprüften Vorschriften fest.
+  norms:
+  - Bremische Landesbauordnung (BremLBO)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-bo-abstandsflaechen
+  type: norm
+  front: >-
+    Was regelt das Abstandsflächenrecht der BremLBO und welche Rechtsfolgen hat sein Verstoß?
+  back: >-
+    Abstandsflächen (§ 6 BremLBO) sind von oberirdischen Gebäuden freizuhaltende Flächen vor den Außenwänden.
+    Sie dienen dem Brandschutz, der Belichtung, Belüftung und Besonnung sowie dem Wohnfrieden. Die Tiefe
+    bemisst sich nach der Wandhöhe mit einem landesrechtlich festgelegten Faktor und einem Mindestmaß;
+    der konkrete Faktor ist dem Gesetz zu entnehmen. Grundsätzlich liegt die Abstandsfläche auf dem Baugrundstück.
+    Das Abstandsflächenrecht ist weitgehend drittschützend: Ein Nachbar kann sich gegen eine Baugenehmigung
+    wehren, die diese Vorschriften verletzt. Unterschreitungen können im Wege der Abweichung (Landesrecht)
+    gestattet werden, wenn Zweck und öffentliche Belange gewahrt sind. Ein Verstoß macht das Vorhaben
+    materiell rechtswidrig und kann bauaufsichtliche Maßnahmen begründen.
+  norms:
+  - >-
+    § 6 BremLBO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-bo-nachbarschutz
+  type: definition
+  front: >-
+    Unter welchen Voraussetzungen kann ein Nachbar in Bremen gegen eine Baugenehmigung vorgehen?
+  back: >-
+    Der Nachbar kann die Baugenehmigung mit Widerspruch bzw. Anfechtungsklage (Drittanfechtung) angreifen.
+    Klagebefugt (§ 42 Abs. 2 VwGO) ist er, wenn er die Verletzung einer drittschützenden Norm geltend
+    machen kann: nachbarschützend sind etwa die Abstandsflächenvorschriften der BremLBO, bestimmte Festsetzungen
+    eines Bebauungsplans (Gebietserhaltungsanspruch) und das Gebot der Rücksichtnahme. Begründet ist die
+    Klage nur, wenn die Genehmigung rechtswidrig ist und den Nachbarn in einem subjektiven öffentlichen
+    Recht verletzt (Schutznormtheorie); allgemeine objektive Rechtsverstöße genügen nicht. Widerspruch
+    und Anfechtungsklage des Nachbarn haben nach § 212a Abs. 1 BauGB keine aufschiebende Wirkung; vorläufiger
+    Rechtsschutz wird über § 80a Abs. 3 i. V. m. § 80 Abs. 5 VwGO gewährt.
+  norms:
+  - >-
+    § 42 Abs. 2 VwGO
+  - >-
+    § 212a Abs. 1 BauGB
+  - >-
+    § 80a Abs. 3 VwGO
+  - >-
+    § 80 Abs. 5 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-bo-eingriff
+  type: norm
+  front: >-
+    Welche bauaufsichtlichen Eingriffsmaßnahmen gibt es in Bremen und wann genügt formelle Illegalität?
+  back: >-
+    Die Bauaufsichtsbehörde kann bei rechtswidrigen baulichen Anlagen nach der BremLBO einschreiten, insbesondere
+    durch Baueinstellung (Stilllegungsverfügung), Nutzungsuntersagung und Beseitigungsanordnung. Zu unterscheiden
+    sind formelle Illegalität (fehlende erforderliche Genehmigung) und materielle Illegalität (Widerspruch
+    zu materiellem Recht). Für Baueinstellung und Nutzungsuntersagung genügt regelmäßig formelle Illegalität;
+    wegen der Schwere des Eingriffs setzt die Beseitigungsanordnung nach h. M. materielle Illegalität
+    voraus, weil sonst eine genehmigungsfähige Anlage beseitigt würde. Die Maßnahmen stehen im Ermessen;
+    zu beachten sind Verhältnismäßigkeit, Gleichbehandlung und Bestandsschutz. Adressat ist regelmäßig
+    der Bauherr oder der Eigentümer.
+  norms:
+  - Bremische Landesbauordnung (BremLBO)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-bo-bestandsschutz
+  type: definition
+  front: Was bedeutet Bestandsschutz im Bauordnungsrecht von Bremen?
+  back: >-
+    Bestandsschutz folgt aus Art. 14 Abs. 1 GG: Eine rechtmäßig errichtete bauliche Anlage darf in ihrem
+    genehmigten Zustand und in der genehmigten Nutzung fortbestehen, auch wenn sich das Recht später ändert.
+    Voraussetzung ist, dass die Anlage genehmigt oder zumindest zu irgendeinem Zeitpunkt materiell legal
+    war. Eine Beseitigungsanordnung allein wegen späterer Rechtsänderung ist rechtswidrig. Nachträgliche
+    Anpassungsverlangen sind nur nach ausdrücklicher gesetzlicher Ermächtigung und bei erheblicher Gefahr
+    für Leben, Gesundheit oder öffentliche Sicherheit zulässig. Kein Bestandsschutz genießen Schwarzbauten,
+    die nie genehmigt und nie genehmigungsfähig waren. Weitergehende Veränderungen (Erweiterung, Nutzungsänderung)
+    sind vom Bestandsschutz nicht gedeckt.
+  norms:
+  - Art. 14 Abs. 1 GG
+  - Bremische Landesbauordnung (BremLBO)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-bo-abweichung
+  type: definition
+  front: >-
+    Wann kann in Bremen von Anforderungen der BremLBO abgewichen werden und wie unterscheidet sich das
+    von der Befreiung nach dem BauGB?
+  back: >-
+    Die BremLBO erlaubt es der Bauaufsichtsbehörde, Abweichungen von bauordnungsrechtlichen Anforderungen
+    zuzulassen, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der nachbarlichen
+    Belange mit den öffentlichen Belangen vereinbar sind. Es handelt sich um eine Ermessensentscheidung,
+    die bei Erfüllung der Voraussetzungen und ohne entgegenstehende Gründe auf null reduziert sein kann.
+    Die Befreiung nach § 31 Abs. 2 BauGB betrifft dagegen Festsetzungen eines Bebauungsplans und ist Bauplanungsrecht.
+    In der Klausur sind beide Instrumente zu trennen; für die Nachbarschutzprüfung ist maßgeblich, ob
+    die verletzte Norm drittschützend ist und ob die Abweichung die nachbarlichen Belange würdigt.
+  norms:
+  - >-
+    § 31 Abs. 2 BauGB
+  - Bremische Landesbauordnung (BremLBO)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: hb-schema-bo-baugenehmigung
+  title: >-
+    Anspruch auf Baugenehmigung (Verpflichtungsklage) nach der BremLBO
+  norms:
+  - Bremische Landesbauordnung (BremLBO)
+  - >-
+    § 42 Abs. 1 VwGO
+  - >-
+    § 36 BauGB
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Zulässigkeit der Verpflichtungsklage
+    children:
+    - label: 1. Verwaltungsrechtsweg, § 40 Abs. 1 VwGO
+    - label: 2. Statthaftigkeit, § 42 Abs. 1 Var. 2 VwGO
+    - label: 3. Klagebefugnis, Vorverfahren, Frist
+    - label: 4. Richtiger Beklagter
+  - label: >-
+      II. Begründetheit: Anspruch auf Baugenehmigung
+    children:
+    - label: 1. Genehmigungsbedürftigkeit des Vorhabens
+    - label: 2. Bauplanungsrechtliche Zulässigkeit
+      hinweis: >-
+        Einvernehmen der Gemeinde (§ 36 BauGB) und Zulässigkeit nach §§ 29 ff. BauGB.
+    - label: 3. Bauordnungsrechtliche Zulässigkeit
+      hinweis: Landesrechtliche Anforderungen, ggf. Abweichung.
+      children:
+      - label: >-
+          a) Verstoß gegen bauordnungsrechtliche Vorschriften (z. B. Abstandsflächen)
+      - label: >-
+          b) Abweichung: Zweck der Vorschrift gewahrt, öffentliche und nachbarliche Belange gewürdigt
+      - label: c) Ermessen, ggf. Reduzierung auf null
+    - label: 4. Sonstige öffentlich-rechtliche Vorschriften
+  - label: III. Tenor
+    hinweis: >-
+      Verpflichtung zur Erteilung der Baugenehmigung oder Bescheidungsurteil (§ 113 Abs. 5 VwGO).
+faelle:
+- slug: hb-fall-bo-abweichung
+  title: Der Anbau mit zu geringer Abstandsfläche
+  difficulty: 4
+  minutes: 55
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BremLBO, amtliche Fassung
+  - VwGO, amtliche Fassung
+  - BauGB, amtliche Fassung
+  facts: >-
+    K beantragt bei der Bauaufsichtsbehörde in Bremen eine Baugenehmigung für einen Anbau an sein Wohnhaus.
+    Der Anbau entspricht dem Bebauungsplan und ist bauplanungsrechtlich zulässig. Er hält zur Grenze des
+    Nachbarn N allerdings nur 2 m statt der erforderlichen 3 m ein; die Abstandsflächenvorschrift der
+    BremLBO ist insoweit nicht erfüllt. N hat der Unterschreitung schriftlich zugestimmt, und die Giebelwand
+    wird als Brandwand ausgeführt. Die Behörde lehnt den Antrag mit der Begründung ab, Abstandsflächen
+    seien zwingend; Gründe, die gegen eine Abweichung sprechen, sind nicht ersichtlich. K erhebt nach
+    erfolglosem Widerspruch Klage.
+  question: Hat die Verpflichtungsklage des K Aussicht auf Erfolg?
+  steps:
+  - prompt: Ist die Klage zulässig?
+    erwartung: >-
+      Ja: Statthaft ist die Verpflichtungsklage (§ 42 Abs. 1 Var. 2 VwGO); K ist klagebefugt als Antragsteller,
+      ein Vorverfahren wurde durchgeführt; Beklagt ist der Rechtsträger der Bauaufsichtsbehörde.
+  - prompt: >-
+      Ist das Vorhaben bauplanungsrechtlich zulässig und genehmigungsbedürftig?
+    erwartung: >-
+      Der Anbau ist als Änderung eines Gebäudes genehmigungsbedürftig und entspricht dem Bebauungsplan;
+      die bauplanungsrechtliche Zulässigkeit ist gegeben.
+  - prompt: Stehen bauordnungsrechtliche Vorschriften entgegen?
+    erwartung: >-
+      Die Abstandsfläche ist mit 2 m statt 3 m unterschritten; die Vorschrift der BremLBO ist verletzt.
+      Das schließt die Genehmigung aber nicht aus, wenn eine Abweichung zugelassen werden kann.
+  - prompt: >-
+      Kann eine Abweichung zugelassen werden und besteht ein Anspruch darauf?
+    erwartung: >-
+      Ja: Der Zweck der Abstandsflächen (Brandschutz, Belichtung, Wohnfrieden) wird gewahrt: N hat zugestimmt,
+      die Giebelwand ist Brandwand, andere öffentliche Belange stehen nicht entgegen. Das Ermessen ist
+      auf null reduziert. K hat Anspruch auf Abweichung und damit auf die Baugenehmigung; die Klage ist
+      begründet.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Verpflichtungsklage als statthafte Klageart
+      weight: 1.0
+      required: false
+      norms:
+      - >-
+        § 42 Abs. 1 VwGO
+      keywords:
+      - Verpflichtungsklage
+      - >-
+        § 42 Abs. 1 Var. 2 VwGO
+      - Versagung der Baugenehmigung
+      - Vorverfahren
+      card_slugs:
+      - hb-bo-baugenehmigung
+    - id: p2
+      label: >-
+        Bauplanungsrechtliche Zulässigkeit und Genehmigungsbedürftigkeit bejaht
+      weight: 1.0
+      required: false
+      norms:
+      - >-
+        §§ 29 ff. BauGB
+      keywords:
+      - bauplanungsrechtlich zulässig
+      - Bebauungsplan
+      - genehmigungsbedürftig
+      - >-
+        §§ 29 ff. BauGB
+      card_slugs:
+      - hb-bo-abgrenzung
+    - id: p3
+      label: >-
+        Verstoß gegen die Abstandsflächenvorschrift der BremLBO erkannt
+      weight: 2.0
+      required: false
+      norms:
+      - >-
+        § 6 BremLBO
+      keywords:
+      - Abstandsfläche
+      - >-
+        § 6 BremLBO
+      - Unterschreitung
+      - 2 m statt 3 m
+      card_slugs:
+      - hb-bo-abstandsflaechen
+    - id: p4
+      label: >-
+        Abweichung nach der BremLBO: Zweck gewahrt, öffentliche und nachbarliche Belange gewürdigt
+      weight: 3.0
+      required: true
+      keywords:
+      - Abweichung
+      - Zweck der Vorschrift
+      - Zustimmung des Nachbarn
+      - Brandwand
+      - nachbarliche Belange
+      - öffentliche Belange
+      card_slugs:
+      - hb-bo-abweichung
+    - id: p5
+      label: >-
+        Ermessensreduzierung auf null und Anspruch auf Baugenehmigung
+      weight: 2.5
+      required: true
+      keywords:
+      - Ermessensreduzierung auf null
+      - Ermessen auf null
+      - Anspruch auf Baugenehmigung
+      - Anspruch auf Abweichung
+      - Verpflichtungsurteil
+      card_slugs:
+      - hb-bo-baugenehmigung
+      - hb-bo-abweichung

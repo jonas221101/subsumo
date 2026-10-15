@@ -85,3 +85,321 @@ cards:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
+- slug: sh-por-standardmassnahmen
+  type: norm
+  front: >-
+    Wo stehen die polizeilichen Standardmaßnahmen im Landesrecht von Schleswig-Holstein und welche Wirkung
+    haben sie gegenüber der Generalklausel?
+  back: >-
+    Die Standardmaßnahmen sind im LVwG SH im Anschluss an die Generalklausel (§ 174 LVwG SH) spezialgesetzlich
+    geregelt. Typisch sind Befragung, Identitätsfeststellung, Platzverweis, Gewahrsam, Durchsuchung von
+    Personen und Sachen, Betreten und Durchsuchen von Wohnungen und Sicherstellung. Beispiele: Platzverweis
+    § 201 LVwG SH, Gewahrsam § 204 LVwG SH. Standardmaßnahmen sind abschließende Spezialregelungen für
+    typische Gefahrensituationen: Liegen ihre Voraussetzungen nicht vor, darf nicht auf die Generalklausel
+    ausgewichen werden (Sperrwirkung). In der Klausur wird die speziellere Befugnisnorm zuerst geprüft
+    und genau zitiert; die Generalklausel kommt nur für atypische Gefahren in Betracht.
+  norms:
+  - >-
+    § 174 LVwG SH
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sh-por-gefahr
+  type: definition
+  front: >-
+    Was ist eine Gefahr im Polizei- und Ordnungsrecht in Schleswig-Holstein und wie wird die Gefahrenprognose
+    angestellt?
+  back: >-
+    Gefahr ist eine Sachlage, die bei ungehindertem Ablauf des objektiv zu erwartenden Geschehens mit
+    hinreichender Wahrscheinlichkeit in absehbarer Zeit zu einem Schaden für ein Schutzgut führt. Die
+    Generalklausel (§ 174 LVwG SH) setzt eine konkrete Gefahr im Einzelfall voraus; die abstrakte Gefahr
+    (typisierend, für Fallgruppen) ist Grundlage für Gefahrenabwehrverordnungen. Die Prognose erfolgt
+    ex ante aus der Sicht eines verständigen, durchschnittlich erfahrenen Amtswalters auf Grundlage der
+    im Handlungszeitpunkt erkennbaren Tatsachen. Nach der Je-desto-Formel sinken die Anforderungen an
+    die Wahrscheinlichkeit, je höher der drohende Schaden und je bedeutender das Schutzgut ist. Schutzgut
+    ist die öffentliche Sicherheit (Rechtsordnung, Individualrechtsgüter, Bestand staatlicher Einrichtungen);
+    ob daneben die öffentliche Ordnung genannt ist, ergibt sich aus dem Wortlaut der jeweiligen Landesnorm.
+  norms:
+  - >-
+    § 174 LVwG SH
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sh-por-gefahrenstufen
+  type: definition
+  front: >-
+    Welche qualifizierten Gefahrbegriffe unterscheidet das Landesrecht von Schleswig-Holstein (gegenwärtige,
+    erhebliche Gefahr, Gefahr im Verzug)?
+  back: >-
+    Qualifizierte Gefahrbegriffe erhöhen die Eingriffsschwelle oder erweitern Befugnisse. Eine gegenwärtige
+    Gefahr liegt vor, wenn das schädigende Ereignis bereits eingetreten ist oder unmittelbar oder in allernächster
+    Zeit mit an Sicherheit grenzender Wahrscheinlichkeit eintreten wird. Eine erhebliche Gefahr betrifft
+    ein bedeutsames Rechtsgut (etwa Leben, Gesundheit, Freiheit, wesentliche Sachwerte). Gefahr im Verzug
+    besteht, wenn bei Einhaltung der regulären Zuständigkeit oder des regulären Verfahrens der Zweck der
+    Maßnahme vereitelt würde; sie ermöglicht Eilzuständigkeiten und Eilverfahren. Die Begriffe sind in
+    den Landespolizeigesetzen unterschiedlich ausgeprägt; maßgeblich ist stets die in der jeweiligen Befugnisnorm
+    verlangte Qualifikation (LVwG SH).
+  norms:
+  - >-
+    § 174 LVwG SH
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sh-por-anscheinsgefahr
+  type: definition
+  front: >-
+    Was unterscheiden Anscheinsgefahr, Gefahrenverdacht und Putativgefahr bei Maßnahmen nach § 174 LVwG
+    SH?
+  back: >-
+    Anscheinsgefahr: Bei verständiger Würdigung der erkennbaren Tatsachen im Handlungszeitpunkt (ex ante)
+    liegt eine Gefahr vor, tatsächlich besteht aber keine. Sie wird wie eine echte Gefahr behandelt; die
+    Maßnahme ist rechtmäßig. Gefahrenverdacht: Es ist unklar, ob eine Gefahr besteht; zulässig sind Gefahrerforschungsmaßnahmen,
+    weitergehende Eingriffe grundsätzlich erst bei Bestätigung der Gefahr. Putativgefahr: Die Behörde
+    nimmt eine Gefahr an, die auch bei verständiger Würdigung nicht erkennbar vorlag; die Maßnahme ist
+    rechtswidrig (bloße Vermutung). Streitig ist die Kostenpflicht des Anscheinsverursachers: Sie wird
+    überwiegend nur bejaht, wenn er den Anschein zurechenbar veranlasst hat.
+  norms:
+  - >-
+    § 174 LVwG SH
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sh-por-platzverweis
+  type: norm
+  front: >-
+    Was ist ein Platzverweis nach dem Landesrecht von Schleswig-Holstein und wie unterscheidet er sich
+    von Aufenthaltsverbot und Gewahrsam?
+  back: >-
+    Der Platzverweis (§ 201 LVwG SH) ist eine Standardmaßnahme: Eine Person wird zur Abwehr einer Gefahr
+    vorübergehend von einem Ort verwiesen oder ihr wird das Betreten untersagt. Er ist ein Verwaltungsakt
+    in Gestalt eines Gebots oder Verbots und kann mündlich ergehen. Bei Anordnung durch Polizeivollzugsbeamte
+    ist er regelmäßig eine unaufschiebbare Maßnahme, deren Vollziehung nach § 80 Abs. 2 S. 1 Nr. 2 VwGO
+    sofort möglich ist. Vom Platzverweis zu unterscheiden ist das längerfristige Aufenthaltsverbot für
+    ein bestimmtes Gebiet, für das höhere Anforderungen gelten. Wird ein Platzverweis nicht befolgt, kommt
+    als Durchsetzung Zwang in Betracht; der Gewahrsam (§ 204 LVwG SH) ist eine Freiheitsentziehung und
+    erfordert unverzüglich eine richterliche Entscheidung (Art. 104 Abs. 2 GG).
+  norms:
+  - >-
+    § 201 LVwG SH
+  - >-
+    § 204 LVwG SH
+  - Art. 104 Abs. 2 GG
+  - >-
+    § 80 Abs. 2 S. 1 Nr. 2 VwGO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sh-por-zweckveranlasser
+  type: streitstand
+  front: >-
+    Ist der Zweckveranlasser Verhaltensstörer (§ 218 LVwG SH)? Wie wird der Streit entschieden?
+  back: >-
+    Unstreitig ist, wer die Gefahr unmittelbar verursacht, Verhaltensstörer. Streitig ist die Verantwortlichkeit
+    des Veranlassers, der die Gefahr nur mittelbar auslöst, indem ein Dritter die Gefahrenschwelle überschreitet.
+    Nach der strengen Theorie der unmittelbaren Verursachung ist Störer nur, wer selbst die Gefahrenschwelle
+    überschreitet; der bloße Veranlasser ist nicht verantwortlich. Die herrschende Meinung erweitert die
+    Verantwortlichkeit auf den Zweckveranlasser: Er hat die Störung bezweckt oder sie war als zwangsläufige
+    Folge seines Verhaltens objektiv unvermeidlich (klassisch: Schaufensterpuppen-Fall). Für die Ausweitung
+    spricht die Effektivität der Gefahrenabwehr; dagegen die Begrenzung der Störerhaftung auf rechtlich
+    zurechenbare Verursachung und die gesetzliche Unterscheidung von Störer und Nichtstörer. In der Klausur
+    ist die Zurechnung sauber zu begründen.
+  norms:
+  - >-
+    §§ 218, 219, 220 LVwG SH
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sh-por-kosten
+  type: definition
+  front: >-
+    Wer trägt die Kosten einer Ersatzvornahme oder unmittelbaren Ausführung im Landesrecht von Schleswig-Holstein
+    und was ist für den Kostenbescheid zu prüfen?
+  back: >-
+    Die Kosten trägt der Pflichtige bzw. der Störer, der bei rechtmäßigem Vorgehen hätte herangezogen
+    werden können. Beim gestreckten Verfahren (Grundverfügung, Androhung, Festsetzung, Ersatzvornahme)
+    muss die Vollstreckung rechtmäßig sein; für den Kostenbescheid genügt, dass die Grundverfügung wirksam
+    und vollziehbar war, auf ihre Rechtmäßigkeit kommt es nicht an. Bei Sofortvollzug und unmittelbarer
+    Ausführung ohne vorherigen Verwaltungsakt wird dagegen geprüft, ob die Maßnahme rechtmäßig war und
+    ob ein Verwaltungsakt gegen den Kostenschuldner rechtmäßig hätte ergehen dürfen (hypothetischer Verwaltungsakt).
+    Die Kosten werden durch Kostenbescheid festgesetzt (Verwaltungsakt, Anfechtungsklage). Maßgeblich
+    sind die Vollstreckungsregeln (Verwaltungszwang nach §§ 228 ff. LVwG SH) und die kostenrechtlichen
+    Vorschriften des Landes; die Höhe muss erforderlich und angemessen sein.
+  norms:
+  - Verwaltungszwang nach §§ 228 ff. LVwG SH
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: sh-schema-por-massnahme
+  title: >-
+    Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Schleswig-Holstein
+  norms:
+  - >-
+    § 174 LVwG SH
+  - >-
+    §§ 218, 219, 220 LVwG SH
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Ermächtigungsgrundlage
+    hinweis: >-
+      Spezialgesetzliche Befugnis (Standardmaßnahme) vor Generalklausel prüfen; Sperrwirkung beachten.
+    children:
+    - label: >-
+        1. Standardmaßnahme, soweit einschlägig (z. B. Platzverweis § 201 LVwG SH)
+    - label: 2. Hilfsweise Generalklausel, § 174 LVwG SH
+  - label: II. Formelle Rechtmäßigkeit
+    children:
+    - label: >-
+        1. Zuständigkeit: Ordnungsbehörden bzw. Polizei nach dem LVwG SH
+    - label: >-
+        2. Verfahren: Anhörung nach dem Landesverwaltungsverfahrensgesetz (Ausnahme bei Gefahr im Verzug)
+    - label: 3. Form und Begründung (mündlicher Verwaltungsakt zulässig)
+  - label: III. Materielle Rechtmäßigkeit
+    children:
+    - label: 1. Tatbestand
+      hinweis: >-
+        Konkrete Gefahr im Einzelfall, ex ante prüfen; Anscheinsgefahr einbeziehen.
+      children:
+      - label: a) Schutzgut (öffentliche Sicherheit, ggf. Ordnung)
+      - label: >-
+          b) Gefahr: hinreichende Wahrscheinlichkeit eines Schadens in absehbarer Zeit
+      - label: c) ggf. qualifizierte Gefahr (gegenwärtig, erheblich)
+    - label: 2. Richtiger Adressat (§§ 218, 219, 220 LVwG SH)
+      hinweis: >-
+        Verhaltensstörer, Zustandsstörer, Nichtstörer (nur im Notstand); Zweckveranlasser und Auswahl
+        unter mehreren Störern begründen.
+      children:
+      - label: a) Verhaltensstörer, § 218 LVwG SH
+      - label: b) Zustandsstörer, § 219 LVwG SH
+      - label: c) Nichtstörer, § 220 LVwG SH
+    - label: 3. Rechtsfolge
+      hinweis: >-
+        Ermessen: Entschließungs- und Auswahlermessen; Verhältnismäßigkeit nie auslassen.
+      children:
+      - label: a) Ermessensfehlerfreiheit
+      - label: >-
+          b) Verhältnismäßigkeit: legitimer Zweck, geeignet, erforderlich, angemessen
+      - label: c) Bestimmtheit der Anordnung
+  - label: IV. Vollstreckung (falls Zwang angewandt wurde)
+    hinweis: >-
+      Gestrecktes Verfahren oder Sofortvollzug; Rechtmäßigkeit des Zwangsmittels gesondert prüfen.
+    children:
+    - label: 1. Grundverfügung wirksam und vollziehbar
+    - label: 2. Androhung und Festsetzung des Zwangsmittels
+    - label: 3. Anwendung des mildesten geeigneten Zwangsmittels
+faelle:
+- slug: sh-fall-por-zwangsgeld
+  title: Das festgesetzte Zwangsgeld
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - LVwG SH, amtliche Fassung
+  facts: >-
+    Die Ordnungsbehörde verpflichtete G durch Bescheid, eine morsche Holzwand an seinem Grundstück, die
+    auf den Gehweg zu stürzen drohte, bis zum 15. Mai zu sichern oder zu beseitigen. In demselben Bescheid
+    drohte sie für den Fall der Nichtbefolgung ein Zwangsgeld von 500 Euro an. G legte keinen Rechtsbehelf
+    ein; der Bescheid wurde bestandskräftig. G unternahm nichts. Die Behörde setzte daraufhin das Zwangsgeld
+    fest. Gegen die Festsetzung klagt G und trägt vor, die Wand sei in Wahrheit nicht einsturzgefährdet
+    gewesen; die Grundverfügung sei deshalb rechtswidrig.
+  question: >-
+    Hat die Klage gegen die Festsetzung des Zwangsgeldes Aussicht auf Erfolg?
+  steps:
+  - prompt: >-
+      Nach welchen Vorschriften wird vollstreckt und welcher Ablauf ist zu prüfen?
+    erwartung: >-
+      Maßgeblich ist der Verwaltungszwang nach §§ 228 ff. LVwG SH. Im gestreckten Verfahren sind zu prüfen:
+      Grundverfügung, Androhung, Festsetzung, Anwendung des Zwangsmittels.
+  - prompt: >-
+      Ist die Grundverfügung eine taugliche Vollstreckungsgrundlage?
+    erwartung: >-
+      Ja: Sie ist bestandskräftig und damit wirksam und vollziehbar. Auf ihre Rechtmäßigkeit kommt es
+      im Vollstreckungsverfahren nicht an; G ist mit dem Einwand, die Wand sei nicht gefährlich gewesen,
+      ausgeschlossen.
+  - prompt: Sind Androhung und Festsetzung rechtmäßig?
+    erwartung: >-
+      Die Androhung war mit Fristsetzung und bestimmter Höhe (500 Euro) mit der Grundverfügung verbunden;
+      sie wurde mit dem Bescheid wirksam. Nach Fristablauf ohne Befolgung durfte das Zwangsgeld festgesetzt
+      werden.
+  - prompt: Ist das Zwangsmittel verhältnismäßig?
+    erwartung: >-
+      Ja: Zwangsgeld ist ein geeignetes und erforderliches Beugemittel; die Höhe von 500 Euro steht nicht
+      außer Verhältnis zur Gefahr für Passanten. Die Klage ist unbegründet.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Gestrecktes Vollstreckungsverfahren (Grundverfügung, Androhung, Festsetzung) nach §§ 228 ff. LVwG
+        SH erkannt
+      weight: 2.0
+      required: false
+      norms:
+      - >-
+        §§ 228 ff. LVwG SH
+      keywords:
+      - >-
+        §§ 228 ff. LVwG SH
+      - gestrecktes Verfahren
+      - Androhung
+      - Festsetzung
+      - Verwaltungszwang
+      card_slugs:
+      - sh-por-vollstreckung
+    - id: p2
+      label: >-
+        Rechtmäßigkeit der bestandskräftigen Grundverfügung ist im Vollstreckungsverfahren nicht zu prüfen;
+        sie ist wirksam und vollziehbar
+      weight: 3.0
+      required: true
+      keywords:
+      - bestandskräftig
+      - wirksam und vollziehbar
+      - Rechtmäßigkeit der Grundverfügung nicht
+      - Einwand ausgeschlossen
+      - Vollstreckungsvoraussetzung
+      card_slugs:
+      - sh-por-vollstreckung
+      - sh-por-kosten
+    - id: p3
+      label: Androhung mit Fristsetzung und bestimmtem Betrag wirksam
+      weight: 2.0
+      required: true
+      keywords:
+      - Androhung
+      - Fristsetzung
+      - bestimmter Betrag
+      - Zwangsgeld von 500 Euro
+      - mit der Grundverfügung verbunden
+      card_slugs:
+      - sh-por-vollstreckung
+    - id: p4
+      label: Verhältnismäßigkeit des Zwangsgeldes
+      weight: 1.5
+      required: false
+      keywords:
+      - Verhältnismäßigkeit
+      - geeignet
+      - erforderlich
+      - Beugemittel
+      - angemessen
+      card_slugs:
+      - sh-por-aufbau
+    - id: p5
+      label: >-
+        Ergebnis: Klage unbegründet
+      weight: 1.0
+      required: false
+      keywords:
+      - Klage ist unbegründet
+      - unbegründet
+      - ohne Erfolgsaussicht
+      - keine Aussicht auf Erfolg

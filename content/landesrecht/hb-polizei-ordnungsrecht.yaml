@@ -83,3 +83,315 @@ cards:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
+- slug: hb-por-standardmassnahmen
+  type: norm
+  front: >-
+    Wo stehen die polizeilichen Standardmaßnahmen im Landesrecht von Bremen und welche Wirkung haben sie
+    gegenüber der Generalklausel?
+  back: >-
+    Die Standardmaßnahmen sind im BremPolG im Anschluss an die Generalklausel (§ 10 Abs. 1 BremPolG) spezialgesetzlich
+    geregelt. Typisch sind Befragung, Identitätsfeststellung, Platzverweis, Gewahrsam, Durchsuchung von
+    Personen und Sachen, Betreten und Durchsuchen von Wohnungen und Sicherstellung. Die einzelnen Befugnisse
+    sind in ihren Paragraphen im Gesetzestext nachzuschlagen und genau zu zitieren. Standardmaßnahmen
+    sind abschließende Spezialregelungen für typische Gefahrensituationen: Liegen ihre Voraussetzungen
+    nicht vor, darf nicht auf die Generalklausel ausgewichen werden (Sperrwirkung). In der Klausur wird
+    die speziellere Befugnisnorm zuerst geprüft und genau zitiert; die Generalklausel kommt nur für atypische
+    Gefahren in Betracht.
+  norms:
+  - >-
+    § 10 Abs. 1 BremPolG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-por-gefahr
+  type: definition
+  front: >-
+    Was ist eine Gefahr im Polizei- und Ordnungsrecht in Bremen und wie wird die Gefahrenprognose angestellt?
+  back: >-
+    Gefahr ist eine Sachlage, die bei ungehindertem Ablauf des objektiv zu erwartenden Geschehens mit
+    hinreichender Wahrscheinlichkeit in absehbarer Zeit zu einem Schaden für ein Schutzgut führt. Die
+    Generalklausel (§ 10 Abs. 1 BremPolG) setzt eine konkrete Gefahr im Einzelfall voraus; die abstrakte
+    Gefahr (typisierend, für Fallgruppen) ist Grundlage für Gefahrenabwehrverordnungen. Die Prognose erfolgt
+    ex ante aus der Sicht eines verständigen, durchschnittlich erfahrenen Amtswalters auf Grundlage der
+    im Handlungszeitpunkt erkennbaren Tatsachen. Nach der Je-desto-Formel sinken die Anforderungen an
+    die Wahrscheinlichkeit, je höher der drohende Schaden und je bedeutender das Schutzgut ist. Schutzgut
+    ist die öffentliche Sicherheit (Rechtsordnung, Individualrechtsgüter, Bestand staatlicher Einrichtungen);
+    ob daneben die öffentliche Ordnung genannt ist, ergibt sich aus dem Wortlaut der jeweiligen Landesnorm.
+  norms:
+  - >-
+    § 10 Abs. 1 BremPolG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-por-gefahrenstufen
+  type: definition
+  front: >-
+    Welche qualifizierten Gefahrbegriffe unterscheidet das Landesrecht von Bremen (gegenwärtige, erhebliche
+    Gefahr, Gefahr im Verzug)?
+  back: >-
+    Qualifizierte Gefahrbegriffe erhöhen die Eingriffsschwelle oder erweitern Befugnisse. Eine gegenwärtige
+    Gefahr liegt vor, wenn das schädigende Ereignis bereits eingetreten ist oder unmittelbar oder in allernächster
+    Zeit mit an Sicherheit grenzender Wahrscheinlichkeit eintreten wird. Eine erhebliche Gefahr betrifft
+    ein bedeutsames Rechtsgut (etwa Leben, Gesundheit, Freiheit, wesentliche Sachwerte). Gefahr im Verzug
+    besteht, wenn bei Einhaltung der regulären Zuständigkeit oder des regulären Verfahrens der Zweck der
+    Maßnahme vereitelt würde; sie ermöglicht Eilzuständigkeiten und Eilverfahren. Die Begriffe sind in
+    den Landespolizeigesetzen unterschiedlich ausgeprägt; maßgeblich ist stets die in der jeweiligen Befugnisnorm
+    verlangte Qualifikation (BremPolG).
+  norms:
+  - >-
+    § 10 Abs. 1 BremPolG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-por-anscheinsgefahr
+  type: definition
+  front: >-
+    Was unterscheiden Anscheinsgefahr, Gefahrenverdacht und Putativgefahr bei Maßnahmen nach § 10 Abs.
+    1 BremPolG?
+  back: >-
+    Anscheinsgefahr: Bei verständiger Würdigung der erkennbaren Tatsachen im Handlungszeitpunkt (ex ante)
+    liegt eine Gefahr vor, tatsächlich besteht aber keine. Sie wird wie eine echte Gefahr behandelt; die
+    Maßnahme ist rechtmäßig. Gefahrenverdacht: Es ist unklar, ob eine Gefahr besteht; zulässig sind Gefahrerforschungsmaßnahmen,
+    weitergehende Eingriffe grundsätzlich erst bei Bestätigung der Gefahr. Putativgefahr: Die Behörde
+    nimmt eine Gefahr an, die auch bei verständiger Würdigung nicht erkennbar vorlag; die Maßnahme ist
+    rechtswidrig (bloße Vermutung). Streitig ist die Kostenpflicht des Anscheinsverursachers: Sie wird
+    überwiegend nur bejaht, wenn er den Anschein zurechenbar veranlasst hat.
+  norms:
+  - >-
+    § 10 Abs. 1 BremPolG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-por-platzverweis
+  type: norm
+  front: >-
+    Was ist ein Platzverweis nach dem Landesrecht von Bremen und wie unterscheidet er sich von Aufenthaltsverbot
+    und Gewahrsam?
+  back: >-
+    Der Platzverweis ist eine Standardmaßnahme: Eine Person wird zur Abwehr einer Gefahr vorübergehend
+    von einem Ort verwiesen oder ihr wird das Betreten untersagt. Er ist ein Verwaltungsakt in Gestalt
+    eines Gebots oder Verbots und kann mündlich ergehen. Bei Anordnung durch Polizeivollzugsbeamte ist
+    er regelmäßig eine unaufschiebbare Maßnahme, deren Vollziehung nach § 80 Abs. 2 S. 1 Nr. 2 VwGO sofort
+    möglich ist. Vom Platzverweis zu unterscheiden ist das längerfristige Aufenthaltsverbot für ein bestimmtes
+    Gebiet, für das höhere Anforderungen gelten. Wird ein Platzverweis nicht befolgt, kommt als Durchsetzung
+    Zwang in Betracht; der Gewahrsam ist eine Freiheitsentziehung und erfordert unverzüglich eine richterliche
+    Entscheidung (Art. 104 Abs. 2 GG).
+  norms:
+  - Art. 104 Abs. 2 GG
+  - >-
+    § 80 Abs. 2 S. 1 Nr. 2 VwGO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-por-zweckveranlasser
+  type: streitstand
+  front: >-
+    Ist der Zweckveranlasser Verhaltensstörer (§ 5 BremPolG)? Wie wird der Streit entschieden?
+  back: >-
+    Unstreitig ist, wer die Gefahr unmittelbar verursacht, Verhaltensstörer. Streitig ist die Verantwortlichkeit
+    des Veranlassers, der die Gefahr nur mittelbar auslöst, indem ein Dritter die Gefahrenschwelle überschreitet.
+    Nach der strengen Theorie der unmittelbaren Verursachung ist Störer nur, wer selbst die Gefahrenschwelle
+    überschreitet; der bloße Veranlasser ist nicht verantwortlich. Die herrschende Meinung erweitert die
+    Verantwortlichkeit auf den Zweckveranlasser: Er hat die Störung bezweckt oder sie war als zwangsläufige
+    Folge seines Verhaltens objektiv unvermeidlich (klassisch: Schaufensterpuppen-Fall). Für die Ausweitung
+    spricht die Effektivität der Gefahrenabwehr; dagegen die Begrenzung der Störerhaftung auf rechtlich
+    zurechenbare Verursachung und die gesetzliche Unterscheidung von Störer und Nichtstörer. In der Klausur
+    ist die Zurechnung sauber zu begründen.
+  norms:
+  - >-
+    §§ 5, 6, 7 BremPolG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hb-por-kosten
+  type: definition
+  front: >-
+    Wer trägt die Kosten einer Ersatzvornahme oder unmittelbaren Ausführung im Landesrecht von Bremen
+    und was ist für den Kostenbescheid zu prüfen?
+  back: >-
+    Die Kosten trägt der Pflichtige bzw. der Störer, der bei rechtmäßigem Vorgehen hätte herangezogen
+    werden können. Beim gestreckten Verfahren (Grundverfügung, Androhung, Festsetzung, Ersatzvornahme)
+    muss die Vollstreckung rechtmäßig sein; für den Kostenbescheid genügt, dass die Grundverfügung wirksam
+    und vollziehbar war, auf ihre Rechtmäßigkeit kommt es nicht an. Bei Sofortvollzug und unmittelbarer
+    Ausführung ohne vorherigen Verwaltungsakt wird dagegen geprüft, ob die Maßnahme rechtmäßig war und
+    ob ein Verwaltungsakt gegen den Kostenschuldner rechtmäßig hätte ergehen dürfen (hypothetischer Verwaltungsakt).
+    Die Kosten werden durch Kostenbescheid festgesetzt (Verwaltungsakt, Anfechtungsklage). Maßgeblich
+    sind die Vollstreckungsregeln (Bremisches Verwaltungsvollstreckungsgesetz) und die kostenrechtlichen
+    Vorschriften des Landes; die Höhe muss erforderlich und angemessen sein.
+  norms:
+  - Bremisches Verwaltungsvollstreckungsgesetz (BremVwVG)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: hb-schema-por-massnahme
+  title: >-
+    Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Bremen
+  norms:
+  - >-
+    § 10 Abs. 1 BremPolG
+  - >-
+    §§ 5, 6, 7 BremPolG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Ermächtigungsgrundlage
+    hinweis: >-
+      Spezialgesetzliche Befugnis (Standardmaßnahme) vor Generalklausel prüfen; Sperrwirkung beachten.
+    children:
+    - label: 1. Standardmaßnahme, soweit einschlägig
+    - label: 2. Hilfsweise Generalklausel, § 10 Abs. 1 BremPolG
+  - label: II. Formelle Rechtmäßigkeit
+    children:
+    - label: >-
+        1. Zuständigkeit: Ortspolizeibehörden bzw. Polizei nach dem BremPolG
+    - label: >-
+        2. Verfahren: Anhörung nach dem Landesverwaltungsverfahrensgesetz (Ausnahme bei Gefahr im Verzug)
+    - label: 3. Form und Begründung (mündlicher Verwaltungsakt zulässig)
+  - label: III. Materielle Rechtmäßigkeit
+    children:
+    - label: 1. Tatbestand
+      hinweis: >-
+        Konkrete Gefahr im Einzelfall, ex ante prüfen; Anscheinsgefahr einbeziehen.
+      children:
+      - label: a) Schutzgut (öffentliche Sicherheit, ggf. Ordnung)
+      - label: >-
+          b) Gefahr: hinreichende Wahrscheinlichkeit eines Schadens in absehbarer Zeit
+      - label: c) ggf. qualifizierte Gefahr (gegenwärtig, erheblich)
+    - label: 2. Richtiger Adressat (§§ 5, 6, 7 BremPolG)
+      hinweis: >-
+        Verhaltensstörer, Zustandsstörer, Nichtstörer (nur im Notstand); Zweckveranlasser und Auswahl
+        unter mehreren Störern begründen.
+      children:
+      - label: a) Verhaltensstörer, § 5 BremPolG
+      - label: b) Zustandsstörer, § 6 BremPolG
+      - label: c) Nichtstörer, § 7 BremPolG
+    - label: 3. Rechtsfolge
+      hinweis: >-
+        Ermessen: Entschließungs- und Auswahlermessen; Verhältnismäßigkeit nie auslassen.
+      children:
+      - label: a) Ermessensfehlerfreiheit
+      - label: >-
+          b) Verhältnismäßigkeit: legitimer Zweck, geeignet, erforderlich, angemessen
+      - label: c) Bestimmtheit der Anordnung
+  - label: IV. Vollstreckung (falls Zwang angewandt wurde)
+    hinweis: >-
+      Gestrecktes Verfahren oder Sofortvollzug; Rechtmäßigkeit des Zwangsmittels gesondert prüfen.
+    children:
+    - label: 1. Grundverfügung wirksam und vollziehbar
+    - label: 2. Androhung und Festsetzung des Zwangsmittels
+    - label: 3. Anwendung des mildesten geeigneten Zwangsmittels
+faelle:
+- slug: hb-fall-por-unmittelbare-ausfuehrung
+  title: Die gefährdete Pappel
+  difficulty: 4
+  minutes: 55
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BremPolG, amtliche Fassung
+  facts: >-
+    Nach einem Sturm droht eine angebrochene Pappel auf dem Grundstück der E in Bremen auf die angrenzende,
+    stark befahrene Straße zu stürzen. Die zuständige Ordnungsbehörde versucht, E zu erreichen, was nicht
+    gelingt (E ist im Urlaub, eine Vertretung ist nicht bekannt). Wegen der Gefahr für Verkehrsteilnehmer
+    lässt die Behörde den Baum noch am selben Tag durch ein Fachunternehmen fällen. Die Kosten betragen
+    1.800 Euro. Die Behörde fordert diese später durch Bescheid von E. E meint, die Behörde hätte zuerst
+    eine Verfügung gegen sie erlassen müssen; für einen Sturmschaden sei sie nicht verantwortlich.
+  question: Ist der Kostenbescheid rechtmäßig?
+  steps:
+  - prompt: >-
+      Durfte die Behörde ohne vorherigen Verwaltungsakt tätig werden?
+    erwartung: >-
+      Ja: Bei einer gegenwärtigen Gefahr, die ein sofortiges Tätigwerden verlangt, und bei nicht erreichbarem
+      Verpflichteten darf die Behörde die Maßnahme selbst durchführen (unmittelbare Ausführung bzw. Sofortvollzug).
+      Eine vorherige Verfügung gegen E war nicht erforderlich.
+  - prompt: Wäre E bei rechtmäßigem Vorgehen verantwortlich gewesen?
+    erwartung: >-
+      Ja: E ist als Eigentümerin Zustandsstörerin nach § 6 BremPolG. Die Zustandsverantwortlichkeit knüpft
+      an den Zustand der Sache an und besteht unabhängig von Verschulden; dass ein Sturm den Zustand herbeigeführt
+      hat, schließt sie nicht aus.
+  - prompt: War die Maßnahme (Fällen) verhältnismäßig?
+    erwartung: >-
+      Ja: Bei einem angebrochenen Baum, der kurzfristig auf eine stark befahrene Straße stürzen kann,
+      war das Fällen geeignet und mangels gleich wirksamer Alternativen erforderlich. Es war auch angemessen,
+      da Leib und Leben von Verkehrsteilnehmern auf dem Spiel stehen.
+  - prompt: Wer trägt die Kosten?
+    erwartung: >-
+      E trägt als Zustandsstörerin die Kosten der unmittelbaren Ausführung. Maßgeblich ist, dass die Maßnahme
+      rechtmäßig war und ein Verwaltungsakt gegen E hätte ergehen dürfen (hypothetischer Verwaltungsakt).
+      Der Kostenbescheid ist daher rechtmäßig.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Unmittelbare Ausführung bzw. Sofortvollzug mangels Erreichbarkeit der Pflichtigen zulässig
+      weight: 2.5
+      required: true
+      keywords:
+      - unmittelbare Ausführung
+      - Sofortvollzug
+      - gegenwärtige Gefahr
+      - nicht erreichbar
+      - ohne vorherigen Verwaltungsakt
+      card_slugs:
+      - hb-por-vollstreckung
+      - hb-por-kosten
+    - id: p2
+      label: >-
+        E als Zustandsstörerin (§ 6 BremPolG), Verantwortlichkeit unabhängig von Verschulden
+      weight: 2.5
+      required: true
+      norms:
+      - >-
+        § 6 BremPolG
+      keywords:
+      - Zustandsstörer
+      - >-
+        § 6 BremPolG
+      - Eigentümerin
+      - unabhängig von Verschulden
+      - Zustandsverantwortlichkeit
+      card_slugs:
+      - hb-por-stoerer
+    - id: p3
+      label: Konkrete Gefahr (Absturz auf die Straße) bejaht
+      weight: 1.0
+      required: false
+      keywords:
+      - konkrete Gefahr
+      - gegenwärtige Gefahr
+      - Verkehrsteilnehmer
+      - Gefahrenprognose
+      card_slugs:
+      - hb-por-gefahr
+    - id: p4
+      label: Verhältnismäßigkeit des Fällens geprüft
+      weight: 1.5
+      required: false
+      keywords:
+      - Verhältnismäßigkeit
+      - erforderlich
+      - milderes Mittel
+      - angemessen
+      card_slugs:
+      - hb-por-aufbau
+    - id: p5
+      label: >-
+        Kostenpflicht über den hypothetischen Verwaltungsakt begründet
+      weight: 2.0
+      required: true
+      keywords:
+      - hypothetischer Verwaltungsakt
+      - Kostenbescheid
+      - Kostenschuldner
+      - Kostenerstattung
+      - rechtmäßige Maßnahme
+      card_slugs:
+      - hb-por-kosten

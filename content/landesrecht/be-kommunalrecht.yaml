@@ -1,0 +1,295 @@
+topic:
+  slug: be-kommunalrecht
+  area: oeffentliches-recht
+  title: Kommunalrecht und Bezirksverwaltung Berlin
+  parent: or-vwvfg-verwaltungsakt
+  bundesland: BE
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: be-kr-einheitsgemeinde
+  type: norm
+  front: >-
+    Welchen Status hat Berlin im Verhältnis von Land und Gemeinde?
+  back: >-
+    Berlin ist ein Land der Bundesrepublik Deutschland und zugleich eine Stadt (Art. 1 Abs. 1 VvB). Es
+    ist Einheitsgemeinde: Staatliche und gemeindliche Aufgaben werden von derselben Rechtsperson, dem
+    Land Berlin, wahrgenommen; eine Gemeindeordnung wie in den Flächenländern gibt es nicht. Die Verwaltung
+    ist zweistufig aufgebaut (Hauptverwaltung und Bezirksverwaltung). Die Grundlagen finden sich in der
+    Verfassung von Berlin und im Bezirksverwaltungsgesetz (BezVG) sowie im Allgemeinen Zuständigkeitsgesetz
+    (AZG). Für die Klausur wichtig: Die kommunalrechtlichen Fragen der Flächenländer (Gemeindeordnung,
+    Rat, Bürgermeister) sind in Berlin als Bezirksverwaltung zu prüfen.
+  norms:
+  - Art. 1 Abs. 1 VvB
+  - Bezirksverwaltungsgesetz (BezVG)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: be-kr-bezirke
+  type: definition
+  front: Welche Rechtsstellung haben die Berliner Bezirke?
+  back: >-
+    Berlin gliedert sich in zwölf Bezirke. Sie sind Verwaltungseinheiten des Landes ohne eigene Rechtspersönlichkeit
+    und keine Gemeinden im Sinne des Art. 28 Abs. 2 GG. Sie nehmen ihre Aufgaben nach den Regeln der Verfassung
+    von Berlin (Art. 66 ff. VvB) und des BezVG nach den Grundsätzen der Selbstverwaltung wahr, soweit
+    das Gesetz ihnen die Aufgaben zuweist. Rechtsträger ihrer Handlungen ist das Land Berlin. Folgen:
+    Die Bezirke sind im Außenverhältnis nicht klagefähig gegen das Land und können nicht Beklagte einer
+    Klage sein; zu verklagen ist das Land Berlin.
+  norms:
+  - Art. 66 ff. VvB
+  - Bezirksverwaltungsgesetz (BezVG)
+  - Art. 28 Abs. 2 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: be-kr-organe
+  type: definition
+  front: >-
+    Welche Organe hat der Berliner Bezirk und wie werden sie bestimmt?
+  back: >-
+    Organe der Bezirksverwaltung sind die Bezirksverordnetenversammlung (BVV) und das Bezirksamt. Die
+    BVV wird von den Wahlberechtigten des Bezirks gewählt und kontrolliert die Verwaltung des Bezirks,
+    beschließt in den vom Gesetz zugewiesenen Angelegenheiten und wählt das Bezirksamt. Das Bezirksamt
+    ist ein Kollegialorgan; es besteht aus der Bezirksbürgermeisterin bzw. dem Bezirksbürgermeister und
+    den Bezirksstadträten und leitet die Verwaltung des Bezirks (Bezirksamt als Behörde).
+  norms:
+  - Art. 66 ff. VvB
+  - Bezirksverwaltungsgesetz (BezVG)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: be-kr-zustaendigkeit
+  type: definition
+  front: >-
+    Wie werden in Berlin die Aufgaben zwischen Hauptverwaltung und Bezirken abgegrenzt?
+  back: >-
+    Die Verwaltung ist zweistufig: Die Hauptverwaltung (Senat, Senatsverwaltungen) nimmt die Aufgaben
+    von gesamtstädtischer Bedeutung wahr, die Bezirke alle übrigen Verwaltungsaufgaben (Allzuständigkeit
+    der Bezirke für nicht der Hauptverwaltung zugewiesene Aufgaben). Die konkrete Zuordnung enthält das
+    Allgemeine Zuständigkeitsgesetz (AZG) mit seinem Zuständigkeitskatalog. Für die Klausur ist zunächst
+    das handelnde Bezirksamt als Behörde der Bezirksverwaltung zu bestimmen, dann die sachliche Zuständigkeit
+    nach dem AZG bzw. dem Fachgesetz zu prüfen. Handelt ein unzuständiges Bezirksamt oder die Hauptverwaltung
+    statt des Bezirks, ist der Verwaltungsakt formell rechtswidrig (Zuständigkeitsfehler).
+  norms:
+  - Allgemeines Zuständigkeitsgesetz (AZG)
+  - Art. 66 ff. VvB
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: be-kr-beklagter
+  type: definition
+  front: >-
+    Gegen wen richtet sich die Klage gegen einen Verwaltungsakt des Bezirksamts?
+  back: >-
+    Nach § 78 Abs. 1 Nr. 1 VwGO ist die Klage gegen den Bund, das Land oder die Körperschaft zu richten,
+    deren Behörde den angefochtenen Verwaltungsakt erlassen hat (Rechtsträgerprinzip). Da die Bezirke
+    keine eigene Rechtspersönlichkeit haben, ist Beklagter das Land Berlin (vertreten durch das Bezirksamt);
+    eine landesrechtliche Bestimmung des Behördenprinzips nach § 78 Abs. 1 Nr. 2 VwGO ist nicht ersichtlich,
+    sodass es beim Rechtsträgerprinzip bleibt. Die Klageschrift soll das Land Berlin und die handelnde
+    Behörde bezeichnen (§ 82 Abs. 1 VwGO). Die Beteiligtenfähigkeit des Landes ergibt sich aus § 61 Nr.
+    1 VwGO. Wer den Bezirk selbst verklagt, benennt den falschen Beklagten.
+  norms:
+  - >-
+    § 78 Abs. 1 Nr. 1 VwGO
+  - >-
+    § 61 Nr. 1 VwGO
+  - >-
+    § 82 Abs. 1 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: be-kr-aufsicht
+  type: norm
+  front: >-
+    Welche Aufsichts- und Eingriffsrechte hat die Hauptverwaltung gegenüber den Bezirken?
+  back: >-
+    Die Hauptverwaltung übt die Bezirksaufsicht über die Bezirksverwaltung aus. Dazu gehören die Rechtsaufsicht
+    über die Selbstverwaltungsangelegenheiten der Bezirke und die Fachaufsicht in den Bereichen, in denen
+    die Bezirke für das Land Aufgaben nach Weisung erfüllen. Hinzu kommen nach dem AZG Eingriffsrechte
+    (Einzelweisung, Selbsteintritt) in Angelegenheiten von gesamtstädtischer Bedeutung oder bei Gefahr
+    für das Wohl des Landes. Die Maßnahmen sind verhältnismäßig auszuüben. Da Bezirk und Land derselben
+    Rechtsperson angehören, ist die Aufsicht Teil des internen Verwaltungsaufbaus; ein Rechtsschutz des
+    Bezirks gegen das Land nach Art. 28 Abs. 2 GG besteht nicht.
+  norms:
+  - Allgemeines Zuständigkeitsgesetz (AZG)
+  - Bezirksverwaltungsgesetz (BezVG)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: be-kr-keine-gemeinde
+  type: streitstand
+  front: >-
+    Können sich Berliner Bezirke auf Art. 28 Abs. 2 GG und die kommunale Selbstverwaltung berufen?
+  back: >-
+    Nein. Die Bezirke sind unselbständige Teile der Landesverwaltung ohne Rechtspersönlichkeit und deshalb
+    weder Gemeinden noch Gemeindeverbände im Sinne des Art. 28 Abs. 2 GG; eine Berufung auf die Selbstverwaltungsgarantie
+    ist nicht möglich. Dafür spricht, dass Art. 28 Abs. 2 GG nur Gebietskörperschaften als Träger eigener
+    Hoheitsrechte schützt, die ein Land von der Staatsebene abgrenzt; Berlin ist selbst Gemeinde und Land
+    zugleich. Allenfalls besteht Raum für landesverfassungsrechtliche Rechte der Bezirke und für Rechte
+    der BVV als Organ im Innenverhältnis. Das ändert nichts daran, dass der Bezirk gegen Weisungen des
+    Senats nicht im Außenrechtsweg klagen kann.
+  norms:
+  - Art. 28 Abs. 2 GG
+  - Art. 66 ff. VvB
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: be-kr-buergerbegehren
+  type: norm
+  front: >-
+    Welche Beteiligungsrechte der Einwohner gibt es auf Bezirksebene in Berlin?
+  back: >-
+    Auf Bezirksebene sehen die Verfassung von Berlin und das BezVG Instrumente der Bürgerbeteiligung vor,
+    insbesondere das Bürgerbegehren und den Bürgerentscheid in Angelegenheiten der Bezirksverwaltung und
+    den Einwohnerantrag. Der Bürgerentscheid ersetzt in bestimmten Bezirksangelegenheiten einen Beschluss
+    der BVV. Ausgeschlossen sind regelmäßig Angelegenheiten, für die die Hauptverwaltung zuständig ist,
+    etwa Planungen von gesamtstädtischer Bedeutung. Die Zulässigkeitsvoraussetzungen (Gegenstand, Quorum,
+    Frist, Kostendeckungsvorschlag) sind dem BezVG zu entnehmen. In der Klausur wird häufig die Zulässigkeit
+    eines Bürgerbegehrens und die Zuständigkeit des Bezirks geprüft.
+  norms:
+  - Bezirksverwaltungsgesetz (BezVG)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: be-schema-kr-bezirksverwaltung
+  title: >-
+    Klage gegen Handeln der Berliner Bezirksverwaltung: Zuständigkeit und Beklagter
+  norms:
+  - >-
+    § 78 Abs. 1 Nr. 1 VwGO
+  - Allgemeines Zuständigkeitsgesetz (AZG)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Wer hat gehandelt?
+    hinweis: >-
+      Bezirksamt, BVV oder Hauptverwaltung (Senatsverwaltung) unterscheiden.
+  - label: II. Zuständigkeit
+    children:
+    - label: >-
+        1. Gesamtstädtische Bedeutung: Hauptverwaltung nach dem AZG
+    - label: 2. Sonst Zuständigkeit des Bezirksamts als Bezirksbehörde
+    - label: >-
+        3. Fachgesetzliche Spezialzuständigkeit (z. B. nach Ordnungs- oder Baurecht)
+  - label: III. Rechtsträger
+    hinweis: >-
+      Der Bezirk hat keine Rechtspersönlichkeit; das Land Berlin ist Rechtsträger.
+  - label: IV. Richtiger Beklagter
+    children:
+    - label: 1. Rechtsträgerprinzip, § 78 Abs. 1 Nr. 1 VwGO
+    - label: 2. Vertretung durch das Bezirksamt, Bezeichnung der Behörde
+  - label: V. Aufsicht und Eingriffsrecht
+    hinweis: >-
+      Weisungen und Selbsteintritt der Hauptverwaltung sind Binnenrecht; kein Klagerecht des Bezirks nach
+      Art. 28 Abs. 2 GG.
+  - label: VI. Materielle Rechtmäßigkeit
+    hinweis: Nach dem jeweiligen Fachgesetz prüfen.
+faelle:
+- slug: be-fall-kr-bezirksamt-beklagter
+  title: Die abgelehnte Sondernutzungserlaubnis
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VwGO, amtliche Fassung
+  - Verfassung von Berlin und BezVG, amtliche Fassung
+  facts: >-
+    G betreibt ein Imbissgeschäft und beantragt beim Bezirksamt Charlottenburg-Wilmersdorf von Berlin
+    die Erlaubnis, auf dem Gehweg vor seinem Lokal einen Verkaufsstand aufzustellen. Das Bezirksamt lehnt
+    den Antrag durch Bescheid ab. Es handelt sich um eine örtliche Angelegenheit ohne gesamtstädtische
+    Bedeutung. G möchte klagen und fragt, ob er das Bezirksamt, den Bezirk oder die zuständige Senatsverwaltung
+    verklagen muss. Ferner fragt er, ob der Bezirk eine Weisung des Senats, den Antrag doch zu genehmigen,
+    vor dem Verwaltungsgericht anfechten könnte.
+  question: >-
+    Wer ist richtiger Beklagter, und kann sich der Bezirk auf kommunale Selbstverwaltung berufen?
+  steps:
+  - prompt: Wer ist für die Entscheidung zuständig?
+    erwartung: >-
+      Das Bezirksamt als Behörde der Bezirksverwaltung; die Angelegenheit ist örtlich und weist keine
+      gesamtstädtische Bedeutung auf, sodass die Hauptverwaltung nach dem AZG nicht zuständig ist.
+  - prompt: Wen muss G verklagen?
+    erwartung: >-
+      Die Bezirke haben keine Rechtspersönlichkeit. Rechtsträger ist das Land Berlin; nach § 78 Abs. 1
+      Nr. 1 VwGO ist die Klage gegen das Land Berlin zu richten, vertreten durch das Bezirksamt. Eine
+      Klage gegen den Bezirk oder die Senatsverwaltung wäre falsch adressiert.
+  - prompt: >-
+      Kann der Bezirk eine Weisung des Senats gerichtlich angreifen?
+    erwartung: >-
+      Nein: Der Bezirk ist keine Gemeinde im Sinne des Art. 28 Abs. 2 GG und gehört derselben Rechtsperson
+      wie die Hauptverwaltung an. Die Weisung ist Binnenrecht des Landes; ein Außenrechtsstreit zwischen
+      Bezirk und Land scheidet aus.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Zuständigkeit des Bezirksamts mangels gesamtstädtischer Bedeutung (AZG) festgestellt
+      weight: 1.5
+      required: false
+      keywords:
+      - Bezirksamt
+      - AZG
+      - Allgemeines Zuständigkeitsgesetz
+      - gesamtstädtische Bedeutung
+      - Bezirksverwaltung
+      card_slugs:
+      - be-kr-zustaendigkeit
+    - id: p2
+      label: >-
+        Land Berlin als Beklagter nach dem Rechtsträgerprinzip (§ 78 Abs. 1 Nr. 1 VwGO)
+      weight: 3.0
+      required: true
+      norms:
+      - >-
+        § 78 Abs. 1 Nr. 1 VwGO
+      keywords:
+      - Land Berlin
+      - Rechtsträgerprinzip
+      - >-
+        § 78 Abs. 1 Nr. 1 VwGO
+      - keine Rechtspersönlichkeit
+      - vertreten durch das Bezirksamt
+      card_slugs:
+      - be-kr-beklagter
+      - be-kr-bezirke
+    - id: p3
+      label: Bezirk ist keine Gemeinde im Sinne des Art. 28 Abs. 2 GG
+      weight: 2.5
+      required: true
+      norms:
+      - Art. 28 Abs. 2 GG
+      keywords:
+      - Art. 28 Abs. 2 GG
+      - keine Gemeinde
+      - unselbständige Verwaltungseinheit
+      - Selbstverwaltungsgarantie
+      - Einheitsgemeinde
+      card_slugs:
+      - be-kr-keine-gemeinde
+      - be-kr-einheitsgemeinde
+    - id: p4
+      label: >-
+        Weisung des Senats als Binnenrecht ohne Außenrechtsschutz des Bezirks
+      weight: 1.5
+      required: false
+      keywords:
+      - Weisung
+      - Binnenrecht
+      - Aufsicht
+      - Eingriffsrecht
+      - derselben Rechtsperson
+      card_slugs:
+      - be-kr-aufsicht

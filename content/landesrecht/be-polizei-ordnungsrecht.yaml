@@ -101,3 +101,303 @@ cards:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
+- slug: be-por-gefahr
+  type: definition
+  front: >-
+    Was ist eine Gefahr im Polizei- und Ordnungsrecht in Berlin und wie wird die Gefahrenprognose angestellt?
+  back: >-
+    Gefahr ist eine Sachlage, die bei ungehindertem Ablauf des objektiv zu erwartenden Geschehens mit
+    hinreichender Wahrscheinlichkeit in absehbarer Zeit zu einem Schaden für ein Schutzgut führt. Die
+    Generalklausel (§ 17 Abs. 1 ASOG Bln) setzt eine konkrete Gefahr im Einzelfall voraus; die abstrakte
+    Gefahr (typisierend, für Fallgruppen) ist Grundlage für Gefahrenabwehrverordnungen. Die Prognose erfolgt
+    ex ante aus der Sicht eines verständigen, durchschnittlich erfahrenen Amtswalters auf Grundlage der
+    im Handlungszeitpunkt erkennbaren Tatsachen. Nach der Je-desto-Formel sinken die Anforderungen an
+    die Wahrscheinlichkeit, je höher der drohende Schaden und je bedeutender das Schutzgut ist. Schutzgut
+    ist die öffentliche Sicherheit (Rechtsordnung, Individualrechtsgüter, Bestand staatlicher Einrichtungen);
+    ob daneben die öffentliche Ordnung genannt ist, ergibt sich aus dem Wortlaut der jeweiligen Landesnorm.
+  norms:
+  - >-
+    § 17 Abs. 1 ASOG Bln
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: be-por-gefahrenstufen
+  type: definition
+  front: >-
+    Welche qualifizierten Gefahrbegriffe unterscheidet das Landesrecht von Berlin (gegenwärtige, erhebliche
+    Gefahr, Gefahr im Verzug)?
+  back: >-
+    Qualifizierte Gefahrbegriffe erhöhen die Eingriffsschwelle oder erweitern Befugnisse. Eine gegenwärtige
+    Gefahr liegt vor, wenn das schädigende Ereignis bereits eingetreten ist oder unmittelbar oder in allernächster
+    Zeit mit an Sicherheit grenzender Wahrscheinlichkeit eintreten wird. Eine erhebliche Gefahr betrifft
+    ein bedeutsames Rechtsgut (etwa Leben, Gesundheit, Freiheit, wesentliche Sachwerte). Gefahr im Verzug
+    besteht, wenn bei Einhaltung der regulären Zuständigkeit oder des regulären Verfahrens der Zweck der
+    Maßnahme vereitelt würde; sie ermöglicht Eilzuständigkeiten und Eilverfahren. Die Begriffe sind in
+    den Landespolizeigesetzen unterschiedlich ausgeprägt; maßgeblich ist stets die in der jeweiligen Befugnisnorm
+    verlangte Qualifikation (ASOG Bln).
+  norms:
+  - >-
+    § 17 Abs. 1 ASOG Bln
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: be-por-anscheinsgefahr
+  type: definition
+  front: >-
+    Was unterscheiden Anscheinsgefahr, Gefahrenverdacht und Putativgefahr bei Maßnahmen nach § 17 Abs.
+    1 ASOG Bln?
+  back: >-
+    Anscheinsgefahr: Bei verständiger Würdigung der erkennbaren Tatsachen im Handlungszeitpunkt (ex ante)
+    liegt eine Gefahr vor, tatsächlich besteht aber keine. Sie wird wie eine echte Gefahr behandelt; die
+    Maßnahme ist rechtmäßig. Gefahrenverdacht: Es ist unklar, ob eine Gefahr besteht; zulässig sind Gefahrerforschungsmaßnahmen,
+    weitergehende Eingriffe grundsätzlich erst bei Bestätigung der Gefahr. Putativgefahr: Die Behörde
+    nimmt eine Gefahr an, die auch bei verständiger Würdigung nicht erkennbar vorlag; die Maßnahme ist
+    rechtswidrig (bloße Vermutung). Streitig ist die Kostenpflicht des Anscheinsverursachers: Sie wird
+    überwiegend nur bejaht, wenn er den Anschein zurechenbar veranlasst hat.
+  norms:
+  - >-
+    § 17 Abs. 1 ASOG Bln
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: be-por-platzverweis
+  type: norm
+  front: >-
+    Was ist ein Platzverweis nach dem Landesrecht von Berlin und wie unterscheidet er sich von Aufenthaltsverbot
+    und Gewahrsam?
+  back: >-
+    Der Platzverweis (§ 29 ASOG Bln) ist eine Standardmaßnahme: Eine Person wird zur Abwehr einer Gefahr
+    vorübergehend von einem Ort verwiesen oder ihr wird das Betreten untersagt. Er ist ein Verwaltungsakt
+    in Gestalt eines Gebots oder Verbots und kann mündlich ergehen. Bei Anordnung durch Polizeivollzugsbeamte
+    ist er regelmäßig eine unaufschiebbare Maßnahme, deren Vollziehung nach § 80 Abs. 2 S. 1 Nr. 2 VwGO
+    sofort möglich ist. Vom Platzverweis zu unterscheiden ist das längerfristige Aufenthaltsverbot für
+    ein bestimmtes Gebiet, für das höhere Anforderungen gelten. Wird ein Platzverweis nicht befolgt, kommt
+    als Durchsetzung Zwang in Betracht; der Gewahrsam (§ 30 ASOG Bln) ist eine Freiheitsentziehung und
+    erfordert unverzüglich eine richterliche Entscheidung (Art. 104 Abs. 2 GG).
+  norms:
+  - >-
+    § 29 ASOG Bln
+  - >-
+    § 30 ASOG Bln
+  - Art. 104 Abs. 2 GG
+  - >-
+    § 80 Abs. 2 S. 1 Nr. 2 VwGO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: be-por-zweckveranlasser
+  type: streitstand
+  front: >-
+    Ist der Zweckveranlasser Verhaltensstörer (§ 13 ASOG Bln)? Wie wird der Streit entschieden?
+  back: >-
+    Unstreitig ist, wer die Gefahr unmittelbar verursacht, Verhaltensstörer. Streitig ist die Verantwortlichkeit
+    des Veranlassers, der die Gefahr nur mittelbar auslöst, indem ein Dritter die Gefahrenschwelle überschreitet.
+    Nach der strengen Theorie der unmittelbaren Verursachung ist Störer nur, wer selbst die Gefahrenschwelle
+    überschreitet; der bloße Veranlasser ist nicht verantwortlich. Die herrschende Meinung erweitert die
+    Verantwortlichkeit auf den Zweckveranlasser: Er hat die Störung bezweckt oder sie war als zwangsläufige
+    Folge seines Verhaltens objektiv unvermeidlich (klassisch: Schaufensterpuppen-Fall). Für die Ausweitung
+    spricht die Effektivität der Gefahrenabwehr; dagegen die Begrenzung der Störerhaftung auf rechtlich
+    zurechenbare Verursachung und die gesetzliche Unterscheidung von Störer und Nichtstörer. In der Klausur
+    ist die Zurechnung sauber zu begründen.
+  norms:
+  - >-
+    §§ 13, 14, 16 ASOG Bln
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: be-por-kosten
+  type: definition
+  front: >-
+    Wer trägt die Kosten einer Ersatzvornahme oder unmittelbaren Ausführung im Landesrecht von Berlin
+    und was ist für den Kostenbescheid zu prüfen?
+  back: >-
+    Die Kosten trägt der Pflichtige bzw. der Störer, der bei rechtmäßigem Vorgehen hätte herangezogen
+    werden können. Beim gestreckten Verfahren (Grundverfügung, Androhung, Festsetzung, Ersatzvornahme)
+    muss die Vollstreckung rechtmäßig sein; für den Kostenbescheid genügt, dass die Grundverfügung wirksam
+    und vollziehbar war, auf ihre Rechtmäßigkeit kommt es nicht an. Bei Sofortvollzug und unmittelbarer
+    Ausführung ohne vorherigen Verwaltungsakt wird dagegen geprüft, ob die Maßnahme rechtmäßig war und
+    ob ein Verwaltungsakt gegen den Kostenschuldner rechtmäßig hätte ergehen dürfen (hypothetischer Verwaltungsakt).
+    Die Kosten werden durch Kostenbescheid festgesetzt (Verwaltungsakt, Anfechtungsklage). Maßgeblich
+    sind die Vollstreckungsregeln (Verwaltungs-Vollstreckungsgesetz des Bundes) und die kostenrechtlichen
+    Vorschriften des Landes; die Höhe muss erforderlich und angemessen sein.
+  norms:
+  - >-
+    Verwaltungs-Vollstreckungsgesetz des Bundes (VwVG), anwendbar über § 5a VwVfG Bln
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: be-schema-por-massnahme
+  title: >-
+    Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Berlin
+  norms:
+  - >-
+    § 17 Abs. 1 ASOG Bln
+  - >-
+    §§ 13, 14, 16 ASOG Bln
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Ermächtigungsgrundlage
+    hinweis: >-
+      Spezialgesetzliche Befugnis (Standardmaßnahme) vor Generalklausel prüfen; Sperrwirkung beachten.
+    children:
+    - label: >-
+        1. Standardmaßnahme, soweit einschlägig (z. B. Platzverweis § 29 ASOG Bln)
+    - label: 2. Hilfsweise Generalklausel, § 17 Abs. 1 ASOG Bln
+  - label: II. Formelle Rechtmäßigkeit
+    children:
+    - label: >-
+        1. Zuständigkeit: Ordnungsbehörden (Bezirksämter) bzw. Polizei im Eilfall nach dem ASOG Bln
+    - label: >-
+        2. Verfahren: Anhörung nach dem Landesverwaltungsverfahrensgesetz (Ausnahme bei Gefahr im Verzug)
+    - label: 3. Form und Begründung (mündlicher Verwaltungsakt zulässig)
+  - label: III. Materielle Rechtmäßigkeit
+    children:
+    - label: 1. Tatbestand
+      hinweis: >-
+        Konkrete Gefahr im Einzelfall, ex ante prüfen; Anscheinsgefahr einbeziehen.
+      children:
+      - label: a) Schutzgut (öffentliche Sicherheit, ggf. Ordnung)
+      - label: >-
+          b) Gefahr: hinreichende Wahrscheinlichkeit eines Schadens in absehbarer Zeit
+      - label: c) ggf. qualifizierte Gefahr (gegenwärtig, erheblich)
+    - label: 2. Richtiger Adressat (§§ 13, 14, 16 ASOG Bln)
+      hinweis: >-
+        Verhaltensstörer, Zustandsstörer, Nichtstörer (nur im Notstand); Zweckveranlasser und Auswahl
+        unter mehreren Störern begründen.
+      children:
+      - label: a) Verhaltensstörer, § 13 ASOG Bln
+      - label: b) Zustandsstörer, § 14 ASOG Bln
+      - label: c) Nichtstörer, § 16 ASOG Bln
+    - label: 3. Rechtsfolge
+      hinweis: >-
+        Ermessen: Entschließungs- und Auswahlermessen; Verhältnismäßigkeit nie auslassen.
+      children:
+      - label: a) Ermessensfehlerfreiheit
+      - label: >-
+          b) Verhältnismäßigkeit: legitimer Zweck, geeignet, erforderlich, angemessen
+      - label: c) Bestimmtheit der Anordnung
+  - label: IV. Vollstreckung (falls Zwang angewandt wurde)
+    hinweis: >-
+      Gestrecktes Verfahren oder Sofortvollzug; Rechtmäßigkeit des Zwangsmittels gesondert prüfen.
+    children:
+    - label: 1. Grundverfügung wirksam und vollziehbar
+    - label: 2. Androhung und Festsetzung des Zwangsmittels
+    - label: 3. Anwendung des mildesten geeigneten Zwangsmittels
+faelle:
+- slug: be-fall-por-zustandsstoerer
+  title: Die abstürzende Fassade
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - ASOG Bln, amtliche Fassung
+  facts: >-
+    Von der Fassade eines fünfgeschossigen Wohnhauses in Berlin-Neukölln lösen sich Putzteile und fallen
+    auf den Gehweg. Das Ordnungsamt des zuständigen Bezirksamts stellt fest, dass weitere Teile abzustürzen
+    drohen. Eigentümerin E lebt im Ausland, ist aber über die Hausverwaltung H telefonisch erreichbar
+    und wird dort angehört. Das Bezirksamt ordnet gegenüber E an, den Gehweg unverzüglich durch ein Schutzdach
+    oder eine Absperrung zu sichern. Welches Mittel E wählt, überlässt der Bescheid ihr. Ein Verstoß gegen
+    eine Standardmaßnahme steht nicht im Raum.
+  question: Ist die Anordnung gegenüber E rechtmäßig?
+  steps:
+  - prompt: >-
+      Auf welche Ermächtigungsgrundlage kann die Anordnung gestützt werden?
+    erwartung: >-
+      Eine Standardmaßnahme ist nicht einschlägig; es greift die Generalklausel des § 17 Abs. 1 ASOG Bln.
+  - prompt: Wer ist zuständig?
+    erwartung: >-
+      Die allgemeine Gefahrenabwehr obliegt der Ordnungsbehörde, hier dem Bezirksamt; die Polizei wäre
+      nur im Eilfall zuständig. Ein Eilfall, der die Polizei zuständig machte, liegt nicht vor, da E erreichbar
+      ist.
+  - prompt: Liegt eine Gefahr vor und wer ist richtiger Adressat?
+    erwartung: >-
+      Es besteht eine konkrete Gefahr für Leben und Gesundheit von Passanten. E ist als Eigentümerin Zustandsstörerin
+      nach § 14 ASOG Bln. Die Verantwortlichkeit knüpft an den Zustand der Sache an und setzt kein Verschulden
+      voraus. Die Inanspruchnahme der Hausverwaltung H als Inhaberin der tatsächlichen Gewalt wäre ebenfalls
+      möglich; die Auswahl unter mehreren Störern richtet sich nach der Effektivität der Gefahrenabwehr.
+  - prompt: Ist die Maßnahme verhältnismäßig?
+    erwartung: >-
+      Ja: Schutzdach oder Absperrung sind geeignet und erforderlich, da weniger einschneidend als eine
+      Fassadensanierung oder ein Abriss. Dass E zwischen beiden Mitteln wählen darf (Austauschmittel),
+      mildert den Eingriff. Die Anordnung ist rechtmäßig.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Generalklausel (§ 17 Abs. 1 ASOG Bln) als Ermächtigungsgrundlage, mangels Standardmaßnahme
+      weight: 2.0
+      required: true
+      norms:
+      - >-
+        § 17 Abs. 1 ASOG Bln
+      keywords:
+      - >-
+        § 17 Abs. 1 ASOG Bln
+      - Generalklausel
+      - keine Standardmaßnahme
+      - Subsidiarität
+      card_slugs:
+      - be-por-generalklausel
+    - id: p2
+      label: >-
+        Zuständigkeit der Ordnungsbehörde (Bezirksamt), kein Eilfall für die Polizei
+      weight: 1.0
+      required: false
+      keywords:
+      - Ordnungsbehörde
+      - Bezirksamt
+      - Ordnungsamt
+      - kein Eilfall
+      card_slugs:
+      - be-por-zustaendigkeit
+    - id: p3
+      label: >-
+        Konkrete Gefahr für Leben und Gesundheit der Passanten bejaht
+      weight: 2.0
+      required: false
+      keywords:
+      - konkrete Gefahr
+      - Gefahr für Leib und Leben
+      - Passanten
+      - Gefahrenprognose
+      card_slugs:
+      - be-por-gefahr
+    - id: p4
+      label: >-
+        E als Zustandsstörerin (§ 14 ASOG Bln) und Auswahlermessen gegenüber H
+      weight: 2.5
+      required: true
+      norms:
+      - >-
+        § 14 ASOG Bln
+      keywords:
+      - Zustandsstörer
+      - >-
+        § 14 ASOG Bln
+      - Eigentümerin
+      - Auswahlermessen
+      - tatsächliche Gewalt
+      card_slugs:
+      - be-por-stoerer
+    - id: p5
+      label: >-
+        Verhältnismäßigkeit mit Austauschmittel (Wahl zwischen Schutzdach und Absperrung)
+      weight: 2.0
+      required: true
+      keywords:
+      - Verhältnismäßigkeit
+      - Austauschmittel
+      - erforderlich
+      - mildestes Mittel
+      - angemessen
+      card_slugs:
+      - be-por-aufbau
