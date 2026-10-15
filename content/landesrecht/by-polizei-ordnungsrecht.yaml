@@ -20,12 +20,12 @@ cards:
     die öffentliche Sicherheit oder Ordnung abzuwehren. Die Generalklausel ist subsidiär: Greift eine
     Standardmaßnahme oder ein Spezialgesetz, geht dieses vor, und ein Rückgriff auf die Generalklausel
     ist bei Nichterfüllung der Standardmaßnahme grundsätzlich gesperrt. Neben die konkrete Gefahr tritt
-    im PAG die drohende Gefahr (Art. 11 Abs. 3 PAG). Auf der Rechtsfolgenseite besteht Ermessen, das durch
+    im PAG die drohende Gefahr (Art. 11a PAG). Auf der Rechtsfolgenseite besteht Ermessen, das durch
     den Grundsatz der Verhältnismäßigkeit gebunden ist. Zum Schutz privater Rechte wird die Gefahrenabwehr
     nur subsidiär tätig, wenn gerichtlicher Schutz nicht rechtzeitig zu erlangen ist.
   norms:
   - Art. 11 Abs. 1 PAG
-  - Art. 11 Abs. 3 PAG
+  - Art. 11a PAG
   - Art. 7 Abs. 2 LStVG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -54,19 +54,16 @@ cards:
   stand: 2026-10
 - slug: by-por-drohende-gefahr
   type: rechtsprechung
-  front: Was ist die drohende Gefahr in Art. 11 Abs. 3 PAG und wie hat das BVerfG die Grenzen gezogen?
+  front: Was ist die drohende Gefahr in Art. 11a PAG und wie hat das BVerfG die Grenzen gezogen?
   back: >-
-    Die drohende Gefahr ist ein Eingriffsanlass im Vorfeld der konkreten Gefahr. Nach Art. 11 Abs. 3 PAG
-    darf die Polizei einschreiten, wenn das individuelle Verhalten einer Person die konkrete Wahrscheinlichkeit
-    begründet, dass in absehbarer Zeit Angriffe auf bedeutende Rechtsgüter stattfinden, oder wenn Vorbereitungshandlungen
-    auf bestimmte schwere Straftaten hindeuten. Das BVerfG hat im BKAG-Urteil (BVerfGE 141, 220) entschieden,
+    Die drohende Gefahr ist ein Eingriffsanlass im Vorfeld der konkreten Gefahr. Nach Art. 11a PAG darf die Polizei, wenn die Voraussetzungen des Art. 11 Abs. 1 und 2 PAG nicht vorliegen, die notwendigen Maßnahmen zur Sachverhaltsaufklärung und zur Verhinderung der Entstehung einer Gefahr für ein bedeutendes Rechtsgut (Art. 11a Abs. 2 PAG) treffen, wenn das individuelle Verhalten einer Person die konkrete Wahrscheinlichkeit begründet, dass in absehbarer Zeit Angriffe von erheblicher Intensität oder Auswirkung zu erwarten sind, oder wenn Vorbereitungshandlungen für sich oder zusammen mit weiteren bestimmten Tatsachen den Schluss auf ein seiner Art nach konkretisiertes Geschehen zulassen, wonach solche Angriffe in absehbarer Zeit zu erwarten sind. Das BVerfG hat im BKAG-Urteil (BVerfGE 141, 220) entschieden,
     dass heimliche Überwachungsmaßnahmen auch dann zulässig sein können, wenn eine konkretisierte Gefahr
     im Sinn eines wenigstens seiner Art nach konkretisierten und zeitlich absehbaren Geschehens besteht,
     aber ein bloßer Gefahrenverdacht nicht genügt. Die bayerische Regelung ist verfassungsrechtlich umstritten,
     insbesondere wegen der Bestimmtheit und Verhältnismäßigkeit; sie ist eng auszulegen und verlangt eine
     personenbezogene Prognose.
   norms:
-  - Art. 11 Abs. 3 PAG
+  - Art. 11a PAG
   - Art. 20 Abs. 3 GG
   quellen:
   - BVerfGE 141, 220 (BKAG)
@@ -99,8 +96,7 @@ cards:
   type: norm
   front: Was ist ein Platzverweis nach Art. 16 PAG und welche Fragen stellen sich in der Klausur?
   back: >-
-    Nach Art. 16 PAG kann die Polizei zur Abwehr einer Gefahr oder zur Beseitigung einer Störung eine
-    Person vorübergehend von einem Ort verweisen oder ihr vorübergehend das Betreten eines Ortes verbieten.
+    Nach Art. 16 Abs. 1 PAG kann die Polizei zur Abwehr einer Gefahr oder einer drohenden Gefahr für ein bedeutendes Rechtsgut eine Person vorübergehend von einem Ort verweisen oder ihr vorübergehend das Betreten eines Ortes verbieten.
     Der Platzverweis ist ein Verwaltungsakt in Form eines Gebots oder Verbots; er ist nur vorübergehend
     und örtlich begrenzt. Zu prüfen sind Gefahr, richtiger Adressat (Art. 7 und 8 PAG), Ermessen und Verhältnismäßigkeit,
     insbesondere die zumutbare Dauer und die Bestimmtheit des Ortes. Für den Rechtsschutz ist wegen der
@@ -121,8 +117,7 @@ cards:
     Gewahrsam ist die Freiheitsentziehung zur Gefahrenabwehr; die Voraussetzungen regelt Art. 17 PAG.
     Typische Fälle sind der Schutz der Person vor einer Gefahr für Leib oder Leben oder die Verhinderung
     einer unmittelbar bevorstehenden Straftat oder Ordnungswidrigkeit von erheblicher Bedeutung. Weil
-    es sich um eine Freiheitsentziehung im Sinne des Art. 104 Abs. 2 GG handelt, ist grundsätzlich unverzüglich
-    eine richterliche Entscheidung herbeizuführen; die Polizei darf die Person bis zur richterlichen Entscheidung
+    es sich um eine Freiheitsentziehung im Sinne des Art. 104 Abs. 2 GG handelt, hat die Polizei nach Art. 18 PAG unverzüglich eine richterliche Entscheidung (Art. 97 PAG) herbeizuführen; die Polizei darf die Person bis zur richterlichen Entscheidung
     nur so lange festhalten, wie es zur Herbeiführung der Entscheidung nötig ist. Maßgeblich sind außerdem
     die Grenzen des Art. 104 Abs. 1 GG. Zu prüfen sind Verhältnismäßigkeit und das Subsidiaritätsprinzip:
     Zuerst sind mildere Mittel wie ein Platzverweis zu erwägen.
@@ -142,7 +137,7 @@ cards:
     vor Generalklausel). II. Formelle Rechtmäßigkeit: 1. Zuständigkeit (Sicherheitsbehörden nach Art.
     6 LStVG, Polizei nach Art. 3 PAG subsidiär), 2. Verfahren (Anhörung, Art. 28 BayVwVfG), 3. Form. III.
     Materielle Rechtmäßigkeit: 1. Tatbestand (Schutzgut, Gefahrbegriff, Prognose ex ante), 2. richtiger
-    Adressat (Art. 7, 8, 10 PAG; Art. 9 bis 11 LStVG), 3. Rechtsfolge: Ermessen und Verhältnismäßigkeit
+    Adressat (Art. 7, 8, 10 PAG; Art. 9 LStVG), 3. Rechtsfolge: Ermessen und Verhältnismäßigkeit
     (geeignet, erforderlich, angemessen).
   norms:
   - Art. 11 PAG
@@ -160,7 +155,7 @@ cards:
   back: >-
     Für die Polizei gelten Art. 7 PAG (Verantwortlichkeit für das Verhalten von Personen), Art. 8 PAG
     (Verantwortlichkeit für Sachen) und Art. 10 PAG (nicht verantwortliche Personen). Die Sicherheitsbehörden
-    wenden stattdessen die Regeln des LStVG an (Art. 9 bis 11 LStVG). Verhaltensstörer ist, wer die Gefahr
+    wenden stattdessen die Regeln des LStVG an (Art. 9 LStVG). Verhaltensstörer ist, wer die Gefahr
     durch sein Verhalten verursacht (Theorie der unmittelbaren Verursachung). Zustandsstörer ist der Inhaber
     der tatsächlichen Gewalt oder der Eigentümer einer gefährlichen Sache. Bei mehreren Störern wählt
     die Behörde nach pflichtgemäßem Ermessen den Adressaten, orientiert an der effektiven Gefahrenabwehr
@@ -200,7 +195,7 @@ cards:
   type: norm
   front: Unter welchen Voraussetzungen darf in Bayern ein Nichtstörer in Anspruch genommen werden?
   back: >-
-    Nach Art. 10 PAG (für die Sicherheitsbehörden Art. 11 LStVG) darf die Polizei Maßnahmen gegen nicht
+    Nach Art. 10 PAG (für die Sicherheitsbehörden Art. 9 Abs. 3 LStVG) darf die Polizei Maßnahmen gegen nicht
     verantwortliche Personen richten, wenn eine gegenwärtige erhebliche Gefahr abzuwehren ist, Maßnahmen
     gegen die Verantwortlichen nicht oder nicht rechtzeitig möglich sind oder keinen Erfolg versprechen,
     die Polizei die Gefahr nicht selbst oder durch Beauftragte abwehren kann und die Personen ohne erhebliche
@@ -258,13 +253,13 @@ cards:
   back: >-
     Für Sicherheitsbehörden gilt das Bayerische Verwaltungszustellungs- und Vollstreckungsgesetz (BayVwZVG)
     mit den Zwangsmitteln Ersatzvornahme, Zwangsgeld, Ersatzzwangshaft und unmittelbarer Zwang; für die
-    Polizei regelt das PAG eigene Zwangsvorschriften (Art. 53 ff. PAG). Regelfall ist das gestreckte Verfahren:
+    Polizei regelt das PAG eigene Zwangsvorschriften (Art. 70 ff. PAG). Regelfall ist das gestreckte Verfahren:
     Grundverfügung, Androhung, Festsetzung, Anwendung des Zwangsmittels. Bei Gefahr im Verzug sind Sofortvollzug
     beziehungsweise unmittelbare Ausführung ohne vorherigen Verwaltungsakt möglich, wenn der Verantwortliche
     nicht rechtzeitig erreichbar ist. Kostenschuldner ist grundsätzlich der Verantwortliche, die Kosten
     werden durch Kostenbescheid festgesetzt; bei Inanspruchnahme eines Nichtstörers gibt es Entschädigung.
   norms:
-  - Art. 53 ff. PAG
+  - Art. 70 ff. PAG
   - BayVwZVG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -275,8 +270,7 @@ cards:
   front: Welcher Rechtsschutz besteht gegen polizeiliche Maßnahmen in Bayern?
   back: >-
     Der Verwaltungsrechtsweg ist nach § 40 Abs. 1 VwGO eröffnet. Gegen belastende Verfügungen ist die
-    Anfechtungsklage statthaft; ein Widerspruchsverfahren ist in Bayern nach Art. 15 AGVwGO nur ausnahmsweise
-    erforderlich. Vorläufigen Rechtsschutz gewähren §§ 80, 80a VwGO; bei Zwangsmitteln gelten die Besonderheiten
+    Anfechtungsklage statthaft; ein Widerspruchsverfahren ist in Bayern nach Art. 12 AGVwGO nur in den dort genannten Bereichen (etwa Kommunalabgaben-, Schul- oder Beamtenrecht) vorgesehen, im Polizei- und Sicherheitsrecht in der Regel nicht. Vorläufigen Rechtsschutz gewähren §§ 80, 80a VwGO; bei Zwangsmitteln gelten die Besonderheiten
     des Verwaltungsvollstreckungsrechts. Erledigt sich die Maßnahme (typisch beim Platzverweis), ist die
     Fortsetzungsfeststellungsklage analog § 113 Abs. 1 S. 4 VwGO statthaft; das Feststellungsinteresse
     folgt aus Wiederholungsgefahr, Rehabilitationsinteresse oder tiefgreifendem Grundrechtseingriff (BVerfGE
@@ -286,7 +280,7 @@ cards:
   - § 40 Abs. 1 VwGO
   - § 113 Abs. 1 S. 4 VwGO
   - § 80 VwGO
-  - Art. 15 AGVwGO
+  - Art. 12 AGVwGO
   quellen:
   - BVerfGE 96, 27
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -316,7 +310,7 @@ schemata:
     - label: 1. Tatbestand
       children:
       - label: 'a) Schutzgut: öffentliche Sicherheit oder Ordnung'
-      - label: 'b) Gefahr: konkrete Gefahr, drohende Gefahr nach Art. 11 Abs. 3 PAG'
+      - label: 'b) Gefahr: konkrete Gefahr, drohende Gefahr nach Art. 11a PAG'
         hinweis: Prognose aus ex-ante-Sicht; Anscheinsgefahr beachten.
     - label: 2. Richtiger Adressat
       children:
@@ -362,8 +356,7 @@ faelle:
       ist geeignet, erforderlich und angemessen; mildere Mittel (bloße Ansprache) blieben erfolglos.
   - prompt: Wie ist das Forttragen rechtlich einzuordnen und welche Klageart ist statthaft?
     erwartung: >-
-      Das Forttragen ist Anwendung unmittelbaren Zwangs zur Durchsetzung des Platzverweises (Art. 53 ff.
-      PAG), nach vorheriger Androhung zulässig. Da sich die Maßnahme erledigt hat, ist die Fortsetzungsfeststellungsklage
+      Das Forttragen ist Anwendung unmittelbaren Zwangs zur Durchsetzung des Platzverweises (Art. 70 ff. PAG), nach vorheriger Androhung zulässig. Da sich die Maßnahme erledigt hat, ist die Fortsetzungsfeststellungsklage
       analog § 113 Abs. 1 S. 4 VwGO statthaft.
   expectation:
     pruefpunkte:
@@ -416,10 +409,10 @@ faelle:
       weight: 2.0
       required: false
       norms:
-      - Art. 53 ff. PAG
+      - Art. 70 ff. PAG
       keywords:
       - unmittelbarer Zwang
-      - Art. 53 ff. PAG
+      - Art. 70 ff. PAG
       - Androhung
       - Zwangsmittel
       - Vollstreckung

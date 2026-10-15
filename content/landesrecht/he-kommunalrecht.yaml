@@ -17,11 +17,7 @@ cards:
     Welche Organe hat die Gemeinde nach der HGO, und was kennzeichnet die hessische Magistratsverfassung?
   back: >-
     Organe der Gemeinde sind die Gemeindevertretung (in Städten: Stadtverordnetenversammlung) und der
-    Gemeindevorstand (in Städten: Magistrat). Die Gemeindevertretung ist das Hauptorgan: Sie beschließt
-    über alle wichtigen Angelegenheiten und kontrolliert die Verwaltung (§§ 50, 51 HGO). Der Gemeindevorstand
-    ist als kollegiales Verwaltungsorgan für die laufende Verwaltung und die Ausführung der Beschlüsse
-    zuständig (§§ 65, 66 HGO). Der Bürgermeister, direkt gewählt, ist Vorsitzender des Gemeindevorstands
-    (§ 70 HGO) und leitet die Verwaltung. Typisch für die hessische Magistratsverfassung ist die kollegiale
+    Gemeindevorstand (in Städten: Magistrat). Die Gemeindevertretung beschließt über die Angelegenheiten der Gemeinde, soweit sich aus der HGO nichts anderes ergibt, und überwacht die gesamte Verwaltung (§ 50 HGO); bestimmte Angelegenheiten kann sie nicht übertragen (§ 51 HGO). Der Gemeindevorstand ist die Verwaltungsbehörde der Gemeinde und besorgt nach den Beschlüssen der Gemeindevertretung die laufende Verwaltung (§§ 65, 66 HGO). Der Bürgermeister wird von den Bürgern direkt gewählt (§ 39 HGO), ist Vorsitzender des Gemeindevorstands (§ 65 Abs. 1 HGO), leitet und beaufsichtigt den Geschäftsgang der gesamten Verwaltung und bereitet die Beschlüsse des Gemeindevorstands vor (§ 70 HGO). Typisch für die hessische Magistratsverfassung ist die kollegiale
     Verwaltungsspitze; der Vorsitzende der Gemeindevertretung ist ein eigenes Amt, nicht der Bürgermeister.
   norms:
   - §§ 50, 51 HGO
@@ -35,13 +31,10 @@ cards:
   type: definition
   front: Wie sind die Zuständigkeiten zwischen Gemeindevertretung und Gemeindevorstand abgegrenzt?
   back: >-
-    Die Gemeindevertretung entscheidet über alle Angelegenheiten der Gemeinde, soweit sie nicht kraft
-    Gesetzes dem Gemeindevorstand obliegen (§ 51 HGO); ihr sind wesentliche Entscheidungen wie Satzungen,
-    Haushalt, wichtige Vermögensgeschäfte und Grundsätze der Verwaltung vorbehalten. Dem Gemeindevorstand
-    obliegen die Verwaltung, die Vorbereitung und Ausführung der Beschlüsse und die Geschäfte der laufenden
-    Verwaltung (§ 66 HGO). Handelt ein Organ im Zuständigkeitsbereich des anderen, ist die Maßnahme organschaftlich
+    Die Gemeindevertretung beschließt über die Angelegenheiten der Gemeinde, soweit sich aus der HGO nichts anderes ergibt; sie kann die Beschlussfassung über bestimmte Angelegenheiten auf den Gemeindevorstand oder einen Ausschuss übertragen, nicht aber die in § 51 HGO aufgeführten Angelegenheiten (§ 50 Abs. 1 HGO), zu denen u. a. Satzungen, die Haushaltssatzung und die allgemeinen Grundsätze der Verwaltung gehören. Der Gemeindevorstand ist die Verwaltungsbehörde der Gemeinde; er besorgt nach den Beschlüssen der Gemeindevertretung die laufende Verwaltung und bereitet die Beschlüsse vor und führt sie aus (§ 66 HGO). Handelt ein Organ im Zuständigkeitsbereich des anderen, ist die Maßnahme organschaftlich
     zuständigkeitswidrig; die Wirksamkeit nach außen richtet sich nach den Vertretungsregeln (§ 71 HGO).
   norms:
+  - § 50 HGO
   - § 51 HGO
   - § 66 HGO
   - § 71 HGO
@@ -54,10 +47,7 @@ cards:
   front: >-
     Welche Form gilt für Verpflichtungserklärungen der Gemeinde in Hessen und welche Folgen hat ein Formverstoß?
   back: >-
-    Erklärungen, durch die die Gemeinde verpflichtet werden soll, bedürfen der Schriftform. Sie sind nur
-    rechtsverbindlich, wenn sie vom Bürgermeister oder seinem Vertreter und einem weiteren Mitglied des
-    Gemeindevorstands handschriftlich unterzeichnet sind (§ 71 HGO). Ausnahmen gelten für Geschäfte der
-    laufenden Verwaltung. Wird die Form nicht beachtet, fehlt dem Vertreter die Vertretungsmacht; der
+    Erklärungen, durch die die Gemeinde verpflichtet werden soll, bedürfen der Schriftform oder müssen in elektronischer Form mit einer dauerhaft überprüfbaren qualifizierten elektronischen Signatur versehen sein. Sie sind nur rechtsverbindlich, wenn sie vom Bürgermeister oder seinem allgemeinen Vertreter sowie von einem weiteren Mitglied des Gemeindevorstands unterzeichnet sind (§ 71 Abs. 2 HGO). Das gilt nicht für Geschäfte der laufenden Verwaltung, die für die Gemeinde von nicht erheblicher Bedeutung sind, und für Erklärungen eines ausdrücklich Beauftragten, wenn die Vollmacht in dieser Form erteilt ist. Wird die Form nicht beachtet, fehlt dem Vertreter die Vertretungsmacht; der
     Vertrag ist nach h. M. schwebend unwirksam und kann formgerecht genehmigt werden (§ 177 BGB analog).
     Ein Vertrauensschutz des Vertragspartners besteht nicht, weil die Formvorschrift die Gemeinde schützen
     soll und für jedermann erkennbar ist; auch Treu und Glauben (§ 242 BGB) hilft nur in Ausnahmefällen.
@@ -77,12 +67,7 @@ cards:
   back: >-
     Nach § 25 HGO (Widerstreit der Interessen) darf ein ehrenamtlich Tätiger nicht beraten und entscheiden,
     wenn die Entscheidung ihm selbst, einem Angehörigen oder einer von ihm vertretenen natürlichen oder
-    juristischen Person einen unmittelbaren Vorteil oder Nachteil bringen kann. Es genügt die konkrete
-    Möglichkeit eines Vorteils; auf tatsächliche Beeinflussung kommt es nicht an. Nicht erfasst ist die
-    bloße Gruppenbetroffenheit. Das Mitglied darf nach Maßgabe des § 25 HGO weder beraten noch abstimmen.
-    Die Mitwirkung eines Ausgeschlossenen macht den Beschluss rechtswidrig; ob und wie die Folgen eingeschränkt
-    werden (Kausalität für das Ergebnis, Heilung), bestimmt sich nach den Absätzen des § 25 HGO. Bei Prüfungen
-    ist die Stimmenmehrheit ohne den Ausgeschlossenen zu berechnen.
+    juristischen Person einen unmittelbaren Vorteil oder Nachteil bringen kann. Es genügt die Möglichkeit eines unmittelbaren Vorteils oder Nachteils; auf tatsächliche Beeinflussung kommt es nicht an. Nicht erfasst ist, wer nur als Angehöriger einer Berufs- oder Bevölkerungsgruppe beteiligt ist, deren gemeinsame Interessen berührt werden (§ 25 Abs. 1 S. 2 HGO). Das Mitglied hat die Befangenheit vorher mitzuteilen und muss den Beratungsraum verlassen (§ 25 Abs. 4 HGO). Beschlüsse, die unter Verletzung des Mitwirkungsverbots gefasst wurden, sind unwirksam; sie gelten jedoch sechs Monate nach der Beschlussfassung (bei erforderlicher Bekanntmachung nach dieser) als von Anfang an wirksam zustande gekommen, wenn nicht vorher der Gemeindevorstand oder der Bürgermeister widersprochen oder die Aufsichtsbehörde beanstandet hat (§ 25 Abs. 6 HGO). Eine Kausalitätsklausel enthält § 25 Abs. 6 HGO nicht.
   norms:
   - § 25 HGO
   quellen:
@@ -96,9 +81,7 @@ cards:
     Die Gemeinde kann ihre Angelegenheiten durch Satzung regeln, soweit Gesetze nichts anderes bestimmen
     (§ 5 HGO; Art. 28 Abs. 2 GG, Art. 137 HV). Eingriffe in Freiheit und Eigentum der Bürger erfordern
     eine gesetzliche Ermächtigung (Wesentlichkeitstheorie). Formell sind Beschluss der Gemeindevertretung,
-    Ausfertigung und öffentliche Bekanntmachung nötig; Verfahrens- und Formfehler können nach Maßgabe
-    des § 5 HGO unbeachtlich werden, wenn sie nicht rechtzeitig gerügt werden, nicht aber Fehler bei Ausfertigung
-    und Bekanntmachung. Materielle Fehler werden nicht geheilt. Rechtsschutz: Inzidentkontrolle; die Normenkontrolle
+    Ausfertigung und öffentliche Bekanntmachung nötig; Satzungen sind auszufertigen und öffentlich bekannt zu machen (§ 5 Abs. 3 HGO). Für die Rechtswirksamkeit ist die Verletzung der in § 5 Abs. 4 HGO abschließend genannten Vorschriften (§§ 4c, 8c, 53, 56, 58, 82 Abs. 3 und 88 Abs. 2 HGO) unbeachtlich, wenn sie nicht innerhalb von sechs Monaten nach der öffentlichen Bekanntmachung schriftlich unter Bezeichnung der Tatsachen gegenüber der Gemeinde geltend gemacht worden ist; sonstige Fehler, etwa bei Ausfertigung und Bekanntmachung, werden davon nicht erfasst. Materielle Fehler werden nicht geheilt. Rechtsschutz: Inzidentkontrolle; die Normenkontrolle
     nach § 47 Abs. 1 Nr. 2 VwGO setzt eine landesrechtliche Bestimmung voraus, bei Satzungen nach dem
     BauGB gilt § 47 Abs. 1 Nr. 1 VwGO.
   norms:
@@ -119,8 +102,7 @@ cards:
     diese Einrichtungen zu benutzen (§ 20 HGO). Der Anspruch ist durch Widmung und Kapazität begrenzt;
     Gleichheitssatz und bei Parteien § 5 PartG begrenzen die Auswahl. Allein die politische Richtung einer
     nicht verbotenen Partei rechtfertigt keinen Ausschluss. Das Ob der Zulassung ist öffentlich-rechtlich
-    (Verwaltungsakt), das Wie kann privatrechtlich geregelt werden (Zweistufentheorie). Auswärtige und
-    juristische Personen haben Anspruch nur im Rahmen der Widmung.
+    (Verwaltungsakt), das Wie kann privatrechtlich geregelt werden (Zweistufentheorie). Grundbesitzer und Gewerbetreibende ohne Wohnsitz in der Gemeinde sind nach § 20 Abs. 2 HGO, juristische Personen und Personenvereinigungen nach § 20 Abs. 3 HGO entsprechend berechtigt.
   norms:
   - § 19 HGO
   - § 20 HGO
@@ -133,8 +115,7 @@ cards:
   type: definition
   front: Welche Aufsichtsformen und -mittel kennt die HGO?
   back: >-
-    Die Gemeinden unterstehen der Rechtsaufsicht des Landes bei Selbstverwaltungsangelegenheiten und der
-    Fachaufsicht bei Weisungsaufgaben (§§ 135 ff. HGO). Aufsichtsbehörden sind je nach Gemeindeart und
+    Die Aufsicht des Staates soll sicherstellen, dass die Gemeinden im Einklang mit den Gesetzen verwaltet werden und dass die im Rahmen der Gesetze erteilten Weisungen befolgt werden (§ 135 HGO); Aufsichtsbehörden regelt § 136 HGO (§§ 135 ff. HGO). Aufsichtsbehörden sind je nach Gemeindeart und
     Aufsichtsstufe der Landrat, das Regierungspräsidium und das Ministerium des Innern. Die Aufsicht prüft
     die Rechtmäßigkeit, nicht die Zweckmäßigkeit. Mittel sind Informationsrecht, Beanstandung rechtswidriger
     Beschlüsse, Anordnung, Ersatzvornahme und Bestellung eines Beauftragten. Das Einschreiten steht im
@@ -200,8 +181,7 @@ schemata:
     - label: '1. Handelnder: Bürgermeister oder Vertreter, Gemeindevorstand als Organ'
     - label: 2. Innenzuständigkeit (Gemeindevertretung vs. Gemeindevorstand)
     - label: >-
-        3. Form: Schriftform und handschriftliche Unterschrift von zwei Vertretungsberechtigten, § 71
-        HGO
+        3. Form: Schriftform (oder qualifiziert signierte elektronische Form) und Unterschrift von zwei Vertretungsberechtigten, § 71 Abs. 2 HGO
     - label: '4. Ausnahme: Geschäfte der laufenden Verwaltung'
   - label: III. Rechtsfolge eines Formverstoßes
     hinweis: Vertretungsmacht fehlt; schwebende Unwirksamkeit, § 177 BGB analog.
@@ -232,8 +212,7 @@ faelle:
   - prompt: Hat B Vertretungsmacht?
     erwartung: >-
       Die Vertretungsmacht des Bürgermeisters bemisst sich nach der Formvorschrift des § 71 HGO. Erforderlich
-      sind Schriftform und zwei Unterschriften, nämlich die handschriftliche Unterschrift des Bürgermeisters
-      und die eines weiteren Mitglieds des Gemeindevorstands, sofern kein Geschäft der laufenden Verwaltung
+      sind Schriftform und zwei Unterschriften, nämlich die Unterschrift des Bürgermeisters und die eines weiteren Mitglieds des Gemeindevorstands, sofern kein Geschäft der laufenden Verwaltung
       vorliegt. B hat allein unterzeichnet und die Form nicht eingehalten. Damit liegt ein Formverstoß
       vor, und B hatte deshalb keine Vertretungsmacht.
   - prompt: Folgen des Formverstoßes?

@@ -75,7 +75,7 @@ cards:
     Wo stehen die Standardmaßnahmen im PolG BW und wie verhalten sie sich zur Generalklausel?
   back: >-
     Die Standardmaßnahmen sind im PolG BW im Abschnitt über Einzelmaßnahmen geregelt (Fundstellen u. a.
-    Personenfeststellung § 26 PolG BW, Platzverweis § 27a PolG BW). Sie regeln typische Eingriffe mit
+    Personenfeststellung § 27 PolG BW, Platzverweis § 30 PolG BW). Sie regeln typische Eingriffe mit
     eigenen, meist engeren Voraussetzungen abschließend. Liegen diese nicht vor, darf die Behörde den
     Eingriff nicht auf die Generalklausel (§ 3 PolG BW) stützen (Sperrwirkung der Standardmaßnahme). Ausnahmen
     gelten nur für atypische Maßnahmen von geringer Eingriffsintensität, die der Gesetzgeber nicht regeln
@@ -83,8 +83,8 @@ cards:
     erst wenn keine passt und der Eingriff atypisch ist, kommt die Generalklausel in Betracht.
   norms:
   - § 3 PolG BW
-  - § 26 PolG BW
-  - § 27a PolG BW
+  - § 27 PolG BW
+  - § 30 PolG BW
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -95,14 +95,10 @@ cards:
   back: >-
     Jede Maßnahme muss einen legitimen Zweck (Gefahrenabwehr) verfolgen und dafür geeignet, erforderlich
     und angemessen sein. Geeignet ist sie, wenn sie den Zweck fördert. Erforderlich ist sie, wenn kein
-    gleich wirksames, aber milderes Mittel zur Verfügung steht; das PolG BW verlangt ausdrücklich, dass
-    bei mehreren möglichen Maßnahmen diejenige zu wählen ist, die den Einzelnen und die Allgemeinheit
-    am wenigsten beeinträchtigt. Angemessen ist sie, wenn der zu erwartende Nachteil nicht außer Verhältnis
-    zum erstrebten Erfolg steht (Verhältnismäßigkeit im engeren Sinne). Die Maßnahme darf nur so lange
-    dauern, bis ihr Zweck erreicht ist oder sich zeigt, dass er nicht erreichbar ist. Der Grundsatz bindet
+    gleich wirksames, aber milderes Mittel zur Verfügung steht; § 5 Abs. 1 PolG BW verlangt ausdrücklich, dass bei mehreren in Betracht kommenden Maßnahmen diejenige zu treffen ist, die den Einzelnen und die Allgemeinheit voraussichtlich am wenigsten beeinträchtigt. Angemessen ist sie, wenn kein Nachteil herbeigeführt wird, der erkennbar außer Verhältnis zum beabsichtigten Erfolg steht (§ 5 Abs. 2 PolG BW; Verhältnismäßigkeit im engeren Sinne). Der Grundsatz bindet
     die Ermessensausübung auf der Rechtsfolgenseite.
   norms:
-  - PolG BW, Grundsatz der Verhältnismäßigkeit
+  - § 5 PolG BW
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -135,10 +131,7 @@ cards:
     Verhaltensverantwortlichkeit: § 6 PolG BW (Person, die die Gefahr verursacht; daneben Aufsichtspflichtige bei Kindern). Zustandsverantwortlichkeit: § 7 PolG BW (Eigentümer
     und Inhaber der tatsächlichen Gewalt über eine Sache oder ein Tier, von dem die Gefahr ausgeht). Verursachung
     wird nach der Theorie der unmittelbaren Verursachung beurteilt (Überschreiten der Gefahrenschwelle
-    durch die eigene Handlung). Nichtverantwortliche Personen dürfen nur unter den engen Voraussetzungen
-    des polizeilichen Notstands in Anspruch genommen werden: gegenwärtige erhebliche Gefahr, keine wirksame
-    Abwehr durch Maßnahmen gegen Verantwortliche oder durch die Behörde selbst, und keine erhebliche Gefährdung
-    des Nichtverantwortlichen (§ 9 PolG BW). Die Maßnahme ist zeitlich auf das notwendige Maß beschränkt.
+    durch die eigene Handlung). Gegen unbeteiligte Personen dürfen Maßnahmen nur getroffen werden, wenn auf andere Weise eine unmittelbar bevorstehende Störung der öffentlichen Sicherheit oder Ordnung nicht verhindert oder eine bereits eingetretene Störung nicht beseitigt werden kann, insbesondere wenn die eigenen Mittel der Polizei nicht ausreichen oder wenn durch Maßnahmen nach den §§ 6 bis 8 ein Schaden herbeigeführt würde, der erkennbar außer Verhältnis zum beabsichtigten Erfolg steht (§ 9 Abs. 1 PolG BW). Die Maßnahmen dürfen nur aufrechterhalten werden, solange diese Voraussetzungen vorliegen (§ 9 Abs. 2 PolG BW).
   norms:
   - § 6 PolG BW
   - § 7 PolG BW
@@ -172,15 +165,12 @@ cards:
   type: definition
   front: Wer ist in Baden-Württemberg für die Gefahrenabwehr zuständig?
   back: >-
-    Das PolG BW unterscheidet die allgemeinen Polizeibehörden (Ortspolizeibehörden: Gemeinden; Kreispolizeibehörden:
-    Landratsämter bzw. Stadtkreise; Regierungspräsidien; Ministerium) vom Polizeivollzugsdienst. Die sachliche Zuständigkeit der Polizeibehörden folgt aus den Zuständigkeitsregeln des PolG BW zum Behördenaufbau. Grundsätzlich handeln die
-    Polizeibehörden; der Polizeivollzugsdienst wird tätig, soweit die Polizeibehörden nicht rechtzeitig
-    handeln können (Eilzuständigkeit, § 60 PolG BW), und bei besonderen Zuweisungen. Die örtliche Zuständigkeit
+    Das PolG BW unterscheidet die allgemeinen Polizeibehörden (Ortspolizeibehörden: Gemeinden; Kreispolizeibehörden: untere Verwaltungsbehörden; Regierungspräsidien; Ministerien)  vom Polizeivollzugsdienst. Allgemeine Polizeibehörden sind die obersten Landespolizeibehörden (Ministerien), die Landespolizeibehörden (Regierungspräsidien), die Kreispolizeibehörden (untere Verwaltungsbehörden) und die Ortspolizeibehörden (Gemeinden), §§ 106, 107 PolG BW. Soweit nichts anderes bestimmt ist, sind die Ortspolizeibehörden sachlich zuständig (§ 111 Abs. 2 PolG BW). Grundsätzlich sind die Polizeibehörden zuständig; der Polizeivollzugsdienst nimmt die polizeilichen Aufgaben wahr, wenn ein sofortiges Tätigwerden erforderlich erscheint, und ist für die in § 105 Abs. 3 PolG BW genannten Maßnahmen (u. a. §§ 27 bis 29, 30 Abs. 1, 33 bis 38) neben den Polizeibehörden zuständig (§ 105 Abs. 2 und 3 PolG BW). Die örtliche Zuständigkeit
     richtet sich nach dem Bezirk. Wird die unzuständige Behörde tätig, ist die Maßnahme formell rechtswidrig;
     die Unbeachtlichkeit nach § 46 LVwVfG ist im Einzelfall zu prüfen.
   norms:
-  - § 60 PolG BW
-  
+  - § 105 PolG BW
+  - § 111 PolG BW
   - § 46 LVwVfG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -190,12 +180,8 @@ cards:
   type: norm
   front: Wie wird eine Polizeiverfügung in Baden-Württemberg vollstreckt?
   back: >-
-    Maßgeblich ist das Landesverwaltungsvollstreckungsgesetz (LVwVG). Zwangsmittel sind Zwangsgeld, Ersatzvornahme
-    und unmittelbarer Zwang (§ 19 LVwVG). Regelverfahren ist das gestreckte Verfahren: vollstreckbarer
-    Verwaltungsakt, Androhung, Festsetzung, Anwendung. Ohne vorausgehenden Verwaltungsakt kann die Behörde
-    im Wege des Sofortvollzugs handeln (§ 21 LVwVG), wenn dies zur Abwehr einer
-    drohenden Gefahr notwendig ist und die Behörde hierbei innerhalb ihrer Befugnisse handelt; die Rechtmäßigkeit
-    richtet sich dann nach den hypothetischen Voraussetzungen eines Grundverwaltungsakts. Für den unmittelbaren
+    Maßgeblich ist das Landesverwaltungsvollstreckungsgesetz (LVwVG). Zwangsmittel sind Zwangsgeld (und Zwangshaft), Ersatzvornahme und unmittelbarer Zwang (§ 19 Abs. 1 LVwVG); die Androhung regelt § 20 LVwVG. Regelverfahren ist das gestreckte Verfahren: vollstreckbarer
+    Verwaltungsakt, Androhung, Festsetzung, Anwendung. Soweit die Abwehr einer Gefahr es erfordert, kann von den Vollstreckungsvoraussetzungen abgewichen werden (§ 21 LVwVG, u. a. von der Vollstreckbarkeit und der vorherigen Androhung nach § 20 Abs. 1 LVwVG). Die unmittelbare Ausführung einer Maßnahme durch die Polizei ohne vorherige Inanspruchnahme der Verantwortlichen regelt § 8 PolG BW; die Kosten sind von den nach §§ 6, 7 PolG BW Verantwortlichen zu ersetzen (§ 8 Abs. 2 PolG BW). Für den unmittelbaren
     Zwang durch den Polizeivollzugsdienst enthält das PolG BW eigene Regelungen.
   norms:
   - § 19 LVwVG
@@ -212,13 +198,12 @@ cards:
   back: >-
     Bei Ersatzvornahme und Sofortvollzug trägt der Pflichtige (Verantwortliche) die Kosten; sie werden
     durch Leistungsbescheid festgesetzt. Beim Abschleppen eines verbotswidrig geparkten Fahrzeugs gilt
-    dies entsprechend. Wer als nichtverantwortliche Person nach § 9 PolG BW in Anspruch genommen wird,
-    hat einen Ausgleichsanspruch für den entstandenen Schaden (§ 55 PolG BW); Anspruchsgegner ist die
-    Körperschaft, in deren Dienst die Behörde steht. Daneben bleiben Amtshaftung (§ 839 BGB, Art. 34 GG) und der
+    dies entsprechend. Wer als unbeteiligte Person nach § 9 Abs. 1 PolG BW in Anspruch genommen wird, kann eine angemessene Entschädigung für den entstandenen Schaden verlangen (§ 100 PolG BW); zur Entschädigung verpflichtet ist der Staat oder die Körperschaft, in deren Dienst der Beamte steht, der die Maßnahme getroffen hat (§ 101 PolG BW), über die Ansprüche entscheiden die ordentlichen Gerichte (§ 103 PolG BW). Der Entschädigungspflichtige kann von den nach §§ 6, 7 PolG BW Verantwortlichen Ersatz verlangen (§ 102 PolG BW). Daneben bleiben Amtshaftung (§ 839 BGB, Art. 34 GG) und der
     allgemeine Aufopferungsanspruch möglich. Die Kostenhöhe ist an der Verhältnismäßigkeit zu messen.
   norms:
   - § 9 PolG BW
-  - § 55 PolG BW
+  - § 100 PolG BW
+  - § 101 PolG BW
   - § 839 BGB
   - Art. 34 GG
   quellen:
@@ -252,7 +237,7 @@ cards:
     Aufbau: Rechtmäßigkeit einer polizeilichen Maßnahme nach dem Landesrecht Baden-Württembergs
   back: >-
     I. Ermächtigungsgrundlage (Standardmaßnahme vor § 3 PolG BW). II. Formelle Rechtmäßigkeit: Zuständigkeit
-    (Polizeibehörde oder Polizeivollzugsdienst, Eilzuständigkeit § 60), Verfahren (Anhörung § 28 LVwVfG),
+    (Polizeibehörde oder Polizeivollzugsdienst, Eilzuständigkeit § 105 Abs. 2 PolG BW), Verfahren (Anhörung § 28 LVwVfG),
     Form. III. Materielle Rechtmäßigkeit: 1. Tatbestand (Schutzgut, konkrete Gefahr, Prognose ex ante),
     2. richtiger Adressat (§§ 6, 7, 9 PolG BW), 3. Rechtsfolge: Ermessen und Verhältnismäßigkeit. IV.
     Bei Vollstreckung: Voraussetzungen des LVwVG.
@@ -278,12 +263,12 @@ schemata:
   - label: I. Ermächtigungsgrundlage
     hinweis: Standardmaßnahme geht der Generalklausel vor; Sperrwirkung beachten.
     children:
-    - label: 1. Einschlägige Standardbefugnis (z. B. § 26, § 27a PolG BW)
+    - label: 1. Einschlägige Standardbefugnis (z. B. § 27, § 30 PolG BW)
     - label: '2. Nur bei atypischer Maßnahme: Generalklausel, § 1, § 3 PolG BW'
   - label: II. Formelle Rechtmäßigkeit
     children:
     - label: >-
-        1. Zuständigkeit: Polizeibehörde, ausnahmsweise Polizeivollzugsdienst (Eilfall, § 60 PolG BW)
+        1. Zuständigkeit: Polizeibehörde, ausnahmsweise Polizeivollzugsdienst (Eilfall, § 105 Abs. 2 PolG BW)
     - label: '2. Verfahren: Anhörung, § 28 LVwVfG; Eilfälle § 28 Abs. 2 LVwVfG'
     - label: 3. Form und Begründung
   - label: III. Materielle Rechtmäßigkeit

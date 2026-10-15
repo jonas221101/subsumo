@@ -15,12 +15,7 @@ cards:
   type: norm
   front: Welche Verfahrensarten kennt die HBO?
   back: >-
-    Die HBO unterscheidet verfahrensfreie Bauvorhaben (§ 63 HBO), die Genehmigungsfreistellung (§ 64 HBO)
-    für Vorhaben im Geltungsbereich qualifizierter Bebauungspläne, das vereinfachte Baugenehmigungsverfahren
-    (§ 65 HBO) und das reguläre Baugenehmigungsverfahren (insbesondere für Sonderbauten). Verfahrensfreiheit
-    entbindet nur vom Genehmigungsverfahren, nicht von der Pflicht zur Einhaltung des materiellen Baurechts.
-    Im vereinfachten Verfahren ist die Prüfung der Bauaufsichtsbehörde auf bestimmte Vorschriften beschränkt,
-    das Bauplanungsrecht (§§ 29 ff. BauGB) gehört dazu. Die Baugenehmigung ist zu erteilen, wenn dem Vorhaben
+    Die HBO unterscheidet verfahrensfreie Bauvorhaben (§ 63 HBO), die Genehmigungsfreistellung (§ 64 HBO) für Vorhaben ohne Sonderbaueigenschaft im Geltungsbereich eines Bebauungsplans nach § 30 Abs. 1 oder §§ 12, 30 Abs. 2 BauGB, die keiner Ausnahme oder Befreiung nach § 31 BauGB und keiner Abweichung nach § 73 HBO bedürfen, bei gesicherter Erschließung und wenn die Gemeinde kein Genehmigungsverfahren verlangt, das vereinfachte Baugenehmigungsverfahren (§ 65 HBO) und das Baugenehmigungsverfahren für Sonderbauten (§ 66 HBO). Verfahrensfreiheit entbindet nur vom Genehmigungsverfahren, nicht von der Pflicht zur Einhaltung des materiellen Baurechts (§ 62 Abs. 2 HBO). Im vereinfachten Verfahren prüft die Bauaufsichtsbehörde nur die Zulässigkeit nach dem Baugesetzbuch, beantragte Abweichungen nach § 73 HBO und andere öffentlich-rechtliche Vorschriften, soweit wegen der Baugenehmigung eine Entscheidung nach diesen Vorschriften entfällt oder ersetzt wird (§ 65 Abs. 1 HBO); bei Sonderbauten wird auch die Zulässigkeit nach der HBO geprüft (§ 66 HBO). Die Baugenehmigung ist zu erteilen, wenn dem Vorhaben
     keine öffentlich-rechtlichen Vorschriften entgegenstehen.
   norms:
   - § 63 HBO
@@ -35,13 +30,13 @@ cards:
   type: definition
   front: Wann bedarf ein Vorhaben in Hessen der Baugenehmigung?
   back: >-
-    Errichtung, Änderung, Nutzungsänderung und Abbruch baulicher Anlagen bedürfen grundsätzlich der Baugenehmigung,
-    soweit nicht Ausnahmen (verfahrensfrei, Genehmigungsfreistellung) greifen. Bauliche Anlagen sind mit
+    Die Errichtung, Aufstellung, Anbringung und Änderung sowie die Nutzungsänderung von Anlagen oder Teilen davon bedürfen der Baugenehmigung, soweit in §§ 63, 64, 64a, 78 und 79 HBO oder auf Grund des § 89 Abs. 4 S. 1 Nr. 1 HBO nichts anderes bestimmt ist (§ 62 Abs. 1 HBO). Bauliche Anlagen sind mit
     dem Erdboden verbundene, aus Bauprodukten hergestellte Anlagen. Die Nutzungsänderung ist genehmigungspflichtig,
     wenn für die neue Nutzung andere oder weitergehende öffentlich-rechtliche Anforderungen gelten. Erst
     wenn der Ausnahmetatbestand nicht greift, ist der Genehmigungsantrag zu stellen. Wer ohne Genehmigung
     baut, handelt formell illegal.
   norms:
+  - § 62 HBO
   - § 63 HBO
   - § 65 HBO
   quellen:
@@ -69,11 +64,9 @@ cards:
   type: norm
   front: Wie werden Abstandsflächen nach der HBO bemessen?
   back: >-
-    Vor den Außenwänden oberirdischer Gebäude sind Abstandsflächen freizuhalten (§ 6 HBO). Die Tiefe beträgt
-    grundsätzlich 0,4 H (H = Wandhöhe), mindestens 3 m. Die Abstandsflächen müssen auf dem Grundstück
+    Vor den Außenwänden oberirdischer Gebäude sind Abstandsflächen freizuhalten (§ 6 HBO). Die Tiefe beträgt allgemein 0,4 H (H = Wandhöhe), in Gewerbe- und Industriegebieten 0,2 H, in allen Fällen mindestens 2,50 m (§ 6 Abs. 5 HBO). Die Abstandsflächen müssen auf dem Grundstück
     selbst liegen und dürfen sich nicht überdecken; für die planungsrechtlich zulässige Grenzbebauung
-    bestehen Ausnahmen. Abweichungen von bauordnungsrechtlichen Anforderungen sind unter Würdigung der
-    nachbarlichen Interessen möglich. Die Vorschriften dienen Belichtung, Belüftung, Brandschutz und Wohnfrieden
+    bestehen Ausnahmen. Die Bauaufsichtsbehörde soll Abweichungen zulassen, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der öffentlich-rechtlich geschützten nachbarlichen Belange mit den öffentlichen Belangen vereinbar sind (§ 73 Abs. 1 HBO). Die Vorschriften dienen Belichtung, Belüftung, Brandschutz und Wohnfrieden
     und sind nachbarschützend.
   norms:
   - § 6 HBO
@@ -85,15 +78,13 @@ cards:
   type: norm
   front: Wie werden Nachbarn beteiligt, und welche Bedeutung hat die Zustimmung?
   back: >-
-    Die Bauaufsichtsbehörde beteiligt die Nachbarn im Genehmigungsverfahren (HBO, Vorschriften über die
-    Nachbarbeteiligung) und gibt ihnen Gelegenheit zur Stellungnahme. Haben Nachbarn dem Bauvorhaben schriftlich
-    zugestimmt, sind Einwendungen ausgeschlossen. Die Beteiligung dient der Information und beeinflusst
+    Die Bauaufsichtsbehörde soll die Nachbarschaft benachrichtigen, bevor von nachbarschützenden Vorschriften Abweichungen, Ausnahmen oder Befreiungen zugelassen werden; Einwendungen sind innerhalb von zwei Wochen nach Zugang der Benachrichtigung mitzuteilen (§ 71 Abs. 1 HBO). Wer den Abweichungen, Ausnahmen oder Befreiungen zugestimmt hat, wird nicht benachrichtigt (§ 71 Abs. 2 HBO); die Entscheidung ist nur denjenigen bekannt zu geben, deren Einwendungen nicht entsprochen wird (§ 71 Abs. 3 HBO). Die Beteiligung dient der Information und beeinflusst
     die Rechtsbehelfsfrist: Wird dem Nachbarn die Genehmigung nicht bekannt gegeben, läuft die Frist nicht;
     bei Kenntnis oder Kennenmüssen kann das Rügerecht nach Treu und Glauben verwirkt sein. Ein Verstoß
     gegen die Beteiligung allein führt nicht zur Aufhebung; maßgeblich ist die Verletzung nachbarschützender
     Normen.
   norms:
-  - HBO (Nachbarbeteiligung)
+  - § 71 HBO
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -122,15 +113,16 @@ cards:
   front: Welche bauaufsichtlichen Maßnahmen gibt es bei rechtswidrigen Bauvorhaben?
   back: >-
     Die Bauaufsichtsbehörde überwacht die Einhaltung des öffentlichen Baurechts und trifft nach pflichtgemäßem
-    Ermessen die erforderlichen Maßnahmen (Generalklausel der Bauaufsicht in der HBO). Typisch sind Baueinstellung,
-    Nutzungsuntersagung und Beseitigungsverfügung. Die Baueinstellung ist als vorläufige Maßnahme schon
+    Ermessen die erforderlichen Maßnahmen (§ 61 Abs. 2 HBO). Typisch sind die Baueinstellung (§ 81 HBO) sowie Beseitigungsanordnung und Nutzungsverbot (§ 82 Abs. 1 HBO); nach § 82 Abs. 2 HBO kann die Behörde auch verlangen, dass ein erforderliches Verfahren durchgeführt wird. Die Baueinstellung ist als vorläufige Maßnahme schon
     bei formeller Illegalität zulässig. Die Beseitigung setzt nach h. M. formelle und materielle Illegalität
     voraus, weil ein genehmigungsfähiges Bauwerk nicht beseitigt werden darf. Für die Nutzungsuntersagung
     genügt nach der Rechtsprechung die formelle Illegalität, wenn die Nutzung nicht offensichtlich genehmigungsfähig
     ist. Adressat ist der Verantwortliche; die Anordnung muss verhältnismäßig sein und den Gleichheitssatz
     beachten.
   norms:
-  - HBO (Aufgaben und Befugnisse der Bauaufsichtsbehörde)
+  - § 61 HBO
+  - § 81 HBO
+  - § 82 HBO
   - Art. 14 Abs. 1 GG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -157,7 +149,7 @@ cards:
   type: schema_step
   front: 'Aufbau: bauaufsichtliche Beseitigungsverfügung'
   back: >-
-    I. Ermächtigungsgrundlage (Generalklausel der Bauaufsicht, HBO). II. Formelle Rechtmäßigkeit: Zuständigkeit
+    I. Ermächtigungsgrundlage (§ 82 Abs. 1 S. 1 HBO; Aufgaben und Befugnisse der Bauaufsicht § 61 Abs. 2 HBO). II. Formelle Rechtmäßigkeit: Zuständigkeit
     der Bauaufsichtsbehörde, Anhörung (§ 28 HVwVfG), Form. III. Materielle Rechtmäßigkeit: 1. Rechtswidriger
     Zustand (formelle und materielle Illegalität), 2. richtiger Adressat, 3. Ermessen und Verhältnismäßigkeit,
     Gleichbehandlung. IV. Vollstreckung.
@@ -178,7 +170,7 @@ schemata:
   - Eigenformulierung Redaktion
   steps:
   - label: I. Ermächtigungsgrundlage
-    hinweis: Generalklausel der Bauaufsicht der HBO.
+    hinweis: § 82 Abs. 1 S. 1 HBO; Aufgaben der Bauaufsicht § 61 Abs. 2 HBO.
   - label: II. Formelle Rechtmäßigkeit
     children:
     - label: '1. Zuständigkeit: Bauaufsichtsbehörde'
@@ -214,7 +206,7 @@ faelle:
   steps:
   - prompt: Auf welche Rechtsgrundlage stützt sich die Verfügung?
     erwartung: >-
-      Auf die Generalklausel der Bauaufsicht in der HBO; die Bauaufsichtsbehörde ist zuständig, E wurde
+      Auf § 82 Abs. 1 S. 1 HBO (Beseitigungsanordnung) i. V. m. § 61 Abs. 2 HBO; die Bauaufsichtsbehörde ist zuständig, E wurde
       angehört (§ 28 HVwVfG).
   - prompt: Liegt formelle Illegalität vor?
     erwartung: Ja. Der Wintergarten ist genehmigungsbedürftig und wurde ohne Genehmigung errichtet.

@@ -16,18 +16,13 @@ cards:
       Welche Genehmigungsverfahren kennt die BbgBO, und wie verhält sich das Bauordnungsrecht zum
       Bauplanungsrecht?
   back: >-
-      Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedarf nach der Brandenburgischen Bauordnung (BbgBO) grundsätzlich der Baugenehmigung. Ausnahmen: verfahrensfreie Vorhaben
-      (kleine, unbedeutende Anlagen, die ein Katalog der BbgBO aufzählt), die Genehmigungsfreistellung
-      für bestimmte Wohnbauvorhaben im Geltungsbereich qualifizierter Bebauungspläne (gegen vorherige
-      Anzeige; die Gemeinde kann ein Genehmigungsverfahren verlangen) sowie das vereinfachte Verfahren
-      mit eingeschränktem Prüfumfang für die meisten Gebäude und das umfassende Verfahren für
-      Sonderbauten. Verfahrensfreiheit bedeutet nicht materielle Freiheit: Die materiellen
+      Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedarf nach der Brandenburgischen Bauordnung (BbgBO) grundsätzlich der Baugenehmigung, soweit in den §§ 60 bis 62, 76 und 77 BbgBO nichts anderes bestimmt ist (§ 59 Abs. 1 BbgBO). Ausnahmen und Verfahrensarten: verfahrensfreie Vorhaben (§ 61 BbgBO, Katalog), das Bauanzeigeverfahren für Wohngebäude der Gebäudeklassen 1 und 2 samt Nebenanlagen im Geltungsbereich eines Bebauungsplans nach § 30 Abs. 1 oder 2 BauGB auf Wunsch der Bauherrschaft, wenn das Vorhaben den Festsetzungen nicht widerspricht und die Erschließung gesichert ist (§ 62 BbgBO; mit der Ausführung darf nach Ablauf eines Monats nach Eingang der Anzeige begonnen werden, sofern sie nicht untersagt wird), das vereinfachte Baugenehmigungsverfahren auf Antrag für Wohngebäude der Gebäudeklassen 1 bis 3 im Geltungsbereich eines Bebauungsplans, bei dem die Behörde nur die Festsetzungen des Bebauungsplans und andere beachtliche öffentlich-rechtliche Vorschriften prüft (§ 63 BbgBO), und das Baugenehmigungsverfahren für alle übrigen genehmigungspflichtigen Anlagen mit Prüfung der Zulässigkeit nach dem BauGB, der BbgBO und anderen beachtlichen Vorschriften (§ 64 BbgBO). Verfahrensfreiheit bedeutet nicht materielle Freiheit: Die materiellen
       Anforderungen des Bauplanungs- und Bauordnungsrechts sind einzuhalten, die Bauaufsicht kann bei
       Verstößen einschreiten. Das Bauplanungsrecht (§§ 29 ff. BauGB) regelt als Bundesrecht die
       bodenrechtliche Zulässigkeit, das Bauordnungsrecht als Landesrecht Gefahrenabwehr, Gestaltung
       und Verfahren.
   norms:
-  - "Vorschriften der BbgBO zu Genehmigungspflicht und Verfahren"
+  - "§§ 59 bis 64 BbgBO"
   - "§ 29 BauGB"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
@@ -41,9 +36,7 @@ cards:
       Die Baugenehmigung ist eine gebundene Entscheidung: Sie ist zu erteilen, wenn dem Vorhaben keine
       öffentlich-rechtlichen Vorschriften entgegenstehen, die im Genehmigungsverfahren zu prüfen sind
       (Art. 14 Abs. 1 GG schützt die in der Eigentumsgarantie liegende Baufreiheit im Rahmen der
-      Gesetze). Der Prüfumfang hängt vom Verfahren ab; im vereinfachten Verfahren prüft die
-      Bauaufsichtsbehörde das Bauplanungsrecht, bestimmte Teile der BbgBO und sonstiges öffentliches
-      Recht. Das Bauplanungsrecht folgt aus §§ 30, 34, 35 BauGB je nach Gebietslage (beplanter
+      Gesetze). Die Baugenehmigung ist zu erteilen, wenn dem Vorhaben keine öffentlich-rechtlichen Vorschriften entgegenstehen (§ 72 Abs. 1 BbgBO). Der Prüfumfang hängt vom Verfahren ab (§§ 63, 64 BbgBO): Im vereinfachten Verfahren prüft die Bauaufsichtsbehörde die Festsetzungen des Bebauungsplans und andere öffentlich-rechtliche Vorschriften, soweit diese für das Vorhaben beachtlich sind (§ 63 Abs. 3 BbgBO), im Baugenehmigungsverfahren darüber hinaus die Vorschriften der BbgBO (§ 64 BbgBO). Das Bauplanungsrecht folgt aus §§ 30, 34, 35 BauGB je nach Gebietslage (beplanter
       Bereich, Innenbereich, Außenbereich); wo die Gemeinde nicht selbst Genehmigungsbehörde ist, ist
       ihr Einvernehmen nach § 36 BauGB erforderlich. Die Genehmigung ergeht unbeschadet privater
       Rechte Dritter. Rechtsschutz: Verpflichtungsklage nach § 42 Abs. 1 Var. 2 VwGO, nach erfolglosem
@@ -52,7 +45,8 @@ cards:
   - "Art. 14 Abs. 1 GG"
   - "§ 36 BauGB"
   - "§ 42 Abs. 1 VwGO"
-  - "Vorschriften der BbgBO zur Baugenehmigung"
+  - "§ 72 BbgBO"
+  - "§§ 63, 64 BbgBO"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -62,14 +56,12 @@ cards:
   front: "Was regeln die Abstandsflächen, und sind sie nachbarschützend?"
   back: >-
       Vor den Außenwänden oberirdischer Gebäude sind Flächen von Gebäuden und baulichen Anlagen
-      freizuhalten (Abstandsflächen). Ihre Tiefe bemisst sich nach der Wandhöhe H; als Regelwert gilt 0,4 H mit einer Mindesttiefe von 3 m (§ 6 BbgBO). Die Abstandsflächen
+      freizuhalten (Abstandsflächen). Ihre Tiefe bemisst sich nach der Höhe H; sie beträgt 0,4 H, mindestens 3 m, in Gewerbe- und Industriegebieten 0,2 H (mindestens 3 m); vor Außenwänden von Gebäuden der Gebäudeklassen 1 und 2 mit nicht mehr als drei oberirdischen Geschossen genügen 3 m (§ 6 Abs. 5 BbgBO). Die Abstandsflächen
       müssen grundsätzlich auf dem Baugrundstück selbst liegen und dürfen sich nicht überdecken.
       Zwecke sind ausreichende Belichtung, Belüftung, Brandschutz und Wahrung des Wohnfriedens. Das
       Abstandsflächenrecht ist nachbarschützend, soweit seine Zwecke dem Nachbarn dienen; der Nachbar
       kann seine Verletzung daher rügen. An der Grenze darf gebaut werden, wenn das Planungsrecht
-      Grenzbebauung vorschreibt oder zulässt (geschlossene Bauweise, § 22 BauNVO). Abweichungen sind
-      möglich, wenn der Schutzzweck gewahrt bleibt und nachbarliche Interessen angemessen
-      berücksichtigt werden.
+      Grenzbebauung vorschreibt oder zulässt (geschlossene Bauweise, § 22 BauNVO). Die Bauaufsichtsbehörde hat Abweichungen zuzulassen, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der öffentlich-rechtlich geschützten nachbarlichen Belange mit den öffentlichen Belangen vereinbar sind (§ 67 Abs. 1 BbgBO).
   norms:
   - "§ 6 BbgBO"
   - "§ 22 BauNVO"
@@ -108,18 +100,13 @@ cards:
   front: >-
       Welche bauaufsichtlichen Eingriffsmaßnahmen gibt es, und wann dürfen sie ergehen?
   back: >-
-      Die Bauaufsichtsbehörde überwacht die Einhaltung des öffentlichen Baurechts und kann nach der
-      BbgBO einschreiten. Baueinstellung: Stilllegung einer Baustelle, die rechtswidrig begonnen
-      wurde; sie setzt formelle Illegalität (fehlende Genehmigung) oder sonstigen Verstoß voraus und
-      dient der Sicherung. Nutzungsuntersagung: Verbot einer rechtswidrigen Nutzung, regelmäßig bei
-      formeller Illegalität, wenn die Nutzung nicht ohne Weiteres genehmigungsfähig ist.
-      Beseitigungsanordnung: die schärfste Maßnahme; sie setzt grundsätzlich formelle und materielle
-      Illegalität voraus, weil eine Beseitigung bei materiell legalem Vorhaben unverhältnismäßig wäre.
+      Die Bauaufsichtsbehörde überwacht die Einhaltung des öffentlichen Baurechts und kann nach der BbgBO einschreiten. Baueinstellung (§ 79 BbgBO): Werden Anlagen im Widerspruch zu öffentlich-rechtlichen Vorschriften errichtet, geändert oder beseitigt, kann die Einstellung der Arbeiten angeordnet werden; sie dient der Sicherung. Nutzungsuntersagung (§ 80 Abs. 1 S. 2 BbgBO): Verbot einer im Widerspruch zu öffentlich-rechtlichen Vorschriften erfolgenden Nutzung, regelmäßig bei formeller Illegalität, wenn die Nutzung nicht ohne Weiteres genehmigungsfähig ist. Beseitigungsanordnung (§ 80 Abs. 1 S. 1 BbgBO): die schärfste Maßnahme; sie ist nur zulässig, wenn nicht auf andere Weise rechtmäßige Zustände hergestellt werden können, und setzt nach h. M. formelle und materielle Illegalität voraus, weil eine Beseitigung bei materiell legalem Vorhaben unverhältnismäßig wäre.
       Alle Maßnahmen stehen im Ermessen der Behörde und müssen verhältnismäßig sein; Adressaten sind
       Bauherr, Eigentümer oder Nutzer. Ein Anspruch des Nachbarn auf Einschreiten besteht nur
       ausnahmsweise bei Verletzung nachbarschützender Vorschriften und Ermessensreduktion auf Null.
   norms:
-  - "Eingriffsbefugnisse der Bauaufsicht nach der BbgBO"
+  - "§ 79 BbgBO"
+  - "§ 80 BbgBO"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -130,10 +117,7 @@ cards:
       Wie unterscheiden sich Abweichung (Bauordnungsrecht) und Ausnahme bzw. Befreiung
       (Bauplanungsrecht)?
   back: >-
-      Im Bauordnungsrecht kann die Bauaufsichtsbehörde Abweichungen von Anforderungen der BbgBO
-      zulassen, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der
-      öffentlich-rechtlich geschützten nachbarlichen Belange mit den öffentlichen Belangen vereinbar
-      sind; die Abweichung steht im Ermessen der Behörde und setzt grundsätzlich einen Antrag voraus. Im Bauplanungsrecht lässt § 31
+      Im Bauordnungsrecht hat die Bauaufsichtsbehörde Abweichungen von Anforderungen der BbgBO zuzulassen, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der öffentlich-rechtlich geschützten nachbarlichen Belange mit den öffentlichen Belangen vereinbar sind (§ 67 Abs. 1 BbgBO); die Zulassung ist gesondert in Textform zu beantragen und zu begründen (§ 67 Abs. 2 BbgBO). Vor der Zulassung sind betroffene Nachbarn durch Zustellung zu benachrichtigen und können sich innerhalb eines Monats äußern (§ 70 Abs. 2 BbgBO). Im Bauplanungsrecht lässt § 31
       Abs. 1 BauGB Ausnahmen zu, soweit der Bebauungsplan sie vorsieht. Nach § 31 Abs. 2 BauGB ist
       eine Befreiung von Festsetzungen möglich, wenn die Grundzüge der Planung nicht berührt werden
       und einer der Befreiungsgründe (Allgemeinwohl, städtebauliche Vertretbarkeit, offenbar nicht
@@ -143,7 +127,8 @@ cards:
   norms:
   - "§ 31 Abs. 1 BauGB"
   - "§ 31 Abs. 2 BauGB"
-  - "Abweichungsvorschrift der BbgBO"
+  - "§ 67 BbgBO"
+  - "§ 70 BbgBO"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -160,7 +145,7 @@ cards:
       Substanz in wesentlichem Umfang erneuert oder die Nutzung aufgegeben wird; die Identität der
       Anlage muss gewahrt sein. Einen aktiven Bestandsschutz, also einen unmittelbar aus Art. 14 GG
       abgeleiteten Anspruch auf Erweiterung oder Änderung, erkennt das Bundesverwaltungsgericht nicht
-      mehr an. Bei Gefahren für Leben und Gesundheit lassen die Bauordnungen nachträgliche Anpassungsverlangen zu.
+      mehr an. Zur Abwehr von erheblichen Gefahren für Leben oder Gesundheit können die Bauaufsichtsbehörden die Vorschriften der BbgBO auch auf bestehende Anlagen anwenden (§ 81 Abs. 1 BbgBO).
   norms:
   - "Art. 14 Abs. 1 GG"
   quellen:

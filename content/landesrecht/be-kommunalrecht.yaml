@@ -16,15 +16,11 @@ cards:
   front: >-
     Welchen Status hat Berlin im Verhältnis von Land und Gemeinde?
   back: >-
-    Berlin ist ein Land der Bundesrepublik Deutschland und zugleich eine Stadt (Art. 1 Abs. 1 VvB). Es
-    ist Einheitsgemeinde: Staatliche und gemeindliche Aufgaben werden von derselben Rechtsperson, dem
-    Land Berlin, wahrgenommen; eine Gemeindeordnung wie in den Flächenländern gibt es nicht. Die Verwaltung
-    ist zweistufig aufgebaut (Hauptverwaltung und Bezirksverwaltung). Die Grundlagen finden sich in der
-    Verfassung von Berlin und im Bezirksverwaltungsgesetz (BezVG) sowie im Allgemeinen Zuständigkeitsgesetz
-    (AZG). Für die Klausur wichtig: Die kommunalrechtlichen Fragen der Flächenländer (Gemeindeordnung,
+    Berlin ist ein Land der Bundesrepublik Deutschland und zugleich eine Stadt (Art. 1 Abs. 1 VvB). Es ist Einheitsgemeinde: Staatliche und gemeindliche Tätigkeit werden nicht getrennt (§ 2 LOG BE), beides nimmt dieselbe Rechtsperson, das Land Berlin, wahr; eine Gemeindeordnung wie in den Flächenländern gibt es nicht. Die Verwaltung ist zweistufig aufgebaut (Hauptverwaltung und Bezirksverwaltungen, § 3 Abs. 1 LOG BE). Die Grundlagen finden sich in der Verfassung von Berlin, im Bezirksverwaltungsgesetz (BezVG) und im Landesorganisationsgesetz (LOG BE) vom 10. Juli 2025, das zum 1. Januar 2026 das Allgemeine Zuständigkeitsgesetz (AZG) abgelöst hat. Für die Klausur wichtig: Die kommunalrechtlichen Fragen der Flächenländer (Gemeindeordnung,
     Rat, Bürgermeister) sind in Berlin als Bezirksverwaltung zu prüfen.
   norms:
   - Art. 1 Abs. 1 VvB
+  - § 2 LOG BE
   - Bezirksverwaltungsgesetz (BezVG)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -34,10 +30,7 @@ cards:
   type: definition
   front: Welche Rechtsstellung haben die Berliner Bezirke?
   back: >-
-    Berlin gliedert sich in zwölf Bezirke. Sie sind Verwaltungseinheiten des Landes ohne eigene Rechtspersönlichkeit
-    und keine Gemeinden im Sinne des Art. 28 Abs. 2 GG. Sie nehmen ihre Aufgaben nach den Regeln der Verfassung
-    von Berlin (Art. 66 ff. VvB) und des BezVG nach den Grundsätzen der Selbstverwaltung wahr, soweit
-    das Gesetz ihnen die Aufgaben zuweist. Rechtsträger ihrer Handlungen ist das Land Berlin. Folgen:
+    Berlin gliedert sich in zwölf Bezirke (Art. 4 Abs. 1 VvB). Sie sind Selbstverwaltungseinheiten Berlins ohne Rechtspersönlichkeit (§ 2 Abs. 1 BezVG) und keine Gemeinden im Sinne des Art. 28 Abs. 2 GG. Sie erfüllen ihre Aufgaben nach den Grundsätzen der Selbstverwaltung und nehmen regelmäßig die örtlichen Verwaltungsaufgaben wahr (Art. 66 Abs. 2 VvB); alle Aufgaben, die nicht der Hauptverwaltung zugewiesen sind, nehmen die Bezirke wahr (Art. 67 Abs. 2 VvB). Rechtsträger ihrer Handlungen ist das Land Berlin. Folgen:
     Die Bezirke sind im Außenverhältnis nicht klagefähig gegen das Land und können nicht Beklagte einer
     Klage sein; zu verklagen ist das Land Berlin.
   norms:
@@ -53,11 +46,7 @@ cards:
   front: >-
     Welche Organe hat der Berliner Bezirk und wie werden sie bestimmt?
   back: >-
-    Organe der Bezirksverwaltung sind die Bezirksverordnetenversammlung (BVV) und das Bezirksamt. Die
-    BVV wird von den Wahlberechtigten des Bezirks gewählt und kontrolliert die Verwaltung des Bezirks,
-    beschließt in den vom Gesetz zugewiesenen Angelegenheiten und wählt das Bezirksamt. Das Bezirksamt
-    ist ein Kollegialorgan; es besteht aus der Bezirksbürgermeisterin bzw. dem Bezirksbürgermeister und
-    den Bezirksstadträten und leitet die Verwaltung des Bezirks (Bezirksamt als Behörde).
+    Organe der Bezirksverwaltung sind die Bezirksverordnetenversammlung (BVV) und das Bezirksamt. Die BVV ist Organ der bezirklichen Selbstverwaltung; sie übt die Kontrolle über die Verwaltung des Bezirks aus, beschließt den Bezirkshaushaltsplan und entscheidet in den ihr zugewiesenen Angelegenheiten (Art. 72 Abs. 1 VvB; §§ 12, 17 BezVG). Sie wählt die Mitglieder des Bezirksamts für die Dauer der Wahlperiode und kann ein Mitglied mit Zweidrittelmehrheit abberufen (§ 35 BezVG). Das Bezirksamt besteht aus der Bezirksbürgermeisterin bzw. dem Bezirksbürgermeister und den Bezirksstadträten (Art. 74 Abs. 1 VvB), ist die Verwaltungsbehörde des Bezirks und vertritt Berlin in Angelegenheiten seines Bezirks (Art. 74 Abs. 2 VvB; § 36 BezVG).
   norms:
   - Art. 66 ff. VvB
   - Bezirksverwaltungsgesetz (BezVG)
@@ -70,15 +59,11 @@ cards:
   front: >-
     Wie werden in Berlin die Aufgaben zwischen Hauptverwaltung und Bezirken abgegrenzt?
   back: >-
-    Die Verwaltung ist zweistufig: Die Hauptverwaltung (Senat, Senatsverwaltungen) nimmt die Aufgaben
-    von gesamtstädtischer Bedeutung wahr, die Bezirke alle übrigen Verwaltungsaufgaben (Allzuständigkeit
-    der Bezirke für nicht der Hauptverwaltung zugewiesene Aufgaben). Die konkrete Zuordnung enthält das
-    Allgemeine Zuständigkeitsgesetz (AZG) mit seinem Zuständigkeitskatalog. Für die Klausur ist zunächst
-    das handelnde Bezirksamt als Behörde der Bezirksverwaltung zu bestimmen, dann die sachliche Zuständigkeit
-    nach dem AZG bzw. dem Fachgesetz zu prüfen. Handelt ein unzuständiges Bezirksamt oder die Hauptverwaltung
+    Die Verwaltung ist zweistufig: Die Hauptverwaltung (Senat, Senatsverwaltungen) nimmt die Aufgaben von gesamtstädtischer Bedeutung wahr, das sind die Leitungsaufgaben sowie die Aufgaben der Polizei-, Justiz- und Steuerverwaltung und einzelne weitere Aufgaben, die wegen ihrer Eigenart zwingend einer Durchführung durch die Hauptverwaltung bedürfen (Art. 67 Abs. 1 VvB; § 8 Abs. 2 LOG BE). Die Bezirke nehmen alle anderen Aufgaben der Verwaltung wahr (Art. 67 Abs. 2 VvB). Die konkrete Zuordnung ergibt sich aus dem Landesorganisationsgesetz (LOG BE), das seit 1. Januar 2026 das frühere Allgemeine Zuständigkeitsgesetz (AZG) ersetzt, sowie aus dem Gesamtkatalog nach § 13 LOG BE. Für die Klausur ist zunächst
+    das handelnde Bezirksamt als Behörde der Bezirksverwaltung zu bestimmen, dann die sachliche Zuständigkeit nach dem LOG BE bzw. dem Fachgesetz zu prüfen. Handelt ein unzuständiges Bezirksamt oder die Hauptverwaltung
     statt des Bezirks, ist der Verwaltungsakt formell rechtswidrig (Zuständigkeitsfehler).
   norms:
-  - Allgemeines Zuständigkeitsgesetz (AZG)
+  - Landesorganisationsgesetz (LOG BE)
   - Art. 66 ff. VvB
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -111,15 +96,11 @@ cards:
   front: >-
     Welche Aufsichts- und Eingriffsrechte hat die Hauptverwaltung gegenüber den Bezirken?
   back: >-
-    Die Hauptverwaltung übt die Bezirksaufsicht über die Bezirksverwaltung aus. Dazu gehören die Rechtsaufsicht
-    über die Selbstverwaltungsangelegenheiten der Bezirke und die Fachaufsicht in den Bereichen, in denen
-    die Bezirke für das Land Aufgaben nach Weisung erfüllen. Hinzu kommen nach dem AZG Eingriffsrechte
-    (Einzelweisung, Selbsteintritt) in Angelegenheiten von gesamtstädtischer Bedeutung oder bei Gefahr
-    für das Wohl des Landes. Die Maßnahmen sind verhältnismäßig auszuüben. Da Bezirk und Land derselben
+    Die Bezirksverwaltungen unterliegen der Bezirksaufsicht durch die für das jeweilige Politik- oder Querschnittsfeld zuständige Senatsverwaltung (§ 21 Abs. 1 LOG BE); sie stellt sicher, dass die Rechtmäßigkeit des Verwaltungshandelns gewahrt bleibt und Verwaltungsvorschriften eingehalten werden (§ 21 Abs. 2 LOG BE). Mittel sind Informations-, Aufhebungs- und Anweisungsrecht, Ersatzbeschlussfassungsrecht und Ersatzvornahme (§ 22 Abs. 1 LOG BE). Nach Art. 67 Abs. 1 VvB kann an Stelle der Fachaufsicht ein Eingriffsrecht vorgesehen werden: Nach § 23 LOG BE kann die zuständige Senatsverwaltung im Benehmen mit der für Bezirksangelegenheiten zuständigen Senatsverwaltung unabhängig von einem Rechtsverstoß Einzelweisung und Eintritt (§ 24 Abs. 3 LOG BE) ausüben, wenn ein Handeln oder Unterlassen eines bezirklichen Organs erhebliche Gesamtinteressen Berlins beeinträchtigt und eine Verständigung nicht zu erzielen ist. Die Maßnahmen sind verhältnismäßig auszuüben. Da Bezirk und Land derselben
     Rechtsperson angehören, ist die Aufsicht Teil des internen Verwaltungsaufbaus; ein Rechtsschutz des
     Bezirks gegen das Land nach Art. 28 Abs. 2 GG besteht nicht.
   norms:
-  - Allgemeines Zuständigkeitsgesetz (AZG)
+  - §§ 21 bis 24 LOG BE
   - Bezirksverwaltungsgesetz (BezVG)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -151,13 +132,10 @@ cards:
   back: >-
     Auf Bezirksebene sehen die Verfassung von Berlin und das BezVG Instrumente der Bürgerbeteiligung vor,
     insbesondere das Bürgerbegehren und den Bürgerentscheid in Angelegenheiten der Bezirksverwaltung und
-    den Einwohnerantrag. Der Bürgerentscheid ersetzt in bestimmten Bezirksangelegenheiten einen Beschluss
-    der BVV. Ausgeschlossen sind regelmäßig Angelegenheiten, für die die Hauptverwaltung zuständig ist,
-    etwa Planungen von gesamtstädtischer Bedeutung. Die Zulässigkeitsvoraussetzungen (Gegenstand, Quorum,
-    Frist, Kostendeckungsvorschlag) sind dem BezVG zu entnehmen. In der Klausur wird häufig die Zulässigkeit
+    den Einwohnerantrag. An die Stelle von Beschlüssen der BVV können im Rahmen ihrer Zuständigkeit Bürgerentscheide treten (Art. 72 Abs. 2 VvB). Das Bürgerbegehren ist in allen Angelegenheiten möglich, in denen die BVV nach §§ 12 und 13 BezVG Beschlüsse fassen kann; unzulässig ist es, soweit es Rechts- oder Verwaltungsvorschriften oder einer Eingriffsentscheidung widerspricht, nicht aber allein deshalb, weil es finanzwirksam ist (§ 45 Abs. 1 BezVG). Den Einwohnerantrag (Empfehlungen an die BVV) regelt § 44 BezVG, den Bürgerentscheid § 46 BezVG. Die weiteren Zulässigkeitsvoraussetzungen (Fragestellung, Vertrauenspersonen, Quorum, Fristen) sind dem BezVG zu entnehmen. In der Klausur wird häufig die Zulässigkeit
     eines Bürgerbegehrens und die Zuständigkeit des Bezirks geprüft.
   norms:
-  - Bezirksverwaltungsgesetz (BezVG)
+  - §§ 44 bis 46 BezVG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -168,8 +146,8 @@ schemata:
     Klage gegen Handeln der Berliner Bezirksverwaltung: Zuständigkeit und Beklagter
   norms:
   - >-
-    § 78 Abs. 1 Nr. 1 VwGO
-  - Allgemeines Zuständigkeitsgesetz (AZG)
+        § 78 Abs. 1 Nr. 1 VwGO
+  - Landesorganisationsgesetz (LOG BE)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -180,7 +158,7 @@ schemata:
   - label: II. Zuständigkeit
     children:
     - label: >-
-        1. Gesamtstädtische Bedeutung: Hauptverwaltung nach dem AZG
+        1. Gesamtstädtische Bedeutung: Hauptverwaltung nach dem LOG BE
     - label: 2. Sonst Zuständigkeit des Bezirksamts als Bezirksbehörde
     - label: >-
         3. Fachgesetzliche Spezialzuständigkeit (z. B. nach Ordnungs- oder Baurecht)
@@ -219,7 +197,7 @@ faelle:
   - prompt: Wer ist für die Entscheidung zuständig?
     erwartung: >-
       Das Bezirksamt als Behörde der Bezirksverwaltung; die Angelegenheit ist örtlich und weist keine
-      gesamtstädtische Bedeutung auf, sodass die Hauptverwaltung nach dem AZG nicht zuständig ist.
+      gesamtstädtische Bedeutung auf, sodass die Hauptverwaltung nach dem LOG BE nicht zuständig ist.
   - prompt: Wen muss G verklagen?
     erwartung: >-
       Die Bezirke haben keine Rechtspersönlichkeit. Rechtsträger ist das Land Berlin; nach § 78 Abs. 1
@@ -235,13 +213,14 @@ faelle:
     pruefpunkte:
     - id: p1
       label: >-
-        Zuständigkeit des Bezirksamts mangels gesamtstädtischer Bedeutung (AZG) festgestellt
+        Zuständigkeit des Bezirksamts mangels gesamtstädtischer Bedeutung (LOG BE) festgestellt
       weight: 1.5
       required: false
       keywords:
       - Bezirksamt
+      - LOG BE
+      - Landesorganisationsgesetz
       - AZG
-      - Allgemeines Zuständigkeitsgesetz
       - gesamtstädtische Bedeutung
       - Bezirksverwaltung
       card_slugs:

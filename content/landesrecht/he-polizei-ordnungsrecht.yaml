@@ -33,15 +33,12 @@ cards:
   type: definition
   front: Welche Gefahrbegriffe unterscheidet das HSOG?
   back: >-
-    Das HSOG enthält Begriffsbestimmungen (§ 2 HSOG), u. a. zur Gefahr: Eine Gefahr ist eine Lage, in
-    der im einzelnen Fall die hinreichende Wahrscheinlichkeit besteht, dass in absehbarer Zeit ein Schaden
-    für die öffentliche Sicherheit oder Ordnung eintreten wird (konkrete Gefahr; Prognose ex ante). Abstrakte
+    Das HSOG verwendet den Begriff der Gefahr in § 11 HSOG als im einzelnen Falle bestehende Gefahr für die öffentliche Sicherheit oder Ordnung (konkrete Gefahr); nach allgemeiner Lehre besteht sie bei hinreichender Wahrscheinlichkeit eines Schadenseintritts in absehbarer Zeit (Prognose ex ante). Abstrakte
     Gefahr: nach allgemeiner Lebenserfahrung typischerweise entstehende Gefahr; sie rechtfertigt Gefahrenabwehrverordnungen,
     nicht den Einzelfalleingriff. Die Gesetzessprache kennt zudem gesteigerte Gefahrbegriffe (gegenwärtige
     Gefahr: der Schaden ist eingetreten oder steht unmittelbar bevor; erhebliche Gefahr: bedeutsames Rechtsgut),
     die einzelne Befugnisse voraussetzen. Daneben ist die Gefahr im Verzug als Eilfallregel bedeutsam.
   norms:
-  - § 2 Nr. 1 HSOG
   - § 11 HSOG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -88,7 +85,7 @@ cards:
   type: definition
   front: Welche Grenzen setzen Ermessen und Verhältnismäßigkeit im HSOG?
   back: >-
-    Das HSOG verlangt, dass die Behörde nach pflichtgemäßem Ermessen handelt (§ 3 HSOG) und von mehreren
+    Das HSOG verlangt, dass die Behörde nach pflichtgemäßem Ermessen handelt (§ 5 HSOG) und von mehreren
     möglichen und geeigneten Maßnahmen diejenige trifft, die den Einzelnen und die Allgemeinheit am wenigsten
     beeinträchtigt (§ 4 HSOG, Verhältnismäßigkeit). Eine Maßnahme darf nicht zu einem Nachteil führen,
     der zum erstrebten Erfolg erkennbar außer Verhältnis steht, und ist nur solange zulässig, bis ihr
@@ -96,7 +93,7 @@ cards:
     Ermessensfehler (Nichtgebrauch, Überschreitung, Fehlgebrauch) führen zur Rechtswidrigkeit (§ 114 VwGO,
     § 40 HVwVfG).
   norms:
-  - § 3 HSOG
+  - § 5 HSOG
   - § 4 HSOG
   - § 114 VwGO
   quellen:
@@ -165,15 +162,12 @@ cards:
   type: definition
   front: Wer ist in Hessen für die Gefahrenabwehr zuständig?
   back: >-
-    Das HSOG unterscheidet Gefahrenabwehrbehörden (allgemeine Verwaltungsbehörden: Bürgermeister, Landrat,
-    Regierungspräsidium, zuständiges Ministerium) und Polizeibehörden. Die Gefahrenabwehrbehörden sind
-    grundsätzlich für die Gefahrenabwehr zuständig; die Polizeibehörden werden tätig, soweit die Abwehr
-    durch die Gefahrenabwehrbehörden nicht oder nicht rechtzeitig möglich erscheint, und in besonders
-    zugewiesenen Aufgaben (§ 1 Abs. 4 HSOG). Handelt die unzuständige Behörde, ist die Maßnahme formell
+    Das HSOG unterscheidet Gefahrenabwehrbehörden (Behörden der allgemeinen Verwaltung, §§ 82 ff. HSOG, und Ordnungsbehörden: Ministerien als Landesordnungsbehörden, Regierungspräsidien, Landräte und Oberbürgermeister in kreisfreien Städten, Bürgermeister als örtliche Ordnungsbehörden, § 85 HSOG) und Polizeibehörden. Die Gefahrenabwehrbehörden sind grundsätzlich für die Gefahrenabwehr zuständig; Ordnungs- und Polizeibehörden werden nur tätig, soweit die Abwehr der Gefahr durch andere Behörden mit Gefahrenabwehraufgaben nicht oder nicht rechtzeitig möglich erscheint (§ 2 S. 1 HSOG, mit Ausnahme der Fälle des § 1 Abs. 1 S. 2 HSOG); die Polizeibehörden haben zudem die vorbeugende Bekämpfung von Straftaten (§ 1 Abs. 4 HSOG). Handelt die unzuständige Behörde, ist die Maßnahme formell
     rechtswidrig; § 46 HVwVfG kann einschlägig sein. Die Zuständigkeit ist deshalb vor der Frage, welches
     Verfahren gilt, zu prüfen.
   norms:
   - § 1 HSOG
+  - § 2 HSOG
   - § 46 HVwVfG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -183,16 +177,10 @@ cards:
   type: norm
   front: Wie wird eine Gefahrenabwehrverfügung in Hessen vollstreckt?
   back: >-
-    Maßgeblich ist das Hessische Verwaltungsvollstreckungsgesetz (HessVwVG). Zwangsmittel sind Ersatzvornahme,
-    Zwangsgeld, unmittelbarer Zwang. Im gestreckten Verfahren sind Grundverfügung, Androhung, Festsetzung
-    und Anwendung zu prüfen. Im Wege des Sofortvollzugs kann die Behörde ohne vorausgehenden Verwaltungsakt
-    handeln, wenn dies zur Abwehr einer gegenwärtigen Gefahr notwendig ist und sie innerhalb ihrer Befugnisse
-    handelt; maßgeblich ist dann die hypothetische Rechtmäßigkeit eines Grundverwaltungsakts. Kosten der
-    Ersatzvornahme trägt der Pflichtige. Sonderregeln für unmittelbaren Zwang finden sich im HSOG (Abschnitt
-    Verwaltungszwang).
+    Den Verwaltungszwang für ordnungsbehördliche und polizeiliche Verwaltungsakte regelt das HSOG selbst (§§ 47 ff. HSOG); daneben gilt das Hessische Verwaltungsvollstreckungsgesetz (HessVwVG) für die dort geregelten Fälle. Zwangsmittel sind Ersatzvornahme (§ 49), Zwangsgeld (§ 50) und unmittelbarer Zwang (§ 52 HSOG; Ersatzzwangshaft § 51), die nach §§ 53 und 58 HSOG anzudrohen sind (§ 48 HSOG). Im gestreckten Verfahren sind Grundverfügung, Androhung, Festsetzung und Anwendung zu prüfen. Der Verwaltungszwang kann ohne vorausgehenden Verwaltungsakt angewendet werden, wenn dies zur Abwehr einer Gefahr erforderlich ist, insbesondere weil Maßnahmen gegen Personen nach den §§ 6 bis 9 nicht rechtzeitig möglich sind oder keinen Erfolg versprechen, und die Behörde hierbei innerhalb ihrer Befugnisse handelt (§ 47 Abs. 2 HSOG); daneben kommt die unmittelbare Ausführung nach § 8 HSOG in Betracht. Kosten der Ersatzvornahme trägt der Pflichtige.
   norms:
+  - §§ 47 ff. HSOG
   - HessVwVG
-  - HSOG, Vorschriften zum Verwaltungszwang
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -201,8 +189,7 @@ cards:
   type: definition
   front: Welche Ersatz- und Rechtsschutzmöglichkeiten bestehen in Hessen?
   back: >-
-    Nichtverantwortliche, die nach § 9 HSOG in Anspruch genommen werden, haben einen Entschädigungsanspruch
-    (Schadensausgleich); Näheres regeln die Schadensausgleichsvorschriften des HSOG. Daneben bestehen
+    Wer infolge einer rechtmäßigen Inanspruchnahme nach § 9 HSOG einen Schaden erleidet, dem ist ein angemessener Ausgleich zu gewähren; das Gleiche gilt bei Schäden durch rechtswidrige Maßnahmen der Gefahrenabwehr- oder Polizeibehörden (§ 64 Abs. 1 HSOG; Inhalt und Umfang § 65, Rechtsweg § 70 HSOG). Daneben bestehen
     Amtshaftung (§ 839 BGB, Art. 34 GG) und Aufopferung. Rechtsschutz: Anfechtungsklage gegen Verwaltungsakte
     (§ 42 Abs. 1 Var. 1 VwGO); ob ein Vorverfahren nach § 68 VwGO erforderlich ist, richtet sich nach
     dem hessischen Landesrecht, das bestimmte Verfahren davon ausnimmt. Nach Erledigung ist die Fortsetzungsfeststellungsklage
@@ -210,6 +197,7 @@ cards:
     sind richterlich zu überprüfen (Art. 104 GG).
   norms:
   - § 9 HSOG
+  - § 64 HSOG
   - § 839 BGB
   - Art. 34 GG
   - § 113 Abs. 1 S. 4 VwGO
@@ -225,7 +213,7 @@ cards:
     I. Ermächtigungsgrundlage (Standardmaßnahme §§ 12 ff. HSOG vor Generalklausel § 11 HSOG). II. Formelle
     Rechtmäßigkeit: Zuständigkeit (Gefahrenabwehrbehörde, Polizeibehörde bei Eilfall), Verfahren (Anhörung
     § 28 HVwVfG), Form. III. Materielle Rechtmäßigkeit: Tatbestand (Schutzgut, konkrete Gefahr), Adressat
-    (§§ 6, 7, 9 HSOG), Ermessen und Verhältnismäßigkeit. IV. Vollstreckung nach HessVwVG.
+    (§§ 6, 7, 9 HSOG), Ermessen und Verhältnismäßigkeit. IV. Vollstreckung nach §§ 47 ff. HSOG (ergänzend HessVwVG).
   norms:
   - § 11 HSOG
   - §§ 6, 7, 9 HSOG
@@ -248,7 +236,7 @@ schemata:
     hinweis: Standardmaßnahme (§§ 12 ff. HSOG) vor Generalklausel (§ 11 HSOG).
   - label: II. Formelle Rechtmäßigkeit
     children:
-    - label: '1. Zuständigkeit: Gefahrenabwehrbehörde; Polizeibehörde im Eilfall (§ 1 Abs. 4 HSOG)'
+    - label: '1. Zuständigkeit: Gefahrenabwehrbehörde; Polizeibehörde im Eilfall (§ 2 HSOG)'
     - label: '2. Verfahren: Anhörung, § 28 HVwVfG'
     - label: 3. Form
   - label: III. Materielle Rechtmäßigkeit
@@ -257,7 +245,7 @@ schemata:
     - label: '2. Adressat: Verhaltensstörer § 6, Zustandsstörer § 7, Nichtverantwortlicher § 9'
     - label: '3. Ermessen: Auswahlermessen, Verhältnismäßigkeit'
   - label: IV. Vollstreckung
-    hinweis: 'HessVwVG: Androhung, Festsetzung oder Sofortvollzug.'
+    hinweis: 'Verwaltungszwang nach §§ 47 ff. HSOG: Androhung, Festsetzung oder Zwang ohne vorausgehenden Verwaltungsakt (§ 47 Abs. 2).'
   stand: 2026-10
 faelle:
 - slug: he-fall-por-heizoel

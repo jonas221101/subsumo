@@ -74,12 +74,9 @@ cards:
 - slug: be-por-zustaendigkeit
   type: definition
   front: Wer ist in Berlin für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde oder Polizei?
-  back: 'Ordnungsbehörden und Polizei im ASOG (§§ 2 ff.); Berlin ist Einheitsgemeinde mit Bezirken (BezVG).
-    Prüfungsrelevant ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich bei den Verwaltungs-/Ordnungsbehörden;
-    der Polizeivollzugsdienst wird tätig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere
-    Zuweisung besteht. Ein Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig.'
+  back: 'Für die Gefahrenabwehr sind die Ordnungsbehörden zuständig; Ordnungsbehörden sind die Senatsverwaltungen und die Bezirksämter (§ 2 Abs. 1 und 2 ASOG Bln). Berlin ist Einheitsgemeinde mit Bezirken (BezVG). Prüfungsrelevant ist die Abgrenzung: Die Polizei (Polizei Berlin, § 5 Abs. 1 ASOG Bln) wird im Rahmen der Gefahrenabwehr in eigener Zuständigkeit nur tätig, soweit die Abwehr der Gefahr durch eine andere Behörde nicht oder nicht rechtzeitig möglich erscheint (§ 4 Abs. 1 ASOG Bln), mit Ausnahme der Fälle des § 1 Abs. 1 S. 2 und Abs. 3 ASOG Bln (Vorbereitungen für Hilfeleistung, vorbeugende Straftatenbekämpfung). Ein Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig.'
   norms:
-  - Allgemeines Sicherheits- und Ordnungsgesetz (ASOG Bln)
+  - §§ 2, 4 ASOG Bln
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -87,7 +84,7 @@ cards:
 - slug: be-por-vollstreckung
   type: norm
   front: Nach welchem Gesetz wird eine Gefahrenabwehrverfügung in Berlin vollstreckt?
-  back: 'Verwaltungs-Vollstreckungsgesetz (VwVG) des Bundes, das in Berlin über § 5a VwVfG Bln anwendbar
+  back: 'Verwaltungs-Vollstreckungsgesetz (VwVG) des Bundes, das in Berlin über § 8 VwVfG Bln anwendbar
     ist. Für die Anwendung unmittelbaren Zwangs durch Vollzugsbeamte gilt ergänzend das Gesetz über die
     Anwendung unmittelbaren Zwanges bei der Ausübung öffentlicher Gewalt durch Vollzugsbeamte des Landes
     Berlin (UZwG Bln). Regelfall ist das gestreckte Verfahren: Grundverfügung - Androhung - Festsetzung
@@ -95,7 +92,7 @@ cards:
     sind Sofortvollzug bzw. unmittelbare Ausführung ohne vorausgehenden Verwaltungsakt möglich; die Kosten
     trägt der Pflichtige.'
   norms:
-  - Verwaltungs-Vollstreckungsgesetz des Bundes (VwVG), anwendbar über § 5a VwVfG Bln
+  - Verwaltungs-Vollstreckungsgesetz des Bundes (VwVG), anwendbar über § 8 VwVfG Bln
   - Gesetz über die Anwendung unmittelbaren Zwanges bei der Ausübung öffentlicher Gewalt durch Vollzugsbeamte
     des Landes Berlin (UZwG Bln)
   quellen:
@@ -226,7 +223,7 @@ cards:
     Vorschriften des Landes; die Höhe muss erforderlich und angemessen sein.
   norms:
   - >-
-    Verwaltungs-Vollstreckungsgesetz des Bundes (VwVG), anwendbar über § 5a VwVfG Bln
+    Verwaltungs-Vollstreckungsgesetz des Bundes (VwVG), anwendbar über § 8 VwVfG Bln
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -254,7 +251,7 @@ schemata:
   - label: II. Formelle Rechtmäßigkeit
     children:
     - label: >-
-        1. Zuständigkeit: Ordnungsbehörden (Bezirksämter) bzw. Polizei im Eilfall nach dem ASOG Bln
+        1. Zuständigkeit: Ordnungsbehörden (Senatsverwaltungen, Bezirksämter, § 2 ASOG Bln) bzw. Polizei, wenn die Abwehr durch die Ordnungsbehörde nicht oder nicht rechtzeitig möglich erscheint (§ 4 ASOG Bln)
     - label: >-
         2. Verfahren: Anhörung nach dem Landesverwaltungsverfahrensgesetz (Ausnahme bei Gefahr im Verzug)
     - label: 3. Form und Begründung (mündlicher Verwaltungsakt zulässig)
