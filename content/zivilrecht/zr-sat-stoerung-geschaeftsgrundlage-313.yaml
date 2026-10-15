@@ -1,0 +1,372 @@
+topic:
+  slug: zr-sat-stoerung-geschaeftsgrundlage-313
+  area: zivilrecht
+  title: Störung der Geschäftsgrundlage und Kündigung aus wichtigem Grund, §§ 313, 314 BGB
+  parent: zr-bgb-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-g313-begriff-geschaeftsgrundlage
+  type: definition
+  front: >-
+    Definiere: Geschäftsgrundlage und die Störung der Geschäftsgrundlage, § 313 BGB.
+  back: >-
+    Geschäftsgrundlage sind nach der Rechtsprechung die nicht zum eigentlichen Vertragsinhalt
+    erhobenen, beim Vertragsschluss aber zutage getretenen gemeinsamen Vorstellungen
+    beider Parteien oder die dem Geschäftsgegner erkennbaren und von ihm nicht beanstandeten
+    Vorstellungen einer Partei vom Vorhandensein oder künftigen Eintritt bestimmter
+    Umstände, auf denen der Geschäftswille aufbaut. § 313 BGB unterscheidet die Veränderung
+    der Umstände nach Vertragsschluss (Abs. 1, objektive Seite) und die Fehlvorstellung
+    bereits beim Vertragsschluss (Abs. 2, subjektive Seite). Der Grundsatz der Vertragstreue
+    (pacta sunt servanda) bleibt die Regel; § 313 BGB ist nur ultima ratio und ein
+    Ausnahmeinstrument für Fälle, in denen das Festhalten am Vertrag zu untragbaren
+    Ergebnissen führen würde.
+  norms:
+  - § 313 Abs. 1 BGB
+  - § 313 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-g313-voraussetzungen-abs1
+  type: norm
+  front: >-
+    Welche Voraussetzungen hat der Anpassungsanspruch nach § 313 Abs. 1 BGB?
+  back: >-
+    Nach § 313 Abs. 1 BGB kann Anpassung des Vertrags verlangt werden, wenn sich
+    Umstände, die zur Grundlage des Vertrags geworden sind, nach Vertragsschluss schwerwiegend
+    verändert haben und die Parteien den Vertrag nicht oder mit anderem Inhalt geschlossen
+    hätten, wenn sie diese Veränderung vorausgesehen hätten. Hinzu kommt die Unzumutbarkeit:
+    Dem benachteiligten Teil darf das Festhalten am unveränderten Vertrag unter Berücksichtigung
+    aller Umstände des Einzelfalls, insbesondere der vertraglichen oder gesetzlichen
+    Risikoverteilung, nicht zuzumuten sein. Zu prüfen sind danach (1) reales Element:
+    Umstand als Vertragsgrundlage, (2) hypothetisches Element: Parteien hätten den
+    Vertrag anders oder nicht geschlossen, (3) normatives Element: Unzumutbarkeit des
+    Festhaltens am Vertrag, (4) kein Ausschluss durch Risikoverteilung.
+  norms:
+  - § 313 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-g313-abs2-fehlvorstellung
+  type: norm
+  front: >-
+    Was regelt § 313 Abs. 2 BGB und wie verhält er sich zu Absatz 1?
+  back: >-
+    Einer Veränderung der Umstände steht es nach § 313 Abs. 2 BGB gleich, wenn wesentliche
+    Vorstellungen, die zur Grundlage des Vertrags geworden sind, sich als falsch herausstellen.
+    Erfasst ist vor allem der gemeinsame Irrtum beider Parteien über einen Umstand
+    bei Vertragsschluss (subjektive Geschäftsgrundlage). Auch hier gelten die weiteren
+    Voraussetzungen des Absatzes 1: Hypothetischer Parteiwille und Unzumutbarkeit
+    unter Berücksichtigung der Risikoverteilung. Der einseitige Motivirrtum einer
+    Partei reicht nicht aus, es sei denn, der anderen Partei war die Vorstellung erkennbar
+    und sie hat sie zur Grundlage gemacht. Bei einem Irrtum über eine Eigenschaft
+    ist stets der Vorrang des Anfechtungs- und Gewährleistungsrechts zu beachten,
+    soweit dessen Voraussetzungen vorliegen.
+  norms:
+  - § 313 Abs. 2 BGB
+  - § 313 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-g313-rechtsfolgen-abs3
+  type: norm
+  front: >-
+    Welche Rechtsfolgen hat § 313 BGB und in welcher Reihenfolge?
+  back: >-
+    Rechtsfolge ist vorrangig die Anpassung des Vertrags (§ 313 Abs. 1 BGB): Der benachteiligte
+    Teil kann verlangen, dass der Vertrag an die veränderten Umstände angepasst wird,
+    etwa durch Änderung des Preises, der Leistungszeit oder des Leistungsumfangs.
+    Der Anspruch wird im Prozess geltend gemacht; die Anpassung erfolgt durch richterliche
+    Vertragsgestaltung oder Verhandlung. Ist eine Anpassung nicht möglich oder einem
+    Teil nicht zumutbar, kann der benachteiligte Teil vom Vertrag zurücktreten, bei
+    Dauerschuldverhältnissen an die Stelle des Rücktritts das Recht zur Kündigung
+    (§ 313 Abs. 3 BGB). Die Beendigung ist damit nachrangig (ultima ratio). Die Rückabwicklung
+    folgt nach dem Rücktrittsrecht (§§ 346 ff. BGB).
+  norms:
+  - § 313 Abs. 1 BGB
+  - § 313 Abs. 3 BGB
+  - § 346 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-g313-abgrenzung-vorrang
+  type: streitstand
+  front: >-
+    Grenze § 313 BGB ab: Vorrang von Auslegung, Unmöglichkeit, Gewährleistung und
+    Anfechtung.
+  back: >-
+    § 313 BGB ist subsidiär. Vorrangig sind die ergänzende Vertragsauslegung (§§
+    133, 157 BGB), eine vertragliche Risikoverteilung und gesetzliche Sonderregeln.
+    Ist die Leistung unmöglich oder unzumutbar (§ 275 Abs. 1 bis 3 BGB), gilt das
+    Recht der Unmöglichkeit; § 275 Abs. 2 BGB erfasst gerade das grobe Missverhältnis.
+    Für Sachmängel gelten ab Gefahrübergang die §§ 434, 437 ff. BGB und verdrängen
+    § 313 BGB. Der einseitige Eigenschaftsirrtum fällt unter die Anfechtung (§ 119 Abs. 2 BGB)
+    mit Nichtigkeit nach § 142 BGB und Anspruch aus § 122 BGB. Beim beiderseitigen
+    Irrtum konkurrieren Anfechtung und § 313 Abs. 2 BGB; die einen geben der Anfechtung
+    als der spezielleren Regelung des Willensmangels den Vorrang, die anderen der
+    Anpassung als dem milderen Mittel. Als Auffangtatbestand für den einseitigen Motivirrtum
+    dient § 313 BGB nach h. M. nicht, es sei denn, die andere Partei hat die Vorstellung
+    erkannt und geteilt. Die Verwendung der Leistung und
+    Marktpreisschwankungen liegen regelmäßig im Risikobereich der jeweiligen Partei.
+  norms:
+  - § 275 BGB
+  - § 119 Abs. 2 BGB
+  - § 437 BGB
+  - § 313 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-g313-fallgruppen
+  type: definition
+  front: >-
+    Nenne die klassischen Fallgruppen der Störung der Geschäftsgrundlage.
+  back: >-
+    Üblich ist die Einteilung in (1) Äquivalenzstörung: Das Gleichgewicht von Leistung
+    und Gegenleistung ist durch unvorhersehbare Ereignisse (etwa Geldentwertung, Währungsverfall)
+    erheblich gestört; (2) Leistungserschwerung: Die Leistung wird für den Schuldner
+    extrem teurer oder schwieriger, ohne dass die Schwelle des § 275 Abs. 2 BGB erreicht
+    ist; (3) Zweckstörung (Verwendungszweck): Der von beiden Parteien erkennbar zugrunde
+    gelegte Vertragszweck wird unmöglich, etwa wenn eine behördliche Maßnahme den
+    gemeinsam vorausgesetzten Verwendungszweck einer Mietsache beseitigt; (4) Fehlen
+    oder Wegfall persönlicher Erwartungen, etwa bei Zuwendungen unter Familienangehörigen
+    im Vertrauen auf den Bestand einer Beziehung; (5) gemeinsamer Irrtum bei Vertragsschluss
+    (Abs. 2). Ob der Fall in Abs. 1 oder Abs. 2 fällt, entscheidet, ob die Fehlvorstellung
+    vor oder nach Vertragsschluss entstanden ist.
+  norms:
+  - § 313 Abs. 1 BGB
+  - § 313 Abs. 2 BGB
+  - § 275 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-g313-gewerbemiete-corona
+  type: rechtsprechung
+  front: >-
+    Wie hat der BGH die pandemiebedingte Schließung von Geschäftsräumen im Verhältnis
+    zu § 313 BGB eingeordnet?
+  back: >-
+    Der BGH hat entschieden, dass bei einer auf behördlicher Anordnung beruhenden
+    Schließung von Geschäftsräumen während der Corona-Pandemie kein Mangel der Mietsache
+    im Sinne des § 536 BGB vorliegt, so dass keine Minderung eintritt. In Betracht
+    kommt aber ein Anspruch auf Anpassung der Miete wegen Störung der Geschäftsgrundlage
+    nach § 313 Abs. 1 BGB. Dabei sei zu beachten, dass eine Anpassung nicht automatisch
+    zu einer Reduzierung auf die Hälfte führt, sondern alle Umstände des Einzelfalls
+    zu würdigen sind, insbesondere die konkreten wirtschaftlichen Nachteile des Mieters
+    und mögliche Entschädigungen. Mit Art. 240 § 7 EGBGB wurde zudem die Vermutung
+    eingeführt, dass sich erhebliche Umstände nach Vertragsschluss schwerwiegend verändert
+    haben. Nicht jede Umsatzeinbuße begründet bereits die Unzumutbarkeit des Festhaltens
+    an der vereinbarten Miete.
+  norms:
+  - § 313 Abs. 1 BGB
+  - § 536 BGB
+  - Art. 240 § 7 EGBGB
+  quellen:
+  - BGB, amtliche Fassung
+  - BGH, Urteil vom 12.01.2022 - XII ZR 8/21
+- slug: zr-g314-kuendigung-wichtiger-grund
+  type: norm
+  front: >-
+    Welche Voraussetzungen hat die außerordentliche Kündigung von Dauerschuldverhältnissen
+    nach § 314 BGB?
+  back: >-
+    Dauerschuldverhältnisse können von jedem Vertragsteil aus wichtigem Grund ohne
+    Einhaltung einer Kündigungsfrist gekündigt werden (§ 314 Abs. 1 S. 1 BGB). Ein
+    wichtiger Grund liegt vor, wenn dem Kündigenden unter Berücksichtigung aller Umstände
+    des Einzelfalls und unter Abwägung der beiderseitigen Interessen die Fortsetzung
+    des Vertragsverhältnisses bis zur vereinbarten Beendigung oder bis zum Ablauf
+    einer Kündigungsfrist nicht zugemutet werden kann (§ 314 Abs. 1 S. 2 BGB). Besteht
+    der wichtige Grund in der Verletzung einer vertraglichen Pflicht, ist die Kündigung
+    erst nach erfolglosem Ablauf einer zur Abhilfe bestimmten Frist oder nach erfolgloser
+    Abmahnung zulässig (§ 314 Abs. 2 S. 1 BGB), es sei denn, die Fristsetzung ist nach § 323
+    Abs. 2 Nr. 1 und 2 BGB entsprechend oder wegen besonderer Umstände entbehrlich
+    (§ 314 Abs. 2 S. 2, 3 BGB). Die Kündigung muss innerhalb einer angemessenen
+    Frist nach Kenntnis des Kündigungsgrundes erfolgen (§ 314 Abs. 3 BGB).
+  norms:
+  - § 314 Abs. 1 BGB
+  - § 314 Abs. 2 BGB
+  - § 314 Abs. 3 BGB
+  - § 323 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-g314-verhaeltnis-313-spezial
+  type: streitstand
+  front: >-
+    Wie verhalten sich § 314 BGB und § 313 Abs. 3 S. 2 BGB zueinander, und welche
+    Spezialvorschriften gehen vor?
+  back: >-
+    § 313 Abs. 3 S. 2 BGB gibt bei Dauerschuldverhältnissen ein Kündigungsrecht anstelle
+    des Rücktritts, wenn eine Anpassung nicht möglich oder zumutbar ist. § 314 BGB
+    regelt dagegen die Kündigung aus wichtigem Grund, der in der Sphäre des Vertragspartners
+    oder in sonstigen Umständen liegen kann; beide Normen schließen sich nicht aus,
+    haben aber unterschiedliche Voraussetzungen: § 313 BGB betrifft die Störung der
+    gemeinsamen Vertragsgrundlage und führt zunächst zur Anpassung, § 314 BGB verlangt
+    einen Grund, der die Fortsetzung unzumutbar macht, und kennt keinen Anpassungsvorrang.
+    Vorrang haben besondere gesetzliche Kündigungsrechte, etwa § 543 BGB (Miete),
+    § 626 BGB (Dienstvertrag) und § 490 BGB (Darlehen). Der Schadensersatzanspruch bleibt nach §
+    314 Abs. 4 BGB unberührt.
+  norms:
+  - § 313 Abs. 3 S. 2 BGB
+  - § 314 BGB
+  - § 543 BGB
+  - § 626 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-g313-anpassung
+  title: Vertragsanpassung wegen Störung der Geschäftsgrundlage, § 313 BGB
+  norms:
+  - § 313 Abs. 1 BGB
+  - § 313 Abs. 2 BGB
+  - § 313 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Anwendbarkeit
+    hinweis: Kein Vorrang von Vertragsauslegung, vertraglicher Regelung, § 275 BGB,
+      Mängelrecht oder Anfechtung.
+  - label: II. Tatbestand des § 313 Abs. 1 BGB
+    children:
+    - label: 1. Reales Element - Umstände als Vertragsgrundlage
+    - label: 2. Schwerwiegende Veränderung nach Vertragsschluss (Abs. 1) oder
+        Fehlvorstellung (Abs. 2)
+    - label: 3. Hypothetisches Element - Vertrag wäre nicht oder anders geschlossen
+        worden
+    - label: 4. Normatives Element - Unzumutbarkeit des Festhaltens
+      hinweis: Risikoverteilung (vertraglich und gesetzlich) berücksichtigen; Risiko
+        trägt grundsätzlich die Partei, in deren Sphäre der Umstand fällt.
+  - label: III. Rechtsfolge
+    children:
+    - label: 1. Anpassung des Vertrags, § 313 Abs. 1 BGB
+    - label: 2. Rücktritt oder Kündigung, wenn Anpassung unmöglich oder unzumutbar,
+        § 313 Abs. 3 BGB
+- slug: zr-schema-g314-kuendigung
+  title: Kündigung eines Dauerschuldverhältnisses aus wichtigem Grund, § 314 BGB
+  norms:
+  - § 314 BGB
+  - § 323 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Dauerschuldverhältnis
+    hinweis: Kein vorrangiges Sonderkündigungsrecht (§ 543, § 626 BGB).
+  - label: II. Kündigungserklärung
+  - label: III. Wichtiger Grund, § 314 Abs. 1 BGB
+    children:
+    - label: 1. Umstände, die die Fortsetzung unzumutbar machen
+    - label: 2. Interessenabwägung im Einzelfall
+  - label: IV. Abmahnung oder Fristsetzung, § 314 Abs. 2 BGB
+    hinweis: Entbehrlich bei ernsthafter Verweigerung, Fixgeschäft oder besonderen
+      Umständen (§ 314 Abs. 2 S. 2, 3 BGB).
+  - label: V. Kündigungsfrist des § 314 Abs. 3 BGB
+  - label: VI. Rechtsfolge - Beendigung ex nunc; Schadensersatz bleibt, § 314 Abs.
+      4 BGB
+faelle:
+- slug: zr-fall-g313-bierlieferung
+  title: Der Brauereivertrag
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Gastwirt G hat mit der Brauerei B einen auf zehn Jahre befristeten Bierlieferungsvertrag
+    abgeschlossen. Danach nimmt G jährlich eine Mindestmenge ab. Nach vier Jahren
+    liefert B binnen drei Monaten dreimal Bierfässer, in denen sich Rückstände von
+    Reinigungsmitteln befinden; mehrere Gäste erkranken. G rügt dies und fordert
+    B schriftlich unter Fristsetzung von zwei Wochen auf, künftig einwandfreie Ware
+    zu liefern. Dennoch kommt es zu einer weiteren verunreinigten Lieferung. Daraufhin
+    kündigt G zwei Wochen später fristlos. B hält die Kündigung für unwirksam und
+    verlangt Abnahme der vereinbarten Mindestmenge bis zum Vertragsende. G beruft
+    sich hilfsweise darauf, dass wegen eines allgemeinen Rückgangs der Gastronomiebesucher
+    sein Absatz um 30 Prozent gesunken sei und er die Mindestmenge ohnehin nicht
+    mehr abnehmen könne.
+  question: >-
+    Ist der Bierlieferungsvertrag wirksam beendet und kann B die Abnahme der Mindestmenge
+    verlangen?
+  steps:
+  - prompt: Welche Kündigungsnorm kommt in Betracht und warum ist sie anwendbar?
+    erwartung: >-
+      § 314 BGB, weil es sich um einen Bierlieferungsvertrag als Dauerschuldverhältnis
+      handelt und kein vorrangiges besonderes Kündigungsrecht eingreift.
+  - prompt: Liegt ein wichtiger Grund vor?
+    erwartung: >-
+      Ja. Wiederholte verunreinigte Lieferungen, die zu Gesundheitsgefahren für Gäste
+      führen, machen die Fortsetzung bis zum Vertragsende unzumutbar (§ 314 Abs.
+      1 S. 2 BGB). Auch die Interessenabwägung fällt zugunsten des G aus.
+  - prompt: Waren Abmahnung bzw. Fristsetzung und die Kündigungsfrist des Absatz 3 gewahrt?
+    erwartung: >-
+      Ja. G hat B schriftlich unter angemessener Frist zur Abhilfe aufgefordert (§
+      314 Abs. 2 S. 1 BGB) und nach der weiteren verunreinigten Lieferung innerhalb
+      einer angemessenen Frist gekündigt (§ 314 Abs. 3 BGB).
+  - prompt: Welche Rechtsfolge hat die wirksame Kündigung und welche Rolle spielt
+      § 313 BGB?
+    erwartung: >-
+      Der Vertrag endet mit Zugang der Kündigung für die Zukunft; B kann keine weitere
+      Abnahme verlangen. Auf § 313 BGB kommt es nicht an, weil § 314 BGB bereits
+      einschlägig ist. Der Absatzrückgang fiele ohnehin in die Risikosphäre des Gastwirts
+      und rechtfertigte keine Anpassung.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Anwendbarkeit des § 314 BGB als Kündigung aus wichtigem Grund bei Dauerschuldverhältnis
+      weight: 2.0
+      required: true
+      norms:
+      - § 314 Abs. 1 BGB
+      keywords:
+      - § 314
+      - Dauerschuldverhältnis
+      - Kündigung aus wichtigem Grund
+      - fristlose Kündigung
+      card_slugs:
+      - zr-g314-kuendigung-wichtiger-grund
+    - id: p2
+      label: Wichtiger Grund und Interessenabwägung subsumiert
+      weight: 3.0
+      required: true
+      keywords:
+      - wichtiger Grund
+      - Fortsetzung unzumutbar
+      - Interessenabwägung
+      - verunreinigte Lieferungen
+      card_slugs:
+      - zr-g314-kuendigung-wichtiger-grund
+    - id: p3
+      label: Fristsetzung bzw. Abmahnung nach § 314 Abs. 2 BGB und angemessene Kündigungsfrist
+        nach Absatz 3
+      weight: 2.0
+      required: false
+      norms:
+      - § 314 Abs. 2 BGB
+      - § 314 Abs. 3 BGB
+      keywords:
+      - Abmahnung
+      - Frist zur Abhilfe
+      - § 314 Abs. 2
+      - angemessene Frist
+      - § 314 Abs. 3
+      card_slugs:
+      - zr-g314-kuendigung-wichtiger-grund
+    - id: p4
+      label: Verhältnis zu § 313 BGB und Risikosphäre (Absatzrückgang) erörtert
+      weight: 2.0
+      required: false
+      norms:
+      - § 313 BGB
+      keywords:
+      - § 313
+      - Risikosphäre
+      - Risikoverteilung
+      - Geschäftsgrundlage
+      - Absatzrückgang
+      card_slugs:
+      - zr-g314-verhaeltnis-313-spezial
+      - zr-g313-voraussetzungen-abs1

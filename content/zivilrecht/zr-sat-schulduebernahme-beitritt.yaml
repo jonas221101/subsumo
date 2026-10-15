@@ -1,0 +1,353 @@
+topic:
+  slug: zr-sat-schulduebernahme-beitritt
+  area: zivilrecht
+  title: Schuldübernahme, Schuldbeitritt und Vertragsübernahme, §§ 414 ff. BGB
+  parent: zr-bgb-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-sue-414-vertrag-glaeubiger
+  type: norm
+  front: >-
+    Wie kann eine befreiende Schuldübernahme nach § 414 BGB zustande kommen?
+  back: >-
+    Die privative (befreiende) Schuldübernahme ist ein Verfügungsgeschäft über die
+    Forderung. Nach § 414 BGB kann sie durch Vertrag zwischen dem Gläubiger und dem
+    Übernehmer zustande kommen: Eine Schuld kann von einem Dritten durch Vertrag mit
+    dem Gläubiger in der Weise übernommen werden, dass der Dritte an die Stelle des
+    bisherigen Schuldners tritt. Der bisherige Schuldner scheidet aus dem Schuldverhältnis
+    aus und wird frei. Seine Mitwirkung ist nicht erforderlich. Die Forderung bleibt
+    in ihrer Identität erhalten (Wechsel nur des Schuldners), sodass Inhalt, Fälligkeit
+    und Einwendungen aus dem Schuldverhältnis fortbestehen. Der Vertrag kann formfrei
+    geschlossen werden, soweit das Grundverhältnis nicht eine Form verlangt. Praktisch
+    bedeutsamer ist der Vertrag zwischen Schuldner und Übernehmer nach § 415 BGB.
+  norms:
+  - § 414 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-sue-415-genehmigung
+  type: norm
+  front: >-
+    Welche Voraussetzungen und Rechtsfolgen hat die Schuldübernahme durch Vertrag
+    zwischen Schuldner und Übernehmer, § 415 BGB?
+  back: >-
+    Wird die Schuld durch Vertrag zwischen dem bisherigen Schuldner und dem Übernehmer
+    übernommen, hängt die Wirksamkeit von der Genehmigung des Gläubigers ab (§ 415
+    Abs. 1 S. 1 BGB). Bis zur Genehmigung können die Vertragsparteien den Vertrag
+    ändern oder aufheben (§ 415 Abs. 1 S. 2 BGB). Der Gläubiger kann durch die Parteien
+    zur Genehmigung aufgefordert werden; die Genehmigung kann dann nur bis zum Ablauf
+    der gesetzten Frist erklärt werden, anderenfalls gilt sie als verweigert (§ 415
+    Abs. 2 BGB). Wird die Genehmigung verweigert, ist im Zweifel der Übernehmer
+    im Verhältnis zum Schuldner verpflichtet, den Gläubiger rechtzeitig zu befriedigen
+    (Erfüllungsübernahme, § 415 Abs. 3 BGB). Ein bloßes Schweigen des Gläubigers
+    ist grundsätzlich keine Genehmigung.
+  norms:
+  - § 415 Abs. 1 BGB
+  - § 415 Abs. 2 BGB
+  - § 415 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-sue-417-418-wirkungen
+  type: norm
+  front: >-
+    Welche Wirkungen hat die Schuldübernahme für Einwendungen und Sicherheiten, §§
+    417, 418 BGB?
+  back: >-
+    Der Übernehmer kann dem Gläubiger die Einwendungen entgegensetzen, die sich aus
+    dem Rechtsverhältnis zwischen dem bisherigen Schuldner und dem Gläubiger ergeben
+    (§ 417 Abs. 1 S. 1 BGB), etwa Verjährung, Stundung oder Mängeleinreden. Eine Aufrechnung
+    mit einer Forderung des bisherigen Schuldners gegen den Gläubiger ist ihm dagegen
+    nicht möglich (§ 417 Abs. 1 S. 2 BGB). Einwendungen aus dem Rechtsverhältnis zwischen
+    Übernehmer und bisherigem Schuldner (Kausalverhältnis) kann er dem Gläubiger nicht
+    entgegenhalten (§ 417 Abs. 2 BGB). Mit der Schuldübernahme erlöschen die für die Forderung
+    bestellten Bürgschaften und Pfandrechte (§ 418 Abs. 1 S. 1 BGB); bei einer Hypothek
+    tritt dieselbe Wirkung ein wie bei einem Verzicht des Gläubigers (§ 418 Abs. 1
+    S. 2 BGB). Das gilt nicht, wenn der Bürge oder der Eigentümer des verhafteten
+    Gegenstands in die Übernahme einwilligt (§ 418 Abs. 1 S. 3 BGB).
+  norms:
+  - § 417 BGB
+  - § 418 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-sue-beitritt-begriff
+  type: definition
+  front: >-
+    Definiere: Schuldbeitritt (kumulative Schuldübernahme) und seine Rechtsfolgen.
+  back: >-
+    Beim Schuldbeitritt tritt ein Dritter als weiterer Schuldner neben den bisherigen
+    Schuldner, der Schuldner bleibt. Er ist gesetzlich nicht geregelt, aber auf Grund
+    der Vertragsfreiheit (§ 311 Abs. 1 BGB) zulässig. Der Beitritt kann durch Vertrag
+    zwischen Gläubiger und Beitretendem oder durch Vertrag zwischen Schuldner und
+    Beitretendem als Vertrag zugunsten des Gläubigers (§ 328 BGB) zustande kommen.
+    Zwischen bisherigem Schuldner und Beitretendem besteht eine Gesamtschuld
+    (§ 421 BGB), im Innenverhältnis findet ein Ausgleich nach § 426 BGB statt. Der
+    Beitretende haftet inhaltsgleich mit dem bisherigen Schuldner und kann Einwendungen
+    aus dem Grundverhältnis geltend machen. Anders als bei der privativen Schuldübernahme
+    verliert der Gläubiger keine Rechte und eine Genehmigung ist nicht erforderlich,
+    da der Beitritt allein vorteilhaft ist. Akzessorische Sicherheiten bleiben bestehen.
+  norms:
+  - § 311 Abs. 1 BGB
+  - § 328 BGB
+  - § 421 BGB
+  - § 426 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-sue-beitritt-form
+  type: streitstand
+  front: >-
+    Unterliegt der Schuldbeitritt einem Formerfordernis, insbesondere dem des § 766
+    BGB?
+  back: >-
+    Der Schuldbeitritt ist grundsätzlich formfrei. Wegen der wirtschaftlichen Nähe
+    zur Bürgschaft ist umstritten, ob die Schriftform des § 766 BGB analog gilt. Die
+    Rechtsprechung lehnt dies ab, weil der Beitretende eine eigene, nicht akzessorische
+    Verbindlichkeit eingeht und die Warnfunktion des § 766 BGB beim Beitritt nicht
+    in gleicher Weise besteht. Eine analoge Anwendung kann nur ausnahmsweise in Betracht
+    kommen, wenn die Umgehung eines Formzwangs droht. Anders ist zu beurteilen, wenn
+    das Grundgeschäft formbedürftig ist: Bezieht sich der Beitritt auf eine formbedürftige
+    Verpflichtung (etwa nach § 311b Abs. 1 BGB oder bei Verbraucherdarlehen nach §
+    492 BGB), kann die Formvorschrift auch den Beitritt erfassen. Streng zu trennen
+    sind danach die Auslegungsfrage (Beitritt oder Bürgschaft) und die Formfrage;
+    erst nach der Einordnung ist die Form zu prüfen.
+  norms:
+  - § 766 BGB
+  - § 311b Abs. 1 BGB
+  - § 492 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-sue-abgrenzung-buergschaft
+  type: streitstand
+  front: >-
+    Grenze den Schuldbeitritt von der Bürgschaft ab und nenne die Abgrenzungskriterien.
+  back: >-
+    Die Bürgschaft (§ 765 BGB) ist eine einseitig verpflichtende, akzessorische Einstandspflicht
+    für fremde Schuld: Sie hängt in Bestand und Umfang von der Hauptschuld ab (§ 767
+    BGB), ist subsidiär (Einrede der Vorausklage, § 771 BGB) und bedarf der Schriftform
+    (§ 766 BGB). Der Schuldbeitritt begründet eine eigene Verbindlichkeit des Beitretenden,
+    die gleichrangig neben die Hauptschuld tritt. Die Einordnung ergibt sich durch
+    Auslegung (§§ 133, 157 BGB), wobei die Interessenlage entscheidet: Ein Eigeninteresse
+    des Erklärenden an der Erfüllung der Schuld (wirtschaftliches oder rechtliches
+    Interesse, Mitbenutzung der Leistung) spricht für Beitritt, das Fehlen eines solchen
+    und das Anliegen, einem anderen zu helfen, für Bürgschaft. Wegen der Gefahr der
+    Umgehung des § 766 BGB und der Warnfunktion ist im Zweifel eher Bürgschaft anzunehmen,
+    wenn der Erklärende kein eigenes Interesse hat. Verwendet er ausdrücklich Begriffe
+    wie Einstehen für fremde Schuld, spricht das für Bürgschaft.
+  norms:
+  - § 765 BGB
+  - § 766 BGB
+  - § 767 BGB
+  - § 771 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-sue-vertragsuebernahme
+  type: definition
+  front: >-
+    Definiere: Vertragsübernahme und ihre Voraussetzungen.
+  back: >-
+    Die Vertragsübernahme ist die Übertragung der gesamten Rechtsstellung einer Partei
+    aus einem Schuldverhältnis auf einen Dritten, also des Rechtsverhältnisses im
+    Ganzen mit allen Rechten und Pflichten, einschließlich der Gestaltungsrechte.
+    Sie ist gesetzlich nicht allgemein geregelt (Sonderfälle bestehen etwa in § 566
+    BGB bei Veräußerung vermieteten Wohnraums und in § 613a BGB beim Betriebsübergang),
+    aber nach dem Grundsatz der Vertragsfreiheit zulässig. Sie kommt entweder durch
+    dreiseitigen Vertrag aller Beteiligten oder durch Vertrag zwischen ausscheidender
+    und eintretender Partei mit Zustimmung der verbleibenden Partei zustande. Die
+    Zustimmung des Vertragspartners ist wegen des Schuldnerwechsels (§§ 414, 415 BGB)
+    unverzichtbar. Alternativ kann dasselbe wirtschaftlich durch Abtretung der Rechte
+    (§ 398 BGB) und Schuldübernahme erreicht werden; die Vertragsübernahme erfasst
+    jedoch auch Gestaltungsrechte wie Kündigung und Rücktritt.
+  norms:
+  - § 398 BGB
+  - § 414 BGB
+  - § 415 BGB
+  - § 566 BGB
+  - § 613a BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-sue-erfuellungsuebernahme
+  type: definition
+  front: >-
+    Was ist eine Erfüllungsübernahme und wodurch unterscheidet sie sich von der Schuldübernahme?
+  back: >-
+    Bei der Erfüllungsübernahme verpflichtet sich ein Dritter nur gegenüber dem Schuldner
+    (im Innenverhältnis), den Gläubiger zu befriedigen. Der Gläubiger erwirbt dadurch
+    keinen Anspruch gegen den Dritten, und der Schuldner bleibt dem Gläubiger gegenüber
+    verpflichtet; der Dritte muss ihn lediglich von der Schuld freistellen (Freistellungsanspruch
+    des Schuldners). Die Erfüllungsübernahme liegt gesetzlich vor, wenn bei einer
+    Schuldübernahme durch Vertrag nach § 415 BGB die Genehmigung verweigert wird (§
+    415 Abs. 3 BGB). Sie kann auch Ziel einer von vornherein so gewollten Vereinbarung
+    sein, etwa wenn der Käufer eines Grundstücks vereinbarungsgemäß die auf dem Grundstück
+    lastende Schuld des Verkäufers erfüllen soll. Die Auslegung kann ergeben, dass
+    der Gläubiger nach § 328 BGB ein eigenes Forderungsrecht erwirbt; dann liegt
+    ein Schuldbeitritt vor.
+  norms:
+  - § 415 Abs. 3 BGB
+  - § 328 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-sue-uebernahme-beitritt
+  title: Haftung eines Dritten für fremde Schuld - Übernahme, Beitritt oder Bürgschaft
+  norms:
+  - § 414 BGB
+  - § 415 BGB
+  - § 765 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Bestehende Hauptschuld des bisherigen Schuldners
+  - label: II. Auslegung der Erklärung des Dritten, §§ 133, 157 BGB
+    hinweis: Interessenlage und Eigeninteresse des Erklärenden sind entscheidend.
+    children:
+    - label: 1. Privative Schuldübernahme - Schuldner scheidet aus
+    - label: 2. Schuldbeitritt - Schuldner bleibt, Gesamtschuld
+    - label: 3. Bürgschaft - akzessorische, subsidiäre Einstandspflicht
+    - label: 4. Erfüllungsübernahme - nur Innenverhältnis
+  - label: III. Wirksamkeit je nach Rechtsfigur
+    children:
+    - label: 1. Schuldübernahme - Vertrag mit Gläubiger (§ 414 BGB) oder Genehmigung
+        (§ 415 BGB)
+    - label: 2. Schuldbeitritt - formfrei, Vertrag mit Gläubiger oder Vertrag zugunsten
+        des Gläubigers (§ 328 BGB)
+    - label: 3. Bürgschaft - Schriftform, § 766 BGB; Heilung nach § 766 S. 3 BGB
+  - label: IV. Rechtsfolgen
+    children:
+    - label: 1. Einwendungen und Sicherheiten, §§ 417, 418 BGB
+    - label: 2. Gesamtschuldnerausgleich beim Beitritt, § 426 BGB
+faelle:
+- slug: zr-fall-sue-gaststaette
+  title: Die Altschuld des Vorgängers
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Die Brauerei B hat gegen den bisherigen Gaststättenbetreiber W eine fällige Kaufpreisforderung
+    über 10.000 Euro aus Bierlieferungen. W gibt die Gaststätte auf. N übernimmt
+    die Gaststätte und möchte den bestehenden Bierlieferungsvertrag mit B fortführen,
+    um sofort weiter beliefert zu werden. B erklärt, sie liefere nur weiter, wenn
+    auch die Altschuld von N beglichen werde. Daraufhin sagt N mündlich gegenüber
+    B: "Die 10.000 Euro von W zahle ich notfalls auch selbst. Liefern Sie mir ab Montag."
+    B liefert weiter, W zahlt nicht. B verlangt von N Zahlung von 10.000 Euro. N
+    meint, er habe höchstens eine Bürgschaft versprochen, die mangels Schriftform
+    unwirksam sei. Im Verhältnis zu W hat N keine Pflicht zur Begleichung der Altschuld übernommen. Alle Beteiligten sind keine Kaufleute im Sinne des HGB.
+  question: >-
+    Kann B von N die Zahlung von 10.000 Euro verlangen und welchen Anspruch hat N
+    gegebenenfalls gegen W?
+  steps:
+  - prompt: Welche Rechtsfiguren kommen für die Erklärung des N in Betracht?
+    erwartung: >-
+      Bürgschaft (§ 765 BGB), privative Schuldübernahme (§§ 414, 415 BGB) und Schuldbeitritt
+      (kumulative Schuldübernahme, § 311 Abs. 1 BGB). Die Einordnung folgt aus der
+      Auslegung nach §§ 133, 157 BGB.
+  - prompt: Ist die Erklärung eine Bürgschaft?
+    erwartung: >-
+      Nein. Eine Bürgschaft wäre mangels Schriftform nach § 766 S. 1, § 125 S. 1 BGB
+      nichtig (Heilung durch Erfüllung der Hauptverbindlichkeit nach § 766 S. 3 BGB
+      liegt nicht vor). Die Auslegung ergibt aber keine Bürgschaft: N sagt "notfalls
+      selbst zahlen" und knüpft die Belieferung ab Montag daran; er verfolgt ein eigenes
+      wirtschaftliches Interesse an der Fortführung der Belieferung. Er will nicht
+      subsidiär einstehen.
+  - prompt: Liegt eine befreiende Schuldübernahme oder ein Schuldbeitritt vor?
+    erwartung: >-
+      Ein Schuldbeitritt. W soll nicht frei werden; B will sich ausdrücklich eine
+      weitere Haftung sichern. Eine privative Schuldübernahme ist nicht gewollt.
+  - prompt: Ist der Schuldbeitritt wirksam?
+    erwartung: >-
+      Ja. Er ist ein formfreier Vertrag zwischen B und N (§ 311 Abs. 1 BGB). § 766
+      BGB ist nicht analog anzuwenden. B und N haften nunmehr als Gesamtschuldner
+      (§ 421 BGB) und B kann nach Belieben von N leisten verlangen.
+  - prompt: Welchen Anspruch hat N gegen W, wenn er zahlt?
+    erwartung: >-
+      Ausgleichsanspruch nach § 426 Abs. 1 BGB in voller Höhe, weil die Schuld im
+      Innenverhältnis allein W trifft (Kaufpreisschuld aus seinem früheren Betrieb,
+      keine interne Pflicht des N); zusätzlich geht die Forderung der B nach
+      § 426 Abs. 2 BGB auf N über.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Abgrenzung der in Betracht kommenden Rechtsfiguren durch Auslegung nach
+        §§ 133, 157 BGB, Interessenlage herausgearbeitet
+      weight: 2.0
+      required: false
+      norms:
+      - § 133 BGB
+      - § 157 BGB
+      keywords:
+      - Auslegung
+      - Interessenlage
+      - Eigeninteresse
+      - wirtschaftliches Interesse
+      - §§ 133, 157
+      card_slugs:
+      - zr-sue-abgrenzung-buergschaft
+    - id: p2
+      label: Bürgschaft verneint bzw. an der Form des § 766 BGB scheiternd erkannt
+      weight: 2.0
+      required: false
+      norms:
+      - § 766 BGB
+      - § 765 BGB
+      keywords:
+      - § 766
+      - Schriftform
+      - akzessorisch
+      - subsidiär
+      - Bürgschaft nichtig
+      card_slugs:
+      - zr-sue-abgrenzung-buergschaft
+    - id: p3
+      label: Schuldbeitritt als formfreie, eigene Verbindlichkeit bejaht
+      weight: 3.0
+      required: true
+      keywords:
+      - Schuldbeitritt
+      - kumulative Schuldübernahme
+      - Gesamtschuld
+      - formfrei
+      - § 311 Abs. 1
+      card_slugs:
+      - zr-sue-beitritt-begriff
+      - zr-sue-beitritt-form
+    - id: p4
+      label: Abgrenzung zur befreienden Schuldübernahme nach §§ 414, 415 BGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 414 BGB
+      - § 415 BGB
+      keywords:
+      - privative Schuldübernahme
+      - befreiende Schuldübernahme
+      - §§ 414, 415
+      - Schuldner scheidet aus
+      card_slugs:
+      - zr-sue-414-vertrag-glaeubiger
+      - zr-sue-415-genehmigung
+    - id: p5
+      label: Gesamtschuldnerausgleich nach § 426 BGB zwischen N und W
+      weight: 2.0
+      required: true
+      norms:
+      - § 426 BGB
+      - § 421 BGB
+      keywords:
+      - § 426
+      - Gesamtschuldnerausgleich
+      - Ausgleichsanspruch
+      - Innenverhältnis
+      - Forderungsübergang
