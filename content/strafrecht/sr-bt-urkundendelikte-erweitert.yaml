@@ -63,8 +63,8 @@ cards:
   front: Welche Tathandlungen erfasst § 268 StGB?
   back: >-
     § 268 Abs. 1 StGB bestraft, wer zur Täuschung im Rechtsverkehr eine unechte technische
-    Aufzeichnung herstellt (Nr. 1), eine technische Aufzeichnung verfälscht (Nr. 2) oder eine
-    unechte oder verfälschte technische Aufzeichnung gebraucht (Nr. 3). Unecht ist die Aufzeichnung,
+    Aufzeichnung herstellt oder eine technische Aufzeichnung verfälscht (Nr. 1) oder eine
+    unechte oder verfälschte technische Aufzeichnung gebraucht (Nr. 2). Unecht ist die Aufzeichnung,
     wenn sie nicht oder nicht in dieser Form vom Gerät herrührt oder wenn ihr Inhalt nicht
     dem tatsächlichen Messvorgang entspricht. Nach Abs. 3 steht dem Herstellen einer unechten
     technischen Aufzeichnung gleich, wer die Aufzeichnung dadurch beeinflusst, dass er störend
@@ -112,7 +112,8 @@ cards:
     Büchern, Dateien oder Registern als abgegeben oder geschehen beurkundet oder gespeichert
     werden, während sie überhaupt nicht oder in anderer Weise oder von einer Person in einer
     ihr nicht zustehenden Eigenschaft oder von einer anderen Person abgegeben oder geschehen
-    sind. Ebenso wird bestraft, wer eine solche falsche Beurkundung gebraucht (Abs. 2). Eine
+    sind. Ebenso wird bestraft, wer eine solche falsche Beurkundung oder Datenspeicherung zur
+    Täuschung im Rechtsverkehr gebraucht (Abs. 2). Eine
     Qualifikation gilt bei Handeln gegen Entgelt oder mit Bereicherungs- oder Schädigungsabsicht.
     Täter ist in der Regel ein Privatmann, der den gutgläubigen Amtsträger als Werkzeug einsetzt;
     der Beamte selbst wäre nach § 348 StGB zu bestrafen.
@@ -179,9 +180,8 @@ cards:
     dem Täter nicht ausschließlich, wenn ein anderer ein Recht hat, sie als Beweismittel zu
     benutzen. Das Eigentum an der Urkunde ist damit weder notwendig noch hinreichend: Auch
     der Eigentümer kann Täter sein, wenn ein anderer ein Beweisführungsrecht hat. Argument
-    ist der Schutzzweck: § 274 StGB sichert das Beweisführungsrecht, nicht das Eigentum. Teile
-    der Lit. kritisieren, dass dies den Wortlaut ("gehört") dehnt, und halten sich mit Blick
-    auf Art. 103 Abs. 2 GG an das zivilrechtliche Eigentum.
+    ist der Schutzzweck: § 274 StGB sichert das Beweisführungsrecht, nicht das Eigentum. Kritiker
+    bemängeln, dass dies den Wortlaut ("gehört") dehnt.
   norms:
   - § 274 Abs. 1 Nr. 1 StGB
   quellen:
@@ -192,10 +192,10 @@ cards:
   type: norm
   front: Was regeln §§ 273 und 281 StGB (Ausweisdelikte)?
   back: >-
-    § 273 StGB stellt das Verändern von amtlichen Ausweisen unter Strafe: Wer zur Täuschung
-    im Rechtsverkehr in einem amtlichen Ausweis Eintragungen verändert oder einen so veränderten
-    Ausweis gebraucht, wird bestraft (der genaue Wortlaut ist am Gesetz nachzulesen). Anwendungsbereich
-    und Abgrenzung zu § 267 StGB sind im Einzelfall am Gesetzestext zu prüfen. § 281 StGB
+    § 273 StGB (Verändern von amtlichen Ausweisen) schützt echte amtliche Ausweise vor
+    nachträglichen Manipulationen ihres Inhalts zur Täuschung im Rechtsverkehr und erfasst
+    auch das Gebrauchen eines so veränderten Ausweises; er ergänzt § 267 StGB und hat in der
+    Klausur geringere Bedeutung. § 281 StGB
     (Missbrauch von Ausweispapieren) bestraft, wer ein Ausweispapier, das für einen anderen
     ausgestellt ist, zur Täuschung im Rechtsverkehr gebraucht, und wer sein Ausweispapier
     einem anderen zur Täuschung im Rechtsverkehr überlässt. Beim Gebrauchen eines fremden

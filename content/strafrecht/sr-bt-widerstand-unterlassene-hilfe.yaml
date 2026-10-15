@@ -67,7 +67,9 @@ cards:
     Ordnungsamtes beim Abschleppen. Vollstrecken ist die Durchsetzung eines
     Befehls oder die Anwendung unmittelbaren Zwangs auf Grund einer
     Eingriffsbefugnis. Reine Verwaltungstätigkeit ohne Zwangscharakter (Aktenführung,
-    bloße Streifenfahrt) ist keine Vollstreckungshandlung. Die Diensthandlung
+    bloße Streifenfahrt) ist keine Vollstreckungshandlung im Sinne des § 113 StGB;
+    § 114 StGB knüpft dagegen an jede Diensthandlung an, auch an allgemeine
+    Diensthandlungen wie die Streifenfahrt. Die Diensthandlung
     beginnt mit unmittelbarem Ansetzen zur Maßnahme und dauert bis zu ihrem
     Abschluss; auch Vorbereitungs- und Nachbereitungsakte sind einbezogen, wenn
     sie in engem Zusammenhang stehen.
@@ -140,7 +142,8 @@ cards:
     Strafe absehen (S. 1). Konnte er ihn nicht vermeiden und war es ihm nach den
     ihm bekannten Umständen auch nicht zuzumuten, sich mit Rechtsbehelfen gegen die
     vermeintlich rechtswidrige Diensthandlung zu wehren, ist die Tat nicht nach
-    dieser Vorschrift strafbar (S. 2). Die Vorschrift regelt den umgekehrten
+    dieser Vorschrift strafbar (S. 2); war ihm das Rechtsbehelfsverfahren dagegen
+    zuzumuten, steht Milderung oder Absehen von Strafe im Ermessen des Gerichts (S. 3). Die Vorschrift regelt den umgekehrten
     Erlaubnisirrtum eigenständig und geht den allgemeinen Regeln der §§ 16, 17 StGB
     vor. Der Irrtum über tatsächliche Umstände der Amtsträgereigenschaft bleibt
     dagegen Tatbestandsirrtum (§ 16 StGB).
@@ -167,8 +170,9 @@ cards:
     entkräftet werden, und ein unbenannter besonders schwerer Fall bleibt möglich. Die
     Regelbeispiele sind in der Klausur nach der Prüfung des Grundtatbestands in
     einem eigenen Abschnitt zu prüfen. Waffen im technischen Sinne sind
-    Schusswaffen, gefährliche Werkzeuge sind Gegenstände, die nach Art und Einsatz geeignet
-    sind, erhebliche Verletzungen zuzufügen.
+    Gegenstände, die ihrer Art nach dazu bestimmt sind, erhebliche Verletzungen
+    zuzufügen (etwa Schusswaffen, Hieb- und Stichwaffen); gefährliche Werkzeuge sind
+    sonstige Gegenstände, die nach Art und Einsatz dazu geeignet sind.
   norms:
   - § 113 Abs. 2 StGB
   quellen:
@@ -185,8 +189,8 @@ cards:
     zielende feindselige Handlung, die nicht zu einer Verletzung führen muss. Der Täter
     muss keinen Widerstand gegen die Vollstreckung leisten wollen. Abs. 2 erklärt
     die Regelungen über besonders schwere Fälle des § 113 Abs. 2 StGB für
-    entsprechend anwendbar. Die Vorschrift über die Rechtmäßigkeit der Diensthandlung
-    gilt entsprechend (§ 114 Abs. 3 StGB, der auf § 113 Abs. 3 und 4 StGB verweist). Die
+    entsprechend anwendbar. Für die Rechtmäßigkeit der Diensthandlung und Irrtümer
+    darüber verweist § 114 Abs. 3 StGB auf § 113 Abs. 3 und 4 StGB. Die
     Vorschrift wurde eingeführt, um Gewalt gegen Polizei und Vollstreckungsbeamte
     deutlicher zu ahnden. § 114 StGB wird durch § 115 StGB auf Hilfeleistende der
     Feuerwehr, des Katastrophenschutzes und des Rettungsdienstes erstreckt.
@@ -234,8 +238,8 @@ cards:
     (für Leib, Leben oder bedeutende Güter) verbunden wäre, oder die die
     Verletzung anderer wichtiger Pflichten verlangen würde (Aufsichts- und
     Berufspflichten). Maßstab ist der Durchschnittsbürger in der konkreten Lage.
-    Weder Verwandtschaft noch persönliche Beziehung begründen die Pflicht
-    aus § 323c StGB; eine Garantenstellung wird nach § 13 StGB geprüft. Auch der
+    § 323c StGB ist eine Jedermannspflicht; eine Garantenstellung (etwa aus
+    Ehe oder Lebensgemeinschaft) wird nach § 13 StGB geprüft. Auch der
     Verursacher des Unglücksfalls ist grundsätzlich hilfspflichtig. Wer sich durch
     die Hilfeleistung selbst belasten müsste, kann diese oft durch einen
     anonymen Notruf erfüllen.
@@ -260,8 +264,9 @@ cards:
     dem eigenen Willen widerspricht. Entscheidend ist die Freiverantwortlichkeit:
     Bei fehlender Freiverantwortlichkeit (Verzweiflungstat, psychische Erkrankung,
     Willensmangel) bleibt die Hilfspflicht nach allgemeiner Meinung bestehen. Die
-    jüngere Rechtsprechung hat die Hilfspflicht bei erkennbar freiverantwortlichem
-    Suizid zunehmend eingeschränkt. In der Klausur sind die Freiverantwortlichkeit und
+    neuere Diskussion stellt die Hilfspflicht bei erkennbar freiverantwortlichem
+    Suizid zunehmend in Frage; eine gefestigte Linie der Rechtsprechung besteht
+    insoweit nicht. In der Klausur sind die Freiverantwortlichkeit und
     die erkennbaren Umstände sorgfältig zu subsumieren.
   norms:
   - § 323c Abs. 1 StGB
@@ -380,8 +385,11 @@ faelle:
     erwartung: Ja. Nach dem strafrechtlichen Rechtmäßigkeitsbegriff genügt, dass P
       zuständig war, die Förmlichkeiten wahrte und bei sorgfältiger Prüfung vertretbar
       von einem Anfangsverdacht ausgehen durfte (Hinweis des Passanten, passende Kleidung,
-      zeitliche und räumliche Nähe; Maßnahme nach § 163b StPO). Dass A unschuldig ist,
-      steht der Rechtmäßigkeit nicht entgegen, die Maßnahme war verhältnismäßig.
+      zeitliche und räumliche Nähe; Maßnahme nach § 163b StPO; das Festhalten ist nach § 163b Abs. 1 S. 2 StPO zulässig,
+      weil A keinen Ausweis dabei hatte). Dass A unschuldig ist, steht der
+      Rechtmäßigkeit nicht entgegen, die Maßnahme war verhältnismäßig. Eine Rechtfertigung
+      durch Notwehr (§ 32 StGB) scheidet aus, weil die rechtmäßige Maßnahme kein
+      rechtswidriger Angriff ist.
   - prompt: Wie wirkt sich der Irrtum des A aus?
     erwartung: A hielt die Diensthandlung für nicht rechtmäßig, obwohl sie rechtmäßig war.
       Dies regelt § 113 Abs. 4 StGB. Der Irrtum war vermeidbar, weil sich A leicht
@@ -446,8 +454,9 @@ faelle:
       - § 32 StGB
       keywords:
       - keine Notwehr
+      - Notwehr
+      - Notwehrlage
       - kein gegenwärtiger rechtswidriger Angriff
-      - § 32 StGB
       - Rechtswidrigkeit der Maßnahme
       card_slugs:
       - sr-wh-rechtmaessigkeit-pruefung

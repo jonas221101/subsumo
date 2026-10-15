@@ -96,9 +96,9 @@ cards:
     Die Rspr. und h.M. stellen auf den objektiven Empfängerhorizont ab:
     Erkennbar ist der Wille, wenn ein verständiger Dritter in der Lage des
     Täters ihn aus den Umständen entnehmen kann. Ein innerer, nicht nach außen
-    getretener Vorbehalt genügt nicht, weil sonst die Strafbarkeit von nicht
-    feststellbaren inneren Vorgängen abhinge (Bestimmtheitsgrundsatz, Art. 103
-    Abs. 2 GG). Der Wille kann ausdrücklich (Worte) oder konkludent (Wegdrehen,
+    getretener Vorbehalt genügt nicht, weil der Tatbestand ausdrücklich die
+    Erkennbarkeit verlangt und die Strafbarkeit sonst von nicht feststellbaren
+    inneren Vorgängen abhinge. Der Wille kann ausdrücklich (Worte) oder konkludent (Wegdrehen,
     Abwehren, Weinen, Zittern) erklärt werden. Passivität allein bedeutet nicht
     ohne Weiteres Zustimmung: Erstarrt das Opfer, kommt es auf die
     Gesamtumstände an, etwa darauf, ob es zuvor Ablehnung geäußert hat oder
@@ -109,7 +109,6 @@ cards:
   norms:
   - "§ 177 Abs. 1 StGB"
   - "§ 15 StGB"
-  - "Art. 103 Abs. 2 GG"
   quellen:
   - "Eigenformulierung Redaktion"
   stand: 2026-10
@@ -127,8 +126,8 @@ cards:
     denn, er hat sich der Zustimmung der Person versichert; Nr. 3: Der Täter
     nutzt ein Überraschungsmoment aus; Nr. 4: Der Täter nutzt eine Lage aus, in
     der dem Opfer bei Widerstand ein empfindliches Übel droht; Nr. 5: Der Täter
-    nötigt das Opfer durch Drohung mit einem empfindlichen Übel. Bei Nr. 1, 2
-    und 4 muss der Täter die Umstände nicht nur kennen, sondern ausnutzen.
+    nötigt das Opfer durch Drohung mit einem empfindlichen Übel. Bei Nr. 1 bis
+    4 muss der Täter die Umstände nicht nur kennen, sondern ausnutzen.
     Beruht die Unfähigkeit nach Nr. 1 auf einer Krankheit oder Behinderung des
     Opfers, ist die Mindeststrafe nach Abs. 4 ein Jahr.
   norms:
@@ -198,14 +197,15 @@ cards:
     Vorschriften mit schwererer Strafe bedroht ist. Voraussetzungen: (1)
     körperliche Berührung des Opfers in sexuell bestimmter Weise (das äußere
     Erscheinungsbild muss auf einen sexuellen Bezug hindeuten), (2) Belästigung,
-    d. h. das Opfer fühlt sich dadurch in seinem Empfinden gestört (nach h.M.
-    genügt, dass es sich objektiv belästigt fühlen kann), (3) Vorsatz. Im
+    d. h. das Opfer fühlt sich dadurch in seinem Empfinden gestört (Einzelheiten, etwa ob das
+    subjektive Empfinden oder eine objektive Betrachtung maßgeblich ist, sind
+    umstritten), (3) Vorsatz. Im
     Unterschied zu § 177 StGB muss die Berührung die Erheblichkeitsschwelle des
     § 184h Nr. 1 StGB nicht überschreiten; § 184i StGB erfasst gerade flüchtige,
     nicht erhebliche Berührungen, etwa kurzes Betasten über der Kleidung. Die
     Klausel der Subsidiarität bewirkt, dass § 184i StGB hinter § 177 StGB
-    zurücktritt. Abs. 2 sieht für gemeinschaftliche Begehung einen erhöhten
-    Strafrahmen vor, Abs. 3 verlangt einen Strafantrag, es sei denn, die
+    zurücktritt. Abs. 2 sieht für besonders schwere Fälle (Regelbeispiel:
+    gemeinschaftliche Begehung) einen erhöhten Strafrahmen vor, Abs. 3 verlangt einen Strafantrag, es sei denn, die
     Strafverfolgungsbehörde hält wegen besonderen öffentlichen Interesses ein
     Einschreiten von Amts wegen für geboten. Verwandt ist § 184j StGB
     (Straftaten aus Gruppen).
@@ -318,7 +318,7 @@ faelle:
   - prompt: >-
       Ist die Berührung in der Straßenbahn nach § 177 StGB strafbar?
     erwartung: >-
-      Nein. Die flüchtige Berührung über der Kleidung erreicht nach h.M. nicht
+      Nein. Die kurze, flüchtige Berührung über der Kleidung erreicht nicht
       die Erheblichkeitsschwelle des § 184h Nr. 1 StGB und ist keine sexuelle
       Handlung i.S.d. § 177 StGB, auch wenn A ein Überraschungsmoment ausnutzte
       (Abs. 2 Nr. 3).
@@ -357,7 +357,8 @@ faelle:
       - "entgegenstehender Wille"
       - "§ 177 Abs. 1"
       - "Zungenkuss"
-      - "sexuelle Handlung"
+      - "Sexualbezug"
+      - "gegen den erkennbaren Willen"
       card_slugs:
       - sr-sexual-177-abs1
       - sr-sexual-erkennbarer-wille

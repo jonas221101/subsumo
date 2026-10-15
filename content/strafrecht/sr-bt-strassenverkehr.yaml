@@ -70,9 +70,9 @@ cards:
     bedeutet. Subjektiv ist zumindest bedingter Schädigungsvorsatz erforderlich,
     das Fahrzeug muss also als Werkzeug zur Verletzung oder Sachbeschädigung
     benutzt werden. Typisches Beispiel ist das gezielte Zufahren auf einen Menschen
-    oder ein anderes Fahrzeug. Teile der Literatur halten bereits den zweiten
-    Aspekt für ausreichend oder lehnen den Inneneingriff ganz ab. Fehlt der
-    Schädigungsvorsatz, bleiben nur § 315c StGB und § 240 StGB.
+    oder ein anderes Fahrzeug. Teile der Literatur lehnen den Inneneingriff ganz ab oder
+    verlangen weitergehende Einschränkungen. Fehlt der Schädigungsvorsatz, bleiben
+    § 315c StGB und je nach Fall § 240 StGB.
   norms:
   - § 315b Abs. 1 Nr. 3 StGB
   - § 315c StGB
@@ -161,8 +161,8 @@ cards:
     Bremsen des Gefährdeten. Gefährdetes Objekt muss ein anderer Mensch (also nicht
     Mittäter oder Teilnehmer) oder eine fremde Sache von bedeutendem Wert sein; für
     die Wertgrenze stellt die Rechtsprechung auf den Sachwert und den drohenden
-    Schaden ab (derzeit im Bereich von etwa 750 bis 1.300 Euro, die Grenze wird
-    angehoben). Eigene Sachen des Täters, auch Fahrzeuge, fallen nicht darunter.
+    Schaden ab (uneinheitlich: je nach Gericht etwa 750 bis 1.300 Euro, mit Tendenz zu
+    höheren Werten). Eigene Sachen des Täters, auch Fahrzeuge, fallen nicht darunter.
     Der Gefahrerfolg muss auf der Tathandlung beruhen, im Falle der Nr. 1 also
     gerade auf der Fahrunsicherheit.
   norms:
@@ -208,9 +208,9 @@ cards:
     verlangt die Rechtsprechung, dass sich die Absicht darauf richtet, die unter
     den konkreten situativen Bedingungen und nach den Fähigkeiten des Fahrzeugs
     maximal mögliche Geschwindigkeit zu erreichen; eine bloße Raserei genügt nicht.
-    Eine Aussicht auf einen Wettbewerb ist bei Nr. 3 nicht erforderlich. Abs. 2
-    qualifiziert Nr. 2 und 3 bei konkreter Gefährdung von Leib oder Leben oder
-    fremder Sachen von bedeutendem Wert. Abs. 5 sieht für den Fall der
+    Ein Wettbewerb mit anderen ist bei Nr. 3 nicht erforderlich. Abs. 2
+    sieht eine Qualifikation bei konkreter Gefährdung von Leib oder Leben oder
+    fremder Sachen von bedeutendem Wert vor. Abs. 5 sieht für den Fall der
     Verursachung von Tod oder schwerer Gesundheitsschädigung eine Verbrechensstrafe
     vor. § 315f StGB regelt die Einziehung des Fahrzeugs.
   norms:
@@ -257,12 +257,11 @@ cards:
     nahe gelegene Polizeidienststelle. Berechtigt entfernt sich, wer durch
     Rechtfertigungsgründe gedeckt ist, etwa bei Notwehr, bei rechtfertigendem
     Notstand (Hilfeleistung für Verletzte) oder wenn eine Bedrohung vorliegt.
-    Entschuldigt ist das Entfernen etwa bei einem Schock. Streitig ist, ob die
-    Nachholpflicht auch den trifft, der sich unvorsätzlich entfernt hat, weil er den
-    Unfall nicht bemerkte. Das Bundesverfassungsgericht hat die Ausdehnung auf
-    das unvorsätzliche Entfernen als mit Art. 103 Abs. 2 GG unvereinbar
-    angesehen; die Pflicht gilt daher nur bei vorsätzlichem Entfernen in den Fällen
-    von Abs. 2. Abs. 4 sieht Strafmilderung oder Absehen von Strafe vor bei freiwilliger
+    Entschuldigt ist das Entfernen etwa bei einem Schock. Früher war umstritten, ob die Nachholpflicht auch den trifft, der sich
+    unvorsätzlich entfernt hat, weil er den Unfall nicht bemerkte. Das
+    Bundesverfassungsgericht hat die Ausdehnung auf das unvorsätzliche Entfernen
+    als mit Art. 103 Abs. 2 GG unvereinbar angesehen; die Pflicht gilt daher nur
+    bei vorsätzlichem Entfernen in den Fällen von Abs. 2. Abs. 4 sieht Strafmilderung oder Absehen von Strafe vor bei freiwilliger
     Nachholung binnen 24 Stunden nach einem Unfall außerhalb des fließenden Verkehrs
     mit nicht bedeutendem Sachschaden.
   norms:
@@ -328,10 +327,11 @@ faelle:
     dennoch in sein Auto. Eine später entnommene Blutprobe ergibt für die Tatzeit
     eine Blutalkoholkonzentration von 1,6 Promille. Auf einer Landstraße gerät F
     in einer leichten Kurve auf die Gegenfahrbahn. Dem entgegenkommenden Radfahrer R
-    gelingt es im letzten Moment, in den Grünstreifen auszuweichen; dabei stürzt R
-    und zieht sich Schürfwunden zu. F sieht im Rückspiegel, wie R am Boden liegt,
-    hält kurz an, fährt aber nach etwa 30 Sekunden weiter, weil er die
-    Polizei fürchtet. F vertraute darauf, dass "schon nichts passieren" werde.
+    gelingt es im letzten Moment, in den Grünstreifen auszuweichen; dabei stürzt R,
+    zieht sich Schürfwunden und eine Prellung zu, und sein Fahrrad wird beschädigt
+    (Schaden etwa 300 Euro). F hält kurz an. R richtet sich auf und ruft ihm zu, er
+    solle bleiben und seine Daten angeben; F fährt aber nach etwa 30 Sekunden
+    weiter, weil er die Polizei fürchtet. F vertraute darauf, dass "schon nichts passieren" werde.
   question: Wie hat sich F nach §§ 315c, 316 und 142 StGB strafbar gemacht? Weitere
     Delikte sind nicht zu prüfen.
   steps:
@@ -350,10 +350,12 @@ faelle:
       Ausbleiben von Folgen). Es greift § 315c Abs. 3 Nr. 1 StGB. § 316 StGB
       tritt als subsidiär zurück.
   - prompt: Hat sich F wegen unerlaubten Entfernens vom Unfallort strafbar gemacht?
-    erwartung: Ja, § 142 Abs. 1 Nr. 2 StGB (jedenfalls Nr. 1). Der Sturz des R
-      ist ein Unfall im Straßenverkehr mit nicht unerheblichem Personenschaden, an
-      dem F beteiligt ist. F entfernte sich vorsätzlich nach etwa 30 Sekunden und
-      damit ohne angemessene Wartezeit und ohne Feststellungen zu ermöglichen. Ein
+    erwartung: Ja, § 142 Abs. 1 Nr. 1 StGB. Der Sturz des R ist ein Unfall im
+      Straßenverkehr mit Personen- und nicht unerheblichem Sachschaden, an dem F
+      als Unfallbeteiligter mitgewirkt hat. F entfernte sich vorsätzlich vom
+      Unfallort, bevor er die Feststellungen durch Anwesenheit und Angabe seiner
+      Beteiligung ermöglicht hatte; R war vor Ort und feststellungsbereit, sodass es
+      auf die angemessene Wartezeit nach Nr. 2 nicht ankommt. Kurzes Anhalten genügt nicht. Ein
       Rechtfertigungs- oder Entschuldigungsgrund liegt nicht vor; die Angst vor
       der Polizei genügt nicht (kein Zwang zur Selbstbelastung). Tatmehrheit zu § 315c StGB.
   expectation:
