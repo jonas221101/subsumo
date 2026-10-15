@@ -36,6 +36,8 @@ def test_alle_16_bundeslaender_haben_ein_profil_und_zwei_landesrecht_themen():
     for code in BUNDESLAND_CODES:
         assert f"{code.lower()}-polizei-ordnungsrecht" in landesrecht
         assert f"{code.lower()}-landesrecht-allgemein" in landesrecht
+        assert f"{code.lower()}-kommunalrecht" in landesrecht
+        assert f"{code.lower()}-bauordnungsrecht" in landesrecht
     assert len(bundle.universitaeten) >= 40
     assert len(bundle.kurse) >= 15
     # Jede Universitaet hat einen Kursplan mit Examenskursen.

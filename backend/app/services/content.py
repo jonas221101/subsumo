@@ -53,7 +53,12 @@ BUNDESLAND_CODES = {
 # Landesrecht-Kategorien, ueber die ein Kurs bundeslandspezifische Themen
 # einbindet. Konvention fuer den Topic-Slug: ``<code klein>-<kategorie>``,
 # z. B. ``by-polizei-ordnungsrecht``. Der Loader prueft die Konvention.
-LANDESRECHT_KATEGORIEN = {"polizei-ordnungsrecht", "landesrecht-allgemein"}
+LANDESRECHT_KATEGORIEN = {
+    "polizei-ordnungsrecht",
+    "landesrecht-allgemein",
+    "kommunalrecht",
+    "bauordnungsrecht",
+}
 
 
 @dataclass
