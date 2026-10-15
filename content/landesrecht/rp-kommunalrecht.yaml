@@ -1,7 +1,7 @@
 topic:
   slug: rp-kommunalrecht
   area: oeffentliches-recht
-  title: "Kommunalrecht Rheinland-Pfalz"
+  title: Kommunalrecht Rheinland-Pfalz
   parent: oeffentliches-recht
   bundesland: RP
   relevance: 4
@@ -13,301 +13,254 @@ topic:
 cards:
 - slug: rp-kom-selbstverwaltung
   type: definition
-  front: >-
-      Was gewährleistet die kommunale Selbstverwaltung nach Art. 28 Abs. 2 GG, und welche
-      Aufgabenarten gibt es in Rheinland-Pfalz?
-  back: >-
-      Art. 28 Abs. 2 GG garantiert den Gemeinden das Recht, alle Angelegenheiten der örtlichen
-      Gemeinschaft im Rahmen der Gesetze in eigener Verantwortung zu regeln (Allzuständigkeit). Die
-      Garantie umfasst die Rechtssubjektsgarantie, die objektive Rechtsinstitutionsgarantie und die
-      subjektive Rechtsstellungsgarantie. Sie schützt die Gemeindehoheiten, etwa Gebiets-,
-      Organisations-, Personal-, Finanz-, Planungs- und Satzungshoheit. Eingriffe durch Gesetz sind
-      zulässig, soweit der Kernbereich unangetastet bleibt und Aufgaben mit örtlichem Charakter nur
-      aus Gründen des Gemeinwohls, insbesondere zur Sicherung einer ordnungsgemäßen
-      Aufgabenwahrnehmung, entzogen werden (Rastede-Beschluss). Aufgabenarten nach der GemO RP:
-      freiwillige Selbstverwaltungsaufgaben, pflichtige Selbstverwaltungsaufgaben und
-      Weisungsaufgaben; für Selbstverwaltungsaufgaben besteht nur Rechtsaufsicht, für Weisungsaufgaben
-      Fachaufsicht.
+  front: Was gewährleistet die kommunale Selbstverwaltung nach Art. 28 Abs. 2 GG, und welche Aufgabenarten
+    gibt es in Rheinland-Pfalz?
+  back: 'Art. 28 Abs. 2 GG garantiert den Gemeinden das Recht, alle Angelegenheiten der örtlichen Gemeinschaft
+    im Rahmen der Gesetze in eigener Verantwortung zu regeln (Allzuständigkeit). Die Garantie umfasst
+    die Rechtssubjektsgarantie, die objektive Rechtsinstitutionsgarantie und die subjektive Rechtsstellungsgarantie.
+    Sie schützt die Gemeindehoheiten, etwa Gebiets-, Organisations-, Personal-, Finanz-, Planungs- und
+    Satzungshoheit. Eingriffe durch Gesetz sind zulässig, soweit der Kernbereich unangetastet bleibt und
+    Aufgaben mit örtlichem Charakter nur aus Gründen des Gemeinwohls, insbesondere zur Sicherung einer
+    ordnungsgemäßen Aufgabenwahrnehmung, entzogen werden (Rastede-Beschluss). Aufgabenarten nach der GemO
+    RP: freiwillige und pflichtige Selbstverwaltungsaufgaben sowie Auftragsangelegenheiten (Weisungsaufgaben);
+    für Selbstverwaltungsaufgaben besteht nur Rechtsaufsicht, für Auftragsangelegenheiten auch Fachaufsicht.'
   norms:
-  - "Art. 28 Abs. 2 S. 1 GG"
+  - Art. 28 Abs. 2 S. 1 GG
   quellen:
-  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
-  - "Eigenformulierung Redaktion"
-  - "BVerfGE 79, 127 (Rastede)"
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  - BVerfGE 79, 127 (Rastede)
   stand: 2026-10
 - slug: rp-kom-struktur
   type: definition
-  front: >-
-      Wie sind Ortsgemeinde, Verbandsgemeinde und verbandsfreie Gemeinde in Rheinland-Pfalz zu
-      unterscheiden?
-  back: >-
-      Rheinland-Pfalz kennt eine zweistufige Gemeindestruktur. Ortsgemeinden gehören einer
-      Verbandsgemeinde an, bleiben aber eigenständige Gebietskörperschaften mit Ortsgemeinderat und
-      meist ehrenamtlichem Ortsbürgermeister. Die Verbandsgemeinde ist selbst Gebietskörperschaft mit
-      Verbandsgemeinderat und hauptamtlichem Bürgermeister; sie nimmt Selbstverwaltungsaufgaben wahr,
-      die ihr gesetzlich zugewiesen sind, insbesondere Flächennutzungsplan, Trägerschaft der
-      Grundschulen, Brandschutz sowie Wasserversorgung und Abwasserbeseitigung. Verbandsfreie
-      Gemeinden und kreisfreie Städte nehmen alle Aufgaben selbst wahr. Für die Klausur gilt: Zuerst
-      klären, welche Körperschaft handelt, dann ob sie für die Aufgabe zuständig ist; Satzungen einer
-      unzuständigen Körperschaft sind formell rechtswidrig.
+  front: Wie sind Ortsgemeinde, Verbandsgemeinde und verbandsfreie Gemeinde in Rheinland-Pfalz zu unterscheiden?
+  back: 'Rheinland-Pfalz kennt eine zweistufige Gemeindestruktur. Ortsgemeinden gehören einer Verbandsgemeinde
+    an, bleiben aber eigenständige Gebietskörperschaften mit Ortsgemeinderat und meist ehrenamtlichem
+    Ortsbürgermeister. Die Verbandsgemeinde ist selbst Gebietskörperschaft mit Verbandsgemeinderat und
+    hauptamtlichem Bürgermeister; sie nimmt Selbstverwaltungsaufgaben wahr, die ihr gesetzlich zugewiesen
+    sind, insbesondere Flächennutzungsplan, Trägerschaft der Grundschulen, Brandschutz sowie Wasserversorgung
+    und Abwasserbeseitigung. Verbandsfreie Gemeinden und kreisfreie Städte nehmen alle Aufgaben selbst
+    wahr. Für die Klausur gilt: Zuerst klären, welche Körperschaft handelt, dann ob sie für die Aufgabe
+    zuständig ist; Satzungen einer unzuständigen Körperschaft sind formell rechtswidrig.'
   norms:
-  - >-
-      Vorschriften der GemO RP zu Gemeinderat und Bürgermeister (Paragraphen hier nicht angegeben)
+  - Gemeindeordnung Rheinland-Pfalz (GemO RP)
   quellen:
-  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
-  - "Eigenformulierung Redaktion"
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: rp-kom-organe
   type: definition
-  front: >-
-      Wie sind die Zuständigkeiten von Gemeinderat und Bürgermeister in Rheinland-Pfalz verteilt, und
-      welche Anforderungen gelten für Verpflichtungserklärungen?
-  back: >-
-      Die Gemeinderat ist das Hauptorgan der Gemeinde und entscheidet über die grundlegenden
-      Angelegenheiten, insbesondere Satzungen, den Haushalt, wesentliche Vermögensverfügungen und die
-      Grundsätze der Verwaltung. Der Bürgermeister leitet die Verwaltung, führt die Beschlüsse aus,
-      erledigt die laufenden Angelegenheiten und vertritt die Gemeinde nach außen. Die Abgrenzung der
-      Zuständigkeiten ergibt sich aus der GemO RP und der Hauptsatzung; ein Beschluss des
-      unzuständigen Organs ist formell rechtswidrig. Verpflichtungserklärungen, mit denen die Gemeinde
-      zu Leistungen verpflichtet werden soll, bedürfen nach den Gemeindeordnungen einer besonderen
-      Form (regelmäßig Schriftform und Unterschrift der Vertretungsberechtigten). Diese
-      Formvorschriften sind nach h. M. Vertretungsregelungen; ein Verstoß macht die Erklärung
-      unwirksam, sie bindet die Gemeinde nicht.
+  front: Wie sind die Zuständigkeiten von Gemeinderat und Bürgermeister in Rheinland-Pfalz verteilt, und
+    welche Anforderungen gelten für Verpflichtungserklärungen?
+  back: Der Gemeinderat ist das Hauptorgan der Gemeinde und entscheidet über die grundlegenden Angelegenheiten,
+    insbesondere Satzungen, den Haushalt, wesentliche Vermögensverfügungen und die Grundsätze der Verwaltung.
+    Der Bürgermeister leitet die Verwaltung, führt die Beschlüsse aus, erledigt die laufenden Angelegenheiten
+    und vertritt die Gemeinde nach außen. Die Abgrenzung der Zuständigkeiten ergibt sich aus der GemO
+    RP und der Hauptsatzung; ein Beschluss des unzuständigen Organs ist formell rechtswidrig. Verpflichtungserklärungen,
+    mit denen die Gemeinde zu Leistungen verpflichtet werden soll, bedürfen nach den Gemeindeordnungen
+    einer besonderen Form (regelmäßig Schriftform und Unterschrift der Vertretungsberechtigten). Diese
+    Formvorschriften sind nach h. M. Vertretungsregelungen; ein Verstoß macht die Erklärung unwirksam,
+    sie bindet die Gemeinde nicht.
   norms:
-  - >-
-      Vorschriften der GemO RP zu Gemeinderat und Bürgermeister (Paragraphen hier nicht angegeben)
+  - Gemeindeordnung Rheinland-Pfalz (GemO RP)
   quellen:
-  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
-  - "Eigenformulierung Redaktion"
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: rp-kom-satzung
   type: norm
-  front: >-
-      Welche Anforderungen stellt das Recht in Rheinland-Pfalz an eine gemeindliche Satzung?
-  back: >-
-      Die Gemeinden können ihre Angelegenheiten durch Satzung regeln (Satzungshoheit). Eine allgemeine
-      Satzungsermächtigung in der GemO RP genügt für Eingriffe in Grundrechte allerdings nicht; nach
-      der Wesentlichkeitstheorie braucht es eine spezielle gesetzliche Ermächtigung (z. B. für
-      Anschluss- und Benutzungszwang oder Abgaben). Prüfungsaufbau: I. Ermächtigungsgrundlage. II.
-      Formelle Rechtmäßigkeit: Zuständigkeit des Gemeindeorgans (Gemeinderat), Verfahren
-      (Beschlussfassung, Mitwirkungsverbote), Ausfertigung und ordnungsgemäße öffentliche
-      Bekanntmachung. III. Materielle Rechtmäßigkeit: Vereinbarkeit mit höherrangigem Recht,
-      Bestimmtheit, Verhältnismäßigkeit, Gleichheitssatz. Rechtsfolge eines Fehlers ist grundsätzlich
-      Nichtigkeit; die Gemeindeordnungen enthalten jedoch Unbeachtlichkeits- und Heilungsvorschriften
-      für bestimmte Verfahrens- und Formfehler, die in der Klausur gesondert zu prüfen sind.
-      Rechtsschutz: Normenkontrolle nach § 47 Abs. 1 Nr. 2 VwGO, soweit das Landesrecht sie eröffnet,
-      sonst Inzidentkontrolle.
+  front: Welche Anforderungen stellt das Recht in Rheinland-Pfalz an eine gemeindliche Satzung?
+  back: 'Die Gemeinden können ihre Angelegenheiten durch Satzung regeln (Satzungshoheit). Eine allgemeine
+    Satzungsermächtigung in der GemO RP genügt für Eingriffe in Grundrechte allerdings nicht; nach der
+    Wesentlichkeitstheorie braucht es eine spezielle gesetzliche Ermächtigung (z. B. für Anschluss- und
+    Benutzungszwang oder Abgaben). Prüfungsaufbau: I. Ermächtigungsgrundlage. II. Formelle Rechtmäßigkeit:
+    Zuständigkeit des Gemeindeorgans (Gemeinderat), Verfahren (Beschlussfassung, Mitwirkungsverbote),
+    Ausfertigung und ordnungsgemäße öffentliche Bekanntmachung. III. Materielle Rechtmäßigkeit: Vereinbarkeit
+    mit höherrangigem Recht, Bestimmtheit, Verhältnismäßigkeit, Gleichheitssatz. Rechtsfolge eines Fehlers
+    ist grundsätzlich Nichtigkeit; die Gemeindeordnungen enthalten jedoch Unbeachtlichkeits- und Heilungsvorschriften
+    für bestimmte Verfahrens- und Formfehler, die in der Klausur gesondert zu prüfen sind. Rechtsschutz:
+    Normenkontrolle nach § 47 Abs. 1 Nr. 2 VwGO, soweit das Landesrecht sie eröffnet, sonst Inzidentkontrolle.'
   norms:
-  - "§ 24 GemO RP"
-  - "§ 47 VwGO"
+  - § 24 GemO RP
+  - § 47 VwGO
   quellen:
-  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
-  - "Eigenformulierung Redaktion"
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: rp-kom-anschlusszwang
   type: norm
-  front: >-
-      Unter welchen Voraussetzungen darf die Gemeinde einen Anschluss- und Benutzungszwang anordnen?
-  back: >-
-      Der Anschluss- und Benutzungszwang verpflichtet Grundstückseigentümer und Nutzer, ein Grundstück
-      an eine gemeindliche Einrichtung anzuschließen und die Einrichtung zu benutzen (etwa
-      Wasserversorgung, Abwasser- und Abfallbeseitigung, Straßenreinigung, teils Fernwärme). Er ist
-      ein Eingriff in Art. 2 Abs. 1, Art. 12 und Art. 14 GG und bedarf einer gesetzlichen Ermächtigung
-      in der Gemeindeordnung, die die Gemeinde durch Satzung ausfüllt. Tatbestand: öffentliches
-      Bedürfnis, also Gründe des Gemeinwohls wie Volksgesundheit oder Umweltschutz; Bestehen oder
-      Schaffung einer öffentlichen Einrichtung; Verhältnismäßigkeit. Die Satzung muss Befreiungs- bzw.
-      Ausnahmemöglichkeiten für Härtefälle vorsehen. Welche Einrichtungen erfasst sind und ob weitere
-      Gemeinwohlgründe (etwa Klimaschutz) ausdrücklich genannt sind, ergibt sich aus der jeweiligen
-      Gemeindeordnung.
+  front: Unter welchen Voraussetzungen darf die Gemeinde einen Anschluss- und Benutzungszwang anordnen?
+  back: 'Der Anschluss- und Benutzungszwang verpflichtet Grundstückseigentümer und Nutzer, ein Grundstück
+    an eine gemeindliche Einrichtung anzuschließen und die Einrichtung zu benutzen (etwa Wasserversorgung,
+    Abwasser- und Abfallbeseitigung, Straßenreinigung, teils Fernwärme). Er ist ein Eingriff in Art. 2
+    Abs. 1, Art. 12 und Art. 14 GG und bedarf einer gesetzlichen Ermächtigung in der Gemeindeordnung,
+    die die Gemeinde durch Satzung ausfüllt. Tatbestand: öffentliches Bedürfnis, also Gründe des Gemeinwohls
+    wie Volksgesundheit oder Umweltschutz; Bestehen oder Schaffung einer öffentlichen Einrichtung; Verhältnismäßigkeit.
+    Die Satzung muss Befreiungs- bzw. Ausnahmemöglichkeiten für Härtefälle vorsehen. Welche Einrichtungen
+    erfasst sind und ob weitere Gemeinwohlgründe (etwa Klimaschutz) ausdrücklich genannt sind, ergibt
+    sich aus der jeweiligen Gemeindeordnung.'
   norms:
-  - "§ 26 GemO RP"
-  - "Art. 2 Abs. 1 GG"
-  - "Art. 12 Abs. 1 GG"
-  - "Art. 14 Abs. 1 GG"
+  - § 26 GemO RP
+  - Art. 2 Abs. 1 GG
+  - Art. 12 Abs. 1 GG
+  - Art. 14 Abs. 1 GG
   quellen:
-  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
-  - "Eigenformulierung Redaktion"
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: rp-kom-aufsicht
   type: streitstand
-  front: >-
-      Welche Arten der Kommunalaufsicht gibt es, und welchen Rechtsschutz hat die Gemeinde?
-  back: >-
-      Bei Selbstverwaltungsaufgaben besteht nur Rechtsaufsicht: Die Aufsichtsbehörde prüft die
-      Rechtmäßigkeit, nicht die Zweckmäßigkeit. Bei Weisungsaufgaben (Auftragsangelegenheiten) besteht
-      Fachaufsicht mit Weisungsrecht auch hinsichtlich der Zweckmäßigkeit. Die Aufsichtsmittel sind
-      abgestuft: Information, Beanstandung rechtswidriger Beschlüsse, Anordnung, Ersatzvornahme,
-      Bestellung eines Beauftragten; die Behörde entscheidet nach pflichtgemäßem Ermessen
-      (Opportunitätsprinzip). Rechtsschutz der Gemeinde: Nach h. M. sind Aufsichtsmaßnahmen gegenüber
-      der Gemeinde Verwaltungsakte, weil sie in die Selbstverwaltungsgarantie (Art. 28 Abs. 2 GG)
-      eingreifen; statthaft ist die Anfechtungsklage. Die früher vertretene Gegenansicht sah in der
-      Aufsicht eine Maßnahme im staatlichen Innenbereich ohne Außenwirkung; sie wird wegen der eigenen
-      Rechtsstellung der Gemeinde überwiegend abgelehnt.
+  front: Welche Arten der Kommunalaufsicht gibt es, und welchen Rechtsschutz hat die Gemeinde?
+  back: 'Bei Selbstverwaltungsaufgaben besteht nur Rechtsaufsicht: Die Aufsichtsbehörde prüft die Rechtmäßigkeit,
+    nicht die Zweckmäßigkeit. Bei Auftragsangelegenheiten (Weisungsaufgaben) besteht Fachaufsicht mit
+    Weisungsrecht auch hinsichtlich der Zweckmäßigkeit. Die Aufsichtsmittel sind abgestuft: Information,
+    Beanstandung rechtswidriger Beschlüsse, Anordnung, Ersatzvornahme, Bestellung eines Beauftragten;
+    die Behörde entscheidet nach pflichtgemäßem Ermessen (Opportunitätsprinzip). Rechtsschutz der Gemeinde:
+    Nach h. M. sind Aufsichtsmaßnahmen gegenüber der Gemeinde Verwaltungsakte, weil sie in die Selbstverwaltungsgarantie
+    (Art. 28 Abs. 2 GG) eingreifen; statthaft ist die Anfechtungsklage. Die früher vertretene Gegenansicht
+    sah in der Aufsicht eine Maßnahme im staatlichen Innenbereich ohne Außenwirkung; sie wird wegen der
+    eigenen Rechtsstellung der Gemeinde überwiegend abgelehnt.'
   norms:
-  - "Kommunalaufsicht nach der GemO RP (Paragraphen hier nicht angegeben)"
-  - "Art. 28 Abs. 2 S. 1 GG"
+  - Gemeindeordnung Rheinland-Pfalz (GemO RP), Abschnitt Aufsicht
+  - Art. 28 Abs. 2 S. 1 GG
   quellen:
-  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
-  - "Eigenformulierung Redaktion"
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: rp-kom-buergerbegehren
   type: definition
-  front: >-
-      Wie funktionieren Bürgerbegehren und Bürgerentscheid, und welche Zulässigkeitsprobleme sind
-      typisch?
-  back: >-
-      Mit dem Bürgerbegehren verlangen die Bürger, dass über eine Gemeindeangelegenheit ein
-      Bürgerentscheid stattfindet; dieser ersetzt den Beschluss des Gemeindeorgans. Typische
-      Zulässigkeitsvoraussetzungen nach den Gemeindeordnungen: eine mit Ja oder Nein zu beantwortende
-      Fragestellung mit Begründung, die Angabe der Vertretungsberechtigten, ein Unterschriftenquorum,
-      in den meisten Ländern ein Vorschlag zur Deckung der Kosten, die Einhaltung einer Frist gegen
-      bereits gefasste Beschlüsse sowie eine Angelegenheit der Gemeinde, die nicht in den
-      Ausschlusskatalog fällt. Ausgeschlossen sind regelmäßig Haushaltssatzung, Abgaben und Entgelte,
-      Personalangelegenheiten und weisungsgebundene Aufgaben. Die Entscheidung über die Zulässigkeit
-      trifft das zuständige Gemeindeorgan; die Initiatoren können sie vor dem Verwaltungsgericht
-      angreifen. Die Einzelheiten des Landesrechts (Quoren, Fristen, Katalog) sind in der Klausur der
-      Gemeindeordnung zu entnehmen.
+  front: Wie funktionieren Bürgerbegehren und Bürgerentscheid, und welche Zulässigkeitsprobleme sind typisch?
+  back: 'Mit dem Bürgerbegehren verlangen die Bürger, dass über eine Gemeindeangelegenheit ein Bürgerentscheid
+    stattfindet; dieser ersetzt den Beschluss des Gemeindeorgans. Typische Zulässigkeitsvoraussetzungen
+    nach den Gemeindeordnungen: eine mit Ja oder Nein zu beantwortende Fragestellung mit Begründung, die
+    Angabe der Vertretungsberechtigten, ein Unterschriftenquorum, in den meisten Ländern ein Vorschlag
+    zur Deckung der Kosten, die Einhaltung einer Frist gegen bereits gefasste Beschlüsse sowie eine Angelegenheit
+    der Gemeinde, die nicht in den Ausschlusskatalog fällt. Ausgeschlossen sind regelmäßig Haushaltssatzung,
+    Abgaben und Entgelte, Personalangelegenheiten und weisungsgebundene Aufgaben. Die Entscheidung über
+    die Zulässigkeit trifft das zuständige Gemeindeorgan; die Initiatoren können sie vor dem Verwaltungsgericht
+    angreifen. Die Einzelheiten des Landesrechts (Quoren, Fristen, Katalog) sind in der Klausur der Gemeindeordnung
+    zu entnehmen.'
   norms:
-  - "§ 17a GemO RP"
+  - § 17a GemO RP
   quellen:
-  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
-  - "Eigenformulierung Redaktion"
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: rp-kom-mitwirkung
   type: definition
-  front: >-
-      Wann gilt ein Mitwirkungsverbot für Mitglieder des Gemeindeorgans, und was folgt aus einem
-      Verstoß?
-  back: >-
-      Ein Mitglied darf an Beratung und Abstimmung nicht teilnehmen, wenn die Entscheidung ihm selbst,
-      Angehörigen oder einer von ihm vertretenen Person oder Gesellschaft einen unmittelbaren Vorteil
-      oder Nachteil bringen kann. Unmittelbarkeit bedeutet: Die Entscheidung berührt das
-      Sonderinteresse des Betroffenen ohne weiteren Vollzugsakt; ein Vorteil, den er mit einer
-      Vielzahl von Personen teilt (Gruppeninteresse), genügt regelmäßig nicht. Beispiel: Eigentümer
-      eines Grundstücks im Plangebiet bei der Beschlussfassung über den Bebauungsplan. Das betroffene
-      Mitglied hat den Verhandlungsraum zu verlassen. Ein Verstoß ist ein Verfahrensfehler; der
-      Beschluss ist rechtswidrig, wenn die Mitwirkung für das Abstimmungsergebnis ausschlaggebend sein
-      konnte. Die Gemeindeordnungen enthalten Unbeachtlichkeits- und Heilungsvorschriften, die
-      gesondert zu prüfen sind. Bei Satzungen können die Fehler nach Fristablauf unbeachtlich werden.
+  front: Wann gilt ein Mitwirkungsverbot für Mitglieder des Gemeindeorgans, und was folgt aus einem Verstoß?
+  back: 'Ein Mitglied darf an Beratung und Abstimmung nicht teilnehmen, wenn die Entscheidung ihm selbst,
+    Angehörigen oder einer von ihm vertretenen Person oder Gesellschaft einen unmittelbaren Vorteil oder
+    Nachteil bringen kann. Unmittelbarkeit bedeutet: Die Entscheidung berührt das Sonderinteresse des
+    Betroffenen ohne weiteren Vollzugsakt; ein Vorteil, den er mit einer Vielzahl von Personen teilt (Gruppeninteresse),
+    genügt regelmäßig nicht. Beispiel: Eigentümer eines Grundstücks im Plangebiet bei der Beschlussfassung
+    über den Bebauungsplan. Das betroffene Mitglied hat den Verhandlungsraum zu verlassen. Ein Verstoß
+    ist ein Verfahrensfehler; der Beschluss ist rechtswidrig, wenn die Mitwirkung für das Abstimmungsergebnis
+    ausschlaggebend sein konnte. Die Gemeindeordnungen enthalten Unbeachtlichkeits- und Heilungsvorschriften,
+    die gesondert zu prüfen sind. Bei Satzungen können die Fehler nach Fristablauf unbeachtlich werden.'
   norms:
-  - "§ 22 GemO RP"
+  - § 22 GemO RP
   quellen:
-  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
-  - "Eigenformulierung Redaktion"
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   stand: 2026-10
 schemata:
 - slug: rp-schema-kom-satzung-verbandsgemeinde
-  title: >-
-      Satzung in der Verbandsgemeinde-Struktur: Zuständigkeitsprüfung (GemO RP)
+  title: 'Satzung in der Verbandsgemeinde-Struktur: Zuständigkeitsprüfung (GemO RP)'
   norms:
-  - "§ 24 GemO RP"
-  - "§ 26 GemO RP"
+  - § 24 GemO RP
+  - § 26 GemO RP
   quellen:
-  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
-  - "Eigenformulierung Redaktion"
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
   steps:
-  - label: "I. Ermächtigungsgrundlage"
-    hinweis: >-
-        Satzungsermächtigung und ggf. Spezialermächtigung (Anschluss- und Benutzungszwang).
-  - label: "II. Formelle Rechtmäßigkeit"
+  - label: I. Ermächtigungsgrundlage
+    hinweis: Satzungsermächtigung und ggf. Spezialermächtigung (Anschluss- und Benutzungszwang).
+  - label: II. Formelle Rechtmäßigkeit
     children:
-    - label: >-
-        1. Zuständige Körperschaft: Ortsgemeinde oder Verbandsgemeinde?
-      hinweis: >-
-          Aufgabenverteilung zwischen Ortsgemeinde und Verbandsgemeinde zuerst klären.
-    - label: "2. Zuständiges Organ (Ortsgemeinderat bzw. Verbandsgemeinderat)"
-    - label: "3. Verfahren, Ausfertigung, Bekanntmachung"
-  - label: "III. Materielle Rechtmäßigkeit"
+    - label: '1. Zuständige Körperschaft: Ortsgemeinde oder Verbandsgemeinde?'
+      hinweis: Aufgabenverteilung zwischen Ortsgemeinde und Verbandsgemeinde zuerst klären.
+    - label: 2. Zuständiges Organ (Ortsgemeinderat bzw. Verbandsgemeinderat)
+    - label: 3. Verfahren, Ausfertigung, Bekanntmachung
+  - label: III. Materielle Rechtmäßigkeit
     children:
-    - label: "1. Öffentliches Bedürfnis"
-    - label: "2. Verhältnismäßigkeit, Ausnahmen"
-  - label: >-
-      IV. Rechtsfolge bei Unzuständigkeit: formelle Rechtswidrigkeit, Nichtigkeit
+    - label: 1. Öffentliches Bedürfnis
+    - label: 2. Verhältnismäßigkeit, Ausnahmen
+  - label: 'IV. Rechtsfolge bei Unzuständigkeit: formelle Rechtswidrigkeit, Nichtigkeit'
 faelle:
 - slug: rp-fall-kom-ortsgemeinde-abwasser
-  title: "Die Satzung der Ortsgemeinde"
+  title: Die Satzung der Ortsgemeinde
   difficulty: 3
   minutes: 45
   quellen:
-  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
-  - "Eigenformulierung Redaktion"
-  facts: >-
-      Die Ortsgemeinde O gehört in Rheinland-Pfalz einer Verbandsgemeinde V an. Der Ortsgemeinderat
-      beschließt eine Satzung, die für alle Grundstücke in O den Anschluss an die öffentliche
-      Abwasserbeseitigung und deren Benutzung vorschreibt. Die Satzung wird ordnungsgemäß ausgefertigt
-      und bekannt gemacht. Abwasserbeseitigung ist nach dem Landesrecht Aufgabe der Verbandsgemeinde;
-      die Verbandsgemeinde V betreibt die Kläranlage und die Kanalisation in O. Grundstückseigentümer
-      E, der einen Anschlussbescheid der O auf Grundlage der Satzung erhält, hält die Satzung für
-      rechtswidrig.
-  question: >-
-      Ist die Satzung der O rechtmäßig? Auf Befreiungsfragen ist nicht einzugehen.
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  facts: Die Ortsgemeinde O gehört in Rheinland-Pfalz einer Verbandsgemeinde V an. Der Ortsgemeinderat
+    beschließt eine Satzung, die für alle Grundstücke in O den Anschluss an die öffentliche Abwasserbeseitigung
+    und deren Benutzung vorschreibt. Die Satzung wird ordnungsgemäß ausgefertigt und bekannt gemacht.
+    Abwasserbeseitigung ist nach dem Landesrecht Aufgabe der Verbandsgemeinde; die Verbandsgemeinde V
+    betreibt die Kläranlage und die Kanalisation in O. Grundstückseigentümer E, der einen Anschlussbescheid
+    der O auf Grundlage der Satzung erhält, hält die Satzung für rechtswidrig.
+  question: Ist die Satzung der O rechtmäßig? Auf Befreiungsfragen ist nicht einzugehen.
   steps:
-  - prompt: >-
-        Welche Körperschaft ist für die Abwasserbeseitigung und die dazugehörige Satzung zuständig?
-    erwartung: >-
-        Die Abwasserbeseitigung gehört zu den Aufgaben der Verbandsgemeinde. Folglich ist die
-        Verbandsgemeinde, nicht die Ortsgemeinde, zum Erlass der Satzung über den Anschluss- und
-        Benutzungszwang berechtigt.
-  - prompt: "Was folgt daraus für die Satzung der O?"
-    erwartung: >-
-        O fehlt die Kompetenz zum Erlass der Satzung. Die Satzung ist formell rechtswidrig, weil sie von
-        einer unzuständigen Körperschaft erlassen wurde. Die ordnungsgemäße Bekanntmachung heilt diesen
-        Mangel nicht.
-  - prompt: >-
-        Besteht ein öffentliches Bedürfnis für den Anschluss- und Benutzungszwang an sich?
-    erwartung: >-
-        Ja, die geordnete Abwasserbeseitigung dient der Volksgesundheit und dem Umweltschutz; die
-        Verbandsgemeinde hätte eine solche Satzung rechtmäßig erlassen können. Darauf kommt es für die
-        Satzung der O nicht an.
-  - prompt: "Ergebnis und Folge für E?"
-    erwartung: >-
-        Die Satzung der O ist rechtswidrig und nichtig. Der darauf gestützte Anschlussbescheid ist
-        mangels Ermächtigungsgrundlage rechtswidrig.
+  - prompt: Welche Körperschaft ist für die Abwasserbeseitigung und die dazugehörige Satzung zuständig?
+    erwartung: Die Abwasserbeseitigung gehört zu den Aufgaben der Verbandsgemeinde. Folglich ist die Verbandsgemeinde,
+      nicht die Ortsgemeinde, zum Erlass der Satzung über den Anschluss- und Benutzungszwang berechtigt.
+  - prompt: Was folgt daraus für die Satzung der O?
+    erwartung: O fehlt die Kompetenz zum Erlass der Satzung. Die Satzung ist formell rechtswidrig, weil
+      sie von einer unzuständigen Körperschaft erlassen wurde. Die ordnungsgemäße Bekanntmachung heilt
+      diesen Mangel nicht.
+  - prompt: Besteht ein öffentliches Bedürfnis für den Anschluss- und Benutzungszwang an sich?
+    erwartung: Ja, die geordnete Abwasserbeseitigung dient der Volksgesundheit und dem Umweltschutz; die
+      Verbandsgemeinde hätte eine solche Satzung rechtmäßig erlassen können. Darauf kommt es für die Satzung
+      der O nicht an.
+  - prompt: Ergebnis und Folge für E?
+    erwartung: Die Satzung der O ist rechtswidrig und nichtig. Der darauf gestützte Anschlussbescheid
+      ist mangels Ermächtigungsgrundlage rechtswidrig.
   expectation:
     pruefpunkte:
     - id: p1
-      label: "Zuständigkeit der Verbandsgemeinde für die Abwasserbeseitigung erkannt"
+      label: Zuständigkeit der Verbandsgemeinde für die Abwasserbeseitigung erkannt
       weight: 3.0
       required: true
       keywords:
-      - "Verbandsgemeinde"
-      - "Zuständigkeit der Verbandsgemeinde"
-      - "Aufgabe der Verbandsgemeinde"
+      - Verbandsgemeinde
+      - Zuständigkeit der Verbandsgemeinde
+      - Aufgabe der Verbandsgemeinde
       card_slugs:
-      - "rp-kom-struktur"
+      - rp-kom-struktur
     - id: p2
-      label: "Fehlende Kompetenz der Ortsgemeinde als formeller Mangel der Satzung"
+      label: Fehlende Kompetenz der Ortsgemeinde als formeller Mangel der Satzung
       weight: 2.5
       required: true
       keywords:
-      - "formell rechtswidrig"
-      - "Unzuständigkeit"
-      - "fehlende Kompetenz"
-      - "unzuständige Körperschaft"
-      - "Verbandskompetenz"
+      - formell rechtswidrig
+      - Unzuständigkeit
+      - fehlende Kompetenz
+      - unzuständige Körperschaft
+      - Verbandskompetenz
       card_slugs:
-      - "rp-kom-satzung"
-      - "rp-kom-struktur"
+      - rp-kom-satzung
+      - rp-kom-struktur
     - id: p3
-      label: "Bekanntmachung heilt die Unzuständigkeit nicht; Satzung nichtig"
+      label: Bekanntmachung heilt die Unzuständigkeit nicht; Satzung nichtig
       weight: 1.5
       required: false
       keywords:
-      - "Nichtigkeit"
-      - "nichtig"
-      - "Bekanntmachung heilt nicht"
-      - "keine Ermächtigungsgrundlage"
+      - Nichtigkeit
+      - nichtig
+      - Bekanntmachung heilt nicht
+      - keine Ermächtigungsgrundlage
       card_slugs:
-      - "rp-kom-satzung"
+      - rp-kom-satzung
     - id: p4
-      label: >-
-          Öffentliches Bedürfnis grundsätzlich bejaht, aber irrelevant für das Ergebnis
+      label: Öffentliches Bedürfnis grundsätzlich bejaht, aber irrelevant für das Ergebnis
       weight: 1.0
       required: false
       keywords:
-      - "öffentliches Bedürfnis"
-      - "Volksgesundheit"
-      - "Umweltschutz"
+      - öffentliches Bedürfnis
+      - Volksgesundheit
+      - Umweltschutz
       card_slugs:
-      - "rp-kom-anschlusszwang"
+      - rp-kom-anschlusszwang
     normzitate_geprueft: false

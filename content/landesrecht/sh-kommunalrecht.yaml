@@ -13,10 +13,8 @@ topic:
 cards:
 - slug: sh-kr-selbstverwaltung
   type: norm
-  front: >-
-    Was gewährleistet die kommunale Selbstverwaltung in Schleswig-Holstein und woraus folgt sie?
-  back: >-
-    Die Gemeinden haben das Recht, alle Angelegenheiten der örtlichen Gemeinschaft im Rahmen der Gesetze
+  front: Was gewährleistet die kommunale Selbstverwaltung in Schleswig-Holstein und woraus folgt sie?
+  back: Die Gemeinden haben das Recht, alle Angelegenheiten der örtlichen Gemeinschaft im Rahmen der Gesetze
     in eigener Verantwortung zu regeln (Art. 28 Abs. 2 S. 1 GG; Art. 54 LV SH). Man unterscheidet die
     Rechtssubjektsgarantie, die Rechtsinstitutionsgarantie und die subjektive Rechtsstellungsgarantie.
     Inhaltlich umfasst die Garantie die Gemeindehoheiten (Gebiets-, Organisations-, Personal-, Planungs-,
@@ -33,36 +31,31 @@ cards:
   stand: 2026-10
 - slug: sh-kr-rastede
   type: rechtsprechung
-  front: >-
-    Welchen Grundsatz hat das BVerfG in der Rastede-Entscheidung zur Aufgabenverteilung zwischen Gemeinden
-    und höheren Ebenen aufgestellt?
-  back: >-
-    Nach BVerfGE 79, 127 (Rastede) umfasst Art. 28 Abs. 2 S. 1 GG eine Zuständigkeitsvermutung zugunsten
+  front: Welchen Grundsatz hat das BVerfG in der Rastede-Entscheidung zur Aufgabenverteilung zwischen
+    Gemeinden und höheren Ebenen aufgestellt?
+  back: 'Nach BVerfGE 79, 127 (Rastede) umfasst Art. 28 Abs. 2 S. 1 GG eine Zuständigkeitsvermutung zugunsten
     der Gemeinden: Sie sind grundsätzlich für alle Angelegenheiten der örtlichen Gemeinschaft zuständig
     (Universalität des Aufgabenbereichs). Der Entzug örtlicher Aufgaben und ihre Verlagerung auf eine
     höhere Ebene ist nur aus Gründen des Gemeinwohls zulässig, insbesondere wenn eine ordnungsgemäße Aufgabenwahrnehmung
     auf Gemeindeebene sonst nicht sichergestellt wäre; bloße Verwaltungsvereinfachung oder Zuständigkeitskonzentration
     genügt nicht. Für den Kernbereich gilt eine absolute Schranke, für den Randbereich das Verhältnismäßigkeitsprinzip.
     Für die Klausur: erst Betroffenheit des Schutzbereichs (örtliche Angelegenheit), dann Rechtfertigung
-    des Eingriffs prüfen.
+    des Eingriffs prüfen.'
   norms:
   - Art. 28 Abs. 2 S. 1 GG
   quellen:
-  - >-
-    Rechtsprechung: BVerfGE 79, 127 (Rastede)
+  - 'Rechtsprechung: BVerfGE 79, 127 (Rastede)'
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: sh-kr-organe
   type: norm
-  front: >-
-    Welche Organe hat die Gemeinde nach der Gemeindeordnung Schleswig-Holstein und welche Rolle spielen
+  front: Welche Organe hat die Gemeinde nach der Gemeindeordnung Schleswig-Holstein und welche Rolle spielen
     die Ämter?
-  back: >-
-    Hauptorgane sind die Gemeindevertretung (in Städten Stadtvertretung) und der Bürgermeister. Die Vertretung
-    ist das oberste Willensbildungsorgan; der Bürgermeister leitet die Verwaltung, soweit die Gemeindeordnung
-    nichts anderes bestimmt, und vertritt die Gemeinde nach außen. Kleine Gemeinden haben vielfach einen
-    ehrenamtlichen Bürgermeister. Viele Gemeinden gehören einem Amt an, das die Verwaltungsgeschäfte der
-    amtsangehörigen Gemeinden führt (Amtsordnung); die Gemeinden bleiben Träger der Selbstverwaltung,
+  back: Hauptorgane sind die Gemeindevertretung (in Städten Stadtvertretung) und der Bürgermeister. Die
+    Vertretung ist das oberste Willensbildungsorgan; der Bürgermeister leitet die Verwaltung, soweit die
+    Gemeindeordnung nichts anderes bestimmt, und vertritt die Gemeinde nach außen. Kleine Gemeinden haben
+    vielfach einen ehrenamtlichen Bürgermeister. Viele Gemeinden gehören einem Amt an, das die Verwaltungsgeschäfte
+    der amtsangehörigen Gemeinden führt (Amtsordnung); die Gemeinden bleiben Träger der Selbstverwaltung,
     treffen ihre Entscheidungen aber durch ihre eigenen Organe. Kreisfreie Städte und Kreise sind weitere
     Verwaltungsebenen mit eigenen Ordnungen (Kreisordnung).
   norms:
@@ -74,10 +67,9 @@ cards:
   stand: 2026-10
 - slug: sh-kr-zustaendigkeit
   type: definition
-  front: >-
-    Wie werden in Schleswig-Holstein die Zuständigkeiten zwischen Vertretung und Verwaltungsspitze abgegrenzt?
-  back: >-
-    Die Gemeindevertretung entscheidet über die wichtigen Selbstverwaltungsangelegenheiten, insbesondere
+  front: Wie werden in Schleswig-Holstein die Zuständigkeiten zwischen Vertretung und Verwaltungsspitze
+    abgegrenzt?
+  back: Die Gemeindevertretung entscheidet über die wichtigen Selbstverwaltungsangelegenheiten, insbesondere
     über Satzungen, den Haushalt, wesentliche Vermögensgeschäfte und die Grundsätze der Gemeindepolitik;
     sie kann bestimmte Entscheidungen auf Ausschüsse oder den Bürgermeister übertragen. Der Bürgermeister
     führt die Geschäfte der laufenden Verwaltung und vollzieht die Beschlüsse der Vertretung; die Abgrenzung
@@ -93,31 +85,26 @@ cards:
   stand: 2026-10
 - slug: sh-kr-satzung
   type: definition
-  front: >-
-    Unter welchen Voraussetzungen ist eine gemeindliche Satzung in Schleswig-Holstein rechtmäßig?
-  back: >-
-    Eine Satzung ist eine von der Gemeinde im Rahmen ihrer Selbstverwaltung erlassene Rechtsnorm (Art.
-    28 Abs. 2 GG). Prüfung: (1) Ermächtigungsgrundlage: Die allgemeine Satzungsbefugnis der Gemeindeordnung
+  front: Unter welchen Voraussetzungen ist eine gemeindliche Satzung in Schleswig-Holstein rechtmäßig?
+  back: 'Eine Satzung ist eine von der Gemeinde im Rahmen ihrer Selbstverwaltung erlassene Rechtsnorm
+    (Art. 28 Abs. 2 GG). Prüfung: (1) Ermächtigungsgrundlage: Die allgemeine Satzungsbefugnis der Gemeindeordnung
     genügt für Regelungen ohne Grundrechtseingriff gegenüber Außenstehenden; Eingriffe in Grundrechte
     und Abgabenpflichten erfordern wegen des Vorbehalts des Gesetzes eine besondere gesetzliche Ermächtigung
     (Wesentlichkeitslehre). (2) Formelle Rechtmäßigkeit: Zuständigkeit der Vertretung, ordnungsgemäßer
     Beschluss, Ausfertigung und Bekanntmachung. (3) Materielle Rechtmäßigkeit: Vereinbarkeit mit höherrangigem
     Recht, Bestimmtheit, Verhältnismäßigkeit und Gleichheitssatz. Rechtsschutz: Inzidentkontrolle oder
-    Normenkontrolle nach § 47 VwGO, soweit das Landesrecht sie vorsieht.
+    Normenkontrolle nach § 47 VwGO, soweit das Landesrecht sie vorsieht.'
   norms:
   - Art. 28 Abs. 2 GG
-  - >-
-    § 47 VwGO
+  - § 47 VwGO
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: sh-kr-mitwirkungsverbot
   type: norm
-  front: >-
-    Wann gilt in Schleswig-Holstein ein Mitwirkungsverbot für Gemeindevertreter?
-  back: >-
-    Nach § 22 GO SH darf ein Mitglied der Gemeindevertretung nicht beratend oder entscheidend mitwirken,
+  front: Wann gilt in Schleswig-Holstein ein Mitwirkungsverbot für Gemeindevertreter?
+  back: Nach § 22 GO SH darf ein Mitglied der Gemeindevertretung nicht beratend oder entscheidend mitwirken,
     wenn die Entscheidung ihm selbst, einem Angehörigen oder einer von ihm vertretenen natürlichen oder
     juristischen Person einen unmittelbaren Vorteil oder Nachteil bringen kann. Maßgeblich ist die konkrete
     Möglichkeit eines Sonderinteresses; auf tatsächliche Befangenheit kommt es nicht an. Das Verbot soll
@@ -126,26 +113,24 @@ cards:
     Verstoß macht den Beschluss fehlerhaft, wenn die Mitwirkung für das Ergebnis ursächlich sein konnte;
     Heilungs- und Unbeachtlichkeitsregeln sind zu beachten.
   norms:
-  - >-
-    § 22 GO SH
+  - § 22 GO SH
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: sh-kr-oeffentliche-einrichtung
   type: definition
-  front: >-
-    Unter welchen Voraussetzungen haben Einwohner in Schleswig-Holstein einen Anspruch auf Zulassung zu
-    einer öffentlichen Einrichtung der Gemeinde?
-  back: >-
-    Eine öffentliche Einrichtung ist ein von der Gemeinde im öffentlichen Interesse unterhaltenes Angebot
-    (z. B. Stadthalle, Friedhof, Schwimmbad), das nach einem Widmungsakt der Allgemeinheit oder einem
-    bestimmten Personenkreis zur Verfügung steht. Die Gemeindeordnung gewährt den Einwohnern im Rahmen
-    des geltenden Rechts einen Anspruch auf Zulassung zur Benutzung. Er besteht nur im Rahmen des Widmungszwecks
-    und der Kapazität; die Gemeinde darf die Zulassung bei Kapazitätsengpässen nach sachgerechten Kriterien
-    beschränken (Gleichbehandlung, Art. 3 Abs. 1 GG). Zweistufigkeit: Die Zulassungsentscheidung ist öffentlich-rechtlich
-    (Verwaltungsrechtsweg), die Ausgestaltung der Nutzung kann privatrechtlich erfolgen (Zweistufentheorie).
-    Auch Parteien können sich bei Überlassung gegenüber anderen Parteien auf Gleichbehandlung berufen.
+  front: Unter welchen Voraussetzungen haben Einwohner in Schleswig-Holstein einen Anspruch auf Zulassung
+    zu einer öffentlichen Einrichtung der Gemeinde?
+  back: 'Eine öffentliche Einrichtung ist ein von der Gemeinde im öffentlichen Interesse unterhaltenes
+    Angebot (z. B. Stadthalle, Friedhof, Schwimmbad), das nach einem Widmungsakt der Allgemeinheit oder
+    einem bestimmten Personenkreis zur Verfügung steht. Die Gemeindeordnung gewährt den Einwohnern im
+    Rahmen des geltenden Rechts einen Anspruch auf Zulassung zur Benutzung. Er besteht nur im Rahmen des
+    Widmungszwecks und der Kapazität; die Gemeinde darf die Zulassung bei Kapazitätsengpässen nach sachgerechten
+    Kriterien beschränken (Gleichbehandlung, Art. 3 Abs. 1 GG). Zweistufigkeit: Die Zulassungsentscheidung
+    ist öffentlich-rechtlich (Verwaltungsrechtsweg), die Ausgestaltung der Nutzung kann privatrechtlich
+    erfolgen (Zweistufentheorie). Auch Parteien können sich bei Überlassung gegenüber anderen Parteien
+    auf Gleichbehandlung berufen.'
   norms:
   - Art. 3 Abs. 1 GG
   - Art. 28 Abs. 2 GG
@@ -155,21 +140,18 @@ cards:
   stand: 2026-10
 - slug: sh-kr-kommunalaufsicht
   type: norm
-  front: >-
-    Wie ist die Kommunalaufsicht in Schleswig-Holstein ausgestaltet und wie kann sich die Gemeinde dagegen
-    wehren?
-  back: >-
-    Die Kommunalaufsicht ist in erster Linie Rechtsaufsicht: Sie wacht darüber, dass die Gemeinde im Einklang
-    mit dem Recht handelt. In Angelegenheiten, die der Gemeinde zur Erfüllung nach Weisung übertragen
-    sind, besteht daneben Fachaufsicht. Aufsichtsmittel sind Beanstandung, Aufhebung rechtswidriger Beschlüsse,
-    Anordnung und Ersatzvornahme sowie der Beauftragte; sie sind nach dem Verhältnismäßigkeitsgrundsatz
+  front: Wie ist die Kommunalaufsicht in Schleswig-Holstein ausgestaltet und wie kann sich die Gemeinde
+    dagegen wehren?
+  back: 'Die Kommunalaufsicht ist in erster Linie Rechtsaufsicht: Sie wacht darüber, dass die Gemeinde
+    im Einklang mit dem Recht handelt. In Angelegenheiten, die der Gemeinde zur Erfüllung nach Weisung
+    übertragen sind, besteht daneben Fachaufsicht. Aufsichtsmittel sind Beanstandung, Aufhebung rechtswidriger
+    Beschlüsse, Anordnung und Ersatzvornahme sowie der Beauftragte; sie sind nach dem Verhältnismäßigkeitsgrundsatz
     zu wählen. Aufsichtsbehörde ist für kreisangehörige Gemeinden regelmäßig der Landrat bzw. die Landrätin,
     im Übrigen das Land. Gegen aufsichtsrechtliche Verfügungen kann die Gemeinde klagen und sich auf die
     Selbstverwaltungsgarantie (Art. 28 Abs. 2 GG) berufen; Dritte haben grundsätzlich keinen Anspruch
-    auf aufsichtsrechtliches Einschreiten.
+    auf aufsichtsrechtliches Einschreiten.'
   norms:
-  - >-
-    Gemeindeordnung für Schleswig-Holstein (GO SH), Abschnitt Aufsicht
+  - Gemeindeordnung für Schleswig-Holstein (GO SH), Abschnitt Aufsicht
   - Art. 28 Abs. 2 GG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -177,76 +159,60 @@ cards:
   stand: 2026-10
 - slug: sh-kr-kommunalverfassungsstreit
   type: definition
-  front: >-
-    Was ist ein Kommunalverfassungsstreit und welche prozessualen Besonderheiten gelten?
-  back: >-
-    Der Kommunalverfassungsstreit ist ein Innenrechtsstreit zwischen Organen oder Organteilen einer Gemeinde
-    (z. B. Ratsmitglied gegen Bürgermeister oder Vertretung) um organschaftliche Rechte und Pflichten.
+  front: Was ist ein Kommunalverfassungsstreit und welche prozessualen Besonderheiten gelten?
+  back: 'Der Kommunalverfassungsstreit ist ein Innenrechtsstreit zwischen Organen oder Organteilen einer
+    Gemeinde (z. B. Ratsmitglied gegen Bürgermeister oder Vertretung) um organschaftliche Rechte und Pflichten.
     Der Verwaltungsrechtsweg ist nach § 40 Abs. 1 VwGO eröffnet. Klageart ist mangels Verwaltungsakt die
     Feststellungsklage (§ 43 VwGO) oder die allgemeine Leistungsklage (Unterlassung, Herausgabe). § 42
     Abs. 2 VwGO gilt analog: Das Organ muss geltend machen, in eigenen organschaftlichen Rechten verletzt
     zu sein; die Beteiligtenfähigkeit folgt aus § 61 Nr. 2 VwGO analog. Passivlegitimiert ist das Organ,
     das die Rechte bestreitet, nicht die Gemeinde. Das allgemeine Rechtsschutzbedürfnis fehlt, wenn das
-    Organ nur objektive Rechtmäßigkeitskontrolle begehrt.
+    Organ nur objektive Rechtmäßigkeitskontrolle begehrt.'
   norms:
-  - >-
-    § 40 Abs. 1 VwGO
-  - >-
-    § 43 VwGO
-  - >-
-    § 61 Nr. 2 VwGO
+  - § 40 Abs. 1 VwGO
+  - § 43 VwGO
+  - § 61 Nr. 2 VwGO
   quellen:
   - VwGO, amtliche Fassung
   - Eigenformulierung Redaktion
   stand: 2026-10
 schemata:
 - slug: sh-schema-kr-beschluss
-  title: >-
-    Rechtmäßigkeit eines Beschlusses der Gemeindevertretung nach dem Kommunalrecht von Schleswig-Holstein
+  title: Rechtmäßigkeit eines Beschlusses der Gemeindevertretung nach dem Kommunalrecht von Schleswig-Holstein
   norms:
-  - >-
-    § 22 GO SH
+  - § 22 GO SH
   - Art. 28 Abs. 2 GG
-  - >-
-    § 47 VwGO
+  - § 47 VwGO
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   steps:
   - label: I. Formelle Rechtmäßigkeit des Beschlusses
     children:
-    - label: >-
-        1. Zuständigkeit: Vertretung oder Verwaltungsspitze (Hauptsatzung, Gemeindeordnung), Verbandskompetenz
-        der Gemeinde
-    - label: >-
-        2. Ordnungsgemäße Einberufung, Ladung, Öffentlichkeit der Sitzung, Beschlussfähigkeit
+    - label: '1. Zuständigkeit: Vertretung oder Verwaltungsspitze (Hauptsatzung, Gemeindeordnung), Verbandskompetenz
+        der Gemeinde'
+    - label: 2. Ordnungsgemäße Einberufung, Ladung, Öffentlichkeit der Sitzung, Beschlussfähigkeit
     - label: 3. Mitwirkungsverbote
-      hinweis: >-
-        Klausurklassiker: unmittelbarer Vorteil oder Nachteil für das Mitglied oder Angehörige; Kausalität
-        der Mitwirkung für das Abstimmungsergebnis prüfen.
+      hinweis: 'Klausurklassiker: unmittelbarer Vorteil oder Nachteil für das Mitglied oder Angehörige;
+        Kausalität der Mitwirkung für das Abstimmungsergebnis prüfen.'
       children:
       - label: a) Voraussetzungen des Mitwirkungsverbots (§ 22 GO SH)
-      - label: >-
-          b) Rechtsfolge für Beschluss und Heilung/Unbeachtlichkeit nach Landesrecht
+      - label: b) Rechtsfolge für Beschluss und Heilung/Unbeachtlichkeit nach Landesrecht
     - label: 4. Erforderliche Mehrheit und Beschlussfassung
   - label: II. Materielle Rechtmäßigkeit
     children:
-    - label: >-
-        1. Ermächtigungsgrundlage (bei Satzungen: besondere Ermächtigung bei Grundrechtseingriffen, Wesentlichkeitslehre)
-    - label: >-
-        2. Vereinbarkeit mit höherrangigem Recht (Grundrechte, Gleichheitssatz, Bundes- und Landesrecht)
+    - label: '1. Ermächtigungsgrundlage (bei Satzungen: besondere Ermächtigung bei Grundrechtseingriffen,
+        Wesentlichkeitslehre)'
+    - label: 2. Vereinbarkeit mit höherrangigem Recht (Grundrechte, Gleichheitssatz, Bundes- und Landesrecht)
     - label: 3. Ermessen und Verhältnismäßigkeit
   - label: III. Ausfertigung und Bekanntmachung (bei Satzungen)
-    hinweis: >-
-      Fehler führen zur Unwirksamkeit; Heilungs- und Unbeachtlichkeitsregeln des Landesrechts beachten.
+    hinweis: Fehler führen zur Unwirksamkeit; Heilungs- und Unbeachtlichkeitsregeln des Landesrechts beachten.
   - label: IV. Rechtsschutz
     children:
-    - label: >-
-        1. Außenrechtsstreit: Anfechtungs- oder Verpflichtungsklage; Normenkontrolle nach § 47 VwGO nur,
-        soweit das Landesrecht sie vorsieht
-    - label: >-
-        2. Innenrechtsstreit (Kommunalverfassungsstreit): Feststellungs- oder Leistungsklage, § 42 Abs.
-        2 VwGO analog
+    - label: '1. Außenrechtsstreit: Anfechtungs- oder Verpflichtungsklage; Normenkontrolle nach § 47 VwGO
+        nur, soweit das Landesrecht sie vorsieht'
+    - label: '2. Innenrechtsstreit (Kommunalverfassungsstreit): Feststellungs- oder Leistungsklage, §
+        42 Abs. 2 VwGO analog'
 faelle:
 - slug: sh-fall-kr-mitwirkungsverbot
   title: Der Bauauftrag an die Firma des Gemeindevertreters
@@ -255,36 +221,30 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - GO SH, amtliche Fassung
-  facts: >-
-    Die Gemeindevertretung der Gemeinde G in Schleswig-Holstein beschließt mit 9 zu 8 Stimmen, den Auftrag
-    für den Ausbau der Feuerwehrzufahrt an die B-GmbH zu vergeben. Gemeindevertreter V ist Geschäftsführer
+  facts: Die Gemeindevertretung der Gemeinde G in Schleswig-Holstein beschließt mit 9 zu 8 Stimmen, den
+    Auftrag für den Ausbau der Feuerwehrzufahrt an die B-GmbH zu vergeben. Gemeindevertreter V ist Geschäftsführer
     der B-GmbH. Er nimmt an der Beratung teil und stimmt für die Vergabe. Die Vertretung war ordnungsgemäß
     geladen und beschlussfähig; nach der Hauptsatzung entscheidet sie über Aufträge dieser Größenordnung.
     Ein unterlegener Bieter hält den Beschluss für rechtswidrig.
   question: Ist der Beschluss der Vertretung rechtmäßig?
   steps:
-  - prompt: >-
-      Liegt ein Beschluss im Zuständigkeitsbereich der Vertretung vor?
-    erwartung: >-
-      Ja: Nach der Hauptsatzung entscheidet die Gemeindevertretung über Aufträge dieser Größe; sie war
-      ordnungsgemäß geladen und beschlussfähig.
+  - prompt: Liegt ein Beschluss im Zuständigkeitsbereich der Vertretung vor?
+    erwartung: 'Ja: Nach der Hauptsatzung entscheidet die Gemeindevertretung über Aufträge dieser Größe;
+      sie war ordnungsgemäß geladen und beschlussfähig.'
   - prompt: Unterlag das Mitglied einem Mitwirkungsverbot?
-    erwartung: >-
-      Ja: V ist als Geschäftsführer der B-GmbH deren gesetzlicher Vertreter; die Vergabe bringt der von
-      ihm vertretenen juristischen Person einen unmittelbaren Vorteil. Das Mitwirkungsverbot (§ 22 GO
-      SH) ist erfüllt; das Mitglied durfte weder beraten noch abstimmen.
+    erwartung: 'Ja: V ist als Geschäftsführer der B-GmbH deren gesetzlicher Vertreter; die Vergabe bringt
+      der von ihm vertretenen juristischen Person einen unmittelbaren Vorteil. Das Mitwirkungsverbot (§
+      22 GO SH) ist erfüllt; das Mitglied durfte weder beraten noch abstimmen.'
   - prompt: Welche Folge hat der Verstoß für den Beschluss?
-    erwartung: >-
-      Der Beschluss ist fehlerhaft, wenn die Mitwirkung für das Abstimmungsergebnis ursächlich sein konnte.
-      Hier wurde der Beschluss mit nur einer Stimme Mehrheit gefasst, sodass ohne die Stimme des befangenen
-      Mitglieds keine Mehrheit bestanden hätte. Der Beschluss ist damit rechtswidrig bzw. unwirksam; Heilung
-      oder Unbeachtlichkeit nach Landesrecht (z. B. durch Fristablauf, Neubeschluss) ist zu prüfen und
-      liegt hier nicht vor.
+    erwartung: Der Beschluss ist fehlerhaft, wenn die Mitwirkung für das Abstimmungsergebnis ursächlich
+      sein konnte. Hier wurde der Beschluss mit nur einer Stimme Mehrheit gefasst, sodass ohne die Stimme
+      des befangenen Mitglieds keine Mehrheit bestanden hätte. Der Beschluss ist damit rechtswidrig bzw.
+      unwirksam; Heilung oder Unbeachtlichkeit nach Landesrecht (z. B. durch Fristablauf, Neubeschluss)
+      ist zu prüfen und liegt hier nicht vor.
   expectation:
     pruefpunkte:
     - id: p1
-      label: >-
-        Zuständigkeit der Vertretung und ordnungsgemäße Beschlussfassung festgestellt
+      label: Zuständigkeit der Vertretung und ordnungsgemäße Beschlussfassung festgestellt
       weight: 1.0
       required: false
       keywords:
@@ -295,37 +255,33 @@ faelle:
       card_slugs:
       - sh-kr-zustaendigkeit
     - id: p2
-      label: >-
-        Mitwirkungsverbot (§ 22 GO SH) wegen unmittelbaren Vorteils bejaht
+      label: Mitwirkungsverbot (§ 22 GO SH) wegen unmittelbaren Vorteils bejaht
       weight: 3.0
       required: true
       norms:
-      - >-
-        § 22 GO SH
+      - § 22 GO SH
       keywords:
       - Mitwirkungsverbot
       - unmittelbarer Vorteil
       - persönliches Interesse
       - Befangenheit
-      - >-
-        § 22 GO SH
+      - § 22 GO SH
       card_slugs:
       - sh-kr-mitwirkungsverbot
     - id: p3
-      label: >-
-        Zurechnung des Interesses des Angehörigen bzw. des Unternehmens
+      label: Interesse der vertretenen juristischen Person wird dem Mitglied zugerechnet
       weight: 1.5
       required: false
       keywords:
-      - Angehöriger
-      - Ehegatte
+      - vertretene juristische Person
+      - von ihm vertretene
+      - gesetzlicher Vertreter
       - Interessenkollision
       - Vertretung eines Dritten
       card_slugs:
       - sh-kr-mitwirkungsverbot
     - id: p4
-      label: >-
-        Kausalität: ohne die Stimme des Befangenen keine Mehrheit; Beschluss fehlerhaft
+      label: 'Kausalität: ohne die Stimme des Befangenen keine Mehrheit; Beschluss fehlerhaft'
       weight: 3.0
       required: true
       keywords:
