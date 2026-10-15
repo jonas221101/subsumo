@@ -56,8 +56,17 @@ int? suchRang(String query, String haystack) {
   return rang;
 }
 
+/// Gebraeuchliche Kuerzel je internem Landescode (zusaetzlich zum Code selbst).
+const bundeslandAliasse = <String, List<String>>{
+  'NW': ['NRW'],
+  'RP': ['RLP'],
+  'ST': ['LSA'],
+};
+
 /// Zusaetzliche Suchbegriffe fuer Landesrecht-Inhalte.
 String landesSuchtext(Object? code) {
   final label = landesLabel(code);
-  return label == null ? '' : '$code $label Landesrecht';
+  if (label == null) return '';
+  final aliasse = bundeslandAliasse[code.toString().trim().toUpperCase()] ?? const [];
+  return '$code ${aliasse.join(' ')} $label Landesrecht';
 }

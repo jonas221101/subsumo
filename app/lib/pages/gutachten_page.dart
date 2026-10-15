@@ -9,6 +9,7 @@ import '../api.dart';
 import '../design/design.dart';
 import '../state.dart';
 import 'beta_feedback.dart';
+import 'fit_title.dart';
 import 'landesbezug.dart';
 import '../theme.dart';
 
@@ -316,12 +317,10 @@ class _GutachtenPageState extends State<GutachtenPage> {
     if (caseUpgradeMessage != null) {
       return Scaffold(
         appBar: AppBar(
-          toolbarHeight: 64,
-          title: Text(
+          toolbarHeight: 88,
+          title: FitTitle(
             widget._titel,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            style: Theme.of(context).textTheme.titleMedium,
+            style: Theme.of(context).textTheme.titleMedium!,
           ),
           actions: [BetaFeedbackAction(screen: 'Fall: ${widget.caseTitle}')],
         ),
@@ -350,14 +349,12 @@ class _GutachtenPageState extends State<GutachtenPage> {
       // ueber dem Inhalt (statt in der Chrome) wuerde bei kurzen Fenstern
       // den Falltext im Editor ueberdecken koennen.
       appBar: AppBar(
-        toolbarHeight: _focusMode ? null : 64,
+        toolbarHeight: _focusMode ? null : 88,
         title: _focusMode
             ? null
-            : Text(
+            : FitTitle(
                 widget._titel,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.titleMedium,
+                style: Theme.of(context).textTheme.titleMedium!,
               ),
         actions: [
           BetaFeedbackAction(screen: 'Fall: ${widget.caseTitle}'),

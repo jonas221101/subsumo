@@ -39,6 +39,26 @@ class FitTitle extends StatelessWidget {
             effective = style.copyWith(fontSize: fontSize * scale);
           }
         }
+        if (available.isFinite && available > 0) {
+          // Passt der Titel auch umgebrochen nicht in [maxLines], Schrift
+          // schrittweise bis [minScale] verkleinern, statt zu kuerzen.
+          final base = effective.fontSize ?? 16;
+          final floor = (style.fontSize ?? 16) * minScale;
+          var size = base;
+          while (true) {
+            final painter = TextPainter(
+              text: TextSpan(text: text, style: effective.copyWith(fontSize: size)),
+              textDirection: Directionality.of(context),
+              textScaler: MediaQuery.textScalerOf(context),
+              maxLines: maxLines,
+            )..layout(maxWidth: available);
+            final exceeds = painter.didExceedMaxLines;
+            painter.dispose();
+            if (!exceeds || size <= floor) break;
+            size = max(floor, size - 1);
+          }
+          if (size != base) effective = effective.copyWith(fontSize: size);
+        }
         return Text(text, style: effective, maxLines: maxLines, overflow: TextOverflow.ellipsis);
       },
     );

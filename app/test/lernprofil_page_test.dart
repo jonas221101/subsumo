@@ -106,7 +106,7 @@ void main() {
     await tester.tap(find.text('Sicher'));
     await tester.pump();
 
-    await tester.tap(find.widgetWithText(SubsumoButton, 'Lernprofil speichern'));
+    await tester.tap(find.widgetWithText(SubsumoButton, 'Speichern'));
     await tester.pumpAndSettle();
 
     final put = requests.singleWhere(
