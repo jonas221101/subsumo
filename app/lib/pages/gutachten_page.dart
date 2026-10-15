@@ -541,7 +541,23 @@ class _ResultView extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final subsumo = theme.extension<SubsumoColors>();
-    final evaluation = (result['evaluation'] as Map).cast<String, dynamic>();
+    final rawEvaluation = result['evaluation'];
+    if (rawEvaluation is! Map ||
+        rawEvaluation['points'] == null ||
+        rawEvaluation['checkpoints'] is! List) {
+      // Die Antwort enthaelt keine (vollstaendige) Bewertung: ehrlich sagen,
+      // statt eine halbe Anzeige oder einen Fehlerbildschirm zu zeigen.
+      return const SubsumoCard(
+        child: SubsumoFeedbackBlock(
+          message: 'Deine Abgabe ist gespeichert, aber es liegt keine Punktbewertung vor.',
+          detail: 'Der Struktur-/Stil-Check zu deinem Text bleibt verfügbar; '
+              'Punktzahl und Erwartungshorizont gibt es für diese Abgabe nicht. '
+              'Bitte später erneut versuchen.',
+          severity: FeedbackSeverity.hint,
+        ),
+      );
+    }
+    final evaluation = rawEvaluation.cast<String, dynamic>();
     final checkpoints =
         (evaluation['checkpoints'] as List).cast<Map<String, dynamic>>();
     final engine = evaluation['engine'] as String? ?? 'heuristik';
@@ -561,7 +577,7 @@ class _ResultView extends StatelessWidget {
             ),
           ],
           const SizedBox(height: Spacing.sm),
-          Text(evaluation['summary'] as String),
+          Text(evaluation['summary'] as String? ?? ''),
           const Divider(height: 32),
           Text('Erwartungshorizont', style: theme.textTheme.titleSmall),
           const SizedBox(height: Spacing.sm),
@@ -586,7 +602,7 @@ class _ResultView extends StatelessWidget {
             ),
           const Divider(height: 32),
           Text(
-            evaluation['disclaimer'] as String,
+            evaluation['disclaimer'] as String? ?? '',
             style: theme.textTheme.bodySmall,
           ),
         ],
@@ -694,6 +710,10 @@ String gutachtenPlatzhalter({String? area, String? question, String? facts}) {
   final alle = parteien.length >= 2 ? parteien : parteikuerzel('${question ?? ''} ${facts ?? ''}');
   switch (area) {
     case 'zivilrecht':
+      final frage = _frageSatz(question);
+      if (frage != null && !frage.toLowerCase().contains('anspruch')) {
+        return frage;
+      }
       if (alle.length >= 2) {
         return '${alle[0]} könnte gegen ${alle[1]} einen Anspruch auf ... aus § ... haben.';
       }
@@ -705,15 +725,49 @@ String gutachtenPlatzhalter({String? area, String? question, String? facts}) {
       }
       return 'Die handelnde Person könnte sich wegen ... gemäß § ... strafbar gemacht haben.';
     case 'oeffentliches-recht':
-      final text = '${question ?? ''} ${facts ?? ''}'.toLowerCase();
-      if (text.contains('verfassungsgemäß') ||
-          text.contains('verfassungsgemaess') ||
-          text.contains('verfassungsmäßig') ||
-          text.contains('gesetz') && text.contains('verfassung')) {
-        return 'Das Gesetz ist verfassungsgemäß, wenn es formell und materiell mit dem Grundgesetz vereinbar ist.';
-      }
-      return 'Die Klage hat Erfolg, wenn sie zulässig und begründet ist.';
+      return _oerPlatzhalter(question, facts);
     default:
       return 'Beginne mit dem Obersatz im Gutachtenstil: ... könnte ... , wenn ...';
   }
+}
+
+/// Gutachtensatz fuer Fragen ohne Anspruch ("Hat K Eigentum erworben?" ->
+/// "K könnte Eigentum ... erworben haben."); sonst `null`.
+String? _frageSatz(String? question) {
+  final q = (question ?? '').trim();
+  if (q.isEmpty || !q.endsWith('?')) return null;
+  final m = RegExp(r'^(?:Hat|Haben)\s+([A-Z]\d?)\s+(.+?)\s+(\w+)\?$').firstMatch(q);
+  if (m != null) {
+    return '${m.group(1)} könnte ${m.group(2)} ... ${m.group(3)} haben.';
+  }
+  if (RegExp(r'^(?:Ist|Sind|Wurde|Wurden|War|Waren|Liegt|Hat|Haben)\b').hasMatch(q)) {
+    return 'Fraglich ist, ob ...';
+  }
+  return null;
+}
+
+/// Platzhalter fuer oeffentlich-rechtliche Fragen, abgeleitet aus der Fallfrage.
+String _oerPlatzhalter(String? question, String? facts) {
+  final q = (question ?? '').trim();
+  final lower = q.toLowerCase();
+  if (lower.contains('verfassungsgemäß') ||
+      lower.contains('verfassungsgemaess') ||
+      lower.contains('verfassungsmäßig') ||
+      lower.contains('verfassungswidrig') ||
+      (lower.contains('gesetz') && lower.contains('verfassung'))) {
+    return 'Das Gesetz ist verfassungsgemäß, wenn es formell und materiell mit dem Grundgesetz vereinbar ist.';
+  }
+  if (lower.contains('rechtmäßig') ||
+      lower.contains('rechtmaessig') ||
+      lower.contains('rechtswidrig')) {
+    final subjekt = RegExp(
+      r'\b(?:Ist|Sind|War|Waren)\s+((?:der|die|das|den|dem)\s+[^?]+?)\s+(?:rechtmäßig|rechtmaessig|rechtswidrig)',
+      caseSensitive: false,
+    ).firstMatch(q)?.group(1);
+    final text = subjekt == null
+        ? 'Die Maßnahme'
+        : '${subjekt[0].toUpperCase()}${subjekt.substring(1)}';
+    return '$text ist rechtmäßig, wenn ...';
+  }
+  return 'Die Klage hat Erfolg, wenn sie zulässig und begründet ist.';
 }

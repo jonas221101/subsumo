@@ -56,7 +56,7 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(find.text('2'), findsOneWidget);
-      expect(find.text('Karten warten auf dich.'), findsOneWidget);
+      expect(find.text('0 neu, 2 Wiederholungen'), findsOneWidget);
       expect(find.byType(SubsumoPageHeader), findsOneWidget);
       // Relevanz als neutrale Punktreihe, kein wertabhaengiges Signal.
       expect(find.byType(CircleAvatar), findsNothing);

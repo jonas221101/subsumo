@@ -33,6 +33,9 @@ class _CasesPageState extends State<CasesPage> {
   @override
   void initState() {
     super.initState();
+    _search.addListener(() {
+      if (_search.text != _query && mounted) setState(() => _query = _search.text);
+    });
     WidgetsBinding.instance.addPostFrameCallback((_) => _load());
   }
 
@@ -50,12 +53,36 @@ class _CasesPageState extends State<CasesPage> {
 
   List<Map<String, dynamic>> get _visible {
     final q = _query.trim().toLowerCase();
-    return [
+    final list = [
       for (final fall in _cases)
         if ((_area == null || fall['area'] == _area) &&
-            (q.isEmpty || (fall['title'] as String).toLowerCase().contains(q)))
+            (q.isEmpty ||
+                '${fall['title']} ${fall['facts'] ?? ''} ${fall['question'] ?? ''}'
+                    .toLowerCase()
+                    .contains(q)))
           fall,
     ];
+    // Profil-Schwerpunkt zuerst, innerhalb eines Gebiets leicht vor schwer.
+    const standard = ['zivilrecht', 'strafrecht', 'oeffentliches-recht'];
+    final order = [..._schwerpunkte.where(standard.contains), ...standard.where((a) => !_schwerpunkte.contains(a))];
+    int rank(Map<String, dynamic> f) {
+      final i = order.indexOf(f['area'] as String? ?? '');
+      return i < 0 ? order.length : i;
+    }
+
+    final indexed = [for (var i = 0; i < list.length; i++) (i, list[i])];
+    indexed.sort((a, b) {
+      final r = rank(a.$2).compareTo(rank(b.$2));
+      if (r != 0) return r;
+      final d = ((a.$2['difficulty'] as num?) ?? 0).compareTo((b.$2['difficulty'] as num?) ?? 0);
+      return d != 0 ? d : a.$1.compareTo(b.$1);
+    });
+    return [for (final e in indexed) e.$2];
+  }
+
+  List<String> get _schwerpunkte {
+    final raw = (AppScope.of(context).examenCockpit?['lernprofil'] as Map?)?['schwerpunkte'];
+    return raw is List ? [for (final e in raw) '$e'] : const [];
   }
 
   @override
@@ -78,12 +105,13 @@ class _CasesPageState extends State<CasesPage> {
           SubsumoPageHeader(
             eyebrow: 'Gutachten-Training',
             title: 'Fälle',
-            subtitle: '${_cases.length} geführte Fälle mit Erwartungshorizont.',
+            subtitle: visible.length == _cases.length
+                ? '${_cases.length} geführte Fälle mit Erwartungshorizont.'
+                : '${visible.length} von ${_cases.length} Fällen.',
           ),
           const SizedBox(height: Spacing.xl),
           TextField(
             controller: _search,
-            onChanged: (v) => setState(() => _query = v),
             decoration: InputDecoration(
               hintText: 'Fall suchen',
               prefixIcon: const Icon(Icons.search),
@@ -178,7 +206,7 @@ class _CaseTile extends StatelessWidget {
                 FitTitle(fall['title'] as String, style: typography.headingSmall),
                 const SizedBox(height: Spacing.xs),
                 Text(
-                  '${_areaLabel(area)}  ·  ${fall['minutes']} min',
+                  '${_areaLabel(area)}  ·  ${fall['minutes']}\u00A0min',
                   style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
                 ),
               ],

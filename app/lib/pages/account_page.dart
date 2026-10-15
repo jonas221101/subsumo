@@ -9,6 +9,7 @@ import '../state.dart';
 import 'beta_feedback.dart';
 import '../theme.dart';
 import 'checkout_page.dart';
+import 'examen_page.dart' show openLernprofilFromAnywhere;
 
 /// F3 (docs/20-release-g2-bezahlstrecke.md Abschnitt 4): Konto-/Einstellungsseite.
 /// Existierte vorher nicht - `HomeShell` (main.dart) verlinkt ueber die AppBar
@@ -323,7 +324,14 @@ class _AccountPageState extends State<AccountPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Konto'),
-        actions: const [BetaFeedbackAction(screen: 'Konto')],
+        actions: [
+          IconButton(
+            tooltip: 'Lernprofil',
+            icon: const Icon(Icons.tune_outlined),
+            onPressed: () => openLernprofilFromAnywhere(context),
+          ),
+          const BetaFeedbackAction(screen: 'Konto'),
+        ],
       ),
       body: ReadableWidth(
         child: SingleChildScrollView(
@@ -385,6 +393,17 @@ class _AccountPageState extends State<AccountPage> {
                   onRevoke: _revokeAiConsent,
                 ),
               ],
+              const SizedBox(height: Spacing.lg),
+              SubsumoCard(
+                child: ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  leading: const Icon(Icons.tune_outlined),
+                  title: const Text('Lernprofil'),
+                  subtitle: const Text('Semester, Ziel, Schwerpunkte und Rhythmus'),
+                  trailing: const Icon(Icons.chevron_right),
+                  onTap: () => openLernprofilFromAnywhere(context),
+                ),
+              ),
             ],
           ),
         ),
