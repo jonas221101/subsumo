@@ -8,7 +8,7 @@ kurs:
   quellen:
   - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Toetungs- und Koerperverletzungsdelikte, Noetigung, Urkundenfaelschung.
+  beschreibung: Tötungs- und Körperverletzungsdelikte (inkl. §§ 226, 227), Nötigung, Urkundenfälschung. Freiheitsdelikte und Randdelikte der Person fehlen noch.
   lernziele:
   - Mordmerkmale systematisch pruefen und begruenden
   - Qualifikationen der Koerperverletzung (§ 224 StGB) anwenden
@@ -21,6 +21,10 @@ kurs:
   - sr-bt-koerperverletzung-224
   - sr-bt-noetigung-240
   - sr-bt-urkundenfaelschung-267
+  - sr-bt-koerperverletzung-226-227
   landesrecht_kategorien: []
   fehlende_themen:
-  - Freiheitsberaubung, § 239 StGB (P3)
+  - 'Freiheitsdelikte: §§ 239, 239a, 239b StGB (P1)'
+  - 'Körperverletzung vertiefen: §§ 225, 229, 231 StGB (P2)'
+  - 'Widerstand/Amtsträger und Hilfeleistung: §§ 113, 114, 323c StGB (P2)'
+  - Beleidigungsdelikte §§ 185 ff. und Hausfriedensbruch § 123 StGB (P2)

@@ -62,7 +62,7 @@ regelmäßig klausurrelevant, ~~gehört in v1.0 wenn der Takt reicht~~ **gesetzt
 v1.0-Umfang (Nutzerentscheid 23.09.2026, siehe Abschnitt 1.1)** · **P3**
 ergänzend, vertretbar auch erst nach v1.0 (M6, siehe `docs/03-roadmap.md`).
 
-### Zivilrecht (22 vorhanden, 4 offen → 26 Themen)
+### Zivilrecht (Tabelle: 23 vorhanden, 3 offen → 26 Themen; Ist-Bestand 29 Dateien, siehe Abschnitt „Pflichtstoff-Abgleich")
 
 | Thema | Status | Priorität |
 |---|---|---|
@@ -79,7 +79,7 @@ ergänzend, vertretbar auch erst nach v1.0 (M6, siehe `docs/03-roadmap.md`).
 | Rücktritt, § 323 BGB | ✅ vorhanden (`zr-schuldrecht-at-ruecktritt`) | P1 |
 | Schadensersatz statt der Leistung, §§ 280, 281 BGB | ✅ vorhanden (`zr-su-schadensersatz-statt-der-leistung`) | P1 |
 | Culpa in contrahendo, § 311 Abs. 2 BGB | ✅ vorhanden (`zr-schuldrecht-at-cic`) | P2 |
-| Abtretung, § 398 BGB | offen | P3 |
+| Abtretung, § 398 BGB | ✅ vorhanden (`zr-abtretung-398`) | P3 |
 | Deliktsrecht: § 823 Abs. 1 BGB | ✅ vorhanden (`zr-deliktsrecht-823`) | P1 |
 | Mängelgewährleistung Kaufrecht, §§ 434 ff. BGB (vertieft) | ✅ vorhanden (`zr-kaufrecht-maengelgewaehrleistung`) | P1 |
 | Bereicherungsrecht, § 812 BGB | ✅ vorhanden (`zr-bereicherungsrecht-leistungskondiktion`) | P1 |
@@ -93,7 +93,7 @@ ergänzend, vertretbar auch erst nach v1.0 (M6, siehe `docs/03-roadmap.md`).
 | Kaufmannsbegriff und Handelsregister, HGB | offen | P3 |
 | Prokura und Handlungsvollmacht, § 48 HGB | offen | P3 |
 
-### Strafrecht (20 vorhanden, 2 offen → 22 Themen)
+### Strafrecht (Tabelle: 21 vorhanden, 1 offen → 22 Themen; Ist-Bestand 27 Dateien)
 
 | Thema | Status | Priorität |
 |---|---|---|
@@ -107,7 +107,7 @@ ergänzend, vertretbar auch erst nach v1.0 (M6, siehe `docs/03-roadmap.md`).
 | Verbotsirrtum, § 17 StGB | ✅ vorhanden (`sr-at-verbotsirrtum-17`) | P2 |
 | Fahrlässige Delikte, § 222 StGB | ✅ vorhanden (`sr-bt-fahrlaessige-toetung-222`) | P2 |
 | Unterlassungsdelikte, § 13 StGB | ✅ vorhanden (`sr-at-unterlassungsdelikte`) | P2 |
-| Konkurrenzen | offen | P3 |
+| Konkurrenzen | ✅ vorhanden (`sr-at-konkurrenzen`) | P3 |
 | Körperverletzungsdelikte, §§ 223 ff. StGB | ✅ vorhanden (`sr-bt-koerperverletzung-224`) | P1 |
 | Tötungsdelikte, §§ 211, 212 StGB | ✅ vorhanden (`sr-bt-toetungsdelikte-211-212`) | P1 |
 | Nötigung, § 240 StGB | ✅ vorhanden (`sr-bt-noetigung-240`) | P2 |
@@ -120,12 +120,17 @@ ergänzend, vertretbar auch erst nach v1.0 (M6, siehe `docs/03-roadmap.md`).
 | Unterschlagung, § 246 StGB | ✅ vorhanden (`sr-bt-unterschlagung-246`) | P2 |
 | Erpressung, § 253 StGB | ✅ vorhanden (`sr-bt-erpressung-253`) | P2 |
 
-### Öffentliches Recht (18 vorhanden, 8 offen → 26 Themen)
+### Öffentliches Recht (Tabelle: 20 vorhanden, 6 offen → 26 Themen; Ist-Bestand 25 Dateien)
 
 Ursprünglich als größter Nachholbedarf geführt (damals 2 von 11 Themen).
 Stand 23.09.2026 sind P1- **und** P2-Kern des Gebiets vollständig; die
-8 offenen Themen sind sämtlich P3 (Kommunalrecht, Störerauswahl, Baurecht,
-Unionsrecht, Glaubensfreiheit und vertiefende Verfassungsthemen).
+6 offenen Themen der Tabelle sind als P3 geführt (Kommunalrecht, Störerauswahl,
+Baurecht, Unionsrecht, Glaubensfreiheit, Art. 14 vertieft). **Diese
+P3-Einstufung ist überholt für Kommunal-, Bau- und Europarecht** - siehe den
+Abschnitt „Pflichtstoff-Abgleich (Stand 2026-10-15)" unten. Die Statuszeilen
+„Abtretung", „Konkurrenzen", „Bund-Länder-Kompetenzen" und „Normenkontrolle"
+standen als offen, obwohl die Themen existierten, und sind am 2026-10-15
+korrigiert.
 
 | Thema | Status | Priorität |
 |---|---|---|
@@ -140,8 +145,8 @@ Unionsrecht, Glaubensfreiheit und vertiefende Verfassungsthemen).
 | Enteignung und Inhalts-/Schrankenbestimmung, Art. 14 GG vertieft | offen | P3 |
 | Gesetzgebungsverfahren, Art. 76 ff. GG | ✅ vorhanden (`or-staatsorganisationsrecht-gesetzgebungsverfahren`) | P2 |
 | Organstreitverfahren | ✅ vorhanden (`or-verfassungsprozessrecht-organstreitverfahren`) | P2 |
-| Bund-Länder-Kompetenzen, Art. 70 ff. GG | offen | P3 |
-| Normenkontrollverfahren | offen | P3 |
+| Bund-Länder-Kompetenzen, Art. 70 ff. GG | ✅ vorhanden (`or-staatsorganisationsrecht-gesetzgebungskompetenzen`) | P3 |
+| Normenkontrollverfahren | ✅ vorhanden (`or-verfassungsprozessrecht-normenkontrolle-93-100`, `or-vwgo-normenkontrolle-47`) | P3 |
 | Der Verwaltungsakt, § 35 VwVfG | ✅ vorhanden (`or-vwvfg-verwaltungsakt`) | P1 |
 | Ermessen, § 40 VwVfG | ✅ vorhanden (`or-vwvfg-ermessen-beurteilungsspielraum`) | P1 |
 | Rechtmäßigkeitsprüfung eines Verwaltungsakts | ✅ vorhanden (`or-va-rechtmaessigkeitspruefung`) | P1 |
@@ -163,7 +168,7 @@ vollständig abgearbeitet (57/57); **alle noch offenen Themen sind
 ausschließlich P3** und damit laut Prioritätsdefinition oben bewusst
 nach-v1.0-Stoff (M6).
 
-**Nicht in v1.0, bewusst:** Familien-/Erbrecht über die Grundzüge hinaus,
+**Nicht in v1.0, bewusst** (Stand 23.09.; Kommunal-/Bau-/Europarecht davon ausgenommen, siehe Abschnitt 1.2): Familien-/Erbrecht über die Grundzüge hinaus,
 Gesellschaftsrecht über GbR/Prokura hinaus, Arbeitsrecht als eigenes Feld,
 Strafprozessrecht als eigener Block. Das sind reguläre JAPO-Randgebiete mit
 geringerer Klausurdichte; Aufnahme nach v1.0 in M6.
@@ -211,6 +216,95 @@ n = 60. Kein Agent kann dieses Gate schließen; es braucht eine Person mit
 juristischer Vorbildung (`docs/08-ki-redaktion.md`). Stratifizierter
 Mindestumfang nach Abschnitt 4.2: ≥ 6 Themen, mind. 2 je Rechtsgebiet,
 Schwerpunkt P1.
+
+## 1.2 Pflichtstoff-Abgleich (Stand 2026-10-15)
+
+Drei unabhängige Vollständigkeitsprüfungen (je Rechtsgebiet, gegen die
+Pflichtfachkataloge, § 18 JAPO Bayern / § 11 JAG NRW) haben den Ist-Bestand
+gegen den tatsächlichen Pflichtstoff gelegt. Die Themenlandkarte in
+Abschnitt 1 ist eine MVP-Liste (74 Themen), **kein** Pflichtfachabgleich;
+der folgende Abschnitt ersetzt sie als Maßstab für die Lückenplanung.
+
+**Abdeckungsgrad (gewichtet nach Pflichtstoffanteil):**
+
+| Gebiet | Themen (Ist) | Breite | Tiefe / Bemerkung |
+|---|---|---|---|
+| Zivilrecht | 29 (je 7-11 Karten, 1 Schema, 1 Fall) | ca. 30-35 % | Kern gut: BGB AT, Leistungsstörungen, Kaufmängel, §§ 823/826/831, Bereicherung (2-Personen), GoA, EBV, Mobiliarsachenrecht. Keine mehrstufigen Examensfälle |
+| Strafrecht | 27 (208 Karten, je 1 Schema/1 Fall) | ca. 40 % (AT 65 %, BT Person 40 %, BT Vermögen 50 %, übriger BT 8 %, StPO 0 %) | Tiefe gut, Breite schwach |
+| Öffentliches Recht | 25 + Landesrecht-Wegweiserkarten | ca. 35-40 % Breite, ca. 25 % Tiefe (Staatsorga ~45 %, Grundrechte ~40 %, Verfassungsprozess ~60 %, Europarecht 0 %, VwR AT ~55 %, VwGO ~65 %, Polizeirecht ~30 %, Kommunal-/Baurecht ~3 %) | Landesrecht: je Land 2 Dateien à 5-6 Karten, keine Schemata/Fälle |
+
+**Priorisierte Lückenliste je Gebiet (Top 15):**
+
+*Zivilrecht*
+
+1. Vertrag zugunsten Dritter (§ 328), Vertrag mit Schutzwirkung, Drittschadensliquidation
+2. §§ 276, 278 BGB als eigenes Thema
+3. Form, §§ 134, 138, Bedingung, §§ 116-118
+4. Eigentumsvorbehalt, Anwartschaftsrecht, §§ 946 ff.
+5. Immobiliarsachenrecht
+6. Besitz und Besitzschutz
+7. Verbrauchsgüterkauf, Gefahrübergang
+8. Werkvertrag
+9. Miete
+10. Bürgschaft, Sicherheiten, Darlehen
+11. Gesamtschuld, Aufrechnung, Erfüllung
+12. Deliktsrecht vertiefen (ProdHaftG, § 7 StVG, § 839)
+13. Bereicherung bei Mehrpersonenverhältnissen
+14. HGB/Gesellschaftsrecht (MoPeG)
+15. Verbraucherwiderruf, § 313
+
+*Strafrecht*
+
+1. Brandstiftung, §§ 306 ff.
+2. Sachbeschädigung, § 303 (+ §§ 303a, 303b, 305)
+3. § 263a, § 265a
+4. Aussagedelikte §§ 153 ff., § 164
+5. Straßenverkehrsdelikte §§ 315b, 315c, 316, 142, 315d
+6. § 252, § 316a
+7. Urkundendelikte §§ 268, 269, 271, 274
+8. Freiheitsdelikte §§ 239, 239a, 239b
+9. § 28, Mord-Beteiligung, Organisationsherrschaft, § 30
+10. StPO-Grundzüge
+11. § 123, §§ 185 ff.
+12. §§ 113, 114, § 323c
+13. § 127 StPO, §§ 229, 859 BGB
+14. §§ 225, 229, 231
+15. Rücktritt-Vertiefung, §§ 331 ff. (niedriger: § 177, § 221, § 261, § 46, § 241)
+
+*Öffentliches Recht*
+
+1. Kommunalrecht
+2. Bauplanungsrecht, §§ 29 ff. BauGB
+3. Bauordnungsrecht, Nachbarschutz
+4. Verfassungsorgane, Art. 62 ff. GG
+5. Abgeordnete und Parteien, Art. 21, 38, 46-48 GG
+6. § 40 VwGO, Sachentscheidungsvoraussetzungen, Widerspruchsverfahren, § 123 VwGO als eigenes Thema
+7. Staatshaftung
+8. Art. 83 ff. GG, Verwaltungsvollstreckung
+9. Grundrechte AT (Schutzpflichten, Drittwirkung, Träger/Bindung)
+10. Art. 4, Art. 5 Abs. 3, Pressefreiheit, Art. 2 Abs. 2, Art. 1 GG
+11. Justizgrundrechte, Art. 13, 10, 9, 11, 6 GG
+12. Öffentlich-rechtlicher Vertrag §§ 54 ff., Realakt
+13. Polizeirecht vertiefen (Störerauswahl, Zwang, Kosten)
+14. Europarecht
+15. Bund-Länder-Streit, § 32 BVerfGG, Finanzverfassung; Landesschemata und -fälle für BY/NW/BW/HE/NI
+
+**Einstufung korrigiert:** Kommunalrecht, Bauplanungs- und Bauordnungsrecht
+sowie Europarecht sind **examenszentral** (in den Ländern regelmäßig
+Klausurgegenstand, oft als Einkleidung von Verwaltungsprozess-Klausuren)
+und damit **nicht P3**, sondern P1. Die frühere P3-Zuordnung in
+Abschnitt 1 (Öffentliches Recht) und in der Auflistung „Nicht in v1.0"
+gilt dafür nicht mehr. Dasselbe gilt für die Strafrechts-Randdelikte
+(Brandstiftung, Sachbeschädigung, Aussagedelikte, Straßenverkehr) und
+die StPO-Grundzüge, soweit sie in den Prüfungsgebieten stehen.
+
+**Kurs-Struktur (derselbe Stichtag):** Alle 22 Themen, die in keinem Kurs
+standen, sind in thematische Kurse und die Examenskurse eingeordnet; die
+`fehlende_themen`-Listen der Kurse führen nur noch tatsächlich fehlende
+Themen mit Priorität. Die Examenskurse sind als „Grundstock" beschrieben,
+nicht als Gesamtwiederholung des Pflichtstoffs. `or-kommunal-baurecht` ist
+als „in Vorbereitung" gekennzeichnet; es besteht derzeit nur aus den
+Landesrecht-Wegweiserkarten.
 
 ## 2. Zuschnitt eines Themas
 

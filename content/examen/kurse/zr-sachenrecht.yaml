@@ -8,8 +8,7 @@ kurs:
   quellen:
   - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: 'Mobiliarsachenrecht: Eigentumsherausgabe, rechtsgeschaeftlicher Erwerb, gutglaeubiger
-    Erwerb, Sicherungsuebereignung.'
+  beschreibung: 'Mobiliarsachenrecht: Eigentumsherausgabe, rechtsgeschäftlicher und gutgläubiger Erwerb, Sicherungsübereignung, Eigentümer-Besitzer-Verhältnis sowie Beseitigung und Unterlassung nach § 1004 BGB. Immobiliarsachenrecht, Besitz und Eigentumsvorbehalt fehlen noch.'
   lernziele:
   - § 985 BGB mit Eigentumshistorie (chronologische Pruefung) aufbauen
   - Erwerb vom Nichtberechtigten (§§ 932 ff. BGB) sicher pruefen
@@ -22,7 +21,10 @@ kurs:
   - zr-sr-eigentumserwerb-929
   - zr-sr-gutglaeubiger-erwerb-932
   - zr-sr-sicherungsuebereignung
+  - zr-sr-ebv-987-ff
+  - zr-sr-beseitigung-unterlassung-1004
   landesrecht_kategorien: []
   fehlende_themen:
-  - Immobiliarsachenrecht, §§ 873 ff. BGB (P3)
-  - Eigentuemer-Besitzer-Verhaeltnis vertieft (P3)
+  - Eigentumsvorbehalt und Anwartschaftsrecht, Verarbeitung/Verbindung (§§ 946 ff. BGB) (P1)
+  - Immobiliarsachenrecht (§§ 873 ff., 892, Grundschuld/Hypothek, Vormerkung) (P1)
+  - Besitz, Besitzschutz (§§ 854 ff., 858 ff. BGB) und Pfandrecht (P1)

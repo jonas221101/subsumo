@@ -8,8 +8,7 @@ kurs:
   quellen:
   - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Staatsstrukturprinzipien, Gesetzgebungsverfahren, Verfassungsorgane und Organstreit -
-    ergaenzt um die Verfassung des eigenen Bundeslands.
+  beschreibung: Staatsstrukturprinzipien und Wahlrechtsgrundsätze, Gesetzgebungskompetenzen und -verfahren, Organstreit und Normenkontrolle - ergänzt um die Verfassung des eigenen Bundeslands. Verfassungsorgane und Abgeordnetenrecht fehlen noch.
   lernziele:
   - Gesetzgebungsverfahren (Art. 76 ff. GG) mit Zustimmungs-/Einspruchsgesetz pruefen
   - Organstreitverfahren in Zulaessigkeit und Begruendetheit aufbauen
@@ -20,8 +19,13 @@ kurs:
   topic_slugs:
   - or-staatsorganisationsrecht-gesetzgebungsverfahren
   - or-verfassungsprozessrecht-organstreitverfahren
+  - or-staatsorganisationsrecht-staatsstrukturprinzipien
+  - or-staatsorganisationsrecht-gesetzgebungskompetenzen
+  - or-verfassungsprozessrecht-normenkontrolle-93-100
   landesrecht_kategorien:
   - landesrecht-allgemein
   fehlende_themen:
-  - Bund-Laender-Kompetenzen, Art. 70 ff. GG (P3)
-  - Normenkontrollverfahren (P3)
+  - 'Verfassungsorgane (Art. 62 ff. GG: Bundespräsident, Bundesregierung, Bundesrat) (P1)'
+  - Abgeordnete und Parteien (Art. 21, 38, 46-48 GG) (P1)
+  - Bund-Länder-Streit, § 32 BVerfGG, Finanzverfassung (P2)
+  - Europarecht/Unionsrecht Grundzüge (P1)

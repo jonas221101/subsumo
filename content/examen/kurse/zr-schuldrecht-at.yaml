@@ -8,8 +8,7 @@ kurs:
   quellen:
   - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: 'Leistungsstoerungsrecht: Unmoeglichkeit, Verzug, Schadensersatz statt der Leistung, Ruecktritt,
-    vorvertragliche Pflichten und AGB-Kontrolle.'
+  beschreibung: 'Leistungsstörungsrecht und allgemeines Schuldrecht: Unmöglichkeit, Verzug, Schadensersatz statt der Leistung, Rücktritt, vorvertragliche Pflichten, AGB-Kontrolle, Abtretung und Schadensrecht (§§ 249-254 BGB). Grundstock; es fehlen noch Verschulden/Zurechnung (§§ 276, 278), Erlöschen der Schuld und Verträge mit Drittbezug.'
   lernziele:
   - Das System der §§ 280 ff. BGB als Anspruchsgrundlagen-Baukasten beherrschen
   - Unmoeglichkeit (§ 275 BGB) und ihre Rechtsfolgen (§§ 283, 326 BGB) pruefen
@@ -25,5 +24,11 @@ kurs:
   - zr-schuldrecht-at-ruecktritt
   - zr-schuldrecht-at-cic
   - zr-schuldrecht-at-agb-kontrolle
+  - zr-abtretung-398
+  - zr-schadensrecht-249-254
   landesrecht_kategorien: []
-  fehlende_themen: []
+  fehlende_themen:
+  - §§ 276, 278 BGB (Vertretenmüssen, Erfüllungsgehilfe) als eigenes Thema (P1)
+  - Gesamtschuld, Aufrechnung, Erfüllung und Erfüllungssurrogate (P1)
+  - Vertrag mit Schutzwirkung zugunsten Dritter, § 328 BGB, Drittschadensliquidation (P1)
+  - Störung der Geschäftsgrundlage, § 313 BGB (P2)

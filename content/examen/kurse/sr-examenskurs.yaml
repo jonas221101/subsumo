@@ -8,8 +8,7 @@ kurs:
   quellen:
   - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Gesamtwiederholung AT und BT auf Examensniveau, mit Blick auf mehrpersonale Sachverhalte
-    und Konkurrenzfragen.
+  beschreibung: Wiederholung von AT und BT auf Examensniveau, mit Blick auf mehrpersonale Sachverhalte und Konkurrenzfragen. Grundstock mit Schwerpunkt AT und Vermögensdelikten; Randdelikte (Brandstiftung, Aussage, Straßenverkehr), Freiheitsdelikte und die StPO fehlen noch.
   lernziele:
   - Mehrpersonale Sachverhalte nach Tatkomplexen und Beteiligten gliedern
   - AT-Figuren (Versuch, Irrtum, Beteiligung) innerhalb der BT-Delikte sicher anwenden
@@ -37,7 +36,27 @@ kurs:
   - sr-bt-erpressung-253
   - sr-bt-betrug
   - sr-bt-untreue-266
+  - sr-at-konkurrenzen
+  - sr-at-schuld-20-35
+  - sr-at-rechtfertigende-einwilligung
+  - sr-at-erlaubnistatbestandsirrtum
+  - sr-bt-koerperverletzung-226-227
+  - sr-bt-diebstahl-qualifikationen-244
+  - sr-bt-anschlussdelikte-257-259
   landesrecht_kategorien: []
   fehlende_themen:
-  - Konkurrenzen (P3)
-  - Strafprozessrecht Grundzuege (P3)
+  - Brandstiftungsdelikte §§ 306 ff. StGB (P1)
+  - Sachbeschädigung §§ 303 ff. StGB (P1)
+  - § 263a, § 265a StGB (P1)
+  - Aussagedelikte §§ 153 ff., Falsche Verdächtigung § 164 StGB (P1)
+  - Straßenverkehrsdelikte §§ 315b, 315c, 316, 142, 315d StGB (P1)
+  - § 252, § 316a StGB (P1)
+  - Urkundendelikte §§ 268, 269, 271, 274 StGB (P2)
+  - Freiheitsdelikte §§ 239, 239a, 239b StGB (P1)
+  - 'Beteiligung vertiefen: § 28, Mord-Beteiligung, Organisationsherrschaft, § 30 StGB (P1)'
+  - Strafprozessrecht Grundzüge (P1)
+  - § 123, §§ 185 ff. StGB (P2)
+  - §§ 113, 114, 323c StGB (P2)
+  - 'Notrechte: § 127 StPO, §§ 229, 859 BGB (P2)'
+  - §§ 225, 229, 231 StGB (P2)
+  - Rücktritt vertiefen, Amtsdelikte §§ 331 ff. StGB (P2)
