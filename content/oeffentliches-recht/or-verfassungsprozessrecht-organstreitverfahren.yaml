@@ -230,7 +230,7 @@ faelle:
       und mit einer nachvollziehbaren, auf den Einzelfall bezogenen Begründung eingeschränkt
       werden. Eine floskelhafte Berufung auf das Staatswohl ohne nähere Substantiierung
       reicht dafür nicht aus, sodass die Antwortverweigerung das Frage- und Informationsrecht
-      der F verletzt.'
+      der F verletzt. Der Antrag der F ist daher zulässig und begründet.'
   expectation:
     pruefpunkte:
     - id: p1
@@ -241,7 +241,6 @@ faelle:
       keywords:
       - anderer Beteiligter
       - andere Beteiligte
-      - Geschäftsordnung des Bundestages
       - Art. 93 Abs. 1 Nr. 1 GG
       card_slugs:
       - or-osv-beteiligtenfaehigkeit-andere-beteiligte
@@ -251,9 +250,9 @@ faelle:
       required: true
       keywords:
       - Möglichkeitstheorie
-      - nicht von vornherein ausgeschlossen
       - Antragsbefugnis
       - möglicherweise verletzt
+      - Antragsbefugnis der F
       card_slugs:
       - or-osv-antragsbefugnis-64
     - id: p3
@@ -267,7 +266,6 @@ faelle:
       keywords:
       - parlamentarisches Frage- und Informationsrecht
       - Frage- und Informationsrecht
-      - Kontrollrecht des Parlaments
       - Art. 38 Abs. 1 S. 2 GG
       - Art. 20 Abs. 2 GG
       card_slugs:
@@ -282,8 +280,6 @@ faelle:
       - Sechsmonatsfrist
       - § 64 Abs. 3 BVerfGG
       - innerhalb der Frist
-      - Frist ist eingehalten
-      - Frist ist gewahrt
       - vier Monate
       card_slugs:
       - or-osv-antragsfrist-64-abs3
@@ -293,11 +289,10 @@ faelle:
       weight: 3.0
       required: true
       keywords:
-      - pauschale Berufung auf das Staatswohl
       - pauschale Begründung
-      - nicht ausreichend substantiiert
       - Staatswohl
-      - konkrete Darlegung
+      - pauschale Berufung
+      - floskelhafte Berufung
       card_slugs:
       - or-gr-verhaeltnismaessigkeit
     - id: p6
@@ -305,7 +300,5 @@ faelle:
       weight: 0.5
       required: false
       keywords:
-      - Antrag ist zulässig und begründet
-      - Antrag ist begründet
-      - Informationsrecht der Fraktion verletzt
-      - Verletzung des Frage- und Informationsrechts
+      - zulässig und begründet
+      - Antrag begründet

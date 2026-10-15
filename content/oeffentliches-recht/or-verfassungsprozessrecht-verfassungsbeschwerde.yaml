@@ -388,7 +388,6 @@ faelle:
       - Beschwerdefähigkeit
       - Akt der öffentlichen Gewalt
       - Gesetz als Beschwerdegegenstand
-      - § 90 Abs. 1 BVerfGG
       card_slugs:
       - or-vpr-vb-beschwerdefaehigkeit
       - or-vpr-vb-beschwerdegegenstand
@@ -402,7 +401,6 @@ faelle:
       - Art. 1 Abs. 1 GG
       keywords:
       - informationelle Selbstbestimmung
-      - Art. 2 Abs. 1 i. V. m. Art. 1 Abs. 1 GG
       - allgemeines Persönlichkeitsrecht
       - Möglichkeit einer Grundrechtsverletzung
       - Beschwerdebefugnis
@@ -441,7 +439,6 @@ faelle:
       - Rechtswegerschöpfung
       - Feststellungsklage
       - unzumutbar
-      - § 90 Abs. 2 BVerfGG
       card_slugs:
       - or-vpr-vb-rechtswegerschoepfung-90-abs2
       - or-vpr-vb-subsidiaritaet-rechtssatzverfassungsbeschwerde
@@ -455,11 +452,8 @@ faelle:
       - § 92 BVerfGG
       keywords:
       - Jahresfrist
-      - § 93 Abs. 3 BVerfGG
       - Inkrafttreten
       - Schriftform
-      - § 23 Abs. 1 BVerfGG
-      - § 92 BVerfGG
       card_slugs:
       - or-vpr-vb-frist-93
     - id: p6
@@ -488,7 +482,6 @@ faelle:
       norms:
       - § 95 Abs. 3 BVerfGG
       keywords:
-      - § 95 Abs. 3 BVerfGG
       - Nichtigerklärung
       - Unvereinbarerklärung
       - Gesetz ist nichtig

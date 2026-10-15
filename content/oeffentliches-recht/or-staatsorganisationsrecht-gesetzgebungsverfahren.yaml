@@ -259,8 +259,7 @@ faelle:
       required: false
       keywords:
       - Zustimmungsgesetz
-      - ausdrückliche Bestimmung des Grundgesetzes
-      - Zustimmung des Bundesrates vorschreibt
+      - zustimmungsbedürftig
       card_slugs:
       - or-gg-gesetzgebung-zustimmungs-einspruchsgesetz
     - id: p2
@@ -269,11 +268,11 @@ faelle:
       weight: 3.0
       required: true
       keywords:
-      - Zurückweisung des Einspruchs ersetzt
-      - Einspruch ersetzt nicht die Zustimmung
-      - Zustimmung ist erforderlich
       - konstitutive Voraussetzung
       - Art. 78 GG
+      - Zustimmung erforderlich
+      - Einspruch ersetzt nicht
+      - Zurückweisung des Einspruchs
       card_slugs:
       - or-gg-gesetzgebung-zustandekommen-zustimmungsgesetz
     - id: p3
@@ -282,10 +281,10 @@ faelle:
       weight: 2.0
       required: true
       keywords:
-      - ausdrückliche Zustimmung fehlt
       - Zustimmungserklärung fehlt
       - keine Zustimmung erklärt
-      - hat nur Einspruch eingelegt
+      - Zustimmung fehlt
+      - nur Einspruch eingelegt
       card_slugs:
       - or-gg-gesetzgebung-zustandekommen-zustimmungsgesetz
     - id: p4
@@ -294,8 +293,7 @@ faelle:
       required: true
       keywords:
       - formell verfassungswidrig
-      - nicht wirksam zustande gekommen
-      - Gesetz ist nicht zustande gekommen
+      - nicht zustande gekommen
       card_slugs:
       - or-gg-gesetzgebung-zustandekommen-zustimmungsgesetz
     - id: p5
@@ -303,10 +301,9 @@ faelle:
       weight: 1.5
       required: false
       keywords:
-      - Ausfertigung heilt den Verfahrensfehler nicht
       - Art. 82 Abs. 1 GG
-      - Ausfertigung setzt ein ordnungsgemäß zustande gekommenes Gesetz voraus
-      - Verfahrensfehler wird nicht geheilt
+      - Verfahrensfehler nicht geheilt
+      - Ausfertigung heilt nicht
       card_slugs:
       - or-gg-gesetzgebung-ausfertigung-verkuendung
       - or-gg-gesetzgebung-pruefungsrecht-bundespraesident
