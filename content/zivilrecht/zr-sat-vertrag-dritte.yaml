@@ -119,8 +119,8 @@ cards:
     für den Schuldner und die Schutzbedürftigkeit des Dritten. Eine Grenze ergibt
     sich daraus, dass die Haftung nicht uferlos ausgeweitet werden soll: Der Kreis
     der einbezogenen Dritten muss für den Schuldner objektiv abgrenzbar sein und seine
-    Haftung ist kalkulierbar zu halten. Reine Vermögensschäden Dritter werden außerhalb der Expertenfälle nur
-    zurückhaltend ersetzt.
+    Haftung ist kalkulierbar zu halten. Reine Vermögensschäden Dritter werden außerhalb
+    der Expertenfälle nur zurückhaltend ersetzt.
   norms:
   - § 241 Abs. 2 BGB
   - § 280 Abs. 1 BGB
@@ -141,9 +141,10 @@ cards:
     Anspruch des Gläubigers gegen den Schädiger, (2) ein Schaden des Dritten, der
     nach dem Schutzzweck des Anspruchs beim Gläubiger entstanden wäre, (3) eine zufällige
     Schadensverlagerung auf den Dritten aufgrund einer rechtlichen Sonderbeziehung
-    zwischen Gläubiger und Drittem. Der Gläubiger kann Leistung an den Dritten verlangen
-    oder, wenn der Dritte ihm die Ansprüche gegen den Schädiger abtritt, Zahlung an
-    sich.
+    zwischen Gläubiger und Drittem. Der Gläubiger kann seinen Anspruch auf Ersatz
+    des Drittschadens geltend machen und ist dem Dritten im Innenverhältnis zur Herausgabe
+    des Erlangten verpflichtet; alternativ kann er seinen Anspruch an den Dritten
+    abtreten (§ 398 BGB) oder Leistung an diesen verlangen.
   norms:
   - § 280 Abs. 1 BGB
   - § 398 BGB
@@ -160,10 +161,15 @@ cards:
     beim Kommittenten an. (2) Die obligatorische Gefahrentlastung: Beim Versendungskauf
     trägt der Käufer die Preisgefahr (§ 447 Abs. 1 BGB), geht die Ware beim Transport
     unter, hat der Verkäufer einen Anspruch gegen den Frachtführer, aber keinen Schaden,
-    während der Käufer weiterzahlen muss. (3) Die Obhutsverhältnisse: Der Gläubiger hat eine fremde Sache in Obhut (etwa als Mieter, Entleiher oder Verwahrer) ohne dem Eigentümer
-    für den Verlust einzustehen; beschädigt der Schuldner die Sache, fällt der Schaden
-    beim Eigentümer an, während der Gläubiger keinen Schaden hat. (4) Teilweise wird
-    die Treuhand genannt, bei der der Schaden beim Treugeber anfällt.
+    während der Käufer weiterzahlen muss. (3) Die Obhutsverhältnisse: Der Gläubiger hat eine fremde Sache
+    in Obhut (etwa als Entleiher, Verwahrer oder Spediteur), ohne dem Eigentümer
+    für deren Beschädigung durch Dritte einzustehen; beschädigt der Schuldner die
+    Sache, fällt der Schaden beim Eigentümer an, während der Gläubiger keinen Schaden
+    hat. Diese Fallgruppe ist im Einzelnen umstritten, weil sich viele Fälle bereits
+    über den Vertrag mit Schutzwirkung lösen lassen. (4) Teilweise wird die Treuhand
+    genannt, bei der der Schaden beim Treugeber anfällt. Beim Versendungskauf ist
+    § 447 Abs. 1 BGB im Verbrauchsgüterkauf nach § 475 Abs. 2 BGB nur eingeschränkt
+    anwendbar.
   norms:
   - § 447 Abs. 1 BGB
   quellen:
@@ -315,6 +321,8 @@ faelle:
       - Erkennbarkeit
       - Schutzbedürftigkeit
       - kein eigener vertraglicher Anspruch
+      - erkennbar
+      - schutzbedürftig
       card_slugs:
       - zr-vsd-schutzwirkung-voraussetzungen
     - id: p5

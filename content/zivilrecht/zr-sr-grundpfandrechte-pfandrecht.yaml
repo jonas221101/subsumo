@@ -139,8 +139,9 @@ cards:
     Abtretungserklärung und Übergabe des Briefs (§ 1154 Abs. 1 BGB). Die Grundschuld
     wird nach §§ 1154, 398 BGB übertragen: Bei der Buchgrundschuld ist Einigung und
     Eintragung (§§ 873, 1154 Abs. 3 BGB) erforderlich, bei der Briefgrundschuld Abtretungserklärung
-    in Schriftform mit Briefübergabe. Gutgläubiger Erwerb ist nach § 892 BGB möglich,
-    bei Briefrechten nach § 1155 BGB. Die Einreden gegen den Erwerber der Sicherungsgrundschuld
+    in Schriftform mit Briefübergabe. Gutgläubiger Erwerb ist nach § 892 BGB möglich;
+    bei Briefrechten tritt für die Abtretungskette der öffentliche Glaube beglaubigter
+    Abtretungserklärungen nach § 1155 BGB hinzu. Die Einreden gegen den Erwerber der Sicherungsgrundschuld
     regelt § 1192 Abs. 1a BGB.
   norms:
   - § 1153 BGB
@@ -274,8 +275,8 @@ schemata:
     - label: 2. Eintragung oder Brief bei der Übertragung
   - label: III. Fälligkeit
     hinweis: >-
-      Kündigung, § 1193 BGB (Frist sechs Monate); Zahlungsverzug nicht Voraussetzung
-      der Fälligkeit, aber Vollstreckung aus Titel.
+      Kündigung, § 1193 BGB (Frist sechs Monate); Zahlungsverzug ist keine
+      Voraussetzung der Fälligkeit; Vollstreckung setzt einen Duldungstitel voraus.
   - label: IV. Kein Anspruchsausschluss durch Einreden
     children:
     - label: 1. Einreden aus dem Sicherungsvertrag
@@ -310,7 +311,8 @@ faelle:
       der Forderung ändert nichts, weil die Grundschuld nicht akzessorisch ist.
   - prompt: Ist die Grundschuld fällig?
     erwartung: >-
-      Ja, nach Kündigung und Ablauf der Frist von sechs Monaten (§ 1193 Abs. 1 BGB).
+      Die Grundschuld ist fällig, weil sie gekündigt wurde und die Kündigungsfrist von
+      sechs Monaten abgelaufen ist (§ 1193 Abs. 1 BGB).
   - prompt: Welche Einrede hat E, und gegen wen wirkt sie?
     erwartung: >-
       E hat gegen S eine Einrede aus dem Sicherungsvertrag, weil das Darlehen getilgt

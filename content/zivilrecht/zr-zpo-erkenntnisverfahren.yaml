@@ -40,8 +40,7 @@ cards:
   front: Wie bestimmt sich die sachliche und örtliche Zuständigkeit (§§ 23, 71 GVG, §§ 12
     ff. ZPO)?
   back: Sachlich zuständig ist das Amtsgericht für Streitigkeiten bis zum Zuständigkeitsstreitwert
-    des § 23 Nr. 1 GVG (zuletzt 5.000 Euro; eine Anhebung auf 10.000 Euro war zum 1.1.2026
-    vorgesehen; aktuelle Gesetzesfassung prüfen) und unabhängig vom Wert für Wohnraummietsachen
+    des § 23 Nr. 1 GVG (nach der Anhebung zum 1.1.2026 10.000 Euro, zuvor 5.000 Euro) und unabhängig vom Wert für Wohnraummietsachen
     (§ 23 Nr. 2 Buchst. a GVG), im Übrigen das Landgericht (§ 71 Abs. 1 GVG). Örtlich ist
     grundsätzlich der allgemeine Gerichtsstand des Beklagten am Wohnsitz maßgeblich (§§ 12,
     13 ZPO), bei juristischen Personen am Sitz (§ 17 ZPO). Besondere Gerichtsstände sind insbesondere
@@ -124,8 +123,8 @@ cards:
     oder rechtlicher Anführungen (§ 264 Nr. 1 ZPO), die Erweiterung oder Beschränkung des
     Klageantrags in der Hauptsache oder in Bezug auf Nebenforderungen ohne Änderung des Klagegrundes
     (§ 264 Nr. 2 ZPO) und der Übergang auf einen anderen Gegenstand oder das Interesse wegen
-    einer später eingetretenen Veränderung (§ 264 Nr. 3 ZPO). Die Entscheidung über die Sachdienlichkeit
-    ist nicht selbständig anfechtbar.
+    einer später eingetretenen Veränderung (§ 264 Nr. 3 ZPO). Die Entscheidung, dass eine Änderung nicht vorliege oder
+    sachdienlich sei, ist nicht selbständig anfechtbar (§ 268 ZPO).
   norms:
   - § 263 ZPO
   - § 264 ZPO
@@ -323,10 +322,11 @@ faelle:
       Abs. 2 BGB.
   - prompt: Hat der Einspruch des B Erfolg?
     erwartung: Nein. Der Einspruch muss binnen zwei Wochen ab Zustellung eingelegt werden
-      (§ 339 Abs. 1 ZPO, Notfrist). Die Frist begann am 2. März 2026 und endete am 16. März
-      2026. Der Einspruch vom 20. März 2026 ist verspätet und wird als unzulässig verworfen
-      (§ 341 Abs. 1 ZPO); Wiedereinsetzung kommt mangels Vortrags nicht in Betracht (§ 233
-      ZPO). Das Versäumnisurteil wird rechtskräftig.
+      (§ 339 Abs. 1 ZPO, Notfrist). Die Frist lief mit der Zustellung am 2. März 2026 an und
+      endete mit Ablauf des 16. März 2026 (§ 222 ZPO, §§ 187, 188 BGB). Der Einspruch vom
+      20. März 2026 ist verspätet und wird nach § 341 Abs. 1 ZPO als unzulässig verworfen.
+      Eine Wiedereinsetzung (§ 233 ZPO) scheidet mangels Vortrags von Gründen aus. Das Versäumnisurteil
+      wird rechtskräftig.
   expectation:
     pruefpunkte:
     - id: p1
@@ -391,10 +391,9 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - § 341 ZPO
+      - § 341
       - Verwerfung des Einspruchs
-      - Wiedereinsetzung
-      - § 233 ZPO
+      - als unzulässig verworfen
       - rechtskräftig
       card_slugs:
       - zr-zpo-erk-versaeumnisurteil

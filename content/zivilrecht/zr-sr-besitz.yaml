@@ -128,9 +128,10 @@ cards:
     Verbotene Eigenmacht begeht, wer dem Besitzer ohne dessen Willen den Besitz entzieht
     oder ihn im Besitz stört, sofern nicht das Gesetz die Entziehung oder Störung
     gestattet (§ 858 Abs. 1 BGB). Es genügt eine objektive Beeinträchtigung; Verschulden
-    ist nicht erforderlich. Der Besitz des Täters ist gegenüber dem Besitzer und dessen
-    Gesamtrechtsnachfolgern fehlerhaft (§ 858 Abs. 2 BGB); gegenüber Sonderrechtsnachfolgern
-    des Täters gilt dies nur bei Kenntnis der Fehlerhaftigkeit beim Erwerb. Rechtsfolgen:
+    ist nicht erforderlich. Der durch verbotene Eigenmacht erlangte Besitz ist fehlerhaft
+    (§ 858 Abs. 2 S. 1 BGB). Ein Nachfolger im Besitz muss die Fehlerhaftigkeit nur
+    gegen sich gelten lassen, wenn er Erbe des Fehlerhaften ist oder sie beim Erwerb
+    kennt (§ 858 Abs. 2 S. 2 BGB). Rechtsfolgen:
     Selbsthilferecht nach § 859 BGB, Besitzschutzansprüche nach §§ 861, 862 BGB und
     Schadensersatz nach § 823 Abs. 2 BGB i. V. m. § 858. Gesetzlich gestattet sind
     z. B. Eingriffe nach §§ 229, 904 BGB oder aufgrund hoheitlicher Befugnisse.
@@ -201,7 +202,8 @@ cards:
     verlangen; kann oder will dieser den Besitz nicht wieder übernehmen, kann der
     mittelbare Besitzer Herausgabe an sich selbst verlangen (§ 869 S. 2 BGB). Dadurch
     wird sichergestellt, dass der Besitzmittler nicht gegen seinen Willen zum Besitzer
-    wird. Selbsthilferechte hat der mittelbare Besitzer dagegen nicht.
+    wird. Die Vorschrift verleiht ausdrücklich nur die possessorischen Ansprüche
+    der §§ 861, 862 BGB.
   norms:
   - § 869 BGB
   - § 861 BGB
@@ -220,7 +222,7 @@ cards:
     in gutem Glauben war. Nach Abs. 2 hat er einen Herausgabeanspruch auch gegen den
     gutgläubigen Besitzer, wenn ihm die Sache gestohlen, verloren oder sonst abhanden
     gekommen ist, es sei denn, der Besitzer ist Eigentümer oder die Sache war auch
-    ihm selbst abhanden gekommen. Auf Geld und Inhaberpapiere ist Abs. 2 nicht anwendbar.
+    ihm selbst vor der Besitzzeit des früheren Besitzers abhanden gekommen. Auf Geld und Inhaberpapiere ist Abs. 2 nicht anwendbar.
     Ausgeschlossen ist der Anspruch, wenn der frühere Besitzer beim Besitzerwerb nicht
     in gutem Glauben war oder den Besitz aufgegeben hat (Abs. 3 S. 1). Im Übrigen
     gelten §§ 986–1003 BGB entsprechend (Abs. 3 S. 2).
@@ -241,8 +243,8 @@ cards:
     dass er während der Besitzzeit Eigentümer war (Abs. 2), und beim mittelbaren Besitz
     gilt die Vermutung zugunsten des mittelbaren Besitzers (Abs. 3). Die Vermutung
     gilt nicht gegenüber einem früheren Besitzer, dem die Sache gestohlen, verloren
-    oder sonst abhanden gekommen ist (Abs. 1 S. 2), und nicht für Geld und Inhaberpapiere
-    (Abs. 1 S. 3). Sie ist widerlegbar. Praktisch entlastet § 1006 BGB den Besitzer
+    oder sonst abhanden gekommen ist (Abs. 1 S. 2); bei Geld und Inhaberpapieren
+    gilt sie aber auch ihm gegenüber. Sie ist widerlegbar (§ 292 ZPO). Praktisch entlastet § 1006 BGB den Besitzer
     beim Eigentumsnachweis, etwa im Rahmen des § 985 BGB oder der Drittwiderspruchsklage
     (§ 771 ZPO).
   norms:
@@ -300,7 +302,7 @@ faelle:
   - BGB, amtliche Fassung
   facts: >-
     Eigentümer A hat sein Motorrad zur Reparatur in die Werkstatt des Mechanikers
-    M gegeben. M arbeitet allein, Angestellter G ist als Gehilfe nach Weisung tätig
+    M gegeben. M führt die Werkstatt, sein Angestellter G ist als Gehilfe nach Weisung tätig
     und verwahrt in M's Abwesenheit den Schlüssel. In der Nacht des 2. Mai holt N,
     der meint, das Motorrad stehe ihm zu, es ohne Willen von M mit einem Nachschlüssel
     aus der Werkstatt und stellt es in seine Garage. M erfährt dies am 3. Mai. N hatte
