@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../api.dart';
@@ -39,6 +40,9 @@ class GutachtenPage extends StatefulWidget {
 
   String get _titel => mode == 'klausur' ? '$caseTitle (Klausur)' : caseTitle;
 
+  /// Schluessel des lokalen Entwurfs - je Fall, unabhaengig vom Modus.
+  static String entwurfKey(String slug) => 'gutachten_entwurf_$slug';
+
   @override
   State<GutachtenPage> createState() => _GutachtenPageState();
 }
@@ -52,6 +56,17 @@ class _GutachtenPageState extends State<GutachtenPage> {
   Map<String, dynamic>? _structure;
   Map<String, dynamic>? _result;
   bool _busy = false;
+
+  /// Text zum Zeitpunkt der letzten erfolgreichen Abgabe - weicht der aktuelle
+  /// Text davon ab, ist das Ergebnis veraltet.
+  String? _submittedText;
+  Timer? _saveDebounce;
+  Timer? _ticker;
+  bool _restoring = false;
+  SharedPreferences? _prefs;
+
+  bool get _resultStale => _result != null && _controller.text != _submittedText;
+  bool get _klausur => widget.mode == 'klausur';
 
   /// Ob die KI-Korrektur ueberhaupt aktiv ist (`GET /v1/public/config`,
   /// SUB-133/SUB-134) - unabhaengig von der Einwilligung dieses Nutzers.
@@ -81,11 +96,82 @@ class _GutachtenPageState extends State<GutachtenPage> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) => _loadCase());
     WidgetsBinding.instance.addPostFrameCallback((_) => _loadAiCorrectionEnabled());
-    _controller.addListener(_scheduleAnalysis);
+    WidgetsBinding.instance.addPostFrameCallback((_) => _restoreDraft());
+    _controller.addListener(_onTextChanged);
+    if (_klausur) {
+      _ticker = Timer.periodic(const Duration(seconds: 1), (_) {
+        if (mounted) setState(() {});
+      });
+    }
+  }
+
+  void _onTextChanged() {
+    if (_restoring) return;
+    _scheduleAnalysis();
+    _scheduleSave();
+    // Veraltet-Status und Abgabe-Button haengen am Text.
+    if (mounted) setState(() {});
+  }
+
+  void _scheduleSave() {
+    _saveDebounce?.cancel();
+    _saveDebounce = Timer(const Duration(milliseconds: 800), _saveDraft);
+  }
+
+  Future<void> _saveDraft() async {
+    try {
+      final prefs = _prefs ??= await SharedPreferences.getInstance();
+      final key = GutachtenPage.entwurfKey(widget.caseSlug);
+      final text = _controller.text;
+      if (text.trim().isEmpty) {
+        await prefs.remove(key);
+      } else {
+        await prefs.setString(key, text);
+      }
+    } on Exception {
+      // Autosave ist eine Zugabe - nie das Schreiben stoeren.
+    }
+  }
+
+  Future<void> _restoreDraft() async {
+    try {
+      final prefs = _prefs ??= await SharedPreferences.getInstance();
+      final draft = prefs.getString(GutachtenPage.entwurfKey(widget.caseSlug));
+      if (!mounted || draft == null || draft.isEmpty || _controller.text.isNotEmpty) return;
+      _restoring = true;
+      _controller.text = draft;
+      _restoring = false;
+      setState(() {});
+      _scheduleAnalysis();
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Dein gespeicherter Entwurf wurde wiederhergestellt.')),
+      );
+    } on Exception {
+      _restoring = false;
+    }
+  }
+
+  /// Beim Verlassen (Zurueck-Pfeil): Entwurf sofort sichern und kurz melden.
+  void _onPopped() {
+    _saveDebounce?.cancel();
+    final text = _controller.text;
+    if (text.trim().isEmpty || (_result != null && text == _submittedText)) return;
+    final prefs = _prefs;
+    final key = GutachtenPage.entwurfKey(widget.caseSlug);
+    if (prefs != null) {
+      prefs.setString(key, text);
+    } else {
+      SharedPreferences.getInstance().then((p) => p.setString(key, text));
+    }
+    ScaffoldMessenger.maybeOf(context)?.showSnackBar(
+      const SnackBar(content: Text('Entwurf gespeichert')),
+    );
   }
 
   @override
   void dispose() {
+    _ticker?.cancel();
+    _saveDebounce?.cancel();
     _debounce?.cancel();
     _controller.dispose();
     super.dispose();
@@ -192,13 +278,27 @@ class _GutachtenPageState extends State<GutachtenPage> {
 
     setState(() => _busy = true);
     try {
+      final text = _controller.text;
       final result = await app.api.submitCase(
         widget.caseSlug,
-        _controller.text,
+        text,
         mode: widget.mode,
         durationSeconds: DateTime.now().difference(_startedAt).inSeconds,
       );
-      if (mounted) setState(() => _result = result);
+      if (mounted) {
+        setState(() {
+          _result = result;
+          _submittedText = text;
+        });
+      }
+      // Abgegeben: der lokale Entwurf wird nicht mehr gebraucht.
+      _saveDebounce?.cancel();
+      try {
+        final prefs = _prefs ??= await SharedPreferences.getInstance();
+        await prefs.remove(GutachtenPage.entwurfKey(widget.caseSlug));
+      } on Exception {
+        // Entwurf bleibt hoechstens als harmloser Rest liegen.
+      }
     } on Exception catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context)
@@ -233,7 +333,11 @@ class _GutachtenPageState extends State<GutachtenPage> {
       );
     }
 
-    return Scaffold(
+    return PopScope(
+      onPopInvokedWithResult: (didPop, _) {
+        if (didPop) _onPopped();
+      },
+      child: Scaffold(
       // Lesemodus (SUB-160) blendet nur den Titel aus, behaelt aber eine
       // schmale AppBar mit dem Umschalter - eine schwebende Schaltflaeche
       // ueber dem Inhalt (statt in der Chrome) wuerde bei kurzen Fenstern
@@ -263,7 +367,13 @@ class _GutachtenPageState extends State<GutachtenPage> {
                   padding: const EdgeInsets.all(Spacing.lg),
                   children: [
                     ..._buildFacts(),
-                    SizedBox(height: 420, child: _buildEditor()),
+                    SizedBox(
+                      // Klausur: grosses Schreibfeld statt Uebungshoehe.
+                      height: _klausur
+                          ? max(560, MediaQuery.sizeOf(context).height * 0.75)
+                          : 420,
+                      child: _buildEditor(),
+                    ),
                     const SizedBox(height: Spacing.lg),
                     feedback,
                   ],
@@ -307,7 +417,7 @@ class _GutachtenPageState extends State<GutachtenPage> {
           },
         ),
       ),
-    );
+    ));
   }
 
   /// Sachverhalt und Fallfrage vollstaendig, ohne eigene Hoehenbegrenzung -
@@ -339,9 +449,39 @@ class _GutachtenPageState extends State<GutachtenPage> {
         ],
       ];
 
+  Widget _buildTimer() {
+    final minutes = (_case?['minutes'] as num?)?.toInt() ?? 300;
+    final rest = Duration(minutes: minutes) - DateTime.now().difference(_startedAt);
+    final over = rest.isNegative;
+    final abs = rest.abs();
+    String two(int n) => n.toString().padLeft(2, '0');
+    final text = '${over ? '-' : ''}${two(abs.inHours)}:${two(abs.inMinutes % 60)}:${two(abs.inSeconds % 60)}';
+    final theme = Theme.of(context);
+    return Padding(
+      padding: const EdgeInsets.only(bottom: Spacing.sm),
+      child: Row(
+        children: [
+          Icon(Icons.timer_outlined, size: 20, color: over ? theme.colorScheme.error : null),
+          const SizedBox(width: Spacing.sm),
+          Text(
+            over ? 'Zeit überschritten: $text' : 'Verbleibende Zeit: $text',
+            key: const ValueKey('klausur-timer'),
+            style: theme.textTheme.titleSmall?.copyWith(
+              color: over ? theme.colorScheme.error : null,
+              fontFeatures: const [FontFeature.tabularFigures()],
+            ),
+          ),
+          const Spacer(),
+          Text('von $minutes min', style: theme.textTheme.bodySmall),
+        ],
+      ),
+    );
+  }
+
   Widget _buildEditor() => Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          if (_klausur) _buildTimer(),
           Expanded(
             child: TextField(
               controller: _controller,
@@ -369,7 +509,7 @@ class _GutachtenPageState extends State<GutachtenPage> {
   Widget _buildFeedback() {
     final Widget child;
     final String key;
-    if (_result != null) {
+    if (_result != null && !_resultStale) {
       key = 'result';
       child = _ResultView(result: _result!, showEngine: _aiCorrectionEnabled);
     } else if (_analysisUpgradeMessage case final analysisUpgradeMessage?) {
@@ -398,11 +538,31 @@ class _GutachtenPageState extends State<GutachtenPage> {
     // Ruhiger Wechsel statt hartem Umschalten, wenn die Strukturanalyse
     // erscheint oder sich der Feedback-Stand aendert (docs/25 Abschnitt 6) -
     // bestehende Motion-Tokens, keine neue Duration/Curve.
-    return AnimatedSwitcher(
+    final switcher = AnimatedSwitcher(
       duration: Motion.normal,
       switchInCurve: Motion.curve,
       switchOutCurve: Motion.curve,
       child: KeyedSubtree(key: ValueKey(key), child: child),
+    );
+    if (!_resultStale) return switcher;
+    // Text nach der Abgabe geaendert: altes Ergebnis ausgeblendet, Hinweis +
+    // wieder laufende Strukturrueckmeldung.
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const SubsumoCard(
+          key: ValueKey('ergebnis-veraltet'),
+          child: SubsumoFeedbackBlock(
+            message: 'Ergebnis veraltet',
+            detail: 'Du hast den Text seit der letzten Abgabe geändert. Die '
+                'bisherige Bewertung gehörte zur alten Fassung - gib erneut ab, '
+                'um eine aktuelle Bewertung zu bekommen.',
+            severity: FeedbackSeverity.hint,
+          ),
+        ),
+        const SizedBox(height: Spacing.md),
+        switcher,
+      ],
     );
   }
 }
