@@ -32,10 +32,10 @@ cards:
   front: Grenze Versagungsgegenklage und Untätigkeitsklage voneinander ab
   back: Bei der Versagungsgegenklage ist über den Antrag bereits durch Ablehnungsbescheid
     entschieden worden; sie setzt regelmäßig ein erfolglos durchgeführtes Vorverfahren
-    voraus. Bei der Untätigkeitsklage nach § 75 VwGO hat die Behörde über einen
-    Antrag oder Widerspruch ohne zureichenden Grund innerhalb angemessener Frist nicht
-    entschieden; hier ersetzt der bloße Zeitablauf das sonst erforderliche Vorverfahren
-    bzw. den Erlass eines Bescheids.
+    voraus. Bei der Untätigkeitsklage nach § 75 VwGO hat die Behörde über einen Antrag
+    oder Widerspruch ohne zureichenden Grund innerhalb angemessener Frist nicht entschieden;
+    hier ersetzt der bloße Zeitablauf das sonst erforderliche Vorverfahren bzw. den
+    Erlass eines Bescheids.
   norms:
   - § 42 Abs. 1 VwGO
   - § 75 VwGO
@@ -62,8 +62,8 @@ cards:
   back: Die Klage darf grundsätzlich nicht vor Ablauf von drei Monaten seit Antragstellung
     oder Einlegung des Widerspruchs erhoben werden, § 75 S. 2 VwGO, es sei denn, es
     liegt wegen besonderer Umstände des Falles ein kürzerer Zeitraum nahe. Hat die
-    Behörde der Fristsetzung einen zureichenden Grund für die Nichtentscheidung
-    mitgeteilt, kann das Gericht das Verfahren aussetzen, § 75 S. 3 VwGO.
+    Behörde der Fristsetzung einen zureichenden Grund für die Nichtentscheidung mitgeteilt,
+    kann das Gericht das Verfahren aussetzen, § 75 S. 3 VwGO.
   norms:
   - § 75 VwGO
   quellen:
@@ -91,11 +91,10 @@ cards:
   front: Unterscheide Vornahmeurteil und Bescheidungsurteil, § 113 Abs. 5 VwGO
   back: Ist die Sache spruchreif und steht dem Kläger der begehrte Anspruch zu, verurteilt
     das Gericht die Behörde zum Erlass des beantragten Verwaltungsakts (Vornahmeurteil,
-    § 113 Abs. 5 S. 1 VwGO). Fehlt es an der Spruchreife - etwa weil der Behörde
-    Ermessen oder ein Beurteilungsspielraum zusteht und dessen fehlerfreie Ausübung
-    noch aussteht - verurteilt das Gericht die Behörde nur zur erneuten Bescheidung
-    unter Beachtung der Rechtsauffassung des Gerichts (Bescheidungsurteil, § 113 Abs.
-    5 S. 2 VwGO).
+    § 113 Abs. 5 S. 1 VwGO). Fehlt es an der Spruchreife - etwa weil der Behörde Ermessen
+    oder ein Beurteilungsspielraum zusteht und dessen fehlerfreie Ausübung noch aussteht
+    - verurteilt das Gericht die Behörde nur zur erneuten Bescheidung unter Beachtung
+    der Rechtsauffassung des Gerichts (Bescheidungsurteil, § 113 Abs. 5 S. 2 VwGO).
   norms:
   - § 113 Abs. 5 VwGO
   quellen:
@@ -138,11 +137,11 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - VwGO, amtliche Fassung
-  facts: A beantragt bei der zuständigen Bauaufsichtsbehörde die Erteilung einer
-    Baugenehmigung für ein Wohnhaus. Vier Monate nach vollständiger Antragstellung
-    hat die Behörde weder entschieden noch A einen zureichenden Grund für die Verzögerung
-    mitgeteilt. A möchte nun unmittelbar Klage auf Erteilung der Baugenehmigung erheben,
-    ohne zuvor ein förmliches Vorverfahren durchlaufen zu haben.
+  facts: A beantragt bei der zuständigen Bauaufsichtsbehörde die Erteilung einer Baugenehmigung
+    für ein Wohnhaus. Vier Monate nach vollständiger Antragstellung hat die Behörde
+    weder entschieden noch A einen zureichenden Grund für die Verzögerung mitgeteilt.
+    A möchte nun unmittelbar Klage auf Erteilung der Baugenehmigung erheben, ohne
+    zuvor ein förmliches Vorverfahren durchlaufen zu haben.
   question: Ist eine solche Klage des A zulässig?
   steps:
   - prompt: Welche Klageart ist statthaft?
@@ -172,7 +171,9 @@ faelle:
       keywords:
       - Verpflichtungsklage
       - Untätigkeitsklage
-      - § 75
+      - § 42 Abs. 1 Var. 2 VwGO
+      - § 75 VwGO
+      - Erlass eines unterlassenen Verwaltungsakts
       card_slugs:
       - or-vwgo-vk-statthaftigkeit
       - or-vwgo-vk-versagungsgegenklage-untaetigkeitsklage
@@ -185,8 +186,10 @@ faelle:
       - § 75 VwGO
       keywords:
       - Sperrfrist
+      - § 75 S. 2 VwGO
       - drei Monate
-      - zureichender Grund
+      - kein zureichender Grund
+      - vier Monate
       card_slugs:
       - or-vwgo-vk-untaetigkeitsklage-sperrfrist
     - id: p3
@@ -195,8 +198,10 @@ faelle:
       weight: 1.5
       required: false
       keywords:
-      - Vorverfahren
-      - entbehrlich
+      - Vorverfahren ist entbehrlich
+      - kein Vorverfahren erforderlich
+      - Sperrfrist tritt an die Stelle des Vorverfahrens
+      - kein Widerspruchsverfahren erforderlich
       card_slugs:
       - or-vwgo-vk-untaetigkeitsklage-sperrfrist
     - id: p4
@@ -205,7 +210,9 @@ faelle:
       required: false
       keywords:
       - Klagebefugnis
-      - möglich
+      - Möglichkeitstheorie
+      - möglicherweise einen Anspruch
+      - Anspruch auf die Baugenehmigung
       card_slugs:
       - or-vwgo-vk-klagebefugnis
     - id: p5
@@ -213,4 +220,6 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - zulässig
+      - Untätigkeitsklage ist zulässig
+      - Verpflichtungsklage ist zulässig
+      - Klage ist zulässig

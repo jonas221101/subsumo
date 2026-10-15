@@ -30,10 +30,10 @@ cards:
   type: definition
   front: Welche drei Arten der Zuständigkeit sind im Rahmen der formellen Rechtmäßigkeit
     zu prüfen?
-  back: Die sachliche Zuständigkeit (welche Behörde für die Aufgabe zuständig
-    ist), die örtliche Zuständigkeit (räumlicher Zuständigkeitsbereich) und die
-    instanzielle bzw. funktionelle Zuständigkeit (welche Ebene oder welcher Amtsträger
-    innerhalb der Behörde handeln darf).
+  back: Die sachliche Zuständigkeit (welche Behörde für die Aufgabe zuständig ist),
+    die örtliche Zuständigkeit (räumlicher Zuständigkeitsbereich) und die instanzielle
+    bzw. funktionelle Zuständigkeit (welche Ebene oder welcher Amtsträger innerhalb
+    der Behörde handeln darf).
   norms:
   - § 3 VwVfG
   - § 46 VwVfG
@@ -61,8 +61,8 @@ cards:
     und bis wann?
   back: § 45 Abs. 1 VwVfG erlaubt die Heilung bestimmter Fehler - etwa der fehlenden
     Begründung oder der unterbliebenen Anhörung - durch Nachholung der jeweiligen
-    Verfahrenshandlung. Nach § 45 Abs. 2 VwVfG ist die Heilung grundsätzlich bis
-    zum Abschluss der letzten Tatsacheninstanz eines verwaltungsgerichtlichen Verfahrens
+    Verfahrenshandlung. Nach § 45 Abs. 2 VwVfG ist die Heilung grundsätzlich bis zum
+    Abschluss der letzten Tatsacheninstanz eines verwaltungsgerichtlichen Verfahrens
     möglich.
   norms:
   - § 45 Abs. 1 VwVfG
@@ -90,9 +90,9 @@ cards:
   front: Wie ist auf der materiellen Ebene zwischen Tatbestand und Rechtsfolge der
     Ermächtigungsgrundlage zu unterscheiden?
   back: Auf Tatbestandsseite ist zu prüfen, ob die tatbestandlichen Voraussetzungen
-    der Norm erfüllt sind - unbestimmte Rechtsbegriffe sind dabei grundsätzlich
-    voll gerichtlich überprüfbar, ausnahmsweise besteht ein Beurteilungsspielraum.
-    Auf Rechtsfolgenseite ist zu prüfen, ob die Behörde - soweit ihr Ermessen eröffnet
+    der Norm erfüllt sind - unbestimmte Rechtsbegriffe sind dabei grundsätzlich voll
+    gerichtlich überprüfbar, ausnahmsweise besteht ein Beurteilungsspielraum. Auf
+    Rechtsfolgenseite ist zu prüfen, ob die Behörde - soweit ihr Ermessen eröffnet
     ist - dieses fehlerfrei ausgeübt hat.
   norms:
   - § 40 VwVfG
@@ -102,10 +102,10 @@ cards:
 - slug: or-va-rm-aufbauschema-grobstruktur
   type: schema_step
   front: Nenne die vier Grobpunkte der Rechtmäßigkeitsprüfung eines Verwaltungsakts.
-  back: (1) Ermächtigungsgrundlage, (2) formelle Rechtmäßigkeit (Zuständigkeit,
-    Verfahren, Form), (3) materielle Rechtmäßigkeit (Tatbestand, ggf. Ermessen,
-    Rechtsfolge), (4) Ergebnis - mit Differenzierung zwischen bloßer Rechtswidrigkeit
-    (aufhebbar) und Nichtigkeit nach § 44 Abs. 1 VwVfG (von Anfang an unwirksam).
+  back: (1) Ermächtigungsgrundlage, (2) formelle Rechtmäßigkeit (Zuständigkeit, Verfahren,
+    Form), (3) materielle Rechtmäßigkeit (Tatbestand, ggf. Ermessen, Rechtsfolge),
+    (4) Ergebnis - mit Differenzierung zwischen bloßer Rechtswidrigkeit (aufhebbar)
+    und Nichtigkeit nach § 44 Abs. 1 VwVfG (von Anfang an unwirksam).
   norms:
   - § 44 Abs. 1 VwVfG
   quellen:
@@ -135,8 +135,8 @@ schemata:
   - label: III. Materielle Rechtmäßigkeit
     children:
     - label: 1. Tatbestand der Ermächtigungsgrundlage erfüllt
-    - label: '2. Rechtsfolge: bei Ermessensnorm fehlerfreie Ermessensausübung, §
-        40 VwVfG'
+    - label: '2. Rechtsfolge: bei Ermessensnorm fehlerfreie Ermessensausübung, § 40
+        VwVfG'
   - label: IV. Ergebnis
     children:
     - label: 1. Rechtswidrig, aber nicht nichtig -> aufhebbar
@@ -145,26 +145,27 @@ schemata:
         (§ 46 VwVfG)
 faelle:
 - slug: or-fall-versaeumter-anhoerungstermin
-  title: Der versäumte Anhörungstermin
+  title: Die unterbliebene Anhörung vor der Imbissuntersagung
   difficulty: 4
   minutes: 60
   quellen:
   - Eigener Sachverhalt der Redaktion
   - VwVfG, amtliche Fassung
-  facts: Die zuständige Ordnungsbehörde untersagt dem Gewerbetreibenden G durch
-    Bescheid den Weiterbetrieb seines Imbissstands wegen wiederholter hygienerechtlicher
-    Verstöße, gestützt auf eine einschlägige gewerberechtliche Ermächtigungsgrundlage,
-    die der Behörde Ermessen einräumt. Vor Erlass des Bescheids hört die Behörde
-    den G nicht an. Im anschließenden Widerspruchsverfahren erhält G ausführlich
-    Gelegenheit, sich zu den Vorwürfen zu äußern und Unterlagen vorzulegen; der
-    Widerspruchsbescheid hält die Untersagung im Ergebnis aufrecht.
+  facts: Die zuständige Ordnungsbehörde untersagt dem Gewerbetreibenden G durch Bescheid
+    den Weiterbetrieb seines Imbissstands wegen wiederholter hygienerechtlicher Verstöße,
+    gestützt auf eine einschlägige gewerberechtliche Ermächtigungsgrundlage, die der
+    Behörde Ermessen einräumt. Vor Erlass des Bescheids hört die Behörde den G nicht
+    an. Im anschließenden Widerspruchsverfahren erhält G ausführlich Gelegenheit,
+    sich zu den Vorwürfen zu äußern und Unterlagen vorzulegen; der Widerspruchsbescheid
+    hält die Untersagung im Ergebnis aufrecht.
   question: War der Ausgangsbescheid formell rechtmäßig, und wirkt sich ein etwaiger
     Anhörungsmangel auf die Rechtmäßigkeit aus?
   steps:
   - prompt: Lag ein Anhörungsmangel vor?
-    erwartung: Ja - § 28 Abs. 1 VwVfG verlangt vor Erlass eines belastenden Verwaltungsakts
-      Gelegenheit zur Äußerung; diese fehlte hier vollständig, eine Ausnahme nach
-      § 28 Abs. 2 VwVfG ist nicht ersichtlich.
+    erwartung: Ja - § 28 Abs. 1 VwVfG (in Ländern mit eigenem Verwaltungsverfahrensgesetz
+      die entsprechende Landesnorm, z. B. Art. 28 Abs. 1 BayVwVfG) verlangt vor Erlass
+      eines belastenden Verwaltungsakts Gelegenheit zur Äußerung; diese fehlte hier
+      vollständig, eine Ausnahme nach § 28 Abs. 2 VwVfG ist nicht ersichtlich.
   - prompt: Kann der Mangel geheilt werden?
     erwartung: Ja - nach § 45 Abs. 1, Abs. 2 VwVfG kann die unterbliebene Anhörung
       bis zum Abschluss der letzten Tatsacheninstanz eines verwaltungsgerichtlichen
@@ -173,8 +174,8 @@ faelle:
   - prompt: Wäre der Mangel hilfsweise nach § 46 VwVfG unbeachtlich?
     erwartung: Nein - da es sich um eine Ermessensentscheidung handelt, lässt sich
       nicht mit der erforderlichen Offensichtlichkeit ausschließen, dass eine vorherige
-      Anhörung die Ermessensausübung beeinflusst hätte; § 46 VwVfG greift daher
-      nicht, es kommt allein auf die Heilung nach § 45 VwVfG an.
+      Anhörung die Ermessensausübung beeinflusst hätte; § 46 VwVfG greift daher nicht,
+      es kommt allein auf die Heilung nach § 45 VwVfG an.
   - prompt: Zu welchem Ergebnis führt das?
     erwartung: Der ursprüngliche Verfahrensfehler wurde durch Nachholung der Anhörung
       im Widerspruchsverfahren geheilt; der Bescheid ist in der Gestalt des Widerspruchsbescheids
@@ -188,13 +189,16 @@ faelle:
       norms:
       - § 28 Abs. 1 VwVfG
       keywords:
-      - Anhörung
-      - § 28
+      - § 28 Abs. 1 VwVfG
+      - Anhörungsmangel
+      - Gelegenheit zur Äußerung
+      - Art. 28 BayVwVfG
+      - § 28 Abs. 2 VwVfG
       card_slugs:
       - or-va-rm-anhoerungspflicht
     - id: p2
-      label: Heilungsmöglichkeit nach § 45 Abs. 1, Abs. 2 VwVfG durch Nachholung
-        im Widerspruchsverfahren erkannt
+      label: Heilungsmöglichkeit nach § 45 Abs. 1, Abs. 2 VwVfG durch Nachholung im
+        Widerspruchsverfahren erkannt
       weight: 3.0
       required: true
       norms:
@@ -202,8 +206,10 @@ faelle:
       - § 45 Abs. 2 VwVfG
       keywords:
       - Heilung
-      - § 45
-      - Nachholung
+      - § 45 Abs. 1
+      - § 45 Abs. 2 VwVfG
+      - Nachholung der Anhörung
+      - Nachholung im Widerspruchsverfahren
       card_slugs:
       - or-va-rm-heilung-verfahrensfehler
     - id: p3
@@ -214,9 +220,10 @@ faelle:
       norms:
       - § 46 VwVfG
       keywords:
-      - § 46
-      - Ermessen
+      - § 46 VwVfG
+      - Ermessensentscheidung
       - Offensichtlichkeit
+      - Beeinflussung der Entscheidung nicht auszuschließen
       card_slugs:
       - or-va-rm-unbeachtlichkeit-verfahrensfehler
     - id: p4
@@ -225,7 +232,9 @@ faelle:
       required: false
       keywords:
       - Ermächtigungsgrundlage
-      - zuständig
+      - gewerberechtliche Ermächtigungsgrundlage
+      - sachlich zuständig
+      - Zuständigkeit der Ordnungsbehörde
       card_slugs:
       - or-va-rm-zustaendigkeit-arten
       - or-va-rm-ermaechtigungsgrundlage-erfordernis
@@ -235,8 +244,10 @@ faelle:
       weight: 1.5
       required: true
       keywords:
-      - geheilt
-      - formell rechtmäßig
-
+      - durch Heilung formell rechtmäßig
+      - Mangel wurde geheilt
+      - Mangel ist geheilt
+      - Gestalt des Widerspruchsbescheids
+      - Bescheid ist formell rechtmäßig
       card_slugs:
       - or-va-rm-heilung-verfahrensfehler

@@ -55,8 +55,8 @@ cards:
   front: 'Definiere: "verfassungsmäßige Ordnung" i.S.d. Art. 2 Abs. 1 GG'
   back: Die Gesamtheit der Normen, die formell und materiell mit der Verfassung in
     Einklang stehen - also jede verfassungsmäßig zustande gekommene und inhaltlich
-    verfassungsgemäße Rechtsnorm. Der Begriff ist damit deutlich weiter als etwa
-    in Art. 20 Abs. 3 GG, wo er nur die Verfassungsordnung selbst meint.
+    verfassungsgemäße Rechtsnorm. Der Begriff ist damit deutlich weiter als etwa in
+    Art. 20 Abs. 3 GG, wo er nur die Verfassungsordnung selbst meint.
   norms:
   - Art. 2 Abs. 1 GG
   - Art. 20 Abs. 3 GG
@@ -158,9 +158,9 @@ faelle:
       beruht.
   - prompt: Woran könnte die Rechtfertigung für das nächtliche Verbot scheitern?
     erwartung: 'An der Erforderlichkeit: Während der Nachtstunden ohne relevantes
-      Fußgängeraufkommen fördert ein absolutes Verbot den Schutzzweck nicht in
-      gleichem Masse wie tagsüber; eine zeitlich differenzierte Regelung wäre ein
-      milderes, gleich wirksames Mittel.'
+      Fußgängeraufkommen fördert ein absolutes Verbot den Schutzzweck nicht in gleichem
+      Masse wie tagsüber; eine zeitlich differenzierte Regelung wäre ein milderes,
+      gleich wirksames Mittel.'
   expectation:
     pruefpunkte:
     - id: p1
@@ -171,9 +171,10 @@ faelle:
       norms:
       - Art. 2 Abs. 1 GG
       keywords:
-      - Art. 2
-      - Handlungsfreiheit
+      - Art. 2 Abs. 1 GG
+      - allgemeine Handlungsfreiheit
       - Auffanggrundrecht
+      - subsidiär zu Art. 12
       card_slugs:
       - or-gr-art2-auffanggrundrecht
       - or-gr-art2-abgrenzung-art12
@@ -182,7 +183,10 @@ faelle:
       weight: 1.5
       required: true
       keywords:
-      - Eingriff
+      - Eingriff in Art. 2 Abs. 1 GG
+      - Verbot und Bußgeld
+      - Eingriff in die allgemeine Handlungsfreiheit
+      - Verbot greift in
       card_slugs:
       - or-gr-eingriff
     - id: p3
@@ -191,6 +195,8 @@ faelle:
       required: true
       keywords:
       - verfassungsmäßige Ordnung
+      - Schranke des Art. 2 Abs. 1
+      - formell und materiell verfassungsgemäß
       card_slugs:
       - or-gr-art2-schrankentrias
       - or-gr-art2-verfassungsmaessige-ordnung
@@ -200,9 +206,10 @@ faelle:
       required: true
       keywords:
       - legitimer Zweck
-      - geeignet
-      - erforderlich
-      - angemessen
+      - Geeignetheit
+      - Erforderlichkeit
+      - Angemessenheit
+      - Verhältnismäßigkeit
       card_slugs:
       - or-gr-verhaeltnismaessigkeit
       - or-gr-art2-schranken-schranke-verhaeltnismaessigkeit
@@ -212,9 +219,11 @@ faelle:
       weight: 3.0
       required: true
       keywords:
-      - nachts
+      - Nachtstunden
       - kein Fußgängeraufkommen
       - milderes Mittel
+      - zeitliche Differenzierung
+      - nicht erforderlich
       card_slugs:
       - or-gr-art2-schranken-schranke-verhaeltnismaessigkeit
     - id: p6
@@ -224,5 +233,7 @@ faelle:
       norms:
       - Art. 2 Abs. 1 GG
       keywords:
-      - verletzt
+      - verletzt Art. 2 Abs. 1
+      - Verordnung ist insoweit verfassungswidrig
       - unverhältnismäßig
+      - Verletzung der allgemeinen Handlungsfreiheit
