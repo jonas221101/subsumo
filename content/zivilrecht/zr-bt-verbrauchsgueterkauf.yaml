@@ -56,10 +56,10 @@ cards:
     Abs. 1 S. 1 BGB zugunsten des Verbrauchers vermutet, dass die Ware bereits bei Gefahrübergang
     mangelhaft war. Seit der Kaufrechtsreform zum 1. Januar 2022 beträgt die Frist ein Jahr
     (zuvor sechs Monate). Die Vermutung gilt nicht, wenn sie mit der Art der Ware oder des
-    Mangels unvereinbar ist (§ 477 Abs. 1 S. 2 BGB), etwa bei äußerlich erkennbaren Beschädigungen,
+    Mangels unvereinbar ist (§ 477 Abs. 1 S. 1 Hs. 2 BGB), etwa bei äußerlich erkennbaren Beschädigungen,
     die der Verbraucher bei Übergabe hätte rügen können, oder bei verderblichen Waren und
     Verschleiß. Der Verkäufer kann die Vermutung widerlegen, indem er beweist, dass der Mangel
-    bei Gefahrübergang noch nicht angelegt war. Beim Kauf eines lebenden Tieres beträgt die Frist sechs Monate (§ 477 Abs. 1 S. 3 BGB). Der Verbraucher muss weiterhin beweisen, dass überhaupt ein Mangel vorliegt, der sich innerhalb der Frist gezeigt hat, und dass ein Kaufvertrag besteht.
+    bei Gefahrübergang noch nicht angelegt war. Beim Kauf eines lebenden Tieres beträgt die Frist sechs Monate (§ 477 Abs. 1 S. 2 BGB). Der Verbraucher muss weiterhin beweisen, dass überhaupt ein Mangel vorliegt, der sich innerhalb der Frist gezeigt hat, und dass ein Kaufvertrag besteht.
   norms:
   - § 477 Abs. 1 BGB
   - § 434 BGB
@@ -87,7 +87,7 @@ cards:
   type: norm
   front: Welche Sonderregeln gelten beim Verbrauchsgüterkauf für die Nacherfüllung?
   back: 'Der Verbraucher hat auch beim Verbrauchsgüterkauf das Wahlrecht zwischen Nachbesserung
-    und Ersatzlieferung (§ 439 Abs. 1 BGB). Die Sonderregeln des § 475 BGB schützen ihn bei der Durchführung: Die Nacherfüllung ist innerhalb einer angemessenen Frist ab Mitteilung des Mangels und ohne erhebliche Unannehmlichkeiten für den Verbraucher durchzuführen (§ 475 Abs. 6 BGB). Für Aufwendungen, die der Unternehmer nach § 439 Abs. 2 und 3 BGB zu tragen hat, kann der Verbraucher einen Vorschuss verlangen (§ 475 Abs. 5 BGB). Bei der Ersatzlieferung schuldet er keinen Nutzungsersatz für die bis dahin gezogenen Nutzungen (§ 475 Abs. 3 S. 1 BGB). Der Unternehmer muss den Verbraucher vor der Nacherfüllung über sein Wahlrecht informieren (§ 475 Abs. 4 BGB). Beim Rücktritt und beim Schadensersatz statt der Leistung ist eine sonst erforderliche Fristsetzung unter den Voraussetzungen des § 475d BGB entbehrlich.'
+    und Ersatzlieferung (§ 439 Abs. 1 BGB). Die Sonderregeln des § 475 BGB schützen ihn bei der Durchführung: Die Nacherfüllung ist innerhalb einer angemessenen Frist ab Mitteilung des Mangels und ohne erhebliche Unannehmlichkeiten für den Verbraucher durchzuführen (§ 475 Abs. 6 BGB). Für Aufwendungen, die der Unternehmer nach § 439 Abs. 2 und 3 BGB zu tragen hat, kann der Verbraucher einen Vorschuss verlangen (§ 475 Abs. 5 BGB). Bei der Ersatzlieferung schuldet er keinen Nutzungsersatz für die bis dahin gezogenen Nutzungen (§ 475 Abs. 3 S. 1 BGB). Der Unternehmer muss den Verbraucher vor der Nacherfüllung über sein Wahlrecht und bei Nachbesserung über die einmalige Verlängerung der Verjährung um zwölf Monate informieren (§ 475 Abs. 4 BGB, § 475e Abs. 5 BGB). Beim Rücktritt und beim Schadensersatz statt der Leistung ist eine sonst erforderliche Fristsetzung unter den Voraussetzungen des § 475d BGB entbehrlich.'
   norms:
   - § 439 Abs. 1 BGB
   - § 475 BGB
@@ -170,7 +170,7 @@ cards:
   type: norm
   front: Wie funktioniert der Unternehmerrückgriff (§§ 445a, 445b, 478 BGB)?
   back: Muss der Letztverkäufer eine neu hergestellte Sache wegen eines Mangels zurücknehmen oder den Kaufpreis mindern, kann er bei seinem Lieferanten Rückgriff nehmen. Nach § 445a Abs. 1 BGB kann er Ersatz der Aufwendungen verlangen, die er im Verhältnis
-    zum Verbraucher im Rahmen der Nacherfüllung tragen musste (etwa Kosten nach § 439 Abs. 2 und 3 BGB, Vorschüsse nach § 475 Abs. 5 BGB), sofern der Mangel schon bei Gefahrübergang auf ihn vorlag. Nach § 445a Abs. 2 BGB bedarf es für seine Rechte aus § 437 BGB gegen den Lieferanten keiner Fristsetzung, wenn er die Sache zurücknehmen musste oder der Käufer den Kaufpreis gemindert hat. Die Beweislastumkehr des § 477 BGB wirkt nach
+    zum Verbraucher im Rahmen der Nacherfüllung tragen musste (Kosten nach § 439 Abs. 2, 3 und 6 S. 2 BGB sowie Vorschüsse nach § 475 Abs. 5 BGB), sofern der Mangel schon bei Gefahrübergang auf ihn vorlag oder auf einer Verletzung der Aktualisierungspflicht nach § 475b Abs. 4 BGB beruht. Nach § 445a Abs. 2 BGB bedarf es für seine Rechte aus § 437 BGB gegen den Lieferanten keiner Fristsetzung, wenn er die Sache zurücknehmen musste oder der Käufer den Kaufpreis gemindert hat. Die Beweislastumkehr des § 477 BGB wirkt nach
     § 478 Abs. 1 BGB auch im Rückgriff, wobei die Frist mit dem Gefahrübergang auf den Verbraucher
     beginnt. Die Aufwendungsersatzansprüche verjähren in zwei Jahren ab Ablieferung (§ 445b Abs. 1 BGB); als Ablaufhemmung tritt die Verjährung der Ansprüche des Verkäufers gegen den Lieferanten frühestens zwei Monate nach dem Zeitpunkt ein, in dem der Verkäufer die Ansprüche des Käufers erfüllt hat (§ 445b Abs. 2 BGB).
   norms:
