@@ -5,5 +5,5 @@ library;
 import 'sandbox_types.dart';
 
 SandboxRuntime createSandboxRuntime() => throw UnsupportedError(
-      'Keine Sandbox-Runtime fuer diese Plattform verfuegbar.',
+      'Keine Sandbox-Runtime für diese Plattform verfügbar.',
     );
