@@ -8,8 +8,7 @@ kurs:
   quellen:
   - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Diebstahl, Unterschlagung, Raub, Erpressung, Betrug, Untreue - der dichteste Klausurblock
-    des Strafrechts.
+  beschreibung: Diebstahl (inkl. §§ 243, 244), Unterschlagung, Raub, Erpressung, Betrug, Untreue sowie Anschlussdelikte (§§ 257-259) - der dichteste Klausurblock des Strafrechts. Sachbeschädigung, Computerbetrug und Brandstiftung fehlen noch.
   lernziele:
   - Wegnahme, Zueignungsabsicht und Gewahrsamsbegriff (§ 242 StGB) beherrschen
   - Betrug in der Vierschrittpruefung (Taeuschung, Irrtum, Vermoegensverfuegung, Schaden) aufbauen
@@ -24,5 +23,13 @@ kurs:
   - sr-bt-erpressung-253
   - sr-bt-betrug
   - sr-bt-untreue-266
+  - sr-bt-diebstahl-qualifikationen-244
+  - sr-bt-anschlussdelikte-257-259
   landesrecht_kategorien: []
-  fehlende_themen: []
+  fehlende_themen:
+  - Sachbeschädigung §§ 303 ff. StGB (P1)
+  - Computerbetrug § 263a, Leistungserschleichung § 265a StGB (P1)
+  - Räuberischer Diebstahl § 252, räuberischer Angriff auf Kraftfahrer § 316a StGB (P1)
+  - Brandstiftungsdelikte §§ 306 ff. StGB (P1)
+  - 'Urkundendelikte vertiefen: §§ 268, 269, 271, 274 StGB (P2)'
+  - Insolvenz-/Wirtschaftsdelikte und Geldwäsche § 261 StGB (P3)

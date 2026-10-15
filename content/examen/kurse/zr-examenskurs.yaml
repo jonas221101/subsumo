@@ -8,11 +8,10 @@ kurs:
   quellen:
   - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Gesamtwiederholung des zivilrechtlichen Pflichtstoffs auf Examensniveau - in der Reihenfolge,
-    in der die Anspruchspruefung sie braucht.
+  beschreibung: 'Wiederholung des zivilrechtlichen Kernstoffs auf Examensniveau (BGB AT, allgemeines Schuldrecht, Kauf, Delikt, Bereicherung, GoA, Mobiliarsachenrecht). Grundstock, noch nicht der gesamte Pflichtstoff: es fehlen u. a. Verträge mit Drittbezug, Werk-/Miet-/Sicherungsverträge, Immobiliarsachenrecht, Handels- und Gesellschaftsrecht.'
   lernziele:
-  - Alle zivilrechtlichen Anspruchsgrundlagen des Pflichtstoffs sicher benennen und aufbauen
-  - Fuenfstuendige Examensklausuren mit mehreren Anspruchsverhaeltnissen strukturieren
+  - Die bereits abgedeckten zivilrechtlichen Anspruchsgrundlagen sicher benennen und aufbauen
+  - Fünfstündige Examensklausuren mit mehreren Anspruchsverhältnissen strukturieren (auf Basis des vorhandenen Grundstocks)
   klausurformat:
     typ: Examensklausur
     minuten: 300
@@ -39,9 +38,25 @@ kurs:
   - zr-sr-eigentumserwerb-929
   - zr-sr-gutglaeubiger-erwerb-932
   - zr-sr-sicherungsuebereignung
+  - zr-abtretung-398
+  - zr-schadensrecht-249-254
+  - zr-goa-677-ff
+  - zr-bereicherungsrecht-nichtleistungskondiktion
+  - zr-deliktsrecht-831-833
+  - zr-sr-ebv-987-ff
+  - zr-sr-beseitigung-unterlassung-1004
   landesrecht_kategorien: []
   fehlende_themen:
-  - Handels- und Gesellschaftsrecht (P3)
+  - Vertrag zugunsten/mit Schutzwirkung für Dritte, § 328 BGB, Drittschadensliquidation (P1)
+  - §§ 276, 278 BGB, Gesamtschuld, Aufrechnung, Erfüllung (P1)
+  - Form, §§ 134, 138 BGB, Bedingung, §§ 116-118 BGB (P1)
+  - Eigentumsvorbehalt/Anwartschaftsrecht, §§ 946 ff. BGB (P1)
+  - Immobiliarsachenrecht und Besitz (P1)
+  - Verbrauchsgüterkauf, Werk-, Miet-, Bürgschafts- und Darlehensvertrag (P1)
+  - Bereicherungsrecht bei Mehrpersonenverhältnissen (P1)
+  - Deliktsrecht vertiefen (Produkthaftung, § 7 StVG, § 839 BGB) (P2)
+  - Störung der Geschäftsgrundlage, § 313 BGB, Verbraucherwiderruf (P2)
+  - Handels- und Gesellschaftsrecht (HGB, GbR/MoPeG) (P2)
+  - Familien- und Erbrecht Grundzüge (P3)
   - Arbeitsrecht (P3)
-  - Familien- und Erbrecht Grundzuege (P3)
-  - ZPO-Grundzuege (P3)
+  - ZPO-Grundzüge (P3)

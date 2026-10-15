@@ -8,8 +8,7 @@ kurs:
   quellen:
   - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Anfechtungs- und Verpflichtungsklage sowie vorlaeufiger Rechtsschutz - die Einkleidung
-    fast jeder Klausur im Oeffentlichen Recht.
+  beschreibung: Alle Klagearten der VwGO (Anfechtung, Verpflichtung, allgemeine Leistungs-/Feststellungsklage, Fortsetzungsfeststellungsklage), Normenkontrolle nach § 47 VwGO und vorläufiger Rechtsschutz - die Einkleidung fast jeder Klausur im Öffentlichen Recht.
   lernziele:
   - Zulaessigkeit einer verwaltungsgerichtlichen Klage vollstaendig pruefen
   - §§ 80, 80a und § 123 VwGO abgrenzen und aufbauen
@@ -20,5 +19,10 @@ kurs:
   - or-vwgo-anfechtungsklage
   - or-vwgo-verpflichtungsklage
   - or-vwgo-vorlaeufiger-rechtsschutz
+  - or-vwgo-allgemeine-leistungsklage-feststellungsklage
+  - or-vwgo-fortsetzungsfeststellungsklage
+  - or-vwgo-normenkontrolle-47
   landesrecht_kategorien: []
-  fehlende_themen: []
+  fehlende_themen:
+  - Verwaltungsrechtsweg (§ 40 VwGO), Sachentscheidungsvoraussetzungen und Widerspruchsverfahren als eigenes Thema (P1)
+  - Einstweiliger Rechtsschutz nach § 123 VwGO als eigenes Thema (P1)

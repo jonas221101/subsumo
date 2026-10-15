@@ -11,8 +11,9 @@ kurs:
   beschreibung: Deliktsrecht (§§ 823 ff. BGB) und Bereicherungsrecht (§§ 812 ff. BGB) - die beiden Anspruchsgruppen,
     die in fast jeder Zivilrechtsklausur auftauchen.
   lernziele:
-  - § 823 Abs. 1, Abs. 2 und § 826 BGB als eigenstaendige Anspruchsgrundlagen pruefen
-  - Leistungskondiktion vom Anspruch aus Vertrag abgrenzen (Vorrang der Leistungsbeziehung)
+  - § 823 Abs. 1, Abs. 2 und § 826 BGB sowie § 831 und § 833 BGB als Anspruchsgrundlagen prüfen
+  - Leistungskondiktion von der Nichtleistungskondiktion (§§ 812 Abs. 1 S. 1 Alt. 2, 816 BGB) abgrenzen
+  - Geschäftsführung ohne Auftrag (§§ 677 ff. BGB) einordnen und aufbauen
   klausurformat:
     typ: Fortgeschrittenenklausur
     minuten: 180
@@ -21,7 +22,10 @@ kurs:
   - zr-deliktsrecht-823-abs2
   - zr-deliktsrecht-826
   - zr-bereicherungsrecht-leistungskondiktion
+  - zr-goa-677-ff
+  - zr-bereicherungsrecht-nichtleistungskondiktion
+  - zr-deliktsrecht-831-833
   landesrecht_kategorien: []
   fehlende_themen:
-  - Geschaeftsfuehrung ohne Auftrag (P3)
-  - Nichtleistungskondiktion (P3)
+  - Bereicherungsrecht bei Mehrpersonenverhältnissen (Anweisung, Abtretung, Vertrag zugunsten Dritter) (P1)
+  - 'Deliktsrecht vertiefen: Produkthaftung, § 7 StVG, Amtshaftung § 839 BGB/Art. 34 GG (P2)'
