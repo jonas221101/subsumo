@@ -271,7 +271,7 @@ class _ReviewPageState extends State<ReviewPage> {
                                         children: [
                                           for (final norm in norms)
                                             SubsumoChip.action(
-                                              label: norm,
+                                              label: kurzeNormBeschriftung(norm),
                                               icon: Icons.menu_book_outlined,
                                               onPressed: () =>
                                                   showNormText(context, norm),

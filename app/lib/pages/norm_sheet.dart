@@ -7,6 +7,27 @@ import '../state.dart';
 
 const String kGiiStartUrl = 'https://www.gesetze-im-internet.de/';
 
+/// Kuerzt eine lange Norm-Beschriftung fuer Chips/Links: schneidet bei
+/// Doppelpunkt oder oeffnender Klammer ab und begrenzt auf [max] Zeichen
+/// (mit Ellipse). Der volle Text bleibt im Dialog-Titel.
+String kurzeNormBeschriftung(String zitat, {int max = 40}) {
+  var text = zitat.trim();
+  final cut = RegExp(r'[:(]').firstMatch(text);
+  if (cut != null && cut.start > 3) text = text.substring(0, cut.start).trim();
+  if (text.length > max) text = '${text.substring(0, max - 1).trimRight()}…';
+  return text;
+}
+
+/// Beschriftung des Quellen-Links je nach Domain.
+String quellenLinkLabel(String url) {
+  final host = Uri.tryParse(url)?.host.toLowerCase() ?? '';
+  if (host.contains('eur-lex')) return 'Bei EUR-Lex öffnen';
+  if (host.isNotEmpty && !host.contains('gesetze-im-internet')) {
+    return 'Im Landesrechtsportal öffnen';
+  }
+  return 'Bei gesetze-im-internet.de öffnen';
+}
+
 /// Oeffnet den Gesetzestext zu [zitat]: Bottom-Sheet auf schmalen Schirmen,
 /// Dialog auf breiten. Nur fuer strukturierte `norms`-Felder gedacht, nicht
 /// fuer Freitext.
@@ -54,7 +75,7 @@ class NormLink extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 2),
           child: Text(
-            zitat,
+            kurzeNormBeschriftung(zitat),
             style: (style ?? theme.textTheme.bodySmall)?.copyWith(
               color: theme.colorScheme.primary,
               decoration: TextDecoration.underline,
@@ -115,8 +136,12 @@ class _NormTextViewState extends State<NormTextView> {
     final theme = Theme.of(context);
     final notFound = error is ApiException && error.statusCode == 404;
     String url = kGiiStartUrl;
+    String? apiMessage;
     if (error is ApiException) {
       url = error.detail?['quelle_url'] as String? ?? kGiiStartUrl;
+      // Differenzierte Meldung des Backends (EU-Recht, Landesrecht ...).
+      final m = error.detail?['message'];
+      if (m is String && m.trim().isNotEmpty) apiMessage = m;
     }
     return Padding(
       padding: const EdgeInsets.all(Spacing.xl),
@@ -124,12 +149,13 @@ class _NormTextViewState extends State<NormTextView> {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(widget.zitat, style: theme.textTheme.titleMedium),
+          _titleRow(context, widget.zitat, theme.textTheme.titleMedium),
           const SizedBox(height: Spacing.md),
           Text(
-            notFound
+            apiMessage ??
+                (notFound
                 ? 'Für diese Norm ist kein Text hinterlegt – Landesrecht oder nicht erfasst.'
-                : 'Der Normtext konnte gerade nicht geladen werden.',
+                : 'Der Normtext konnte gerade nicht geladen werden.'),
             style: theme.textTheme.bodyMedium,
           ),
           const SizedBox(height: Spacing.md),
@@ -141,7 +167,7 @@ class _NormTextViewState extends State<NormTextView> {
               TextButton.icon(
                 onPressed: () => _open(url),
                 icon: const Icon(Icons.open_in_new, size: 18),
-                label: const Text('Bei gesetze-im-internet.de öffnen'),
+                label: Text(quellenLinkLabel(url)),
               ),
             ],
           ),
@@ -149,6 +175,24 @@ class _NormTextViewState extends State<NormTextView> {
       ),
     );
   }
+
+  /// Titelzeile mit sichtbarem Schliessen-Button oben rechts.
+  Widget _titleRow(BuildContext context, String title, TextStyle? style) => Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.only(top: Spacing.sm),
+              child: Text(title, style: style),
+            ),
+          ),
+          IconButton(
+            tooltip: 'Schließen',
+            icon: const Icon(Icons.close),
+            onPressed: () => Navigator.of(context).maybePop(),
+          ),
+        ],
+      );
 
   Widget _buildText(BuildContext context, Map<String, dynamic> data) {
     final theme = Theme.of(context);
@@ -174,7 +218,11 @@ class _NormTextViewState extends State<NormTextView> {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('${data['norm']} ${data['gesetz']}', style: theme.textTheme.titleLarge),
+          _titleRow(
+            context,
+            widget.zitat.length > 40 ? widget.zitat : '${data['norm']} ${data['gesetz']}',
+            theme.textTheme.titleLarge,
+          ),
           if (titel.isNotEmpty)
             Padding(
               padding: const EdgeInsets.only(top: Spacing.xs),
@@ -211,7 +259,7 @@ class _NormTextViewState extends State<NormTextView> {
           TextButton.icon(
             onPressed: () => _open(url),
             icon: const Icon(Icons.open_in_new, size: 18),
-            label: const Text('Bei gesetze-im-internet.de öffnen'),
+            label: Text(quellenLinkLabel(url)),
           ),
         ],
       ),

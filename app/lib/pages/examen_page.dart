@@ -7,6 +7,7 @@ import '../theme.dart';
 import 'gutachten_page.dart';
 import 'lernprofil_page.dart';
 import 'review_page.dart';
+import 'schemata_page.dart' show SchemaDetailPage;
 import 'screen_status.dart';
 
 /// Examen-Reiter (docs/32-examensvorbereitung.md).
@@ -1068,7 +1069,7 @@ class _SchwachstellenCard extends StatelessWidget {
               spacing: Spacing.sm,
               runSpacing: Spacing.xs,
               children: [
-                for (final f in fehler) SubsumoChip(label: '${f['code']} (${f['anzahl']})'),
+                for (final f in fehler) SubsumoChip(label: '${strukturfehlerLabel(f)} (${f['anzahl']})'),
               ],
             ),
           ],
@@ -1333,6 +1334,15 @@ class DeckDetailPage extends StatelessWidget {
                   leading: Icon(Icons.account_tree_outlined,
                       color: theme.colorScheme.onSurfaceVariant),
                   title: Text(schema['title'] as String),
+                  trailing: const Icon(Icons.chevron_right),
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) => SchemaDetailPage(
+                        slug: schema['slug'] as String,
+                        title: schema['title'] as String,
+                      ),
+                    ),
+                  ),
                 ),
             ],
             if (cases.isNotEmpty) ...[
@@ -1361,9 +1371,9 @@ class DeckDetailPage extends StatelessWidget {
             if (fehlend.isNotEmpty) ...[
               const SizedBox(height: Spacing.lg),
               SubsumoFeedbackBlock(
-                message: 'Noch nicht im Deck (Content in Arbeit):',
+                message: 'Weitere Themen in Vorbereitung',
                 detail: fehlend.join('; '),
-                severity: FeedbackSeverity.hint,
+                severity: FeedbackSeverity.neutral,
               ),
             ],
           ],
@@ -1442,6 +1452,29 @@ Future<void> openDeckReview(BuildContext context, DeckFilter filter) async {
 // --------------------------------------------------------------------------- //
 // Helfer
 // --------------------------------------------------------------------------- //
+
+/// Anzeigename eines Strukturfehlers: `label` der API, sonst bekannte Codes,
+/// sonst der Code lesbar gemacht (Unterstriche -> Leerzeichen, Anfang gross).
+String strukturfehlerLabel(Map<String, dynamic> fehler) {
+  final label = fehler['label'];
+  if (label is String && label.trim().isNotEmpty) return label;
+  final code = '${fehler['code'] ?? ''}';
+  const bekannt = {
+    'offener_obersatz': 'Obersatz ohne Ergebnis',
+    'kein_ergebnis': 'Ergebnis fehlt',
+    'wiederholung': 'Wiederholungen',
+    'sprung_zum_ergebnis': 'Sprung zum Ergebnis',
+    'urteilsstil': 'Urteilsstil',
+    'keine_norm': 'Norm fehlt',
+    'kein_obersatz': 'Obersatz fehlt',
+    'keine_definition': 'Definition fehlt',
+    'keine_subsumtion': 'Subsumtion fehlt',
+  };
+  final hit = bekannt[code];
+  if (hit != null) return hit;
+  final text = code.replaceAll('_', ' ').trim();
+  return text.isEmpty ? code : '${text[0].toUpperCase()}${text.substring(1)}';
+}
 
 Map<String, dynamic> _map(Object? value) =>
     value is Map ? Map<String, dynamic>.from(value) : <String, dynamic>{};
