@@ -1,0 +1,431 @@
+topic:
+  slug: sr-bt-strassenverkehr
+  area: strafrecht
+  title: Straßenverkehrsdelikte - §§ 315b, 315c, 315d, 316 und 142 StGB
+  parent: sr-at
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-sv-systematik
+  type: norm
+  front: Wie verhalten sich §§ 315b, 315c, 315d, 316 und 142 StGB zueinander?
+  back: >-
+    § 315b StGB (gefährlicher Eingriff in den Straßenverkehr) erfasst äußere
+    Eingriffe in die Verkehrssicherheit und unter engen Voraussetzungen den
+    verkehrsfremden Inneneingriff durch den Fahrzeugführer. § 315c StGB
+    (Gefährdung des Straßenverkehrs) betrifft Fehlverhalten im Verkehr durch
+    Fahrer, nämlich Fahrunsicherheit (Abs. 1 Nr. 1) und die sieben groben
+    Verkehrsverstöße (Abs. 1 Nr. 2); beide Tatbestände sind konkrete
+    Gefährdungsdelikte. § 316 StGB (Trunkenheit im Verkehr) ist ein abstraktes
+    Gefährdungsdelikt, das gegenüber § 315c StGB subsidiär ist. § 315d StGB
+    erfasst verbotene Kraftfahrzeugrennen. § 142 StGB (unerlaubtes Entfernen vom
+    Unfallort) schützt die Feststellung zivilrechtlicher Ansprüche und steht
+    selbstständig neben den Gefährdungsdelikten, meist in Tatmehrheit.
+  norms:
+  - § 315b StGB
+  - § 315c StGB
+  - § 315d StGB
+  - § 316 StGB
+  - § 142 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sv-315b-tatbestand
+  type: definition
+  front: Wann liegt ein gefährlicher Eingriff in den Straßenverkehr nach § 315b Abs. 1 StGB vor?
+  back: >-
+    § 315b Abs. 1 StGB verlangt einen Eingriff in die Sicherheit des Straßenverkehrs
+    durch Zerstören, Beschädigen oder Beseitigen von Anlagen oder Fahrzeugen
+    (Nr. 1), durch Bereiten von Hindernissen (Nr. 2) oder durch einen ähnlichen,
+    ebenso gefährlichen Eingriff (Nr. 3). Dadurch muss konkret Leib oder Leben
+    eines anderen Menschen oder eine fremde Sache von bedeutendem Wert gefährdet
+    worden sein. Der Eingriff muss die Verkehrssicherheit beeinträchtigen, also
+    nicht nur eine Gefahr herbeiführen, sondern eine typische Verkehrsgefahr
+    erzeugen. Beispiele sind Steine auf die Fahrbahn werfen, ein Seil spannen
+    oder ein Hindernis auf der Fahrbahn aufstellen. Ein bloß verkehrswidriges
+    Verhalten im fließenden Verkehr genügt nicht. Die Qualifikation in Abs. 3
+    verweist auf § 315 Abs. 3 StGB (Unglücksfall oder Ermöglichungsabsicht).
+  norms:
+  - § 315b Abs. 1 StGB
+  - § 315b Abs. 3 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sv-315b-inneneingriff
+  type: streitstand
+  front: 'Streitstand: Verkehrsfremder Inneneingriff bei § 315b StGB'
+  back: >-
+    Ein Fahrzeugführer kann den Verkehr auch von innen gefährden, wenn er sein
+    Fahrzeug bewusst zweckwidrig als Waffe oder Schädigungsmittel einsetzt.
+    Zur Abgrenzung von § 315c StGB, der das bloße Fehlverhalten im Verkehr
+    erfasst, verlangt die ständige Rechtsprechung zwei Einschränkungen: Objektiv
+    muss ein Verhalten vorliegen, das über die bloße Verkehrswidrigkeit hinaus eine
+    Pervertierung des Verkehrsvorgangs zu einem Eingriff in den Straßenverkehr
+    bedeutet. Subjektiv ist zumindest bedingter Schädigungsvorsatz erforderlich,
+    das Fahrzeug muss also als Werkzeug zur Verletzung oder Sachbeschädigung
+    benutzt werden. Typisches Beispiel ist das gezielte Zufahren auf einen Menschen
+    oder ein anderes Fahrzeug. Teile der Literatur halten bereits den zweiten
+    Aspekt für ausreichend oder lehnen den Inneneingriff ganz ab. Fehlt der
+    Schädigungsvorsatz, bleiben nur § 315c StGB und § 240 StGB.
+  norms:
+  - § 315b Abs. 1 Nr. 3 StGB
+  - § 315c StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sv-315c-fahrunsicherheit
+  type: definition
+  front: 'Was verlangt § 315c Abs. 1 Nr. 1 StGB (Fahrunsicherheit)?'
+  back: >-
+    Strafbar ist, wer im Straßenverkehr ein Fahrzeug führt, obwohl er wegen des
+    Genusses alkoholischer Getränke oder anderer berauschender Mittel oder wegen
+    geistiger oder körperlicher Mängel nicht in der Lage ist, das Fahrzeug
+    sicher zu führen (Nr. 1a), und dadurch Leib oder Leben eines anderen Menschen
+    oder fremde Sachen von bedeutendem Wert konkret gefährdet. Führen ist das
+    Bewegen des Fahrzeugs in Bewegung unter Bedienung der Antriebs- und
+    Steuerungsmittel. Die Fahrunsicherheit kann nachgewiesen werden durch die
+    absolute Fahrunsicherheit anhand von Blutalkoholwerten (Beweisregel) oder durch
+    die relative Fahrunsicherheit bei niedrigeren Werten, wenn alkoholtypische
+    Ausfallerscheinungen oder Fahrfehler hinzutreten. Bei anderen berauschenden
+    Mitteln (Betäubungsmittel, Medikamente) gibt es keine absoluten Grenzwerte, hier
+    muss die Fahrunsicherheit konkret festgestellt werden.
+  norms:
+  - § 315c Abs. 1 Nr. 1a StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sv-grenzwerte
+  type: rechtsprechung
+  front: Welche Blutalkoholgrenzwerte gelten für die absolute und relative Fahrunsicherheit?
+  back: >-
+    Für Kraftfahrer gilt die absolute Fahrunsicherheit ab einer Blutalkoholkonzentration
+    von 1,1 Promille (BGHSt 37, 89). Dieser Wert beruht auf wissenschaftlichen
+    Erkenntnissen und enthält einen Sicherheitszuschlag; er ist eine
+    unwiderlegliche Beweisregel, sodass es auf Ausfallerscheinungen nicht
+    ankommt. Für Radfahrer liegt der Grenzwert der absoluten Fahrunsicherheit
+    bei 1,6 Promille (BGHSt 34, 133). Relative Fahrunsicherheit kommt bei Kraftfahrern
+    schon ab 0,3 Promille in Betracht, wenn zusätzlich alkoholbedingte Ausfallerscheinungen
+    oder Fahrfehler festgestellt sind; auch bei Radfahrern ist eine relative
+    Fahrunsicherheit unterhalb von 1,6 Promille möglich. Maßgeblich ist der
+    Zeitpunkt der Fahrt, notfalls durch Rückrechnung; die Messmethode muss
+    zuverlässig sein. Bei Elektrokleinstfahrzeugen wird nach überwiegender
+    obergerichtlicher Rechtsprechung der Wert von 1,1 Promille angewendet.
+  norms:
+  - § 315c Abs. 1 Nr. 1a StGB
+  - § 316 StGB
+  quellen:
+  - BGHSt 37, 89
+  - BGHSt 34, 133
+  - StGB, amtliche Fassung
+  stand: 2026-10
+- slug: sr-sv-315c-nr2
+  type: norm
+  front: Welche groben Verkehrsverstöße nennt § 315c Abs. 1 Nr. 2 StGB?
+  back: >-
+    § 315c Abs. 1 Nr. 2 StGB verlangt, dass der Täter grob verkehrswidrig und
+    rücksichtslos einen der sieben Verstöße begeht: a) Vorfahrt nicht beachten,
+    b) falsch überholen oder sonst bei Überholvorgängen falsch fahren, c) an
+    Fußgängerüberwegen falsch fahren, d) an unübersichtlichen Stellen, an
+    Straßenkreuzungen, Einmündungen oder Bahnübergängen zu schnell fahren, e) an
+    unübersichtlichen Stellen nicht die rechte Seite einhalten, f) auf Autobahnen
+    oder Kraftfahrstraßen wenden, rückwärts oder entgegen der Fahrtrichtung
+    fahren oder dies versuchen, g) haltende oder liegengebliebene Fahrzeuge nicht
+    auf ausreichende Entfernung kenntlich machen. Grob verkehrswidrig ist ein besonders
+    schwerer Verstoß gegen Verkehrsvorschriften; rücksichtslos handelt, wer sich
+    aus eigensüchtigen Gründen über seine Pflichten hinwegsetzt oder aus
+    Gleichgültigkeit Bedenken nicht aufkommen lässt. Die Aufzählung ist
+    abschließend. Auch hier ist die konkrete Gefahr erforderlich.
+  norms:
+  - § 315c Abs. 1 Nr. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sv-konkrete-gefahr
+  type: definition
+  front: Was ist die konkrete Gefahr bei den §§ 315b und 315c StGB?
+  back: >-
+    Eine konkrete Gefahr liegt vor, wenn die Tathandlung über die ihr innewohnende
+    Gefährlichkeit hinaus eine Situation herbeiführt, in der nach den
+    Umständen der Eintritt eines Schadens nur noch vom Zufall abhängt (sogenannter
+    Beinahe-Unfall). Erforderlich ist ein kritischer Moment, in dem es zu einem Unfall
+    "gerade noch gutgegangen" ist, etwa durch eine Ausweichbewegung oder zufälliges
+    Bremsen des Gefährdeten. Gefährdetes Objekt muss ein anderer Mensch (also nicht
+    Mittäter oder Teilnehmer) oder eine fremde Sache von bedeutendem Wert sein; für
+    die Wertgrenze stellt die Rechtsprechung auf den Sachwert und den drohenden
+    Schaden ab (derzeit im Bereich von etwa 750 bis 1.300 Euro, die Grenze wird
+    angehoben). Eigene Sachen des Täters, auch Fahrzeuge, fallen nicht darunter.
+    Der Gefahrerfolg muss auf der Tathandlung beruhen, im Falle der Nr. 1 also
+    gerade auf der Fahrunsicherheit.
+  norms:
+  - § 315c Abs. 1 StGB
+  - § 315b Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sv-316
+  type: norm
+  front: Welche Besonderheiten hat § 316 StGB (Trunkenheit im Verkehr)?
+  back: >-
+    § 316 Abs. 1 StGB bestraft, wer im Verkehr ein Fahrzeug führt, obwohl er
+    infolge des Genusses alkoholischer Getränke oder anderer berauschender Mittel
+    nicht in der Lage ist, das Fahrzeug sicher zu führen. Anders als § 315c StGB
+    verlangt § 316 StGB keine konkrete Gefährdung, sondern ist ein abstraktes
+    Gefährdungsdelikt. Er ist nicht auf den Straßenverkehr beschränkt, sondern
+    gilt auch im Schiffs-, Luft- und Bahnverkehr und erfasst auch Fahrräder. Die
+    Vorsatztat steht nach Abs. 1 unter dem Vorbehalt der Subsidiarität: Sie
+    wird verdrängt, wenn die Tat nach § 315a oder § 315c StGB mit Strafe bedroht ist.
+    Abs. 2 stellt die fahrlässige Tat unter Strafe. Vorsatz erfordert, dass der
+    Fahrer seine Fahruntüchtigkeit zumindest für möglich hält; bei einem
+    Wert oberhalb der absoluten Grenze liegt dies oft nahe, ist aber nicht
+    zwingend. Wer seine Fahrunsicherheit nicht erkennt, handelt fahrlässig, wenn
+    er sie hätte erkennen können.
+  norms:
+  - § 316 Abs. 1 StGB
+  - § 316 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sv-315d
+  type: norm
+  front: Was regelt § 315d StGB (verbotene Kraftfahrzeugrennen) und wann liegt ein strafbares Alleinrennen vor?
+  back: >-
+    § 315d Abs. 1 StGB bestraft das Ausrichten oder Durchführen eines nicht
+    erlaubten Kraftfahrzeugrennens im Straßenverkehr (Nr. 1), die Teilnahme als
+    Kraftfahrzeugführer an einem solchen Rennen (Nr. 2) und das Fortbewegen mit
+    nicht angepasster Geschwindigkeit, grob verkehrswidrig und rücksichtslos, um eine
+    höchstmögliche Geschwindigkeit zu erreichen (Nr. 3, Alleinrennen). Bei der Nr. 3
+    verlangt die Rechtsprechung, dass sich die Absicht darauf richtet, die unter
+    den konkreten situativen Bedingungen und nach den Fähigkeiten des Fahrzeugs
+    maximal mögliche Geschwindigkeit zu erreichen; eine bloße Raserei genügt nicht.
+    Eine Aussicht auf einen Wettbewerb ist bei Nr. 3 nicht erforderlich. Abs. 2
+    qualifiziert Nr. 2 und 3 bei konkreter Gefährdung von Leib oder Leben oder
+    fremder Sachen von bedeutendem Wert. Abs. 5 sieht für den Fall der
+    Verursachung von Tod oder schwerer Gesundheitsschädigung eine Verbrechensstrafe
+    vor. § 315f StGB regelt die Einziehung des Fahrzeugs.
+  norms:
+  - § 315d Abs. 1 StGB
+  - § 315d Abs. 2 StGB
+  - § 315d Abs. 5 StGB
+  - § 315f StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sv-142-tatbestand
+  type: definition
+  front: Was verlangt der Grundtatbestand des unerlaubten Entfernens vom Unfallort, § 142 Abs. 1 StGB?
+  back: >-
+    Voraussetzung ist ein Unfall im Straßenverkehr, also ein plötzliches Ereignis
+    im Zusammenhang mit den Gefahren des Straßenverkehrs, das einen nicht ganz
+    unerheblichen Personen- oder Sachschaden zur Folge hat. Täter ist der
+    Unfallbeteiligte, also jeder, dessen Verhalten nach den Umständen zur
+    Verursachung des Unfalls beigetragen haben kann (§ 142 Abs. 5 StGB). Nr. 1
+    verbietet das Entfernen, bevor zugunsten feststellungsberechtigter Personen
+    die Feststellung der Beteiligung (Anwesenheit, Personalien, Art der Beteiligung)
+    ermöglicht wurde; Nr. 2 verlangt, eine nach den Umständen angemessene Zeit
+    zu warten, wenn niemand bereit war, Feststellungen zu treffen. Tathandlung ist
+    das Sichentfernen vom Unfallort, also die räumliche Absetzung, die die
+    Feststellung verhindert. Der Vorsatz muss sich auf den Unfall und die
+    Beteiligung erstrecken und zur Zeit des Entfernens vorliegen. Wer den Unfall
+    nicht bemerkt, handelt nicht vorsätzlich.
+  norms:
+  - § 142 Abs. 1 StGB
+  - § 142 Abs. 5 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sv-142-abs2-berechtigt
+  type: streitstand
+  front: 'Streitstand und Aufbau: Berechtigtes oder entschuldigtes Entfernen, § 142 Abs. 2 bis 4 StGB'
+  back: >-
+    § 142 Abs. 2 StGB bestraft den Unfallbeteiligten, der sich nach Ablauf der
+    Wartefrist (Nr. 1) oder berechtigt oder entschuldigt (Nr. 2) vom Unfallort
+    entfernt hat und die Feststellungen nicht unverzüglich nachträglich ermöglicht.
+    Nach Abs. 3 geschieht dies durch Mitteilung an den Berechtigten oder eine
+    nahe gelegene Polizeidienststelle. Berechtigt entfernt sich, wer durch
+    Rechtfertigungsgründe gedeckt ist, etwa bei Notwehr, bei rechtfertigendem
+    Notstand (Hilfeleistung für Verletzte) oder wenn eine Bedrohung vorliegt.
+    Entschuldigt ist das Entfernen etwa bei einem Schock. Streitig ist, ob die
+    Nachholpflicht auch den trifft, der sich unvorsätzlich entfernt hat, weil er den
+    Unfall nicht bemerkte. Das Bundesverfassungsgericht hat die Ausdehnung auf
+    das unvorsätzliche Entfernen als mit Art. 103 Abs. 2 GG unvereinbar
+    angesehen; die Pflicht gilt daher nur bei vorsätzlichem Entfernen in den Fällen
+    von Abs. 2. Abs. 4 sieht Strafmilderung oder Absehen von Strafe vor bei freiwilliger
+    Nachholung binnen 24 Stunden nach einem Unfall außerhalb des fließenden Verkehrs
+    mit nicht bedeutendem Sachschaden.
+  norms:
+  - § 142 Abs. 2 StGB
+  - § 142 Abs. 3 StGB
+  - § 142 Abs. 4 StGB
+  - Art. 103 Abs. 2 GG
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: sr-schema-sv-315c-142
+  title: Gefährdung des Straßenverkehrs, § 315c Abs. 1 Nr. 1a StGB, mit § 316 und § 142 StGB
+  norms:
+  - § 315c Abs. 1 Nr. 1a StGB
+  - § 316 StGB
+  - § 142 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Gefährdung des Straßenverkehrs, § 315c Abs. 1 Nr. 1a StGB
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: a) Führen eines Fahrzeugs im Straßenverkehr
+      - label: b) Fahrunsicherheit infolge Alkohol oder anderer berauschender Mittel
+        hinweis: Absolute Fahrunsicherheit ab 1,1 Promille (Radfahrer 1,6), relative
+          ab 0,3 Promille mit Ausfallerscheinungen.
+      - label: c) Konkrete Gefährdung von Leib oder Leben eines anderen Menschen oder fremder Sachen von bedeutendem Wert
+        hinweis: Beinahe-Unfall; Kausalität der Fahrunsicherheit für die Gefahr.
+    - label: 2. Subjektiver Tatbestand
+      children:
+      - label: a) Vorsatz bezüglich Fahrunsicherheit (Abs. 1) und Gefahr
+      - label: b) Alternativ vorsätzliche Handlung und fahrlässige Gefahr, Abs. 3 Nr. 1
+        hinweis: Häufiger Klausurfall; fahrlässige Handlung und Gefahr nach Abs. 3 Nr. 2.
+    - label: 3. Rechtswidrigkeit und Schuld
+  - label: II. Trunkenheit im Verkehr, § 316 StGB
+    hinweis: Subsidiär zu § 315c StGB; nur zu prüfen, wenn § 315c ausscheidet (z. B.
+      fehlende Gefährdung).
+  - label: III. Unerlaubtes Entfernen vom Unfallort, § 142 Abs. 1 StGB
+    children:
+    - label: 1. Unfall im Straßenverkehr und Unfallbeteiligter
+    - label: 2. Entfernen vor Feststellung bzw. Wartepflicht (Nr. 1, Nr. 2)
+    - label: 3. Vorsatz bei Entfernen
+    - label: 4. Rechtswidrigkeit (berechtigtes Entfernen?) und Schuld
+    - label: 5. Tätige Reue, § 142 Abs. 4 StGB
+  - label: IV. Konkurrenzen
+    hinweis: § 316 tritt hinter § 315c zurück; § 142 steht in Tatmehrheit zu
+      § 315c, wenn das Entfernen eine neue Handlung ist.
+faelle:
+- slug: sr-fall-sv-radfahrer
+  title: Der Beinahe-Unfall mit dem Radfahrer
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: >-
+    F verlässt abends eine Feier. Er hat reichlich Wein getrunken, fühlt sich
+    "etwas wacklig" und weiß, dass er nicht mehr sicher fahren kann, setzt sich aber
+    dennoch in sein Auto. Eine später entnommene Blutprobe ergibt für die Tatzeit
+    eine Blutalkoholkonzentration von 1,6 Promille. Auf einer Landstraße gerät F
+    in einer leichten Kurve auf die Gegenfahrbahn. Dem entgegenkommenden Radfahrer R
+    gelingt es im letzten Moment, in den Grünstreifen auszuweichen; dabei stürzt R
+    und zieht sich Schürfwunden zu. F sieht im Rückspiegel, wie R am Boden liegt,
+    hält kurz an, fährt aber nach etwa 30 Sekunden weiter, weil er die
+    Polizei fürchtet. F vertraute darauf, dass "schon nichts passieren" werde.
+  question: Wie hat sich F nach §§ 315c, 316 und 142 StGB strafbar gemacht? Weitere
+    Delikte sind nicht zu prüfen.
+  steps:
+  - prompt: Ist F im Straßenverkehr fahrunsicher gefahren?
+    erwartung: Ja. F führte ein Kraftfahrzeug auf öffentlicher Straße. Bei 1,6 Promille
+      ist die Grenze von 1,1 Promille für die absolute Fahrunsicherheit deutlich
+      überschritten.
+  - prompt: Liegt eine konkrete Gefahr vor?
+    erwartung: Ja. R konnte nur im letzten Moment ausweichen, es hing vom Zufall
+      ab, ob es zum Zusammenstoß kam (Beinahe-Unfall). Die Gefahr beruht auf der
+      Fahrunsicherheit.
+  - prompt: Welche Vorsatzform ist zu bejahen und welcher Absatz einschlägig?
+    erwartung: F handelte vorsätzlich hinsichtlich der Fahrunsicherheit, denn er
+      wusste, dass er nicht mehr sicher fahren konnte. Die Gefahr hat er nur
+      fahrlässig herbeigeführt (bewusste Fahrlässigkeit, er vertraute auf das
+      Ausbleiben von Folgen). Es greift § 315c Abs. 3 Nr. 1 StGB. § 316 StGB
+      tritt als subsidiär zurück.
+  - prompt: Hat sich F wegen unerlaubten Entfernens vom Unfallort strafbar gemacht?
+    erwartung: Ja, § 142 Abs. 1 Nr. 2 StGB (jedenfalls Nr. 1). Der Sturz des R
+      ist ein Unfall im Straßenverkehr mit nicht unerheblichem Personenschaden, an
+      dem F beteiligt ist. F entfernte sich vorsätzlich nach etwa 30 Sekunden und
+      damit ohne angemessene Wartezeit und ohne Feststellungen zu ermöglichen. Ein
+      Rechtfertigungs- oder Entschuldigungsgrund liegt nicht vor; die Angst vor
+      der Polizei genügt nicht (kein Zwang zur Selbstbelastung). Tatmehrheit zu § 315c StGB.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Fahrunsicherheit durch absolute Fahrunsicherheit (Grenzwert) begründet
+      weight: 2.0
+      required: true
+      norms:
+      - § 315c Abs. 1 Nr. 1a StGB
+      keywords:
+      - absolute Fahrunsicherheit
+      - 1,1 Promille
+      - fahruntüchtig
+      - nicht in der Lage, das Fahrzeug sicher zu führen
+      - Blutalkoholkonzentration
+      card_slugs:
+      - sr-sv-grenzwerte
+      - sr-sv-315c-fahrunsicherheit
+    - id: p2
+      label: Konkrete Gefahr (Beinahe-Unfall) und Kausalität
+      weight: 2.0
+      required: true
+      norms:
+      - § 315c Abs. 1 StGB
+      keywords:
+      - konkrete Gefahr
+      - Beinahe-Unfall
+      - vom Zufall abhängig
+      - Gefährdung von Leib oder Leben
+      - Gefahrerfolg
+      card_slugs:
+      - sr-sv-konkrete-gefahr
+    - id: p3
+      label: Vorsatz-Fahrlässigkeits-Kombination, § 315c Abs. 3 Nr. 1 StGB
+      weight: 2.0
+      required: true
+      norms:
+      - § 315c Abs. 3 Nr. 1 StGB
+      keywords:
+      - § 315c Abs. 3 Nr. 1
+      - Vorsatz-Fahrlässigkeits-Kombination
+      - fahrlässig herbeigeführt
+      - bewusste Fahrlässigkeit
+      - Gefahr fahrlässig
+      card_slugs:
+      - sr-sv-315c-fahrunsicherheit
+    - id: p4
+      label: § 316 StGB tritt als subsidiär zurück
+      weight: 1.0
+      required: false
+      norms:
+      - § 316 StGB
+      keywords:
+      - Subsidiarität
+      - subsidiär
+      - tritt zurück
+      - § 316 StGB
+      card_slugs:
+      - sr-sv-316
+    - id: p5
+      label: Unerlaubtes Entfernen vom Unfallort, § 142 Abs. 1 StGB
+      weight: 2.0
+      required: false
+      norms:
+      - § 142 Abs. 1 StGB
+      keywords:
+      - Unfall im Straßenverkehr
+      - Unfallbeteiligter
+      - Wartepflicht
+      - Entfernen vom Unfallort
+      - § 142 Abs. 1
+      - angemessene Zeit
+      card_slugs:
+      - sr-sv-142-tatbestand

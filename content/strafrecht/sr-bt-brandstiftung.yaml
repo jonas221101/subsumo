@@ -1,0 +1,424 @@
+topic:
+  slug: sr-bt-brandstiftung
+  area: strafrecht
+  title: Brandstiftungsdelikte, §§ 306 bis 306f StGB
+  parent: sr-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-brand-systematik
+  type: norm
+  front: Wie sind die Brandstiftungsdelikte der §§ 306 bis 306f StGB aufgebaut?
+  back: >-
+    Die Brandstiftungsdelikte schützen als gemeingefährliche Straftaten Leib und
+    Leben von Menschen sowie fremdes Eigentum. § 306 StGB (einfache Brandstiftung)
+    erfasst das Inbrandsetzen oder Zerstören bestimmter fremder Tatobjekte und ist
+    ein Verbrechen. § 306a Abs. 1 StGB (schwere Brandstiftung) knüpft als abstraktes
+    Gefährdungsdelikt an besonders gefährliche Objekte an (Wohnräume, Kirchen zur
+    Zeit der Religionsausübung, Aufenthaltsräume), § 306a Abs. 2 StGB verlangt
+    bei den Objekten des § 306 Abs. 1 die konkrete Gefahr einer Gesundheitsschädigung.
+    § 306b StGB enthält Qualifikationen (schwere Gesundheitsschädigung,
+    Lebensgefahr, Verdeckungsabsicht), § 306c StGB die Erfolgsqualifikation
+    Todesfolge. § 306d StGB regelt die fahrlässige Brandstiftung, § 306e StGB die
+    tätige Reue, § 306f StGB das Herbeiführen einer Brandgefahr.
+  norms:
+  - § 306 Abs. 1 StGB
+  - § 306a StGB
+  - § 306b StGB
+  - § 306c StGB
+  - § 306f StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-brand-tatobjekte
+  type: definition
+  front: 'Welche Tatobjekte nennt § 306 Abs. 1 StGB und was bedeutet "fremd"?'
+  back: >-
+    § 306 Abs. 1 StGB nennt abschließend: Gebäude oder Hütten (Nr. 1),
+    Betriebsstätten oder technische Einrichtungen, namentlich Maschinen (Nr. 2),
+    Warenlager oder Vorräte (Nr. 3), Kraftfahrzeuge, Schienen-, Luft- oder
+    Wasserfahrzeuge (Nr. 4), Wälder, Heiden oder Moore (Nr. 5) sowie land-,
+    ernährungs- oder forstwirtschaftliche Anlagen oder Erzeugnisse (Nr. 6). Ein
+    Gebäude ist ein durch Wände und Dach begrenztes, mit dem Boden fest
+    verbundenes Bauwerk, das Menschen betreten können und das dem Schutz von
+    Menschen oder Sachen dient. Fremd ist das Objekt, wenn es zumindest auch im
+    Eigentum eines anderen steht; Miteigentum des Täters schließt die Fremdheit
+    nicht aus. Eigene Objekte unterfallen nur § 306a StGB, wenn dessen
+    Voraussetzungen vorliegen.
+  norms:
+  - § 306 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-brand-tathandlung
+  type: definition
+  front: 'Definiere die Tathandlungen "in Brand setzen" und "durch Brandlegung ganz oder teilweise zerstören"'
+  back: >-
+    In Brand gesetzt ist ein Objekt, wenn ein für seinen bestimmungsgemäßen
+    Gebrauch wesentlicher Bestandteil so vom Feuer erfasst ist, dass er auch nach
+    Entfernen oder Erlöschen des Zündstoffs selbstständig weiterbrennen kann.
+    Bloßes Ansengen, Verrußen oder Schmoren genügt nicht. Durch Brandlegung
+    teilweise zerstört ist das Objekt, wenn ein Teil von einigem Gewicht für den
+    bestimmungsgemäßen Gebrauch unbrauchbar wird, etwa ein Raum eines Gebäudes
+    durch Feuer oder Rauch- und Rußeinwirkung. Die Alternative der Zerstörung
+    durch Brandlegung ist bedeutsam, wenn zwar kein selbstständiges Brennen
+    festgestellt werden kann, das Objekt aber durch ein Schadensfeuer gebrauchsuntauglich
+    wurde. Beide Handlungsalternativen führen zur Vollendung der Tat.
+  norms:
+  - § 306 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-brand-wohnung-306a
+  type: definition
+  front: 'Was ist ein Gebäude oder eine Räumlichkeit, die "der Wohnung von Menschen dient", § 306a Abs. 1 Nr. 1 StGB?'
+  back: >-
+    Erfasst sind Gebäude, Schiffe, Hütten oder andere Räumlichkeiten, die
+    tatsächlich als Wohnstätte genutzt werden. Maßgeblich ist die tatsächliche
+    Zweckbestimmung zur Tatzeit, nicht die Eigentumslage: Auch das eigene
+    Wohnhaus oder das Haus des Mieters ist taugliches Objekt. Vorübergehende
+    Abwesenheit der Bewohner (Urlaub, Krankenhaus) ändert nichts an der
+    Wohnnutzung. Die Widmung kann aufgegeben werden (Entwidmung), wenn alle
+    Bewohner das Wohnen endgültig beenden und dies nach außen erkennbar wird; ein
+    leerstehendes, nicht mehr bewohntes Haus fällt dann nicht mehr unter Nr. 1. Die
+    Entwidmung durch die Brandlegung selbst oder durch den bloßen Tatentschluss
+    des Täters ist nicht möglich. Schutzzweck ist die Gefahr für Menschen, die
+    sich im Gebäude aufhalten oder helfen.
+  norms:
+  - § 306a Abs. 1 Nr. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-brand-teleologische-reduktion
+  type: streitstand
+  front: 'Streitstand: Teleologische Reduktion des § 306a Abs. 1 Nr. 1 StGB'
+  back: >-
+    Nr. 1 ist ein abstraktes Gefährdungsdelikt mit einer Mindeststrafe von einem
+    Jahr. Fraglich ist, ob die Norm auch gilt, wenn Gefahren für Menschen
+    offensichtlich ausgeschlossen sind, etwa wenn der Täter als Alleineigentümer
+    und Alleinbewohner sein freistehendes Haus ansteckt. Nach dem Wortlaut ist
+    auch dieser Fall erfasst. Teile der Literatur plädieren für eine
+    teleologische Reduktion, weil der Strafgrund (typische Lebens- und
+    Gesundheitsgefahr für Dritte) fehle und die Strafandrohung unverhältnismäßig
+    sei. Die Rechtsprechung ist mit einer generellen Reduktion zurückhaltend und
+    löst Härten überwiegend über das Merkmal "der Wohnung dient" (Entwidmung),
+    über den minder schweren Fall (§ 306a Abs. 3 StGB) und die Strafzumessung. In
+    der Klausur ist der Streit nur zu erörtern, wenn der Sachverhalt eine
+    Fremdgefährdung erkennbar ausschließt; sonst genügt die Subsumtion unter den
+    Wortlaut.
+  norms:
+  - § 306a Abs. 1 Nr. 1 StGB
+  - § 306a Abs. 3 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-brand-gemischt-genutzt
+  type: streitstand
+  front: 'Streitstand: Gemischt genutzte Gebäude (Wohn- und Geschäftsteil) bei § 306a Abs. 1 Nr. 1 StGB'
+  back: >-
+    Ein Gebäude, das teils Wohnzwecken, teils gewerblichen Zwecken dient (etwa
+    Gaststätte mit Wohnung im Obergeschoss), unterfällt Nr. 1 nur dann, wenn die
+    Tathandlung den Wohnbereich erfasst. Unstreitig genügt es, wenn der
+    Wohnteil selbst in Brand gesetzt oder teilweise zerstört wird. Wird dagegen
+    ausschließlich ein baulich und funktional abgetrennter, gewerblich genutzter
+    Teil in Brand gesetzt, genügt dies nach überwiegender Auffassung nicht, weil
+    die Gefahr für die Bewohner, auf die der Tatbestand abzielt, nicht in der
+    Tathandlung angelegt ist. Greift das Feuer dagegen über (Treppenhaus,
+    gemeinsame Bauteile) oder ist das Gebäude baulich eine Einheit, kann eine
+    Inbrandsetzung des Wohnbereichs vorliegen. In der Klausur ist zu prüfen,
+    welcher Gebäudeteil von der Tathandlung konkret betroffen ist; sonst kommt
+    §§ 306 Abs. 1 Nr. 1 und 306a Abs. 2 StGB in Betracht.
+  norms:
+  - § 306a Abs. 1 Nr. 1 StGB
+  - § 306a Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-brand-306a-abs2
+  type: norm
+  front: Was verlangt § 306a Abs. 2 StGB und wie unterscheidet sich die Norm von Abs. 1?
+  back: >-
+    § 306a Abs. 2 StGB bestraft, wer eines der in § 306 Abs. 1 Nr. 1 bis 6 StGB
+    genannten Objekte in Brand setzt oder durch Brandlegung ganz oder teilweise
+    zerstört und dadurch eine andere Person in die konkrete Gefahr einer
+    Gesundheitsschädigung bringt. Anders als Abs. 1 ist das ein konkretes
+    Gefährdungsdelikt: Die Gefahr muss tatsächlich eingetreten sein, das heißt,
+    es muss nach den Umständen vom Zufall abhängen, ob der Schaden eintritt. Die
+    Gefahr muss für eine bestimmte andere Person bestehen; der Täter selbst und
+    Tatbeteiligte scheiden als Gefährdete aus. Die Tat ist anders als § 306 StGB
+    nicht auf fremde Objekte beschränkt, sondern erfasst auch eigene Sachen. Der
+    Täter muss die Gefahr vorsätzlich herbeiführen; Fahrlässigkeit hinsichtlich
+    der Gefahr regelt § 306d StGB.
+  norms:
+  - § 306a Abs. 2 StGB
+  - § 306 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-brand-306b-306c
+  type: norm
+  front: Welche Qualifikationen enthalten § 306b StGB und § 306c StGB?
+  back: >-
+    § 306b Abs. 1 StGB qualifiziert die Tat nach § 306 oder § 306a StGB, wenn der
+    Täter eine schwere Gesundheitsschädigung eines anderen Menschen oder eine
+    Gesundheitsschädigung einer großen Zahl von Menschen verursacht. § 306b Abs. 2
+    StGB nennt als Voraussetzungen bei einer Tat nach § 306a StGB: die
+    Gefahr des Todes eines anderen Menschen, die Absicht, eine andere Straftat
+    zu ermöglichen oder zu verdecken, und das Verhindern oder Erschweren des
+    Löschens. § 306c StGB ist eine Erfolgsqualifikation: Verursacht der Täter
+    durch die Brandstiftung wenigstens leichtfertig den Tod eines anderen
+    Menschen, droht lebenslange Freiheitsstrafe oder Freiheitsstrafe nicht unter
+    zehn Jahren. Notwendig ist neben der Kausalität der tatbestandsspezifische
+    Gefahrzusammenhang: Der Tod muss sich gerade aus der Brandgefahr ergeben, etwa
+    durch Rauchgas oder Einsturz, und leichtfertig, also grob fahrlässig,
+    herbeigeführt sein.
+  norms:
+  - § 306b Abs. 1 StGB
+  - § 306b Abs. 2 StGB
+  - § 306c StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-brand-306d-306f
+  type: norm
+  front: Was regeln § 306d StGB und § 306f StGB?
+  back: >-
+    § 306d StGB erfasst die fahrlässige Brandstiftung. Strafbar ist, wer in den
+    Fällen des § 306 Abs. 1 oder § 306a Abs. 1 StGB fahrlässig handelt oder in den
+    Fällen des § 306a Abs. 2 StGB fahrlässig die Gefahr verursacht. Die Norm
+    erfasst also den Täter, der etwa durch eine nicht ausgedrückte Zigarette oder
+    einen defekten Heizlüfter das Feuer fahrlässig verursacht. § 306f StGB
+    (Herbeiführen einer Brandgefahr) bestraft das Inbrandbringen feuergefährdeter
+    fremder Betriebe oder Anlagen, land- und forstwirtschaftlicher Betriebe sowie
+    bestimmter Objekte durch Rauchen, offenes Feuer, Wärmeerzeugung, Wegwerfen
+    brennender Gegenstände oder in sonstiger Weise. Hier tritt die Gefahr
+    ein, der Brand selbst bleibt aus. Abs. 2 und 3 regeln die Gefährdung von
+    Menschen oder bedeutenden fremden Sachwerten sowie die fahrlässige
+    Gefahrverursachung.
+  norms:
+  - § 306d StGB
+  - § 306f StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-brand-306e-taetige-reue
+  type: norm
+  front: Unter welchen Voraussetzungen greift die tätige Reue nach § 306e StGB?
+  back: >-
+    § 306e Abs. 1 StGB erlaubt dem Gericht, die Strafe nach § 49 Abs. 2 StGB zu
+    mildern oder von einer Bestrafung nach den §§ 306 bis 306c StGB abzusehen, wenn
+    der Täter freiwillig den Brand löscht, bevor ein erheblicher Schaden
+    entstanden ist. Bei der fahrlässigen Brandstiftung (§ 306d StGB) wird nach
+    Abs. 2 nicht bestraft, wer freiwillig den Brand löscht, bevor ein erheblicher
+    Schaden entstanden ist. Wird der Brand ohne Zutun des Täters gelöscht, genügt
+    nach Abs. 3 das freiwillige und ernsthafte Bemühen. Freiwillig handelt der
+    Täter, wenn er aus autonomen Motiven handelt und noch Herr seiner
+    Entschlüsse ist (Maßstab wie bei § 24 StGB). Die Vorschrift ist wichtig, weil
+    ein Rücktritt nach § 24 StGB nach der Vollendung der Tat (Inbrandsetzen) nicht
+    mehr möglich ist. Die Schadensgrenze richtet sich nach dem Wert des
+    Objekts, nicht nach dem Löscheinsatz.
+  norms:
+  - § 306e Abs. 1 StGB
+  - § 306e Abs. 2 StGB
+  - § 306e Abs. 3 StGB
+  - § 24 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-brand-konkurrenzen
+  type: norm
+  front: Wie verhalten sich die Brandstiftungsdelikte zu anderen Delikten (Konkurrenzen)?
+  back: >-
+    Die Sachbeschädigung (§ 303 StGB) tritt hinter die Brandstiftung als mitbestrafte
+    Begleittat zurück, soweit sich der Schaden im Brand erschöpft. Mit
+    Körperverletzungs- und Tötungsdelikten besteht regelmäßig Tateinheit
+    (§ 52 StGB), weil die Brandstiftung den Unrechtsgehalt dieser Taten nicht
+    vollständig abdeckt; § 306c StGB schließt Tateinheit mit einem vorsätzlichen
+    Tötungsdelikt nicht aus, wenn dessen Unrecht anders nicht erfasst wird. Die
+    Brandstiftung zum Zweck des Versicherungsbetrugs ist ein Regelbeispiel
+    des § 263 Abs. 3 S. 2 Nr. 5 StGB; beide Taten stehen im Verhältnis der
+    Tateinheit. Für das Verhältnis von § 306 und § 306a StGB zueinander sind die
+    Subsidiarität der leichteren Brandstiftung und der Klarstellungsgedanke zu
+    beachten; in der Klausur ist es üblich, die schwerste Norm zuerst und die
+    übrigen kurz zu prüfen.
+  norms:
+  - § 303 StGB
+  - § 52 StGB
+  - § 263 Abs. 3 S. 2 Nr. 5 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: sr-schema-brand-306ff
+  title: Schwere Brandstiftung, § 306a Abs. 1 Nr. 1 StGB, und einfache Brandstiftung, § 306 Abs. 1 StGB
+  norms:
+  - § 306 Abs. 1 StGB
+  - § 306a Abs. 1 Nr. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Einfache Brandstiftung, § 306 Abs. 1 StGB
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: a) Tatobjekt aus Nr. 1 bis 6 (z. B. Gebäude)
+      - label: b) Fremdheit des Objekts
+        hinweis: Eigentum zumindest auch eines anderen; Alleineigentum des Täters
+          schließt § 306 aus, nicht aber § 306a.
+      - label: c) Tathandlung - in Brand setzen oder durch Brandlegung ganz oder teilweise zerstören
+        hinweis: Selbstständiges Weiterbrennen wesentlicher Bestandteile bzw. Unbrauchbarkeit
+          eines Teils von einigem Gewicht.
+    - label: 2. Subjektiver Tatbestand (Vorsatz)
+    - label: 3. Rechtswidrigkeit und Schuld
+  - label: II. Schwere Brandstiftung, § 306a Abs. 1 Nr. 1 StGB
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: a) Tatobjekt - Gebäude oder Räumlichkeit, die der Wohnung von Menschen dient
+        hinweis: Tatsächliche Wohnnutzung, Entwidmung prüfen; bei gemischt genutzten
+          Gebäuden betrifft die Tathandlung den Wohnbereich?
+      - label: b) Tathandlung wie bei § 306 Abs. 1 StGB
+    - label: 2. Subjektiver Tatbestand (Vorsatz bezüglich Wohnnutzung und Tathandlung)
+    - label: 3. Teleologische Reduktion bei ausgeschlossener Fremdgefährdung
+      hinweis: Nur erörtern, wenn der Sachverhalt eine Gefährdung Dritter ersichtlich
+        ausschließt.
+    - label: 4. Rechtswidrigkeit und Schuld
+  - label: III. Qualifikationen und Erfolgsqualifikation, §§ 306b, 306c StGB
+    hinweis: Schwere Gesundheitsschädigung, Lebensgefahr, Verdeckungsabsicht, Todesfolge
+      (wenigstens leichtfertig, § 18 StGB).
+  - label: IV. Tätige Reue, § 306e StGB
+    hinweis: Freiwilliges Löschen vor erheblichem Schaden; Rücktritt nach § 24 StGB
+      nach Vollendung ausgeschlossen.
+faelle:
+- slug: sr-fall-brand-nachbarhaus
+  title: Das Feuer am Nachbarhaus
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: >-
+    Nach einem Streit um eine Grundstücksgrenze will B seinem Nachbarn N "einen
+    Denkzettel verpassen". Er weiß, dass N, dessen Ehefrau und die Kinder das
+    freistehende Einfamilienhaus des N bewohnen und nachts dort schlafen. Gegen
+    ein Uhr nachts schüttet B Benzin auf die hölzerne Eingangstür samt
+    Vordach und zündet es an. Die Tür und das Vordach brennen, auch nachdem B den
+    Zündstoff entfernt hat, selbstständig weiter. N wird vom Rauchmelder geweckt,
+    löscht das Feuer mit einem Feuerlöscher, bevor es auf das Hausinnere
+    übergreift, und bringt seine Familie ins Freie. Verletzt wird niemand.
+  question: Hat sich B wegen Brandstiftung nach den §§ 306, 306a StGB strafbar gemacht?
+    Delikte der Körperverletzung und Tötung sind nicht zu prüfen.
+  steps:
+  - prompt: Liegt ein taugliches Tatobjekt des § 306 Abs. 1 StGB vor und ist es fremd?
+    erwartung: Ja, das Einfamilienhaus ist ein Gebäude im Sinne des § 306 Abs.
+      1 Nr. 1 StGB und steht im Eigentum des N, ist für B also fremd.
+  - prompt: Hat B das Gebäude in Brand gesetzt?
+    erwartung: Ja. Die Eingangstür und das Vordach als wesentliche Bestandteile
+      des Gebäudes brannten selbstständig weiter, auch nachdem der Zündstoff entfernt
+      war. Auf die spätere Löschung durch N kommt es für die Vollendung nicht an.
+  - prompt: Ist auch § 306a Abs. 1 Nr. 1 StGB erfüllt?
+    erwartung: Ja. Das Haus dient der Wohnung von Menschen, nämlich der Familie N,
+      die dort tatsächlich wohnt. Die Brandlegung betrifft einen Teil des Wohnhauses
+      (Eingang, Vordach), eine gemischte Nutzung liegt nicht vor. Eine teleologische
+      Reduktion scheidet aus, weil Menschen im Haus gefährdet sind. B handelte vorsätzlich,
+      ihm war die Wohnnutzung und die Anwesenheit der Familie bekannt.
+  - prompt: Kommen die Qualifikationen der §§ 306b, 306c StGB in Betracht?
+    erwartung: Nein. Es ist niemand verletzt oder gestorben, eine schwere Gesundheitsschädigung
+      oder der Tod eines Menschen wurde nicht verursacht (§ 306b Abs. 1, § 306c StGB).
+      Auch eine Lebensgefahr im Sinne des § 306b Abs. 2 Nr. 1 StGB wird nicht
+      festgestellt. Die tätige Reue (§ 306e StGB) greift für B nicht, weil er das
+      Feuer nicht löschte.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Tatobjekt Gebäude und Fremdheit (§ 306 Abs. 1 Nr. 1 StGB)
+      weight: 1.0
+      required: false
+      norms:
+      - § 306 Abs. 1 Nr. 1 StGB
+      keywords:
+      - fremdes Gebäude
+      - Gebäude im Sinne des § 306
+      - im Eigentum des N
+      - Fremdheit
+      - § 306 Abs. 1 Nr. 1 StGB
+      card_slugs:
+      - sr-brand-tatobjekte
+    - id: p2
+      label: In-Brand-Setzen durch selbstständiges Weiterbrennen wesentlicher Gebäudeteile
+      weight: 2.5
+      required: true
+      norms:
+      - § 306 Abs. 1 StGB
+      keywords:
+      - in Brand gesetzt
+      - selbstständig weiterbrennen
+      - selbständig weiter
+      - wesentlicher Bestandteil
+      - ohne Zündstoff
+      - Vollendung der Brandstiftung
+      card_slugs:
+      - sr-brand-tathandlung
+    - id: p3
+      label: Gebäude dient der Wohnung von Menschen (§ 306a Abs. 1 Nr. 1 StGB)
+      weight: 3.0
+      required: true
+      norms:
+      - § 306a Abs. 1 Nr. 1 StGB
+      keywords:
+      - dient der Wohnung von Menschen
+      - Wohnung von Menschen
+      - Wohnhaus
+      - tatsächliche Wohnnutzung
+      - § 306a Abs. 1 Nr. 1
+      - schwere Brandstiftung
+      card_slugs:
+      - sr-brand-wohnung-306a
+    - id: p4
+      label: Vorsatz hinsichtlich Wohnnutzung und Tathandlung; keine Reduktion
+      weight: 1.5
+      required: false
+      norms:
+      - § 15 StGB
+      - § 306a Abs. 1 Nr. 1 StGB
+      keywords:
+      - Vorsatz bezüglich der Wohnnutzung
+      - wusste von der Anwesenheit
+      - abstraktes Gefährdungsdelikt
+      - keine teleologische Reduktion
+      - Gefährdung von Menschen
+      card_slugs:
+      - sr-brand-teleologische-reduktion
+    - id: p5
+      label: Keine Qualifikation nach §§ 306b, 306c StGB und keine tätige Reue
+      weight: 1.0
+      required: false
+      norms:
+      - § 306b StGB
+      - § 306c StGB
+      - § 306e StGB
+      keywords:
+      - § 306b nicht erfüllt
+      - keine schwere Gesundheitsschädigung
+      - keine Todesfolge
+      - § 306e
+      - tätige Reue
+      card_slugs:
+      - sr-brand-306b-306c
+      - sr-brand-306e-taetige-reue

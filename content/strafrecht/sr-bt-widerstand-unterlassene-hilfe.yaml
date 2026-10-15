@@ -1,0 +1,453 @@
+topic:
+  slug: sr-bt-widerstand-unterlassene-hilfe
+  area: strafrecht
+  title: Widerstand gegen Vollstreckungsbeamte (§§ 113, 114 StGB) und unterlassene Hilfeleistung (§ 323c StGB)
+  parent: sr-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-wh-113-tatbestand
+  type: definition
+  front: Welche Voraussetzungen hat der Widerstand gegen Vollstreckungsbeamte, § 113 Abs. 1 StGB?
+  back: >-
+    Strafbar ist, wer einem Amtsträger oder Soldaten der Bundeswehr, der zur
+    Vollstreckung von Gesetzen, Rechtsverordnungen, Urteilen, Gerichtsbeschlüssen oder
+    Verfügungen berufen ist, bei der Vornahme einer solchen Diensthandlung mit
+    Gewalt oder durch Drohung mit Gewalt Widerstand leistet. Geschützt werden
+    die staatliche Vollstreckungsgewalt und die handelnden Personen. Der Widerstand
+    muss bei der Vornahme der Diensthandlung erfolgen, also in zeitlichem und
+    sachlichem Zusammenhang mit ihr. Die Tat ist ein Vergehen mit Freiheitsstrafe
+    bis zu drei Jahren oder Geldstrafe. Subjektiv ist Vorsatz erforderlich, der
+    sich auf die Amtsträgereigenschaft, die Diensthandlung und den Widerstand
+    bezieht; ein Irrtum über die Rechtmäßigkeit der Diensthandlung wird in Abs. 3
+    und 4 gesondert geregelt. Für Einsatzkräfte gleichgestellter Personen
+    (etwa Feuerwehr, Rettungsdienst) gilt § 115 StGB.
+  norms:
+  - § 113 Abs. 1 StGB
+  - § 115 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-wh-gewalt-widerstand
+  type: definition
+  front: Was ist Gewalt, Drohung mit Gewalt und Widerstandleisten bei § 113 StGB?
+  back: >-
+    Gewalt ist die Entfaltung körperlicher Kraft, die auf den Körper des Amtsträgers
+    wirkt oder ihn an der Vornahme der Diensthandlung hindern soll. Beispiele sind
+    das Wegstoßen, Festhalten, Treten oder Losreißen mit körperlichem
+    Kraftaufwand. Drohung mit Gewalt ist das Inaussichtstellen künftiger
+    Gewaltanwendung, die der Täter beeinflussen kann. Widerstand leisten bedeutet,
+    durch aktives Tun die Durchführung der Diensthandlung verhindern oder
+    erschweren zu wollen. Passiver Widerstand, etwa Sitzenbleiben, Wegtragenlassen,
+    bloße Weigerung oder bloßes Weglaufen, ist keine Gewalt. Gewalt gegen
+    Sachen genügt nur, wenn sie sich mittelbar gegen den Amtsträger richtet
+    (zum Beispiel Verbarrikadieren der Tür). Der Widerstand muss
+    gegen die Vollstreckungshandlung gerichtet sein, nicht gegen die Person
+    unabhängig von der Diensthandlung.
+  norms:
+  - § 113 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-wh-diensthandlung
+  type: definition
+  front: Wer ist Vollstreckungsbeamter und was ist eine Diensthandlung im Sinne der §§ 113, 114 StGB?
+  back: >-
+    Geschützt ist ein Amtsträger (§ 11 Abs. 1 Nr. 2 StGB) oder ein Soldat der
+    Bundeswehr, der zur Vollstreckung von Gesetzen, Rechtsverordnungen, Urteilen,
+    Gerichtsbeschlüssen oder Verfügungen berufen ist. Typische Fälle sind
+    Polizeibeamte bei Festnahme, Durchsuchung, Platzverweis, Identitätsfeststellung oder
+    Sicherstellung, Gerichtsvollzieher bei der Vollstreckung, Beamte des
+    Ordnungsamtes beim Abschleppen. Vollstrecken ist die Durchsetzung eines
+    Befehls oder die Anwendung unmittelbaren Zwangs auf Grund einer
+    Eingriffsbefugnis. Reine Verwaltungstätigkeit ohne Zwangscharakter (Aktenführung,
+    bloße Streifenfahrt) ist keine Vollstreckungshandlung. Die Diensthandlung
+    beginnt mit unmittelbarem Ansetzen zur Maßnahme und dauert bis zu ihrem
+    Abschluss; auch Vorbereitungs- und Nachbereitungsakte sind einbezogen, wenn
+    sie in engem Zusammenhang stehen.
+  norms:
+  - § 113 Abs. 1 StGB
+  - § 114 Abs. 1 StGB
+  - § 11 Abs. 1 Nr. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-wh-rechtmaessigkeit-begriff
+  type: streitstand
+  front: 'Streitstand: Strafrechtlicher oder verwaltungsrechtlicher Rechtmäßigkeitsbegriff bei § 113 Abs. 3 StGB'
+  back: >-
+    § 113 Abs. 3 S. 1 StGB macht die Strafbarkeit von der Rechtmäßigkeit der
+    Diensthandlung abhängig. Nach dem verwaltungsrechtlichen Rechtmäßigkeitsbegriff
+    ist die Handlung nur rechtmäßig, wenn sie objektiv alle materiell- und
+    formellrechtlichen Voraussetzungen erfüllt; das wahrt die Einheit der
+    Rechtsordnung, belastet den Bürger aber, der die Rechtslage nicht sicher
+    erkennen kann. Nach dem herrschenden strafrechtlichen Rechtmäßigkeitsbegriff genügt
+    für die Rechtmäßigkeit, dass der Amtsträger örtlich und sachlich zuständig ist,
+    die wesentlichen Förmlichkeiten wahrt und bei der Beurteilung der
+    tatsächlichen Voraussetzungen sowie bei Ermessensentscheidungen pflichtgemäß
+    verfährt. Eine Handlung bleibt danach rechtmäßig, wenn der Beamte bei sorgfältiger
+    Prüfung zu einer vertretbaren, aus der Sicht ex ante gerechtfertigten Annahme
+    gelangt, auch wenn sie sich später als unzutreffend erweist. Dafür spricht, dass
+    der Vollstreckungsbeamte in Eilsituationen zum Handeln verpflichtet ist und
+    nicht jede Fehlbeurteilung den Schutz der Vollstreckung entfallen lassen darf.
+  norms:
+  - § 113 Abs. 3 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-wh-rechtmaessigkeit-pruefung
+  type: norm
+  front: Wie ist die Rechtmäßigkeit der Diensthandlung in der Klausur zu prüfen und welche Rechtsnatur hat sie?
+  back: >-
+    Die Rechtmäßigkeit der Diensthandlung ist nach dem Wortlaut des § 113 Abs. 3 StGB
+    eine Voraussetzung der Strafbarkeit (nach h.M. objektive Bedingung der
+    Strafbarkeit, Einordnung umstritten), die in der Klausur unmittelbar nach dem
+    Tatbestand zu prüfen ist. Maßstab
+    ist der Zeitpunkt der Diensthandlung. Geprüft werden: 1. die Eingriffsgrundlage
+    (Ermächtigung, etwa Polizeigesetz, StPO, ZPO), 2. die sachliche und örtliche
+    Zuständigkeit, 3. die Einhaltung wesentlicher Förmlichkeiten (zum Beispiel
+    Ankündigung, Anhörung, Vorweisen des Dienstausweises soweit gesetzlich verlangt),
+    4. die tatbestandlichen Voraussetzungen der Befugnisnorm, bei denen dem Amtsträger
+    ein Spielraum für vertretbare Einschätzungen zusteht, und 5. die pflichtgemäße
+    Ermessensausübung einschließlich Verhältnismäßigkeit. Ist die Handlung
+    rechtswidrig, ist die Tat nicht nach § 113 StGB strafbar, ohne dass es auf
+    den Irrtum des Täters ankommt. Notwehr (§ 32 StGB) gegen rechtswidrige
+    Diensthandlungen bleibt gesondert zu prüfen.
+  norms:
+  - § 113 Abs. 3 StGB
+  - § 32 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-wh-113-irrtum
+  type: norm
+  front: Wie behandelt das Gesetz Irrtümer über die Rechtmäßigkeit der Diensthandlung, § 113 Abs. 3 und 4 StGB?
+  back: >-
+    Nach § 113 Abs. 3 S. 2 StGB ist die Tat auch dann nicht strafbar, wenn die
+    Diensthandlung rechtswidrig ist und der Täter irrig annimmt, sie sei rechtmäßig:
+    Allein die objektive Rechtmäßigkeit zählt. Nimmt der Täter dagegen irrig an, die
+    Diensthandlung sei nicht rechtmäßig, obwohl sie rechtmäßig ist, gilt § 113 Abs. 4
+    StGB: Konnte er den Irrtum vermeiden, kann das Gericht die Strafe mildern oder von
+    Strafe absehen (S. 1). Konnte er ihn nicht vermeiden und war es ihm nach den
+    ihm bekannten Umständen auch nicht zuzumuten, sich mit Rechtsbehelfen gegen die
+    vermeintlich rechtswidrige Diensthandlung zu wehren, ist die Tat nicht nach
+    dieser Vorschrift strafbar (S. 2). Die Vorschrift regelt den umgekehrten
+    Erlaubnisirrtum eigenständig und geht den allgemeinen Regeln der §§ 16, 17 StGB
+    vor. Der Irrtum über tatsächliche Umstände der Amtsträgereigenschaft bleibt
+    dagegen Tatbestandsirrtum (§ 16 StGB).
+  norms:
+  - § 113 Abs. 3 StGB
+  - § 113 Abs. 4 StGB
+  - § 16 StGB
+  - § 17 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-wh-113-abs2
+  type: norm
+  front: Welche besonders schweren Fälle nennt § 113 Abs. 2 StGB?
+  back: >-
+    § 113 Abs. 2 StGB sieht für besonders schwere Fälle Freiheitsstrafe von sechs
+    Monaten bis zu fünf Jahren vor. Ein besonders schwerer Fall liegt in der Regel
+    vor, wenn der Täter oder ein anderer Beteiligter eine Waffe oder ein anderes
+    gefährliches Werkzeug bei sich führt, um es bei der Tat zu verwenden (Nr. 1),
+    oder wenn der Täter durch eine Gewalttätigkeit den Angegriffenen in die Gefahr
+    des Todes oder einer schweren Gesundheitsschädigung bringt (Nr. 2). Es handelt
+    sich um Regelbeispiele: Die Indizwirkung kann durch besondere Umstände
+    entkräftet werden, und ein unbenannter besonders schwerer Fall bleibt möglich. Die
+    Regelbeispiele sind in der Klausur nach der Prüfung des Grundtatbestands in
+    einem eigenen Abschnitt zu prüfen. Waffen im technischen Sinne sind
+    Schusswaffen, gefährliche Werkzeuge sind Gegenstände, die nach Art und Einsatz geeignet
+    sind, erhebliche Verletzungen zuzufügen.
+  norms:
+  - § 113 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-wh-114-angriff
+  type: norm
+  front: Was regelt § 114 StGB (tätlicher Angriff auf Vollstreckungsbeamte)?
+  back: >-
+    § 114 Abs. 1 StGB bestraft, wer einen Amtsträger oder Soldaten der Bundeswehr
+    bei einer Diensthandlung tätlich angreift, mit Freiheitsstrafe von drei Monaten
+    bis zu fünf Jahren. Tätlicher Angriff ist eine unmittelbar auf den Körper
+    zielende feindselige Handlung, die nicht zu einer Verletzung führen muss. Der Täter
+    muss keinen Widerstand gegen die Vollstreckung leisten wollen. Abs. 2 erklärt
+    die Regelungen über besonders schwere Fälle des § 113 Abs. 2 StGB für
+    entsprechend anwendbar. Die Vorschrift über die Rechtmäßigkeit der Diensthandlung
+    gilt entsprechend (§ 114 Abs. 3 StGB, der auf § 113 Abs. 3 und 4 StGB verweist). Die
+    Vorschrift wurde eingeführt, um Gewalt gegen Polizei und Vollstreckungsbeamte
+    deutlicher zu ahnden. § 114 StGB wird durch § 115 StGB auf Hilfeleistende der
+    Feuerwehr, des Katastrophenschutzes und des Rettungsdienstes erstreckt.
+  norms:
+  - § 114 Abs. 1 StGB
+  - § 114 Abs. 2 StGB
+  - § 114 Abs. 3 StGB
+  - § 115 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-wh-323c-tatbestand
+  type: definition
+  front: Welche Voraussetzungen hat die unterlassene Hilfeleistung, § 323c Abs. 1 StGB?
+  back: >-
+    Strafbar ist, wer bei Unglücksfällen oder gemeiner Gefahr oder Not nicht Hilfe
+    leistet, obwohl dies erforderlich und nach den Umständen zuzumuten, insbesondere
+    ohne erhebliche eigene Gefahr und ohne Verletzung anderer wichtiger Pflichten
+    möglich ist. Ein Unglücksfall ist ein plötzlich eintretendes Ereignis, das eine
+    erhebliche Gefahr für Personen oder Sachen bringt oder zu bringen droht. Gemeine
+    Gefahr oder Not ist eine Lage, die die Allgemeinheit oder eine unbestimmte
+    Zahl von Menschen bedroht. Erforderlich ist die Hilfe, wenn sie zur Abwendung
+    der Gefahr ex ante geeignet erscheint; Verhältnismäßigkeit und das Eingreifen
+    anderer Helfer sind zu beachten. Die Tat ist ein echtes Unterlassungsdelikt;
+    ein Garant wird nach § 13 StGB bestraft, § 323c StGB tritt dann zurück.
+    Vorsatz erfordert die Kenntnis der Lage und der Hilfsmöglichkeit; Strafe:
+    Freiheitsstrafe bis zu einem Jahr oder Geldstrafe.
+  norms:
+  - § 323c Abs. 1 StGB
+  - § 13 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-wh-323c-zumutbarkeit
+  type: norm
+  front: Wann ist Hilfeleistung nach § 323c StGB erforderlich und zumutbar?
+  back: >-
+    Welche Hilfe erforderlich ist, bestimmt sich nach der objektiv ex ante
+    zu erwartenden Wirksamkeit. Der Hilfspflichtige muss nicht selbst
+    fachkundig helfen, wenn die Alarmierung von Rettungskräften das Mittel der
+    Wahl ist (Notruf); hat bereits ein anderer wirksam Hilfe geleistet, ist die Pflicht
+    erfüllt. Nicht zumutbar ist eine Hilfe, die mit erheblicher eigener Gefahr
+    (für Leib, Leben oder bedeutende Güter) verbunden wäre, oder die die
+    Verletzung anderer wichtiger Pflichten verlangen würde (Aufsichts- und
+    Berufspflichten). Maßstab ist der Durchschnittsbürger in der konkreten Lage.
+    Weder Verwandtschaft noch persönliche Beziehung begründen die Pflicht
+    aus § 323c StGB; eine Garantenstellung wird nach § 13 StGB geprüft. Auch der
+    Verursacher des Unglücksfalls ist grundsätzlich hilfspflichtig. Wer sich durch
+    die Hilfeleistung selbst belasten müsste, kann diese oft durch einen
+    anonymen Notruf erfüllen.
+  norms:
+  - § 323c Abs. 1 StGB
+  - § 13 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-wh-323c-suizid
+  type: streitstand
+  front: 'Streitstand: Suizid und Suizidversuch als Unglücksfall im Sinne des § 323c StGB'
+  back: >-
+    Nach der traditionellen Rechtsprechung ist auch der Suizidversuch ein
+    Unglücksfall, weil für den Betroffenen eine erhebliche Gefahr eintritt,
+    deren Abwendung die Allgemeinheit nicht seinem Willen überlassen darf; wer
+    nicht hilft, macht sich nach § 323c StGB strafbar. Kritiker (Teile der
+    Literatur) halten den freiverantwortlichen Suizid dagegen nicht für einen
+    Unglücksfall, weil der Verzicht auf Hilfe dem Selbstbestimmungsrecht des
+    Betroffenen entspricht (Art. 2 Abs. 1 GG) und die Pflicht zur Hilfe sonst
+    dem eigenen Willen widerspricht. Entscheidend ist die Freiverantwortlichkeit:
+    Bei fehlender Freiverantwortlichkeit (Verzweiflungstat, psychische Erkrankung,
+    Willensmangel) bleibt die Hilfspflicht nach allgemeiner Meinung bestehen. Die
+    jüngere Rechtsprechung hat die Hilfspflicht bei erkennbar freiverantwortlichem
+    Suizid zunehmend eingeschränkt. In der Klausur sind die Freiverantwortlichkeit und
+    die erkennbaren Umstände sorgfältig zu subsumieren.
+  norms:
+  - § 323c Abs. 1 StGB
+  - Art. 2 Abs. 1 GG
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-wh-323c-abs2
+  type: norm
+  front: Was regelt § 323c Abs. 2 StGB (Behinderung von Hilfeleistenden)?
+  back: >-
+    § 323c Abs. 2 StGB stellt unter Strafe, wer in einer Situation des Abs. 1 (Unglücksfall,
+    gemeine Gefahr oder Not) eine Person behindert, die einem Dritten Hilfe leistet
+    oder leisten will. Die Vorschrift wurde 2017 eingeführt, um sogenanntes Gaffen
+    und das Behindern von Rettungskräften zu erfassen. Behindern ist jedes
+    Verhalten, das die Hilfe erschwert oder verzögert, etwa durch Versperren des
+    Zugangs oder Filmen und Fotografieren mit der Folge, dass Helfer gehindert werden.
+    Hilfeleistende sind nicht nur professionelle Rettungskräfte, sondern jeder, der
+    Hilfe leisten will. Das bloße Filmen oder Fotografieren ohne
+    Behinderung erfüllt Abs. 2 nicht; daneben kommt eine Strafbarkeit nach § 201a
+    StGB in Betracht. Die Tat ist ein Vorsatzdelikt, der Täter muss die Behinderung
+    wollen oder zumindest in Kauf nehmen.
+  norms:
+  - § 323c Abs. 2 StGB
+  - § 201a StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: sr-schema-wh-113
+  title: Widerstand gegen Vollstreckungsbeamte, § 113 StGB, und tätlicher Angriff, § 114 StGB
+  norms:
+  - § 113 Abs. 1 StGB
+  - § 113 Abs. 3 StGB
+  - § 114 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: a) Amtsträger oder Soldat, zur Vollstreckung berufen
+      - label: b) Diensthandlung zur Vollstreckung
+      - label: c) Tathandlung - Gewalt oder Drohung mit Gewalt, Widerstand leisten
+        hinweis: Passiver Widerstand genügt nicht. Bei § 114 StGB tätlicher Angriff
+          statt Widerstand.
+    - label: 2. Subjektiver Tatbestand (Vorsatz)
+  - label: II. Rechtmäßigkeit der Diensthandlung, § 113 Abs. 3 StGB
+    children:
+    - label: 1. Eingriffsgrundlage und Zuständigkeit
+    - label: 2. Wesentliche Förmlichkeiten
+    - label: 3. Tatbestandsvoraussetzungen der Befugnis (vertretbare Einschätzung ex ante)
+      hinweis: Strafrechtlicher Rechtmäßigkeitsbegriff (h.M.) gegen verwaltungsrechtlichen.
+    - label: 4. Ermessen und Verhältnismäßigkeit
+  - label: III. Rechtswidrigkeit
+    hinweis: Notwehr nur gegen rechtswidrige Diensthandlungen.
+  - label: IV. Schuld
+  - label: V. Irrtum über die Rechtmäßigkeit, § 113 Abs. 3 S. 2, Abs. 4 StGB
+    hinweis: Irrt der Täter, die Handlung sei nicht rechtmäßig - Vermeidbarkeit und
+      Zumutbarkeit von Rechtsbehelfen.
+  - label: VI. Besonders schwere Fälle, § 113 Abs. 2 StGB
+- slug: sr-schema-wh-323c
+  title: Unterlassene Hilfeleistung, § 323c Abs. 1 StGB
+  norms:
+  - § 323c Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: a) Unglücksfall, gemeine Gefahr oder gemeine Not
+        hinweis: Suizid(versuch) - Freiverantwortlichkeit prüfen.
+      - label: b) Nichtleisten von Hilfe
+      - label: c) Hilfeleistung erforderlich
+      - label: d) Hilfeleistung zumutbar (keine erhebliche eigene Gefahr, keine Verletzung wichtiger Pflichten)
+    - label: 2. Subjektiver Tatbestand (Vorsatz, Kenntnis der Lage und der Hilfsmöglichkeit)
+  - label: II. Rechtswidrigkeit und Schuld
+  - label: III. Konkurrenzen
+    hinweis: Hinter Unterlassungsdelikten nach § 13 StGB tritt § 323c StGB zurück.
+faelle:
+- slug: sr-fall-wh-identitaetsfeststellung
+  title: Der Stoß gegen den Polizisten
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: >-
+    Nachts erhält eine Polizeistreife von einem Passanten den Hinweis, er habe
+    gesehen, dass ein Mann mit roter Kapuzenjacke soeben mehrere Hauswände
+    besprüht habe; der Mann gehe in Richtung Bahnhof. Polizeiobermeister P trifft
+    wenige Minuten später in unmittelbarer Nähe auf A, der eine rote Kapuzenjacke
+    trägt, und verlangt zur Klärung des Tatverdachts seinen Ausweis und eine
+    kurze Identitätsfeststellung. A, der mit dem Sprühen nichts zu tun hat und keinen Ausweis bei sich trägt, weigert
+    sich: "Ich war es nicht, lassen Sie mich in Ruhe." Als P ihn am Arm festhält,
+    stößt A ihn mit beiden Händen kräftig vor die Brust, sodass P zu Boden fällt, und
+    läuft weg. P bleibt unverletzt. A war überzeugt, P dürfe ihn als Unbeteiligten gar
+    nicht festhalten; er hätte sich über die Rechtslage leicht informieren
+    können und sich auch mit einer Beschwerde wehren können.
+  question: Hat sich A nach §§ 113, 114 StGB strafbar gemacht? Konkurrenzen und
+    weitere Delikte sind nicht zu prüfen.
+  steps:
+  - prompt: Liegen die objektiven Tatbestandsmerkmale vor?
+    erwartung: Ja. P ist als Polizeibeamter Amtsträger und führte als Vollstreckungsbeamter
+      eine Identitätsfeststellung durch. A leistete mit Gewalt Widerstand, indem er P
+      kräftig vor die Brust stieß, um dem Festhalten zu entgehen; zugleich liegt ein tätlicher
+      Angriff vor, denn der Stoß zielte unmittelbar auf den Körper.
+  - prompt: War die Diensthandlung rechtmäßig?
+    erwartung: Ja. Nach dem strafrechtlichen Rechtmäßigkeitsbegriff genügt, dass P
+      zuständig war, die Förmlichkeiten wahrte und bei sorgfältiger Prüfung vertretbar
+      von einem Anfangsverdacht ausgehen durfte (Hinweis des Passanten, passende Kleidung,
+      zeitliche und räumliche Nähe; Maßnahme nach § 163b StPO). Dass A unschuldig ist,
+      steht der Rechtmäßigkeit nicht entgegen, die Maßnahme war verhältnismäßig.
+  - prompt: Wie wirkt sich der Irrtum des A aus?
+    erwartung: A hielt die Diensthandlung für nicht rechtmäßig, obwohl sie rechtmäßig war.
+      Dies regelt § 113 Abs. 4 StGB. Der Irrtum war vermeidbar, weil sich A leicht
+      über die Rechtslage hätte informieren können und Rechtsbehelfe zur Verfügung
+      standen. Deshalb bleibt die Tat strafbar; das Gericht kann die Strafe mildern oder von
+      Strafe absehen (§ 113 Abs. 4 S. 1 StGB, entsprechend § 114 Abs. 3 StGB).
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Objektiver Tatbestand von § 113 und § 114 StGB (Vollstreckungsbeamter, Gewalt/tätlicher Angriff)
+      weight: 2.0
+      required: true
+      norms:
+      - § 113 Abs. 1 StGB
+      - § 114 Abs. 1 StGB
+      keywords:
+      - Widerstand mit Gewalt
+      - Gewalt gegen den Amtsträger
+      - tätlicher Angriff
+      - Vollstreckungsbeamter
+      - Diensthandlung
+      card_slugs:
+      - sr-wh-113-tatbestand
+      - sr-wh-gewalt-widerstand
+      - sr-wh-114-angriff
+    - id: p2
+      label: Rechtmäßigkeit der Diensthandlung nach strafrechtlichem Rechtmäßigkeitsbegriff bejaht
+      weight: 3.0
+      required: true
+      norms:
+      - § 113 Abs. 3 StGB
+      keywords:
+      - strafrechtlicher Rechtmäßigkeitsbegriff
+      - Rechtmäßigkeit der Diensthandlung
+      - Anfangsverdacht
+      - § 163b StPO
+      - vertretbare Einschätzung
+      - Zuständigkeit und Förmlichkeiten
+      card_slugs:
+      - sr-wh-rechtmaessigkeit-begriff
+      - sr-wh-rechtmaessigkeit-pruefung
+    - id: p3
+      label: Irrtum über die Rechtmäßigkeit nach § 113 Abs. 4 StGB, Vermeidbarkeit
+      weight: 3.0
+      required: true
+      norms:
+      - § 113 Abs. 4 StGB
+      keywords:
+      - § 113 Abs. 4
+      - vermeidbarer Irrtum
+      - Strafmilderung
+      - von Strafe absehen
+      - irrig angenommen
+      - Rechtsbehelfe
+      card_slugs:
+      - sr-wh-113-irrtum
+    - id: p4
+      label: Keine Rechtfertigung durch Notwehr gegen rechtmäßige Maßnahme
+      weight: 1.0
+      required: false
+      norms:
+      - § 32 StGB
+      keywords:
+      - keine Notwehr
+      - kein gegenwärtiger rechtswidriger Angriff
+      - § 32 StGB
+      - Rechtswidrigkeit der Maßnahme
+      card_slugs:
+      - sr-wh-rechtmaessigkeit-pruefung
