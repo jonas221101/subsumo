@@ -278,15 +278,27 @@ faelle:
   question: Wie hat sich E strafbar gemacht?
   steps:
   - prompt: Ist der Grundtatbestand des § 212 Abs. 1 StGB erfüllt?
-    erwartung: Ja - E hat den W vorsätzlich getötet.
+    erwartung: Ja - E hat den W vorsätzlich getötet; der Grundtatbestand des Totschlags,
+      § 212 Abs. 1 StGB, ist damit erfüllt.
   - prompt: Liegt das Mordmerkmal der Heimtücke vor?
     erwartung: Ja - W war arglos (rechnete nicht mit einem Angriff auf sein Leben)
       und dadurch wehrlos (konnte sich wegen der Überraschung nicht verteidigen);
       E nutzte dies bewusst aus.
   - prompt: Liegt zusätzlich Verdeckungsabsicht vor?
-    erwartung: Ja - E tötete gezielt, um seine Identifizierung als Einbrecher und
-      damit seine Strafverfolgung wegen des Diebstahls zu verhindern; der finale Zusammenhang
-      zwischen Vortat und Tötung ist gegeben.
+    erwartung: Ja - E handelte in Verdeckungsabsicht. Er tötete gezielt, um seine Identifizierung
+      als Einbrecher und damit seine Strafverfolgung wegen des Diebstahls zu verhindern;
+      der finale Zusammenhang zwischen Vortat und Tötung ist gegeben.
+  - prompt: Wie ist das Verhältnis von § 211 StGB zu § 212 StGB zu bestimmen, und kommt es hier darauf an?
+    erwartung: Nach der Rechtsprechung ist § 211 StGB ein eigenständiger Tatbestand (Selbstständigkeitstheorie),
+      nach der Literatur eine Qualifikation zu § 212 StGB (Qualifikationstheorie). Der Streit
+      wirkt sich vor allem bei der Teilnahme nach § 28 Abs. 2 StGB aus; da E allein handelt,
+      kann er hier offenbleiben.
+  - prompt: Wie hat sich E strafbar gemacht?
+    erwartung: E hat sich wegen Mordes nach § 211 Abs. 2 StGB strafbar gemacht, und zwar
+      durch zwei Mordmerkmale, nämlich Heimtücke und Verdeckungsabsicht.
+  - prompt: In welchem Verhältnis steht der Mord zum vorangegangenen Diebstahl?
+    erwartung: Der vorangegangene Diebstahl steht zum Mord in Tatmehrheit nach § 53 StGB,
+      denn es handelt sich um zwei selbstständige Handlungen.
   expectation:
     pruefpunkte:
     - id: p1
@@ -300,6 +312,7 @@ faelle:
       - Totschlag gemäß § 212
       - vorsätzliche Tötung
       - Grundtatbestand des Totschlags
+      - vorsätzlich getötet
       card_slugs:
       - sr-toetung-totschlag-212
     - id: p2
@@ -313,6 +326,8 @@ faelle:
       - Wehrlosigkeit
       - Arg- und Wehrlosigkeit
       - rechnete nicht mit einem Angriff
+      - war arglos
+      - dadurch wehrlos
       card_slugs:
       - sr-toetung-heimtuecke
     - id: p3
@@ -323,6 +338,8 @@ faelle:
       - bewusst ausgenutzt
       - Ausnutzen der Arg- und Wehrlosigkeit
       - bewusste Ausnutzung
+      - nutzte dies bewusst aus
+      - bewusst ausnutzt
       card_slugs:
       - sr-toetung-heimtuecke
     - id: p4
@@ -337,6 +354,9 @@ faelle:
       - finaler Zusammenhang
       - Verdeckung der Vortat
       - um die Tat zu verdecken
+      - finale Zusammenhang
+      - in Verdeckungsabsicht
+      - Strafverfolgung wegen des Diebstahls
       card_slugs:
       - sr-toetung-verdeckungsabsicht
     - id: p5
@@ -356,10 +376,11 @@ faelle:
       required: true
       keywords:
       - Mord gemäß § 211
-      - Mord, § 211
+      - 'Mord, § 211'
       - § 211 Abs. 2
       - wegen Mordes
       - Mord in Tatmehrheit
+      - Mordes nach § 211
       card_slugs:
       - sr-toetung-mord-211-systematik
     - id: p7
@@ -372,4 +393,6 @@ faelle:
       - in Tateinheit
       - § 53 StGB
       - § 52 StGB
+      - steht zum Mord in Tatmehrheit
+      - Mord in Tatmehrheit
       card_slugs: []

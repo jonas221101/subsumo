@@ -208,7 +208,8 @@ faelle:
   - prompt: Ist T vom Versuch zurückgetreten?
     erwartung: 'Das ist zu prüfen: Nach dem Rücktrittshorizont kommt es auf die Vorstellung
       des T nach dem Stich an - er hielt O für tödlich getroffen, ging also von einem
-      beendeten Versuch aus.'
+      beendeten Versuch aus. Der Versuch ist nicht fehlgeschlagen, denn T erkennt keine
+      Unmöglichkeit der Vollendung, sondern erwartet den Eintritt des Todes.'
   - prompt: Genügt es beim beendeten Versuch, dass T nichts weiter unternommen hat?
     erwartung: Nein. Beim beendeten Versuch erfordert § 24 Abs. 1 S. 1 Var. 2 StGB
       ein aktives Verhindern der Vollendung, etwa durch Rettungsmaßnahmen oder einen
@@ -239,6 +240,8 @@ faelle:
       - Tötungsvorsatz
       - bedingter Tötungsvorsatz
       - Tötungswille
+      - zumindest bedingtem
+      - 'Vorsatz, O zu töten'
       card_slugs:
       - sr-versuch-tatentschluss
     - id: p3
@@ -249,6 +252,8 @@ faelle:
       - unmittelbares Ansetzen
       - unmittelbar angesetzt
       - Ausführungshandlung vorgenommen
+      - Messerstich hat T bereits
+      - zur Tötung führende Handlung
       card_slugs:
       - sr-versuch-unmittelbares-ansetzen
     - id: p4
@@ -266,6 +271,8 @@ faelle:
       - Versuch war beendet
       - Versuch als beendet
       - keinen weiteren Ausführungsakt
+      - von einem beendeten Versuch aus
+      - beendeten Versuch aus
       card_slugs:
       - sr-ruecktritt-ruecktrittshorizont
     - id: p4b
@@ -276,6 +283,8 @@ faelle:
       - nicht fehlgeschlagen
       - Fehlschlag
       - fehlgeschlagener Versuch
+      - Unmöglichkeit der Vollendung
+      - Versuch ist nicht fehlgeschlagen
       card_slugs:
       - sr-ruecktritt-fehlschlag
     - id: p5
@@ -286,10 +295,11 @@ faelle:
       keywords:
       - aktives Verhindern
       - aktiv verhindern
-      - Verhinderungshandlung
       - Rettungsmaßnahmen
       - Untätigbleiben genügt nicht
       - bloßes Nichtstun genügt nicht
+      - aktives Verhindern der Vollendung
+      - Bloßes Untätigbleiben
       card_slugs:
       - sr-ruecktritt-ruecktrittshorizont
       - sr-ruecktritt-begriff

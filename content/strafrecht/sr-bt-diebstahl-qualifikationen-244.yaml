@@ -372,7 +372,8 @@ faelle:
       - objektive Bestimmung
       - Verwendungsabsicht ist nicht erforderlich
       - objektive Beschaffenheit
-      - subjektive Ansätze
+      - objektive Eignung
+      - 'Eignung, erhebliche Verletzungen herbeizuführen'
       card_slugs:
       - sr-dq-gefaehrliches-werkzeug-streitstand
       - sr-dq-244-nr1a-waffe
@@ -415,6 +416,9 @@ faelle:
       - Spezialität
       - § 123 konsumiert
       - Hausfriedensbruch tritt zurück
+      - es liegt eine Tat vor
+      - § 242 StGB wird verdrängt
+      - konsumierte Begleittat
       card_slugs:
       - sr-dq-konkurrenzen-242-243-244
       - sr-dq-243-regelbeispiele-systematik
