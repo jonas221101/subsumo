@@ -9,6 +9,7 @@ import '../api.dart';
 import '../design/design.dart';
 import '../state.dart';
 import 'beta_feedback.dart';
+import 'landesbezug.dart';
 import '../theme.dart';
 
 /// Gutachten-Trainer (Challenge 1 und 4).
@@ -315,7 +316,13 @@ class _GutachtenPageState extends State<GutachtenPage> {
     if (caseUpgradeMessage != null) {
       return Scaffold(
         appBar: AppBar(
-          title: Text(widget._titel),
+          toolbarHeight: 64,
+          title: Text(
+            widget._titel,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            style: Theme.of(context).textTheme.titleMedium,
+          ),
           actions: [BetaFeedbackAction(screen: 'Fall: ${widget.caseTitle}')],
         ),
         body: Center(
@@ -343,7 +350,15 @@ class _GutachtenPageState extends State<GutachtenPage> {
       // ueber dem Inhalt (statt in der Chrome) wuerde bei kurzen Fenstern
       // den Falltext im Editor ueberdecken koennen.
       appBar: AppBar(
-        title: _focusMode ? null : Text(widget._titel),
+        toolbarHeight: _focusMode ? null : 64,
+        title: _focusMode
+            ? null
+            : Text(
+                widget._titel,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
         actions: [
           BetaFeedbackAction(screen: 'Fall: ${widget.caseTitle}'),
           IconButton(
@@ -429,6 +444,10 @@ class _GutachtenPageState extends State<GutachtenPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                if (landesLabel(_case!['bundesland']) case final land?) ...[
+                  SubsumoChip(label: land, icon: Icons.location_on_outlined),
+                  const SizedBox(height: Spacing.sm),
+                ],
                 const SubsumoEyebrow('Sachverhalt'),
                 const SizedBox(height: Spacing.sm),
                 Text(

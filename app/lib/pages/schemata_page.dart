@@ -5,6 +5,7 @@ import '../state.dart';
 import '../theme.dart';
 import 'bundesland_hint.dart';
 import 'fit_title.dart';
+import 'landesbezug.dart';
 import 'norm_sheet.dart';
 import 'screen_status.dart';
 
@@ -61,11 +62,20 @@ class _SchemataPageState extends State<SchemataPage> {
   List<Map<String, dynamic>> get _visible {
     final q = _query.trim().toLowerCase();
     if (q.isEmpty) return _schemata;
+    final ranks = <Map<String, dynamic>, int>{};
+    for (final s in _schemata) {
+      final r = suchRang(
+        q,
+        '${s['title']} ${((s['norms'] as List?) ?? const []).join(' ')} ${landesSuchtext(s['bundesland'])}',
+      );
+      if (r != null) ranks[s] = r;
+    }
+    final hits = ranks.keys.toList();
+    // Stabil: Volltreffer zuerst, sonst urspruengliche Reihenfolge.
     return [
-      for (final s in _schemata)
-        if ((s['title'] as String).toLowerCase().contains(q) ||
-            ((s['norms'] as List?) ?? const []).join(' ').toLowerCase().contains(q))
-          s,
+      for (final r in [0, 1])
+        for (final s in hits)
+          if (ranks[s] == r) s,
     ];
   }
 
@@ -187,14 +197,18 @@ class SchemaTile extends StatelessWidget {
         // oeffentlichen Flaechen vorbehalten (docs/25 Abschnitt 3.6).
         leading: Icon(_areaIcon(schema['area'] as String? ?? ''), color: theme.colorScheme.onSurfaceVariant),
         title: FitTitle(schema['title'] as String, style: typography.headingSmall),
-        subtitle: norms.isEmpty
+        subtitle: norms.isEmpty && landesLabel(schema['bundesland']) == null
             ? null
             : Padding(
                 padding: const EdgeInsets.only(top: Spacing.xs),
                 child: Wrap(
                   spacing: Spacing.md,
                   runSpacing: Spacing.xs,
-                  children: [for (final norm in norms) NormLink(norm)],
+                  children: [
+                    if (landesLabel(schema['bundesland']) case final land?)
+                      SubsumoChip(label: land, icon: Icons.location_on_outlined),
+                    for (final norm in norms) NormLink(norm),
+                  ],
                 ),
               ),
         children: [

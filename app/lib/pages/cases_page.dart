@@ -6,6 +6,7 @@ import '../theme.dart';
 import 'bundesland_hint.dart';
 import 'fit_title.dart';
 import 'gutachten_page.dart';
+import 'landesbezug.dart';
 import 'screen_status.dart';
 
 /// Fallsammlung: filterbar nach Rechtsgebiet, durchsuchbar nach Titel.
@@ -62,14 +63,22 @@ class _CasesPageState extends State<CasesPage> {
 
   List<Map<String, dynamic>> get _visible {
     final q = _query.trim().toLowerCase();
+    final ranks = <Map<String, dynamic>, int>{};
     final list = [
       for (final fall in _cases)
-        if ((_area == null || fall['area'] == _area) &&
-            (q.isEmpty ||
-                '${fall['title']} ${fall['facts'] ?? ''} ${fall['question'] ?? ''}'
-                    .toLowerCase()
-                    .contains(q)))
-          fall,
+        if (_area == null || fall['area'] == _area)
+          if (q.isEmpty)
+            fall
+          else if (suchRang(
+                q,
+                '${fall['title']} ${fall['facts'] ?? ''} ${fall['question'] ?? ''} '
+                '${landesSuchtext(fall['bundesland'])}',
+              )
+              case final r?)
+            () {
+              ranks[fall] = r;
+              return fall;
+            }(),
     ];
     // Profil-Schwerpunkt zuerst, innerhalb eines Gebiets leicht vor schwer.
     const standard = ['zivilrecht', 'strafrecht', 'oeffentliches-recht'];
@@ -81,6 +90,9 @@ class _CasesPageState extends State<CasesPage> {
 
     final indexed = [for (var i = 0; i < list.length; i++) (i, list[i])];
     indexed.sort((a, b) {
+      // Volltreffer (ganzes Wort) vor Wortanfang-Treffern.
+      final t = (ranks[a.$2] ?? 0).compareTo(ranks[b.$2] ?? 0);
+      if (t != 0) return t;
       final r = rank(a.$2).compareTo(rank(b.$2));
       if (r != 0) return r;
       final d = ((a.$2['difficulty'] as num?) ?? 0).compareTo((b.$2['difficulty'] as num?) ?? 0);
@@ -115,8 +127,8 @@ class _CasesPageState extends State<CasesPage> {
             eyebrow: 'Gutachten-Training',
             title: 'Fälle',
             subtitle: visible.length == _cases.length
-                ? '${_cases.length} geführte Fälle mit Erwartungshorizont.'
-                : '${visible.length} von ${_cases.length} Fällen.',
+                ? '${_cases.length} geführte Fälle mit Erwartungshorizont, sortiert nach Schwierigkeit.'
+                : '${visible.length} von ${_cases.length} Fällen, sortiert nach Schwierigkeit.',
           ),
           const SizedBox(height: Spacing.md),
           const BundeslandHint(),
@@ -224,6 +236,10 @@ class _CaseTile extends StatelessWidget {
                   '${_areaLabel(area)}  ·  ${fall['minutes']}\u00A0min',
                   style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
                 ),
+                if (landesLabel(fall['bundesland']) case final land?) ...[
+                  const SizedBox(height: Spacing.xs),
+                  SubsumoChip(label: land, icon: Icons.location_on_outlined),
+                ],
               ],
             ),
           ),
