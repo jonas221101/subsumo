@@ -1,0 +1,471 @@
+topic:
+  slug: sr-bt-freiheitsdelikte
+  area: strafrecht
+  title: "Freiheitsdelikte: §§ 239, 241, 238 StGB"
+  parent: sr-at
+  relevance: 3
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-frei-schutzgut
+  type: definition
+  front: "Definiere: Schutzgut und Systematik der Freiheitsdelikte (§§ 239, 240, 241, 238 StGB)"
+  back: >-
+    Die Delikte des 18. Abschnitts schützen verschiedene Facetten der
+    persönlichen Freiheit. § 239 StGB schützt die Fortbewegungsfreiheit, also
+    die Freiheit, einen Ort zu verlassen oder zu wechseln. § 240 StGB schützt
+    die Willensentschließungs- und Willensbetätigungsfreiheit (dazu das eigene
+    Thema Nötigung). § 241 StGB schützt das individuelle Sicherheitsgefühl und
+    den Rechtsfrieden der bedrohten Person. § 238 StGB schützt die Freiheit der
+    Lebensgestaltung vor beharrlicher Nachstellung. Wichtig für die Klausur: §
+    239 StGB ist ein Dauerdelikt; Tat und Beendigung fallen auseinander, was für
+    Teilnahme, Notwehr und Verjährung relevant sein kann. Die Entführungs- und
+    Geiseldelikte (§§ 239a, 239b StGB) sind eigene Tatbestände und nicht
+    Gegenstand dieses Themas.
+  norms:
+  - "§ 239 Abs. 1 StGB"
+  - "§ 240 Abs. 1 StGB"
+  - "§ 241 StGB"
+  - "§ 238 StGB"
+  quellen:
+  - "StGB, amtliche Fassung"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-frei-239-tatbestand
+  type: definition
+  front: "Definiere: Freiheitsberaubung, § 239 Abs. 1 StGB (Einsperren und Berauben der Freiheit auf andere Weise)"
+  back: >-
+    Tatobjekt ist jeder Mensch. Einsperren ist das Verhindern des Verlassens
+    eines Raumes durch äußere Schranken, etwa durch Abschließen der Tür. Der
+    Raum muss nicht klein sein; es genügt, dass das Verlassen verhindert oder
+    unzumutbar erschwert wird. Der Freiheit auf andere Weise beraubt, wer die
+    Fortbewegung des Opfers durch ein anderes Mittel ausschließt, etwa durch
+    Fesseln, Festhalten, Wegnahme der Kleidung oder durch Gewalt und Drohung.
+    Erforderlich ist ein Hindernis, das das Opfer nicht ohne Weiteres, also nur
+    unter erheblicher Gefahr, unter Hilfe Dritter oder nur mit unzumutbarem
+    Aufwand überwinden kann; ein bloß lästiges oder leicht zu umgehendes
+    Hindernis genügt nicht. Subjektiv genügt bedingter Vorsatz. Der Versuch ist
+    nach Abs. 2 strafbar.
+  norms:
+  - "§ 239 Abs. 1 StGB"
+  - "§ 239 Abs. 2 StGB"
+  quellen:
+  - "StGB, amtliche Fassung"
+  stand: 2026-10
+- slug: sr-frei-239-potentiell-aktuell
+  type: streitstand
+  front: "Streitstand: Potentielle oder aktuelle Fortbewegungsfreiheit als Schutzgut des § 239 StGB"
+  back: >-
+    Problem: Erfasst § 239 StGB auch Opfer, die ihre Fortbewegungsfreiheit im
+    Moment der Tat nicht ausüben wollen oder können, etwa Schlafende,
+    Bewusstlose oder Betrunkene, die den Einschluss gar nicht bemerken? Die
+    Rspr. und h.M. schützen die potentielle Fortbewegungsfreiheit, also die
+    Möglichkeit, den Aufenthaltsort nach eigenem Willen zu wechseln. Danach
+    liegt auch beim Einsperren einer Schlafenden eine Freiheitsberaubung vor,
+    solange die Fortbewegungsfähigkeit grundsätzlich besteht; Argument ist, dass
+    das Rechtsgut nicht von der zufälligen Ausübung abhängen darf und die
+    Schutzbedürftigkeit gerade bei Wehrlosen hoch ist. Die Gegenauffassung
+    verlangt die aktuelle Fortbewegungsfreiheit: Geschützt sei nur, wer den
+    Willen zur Ortsveränderung tatsächlich bildet; der Wortlaut ('Freiheit') und
+    das Fehlen einer Beeinträchtigung sprächen dagegen, bei Unkenntnis des
+    Opfers ein Unrecht anzunehmen. Praktisch relevant ist die h.M. dort, wo der
+    Einschluss vor dem Erwachen wieder beendet wird. Nicht geschützt ist nach
+    beiden Ansichten, wer mangels körperlicher Fähigkeit nie zur Fortbewegung in
+    der Lage ist (z. B. Säugling).
+  norms:
+  - "§ 239 Abs. 1 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-frei-239-dauer-einverstaendnis
+  type: definition
+  front: "Definiere: Zeitliche Erheblichkeit und Einverständnis bei § 239 StGB"
+  back: >-
+    Die Freiheitsberaubung muss eine gewisse Dauer erreichen. Nach h.M. genügt
+    ein nicht ganz unerheblicher Zeitraum; ganz kurzfristige Beeinträchtigungen,
+    die nach den Umständen als sozialadäquat gelten (etwa das Festhalten für
+    wenige Sekunden im Gedränge), erfüllen den Tatbestand nicht. Schon einige
+    Minuten können ausreichen, wenn das Opfer gezielt am Weitergehen gehindert
+    wird. Das Einverständnis des Betroffenen schließt bereits den Tatbestand aus
+    (tatbestandsausschließendes Einverständnis), weil die Fortbewegungsfreiheit
+    zur Disposition des Rechtsgutsinhabers steht. Das Einverständnis muss vom
+    Opfer frei und in Kenntnis der Lage erklärt werden; bei einem durch
+    Täuschung erschlichenen Einverständnis ist die Wirksamkeit umstritten. Bei
+    Minderjährigen und psychisch Kranken kommt es auf die natürliche
+    Einsichtsfähigkeit an.
+  norms:
+  - "§ 239 Abs. 1 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-frei-239-qualifikation-konkurrenz
+  type: norm
+  front: "Was regeln § 239 Abs. 3 bis 5 StGB und wie verhält sich § 239 StGB zu anderen Delikten?"
+  back: >-
+    § 239 Abs. 3 StGB enthält Qualifikationen mit erhöhtem Strafrahmen: die
+    Freiheitsberaubung dauert länger als eine Woche (Nr. 1), oder durch die Tat
+    bzw. eine während der Tat begangene Handlung wird eine schwere
+    Gesundheitsschädigung verursacht (Nr. 2). Abs. 4 qualifiziert die
+    leichtfertige Verursachung des Todes des Opfers (Erfolgsqualifikation,
+    Mindeststrafe drei Jahre). Abs. 5 sieht für minder schwere Fälle einen
+    geminderten Strafrahmen vor. Konkurrenzen: Wird die Freiheitsberaubung als
+    Mittel einer Nötigung eingesetzt oder zugleich mit Gewalt gegen das Opfer
+    begangen, besteht regelmäßig Tateinheit mit § 240 StGB; dient das Einsperren
+    der Wegnahme, kommt Tateinheit mit §§ 249, 255 StGB in Betracht. Bei
+    vorsätzlicher Körperverletzung während der Tat ist Tateinheit mit § 223 StGB
+    möglich. Die genauen Strafrahmen sind für die Klausur weniger wichtig als
+    die Systematik der Qualifikationen.
+  norms:
+  - "§ 239 Abs. 3 StGB"
+  - "§ 239 Abs. 4 StGB"
+  - "§ 239 Abs. 5 StGB"
+  - "§ 52 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-frei-239-240-abgrenzung
+  type: definition
+  front: "Abgrenze: Freiheitsberaubung (§ 239 StGB) und Nötigung (§ 240 StGB)"
+  back: >-
+    § 239 StGB schützt die Fortbewegungsfreiheit und kennt keinen
+    Nötigungserfolg: Es genügt, dass das Opfer am Ortswechsel gehindert wird. §
+    240 StGB schützt die allgemeine Willensfreiheit und verlangt, dass das Opfer
+    durch Gewalt oder Drohung mit einem empfindlichen Übel zu einem bestimmten
+    Verhalten (Handlung, Duldung oder Unterlassung) genötigt wird. Wer jemanden
+    gewaltsam am Verlassen eines Raums hindert, kann deshalb beide Tatbestände
+    erfüllen: § 239 StGB, weil die Fortbewegung ausgeschlossen wird, und § 240
+    StGB, weil das Opfer zu einem Dulden gezwungen wird. Nach h.M. besteht dann
+    Tateinheit (§ 52 StGB), weil beide Delikte unterschiedliche Rechtsgüter
+    schützen. Verweis auf das Thema Nötigung (sr-bt-noetigung-240) für den
+    Gewaltbegriff, die Drohung mit einem empfindlichen Übel und die
+    Verwerflichkeitsprüfung nach § 240 Abs. 2 StGB.
+  norms:
+  - "§ 239 Abs. 1 StGB"
+  - "§ 240 Abs. 1 StGB"
+  - "§ 240 Abs. 2 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-frei-239-rechtfertigung
+  type: norm
+  front: "Welche Rechtfertigungsgründe sind bei § 239 StGB klausurrelevant?"
+  back: >-
+    Neben Notwehr und Nothilfe (§ 32 StGB) sowie rechtfertigendem Notstand (§ 34
+    StGB) ist das vorläufige Festnahmerecht nach § 127 Abs. 1 S. 1 StPO der
+    klausurtypische Rechtfertigungsgrund: Jedermann darf eine Person, die auf
+    frischer Tat betroffen oder verfolgt wird, vorläufig festnehmen, wenn sie
+    der Flucht verdächtig ist oder ihre Identität nicht sofort festgestellt
+    werden kann. Die Festnahme muss erforderlich und verhältnismäßig sein; es
+    muss tatsächlich eine Straftat vorliegen (nach h.M. objektiv, nicht nur nach
+    dem Verdacht). Zwischen Dauer und Anlass muss ein Verhältnis bestehen: Das
+    Festhalten bis zum Eintreffen der Polizei ist gedeckt, eine darüber
+    hinausgehende Einsperrung nicht. Im Erziehungsrecht der Eltern ist
+    kurzzeitiges Festhalten eines Kindes zu Erziehungszwecken in engen Grenzen
+    gerechtfertigt, ein Einsperren aber regelmäßig nicht. Daneben kommen die
+    Einwilligung (hier als Einverständnis bereits auf Tatbestandsebene) und
+    amtliche Befugnisse in Betracht.
+  norms:
+  - "§ 32 StGB"
+  - "§ 34 StGB"
+  - "§ 127 Abs. 1 StPO"
+  - "§ 239 Abs. 1 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-frei-241-bedrohung
+  type: norm
+  front: "Was regelt § 241 StGB (Bedrohung) in der Fassung seit 2021?"
+  back: >-
+    § 241 StGB wurde mit dem Gesetz zur Bekämpfung des Rechtsextremismus und der
+    Hasskriminalität (in Kraft seit 3.4.2021) erweitert. Bedroht wird heute, wer
+    eine Person mit der Begehung einer gegen sie oder eine ihr nahestehende
+    Person gerichteten rechtswidrigen Tat gegen die sexuelle Selbstbestimmung,
+    die körperliche Unversehrtheit, die persönliche Freiheit oder gegen eine
+    Sache von bedeutendem Wert bedroht (Abs. 1). Früher genügte nur die
+    Bedrohung mit einem Verbrechen; die Drohung mit einem Verbrechen bildet
+    jetzt eine höher bestrafte Variante (Abs. 2). Abs. 3 erfasst das
+    Vortäuschen, dass die Verwirklichung einer solchen Tat bevorstehe. Abs. 4
+    erhöht den Strafrahmen, wenn die Tat öffentlich, in einer Versammlung oder
+    durch Verbreiten eines Inhalts begangen wird. Erfasst sind also auch
+    Drohungen mit einfacher Körperverletzung oder mit einer Sachbeschädigung von
+    bedeutendem Wert, nicht aber Drohungen gegen die Ehre oder das Vermögen im
+    Übrigen.
+  norms:
+  - "§ 241 Abs. 1 StGB"
+  - "§ 241 Abs. 2 StGB"
+  - "§ 241 Abs. 3 StGB"
+  - "§ 241 Abs. 4 StGB"
+  quellen:
+  - "StGB, amtliche Fassung"
+  - "Gesetz zur Bekämpfung des Rechtsextremismus und der Hasskriminalität, 2021"
+  stand: 2026-10
+- slug: sr-frei-241-merkmale
+  type: definition
+  front: "Definiere: Bedrohen i.S.d. § 241 StGB und Abgrenzung zur Nötigung"
+  back: >-
+    Bedrohen ist die Ankündigung eines künftigen Übels, auf dessen Eintritt der
+    Täter Einfluss zu haben vorgibt. Die Drohung muss ernstlich sein, d. h. sie
+    muss nach dem objektiven Erscheinungsbild geeignet sein, vom Bedrohten ernst
+    genommen zu werden; der Täter muss sie nicht ernst meinen, muss aber
+    zumindest billigend in Kauf nehmen, dass der Adressat sie ernst nimmt. Kein
+    Bedrohen ist eine erkennbar scherzhafte oder bloß als Warnung vor fremdem
+    Verhalten gemeinte Äußerung. Der Bedrohte muss die Drohung nicht tatsächlich
+    als ernst empfinden (Gefährdungsdelikt, kein Erfolg erforderlich).
+    Abgrenzung zu § 240 StGB: Bei der Nötigung dient die Drohung dazu, ein
+    bestimmtes Verhalten zu erzwingen, und es muss ein Nötigungserfolg
+    eintreten. § 241 StGB kommt ohne Zweck-Mittel-Beziehung aus. Wird mit einem
+    Übel gedroht, um ein Verhalten zu erzwingen, tritt § 241 StGB bei
+    vollendeter Nötigung nach h.M. zurück (Konsumtion bzw. Subsidiarität).
+  norms:
+  - "§ 241 StGB"
+  - "§ 240 Abs. 1 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-frei-238-nachstellung
+  type: norm
+  front: "Was regelt § 238 StGB (Nachstellung) in den Grundzügen?"
+  back: >-
+    Nach § 238 Abs. 1 StGB macht sich strafbar, wer einer anderen Person
+    unbefugt in einer Weise nachstellt, die geeignet ist, deren Lebensgestaltung
+    nicht unerheblich zu beeinträchtigen, indem er beharrlich bestimmte
+    Handlungen vornimmt. Der Katalog nennt unter anderem das Aufsuchen
+    räumlicher Nähe, das Herstellen von Kontakt unter Verwendung von
+    Kommunikationsmitteln oder über Dritte, die missbräuchliche Verwendung
+    personenbezogener Daten (z. B. Bestellungen im Namen des Opfers),
+    Bedrohungen, das Verbreiten oder Veröffentlichen von Abbildungen oder
+    Inhalten sowie andere vergleichbare Handlungen. Seit der Reform 2021 ist §
+    238 StGB ein Eignungsdelikt: Es kommt nicht mehr darauf an, dass das Opfer
+    seine Lebensgestaltung tatsächlich verändert hat, sondern dass die
+    Handlungen dazu objektiv geeignet sind. Es gibt Qualifikationen und
+    Regelbeispiele für besonders schwere Fälle, eine Erfolgsqualifikation bei
+    Todesverursachung sowie ein Strafantragserfordernis mit der Möglichkeit, bei
+    besonderem öffentlichem Interesse von Amts wegen zu verfolgen.
+  norms:
+  - "§ 238 Abs. 1 StGB"
+  quellen:
+  - "StGB, amtliche Fassung"
+  - "Gesetz zur Änderung des Strafgesetzbuches - effektivere Bekämpfung der Nachstellung, 2021"
+  stand: 2026-10
+- slug: sr-frei-238-beharrlich
+  type: definition
+  front: "Definiere: Beharrlichkeit und Eignung zur Beeinträchtigung der Lebensgestaltung, § 238 Abs. 1 StGB"
+  back: >-
+    Beharrlich handelt, wer wiederholt und hartnäckig vorgeht und dadurch eine
+    Haltung offenbart, die ihn zur Fortsetzung der Handlungen entschlossen oder
+    gleichgültig gegenüber dem entgegenstehenden Willen des Opfers macht. Eine
+    einzelne Handlung genügt nicht; es braucht mehrere, in einem inneren
+    Zusammenhang stehende Handlungen, wobei die Zahl nicht starr festgelegt ist.
+    Hat das Opfer klar zu erkennen gegeben, dass es keinen Kontakt wünscht,
+    spricht ein Fortsetzen für Beharrlichkeit. Die Handlungen müssen zusätzlich
+    in ihrer Gesamtheit geeignet sein, die Lebensgestaltung nicht unerheblich zu
+    beeinträchtigen, d. h. einen Einfluss auf Gewohnheiten, Wohnort, Arbeit oder
+    soziale Kontakte haben können. Unbefugt handelt, wer keinen
+    Rechtfertigungsgrund hat; die Einordnung des Merkmals (Tatbestand oder
+    allgemeines Verbrechensmerkmal der Rechtswidrigkeit) ist umstritten, für die
+    Klausur genügt eine knappe Prüfung der Befugnis (z. B. berechtigter Kontakt
+    zur Wahrnehmung des Umgangsrechts). Vorsatz einschließlich der
+    Beharrlichkeit ist erforderlich; bedingter Vorsatz genügt.
+  norms:
+  - "§ 238 Abs. 1 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: sr-frei-schema-239
+  title: "Freiheitsberaubung, § 239 Abs. 1 StGB"
+  norms:
+  - "§ 239 Abs. 1 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+  steps:
+  - label: "I. Tatbestand"
+    children:
+    - label: "1. Objektiver Tatbestand"
+      children:
+      - label: "a) Tatobjekt: Mensch mit (potentieller) Fortbewegungsfähigkeit"
+        hinweis: >-
+          Streit potentielle/aktuelle Fortbewegungsfreiheit nur ansprechen, wenn
+          das Opfer schläft, bewusstlos ist oder den Einschluss nicht bemerkt.
+      - label: "b) Tathandlung: Einsperren oder Berauben der Freiheit auf andere Weise"
+      - label: "c) Aufhebung der Fortbewegungsfreiheit von nicht ganz unerheblicher Dauer"
+        hinweis: >-
+          Abgrenzung zu sozialadäquaten Kurzzeitbeeinträchtigungen.
+      - label: "d) Kein tatbestandsausschließendes Einverständnis"
+    - label: "2. Subjektiver Tatbestand: Vorsatz, § 15 StGB (bedingter Vorsatz genügt)"
+  - label: "II. Rechtswidrigkeit"
+    hinweis: >-
+      Typisch: § 127 Abs. 1 StPO, Notwehr, Notstand.
+  - label: "III. Schuld"
+  - label: "IV. Qualifikationen, § 239 Abs. 3 bis 5 StGB"
+    hinweis: >-
+      Nur bei Anlass: Dauer über eine Woche, schwere Gesundheitsschädigung,
+      leichtfertige Todesverursachung.
+  - label: "V. Konkurrenzen"
+    hinweis: >-
+      Tateinheit mit § 240 StGB bei Nötigungscharakter; Dauerdelikt beachten.
+- slug: sr-frei-schema-241
+  title: "Bedrohung, § 241 StGB"
+  norms:
+  - "§ 241 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+  steps:
+  - label: "I. Tatbestand"
+    children:
+    - label: "1. Objektiver Tatbestand"
+      children:
+      - label: "a) Bedrohen: Ankündigung eines künftigen Übels, auf das der Täter Einfluss zu haben vorgibt"
+        hinweis: >-
+          Ernstlichkeit: objektive Eignung, ernst genommen zu werden.
+      - label: "b) Gegenstand: rechtswidrige Tat gegen sexuelle Selbstbestimmung, körperliche Unversehrtheit, persönliche Freiheit oder Sache von bedeutendem Wert (Abs. 1) bzw. Verbrechen (Abs. 2)"
+      - label: "c) Opfer oder eine ihm nahestehende Person als Zielperson der angedrohten Tat"
+    - label: "2. Subjektiver Tatbestand: Vorsatz, insbesondere bezüglich der Ernstlichkeit"
+  - label: "II. Rechtswidrigkeit"
+  - label: "III. Schuld"
+  - label: "IV. Qualifikation, § 241 Abs. 4 StGB"
+    hinweis: >-
+      Öffentlich, in einer Versammlung oder durch Verbreiten eines Inhalts.
+  - label: "V. Konkurrenz: Verhältnis zu § 240 StGB"
+    hinweis: >-
+      Hinter vollendeter Nötigung tritt § 241 StGB zurück.
+faelle:
+- slug: sr-frei-fall-mitbewohnerin
+  title: "Die eingeschlossene Mitbewohnerin"
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - "Eigener Sachverhalt der Redaktion"
+  stand: 2026-10
+  facts: >-
+    Über seine Mitbewohnerin M ist A seit Wochen verärgert, weil sie ihm als
+    Hauptmieter mehrfach ihren Mietanteil schuldig geblieben ist. An einem
+    Nachmittag bemerkt A, dass M in ihrem Zimmer fest eingeschlafen ist. Aus
+    Verärgerung dreht A den Schlüssel im Schloss der Zimmertür von außen um,
+    weil er M beim Aufwachen ärgern will. Er rechnet damit, dass M bei Erwachen
+    nicht hinauskönnte. Nach drei Stunden, bevor M erwacht ist, schließt A
+    wieder auf; M hat von all dem nichts bemerkt. Am Abend schreibt A der M eine
+    Nachricht: 'Wenn du morgen nicht zahlst, schlage ich dich krankenhausreif.'
+    M erschrickt, nimmt die Nachricht ernst und fühlt sich in der Wohnung nicht
+    mehr sicher. Sie zahlt am nächsten Tag.
+  question: >-
+    Wie hat sich A strafbar gemacht? Prüfen Sie §§ 239, 241 und 240 StGB;
+    Tatbestände außerhalb dieser Normen sind nicht zu prüfen.
+  steps:
+  - prompt: >-
+      Erfüllt A § 239 Abs. 1 StGB, obwohl M das Einsperren nicht bemerkt hat?
+    erwartung: >-
+      A hat M durch Abschließen der Tür eingesperrt. Nach der Rspr. und h.M.
+      schützt § 239 StGB die potentielle Fortbewegungsfreiheit; auch eine
+      Schlafende wird erfasst. Die Gegenauffassung (aktuelle
+      Fortbewegungsfreiheit) würde den Tatbestand verneinen. Die h.M. überzeugt,
+      weil das Rechtsgut nicht davon abhängen darf, ob das Opfer die Freiheit
+      gerade ausüben will. Die Dauer von drei Stunden ist erheblich. A handelte
+      vorsätzlich. Er ist wegen Freiheitsberaubung strafbar.
+  - prompt: >-
+      Ist die Tat gerechtfertigt?
+    erwartung: >-
+      Rechtfertigungsgründe sind nicht ersichtlich; ein Anspruch auf Zahlung der
+      Miete begründet kein Recht zum Einsperren.
+  - prompt: >-
+      Hat A sich nach § 241 StGB strafbar gemacht?
+    erwartung: >-
+      Ja. Die Nachricht kündigt die Begehung einer Körperverletzung an, also
+      einer rechtswidrigen Tat gegen die körperliche Unversehrtheit der M. Die
+      Drohung war ernstlich: Sie war objektiv geeignet, ernst genommen zu
+      werden, und A nahm das zumindest billigend in Kauf. Eine Bedrohung nach §
+      241 Abs. 1 StGB liegt vor.
+  - prompt: >-
+      Liegt zusätzlich eine vollendete Nötigung nach § 240 StGB vor, und wie ist
+      das Konkurrenzverhältnis?
+    erwartung: >-
+      Ja. Mit der angedrohten Körperverletzung als empfindlichem Übel hat A M
+      zur Zahlung bewegt (Nötigungserfolg). Ob ein Verwerflichkeitsvorbehalt
+      nach § 240 Abs. 2 StGB greift, ist zu prüfen: Zwar hat A einen Anspruch
+      auf Zahlung der Miete, doch ist die Drohung mit Gewalt zur Durchsetzung
+      nicht angemessen; die Tat ist verwerflich. § 241 StGB tritt hinter die
+      vollendete Nötigung zurück. Zur Freiheitsberaubung besteht Tatmehrheit, da
+      es um zwei getrennte Handlungen geht.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: "Freiheitsberaubung bejaht, § 239 Abs. 1 StGB"
+      weight: 3.0
+      required: true
+      norms:
+      - "§ 239 Abs. 1 StGB"
+      keywords:
+      - "Freiheitsberaubung"
+      - "eingesperrt"
+      - "Einsperren"
+      - "Fortbewegungsfreiheit"
+      - "§ 239 StGB"
+      card_slugs:
+      - sr-frei-239-tatbestand
+    - id: p2
+      label: "Streit potentielle/aktuelle Fortbewegungsfreiheit erkannt und entschieden"
+      weight: 2.5
+      required: true
+      norms:
+      - "§ 239 Abs. 1 StGB"
+      keywords:
+      - "potentielle Fortbewegungsfreiheit"
+      - "aktuelle Fortbewegungsfreiheit"
+      - "Schlafende"
+      - "Fortbewegungsfähigkeit"
+      - "potentielle Freiheit"
+      card_slugs:
+      - sr-frei-239-potentiell-aktuell
+    - id: p3
+      label: "Erhebliche Dauer und Vorsatz"
+      weight: 1.0
+      required: false
+      norms:
+      - "§ 239 Abs. 1 StGB"
+      - "§ 15 StGB"
+      keywords:
+      - "nicht ganz unerhebliche Dauer"
+      - "erhebliche Dauer"
+      - "drei Stunden"
+      - "bedingter Vorsatz"
+      - "Vorsatz"
+      card_slugs:
+      - sr-frei-239-dauer-einverstaendnis
+    - id: p4
+      label: "Bedrohung bejaht, § 241 StGB (Ernstlichkeit)"
+      weight: 2.0
+      required: true
+      norms:
+      - "§ 241 StGB"
+      keywords:
+      - "Bedrohung"
+      - "§ 241 StGB"
+      - "Ankündigung eines künftigen Übels"
+      - "ernstlich"
+      - "krankenhausreif"
+      card_slugs:
+      - sr-frei-241-bedrohung
+      - sr-frei-241-merkmale
+    - id: p5
+      label: "Nötigung bejaht und Konkurrenzverhältnis zu § 241 StGB bestimmt"
+      weight: 1.5
+      required: false
+      norms:
+      - "§ 240 Abs. 1 StGB"
+      - "§ 52 StGB"
+      - "§ 53 StGB"
+      keywords:
+      - "Nötigung"
+      - "Nötigungserfolg"
+      - "tritt zurück"
+      - "hinter § 240"
+      - "Tatmehrheit"
+      - "verwerflich"
+      card_slugs:
+      - sr-frei-239-240-abgrenzung
+      - sr-frei-241-merkmale
