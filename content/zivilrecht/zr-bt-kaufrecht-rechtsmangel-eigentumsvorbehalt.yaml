@@ -17,7 +17,7 @@ cards:
   back: Die Sache ist frei von Rechtsmängeln, wenn Dritte in Bezug auf die Sache keine oder
     nur die im Kaufvertrag übernommenen Rechte gegen den Käufer geltend machen können (§ 435
     S. 1 BGB). Rechtsmängel sind etwa das Eigentum eines Dritten (Herausgabeanspruch nach
-    § 985 BGB), ein Pfandrecht, Nießbrauch oder Mietrecht eines Dritten sowie ein Besitzrecht.
+    § 985 BGB), ein Pfandrecht, Nießbrauch oder Mietrecht eines Dritten sowie ein gegenüber dem Käufer wirkendes Besitzrecht.
     Einem Rechtsmangel steht es gleich, wenn im Grundbuch ein Recht eingetragen ist, das nicht
     besteht (§ 435 S. 2 BGB). Der Verkäufer ist nach § 433 Abs. 1 S. 1 BGB verpflichtet, dem
     Käufer die Sache frei von Sach- und Rechtsmängeln zu verschaffen. Erwirbt der Käufer gutgläubig
@@ -94,20 +94,23 @@ cards:
   - Eigenformulierung Redaktion
 - slug: zr-rme-ev-begriff-449
   type: definition
-  front: 'Definiere: Eigentumsvorbehalt, § 449 Abs. 1 BGB'
+  front: Wie wirkt sich der Eigentumsvorbehalt im Kaufvertrag aus (Gefahr, Verjährung, § 216 Abs.
+    2 S. 2 BGB)?
   back: 'Hat sich der Verkäufer einer beweglichen Sache das Eigentum bis zur Zahlung des Kaufpreises
-    vorbehalten, ist im Zweifel anzunehmen, dass die Übereignung unter der aufschiebenden
-    Bedingung vollständiger Zahlung des Kaufpreises erfolgt (§ 449 Abs. 1 BGB, § 158 Abs.
-    1 BGB). Der einfache Eigentumsvorbehalt sichert den Verkäufer bei Vorleistung: Er behält
-    das Eigentum, der Käufer erhält die Sache und Besitz. Schuldrechtlich ist der Eigentumsvorbehalt
-    eine Abrede im Kaufvertrag; dinglich ist er Teil der Übereignung (§ 929 S. 1 BGB), die
-    unter der aufschiebenden Bedingung der vollständigen Kaufpreiszahlung erfolgt. Der Käufer
-    erwirbt mit Bedingungseintritt, also mit vollständiger Zahlung, automatisch Eigentum,
-    ohne dass es einer weiteren Handlung des Verkäufers bedarf.'
+    vorbehalten, ist im Zweifel anzunehmen, dass die Übereignung unter der aufschiebenden Bedingung
+    vollständiger Zahlung erfolgt (§ 449 Abs. 1 BGB). Der Verkäufer liefert die Sache dem Käufer
+    also vor, behält aber das Eigentum. Auf den Gefahrübergang hat das keinen Einfluss: Mit der
+    Übergabe trägt der Käufer die Preisgefahr (§ 446 S. 1 BGB), obwohl er noch nicht Eigentümer
+    ist; geht die Sache zufällig unter, bleibt er zur Zahlung verpflichtet. Auch die Fälligkeit
+    des Kaufpreises hängt nicht vom Eigentumserwerb ab. Verjährt der Kaufpreisanspruch, kann der
+    Verkäufer gleichwohl vom Vertrag zurücktreten und die Sache herausverlangen (§ 216 Abs. 2
+    S. 2 BGB); der Rücktritt ist dann nicht nach § 218 BGB unwirksam. Der Eigentumsvorbehalt sichert
+    den Verkäufer damit auch nach Verjährung seiner Forderung.'
   norms:
   - § 449 Abs. 1 BGB
+  - § 446 BGB
+  - § 216 Abs. 2 BGB
   - § 158 Abs. 1 BGB
-  - § 929 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -135,47 +138,44 @@ cards:
   - Eigenformulierung Redaktion
 - slug: zr-rme-anwartschaftsrecht
   type: definition
-  front: 'Definiere: Anwartschaftsrecht des Vorbehaltskäufers'
-  back: 'Das Anwartschaftsrecht ist die gesicherte Rechtsposition des Vorbehaltskäufers, der
-    mit einer aufschiebend bedingten Übereignung im Besitz der Sache ist und dessen Erwerb
-    der Verkäufer nicht mehr einseitig verhindern kann. Dies folgt aus § 161 Abs. 1 BGB: Verfügungen
-    des Verkäufers während der Schwebezeit sind unwirksam, soweit sie das Anwartschaftsrecht
-    vereiteln oder beeinträchtigen würden. Das Anwartschaftsrecht ist ein wesensgleiches Minus
-    zum Eigentum, übertragbar nach den Regeln, die für das Vollrecht gelten (§§ 929 ff. BGB),
-    und pfändbar. Der Käufer kann es also weiterveräußern; der Erwerber erlangt mit Eintritt
-    der Bedingung unmittelbar Eigentum, ohne Durchgangserwerb beim Vorbehaltskäufer. Der Erwerb
-    vollendet sich auch, wenn ein Dritter die Restschuld bezahlt (§ 267 BGB). Das Anwartschaftsrecht
-    ist ein sonstiges Recht im Sinne des § 823 Abs. 1 BGB.'
+  front: Wann tritt beim Eigentumsvorbehalt die Bedingung ein, und wer kann den Eintritt herbeiführen?
+  back: Der Käufer erwirbt das Eigentum automatisch, sobald die aufschiebende Bedingung der vollständigen
+    Kaufpreiszahlung eintritt (§ 449 Abs. 1, § 158 Abs. 1 BGB); einer weiteren Übereignungshandlung
+    bedarf es nicht. Teilzahlungen genügen nicht, solange der Kaufpreis nicht vollständig erfüllt
+    ist. Dem Eintritt entspricht jede Erfüllung der Kaufpreisforderung, auch durch Erfüllungssurrogate
+    wie eine wirksame Aufrechnung (§ 389 BGB). Zahlen kann auch ein Dritter (§ 267 BGB), sofern
+    der Verkäufer nicht berechtigt widerspricht; dann erlangt der Käufer das Eigentum. Verweigert
+    der Verkäufer treuwidrig die Annahme der Zahlung, gilt die Bedingung als eingetreten (§ 162
+    Abs. 1 BGB). Bis zum Bedingungseintritt hat der Vorbehaltskäufer ein Anwartschaftsrecht, das
+    der Verkäufer durch Zwischenverfügungen nicht mehr einseitig vereiteln kann (§ 161 Abs. 1
+    BGB).
   norms:
-  - § 161 Abs. 1 BGB
+  - § 449 Abs. 1 BGB
   - § 158 Abs. 1 BGB
-  - § 929 BGB
   - § 267 BGB
-  - § 823 Abs. 1 BGB
+  - § 162 Abs. 1 BGB
+  - § 161 Abs. 1 BGB
+  - § 389 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
 - slug: zr-rme-ev-erweitert-449-iii
   type: norm
-  front: Welche erweiterten Formen des Eigentumsvorbehalts gibt es, und was verbietet § 449
-    Abs. 3 BGB?
-  back: Der Eigentumsvorbehalt kann nach § 449 Abs. 3 BGB nicht wirksam vereinbart werden,
-    soweit der Eigentumsübergang von der Bezahlung von Forderungen eines Dritten, insbesondere
-    eines mit dem Verkäufer verbundenen Unternehmens, abhängig gemacht wird (Konzernvorbehalt).
-    Zulässig bleiben der verlängerte Eigentumsvorbehalt und der erweiterte Eigentumsvorbehalt.
-    Beim verlängerten Eigentumsvorbehalt gestattet der Verkäufer dem Käufer die Weiterveräußerung
-    (§ 185 Abs. 1 BGB) und lässt sich die Kaufpreisforderung aus dem Weiterverkauf im Voraus
-    abtreten (§ 398 BGB); bei Verarbeitung durch den Käufer erwirbt der Verkäufer als Hersteller
-    Eigentum (§ 950 BGB, Verarbeitungsklausel). Beim erweiterten Eigentumsvorbehalt (Kontokorrentvorbehalt)
-    hängt der Eigentumsübergang von der Zahlung aller Forderungen des Verkäufers aus der Geschäftsverbindung
-    ab. Gegen den erweiterten Vorbehalt bestehen Grenzen aus § 138 BGB bei übermäßiger Sicherung,
-    § 307 BGB bei AGB.
+  front: Was verbietet § 449 Abs. 3 BGB beim Eigentumsvorbehalt (Konzernvorbehalt)?
+  back: 'Die Vereinbarung eines Eigentumsvorbehalts, nach dem der Eigentumsübergang von der Bezahlung
+    von Forderungen eines Dritten, insbesondere eines mit dem Verkäufer verbundenen Unternehmens,
+    abhängt, ist nichtig (§ 449 Abs. 3 BGB). Verboten ist damit der Konzernvorbehalt. Erlaubt
+    bleibt es, den Eigentumsübergang von der Erfüllung weiterer eigener Forderungen des Verkäufers
+    abhängig zu machen (erweiterter Eigentumsvorbehalt); auch der verlängerte Eigentumsvorbehalt
+    ist nicht betroffen. Der Zweck der Vorschrift liegt darin, den Käufer nicht an einer Vielzahl
+    unübersichtlicher Fremdforderungen scheitern zu lassen, die er nicht beeinflussen kann, und
+    die Sicherungsmacht innerhalb von Konzernen zu begrenzen. Die Klausurfrage lautet daher, wessen
+    Forderung die Bedingung des Eigentumsübergangs abdeckt: Eigene Forderungen des Verkäufers
+    sind unproblematisch, Drittforderungen nicht. Einzelheiten zu den weiteren Formen des Eigentumsvorbehalts
+    gehören zum Sachenrecht.'
   norms:
   - § 449 Abs. 3 BGB
-  - § 185 BGB
-  - § 398 BGB
-  - § 950 BGB
-  - § 138 BGB
+  - § 449 Abs. 1 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -317,7 +317,7 @@ faelle:
   question: Kann V von K Zahlung der 12.000 Euro verlangen?
   steps:
   - prompt: Welche Anspruchsgrundlage kommt in Betracht, und ist sie entstanden?
-    erwartung: '§ 433 Abs. 2 BGB: Zwischen V und K besteht ein wirksamer Kaufvertrag.'
+    erwartung: Anspruchsgrundlage ist § 433 Abs. 2 BGB, denn zwischen V und K besteht ein wirksamer Kaufvertrag über die Fräsmaschine, aus dem V die Zahlung des Kaufpreises verlangen kann.
   - prompt: Ist der Anspruch auf den Kaufpreis nach § 326 Abs. 1 S. 1 BGB entfallen?
     erwartung: 'Die Lieferpflicht des V ist durch die Zerstörung der Maschine nach § 275 Abs.
       1 BGB unmöglich geworden. Der Kaufpreisanspruch entfällt nur, wenn die Gefahr nicht
@@ -344,7 +344,7 @@ faelle:
       - § 433 Abs. 2 BGB
       keywords:
       - § 433 Abs. 2 BGB
-      - Kaufpreisanspruch
+      - wirksamer Kaufvertrag
       - Zahlung des Kaufpreises
     - id: p2
       label: 'Versendungskauf: Erfüllungsort München, Versendung auf Verlangen des Käufers

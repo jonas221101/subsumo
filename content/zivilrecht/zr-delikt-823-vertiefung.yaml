@@ -103,20 +103,17 @@ cards:
   stand: 2026-10
 - slug: zr-d823v-gewerbebetrieb
   type: streitstand
-  front: >-
-    Wann ist das Recht am eingerichteten und ausgeübten Gewerbebetrieb verletzt, und
-    warum ist es nur ein Auffangtatbestand?
-  back: >-
-    Das von der Rechtsprechung entwickelte Recht am eingerichteten und ausgeübten
-    Gewerbebetrieb schützt den Betrieb in seinem Bestand und seinen Erscheinungsformen
-    gegen unmittelbare Eingriffe. Weil § 823 Abs. 1 BGB das Vermögen als solches gerade
-    nicht schützt, darf der Auffangtatbestand nicht zu einem allgemeinen Vermögensschutz
-    ausufern; er ist daher subsidiär: Es greift nur, wenn kein speziellerer Schutz
-    (etwa § 823 Abs. 1 wegen Eigentums, UWG, Kartellrecht) besteht. Erforderlich ist
-    ein betriebsbezogener Eingriff, der gegen den Betrieb als solchen gerichtet ist
-    und nicht bloß zufällig Betriebsangehörige oder Betriebsmittel trifft. Die Rechtswidrigkeit
-    ist nicht indiziert, sondern durch Güterabwägung zu bestimmen. Stromkabelfall:
-    Bloße Betriebsstörung durch Stromunterbrechung genügt nicht (BGHZ 29, 65).
+  front: Welche Anforderungen stellt die Rechtsprechung an einen Eingriff in den Gewerbebetrieb
+    (Betriebsbezogenheit, Stromkabelfall)?
+  back: 'Das von der Rechtsprechung entwickelte Recht am eingerichteten und ausgeübten Gewerbebetrieb
+    schützt den Betrieb in seinem Bestand und seinen Erscheinungsformen gegen unmittelbare Eingriffe.
+    Weil § 823 Abs. 1 BGB das Vermögen als solches gerade nicht schützt, darf der Auffangtatbestand
+    nicht zu einem allgemeinen Vermögensschutz ausufern; er ist daher subsidiär: Er greift nur,
+    wenn kein speziellerer Schutz (etwa § 823 Abs. 1 wegen Eigentums, UWG, Kartellrecht) besteht.
+    Erforderlich ist ein betriebsbezogener Eingriff, der gegen den Betrieb als solchen gerichtet
+    ist und nicht bloß zufällig Betriebsangehörige oder Betriebsmittel trifft. Die Rechtswidrigkeit
+    ist nicht indiziert, sondern durch Güterabwägung zu bestimmen. Stromkabelfall: Bloße Betriebsstörung
+    durch Stromunterbrechung genügt nicht (BGHZ 29, 65).'
   norms:
   - § 823 Abs. 1 BGB
   quellen:
@@ -152,8 +149,7 @@ cards:
   front: >-
     Unter welchen Voraussetzungen haftet der Aufsichtspflichtige nach § 832 BGB?
   back: >-
-    Wer kraft Gesetzes (Eltern, Vormund) oder durch Vertrag (Kindergarten, Schule,
-    Babysitter) zur Aufsicht über eine Person verpflichtet ist, die wegen Minderjährigkeit
+    Wer kraft Gesetzes (Eltern, Vormund) oder durch Vertrag (Kindergarten, Babysitter) zur Aufsicht über eine Person verpflichtet ist, die wegen Minderjährigkeit
     oder geistigen bzw. körperlichen Zustands der Beaufsichtigung bedarf, haftet für
     den Schaden, den diese einem Dritten widerrechtlich zufügt (§ 832 Abs. 1 S. 1
     BGB). Erforderlich ist eine objektiv rechtswidrige Handlung des Aufsichtsbedürftigen;
@@ -220,21 +216,21 @@ cards:
   stand: 2026-10
 - slug: zr-d823v-253-abs2-schmerzensgeld
   type: norm
-  front: >-
-    Unter welchen Voraussetzungen kann nach § 253 Abs. 2 BGB Schmerzensgeld verlangt
-    werden?
-  back: >-
-    Wegen eines Schadens, der nicht Vermögensschaden ist, kann eine billige Entschädigung
-    in Geld gefordert werden, wenn Schadensersatz wegen der Verletzung des Körpers,
-    der Gesundheit, der Freiheit oder der sexuellen Selbstbestimmung zu leisten ist
-    (§ 253 Abs. 2 BGB). Die Vorschrift ist keine eigene Anspruchsgrundlage, sondern
-    erweitert den Ersatzumfang eines bestehenden Schadensersatzanspruchs aus Vertrag,
-    Delikt oder Gefährdungshaftung (z. B. § 11 S. 2 StVG, § 8 S. 2 ProdHaftG). Eigentum
-    und Vermögen sind nicht erfasst. Das Schmerzensgeld hat Ausgleichs- und Genugtuungsfunktion;
-    die Höhe richtet sich nach Art und Schwere der Verletzung, Dauer der Beeinträchtigung,
-    Verschulden und den Verhältnissen der Parteien (Billigkeit).
+  front: Welche Funktionen hat das Schmerzensgeld, und wonach bemisst es sich?
+  back: Das Schmerzensgeld nach § 253 Abs. 2 BGB hat eine Ausgleichsfunktion für die erlittenen
+    immateriellen Beeinträchtigungen und eine Genugtuungsfunktion. Es ist keine eigene Anspruchsgrundlage,
+    sondern erweitert den Ersatzumfang eines bestehenden Anspruchs aus Vertrag, Delikt oder Gefährdungshaftung
+    (z. B. § 11 S. 2 StVG, § 8 S. 2 ProdHaftG); Voraussetzung ist die Verletzung von Körper, Gesundheit,
+    Freiheit oder sexueller Selbstbestimmung. Die Höhe richtet sich nach der Billigkeit, vor allem
+    nach Art und Schwere der Verletzung, Dauer und Intensität der Leiden, Folgen für die Lebensführung,
+    Grad des Verschuldens und den Verhältnissen der Parteien. Maßgeblich ist eine einheitliche
+    Gesamtbetrachtung, nicht die Addition einzelner Beeinträchtigungen. Ein Mitverschulden des
+    Verletzten mindert den Anspruch (§ 254 BGB). Bei Tötung steht Angehörigen das Hinterbliebenengeld
+    nach § 844 Abs. 3 BGB zu.
   norms:
   - § 253 Abs. 2 BGB
+  - § 254 BGB
+  - § 844 Abs. 3 BGB
   - § 11 StVG
   - § 8 ProdHaftG
   quellen:
@@ -310,8 +306,7 @@ faelle:
       das Streuen mit zumutbaren Mitteln hätte sichern können (§ 276 Abs. 2 BGB).
   - prompt: Welche Schadensposten kann P ersetzt verlangen?
     erwartung: >-
-      Heilbehandlungskosten und Verdienstausfall (§§ 249, 252, 842 BGB) sowie Schmerzensgeld
-      nach § 253 Abs. 2 BGB. Ein Mitverschulden nach § 254 BGB liegt nicht vor, P
+      P kann Heilbehandlungskosten und Verdienstausfall (§§ 249, 252, 842 BGB) sowie Schmerzensgeld nach § 253 Abs. 2 BGB ersetzt verlangen. Ein Mitverschulden nach § 254 BGB liegt nicht vor, P
       trug festes Schuhwerk.
   - prompt: Haftet E nach § 823 Abs. 1 BGB?
     erwartung: >-

@@ -16,8 +16,7 @@ cards:
   back: 'Ein Verbrauchsgüterkauf liegt vor, wenn ein Verbraucher (§ 13 BGB) von einem Unternehmer
     (§ 14 BGB) eine Ware, also eine bewegliche Sache, kauft (§ 474 Abs. 1 BGB). Erfasst sind
     auch Verträge, die neben dem Verkauf eine Dienstleistung des Unternehmers zum Gegenstand
-    haben, sowie Kaufverträge über Waren mit digitalen Elementen. Folge ist, dass neben den
-    allgemeinen Kaufvorschriften die Sonderregeln der §§ 474 ff. BGB gelten, die überwiegend
+    haben, sowie Kaufverträge über Waren mit digitalen Elementen. Ausgenommen sind gebrauchte Waren, die in einer öffentlich zugänglichen Versteigerung verkauft werden, wenn der Verbraucher klar und umfassend über den Ausschluss informiert wurde (§ 474 Abs. 2 BGB). Folge ist, dass neben den allgemeinen Kaufvorschriften die Sonderregeln der §§ 474 ff. BGB gelten, die überwiegend
     zwingend zugunsten des Verbrauchers wirken (§ 476 BGB). Maßgeblich ist die Stellung der
     Parteien beim Vertragsschluss: Kaufen Verbraucher untereinander oder Unternehmer untereinander,
     greifen die §§ 474 ff. BGB nicht. Die Verbraucher- und Unternehmereigenschaft ist deshalb
@@ -32,16 +31,16 @@ cards:
   - Eigenformulierung Redaktion
 - slug: zr-vgk-gefahruebergang
   type: norm
-  front: Wann geht beim Verbrauchsgüterkauf die Gefahr über (§ 446, § 447, § 475 Abs. 2 BGB)?
-  back: 'Nach § 446 S. 1 BGB geht die Gefahr des zufälligen Untergangs und der zufälligen
-    Verschlechterung mit der Übergabe der Sache auf den Käufer über. Beim Versendungskauf,
-    also wenn der Verkäufer auf Verlangen des Käufers die Sache an einen anderen Ort als den
-    Erfüllungsort versendet, genügt nach § 447 Abs. 1 BGB schon die Auslieferung an die Transportperson.
-    Beim Verbrauchsgüterkauf schränkt § 475 Abs. 2 BGB diese Regel ein: § 447 Abs. 1 BGB ist
-    nur anwendbar, wenn der Verbraucher die Transportperson selbst beauftragt hat und der
-    Unternehmer sie ihm nicht zuvor benannt hat. Wählt der Unternehmer den Paketdienst aus,
-    trägt er das Transportrisiko bis zur Übergabe an den Verbraucher; geht die Sache unterwegs
-    unter, verliert er nach § 326 Abs. 1 S. 1 BGB den Kaufpreisanspruch.'
+  front: Wie schränkt § 475 Abs. 2 BGB den Gefahrübergang beim Versendungskauf an Verbraucher
+    ein?
+  back: 'Nach § 447 Abs. 1 BGB geht beim Versendungskauf die Gefahr schon mit der Auslieferung
+    an die Transportperson über. Beim Verbrauchsgüterkauf gilt das nach § 475 Abs. 2 BGB nur eingeschränkt:
+    Die Gefahr geht nur dann so früh über, wenn der Verbraucher die Transportperson beauftragt
+    hat und der Unternehmer sie ihm nicht zuvor benannt hat. Wählt der Unternehmer den Paketdienst
+    aus, bleibt es bei § 446 S. 1 BGB, die Gefahr geht erst mit der Übergabe an den Verbraucher
+    über. Der Unternehmer trägt dann das Transportrisiko, und geht die Sache unterwegs unter,
+    verliert er nach § 326 Abs. 1 S. 1 BGB den Kaufpreisanspruch. Wegen der Umkehrung von Regel
+    und Ausnahme ist in Verbraucherfällen zuerst zu klären, wer den Transporteur bestimmt hat.'
   norms:
   - § 446 BGB
   - § 447 Abs. 1 BGB
@@ -60,9 +59,7 @@ cards:
     Mangels unvereinbar ist (§ 477 Abs. 1 S. 2 BGB), etwa bei äußerlich erkennbaren Beschädigungen,
     die der Verbraucher bei Übergabe hätte rügen können, oder bei verderblichen Waren und
     Verschleiß. Der Verkäufer kann die Vermutung widerlegen, indem er beweist, dass der Mangel
-    bei Gefahrübergang noch nicht angelegt war. Der Verbraucher muss weiterhin beweisen, dass
-    überhaupt ein Mangel vorliegt, der sich innerhalb der Frist gezeigt hat, und dass ein
-    Kaufvertrag besteht.
+    bei Gefahrübergang noch nicht angelegt war. Beim Kauf eines lebenden Tieres beträgt die Frist sechs Monate (§ 477 Abs. 1 S. 3 BGB). Der Verbraucher muss weiterhin beweisen, dass überhaupt ein Mangel vorliegt, der sich innerhalb der Frist gezeigt hat, und dass ein Kaufvertrag besteht.
   norms:
   - § 477 Abs. 1 BGB
   - § 434 BGB
@@ -90,18 +87,12 @@ cards:
   type: norm
   front: Welche Sonderregeln gelten beim Verbrauchsgüterkauf für die Nacherfüllung?
   back: 'Der Verbraucher hat auch beim Verbrauchsgüterkauf das Wahlrecht zwischen Nachbesserung
-    und Ersatzlieferung (§ 439 Abs. 1 BGB). Die Sonderregeln des § 475 BGB schützen ihn bei
-    der Durchführung: Die Nacherfüllung ist innerhalb einer angemessenen Frist ab Mitteilung
-    des Mangels und ohne erhebliche Unannehmlichkeiten für den Verbraucher durchzuführen.
-    Der Verbraucher kann für Aufwendungen im Zusammenhang mit der Nacherfüllung einen Vorschuss
-    verlangen (§ 475 Abs. 6 BGB). Bei der Ersatzlieferung schuldet er keinen Nutzungsersatz
-    für die bis dahin gezogenen Nutzungen. Die Verweigerung der Nacherfüllung wegen unverhältnismäßiger
-    Kosten ist gegenüber dem Verbraucher eingeschränkt (§ 475 Abs. 4 BGB). Ferner ist beim
-    Rücktritt eine sonst erforderliche Fristsetzung unter den Voraussetzungen des § 475d BGB
-    entbehrlich.'
+    und Ersatzlieferung (§ 439 Abs. 1 BGB). Die Sonderregeln des § 475 BGB schützen ihn bei der Durchführung: Die Nacherfüllung ist innerhalb einer angemessenen Frist ab Mitteilung des Mangels und ohne erhebliche Unannehmlichkeiten für den Verbraucher durchzuführen (§ 475 Abs. 6 BGB). Für Aufwendungen, die der Unternehmer nach § 439 Abs. 2 und 3 BGB zu tragen hat, kann der Verbraucher einen Vorschuss verlangen (§ 475 Abs. 5 BGB). Bei der Ersatzlieferung schuldet er keinen Nutzungsersatz für die bis dahin gezogenen Nutzungen (§ 475 Abs. 3 S. 1 BGB). Der Unternehmer muss den Verbraucher vor der Nacherfüllung über sein Wahlrecht informieren (§ 475 Abs. 4 BGB). Beim Rücktritt und beim Schadensersatz statt der Leistung ist eine sonst erforderliche Fristsetzung unter den Voraussetzungen des § 475d BGB entbehrlich.'
   norms:
   - § 439 Abs. 1 BGB
   - § 475 BGB
+  - § 475 Abs. 3 BGB
+  - § 475 Abs. 5 BGB
   - § 475 Abs. 6 BGB
   - § 475d BGB
   quellen:
@@ -117,9 +108,7 @@ cards:
     oder gelieferten mangelfreien Sache ersetzen (§ 439 Abs. 3 BGB). Die Regelung gilt für
     jeden Kaufvertrag, nicht nur für den Verbrauchsgüterkauf, und sie setzt kein Verschulden
     des Verkäufers voraus. Typische Fälle sind verlegte Fliesen, Parkett oder eingebaute Geräte.
-    Sie ist im Zusammenhang mit § 439 Abs. 4 BGB zu sehen: Sind die Kosten unverhältnismäßig,
-    kann der Verkäufer den Aufwendungsersatz auf einen angemessenen Betrag beschränken, wobei
-    der Wert der mangelfreien Sache und die Bedeutung des Mangels zu berücksichtigen sind.'
+    Sie ist im Zusammenhang mit § 439 Abs. 4 BGB zu sehen: Sind die Kosten einer Art der Nacherfüllung unverhältnismäßig, kann der Verkäufer diese verweigern, wobei der Wert der mangelfreien Sache und die Bedeutung des Mangels zu berücksichtigen sind.'
   norms:
   - § 439 Abs. 3 BGB
   - § 439 Abs. 4 BGB
@@ -168,15 +157,7 @@ cards:
   type: norm
   front: Was gilt für Garantien beim Verbrauchsgüterkauf (§ 443, § 479 BGB)?
   back: 'Eine Garantie (§ 443 Abs. 1 BGB) ist die Verpflichtung des Verkäufers oder eines
-    Dritten, für eine bestimmte Beschaffenheit oder Haltbarkeit der Sache einzustehen. Sie
-    begründet Rechte des Käufers zusätzlich zu den gesetzlichen Mängelrechten. Bei der Haltbarkeitsgarantie
-    wird nach § 443 Abs. 2 BGB vermutet, dass ein während der Garantiedauer auftretender Mangel
-    die Rechte aus der Garantie begründet. Beim Verbrauchsgüterkauf stellt § 479 BGB Anforderungen
-    an die Garantieerklärung: Sie muss einfach und verständlich abgefasst sein und unter anderem
-    den Hinweis enthalten, dass die gesetzlichen Rechte durch die Garantie nicht eingeschränkt
-    werden. Der Verbraucher kann die Übermittlung der Garantieerklärung in Textform verlangen.
-    Ein Verstoß gegen diese Anforderungen berührt die Wirksamkeit der Garantieverpflichtung
-    nicht (§ 479 Abs. 3 BGB).'
+    Dritten, für eine bestimmte Beschaffenheit oder Haltbarkeit der Sache einzustehen. Sie begründet Rechte des Käufers zusätzlich zu den gesetzlichen Mängelrechten. Bei der Haltbarkeitsgarantie wird nach § 443 Abs. 2 BGB vermutet, dass ein während der Garantiedauer auftretender Mangel die Rechte aus der Garantie begründet. Beim Verbrauchsgüterkauf stellt § 479 BGB Anforderungen an die Garantieerklärung: Sie muss einfach und verständlich abgefasst sein und unter anderem den Hinweis auf die gesetzlichen Mängelrechte und deren Unberührtheit, Namen und Anschrift des Garantiegebers sowie Dauer und räumlichen Geltungsbereich enthalten (§ 479 Abs. 1 BGB). Sie ist dem Verbraucher spätestens bei Lieferung auf einem dauerhaften Datenträger zur Verfügung zu stellen (§ 479 Abs. 2 BGB). Hat der Hersteller eine Haltbarkeitsgarantie gegeben, hat der Verbraucher gegen ihn mindestens einen Nacherfüllungsanspruch während der Garantiedauer (§ 479 Abs. 3 BGB).'
   norms:
   - § 443 Abs. 1 BGB
   - § 443 Abs. 2 BGB
@@ -188,17 +169,10 @@ cards:
 - slug: zr-vgk-regress-445a-478
   type: norm
   front: Wie funktioniert der Unternehmerrückgriff (§§ 445a, 445b, 478 BGB)?
-  back: Muss der Letztverkäufer eine neu hergestellte Sache wegen eines Mangels zurücknehmen
-    oder den Kaufpreis mindern, kann er beim Verkäufer, von dem er sie gekauft hat, Rückgriff
-    nehmen. Nach § 445a Abs. 1 BGB kann er Ersatz der Aufwendungen verlangen, die er im Verhältnis
-    zum Verbraucher im Rahmen der Nacherfüllung tragen musste (insbesondere die Kosten nach
-    § 439 Abs. 2 und 3 BGB sowie Vorschüsse nach § 475 Abs. 6 BGB), sofern der Mangel schon
-    bei Gefahrübergang auf ihn vorlag. Nach § 445a Abs. 2 BGB bedarf es einer Fristsetzung
-    für Rücktritt oder Schadensersatz nicht. Die Beweislastumkehr des § 477 BGB wirkt nach
+  back: Muss der Letztverkäufer eine neu hergestellte Sache wegen eines Mangels zurücknehmen oder den Kaufpreis mindern, kann er bei seinem Lieferanten Rückgriff nehmen. Nach § 445a Abs. 1 BGB kann er Ersatz der Aufwendungen verlangen, die er im Verhältnis
+    zum Verbraucher im Rahmen der Nacherfüllung tragen musste (etwa Kosten nach § 439 Abs. 2 und 3 BGB, Vorschüsse nach § 475 Abs. 5 BGB), sofern der Mangel schon bei Gefahrübergang auf ihn vorlag. Nach § 445a Abs. 2 BGB bedarf es für seine Rechte aus § 437 BGB gegen den Lieferanten keiner Fristsetzung, wenn er die Sache zurücknehmen musste oder der Käufer den Kaufpreis gemindert hat. Die Beweislastumkehr des § 477 BGB wirkt nach
     § 478 Abs. 1 BGB auch im Rückgriff, wobei die Frist mit dem Gefahrübergang auf den Verbraucher
-    beginnt. Die Ansprüche verjähren in zwei Jahren ab Ablieferung (§ 445b Abs. 1 BGB); eine
-    Ablaufhemmung (§ 445b Abs. 2 BGB) sichert den Rückgriff, endet aber spätestens fünf Jahre
-    nach Ablieferung durch den Lieferanten.
+    beginnt. Die Aufwendungsersatzansprüche verjähren in zwei Jahren ab Ablieferung (§ 445b Abs. 1 BGB); als Ablaufhemmung tritt die Verjährung der Ansprüche des Verkäufers gegen den Lieferanten frühestens zwei Monate nach dem Zeitpunkt ein, in dem der Verkäufer die Ansprüche des Käufers erfüllt hat (§ 445b Abs. 2 BGB).
   norms:
   - § 445a BGB
   - § 445b BGB
@@ -210,12 +184,7 @@ cards:
 - slug: zr-vgk-abweichungsverbot-476
   type: norm
   front: Welche Vereinbarungen erlaubt § 476 BGB beim Verbrauchsgüterkauf nicht?
-  back: 'Auf eine Vereinbarung, die vor Mitteilung eines Mangels an den Unternehmer zum Nachteil
-    des Verbrauchers von den §§ 433 bis 475 BGB abweicht, kann sich der Unternehmer nicht
-    berufen (§ 476 Abs. 1 S. 1 BGB). Erleichterungen der Verjährung sind nur eingeschränkt
-    möglich: Die Verjährung der Mängelansprüche darf nicht auf weniger als zwei Jahre verkürzt
-    werden, bei gebrauchten Sachen nicht auf weniger als ein Jahr (§ 476 Abs. 2 BGB). Hinzu
-    kommt das Umgehungsverbot. Eine Beschränkung der Schadensersatzhaftung bleibt nach § 476
+  back: 'Auf eine Vereinbarung, die vor Mitteilung eines Mangels an den Unternehmer zum Nachteil des Verbrauchers von den wesentlichen kaufrechtlichen Mängelvorschriften und den Vorschriften dieses Untertitels abweicht, kann sich der Unternehmer nicht berufen (§ 476 Abs. 1 S. 1 BGB). Von den objektiven Anforderungen an die Sache darf nur abgewichen werden, wenn der Verbraucher vor der Bestellung eigens informiert wurde und die Abweichung ausdrücklich und gesondert vereinbart ist. Die Verjährung der Mängelansprüche darf nicht auf weniger als zwei Jahre ab dem gesetzlichen Verjährungsbeginn verkürzt werden, bei gebrauchten Sachen nicht auf weniger als ein Jahr, und Letzteres nur bei eigener Information und gesonderter Vereinbarung (§ 476 Abs. 2 BGB). Hinzu kommt das Umgehungsverbot (§ 476 Abs. 4 BGB). Eine Beschränkung der Schadensersatzhaftung bleibt nach § 476
     Abs. 3 BGB nach Maßgabe der Inhaltskontrolle möglich; in Allgemeinen Geschäftsbedingungen
     sind dabei §§ 307 ff. BGB zu beachten. Praktisch führt dies dazu, dass Haftungsausschlüsse
     im Verbraucherverkauf von Neuware meist wirkungslos sind.'
