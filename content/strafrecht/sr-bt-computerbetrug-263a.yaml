@@ -1,0 +1,456 @@
+topic:
+  slug: sr-bt-computerbetrug-263a
+  area: strafrecht
+  title: >-
+    Computerbetrug und Leistungserschleichung, §§ 263a, 265a StGB
+  parent: sr-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-cb-grundtatbestand
+  type: norm
+  front: Welche Tatvarianten enthält § 263a Abs. 1 StGB?
+  back: >-
+    § 263a Abs. 1 StGB bestraft, wer in der Absicht, sich oder einem Dritten einen rechtswidrigen
+    Vermögensvorteil zu verschaffen, das Vermögen eines anderen dadurch beschädigt, dass er
+    das Ergebnis eines Datenverarbeitungsvorgangs beeinflusst. Die Beeinflussung geschieht
+    auf vier Wegen: durch unrichtige Gestaltung des Programms (Var. 1), durch Verwendung unrichtiger
+    oder unvollständiger Daten (Var. 2), durch unbefugte Verwendung von Daten (Var. 3) oder
+    sonst durch unbefugte Einwirkung auf den Ablauf (Var. 4). Der Tatbestand ist dem Betrug
+    nachgebildet und soll die Lücke schließen, die entsteht, weil ein Computer nicht getäuscht
+    werden und keinem Irrtum unterliegen kann. Die Strafe beträgt Freiheitsstrafe bis zu fünf
+    Jahren oder Geldstrafe.
+  norms:
+  - § 263a Abs. 1 StGB
+  - § 263 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-cb-aufbau-schaden
+  type: definition
+  front: >-
+    Definiere: Beeinflussung des Ergebnisses eines Datenverarbeitungsvorgangs und Vermögensschaden
+    bei § 263a StGB
+  back: >-
+    Datenverarbeitung ist jeder technische Vorgang, bei dem durch Aufnahme von Daten und ihre
+    Verknüpfung nach Programmen Arbeitsergebnisse erzielt werden. Das Ergebnis ist beeinflusst,
+    wenn der Vorgang einen anderen Verlauf nimmt oder ein anderes Resultat liefert, als es
+    ohne die Tathandlung gewesen wäre. Das Merkmal tritt an die Stelle von Täuschung, Irrtum
+    und Vermögensverfügung beim Betrug. Zwischen der Beeinflussung des Ergebnisses und dem
+    Vermögensschaden muss, wie bei der Verfügung des § 263 StGB, ein unmittelbarer Zusammenhang
+    bestehen: Der Schaden muss ohne weitere deliktische Zwischenhandlung des Täters eintreten.
+    Der Schaden wird wie beim Betrug nach dem Prinzip der Gesamtsaldierung bestimmt.
+  norms:
+  - § 263a Abs. 1 StGB
+  - § 263 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-cb-var1-var2
+  type: definition
+  front: >-
+    Was sind die Programmmanipulation (Var. 1) und die Verwendung unrichtiger oder unvollständiger
+    Daten (Var. 2)?
+  back: >-
+    Unrichtige Gestaltung des Programms (Var. 1) liegt vor, wenn die Verarbeitungsanweisungen
+    so verändert werden, dass sie nicht mehr dem Willen des Verfügungsberechtigten entsprechen;
+    Beispiel ist die Programmierung, die Zinsbeträge auf ein bestimmtes Konto umleitet. Unrichtig
+    sind Daten (Var. 2), wenn sie den Sachverhalt, auf den sie sich beziehen, nicht der Wirklichkeit
+    entsprechend wiedergeben; unvollständig, wenn wesentliche Angaben fehlen. Typische Fälle
+    sind das Eingeben fingierter Buchungen oder falscher Überweisungsdaten. Das Verwenden
+    der Daten bedeutet das Einführen in den Verarbeitungsvorgang. Bei Var. 2 spielt die Frage
+    der Befugnis keine Rolle; entscheidend ist die objektive Unrichtigkeit der Daten.
+  norms:
+  - § 263a Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-cb-unbefugt-streit
+  type: streitstand
+  front: >-
+    Streitstand: Wann ist die Verwendung von Daten "unbefugt" (§ 263a Abs. 1 Var. 3 StGB)?
+  back: >-
+    Die subjektivierende Auffassung lässt jede Verwendung genügen, die dem wirklichen oder
+    mutmaßlichen Willen des Berechtigten widerspricht; sie wird wegen ihrer Weite kritisiert
+    und würde fast jede vertragswidrige Nutzung erfassen. Die computerspezifische Auffassung
+    verlangt eine Einwirkung, die gegenüber dem Computer selbst unbefugt ist, etwa die Überwindung
+    von Sicherungen oder das Verwenden fremder Zugangsdaten; sie ist zu eng, weil vom Wortlaut
+    auch die Manipulation von Eingaben ohne Täuschungsähnlichkeit abgedeckt wäre. Die h. M.
+    und die Rspr. vertreten die betrugsspezifische Auslegung: Unbefugt ist die Verwendung
+    nur dann, wenn sie gegenüber einer natürlichen Person, die den Vorgang prüfen würde, eine
+    Täuschung über die Berechtigung darstellen würde (Täuschungsäquivalenz). Diese Auslegung
+    passt zur Systematik der Vermögensdelikte.
+  norms:
+  - § 263a Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-cb-var4
+  type: definition
+  front: >-
+    Was erfasst die Auffangvariante "sonst unbefugte Einwirkung auf den Ablauf" (Var. 4)?
+  back: >-
+    Var. 4 erfasst alle sonstigen Einwirkungen auf den Verarbeitungsablauf, die nicht schon
+    unter die Var. 1 bis 3 fallen, etwa die Manipulation der Hardware eines Geldautomaten
+    oder das Einwirken auf die Peripherie. Auch hier gilt nach h. M. das Merkmal "unbefugt"
+    betrugsspezifisch: Die Einwirkung muss sich gegenüber einem menschlichen Prüfer als Täuschung
+    darstellen. Die Variante soll Lücken schließen und ist als Auffangtatbestand zurückhaltend
+    auszulegen. Mit der Verwendung echter, unveränderter Daten befasst sich Var. 3, mit der
+    Unrichtigkeit der Daten Var. 2.
+  norms:
+  - § 263a Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-cb-bankautomat-unberechtigt
+  type: streitstand
+  front: >-
+    Bankautomatenfälle I: Abhebung mit fremder Karte (Dieb, Finder, Täuschender)
+  back: >-
+    Wer mit einer ihm nicht zustehenden Karte und der PIN Geld abhebt, verwendet Daten unbefugt
+    (Var. 3). Nach der betrugsspezifischen Auslegung ist dies bejaht, weil ein Bankangestellter
+    am Schalter über die Berechtigung des Abhebenden getäuscht würde. Der Automat prüft nur
+    Karte und PIN; die Bank hat kein Einverständnis zur Auszahlung an Nichtberechtigte. Ein
+    Diebstahl am ausgegebenen Geld wird von der h. M. mangels Wegnahme verneint, weil die
+    Bank das Geld programmgemäß ausgibt (Gewahrsamsübertragung). Der Vermögensschaden der
+    Bank liegt in der Belastung, wenn sie vom Kontoinhaber keinen Ersatz verlangen kann (§
+    675u BGB). Daneben kann § 242 StGB hinsichtlich der Karte in Betracht kommen; dort ist
+    die Zueignungsabsicht zu prüfen.
+  norms:
+  - § 263a Abs. 1 StGB
+  - § 242 StGB
+  - § 675u BGB
+  quellen:
+  - StGB, amtliche Fassung
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-cb-bankautomat-berechtigt
+  type: rechtsprechung
+  front: >-
+    Bankautomatenfälle II: Wie beurteilt der BGH die Abhebung durch den berechtigten Karteninhaber,
+    der das Konto überzieht? (BGHSt 47, 160)
+  back: >-
+    Der BGH hat entschieden, dass der berechtigte Karteninhaber, der unter Überschreitung
+    seines Verfügungsrahmens oder ohne Deckung an einem Geldautomaten abhebt, nicht nach §
+    263a Abs. 1 Var. 3 StGB strafbar ist (BGHSt 47, 160). Maßgeblich ist die betrugsspezifische
+    Auslegung: Der Automat prüft keine Bonität; ein Bankmitarbeiter, dem der Vorgang vorgelegt
+    würde, würde über die Berechtigung der Abhebung im Rahmen der Kartenbefugnis nicht getäuscht.
+    Die Kartenbefugnis besteht weiter, nur der vertragliche Rahmen wird überschritten. Eine
+    Strafbarkeit nach § 266b StGB setzt den Missbrauch einer Karte im Drei-Partner-System
+    voraus und ist bei der Abhebung am eigenen Automaten der kartenausgebenden Bank regelmäßig
+    nicht gegeben. Die Entscheidung wird in der Lit. teilweise kritisiert, ist aber in der
+    Praxis maßgeblich.
+  norms:
+  - § 263a Abs. 1 StGB
+  - § 266b StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - BGHSt 47, 160
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-cb-abs2-abs3
+  type: norm
+  front: >-
+    Welche weiteren Regelungen enthält § 263a StGB (Abs. 2 bis 4)?
+  back: >-
+    § 263a Abs. 2 StGB erklärt § 263 Abs. 2 bis 6 StGB für entsprechend anwendbar. Damit gelten
+    der Versuch, die Regelbeispiele für den besonders schweren Fall, die Qualifikation für
+    gewerbs- und bandenmäßige Begehung sowie die Antragserfordernisse bei Angehörigen und
+    Geringwertigkeit (§ 263 Abs. 4 i. V. m. §§ 247, 248a StGB) auch hier. § 263a Abs. 3 StGB
+    stellt bestimmte Vorbereitungshandlungen unter Strafe: Wer ein Computerprogramm, dessen
+    Zweck die Begehung einer Tat nach Abs. 1 ist, herstellt, sich oder einem anderen verschafft,
+    feilhält, verwahrt oder einem anderen überlässt, wird bestraft. § 263a Abs. 4 StGB erklärt
+    § 149 Abs. 2 und 3 StGB für entsprechend anwendbar (tätige Reue bei Vorbereitungshandlungen).
+  norms:
+  - § 263a Abs. 2 StGB
+  - § 263a Abs. 3 StGB
+  - § 263a Abs. 4 StGB
+  - § 263 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-cb-265a-tatbestand
+  type: norm
+  front: >-
+    Was bestraft § 265a StGB (Erschleichen von Leistungen)?
+  back: >-
+    § 265a Abs. 1 StGB bestraft, wer die Leistung eines Automaten oder eines öffentlichen
+    Zwecken dienenden Telekommunikationsnetzes, die Beförderung durch ein Verkehrsmittel oder
+    den Zutritt zu einer Veranstaltung oder Einrichtung in der Absicht erschleicht, das Entgelt
+    nicht zu entrichten. Die Strafe ist Freiheitsstrafe bis zu einem Jahr oder Geldstrafe;
+    die Tat ist subsidiär, wenn sie in anderen Vorschriften mit schwererer Strafe bedroht
+    ist. Der Versuch ist strafbar (Abs. 2). Nach Abs. 3 gelten die §§ 247 und 248a StGB entsprechend,
+    sodass bei Angehörigen und Geringwertigkeit ein Strafantrag nötig sein kann. Die Vorschrift
+    schützt das Vermögen der Leistungserbringer vor unentgeltlicher Inanspruchnahme.
+  norms:
+  - § 265a Abs. 1 StGB
+  - § 265a Abs. 2 StGB
+  - § 265a Abs. 3 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-cb-265a-erschleichen-streit
+  type: streitstand
+  front: >-
+    Streitstand: Was bedeutet "Erschleichen" bei der Beförderungserschleichung (Schwarzfahren)?
+  back: >-
+    Erschleichen ist die Inanspruchnahme der Leistung in ordnungswidriger Weise unter Umgehung
+    von Kontrollmaßnahmen. Nach der Rspr. und einem Teil der Lit. genügt es, dass sich der
+    Täter ohne gültigen Fahrschein in das Verkehrsmittel begibt und dabei den Anschein ordnungsgemäßer
+    Nutzung erweckt, also unauffällig verhält; eine Überwindung besonderer Sperren ist nicht
+    erforderlich. Eine Gegenauffassung in der Lit. verlangt ein täuschungsähnliches Verhalten
+    oder die Überwindung einer besonderen Zugangssicherung; das bloße Nichtlösen eines Fahrscheins
+    sei nur eine Vertragsverletzung. Wer dem Personal offen erklärt, keinen Fahrschein zu
+    haben, erschleicht nach beiden Ansichten nichts.
+  norms:
+  - § 265a Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-cb-265a-abgrenzung
+  type: definition
+  front: >-
+    Wie ist § 265a StGB gegen §§ 263, 263a und 266b StGB abzugrenzen?
+  back: >-
+    § 265a StGB ist ein Auffangtatbestand mit Subsidiaritätsklausel. Wird ein Mensch getäuscht
+    (z. B. der Kontrolleur beim Vorzeigen einer gefälschten Karte), liegt § 263 StGB vor,
+    der § 265a verdrängt. Wird ein Automat durch unbefugte Verwendung von Daten manipuliert,
+    greift § 263a StGB. Bei Leistungsautomaten ohne Datenverarbeitung (Münzautomat mit Falschgeld)
+    kommt § 265a Abs. 1 StGB in Betracht. Der Missbrauch von Scheck- und Kreditkarten im Drei-Partner-System
+    ist in § 266b StGB geregelt. Ein Erschleichen setzt die Absicht voraus, das Entgelt nicht
+    zu entrichten; die Absicht ist dolus directus 1. Grades und muss bei Beginn der Inanspruchnahme
+    vorliegen.
+  norms:
+  - § 265a StGB
+  - § 263 StGB
+  - § 263a StGB
+  - § 266b StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: sr-schema-263a
+  title: Computerbetrug, § 263a Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+  norms:
+  - § 263a Abs. 1 StGB
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: >-
+          a) Tathandlung: Beeinflussung des Ergebnisses eines Datenverarbeitungsvorgangs durch
+          Var. 1, 2, 3 oder 4
+        hinweis: >-
+          Var. 3 und 4: "unbefugt" betrugsspezifisch auslegen (h. M.); Prüfen, ob ein Bankangestellter
+          getäuscht würde. Berechtigter Karteninhaber nach BGH nicht strafbar.
+      - label: >-
+          b) Beeinflussungserfolg: Ergebnis des Datenverarbeitungsvorgangs
+      - label: c) Vermögensschaden (Gesamtsaldierung)
+        hinweis: >-
+          Unmittelbarkeit zwischen Ergebnisbeeinflussung und Schaden wie bei der Vermögensverfügung
+          des § 263 StGB.
+    - label: 2. Subjektiver Tatbestand
+      children:
+      - label: a) Vorsatz
+      - label: >-
+          b) Absicht rechtswidriger Bereicherung (Stoffgleichheit)
+  - label: II. Rechtswidrigkeit
+  - label: III. Schuld
+  - label: >-
+      IV. Strafantrag, § 263a Abs. 2 i. V. m. § 263 Abs. 4, §§ 247, 248a StGB
+    hinweis: >-
+      Nur bei Angehörigen oder Geringwertigkeit relevant.
+  - label: >-
+      V. Besonders schwerer Fall, § 263a Abs. 2 i. V. m. § 263 Abs. 3 StGB
+  - label: VI. Konkurrenzen
+    hinweis: >-
+      Bei gleichzeitigem Diebstahl der Karte Tatmehrheit prüfen; § 265a ist wegen der Subsidiaritätsklausel
+      nachrangig; § 266b nur im Drei-Partner-System.
+- slug: sr-schema-265a
+  title: Erschleichen von Leistungen, § 265a StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+  norms:
+  - § 265a Abs. 1 StGB
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: >-
+          a) Tatobjekt: Leistung eines Automaten, Telekommunikationsnetzes, Beförderung oder
+          Zutritt
+      - label: b) Erschleichen
+        hinweis: >-
+          Streit: bloßes unauffälliges Fahren (Rspr.) oder täuschungsähnliches Verhalten/Überwindung
+          von Sperren (Lit.). Offene Erklärung gegenüber dem Personal schließt Erschleichen
+          aus.
+    - label: 2. Subjektiver Tatbestand
+      children:
+      - label: a) Vorsatz
+      - label: b) Absicht, das Entgelt nicht zu entrichten
+  - label: II. Rechtswidrigkeit
+  - label: III. Schuld
+  - label: IV. Subsidiarität und Strafantrag
+    hinweis: >-
+      Tritt hinter schwereren Delikten (§ 263, § 263a) zurück; bei Angehörigen oder Geringwertigkeit
+      Strafantrag nach § 265a Abs. 3 i. V. m. §§ 247, 248a StGB.
+faelle:
+- slug: sr-fall-cb-gefundene-karte
+  title: Die gefundene girocard
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: >-
+    D beobachtet an einem Geldautomaten, wie O seine PIN 4711 eingibt. Als O beim Verlassen
+    der Bankfiliale seine girocard auf den Boden fallen lässt, ohne es zu bemerken, hebt D
+    sie auf. Eine Stunde später steckt D die Karte an einem Geldautomaten der Bank, bei der
+    O sein Konto führt, ein, gibt die Zahl 4711 ein und hebt 500 Euro ab. Der Betrag wird
+    dem Konto des O belastet. O bemerkt den Verlust am selben Abend und lässt die Karte sperren;
+    ihn trifft kein grobes Verschulden, sodass die Bank ihm den Betrag erstattet. D behält
+    das Geld.
+  question: >-
+    Hat sich D durch die Abhebung wegen Computerbetrugs nach § 263a Abs. 1 StGB strafbar gemacht?
+    Andere Delikte sind nur kurz anzusprechen.
+  steps:
+  - prompt: >-
+      Welche Variante des § 263a Abs. 1 StGB kommt in Betracht und liegt ein Datenverarbeitungsvorgang
+      vor?
+    erwartung: >-
+      Ja - die Variante der unbefugten Verwendung von Daten (Var. 3): D verwendet die auf
+      der Karte gespeicherten Daten und die PIN in den Datenverarbeitungsvorgang des Geldautomaten.
+  - prompt: >-
+      War die Verwendung "unbefugt"? Welche Auslegung ist vorzugswürdig?
+    erwartung: >-
+      Ja - nach der h. M. und Rspr. (betrugsspezifische Auslegung) ist die Verwendung unbefugt,
+      weil ein Bankangestellter am Schalter über die Berechtigung des D zur Abhebung getäuscht
+      würde. Die subjektive Auslegung käme zum selben Ergebnis, die computerspezifische Auslegung
+      ebenfalls, wenn man die PIN-Verwendung durch einen Nichtberechtigten als Überwindung
+      der Sicherung ansieht.
+  - prompt: >-
+      Wurde das Ergebnis des Datenverarbeitungsvorgangs beeinflusst und ist ein Vermögensschaden
+      eingetreten?
+    erwartung: >-
+      Ja - der Automat gibt 500 Euro aus, die Auszahlung ist die unmittelbare Folge. Ein Schaden
+      entsteht bei der Bank, die dem Konto des O belastet und ihm den Betrag erstattet hat,
+      ohne ihn von O ersetzt verlangen zu können; das Vermögen der Bank ist um 500 Euro gemindert
+      (Gesamtsaldierung).
+  - prompt: >-
+      Handelte D vorsätzlich und mit Bereicherungsabsicht?
+    erwartung: >-
+      Ja - D wusste, dass er nicht zur Abhebung berechtigt war, und wollte sich das Geld rechtswidrig
+      verschaffen (Stoffgleichheit).
+  - prompt: Ergebnis?
+    erwartung: >-
+      D ist wegen Computerbetrugs nach § 263a Abs. 1 Var. 3 StGB strafbar. Ein Diebstahl am
+      ausgegebenen Geld liegt nach der h. M. mangels Wegnahme nicht vor (Gewahrsamsübertragung
+      durch den Automaten).
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Obersatz: § 263a Abs. 1 StGB, Var. 3 (unbefugte Verwendung von Daten)
+      weight: 1.5
+      required: true
+      norms:
+      - § 263a Abs. 1 StGB
+      keywords:
+      - § 263a Abs. 1
+      - unbefugte Verwendung von Daten
+      - Computerbetrug
+      card_slugs:
+      - sr-cb-grundtatbestand
+    - id: p2
+      label: >-
+        Unbefugt: betrugsspezifische Auslegung (Täuschungsäquivalenz) dargestellt und angewandt
+      weight: 3.0
+      required: true
+      norms:
+      - § 263a Abs. 1 StGB
+      keywords:
+      - betrugsspezifisch
+      - Täuschungsäquivalenz
+      - Bankangestellter
+      - Täuschung gegenüber einem Menschen
+      - computerspezifische Auslegung
+      - subjektive Auslegung
+      card_slugs:
+      - sr-cb-unbefugt-streit
+      - sr-cb-bankautomat-unberechtigt
+    - id: p3
+      label: >-
+        Beeinflussung des Datenverarbeitungsvorgangs und Auszahlung als unmittelbarer Schaden
+      weight: 2.0
+      required: false
+      norms:
+      - § 263a Abs. 1 StGB
+      keywords:
+      - Datenverarbeitungsvorgang
+      - Ergebnis beeinflusst
+      - Auszahlung
+      - unmittelbar
+      - Vermögensschaden der Bank
+      - Gesamtsaldierung
+      card_slugs:
+      - sr-cb-aufbau-schaden
+    - id: p4
+      label: Vorsatz und Bereicherungsabsicht (Stoffgleichheit)
+      weight: 1.0
+      required: false
+      norms:
+      - § 263a Abs. 1 StGB
+      keywords:
+      - Bereicherungsabsicht
+      - rechtswidriger Vermögensvorteil
+      - Stoffgleichheit
+      card_slugs:
+      - sr-cb-grundtatbestand
+    - id: p5
+      label: >-
+        Kein Diebstahl am ausgegebenen Geld (Gewahrsamsübertragung durch Automaten)
+      weight: 1.0
+      required: false
+      norms:
+      - § 242 StGB
+      keywords:
+      - Wegnahme
+      - Gewahrsamsübertragung
+      - kein Diebstahl
+      - Gewahrsamsbruch
+      card_slugs:
+      - sr-cb-bankautomat-unberechtigt
+    - id: p6
+      label: 'Ergebnis: Strafbarkeit nach § 263a Abs. 1 StGB'
+      weight: 1.0
+      required: false
+      norms:
+      - § 263a Abs. 1 StGB
+      keywords:
+      - strafbar nach § 263a
+      - Computerbetrug gemäß § 263a
+      - Computerbetrug strafbar
+      card_slugs:
+      - sr-cb-grundtatbestand
