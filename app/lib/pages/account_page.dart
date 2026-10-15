@@ -340,14 +340,7 @@ class _AccountPageState extends State<AccountPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Konto'),
-        actions: [
-          IconButton(
-            tooltip: 'Lernprofil',
-            icon: const Icon(Icons.tune_outlined),
-            onPressed: () => openLernprofilFromAnywhere(context),
-          ),
-          const BetaFeedbackAction(screen: 'Konto'),
-        ],
+        actions: const [BetaFeedbackAction(screen: 'Konto')],
       ),
       body: ReadableWidth(
         child: SingleChildScrollView(

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../design/design.dart';
 import '../state.dart';
 import 'beta_feedback.dart';
-import 'examen_page.dart' show ProfilEditor;
+import 'examen_page.dart' show ProfilEditor, ProfilEditorState;
 import '../theme.dart';
 
 /// Lernprofil (docs/33-individualisierung.md): alles, was die App an den
@@ -68,6 +68,7 @@ class _LernprofilPageState extends State<LernprofilPage> {
   late Set<String> _pausiert;
   late List<Map<String, dynamic>> _eigeneDecks;
 
+  final _ortKey = GlobalKey<ProfilEditorState>();
   bool _busy = false;
   String? _error;
 
@@ -113,10 +114,23 @@ class _LernprofilPageState extends State<LernprofilPage> {
       _error = null;
     });
     final app = AppScope.of(context);
+    // Ein Speichern fuer alles: erst Bundesland/Universitaet, dann Lernprofil.
+    final ortOk = await _ortKey.currentState?.save() ?? true;
+    if (!mounted) return;
+    if (!ortOk) {
+      setState(() {
+        _busy = false;
+        _error = 'Bundesland und Universität konnten nicht gespeichert werden.';
+      });
+      return;
+    }
     final ok = await app.saveLernprofil(_payload);
     if (!mounted) return;
     setState(() => _busy = false);
     if (ok) {
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+        content: Text('Gespeichert: Bundesland, Universität und Lernprofil.'),
+      ));
       Navigator.of(context).pop(true);
     } else {
       setState(() => _error = app.error ?? 'Speichern fehlgeschlagen.');
@@ -153,12 +167,10 @@ class _LernprofilPageState extends State<LernprofilPage> {
             ),
             const SizedBox(height: Spacing.lg),
             ProfilEditor(
+              key: _ortKey,
               nurOrt: true,
               profil: _ortProfil(context),
-              onSaved: () => ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                    content: Text('Bundesland und Universität gespeichert.')),
-              ),
+              onSaved: () {},
             ),
             const SizedBox(height: Spacing.lg),
             _section(theme, 'Wo stehst du?'),
@@ -365,7 +377,7 @@ class _LernprofilPageState extends State<LernprofilPage> {
             ],
             const SizedBox(height: Spacing.xl),
             SubsumoButton.primary(
-              label: _busy ? 'Bitte warten ...' : 'Lernprofil speichern',
+              label: _busy ? 'Bitte warten ...' : 'Speichern',
               onPressed: _busy ? null : _save,
             ),
             const SizedBox(height: Spacing.xl),

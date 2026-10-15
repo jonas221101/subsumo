@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_markdown_plus/flutter_markdown_plus.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../api.dart' show kBetaMode;
 import '../../design/design.dart';
@@ -23,6 +24,33 @@ class PublicLegalPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final doc = legalDocForSlug(slug);
+    if (betaMode) {
+      // Privater Testzugang: schlichte Seite mit AppBar und Zurueck-Pfeil,
+      // ohne Anmelden-Link und ohne Footer.
+      return Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+            key: const ValueKey('legal-back'),
+            tooltip: 'Zurück',
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () {
+              final nav = Navigator.of(context);
+              if (nav.canPop()) {
+                nav.pop();
+              } else {
+                GoRouter.maybeOf(context)?.go('/app');
+              }
+            },
+          ),
+          title: Text(doc?.title ?? 'Rechtliches'),
+        ),
+        body: SingleChildScrollView(
+          child: SubsumoSection(
+            child: doc == null ? _UnknownLegalSlug(slug: slug) : _BetaLegalBody(doc: doc),
+          ),
+        ),
+      );
+    }
     return PublicScaffold(
       child: SubsumoSection(
         child: doc == null

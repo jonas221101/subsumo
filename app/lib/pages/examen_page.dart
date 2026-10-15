@@ -224,10 +224,10 @@ class ProfilEditor extends StatefulWidget {
   final VoidCallback? onCancel;
 
   @override
-  State<ProfilEditor> createState() => _ProfilEditorState();
+  State<ProfilEditor> createState() => ProfilEditorState();
 }
 
-class _ProfilEditorState extends State<ProfilEditor> {
+class ProfilEditorState extends State<ProfilEditor> {
   List<Map<String, dynamic>> _laender = [];
   List<Map<String, dynamic>> _unis = [];
   bool _listenLoading = true;
@@ -236,6 +236,8 @@ class _ProfilEditorState extends State<ProfilEditor> {
 
   String? _bundesland;
   String? _universitaet;
+  String? _bundeslandStart;
+  String? _universitaetStart;
   DateTime? _examDate;
   late final TextEditingController _minuten;
 
@@ -246,6 +248,8 @@ class _ProfilEditorState extends State<ProfilEditor> {
     final uni = widget.profil['universitaet'];
     _bundesland = land is Map ? land['code'] as String? : null;
     _universitaet = uni is Map ? uni['slug'] as String? : null;
+    _bundeslandStart = _bundesland;
+    _universitaetStart = _universitaet;
     final examDate = widget.profil['exam_date'] as String?;
     _examDate = examDate == null ? null : DateTime.tryParse(examDate);
     _minuten = TextEditingController(text: '${widget.profil['daily_minutes'] ?? 90}');
@@ -289,10 +293,21 @@ class _ProfilEditorState extends State<ProfilEditor> {
   }
 
   Future<void> _save() async {
+    if (await save()) widget.onSaved();
+  }
+
+  /// Speichert Bundesland/Universitaet (und ggf. Termin/Budget); `true` bei
+  /// Erfolg, sonst steht die Fehlermeldung im Editor. Wird im `nurOrt`-Modus
+  /// vom gemeinsamen Speichern der Lernprofil-Seite aufgerufen.
+  Future<bool> save() async {
+    // Im nurOrt-Modus ohne Aenderung nichts senden (und nichts ueberschreiben).
+    if (widget.nurOrt && _bundesland == _bundeslandStart && _universitaet == _universitaetStart) {
+      return true;
+    }
     final minuten = int.tryParse(_minuten.text.trim());
     if (!widget.nurOrt && (minuten == null || minuten < 15 || minuten > 600)) {
       setState(() => _error = 'Tagesbudget zwischen 15 und 600 Minuten angeben.');
-      return;
+      return false;
     }
     setState(() {
       _busy = true;
@@ -307,13 +322,10 @@ class _ProfilEditorState extends State<ProfilEditor> {
         'daily_minutes': minuten,
       },
     });
-    if (!mounted) return;
+    if (!mounted) return ok;
     setState(() => _busy = false);
-    if (ok) {
-      widget.onSaved();
-    } else {
-      setState(() => _error = app.error ?? 'Speichern fehlgeschlagen.');
-    }
+    if (!ok) setState(() => _error = app.error ?? 'Speichern fehlgeschlagen.');
+    return ok;
   }
 
   @override
@@ -427,21 +439,23 @@ class _ProfilEditorState extends State<ProfilEditor> {
             const SizedBox(height: Spacing.sm),
             SubsumoFeedbackBlock(message: _error!, severity: FeedbackSeverity.negative),
           ],
-          const SizedBox(height: Spacing.lg),
-          Row(
-            children: [
-              if (widget.onCancel != null) ...[
-                SubsumoButton.tertiary(label: 'Abbrechen', onPressed: _busy ? null : widget.onCancel),
-                const SizedBox(width: Spacing.sm),
-              ],
-              Expanded(
-                child: SubsumoButton.primary(
-                  label: _busy ? 'Bitte warten ...' : (widget.nurOrt ? 'Speichern' : 'Profil speichern'),
-                  onPressed: _busy ? null : _save,
+          if (!widget.nurOrt) ...[
+            const SizedBox(height: Spacing.lg),
+            Row(
+              children: [
+                if (widget.onCancel != null) ...[
+                  SubsumoButton.tertiary(label: 'Abbrechen', onPressed: _busy ? null : widget.onCancel),
+                  const SizedBox(width: Spacing.sm),
+                ],
+                Expanded(
+                  child: SubsumoButton.primary(
+                    label: _busy ? 'Bitte warten ...' : 'Profil speichern',
+                    onPressed: _busy ? null : _save,
+                  ),
                 ),
-              ),
-            ],
-          ),
+              ],
+            ),
+          ],
         ],
       ),
     );
