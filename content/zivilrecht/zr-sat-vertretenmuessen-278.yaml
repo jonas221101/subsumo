@@ -113,9 +113,10 @@ cards:
     und setzt einen Verrichtungsgehilfen voraus, der rechtswidrig, aber nicht notwendig
     schuldhaft gehandelt hat. Für die Klausur folgt: Besteht ein Schuldverhältnis,
     ist vorrangig § 280 Abs. 1 BGB in Verbindung mit § 278 BGB zu prüfen, weil der
-    Schuldner sich dort nicht entlasten kann. Der Anspruch aus § 831 BGB besteht daneben
-    (Anspruchskonkurrenz) und ist vor allem wegen § 253 Abs. 2 BGB und der Verjährung
-    nicht stets überflüssig.
+    Schuldner sich dort nicht entlasten kann. Ein Anspruch aus § 831 BGB besteht daneben
+    (Anspruchskonkurrenz), ist wegen der Exkulpationsmöglichkeit aber unsicher; er
+    hat vor allem dann Bedeutung, wenn zwischen Geschädigtem und Geschäftsherrn kein
+    Schuldverhältnis besteht.
   norms:
   - § 278 BGB
   - § 831 Abs. 1 BGB
@@ -158,11 +159,12 @@ cards:
     einer mangelfreien Sache schuldet, nicht deren Herstellung; der Verkäufer haftet
     für Fehler des Herstellers nicht über § 278 BGB. Anders liegt es beim Werkunternehmer,
     der Subunternehmer zur Herstellung des geschuldeten Werks einsetzt. Auch bei Handlungen,
-    die nur bei Gelegenheit der Aufgabe erfolgen (Diebstahl des Handwerkers in der
-    Wohnung), fehlt der innere sachliche Zusammenhang. Die Rechtsprechung bejaht den
-    Zusammenhang aber weit, wenn die Aufgabe dem Gehilfen gerade die Möglichkeit zur
-    Schädigung eröffnet hat (Ausnutzung der erlangten Zugriffsmöglichkeit auf fremde
-    Sachen).
+    die nur bei Gelegenheit der Aufgabe erfolgen und mit ihr in keinem inneren sachlichen
+    Zusammenhang stehen, fehlt die Zurechnung. Die Rechtsprechung bejaht den Zusammenhang
+    aber weit, wenn die Aufgabe dem Gehilfen gerade die Möglichkeit zur Schädigung
+    eröffnet hat (etwa Diebstahl durch einen Handwerker, dem der Zugang zur Wohnung
+    des Gläubigers gerade zur Aufgabenerfüllung eingeräumt wurde); entscheidend ist
+    eine Würdigung des Einzelfalls.
   norms:
   - § 278 S. 1 BGB
   - § 433 Abs. 1 BGB
@@ -373,6 +375,7 @@ faelle:
       - § 249 BGB
       keywords:
       - § 249
+      - §§ 249 ff.
       - Naturalrestitution
       - Schadensumfang
       - 3.200 Euro

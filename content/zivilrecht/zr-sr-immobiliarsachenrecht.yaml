@@ -75,10 +75,9 @@ cards:
     der Beteiligten), (2) ein unrichtiges Grundbuch, (3) eine Eintragung als Rechtsscheinträger
     für den Veräußerer oder das Recht, (4) fehlende Kenntnis des Erwerbers von der
     Unrichtigkeit (nur positive Kenntnis schadet, nicht Fahrlässigkeit) und (5) kein
-    eingetragener Widerspruch. Für die Kenntnis kommt es auf die Vollendung des Rechtserwerbs
-    an; ist zur Entstehung des Rechts die Eintragung erforderlich, ist nach § 892
-    Abs. 2 BGB der Zeitpunkt der Antragstellung maßgebend, bei späterer Einigung der
-    Zeitpunkt der Einigung.
+    eingetragener Widerspruch. Für die Kenntnis ist, wenn zur Entstehung des Rechts die Eintragung
+    erforderlich ist, nach § 892 Abs. 2 BGB der Zeitpunkt der Antragstellung maßgebend,
+    bei späterer Einigung der Zeitpunkt der Einigung.
   norms:
   - § 892 Abs. 1 BGB
   - § 892 Abs. 2 BGB
@@ -97,9 +96,9 @@ cards:
     des Verfügungsgeschäfts selbst, etwa die Geschäftsunfähigkeit oder fehlende Vertretungsmacht
     des Verfügenden bei der Auflassung, den Dissens oder die Anfechtung des Erwerbsgeschäfts.
     Ebenso schützt er nicht, wenn das Grundbuch in tatsächlichen Angaben (Grenzen,
-    Größe des Grundstücks) unzutreffend ist. Verfügungsbeschränkungen sind nur geschützt,
-    soweit sie eintragungsfähig sind und nicht eingetragen wurden (§ 892 Abs. 1 S.
-    2 BGB). Der wahre Berechtigte kann sich durch Eintragung eines Widerspruchs (§
+    Größe des Grundstücks) unzutreffend ist. Verfügungsbeschränkungen zugunsten einer bestimmten
+    Person (etwa ein Nacherbenvermerk) wirken gegenüber dem Erwerber nur, wenn sie
+    aus dem Grundbuch ersichtlich oder ihm bekannt sind (§ 892 Abs. 1 S. 2 BGB). Der wahre Berechtigte kann sich durch Eintragung eines Widerspruchs (§
     899 BGB) schützen.
   norms:
   - § 892 Abs. 1 BGB
@@ -162,14 +161,13 @@ cards:
     eine Vormerkung zur Sicherung eines wirksamen Anspruchs des Käufers, kann der
     Käufer die Vormerkung nach h. M. gutgläubig erwerben (gutgläubiger Ersterwerb),
     denn die Vormerkung stützt sich auf den Rechtsschein des Grundbuchs; die Redlichkeit
-    richtet sich nach § 892 BGB entsprechend (h. M. wendet § 893 Alt. 2 BGB analog
-    an). Voraussetzung ist, dass der gesicherte Anspruch wirksam besteht; nur die
+    richtet sich nach den Regeln des § 892 BGB (h. M.: § 893 Alt. 2 BGB analog). Voraussetzung ist, dass der gesicherte Anspruch wirksam besteht; nur die
     Berechtigung des Bewilligenden fehlt. Ein gutgläubiger Zweiterwerb, bei dem der
     Anspruch überhaupt nicht besteht und die Vormerkung deshalb nicht entstanden ist,
     ist wegen der Akzessorietät ausgeschlossen: Der gute Glaube ersetzt nicht den
-    fehlenden Anspruch. Kenntnis zum Zeitpunkt der Eintragung der Vormerkung schadet;
-    später erlangte Kenntnis schadet nicht, wenn die Vormerkung bereits gutgläubig
-    erworben wurde.
+    fehlenden Anspruch. Maßgeblich für die Kenntnis ist entsprechend § 892 Abs. 2 BGB der
+    Zeitpunkt des Eintragungsantrags, bei späterer Bewilligung dieser Zeitpunkt; später
+    erlangte Kenntnis schadet nicht.
   norms:
   - § 883 BGB
   - § 892 BGB
@@ -215,8 +213,8 @@ cards:
     Der Rang hat Bedeutung für die Befriedigung in der Zwangsversteigerung (§ 10 ZVG):
     Das ranghöhere Recht wird zuerst befriedigt, nachrangige Rechte können erlöschen.
     Der Rang kann durch Rangänderung nach § 880 BGB und durch Rangvorbehalt (§ 881)
-    verändert werden. Eine Vormerkung hat den Rang des gesicherten Rechts (§ 883 Abs.
-    3 BGB).
+    verändert werden. Der Rang des durch eine Vormerkung gesicherten Rechts bestimmt
+    sich nach dem Zeitpunkt der Eintragung der Vormerkung (§ 883 Abs. 3 BGB).
   norms:
   - § 879 BGB
   - § 880 BGB
@@ -233,7 +231,7 @@ cards:
     des jeweiligen Eigentümers eines anderen Grundstücks; beschränkte persönliche
     Dienstbarkeit, § 1090 BGB, zugunsten einer bestimmten Person; Nießbrauch, § 1030
     BGB; Erbbaurecht nach dem ErbbauRG), Erwerbsrechte (dingliches Vorkaufsrecht,
-    § 1094 BGB) und Verwertungsrechte (Hypothek, Grundschuld, Rentenschuld, Reallast).
+    § 1094 BGB), Verwertungsrechte (Hypothek, Grundschuld, Rentenschuld) und die Reallast (§ 1105 BGB).
     Alle entstehen durch Einigung und Eintragung (§ 873 BGB). Die Rechte sind in Abteilung
     II oder III einzutragen und belasten das Grundstück gegenüber jedem Eigentümer
     (Dinglichkeit). Beim Erwerb sind sie nach § 892 BGB zu beachten: Eingetragene
@@ -271,7 +269,7 @@ schemata:
     - label: 1. Antrag und Bewilligung, §§ 13, 19 GBO
     - label: 2. Eintragung des Erwerbers in Abteilung I
   - label: III. Einigsein im Zeitpunkt der Eintragung
-    hinweis: Bindung nach § 873 Abs. 2 BGB; Widerruf bis dahin möglich.
+    hinweis: Bindung nach § 873 Abs. 2 BGB; Widerruf nur bis zum Eintritt der Bindung möglich.
   - label: IV. Berechtigung des Veräußerers
     children:
     - label: 1. Eintragung als Eigentümer und wirkliche Berechtigung
@@ -337,9 +335,11 @@ faelle:
       Erwerbs.
   - prompt: Spielt die Geschäftsunfähigkeit des B im Verhältnis A–C eine Rolle?
     erwartung: >-
-      Nein. § 892 BGB überwindet nur die fehlende Berechtigung des A. Die Wirksamkeit
-      der Auflassung A–C ist nicht berührt; die Nichtigkeit der Auflassung B–A ist
-      Grund der Unrichtigkeit.
+      Die Geschäftsunfähigkeit des B betrifft nur das Verhältnis B–A und macht die
+      Auflassung B–A nichtig; sie ist der Grund für die Unrichtigkeit des Grundbuchs.
+      § 892 BGB überwindet nur die fehlende Berechtigung des A, dessen Eintragung als
+      Eigentümer den Rechtsschein trägt. Die Wirksamkeit der Auflassung A–C ist davon
+      nicht berührt.
   - prompt: Ist die Vormerkung des C wirksam entstanden?
     erwartung: >-
       Ja. Der gesicherte Anspruch auf Übereignung aus dem Kaufvertrag besteht wirksam.
@@ -388,7 +388,7 @@ faelle:
       keywords:
       - Geschäftsunfähigkeit
       - nichtige Auflassung
-      - Berechtigung
+      - Geschäftsunfähigkeit des B
       - Rechtsscheinträger
       card_slugs:
       - zr-immo-892-reichweite
@@ -442,7 +442,7 @@ faelle:
       - § 894
       - Grundbuchberichtigung
       - Erlös
-      - Widerspruch
+      - Nichtberechtigter
       card_slugs:
       - zr-immo-894-berichtigung
   stand: 2026-10

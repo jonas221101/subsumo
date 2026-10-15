@@ -40,8 +40,9 @@ cards:
   front: >-
     Wann ist eine Sache wesentlicher Bestandteil eines Grundstücks, und was sind Scheinbestandteile?
   back: >-
-    Bestandteile einer Sache sind solche, die nicht ohne Zerstörung oder Wesensveränderung
-    vom Ganzen getrennt werden können; wesentliche Bestandteile des Grundstücks sind
+    Wesentliche Bestandteile einer Sache sind solche, die voneinander nicht getrennt
+    werden können, ohne dass der eine oder der andere zerstört oder in seinem Wesen
+    verändert wird (§ 93 BGB). Wesentliche Bestandteile des Grundstücks sind
     die mit dem Grund und Boden fest verbundenen Sachen, insbesondere Gebäude (§ 94
     Abs. 1 BGB), sowie die zur Herstellung des Gebäudes eingefügten Sachen (§ 94 Abs.
     2 BGB). Sie können nicht Gegenstand besonderer Rechte sein (§ 93 BGB). Scheinbestandteile
@@ -95,10 +96,9 @@ cards:
     Sachen zur Zeit der Verbindung hatten (§ 947 Abs. 1 BGB). Ist eine der Sachen
     als Hauptsache anzusehen, erwirbt deren Eigentümer das Alleineigentum (§ 947 Abs.
     2 BGB); Hauptsache ist, was nach der Verkehrsauffassung für das Ganze prägend
-    ist, nicht allein der höhere Wert. Für die Vermischung vertretbarer Sachen (z.
-    B. Getreide, Geld, Flüssigkeiten), die untrennbar oder nur mit unverhältnismäßigen
-    Kosten trennbar ist, gilt § 947 entsprechend (§ 948 Abs. 1 BGB); der Untrennbarkeit
-    steht es gleich, wenn die Trennung unverhältnismäßige Kosten verursachen würde
+    ist, nicht allein der höhere Wert. Für die untrennbare Vermischung oder Vermengung
+    (z. B. Getreide, Geld, Flüssigkeiten) gilt § 947 entsprechend (§ 948 Abs. 1 BGB);
+    der Untrennbarkeit steht es gleich, wenn die Trennung unverhältnismäßige Kosten verursachen würde
     (§ 948 Abs. 2 BGB). Ausgleich: § 951 BGB.
   norms:
   - § 947 Abs. 1 BGB
@@ -143,7 +143,8 @@ cards:
     wenn sie sich in Art und Funktion vom Ausgangsstoff unterscheidet (z. B. Möbel
     aus Holz). Maßgeblich ist der Wertvergleich zwischen den Stoffwerten und dem durch
     die Verarbeitung hinzugekommenen Wert; reines Reparieren oder bloße Veredelung
-    genügt nicht. Mit dem Eigentumserwerb erlöschen die Rechte Dritter an den Stoffen
+    genügt nicht. Als Verarbeitung gilt auch das Schreiben, Zeichnen, Malen, Drucken
+    oder Gravieren (§ 950 Abs. 1 S. 2 BGB). Mit dem Eigentumserwerb erlöschen die Rechte Dritter an den Stoffen
     (§ 950 Abs. 2 BGB). Der Verlierer wird nach § 951 BGB entschädigt; das Gesetz
     sieht keine Wiederherstellung des früheren Zustands vor (§ 951 Abs. 1 S. 2 BGB).
   norms:
@@ -165,8 +166,10 @@ cards:
     Betrachtung). Bei der Herstellung im Auftrag ist dies in der Regel der Auftraggeber,
     wenn er das Material stellt, den Verarbeiter überwacht und das wirtschaftliche
     Risiko trägt. Verarbeitungsklauseln im verlängerten Eigentumsvorbehalt, nach denen
-    der Lieferant als Hersteller gilt, sind nach der Rechtsprechung grundsätzlich
-    möglich; sie wirken als Bestimmung des Herstellerbegriffs und nicht als Vorausabtretung.
+    der Lieferant als Hersteller gilt, sind nach der Rechtsprechung im Rahmen der Verkehrsanschauung
+    möglich; sie wirken als Bestimmung des Herstellerbegriffs und nicht als Vorausabtretung,
+    begründen die Herstellereigenschaft aber nicht losgelöst von den tatsächlichen
+    Umständen der Verarbeitung.
     Die Wirksamkeit solcher Klauseln ist nicht unumstritten: Teile der Literatur sehen
     darin eine unzulässige Umgehung des § 950 BGB, weil die Herstellereigenschaft
     vertraglich zugewiesen wird.
@@ -210,10 +213,11 @@ cards:
     wenn der Wert der Sache über 10 Euro liegt (§ 965 Abs. 2). Der Finder hat die
     Sache zu verwahren (§ 966 BGB) und haftet nur für Vorsatz und grobe Fahrlässigkeit
     (§ 968 BGB). Er kann Ersatz seiner Aufwendungen verlangen (§ 970 BGB) und Finderlohn:
-    5 Prozent des Wertes bis 500 Euro, darüber 3 Prozent (§ 971 Abs. 1 BGB). Mit Ablauf
+    5 Prozent vom Wert bis 500 Euro, vom Mehrwert 3 Prozent (§ 971 Abs. 1 BGB). Mit Ablauf
     eines Jahres nach der Anzeige bei der Behörde erwirbt der Finder das Eigentum,
     wenn sich der Empfangsberechtigte nicht gemeldet hat (§ 973 Abs. 1 BGB). Der Schatzfund
-    (§ 984 BGB) wird zur Hälfte zwischen Entdecker und Eigentümer geteilt.
+    (§ 984 BGB) wird je zur Hälfte zwischen dem Entdecker und dem Eigentümer der Sache, in der er verborgen
+    war, geteilt.
   norms:
   - § 965 BGB
   - § 966 BGB
@@ -233,8 +237,8 @@ cards:
     (§ 872 BGB). Die Ersitzung ist ausgeschlossen, wenn der Erwerber bei dem Erwerb
     des Eigenbesitzes nicht in gutem Glauben ist oder später erfährt, dass ihm das
     Eigentum nicht zusteht (§ 937 Abs. 2 BGB). Rechte Dritter erlöschen mit der Ersitzung
-    (§ 945 BGB). Die Ersitzungsfrist kann gehemmt oder unterbrochen werden, insbesondere
-    durch Herausgabeklage des Eigentümers (§§ 939, 941 BGB). Bei Grundstücken erwirbt
+    (§ 945 BGB). Die Ersitzung kann gehemmt oder unterbrochen werden (§§ 939 ff. BGB), etwa
+    durch Verlust des Eigenbesitzes oder Herausgabeklage des Eigentümers. Bei Grundstücken erwirbt
     nach § 900 BGB, wer 30 Jahre als Eigentümer eingetragen ist und das Grundstück
     in Eigenbesitz hatte, das Eigentum (Buchersitzung). Die Ersitzung hat in der Praxis
     geringe Bedeutung, ist aber wegen der Möglichkeit eines Eigentumserwerbs trotz
