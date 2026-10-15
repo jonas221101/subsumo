@@ -13,20 +13,24 @@ topic:
 cards:
 - slug: rp-bau-verfahren
   type: definition
-  front: Welche Genehmigungsverfahren kennt die LBauO RP, und wie verhält sich das Bauordnungsrecht zum
-    Bauplanungsrecht?
-  back: 'Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedarf nach der Landesbauordnung
-    Rheinland-Pfalz (LBauO RP) grundsätzlich der Baugenehmigung. Ausnahmen: verfahrensfreie Vorhaben (kleine,
-    unbedeutende Anlagen, die ein Katalog der LBauO RP aufzählt), die Genehmigungsfreistellung für bestimmte
-    Wohnbauvorhaben im Geltungsbereich qualifizierter Bebauungspläne (gegen vorherige Anzeige; die Gemeinde
-    kann ein Genehmigungsverfahren verlangen) sowie das vereinfachte Verfahren mit eingeschränktem Prüfumfang
-    für die meisten Gebäude und das umfassende Verfahren für Sonderbauten. Verfahrensfreiheit bedeutet
-    nicht materielle Freiheit: Die materiellen Anforderungen des Bauplanungs- und Bauordnungsrechts sind
-    einzuhalten, die Bauaufsicht kann bei Verstößen einschreiten. Das Bauplanungsrecht (§§ 29 ff. BauGB)
-    regelt als Bundesrecht die bodenrechtliche Zulässigkeit, das Bauordnungsrecht als Landesrecht Gefahrenabwehr,
-    Gestaltung und Verfahren.'
+  front: >-
+    Welche Genehmigungsverfahren kennt die LBauO RP, und wie verhält sich das Bauordnungsrecht zum Bauplanungsrecht?
+  back: >-
+    Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedarf nach der Landesbauordnung Rheinland-Pfalz
+    (LBauO RP) grundsätzlich der Baugenehmigung (§ 61 LBauO). Ausnahmen: genehmigungsfreie Vorhaben (Katalog
+    des § 62 LBauO), das Freistellungsverfahren nach § 67 LBauO (u. a. Wohngebäude der Gebäudeklassen
+    1 bis 3 im Geltungsbereich eines Bebauungsplans im Sinne des § 12 oder § 30 Abs. 1 BauGB, wenn sie
+    den Festsetzungen entsprechen und die Erschließung gesichert ist; ausgeschlossen, wenn die Gemeinde
+    erklärt, dass ein Genehmigungsverfahren durchgeführt werden soll), das vereinfachte Genehmigungsverfahren
+    (§ 66 LBauO, u. a. für Wohngebäude der Gebäudeklassen 1 bis 3) und das Genehmigungsverfahren mit umfassender
+    Prüfung für die übrigen Vorhaben, insbesondere Sonderbauten (§ 50 LBauO). Die Freistellung entbindet
+    nicht von der Einhaltung der materiellen Anforderungen. Verfahrensfreiheit bedeutet nicht materielle
+    Freiheit: Die materiellen Anforderungen des Bauplanungs- und Bauordnungsrechts sind einzuhalten, die
+    Bauaufsicht kann bei Verstößen einschreiten. Das Bauplanungsrecht (§§ 29 ff. BauGB) regelt als Bundesrecht
+    die bodenrechtliche Zulässigkeit, das Bauordnungsrecht als Landesrecht Gefahrenabwehr, Gestaltung
+    und Verfahren.
   norms:
-  - Landesbauordnung Rheinland-Pfalz (LBauO RP)
+  - §§ 61, 62, 66, 67 LBauO RP
   - § 29 BauGB
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -35,21 +39,22 @@ cards:
 - slug: rp-bau-anspruch
   type: norm
   front: Hat der Bauherr einen Anspruch auf die Baugenehmigung, und wie wird er durchgesetzt?
-  back: 'Die Baugenehmigung ist eine gebundene Entscheidung: Sie ist zu erteilen, wenn dem Vorhaben keine
-    öffentlich-rechtlichen Vorschriften entgegenstehen, die im Genehmigungsverfahren zu prüfen sind (Art.
-    14 Abs. 1 GG schützt die in der Eigentumsgarantie liegende Baufreiheit im Rahmen der Gesetze). Der
-    Prüfumfang hängt vom Verfahren ab; im vereinfachten Verfahren prüft die Bauaufsichtsbehörde das Bauplanungsrecht,
-    bestimmte Teile der LBauO RP und sonstiges öffentliches Recht. Das Bauplanungsrecht folgt aus §§ 30,
-    34, 35 BauGB je nach Gebietslage (beplanter Bereich, Innenbereich, Außenbereich); wo die Gemeinde
-    nicht selbst Genehmigungsbehörde ist, ist ihr Einvernehmen nach § 36 BauGB erforderlich. Die Genehmigung
-    ergeht unbeschadet privater Rechte Dritter. Rechtsschutz: Verpflichtungsklage nach § 42 Abs. 1 Var.
-    2 VwGO, nach erfolglosem Antrag bzw. nach Versagung; mit Bauvorbescheid lassen sich einzelne Fragen
-    vorab klären.'
+  back: >-
+    Die Baugenehmigung ist eine gebundene Entscheidung: Sie ist zu erteilen, wenn dem Vorhaben keine öffentlich-rechtlichen
+    Vorschriften entgegenstehen, die im Genehmigungsverfahren zu prüfen sind (§ 70 Abs. 1 S. 1 LBauO;
+    Art. 14 Abs. 1 GG schützt die in der Eigentumsgarantie liegende Baufreiheit im Rahmen der Gesetze).
+    Der Prüfumfang hängt vom Verfahren ab; der Prüfumfang im vereinfachten Verfahren ergibt sich aus §
+    66 LBauO (u. a. Erklärungen über die Nachweise von Standsicherheit, Wärmeschutz, Schallschutz). Das
+    Bauplanungsrecht folgt aus §§ 30, 34, 35 BauGB je nach Gebietslage (beplanter Bereich, Innenbereich,
+    Außenbereich); wo die Gemeinde nicht selbst Genehmigungsbehörde ist, ist ihr Einvernehmen nach § 36
+    BauGB erforderlich. Die Genehmigung ergeht unbeschadet privater Rechte Dritter (§ 70 Abs. 1 S. 3 LBauO).
+    Rechtsschutz: Verpflichtungsklage nach § 42 Abs. 1 Var. 2 VwGO, nach erfolglosem Antrag bzw. nach
+    Versagung; mit Bauvorbescheid lassen sich einzelne Fragen vorab klären.
   norms:
   - Art. 14 Abs. 1 GG
   - § 36 BauGB
   - § 42 Abs. 1 VwGO
-  - Landesbauordnung Rheinland-Pfalz (LBauO RP)
+  - § 70 LBauO RP
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -57,15 +62,16 @@ cards:
 - slug: rp-bau-abstandsflaechen
   type: norm
   front: Was regeln die Abstandsflächen, und sind sie nachbarschützend?
-  back: Vor den Außenwänden oberirdischer Gebäude sind Flächen von Gebäuden und baulichen Anlagen freizuhalten
-    (Abstandsflächen). Ihre Tiefe bemisst sich nach der Wandhöhe H; als Regelwert gilt 0,4 H mit einer
-    Mindesttiefe von 3 m (§ 8 LBauO RP). Die Abstandsflächen müssen grundsätzlich auf dem Baugrundstück
-    selbst liegen und dürfen sich nicht überdecken. Zwecke sind ausreichende Belichtung, Belüftung, Brandschutz
-    und Wahrung des Wohnfriedens. Das Abstandsflächenrecht ist nachbarschützend, soweit seine Zwecke dem
-    Nachbarn dienen; der Nachbar kann seine Verletzung daher rügen. An der Grenze darf gebaut werden,
-    wenn das Planungsrecht Grenzbebauung vorschreibt oder zulässt (geschlossene Bauweise, § 22 BauNVO).
-    Abweichungen sind möglich, wenn der Schutzzweck gewahrt bleibt und nachbarliche Interessen angemessen
-    berücksichtigt werden.
+  back: >-
+    Vor den Außenwänden oberirdischer Gebäude sind Flächen von Gebäuden und baulichen Anlagen freizuhalten
+    (Abstandsflächen). Ihre Tiefe bemisst sich nach der Wandhöhe H (§ 8 Abs. 4 LBauO) und beträgt 0,4
+    H, in Gewerbe- und Industriegebieten 0,25 H, in allen Fällen mindestens 3 m (§ 8 Abs. 6 LBauO). Die
+    Abstandsflächen müssen grundsätzlich auf dem Baugrundstück selbst liegen und dürfen sich nicht überdecken.
+    Zwecke sind ausreichende Belichtung, Belüftung, Brandschutz und Wahrung des Wohnfriedens. Das Abstandsflächenrecht
+    ist nachbarschützend, soweit seine Zwecke dem Nachbarn dienen; der Nachbar kann seine Verletzung daher
+    rügen. An der Grenze darf gebaut werden, wenn das Planungsrecht Grenzbebauung vorschreibt oder zulässt
+    (geschlossene Bauweise, § 22 BauNVO). Abweichungen sind nach § 69 LBauO möglich, wenn der Schutzzweck
+    gewahrt bleibt und nachbarliche Interessen angemessen berücksichtigt werden.
   norms:
   - § 8 LBauO RP
   - § 22 BauNVO
@@ -75,17 +81,19 @@ cards:
   stand: 2026-10
 - slug: rp-bau-nachbarschutz
   type: streitstand
-  front: Unter welchen Voraussetzungen kann ein Nachbar eine Baugenehmigung erfolgreich angreifen, und
-    welche Rolle spielt § 212a BauGB?
-  back: 'Die Drittanfechtung hat nur Erfolg, wenn die Genehmigung rechtswidrig ist und gerade gegen eine
-    nachbarschützende Norm verstößt (Schutznormtheorie, § 113 Abs. 1 S. 1 VwGO). Nachbarschützend sind
-    insbesondere das Abstandsflächenrecht, die Festsetzungen zur Art der baulichen Nutzung (Gebietserhaltungsanspruch)
+  front: >-
+    Unter welchen Voraussetzungen kann ein Nachbar eine Baugenehmigung erfolgreich angreifen, und welche
+    Rolle spielt § 212a BauGB?
+  back: >-
+    Die Drittanfechtung hat nur Erfolg, wenn die Genehmigung rechtswidrig ist und gerade gegen eine nachbarschützende
+    Norm verstößt (Schutznormtheorie, § 113 Abs. 1 S. 1 VwGO). Nachbarschützend sind insbesondere das
+    Abstandsflächenrecht, die Festsetzungen zur Art der baulichen Nutzung (Gebietserhaltungsanspruch)
     und das Gebot der Rücksichtnahme, das über § 15 Abs. 1 S. 2 BauNVO, § 34 Abs. 1 BauGB (Einfügen) oder
     § 35 Abs. 3 BauGB wirkt. Widerspruch und Anfechtungsklage des Nachbarn haben nach § 212a Abs. 1 BauGB
     keine aufschiebende Wirkung; der Bauherr darf auf Grundlage der Genehmigung bauen. Vorläufiger Rechtsschutz:
     Antrag auf Anordnung der aufschiebenden Wirkung nach § 80a Abs. 3 i. V. m. § 80 Abs. 5 VwGO. Streitig
     ist, ob schon die formelle Rechtswidrigkeit wegen unterbliebener Nachbarbeteiligung allein zum Erfolg
-    führt; nach h. M. kommt es auf eine materielle Verletzung subjektiv-öffentlicher Nachbarrechte an.'
+    führt; nach h. M. kommt es auf eine materielle Verletzung subjektiv-öffentlicher Nachbarrechte an.
   norms:
   - § 212a Abs. 1 BauGB
   - § 80a Abs. 3 VwGO
@@ -99,38 +107,44 @@ cards:
 - slug: rp-bau-eingriff
   type: definition
   front: Welche bauaufsichtlichen Eingriffsmaßnahmen gibt es, und wann dürfen sie ergehen?
-  back: 'Die Bauaufsichtsbehörde überwacht die Einhaltung des öffentlichen Baurechts und kann nach der
-    LBauO RP einschreiten. Baueinstellung: Stilllegung einer Baustelle, die rechtswidrig begonnen wurde;
-    sie setzt formelle Illegalität (fehlende Genehmigung) oder sonstigen Verstoß voraus und dient der
-    Sicherung. Nutzungsuntersagung: Verbot einer rechtswidrigen Nutzung, regelmäßig bei formeller Illegalität,
-    wenn die Nutzung nicht ohne Weiteres genehmigungsfähig ist. Beseitigungsanordnung: die schärfste Maßnahme;
-    sie setzt grundsätzlich formelle und materielle Illegalität voraus, weil eine Beseitigung bei materiell
-    legalem Vorhaben unverhältnismäßig wäre. Alle Maßnahmen stehen im Ermessen der Behörde und müssen
-    verhältnismäßig sein; Adressaten sind Bauherr, Eigentümer oder Nutzer. Ein Anspruch des Nachbarn auf
-    Einschreiten besteht nur ausnahmsweise bei Verletzung nachbarschützender Vorschriften und Ermessensreduktion
-    auf Null.'
+  back: >-
+    Die Bauaufsichtsbehörden haben darüber zu wachen, dass die baurechtlichen und sonstigen öffentlich-rechtlichen
+    Vorschriften eingehalten werden, und treffen nach pflichtgemäßem Ermessen die erforderlichen Maßnahmen
+    (§ 59 Abs. 1 LBauO). Baueinstellung (§ 80 LBauO, bei Bauarbeiten im Widerspruch zu baurechtlichen
+    oder sonstigen öffentlich-rechtlichen Vorschriften): Stilllegung einer Baustelle, die rechtswidrig
+    begonnen wurde; sie setzt formelle Illegalität (fehlende Genehmigung) oder sonstigen Verstoß voraus
+    und dient der Sicherung. Benutzungsuntersagung (§ 81 LBauO): Verbot einer rechtswidrigen Nutzung,
+    regelmäßig bei formeller Illegalität, wenn die Nutzung nicht ohne Weiteres genehmigungsfähig ist.
+    Beseitigungsanordnung (§ 81 LBauO, nur wenn nicht auf andere Weise rechtmäßige Zustände hergestellt
+    werden können): die schärfste Maßnahme; sie setzt grundsätzlich formelle und materielle Illegalität
+    voraus, weil eine Beseitigung bei materiell legalem Vorhaben unverhältnismäßig wäre. Alle Maßnahmen
+    stehen im Ermessen der Behörde und müssen verhältnismäßig sein; Adressaten sind Bauherr, Eigentümer
+    oder Nutzer. Ein Anspruch des Nachbarn auf Einschreiten besteht nur ausnahmsweise bei Verletzung nachbarschützender
+    Vorschriften und Ermessensreduktion auf Null.
   norms:
-  - Landesbauordnung Rheinland-Pfalz (LBauO RP)
+  - §§ 59, 80, 81 LBauO RP
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: rp-bau-abweichung
   type: definition
-  front: Wie unterscheiden sich Abweichung (Bauordnungsrecht) und Ausnahme bzw. Befreiung (Bauplanungsrecht)?
-  back: Im Bauordnungsrecht kann die Bauaufsichtsbehörde Abweichungen von Anforderungen der LBauO RP zulassen,
-    wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der öffentlich-rechtlich
-    geschützten nachbarlichen Belange mit den öffentlichen Belangen vereinbar sind; die Voraussetzungen
-    im Einzelnen regelt die LBauO RP. Im Bauplanungsrecht lässt § 31 Abs. 1 BauGB Ausnahmen zu, soweit
-    der Bebauungsplan sie vorsieht. Nach § 31 Abs. 2 BauGB ist eine Befreiung von Festsetzungen möglich,
-    wenn die Grundzüge der Planung nicht berührt werden und einer der Befreiungsgründe (Allgemeinwohl,
-    städtebauliche Vertretbarkeit, offenbar nicht beabsichtigte Härte) vorliegt; die Abweichung muss zudem
-    mit den öffentlichen Belangen vereinbar sein und nachbarliche Interessen würdigen. Wird von nachbarschützenden
-    Festsetzungen befreit, hat der Nachbar einen Anspruch auf Würdigung seiner Belange.
+  front: >-
+    Wie unterscheiden sich Abweichung (Bauordnungsrecht) und Ausnahme bzw. Befreiung (Bauplanungsrecht)?
+  back: >-
+    Im Bauordnungsrecht soll die Bauaufsichtsbehörde nach § 69 Abs. 1 LBauO Abweichungen von bauaufsichtlichen
+    Anforderungen zulassen, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung
+    der nachbarlichen Interessen mit den öffentlichen Belangen vereinbar sind; für die nachbarliche Beteiligung
+    gilt § 68 LBauO. Im Bauplanungsrecht lässt § 31 Abs. 1 BauGB Ausnahmen zu, soweit der Bebauungsplan
+    sie vorsieht. Nach § 31 Abs. 2 BauGB ist eine Befreiung von Festsetzungen möglich, wenn die Grundzüge
+    der Planung nicht berührt werden und einer der Befreiungsgründe (Allgemeinwohl, städtebauliche Vertretbarkeit,
+    offenbar nicht beabsichtigte Härte) vorliegt; die Abweichung muss zudem mit den öffentlichen Belangen
+    vereinbar sein und nachbarliche Interessen würdigen. Wird von nachbarschützenden Festsetzungen befreit,
+    hat der Nachbar einen Anspruch auf Würdigung seiner Belange.
   norms:
   - § 31 Abs. 1 BauGB
   - § 31 Abs. 2 BauGB
-  - Landesbauordnung Rheinland-Pfalz (LBauO RP)
+  - § 69 LBauO RP
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -138,19 +152,21 @@ cards:
 - slug: rp-bau-bestandsschutz
   type: definition
   front: Was schützt der Bestandsschutz, und wo liegen seine Grenzen?
-  back: 'Passiver Bestandsschutz folgt aus Art. 14 Abs. 1 GG: Eine bauliche Anlage, die zu irgendeinem
-    Zeitpunkt rechtmäßig genehmigt oder materiell legal errichtet wurde, darf in ihrem genehmigten Bestand
-    und ihrer Nutzung erhalten bleiben, auch wenn sich später die Rechtslage geändert hat; bauaufsichtliche
-    Eingriffe wie Beseitigungsanordnung oder Nutzungsuntersagung scheiden aus, solange die Voraussetzungen
-    fortbestehen. Der Schutz erlischt, wenn die Anlage zerstört, ihre Substanz in wesentlichem Umfang
-    erneuert oder die Nutzung aufgegeben wird; die Identität der Anlage muss gewahrt sein. Einen aktiven
-    Bestandsschutz, also einen unmittelbar aus Art. 14 GG abgeleiteten Anspruch auf Erweiterung oder Änderung,
-    erkennt das Bundesverwaltungsgericht nicht mehr an. Bei konkreten Gefahren für Leben und Gesundheit
-    lassen die Bauordnungen auf gesetzlicher Grundlage nachträgliche Anpassungsverlangen zu; ein bloßer
-    Widerspruch zum neueren Recht genügt dafür nicht.'
+  back: >-
+    Passiver Bestandsschutz folgt aus Art. 14 Abs. 1 GG: Eine bauliche Anlage, die zu irgendeinem Zeitpunkt
+    rechtmäßig genehmigt oder materiell legal errichtet wurde, darf in ihrem genehmigten Bestand und ihrer
+    Nutzung erhalten bleiben, auch wenn sich später die Rechtslage geändert hat; bauaufsichtliche Eingriffe
+    wie Beseitigungsanordnung oder Nutzungsuntersagung scheiden aus, solange die Voraussetzungen fortbestehen.
+    Der Schutz erlischt, wenn die Anlage zerstört, ihre Substanz in wesentlichem Umfang erneuert oder
+    die Nutzung aufgegeben wird; die Identität der Anlage muss gewahrt sein. Einen aktiven Bestandsschutz,
+    also einen unmittelbar aus Art. 14 GG abgeleiteten Anspruch auf Erweiterung oder Änderung, erkennt
+    das Bundesverwaltungsgericht nicht mehr an. Nachträgliche Anforderungen sind nach § 85 Abs. 1 LBauO
+    nur zulässig, wenn dies zur Abwehr von erheblichen Gefahren für die öffentliche Sicherheit, insbesondere
+    für Leben oder Gesundheit, erforderlich ist; ein bloßer Widerspruch zum neueren Recht genügt dafür
+    nicht.
   norms:
   - Art. 14 Abs. 1 GG
-  - Landesbauordnung Rheinland-Pfalz (LBauO RP)
+  - § 85 LBauO RP
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -160,7 +176,7 @@ schemata:
   title: 'Bauaufsichtliches Einschreiten gegen einen Altbau: Bestandsschutz (LBauO RP)'
   norms:
   - Art. 14 Abs. 1 GG
-  - Eingriffsbefugnisse der Bauaufsicht nach der LBauO RP (Paragraphen hier nicht angegeben)
+  - §§ 81, 85 LBauO RP
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -186,29 +202,34 @@ faelle:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   - Art. 14 Abs. 1 GG
-  facts: E ist Eigentümer eines Wohnhauses in Rheinland-Pfalz, das 1955 mit Baugenehmigung errichtet wurde.
+  facts: >-
+    E ist Eigentümer eines Wohnhauses in Rheinland-Pfalz, das 1955 mit Baugenehmigung errichtet wurde.
     Seither ist das Haus unverändert und wird von E als Wohnung genutzt. Nach den heute geltenden Vorschriften
     der Landesbauordnung wäre die Abstandsfläche zum Nachbargrundstück des N zu gering; bei Errichtung
     im Jahr 1955 entsprach das Gebäude jedoch den damals geltenden Abstandsvorschriften. Nach einem Streit
     mit E verlangt N von der Bauaufsichtsbehörde, die Beseitigung der überstehenden Hauswand anzuordnen.
-    Die Behörde erlässt eine entsprechende Anordnung gegen E. E hält sie für rechtswidrig. Eine Gefahr
-    für Leben oder Gesundheit besteht nicht.
+    Die Behörde erlässt eine entsprechende Anordnung (§ 81 LBauO) gegen E. E hält sie für rechtswidrig.
+    Eine Gefahr für Leben oder Gesundheit besteht nicht.
   question: Ist die Beseitigungsanordnung gegen E rechtmäßig?
   steps:
   - prompt: Widerspricht das Gebäude der heutigen Rechtslage?
-    erwartung: Ja. Nach den heute geltenden Abstandsvorschriften wäre die Abstandsfläche zu gering. Der
-      Widerspruch zur aktuellen Rechtslage allein rechtfertigt aber keine Beseitigung.
+    erwartung: >-
+      Ja. Nach den heute geltenden Abstandsvorschriften wäre die Abstandsfläche zu gering. Der Widerspruch
+      zur aktuellen Rechtslage allein rechtfertigt aber keine Beseitigung.
   - prompt: Greift Bestandsschutz?
-    erwartung: Ja. Das Gebäude wurde 1955 mit Baugenehmigung und in Übereinstimmung mit dem damaligen
-      Recht errichtet und ist seit dem unverändert genutzt. Passiver Bestandsschutz aus Art. 14 Abs. 1
-      GG schützt den genehmigten Bestand auch gegen später verschärfte Vorschriften.
+    erwartung: >-
+      Ja. Das Gebäude wurde 1955 mit Baugenehmigung und in Übereinstimmung mit dem damaligen Recht errichtet
+      und ist seit dem unverändert genutzt. Passiver Bestandsschutz aus Art. 14 Abs. 1 GG schützt den
+      genehmigten Bestand auch gegen später verschärfte Vorschriften.
   - prompt: Gibt es eine Ausnahme vom Bestandsschutz?
-    erwartung: Nein. Ein Anpassungsverlangen wegen einer Gefahr für Leben oder Gesundheit kommt nicht
-      in Betracht, weil keine solche Gefahr besteht. Der Bestandsschutz ist weder durch Zerstörung noch
-      durch Nutzungsaufgabe erloschen.
+    erwartung: >-
+      Nein. Ein Anpassungsverlangen wegen einer Gefahr für Leben oder Gesundheit kommt nicht in Betracht,
+      weil keine solche Gefahr besteht. Der Bestandsschutz ist weder durch Zerstörung noch durch Nutzungsaufgabe
+      erloschen.
   - prompt: Ergebnis?
-    erwartung: Die Beseitigungsanordnung ist rechtswidrig. Auch das Verlangen des N ändert daran nichts,
-      weil der Bestandsschutz das Gebäude gegenüber der verschärften Rechtslage sichert.
+    erwartung: >-
+      Die Beseitigungsanordnung ist rechtswidrig. Auch das Verlangen des N ändert daran nichts, weil der
+      Bestandsschutz das Gebäude gegenüber der verschärften Rechtslage sichert.
   expectation:
     pruefpunkte:
     - id: p1

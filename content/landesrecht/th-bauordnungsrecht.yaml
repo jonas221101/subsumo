@@ -17,20 +17,12 @@ cards:
       Welche Genehmigungsverfahren kennt die ThürBO, und wie verhält sich das Bauordnungsrecht zum
       Bauplanungsrecht?
   back: >-
-      Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedarf nach der Thüringer
-      Bauordnung (ThürBO) grundsätzlich der Baugenehmigung. Ausnahmen: verfahrensfreie Vorhaben
-      (kleine, unbedeutende Anlagen, die ein Katalog der ThürBO aufzählt), die
-      Genehmigungsfreistellung für bestimmte Wohnbauvorhaben im Geltungsbereich qualifizierter
-      Bebauungspläne (gegen vorherige Anzeige; die Gemeinde kann ein Genehmigungsverfahren verlangen)
-      sowie das vereinfachte Verfahren mit eingeschränktem Prüfumfang für die meisten Gebäude und das
-      umfassende Verfahren für Sonderbauten. Verfahrensfreiheit bedeutet nicht materielle Freiheit:
-      Die materiellen Anforderungen des Bauplanungs- und Bauordnungsrechts sind einzuhalten, die
-      Bauaufsicht kann bei Verstößen einschreiten. Das Bauplanungsrecht (§§ 29 ff. BauGB) regelt als
+      Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedarf nach der Thüringer Bauordnung (ThürBO) grundsätzlich der Baugenehmigung (§ 62 ThürBO). Ausnahmen: verfahrensfreie Vorhaben (Katalog in § 63 ThürBO), die Genehmigungsfreistellung nach § 64 ThürBO (u. a. Gebäude der Gebäudeklassen 1 bis 3 im Geltungsbereich eines Bebauungsplans nach § 30 Abs. 1 bzw. §§ 12, 30 Abs. 2 BauGB, gesicherte Erschließung; die Unterlagen sind bei der Gemeinde einzureichen, nach einem Monat darf begonnen werden, die Gemeinde kann innerhalb dieser Frist erklären, dass das vereinfachte Genehmigungsverfahren durchgeführt werden soll), das vereinfachte Baugenehmigungsverfahren für Gebäude der Gebäudeklassen 1 bis 3 und weitere Anlagen mit eingeschränktem Prüfumfang (§ 65) sowie das reguläre Verfahren mit vollem bauordnungsrechtlichem Prüfumfang für die übrigen genehmigungsbedürftigen Anlagen, insbesondere Sonderbauten (§ 66). Verfahrensfreiheit bedeutet nicht materielle Freiheit: Die materiellen Anforderungen des öffentlichen Rechts sind einzuhalten, die Bauaufsicht kann bei Verstößen einschreiten (Aufgaben und Befugnisse: § 61 ThürBO). Das Bauplanungsrecht (§§ 29 ff. BauGB) regelt als
       Bundesrecht die bodenrechtliche Zulässigkeit, das Bauordnungsrecht als Landesrecht
       Gefahrenabwehr, Gestaltung und Verfahren.
   norms:
   - >-
-      Vorschriften der ThürBO zu Genehmigungspflicht und Verfahren (Paragraphen hier nicht angegeben)
+      §§ 62-66 ThürBO
   - "§ 29 BauGB"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
@@ -41,22 +33,17 @@ cards:
   front: >-
       Hat der Bauherr einen Anspruch auf die Baugenehmigung, und wie wird er durchgesetzt?
   back: >-
-      Die Baugenehmigung ist eine gebundene Entscheidung: Sie ist zu erteilen, wenn dem Vorhaben keine
-      öffentlich-rechtlichen Vorschriften entgegenstehen, die im Genehmigungsverfahren zu prüfen sind
-      (Art. 14 Abs. 1 GG schützt die in der Eigentumsgarantie liegende Baufreiheit im Rahmen der
-      Gesetze). Der Prüfumfang hängt vom Verfahren ab; im vereinfachten Verfahren prüft die
-      Bauaufsichtsbehörde das Bauplanungsrecht, bestimmte Teile der ThürBO und sonstiges öffentliches
-      Recht. Das Bauplanungsrecht folgt aus §§ 30, 34, 35 BauGB je nach Gebietslage (beplanter
+      Die Baugenehmigung ist eine gebundene Entscheidung: Sie ist zu erteilen, wenn dem Bauvorhaben keine öffentlich-rechtlichen Vorschriften entgegenstehen, die im bauaufsichtlichen Genehmigungsverfahren zu prüfen sind; die Behörde darf den Antrag auch ablehnen, wenn das Vorhaben gegen sonstige öffentlich-rechtliche Vorschriften verstößt (§ 78 Abs. 1 S. 1 ThürBO; Art. 14 Abs. 1 GG schützt die in der Eigentumsgarantie liegende Baufreiheit im Rahmen der
+      Gesetze). Der Prüfumfang hängt vom Verfahren ab; im vereinfachten Verfahren prüft die Bauaufsichtsbehörde die bauplanungsrechtliche Zulässigkeit (§§ 29 bis 38 BauGB), beantragte Abweichungen (§ 73 Abs. 1, Abs. 2 S. 2) und ersetzte Entscheidungen nach anderem öffentlichem Recht (§ 65 Abs. 1 S. 2 ThürBO); im regulären Verfahren zusätzlich die Anforderungen der ThürBO (§ 66). Das Bauplanungsrecht folgt aus §§ 30, 34, 35 BauGB je nach Gebietslage (beplanter
       Bereich, Innenbereich, Außenbereich); wo die Gemeinde nicht selbst Genehmigungsbehörde ist, ist
-      ihr Einvernehmen nach § 36 BauGB erforderlich. Die Genehmigung ergeht unbeschadet privater
-      Rechte Dritter. Rechtsschutz: Verpflichtungsklage nach § 42 Abs. 1 Var. 2 VwGO, nach erfolglosem
-      Antrag bzw. nach Versagung; mit Bauvorbescheid lassen sich einzelne Fragen vorab klären.
+      ihr Einvernehmen nach § 36 BauGB erforderlich. Die Genehmigung ist unbeschadet der privaten Rechte Dritter zu erteilen (§ 78 Abs. 4 ThürBO). Rechtsschutz: Verpflichtungsklage nach § 42 Abs. 1 Var. 2 VwGO, nach erfolglosem
+      Antrag bzw. nach Versagung; mit dem Vorbescheid (§ 82 ThürBO) lassen sich einzelne Fragen vorab klären.
   norms:
   - "Art. 14 Abs. 1 GG"
   - "§ 36 BauGB"
   - "§ 42 Abs. 1 VwGO"
   - >-
-      Vorschriften der ThürBO zur Baugenehmigung (Paragraphen hier nicht angegeben)
+      §§ 78, 82 ThürBO
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -66,14 +53,10 @@ cards:
   front: "Was regeln die Abstandsflächen, und sind sie nachbarschützend?"
   back: >-
       Vor den Außenwänden oberirdischer Gebäude sind Flächen von Gebäuden und baulichen Anlagen
-      freizuhalten (Abstandsflächen). Ihre Tiefe bemisst sich nach der Wandhöhe H multipliziert mit
-      einem landesrechtlichen Faktor; als Regelwert des Musterbauordnungsrechts gilt 0,4 H mit einer
-      Mindesttiefe von meist 3 m, die Zahlen sind in der ThürBO nachzuschlagen. Die Abstandsflächen
-      müssen grundsätzlich auf dem Baugrundstück selbst liegen und dürfen sich nicht überdecken.
+      freizuhalten (Abstandsflächen). Ihre Tiefe bemisst sich nach der Höhe H (§ 6 Abs. 4 ThürBO) und beträgt 0,4 H, mindestens 3 m (§ 6 Abs. 5 S. 1 ThürBO); in Gewerbe- und Industriegebieten sowie vergleichbaren Sondergebieten genügt 0,2 H, mindestens 3 m, vor Außenwänden von Gebäuden der Gebäudeklassen 1 und 2 mit nicht mehr als drei oberirdischen Geschossen genügen 3 m. Die Abstandsflächen müssen grundsätzlich auf dem Baugrundstück selbst liegen (bis zur Mitte öffentlicher Flächen oder bei Sicherung durch Baulast auf Nachbargrundstücken) und dürfen sich nicht überdecken (§ 6 Abs. 2, 3 ThürBO).
       Zwecke sind ausreichende Belichtung, Belüftung, Brandschutz und Wahrung des Wohnfriedens. Das
       Abstandsflächenrecht ist nachbarschützend, soweit seine Zwecke dem Nachbarn dienen; der Nachbar
-      kann seine Verletzung daher rügen. An der Grenze darf gebaut werden, wenn das Planungsrecht
-      Grenzbebauung vorschreibt oder zulässt (geschlossene Bauweise, § 22 BauNVO). Abweichungen sind
+      kann seine Verletzung daher rügen. Eine Abstandsfläche ist nicht erforderlich vor Außenwänden an der Grundstücksgrenze, wenn nach planungsrechtlichen Vorschriften an die Grenze gebaut werden muss oder darf (§ 6 Abs. 1 S. 3 Nr. 1 ThürBO; geschlossene Bauweise, § 22 BauNVO), und wenn ein Vorhaben nach § 34 Abs. 1 oder 3a BauGB zulässig ist (Nr. 2). Abweichungen sind
       möglich, wenn der Schutzzweck gewahrt bleibt und nachbarliche Interessen angemessen
       berücksichtigt werden.
   norms:
@@ -114,19 +97,17 @@ cards:
   front: >-
       Welche bauaufsichtlichen Eingriffsmaßnahmen gibt es, und wann dürfen sie ergehen?
   back: >-
-      Die Bauaufsichtsbehörde überwacht die Einhaltung des öffentlichen Baurechts und kann nach der
-      ThürBO einschreiten. Baueinstellung: Stilllegung einer Baustelle, die rechtswidrig begonnen
-      wurde; sie setzt formelle Illegalität (fehlende Genehmigung) oder sonstigen Verstoß voraus und
-      dient der Sicherung. Nutzungsuntersagung: Verbot einer rechtswidrigen Nutzung, regelmäßig bei
+      Die Bauaufsichtsbehörde überwacht die Einhaltung des öffentlichen Baurechts und hat die erforderlichen Maßnahmen nach pflichtgemäßem Ermessen zu treffen (§ 61 Abs. 1 ThürBO). Baueinstellung (§ 86 ThürBO): Stilllegung einer Baustelle, die rechtswidrig begonnen wurde; sie setzt formelle Illegalität (fehlende Genehmigung) oder sonstigen Verstoß voraus und
+      dient der Sicherung. Nutzungsuntersagung (§ 87 Abs. 1 S. 2 ThürBO): Verbot einer rechtswidrigen Nutzung, regelmäßig bei
       formeller Illegalität, wenn die Nutzung nicht ohne Weiteres genehmigungsfähig ist.
-      Beseitigungsanordnung: die schärfste Maßnahme; sie setzt grundsätzlich formelle und materielle
+      Beseitigungsanordnung (§ 87 Abs. 1 S. 1 ThürBO, nur wenn nicht auf andere Weise rechtmäßige Zustände hergestellt werden können): die schärfste Maßnahme; sie setzt grundsätzlich formelle und materielle
       Illegalität voraus, weil eine Beseitigung bei materiell legalem Vorhaben unverhältnismäßig wäre.
       Alle Maßnahmen stehen im Ermessen der Behörde und müssen verhältnismäßig sein; Adressaten sind
       Bauherr, Eigentümer oder Nutzer. Ein Anspruch des Nachbarn auf Einschreiten besteht nur
       ausnahmsweise bei Verletzung nachbarschützender Vorschriften und Ermessensreduktion auf Null.
   norms:
   - >-
-      Eingriffsbefugnisse der Bauaufsicht nach der ThürBO (Paragraphen hier nicht angegeben)
+      §§ 61, 86, 87 ThürBO
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -137,10 +118,9 @@ cards:
       Wie unterscheiden sich Abweichung (Bauordnungsrecht) und Ausnahme bzw. Befreiung
       (Bauplanungsrecht)?
   back: >-
-      Im Bauordnungsrecht kann die Bauaufsichtsbehörde Abweichungen von Anforderungen der ThürBO
-      zulassen, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der
+      Im Bauordnungsrecht soll die Bauaufsichtsbehörde Abweichungen von Anforderungen der ThürBO zulassen (§ 73 Abs. 1 ThürBO), wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der
       öffentlich-rechtlich geschützten nachbarlichen Belange mit den öffentlichen Belangen vereinbar
-      sind; die Voraussetzungen im Einzelnen regelt das Landesrecht. Im Bauplanungsrecht lässt § 31
+      sind; die Abweichung ist gesondert in Textform zu beantragen und zu begründen (§ 73 Abs. 2 ThürBO). Im Bauplanungsrecht lässt § 31
       Abs. 1 BauGB Ausnahmen zu, soweit der Bebauungsplan sie vorsieht. Nach § 31 Abs. 2 BauGB ist
       eine Befreiung von Festsetzungen möglich, wenn die Grundzüge der Planung nicht berührt werden
       und einer der Befreiungsgründe (Allgemeinwohl, städtebauliche Vertretbarkeit, offenbar nicht
@@ -150,7 +130,7 @@ cards:
   norms:
   - "§ 31 Abs. 1 BauGB"
   - "§ 31 Abs. 2 BauGB"
-  - "Abweichungsvorschrift der ThürBO (Paragraph hier nicht angegeben)"
+  - "§ 73 ThürBO"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -167,8 +147,7 @@ cards:
       Substanz in wesentlichem Umfang erneuert oder die Nutzung aufgegeben wird; die Identität der
       Anlage muss gewahrt sein. Einen aktiven Bestandsschutz, also einen unmittelbar aus Art. 14 GG
       abgeleiteten Anspruch auf Erweiterung oder Änderung, erkennt das Bundesverwaltungsgericht nicht
-      mehr an. Bei Gefahren für Leben und Gesundheit lassen die Bauordnungen Anpassungsverlangen zu;
-      die Voraussetzungen ergeben sich aus der jeweiligen Landesbauordnung.
+      mehr an. Zur Abwehr von erheblichen Gefahren für Leben und Gesundheit kann die Anpassung bestehender Anlagen verlangt werden (§ 98 Abs. 1 ThürBO).
   norms:
   - "Art. 14 Abs. 1 GG"
   quellen:

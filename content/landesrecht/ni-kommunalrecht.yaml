@@ -21,7 +21,7 @@ cards:
     Garantie die Gemeindehoheiten (Gebiets-, Organisations-, Personal-, Planungs-, Rechtsetzungs- und
     Finanzhoheit). Gesetzliche Eingriffe sind zulässig, wenn sie den Kernbereich wahren und im Randbereich
     verhältnismäßig sind. Die Gemeinde kann sich gegen Eingriffe mit der Kommunalverfassungsbeschwerde
-    (Art. 93 Abs. 1 Nr. 4b GG) und, soweit vorgesehen, vor dem Landesverfassungsgericht wehren.
+    (Art. 93 Abs. 1 Nr. 4b GG) und, soweit vorgesehen, vor dem Niedersächsischen Staatsgerichtshof wehren (kommunale Verfassungsbeschwerde gegen Landesgesetze, Art. 54 Nr. 5 NV).
   norms:
   - Art. 28 Abs. 2 S. 1 GG
   - Art. 93 Abs. 1 Nr. 4b GG
@@ -55,17 +55,19 @@ cards:
   front: Welche Organe hat die Kommune nach dem NKomVG und wie ist die Einheitsspitze ausgestaltet?
   back: >-
     Das NKomVG folgt dem Modell der Einheitsspitze. Hauptorgane sind die Vertretung (Rat in Gemeinden
-    und Städten, Kreistag im Landkreis; § 45 NKomVG), der Verwaltungsausschuss (§ 74 NKomVG) und die Hauptverwaltungsbeamtin
+    und Städten, Kreistag im Landkreis; § 45 NKomVG), der Hauptausschuss (§§ 74, 76 NKomVG) und die Hauptverwaltungsbeamtin
     bzw. der Hauptverwaltungsbeamte (§ 80 NKomVG; Bürgermeister, Oberbürgermeister, Landrat). Der Rat
-    ist das oberste Willensbildungsorgan, der Verwaltungsausschuss bereitet die Ratsbeschlüsse vor und
-    entscheidet in den ihm zugewiesenen Angelegenheiten, der Hauptverwaltungsbeamte leitet die Verwaltung
-    und vertritt die Kommune. Besonderheit: Mehrere Mitgliedsgemeinden können eine Samtgemeinde bilden,
+    ist das oberste Willensbildungsorgan, der Hauptausschuss bereitet die Beschlüsse der Vertretung vor (§ 76 Abs. 1 NKomVG) und
+    entscheidet in den ihm zugewiesenen Angelegenheiten, der Hauptverwaltungsbeamte leitet und beaufsichtigt die Verwaltung (§ 85 Abs. 3 NKomVG) und vertritt die Kommune nach außen (§ 86 NKomVG). Besonderheit: Mehrere Mitgliedsgemeinden können eine Samtgemeinde bilden,
     die bestimmte Aufgaben für ihre Mitgliedsgemeinden wahrnimmt.
   norms:
   - Niedersächsisches Kommunalverfassungsgesetz (NKomVG)
   - § 45 NKomVG
   - § 74 NKomVG
+  - § 76 NKomVG
   - § 80 NKomVG
+  - § 85 Abs. 3 NKomVG
+  - § 86 NKomVG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -75,12 +77,8 @@ cards:
   front: >-
     Wie werden in Niedersachsen die Zuständigkeiten zwischen Vertretung und Verwaltungsspitze abgegrenzt?
   back: >-
-    Die Vertretung entscheidet nach § 58 NKomVG in den Angelegenheiten von grundsätzlicher Bedeutung,
-    insbesondere über Satzungen, den Haushalt, wesentliche Vermögensgeschäfte und die Kommunalunternehmen;
-    sie kann ihr Weisungs- und Kontrollrecht gegenüber der Verwaltung ausüben. Der Verwaltungsausschuss
-    (§ 76 NKomVG) entscheidet über die Angelegenheiten, die nicht der Vertretung oder dem Hauptverwaltungsbeamten
-    zugewiesen sind. Der Hauptverwaltungsbeamte (§ 85 NKomVG) leitet die Verwaltung und ist für die Geschäfte
-    der laufenden Verwaltung und die Auftragsangelegenheiten zuständig. Die Abgrenzung wird in der Hauptsatzung
+    Die Vertretung beschließt nach § 58 Abs. 1 NKomVG ausschließlich über die dort aufgezählten Angelegenheiten, u. a. grundlegende Ziele der Entwicklung der Kommune, Satzungen und Verordnungen, öffentliche Abgaben, die Haushaltssatzung, die Errichtung und Beteiligung an Unternehmen sowie die Verfügung über Vermögen;
+    sie kann ihr Weisungs- und Kontrollrecht gegenüber der Verwaltung ausüben. Der Hauptausschuss (§ 76 Abs. 2 NKomVG) beschließt über die Angelegenheiten, für die weder die Vertretung noch (soweit vorhanden) Stadtbezirksrat, Ortsrat oder Betriebsausschuss noch nach § 85 der Hauptverwaltungsbeamte zuständig ist. Der Hauptverwaltungsbeamte (§ 85 NKomVG) bereitet die Beschlüsse vor, führt sie aus, leitet und beaufsichtigt die Verwaltung und ist u. a. für die ihm in § 85 Abs. 1 zugewiesenen Angelegenheiten zuständig. Die Abgrenzung wird in der Hauptsatzung
     konkretisiert. Ein Handeln des unzuständigen Organs macht die Entscheidung formell rechtswidrig.
   norms:
   - § 58 NKomVG
@@ -95,13 +93,11 @@ cards:
   front: Unter welchen Voraussetzungen ist eine gemeindliche Satzung in Niedersachsen rechtmäßig?
   back: >-
     Eine Satzung ist eine von der Gemeinde im Rahmen ihrer Selbstverwaltung erlassene Rechtsnorm (Art.
-    28 Abs. 2 GG). Prüfung: (1) Ermächtigungsgrundlage: Die allgemeine Satzungsbefugnis der Gemeindeordnung
-    genügt für Regelungen ohne Grundrechtseingriff gegenüber Außenstehenden; Eingriffe in Grundrechte
+    28 Abs. 2 GG). Prüfung: (1) Ermächtigungsgrundlage: Die allgemeine Satzungsbefugnis (§ 10 Abs. 1 NKomVG) genügt für Regelungen ohne Grundrechtseingriff gegenüber Außenstehenden; Eingriffe in Grundrechte
     und Abgabenpflichten erfordern wegen des Vorbehalts des Gesetzes eine besondere gesetzliche Ermächtigung
-    (Wesentlichkeitslehre). (2) Formelle Rechtmäßigkeit: Zuständigkeit der Vertretung, ordnungsgemäßer
+    (Wesentlichkeitslehre). (2) Formelle Rechtmäßigkeit: Zuständigkeit der Vertretung (§ 58 Abs. 1 Nr. 5 NKomVG), ordnungsgemäßer
     Beschluss, Ausfertigung und Bekanntmachung. (3) Materielle Rechtmäßigkeit: Vereinbarkeit mit höherrangigem
-    Recht, Bestimmtheit, Verhältnismäßigkeit und Gleichheitssatz. Rechtsschutz: Inzidentkontrolle oder
-    Normenkontrolle nach § 47 VwGO, soweit das Landesrecht sie vorsieht.
+    Recht, Bestimmtheit, Verhältnismäßigkeit und Gleichheitssatz. Rechtsschutz: Inzidentkontrolle oder Normenkontrolle nach § 47 Abs. 1 Nr. 2 VwGO i. V. m. § 75 NJG (Niedersachsen sieht die Normenkontrolle gegen untergesetzliche Rechtsvorschriften vor).
   norms:
   - Art. 28 Abs. 2 GG
   - § 47 VwGO
@@ -113,15 +109,9 @@ cards:
   type: norm
   front: Wann gilt in Niedersachsen ein Mitwirkungsverbot für Ratsmitglieder?
   back: >-
-    Nach § 41 NKomVG dürfen Abgeordnete der Vertretung weder beraten noch abstimmen, wenn die Entscheidung
-    ihnen selbst, einem Angehörigen (u. a. Ehegatten, Lebenspartner, Verwandte in gerader Linie und weitere
-    im Gesetz genannte Personen) oder einer von ihnen kraft Gesetzes oder rechtsgeschäftlich vertretenen
-    natürlichen oder juristischen Person einen unmittelbaren Vorteil oder Nachteil bringen kann. Es entscheidet
+    Nach § 41 Abs. 1 NKomVG dürfen ehrenamtlich Tätige (auch Abgeordnete der Vertretung) weder beratend noch entscheidend mitwirken, wenn die Entscheidung ihnen selbst, ihrem Ehegatten oder Lebenspartner, ihren Verwandten bis zum dritten oder Verschwägerten bis zum zweiten Grad (letztere während des Bestehens der Ehe oder Lebenspartnerschaft) oder einer von ihnen kraft Gesetzes oder Vollmacht vertretenen Person einen unmittelbaren Vorteil oder Nachteil bringen kann (zusätzlich § 41 Abs. 2 bei entgeltlicher Beschäftigung bei einem Dritten). Es entscheidet
     die objektive Möglichkeit eines Sonderinteresses; auf die tatsächliche Befangenheit kommt es nicht
-    an. Ausnahmen bestehen u. a. für Wahlen und Entscheidungen, die nur ein Gruppeninteresse berühren.
-    Wirkte ein ausgeschlossenes Mitglied mit, ist der Beschluss rechtswidrig bzw. unwirksam, wenn die
-    Mitwirkung für das Abstimmungsergebnis ausschlaggebend war; Heilungs- und Unbeachtlichkeitsregeln
-    sind zu beachten.
+    an. Ausnahmen bestehen u. a. für Wahlen, Beschlüsse über Rechtsnormen und Fälle, in denen jemand nur als Angehöriger einer Berufs- oder Bevölkerungsgruppe betroffen ist (§ 41 Abs. 1 S. 3, Abs. 3 NKomVG). Wirkte ein ausgeschlossenes Mitglied mit, ist der Beschluss unwirksam, wenn die Mitwirkung für das Abstimmungsergebnis entscheidend war (§ 41 Abs. 6 NKomVG); die Unbeachtlichkeitsregel des § 10 Abs. 2 S. 1 gilt entsprechend.
   norms:
   - § 41 NKomVG
   quellen:
@@ -136,8 +126,7 @@ cards:
   back: >-
     Eine öffentliche Einrichtung ist ein von der Gemeinde im öffentlichen Interesse unterhaltenes Angebot
     (z. B. Stadthalle, Friedhof, Schwimmbad), das nach einem Widmungsakt der Allgemeinheit oder einem
-    bestimmten Personenkreis zur Verfügung steht. Die Gemeindeordnung gewährt den Einwohnern im Rahmen
-    des geltenden Rechts einen Anspruch auf Zulassung zur Benutzung. Er besteht nur im Rahmen des Widmungszwecks
+    bestimmten Personenkreis zur Verfügung steht. § 30 Abs. 1 NKomVG gewährt den Einwohnern im Rahmen der bestehenden Vorschriften einen Anspruch auf Zulassung zur Benutzung. Er besteht nur im Rahmen des Widmungszwecks
     und der Kapazität; die Gemeinde darf die Zulassung bei Kapazitätsengpässen nach sachgerechten Kriterien
     beschränken (Gleichbehandlung, Art. 3 Abs. 1 GG). Zweistufigkeit: Die Zulassungsentscheidung ist öffentlich-rechtlich
     (Verwaltungsrechtsweg), die Ausgestaltung der Nutzung kann privatrechtlich erfolgen (Zweistufentheorie).
@@ -157,8 +146,7 @@ cards:
   back: >-
     Die Kommunalaufsicht (§§ 170 ff. NKomVG) ist Rechtsaufsicht in den Selbstverwaltungsangelegenheiten
     (eigener Wirkungskreis) und im übertragenen Wirkungskreis zusätzlich Fachaufsicht, soweit gesetzlich
-    vorgesehen. Die Mittel reichen von Information und Beanstandung über die Anordnung und die Ersatzvornahme
-    bis zur Bestellung eines Beauftragten; sie sind gestuft und müssen verhältnismäßig sein. Aufsichtsbehörde
+    vorgesehen. Die Mittel reichen von Unterrichtung (§ 172) und Beanstandung (§ 173) über die Anordnung und die Ersatzvornahme (§ 174) bis zur Bestellung eines Beauftragten (§ 175); sie sind gestuft und müssen verhältnismäßig sein. Aufsichtsbehörde
     ist je nach Gebietskörperschaft die kommunale Ebene oder das Land. Gegen aufsichtsbehördliche Maßnahmen
     kann sich die Gemeinde mit der Anfechtungsklage wehren; ihre Klagebefugnis folgt aus der Selbstverwaltungsgarantie
     (Art. 28 Abs. 2 GG). Dagegen besteht kein Anspruch Dritter auf aufsichtsbehördliches Einschreiten.
@@ -229,8 +217,7 @@ schemata:
   - label: IV. Rechtsschutz
     children:
     - label: >-
-        1. Außenrechtsstreit: Anfechtungs- oder Verpflichtungsklage; Normenkontrolle nach § 47 VwGO nur,
-        soweit das Landesrecht sie vorsieht
+        1. Außenrechtsstreit: Anfechtungs- oder Verpflichtungsklage; Normenkontrolle nach § 47 Abs. 1 Nr. 2 VwGO i. V. m. § 75 NJG
     - label: >-
         2. Innenrechtsstreit (Kommunalverfassungsstreit): Feststellungs- oder Leistungsklage, § 42 Abs.
         2 VwGO analog

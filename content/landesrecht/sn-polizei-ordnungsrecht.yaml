@@ -14,8 +14,7 @@ cards:
 - slug: sn-por-generalklausel
   type: norm
   front: Wo steht die polizeiliche Generalklausel in Sachsen und was setzt sie voraus?
-  back: 'Fundstelle: die allgemeine Befugnisnorm (Generalklausel) im SächsPVDG für den Polizeivollzugsdienst
-    und im SächsPBG für die Polizeibehörden. Die Generalklausel ermächtigt zu den notwendigen Maßnahmen,
+  back: 'Fundstelle: die allgemeine Befugnisnorm (Generalklausel) in § 12 SächsPVDG für den Polizeivollzugsdienst und in § 12 SächsPBG für die Polizeibehörden. Die Generalklausel ermächtigt zu den notwendigen Maßnahmen,
     um eine im Einzelfall bestehende Gefahr für die öffentliche Sicherheit oder Ordnung abzuwehren. Sie
     ist subsidiär: Greift eine Standardmaßnahme oder ein Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite
     besteht Ermessen, begrenzt durch den Grundsatz der Verhältnismäßigkeit. Zum Schutz privater Rechte
@@ -23,8 +22,8 @@ cards:
     Schutz nicht rechtzeitig zu erlangen ist und ohne die Maßnahme die Vereitelung oder wesentliche Erschwerung
     der Rechtsverwirklichung droht.'
   norms:
-  - SächsPVDG (Polizeivollzugsdienst), Generalklausel
-  - SächsPBG (Polizeibehörden), Generalklausel
+  - § 12 SächsPVDG
+  - § 12 SächsPBG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -41,9 +40,10 @@ cards:
     (Störer: Verhaltens-, Zustands- und Nichtstörer nach SächsPVDG bzw. SächsPBG), 3. Rechtsfolge: Ermessen
     und Verhältnismäßigkeit (geeignet, erforderlich, angemessen).'
   norms:
-  - SächsPVDG (Polizeivollzugsdienst), Generalklausel
-  - SächsPBG (Polizeibehörden), Generalklausel
-  - Verantwortlichkeitsregeln im SächsPVDG und SächsPBG
+  - § 12 SächsPVDG
+  - § 12 SächsPBG
+  - §§ 6, 7, 9 SächsPVDG
+  - §§ 14, 15, 17 SächsPBG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -51,14 +51,13 @@ cards:
 - slug: sn-por-stoerer
   type: norm
   front: Wo sind Verhaltensstörer, Zustandsstörer und Nichtstörer in Sachsen geregelt?
-  back: 'Die Verantwortlichkeit (Verhaltens-, Zustands- und Nichtstörer) ist im SächsPVDG für den Polizeivollzugsdienst
+  back: 'Die Verantwortlichkeit (Verhaltens-, Zustands- und Nichtstörer; §§ 6, 7, 9 SächsPVDG bzw. §§ 14, 15, 17 SächsPBG) ist im SächsPVDG für den Polizeivollzugsdienst
     und im SächsPBG für die Polizeibehörden geregelt. Verhaltensstörer: wer die Gefahr durch sein Verhalten
     verursacht (Theorie der unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer:
-    Inhaber der tatsächlichen Gewalt bzw. Eigentümer einer gefährlichen Sache. Nichtstörer: Inanspruchnahme
-    nur unter den engen Voraussetzungen des polizeilichen Notstands (gegenwärtige erhebliche Gefahr, Störer
-    nicht greifbar, Behörde selbst nicht in der Lage), mit Entschädigungsanspruch.'
+    Inhaber der tatsächlichen Gewalt bzw. Eigentümer einer gefährlichen Sache. Nichtstörer: Inanspruchnahme nur unter den engen Voraussetzungen des polizeilichen Notstands (§ 9 SächsPVDG, § 17 SächsPBG: gegenwärtige Gefahr, Maßnahmen gegen Verantwortliche nicht oder nicht rechtzeitig möglich oder aussichtslos, Behörde kann die Gefahr nicht selbst abwehren, keine erhebliche eigene Gefährdung der Person), mit Entschädigungsanspruch (§ 47 SächsPVDG, § 41 SächsPBG).'
   norms:
-  - Verantwortlichkeitsregeln im SächsPVDG und SächsPBG
+  - §§ 6, 7, 9 SächsPVDG
+  - §§ 14, 15, 17 SächsPBG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -70,10 +69,10 @@ cards:
     nach SächsPVDG. Prüfungsrelevant ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich
     bei den Verwaltungs-/Ordnungsbehörden; der Polizeivollzugsdienst wird tätig, wenn die Abwehr keinen
     Aufschub duldet (Eilfall) oder eine besondere Zuweisung besteht. Ein Handeln der unzuständigen Behörde
-    macht die Maßnahme formell rechtswidrig. Die Eilzuständigkeit der Polizei setzt voraus, dass die zuständige Behörde nicht rechtzeitig handeln kann; die zuständige Stelle ist dann in der Regel unverzüglich zu unterrichten (Einzelheiten nach dem jeweiligen Landesgesetz).'
+    macht die Maßnahme formell rechtswidrig. Polizeibehörden sind die Staatsministerien, die Landesdirektion Sachsen, die Landratsämter und Kreisfreien Städte sowie die Gemeinden (§ 1 Abs. 1 SächsPBG); sachlich zuständig sind regelmäßig die Ortspolizeibehörden (§ 6 Abs. 1 SächsPBG). Der Polizeivollzugsdienst wird nur tätig, soweit die Gefahrenabwehr durch die Polizeibehörden nicht oder nicht rechtzeitig möglich erscheint (§ 2 Abs. 3 SächsPVDG); er trifft dann die erforderlichen unverzüglichen Maßnahmen in eigener Zuständigkeit und unterrichtet die zuständige Stelle unverzüglich (§ 3 SächsPVDG). Innerhalb der Polizeibehörden gilt bei Gefahr im Verzug § 7 SächsPBG (Wahrnehmung durch übergeordnete Behörden, Unterrichtung der zuständigen Behörde).'
   norms:
-  - Sächsisches Polizeivollzugsdienstgesetz (SächsPVDG) und Sächsisches Polizeibehördengesetz (SächsPBG)
-    - seit 2020 anstelle des SächsPolG
+  - § 2 Abs. 3 SächsPVDG
+  - § 7 SächsPBG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -83,8 +82,7 @@ cards:
   front: Nach welchem Gesetz wird eine Gefahrenabwehrverfügung in Sachsen vollstreckt?
   back: 'Sächsisches Verwaltungsvollstreckungsgesetz (SächsVwVG). Regelfall ist das gestreckte Verfahren:
     Grundverfügung - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme, Zwangsgeld,
-    unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausführung ohne vorausgehenden
-    Verwaltungsakt möglich; die Kosten trägt der Pflichtige. Voraussetzungen des gestreckten Verfahrens sind ein wirksamer und vollstreckbarer Verwaltungsakt (unanfechtbar oder sofort vollziehbar), die Androhung mit angemessener Frist und die Festsetzung. Das Zwangsmittel muss verhältnismäßig sein, unmittelbarer Zwang ist nur letztes Mittel. Die Kosten werden dem Pflichtigen durch Kostenbescheid auferlegt.'
+    unmittelbarer Zwang). Zwangsmittel, Androhung und Vollstreckung bei Gefahr im Verzug regeln §§ 19 bis 25 SächsVwVG (Abweichung von der Androhung bei unmittelbar bevorstehender Gefahr: § 21 SächsVwVG); die unmittelbare Ausführung ohne vorausgehenden Verwaltungsakt regeln § 8 SächsPVDG und § 16 SächsPBG. Die Kosten der Ersatzvornahme trägt der Pflichtige (§ 24 SächsVwVG), die der unmittelbaren Ausführung der Verantwortliche (§ 8 Abs. 2 SächsPVDG, § 16 Abs. 2 SächsPBG). Voraussetzungen des gestreckten Verfahrens sind ein wirksamer und vollstreckbarer Verwaltungsakt (unanfechtbar oder sofort vollziehbar), die Androhung mit angemessener Frist und die Festsetzung. Das Zwangsmittel muss verhältnismäßig sein, unmittelbarer Zwang ist nur letztes Mittel. Die Kosten werden dem Pflichtigen durch Kostenbescheid auferlegt.'
   norms:
   - Sächsisches Verwaltungsvollstreckungsgesetz (SächsVwVG)
   quellen:
@@ -108,8 +106,8 @@ cards:
       Gefahrerforschungseingriff in Betracht. Welche Qualifikation eine Standardmaßnahme verlangt,
       ergibt sich aus ihrem Tatbestand.
   norms:
-  - "SächsPVDG (Polizeivollzugsdienst), Generalklausel"
-  - "SächsPBG (Polizeibehörden), Generalklausel"
+  - "§ 12 SächsPVDG"
+  - "§ 12 SächsPBG"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -131,8 +129,8 @@ cards:
       wer den Anschein zurechenbar veranlasst hat (etwa Fehlalarm durch Fahrlässigkeit), trägt die
       Kosten. Anderer Ansatz: Die Rechtmäßigkeit der Maßnahme schließe jeden Ausgleich aus.
   norms:
-  - "SächsPVDG (Polizeivollzugsdienst), Generalklausel"
-  - "SächsPBG (Polizeibehörden), Generalklausel"
+  - "§ 12 SächsPVDG"
+  - "§ 12 SächsPBG"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -146,7 +144,7 @@ cards:
       Standardmaßnahmen sind typisierte Eingriffsbefugnisse mit eigenem Tatbestand: Befragung und
       Auskunftspflicht, Vorladung, Identitätsfeststellung, Platzverweisung und Aufenthaltsverbot,
       Gewahrsam, Durchsuchung von Personen und Sachen, Betreten und Durchsuchen von Wohnungen sowie
-      Sicherstellung und Beschlagnahme. Sie sind im SächsPVDG geregelt; ob und in welchem Umfang die Befugnisse auch den Ordnungs- bzw. Polizeibehörden zustehen, richtet sich nach dem jeweiligen Landesgesetz. Sie
+      Sicherstellung und Beschlagnahme. Sie sind für den Polizeivollzugsdienst im SächsPVDG (§§ 13 ff.; Platzverweisung § 18, Aufenthaltsverbot § 21, Gewahrsam §§ 22, 23) und für die Polizeibehörden im SächsPBG (§§ 18 ff.; Platzverweisung § 20) geregelt; Gewahrsam und Aufenthaltsverbot kennt das SächsPBG nicht. Die Generalklauseln stehen in § 12 SächsPVDG bzw. § 12 SächsPBG. Sie
       gehen der Generalklausel als speziellere Normen vor; ist ihr Tatbestand nicht erfüllt, darf
       nicht ohne Weiteres auf die Generalklausel ausgewichen werden, soweit die Standardmaßnahme die
       Materie abschließend regelt. Verfassungsrechtliche Vorgaben sind zu beachten: Gewahrsam verlangt
@@ -154,11 +152,12 @@ cards:
       grundsätzlich eine richterliche Anordnung (Art. 13 Abs. 2 GG), ihr Betreten zur Gefahrenabwehr
       ist an Art. 13 Abs. 7 GG zu messen.
   norms:
-  - "Standardbefugnisse des SächsPVDG (Paragraphen hier nicht angegeben)"
+  - "§§ 13 ff. SächsPVDG"
+  - "§§ 18 ff. SächsPBG"
   - "Art. 104 Abs. 2 GG"
   - "Art. 13 Abs. 2 GG"
   - "Art. 13 Abs. 7 GG"
-  - "SächsPVDG (Polizeivollzugsdienst), Generalklausel"
+  - "§ 12 SächsPVDG"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -180,7 +179,8 @@ cards:
       zwangsläufige Folge seines Tuns herbeiführt. Die Gegenansicht lehnt die Figur ab, weil sie die
       Unmittelbarkeit auflöse und die Verantwortlichkeit nicht gesetzlich gedeckt sei.
   norms:
-  - "Verantwortlichkeitsregeln im SächsPVDG und SächsPBG"
+  - "§§ 6, 7, 9 SächsPVDG"
+  - "§§ 14, 15, 17 SächsPBG"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -194,17 +194,14 @@ cards:
       Regelfall ist das gestreckte Verfahren: wirksame und vollstreckbare Grundverfügung (unanfechtbar
       oder sofort vollziehbar, § 80 Abs. 2 VwGO), Androhung des Zwangsmittels mit angemessener Frist,
       Festsetzung, Anwendung. Zwangsmittel sind Ersatzvornahme, Zwangsgeld und als letztes Mittel
-      unmittelbarer Zwang; sie müssen verhältnismäßig sein. Das Sächsische
-      Verwaltungsvollstreckungsgesetz (SächsVwVG) regelt den Verwaltungszwang; für den
-      Polizeivollzugsdienst enthält das SächsPVDG ergänzende Vorschriften zum unmittelbaren Zwang. Bei
-      gegenwärtiger Gefahr kann die Behörde im Sofortvollzug (unmittelbare Ausführung) ohne
-      vorausgehenden Verwaltungsakt handeln, wenn die Maßnahme zur Abwehr der Gefahr notwendig ist und
+      unmittelbarer Zwang; sie müssen verhältnismäßig sein. Das Sächsische Verwaltungsvollstreckungsgesetz (SächsVwVG) regelt den Verwaltungszwang (Zwangsmittel § 19, Androhung § 20, Zwangsgeld § 22, Ersatzvornahme § 24, unmittelbarer Zwang § 25 SächsVwVG); für den
+      Polizeivollzugsdienst enthält das SächsPVDG ergänzende Vorschriften zum unmittelbaren Zwang. Bei gegenwärtiger Gefahr kann die Behörde im Sofortvollzug (unmittelbare Ausführung, § 8 SächsPVDG, § 16 SächsPBG; Verfahrenserleichterungen bei Gefahr im Verzug § 21 SächsVwVG) ohne vorausgehenden Verwaltungsakt handeln, wenn die Maßnahme zur Abwehr der Gefahr notwendig ist und
       die Verantwortlichen nicht rechtzeitig herangezogen werden können. Typische Klausurkonstellation
       ist das Abschleppen eines Fahrzeugs; geprüft wird dann, ob die Grundverfügung, etwa ein
       Verkehrszeichen, wirksam war, ob Androhung und Festsetzung entbehrlich waren und ob das
       Zwangsmittel verhältnismäßig war.
   norms:
-  - "Sächsisches Verwaltungsvollstreckungsgesetz (SächsVwVG)"
+  - "§§ 19 ff. SächsVwVG"
   - "§ 80 Abs. 2 S. 1 Nr. 2 VwGO"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
@@ -217,9 +214,7 @@ cards:
       Grenzen der Kostenhaftung?
   back: >-
       Die Kosten einer Ersatzvornahme, des unmittelbaren Zwangs oder einer unmittelbaren Ausführung
-      trägt grundsätzlich der Pflichtige bzw. der für die Gefahr Verantwortliche; sie werden durch
-      Kostenbescheid (Leistungsbescheid) geltend gemacht und nach den Vorschriften der
-      Verwaltungsvollstreckung beigetrieben. Bei Sofortvollzug ohne Grundverfügung prüft die
+      trägt grundsätzlich der Pflichtige bzw. der für die Gefahr Verantwortliche; sie werden durch Kostenbescheid (Leistungsbescheid; bei der Ersatzvornahme § 24 Abs. 3 SächsVwVG, bei der unmittelbaren Ausführung § 8 Abs. 2 SächsPVDG, § 16 Abs. 2 SächsPBG) geltend gemacht und nach den Vorschriften der Verwaltungsvollstreckung beigetrieben. Die Entschädigung des Nichtstörers regeln § 47 SächsPVDG und § 41 SächsPBG. Bei Sofortvollzug ohne Grundverfügung prüft die
       Kostenentscheidung inzident, ob die Maßnahme rechtmäßig gewesen wäre, insbesondere ob eine
       Gefahr vorlag, der Kostenschuldner Störer war und die Maßnahme verhältnismäßig war. Für den
       Zustandsstörer ist die Kostenhaftung nach der Rechtsprechung des Bundesverfassungsgerichts aus
@@ -230,7 +225,7 @@ cards:
   norms:
   - "Art. 14 Abs. 1 GG"
   - "Art. 14 Abs. 2 GG"
-  - "Sächsisches Verwaltungsvollstreckungsgesetz (SächsVwVG)"
+  - "§§ 19 ff. SächsVwVG"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -253,8 +248,8 @@ cards:
       allem bei Eilbedürftigkeit, wenn die Polizeibehörde nicht rechtzeitig handeln kann. Ältere
       Lernmaterialien, die noch ein einheitliches SächsPolG zitieren, sind überholt.
   norms:
-  - "SächsPVDG (Polizeivollzugsdienst), Generalklausel"
-  - "SächsPBG (Polizeibehörden), Generalklausel"
+  - "§ 12 SächsPVDG"
+  - "§ 12 SächsPBG"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -264,8 +259,8 @@ schemata:
   title: >-
       Gefahrenabwehrmaßnahme in Sachsen: Zuständigkeit von Polizeibehörde und Polizeivollzugsdienst
   norms:
-  - "SächsPVDG (Polizeivollzugsdienst), Generalklausel"
-  - "SächsPBG (Polizeibehörden), Generalklausel"
+  - "§ 12 SächsPVDG"
+  - "§ 12 SächsPBG"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -317,8 +312,7 @@ faelle:
         zuständig, hier das Ordnungsamt der Stadt.
   - prompt: "Durfte der Polizeivollzugsdienst trotzdem handeln?"
     erwartung: >-
-        Ja, kraft Eilzuständigkeit: Die Gefahr ist gegenwärtig, die zuständige Polizeibehörde kann nicht
-        rechtzeitig tätig werden. Die zuständige Stelle ist über das Eingreifen zu unterrichten.
+        Ja, kraft Eilzuständigkeit (§ 2 Abs. 3, § 3 SächsPVDG): Die Gefahr ist gegenwärtig, die zuständige Polizeibehörde kann nicht rechtzeitig tätig werden. Die Beamten treffen die erforderlichen unverzüglichen Maßnahmen und haben die zuständige Stelle unverzüglich zu unterrichten.
   - prompt: "Liegt eine Gefahr vor, und ist E richtiger Adressat?"
     erwartung: >-
         Es liegt eine konkrete und gegenwärtige Gefahr für Leib und Leben der Passanten sowie für

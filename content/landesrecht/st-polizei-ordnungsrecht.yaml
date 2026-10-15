@@ -62,11 +62,14 @@ cards:
   type: definition
   front: Wer ist in Sachsen-Anhalt für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde oder
     Polizei?
-  back: 'Sicherheitsbehörden und Polizei nach dem SOG LSA; Polizei bei Eilbedürftigkeit. Prüfungsrelevant
+  back: 'Sicherheitsbehörden (allgemeine Sicherheitsbehörden: Gemeinden, Landkreise, Landesverwaltungsamt, § 84 Abs. 1 SOG LSA; sachlich grundsätzlich die Gemeinden, § 89 Abs. 2 SOG LSA) und Polizei nach dem SOG LSA; die Polizei wird außer bei der vorbeugenden Bekämpfung von Straftaten nur tätig, soweit die Gefahrenabwehr durch die Sicherheitsbehörden nicht oder nicht rechtzeitig möglich erscheint (§ 2 Abs. 2 SOG LSA); Polizei bei Eilbedürftigkeit. Prüfungsrelevant
     ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich bei den Verwaltungs-/Ordnungsbehörden;
     der Polizeivollzugsdienst wird tätig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere
     Zuweisung besteht. Ein Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig. Die Eilzuständigkeit der Polizei setzt voraus, dass die zuständige Behörde nicht rechtzeitig handeln kann; die zuständige Stelle ist dann in der Regel unverzüglich zu unterrichten (Einzelheiten nach dem jeweiligen Landesgesetz).'
   norms:
+  - § 2 Abs. 2 SOG LSA
+  - § 84 Abs. 1 SOG LSA
+  - § 89 Abs. 2 SOG LSA
   - Gesetz über die öffentliche Sicherheit und Ordnung des Landes Sachsen-Anhalt (SOG LSA)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -75,13 +78,14 @@ cards:
 - slug: st-por-vollstreckung
   type: norm
   front: Nach welchem Gesetz wird eine Gefahrenabwehrverfügung in Sachsen-Anhalt vollstreckt?
-  back: 'Verwaltungsvollstreckungsgesetz Sachsen-Anhalt (VwVG LSA); Zwang nach SOG LSA. Regelfall ist
+  back: 'Verwaltungszwang der Sicherheitsbehörden und der Polizei: §§ 53 ff. SOG LSA (Zwangsmittel, Androhung); unmittelbare Ausführung: § 9 SOG LSA; Kostenbeitreibung im Verwaltungsvollstreckungsverfahren (VwVG LSA). Regelfall ist
     das gestreckte Verfahren: Grundverfügung - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme,
     Zwangsgeld, unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausführung
     ohne vorausgehenden Verwaltungsakt möglich; die Kosten trägt der Pflichtige. Voraussetzungen des gestreckten Verfahrens sind ein wirksamer und vollstreckbarer Verwaltungsakt (unanfechtbar oder sofort vollziehbar), die Androhung mit angemessener Frist und die Festsetzung. Das Zwangsmittel muss verhältnismäßig sein, unmittelbarer Zwang ist nur letztes Mittel. Die Kosten werden dem Pflichtigen durch Kostenbescheid auferlegt.'
   norms:
+  - §§ 53 ff. SOG LSA
+  - § 9 SOG LSA
   - Verwaltungsvollstreckungsgesetz Sachsen-Anhalt (VwVG LSA)
-  - Zwang nach SOG LSA
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -96,7 +100,7 @@ cards:
       maßgeblich ist die Prognose ex ante aus Sicht eines besonnenen Amtswalters. Konkrete Gefahr: im
       Einzelfall drohend, sie trägt Einzelmaßnahmen (Generalklausel, Standardmaßnahmen). Abstrakte
       Gefahr: nach allgemeiner Lebenserfahrung typischerweise drohend, sie trägt nur den Erlass einer
-      Verordnung zur Gefahrenabwehr (SOG LSA). Qualifizierte Gefahren erhöhen die Anforderungen:
+      Gefahrenabwehrverordnung (§ 94 SOG LSA). Qualifizierte Gefahren erhöhen die Anforderungen:
       erhebliche Gefahr (bedeutendes Rechtsgut), gegenwärtige Gefahr (Schadenseintritt hat begonnen
       oder steht unmittelbar bevor), Gefahr im Verzug (Abwarten würde den Erfolg der Maßnahme
       gefährden). Vom Gefahrenverdacht spricht man, wenn unklar ist, ob ein Schaden droht; hier kommt
@@ -139,7 +143,7 @@ cards:
       Standardmaßnahmen sind typisierte Eingriffsbefugnisse mit eigenem Tatbestand: Befragung und
       Auskunftspflicht, Vorladung, Identitätsfeststellung, Platzverweisung und Aufenthaltsverbot,
       Gewahrsam, Durchsuchung von Personen und Sachen, Betreten und Durchsuchen von Wohnungen sowie
-      Sicherstellung und Beschlagnahme. Sie sind im SOG LSA geregelt; ob und in welchem Umfang die Befugnisse auch den Ordnungs- bzw. Polizeibehörden zustehen, richtet sich nach dem jeweiligen Landesgesetz. Sie
+      Sicherstellung und Beschlagnahme. Sie stehen im SOG LSA, das Sicherheitsbehörden und Polizei gemeinsam erfasst (z. B. § 20 Identitätsfeststellung, § 36 Platzverweisung); der Gewahrsam (§ 37 SOG LSA) ist der Polizei vorbehalten. Sie
       gehen der Generalklausel als speziellere Normen vor; ist ihr Tatbestand nicht erfüllt, darf
       nicht ohne Weiteres auf die Generalklausel ausgewichen werden, soweit die Standardmaßnahme die
       Materie abschließend regelt. Verfassungsrechtliche Vorgaben sind zu beachten: Gewahrsam verlangt
@@ -147,7 +151,7 @@ cards:
       grundsätzlich eine richterliche Anordnung (Art. 13 Abs. 2 GG), ihr Betreten zur Gefahrenabwehr
       ist an Art. 13 Abs. 7 GG zu messen.
   norms:
-  - "Standardbefugnisse des SOG LSA (Paragraphen hier nicht angegeben)"
+  - "§§ 14 ff. SOG LSA"
   - "Art. 104 Abs. 2 GG"
   - "Art. 13 Abs. 2 GG"
   - "Art. 13 Abs. 7 GG"
@@ -189,15 +193,18 @@ cards:
       Regelfall ist das gestreckte Verfahren: wirksame und vollstreckbare Grundverfügung (unanfechtbar
       oder sofort vollziehbar, § 80 Abs. 2 VwGO), Androhung des Zwangsmittels mit angemessener Frist,
       Festsetzung, Anwendung. Zwangsmittel sind Ersatzvornahme, Zwangsgeld und als letztes Mittel
-      unmittelbarer Zwang; sie müssen verhältnismäßig sein. Das Verwaltungsvollstreckungsgesetz
-      Sachsen-Anhalt (VwVG LSA) regelt den Verwaltungszwang; ergänzend enthält das SOG LSA
-      Vorschriften zum Zwang. Bei gegenwärtiger Gefahr kann die Behörde im Sofortvollzug (unmittelbare
+      unmittelbarer Zwang; sie müssen verhältnismäßig sein. Den Verwaltungszwang der
+      Sicherheitsbehörden und der Polizei regeln die §§ 53 ff. SOG LSA (Androhung: § 59 SOG LSA);
+      das Verwaltungsvollstreckungsgesetz Sachsen-Anhalt (VwVG LSA) kommt bei der Beitreibung der Kosten
+      im Verwaltungsvollstreckungsverfahren in Betracht (§ 9 Abs. 2 S. 4, § 55 Abs. 2 S. 2 SOG LSA). Bei gegenwärtiger Gefahr kann die Behörde im Sofortvollzug (unmittelbare
       Ausführung) ohne vorausgehenden Verwaltungsakt handeln, wenn die Maßnahme zur Abwehr der Gefahr
       notwendig ist und die Verantwortlichen nicht rechtzeitig herangezogen werden können. Typische
       Klausurkonstellation ist das Abschleppen eines Fahrzeugs; geprüft wird dann, ob die
       Grundverfügung, etwa ein Verkehrszeichen, wirksam war, ob Androhung und Festsetzung entbehrlich
       waren und ob das Zwangsmittel verhältnismäßig war.
   norms:
+  - "§§ 53 ff. SOG LSA"
+  - "§ 9 SOG LSA"
   - "Verwaltungsvollstreckungsgesetz Sachsen-Anhalt (VwVG LSA)"
   - "§ 80 Abs. 2 S. 1 Nr. 2 VwGO"
   quellen:

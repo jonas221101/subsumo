@@ -14,8 +14,7 @@ cards:
 - slug: st-lra-vwvfg
   type: norm
   front: Welches Verwaltungsverfahrensgesetz gilt für Landesbehörden in Sachsen-Anhalt?
-  back: Verwaltungsverfahrensgesetz Sachsen-Anhalt (VwVfG LSA) - Verweisung auf das VwVfG des Bundes.
-    Das VwVfG des Bundes gilt nur für Bundesbehörden (§ 1 VwVfG); für Landes- und Kommunalbehörden ist
+  back: Verwaltungsverfahrensgesetz Sachsen-Anhalt (VwVfG LSA) - Verweisung auf das VwVfG des Bundes (§ 1 Abs. 1 VwVfG LSA). Das VwVfG des Bundes gilt nur für Bundesbehörden (§ 1 VwVfG); für Landes- und Kommunalbehörden ist
     das Landesgesetz maßgeblich. Bei Verweisungsgesetzen werden die Bundesnormen 'entsprechend' angewendet
     und sind so zu zitieren (z. B. '§ 35 VwVfG i. V. m. § 1 des Landesgesetzes'), bei Vollgesetzen ist
     die Landesnorm selbst zu zitieren.
@@ -28,12 +27,11 @@ cards:
 - slug: st-lra-verfassungsgericht
   type: norm
   front: Gibt es in Sachsen-Anhalt eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
-  back: 'Ja - Art. 75 Nr. 6 Verf LSA. Zuständiges Gericht: Landesverfassungsgericht Sachsen-Anhalt auf
-    Grundlage der Verfassung des Landes Sachsen-Anhalt (Verf LSA). Verfahrensgegenstand ist nur die Verletzung
+  back: 'Ja, aber nur gegen Landesgesetze: Art. 75 Nr. 6 Verf LSA (Verfassungsbeschwerde von jedermann mit der Behauptung, durch ein Landesgesetz unmittelbar in Grundrechten, grundrechtsgleichen oder staatsbürgerlichen Rechten verletzt zu sein; Nr. 7: kommunale Verfassungsbeschwerde). Gegen Verwaltungsakte oder Gerichtsentscheidungen gibt es keine Individualverfassungsbeschwerde zum Landesverfassungsgericht. Zuständiges Gericht: Landesverfassungsgericht Sachsen-Anhalt auf Grundlage der Verfassung des Landes Sachsen-Anhalt (Verf LSA). Verfahrensgegenstand ist nur die Verletzung
     von Landesgrundrechten durch Landesstaatsgewalt; Bundesrecht ist Prüfungsmaßstab nur, soweit die Landesverfassung
     darauf verweist. Daneben steht immer die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
   norms:
-  - Verfassung des Landes Sachsen-Anhalt (Verf LSA)
+  - Art. 75 Nr. 6, 7 Verf LSA
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion

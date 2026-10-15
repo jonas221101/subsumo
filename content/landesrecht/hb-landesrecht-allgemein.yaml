@@ -14,13 +14,14 @@ cards:
 - slug: hb-lra-vwvfg
   type: norm
   front: Welches Verwaltungsverfahrensgesetz gilt für Landesbehörden in Bremen?
-  back: Bremisches Verwaltungsverfahrensgesetz (BremVwVfG) - Vollgesetz. Das VwVfG des Bundes gilt nur
-    für Bundesbehörden (§ 1 VwVfG); für Landes- und Kommunalbehörden ist das Landesgesetz maßgeblich.
-    Bei Verweisungsgesetzen werden die Bundesnormen 'entsprechend' angewendet und sind so zu zitieren
-    (z. B. '§ 35 VwVfG i. V. m. § 1 des Landesgesetzes'), bei Vollgesetzen ist die Landesnorm selbst zu
-    zitieren.
+  back: Bremisches Verwaltungsverfahrensgesetz (BremVwVfG) - Verweisungsgesetz. Das VwVfG des Bundes gilt
+    unmittelbar nur für Bundesbehörden (§ 1 VwVfG); für Landes- und Kommunalbehörden ordnet § 1 Abs. 1
+    BremVwVfG die Geltung des Bundes-VwVfG in der jeweils geltenden Fassung an (mit Ausnahme der §§ 1,
+    2, 94 und 100 VwVfG, soweit keine inhaltsgleichen oder entgegenstehenden Landesvorschriften bestehen).
+    Zu zitieren ist daher z. B. '§ 35 VwVfG i. V. m. § 1 BremVwVfG'; bei echten Vollgesetzen anderer
+    Länder ist dagegen die Landesnorm selbst zu zitieren.
   norms:
-  - Bremisches Verwaltungsverfahrensgesetz (BremVwVfG) - Vollgesetz
+  - Bremisches Verwaltungsverfahrensgesetz (BremVwVfG) - Verweisungsgesetz
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -28,13 +29,20 @@ cards:
 - slug: hb-lra-verfassungsgericht
   type: norm
   front: Gibt es in Bremen eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
-  back: 'Nein - keine Individualverfassungsbeschwerde zum Staatsgerichtshof. Zuständiges Gericht: Staatsgerichtshof
-    der Freien Hansestadt Bremen auf Grundlage der Landesverfassung der Freien Hansestadt Bremen (BremLV).
-    Verfahrensgegenstand ist nur die Verletzung von Landesgrundrechten durch Landesstaatsgewalt; Bundesrecht
-    ist Prüfungsmaßstab nur, soweit die Landesverfassung darauf verweist. Daneben steht immer die Verfassungsbeschwerde
-    zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
+  back: 'Nein. Das bremische Landesverfassungsgericht ist der Staatsgerichtshof (Art. 139 BremLV; Gesetz
+    über den Staatsgerichtshof, StGHG). Seine Zuständigkeiten sind in Art. 140 und 142 BremLV und § 10
+    StGHG geregelt: Anklage gegen Senatsmitglieder (Art. 111 BremLV), Zweifelsfragen über die Auslegung
+    der Verfassung und Organstreitigkeiten auf Antrag bestimmter Antragsberechtigter (Senat, Bürgerschaft,
+    ein Fünftel ihrer Mitglieder, öffentlich-rechtliche Körperschaften des Landes; Art. 140 Abs. 1 BremLV,
+    § 24 StGHG), konkrete Normenkontrolle auf Vorlage eines Gerichts (Art. 142 BremLV, § 28 StGHG) sowie
+    weitere gesetzlich vorgesehene Fälle wie Wahlprüfungsbeschwerde, Zulassung von Volksbegehren und
+    Bürgerantrag (§§ 30 bis 32 StGHG). Eine Verfassungsbeschwerde des Einzelnen wegen Verletzung von
+    Landesgrundrechten kennen weder die Landesverfassung noch das StGHG; Rechtsschutz gegen Verwaltungsakte
+    läuft über die Fachgerichte (Art. 141 BremLV). Gegen Akte der Landesstaatsgewalt steht dem Einzelnen
+    die Verfassungsbeschwerde zum BVerfG offen (Art. 93 Abs. 1 Nr. 4a GG).'
   norms:
   - Landesverfassung der Freien Hansestadt Bremen (BremLV)
+  - Gesetz über den Staatsgerichtshof (StGHG)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion

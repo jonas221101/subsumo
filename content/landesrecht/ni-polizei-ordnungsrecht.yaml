@@ -14,14 +14,14 @@ cards:
 - slug: ni-por-generalklausel
   type: norm
   front: Wo steht die polizeiliche Generalklausel in Niedersachsen und was setzt sie voraus?
-  back: 'Fundstelle: § 11 NPOG. Die Generalklausel ermächtigt zu den notwendigen Maßnahmen, um eine im
-    Einzelfall bestehende Gefahr abzuwehren. Sie ist subsidiär: Greift eine Standardmaßnahme oder ein
+  back: 'Fundstelle: § 11 NPOG. Die Generalklausel ermächtigt die Verwaltungsbehörden und die Polizei zu den notwendigen Maßnahmen, um eine Gefahr (§ 2 Nr. 1 NPOG: konkrete Gefahr für die öffentliche Sicherheit oder Ordnung) abzuwehren, soweit nicht die Vorschriften des Dritten Teils die Befugnisse besonders regeln. Sie ist subsidiär: Greift eine Standardmaßnahme oder ein
     Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite besteht Ermessen, begrenzt durch den Grundsatz
-    der Verhältnismäßigkeit. Zum Schutz privater Rechte wird die Gefahrenabwehr nur subsidiär tätig: Ein
+    der Verhältnismäßigkeit. Zum Schutz privater Rechte wird die Gefahrenabwehr nur subsidiär tätig (§ 1 Abs. 3 NPOG): Ein
     Einschreiten kommt nur in Betracht, wenn gerichtlicher Schutz nicht rechtzeitig zu erlangen ist und
     ohne die Maßnahme die Vereitelung oder wesentliche Erschwerung der Rechtsverwirklichung droht.'
   norms:
   - § 11 NPOG
+  - § 1 Abs. 3 NPOG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -66,12 +66,10 @@ cards:
   type: norm
   front: Wo sind Verhaltensstörer, Zustandsstörer und Nichtstörer in Niedersachsen geregelt?
   back: '§§ 6, 7, 8 NPOG. Verhaltensstörer: wer die Gefahr durch sein Verhalten verursacht (Theorie der
-    unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer: Inhaber der tatsächlichen
-    Gewalt bzw. Eigentümer einer gefährlichen Sache. Nichtstörer: Inanspruchnahme nur unter den engen
-    Voraussetzungen des polizeilichen Notstands (gegenwärtige erhebliche Gefahr, Störer nicht greifbar,
-    Behörde selbst nicht in der Lage), mit Entschädigungsanspruch.'
+    unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer (§ 7 NPOG): primär der Inhaber der tatsächlichen Gewalt, daneben der Eigentümer bzw. sonst an der Sache Berechtigte (nicht bei Ausübung der Gewalt gegen dessen Willen). Nichtstörer (§ 8 NPOG): Inanspruchnahme nur unter den engen Voraussetzungen des polizeilichen Notstands (gegenwärtige erhebliche Gefahr, Maßnahmen gegen Verantwortliche nicht oder nicht rechtzeitig möglich, Behörde kann die Gefahr nicht selbst abwehren, keine erhebliche eigene Gefährdung); Anspruch auf angemessenen Ausgleich nach § 80 Abs. 1 NPOG.'
   norms:
   - §§ 6, 7, 8 NPOG
+  - § 80 Abs. 1 NPOG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -80,15 +78,14 @@ cards:
   type: definition
   front: Wer ist in Niedersachsen für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde oder
     Polizei?
-  back: 'Verwaltungsbehörden (Gemeinden, Landkreise) und Polizei nach dem NPOG; Polizei bei Eilbedürftigkeit
-    (Eilzuständigkeit). Prüfungsrelevant ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich
+  back: 'Verwaltungsbehörden und Polizei haben gemeinsam die Aufgabe der Gefahrenabwehr (§ 1 Abs. 1 NPOG); die Polizei wird tätig, soweit die Gefahrenabwehr durch die Verwaltungsbehörden nicht oder nicht rechtzeitig möglich erscheint (§ 1 Abs. 2 NPOG, Eilzuständigkeit). Prüfungsrelevant ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich
     bei den Verwaltungs-/Ordnungsbehörden; der Polizeivollzugsdienst wird tätig, wenn die Abwehr keinen
     Aufschub duldet (Eilfall) oder eine besondere Zuweisung besteht. Ein Handeln der unzuständigen Behörde
     macht die Maßnahme formell rechtswidrig. Die Verwaltungsbehörden sind im Regelfall die Gemeinden und
     Landkreise in ihrem Zuständigkeitsbereich; die Polizei handelt im Eilfall, ohne dass die Zuständigkeit
     der Verwaltungsbehörde dadurch dauerhaft verdrängt wird.'
   norms:
-  - Niedersächsisches Polizei- und Ordnungsbehördengesetz (NPOG)
+  - § 1 Abs. 1, 2 NPOG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -96,8 +93,7 @@ cards:
 - slug: ni-por-vollstreckung
   type: norm
   front: Nach welchem Gesetz wird eine Gefahrenabwehrverfügung in Niedersachsen vollstreckt?
-  back: 'Niedersächsisches Verwaltungsvollstreckungsgesetz (NVwVG) in Verbindung mit den Zwangsvorschriften
-    des NPOG. Regelfall ist das gestreckte Verfahren: Grundverfügung - Androhung - Festsetzung - Anwendung
+  back: 'Die Zwangsvorschriften des NPOG (§§ 64 ff.: Zwangsmittel Ersatzvornahme § 66, Zwangsgeld § 67, unmittelbarer Zwang § 69; Androhung § 70); Zwangsmittel ohne vorausgehenden Verwaltungsakt regelt § 64 Abs. 2 NPOG. Beitreibung von Geldforderungen richtet sich nach dem Niedersächsischen Verwaltungsvollstreckungsgesetz (NVwVG). Regelfall ist das gestreckte Verfahren: Grundverfügung - Androhung - Festsetzung - Anwendung
     des Zwangsmittels (Ersatzvornahme, Zwangsgeld, unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug
     bzw. unmittelbare Ausführung ohne vorausgehenden Verwaltungsakt möglich; die Kosten trägt der Pflichtige.
     Zwangsmittel müssen angedroht werden und verhältnismäßig sein; die Androhung kann mit der Grundverfügung
@@ -119,11 +115,10 @@ cards:
     (typisierend, für Fallgruppen) ist Grundlage für Gefahrenabwehrverordnungen. Die Prognose erfolgt
     ex ante aus der Sicht eines verständigen, durchschnittlich erfahrenen Amtswalters auf Grundlage der
     im Handlungszeitpunkt erkennbaren Tatsachen. Nach der Je-desto-Formel sinken die Anforderungen an
-    die Wahrscheinlichkeit, je höher der drohende Schaden und je bedeutender das Schutzgut ist. Schutzgut
-    ist die öffentliche Sicherheit (Rechtsordnung, Individualrechtsgüter, Bestand staatlicher Einrichtungen);
-    ob daneben die öffentliche Ordnung genannt ist, ergibt sich aus dem Wortlaut der jeweiligen Landesnorm.
+    die Wahrscheinlichkeit, je höher der drohende Schaden und je bedeutender das Schutzgut ist. Schutzgut ist nach der Legaldefinition des § 2 Nr. 1 NPOG die öffentliche Sicherheit oder Ordnung (zur Sicherheit gehören Rechtsordnung, Individualrechtsgüter und Bestand staatlicher Einrichtungen).
   norms:
   - § 11 NPOG
+  - § 2 Nr. 1 NPOG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -138,10 +133,10 @@ cards:
     ein bedeutsames Rechtsgut (etwa Leben, Gesundheit, Freiheit, wesentliche Sachwerte). Gefahr im Verzug
     besteht, wenn bei Einhaltung der regulären Zuständigkeit oder des regulären Verfahrens der Zweck der
     Maßnahme vereitelt würde; sie ermöglicht Eilzuständigkeiten und Eilverfahren. Die Begriffe sind in
-    den Landespolizeigesetzen unterschiedlich ausgeprägt; maßgeblich ist stets die in der jeweiligen Befugnisnorm
-    verlangte Qualifikation (NPOG).
+    den Landespolizeigesetzen unterschiedlich ausgeprägt; maßgeblich ist stets die in der jeweiligen Befugnisnorm verlangte Qualifikation. Das NPOG definiert gegenwärtige Gefahr (§ 2 Nr. 2), erhebliche Gefahr (§ 2 Nr. 3) und dringende Gefahr (§ 2 Nr. 4) in § 2.
   norms:
   - § 11 NPOG
+  - § 2 Nr. 2, 3 NPOG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -171,15 +166,14 @@ cards:
     vorübergehend von einem Ort verwiesen oder ihr wird das Betreten untersagt. Er ist ein Verwaltungsakt
     in Gestalt eines Gebots oder Verbots und kann mündlich ergehen. Bei Anordnung durch Polizeivollzugsbeamte
     ist er regelmäßig eine unaufschiebbare Maßnahme, deren Vollziehung nach § 80 Abs. 2 S. 1 Nr. 2 VwGO
-    sofort möglich ist. Vom Platzverweis zu unterscheiden ist das längerfristige Aufenthaltsverbot für
-    ein bestimmtes Gebiet, für das höhere Anforderungen gelten. Wird ein Platzverweis nicht befolgt, kommt
-    als Durchsetzung Zwang in Betracht; der Gewahrsam (§ 18 NPOG) ist eine Freiheitsentziehung und erfordert
-    unverzüglich eine richterliche Entscheidung (Art. 104 Abs. 2 GG).'
+    sofort möglich ist. Vom Platzverweis zu unterscheiden ist das befristete Betretungs- bzw. Aufenthaltsverbot nach § 17 Abs. 3 NPOG (bei Tatsachen, die auf eine bevorstehende Straftat in einem bestimmten örtlichen Bereich schließen lassen), für das höhere Anforderungen gelten. Wird ein Platzverweis nicht befolgt, kommt
+    als Durchsetzung Zwang in Betracht; der Gewahrsam (§ 18 NPOG) ist eine Freiheitsentziehung und erfordert unverzüglich eine richterliche Entscheidung (§ 19 NPOG, Art. 104 Abs. 2 GG).'
   norms:
   - § 17 NPOG
   - § 18 NPOG
   - Art. 104 Abs. 2 GG
   - § 80 Abs. 2 S. 1 Nr. 2 VwGO
+  - § 19 NPOG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion

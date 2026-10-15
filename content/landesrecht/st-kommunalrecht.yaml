@@ -39,9 +39,7 @@ cards:
       Welche Gemeindetypen und welche kommunalen Zusammenschlüsse kennt das Kommunalrecht
       Sachsen-Anhalts?
   back: >-
-      Das KVG LSA regelt Gemeinden und Landkreise in einem Gesetz. Neben Einheitsgemeinden gibt es
-      Verbandsgemeinden: Die Mitgliedsgemeinden bleiben rechtlich selbständig, wesentliche
-      Verwaltungsaufgaben liegen jedoch bei der Verbandsgemeinde. Daneben bestehen Formen der
+      Das KVG LSA regelt Gemeinden und Landkreise in einem Gesetz. Neben Einheitsgemeinden gibt es Verbandsgemeinden (§§ 89 ff. KVG LSA): Die Mitgliedsgemeinden bleiben rechtlich selbständig; die Verbandsgemeinde erfüllt anstelle der Mitgliedsgemeinden bestimmte Aufgaben des eigenen Wirkungskreises (§ 90 Abs. 1 KVG LSA, u. a. Flächennutzungsplan, Trägerschaft der allgemeinbildenden Schulen, Trinkwasserversorgung und Abwasserbeseitigung) und die Aufgaben des übertragenen Wirkungskreises (§ 90 Abs. 2 KVG LSA). Daneben bestehen Formen der
       gemeinsamen Verwaltung und der kommunalen Zusammenarbeit. Welche Aufgaben eine Verbandsgemeinde
       im Einzelnen anstelle der Mitgliedsgemeinde wahrnimmt, ergibt sich aus dem Landesrecht und ist
       in der Klausur der Aufgabenzuweisung zu entnehmen. Wichtig ist die Prüfung der Zuständigkeit:
@@ -49,7 +47,7 @@ cards:
       Kompetenz?
   norms:
   - >-
-      Vorschriften des KVG LSA zu Gemeinderat und Bürgermeister (Paragraphen hier nicht angegeben)
+      §§ 36, 45, 66, 73 KVG LSA (Vertretung, Hauptverwaltungsbeamter, Verpflichtungsgeschäfte)
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -63,16 +61,13 @@ cards:
       Der Gemeinderat ist das Hauptorgan der Gemeinde und entscheidet über die grundlegenden
       Angelegenheiten, insbesondere Satzungen, den Haushalt, wesentliche Vermögensverfügungen und die
       Grundsätze der Verwaltung. Der Bürgermeister leitet die Verwaltung, führt die Beschlüsse aus,
-      erledigt die laufenden Angelegenheiten und vertritt die Gemeinde nach außen. Die Abgrenzung der
-      Zuständigkeiten ergibt sich aus dem KVG LSA und der Hauptsatzung; ein Beschluss des
-      unzuständigen Organs ist formell rechtswidrig. Verpflichtungserklärungen, mit denen die Gemeinde
-      zu Leistungen verpflichtet werden soll, bedürfen nach den Gemeindeordnungen einer besonderen
-      Form (regelmäßig Schriftform und Unterschrift der Vertretungsberechtigten). Diese
+      erledigt die laufenden Angelegenheiten und vertritt die Gemeinde nach außen. Die Vertretung (Gemeinderat) ist für alle Angelegenheiten zuständig, soweit nicht der Hauptverwaltungsbeamte kraft Gesetzes zuständig ist (§ 45 Abs. 1 KVG LSA); er leitet die Verwaltung und erledigt die laufenden Geschäfte (§ 66 KVG LSA). Die Abgrenzung ergibt sich aus dem KVG LSA und der Hauptsatzung; ein Beschluss des
+      unzuständigen Organs ist formell rechtswidrig. Verpflichtungserklärungen, mit denen die Kommune verpflichtet werden soll, bedürfen der Schriftform und sind nur rechtsverbindlich, wenn sie vom Hauptverwaltungsbeamten handschriftlich unterzeichnet sind (bzw. bei Vertretung von dessen Stellvertreter, dem vertretungsberechtigten Beigeordneten oder zwei vertretungsberechtigten Beschäftigten); Ausnahme: Geschäfte der laufenden Verwaltung (§ 73 KVG LSA). Diese
       Formvorschriften sind nach h. M. Vertretungsregelungen; ein Verstoß macht die Erklärung
       unwirksam, sie bindet die Gemeinde nicht.
   norms:
   - >-
-      Vorschriften des KVG LSA zu Gemeinderat und Bürgermeister (Paragraphen hier nicht angegeben)
+      §§ 36, 45, 66, 73 KVG LSA (Vertretung, Hauptverwaltungsbeamter, Verpflichtungsgeschäfte)
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -92,10 +87,10 @@ cards:
       Bestimmtheit, Verhältnismäßigkeit, Gleichheitssatz. Rechtsfolge eines Fehlers ist grundsätzlich
       Nichtigkeit; die Gemeindeordnungen enthalten jedoch Unbeachtlichkeits- und Heilungsvorschriften
       für bestimmte Verfahrens- und Formfehler, die in der Klausur gesondert zu prüfen sind.
-      Rechtsschutz: Normenkontrolle nach § 47 Abs. 1 Nr. 2 VwGO, soweit das Landesrecht sie eröffnet,
-      sonst Inzidentkontrolle.
+      Unbeachtlichkeit von Verfahrens- und Formfehlern nach einem Jahr (§ 8 Abs. 2 KVG LSA; ausgenommen Genehmigung und öffentliche Bekanntmachung). Rechtsschutz: Normenkontrolle nach § 47 Abs. 1 Nr. 2 VwGO i. V. m. § 10 AG VwGO LSA (Landesrecht eröffnet sie); daneben Inzidentkontrolle.
   norms:
-  - "Satzungsvorschriften des KVG LSA (Paragraph hier nicht angegeben)"
+  - "§ 8 KVG LSA"
+  - "§ 10 AG VwGO LSA"
   - "§ 47 VwGO"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
@@ -110,15 +105,13 @@ cards:
       an eine gemeindliche Einrichtung anzuschließen und die Einrichtung zu benutzen (etwa
       Wasserversorgung, Abwasser- und Abfallbeseitigung, Straßenreinigung, teils Fernwärme). Er ist
       ein Eingriff in Art. 2 Abs. 1, Art. 12 und Art. 14 GG und bedarf einer gesetzlichen Ermächtigung
-      in der Gemeindeordnung, die die Gemeinde durch Satzung ausfüllt. Tatbestand: öffentliches
-      Bedürfnis, also Gründe des Gemeinwohls wie Volksgesundheit oder Umweltschutz; Bestehen oder
-      Schaffung einer öffentlichen Einrichtung; Verhältnismäßigkeit. Die Satzung muss Befreiungs- bzw.
-      Ausnahmemöglichkeiten für Härtefälle vorsehen. Welche Einrichtungen erfasst sind und ob weitere
+      in der Gemeindeordnung, die die Gemeinde durch Satzung ausfüllt. Tatbestand: nach § 11 Abs. 1 KVG LSA ein dringendes öffentliches Bedürfnis (Anschlusszwang für Wasserversorgung, Abwasserbeseitigung, Abfallentsorgung, Straßenreinigung, Fernwärme und ähnliche der Gesundheit dienende Einrichtungen; Benutzungszwang auch für Begräbnisstätten und Schlachthöfe); Bestehen oder
+      Schaffung einer öffentlichen Einrichtung; Verhältnismäßigkeit. Die Satzung kann Ausnahmen zulassen (§ 11 Abs. 1 S. 2 KVG LSA); aus der Verhältnismäßigkeit folgt, dass für Härtefälle eine Befreiungsmöglichkeit bestehen muss. Welche Einrichtungen erfasst sind und ob weitere
       Gemeinwohlgründe (etwa Klimaschutz) ausdrücklich genannt sind, ergibt sich aus der jeweiligen
       Gemeindeordnung.
   norms:
   - >-
-      Vorschriften des KVG LSA zum Anschluss- und Benutzungszwang (Paragraph hier nicht angegeben)
+      § 11 KVG LSA
   - "Art. 2 Abs. 1 GG"
   - "Art. 12 Abs. 1 GG"
   - "Art. 14 Abs. 1 GG"
@@ -131,18 +124,15 @@ cards:
   front: >-
       Welche Arten der Kommunalaufsicht gibt es, und welchen Rechtsschutz hat die Gemeinde?
   back: >-
-      Bei Selbstverwaltungsaufgaben besteht nur Rechtsaufsicht: Die Aufsichtsbehörde prüft die
-      Rechtmäßigkeit, nicht die Zweckmäßigkeit. Bei Weisungsaufgaben (Auftragsangelegenheiten) besteht
-      Fachaufsicht mit Weisungsrecht auch hinsichtlich der Zweckmäßigkeit. Die Aufsichtsmittel sind
-      abgestuft: Information, Beanstandung rechtswidriger Beschlüsse, Anordnung, Ersatzvornahme,
-      Bestellung eines Beauftragten; die Behörde entscheidet nach pflichtgemäßem Ermessen
+      Bei Selbstverwaltungsaufgaben besteht nur Rechtsaufsicht (Kommunalaufsicht, § 143 Abs. 2 KVG LSA): Die Aufsichtsbehörde prüft die
+      Rechtmäßigkeit, nicht die Zweckmäßigkeit. Bei Weisungsaufgaben (übertragener Wirkungskreis; § 143 Abs. 3 KVG LSA) besteht Fachaufsicht mit Weisungsrecht auch hinsichtlich der Zweckmäßigkeit. Die Aufsichtsmittel sind abgestuft: Unterrichtung (§ 145), Beanstandung (§ 146), Anordnung (§ 147), Ersatzvornahme (§ 148), Bestellung eines Beauftragten (§ 149 KVG LSA); die Behörde entscheidet nach pflichtgemäßem Ermessen
       (Opportunitätsprinzip). Rechtsschutz der Gemeinde: Nach h. M. sind Aufsichtsmaßnahmen gegenüber
       der Gemeinde Verwaltungsakte, weil sie in die Selbstverwaltungsgarantie (Art. 28 Abs. 2 GG)
-      eingreifen; statthaft ist die Anfechtungsklage. Die früher vertretene Gegenansicht sah in der
+      eingreifen; statthaft ist die Anfechtungs- oder Verpflichtungsklage (§ 154 KVG LSA). Die früher vertretene Gegenansicht sah in der
       Aufsicht eine Maßnahme im staatlichen Innenbereich ohne Außenwirkung; sie wird wegen der eigenen
       Rechtsstellung der Gemeinde überwiegend abgelehnt.
   norms:
-  - "Kommunalaufsicht nach dem KVG LSA (Paragraphen hier nicht angegeben)"
+  - "§§ 143, 146-149, 154 KVG LSA"
   - "Art. 28 Abs. 2 S. 1 GG"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
@@ -155,19 +145,10 @@ cards:
       typisch?
   back: >-
       Mit dem Bürgerbegehren verlangen die Bürger, dass über eine Gemeindeangelegenheit ein
-      Bürgerentscheid stattfindet; dieser ersetzt den Beschluss des Gemeindeorgans. Typische
-      Zulässigkeitsvoraussetzungen nach den Gemeindeordnungen: eine mit Ja oder Nein zu beantwortende
-      Fragestellung mit Begründung, die Angabe der Vertretungsberechtigten, ein Unterschriftenquorum,
-      in den meisten Ländern ein Vorschlag zur Deckung der Kosten, die Einhaltung einer Frist gegen
-      bereits gefasste Beschlüsse sowie eine Angelegenheit der Gemeinde, die nicht in den
-      Ausschlusskatalog fällt. Ausgeschlossen sind regelmäßig Haushaltssatzung, Abgaben und Entgelte,
-      Personalangelegenheiten und weisungsgebundene Aufgaben. Die Entscheidung über die Zulässigkeit
-      trifft das zuständige Gemeindeorgan; die Initiatoren können sie vor dem Verwaltungsgericht
-      angreifen. Die Einzelheiten des Landesrechts (Quoren, Fristen, Katalog) sind in der Klausur der
-      Gemeindeordnung zu entnehmen.
+      Bürgerentscheid stattfindet; dieser ersetzt den Beschluss des Gemeindeorgans. Zulässigkeitsvoraussetzungen nach § 26 KVG LSA: Angelegenheit des eigenen Wirkungskreises in der Entscheidungszuständigkeit der Vertretung, kein Bürgerentscheid dazu in den letzten zwei Jahren, keine Sperrgegenstände (u. a. Haushaltssatzung, kommunale Abgaben, Bauleitpläne, Personalangelegenheiten; Abs. 2 S. 2), eine mit Ja oder Nein zu beantwortende Frage mit Begründung, bis zu drei Vertrauenspersonen, Anzeige vor Beginn der Unterschriftensammlung und Kostenschätzung der Kommune, die in das Begehren aufzunehmen ist (Abs. 3, 3a), Unterschriftenquorum von 10 % der stimmberechtigten Bürger (mit Höchstgrenzen nach Einwohnerzahl, Abs. 4) sowie Frist (sechs Monate; bei Begehren gegen einen Vertretungsbeschluss zwei Monate nach Bekanntgabe, Abs. 5). Die Vertretung stellt die Zulässigkeit in öffentlicher Sitzung fest (Abs. 6); die Initiatoren können dagegen das Verwaltungsgericht anrufen. Der Bürgerentscheid ist angenommen, wenn die Mehrheit der gültigen Stimmen mit Ja stimmt und mindestens 20 % der stimmberechtigten Bürger erreicht (§ 27 Abs. 3 KVG LSA).
   norms:
   - >-
-      Bürgerbegehren und Bürgerentscheid nach dem KVG LSA (Paragraphen hier nicht angegeben)
+      §§ 26, 27 KVG LSA
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -184,12 +165,9 @@ cards:
       Sonderinteresse des Betroffenen ohne weiteren Vollzugsakt; ein Vorteil, den er mit einer
       Vielzahl von Personen teilt (Gruppeninteresse), genügt regelmäßig nicht. Beispiel: Eigentümer
       eines Grundstücks im Plangebiet bei der Beschlussfassung über den Bebauungsplan. Das betroffene
-      Mitglied hat den Verhandlungsraum zu verlassen. Ein Verstoß ist ein Verfahrensfehler; der
-      Beschluss ist rechtswidrig, wenn die Mitwirkung für das Abstimmungsergebnis ausschlaggebend sein
-      konnte. Die Gemeindeordnungen enthalten Unbeachtlichkeits- und Heilungsvorschriften, die
-      gesondert zu prüfen sind. Bei Satzungen können die Fehler nach Fristablauf unbeachtlich werden.
+      Mitglied hat den Verhandlungsraum zu verlassen. Ein Beschluss, der unter Verletzung des Mitwirkungsverbots gefasst wurde, ist nach § 33 Abs. 5 S. 1 KVG LSA unwirksam, ohne dass es auf die Ausschlaggebendheit der Stimme ankommt; § 8 Abs. 2 S. 1 und 2 KVG LSA gilt jedoch entsprechend (Unbeachtlichkeit, wenn der Fehler nicht binnen eines Jahres schriftlich geltend gemacht wird).
   norms:
-  - "Mitwirkungsverbote des KVG LSA (Paragraph hier nicht angegeben)"
+  - "§ 33 KVG LSA"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -199,7 +177,7 @@ schemata:
   title: "Zulässigkeit eines Bürgerbegehrens (KVG LSA)"
   norms:
   - >-
-      Bürgerbegehren und Bürgerentscheid nach dem KVG LSA (Paragraphen hier nicht angegeben)
+      §§ 26, 27 KVG LSA
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
   - "Eigenformulierung Redaktion"
@@ -213,7 +191,7 @@ schemata:
   - label: "II. Form und Inhalt"
     children:
     - label: "1. Fragestellung mit Ja oder Nein beantwortbar, Begründung"
-    - label: "2. Vertretungsberechtigte, ggf. Kostendeckungsvorschlag"
+    - label: "2. Vertrauenspersonen, Kostenschätzung der Kommune (§ 26 Abs. 3, 3a KVG LSA)"
   - label: "III. Quorum und Frist"
   - label: "IV. Entscheidung über die Zulässigkeit und Rechtsschutz"
 faelle:
@@ -230,24 +208,21 @@ faelle:
       sammelt Unterschriften für ein Bürgerbegehren mit der Frage: „Sind Sie dafür, dass die
       Haushaltssatzung des kommenden Jahres aufgehoben und die Kürzungen bei der Stadtbibliothek
       zurückgenommen werden?“ Die Unterschriften werden fristgerecht eingereicht, das Quorum ist
-      erreicht, die Frage ist mit Ja oder Nein zu beantworten und begründet. Die Initiative nennt
-      einen Kostendeckungsvorschlag. Der Gemeinderat lehnt die Zulassung des Bürgerbegehrens ab.
+      erreicht, die Frage ist mit Ja oder Nein zu beantworten und begründet. Die Kostenschätzung der Gemeinde ist in das Begehren aufgenommen. Der Gemeinderat lehnt die Zulassung des Bürgerbegehrens ab.
   question: >-
-      Ist die Ablehnung rechtmäßig? Es ist zu unterstellen, dass die Gemeindeordnung dem Landesrecht
-      entsprechend einen Ausschlusskatalog mit Haushaltssatzung und Abgaben enthält.
+      Ist die Ablehnung rechtmäßig? Maßgeblich ist § 26 KVG LSA, der unter anderem die Haushaltssatzung und die kommunalen Abgaben als Gegenstand eines Bürgerbegehrens ausschließt (Abs. 2 S. 2 Nr. 3).
   steps:
   - prompt: "Wer entscheidet über die Zulässigkeit, und was wird geprüft?"
     erwartung: >-
-        Der Gemeinderat entscheidet über die Zulässigkeit. Geprüft werden Gegenstand, Form und Inhalt,
-        Quorum, Frist und Kostendeckungsvorschlag.
+        Der Gemeinderat entscheidet über die Zulässigkeit. Geprüft werden Gegenstand, Form und Inhalt, Quorum, Frist und Kostenschätzung.
   - prompt: "Sind Form, Quorum und Frist gewahrt?"
     erwartung: >-
-        Ja. Frage, Begründung, Kostendeckungsvorschlag, Unterschriftenquorum und Frist sind laut
+        Ja. Frage, Begründung, Kostenschätzung, Unterschriftenquorum und Frist sind laut
         Sachverhalt erfüllt. An diesen Voraussetzungen scheitert das Begehren nicht.
   - prompt: "Ist der Gegenstand zulässig?"
     erwartung: >-
         Nein. Das Begehren richtet sich ausdrücklich gegen die Haushaltssatzung. Diese fällt in den
-        Ausschlusskatalog der Gemeindeordnung, der das Haushaltsrecht des Rates vor Bürgerentscheiden
+        Ausschlusskatalog des § 26 Abs. 2 S. 2 Nr. 3 KVG LSA, der das Haushaltsrecht des Rates vor Bürgerentscheiden
         schützt. Dass die Initiative nur die Kürzung der Bibliothek erreichen will, ändert nichts, weil
         das Begehren die Aufhebung der Haushaltssatzung verlangt.
   - prompt: "Ergebnis und Rechtsschutz?"
@@ -270,13 +245,13 @@ faelle:
       - "st-kom-buergerbegehren"
     - id: p2
       label: >-
-          Übrige Zulässigkeitsvoraussetzungen (Quorum, Frist, Fragestellung, Kostendeckung) als erfüllt
+          Übrige Zulässigkeitsvoraussetzungen (Quorum, Frist, Fragestellung, Kostenschätzung) als erfüllt
           festgestellt
       weight: 1.5
       required: false
       keywords:
       - "Unterschriftenquorum"
-      - "Kostendeckungsvorschlag"
+      - "Kostenschätzung"
       - "Fragestellung"
       - "mit Ja oder Nein"
       - "Frist gewahrt"

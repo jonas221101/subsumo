@@ -50,8 +50,9 @@ cards:
   back: '§§ 69, 70, 71 SOG M-V. Verhaltensstörer: wer die Gefahr durch sein Verhalten verursacht (Theorie
     der unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer: Inhaber der tatsächlichen
     Gewalt bzw. Eigentümer einer gefährlichen Sache. Nichtstörer: Inanspruchnahme nur unter den engen
-    Voraussetzungen des polizeilichen Notstands (gegenwärtige erhebliche Gefahr, Störer nicht greifbar,
-    Behörde selbst nicht in der Lage), mit Entschädigungsanspruch.'
+    Voraussetzungen des § 71 SOG M-V (Beseitigung einer Störung oder Abwehr einer gegenwärtigen Gefahr; Verantwortliche
+    nicht oder nicht rechtzeitig in Anspruch zu nehmen; Behörde kann die Gefahr nicht selbst beseitigen; keine erhebliche
+    eigene Gefährdung der in Anspruch genommenen Person), mit Entschädigungsanspruch (§ 72 SOG M-V).'
   norms:
   - §§ 69, 70, 71 SOG M-V
   quellen:
@@ -62,7 +63,7 @@ cards:
   type: definition
   front: Wer ist in Mecklenburg-Vorpommern für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde
     oder Polizei?
-  back: 'Ordnungsbehörden und Polizei im SOG M-V; Polizei bei Eilbedürftigkeit. Prüfungsrelevant ist die
+  back: 'Ordnungsbehörden und Polizei (§ 2 SOG M-V); die Polizei trifft im Einzelfall selbstständig die Maßnahmen, die sie für unaufschiebbar hält (§ 7 Abs. 1 Nr. 3 SOG M-V). Prüfungsrelevant ist die
     Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich bei den Verwaltungs-/Ordnungsbehörden;
     der Polizeivollzugsdienst wird tätig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere
     Zuweisung besteht. Ein Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig.'
@@ -75,12 +76,13 @@ cards:
 - slug: mv-por-vollstreckung
   type: norm
   front: Nach welchem Gesetz wird eine Gefahrenabwehrverfügung in Mecklenburg-Vorpommern vollstreckt?
-  back: 'Verwaltungsvollstreckungsgesetz M-V (VwVG M-V). Regelfall ist das gestreckte Verfahren: Grundverfügung
+  back: 'Die Vollstreckung (Vollzug) richtet sich nach den §§ 79 ff. SOG M-V; ein eigenes Landesvollstreckungsgesetz ist daneben nicht einschlägig. Regelfall ist das gestreckte Verfahren: Grundverfügung
     - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme, Zwangsgeld, unmittelbarer
-    Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausführung ohne vorausgehenden Verwaltungsakt
-    möglich; die Kosten trägt der Pflichtige.'
+    Zwang; § 86 SOG M-V, Androhung § 87). Bei gegenwärtiger Gefahr ist der sofortige Vollzug ohne vorausgehenden
+    Verwaltungsakt möglich (§ 81 SOG M-V); die Kosten der Ersatzvornahme trägt die pflichtige Person (§ 89
+    SOG M-V).'
   norms:
-  - Verwaltungsvollstreckungsgesetz M-V (VwVG M-V)
+  - §§ 79 ff. SOG M-V
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -175,15 +177,17 @@ cards:
     Was ist ein Platzverweis nach dem Landesrecht von Mecklenburg-Vorpommern und wie unterscheidet er
     sich von Aufenthaltsverbot und Gewahrsam?
   back: >-
-    Der Platzverweis ist eine Standardmaßnahme: Eine Person wird zur Abwehr einer Gefahr vorübergehend
+    Der Platzverweis (§ 52 Abs. 1 SOG M-V) ist eine Standardmaßnahme: Eine Person wird zur Abwehr einer Gefahr vorübergehend
     von einem Ort verwiesen oder ihr wird das Betreten untersagt. Er ist ein Verwaltungsakt in Gestalt
     eines Gebots oder Verbots und kann mündlich ergehen. Bei Anordnung durch Polizeivollzugsbeamte ist
     er regelmäßig eine unaufschiebbare Maßnahme, deren Vollziehung nach § 80 Abs. 2 S. 1 Nr. 2 VwGO sofort
     möglich ist. Vom Platzverweis zu unterscheiden ist das längerfristige Aufenthaltsverbot für ein bestimmtes
     Gebiet, für das höhere Anforderungen gelten. Wird ein Platzverweis nicht befolgt, kommt als Durchsetzung
-    Zwang in Betracht; der Gewahrsam ist eine Freiheitsentziehung und erfordert unverzüglich eine richterliche
+    Zwang in Betracht; der Gewahrsam (§ 55 SOG M-V) ist eine Freiheitsentziehung und erfordert unverzüglich eine richterliche
     Entscheidung (Art. 104 Abs. 2 GG).
   norms:
+  - § 52 SOG M-V
+  - § 55 SOG M-V
   - Art. 104 Abs. 2 GG
   - >-
     § 80 Abs. 2 S. 1 Nr. 2 VwGO
@@ -221,14 +225,14 @@ cards:
     Die Kosten trägt der Pflichtige bzw. der Störer, der bei rechtmäßigem Vorgehen hätte herangezogen
     werden können. Beim gestreckten Verfahren (Grundverfügung, Androhung, Festsetzung, Ersatzvornahme)
     muss die Vollstreckung rechtmäßig sein; für den Kostenbescheid genügt, dass die Grundverfügung wirksam
-    und vollziehbar war, auf ihre Rechtmäßigkeit kommt es nicht an. Bei Sofortvollzug und unmittelbarer
-    Ausführung ohne vorherigen Verwaltungsakt wird dagegen geprüft, ob die Maßnahme rechtmäßig war und
+    und vollziehbar war, auf ihre Rechtmäßigkeit kommt es nicht an. Bei sofortigem Vollzug (§ 81 SOG M-V)
+    ohne vorherigen Verwaltungsakt wird dagegen geprüft, ob die Maßnahme rechtmäßig war und
     ob ein Verwaltungsakt gegen den Kostenschuldner rechtmäßig hätte ergehen dürfen (hypothetischer Verwaltungsakt).
     Die Kosten werden durch Kostenbescheid festgesetzt (Verwaltungsakt, Anfechtungsklage). Maßgeblich
-    sind die Vollstreckungsregeln (Verwaltungsvollstreckungsgesetz M-V) und die kostenrechtlichen Vorschriften
-    des Landes; die Höhe muss erforderlich und angemessen sein.
+    sind die Vollzugsvorschriften der §§ 79 ff. SOG M-V (insbesondere § 89 SOG M-V zur Ersatzvornahme
+    auf Kosten der pflichtigen Person) und die kostenrechtlichen Vorschriften des Landes; die Höhe muss erforderlich und angemessen sein.
   norms:
-  - Verwaltungsvollstreckungsgesetz M-V (VwVG M-V)
+  - §§ 79 ff. SOG M-V
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
