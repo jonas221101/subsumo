@@ -15,10 +15,15 @@ const String kApiBase = String.fromEnvironment(
 const bool kBetaMode = bool.fromEnvironment('SUBSUMO_BETA');
 
 class ApiException implements Exception {
-  ApiException(this.statusCode, this.message, {this.upgradeRequired = false});
+  ApiException(this.statusCode, this.message,
+      {this.upgradeRequired = false, this.detail});
 
   final int statusCode;
   final String message;
+
+  /// Das `detail`-Objekt der Antwort, falls der Server eines geliefert hat
+  /// (z. B. `quelle_url` bei 404 von `/v1/normen`).
+  final Map<String, dynamic>? detail;
 
   /// True bei 402/403-Antworten, die laut Fehlerformat der Free-Tier-Limits
   /// (`upgrade_required: true` im Body, siehe docs/20 B2) einen erreichten
@@ -55,6 +60,7 @@ class ApiClient {
     if (response.statusCode >= 400) {
       String message = 'Unbekannter Fehler';
       bool upgradeRequired = false;
+      Map<String, dynamic>? detailMap;
       try {
         final decoded = jsonDecode(body);
         if (decoded is Map) {
@@ -63,6 +69,7 @@ class ApiClient {
           // `upgrade_required`/`message` ein statt eines blossen Strings.
           final detail = decoded['detail'];
           if (detail is Map) {
+            detailMap = detail.cast<String, dynamic>();
             if (detail['upgrade_required'] == true) upgradeRequired = true;
             message = detail['message'] as String? ?? '$detail';
           } else if (detail != null) {
@@ -74,7 +81,7 @@ class ApiClient {
         message = body;
       }
       throw ApiException(response.statusCode, message,
-          upgradeRequired: upgradeRequired);
+          upgradeRequired: upgradeRequired, detail: detailMap);
     }
     return jsonDecode(body);
   }
@@ -205,6 +212,11 @@ class ApiClient {
     });
     return (data as List).cast<Map<String, dynamic>>();
   }
+
+  /// Gesetzestext zu einem Normzitat (`GET /v1/normen`). Wirft bei 404
+  /// (Landesrecht / nicht erfasst) eine [ApiException] mit `detail.quelle_url`.
+  Future<Map<String, dynamic>> normText(String zitat) async =>
+      (await _get('/v1/normen', {'zitat': zitat})) as Map<String, dynamic>;
 
   Future<List<Map<String, dynamic>>> cases() async =>
       ((await _get('/v1/content/cases')) as List).cast<Map<String, dynamic>>();

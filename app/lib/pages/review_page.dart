@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
+import 'norm_sheet.dart';
 import 'screen_status.dart';
 
 /// Karteikarten-Lernschleife (Challenge 2).
@@ -262,8 +263,9 @@ class _ReviewPageState extends State<ReviewPage> {
                                           for (final norm in norms)
                                             SubsumoChip.action(
                                               label: norm,
-                                              // M2: oeffnet den Norm-Explorer.
-                                              onPressed: () {},
+                                              icon: Icons.menu_book_outlined,
+                                              onPressed: () =>
+                                                  showNormText(context, norm),
                                             ),
                                         ],
                                       ),
