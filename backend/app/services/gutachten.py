@@ -186,6 +186,10 @@ _ERGEBNIS_PATTERNS = [
     r"\bder\s+anspruch\s+(besteht|ist\s+begründet)\b",
     r"\bhat\s+sich\b.*\bstrafbar\s+gemacht\b",
     r"\bzusammenfassend\b",
+    # Kurzer Schlusssatz mit Parteikuerzel: "A haftet nicht.", "Damit haftet A nicht.",
+    # "G hat keinen Anspruch gegen A." (Nutzertest W14).
+    r"^\W*(?:[a-z]\s+haftet|(?:damit|daher|also|somit)\s+haftet)\b",
+    r"^\W*[a-z]\s+hat\s+(?:keinen|einen)\s+anspruch\b",
     r"\b(deshalb|daher|also)\b[^.]{0,60}\b(liegt|ist|sind|besteht|bestand|scheidet|entfällt|"
     r"kann|hat|haben|steht|muss|darf)\b",
     r"\bsomit\w*\b",
@@ -508,6 +512,21 @@ _BEISPIELE = {
         "norm": "„Art. 5 Abs. 1 S. 1 GG“, „§ 80 Abs. 5 VwGO“ oder „§ 22 GO SH“",
     },
 }
+def _mit_parteien(bsp: dict[str, str], text: str) -> dict[str, str]:
+    """Setzt die Parteikuerzel des Textes ("G", "A") statt "A"/"B" in die
+    Formulierungsbeispiele ein (Nutzertest W14: "A gegen B" im Fall G gegen A)."""
+    parteien: list[str] = []
+    for m in re.finditer(r"(?<![\w.§])([A-Z])(?![\w.])", text):
+        if m.group(1) not in parteien:
+            parteien.append(m.group(1))
+    if not parteien or parteien[:2] in (["A"], ["A", "B"]):
+        return bsp
+    ersatz = {"A": parteien[0], "B": parteien[1] if len(parteien) > 1 else "B"}
+    return {
+        k: re.sub(r"\b([AB])\b", lambda m: ersatz[m.group(1)], v) for k, v in bsp.items()
+    }
+
+
 _BEISPIELE_NEUTRAL = {
     "obersatz": "Es könnte ... vorliegen (Fragestellung mit Norm).",
     "zwischen": "Mithin ist das Merkmal erfüllt (bzw. nicht erfüllt).",
@@ -524,7 +543,7 @@ def analyze(
     ``area`` (zivilrecht | strafrecht | oeffentliches-recht) waehlt passende
     Formulierungsbeispiele in den Hinweisen; ohne Angabe gelten neutrale.
     """
-    bsp = _BEISPIELE.get(area or "", _BEISPIELE_NEUTRAL)
+    bsp = _mit_parteien(_BEISPIELE.get(area or "", _BEISPIELE_NEUTRAL), text)
     sentences = split_sentences(text)
     steps = [classify_sentence(s) for s in sentences]
     words = len(re.findall(r"\b[\wÄÖÜäöüß]+\b", text))
