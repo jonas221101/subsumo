@@ -294,7 +294,16 @@ class ProfilEditorState extends State<ProfilEditor> {
   }
 
   Future<void> _save() async {
-    if (await save()) widget.onSaved();
+    // Vor dem Speichern greifen: der Editor verschwindet danach aus dem Baum.
+    final messenger = ScaffoldMessenger.of(context);
+    if (await save()) {
+      widget.onSaved();
+      // Rueckmeldung wie im Lernprofil (Nutzertest W20: Speichern ohne Bestaetigung).
+      messenger.showSnackBar(const SnackBar(
+        duration: Duration(seconds: 8),
+        content: Text('Examensprofil gespeichert.'),
+      ));
+    }
   }
 
   /// Speichert Bundesland/Universitaet (und ggf. Termin/Budget); `true` bei

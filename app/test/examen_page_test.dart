@@ -324,6 +324,8 @@ Future<AppState> _pump(WidgetTester tester, Map<String, dynamic> cockpit) async 
         return _json(_bundeslaender);
       case '/v1/examen/universitaeten':
         return _json(_universitaeten);
+      case '/v1/auth/me':
+        return _json({'id': 1, 'email': 'a@b.de'});
       default:
         return _json({'detail': 'nicht gemockt: ${request.url.path}'}, 404);
     }
@@ -430,5 +432,12 @@ void main() {
     expect(find.text('Anspruch aus § 433 BGB'), findsOneWidget);
     expect(find.text('Der Sonderpreis'), findsOneWidget);
     expect(find.widgetWithText(SubsumoButton, 'Deck lernen'), findsOneWidget);
+  });
+
+  testWidgets('Examensprofil speichern zeigt eine Bestaetigung', (tester) async {
+    await _pump(tester, _cockpitOhneProfil());
+    await tester.tap(find.widgetWithText(SubsumoButton, 'Profil speichern'));
+    await tester.pumpAndSettle();
+    expect(find.text('Examensprofil gespeichert.'), findsOneWidget);
   });
 }
