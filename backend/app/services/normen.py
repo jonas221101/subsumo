@@ -192,7 +192,20 @@ _LAND_GESETZ = {
     "npog": "NI", "nkomvg": "NI", "nbauo": "NI",
     "asog": "BE", "bauobln": "BE",
     "bbgbo": "BB", "hbauo": "HH", "sächsbo": "SN", "thürbo": "TH", "lvwg": "SH",
+    "vvb": "BE", "nv": "NI", "nvwvg": "NI", "lvwvg": "BW",
+    "spolg": "SL", "ksvg": "SL", "svwvg": "SL", "sverf": "SL",
 }
+# Gesetzesnamen mit Landes-Praefix ("ThürPAG", "SächsGemO", "BbgKVerf", "BremPolG")
+_LAND_PRAEFIX = (
+    ("thür", "TH"), ("sächs", "SN"), ("bbg", "BB"), ("brem", "HB"), ("hmb", "HH"),
+    ("hess", "HE"), ("bay", "BY"), ("nds", "NI"), ("saarl", "SL"),
+)
+
+
+# Landesrechtliche Kuerzel, die in mehreren Laendern vorkommen (Land unbekannt)
+_LANDES_KUERZEL_RE = re.compile(
+    r"\b(?:GO|BauO|PolG|OBG|LBO|SOG|GemO|KrO|LKrO|LVwG|BezVG|HV|BV|KV|VerfGHG|StGHG)\b"
+)
 
 
 def herkunft(zitat: str) -> dict | None:
@@ -214,6 +227,18 @@ def herkunft(zitat: str) -> dict | None:
             land = _LAND_SUFFIX[w]
     if "Bay" in woerter:
         land = "BY"
+    if not land:
+        for w in woerter:
+            for praefix, code in _LAND_PRAEFIX:
+                if w.lower().startswith(praefix) and len(w) > len(praefix):
+                    land = code
+    if re.search(r"\bM-V\b", zitat):
+        land = "MV"
+    if not land:
+        # Ausgeschriebener Landesname ("... fuer das Land Brandenburg").
+        for code, (name, _url) in LANDESPORTALE.items():
+            if name in zitat:
+                land = code
     if land:
         name, url = LANDESPORTALE[land]
         return {
@@ -223,7 +248,7 @@ def herkunft(zitat: str) -> dict | None:
             "quelle_url": url,
         }
     # Landesrechtlich erkennbar nur am Zusatz ohne bekanntes Land -> generisch
-    if re.search(r"\b(?:GO|BauO|PolG|OBG|LBO|SOG|GemO|KrO|LKrO|LVwG)\b", zitat):
+    if _LANDES_KUERZEL_RE.search(zitat):
         return {
             "kategorie": "landesrecht",
             "land": None,

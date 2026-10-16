@@ -194,3 +194,21 @@ def test_mehrfachzitat_liefert_weitere(auth_client):
     assert r.json()["weitere"] == []
     r = auth_client.get("/v1/normen", params={"zitat": "§§ 280 Abs. 1 und 2 BGB"})
     assert r.json()["weitere"] == []
+
+
+def test_landesgesetze_mit_praefix_und_landeszusatz_verlinken_aufs_landesportal():
+    from app.services.normen import herkunft
+
+    erwartet = {
+        "§ 12 Abs. 1 ThürPAG": "Thüringen",
+        "§ 20 SächsGemO": "Sachsen",
+        "§ 52a SOG M-V": "Mecklenburg-Vorpommern",
+        "§ 8 SPolG": "Saarland",
+        "§ 15 BbgKVerf": "Brandenburg",
+        "Art. 67 VvB": "Berlin",
+        "Amtsordnung für Schleswig-Holstein": "Schleswig-Holstein",
+    }
+    for zitat, land in erwartet.items():
+        h = herkunft(zitat)
+        assert h and h["kategorie"] == "landesrecht" and h["land"] == land, zitat
+    assert herkunft("§ 433 BGB") is None
