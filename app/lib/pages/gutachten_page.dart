@@ -967,6 +967,19 @@ String _oerPlatzhalter(String? question, String? facts) {
         : '${subjekt[0].toUpperCase()}${subjekt.substring(1)}';
     return '$text ist rechtmäßig, wenn ...';
   }
+  // "Ist das Vorhaben des A bauplanungsrechtlich zulässig?" - Zulaessigkeit eines
+  // Vorhabens/einer Massnahme, nicht einer Klage (Nutzertest W22).
+  final zulaessig = RegExp(
+    r'\b(?:Ist|Sind|War|Waren)\s+((?:der|die|das)\s+[^?,]+?)\s+((?:[a-zäöüß]+\s+)?)zulässig',
+    caseSensitive: false,
+  ).firstMatch(q);
+  if (zulaessig != null &&
+      !RegExp(r'klage|antrag|beschwerde|widerspruch', caseSensitive: false)
+          .hasMatch(zulaessig.group(1)!)) {
+    final subjekt = zulaessig.group(1)!;
+    return '${subjekt[0].toUpperCase()}${subjekt.substring(1)} ist '
+        '${zulaessig.group(2)}zulässig, wenn ...';
+  }
   return 'Die Klage hat Erfolg, wenn sie zulässig und begründet ist.';
 }
 

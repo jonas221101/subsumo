@@ -102,6 +102,10 @@ _OBERSATZ_PATTERNS = [
     r"^(die|der|das|diese[rs]?)\s(?:(?!\bein(?:e|er|es|en|em)?\b)[^,]){0,120}"
     r"\b(zulässig|begründet|erfolg|rechtmäßig|rechtswidrig|strafbar)\b"
     r"[^,]{0,40},\s*(wenn|sofern|soweit)\b",
+    # ... auch mit Parteikuerzel: "A hat sich nach § 242 StGB strafbar gemacht, wenn ..."
+    # / "G hat gegen A einen Anspruch aus § 280 BGB, wenn ..." (Nutzertest W22).
+    r"^[a-z]\s+(?:hat|ist|kann)\b[^,]{0,140}\b(strafbar|anspruch|zulässig|begründet)"
+    r"[^,]{0,60},\s*(wenn|sofern|soweit)\b",
 ]
 
 _DEFINITION_PATTERNS = [

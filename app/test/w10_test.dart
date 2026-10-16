@@ -116,4 +116,18 @@ void main() {
     expect(find.byType(AccountPage), findsOneWidget);
     expect(find.text('Gespeichert: Bundesland, Universität und Lernprofil.'), findsOneWidget);
   });
+
+  test('OeR-Platzhalter: Zulaessigkeit eines Vorhabens statt Klageformel', () {
+    expect(
+      gutachtenPlatzhalter(
+        area: 'oeffentliches-recht',
+        question: 'Ist das Vorhaben des A bauplanungsrechtlich zulässig, und welche Bedeutung hat die Weigerung der Gemeinde?',
+      ),
+      'Das Vorhaben des A ist bauplanungsrechtlich zulässig, wenn ...',
+    );
+    expect(
+      gutachtenPlatzhalter(area: 'oeffentliches-recht', question: 'Ist die Klage zulässig?'),
+      'Die Klage hat Erfolg, wenn sie zulässig und begründet ist.',
+    );
+  });
 }

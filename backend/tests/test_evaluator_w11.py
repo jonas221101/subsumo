@@ -92,3 +92,11 @@ def test_teilweise_geloest_hoechstens_9_punkte():
     e = HeuristicEvaluator().evaluate(text=text, expectation=exp, structure=analyze(text))
     assert sum(c.hit for c in e.checkpoints) == 2
     assert e.points <= 9.0
+
+
+def test_konditionaler_obersatz_mit_parteikuerzel():
+    from app.services.gutachten import Step, classify_sentence
+
+    satz = "A hat sich nach § 242 Abs. 1 StGB strafbar gemacht, wenn er eine fremde Sache wegnahm."
+    assert classify_sentence(satz) is Step.OBERSATZ
+    assert classify_sentence("A hat sich wegen Diebstahls strafbar gemacht.") is Step.ERGEBNIS
