@@ -211,7 +211,7 @@ cards:
       Die Kosten einer Ersatzvornahme, des unmittelbaren Zwangs oder einer unmittelbaren Ausführung
       trägt grundsätzlich der Pflichtige bzw. der für die Gefahr Verantwortliche; sie werden durch
       Kostenbescheid (Leistungsbescheid) geltend gemacht und nach den Vorschriften der
-      Verwaltungsvollstreckung beigetrieben (für die Ersatzvornahme der Polizei: § 46 Abs. 1 S. 2 SPolG). Bei Sofortvollzug ohne Grundverfügung prüft die
+      Verwaltungsvollstreckung beigetrieben (für die Polizei: Kosten der Ersatzvornahme § 46 Abs. 1 S. 2 SPolG, des unmittelbaren Zwangs § 49 Abs. 7 SPolG, Kostenersatz und Gebühren allgemein § 90 SPolG i. V. m. der Polizeikostenverordnung; Kostenschuldner ist, wem die Amtshandlung zuzurechnen ist (§ 12 Abs. 1 Nr. 1 des Saarländischen Gebührengesetzes), also der nach §§ 4, 5 SPolG Verantwortliche, vgl. VG des Saarlandes, Urteil vom 19.04.2017 - 6 K 939/16). Das SPolG kennt keine eigene "unmittelbare Ausführung"; Verwaltungszwang ohne vorausgehenden Verwaltungsakt ist nur bei gegenwärtiger Gefahr zulässig (§ 44 Abs. 2 SPolG). Bei Sofortvollzug ohne Grundverfügung prüft die
       Kostenentscheidung inzident, ob die Maßnahme rechtmäßig gewesen wäre, insbesondere ob eine
       Gefahr vorlag, der Kostenschuldner Störer war und die Maßnahme verhältnismäßig war. Für den
       Zustandsstörer ist die Kostenhaftung nach der Rechtsprechung des Bundesverfassungsgerichts aus
@@ -222,8 +222,11 @@ cards:
   norms:
   - "Art. 14 Abs. 1 GG"
   - "Art. 14 Abs. 2 GG"
+  - "§ 44 SPolG"
   - "§ 46 SPolG"
+  - "§ 49 SPolG"
   - "§ 68 SPolG"
+  - "§ 90 SPolG"
   - "Saarländisches Verwaltungsvollstreckungsgesetz (SVwVG)"
   quellen:
   - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
