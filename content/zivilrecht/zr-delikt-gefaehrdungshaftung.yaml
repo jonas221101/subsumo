@@ -39,7 +39,7 @@ cards:
   type: norm
   front: Welche Voraussetzungen hat der Anspruch aus § 1 Abs. 1 S. 1 ProdHaftG?
   back: >-
-    Stand: Es gilt das Produkthaftungsgesetz von 1989; die Neufassung zur Umsetzung der RL (EU) 2024/2853 (BT-Drs. 21/4297, 21/8429) soll nach Berichten am 9.12.2026 in Kraft treten und für davor in Verkehr gebrachte Produkte das alte Recht fortgelten lassen. Der Anspruch setzt voraus: (1) ein Produkt (§ 2 ProdHaftG, bewegliche Sache, auch
+    Stand: Es gilt das Produkthaftungsgesetz von 1989; die Neufassung zur Umsetzung der RL (EU) 2024/2853 ist als Gesetz zur Modernisierung des Produkthaftungsrechts in Vorbereitung: Nach dem Regierungsentwurf (BT-Drs. 21/4297, Art. 5) soll sie am 9.12.2026 in Kraft treten und für bis einschließlich 8.12.2026 in Verkehr gebrachte Produkte das alte Recht fortgelten lassen (§ 23 ProdHaftG-E); der Rechtsausschuss hat die Annahme in geänderter Fassung empfohlen (BT-Drs. 21/8429 vom 7.10.2026). Bundesrat und Verkündung im Bundesgesetzblatt waren bei der Prüfung noch nicht belegt. Der Anspruch setzt voraus: (1) ein Produkt (§ 2 ProdHaftG, bewegliche Sache, auch
     als Teilprodukt oder Elektrizität), (2) einen Produktfehler (§ 3 ProdHaftG), (3)
     eine Rechtsgutsverletzung, nämlich Tod, Körper, Gesundheit oder Beschädigung einer
     anderen Sache, (4) Haftung des Herstellers (§ 4 ProdHaftG), (5) Kausalität zwischen
@@ -55,6 +55,7 @@ cards:
   - § 1 Abs. 4 ProdHaftG
   quellen:
   - ProdHaftG
+  - BT-Drs. 21/4297 und 21/8429
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: zr-gh-prodhaftg-sachschaden

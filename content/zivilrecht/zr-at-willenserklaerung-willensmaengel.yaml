@@ -52,8 +52,10 @@ cards:
   front: 'Fehlendes Erklärungsbewusstsein (Trierer Weinversteigerung): Liegt eine Willenserklärung
     vor?'
   back: >-
-    Fall: Ein Besucher hebt in einer Weinversteigerung den Arm, um einen Bekannten
-    zu grüßen; der Auktionator erteilt den Zuschlag. Nach der h. M. und dem BGH
+    Lehrbuchfall: Ein Besucher hebt in einer Weinversteigerung den Arm, um einen
+    Bekannten zu grüßen; der Auktionator erteilt den Zuschlag. (Die zugrunde
+    liegende BGH-Entscheidung betraf ein Sparkassenschreiben, das als
+    Bürgschaftserklärung verstanden wurde: BGH, 7.6.1984 - IX ZR 66/83.) Nach der h. M. und dem BGH
     liegt eine Willenserklärung vor, wenn der Erklärende bei Anwendung der im
     Verkehr erforderlichen Sorgfalt hätte erkennen und vermeiden können, dass
     sein Verhalten nach Treu und Glauben als Willenserklärung aufgefasst wird,
@@ -73,6 +75,7 @@ cards:
   quellen:
   - BGB, amtliche Fassung
   - BGH, BGHZ 91, 324 (Trierer Weinversteigerung)
+  - BGH, Urteil vom 7.6.1984 - IX ZR 66/83 (Leitsatz: Willenserklärung trotz fehlenden Erklärungsbewusstseins bei Erkennbarkeit; Anfechtung nach §§ 119, 121, 143 BGB)
 - slug: zr-at-we-geschaeftswille
   type: definition
   front: 'Geschäftswille und Irrtum: Wie hängt das Fehlen des Geschäftswillens mit
@@ -184,7 +187,7 @@ cards:
   - § 119 Abs. 1 BGB
   quellen:
   - BGB, amtliche Fassung
-  - RG, RGZ 99, 147
+  - RG, Urteil vom 8.6.1920 - II 549/19 (RGZ 99, 147, Haakjöringsköd)
 - slug: zr-at-we-abgrenzung-119
   type: definition
   front: 'Abgrenze: Wann ist eine Erklärung nicht schon wegen Missverständnisses

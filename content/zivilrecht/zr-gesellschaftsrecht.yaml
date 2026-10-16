@@ -75,7 +75,8 @@ cards:
     gegenüber unwirksam (§ 720 Abs. 3 BGB); im Innenverhältnis binden Beschränkungen den Geschäftsführer. Handelt ein Gesellschafter im Namen
     der Gesellschaft, wird nur die Gesellschaft Vertragspartei; die Gesellschafter haften
     daneben nach § 721 BGB. Für die Zurechnung von Fehlverhalten der Geschäftsführer gilt
-    § 31 BGB analog.
+    § 31 BGB analog (BGHZ 154, 88; die Gesetzesbegründung zum MoPeG geht von dieser
+    Zurechnung aus, BT-Drs. 19/27635, S. 166).
   norms:
   - § 715 Abs. 3 BGB
   - § 720 Abs. 1 BGB
@@ -84,6 +85,8 @@ cards:
   quellen:
   - BGB, amtliche Fassung (Stand nach MoPeG, seit 1.1.2024)
   - HGB und GmbHG, amtliche Fassung
+  - BGH, Urteil vom 24.2.2003 - II ZR 385/99 (BGHZ 154, 88)
+  - BT-Drs. 19/27635, S. 166 (Begründung zu § 721 BGB-E)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: zr-ges-gbr-haftung-721
@@ -136,6 +139,7 @@ cards:
   quellen:
   - BGHZ 146, 341
   - BGHZ 142, 315
+  - BGH, Urteil vom 29.1.2001 - II ZR 331/00 (BGHZ 146, 341)
   - BGB, amtliche Fassung
   stand: 2026-10
 - slug: zr-ges-ohg-begriff

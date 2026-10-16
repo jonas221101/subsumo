@@ -223,7 +223,7 @@ cards:
     muss der Unternehmer zudem eine elektronische Widerrufsfunktion bereitstellen, die mit
     "Vertrag widerrufen" beschriftet ist und über eine Bestätigungsfunktion verfügt; den
     Eingang des Widerrufs hat er unverzüglich auf einem dauerhaften Datenträger zu bestätigen
-    (§ 356a BGB, Umsetzung der Richtlinie (EU) 2023/2673).
+    (§ 356a BGB, Umsetzung der Richtlinie (EU) 2023/2673; anzuwenden seit dem 19.6.2026, BGBl. 2026 I Nr. 28, ohne besondere Übergangsvorschrift im EGBGB).
   norms:
   - § 312j Abs. 2 BGB
   - § 312j Abs. 3 BGB
@@ -232,6 +232,7 @@ cards:
   quellen:
   - BGB, amtliche Fassung
   - Richtlinie (EU) 2023/2673
+  - Gesetz vom 3.2.2026, BGBl. 2026 I Nr. 28
   - Eigenformulierung Redaktion
 schemata:
 - slug: zr-schema-widr-widerruf

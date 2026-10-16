@@ -70,13 +70,19 @@ cards:
     herrschenden Lehre bei der Abwicklung entlang der Leistungsbeziehungen: B kondiziert
     bei A, A bei C. Ein Direktanspruch des B gegen C wird überwiegend abgelehnt, weil
     er A als Zwischenglied mit seinen Einwendungen und dem Insolvenzrisiko des jeweiligen
-    Partners umgehen würde. Die Rechtsprechung lehnt einen Durchgriff auch bei Doppelmangel ab.
+    Partners umgehen würde. Der BGH hat die Frage bislang ausdrücklich offengelassen: Frühere Entscheidungen
+    (RGZ 86, 343; BGH, 25.3.1954 - VI ZR 202/53) ließen im Doppelmangel ausnahmsweise einen
+    Durchgriff zu; der BGH zieht dies in Zweifel und hält die Argumente gegen eine
+    Direktkondiktion für stichhaltig, ohne es zu entscheiden (BGH, 24.4.2001 - VI ZR 36/00,
+    BGHZ 147, 269). Bei wirksamer Anweisung lässt er im Übrigen keine weitere Ausnahme vom
+    Grundsatz der Rückabwicklung im jeweiligen Leistungsverhältnis zu.
   norms:
   - § 812 Abs. 1 S. 1 Alt. 1 BGB
   - § 670 BGB
   - § 675c BGB
   quellen:
   - BGB, amtliche Fassung
+  - BGH, Urteil vom 24.4.2001 - VI ZR 36/00 (BGHZ 147, 269)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: zr-bmp-fehlende-anweisung
@@ -91,7 +97,12 @@ cards:
     B bei objektiver Betrachtung nicht als Leistender für A auftritt. Nach h. M. kann
     B in diesem Fall den Empfänger C unmittelbar bereicherungsrechtlich in Anspruch
     nehmen; ob dies als Leistungskondiktion (§ 812 Abs. 1 S. 1 Alt. 1 BGB) oder als
-    Nichtleistungskondiktion (Alt. 2) einzuordnen ist, wird unterschiedlich beurteilt. Maßgeblich ist, ob der Empfänger
+    Nichtleistungskondiktion (Alt. 2) einzuordnen ist, wird unterschiedlich beurteilt. Der BGH
+    ordnet den Direktanspruch des Zahlungsdienstleisters bei einem nicht autorisierten
+    Zahlungsvorgang als Nichtleistungskondiktion ein und gewährt ihn auch gegen den gutgläubigen
+    Empfänger (BGH, 16.6.2015 - XI ZR 243/13); bei bloßer Zuvielüberweisung aufgrund einer
+    wirksamen, aber niedrigeren Anweisung hat die Bank dagegen keinen Anspruch gegen den
+    gutgläubigen Empfänger (BGHZ 176, 234). Maßgeblich ist, ob der Empfänger
     die Zahlung als Leistung des Anweisenden verstehen durfte und ob dieser sie zurechenbar
     veranlasst hat (Zurechnung nach Rechtsscheingesichtspunkten). Ob C bereits Rechtsscheinschutz
     hat, ist ein wichtiger Streitpunkt; im Zahlungsdiensterecht regeln §§ 675u ff.
@@ -101,6 +112,8 @@ cards:
   - § 675u BGB
   quellen:
   - BGB, amtliche Fassung
+  - BGH, Urteil vom 16.6.2015 - XI ZR 243/13
+  - BGH, Urteil vom 29.4.2008 - XI ZR 371/07 (BGHZ 176, 234)
   - Eigenformulierung Redaktion
   stand: 2026-10
 - slug: zr-bmp-leistungskette-durchgriff
