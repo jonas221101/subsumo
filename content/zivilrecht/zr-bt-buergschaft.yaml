@@ -124,6 +124,8 @@ cards:
   quellen:
   - BGB, amtliche Fassung
   - BVerfGE 89, 214 (Bürgschaftsentscheidung)
+  - BVerfG, Beschluss vom 19.10.1993 - 1 BvR 567/89, 1 BvR 1044/89 (BVerfGE 89, 214)
+  - BGH, Urteil vom 28.5.2002 - XI ZR 199/01 (NJW 2002, 2634; Gesellschafter, Strohmann-Ausnahme)
   - Eigenformulierung Redaktion
 - slug: zr-buerg-angehoerigenbuergschaft
   type: definition
@@ -137,7 +139,7 @@ cards:
     sich aus emotionaler Verbundenheit ohne Rücksicht auf das eigene Risiko verpflichtet hat
     und der Gläubiger dies in sittlich anstößiger Weise ausgenutzt hat. Der Gläubiger kann
     die Vermutung widerlegen, etwa durch ein eigenes wirtschaftliches Interesse des Bürgen
-    am Darlehen. Die Vermutung greift regelmäßig nicht, wenn der Bürge als Gesellschafter oder Geschäftsführer unmittelbaren Einfluss auf das finanzierte Unternehmen hat und eigene wirtschaftliche Vorteile erwartet.
+    am Darlehen. Die Vermutung greift nach der Rechtsprechung regelmäßig nicht, wenn der Bürge als Gesellschafter (mit bedeutsamem Anteil) oder Geschäftsführer für die Verbindlichkeiten des Unternehmens einsteht, weil die Bank von einem eigenen wirtschaftlichen Interesse ausgehen darf; anders nur, wenn er bloß Strohmann ist, aus emotionaler Verbundenheit bürgt und beides für die Bank evident ist (BGH, 28.5.2002 - XI ZR 199/01).
   norms:
   - § 138 Abs. 1 BGB
   - § 765 BGB
@@ -204,6 +206,7 @@ cards:
   quellen:
   - BGB, amtliche Fassung
   - BGHZ 130, 19
+  - BGH, Urteil vom 18.5.1995 - IX ZR 108/94 (BGHZ 130, 19; Leitsätze 1 bis 3)
   - Eigenformulierung Redaktion
 schemata:
 - slug: zr-schema-buerg-765

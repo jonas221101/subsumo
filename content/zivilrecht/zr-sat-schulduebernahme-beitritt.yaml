@@ -115,8 +115,12 @@ cards:
     in gleicher Weise besteht. Eine analoge Anwendung kann nur ausnahmsweise in Betracht
     kommen, wenn die Umgehung eines Formzwangs droht. Anders ist zu beurteilen, wenn
     das Grundgeschäft formbedürftig ist: Bezieht sich der Beitritt auf eine formbedürftige
-    Verpflichtung (etwa nach § 311b Abs. 1 BGB oder bei Verbraucherdarlehen nach §
-    492 BGB), kann die Formvorschrift auch den Beitritt erfassen. Streng zu trennen
+    Verpflichtung (etwa nach § 311b Abs. 1 BGB), kann die Formvorschrift auch den Beitritt
+    erfassen. Tritt ein Verbraucher einem Verbraucherdarlehensvertrag bei, gelten die
+    Formvorschriften des Verbraucherdarlehensrechts nach ständiger Rechtsprechung entsprechend
+    (Schriftform, Pflichtangaben, eigenes Widerrufsrecht; BGH, 5.6.1996 - VIII ZR 151/95, BGHZ 133, 71; BGH, 27.6.2000 - XI ZR 322/98, zum früheren VerbrKrG).
+    Für den Beitritt zu einem abstrakten Schuldanerkenntnis verlangt die Rechtsprechung
+    keine Schriftform (BGH, 8.12.1992 - XI ZR 96/92, BGHZ 121, 1). Streng zu trennen
     sind danach die Auslegungsfrage (Beitritt oder Bürgschaft) und die Formfrage;
     erst nach der Einordnung ist die Form zu prüfen.
   norms:
@@ -125,6 +129,9 @@ cards:
   - § 492 BGB
   quellen:
   - BGB, amtliche Fassung
+  - BGH, Urteil vom 5.6.1996 - VIII ZR 151/95 (BGHZ 133, 71)
+  - BGH, Urteil vom 27.6.2000 - XI ZR 322/98 (NJW 2000, 3496)
+  - BGH, Urteil vom 8.12.1992 - XI ZR 96/92 (BGHZ 121, 1)
   - Eigenformulierung Redaktion
 - slug: zr-sue-abgrenzung-buergschaft
   type: streitstand

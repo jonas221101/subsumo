@@ -214,6 +214,7 @@ cards:
   - § 932 BGB
   quellen:
   - BGB, amtliche Fassung
+  - BGH, Urteil vom 21.12.1960 - VIII ZR 89/59 (BGHZ 34, 122, Kleinbus; kein gesetzliches Unternehmerpfandrecht an bestellerfremden Sachen)
   - Eigenformulierung Redaktion
 - slug: zr-werk-kuendigung-648
   type: norm
@@ -243,9 +244,15 @@ cards:
     Rücktritt, Minderung und Selbstvornahme grundsätzlich erst mit der Abnahme; davor hat
     der Besteller nur den Erfüllungsanspruch auf mangelfreie Herstellung (§§ 631 Abs. 1, 633
     Abs. 1 BGB) sowie die Rechte aus dem allgemeinen Leistungsstörungsrecht (§§ 280 ff., 323
-    BGB). Ausnahmen gelten, wenn der Besteller nicht mehr die Erfüllung, sondern nur noch
-    Schadensersatz oder Minderung verlangt und das Vertragsverhältnis in ein Abrechnungsverhältnis
-    übergegangen ist, etwa nach Kündigung oder wenn die Abnahme zu Recht verweigert wurde.
+    BGB). Ausnahmsweise kann der Besteller die Mängelrechte nach § 634 Nr. 2 bis 4 BGB schon ohne
+    Abnahme geltend machen, wenn er nicht mehr die (Nach-)Erfüllung verlangen kann und das
+    Vertragsverhältnis in ein Abrechnungsverhältnis übergegangen ist, etwa nach Kündigung.
+    Das bloße Verlangen eines Vorschusses für die Selbstvornahme genügt dafür nicht; ein
+    Abrechnungsverhältnis entsteht aber, wenn der Besteller ausdrücklich oder konkludent
+    zum Ausdruck bringt, unter keinen Umständen mehr mit dem Unternehmer zusammenarbeiten
+    zu wollen (BGH, 19.1.2017 - VII ZR 193/15). Der Besteller hat die Wahl zwischen den Rechten
+    des Erfüllungsstadiums und den abnahmeabhängigen Mängelrechten; zur Abnahme eines nicht
+    abnahmefähigen Werks ist er nicht gezwungen.
     Die Gegenansicht, die ein Wahlrecht des Bestellers schon vor der Abnahme annimmt, stellt
     auf Praktikabilität ab, überspielt aber die gesetzliche Zäsur der Abnahme als Beginn des
     Gewährleistungsstadiums.
@@ -256,6 +263,7 @@ cards:
   - § 633 BGB
   quellen:
   - BGB, amtliche Fassung
+  - BGH, Urteil vom 19.1.2017 - VII ZR 193/15 (Leitsätze a und b)
   - Eigenformulierung Redaktion
 schemata:
 - slug: zr-schema-werk-maengelrechte

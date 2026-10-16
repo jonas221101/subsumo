@@ -102,20 +102,34 @@ cards:
     BGB nicht auf den fehlenden Zugang berufen. Voraussetzung ist, dass er mit
     rechtserheblichen Mitteilungen rechnen musste (etwa bei bestehender
     Vertragsbeziehung oder laufendem Streit) und den Zugang ohne triftigen Grund
-    verhindert, zum Beispiel durch Annahmeverweigerung oder Entfernen des
-    Briefkastens. Folge: Die Erklärung gilt nach überwiegender Auffassung als
-    in dem Zeitpunkt zugegangen, in dem sie ohne die Vereitelung zugegangen
-    wäre. Teile der Rechtsprechung (insbesondere im Arbeitsrecht) verlangen
-    zusätzlich, dass der Erklärende nach dem Fehlschlag unverzüglich einen
+    verhindert, zum Beispiel durch grundlose Annahmeverweigerung oder Entfernen des
+    Briefkastens; sein Verhalten muss einen Verstoß gegen Sorgfalts- oder
+    Rücksichtnahmepflichten darstellen. Außerdem muss der Erklärende seinerseits
+    alles Zumutbare getan haben, damit die Erklärung den Adressaten erreicht
+    (BAG, 26.3.2015 - 2 AZR 483/14). Folge: Die Erklärung gilt als in dem
+    Zeitpunkt zugegangen, in dem sie ohne die Vereitelung zugegangen wäre; bei
+    grundloser Ablehnung der Entgegennahme im Zeitpunkt der Ablehnung. Teile der
+    Rechtsprechung (insbesondere im Arbeitsrecht) verlangen bei einer
+    fehlgeschlagenen Zustellung zusätzlich, dass der Erklärende unverzüglich einen
     neuen Zustellversuch unternimmt. Das bloße Hinterlegen eines
     Benachrichtigungszettels beim Einschreiben ist nach der Rechtsprechung noch
-    kein Zugang des Einschreibens; eine bloße Nichtabholung genügt für die
-    Vereitelung nicht ohne Weiteres.
+    kein Zugang des Einschreibens; eine bloße Nichtabholung genügt außerhalb von
+    Annahmeverweigerung und arglistiger Zugangsvereitelung nicht ohne Weiteres
+    (BGH, 26.11.1997 - VIII ZR 22/97, BGHZ 137, 205). Nach Treu und Glauben kann
+    sich ein Empfänger aber im Einzelfall nicht auf den verspäteten Zugang berufen,
+    wenn er mit der Erklärung rechnen musste und das hinterlegte Schreiben nicht
+    oder nicht zeitnah abholt (BAG, 7.11.2002 - 2 AZR 475/01). Beim
+    Einwurf-Einschreiben begründet jedenfalls das festgestellte Scan-Verfahren
+    keinen Anscheinsbeweis für den Zugang (BAG, 7.5.2026 - 2 AZR 184/25).
   norms:
   - § 130 Abs. 1 BGB
   - § 242 BGB
   quellen:
   - BGB, amtliche Fassung
+  - BAG, Urteil vom 26.3.2015 - 2 AZR 483/14
+  - BAG, Urteil vom 7.11.2002 - 2 AZR 475/01 (BAGE 103, 277)
+  - BAG, Urteil vom 7.5.2026 - 2 AZR 184/25
+  - BGH, Urteil vom 26.11.1997 - VIII ZR 22/97 (BGHZ 137, 205)
   - Eigenformulierung Redaktion
 - slug: zr-at-vs-annahmefrist
   type: norm
@@ -186,7 +200,7 @@ cards:
     Zusammenhang; es gibt das Verhandlungsergebnis zutreffend oder nur
     unerheblich abweichend wieder; der Absender ist schutzwürdig; der Empfänger
     widerspricht nicht unverzüglich. Dann gilt der Vertrag mit dem bestätigten
-    Inhalt. Die dogmatische Einordnung ist umstritten (Schweigen als Erklärung kraft Verkehrssitte oder bloße Vertrauens- und Beweislastfolge); nach h. M. kann der Empfänger, der die Bedeutung seines Schweigens verkannte, in entsprechender Anwendung des § 119 Abs. 1 BGB anfechten.
+    Inhalt. Die dogmatische Einordnung ist umstritten (Schweigen als Erklärung kraft Verkehrssitte oder bloße Vertrauens- und Beweislastfolge); eine Anfechtung wegen Irrtums über die Bedeutung des Schweigens, also darüber, dass das widerspruchslos hingenommene Schreiben für den Vertragsinhalt maßgeblich wird, ist nach ständiger Rechtsprechung ausgeschlossen (BGH, 7.10.1971 - VII ZR 177/69; BGHZ 11, 1, 5). Ob und wann eine Anfechtung entsprechend § 119 Abs. 1 BGB aus anderen Gründen in Betracht kommt, etwa bei einem Irrtum über den Inhalt des Schreibens, ist Frage des Einzelfalls und der Einordnung des Schweigens. Der Absender ist nicht schutzwürdig, wenn er das Verhandlungsergebnis bewusst unrichtig wiedergibt oder sich der Inhalt erheblich vom Verhandelten entfernt.
   norms:
   - § 362 HGB
   - § 516 Abs. 2 BGB
@@ -194,6 +208,8 @@ cards:
   quellen:
   - BGB, amtliche Fassung
   - HGB, amtliche Fassung
+  - BGH, Urteil vom 7.10.1971 - VII ZR 177/69
+  - BGH, Urteil vom 27.10.1953 - I ZR 111/53 (BGHZ 11, 1)
   - Eigenformulierung Redaktion
 - slug: zr-at-vs-dissens
   type: norm
