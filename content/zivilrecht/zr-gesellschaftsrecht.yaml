@@ -1,0 +1,448 @@
+topic:
+  slug: zr-gesellschaftsrecht
+  area: zivilrecht
+  title: 'Gesellschaftsrecht nach MoPeG: GbR, OHG, KG, GmbH'
+  parent: zivilrecht
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-ges-gbr-begriff
+  type: definition
+  front: Was ist eine GbR und wie unterscheidet das Gesetz rechtsfähige und nicht rechtsfähige
+    GbR (§ 705 BGB n. F.)?
+  back: 'Durch den Gesellschaftsvertrag verpflichten sich die Gesellschafter gegenseitig,
+    die Erreichung eines gemeinsamen Zwecks in der vertraglich bestimmten Weise zu fördern
+    (§ 705 Abs. 1 BGB). Seit dem Inkrafttreten des Gesetzes zur Modernisierung des Personengesellschaftsrechts
+    (MoPeG) zum 1.1.2024 unterscheidet § 705 Abs. 2 BGB zwei Typen: Die rechtsfähige Gesellschaft
+    (Außen-GbR) kann selbst Rechte erwerben und Verbindlichkeiten eingehen, wenn sie nach
+    dem gemeinsamen Willen der Gesellschafter am Rechtsverkehr teilnehmen soll; die nicht
+    rechtsfähige Gesellschaft (Innen-GbR) dient nur der Ausgestaltung der Rechtsbeziehungen
+    der Gesellschafter untereinander, zum Beispiel einer Fahrgemeinschaft oder einem Lottotipp.
+    Die rechtsfähige GbR ist parteifähig (§ 50 ZPO). Sie entsteht im Verhältnis
+    zu Dritten, sobald sie mit Zustimmung sämtlicher Gesellschafter am Rechtsverkehr teilnimmt,
+    spätestens mit der Eintragung im Gesellschaftsregister (§ 719 Abs. 1 BGB). Betreiben die
+    Gesellschafter ein Unternehmen unter gemeinschaftlichem Namen, wird die Teilnahme am Rechtsverkehr
+    vermutet (§ 705 Abs. 3 BGB).'
+  norms:
+  - § 705 Abs. 1 BGB
+  - § 705 Abs. 2 BGB
+  - § 705 Abs. 3 BGB
+  - § 719 Abs. 1 BGB
+  - § 50 ZPO
+  quellen:
+  - BGB, amtliche Fassung (Stand nach MoPeG, seit 1.1.2024)
+  - HGB und GmbHG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ges-gbr-vermoegen-register
+  type: norm
+  front: Wie ist das Vermögen der rechtsfähigen GbR zugeordnet und was bewirkt das Gesellschaftsregister
+    (§§ 707, 713 BGB)?
+  back: Nach § 713 BGB gehören die Beiträge der Gesellschafter, die für oder durch die Gesellschaft
+    erworbenen Rechte sowie die gegen sie begründeten Verbindlichkeiten zum Vermögen der rechtsfähigen
+    Gesellschaft;
+    das Vermögen steht damit der Gesellschaft selbst zu und nicht mehr den Gesellschaftern
+    in gesamthänderischer Verbundenheit. Die Rechte der Gesellschafter aus dem Gesellschaftsverhältnis
+    sind grundsätzlich nicht übertragbar (§ 711a BGB). Die Gesellschafter
+    können die Gesellschaft zur Eintragung in das Gesellschaftsregister anmelden (§ 707 BGB);
+    sie führt dann den Zusatz "eingetragene Gesellschaft bürgerlichen Rechts" oder "eGbR" (§ 707a
+    Abs. 2 BGB). Die Eintragung ist freiwillig, aber Voraussetzung dafür, dass für die GbR ein
+    Recht im Grundbuch eingetragen wird (§ 47 Abs. 2 GBO). Für die nicht rechtsfähige GbR bleibt es bei der schuldrechtlichen
+    Beziehung der Gesellschafter; sie hat kein eigenes Vermögen.
+  norms:
+  - § 713 BGB
+  - § 707 BGB
+  - § 711a BGB
+  - § 47 Abs. 2 GBO
+  quellen:
+  - BGB, amtliche Fassung (Stand nach MoPeG, seit 1.1.2024)
+  - HGB und GmbHG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ges-gbr-geschaeftsfuehrung-vertretung
+  type: norm
+  front: Wer führt die Geschäfte der GbR und wer vertritt sie (§§ 715, 720 BGB n. F.)?
+  back: Mangels abweichender Regelung im Gesellschaftsvertrag stehen die Geschäftsführung
+    und die Vertretung der Gesellschaft den Gesellschaftern gemeinschaftlich zu (Gesamtgeschäftsführung,
+    § 715 Abs. 3 BGB; Gesamtvertretung, § 720 Abs. 1 BGB). Der Gesellschaftsvertrag kann einzelnen
+    Gesellschaftern Einzelgeschäftsführung oder Einzelvertretungsbefugnis einräumen; Geschäftsführung
+    (Innenverhältnis) und Vertretung (Außenverhältnis) sind getrennt zu prüfen. Die Vertretungsbefugnis
+    erstreckt sich nach außen auf alle Geschäfte, und eine Beschränkung ihres Umfangs ist Dritten
+    gegenüber unwirksam (§ 720 Abs. 3 BGB); im Innenverhältnis binden Beschränkungen den Geschäftsführer. Handelt ein Gesellschafter im Namen
+    der Gesellschaft, wird nur die Gesellschaft Vertragspartei; die Gesellschafter haften
+    daneben nach § 721 BGB. Für die Zurechnung von Fehlverhalten der Geschäftsführer gilt
+    § 31 BGB analog (BGHZ 154, 88; die Gesetzesbegründung zum MoPeG geht von dieser
+    Zurechnung aus, BT-Drs. 19/27635, S. 166).
+  norms:
+  - § 715 Abs. 3 BGB
+  - § 720 Abs. 1 BGB
+  - § 720 Abs. 3 BGB
+  - § 31 BGB
+  quellen:
+  - BGB, amtliche Fassung (Stand nach MoPeG, seit 1.1.2024)
+  - HGB und GmbHG, amtliche Fassung
+  - BGH, Urteil vom 24.2.2003 - II ZR 385/99 (BGHZ 154, 88)
+  - BT-Drs. 19/27635, S. 166 (Begründung zu § 721 BGB-E)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ges-gbr-haftung-721
+  type: norm
+  front: Wie haften die Gesellschafter einer rechtsfähigen GbR für deren Verbindlichkeiten
+    (§ 721 BGB)?
+  back: 'Für die Verbindlichkeiten der Gesellschaft haften die Gesellschafter den Gläubigern
+    persönlich als Gesamtschuldner (§ 721 BGB). Die Haftung ist akzessorisch: Sie setzt eine
+    Verbindlichkeit der Gesellschaft voraus und folgt ihrem Bestand und Inhalt; der Gesellschafter
+    kann Einwendungen und Einreden der Gesellschaft geltend machen (§ 721b BGB). Sie ist unbeschränkt,
+    eine entgegenstehende Vereinbarung ist Dritten gegenüber unwirksam (§ 721 S. 2 BGB);
+    Hinweise auf eine Haftungsbeschränkung auf das Gesellschaftsvermögen ("GbR mbH") wirken
+    nur bei individualvertraglicher Vereinbarung mit dem Gläubiger. Wer in eine bestehende
+    Gesellschaft eintritt, haftet auch für Altverbindlichkeiten (§ 721a BGB). Eine interne Haftungsregelung
+    im Gesellschaftsvertrag wirkt nicht gegenüber Gläubigern; der Gesellschafter hat dann
+    Ausgleichsansprüche gegen die Gesellschaft und Mitgesellschafter (§ 426 BGB analog). Für
+    Vollstreckung in das Privatvermögen benötigt der Gläubiger einen Titel gegen den Gesellschafter
+    persönlich (§ 722 Abs. 2 BGB). Für die nicht rechtsfähige Gesellschaft gilt § 721 BGB nicht; hier haften
+    die Handelnden nach den allgemeinen Regeln (§§ 164 ff., § 179 BGB).'
+  norms:
+  - § 721 BGB
+  - § 721a BGB
+  - § 721b BGB
+  - § 722 BGB
+  - § 426 BGB
+  - § 164 BGB
+  quellen:
+  - BGB, amtliche Fassung (Stand nach MoPeG, seit 1.1.2024)
+  - HGB und GmbHG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ges-gbr-haftung-akzessorietaet
+  type: streitstand
+  front: Wie wurde die Gesellschafterhaftung bei der GbR früher begründet (Doppelverpflichtung
+    oder Akzessorietät)?
+  back: Vor der Anerkennung der Rechtsfähigkeit der Außen-GbR wurde die persönliche Haftung
+    der Gesellschafter damit erklärt, dass der Vertreter alle Gesellschafter zugleich persönlich
+    verpflichtet (Doppelverpflichtungslehre). Der BGH hat die Rechtsfähigkeit der Außen-GbR
+    anerkannt (BGHZ 146, 341) und die Haftung der Gesellschafter in entsprechender Anwendung
+    des § 128 HGB a. F. akzessorisch zur Verbindlichkeit der Gesellschaft ausgestaltet (Akzessorietätstheorie,
+    BGHZ 142, 315). Die Gesellschaft selbst ist Vertragspartei; die Gesellschafter haften
+    für deren Schuld. Die Akzessorietät ist inzwischen in § 721 BGB gesetzlich verankert,
+    sodass der frühere Streit überholt ist. In Klausuren sollte die Haftung aus § 721 BGB
+    geprüft werden; die Rechtsprechung ist nur zur Erklärung des Hintergrunds wichtig. Auch
+    die Haftung eintretender Gesellschafter für Altverbindlichkeiten hat der BGH bei der GbR
+    in analoger Anwendung des § 130 HGB a. F. bejaht; sie ist heute in § 721a BGB geregelt.
+  norms:
+  - § 721 BGB
+  - § 128 HGB
+  quellen:
+  - BGHZ 146, 341
+  - BGHZ 142, 315
+  - BGH, Urteil vom 29.1.2001 - II ZR 331/00 (BGHZ 146, 341)
+  - BGB, amtliche Fassung
+  stand: 2026-10
+- slug: zr-ges-ohg-begriff
+  type: definition
+  front: Wann liegt eine OHG vor (§§ 105, 107, 123 HGB n. F.)?
+  back: Eine OHG ist eine Gesellschaft, deren Zweck auf den Betrieb eines Handelsgewerbes
+    unter gemeinschaftlicher Firma gerichtet ist und bei der kein Gesellschafter gegenüber
+    den Gesellschaftsgläubigern in der Haftung beschränkt ist (§ 105 Abs. 1 HGB). Eine Gesellschaft,
+    deren Gewerbebetrieb nach Art und Umfang keinen kaufmännisch eingerichteten Geschäftsbetrieb
+    erfordert (§ 1 Abs. 2 HGB), oder die nur eigenes Vermögen verwaltet, wird erst mit der
+    Eintragung der Firma im Handelsregister zur OHG (§ 107 Abs. 1 HGB). Die OHG ist rechtsfähig
+    und kann Rechte erwerben und Verbindlichkeiten eingehen (§ 105 Abs. 2 HGB); ergänzend gelten
+    die Vorschriften des BGB über die Gesellschaft entsprechend (§ 105 Abs. 3 HGB). Im Verhältnis
+    zu Dritten entsteht sie mit der Eintragung im Handelsregister oder, wenn früher, sobald sie
+    mit Zustimmung sämtlicher Gesellschafter am Rechtsverkehr teilnimmt (§ 123 Abs. 1 HGB).
+  norms:
+  - § 105 Abs. 1 HGB
+  - § 105 Abs. 2 HGB
+  - § 107 Abs. 1 HGB
+  - § 123 HGB
+  quellen:
+  - HGB, amtliche Fassung (nach MoPeG)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ges-ohg-vertretung-124
+  type: norm
+  front: Wie wird die OHG vertreten (§ 124 HGB n. F.; früher § 125 HGB)?
+  back: Zur Vertretung der OHG ist jeder Gesellschafter befugt, wenn der Gesellschaftsvertrag
+    nichts anderes bestimmt (Einzelvertretung, § 124 Abs. 1 HGB). Der Gesellschaftsvertrag kann einzelne Gesellschafter von der Vertretung ausschließen (§ 124 Abs. 1 HGB) oder Gesamtvertretung anordnen (§ 124 Abs. 2 HGB);
+    solche Abweichungen sind in das Handelsregister einzutragen und wirken gegenüber Dritten
+    nur nach § 15 HGB. Die Vertretungsmacht ist grundsätzlich unbeschränkt und unbeschränkbar;
+    eine Beschränkung ist Dritten gegenüber unwirksam (§ 124 Abs. 4 HGB). Der vertretungsbefugte Gesellschafter handelt als Organ der OHG; deren
+    Verschulden wird ihr nach § 31 BGB analog zugerechnet. Das Handeln eines Gesellschafters
+    im Namen der OHG verpflichtet die Gesellschaft; die Mitgesellschafter haften daneben nach
+    § 126 HGB n. F. persönlich.
+  norms:
+  - § 124 HGB
+  - § 15 HGB
+  - § 31 BGB
+  quellen:
+  - HGB, amtliche Fassung (nach MoPeG)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ges-ohg-haftung-126
+  type: norm
+  front: Wie haften die Gesellschafter einer OHG (§ 126 HGB n. F., früher § 128 HGB)?
+  back: 'Die Gesellschafter einer OHG haften für die Verbindlichkeiten der Gesellschaft den
+    Gläubigern als Gesamtschuldner persönlich und unbeschränkt (§ 126 S. 1 HGB; früher
+    § 128 HGB a. F.). Eine abweichende Vereinbarung ist Dritten gegenüber unwirksam (§ 126
+    S. 2 HGB). Die Haftung ist akzessorisch zur Gesellschaftsschuld: Besteht die Verbindlichkeit
+    nicht oder nicht mehr, entfällt sie; der Gesellschafter kann sich auf Einwendungen der
+    Gesellschaft berufen (§ 128 HGB). Wer in eine bestehende OHG eintritt, haftet auch für
+    Altverbindlichkeiten (§ 127 HGB). Der ausgeschiedene Gesellschafter haftet für bis zum
+    Ausscheiden begründete Verbindlichkeiten nur, wenn sie vor Ablauf von fünf Jahren nach dem
+    Ausscheiden fällig werden und innerhalb dieser Frist festgestellt oder vollstreckt werden;
+    die Frist beginnt mit Kenntnis des Gläubigers vom Ausscheiden oder mit dessen Eintragung
+    im Handelsregister (§ 137 Abs. 1 HGB n. F., früher § 160 HGB a. F.). Für die Vollstreckung
+    in das Privatvermögen eines Gesellschafters braucht der Gläubiger einen gegen ihn gerichteten
+    Titel (§ 129 Abs. 2 HGB). Der Zahlende
+    hat einen Regressanspruch gegen die Gesellschaft und die Mitgesellschafter.'
+  norms:
+  - § 126 HGB
+  - § 127 HGB
+  - § 128 HGB
+  - § 129 HGB
+  - § 137 HGB
+  quellen:
+  - HGB, amtliche Fassung (nach MoPeG)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ges-kg-haftung-171
+  type: norm
+  front: Wie haftet der Kommanditist in der KG (§§ 161, 171, 176 HGB)?
+  back: Die KG ist eine Gesellschaft, bei der bei einem oder einigen Gesellschaftern (Kommanditisten)
+    die Haftung gegenüber den Gesellschaftsgläubigern auf einen bestimmten Betrag (Haftsumme)
+    beschränkt ist, während mindestens ein Gesellschafter (Komplementär) unbeschränkt haftet
+    (§ 161 Abs. 1 HGB); auf die KG sind im Übrigen die Vorschriften über die OHG anzuwenden
+    (§ 161 Abs. 2 HGB). Der Kommanditist haftet den Gläubigern bis zur Höhe seiner Haftsumme
+    unmittelbar; die Haftung ist ausgeschlossen, soweit die Einlage geleistet ist (§ 171 Abs.
+    1 HGB). Wird die Einlage zurückgezahlt, lebt die Haftung wieder auf (§ 172 Abs. 4 HGB).
+    Von der Vertretung der KG ist der Kommanditist ausgeschlossen (§ 170 HGB). Nimmt die
+    Gesellschaft vor der Eintragung mit Zustimmung des Kommanditisten am Rechtsverkehr teil, haftet
+    er für bis zur Eintragung begründete Verbindlichkeiten wie ein persönlich haftender Gesellschafter, es sei denn, dem Gläubiger
+    war die Kommanditistenstellung bekannt (§ 176 Abs. 1 HGB).
+  norms:
+  - § 161 HGB
+  - § 170 HGB
+  - § 171 Abs. 1 HGB
+  - § 172 Abs. 4 HGB
+  - § 176 HGB
+  quellen:
+  - HGB, amtliche Fassung (nach MoPeG)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ges-gmbh-trennungsprinzip
+  type: definition
+  front: Was bedeutet das Trennungsprinzip bei der GmbH (§ 13 GmbHG)?
+  back: 'Die GmbH ist eine juristische Person (§ 13 Abs. 1 GmbHG) und eine Handelsgesellschaft,
+    die Kaufmannseigenschaft ergibt sich aus der Rechtsform (§ 13 Abs. 3 GmbHG, § 6 HGB).
+    Für ihre Verbindlichkeiten haftet den Gläubigern nur das Gesellschaftsvermögen (§ 13 Abs.
+    2 GmbHG); die Gesellschafter haften grundsätzlich nur mit ihrer Einlage (Haftungsbeschränkung).
+    Das Stammkapital beträgt mindestens 25.000 Euro (§ 5 Abs. 1 GmbHG); die Unternehmergesellschaft
+    (haftungsbeschränkt) kann mit geringerem Stammkapital gegründet werden (§ 5a GmbHG). Zum
+    Schutz der Gläubiger gelten Kapitalaufbringung (§§ 19, 24 GmbHG) und Kapitalerhaltung
+    (§ 30 GmbHG): Auszahlungen an Gesellschafter, die das zur Erhaltung des Stammkapitals
+    erforderliche Vermögen mindern, sind verboten. Umgekehrt haftet das Gesellschaftsvermögen
+    nicht für private Schulden der Gesellschafter.'
+  norms:
+  - § 13 Abs. 1 GmbHG
+  - § 13 Abs. 2 GmbHG
+  - § 5 Abs. 1 GmbHG
+  - § 30 GmbHG
+  quellen:
+  - GmbHG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ges-gmbh-vertretung
+  type: norm
+  front: Wer vertritt die GmbH und wer haftet vor der Eintragung (§§ 35, 37, 11 GmbHG)?
+  back: Die GmbH wird durch ihre Geschäftsführer gerichtlich und außergerichtlich vertreten
+    (§ 35 Abs. 1 GmbHG). Sind mehrere Geschäftsführer bestellt, sind sie nur gemeinschaftlich
+    zur Vertretung befugt, wenn die Satzung nichts anderes bestimmt (Gesamtvertretung, § 35
+    Abs. 2 S. 1 GmbHG). Die Vertretungsmacht ist Dritten gegenüber unbeschränkt und unbeschränkbar
+    (§ 37 Abs. 2 GmbHG); im Innenverhältnis ist der Geschäftsführer an Satzung und Weisungen
+    gebunden (§ 37 Abs. 1 GmbHG). Gegenüber der Gesellschaft haftet er bei Pflichtverletzung
+    nach § 43 Abs. 2 GmbHG. Vor der Eintragung ins Handelsregister besteht die Gesellschaft
+    als solche nicht (§ 11 Abs. 1 GmbHG); eine Vor-GmbH (nach Beurkundung des Gesellschaftsvertrags)
+    ist als Gesellschaft sui generis rechtsfähig. Wer vor der Eintragung im Namen der Gesellschaft
+    handelt, haftet persönlich (Handelndenhaftung, § 11 Abs. 2 GmbHG).
+  norms:
+  - § 35 Abs. 1 GmbHG
+  - § 35 Abs. 2 GmbHG
+  - § 37 Abs. 2 GmbHG
+  - § 11 Abs. 2 GmbHG
+  - § 43 Abs. 2 GmbHG
+  quellen:
+  - GmbHG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ges-gmbh-durchgriff
+  type: rechtsprechung
+  front: Wann besteht ein Durchgriff auf die Gesellschafter der GmbH (Existenzvernichtungshaftung)?
+  back: 'Die Haftungsbeschränkung des § 13 Abs. 2 GmbHG wird nur ausnahmsweise durchbrochen.
+    Anerkannt ist die Haftung des Gesellschafters aus § 826 BGB wegen existenzvernichtenden
+    Eingriffs: Wer der GmbH Vermögen ohne angemessenen Ausgleich entzieht und sie dadurch
+    in die Insolvenz treibt, haftet der Gesellschaft auf Schadensersatz (BGHZ 173, 246 – Trihotel).
+    Es handelt sich dogmatisch um eine Innenhaftung gegenüber der Gesellschaft, die ein Gläubiger
+    durch Pfändung verwerten kann; der Anspruch ist nach dem BGH als Fallgruppe der vorsätzlichen
+    sittenwidrigen Schädigung (§ 826 BGB) ausgestaltet. Daneben kommen die Haftung bei Vermögensvermischung,
+    die Rechtsscheinhaftung bei fehlendem Rechtsformzusatz (Handelnder haftet analog § 179
+    BGB) und die Haftung des Geschäftsführers nach § 43 GmbHG sowie nach § 823 Abs. 2 BGB i. V. m. § 15a InsO (Insolvenzverschleppung) in Betracht.
+    Eine allgemeine Durchgriffshaftung wegen bloßer Unterkapitalisierung lehnt die Rechtsprechung
+    ab.'
+  norms:
+  - § 826 BGB
+  - § 13 Abs. 2 GmbHG
+  - § 43 GmbHG
+  quellen:
+  - BGHZ 173, 246
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: zr-schema-ges-gesellschafterhaftung
+  title: Persönliche Haftung eines Gesellschafters für Gesellschaftsschulden
+  norms:
+  - § 721 BGB
+  - § 126 HGB
+  - § 13 Abs. 2 GmbHG
+  quellen:
+  - BGB, amtliche Fassung (Stand nach MoPeG, seit 1.1.2024)
+  - HGB und GmbHG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Rechtsform bestimmen
+    hinweis: 'Nicht rechtsfähige Innen-GbR: keine Gesellschaftsverbindlichkeiten, Handelnde
+      haften selbst.'
+    children:
+    - label: 1. Rechtsfähige GbR, § 705 Abs. 2 BGB
+    - label: 2. OHG, § 105 HGB, oder KG, § 161 HGB
+    - label: 3. Kapitalgesellschaft, § 13 GmbHG
+  - label: II. Verbindlichkeit der Gesellschaft besteht
+    children:
+    - label: 1. Wirksame Vertretung der Gesellschaft (§§ 720 BGB, 124 HGB, 35 GmbHG)
+    - label: 2. Anspruchsgrundlage gegen die Gesellschaft (z. B. § 433 Abs. 2 BGB)
+  - label: III. Haftung des Gesellschafters
+    hinweis: 'Haftung ist akzessorisch: Einwendungen der Gesellschaft gelten für den Gesellschafter.'
+    children:
+    - label: '1. GbR: § 721 BGB'
+    - label: '2. OHG: § 126 Abs. 1 HGB'
+    - label: '3. KG: Komplementär wie OHG, Kommanditist §§ 171, 172, 176 HGB'
+    - label: '4. GmbH: grundsätzlich keine, § 13 Abs. 2 GmbHG; Ausnahmen § 826 BGB, § 11 Abs.
+        2 GmbHG'
+  - label: IV. Einwendungen
+    children:
+    - label: 1. Interne Haftungsbeschränkung wirkt nicht gegenüber Gläubigern
+    - label: '2. Ausgeschiedener Gesellschafter: Nachhaftung begrenzt, § 137 HGB, § 728b BGB'
+  - label: V. Vollstreckung und Regress
+    hinweis: Titel gegen den Gesellschafter persönlich erforderlich; Innenregress gegen Gesellschaft
+      und Mitgesellschafter.
+faelle:
+- slug: zr-fall-ges-imbiss-gbr
+  title: Der gemeinsame Imbiss
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung (Stand nach MoPeG, seit 1.1.2024)
+  facts: A und B betreiben seit 2025 gemeinsam einen kleinen Imbissstand. Sie haben dazu mündlich
+    einen Gesellschaftsvertrag geschlossen, nach dem jeder von beiden berechtigt sein soll,
+    Geschäfte für den Imbiss im Namen der Gesellschaft allein zu tätigen; im Innenverhältnis
+    soll die Haftung der Gesellschafter auf ihre Einlage von je 2.000 Euro beschränkt sein.
+    Der Betrieb erfordert keinen kaufmännisch eingerichteten Geschäftsbetrieb; eine Eintragung
+    im Handelsregister oder Gesellschaftsregister besteht nicht. A bestellt im Namen der Gesellschaft
+    bei Lieferant L einen Gastrokühlschrank für 8.000 Euro und gibt dabei deutlich zu erkennen,
+    dass er für die Gesellschaft handelt. Die Gesellschaft zahlt nicht; L verlangt Zahlung
+    von B persönlich und beruft sich nicht auf einen Vertrag mit B.
+  question: Kann L von B persönlich Zahlung von 8.000 Euro verlangen?
+  steps:
+  - prompt: Welche Rechtsform liegt vor und ist sie rechtsfähig?
+    erwartung: Eine GbR (§ 705 Abs. 1 BGB), da der Betrieb kein Handelsgewerbe ist und die
+      Gesellschaft nicht eingetragen ist. Sie ist rechtsfähig nach § 705 Abs. 2 BGB, weil
+      sie nach dem Willen der Gesellschafter am Rechtsverkehr teilnimmt (Außen-GbR).
+  - prompt: Besteht eine Verbindlichkeit der Gesellschaft gegenüber L?
+    erwartung: 'Ja. Die Gesellschaft ist durch A wirksam vertreten worden: A war nach dem
+      Gesellschaftsvertrag einzelvertretungsbefugt und handelte erkennbar im Namen der Gesellschaft
+      (§ 720 BGB, § 164 Abs. 1 BGB). Es besteht ein Kaufpreisanspruch gegen die Gesellschaft
+      aus § 433 Abs. 2 BGB.'
+  - prompt: Haftet B persönlich?
+    erwartung: Ja. Nach § 721 BGB haften die Gesellschafter einer rechtsfähigen GbR für deren
+      Verbindlichkeiten persönlich als Gesamtschuldner. Die Haftung ist akzessorisch zur Gesellschaftsschuld
+      und unbeschränkt.
+  - prompt: Wirkt die interne Haftungsbeschränkung gegenüber L?
+    erwartung: 'Nein. Die Haftungsbeschränkung gilt nur im Innenverhältnis der Gesellschafter.
+      Eine entgegenstehende Vereinbarung ist Dritten gegenüber unwirksam (§ 721 S. 2 BGB),
+      und L hat sie nicht vereinbart. B hat bei Zahlung einen Ausgleichsanspruch gegen A und
+      die Gesellschaft (§ 426 BGB analog). Ergebnis: L kann von B Zahlung von 8.000 Euro verlangen.
+      Für die Vollstreckung braucht er einen Titel gegen B (§ 722 Abs. 2 BGB).'
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Qualifikation als rechtsfähige (Außen-)GbR nach § 705 Abs. 2 BGB
+      weight: 2.0
+      required: true
+      norms:
+      - § 705 Abs. 2 BGB
+      keywords:
+      - rechtsfähige Gesellschaft
+      - Außen-GbR
+      - § 705 Abs. 2 BGB
+      - Teilnahme am Rechtsverkehr
+      - GbR
+      card_slugs:
+      - zr-ges-gbr-begriff
+    - id: p2
+      label: Wirksame Vertretung der Gesellschaft durch A, Verbindlichkeit der Gesellschaft
+      weight: 1.0
+      required: false
+      keywords:
+      - Vertretungsmacht
+      - Einzelvertretung
+      - § 720 BGB
+      - im Namen der Gesellschaft
+      - Offenkundigkeit
+      card_slugs:
+      - zr-ges-gbr-geschaeftsfuehrung-vertretung
+    - id: p3
+      label: Persönliche akzessorische Gesellschafterhaftung nach § 721 BGB
+      weight: 3.0
+      required: true
+      norms:
+      - § 721 BGB
+      keywords:
+      - § 721 BGB
+      - persönliche Haftung
+      - Gesamtschuldner
+      - akzessorische Haftung
+      - Gesellschafterhaftung
+      card_slugs:
+      - zr-ges-gbr-haftung-721
+      - zr-ges-gbr-haftung-akzessorietaet
+    - id: p4
+      label: Interne Haftungsbeschränkung wirkt nicht gegenüber Gläubigern
+      weight: 2.0
+      required: true
+      keywords:
+      - Innenverhältnis
+      - § 721 S. 2 BGB
+      - entgegenstehende Vereinbarung
+      - Dritten gegenüber unwirksam
+      - Ausgleichsanspruch
+      card_slugs:
+      - zr-ges-gbr-haftung-721
+    - id: p5
+      label: 'Vollstreckungsvoraussetzung: Titel gegen den Gesellschafter persönlich'
+      weight: 1.0
+      required: false
+      keywords:
+      - Titel gegen den Gesellschafter
+      - § 722 Abs. 2 BGB
+      - Privatvermögen
+      - Vollstreckung
+      - Regress
+      - § 426 BGB
+      card_slugs:
+      - zr-ges-gbr-haftung-721

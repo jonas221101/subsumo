@@ -1,0 +1,407 @@
+topic:
+  slug: zr-sr-grundpfandrechte-pfandrecht
+  area: zivilrecht
+  title: >-
+    Grundpfandrechte (Hypothek, Grundschuld) und Pfandrecht an beweglichen Sachen
+  parent: zr-sachenrecht-eigentumsherausgabe-985
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-gpr-hypothek-1113
+  type: definition
+  front: Was ist eine Hypothek, und wodurch ist sie gekennzeichnet?
+  back: >-
+    Die Hypothek ist ein Grundpfandrecht, bei dem ein Grundstück in der Weise belastet
+    wird, dass an denjenigen, zu dessen Gunsten die Belastung erfolgt, eine bestimmte
+    Geldsumme zur Befriedigung wegen einer ihm zustehenden Forderung aus dem Grundstück
+    zu zahlen ist (§ 1113 Abs. 1 BGB). Sie ist streng akzessorisch: Sie setzt eine
+    Forderung voraus, folgt ihr bei der Übertragung (§ 1153 BGB) und geht beim Erlöschen
+    der Forderung als Grundschuld auf den Eigentümer über (§ 1163 Abs. 1 S. 2, § 1177
+    BGB). Besteht die Forderung nicht, steht die Hypothek dem Eigentümer als Grundschuld
+    zu (§ 1163 Abs. 1 S. 1 BGB). Die Bestellung erfolgt durch Einigung und Eintragung
+    (§ 873 BGB); bei der Briefhypothek kommt die Übergabe des Hypothekenbriefs hinzu
+    (§ 1117 BGB), sofern die Erteilung nicht ausgeschlossen wurde (§ 1116 BGB). Die
+    Hypothek haftet nur dinglich; die persönliche Haftung ergibt sich aus der Forderung.
+  norms:
+  - § 1113 BGB
+  - § 1153 BGB
+  - § 1163 BGB
+  - § 1116 BGB
+  - § 1117 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gpr-grundschuld-1191
+  type: definition
+  front: >-
+    Was ist eine Grundschuld, und wie unterscheidet sie sich von der Hypothek?
+  back: >-
+    Bei der Grundschuld wird ein Grundstück in der Weise belastet, dass an denjenigen,
+    zu dessen Gunsten die Belastung erfolgt, eine bestimmte Geldsumme aus dem Grundstück
+    zu zahlen ist (§ 1191 BGB). Anders als die Hypothek ist die Grundschuld nicht
+    von einer Forderung abhängig (nicht akzessorisch); auf sie sind die Hypothekenvorschriften
+    entsprechend anzuwenden, soweit sie nicht die Forderung voraussetzen (§ 1192 Abs.
+    1 BGB). Dadurch ist sie flexibel und verkehrsfähig: Sie kann für wechselnde oder
+    neue Forderungen verwendet werden und bleibt bestehen, wenn die Forderung erlischt.
+    In der Praxis überwiegt die Sicherungsgrundschuld, bei der die Grundschuld durch
+    einen Sicherungsvertrag an eine Forderung gebunden wird. Die Übertragung erfolgt
+    nach §§ 1154, 398 BGB mit Eintragung (§ 873 BGB).
+  norms:
+  - § 1191 BGB
+  - § 1192 Abs. 1 BGB
+  - § 1154 BGB
+  - § 873 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gpr-sicherungsvertrag-zweckerklaerung
+  type: definition
+  front: Was regelt der Sicherungsvertrag bei der Sicherungsgrundschuld?
+  back: >-
+    Die Sicherungsgrundschuld wird durch einen schuldrechtlichen Sicherungsvertrag
+    (Sicherungsabrede, Zweckerklärung) an die gesicherte Forderung gebunden. Er bestimmt,
+    welche Forderungen gesichert sind, wann die Grundschuld verwertet werden darf
+    und unter welchen Voraussetzungen der Sicherungsgeber (Eigentümer) die Grundschuld
+    zurückverlangen kann. Dinglich ist die Grundschuld abstrakt; das Sicherungsinteresse
+    wirkt nur im Innenverhältnis. Nach Tilgung der gesicherten Forderung steht dem
+    Eigentümer ein Rückgewähranspruch zu: Der Gläubiger muss die Grundschuld auf Verlangen
+    zurückgewähren, und zwar durch Löschung, Verzicht oder Abtretung an den Eigentümer.
+    Der Rückgewähranspruch begründet auch eine Einrede gegen die Verwertung. Die Befugnis
+    zur Verwertung ohne Sicherungszweck entfällt.
+  norms:
+  - § 1191 BGB
+  - § 1192 Abs. 1a BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gpr-einreden-1137-1157
+  type: norm
+  front: >-
+    Welche Einreden stehen dem Eigentümer gegen die Hypothek zu, und wann schützt
+    der gute Glaube den Erwerber?
+  back: >-
+    Der Eigentümer kann gegen die Hypothek die dem persönlichen Schuldner gegen die
+    Forderung zustehenden Einreden geltend machen (§ 1137 Abs. 1 BGB) sowie Einreden,
+    die ihm selbst gegen die Hypothek zustehen (§ 1157 S. 1 BGB, etwa eine Stundungsabrede
+    mit dem Gläubiger). Diese Einreden bleiben auch gegenüber einem neuen Gläubiger
+    bestehen. Ein gutgläubiger Erwerber der Hypothek ist aber nach § 1157 S. 2 BGB
+    i. V. m. § 892 BGB geschützt, wenn die Einrede nicht im Grundbuch eingetragen
+    und ihm nicht bekannt ist. Für die Forderung gilt kraft § 1138 BGB der öffentliche
+    Glaube des Grundbuchs entsprechend: Der Erwerber darf auf Bestehen und Einredefreiheit
+    der Forderung vertrauen. Dieser Gutglaubensschutz bei der Hypothek unterscheidet
+    sie von der Sicherungsgrundschuld, bei der § 1192 Abs. 1a BGB den Einredeschutz
+    einschränkt.
+  norms:
+  - § 1137 BGB
+  - § 1138 BGB
+  - § 1157 BGB
+  - § 892 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gpr-einreden-1192-abs1a
+  type: norm
+  front: Was ordnet § 1192 Abs. 1a BGB für die Sicherungsgrundschuld an?
+  back: >-
+    Ist die Grundschuld zur Sicherung eines Anspruchs verschafft worden (Sicherungsgrundschuld),
+    können Einreden, die dem Eigentümer aufgrund des Sicherungsvertrags mit dem bisherigen
+    Gläubiger gegen die Grundschuld zustehen oder sich aus dem Sicherungsvertrag ergeben,
+    auch jedem Erwerber der Grundschuld entgegengesetzt werden; § 1157 S. 2 BGB findet
+    insoweit keine Anwendung (§ 1192 Abs. 1a S. 1 BGB). Im Übrigen bleibt § 1157 BGB
+    unberührt (S. 2). Damit ist der gutgläubig einredefreie Erwerb der Sicherungsgrundschuld
+    ausgeschlossen: Wer eine Sicherungsgrundschuld erwirbt, muss sich die Einreden
+    aus dem Sicherungsvertrag entgegenhalten lassen, auch wenn er sie nicht kannte
+    (Risikobegrenzungsgesetz 2008). Wichtigstes Beispiel: Die gesicherte Forderung
+    ist getilgt, der Sicherungszweck entfallen; die Verwertung ist treuwidrig.
+  norms:
+  - § 1192 Abs. 1a BGB
+  - § 1157 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gpr-uebertragung
+  type: norm
+  front: Wie werden Hypothek und Grundschuld übertragen?
+  back: >-
+    Die Hypothek kann nicht ohne die Forderung übertragen werden (§ 1153 BGB); mit
+    der Abtretung der Forderung geht die Hypothek kraft Gesetzes auf den neuen Gläubiger
+    über. Bei der Buchhypothek ist zur Abtretung der Forderung die Einigung und Eintragung
+    nötig (§ 1154 Abs. 3 BGB i. V. m. § 873), bei der Briefhypothek genügt die schriftliche
+    Abtretungserklärung und Übergabe des Briefs (§ 1154 Abs. 1 BGB). Die Grundschuld
+    wird nach §§ 1154, 398 BGB übertragen: Bei der Buchgrundschuld ist Einigung und
+    Eintragung (§§ 873, 1154 Abs. 3 BGB) erforderlich, bei der Briefgrundschuld Abtretungserklärung
+    in Schriftform mit Briefübergabe. Gutgläubiger Erwerb ist nach § 892 BGB möglich;
+    bei Briefrechten tritt für die Abtretungskette der öffentliche Glaube beglaubigter
+    Abtretungserklärungen nach § 1155 BGB hinzu. Die Einreden gegen den Erwerber der Sicherungsgrundschuld
+    regelt § 1192 Abs. 1a BGB.
+  norms:
+  - § 1153 BGB
+  - § 1154 BGB
+  - § 1155 BGB
+  - § 398 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gpr-verwertung-1147
+  type: norm
+  front: Wie verwertet der Gläubiger ein Grundpfandrecht?
+  back: >-
+    Der Gläubiger kann seine Befriedigung aus dem Grundstück im Wege der Zwangsvollstreckung
+    suchen (§ 1147 BGB, § 1192 Abs. 1 BGB). Er braucht dazu einen Duldungstitel gegen
+    den Eigentümer (Klage auf Duldung der Zwangsvollstreckung); in der Praxis unterwirft
+    sich der Eigentümer in der notariellen Urkunde der sofortigen Zwangsvollstreckung
+    (§ 794 Abs. 1 Nr. 5 ZPO), ergänzend mit abstraktem Schuldanerkenntnis (§ 780,
+    781 BGB). Die Verwertung erfolgt durch Zwangsversteigerung oder Zwangsverwaltung
+    nach dem ZVG. Das Kapital der Grundschuld wird erst nach Kündigung fällig, die Eigentümer wie Gläubiger zusteht (§ 1193 Abs. 1 BGB, Frist sechs Monate); abweichende Bestimmungen sind nur zulässig, solange die Grundschuld nicht der Sicherung einer Geldforderung dient (§ 1193 Abs. 2 BGB), bei der Sicherungsgrundschuld also nicht. Die Haftung erstreckt
+    sich auf das Grundstück samt Bestandteilen, Erzeugnissen, Zubehör und Miet- und
+    Pachtzinsen (Haftungsverband, §§ 1120 ff. BGB). Einreden des Eigentümers sind
+    im Duldungsprozess zu prüfen.
+  norms:
+  - § 1147 BGB
+  - § 1193 BGB
+  - § 1120 BGB
+  - § 794 Abs. 1 Nr. 5 ZPO
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gpr-pfandrecht-bewegliche-sachen
+  type: norm
+  front: >-
+    Wie wird ein Pfandrecht an beweglichen Sachen bestellt und wodurch ist es gekennzeichnet?
+  back: >-
+    Zur Bestellung eines Pfandrechts an einer beweglichen Sache sind die Einigung
+    zwischen Eigentümer und Gläubiger über die Entstehung des Pfandrechts und die
+    Übergabe der Sache erforderlich (§ 1205 Abs. 1 S. 1 BGB); statt der Übergabe genügt
+    Einigung, wenn der Gläubiger schon Besitzer ist (§ 1205 Abs. 1 S. 2), die Abtretung
+    des Herausgabeanspruchs mit Anzeige an den Besitzer (§ 1205 Abs. 2) oder die Einräumung
+    qualifizierten Mitbesitzes (§ 1206 BGB). Das Pfandrecht ist akzessorisch: Es sichert
+    eine Forderung und erlischt mit ihr (§ 1204 Abs. 1, § 1252 BGB). Das vertragliche
+    Pfandrecht ist ein Besitzpfandrecht: Der Verpfänder verliert die unmittelbare
+    Sachherrschaft, weshalb in der Kreditpraxis häufig die Sicherungsübereignung gewählt
+    wird. Gutgläubiger Erwerb ist wie beim Eigentumserwerb möglich (§ 1207 BGB mit
+    §§ 932, 934, 935). Vom gesetzlichen Pfandrecht (§§ 562 ff. BGB) ist das vertragliche
+    Pfandrecht zu unterscheiden.
+  norms:
+  - § 1204 BGB
+  - § 1205 BGB
+  - § 1206 BGB
+  - § 1207 BGB
+  - § 1252 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gpr-pfandverwertung-1228
+  type: norm
+  front: Wie erfolgt die Verwertung eines Faustpfands?
+  back: >-
+    Der Pfandgläubiger befriedigt sich aus dem Pfand durch Verkauf (§ 1228 Abs. 1
+    BGB). Der Verkauf ist erst zulässig, wenn die Forderung ganz oder teilweise fällig
+    ist (Pfandreife, § 1228 Abs. 2 BGB), und hat im Wege öffentlicher Versteigerung
+    zu erfolgen (§ 1235 Abs. 1 BGB). Der Verkauf ist dem Eigentümer zuvor anzudrohen (die Androhung darf unterbleiben, wenn sie untunlich ist), und es ist eine Wartefrist von einem Monat nach der Androhung einzuhalten (§ 1234 BGB). Der Erwerber erlangt bei
+    rechtmäßiger Veräußerung das Eigentum, als hätte er es vom Eigentümer erworben
+    (§ 1242 Abs. 1 BGB); bei Verfahrensmängeln gilt § 1244 BGB. Der Erlös tritt an
+    die Stelle des Pfandes. Vereinbarungen vor Pfandreife, nach denen dem Gläubiger
+    das Eigentum zufallen soll, sind nichtig (Verfallklausel, § 1229 BGB).
+  norms:
+  - § 1228 BGB
+  - § 1234 BGB
+  - § 1235 BGB
+  - § 1229 BGB
+  - § 1242 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gpr-pfandrecht-forderung
+  type: norm
+  front: Wie wird eine Forderung verpfändet?
+  back: >-
+    Ein Pfandrecht an einer Forderung wird nach den Vorschriften über die Übertragung
+    der Forderung bestellt (§ 1274 Abs. 1 S. 1 BGB), also durch Einigung zwischen
+    Gläubiger und Pfandgläubiger; zusätzlich ist die Anzeige der Verpfändung an den
+    Schuldner erforderlich (§ 1280 BGB). Das Pfandrecht ist akzessorisch zu der gesicherten
+    Forderung. Verpfändbar sind nur Forderungen, die übertragbar sind (§ 1274 Abs.
+    2 BGB). Nach Pfandreife darf der Pfandgläubiger die Forderung einziehen (§ 1282
+    BGB); vor der Pfandreife kann der Schuldner nur an Gläubiger und Pfandgläubiger
+    gemeinschaftlich leisten (§ 1281 BGB). Die Verpfändung ist ein Mittel der Kreditsicherung,
+    etwa bei Bankguthaben, Lebensversicherungen und Sparbüchern. In der Praxis ist
+    die Sicherungsabtretung verbreiteter.
+  norms:
+  - § 1274 BGB
+  - § 1280 BGB
+  - § 1282 BGB
+  - § 1281 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: zr-schema-gpr-grundschuld
+  title: >-
+    Anspruch des Gläubigers auf Duldung der Zwangsvollstreckung aus einer Sicherungsgrundschuld
+  norms:
+  - § 1147 BGB
+  - § 1191 BGB
+  - § 1192 Abs. 1 BGB
+  - § 1192 Abs. 1a BGB
+  - § 1193 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Bestehen der Grundschuld
+    children:
+    - label: 1. Einigung und Eintragung, § 873 BGB
+    - label: >-
+        2. Berechtigung des Bestellers (Eigentümer oder gutgläubiger Erwerb, § 892
+        BGB)
+  - label: II. Gläubigerstellung
+    children:
+    - label: 1. Erstgläubiger oder Erwerber aus Abtretung, §§ 1154, 398 BGB
+    - label: 2. Eintragung oder Brief bei der Übertragung
+  - label: III. Fälligkeit
+    hinweis: >-
+      Kündigung, § 1193 Abs. 1 BGB (Frist sechs Monate, bei Sicherungsgrundschuld nicht abdingbar, § 1193 Abs. 2 S. 2); Zahlungsverzug ist keine
+      Voraussetzung der Fälligkeit; Vollstreckung setzt einen Duldungstitel voraus.
+  - label: IV. Kein Anspruchsausschluss durch Einreden
+    children:
+    - label: 1. Einreden aus dem Sicherungsvertrag
+    - label: 2. Wirkung gegen den Erwerber, § 1192 Abs. 1a BGB
+    - label: 3. Rückgewähranspruch nach Tilgung
+  - label: V. Rechtsfolge
+    hinweis: Duldung der Zwangsvollstreckung in das Grundstück, § 1147 BGB.
+faelle:
+- slug: zr-fall-gpr-sparkasse-bank
+  title: Die abgetretene Grundschuld
+  difficulty: 4
+  minutes: 50
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Eigentümer E bestellt der Sparkasse S zur Sicherung eines Darlehens über 200.000
+    Euro eine Buchgrundschuld über 200.000 Euro, die ordnungsgemäß im Grundbuch eingetragen
+    wird; im Sicherungsvertrag ist vereinbart, dass die Grundschuld nur dazu dient,
+    dieses Darlehen zu sichern. E tilgt das Darlehen im Mai 2025 vollständig. Im Juli
+    2025 tritt S die Grundschuld ohne Rücksicht auf den Sicherungsvertrag an die Bank
+    B ab, die den Sicherungsvertrag nicht kennt; die Abtretung wird im Grundbuch eingetragen.
+    B verlangt von E nun Duldung der Zwangsvollstreckung in das Grundstück und hat
+    die Grundschuld gekündigt, die Kündigungsfrist ist abgelaufen.
+  question: >-
+    Kann B von E nach § 1147 BGB die Duldung der Zwangsvollstreckung verlangen?
+  steps:
+  - prompt: Besteht die Grundschuld, und ist B Inhaberin?
+    erwartung: >-
+      Ja. Die Grundschuld wurde wirksam bestellt (§§ 873, 1191 BGB). S hat sie nach
+      §§ 1154, 398 BGB mit Eintragung (§ 873 BGB) wirksam an B abgetreten. Der Wegfall
+      der Forderung ändert nichts, weil die Grundschuld nicht akzessorisch ist.
+  - prompt: Ist die Grundschuld fällig?
+    erwartung: >-
+      Die Grundschuld ist fällig, weil sie gekündigt wurde und die Kündigungsfrist von
+      sechs Monaten abgelaufen ist (§ 1193 Abs. 1 BGB).
+  - prompt: Welche Einrede hat E, und gegen wen wirkt sie?
+    erwartung: >-
+      E hat gegen S eine Einrede aus dem Sicherungsvertrag, weil das Darlehen getilgt
+      und der Sicherungszweck entfallen ist (Rückgewähranspruch). Diese Einrede kann
+      nach § 1192 Abs. 1a S. 1 BGB auch dem Erwerber B entgegengesetzt werden.
+  - prompt: Hilft B ihr guter Glaube?
+    erwartung: >-
+      Nein. Für die Sicherungsgrundschuld gilt § 1157 S. 2 BGB insoweit nicht (§ 1192
+      Abs. 1a S. 1 BGB). B muss sich die Einrede aus dem Sicherungsvertrag entgegenhalten
+      lassen, obwohl sie ihn nicht kannte.
+  - prompt: Wie lautet das Ergebnis?
+    erwartung: >-
+      B kann die Duldung der Zwangsvollstreckung nicht durchsetzen, weil E die Einrede
+      aus dem Sicherungsvertrag zusteht. B kann sich an S halten; E kann Rückgewähr
+      der Grundschuld verlangen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Wirksame Grundschuld und Gläubigerstellung der B durch Abtretung (§§ 1154,
+        398 BGB), keine Akzessorietät
+      weight: 2.0
+      required: true
+      norms:
+      - § 1154 BGB
+      - § 398 BGB
+      - § 1191 BGB
+      keywords:
+      - Grundschuld
+      - nicht akzessorisch
+      - § 1154
+      - Abtretung
+      - Eintragung
+      card_slugs:
+      - zr-gpr-grundschuld-1191
+      - zr-gpr-uebertragung
+    - id: p2
+      label: Fälligkeit durch Kündigung nach § 1193 BGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 1193 BGB
+      keywords:
+      - § 1193
+      - Kündigung
+      - sechs Monate
+      - Fälligkeit
+      card_slugs:
+      - zr-gpr-verwertung-1147
+    - id: p3
+      label: Einrede aus dem Sicherungsvertrag (Tilgung, Rückgewähranspruch)
+      weight: 2.5
+      required: true
+      norms:
+      - § 1192 Abs. 1a BGB
+      keywords:
+      - Sicherungsvertrag
+      - Sicherungsabrede
+      - Einrede aus dem Sicherungsvertrag
+      - Rückgewähranspruch
+      - Sicherungszweck entfallen
+      card_slugs:
+      - zr-gpr-sicherungsvertrag-zweckerklaerung
+    - id: p4
+      label: >-
+        Einrede wirkt gegen den Erwerber trotz guten Glaubens, § 1192 Abs. 1a BGB
+      weight: 3.0
+      required: true
+      norms:
+      - § 1192 Abs. 1a BGB
+      - § 1157 BGB
+      keywords:
+      - § 1192 Abs. 1a
+      - § 1157 S. 2
+      - guter Glaube hilft nicht
+      - einredefreier Erwerb
+      - Erwerber muss Einrede gegen sich gelten lassen
+      card_slugs:
+      - zr-gpr-einreden-1192-abs1a
+      - zr-gpr-einreden-1137-1157
+    - id: p5
+      label: 'Ergebnis: Kein Duldungsanspruch aus § 1147 BGB'
+      weight: 1.0
+      required: false
+      norms:
+      - § 1147 BGB
+      keywords:
+      - § 1147
+      - Duldung der Zwangsvollstreckung
+      - kein Anspruch
+      - Einrede durchgreift
+      card_slugs:
+      - zr-gpr-verwertung-1147
+  stand: 2026-10

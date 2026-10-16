@@ -4,18 +4,20 @@ kurs:
   area: oeffentliches-recht
   semester_default: 2
   examenskurs: false
-  stand: 2026-09
+  stand: 2026-10
   quellen:
-  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Grundrechtspruefung (Schutzbereich, Eingriff, Rechtfertigung) an den examensrelevantesten
-    Grundrechten, mit Verfassungsbeschwerde als Einkleidung.
+  beschreibung: 'Grundrechte vollständig: Allgemeine Lehren (Berechtigung, Bindung, Schutzpflichten, Drittwirkung),
+    Freiheitsrechte, Gleichheitsrechte und Justizgrundrechte mit der Verfassungsbeschwerde als Einkleidung.'
   lernziele:
-  - Dreistufige Grundrechtspruefung sicher schreiben
+  - Dreistufige Grundrechtsprüfung sicher schreiben
+  - Grundrechtsberechtigung, Bindung, Schutzpflichten und Drittwirkung einordnen
   - Verfassungsbeschwerde zum BVerfG und - wo vorhanden - zum Landesverfassungsgericht aufbauen
-  - Spezielle Grundrechte (Art. 5, 8, 12, 14 GG) mit ihren Schrankensystemen abgrenzen
+  - Spezielle Grundrechte (Art. 1, 2, 3, 4, 5, 6, 8, 9, 12, 13, 14 GG) mit ihren Schrankensystemen abgrenzen
+  - Justizgrundrechte und Art. 33 GG prüfen
   klausurformat:
-    typ: Anfaengerklausur
+    typ: Anfängerklausur
     minuten: 120
   topic_slugs:
   - or-grundrechte
@@ -25,7 +27,15 @@ kurs:
   - or-versammlungsfreiheit
   - or-berufsfreiheit
   - or-eigentumsgarantie
+  - or-verfassungsprozessrecht-verfassungsbeschwerde
+  - or-grundrechte-allgemeine-lehren
+  - or-gr-menschenwuerde-leben
+  - or-gr-apr-informationelle-selbstbestimmung
+  - or-gr-religionsfreiheit-art4
+  - or-gr-presse-rundfunk-kunst-wissenschaft
+  - or-gr-weitere-freiheitsrechte
+  - or-gr-gleichheitsrechte-speziell
+  - or-gr-justizgrundrechte-art33
   landesrecht_kategorien:
   - landesrecht-allgemein
-  fehlende_themen:
-  - Art. 4 GG Glaubensfreiheit (P3)
+  fehlende_themen: []

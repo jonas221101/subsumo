@@ -9,8 +9,8 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-23'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: sr-urkunde-begriff
   type: definition
@@ -45,10 +45,14 @@ cards:
   type: definition
   front: 'Definiere: Beweisfunktion der Urkunde'
   back: Die Erklärung muss zum Beweis einer rechtlich erheblichen Tatsache im Rechtsverkehr
-    bestimmt und zugleich objektiv geeignet sein. Bei der sogenannten Absichtsurkunde
-    ergibt sich die Beweisbestimmung aus dem erkennbaren Zweck des Ausstellers; bei
-    der sogenannten Zufallsurkunde genügt bereits die objektive Eignung zum Beweis,
-    ohne dass der Aussteller die Erklärung zu Beweiszwecken geschaffen haben muss.
+    bestimmt und objektiv geeignet sein. Bei der Absichtsurkunde wird die Beweisbestimmung
+    schon bei der Errichtung vom Aussteller vorgenommen (z. B. Vertrag, Quittung).
+    Bei der Zufallsurkunde (z. B. Brief, Notiz) fehlt eine solche Bestimmung bei Errichtung;
+    es genügt, dass sie später vom Berechtigten zum Beweis bestimmt wird. Eine bloße
+    objektive Beweiseignung reicht nicht aus. Die Beweisbestimmung muss spätestens
+    im Zeitpunkt der Tathandlung (Herstellen, Verfälschen, Gebrauchmachen) durch den
+    Berechtigten (Aussteller oder Beweisführungsbefugten) vorliegen, etwa durch Übergabe
+    an einen Dritten, Aufbewahrung oder Vorlage im Rechtsverkehr.
   norms:
   - § 267 StGB
   quellen:
@@ -106,10 +110,13 @@ cards:
     eine körperlich damit fest verbundene Bezugnahme (z. B. ein Preisschild auf einer
     Ware), sodass beide Teile eine einheitliche Beweisfunktion bilden; die Veränderung
     nur eines Teils kann bereits die gesamte zusammengesetzte Urkunde verfälschen.
-    Eine Gesamturkunde entsteht, wenn mehrere Einzelurkunden durch eine amtliche Zusammenfassung
-    (z. B. eine Buchführung) eine zusätzliche, über die Einzelurkunden hinausgehende
-    eigene Beweisbestimmung erhalten, etwa hinsichtlich Vollständigkeit und Reihenfolge
-    der Eintragungen.
+    Eine Gesamturkunde ist die Zusammenfassung mehrerer Einzelurkunden zu einer rechtlichen
+    Einheit (z. B. Kassen- oder Geschäftsbücher), die einen über die Einzelurkunden
+    hinausgehenden eigenen Gesamtbeweisinhalt (Vollständigkeit und Reihenfolge der
+    Eintragungen) hat. Die Zusammenfassung muss nicht amtlich sein; entscheidend ist,
+    dass sie nach der erkennbaren Beweisbestimmung eine neue Beweiseinheit mit eigener
+    Erklärung (Garantie der Vollständigkeit) schafft. Die Rspr. hat die Gesamturkunde
+    als Rechtsfigur stark eingeschränkt.
   norms:
   - § 267 StGB
   quellen:
@@ -154,13 +161,12 @@ faelle:
   - StGB, amtliche Fassung
   facts: A möchte bei einer fiktiven Sparkasse einen Kredit aufnehmen, erfüllt selbst
     aber nicht die Bonitätsanforderungen. Er nimmt daher ein leeres Vertragsformular,
-    trägt als Vertragspartner den Namen seines Bekannten B ein und unterschreibt
-    eigenhändig mit dem Namen "B". Anschließend reicht A das so erstellte Dokument
-    bei der Sachbearbeiterin der Sparkasse als angeblich von B unterschriebenen Kreditantrag
-    ein, um den Eindruck zu erwecken, B selbst habe den Antrag gestellt und unterschrieben.
-    B hat von alledem nichts gewusst und den Antrag nicht autorisiert.
-  question: Hat sich A wegen Urkundenfälschung gemäß § 267 Abs. 1 StGB strafbar
-    gemacht?
+    trägt als Vertragspartner den Namen seines Bekannten B ein und unterschreibt eigenhändig
+    mit dem Namen "B". Anschließend reicht A das so erstellte Dokument bei der Sachbearbeiterin
+    der Sparkasse als angeblich von B unterschriebenen Kreditantrag ein, um den Eindruck
+    zu erwecken, B selbst habe den Antrag gestellt und unterschrieben. B hat von alledem
+    nichts gewusst und den Antrag nicht autorisiert.
+  question: Hat sich A wegen Urkundenfälschung gemäß § 267 Abs. 1 StGB strafbar gemacht?
   steps:
   - prompt: Ist der von A erstellte Kreditantrag eine Urkunde?
     erwartung: Ja - er ist verkörpert (Perpetuierungsfunktion), zum Beweis der Kreditantragstellung
@@ -175,16 +181,18 @@ faelle:
       er das Dokument unter dem fremden Namen des B anfertigte und unterschrieb.
   - prompt: Liegt zusätzlich ein Gebrauchmachen vor?
     erwartung: Ja - A hat die unechte Urkunde der Sachbearbeiterin der Sparkasse vorgelegt
-      und ihr damit die Möglichkeit der sinnlichen Wahrnehmung verschafft, § 267
-      Abs. 1 Var. 3 StGB; Herstellen und Gebrauchmachen stehen zueinander in Tateinheit,
-      da beide Varianten dieselbe Urkunde betreffen.
+      und ihr damit die Möglichkeit der sinnlichen Wahrnehmung verschafft, § 267 Abs.
+      1 Var. 3 StGB. Herstellen und Gebrauchmachen derselben Urkunde bilden nach der
+      Rspr. eine tatbestandliche Handlungseinheit, also eine Tat (keine Tateinheit
+      nach § 52 StGB, die zwei Tatbestandsverwirklichungen voraussetzt).
   - prompt: Ist der subjektive Tatbestand erfüllt?
     erwartung: Ja - A handelte vorsätzlich hinsichtlich aller objektiven Umstände
       und mit der Absicht, durch Vorlage der Urkunde die Sachbearbeiterin über die
       Urheberschaft des Antrags zu täuschen und dadurch den Kredit zu erlangen.
   - prompt: Ergebnis?
     erwartung: A hat sich wegen Urkundenfälschung durch Herstellen und Gebrauchmachen
-      einer unechten Urkunde gemäß § 267 Abs. 1 StGB strafbar gemacht.
+      einer unechten Urkunde gemäß § 267 Abs. 1 StGB strafbar gemacht (eine Tat, tatbestandliche
+      Handlungseinheit).
   expectation:
     pruefpunkte:
     - id: p1
@@ -194,7 +202,8 @@ faelle:
       norms:
       - § 267 Abs. 1 StGB
       keywords:
-      - '267'
+      - § 267 Abs. 1
+      - Urkundenfälschung gemäß § 267
       card_slugs:
       - sr-urkunde-begriff
       - sr-urkunde-tathandlungen-herstellen-verfaelschen
@@ -208,18 +217,22 @@ faelle:
       - Perpetuierungsfunktion
       - Beweisfunktion
       - Garantiefunktion
+      - verkörperte Gedankenerklärung
       card_slugs:
       - sr-urkunde-begriff
     - id: p3
-      label: Unechtheit (Identitätstäuschung über den Aussteller, nicht bloße
-        schriftliche Lüge) begründet
+      label: Unechtheit (Identitätstäuschung über den Aussteller, nicht bloße schriftliche
+        Lüge) begründet
       weight: 3.0
       required: true
       norms:
       - § 267 Abs. 1 StGB
       keywords:
       - Identitätstäuschung
-      - unecht
+      - scheinbarer Aussteller
+      - tatsächlicher Aussteller
+      - unechte Urkunde
+      - Urkunde ist unecht
       card_slugs:
       - sr-urkunde-tathandlungen-herstellen-verfaelschen
     - id: p4
@@ -229,19 +242,24 @@ faelle:
       norms:
       - § 267 Abs. 1 StGB
       keywords:
-      - Herstellen
+      - Herstellen einer unechten Urkunde
+      - § 267 Abs. 1 Var. 1
+      - Var. 1
+      - stellte eine unechte Urkunde her
       card_slugs:
       - sr-urkunde-tathandlungen-herstellen-verfaelschen
     - id: p5
-      label: Gebrauchmachen, § 267 Abs. 1 Var. 3 StGB, erkannt und Tateinheit zum
-        Herstellen angesprochen
+      label: Gebrauchmachen, § 267 Abs. 1 Var. 3 StGB, erkannt und mit dem Herstellen
+        als tatbestandliche Handlungseinheit eingeordnet
       weight: 2.0
       required: false
       norms:
       - § 267 Abs. 1 StGB
       keywords:
       - Gebrauchmachen
-      - Tateinheit
+      - tatbestandliche Handlungseinheit
+      - Var. 3
+      - § 267 Abs. 1 Var. 3
       card_slugs:
       - sr-urkunde-gebrauchmachen
     - id: p6
@@ -252,8 +270,11 @@ faelle:
       - § 15 StGB
       - § 267 Abs. 1 StGB
       keywords:
-      - Absicht
-      - Täuschung
+      - Täuschung im Rechtsverkehr
+      - Täuschungsabsicht
+      - überschießende Innentendenz
+      - Absicht der Täuschung
+      - zur Täuschung im Rechtsverkehr
       card_slugs:
       - sr-at-vorsatz
     - id: p7
@@ -263,7 +284,10 @@ faelle:
       norms:
       - § 267 Abs. 1 StGB
       keywords:
-      - Ergebnis
+      - Urkundenfälschung gemäß § 267 Abs. 1
+      - Urkundenfälschung strafbar
+      - wegen Urkundenfälschung strafbar
+      - Herstellen und Gebrauchmachen einer unechten Urkunde
       card_slugs:
       - sr-urkunde-tathandlungen-herstellen-verfaelschen
       - sr-urkunde-gebrauchmachen

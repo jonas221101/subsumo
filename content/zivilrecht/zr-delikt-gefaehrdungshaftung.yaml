@@ -1,0 +1,427 @@
+topic:
+  slug: zr-delikt-gefaehrdungshaftung
+  area: zivilrecht
+  title: >-
+    Gefährdungshaftung: ProdHaftG, §§ 7, 17, 18 StVG und Produzentenhaftung
+  parent: zr-deliktsrecht-823
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-gh-abgrenzung-verschulden
+  type: definition
+  front: >-
+    Was unterscheidet Gefährdungshaftung von Verschuldenshaftung, und warum ist sie
+    eine Ausnahme?
+  back: >-
+    Gefährdungshaftung knüpft nicht an ein pflichtwidriges, schuldhaftes Verhalten
+    an, sondern an die Verwirklichung einer erlaubten, aber besonders gefährlichen
+    Tätigkeit oder Sache (Risikoschaffung). Wer aus einer Gefahrenquelle Nutzen zieht,
+    soll auch die daraus entstehenden Schäden tragen. Weil die Haftung ohne Verschulden
+    eintritt, gilt sie nur in den gesetzlich angeordneten Fällen (Enumerationsprinzip),
+    etwa nach § 7 StVG, § 1 ProdHaftG oder § 833 S. 1 BGB. Typische Merkmale sind
+    abschließend geregelte Haftungsausschlüsse, oft Haftungshöchstgrenzen und eine
+    Mithaftung des Geschädigten nach § 254 BGB. Schmerzensgeld ist bei Gefährdungshaftung
+    seit 2002 über § 253 Abs. 2 BGB möglich.
+  norms:
+  - § 7 StVG
+  - § 1 ProdHaftG
+  - § 833 BGB
+  - § 253 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gh-prodhaftg-anspruch
+  type: norm
+  front: Welche Voraussetzungen hat der Anspruch aus § 1 Abs. 1 S. 1 ProdHaftG?
+  back: >-
+    Stand: Es gilt das Produkthaftungsgesetz von 1989; die Neufassung zur Umsetzung der RL (EU) 2024/2853 ist als Gesetz zur Modernisierung des Produkthaftungsrechts in Vorbereitung: Nach dem Regierungsentwurf (BT-Drs. 21/4297, Art. 5) soll sie am 9.12.2026 in Kraft treten und für bis einschließlich 8.12.2026 in Verkehr gebrachte Produkte das alte Recht fortgelten lassen (§ 23 ProdHaftG-E); der Rechtsausschuss hat die Annahme in geänderter Fassung empfohlen (BT-Drs. 21/8429 vom 7.10.2026). Bundesrat und Verkündung im Bundesgesetzblatt waren bei der Prüfung noch nicht belegt. Der Anspruch setzt voraus: (1) ein Produkt (§ 2 ProdHaftG, bewegliche Sache, auch
+    als Teilprodukt oder Elektrizität), (2) einen Produktfehler (§ 3 ProdHaftG), (3)
+    eine Rechtsgutsverletzung, nämlich Tod, Körper, Gesundheit oder Beschädigung einer
+    anderen Sache, (4) Haftung des Herstellers (§ 4 ProdHaftG), (5) Kausalität zwischen
+    Fehler und Schaden sowie (6) das Fehlen von Haftungsausschlüssen nach § 1 Abs.
+    2, 3 ProdHaftG. Verschulden ist nicht erforderlich. Die Beweislast für Fehler,
+    Schaden und Ursächlichkeit trägt der Geschädigte (§ 1 Abs. 4 S. 1 ProdHaftG);
+    die Ausschlussgründe muss der Hersteller beweisen (§ 1 Abs. 4 S. 2). Ersetzt wird
+    der Schaden nach §§ 249 ff. BGB.
+  norms:
+  - § 1 Abs. 1 S. 1 ProdHaftG
+  - § 2 ProdHaftG
+  - § 3 ProdHaftG
+  - § 1 Abs. 4 ProdHaftG
+  quellen:
+  - ProdHaftG
+  - BT-Drs. 21/4297 und 21/8429
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gh-prodhaftg-sachschaden
+  type: norm
+  front: >-
+    Welche Besonderheiten gelten für Sachschäden nach § 1 Abs. 1 S. 2 ProdHaftG?
+  back: >-
+    Bei Sachschäden haftet der Hersteller nur, wenn eine andere Sache als das fehlerhafte
+    Produkt beschädigt wird (§ 1 Abs. 1 S. 2 ProdHaftG). Der Schaden an dem fehlerhaften
+    Produkt selbst ist nicht ersatzfähig; das ist Sache des Kaufrechts oder des Weiterfresserschadens
+    im Deliktsrecht. Die beschädigte Sache muss ihrer Art nach gewöhnlich für den
+    privaten Ge- oder Verbrauch bestimmt sein und vom Geschädigten hauptsächlich privat
+    verwendet worden sein; gewerblich genutzte Sachen sind daher ausgenommen. Außerdem
+    trägt der Geschädigte bei Sachschäden einen Selbstbehalt von 500 Euro (§ 11 ProdHaftG).
+    Für Personenschäden gilt kein Selbstbehalt, wohl aber ein Haftungshöchstbetrag
+    (§ 10 ProdHaftG).
+  norms:
+  - § 1 Abs. 1 S. 2 ProdHaftG
+  - § 11 ProdHaftG
+  - § 10 ProdHaftG
+  quellen:
+  - ProdHaftG
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gh-produktfehler-3
+  type: definition
+  front: Wann hat ein Produkt einen Fehler im Sinne des § 3 Abs. 1 ProdHaftG?
+  back: >-
+    Ein Produkt ist fehlerhaft, wenn es nicht die Sicherheit bietet, die unter Berücksichtigung
+    aller Umstände berechtigterweise erwartet werden kann (§ 3 Abs. 1 ProdHaftG).
+    Maßgeblich sind der objektive Sicherheitsstandard der Verkehrskreise, nicht die
+    subjektive Erwartung des Geschädigten, sowie insbesondere die Darbietung des Produkts
+    (Gebrauchsanweisung, Warnhinweise), der Gebrauch, mit dem billigerweise gerechnet
+    werden kann, und der Zeitpunkt des Inverkehrbringens. Üblich unterscheidet man
+    Konstruktionsfehler (Fehler der gesamten Serie), Fabrikationsfehler (Ausreißer)
+    und Instruktionsfehler (unzureichende Warnung). Anders als bei § 823 Abs. 1 BGB
+    kommt es auf Pflichtverletzung und Verschulden des Herstellers nicht an; der Maßstab
+    ist der Produktzustand.
+  norms:
+  - § 3 Abs. 1 ProdHaftG
+  quellen:
+  - ProdHaftG
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gh-hersteller-4
+  type: definition
+  front: >-
+    Wer ist Hersteller im Sinne des § 4 ProdHaftG, und wann haftet der Lieferant?
+  back: >-
+    Hersteller ist, wer das Endprodukt, einen Grundstoff oder ein Teilprodukt tatsächlich
+    hergestellt hat (§ 4 Abs. 1 S. 1 ProdHaftG). Gleichgestellt ist der Quasihersteller,
+    der sich durch Anbringen seines Namens, seiner Marke oder eines anderen Erkennungszeichens
+    als Hersteller ausgibt (§ 4 Abs. 1 S. 2). Wer ein Produkt zum Zweck des Vertriebs
+    in den EWR einführt, haftet als Importeur wie ein Hersteller (§ 4 Abs. 2). Der
+    bloße Lieferant (Händler) haftet nur subsidiär: Kann der Hersteller nicht festgestellt
+    werden, muss der Lieferant ihn oder seinen eigenen Vorlieferanten innerhalb eines
+    Monats nach Aufforderung benennen, sonst haftet er wie ein Hersteller (§ 4 Abs.
+    3 ProdHaftG).
+  norms:
+  - § 4 Abs. 1 ProdHaftG
+  - § 4 Abs. 2 ProdHaftG
+  - § 4 Abs. 3 ProdHaftG
+  quellen:
+  - ProdHaftG
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gh-prodhaftg-ausschluesse
+  type: norm
+  front: >-
+    Welche Haftungsausschlüsse enthält § 1 Abs. 2 ProdHaftG, und was gilt für das
+    Entwicklungsrisiko?
+  back: >-
+    Die Ersatzpflicht ist ausgeschlossen, wenn der Hersteller das Produkt nicht in
+    den Verkehr gebracht hat (Nr. 1), wenn nach den Umständen davon auszugehen ist,
+    dass der Fehler beim Inverkehrbringen noch nicht vorlag (Nr. 2), wenn das Produkt
+    weder für den Verkauf noch für eine wirtschaftliche Vertriebsform hergestellt
+    wurde (Nr. 3), wenn der Fehler auf zwingenden Rechtsvorschriften beruht (Nr. 4)
+    oder wenn der Fehler nach dem Stand von Wissenschaft und Technik zum Zeitpunkt
+    des Inverkehrbringens nicht erkannt werden konnte (Nr. 5, sogenanntes Entwicklungsrisiko).
+    Der Ausschluss der Nr. 5 betrifft nicht Konstruktions- oder Fabrikationsfehler,
+    die erkennbar waren. Für Schäden durch Humanarzneimittel ist das ProdHaftG nicht anwendbar (§ 15 Abs. 1 ProdHaftG).
+  norms:
+  - § 1 Abs. 2 ProdHaftG
+  - § 15 ProdHaftG
+  quellen:
+  - ProdHaftG
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gh-7-stvg-halterhaftung
+  type: norm
+  front: Welche Voraussetzungen hat die Halterhaftung nach § 7 Abs. 1 StVG?
+  back: >-
+    Wird bei dem Betrieb eines Kraftfahrzeugs ein Mensch getötet, sein
+    Körper oder seine Gesundheit verletzt oder eine Sache beschädigt, ist der Halter
+    zum Ersatz verpflichtet (§ 7 Abs. 1 StVG). Halter ist, wer das Fahrzeug auf eigene
+    Rechnung gebraucht und die tatsächliche Verfügungsgewalt innehat. Der Betriebsbegriff
+    wird weit nach verkehrstechnischer Betrachtung verstanden: Es genügt, dass sich
+    das Schadensgeschehen in einem nahen örtlichen und zeitlichen Zusammenhang mit
+    einem Betriebsvorgang des Fahrzeugs ereignet (Rspr.), auch ohne Berührung der
+    Fahrzeuge. Die Haftung ist ausgeschlossen bei höherer Gewalt (§ 7 Abs. 2 StVG)
+    und bei Fahrzeugen bis 20 km/h Höchstgeschwindigkeit (§ 8 Nr. 1 StVG). Schmerzensgeld
+    folgt aus § 11 S. 2 StVG.
+  norms:
+  - § 7 Abs. 1 StVG
+  - § 7 Abs. 2 StVG
+  - § 8 StVG
+  - § 11 StVG
+  quellen:
+  - StVG
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gh-18-stvg-fahrerhaftung
+  type: norm
+  front: >-
+    Wie haftet der Fahrer nach § 18 StVG und wie verhält sich die Haftung zu § 823
+    BGB?
+  back: >-
+    Der Fahrer haftet nach § 18 Abs. 1 S. 1 StVG unter den Voraussetzungen des § 7
+    Abs. 1 StVG, wenn der Schaden beim Betrieb des Kraftfahrzeugs entstanden ist;
+    anders als der Halter kann er sich aber entlasten, weil sein Verschulden vermutet
+    wird (§ 18 Abs. 1 S. 2 StVG). Er muss beweisen, dass er den Schaden nicht verschuldet
+    hat. Daneben bleibt die Verschuldenshaftung nach § 823 BGB unberührt (§ 16 StVG);
+    sie ist insbesondere für Fälle außerhalb der Haftungshöchstgrenzen oder bei Schäden
+    außerhalb des Betriebs bedeutsam. Der Halter kann auch aus § 831 BGB oder aus
+    Vertrag haften. Die Mithaftung des Geschädigten ist über § 9 StVG i. V. m. § 254
+    BGB zu berücksichtigen.
+  norms:
+  - § 18 Abs. 1 StVG
+  - § 16 StVG
+  - § 9 StVG
+  - § 254 BGB
+  quellen:
+  - StVG
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gh-17-stvg-ausgleich
+  type: streitstand
+  front: >-
+    Wie wird der Schaden bei einem Unfall zwischen mehreren Kraftfahrzeugen nach §
+    17 StVG verteilt?
+  back: >-
+    Sind an einem Unfall mehrere Kraftfahrzeuge beteiligt, haften die Halter einem geschädigten Dritten als Gesamtschuldner (§ 840 Abs. 1 BGB); im Verhältnis der Halter zueinander hängt die Ausgleichspflicht von den Umständen ab, insbesondere davon, wie weit der Schaden überwiegend von dem einen oder dem anderen Teil verursacht wurde (§ 17 Abs. 1 StVG). Dieselbe Abwägung gilt, wenn ein Halter vom anderen Ersatz seines eigenen Schadens verlangt (§ 17 Abs. 2 StVG). In die Abwägung
+    fließen die Betriebsgefahr jedes Fahrzeugs und das erwiesene Verschulden der Fahrer
+    ein; nicht bewiesene Umstände bleiben außer Betracht. Unabwendbares Ereignis:
+    Die Ersatzpflicht ist nach § 17 Abs. 3 StVG ausgeschlossen, wenn der Unfall durch ein unabwendbares Ereignis verursacht wurde, das nicht auf einem Fehler des Fahrzeugs oder dem Versagen seiner Vorrichtungen beruht. Unabwendbar ist es nur, wenn Halter und Fahrer jede nach den Umständen gebotene Sorgfalt beachtet haben; das ist ein strenger Maßstab.
+  norms:
+  - § 17 Abs. 1 StVG
+  - § 17 Abs. 2 StVG
+  - § 17 Abs. 3 StVG
+  quellen:
+  - StVG
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gh-produzentenhaftung-823
+  type: streitstand
+  front: >-
+    Wie unterscheidet sich die Produzentenhaftung nach § 823 Abs. 1 BGB von der Haftung
+    nach dem ProdHaftG?
+  back: >-
+    Die deliktische Produzentenhaftung folgt aus der Verkehrspflicht des Herstellers,
+    nur sichere Produkte in Verkehr zu bringen (Konstruktions-, Fabrikations- und
+    Instruktionspflichten, Produktbeobachtungspflicht). Sie setzt Pflichtverletzung
+    und Verschulden voraus, wobei die Rechtsprechung dem Geschädigten Beweiserleichterungen
+    gewährt: Hat der Geschädigte nachgewiesen, dass das Produkt im Organisations-
+    und Gefahrenbereich des Herstellers fehlerhaft wurde, muss der Hersteller beweisen,
+    dass ihn kein Verschulden trifft (Beweislastumkehr, BGHZ 51, 91 Hühnerpest). Der
+    Anspruch ist nicht auf Privatgebrauch, Selbstbehalt oder Höchstbetrag beschränkt
+    und umfasst auch Schäden an gewerblich genutzten Sachen. Beide Ansprüche bestehen
+    nebeneinander (§ 15 Abs. 2 ProdHaftG).
+  norms:
+  - § 823 Abs. 1 BGB
+  - § 15 Abs. 2 ProdHaftG
+  quellen:
+  - BGHZ 51, 91 (Hühnerpest)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-gh-weiterfresserschaden
+  type: streitstand
+  front: >-
+    Was ist ein Weiterfresserschaden, und wann ist er nach § 823 Abs. 1 BGB ersatzfähig?
+  back: >-
+    Ein Weiterfresserschaden liegt vor, wenn ein anfänglich nur auf einem Teil der
+    Sache haftender Mangel später das zunächst mangelfreie Gesamtprodukt beschädigt
+    oder zerstört. Fraglich ist, ob darin eine Eigentumsverletzung liegt oder nur
+    ein Mangelunrecht (Äquivalenzinteresse), das dem Kaufrecht vorbehalten ist. Nach
+    der Rechtsprechung ist § 823 Abs. 1 BGB anwendbar, wenn sich der später eingetretene
+    Schaden nicht mit dem ursprünglichen Mangelunwert deckt (fehlende Stoffgleichheit);
+    dann hat der Erwerber ein vom Mangelwert zu unterscheidendes Integritätsinteresse.
+    Fehlt die Stoffgleichheit, etwa weil das zerstörte Gesamtprodukt einen Wert hat,
+    der über dem des fehlerhaften Teils liegt, kommt ein Anspruch in Betracht (BGHZ
+    67, 359, Schwimmerschalter). Ersetzbar ist nur der Schaden, der über den mangelhaften
+    Teil hinausgeht.
+  norms:
+  - § 823 Abs. 1 BGB
+  quellen:
+  - BGHZ 67, 359 (Schwimmerschalter)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: zr-schema-gh-prodhaftg
+  title: Anspruch aus § 1 Abs. 1 ProdHaftG gegen den Hersteller
+  norms:
+  - § 1 Abs. 1 ProdHaftG
+  - § 3 ProdHaftG
+  - § 4 ProdHaftG
+  - § 1 Abs. 2 ProdHaftG
+  quellen:
+  - ProdHaftG
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Anspruch entstanden
+    children:
+    - label: 1. Produkt, § 2 ProdHaftG
+    - label: 2. Fehler, § 3 ProdHaftG
+      hinweis: >-
+        Konstruktions-, Fabrikations-, Instruktionsfehler; objektiver Sicherheitsmaßstab,
+        Zeitpunkt des Inverkehrbringens.
+    - label: 3. Rechtsgutsverletzung, § 1 Abs. 1 S. 1, 2 ProdHaftG
+      hinweis: >-
+        Sachschaden nur an anderer Sache, die privat genutzt wird; Schaden am Produkt
+        selbst nicht erfasst.
+    - label: >-
+        4. Haftungsbegründende Kausalität zwischen Fehler und Rechtsgutsverletzung
+    - label: 5. Hersteller, § 4 ProdHaftG
+      hinweis: >-
+        Hersteller, Quasihersteller, Importeur; Händler nur nach § 4 Abs. 3 ProdHaftG.
+  - label: II. Kein Haftungsausschluss, § 1 Abs. 2, 3 ProdHaftG
+    hinweis: >-
+      Beweislast beim Hersteller; Entwicklungsrisiko nur bei Nichterkennbarkeit nach
+      Stand von Wissenschaft und Technik.
+  - label: III. Rechtsfolge
+    children:
+    - label: >-
+        1. Schadensersatz nach §§ 249 ff. BGB, Schmerzensgeld § 8 S. 2 ProdHaftG
+    - label: 2. Selbstbehalt bei Sachschäden, § 11 ProdHaftG
+    - label: 3. Mitverschulden, § 6 ProdHaftG, § 254 BGB
+  - label: IV. Konkurrenzen
+    hinweis: >-
+      Ansprüche aus § 823 Abs. 1 BGB und Vertrag bleiben unberührt, § 15 Abs. 2 ProdHaftG.
+faelle:
+- slug: zr-fall-gh-mixer
+  title: Der explodierende Standmixer
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Privatperson P kauft bei Händler H einen Standmixer des Herstellers M. Wegen eines
+    Konstruktionsfehlers der Dichtung löst sich beim ersten Gebrauch der Deckel, heißes
+    Püree verbrennt P die rechte Hand (Heilbehandlung und Schmerzen) und beschädigt
+    die Küchenarbeitsplatte im Wert von 1.200 Euro. Der Mixer ist ebenfalls zerstört
+    (Wert 150 Euro). M hat den Mixer unter seinem Namen selbst gefertigt und vertrieben;
+    der Fehler war bei Auslieferung bereits vorhanden und nach dem damaligen Stand
+    der Technik erkennbar. Eine Verschuldensfrage soll ausgeklammert werden.
+  question: >-
+    Welche Ansprüche hat P gegen M nach dem Produkthaftungsgesetz, und wie hoch sind
+    die Sachschäden?
+  steps:
+  - prompt: Nenne die Anspruchsgrundlage und stelle fest, ob M Hersteller ist.
+    erwartung: >-
+      Anspruchsgrundlage ist § 1 Abs. 1 S. 1 ProdHaftG. M hat den Mixer selbst hergestellt
+      und unter seinem Namen vertrieben, ist also Hersteller im Sinne von § 4 Abs.
+      1 S. 1 ProdHaftG.
+  - prompt: Liegt ein Produktfehler vor?
+    erwartung: >-
+      Ja, der Mixer hat einen Konstruktionsfehler, weil er die berechtigterweise erwartbare Sicherheit verfehlt (§ 3 Abs. 1 ProdHaftG); der Fehler lag beim Inverkehrbringen vor.
+  - prompt: Welche Rechtsgutsverletzungen sind gegeben?
+    erwartung: >-
+      Verletzung des Körpers und der Gesundheit (Verbrennung der Hand) sowie Beschädigung
+      einer anderen Sache, der Arbeitsplatte, die privat genutzt wird.
+  - prompt: Ist der Schaden am Mixer ersatzfähig?
+    erwartung: >-
+      Nein. Nach § 1 Abs. 1 S. 2 ProdHaftG wird der Schaden am fehlerhaften Produkt
+      selbst nicht ersetzt; insoweit bleiben nur Ansprüche gegen H aus Kaufrecht.
+  - prompt: Gibt es Haftungsausschlüsse?
+    erwartung: >-
+      Nein. § 1 Abs. 2 Nr. 5 ProdHaftG (Entwicklungsrisiko) greift nicht, weil der
+      Fehler nach dem Stand der Technik erkennbar war.
+  - prompt: Welche Ersatzposten kann P verlangen, und welche Kürzung gilt?
+    erwartung: >-
+      P kann Heilbehandlungskosten und Schmerzensgeld (§ 8 S. 2 ProdHaftG) sowie für die Arbeitsplatte 1.200 Euro abzüglich des Selbstbehalts von 500 Euro nach § 11 ProdHaftG, also 700 Euro, ersetzt verlangen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Anspruchsgrundlage § 1 Abs. 1 S. 1 ProdHaftG und Herstellereigenschaft nach
+        § 4 Abs. 1 ProdHaftG
+      weight: 2.0
+      required: true
+      norms:
+      - § 1 Abs. 1 ProdHaftG
+      - § 4 Abs. 1 ProdHaftG
+      keywords:
+      - § 1 Abs. 1 S. 1 ProdHaftG
+      - Hersteller
+      - § 4 Abs. 1 ProdHaftG
+      - Produkthaftungsgesetz
+      card_slugs:
+      - zr-gh-prodhaftg-anspruch
+      - zr-gh-hersteller-4
+    - id: p2
+      label: Produktfehler als Konstruktionsfehler nach § 3 ProdHaftG
+      weight: 2.0
+      required: true
+      norms:
+      - § 3 Abs. 1 ProdHaftG
+      keywords:
+      - Konstruktionsfehler
+      - § 3 Abs. 1 ProdHaftG
+      - berechtigterweise erwartbare Sicherheit
+      - Sicherheitserwartung
+      card_slugs:
+      - zr-gh-produktfehler-3
+    - id: p3
+      label: >-
+        Sachschaden nur an anderer Sache, Schaden am Mixer selbst nicht ersatzfähig
+      weight: 2.0
+      required: true
+      norms:
+      - § 1 Abs. 1 S. 2 ProdHaftG
+      keywords:
+      - andere Sache
+      - Schaden am Produkt selbst
+      - § 1 Abs. 1 S. 2 ProdHaftG
+      - nicht ersatzfähig
+      card_slugs:
+      - zr-gh-prodhaftg-sachschaden
+    - id: p4
+      label: Haftungsausschlüsse (Entwicklungsrisiko) geprüft und verneint
+      weight: 1.0
+      required: false
+      norms:
+      - § 1 Abs. 2 ProdHaftG
+      keywords:
+      - § 1 Abs. 2 ProdHaftG
+      - Entwicklungsrisiko
+      - Stand von Wissenschaft und Technik
+      - Haftungsausschluss
+      card_slugs:
+      - zr-gh-prodhaftg-ausschluesse
+    - id: p5
+      label: Selbstbehalt von 500 Euro nach § 11 ProdHaftG, Ergebnis 700 Euro
+      weight: 1.5
+      required: false
+      norms:
+      - § 11 ProdHaftG
+      keywords:
+      - Selbstbehalt
+      - § 11 ProdHaftG
+      - Selbstbeteiligung
+      - Abzug vom Sachschaden
+      card_slugs:
+      - zr-gh-prodhaftg-sachschaden
+    - id: p6
+      label: Schmerzensgeld nach § 8 S. 2 ProdHaftG bzw. § 253 Abs. 2 BGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 8 S. 2 ProdHaftG
+      - § 253 Abs. 2 BGB
+      keywords:
+      - Schmerzensgeld
+      - § 8 S. 2 ProdHaftG
+      - § 253 Abs. 2 BGB
+      - immaterieller Schaden
+      card_slugs:
+      - zr-gh-abgrenzung-verschulden
+  stand: 2026-10

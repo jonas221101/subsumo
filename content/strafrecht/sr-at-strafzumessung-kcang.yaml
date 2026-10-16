@@ -1,0 +1,364 @@
+topic:
+  slug: sr-at-strafzumessung-kcang
+  area: strafrecht
+  title: Strafzumessung, Strafaussetzung zur Bewährung und Grundzüge des Cannabisrechts (KCanG)
+  parent: sr-at
+  relevance: 3
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-szk-46-grundsaetze
+  type: norm
+  front: Welche Grundsätze regelt § 46 StGB für die Strafzumessung?
+  back: >-
+    Grundlage für die Zumessung der Strafe ist die Schuld des Täters; die Wirkungen,
+    die von der Strafe für sein künftiges Leben in der Gesellschaft zu erwarten
+    sind, sind zu berücksichtigen (§ 46 Abs. 1 StGB). Das Gericht wägt die Umstände
+    ab, die für und gegen den Täter sprechen (§ 46 Abs. 2 S. 1 StGB). Beispiele nennt
+    § 46 Abs. 2 S. 2 StGB: die Beweggründe und die Ziele des Täters, die Gesinnung,
+    die aus der Tat spricht, und der bei der Tat aufgewendete Wille, das Maß der
+    Pflichtwidrigkeit, die Art der Ausführung und die verschuldeten Auswirkungen
+    der Tat, das Vorleben des Täters, seine persönlichen und wirtschaftlichen Verhältnisse
+    sowie sein Verhalten nach der Tat, besonders sein Bemühen, den Schaden wiedergutzumachen.
+    Die Aufzählung ist nicht abschließend. Das Gericht hat innerhalb des Strafrahmens
+    einen Spielraum (Zumessungsspielraum), der revisionsrechtlich nur auf Fehler
+    überprüft wird.
+  norms:
+  - § 46 Abs. 1 StGB
+  - § 46 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-szk-strafrahmen-stufen
+  type: definition
+  front: 'Zweistufiges Vorgehen: Strafrahmenbestimmung und Strafzumessung im engeren Sinn'
+  back: >-
+    Die Strafzumessung erfolgt in zwei Schritten. Zuerst bestimmt das Gericht den
+    anzuwendenden Strafrahmen: den Normalstrafrahmen des Tatbestands, gegebenenfalls
+    verschoben durch besonders schwere Fälle (Regelbeispiele), minder schwere Fälle
+    oder gesetzlich vertypte Milderungsgründe nach § 49 StGB (etwa Versuch, § 23
+    Abs. 2 StGB, Beihilfe, § 27 Abs. 2 StGB). Beispiel: Bei zeitiger Freiheitsstrafe
+    verringert sich das Höchstmaß auf drei Viertel (§ 49 Abs. 1 Nr. 2 StGB); an die Stelle
+    lebenslanger Freiheitsstrafe tritt Freiheitsstrafe nicht unter drei Jahren (§ 49
+    Abs. 1 Nr. 1 StGB; Höchstmaß dann 15 Jahre, § 38 Abs. 2 StGB). Ein Umstand, der sowohl einen minder schweren Fall als
+    auch einen gesetzlichen Milderungsgrund begründen würde, darf nur einmal berücksichtigt
+    werden (§ 50 StGB). Danach folgt die Zumessung im engeren Sinn innerhalb des Rahmens
+    anhand der Umstände nach § 46 StGB.
+  norms:
+  - § 46 StGB
+  - § 49 Abs. 1 StGB
+  - § 50 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-szk-doppelverwertungsverbot
+  type: norm
+  front: Was besagt das Doppelverwertungsverbot des § 46 Abs. 3 StGB?
+  back: >-
+    Umstände, die schon Merkmale des gesetzlichen Tatbestandes sind, dürfen bei der
+    Zumessung nicht berücksichtigt werden (§ 46 Abs. 3 StGB). Der Gesetzgeber hat
+    sie bereits bei der Bestimmung des Strafrahmens berücksichtigt; ein zweites
+    Mal darf sich ein und derselbe Umstand nicht zu Lasten des Täters auswirken.
+    Beispiel: Bei der gefährlichen Körperverletzung mittels eines gefährlichen
+    Werkzeugs (§ 224 Abs. 1 Nr. 2 StGB) darf die bloße Verwendung des Messers nicht
+    strafschärfend berücksichtigt werden. Zulässig ist aber, die besondere Art der
+    Ausführung zu würdigen, soweit sie über das tatbestandlich Vorausgesetzte
+    hinausgeht (etwa die besondere Brutalität oder die Zahl der Stiche). Gleiches
+    gilt für das Maß der Folgen. Der Verstoß gegen § 46 Abs. 3 StGB ist ein Rechtsfehler,
+    den die Revision mit der Sachrüge geltend machen kann.
+  norms:
+  - § 46 Abs. 3 StGB
+  - § 224 Abs. 1 Nr. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-szk-46a-wiedergutmachung
+  type: norm
+  front: Welche Rechtsfolgen knüpft § 46a StGB an Täter-Opfer-Ausgleich und Schadenswiedergutmachung?
+  back: >-
+    Hat der Täter in dem Bemühen, einen Ausgleich mit dem Verletzten zu erreichen
+    (Täter-Opfer-Ausgleich), seine Tat ganz oder zum überwiegenden Teil wiedergutgemacht
+    oder deren Wiedergutmachung ernsthaft erstrebt (§ 46a Nr. 1 StGB), oder hat er
+    in einem Fall, in dem die Schadenswiedergutmachung von ihm erhebliche persönliche
+    Leistungen oder persönlichen Verzicht erfordert hat, das Opfer ganz oder zum
+    überwiegenden Teil entschädigt (§ 46a Nr. 2 StGB), kann das Gericht die Strafe
+    nach § 49 Abs. 1 StGB mildern. Ist keine höhere Strafe als Freiheitsstrafe bis
+    zu einem Jahr oder Geldstrafe bis zu 360 Tagessätzen verwirkt, kann es von Strafe
+    absehen. Die Vorschrift ist eine Kann-Regelung. Ein bloßes Bezahlen aus eigener
+    Tasche ohne persönliche Anstrengung genügt bei Nr. 2 nicht. Der Ausgleich muss
+    kommunikativ ablaufen und vom Opfer akzeptiert sein.
+  norms:
+  - § 46a StGB
+  - § 49 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-szk-geldstrafe-kurze-freiheitsstrafe
+  type: norm
+  front: Wie werden Geldstrafe (§ 40 StGB) und kurze Freiheitsstrafe (§ 47 StGB) bemessen?
+  back: >-
+    Die Geldstrafe wird in Tagessätzen verhängt; sie beträgt mindestens fünf und
+    höchstens 360 volle Tagessätze (§ 40 Abs. 1 StGB), soweit das Gesetz nichts
+    anderes bestimmt. Die Höhe des Tagessatzes bestimmt das Gericht unter Berücksichtigung
+    der persönlichen und wirtschaftlichen Verhältnisse des Täters; der Tagessatz beträgt
+    mindestens ein und höchstens 30.000 Euro (§ 40 Abs. 2 StGB). Maßgeblich ist in der
+    Regel das Nettoeinkommen, das der Täter durchschnittlich an einem Tag hat. Die Zahl
+    der Tagessätze richtet sich nach der Schuld, die Höhe nach den Verhältnissen
+    (Zweiteilung). Eine Freiheitsstrafe unter sechs Monaten darf nur verhängt werden,
+    wenn besondere Umstände in der Tat oder der Persönlichkeit des Täters sie zur Einwirkung
+    auf den Täter oder zur Verteidigung der Rechtsordnung unerlässlich machen (§ 47
+    Abs. 1 StGB). Sonst ist auf Geldstrafe zu erkennen; droht das Gesetz keine Geldstrafe an, gilt dies nach § 47 Abs. 2 StGB, wenn keine Freiheitsstrafe von sechs Monaten oder mehr in Betracht kommt.
+  norms:
+  - § 40 Abs. 1 StGB
+  - § 40 Abs. 2 StGB
+  - § 47 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-szk-56-abs1
+  type: norm
+  front: Wann wird eine Freiheitsstrafe nach § 56 Abs. 1 StGB zur Bewährung ausgesetzt?
+  back: >-
+    Bei einer Freiheitsstrafe von nicht mehr als einem Jahr setzt das Gericht die
+    Vollstreckung zur Bewährung aus, wenn zu erwarten ist, dass der Verurteilte sich
+    schon die Verurteilung zur Warnung dienen lässt und künftig auch ohne Einwirkung
+    des Strafvollzugs keine Straftaten mehr begehen wird (günstige Sozialprognose,
+    § 56 Abs. 1 S. 1 StGB). Dabei sind namentlich die Persönlichkeit des Verurteilten,
+    sein Vorleben, die Umstände seiner Tat, sein Verhalten nach der Tat, seine Lebensverhältnisse
+    und die zu erwartenden Wirkungen der Aussetzung zu berücksichtigen (§ 56 Abs. 1 S. 2
+    StGB). Die Bewährungszeit beträgt zwei bis fünf Jahre (§ 56a Abs. 1 StGB). Das
+    Gericht kann Auflagen (§ 56b StGB) und Weisungen (§ 56c StGB) erteilen. Die
+    Aussetzung wird widerrufen, wenn der Verurteilte erneut straffällig wird oder gegen
+    Auflagen und Weisungen gröblich oder beharrlich verstößt (§ 56f StGB).
+  norms:
+  - § 56 Abs. 1 StGB
+  - § 56a StGB
+  - § 56f StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-szk-56-abs2-3
+  type: norm
+  front: Was gilt für die Aussetzung bei Freiheitsstrafen von ein bis zwei Jahren und die Verteidigung der Rechtsordnung (§ 56 Abs. 2, 3 StGB)?
+  back: >-
+    Auch eine Freiheitsstrafe von mehr als einem Jahr, die zwei Jahre nicht übersteigt,
+    kann zur Bewährung ausgesetzt werden, wenn nach der Gesamtwürdigung von Tat und
+    Persönlichkeit des Verurteilten besondere Umstände vorliegen (§ 56 Abs. 2 S. 1
+    StGB). Bei der Prüfung kann auch das Bemühen um Schadenswiedergutmachung
+    berücksichtigt werden (§ 56 Abs. 2 S. 2 StGB). Bei einer Verurteilung zu einer Freiheitsstrafe
+    von mindestens sechs Monaten wird die Vollstreckung nicht ausgesetzt, wenn die
+    Verteidigung der Rechtsordnung sie gebietet (§ 56 Abs. 3 StGB). Dies ist der
+    Fall, wenn die Aussetzung im Hinblick auf das Gewicht der Tat und die Belange der Allgemeinheit
+    das Vertrauen in die Rechtsordnung erschüttern würde. Eine Freiheitsstrafe von mehr als zwei Jahren
+    kann nicht zur Bewährung ausgesetzt werden.
+  norms:
+  - § 56 Abs. 2 StGB
+  - § 56 Abs. 3 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-szk-kcang-erlaubtes
+  type: definition
+  front: 'KCanG (seit 1.4.2024): Was ist für Erwachsene erlaubt?'
+  back: >-
+    Das Konsumcannabisgesetz (KCanG) ist am 1. April 2024 in Kraft getreten. Cannabis
+    wurde damit aus dem Betäubungsmittelrecht ausgegliedert und unterliegt eigenen
+    Regeln. Erlaubt ist Personen ab 18 Jahren insbesondere der Besitz von bis zu 25 Gramm
+    Cannabis zum Eigenkonsum (§ 3 Abs. 1 KCanG); am Wohnsitz oder gewöhnlichen Aufenthalt
+    der Besitz von bis zu 50 Gramm (insgesamt) und von bis zu drei lebenden Cannabispflanzen
+    (§ 3 Abs. 2 KCanG); für Personen mit Wohnsitz oder gewöhnlichem Aufenthalt in Deutschland
+    der private Eigenanbau von bis zu drei Pflanzen gleichzeitig (§ 9 KCanG) und der gemeinschaftliche
+    nichtgewerbliche Eigenanbau in Anbauvereinigungen (§§ 11 ff. KCanG). Der Konsum
+    unterliegt Beschränkungen, etwa in Sichtweite von Schulen, Kinder- und Jugendeinrichtungen
+    Spielplätzen, Sportstätten und Fußgängerzonen (zwischen 7 und 20 Uhr) sowie in unmittelbarer Gegenwart von Minderjährigen (§ 5 KCanG). Ein Handel ist weiterhin
+    nicht erlaubt.
+  norms:
+  - § 3 KCanG
+  - § 9 KCanG
+  - § 5 KCanG
+  quellen:
+  - KCanG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-szk-kcang-strafbares
+  type: definition
+  front: 'KCanG: Was bleibt strafbar (§ 34 KCanG)?'
+  back: >-
+    § 34 KCanG stellt unter Strafe: unerlaubten Besitz oder Anbau über die erlaubten
+    Mengen hinaus (strafbar ab mehr als 30 Gramm außerhalb des Wohnsitzes, mehr als 60 Gramm
+    insgesamt oder mehr als drei lebenden Pflanzen, § 34 Abs. 1 Nr. 1 KCanG), unerlaubten Anbau, Handeltreiben,
+    Herstellen, unerlaubte Weitergabe und Abgabe, Verschaffen, Einfuhr und Ausfuhr
+    von Cannabis. Der Grundstrafrahmen reicht von Geldstrafe bis zu Freiheitsstrafe von
+    drei Jahren (§ 34 Abs. 1 KCanG). Für besonders schwere Fälle und Qualifikationen
+    (etwa gewerbsmäßiges oder bandenmäßiges Handeltreiben, Abgabe an Minderjährige)
+    sieht § 34 KCanG in weiteren Absätzen erhöhte Strafrahmen vor. Geringe Überschreitungen der
+    Besitzgrenzen (mehr als 25 bis 30 Gramm außerhalb des Wohnsitzes, mehr als 50 bis 60 Gramm insgesamt)
+    sind Ordnungswidrigkeiten (§ 36 Abs. 1 Nr. 1 KCanG). Besonders schwere Fälle (§ 34 Abs. 3 KCanG)
+    werden mit Freiheitsstrafe von drei Monaten bis zu fünf Jahren bestraft. Das Handeltreiben
+    mit Cannabis wird nicht mehr nach § 29 BtMG verfolgt, sondern nach dem KCanG;
+    für medizinisches Cannabis gilt das Medizinal-Cannabisgesetz.
+  norms:
+  - § 34 KCanG
+  - § 36 KCanG
+  quellen:
+  - KCanG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-szk-kcang-rueckwirkung
+  type: definition
+  front: 'KCanG: Welche Folgen hatte die Gesetzesänderung für frühere Taten (§ 2 Abs. 3 StGB, Art. 316p EGStGB)?'
+  back: >-
+    Bei Änderung des Gesetzes zwischen Beendigung der Tat und Entscheidung ist das
+    mildeste Gesetz anzuwenden (§ 2 Abs. 3 StGB, Meistbegünstigungsprinzip). Für Taten,
+    die nach früherem Recht (BtMG) strafbar waren, nach dem KCanG aber erlaubt sind,
+    entfällt die Strafbarkeit. Für bereits rechtskräftig abgeurteilte Taten enthält
+    das Gesetz eine Amnestieregelung: Verhängte, noch nicht vollstreckte Strafen
+    für Taten, die nach neuem Recht nicht mehr strafbar sind, werden erlassen; Gesamtstrafen
+    sind unter Beachtung der Neuregelung neu zu bilden (Art. 316p EGStGB für vor dem 1. April 2024 verhängte Strafen nach dem BtMG in Verbindung
+    mit Art. 313 EGStGB). Die Einzelheiten (Erlass, Neubildung von Gesamtstrafen) regelt Art. 313 EGStGB.
+  norms:
+  - § 2 Abs. 3 StGB
+  - Art. 316p EGStGB
+  quellen:
+  - StGB, amtliche Fassung
+  - KCanG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: sr-schema-szk-strafzumessung
+  title: Strafzumessung und Strafaussetzung zur Bewährung
+  norms:
+  - § 46 StGB
+  - § 49 StGB
+  - § 56 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Bestimmung des Strafrahmens
+    children:
+    - label: 1. Normalstrafrahmen des Tatbestands
+    - label: 2. Besonders schwerer oder minder schwerer Fall
+    - label: 3. Gesetzlich vertypte Milderungsgründe (§ 49 StGB; Verbot der Doppelberücksichtigung, § 50 StGB)
+  - label: II. Zumessung innerhalb des Strafrahmens
+    children:
+    - label: 1. Strafzumessungsumstände nach § 46 Abs. 2 StGB (für und gegen den Täter)
+    - label: 2. Doppelverwertungsverbot, § 46 Abs. 3 StGB
+      hinweis: Tatbestandsmerkmale dürfen nicht als solche straferschwerend gewertet
+        werden; das Ausmaß über das Vorausgesetzte hinaus ist zulässig.
+    - label: 3. Täter-Opfer-Ausgleich und Wiedergutmachung, § 46a StGB
+  - label: III. Art der Strafe
+    children:
+    - label: 1. Geldstrafe oder Freiheitsstrafe (§§ 40, 47 StGB)
+  - label: IV. Strafaussetzung zur Bewährung, § 56 StGB
+    hinweis: Nur bei Freiheitsstrafe bis zu zwei Jahren.
+    children:
+    - label: 1. Strafhöhe (Abs. 1 bis 1 Jahr, Abs. 2 bis 2 Jahre mit besonderen Umständen)
+    - label: 2. Günstige Sozialprognose
+    - label: 3. Verteidigung der Rechtsordnung, Abs. 3
+faelle:
+- slug: sr-fall-szk-messerstich
+  title: Das Strafmaß nach dem Messerangriff
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: T wurde wegen gefährlicher Körperverletzung (§ 224 Abs. 1 Nr. 2 StGB) verurteilt.
+    Er hatte O bei einem Streit mit einem Küchenmesser einen Schnitt am Unterarm zugefügt.
+    T ist nicht vorbestraft, hat einen festen Arbeitsplatz, räumte die Tat in der
+    Hauptverhandlung ein und zahlte O ein Schmerzensgeld. Das Gericht führt in der
+    Strafzumessung aus, "strafschärfend wirke, dass T ein Messer benutzt habe",
+    und verhängt zehn Monate Freiheitsstrafe. Die Vollstreckung setzt es nicht zur
+    Bewährung aus, weil die Strafe nach seiner Ansicht "zur Abschreckung" vollstreckt
+    werden müsse.
+  question: Ist die Strafzumessung rechtsfehlerfrei?
+  steps:
+  - prompt: Ist die Berücksichtigung der Messerbenutzung als strafschärfend zulässig?
+    erwartung: Nein. Die Verwendung des Messers als gefährliches Werkzeug ist bereits
+      Tatbestandsmerkmal des § 224 Abs. 1 Nr. 2 StGB. Nach § 46 Abs. 3 StGB darf sie
+      nicht strafschärfend gewertet werden (Doppelverwertungsverbot). Zulässig wäre nur
+      ein Hinweis auf besondere Umstände, die über das Tatbestandsmerkmal hinausgehen.
+  - prompt: Welche Umstände sind zugunsten des T zu berücksichtigen?
+    erwartung: Fehlende Vorstrafen, das Geständnis, die Zahlung von Schmerzensgeld
+      (Schadenswiedergutmachung, § 46 Abs. 2 S. 2 StGB, ggf. § 46a StGB) und die
+      geordneten Lebensverhältnisse sprechen für ihn.
+  - prompt: Kommt Strafaussetzung zur Bewährung in Betracht?
+    erwartung: Ja. Bei einer Freiheitsstrafe von zehn Monaten (bis ein Jahr) ist nach
+      § 56 Abs. 1 StGB bei günstiger Sozialprognose auszusetzen. Hier sprechen fehlende
+      Vorstrafen, fester Arbeitsplatz und Geständnis für die Prognose. Die
+      Verteidigung der Rechtsordnung (§ 56 Abs. 3 StGB, bei Strafen ab sechs Monaten
+      relevant) gebietet die Vollstreckung nur, wenn die Aussetzung das Vertrauen der
+      Bevölkerung in die Rechtsordnung erschüttern würde; das ist hier nicht ersichtlich,
+      bloße Abschreckung genügt nicht.
+  - prompt: Wie ist das Ergebnis?
+    erwartung: Die Strafzumessung ist rechtsfehlerhaft (§ 46 Abs. 3 StGB), und die
+      Versagung der Bewährung ist nicht tragfähig begründet (§ 56 Abs. 1, 3 StGB).
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Verstoß gegen das Doppelverwertungsverbot (Messer ist Tatbestandsmerkmal)
+      weight: 3.0
+      required: true
+      norms:
+      - § 46 Abs. 3 StGB
+      - § 224 Abs. 1 Nr. 2 StGB
+      keywords:
+      - Doppelverwertungsverbot
+      - § 46 Abs. 3
+      - Tatbestandsmerkmal
+      - gefährliches Werkzeug
+      - nicht strafschärfend
+      card_slugs:
+      - sr-szk-doppelverwertungsverbot
+    - id: p2
+      label: Strafmildernde Umstände nach § 46 Abs. 2 StGB benannt
+      weight: 1.5
+      required: false
+      norms:
+      - § 46 Abs. 2 StGB
+      keywords:
+      - Geständnis
+      - nicht vorbestraft
+      - Schadenswiedergutmachung
+      - Schmerzensgeld
+      - Vorleben
+      card_slugs:
+      - sr-szk-46-grundsaetze
+      - sr-szk-46a-wiedergutmachung
+    - id: p3
+      label: Strafaussetzung zur Bewährung nach § 56 Abs. 1 StGB (günstige Sozialprognose)
+      weight: 3.0
+      required: true
+      norms:
+      - § 56 Abs. 1 StGB
+      keywords:
+      - § 56 Abs. 1
+      - Strafaussetzung zur Bewährung
+      - günstige Sozialprognose
+      - Sozialprognose
+      - Bewährung
+      card_slugs:
+      - sr-szk-56-abs1
+    - id: p4
+      label: Verteidigung der Rechtsordnung (§ 56 Abs. 3 StGB) liegt nicht vor
+      weight: 1.0
+      required: false
+      norms:
+      - § 56 Abs. 3 StGB
+      keywords:
+      - Verteidigung der Rechtsordnung
+      - § 56 Abs. 3
+      - Abschreckung genügt nicht
+      card_slugs:
+      - sr-szk-56-abs2-3

@@ -1,0 +1,444 @@
+topic:
+  slug: sr-bt-koerperverletzung-ergaenzung
+  area: strafrecht
+  title: "Körperverletzung (Ergänzung): §§ 225, 229, 230, 231 StGB"
+  parent: sr-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-kvergz-225-tatbestand
+  type: definition
+  front: "Definiere: Misshandlung von Schutzbefohlenen, § 225 Abs. 1 StGB (Täterkreis und Opfer)"
+  back: >-
+    § 225 StGB ist ein Sonderdelikt, das das körperliche und seelische Wohl
+    besonders schutzbedürftiger Personen schützt. Opfer sind Personen unter 18
+    Jahren oder wegen Gebrechlichkeit oder Krankheit wehrlose Personen. Täter
+    kann nur sein, wer zu dem Opfer in einem der in Abs. 1 Nr. 1 bis 4 genannten
+    Näheverhältnisse steht: Das Opfer untersteht seiner Fürsorge oder Obhut (Nr.
+    1), gehört seinem Hausstand an (Nr. 2), wurde ihm vom Fürsorgepflichtigen
+    überlassen (Nr. 3) oder ist ihm im Rahmen eines Dienst- oder
+    Arbeitsverhältnisses untergeordnet (Nr. 4). Fürsorge bedeutet die Pflicht,
+    für das körperliche und seelische Wohl des Opfers zu sorgen, auch ohne
+    rechtlichen Titel (z. B. Eltern, Erzieher, Pfleger); Obhut ist das
+    tatsächliche Einstehenmüssen für die Sicherheit. Die Nähebeziehung ist ein
+    besonderes persönliches Merkmal i.S.d. § 28 Abs. 1 StGB, weil es die
+    Strafbarkeit begründet; Teilnehmer ohne dieses Merkmal sind nach § 28 Abs. 1
+    StGB zu mildern.
+  norms:
+  - "§ 225 Abs. 1 StGB"
+  - "§ 28 Abs. 1 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-kvergz-225-tathandlungen
+  type: definition
+  front: "Definiere: Quälen, rohes Misshandeln und böswillige Vernachlässigung, § 225 Abs. 1 StGB"
+  back: >-
+    Quälen ist das länger dauernde oder sich wiederholende Verursachen
+    erheblicher Schmerzen oder Leiden körperlicher oder seelischer Art. Roh
+    misshandelt, wer aus gefühlloser, fremdes Leiden missachtender Gesinnung
+    körperlich misshandelt; die gefühllose Gesinnung unterscheidet die rohe
+    Misshandlung von einfacher Körperverletzung, sie liegt bei hemmungsloser,
+    rücksichtsloser Gewaltausübung vor. Eine böswillige Vernachlässigung der
+    Sorgepflicht (Unterlassungsvariante) liegt vor, wenn der Täter aus
+    verwerflichen Beweggründen (Hass, Rachsucht, Geiz) oder aus gefühlloser
+    Gesinnung seiner Fürsorgepflicht nicht nachkommt, mit der Folge einer
+    Gesundheitsschädigung des Opfers; sie ist ein echtes Unterlassungsdelikt mit
+    Garantenstellung aus dem Näheverhältnis. Die Gesundheitsschädigung muss
+    Folge der Handlung sein. Subjektiv genügt Vorsatz; die gefühllose Gesinnung
+    bzw. Böswilligkeit ist besonderes subjektives Tatbestandsmerkmal. Abs. 3
+    enthält Qualifikationen (Gefahr des Todes oder einer schweren
+    Gesundheitsschädigung, erhebliche Schädigung der körperlichen oder
+    seelischen Entwicklung), Abs. 4 einen minder schweren Fall.
+  norms:
+  - "§ 225 Abs. 1 StGB"
+  - "§ 225 Abs. 3 StGB"
+  - "§ 225 Abs. 4 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-kvergz-225-konkurrenz
+  type: norm
+  front: "Wie verhält sich § 225 StGB zu den §§ 223 ff. StGB?"
+  back: >-
+    Die Einordnung des § 225 StGB ist umstritten. Überwiegend wird er als
+    selbständiger Tatbestand und nicht als bloße Qualifikation zu § 223 StGB
+    angesehen: Die Nähebeziehung und die besondere Verwerflichkeit der Tat
+    begründen eigenes Unrecht. Wer ihn dagegen als Qualifikation einordnet, wendet
+    auf die Beteiligung § 28 Abs. 2 StGB an. Folgerungen nach der überwiegenden
+    Ansicht: (1) Die
+    Strafbarkeit nach §§ 223, 224, 226 StGB bleibt daneben zu prüfen; die
+    Delikte stehen meist in Tateinheit (§ 52 StGB). (2) Der Strafrahmen von §
+    225 StGB (Freiheitsstrafe von sechs Monaten bis zu zehn Jahren) ist höher
+    als der von § 223 StGB. (3) Für die Beteiligung gilt § 28 Abs. 1 StGB, weil
+    die Nähebeziehung strafbegründend wirkt. (4) Bei einer Körperverletzung ohne
+    gefühllose Gesinnung gegenüber einem Kind bleibt es bei §§ 223, 224 StGB;
+    ein einzelner Schlag ist noch nicht per se ein Fall des § 225 StGB, auch wenn
+    körperliche Bestrafungen nach § 1631 Abs. 2 BGB unzulässig sind. Bei Todesfolge kommen §§ 222, 227 StGB in Betracht; Verweis auf
+    die Themen sr-bt-koerperverletzung-226-227 und sr-bt-koerperverletzung-224.
+  norms:
+  - "§ 225 StGB"
+  - "§ 223 StGB"
+  - "§ 52 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-kvergz-229-fahrlaessige-kv
+  type: definition
+  front: "Definiere: Fahrlässige Körperverletzung, § 229 StGB"
+  back: >-
+    Fahrlässige Körperverletzung begeht, wer durch Fahrlässigkeit die
+    Körperverletzung einer anderen Person verursacht (Freiheitsstrafe bis zu
+    drei Jahren oder Geldstrafe). Im Aufbau sind zu prüfen: (1) Erfolg:
+    Körperverletzung (körperliche Misshandlung oder Gesundheitsschädigung i.S.d.
+    § 223 StGB), (2) Kausalität der Handlung, (3) objektive
+    Sorgfaltspflichtverletzung (maßgeblich ist das Verhalten eines besonnenen
+    und gewissenhaften Menschen in der konkreten Lage des Täters), (4) objektive
+    Vorhersehbarkeit des Erfolgs und des Kausalverlaufs im Wesentlichen, (5)
+    objektive Zurechnung, insbesondere Pflichtwidrigkeitszusammenhang (der
+    Erfolg wäre bei pflichtgemäßem Verhalten nicht eingetreten) und
+    Schutzzweckzusammenhang, (6) Rechtswidrigkeit, (7) Schuld mit subjektiver
+    Sorgfaltspflichtverletzung und Vorhersehbarkeit. Einwilligung des Verletzten
+    ist auch bei Fahrlässigkeitsdelikten möglich, z. B. bei Sportverletzungen;
+    bei eigenverantwortlicher Selbstgefährdung entfällt bereits die objektive
+    Zurechnung. Verweis auf die Fahrlässigkeitslehre im Thema sr-bt-
+    fahrlaessige-toetung-222.
+  norms:
+  - "§ 229 StGB"
+  - "§ 223 Abs. 1 StGB"
+  - "§ 15 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-kvergz-230-strafantrag
+  type: norm
+  front: "Was regelt § 230 StGB (Strafantrag und besonderes öffentliches Interesse bei der Körperverletzung)?"
+  back: >-
+    Nach § 230 Abs. 1 StGB werden die vorsätzliche einfache Körperverletzung (§
+    223 StGB) und die fahrlässige Körperverletzung (§ 229 StGB) nur auf Antrag
+    verfolgt, es sei denn, die Strafverfolgungsbehörde hält wegen des besonderen
+    öffentlichen Interesses an der Strafverfolgung ein Einschreiten von Amts
+    wegen für geboten (relatives Antragsdelikt). Gefährliche (§ 224 StGB),
+    schwere (§ 226 StGB) und weitere qualifizierte Körperverletzungen sind
+    Offizialdelikte. Der Strafantrag ist Prozessvoraussetzung; er kann nach §
+    77b StGB binnen drei Monaten ab Kenntnis von Tat und Täter gestellt werden.
+    Das besondere öffentliche Interesse kann bejaht werden, z. B. bei einschlägiger
+    Vorstrafe, roher oder besonders leichtfertiger Tat, rassistischen oder vergleichbar
+    menschenverachtenden Motiven oder erheblicher Verletzung (Nr. 234 Abs. 1 RiStBV); die
+    Bejahung kann auch konkludent in der Anklageerhebung liegen. Die Delikte
+    sind zudem Privatklagedelikte (§ 374 Abs. 1 Nr. 4 StPO). In der Klausur ist
+    der Strafantrag nach der Tatbestandsprüfung kurz anzusprechen, wenn der
+    Sachverhalt dazu Anlass gibt.
+  norms:
+  - "§ 230 Abs. 1 StGB"
+  - "§ 77b StGB"
+  - "§ 374 StPO"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-kvergz-231-norm
+  type: norm
+  front: "Was regelt § 231 StGB (Beteiligung an einer Schlägerei) und wie ist er aufgebaut?"
+  back: >-
+    Nach § 231 Abs. 1 StGB wird schon wegen der Beteiligung an einer Schlägerei
+    oder an einem von mehreren verübten Angriff bestraft (Freiheitsstrafe bis zu
+    drei Jahren oder Geldstrafe), wenn durch die Schlägerei oder den Angriff der
+    Tod eines Menschen oder eine schwere Körperverletzung (§ 226 StGB)
+    verursacht worden ist. Zu prüfen sind: (1) Schlägerei oder Angriff mehrerer,
+    (2) Beteiligung des Täters daran, (3) objektive Bedingung der Strafbarkeit:
+    Tod eines Menschen oder schwere Körperverletzung im Sinne des § 226 StGB
+    wurde durch die Schlägerei bzw. den Angriff verursacht, (4) Vorsatz
+    bezüglich der Schlägerei und der eigenen Beteiligung, nicht aber bezüglich
+    der schweren Folge, (5) Rechtswidrigkeit, (6) Schuld, (7) Ausnahme nach Abs.
+    2: Wer an der Schlägerei beteiligt war, ohne dass ihm dies vorzuwerfen ist
+    (z. B. Notwehr, Schlichter), bleibt straflos. Die Vorschrift erfasst Fälle,
+    in denen nicht aufklärbar ist, welcher Beteiligte die schwere Folge
+    verursacht hat.
+  norms:
+  - "§ 231 Abs. 1 StGB"
+  - "§ 231 Abs. 2 StGB"
+  - "§ 226 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-kvergz-231-schlaegerei-angriff
+  type: definition
+  front: "Definiere: Schlägerei, Angriff mehrerer und Beteiligung, § 231 StGB"
+  back: >-
+    Eine Schlägerei ist eine mit gegenseitigen Täglichkeiten verbundene
+    Auseinandersetzung von mindestens drei Personen. Ein von mehreren verübter
+    Angriff ist eine feindselige, auf die körperliche Beeinträchtigung zielende
+    Handlung von mindestens zwei Personen gegen eine oder mehrere andere
+    Personen. Beteiligt ist, wer am Handgemenge unmittelbar teilnimmt (auch ohne
+    selbst zu schlagen) oder die Auseinandersetzung durch psychische oder
+    physische Unterstützung fördert; bloßes Zuschauen genügt nicht. Die
+    Beteiligung braucht keine Mittäterschaft oder Teilnahme zu sein: Das Gesetz
+    erhebt die Beteiligung selbst zur Tat. Der Beteiligte muss die Schlägerei
+    wollen oder zumindest billigend in Kauf nehmen. Die schwere Folge muss durch
+    die Schlägerei oder den Angriff als Ganzes verursacht worden sein, also in
+    einem kausalen Zusammenhang zu dem Tumult stehen; von welchem Beteiligten
+    sie herrührt, ist unerheblich, solange sie dem Gruppengeschehen entspringt. Wer erst
+    nach Eintritt der schweren Folge hinzutritt, ist nach der Rspr. nicht erfasst.
+  norms:
+  - "§ 231 Abs. 1 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-kvergz-231-objektive-bedingung
+  type: streitstand
+  front: "Streitstand: Rechtsnatur der schweren Folge in § 231 StGB und die Vereinbarkeit mit dem Schuldprinzip"
+  back: >-
+    Problem: § 231 StGB bestraft die Beteiligung, obwohl der Beteiligte die
+    schwere Folge weder gewollt noch verursacht haben muss. Die h.M. (Rspr. und
+    Teile der Lit.) sieht in der schweren Folge eine objektive Bedingung der
+    Strafbarkeit, die kein Unrecht begründet, sondern nur die Strafwürdigkeit
+    der abstrakt gefährlichen Beteiligung anzeigt; Vorsatz oder Fahrlässigkeit
+    sind nicht erforderlich. Sie stützt sich darauf, dass das strafbare Unrecht
+    in der Beteiligung an einer gefährlichen Gruppenhandlung liegt, die die
+    Gefahr schwerer Folgen birgt. Kritiker (insbesondere Teile der Lit.) halten
+    § 231 StGB wegen eines Verstoßes gegen das Schuldprinzip für
+    verfassungsrechtlich bedenklich und verlangen einen zurechenbaren Bezug der
+    Folge zum Beteiligten, etwa Fahrlässigkeit bezüglich der Folge oder eine
+    restriktive Auslegung der Beteiligung. Die Praxis begegnet dem Einwand durch
+    die Restriktion in Abs. 2 (Straflosigkeit bei nicht vorwerfbarer
+    Beteiligung). Für die Klausur genügt es, die h.M. mit der Einordnung als
+    objektive Bedingung der Strafbarkeit darzustellen und den Einwand des
+    Schuldprinzips zu benennen.
+  norms:
+  - "§ 231 Abs. 1 StGB"
+  - "§ 231 Abs. 2 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  - "BGH, Beschluss vom 20.01.2022 - 4 StR 430/21"
+  stand: 2026-10
+- slug: sr-kvergz-231-abs2-konkurrenz
+  type: definition
+  front: "Definiere: Nicht vorwerfbare Beteiligung (§ 231 Abs. 2 StGB) und Konkurrenzen"
+  back: >-
+    § 231 Abs. 2 StGB nimmt Beteiligte von der Strafe aus, denen die Beteiligung
+    nicht vorzuwerfen ist. Typische Fälle sind Beteiligte, die in Notwehr oder
+    Nothilfe handeln, die Streitenden trennen wollen (Schlichter) oder die von
+    anderen angegriffen werden und sich nur verteidigen. Ob die Norm als
+    Rechtfertigungs-, Entschuldigungs- oder tatbestandsbegrenzender Grund
+    einzuordnen ist, wird unterschiedlich beurteilt; die Prüfung erfolgt
+    jedenfalls in einer Gesamtbetrachtung, ob dem Beteiligten ein Vorwurf
+    gemacht werden kann. Konkurrenzen: § 231 StGB tritt nach h.M. hinter den
+    Taten zurück, die der Beteiligte selbst nach den §§ 211 ff., 223 ff. StGB
+    begangen hat, sofern diese dieselbe schwere Folge erfassen
+    (Gesetzeskonkurrenz); er bleibt als Auffangtatbestand dort relevant, wo
+    nicht aufklärbar ist, wer die Folge verursacht hat. Verweis auf die Themen
+    sr-bt-koerperverletzung-226-227 für § 226 StGB.
+  norms:
+  - "§ 231 Abs. 2 StGB"
+  - "§ 32 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-kvergz-228-verweis
+  type: norm
+  front: "Was regelt § 228 StGB und wo wird er im Prüfungsaufbau der Körperverletzung geprüft?"
+  back: >-
+    § 228 StGB beschränkt die rechtfertigende Einwilligung bei
+    Körperverletzungen: Wer eine Körperverletzung mit Einwilligung der
+    verletzten Person vornimmt, handelt nur dann rechtswidrig, wenn die Tat
+    trotz der Einwilligung gegen die guten Sitten verstößt. Maßstab der Rspr.
+    für die Sittenwidrigkeit ist nicht die Wertung der Einwilligung selbst,
+    sondern Art und Schwere des Körperverletzungserfolgs und der Tat: Je
+    schwerer die Verletzung und je größer die Gefahr, desto eher ist die Tat
+    sittenwidrig; eine konkrete Gefahr des Todes spricht regelmäßig für
+    Sittenwidrigkeit. Die Prüfung erfolgt auf Rechtswidrigkeitsebene nach den
+    allgemeinen Voraussetzungen der Einwilligung. Verweis auf das Thema sr-at-
+    rechtfertigende-einwilligung, in dem die Voraussetzungen der Einwilligung
+    und der Sittenwidrigkeitsmaßstab ausführlich behandelt werden.
+  norms:
+  - "§ 228 StGB"
+  - "§ 223 Abs. 1 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: sr-kvergz-schema-231
+  title: "Beteiligung an einer Schlägerei, § 231 StGB"
+  norms:
+  - "§ 231 Abs. 1 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+  steps:
+  - label: "I. Tatbestand"
+    children:
+    - label: "1. Objektiver Tatbestand"
+      children:
+      - label: "a) Schlägerei (mindestens drei Personen, gegenseitige Täglichkeiten) oder von mehreren verübter Angriff (mindestens zwei Angreifer)"
+      - label: "b) Beteiligung des Täters"
+        hinweis: >-
+          Auch ohne eigenen Schlag möglich, bloßes Zuschauen genügt nicht.
+      - label: "c) Objektive Bedingung der Strafbarkeit: Tod oder schwere Körperverletzung (§ 226 StGB) verursacht durch die Schlägerei bzw. den Angriff"
+        hinweis: >-
+          Vorsatz nicht erforderlich; auf die Zuordnung zu einem Beteiligten
+          kommt es nicht an.
+    - label: "2. Subjektiver Tatbestand: Vorsatz bezüglich Schlägerei/Angriff und eigener Beteiligung"
+  - label: "II. Rechtswidrigkeit"
+  - label: "III. Schuld"
+  - label: "IV. Straflosigkeit bei nicht vorwerfbarer Beteiligung, § 231 Abs. 2 StGB"
+    hinweis: >-
+      Schlichter, Notwehr: hier ausführlich Stellung nehmen.
+  - label: "V. Konkurrenzen"
+    hinweis: >-
+      § 231 StGB tritt hinter selbst verwirklichten Delikten zurück.
+- slug: sr-kvergz-schema-229
+  title: "Fahrlässige Körperverletzung, § 229 StGB"
+  norms:
+  - "§ 229 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+  steps:
+  - label: "I. Tatbestand"
+    children:
+    - label: "1. Erfolg: Körperverletzung (Misshandlung oder Gesundheitsschädigung)"
+    - label: "2. Kausalität (Äquivalenztheorie)"
+    - label: "3. Objektive Sorgfaltspflichtverletzung"
+      hinweis: >-
+        Maßstab: besonnener, gewissenhafter Mensch in der Lage des Täters;
+        Sonderwissen und Sonderkönnen beachten.
+    - label: "4. Objektive Vorhersehbarkeit"
+    - label: "5. Objektive Zurechnung: Pflichtwidrigkeitszusammenhang und Schutzzweck"
+      hinweis: >-
+        Eigenverantwortliche Selbstgefährdung, einverständliche Fremdgefährdung.
+  - label: "II. Rechtswidrigkeit"
+    hinweis: >-
+      Auch Einwilligung bei Fahrlässigkeitsdelikten.
+  - label: "III. Schuld: subjektive Sorgfaltspflichtverletzung und Vorhersehbarkeit"
+  - label: "IV. Strafantrag, § 230 StGB"
+    hinweis: >-
+      Relatives Antragsdelikt.
+faelle:
+- slug: sr-kvergz-fall-gaststaette
+  title: "Die Schlägerei vor der Gaststätte"
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - "Eigener Sachverhalt der Redaktion"
+  stand: 2026-10
+  facts: >-
+    Vor einer Gaststätte eskaliert ein Streit zwischen A und B. Wenig später
+    greift auch C ein, der mit A befreundet ist. A und C schlagen gemeinsam auf
+    B ein, der sich nicht wehrt, bis dieser zu Boden geht. Als B am Boden liegt, trifft ihn ein Schlag
+    oder Tritt am Auge; später stellt sich heraus, dass B auf einem Auge das
+    Sehvermögen auf Dauer verloren hat. Wer von beiden diesen Schlag oder Tritt
+    ausgeführt hat, ist nicht aufklärbar. D, ein Passant, versucht, die
+    Streitenden zu trennen, und zieht A von B weg. Er schlägt dabei niemanden
+    und beteiligt sich nicht weiter. Bei der Trennung wird auch D von C am Arm
+    gestoßen. Weder A noch C noch D hatten den Verlust des Sehvermögens gewollt.
+  question: >-
+    Wie haben sich A, C und D nach § 231 StGB strafbar gemacht? Weitere Delikte
+    sind nicht zu prüfen.
+  steps:
+  - prompt: >-
+      Liegt ein von mehreren verübter Angriff vor?
+    erwartung: >-
+      Ja. A und C haben gemeinsam auf B eingeschlagen; das ist eine feindselige,
+      auf körperliche Beeinträchtigung zielende Handlung von mindestens zwei
+      Personen gegen eine andere Person. Eine Schlägerei im engeren Sinn
+      (gegenseitige Täglichkeiten von mindestens drei Personen) liegt mangels
+      wechselseitiger Auseinandersetzung nicht vor.
+  - prompt: >-
+      Sind A und C beteiligt?
+    erwartung: >-
+      Ja. Beide haben unmittelbar am Angriff mitgewirkt. Eine Mittäterschaft
+      oder Teilnahme im Sinne der §§ 25 ff. StGB ist nicht erforderlich; die
+      Beteiligung genügt.
+  - prompt: >-
+      Ist die objektive Bedingung der Strafbarkeit erfüllt?
+    erwartung: >-
+      Ja. Der Verlust des Sehvermögens auf einem Auge ist eine schwere
+      Körperverletzung i.S.d. § 226 Abs. 1 Nr. 1 StGB. Sie wurde durch den
+      Angriff verursacht. Dass sich nicht klären lässt, welcher Beteiligte den
+      Schlag ausgeführt hat, ist unerheblich. Vorsatz bezüglich der schweren
+      Folge ist nicht erforderlich.
+  - prompt: >-
+      Wie ist D zu beurteilen?
+    erwartung: >-
+      D hat sich zwar am Geschehen beteiligt, sein Verhalten ist ihm aber nicht
+      vorzuwerfen: Er wollte die Streitenden trennen und hat nicht gewalttätig
+      gehandelt. Nach § 231 Abs. 2 StGB bleibt er straflos. A und C sind dagegen
+      nach § 231 Abs. 1 StGB strafbar; Vorsatz bezüglich ihrer Beteiligung liegt
+      vor, Rechtfertigungs- oder Entschuldigungsgründe sind nicht ersichtlich.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: "Von mehreren verübter Angriff/Schlägerei erkannt und Beteiligung bejaht"
+      weight: 2.5
+      required: true
+      norms:
+      - "§ 231 Abs. 1 StGB"
+      keywords:
+      - "Angriff mehrerer"
+      - "von mehreren verübter Angriff"
+      - "Schlägerei"
+      - "Beteiligung"
+      - "§ 231 StGB"
+      card_slugs:
+      - sr-kvergz-231-schlaegerei-angriff
+      - sr-kvergz-231-norm
+    - id: p2
+      label: "Schwere Folge als objektive Bedingung der Strafbarkeit bejaht; Zuordnung unerheblich"
+      weight: 3.0
+      required: true
+      norms:
+      - "§ 231 Abs. 1 StGB"
+      - "§ 226 Abs. 1 StGB"
+      keywords:
+      - "objektive Bedingung der Strafbarkeit"
+      - "schwere Körperverletzung"
+      - "Verlust des Sehvermögens"
+      - "§ 226 StGB"
+      - "nicht aufklärbar"
+      card_slugs:
+      - sr-kvergz-231-objektive-bedingung
+    - id: p3
+      label: "Vorsatz nur bezüglich der Beteiligung, nicht der Folge"
+      weight: 1.0
+      required: false
+      norms:
+      - "§ 231 Abs. 1 StGB"
+      - "§ 15 StGB"
+      keywords:
+      - "Vorsatz bezüglich der Beteiligung"
+      - "Vorsatz auf die Folge nicht erforderlich"
+      - "kein Vorsatz bezüglich der schweren Folge"
+      - "Beteiligungsvorsatz"
+      card_slugs:
+      - sr-kvergz-231-norm
+    - id: p4
+      label: "D: Straflosigkeit nach § 231 Abs. 2 StGB (nicht vorwerfbare Beteiligung)"
+      weight: 2.5
+      required: true
+      norms:
+      - "§ 231 Abs. 2 StGB"
+      keywords:
+      - "nicht vorzuwerfen"
+      - "§ 231 Abs. 2"
+      - "Schlichter"
+      - "Trennen der Streitenden"
+      - "straflos"
+      card_slugs:
+      - sr-kvergz-231-abs2-konkurrenz
+    - id: p5
+      label: "Ergebnis: A und C strafbar nach § 231 Abs. 1 StGB"
+      weight: 1.0
+      required: false
+      norms:
+      - "§ 231 Abs. 1 StGB"
+      keywords:
+      - "A und C strafbar"
+      - "strafbar nach § 231"
+      - "machen sich strafbar"
+      - "Beteiligung an einer Schlägerei"
+      card_slugs:
+      - sr-kvergz-231-norm

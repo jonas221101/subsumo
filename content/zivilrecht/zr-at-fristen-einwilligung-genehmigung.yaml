@@ -1,0 +1,302 @@
+topic:
+  slug: zr-at-fristen-einwilligung-genehmigung
+  area: zivilrecht
+  title: Zustimmung (Einwilligung, Genehmigung), Verfügung eines Nichtberechtigten und Fristen, §§ 182 bis 185, 186 ff. BGB
+  parent: zr-bgb-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-at-zust-begriff
+  type: definition
+  front: 'Definiere: Zustimmung, Einwilligung und Genehmigung, §§ 182 bis 184 BGB'
+  back: >-
+    Zustimmung ist der Oberbegriff für die Einwilligung (vorherige Zustimmung, §
+    183 BGB) und die Genehmigung (nachträgliche Zustimmung, § 184 BGB) zu einem
+    Rechtsgeschäft eines anderen. Sie ist ein einseitiges, empfangsbedürftiges
+    Rechtsgeschäft und wird nach § 182 Abs. 1 BGB wahlweise dem einen oder dem
+    anderen Teil gegenüber erklärt.  Die Zustimmungserklärung bedarf nach § 182 Abs. 2 BGB nicht der
+    für das Rechtsgeschäft bestimmten Form. Praktische Beispiele sind die Zustimmung
+    der gesetzlichen Vertreter zum Geschäft Minderjähriger (§§ 107, 108 BGB), die
+    Genehmigung des Vertretenen (§ 177 BGB) und die Zustimmung des Berechtigten zur
+    Verfügung eines Nichtberechtigten (§ 185 BGB).
+  norms:
+  - § 182 Abs. 1 BGB
+  - § 182 Abs. 2 BGB
+  - § 183 BGB
+  - § 184 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-zust-widerruf-183
+  type: norm
+  front: Kann die Einwilligung widerrufen werden, § 183 BGB?
+  back: >-
+    Die vorherige Zustimmung (Einwilligung) ist nach § 183 S. 1 BGB bis zur Vornahme des
+    Rechtsgeschäfts widerruflich, sofern nicht aus dem ihr zugrundeliegenden
+    Rechtsverhältnis sich ein anderes ergibt. Der Widerruf kann sowohl dem einen als auch
+    dem anderen Teil gegenüber erklärt werden (§ 183 S. 2 BGB). Ein Ausschluss der
+    Widerruflichkeit kann sich etwa aus einem Auftrag oder einer Sicherungsabrede
+    ergeben (unwiderrufliche Einwilligung). Ist das Rechtsgeschäft einmal vorgenommen,
+    ist ein Widerruf nicht mehr möglich. Die Genehmigung (§ 184 BGB) ist dagegen, einmal
+    erteilt, grundsätzlich unwiderruflich, weil sie das schwebend unwirksame Geschäft
+    wirksam macht und die Rechtslage für alle Beteiligten klärt.
+  norms:
+  - § 183 S. 1 BGB
+  - § 183 S. 2 BGB
+  - § 184 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-zust-rueckwirkung-184
+  type: norm
+  front: Welche Wirkung hat die Genehmigung, § 184 BGB?
+  back: >-
+    Die nachträgliche Zustimmung (Genehmigung) wirkt nach § 184 Abs. 1 BGB auf den
+    Zeitpunkt der Vornahme des Rechtsgeschäfts zurück, soweit nicht ein anderes
+    bestimmt ist. Das schwebend unwirksame Geschäft wird also von Anfang an wirksam
+    (ex tunc). Verfügungen, die vor der Genehmigung über den Gegenstand des
+    Rechtsgeschäfts von dem Genehmigenden getroffen worden sind, oder die im Wege der
+    Zwangsvollstreckung oder Arrestvollziehung oder durch den Insolvenzverwalter
+    erfolgt sind, werden durch die Rückwirkung nicht unwirksam, § 184 Abs. 2 BGB. Damit
+    wird der Genehmigende davor geschützt, dass die Rückwirkung Zwischenverfügungen
+    entwertet, die er selbst vorgenommen hat. Genehmigungsfähig ist nur ein schwebend unwirksames Geschäft; ein nichtiges Geschäft kann sie nicht heilen.
+  norms:
+  - § 184 Abs. 1 BGB
+  - § 184 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-zust-185-abs1
+  type: norm
+  front: Wann ist die Verfügung eines Nichtberechtigten wirksam, § 185 Abs. 1 BGB?
+  back: >-
+    Eine Verfügung ist ein Rechtsgeschäft, das unmittelbar ein Recht überträgt,
+    belastet, aufhebt oder inhaltlich ändert. Trifft ein Nichtberechtigter, also wer
+    weder Inhaber des Rechts noch zur Verfügung befugt ist, eine Verfügung über einen
+    Gegenstand, ist sie grundsätzlich unwirksam. Nach § 185 Abs. 1 BGB ist sie jedoch
+    wirksam, wenn sie mit Einwilligung des Berechtigten erfolgt. Die Einwilligung
+    (Ermächtigung) erteilt dem Nichtberechtigten die Verfügungsbefugnis im eigenen
+    Namen, zum Beispiel bei der Verkaufsermächtigung des Kommissionärs oder des
+    Vorbehaltskäufers, der im ordentlichen Geschäftsgang weiterverkaufen darf. Von der
+    Ermächtigung ist die Stellvertretung abzugrenzen: Der Vertreter handelt in fremdem
+    Namen, der Ermächtigte im eigenen Namen über fremdes Recht. Die Einwilligung ist
+    nach § 183 BGB bis zur Vornahme widerruflich.
+  norms:
+  - § 185 Abs. 1 BGB
+  - § 183 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-zust-185-abs2
+  type: norm
+  front: Welche Heilungstatbestände enthält § 185 Abs. 2 BGB?
+  back: >-
+    Die Verfügung eines Nichtberechtigten wird nach § 185 Abs. 2 S. 1 BGB auch
+    wirksam, (1) wenn der Berechtigte sie genehmigt (Var. 1), (2) wenn der Verfügende den
+    Gegenstand erwirbt (Konvaleszenz, Var. 2) oder (3) wenn der Berechtigte den
+    Verfügenden beerbt und für die Nachlassverbindlichkeiten unbeschränkt haftet (Var.
+    3). Die Genehmigung wirkt nach § 184 Abs. 1 BGB zurück, der Wirksamkeitszeitpunkt der
+    Verfügung ist also ihre Vornahme. Bei der Konvaleszenz (Erwerb des Rechts durch
+    den Verfügenden) und der Beerbung wirkt die Heilung dagegen nicht zurück, sondern
+    erst im Erwerbszeitpunkt (ex nunc). Hat der Verfügende über denselben Gegenstand mehrfach verfügt, wird im Fall der Konvaleszenz oder der Beerbung nach § 185 Abs. 2 S. 2 BGB nur die frühere Verfügung wirksam. Die Genehmigung der Verfügung ist
+    getrennt vom Verpflichtungsgeschäft zu prüfen.
+  norms:
+  - § 185 Abs. 2 S. 1 BGB
+  - § 185 Abs. 2 S. 2 BGB
+  - § 184 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-zust-konvaleszenz
+  type: norm
+  front: 'Konvaleszenz nach § 185 Abs. 2 S. 1 Var. 2 BGB: Ab wann ist die Verfügung wirksam?'
+  back: >-
+    Erwirbt der Nichtberechtigte den Gegenstand später selbst, wird seine frühere
+    Verfügung nach § 185 Abs. 2 S. 1 Var. 2 BGB wirksam. Die Heilung wirkt nach h. M. nur ex nunc, also erst im Zeitpunkt des Erwerbs durch den Verfügenden. Das folgt aus dem Wortlaut, der anders als § 184 Abs. 1 BGB keine
+    Rückwirkung anordnet. Bei mehreren Verfügungen über denselben Gegenstand ist nach
+    § 185 Abs. 2 S. 2 BGB nur die frühere wirksam; die späteren bleiben unwirksam.
+    Anders ist es bei der Genehmigung durch den Berechtigten: Sie wirkt nach
+    § 184 Abs. 1 BGB auf den Zeitpunkt der Verfügung zurück, wobei § 184 Abs. 2 BGB
+    Zwischenverfügungen des Genehmigenden schützt.
+  norms:
+  - § 185 Abs. 2 S. 1 BGB
+  - § 184 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-zust-816
+  type: definition
+  front: 'Verweis: Wie hängt die Genehmigung einer Verfügung mit § 816 Abs. 1 S. 1 BGB zusammen?'
+  back: >-
+    Verfügt ein Nichtberechtigter entgeltlich über einen Gegenstand und ist die
+    Verfügung dem Berechtigten gegenüber wirksam, muss der Nichtberechtigte dem
+    Berechtigten nach § 816 Abs. 1 S. 1 BGB das durch die Verfügung Erlangte
+    herausgeben. Wirksam gegenüber dem Berechtigten ist die Verfügung entweder
+    wegen gutgläubigen Erwerbs (§§ 932 ff. BGB) oder wegen Genehmigung nach § 185
+    Abs. 2 S. 1 Var. 1 BGB. Der Berechtigte kann deshalb bei einem bösgläubigen
+    Erwerber, der nicht gutgläubig erwerben konnte, die Verfügung genehmigen, um
+    den Erlös zu erhalten. Mit der Genehmigung verliert er allerdings sein
+    Eigentum und den Anspruch aus § 985 BGB gegen den Erwerber, denn die Genehmigung
+    macht die Verfügung rückwirkend wirksam. Die Genehmigung ist daher eine Wahl
+    zwischen Herausgabe der Sache und Herausgabe des Erlöses.
+  norms:
+  - § 816 Abs. 1 S. 1 BGB
+  - § 185 Abs. 2 S. 1 BGB
+  - § 985 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-zust-fristberechnung
+  type: norm
+  front: Wie werden Fristen berechnet, §§ 187, 188 BGB, und was gilt bei Feiertagen, § 193 BGB?
+  back: >-
+    Ist für den Anfang einer Frist ein Ereignis oder ein in den Lauf eines Tages fallender
+    Zeitpunkt maßgebend, wird der Tag des Ereignisses bei der Berechnung nicht mitgerechnet
+    (§ 187 Abs. 1 BGB). Ist der Beginn eines Tages
+    maßgebend, wird dieser Tag mitgerechnet (§ 187 Abs. 2 S. 1 BGB; für den Beginn des Lebensalters gilt § 187 Abs. 2 S. 2 BGB). Eine Tagesfrist endet mit Ablauf des letzten Tages (§ 188 Abs. 1 BGB).  Eine nach Wochen oder Monaten bestimmte Frist endet
+    im Fall des § 187 Abs. 1 BGB mit Ablauf des Tages, der durch Benennung oder Zahl dem Ereignistag entspricht (§ 188 Abs. 2 BGB; im Fall des § 187 Abs. 2 BGB mit dem Ablauf des vorhergehenden Tages); fehlt dieser
+    Tag im Monat, endet die Frist am letzten Tag des Monats (§ 188 Abs. 3 BGB). Fällt
+    das Fristende auf einen Sonntag, einen Feiertag oder einen Sonnabend, endet die Frist
+    am nächsten Werktag (§ 193 BGB), wenn eine Willenserklärung abzugeben oder eine
+    Leistung zu bewirken ist.
+  norms:
+  - § 187 Abs. 1 BGB
+  - § 187 Abs. 2 BGB
+  - § 188 BGB
+  - § 193 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-at-zust-185
+  title: Wirksamkeit der Verfügung eines Nichtberechtigten, § 185 BGB
+  norms:
+  - § 185 BGB
+  - § 182 BGB
+  - § 184 BGB
+  - § 816 Abs. 1 S. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Verfügung
+    hinweis: Rechtsgeschäft, das unmittelbar ein Recht überträgt, belastet,
+      aufhebt oder ändert (z. B. Einigung und Übergabe, § 929 S. 1 BGB).
+  - label: II. Verfügender ist Nichtberechtigter
+    hinweis: Weder Inhaber des Rechts noch verfügungsbefugt.
+  - label: III. Wirksamkeit nach § 185 BGB
+    children:
+    - label: 1. Einwilligung des Berechtigten, § 185 Abs. 1 BGB
+      hinweis: Widerruflich bis zur Vornahme, § 183 BGB.
+    - label: 2. Genehmigung des Berechtigten, § 185 Abs. 2 S. 1 Var. 1 BGB
+      children:
+      - label: a) Erklärung gegenüber einem der Beteiligten, § 182 Abs. 1 BGB
+      - label: b) Keine Form erforderlich, § 182 Abs. 2 BGB
+      - label: c) Rückwirkung, § 184 Abs. 1 BGB
+    - label: 3. Konvaleszenz, § 185 Abs. 2 S. 1 Var. 2 BGB
+      hinweis: Heilung ex nunc.
+    - label: 4. Beerbung, § 185 Abs. 2 S. 1 Var. 3 BGB
+  - label: IV. Folgeansprüche
+    children:
+    - label: 1. Herausgabe des Erlöses, § 816 Abs. 1 S. 1 BGB
+    - label: 2. Verlust von § 985 BGB gegen den Erwerber
+faelle:
+- slug: zr-fall-at-zust-genehmigung-verkauf
+  title: Die geliehene Maschine
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    E leiht dem Bekannten H eine Spezialmaschine für drei Monate. H verkauft und
+    übergibt die Maschine für 5.000 Euro an K. K, der weiß, dass die Maschine E gehört und H sie nur geliehen hat, zahlt den Kaufpreis.
+    Als E dies erfährt, schreibt er H einen Brief, in dem er den Verkauf nachträglich
+    "billigt" und von H die 5.000 Euro verlangt. Danach verlangt er aber auch von K
+    Herausgabe der Maschine. Der Wert der Maschine beträgt 5.000 Euro.
+  question: Wer ist Eigentümer der Maschine, und kann E von H Herausgabe der 5.000
+    Euro verlangen?
+  steps:
+  - prompt: Ist K Eigentümer geworden, § 929 S. 1 BGB?
+    erwartung: >-
+      Zunächst nicht. Einigung und Übergabe liegen vor, aber H war als Entleiher
+      Nichtberechtigter. Ein gutgläubiger Erwerb nach §§ 929 S. 1, 932 BGB scheitert, weil K bösgläubig war (§ 932 Abs. 2 BGB). Die Verfügung ist daher zunächst
+      unwirksam.
+  - prompt: Hat E die Verfügung wirksam genehmigt?
+    erwartung: >-
+      Ja. Die Genehmigung nach § 185 Abs. 2 S. 1 Var. 1 BGB kann nach § 182 Abs. 1 BGB
+      gegenüber H als einem der Beteiligten erklärt werden und ist formfrei (§ 182 Abs. 2
+      BGB). Die Genehmigung ist als "Billigung des Verkaufs" auszulegen. Sie wirkt nach §
+      184 Abs. 1 BGB zurück, sodass K Eigentümer geworden ist.
+  - prompt: Kann E von K Herausgabe nach § 985 BGB verlangen?
+    erwartung: >-
+      Nein. E hat durch die wirksame Genehmigung sein Eigentum verloren; K ist
+      Eigentümer und hat ein Recht zum Besitz. Die Genehmigung ist einmal
+      erteilt unwiderruflich, daran ändert auch das spätere Herausgabeverlangen
+      nichts.
+  - prompt: Kann E von H die 5.000 Euro verlangen?
+    erwartung: >-
+      Ja, aus § 816 Abs. 1 S. 1 BGB. H hat als Nichtberechtigter entgeltlich über die
+      Maschine verfügt, die Verfügung ist E gegenüber durch die Genehmigung wirksam. H
+      muss das durch die Verfügung Erlangte, den Kaufpreis von 5.000 Euro,
+      herausgeben.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Kein gutgläubiger Erwerb des K, Verfügung zunächst unwirksam
+      weight: 1.0
+      required: false
+      norms:
+      - § 932 Abs. 2 BGB
+      keywords:
+      - "§ 932 Abs. 2"
+      - "bösgläubig"
+      - "Nichtberechtigter"
+      - "kein gutgläubiger Erwerb"
+      card_slugs:
+      - zr-at-zust-185-abs1
+    - id: p2
+      label: Genehmigung nach § 185 Abs. 2 S. 1 Var. 1 BGB mit Rückwirkung (§ 184 Abs. 1 BGB)
+      weight: 3.0
+      required: true
+      norms:
+      - § 185 Abs. 2 S. 1 BGB
+      - § 184 Abs. 1 BGB
+      keywords:
+      - "§ 185 Abs. 2"
+      - "Genehmigung"
+      - "Rückwirkung"
+      - "§ 184 Abs. 1"
+      - "§ 182 Abs. 1"
+      card_slugs:
+      - zr-at-zust-185-abs2
+      - zr-at-zust-rueckwirkung-184
+    - id: p3
+      label: Verlust von § 985 BGB nach Genehmigung
+      weight: 1.0
+      required: false
+      keywords:
+      - "§ 985"
+      - "Eigentum verloren"
+      - "kein Herausgabeanspruch"
+      - "K ist Eigentümer"
+      card_slugs:
+      - zr-at-zust-816
+    - id: p4
+      label: Anspruch auf den Erlös nach § 816 Abs. 1 S. 1 BGB
+      weight: 2.0
+      required: true
+      norms:
+      - § 816 Abs. 1 S. 1 BGB
+      keywords:
+      - "§ 816 Abs. 1 S. 1"
+      - "Nichtberechtigter"
+      - "entgeltliche Verfügung"
+      - "Herausgabe des Erlangten"
+      - "Erlös"
+      card_slugs:
+      - zr-at-zust-816

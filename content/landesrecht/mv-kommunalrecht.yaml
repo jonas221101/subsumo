@@ -1,0 +1,340 @@
+topic:
+  slug: mv-kommunalrecht
+  area: oeffentliches-recht
+  title: Kommunalrecht Mecklenburg-Vorpommern
+  parent: or-vwvfg-verwaltungsakt
+  bundesland: MV
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: mv-kr-selbstverwaltung
+  type: norm
+  front: >-
+    Was gewährleistet die kommunale Selbstverwaltung in Mecklenburg-Vorpommern und woraus folgt sie?
+  back: >-
+    Die Gemeinden haben das Recht, alle Angelegenheiten der örtlichen Gemeinschaft im Rahmen der Gesetze
+    in eigener Verantwortung zu regeln (Art. 28 Abs. 2 S. 1 GG; Art. 72 Verf M-V). Man unterscheidet die
+    Rechtssubjektsgarantie, die Rechtsinstitutionsgarantie und die subjektive Rechtsstellungsgarantie.
+    Inhaltlich umfasst die Garantie die Gemeindehoheiten (Gebiets-, Organisations-, Personal-, Planungs-,
+    Rechtsetzungs- und Finanzhoheit). Gesetzliche Eingriffe sind zulässig, wenn sie den Kernbereich wahren
+    und im Randbereich verhältnismäßig sind. Die Gemeinde kann sich gegen Eingriffe mit der Kommunalverfassungsbeschwerde
+    (Art. 93 Abs. 1 Nr. 4b GG) und, soweit vorgesehen, vor dem Landesverfassungsgericht wehren.
+  norms:
+  - Art. 28 Abs. 2 S. 1 GG
+  - Art. 93 Abs. 1 Nr. 4b GG
+  - Art. 72 Verf M-V
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: mv-kr-rastede
+  type: rechtsprechung
+  front: >-
+    Wie ist die gesetzliche Verlagerung einer Gemeindeaufgabe auf Kreis- oder Landesebene am Rastede-Maßstab
+    zu prüfen?
+  back: >-
+    Wird eine Aufgabe der örtlichen Gemeinschaft durch Gesetz der Gemeinde entzogen, ist der Schutzbereich
+    des Art. 28 Abs. 2 S. 1 GG und des Art. 72 Verf M-V eröffnet. Nach BVerfGE 79, 127 (Rastede) besteht
+    eine Zuständigkeitsvermutung zugunsten der Gemeinde. Der Entzug ist nur aus Gründen des Gemeinwohls
+    zulässig, insbesondere wenn eine ordnungsgemäße Aufgabenwahrnehmung auf Gemeindeebene sonst nicht
+    gewährleistet wäre; bloße Verwaltungsvereinfachung oder Wirtschaftlichkeitserwägungen genügen nicht.
+    Im Kernbereich gilt eine absolute Schranke, im Randbereich das Verhältnismäßigkeitsprinzip. Dem Gesetzgeber
+    steht bei der Einschätzung ein Spielraum zu, der gerichtlich nur eingeschränkt überprüfbar ist. Rechtsschutz:
+    Kommunalverfassungsbeschwerde nach Art. 93 Abs. 1 Nr. 4b GG oder landesverfassungsrechtliche Rechtsbehelfe.
+  norms:
+  - Art. 28 Abs. 2 S. 1 GG
+  quellen:
+  - 'Rechtsprechung: BVerfGE 79, 127 (Rastede)'
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: mv-kr-organe
+  type: norm
+  front: >-
+    Welche Organe hat die Gemeinde nach der Kommunalverfassung Mecklenburg-Vorpommern und wie ist die
+    kommunale Ebene gegliedert?
+  back: >-
+    Hauptorgane der Gemeinde sind die Gemeindevertretung (in Städten Stadtvertretung) und der Bürgermeister.
+    Die Vertretung ist das oberste Willensbildungsorgan, der Bürgermeister leitet die Verwaltung und vertritt
+    die Gemeinde. Gemeinden können amtsfrei sein oder einem Amt angehören, das die Verwaltungsgeschäfte
+    der amtsangehörigen Gemeinden führt; Organe des Amtes sind insbesondere der Amtsausschuss und der
+    Amtsvorsteher. Auf der Ebene darüber stehen die Landkreise (Kreistag, Landrat) sowie die kreisfreien
+    Städte Rostock und Schwerin. Rechtsgrundlage ist die Kommunalverfassung für das Land Mecklenburg-Vorpommern
+    (KV M-V).
+  norms:
+  - Kommunalverfassung für das Land Mecklenburg-Vorpommern (KV M-V)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: mv-kr-zustaendigkeit
+  type: definition
+  front: >-
+    Wie werden in Mecklenburg-Vorpommern die Zuständigkeiten zwischen Vertretung und Verwaltungsspitze
+    abgegrenzt?
+  back: >-
+    Die Gemeindevertretung entscheidet nach § 22 KV M-V in den wichtigen Selbstverwaltungsangelegenheiten,
+    insbesondere über Satzungen und die Haushaltssatzung; sie kann Entscheidungen auf den Hauptausschuss
+    oder den Bürgermeister übertragen, soweit nicht die nicht übertragbaren Angelegenheiten des § 22 Abs. 3
+    KV M-V betroffen sind (§ 22 Abs. 2 KV M-V); bestimmte Vermögensgeschäfte bis zu Wertgrenzen kann
+    die Hauptsatzung dem Hauptausschuss oder dem Bürgermeister zuweisen (§ 22 Abs. 4 KV M-V). Der Bürgermeister
+    leitet die Verwaltung, bereitet im eigenen Wirkungskreis die Beschlüsse der Vertretung und des Hauptausschusses
+    vor, führt sie aus und ist für die Geschäfte der laufenden Verwaltung zuständig (§ 38 Abs. 2, 3 KV M-V
+    für den hauptamtlichen Bürgermeister). Die laufende Verwaltung umfasst nach § 38 Abs. 3 S. 3 KV M-V
+    insbesondere Entscheidungen von geringer wirtschaftlicher Bedeutung, Entscheidungen zur Aufrechterhaltung
+    des Verwaltungsbetriebs sowie gesetzlich oder tariflich gebundene Entscheidungen. In der Klausur
+    ist zuerst das zuständige Organ zu bestimmen; die Entscheidung eines unzuständigen Organs ist formell
+    rechtswidrig.
+  norms:
+  - § 22 KV M-V
+  - § 38 KV M-V
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: mv-kr-satzung
+  type: definition
+  front: >-
+    Unter welchen Voraussetzungen ist eine gemeindliche Satzung in Mecklenburg-Vorpommern rechtmäßig?
+  back: >-
+    Eine Satzung ist eine von der Gemeinde im Rahmen ihrer Selbstverwaltung erlassene Rechtsnorm (Art.
+    28 Abs. 2 GG). Prüfung: (1) Ermächtigungsgrundlage: Die allgemeine Satzungsbefugnis der Gemeindeordnung
+    genügt für Regelungen ohne Grundrechtseingriff gegenüber Außenstehenden; Eingriffe in Grundrechte
+    und Abgabenpflichten erfordern wegen des Vorbehalts des Gesetzes eine besondere gesetzliche Ermächtigung
+    (Wesentlichkeitslehre). (2) Formelle Rechtmäßigkeit: Zuständigkeit der Vertretung, ordnungsgemäßer
+    Beschluss, Ausfertigung und Bekanntmachung. (3) Materielle Rechtmäßigkeit: Vereinbarkeit mit höherrangigem
+    Recht, Bestimmtheit, Verhältnismäßigkeit und Gleichheitssatz. Rechtsschutz: Inzidentkontrolle oder
+    Normenkontrolle nach § 47 Abs. 1 Nr. 2 VwGO; in Mecklenburg-Vorpommern eröffnet § 13 GerStrukGAG M-V das Verfahren vor dem Oberverwaltungsgericht auch gegen im Rang unter dem Landesgesetz stehende Rechtsvorschriften.
+  norms:
+  - Art. 28 Abs. 2 GG
+  - § 47 VwGO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: mv-kr-mitwirkungsverbot
+  type: norm
+  front: Wann gilt in Mecklenburg-Vorpommern ein Mitwirkungsverbot für Gemeindevertreter?
+  back: >-
+    Nach § 24 KV M-V darf ein Mitglied der Gemeindevertretung nicht beratend oder entscheidend mitwirken,
+    wenn die Entscheidung ihm selbst, einem Angehörigen oder einer von ihm vertretenen natürlichen oder
+    juristischen Person einen unmittelbaren Vorteil oder Nachteil bringen kann. Es genügt die konkrete
+    Möglichkeit eines Sonderinteresses (Wortlaut: Entscheidung "bringen kann"); tatsächliche Befangenheit ist nicht erforderlich. Das Verbot sichert
+    die Unbefangenheit der Entscheidung und das Vertrauen in die Gemeindeorgane. Ausnahmen gelten u. a.
+    für Wahlen und Entscheidungen, die nur ein Gruppeninteresse berühren. Wirkt ein Ausgeschlossener mit,
+    ist die Entscheidung nach § 24 Abs. 4 S. 1 KV M-V unwirksam; eine Kausalitätsklausel enthält der Wortlaut
+    nicht. Der Verstoß kann nach Ablauf eines Jahres nicht mehr geltend gemacht werden, es sei denn, er
+    wurde innerhalb der Frist schriftlich gegenüber der Gemeinde gerügt (§ 24 Abs. 5 KV M-V); zu beachten
+    ist ferner die Unbeachtlichkeit eines ungerechtfertigten Ausschlusses bei nachträglicher Zustimmung
+    (§ 24 Abs. 4 S. 2 KV M-V).
+  norms:
+  - § 24 KV M-V
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: mv-kr-oeffentliche-einrichtung
+  type: definition
+  front: >-
+    Unter welchen Voraussetzungen haben Einwohner in Mecklenburg-Vorpommern einen Anspruch auf Zulassung
+    zu einer öffentlichen Einrichtung der Gemeinde?
+  back: >-
+    Eine öffentliche Einrichtung ist ein von der Gemeinde im öffentlichen Interesse unterhaltenes Angebot
+    (z. B. Stadthalle, Friedhof, Schwimmbad), das nach einem Widmungsakt der Allgemeinheit oder einem
+    bestimmten Personenkreis zur Verfügung steht. Die Gemeindeordnung gewährt den Einwohnern im Rahmen
+    des geltenden Rechts einen Anspruch auf Zulassung zur Benutzung. Er besteht nur im Rahmen des Widmungszwecks
+    und der Kapazität; die Gemeinde darf die Zulassung bei Kapazitätsengpässen nach sachgerechten Kriterien
+    beschränken (Gleichbehandlung, Art. 3 Abs. 1 GG). Zweistufigkeit: Die Zulassungsentscheidung ist öffentlich-rechtlich
+    (Verwaltungsrechtsweg), die Ausgestaltung der Nutzung kann privatrechtlich erfolgen (Zweistufentheorie).
+    Auch Parteien können sich bei Überlassung gegenüber anderen Parteien auf Gleichbehandlung berufen.
+  norms:
+  - Art. 3 Abs. 1 GG
+  - Art. 28 Abs. 2 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: mv-kr-kommunalaufsicht
+  type: norm
+  front: >-
+    Wie ist die Kommunalaufsicht in Mecklenburg-Vorpommern ausgestaltet und wie kann sich die Gemeinde
+    dagegen wehren?
+  back: >-
+    Die Kommunalaufsicht ist Rechtsaufsicht in den Selbstverwaltungsangelegenheiten und, soweit gesetzlich
+    vorgesehen, Fachaufsicht in den übertragenen Angelegenheiten. Ihre Mittel reichen von der Beratung
+    und Beanstandung über die Anordnung und die Ersatzvornahme bis zur Einsetzung eines Beauftragten und
+    sind nach dem Verhältnismäßigkeitsgrundsatz zu wählen. Rechtsaufsichtsbehörde ist für kreisangehörige Gemeinden im Übrigen
+    der Landrat als untere staatliche Verwaltungsbehörde, für kreisfreie und große kreisangehörige Städte
+    das Ministerium für Kommunalangelegenheiten (§ 79 KV M-V). Mittel: Beanstandung (§ 81), Anordnung und
+    Ersatzvornahme (§ 82), Beauftragter (§ 83) KV M-V. Gegen Maßnahmen der Rechtsaufsichtsbehörde sind
+    Widerspruch und Anfechtungsklage gegeben (§ 85 KV M-V); ihre Klagebefugnis folgt aus der Selbstverwaltungsgarantie (Art.
+    28 Abs. 2 GG). Ein Anspruch Dritter auf aufsichtsrechtliches Einschreiten besteht grundsätzlich nicht.
+  norms:
+  - §§ 78 ff. KV M-V
+  - Art. 28 Abs. 2 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: mv-kr-kommunalverfassungsstreit
+  type: definition
+  front: >-
+    Wie sind Klageart, Klagebefugnis und Beklagter im Streit eines Gemeindevertreters mit dem Bürgermeister
+    zu bestimmen?
+  back: >-
+    Verweigert der Bürgermeister einem Gemeindevertreter etwa eine Auskunft, die dieser aus seinem Mandat
+    herleitet, liegt ein Kommunalverfassungsstreit vor. Der Rechtsweg ist nach § 40 Abs. 1 VwGO eröffnet.
+    Mangels Verwaltungsakt kommen die Feststellungsklage (§ 43 VwGO) oder die allgemeine Leistungsklage
+    auf Auskunft in Betracht. Analog § 42 Abs. 2 VwGO muss der Gemeindevertreter die Verletzung eigener
+    organschaftlicher Rechte geltend machen; die Beteiligtenfähigkeit von Organen und Organteilen folgt
+    aus § 61 Nr. 2 VwGO analog. Beklagter ist der Bürgermeister als das Organ, das das Recht bestreitet,
+    nicht die Gemeinde. Das Rechtsschutzbedürfnis fehlt, wenn lediglich eine objektive Rechtmäßigkeitskontrolle
+    begehrt wird.
+  norms:
+  - § 40 Abs. 1 VwGO
+  - § 43 VwGO
+  - § 61 Nr. 2 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: mv-schema-kr-beschluss
+  title: >-
+    Rechtmäßigkeit eines Beschlusses der Gemeindevertretung nach dem Kommunalrecht von Mecklenburg-Vorpommern
+  norms:
+  - § 24 KV M-V
+  - Art. 28 Abs. 2 GG
+  - § 47 VwGO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Formelle Rechtmäßigkeit des Beschlusses
+    children:
+    - label: >-
+        1. Zuständigkeit: Gemeindevertretung oder Bürgermeister (Hauptsatzung, KV M-V), Verbandskompetenz
+        der Gemeinde
+    - label: 2. Ordnungsgemäße Einberufung, Ladung, Öffentlichkeit der Sitzung, Beschlussfähigkeit
+    - label: 3. Mitwirkungsverbote
+      hinweis: >-
+        Klausurklassiker: unmittelbarer Vorteil oder Nachteil für das Mitglied oder Angehörige; Rechtsfolge
+        nach § 24 Abs. 4 KV M-V: Unwirksamkeit; Jahresfrist des § 24 Abs. 5 KV M-V beachten. Ob die Mitwirkung
+        für das Abstimmungsergebnis ursächlich war, ist nach dem Wortlaut nicht Tatbestandsvoraussetzung.
+      children:
+      - label: a) Voraussetzungen des Mitwirkungsverbots (§ 24 KV M-V)
+      - label: b) Rechtsfolge für Beschluss und Heilung/Unbeachtlichkeit nach Landesrecht
+    - label: 4. Erforderliche Mehrheit und Beschlussfassung
+  - label: II. Materielle Rechtmäßigkeit
+    children:
+    - label: >-
+        1. Ermächtigungsgrundlage (bei Satzungen: besondere Ermächtigung bei Grundrechtseingriffen, Wesentlichkeitslehre)
+    - label: >-
+        2. Vereinbarkeit mit höherrangigem Recht (Grundrechte, Gleichheitssatz, Bundes- und Landesrecht)
+    - label: 3. Ermessen und Verhältnismäßigkeit
+  - label: III. Ausfertigung und Bekanntmachung (bei Satzungen)
+    hinweis: >-
+      Fehler führen zur Unwirksamkeit; Heilungs- und Unbeachtlichkeitsregeln des Landesrechts beachten.
+  - label: IV. Rechtsschutz
+    children:
+    - label: >-
+        1. Außenrechtsstreit: Anfechtungs- oder Verpflichtungsklage; Normenkontrolle nach § 47 Abs. 1 Nr. 2 VwGO (in M-V nach § 13 GerStrukGAG M-V eröffnet)
+    - label: >-
+        2. Innenrechtsstreit (Kommunalverfassungsstreit): Feststellungs- oder Leistungsklage, § 42 Abs.
+        2 VwGO analog
+faelle:
+- slug: mv-fall-kr-mitwirkungsverbot
+  title: Die Pacht des Strandkiosks
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - KV M-V, amtliche Fassung
+  facts: >-
+    Die Gemeindevertretung der Gemeinde G in Mecklenburg-Vorpommern beschließt mit 11 zu 10 Stimmen, den
+    gemeindeeigenen Strandkiosk an das Einzelunternehmen des F zu verpachten. Gemeindevertreter T ist
+    der Sohn des F. Er nimmt an der Beratung teil und stimmt für die Verpachtung. Die Vertretung war ordnungsgemäß
+    geladen und beschlussfähig; nach der Hauptsatzung entscheidet sie über die Verpachtung gemeindeeigener
+    Anlagen. Ein unterlegener Bewerber hält den Beschluss für rechtswidrig.
+  question: Ist der Beschluss der Vertretung rechtmäßig?
+  steps:
+  - prompt: Liegt ein Beschluss im Zuständigkeitsbereich der Vertretung vor?
+    erwartung: >-
+      Ja: Nach der Hauptsatzung entscheidet die Gemeindevertretung über die Verpachtung gemeindeeigener
+      Anlagen; sie war ordnungsgemäß geladen und beschlussfähig.
+  - prompt: Unterlag das Mitglied einem Mitwirkungsverbot?
+    erwartung: >-
+      Ja: T ist als Sohn des F Angehöriger in gerader Linie; die Verpachtung bringt F einen unmittelbaren
+      Vorteil. Das Mitwirkungsverbot (§ 24 KV M-V) ist erfüllt; das Mitglied durfte weder beraten noch
+      abstimmen.
+  - prompt: Welche Folge hat der Verstoß für den Beschluss?
+    erwartung: >-
+      Nach § 24 Abs. 4 S. 1 KV M-V ist die unter Verstoß gegen das Mitwirkungsverbot zustande gekommene Entscheidung
+      unwirksam; auf die Kausalität der Mitwirkung kommt es nach dem Wortlaut nicht an. Hier wurde der Beschluss mit nur einer Stimme Mehrheit gefasst, sodass ohne die Stimme des befangenen
+      Mitglieds keine Mehrheit bestanden hätte. Der Beschluss ist damit unwirksam; Unbeachtlichkeit nach
+      Landesrecht (Jahresfrist des § 24 Abs. 5 KV M-V, wenn der Verstoß nicht rechtzeitig schriftlich gerügt wurde)
+      oder Neubeschluss ist zu prüfen; dem
+      Sachverhalt sind dafür keine Anhaltspunkte zu entnehmen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Zuständigkeit der Vertretung und ordnungsgemäße Beschlussfassung festgestellt
+      weight: 1.0
+      required: false
+      keywords:
+      - Zuständigkeit der Vertretung
+      - beschlussfähig
+      - ordnungsgemäß geladen
+      - Hauptsatzung
+      card_slugs:
+      - mv-kr-zustaendigkeit
+    - id: p2
+      label: Mitwirkungsverbot (§ 24 KV M-V) wegen unmittelbaren Vorteils bejaht
+      weight: 3.0
+      required: true
+      norms:
+      - § 24 KV M-V
+      keywords:
+      - Mitwirkungsverbot
+      - unmittelbarer Vorteil
+      - persönliches Interesse
+      - Befangenheit
+      - § 24 KV M-V
+      card_slugs:
+      - mv-kr-mitwirkungsverbot
+    - id: p3
+      label: Zurechnung des Interesses des Angehörigen bzw. des Unternehmens
+      weight: 1.5
+      required: false
+      keywords:
+      - Angehöriger
+      - Ehegatte
+      - Interessenkollision
+      - Vertretung eines Dritten
+      card_slugs:
+      - mv-kr-mitwirkungsverbot
+    - id: p4
+      label: 'Rechtsfolge: Beschluss unwirksam (§ 24 Abs. 4 KV M-V); ohne die Stimme des Befangenen keine Mehrheit'
+      weight: 3.0
+      required: true
+      keywords:
+      - Kausalität
+      - ausschlaggebend
+      - Stimme
+      - Abstimmungsergebnis
+      - unwirksam
+      - rechtswidrig
+      card_slugs:
+      - mv-kr-mitwirkungsverbot
+    - id: p5
+      label: Heilung bzw. Unbeachtlichkeit nach Landesrecht erwogen
+      weight: 1.0
+      required: false
+      keywords:
+      - Heilung
+      - Unbeachtlichkeit
+      - Neubeschluss
+      - Rügefrist

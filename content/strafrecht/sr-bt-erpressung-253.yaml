@@ -155,21 +155,21 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
-  facts: A ruft den Geschäftsmann U an und droht ihm unmissverständlich, ihn zu
-    töten, wenn er nicht binnen 24 Stunden 20.000 Euro auf ein von A genanntes Konto
-    überweist. A macht deutlich, dass er die Adresse des U kennt und die Drohung
-    ernst meint. Aus Angst um sein Leben überweist U den geforderten Betrag fristgerecht.
+  facts: A ruft den Geschäftsmann U an und droht ihm unmissverständlich, ihn zu töten,
+    wenn er nicht binnen 24 Stunden 20.000 Euro auf ein von A genanntes Konto überweist.
+    A macht deutlich, dass er die Adresse des U kennt und die Drohung ernst meint.
+    Aus Angst um sein Leben überweist U den geforderten Betrag fristgerecht.
   question: Hat sich A wegen (räuberischer) Erpressung gemäß §§ 253, 255 StGB strafbar
     gemacht?
   steps:
   - prompt: Formuliere den Obersatz.
-    erwartung: A könnte sich durch den Drohanruf wegen (räuberischer) Erpressung
-      gemäß §§ 253, 255 StGB strafbar gemacht haben.
+    erwartung: A könnte sich durch den Drohanruf wegen (räuberischer) Erpressung gemäß
+      §§ 253, 255 StGB strafbar gemacht haben.
   - prompt: Liegt ein taugliches Nötigungsmittel vor?
     erwartung: Ja - die Todesdrohung ist eine Drohung mit einem empfindlichen Übel.
   - prompt: Liegt eine Vermögensverfügung des U vor?
-    erwartung: Ja - U nimmt die Überweisung selbst vor; er verfügt eigenhändig
-      über sein Vermögen, es liegt kein Wegnahmeakt eines Dritten vor.
+    erwartung: Ja - U nimmt die Überweisung selbst vor; er verfügt eigenhändig über
+      sein Vermögen, es liegt kein Wegnahmeakt eines Dritten vor.
   - prompt: Ist ein Vermögensnachteil eingetreten?
     erwartung: Ja - das Vermögen des U hat sich durch die Überweisung unmittelbar
       um 20.000 Euro verringert, ohne dass ein Ausgleich erfolgt.
@@ -180,8 +180,8 @@ faelle:
     erwartung: Ja - die Androhung des Todes zur Erzwingung einer Geldzahlung ist offensichtlich
       verwerflich.
   - prompt: Liegt räuberische Erpressung, § 255 StGB, vor?
-    erwartung: Ja - A droht mit gegenwärtiger Gefahr für das Leben des U selbst;
-      A ist daher wie ein Räuber zu bestrafen.
+    erwartung: Ja - A droht mit gegenwärtiger Gefahr für das Leben des U selbst; A
+      ist daher wie ein Räuber zu bestrafen.
   expectation:
     pruefpunkte:
     - id: p1
@@ -191,8 +191,8 @@ faelle:
       norms:
       - § 253 Abs. 1 StGB
       keywords:
-      - Drohung
       - empfindliches Übel
+      - Drohung mit einem empfindlichen Übel
       card_slugs:
       - sr-erpressung-grundtatbestand
     - id: p2
@@ -203,7 +203,10 @@ faelle:
       - § 253 Abs. 1 StGB
       keywords:
       - Vermögensverfügung
-      - überweist
+      - Verfügung des Opfers
+      - Weggabe statt Wegnahme
+      - verfügt eigenhändig über sein Vermögen
+      - Überweisung selbst vor
       card_slugs:
       - sr-erpressung-vermoegensverfuegung-streitstand
       - sr-erpressung-abgrenzung-raub-249
@@ -213,6 +216,8 @@ faelle:
       required: false
       keywords:
       - Vermögensnachteil
+      - Vermögen des U verringert
+      - verringert
       card_slugs:
       - sr-erpressung-vermoegensschaden
     - id: p4
@@ -224,6 +229,8 @@ faelle:
       keywords:
       - Bereicherungsabsicht
       - stoffgleich
+      - bereichern
+      - um den U geschädigt wird
       card_slugs:
       - sr-erpressung-stoffgleichheit
     - id: p5
@@ -233,6 +240,9 @@ faelle:
       norms:
       - § 253 Abs. 2 StGB
       keywords:
+      - Verwerflichkeit
+      - § 253 Abs. 2 StGB
+      - offensichtlich verwerflich
       - verwerflich
       card_slugs:
       - sr-erpressung-verwerflichkeit
@@ -244,7 +254,8 @@ faelle:
       norms:
       - § 255 StGB
       keywords:
-      - gegenwärtige Gefahr
-      - Leben
+      - gegenwärtige Gefahr für Leib oder Leben
+      - § 255 StGB
+      - räuberische Erpressung
       card_slugs:
       - sr-erpressung-raeuberische-255

@@ -36,6 +36,8 @@ def test_alle_16_bundeslaender_haben_ein_profil_und_zwei_landesrecht_themen():
     for code in BUNDESLAND_CODES:
         assert f"{code.lower()}-polizei-ordnungsrecht" in landesrecht
         assert f"{code.lower()}-landesrecht-allgemein" in landesrecht
+        assert f"{code.lower()}-kommunalrecht" in landesrecht
+        assert f"{code.lower()}-bauordnungsrecht" in landesrecht
     assert len(bundle.universitaeten) >= 40
     assert len(bundle.kurse) >= 15
     # Jede Universitaet hat einen Kursplan mit Examenskursen.
@@ -190,6 +192,8 @@ def test_bundeslaender_liste_und_profil(client):
     assert {t["slug"] for t in profil["landesrecht_themen"]} == {
         "by-polizei-ordnungsrecht",
         "by-landesrecht-allgemein",
+        "by-kommunalrecht",
+        "by-bauordnungsrecht",
     }
     assert profil["landesrecht"]["normenspiegel"]["polizei_generalklausel"].startswith("Art. 11")
     assert client.get("/v1/examen/bundeslaender/xx").status_code == 404
@@ -261,6 +265,8 @@ def test_deck_filter_in_cards_due(auth_client):
     assert deck
     assert _slugs(deck) <= {
         "or-sicherheitsrecht-generalklausel-standardmassnahmen",
+        "or-polizeirecht-vertiefung",
+        "or-versammlungsrecht",
         "nw-polizei-ordnungsrecht",
     }
     assert "nw-polizei-ordnungsrecht" in _slugs(deck)
@@ -270,7 +276,9 @@ def test_deck_filter_in_cards_due(auth_client):
 def test_deck_ist_auf_das_bundesland_zugeschnitten(auth_client):
     ohne = auth_client.get("/v1/examen/kurse/or-polizei-ordnungsrecht/deck").json()
     assert {t["slug"] for t in ohne["topics"]} == {
-        "or-sicherheitsrecht-generalklausel-standardmassnahmen"
+        "or-sicherheitsrecht-generalklausel-standardmassnahmen",
+        "or-polizeirecht-vertiefung",
+        "or-versammlungsrecht",
     }
     assert ohne["landesrecht_fehlt"] == []
     assert ohne["cards_total"] > 0
@@ -323,6 +331,8 @@ def test_cockpit_mit_profil_plan_und_gewichtung(auth_client):
     assert {t["slug"] for t in cockpit["landesrecht_deck"]["topics"]} == {
         "nw-polizei-ordnungsrecht",
         "nw-landesrecht-allgemein",
+        "nw-kommunalrecht",
+        "nw-bauordnungsrecht",
     }
     assert cockpit["checkliste"], "Checkliste des Landes wird mitgeliefert"
     assert any(item["jetzt_dran"] for item in cockpit["checkliste"])
@@ -363,3 +373,14 @@ def test_lernplan_kennt_nur_sichtbare_themen(auth_client):
     alle = set(plan["covered_topics"]) | set(plan["uncovered_topics"])
     assert "sh-landesrecht-allgemein" in alle
     assert "by-landesrecht-allgemein" not in alle
+
+
+def test_kurs_decks_ohne_uni_beginnen_mit_zivilrecht(auth_client):
+    # Nutzertest 2026-10-15: Erstsemester ohne Uni bekamen als erstes Deck
+    # Staatsrecht (alphabetisch vor BGB AT) statt Zivilrecht empfohlen.
+    decks = auth_client.get("/v1/examen/cockpit").json()["kurs_decks"]
+    semester_1 = [d["slug"] for d in decks if d.get("semester_default") == 1]
+    assert semester_1[0].startswith("zr-")
+    assert [s.split("-", 1)[0] for s in semester_1] == sorted(
+        (s.split("-", 1)[0] for s in semester_1), key=["zr", "sr", "or"].index
+    )

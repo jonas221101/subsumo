@@ -1,11 +1,17 @@
 import 'dart:async';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../api.dart';
 import '../design/design.dart';
 import '../state.dart';
+import '../text_schutz.dart';
+import 'beta_feedback.dart';
+import 'fit_title.dart';
+import 'landesbezug.dart';
 import '../theme.dart';
 
 /// Gutachten-Trainer (Challenge 1 und 4).
@@ -18,6 +24,7 @@ class GutachtenPage extends StatefulWidget {
     required this.caseSlug,
     required this.caseTitle,
     this.mode = 'uebung',
+    this.area,
     super.key,
   });
 
@@ -29,7 +36,15 @@ class GutachtenPage extends StatefulWidget {
   /// Klausurpraxis; der Editor selbst ist in beiden Modi derselbe.
   final String mode;
 
+  /// Rechtsgebiet des Falls (`zivilrecht`, `strafrecht`, `oeffentliches-recht`),
+  /// steuert den Platzhalter im Loesungsfeld. Fehlt es, kommt es aus dem
+  /// geladenen Fall.
+  final String? area;
+
   String get _titel => mode == 'klausur' ? '$caseTitle (Klausur)' : caseTitle;
+
+  /// Schluessel des lokalen Entwurfs - je Fall, unabhaengig vom Modus.
+  static String entwurfKey(String slug) => 'gutachten_entwurf_$slug';
 
   @override
   State<GutachtenPage> createState() => _GutachtenPageState();
@@ -44,6 +59,18 @@ class _GutachtenPageState extends State<GutachtenPage> {
   Map<String, dynamic>? _structure;
   Map<String, dynamic>? _result;
   bool _busy = false;
+
+  /// Text zum Zeitpunkt der letzten erfolgreichen Abgabe - weicht der aktuelle
+  /// Text davon ab, ist das Ergebnis veraltet.
+  String? _submittedText;
+  final _feedbackKey = GlobalKey();
+  Timer? _saveDebounce;
+  Timer? _ticker;
+  bool _restoring = false;
+  SharedPreferences? _prefs;
+
+  bool get _resultStale => _result != null && _controller.text != _submittedText;
+  bool get _klausur => widget.mode == 'klausur';
 
   /// Ob die KI-Korrektur ueberhaupt aktiv ist (`GET /v1/public/config`,
   /// SUB-133/SUB-134) - unabhaengig von der Einwilligung dieses Nutzers.
@@ -73,11 +100,82 @@ class _GutachtenPageState extends State<GutachtenPage> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) => _loadCase());
     WidgetsBinding.instance.addPostFrameCallback((_) => _loadAiCorrectionEnabled());
-    _controller.addListener(_scheduleAnalysis);
+    WidgetsBinding.instance.addPostFrameCallback((_) => _restoreDraft());
+    _controller.addListener(_onTextChanged);
+    if (_klausur) {
+      _ticker = Timer.periodic(const Duration(seconds: 1), (_) {
+        if (mounted) setState(() {});
+      });
+    }
+  }
+
+  void _onTextChanged() {
+    if (_restoring) return;
+    _scheduleAnalysis();
+    _scheduleSave();
+    // Veraltet-Status und Abgabe-Button haengen am Text.
+    if (mounted) setState(() {});
+  }
+
+  void _scheduleSave() {
+    _saveDebounce?.cancel();
+    _saveDebounce = Timer(const Duration(milliseconds: 800), _saveDraft);
+  }
+
+  Future<void> _saveDraft() async {
+    try {
+      final prefs = _prefs ??= await SharedPreferences.getInstance();
+      final key = GutachtenPage.entwurfKey(widget.caseSlug);
+      final text = _controller.text;
+      if (text.trim().isEmpty) {
+        await prefs.remove(key);
+      } else {
+        await prefs.setString(key, text);
+      }
+    } on Exception {
+      // Autosave ist eine Zugabe - nie das Schreiben stoeren.
+    }
+  }
+
+  Future<void> _restoreDraft() async {
+    try {
+      final prefs = _prefs ??= await SharedPreferences.getInstance();
+      final draft = prefs.getString(GutachtenPage.entwurfKey(widget.caseSlug));
+      if (!mounted || draft == null || draft.isEmpty || _controller.text.isNotEmpty) return;
+      _restoring = true;
+      _controller.text = draft;
+      _restoring = false;
+      setState(() {});
+      _scheduleAnalysis();
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Dein gespeicherter Entwurf wurde wiederhergestellt.')),
+      );
+    } on Exception {
+      _restoring = false;
+    }
+  }
+
+  /// Beim Verlassen (Zurueck-Pfeil): Entwurf sofort sichern und kurz melden.
+  void _onPopped() {
+    _saveDebounce?.cancel();
+    final text = _controller.text;
+    if (text.trim().isEmpty || (_result != null && text == _submittedText)) return;
+    final prefs = _prefs;
+    final key = GutachtenPage.entwurfKey(widget.caseSlug);
+    if (prefs != null) {
+      prefs.setString(key, text);
+    } else {
+      SharedPreferences.getInstance().then((p) => p.setString(key, text));
+    }
+    ScaffoldMessenger.maybeOf(context)?.showSnackBar(
+      const SnackBar(content: Text('Entwurf gespeichert')),
+    );
   }
 
   @override
   void dispose() {
+    _ticker?.cancel();
+    _saveDebounce?.cancel();
     _debounce?.cancel();
     _controller.dispose();
     super.dispose();
@@ -184,13 +282,34 @@ class _GutachtenPageState extends State<GutachtenPage> {
 
     setState(() => _busy = true);
     try {
+      final text = _controller.text;
       final result = await app.api.submitCase(
         widget.caseSlug,
-        _controller.text,
+        text,
         mode: widget.mode,
         durationSeconds: DateTime.now().difference(_startedAt).inSeconds,
       );
-      if (mounted) setState(() => _result = result);
+      if (mounted) {
+        setState(() {
+          _result = result;
+          _submittedText = text;
+        });
+        // Schmale Ansicht: Ergebnis steht unter dem Editor - dorthin scrollen.
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          final ctx = _feedbackKey.currentContext;
+          if (ctx != null) {
+            Scrollable.ensureVisible(ctx, duration: Motion.normal, curve: Motion.curve);
+          }
+        });
+      }
+      // Abgegeben: der lokale Entwurf wird nicht mehr gebraucht.
+      _saveDebounce?.cancel();
+      try {
+        final prefs = _prefs ??= await SharedPreferences.getInstance();
+        await prefs.remove(GutachtenPage.entwurfKey(widget.caseSlug));
+      } on Exception {
+        // Entwurf bleibt hoechstens als harmloser Rest liegen.
+      }
     } on Exception catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context)
@@ -206,7 +325,14 @@ class _GutachtenPageState extends State<GutachtenPage> {
     final caseUpgradeMessage = _caseUpgradeMessage;
     if (caseUpgradeMessage != null) {
       return Scaffold(
-        appBar: AppBar(title: Text(widget._titel)),
+        appBar: AppBar(
+          toolbarHeight: 88,
+          title: FitTitle(
+            widget._titel,
+            style: Theme.of(context).textTheme.titleMedium!,
+          ),
+          actions: [BetaFeedbackAction(screen: 'Fall: ${widget.caseTitle}')],
+        ),
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(Spacing.xl),
@@ -222,14 +348,25 @@ class _GutachtenPageState extends State<GutachtenPage> {
       );
     }
 
-    return Scaffold(
+    return PopScope(
+      onPopInvokedWithResult: (didPop, _) {
+        if (didPop) _onPopped();
+      },
+      child: Scaffold(
       // Lesemodus (SUB-160) blendet nur den Titel aus, behaelt aber eine
       // schmale AppBar mit dem Umschalter - eine schwebende Schaltflaeche
       // ueber dem Inhalt (statt in der Chrome) wuerde bei kurzen Fenstern
       // den Falltext im Editor ueberdecken koennen.
       appBar: AppBar(
-        title: _focusMode ? null : Text(widget._titel),
+        toolbarHeight: _focusMode ? null : 88,
+        title: _focusMode
+            ? null
+            : FitTitle(
+                widget._titel,
+                style: Theme.of(context).textTheme.titleMedium!,
+              ),
         actions: [
+          BetaFeedbackAction(screen: 'Fall: ${widget.caseTitle}'),
           IconButton(
             tooltip: _focusMode ? 'Lesemodus verlassen' : 'Lesemodus',
             icon: Icon(_focusMode ? Icons.fullscreen_exit_outlined : Icons.fullscreen_outlined),
@@ -237,33 +374,71 @@ class _GutachtenPageState extends State<GutachtenPage> {
           ),
         ],
       ),
+      bottomNavigationBar: _caseUpgradeMessage == null
+          ? SafeArea(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(Spacing.lg, Spacing.sm, Spacing.lg, Spacing.sm),
+                child: _submitButton(),
+              ),
+            )
+          : null,
       body: ReadableWidth(
         maxWidth: 1100,
         child: LayoutBuilder(
           builder: (context, constraints) {
-            final zweispaltig = constraints.maxWidth > 900;
-            final editor = _buildEditor();
+            final zweispaltig = !_schmal(context);
             final feedback = _buildFeedback();
             if (!zweispaltig) {
-              return ListView(
-                padding: const EdgeInsets.all(Spacing.lg),
-                children: [
-                  SizedBox(height: 420, child: editor),
-                  const SizedBox(height: Spacing.lg),
-                  feedback,
-                ],
+              // Die ganze Seite scrollt: Sachverhalt vollstaendig, darunter
+              // Editor mit fester Hoehe, dann das Feedback.
+              return Scrollbar(
+                child: ListView(
+                  padding: const EdgeInsets.all(Spacing.lg),
+                  children: [
+                    ..._buildFacts(),
+                    SizedBox(
+                      // Klausur: grosses Schreibfeld statt Uebungshoehe.
+                      height: _klausur
+                          ? max(560, MediaQuery.sizeOf(context).height * 0.75)
+                          : 420,
+                      child: _buildEditor(),
+                    ),
+                    const SizedBox(height: Spacing.lg),
+                    KeyedSubtree(key: _feedbackKey, child: feedback),
+                  ],
+                ),
               );
             }
+            // Zweispaltig scrollen beide Spalten getrennt: links Sachverhalt
+            // + Editor, rechts Feedback/Ergebnis.
             return Padding(
               padding: const EdgeInsets.all(Spacing.lg),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Expanded(flex: 3, child: editor),
+                  Expanded(
+                    flex: 3,
+                    child: Scrollbar(
+                      child: SingleChildScrollView(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            ..._buildFacts(),
+                            SizedBox(
+                              height: max(420, constraints.maxHeight * 0.6),
+                              child: _buildEditor(),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
                   const SizedBox(width: Spacing.lg),
                   Expanded(
                     flex: 2,
-                    child: SingleChildScrollView(child: feedback),
+                    child: Scrollbar(
+                      child: SingleChildScrollView(child: feedback),
+                    ),
                   ),
                 ],
               ),
@@ -271,62 +446,100 @@ class _GutachtenPageState extends State<GutachtenPage> {
           },
         ),
       ),
+    ));
+  }
+
+  /// Sachverhalt und Fallfrage vollstaendig, ohne eigene Hoehenbegrenzung -
+  /// der umgebende Scrollbereich traegt die Hoehe (Nutzertest: ein
+  /// abgeschnittener Sachverhalt macht die Fallfrage unlesbar).
+  List<Widget> _buildFacts() => [
+        if (_case != null) ...[
+          SubsumoCard(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                if (landesLabel(_case!['bundesland']) case final land?) ...[
+                  SubsumoChip(label: land, icon: Icons.location_on_outlined),
+                  const SizedBox(height: Spacing.sm),
+                ],
+                const SubsumoEyebrow('Sachverhalt'),
+                const SizedBox(height: Spacing.sm),
+                Text(
+                  normUmbruchschutz(_case!['facts'] as String? ?? ''),
+                  style: Theme.of(context).textTheme.bodyMedium,
+                ),
+                const SizedBox(height: Spacing.md),
+                const SubsumoEyebrow('Fallfrage'),
+                const SizedBox(height: Spacing.xs),
+                Text(
+                  _case!['question'] as String? ?? '',
+                  style: Theme.of(context).extension<SubsumoTypography>()!.headingSmall,
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: Spacing.md),
+        ],
+      ];
+
+  Widget _buildTimer() {
+    final minutes = (_case?['minutes'] as num?)?.toInt() ?? 300;
+    final rest = Duration(minutes: minutes) - DateTime.now().difference(_startedAt);
+    final over = rest.isNegative;
+    final abs = rest.abs();
+    String two(int n) => n.toString().padLeft(2, '0');
+    final text = '${over ? '-' : ''}${two(abs.inHours)}:${two(abs.inMinutes % 60)}:${two(abs.inSeconds % 60)}';
+    final theme = Theme.of(context);
+    return Padding(
+      padding: const EdgeInsets.only(bottom: Spacing.sm),
+      child: Row(
+        children: [
+          Icon(Icons.timer_outlined, size: 20, color: over ? theme.colorScheme.error : null),
+          const SizedBox(width: Spacing.sm),
+          Text(
+            over ? 'Zeit überschritten: $text' : 'Verbleibende Zeit: $text',
+            key: const ValueKey('klausur-timer'),
+            style: theme.textTheme.titleSmall?.copyWith(
+              color: over ? theme.colorScheme.error : null,
+              fontFeatures: const [FontFeature.tabularFigures()],
+            ),
+          ),
+          const Spacer(),
+          Text('von $minutes min', style: theme.textTheme.bodySmall),
+        ],
+      ),
     );
   }
+
+  /// Zweispaltig erst ab 900 px; der Abgabe-Button steht in jeder Ansicht in
+  /// einer festen Leiste am unteren Rand, damit er nie unterhalb des sichtbaren
+  /// Bereichs liegt (Nutzertest W10, Handy und Desktop).
+  bool _schmal(BuildContext context) => min(MediaQuery.sizeOf(context).width, 1100) <= 900;
+
+  Widget _submitButton() => SubsumoButton.primary(
+        label: 'Abgeben und bewerten lassen',
+        onPressed: _busy || _controller.text.trim().length < 40 ? null : _submit,
+      );
 
   Widget _buildEditor() => Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          if (_case != null)
-            // Feste Hoehenobergrenze mit eigenem Scroll: `_buildEditor` sitzt
-            // im schmalen Layout in einem hoehenbegrenzten `SizedBox` (siehe
-            // `build()`), zusammen mit dem `Expanded`-Editor darunter. Ohne
-            // Obergrenze ueberschreitet ein langer Sachverhalt (z. B. Fall
-            // "Der Hund im Auto") allein schon die verfuegbare Hoehe, und der
-            // Text laeuft unbemerkt in den nachfolgenden Feedback-Hinweis
-            // hinein (SUB-257-Befund) statt den Editor darunter zu verkleinern.
-            ConstrainedBox(
-              constraints: const BoxConstraints(maxHeight: 180),
-              child: SubsumoCard(
-                child: SingleChildScrollView(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const SubsumoEyebrow('Sachverhalt'),
-                      const SizedBox(height: Spacing.sm),
-                      Text(
-                        _case!['facts'] as String? ?? '',
-                        style: Theme.of(context).textTheme.bodyMedium,
-                      ),
-                      const SizedBox(height: Spacing.md),
-                      const SubsumoEyebrow('Fallfrage'),
-                      const SizedBox(height: Spacing.xs),
-                      Text(
-                        _case!['question'] as String? ?? '',
-                        style: Theme.of(context).extension<SubsumoTypography>()!.headingSmall,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          const SizedBox(height: Spacing.md),
+          if (_klausur) _buildTimer(),
           Expanded(
             child: TextField(
               controller: _controller,
               maxLines: null,
               expands: true,
               textAlignVertical: TextAlignVertical.top,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 alignLabelWithHint: true,
-                hintText: 'A könnte gegen B einen Anspruch auf ... aus § ... haben.',
+                hintText: gutachtenPlatzhalter(
+                  area: widget.area ?? _case?['area'] as String?,
+                  question: _case?['question'] as String?,
+                  facts: _case?['facts'] as String?,
+                ),
               ),
             ),
-          ),
-          const SizedBox(height: Spacing.md),
-          SubsumoButton.primary(
-            label: 'Abgeben und bewerten lassen',
-            onPressed: _busy || _controller.text.trim().length < 40 ? null : _submit,
           ),
         ],
       );
@@ -334,7 +547,7 @@ class _GutachtenPageState extends State<GutachtenPage> {
   Widget _buildFeedback() {
     final Widget child;
     final String key;
-    if (_result != null) {
+    if (_result != null && !_resultStale) {
       key = 'result';
       child = _ResultView(result: _result!, showEngine: _aiCorrectionEnabled);
     } else if (_analysisUpgradeMessage case final analysisUpgradeMessage?) {
@@ -363,11 +576,31 @@ class _GutachtenPageState extends State<GutachtenPage> {
     // Ruhiger Wechsel statt hartem Umschalten, wenn die Strukturanalyse
     // erscheint oder sich der Feedback-Stand aendert (docs/25 Abschnitt 6) -
     // bestehende Motion-Tokens, keine neue Duration/Curve.
-    return AnimatedSwitcher(
+    final switcher = AnimatedSwitcher(
       duration: Motion.normal,
       switchInCurve: Motion.curve,
       switchOutCurve: Motion.curve,
       child: KeyedSubtree(key: ValueKey(key), child: child),
+    );
+    if (!_resultStale) return switcher;
+    // Text nach der Abgabe geaendert: altes Ergebnis ausgeblendet, Hinweis +
+    // wieder laufende Strukturrueckmeldung.
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const SubsumoCard(
+          key: ValueKey('ergebnis-veraltet'),
+          child: SubsumoFeedbackBlock(
+            message: 'Ergebnis veraltet',
+            detail: 'Du hast den Text seit der letzten Abgabe geändert. Die '
+                'bisherige Bewertung gehörte zur alten Fassung - gib erneut ab, '
+                'um eine aktuelle Bewertung zu bekommen.',
+            severity: FeedbackSeverity.hint,
+          ),
+        ),
+        const SizedBox(height: Spacing.md),
+        switcher,
+      ],
     );
   }
 }
@@ -506,7 +739,23 @@ class _ResultView extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final subsumo = theme.extension<SubsumoColors>();
-    final evaluation = (result['evaluation'] as Map).cast<String, dynamic>();
+    final rawEvaluation = result['evaluation'];
+    if (rawEvaluation is! Map ||
+        rawEvaluation['points'] == null ||
+        rawEvaluation['checkpoints'] is! List) {
+      // Die Antwort enthaelt keine (vollstaendige) Bewertung: ehrlich sagen,
+      // statt eine halbe Anzeige oder einen Fehlerbildschirm zu zeigen.
+      return const SubsumoCard(
+        child: SubsumoFeedbackBlock(
+          message: 'Deine Abgabe ist gespeichert, aber es liegt keine Punktbewertung vor.',
+          detail: 'Der Struktur-/Stil-Check zu deinem Text bleibt verfügbar; '
+              'Punktzahl und Erwartungshorizont gibt es für diese Abgabe nicht. '
+              'Bitte später erneut versuchen.',
+          severity: FeedbackSeverity.hint,
+        ),
+      );
+    }
+    final evaluation = rawEvaluation.cast<String, dynamic>();
     final checkpoints =
         (evaluation['checkpoints'] as List).cast<Map<String, dynamic>>();
     final engine = evaluation['engine'] as String? ?? 'heuristik';
@@ -516,7 +765,7 @@ class _ResultView extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            '${evaluation['points']} Punkte · ${evaluation['note']}',
+            '${_punkteText(evaluation['points'])} Punkte · ${evaluation['note']}',
             style: theme.textTheme.headlineSmall,
           ),
           if (showEngine) ...[
@@ -526,7 +775,7 @@ class _ResultView extends StatelessWidget {
             ),
           ],
           const SizedBox(height: Spacing.sm),
-          Text(evaluation['summary'] as String),
+          Text(evaluation['summary'] as String? ?? ''),
           const Divider(height: 32),
           Text('Erwartungshorizont', style: theme.textTheme.titleSmall),
           const SizedBox(height: Spacing.sm),
@@ -551,7 +800,7 @@ class _ResultView extends StatelessWidget {
             ),
           const Divider(height: 32),
           Text(
-            evaluation['disclaimer'] as String,
+            evaluation['disclaimer'] as String? ?? '',
             style: theme.textTheme.bodySmall,
           ),
         ],
@@ -596,7 +845,7 @@ class _AiConsentDialog extends StatelessWidget {
               SizedBox(height: Spacing.md),
               Text(
                 'Du kannst deine Zustimmung jederzeit in den '
-                'Kontöinstellungen widerrufen.',
+                'Kontoeinstellungen widerrufen.',
               ),
               SizedBox(height: Spacing.sm),
               _DatenschutzLink(),
@@ -635,4 +884,110 @@ class _DatenschutzLink extends StatelessWidget {
       ),
     );
   }
+}
+
+/// Beteiligte aus dem Fall: einzelne Grossbuchstaben bzw. Kuerzel wie "V",
+/// "K", "T1" (in Reihenfolge des ersten Auftretens). Typische Abkuerzungen und
+/// Rechtsbegriffe sind ausgenommen.
+List<String> parteikuerzel(String? text) {
+  if (text == null) return const [];
+  const ignorieren = {'BGB', 'StGB', 'GG', 'ZPO', 'StPO', 'VwGO', 'VwVfG', 'HGB', 'EU', 'II', 'III', 'IV'};
+  final seen = <String>[];
+  for (final m in RegExp(r'(?<![\wÄÖÜäöüß-])([A-Z]\d?|[A-Z]{2})(?![\wÄÖÜäöüß])').allMatches(text)) {
+    final k = m.group(1)!;
+    if (!ignorieren.contains(k) && !seen.contains(k)) seen.add(k);
+  }
+  return seen;
+}
+
+/// Platzhalter im Loesungsfeld je Rechtsgebiet des Falls (Zivilrecht:
+/// Anspruchsaufbau, Strafrecht: Strafbarkeitspruefung, Oeffentliches Recht:
+/// Erfolgsaussichten). Parteikuerzel kommen, wenn erkennbar, aus dem Fall.
+String gutachtenPlatzhalter({String? area, String? question, String? facts}) {
+  final parteien = parteikuerzel(question);
+  final alle = parteien.length >= 2 ? parteien : parteikuerzel('${question ?? ''} ${facts ?? ''}');
+  switch (area) {
+    case 'zivilrecht':
+      final frage = _frageSatz(question);
+      if (frage != null && !frage.toLowerCase().contains('anspruch')) {
+        return frage;
+      }
+      if (alle.length >= 2) {
+        return '${alle[0]} könnte gegen ${alle[1]} einen Anspruch auf ... aus § ... haben.';
+      }
+      return 'Ein Anspruch auf ... aus § ... könnte bestehen.';
+    case 'strafrecht':
+      final tater = alle.contains('T') ? 'T' : (alle.isNotEmpty ? alle.first : null);
+      if (tater != null) {
+        return '$tater könnte sich wegen ... gemäß § ... strafbar gemacht haben.';
+      }
+      return 'Die handelnde Person könnte sich wegen ... gemäß § ... strafbar gemacht haben.';
+    case 'oeffentliches-recht':
+      return _oerPlatzhalter(question, facts);
+    default:
+      return 'Beginne mit dem Obersatz im Gutachtenstil: ... könnte ... , wenn ...';
+  }
+}
+
+/// Gutachtensatz fuer Fragen ohne Anspruch ("Hat K Eigentum erworben?" ->
+/// "K könnte Eigentum ... erworben haben."); sonst `null`.
+String? _frageSatz(String? question) {
+  final q = (question ?? '').trim();
+  if (q.isEmpty || !q.endsWith('?')) return null;
+  final m = RegExp(r'^(?:Hat|Haben)\s+([A-Z]\d?)\s+(.+?)\s+(\w+)\?$').firstMatch(q);
+  if (m != null) {
+    return '${m.group(1)} könnte ${m.group(2)} ... ${m.group(3)} haben.';
+  }
+  if (RegExp(r'^(?:Ist|Sind|Wurde|Wurden|War|Waren|Liegt|Hat|Haben)\b').hasMatch(q)) {
+    return 'Fraglich ist, ob ...';
+  }
+  return null;
+}
+
+/// Platzhalter fuer oeffentlich-rechtliche Fragen, abgeleitet aus der Fallfrage.
+String _oerPlatzhalter(String? question, String? facts) {
+  final q = (question ?? '').trim();
+  final lower = q.toLowerCase();
+  if (lower.contains('verfassungsgemäß') ||
+      lower.contains('verfassungsgemaess') ||
+      lower.contains('verfassungsmäßig') ||
+      lower.contains('verfassungswidrig') ||
+      (lower.contains('gesetz') && lower.contains('verfassung'))) {
+    return 'Das Gesetz ist verfassungsgemäß, wenn es formell und materiell mit dem Grundgesetz vereinbar ist.';
+  }
+  if (lower.contains('rechtmäßig') ||
+      lower.contains('rechtmaessig') ||
+      lower.contains('rechtswidrig')) {
+    final subjekt = RegExp(
+      r'\b(?:Ist|Sind|War|Waren)\s+((?:der|die|das|den|dem)\s+[^?]+?)\s+(?:rechtmäßig|rechtmaessig|rechtswidrig)',
+      caseSensitive: false,
+    ).firstMatch(q)?.group(1);
+    final text = subjekt == null
+        ? 'Die Maßnahme'
+        : '${subjekt[0].toUpperCase()}${subjekt.substring(1)}';
+    return '$text ist rechtmäßig, wenn ...';
+  }
+  // "Ist das Vorhaben des A bauplanungsrechtlich zulässig?" - Zulaessigkeit eines
+  // Vorhabens/einer Massnahme, nicht einer Klage (Nutzertest W22).
+  final zulaessig = RegExp(
+    r'\b(?:Ist|Sind|War|Waren)\s+((?:der|die|das)\s+[^?,]+?)\s+((?:[a-zäöüß]+\s+)?)zulässig',
+    caseSensitive: false,
+  ).firstMatch(q);
+  if (zulaessig != null &&
+      !RegExp(r'klage|antrag|beschwerde|widerspruch', caseSensitive: false)
+          .hasMatch(zulaessig.group(1)!)) {
+    final subjekt = zulaessig.group(1)!;
+    return '${subjekt[0].toUpperCase()}${subjekt.substring(1)} ist '
+        '${zulaessig.group(2)}zulässig, wenn ...';
+  }
+  return 'Die Klage hat Erfolg, wenn sie zulässig und begründet ist.';
+}
+
+
+/// "3.5" -> "3,5", "11.0" -> "11" (deutsche Schreibweise der Punktzahl).
+String _punkteText(Object? points) {
+  final n = points is num ? points : num.tryParse('$points');
+  if (n == null) return '$points';
+  if (n == n.roundToDouble()) return n.round().toString();
+  return n.toString().replaceAll('.', ',');
 }

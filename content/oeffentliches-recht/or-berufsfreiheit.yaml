@@ -30,9 +30,9 @@ cards:
   front: Was umfasst der sachliche Schutzbereich des Art. 12 Abs. 1 GG?
   back: Art. 12 Abs. 1 GG schützt als einheitliches Grundrecht der Berufsfreiheit
     die freie Wahl des Berufs, des Arbeitsplatzes und der Ausbildungsstätte (Satz
-    1) sowie die Berufsausübung, die durch Gesetz geregelt werden kann (Satz 2).
-    Trotz der Aufspaltung in zwei Sätze handelt es sich nach ständiger Auffassung
-    um ein einheitliches Grundrecht der Berufsfreiheit, dessen Teilbereiche unterschiedlich
+    1) sowie die Berufsausübung, die durch Gesetz geregelt werden kann (Satz 2). Trotz
+    der Aufspaltung in zwei Sätze handelt es sich nach ständiger Auffassung um ein
+    einheitliches Grundrecht der Berufsfreiheit, dessen Teilbereiche unterschiedlich
     intensiv eingeschränkt werden können.
   norms:
   - Art. 12 Abs. 1 GG
@@ -43,11 +43,11 @@ cards:
 - slug: or-gr-art12-persoenlicher-schutzbereich
   type: definition
   front: Wer ist Grundrechtsträger des Art. 12 Abs. 1 GG?
-  back: Art. 12 Abs. 1 GG ist ein Deutschen-Grundrecht (Art. 116 GG) und schützt
-    unmittelbar nur deutsche Staatsangehörige sowie inländische juristische Personen,
-    soweit das Grundrecht seinem Wesen nach auf sie anwendbar ist (Art. 19 Abs. 3
-    GG). Ausländer können sich für ihre Berufsfreiheit auf die allgemeine Handlungsfreiheit
-    aus Art. 2 Abs. 1 GG berufen.
+  back: Art. 12 Abs. 1 GG ist ein Deutschen-Grundrecht (Art. 116 GG) und schützt unmittelbar
+    nur deutsche Staatsangehörige sowie inländische juristische Personen, soweit das
+    Grundrecht seinem Wesen nach auf sie anwendbar ist (Art. 19 Abs. 3 GG). Ausländer
+    können sich für ihre Berufsfreiheit auf die allgemeine Handlungsfreiheit aus Art.
+    2 Abs. 1 GG berufen.
   norms:
   - Art. 12 Abs. 1 GG
   - Art. 116 GG
@@ -62,8 +62,8 @@ cards:
   front: Wann liegt ein Eingriff in Art. 12 Abs. 1 GG vor?
   back: Ein Eingriff liegt vor, wenn eine staatliche Maßnahme eine unmittelbar berufsregelnde
     Tendenz hat, also gerade auf die berufliche Betätigung abzielt oder sie zumindest
-    zwangsläufig mitregelt - im Unterschied zu Maßnahmen, die die Berufsausübung
-    nur als bloße Rand- oder Nebenfolge einer nicht berufsbezogenen Regelung berühren.
+    zwangsläufig mitregelt - im Unterschied zu Maßnahmen, die die Berufsausübung nur
+    als bloße Rand- oder Nebenfolge einer nicht berufsbezogenen Regelung berühren.
   norms:
   - Art. 12 Abs. 1 GG
   quellen:
@@ -121,9 +121,9 @@ cards:
   back: Art. 12 Abs. 1 S. 2 GG enthält einen einfachen Gesetzesvorbehalt, der seinem
     Wortlaut nach nur die Berufsausübung erfasst. Nach ständiger Auffassung erstreckt
     sich dieser Vorbehalt wegen des einheitlichen Grundrechts der Berufsfreiheit auch
-    auf die Berufswahl - dort verlangt der Grundsatz der Verhältnismäßigkeit im
-    Rahmen der Drei-Stufen-Theorie allerdings strengere Anforderungen als bei einer
-    reinen Berufsausübungsregelung.
+    auf die Berufswahl - dort verlangt der Grundsatz der Verhältnismäßigkeit im Rahmen
+    der Drei-Stufen-Theorie allerdings strengere Anforderungen als bei einer reinen
+    Berufsausübungsregelung.
   norms:
   - Art. 12 Abs. 1 S. 2 GG
   quellen:
@@ -151,8 +151,7 @@ schemata:
     children:
     - label: '1. Schranke: Gesetzesvorbehalt, Art. 12 Abs. 1 S. 2 GG'
     - label: 2. Formelle Verfassungsmäßigkeit des Gesetzes
-    - label: '3. Materielle Verfassungsmäßigkeit: Verhältnismäßigkeit nach der
-        Drei-Stufen-Theorie'
+    - label: '3. Materielle Verfassungsmäßigkeit: Verhältnismäßigkeit nach der Drei-Stufen-Theorie'
       children:
       - label: 'a) Stufe 1: Berufsausübungsregelung - vernünftige Gemeinwohlerwägungen
           genügen'
@@ -172,15 +171,16 @@ faelle:
   - GG, amtliche Fassung
   facts: Ein (fiktives) Landesgesetz zur Sicherung des Backwarenhandwerks schreibt
     vor, dass die Eröffnung eines neuen Backwarenfachgeschäfts einer behördlichen
-    Genehmigung bedarf, die nur erteilt wird, wenn die zuständige Behörde einen
-    ausreichenden wirtschaftlichen Bedarf für ein weiteres Geschäft in der jeweiligen
-    Gemeinde feststellt. Ziel des Gesetzes ist nach seiner Begründung ausdrücklich,
-    bestehende Backwarenfachgeschäfte vor wirtschaftlicher Konkurrenz durch Neugründungen
-    zu schützen. B, deutscher Staatsangehöriger und gelernter Bäcker, möchte in
-    einer Gemeinde eine neue Bäckerei eröffnen. Die Behörde verweigert die Genehmigung,
-    weil in der Gemeinde bereits drei Bäckereien ansässig seien und ein weiterer
-    Bedarf nicht bestehe - unabhängig von der fachlichen Qualifikation des B, die
-    nicht in Zweifel steht.
+    Genehmigung bedarf, die nur erteilt wird, wenn die zuständige Behörde einen ausreichenden
+    wirtschaftlichen Bedarf für ein weiteres Geschäft in der jeweiligen Gemeinde feststellt.
+    Ziel des Gesetzes ist nach seiner Begründung ausdrücklich, bestehende Backwarenfachgeschäfte
+    vor wirtschaftlicher Konkurrenz durch Neugründungen zu schützen. B, deutscher
+    Staatsangehöriger und gelernter Bäcker, möchte in einer Gemeinde eine neue Bäckerei
+    eröffnen. Die Behörde verweigert die Genehmigung, weil in der Gemeinde bereits
+    drei Bäckereien ansässig seien und ein weiterer Bedarf nicht bestehe - unabhängig
+    von der fachlichen Qualifikation des B, die nicht in Zweifel steht. Die Gesetzgebungskompetenz
+    des Landes und die sonstige formelle Verfassungsmäßigkeit des Gesetzes sind für
+    die Fallbearbeitung zu unterstellen.
   question: Verletzt die Ablehnung der Genehmigung den B in seinem Grundrecht aus
     Art. 12 Abs. 1 GG?
   steps:
@@ -199,10 +199,9 @@ faelle:
       Marktlage, die B nicht beeinflussen kann.'
   - prompt: Ist die Bedarfsprüfung auf dieser Stufe gerechtfertigt?
     erwartung: Nein. Objektive Zulassungsvoraussetzungen sind nur zur Abwehr nachweisbarer
-      oder höchstwahrscheinlicher schwerer Gefahren für ein überragend wichtiges
-      Gemeinschaftsgut gerechtfertigt. Der bloße Schutz bestehender Betriebe vor
-      wirtschaftlicher Konkurrenz ist kein überragend wichtiges Gemeinschaftsgut
-      in diesem Sinne.
+      oder höchstwahrscheinlicher schwerer Gefahren für ein überragend wichtiges Gemeinschaftsgut
+      gerechtfertigt. Der bloße Schutz bestehender Betriebe vor wirtschaftlicher Konkurrenz
+      ist kein überragend wichtiges Gemeinschaftsgut in diesem Sinne.
   expectation:
     pruefpunkte:
     - id: p1
@@ -212,7 +211,9 @@ faelle:
       norms:
       - Art. 12 Abs. 1 GG
       keywords:
-      - '12'
+      - Art. 12 Abs. 1 GG
+      - Berufsfreiheit
+      - könnte B in seinem Grundrecht
     - id: p2
       label: Schutzbereich (persönlich und sachlich) bejaht
       weight: 1.5
@@ -220,6 +221,9 @@ faelle:
       keywords:
       - Schutzbereich
       - Berufswahl
+      - Deutscher
+      - Grundrechtsträger
+      - Eröffnung einer Bäckerei
       card_slugs:
       - or-gr-art12-schutzbereich
       - or-gr-art12-persoenlicher-schutzbereich
@@ -228,7 +232,10 @@ faelle:
       weight: 1.5
       required: false
       keywords:
-      - Eingriff
+      - berufsregelnde Tendenz
+      - Berufszugang
+      - Versagung der Genehmigung
+      - Eingriff in Art. 12
       card_slugs:
       - or-gr-art12-eingriff
     - id: p4
@@ -239,6 +246,8 @@ faelle:
       keywords:
       - dritte Stufe
       - objektive Zulassungsvoraussetzung
+      - objektive Berufswahlregelung
+      - Drei-Stufen-Theorie
       - Stufe 3
       card_slugs:
       - or-gr-art12-dreistufentheorie
@@ -250,6 +259,8 @@ faelle:
       keywords:
       - Konkurrentenschutz
       - überragend wichtiges Gemeinschaftsgut
+      - schwere Gefahren
+      - Schutz bestehender Betriebe
       - nicht gerechtfertigt
       card_slugs:
       - or-gr-art12-dreistufentheorie
@@ -258,5 +269,7 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - verletzt
-      - Verletzung
+      - in Art. 12 Abs. 1 GG verletzt
+      - Verletzung der Berufsfreiheit
+      - Verletzung von Art. 12
+      - Ablehnung ist verfassungswidrig

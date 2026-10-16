@@ -1,0 +1,358 @@
+topic:
+  slug: zr-sat-gesamtschuld-regress
+  area: zivilrecht
+  title: Gesamtschuld und Gesamtschuldnerausgleich, §§ 421 ff., 426 BGB
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-gs-421-begriff
+  type: definition
+  front: >-
+    Definiere: Gesamtschuld und ihre Voraussetzungen nach § 421 S. 1 BGB.
+  back: >-
+    Eine Gesamtschuld liegt vor, wenn mehrere eine Leistung in der Weise schulden,
+    dass jeder die ganze Leistung zu bewirken verpflichtet ist, der Gläubiger sie
+    aber nur einmal zu fordern berechtigt ist (§ 421 S. 1 BGB). Erforderlich ist
+    Gleichstufigkeit der Verpflichtungen: Die Schuldner haften für dasselbe Leistungsinteresse
+    des Gläubigers, jeder ist selbständig verpflichtet, und keine Schuld ist der anderen
+    nachgeordnet oder von ihr abhängig im Sinne der Subsidiarität. Der Gläubiger kann
+    nach seinem Belieben von jedem Schuldner die ganze Leistung oder einen Teil fordern
+    (§ 421 S. 1 BGB). Die Gesamtschuld kann durch Vertrag (etwa mehrere Mieter, § 427
+    BGB) oder Gesetz entstehen, etwa bei mehreren Schädigern (§ 840 Abs. 1 BGB) oder
+    Mitbürgen (§ 769 BGB).
+  norms:
+  - § 421 S. 1 BGB
+  - § 427 BGB
+  - § 840 Abs. 1 BGB
+  - § 769 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-gs-entstehung-fallgruppen
+  type: definition
+  front: >-
+    Nenne wichtige Entstehungsgründe der Gesamtschuld im Examen.
+  back: >-
+    Häufig sind (1) mehrere Schädiger: Nebentäter, Mittäter und Teilnehmer haften
+    nach §§ 830, 840 Abs. 1 BGB als Gesamtschuldner. (2) Der Schädiger neben einem
+    zum Ersatz Verpflichteten aus anderem Rechtsgrund, etwa aus Vertrag und Delikt
+    nebeneinander, sofern beide Schuldner dasselbe Leistungsinteresse des Geschädigten
+    ausgleichen. (3) Mehrere Vertragsschuldner, die sich gemeinsam verpflichten, im
+    Zweifel nach § 427 BGB (gemeinschaftliche vertragliche Verpflichtung zu einer
+    teilbaren Leistung). (4) Die Mitbürgen, § 769 BGB. (5) Die persönliche Haftung
+    der Gesellschafter einer Personengesellschaft für deren Verbindlichkeiten, die
+    nach dem Gesellschaftsrecht akzessorisch zur Gesellschaftsschuld ist. (6) Der
+    Schuldbeitritt (Kumulative Schuldübernahme). Der Bürge und der Hauptschuldner
+    sind dagegen nach h. M. wegen der Akzessorietät und des Sicherungscharakters der Bürgschaft
+    keine Gesamtschuldner im technischen Sinne; der Rückgriff des Bürgen richtet sich nach
+    § 774 BGB.
+  norms:
+  - § 830 BGB
+  - § 840 Abs. 1 BGB
+  - § 427 BGB
+  - § 769 BGB
+  - § 774 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-gs-426-ausgleich
+  type: norm
+  front: >-
+    Welcher Ausgleichsanspruch besteht zwischen Gesamtschuldnern nach § 426 Abs.
+    1 BGB?
+  back: >-
+    Gesamtschuldner sind im Verhältnis zueinander zu gleichen Anteilen verpflichtet,
+    soweit nichts anderes bestimmt ist (§ 426 Abs. 1 S. 1 BGB). Abweichende Bestimmungen
+    ergeben sich aus Vertrag, Gesetz (etwa § 840 Abs. 2 und 3 BGB) oder aus der Natur
+    der Sache, im Schadensrecht nach der Rechtsprechung etwa aus dem Maß der Verursachung
+    und des Verschuldens (§ 254 BGB entsprechend). Der Anspruch ist originär, entsteht
+    mit der Begründung des Gesamtschuldverhältnisses als Mitwirkungs- und Befreiungsanspruch
+    und wandelt sich mit Zahlung in einen Zahlungsanspruch auf Ersatz des über den
+    eigenen Anteil hinaus Geleisteten. Ausgleichsberechtigt ist, wer mehr als seinen
+    Anteil leistet. Fällt ein Gesamtschuldner aus, tragen die übrigen den Ausfall
+    anteilig (§ 426 Abs. 1 S. 2 BGB).
+  norms:
+  - § 426 Abs. 1 BGB
+  - § 840 Abs. 2 BGB
+  - § 840 Abs. 3 BGB
+  - § 254 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-gs-426-abs2-cessio-legis
+  type: norm
+  front: >-
+    Was regelt § 426 Abs. 2 BGB und wie verhält er sich zu Abs. 1?
+  back: >-
+    Soweit ein Gesamtschuldner den Gläubiger befriedigt und von den übrigen Ausgleich
+    verlangen kann, geht die Forderung des Gläubigers gegen die übrigen Schuldner
+    auf ihn über (§ 426 Abs. 2 S. 1 BGB, gesetzlicher Forderungsübergang, cessio legis).
+    Der Gläubiger darf dadurch nicht benachteiligt werden (§ 426 Abs. 2 S. 2 BGB).
+    Der übergegangene Anspruch tritt neben den originären Ausgleichsanspruch nach
+    Abs. 1; beide sind selbständig. Die cessio legis ist vor allem wegen der mitübergehenden
+    Neben- und Sicherungsrechte (§§ 401, 412 BGB) und wegen der Verjährung günstig:
+    Der Ausgleichsanspruch nach Abs. 1 verjährt selbständig und nach der regelmäßigen
+    Verjährungsfrist, der übergegangene Anspruch richtet sich nach der Verjährung
+    der Gläubigerforderung. Im Klausuraufbau wird zuerst Abs. 1 geprüft, anschließend
+    kurz Abs. 2.
+  norms:
+  - § 426 Abs. 2 BGB
+  - § 401 BGB
+  - § 412 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-gs-wirkung-422-425
+  type: norm
+  front: >-
+    Welche Handlungen wirken nach §§ 422 bis 425 BGB für und gegen alle Gesamtschuldner?
+  back: >-
+    Das Gesetz geht vom Grundsatz der Einzelwirkung aus (§ 425 Abs. 1 BGB): Tatsachen
+    wirken nur für und gegen den Gesamtschuldner, in dessen Person sie eintreten,
+    soweit sich nichts anderes aus dem Schuldverhältnis ergibt. Gesamtwirkung haben
+    nach § 422 Abs. 1 BGB die Erfüllung und die Erfüllungssurrogate (Leistung an
+    Erfüllungs statt, Hinterlegung, Aufrechnung durch einen Schuldner). Der Annahmeverzug
+    des Gläubigers wirkt nach § 424 BGB für alle. Der Erlass wirkt nach § 423 BGB
+    für alle, wenn die Vertragschließenden das ganze Schuldverhältnis aufheben wollten.
+    Einzelwirkung haben insbesondere Kündigung, Verzug, Verschulden, Unmöglichkeit
+    sowie die Verjährung (§ 425 Abs. 2 BGB). Die einzelnen Schuldner haften nur im
+    Rahmen eigener Einwendungen.
+  norms:
+  - § 422 Abs. 1 BGB
+  - § 423 BGB
+  - § 424 BGB
+  - § 425 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-gs-gestoerte-gesamtschuld
+  type: streitstand
+  front: >-
+    Erkläre die gestörte Gesamtschuld und den Meinungsstand zu ihrer Auflösung.
+  back: >-
+    Eine gestörte Gesamtschuld liegt vor, wenn ein Gesamtschuldner (Erstschädiger)
+    dem Geschädigten gegenüber nicht haftet, weil für ihn ein gesetzliches Haftungsprivileg
+    gilt, etwa nach §§ 104, 105 SGB VII bei Arbeitsunfällen. Der Zweitschädiger könnte
+    dann bei voller Inanspruchnahme vom privilegierten Erstschädiger keinen Ausgleich
+    nach § 426 BGB mehr verlangen, weil dieser gar nicht haftet. Ein Ansatz lässt
+    deshalb den Zweitschädiger voll haften und verweist ihn auf den Ausfall des Ausgleichs;
+    das benachteiligt ihn unbillig. Die h. M. kürzt den Anspruch des Geschädigten
+    gegen den Zweitschädiger um den Verantwortungsanteil, der im Innenverhältnis auf
+    den privilegierten Erstschädiger entfiele (Kürzungsmodell). Das Haftungsprivileg
+    wirkt damit nicht zu Lasten des Zweitschädigers, sondern zu Lasten des Geschädigten,
+    der ohnehin durch die Versicherung abgesichert ist. Der Zweitschädiger haftet
+    folglich nur auf seinen Anteil.
+  norms:
+  - § 426 BGB
+  - § 104 SGB VII
+  - § 105 SGB VII
+  quellen:
+  - BGB, amtliche Fassung
+  - BGH, Urteil vom 23.4.1985 - VI ZR 91/83 (BGHZ 94, 173)
+  - BGH, Urteil vom 24.6.2003 - VI ZR 434/01 (BGHZ 155, 205)
+  - Eigenformulierung Redaktion
+- slug: zr-gs-gesamtglaeubiger-428
+  type: definition
+  front: >-
+    Definiere: Gesamtgläubigerschaft nach §§ 428 ff. BGB im Vergleich zur Gesamtschuld.
+  back: >-
+    Bei der Gesamtgläubigerschaft ist jeder von mehreren Gläubigern berechtigt, die
+    ganze Leistung zu fordern, der Schuldner aber nur einmal zu leisten verpflichtet
+    (§ 428 S. 1 BGB). Der Schuldner kann nach Belieben an jeden Gläubiger leisten,
+    auch wenn einer von ihnen bereits Klage auf die Leistung erhoben hat (§ 428 S. 2
+    BGB). Sie ist der
+    spiegelbildliche Fall zur Gesamtschuld und entsteht vor allem durch Vereinbarung,
+    etwa beim Oder-Konto. Im Innenverhältnis sind die Gesamtgläubiger zu gleichen
+    Teilen ausgleichspflichtig, § 430 BGB. Die Mitgläubigerschaft des § 432 BGB, bei
+    der der Schuldner nur an alle gemeinsam leisten kann, ist von ihr abzugrenzen
+    und betrifft unteilbare Leistungen. Von der Gesamtschuld unterscheidet sie sich
+    dadurch, dass mehrere Gläubiger statt mehrerer Schuldner beteiligt sind.
+  norms:
+  - § 428 BGB
+  - § 430 BGB
+  - § 432 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-gs-ausgleich-voraussetzungen
+  type: schema_step
+  front: >-
+    Wie baust du den Gesamtschuldnerausgleich nach § 426 BGB in der Klausur auf?
+  back: >-
+    Zuerst wird das Bestehen einer Gesamtschuld festgestellt: Beide Schuldner müssen
+    dem Gläubiger auf dasselbe Leistungsinteresse haften (§ 421 BGB). Danach prüft
+    man, dass der Anspruchsteller den Gläubiger befriedigt hat, und zwar über seinen
+    Anteil hinaus, ohne dass die Leistung freiwillig an einen Dritten erfolgte. Dann
+    wird der Ausgleichsmaßstab ermittelt: Im Zweifel gleiche Anteile (§ 426 Abs. 1
+    S. 1 BGB), im Schadensrecht eine Quote nach Verursachung und Verschulden (§ 254
+    BGB entsprechend) und im Verhältnis zwischen Vertragspartnern die Vereinbarung.
+    Anschließend wird der Anspruch aus § 426 Abs. 1 BGB beziffert, danach kurz der
+    übergegangene Anspruch aus § 426 Abs. 2 BGB mit seinen Sicherungsrechten. Zum
+    Schluss sind Einwendungen, die gegen den Gläubigeranspruch bestanden, und Verjährung
+    zu bedenken.
+  norms:
+  - § 426 Abs. 1 BGB
+  - § 426 Abs. 2 BGB
+  - § 421 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-gs-ausgleich-426
+  title: Ausgleichsanspruch unter Gesamtschuldnern, § 426 BGB
+  norms:
+  - § 421 BGB
+  - § 426 Abs. 1 BGB
+  - § 426 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Bestehen einer Gesamtschuld, § 421 BGB
+    children:
+    - label: 1. Mehrere Schuldner
+    - label: 2. Dieselbe Leistung, gleichstufige Verpflichtung
+      hinweis: Gleichstufigkeit und Identität des Leistungsinteresses prüfen; keine
+        Subsidiarität.
+    - label: 3. Entstehungsgrund (Vertrag, § 427 BGB, Gesetz, §§ 830, 840 BGB)
+  - label: II. Leistung eines Schuldners an den Gläubiger
+    hinweis: Befriedigung über den eigenen Anteil hinaus; Erfüllung wirkt für alle,
+      § 422 Abs. 1 BGB.
+  - label: III. Ausgleichsanspruch aus § 426 Abs. 1 BGB
+    children:
+    - label: 1. Ausgleichsmaßstab - gleiche Anteile oder abweichende Bestimmung
+      hinweis: Im Schadensrecht Quote nach Verursachung und Verschulden, § 254 BGB
+        entsprechend.
+    - label: 2. Höhe des Anspruchs
+    - label: 3. Ausfall eines Schuldners, § 426 Abs. 1 S. 2 BGB
+  - label: IV. Übergegangene Forderung aus § 426 Abs. 2 BGB
+    hinweis: Mit Neben- und Sicherungsrechten; Gläubiger darf nicht benachteiligt
+      werden.
+  - label: V. Besonderheiten
+    children:
+    - label: 1. Gestörte Gesamtschuld (Haftungsprivileg)
+    - label: 2. Einzelwirkung und Gesamtwirkung, §§ 422 bis 425 BGB
+faelle:
+- slug: zr-fall-gs-rohrbruch
+  title: Der geplatzte Wasserrohrbogen
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Eigentümer E lässt in seinem Wohnhaus eine Wasserleitung umbauen. Die selbständigen
+    Handwerker A (Installateur) und B (Elektriker) arbeiten unabhängig voneinander
+    in demselben Raum. Beide verlegen fahrlässig und mit gleichem Verursachungsbeitrag
+    Leitungen so, dass eine Wasserleitung durch Zusammenwirken ihrer Fehler platzt
+    und das Parkett des E zerstört wird (Schaden 6.000 Euro). E verlangt von A den
+    vollen Schadensersatz, den dieser zahlt. A möchte von B die Hälfte erstattet haben.
+    B meint, er schulde nichts, da E ihn nie in Anspruch genommen habe. Das Verhältnis
+    zwischen A und B ist vertraglich nicht geregelt.
+  question: >-
+    Kann A von B 3.000 Euro verlangen?
+  steps:
+  - prompt: Welche Anspruchsgrundlagen für A kommen in Betracht?
+    erwartung: >-
+      Der Ausgleichsanspruch aus § 426 Abs. 1 S. 1 BGB und die nach § 426 Abs. 2
+      BGB auf A übergegangene Forderung des E gegen B.
+  - prompt: Besteht eine Gesamtschuld zwischen A und B?
+    erwartung: >-
+      Ja. A und B schulden E jeweils auf Grund fahrlässiger Schadensverursachung
+      (§ 823 Abs. 1 BGB, daneben vertragliche Ansprüche) Ersatz desselben Schadens.
+      Die Verpflichtungen sind gleichstufig; die Haftung mehrerer Schädiger bildet
+      eine Gesamtschuld (§ 840 Abs. 1 BGB, § 421 BGB).
+  - prompt: Hat A über seinen Anteil hinaus geleistet und welche Wirkung hat seine
+      Zahlung?
+    erwartung: >-
+      A hat den gesamten Schaden bezahlt. Die Erfüllung wirkt nach § 422 Abs. 1 BGB
+      auch für B, dessen Schuld gegenüber E erlischt. Damit hat A mehr als seinen
+      Anteil geleistet.
+  - prompt: In welcher Höhe besteht der Ausgleichsanspruch?
+    erwartung: >-
+      Die Beteiligten tragen im Innenverhältnis zu gleichen Anteilen (§ 426 Abs. 1
+      S. 1 BGB), hier auch nach gleichen Verursachungsbeiträgen, sodass B 3.000 Euro
+      zu erstatten hat. Dass E den B nicht in Anspruch genommen hat, ist nach § 421
+      S. 1 BGB unerheblich.
+  - prompt: Welche Bedeutung hat § 426 Abs. 2 BGB?
+    erwartung: >-
+      Die Forderung des E gegen B geht in Höhe von 3.000 Euro kraft Gesetzes auf A
+      über, mit Neben- und Sicherungsrechten (§§ 401, 412 BGB). E darf dadurch nicht
+      benachteiligt werden.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Gesamtschuld bejaht (mehrere Schädiger, § 840 Abs. 1, § 421 BGB), Gleichstufigkeit
+        geprüft
+      weight: 3.0
+      required: true
+      norms:
+      - § 421 BGB
+      - § 840 Abs. 1 BGB
+      keywords:
+      - Gesamtschuld
+      - § 421
+      - § 840 Abs. 1
+      - Gleichstufigkeit
+      - gleiches Leistungsinteresse
+      card_slugs:
+      - zr-gs-421-begriff
+      - zr-gs-entstehung-fallgruppen
+    - id: p2
+      label: Leistung über den Anteil hinaus und Gesamtwirkung der Erfüllung nach
+        § 422 Abs. 1 BGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 422 Abs. 1 BGB
+      keywords:
+      - § 422
+      - Erfüllung wirkt für alle
+      - Gesamtwirkung
+      - Befriedigung des Gläubigers
+      card_slugs:
+      - zr-gs-wirkung-422-425
+    - id: p3
+      label: Ausgleichsanspruch aus § 426 Abs. 1 S. 1 BGB, Maßstab gleiche Anteile
+        und Höhe von 3.000 Euro
+      weight: 3.0
+      required: true
+      norms:
+      - § 426 Abs. 1 BGB
+      keywords:
+      - § 426 Abs. 1
+      - gleiche Anteile
+      - Ausgleichsanspruch
+      - Innenverhältnis
+      - 3.000 Euro
+      card_slugs:
+      - zr-gs-426-ausgleich
+    - id: p4
+      label: Gesetzlicher Forderungsübergang nach § 426 Abs. 2 BGB mit Sicherungsrechten
+        erkannt
+      weight: 2.0
+      required: false
+      norms:
+      - § 426 Abs. 2 BGB
+      keywords:
+      - § 426 Abs. 2
+      - cessio legis
+      - gesetzlicher Forderungsübergang
+      - Forderung geht über
+      card_slugs:
+      - zr-gs-426-abs2-cessio-legis
+    - id: p5
+      label: Einwand der fehlenden Inanspruchnahme durch den Gläubiger zurückgewiesen
+        (Wahlrecht des Gläubigers)
+      weight: 1.0
+      required: false
+      keywords:
+      - Wahlrecht des Gläubigers
+      - nach Belieben
+      - Gläubiger kann wählen
+      - § 421 S. 1

@@ -15,12 +15,12 @@ cards:
 - slug: or-gr-art14-schutzbereich
   type: definition
   front: Was schützt der sachliche Schutzbereich des Art. 14 Abs. 1 S. 1 GG?
-  back: Art. 14 Abs. 1 S. 1 GG schützt das Eigentum als konkrete, vermögenswerte
-    Rechtsposition, die dem Einzelnen von der Rechtsordnung so zugeordnet ist, dass
-    er die Befugnisse zur Nutzung, zum Gebrauch und zur Verfügung über diese Position
-    hat. Erfasst sind Sacheigentum ebenso wie sonstige vermögenswerte private Rechte
-    (z. B. dingliche Rechte, Forderungen). Nicht geschützt sind bloße Erwerbschancen,
-    Umsatz- und Gewinnaussichten oder das Vermögen als Ganzes.
+  back: Art. 14 Abs. 1 S. 1 GG schützt das Eigentum als konkrete, vermögenswerte Rechtsposition,
+    die dem Einzelnen von der Rechtsordnung so zugeordnet ist, dass er die Befugnisse
+    zur Nutzung, zum Gebrauch und zur Verfügung über diese Position hat. Erfasst sind
+    Sacheigentum ebenso wie sonstige vermögenswerte private Rechte (z. B. dingliche
+    Rechte, Forderungen). Nicht geschützt sind bloße Erwerbschancen, Umsatz- und Gewinnaussichten
+    oder das Vermögen als Ganzes.
   norms:
   - Art. 14 Abs. 1 GG
   quellen:
@@ -30,8 +30,8 @@ cards:
   type: definition
   front: 'Definiere: Inhalts- und Schrankenbestimmung, Art. 14 Abs. 1 S. 2 GG'
   back: Eine Inhalts- und Schrankenbestimmung ist eine generell-abstrakte gesetzliche
-    Regelung, die Rechte und Pflichten des Eigentümers für die Zukunft festlegt
-    und damit den Inhalt des Eigentums als Institut und Rechtsverhältnis erst ausgestaltet
+    Regelung, die Rechte und Pflichten des Eigentümers für die Zukunft festlegt und
+    damit den Inhalt des Eigentums als Institut und Rechtsverhältnis erst ausgestaltet
     - anders als die Enteignung entzieht sie keine bereits konkret zugeordnete Rechtsposition,
     sondern bestimmt allgemein, was 'Eigentum' im jeweiligen Regelungsbereich künftig
     bedeutet.
@@ -44,12 +44,14 @@ cards:
 - slug: or-gr-art14-enteignung
   type: definition
   front: 'Definiere: Enteignung, Art. 14 Abs. 3 GG'
-  back: Die Enteignung ist der vollständige oder teilweise, gezielte hoheitliche
-    Entzug konkreter, durch Art. 14 Abs. 1 GG geschützter Eigentumspositionen zur
-    Erfüllung bestimmter öffentlicher Aufgaben - entweder unmittelbar durch Gesetz
+  back: Die Enteignung ist der vollständige oder teilweise, gezielte hoheitliche Entzug
+    konkreter, durch Art. 14 Abs. 1 GG geschützter Eigentumspositionen zur Erfüllung
+    bestimmter öffentlicher Aufgaben. Sie ist nur durch Gesetz oder auf Grund eines
+    Gesetzes zulässig (Art. 14 Abs. 3 S. 2 GG) - entweder unmittelbar durch Gesetz
     (Legalenteignung) oder durch Verwaltungsakt aufgrund eines Gesetzes (Administrativenteignung,
-    § 87 Abs. 1 der einschlägigen Fachgesetze). Sie setzt eine vollziehende Umsetzung
-    in Form eines konkreten Zugriffs voraus, nicht nur eine abstrakte Neuregelung.
+    z. B. nach den Enteignungsvorschriften des BauGB). Abzugrenzen ist die Enteignung
+    von der Inhalts- und Schrankenbestimmung nach Art. 14 Abs. 1 S. 2 GG, die Rechte
+    und Pflichten des Eigentümers abstrakt-generell für die Zukunft festlegt.
   norms:
   - Art. 14 Abs. 3 GG
   quellen:
@@ -61,12 +63,12 @@ cards:
   front: Was besagt die Trennungstheorie des BVerfG zum Verhältnis von Inhalts- und
     Schrankenbestimmung und Enteignung?
   back: 'Nach der Trennungstheorie sind Inhalts- und Schrankenbestimmung (Art. 14
-    Abs. 1 S. 2 GG) und Enteignung (Art. 14 Abs. 3 GG) zwei eigenständige, nicht
-    ineinander überführbare Rechtsinstitute, die sich nach der Handlungsform des
-    Normgebers unterscheiden: eine generell- abstrakte, zukunftsbezogene Neubestimmung
-    des Eigentumsinhalts ist stets Inhalts- und Schrankenbestimmung, unabhängig davon,
-    wie schwerwiegend sie den Einzelnen trifft - eine unverhältnismäßig belastende
-    Inhaltsbestimmung wird also nicht automatisch zur Enteignung, sondern bleibt verfassungswidrige
+    Abs. 1 S. 2 GG) und Enteignung (Art. 14 Abs. 3 GG) zwei eigenständige, nicht ineinander
+    überführbare Rechtsinstitute, die sich nach der Handlungsform des Normgebers unterscheiden:
+    eine generell- abstrakte, zukunftsbezogene Neubestimmung des Eigentumsinhalts
+    ist stets Inhalts- und Schrankenbestimmung, unabhängig davon, wie schwerwiegend
+    sie den Einzelnen trifft - eine unverhältnismäßig belastende Inhaltsbestimmung
+    wird also nicht automatisch zur Enteignung, sondern bleibt verfassungswidrige
     Inhaltsbestimmung.'
   norms:
   - Art. 14 Abs. 1 GG
@@ -108,13 +110,12 @@ cards:
   type: streitstand
   front: Was ist eine ausgleichspflichtige Inhaltsbestimmung?
   back: Erweist sich eine an sich zulässige Inhalts- und Schrankenbestimmung im Einzelfall
-    als unverhältnismäßig belastend - etwa weil sie den Eigentümer im Vergleich
-    zu anderen Betroffenen atypisch schwer trifft -, kann der Gesetzgeber die Verhältnismäßigkeit
-    durch eine Ausgleichs- oder Übergangsregelung (z. B. finanzieller Ausgleich,
-    Härteklauseln) wiederherstellen, statt die Regelung insgesamt zu verwerfen. Ohne
-    eine solche Ausgleichsregelung ist die Inhaltsbestimmung unverhältnismäßig
-    und damit verfassungswidrig - sie wird dadurch aber nach der Trennungstheorie
-    nicht zur Enteignung.
+    als unverhältnismäßig belastend - etwa weil sie den Eigentümer im Vergleich zu
+    anderen Betroffenen atypisch schwer trifft -, kann der Gesetzgeber die Verhältnismäßigkeit
+    durch eine Ausgleichs- oder Übergangsregelung (z. B. finanzieller Ausgleich, Härteklauseln)
+    wiederherstellen, statt die Regelung insgesamt zu verwerfen. Ohne eine solche
+    Ausgleichsregelung ist die Inhaltsbestimmung unverhältnismäßig und damit verfassungswidrig
+    - sie wird dadurch aber nach der Trennungstheorie nicht zur Enteignung.
   norms:
   - Art. 14 Abs. 1 GG
   quellen:
@@ -133,10 +134,9 @@ schemata:
   steps:
   - label: I. Schutzbereich
     children:
-    - label: '1. Persönlich: Jedermann, bei juristischen Personen Art. 19 Abs. 3
-        GG'
-    - label: '2. Sachlich: konkrete, vermögenswerte Rechtsposition, Art. 14 Abs.
-        1 S. 1 GG'
+    - label: '1. Persönlich: Jedermann, bei juristischen Personen Art. 19 Abs. 3 GG'
+    - label: '2. Sachlich: konkrete, vermögenswerte Rechtsposition, Art. 14 Abs. 1
+        S. 1 GG'
   - label: II. Eingriff - Einordnung nach der Trennungstheorie
     children:
     - label: '1. Inhalts- und Schrankenbestimmung: generell-abstrakte, zukunftsbezogene
@@ -149,8 +149,8 @@ schemata:
     - label: '1. Bei Enteignung: gesetzliche Grundlage, Gemeinwohlgrund, Junktimklausel
         (Art. 14 Abs. 3 S. 2 GG), Verhältnismäßigkeit'
     - label: '2. Bei Inhalts- und Schrankenbestimmung: formelle und materielle Verfassungsmäßigkeit,
-        Verhältnismäßigkeit unter Berücksichtigung der Sozialbindung (Art. 14
-        Abs. 2 GG), ggf. Ausgleichspflicht'
+        Verhältnismäßigkeit unter Berücksichtigung der Sozialbindung (Art. 14 Abs.
+        2 GG), ggf. Ausgleichspflicht'
   - label: IV. Ergebnis
 faelle:
 - slug: or-fall-strassenbau-enteignung-ohne-entschaedigungsregelung
@@ -160,27 +160,28 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - GG, amtliche Fassung
-  facts: Ein (fiktives) Landesstraßenbaugesetz ermächtigt die Straßenbaubehörde,
-    zur Verwirklichung eines konkreten Bundesstraßenbauvorhabens durch Verwaltungsakt
+  facts: Ein (fiktives) Landesstraßenbaugesetz ermächtigt die Straßenbaubehörde, zur
+    Verwirklichung eines konkreten Bundesstraßenbauvorhabens durch Verwaltungsakt
     das Eigentum an einzelnen benötigten Grundstücken auf den Straßenbaulastträger
     zu übertragen. Das Gesetz selbst enthält keinerlei Regelung über Art und Ausmaß
     einer Entschädigung; die Behörde verweist die betroffene Grundstückseigentümerin
     E auf ein "noch zu erlassendes gesondertes Entschädigungsgesetz". Gestützt auf
     diese Ermächtigung entzieht die Behörde der E durch Verwaltungsakt das Eigentum
-    an ihrem Grundstück.
+    an ihrem Grundstück. Die Gesetzgebungskompetenz des Landes und die sonstige formelle
+    Verfassungsmäßigkeit des Gesetzes sind für die Fallbearbeitung zu unterstellen.
   question: Ist der Eigentumsentzug mit Art. 14 GG vereinbar?
   steps:
   - prompt: Ist der Schutzbereich des Art. 14 Abs. 1 GG eröffnet?
-    erwartung: Ja - das Eigentum am Grundstück ist eine konkrete, vermögenswerte
-      Rechtsposition der E.
+    erwartung: Ja - das Eigentum am Grundstück ist eine konkrete, vermögenswerte Rechtsposition
+      der E.
   - prompt: Handelt es sich um eine Inhalts- und Schrankenbestimmung oder um eine
       Enteignung?
     erwartung: 'Um eine Enteignung, genauer eine Administrativenteignung: Die Behörde
       entzieht der E durch Verwaltungsakt gezielt eine konkrete Eigentumsposition
-      zur Erfüllung einer bestimmten öffentlichen Aufgabe (Straßenbau) - keine
-      generell-abstrakte Neuregelung des Eigentumsinhalts.'
-  - prompt: Genügt die Ermächtigungsgrundlage den Anforderungen des Art. 14 Abs.
-      3 GG?
+      zur Erfüllung einer bestimmten öffentlichen Aufgabe (Straßenbau) - keine generell-abstrakte
+      Neuregelung des Eigentumsinhalts.'
+  - prompt: Genügt die Ermächtigungsgrundlage den Anforderungen des Art. 14 Abs. 3
+      GG?
     erwartung: Nein - das Gesetz selbst regelt weder Art noch Ausmaß einer Entschädigung
       und verstößt damit gegen die Junktimklausel des Art. 14 Abs. 3 S. 2 GG. Der
       Verweis auf ein erst noch zu erlassendes gesondertes Entschädigungsgesetz heilt
@@ -196,8 +197,9 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - Schutzbereich
-      - Eigentum
+      - Schutzbereich des Art. 14
+      - konkrete Rechtsposition
+      - vermögenswerte Rechtsposition
       card_slugs:
       - or-gr-art14-schutzbereich
     - id: p2
@@ -208,22 +210,28 @@ faelle:
       norms:
       - Art. 14 Abs. 3 GG
       keywords:
-      - Enteignung
+      - Administrativenteignung
       - konkrete Position
+      - gezielter Entzug
       - gezielt
+      - Abgrenzung zur Inhalts- und Schrankenbestimmung
+      - Art. 14 Abs. 3 GG
       card_slugs:
       - or-gr-art14-enteignung
       - or-gr-art14-trennungstheorie
     - id: p3
-      label: Verstoß gegen die Junktimklausel des Art. 14 Abs. 3 S. 2 GG erkannt
-        und begründet
+      label: Verstoß gegen die Junktimklausel des Art. 14 Abs. 3 S. 2 GG erkannt und
+        begründet
       weight: 3.0
       required: true
       norms:
       - Art. 14 Abs. 3 GG
       keywords:
       - Junktimklausel
+      - Art. 14 Abs. 3 S. 2 GG
       - Entschädigungsregelung
+      - Art und Ausmaß der Entschädigung
+      - Entschädigungsgesetz
       card_slugs:
       - or-gr-art14-junktimklausel
     - id: p4
@@ -233,8 +241,12 @@ faelle:
       norms:
       - Art. 14 GG
       keywords:
-      - verletzt
-      - verfassungswidrig
-
+      - verletzt E in Art. 14
+      - Verletzung von Art. 14
+      - Eigentumsentzug ist verfassungswidrig
+      - Ermächtigungsgrundlage ist verfassungswidrig
+      - Eigentumsentzug ist rechtswidrig
+      - verletzt die E in ihrem Grundrecht
+      - in ihrem Grundrecht aus Art. 14
       card_slugs:
       - or-gr-art14-junktimklausel

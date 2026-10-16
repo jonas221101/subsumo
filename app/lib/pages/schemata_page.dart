@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 
 import '../design/design.dart';
 import '../state.dart';
+import '../text_schutz.dart';
 import '../theme.dart';
+import 'bundesland_hint.dart';
+import 'fit_title.dart';
+import 'landesbezug.dart';
+import 'norm_sheet.dart';
 import 'screen_status.dart';
 
 /// Pruefungsschemata als Gliederung mit juristischer Nummerierung
@@ -25,10 +30,21 @@ class _SchemataPageState extends State<SchemataPage> {
   bool _loading = true;
   String? _area;
   String _query = '';
+  final _search = TextEditingController();
+
+  @override
+  void dispose() {
+    _search.dispose();
+    super.dispose();
+  }
 
   @override
   void initState() {
     super.initState();
+    // Filter folgt immer dem Feldinhalt - kein Auseinanderlaufen von Text und Suche.
+    _search.addListener(() {
+      if (_search.text != _query && mounted) setState(() => _query = _search.text);
+    });
     WidgetsBinding.instance.addPostFrameCallback((_) => _load());
   }
 
@@ -44,14 +60,37 @@ class _SchemataPageState extends State<SchemataPage> {
     }
   }
 
+  /// Alle Texte der (verschachtelten) Prueffolge als ein Suchtext.
+  static String _schrittText(Object? node) => switch (node) {
+        final String text => text,
+        final List<Object?> list => list.map(_schrittText).join(' '),
+        final Map<Object?, Object?> map => map.values.map(_schrittText).join(' '),
+        _ => '',
+      };
+
   List<Map<String, dynamic>> get _visible {
     final q = _query.trim().toLowerCase();
     if (q.isEmpty) return _schemata;
+    final ranks = <Map<String, dynamic>, int>{};
+    for (final s in _schemata) {
+      final r = suchRang(
+        q,
+        '${s['title']} ${((s['norms'] as List?) ?? const []).join(' ')} ${landesSuchtext(s['bundesland'])}',
+      );
+      if (r != null) {
+        ranks[s] = r;
+      } else if (suchRang(q, _schrittText(s['steps'])) != null) {
+        // Treffer nur im Schema-Text (z. B. "drohende Gefahr"): nach den
+        // Titel-/Normtreffern anzeigen (Nutzertest W10).
+        ranks[s] = 2;
+      }
+    }
+    final hits = ranks.keys.toList();
+    // Stabil: Volltreffer zuerst, sonst urspruengliche Reihenfolge.
     return [
-      for (final s in _schemata)
-        if ((s['title'] as String).toLowerCase().contains(q) ||
-            ((s['norms'] as List?) ?? const []).join(' ').toLowerCase().contains(q))
-          s,
+      for (final r in [0, 1, 2])
+        for (final s in hits)
+          if (ranks[s] == r) s,
     ];
   }
 
@@ -66,14 +105,30 @@ class _SchemataPageState extends State<SchemataPage> {
           SubsumoPageHeader(
             eyebrow: 'Prüfungsaufbau',
             title: 'Schemata',
-            subtitle: _loading ? null : '${_schemata.length} Schemata${_area == null ? ' in drei Rechtsgebieten' : ''}.',
+            subtitle: _loading
+                ? null
+                : (visible.length == _schemata.length
+                    ? '${_schemata.length} Schemata${_area == null ? ' in drei Rechtsgebieten' : ''}.'
+                    : '${visible.length} von ${_schemata.length} Schemata.'),
           ),
-          const SizedBox(height: Spacing.xl),
+          const SizedBox(height: Spacing.md),
+          const BundeslandHint(),
+          const SizedBox(height: Spacing.sm),
           TextField(
-            onChanged: (v) => setState(() => _query = v),
-            decoration: const InputDecoration(
+            controller: _search,
+            decoration: InputDecoration(
               hintText: 'Schema oder Norm suchen, z. B. § 823 oder Anfechtung',
-              prefixIcon: Icon(Icons.search),
+              prefixIcon: const Icon(Icons.search),
+              suffixIcon: _query.isEmpty
+                  ? null
+                  : IconButton(
+                      tooltip: 'Suche leeren',
+                      icon: const Icon(Icons.clear),
+                      onPressed: () {
+                        _search.clear();
+                        setState(() => _query = '');
+                      },
+                    ),
             ),
           ),
           const SizedBox(height: Spacing.md),
@@ -108,13 +163,19 @@ class _SchemataPageState extends State<SchemataPage> {
               message: _query.isEmpty
                   ? 'Keine Schemata für diese Auswahl.'
                   : 'Kein Schema passt zu „$_query".',
-              onRetry: _load,
+              retryLabel: _query.isNotEmpty ? 'Suche leeren' : 'Neu laden',
+              onRetry: _query.isNotEmpty
+                  ? () {
+                      _search.clear();
+                      setState(() => _query = '');
+                    }
+                  : _load,
             )
           else
             for (final schema in visible)
               Padding(
                 padding: const EdgeInsets.only(bottom: Spacing.md),
-                child: _SchemaTile(schema: schema),
+                child: SchemaTile(schema: schema),
               ),
         ],
       ),
@@ -122,10 +183,11 @@ class _SchemataPageState extends State<SchemataPage> {
   }
 }
 
-class _SchemaTile extends StatelessWidget {
-  const _SchemaTile({required this.schema});
+class SchemaTile extends StatelessWidget {
+  const SchemaTile({required this.schema, this.initiallyExpanded = false, super.key});
 
   final Map<String, dynamic> schema;
+  final bool initiallyExpanded;
 
   @override
   Widget build(BuildContext context) {
@@ -133,9 +195,15 @@ class _SchemaTile extends StatelessWidget {
     final typography = theme.extension<SubsumoTypography>()!;
     final norms = ((schema['norms'] as List?) ?? const []).cast<String>();
     final steps = ((schema['steps'] as List?) ?? const []).cast<Map<String, dynamic>>();
+    // Interner Redaktionsvermerk gehoert nicht in die Nutzeransicht.
+    final quellen = [
+      for (final q in (schema['sources'] as List?) ?? const [])
+        if (!'$q'.contains('Eigenformulierung')) '$q',
+    ];
 
     return Card(
       child: ExpansionTile(
+        initiallyExpanded: initiallyExpanded,
         tilePadding: const EdgeInsets.symmetric(horizontal: Spacing.lg, vertical: Spacing.xs),
         childrenPadding: const EdgeInsets.fromLTRB(Spacing.lg, 0, Spacing.lg, Spacing.lg),
         expandedCrossAxisAlignment: CrossAxisAlignment.start,
@@ -143,24 +211,47 @@ class _SchemaTile extends StatelessWidget {
         // kategorischen Akzenttoene aus SubsumoColors.legalArea* bleiben
         // oeffentlichen Flaechen vorbehalten (docs/25 Abschnitt 3.6).
         leading: Icon(_areaIcon(schema['area'] as String? ?? ''), color: theme.colorScheme.onSurfaceVariant),
-        title: Text(schema['title'] as String, style: typography.headingSmall),
-        subtitle: norms.isEmpty
+        title: FitTitle(schema['title'] as String, style: typography.headingSmall),
+        subtitle: norms.isEmpty && landesLabel(schema['bundesland']) == null
             ? null
             : Padding(
                 padding: const EdgeInsets.only(top: Spacing.xs),
-                child: Text(
-                  norms.join(' · '),
-                  style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+                child: Wrap(
+                  spacing: Spacing.md,
+                  runSpacing: Spacing.xs,
+                  children: [
+                    if (landesLabel(schema['bundesland']) case final land?)
+                      SubsumoChip(label: land, icon: Icons.location_on_outlined),
+                    // Im Kopf nur Text: ein antippbarer Link im Untertitel
+                    // uebernimmt bei genau einer Norm die ganze Kachel (Tippen
+                    // oeffnete den Normtext statt das Schema, Welle 5).
+                    for (final norm in norms)
+                      Text(
+                        kurzeNormBeschriftung(norm),
+                        style: theme.textTheme.bodySmall
+                            ?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+                      ),
+                  ],
                 ),
               ),
         children: [
           const Divider(),
+          if (norms.isNotEmpty) ...[
+            const SizedBox(height: Spacing.sm),
+            Wrap(
+              spacing: Spacing.md,
+              runSpacing: Spacing.xs,
+              children: [for (final norm in norms) NormLink(norm)],
+            ),
+          ],
           const SizedBox(height: Spacing.md),
           ..._buildSteps(context, steps, 0),
           const SizedBox(height: Spacing.lg),
           Text(
-            'Stand: ${schema['stand']}  ·  '
-            'Quellen: ${((schema['sources'] as List?) ?? const []).join('; ')}',
+            [
+              'Stand: ${schema['stand']}',
+              if (quellen.isNotEmpty) 'Quellen: ${quellen.join('; ')}',
+            ].join('  ·  '),
             style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
           ),
         ],
@@ -195,14 +286,14 @@ class _SchemaTile extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      label,
+                      normUmbruchschutz(label),
                       style: depth == 0 ? theme.textTheme.titleSmall : theme.textTheme.bodyMedium,
                     ),
                     if (hinweis != null)
                       Padding(
                         padding: const EdgeInsets.only(top: 2),
                         child: Text(
-                          hinweis,
+                          normUmbruchschutz(hinweis),
                           style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
                         ),
                       ),
@@ -268,4 +359,63 @@ String _roman(int n) {
     }
   }
   return buffer.toString();
+}
+
+/// Einzelnes Schema (aus einer Deck-Seite geoeffnet): laedt die Schemata und
+/// zeigt das mit dem passenden [slug] aufgeklappt.
+class SchemaDetailPage extends StatefulWidget {
+  const SchemaDetailPage({required this.slug, required this.title, super.key});
+
+  final String slug;
+  final String title;
+
+  @override
+  State<SchemaDetailPage> createState() => _SchemaDetailPageState();
+}
+
+class _SchemaDetailPageState extends State<SchemaDetailPage> {
+  Map<String, dynamic>? _schema;
+  bool _loading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _load());
+  }
+
+  Future<void> _load() async {
+    setState(() => _loading = true);
+    try {
+      final all = await AppScope.of(context).api.schemata();
+      for (final s in all) {
+        if (s['slug'] == widget.slug) {
+          if (mounted) setState(() => _schema = s);
+          break;
+        }
+      }
+    } on Exception {
+      // Fehlerzustand unten.
+    } finally {
+      if (mounted) setState(() => _loading = false);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final schema = _schema;
+    return Scaffold(
+      appBar: AppBar(title: Text(widget.title)),
+      body: _loading
+          ? const ScreenStatus.loading()
+          : schema == null
+              ? ScreenStatus.empty(message: 'Schema nicht gefunden.', onRetry: _load)
+              : ReadableWidth(
+                  maxWidth: 860,
+                  child: ListView(
+                    padding: const EdgeInsets.all(Spacing.lg),
+                    children: [SchemaTile(schema: schema, initiallyExpanded: true)],
+                  ),
+                ),
+    );
+  }
 }

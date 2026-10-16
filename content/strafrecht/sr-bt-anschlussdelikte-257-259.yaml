@@ -278,74 +278,71 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
   stand: 2026-09
-  facts: >-
-    A stiehlt dem O ein Rennrad im Wert von 1.500 Euro. Weil er fürchtet, die
+  facts: A stiehlt dem O ein Rennrad im Wert von 1.500 Euro. Weil er fürchtet, die
     Polizei könne sein Zimmer durchsuchen, bittet er seinen Freund C, das Rad ein
     paar Tage in dessen Garage unterzustellen. C weiß von dem Diebstahl und stellt
-    das Rad unter, "damit die Polizei es nicht bei dir findet und du nicht
-    auffliegst". Er will A weder das Rad erhalten noch selbst etwas daran verdienen.
-    Drei Tage später holt A das Rad ab und verkauft es für 300 Euro an B. B ahnt
-    wegen des niedrigen Preises und der fehlenden Papiere, dass das Rad gestohlen
-    sein könnte, nimmt das in Kauf und freut sich über das Schnäppchen. Er nimmt das
-    Rad mit nach Hause. Kurz darauf wird A aufgrund einer Zeugenaussage ohnehin
-    ermittelt und verurteilt; das Rad wird bei B sichergestellt. C ist nicht mit A
-    verwandt.
-  question: Haben sich B und C wegen Anschlussdelikten nach §§ 257, 258, 259 StGB strafbar gemacht?
+    das Rad unter, "damit die Polizei es nicht bei dir findet und du nicht auffliegst".
+    Er will A weder das Rad erhalten noch selbst etwas daran verdienen. Drei Tage
+    später holt A das Rad ab und verkauft es für 300 Euro an B. B ahnt wegen des niedrigen
+    Preises und der fehlenden Papiere, dass das Rad gestohlen sein könnte, nimmt das
+    in Kauf und freut sich über das Schnäppchen. Er nimmt das Rad mit nach Hause.
+    Kurz darauf wird A aufgrund einer Zeugenaussage ohnehin ermittelt und verurteilt;
+    das Rad wird bei B sichergestellt. C ist nicht mit A verwandt.
+  question: Haben sich B und C wegen Anschlussdelikten nach §§ 257, 258, 259 StGB
+    strafbar gemacht?
   steps:
   - prompt: Liegt eine taugliche Vortat vor?
-    erwartung: >-
-      Ja - der Diebstahl des A nach § 242 Abs. 1 StGB ist eine rechtswidrige, gegen
-      fremdes Vermögen gerichtete Tat eines anderen; das Rennrad stammt unmittelbar
+    erwartung: Ja - der Diebstahl des A nach § 242 Abs. 1 StGB ist eine rechtswidrige,
+      gegen fremdes Vermögen gerichtete Tat eines anderen; das Rennrad stammt unmittelbar
       aus ihr, und die rechtswidrige Vermögenslage besteht fort.
   - prompt: Hat B das Rad im Sinne des § 259 Abs. 1 StGB angekauft bzw. sich verschafft?
-    erwartung: >-
-      Ja - B hat durch den Kauf und die Mitnahme eigene Verfügungsgewalt über das
-      Rad im einverständlichen Zusammenwirken mit dem Vortäter A erlangt (derivativer
-      Erwerb).
+    erwartung: Ja - B hat durch den Kauf und die Mitnahme eigene Verfügungsgewalt
+      über das Rad im einverständlichen Zusammenwirken mit dem Vortäter A erlangt
+      (derivativer Erwerb).
   - prompt: Handelte B vorsätzlich und mit Bereicherungsabsicht?
-    erwartung: >-
-      Ja - B hielt es für möglich, dass das Rad gestohlen war, und nahm das billigend
-      in Kauf; bedingter Vorsatz hinsichtlich der Vortat genügt. Er wollte das Rad
-      weit unter Wert erwerben und strebte damit einen Vermögensvorteil an. B ist
-      nach § 259 Abs. 1 StGB strafbar.
-  - prompt: Hat sich C durch das Unterstellen des Rades wegen Begünstigung, § 257 Abs. 1 StGB, strafbar gemacht?
-    erwartung: >-
-      Objektiv hat C dem Vortäter Hilfe geleistet, die geeignet war, ihm das Rad zu
-      erhalten. Es fehlt aber die Vorteilssicherungsabsicht: C ging es nicht darum,
-      dem A den Besitz am Rad zu erhalten, sondern allein darum, A vor Entdeckung zu
-      schützen. Eine Begünstigung scheidet daher aus.
+    erwartung: Ja - B hielt es für möglich, dass das Rad gestohlen war, und nahm das
+      billigend in Kauf; bedingter Vorsatz hinsichtlich der Vortat genügt. Er wollte
+      das Rad weit unter Wert erwerben und strebte damit einen Vermögensvorteil an.
+      B ist nach § 259 Abs. 1 StGB strafbar.
+  - prompt: Hat sich C durch das Unterstellen des Rades wegen Begünstigung, § 257
+      Abs. 1 StGB, strafbar gemacht?
+    erwartung: 'Objektiv hat C dem Vortäter Hilfe geleistet, die geeignet war, ihm
+      das Rad zu erhalten. Es fehlt aber die Vorteilssicherungsabsicht: C ging es
+      nicht darum, dem A den Besitz am Rad zu erhalten, sondern allein darum, A vor
+      Entdeckung zu schützen. Eine Begünstigung scheidet daher aus.'
   - prompt: Hat sich C wegen Strafvereitelung, § 258 Abs. 1 StGB, strafbar gemacht?
-    erwartung: >-
-      C wollte gerade verhindern, dass A überführt und bestraft wird, und handelte
-      insoweit absichtlich. Ein Vereitelungserfolg ist aber nicht eingetreten: A
-      wurde aufgrund einer Zeugenaussage ohne nennenswerte Verzögerung ermittelt und
-      verurteilt. Da § 258 StGB Erfolgsdelikt ist, liegt nur ein Versuch vor, der
-      nach § 258 Abs. 4 StGB strafbar ist. C hat unmittelbar zur Vereitelung
-      angesetzt, indem er das Rad versteckte. Das Angehörigenprivileg des § 258
-      Abs. 6 StGB greift nicht.
+    erwartung: 'C wollte gerade verhindern, dass A überführt und bestraft wird, und
+      handelte insoweit absichtlich. Ein Vereitelungserfolg ist aber nicht eingetreten:
+      A wurde aufgrund einer Zeugenaussage ohne nennenswerte Verzögerung ermittelt
+      und verurteilt. Da § 258 StGB Erfolgsdelikt ist, liegt nur ein Versuch vor,
+      der nach § 258 Abs. 4 StGB strafbar ist. C hat unmittelbar zur Vereitelung angesetzt,
+      indem er das Rad versteckte. Das Angehörigenprivileg des § 258 Abs. 6 StGB greift
+      nicht.'
   - prompt: Hat sich C wegen Hehlerei strafbar gemacht?
-    erwartung: >-
-      Nein - C hat sich das Rad nicht verschafft, weil er es nur für A verwahrte, ohne
-      eigene Verfügungsgewalt zu eigenen Zwecken zu erlangen; auch fehlt ihm jede
-      Bereicherungsabsicht.
+    erwartung: Nein - C hat sich das Rad nicht verschafft, weil er es nur für A verwahrte,
+      ohne eigene Verfügungsgewalt zu eigenen Zwecken zu erlangen; auch fehlt ihm
+      jede Bereicherungsabsicht.
   expectation:
     pruefpunkte:
     - id: p1
-      label: Taugliche Vortat (rechtswidriger Diebstahl eines anderen, unmittelbar erlangte Sache) festgestellt
+      label: Taugliche Vortat (rechtswidriger Diebstahl eines anderen, unmittelbar
+        erlangte Sache) festgestellt
       weight: 1.0
       required: true
       norms:
       - § 242 Abs. 1 StGB
       - § 259 Abs. 1 StGB
       keywords:
-      - Vortat
-      - rechtswidrige Tat
-      - unmittelbar
+      - taugliche Vortat
+      - rechtswidrige Vortat
+      - Vortat eines anderen
+      - unmittelbar aus der Vortat
       card_slugs:
       - sr-hehlerei-259-tatbestand-vortat
       - sr-anschluss-ueberblick-rechtsgueter
     - id: p2
-      label: Sichverschaffen bzw. Ankaufen durch B mit einverständlichem Zusammenwirken bejaht
+      label: Sichverschaffen bzw. Ankaufen durch B mit einverständlichem Zusammenwirken
+        bejaht
       weight: 2.0
       required: true
       norms:
@@ -357,7 +354,8 @@ faelle:
       card_slugs:
       - sr-hehlerei-sichverschaffen
     - id: p3
-      label: Bedingter Vorsatz hinsichtlich der Vortat und Bereicherungsabsicht des B bejaht
+      label: Bedingter Vorsatz hinsichtlich der Vortat und Bereicherungsabsicht des
+        B bejaht
       weight: 1.5
       required: true
       norms:
@@ -381,17 +379,18 @@ faelle:
       - sr-beguenstigung-257-tatbestand
       - sr-strafvereitelung-abgrenzung-beguenstigung
     - id: p5
-      label: Strafvereitelung des C als Erfolgsdelikt erkannt, mangels Vereitelungserfolg nur Versuch nach § 258 Abs. 4 StGB
+      label: Strafvereitelung des C als Erfolgsdelikt erkannt, mangels Vereitelungserfolg
+        nur Versuch nach § 258 Abs. 4 StGB
       weight: 2.5
       required: true
       norms:
       - § 258 Abs. 1 StGB
       - § 258 Abs. 4 StGB
       keywords:
-      - Strafvereitelung
-      - Versuch
-      - Erfolgsdelikt
+      - Strafvereitelung als Erfolgsdelikt
+      - Vereitelungsvorsatz
       - geraume Zeit
+      - Vereitelung
       card_slugs:
       - sr-strafvereitelung-258-tatbestand
     - id: p6
@@ -401,8 +400,8 @@ faelle:
       norms:
       - § 258 Abs. 6 StGB
       keywords:
-      - Angehörige
-      - Abs. 6
+      - Angehörigenprivileg
+      - § 258 Abs. 6
       card_slugs:
       - sr-strafvereitelung-258-tatbestand
     - id: p7

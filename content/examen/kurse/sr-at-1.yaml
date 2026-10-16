@@ -4,18 +4,18 @@ kurs:
   area: strafrecht
   semester_default: 1
   examenskurs: false
-  stand: 2026-09
+  stand: 2026-10
   quellen:
-  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Aufbau des vollendeten Vorsatzdelikts, Kausalitaet und objektive Zurechnung, Vorsatz und
-    Irrtuemer, Notwehr und Notstand.
+  beschreibung: 'Allgemeiner Teil I: Deliktsaufbau, Vorsatzformen und Fahrlässigkeit, Kausalität und objektive Zurechnung,
+    Irrtümer, Rechtfertigungsgründe (Notwehr, Notstand, Einwilligung und sonstige Gründe) und Schuld.'
   lernziele:
   - Dreistufigen Deliktsaufbau sicher im Gutachtenstil schreiben
   - Tatbestands- und Verbotsirrtum (§§ 16, 17 StGB) voneinander abgrenzen
-  - Rechtfertigungsgruende mit Notwehrlage und Notwehrhandlung pruefen
+  - Rechtfertigungsgründe mit Notwehrlage und Notwehrhandlung prüfen
   klausurformat:
-    typ: Anfaengerklausur
+    typ: Anfängerklausur
     minuten: 120
   topic_slugs:
   - sr-at
@@ -24,5 +24,10 @@ kurs:
   - sr-at-verbotsirrtum-17
   - sr-notwehr-32
   - sr-notstand-34
+  - sr-at-schuld-20-35
+  - sr-at-rechtfertigende-einwilligung
+  - sr-at-erlaubnistatbestandsirrtum
+  - sr-at-rechtfertigung-sonstige
+  - sr-at-vorsatz-fahrlaessigkeit-formen
   landesrecht_kategorien: []
   fehlende_themen: []

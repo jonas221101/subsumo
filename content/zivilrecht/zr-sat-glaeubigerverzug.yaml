@@ -1,0 +1,345 @@
+topic:
+  slug: zr-sat-glaeubigerverzug
+  area: zivilrecht
+  title: Gläubigerverzug (Annahmeverzug), §§ 293 ff. BGB
+  parent: zr-bgb-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-gv-293-begriff
+  type: definition
+  front: >-
+    Definiere: Gläubigerverzug (Annahmeverzug) nach § 293 BGB.
+  back: >-
+    Der Gläubiger kommt in Verzug, wenn er die ihm angebotene Leistung nicht annimmt
+    (§ 293 BGB). Gläubigerverzug ist anders als der Schuldnerverzug (§ 286 BGB) kein
+    Pflichtverstoß, sondern verletzt nur eine Obliegenheit des Gläubigers, die Leistung
+    entgegenzunehmen und die dafür erforderliche Mitwirkung zu leisten; er setzt daher
+    kein Verschulden des Gläubigers voraus. Voraussetzungen sind (1) ein erfüllbarer
+    Anspruch des Schuldners, (2) ein ordnungsgemäßes Angebot der Leistung (§§ 294
+    bis 296 BGB), (3) Leistungsfähigkeit und Leistungsbereitschaft des Schuldners
+    (§ 297 BGB) und (4) die Nichtannahme der Leistung bzw. das Unterlassen der erforderlichen
+    Mitwirkungshandlung. Verzug des Gläubigers kann auch bei einer Pflicht zur Abnahme
+    (etwa § 433 Abs. 2 BGB) zugleich Schuldnerverzug des Gläubigers sein.
+  norms:
+  - § 293 BGB
+  - § 286 BGB
+  - § 297 BGB
+  - § 433 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-gv-294-296-angebot
+  type: norm
+  front: >-
+    Welche Arten des Leistungsangebots unterscheidet das Gesetz in §§ 294 bis 296
+    BGB?
+  back: >-
+    Die Leistung muss dem Gläubiger nach § 294 BGB so angeboten werden, wie sie zu
+    bewirken ist (tatsächliches Angebot): am rechten Ort, zur rechten Zeit und in
+    der rechten Art und Weise. Ein wörtliches Angebot genügt nach § 295 S. 1 BGB,
+    wenn der Gläubiger dem Schuldner erklärt hat, er werde die Leistung nicht annehmen,
+    oder wenn zur Bewirkung der Leistung eine Handlung des Gläubigers erforderlich
+    ist, insbesondere wenn der Gläubiger die geschuldete Sache abzuholen hat; dem
+    Angebot steht die Aufforderung an den Gläubiger gleich, die erforderliche Handlung
+    vorzunehmen (§ 295 S. 2 BGB). Ist für die Handlung des Gläubigers eine Zeit nach
+    dem Kalender bestimmt, bedarf es des Angebots nicht, wenn der Gläubiger die Handlung
+    nicht rechtzeitig vornimmt (§ 296 S. 1 BGB). Ein Verzug scheidet nach § 297 BGB
+    aus, wenn der Schuldner zur Zeit des Angebots nicht leistungsfähig ist.
+  norms:
+  - § 294 BGB
+  - § 295 BGB
+  - § 296 BGB
+  - § 297 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-gv-299-voruebergehende-verhinderung
+  type: norm
+  front: >-
+    Was gilt bei vorübergehender Annahmeverhinderung des Gläubigers, § 299 BGB?
+  back: >-
+    Ist die Leistungszeit nicht bestimmt oder darf der Schuldner vor der bestimmten
+    Zeit leisten, so wird der Gläubiger nicht dadurch in Verzug gesetzt, dass er vorübergehend
+    an der Annahme der angebotenen Leistung verhindert ist (§ 299 BGB). Der Schuldner kann dann zwar jederzeit leisten, der
+    Gläubiger braucht aber nicht jederzeit bereit zu sein. Etwas anderes gilt nur, wenn der Schuldner die Leistung einige Zeit
+    vorher angekündigt hat. Praktisch betrifft dies Fälle, in denen der Gläubiger
+    kurzzeitig nicht angetroffen wird, ohne dass die Leistungszeit bindend vereinbart
+    war. Bei fester Leistungszeit tritt Annahmeverzug
+    dagegen auch bei kurzer Abwesenheit des Gläubigers ein.
+  norms:
+  - § 299 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-gv-300-haftungsmilderung
+  type: norm
+  front: >-
+    Welche Rechtsfolgen ordnen §§ 300 bis 304 BGB für den Annahmeverzug an?
+  back: >-
+    Der Schuldner hat während des Annahmeverzugs nur Vorsatz und grobe Fahrlässigkeit
+    zu vertreten (§ 300 Abs. 1 BGB). Bei einer Gattungsschuld geht die Gefahr mit
+    dem Zeitpunkt auf den Gläubiger über, in dem er dadurch in Verzug kommt, dass
+    er die angebotene Sache nicht annimmt (§ 300 Abs. 2 BGB): Die Leistungsgefahr
+    geht über, der Schuldner wird nach § 275 Abs. 1 BGB frei, wenn die Sache untergeht.
+    Eine verzinsliche Schuld wird nicht mehr verzinst (§ 301 BGB), und der Schuldner
+    braucht gezogene Nutzungen nur nach den Regeln der tatsächlichen Nutzung herauszugeben
+    (§ 302 BGB). Der Schuldner kann Ersatz der Mehraufwendungen für das erfolglose
+    Angebot und die Aufbewahrung des geschuldeten Gegenstands verlangen (§ 304 BGB).
+    Ein Schadensersatzanspruch wegen Verzugs folgt aus dem Annahmeverzug dagegen
+    nicht, weil der Gläubiger nur eine Obliegenheit verletzt.
+  norms:
+  - § 300 BGB
+  - § 301 BGB
+  - § 302 BGB
+  - § 304 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-gv-326-abs2-gegenleistung
+  type: norm
+  front: >-
+    Wie wirkt sich der Annahmeverzug auf den Gegenleistungsanspruch des Schuldners
+    aus, § 326 Abs. 2 BGB?
+  back: >-
+    Wird der Schuldner nach § 275 Abs. 1 bis 3 BGB von seiner Leistungspflicht frei,
+    entfällt nach § 326 Abs. 1 S. 1 BGB grundsätzlich der Anspruch auf die Gegenleistung.
+    Eine Ausnahme enthält § 326 Abs. 2 S. 1 BGB: Der Anspruch bleibt bestehen, wenn
+    der Gläubiger für den Umstand, auf Grund dessen der Schuldner nicht zu leisten
+    braucht, allein oder weit überwiegend verantwortlich ist, oder wenn der vom Schuldner
+    nicht zu vertretende Umstand zu einer Zeit eintritt, zu welcher der Gläubiger
+    im Verzug der Annahme ist. Der Schuldner muss sich jedoch ersparte Aufwendungen
+    und anderweitigen Erwerb anrechnen lassen (§ 326 Abs. 2 S. 2 BGB). Damit trägt
+    der Gläubiger im Annahmeverzug die Preisgefahr. Auch das Rücktrittsrecht des Gläubigers
+    ist ausgeschlossen, wenn er für den Umstand allein oder weit überwiegend verantwortlich
+    ist oder im Annahmeverzug war (§ 323 Abs. 6 BGB).
+  norms:
+  - § 326 Abs. 1 BGB
+  - § 326 Abs. 2 BGB
+  - § 323 Abs. 6 BGB
+  - § 275 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-gv-kauf-446-annahmeverzug
+  type: norm
+  front: >-
+    Welche Bedeutung hat der Annahmeverzug des Käufers im Kaufrecht, § 446 S. 3 BGB?
+  back: >-
+    Nach § 446 S. 1 BGB geht mit der Übergabe der verkauften Sache die Gefahr des
+    zufälligen Untergangs und der zufälligen Verschlechterung auf den Käufer über,
+    und ihm gebühren die Nutzungen und tragen ihn die Lasten. Der Übergabe steht es
+    nach § 446 S. 3 BGB gleich, wenn der Käufer im Verzug der Annahme ist. Damit trägt
+    der Käufer bei Annahmeverzug die Preisgefahr: Geht die Sache zufällig unter, muss
+    er den Kaufpreis zahlen (§ 326 Abs. 2 S. 1 Alt. 2 BGB). Der Verkäufer kann außerdem
+    Ersatz seiner Mehraufwendungen nach § 304 BGB verlangen. Ferner trifft den Käufer
+    nach § 433 Abs. 2 BGB eine echte Pflicht zur Abnahme der Kaufsache; bei Nichtabnahme
+    ist er also Schuldner, und der Verkäufer kann nach §§ 280, 281 BGB Schadensersatz
+    verlangen oder vom Vertrag zurücktreten (§ 323 BGB), sofern der Käufer die Abnahme
+    pflichtwidrig unterlässt.
+  norms:
+  - § 446 S. 3 BGB
+  - § 433 Abs. 2 BGB
+  - § 326 Abs. 2 BGB
+  - § 304 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-gv-selbsthilfe-hinterlegung
+  type: norm
+  front: >-
+    Welche Möglichkeiten hat der Schuldner im Annahmeverzug, sich von der Leistungspflicht
+    zu lösen?
+  back: >-
+    Der Schuldner kann sich im Annahmeverzug durch Hinterlegung befreien, wenn die
+    Sache hinterlegungsfähig ist (§§ 372, 378 BGB). Bei nicht hinterlegungsfähigen
+    Sachen kommt der Selbsthilfeverkauf durch öffentliche Versteigerung in Betracht
+    (§ 383 BGB); in bestimmten Fällen darf er freihändig verkaufen (§ 385 BGB). Der
+    Erlös wird anstelle der Sache hinterlegt. Der Schuldner muss den Verkauf dem Gläubiger
+    vorher androhen (§ 384 Abs. 1 BGB). Beim Handelskauf bestehen Sonderregeln in
+    § 373 HGB. Beim Annahmeverzug des Arbeitgebers
+    gilt § 615 BGB.
+  norms:
+  - § 372 BGB
+  - § 383 BGB
+  - § 384 BGB
+  - § 385 BGB
+  - § 615 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-gv-abgrenzung-schuldnerverzug
+  type: streitstand
+  front: >-
+    Grenze Gläubigerverzug und Schuldnerverzug des Gläubigers ab. Ist die Annahme
+    Pflicht oder Obliegenheit?
+  back: >-
+    Grundsätzlich ist die Annahme der Leistung nur eine Obliegenheit: Der Gläubiger
+    verletzt damit keine Pflicht, und der Schuldner kann die Annahme nicht erzwingen,
+    sondern ist auf die Rechtsfolgen der §§ 293 ff. BGB beschränkt (Haftungsmilderung,
+    Gefahrübergang, Aufwendungsersatz). Eine echte Annahmepflicht besteht dagegen
+    dort, wo das Gesetz oder der Vertrag sie anordnet, etwa bei der Abnahmepflicht
+    des Käufers (§ 433 Abs. 2 BGB) und des Bestellers (§ 640 Abs. 1 BGB). Dann kann
+    der Gläubiger zugleich in Schuldnerverzug mit der Abnahme geraten (§§ 280 Abs.
+    1, 2, 286 BGB) und Schadensersatz schulden. Der Gläubigerverzug setzt kein Verschulden
+    voraus, der Schuldnerverzug dagegen Mahnung bzw. Entbehrlichkeit und Vertretenmüssen
+    (§ 286 BGB). Beide Verzugsarten können gleichzeitig vorliegen.
+  norms:
+  - § 293 BGB
+  - § 433 Abs. 2 BGB
+  - § 640 BGB
+  - § 286 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-gv-annahmeverzug
+  title: Gläubigerverzug und seine Rechtsfolgen, §§ 293 ff. BGB
+  norms:
+  - § 293 BGB
+  - § 294 BGB
+  - § 300 BGB
+  - § 326 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Erfüllbarer Anspruch des Schuldners
+  - label: II. Angebot der Leistung
+    children:
+    - label: 1. Tatsächliches Angebot, § 294 BGB
+    - label: 2. Wörtliches Angebot, § 295 BGB
+      hinweis: Erforderlich bei Annahmeverweigerung oder wenn eine Mitwirkungshandlung
+        (Abholung) nötig ist.
+    - label: 3. Entbehrlichkeit des Angebots, § 296 BGB
+  - label: III. Leistungsfähigkeit und Leistungsbereitschaft des Schuldners, § 297
+      BGB
+  - label: IV. Nichtannahme oder fehlende Mitwirkung des Gläubigers
+    hinweis: Vorübergehende Verhinderung bei unbestimmter Leistungszeit nach § 299
+      BGB beachten.
+  - label: V. Rechtsfolgen
+    children:
+    - label: 1. Haftungsmilderung auf Vorsatz und grobe Fahrlässigkeit, § 300 Abs.
+        1 BGB
+    - label: 2. Gefahrübergang bei Gattungsschuld, § 300 Abs. 2 BGB; beim Kauf § 446
+        S. 3 BGB
+    - label: 3. Gegenleistungsanspruch bleibt, § 326 Abs. 2 S. 1 Alt. 2 BGB (Preisgefahr)
+    - label: 4. Mehraufwendungsersatz, § 304 BGB; Hinterlegung, §§ 372 ff., Selbsthilfeverkauf,
+        § 383 BGB
+faelle:
+- slug: zr-fall-gv-holzpellets
+  title: Die abgelehnte Pelletlieferung
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Privatmann K kauft von Händler V fünf Tonnen Holzpellets zum Preis von 1.500 Euro;
+    V hat sie an K zu liefern. Als Liefertermin wird Mittwoch zwischen 8 und 12 Uhr
+    vereinbart. Am Mittwoch um 10 Uhr kommt V mit einem Lastwagen und den fünf Tonnen
+    Pellets bei K an. K verweigert die Annahme, weil er inzwischen ein günstigeres
+    Angebot gefunden habe und das Heizen im Sommer ohnehin nicht dringend sei. V fährt
+    die Pellets zurück zu seinem Lager. In der Nacht schlägt ein Blitz in die Lagerhalle
+    und zerstört sämtliche Pellets, auch diese fünf Tonnen. Ein Verschulden des V
+    liegt nicht vor. V verlangt von K Zahlung des Kaufpreises von 1.500 Euro. Ersparte
+    Aufwendungen oder anderweitige Verwendung der Pellets sind nicht ersichtlich.
+  question: >-
+    Kann V von K Zahlung der 1.500 Euro verlangen?
+  steps:
+  - prompt: Welche Anspruchsgrundlage kommt in Betracht und wie wirkt sich die Zerstörung
+      der Pellets aus?
+    erwartung: >-
+      Anspruch auf Kaufpreiszahlung aus § 433 Abs. 2 BGB. Durch die Zerstörung der
+      Pellets wird V nach § 275 Abs. 1 BGB von seiner Leistungspflicht frei, soweit
+      die Gattungsschuld nicht mehr erfüllbar ist (hier: nur wenn die Gattungsschuld
+      beschränkt oder konkretisiert ist). Nach § 326 Abs. 1 S. 1 BGB würde der Kaufpreisanspruch
+      grundsätzlich wegfallen.
+  - prompt: Befand sich K im Annahmeverzug?
+    erwartung: >-
+      Ja. V hat die Pellets zur vereinbarten Zeit am Erfüllungsort tatsächlich angeboten
+      (§ 294 BGB), V war leistungsfähig und leistungsbereit (§ 297 BGB), K hat die
+      Annahme verweigert (§ 293 BGB). § 299 BGB greift nicht, weil die Leistungszeit
+      bestimmt war.
+  - prompt: Was bewirkt der Annahmeverzug für die Leistungsgefahr?
+    erwartung: >-
+      Mit dem Annahmeverzug geht die Leistungsgefahr auf K über (§ 300 Abs. 2 BGB;
+      auch Konkretisierung nach § 243 Abs. 2 BGB durch das tatsächliche Angebot).
+      V ist nach § 275 Abs. 1 BGB frei. Zudem haftet V im Annahmeverzug nur für Vorsatz
+      und grobe Fahrlässigkeit (§ 300 Abs. 1 BGB), die nicht vorliegen.
+  - prompt: Bleibt der Kaufpreisanspruch bestehen?
+    erwartung: >-
+      Ja. Der vom Schuldner nicht zu vertretende Umstand (Blitzschlag) tritt zu einer
+      Zeit ein, zu der K im Annahmeverzug ist, sodass der Gegenleistungsanspruch
+      nach § 326 Abs. 2 S. 1 Alt. 2 BGB bestehen bleibt. Ersparte Aufwendungen sind
+      nach § 326 Abs. 2 S. 2 BGB anzurechnen, hier aber nicht ersichtlich. Auch § 446
+      S. 3 BGB ordnet den Gefahrübergang an.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Anspruch aus § 433 Abs. 2 BGB mit Wegfall der Leistungspflicht nach §
+        275 Abs. 1 BGB und grundsätzlichem Wegfall der Gegenleistung nach § 326 Abs. 1 S. 1 BGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 433 Abs. 2 BGB
+      - § 275 Abs. 1 BGB
+      - § 326 Abs. 1 BGB
+      keywords:
+      - § 433 Abs. 2
+      - § 275 Abs. 1
+      - § 326 Abs. 1
+      - Kaufpreisanspruch
+      - Unmöglichkeit
+    - id: p2
+      label: Annahmeverzug des K mit tatsächlichem Angebot, Leistungsfähigkeit und
+        Nichtannahme
+      weight: 3.0
+      required: true
+      norms:
+      - § 293 BGB
+      - § 294 BGB
+      keywords:
+      - Annahmeverzug
+      - Gläubigerverzug
+      - § 293
+      - tatsächliches Angebot
+      - § 294
+      card_slugs:
+      - zr-gv-293-begriff
+      - zr-gv-294-296-angebot
+    - id: p3
+      label: Gefahrübergang bzw. Konkretisierung und Haftungsmilderung nach § 300 BGB
+      weight: 2.0
+      required: false
+      norms:
+      - § 300 BGB
+      - § 243 Abs. 2 BGB
+      keywords:
+      - § 300 Abs. 2
+      - Gefahrübergang
+      - Leistungsgefahr
+      - Konkretisierung
+      - grobe Fahrlässigkeit
+      card_slugs:
+      - zr-gv-300-haftungsmilderung
+    - id: p4
+      label: Fortbestehen des Kaufpreisanspruchs nach § 326 Abs. 2 S. 1 Alt. 2 BGB
+        (Preisgefahr) mit Anrechnung nach S. 2
+      weight: 3.0
+      required: true
+      norms:
+      - § 326 Abs. 2 BGB
+      keywords:
+      - § 326 Abs. 2
+      - Preisgefahr
+      - Gegenleistungsanspruch bleibt bestehen
+      - im Verzug der Annahme
+      - ersparte Aufwendungen
+      card_slugs:
+      - zr-gv-326-abs2-gegenleistung
+      - zr-gv-kauf-446-annahmeverzug

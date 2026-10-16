@@ -126,7 +126,7 @@ def enforce_case_access(db: Session, user: User, case: Case) -> None:
     if used >= FREE_CASES:
         _upgrade_required(
             "free_case_limit_reached",
-            f"Ab dem {FREE_CASES + 1}. Fall nur mit Pro verfuegbar.",
+            f"Ab dem {FREE_CASES + 1}. Fall nur mit Pro verfügbar.",
         )
     db.add(CaseAccess(user_id=user.id, case_id=case.id))
     db.commit()

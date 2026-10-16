@@ -1,0 +1,397 @@
+topic:
+  slug: zr-sat-verbraucherwiderruf
+  area: zivilrecht
+  title: Verbraucherwiderruf bei Fernabsatz- und Außergeschäftsraumverträgen, §§ 312 ff., 355 ff. BGB
+  parent: zr-bgb-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-widr-312-anwendungsbereich
+  type: norm
+  front: >-
+    Wann sind die Vorschriften über Verbraucherverträge (§ 312 BGB) anwendbar?
+  back: >-
+    Die Vorschriften der §§ 312 ff. BGB gelten nach § 312 Abs. 1 BGB für Verbraucherverträge,
+    bei denen sich der Verbraucher zur Zahlung eines Preises verpflichtet. Verbraucher
+    ist nach § 13 BGB jede natürliche Person, die ein Rechtsgeschäft zu Zwecken abschließt,
+    die überwiegend weder ihrer gewerblichen noch ihrer selbständigen beruflichen
+    Tätigkeit zugerechnet werden können; Unternehmer ist nach § 14 BGB, wer bei Abschluss
+    in Ausübung seiner gewerblichen oder selbständigen beruflichen Tätigkeit handelt.
+    Seit der Neufassung gelten die Vorschriften auch für Verträge über digitale Produkte,
+    bei denen der Verbraucher personenbezogene Daten bereitstellt (§ 312 Abs. 1a BGB).
+    § 312 Abs. 2 BGB nimmt bestimmte Verträge ganz oder teilweise aus, etwa notariell
+    beurkundete Verträge (Nr. 1), Verträge über Grundstücke (Nr. 2) oder die Vermietung von Wohnraum
+    (Nr. 5); für Pauschalreiseverträge (§ 312 Abs. 6 BGB) und Versicherungsverträge (§ 312 Abs. 4
+    BGB) gelten nur einzelne Vorschriften, für Finanzdienstleistungen teilweise eigene Regeln.
+  norms:
+  - § 312 Abs. 1 BGB
+  - § 13 BGB
+  - § 14 BGB
+  - § 312 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-widr-312b-ausserhalb
+  type: definition
+  front: >-
+    Definiere: außerhalb von Geschäftsräumen geschlossene Verträge, § 312b BGB.
+  back: >-
+    Außerhalb von Geschäftsräumen geschlossen ist ein Vertrag nach § 312b Abs. 1 BGB,
+    wenn er bei gleichzeitiger körperlicher Anwesenheit des Verbrauchers und des Unternehmers
+    an einem Ort geschlossen wird, der kein Geschäftsraum des Unternehmers ist (Nr.
+    1, etwa Haustürgeschäft). Ihm gleich stehen Verträge, bei denen der Verbraucher
+    außerhalb der Geschäftsräume ein Angebot abgegeben hat (Nr. 2), die Verträge,
+    die unmittelbar nach persönlichem und individuellem Ansprechen des Verbrauchers
+    außerhalb der Geschäftsräume in den Geschäftsräumen oder per Fernkommunikationsmittel
+    geschlossen werden (Nr. 3), und
+    Verträge auf einem vom Unternehmer organisierten Ausflug (Nr. 4). Typische Beispiele
+    sind Vertragsabschlüsse an der Haustür, auf der Straße oder bei Kaffeefahrten.
+    Maßgeblich ist der Schutz vor Überrumpelung. Die Widerrufsbefugnis folgt aus §
+    312g Abs. 1 BGB.
+  norms:
+  - § 312b Abs. 1 BGB
+  - § 312g Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-widr-312c-fernabsatz
+  type: definition
+  front: >-
+    Definiere: Fernabsatzvertrag nach § 312c BGB.
+  back: >-
+    Fernabsatzverträge sind Verträge, bei denen der Unternehmer oder eine in seinem
+    Namen oder Auftrag handelnde Person und der Verbraucher für die Vertragsverhandlungen
+    und den Vertragsschluss ausschließlich Fernkommunikationsmittel verwenden, es
+    sei denn, der Vertragsschluss erfolgt nicht im Rahmen eines für den Fernabsatz
+    organisierten Vertriebs- oder Dienstleistungssystems (§ 312c Abs. 1 BGB). Fernkommunikationsmittel
+    sind alle Kommunikationsmittel, die ohne gleichzeitige körperliche Anwesenheit
+    der Vertragsparteien eingesetzt werden können, etwa Briefe, E-Mails, Telefon,
+    Internetseiten und Messenger (§ 312c Abs. 2 BGB). Der Unternehmer kommt Informationspflichten
+    nach § 312d BGB in Verbindung mit Art. 246a EGBGB nach. Bei Verträgen im elektronischen
+    Geschäftsverkehr gelten zusätzlich die Pflichten des § 312i BGB und für entgeltliche
+    Verträge die Button-Lösung des § 312j BGB.
+  norms:
+  - § 312c Abs. 1 BGB
+  - § 312c Abs. 2 BGB
+  - § 312d BGB
+  - § 312i BGB
+  - § 312j BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-widr-312g-ausnahmen
+  type: norm
+  front: >-
+    Wann besteht das Widerrufsrecht nach § 312g BGB nicht?
+  back: >-
+    Bei außerhalb von Geschäftsräumen geschlossenen Verträgen und bei Fernabsatzverträgen
+    steht dem Verbraucher ein Widerrufsrecht nach § 355 BGB zu (§ 312g Abs. 1 BGB).
+    Es besteht jedoch nach § 312g Abs. 2 S. 1 BGB nicht bei bestimmten Verträgen, insbesondere
+    über die Lieferung von Waren, die nicht vorgefertigt sind und für deren Herstellung
+    eine individuelle Auswahl oder Bestimmung durch den Verbraucher maßgeblich ist
+    oder die eindeutig auf die persönlichen Bedürfnisse zugeschnitten sind (Maßanfertigung),
+    über schnell verderbliche Waren, über versiegelte Waren, die aus Gründen des Gesundheitsschutzes
+    oder der Hygiene nicht zur Rückgabe geeignet sind, wenn die Versiegelung nach
+    der Lieferung entfernt wurde, sowie über die Lieferung versiegelter Audio- oder
+    Videoaufzeichnungen nach Entsiegelung. Die Ausnahmen sind eng auszulegen und vom
+    Unternehmer zu beweisen. Eine Anwendung auf Verbraucherdarlehen und Fernabsatzverträge
+    über Finanzdienstleistungen richtet sich nach den dortigen Sondervorschriften.
+  norms:
+  - § 312g Abs. 1 BGB
+  - § 312g Abs. 2 BGB
+  - § 355 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-widr-355-erklaerung-frist
+  type: norm
+  front: >-
+    Wie wird der Widerruf nach § 355 BGB erklärt und wie lange ist die Widerrufsfrist?
+  back: >-
+    Der Verbraucher übt sein Widerrufsrecht durch Erklärung gegenüber dem Unternehmer
+    aus (§ 355 Abs. 1 S. 2 BGB). Aus der Erklärung muss der Entschluss des Verbrauchers
+    zum Widerruf eindeutig hervorgehen; eine Begründung ist nicht erforderlich. Die
+    Erklärung ist formfrei, die Rücksendung der Ware allein genügt nicht. Zur Fristwahrung
+    reicht die rechtzeitige Absendung (§ 355 Abs. 1 S. 5 BGB). Die Widerrufsfrist
+    beträgt 14 Tage (§ 355 Abs. 2 S. 1 BGB) und beginnt bei Fernabsatz- und Außergeschäftsraumverträgen
+    über Waren grundsätzlich nicht vor Erhalt der Ware, bei mehreren getrennt gelieferten Waren
+    einer einheitlichen Bestellung erst mit Erhalt der letzten Ware (§ 356 Abs. 2 Nr. 1 BGB),
+    bei Dienstleistungsverträgen mit Vertragsschluss (§ 355 Abs. 2 S. 2 BGB).
+    Sie beginnt außerdem nicht, bevor der Unternehmer den Verbraucher ordnungsgemäß
+    über das Widerrufsrecht unterrichtet hat (§ 356 Abs. 3 S. 1 BGB).
+  norms:
+  - § 355 Abs. 1 BGB
+  - § 355 Abs. 2 BGB
+  - § 356 Abs. 2 BGB
+  - § 356 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-widr-356-belehrung-erloeschen
+  type: norm
+  front: >-
+    Welche Bedeutung hat die Widerrufsbelehrung und wann erlischt das Widerrufsrecht,
+    § 356 BGB?
+  back: >-
+    Die Belehrung erfolgt nach Art. 246a § 1 Abs. 2 S. 1 Nr. 1 EGBGB und kann mit
+    dem Muster der Anlage 1 zu Art. 246a § 1 Abs. 2 S. 2 EGBGB erteilt werden, dessen
+    ordnungsgemäße Verwendung die gesetzlichen Anforderungen erfüllt. Unterbleibt
+    die Unterrichtung, beginnt die Widerrufsfrist nicht zu laufen; das Widerrufsrecht
+    erlischt dann spätestens zwölf Monate und 14 Tage nach dem maßgeblichen Zeitpunkt
+    des Fristbeginns (§ 356 Abs. 4 S. 1 BGB). Unabhängig davon erlischt es bei entgeltlichen
+    Dienstleistungsverträgen, wenn der Unternehmer die Dienstleistung vollständig erbracht hat
+    und der Verbraucher zuvor ausdrücklich zugestimmt und bestätigt hat, dass er sein Widerrufsrecht
+    bei vollständiger Vertragserfüllung verliert (§ 356 Abs. 5 Nr. 2 BGB). Wird die Belehrung
+    nachträglich ordnungsgemäß erteilt, beginnt die Frist erst mit der Nachholung
+    zu laufen.
+  norms:
+  - § 356 Abs. 3 BGB
+  - § 356 Abs. 4 BGB
+  - § 356 Abs. 5 BGB
+  - Art. 246a § 1 Abs. 2 EGBGB
+  quellen:
+  - BGB, amtliche Fassung
+  - EGBGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-widr-357-rechtsfolgen
+  type: norm
+  front: >-
+    Welche Rechtsfolgen hat der wirksame Widerruf nach §§ 355, 357 BGB?
+  back: >-
+    Mit dem Widerruf sind die Parteien nicht mehr an ihre auf den Vertragsschluss
+    gerichteten Willenserklärungen gebunden (§ 355 Abs. 1 S. 1 BGB); das Schuldverhältnis
+    wird in ein Rückgewährschuldverhältnis umgewandelt. Die empfangenen Leistungen
+    sind unverzüglich (§ 355 Abs. 3 S. 1 BGB), spätestens nach 14 Tagen (§ 357 Abs. 1 BGB) zurückzugewähren.
+    Der Unternehmer muss die erhaltenen Zahlungen, einschließlich der Standardlieferkosten,
+    erstatten und darf beim Verbrauchsgüterkauf die Rückzahlung bis zum Erhalt der Ware oder bis zum Nachweis
+    der Absendung verweigern (§ 357 Abs. 2, 4 BGB). Der Verbraucher muss die Ware zurücksenden; die unmittelbaren
+    Kosten der Rücksendung trägt er, wenn er hierüber unterrichtet wurde (§ 357 Abs. 5 BGB). Für einen
+    Wertverlust der Ware hat er nur Wertersatz zu leisten, wenn der Wertverlust auf
+    einen Umgang zurückzuführen ist, der zur Prüfung der Beschaffenheit, Eigenschaften
+    und Funktionsweise nicht notwendig war, und er über das Widerrufsrecht unterrichtet wurde
+    (§ 357a Abs. 1 BGB). Weitere Ansprüche sind nach
+    § 361 BGB grundsätzlich ausgeschlossen.
+  norms:
+  - § 355 Abs. 1 BGB
+  - § 357 BGB
+  - § 357a BGB
+  - § 361 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-widr-358-verbundene-vertraege
+  type: norm
+  front: >-
+    Was gilt bei verbundenen Verträgen nach §§ 358, 359 BGB?
+  back: >-
+    Ein Verbrauchervertrag über eine Ware oder Dienstleistung und ein Verbraucherdarlehen
+    sind verbundene Verträge, wenn das Darlehen der Finanzierung dient und beide eine
+    wirtschaftliche Einheit bilden (§ 358 Abs. 3 BGB). Widerruft der Verbraucher
+    den Verbrauchervertrag wirksam, ist er auch an den verbundenen Darlehensvertrag
+    nicht mehr gebunden (§ 358 Abs. 1 BGB); umgekehrt erfasst der wirksame Widerruf
+    des Darlehensvertrags nach § 358 Abs. 2 BGB auch den finanzierten Vertrag. Das
+    Darlehen wird dann nach § 358 Abs. 4 BGB in Verbindung mit § 357 BGB abgewickelt,
+    der Darlehensgeber tritt in die Rechte und Pflichten des Unternehmers ein. Ergänzend
+    gewährt § 359 BGB dem Verbraucher den Einwendungsdurchgriff: Er kann die Rückzahlung
+    des Darlehens verweigern, soweit Einwendungen aus dem verbundenen Vertrag ihn
+    gegenüber dem Unternehmer zur Leistungsverweigerung berechtigen würden.
+  norms:
+  - § 358 BGB
+  - § 359 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-widr-312j-button-unionsrecht
+  type: norm
+  front: >-
+    Welche zusätzlichen Pflichten treffen den Unternehmer im elektronischen Geschäftsverkehr
+    mit Verbrauchern?
+  back: >-
+    Bei entgeltlichen Verträgen im elektronischen Geschäftsverkehr muss der Unternehmer
+    nach § 312j Abs. 2 BGB bestimmte Informationen (wesentliche Merkmale, Gesamtpreis,
+    Laufzeit) unmittelbar vor der Bestellung klar und verständlich hervorheben. Nach
+    § 312j Abs. 3 BGB muss die Bestellsituation so gestaltet sein, dass der Verbraucher
+    ausdrücklich bestätigt, dass er sich zu einer Zahlung verpflichtet; erfolgt die
+    Bestellung über eine Schaltfläche, muss sie gut lesbar mit den Wörtern zahlungspflichtig
+    bestellen oder einer entsprechenden Formulierung beschriftet sein (Button-Lösung).
+    Verstößt der Unternehmer dagegen, kommt der Vertrag nach § 312j Abs. 4 BGB nicht
+    zustande. Bei über eine Online-Benutzeroberfläche geschlossenen Fernabsatzverträgen
+    muss der Unternehmer zudem eine elektronische Widerrufsfunktion bereitstellen, die mit
+    "Vertrag widerrufen" beschriftet ist und über eine Bestätigungsfunktion verfügt; den
+    Eingang des Widerrufs hat er unverzüglich auf einem dauerhaften Datenträger zu bestätigen
+    (§ 356a BGB, Umsetzung der Richtlinie (EU) 2023/2673; anzuwenden seit dem 19.6.2026, BGBl. 2026 I Nr. 28, ohne besondere Übergangsvorschrift im EGBGB).
+  norms:
+  - § 312j Abs. 2 BGB
+  - § 312j Abs. 3 BGB
+  - § 312j Abs. 4 BGB
+  - § 356a BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Richtlinie (EU) 2023/2673
+  - Gesetz vom 3.2.2026, BGBl. 2026 I Nr. 28
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-widr-widerruf
+  title: Wirksamer Widerruf eines Verbrauchervertrags, §§ 312g, 355 BGB
+  norms:
+  - § 312g Abs. 1 BGB
+  - § 355 BGB
+  - § 357 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Widerrufsrecht
+    children:
+    - label: 1. Verbrauchervertrag, § 312 Abs. 1, §§ 13, 14 BGB
+    - label: 2. Außerhalb von Geschäftsräumen (§ 312b BGB) oder Fernabsatz (§ 312c
+        BGB)
+    - label: 3. Kein Ausschluss nach § 312g Abs. 2 BGB
+      hinweis: Etwa Maßanfertigung, schnell verderbliche Ware, entsiegelte Hygieneartikel.
+  - label: II. Widerrufserklärung, § 355 Abs. 1 BGB
+    hinweis: Eindeutig, formfrei, gegenüber dem Unternehmer; keine Begründung nötig.
+  - label: III. Widerrufsfrist, § 355 Abs. 2, § 356 BGB
+    children:
+    - label: 1. 14 Tage ab Fristbeginn (Erhalt der Ware, Vertragsschluss bei Dienstleistung)
+    - label: 2. Ordnungsgemäße Belehrung - sonst kein Fristbeginn
+    - label: 3. Fristwahrung durch rechtzeitige Absendung
+    - label: 4. Erlöschen spätestens 12 Monate und 14 Tage ohne Belehrung, § 356 Abs. 4 BGB
+  - label: IV. Rechtsfolgen, §§ 355 Abs. 3, 357, 357a, 361 BGB
+    children:
+    - label: 1. Rückgewähr der Leistungen binnen 14 Tagen
+    - label: 2. Rücksendekosten und Wertersatz
+    - label: 3. Verbundene Verträge, §§ 358, 359 BGB
+faelle:
+- slug: zr-fall-widr-notebook
+  title: Notebook und Küchenfront im Onlinehandel
+  difficulty: 2
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Verbraucherin A bestellt am 2. Mai im Internetshop des Händlers H zwei Waren:
+    ein serienmäßiges Notebook für 900 Euro und eine nach ihren Maßangaben angefertigte
+    Küchenfront für 1.500 Euro. H hat A vor Vertragsschluss ordnungsgemäß in Textform
+    über das Widerrufsrecht belehrt und sie darüber unterrichtet, dass sie bei Widerruf
+    die Rücksendekosten trägt. Das Notebook wird am 4. Mai geliefert, die Küchenfront am 12. Mai.
+    A packt das Notebook aus, startet es und prüft kurz die Funktionen. Am 15. Mai
+    erklärt A per E-Mail gegenüber H, sie widerrufe beide Verträge. H verweigert den
+    Widerruf der Küchenfront und verlangt außerdem für das Notebook Wertersatz wegen
+    der Inbetriebnahme.
+  question: >-
+    Kann A beide Verträge widerrufen und welche Ansprüche bestehen bezüglich des
+    Notebooks?
+  steps:
+  - prompt: Liegt ein widerrufbarer Vertrag vor und warum?
+    erwartung: >-
+      Verbrauchervertrag nach § 312 Abs. 1 BGB (A ist Verbraucherin nach § 13 BGB,
+      H Unternehmer nach § 14 BGB); beide Verträge wurden ausschließlich über Fernkommunikationsmittel
+      im Fernabsatz geschlossen (§ 312c BGB). Damit besteht grundsätzlich ein Widerrufsrecht
+      nach § 312g Abs. 1 BGB.
+  - prompt: Ist der Widerruf des Notebook-Kaufs fristgerecht erklärt?
+    erwartung: >-
+      Ja. Die 14-tägige Frist (§ 355 Abs. 2 BGB) beginnt mit dem Erhalt der Ware
+      (§ 356 Abs. 2 Nr. 1 BGB), die Belehrung wurde ordnungsgemäß erteilt. Beim Notebook
+      ist das der 4. Mai; wegen der einheitlichen Bestellung mehrerer getrennt gelieferter
+      Waren beginnt die Frist sogar erst mit dem Erhalt der letzten Ware am 12. Mai
+      (§ 356 Abs. 2 Nr. 1 Buchst. b BGB). Die E-Mail vom 15. Mai genügt als formfreie Erklärung
+      und wahrt die Frist in jedem Fall.
+  - prompt: Ist der Widerruf bezüglich der Küchenfront ausgeschlossen?
+    erwartung: >-
+      Ja. Die Küchenfront wurde nach den Maßangaben der A angefertigt, sodass die
+      Ausnahme des § 312g Abs. 2 S. 1 Nr. 1 BGB eingreift. Ein Widerrufsrecht besteht
+      insoweit nicht.
+  - prompt: Welche Pflichten bestehen nach dem Widerruf des Notebook-Kaufs?
+    erwartung: >-
+      Rückgewähr nach § 357 BGB: H muss den Kaufpreis erstatten (darf die Rückzahlung
+      bis zum Erhalt oder Nachweis der Rücksendung verweigern), A muss das Notebook
+      binnen 14 Tagen zurücksenden (§ 357 Abs. 1 BGB) und trägt die Rücksendekosten, weil
+      sie hierüber unterrichtet wurde (§ 357 Abs. 5 BGB).
+  - prompt: Kann H Wertersatz für die Inbetriebnahme verlangen?
+    erwartung: >-
+      Nein. Wertersatz setzt nach § 357a BGB einen Wertverlust voraus, der auf einen
+      Umgang zurückzuführen ist, der zur Prüfung von Beschaffenheit, Eigenschaften
+      und Funktionsweise nicht notwendig war. Auspacken, Starten und kurzes Prüfen
+      sind zur Prüfung notwendig, wie sie auch im Ladengeschäft möglich wäre.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Verbrauchervertrag und Fernabsatz nach §§ 312, 312c, 13, 14 BGB mit Widerrufsrecht
+        aus § 312g Abs. 1 BGB
+      weight: 2.0
+      required: false
+      norms:
+      - § 312c BGB
+      - § 312g Abs. 1 BGB
+      keywords:
+      - Fernabsatzvertrag
+      - § 312c
+      - § 312g Abs. 1
+      - Verbraucher
+      - Fernkommunikationsmittel
+      card_slugs:
+      - zr-widr-312c-fernabsatz
+      - zr-widr-312-anwendungsbereich
+    - id: p2
+      label: Widerrufsfrist von 14 Tagen ab Erhalt der Ware eingehalten
+      weight: 2.0
+      required: true
+      norms:
+      - § 355 Abs. 2 BGB
+      - § 356 Abs. 2 BGB
+      keywords:
+      - 14 Tage
+      - § 355 Abs. 2
+      - Erhalt der Ware
+      - Fristbeginn
+      - § 356 Abs. 2
+      card_slugs:
+      - zr-widr-355-erklaerung-frist
+    - id: p3
+      label: Ausschluss des Widerrufs für die Maßanfertigung nach § 312g Abs. 2 BGB
+      weight: 3.0
+      required: true
+      norms:
+      - § 312g Abs. 2 BGB
+      keywords:
+      - § 312g Abs. 2
+      - Maßanfertigung
+      - nicht vorgefertigt
+      - individuelle Bestimmung durch den Verbraucher
+      - auf persönliche Bedürfnisse zugeschnitten
+      card_slugs:
+      - zr-widr-312g-ausnahmen
+    - id: p4
+      label: Rückabwicklung nach § 357 BGB mit Rücksendekosten und Zurückbehaltungsrecht
+        des Unternehmers
+      weight: 1.0
+      required: false
+      norms:
+      - § 357 BGB
+      keywords:
+      - § 357
+      - Rückgewähr
+      - Rücksendekosten
+      - 14 Tage
+      - Rückzahlung verweigern
+      card_slugs:
+      - zr-widr-357-rechtsfolgen
+    - id: p5
+      label: Kein Wertersatz für bloße Prüfung der Funktionsweise nach § 357a BGB
+      weight: 2.0
+      required: true
+      norms:
+      - § 357a BGB
+      keywords:
+      - Wertersatz
+      - § 357a
+      - zur Prüfung notwendig
+      - Funktionsweise
+      - Wertverlust
+      card_slugs:
+      - zr-widr-357-rechtsfolgen

@@ -1,0 +1,335 @@
+topic:
+  slug: zr-handelsrecht
+  area: zivilrecht
+  title: 'Handelsrecht: Kaufmann, Register, Vertretung, Handelskauf'
+  parent: zivilrecht
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-hgb-kaufmannseigenschaft
+  type: definition
+  front: Wer ist Kaufmann im Sinne des HGB (§§ 1 bis 6 HGB)?
+  back: Kaufmann ist, wer ein Handelsgewerbe betreibt (§ 1 Abs. 1 HGB). Handelsgewerbe ist
+    jeder Gewerbebetrieb, es sei denn, das Unternehmen erfordert nach Art oder Umfang keinen
+    in kaufmännischer Weise eingerichteten Geschäftsbetrieb (§ 1 Abs. 2 HGB). Wer ein Handelsgewerbe
+    betreibt, ist kraft Gesetzes Kaufmann (Istkaufmann); die Eintragung im Handelsregister
+    ist insoweit nur deklaratorisch. Kleingewerbetreibende können sich freiwillig eintragen lassen und werden
+    dann mit der Eintragung Kaufmann (Kannkaufmann, § 2 HGB; konstitutive Wirkung); entsprechend
+    land- und forstwirtschaftliche Unternehmen nach § 3 HGB. Handelsgesellschaften sind Kaufleute
+    kraft Rechtsform (§ 6 HGB, Formkaufmann; für die GmbH § 13 Abs. 3 GmbHG). Wer als Kaufmann
+    im Handelsregister eingetragen ist, kann sich nicht darauf berufen, dass das Unternehmen
+    kein Handelsgewerbe sei (§ 5 HGB). Gewerbe ist die selbstständige, planmäßige, auf Dauer
+    angelegte, nach außen erkennbare, erlaubte Tätigkeit am Markt; freie Berufe zählen nach
+    h. M. nicht dazu.
+  norms:
+  - § 1 Abs. 1 HGB
+  - § 1 Abs. 2 HGB
+  - § 2 HGB
+  - § 5 HGB
+  - § 6 HGB
+  quellen:
+  - HGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-hgb-handelsgeschaefte
+  type: norm
+  front: Welche Sonderregeln gelten für Handelsgeschäfte (§§ 343 ff. HGB)?
+  back: Handelsgeschäfte sind alle Geschäfte eines Kaufmanns, die zum Betrieb seines Handelsgewerbes
+    gehören (§ 343 Abs. 1 HGB). Die von einem Kaufmann vorgenommenen Rechtsgeschäfte gelten
+    im Zweifel als zum Betrieb des Handelsgewerbes gehörig (§ 344 Abs. 1 HGB); ein von einem Kaufmann gezeichneter Schuldschein gilt als im Betrieb gezeichnet, sofern sich aus der Urkunde nicht das Gegenteil ergibt (§ 344 Abs. 2 HGB). Unter Kaufleuten ist auf
+    die im Handelsverkehr geltenden Gewohnheiten und Gebräuche Rücksicht zu nehmen (§ 346
+    HGB), und die Sorgfalt eines ordentlichen Kaufmanns ist maßgeblich (§ 347 Abs. 1 HGB).
+    Zu den Sondervorschriften zählen ferner die Formfreiheit von Bürgschaft, Schuldversprechen
+    und Schuldanerkenntnis, wenn sie für den Kaufmann Handelsgeschäfte sind (§ 350 HGB), und
+    der Zinssatz von fünf Prozent bei beiderseitigen Handelsgeschäften (§ 352 HGB). Schweigt
+    ein Kaufmann, dessen Gewerbebetrieb Geschäftsbesorgungen für andere mit sich bringt, auf
+    einen Antrag eines Geschäftspartners, mit dem er in Geschäftsverbindung steht, gilt dies
+    als Annahme (§ 362 Abs. 1 HGB).
+  norms:
+  - § 343 HGB
+  - § 344 HGB
+  - § 346 HGB
+  - § 347 HGB
+  - § 350 HGB
+  - § 362 HGB
+  quellen:
+  - HGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-hgb-handelsregister-15
+  type: norm
+  front: Was regelt die Registerpublizität des § 15 HGB?
+  back: '§ 15 HGB schützt das Vertrauen des Rechtsverkehrs auf das Handelsregister. Negative
+    Publizität (Abs. 1): Solange eine eintragungspflichtige Tatsache nicht eingetragen und
+    bekannt gemacht ist, kann sie von demjenigen, in dessen Angelegenheiten sie einzutragen
+    war, einem Dritten nicht entgegengehalten werden, es sei denn, der Dritte kannte sie.
+    Positive Publizität bei richtiger Eintragung (Abs. 2): Eine eingetragene und bekannt gemachte
+    Tatsache muss der Dritte gegen sich gelten lassen; bei Rechtshandlungen innerhalb von
+    15 Tagen nach der Bekanntmachung gilt das nicht, wenn der Dritte beweist, dass er die
+    Tatsache weder kannte noch kennen musste. Positive Publizität bei unrichtiger Bekanntmachung
+    (Abs. 3): Ist eine einzutragende Tatsache unrichtig bekannt gemacht, kann sich ein Dritter
+    auf die bekannt gemachte Tatsache berufen, es sei denn, er kannte die Unrichtigkeit. Die
+    Vorschrift gilt nur im rechtsgeschäftlichen Verkehr; klassische Beispiele sind das Ausscheiden
+    des Prokuristen oder Gesellschafters ohne Eintragung.'
+  norms:
+  - § 15 Abs. 1 HGB
+  - § 15 Abs. 2 HGB
+  - § 15 Abs. 3 HGB
+  quellen:
+  - HGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-hgb-prokura
+  type: norm
+  front: Welchen Umfang hat die Prokura (§§ 48 ff. HGB)?
+  back: Die Prokura wird vom Inhaber des Handelsgeschäfts oder seinem gesetzlichen Vertreter
+    mittels ausdrücklicher Erklärung erteilt (§ 48 Abs. 1 HGB); sie kann auch als Gesamtprokura
+    erteilt werden (§ 48 Abs. 2 HGB). Die Eintragung im Handelsregister ist nur deklaratorisch
+    (§ 53 HGB). Die Prokura ermächtigt zu allen Arten von gerichtlichen und außergerichtlichen
+    Geschäften und Rechtshandlungen, die der Betrieb irgendeines Handelsgewerbes mit sich
+    bringt (§ 49 Abs. 1 HGB). Zur Veräußerung und Belastung von Grundstücken ist der Prokurist
+    nur ermächtigt, wenn ihm diese Befugnis besonders erteilt ist (§ 49 Abs. 2 HGB). Eine
+    Beschränkung des Umfangs ist Dritten gegenüber unwirksam (§ 50 Abs. 1 HGB); sie wirkt
+    nur im Innenverhältnis. Die Prokura ist jederzeit widerruflich (§ 52 Abs. 1 HGB) und erlischt
+    nicht durch den Tod des Inhabers (§ 52 Abs. 3 HGB). Der Prokurist zeichnet mit einem die
+    Prokura andeutenden Zusatz (§ 51 HGB). Nicht erfasst sind Grundlagengeschäfte des Inhabers,
+    etwa Anmeldungen zum Handelsregister oder Veräußerung des Unternehmens.
+  norms:
+  - § 48 HGB
+  - § 49 Abs. 1 HGB
+  - § 49 Abs. 2 HGB
+  - § 50 HGB
+  - § 52 HGB
+  - § 53 HGB
+  quellen:
+  - HGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-hgb-handlungsvollmacht
+  type: norm
+  front: Wie unterscheidet sich die Handlungsvollmacht von der Prokura (§§ 54 ff. HGB)?
+  back: Die Handlungsvollmacht ist eine im Handelsgewerbe erteilte Vollmacht, die nicht Prokura
+    ist. Sie kann als Generalhandlungsvollmacht (zum Betrieb des Handelsgewerbes), Arthandlungsvollmacht
+    (für bestimmte Art von Geschäften) oder Einzelhandlungsvollmacht (für ein einzelnes Geschäft)
+    erteilt werden (§ 54 Abs. 1 HGB). Sie erstreckt sich auf alle Geschäfte und Rechtshandlungen,
+    die der Betrieb eines derartigen Handelsgewerbes oder die Vornahme derartiger Geschäfte
+    gewöhnlich mit sich bringt. Zur Veräußerung oder Belastung von Grundstücken, zur Eingehung
+    von Wechselverbindlichkeiten, zur Aufnahme von Darlehen und zur Prozessführung ist der
+    Handlungsbevollmächtigte nur ermächtigt, wenn ihm dies besonders erteilt ist (§ 54 Abs.
+    2 HGB). Beschränkungen muss ein Dritter nur gegen sich gelten lassen, wenn er sie kannte
+    oder kennen musste (§ 54 Abs. 3 HGB). Wer in einem Laden oder offenen Warenlager angestellt
+    ist, gilt als ermächtigt zu Verkäufen und Empfangnahmen, die dort gewöhnlich geschehen
+    (§ 56 HGB). Anders als die Prokura ist die Handlungsvollmacht nicht eintragungsfähig und
+    im Umfang beschränkbar.
+  norms:
+  - § 54 Abs. 1 HGB
+  - § 54 Abs. 2 HGB
+  - § 54 Abs. 3 HGB
+  - § 56 HGB
+  quellen:
+  - HGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-hgb-firmenfortfuehrung-25
+  type: norm
+  front: Wann haftet der Erwerber eines Handelsgeschäfts für Altverbindlichkeiten (§ 25 HGB)?
+  back: Wer ein unter Lebenden erworbenes Handelsgeschäft unter der bisherigen Firma fortführt,
+    haftet für alle im Betrieb des Geschäfts begründeten Verbindlichkeiten des früheren Inhabers
+    (§ 25 Abs. 1 S. 1 HGB). Erforderlich sind ein Handelsgeschäft (ein Unternehmen mit Handelsgewerbe),
+    ein rechtsgeschäftlicher Erwerb unter Lebenden (bei Erwerb von Todes wegen gilt § 27 HGB)
+    und die Fortführung der Firma, auch mit Nachfolgezusatz; Fortführung liegt vor, wenn der
+    prägende Firmenkern beibehalten wird. Die in dem Betrieb begründeten Forderungen gelten
+    gegenüber dem Schuldner als auf den Erwerber übergegangen, wenn der bisherige Inhaber
+    oder seine Erben in die Fortführung eingewilligt haben (§ 25 Abs. 1 S. 2 HGB). Der Erwerber
+    haftet neben dem bisherigen Inhaber; dessen Haftung ist nach § 26 HGB auf fünf Jahre nach
+    Eintragung des neuen Inhabers im Handelsregister begrenzt (Nachhaftung). Abweichende Vereinbarungen wirken gegenüber Dritten nur, wenn
+    sie im Handelsregister eingetragen und bekannt gemacht oder dem Dritten mitgeteilt wurden
+    (§ 25 Abs. 2 HGB).
+  norms:
+  - § 25 Abs. 1 HGB
+  - § 25 Abs. 2 HGB
+  - § 26 HGB
+  - § 27 HGB
+  quellen:
+  - HGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-hgb-handelskauf-377
+  type: norm
+  front: Welche Obliegenheiten trifft den Käufer beim Handelskauf (§ 377 HGB)?
+  back: Ist der Kauf für beide Teile ein Handelsgeschäft, hat der Käufer die Ware unverzüglich
+    nach Ablieferung zu untersuchen, soweit dies nach ordnungsmäßigem Geschäftsgang tunlich
+    ist, und Mängel unverzüglich anzuzeigen (§ 377 Abs. 1 HGB). Unterlässt er die Anzeige,
+    gilt die Ware als genehmigt, es sei denn, es handelt sich um einen Mangel, der bei der
+    Untersuchung nicht erkennbar war (§ 377 Abs. 2 HGB). Versteckte Mängel müssen unverzüglich
+    nach Entdeckung gerügt werden, sonst gilt die Ware ebenfalls als genehmigt (§ 377 Abs.
+    3 HGB). Die Rechtzeitigkeit der Absendung genügt (§ 377 Abs. 4 HGB). Auf Arglist des Verkäufers
+    kann er sich nicht berufen (§ 377 Abs. 5 HGB). Rechtsfolge ist der Verlust der Mängelrechte
+    aus § 437 BGB (Genehmigungsfiktion), nicht der Erfüllungsanspruch. Die Rügeobliegenheit trifft auch die Falschlieferung (Aliud, die nach § 434 Abs. 5 BGB dem Sachmangel gleichsteht) sowie Mengenabweichungen (Menge gehört zur Beschaffenheit, § 434 Abs. 2 S. 2, Abs. 3 S. 2 BGB).
+    Sie gilt nur unter Kaufleuten, nicht gegenüber einem Verbraucher.
+  norms:
+  - § 377 Abs. 1 HGB
+  - § 377 Abs. 2 HGB
+  - § 377 Abs. 3 HGB
+  - § 377 Abs. 5 HGB
+  - § 437 BGB
+  quellen:
+  - HGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-hgb-bestaetigungsschreiben
+  type: definition
+  front: Welche Wirkung hat das kaufmännische Bestätigungsschreiben (Verweis auf Gewohnheitsrecht)?
+  back: 'Das kaufmännische Bestätigungsschreiben fasst das Ergebnis mündlicher oder telefonischer
+    Vertragsverhandlungen zusammen. Nach Handelsbrauch und gewohnheitsrechtlicher Anerkennung
+    wirkt das Schweigen des Empfängers als Zustimmung, wenn folgende Voraussetzungen erfüllt
+    sind: Die Parteien haben Vertragsverhandlungen geführt (Kaufleute oder in vergleichbarer
+    Weise am Rechtsverkehr Teilnehmende); das Schreiben geht in unmittelbarem zeitlichen Zusammenhang
+    mit den Verhandlungen zu und gibt deren Ergebnis wieder; der Empfänger widerspricht nicht
+    unverzüglich; der Absender ist schutzwürdig, weil er gutgläubig ist und das Schreiben
+    nicht so erheblich vom Verhandelten abweicht, dass er nicht mehr mit Billigung rechnen
+    durfte. Rechtsfolge ist, dass der Vertrag mit dem Inhalt des Schreibens zustande kommt
+    oder, bei einem bereits geschlossenen Vertrag, der Inhalt festgelegt wird. Vom Bestätigungsschreiben
+    ist die Auftragsbestätigung abzugrenzen, die nur Annahme eines Angebots ist (§§ 147 ff.
+    BGB); Einzelheiten zum Schweigen als Willenserklärung gehören zur BGB-AT-Auslegung.'
+  norms:
+  - § 346 HGB
+  - § 362 HGB
+  - § 147 BGB
+  quellen:
+  - Handelsbrauch und Gewohnheitsrecht
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: zr-schema-hgb-haftung-25
+  title: Haftung des Erwerbers nach § 25 Abs. 1 S. 1 HGB
+  norms:
+  - § 25 Abs. 1 HGB
+  - § 26 HGB
+  quellen:
+  - HGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Verbindlichkeit begründet
+    children:
+    - label: 1. Anspruch gegen den bisherigen Inhaber (z. B. § 433 Abs. 2 BGB)
+    - label: 2. Begründet im Betrieb des Geschäfts
+  - label: II. Erwerb eines Handelsgeschäfts unter Lebenden
+    hinweis: 'Erwerb von Todes wegen: § 27 HGB; es muss ein Unternehmen im Wesentlichen als
+      Ganzes übergehen.'
+  - label: III. Fortführung der Firma
+    children:
+    - label: 1. Beibehaltung des prägenden Firmenkerns
+    - label: 2. Nachfolgezusatz unschädlich
+  - label: IV. Kein wirksamer Haftungsausschluss, § 25 Abs. 2 HGB
+    hinweis: Eintragung und Bekanntmachung unverzüglich nach Übernahme oder Mitteilung an
+      den Gläubiger.
+  - label: V. Rechtsfolge
+    children:
+    - label: 1. Gesetzliche Schuldmitübernahme; Altinhaber haftet fort, begrenzt nach § 26
+        HGB
+    - label: 2. Einwendungen des Altinhabers gegen den Gläubiger bleiben erhalten
+faelle:
+- slug: zr-fall-hgb-backhaus
+  title: Das Backhaus Müller
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - HGB, amtliche Fassung
+  facts: Großhändler G liefert an Bäcker M, den eingetragenen Inhaber der Bäckerei "Zum Backhaus
+    Müller e. K.", 800 kg Mehl für 3.000 Euro. Das Mehl weist bei Ablieferung einen deutlich
+    sichtbaren Schimmelbefall in mehreren Säcken auf, was M bei einer Kontrolle sofort bemerkt
+    hätte. M untersucht das Mehl nicht und teilt G den Mangel nie mit. Einen Monat später
+    verkauft M seinen Betrieb mit allen Aktiva und Passiva an B, der das Geschäft unter der
+    Bezeichnung "Zum Backhaus Müller, Inhaber B" fortführt. Ein Haftungsausschluss wird weder
+    eingetragen noch G mitgeteilt. G verlangt von B Zahlung von 3.000 Euro. B meint, er habe
+    den Vertrag nie geschlossen, und rügt zudem den Schimmelbefall.
+  question: Kann G von B Zahlung von 3.000 Euro verlangen?
+  steps:
+  - prompt: Besteht ein Kaufpreisanspruch gegen M?
+    erwartung: Ja, aus § 433 Abs. 2 BGB. M ist Kaufmann (Istkaufmann, § 1 HGB), der Kauf war
+      für beide Seiten ein Handelsgeschäft.
+  - prompt: Welche Mängelrechte kämen in Betracht und was steht ihnen entgegen?
+    erwartung: Mangelhaftigkeit (§ 434 BGB) mit Rechten aus § 437 BGB. M hat die Ware nicht
+      untersucht und den offensichtlichen Mangel nicht unverzüglich gerügt; nach § 377 Abs.
+      1, 2 HGB gilt die Ware als genehmigt, Mängelrechte sind verloren.
+  - prompt: Haftet B nach § 25 Abs. 1 S. 1 HGB?
+    erwartung: Ja. B hat ein Handelsgeschäft unter Lebenden erworben und die Firma mit Nachfolgezusatz
+      fortgeführt, weil der prägende Kern "Zum Backhaus Müller" erhalten blieb. Die Verbindlichkeit
+      ist im Betrieb begründet. Ein Haftungsausschluss nach § 25 Abs. 2 HGB liegt nicht vor.
+  - prompt: Kann B die Rügeversäumnis des M entgegenhalten?
+    erwartung: B haftet für die Verbindlichkeit wie M, also in der Form, in der sie gegen
+      M besteht. Die Genehmigungsfiktion nach § 377 HGB wirkt daher auch gegen B, sodass er
+      den Kaufpreis ohne Minderung schuldet. G kann Zahlung von 3.000 Euro von B verlangen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Kaufpreisanspruch gegen M und Kaufmannseigenschaft als Voraussetzung des § 377
+        HGB
+      weight: 1.0
+      required: false
+      keywords:
+      - § 433 Abs. 2 BGB
+      - Kaufmann
+      - Handelsgeschäft
+      - Istkaufmann
+      - beiderseitiges Handelsgeschäft
+      card_slugs:
+      - zr-hgb-kaufmannseigenschaft
+      - zr-hgb-handelskauf-377
+    - id: p2
+      label: Untersuchungs- und Rügeobliegenheit nach § 377 HGB, Genehmigungsfiktion
+      weight: 3.0
+      required: true
+      norms:
+      - § 377 Abs. 2 HGB
+      keywords:
+      - § 377 HGB
+      - unverzüglich rügen
+      - Untersuchungsobliegenheit
+      - gilt als genehmigt
+      - Genehmigungsfiktion
+      - Mängelrechte verloren
+      card_slugs:
+      - zr-hgb-handelskauf-377
+    - id: p3
+      label: Haftung des Erwerbers aus § 25 Abs. 1 S. 1 HGB bejaht
+      weight: 3.0
+      required: true
+      norms:
+      - § 25 Abs. 1 HGB
+      keywords:
+      - § 25 Abs. 1 HGB
+      - Firmenfortführung
+      - Fortführung der Firma
+      - Erwerb unter Lebenden
+      - Haftung des Erwerbers
+      card_slugs:
+      - zr-hgb-firmenfortfuehrung-25
+    - id: p4
+      label: Kein Haftungsausschluss nach § 25 Abs. 2 HGB
+      weight: 1.0
+      required: false
+      keywords:
+      - § 25 Abs. 2 HGB
+      - Haftungsausschluss
+      - Eintragung und Bekanntmachung
+      - Mitteilung an den Gläubiger
+      card_slugs:
+      - zr-hgb-firmenfortfuehrung-25
+    - id: p5
+      label: 'Ergebnis: Zahlungsanspruch von 3.000 Euro gegen B, Mängeleinwand ausgeschlossen'
+      weight: 1.0
+      required: false
+      keywords:
+      - 3.000 Euro
+      - Einwand abgeschnitten
+      - haftet wie der Veräußerer
+      - Anspruch besteht
+      card_slugs:
+      - zr-hgb-firmenfortfuehrung-25

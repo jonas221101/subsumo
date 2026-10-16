@@ -1,0 +1,387 @@
+topic:
+  slug: or-vwgo-sachentscheidungsvoraussetzungen
+  area: oeffentliches-recht
+  title: 'Sachentscheidungsvoraussetzungen der VwGO-Klage: Rechtsweg, Beteiligte, Klagebefugnis,
+    Widerspruch'
+  parent: oeffentliches-recht
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-vwgo-sev-rechtsweg-40-abs1
+  type: definition
+  front: Wann ist der Verwaltungsrechtsweg nach § 40 Abs. 1 S. 1 VwGO eröffnet?
+  back: >-
+    Der Verwaltungsrechtsweg ist eröffnet, wenn (1) keine aufdrängende Sonderzuweisung eingreift,
+    (2) eine öffentlich-rechtliche Streitigkeit (3) nichtverfassungsrechtlicher Art vorliegt
+    und (4) keine abdrängende Sonderzuweisung besteht. Eine Streitigkeit ist öffentlich-rechtlich,
+    wenn sie sich nach dem Streitgegenstand, also der Rechtsnatur der streitentscheidenden
+    Norm, im öffentlichen Recht abspielt; maßgeblich ist der Sachverhalt, wie ihn der Kläger
+    vorträgt. Nichtverfassungsrechtlich ist sie, wenn nicht Verfassungsorgane um Verfassungsrecht
+    streiten (doppelte Verfassungsunmittelbarkeit). Das Verwaltungsgericht prüft den Rechtsweg
+    von Amts wegen; bei Unzulässigkeit verweist es nach § 17a Abs. 2 GVG von Amts wegen an
+    das zuständige Gericht.
+  norms:
+  - § 40 Abs. 1 S. 1 VwGO
+  - § 17a Abs. 2 GVG
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  - GVG, amtliche Fassung
+  stand: 2026-10
+- slug: or-vwgo-sev-abgrenzung-theorien
+  type: streitstand
+  front: Wie grenzt man öffentlich-rechtliche und bürgerlich-rechtliche Streitigkeiten ab
+    (Interessen-, Subordinations-, Subjektstheorie)?
+  back: >-
+    Die Interessentheorie stellt darauf ab, ob die Norm dem öffentlichen oder dem privaten
+    Interesse dient; sie gilt als zu unscharf, weil nahezu jede Norm beiden Interessen dient.
+    Die Subordinationstheorie fragt nach einem Über-/Unterordnungsverhältnis; sie versagt
+    bei Gleichordnungsverhältnissen (etwa ör Verträge zwischen Hoheitsträgern) und bei hoheitlichem
+    Handeln ohne Zwang. Die heute herrschende modifizierte Subjektstheorie (Sonderrechtstheorie)
+    fragt, ob die streitentscheidende Norm ausschließlich einen Hoheitsträger gerade in seiner
+    Eigenschaft als Hoheitsträger berechtigt oder verpflichtet. Dann ist die Streitigkeit
+    öffentlich-rechtlich; trifft die Norm jedermann, liegt Privatrecht vor. Klausurpraktisch
+    genügt meist die Nennung der h. M. mit kurzer Begründung; ein Streitentscheid ist nur
+    bei abweichenden Ergebnissen nötig.
+  norms:
+  - § 40 Abs. 1 S. 1 VwGO
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vwgo-sev-zwei-stufen
+  type: definition
+  front: Was besagt die Zwei-Stufen-Theorie bei der Rechtswegprüfung, und wo stößt sie an
+    Grenzen?
+  back: >-
+    Die Zwei-Stufen-Theorie trennt bei einem einheitlichen Lebenssachverhalt das „Ob“ von
+    dem „Wie“: Die Entscheidung über die Gewährung (Zulassung, Bewilligung) ist öffentlich-rechtlich
+    und wird durch Verwaltungsakt getroffen, die Abwicklung (z. B. Darlehensvertrag, Mietverhältnis,
+    Entgelt) kann privatrechtlich ausgestaltet sein. Entsprechend ist für das „Ob“ der Verwaltungsrechtsweg,
+    für das „Wie“ der ordentliche Rechtsweg eröffnet. Anwendungsfelder sind Subventionsvergabe,
+    Zulassung zu öffentlichen Einrichtungen (z. B. Gemeindehalle) und die Vergabe kommunaler
+    Leistungen. Kritisiert wird die Aufspaltung eines Lebenssachverhalts und die damit verbundene Rechtswegzersplitterung; die Verwaltung kann die Abwicklung auch öffentlich-rechtlich regeln, dann liegt ein einstufiges Rechtsverhältnis vor. Die Theorie wird daher nur noch zurückhaltend angewandt. Das Gericht des zulässigen Rechtswegs entscheidet den Rechtsstreit nach § 17 Abs.
+    2 S. 1 GVG unter allen rechtlichen Gesichtspunkten.
+  norms:
+  - § 40 Abs. 1 S. 1 VwGO
+  - § 17 Abs. 2 S. 1 GVG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vwgo-sev-sonderzuweisungen
+  type: norm
+  front: Welche aufdrängenden und abdrängenden Sonderzuweisungen sind für die Rechtswegprüfung
+    wichtig?
+  back: >-
+    Aufdrängende Sonderzuweisungen eröffnen ausdrücklich den Verwaltungsrechtsweg und gehen
+    § 40 Abs. 1 VwGO vor, etwa § 54 Abs. 1 BeamtStG und § 126 Abs. 1 BBG für Klagen aus dem
+    Beamtenverhältnis. Abdrängende Sonderzuweisungen weisen eine an sich öffentlich-rechtliche
+    Streitigkeit anderen Gerichten zu. Wichtig sind § 40 Abs. 2 S. 1 VwGO (vermögensrechtliche
+    Ansprüche aus Aufopferung für das gemeine Wohl und aus öffentlich-rechtlicher Verwahrung
+    sowie Schadensersatzansprüche aus Verletzung öffentlich-rechtlicher Pflichten, die nicht
+    auf einem ör Vertrag beruhen; jeweils ordentliche Gerichte), Art. 34 S. 3 GG (Amtshaftung),
+    Art. 14 Abs. 3 S. 4 GG (Enteignungsentschädigung), § 23 EGGVG (Justizverwaltungsakte)
+    sowie die Sonderrechtswege der Sozial- und Finanzgerichtsbarkeit (§ 51 SGG, § 33 FGO).
+    Die Sonderzuweisung ist stets vor § 40 Abs. 1 VwGO zu prüfen.
+  norms:
+  - § 40 Abs. 1 S. 1 VwGO
+  - § 40 Abs. 2 S. 1 VwGO
+  - Art. 34 S. 3 GG
+  - Art. 14 Abs. 3 S. 4 GG
+  - § 126 Abs. 1 BBG
+  quellen:
+  - VwGO, amtliche Fassung
+    - Eigenformulierung Redaktion
+
+  stand: 2026-10
+- slug: or-vwgo-sev-beteiligten-prozessfaehigkeit
+  type: norm
+  front: Wer ist beteiligten- und prozessfähig nach §§ 61, 62 VwGO?
+  back: >-
+    Beteiligtenfähigkeit (Fähigkeit, Subjekt eines Prozessrechtsverhältnisses zu sein) haben
+    nach § 61 VwGO natürliche und juristische Personen (Nr. 1), Vereinigungen, soweit ihnen
+    ein Recht zustehen kann (Nr. 2; z. B. nichtrechtsfähiger Verein, Partei, Bürgerinitiative
+    nur mit materieller Rechtsposition), sowie Behörden, sofern das Landesrecht dies bestimmt
+    (Nr. 3). Prozessfähigkeit (Fähigkeit, Prozesshandlungen selbst oder durch Bevollmächtigte
+    vorzunehmen) folgt aus § 62 VwGO: Geschäftsfähige nach BGB (Abs. 1 Nr. 1), beschränkt
+    Geschäftsfähige, soweit sie durch Vorschriften des bürgerlichen oder öffentlichen Rechts
+    für den Gegenstand des Verfahrens als geschäftsfähig anerkannt sind (Abs. 1 Nr. 2, z.
+    B. bei Ausübung bestimmter Rechte kraft Sondervorschriften). Für Vereinigungen und Behörden handeln ihre gesetzlichen Vertreter und Vorstände (§ 62 Abs. 3 VwGO).
+  norms:
+  - § 61 VwGO
+  - § 62 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vwgo-sev-richtiger-klagegegner-78
+  type: norm
+  front: Wer ist richtiger Klagegegner nach § 78 VwGO?
+  back: >-
+    Nach § 78 Abs. 1 Nr. 1 VwGO ist die Klage gegen den Bund, das Land oder die Körperschaft
+    zu richten, deren Behörde den angefochtenen Verwaltungsakt erlassen oder den beantragten
+    Verwaltungsakt unterlassen hat (Rechtsträgerprinzip); der Beklagte ist also nicht die
+    Behörde selbst. Nach § 78 Abs. 1 Nr. 2 VwGO kann das Landesrecht bestimmen, dass die Klage
+    gegen die Behörde selbst zu richten ist (Behördenprinzip), sofern das Landesrecht dies
+    vorsieht. Einige Länder haben davon Gebrauch gemacht; die Regelung ist landesrechtlich
+    unterschiedlich und stets zu prüfen. Wurde ein Widerspruchsbescheid erlassen, ist grundsätzlich
+    weiterhin der Rechtsträger der Ausgangsbehörde zu verklagen; gegen die Widerspruchsbehörde richtet sich die Klage nur, soweit der Widerspruchsbescheid eine erstmalige oder zusätzliche selbständige Beschwer enthält (§ 79 Abs. 1 Nr. 2 VwGO). Eine fehlerhafte Beklagtenbezeichnung ist durch Auslegung (§ 88 VwGO)
+    und Rubrumsberichtigung zu korrigieren.
+  norms:
+  - § 78 Abs. 1 VwGO
+  
+  - § 79 VwGO
+  - § 88 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vwgo-sev-klagebefugnis-vertiefung
+  type: streitstand
+  front: Wie wird die Klagebefugnis bei Drittbetroffenen und bei der Verpflichtungsklage geprüft?
+  back: >-
+    Die Klagebefugnis nach § 42 Abs. 2 VwGO verlangt die Möglichkeit der Verletzung eines
+    eigenen subjektiven öffentlichen Rechts; abgewehrt werden damit Popularklagen. Der Adressat
+    eines belastenden Verwaltungsakts ist über Art. 2 Abs. 1 GG regelmäßig klagebefugt (Adressatentheorie).
+    Bei Drittbetroffenen entscheidet die Schutznormtheorie, ob die verletzte Norm zumindest
+    auch Individualinteressen eines abgrenzbaren Personenkreises dient, nicht bloß Reflex
+    ist; Beispiele sind das baurechtliche Gebot der Rücksichtnahme und Grundrechte (Art. 14
+    GG), nicht aber reine Allgemeininteressen. Bei der Verpflichtungsklage genügt die Möglichkeit
+    eines Anspruchs auf Erlass des Verwaltungsakts; bei Ermessen reicht die Möglichkeit eines
+    Anspruchs auf fehlerfreie Ermessensentscheidung. Einigkeit besteht, dass die Möglichkeit
+    offensichtlich nach keiner Betrachtungsweise ausgeschlossen sein darf; strengere Ansätze,
+    die schon im Rahmen der Klagebefugnis eine überwiegende Wahrscheinlichkeit verlangen,
+    setzen sich nicht durch.
+  norms:
+  - § 42 Abs. 2 VwGO
+  - Art. 2 Abs. 1 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vwgo-sev-widerspruch-statthaft-frist
+  type: norm
+  front: Unter welchen Voraussetzungen ist das Widerspruchsverfahren nach §§ 68 ff. VwGO zulässig,
+    und welche Frist gilt?
+  back: >-
+    Der Widerspruch ist statthaft gegen Verwaltungsakte, wenn ein Vorverfahren erforderlich
+    ist, aber auch freiwillig, wenn ein Vorverfahren nach Landesrecht abgeschafft ist (soweit
+    das Landesrecht das nicht ausschließt). Der Widerspruchsführer muss in entsprechender
+    Anwendung des § 42 Abs. 2 VwGO widerspruchsbefugt sein. Er ist innerhalb eines Monats
+    nach Bekanntgabe des Verwaltungsakts schriftlich oder zur Niederschrift bei der Behörde
+    einzulegen, die den Verwaltungsakt erlassen hat, § 70 Abs. 1 VwGO; fehlt eine ordnungsgemäße
+    Rechtsbehelfsbelehrung, gilt die Jahresfrist, § 70 Abs. 2 i. V. m. § 58 Abs. 2 VwGO. Zunächst
+    prüft die Ausgangsbehörde die Abhilfe (§ 72 VwGO); andernfalls entscheidet die nächsthöhere
+    Behörde durch Widerspruchsbescheid (§ 73 Abs. 1 S. 2 Nr. 1 VwGO), in Selbstverwaltungsangelegenheiten
+    die Selbstverwaltungsbehörde (Nr. 3). Geprüft werden Rechtmäßigkeit und Zweckmäßigkeit
+    (§ 68 Abs. 1 S. 1 VwGO). Die Wiedereinsetzung richtet sich nach § 70 Abs. 2 i. V. m. §
+    60 VwGO.
+  norms:
+  - § 68 VwGO
+  - § 70 VwGO
+  - § 72 VwGO
+  - § 73 VwGO
+  - § 58 Abs. 2 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vwgo-sev-reformatio-in-peius
+  type: streitstand
+  front: Ist im Widerspruchsverfahren eine Verböserung (reformatio in peius) zulässig?
+  back: >-
+    Die VwGO regelt die Frage nicht. Nach der überwiegend vertretenen Auffassung der Rechtsprechung
+    ist die Verböserung zulässig, wenn die Widerspruchsbehörde in der Sache Entscheidungsbefugnis
+    über den Verwaltungsakt hat (also ihn auch von Amts wegen ändern dürfte), kein Gesetz
+    sie ausschließt und die Voraussetzungen für den belastenden Verwaltungsakt vorliegen;
+    Vertrauensschutz und die Voraussetzungen der §§ 48, 49 VwVfG sind zu beachten; dem Betroffenen
+    ist rechtliches Gehör zu geben (§ 71 VwGO) und er kann den Widerspruch zurücknehmen. Die
+    Gegenmeinung lehnt die Verböserung ab, weil das Widerspruchsverfahren auch dem Rechtsschutz
+    des Bürgers dient und der Widerspruchsführer sonst von der Einlegung abgeschreckt wird.
+    Eine weitere Auffassung lässt sie nur bei ausdrücklicher gesetzlicher Ermächtigung zu.
+  norms:
+  - § 68 VwGO
+  - § 71 VwGO
+  - § 73 VwGO
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vwgo-sev-beiladung-65
+  type: norm
+  front: Was regeln die einfache und die notwendige Beiladung nach § 65 VwGO?
+  back: >-
+    Das Gericht kann von Amts wegen oder auf Antrag andere, deren rechtliche Interessen durch
+    die Entscheidung berührt werden, beiladen (einfache Beiladung, § 65 Abs. 1 VwGO, Ermessen).
+    Notwendig beizuladen sind Dritte, die an dem streitigen Rechtsverhältnis derart beteiligt
+    sind, dass die Entscheidung auch ihnen gegenüber nur einheitlich ergehen kann (§ 65 Abs.
+    2 VwGO), etwa der Bauherr im Verfahren des Nachbarn gegen die Baugenehmigung. Bei mehr
+    als 50 Beizuladenden kann das Gericht nach § 65 Abs. 3 VwGO anordnen, dass nur solche
+    Personen beigeladen werden, die dies innerhalb einer Frist beantragen. Die Beiladung ist
+    keine Sachentscheidungsvoraussetzung der Klage; ihr Unterbleiben bei notwendiger Beiladung
+    ist ein Verfahrensfehler, der im Rechtsmittelverfahren zur Aufhebung führen kann. Der
+    Beigeladene kann Anträge stellen und Rechtsmittel einlegen (§ 66 VwGO); die Rechtskraft
+    erstreckt sich auf ihn (§ 121 Nr. 1 VwGO).
+  norms:
+  - § 65 VwGO
+  - § 66 VwGO
+  - § 121 Nr. 1 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: or-schema-vwgo-sev-sachentscheidungsvoraussetzungen
+  title: Sachentscheidungsvoraussetzungen der verwaltungsgerichtlichen Klage
+  norms:
+  - § 40 Abs. 1 VwGO
+  - § 42 Abs. 2 VwGO
+  - § 61 VwGO
+  - § 62 VwGO
+  - § 68 VwGO
+  - § 78 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Verwaltungsrechtsweg
+    children:
+    - label: 1. Aufdrängende Sonderzuweisung (z. B. § 126 Abs. 1 BBG)
+    - label: 2. Öffentlich-rechtliche Streitigkeit, § 40 Abs. 1 S. 1 VwGO
+      hinweis: Modifizierte Subjektstheorie; bei Doppelcharakter Zwei-Stufen-Theorie beachten.
+    - label: 3. Nichtverfassungsrechtlicher Art (doppelte Verfassungsunmittelbarkeit)
+    - label: 4. Keine abdrängende Sonderzuweisung (§ 40 Abs. 2 VwGO, Art. 34 S. 3 GG)
+  - label: II. Statthafte Klageart (§ 88 VwGO)
+  - label: III. Klagebefugnis, § 42 Abs. 2 VwGO
+    hinweis: Adressatentheorie bei Belastung des Adressaten, Schutznormtheorie bei Dritten.
+  - label: IV. Beteiligten- und Prozessfähigkeit, §§ 61, 62 VwGO
+  - label: V. Richtiger Klagegegner, § 78 VwGO
+    hinweis: Rechtsträgerprinzip; Behördenprinzip nur, wenn Landesrecht dies bestimmt.
+  - label: VI. Vorverfahren, §§ 68 ff. VwGO
+    children:
+    - label: 1. Erforderlich? (Landesrecht; § 68 Abs. 1 S. 2 VwGO)
+    - label: 2. Widerspruch statthaft, widerspruchsbefugt, Form und Frist, § 70 VwGO
+  - label: VII. Klagefrist, § 74 VwGO
+  - label: VIII. Beiladung, § 65 VwGO
+    hinweis: Keine Sachentscheidungsvoraussetzung, aber verfahrensrechtlich zu beachten.
+faelle:
+- slug: or-fall-sev-sondernutzung-untersagung
+  title: Die untersagte Außenbewirtung
+  difficulty: 3
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  facts: Die Stadt S untersagt der Gastronomie-GmbH G durch schriftlichen Bescheid die Sondernutzung
+    des Gehwegs vor ihrem Lokal für Tische und Stühle. Sie stützt sich auf das Straßenrecht
+    des Landes. Der Bescheid wird der G am 4. März bekanntgegeben und enthält eine ordnungsgemäße
+    Rechtsbehelfsbelehrung. Im Land ist das Widerspruchsverfahren gegen solche Bescheide vorgeschrieben.
+    Der Geschäftsführer der G legt am 2. April Widerspruch bei der S ein. Die zuständige Widerspruchsbehörde
+    weist den Widerspruch zurück; der Widerspruchsbescheid wird am 23. Mai zugestellt. Am
+    20. Juni erhebt G Klage auf Aufhebung des Bescheids „gegen den Oberbürgermeister der Stadt
+    S“. Alle Fristen enden an einem Werktag. Nach dem Landesrecht ist der Rechtsträger zu
+    verklagen (Rechtsträgerprinzip).
+  question: Ist die Klage der G zulässig? Prüfen Sie Rechtsweg, Beteiligten- und Prozessfähigkeit,
+    Klagebefugnis, Vorverfahren und den richtigen Beklagten.
+  steps:
+  - prompt: Ist der Verwaltungsrechtsweg eröffnet?
+    erwartung: Ja. Streitentscheidend ist das Straßenrecht, das die Stadt als Trägerin hoheitlicher
+      Gewalt berechtigt (modifizierte Subjektstheorie); die Untersagung ergeht durch Verwaltungsakt.
+      Streit nichtverfassungsrechtlicher Art, keine abdrängende Sonderzuweisung, § 40 Abs.
+      1 S. 1 VwGO.
+  - prompt: Ist G beteiligten- und prozessfähig, und ist sie klagebefugt?
+    erwartung: Als juristische Person ist G beteiligtenfähig (§ 61 Nr. 1 Var. 2 VwGO) und
+      handelt durch ihren Geschäftsführer (§ 62 Abs. 3 VwGO). Als Adressatin des belastenden
+      Verwaltungsakts ist sie über Art. 2 Abs. 1 GG bzw. Art. 12 GG klagebefugt (Adressatentheorie),
+      § 42 Abs. 2 VwGO.
+  - prompt: Wurde das Vorverfahren ordnungsgemäß durchgeführt?
+    erwartung: Ja. Die Widerspruchsfrist von einem Monat nach Bekanntgabe (§ 70 Abs. 1 VwGO)
+      lief bis zum 4. April; der Widerspruch vom 2. April war fristgerecht und bei der Ausgangsbehörde
+      eingelegt. Der Widerspruchsbescheid liegt vor. Die Klagefrist (§ 74 Abs. 1 S. 1 VwGO)
+      lief bis zum 23. Juni; die Klage vom 20. Juni ist fristgerecht.
+  - prompt: Wer ist richtiger Beklagter?
+    erwartung: Nach dem Rechtsträgerprinzip (§ 78 Abs. 1 Nr. 1 VwGO) ist die Stadt S zu verklagen,
+      nicht der Oberbürgermeister. Die Bezeichnung ist durch Auslegung (§ 88 VwGO) als Klage gegen die Stadt zu verstehen und im Rubrum zu berichtigen. Die Klage ist daher insgesamt zulässig.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Verwaltungsrechtsweg nach § 40 Abs. 1 S. 1 VwGO bejaht (öffentlich-rechtliche
+        Streitigkeit nach Sonderrechtstheorie)
+      weight: 2.0
+      required: true
+      norms:
+      - § 40 Abs. 1 VwGO
+      keywords:
+      - modifizierte Subjektstheorie
+      - Sonderrechtstheorie
+      - § 40 Abs. 1 S. 1 VwGO
+      - Verwaltungsrechtsweg
+      - öffentlich-rechtliche Streitigkeit
+      card_slugs:
+      - or-vwgo-sev-rechtsweg-40-abs1
+      - or-vwgo-sev-abgrenzung-theorien
+    - id: p2
+      label: Beteiligten- und Prozessfähigkeit der GmbH sowie Klagebefugnis als Adressatin
+        geprüft
+      weight: 1.5
+      required: false
+      norms:
+      - § 61 VwGO
+      - § 62 VwGO
+      - § 42 Abs. 2 VwGO
+      keywords:
+      - § 61 Nr. 1 VwGO
+      - juristische Person
+      - § 62 Abs. 3 VwGO
+      - Geschäftsführer
+      - Adressatentheorie
+      - Art. 2 Abs. 1 GG
+      card_slugs:
+      - or-vwgo-sev-beteiligten-prozessfaehigkeit
+      - or-vwgo-sev-klagebefugnis-vertiefung
+    - id: p3
+      label: Widerspruch fristgerecht (§ 70 Abs. 1 VwGO) und Klagefrist gewahrt
+      weight: 2.0
+      required: true
+      norms:
+      - § 70 Abs. 1 VwGO
+      - § 74 Abs. 1 VwGO
+      keywords:
+      - § 70 Abs. 1 VwGO
+      - Widerspruchsfrist
+      - Monat nach Bekanntgabe
+      - § 74 Abs. 1 S. 1 VwGO
+      - Widerspruchsbescheid
+      - fristgerecht
+      card_slugs:
+      - or-vwgo-sev-widerspruch-statthaft-frist
+    - id: p4
+      label: 'Richtiger Beklagter: Stadt als Rechtsträger (§ 78 Abs. 1 Nr. 1 VwGO), Auslegung
+        der Klage gegen den Oberbürgermeister'
+      weight: 3.0
+      required: true
+      norms:
+      - § 78 Abs. 1 VwGO
+      - § 88 VwGO
+      keywords:
+      - Rechtsträgerprinzip
+      - § 78 Abs. 1 Nr. 1 VwGO
+      - Rubrum
+      - Rubrumsberichtigung
+      - Auslegung
+      - Körperschaft
+      card_slugs:
+      - or-vwgo-sev-richtiger-klagegegner-78
+    - id: p5
+      label: 'Ergebnis: Klage ist zulässig'
+      weight: 1.0
+      required: false
+      keywords:
+      - Klage ist zulässig
+      - insgesamt zulässig
+      - Klage wäre zulässig
+      - zulässige Anfechtungsklage
+      card_slugs:
+      - or-vwgo-sev-rechtsweg-40-abs1

@@ -103,6 +103,23 @@ Spalten). Praktisch bedeutet das:
   CREATE INDEX ix_topics_bundesland ON topics (bundesland);
   ```
 
+- **Lernkern (fix/srs):** `user_cards.step` (Lernschritt-Index) und der
+  Idempotenz-Schluessel `reviews (user_id, client_id)` pro Nutzer statt global.
+  Diese zwei Aenderungen gleicht `backend/app/db_migrate.py` beim
+  Backend-Start **automatisch und idempotent** ab (SQLite und PostgreSQL), es
+  ist kein manueller Schritt noetig. Faellt der DB-Nutzer ohne DDL-Rechte aus,
+  loggt der Start `Migration fehlgeschlagen` und laeuft weiter; dann manuell:
+
+  ```sql
+  ALTER TABLE user_cards ADD COLUMN step INTEGER NOT NULL DEFAULT 0;
+  DROP INDEX ix_reviews_client_id;                       -- war UNIQUE
+  CREATE INDEX ix_reviews_client_id ON reviews (client_id);
+  CREATE UNIQUE INDEX uq_reviews_user_client ON reviews (user_id, client_id);
+  ```
+
+  Bestehende `learning`/`relearning`-Karten starten mit `step = 0` (erster
+  Lernschritt) - unkritisch, die Karte durchlaeuft dann die Schritte einmal neu.
+
 ### 2.3 Web-Build
 
 Zugeliefert von SUB-90 (Frontend-Developer, vollstaendig lokal verifiziert,

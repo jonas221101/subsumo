@@ -1,0 +1,327 @@
+topic:
+  slug: zr-bt-schenkung
+  area: zivilrecht
+  title: Schenkung, §§ 516 ff. BGB
+  parent: zr-bgb-at
+  relevance: 3
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-schenk-begriff
+  type: definition
+  front: 'Definiere: Schenkung, § 516 Abs. 1 BGB'
+  back: Eine Schenkung ist eine Zuwendung, durch die jemand aus seinem Vermögen einen anderen
+    bereichert, wenn beide Teile darüber einig sind, dass die Zuwendung unentgeltlich erfolgt
+    (§ 516 Abs. 1 BGB). Erforderlich sind danach eine Zuwendung (Vermögensverschiebung), die
+    Bereicherung des Empfängers auf Kosten des Zuwendenden, und die Einigung über die Unentgeltlichkeit.
+    Unentgeltlich ist die Zuwendung, wenn ihr keine Gegenleistung gegenübersteht, die nach
+    dem Parteiwillen im Austausch geschuldet ist. Die Schenkung kann als Handschenkung durch
+    sofortigen Vollzug oder als Schenkungsversprechen erfolgen, das zu einer Verpflichtung
+    führt. Wird die Zuwendung ohne den Willen des anderen gemacht, kann der Zuwendende ihn
+    unter Fristsetzung zur Erklärung auffordern; nach Fristablauf gilt die Schenkung als angenommen,
+    wenn er sie nicht vorher abgelehnt hat (§ 516 Abs. 2 BGB). Abzugrenzen sind Gefälligkeiten
+    ohne Rechtsbindungswillen, Leihe und Verzicht.
+  norms:
+  - § 516 Abs. 1 BGB
+  - § 516 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-schenk-form-518
+  type: norm
+  front: Welche Form verlangt das Schenkungsversprechen (§ 518 BGB)?
+  back: 'Zur Gültigkeit eines Vertrags, durch den eine Leistung schenkweise versprochen wird,
+    ist die notarielle Beurkundung des Versprechens erforderlich (§ 518 Abs. 1 S. 1 BGB);
+    das gilt auch für ein Schuldversprechen oder Schuldanerkenntnis (§ 518 Abs. 1 S. 2 BGB).
+    Die Form schützt den Schenker vor Übereilung und erleichtert den Nachweis. Der Mangel
+    der Form wird durch die Bewirkung der versprochenen Leistung geheilt (§ 518 Abs. 2 BGB).
+    Das gilt nicht für die Handschenkung, bei der es kein Versprechen gibt: Wird die Leistung
+    sofort bewirkt (etwa Übereignung nach § 929 S. 1 BGB), ist keine Form nötig, und die Schenkung
+    ist Rechtsgrund des Erwerbs. Bei Grundstücken muss neben der Beurkundung des Schenkungsvertrags
+    die Auflassung und Eintragung folgen (§§ 873, 925 BGB); mit der Eintragung wird der Formmangel
+    des Vertrags nach § 311b Abs. 1 S. 2 BGB geheilt.'
+  norms:
+  - § 518 Abs. 1 BGB
+  - § 518 Abs. 2 BGB
+  - § 929 BGB
+  - § 311b Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-schenk-haftung-521-524
+  type: norm
+  front: Wie haftet der Schenker für Pflichtverletzungen und Mängel (§§ 521 bis 524 BGB)?
+  back: 'Der Schenker hat nur Vorsatz und grobe Fahrlässigkeit zu vertreten (§ 521 BGB), weil
+    er unentgeltlich leistet. Verzugszinsen schuldet er nicht (§ 522 BGB). Für Rechtsmängel
+    haftet er nur, wenn er den Mangel arglistig verschwiegen hat; dann muss er dem Beschenkten
+    den daraus entstehenden Schaden ersetzen (§ 523 Abs. 1 BGB). Entsprechendes gilt für Sachmängel:
+    Auch hier haftet er nur bei arglistigem Verschweigen (§ 524 Abs. 1 BGB); bei einer nur
+    der Gattung nach bestimmten Sache kann der Beschenkte in diesem Fall außerdem Lieferung
+    einer mangelfreien Sache verlangen (§ 524 Abs. 2 BGB). Das Kaufrecht mit seinen Mängelrechten
+    (§ 437 BGB) findet nicht Anwendung. Praktische Folge: Wer ein Geschenk mit versteckten
+    Mängeln erhält, hat nur bei Arglist Ansprüche.'
+  norms:
+  - § 521 BGB
+  - § 522 BGB
+  - § 523 BGB
+  - § 524 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-schenk-notbedarf-528
+  type: norm
+  front: Wann kann der Schenker das Geschenk wegen Verarmung zurückfordern (§§ 528, 529 BGB)?
+  back: Ist der Schenker nach Vollzug der Schenkung außerstande, seinen angemessenen Unterhalt
+    zu bestreiten und die ihm gesetzlich obliegenden Unterhaltspflichten zu erfüllen, kann
+    er vom Beschenkten die Herausgabe des Geschenks nach den Vorschriften über die Herausgabe
+    einer ungerechtfertigten Bereicherung verlangen (§ 528 Abs. 1 S. 1 BGB, Rechtsfolgenverweisung
+    auf §§ 818 ff. BGB). Der Beschenkte kann die Herausgabe abwenden, indem er den für den
+    Unterhalt erforderlichen Betrag zahlt (§ 528 Abs. 1 S. 2 BGB). Der Anspruch ist ausgeschlossen,
+    wenn der Schenker seine Bedürftigkeit vorsätzlich oder grob fahrlässig herbeigeführt hat
+    oder zur Zeit des Eintritts der Bedürftigkeit seit der Leistung des Geschenks zehn Jahre
+    verstrichen sind (§ 529 Abs. 1 BGB), sowie, wenn der Beschenkte bei Berücksichtigung seiner
+    sonstigen Verpflichtungen außerstande ist, das Geschenk herauszugeben, ohne dass sein
+    standesmäßiger Unterhalt oder die Erfüllung seiner gesetzlichen Unterhaltspflichten gefährdet wird (§ 529 Abs. 2 BGB). Bei einem nicht teilbaren Geschenk ist der Anspruch nach der Rechtsprechung auf den zur Deckung des Bedarfs erforderlichen Betrag beschränkt. Praktisch bedeutsam ist, dass der Anspruch vom Sozialhilfeträger auf sich übergeleitet werden kann (§ 93 SGB XII).
+  norms:
+  - § 528 Abs. 1 BGB
+  - § 529 Abs. 1 BGB
+  - § 529 Abs. 2 BGB
+  - § 818 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-schenk-widerruf-530
+  type: norm
+  front: Unter welchen Voraussetzungen kann eine Schenkung wegen groben Undanks widerrufen
+    werden (§§ 530 ff. BGB)?
+  back: Der Schenker kann die Schenkung widerrufen, wenn sich der Beschenkte durch eine schwere
+    Verfehlung gegen den Schenker oder einen nahen Angehörigen groben Undanks schuldig macht
+    (§ 530 Abs. 1 BGB). Eine schwere Verfehlung setzt objektiv ein erhebliches Fehlverhalten
+    und subjektiv eine tadelnswerte Gesinnung voraus, die gegen die durch die Schenkung begründete
+    Dankbarkeitspflicht verstößt (etwa Straftaten gegen den Schenker). Der Widerruf erfolgt
+    durch Erklärung gegenüber dem Beschenkten (§ 531 Abs. 1 BGB); ist die Schenkung widerrufen,
+    kann das Geschenk nach den Vorschriften über die Herausgabe einer ungerechtfertigten Bereicherung
+    zurückgefordert werden (§ 531 Abs. 2 BGB). Der Widerruf ist ausgeschlossen, wenn der Schenker
+    dem Beschenkten verziehen hat oder ein Jahr seit Kenntnis des Schenkers verstrichen ist
+    (§ 532 BGB). Auf das Widerrufsrecht kann erst nach Eintritt des Undanks verzichtet werden
+    (§ 533 BGB).
+  norms:
+  - § 530 Abs. 1 BGB
+  - § 531 BGB
+  - § 532 BGB
+  - § 533 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-schenk-auflage-gemischt
+  type: definition
+  front: 'Definiere: Schenkung unter Auflage und gemischte Schenkung'
+  back: Bei der Schenkung unter Auflage (§ 525 Abs. 1 BGB) verpflichtet sich der Beschenkte
+    zu einer Leistung, die ihm der Schenker auferlegt, etwa zu einer Pflege oder einem Wohnrecht;
+    die Auflage ist keine Gegenleistung im Gegenseitigkeitsverhältnis, sondern mindert die
+    Bereicherung. Der Schenker kann die Vollziehung verlangen, wenn er seinerseits geleistet hat (§ 525 Abs. 1 BGB); liegt sie im öffentlichen Interesse, kann nach seinem Tod auch die zuständige Behörde Vollziehung verlangen (§ 525 Abs. 2 BGB). Eine gemischte Schenkung
+    liegt vor, wenn die Zuwendung teils entgeltlich und teils unentgeltlich ist und die Parteien
+    sich über die Teilunentgeltlichkeit einig sind, etwa bei einem Verkauf deutlich unter
+    Wert. Nach der Rechtsprechung gilt das Schenkungsrecht für den unentgeltlichen Teil; bei
+    einheitlichem Geschäft entscheidet der Wille der Parteien. Entscheidend ist ein auffälliges,
+    den Parteien bewusstes Missverhältnis von Leistung und Gegenleistung.
+  norms:
+  - § 525 BGB
+  - § 516 Abs. 1 BGB
+  - § 516 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-schenk-abgrenzung-2301
+  type: norm
+  front: Wie wird die Schenkung von Verfügungen von Todes wegen abgegrenzt (§ 2301 BGB)?
+  back: Auf ein Schenkungsversprechen, das unter der Bedingung erteilt wird, dass der Beschenkte
+    den Schenker überlebt, finden die Vorschriften über Verfügungen von Todes wegen Anwendung
+    (§ 2301 Abs. 1 S. 1 BGB), sodass die Formvorschriften des Erbrechts gelten. Das Schenkungsversprechen
+    müsste also den Formen eines Testaments oder Erbvertrags genügen; die Beurkundung nach
+    § 518 BGB reicht nicht. Wird die Schenkung dagegen vollzogen, indem der Schenker die Zuwendung
+    bereits zu Lebzeiten bewirkt, gelten die Vorschriften über Schenkungen unter Lebenden
+    (§ 2301 Abs. 2 BGB). Praktisch wird die Vollziehung vor dem Tod durch eine Vollmacht über
+    den Tod hinaus oder durch Verträge zugunsten Dritter (§ 328 BGB) erreicht. Die Abgrenzung
+    entscheidet über Form und Rechtsfolgen und ist ein Klausurklassiker im Grenzbereich von
+    Schuld- und Erbrecht.
+  norms:
+  - § 2301 Abs. 1 BGB
+  - § 2301 Abs. 2 BGB
+  - § 518 BGB
+  - § 328 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-schenk-unbenannte-zuwendung
+  type: definition
+  front: 'Abgrenzung: Schenkung und unbenannte (ehebezogene) Zuwendung'
+  back: Zuwendungen unter Ehegatten, die um der Ehe willen und zur Verwirklichung der ehelichen
+    Lebensgemeinschaft erbracht werden, sind nach der Rechtsprechung des BGH keine Schenkung
+    im Sinne des § 516 BGB, weil ihnen die Einigung über die Unentgeltlichkeit fehlt, wenn
+    sie als Beitrag zur Ausgestaltung der Lebensgemeinschaft gedacht sind. Sie sind unbenannte
+    (ehebezogene) Zuwendungen. Folge ist, dass die Formvorschrift des § 518 BGB nicht gilt
+    und ein Rückforderungsrecht wegen groben Undanks (§ 530 BGB) nicht besteht. Bei Scheitern
+    der Ehe kommt eine Rückforderung wegen Wegfalls der Geschäftsgrundlage (§ 313 BGB) in
+    Betracht, soweit der Zugewinnausgleich zu keinem angemessenen Ergebnis führt. Für Zuwendungen
+    unter Lebenspartnern oder nichtehelichen Partnern gelten ähnliche Grundsätze. Auf Zuwendungen
+    im Rahmen der Altersvorsorge oder Vermögensübertragung zwischen Eltern und Kindern ist
+    dagegen regelmäßig Schenkungsrecht anwendbar.
+  norms:
+  - § 516 BGB
+  - § 518 BGB
+  - § 530 BGB
+  - § 313 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-schenk-notbedarf
+  title: Rückforderung wegen Notbedarfs, § 528 BGB
+  norms:
+  - § 516 BGB
+  - § 518 BGB
+  - § 528 BGB
+  - § 529 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Wirksame Schenkung, § 516 BGB
+    hinweis: Zuwendung, Bereicherung, Einigung über Unentgeltlichkeit; Form nach § 518 BGB
+      bzw. Vollzug.
+  - label: II. Vollzug der Schenkung
+    hinweis: Leistung des geschenkten Gegenstands an den Beschenkten.
+  - label: III. Bedürftigkeit des Schenkers, § 528 Abs. 1 S. 1 BGB
+    hinweis: Außerstande, den angemessenen Unterhalt zu bestreiten und gesetzliche Unterhaltspflichten
+      zu erfüllen.
+  - label: IV. Kein Ausschluss, § 529 BGB
+    children:
+    - label: 1. Keine vorsätzliche oder grob fahrlässige Herbeiführung der Bedürftigkeit
+    - label: 2. Zehnjahresfrist, § 529 Abs. 1 BGB
+    - label: 3. Keine Gefährdung des Unterhalts des Beschenkten, § 529 Abs. 2 BGB
+  - label: V. Rechtsfolge
+    hinweis: Herausgabe nach §§ 812 ff. BGB (Rechtsfolgenverweisung); Abwendungsbefugnis durch
+      Zahlung, § 528 Abs. 1 S. 2 BGB.
+faelle:
+- slug: zr-fall-schenk-heim
+  title: Das Haus und die Heimkosten
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: Die verwitwete Mutter M schenkt ihrem Sohn S vor vier Jahren ihr lastenfreies Hausgrundstück
+    (Wert 250.000 Euro). Der Vertrag wird notariell beurkundet, die Auflassung erklärt und
+    S als Eigentümer in das Grundbuch eingetragen. M behält keine weiteren Vermögenswerte
+    außer einem Girokonto mit geringem Guthaben und bezieht eine Rente von monatlich 1.900
+    Euro. Nach einem Schlaganfall muss M in ein Pflegeheim ziehen; die Heimkosten betragen
+    monatlich 3.200 Euro, wovon die Pflegeversicherung 700 Euro trägt. Den restlichen Betrag
+    kann M nicht aufbringen, die verbleibende Lücke beträgt 600 Euro. M hat ihre Bedürftigkeit
+    weder vorsätzlich noch grob fahrlässig herbeigeführt. S verdient als Beamter 4.500 Euro
+    netto monatlich, hat keine Unterhaltspflichten gegenüber anderen und könnte die Beträge
+    aufbringen.
+  question: Kann M von S Herausgabe des Hausgrundstücks verlangen, und wie kann S sich dagegen
+    wehren?
+  steps:
+  - prompt: Welche Anspruchsgrundlage kommt in Betracht, und liegt eine wirksame Schenkung
+      vor?
+    erwartung: § 528 Abs. 1 S. 1 BGB. Die Zuwendung des Grundstücks war eine Schenkung (§
+      516 Abs. 1 BGB), der Vertrag wurde notariell beurkundet (§ 518 Abs. 1 BGB) und vollzogen
+      (Auflassung und Eintragung).
+  - prompt: Ist M bedürftig im Sinne des § 528 Abs. 1 S. 1 BGB?
+    erwartung: Ja. Nach Vollzug der Schenkung kann M ihren angemessenen Unterhalt nicht mehr
+      aus eigenen Mitteln bestreiten, denn Rente und Pflegeversicherung decken die Heimkosten
+      nicht; es verbleibt eine monatliche Lücke von 600 Euro.
+  - prompt: Liegt ein Ausschlussgrund nach § 529 BGB vor?
+    erwartung: Nein. Seit der Leistung sind vier, also weniger als zehn Jahre vergangen (§
+      529 Abs. 1 BGB). M hat die Bedürftigkeit weder vorsätzlich noch grob fahrlässig herbeigeführt.
+      S wird durch die Herausgabe in seinem angemessenen Unterhalt nicht gefährdet (§ 529
+      Abs. 2 BGB).
+  - prompt: Welche Rechtsfolge ergibt sich, und welche Abwendungsmöglichkeit hat S?
+    erwartung: M kann Herausgabe des Geschenks nach den Vorschriften über die Herausgabe einer ungerechtfertigten Bereicherung verlangen (§ 528 Abs. 1 S. 1 BGB). Weil der Bedarf nur 600 Euro monatlich beträgt und ein Grundstück nicht teilbar ist, richtet sich der Anspruch nach der Rechtsprechung auf den jeweils erforderlichen Betrag. S kann die Herausgabe nach § 528 Abs. 1 S. 2 BGB durch laufende Zahlung des für den Unterhalt erforderlichen Betrags, hier 600 Euro monatlich, abwenden.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Wirksame Schenkung (notarielle Beurkundung, Vollzug durch Auflassung und Eintragung),
+        § 516 Abs. 1, § 518 BGB
+      weight: 1.5
+      required: false
+      norms:
+      - § 516 Abs. 1 BGB
+      - § 518 BGB
+      keywords:
+      - Schenkung
+      - § 516 BGB
+      - Unentgeltlichkeit
+      - notarielle Beurkundung
+      - § 518 BGB
+      - vollzogen
+      card_slugs:
+      - zr-schenk-begriff
+      - zr-schenk-form-518
+    - id: p2
+      label: 'Bedürftigkeit der Schenkerin: Einkommen deckt den Unterhalt nicht, § 528 Abs.
+        1 S. 1 BGB'
+      weight: 3.0
+      required: true
+      norms:
+      - § 528 Abs. 1 BGB
+      keywords:
+      - Notbedarf
+      - Bedürftigkeit
+      - Verarmung
+      - angemessener Unterhalt
+      - außerstande
+      - § 528 BGB
+      card_slugs:
+      - zr-schenk-notbedarf-528
+    - id: p3
+      label: 'Ausschluss nach § 529 BGB scheidet aus: weder Zehnjahresfrist noch selbstverschuldete Bedürftigkeit noch Gefährdung des Unterhalts des Sohnes'
+      weight: 2.0
+      required: true
+      norms:
+      - § 529 Abs. 1 BGB
+      - § 529 Abs. 2 BGB
+      keywords:
+      - § 529 BGB
+      - zehn Jahre
+      - Zehnjahresfrist
+      - grob fahrlässig
+      - Unterhalt des Beschenkten
+      card_slugs:
+      - zr-schenk-notbedarf-528
+    - id: p4
+      label: 'Rechtsfolge: Herausgabe nach Bereicherungsrecht (Rechtsfolgenverweisung auf
+        §§ 818 ff. BGB)'
+      weight: 2.0
+      required: false
+      norms:
+      - § 818 BGB
+      - § 528 Abs. 1 BGB
+      keywords:
+      - Bereicherungsrecht
+      - § 818 BGB
+      - Herausgabe des Geschenks
+      - Rechtsfolgenverweisung
+      - Wertersatz
+      card_slugs:
+      - zr-schenk-notbedarf-528
+    - id: p5
+      label: Abwendungsbefugnis des Beschenkten durch Zahlung des Unterhaltsbetrags, § 528
+        Abs. 1 S. 2 BGB
+      weight: 2.0
+      required: true
+      norms:
+      - § 528 Abs. 1 BGB
+      keywords:
+      - abwenden
+      - Abwendungsbefugnis
+      - § 528 Abs. 1 S. 2
+      - Zahlung des Unterhalts
+      - laufende Zahlung
+      card_slugs:
+      - zr-schenk-notbedarf-528

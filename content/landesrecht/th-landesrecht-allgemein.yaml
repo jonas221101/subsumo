@@ -1,7 +1,7 @@
 topic:
   slug: th-landesrecht-allgemein
   area: oeffentliches-recht
-  title: 'Landesrecht Thueringen: Verfassung, Verwaltungsverfahren, Kommunal- und Baurecht'
+  title: 'Landesrecht Thüringen: Verfassung, Verwaltungsverfahren, Kommunal- und Baurecht'
   parent: or-vwvfg-verwaltungsakt
   bundesland: TH
   relevance: 4
@@ -13,55 +13,53 @@ topic:
 cards:
 - slug: th-lra-vwvfg
   type: norm
-  front: Welches Verwaltungsverfahrensgesetz gilt fuer Landesbehoerden in Thueringen?
-  back: Thueringer Verwaltungsverfahrensgesetz (ThuerVwVfG) - Vollgesetz. Das VwVfG des Bundes gilt nur
-    fuer Bundesbehoerden (§ 1 VwVfG); fuer Landes- und Kommunalbehoerden ist das Landesgesetz massgeblich.
+  front: Welches Verwaltungsverfahrensgesetz gilt für Landesbehörden in Thüringen?
+  back: Thüringer Verwaltungsverfahrensgesetz (ThürVwVfG) - Verweisungsgesetz. Nach § 1 Abs. 1 ThürVwVfG gelten für die Verwaltungstätigkeit der Landes- und Kommunalbehörden dieses Gesetz und das VwVfG des Bundes (mit Ausnahme einzelner Vorschriften), soweit nicht Landesrecht inhaltsgleiche oder entgegenstehende Bestimmungen enthält. Das VwVfG des Bundes gilt nur
+    für Bundesbehörden (§ 1 VwVfG); für Landes- und Kommunalbehörden ist das Landesgesetz maßgeblich.
     Bei Verweisungsgesetzen werden die Bundesnormen 'entsprechend' angewendet und sind so zu zitieren
     (z. B. '§ 35 VwVfG i. V. m. § 1 des Landesgesetzes'), bei Vollgesetzen ist die Landesnorm selbst zu
     zitieren.
   norms:
-  - Thueringer Verwaltungsverfahrensgesetz (ThuerVwVfG) - Vollgesetz
+  - Thüringer Verwaltungsverfahrensgesetz (ThürVwVfG) - Verweisung auf das VwVfG des Bundes (§ 1 Abs. 1 ThürVwVfG)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: th-lra-verfassungsgericht
   type: norm
-  front: Gibt es in Thueringen eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
-  back: 'Ja - Art. 80 Abs. 1 Nr. 1 ThuerVerf. Zustaendiges Gericht: Thueringer Verfassungsgerichtshof
-    auf Grundlage der Verfassung des Freistaats Thueringen (ThuerVerf). Verfahrensgegenstand ist nur die
-    Verletzung von Landesgrundrechten durch Landesstaatsgewalt; Bundesrecht ist Pruefungsmassstab nur,
-    soweit die Landesverfassung darauf verweist. Daneben steht immer die Verfassungsbeschwerde zum BVerfG
-    (Art. 93 Abs. 1 Nr. 4a GG).'
+  front: Gibt es in Thüringen eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
+  back: 'Ja - Art. 80 Abs. 1 Nr. 1 ThürVerf. Zuständiges Gericht: Thüringer Verfassungsgerichtshof auf
+    Grundlage der Verfassung des Freistaats Thüringen (ThürVerf). Verfahrensgegenstand ist nur die Verletzung
+    von Landesgrundrechten durch Landesstaatsgewalt; Bundesrecht ist Prüfungsmaßstab nur, soweit die Landesverfassung
+    darauf verweist. Daneben steht immer die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
   norms:
-  - Verfassung des Freistaats Thueringen (ThuerVerf)
+  - Verfassung des Freistaats Thüringen (ThürVerf)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: th-lra-kommunalverfassung
   type: norm
-  front: Welches Gesetz regelt die Kommunalverfassung in Thueringen und welche Hauptorgane hat die Gemeinde?
-  back: 'Thueringer Kommunalordnung (ThuerKO): Gemeinderat und Buergermeister. Grundlage ist die Selbstverwaltungsgarantie
+  front: Welches Gesetz regelt die Kommunalverfassung in Thüringen und welche Hauptorgane hat die Gemeinde?
+  back: 'Thüringer Kommunalordnung (ThürKO): Gemeinderat und Bürgermeister. Grundlage ist die Selbstverwaltungsgarantie
     (Art. 28 Abs. 2 GG und Landesverfassung): eigenverantwortliche Regelung aller Angelegenheiten der
-    oertlichen Gemeinschaft. Klausurklassiker: Zustaendigkeitsstreit zwischen Vertretung und Verwaltungsspitze,
+    örtlichen Gemeinschaft. Klausurklassiker: Zuständigkeitsstreit zwischen Vertretung und Verwaltungsspitze,
     Kommunalverfassungsstreit, Rechtsaufsicht.'
   norms:
-  - 'Thueringer Kommunalordnung (ThuerKO): Gemeinderat und Buergermeister'
+  - 'Thüringer Kommunalordnung (ThürKO): Gemeinderat und Bürgermeister'
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: th-lra-bauordnung
   type: norm
-  front: Wie heisst die Bauordnung in Thueringen und wie ist eine Baugenehmigung zu pruefen?
-  back: 'Thueringer Bauordnung (ThuerBO). Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben keine
-    oeffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungs-beduerftigkeit (Errichtung, Aenderung,
-    Nutzungsaenderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulaessigkeit nach §§ 29 ff.
-    BauGB (Bundesrecht), bauordnungsrechtliche Zulaessigkeit nach der Landesbauordnung (Abstandsflaechen,
-    Gestaltung, Stellplaetze).'
+  front: Wie heißt die Bauordnung in Thüringen und wie ist eine Baugenehmigung zu prüfen?
+  back: 'Thüringer Bauordnung (ThürBO). Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben keine öffentlich-rechtlichen
+    Vorschriften entgegenstehen: Genehmigungsbedürftigkeit (Errichtung, Änderung, Nutzungsänderung), keine
+    Genehmigungsfreiheit, bauplanungsrechtliche Zulässigkeit nach §§ 29 ff. BauGB (Bundesrecht), bauordnungsrechtliche
+    Zulässigkeit nach der Landesbauordnung (Abstandsflächen, Gestaltung, Stellplätze).'
   norms:
-  - Thueringer Bauordnung (ThuerBO)
+  - Thüringer Bauordnung (ThürBO)
   - §§ 29 ff. BauGB
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -69,11 +67,11 @@ cards:
   stand: 2026-09
 - slug: th-lra-pflichtstoff
   type: definition
-  front: Welche Landesrechtsgebiete gehoeren in Thueringen zum Pflichtstoff des Oeffentlichen Rechts?
-  back: Polizei- und Ordnungsrecht (ThuerPAG, ThuerOBG); Kommunalrecht (ThuerKO); Bauordnungsrecht (ThuerBO);
+  front: Welche Landesrechtsgebiete gehören in Thüringen zum Pflichtstoff des Öffentlichen Rechts?
+  back: Polizei- und Ordnungsrecht (ThürPAG, ThürOBG); Kommunalrecht (ThürKO); Bauordnungsrecht (ThürBO);
     Landesverfassung. Landesrecht wird im Examen fast nie isoliert, sondern eingebettet in eine verwaltungsprozessuale
-    Einkleidung (Anfechtungs-/Verpflichtungsklage, vorlaeufiger Rechtsschutz) geprueft - die Landesnorm
-    ist die Ermaechtigungsgrundlage, der Aufbau bleibt der allgemeine.
+    Einkleidung (Anfechtungs-/Verpflichtungsklage, vorläufiger Rechtsschutz) geprüft - die Landesnorm
+    ist die Ermächtigungsgrundlage, der Aufbau bleibt der allgemeine.
   norms: []
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)

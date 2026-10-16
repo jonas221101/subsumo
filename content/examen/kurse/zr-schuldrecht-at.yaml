@@ -4,19 +4,24 @@ kurs:
   area: zivilrecht
   semester_default: 2
   examenskurs: false
-  stand: 2026-09
+  stand: 2026-10
   quellen:
-  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: 'Leistungsstoerungsrecht: Unmoeglichkeit, Verzug, Schadensersatz statt der Leistung, Ruecktritt,
-    vorvertragliche Pflichten und AGB-Kontrolle.'
+  beschreibung: 'Leistungsstörungsrecht und allgemeines Schuldrecht: Vertretenmüssen und Gehilfenzurechnung, Unmöglichkeit,
+    Verzug, Gläubigerverzug, Schadensersatz statt der Leistung, Rücktritt, vorvertragliche Pflichten, AGB-Kontrolle,
+    Abtretung, Schuldübernahme, Erlöschen, Gesamtschuld, Verträge mit Drittwirkung, Störung der Geschäftsgrundlage,
+    Verbraucherwiderruf und Schadensrecht (§§ 249-254 BGB). Der Pflichtstoff ist abgedeckt.'
   lernziele:
   - Das System der §§ 280 ff. BGB als Anspruchsgrundlagen-Baukasten beherrschen
-  - Unmoeglichkeit (§ 275 BGB) und ihre Rechtsfolgen (§§ 283, 326 BGB) pruefen
-  - Verzug und Ruecktritt in der Klausur sauber voneinander trennen
-  - AGB-Kontrolle als Einbettung in einen Vertragsfall anwenden
+  - Vertretenmüssen (§§ 276, 278 BGB) und Gehilfenzurechnung in der Klausur sauber prüfen
+  - Unmöglichkeit (§ 275 BGB) und ihre Rechtsfolgen (§§ 283, 326 BGB) prüfen
+  - Verzug, Gläubigerverzug und Rücktritt in der Klausur sauber voneinander trennen
+  - Erlöschenstatbestände, Gesamtschuld und Gesamtschuldnerausgleich anwenden
+  - Verträge mit Drittwirkung (§ 328 BGB, Schutzwirkung, Drittschadensliquidation) abgrenzen
+  - AGB-Kontrolle und Verbraucherwiderruf als Einbettung in einen Vertragsfall anwenden
   klausurformat:
-    typ: Anfaengerklausur
+    typ: Anfängerklausur
     minuten: 120
   topic_slugs:
   - zr-schuldrecht-at-unmoeglichkeit
@@ -25,5 +30,15 @@ kurs:
   - zr-schuldrecht-at-ruecktritt
   - zr-schuldrecht-at-cic
   - zr-schuldrecht-at-agb-kontrolle
+  - zr-abtretung-398
+  - zr-schadensrecht-249-254
+  - zr-sat-vertretenmuessen-278
+  - zr-sat-glaeubigerverzug
+  - zr-sat-erloeschen
+  - zr-sat-gesamtschuld-regress
+  - zr-sat-vertrag-dritte
+  - zr-sat-schulduebernahme-beitritt
+  - zr-sat-stoerung-geschaeftsgrundlage-313
+  - zr-sat-verbraucherwiderruf
   landesrecht_kategorien: []
   fehlende_themen: []

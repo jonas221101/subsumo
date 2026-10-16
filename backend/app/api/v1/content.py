@@ -7,8 +7,8 @@ import json
 
 from fastapi import APIRouter, Query
 
-from app.api.deps import DbSession
-from app.models import Card, Case, Schema, Topic
+from app.api.deps import DbSession, OptionalUser
+from app.models import Card, Case, Schema, Topic, User
 from app.schemas import CardOut, CaseSummaryOut, SchemaOut, TopicOut
 
 router = APIRouter(prefix="/content", tags=["content"])
@@ -65,29 +65,57 @@ def cards(
     db: DbSession,
     topic: str | None = None,
     type: str | None = None,
-    limit: int = Query(default=500, le=2000),
+    limit: int = Query(default=500, ge=1, le=10000),
+    offset: int = Query(default=0, ge=0),
 ) -> list[Card]:
     query = db.query(Card)
     if topic:
         query = query.filter(Card.topic_slug == topic)
     if type:
         query = query.filter(Card.type == type)
-    return query.order_by(Card.slug).limit(limit).all()
+    return query.order_by(Card.slug).offset(offset).limit(limit).all()
+
+
+def topic_bundeslaender(db: DbSession) -> dict[str, str]:
+    """Themen-Slug -> Bundesland-Code, nur fuer Landesrecht-Themen."""
+    rows = db.query(Topic.slug, Topic.bundesland).filter(Topic.bundesland.isnot(None)).all()
+    return {slug: land for slug, land in rows}
+
+
+def annotate_bundesland(db: DbSession, items: list, user: User | None = None, *, filtern=False):
+    """Setzt ``bundesland`` an Faellen/Schemata; filtert optional auf das Nutzerland.
+
+    Landesrecht-Inhalte sieht nur, wer das passende Bundesland im Profil hat;
+    ohne Nutzer oder ohne Bundesland bleibt nur das Bundesrecht (wie bei
+    ``examen.visible_topics_query``).
+    """
+    lands = topic_bundeslaender(db)
+    out = []
+    for item in items:
+        land = lands.get(item.topic_slug)
+        if filtern and land is not None and (user is None or user.bundesland != land):
+            continue
+        item.bundesland = land
+        out.append(item)
+    return out
 
 
 @router.get("/schemata", response_model=list[SchemaOut])
-def schemata(db: DbSession, area: str | None = None, topic: str | None = None) -> list[Schema]:
+def schemata(
+    db: DbSession, user: OptionalUser, area: str | None = None, topic: str | None = None
+) -> list[Schema]:
     query = db.query(Schema)
     if area:
         query = query.filter(Schema.area == area)
     if topic:
         query = query.filter(Schema.topic_slug == topic)
-    return query.order_by(Schema.slug).all()
+    return annotate_bundesland(db, query.order_by(Schema.slug).all(), user, filtern=True)
 
 
 @router.get("/cases", response_model=list[CaseSummaryOut])
 def cases(
     db: DbSession,
+    user: OptionalUser,
     area: str | None = None,
     max_difficulty: int | None = Query(default=None, ge=1, le=5),
 ) -> list[Case]:
@@ -96,4 +124,6 @@ def cases(
         query = query.filter(Case.area == area)
     if max_difficulty:
         query = query.filter(Case.difficulty <= max_difficulty)
-    return query.order_by(Case.difficulty, Case.slug).all()
+    return annotate_bundesland(
+        db, query.order_by(Case.difficulty, Case.slug).all(), user, filtern=True
+    )

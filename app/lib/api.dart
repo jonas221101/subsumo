@@ -9,11 +9,21 @@ const String kApiBase = String.fromEnvironment(
   defaultValue: 'http://localhost:8000',
 );
 
+/// Geschlossener Test-Zugang (ops/beta): keine Registrierung, Start direkt in
+/// der App, Feedback-Knopf in der Kopfleiste.
+/// `flutter build web --dart-define=SUBSUMO_BETA=true`
+const bool kBetaMode = bool.fromEnvironment('SUBSUMO_BETA');
+
 class ApiException implements Exception {
-  ApiException(this.statusCode, this.message, {this.upgradeRequired = false});
+  ApiException(this.statusCode, this.message,
+      {this.upgradeRequired = false, this.detail});
 
   final int statusCode;
   final String message;
+
+  /// Das `detail`-Objekt der Antwort, falls der Server eines geliefert hat
+  /// (z. B. `quelle_url` bei 404 von `/v1/normen`).
+  final Map<String, dynamic>? detail;
 
   /// True bei 402/403-Antworten, die laut Fehlerformat der Free-Tier-Limits
   /// (`upgrade_required: true` im Body, siehe docs/20 B2) einen erreichten
@@ -50,6 +60,7 @@ class ApiClient {
     if (response.statusCode >= 400) {
       String message = 'Unbekannter Fehler';
       bool upgradeRequired = false;
+      Map<String, dynamic>? detailMap;
       try {
         final decoded = jsonDecode(body);
         if (decoded is Map) {
@@ -58,6 +69,7 @@ class ApiClient {
           // `upgrade_required`/`message` ein statt eines blossen Strings.
           final detail = decoded['detail'];
           if (detail is Map) {
+            detailMap = detail.cast<String, dynamic>();
             if (detail['upgrade_required'] == true) upgradeRequired = true;
             message = detail['message'] as String? ?? '$detail';
           } else if (detail != null) {
@@ -68,7 +80,8 @@ class ApiClient {
       } on FormatException {
         message = body;
       }
-      throw ApiException(response.statusCode, message, upgradeRequired: upgradeRequired);
+      throw ApiException(response.statusCode, message,
+          upgradeRequired: upgradeRequired, detail: detailMap);
     }
     return jsonDecode(body);
   }
@@ -85,11 +98,13 @@ class ApiClient {
       _decode(await _client.delete(_uri(path), headers: _headers));
 
   Future<dynamic> _patch(String path, Object? body) async => _decode(
-        await _client.patch(_uri(path), headers: _headers, body: jsonEncode(body)),
+        await _client.patch(_uri(path),
+            headers: _headers, body: jsonEncode(body)),
       );
 
   Future<dynamic> _put(String path, Object? body) async => _decode(
-        await _client.put(_uri(path), headers: _headers, body: jsonEncode(body)),
+        await _client.put(_uri(path),
+            headers: _headers, body: jsonEncode(body)),
       );
 
   // --- Oeffentlich (ohne Login) ----------------------------------------------
@@ -121,6 +136,19 @@ class ApiClient {
     return data['access_token'] as String;
   }
 
+  /// Nur im Test-Zugang (ops/beta/gateway.py) vorhanden.
+  Future<void> sendFeedback({
+    required String message,
+    required String category,
+    required String screen,
+  }) async {
+    await _post('/beta/feedback', {
+      'message': message,
+      'category': category,
+      'screen': screen,
+    });
+  }
+
   Future<Map<String, dynamic>> me() async =>
       (await _get('/v1/auth/me')) as Map<String, dynamic>;
 
@@ -128,7 +156,8 @@ class ApiClient {
   /// ISO-Datum), Tagesbudget, Bundesland-Kuerzel und Universitaets-Slug
   /// (docs/32-examensvorbereitung.md). Der Server leitet aus der Universitaet
   /// das Bundesland ab, wenn keines mitgeschickt wird.
-  Future<Map<String, dynamic>> updateProfile(Map<String, dynamic> fields) async =>
+  Future<Map<String, dynamic>> updateProfile(
+          Map<String, dynamic> fields) async =>
       (await _patch('/v1/auth/me', fields)) as Map<String, dynamic>;
 
   // --- Lernen ---------------------------------------------------------------
@@ -139,11 +168,13 @@ class ApiClient {
     int limit = 20,
     String? deck,
     String? topic,
+    bool extra = false,
   }) async {
     final data = await _get('/v1/cards/due', {
       'limit': limit,
       if (deck != null) 'deck': deck,
       if (topic != null) 'topic': topic,
+      if (extra) 'extra': true,
     });
     return (data as List).cast<Map<String, dynamic>>();
   }
@@ -169,12 +200,20 @@ class ApiClient {
     return Map<String, dynamic>.from(data);
   }
 
-  Future<List<Map<String, dynamic>>> contentCards({int limit = 2000}) async {
-    final data = await _get('/v1/content/cards', {'limit': limit});
-    if (data is! List || data.any((card) => card is! Map)) {
-      throw const FormatException('Karten-Snapshot ist ungültig');
+  /// Laedt ALLE Karten seitenweise (offset-Paging bis eine Seite nicht voll ist).
+  Future<List<Map<String, dynamic>>> contentCards({int pageSize = 1000}) async {
+    final all = <Map<String, dynamic>>[];
+    for (var offset = 0;; offset += pageSize) {
+      final data = await _get('/v1/content/cards', {
+        'limit': pageSize,
+        'offset': offset,
+      });
+      if (data is! List || data.any((card) => card is! Map)) {
+        throw const FormatException('Karten-Snapshot ist ungültig');
+      }
+      all.addAll(data.map((card) => Map<String, dynamic>.from(card as Map)));
+      if (data.length < pageSize) return all;
     }
-    return data.map((card) => Map<String, dynamic>.from(card as Map)).toList();
   }
 
   Future<List<Map<String, dynamic>>> schemata({String? area}) async {
@@ -183,6 +222,11 @@ class ApiClient {
     });
     return (data as List).cast<Map<String, dynamic>>();
   }
+
+  /// Gesetzestext zu einem Normzitat (`GET /v1/normen`). Wirft bei 404
+  /// (Landesrecht / nicht erfasst) eine [ApiException] mit `detail.quelle_url`.
+  Future<Map<String, dynamic>> normText(String zitat) async =>
+      (await _get('/v1/normen', {'zitat': zitat})) as Map<String, dynamic>;
 
   Future<List<Map<String, dynamic>>> cases() async =>
       ((await _get('/v1/content/cases')) as List).cast<Map<String, dynamic>>();
@@ -194,10 +238,12 @@ class ApiClient {
 
   /// Alle 16 Laender mit Klausurstruktur, oeffentlich (Profil-Auswahl).
   Future<List<Map<String, dynamic>>> examenBundeslaender() async =>
-      ((await _get('/v1/examen/bundeslaender')) as List).cast<Map<String, dynamic>>();
+      ((await _get('/v1/examen/bundeslaender')) as List)
+          .cast<Map<String, dynamic>>();
 
   /// Universitaeten mit Staatsexamens-Studiengang, optional je Bundesland.
-  Future<List<Map<String, dynamic>>> examenUniversitaeten({String? bundesland}) async {
+  Future<List<Map<String, dynamic>>> examenUniversitaeten(
+      {String? bundesland}) async {
     final data = await _get('/v1/examen/universitaeten', {
       if (bundesland != null) 'bundesland': bundesland,
     });
@@ -222,7 +268,8 @@ class ApiClient {
 
   /// Ersetzt das Lernprofil komplett (`PUT /v1/me/lernprofil`). Der Server
   /// prueft Themen-Slugs, Fokus/Pause-Konflikte und Deck-Slugs (422).
-  Future<Map<String, dynamic>> saveLernprofil(Map<String, dynamic> profil) async =>
+  Future<Map<String, dynamic>> saveLernprofil(
+          Map<String, dynamic> profil) async =>
       (await _put('/v1/me/lernprofil', profil)) as Map<String, dynamic>;
 
   // --- Gutachten ------------------------------------------------------------
@@ -289,7 +336,8 @@ class ApiClient {
   /// Aufrufer bildet daraus die passende Nutzermeldung.
   Future<DateTime> redeemCode(String code) async {
     final data = await _post('/v1/account/redeem', {'code': code});
-    return DateTime.parse((data as Map<String, dynamic>)['pro_until'] as String);
+    return DateTime.parse(
+        (data as Map<String, dynamic>)['pro_until'] as String);
   }
 
   // --- Oeffentlich (ohne Login) ---------------------------------------------

@@ -16,12 +16,16 @@ cards:
   type: definition
   front: Wann ist die Anfechtungsklage die statthafte Klageart, § 42 Abs. 1 Var. 1
     VwGO?
-  back: Die Anfechtungsklage ist statthaft, wenn der Kläger nach seinem Vorbringen
+  back: 'Die Anfechtungsklage ist statthaft, wenn der Kläger nach seinem Vorbringen
     die vollständige oder teilweise Aufhebung eines belastenden Verwaltungsakts begehrt.
     Maßgeblich ist das Klagebegehren nach seinem wirklichen Sinn (§ 88 VwGO entsprechend),
-    nicht die vom Kläger gewählte Bezeichnung. Ist der Verwaltungsakt bereits vollzogen
-    oder hat er sich erledigt, kommt statt der Aufhebung nur noch eine Fortsetzungsfeststellung
-    in Betracht.
+    nicht die vom Kläger gewählte Bezeichnung. Auch ein bereits vollzogener, aber
+    noch wirksamer Verwaltungsakt kann angefochten werden: Der Vollzug ist keine Erledigung,
+    und das Gericht kann nach § 113 Abs. 1 S. 2 VwGO auf Antrag aussprechen, dass
+    und wie die Vollziehung rückgängig zu machen ist (Folgenbeseitigung). Nur wenn
+    sich der Verwaltungsakt erledigt hat (§ 43 Abs. 2 VwVfG, etwa durch Zeitablauf
+    oder Rücknahme), kommt statt der Aufhebung die Fortsetzungsfeststellungsklage
+    nach § 113 Abs. 1 S. 4 VwGO in Betracht.'
   norms:
   - § 42 Abs. 1 VwGO
   quellen:
@@ -33,8 +37,8 @@ cards:
   front: 'Definiere: Klagebefugnis nach § 42 Abs. 2 VwGO (Möglichkeitstheorie)'
   back: Klagebefugt ist, wer geltend macht, durch den Verwaltungsakt in eigenen Rechten
     verletzt zu sein. Nach der Möglichkeitstheorie genügt es, dass eine Rechtsverletzung
-    nach dem Klägervorbringen möglich erscheint - sie darf nicht offensichtlich
-    und eindeutig nach jeder Betrachtungsweise ausgeschlossen sein. Die Klagebefugnis
+    nach dem Klägervorbringen möglich erscheint - sie darf nicht offensichtlich und
+    eindeutig nach jeder Betrachtungsweise ausgeschlossen sein. Die Klagebefugnis
     ist eine reine Zulässigkeitsvoraussetzung; ob die Rechtsverletzung tatsächlich
     vorliegt, ist erst eine Frage der Begründetheit.
   norms:
@@ -78,10 +82,16 @@ cards:
   front: Was regelt § 68 Abs. 1 VwGO und wann ist ein Vorverfahren entbehrlich?
   back: Vor Erhebung der Anfechtungsklage ist grundsätzlich in einem Vorverfahren
     (Widerspruchsverfahren) die Rechtmäßigkeit und Zweckmäßigkeit des Verwaltungsakts
-    nachzuprüfen, § 68 Abs. 1 S. 1 VwGO. Entbehrlich ist das Vorverfahren u. a.,
-    wenn ein Gesetz dies bestimmt, wenn der Verwaltungsakt von einer obersten Bundes-
-    oder Landesbehörde erlassen wurde (Ausnahme bei Erstbescheidung, § 68 Abs. 1
-    S. 2 VwGO) oder wenn ein Fall des § 75 VwGO (Untätigkeit der Behörde) vorliegt.
+    nachzuprüfen, § 68 Abs. 1 S. 1 VwGO. Entbehrlich ist das Vorverfahren, wenn ein
+    Gesetz dies bestimmt (§ 68 Abs. 1 S. 2 Hs. 1 VwGO) - davon haben mehrere Länder
+    Gebrauch gemacht und das Widerspruchsverfahren ganz oder weitgehend abgeschafft
+    (z. B. Bayern, Niedersachsen, Nordrhein-Westfalen; maßgeblich ist stets das jeweilige
+    Landesrecht). Weiter ist es entbehrlich, wenn der Verwaltungsakt von einer obersten
+    Bundes- oder Landesbehörde erlassen wurde, es sei denn, ein Gesetz schreibt die
+    Nachprüfung vor (Nr. 1), oder wenn erst der Abhilfe- oder Widerspruchsbescheid
+    erstmalig eine zusätzliche selbständige Beschwer enthält (Nr. 2). Bei Untätigkeit
+    der Behörde tritt die Untätigkeitsklage nach Ablauf der Sperrfrist des § 75 VwGO
+    an die Stelle des Vorverfahrens.
   norms:
   - § 68 Abs. 1 VwGO
   - § 75 VwGO
@@ -93,9 +103,9 @@ cards:
   type: norm
   front: Welche Klagefrist gilt für die Anfechtungsklage nach § 74 Abs. 1 VwGO?
   back: Die Anfechtungsklage ist innerhalb eines Monats nach Zustellung des Widerspruchsbescheids
-    zu erheben, § 74 Abs. 1 S. 1 VwGO; ist kein Vorverfahren erforderlich, läuft
-    die Frist ab Bekanntgabe des Verwaltungsakts, § 74 Abs. 1 S. 2 VwGO. Die Frist
-    beginnt nur bei ordnungsgemäßer Rechtsbehelfsbelehrung, § 58 Abs. 1 VwGO - andernfalls
+    zu erheben, § 74 Abs. 1 S. 1 VwGO; ist kein Vorverfahren erforderlich, läuft die
+    Frist ab Bekanntgabe des Verwaltungsakts, § 74 Abs. 1 S. 2 VwGO. Die Frist beginnt
+    nur bei ordnungsgemäßer Rechtsbehelfsbelehrung, § 58 Abs. 1 VwGO - andernfalls
     gilt die Jahresfrist des § 58 Abs. 2 VwGO.
   norms:
   - § 74 Abs. 1 VwGO
@@ -147,9 +157,9 @@ faelle:
   facts: Die zuständige Behörde untersagt dem G mit schriftlichem Bescheid die Ausübung
     seines Gewerbes und ordnet die sofortige Vollziehung an. G legt form- und fristgerecht
     Widerspruch ein; die Widerspruchsbehörde weist den Widerspruch durch Widerspruchsbescheid
-    zurück, der dem G am 3. Juni zugestellt wird. G möchte gegen die Untersagung
-    vorgehen und sucht am 2. Juli anwaltlichen Rat. Sein Ziel ist die vollständige
-    Aufhebung des Bescheids.
+    zurück, der dem G am 3. Juni zugestellt wird. G möchte gegen die Untersagung vorgehen
+    und sucht am 2. Juli anwaltlichen Rat. Sein Ziel ist die vollständige Aufhebung
+    des Bescheids.
   question: Wie müsste G vorgehen, und ist eine am 2. Juli erhobene Klage zulässig?
   steps:
   - prompt: Welche Klageart ist statthaft?
@@ -162,9 +172,12 @@ faelle:
     erwartung: Ja, § 68 Abs. 1 VwGO - G hat form- und fristgerecht Widerspruch eingelegt,
       über den durch Widerspruchsbescheid entschieden wurde.
   - prompt: Ist die Klagefrist des § 74 Abs. 1 VwGO gewahrt?
-    erwartung: Nein - die Monatsfrist ab Zustellung des Widerspruchsbescheids (3.
-      Juni) endet am 3. Juli; eine erst am 2. Juli erhobene Klage wäre aber noch
-      fristgerecht, da der 2. Juli innerhalb der Monatsfrist liegt.
+    erwartung: 'Ja - die Klagefrist beträgt einen Monat ab Zustellung des Widerspruchsbescheids
+      am 3. Juni, § 74 Abs. 1 S. 1 VwGO. Die Frist endet mit Ablauf des 3. Juli (§
+      57 Abs. 2 VwGO i. V. m. § 222 ZPO, § 188 Abs. 2 BGB: der Tag, der durch seine
+      Zahl dem Tag der Zustellung entspricht). Eine am 2. Juli erhobene Klage ist
+      fristgerecht, die Frist ist gewahrt, da der 2. Juli noch innerhalb der Monatsfrist
+      liegt.'
   expectation:
     pruefpunkte:
     - id: p1
@@ -176,8 +189,10 @@ faelle:
       - § 42 Abs. 1 VwGO
       keywords:
       - Anfechtungsklage
-      - statthaft
-      - Aufhebung
+      - § 42 Abs. 1 Var. 1 VwGO
+      - Aufhebung des Verwaltungsakts
+      - Aufhebung der Gewerbeuntersagung
+      - belastender Verwaltungsakt
       card_slugs:
       - or-vwgo-ak-statthaftigkeit
     - id: p2
@@ -191,6 +206,7 @@ faelle:
       - Adressatentheorie
       - Klagebefugnis
       - Art. 2 Abs. 1 GG
+      - Adressat des belastenden
       card_slugs:
       - or-vwgo-ak-adressatentheorie
     - id: p3
@@ -199,7 +215,9 @@ faelle:
       required: false
       keywords:
       - Vorverfahren
-      - Widerspruch
+      - Widerspruchsverfahren
+      - § 68 Abs. 1 VwGO
+      - Widerspruchsbescheid
       card_slugs:
       - or-vwgo-ak-vorverfahren
     - id: p4
@@ -210,10 +228,13 @@ faelle:
       norms:
       - § 74 Abs. 1 VwGO
       keywords:
-      - Klagefrist
-      - ein Monat
-      - Zustellung
-      - gewahrt
+      - Fristende am 3. Juli
+      - endet am 3. Juli
+      - Ablauf des 3. Juli
+      - Monatsfrist
+      - § 74 Abs. 1 S. 1 VwGO
+      - fristgerecht
+      - § 188 Abs. 2 BGB
       card_slugs:
       - or-vwgo-ak-klagefrist
     - id: p5
@@ -221,4 +242,7 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - zulässig
+      - Klage ist zulässig
+      - Klage wäre zulässig
+      - Klage am 2. Juli ist zulässig
+      - zulässige Anfechtungsklage

@@ -1,0 +1,359 @@
+topic:
+  slug: zr-bt-auftrag-dienstvertrag
+  area: zivilrecht
+  title: Auftrag und Dienstvertrag, §§ 611 ff., 662 ff. BGB
+  parent: zr-bgb-at
+  relevance: 3
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-auftr-auftrag-begriff
+  type: definition
+  front: 'Definiere: Auftrag, § 662 BGB, und grenze ihn von der Gefälligkeit ab'
+  back: 'Durch die Annahme eines Auftrags verpflichtet sich der Beauftragte, ein ihm von dem
+    Auftraggeber übertragenes Geschäft für diesen unentgeltlich zu besorgen (§ 662 BGB). Geschäft
+    ist jede Tätigkeit, nicht nur Rechtsgeschäfte. Der Auftrag ist ein unvollkommen zweiseitiger
+    Vertrag: Hauptleistungspflicht hat allein der Beauftragte, der Auftraggeber schuldet Aufwendungsersatz.
+    Von der bloßen Gefälligkeit unterscheidet er sich durch den Rechtsbindungswillen, der
+    nach den Umständen aus Sicht eines objektiven Dritten zu beurteilen ist (§§ 133, 157 BGB).
+    Indizien sind Art und Grund der Gefälligkeit, ihre wirtschaftliche und rechtliche Bedeutung,
+    die Interessenlage und die Gefahr, in die der Auftraggeber bei fehlerhafter Ausführung
+    kommt. Bei reinen Gefälligkeiten des täglichen Lebens (Mitnahme im Auto, Blumengießen)
+    fehlt er regelmäßig.'
+  norms:
+  - § 662 BGB
+  - § 133 BGB
+  - § 157 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-auftr-pflichten-666-667
+  type: norm
+  front: Welche Pflichten hat der Beauftragte (§§ 664 bis 667 BGB)?
+  back: Der Beauftragte muss den Auftrag im Zweifel persönlich ausführen und darf die Ausführung
+    nicht ohne Gestattung einem Dritten übertragen (§ 664 Abs. 1 BGB). Er ist an die Weisungen
+    des Auftraggebers gebunden und darf nur abweichen, wenn er annehmen darf, dass der Auftraggeber
+    bei Kenntnis der Sachlage billigen würde (§ 665 BGB). Er hat dem Auftraggeber die erforderlichen
+    Nachrichten zu geben, auf Verlangen Auskunft zu erteilen und nach der Ausführung Rechenschaft
+    abzulegen (§ 666 BGB). Er ist verpflichtet, dem Auftraggeber alles herauszugeben, was
+    er zur Ausführung des Auftrags erhält und was er aus der Geschäftsbesorgung erlangt (§
+    667 BGB). Dazu zählen auch Vorschüsse, soweit sie nicht verbraucht wurden, und Surrogate.
+    Verletzt er diese Pflichten, haftet er nach §§ 280 ff. BGB; die Unentgeltlichkeit führt
+    nicht zu einem Haftungsprivileg, kann aber im Einzelfall stillschweigend vereinbart sein.
+  norms:
+  - § 664 BGB
+  - § 665 BGB
+  - § 666 BGB
+  - § 667 BGB
+  - § 280 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-auftr-aufwendungsersatz-670
+  type: norm
+  front: Wann besteht Aufwendungsersatz nach § 670 BGB?
+  back: Macht der Beauftragte zum Zwecke der Ausführung des Auftrags Aufwendungen, die er
+    den Umständen nach für erforderlich halten darf, ist der Auftraggeber zum Ersatz verpflichtet
+    (§ 670 BGB). Aufwendungen sind freiwillige Vermögensopfer, die der Beauftragte im Interesse
+    des Auftraggebers macht, etwa Fahrtkosten, Material oder Gebühren. Maßstab ist die verständige
+    Beurteilung des Beauftragten im Zeitpunkt der Aufwendung (ex ante), nicht eine nachträgliche
+    Betrachtung. Nach der Rechtsprechung sind auch unfreiwillige Vermögensopfer ersatzfähig,
+    die sich als Realisierung eines auftragstypischen Risikos darstellen (risikotypische Begleitschäden).
+    Der Beauftragte kann für erforderliche Aufwendungen einen Vorschuss verlangen (§ 669 BGB).
+    Der Anspruch aus § 670 BGB wird über § 683 S. 1 BGB auch für die berechtigte Geschäftsführung
+    ohne Auftrag herangezogen und über § 675 Abs. 1 BGB für Geschäftsbesorgungsverträge.
+  norms:
+  - § 670 BGB
+  - § 669 BGB
+  - § 683 BGB
+  - § 675 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-auftr-widerruf-671
+  type: norm
+  front: Wie endet der Auftrag (§§ 671, 672 BGB)?
+  back: Der Auftraggeber kann den Auftrag jederzeit widerrufen (§ 671 Abs. 1 BGB). Der Beauftragte
+    kann ihn jederzeit kündigen, darf es aber nur in der Weise tun, dass der Auftraggeber
+    für die Besorgung des Geschäfts anderweitig Fürsorge treffen kann, es sei denn, es liegt
+    ein wichtiger Grund für eine unzeitige Kündigung vor (§ 671 Abs. 2 BGB). Bei Verstoß gegen
+    diese Pflicht haftet der Beauftragte auf Schadensersatz (§ 671 Abs. 2 S. 2 BGB). Das Recht
+    des Beauftragten zur Kündigung aus wichtigem Grund besteht auch bei vertraglichem Verzicht
+    (§ 671 Abs. 3 BGB). Im Zweifel erlischt der Auftrag nicht mit dem Tod des Auftraggebers
+    (§ 672 BGB), wohl aber mit dem Tod des Beauftragten (§ 673 BGB). Erlischt der Auftrag
+    in anderer Weise als durch Widerruf, gilt er zugunsten des Beauftragten als fortbestehend,
+    bis dieser vom Erlöschen Kenntnis erlangt oder es kennen muss (§ 674 BGB).
+  norms:
+  - § 671 Abs. 1 BGB
+  - § 671 Abs. 2 BGB
+  - § 671 Abs. 3 BGB
+  - § 672 BGB
+  - § 673 BGB
+  - § 674 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-auftr-dienstvertrag-begriff
+  type: definition
+  front: 'Definiere: Dienstvertrag, § 611 BGB'
+  back: Durch den Dienstvertrag wird derjenige, welcher Dienste zusagt, zur Leistung der versprochenen
+    Dienste, der andere Teil zur Gewährung der vereinbarten Vergütung verpflichtet (§ 611
+    Abs. 1 BGB). Gegenstand können Dienste jeder Art sein (§ 611 Abs. 2 BGB). Geschuldet ist
+    die Tätigkeit als solche, nicht ein bestimmter Erfolg; der Dienstverpflichtete trägt also
+    nicht das Erfolgsrisiko. Typische Dienstverträge sind Arbeitsverträge, ärztliche Behandlung
+    (ergänzt durch §§ 630a ff. BGB), Anwaltsverträge und Nachhilfe. Der Dienstvertrag ist
+    ein gegenseitiger Vertrag. Der Dienstberechtigte schuldet die Vergütung für die geleistete
+    Tätigkeit unabhängig vom Erfolg; ist die Vergütung nicht bestimmt, gilt eine übliche Vergütung
+    als vereinbart (§ 612 Abs. 1 BGB), wenn die Dienstleistung den Umständen nach nur gegen
+    Vergütung zu erwarten ist.
+  norms:
+  - § 611 Abs. 1 BGB
+  - § 611 Abs. 2 BGB
+  - § 612 Abs. 1 BGB
+  - § 630a BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-auftr-arbeitsvertrag-611a
+  type: definition
+  front: 'Definiere: Arbeitsvertrag als Unterfall des Dienstvertrags, § 611a BGB'
+  back: Durch den Arbeitsvertrag wird der Arbeitnehmer im Dienste eines anderen zur Leistung
+    weisungsgebundener, fremdbestimmter Arbeit in persönlicher Abhängigkeit verpflichtet (§
+    611a Abs. 1 S. 1 BGB). Das Weisungsrecht kann Inhalt, Durchführung, Zeit und Ort der Tätigkeit
+    betreffen (§ 611a Abs. 1 S. 2 BGB). Weisungsgebunden ist, wer nicht im Wesentlichen frei
+    seine Tätigkeit gestalten und seine Arbeitszeit bestimmen kann. Zur Feststellung ist eine
+    Gesamtbetrachtung aller Umstände vorzunehmen; die Bezeichnung im Vertrag ist nicht entscheidend,
+    und die tatsächliche Durchführung ist maßgeblich, wenn sie vom Vertrag abweicht (§ 611a
+    Abs. 1 S. 5, 6 BGB). Vom freien Dienstvertrag unterscheidet er sich durch die persönliche
+    Abhängigkeit, die die Anwendung des Arbeitsrechts (Kündigungsschutz, Entgeltfortzahlung)
+    auslöst.
+  norms:
+  - § 611a Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-auftr-verguetung-615
+  type: norm
+  front: Wie wirken Annahmeverzug und Verhinderung auf die Vergütung (§§ 615, 616 BGB)?
+  back: Kommt der Dienstberechtigte mit der Annahme der Dienste in Verzug, kann der Verpflichtete
+    für die infolge des Verzugs nicht geleisteten Dienste die vereinbarte Vergütung verlangen,
+    ohne zur Nachleistung verpflichtet zu sein (§ 615 S. 1 BGB). Er muss sich den Wert desjenigen
+    anrechnen lassen, was er infolge des Unterbleibens der Dienstleistung erspart oder durch
+    anderweitige Verwendung seiner Dienste erwirbt oder böswillig zu erwerben unterlässt (§
+    615 S. 2 BGB). Dasselbe gilt, wenn der Arbeitgeber das Risiko des Arbeitsausfalls trägt
+    (Betriebsrisiko, § 615 S. 3 BGB). Wegen der Fixschuldnatur der Dienste tritt bei Nichtleistung
+    grundsätzlich Unmöglichkeit ein, sodass ohne die Sonderregel der Vergütungsanspruch nach
+    § 326 Abs. 1 S. 1 BGB entfiele. Bei vorübergehender Verhinderung des Verpflichteten aus
+    persönlichen Gründen ohne Verschulden behält er den Anspruch für eine verhältnismäßig
+    nicht erhebliche Zeit (§ 616 BGB).
+  norms:
+  - § 615 BGB
+  - § 616 BGB
+  - § 326 Abs. 1 BGB
+  - § 275 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-auftr-kuendigung-dienstvertrag
+  type: norm
+  front: Wie kann ein Dienstverhältnis gekündigt werden (§§ 620 bis 627 BGB)?
+  back: Ein befristetes Dienstverhältnis endet mit Zeitablauf (§ 620 Abs. 1 BGB); ein unbefristetes
+    kann ordentlich gekündigt werden (§ 620 Abs. 2 BGB), wobei sich die Fristen nach dem Bemessungszeitraum
+    der Vergütung richten (§ 621 BGB), für Arbeitsverhältnisse nach § 622 BGB. Jede Partei
+    kann das Dienstverhältnis außerordentlich aus wichtigem Grund kündigen, wenn Tatsachen
+    vorliegen, aufgrund derer ihr unter Berücksichtigung aller Umstände und Abwägung der beiderseitigen
+    Interessen die Fortsetzung bis zum Ablauf der Kündigungsfrist nicht zugemutet werden kann
+    (§ 626 Abs. 1 BGB); die Kündigung kann nur innerhalb von zwei Wochen nach Kenntnis der
+    maßgebenden Tatsachen erfolgen (§ 626 Abs. 2 BGB). Bei Diensten höherer Art, die aufgrund
+    besonderen Vertrauens übertragen zu werden pflegen (Anwalt, Arzt, Steuerberater), kann
+    der Dienstverpflichtete oder -berechtigte ohne Grund und fristlos kündigen, wenn kein
+    dauerndes Dienstverhältnis mit festen Bezügen besteht (§ 627 Abs. 1 BGB).
+  norms:
+  - § 620 BGB
+  - § 621 BGB
+  - § 622 BGB
+  - § 626 BGB
+  - § 627 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-auftr-abgrenzung-werk-dienst
+  type: definition
+  front: 'Abgrenzung: Werkvertrag oder Dienstvertrag?'
+  back: 'Entscheidend ist, ob ein bestimmter Erfolg (Werkvertrag, § 631 BGB) oder nur eine
+    Tätigkeit (Dienstvertrag, § 611 BGB) geschuldet ist. Maßgeblich ist der durch Auslegung
+    (§§ 133, 157 BGB) zu ermittelnde Parteiwille. Indizien für ein Werk sind ein greifbares
+    Ergebnis, die Verantwortung des Unternehmers für das Gelingen, eine Vergütung nach Erfolg
+    oder Pauschale und die Abnahmefähigkeit; für einen Dienst sprechen die Vergütung nach
+    Zeitaufwand, das Fehlen eines abgrenzbaren Ergebnisses und die Einbindung in die Arbeitsorganisation
+    des Dienstberechtigten. Beispiele: Reparatur, Gutachten und Architektenplanung sind Werkverträge;
+    anwaltliche Beratung und Prozessvertretung sind Dienstverträge (Geschäftsbesorgung, §
+    675 Abs. 1 BGB); die ärztliche Behandlung ist ein Behandlungsvertrag mit Dienstvertragscharakter
+    (§§ 630a ff. BGB). Die Einordnung entscheidet über die Mängelhaftung: Die besonderen Mängelrechte
+    des § 634 BGB gibt es nur beim Werkvertrag, beim Dienstvertrag gelten die
+    allgemeinen Regeln der §§ 280 ff. BGB.'
+  norms:
+  - § 631 BGB
+  - § 611 BGB
+  - § 675 Abs. 1 BGB
+  - § 630a BGB
+  - § 634 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-auftr-geschaeftsbesorgung-675
+  type: norm
+  front: Was bewirkt § 675 Abs. 1 BGB beim entgeltlichen Geschäftsbesorgungsvertrag?
+  back: Ein Dienst- oder Werkvertrag, der eine Geschäftsbesorgung zum Gegenstand hat, ist
+    ein Geschäftsbesorgungsvertrag (§ 675 Abs. 1 BGB). Für ihn gelten neben dem Dienst- oder
+    Werkvertragsrecht bestimmte Vorschriften des Auftragsrechts entsprechend, insbesondere
+    die Pflichten zur Benachrichtigung und Rechenschaft (§ 666 BGB), zur Herausgabe des Erlangten
+    (§ 667 BGB), der Anspruch auf Aufwendungsersatz und Vorschuss (§§ 669, 670 BGB) sowie
+    die Regelungen zur Kündigung (§§ 671 Abs. 2, 672 bis 674 BGB). Geschäftsbesorgungsverträge
+    sind insbesondere Verträge mit Rechtsanwälten, Steuerberatern, Banken (Girovertrag, Überweisung)
+    und Treuhändern. Der Unterschied zum Auftrag liegt in der Entgeltlichkeit; die Vorschriften
+    über die Auftragsrechtsfolgen werden deshalb entsprechend herangezogen.
+  norms:
+  - § 675 Abs. 1 BGB
+  - § 666 BGB
+  - § 667 BGB
+  - § 670 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-auftr-670
+  title: Aufwendungsersatzanspruch des Beauftragten, § 670 BGB
+  norms:
+  - § 662 BGB
+  - § 670 BGB
+  - § 669 BGB
+  - § 667 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Auftrag, § 662 BGB
+    hinweis: Einigung über unentgeltliche Besorgung eines Geschäfts; Rechtsbindungswille,
+      Abgrenzung zur Gefälligkeit.
+  - label: II. Aufwendungen des Beauftragten
+    hinweis: Freiwillige Vermögensopfer zum Zwecke der Ausführung (und auftragstypische Risiken).
+  - label: III. Erforderlichkeit
+    hinweis: 'Maßstab: Der Beauftragte durfte die Aufwendungen den Umständen nach für erforderlich
+      halten (Sicht ex ante).'
+  - label: IV. Rechtsfolge
+    hinweis: Ersatz der Aufwendungen, ggf. Vorschuss (§ 669 BGB); Gegenansprüche des Auftraggebers
+      auf Herausgabe, § 667 BGB, und Aufrechnung, §§ 387 ff. BGB.
+faelle:
+- slug: zr-fall-auftr-klavier
+  title: Das Klavier aus der Nachbarstadt
+  difficulty: 2
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: Der Freund A bittet B, für ihn bei einem Händler in der 80 Kilometer entfernten Stadt
+    ein gebrauchtes Klavier zu kaufen, das A dort besichtigt und zu einem Preis bis höchstens
+    3.000 Euro ausgesucht hat. B sagt unentgeltlich zu; er soll das Klavier mit einem Transporter
+    abholen. A zahlt B vorab 3.000 Euro in bar. B kauft das Klavier für 2.600 Euro und mietet
+    für den Transport einen Transporter für 120 Euro, tankt für 30 Euro und liefert das Klavier
+    bei A ab. A verlangt von B den nicht verbrauchten Vorschuss von 400 Euro zurück. B verlangt
+    von A Ersatz der Transport- und Spritkosten von 150 Euro und meint, er habe die Sache
+    umsonst gemacht und könne deshalb nichts verlangen. Der Händler hat dem B das Eigentum
+    am Klavier übertragen.
+  question: Welche Ansprüche haben A und B gegeneinander, und was muss im Ergebnis gezahlt
+    werden?
+  steps:
+  - prompt: Welcher Vertrag liegt vor?
+    erwartung: 'Ein Auftrag nach § 662 BGB: B hat sich verpflichtet, ein Geschäft für A unentgeltlich
+      zu besorgen. Der Rechtsbindungswille ist aufgrund des nicht unerheblichen Werts (Klavier,
+      2.600 Euro), des wirtschaftlichen Interesses des A und der Überlassung eines Vorschusses
+      zu bejahen; es handelt sich nicht um eine bloße Gefälligkeit.'
+  - prompt: Hat B einen Anspruch auf Ersatz seiner Kosten?
+    erwartung: 'Ja. Nach § 670 BGB kann B Ersatz der Aufwendungen verlangen, die er den Umständen
+      nach für erforderlich halten durfte. Mietkosten des Transporters (120 Euro) und Kraftstoff
+      (30 Euro) waren für den Transport erforderlich. Die Unentgeltlichkeit des Auftrags
+      betrifft nur die Vergütung; der Aufwendungsersatz bleibt davon unberührt.'
+  - prompt: Hat A einen Anspruch auf Rückzahlung des Vorschusses und auf das Klavier?
+    erwartung: Ja. Nach § 667 BGB muss B alles herausgeben, was er zur Ausführung des Auftrags
+      erhalten und aus der Geschäftsbesorgung erlangt hat. Das ist das Klavier (Übereignung
+      an A) und der nicht verbrauchte Teil des Vorschusses von 400 Euro (3.000 Euro minus
+      2.600 Euro).
+  - prompt: Ergebnis?
+    erwartung: Die gegenseitigen Zahlungsansprüche (400 Euro von B an A; 150 Euro von A an
+      B) sind gleichartig und können aufgerechnet werden (§§ 387, 389 BGB). B muss im Ergebnis
+      250 Euro an A zahlen und das Klavier übereignen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: 'Auftrag nach § 662 BGB: unentgeltliche Besorgung eines Geschäfts mit Rechtsbindungswillen
+        (Abgrenzung zur Gefälligkeit)'
+      weight: 2.0
+      required: true
+      norms:
+      - § 662 BGB
+      keywords:
+      - Auftrag
+      - § 662 BGB
+      - unentgeltlich
+      - Rechtsbindungswille
+      - Gefälligkeit
+      card_slugs:
+      - zr-auftr-auftrag-begriff
+    - id: p2
+      label: Aufwendungsersatzanspruch des B nach § 670 BGB für erforderliche Aufwendungen
+        (Transporter und Kraftstoff)
+      weight: 2.5
+      required: true
+      norms:
+      - § 670 BGB
+      keywords:
+      - Aufwendungsersatz
+      - § 670 BGB
+      - erforderliche Aufwendungen
+      - für erforderlich halten durfte
+      card_slugs:
+      - zr-auftr-aufwendungsersatz-670
+    - id: p3
+      label: Herausgabeanspruch des A nach § 667 BGB (Klavier sowie nicht verbrauchter Vorschuss
+        von 400 Euro)
+      weight: 2.5
+      required: true
+      norms:
+      - § 667 BGB
+      keywords:
+      - Herausgabe
+      - § 667 BGB
+      - das Erlangte
+      - Vorschuss
+      - nicht verbrauchter Vorschuss
+      card_slugs:
+      - zr-auftr-pflichten-666-667
+    - id: p4
+      label: 'Aufrechnung: Saldierung der Ansprüche mit dem Ergebnis, dass B an A 250 Euro
+        zahlt'
+      weight: 2.0
+      required: false
+      norms:
+      - § 387 BGB
+      - § 389 BGB
+      keywords:
+      - Aufrechnung
+      - § 387 BGB
+      - Saldo
+      - verrechnet
+      - gegenseitige Ansprüche
+    - id: p5
+      label: Vorschuss als Auftragsleistung, § 669 BGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 669 BGB
+      keywords:
+      - Vorschuss
+      - § 669 BGB
+      card_slugs:
+      - zr-auftr-aufwendungsersatz-670

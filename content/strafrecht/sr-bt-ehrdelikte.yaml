@@ -1,0 +1,503 @@
+topic:
+  slug: sr-bt-ehrdelikte
+  area: strafrecht
+  title: "Ehrdelikte: §§ 185 bis 194 StGB"
+  parent: sr-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-ehre-ehrbegriff
+  type: streitstand
+  front: "Streitstand: Was ist die geschützte 'Ehre' bei den §§ 185 ff. StGB?"
+  back: >-
+    Problem: Der Begriff der Ehre ist nicht gesetzlich definiert und bestimmt
+    Reichweite und Subsumtion der Beleidigungsdelikte. Der faktische Ehrbegriff
+    versteht Ehre als tatsächlich vorhandenen inneren Wert (innere Ehre) oder
+    als guten Ruf (äußere Ehre); er scheitert daran, dass dann Menschen ohne
+    Selbstachtung oder mit schlechtem Ruf weniger geschützt wären. Der normative
+    Ehrbegriff sieht in der Ehre den jedem Menschen zukommenden Achtungsanspruch
+    als Person; er macht den Schutz unabhängig vom Verhalten, vernachlässigt
+    aber den Ruf als Rechtsgut. Die h.M., namentlich die Rspr., folgt einem
+    normativ-faktischen (gemischten) Ehrbegriff: geschützt ist der personale
+    Geltungswert, also der Anspruch auf Achtung als Person (normativ)
+    einschließlich des guten Rufs (faktisch). Beleidigung ist danach ein
+    rechtswidriger Angriff auf diesen Geltungswert durch Kundgabe von Miss- oder
+    Nichtachtung. Ehrfähig sind natürliche Personen, juristische Personen und
+    Personenvereinigungen mit rechtlich anerkannter sozialer Funktion und
+    einheitlichem Willen sowie (§ 189 StGB) Verstorbene.
+  norms:
+  - "§ 185 StGB"
+  - "§ 189 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-ehre-185-beleidigung
+  type: definition
+  front: "Definiere: Beleidigung, § 185 StGB"
+  back: >-
+    Beleidigung ist die Kundgabe der Miss-, Nicht- oder Geringachtung gegenüber
+    dem Betroffenen oder einem Dritten (Werturteil über den Betroffenen oder
+    Tatsachenbehauptung, die nicht unter §§ 186, 187 StGB fällt). Erforderlich
+    ist ein Ehrangriff, der nach Inhalt, Form und Begleitumständen objektiv
+    geeignet ist, den personalen Geltungswert zu mindern; maßgeblich ist, wie
+    ein verständiger Dritter die Äußerung versteht. Die Kundgabe kann
+    ausdrücklich oder konkludent erfolgen (Worte, Gesten, Tätlichkeiten); die
+    Äußerung muss das Opfer oder einen Dritten erreichen. Tätliche Beleidigung
+    (§ 185 Alt. 2 StGB) liegt vor, wenn die Missachtung durch eine Tätlichkeit zum
+    Ausdruck kommt, etwa durch eine Ohrfeige oder Anspucken; sie wird mit
+    höherer Strafe bedroht. Subjektiv genügt bedingter Vorsatz bezüglich des
+    ehrverletzenden Inhalts; eine besondere Beleidigungsabsicht ist nicht
+    erforderlich. Ironie und Scherz können tatbestandslos sein, wenn die
+    Kundgabe objektiv nicht als Missachtung verstanden wird.
+  norms:
+  - "§ 185 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-ehre-tatsache-werturteil
+  type: definition
+  front: "Definiere: Abgrenzung von Tatsachenbehauptung und Werturteil bei den Ehrdelikten"
+  back: >-
+    Tatsachen sind dem Beweis zugängliche vergangene oder gegenwärtige
+    Ereignisse oder Zustände; Werturteile sind dagegen subjektive
+    Meinungsäußerungen, die sich einer Beweisführung entziehen. Die
+    Unterscheidung entscheidet über den anwendbaren Tatbestand: §§ 186, 187 StGB
+    verlangen eine Tatsachenbehauptung, § 185 StGB erfasst Werturteile und
+    Tatsachenbehauptungen gegenüber dem Betroffenen selbst. Mischformen
+    (Äußerungen mit Tatsachenkern und wertendem Gehalt) sind nach dem
+    Gesamtzusammenhang zu beurteilen; prägt das Element des Dafürhaltens und
+    Meinens die Äußerung, ist sie als Werturteil zu behandeln und genießt
+    umfassenden Schutz durch Art. 5 Abs. 1 GG. Wahre Tatsachenbehauptungen
+    müssen regelmäßig hingenommen werden, soweit sie nicht die Intim- oder
+    Privatsphäre in unzulässiger Weise betreffen.
+  norms:
+  - "§ 185 StGB"
+  - "§ 186 StGB"
+  - "Art. 5 Abs. 1 GG"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-ehre-meinungsfreiheit-schmaehkritik
+  type: rechtsprechung
+  front: "Wie sind die Ehrdelikte mit der Meinungsfreiheit abzuwägen (Wechselwirkung, Schmähkritik)?"
+  back: >-
+    Die §§ 185 ff. StGB sind allgemeine Gesetze i.S.d. Art. 5 Abs. 2 GG. Nach
+    der Wechselwirkungslehre des BVerfG (BVerfGE 7, 198 - Lüth) dürfen sie die
+    Meinungsfreiheit einschränken, müssen ihrerseits aber im Licht der Bedeutung
+    des Grundrechts ausgelegt und angewendet werden. Bei Äußerungen, die einen
+    Beitrag zur Meinungsbildung in einer die Öffentlichkeit berührenden Frage
+    leisten, spricht eine Vermutung für die Zulässigkeit der freien Rede; im
+    Einzelfall ist abzuwägen zwischen Meinungsfreiheit und Ehre bzw. allgemeinem
+    Persönlichkeitsrecht. Eine Ausnahme von der Abwägung bilden nach der Rspr.
+    nur Formalbeleidigungen, Schmähkritik und Angriffe auf die Menschenwürde.
+    Schmähkritik liegt vor, wenn nicht mehr die Auseinandersetzung in der Sache,
+    sondern die Diffamierung der Person im Vordergrund steht; der Begriff ist
+    wegen seines die Meinungsfreiheit verkürzenden Effekts eng auszulegen. In
+    der Klausur ist die Abwägung regelmäßig bei der Prüfung der Beleidigung bzw.
+    im Rahmen des § 193 StGB zu verorten.
+  norms:
+  - "§ 185 StGB"
+  - "Art. 5 Abs. 1 GG"
+  - "Art. 5 Abs. 2 GG"
+  quellen:
+  - "StGB, amtliche Fassung"
+  - "BVerfGE 7, 198 (Lüth)"
+  stand: 2026-10
+- slug: sr-ehre-186-ueble-nachrede
+  type: definition
+  front: "Definiere: Üble Nachrede, § 186 StGB (mit objektiver Bedingung der Strafbarkeit)"
+  back: >-
+    Üble Nachrede begeht, wer in Beziehung auf einen anderen eine Tatsache
+    behauptet oder verbreitet, die diesen verächtlich zu machen oder in der
+    öffentlichen Meinung herabzuwürdigen geeignet ist, wenn nicht diese Tatsache
+    erweislich wahr ist. Behaupten heißt, etwas als nach eigener Überzeugung
+    richtig hinzustellen; Verbreiten heißt, fremde Behauptungen weiterzugeben,
+    ohne sie sich zu eigen zu machen. Die Behauptung muss gegenüber einem
+    Dritten, nicht nur gegenüber dem Betroffenen erfolgen. Die
+    Nichterweislichkeit der Wahrheit ist nach h.M. eine objektive Bedingung der
+    Strafbarkeit: Der Vorsatz muss sich darauf nicht beziehen, und der Täter
+    trägt faktisch das Beweisrisiko, denn bleibt die Wahrheit unaufklärbar, geht
+    dies zu seinen Lasten (der Zweifelssatz gilt für die Wahrheit nicht).
+    Erwiesene Unwahrheit ist nicht erforderlich. Der Strafrahmen ist erhöht,
+    wenn die Tat öffentlich, in einer Versammlung oder durch Verbreiten eines
+    Inhalts begangen wird. Beachte § 190 StGB (Wahrheitsbeweis durch rechtskräftige
+    Verurteilung).
+  norms:
+  - "§ 186 StGB"
+  - "§ 190 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-ehre-187-verleumdung
+  type: definition
+  front: "Definiere: Verleumdung, § 187 StGB"
+  back: >-
+    Verleumdung begeht, wer wider besseres Wissen in Beziehung auf einen anderen
+    eine unwahre Tatsache behauptet oder verbreitet, die diesen verächtlich zu
+    machen oder in der öffentlichen Meinung herabzuwürdigen oder seinen Kredit
+    zu gefährden geeignet ist. Anders als bei § 186 StGB muss die Unwahrheit der
+    Tatsache feststehen (Tatbestandsmerkmal, vom Gericht festzustellen).
+    Subjektiv ist hinsichtlich der Unwahrheit sicheres Wissen (dolus directus 2.
+    Grades) erforderlich, bezüglich der übrigen Merkmale genügt bedingter
+    Vorsatz. § 187 StGB ist also im Verhältnis zu § 186 StGB der speziellere
+    Tatbestand mit höherem Strafrahmen; § 186 StGB bleibt als Auffangtatbestand
+    relevant, wenn dem Täter das Wissen um die Unwahrheit nicht nachzuweisen
+    ist. Die Kreditgefährdung ist nur in § 187 StGB genannt. Eine Rechtfertigung
+    nach § 193 StGB scheidet bei Verleumdung aus, weil niemand ein berechtigtes
+    Interesse an der Verbreitung bewusst unwahrer Tatsachen hat.
+  norms:
+  - "§ 187 StGB"
+  - "§ 193 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-ehre-188-politik
+  type: norm
+  front: "Was regelt § 188 StGB (gegen Personen des politischen Lebens gerichtete Beleidigung, üble Nachrede und Verleumdung)?"
+  back: >-
+    § 188 StGB stellt Beleidigung, üble Nachrede und Verleumdung gegen eine im
+    politischen Leben des Volkes stehende Person unter erhöhte Strafe, wenn die
+    Tat öffentlich, in einer Versammlung oder durch Verbreiten eines Inhalts
+    begangen wird, aus Beweggründen erfolgt, die mit der Stellung des
+    Beleidigten im öffentlichen Leben zusammenhängen, und geeignet ist, dessen
+    öffentliches Wirken erheblich zu erschweren. Die Strafrahmen betragen bei Beleidigung bis zu drei Jahren Freiheitsstrafe oder Geldstrafe, bei übler Nachrede drei Monate bis fünf Jahre und bei Verleumdung sechs Monate bis fünf Jahre. Seit der Reform 2021 erfasst
+    die Vorschrift auch die Beleidigung und reicht das politische Leben des
+    Volkes ausdrücklich bis hin zur kommunalen Ebene. § 188 StGB ist eine Qualifikation der §§ 185 bis 187 StGB. Der
+    Vorsatz muss die Eignung zur Erschwerung des öffentlichen Wirkens umfassen.
+    Die Vorschrift ist selten Klausurgegenstand; wichtig ist der Hinweis, dass
+    die Qualifikation neben dem Grundtatbestand zu prüfen ist und dass für die
+    Verfolgung die Antragsregeln des § 194 StGB zu beachten sind.
+  norms:
+  - "§ 188 StGB"
+  - "§ 194 Abs. 1 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-ehre-192-190-189
+  type: norm
+  front: "Was regeln § 192 StGB (Formalbeleidigung), § 190 StGB und § 189 StGB?"
+  back: >-
+    § 192 StGB: Auch eine inhaltlich wahre Behauptung kann als Beleidigung
+    strafbar sein, wenn die Beleidigung aus der Form der Behauptung oder
+    Verbreitung oder aus den Umständen hervorgeht, unter denen sie geschah (z.
+    B. herabsetzende Ausdrucksweise oder Bloßstellen vor Publikum). Es handelt
+    sich um eine Klarstellung, dass der Wahrheitsbeweis eine Beleidigung nach §
+    185 StGB nicht ausschließt. § 190 StGB: Ist die behauptete oder verbreitete
+    Tatsache eine Straftat, so ist der Wahrheitsbeweis durch eine rechtskräftige
+    Verurteilung des Beleidigten wegen dieser Tat erbracht; ein rechtskräftiger
+    Freispruch schließt den Wahrheitsbeweis aus. § 189 StGB: Wer das Andenken
+    eines Verstorbenen verunglimpft, wird bestraft; antragsberechtigt sind die
+    Angehörigen (§ 194 Abs. 2 StGB). Diese Normen sind als Ergänzungen zu den
+    Grundtatbeständen bekannt zu halten, aber selten vertieft zu prüfen.
+  norms:
+  - "§ 192 StGB"
+  - "§ 190 StGB"
+  - "§ 189 StGB"
+  - "§ 194 Abs. 2 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-ehre-193-berechtigte-interessen
+  type: definition
+  front: "Definiere: Wahrnehmung berechtigter Interessen, § 193 StGB (Rechtfertigungsgrund)"
+  back: >-
+    § 193 StGB ist nach h.M. ein besonderer Rechtfertigungsgrund (nach anderer
+    Ansicht ein Tatbestandsausschluss oder Strafausschließungsgrund), der bei
+    Äußerungen zur Ausführung oder Verteidigung von Rechten oder zur Wahrnehmung
+    berechtigter Interessen Straflosigkeit herbeiführt, es sei denn, aus der
+    Form der Äußerung oder den Umständen geht eine Beleidigung hervor.
+    Voraussetzungen: (1) Berechtigtes Interesse (rechtlich geschützt, nicht nur
+    eigennützig; auch Interessen der Allgemeinheit, z. B. Presse,
+    Anzeigeerstattung, Rechtsverfolgung); (2) Die Äußerung muss zur Wahrnehmung
+    dieses Interesses erforderlich und angemessen sein, es darf also kein
+    milderes, gleich wirksames Mittel geben; (3) Subjektive Komponente: Der
+    Täter muss in Wahrnehmungsabsicht handeln. Bei § 186 StGB setzt die
+    Anwendung voraus, dass der Täter die Wahrheit vor der Äußerung sorgfältig
+    geprüft hat (Prüfungspflicht), sonst entfällt der Schutz. Bei § 187 StGB
+    scheidet § 193 StGB aus, bei § 185 StGB ist er anwendbar. Die Abwägung mit
+    Art. 5 Abs. 1 GG ist hier zu verorten.
+  norms:
+  - "§ 193 StGB"
+  - "§ 186 StGB"
+  - "Art. 5 Abs. 1 GG"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-ehre-kollektivbezeichnung
+  type: definition
+  front: "Definiere: Beleidigung unter einer Kollektivbezeichnung"
+  back: >-
+    Bei der Beleidigung unter einer Kollektivbezeichnung richtet sich die
+    Äußerung gegen die Mitglieder einer Personengruppe (z. B. 'die Beamten der
+    Wache', 'alle Mitarbeiter der Abteilung'). Jedes Mitglied ist beleidigt,
+    wenn (1) die Gruppe nach ihren Merkmalen klar abgegrenzt und überschaubar
+    ist, sodass die Zugehörigkeit des Einzelnen erkennbar ist, (2) die Äußerung
+    erkennbar alle Mitglieder erfassen soll und nicht nur einzelne herausgreift,
+    und (3) das einzelne Mitglied durch die Zugehörigkeit selbst betroffen
+    erscheint. Je größer und unbestimmter die Gruppe, desto eher fehlt die
+    persönliche Betroffenheit: Pauschale Aussagen über sehr große Gruppen, etwa
+    'die Politiker' oder 'die Bayern', sind regelmäßig nicht individuell
+    beleidigend. Möglich ist dagegen die Anwendung bei überschaubaren
+    Berufsgruppen in einem örtlich abgrenzbaren Bereich. Zu unterscheiden ist
+    die Beleidigung des Kollektivs als solches (siehe eigene Karte).
+  norms:
+  - "§ 185 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-ehre-kollektivbeleidigung
+  type: rechtsprechung
+  front: "Wann ist ein Kollektiv selbst beleidigungsfähig, und was entschied das BVerfG zu 'Soldaten sind Mörder'?"
+  back: >-
+    Ein Kollektiv (Personenmehrheit) ist selbst beleidigungsfähig, wenn es eine
+    rechtlich anerkannte soziale Funktion erfüllt und einen einheitlichen Willen
+    bilden kann, etwa Behörden, Truppenteile, Verbände oder Kirchen; nicht
+    ausreichend ist eine bloße Zusammenfassung unter einem Oberbegriff. Dabei
+    ist § 194 Abs. 3 StGB (Strafantrag bei Beleidigung von Amtsträgern und
+    Behörden) zu beachten. Das BVerfG (BVerfGE 93, 266) hat zur Äußerung
+    'Soldaten sind Mörder' entschieden, dass pauschale Werturteile über große
+    Gruppen nicht ohne Weiteres jeden Angehörigen beleidigen: Eine Verurteilung
+    wegen Beleidigung setze voraus, dass die Äußerung erkennbar auf einen
+    hinreichend überschaubaren Personenkreis bezogen sei, sodass die Zuordnung
+    zu den einzelnen Mitgliedern möglich ist. Außerdem verlangt Art. 5 Abs. 1
+    GG, dass die Gerichte bei mehrdeutigen Äußerungen alle plausiblen Deutungen
+    prüfen, bevor sie die zur Verurteilung führende wählen.
+  norms:
+  - "§ 185 StGB"
+  - "§ 194 Abs. 3 StGB"
+  - "Art. 5 Abs. 1 GG"
+  quellen:
+  - "StGB, amtliche Fassung"
+  - "BVerfGE 93, 266"
+  stand: 2026-10
+- slug: sr-ehre-194-strafantrag
+  type: norm
+  front: "Was gilt für den Strafantrag nach § 194 StGB und wie werden Ehrdelikte verfolgt?"
+  back: >-
+    Beleidigung, üble Nachrede und Verleumdung werden nach § 194 Abs. 1 S. 1
+    StGB nur auf Antrag verfolgt. Der Strafantrag ist Prozessvoraussetzung;
+    fehlt er, ist das Verfahren einzustellen. Antragsberechtigt ist der
+    Verletzte (§ 77 Abs. 1 StGB), bei Verstorbenen die Angehörigen (§ 194 Abs. 2
+    StGB), bei Beleidigung von Amtsträgern auch der Dienstvorgesetzte (§ 194
+    Abs. 3 StGB). Die Antragsfrist beträgt drei Monate ab Kenntnis von Tat und
+    Täter (§ 77b StGB). Eine Sonderregel gilt für Beleidigungen, die durch
+    Verbreiten eines Inhalts oder in einer Versammlung gegen Angehörige einer
+    unter der nationalsozialistischen oder einer anderen Gewalt- und Willkürherrschaft verfolgten Gruppe begangen werden und mit dieser Verfolgung zusammenhängen: Hier ist unter den Voraussetzungen des § 194 Abs. 1 S. 2 StGB kein Strafantrag erforderlich. In den Fällen der §§ 188 und 192a StGB wird die Tat auch ohne Antrag verfolgt, wenn die Strafverfolgungsbehörde wegen des besonderen öffentlichen Interesses ein Einschreiten von Amts wegen für geboten hält; der Verletzte kann dem aber widersprechen (§ 194 Abs. 1 S. 3 bis 5 StGB). Richtet sich die Tat gegen ein Gesetzgebungsorgan oder eine andere politische Körperschaft, ist eine Ermächtigung erforderlich (§ 194 Abs. 4 StGB), und die Privatklage ist ausgeschlossen (§ 374 Abs. 1 Nr. 2 StPO). Prozessual sind
+    Beleidigungsdelikte Privatklagedelikte (§ 374 Abs. 1 Nr. 2 StPO): Die
+    Staatsanwaltschaft erhebt öffentliche Klage nur, wenn dies im öffentlichen
+    Interesse liegt (§ 376 StPO); regelmäßig ist ein Sühneversuch vorgeschaltet
+    (§ 380 StPO).
+  norms:
+  - "§ 194 Abs. 1 StGB"
+  - "§ 194 Abs. 2 StGB"
+  - "§ 194 Abs. 3 StGB"
+  - "§ 77 Abs. 1 StGB"
+  - "§ 77b StGB"
+  - "§ 374 StPO"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: sr-ehre-schema-185-187
+  title: "Beleidigung, üble Nachrede und Verleumdung, §§ 185 bis 187 StGB"
+  norms:
+  - "§ 185 StGB"
+  - "§ 186 StGB"
+  - "§ 187 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+  steps:
+  - label: "A. Vorprüfung: Strafantrag, § 194 StGB"
+    hinweis: >-
+      Prozessvoraussetzung; Frist drei Monate, § 77b StGB. Im Gutachten am Ende
+      oder vorab ansprechen.
+  - label: "B. Beleidigung, § 185 StGB"
+    children:
+    - label: "I. Tatbestand"
+      children:
+      - label: "1. Objektiv: Kundgabe der Miss-, Nicht- oder Geringachtung (Ehrangriff)"
+        hinweis: >-
+          Tatsachenbehauptung (§§ 186, 187) oder Werturteil?
+          Kollektivbeleidigung und Kollektivbezeichnung prüfen.
+      - label: "2. Subjektiv: Vorsatz bezüglich des ehrverletzenden Inhalts"
+    - label: "II. Rechtswidrigkeit"
+      children:
+      - label: "1. Meinungsfreiheit/Wechselwirkung, Art. 5 GG"
+        hinweis: >-
+          Nur bei Schmähkritik und Formalbeleidigung entfällt die Abwägung.
+      - label: "2. § 193 StGB, sonstige Rechtfertigungsgründe"
+    - label: "III. Schuld"
+  - label: "C. Üble Nachrede, § 186 StGB"
+    children:
+    - label: "I. Tatbestand"
+      children:
+      - label: "1. Tatsache in Bezug auf einen anderen, die geeignet ist, verächtlich zu machen oder herabzuwürdigen"
+      - label: "2. Behaupten oder Verbreiten gegenüber einem Dritten"
+      - label: "3. Objektive Bedingung der Strafbarkeit: Tatsache nicht erweislich wahr"
+        hinweis: >-
+          Vorsatz nicht erforderlich; Beweisrisiko beim Täter.
+      - label: "4. Vorsatz bezüglich 1. und 2."
+    - label: "II. Rechtswidrigkeit: insbesondere § 193 StGB"
+      hinweis: >-
+        Prüfungspflicht des Täters beachten.
+    - label: "III. Schuld"
+  - label: "D. Verleumdung, § 187 StGB"
+    hinweis: >-
+      Zusätzlich: Unwahrheit der Tatsache und Handeln wider besseres Wissen. §
+      193 StGB scheidet aus.
+faelle:
+- slug: sr-ehre-fall-kasse
+  title: "Das Gerücht am Mittagstisch"
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - "Eigener Sachverhalt der Redaktion"
+  stand: 2026-10
+  facts: >-
+    A und K sind Kollegen in einer Firma. A hat von einem Dritten gehört, K habe
+    im vergangenen Monat Geld aus der Kasse genommen. A glaubt der Aussage nicht
+    fest, hält sie aber für möglich. Am Mittagstisch, bei dem außer A und K
+    weitere vier Kollegen anwesend sind, erzählt A: 'K hat letzten Monat aus der
+    Kasse Geld genommen.' Später stellt sich heraus, dass sich die Behauptung
+    nicht beweisen lässt; K bestreitet sie und niemand kann die Wahrheit klären.
+    A hatte vor seiner Äußerung nichts geprüft und niemanden gefragt. Als K dies
+    erfährt, stellt er A zur Rede. A wird wütend und ruft vor den Kollegen: 'Du
+    bist ein widerliches Schwein und ein Dreckskerl!' K stellt am folgenden Tag
+    Strafantrag gegen A.
+  question: >-
+    Wie hat sich A nach den §§ 185 bis 187 StGB strafbar gemacht? Auf § 193 StGB
+    ist einzugehen; die Tat gilt als rechtzeitig angezeigt.
+  steps:
+  - prompt: >-
+      Liegt eine üble Nachrede (§ 186 StGB) vor?
+    erwartung: >-
+      Ja, A macht sich wegen übler Nachrede nach § 186 StGB strafbar. Die
+      Äußerung über die Kasse ist eine Tatsachenbehauptung, weil sie dem Beweis
+      zugänglich ist, und sie ist geeignet, K in der öffentlichen Meinung
+      herabzuwürdigen. A hat die Tatsache gegenüber Dritten verbreitet, denn er
+      hat eine fremde Behauptung weitergegeben. Die Tatsache ist nicht
+      erweislich wahr. Diese Nichterweislichkeit ist eine objektive Bedingung
+      der Strafbarkeit, der Vorsatz muss sich darauf nicht erstrecken. Das
+      Beweisrisiko trägt A. A handelte bezüglich der übrigen Merkmale
+      vorsätzlich.
+  - prompt: >-
+      Ist die Tat nach § 193 StGB gerechtfertigt?
+    erwartung: >-
+      Nein. Es fehlt an einem berechtigten Interesse; die Weitergabe eines
+      ungeprüften Gerüchts beim Mittagessen dient keinem rechtlich anerkannten
+      Zweck. Außerdem hat A die Wahrheit vor der Äußerung nicht geprüft und
+      damit seine Prüfungspflicht verletzt.
+  - prompt: >-
+      Liegt eine Verleumdung (§ 187 StGB) vor?
+    erwartung: >-
+      Nein. A wusste nicht, dass die Tatsache unwahr ist; die Unwahrheit steht
+      nicht fest und A glaubte weder an Wahrheit noch an Unwahrheit sicher. Es
+      fehlt am Handeln wider besseres Wissen.
+  - prompt: >-
+      Wie ist der Ausruf 'widerliches Schwein und Dreckskerl' zu bewerten?
+    erwartung: >-
+      Eine Beleidigung nach § 185 StGB. Beide Ausdrücke sind herabsetzende
+      Werturteile ohne Tatsachenkern und Kundgaben von Missachtung
+      (Schimpfwörter), keine Tatsachenbehauptungen. Meinungsfreiheit und § 193
+      StGB helfen nicht, weil die Äußerung auf Diffamierung der Person zielt und
+      die Grenze der Schmähkritik überschreitet. Der Strafantrag ist gestellt, §
+      194 StGB.
+  - prompt: >-
+      Wie stehen die Delikte zueinander?
+    erwartung: >-
+      Die Äußerungen erfolgten in zwei verschiedenen Situationen mit je eigenem
+      Handlungsentschluss. Es liegt Tatmehrheit (§ 53 StGB) zwischen § 186 StGB
+      und § 185 StGB vor.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: "Üble Nachrede bejaht mit Tatsachenbegriff und Verbreiten/Behaupten"
+      weight: 3.0
+      required: true
+      norms:
+      - "§ 186 StGB"
+      keywords:
+      - "üble Nachrede"
+      - "§ 186 StGB"
+      - "Tatsachenbehauptung"
+      - "behauptet oder verbreitet"
+      - "herabzuwürdigen"
+      card_slugs:
+      - sr-ehre-186-ueble-nachrede
+      - sr-ehre-tatsache-werturteil
+    - id: p2
+      label: "Nichterweislichkeit als objektive Bedingung der Strafbarkeit erkannt"
+      weight: 2.0
+      required: true
+      norms:
+      - "§ 186 StGB"
+      keywords:
+      - "objektive Bedingung der Strafbarkeit"
+      - "nicht erweislich wahr"
+      - "Beweisrisiko"
+      - "Nichterweislichkeit"
+      card_slugs:
+      - sr-ehre-186-ueble-nachrede
+    - id: p3
+      label: "§ 193 StGB geprüft und verneint (Prüfungspflicht, kein berechtigtes Interesse)"
+      weight: 2.0
+      required: true
+      norms:
+      - "§ 193 StGB"
+      keywords:
+      - "berechtigte Interessen"
+      - "§ 193 StGB"
+      - "Prüfungspflicht"
+      - "Wahrnehmung berechtigter Interessen"
+      - "Rechtfertigungsgrund"
+      card_slugs:
+      - sr-ehre-193-berechtigte-interessen
+    - id: p4
+      label: "Verleumdung wegen fehlenden Wissens um die Unwahrheit verneint"
+      weight: 1.5
+      required: false
+      norms:
+      - "§ 187 StGB"
+      keywords:
+      - "wider besseres Wissen"
+      - "Verleumdung"
+      - "§ 187 StGB"
+      - "dolus directus"
+      - "sicheres Wissen"
+      card_slugs:
+      - sr-ehre-187-verleumdung
+    - id: p5
+      label: "Beleidigung durch Ausruf bejaht, Schmähkritik"
+      weight: 1.5
+      required: false
+      norms:
+      - "§ 185 StGB"
+      keywords:
+      - "Beleidigung"
+      - "§ 185 StGB"
+      - "Schmähkritik"
+      - "Kundgabe von Missachtung"
+      - "Werturteil"
+      card_slugs:
+      - sr-ehre-185-beleidigung
+      - sr-ehre-meinungsfreiheit-schmaehkritik
+    - id: p6
+      label: "Strafantrag und Konkurrenz"
+      weight: 1.0
+      required: false
+      norms:
+      - "§ 194 StGB"
+      - "§ 53 StGB"
+      keywords:
+      - "Strafantrag"
+      - "§ 194 StGB"
+      - "Tatmehrheit"
+      - "§ 53 StGB"
+      - "Prozessvoraussetzung"
+      card_slugs:
+      - sr-ehre-194-strafantrag

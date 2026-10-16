@@ -1,0 +1,443 @@
+topic:
+  slug: sr-bt-mord-ergaenzung
+  area: strafrecht
+  title: "Tötungsdelikte (Ergänzung): Vorsatzabgrenzung, Mordmerkmale, § 28, § 213 StGB"
+  parent: sr-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-morderg-hemmschwelle
+  type: rechtsprechung
+  front: "Was besagt die 'Hemmschwellentheorie' und wie ist sie nach der Rspr. des BGH von 2012 zu handhaben?"
+  back: >-
+    Nach der früher verbreiteten Hemmschwellentheorie sollte vor der Annahme
+    eines bedingten Tötungsvorsatzes besonders sorgfältig geprüft werden, weil
+    die Hemmschwelle vor einer Tötung höher liege als vor einer
+    Körperverletzung; selbst bei äußerst gefährlichen Handlungen wie
+    Messerstichen in den Oberkörper sei ein Tötungsvorsatz nicht ohne Weiteres
+    anzunehmen. Der BGH (u. a. Urteil vom 22.03.2012, 4 StR 558/11) hat
+    klargestellt, dass die Hemmschwelle kein Rechtssatz ist, der die
+    Beweiswürdigung bindet. Sie ist nur ein Hinweis darauf, dass die Tatsachen
+    in einer Gesamtwürdigung geprüft werden müssen. Maßgeblich ist eine
+    Gesamtschau aller objektiven und subjektiven Tatumstände: Art und
+    Gefährlichkeit der Handlung (bei äußerst gefährlicher Gewalt liegt
+    Tötungsvorsatz nahe), Tatmotiv, Tatverlauf, Äußerungen des Täters, Affekt
+    oder Alkoholisierung, Nachtatverhalten (z. B. Rettungsbemühungen). Zu den
+    Indizien gehören auch die Spontanität und Erregung, die aber nicht per se
+    gegen den Vorsatz sprechen. Die Abgrenzung betrifft den bedingten Vorsatz
+    (dolus eventualis) gegenüber bewusster Fahrlässigkeit.
+  norms:
+  - "§ 212 Abs. 1 StGB"
+  - "§ 15 StGB"
+  - "§ 22 StGB"
+  quellen:
+  - "StGB, amtliche Fassung"
+  - "BGH, Urteil vom 22.03.2012 - 4 StR 558/11 (BGHSt 57, 183)"
+  stand: 2026-10
+- slug: sr-morderg-dolus-eventualis-abgrenzung
+  type: definition
+  front: "Definiere: Bedingter Tötungsvorsatz und Abgrenzung zur Körperverletzung (§§ 212, 223 ff., 227 StGB)"
+  back: >-
+    Bedingt vorsätzlich handelt, wer den Eintritt des Erfolgs (Tod) für möglich
+    hält (Wissenselement) und ihn billigend in Kauf nimmt oder sich mit ihm
+    abfindet (Willenselement); bewusst fahrlässig handelt, wer ernsthaft darauf
+    vertraut, dass der Erfolg nicht eintritt. Dies ist die Billigungs- bzw.
+    Einwilligungstheorie der Rspr.; in der Lit. werden Möglichkeits- und
+    Wahrscheinlichkeitstheorien vertreten. Bei Tötungsdelikten ist der Vorsatz
+    auf den Tod gerichtet; wer nur Verletzungsvorsatz hat und den Tod fahrlässig
+    verursacht, haftet aus §§ 223 ff., 227 StGB (Körperverletzung mit
+    Todesfolge, Mindeststrafe drei Jahre) oder §§ 223 ff., 222 StGB. Beim
+    Versuch bildet der bedingte Tötungsvorsatz den Tatentschluss. Bei
+    äußerst gefährlicher Gewalt liegt ein Tötungsvorsatz nahe; besteht aber ein konkreter Anhalt für Vertrauen auf
+    glimpflichen Ausgang, bleibt es bei Fahrlässigkeit. Verweis auf das Thema
+    Vorsatz und Tatbestandsirrtum (sr-at-vorsatz-tatbestandsirrtum).
+  norms:
+  - "§ 15 StGB"
+  - "§ 212 Abs. 1 StGB"
+  - "§ 227 StGB"
+  - "§ 222 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-morderg-raser
+  type: rechtsprechung
+  front: "Welche Maßstäbe hat der BGH zum bedingten Tötungsvorsatz bei illegalen Kraftfahrzeugrennen aufgestellt (Ku'damm-Raser)?"
+  back: >-
+    In der Entscheidung BGHSt 63, 88 (Urteil vom 01.03.2018, 4 StR 399/17) hat
+    der BGH die Verurteilung der beiden Ku'damm-Raser wegen Mordes aufgehoben, weil
+    die Feststellungen zum bedingten Tötungsvorsatz nicht trugen. Der Vorsatz muss
+    bei Vornahme der Tathandlung vorliegen (Koinzidenzprinzip); ein erst später,
+    kurz vor der Kollision entstandener Vorsatz (dolus subsequens) macht die
+    zuvor vorsatzlos begangene Tat nicht zur vorsätzlichen. Zu prüfen sind
+    Wissens- und Willenselement (Möglichkeit eines tödlichen Unfalls erkannt und
+    sich damit abgefunden) in einer Gesamtwürdigung. Die Eigengefährdung des
+    Fahrers ist ein Beweisanzeichen gegen die Billigung, aber nicht per se
+    ausschlaggebend. Nach Zurückverweisung verurteilte das LG Berlin erneut wegen
+    Mordes; der BGH bestätigte mit Urteil vom 18.06.2020 (4 StR 482/19) die
+    Begründung des bedingten Vorsatzes und die Verurteilung des einen Angeklagten
+    (rechtskräftig), hob das Urteil gegen den anderen Angeklagten aber teilweise auf.
+    Die Entscheidung dient als Beispiel für die Methodik der Abgrenzung von
+    Eventualvorsatz und bewusster Fahrlässigkeit. Seit 2017 erfasst zudem
+    § 315d StGB verbotene Kraftfahrzeugrennen.
+  norms:
+  - "§ 15 StGB"
+  - "§ 212 Abs. 1 StGB"
+  - "§ 211 StGB"
+  quellen:
+  - "StGB, amtliche Fassung"
+  - "BGH, Urteil vom 01.03.2018 - 4 StR 399/17 (BGHSt 63, 88)"
+  stand: 2026-10
+- slug: sr-morderg-habgier
+  type: definition
+  front: "Definiere: Habgier i.S.d. § 211 Abs. 2 StGB"
+  back: >-
+    Habgier ist das ungezügelte, rücksichtslose Streben nach Gewinn um jeden
+    Preis, auch um den Preis eines Menschenlebens. Der Täter will durch den Tod
+    des Opfers einen Vermögensvorteil erlangen, wobei ein materieller Vorteil
+    genügt, auch wenn er nicht der alleinige Beweggrund ist. Beispiele sind die
+    Tötung zur Erlangung der Beute (Raubmord), einer Erbschaft, einer
+    Versicherungssumme oder zur Ersparung von Aufwendungen (etwa
+    Unterhaltspflichten). Der erstrebte Vorteil muss nicht rechtswidrig sein;
+    entscheidend ist, dass das Gewinnstreben nach der Gesamtwürdigung ein
+    besonders verwerfliches Ausmaß erreicht. Die Tötung muss gerade als Mittel
+    zur Erlangung des Vorteils dienen; wird der Täter nur bei Gelegenheit einer
+    anderen Tat zum Töter, ist an Verdeckungs- oder Ermöglichungsabsicht zu
+    denken. Habgier ist ein täterbezogenes Merkmal (Taterantrieb, 1. Gruppe) im
+    Sinne des § 28 StGB.
+  norms:
+  - "§ 211 Abs. 2 StGB"
+  - "§ 28 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-morderg-grausamkeit
+  type: definition
+  front: "Definiere: Grausamkeit i.S.d. § 211 Abs. 2 StGB"
+  back: >-
+    Grausam tötet, wer dem Opfer aus gefühlloser, unbarmherziger Gesinnung durch
+    die Art der Tötung besondere Schmerzen oder Qualen körperlicher oder
+    seelischer Art zufügt, die über das für die Tötung erforderliche Maß
+    hinausgehen. Objektiv liegt ein außergewöhnlich schmerzhaftes oder quälendes
+    Vorgehen vor (etwa längeres Quälen, Verhungernlassen); subjektiv muss der
+    Täter die Umstände erkennen und aus gefühloser, unbarmherziger Gesinnung
+    handeln. Seelische Qualen können genügen (Todesangst, Verspottung). Die
+    bloße Schwere der Verletzung oder Brutalität der Tat reicht nicht.
+    Grausamkeit ist ein tatbezogenes Merkmal der Tatausführung (2. Gruppe): Es
+    betrifft die Art der Tat und ist kein besonderes persönliches Merkmal i.S.d.
+    § 28 StGB; Teilnehmer, die Kenntnis davon haben, werden daher nach den
+    allgemeinen Regeln der Akzessorietät erfasst.
+  norms:
+  - "§ 211 Abs. 2 StGB"
+  - "§ 28 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-morderg-gemeingefaehrliche-mittel
+  type: definition
+  front: "Definiere: Tötung mit gemeingefährlichen Mitteln, § 211 Abs. 2 StGB"
+  back: >-
+    Gemeingefährlich ist ein Tatmittel, wenn es in der konkreten Tatsituation
+    geeignet ist, eine unbestimmte Anzahl von Menschen an Leib oder Leben zu
+    gefährden, weil der Täter die Ausdehnung der Gefahr nicht in der Hand hat.
+    Entscheidend ist nicht die abstrakte Gefährlichkeit des Mittels, sondern die
+    Eignung in der jeweiligen Situation. Typische Mittel sind Brand,
+    Sprengstoff, Gift in Lebensmitteln, nicht beherrschbares Fahren in eine
+    Menschenmenge. Eine Schusswaffe ist nur gemeingefährlich, wenn dadurch eine
+    Mehrzahl von Menschen konkret gefährdet wird. Der Täter muss die
+    gemeingefährliche Wirkung des Mittels erkennen und ausnutzen. Das Merkmal
+    ist tatbezogen (2. Gruppe); es handelt sich nicht um ein besonderes
+    persönliches Merkmal i.S.d. § 28 StGB. Tötet der Täter mit
+    gemeingefährlichen Mitteln, kommen häufig zusätzlich §§ 306 ff. StGB
+    (Brandstiftung) in Betracht.
+  norms:
+  - "§ 211 Abs. 2 StGB"
+  - "§ 28 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-morderg-ermoeglichung
+  type: definition
+  front: "Definiere: Ermöglichungsabsicht i.S.d. § 211 Abs. 2 StGB"
+  back: >-
+    In Ermöglichungsabsicht handelt, wer tötet, um eine andere Straftat zu
+    ermöglichen. Die Tötung muss final, als Mittel zum Zweck der Ermöglichung
+    der anderen Straftat, eingesetzt werden. Die andere Tat braucht noch nicht
+    begonnen zu haben und muss nicht dieselbe Rechtsgutsverletzung betreffen; es
+    kann sich um eine Straftat gegen das Opfer oder gegen Dritte handeln (z. B.
+    Tötung des Wachmanns, um einen Diebstahl zu ermöglichen). Der Täter muss die
+    andere Tat wollen, sodass neben dem Tötungsvorsatz die Absicht (dolus
+    directus 1. Grades) bezüglich der Ermöglichung vorliegt. Die Abgrenzung zur
+    Verdeckungsabsicht erfolgt zeitlich: Verdeckungsabsicht betrifft eine
+    bereits begangene Tat, Ermöglichungsabsicht eine künftige.
+    Ermöglichungsabsicht ist ein täterbezogenes Merkmal (Tatzweck, 3. Gruppe)
+    und besonderes persönliches Merkmal i.S.d. § 28 StGB.
+  norms:
+  - "§ 211 Abs. 2 StGB"
+  - "§ 28 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-morderg-213
+  type: norm
+  front: "Was regelt § 213 StGB (minder schwerer Fall des Totschlags)?"
+  back: >-
+    § 213 StGB sieht für den Totschlag einen gemilderten Strafrahmen
+    (Freiheitsstrafe von einem Jahr bis zu zehn Jahren) vor und enthält zwei
+    Alternativen. Alt. 1 (Provokationsfall): Der Totschläger ist ohne eigene
+    Schuld durch eine ihm oder einem Angehörigen zugefügte Misshandlung oder
+    schwere Beleidigung von dem getöteten Menschen zum Zorn gereizt und
+    hierdurch auf der Stelle zur Tat hingerissen worden. Erforderlich sind:
+    Provokation durch das Opfer, die nicht vom Täter verschuldet sein darf,
+    Zornaffekt und ein unmittelbarer Zusammenhang ('auf der Stelle'); fehlt der
+    unmittelbare Zusammenhang, kommt Alt. 2 in Betracht. Alt. 2 (sonst minder
+    schwerer Fall): Aufgrund einer Gesamtwürdigung aller Umstände weicht der
+    Fall vom Normalfall so erheblich ab, dass der Regelstrafrahmen des § 212
+    StGB unangemessen wäre. § 213 StGB ist nur auf Totschlag anwendbar, nicht
+    auf Mord; für Mord gilt die Rechtsfolgenlösung der Rspr. in Ausnahmefällen.
+    § 213 StGB ist eine Strafzumessungsregel, kein Tatbestandsmerkmal; sie ist
+    im Gutachten nach der Prüfung der Strafbarkeit anzusprechen.
+  norms:
+  - "§ 213 StGB"
+  - "§ 212 Abs. 1 StGB"
+  - "§ 211 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-morderg-28-fallgruppen
+  type: definition
+  front: "Definiere: § 28 StGB bei Mordmerkmalen - die Fallgruppen der Beteiligung"
+  back: >-
+    Das Mordmerkmal der 1. und 3. Gruppe (täterbezogen) ist ein besonderes
+    persönliches Merkmal. Die Rspr. (Selbstständigkeitstheorie) sieht es als
+    strafbegründend an und wendet § 28 Abs. 1 StGB an; die h.L.
+    (Qualifikationstheorie) sieht es als strafschärfend an und wendet § 28 Abs.
+    2 StGB an. Fallgruppe 1: Der Täter hat das Merkmal (z. B. Habgier), der
+    Teilnehmer nicht. Rspr.: Teilnahme am Mord (§§ 211, 26 oder 27 StGB), aber
+    Strafrahmenmilderung nach § 28 Abs. 1, § 49 Abs. 1 StGB; h.L.: Teilnahme am
+    Totschlag (§§ 212, 26, 27 StGB), kein Merkmal beim Teilnehmer. Fallgruppe 2:
+    Der Teilnehmer hat das Merkmal, der Täter nicht. Rspr.: Haupttat ist
+    Totschlag; der Teilnehmer wird nur wegen Teilnahme am Totschlag bestraft, da
+    die Akzessorietät eine Mordtat des Haupttäters verlangt. h.L.: Teilnahme am
+    Totschlag, aber nach § 28 Abs. 2 StGB Bestrafung mit dem Strafrahmen des §
+    211 StGB. Tatbezogene Merkmale (2. Gruppe) werden nicht über § 28 StGB
+    geregelt: Der Teilnehmer haftet für Mord, wenn er die Umstände kennt und
+    billigt.
+  norms:
+  - "§ 28 Abs. 1 StGB"
+  - "§ 28 Abs. 2 StGB"
+  - "§ 211 Abs. 2 StGB"
+  - "§ 49 Abs. 1 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-morderg-gekreuzte-merkmale
+  type: streitstand
+  front: "Streitstand: Gekreuzte Mordmerkmale bei Täter und Teilnehmer"
+  back: >-
+    Problem: Täter und Teilnehmer erfüllen jeweils ein (unterschiedliches)
+    täterbezogenes Mordmerkmal, z. B. der Täter handelt aus Habgier, der
+    Anstifter aus Verdeckungsabsicht. Die Rspr. bejaht nach der
+    Selbstständigkeitstheorie die Teilnahme am Mord: Beide verwirklichen in
+    ihrer Person ein Mordmerkmal, sodass der Teilnehmer an einer Mordtat
+    teilnimmt, ohne dass die Strafmilderung des § 28 Abs. 1 StGB zugunsten des
+    Teilnehmers eingreift, weil er selbst ein Mordmerkmal trägt. Die
+    Qualifikationstheorie der h.L. kommt auf anderem Weg meist zum selben
+    Ergebnis: Die Teilnahme bezieht sich auf den Grundtatbestand des Totschlags
+    (§ 212 StGB); nach § 28 Abs. 2 StGB wird aber jeder Beteiligte, bei dem ein
+    Mordmerkmal vorliegt, nach dem Strafrahmen des § 211 StGB bestraft, also
+    sowohl der Täter als auch der Teilnehmer wegen seines jeweils eigenen
+    Merkmals. Gestritten wird
+    über die Konstruktion (Mord oder Totschlag als Haupttat) und die Frage, ob
+    die Merkmale 'gekreuzt' werden dürfen, wenn sie verschiedenen Gruppen
+    angehören. Für die Klausur genügt es, die Tatbestandsstruktur der gewählten
+    Theorie konsequent darzulegen und das Ergebnis (jeweils Strafrahmen des §
+    211 StGB) herauszuarbeiten.
+  norms:
+  - "§ 28 Abs. 1 StGB"
+  - "§ 28 Abs. 2 StGB"
+  - "§ 211 StGB"
+  - "§ 212 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: sr-morderg-schema-tatbezug
+  title: "Teilnahme an Mord und § 28 StGB"
+  norms:
+  - "§ 28 Abs. 1 StGB"
+  - "§ 28 Abs. 2 StGB"
+  - "§ 211 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+  steps:
+  - label: "I. Haupttat"
+    children:
+    - label: "1. Täter: Mord (§ 211 StGB) oder Totschlag (§ 212 StGB)?"
+      hinweis: >-
+        Mordmerkmale beim Täter prüfen und einordnen: täterbezogen (1. und 3.
+        Gruppe) oder tatbezogen (2. Gruppe).
+    - label: "2. Rechtswidrig und vorsätzlich"
+  - label: "II. Teilnehmer: Anstiftung/Beihilfe (§§ 26, 27 StGB)"
+    children:
+    - label: "1. Vorsatz bezüglich der Haupttat"
+      hinweis: >-
+        Bei tatbezogenen Merkmalen (z. B. Heimtücke): Kenntnis der Umstände.
+    - label: "2. Persönliche Merkmale: § 28 StGB"
+      hinweis: >-
+        Streit Selbstständigkeits-/Qualifikationstheorie bei täterbezogenen
+        Merkmalen; Fallgruppen: Merkmal nur beim Täter, nur beim Teilnehmer,
+        gekreuzt.
+  - label: "III. Rechtsfolge"
+    hinweis: >-
+      Strafrahmenverschiebung nach § 28 Abs. 1 i.V.m. § 49 Abs. 1 StGB (Rspr.);
+      Rechtsfolgenlösung bei Heimtücke in Ausnahmefällen.
+- slug: sr-morderg-schema-vorsatz-abgrenzung
+  title: "Tötungsvorsatz und Abgrenzung zur Körperverletzung"
+  norms:
+  - "§ 212 Abs. 1 StGB"
+  - "§ 15 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+  steps:
+  - label: "I. Wissenselement"
+    children:
+    - label: "1. Kennt der Täter die Möglichkeit des Todeseintritts?"
+      hinweis: >-
+        Gefährlichkeit der Handlung, Wissen um Folgen.
+  - label: "II. Willenselement"
+    children:
+    - label: "1. Billigung bzw. Abfinden mit dem Tod oder Vertrauen auf glimpflichen Ausgang?"
+      hinweis: >-
+        Gesamtwürdigung: Tatmotiv, Tatverlauf, Affekt/Alkohol, Äußerungen,
+        Nachtatverhalten; Hemmschwelle ist kein Rechtssatz.
+  - label: "III. Ergebnis: Tötungsvorsatz oder nur Körperverletzungsvorsatz (bzw. Fahrlässigkeit)"
+    hinweis: >-
+      Bei Körperverletzungsvorsatz und Todesfolge: § 227 StGB.
+faelle:
+- slug: sr-morderg-fall-messerstich
+  title: "Der Messerstich in der Bar"
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - "Eigener Sachverhalt der Redaktion"
+  stand: 2026-10
+  facts: >-
+    A und B geraten in einer Bar in einen Streit. Nach einem Wortwechsel zieht A
+    ein Küchenmesser mit einer 15 Zentimeter langen Klinge aus der Jacke und
+    sticht B zweimal mit großer Wucht in die linke Brust. Dabei ruft A: 'Du
+    verreckst jetzt!' A verlässt die Bar, ohne Hilfe zu holen. B überlebt nur,
+    weil der Barkeeper sofort den Notruf wählt und B notoperiert wird. A hatte
+    zur Tatzeit 1,5 Promille, war aber in seiner Wahrnehmung nicht eingeschränkt
+    und hatte den Stich gezielt ausgeführt.
+  question: >-
+    Hat sich A wegen versuchten Totschlags nach §§ 212, 22, 23 StGB strafbar
+    gemacht? Beschränken Sie sich auf Tatentschluss (Vorsatz) und unmittelbares
+    Ansetzen; Mordmerkmale, gefährliche Körperverletzung und Rücktritt sind
+    nicht zu prüfen.
+  steps:
+  - prompt: >-
+      Wie ist der Tatentschluss bezüglich der Tötung zu bestimmen und welchen
+      Maßstab legt man an?
+    erwartung: >-
+      Tatentschluss ist der Vorsatz bezüglich des Todes eines Menschen. Es
+      genügt bedingter Vorsatz: A müsste den Tod des B für möglich gehalten
+      (Wissenselement) und billigend in Kauf genommen haben (Willenselement).
+      Die Abgrenzung zur bewussten Fahrlässigkeit erfolgt im Wege einer
+      Gesamtwürdigung aller objektiven und subjektiven Umstände; die
+      Hemmschwellentheorie ist nach der Rspr. kein Rechtssatz, sondern ein
+      Hinweis auf sorgfältige Prüfung.
+  - prompt: >-
+      Welche Umstände sprechen für einen bedingten Tötungsvorsatz?
+    erwartung: >-
+      Zwei wuchtige Stiche mit einem langen Messer in die Brust sind objektiv
+      äußerst gefährlich; A wusste um die Lebensgefährlichkeit. Hinzu kommen die
+      Äußerung 'Du verreckst jetzt!', der gezielte Stich trotz fehlender
+      Einschränkung der Wahrnehmung und das Verlassen der Bar ohne
+      Hilfeleistung. Alkohol (1,5 Promille) und der spontane Streit sind zwar zu
+      berücksichtigen, stehen dem Vorsatz aber hier nicht entgegen.
+  - prompt: >-
+      Liegt ein unmittelbares Ansetzen vor und wie lautet das Ergebnis?
+    erwartung: >-
+      Ja. Mit dem Stich hat A zur Tötung unmittelbar angesetzt, der Tod trat
+      nicht ein (Versuch). A handelte rechtswidrig und schuldhaft. Er hat sich
+      wegen versuchten Totschlags strafbar gemacht.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: "Tatentschluss als bedingter Tötungsvorsatz bestimmt (Wissens- und Willenselement)"
+      weight: 3.0
+      required: true
+      norms:
+      - "§ 15 StGB"
+      - "§ 212 Abs. 1 StGB"
+      keywords:
+      - "bedingter Vorsatz"
+      - "Wissenselement"
+      - "Willenselement"
+      - "billigend in Kauf"
+      - "dolus eventualis"
+      card_slugs:
+      - sr-morderg-dolus-eventualis-abgrenzung
+    - id: p2
+      label: "Hemmschwelle als Hinweis, nicht als Rechtssatz; Gesamtwürdigung"
+      weight: 2.5
+      required: true
+      norms:
+      - "§ 212 Abs. 1 StGB"
+      keywords:
+      - "Hemmschwelle"
+      - "Gesamtwürdigung"
+      - "Gesamtschau"
+      - "kein Rechtssatz"
+      - "Beweisanzeichen"
+      card_slugs:
+      - sr-morderg-hemmschwelle
+    - id: p3
+      label: "Indizien für den Vorsatz konkret benannt"
+      weight: 2.0
+      required: true
+      norms:
+      - "§ 212 Abs. 1 StGB"
+      keywords:
+      - "Messerstiche in die Brust"
+      - "lebensgefährlich"
+      - "Du verreckst"
+      - "Nachtatverhalten"
+      - "Gefährlichkeit der Handlung"
+      card_slugs:
+      - sr-morderg-hemmschwelle
+    - id: p4
+      label: "Alkohol und Spontanität gewürdigt"
+      weight: 1.0
+      required: false
+      norms:
+      - "§ 15 StGB"
+      keywords:
+      - "Alkoholisierung"
+      - "Promille"
+      - "Spontanität"
+      - "Affekt"
+      - "spontane Tat"
+      card_slugs:
+      - sr-morderg-hemmschwelle
+    - id: p5
+      label: "Unmittelbares Ansetzen und Ergebnis"
+      weight: 1.0
+      required: false
+      norms:
+      - "§ 22 StGB"
+      - "§ 23 Abs. 1 StGB"
+      keywords:
+      - "unmittelbares Ansetzen"
+      - "Versuch"
+      - "§ 22 StGB"
+      - "versuchter Totschlag"
+      - "§§ 212, 22, 23"
+      card_slugs:
+      - sr-morderg-dolus-eventualis-abgrenzung

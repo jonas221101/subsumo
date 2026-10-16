@@ -77,8 +77,16 @@ def update_me(payload: UserUpdateIn, user: CurrentUser, db: DbSession) -> UserOu
         user.display_name = payload.display_name
     if payload.daily_minutes is not None:
         user.daily_minutes = payload.daily_minutes
-    if payload.exam_date is not None:
-        user.exam_date = datetime.combine(payload.exam_date, time.min, tzinfo=UTC)
+    sent = payload.model_fields_set
+    if "exam_date" in sent:
+        # Explizites null loescht das Examensdatum.
+        user.exam_date = (
+            datetime.combine(payload.exam_date, time.min, tzinfo=UTC)
+            if payload.exam_date is not None
+            else None
+        )
+    if "bundesland" in sent and payload.bundesland is None:
+        user.bundesland = None
     if payload.bundesland is not None:
         code = payload.bundesland.strip().upper()
         if code and code not in BUNDESLAND_CODES:
@@ -91,7 +99,7 @@ def update_me(payload: UserUpdateIn, user: CurrentUser, db: DbSession) -> UserOu
         uni = db.query(Universitaet).filter_by(slug=slug).one_or_none() if slug else None
         if slug and uni is None:
             raise HTTPException(
-                status.HTTP_422_UNPROCESSABLE_ENTITY, f"Unbekannte Universitaet '{slug}'"
+                status.HTTP_422_UNPROCESSABLE_ENTITY, f"Unbekannte Universität '{slug}'"
             )
         user.universitaet_slug = slug or None
         # Die Universitaet legt das Bundesland fest - sonst wuerde ein Nutzer

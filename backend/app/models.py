@@ -163,6 +163,8 @@ class UserCard(Base):
     reps: Mapped[int] = mapped_column(Integer, default=0)
     lapses: Mapped[int] = mapped_column(Integer, default=0)
     state: Mapped[str] = mapped_column(String(16), default=CardStateEnum.NEW.value)
+    # Index im Lernschritt-Array (srs.LEARNING_STEPS_MIN) fuer learning/relearning.
+    step: Mapped[int] = mapped_column(Integer, default=0, server_default="0")
     content_changed: Mapped[bool] = mapped_column(default=False)
 
     user: Mapped[User] = relationship(back_populates="cards")
@@ -173,9 +175,11 @@ class Review(Base):
     """Unveraenderliches Lernereignis. ``client_id`` macht den Sync idempotent."""
 
     __tablename__ = "reviews"
+    # Idempotenz gilt pro Nutzer: zwei Nutzer duerfen dieselbe client_id nutzen.
+    __table_args__ = (UniqueConstraint("user_id", "client_id", name="uq_reviews_user_client"),)
 
     id: Mapped[int] = mapped_column(primary_key=True)
-    client_id: Mapped[str] = mapped_column(String(64), unique=True, index=True)
+    client_id: Mapped[str] = mapped_column(String(64), index=True)
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
     card_id: Mapped[int] = mapped_column(ForeignKey("cards.id"), index=True)
     rating: Mapped[int] = mapped_column(Integer)  # 1 again, 2 hard, 3 good, 4 easy

@@ -4,22 +4,25 @@ kurs:
   area: oeffentliches-recht
   semester_default: 5
   examenskurs: false
-  stand: 2026-09
+  stand: 2026-10
   quellen:
-  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: 'Gefahrenabwehrrecht nach dem Polizei-/Ordnungsgesetz des eigenen Bundeslands: Generalklausel,
-    Standardmassnahmen, Stoerer, Zustaendigkeit, Vollstreckung.'
+  beschreibung: 'Gefahrenabwehrrecht nach dem Polizei-/Ordnungsgesetz des eigenen Bundeslands: Generalklausel, Standardmaßnahmen,
+    Störerauswahl, Nichtstörer, Zuständigkeit, Vollstreckung, Kosten und Versammlungsrecht.'
   lernziele:
-  - Rechtmaessigkeit einer Gefahrenabwehrmassnahme nach Landesrecht aufbauen
-  - Generalklausel und Standardmassnahmen des eigenen Landes mit Fundstelle zitieren
-  - Stoererauswahl und polizeilichen Notstand pruefen
+  - Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach Landesrecht aufbauen
+  - Generalklausel und Standardmaßnahmen des eigenen Landes mit Fundstelle zitieren
+  - Störerauswahl, Nichtstörerinanspruchnahme und polizeilichen Notstand prüfen
+  - Versammlungsrechtliche Maßnahmen (Auflagen, Verbot, Auflösung) nach Polizeifestigkeit und § 15 VersG/Landesrecht
+    prüfen
   klausurformat:
     typ: Fortgeschrittenenklausur
     minuten: 180
   topic_slugs:
   - or-sicherheitsrecht-generalklausel-standardmassnahmen
+  - or-polizeirecht-vertiefung
+  - or-versammlungsrecht
   landesrecht_kategorien:
   - polizei-ordnungsrecht
-  fehlende_themen:
-  - Stoererauswahl vertieft (P3)
+  fehlende_themen: []

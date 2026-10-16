@@ -1,0 +1,364 @@
+topic:
+  slug: or-gr-justizgrundrechte-art33
+  area: oeffentliches-recht
+  title: 'Justizgrundrechte und Art. 33 GG: Art. 19 Abs. 4, 101, 103 und Zugang zu öffentlichen Ämtern'
+  parent: or-grundrechte
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-gr-jgr-art19-abs4-rechtsweggarantie
+  type: definition
+  front: "Was garantiert Art. 19 Abs. 4 GG (Rechtsweggarantie), und was bedeutet effektiver Rechtsschutz?"
+  back: >-
+    Art. 19 Abs. 4 S. 1 GG gewährt jedem, der durch die öffentliche Gewalt in seinen
+    Rechten verletzt wird, den Rechtsweg. Öffentliche Gewalt ist nach der
+    Rechtsprechung nur die Exekutive, nicht die Rechtsprechung und nicht der
+    Gesetzgeber; gegen Verfahrensverstöße der Gerichte folgt ein fachgerichtlicher Rechtsschutz aus dem Rechtsstaatsprinzip (allgemeiner Justizgewährungsanspruch, BVerfGE 107, 395, Plenarbeschluss).
+    Geschützt wird die Verletzung in eigenen subjektiven Rechten, und zwar jedes
+    Rechts, nicht nur von Grundrechten. Die Garantie verlangt nicht nur den formalen
+    Zugang zu einem Gericht, sondern effektiven Rechtsschutz: Das Gericht muss die
+    Rechtsverletzung tatsächlich und rechtlich umfassend prüfen, innerhalb
+    angemessener Zeit entscheiden und gegebenenfalls vorläufigen Rechtsschutz
+    gewähren, um vollendete Tatsachen zu verhindern. Einen Instanzenzug
+    garantiert Art. 19 Abs. 4 GG nicht. Eine Ausnahme enthält Art. 10 Abs. 2 S. 2 GG (vgl. Art. 19 Abs. 4 S. 3 GG).
+  norms:
+  - Art. 19 Abs. 4 GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 107, 395
+- slug: or-gr-jgr-art19-abs4-eilrechtsschutz-kontrolldichte
+  type: norm
+  front: "Was folgt aus Art. 19 Abs. 4 GG für die gerichtliche Kontrolldichte und den vorläufigen Rechtsschutz?"
+  back: >-
+    Art. 19 Abs. 4 GG verlangt grundsätzlich eine vollständige tatsächliche und
+    rechtliche Überprüfung des Verwaltungshandelns. Beurteilungsspielräume und
+    Ermessen schränken die Kontrolldichte nur ein, soweit das Gesetz sie
+    ausdrücklich oder durch die Art der Entscheidung eröffnet; hierfür bedarf es eines
+    hinreichenden sachlichen Grundes. Der Verwaltungsrechtsschutz muss
+    wirksam sein: Der Betroffene muss rechtzeitig eine Entscheidung erreichen
+    können, bevor vollendete Tatsachen geschaffen werden. Aus dem Gebot des
+    effektiven Rechtsschutzes folgt deshalb der Vorrang aufschiebender Wirkung
+    (§ 80 Abs. 1 VwGO) beziehungsweise der Anspruch auf Eilrechtsschutz (§§ 80 Abs. 5,
+    123 VwGO). Bei besonders schwerwiegenden, irreparablen Eingriffen muss das
+    Eilverfahren das Hauptsacheverfahren ersetzen können; das Gericht muss
+    dann die Erfolgsaussichten umfassend prüfen und darf sich nicht auf eine
+    bloße Folgenabwägung beschränken. Die Rechtsschutzgarantie wirkt auch auf die
+    Ausgestaltung des Verwaltungsverfahrens (Mitteilung, Begründung).
+  norms:
+  - Art. 19 Abs. 4 GG
+  - § 80 VwGO
+  - § 123 VwGO
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: or-gr-jgr-art101-gesetzlicher-richter
+  type: definition
+  front: "Was schützt Art. 101 Abs. 1 GG (Ausnahmegerichte, gesetzlicher Richter)?"
+  back: >-
+    Art. 101 Abs. 1 S. 1 GG verbietet Ausnahmegerichte: Gerichte, die für den
+    Einzelfall oder für einen bestimmten Personenkreis ad hoc eingesetzt werden. Der
+    Grundsatz des gesetzlichen Richters (Satz 2) verlangt, dass sich die Zuständigkeit
+    des Gerichts und des einzelnen Richters im Voraus aus einer abstrakt-generellen
+    Regelung ergibt (Gesetz, Geschäftsverteilungsplan), sodass die Möglichkeit
+    einer Manipulation des Ergebnisses durch Auswahl des Richters ausgeschlossen
+    ist. Die fehlerhafte Anwendung einfachen Verfahrensrechts begründet nicht
+    schon eine Verletzung; der Verstoß muss willkürlich sein, also unter keinem
+    denkbaren Gesichtspunkt vertretbar, oder die Bedeutung und Tragweite von
+    Art. 101 Abs. 1 S. 2 GG grundlegend verkennen. Typisch ist die Verletzung durch
+    Nichtvorlage an das BVerfG (Art. 100 GG) oder den EuGH (Art. 267 Abs. 3 AEUV),
+    weil auch der EuGH gesetzlicher Richter im Sinne der Norm ist. Das Recht gilt
+    für jedermann, auch juristische Personen des öffentlichen Rechts.
+  norms:
+  - Art. 101 Abs. 1 GG
+  - Art. 100 Abs. 1 GG
+  - Art. 267 Abs. 3 AEUV
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: or-gr-jgr-art103-abs1-rechtliches-gehoer
+  type: definition
+  front: "Was verlangt der Anspruch auf rechtliches Gehör (Art. 103 Abs. 1 GG)?"
+  back: >-
+    Vor Gericht hat jedermann Anspruch auf rechtliches Gehör. Das Grundrecht ist
+    Ausdruck der Menschenwürde und des Rechtsstaatsprinzips und gilt für alle
+    gerichtlichen Verfahren, unabhängig von der Verfahrensart und für alle
+    Beteiligten, auch für juristische Personen des öffentlichen Rechts. Es umfasst drei
+    Teilgehalte. Das Recht auf Information verlangt, dass der Beteiligte vom
+    Verfahren und dem Stand erfährt, namentlich von den Beweisergebnissen. Das Recht auf
+    Äußerung gibt Gelegenheit, sich vor der Entscheidung zu allen
+    entscheidungserheblichen Tatsachen und Rechtsfragen zu äußern. Das Recht auf
+    Berücksichtigung verpflichtet das Gericht, Vortrag zur Kenntnis zu nehmen
+    und in Erwägung zu ziehen; es muss aber nicht jedes Vorbringen ausdrücklich
+    bescheiden und verlangt nicht, dass das Gericht der Rechtsansicht der Partei
+    folgt. Gerichtliche Überraschungsentscheidungen verletzen Art. 103 Abs. 1 GG,
+    ebenso eine zu Unrecht angenommene Präklusion. Der Verstoß kann über die
+    Anhörungsrüge (z. B. § 321a ZPO) geltend gemacht werden.
+  norms:
+  - Art. 103 Abs. 1 GG
+  - § 321a ZPO
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: or-gr-jgr-art103-abs2-nulla-poena
+  type: definition
+  front: "Was verlangt der Grundsatz nulla poena sine lege (Art. 103 Abs. 2 GG)?"
+  back: >-
+    Eine Tat kann nur bestraft werden, wenn die Strafbarkeit gesetzlich bestimmt war,
+    bevor die Tat begangen wurde. Der Grundsatz enthält vier Gebote: das
+    Gesetzlichkeitsgebot (Strafbarkeit nur durch parlamentarisches Gesetz), das
+    Bestimmtheitsgebot (der Gesetzgeber muss die Voraussetzungen der Strafbarkeit so
+    konkret umschreiben, dass Tragweite und Anwendungsbereich erkennbar sind und
+    sich durch Auslegung ermitteln lassen), das Rückwirkungsverbot (strengere
+    Strafbarkeit nicht für zurückliegende Taten) und das Analogieverbot (keine
+    Anwendung über die mögliche Wortsinngrenze hinaus zu Lasten des Täters). Diese
+    Gebote gelten absolut und ohne Abwägung. Der Schutz erfasst Straftaten und
+    strafähnliche Sanktionen wie Ordnungswidrigkeiten,
+    nicht Maßregeln der Besserung und Sicherung nach h. M. (hier gilt das
+    Rückwirkungsverbot aus Art. 20 Abs. 3 GG mit Vertrauensschutz). Die Wortlautgrenze
+    ist auch für die Rechtsprechung maßgeblich (BVerfGE 126, 170, Untreue).
+  norms:
+  - Art. 103 Abs. 2 GG
+  - § 1 StGB
+  - § 3 OWiG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 126, 170
+- slug: or-gr-jgr-art103-abs3-ne-bis-in-idem
+  type: streitstand
+  front: "Was bedeutet das Doppelbestrafungsverbot (Art. 103 Abs. 3 GG, ne bis in idem), und gilt es für die Wiederaufnahme zu Lasten des Freigesprochenen?"
+  back: >-
+    Nach Art. 103 Abs. 3 GG darf niemand wegen derselben Tat auf Grund der allgemeinen
+    Strafgesetze mehrmals bestraft werden. Tat im Sinne der Vorschrift ist der
+    prozessuale Tatbegriff (der einheitliche geschichtliche Vorgang, § 264 StPO). Das
+    Verbot gilt nur gegenüber rechtskräftigen Entscheidungen deutscher Gerichte,
+    nicht bei ausländischen Urteilen, und erfasst nicht Disziplinarmaßnahmen oder
+    Maßnahmen des Berufsrechts. Streitig war, ob die Vorschrift die Wiederaufnahme
+    des Verfahrens zu Lasten des Freigesprochenen erfasst. Nach einer Ansicht
+    sperrt Art. 103 Abs. 3 GG die erneute Verfolgung nach Freispruch stets; die
+    Gegenmeinung sah in der Norm lediglich ein Verbot der Mehrfachbestrafung
+    und billigte Ausnahmen im Interesse materieller Gerechtigkeit. Das BVerfG hat
+    mit Urteil vom 31.10.2023 (2 BvR 900/22) entschieden, dass § 362 Nr. 5
+    StPO, der die Wiederaufnahme wegen neuer Tatsachen oder Beweismittel zulässt,
+    gegen Art. 103 Abs. 3 GG verstößt und nichtig ist. Die Entscheidung
+    betrifft nur Nr. 5; die übrigen Wiederaufnahmegründe des § 362 StPO waren
+    nicht Verfahrensgegenstand.
+  norms:
+  - Art. 103 Abs. 3 GG
+  - § 362 Nr. 5 StPO
+  - § 264 StPO
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfG, Urteil vom 31.10.2023 - 2 BvR 900/22
+- slug: or-gr-jgr-art33-abs2-bestenauslese
+  type: norm
+  front: "Was gewährleistet Art. 33 Abs. 2 GG (Bestenauslese), und welche Bedeutung hat Art. 33 Abs. 3 GG?"
+  back: >-
+    Art. 33 Abs. 2 GG gibt jedem Deutschen nach seiner Eignung, Befähigung und
+    fachlichen Leistung gleichen Zugang zu jedem öffentlichen Amt. Das ist ein
+    grundrechtsgleiches Recht (Art. 93 Abs. 1 Nr. 4a GG) und verpflichtet den
+    Dienstherrn, Einstellungen und Beförderungen allein nach Leistungsgrundsatz (Prinzip
+    der Bestenauslese) vorzunehmen. Eignung betrifft Persönlichkeit und Charakter,
+    Befähigung allgemeine Fähigkeiten, Kenntnisse und Erfahrungen, fachliche Leistung die
+    in der Vergangenheit erbrachten Leistungen. Maßgeblich sind in erster
+    Linie die aktuellen dienstlichen Beurteilungen; nur bei im Wesentlichen
+    gleichem Ergebnis dürfen Hilfskriterien wie das Dienstalter herangezogen werden.
+    Der Dienstherr hat bei der Auswahl einen Beurteilungsspielraum, den die Gerichte
+    nur eingeschränkt prüfen. Art. 33 Abs. 3 GG ergänzt die Regel: Der Zugang zu
+    öffentlichen Ämtern ist unabhängig vom religiösen Bekenntnis. Beschränkungen sind nur aus Gründen mit Verfassungsrang zulässig.
+  norms:
+  - Art. 33 Abs. 2 GG
+  - Art. 33 Abs. 3 GG
+  - Art. 93 Abs. 1 Nr. 4a GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: or-gr-jgr-art33-konkurrentenklage
+  type: definition
+  front: "Was ist der Bewerbungsverfahrensanspruch, und wie wird er im Konkurrentenstreit durchgesetzt?"
+  back: >-
+    Aus Art. 33 Abs. 2 GG folgt der Bewerbungsverfahrensanspruch: der Anspruch
+    jedes Bewerbers auf eine ermessens- und beurteilungsfehlerfreie Entscheidung
+    über seine Bewerbung nach Leistungsgesichtspunkten. Er ist kein Anspruch auf die
+    Stelle selbst, außer wenn das Auswahlermessen auf null reduziert ist, weil der
+    Bewerber der einzig geeignete ist. Der unterlegene Bewerber wehrt sich im
+    Konkurrentenstreit. Wegen des Grundsatzes der Ämterstabilität kann eine
+    einmal ausgehändigte Ernennungsurkunde nicht mehr aufgehoben werden; ist der
+    Dienstposten besetzt, läuft ein Hauptsacheverfahren leer. Er muss deshalb vor der
+    Ernennung einstweiligen Rechtsschutz nach § 123 VwGO (Sicherungsanordnung)
+    suchen, um die Besetzung der Stelle zu verhindern. Art. 19 Abs. 4 GG
+    verlangt, dass der Dienstherr den unterlegenen Bewerbern das Ergebnis der
+    Auswahl vor der Ernennung mitteilt und eine angemessene Wartefrist einhält. Die
+    Auswahlentscheidung und die maßgeblichen Erwägungen sind schriftlich zu
+    dokumentieren.
+  norms:
+  - Art. 33 Abs. 2 GG
+  - Art. 19 Abs. 4 GG
+  - § 123 VwGO
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: or-gr-jgr-art33-abs5-berufsbeamtentum
+  type: definition
+  front: "Was besagt Art. 33 Abs. 5 GG (hergebrachte Grundsätze des Berufsbeamtentums)?"
+  back: >-
+    Das Recht des öffentlichen Dienstes ist nach Art. 33 Abs. 5 GG unter Berücksichtigung
+    der hergebrachten Grundsätze des Berufsbeamtentums zu regeln und fortzuentwickeln.
+    Die Norm ist eine Institutsgarantie des Berufsbeamtentums und zugleich ein
+    grundrechtsgleiches Recht der Beamten (Art. 93 Abs. 1 Nr. 4a GG). Hergebrachte
+    Grundsätze sind Regeln, die in ihrem Kernbestand während einer längeren, in der
+    Weimarer Zeit bestehenden Tradition als verbindlich anerkannt wurden. Dazu zählen
+    das Alimentationsprinzip (amtsangemessene Besoldung und Versorgung, der Dienstherr
+    muss einen Mindestabstand zum Grundsicherungsniveau wahren), das Lebenszeitprinzip,
+    das Leistungsprinzip, die Treuepflicht, die Fürsorgepflicht und die
+    Pflicht zur amtsangemessenen Beschäftigung. Der Gesetzgeber muss sie
+    berücksichtigen, also beachten, darf sie aber in ihrem Kernbestand
+    nicht aufheben; im Übrigen kann er sie fortentwickeln. Das Streikverbot für
+    Beamte zählt nach dem BVerfG dazu (BVerfGE 148, 296).
+  norms:
+  - Art. 33 Abs. 5 GG
+  - Art. 93 Abs. 1 Nr. 4a GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 148, 296
+- slug: or-gr-jgr-grundrechtsgleiche-rechte-verfassungsbeschwerde
+  type: norm
+  front: "Welche Rechte außerhalb der Art. 1 bis 19 GG sind mit der Verfassungsbeschwerde rügbar?"
+  back: >-
+    Nach Art. 93 Abs. 1 Nr. 4a GG und § 90 Abs. 1 BVerfGG kann jedermann
+    behaupten, durch die öffentliche Gewalt in einem seiner Grundrechte oder in einem
+    seiner in Art. 20 Abs. 4, 33, 38, 101, 103 und 104 GG enthaltenen Rechte verletzt
+    zu sein. Diese Rechte werden als grundrechtsgleiche Rechte bezeichnet. Dazu
+    gehören das Widerstandsrecht (Art. 20 Abs. 4 GG), die staatsbürgerlichen Rechte
+    (Art. 33 GG, insbesondere Abs. 2 und Abs. 5), das Wahlrecht (Art. 38 GG) und die
+    Justizgrundrechte Art. 101, 103 und 104 GG. Art. 19 Abs. 4 GG steht im Grundrechtsabschnitt und ist daher ebenfalls rügbar. Staatsorganisationsrechtliche Prinzipien wie das Rechtsstaatsprinzip (Art. 20 Abs. 3 GG) sind dagegen nicht selbst rügbar; Verstöße gegen sonstiges objektives Verfassungsrecht können nur über die allgemeine Handlungsfreiheit des Art. 2 Abs. 1 GG geltend gemacht werden, soweit ein Gesetz nicht der verfassungsmäßigen Ordnung entspricht.
+  norms:
+  - Art. 93 Abs. 1 Nr. 4a GG
+  - § 90 Abs. 1 BVerfGG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+schemata:
+- slug: or-schema-gr-jgr-konkurrentenstreit
+  title: Konkurrentenstreit nach Art. 33 Abs. 2 GG (Eilrechtsschutz)
+  norms:
+  - Art. 33 Abs. 2 GG
+  - Art. 19 Abs. 4 GG
+  - § 123 VwGO
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Zulässigkeit des Antrags nach § 123 VwGO
+    children:
+    - label: 1. Verwaltungsrechtsweg (§ 40 VwGO, beamtenrechtlich § 54 BeamtStG)
+    - label: 2. Statthaftigkeit - Sicherungsanordnung
+    - label: 3. Antragsbefugnis (Bewerbungsverfahrensanspruch)
+  - label: II. Begründetheit
+    children:
+    - label: 1. Anordnungsgrund - Eilbedürftigkeit
+      hinweis: Ämterstabilität - mit der Ernennung wäre die Stelle besetzt und der
+        Rechtsschutz in der Hauptsache vereitelt.
+    - label: 2. Anordnungsanspruch - Verletzung des Bewerbungsverfahrensanspruchs
+      children:
+      - label: a) Rechtmäßigkeit der Auswahl nach Eignung, Befähigung, fachlicher Leistung
+      - label: b) Fehler bei der Auswahl (Beurteilung, Hilfskriterien)
+        hinweis: Dienstalter nur als Hilfskriterium bei Leistungsgleichstand.
+      - label: c) Möglichkeit einer erneuten Auswahl zugunsten des Antragstellers
+    - label: 3. Dokumentation der Auswahlentscheidung
+  - label: III. Ergebnis
+faelle:
+- slug: or-fall-gr-jgr-beford-dienstalter
+  title: Beförderung nach Dienstalter statt Bestenauslese
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  facts: >-
+    Beim Land L soll die Leitung eines Referats besetzt werden. Beamter B hat in
+    der letzten dienstlichen Beurteilung die Note „sehr gut“ (Spitzennote),
+    Beamter C die Note „gut“. C ist jedoch zehn Jahre länger im Dienst. Die
+    Behörde entscheidet sich für C, weil bei gleichwertiger Eignung stets das
+    Dienstalter den Ausschlag gebe; die Beurteilungen seien nicht entscheidend. Die
+    Entscheidung wird B per Schreiben mitgeteilt, die Ernennung des C ist für die
+    kommende Woche vorgesehen. B ist der Ansicht, die Auswahl sei rechtswidrig,
+    und möchte verhindern, dass C ernannt wird.
+  question: Verletzt die Auswahl den B in seinen Rechten, und wie kann B sein Ziel erreichen?
+  steps:
+  - prompt: Welches Recht des B ist betroffen, und welchen Maßstab muss die Auswahl wahren?
+    erwartung: Der Bewerbungsverfahrensanspruch aus Art. 33 Abs. 2 GG. Die Auswahl
+      muss nach Eignung, Befähigung und fachlicher Leistung erfolgen
+      (Bestenauslese). Dazu sind in erster Linie die aktuellen dienstlichen
+      Beurteilungen heranzuziehen.
+  - prompt: War die Auswahl des C rechtmäßig?
+    erwartung: Nein. B ist nach der Beurteilung besser. Das Dienstalter ist nur ein
+      Hilfskriterium, das bei im Wesentlichen gleichem Leistungsstand
+      herangezogen werden darf. Hier ist B aber besser beurteilt (Spitzennote). Die
+      Entscheidung verletzt Art. 33 Abs. 2 GG und den Bewerbungsverfahrensanspruch
+      des B.
+  - prompt: Wie kann B die Ernennung des C verhindern?
+    erwartung: B muss vor der Ernennung beim Verwaltungsgericht einen Antrag auf
+      einstweilige Anordnung nach § 123 VwGO (Sicherungsanordnung) stellen, mit dem
+      er der Behörde untersagt, die Stelle mit C zu besetzen. Denn mit der
+      Aushändigung der Ernennungsurkunde tritt Ämterstabilität ein, sodass eine
+      Hauptsacheklage danach in der Regel erfolglos wäre. Nach Art. 19 Abs. 4 GG
+      war die vorherige Mitteilung der Entscheidung an B geboten, damit er
+      rechtzeitig Rechtsschutz erlangen kann.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Bewerbungsverfahrensanspruch aus Art. 33 Abs. 2 GG und Leistungsgrundsatz als Maßstab
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 33 Abs. 2 GG
+      keywords:
+      - Bewerbungsverfahrensanspruch
+      - Bestenauslese
+      - Eignung, Befähigung und fachliche Leistung
+      - Leistungsgrundsatz
+      - dienstliche Beurteilung
+      card_slugs:
+      - or-gr-jgr-art33-abs2-bestenauslese
+      - or-gr-jgr-art33-konkurrentenklage
+    - id: p2
+      label: Dienstalter nur Hilfskriterium bei Leistungsgleichstand - Auswahl rechtswidrig
+      weight: 3.0
+      required: true
+      keywords:
+      - Hilfskriterium
+      - Dienstalter
+      - gleichwertige Leistung
+      - Beurteilung
+      - Spitzennote
+      card_slugs:
+      - or-gr-jgr-art33-abs2-bestenauslese
+    - id: p3
+      label: Eilrechtsschutz vor der Ernennung (§ 123 VwGO) wegen Ämterstabilität
+      weight: 3.0
+      required: true
+      norms:
+      - § 123 VwGO
+      keywords:
+      - § 123 VwGO
+      - einstweilige Anordnung
+      - Sicherungsanordnung
+      - Ämterstabilität
+      card_slugs:
+      - or-gr-jgr-art33-konkurrentenklage
+      - or-gr-jgr-art19-abs4-eilrechtsschutz-kontrolldichte
+    - id: p4
+      label: Bedeutung des Art. 19 Abs. 4 GG (vorherige Mitteilung, effektiver Rechtsschutz)
+      weight: 1.0
+      required: false
+      keywords:
+      - Art. 19 Abs. 4 GG
+      - effektiver Rechtsschutz
+      - Mitteilung
+      - Wartefrist
+      card_slugs:
+      - or-gr-jgr-art19-abs4-rechtsweggarantie

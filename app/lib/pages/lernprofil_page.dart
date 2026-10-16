@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../design/design.dart';
 import '../state.dart';
+import 'beta_feedback.dart';
+import 'examen_page.dart' show ProfilEditor, ProfilEditorState;
 import '../theme.dart';
 
 /// Lernprofil (docs/33-individualisierung.md): alles, was die App an den
@@ -13,7 +15,7 @@ import '../theme.dart';
 /// Speichern ersetzt das Profil komplett (`PUT /v1/me/lernprofil`).
 const _ziele = {
   'orientierung': 'Orientierung (erste Semester)',
-  'zwischenpruefung': 'Zwischenpruefung',
+  'zwischenpruefung': 'Zwischenprüfung',
   'semesterklausur': 'Semesterklausuren',
   'examen': 'Examen',
   'wiederholung': 'Wiederholung / Auffrischung',
@@ -22,15 +24,21 @@ const _ziele = {
 const _areaLabels = {
   'zivilrecht': 'Zivilrecht',
   'strafrecht': 'Strafrecht',
-  'oeffentliches-recht': 'Oeffentliches Recht',
+  'oeffentliches-recht': 'Öffentliches Recht',
 };
 
 const _wochentage = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
 
 const _sicherheitsniveaus = {
-  'kompakt': ('Kompakt', 'weniger Wiederholungen, mehr Vergessensrisiko'),
-  'standard': ('Standard', 'FSRS-Ziel-Retention je Kartentyp'),
-  'sicher': ('Sicher', 'kuerzere Intervalle, mehr Wiederholungen'),
+  'kompakt': (
+    'Kompakt',
+    'Weniger Wiederholungen, dafür vergisst du eher etwas.'
+  ),
+  'standard': ('Standard', 'Ausgewogen: Abstände passend zum Kartentyp.'),
+  'sicher': (
+    'Sicher',
+    'Kürzere Abstände, mehr Wiederholungen, Karten sitzen sicherer.'
+  ),
 };
 
 class LernprofilPage extends StatefulWidget {
@@ -60,6 +68,7 @@ class _LernprofilPageState extends State<LernprofilPage> {
   late Set<String> _pausiert;
   late List<Map<String, dynamic>> _eigeneDecks;
 
+  final _ortKey = GlobalKey<ProfilEditorState>();
   bool _busy = false;
   String? _error;
 
@@ -105,10 +114,22 @@ class _LernprofilPageState extends State<LernprofilPage> {
       _error = null;
     });
     final app = AppScope.of(context);
+    // Ein Speichern fuer alles: erst Bundesland/Universitaet, dann Lernprofil.
+    final ortOk = await _ortKey.currentState?.save() ?? true;
+    if (!mounted) return;
+    if (!ortOk) {
+      setState(() {
+        _busy = false;
+        _error = 'Bundesland und Universität konnten nicht gespeichert werden.';
+      });
+      return;
+    }
     final ok = await app.saveLernprofil(_payload);
     if (!mounted) return;
     setState(() => _busy = false);
     if (ok) {
+      // Die Bestaetigung zeigt die aufrufende Seite nach dem Ruecksprung (siehe
+      // _openLernprofil) - von hier aus ging sie am Tablet mit der Seite verloren.
       Navigator.of(context).pop(true);
     } else {
       setState(() => _error = app.error ?? 'Speichern fehlgeschlagen.');
@@ -129,217 +150,253 @@ class _LernprofilPageState extends State<LernprofilPage> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('Lernprofil')),
+      appBar: AppBar(
+        title: const Text('Lernprofil'),
+        actions: const [BetaFeedbackAction(screen: 'Lernprofil')],
+      ),
+      // SingleChildScrollView statt ListView: Die ListView verwirft Kinder
+      // ausserhalb des sichtbaren Bereichs - nach dem Scrollen zum Speichern-
+      // Button war der Bundesland-Editor weg und wurde still nicht gespeichert
+      // (Welle 7).
       body: ReadableWidth(
-        child: ListView(
+        child: SingleChildScrollView(
           padding: const EdgeInsets.all(Spacing.lg),
-          children: [
-            Text(
-              'Jede Einstellung hier veraendert, was die App dir vorlegt: welche Karten '
-              'zuerst kommen, wie oft du wiederholst, wie der Plan deine Woche einteilt '
-              'und was der naechste Schritt ist.',
-              style: theme.textTheme.bodySmall,
-            ),
-            const SizedBox(height: Spacing.lg),
-            _section(theme, 'Wo stehst du?'),
-            InputDecorator(
-              decoration: const InputDecoration(labelText: 'Fachsemester'),
-              child: DropdownButton<int?>(
-                key: const ValueKey('semester'),
-                isExpanded: true,
-                underline: const SizedBox.shrink(),
-                value: _semester,
-                hint: const Text('Keine Angabe'),
-                items: [
-                  const DropdownMenuItem<int?>(value: null, child: Text('Keine Angabe')),
-                  for (var s = 1; s <= 12; s++)
-                    DropdownMenuItem<int?>(value: s, child: Text('$s. Semester')),
-                ],
-                onChanged: (v) => setState(() => _semester = v),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                'Jede Einstellung hier verändert, was die App dir vorlegt: welche Karten '
+                'zuerst kommen, wie oft du wiederholst, wie der Plan deine Woche einteilt '
+                'und was der nächste Schritt ist.',
+                style: theme.textTheme.bodySmall,
               ),
-            ),
-            const SizedBox(height: Spacing.md),
-            Text('Ziel', style: theme.textTheme.titleSmall),
-            const SizedBox(height: Spacing.xs),
-            Wrap(
-              spacing: Spacing.sm,
-              runSpacing: Spacing.xs,
-              children: [
-                for (final e in _ziele.entries)
-                  SubsumoChip.filter(
-                    label: e.value,
-                    selected: _ziel == e.key,
-                    onSelected: (on) => setState(() => _ziel = on ? e.key : null),
-                  ),
-              ],
-            ),
-            const SizedBox(height: Spacing.md),
-            SwitchListTile(
-              contentPadding: EdgeInsets.zero,
-              title: const Text('Zielnote setzen'),
-              subtitle: Text(
-                _zielnote == null
-                    ? 'Kein Punktziel - die Examensreife bleibt eine Beschreibung, keine Prognose.'
-                    : 'Ziel: $_zielnote Punkte (JAP-Skala)',
+              const SizedBox(height: Spacing.lg),
+              ProfilEditor(
+                key: _ortKey,
+                nurOrt: true,
+                profil: _ortProfil(context),
+                onSaved: () {},
               ),
-              value: _zielnote != null,
-              onChanged: (on) => setState(() => _zielnote = on ? 9 : null),
-            ),
-            if (_zielnote != null)
-              Slider(
-                value: _zielnote!.toDouble(),
-                min: 4,
-                max: 18,
-                divisions: 14,
-                label: '$_zielnote Punkte',
-                onChanged: (v) => setState(() => _zielnote = v.round()),
-              ),
-            const SizedBox(height: Spacing.lg),
-            _section(theme, 'Schwerpunkte'),
-            Text(
-              'Rechtsgebiete, die im Stapel und im Plan schwerer wiegen (Faktor 1,25).',
-              style: theme.textTheme.bodySmall,
-            ),
-            const SizedBox(height: Spacing.xs),
-            Wrap(
-              spacing: Spacing.sm,
-              children: [
-                for (final e in _areaLabels.entries)
-                  SubsumoChip.filter(
-                    label: e.value,
-                    selected: _schwerpunkte.contains(e.key),
-                    onSelected: (on) => setState(
-                      () => on ? _schwerpunkte.add(e.key) : _schwerpunkte.remove(e.key),
-                    ),
-                  ),
-              ],
-            ),
-            const SizedBox(height: Spacing.lg),
-            _section(theme, 'Rhythmus'),
-            Text('Ruhetage (kein Lernpensum im Plan)', style: theme.textTheme.bodySmall),
-            const SizedBox(height: Spacing.xs),
-            Wrap(
-              spacing: Spacing.sm,
-              children: [
-                for (var i = 0; i < 7; i++)
-                  SubsumoChip.filter(
-                    label: _wochentage[i],
-                    selected: _ruhetage.contains(i),
-                    onSelected: (on) => setState(() {
-                      if (on && _ruhetage.length >= 6) return;
-                      on ? _ruhetage.add(i) : _ruhetage.remove(i);
-                    }),
-                  ),
-              ],
-            ),
-            const SizedBox(height: Spacing.md),
-            SwitchListTile(
-              contentPadding: EdgeInsets.zero,
-              title: const Text('Woechentliche Klausur unter Examensbedingungen'),
-              subtitle: const Text('Ab der Vertiefungsphase ein fester Klausurtag pro Woche.'),
-              value: _wochenklausur,
-              onChanged: (v) => setState(() => _wochenklausur = v),
-            ),
-            InputDecorator(
-              decoration: const InputDecoration(labelText: 'Klausurtag'),
-              child: DropdownButton<int>(
-                key: const ValueKey('klausurtag'),
-                isExpanded: true,
-                underline: const SizedBox.shrink(),
-                value: _klausurWochentag,
-                items: [
-                  for (var i = 0; i < 7; i++)
-                    DropdownMenuItem<int>(value: i, child: Text(_wochentage[i])),
-                ],
-                onChanged: (v) => setState(() => _klausurWochentag = v ?? 5),
-              ),
-            ),
-            const SizedBox(height: Spacing.md),
-            Text('Neue Karten pro Tag: $_neueKarten', style: theme.textTheme.bodyMedium),
-            Slider(
-              value: _neueKarten.toDouble(),
-              min: 0,
-              max: 30,
-              divisions: 30,
-              label: '$_neueKarten',
-              onChanged: (v) => setState(() => _neueKarten = v.round()),
-            ),
-            const SizedBox(height: Spacing.lg),
-            _section(theme, 'Gedaechtnis'),
-            Text(
-              'Wie sicher sollen Karten sitzen? Verschiebt die Ziel-Retention der '
-              'Wiederholungsplanung um vier Prozentpunkte nach unten oder oben.',
-              style: theme.textTheme.bodySmall,
-            ),
-            const SizedBox(height: Spacing.sm),
-            SegmentedButton<String>(
-              segments: [
-                for (final e in _sicherheitsniveaus.entries)
-                  ButtonSegment(value: e.key, label: Text(e.value.$1)),
-              ],
-              selected: {_sicherheitsniveau},
-              onSelectionChanged: (s) => setState(() => _sicherheitsniveau = s.first),
-            ),
-            const SizedBox(height: Spacing.xs),
-            Text(
-              _sicherheitsniveaus[_sicherheitsniveau]?.$2 ?? '',
-              style: theme.textTheme.bodySmall,
-            ),
-            const SizedBox(height: Spacing.lg),
-            _section(theme, 'Themen: Fokus und Pause'),
-            Text(
-              'Fokus zieht ein Thema im Stapel und im Plan nach vorn (Faktor 1,5). Pause '
-              'nimmt es komplett heraus - fuer Stoff, den du anderswo abgedeckt hast.',
-              style: theme.textTheme.bodySmall,
-            ),
-            const SizedBox(height: Spacing.xs),
-            for (final area in _areaLabels.keys)
-              _ThemenAbschnitt(
-                titel: _areaLabels[area]!,
-                themen: widget.themen.where((t) => t['area'] == area).toList(),
-                fokus: _fokus,
-                pausiert: _pausiert,
-                onChanged: () => setState(() {}),
-              ),
-            const SizedBox(height: Spacing.lg),
-            _section(theme, 'Eigene Decks'),
-            Text(
-              'Eine eigene Themenauswahl, z. B. fuer die naechste Vorlesungsklausur - '
-              'lernbar wie jedes Kurs-Deck.',
-              style: theme.textTheme.bodySmall,
-            ),
-            const SizedBox(height: Spacing.xs),
-            for (final deck in _eigeneDecks)
-              ListTile(
-                contentPadding: EdgeInsets.zero,
-                leading: Icon(Icons.style_outlined, color: theme.colorScheme.onSurfaceVariant),
-                title: Text(deck['title'] as String),
-                subtitle: Text('${(deck['topic_slugs'] as List).length} Themen'),
-                trailing: IconButton(
-                  tooltip: 'Deck entfernen',
-                  icon: const Icon(Icons.delete_outline),
-                  onPressed: () => setState(() => _eigeneDecks.remove(deck)),
+              const SizedBox(height: Spacing.lg),
+              _section(theme, 'Wo stehst du?'),
+              InputDecorator(
+                decoration: const InputDecoration(labelText: 'Fachsemester'),
+                child: DropdownButton<int?>(
+                  key: const ValueKey('semester'),
+                  isExpanded: true,
+                  underline: const SizedBox.shrink(),
+                  value: _semester,
+                  hint: const Text('Keine Angabe'),
+                  items: [
+                    const DropdownMenuItem<int?>(
+                        value: null, child: Text('Keine Angabe')),
+                    for (var s = 1; s <= 12; s++)
+                      DropdownMenuItem<int?>(
+                          value: s, child: Text('$s. Semester')),
+                  ],
+                  onChanged: (v) => setState(() => _semester = v),
                 ),
               ),
-            SubsumoButton.secondary(
-              label: 'Neues Deck',
-              icon: Icons.add,
-              onPressed: _eigeneDecks.length >= 20 ? null : _neuesDeck,
-            ),
-            if (_error != null) ...[
               const SizedBox(height: Spacing.md),
-              SubsumoFeedbackBlock(message: _error!, severity: FeedbackSeverity.negative),
+              Text('Ziel', style: theme.textTheme.titleSmall),
+              const SizedBox(height: Spacing.xs),
+              Wrap(
+                spacing: Spacing.sm,
+                runSpacing: Spacing.xs,
+                children: [
+                  for (final e in _ziele.entries)
+                    SubsumoChip.filter(
+                      label: e.value,
+                      selected: _ziel == e.key,
+                      onSelected: (on) =>
+                          setState(() => _ziel = on ? e.key : null),
+                    ),
+                ],
+              ),
+              const SizedBox(height: Spacing.md),
+              SwitchListTile(
+                contentPadding: EdgeInsets.zero,
+                title: const Text('Zielnote setzen'),
+                subtitle: Text(
+                  _zielnote == null
+                      ? 'Kein Punktziel - die Examensreife bleibt eine Beschreibung, keine Prognose.'
+                      : 'Ziel: $_zielnote Punkte (JAP-Skala)',
+                ),
+                value: _zielnote != null,
+                onChanged: (on) => setState(() => _zielnote = on ? 9 : null),
+              ),
+              if (_zielnote != null)
+                Slider(
+                  value: _zielnote!.toDouble(),
+                  min: 4,
+                  max: 18,
+                  divisions: 14,
+                  label: '$_zielnote Punkte',
+                  onChanged: (v) => setState(() => _zielnote = v.round()),
+                ),
+              const SizedBox(height: Spacing.lg),
+              _section(theme, 'Schwerpunkte'),
+              Text(
+                'Rechtsgebiete, die im Stapel und im Plan schwerer wiegen (Faktor 1,25).',
+                style: theme.textTheme.bodySmall,
+              ),
+              const SizedBox(height: Spacing.xs),
+              Wrap(
+                spacing: Spacing.sm,
+                children: [
+                  for (final e in _areaLabels.entries)
+                    SubsumoChip.filter(
+                      label: e.value,
+                      selected: _schwerpunkte.contains(e.key),
+                      onSelected: (on) => setState(
+                        () => on
+                            ? _schwerpunkte.add(e.key)
+                            : _schwerpunkte.remove(e.key),
+                      ),
+                    ),
+                ],
+              ),
+              const SizedBox(height: Spacing.lg),
+              _section(theme, 'Rhythmus'),
+              Text('Ruhetage (kein Lernpensum im Plan)',
+                  style: theme.textTheme.bodySmall),
+              const SizedBox(height: Spacing.xs),
+              Wrap(
+                spacing: Spacing.sm,
+                children: [
+                  for (var i = 0; i < 7; i++)
+                    SubsumoChip.filter(
+                      label: _wochentage[i],
+                      selected: _ruhetage.contains(i),
+                      onSelected: (on) => setState(() {
+                        if (on && _ruhetage.length >= 6) return;
+                        on ? _ruhetage.add(i) : _ruhetage.remove(i);
+                      }),
+                    ),
+                ],
+              ),
+              const SizedBox(height: Spacing.md),
+              SwitchListTile(
+                contentPadding: EdgeInsets.zero,
+                title:
+                    const Text('Wöchentliche Klausur unter Examensbedingungen'),
+                subtitle: const Text(
+                    'Ab der Vertiefungsphase ein fester Klausurtag pro Woche.'),
+                value: _wochenklausur,
+                onChanged: (v) => setState(() => _wochenklausur = v),
+              ),
+              InputDecorator(
+                decoration: const InputDecoration(labelText: 'Klausurtag'),
+                child: DropdownButton<int>(
+                  key: const ValueKey('klausurtag'),
+                  isExpanded: true,
+                  underline: const SizedBox.shrink(),
+                  value: _klausurWochentag,
+                  items: [
+                    for (var i = 0; i < 7; i++)
+                      DropdownMenuItem<int>(
+                          value: i, child: Text(_wochentage[i])),
+                  ],
+                  onChanged: (v) => setState(() => _klausurWochentag = v ?? 5),
+                ),
+              ),
+              const SizedBox(height: Spacing.md),
+              Text('Neue Karten pro Tag: $_neueKarten',
+                  style: theme.textTheme.bodyMedium),
+              Slider(
+                value: _neueKarten.toDouble(),
+                min: 0,
+                max: 30,
+                divisions: 30,
+                label: '$_neueKarten',
+                onChanged: (v) => setState(() => _neueKarten = v.round()),
+              ),
+              const SizedBox(height: Spacing.lg),
+              _section(theme, 'Gedächtnis'),
+              Text(
+                'Wie sicher sollen Karten sitzen? Höher = häufigere Wiederholungen.',
+                style: theme.textTheme.bodySmall,
+              ),
+              const SizedBox(height: Spacing.sm),
+              SegmentedButton<String>(
+                segments: [
+                  for (final e in _sicherheitsniveaus.entries)
+                    ButtonSegment(value: e.key, label: Text(e.value.$1)),
+                ],
+                selected: {_sicherheitsniveau},
+                onSelectionChanged: (s) =>
+                    setState(() => _sicherheitsniveau = s.first),
+              ),
+              const SizedBox(height: Spacing.xs),
+              Text(
+                _sicherheitsniveaus[_sicherheitsniveau]?.$2 ?? '',
+                style: theme.textTheme.bodySmall,
+              ),
+              const SizedBox(height: Spacing.lg),
+              _section(theme, 'Themen: Fokus und Pause'),
+              Text(
+                'Fokus zieht ein Thema im Stapel und im Plan nach vorn (Faktor 1,5). Pause '
+                'nimmt es komplett heraus - für Stoff, den du anderswo abgedeckt hast.',
+                style: theme.textTheme.bodySmall,
+              ),
+              const SizedBox(height: Spacing.xs),
+              for (final area in _areaLabels.keys)
+                _ThemenAbschnitt(
+                  titel: _areaLabels[area]!,
+                  themen:
+                      widget.themen.where((t) => t['area'] == area).toList(),
+                  fokus: _fokus,
+                  pausiert: _pausiert,
+                  onChanged: () => setState(() {}),
+                ),
+              const SizedBox(height: Spacing.lg),
+              _section(theme, 'Eigene Decks'),
+              Text(
+                'Eine eigene Themenauswahl, z. B. für die nächste Vorlesungsklausur - '
+                'lernbar wie jedes Kurs-Deck.',
+                style: theme.textTheme.bodySmall,
+              ),
+              const SizedBox(height: Spacing.xs),
+              for (final deck in _eigeneDecks)
+                ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  leading: Icon(Icons.style_outlined,
+                      color: theme.colorScheme.onSurfaceVariant),
+                  title: Text(deck['title'] as String),
+                  subtitle:
+                      Text('${(deck['topic_slugs'] as List).length} Themen'),
+                  trailing: IconButton(
+                    tooltip: 'Deck entfernen',
+                    icon: const Icon(Icons.delete_outline),
+                    onPressed: () => setState(() => _eigeneDecks.remove(deck)),
+                  ),
+                ),
+              SubsumoButton.secondary(
+                label: 'Neues Deck',
+                icon: Icons.add,
+                onPressed: _eigeneDecks.length >= 20 ? null : _neuesDeck,
+              ),
+              if (_error != null) ...[
+                const SizedBox(height: Spacing.md),
+                SubsumoFeedbackBlock(
+                    message: _error!, severity: FeedbackSeverity.negative),
+              ],
+              const SizedBox(height: Spacing.xl),
+              SubsumoButton.primary(
+                label: _busy ? 'Bitte warten ...' : 'Speichern',
+                onPressed: _busy ? null : _save,
+              ),
+              const SizedBox(height: Spacing.xl),
             ],
-            const SizedBox(height: Spacing.xl),
-            SubsumoButton.primary(
-              label: _busy ? 'Bitte warten ...' : 'Lernprofil speichern',
-              onPressed: _busy ? null : _save,
-            ),
-            const SizedBox(height: Spacing.xl),
-          ],
+          ),
         ),
       ),
     );
+  }
+
+  Map<String, dynamic> _ortProfil(BuildContext context) {
+    final p = AppScope.of(context).examenCockpit?['profil'];
+    return p is Map ? Map<String, dynamic>.from(p) : <String, dynamic>{};
   }
 
   static Widget _section(ThemeData theme, String titel) => Padding(
@@ -366,7 +423,8 @@ class _ThemenAbschnitt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final markiert = themen.where((t) => fokus.contains(t['slug']) || pausiert.contains(t['slug']));
+    final markiert = themen.where(
+        (t) => fokus.contains(t['slug']) || pausiert.contains(t['slug']));
     return ExpansionTile(
       tilePadding: EdgeInsets.zero,
       shape: const Border(),
@@ -379,7 +437,9 @@ class _ThemenAbschnitt extends StatelessWidget {
         for (final t in themen)
           Row(
             children: [
-              Expanded(child: Text(t['title'] as String, style: theme.textTheme.bodyMedium)),
+              Expanded(
+                  child: Text(t['title'] as String,
+                      style: theme.textTheme.bodyMedium)),
               IconButton(
                 tooltip: 'Fokus: ${t['title']}',
                 isSelected: fokus.contains(t['slug']),
@@ -444,7 +504,7 @@ class _DeckDialogState extends State<_DeckDialog> {
       return;
     }
     if (_auswahl.isEmpty) {
-      setState(() => _fehler = 'Mindestens ein Thema auswaehlen.');
+      setState(() => _fehler = 'Mindestens ein Thema auswählen.');
       return;
     }
     var slug = 'mein-${slugify(titel)}';
@@ -475,31 +535,61 @@ class _DeckDialogState extends State<_DeckDialog> {
               child: ListView(
                 shrinkWrap: true,
                 children: [
-                  for (final t in widget.themen)
-                    CheckboxListTile(
-                      dense: true,
-                      controlAffinity: ListTileControlAffinity.leading,
-                      title: Text(t['title'] as String),
-                      value: _auswahl.contains(t['slug']),
-                      onChanged: (on) => setState(() {
-                        on == true ? _auswahl.add(t['slug'] as String) : _auswahl.remove(t['slug']);
-                      }),
-                    ),
+                  for (final area in [..._areaLabels.keys, null])
+                    ..._gruppe(area),
                 ],
               ),
             ),
             if (_fehler != null) ...[
               const SizedBox(height: Spacing.sm),
-              SubsumoFeedbackBlock(message: _fehler!, severity: FeedbackSeverity.negative),
+              SubsumoFeedbackBlock(
+                  message: _fehler!, severity: FeedbackSeverity.negative),
             ],
           ],
         ),
       ),
       actions: [
-        TextButton(onPressed: () => Navigator.of(context).pop(), child: const Text('Abbrechen')),
+        TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('Abbrechen')),
         FilledButton(onPressed: _anlegen, child: const Text('Deck anlegen')),
       ],
     );
+  }
+
+  /// Themen eines Rechtsgebiets (`null` = uebrige), alphabetisch, mit Ueberschrift.
+  List<Widget> _gruppe(String? area) {
+    final themen = [
+      for (final t in widget.themen)
+        if (area == null
+            ? !_areaLabels.containsKey(t['area'])
+            : t['area'] == area)
+          t,
+    ]..sort((a, b) => (a['title'] as String)
+        .toLowerCase()
+        .compareTo((b['title'] as String).toLowerCase()));
+    if (themen.isEmpty) return const [];
+    return [
+      Padding(
+        padding: const EdgeInsets.only(top: Spacing.md, bottom: Spacing.xs),
+        child: Text(
+          area == null ? 'Weitere' : _areaLabels[area]!,
+          style: Theme.of(context).textTheme.titleSmall,
+        ),
+      ),
+      for (final t in themen)
+        CheckboxListTile(
+          dense: true,
+          controlAffinity: ListTileControlAffinity.leading,
+          title: Text(t['title'] as String),
+          value: _auswahl.contains(t['slug']),
+          onChanged: (on) => setState(() {
+            on == true
+                ? _auswahl.add(t['slug'] as String)
+                : _auswahl.remove(t['slug']);
+          }),
+        ),
+    ];
   }
 }
 
@@ -512,13 +602,21 @@ String slugify(String text) {
       .replaceAll('ö', 'oe')
       .replaceAll('ü', 'ue')
       .replaceAll('ß', 'ss');
-  final cleaned = lower.replaceAll(RegExp(r'[^a-z0-9]+'), '-').replaceAll(RegExp(r'^-+|-+$'), '');
+  final cleaned = lower
+      .replaceAll(RegExp(r'[^a-z0-9]+'), '-')
+      .replaceAll(RegExp(r'^-+|-+$'), '');
   final slug = cleaned.isEmpty ? 'deck' : cleaned;
-  return slug.length > 60 ? slug.substring(0, 60).replaceAll(RegExp(r'-+$'), '') : slug;
+  return slug.length > 60
+      ? slug.substring(0, 60).replaceAll(RegExp(r'-+$'), '')
+      : slug;
 }
 
 Set<String> _stringSet(Object? value) =>
     value is List ? {for (final v in value) '$v'} : <String>{};
 
-Set<int> _intSet(Object? value) =>
-    value is List ? {for (final v in value) if (v is int) v} : <int>{};
+Set<int> _intSet(Object? value) => value is List
+    ? {
+        for (final v in value)
+          if (v is int) v
+      }
+    : <int>{};

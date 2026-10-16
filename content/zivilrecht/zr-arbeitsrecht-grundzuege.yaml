@@ -1,0 +1,382 @@
+topic:
+  slug: zr-arbeitsrecht-grundzuege
+  area: zivilrecht
+  title: 'Arbeitsrecht: Arbeitnehmerbegriff, Kündigung, Arbeitnehmerhaftung'
+  parent: zivilrecht
+  relevance: 3
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-arb-arbeitnehmerbegriff-611a
+  type: definition
+  front: Wer ist Arbeitnehmer im Sinne des § 611a BGB?
+  back: Durch den Arbeitsvertrag wird der Arbeitnehmer im Dienst eines anderen zur Leistung
+    weisungsgebundener, fremdbestimmter Arbeit in persönlicher Abhängigkeit verpflichtet (§
+    611a Abs. 1 S. 1 BGB). Das Weisungsrecht kann Inhalt, Durchführung, Zeit und Ort der Tätigkeit
+    betreffen (§ 611a Abs. 1 S. 2 BGB; vgl. § 106 GewO). Weisungsgebunden ist, wer nicht im
+    Wesentlichen frei seine Tätigkeit gestalten und seine Arbeitszeit bestimmen kann (§ 611a
+    Abs. 1 S. 3 BGB). Der Grad der persönlichen Abhängigkeit hängt auch von der Eigenart der
+    Tätigkeit ab (§ 611a Abs. 1 S. 4 BGB). Für die Einordnung ist eine Gesamtbetrachtung aller
+    Umstände vorzunehmen (§ 611a Abs. 1 S. 5 BGB); zeigt die tatsächliche Durchführung ein
+    Arbeitsverhältnis, kommt es auf die Bezeichnung im Vertrag nicht an (§ 611a Abs. 1 S.
+    6 BGB). Abzugrenzen sind der freie Dienstvertrag (§ 611 BGB) und der Werkvertrag (§ 631
+    BGB), bei denen der Beauftragte seine Tätigkeit im Wesentlichen selbst bestimmt. Wer Arbeitnehmer
+    ist, genießt den arbeitsrechtlichen Schutz, etwa das KSchG.
+  norms:
+  - § 611a Abs. 1 BGB
+  - § 106 GewO
+  - § 611 BGB
+  - § 631 BGB
+  quellen:
+  - BGB, KSchG und weitere arbeitsrechtliche Gesetze, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-arb-kuendigung-form-623
+  type: norm
+  front: Welche Form und welche Fristen gelten für die Kündigung des Arbeitsverhältnisses
+    (§§ 623, 622 BGB, § 4 KSchG)?
+  back: Die Kündigung eines Arbeitsverhältnisses bedarf zur Wirksamkeit der Schriftform; die
+    elektronische Form ist ausgeschlossen (§ 623 BGB). Erforderlich ist die eigenhändige Unterschrift
+    (§ 126 Abs. 1 BGB), eine E-Mail oder ein Fax genügt nicht; bei Formmangel ist die Kündigung
+    nichtig (§ 125 S. 1 BGB). Die Kündigung ist eine empfangsbedürftige Willenserklärung und
+    wird mit Zugang wirksam (§ 130 BGB). Die gesetzliche Grundkündigungsfrist beträgt vier
+    Wochen zum 15. oder zum Ende eines Kalendermonats (§ 622 Abs. 1 BGB), für Arbeitgeberkündigungen
+    verlängert sie sich mit der Betriebszugehörigkeit (§ 622 Abs. 2 BGB). Besteht ein Betriebsrat,
+    ist dieser vor jeder Kündigung anzuhören; eine ohne Anhörung ausgesprochene Kündigung
+    ist unwirksam (§ 102 Abs. 1 S. 3 BetrVG). Der Arbeitnehmer muss die Unwirksamkeit innerhalb
+    von drei Wochen nach Zugang der schriftlichen Kündigung durch Klage geltend machen (§
+    4 S. 1 KSchG); andernfalls gilt sie als von Anfang an wirksam (§ 7 KSchG).
+  norms:
+  - § 623 BGB
+  - § 622 BGB
+  - § 126 Abs. 1 BGB
+  - § 125 S. 1 BGB
+  - § 4 KSchG
+  - § 7 KSchG
+  quellen:
+  - BGB, KSchG und weitere arbeitsrechtliche Gesetze, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-arb-ausserordentliche-kuendigung-626
+  type: norm
+  front: Wann ist eine außerordentliche Kündigung wirksam (§ 626 BGB)?
+  back: Das Arbeitsverhältnis kann aus wichtigem Grund ohne Einhaltung einer Kündigungsfrist
+    gekündigt werden, wenn Tatsachen vorliegen, auf Grund derer dem Kündigenden unter Berücksichtigung
+    aller Umstände des Einzelfalls und unter Abwägung der Interessen beider Vertragsteile
+    die Fortsetzung des Arbeitsverhältnisses bis zum Ablauf der Kündigungsfrist oder bis zur
+    vereinbarten Beendigung nicht zugemutet werden kann (§ 626 Abs. 1 BGB). Zu prüfen sind
+    zweistufig der Grund (an sich geeignet) und die Interessenabwägung; bei steuerbaren Pflichtverletzungen
+    ist regelmäßig eine vorherige Abmahnung erforderlich (Verhältnismäßigkeit). Die Kündigung
+    kann nur innerhalb von zwei Wochen ab Kenntnis der für die Kündigung maßgebenden Tatsachen
+    erfolgen (§ 626 Abs. 2 BGB). Auf Verlangen ist der Kündigungsgrund unverzüglich schriftlich
+    mitzuteilen (§ 626 Abs. 2 S. 3 BGB). Auch hier gelten die Schriftform des § 623 BGB und
+    die Anhörung des Betriebsrats nach § 102 BetrVG. Der Arbeitnehmer muss dagegen binnen
+    drei Wochen Klage erheben (§ 13 Abs. 1 S. 2, § 4 KSchG).
+  norms:
+  - § 626 Abs. 1 BGB
+  - § 626 Abs. 2 BGB
+  - § 623 BGB
+  - § 102 BetrVG
+  quellen:
+  - BGB, KSchG und weitere arbeitsrechtliche Gesetze, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-arb-kschg-anwendbarkeit
+  type: norm
+  front: Wann ist das Kündigungsschutzgesetz anwendbar (§§ 1, 23 KSchG)?
+  back: Das Kündigungsschutzgesetz schützt Arbeitnehmer, deren Arbeitsverhältnis in demselben
+    Betrieb oder Unternehmen ohne Unterbrechung länger als sechs Monate bestanden hat (Wartezeit,
+    § 1 Abs. 1 KSchG). Der betriebliche Geltungsbereich ist nach § 23 Abs. 1 KSchG nur eröffnet, wenn im Betrieb in der Regel mehr als zehn Arbeitnehmer beschäftigt sind; für Arbeitnehmer, deren Arbeitsverhältnis schon vor dem 1.1.2004 begann, genügt ein Betrieb mit mehr als fünf Arbeitnehmern (Kleinbetriebsklausel, § 23 Abs. 1 S. 2, 3 KSchG;
+    Auszubildende zählen nicht, Teilzeitkräfte werden je nach Wochenarbeitszeit mit 0,5 oder
+    0,75 gezählt). Liegen beide Voraussetzungen vor, ist eine ordentliche Kündigung nur wirksam,
+    wenn sie sozial gerechtfertigt ist (§ 1 Abs. 1 KSchG). Außerhalb des KSchG gelten nur
+    die allgemeinen Schranken wie § 242 BGB, das Maßregelungsverbot (§ 612a BGB) und Diskriminierungsverbote
+    (AGG), nicht aber das Erfordernis eines Kündigungsgrunds. Besonderer Kündigungsschutz
+    besteht etwa für Schwangere (§ 17 MuSchG), Betriebsratsmitglieder (§ 15 KSchG) und Schwerbehinderte
+    (§ 168 SGB IX).
+  norms:
+  - § 1 Abs. 1 KSchG
+  - § 23 Abs. 1 KSchG
+  - § 17 MuSchG
+  - § 15 KSchG
+  quellen:
+  - BGB, KSchG und weitere arbeitsrechtliche Gesetze, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-arb-soziale-rechtfertigung
+  type: norm
+  front: Welche Gründe können eine ordentliche Kündigung nach dem KSchG sozial rechtfertigen
+    (§ 1 Abs. 2, 3 KSchG)?
+  back: Sozial ungerechtfertigt ist eine Kündigung, wenn sie nicht durch Gründe in der Person
+    oder im Verhalten des Arbeitnehmers oder durch dringende betriebliche Erfordernisse bedingt
+    ist, die einer Weiterbeschäftigung entgegenstehen (§ 1 Abs. 2 S. 1 KSchG). Personenbedingte
+    Gründe sind etwa Krankheit, verhaltensbedingte Gründe steuerbare Pflichtverletzungen;
+    hier ist grundsätzlich eine einschlägige Abmahnung erforderlich. Betriebsbedingt ist die
+    Kündigung, wenn ein Beschäftigungsbedarf dauerhaft entfällt und keine anderweitige Weiterbeschäftigung
+    möglich ist. Bei betriebsbedingter Kündigung muss der Arbeitgeber zwischen vergleichbaren
+    Arbeitnehmern eine soziale Auswahl treffen, wobei er Dauer der Betriebszugehörigkeit,
+    Lebensalter, Unterhaltspflichten und Schwerbehinderung berücksichtigen muss (§ 1 Abs.
+    3 KSchG). Gemeinsam gilt das Ultima-Ratio-Prinzip, eine Prognose und eine Interessenabwägung.
+    Die Beweislast für die Kündigungsgründe trägt der Arbeitgeber (§ 1 Abs. 2 S. 4 KSchG).
+  norms:
+  - § 1 Abs. 2 KSchG
+  - § 1 Abs. 3 KSchG
+  quellen:
+  - BGB, KSchG und weitere arbeitsrechtliche Gesetze, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-arb-annahmeverzug-615
+  type: norm
+  front: Welche Folgen hat eine unwirksame Kündigung für den Vergütungsanspruch (§ 615 S.
+    1 BGB, § 11 KSchG)?
+  back: Wird die Kündigung gerichtlich für unwirksam erklärt, besteht das Arbeitsverhältnis
+    fort. Hat der Arbeitgeber den Arbeitnehmer nicht beschäftigt, kann dieser für die Zwischenzeit
+    die vereinbarte Vergütung nach § 615 S. 1 BGB i. V. m. § 611a Abs. 2 BGB verlangen, ohne
+    zur Nachleistung verpflichtet zu sein (Annahmeverzug). Ein Angebot der Arbeitsleistung
+    ist nach einer Arbeitgeberkündigung nach § 296 BGB entbehrlich, weil der Arbeitgeber den
+    Arbeitsplatz bereitstellen und die Mitwirkungshandlung vornehmen müsste. Der Arbeitnehmer
+    muss sich anrechnen lassen, was er durch anderweitige Arbeit verdient hat oder zu verdienen
+    böswillig unterlassen hat (§ 615 S. 2 BGB, § 11 KSchG). Der Annahmeverzug setzt Leistungswilligkeit
+    und Leistungsfähigkeit des Arbeitnehmers voraus (§ 297 BGB). Der Arbeitnehmer kann zudem
+    Weiterbeschäftigung nach den Grundsätzen des Großen Senats des BAG verlangen, wenn die
+    Kündigung unwirksam und sein Interesse überwiegt.
+  norms:
+  - § 615 S. 1 BGB
+  - § 11 KSchG
+  - § 296 BGB
+  - § 297 BGB
+  quellen:
+  - BGB, KSchG und weitere arbeitsrechtliche Gesetze, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-arb-arbeitnehmerhaftung-stufen
+  type: norm
+  front: Wie haftet der Arbeitnehmer für Schäden bei betrieblich veranlasster Tätigkeit (innerbetrieblicher
+    Schadensausgleich)?
+  back: Verursacht ein Arbeitnehmer bei einer betrieblich veranlassten Tätigkeit schuldhaft
+    einen Schaden, wird seine Haftung nach der Rechtsprechung des BAG nach dem Grad seines
+    Verschuldens abgestuft. Bei leichtester Fahrlässigkeit haftet er nicht; bei mittlerer
+    (normaler) Fahrlässigkeit wird der Schaden zwischen Arbeitgeber und Arbeitnehmer quotal
+    aufgeteilt, wobei Schadenshöhe, Risiko der Tätigkeit, Versicherbarkeit, Vergütungshöhe
+    und Einkommensverhältnisse zu berücksichtigen sind; bei grober Fahrlässigkeit haftet er
+    grundsätzlich in voller Höhe, wobei die Rechtsprechung Haftungserleichterungen zulässt,
+    wenn der Verdienst in einem deutlichen Missverhältnis zum Schadensrisiko steht; bei Vorsatz
+    haftet er voll, wobei sich der Vorsatz auf den Schadenseintritt und nicht nur auf die
+    Pflichtverletzung beziehen muss. Die Grundsätze gelten für alle betrieblich veranlassten
+    Tätigkeiten, nicht nur für gefahrgeneigte Arbeit. Wird der Arbeitnehmer von einem Dritten
+    in Anspruch genommen, kann er vom Arbeitgeber nach den gleichen Grundsätzen Freistellung
+    verlangen (§ 670 BGB analog).
+  norms:
+  - § 280 Abs. 1 BGB
+  - § 254 BGB
+  - § 670 BGB
+  - § 276 BGB
+  quellen:
+  - BGB, KSchG und weitere arbeitsrechtliche Gesetze, amtliche Fassung
+  - BAG, Beschluss des Großen Senats vom 27.9.1994 - GS 1/89 (A) (BAGE 78, 56), wiedergegeben in BAG, Urteil vom 28.10.2010 - 8 AZR 418/09
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-arb-arbeitnehmerhaftung-grundlage
+  type: streitstand
+  front: Worauf wird die Haftungsprivilegierung des Arbeitnehmers gestützt?
+  back: 'Die Haftungserleichterung ist gesetzlich nicht geregelt und wird unterschiedlich
+    begründet. Das BAG und die h. M. leiten sie aus dem Rechtsgedanken des § 254 BGB und der
+    Verantwortung des Arbeitgebers für das Betriebsrisiko her: Wer fremdbestimmte Arbeit organisiert
+    und davon profitiert, muss das Risiko schadensträchtiger Tätigkeit mittragen. Teile der
+    Literatur stützen die Privilegierung auf die Fürsorgepflicht des Arbeitgebers (§ 241 Abs.
+    2 BGB), auf eine Auslegung des Haftungsmaßstabs nach § 276 Abs. 1 S. 1 BGB ("aus dem sonstigen
+    Inhalt des Schuldverhältnisses") oder auf § 242 BGB. Praktisch führen die Ansätze zu denselben
+    Abstufungen. Der BGH wendet die Grundsätze auch an, wenn der Arbeitnehmer von einem Dritten
+    in Anspruch genommen wird, und gewährt einen Freistellungsanspruch gegen den Arbeitgeber.
+    In der Klausur genügt die Feststellung, dass die Haftungsprivilegierung als Rechtsgrundlage
+    unstreitig anerkannt ist und für Ansprüche aus § 280 Abs. 1 BGB wie aus § 823 BGB gilt.'
+  norms:
+  - § 254 BGB
+  - § 241 Abs. 2 BGB
+  - § 276 Abs. 1 BGB
+  - § 242 BGB
+  quellen:
+  - BGB, KSchG und weitere arbeitsrechtliche Gesetze, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-arb-beweislast-619a
+  type: norm
+  front: Was ändert § 619a BGB an der Beweislast bei Arbeitnehmerhaftung?
+  back: 'Nach § 280 Abs. 1 S. 2 BGB wird das Vertretenmüssen des Schuldners vermutet. Für
+    Pflichtverletzungen des Arbeitnehmers aus dem Arbeitsverhältnis hebt § 619a BGB diese
+    Vermutung auf: Abweichend von § 280 Abs. 1 BGB hat der Arbeitnehmer dem Arbeitgeber Ersatz
+    für den aus der Verletzung einer Pflicht entstehenden Schaden nur zu leisten, wenn er
+    die Pflichtverletzung zu vertreten hat. Der Arbeitgeber muss daher das Vertretenmüssen
+    (Vorsatz oder Fahrlässigkeit, § 276 Abs. 1 BGB) und den Verschuldensgrad für die Haftungsabstufung
+    darlegen und beweisen. Die Vorschrift gilt nicht für die Beweislast der Pflichtverletzung,
+    des Schadens und der Kausalität, die den Gläubiger ohnehin trifft. § 619a BGB ändert nichts
+    daran, dass die abgestuften Haftungsgrundsätze von Amts wegen zu berücksichtigen sind.
+    Für Ansprüche des Arbeitnehmers gegen den Arbeitgeber bleibt es bei § 280 Abs. 1 S. 2
+    BGB.'
+  norms:
+  - § 619a BGB
+  - § 280 Abs. 1 BGB
+  - § 276 Abs. 1 BGB
+  quellen:
+  - BGB, KSchG und weitere arbeitsrechtliche Gesetze, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: zr-schema-arb-schadensersatz-an
+  title: Schadensersatzanspruch des Arbeitgebers gegen den Arbeitnehmer
+  norms:
+  - § 280 Abs. 1 BGB
+  - § 619a BGB
+  - § 241 Abs. 2 BGB
+  quellen:
+  - BGB, KSchG und weitere arbeitsrechtliche Gesetze, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Arbeitsverhältnis
+    hinweis: Arbeitnehmerstellung nach § 611a BGB, Gesamtbetrachtung.
+  - label: II. Pflichtverletzung, § 280 Abs. 1 S. 1 BGB
+    children:
+    - label: 1. Hauptpflicht (ordentliche Arbeitsleistung) oder Nebenpflicht, § 241 Abs. 2
+        BGB
+    - label: 2. Beweislast für Pflichtverletzung beim Arbeitgeber
+  - label: III. Vertretenmüssen, §§ 276, 619a BGB
+    hinweis: '§ 619a BGB: Arbeitgeber muss das Verschulden beweisen; Vermutung des § 280 Abs.
+      1 S. 2 BGB gilt nicht.'
+  - label: IV. Schaden und Kausalität, §§ 249 ff. BGB
+  - label: V. Haftungsprivilegierung (innerbetrieblicher Schadensausgleich)
+    hinweis: Die Prüfung ist zwingend; sie gilt auch für Deliktsansprüche (§ 823 BGB).
+    children:
+    - label: 1. Betrieblich veranlasste Tätigkeit
+    - label: '2. Verschuldensgrad: leichteste, mittlere, grobe Fahrlässigkeit, Vorsatz'
+    - label: '3. Rechtsfolge: keine, quotale oder volle Haftung'
+  - label: VI. Mitverschulden des Arbeitgebers, § 254 BGB
+    hinweis: Organisationsverschulden, mangelhafte Ausstattung oder Aufsicht.
+faelle:
+- slug: zr-fall-arb-gabelstapler
+  title: Der Regalschaden
+  difficulty: 2
+  minutes: 35
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: Lagerarbeiter A ist bei Arbeitgeberin G angestellt. Bei der Einlagerung einer Palette
+    mit dem betriebseigenen Gabelstapler rutscht er bei ruhiger Fahrt für einen kurzen Moment
+    mit dem Fuß vom Pedal ab, ohne dass eine ungewöhnliche Unaufmerksamkeit vorliegt. Der
+    Stapler stößt gegen ein Hochregal und beschädigt es; der Sachschaden beträgt 6.000 Euro.
+    A verdient 2.400 Euro brutto im Monat. G verlangt von A vollen Schadensersatz und meint,
+    A müsse beweisen, dass er nicht schuldhaft gehandelt habe.
+  question: Kann G von A Ersatz der 6.000 Euro verlangen?
+  steps:
+  - prompt: Welche Anspruchsgrundlage kommt in Betracht und liegt ein Arbeitsverhältnis vor?
+    erwartung: § 280 Abs. 1 BGB in Verbindung mit § 241 Abs. 2 BGB (Rücksichtnahmepflicht
+      auf das Eigentum des Arbeitgebers). A ist als weisungsgebunden Beschäftigter Arbeitnehmer
+      nach § 611a Abs. 1 BGB.
+  - prompt: Wer trägt die Beweislast für das Verschulden?
+    erwartung: 'Nach § 619a BGB gilt § 280 Abs. 1 S. 2 BGB nicht: G muss das Vertretenmüssen
+      des A beweisen; die Auffassung der G ist unzutreffend.'
+  - prompt: Hat A die Pflichtverletzung zu vertreten?
+    erwartung: Jede Fahrlässigkeit genügt für § 276 Abs. 1 BGB; es liegt jedoch nur ein kurzes
+      Abrutschen ohne besondere Unachtsamkeit vor, also allenfalls leichteste Fahrlässigkeit.
+  - prompt: Welche Wirkung hat die Haftungsprivilegierung bei dieser Tätigkeit?
+    erwartung: Die Tätigkeit war betrieblich veranlasst. Bei leichtester Fahrlässigkeit entfällt
+      die Haftung des Arbeitnehmers nach den Grundsätzen des innerbetrieblichen Schadensausgleichs
+      vollständig. G hat keinen Anspruch auf Ersatz der 6.000 Euro gegen A.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Anspruchsgrundlage § 280 Abs. 1 BGB und Arbeitnehmerstellung
+      weight: 1.0
+      required: false
+      keywords:
+      - § 280 Abs. 1 BGB
+      - Arbeitnehmer
+      - § 611a BGB
+      - Rücksichtnahmepflicht
+      - § 241 Abs. 2 BGB
+      - Arbeitsvertrag
+      - Pflichtverletzung
+      - Schadensersatz
+      card_slugs:
+      - zr-arb-arbeitnehmerbegriff-611a
+    - id: p2
+      label: Beweislast für Vertretenmüssen nach § 619a BGB beim Arbeitgeber
+      weight: 2.0
+      required: false
+      norms:
+      - § 619a BGB
+      keywords:
+      - § 619a BGB
+      - Beweislast
+      - Arbeitgeber muss Verschulden beweisen
+      - Vermutung des § 280 Abs. 1 S. 2 BGB entfällt
+      - Vertretenmüssen
+      - § 619a
+      - Beweislastumkehr
+      - Darlegungs- und Beweislast
+      - trägt die Beweislast
+      - muss das Verschulden beweisen
+      - muss beweisen
+      - G beweisen
+      - Arbeitgeber beweisen
+      - beweisen müsste
+      - beweisen muss
+      - Beweislast liegt
+      - Verschulden nachweisen
+      - Beweis des Verschuldens
+      card_slugs:
+      - zr-arb-beweislast-619a
+    - id: p3
+      label: Betrieblich veranlasste Tätigkeit und Abstufung nach Verschuldensgrad
+      weight: 3.0
+      required: true
+      keywords:
+      - betrieblich veranlasst
+      - innerbetrieblicher Schadensausgleich
+      - Haftungsprivilegierung
+      - leichteste Fahrlässigkeit
+      - Haftungsabstufung
+      - Abstufung
+      - Haftungsprivileg
+      - betrieblich veranlasste Tätigkeit
+      - betrieblich bedingt
+      - Schadensausgleich
+      - Schadensverteilung
+      - dreistufig
+      - mittlere Fahrlässigkeit
+      - grobe Fahrlässigkeit
+      - Quotelung
+      - Schadensquote
+      - leichte Fahrlässigkeit
+      - geringste Fahrlässigkeit
+      - Verschuldensgrad
+      card_slugs:
+      - zr-arb-arbeitnehmerhaftung-stufen
+      - zr-arb-arbeitnehmerhaftung-grundlage
+    - id: p4
+      label: 'Ergebnis: bei leichtester Fahrlässigkeit keine Haftung des Arbeitnehmers'
+      weight: 2.0
+      required: true
+      keywords:
+      - keine Haftung
+      - haftet nicht
+      - leichteste Fahrlässigkeit
+      - kein Anspruch auf Schadensersatz
+      - Anspruch besteht nicht
+      - haftet nicht
+      - Haftung entfällt
+      - entfällt die Haftung
+      - kein Ersatzanspruch
+      - kein Schadensersatzanspruch
+      - keinen Anspruch
+      - keinen Schadensersatz
+      - trägt den Schaden allein
+      - Arbeitgeber trägt den Schaden
+      - 'Anspruch ausgeschlossen'
+      - 'ist der Anspruch ausgeschlossen'
+      - 'leichtester Fahrlässigkeit nicht'
+      - 'haftet A nicht'
+      card_slugs:
+      - zr-arb-arbeitnehmerhaftung-stufen

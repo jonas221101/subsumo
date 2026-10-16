@@ -1,0 +1,267 @@
+topic:
+  slug: or-staatsorganisationsrecht-verwaltungskompetenzen-finanzen
+  area: oeffentliches-recht
+  title: Verwaltungskompetenzen und Finanzverfassung, Art. 83 ff., 104a ff. GG
+  parent: oeffentliches-recht
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-vk-grundsatz-art83-verwaltungsarten
+  type: norm
+  front: "Wer führt Bundesgesetze aus, und welche Verwaltungsarten kennt das Grundgesetz (Art. 83 ff. GG)?"
+  back: >-
+    Nach Art. 30 und Art. 83 GG führen die Länder die Bundesgesetze als eigene Angelegenheit aus, soweit das Grundgesetz nichts anderes bestimmt oder zulässt. Die Verwaltungskompetenz folgt der Gesetzgebungskompetenz nicht automatisch: Der Bund kann Gesetze erlassen, die Länder führen sie aus. Das Grundgesetz kennt drei Verwaltungsarten. Die Landeseigenverwaltung (Art. 84 GG) ist der Regelfall; die Länder regeln Behörden und Verfahren und unterliegen nur der Rechtsaufsicht des Bundes. Die Bundesauftragsverwaltung (Art. 85 GG) ist die Ausnahme, in der die Länder im Auftrag des Bundes handeln und der Bund auch Zweckmäßigkeitsaufsicht und Weisungsrecht hat. Die bundeseigene Verwaltung (Art. 86 ff. GG) setzt voraus, dass das Grundgesetz sie ausdrücklich vorsieht (etwa Art. 87 GG). Landesgesetze führen die Länder stets selbst aus. Für eine Klausur ist zuerst die Verwaltungsart zu bestimmen.
+  norms:
+  - Art. 30 GG
+  - Art. 83 GG
+  - Art. 84 GG
+  - Art. 85 GG
+  - Art. 86 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vk-landeseigenverwaltung-art84
+  type: norm
+  front: "Was kann der Bund im Bereich der Landeseigenverwaltung nach Art. 84 GG regeln, und wie beaufsichtigt er die Länder?"
+  back: >-
+    Führen die Länder Bundesgesetze als eigene Angelegenheit aus, regeln sie die Einrichtung der Behörden und das Verwaltungsverfahren (Art. 84 Abs. 1 S. 1 GG). Der Bund kann das Verwaltungsverfahren durch Bundesgesetz regeln; die Länder können davon aber abweichende Regelungen treffen (Abweichungsrecht, Abs. 1 S. 2). Nur ausnahmsweise darf der Bund wegen eines besonderen Bedürfnisses nach bundeseinheitlicher Regelung das Verfahren ohne Abweichungsrecht regeln; dies bedarf der Zustimmung des Bundesrates (Abs. 1 S. 5 und 6). Durch Bundesgesetz dürfen den Gemeinden keine Aufgaben übertragen werden (Abs. 1 S. 7). Allgemeine Verwaltungsvorschriften erlässt die Bundesregierung mit Zustimmung des Bundesrates (Abs. 2). Die Bundesregierung übt Rechtsaufsicht aus (Abs. 3), kann bei Mängeln eine Mängelrüge erheben (Abs. 4) und Einzelweisungen nur auf Grund eines Bundesgesetzes mit Zustimmung des Bundesrates erteilen, das auf Ausnahmefälle begrenzt ist (Abs. 5).
+  norms:
+  - Art. 84 Abs. 1 GG
+  - Art. 84 Abs. 2 GG
+  - Art. 84 Abs. 3 GG
+  - Art. 84 Abs. 5 GG
+  quellen:
+  - GG, amtliche Fassung
+  stand: 2026-10
+- slug: or-vk-bundesauftragsverwaltung-art85
+  type: norm
+  front: "Was kennzeichnet die Bundesauftragsverwaltung nach Art. 85 GG, und wie sind Wahrnehmungs- und Sachkompetenz verteilt?"
+  back: >-
+    Die Bundesauftragsverwaltung besteht nur dort, wo das Grundgesetz sie vorsieht oder zulässt, etwa für die Kernenergie (Art. 87c GG), die sonstigen Bundesstraßen des Fernverkehrs (Art. 90 GG) oder die Verwaltung von Bundessteuern (Art. 108 Abs. 3 GG). Die Länder führen die Gesetze im Auftrag des Bundes aus. Sie regeln die Einrichtung der Behörden, soweit Bundesgesetze nichts anderes mit Zustimmung des Bundesrates bestimmen (Art. 85 Abs. 1 GG). Der Bund hat Weisungsrecht (Abs. 3) und führt eine Aufsicht, die Recht- und Zweckmäßigkeit umfasst (Abs. 4). Auch hier dürfen Gemeinden durch Bundesgesetz keine Aufgaben übertragen werden (Abs. 1 S. 2). Die Wahrnehmungskompetenz, also das Handeln nach außen, liegt beim Land; die Sachkompetenz, die Entscheidung in der Sache, kann der Bund durch Weisung an sich ziehen (BVerfGE 81, 310 – Kalkar). Die Ausgaben trägt, soweit sie sich aus der Aufgabenwahrnehmung ergeben, der Bund (Art. 104a Abs. 2 GG).
+  norms:
+  - Art. 85 Abs. 1 GG
+  - Art. 85 Abs. 3 GG
+  - Art. 85 Abs. 4 GG
+  - Art. 87c GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 81, 310
+  stand: 2026-10
+- slug: or-vk-weisung-bundesauftragsverwaltung
+  type: definition
+  front: "Welche Anforderungen und Grenzen gelten für Weisungen in der Bundesauftragsverwaltung (Art. 85 Abs. 3 GG)?"
+  back: >-
+    Die Landesbehörden sind an die Weisungen der zuständigen obersten Bundesbehörden gebunden (Art. 85 Abs. 3 S. 1 GG). Die Weisungen sind, außer wenn die Bundesregierung es für dringlich erachtet, an die obersten Landesbehörden zu richten, die den Vollzug sicherstellen (S. 2 und 3). Der Bund kann also nicht durch eine Weisung unmittelbar in die nachgeordneten Behörden hineinregieren. Die Weisung kann Rechtmäßigkeit und Zweckmäßigkeit betreffen und die Sachentscheidung vorgeben. Sie ist kein Verwaltungsakt, sondern ein Rechtsakt im Bund-Länder-Verhältnis. Das Land muss sie befolgen, auch wenn es sie für unzweckmäßig hält; hält es sie für rechtswidrig, darf es die Befolgung nicht eigenmächtig verweigern, sondern kann die Streitigkeit im Bund-Länder-Streit nach Art. 93 Abs. 1 Nr. 3 GG klären lassen. Grenzen setzt das Gebot bundesfreundlichen Verhaltens, das Rücksichtnahme und regelmäßig die vorherige Anhörung des Landes verlangt. Die Weisung muss hinreichend bestimmt sein.
+  norms:
+  - Art. 85 Abs. 3 GG
+  - Art. 93 Abs. 1 Nr. 3 GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 81, 310
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vk-bundeseigene-verwaltung-art86-87
+  type: norm
+  front: "Wann darf der Bund selbst verwalten (Art. 86, 87 GG)?"
+  back: >-
+    Bundeseigene Verwaltung ist nur zulässig, wo das Grundgesetz sie zulässt (Art. 83 und 30 GG). Sie wird durch bundeseigene Behörden oder bundesunmittelbare Körperschaften und Anstalten ausgeübt (Art. 86 GG), wobei die Bundesregierung allgemeine Verwaltungsvorschriften erlässt. Art. 87 Abs. 1 S. 1 GG nennt Gegenstände, die in bundeseigener Verwaltung mit eigenem Verwaltungsunterbau geführt werden, etwa den Auswärtigen Dienst und die Bundesfinanzverwaltung; nach S. 2 können durch Bundesgesetz unter anderem Bundesgrenzschutzbehörden (so der Wortlaut des Grundgesetzes; heute Bundespolizei) sowie Zentralstellen für Kriminalpolizei und Verfassungsschutz eingerichtet werden. Soziale Versicherungsträger, deren Zuständigkeitsbereich über ein Land hinausgeht, sind bundesunmittelbare Körperschaften (Abs. 2). Für Gegenstände, für die dem Bund die Gesetzgebung zusteht, können selbständige Bundesoberbehörden sowie neue Körperschaften und Anstalten durch Bundesgesetz errichtet werden (Abs. 3 S. 1); bundeseigene Mittel- und Unterbehörden dürfen bei neuen Aufgaben und dringendem Bedarf nur mit Zustimmung des Bundesrates und der Mehrheit der Mitglieder des Bundestages errichtet werden (Abs. 3 S. 2). Ein eigener Verwaltungsunterbau bleibt damit die Ausnahme.
+  norms:
+  - Art. 86 GG
+  - Art. 87 Abs. 1 GG
+  - Art. 87 Abs. 2 GG
+  - Art. 87 Abs. 3 GG
+  quellen:
+  - GG, amtliche Fassung
+  stand: 2026-10
+- slug: or-vk-mischverwaltung-verbot
+  type: streitstand
+  front: "Was besagt das Verbot der Mischverwaltung, und ist es streng zu handhaben?"
+  back: >-
+    Bund und Länder dürfen Verwaltungsaufgaben grundsätzlich nicht in gemeinsamer Zuständigkeit wahrnehmen. Das Grundgesetz weist die Verwaltungskompetenzen abschließend zu; seine Zuständigkeitsregeln sind zwingend und stehen nicht zur Disposition (BVerfGE 63, 1). Zweck ist die klare Zuordnung der Verantwortung, damit Wähler wissen, wer verantwortlich ist (Demokratieprinzip), und Rechtsstaatlichkeit. Das Bundesverfassungsgericht hat daher die Arbeitsgemeinschaften zwischen Bundesagentur und Kommunen bei der Grundsicherung für Arbeitsuchende als verfassungswidrige Mischverwaltung angesehen (BVerfGE 119, 331); der Gesetzgeber reagierte mit Art. 91e GG. Ausnahmen bestehen bei ausdrücklicher Zulassung, etwa bei den Gemeinschaftsaufgaben (Art. 91a, 91b GG) oder der Informationstechnik (Art. 91c GG). Die Literatur sieht das Verbot teilweise als zu streng an und plädiert für kooperative Lösungen, wenn Verantwortung transparent bleibt. Das Gericht hält an einer strengen Linie fest und lässt Zusammenarbeit nur in sachlich begrenzten Ausnahmen zu.
+  norms:
+  - Art. 83 GG
+  - Art. 91e GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 63, 1
+  - BVerfGE 119, 331
+  stand: 2026-10
+- slug: or-vk-konnexitaet-art104a
+  type: norm
+  front: "Wer trägt die Ausgaben, die aus der Erfüllung staatlicher Aufgaben entstehen (Art. 104a GG)?"
+  back: >-
+    Art. 104a Abs. 1 GG enthält den Konnexitätsgrundsatz: Bund und Länder tragen gesondert die Ausgaben, die sich aus der Wahrnehmung ihrer Aufgaben ergeben, soweit das Grundgesetz nichts anderes bestimmt. Aufgabenverantwortung und Ausgabenverantwortung fallen also zusammen. Führen die Länder Bundesgesetze aus, tragen sie die Zweck- und Verwaltungsausgaben selbst. Handeln die Länder im Auftrag des Bundes, trägt der Bund die sich daraus ergebenden Ausgaben (Abs. 2). Bundesgesetze, die Geldleistungen gewähren und von den Ländern ausgeführt werden, können bestimmen, dass der Bund die Geldleistungen ganz oder zum Teil trägt; trägt er die Hälfte oder mehr, liegt Bundesauftragsverwaltung vor (Abs. 3). Bundesgesetze, die die Länder zu Geldleistungen verpflichten und von ihnen ausgeführt werden, bedürfen der Zustimmung des Bundesrates, wenn die Ausgaben von den Ländern zu tragen sind (Abs. 4). Die Verwaltungsausgaben trägt jede Ebene selbst, und Bund und Länder haften im Verhältnis zueinander für ordnungsmäßige Verwaltung (Abs. 5).
+  norms:
+  - Art. 104a Abs. 1 GG
+  - Art. 104a Abs. 2 GG
+  - Art. 104a Abs. 3 GG
+  - Art. 104a Abs. 4 GG
+  - Art. 104a Abs. 5 GG
+  quellen:
+  - GG, amtliche Fassung
+  stand: 2026-10
+- slug: or-vk-steuern-art105-106
+  type: norm
+  front: "Wie verteilt das Grundgesetz Steuergesetzgebung und Steueraufkommen (Art. 105, 106 GG)?"
+  back: >-
+    Der Bund hat die ausschließliche Gesetzgebung über Zölle und Finanzmonopole (Art. 105 Abs. 1 GG) und die konkurrierende Gesetzgebung über die übrigen Steuern, wenn ihm das Aufkommen ganz oder teilweise zusteht oder die Voraussetzungen des Art. 72 Abs. 2 GG vorliegen (Abs. 2). Die Länder haben die Befugnis zur Gesetzgebung über örtliche Verbrauch- und Aufwandsteuern, solange sie nicht bundesgesetzlich geregelten Steuern gleichartig sind (Abs. 2a). Bundesgesetze über Steuern, deren Aufkommen den Ländern oder Gemeinden zufließt, bedürfen der Zustimmung des Bundesrates (Abs. 3). Beim Ertrag gilt ein gemischtes System: Gewisse Steuern stehen dem Bund (Art. 106 Abs. 1 GG), andere den Ländern (Abs. 2) und den Gemeinden (Abs. 6, insbesondere Grund- und Gewerbesteuer) zu. Die großen Steuern, Einkommen-, Körperschaft- und Umsatzsteuer, sind Gemeinschaftsteuern (Abs. 3). Der Katalog der Steuertypen ist nach der Rechtsprechung abschließend, der Bund darf nicht beliebig neue Steuern erfinden, die dort nicht einzuordnen sind (BVerfGE 145, 171 – Kernbrennstoffsteuer).
+  norms:
+  - Art. 105 Abs. 1 GG
+  - Art. 105 Abs. 2 GG
+  - Art. 105 Abs. 3 GG
+  - Art. 106 GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 145, 171
+  stand: 2026-10
+- slug: or-vk-schuldenbremse-art109-115
+  type: norm
+  front: "Wie begrenzen Art. 109 Abs. 3 und Art. 115 Abs. 2 GG die staatliche Kreditaufnahme (Schuldenbremse)?"
+  back: >-
+    Die Haushalte von Bund und Ländern sind grundsätzlich ohne Einnahmen aus Krediten auszugleichen (Art. 109 Abs. 3 GG). Für den Bund ist dies erfüllt, wenn die Einnahmen aus Krediten 0,35 Prozent des nominalen Bruttoinlandsprodukts nicht überschreiten (strukturelle Komponente, Art. 115 Abs. 2 S. 2 GG). Daneben darf bei einer von der Normallage abweichenden konjunkturellen Entwicklung symmetrisch Rücksicht auf die Konjunktur genommen werden (Konjunkturkomponente). Bei Naturkatastrophen oder außergewöhnlichen Notsituationen, die sich der Kontrolle des Staates entziehen und die staatliche Finanzlage erheblich beeinträchtigen, können die Kreditobergrenzen auf Grund eines Beschlusses der Mehrheit der Mitglieder des Bundestages überschritten werden; der Beschluss ist mit einem Tilgungsplan zu verbinden (Art. 115 Abs. 2 S. 7 und 8 GG, Ausnahmeklausel). Das Grundgesetz wurde 2025 in diesem Bereich geändert: Verteidigungsausgaben, Ausgaben für Zivil- und Bevölkerungsschutz, Nachrichtendienste, den Schutz informationstechnischer Systeme und die Hilfe für völkerrechtswidrig angegriffene Staaten werden auf die Kreditobergrenze nur angerechnet, soweit sie 1 Prozent des nominalen Bruttoinlandsprodukts übersteigen (Art. 109 Abs. 3 S. 5, Art. 115 Abs. 2 S. 4 GG). Die Länder dürfen sich in der Gesamtheit mit 0,35 Prozent des nominalen BIP verschulden (Art. 109 Abs. 3 S. 6 GG). Zudem kann der Bund nach Art. 143h GG ein Sondervermögen mit eigener Kreditermächtigung für zusätzliche Infrastruktur- und Klimaneutralitätsinvestitionen mit einem Volumen von bis zu 500 Milliarden Euro errichten, auf das Art. 109 Abs. 3 und Art. 115 Abs. 2 GG nicht anzuwenden sind; 100 Milliarden Euro davon stehen den Ländern zur Verfügung.
+  norms:
+  - Art. 109 Abs. 3 GG
+  - Art. 115 Abs. 2 GG
+  - Art. 143h GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vk-bverfg-2023-nachtragshaushalt
+  type: rechtsprechung
+  front: "Was hat das Bundesverfassungsgericht 2023 zum Zweiten Nachtragshaushalt 2021 entschieden?"
+  back: >-
+    Mit Urteil vom 15.11.2023 (2 BvF 1/22) erklärte das Bundesverfassungsgericht auf einen Antrag der Unionsfraktion im Wege der abstrakten Normenkontrolle das Zweite Nachtragshaushaltsgesetz 2021 für nichtig. Es hatte Kreditermächtigungen, die wegen der Corona-Pandemie als Notlagenkredite beschlossen, aber nicht abgerufen worden waren, nachträglich einem Sondervermögen (Klima- und Transformationsfonds) zugeführt. Das Gericht sah darin einen Verstoß gegen Art. 109 Abs. 3 und Art. 115 Abs. 2 GG. Die Notlagenkreditaufnahme erfordert einen Veranlassungszusammenhang zwischen der Notsituation und den damit finanzierten Maßnahmen. Zudem verlangen die Haushaltsgrundsätze der Jährlichkeit und Jährigkeit (Art. 110 Abs. 2 GG) die Bindung der Kreditermächtigung an das jeweilige Haushaltsjahr, in dem die Notlage vorliegt, und der Gesetzgeber hat die Notlage und die Eignung der Maßnahmen nachvollziehbar zu begründen. Die Schuldenbremse ist danach eine justiziable, strikt zu handhabende Schranke der Haushaltsgesetzgebung.
+  norms:
+  - Art. 109 Abs. 3 GG
+  - Art. 115 Abs. 2 GG
+  - Art. 110 Abs. 2 GG
+  - Art. 93 Abs. 1 Nr. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfG, Urteil vom 15.11.2023 – 2 BvF 1/22
+  stand: 2026-10
+schemata:
+- slug: or-schema-vk-verwaltungskompetenz
+  title: Prüfung der Verwaltungskompetenz und Weisungsbefugnis, Art. 83 ff. GG
+  norms:
+  - Art. 30 GG
+  - Art. 83 GG
+  - Art. 84 GG
+  - Art. 85 GG
+  - Art. 86 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Bundesgesetz oder Landesgesetz?
+    hinweis: Landesgesetze führen die Länder stets selbst aus, Art. 30 GG.
+  - label: II. Bestimmung der Verwaltungsart
+    children:
+    - label: 1. Bundeseigene Verwaltung - ausdrückliche Zulassung, Art. 86 ff. GG
+    - label: 2. Bundesauftragsverwaltung - ausdrückliche Zulassung (z. B. Art. 87c, 90, 108 Abs. 3 GG)
+    - label: 3. Landeseigenverwaltung - Auffangtatbestand, Art. 83, 84 GG
+  - label: III. Zuständigkeit für Behörden und Verfahren
+    children:
+    - label: 1. Landeseigenverwaltung - Länder, mit Abweichungsrecht bei Bundesverfahrensregeln, Art. 84 Abs. 1 GG
+    - label: 2. Bundesauftragsverwaltung - Länder, Art. 85 Abs. 1 GG
+  - label: IV. Aufsicht und Weisung
+    children:
+    - label: 1. Landeseigenverwaltung - Rechtsaufsicht, Mängelrüge, Einzelweisung nur ausnahmsweise (Art. 84 Abs. 3 bis 5 GG)
+    - label: 2. Bundesauftragsverwaltung - Recht- und Zweckmäßigkeitsaufsicht, Weisung an oberste Landesbehörde, Art. 85 Abs. 3, 4 GG
+    hinweis: Weisung an nachgeordnete Behörden nur bei Dringlichkeit.
+  - label: V. Mischverwaltungsverbot und Aufgabenübertragung auf Gemeinden
+  - label: VI. Rechtsschutz - Bund-Länder-Streit, Art. 93 Abs. 1 Nr. 3 GG
+faelle:
+- slug: or-fall-vk-weisung-auftragsverwaltung
+  title: Die Weisung zur Kernenergieaufsicht
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  facts: >-
+    Das Land L führt die Aufsicht über eine kerntechnische Anlage nach einem Bundesgesetz aus, das mit Zustimmung des Bundesrates bestimmt, dass die Länder es im Auftrag des Bundes ausführen. Das zuständige Bundesministerium hält die Anlage für nicht mehr hinreichend sicher und weist das Landesumweltministerium von L an, die Betriebsgenehmigung zu widerrufen. L hält den Widerruf für unzweckmäßig, weil die Sicherheitslage überschaubar sei, und weigert sich. Das Bundesministerium richtet daraufhin unmittelbar eine Weisung an das nachgeordnete Landesamt; ein dringender Fall im Sinne des Art. 85 Abs. 3 S. 2 GG wird von der Bundesregierung nicht angenommen. L beantragt beim Bundesverfassungsgericht festzustellen, dass beide Weisungen rechtswidrig sind.
+  question: Sind die beiden Weisungen verfassungsgemäß, und kann sich L gegen sie wehren?
+  steps:
+  - prompt: Welche Verwaltungsart liegt vor?
+    erwartung: Bundesauftragsverwaltung, Art. 85 GG, in Verbindung mit Art. 87c GG, weil das Bundesgesetz die Ausführung im Auftrag des Bundes mit Zustimmung des Bundesrates bestimmt.
+  - prompt: Darf der Bund dem Land die Weisung zum Widerruf erteilen, obwohl L sie für unzweckmäßig hält?
+    erwartung: Ja. Der Bund hat in der Bundesauftragsverwaltung die Sachkompetenz und übt Recht- und Zweckmäßigkeitsaufsicht aus, Art. 85 Abs. 3 und 4 GG. Die erste Weisung ist an die oberste Landesbehörde gerichtet und daher zulässig; L muss sie befolgen, auch wenn es sie für unzweckmäßig hält. Grenze wäre nur das Gebot bundesfreundlichen Verhaltens.
+  - prompt: Ist die unmittelbare Weisung an das Landesamt zulässig?
+    erwartung: Nein. Weisungen sind, außer wenn die Bundesregierung es für dringlich erachtet, an die obersten Landesbehörden zu richten, Art. 85 Abs. 3 S. 2 GG. Ein Dringlichkeitsfall ist nicht gegeben; die zweite Weisung ist deshalb rechtswidrig.
+  - prompt: Welcher Rechtsschutz steht L zu?
+    erwartung: Rechtsschutz bietet der Bund-Länder-Streit nach Art. 93 Abs. 1 Nr. 3 GG, §§ 68 ff. BVerfGG, den die Landesregierung als Antragstellerin einleitet. L kann die Weisung gerichtlich klären lassen und darf sie nicht eigenmächtig missachten.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Bundesauftragsverwaltung als Verwaltungsart bestimmt
+      weight: 1.5
+      required: false
+      norms:
+      - Art. 85 GG
+      - Art. 87c GG
+      keywords:
+      - Bundesauftragsverwaltung
+      - Art. 85 GG
+      - Art. 87c GG
+      - im Auftrag des Bundes
+      card_slugs:
+      - or-vk-bundesauftragsverwaltung-art85
+    - id: p2
+      label: Weisungsrecht und Zweckmäßigkeitsaufsicht des Bundes bejaht
+      weight: 2.5
+      required: true
+      norms:
+      - Art. 85 Abs. 3 GG
+      - Art. 85 Abs. 4 GG
+      keywords:
+      - Zweckmäßigkeitsaufsicht
+      - Weisungsrecht
+      - Recht- und Zweckmäßigkeit
+      - Sachkompetenz
+      - Art. 85 Abs. 3 S. 1 GG
+      card_slugs:
+      - or-vk-weisung-bundesauftragsverwaltung
+    - id: p3
+      label: Weisung muss an die oberste Landesbehörde gerichtet werden, Dringlichkeit verneint
+      weight: 3.0
+      required: true
+      norms:
+      - Art. 85 Abs. 3 S. 2 GG
+      keywords:
+      - oberste Landesbehörde
+      - oberste Landesbehörden
+      - dringlich
+      - Art. 85 Abs. 3 S. 2 GG
+      - nachgeordnete Behörde
+      card_slugs:
+      - or-vk-weisung-bundesauftragsverwaltung
+    - id: p4
+      label: Rechtsschutz durch Bund-Länder-Streit
+      weight: 1.5
+      required: false
+      norms:
+      - Art. 93 Abs. 1 Nr. 3 GG
+      keywords:
+      - Bund-Länder-Streit
+      - Art. 93 Abs. 1 Nr. 3 GG
+      - §§ 68 ff. BVerfGG
+      - Meinungsverschiedenheiten zwischen Bund und Ländern
+      card_slugs:
+      - or-vk-weisung-bundesauftragsverwaltung
+    - id: p5
+      label: Wahrnehmungs- und Sachkompetenz unterschieden
+      weight: 1.0
+      required: false
+      keywords:
+      - Wahrnehmungskompetenz
+      - Sachkompetenz
+      - Kalkar
+      card_slugs:
+      - or-vk-bundesauftragsverwaltung-art85

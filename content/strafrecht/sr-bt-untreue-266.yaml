@@ -159,8 +159,8 @@ faelle:
       Wahrnehmung der Vermögensinteressen der GmbH verpflichtet; diese Pflicht ist
       Hauptpflicht seines Amtes und von erheblichem Gewicht.
   - prompt: Liegt eine tatbestandsmäßige Tathandlung vor?
-    erwartung: Ja - A hat seine im Außenverhältnis wirksame Verfügungsbefugnis
-      über das Geschäftskonto missbraucht, indem er sie im Innenverhältnis pflichtwidrig
+    erwartung: Ja - A hat seine im Außenverhältnis wirksame Verfügungsbefugnis über
+      das Geschäftskonto missbraucht, indem er sie im Innenverhältnis pflichtwidrig
       für private Zwecke einsetzte, ohne dass dies durch die Gesellschafter gedeckt
       war.
   - prompt: Ist der X-GmbH ein Vermögensnachteil entstanden?
@@ -181,7 +181,8 @@ faelle:
       norms:
       - § 266 Abs. 1 StGB
       keywords:
-      - '266'
+      - § 266 Abs. 1
+      - Untreue gemäß § 266
       card_slugs:
       - sr-untreue-grundtatbestand
     - id: p2
@@ -192,7 +193,10 @@ faelle:
       - § 266 Abs. 1 StGB
       keywords:
       - Vermögensbetreuungspflicht
-      - Geschäftsführer
+      - Pflicht zur Wahrnehmung fremder Vermögensinteressen
+      - Vermögensbetreuungspflicht von gewisser Bedeutung
+      - Organstellung
+      - eigenverantwortlichen Wahrnehmung der Vermögensinteressen
       card_slugs:
       - sr-untreue-vermoegensbetreuungspflicht
       - sr-untreue-treubruchtatbestand
@@ -204,7 +208,9 @@ faelle:
       norms:
       - § 266 Abs. 1 StGB
       keywords:
-      - Missbrauch
+      - Missbrauchstatbestand
+      - Treubruchtatbestand
+      - Verfügungsbefugnis
       - Innenverhältnis
       card_slugs:
       - sr-untreue-missbrauchstatbestand
@@ -216,7 +222,11 @@ faelle:
       - § 266 Abs. 1 StGB
       keywords:
       - Vermögensnachteil
-      - '50.000'
+      - Gesamtsaldierung
+      - keine gleichwertige Gegenleistung
+      - gleichwertiger Ausgleich
+      - Vermögen der GmbH verringert
+      - verringert
       card_slugs:
       - sr-untreue-vermoegensnachteil
     - id: p5
@@ -226,7 +236,12 @@ faelle:
       norms:
       - § 15 StGB
       keywords:
-      - Vorsatz
+      - Vorsatz hinsichtlich der Pflichtverletzung
+      - Vorsatz bezüglich des Nachteils
+      - bedingter Vorsatz
+      - Vorsatz bezüglich
+      - wusste um seine Pflichtenstellung
+      - wollte den Nachteil
       card_slugs:
       - sr-at-vorsatz
     - id: p6
@@ -236,7 +251,8 @@ faelle:
       norms:
       - § 266 Abs. 1 StGB
       keywords:
-      - strafbar gemacht
-      - Untreue
+      - Untreue gemäß § 266 Abs. 1 erfüllt
+      - wegen Untreue strafbar
+      - wegen Untreue gemäß § 266
       card_slugs:
       - sr-untreue-grundtatbestand

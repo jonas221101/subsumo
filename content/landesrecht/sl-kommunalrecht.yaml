@@ -1,0 +1,329 @@
+topic:
+  slug: sl-kommunalrecht
+  area: oeffentliches-recht
+  title: "Kommunalrecht Saarland"
+  parent: oeffentliches-recht
+  bundesland: SL
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sl-kom-selbstverwaltung
+  type: definition
+  front: >-
+      Was gewährleistet die kommunale Selbstverwaltung nach Art. 28 Abs. 2 GG, und welche
+      Aufgabenarten gibt es im Saarland?
+  back: >-
+      Art. 28 Abs. 2 GG garantiert den Gemeinden das Recht, alle Angelegenheiten der örtlichen
+      Gemeinschaft im Rahmen der Gesetze in eigener Verantwortung zu regeln (Allzuständigkeit). Die
+      Garantie umfasst die Rechtssubjektsgarantie, die objektive Rechtsinstitutionsgarantie und die
+      subjektive Rechtsstellungsgarantie. Sie schützt die Gemeindehoheiten, etwa Gebiets-,
+      Organisations-, Personal-, Finanz-, Planungs- und Satzungshoheit. Eingriffe durch Gesetz sind
+      zulässig, soweit der Kernbereich unangetastet bleibt und Aufgaben mit örtlichem Charakter nur
+      aus Gründen des Gemeinwohls, insbesondere zur Sicherung einer ordnungsgemäßen
+      Aufgabenwahrnehmung, entzogen werden (Rastede-Beschluss). Aufgabenarten: Selbstverwaltungsaufgaben (freiwillige und pflichtige) sowie Weisungs- bzw. Auftragsangelegenheiten (Einzelheiten im KSVG); für Selbstverwaltungsaufgaben besteht nur Rechtsaufsicht, für Weisungsaufgaben
+      Fachaufsicht.
+  norms:
+  - "Art. 28 Abs. 2 S. 1 GG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "BVerfGE 79, 127 (Rastede)"
+  stand: 2026-10
+- slug: sl-kom-struktur
+  type: definition
+  front: >-
+      Welche kommunalen Körperschaften und Ortsgliederungen kennt das saarländische Kommunalrecht?
+  back: >-
+      Das KSVG regelt die Gemeinden (§§ 1 ff.), die Landkreise (§§ 140 ff.) und den Regionalverband
+      Saarbrücken (§§ 194 ff.), der Gemeindeverband und Gebietskörperschaft ist (§ 194 Abs. 3 KSVG). Innerhalb der Gemeinde kann es Gemeindebezirke
+      geben, in denen Ortsräte mit Ortsvorsteherinnen bzw. Ortsvorstehern gebildet werden (§§ 70 ff. KSVG)
+      und die Stadtbezirke in großen Städten (§ 77 KSVG). Die Gemeinde handelt durch Gemeinderat und Bürgermeister; die Aufgaben sind nach eigenen
+      Angelegenheiten (Selbstverwaltung) und übertragenen Angelegenheiten zu unterscheiden. Für die
+      Klausur ist zu klären, welche Körperschaft und welches Organ handelt und ob die Aufgabe der
+      Selbstverwaltung oder der Auftragsverwaltung zuzuordnen ist; davon hängt die Aufsicht ab.
+  norms:
+  - "§ 29 KSVG"
+  - "§§ 70 ff. KSVG"
+  - "§ 194 KSVG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sl-kom-organe
+  type: definition
+  front: >-
+      Wie sind die Zuständigkeiten von Gemeinderat und Bürgermeister im Saarland verteilt, und welche
+      Anforderungen gelten für Verpflichtungserklärungen?
+  back: >-
+      Organe der Gemeinde sind Gemeinderat und Bürgermeister (§ 29 KSVG). Der Gemeinderat beschließt
+      über alle Selbstverwaltungsangelegenheiten, soweit nichts anderes bestimmt ist (§ 34 KSVG); einzelne
+      Entscheidungen sind ihm vorbehalten (§ 35 KSVG). Der Bürgermeister ist gesetzlicher Vertreter der
+      Gemeinde, leitet die Verwaltung, bereitet die Beschlüsse vor und führt sie aus und erledigt die
+      Geschäfte der laufenden Verwaltung (§ 59 KSVG). Ein Beschluss des unzuständigen
+      Organs ist formell rechtswidrig. Verpflichtungserklärungen, mit denen die Gemeinde verpflichtet
+      werden soll, müssen nach § 62 Abs. 1 KSVG schriftlich oder elektronisch erfolgen; die Schriftform
+      ist nur gewahrt, wenn der Bürgermeister oder sein allgemeiner Vertreter unter Beifügung der
+      Amtsbezeichnung und des Dienstsiegels handschriftlich unterzeichnet (Satz 2: "nur rechtsverbindlich").
+      Das Formerfordernis gilt nicht für Geschäfte der laufenden Verwaltung (§ 62 Abs. 3 KSVG). Die Form-
+      vorschrift ist nach h. M. eine Vertretungsregelung; ein Verstoß macht die Erklärung unwirksam, sie
+      bindet die Gemeinde nicht.
+  norms:
+  - "§§ 29, 34, 35, 59 KSVG"
+  - "§ 62 KSVG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sl-kom-satzung
+  type: norm
+  front: >-
+      Welche Anforderungen stellt das Recht im Saarland an eine gemeindliche Satzung?
+  back: >-
+      Die Gemeinden können ihre Selbstverwaltungsangelegenheiten durch Satzung regeln, in Auftrags-
+      angelegenheiten nur mit gesetzlicher Ermächtigung (§ 12 Abs. 1 KSVG; Satzungshoheit). Eine allgemeine
+      Satzungsermächtigung im KSVG genügt für Eingriffe in Grundrechte allerdings nicht; nach der
+      Wesentlichkeitstheorie braucht es eine spezielle gesetzliche Ermächtigung (z. B. für Anschluss-
+      und Benutzungszwang oder Abgaben). Prüfungsaufbau: I. Ermächtigungsgrundlage. II. Formelle
+      Rechtmäßigkeit: Zuständigkeit des Gemeindeorgans (Gemeinderat), Verfahren (Beschlussfassung,
+      Mitwirkungsverbote), Ausfertigung und ordnungsgemäße öffentliche Bekanntmachung. III. Materielle
+      Rechtmäßigkeit: Vereinbarkeit mit höherrangigem Recht, Bestimmtheit, Verhältnismäßigkeit,
+      Gleichheitssatz. Rechtsfolge eines Fehlers ist grundsätzlich Nichtigkeit; nach § 12 Abs. 6 KSVG gelten Satzungen
+      jedoch ein Jahr nach der öffentlichen Bekanntmachung als von Anfang an gültig zustande gekommen,
+      wenn Verfahrens- oder Formvorschriften verletzt wurden; das gilt nicht bei Verletzung der
+      Vorschriften über Genehmigung oder Bekanntmachung, bei Widerspruch des Bürgermeisters, Beanstandung
+      der Kommunalaufsicht oder rechtzeitiger schriftlicher Rüge, und die Bekanntmachung muss auf die
+      Rechtsfolgen hinweisen. Rechtsschutz: Normenkontrolle nach § 47 Abs. 1 Nr. 2 VwGO; im Saarland ist
+      sie durch § 18 AGVwGO eröffnet (Entscheidung des OVG über Rechtsvorschriften im Rang unter dem
+      Landesgesetz).
+  norms:
+  - "§ 12 KSVG"
+  - "§ 47 VwGO"
+  - "§ 18 AGVwGO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sl-kom-anschlusszwang
+  type: norm
+  front: >-
+      Unter welchen Voraussetzungen darf die Gemeinde einen Anschluss- und Benutzungszwang anordnen?
+  back: >-
+      Der Anschluss- und Benutzungszwang verpflichtet Grundstückseigentümer und Nutzer, ein Grundstück
+      an eine gemeindliche Einrichtung anzuschließen und die Einrichtung zu benutzen (nach § 22 Abs. 1
+      KSVG Wasserleitung, Kanalisation, Straßenreinigung, Fernwärme und ähnliche der Volksgesundheit
+      dienende Einrichtungen sowie Schlachthöfe). Er ist
+      ein Eingriff in Art. 2 Abs. 1, Art. 12 und Art. 14 GG und bedarf einer gesetzlichen Ermächtigung
+      in § 22 KSVG, die die Gemeinde durch Satzung ausfüllt. Tatbestand: öffentliches
+      Bedürfnis; Bestehen oder Schaffung einer öffentlichen Einrichtung der genannten Art;
+      Verhältnismäßigkeit. Die Satzung kann Ausnahmen zulassen und den Zwang auf bestimmte Teile des
+      Gemeindegebiets oder bestimmte Gruppen von Grundstücken oder Personen beschränken (§ 22 Abs. 2
+      KSVG); für Härtefälle sind Befreiungsmöglichkeiten verfassungsrechtlich geboten.
+  norms:
+  - "§ 22 KSVG"
+  - "Art. 2 Abs. 1 GG"
+  - "Art. 12 Abs. 1 GG"
+  - "Art. 14 Abs. 1 GG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sl-kom-aufsicht
+  type: streitstand
+  front: >-
+      Welche Arten der Kommunalaufsicht gibt es, und welchen Rechtsschutz hat die Gemeinde?
+  back: >-
+      Bei Selbstverwaltungsaufgaben besteht nur Rechtsaufsicht: Das Land beaufsichtigt die Gemeinden, um
+      sicherzustellen, dass sie im Einklang mit den Gesetzen verwaltet werden (§ 127 Abs. 1 KSVG). Die
+      Aufsicht über Auftragsangelegenheiten richtet sich nach den dafür erlassenen Gesetzen (§ 127 Abs. 2
+      KSVG), d. h. Weisungsrecht auch hinsichtlich der Zweckmäßigkeit. Die Aufsichtsmittel sind
+      abgestuft: Informationsrecht (§ 129), Beanstandung rechtswidriger Beschlüsse (§ 130, mit
+      aufschiebender Wirkung), Aufhebungsrecht (§ 131), Anordnungsrecht (§ 132), Ersatzvornahme (§ 133),
+      Bestellung eines Beauftragten (§ 134 KSVG). Rechtsschutz der Gemeinde: Nach h. M. sind
+      Aufsichtsmaßnahmen gegenüber der Gemeinde Verwaltungsakte, weil sie in die Selbstverwaltungsgarantie
+      (Art. 28 Abs. 2 GG) eingreifen; die Gemeinde kann nach § 136 KSVG Widerspruch erheben, danach ist
+      die Anfechtungsklage statthaft. Die früher vertretene Gegenansicht sah in der
+      Aufsicht eine Maßnahme im staatlichen Innenbereich ohne Außenwirkung; sie wird wegen der eigenen
+      Rechtsstellung der Gemeinde überwiegend abgelehnt.
+  norms:
+  - "§§ 127 bis 136 KSVG"
+  - "Art. 28 Abs. 2 S. 1 GG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sl-kom-buergerbegehren
+  type: definition
+  front: >-
+      Wie funktionieren Bürgerbegehren und Bürgerentscheid, und welche Zulässigkeitsprobleme sind
+      typisch?
+  back: >-
+      Mit dem Bürgerbegehren verlangen die Bürger, dass über eine Gemeindeangelegenheit ein
+      Bürgerentscheid stattfindet; dieser ersetzt den Beschluss des Gemeindeorgans. Nach § 21a KSVG
+      muss das Bürgerbegehren schriftlich eingereicht werden, sich gegen einen Ratsbeschluss binnen zwei
+      Monaten richten, eine mit Ja oder Nein zu beantwortende Frage, eine Begründung, einen
+      Kostendeckungsvorschlag und bis zu drei Vertretungsberechtigte enthalten und von mindestens 15 % der
+      Bürgerinnen und Bürger unterzeichnet sein (je nach Gemeindegröße genügen feste Höchstzahlen, Abs. 3).
+      Unzulässig sind Bürgerbegehren u. a. über die innere Organisation der Verwaltung, die Haushaltssatzung,
+      kommunale Abgaben und privatrechtliche Entgelte, Bauleitpläne und Angelegenheiten ohne gesetzliche
+      Zuständigkeit des Gemeinderats (Abs. 4). Der Gemeinderat stellt unverzüglich die Zulässigkeit fest
+      (Abs. 5); ein Bürgerentscheid ist entschieden, wenn die Mehrheit mindestens 30 % der Stimmberechtigten
+      beträgt (Abs. 6). Die Initiatoren können eine ablehnende Entscheidung vor dem Verwaltungsgericht
+      angreifen.
+  norms:
+  - "§ 21a KSVG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sl-kom-mitwirkung
+  type: definition
+  front: >-
+      Wann gilt ein Mitwirkungsverbot für Mitglieder des Gemeindeorgans, und was folgt aus einem
+      Verstoß?
+  back: >-
+      Wer ehrenamtlich tätig ist, darf an Beratung und Abstimmung nicht teilnehmen (§ 27 Abs. 1 KSVG), wenn die Entscheidung ihm selbst,
+      Angehörigen oder einer von ihm vertretenen Person oder Gesellschaft einen unmittelbaren Vorteil
+      oder Nachteil bringen kann. Unmittelbarkeit bedeutet: Die Entscheidung berührt das
+      Sonderinteresse des Betroffenen ohne weiteren Vollzugsakt; ein Vorteil, den er mit einer
+      Vielzahl von Personen teilt (Gruppeninteresse), genügt nicht (§ 27 Abs. 3 Nr. 1 KSVG). Beispiel: Eigentümer
+      eines Grundstücks im Plangebiet bei der Beschlussfassung über den Bebauungsplan. Ein Verstoß ist ein Verfahrensfehler:
+      Nach § 27 Abs. 6 KSVG ist ein unter Verletzung des Mitwirkungsverbots gefasster Beschluss unwirksam,
+      gilt aber ein Jahr nach der Beschlussfassung (bzw. der erforderlichen öffentlichen Bekanntmachung)
+      als von Anfang an gültig zustande gekommen, wenn nicht zuvor der Bürgermeister widersprochen oder die
+      Kommunalaufsicht beanstandet hat; gegenüber demjenigen, der vorher einen förmlichen Rechtsbehelf
+      eingelegt hat, tritt die Heilung nicht ein. Bei Satzungen gilt zusätzlich § 12 Abs. 6 KSVG.
+  norms:
+  - "§ 27 KSVG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: sl-schema-kom-verpflichtungserklaerung
+  title: "Wirksamkeit einer Verpflichtungserklärung der Gemeinde (KSVG)"
+  norms:
+  - "§ 59 KSVG"
+  - "§ 62 KSVG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  steps:
+  - label: "I. Anspruch aus Vertrag gegen die Gemeinde"
+    hinweis: "Vertragsschluss und Vertretung der Gemeinde trennen."
+  - label: "II. Vertretung der Gemeinde"
+    children:
+    - label: >-
+        1. Vertretungsberechtigtes Organ (Bürgermeister, ggf. weitere Vertreter)
+    - label: >-
+        2. Zuständigkeit im Innenverhältnis: Gemeinderat oder Bürgermeister (laufende Angelegenheit?)
+      hinweis: >-
+          Innenverhältnis berührt die Vertretungsmacht nach außen nur, soweit das Gesetz dies anordnet.
+  - label: "III. Form der Verpflichtungserklärung"
+    children:
+    - label: >-
+        1. Gesetzliche Formvorschrift (§ 62 Abs. 1 KSVG: Schriftform mit handschriftlicher Unterschrift, Amtsbezeichnung und Dienstsiegel, oder elektronische Form)
+    - label: >-
+        2. Ausnahme: Geschäfte der laufenden Verwaltung (§ 62 Abs. 3 KSVG)
+    - label: >-
+        3. Rechtsfolge eines Formverstoßes: Unwirksamkeit (Vertrag zunächst schwebend unwirksam)
+  - label: "IV. Nachträgliche Genehmigung / Vertrauensschutz"
+    hinweis: >-
+        Genehmigung in entsprechender Anwendung des § 177 BGB durch das zuständige Organ in der gebotenen Form möglich; Rechtsscheinsgrundsätze greifen wegen des Schutzzwecks der Formvorschrift grundsätzlich nicht.
+faelle:
+- slug: sl-fall-kom-verpflichtungserklaerung
+  title: "Der telefonisch bestellte Dachausbau"
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  facts: >-
+      Der Bürgermeister B einer saarländischen Gemeinde bestellt telefonisch beim Bauunternehmer U die
+      Sanierung des Rathausdachs zum Preis von 150.000 Euro. Eine schriftliche Auftragsbestätigung
+      oder eine von B unterschriebene Erklärung existiert nicht; der Gemeinderat wurde mit dem
+      Vorhaben nicht befasst. U führt die Arbeiten aus und verlangt die vereinbarte Vergütung von der
+      Gemeinde. Die Gemeinde verweigert die Zahlung unter Hinweis auf die gesetzlichen
+      Formvorschriften für Verpflichtungserklärungen.
+  question: >-
+      Hat U gegen die Gemeinde einen vertraglichen Zahlungsanspruch? Auf Ansprüche aus
+      Geschäftsführung ohne Auftrag und Bereicherungsrecht ist nicht einzugehen.
+  steps:
+  - prompt: >-
+        Wer vertritt die Gemeinde, und welche Voraussetzungen stellt das Kommunalrecht an eine
+        Verpflichtungserklärung?
+    erwartung: >-
+        Die Gemeinde wird vom Bürgermeister vertreten (§ 59 Abs. 1 KSVG). Erklärungen, durch die die Gemeinde
+        verpflichtet werden soll, bedürfen nach § 62 Abs. 1 KSVG der Schriftform (handschriftliche
+        Unterschrift mit Amtsbezeichnung und Dienstsiegel) oder der elektronischen Form. Die Ausnahme für
+        Geschäfte der laufenden Verwaltung (§ 62 Abs. 3 KSVG) greift bei einem Auftrag über 150.000 Euro
+        für die Dachsanierung des Rathauses nicht ein.
+  - prompt: "Ist die Formvorschrift eingehalten?"
+    erwartung: >-
+        Nein. Die telefonische Bestellung erfüllt weder Schriftform noch elektronische Form noch die
+        Unterschrift.
+  - prompt: "Welche Folge hat der Formverstoß?"
+    erwartung: >-
+        Die Formvorschrift gehört zur Vertretungsregelung; der Formverstoß hat Unwirksamkeit der
+        Verpflichtungserklärung zur Folge. Der Vertrag ist schwebend unwirksam und kann nur durch formgerechte Genehmigung (§ 177 BGB analog) wirksam werden; eine solche liegt nicht vor. Die Gemeinde ist an die telefonische Bestellung nicht gebunden. Auf Rechtsscheingrundsätze oder Treu und Glauben kann sich U grundsätzlich nicht
+        stützen, weil die Formvorschrift den Schutz der Gemeinde bezweckt.
+  - prompt: "Ergebnis?"
+    erwartung: >-
+        Ein vertraglicher Zahlungsanspruch des U gegen die Gemeinde besteht nicht.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+          Formerfordernis für Verpflichtungserklärungen der Gemeinde (Schriftform, Unterschrift) erkannt
+      weight: 2.5
+      required: true
+      keywords:
+      - "Verpflichtungserklärung"
+      - "Schriftform"
+      - "Formvorschrift"
+      - "Unterschrift des Bürgermeisters"
+      - "Vertretungsregelung"
+      card_slugs:
+      - "sl-kom-organe"
+    - id: p2
+      label: >-
+          Formverstoß als Unwirksamkeitsgrund begründet, nicht bloße Ordnungsvorschrift
+      weight: 2.5
+      required: true
+      keywords:
+      - "Unwirksamkeit"
+      - "formunwirksam"
+      - "zwingende Formvorschrift"
+      - "nicht gebunden"
+      - "schwebend unwirksam"
+      card_slugs:
+      - "sl-kom-organe"
+    - id: p3
+      label: "Rechtsschein und Treu und Glauben greifen grundsätzlich nicht"
+      weight: 1.0
+      required: false
+      keywords:
+      - "Rechtsschein"
+      - "Treu und Glauben"
+      - "Schutz der Gemeinde"
+      - "kein Vertrauensschutz"
+      card_slugs:
+      - "sl-kom-organe"
+    - id: p4
+      label: >-
+          Ergebnis: kein vertraglicher Zahlungsanspruch
+      weight: 1.0
+      required: false
+      keywords:
+      - "kein Zahlungsanspruch"
+      - "kein vertraglicher Anspruch"
+      - "Vergütungsanspruch besteht nicht"
+      - "kein vertraglicher Zahlungsanspruch"
+      - "Zahlungsanspruch besteht nicht"
+      - "keine Vergütung aus Vertrag"
+      card_slugs:
+      - "sl-kom-organe"
+    normzitate_geprueft: false

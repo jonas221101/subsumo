@@ -9,8 +9,8 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-13'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: sr-versuch-begriff
   type: definition
@@ -65,49 +65,64 @@ cards:
   - StGB, amtliche Fassung
   - Eigenformulierung Redaktion
   stand: 2026-09
+- slug: sr-versuch-grob-unverstaendig-23-3
+  type: norm
+  front: Was regelt § 23 Abs. 3 StGB (grob unverständiger Versuch)?
+  back: Verkennt der Täter aus grobem Unverstand, dass der Versuch nach der Art des
+    Gegenstandes oder des Mittels, an dem oder mit dem die Tat begangen werden sollte,
+    überhaupt nicht zur Vollendung führen konnte (abergläubische Mittel, absurde Vorstellungen),
+    kann das Gericht von Strafe absehen oder die Strafe mildern. Der untaugliche Versuch
+    ist im Übrigen strafbar; nur der grob unverständige Versuch wird privilegiert.
+    Er ist vom (straflosen) Wahndelikt zu unterscheiden, bei dem der Täter eine in
+    Wahrheit nicht bestehende Strafnorm annimmt.
+  norms:
+  - § 23 Abs. 3 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
 - slug: sr-ruecktritt-begriff
   type: definition
   front: 'Definiere: Rücktritt vom Versuch, § 24 Abs. 1 StGB'
   back: Nach § 24 Abs. 1 StGB wird wegen Versuchs nicht bestraft, wer die weitere
-    Ausführung der Tat freiwillig aufgibt (beim unbeendeten Versuch) oder deren Vollendung
-    freiwillig verhindert (beim beendeten Versuch). Der Rücktritt ist ein persönlicher
-    Strafaufhebungsgrund und beseitigt die bereits begründete Versuchsstrafbarkeit.
+    Ausführung der Tat freiwillig aufgibt (unbeendeter Versuch) oder deren Vollendung
+    freiwillig verhindert (beendeter Versuch); bleibt die Tat ohne sein Zutun unvollendet,
+    genügt das freiwillige und ernsthafte Bemühen, die Vollendung zu verhindern (§
+    24 Abs. 1 S. 2 StGB). Bei mehreren Tatbeteiligten gilt § 24 Abs. 2 StGB. Der Rücktritt
+    ist ein persönlicher Strafaufhebungsgrund und beseitigt die bereits begründete
+    Versuchsstrafbarkeit.
   norms:
   - § 24 Abs. 1 StGB
   quellen:
   - StGB, amtliche Fassung
   - Eigenformulierung Redaktion
   stand: 2026-09
+- slug: sr-ruecktritt-fehlschlag
+  type: definition
+  front: 'Definiere: fehlgeschlagener Versuch (Ausschluss des Rücktritts)'
+  back: 'Ein Versuch ist fehlgeschlagen, wenn der Täter nach der letzten Ausführungshandlung
+    erkennt, dass er den tatbestandlichen Erfolg mit den ihm zur Verfügung stehenden
+    oder erreichbaren Mitteln nicht mehr herbeiführen kann, ohne dass er sofort eine
+    neue Handlungsmöglichkeit erlangt (Einzelaktstheorie gegen Gesamtbetrachtung:
+    die Rspr. stellt auf eine Gesamtbetrachtung ab). Beim fehlgeschlagenen Versuch
+    ist ein Rücktritt nach § 24 Abs. 1 StGB ausgeschlossen, weil der Täter die Tat
+    nicht mehr freiwillig aufgeben kann. Der Fehlschlag ist deshalb vor der Unterscheidung
+    beendet/unbeendet zu prüfen.'
+  norms:
+  - § 24 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
 - slug: sr-ruecktritt-ruecktrittshorizont
   type: streitstand
   front: Was ist der Rücktrittshorizont und wonach bestimmt er sich?
-  back: 'Ob ein Versuch unbeendet oder beendet ist, bestimmt sich nach dem
+  back: |-
+    Ob ein Versuch unbeendet oder beendet ist, bestimmt sich nach dem Rücktrittshorizont: maßgeblich ist nicht der ursprüngliche Tatplan, sondern die Vorstellung des Täters nach Abschluss der letzten Ausführungshandlung (Gesamtbetrachtung aller Umstände; Korrektur des Rücktrittshorizonts ist möglich, solange kein Fehlschlag vorliegt).
 
-    sogenannten Rücktrittshorizont: maßgeblich ist nicht der ursprüngliche
+    Unbeendeter Versuch: Der Täter glaubt, noch nicht alles Erforderliche zur Herbeiführung des Erfolgs getan zu haben, und hält den Erfolgseintritt mit den bisherigen Mitteln nicht für möglich. Hier genügt für den Rücktritt das bloße Aufgeben der weiteren Tatausführung (§ 24 Abs. 1 S. 1 Var. 1 StGB).
 
-    Tatplan, sondern die Vorstellung des Täters unmittelbar nach Abschluss
+    Beendeter Versuch: Der Täter hält nach seiner Vorstellung den Eintritt des Erfolgs für möglich (nach der Rspr. genügt, dass er die Möglichkeit des Erfolgseintritts erkennt und nicht ausschließt; er muss ihn nicht sicher erwarten). Hier reicht bloßes Untätigbleiben nicht aus; erforderlich ist ein aktives Verhindern der Vollendung (§ 24 Abs. 1 S. 1 Var. 2 StGB). Bleibt die Vollendung ohne Zutun des Täters aus, genügt sein ernsthaftes Bemühen (§ 24 Abs. 1 S. 2 StGB).
 
-    der letzten von ihm vorgenommenen Ausführungshandlung.
-
-
-    Unbeendeter Versuch: Der Täter glaubt, noch nicht alles Erforderliche
-
-    zur Herbeiführung des Erfolgs getan zu haben. Hier genügt für den
-
-    Rücktritt bereits das bloße Aufgeben der weiteren Tatausführung.
-
-
-    Beendeter Versuch: Der Täter geht davon aus, bereits alles zur
-
-    Herbeiführung des Erfolgs Erforderliche getan zu haben (der Erfolg werde
-
-    auch ohne weiteres Zutun eintreten). Hier reicht bloßes Untätigbleiben
-
-    für den Rücktritt nicht aus - erforderlich ist ein aktives Verhindern
-
-    der Vollendung, § 24 Abs. 1 S. 1 Var. 2 StGB.
-
-    '
+    Vorfrage: Kein fehlgeschlagener Versuch. Fehlgeschlagen ist der Versuch, wenn der Täter erkennt, dass er die Tat mit den ihm zur Verfügung stehenden Mitteln nicht mehr vollenden kann; ein Rücktritt ist dann ausgeschlossen.
   norms:
   - § 24 Abs. 1 StGB
   quellen:
@@ -116,13 +131,15 @@ cards:
 - slug: sr-ruecktritt-freiwilligkeit
   type: definition
   front: Wann ist ein Rücktritt freiwillig?
-  back: Freiwillig handelt der Täter, wenn er aus autonomen Motiven von der weiteren
-    Tatausführung absieht oder die Vollendung verhindert, er also 'Herr seiner Entschlüsse'
-    bleibt - etwa aus Reue, Mitleid oder Angst vor Strafe. Unfreiwillig (heteronom)
-    ist der Rücktritt dagegen, wenn äußere Zwänge den Täter an der Weiterausführung
-    hindern, etwa das plötzliche Erscheinen eines Dritten, das die Tatausführung
-    faktisch unmöglich macht oder das Entdeckungsrisiko für den Täter unzumutbar
-    erhöht.
+  back: 'Freiwillig handelt der Täter, wenn er aus autonomen Motiven von der weiteren
+    Tatausführung absieht oder die Vollendung verhindert, er also Herr seiner Entschlüsse
+    bleibt, etwa aus Reue, Mitleid oder aus der Einsicht, dass sich die Tat nicht
+    lohnt. Unfreiwillig (heteronom) ist der Rücktritt, wenn äußere Zwänge den Täter
+    an der Weiterausführung hindern. Zwei Fallgruppen: (1) Allgemeine Angst vor Strafe
+    oder Furcht vor Sanktionen ist für sich genommen nicht heteronom; (2) Furcht vor
+    Entdeckung, die auf einem konkret erhöhten Entdeckungsrisiko beruht (z. B. das
+    plötzliche Erscheinen eines Dritten, ein Alarm), ist dagegen heteronom, weil der
+    Täter die Tat nicht mehr risikolos vollenden kann (Rspr.).'
   norms:
   - § 24 Abs. 1 StGB
   quellen:
@@ -143,6 +160,8 @@ schemata:
     children:
     - label: 1. Tatbestand nicht vollendet
     - label: 2. Strafbarkeit des Versuchs, § 23 Abs. 1 StGB
+    - label: '3. Hinweis: grob unverständiger Versuch, § 23 Abs. 3 StGB (Absehen von
+        Strafe oder Milderung)'
   - label: II. Tatbestand des Versuchs
     children:
     - label: 1. Tatentschluss
@@ -153,8 +172,10 @@ schemata:
     hinweis: Nur prüfen, wenn der Sachverhalt dazu Anlass gibt.
     children:
     - label: 1. Kein fehlgeschlagener Versuch
-    - label: '2. Rücktrittshorizont: unbeendeter oder beendeter Versuch'
-    - label: 3. Rücktrittshandlung (Aufgeben bzw. Verhindern der Vollendung)
+    - label: '2. Rücktrittshorizont: unbeendeter oder beendeter Versuch (Täter hält
+        Erfolgseintritt für möglich)'
+    - label: 3. Rücktrittshandlung (Aufgeben bzw. Verhindern der Vollendung; § 24
+        Abs. 1 S. 2 und Abs. 2 StGB beachten)
     - label: 4. Freiwilligkeit
   - label: VI. Ergebnis
 faelle:
@@ -171,23 +192,24 @@ faelle:
     fluchtartig den Tatort, ohne Rettungsmaßnahmen einzuleiten oder Hilfe zu rufen.
     Ein wenig später vorbeikommender Passant findet O noch lebend auf und alarmiert
     den Rettungsdienst. O überlebt nach einer Notoperation.
-  question: Ist T wegen versuchten Totschlags gemäß §§ 212 Abs. 1, 22, 23 Abs. 1
-    StGB strafbar?
+  question: Ist T wegen versuchten Totschlags gemäß §§ 212 Abs. 1, 22, 23 Abs. 1 StGB
+    strafbar?
   steps:
   - prompt: Formuliere die Vorprüfung und den Obersatz.
     erwartung: Da O nicht verstorben ist, kommt nur eine Versuchsstrafbarkeit in Betracht;
       der Versuch des Verbrechens Totschlag ist gemäß § 23 Abs. 1 StGB stets strafbar.
-      T könnte sich wegen versuchten Totschlags gemäß §§ 212 Abs. 1, 22, 23 Abs.
-      1 StGB strafbar gemacht haben.
+      T könnte sich wegen versuchten Totschlags gemäß §§ 212 Abs. 1, 22, 23 Abs. 1
+      StGB strafbar gemacht haben.
   - prompt: Liegt Tatentschluss vor?
     erwartung: Ja - T handelte mit (zumindest bedingtem) Vorsatz, O zu töten.
   - prompt: Liegt ein unmittelbares Ansetzen vor?
     erwartung: Ja - mit dem Messerstich hat T bereits die aus seiner Sicht zur Tötung
       führende Handlung selbst vorgenommen.
   - prompt: Ist T vom Versuch zurückgetreten?
-    erwartung: 'Das ist zu prüfen: Nach dem Rücktrittshorizont kommt es auf die
-      Vorstellung des T nach dem Stich an - er hielt O für tödlich getroffen, ging
-      also von einem beendeten Versuch aus.'
+    erwartung: 'Das ist zu prüfen: Nach dem Rücktrittshorizont kommt es auf die Vorstellung
+      des T nach dem Stich an - er hielt O für tödlich getroffen, ging also von einem
+      beendeten Versuch aus. Der Versuch ist nicht fehlgeschlagen, denn T erkennt keine
+      Unmöglichkeit der Vollendung, sondern erwartet den Eintritt des Todes.'
   - prompt: Genügt es beim beendeten Versuch, dass T nichts weiter unternommen hat?
     erwartung: Nein. Beim beendeten Versuch erfordert § 24 Abs. 1 S. 1 Var. 2 StGB
       ein aktives Verhindern der Vollendung, etwa durch Rettungsmaßnahmen oder einen
@@ -206,8 +228,9 @@ faelle:
       - § 22 StGB
       - § 23 Abs. 1 StGB
       keywords:
-      - '212'
-      - '22'
+      - §§ 212 Abs. 1, 22, 23
+      - § 212 Abs. 1
+      - versuchter Totschlag
     - id: p2
       label: Tatentschluss (Tötungsvorsatz) bejaht
       weight: 1.5
@@ -215,7 +238,10 @@ faelle:
       keywords:
       - Tatentschluss
       - Tötungsvorsatz
-      - Vorsatz
+      - bedingter Tötungsvorsatz
+      - Tötungswille
+      - zumindest bedingtem
+      - 'Vorsatz, O zu töten'
       card_slugs:
       - sr-versuch-tatentschluss
     - id: p3
@@ -224,7 +250,10 @@ faelle:
       required: false
       keywords:
       - unmittelbares Ansetzen
-      - Messerstich
+      - unmittelbar angesetzt
+      - Ausführungshandlung vorgenommen
+      - Messerstich hat T bereits
+      - zur Tötung führende Handlung
       card_slugs:
       - sr-versuch-unmittelbares-ansetzen
     - id: p4
@@ -234,10 +263,30 @@ faelle:
       norms:
       - § 24 Abs. 1 StGB
       keywords:
-      - Rücktrittshorizont
-      - beendeter Versuch
+      - hielt den Tod für möglich
+      - Erfolgseintritt für möglich
+      - Rücktrittshorizont beendet
+      - 'Rücktrittshorizont: beendet'
+      - Versuch ist beendet
+      - Versuch war beendet
+      - Versuch als beendet
+      - keinen weiteren Ausführungsakt
+      - von einem beendeten Versuch aus
+      - beendeten Versuch aus
       card_slugs:
       - sr-ruecktritt-ruecktrittshorizont
+    - id: p4b
+      label: Kein fehlgeschlagener Versuch (T erkennt keine Unmöglichkeit der Vollendung)
+      weight: 1.0
+      required: false
+      keywords:
+      - nicht fehlgeschlagen
+      - Fehlschlag
+      - fehlgeschlagener Versuch
+      - Unmöglichkeit der Vollendung
+      - Versuch ist nicht fehlgeschlagen
+      card_slugs:
+      - sr-ruecktritt-fehlschlag
     - id: p5
       label: Erkannt, dass beim beendeten Versuch aktives Verhindern erforderlich
         ist und bloßes Untätigbleiben nicht genügt
@@ -245,8 +294,12 @@ faelle:
       required: true
       keywords:
       - aktives Verhindern
-      - Untätigbleiben
-      - genügt nicht
+      - aktiv verhindern
+      - Rettungsmaßnahmen
+      - Untätigbleiben genügt nicht
+      - bloßes Nichtstun genügt nicht
+      - aktives Verhindern der Vollendung
+      - Bloßes Untätigbleiben
       card_slugs:
       - sr-ruecktritt-ruecktrittshorizont
       - sr-ruecktritt-begriff
@@ -257,4 +310,6 @@ faelle:
       required: false
       keywords:
       - kein wirksamer Rücktritt
-      - strafbar
+      - Rücktritt scheitert
+      - nicht wirksam zurückgetreten
+      - versuchten Totschlags strafbar

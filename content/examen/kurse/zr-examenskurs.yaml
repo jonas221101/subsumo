@@ -4,15 +4,18 @@ kurs:
   area: zivilrecht
   semester_default: 7
   examenskurs: true
-  stand: 2026-09
+  stand: 2026-10
   quellen:
-  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Gesamtwiederholung des zivilrechtlichen Pflichtstoffs auf Examensniveau - in der Reihenfolge,
-    in der die Anspruchspruefung sie braucht.
+  beschreibung: 'Wiederholung des zivilrechtlichen Pflichtstoffs auf Examensniveau: BGB AT, allgemeines Schuldrecht,
+    vertragliche und gesetzliche Schuldverhältnisse, Sachenrecht (Mobiliar und Immobiliar) sowie die Nebengebiete
+    in Grundzügen (Handels-, Gesellschafts-, Erb-, Familien-, Arbeitsrecht, ZPO).'
   lernziele:
-  - Alle zivilrechtlichen Anspruchsgrundlagen des Pflichtstoffs sicher benennen und aufbauen
-  - Fuenfstuendige Examensklausuren mit mehreren Anspruchsverhaeltnissen strukturieren
+  - Fünfstündige Examensklausuren mit mehreren Anspruchsverhältnissen strukturieren
+  - Anspruchsgrundlagen aus Vertrag, Delikt, Bereicherung und Sachenrecht in der richtigen Reihenfolge prüfen
+  - Mehrpersonenverhältnisse (Drittwirkung, Abtretung, Gesamtschuld, Bereicherung) sicher lösen
+  - Nebengebiete (HGB, Gesellschafts-, Erb-, Familien-, Arbeitsrecht, ZPO) in Grundzügen in Klausuren einbetten
   klausurformat:
     typ: Examensklausur
     minuten: 300
@@ -39,9 +42,52 @@ kurs:
   - zr-sr-eigentumserwerb-929
   - zr-sr-gutglaeubiger-erwerb-932
   - zr-sr-sicherungsuebereignung
+  - zr-abtretung-398
+  - zr-schadensrecht-249-254
+  - zr-goa-677-ff
+  - zr-bereicherungsrecht-nichtleistungskondiktion
+  - zr-deliktsrecht-831-833
+  - zr-sr-ebv-987-ff
+  - zr-sr-beseitigung-unterlassung-1004
+  - zr-at-willenserklaerung-willensmaengel
+  - zr-at-vertragsschluss
+  - zr-at-form
+  - zr-at-nichtigkeit-134-138
+  - zr-at-arglist-drohung-123
+  - zr-at-bedingung-befristung
+  - zr-at-fristen-einwilligung-genehmigung
+  - zr-sat-vertretenmuessen-278
+  - zr-sat-glaeubigerverzug
+  - zr-sat-erloeschen
+  - zr-sat-gesamtschuld-regress
+  - zr-sat-vertrag-dritte
+  - zr-sat-schulduebernahme-beitritt
+  - zr-sat-stoerung-geschaeftsgrundlage-313
+  - zr-sat-verbraucherwiderruf
+  - zr-bt-verbrauchsgueterkauf
+  - zr-bt-kaufrecht-rechtsmangel-eigentumsvorbehalt
+  - zr-bt-digitale-produkte
+  - zr-bt-werkvertrag
+  - zr-bt-mietrecht
+  - zr-bt-buergschaft
+  - zr-bt-darlehen
+  - zr-bt-schenkung
+  - zr-bt-auftrag-dienstvertrag
+  - zr-bereicherung-mehrpersonen
+  - zr-delikt-823-vertiefung
+  - zr-delikt-gefaehrdungshaftung
+  - zr-sr-besitz
+  - zr-sr-gesetzlicher-erwerb
+  - zr-sr-eigentumsvorbehalt-anwartschaft
+  - zr-sr-immobiliarsachenrecht
+  - zr-sr-grundpfandrechte-pfandrecht
+  - zr-handelsrecht
+  - zr-gesellschaftsrecht
+  - zr-erbrecht-grundzuege
+  - zr-familienrecht-grundzuege
+  - zr-arbeitsrecht-grundzuege
+  - zr-zpo-erkenntnisverfahren
+  - zr-zpo-zwangsvollstreckung
   landesrecht_kategorien: []
   fehlende_themen:
-  - Handels- und Gesellschaftsrecht (P3)
-  - Arbeitsrecht (P3)
-  - Familien- und Erbrecht Grundzuege (P3)
-  - ZPO-Grundzuege (P3)
+  - Insolvenzrecht, Reisevertragsrecht und Vertiefungen der Nebengebiete (P3)

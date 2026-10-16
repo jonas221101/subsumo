@@ -1,0 +1,287 @@
+topic:
+  slug: st-bauordnungsrecht
+  area: oeffentliches-recht
+  title: "Bauordnungsrecht Sachsen-Anhalt"
+  parent: oeffentliches-recht
+  bundesland: ST
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: st-bau-verfahren
+  type: definition
+  front: >-
+      Welche Genehmigungsverfahren kennt die BauO LSA, und wie verhält sich das Bauordnungsrecht zum
+      Bauplanungsrecht?
+  back: >-
+      Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedarf nach der Bauordnung des Landes Sachsen-Anhalt (BauO LSA) grundsätzlich der Baugenehmigung (§ 58 Abs. 1 BauO LSA). Ausnahmen: verfahrensfreie Vorhaben (Katalog in § 60 BauO LSA), die Genehmigungsfreistellung nach § 61 BauO LSA (u. a. Wohngebäude der Gebäudeklassen 1 bis 3 im Geltungsbereich eines Bebauungsplans nach § 30 Abs. 1 bzw. §§ 12, 30 Abs. 2 BauGB, gesicherte Erschließung; Unterlagen sind einzureichen, nach einem Monat darf begonnen werden, die Gemeinde kann innerhalb dieser Frist erklären, dass das vereinfachte Genehmigungsverfahren durchgeführt werden soll), das vereinfachte Baugenehmigungsverfahren für Wohngebäude der Gebäudeklassen 1 bis 3, sonstige Gebäude der Gebäudeklassen 1 und 2 und weitere kleinere Anlagen mit eingeschränktem Prüfumfang (§ 62) sowie das reguläre Verfahren mit vollem bauordnungsrechtlichem Prüfumfang für die übrigen genehmigungsbedürftigen Anlagen, insbesondere Sonderbauten (§ 63). Verfahrensfreiheit bedeutet nicht materielle Freiheit: Die materiellen Anforderungen des öffentlichen Rechts sind einzuhalten, die bauaufsichtlichen Eingriffsbefugnisse bleiben unberührt (§ 58 Abs. 2 BauO LSA). Das Bauplanungsrecht (§§ 29 ff. BauGB) regelt als
+      Bundesrecht die bodenrechtliche Zulässigkeit, das Bauordnungsrecht als Landesrecht
+      Gefahrenabwehr, Gestaltung und Verfahren.
+  norms:
+  - >-
+      §§ 58-63 BauO LSA
+  - "§ 29 BauGB"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: st-bau-anspruch
+  type: norm
+  front: >-
+      Hat der Bauherr einen Anspruch auf die Baugenehmigung, und wie wird er durchgesetzt?
+  back: >-
+      Die Baugenehmigung ist eine gebundene Entscheidung: Sie ist zu erteilen, wenn dem Bauvorhaben keine öffentlich-rechtlichen Vorschriften entgegenstehen, die im bauaufsichtlichen Genehmigungsverfahren zu prüfen sind (§ 71 Abs. 1 S. 1 BauO LSA; Art. 14 Abs. 1 GG schützt die in der Eigentumsgarantie liegende Baufreiheit im Rahmen der
+      Gesetze). Der Prüfumfang hängt vom Verfahren ab; im vereinfachten Verfahren prüft die Bauaufsichtsbehörde die bauplanungsrechtliche Zulässigkeit (§§ 29 bis 38 BauGB), beantragte Abweichungen, die Vorschriften über die Bebauung der Grundstücke (§ 4), die Abstandsflächen (§ 6) und gemeinsame Bauteile (§ 12 Abs. 2) sowie ersetzte Entscheidungen nach anderem öffentlichem Recht (§ 62 Abs. 1 BauO LSA). Das Bauplanungsrecht folgt aus §§ 30, 34, 35 BauGB je nach Gebietslage
+      (beplanter Bereich, Innenbereich, Außenbereich); wo die Gemeinde nicht selbst
+      Genehmigungsbehörde ist, ist ihr Einvernehmen nach § 36 BauGB erforderlich. Die Genehmigung ergeht unbeschadet der Rechte Dritter (§ 71 Abs. 4 BauO LSA). Rechtsschutz: Verpflichtungsklage nach § 42 Abs. 1
+      Var. 2 VwGO, nach erfolglosem Antrag bzw. nach Versagung; mit dem Vorbescheid (§ 74 BauO LSA) lassen sich einzelne Fragen vorab klären.
+  norms:
+  - "Art. 14 Abs. 1 GG"
+  - "§ 36 BauGB"
+  - "§ 42 Abs. 1 VwGO"
+  - >-
+      §§ 71, 74 BauO LSA
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: st-bau-abstandsflaechen
+  type: norm
+  front: "Was regeln die Abstandsflächen, und sind sie nachbarschützend?"
+  back: >-
+      Vor den Außenwänden oberirdischer Gebäude sind Flächen von Gebäuden und baulichen Anlagen
+      freizuhalten (Abstandsflächen). Ihre Tiefe bemisst sich nach der Wandhöhe H (§ 6 Abs. 4 BauO LSA) und beträgt 0,4 H, mindestens 3 m (§ 6 Abs. 5 S. 1 BauO LSA); in Gewerbe- und Industriegebieten genügt 0,2 H, mindestens 3 m, vor Außenwänden von Wohngebäuden der Gebäudeklassen 1 und 2 mit nicht mehr als drei oberirdischen Geschossen genügen 3 m. Die Abstandsflächen müssen grundsätzlich auf dem Baugrundstück selbst liegen (bis zur Mitte öffentlicher Verkehrs-, Grün- und Wasserflächen oder bei öffentlich-rechtlicher Sicherung auf Nachbargrundstücken) und dürfen sich nicht überdecken (§ 6 Abs. 2, 3 BauO LSA; Ausnahmen in Abs. 3).
+      Zwecke sind ausreichende Belichtung, Belüftung, Brandschutz und Wahrung des Wohnfriedens. Das
+      Abstandsflächenrecht ist nachbarschützend, soweit seine Zwecke dem Nachbarn dienen; der Nachbar
+      kann seine Verletzung daher rügen. An der Grenze braucht keine Abstandsfläche eingehalten zu werden, wenn nach planungsrechtlichen Vorschriften an die Grenze gebaut werden muss oder darf (§ 6 Abs. 1 S. 4 BauO LSA; geschlossene Bauweise, § 22 BauNVO). Abweichungen sind
+      möglich, wenn der Schutzzweck gewahrt bleibt und nachbarliche Interessen angemessen
+      berücksichtigt werden.
+  norms:
+  - "§ 6 BauO LSA"
+  - "§ 22 BauNVO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: st-bau-nachbarschutz
+  type: streitstand
+  front: >-
+      Unter welchen Voraussetzungen kann ein Nachbar eine Baugenehmigung erfolgreich angreifen, und
+      welche Rolle spielt § 212a BauGB?
+  back: >-
+      Die Drittanfechtung hat nur Erfolg, wenn die Genehmigung rechtswidrig ist und gerade gegen eine
+      nachbarschützende Norm verstößt (Schutznormtheorie, § 113 Abs. 1 S. 1 VwGO). Nachbarschützend
+      sind insbesondere das Abstandsflächenrecht, die Festsetzungen zur Art der baulichen Nutzung
+      (Gebietserhaltungsanspruch) und das Gebot der Rücksichtnahme, das über § 15 Abs. 1 S. 2 BauNVO,
+      § 34 Abs. 1 BauGB (Einfügen) oder § 35 Abs. 3 BauGB wirkt. Widerspruch und Anfechtungsklage des
+      Nachbarn haben nach § 212a Abs. 1 BauGB keine aufschiebende Wirkung; der Bauherr darf auf
+      Grundlage der Genehmigung bauen. Vorläufiger Rechtsschutz: Antrag auf Anordnung der
+      aufschiebenden Wirkung nach § 80a Abs. 3 i. V. m. § 80 Abs. 5 VwGO. Streitig ist, ob schon die
+      formelle Rechtswidrigkeit wegen unterbliebener Nachbarbeteiligung allein zum Erfolg führt; nach
+      h. M. kommt es auf eine materielle Verletzung subjektiv-öffentlicher Nachbarrechte an.
+  norms:
+  - "§ 212a Abs. 1 BauGB"
+  - "§ 80a Abs. 3 VwGO"
+  - "§ 80 Abs. 5 VwGO"
+  - "§ 15 Abs. 1 S. 2 BauNVO"
+  - "§ 113 Abs. 1 S. 1 VwGO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: st-bau-eingriff
+  type: definition
+  front: >-
+      Welche bauaufsichtlichen Eingriffsmaßnahmen gibt es, und wann dürfen sie ergehen?
+  back: >-
+      Die Bauaufsichtsbehörde überwacht die Einhaltung des öffentlichen Baurechts und wacht über die Einhaltung der öffentlich-rechtlichen Vorschriften und kann die erforderlichen Maßnahmen treffen (§ 57 Abs. 2 BauO LSA). Baueinstellung (§ 78 BauO LSA): Stilllegung einer Baustelle, die rechtswidrig begonnen wurde; sie setzt formelle Illegalität (fehlende Genehmigung) oder sonstigen Verstoß voraus und
+      dient der Sicherung. Nutzungsuntersagung (§ 79 S. 2 BauO LSA): Verbot einer rechtswidrigen Nutzung, regelmäßig bei
+      formeller Illegalität, wenn die Nutzung nicht ohne Weiteres genehmigungsfähig ist.
+      Beseitigungsanordnung (§ 79 S. 1 BauO LSA, nur wenn nicht auf andere Weise rechtmäßige Zustände hergestellt werden können): die schärfste Maßnahme; sie setzt grundsätzlich formelle und materielle
+      Illegalität voraus, weil eine Beseitigung bei materiell legalem Vorhaben unverhältnismäßig wäre.
+      Alle Maßnahmen stehen im Ermessen der Behörde und müssen verhältnismäßig sein; Adressaten sind
+      Bauherr, Eigentümer oder Nutzer. Ein Anspruch des Nachbarn auf Einschreiten besteht nur
+      ausnahmsweise bei Verletzung nachbarschützender Vorschriften und Ermessensreduktion auf Null.
+  norms:
+  - >-
+      §§ 57, 78, 79 BauO LSA
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: st-bau-abweichung
+  type: definition
+  front: >-
+      Wie unterscheiden sich Abweichung (Bauordnungsrecht) und Ausnahme bzw. Befreiung
+      (Bauplanungsrecht)?
+  back: >-
+      Im Bauordnungsrecht soll die Bauaufsichtsbehörde Abweichungen von Anforderungen der BauO LSA zulassen (§ 66 Abs. 1 BauO LSA), wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der
+      öffentlich-rechtlich geschützten nachbarlichen Belange mit den öffentlichen Belangen vereinbar
+      sind; die Abweichung ist gesondert schriftlich zu beantragen und zu begründen (§ 66 Abs. 2 BauO LSA); die Nachbarn sollen vor Abweichungen und Befreiungen benachrichtigt werden (§ 69 Abs. 1). Im Bauplanungsrecht lässt § 31
+      Abs. 1 BauGB Ausnahmen zu, soweit der Bebauungsplan sie vorsieht. Nach § 31 Abs. 2 BauGB ist
+      eine Befreiung von Festsetzungen möglich, wenn die Grundzüge der Planung nicht berührt werden
+      und einer der Befreiungsgründe (Allgemeinwohl, städtebauliche Vertretbarkeit, offenbar nicht
+      beabsichtigte Härte) vorliegt; die Abweichung muss zudem mit den öffentlichen Belangen vereinbar
+      sein und nachbarliche Interessen würdigen. Wird von nachbarschützenden Festsetzungen befreit,
+      hat der Nachbar einen Anspruch auf Würdigung seiner Belange.
+  norms:
+  - "§ 31 Abs. 1 BauGB"
+  - "§ 31 Abs. 2 BauGB"
+  - "§ 66 BauO LSA"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: st-bau-bestandsschutz
+  type: definition
+  front: "Was schützt der Bestandsschutz, und wo liegen seine Grenzen?"
+  back: >-
+      Passiver Bestandsschutz folgt aus Art. 14 Abs. 1 GG: Eine bauliche Anlage, die zu irgendeinem
+      Zeitpunkt rechtmäßig genehmigt oder materiell legal errichtet wurde, darf in ihrem genehmigten
+      Bestand und ihrer Nutzung erhalten bleiben, auch wenn sich später die Rechtslage geändert hat;
+      bauaufsichtliche Eingriffe wie Beseitigungsanordnung oder Nutzungsuntersagung scheiden aus,
+      solange die Voraussetzungen fortbestehen. Der Schutz erlischt, wenn die Anlage zerstört, ihre
+      Substanz in wesentlichem Umfang erneuert oder die Nutzung aufgegeben wird; die Identität der
+      Anlage muss gewahrt sein. Einen aktiven Bestandsschutz, also einen unmittelbar aus Art. 14 GG
+      abgeleiteten Anspruch auf Erweiterung oder Änderung, erkennt das Bundesverwaltungsgericht nicht
+      mehr an. Bei Anforderungen, die wegen der Sicherheit oder Gesundheit erforderlich sind, kann die Anpassung bestehender Anlagen verlangt werden (§ 86 Abs. 1 BauO LSA).
+  norms:
+  - "Art. 14 Abs. 1 GG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: st-schema-bau-beseitigungsanordnung
+  title: "Beseitigungsanordnung der Bauaufsichtsbehörde (BauO LSA)"
+  norms:
+  - >-
+      §§ 57, 78, 79 BauO LSA
+  - "§ 35 BauGB"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  steps:
+  - label: "I. Ermächtigungsgrundlage in der BauO LSA"
+  - label: "II. Formelle Rechtmäßigkeit"
+    hinweis: "Zuständigkeit der Bauaufsichtsbehörde, Anhörung, Form."
+  - label: "III. Materielle Rechtmäßigkeit"
+    children:
+    - label: >-
+        1. Formelle Illegalität: genehmigungsbedürftige Anlage ohne Genehmigung
+    - label: "2. Materielle Illegalität"
+      hinweis: "Beseitigung nur, wenn Vorhaben auch nicht genehmigungsfähig ist."
+      children:
+      - label: >-
+          a) Bauplanungsrecht: Lage im Außenbereich, § 35 BauGB
+      - label: "b) Bauordnungsrecht"
+    - label: "3. Kein Bestandsschutz, keine Duldung"
+    - label: "4. Adressat"
+    - label: >-
+        5. Ermessen und Verhältnismäßigkeit: kein milderes Mittel
+faelle:
+- slug: st-fall-bau-beseitigung-ferienhaus
+  title: "Das Blockhaus im Außenbereich"
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "§ 35 BauGB"
+  facts: >-
+      A errichtet im Außenbereich einer Gemeinde in Sachsen-Anhalt ohne Baugenehmigung ein 60
+      Quadratmeter großes Blockhaus mit Wohnraum, Küche und Terrasse, das er als Ferienhaus nutzen
+      will. Das Grundstück liegt in einer Wiese ohne Bebauungsplan, in unmittelbarer Nähe eines
+      Landschaftsschutzgebiets. A betreibt weder Land- noch Forstwirtschaft. Die Bauaufsichtsbehörde
+      ordnet nach Anhörung die Beseitigung des Blockhauses an. A meint, ein kleines Haus schade
+      niemandem; die Behörde solle die Nutzung als Ferienhaus lieber dulden. Ein Bauantrag liegt nicht
+      vor.
+  question: "Ist die Beseitigungsanordnung rechtmäßig?"
+  steps:
+  - prompt: >-
+        Welche Ermächtigungsgrundlage kommt in Betracht, und welche Voraussetzungen stellt die
+        Beseitigungsanordnung?
+    erwartung: >-
+        Die BauO LSA ermächtigt die Bauaufsichtsbehörde zur Beseitigung rechtswidrig errichteter
+        Anlagen. Als schärfste Maßnahme setzt sie grundsätzlich formelle und materielle Illegalität
+        voraus.
+  - prompt: "Liegt formelle Illegalität vor?"
+    erwartung: >-
+        Ja. Das Blockhaus mit Wohnraum ist eine genehmigungsbedürftige bauliche Anlage; eine
+        Baugenehmigung liegt nicht vor.
+  - prompt: "Liegt materielle Illegalität vor?"
+    erwartung: >-
+        Ja. Planungsrechtlich ist das Vorhaben im Außenbereich nach § 35 BauGB zu beurteilen. Als
+        Ferienhaus ist es kein privilegiertes Vorhaben (§ 35 Abs. 1 BauGB); als sonstiges Vorhaben nach
+        § 35 Abs. 2 BauGB beeinträchtigt es öffentliche Belange (§ 35 Abs. 3 BauGB), etwa durch die
+        Gefahr der Entstehung einer Splittersiedlung und die Beeinträchtigung der Landschaft. Es ist
+        nicht genehmigungsfähig.
+  - prompt: "Ist die Beseitigung ermessensfehlerfrei und verhältnismäßig?"
+    erwartung: >-
+        Ja. Die Anordnung ist ermessensfehlerfrei und verhältnismäßig: Eine dauerhafte Duldung würde den rechtswidrigen Zustand verfestigen und die Gleichbehandlung mit rechtstreuen Bauherren verletzen. Auf Bestandsschutz kann sich A nicht berufen, da das Haus nie legal war. Die Beseitigungsanordnung ist rechtmäßig.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+          Formelle Illegalität: genehmigungsbedürftiges Bauwerk ohne Baugenehmigung
+      weight: 1.5
+      required: false
+      keywords:
+      - "formelle Illegalität"
+      - "ohne Baugenehmigung"
+      - "genehmigungsbedürftig"
+      - "formell rechtswidrig"
+      card_slugs:
+      - "st-bau-verfahren"
+      - "st-bau-eingriff"
+    - id: p2
+      label: >-
+          Außenbereich: kein privilegiertes Vorhaben; Beeinträchtigung öffentlicher Belange nach § 35 Abs.
+          2, 3 BauGB
+      weight: 3.0
+      required: true
+      norms:
+      - "§ 35 Abs. 1 BauGB"
+      - "§ 35 Abs. 2 BauGB"
+      - "§ 35 Abs. 3 BauGB"
+      keywords:
+      - "§ 35 Abs. 2 BauGB"
+      - "§ 35 Abs. 3 BauGB"
+      - "nicht privilegiert"
+      - "Splittersiedlung"
+      - "Außenbereich"
+      - "öffentliche Belange"
+      card_slugs:
+      - "st-bau-anspruch"
+    - id: p3
+      label: "Beseitigung setzt formelle und materielle Illegalität voraus"
+      weight: 2.5
+      required: true
+      keywords:
+      - "materielle Illegalität"
+      - "formelle und materielle Illegalität"
+      - "nicht genehmigungsfähig"
+      - "Beseitigungsanordnung"
+      card_slugs:
+      - "st-bau-eingriff"
+    - id: p4
+      label: >-
+          Ermessen und Verhältnismäßigkeit; kein Bestandsschutz und keine Duldung
+      weight: 1.5
+      required: false
+      keywords:
+      - "Verhältnismäßigkeit"
+      - "Ermessen"
+      - "ermessensfehlerfrei"
+      - "verhältnismäßig"
+      - "Gleichbehandlung"
+      - "Bestandsschutz"
+      - "Duldung"
+      - "milderes Mittel"
+      card_slugs:
+      - "st-bau-eingriff"
+      - "st-bau-bestandsschutz"
+    normzitate_geprueft: false

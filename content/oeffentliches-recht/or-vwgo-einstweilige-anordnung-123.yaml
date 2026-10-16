@@ -1,0 +1,358 @@
+topic:
+  slug: or-vwgo-einstweilige-anordnung-123
+  area: oeffentliches-recht
+  title: Einstweilige Anordnung, § 123 VwGO
+  parent: oeffentliches-recht
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-vwgo-ea-statthaftigkeit-abs5
+  type: norm
+  front: Wann ist der Antrag nach § 123 VwGO statthaft, und wie grenzt § 123 Abs. 5 VwGO ihn
+    von §§ 80, 80a VwGO ab?
+  back: >-
+    § 123 Abs. 1 VwGO gewährt einstweiligen Rechtsschutz außerhalb der Fälle der §§ 80, 80a
+    VwGO (§ 123 Abs. 5 VwGO). Der Antrag ist subsidiär: Statthaft ist er, wenn in der Hauptsache
+    nicht die Anfechtungsklage gegen einen belastenden Verwaltungsakt, sondern eine andere
+    Klageart einschlägig wäre, also Verpflichtungsklage, allgemeine Leistungsklage (auch Unterlassungsklage)
+    oder Feststellungsklage. Praktisch geht es um die vorläufige Erteilung einer Begünstigung,
+    um die Sicherung eines Anspruchs und um Abwehr oder Unterlassung von Realakten. Maßgeblich
+    ist, welche Klageart in der Hauptsache zu wählen wäre; die Abgrenzung entscheidet sich
+    also an der statthaften Klageart. § 123 VwGO ist nicht anwendbar, wenn der Verwaltungsakt mit der Anfechtungsklage angegriffen werden kann; dort greift § 80 bzw. § 80a VwGO.
+  norms:
+  - § 123 Abs. 1 VwGO
+  - § 123 Abs. 5 VwGO
+  - § 80 Abs. 5 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vwgo-ea-sicherungs-regelungsanordnung
+  type: definition
+  front: Unterscheide Sicherungsanordnung (§ 123 Abs. 1 S. 1 VwGO) und Regelungsanordnung
+    (§ 123 Abs. 1 S. 2 VwGO).
+  back: >-
+    Die Sicherungsanordnung nach § 123 Abs. 1 S. 1 VwGO dient dem Erhalt des status quo: Sie
+    ist statthaft, wenn die Gefahr besteht, dass durch eine Veränderung des bestehenden Zustands
+    die Verwirklichung eines Rechts des Antragstellers vereitelt oder wesentlich erschwert
+    werden könnte. Typisch ist die Untersagung vollendeter Tatsachen, etwa der Besetzung einer
+    Beförderungsstelle. Die Regelungsanordnung nach § 123 Abs. 1 S. 2 VwGO dient der Regelung
+    eines vorläufigen Zustands in Bezug auf ein streitiges Rechtsverhältnis, wenn dies zur
+    Abwendung wesentlicher Nachteile, zur Verhinderung drohender Gewalt oder aus anderen Gründen
+    nötig erscheint; sie gestaltet die Rechtslage vorläufig neu, etwa durch vorläufige Zulassung
+    zu einer Einrichtung oder vorläufige Zahlung. Die Abgrenzung hat praktische Bedeutung
+    vor allem für die Strenge der Anforderungen an Vorwegnahme der Hauptsache. Die Voraussetzungen
+    im Übrigen sind im Wesentlichen gleich.
+  norms:
+  - § 123 Abs. 1 S. 1 VwGO
+  - § 123 Abs. 1 S. 2 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vwgo-ea-zulaessigkeit-zustaendigkeit
+  type: norm
+  front: Welche weiteren Zulässigkeitsanforderungen gelten für den Antrag nach § 123 VwGO?
+  back: >-
+    Der Antrag kann bereits vor Klageerhebung gestellt werden (§ 123 Abs. 1 S. 1 VwGO). Zuständig
+    ist das Gericht der Hauptsache (§ 123 Abs. 2 S. 1 VwGO), in der Regel das Verwaltungsgericht;
+    ist die Hauptsache anhängig, das mit ihr befasste Gericht. Der Antragsteller muss in entsprechender
+    Anwendung des § 42 Abs. 2 VwGO antragsbefugt sein, d. h. einen Anordnungsanspruch zumindest
+    möglicherweise haben. Antragsgegner ist entsprechend § 78 VwGO der Rechtsträger der Behörde.
+    Notwendig ist ferner ein Rechtsschutzbedürfnis; es fehlt, wenn der Antragsteller sich
+    zunächst erfolglos an die Behörde wenden könnte, ohne dass Eile geboten wäre. Entschieden
+    wird durch Beschluss (§ 123 Abs. 4 VwGO), gegen den die Beschwerde nach § 146 VwGO statthaft
+    ist. Nach § 123 Abs. 3 VwGO gelten bestimmte Vorschriften der ZPO über Arrest und einstweilige
+    Verfügung entsprechend, u. a. die Glaubhaftmachung und die Schadensersatzpflicht nach
+    § 945 ZPO.
+  norms:
+  - § 123 Abs. 2 VwGO
+  - § 123 Abs. 3 VwGO
+  - § 123 Abs. 4 VwGO
+  - § 42 Abs. 2 VwGO analog
+  - § 78 VwGO analog
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  - ZPO, amtliche Fassung
+  stand: 2026-10
+- slug: or-vwgo-ea-anordnungsanspruch
+  type: definition
+  front: Was ist der Anordnungsanspruch, und wie wird er geprüft?
+  back: >-
+    Der Anordnungsanspruch ist der materielle Anspruch, den der Antragsteller im Hauptsacheverfahren
+    geltend machen würde, z. B. ein Anspruch auf Erteilung einer Erlaubnis, Zulassung, Leistung
+    oder Unterlassung. Das Gericht prüft ihn nicht mit vollem Beweis, sondern aufgrund summarischer
+    Prüfung der Erfolgsaussichten in der Hauptsache; der Antragsteller muss den Anspruch gemäß
+    § 123 Abs. 3 VwGO i. V. m. § 920 Abs. 2, § 294 ZPO glaubhaft machen, ausreichend ist eine
+    überwiegende Wahrscheinlichkeit. Die Prüfung entspricht gedanklich der Begründetheit der
+    Verpflichtungs-, Leistungs- oder Feststellungsklage. Besteht ein Ermessensspielraum, kann
+    nur ein Anspruch auf fehlerfreie Entscheidung (§ 114 VwGO) bestehen; eine Verpflichtung
+    zum Erlass kommt dann nur bei Ermessensreduzierung auf Null in Betracht. Bei offenen Erfolgsaussichten
+    erfolgt eine Folgenabwägung.
+  norms:
+  - § 123 Abs. 3 VwGO
+  - § 920 Abs. 2 ZPO
+  - § 294 ZPO
+  - § 114 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  - ZPO, amtliche Fassung
+  stand: 2026-10
+- slug: or-vwgo-ea-anordnungsgrund
+  type: definition
+  front: Was ist der Anordnungsgrund?
+  back: >-
+    Der Anordnungsgrund ist die Eilbedürftigkeit der vorläufigen Regelung. Er liegt vor, wenn
+    dem Antragsteller bei Verweisung auf das Hauptsacheverfahren unzumutbare, nicht oder kaum
+    wiedergutzumachende Nachteile drohen, die über die allgemeinen Nachteile eines länger
+    dauernden Verfahrens hinausgehen. Bei der Sicherungsanordnung wird er an der Gefahr der
+    Rechtsvereitelung, bei der Regelungsanordnung an der Notwendigkeit der Abwendung wesentlicher
+    Nachteile (§ 123 Abs. 1 S. 2 VwGO) festgemacht. Auch der Anordnungsgrund ist glaubhaft
+    zu machen (§ 123 Abs. 3 VwGO i. V. m. § 920 Abs. 2 ZPO). Er fehlt, wenn der Antragsteller
+    selbst lange untätig geblieben ist und die Dringlichkeit dadurch selbst herbeigeführt
+    hat, oder wenn ein Hauptsacheverfahren rechtzeitig zum Ziel führt. Er bleibt auch bei
+    offensichtlich rechtswidrigem Behördenhandeln selbständig zu prüfen.
+  norms:
+  - § 123 Abs. 1 S. 2 VwGO
+  - § 123 Abs. 3 VwGO
+  - § 920 Abs. 2 ZPO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  - ZPO, amtliche Fassung
+  stand: 2026-10
+- slug: or-vwgo-ea-vorwegnahme-hauptsache
+  type: definition
+  front: Darf der Antrag nach § 123 VwGO die Hauptsache vorwegnehmen?
+  back: >-
+    Grundsätzlich soll die einstweilige Anordnung nur vorläufig regeln und die Entscheidung
+    in der Hauptsache nicht vorwegnehmen; dies folgt aus dem vorläufigen Charakter des Eilverfahrens.
+    Eine Vorwegnahme der Hauptsache ist aber im Hinblick auf Art. 19 Abs. 4 GG ausnahmsweise
+    zulässig, wenn der Antragsteller andernfalls schwere und unzumutbare, anders nicht abwendbare
+    Nachteile erleiden würde und mit hoher Wahrscheinlichkeit ein Obsiegen in der Hauptsache
+    zu erwarten ist (hoher Grad der Erfolgswahrscheinlichkeit). Die Anforderungen sind also
+    verschärft: an den Anordnungsanspruch (überwiegende bis hohe Wahrscheinlichkeit) und an
+    den Anordnungsgrund (unzumutbare Nachteile). Beispiele sind die vorläufige Zulassung zum
+    Studium oder die vorläufige Zahlung existenzsichernder Leistungen. Die Rechtsprechung
+    betont, dass die Rechtsschutzgarantie die Gerichte verpflichtet, einen sonst eintretenden
+    irreparablen Rechtsverlust zu verhindern.
+  norms:
+  - § 123 Abs. 1 VwGO
+  - Art. 19 Abs. 4 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vwgo-ea-abgrenzung-80-abs5
+  type: streitstand
+  front: Welcher vorläufige Rechtsbehelf ist bei Nebenbestimmungen, Drittbegünstigung und
+    Realakten einschlägig?
+  back: >-
+    Entscheidend ist die Klageart in der Hauptsache. Wendet sich der Antragsteller gegen einen
+    belastenden Verwaltungsakt, für den die Anfechtungsklage statthaft ist (auch bei Drittanfechtung
+    begünstigender Verwaltungsakte, § 80a VwGO), gilt § 80 Abs. 5 VwGO, nicht § 123 VwGO (§
+    123 Abs. 5 VwGO). Begehrt er eine Begünstigung, ist § 123 VwGO einschlägig. Bei Nebenbestimmungen
+    wird vertreten: Ist in der Hauptsache die isolierte Anfechtungsklage gegen die Nebenbestimmung
+    statthaft (h. M. bei Auflagen), ist § 80 Abs. 5 VwGO statthaft, soweit die aufschiebende
+    Wirkung entfällt; wird dagegen eine Verpflichtungsklage auf Erteilung eines Verwaltungsakts
+    ohne die Nebenbestimmung erhoben (bei untrennbarer Bindung, modifizierender Auflage),
+    gilt § 123 VwGO. Bei Realakten ohne Verwaltungsakt-Charakter, etwa Warnungen, ist der
+    Rechtsschutz stets § 123 VwGO. Die Zuordnung folgt der Hauptsacheklage; Streit besteht
+    um deren Bestimmung.
+  norms:
+  - § 123 Abs. 5 VwGO
+  - § 80 Abs. 5 VwGO
+  - § 80a VwGO
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vwgo-ea-pruefungsmassstab-folgenabwaegung
+  type: definition
+  front: Welchen Prüfungsmaßstab legt das Gericht im Verfahren nach § 123 VwGO an, wenn die
+    Erfolgsaussichten offen sind?
+  back: >-
+    Das Gericht entscheidet im Eilverfahren aufgrund einer summarischen Prüfung der Sach-
+    und Rechtslage; eine abschließende Klärung schwieriger Rechtsfragen bleibt dem Hauptsacheverfahren
+    vorbehalten, es sei denn, die Sache ist nur im Eilverfahren effektiv entscheidbar. Sind
+    die Erfolgsaussichten offen, trifft es eine Folgenabwägung: Es wägt die Nachteile, die
+    dem Antragsteller bei Ablehnung der Anordnung und späterem Erfolg in der Hauptsache entstünden,
+    gegen die Nachteile, die bei Erlass der Anordnung und späterem Misserfolg dem Antragsgegner
+    oder Dritten entstünden. Maßstab sind insbesondere die Grundrechtsrelevanz und die Irreversibilität
+    der Folgen. Der Maßstab folgt aus Art. 19 Abs. 4 GG, der eine möglichst weitgehende Aufklärung
+    bei gravierenden und irreparablen Eingriffen verlangt. Bei offensichtlicher Aussichtslosigkeit
+    ist der Antrag abzulehnen.
+  norms:
+  - § 123 Abs. 1 VwGO
+  - Art. 19 Abs. 4 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-vwgo-ea-ernennung-konkurrentenstreit
+  type: definition
+  front: Wie wird im beamtenrechtlichen Konkurrentenstreit vorläufiger Rechtsschutz nach §
+    123 VwGO erlangt?
+  back: >-
+    Der unterlegene Bewerber um ein Beförderungsamt kann den Bewerbungsverfahrensanspruch
+    aus Art. 33 Abs. 2 GG durch Sicherungsanordnung nach § 123 Abs. 1 S. 1 VwGO sichern, indem
+    dem Dienstherrn vorläufig untersagt wird, die Stelle mit dem Mitbewerber zu besetzen.
+    Der Anordnungsanspruch besteht, wenn die Auswahlentscheidung den Bewerbungsverfahrensanspruch
+    verletzt, also nicht am Leistungsgrundsatz (Eignung, Befähigung, fachliche Leistung) ausgerichtet
+    ist, und die Auswahl des Antragstellers zumindest ernsthaft möglich erscheint. Der Anordnungsgrund
+    folgt aus dem Grundsatz der Ämterstabilität: Ist der Mitbewerber ernannt, kann die Ernennung
+    grundsätzlich nicht mehr rückgängig gemacht werden. Der Dienstherr muss dem unterlegenen
+    Bewerber daher die Auswahlentscheidung mitteilen und einen angemessenen Zeitraum bis zur
+    Ernennung abwarten, damit gerichtlicher Rechtsschutz möglich ist (Art. 19 Abs. 4 GG).
+    Für Bundesbeamte folgt der Rechtsweg aus § 126 Abs. 1 BBG.
+  norms:
+  - § 123 Abs. 1 S. 1 VwGO
+  - Art. 33 Abs. 2 GG
+  - Art. 19 Abs. 4 GG
+  - § 126 Abs. 1 BBG
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  - GG, amtliche Fassung
+  stand: 2026-10
+schemata:
+- slug: or-schema-vwgo-ea-123
+  title: Antrag auf einstweilige Anordnung, § 123 VwGO
+  norms:
+  - § 123 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: A. Zulässigkeit
+    children:
+    - label: I. Verwaltungsrechtsweg, § 40 Abs. 1 VwGO
+    - label: 'II. Statthaftigkeit: Hauptsache nicht Anfechtungssache, § 123 Abs. 5 VwGO'
+      hinweis: Vorrang von §§ 80, 80a VwGO; Klageart der Hauptsache entscheidet.
+    - label: III. Antragsbefugnis analog § 42 Abs. 2 VwGO
+    - label: IV. Zuständiges Gericht, § 123 Abs. 2 VwGO
+    - label: V. Antragsgegner (§ 78 VwGO analog) und Rechtsschutzbedürfnis
+  - label: B. Begründetheit
+    children:
+    - label: 'I. Anordnungsanspruch: materieller Anspruch glaubhaft gemacht'
+      hinweis: Summarische Prüfung der Erfolgsaussichten der Hauptsache.
+    - label: 'II. Anordnungsgrund: Eilbedürftigkeit glaubhaft gemacht'
+    - label: 'III. Art der Anordnung: Sicherungs- oder Regelungsanordnung'
+      hinweis: Vorwegnahme der Hauptsache nur bei unzumutbaren Nachteilen und hoher Erfolgswahrscheinlichkeit.
+    - label: IV. Ermessen des Gerichts über Inhalt der Anordnung, § 938 ZPO
+faelle:
+- slug: or-fall-ea-bewerbungsverfahrensanspruch
+  title: Die verhinderte Beförderung
+  difficulty: 3
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  facts: Bundesbeamtin B bewirbt sich um eine ausgeschriebene Beförderungsstelle der Besoldungsgruppe
+    A 13 bei einer Bundesbehörde. Mitbewerber ist C. Nach den aktuellen dienstlichen Beurteilungen
+    ist B in der Gesamtnote um eine volle Notenstufe besser als C. Die Behörde entscheidet
+    sich dennoch für C, weil dieser dienstälter sei, und teilt B mit, die Ernennung des C
+    solle in drei Tagen erfolgen. B hält die Auswahl für rechtswidrig. Sie möchte verhindern,
+    dass die Stelle endgültig besetzt wird, bevor über ihre Rechte entschieden ist. Eine Hauptsacheklage
+    hat sie noch nicht erhoben.
+  question: Welchen Rechtsbehelf soll B wählen, und hat sie Aussicht auf Erfolg?
+  steps:
+  - prompt: Ist der Verwaltungsrechtsweg eröffnet, und welcher Rechtsbehelf ist statthaft?
+    erwartung: Der Verwaltungsrechtsweg folgt aus § 126 Abs. 1 BBG. B begehrt keine Aufhebung
+      eines belastenden Verwaltungsakts, sondern die Sicherung ihrer Rechte; statthaft ist
+      der Antrag nach § 123 Abs. 1 VwGO (Sicherungsanordnung, S. 1), § 123 Abs. 5 VwGO steht
+      nicht entgegen.
+  - prompt: Besteht ein Anordnungsanspruch?
+    erwartung: Ja. B hat einen Bewerbungsverfahrensanspruch aus Art. 33 Abs. 2 GG. Die Auswahl
+      muss sich an Eignung, Befähigung und fachlicher Leistung orientieren; das Dienstalter
+      ist nur Hilfskriterium bei gleichem Leistungsstand. Da B besser beurteilt ist, ist die
+      Auswahl des C fehlerhaft, und B kann bei fehlerfreier Auswahl zum Zuge kommen.
+  - prompt: Besteht ein Anordnungsgrund?
+    erwartung: Ja. Nach der Ernennung des C droht Rechtsvereitelung wegen der Ämterstabilität;
+      die Ernennung steht unmittelbar bevor (drei Tage). Ein Zuwarten auf das Hauptsacheverfahren
+      ist unzumutbar.
+  - prompt: Wird die Hauptsache vorweggenommen, und mit welchem Inhalt ergeht die Anordnung?
+    erwartung: Nein. Die Anordnung untersagt der Behörde vorläufig, die Stelle mit C zu besetzen,
+      bis über die Auswahl neu entschieden oder die Hauptsache abgeschlossen ist; sie verschafft
+      B die Stelle nicht. Es handelt sich um eine reine Sicherungsanordnung; der Antrag hat
+      Erfolg.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Statthaftigkeit des Antrags nach § 123 Abs. 1 VwGO (Sicherungsanordnung) und
+        Abgrenzung zu § 80 Abs. 5 VwGO
+      weight: 2.0
+      required: true
+      norms:
+      - § 123 Abs. 1 S. 1 VwGO
+      - § 123 Abs. 5 VwGO
+      keywords:
+      - § 123 Abs. 1 S. 1 VwGO
+      - einstweilige Anordnung
+      - Sicherungsanordnung
+      - § 123 Abs. 5 VwGO
+      - keine Anfechtungssache
+      card_slugs:
+      - or-vwgo-ea-statthaftigkeit-abs5
+      - or-vwgo-ea-sicherungs-regelungsanordnung
+    - id: p2
+      label: 'Anordnungsanspruch: Bewerbungsverfahrensanspruch aus Art. 33 Abs. 2 GG, Auswahl
+        am Leistungsgrundsatz fehlerhaft'
+      weight: 3.0
+      required: true
+      norms:
+      - Art. 33 Abs. 2 GG
+      keywords:
+      - Bewerbungsverfahrensanspruch
+      - Art. 33 Abs. 2 GG
+      - Leistungsgrundsatz
+      - Bestenauslese
+      - Eignung, Befähigung
+      - Dienstalter nur Hilfskriterium
+      card_slugs:
+      - or-vwgo-ea-anordnungsanspruch
+      - or-vwgo-ea-ernennung-konkurrentenstreit
+    - id: p3
+      label: 'Anordnungsgrund: Ämterstabilität, drohende Ernennung des Mitbewerbers'
+      weight: 2.0
+      required: true
+      keywords:
+      - Ämterstabilität
+      - Anordnungsgrund
+      - Eilbedürftigkeit
+      - Ernennung des Mitbewerbers
+      - Rechtsvereitelung
+      - irreparabel
+      card_slugs:
+      - or-vwgo-ea-anordnungsgrund
+      - or-vwgo-ea-ernennung-konkurrentenstreit
+    - id: p4
+      label: Keine unzulässige Vorwegnahme der Hauptsache; Anordnung nur sichernd
+      weight: 1.5
+      required: false
+      norms:
+      - § 123 Abs. 1 VwGO
+      keywords:
+      - Vorwegnahme der Hauptsache
+      - Sicherungsanordnung
+      - vorläufig untersagt
+      - Stelle freihalten
+      - nicht vorweggenommen
+      card_slugs:
+      - or-vwgo-ea-vorwegnahme-hauptsache
+    - id: p5
+      label: Rechtsweg zu den Verwaltungsgerichten, § 126 Abs. 1 BBG
+      weight: 1.0
+      required: false
+      norms:
+      - § 126 Abs. 1 BBG
+      keywords:
+      - § 126 Abs. 1 BBG
+      - Verwaltungsrechtsweg
+      - Beamtenverhältnis
+      card_slugs:
+      - or-vwgo-ea-ernennung-konkurrentenstreit

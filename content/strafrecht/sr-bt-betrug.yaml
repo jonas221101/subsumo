@@ -9,8 +9,8 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-15'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: sr-betrug-grundtatbestand
   type: definition
@@ -45,11 +45,19 @@ cards:
 - slug: sr-betrug-irrtum
   type: definition
   front: 'Definiere: Irrtum i.S.d. § 263 Abs. 1 StGB'
-  back: Irrtum ist jede unrichtige, positive Vorstellung des Getäuschten über Tatsachen,
-    die von der Wirklichkeit abweicht. Bloße Unkenntnis oder Zweifel genügen nicht
-    - erforderlich ist eine tatsächliche Fehlvorstellung. Der Irrtum muss durch die
-    Täuschung hervorgerufen oder unterhalten worden sein (Kausalität); ist der Getäuschte
-    bereits vorher überzeugt oder gleichgültig, fehlt es am Irrtum.
+  back: 'Irrtum ist jede Fehlvorstellung des Getäuschten über Tatsachen, also ein
+    Widerspruch zwischen seiner Vorstellung und der Wirklichkeit. Er kann auch in
+    einem sachgedanklichen Mitbewusstsein bestehen (der Getäuschte denkt nicht aktiv
+    an den Punkt, geht aber selbstverständlich von dessen Richtigkeit aus). Bloße
+    Unkenntnis genügt nicht, auch nicht völlige Gleichgültigkeit. Bei Zweifeln gilt
+    nach h.M. und Rspr.: Ein Irrtum ist nicht schon deshalb ausgeschlossen, weil der
+    Getäuschte Zweifel hat; er entfällt nur, wenn der Getäuschte die Unrichtigkeit
+    für sicher oder zumindest so wahrscheinlich hält, dass er die Behauptung nicht
+    mehr glaubt. Hält er die behauptete Tatsache weiter für möglich oder wahrscheinlich
+    und verfügt dennoch, bleibt ein Irrtum bestehen (Streit: Teile der Lit. verlangen
+    mehr). Der Irrtum muss durch die Täuschung hervorgerufen oder unterhalten worden
+    sein (Kausalität); war der Getäuschte schon vorher fest überzeugt oder an der
+    Wahrheit nicht interessiert, fehlt er.'
   norms:
   - § 263 Abs. 1 StGB
   quellen:
@@ -84,6 +92,44 @@ cards:
   quellen:
   - Eigenformulierung Redaktion
   stand: 2026-09
+- slug: sr-betrug-vermoegensbegriff
+  type: streitstand
+  front: 'Streitstand: Vermögensbegriff beim Betrug (wirtschaftlich - juristisch-ökonomisch)'
+  back: 'Nach dem wirtschaftlichen Vermögensbegriff (Rspr.) umfasst das Vermögen alle
+    wirtschaftlichen Güter einer Person, die einen Geldwert haben, auch rechtlich
+    missbilligte Positionen. Der juristische Vermögensbegriff (alle vermögenswerten
+    Rechte) ist zu eng. Die h.M. in der Lit. vertritt einen juristisch-ökonomischen
+    Vermögensbegriff: Geschützt sind wirtschaftlich wertvolle Positionen, die unter
+    dem Schutz der Rechtsordnung stehen (nicht etwa der Besitz verbotener Gegenstände
+    oder sittenwidrige Positionen). Zum Meinungsstreit kommt es etwa bei Betrug zum
+    Erwerb von Betäubungsmitteln oder bei Schwarzarbeit; für die meisten Klausurfälle
+    führen beide Auffassungen zum selben Ergebnis. Der Schaden wird durch Gesamtsaldierung
+    ermittelt (Vermögen vor und nach der Verfügung); bei Eingehungs- und Erfüllungsbetrug
+    ist zu prüfen, ob die Gegenleistung wirtschaftlich gleichwertig ist.'
+  norms:
+  - § 263 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-betrug-dreiecksbetrug
+  type: definition
+  front: 'Definiere: Dreiecksbetrug (Zurechnung der Verfügung des Getäuschten)'
+  back: 'Beim Dreiecksbetrug fallen Getäuschter (Verfügender) und Geschädigter auseinander.
+    Die Verfügung des Getäuschten muss dem Vermögensinhaber zurechenbar sein. Nach
+    der herrschenden Lagertheorie genügt, dass der Getäuschte vor der Tat im Lager
+    des Geschädigten stand (er hatte eine rechtliche oder tatsächliche Nähebeziehung
+    zum Vermögen und war dem Geschädigten zuzuordnen). Nach der Ermächtigungstheorie
+    ist die Verfügung zurechenbar, wenn der Getäuschte rechtlich zur Verfügung ermächtigt
+    ist; nach der Nähetheorie genügt eine tatsächliche Nähe zum Vermögen. Typische
+    Fälle: Prozessbetrug (das Gericht wird getäuscht, der Prozessgegner geschädigt)
+    und die Täuschung eines Angestellten zulasten des Arbeitgebers. Abgrenzung zum
+    Trickdiebstahl: Dort liegt keine Verfügung, sondern eine bloße Gewahrsamslockerung
+    vor; der Gewahrsamsinhaber wird getäuscht, nimmt die Sache aber nicht selbst weg.'
+  norms:
+  - § 263 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
 - slug: sr-betrug-eingehungsbetrug
   type: definition
   front: 'Definiere: Eingehungsbetrug'
@@ -103,11 +149,15 @@ cards:
   front: 'Definiere: Absicht stoffgleicher, rechtswidriger Bereicherung, § 263 Abs.
     1 StGB'
   back: 'Der Täter muss beabsichtigen, sich oder einem Dritten einen Vermögensvorteil
-    zu verschaffen, der stoffgleich mit dem Vermögensschaden des Opfers ist - der
-    erstrebte Vorteil muss also die Kehrseite des Schadens sein und unmittelbar aus
-    derselben Verfügung stammen. Die erstrebte Bereicherung muss zudem rechtswidrig
-    sein: Hat der Täter einen fälligen und einredefreien Anspruch auf den erlangten
-    Vorteil, entfällt die Rechtswidrigkeit.'
+    zu verschaffen. Vermögensvorteil ist jede günstigere Gestaltung der Vermögenslage.
+    Der erstrebte Vorteil muss stoffgleich mit dem Vermögensschaden des Opfers sein:
+    Er muss die Kehrseite des Schadens sein und unmittelbar aus derselben Verfügung
+    stammen, ohne dass eine weitere Handlung erforderlich ist. Die erstrebte Bereicherung
+    muss zudem rechtswidrig sein, also ohne fälligen und einredefreien Anspruch auf
+    den Vorteil. Hinsichtlich der Bereicherung ist Absicht (dolus directus 1. Grades)
+    erforderlich; hinsichtlich der Rechtswidrigkeit des Vorteils und der Stoffgleichheit
+    genügt Eventualvorsatz. Wer etwa einen Anspruch hat, der nur durch Täuschung durchsetzbar
+    wäre (anfechtbarer Vertrag), erstrebt dennoch einen rechtswidrigen Vorteil.'
   norms:
   - § 263 Abs. 1 StGB
   quellen:
@@ -115,12 +165,26 @@ cards:
   stand: 2026-09
 - slug: sr-betrug-besonders-schwerer-fall
   type: norm
-  front: Was regelt § 263 Abs. 3 StGB?
-  back: § 263 Abs. 3 StGB enthält Regelbeispiele für einen besonders schweren Fall
-    des Betrugs mit erhöhtem Strafrahmen (Freiheitsstrafe von sechs Monaten bis zehn
-    Jahren), etwa bei gewerbsmäßiger Begehung, Herbeiführung eines Vermögensverlusts
-    großen Ausmaßes oder Ausnutzung einer Amtsträger- oder Vertrauensstellung -
-    ohne den Tatbestand des § 263 Abs. 1 StGB selbst zu ändern.
+  front: Was regelt § 263 Abs. 3 StGB (besonders schwerer Fall) und was § 263 Abs.
+    5 StGB?
+  back: '§ 263 Abs. 3 StGB sieht für besonders schwere Fälle Freiheitsstrafe von sechs
+    Monaten bis zu zehn Jahren vor. Satz 2 nennt Regelbeispiele: (Nr. 1) gewerbsmäßiges
+    Handeln oder Handeln als Mitglied einer Bande, die sich zur fortgesetzten Begehung
+    von Straftaten nach §§ 263 bis 264 oder 267 bis 269 StGB verbunden hat; (Nr. 2)
+    Herbeiführen eines Vermögensverlusts großen Ausmaßes oder Handeln in der Absicht,
+    durch fortgesetzte Begehung eine große Zahl von Menschen in die Gefahr des Verlusts
+    von Vermögenswerten zu bringen; (Nr. 3) eine andere Person in wirtschaftliche
+    Not bringen; (Nr. 4) Missbrauch der eigenen Befugnisse oder der Stellung als Amtsträger
+    oder Europäischer Amtsträger; (Nr. 5) Vortäuschen eines Versicherungsfalls, nachdem
+    zu diesem Zweck eine Sache von bedeutendem Wert in Brand gesetzt oder ein Schiff
+    zum Sinken gebracht wurde. Eine bloße Vertrauensstellung genügt nicht. Regelbeispiele
+    sind keine Tatbestandsmerkmale: Ihr Vorliegen indiziert den besonders schweren
+    Fall, die Indizwirkung kann durch Gegenindizien entkräftet werden, und umgekehrt
+    kann ein unbenannter besonders schwerer Fall vorliegen. Das Gericht prüft nach
+    der Subsumtion des Regelbeispiels also eine Gesamtwürdigung. § 263 Abs. 5 StGB
+    enthält als Qualifikation (Verbrechen) die gewerbsmäßige Bandenbegehung (Freiheitsstrafe
+    von einem Jahr bis zu zehn Jahren). Nach Abs. 4 gelten §§ 243 Abs. 2, 247, 248a
+    StGB entsprechend (Geringwertigkeit, Strafantrag bei Angehörigen).'
   norms:
   - § 263 Abs. 3 StGB
   quellen:
@@ -140,18 +204,35 @@ schemata:
     children:
     - label: 1. Objektiver Tatbestand
       children:
-      - label: a) Täuschung über Tatsachen
-      - label: b) dadurch (Kausalität) Irrtum
-      - label: c) dadurch (Kausalität) Vermögensverfügung
-      - label: d) dadurch (Kausalität) Vermögensschaden (Gesamtsaldierung)
-        hinweis: Bei Vertragsschlüssen ggf. bereits Eingehungsbetrug prüfen.
+      - label: a) Täuschung über Tatsachen (ausdrücklich, konkludent oder durch Unterlassen
+          bei Aufklärungspflicht)
+      - label: b) Irrtum des Getäuschten (Fehlvorstellung; Zweifel schließen den Irrtum
+          nicht aus)
+        hinweis: 'Kausalität: Die Täuschung muss den Irrtum hervorgerufen oder unterhalten
+          haben.'
+      - label: c) Vermögensverfügung (unmittelbar vermögensmindernd)
+        hinweis: 'Dreiecksbetrug: Zurechnung der Verfügung des Getäuschten zum Vermögensinhaber
+          (Lagertheorie). Abgrenzung zum Trickdiebstahl (Gewahrsamslockerung statt
+          Verfügung). Verfügungsbewusstsein klären.'
+      - label: d) Vermögensschaden (Gesamtsaldierung, wirtschaftlicher bzw. juristisch-ökonomischer
+          Vermögensbegriff)
+        hinweis: Bei Vertragsschlüssen ggf. Eingehungsbetrug und schadensgleiche Vermögensgefährdung
+          prüfen.
+      - label: 'e) Kausalität und Zurechnung der Kette: Täuschung - Irrtum - Verfügung
+          - Schaden'
     - label: 2. Subjektiver Tatbestand
       children:
       - label: a) Vorsatz bzgl. aller objektiven Tatbestandsmerkmale, § 15 StGB
-      - label: b) Absicht stoffgleicher, rechtswidriger Bereicherung
+      - label: b) Absicht, sich oder einem Dritten einen Vermögensvorteil zu verschaffen
+      - label: c) Stoffgleichheit von Vorteil und Schaden
+      - label: d) Rechtswidrigkeit des erstrebten Vorteils und Vorsatz hierauf (kein
+          fälliger, einredefreier Anspruch)
   - label: II. Rechtswidrigkeit
   - label: III. Schuld
-  - label: IV. Besonders schwerer Fall, § 263 Abs. 3 StGB
+  - label: IV. Strafantragserfordernis (§ 263 Abs. 4 i.V.m. §§ 247, 248a StGB)
+    hinweis: Nur bei Angehörigen, Vormund oder Geringwertigkeit relevant.
+  - label: V. Besonders schwerer Fall, § 263 Abs. 3 StGB (Regelbeispiele Nr. 1 bis
+      5) und § 263 Abs. 5 StGB
     hinweis: Nur prüfen, wenn der Sachverhalt dazu Anlass gibt.
 faelle:
 - slug: sr-fall-gebrauchter-laptop
@@ -166,8 +247,9 @@ faelle:
     einwandfrei, keine Schäden". Tatsächlich hat das Display einen deutlichen Sprung,
     den A vor dem Fotografieren mit einer Displayfolie kaschiert hat. K liest die
     Anzeige, vertraut der Angabe und überweist A vorab 400 Euro. A verschickt daraufhin
-    den Laptop. Als K das Gerät auspackt, bemerkt er den Sprung im Display; eine
-    Reparatur würde 150 Euro kosten.
+    den Laptop. Als K das Gerät auspackt, bemerkt er den Sprung im Display; eine Reparatur
+    würde 150 Euro kosten. Ein Laptop mit gesprungenem Display hat auf dem Markt nur
+    einen Wert von 250 Euro.
   question: Hat sich A gegenüber K wegen Betrugs gemäß § 263 Abs. 1 StGB strafbar
     gemacht?
   steps:
@@ -185,14 +267,15 @@ faelle:
       Vermögensverfügung.
   - prompt: Liegt ein Vermögensschaden vor, obwohl K einen funktionierenden Laptop
       erhalten hat?
-    erwartung: Ja. Nach dem Prinzip der Gesamtsaldierung ist der Wert des tatsächlich
-      gelieferten, beschädigten Laptops geringer als der gezahlte Kaufpreis - der
-      objektive Minderwert entspricht in etwa den 150 Euro Reparaturkosten.
+    erwartung: Ja. Nach dem Prinzip der Gesamtsaldierung steht dem gezahlten Kaufpreis
+      von 400 Euro nur ein Gerät mit einem Marktwert von 250 Euro gegenüber; der Minderwert
+      (Schaden) beträgt 150 Euro und entspricht den Reparaturkosten.
   - prompt: Liegt Absicht stoffgleicher, rechtswidriger Bereicherung vor?
-    erwartung: Ja - A wollte den vollen Kaufpreis erhalten, obwohl der Laptop weniger
-      wert war; der erstrebte Vorteil (voller Kaufpreis) ist die Kehrseite des Schadens
-      des K und rechtswidrig, da A keinen Anspruch auf den vollen Preis für die mangelhafte
-      Sache hatte.
+    erwartung: 'Ja - A wollte den vollen Kaufpreis erhalten, obwohl der Laptop weniger
+      wert war; der erstrebte Vorteil ist die Kehrseite des Schadens des K (Stoffgleichheit)
+      und rechtswidrig: Zwar besteht ein Kaufvertrag, doch ist dieser wegen der Täuschung
+      nach § 123 BGB anfechtbar, sodass A keinen einredefreien Anspruch auf den vollen
+      Preis hat. Zumindest mit Eventualvorsatz handelte A auch hinsichtlich der Rechtswidrigkeit.'
   expectation:
     pruefpunkte:
     - id: p1
@@ -202,31 +285,39 @@ faelle:
       norms:
       - § 263 Abs. 1 StGB
       keywords:
-      - '263'
+      - § 263 Abs. 1
+      - § 263 StGB
+      - Betrug gemäß § 263
       card_slugs:
       - sr-betrug-grundtatbestand
     - id: p2
-      label: Täuschung über Tatsachen bejaht und konkret benannt (Zustand des Displays)
+      label: Täuschung über Tatsachen bejaht und konkret benannt (Zustandsbeschreibung
+        in der Anzeige)
       weight: 3.0
       required: true
       norms:
       - § 263 Abs. 1 StGB
       keywords:
-      - Täuschung
-      - Tatsachen
-      - Display
+      - Täuschung über Tatsachen
+      - ausdrückliche Täuschung
+      - Täuschung über den Zustand
+      - Vorspiegelung falscher Tatsachen
+      - Vorspiegeln falscher Tatsachen
       card_slugs:
       - sr-betrug-taeuschung
     - id: p3
       label: Irrtum und dadurch veranlasste Vermögensverfügung (Überweisung) bejaht
       weight: 2.0
-      required: false
+      required: true
       norms:
       - § 263 Abs. 1 StGB
       keywords:
-      - Irrtum
-      - Vermögensverfügung
-      - Überweisung
+      - Irrtum erregt
+      - Fehlvorstellung
+      - irrte sich
+      - unmittelbar vermögensmindernde
+      - Vermögensverfügung in Form der Überweisung
+      - Vermögensverfügung ist die Überweisung
       card_slugs:
       - sr-betrug-irrtum
       - sr-betrug-vermoegensverfuegung
@@ -239,7 +330,10 @@ faelle:
       keywords:
       - Gesamtsaldierung
       - Minderwert
-      - Vermögensschaden
+      - Leistung und Gegenleistung
+      - Äquivalenz
+      - Wertvergleich
+      - Saldierung
       card_slugs:
       - sr-betrug-vermoegensschaden
     - id: p5
@@ -250,8 +344,11 @@ faelle:
       - § 263 Abs. 1 StGB
       keywords:
       - Bereicherungsabsicht
+      - Stoffgleichheit
       - stoffgleich
-      - rechtswidrig
+      - rechtswidrige Bereicherung
+      - § 123 BGB
+      - anfechtbar
       card_slugs:
       - sr-betrug-bereicherungsabsicht
     - id: p6
@@ -261,7 +358,11 @@ faelle:
       norms:
       - § 15 StGB
       keywords:
-      - Vorsatz
+      - Vorsatz bezüglich
+      - Vorsatz hinsichtlich
+      - Tatbestandsvorsatz
+      - § 15 StGB
+      - Täuschungsvorsatz
       card_slugs:
       - sr-at-vorsatz
     - id: p7
@@ -271,8 +372,10 @@ faelle:
       norms:
       - § 263 Abs. 1 StGB
       keywords:
-      - strafbar gemacht
-      - Betrug
-      - '263'
+      - Betrug gemäß § 263 Abs. 1 StGB erfüllt
+      - vollendeter Betrug
+      - vollendeten Betrug
+      - Betrug ist vollendet
+      - Tatbestand des Betrugs ist erfüllt
       card_slugs:
       - sr-betrug-grundtatbestand

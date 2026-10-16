@@ -56,7 +56,7 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(find.text('2'), findsOneWidget);
-      expect(find.text('Karten warten auf dich.'), findsOneWidget);
+      expect(find.text('0 neu, 2 Wiederholungen'), findsOneWidget);
       expect(find.byType(SubsumoPageHeader), findsOneWidget);
       // Relevanz als neutrale Punktreihe, kein wertabhaengiges Signal.
       expect(find.byType(CircleAvatar), findsNothing);
@@ -92,7 +92,7 @@ void main() {
     testWidgets('Leertaste deckt auf, Ziffer bewertet - Bewertungen ohne Ampelfarben',
         (tester) async {
       final state = await pump(tester);
-      expect(find.text('Was regelt § 985 BGB?'), findsOneWidget);
+      expect(find.text('Was regelt §\u00A0985 BGB?'), findsOneWidget);
       expect(find.text('Herausgabeanspruch.'), findsNothing);
 
       // Ziffern vor dem Aufdecken bewerten nichts.
@@ -104,21 +104,14 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text('Herausgabeanspruch.'), findsOneWidget);
 
-      // Genau eine gefuellte Schaltflaeche ("Gut"), drei Konturen - Gewicht
-      // statt Farbe. Keine der vier nutzt error/positive/hint als Fuellung.
-      final filled = tester.widgetList<FilledButton>(find.byType(FilledButton)).toList();
-      expect(filled, hasLength(1));
-      expect(find.widgetWithText(FilledButton, 'Gut'), findsOneWidget);
-      expect(find.byType(OutlinedButton), findsNWidgets(3));
-      for (final button in filled) {
-        final bg = button.style?.backgroundColor?.resolve({});
-        expect(bg, isNull, reason: 'Bewertungsbutton darf keine eigene Signalfarbe tragen');
-      }
+      // Vier gleichwertige Konturen-Schaltflaechen - keine wirkt vorausgewaehlt.
+      expect(find.byType(FilledButton), findsNothing);
+      expect(find.byType(OutlinedButton), findsNWidgets(4));
 
       await tester.sendKeyEvent(LogicalKeyboardKey.digit3);
       await tester.pumpAndSettle();
       expect(state.dueCards.length, 1);
-      expect(find.text('Was regelt § 433 BGB?'), findsOneWidget);
+      expect(find.text('Was regelt §\u00A0433 BGB?'), findsOneWidget);
       // Eyebrow setzt in Versalien.
       expect(find.textContaining('2 VON 2'), findsOneWidget);
     });

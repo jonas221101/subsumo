@@ -9,8 +9,8 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-23'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: sr-vorsatz-tatbestandsirrtum-def
   type: norm
@@ -18,7 +18,7 @@ cards:
   back: Ein Tatbestandsirrtum liegt vor, wenn der Täter bei Begehung der Tat einen
     Umstand nicht kennt, der zum gesetzlichen Tatbestand gehört (§ 16 Abs. 1 S. 1
     StGB). Die Vorsatzkenntnis muss sich auf alle objektiven Tatbestandsmerkmale beziehen
-    (Kongrünzprinzip); fehlt sie, entfällt der Vorsatz bereits auf Tatbestandsebene.
+    (Kongruenzprinzip); fehlt sie, entfällt der Vorsatz bereits auf Tatbestandsebene.
     Eine Fahrlässigkeitsstrafbarkeit bleibt gemäß § 16 Abs. 1 S. 2 StGB unberührt,
     wenn ein entsprechendes Fahrlässigkeitsdelikt existiert und der Irrtum vermeidbar
     war.
@@ -63,51 +63,15 @@ cards:
   stand: 2026-09
 - slug: sr-vorsatz-error-aberratio-streitstand
   type: streitstand
-  front: 'Streitstand: Behandlung des error in persona bei gleichwertigen Tatobjekten'
-  back: 'Problem: Ob eine Verwechslung des Tatobjekts bei Gleichwertigkeit stets
+  front: 'Streitstand: error in persona und aberratio ictus bei gleichwertigen Tatobjekten'
+  back: |-
+    Problem: Ob eine Abweichung zwischen vorgestelltem und tatsächlich getroffenem Objekt den Vorsatz berührt, hängt von der Fehlerart ab. Beide Fälle sind zu trennen.
 
-    unbeachtlich ist oder wie eine aberratio ictus behandelt werden muss,
+    1. Error in persona (Verwechslung): Gleichwertigkeitstheorie (Rspr. und h.M.): Der Vorsatz bezieht sich auf das tatbestandlich umschriebene Objekt (z. B. einen Menschen), nicht auf ein bestimmtes Individuum. Bei Gleichwertigkeit ist die Verwechslung ein unbeachtlicher Motivirrtum; vollendetes Vorsatzdelikt. Eine Gegenmeinung (Konkretisierungstheorie) behandelt auch die Verwechslung wie eine aberratio ictus; sie ist hier Minderansicht.
 
-    entscheidet über vollendetes Vorsatzdelikt oder nur Versuch/
+    2. Aberratio ictus (Fehlgehen): Konkretisierungstheorie (h.M. und Rspr.): Der Vorsatz hat sich auf das konkret anvisierte Objekt konkretisiert. Trifft die Tat ein anderes Objekt, liegt hinsichtlich des getroffenen Objekts ein Tatbestandsirrtum vor (§ 16 Abs. 1 S. 1 StGB): Versuch am anvisierten Objekt, ggf. in Tateinheit mit fahrlässiger Vollendung am getroffenen Objekt. Gleichwertigkeitstheorie (Mindermeinung): Auch hier genüge die Gleichwertigkeit der Objekte, sodass vollendetes Vorsatzdelikt am getroffenen Objekt vorliege; Kritik: Das Fehlgehen ist ein objektiver Ausführungsfehler, der den Vorsatz auf das getroffene Objekt nicht erstreckt.
 
-    Fahrlässigkeit.
-
-
-    Gleichwertigkeitstheorie (ganz h.M. und Rspr.): Der Vorsatz des Täters
-
-    bezieht sich generalisierend auf das tatbestandlich umschriebene
-
-    Objekt, nicht auf ein bestimmtes Individuum; bei Gleichwertigkeit der
-
-    Tatobjekte ist die Fehlvorstellung über die Identität ein
-
-    unbeachtlicher Motivirrtum. Argument: Der Tatbestand individualisiert
-
-    das Opfer nicht, das Unrecht der vollendeten Tat ist identisch
-
-    verwirklicht.
-
-
-    Konkretisierungstheorie (Literatur, Minderansicht): Der Vorsatz erfasst
-
-    nur das konkret anvisierte, individualisierte Objekt; jede Abweichung -
-
-    ob durch Fehlgehen oder Verwechslung - ist wie eine aberratio ictus zu
-
-    behandeln (also stets Versuch/Fahrlässigkeit). Argument: konsequente
-
-    Anwendung des Kongrünzprinzips zwischen individuell gebildetem
-
-    Vorsatz und Erfolg.
-
-
-    Konsequenz: In der Klausur ist die Gleichwertigkeitstheorie als
-
-    herrschende Ansicht darzustellen und zu vertreten; die
-
-    Konkretisierungstheorie kann als Gegenposition kurz erwähnt werden.
-
-    '
+    Konsequenz: Beim error in persona die Gleichwertigkeitstheorie, bei der aberratio ictus die Konkretisierungstheorie vertreten. Zu prüfen bleibt ein Eventualvorsatz gegenüber dem tatsächlich getroffenen Objekt.
   norms:
   - § 16 Abs. 1 StGB
   quellen:
@@ -181,16 +145,16 @@ schemata:
   steps:
   - label: 'I. Feststellung: worauf bezieht sich die Fehlvorstellung?'
     children:
-    - label: 1. Umstand gehört zum gesetzlichen Tatbestand -> weiter mit II.
-    - label: 2. Umstand betrifft nur die rechtliche Bewertung/Erlaubtheit -> Verbotsirrtum,
+    - label: 1. Umstand gehört zum gesetzlichen Tatbestand → weiter mit II.
+    - label: 2. Umstand betrifft nur die rechtliche Bewertung/Erlaubtheit → Verbotsirrtum,
         § 17 StGB
   - label: II. Tatbestandsirrtum, § 16 Abs. 1 StGB
     children:
     - label: 1. Error in persona vel objecto (Verwechslung des Tatobjekts)
       children:
-      - label: a) Gleichwertigkeit der Tatobjekte -> Irrtum unbeachtlich, Vorsatz
+      - label: a) Gleichwertigkeit der Tatobjekte → Irrtum unbeachtlich, Vorsatz
           (+)
-      - label: b) Keine Gleichwertigkeit -> Vorsatz bzgl. getroffenem Objekt (-)
+      - label: b) Keine Gleichwertigkeit → Vorsatz bzgl. getroffenem Objekt (-)
     - label: 2. Aberratio ictus (Fehlgehen der Tat)
       children:
       - label: a) Vorsatz bzgl. anvisiertem Objekt (-) hinsichtlich Vollendung
@@ -211,8 +175,8 @@ faelle:
   - StGB, amtliche Fassung
   facts: A hasst B und will ihn töten. A zielt mit einer geladenen Schusswaffe gezielt
     auf B, der etwa zehn Meter entfernt steht. Wegen seiner Aufregung und mangelnder
-    Schießfertigkeit verfehlt A sein Ziel deutlich; die Kugel trifft stattdessen
-    den neben B stehenden, von A nicht wahrgenommenen C tödlich. B bleibt unverletzt.
+    Schießfertigkeit verfehlt A sein Ziel deutlich; die Kugel trifft stattdessen den
+    neben B stehenden, von A nicht wahrgenommenen C tödlich. B bleibt unverletzt.
   question: Wie hat sich A hinsichtlich des B und hinsichtlich des C strafbar gemacht?
   steps:
   - prompt: Hat A hinsichtlich des B ein vollendetes Tötungsdelikt begangen?
@@ -222,7 +186,8 @@ faelle:
   - prompt: Bezieht sich der Vorsatz des A auch auf den Tod des C?
     erwartung: Nein - A hatte hinsichtlich C weder Wissen noch Wollen der Tatbestandsverwirklichung.
       Es handelt sich nicht um einen error in persona (keine Verwechslung), sondern
-      um eine aberratio ictus, da die Ausführung objektiv vom Tatplan abwich.
+      um eine aberratio ictus, da die Ausführung objektiv vom Tatplan abwich. Ein
+      Eventualvorsatz bzgl. C scheidet aus, weil A den C nicht wahrgenommen hat.
   - prompt: Wie wird die aberratio ictus dogmatisch behandelt?
     erwartung: 'Nach ganz h.M. ist die aberratio ictus - anders als der error in persona
       bei gleichwertigen Objekten - stets beachtlich: der Vorsatz erfasst nur das
@@ -230,9 +195,9 @@ faelle:
       und der Vorsatz insoweit entfällt, § 16 Abs. 1 S. 1 StGB.'
   - prompt: Welche Strafbarkeiten kommen für A in Betracht?
     erwartung: Versuchter Totschlag zum Nachteil des B (§§ 212, 22, 23 Abs. 1 StGB)
-      in Tateinheit, § 52 StGB, mit vollendeter fahrlässiger Tötung des C (§ 222
-      StGB), da beim gezielten Schuss auf einen Menschen in Anwesenheit Dritter eine
-      Sorgfaltspflichtverletzung und die Vorhersehbarkeit des Erfolgs zu bejahen sind.
+      in Tateinheit, § 52 StGB, mit vollendeter fahrlässiger Tötung des C (§ 222 StGB),
+      da beim gezielten Schuss auf einen Menschen in Anwesenheit Dritter eine Sorgfaltspflichtverletzung
+      und die Vorhersehbarkeit des Erfolgs zu bejahen sind.
   - prompt: Ergebnis?
     erwartung: A hat sich wegen versuchten Totschlags (§§ 212, 22, 23 Abs. 1 StGB)
       an B in Tateinheit mit fahrlässiger Tötung (§ 222 StGB) des C strafbar gemacht.
@@ -247,8 +212,10 @@ faelle:
       - § 212 StGB
       - § 22 StGB
       keywords:
-      - '212'
-      - Versuch
+      - versuchter Totschlag
+      - §§ 212, 22, 23
+      - Versuch am anvisierten
+      - kein vollendetes Delikt
       card_slugs:
       - sr-vorsatz-aberratio-ictus
     - id: p2
@@ -257,6 +224,9 @@ faelle:
       required: true
       keywords:
       - aberratio ictus
+      - Fehlgehen der Tat
+      - Konkretisierungstheorie
+      - kein error in persona
       card_slugs:
       - sr-vorsatz-aberratio-ictus
       - sr-vorsatz-error-in-persona
@@ -267,7 +237,10 @@ faelle:
       norms:
       - § 16 Abs. 1 StGB
       keywords:
-      - 16 Abs. 1
+      - § 16 Abs. 1
+      - Tatbestandsirrtum
+      - Vorsatz bezüglich C entfällt
+      - kein Vorsatz hinsichtlich C
       card_slugs:
       - sr-vorsatz-tatbestandsirrtum-def
     - id: p4
@@ -278,10 +251,22 @@ faelle:
       norms:
       - § 222 StGB
       keywords:
-      - '222'
-      - Sorgfaltspflicht
+      - § 222
+      - Sorgfaltspflichtverletzung
+      - fahrlässige Tötung
+      - Vorhersehbarkeit
       card_slugs:
       - sr-vorsatz-aberratio-ictus
+    - id: p4b
+      label: Eventualvorsatz bzgl. C geprüft und verneint (C nicht wahrgenommen)
+      weight: 1.0
+      required: false
+      keywords:
+      - dolus eventualis
+      - Eventualvorsatz
+      - bedingter Vorsatz
+      - nicht wahrgenommen
+      card_slugs: []
     - id: p5
       label: Tateinheit zwischen Versuch (B) und vollendeter Fahrlässigkeitstat (C),
         § 52 StGB
@@ -290,11 +275,16 @@ faelle:
       norms:
       - § 52 StGB
       keywords:
-      - Tateinheit
-      - '52'
+      - in Tateinheit
+      - Tateinheit gemäß § 52
+      - § 52 StGB
+      - Tateinheit zwischen Versuch und fahrlässiger Tötung
     - id: p6
-      label: Ergebnis korrekt zusammengefasst
+      label: 'Gesamtergebnis: versuchter Totschlag (B) in Tateinheit mit fahrlässiger
+        Tötung (C)'
       weight: 1.0
       required: false
       keywords:
-      - Ergebnis
+      - versuchten Totschlags in Tateinheit mit fahrlässiger Tötung
+      - Versuch und fahrlässige Tötung
+      - §§ 212, 22, 23, 222, 52

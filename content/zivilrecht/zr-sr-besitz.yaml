@@ -1,0 +1,416 @@
+topic:
+  slug: zr-sr-besitz
+  area: zivilrecht
+  title: 'Besitz: Besitzarten, Besitzschutz und § 1007 BGB'
+  parent: zr-sachenrecht-eigentumsherausgabe-985
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-besitz-begriff-854
+  type: definition
+  front: Was ist Besitz, und wie wird er erworben (§ 854 BGB)?
+  back: >-
+    Besitz ist die tatsächliche Gewalt über eine Sache (§ 854 Abs. 1 BGB). Sie setzt
+    ein objektives Element (räumliche Beziehung und Herrschaftsmöglichkeit nach der
+    Verkehrsanschauung) und einen natürlichen Besitzbegründungswillen voraus; Geschäftsfähigkeit
+    ist nicht erforderlich. Der Erwerb erfolgt durch Erlangung der tatsächlichen Gewalt,
+    bei Veräußerung durch den bisherigen Besitzer regelmäßig durch Einigung bei Besitzübergang
+    (§ 854 Abs. 2 BGB, wenn der Erwerber in der Lage ist, die Gewalt auszuüben). Verloren
+    geht der Besitz durch Aufgabe der tatsächlichen Gewalt oder auf andere Weise,
+    nicht aber durch vorübergehende Verhinderung der Ausübung (§ 856 BGB). Besitz
+    ist kein Recht, sondern eine tatsächliche Position, die aber durch §§ 858 ff.
+    und § 823 Abs. 1 BGB geschützt wird.
+  norms:
+  - § 854 BGB
+  - § 856 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-besitz-besitzdiener-855
+  type: definition
+  front: Wer ist Besitzdiener nach § 855 BGB, und wer ist dann Besitzer?
+  back: >-
+    Übt jemand die tatsächliche Gewalt über eine Sache für einen anderen in dessen
+    Haushalt oder Erwerbsgeschäft oder in einem ähnlichen Verhältnis aus, in Folge
+    dessen er den sich auf die Sache beziehenden Weisungen des anderen Folge zu leisten
+    hat, ist nur der andere Besitzer (§ 855 BGB). Entscheidend ist ein soziales Abhängigkeitsverhältnis
+    mit Weisungsgebundenheit, das nach außen erkennbar sein muss (Angestellter, Hausangehöriger).
+    Der Besitzdiener ist selbst nicht Besitzer, kann aber Besitzwehr und Besitzkehr
+    für den Besitzherrn ausüben (§ 860 BGB). Erwirbt oder verliert der Besitzdiener
+    die tatsächliche Gewalt, wirkt das für den Besitzherrn. Für die Übergabe nach
+    § 929 S. 1 BGB heißt das: Ein Besitzdiener kann die Sache als Übergabehelfer weitergeben
+    oder entgegennehmen, ohne selbst Besitzer zu werden.
+  norms:
+  - § 855 BGB
+  - § 860 BGB
+  - § 929 S. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-besitz-mittelbarer-besitz-868
+  type: definition
+  front: >-
+    Was ist mittelbarer Besitz, und welche Voraussetzungen hat das Besitzmittlungsverhältnis
+    nach § 868 BGB?
+  back: >-
+    Mittelbarer Besitzer ist, wer eine Sache einem anderen (dem unmittelbaren Besitzer)
+    auf Grund eines Rechtsverhältnisses überlässt, kraft dessen dieser zeitweilig
+    zum Besitz berechtigt oder verpflichtet ist (§ 868 BGB, z. B. Miete, Leihe, Pacht,
+    Verwahrung, Nießbrauch, Pfandrecht). Erforderlich sind (1) ein konkretes Besitzmittlungsverhältnis,
+    aus dem sich eine zeitlich begrenzte Besitzberechtigung oder -pflicht ergibt,
+    (2) ein Fremdbesitzerwille des unmittelbaren Besitzers und (3) ein Herausgabeanspruch
+    des mittelbaren Besitzers. Mehrstufiger mittelbarer Besitz ist möglich (§ 871
+    BGB), etwa bei Untermiete. Der mittelbare Besitz ist echter Besitz, nach § 869
+    BGB schutzfähig und Grundlage der Übergabesurrogate der §§ 930, 931 BGB.
+  norms:
+  - § 868 BGB
+  - § 869 BGB
+  - § 871 BGB
+  - § 930 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-besitz-erbenbesitz-857
+  type: norm
+  front: Wie geht der Besitz im Erbfall nach § 857 BGB über?
+  back: >-
+    Der Besitz geht auf den Erben über (§ 857 BGB). Das gilt unabhängig davon, ob
+    der Erbe Kenntnis von der Sache oder vom Erbfall hat, und ohne dass er die tatsächliche
+    Gewalt erlangen müsste. Der Erbe tritt in die Besitzlage des Erblassers ein (Vonselbsterwerb),
+    also in dessen unmittelbaren oder mittelbaren Besitz, und kann Besitzschutz in
+    Anspruch nehmen. § 857 BGB ist ein Ausnahmefall vom Grundsatz des § 854 BGB, der
+    Besitzlücken vermeiden soll und die Rechtsfolgen der Gesamtrechtsnachfolge (§
+    1922 BGB) ergänzt. Will der Erbe die Sache später nach § 929 BGB veräußern, muss
+    er die Übergabe oder ein Übergabesurrogat nach den allgemeinen Regeln vornehmen.
+  norms:
+  - § 857 BGB
+  - § 854 BGB
+  - § 935 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-besitz-mitbesitz-teilbesitz
+  type: definition
+  front: Was bedeuten Mitbesitz und Teilbesitz (§§ 865, 866 BGB)?
+  back: >-
+    Mitbesitz liegt vor, wenn mehrere Personen gemeinschaftlich die tatsächliche Gewalt
+    über dieselbe Sache ausüben (§ 866 BGB), etwa Ehegatten an der Wohnung oder Mieter
+    einer Wohngemeinschaft. Jeder Mitbesitzer kann gegenüber Dritten Besitzschutz
+    beanspruchen; untereinander findet Besitzschutz in Ansehung der Grenzen des den
+    einzelnen zustehenden Gebrauchs nicht statt (§ 866 BGB). Teilbesitz entsteht,
+    wenn jemand die tatsächliche Gewalt über einen räumlich abgegrenzten Teil einer
+    Sache hat, etwa ein Zimmer (§ 865 BGB); dieser Teil ist besitzschutzfähig. Rechtsgeschäftlich
+    kann Teilbesitz übertragen werden, etwa durch Übergabe des Schlüssels zu dem Raum,
+    nicht aber Eigentum an einem bloßen Raumteil, solange er nicht wesentlicher Bestandteil
+    einer selbständigen Sache ist (§§ 93, 94 BGB).
+  norms:
+  - § 865 BGB
+  - § 866 BGB
+  - § 935 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-besitz-verbotene-eigenmacht-858
+  type: norm
+  front: >-
+    Was ist verbotene Eigenmacht nach § 858 Abs. 1 BGB, und welche Rechtsfolgen löst
+    sie aus?
+  back: >-
+    Verbotene Eigenmacht begeht, wer dem Besitzer ohne dessen Willen den Besitz entzieht
+    oder ihn im Besitz stört, sofern nicht das Gesetz die Entziehung oder Störung
+    gestattet (§ 858 Abs. 1 BGB). Es genügt eine objektive Beeinträchtigung; Verschulden
+    ist nicht erforderlich. Der durch verbotene Eigenmacht erlangte Besitz ist fehlerhaft
+    (§ 858 Abs. 2 S. 1 BGB). Ein Nachfolger im Besitz muss die Fehlerhaftigkeit nur
+    gegen sich gelten lassen, wenn er Erbe des Fehlerhaften ist oder sie beim Erwerb
+    kennt (§ 858 Abs. 2 S. 2 BGB). Rechtsfolgen:
+    Selbsthilferecht nach § 859 BGB, Besitzschutzansprüche nach §§ 861, 862 BGB und
+    Schadensersatz nach § 823 Abs. 2 BGB i. V. m. § 858. Gesetzlich gestattet sind
+    z. B. Eingriffe nach §§ 229, 904 BGB oder aufgrund hoheitlicher Befugnisse.
+  norms:
+  - § 858 Abs. 1 BGB
+  - § 858 Abs. 2 BGB
+  - § 859 BGB
+  - § 823 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-besitz-selbsthilfe-859
+  type: norm
+  front: Welche Selbsthilferechte gewährt § 859 BGB dem Besitzer?
+  back: >-
+    Der Besitzer darf sich verbotener Eigenmacht mit Gewalt erwehren (Besitzwehr,
+    § 859 Abs. 1 BGB). Wird ihm eine bewegliche Sache durch verbotene Eigenmacht weggenommen,
+    darf er sie dem auf frischer Tat betroffenen oder verfolgten Täter mit Gewalt
+    wieder abnehmen (Besitzkehr, § 859 Abs. 2). Wird ihm der Besitz eines Grundstücks
+    durch verbotene Eigenmacht entzogen, darf er sofort nach der Entziehung den Besitz
+    durch Entsetzung des Täters wieder ergreifen (§ 859 Abs. 3). Die Selbsthilfe ist
+    auf das zur Abwehr oder Wiedererlangung Erforderliche beschränkt und kann auch
+    vom Besitzdiener ausgeübt werden (§ 860 BGB). Sie ist nur gegen verbotene Eigenmacht
+    zulässig; die bloße Verweigerung der Herausgabe fällt nicht darunter.
+  norms:
+  - § 859 Abs. 1 BGB
+  - § 859 Abs. 2 BGB
+  - § 859 Abs. 3 BGB
+  - § 860 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-besitz-861-862-anspruch
+  type: norm
+  front: Welche Ansprüche gewähren §§ 861, 862 BGB, und was ist § 863 BGB?
+  back: >-
+    Wird dem Besitzer der Besitz durch verbotene Eigenmacht entzogen, kann er die
+    Wiedereinräumung des Besitzes vom Täter verlangen (§ 861 Abs. 1 BGB); ausgeschlossen
+    ist der Anspruch, wenn der Besitz dem jetzigen Besitzer gegenüber fehlerhaft war
+    und in dem letzten Jahr vor der Entziehung erlangt wurde (§ 861 Abs. 2). Wird
+    der Besitzer durch verbotene Eigenmacht gestört, kann er Beseitigung der Störung
+    und bei weiteren Störungen Unterlassung verlangen (§ 862 BGB). Der Besitzschutz
+    ist rein possessorisch: Der Gegner kann sich nicht darauf berufen, ihm stehe ein
+    Recht zum Besitz oder zur Störung zu (§ 863 BGB). Die Ansprüche erlöschen ein Jahr nach der Verübung der Eigenmacht, wenn sie nicht vorher durch Klage geltend gemacht werden (§ 864 Abs. 1 BGB), und auch, wenn nach
+    der Verübung rechtskräftig festgestellt wird, dass dem Täter ein Recht an der
+    Sache zusteht, kraft dessen er die Herstellung eines dem Besitzstand entsprechenden
+    Zustands verlangen könnte (§ 864 Abs. 2 BGB).
+  norms:
+  - § 861 BGB
+  - § 862 BGB
+  - § 863 BGB
+  - § 864 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-besitz-869-mittelbarer-besitzer
+  type: norm
+  front: Welchen Schutz genießt der mittelbare Besitzer nach § 869 BGB?
+  back: >-
+    Der mittelbare Besitzer hat gegen verbotene Eigenmacht die Ansprüche aus §§ 861,
+    862 BGB, wenn die Eigenmacht gegen den unmittelbaren Besitzer verübt wird (§ 869
+    S. 1 BGB). Wird der Besitz dem unmittelbaren Besitzer entzogen, kann der mittelbare
+    Besitzer die Wiedereinräumung des Besitzes an den bisherigen unmittelbaren Besitzer
+    verlangen; kann oder will dieser den Besitz nicht wieder übernehmen, kann der
+    mittelbare Besitzer Herausgabe an sich selbst verlangen (§ 869 S. 2 BGB). Dadurch
+    wird sichergestellt, dass der Besitzmittler nicht gegen seinen Willen zum Besitzer
+    wird. Die Vorschrift verleiht ausdrücklich nur die possessorischen Ansprüche
+    der §§ 861, 862 BGB.
+  norms:
+  - § 869 BGB
+  - § 861 BGB
+  - § 862 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-besitz-1007-fruehere-besitz
+  type: norm
+  front: Welche Ansprüche gewährt § 1007 BGB dem früheren Besitzer?
+  back: >-
+    § 1007 BGB gibt dem früheren Besitzer einen petitorischen Herausgabeanspruch gegen
+    den aktuellen Besitzer, ohne dass er Eigentümer sein muss. Nach Abs. 1 kann er
+    die Herausgabe von einem Besitzer verlangen, der bei Erwerb des Besitzes nicht
+    in gutem Glauben war. Nach Abs. 2 hat er einen Herausgabeanspruch auch gegen den
+    gutgläubigen Besitzer, wenn ihm die Sache gestohlen, verloren oder sonst abhanden
+    gekommen ist, es sei denn, der Besitzer ist Eigentümer oder die Sache war auch
+    ihm selbst vor der Besitzzeit des früheren Besitzers abhanden gekommen. Auf Geld und Inhaberpapiere ist Abs. 2 nicht anwendbar.
+    Ausgeschlossen ist der Anspruch, wenn der frühere Besitzer beim Besitzerwerb nicht
+    in gutem Glauben war oder den Besitz aufgegeben hat (Abs. 3 S. 1). Im Übrigen
+    gelten §§ 986–1003 BGB entsprechend (Abs. 3 S. 2).
+  norms:
+  - § 1007 Abs. 1 BGB
+  - § 1007 Abs. 2 BGB
+  - § 1007 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-besitz-1006-eigentumsvermutung
+  type: norm
+  front: Welche Eigentumsvermutung enthält § 1006 BGB?
+  back: >-
+    Zugunsten des Besitzers einer beweglichen Sache wird vermutet, dass er Eigentümer
+    ist (§ 1006 Abs. 1 S. 1 BGB). Zugunsten des früheren Besitzers wird vermutet,
+    dass er während der Besitzzeit Eigentümer war (Abs. 2), und beim mittelbaren Besitz
+    gilt die Vermutung zugunsten des mittelbaren Besitzers (Abs. 3). Die Vermutung
+    gilt nicht gegenüber einem früheren Besitzer, dem die Sache gestohlen, verloren
+    oder sonst abhanden gekommen ist (Abs. 1 S. 2); bei Geld und Inhaberpapieren
+    gilt sie aber auch ihm gegenüber. Sie ist widerlegbar (§ 292 ZPO). Praktisch entlastet § 1006 BGB den Besitzer
+    beim Eigentumsnachweis, etwa im Rahmen des § 985 BGB oder der Drittwiderspruchsklage
+    (§ 771 ZPO).
+  norms:
+  - § 1006 Abs. 1 BGB
+  - § 1006 Abs. 2 BGB
+  - § 1006 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: zr-schema-besitz-schutz
+  title: >-
+    Besitzschutz: Wiedereinräumung nach § 861 BGB und Anspruch des mittelbaren Besitzers
+  norms:
+  - § 858 Abs. 1 BGB
+  - § 861 BGB
+  - § 863 BGB
+  - § 864 BGB
+  - § 869 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Anspruchsteller ist Besitzer
+    children:
+    - label: 1. Unmittelbarer Besitz, § 854 BGB
+      hinweis: >-
+        Besitzdiener nach § 855 BGB ist nicht Besitzer; Besitzer ist der Besitzherr.
+    - label: 2. Oder mittelbarer Besitz, § 868 BGB (dann § 869 BGB)
+  - label: II. Verbotene Eigenmacht, § 858 Abs. 1 BGB
+    children:
+    - label: 1. Entziehung oder Störung des Besitzes
+    - label: 2. ohne Willen des Besitzers
+    - label: 3. Gesetzliche Gestattung nicht gegeben
+  - label: III. Anspruchsgegner
+    hinweis: >-
+      Der Täter oder der fehlerhafte Besitzer, § 861 Abs. 1, § 858 Abs. 2 BGB.
+  - label: IV. Kein Ausschluss
+    children:
+    - label: 1. Nicht § 861 Abs. 2 BGB (fehlerhafter Besitz des Anspruchstellers)
+    - label: 2. Keine Einwendung nach § 863 BGB (nur possessorische Einwendungen)
+    - label: 3. Frist von einem Jahr gewahrt, § 864 Abs. 1 BGB
+  - label: V. Rechtsfolge
+    hinweis: >-
+      Wiedereinräumung des Besitzes, bei § 862 BGB Beseitigung/Unterlassung; beim
+      mittelbaren Besitzer § 869 S. 2 BGB.
+faelle:
+- slug: zr-fall-besitz-motorrad
+  title: Das aus der Werkstatt geholte Motorrad
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Eigentümer A hat sein Motorrad zur Reparatur in die Werkstatt des Mechanikers
+    M gegeben. M führt die Werkstatt, sein Angestellter G ist als Gehilfe nach Weisung tätig
+    und verwahrt in M's Abwesenheit den Schlüssel. In der Nacht des 2. Mai holt N,
+    der meint, das Motorrad stehe ihm zu, es ohne Willen von M mit einem Nachschlüssel
+    aus der Werkstatt und stellt es in seine Garage. M erfährt dies am 3. Mai. N hatte
+    gegen A tatsächlich keinen Anspruch auf das Motorrad. Beide, M und A, wollen es
+    zurück.
+  question: Welche Besitzschutzansprüche haben M und A gegen N?
+  steps:
+  - prompt: >-
+      Wer ist unmittelbarer, wer mittelbarer Besitzer, und welche Rolle hat G?
+    erwartung: >-
+      M ist unmittelbarer Besitzer (§ 854 BGB). A ist mittelbarer Besitzer, weil ihm
+      M als Besitzmittler aus dem Werkvertrag (Verwahrungselement) den Besitz vermittelt
+      (§ 868 BGB). G ist Besitzdiener (§ 855 BGB), nicht Besitzer.
+  - prompt: Liegt verbotene Eigenmacht vor?
+    erwartung: >-
+      Ja, N hat M den Besitz ohne dessen Willen entzogen (§ 858 Abs. 1 BGB), eine
+      gesetzliche Gestattung besteht nicht.
+  - prompt: Welchen Anspruch hat M?
+    erwartung: >-
+      Wiedereinräumung des Besitzes nach § 861 Abs. 1 BGB; Ausschlussgründe nach §
+      861 Abs. 2 BGB sind nicht gegeben, die Jahresfrist des § 864 Abs. 1 BGB ist
+      gewahrt. Der Einwand des N, er habe ein Recht zum Besitz, ist nach § 863 BGB
+      unbeachtlich.
+  - prompt: Welchen Anspruch hat A?
+    erwartung: >-
+      A ist als mittelbarer Besitzer nach § 869 S. 1 BGB geschützt und kann nach §
+      869 S. 2 BGB Rückgabe des Besitzes an M verlangen; wenn M den Besitz nicht wiedererlangen
+      will oder kann, an sich selbst.
+  - prompt: Gibt es sonstige Folgen für N?
+    erwartung: >-
+      Der Besitz des N ist fehlerhaft (§ 858 Abs. 2 BGB). Daneben kommt Schadensersatz
+      aus § 823 Abs. 2 BGB i. V. m. § 858 BGB in Betracht; ein Anspruch des A aus
+      § 985 BGB ist nicht Gegenstand der Frage.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Besitzlage: M unmittelbarer Besitzer, A mittelbarer Besitzer, G Besitzdiener
+      weight: 3.0
+      required: true
+      norms:
+      - § 854 BGB
+      - § 855 BGB
+      - § 868 BGB
+      keywords:
+      - Besitzdiener
+      - § 855
+      - mittelbarer Besitz
+      - Besitzmittlungsverhältnis
+      - unmittelbarer Besitzer
+      card_slugs:
+      - zr-besitz-besitzdiener-855
+      - zr-besitz-mittelbarer-besitz-868
+    - id: p2
+      label: Verbotene Eigenmacht nach § 858 Abs. 1 BGB bejaht
+      weight: 2.0
+      required: true
+      norms:
+      - § 858 Abs. 1 BGB
+      keywords:
+      - verbotene Eigenmacht
+      - § 858 Abs. 1
+      - ohne Willen
+      - Besitzentziehung
+      - Entziehung des Besitzes
+      card_slugs:
+      - zr-besitz-verbotene-eigenmacht-858
+    - id: p3
+      label: >-
+        Anspruch des M aus § 861 Abs. 1 BGB, Einwendung nach § 863 BGB unbeachtlich,
+        Frist des § 864 BGB
+      weight: 2.0
+      required: true
+      norms:
+      - § 861 Abs. 1 BGB
+      - § 863 BGB
+      - § 864 Abs. 1 BGB
+      keywords:
+      - § 861
+      - Wiedereinräumung des Besitzes
+      - § 863
+      - possessorischer Besitzschutz
+      - Jahresfrist
+      card_slugs:
+      - zr-besitz-861-862-anspruch
+    - id: p4
+      label: Anspruch des mittelbaren Besitzers A aus § 869 BGB
+      weight: 2.0
+      required: false
+      norms:
+      - § 869 BGB
+      keywords:
+      - § 869
+      - mittelbarer Besitzer
+      - Herausgabe an den unmittelbaren Besitzer
+      - Wiedereinräumung an M
+      - an sich selbst
+      card_slugs:
+      - zr-besitz-869-mittelbarer-besitzer
+    - id: p5
+      label: Fehlerhafter Besitz des N nach § 858 Abs. 2 BGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 858 Abs. 2 BGB
+      keywords:
+      - fehlerhafter Besitz
+      - § 858 Abs. 2
+      - fehlerhaft
+      card_slugs:
+      - zr-besitz-verbotene-eigenmacht-858
+  stand: 2026-10

@@ -8,8 +8,6 @@ from fastapi import APIRouter, HTTPException, status
 
 from app.api.deps import CurrentUser, DbSession
 from app.config import get_settings
-from app.core.timeutil import as_utc
-from app.models import UserCard
 from app.schemas import PlanIn
 from app.services import examen, lernprofil, srs
 from app.services.planner import generate_plan
@@ -36,22 +34,11 @@ def create_plan(payload: PlanIn, user: CurrentUser, db: DbSession) -> dict:
     # Nur sichtbare Themen: bundesrechtlicher Kern plus das Landesrecht des
     # eigenen Bundeslands (docs/32-examensvorbereitung.md Abschnitt 4).
     topics = examen.topic_inputs(db, user)
-    states = {uc.card_id: uc for uc in db.query(UserCard).filter(UserCard.user_id == user.id).all()}
+    now = datetime.now(UTC)
+    card_states = examen.visible_card_states(db, user, now=now)
 
     horizon = payload.horizon_days or (payload.exam_date - date.today()).days
-    card_states = [
-        srs.CardState(
-            stability=uc.stability,
-            difficulty=uc.difficulty,
-            due=as_utc(uc.due),
-            last_review=as_utc(uc.last_review),
-            reps=uc.reps,
-            lapses=uc.lapses,
-            state=uc.state,
-        )
-        for uc in states.values()
-    ]
-    due_forecast = srs.forecast_load(card_states, days=min(horizon, 400), now=datetime.now(UTC))
+    due_forecast = srs.forecast_load(card_states, days=min(horizon, 400), now=now)
 
     # Rhythmus aus dem Lernprofil (docs/33); explizite Ruhetage im Aufruf
     # gewinnen, damit ein Client den Plan auch ad hoc durchrechnen kann.

@@ -1,0 +1,282 @@
+topic:
+  slug: bb-bauordnungsrecht
+  area: oeffentliches-recht
+  title: "Bauordnungsrecht Brandenburg"
+  parent: oeffentliches-recht
+  bundesland: BB
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+cards:
+- slug: bb-bau-verfahren
+  type: definition
+  front: >-
+      Welche Genehmigungsverfahren kennt die BbgBO, und wie verhält sich das Bauordnungsrecht zum
+      Bauplanungsrecht?
+  back: >-
+      Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedarf nach der Brandenburgischen Bauordnung (BbgBO) grundsätzlich der Baugenehmigung, soweit in den §§ 60 bis 62, 76 und 77 BbgBO nichts anderes bestimmt ist (§ 59 Abs. 1 BbgBO). Ausnahmen und Verfahrensarten: verfahrensfreie Vorhaben (§ 61 BbgBO, Katalog), das Bauanzeigeverfahren für Wohngebäude der Gebäudeklassen 1 und 2 samt Nebenanlagen im Geltungsbereich eines Bebauungsplans nach § 30 Abs. 1 oder 2 BauGB auf Wunsch der Bauherrschaft, wenn das Vorhaben den Festsetzungen nicht widerspricht und die Erschließung gesichert ist (§ 62 BbgBO; mit der Ausführung darf nach Ablauf eines Monats nach Eingang der Anzeige begonnen werden, sofern sie nicht untersagt wird), das vereinfachte Baugenehmigungsverfahren auf Antrag für Wohngebäude der Gebäudeklassen 1 bis 3 im Geltungsbereich eines Bebauungsplans, bei dem die Behörde nur die Festsetzungen des Bebauungsplans und andere beachtliche öffentlich-rechtliche Vorschriften prüft (§ 63 BbgBO), und das Baugenehmigungsverfahren für alle übrigen genehmigungspflichtigen Anlagen mit Prüfung der Zulässigkeit nach dem BauGB, der BbgBO und anderen beachtlichen Vorschriften (§ 64 BbgBO). Verfahrensfreiheit bedeutet nicht materielle Freiheit: Die materiellen
+      Anforderungen des Bauplanungs- und Bauordnungsrechts sind einzuhalten, die Bauaufsicht kann bei
+      Verstößen einschreiten. Das Bauplanungsrecht (§§ 29 ff. BauGB) regelt als Bundesrecht die
+      bodenrechtliche Zulässigkeit, das Bauordnungsrecht als Landesrecht Gefahrenabwehr, Gestaltung
+      und Verfahren.
+  norms:
+  - "§§ 59 bis 64 BbgBO"
+  - "§ 29 BauGB"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: bb-bau-anspruch
+  type: norm
+  front: >-
+      Hat der Bauherr einen Anspruch auf die Baugenehmigung, und wie wird er durchgesetzt?
+  back: >-
+      Die Baugenehmigung ist eine gebundene Entscheidung: Sie ist zu erteilen, wenn dem Vorhaben keine
+      öffentlich-rechtlichen Vorschriften entgegenstehen, die im Genehmigungsverfahren zu prüfen sind
+      (Art. 14 Abs. 1 GG schützt die in der Eigentumsgarantie liegende Baufreiheit im Rahmen der
+      Gesetze). Die Baugenehmigung ist zu erteilen, wenn dem Vorhaben keine öffentlich-rechtlichen Vorschriften entgegenstehen (§ 72 Abs. 1 BbgBO). Der Prüfumfang hängt vom Verfahren ab (§§ 63, 64 BbgBO): Im vereinfachten Verfahren prüft die Bauaufsichtsbehörde die Festsetzungen des Bebauungsplans und andere öffentlich-rechtliche Vorschriften, soweit diese für das Vorhaben beachtlich sind (§ 63 Abs. 3 BbgBO), im Baugenehmigungsverfahren darüber hinaus die Vorschriften der BbgBO (§ 64 BbgBO). Das Bauplanungsrecht folgt aus §§ 30, 34, 35 BauGB je nach Gebietslage (beplanter
+      Bereich, Innenbereich, Außenbereich); wo die Gemeinde nicht selbst Genehmigungsbehörde ist, ist
+      ihr Einvernehmen nach § 36 BauGB erforderlich. Die Genehmigung ergeht unbeschadet privater
+      Rechte Dritter. Rechtsschutz: Verpflichtungsklage nach § 42 Abs. 1 Var. 2 VwGO, nach erfolglosem
+      Antrag bzw. nach Versagung; mit Bauvorbescheid lassen sich einzelne Fragen vorab klären.
+  norms:
+  - "Art. 14 Abs. 1 GG"
+  - "§ 36 BauGB"
+  - "§ 42 Abs. 1 VwGO"
+  - "§ 72 BbgBO"
+  - "§§ 63, 64 BbgBO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: bb-bau-abstandsflaechen
+  type: norm
+  front: "Was regeln die Abstandsflächen, und sind sie nachbarschützend?"
+  back: >-
+      Vor den Außenwänden oberirdischer Gebäude sind Flächen von Gebäuden und baulichen Anlagen
+      freizuhalten (Abstandsflächen). Ihre Tiefe bemisst sich nach der Höhe H; sie beträgt 0,4 H, mindestens 3 m, in Gewerbe- und Industriegebieten 0,2 H (mindestens 3 m); vor Außenwänden von Gebäuden der Gebäudeklassen 1 und 2 mit nicht mehr als drei oberirdischen Geschossen genügen 3 m (§ 6 Abs. 5 BbgBO). Die Abstandsflächen
+      müssen grundsätzlich auf dem Baugrundstück selbst liegen und dürfen sich nicht überdecken.
+      Zwecke sind ausreichende Belichtung, Belüftung, Brandschutz und Wahrung des Wohnfriedens. Das
+      Abstandsflächenrecht ist nachbarschützend, soweit seine Zwecke dem Nachbarn dienen; der Nachbar
+      kann seine Verletzung daher rügen. An der Grenze darf gebaut werden, wenn das Planungsrecht
+      Grenzbebauung vorschreibt oder zulässt (geschlossene Bauweise, § 22 BauNVO). Die Bauaufsichtsbehörde hat Abweichungen zuzulassen, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der öffentlich-rechtlich geschützten nachbarlichen Belange mit den öffentlichen Belangen vereinbar sind (§ 67 Abs. 1 BbgBO).
+  norms:
+  - "§ 6 BbgBO"
+  - "§ 22 BauNVO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: bb-bau-nachbarschutz
+  type: streitstand
+  front: >-
+      Unter welchen Voraussetzungen kann ein Nachbar eine Baugenehmigung erfolgreich angreifen, und
+      welche Rolle spielt § 212a BauGB?
+  back: >-
+      Die Drittanfechtung hat nur Erfolg, wenn die Genehmigung rechtswidrig ist und gerade gegen eine
+      nachbarschützende Norm verstößt (Schutznormtheorie, § 113 Abs. 1 S. 1 VwGO). Nachbarschützend
+      sind insbesondere das Abstandsflächenrecht, die Festsetzungen zur Art der baulichen Nutzung
+      (Gebietserhaltungsanspruch) und das Gebot der Rücksichtnahme, das über § 15 Abs. 1 S. 2 BauNVO,
+      § 34 Abs. 1 BauGB (Einfügen) oder § 35 Abs. 3 BauGB wirkt. Widerspruch und Anfechtungsklage des
+      Nachbarn haben nach § 212a Abs. 1 BauGB keine aufschiebende Wirkung; der Bauherr darf auf
+      Grundlage der Genehmigung bauen. Vorläufiger Rechtsschutz: Antrag auf Anordnung der
+      aufschiebenden Wirkung nach § 80a Abs. 3 i. V. m. § 80 Abs. 5 VwGO. Streitig ist, ob schon die
+      formelle Rechtswidrigkeit wegen unterbliebener Nachbarbeteiligung allein zum Erfolg führt; nach
+      h. M. kommt es auf eine materielle Verletzung subjektiv-öffentlicher Nachbarrechte an.
+  norms:
+  - "§ 212a Abs. 1 BauGB"
+  - "§ 80a Abs. 3 VwGO"
+  - "§ 80 Abs. 5 VwGO"
+  - "§ 15 Abs. 1 S. 2 BauNVO"
+  - "§ 113 Abs. 1 S. 1 VwGO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: bb-bau-eingriff
+  type: definition
+  front: >-
+      Welche bauaufsichtlichen Eingriffsmaßnahmen gibt es, und wann dürfen sie ergehen?
+  back: >-
+      Die Bauaufsichtsbehörde überwacht die Einhaltung des öffentlichen Baurechts und kann nach der BbgBO einschreiten. Baueinstellung (§ 79 BbgBO): Werden Anlagen im Widerspruch zu öffentlich-rechtlichen Vorschriften errichtet, geändert oder beseitigt, kann die Einstellung der Arbeiten angeordnet werden; sie dient der Sicherung. Nutzungsuntersagung (§ 80 Abs. 1 S. 2 BbgBO): Verbot einer im Widerspruch zu öffentlich-rechtlichen Vorschriften erfolgenden Nutzung, regelmäßig bei formeller Illegalität, wenn die Nutzung nicht ohne Weiteres genehmigungsfähig ist. Beseitigungsanordnung (§ 80 Abs. 1 S. 1 BbgBO): die schärfste Maßnahme; sie ist nur zulässig, wenn nicht auf andere Weise rechtmäßige Zustände hergestellt werden können, und setzt nach h. M. formelle und materielle Illegalität voraus, weil eine Beseitigung bei materiell legalem Vorhaben unverhältnismäßig wäre.
+      Alle Maßnahmen stehen im Ermessen der Behörde und müssen verhältnismäßig sein; Adressaten sind
+      Bauherr, Eigentümer oder Nutzer. Ein Anspruch des Nachbarn auf Einschreiten besteht nur
+      ausnahmsweise bei Verletzung nachbarschützender Vorschriften und Ermessensreduktion auf Null.
+  norms:
+  - "§ 79 BbgBO"
+  - "§ 80 BbgBO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: bb-bau-abweichung
+  type: definition
+  front: >-
+      Wie unterscheiden sich Abweichung (Bauordnungsrecht) und Ausnahme bzw. Befreiung
+      (Bauplanungsrecht)?
+  back: >-
+      Im Bauordnungsrecht hat die Bauaufsichtsbehörde Abweichungen von Anforderungen der BbgBO zuzulassen, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der öffentlich-rechtlich geschützten nachbarlichen Belange mit den öffentlichen Belangen vereinbar sind (§ 67 Abs. 1 BbgBO); die Zulassung ist gesondert in Textform zu beantragen und zu begründen (§ 67 Abs. 2 BbgBO). Vor der Zulassung sind betroffene Nachbarn durch Zustellung zu benachrichtigen und können sich innerhalb eines Monats äußern (§ 70 Abs. 2 BbgBO). Im Bauplanungsrecht lässt § 31
+      Abs. 1 BauGB Ausnahmen zu, soweit der Bebauungsplan sie vorsieht. Nach § 31 Abs. 2 BauGB ist
+      eine Befreiung von Festsetzungen möglich, wenn die Grundzüge der Planung nicht berührt werden
+      und einer der Befreiungsgründe (Allgemeinwohl, städtebauliche Vertretbarkeit, offenbar nicht
+      beabsichtigte Härte) vorliegt; die Abweichung muss zudem mit den öffentlichen Belangen vereinbar
+      sein und nachbarliche Interessen würdigen. Wird von nachbarschützenden Festsetzungen befreit,
+      hat der Nachbar einen Anspruch auf Würdigung seiner Belange.
+  norms:
+  - "§ 31 Abs. 1 BauGB"
+  - "§ 31 Abs. 2 BauGB"
+  - "§ 67 BbgBO"
+  - "§ 70 BbgBO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: bb-bau-bestandsschutz
+  type: definition
+  front: "Was schützt der Bestandsschutz, und wo liegen seine Grenzen?"
+  back: >-
+      Passiver Bestandsschutz folgt aus Art. 14 Abs. 1 GG: Eine bauliche Anlage, die zu irgendeinem
+      Zeitpunkt rechtmäßig genehmigt oder materiell legal errichtet wurde, darf in ihrem genehmigten
+      Bestand und ihrer Nutzung erhalten bleiben, auch wenn sich später die Rechtslage geändert hat;
+      bauaufsichtliche Eingriffe wie Beseitigungsanordnung oder Nutzungsuntersagung scheiden aus,
+      solange die Voraussetzungen fortbestehen. Der Schutz erlischt, wenn die Anlage zerstört, ihre
+      Substanz in wesentlichem Umfang erneuert oder die Nutzung aufgegeben wird; die Identität der
+      Anlage muss gewahrt sein. Einen aktiven Bestandsschutz, also einen unmittelbar aus Art. 14 GG
+      abgeleiteten Anspruch auf Erweiterung oder Änderung, erkennt das Bundesverwaltungsgericht nicht
+      mehr an. Zur Abwehr von erheblichen Gefahren für Leben oder Gesundheit können die Bauaufsichtsbehörden die Vorschriften der BbgBO auch auf bestehende Anlagen anwenden (§ 81 Abs. 1 BbgBO).
+  norms:
+  - "Art. 14 Abs. 1 GG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: bb-schema-bau-nachbarschutz
+  title: "Eilrechtsschutz des Nachbarn gegen eine Baugenehmigung"
+  norms:
+  - "§ 212a Abs. 1 BauGB"
+  - "§ 80a Abs. 3 VwGO"
+  - "§ 80 Abs. 5 VwGO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  steps:
+  - label: "I. Zulässigkeit des Antrags nach § 80a Abs. 3, § 80 Abs. 5 VwGO"
+    children:
+    - label: "1. Verwaltungsrechtsweg, § 40 Abs. 1 VwGO"
+    - label: >-
+        2. Statthaftigkeit: Hauptsacherechtsbehelf des Nachbarn ohne aufschiebende Wirkung (§ 212a
+        BauGB)
+    - label: "3. Antragsbefugnis analog § 42 Abs. 2 VwGO"
+    - label: "4. Richtiger Antragsgegner und zuständiges Gericht"
+  - label: >-
+      II. Begründetheit: Interessenabwägung
+    children:
+    - label: "1. Summarische Prüfung der Erfolgsaussichten der Hauptsache"
+      hinweis: >-
+          Rechtswidrigkeit der Genehmigung und Verletzung nachbarschützender Normen.
+      children:
+      - label: "a) Rechtswidrigkeit der Baugenehmigung"
+      - label: "b) Verstoß gegen nachbarschützende Vorschrift (Schutznormtheorie)"
+    - label: "2. Abwägung der Vollzugs- und Aussetzungsinteressen"
+faelle:
+- slug: bb-fall-bau-nachbarwiderspruch
+  title: "Der Widerspruch des Nachbarn"
+  difficulty: 3
+  minutes: 50
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "§ 212a Abs. 1 BauGB"
+  facts: >-
+      Bauherr B erhält von der Bauaufsichtsbehörde in Brandenburg eine Baugenehmigung für ein
+      viergeschossiges Wohnhaus in geringem Abstand zur Grenze des Grundstücks des N. Nach den
+      eingereichten Plänen unterschreitet das Gebäude die erforderliche Abstandsfläche zum Grundstück
+      des N um 1,50 Meter; eine Abweichung wurde nicht beantragt und nicht erteilt. N legt Widerspruch
+      gegen die Baugenehmigung ein. B beginnt trotzdem unverzüglich mit den Bauarbeiten. N möchte
+      verhindern, dass vollendete Tatsachen geschaffen werden.
+  question: >-
+      Hat der Widerspruch des N aufschiebende Wirkung? Welchen vorläufigen Rechtsschutz kann N
+      erlangen, und hat er Aussicht auf Erfolg?
+  steps:
+  - prompt: "Hat der Widerspruch aufschiebende Wirkung?"
+    erwartung: >-
+        Nein. Nach § 212a Abs. 1 BauGB haben Widerspruch und Anfechtungsklage eines Dritten gegen die
+        bauaufsichtliche Zulassung eines Vorhabens keine aufschiebende Wirkung. Der Bauherr darf bauen.
+  - prompt: "Welcher Antrag ist statthaft?"
+    erwartung: >-
+        N kann beim Verwaltungsgericht beantragen, die aufschiebende Wirkung seines Widerspruchs
+        anzuordnen, § 80a Abs. 3 i. V. m. § 80 Abs. 5 S. 1 VwGO. Er ist als Dritter antragsbefugt, weil
+        eine Verletzung nachbarschützender Rechte möglich erscheint.
+  - prompt: >-
+        Ist die Baugenehmigung rechtswidrig und verletzt sie den N in eigenen Rechten?
+    erwartung: >-
+        Ja. Das Vorhaben unterschreitet die erforderliche Abstandsfläche; die Genehmigung verstößt gegen
+        das Abstandsflächenrecht der BbgBO, ohne dass eine Abweichung erteilt wurde. Das
+        Abstandsflächenrecht ist nachbarschützend, N ist daher in eigenen Rechten verletzt
+        (Schutznormtheorie).
+  - prompt: "Wie fällt die Interessenabwägung aus?"
+    erwartung: >-
+        Weil die Hauptsache voraussichtlich Erfolg hat, überwiegt das Aussetzungsinteresse des N das
+        Vollzugsinteresse des B; der Antrag hat Aussicht auf Erfolg.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: "Fehlende aufschiebende Wirkung nach § 212a Abs. 1 BauGB erkannt"
+      weight: 2.5
+      required: true
+      norms:
+      - "§ 212a Abs. 1 BauGB"
+      keywords:
+      - "§ 212a Abs. 1 BauGB"
+      - "keine aufschiebende Wirkung"
+      - "Drittwiderspruch"
+      - "Nachbarwiderspruch"
+      - "Baugenehmigung eines Dritten"
+      card_slugs:
+      - "bb-bau-nachbarschutz"
+    - id: p2
+      label: "Statthafter Eilantrag nach § 80a Abs. 3 i. V. m. § 80 Abs. 5 VwGO"
+      weight: 2.5
+      required: true
+      norms:
+      - "§ 80a Abs. 3 VwGO"
+      - "§ 80 Abs. 5 VwGO"
+      keywords:
+      - "§ 80a Abs. 3 VwGO"
+      - "§ 80 Abs. 5 VwGO"
+      - "Anordnung der aufschiebenden Wirkung"
+      - "einstweiliger Rechtsschutz"
+      - "Antrag auf Anordnung"
+      card_slugs:
+      - "bb-bau-nachbarschutz"
+    - id: p3
+      label: >-
+          Abstandsflächenrecht als nachbarschützende Norm; Rechtsverletzung des N
+      weight: 2.5
+      required: true
+      norms:
+      - "§ 6 BbgBO"
+      keywords:
+      - "Abstandsflächen"
+      - "nachbarschützend"
+      - "Schutznormtheorie"
+      - "Rechtsverletzung des Nachbarn"
+      - "§ 6 BbgBO"
+      card_slugs:
+      - "bb-bau-abstandsflaechen"
+      - "bb-bau-nachbarschutz"
+    - id: p4
+      label: >-
+          Interessenabwägung: Erfolgsaussichten der Hauptsache
+      weight: 1.5
+      required: false
+      keywords:
+      - "Interessenabwägung"
+      - "Erfolgsaussichten der Hauptsache"
+      - "Aussetzungsinteresse"
+      - "Vollzugsinteresse"
+      card_slugs:
+      - "bb-bau-nachbarschutz"

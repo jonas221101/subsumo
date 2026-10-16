@@ -1,0 +1,331 @@
+topic:
+  slug: or-gr-gleichheitsrechte-speziell
+  area: oeffentliches-recht
+  title: 'Art. 3 Abs. 2 und 3 GG: Besondere Gleichheitsrechte und Diskriminierungsverbote'
+  parent: or-grundrechte
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-gr-glsp-art3-abs2-geschlecht
+  type: definition
+  front: "Was regelt Art. 3 Abs. 2 S. 1 GG, und wie verhält er sich zu Art. 3 Abs. 3 S. 1 GG?"
+  back: >-
+    Art. 3 Abs. 2 S. 1 GG bestimmt, dass Männer und Frauen gleichberechtigt sind. Die
+    Norm enthält nach dem BVerfG nicht nur ein Differenzierungsverbot, sondern auch ein
+    Gleichberechtigungsgebot, das auf die Angleichung der Lebensverhältnisse in der
+    gesellschaftlichen Wirklichkeit zielt. Da Art. 3 Abs. 3 S. 1 GG
+    Benachteiligungen und Bevorzugungen wegen des Geschlechts verbietet, überschneiden
+    sich beide Normen. Das BVerfG prüft häufig beide gemeinsam; Art. 3 Abs. 3 S. 1 GG
+    wird eher als Differenzierungsverbot, Art. 3 Abs. 2 S. 1 GG zusätzlich als
+    Gleichberechtigungsgebot verstanden. Wichtig ist die
+    Abgrenzung zu Art. 3 Abs. 1 GG: Beide Normen sind im Verhältnis zum allgemeinen
+    Gleichheitssatz speziell und verlangen eine strengere Rechtfertigung. Die Norm ist ein Jedermannrecht. Art. 3 Abs. 3 S. 1 GG schützt nach BVerfGE 147, 1 auch Personen, die sich dauerhaft weder als männlich noch als weiblich verstehen.
+  norms:
+  - Art. 3 Abs. 2 S. 1 GG
+  - Art. 3 Abs. 3 S. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 147, 1 (dritte Option)
+- slug: or-gr-glsp-art3-abs3-merkmale-wegen
+  type: norm
+  front: "Welche Merkmale nennt Art. 3 Abs. 3 S. 1 GG, und was bedeutet „wegen“?"
+  back: >-
+    Niemand darf wegen seines Geschlechts, seiner Abstammung, seiner Rasse, seiner
+    Sprache, seiner Heimat und Herkunft, seines Glaubens, seiner religiösen oder
+    politischen Anschauungen benachteiligt oder bevorzugt werden. Das Verbot gilt für
+    Benachteiligungen wie für Bevorzugungen. Abstammung ist die natürliche
+    Beziehung zu Vorfahren; Heimat ist die örtliche Herkunft nach Geburt oder
+    Ansässigkeit; Herkunft die soziale Herkunft. Der Begriff Rasse ist
+    problematisch, weil es Menschenrassen nicht gibt; verfassungsrechtlich wird
+    jede rassistische Zuschreibung erfasst, die Frage einer Textänderung ist
+    Gegenstand der rechtspolitischen Diskussion. „Wegen“ verlangt eine Anknüpfung:
+    Die Differenzierung muss an das Merkmal tatbestandlich anknüpfen oder
+    seine Berücksichtigung bezwecken. Ob auch mittelbare Differenzierungen
+    erfasst sind, ist eine Frage der mittelbaren Diskriminierung.
+  norms:
+  - Art. 3 Abs. 3 S. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: or-gr-glsp-rechtfertigung-art3-abs3
+  type: streitstand
+  front: "Ist eine Ungleichbehandlung wegen eines Merkmals des Art. 3 Abs. 3 GG rechtfertigbar?"
+  back: >-
+    Art. 3 Abs. 3 GG enthält keinen Gesetzesvorbehalt. Nach der älteren
+    Auffassung waren Anknüpfungen an diese Merkmale absolut verboten. Das BVerfG
+    hat dies relativiert: Eine Differenzierung wegen des Geschlechts ist nur
+    zulässig, wenn sie zur Lösung von Problemen, die ihrer Natur nach nur bei
+    Männern oder nur bei Frauen auftreten können, zwingend erforderlich ist (z. B.
+    Mutterschutz), oder wenn kollidierendes Verfassungsrecht sie rechtfertigt, etwa der Förderauftrag des Art. 3 Abs. 2 S. 2 GG. Biologische
+    Unterschiede und die funktionale Arbeitsteilung, wie sie sich in
+    traditionellen Rollenbildern findet, tragen die Ungleichbehandlung dagegen
+    nicht. Teile der Literatur wollen Art. 3 Abs. 3 GG demgegenüber einer
+    Verhältnismäßigkeitsprüfung unterwerfen und so Rechtfertigung aus legitimen
+    Zwecken zulassen. Die Rechtsprechung verlangt einen strengen Maßstab der
+    Verhältnismäßigkeit, der in der Sache in der Nähe eines absoluten Verbots liegt.
+  norms:
+  - Art. 3 Abs. 3 S. 1 GG
+  - Art. 3 Abs. 2 GG
+  quellen:
+  - BVerfGE 85, 191 (Nachtarbeitsverbot)
+  - BVerfGE 92, 91 (Feuerwehrabgabe)
+- slug: or-gr-glsp-mittelbare-diskriminierung
+  type: definition
+  front: "Was ist mittelbare Diskriminierung, und ist sie von Art. 3 Abs. 2, 3 GG erfasst?"
+  back: >-
+    Eine mittelbare Diskriminierung liegt vor, wenn eine Regelung formal
+    neutral formuliert ist und nicht an ein Merkmal des Art. 3 Abs. 3 GG
+    anknüpft, tatsächlich aber eine Gruppe, die durch ein solches Merkmal bestimmt wird,
+    typischerweise wesentlich stärker benachteiligt, etwa die Schlechterstellung von
+    Teilzeitbeschäftigten, die überwiegend Frauen sind. Das BVerfG hat mittelbare Benachteiligungen
+    im Rahmen von Art. 3 Abs. 2 und 3 GG berücksichtigt, wenn die Benachteiligung
+    gerade an das geschützte Merkmal rückgebunden werden kann, die Dogmatik ist
+    aber nicht abschließend geklärt. Verlangt wird jedenfalls eine besondere
+    Rechtfertigung: Die Regelung muss durch
+    ein legitimes Ziel gerechtfertigt sein und das Mittel verhältnismäßig. Im
+    Unionsrecht ist die mittelbare Diskriminierung ausdrücklich geregelt (Art. 2 Abs. 1 Buchst. b RL 2006/54/EG; § 3 Abs. 2 AGG). Die Dogmatik im Grundgesetz ist weniger
+    gefestigt: Teilweise wird die mittelbare Benachteiligung über Art. 3 Abs. 1 GG
+    mit verschärftem Maßstab erfasst. Wichtig ist der Nachweis der typischen
+    Betroffenheit der Gruppe durch Statistik.
+  norms:
+  - Art. 3 Abs. 2 GG
+  - Art. 3 Abs. 3 S. 1 GG
+  - § 3 Abs. 2 AGG
+  quellen:
+  - GG, amtliche Fassung
+  - AGG, amtliche Fassung
+- slug: or-gr-glsp-art3-abs2-s2-foerderauftrag
+  type: norm
+  front: "Was bedeutet der Förderauftrag des Art. 3 Abs. 2 S. 2 GG, und wie weit dürfen Fördermaßnahmen gehen?"
+  back: >-
+    Art. 3 Abs. 2 S. 2 GG (seit 1994) verpflichtet den Staat, die tatsächliche
+    Durchsetzung der Gleichberechtigung zu fördern und auf die Beseitigung bestehender
+    Nachteile hinzuwirken. Die Norm ist ein Staatsziel und legitimiert Maßnahmen
+    der Frauenförderung. Zulässig sind Maßnahmen, die faktische Nachteile
+    ausgleichen: Förderprogramme, Gleichstellungsbeauftragte, Beratungsangebote,
+    Kinderbetreuung. Bei Quoten und Vorrangregeln ist die Abgrenzung zum
+    Verbot der Bevorzugung nach Art. 3 Abs. 3 S. 1 GG und zum Leistungsprinzip des
+    Art. 33 Abs. 2 GG zu beachten. Eine starre, leistungsunabhängige Bevorzugung
+    ist unzulässig. Rechtfertigbar sind Vorrangregeln bei gleicher
+    Qualifikation, wenn sie eine Öffnungs- oder Härtefallklausel enthalten, die
+    schutzwürdige Belange des männlichen Mitbewerbers im Einzelfall berücksichtigt
+    (Unionsrecht: EuGH-Rechtsprechung zu Marschall). Förderung darf zudem
+    Schutzvorschriften nicht zur Rollenfixierung nutzen: Schutzmaßnahmen, die die
+    Nachteile verfestigen, sind nicht von Art. 3 Abs. 2 S. 2 GG gedeckt.
+  norms:
+  - Art. 3 Abs. 2 S. 2 GG
+  - Art. 3 Abs. 3 S. 1 GG
+  - Art. 33 Abs. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: or-gr-glsp-art3-abs3-s2-behinderung
+  type: definition
+  front: "Was verbietet Art. 3 Abs. 3 S. 2 GG, und was bedeutet Benachteiligung wegen einer Behinderung?"
+  back: >-
+    Art. 3 Abs. 3 S. 2 GG bestimmt, dass niemand wegen seiner Behinderung benachteiligt
+    werden darf. Behinderung sind körperliche, seelische, geistige oder Sinnesbeeinträchtigungen, die in Wechselwirkung mit Barrieren die gleichberechtigte Teilhabe hindern können und voraussichtlich länger als sechs Monate bestehen (§ 2 Abs. 1 SGB IX). Anders als Satz 1 verbietet die Norm nur Benachteiligungen,
+    nicht die Bevorzugung; Fördermaßnahmen zugunsten behinderter Menschen sind
+    also zulässig. Eine Benachteiligung liegt vor, wenn die Lebenssituation Behinderter durch Regelungen im Vergleich zu nichtbehinderten Menschen verschlechtert wird, weil ihnen Entfaltungs- und Betätigungsmöglichkeiten vorenthalten werden, die anderen offenstehen; das gilt auch für den Ausschluss von Chancen, soweit er nicht durch Fördermaßnahmen hinreichend kompensiert wird (BVerfGE 96, 288). Das Verbot enthält
+    auch eine Schutzpflicht: Der Staat muss den Behinderten wirksam vor
+    Benachteiligung schützen (Triage-Beschluss, BVerfG vom 16.12.2021 -
+    1 BvR 1541/20; zur späteren Entscheidung vom 23.09.2025 über die Triage-Regelungen im Infektionsschutzgesetz, die wegen fehlender Gesetzgebungskompetenz des Bundes für nichtig erklärt wurden, siehe BVerfG, 1 BvR 2284/23). Die Rechtfertigung ist nur aus zwingenden Gründen möglich,
+    unter dem Vorbehalt des organisatorisch, personell und sachlich Möglichen.
+  norms:
+  - Art. 3 Abs. 3 S. 2 GG
+  - § 2 Abs. 1 SGB IX
+  quellen:
+  - BVerfGE 96, 288 (Integrative Beschulung)
+  - BVerfG, Beschluss vom 16.12.2021 - 1 BvR 1541/20 (Triage)
+- slug: or-gr-glsp-nachtarbeitsverbot
+  type: rechtsprechung
+  front: "Was hat das BVerfG zum Nachtarbeitsverbot für Arbeiterinnen entschieden?"
+  back: >-
+    In BVerfGE 85, 191 (1992) hat das BVerfG das Verbot der Nachtarbeit für Arbeiterinnen in
+    der Arbeitszeitordnung für verfassungswidrig erklärt. Das Verbot knüpfte
+    unmittelbar an das Geschlecht an und benachteiligte Frauen, weil es ihnen
+    Beschäftigungsmöglichkeiten nahm, die Männern offenstanden; es verstieß gegen
+    Art. 3 Abs. 3 S. 1 und Art. 3 Abs. 2 GG. Die Rechtfertigung durch den Schutz der
+    Frauen wegen der besonderen Belastung durch Haushalt und Familie
+    scheiterte, weil die Regelung traditionelle Rollenverteilungen verfestigt. Auch
+    biologische Unterschiede trugen das Verbot nicht, weil Nachtarbeit für Männer
+    und Frauen gesundheitsschädlich ist. Auch der 1994 eingefügte Förderauftrag des Art. 3 Abs. 2 S. 2 GG würde ein
+    solches Verbot nicht tragen, weil dieses die Nachteile nicht abbaut, sondern
+    verfestigt. Berührt ist zudem die Berufsfreiheit der betroffenen Frauen
+    (Art. 12 Abs. 1 GG).
+  norms:
+  - Art. 3 Abs. 2 GG
+  - Art. 3 Abs. 3 S. 1 GG
+  - Art. 12 Abs. 1 GG
+  quellen:
+  - BVerfGE 85, 191 (Nachtarbeitsverbot)
+- slug: or-gr-glsp-verhaeltnis-art3-abs1
+  type: schema_step
+  front: "Wie ist das Verhältnis der besonderen Gleichheitsrechte (Art. 3 Abs. 2, 3 GG) zum allgemeinen Gleichheitssatz, und wie prüft man sie?"
+  back: >-
+    Art. 3 Abs. 2 und 3 GG sind speziellere Gleichheitsrechte und gehen Art. 3 Abs. 1 GG
+    vor, soweit die Ungleichbehandlung an eines der genannten Merkmale
+    anknüpft; die Prüfung von Abs. 1 entfällt dann. Aufbau: (1) Anknüpfung an ein
+    Merkmal des Abs. 3 beziehungsweise an das Geschlecht (unmittelbar oder
+    mittelbar), mit Feststellung der Benachteiligung oder Bevorzugung im
+    Vergleich zu Personen ohne das Merkmal. (2) Rechtfertigung: strenge
+    Prüfung mit zwingendem Grund, kollidierendem Verfassungsrecht oder
+    Problemen, die ihrer Natur nach nur ein Geschlecht betreffen,
+    und mit Verhältnismäßigkeit. (3) Bei mittelbarer Differenzierung ist eine
+    typisierte Betroffenheit der Gruppe nachzuweisen. Wird nicht an die Merkmale
+    angeknüpft, bleibt es bei Art. 3 Abs. 1 GG. Die besonderen Merkmale wirken
+    gleichwohl über die Abstufung der Prüfungsmaßstäbe in Art. 3 Abs. 1 GG
+    nach (neue Formel), je näher die Differenzierung an Art. 3 Abs. 3 GG liegt.
+  norms:
+  - Art. 3 Abs. 1 GG
+  - Art. 3 Abs. 2 GG
+  - Art. 3 Abs. 3 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: or-gr-glsp-dritte-option-geschlecht
+  type: rechtsprechung
+  front: "Was hat das BVerfG zur Eintragung eines dritten Geschlechts entschieden (dritte Option)?"
+  back: >-
+    Im Beschluss vom 10.10.2017 (BVerfGE 147, 1) entschied das BVerfG, dass die
+    Regelungen des Personenstandsrechts verfassungswidrig sind, soweit sie Personen, die
+    sich dauerhaft weder dem männlichen noch dem weiblichen Geschlecht zuordnen
+    lassen, zwingen, sich einem dieser Geschlechter zuzuordnen oder auf eine Angabe
+    zu verzichten. Das allgemeine Persönlichkeitsrecht (Art. 2 Abs. 1 i. V. m. Art.
+    1 Abs. 1 GG) schützt die geschlechtliche Identität. Zudem verletzt die Regelung
+    Art. 3 Abs. 3 S. 1 GG, weil Betroffene wegen ihres Geschlechts diskriminiert
+    werden, wenn für sie kein positiver Geschlechtseintrag zur Verfügung
+    steht. Das Gericht gab dem Gesetzgeber auf, entweder einen weiteren
+    positiven Eintrag zu schaffen oder auf den Geschlechtseintrag zu verzichten. Der
+    Gesetzgeber hat daraufhin 2018 § 45b PStG geschaffen; mit dem
+    Selbstbestimmungsgesetz (in Kraft seit 1.11.2024) kann der Geschlechtseintrag
+    durch Erklärung gegenüber dem Standesamt geändert werden.
+  norms:
+  - Art. 3 Abs. 3 S. 1 GG
+  - Art. 2 Abs. 1 GG
+  - Art. 1 Abs. 1 GG
+  quellen:
+  - BVerfGE 147, 1 (Dritte Option)
+schemata:
+- slug: or-schema-gr-glsp-art3-abs2-3
+  title: Prüfung einer Benachteiligung nach Art. 3 Abs. 2, 3 GG
+  norms:
+  - Art. 3 Abs. 2 GG
+  - Art. 3 Abs. 3 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Persönlicher und sachlicher Schutzbereich
+    hinweis: Jedermannrecht. Das jeweils betroffene Merkmal bestimmen (Geschlecht,
+      Behinderung, ...). Spezialität gegenüber Art. 3 Abs. 1 GG.
+  - label: II. Ungleichbehandlung wegen eines Merkmals
+    children:
+    - label: 1. Unmittelbare Anknüpfung an das Merkmal
+    - label: 2. Mittelbare Benachteiligung
+      hinweis: Neutrale Regel mit typisch stärkerer Betroffenheit der Merkmalsgruppe;
+        Statistik oder typische Betroffenheit darlegen.
+  - label: III. Rechtfertigung
+    children:
+    - label: 1. Kollidierendes Verfassungsrecht, zwingende Gründe oder biologisch-
+        funktionale Unterschiede, die nur ein Geschlecht betreffen
+      hinweis: Rollenklischees und Schutzgedanken, die Nachteile verfestigen,
+        rechtfertigen nicht.
+    - label: 2. Fördermaßnahme nach Art. 3 Abs. 2 S. 2 GG?
+    - label: 3. Verhältnismäßigkeit in strengem Maßstab
+  - label: IV. Ergebnis
+faelle:
+- slug: or-fall-gr-glsp-nachtarbeit-frauen
+  title: Das Nachtarbeitsverbot für Arbeiterinnen
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  facts: >-
+    Ein (fiktives) Bundesgesetz verbietet die Beschäftigung von Arbeiterinnen in
+    Industriebetrieben zwischen 20 und 6 Uhr; für Arbeiter gilt keine entsprechende
+    Beschränkung. Der Gesetzgeber begründet das mit der besonderen Belastung der
+    Frauen durch Haushalt und Familie und mit ihrer körperlichen Konstitution,
+    die Nachtarbeit weniger gut vertrage. Die Fabrikarbeiterin F möchte aus
+    finanziellen Gründen Nachtschichten übernehmen und wird von ihrem Arbeitgeber unter
+    Hinweis auf das Gesetz abgelehnt. Sie erhebt nach Erschöpfung des Rechtswegs
+    Verfassungsbeschwerde.
+  question: Verletzt das Gesetz die F in Art. 3 Abs. 2 und 3 GG?
+  steps:
+  - prompt: Liegt eine Ungleichbehandlung wegen des Geschlechts vor?
+    erwartung: Ja. Das Verbot knüpft unmittelbar an das Geschlecht an und benachteiligt
+      Frauen gegenüber Männern, denen die Beschäftigung offensteht. Art. 3 Abs. 3
+      S. 1 und Art. 3 Abs. 2 S. 1 GG sind als Spezialnormen vor Art. 3 Abs. 1 GG
+      anzuwenden.
+  - prompt: Kann die Ungleichbehandlung durch die Belastung der Frauen oder deren Konstitution gerechtfertigt werden?
+    erwartung: Nein. Die Differenzierung wegen des Geschlechts ist nur zulässig, wenn sie
+      zur Lösung von Problemen, die ihrer Natur nach nur bei einem Geschlecht
+      auftreten, zwingend erforderlich ist. Die Belastung durch Haushalt und Familie ist
+      keine biologische, sondern eine rollenbedingte Folge und wird durch das Verbot
+      verfestigt. Nachtarbeit ist für Männer wie Frauen belastend, ein Unterschied
+      in der Konstitution trägt das Verbot daher nicht.
+  - prompt: Rechtfertigt Art. 3 Abs. 2 S. 2 GG das Verbot?
+    erwartung: Nein. Der Förderauftrag legitimiert nur Maßnahmen, die bestehende Nachteile
+      abbauen. Das Verbot nimmt den Frauen Erwerbschancen und verfestigt tradierte
+      Rollenbilder. Es verstößt damit gegen Art. 3 Abs. 2 und 3 S. 1 GG und ist auch
+      ein Eingriff in Art. 12 Abs. 1 GG.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Unmittelbare Anknüpfung an das Geschlecht, Art. 3 Abs. 2 und 3 S. 1 GG als Spezialnormen
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 3 Abs. 3 S. 1 GG
+      - Art. 3 Abs. 2 S. 1 GG
+      keywords:
+      - Anknüpfung an das Geschlecht
+      - Art. 3 Abs. 3 S. 1 GG
+      - Art. 3 Abs. 2 S. 1 GG
+      - Spezialität
+      - lex specialis
+      card_slugs:
+      - or-gr-glsp-art3-abs2-geschlecht
+      - or-gr-glsp-verhaeltnis-art3-abs1
+    - id: p2
+      label: Rechtfertigung nur bei zwingender Erforderlichkeit - biologische Unterschiede/Rollenbilder tragen nicht
+      weight: 3.0
+      required: true
+      keywords:
+      - zwingend erforderlich
+      - Probleme, die ihrer Natur nach nur
+      - Rollenverteilung
+      - biologische Unterschiede
+      - traditionelle Rollenbilder
+      - Nachtarbeitsverbot
+      card_slugs:
+      - or-gr-glsp-rechtfertigung-art3-abs3
+      - or-gr-glsp-nachtarbeitsverbot
+    - id: p3
+      label: Art. 3 Abs. 2 S. 2 GG trägt das Verbot nicht, da es Nachteile verfestigt
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 3 Abs. 2 S. 2 GG
+      keywords:
+      - Förderauftrag
+      - Art. 3 Abs. 2 S. 2 GG
+      - Nachteile verfestigt
+      - faktische Nachteile
+      - Beseitigung bestehender Nachteile
+      card_slugs:
+      - or-gr-glsp-art3-abs2-s2-foerderauftrag
+    - id: p4
+      label: Ergebnis - Verletzung, zugleich Eingriff in Art. 12 Abs. 1 GG
+      weight: 1.0
+      required: false
+      keywords:
+      - Verletzung von Art. 3
+      - Verletzung der Gleichberechtigung
+      - Verstoß gegen das Diskriminierungsverbot
+      - Art. 12 Abs. 1 GG

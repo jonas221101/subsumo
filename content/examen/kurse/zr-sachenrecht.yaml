@@ -4,16 +4,19 @@ kurs:
   area: zivilrecht
   semester_default: 5
   examenskurs: false
-  stand: 2026-09
+  stand: 2026-10
   quellen:
-  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: 'Mobiliarsachenrecht: Eigentumsherausgabe, rechtsgeschaeftlicher Erwerb, gutglaeubiger
-    Erwerb, Sicherungsuebereignung.'
+  beschreibung: 'Mobiliar- und Immobiliarsachenrecht: Besitz und Besitzschutz, Eigentumsherausgabe, rechtsgeschäftlicher,
+    gutgläubiger und gesetzlicher Erwerb, Sicherungsübereignung, Eigentumsvorbehalt und Anwartschaftsrecht, Eigentümer-Besitzer-Verhältnis,
+    § 1004 BGB, Grundbuch, Auflassung, Vormerkung sowie Grundpfandrechte und Pfandrecht.'
   lernziele:
-  - § 985 BGB mit Eigentumshistorie (chronologische Pruefung) aufbauen
-  - Erwerb vom Nichtberechtigten (§§ 932 ff. BGB) sicher pruefen
-  - Sicherungsuebereignung als Kreditsicherheit einordnen
+  - § 985 BGB mit Eigentumshistorie (chronologische Prüfung) aufbauen
+  - Erwerb vom Nichtberechtigten (§§ 932 ff., 892 BGB) sicher prüfen
+  - Sicherungsübereignung, Eigentumsvorbehalt und Anwartschaftsrecht als Kreditsicherheiten einordnen
+  - Besitzarten und Besitzschutz (§§ 854 ff. BGB) anwenden
+  - Grundstückserwerb (Auflassung, Eintragung, Vormerkung) und Grundpfandrechte aufbauen
   klausurformat:
     typ: Fortgeschrittenenklausur
     minuten: 180
@@ -22,7 +25,13 @@ kurs:
   - zr-sr-eigentumserwerb-929
   - zr-sr-gutglaeubiger-erwerb-932
   - zr-sr-sicherungsuebereignung
+  - zr-sr-ebv-987-ff
+  - zr-sr-beseitigung-unterlassung-1004
+  - zr-sr-besitz
+  - zr-sr-gesetzlicher-erwerb
+  - zr-sr-eigentumsvorbehalt-anwartschaft
+  - zr-sr-immobiliarsachenrecht
+  - zr-sr-grundpfandrechte-pfandrecht
   landesrecht_kategorien: []
   fehlende_themen:
-  - Immobiliarsachenrecht, §§ 873 ff. BGB (P3)
-  - Eigentuemer-Besitzer-Verhaeltnis vertieft (P3)
+  - Wohnungseigentum und Erbbaurecht (P3)

@@ -1,0 +1,381 @@
+topic:
+  slug: zr-sat-vertretenmuessen-278
+  area: zivilrecht
+  title: Vertretenmüssen und Gehilfenzurechnung, §§ 276, 278, 280 Abs. 1 BGB
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-vertr-280-grundtatbestand
+  type: norm
+  front: >-
+    Welche Voraussetzungen hat der Schadensersatzanspruch aus § 280 Abs. 1 BGB und
+    wie wird das Vertretenmüssen geprüft?
+  back: >-
+    § 280 Abs. 1 BGB ist der Grundtatbestand des Leistungsstörungsrechts. Erforderlich
+    sind ein wirksames Schuldverhältnis, eine Pflichtverletzung des Schuldners und
+    ein daraus entstandener Schaden. Das Vertretenmüssen wird nach § 280 Abs. 1 S.
+    2 BGB vermutet: Der Schuldner muss sich entlasten und darlegen und beweisen, dass
+    er die Pflichtverletzung nicht zu vertreten hat. Der Gläubiger trägt dagegen die
+    Beweislast für Schuldverhältnis, Pflichtverletzung, Schaden und Kausalität. Der
+    Anspruch richtet sich auf Ersatz des Schadens neben der Leistung (Verzögerungsschaden
+    nur unter den zusätzlichen Voraussetzungen des § 286 BGB, Schadensersatz statt
+    der Leistung nur nach §§ 281 ff. BGB). Die Prüfung gliedert sich in Schuldverhältnis,
+    Pflichtverletzung, Vertretenmüssen und Schaden.
+  norms:
+  - § 280 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vertr-276-vorsatz-fahrlaessigkeit
+  type: definition
+  front: >-
+    Definiere: Vorsatz und Fahrlässigkeit im Sinne des § 276 BGB.
+  back: >-
+    Nach § 276 Abs. 1 S. 1 BGB hat der Schuldner Vorsatz und Fahrlässigkeit zu vertreten,
+    sofern nichts anderes bestimmt ist. Vorsatz ist Wissen und Wollen der Pflichtverletzung
+    (im Zivilrecht einschließlich des Bewusstseins der Pflichtwidrigkeit). Fahrlässig
+    handelt nach § 276 Abs. 2 BGB, wer die im Verkehr erforderliche Sorgfalt außer
+    Acht lässt. Der Maßstab ist objektiv-typisiert: Es kommt nicht auf die individuellen
+    Fähigkeiten des Schuldners an, sondern auf die Sorgfalt, die von einem durchschnittlichen
+    Angehörigen des betroffenen Verkehrskreises zu erwarten ist. Für Minderjährige
+    und Deliktsunfähige verweist § 276 Abs. 1 S. 2 BGB auf die §§ 827, 828 BGB. Die
+    Haftung wegen Vorsatzes kann dem Schuldner nicht im Voraus erlassen werden (§
+    276 Abs. 3 BGB).
+  norms:
+  - § 276 Abs. 1 BGB
+  - § 276 Abs. 2 BGB
+  - § 276 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vertr-276-garantie-beschaffungsrisiko
+  type: norm
+  front: >-
+    Wann haftet der Schuldner nach § 276 Abs. 1 S. 1 BGB verschuldensunabhängig
+    (Garantie, Beschaffungsrisiko)?
+  back: >-
+    Eine strengere oder mildere Haftung kann sich nach § 276 Abs. 1 S. 1 BGB aus
+    dem Inhalt des Schuldverhältnisses ergeben, insbesondere aus der Übernahme einer
+    Garantie oder eines Beschaffungsrisikos. Garantie meint die vertragliche Übernahme
+    des Einstehens für einen Erfolg unabhängig vom Verschulden. Das Beschaffungsrisiko
+    trägt der Schuldner einer Gattungsschuld: Er muss die geschuldete Sache auch dann
+    beschaffen, wenn sie am Markt schwer erhältlich ist, und haftet bei Nichtlieferung
+    ohne Rücksicht auf Verschulden; es entlastet ihn nur, wenn die Gattung untergegangen
+    ist (§ 275 Abs. 1 BGB). Bei Geldschulden gilt der Grundsatz, dass man Geld zu
+    haben hat: Finanzielles Unvermögen entlastet nie. Eine Garantiehaftung ergibt
+    sich ferner aus gesetzlichen Sonderregeln wie § 536a Abs. 1 Var. 1 BGB (anfänglicher
+    Mangel der Mietsache).
+  norms:
+  - § 276 Abs. 1 S. 1 BGB
+  - § 275 Abs. 1 BGB
+  - § 536a Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vertr-278-voraussetzungen
+  type: definition
+  front: >-
+    Definiere: Erfüllungsgehilfe und die Voraussetzungen der Zurechnung nach § 278
+    S. 1 BGB.
+  back: >-
+    § 278 S. 1 BGB rechnet dem Schuldner das Verschulden seines gesetzlichen Vertreters
+    und der Personen zu, deren er sich zur Erfüllung seiner Verbindlichkeit bedient
+    (Erfüllungsgehilfen). Erforderlich sind ein bestehendes Schuldverhältnis zwischen
+    Schuldner und Gläubiger, ein Erfüllungsgehilfe, der mit Wissen und Willen des
+    Schuldners in dessen Pflichtenkreis tätig wird, und ein Handeln bei der Erfüllung
+    – nicht nur bei Gelegenheit –, also ein innerer sachlicher Zusammenhang mit den
+    übertragenen Aufgaben. Auf ein Weisungsverhältnis oder Abhängigkeit kommt es nicht
+    an; auch selbständige Subunternehmer können Erfüllungsgehilfen sein. Der Gehilfe
+    muss selbst schuldhaft handeln; sein Verschulden wird nach dem Maßstab bestimmt,
+    der für den Schuldner gilt. Eine Exkulpation wie bei § 831 Abs. 1 S. 2 BGB gibt
+    es nicht.
+  norms:
+  - § 278 S. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vertr-278-abgrenzung-831
+  type: streitstand
+  front: >-
+    Abgrenze: Wodurch unterscheiden sich § 278 BGB und § 831 BGB, und welche Folgerung
+    ergibt sich für die Anspruchsprüfung?
+  back: >-
+    § 278 BGB ist keine eigene Anspruchsgrundlage, sondern eine Zurechnungsnorm: Er
+    setzt ein Schuldverhältnis voraus und rechnet das Verschulden des Gehilfen dem
+    Schuldner voll zu, ohne Entlastungsmöglichkeit. § 831 Abs. 1 BGB ist dagegen eine
+    eigenständige deliktische Anspruchsgrundlage für vermutetes eigenes Auswahl- und
+    Überwachungsverschulden des Geschäftsherrn; er kennt die Exkulpation nach S. 2
+    und setzt einen Verrichtungsgehilfen voraus, der rechtswidrig, aber nicht notwendig
+    schuldhaft gehandelt hat. Für die Klausur folgt: Besteht ein Schuldverhältnis,
+    ist vorrangig § 280 Abs. 1 BGB in Verbindung mit § 278 BGB zu prüfen, weil der
+    Schuldner sich dort nicht entlasten kann. Ein Anspruch aus § 831 BGB besteht daneben
+    (Anspruchskonkurrenz), ist wegen der Exkulpationsmöglichkeit aber unsicher; er
+    hat vor allem dann Bedeutung, wenn zwischen Geschädigtem und Geschäftsherrn kein
+    Schuldverhältnis besteht.
+  norms:
+  - § 278 BGB
+  - § 831 Abs. 1 BGB
+  - § 280 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vertr-241-2-schutzpflichten
+  type: definition
+  front: >-
+    Definiere: Schutzpflichten nach § 241 Abs. 2 BGB und ihre Verletzung als Pflichtverletzung
+    im Sinne des § 280 Abs. 1 BGB.
+  back: >-
+    § 241 Abs. 2 BGB verpflichtet jeden Teil eines Schuldverhältnisses zur Rücksicht
+    auf die Rechte, Rechtsgüter und Interessen des anderen Teils. Diese nicht leistungsbezogenen
+    Nebenpflichten (Schutz-, Obhuts- und Rücksichtnahmepflichten) schützen das Integritätsinteresse
+    des Gläubigers, also seine übrigen Rechtsgüter wie Gesundheit und Eigentum, nicht
+    sein Leistungsinteresse. Ihre Verletzung ist eine Pflichtverletzung im Sinne des
+    § 280 Abs. 1 BGB; Ersatz verlangt der Gläubiger neben der Leistung. Ein Schadensersatz
+    statt der Leistung kommt nur unter den zusätzlichen Voraussetzungen des § 282
+    BGB in Betracht, nämlich wenn dem Gläubiger die Leistung durch den Schuldner nicht
+    mehr zuzumuten ist. Die Schutzpflichten bestehen auch vorvertraglich (§ 311 Abs.
+    2 BGB) und können gegenüber Dritten Wirkung entfalten (siehe Vertrag mit Schutzwirkung).
+  norms:
+  - § 241 Abs. 2 BGB
+  - § 280 Abs. 1 BGB
+  - § 282 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vertr-278-grenzen-vorlieferant
+  type: streitstand
+  front: >-
+    Wen betrifft § 278 BGB nicht? Abgrenzung am Beispiel des Vorlieferanten und der
+    Handlung bei Gelegenheit.
+  back: >-
+    Nicht Erfüllungsgehilfe ist, wer nicht im Pflichtenkreis des Schuldners tätig
+    wird. Nach ständiger Rechtsprechung ist der Hersteller oder Vorlieferant der Kaufsache
+    nicht Erfüllungsgehilfe des Verkäufers, weil der Verkäufer nur die Übereignung
+    einer mangelfreien Sache schuldet, nicht deren Herstellung; der Verkäufer haftet
+    für Fehler des Herstellers nicht über § 278 BGB. Anders liegt es beim Werkunternehmer,
+    der Subunternehmer zur Herstellung des geschuldeten Werks einsetzt. Auch bei Handlungen,
+    die nur bei Gelegenheit der Aufgabe erfolgen und mit ihr in keinem inneren sachlichen
+    Zusammenhang stehen, fehlt die Zurechnung. Die Rechtsprechung bejaht den Zusammenhang
+    aber weit, wenn die Aufgabe dem Gehilfen gerade die Möglichkeit zur Schädigung
+    eröffnet hat (etwa Diebstahl durch einen Handwerker, dem der Zugang zur Wohnung
+    des Gläubigers gerade zur Aufgabenerfüllung eingeräumt wurde); entscheidend ist
+    eine Würdigung des Einzelfalls.
+  norms:
+  - § 278 S. 1 BGB
+  - § 433 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vertr-278-s2-und-254
+  type: norm
+  front: >-
+    Welche Bedeutung haben § 278 S. 2 BGB und § 254 Abs. 2 S. 2 BGB für die Zurechnung?
+  back: >-
+    § 278 S. 2 BGB erklärt § 276 Abs. 3 BGB für unanwendbar: Die Haftung des Schuldners
+    für vorsätzliches Handeln seines Erfüllungsgehilfen kann im Voraus erlassen werden,
+    während der Erlass der eigenen Vorsatzhaftung nach § 276 Abs. 3 BGB nicht möglich
+    ist. Gegenüber dem Gläubiger kann also die Haftung für Gehilfenvorsatz vertraglich
+    ausgeschlossen werden, soweit nicht Grenzen der §§ 134, 138 BGB oder des AGB-Rechts
+    (§ 309 Nr. 7, § 307 BGB) greifen. Daneben wirkt § 278 BGB über die Verweisung
+    in § 254 Abs. 2 S. 2 BGB auch zu Lasten des Geschädigten: Er muss sich das Mitverschulden
+    seiner Hilfspersonen bei der Schadensabwehr und -minderung zurechnen lassen, wenn
+    zwischen Geschädigtem und Schädiger bereits ein Schuldverhältnis besteht.
+  norms:
+  - § 278 S. 2 BGB
+  - § 276 Abs. 3 BGB
+  - § 254 Abs. 2 S. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vertr-277-eigenuebliche-sorgfalt
+  type: norm
+  front: >-
+    Was regelt § 277 BGB und wann gilt ein milderer Haftungsmaßstab?
+  back: >-
+    Wer nur für diejenige Sorgfalt einzustehen hat, die er in eigenen Angelegenheiten
+    anzuwenden pflegt (diligentia quam in suis), ist nach § 277 BGB von der Haftung
+    wegen grober Fahrlässigkeit nicht befreit. Er haftet also stets für grobe Fahrlässigkeit
+    und Vorsatz, nicht aber für leichte Fahrlässigkeit, soweit er sie auch in eigenen
+    Angelegenheiten an den Tag legt. Praktisch bedeutsame Fälle sind etwa die Haftung
+    der Ehegatten untereinander (§ 1359 BGB) und
+    der Eltern gegenüber ihren Kindern (§ 1664 BGB). Gesetzlich gemilderte Haftungsmaßstäbe
+    bestehen außerdem unter anderem für den Schenker (§ 521 BGB), den Verleiher (§
+    599 BGB) und den Geschäftsführer ohne Auftrag bei Abwendung einer drohenden Gefahr
+    (§ 680 BGB).
+  norms:
+  - § 277 BGB
+  - § 1359 BGB
+  - § 1664 BGB
+  - § 521 BGB
+  - § 599 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-vertr-280-278
+  title: Schadensersatz aus § 280 Abs. 1 BGB mit Gehilfenzurechnung nach § 278 BGB
+  norms:
+  - § 280 Abs. 1 BGB
+  - § 278 S. 1 BGB
+  - § 276 BGB
+  - § 241 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Schuldverhältnis zwischen Gläubiger und Schuldner
+    hinweis: Vertrag, vorvertragliches Schuldverhältnis (§ 311 Abs. 2 BGB) oder gesetzliches
+      Schuldverhältnis.
+  - label: II. Pflichtverletzung
+    children:
+    - label: 1. Verletzung einer Leistungspflicht (Nichtleistung, Schlechtleistung,
+        Verzögerung)
+    - label: 2. Verletzung einer Nebenpflicht nach § 241 Abs. 2 BGB (Schutzpflicht)
+      hinweis: Ersatz neben der Leistung nach § 280 Abs. 1 BGB; für Schadensersatz
+        statt der Leistung zusätzlich § 282 BGB beachten.
+  - label: III. Vertretenmüssen, § 280 Abs. 1 S. 2, §§ 276 ff. BGB
+    hinweis: Verschulden wird vermutet; Exkulpationsbeweis liegt beim Schuldner.
+    children:
+    - label: 1. Eigenes Verschulden des Schuldners (Vorsatz, Fahrlässigkeit, § 276
+        Abs. 1, 2 BGB)
+    - label: 2. Verschuldensunabhängige Einstandspflicht (Garantie, Beschaffungsrisiko,
+        § 276 Abs. 1 S. 1 BGB)
+    - label: 3. Zurechnung fremden Verschuldens, § 278 S. 1 BGB
+      children:
+      - label: a) Gesetzlicher Vertreter oder Erfüllungsgehilfe
+      - label: b) Tätigwerden im Pflichtenkreis des Schuldners (nicht nur bei Gelegenheit)
+        hinweis: Innerer sachlicher Zusammenhang mit der übertragenen Aufgabe.
+      - label: c) Eigenes Verschulden des Gehilfen
+  - label: IV. Schaden und Kausalität
+  - label: V. Rechtsfolge und Konkurrenzen
+    children:
+    - label: 1. Schadensumfang, §§ 249 ff. BGB; Mitverschulden, § 254 BGB
+    - label: 2. Daneben Deliktsrecht, insbesondere § 831 BGB mit Exkulpationsmöglichkeit
+faelle:
+- slug: zr-fall-vertr-parkett
+  title: Der Geselle auf der Baustelle
+  difficulty: 2
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Hausbesitzerin K beauftragt Schreinermeister S mit dem Einbau einer Küchenzeile
+    in ihrer Wohnung. S schickt seinen angestellten Gesellen G, der bisher stets
+    zuverlässig gearbeitet hat und von S regelmäßig kontrolliert wird. Beim Einbau
+    lässt G fahrlässig eine schwere Arbeitsplatte fallen, die das Parkett der K beschädigt
+    (Reparaturkosten 2.400 Euro). Außerdem hat G die Arbeitsplatte entgegen der Montageanleitung
+    nicht ausreichend befestigt, sodass sie später herabstürzt und K am Fuß verletzt
+    (Heilbehandlung 800 Euro). K verlangt von S Ersatz. S meint, er habe G sorgfältig
+    ausgewählt und überwacht und sei daher nicht verantwortlich.
+  question: >-
+    Kann K von S Ersatz der Parkettschäden und der Heilbehandlungskosten verlangen?
+  steps:
+  - prompt: Welche Anspruchsgrundlage kommt vorrangig in Betracht und welches Schuldverhältnis
+      liegt vor?
+    erwartung: >-
+      § 280 Abs. 1 BGB in Verbindung mit dem Werkvertrag (§ 631 BGB) zwischen K und
+      S; das Schuldverhältnis besteht zwischen K und S, nicht zwischen K und G.
+  - prompt: Worin liegt die Pflichtverletzung?
+    erwartung: >-
+      Verletzung der Schutzpflichten aus § 241 Abs. 2 BGB (Integritätsinteresse an
+      Parkett und Gesundheit) durch das Fallenlassen der Platte und die mangelhafte
+      Befestigung; zusätzlich Schlechterfüllung der Werkleistung.
+  - prompt: Hat S die Pflichtverletzung zu vertreten?
+    erwartung: >-
+      Eigenes Verschulden des S fehlt. G ist aber Erfüllungsgehilfe im Sinne des §
+      278 S. 1 BGB, weil S ihn zur Erfüllung seiner Werkvertragspflicht einsetzt;
+      G handelt fahrlässig (§ 276 Abs. 2 BGB) und bei der Erfüllung. Sein Verschulden
+      wird S zugerechnet.
+  - prompt: Kann S sich durch den Nachweis sorgfältiger Auswahl und Überwachung entlasten?
+    erwartung: >-
+      Nein. Anders als § 831 Abs. 1 S. 2 BGB kennt § 278 BGB keinen Entlastungsbeweis.
+      Der Einwand der sorgfältigen Auswahl und Überwachung ist unerheblich.
+  - prompt: Welchen Schaden kann K ersetzt verlangen und welche Rolle spielt § 831
+      BGB?
+    erwartung: >-
+      Ersatz des Parkettschadens (2.400 Euro) und der Heilbehandlungskosten (800
+      Euro) nach §§ 249 ff. BGB. Ein deliktischer Anspruch aus § 831 Abs. 1 BGB wäre
+      wegen der möglichen Exkulpation unsicher, ist aber wegen des vertraglichen
+      Anspruchs nicht entscheidend; er besteht allenfalls daneben.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Anspruchsgrundlage § 280 Abs. 1 BGB mit Schuldverhältnis zwischen K und
+        S bestimmt
+      weight: 1.0
+      required: false
+      norms:
+      - § 280 Abs. 1 BGB
+      - § 631 BGB
+      keywords:
+      - § 280 Abs. 1
+      - Werkvertrag
+      - Schuldverhältnis zwischen K und S
+      - Grundtatbestand
+      card_slugs:
+      - zr-vertr-280-grundtatbestand
+    - id: p2
+      label: Pflichtverletzung durch Verletzung der Schutzpflichten nach § 241 Abs.
+        2 BGB
+      weight: 2.0
+      required: false
+      norms:
+      - § 241 Abs. 2 BGB
+      keywords:
+      - § 241 Abs. 2
+      - Schutzpflicht
+      - Rücksichtnahmepflicht
+      - Integritätsinteresse
+      - Nebenpflicht
+      card_slugs:
+      - zr-vertr-241-2-schutzpflichten
+    - id: p3
+      label: Zurechnung des Gehilfenverschuldens über § 278 S. 1 BGB, weil G Erfüllungsgehilfe
+        ist
+      weight: 3.0
+      required: true
+      norms:
+      - § 278 S. 1 BGB
+      - § 276 Abs. 2 BGB
+      keywords:
+      - § 278
+      - Erfüllungsgehilfe
+      - Verschulden des Gehilfen wird zugerechnet
+      - bedient sich zur Erfüllung
+      - Zurechnung fremden Verschuldens
+      card_slugs:
+      - zr-vertr-278-voraussetzungen
+    - id: p4
+      label: Kein Entlastungsbeweis über sorgfältige Auswahl und Überwachung, Abgrenzung
+        zu § 831 BGB
+      weight: 2.0
+      required: true
+      norms:
+      - § 831 Abs. 1 S. 2 BGB
+      keywords:
+      - keine Exkulpation
+      - Entlastungsbeweis
+      - § 831 Abs. 1 S. 2
+      - Auswahl und Überwachung unerheblich
+      - Verrichtungsgehilfe
+      card_slugs:
+      - zr-vertr-278-abgrenzung-831
+    - id: p5
+      label: Ersatzfähiger Schaden bestimmt (Parkett 2.400 Euro, Heilbehandlung 800
+        Euro)
+      weight: 1.0
+      required: false
+      norms:
+      - § 249 BGB
+      keywords:
+      - § 249
+      - §§ 249 ff.
+      - Naturalrestitution
+      - Schadensumfang
+      - 3.200 Euro

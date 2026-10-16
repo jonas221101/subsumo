@@ -4,14 +4,18 @@ kurs:
   area: strafrecht
   semester_default: 3
   examenskurs: false
-  stand: 2026-09
+  stand: 2026-10
   quellen:
-  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Toetungs- und Koerperverletzungsdelikte, Noetigung, Urkundenfaelschung.
+  beschreibung: 'Straftaten gegen Leben, körperliche Unversehrtheit, persönliche Freiheit und Ehre: Tötungs- und
+    Körperverletzungsdelikte samt Ergänzungen, Aussetzung, Nötigung, Freiheitsdelikte, Geiselnahme, Grundzüge der
+    Sexualdelikte, Ehrdelikte und Hausfriedensbruch sowie Urkundenfälschung.'
   lernziele:
-  - Mordmerkmale systematisch pruefen und begruenden
-  - Qualifikationen der Koerperverletzung (§ 224 StGB) anwenden
+  - Mordmerkmale systematisch prüfen und gegen den Vorsatz abgrenzen
+  - Körperverletzungsdelikte (§§ 223 ff. StGB) einschließlich Qualifikationen aufbauen
+  - Freiheitsdelikte (§§ 239, 239a, 239b, 240 StGB) abgrenzen
+  - Beleidigungsdelikte und Rechtfertigung (§ 193 StGB) prüfen
   - Urkundenbegriff und Taathandlungen des § 267 StGB sicher subsumieren
   klausurformat:
     typ: Fortgeschrittenenklausur
@@ -21,6 +25,14 @@ kurs:
   - sr-bt-koerperverletzung-224
   - sr-bt-noetigung-240
   - sr-bt-urkundenfaelschung-267
+  - sr-bt-koerperverletzung-226-227
+  - sr-bt-mord-ergaenzung
+  - sr-bt-koerperverletzung-ergaenzung
+  - sr-bt-aussetzung-221
+  - sr-bt-freiheitsdelikte
+  - sr-bt-erpresserischer-menschenraub
+  - sr-bt-sexualdelikte-grundzuege
+  - sr-bt-ehrdelikte
+  - sr-bt-hausfriedensbruch-123
   landesrecht_kategorien: []
-  fehlende_themen:
-  - Freiheitsberaubung, § 239 StGB (P3)
+  fehlende_themen: []

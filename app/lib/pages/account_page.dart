@@ -6,14 +6,21 @@ import 'package:flutter/services.dart';
 import '../api.dart';
 import '../design/design.dart';
 import '../state.dart';
+import 'beta_feedback.dart';
 import '../theme.dart';
 import 'checkout_page.dart';
+import 'examen_page.dart' show openLernprofilFromAnywhere;
+import 'legal_links.dart';
+import '../util/file_download.dart' as file_download;
 
 /// F3 (docs/20-release-g2-bezahlstrecke.md Abschnitt 4): Konto-/Einstellungsseite.
 /// Existierte vorher nicht - `HomeShell` (main.dart) verlinkt ueber die AppBar
 /// hierher.
 class AccountPage extends StatefulWidget {
-  const AccountPage({super.key});
+  const AccountPage({this.betaMode = kBetaMode, super.key});
+
+  /// Testzugang: kein Abo-Block, keine Kuendigung, kein Pro-/Preis-Link.
+  final bool betaMode;
 
   @override
   State<AccountPage> createState() => _AccountPageState();
@@ -150,7 +157,13 @@ class _AccountPageState extends State<AccountPage> {
 
   Future<void> _redeemCode() async {
     final code = _redeemController.text.trim();
-    if (code.isEmpty) return;
+    if (code.isEmpty) {
+      setState(() {
+        _redeemError = 'Bitte gib zuerst deinen Freischaltcode ein.';
+        _redeemSuccess = null;
+      });
+      return;
+    }
     setState(() {
       _redeemBusy = true;
       _redeemError = null;
@@ -231,6 +244,11 @@ class _AccountPageState extends State<AccountPage> {
                   'In Zwischenablage kopiert.',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
+              ),
+            if (file_download.canDownloadFiles)
+              TextButton(
+                onPressed: () => file_download.downloadTextFile('subsumo-daten.json', pretty),
+                child: const Text('Als Datei speichern'),
               ),
             TextButton(
               onPressed: () async {
@@ -320,7 +338,10 @@ class _AccountPageState extends State<AccountPage> {
   Widget build(BuildContext context) {
     final app = AppScope.of(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('Konto')),
+      appBar: AppBar(
+        title: const Text('Konto'),
+        actions: const [BetaFeedbackAction(screen: 'Konto')],
+      ),
       body: ReadableWidth(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(Spacing.lg),
@@ -349,12 +370,24 @@ class _AccountPageState extends State<AccountPage> {
                 SubsumoFeedbackBlock(message: _resultMessage!, severity: FeedbackSeverity.positive),
                 const SizedBox(height: Spacing.lg),
               ],
-              _SubscriptionCard(
-                app: app,
-                busy: _busy,
-                error: _error,
-                onCancel: _confirmAndCancel,
-              ),
+              if (widget.betaMode)
+                const SubsumoCard(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Testzugang'),
+                      SizedBox(height: Spacing.sm),
+                      Text('Testzugang – alle Funktionen freigeschaltet'),
+                    ],
+                  ),
+                )
+              else
+                _SubscriptionCard(
+                  app: app,
+                  busy: _busy,
+                  error: _error,
+                  onCancel: _confirmAndCancel,
+                ),
               const SizedBox(height: Spacing.lg),
               _RedeemCodeCard(
                 controller: _redeemController,
@@ -381,6 +414,19 @@ class _AccountPageState extends State<AccountPage> {
                   onRevoke: _revokeAiConsent,
                 ),
               ],
+              const SizedBox(height: Spacing.lg),
+              SubsumoCard(
+                child: ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  leading: const Icon(Icons.tune_outlined),
+                  title: const Text('Lernprofil'),
+                  subtitle: const Text('Semester, Ziel, Schwerpunkte und Rhythmus'),
+                  trailing: const Icon(Icons.chevron_right),
+                  onTap: () => openLernprofilFromAnywhere(context),
+                ),
+              ),
+              const SizedBox(height: Spacing.lg),
+              const LegalLinks(),
             ],
           ),
         ),

@@ -1,85 +1,384 @@
 topic:
   slug: bw-polizei-ordnungsrecht
   area: oeffentliches-recht
-  title: Polizei- und Ordnungsrecht Baden-Wuerttemberg
+  title: Polizei- und Ordnungsrecht Baden-Württemberg
   parent: or-sicherheitsrecht-generalklausel-standardmassnahmen
   bundesland: BW
   relevance: 4
-  stand: 2026-09
+  stand: 2026-10
   redaktion:
-    erzeugt_von: claude-code (Redaktionsentwurf)
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
     status: in-pruefung
     normzitate_geprueft: false
 cards:
 - slug: bw-por-generalklausel
   type: norm
-  front: Wo steht die polizeiliche Generalklausel in Baden-Wuerttemberg und was setzt sie voraus?
-  back: 'Fundstelle: §§ 1, 3 PolG BW. Die Generalklausel ermaechtigt zu den notwendigen Massnahmen, um
-    eine im Einzelfall bestehende Gefahr fuer die oeffentliche Sicherheit oder Ordnung abzuwehren. Sie
-    ist subsidiaer: Greift eine Standardmassnahme oder ein Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite
-    besteht Ermessen, begrenzt durch den Grundsatz der Verhaeltnismaessigkeit.'
+  front: >-
+    Wo steht die polizeiliche Generalklausel in Baden-Württemberg und was setzt sie voraus?
+  back: >-
+    Fundstelle: § 1 i. V. m. § 3 PolG BW. Die Polizeibehörden und der Polizeivollzugsdienst haben die
+    Aufgabe, von der Allgemeinheit oder dem Einzelnen Gefahren abzuwehren, durch die die öffentliche Sicherheit
+    oder Ordnung bedroht wird (§ 1 PolG BW). § 3 PolG BW ermächtigt zu den im Einzelfall notwendigen Maßnahmen.
+    Die Generalklausel ist subsidiär: Spezialgesetze und Standardmaßnahmen gehen vor. Voraussetzung ist
+    eine im Einzelfall bestehende (konkrete) Gefahr; die Rechtsfolge steht im pflichtgemäßen Ermessen
+    und wird durch den Verhältnismäßigkeitsgrundsatz begrenzt. Das PolG BW ist ein einheitliches Gesetz
+    für Polizeibehörden und Polizeivollzugsdienst; ein eigenes Ordnungsbehördengesetz wie in NRW gibt
+    es nicht.
   norms:
-  - §§ 1, 3 PolG BW
+  - § 1 PolG BW
+  - § 3 PolG BW
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
-  stand: 2026-09
-- slug: bw-por-aufbau
-  type: schema_step
-  front: 'Aufbau: Rechtmaessigkeit einer Gefahrenabwehrmassnahme nach dem Landesrecht von Baden-Wuerttemberg'
-  back: 'I. Ermaechtigungsgrundlage (Polizeigesetz Baden-Wuerttemberg (PolG BW): Standardmassnahme vor
-    Generalklausel). II. Formelle Rechtmaessigkeit: 1. Zustaendigkeit (sachlich: welche Behoerde - Polizeibehoerden
-    und Polizeivollzugsdienst im PolG BW (§§ 105 ff. PolG BW a. F., Zustaendigkeit pruefen); oertlich;
-    instanziell), 2. Verfahren (Anhoerung, § 28 VwVfG bzw. Landesrecht), 3. Form. III. Materielle Rechtmaessigkeit:
-    1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose ex ante), 2. richtiger Adressat (Stoerer:
-    §§ 6, 7, 9 PolG BW), 3. Rechtsfolge: Ermessen und Verhaeltnismaessigkeit (geeignet, erforderlich,
-    angemessen).'
+  stand: 2026-10
+- slug: bw-por-gefahrbegriffe
+  type: definition
+  front: Welche Gefahrbegriffe sind im Polizeirecht zu unterscheiden?
+  back: >-
+    Konkrete Gefahr: Sachlage, die bei ungehindertem Ablauf des objektiv zu erwartenden Geschehens mit
+    hinreichender Wahrscheinlichkeit in absehbarer Zeit zu einem Schaden für ein polizeiliches Schutzgut
+    führt; Maßstab ist die Prognose ex ante aus Sicht eines objektiven, besonnenen Amtswalters. Abstrakte
+    Gefahr: Gefahr, die nach allgemeiner Lebenserfahrung typischerweise aus bestimmten Verhaltensweisen
+    oder Zuständen entsteht; sie rechtfertigt nur den Erlass von Rechtsverordnungen, nicht von Einzelmaßnahmen.
+    Gegenwärtige Gefahr: der Schadenseintritt steht unmittelbar bevor oder hat bereits begonnen. Hinzu
+    treten gesteigerte Anforderungen einzelner Befugnisnormen (erhebliche Gefahr, Gefahr für Leib oder
+    Leben). Die Gefahrbegriffe sind in der Lehre entwickelt; die Einzelheiten der Legaldefinition hängen
+    vom jeweiligen Landesgesetz ab.
   norms:
-  - §§ 1, 3 PolG BW
-  - §§ 6, 7, 9 PolG BW
+  - § 3 PolG BW
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
-  stand: 2026-09
+  stand: 2026-10
+- slug: bw-por-schutzgueter
+  type: definition
+  front: >-
+    Was sind die polizeilichen Schutzgüter der öffentlichen Sicherheit und der öffentlichen Ordnung?
+  back: >-
+    Öffentliche Sicherheit umfasst die Unverletzlichkeit der objektiven Rechtsordnung, der subjektiven
+    Rechte und Rechtsgüter des Einzelnen sowie den Bestand und das Funktionieren des Staates und seiner
+    Einrichtungen. Ein Verstoß gegen Strafnormen oder andere Gebote und Verbote der Rechtsordnung ist
+    stets eine Verletzung der öffentlichen Sicherheit. Öffentliche Ordnung sind die ungeschriebenen Regeln
+    für das Verhalten des Einzelnen in der Öffentlichkeit, deren Beachtung nach den herrschenden sozialen
+    und ethischen Anschauungen als unerlässliche Voraussetzung eines geordneten Gemeinschaftslebens gilt.
+    Wegen des Wandels der Anschauungen und der Bestimmtheit ist dieses Schutzgut umstritten und im Examen
+    nur zurückhaltend zu bejahen. Das PolG BW nennt beide Schutzgüter in § 1 Abs. 1.
+  norms:
+  - § 1 PolG BW
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-por-standardmassnahmen
+  type: norm
+  front: >-
+    Wo stehen die Standardmaßnahmen im PolG BW und wie verhalten sie sich zur Generalklausel?
+  back: >-
+    Die Standardmaßnahmen sind im PolG BW im Abschnitt über Einzelmaßnahmen geregelt (Fundstellen u. a.
+    Personenfeststellung § 27 PolG BW, Platzverweis § 30 PolG BW). Sie regeln typische Eingriffe mit
+    eigenen, meist engeren Voraussetzungen abschließend. Liegen diese nicht vor, darf die Behörde den
+    Eingriff nicht auf die Generalklausel (§ 3 PolG BW) stützen (Sperrwirkung der Standardmaßnahme). Ausnahmen
+    gelten nur für atypische Maßnahmen von geringer Eingriffsintensität, die der Gesetzgeber nicht regeln
+    wollte. Prüfungsaufbau: zuerst die einschlägige Standardbefugnis suchen und deren Tatbestand prüfen;
+    erst wenn keine passt und der Eingriff atypisch ist, kommt die Generalklausel in Betracht.
+  norms:
+  - § 3 PolG BW
+  - § 27 PolG BW
+  - § 30 PolG BW
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-por-verhaeltnismaessigkeit
+  type: definition
+  front: Wie ist der Verhältnismäßigkeitsgrundsatz im Polizeirecht zu prüfen?
+  back: >-
+    Jede Maßnahme muss einen legitimen Zweck (Gefahrenabwehr) verfolgen und dafür geeignet, erforderlich
+    und angemessen sein. Geeignet ist sie, wenn sie den Zweck fördert. Erforderlich ist sie, wenn kein
+    gleich wirksames, aber milderes Mittel zur Verfügung steht; § 5 Abs. 1 PolG BW verlangt ausdrücklich, dass bei mehreren in Betracht kommenden Maßnahmen diejenige zu treffen ist, die den Einzelnen und die Allgemeinheit voraussichtlich am wenigsten beeinträchtigt. Angemessen ist sie, wenn kein Nachteil herbeigeführt wird, der erkennbar außer Verhältnis zum beabsichtigten Erfolg steht (§ 5 Abs. 2 PolG BW; Verhältnismäßigkeit im engeren Sinne). Der Grundsatz bindet
+    die Ermessensausübung auf der Rechtsfolgenseite.
+  norms:
+  - § 5 PolG BW
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-por-anscheinsgefahr
+  type: streitstand
+  front: >-
+    Anscheinsgefahr und Gefahrenverdacht: Wann darf die Polizei einschreiten und wer trägt die Kosten?
+  back: >-
+    Anscheinsgefahr: Aus Sicht eines objektiven Amtswalters ex ante liegen hinreichende Anhaltspunkte
+    für eine Gefahr vor, die sich nachträglich als nicht gegeben erweist. Das Einschreiten ist rechtmäßig,
+    weil die Gefahrenprognose ex ante maßgeblich ist. Streit besteht, ob der Scheinverursacher als Störer
+    kostenpflichtig ist: Nach h. M. kann er als Verhaltensstörer in Anspruch genommen werden, wenn er
+    den Anschein zurechenbar veranlasst hat; die Gegenansicht stellt auf die objektive Lage ab und sieht
+    ihn nur als Nichtstörer. Putativgefahr: Der Beamte nimmt nur irrig eine Gefahr an; das Einschreiten
+    ist rechtswidrig. Gefahrenverdacht: Die Behörde hat Zweifel, ob eine Gefahr besteht; sie darf Gefahrerforschungsmaßnahmen
+    treffen, endgültige Eingriffe nur eingeschränkt.
+  norms:
+  - § 3 PolG BW
+  - § 6 PolG BW
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
 - slug: bw-por-stoerer
   type: norm
-  front: Wo sind Verhaltensstoerer, Zustandsstoerer und Nichtstoerer in Baden-Wuerttemberg geregelt?
-  back: '§§ 6, 7, 9 PolG BW. Verhaltensstoerer: wer die Gefahr durch sein Verhalten verursacht (Theorie
-    der unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstoerer: Inhaber der tatsaechlichen
-    Gewalt bzw. Eigentuemer einer gefaehrlichen Sache. Nichtstoerer: Inanspruchnahme nur unter den engen
-    Voraussetzungen des polizeilichen Notstands (gegenwaertige erhebliche Gefahr, Stoerer nicht greifbar,
-    Behoerde selbst nicht in der Lage), mit Entschaedigungsanspruch.'
+  front: >-
+    Wo sind Verhaltensstörer, Zustandsstörer und Nichtstörer im PolG BW geregelt?
+  back: >-
+    Verhaltensverantwortlichkeit: § 6 PolG BW (Person, die die Gefahr verursacht; daneben Aufsichtspflichtige bei Kindern). Zustandsverantwortlichkeit: § 7 PolG BW (Eigentümer
+    und Inhaber der tatsächlichen Gewalt über eine Sache oder ein Tier, von dem die Gefahr ausgeht). Verursachung
+    wird nach der Theorie der unmittelbaren Verursachung beurteilt (Überschreiten der Gefahrenschwelle
+    durch die eigene Handlung). Gegen unbeteiligte Personen dürfen Maßnahmen nur getroffen werden, wenn auf andere Weise eine unmittelbar bevorstehende Störung der öffentlichen Sicherheit oder Ordnung nicht verhindert oder eine bereits eingetretene Störung nicht beseitigt werden kann, insbesondere wenn die eigenen Mittel der Polizei nicht ausreichen oder wenn durch Maßnahmen nach den §§ 6 bis 8 ein Schaden herbeigeführt würde, der erkennbar außer Verhältnis zum beabsichtigten Erfolg steht (§ 9 Abs. 1 PolG BW). Die Maßnahmen dürfen nur aufrechterhalten werden, solange diese Voraussetzungen vorliegen (§ 9 Abs. 2 PolG BW).
   norms:
+  - § 6 PolG BW
+  - § 7 PolG BW
+  - § 9 PolG BW
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-por-stoererauswahl
+  type: streitstand
+  front: >-
+    Wie wird zwischen mehreren Störern ausgewählt, insbesondere zwischen Handlungs- und Zustandsstörer?
+  back: >-
+    Bei mehreren Verantwortlichen entscheidet die Behörde nach pflichtgemäßem Ermessen (Auswahlermessen).
+    Leitkriterium ist die Effektivität der Gefahrenabwehr: Es ist derjenige heranzuziehen, der die Gefahr
+    am schnellsten und wirksamsten beseitigen kann. Eine feste Rangfolge (Verhaltensstörer vor Zustandsstörer)
+    besteht nach h. M. nicht; ein pauschaler Vorrang des Verhaltensstörers wird teilweise vertreten, setzt
+    sich aber nur als Regelwertung bei gleicher Effektivität durch. Zu berücksichtigen sind die Nähe zur
+    Gefahr, Leistungsfähigkeit und Zumutbarkeit; bei Zustandsstörern kann die Haftung bei Grundstücken
+    durch die Opfergrenze (Verkehrswert nach der Sanierung) begrenzt sein. Gerichtlich überprüft wird
+    nur auf Ermessensfehler (§ 114 VwGO).
+  norms:
+  - § 6 PolG BW
+  - § 7 PolG BW
+  - § 114 VwGO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-por-zustaendigkeit
+  type: definition
+  front: Wer ist in Baden-Württemberg für die Gefahrenabwehr zuständig?
+  back: >-
+    Das PolG BW unterscheidet die allgemeinen Polizeibehörden (Ortspolizeibehörden: Gemeinden; Kreispolizeibehörden: untere Verwaltungsbehörden; Regierungspräsidien; Ministerien)  vom Polizeivollzugsdienst. Allgemeine Polizeibehörden sind die obersten Landespolizeibehörden (Ministerien), die Landespolizeibehörden (Regierungspräsidien), die Kreispolizeibehörden (untere Verwaltungsbehörden) und die Ortspolizeibehörden (Gemeinden), §§ 106, 107 PolG BW. Soweit nichts anderes bestimmt ist, sind die Ortspolizeibehörden sachlich zuständig (§ 111 Abs. 2 PolG BW). Grundsätzlich sind die Polizeibehörden zuständig; der Polizeivollzugsdienst nimmt die polizeilichen Aufgaben wahr, wenn ein sofortiges Tätigwerden erforderlich erscheint, und ist für die in § 105 Abs. 3 PolG BW genannten Maßnahmen (u. a. §§ 27 bis 29, 30 Abs. 1, 33 bis 38) neben den Polizeibehörden zuständig (§ 105 Abs. 2 und 3 PolG BW). Die örtliche Zuständigkeit
+    richtet sich nach dem Bezirk. Wird die unzuständige Behörde tätig, ist die Maßnahme formell rechtswidrig;
+    die Unbeachtlichkeit nach § 46 LVwVfG ist im Einzelfall zu prüfen.
+  norms:
+  - § 105 PolG BW
+  - § 111 PolG BW
+  - § 46 LVwVfG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-por-vollstreckung
+  type: norm
+  front: Wie wird eine Polizeiverfügung in Baden-Württemberg vollstreckt?
+  back: >-
+    Maßgeblich ist das Landesverwaltungsvollstreckungsgesetz (LVwVG). Zwangsmittel sind Zwangsgeld (und Zwangshaft), Ersatzvornahme und unmittelbarer Zwang (§ 19 Abs. 1 LVwVG); die Androhung regelt § 20 LVwVG. Regelverfahren ist das gestreckte Verfahren: vollstreckbarer
+    Verwaltungsakt, Androhung, Festsetzung, Anwendung. Soweit die Abwehr einer Gefahr es erfordert, kann von den Vollstreckungsvoraussetzungen abgewichen werden (§ 21 LVwVG, u. a. von der Vollstreckbarkeit und der vorherigen Androhung nach § 20 Abs. 1 LVwVG). Die unmittelbare Ausführung einer Maßnahme durch die Polizei ohne vorherige Inanspruchnahme der Verantwortlichen regelt § 8 PolG BW; die Kosten sind von den nach §§ 6, 7 PolG BW Verantwortlichen zu ersetzen (§ 8 Abs. 2 PolG BW). Für den unmittelbaren
+    Zwang durch den Polizeivollzugsdienst enthält das PolG BW eigene Regelungen.
+  norms:
+  - § 19 LVwVG
+  - § 21 LVwVG
+  - LVwVG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-por-kosten
+  type: norm
+  front: >-
+    Wer trägt die Kosten polizeilicher Maßnahmen, und gibt es Ausgleich für Nichtstörer?
+  back: >-
+    Bei Ersatzvornahme und Sofortvollzug trägt der Pflichtige (Verantwortliche) die Kosten; sie werden
+    durch Leistungsbescheid festgesetzt. Beim Abschleppen eines verbotswidrig geparkten Fahrzeugs gilt
+    dies entsprechend. Wer als unbeteiligte Person nach § 9 Abs. 1 PolG BW in Anspruch genommen wird, kann eine angemessene Entschädigung für den entstandenen Schaden verlangen (§ 100 PolG BW); zur Entschädigung verpflichtet ist der Staat oder die Körperschaft, in deren Dienst der Beamte steht, der die Maßnahme getroffen hat (§ 101 PolG BW), über die Ansprüche entscheiden die ordentlichen Gerichte (§ 103 PolG BW). Der Entschädigungspflichtige kann von den nach §§ 6, 7 PolG BW Verantwortlichen Ersatz verlangen (§ 102 PolG BW). Daneben bleiben Amtshaftung (§ 839 BGB, Art. 34 GG) und der
+    allgemeine Aufopferungsanspruch möglich. Die Kostenhöhe ist an der Verhältnismäßigkeit zu messen.
+  norms:
+  - § 9 PolG BW
+  - § 100 PolG BW
+  - § 101 PolG BW
+  - § 839 BGB
+  - Art. 34 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-por-rechtsschutz
+  type: definition
+  front: Welcher Rechtsschutz besteht gegen polizeiliche Maßnahmen?
+  back: >-
+    Gegen belastende Verwaltungsakte ist die Anfechtungsklage (§ 42 Abs. 1 Var. 1 VwGO) statthaft; zuvor ist das Vorverfahren nach §§ 68 ff. VwGO durchzuführen, soweit es landesrechtlich nicht ausgeschlossen ist. Erledigt sich die Maßnahme (z. B. Platzverweis, Gewahrsam), ist die Fortsetzungsfeststellungsklage
+    analog § 113 Abs. 1 S. 4 VwGO statthaft; das berechtigte Interesse folgt häufig aus Wiederholungsgefahr,
+    Rehabilitationsinteresse oder tiefgreifendem Grundrechtseingriff. Realakte (Hausdurchsuchung ohne
+    Verwaltungsakt) werden mit allgemeiner Feststellungs- oder Leistungsklage angegriffen. Unaufschiebbare
+    Anordnungen von Polizeivollzugsbeamten (§ 80 Abs. 2 S. 1 Nr. 2 VwGO) und Vollstreckungsmaßnahmen (landesrechtlich,
+    § 80 Abs. 2 S. 2 VwGO) entfalten regelmäßig keine aufschiebende Wirkung, vorläufiger Rechtsschutz
+    richtet sich nach § 80 Abs. 5 VwGO. Freiheitsentziehungen unterliegen dem Richtervorbehalt (Art. 104
+    GG).
+  norms:
+  - § 42 Abs. 1 VwGO
+  - § 113 Abs. 1 S. 4 VwGO
+  - § 80 Abs. 5 VwGO
+  - Art. 104 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-por-aufbau
+  type: schema_step
+  front: >-
+    Aufbau: Rechtmäßigkeit einer polizeilichen Maßnahme nach dem Landesrecht Baden-Württembergs
+  back: >-
+    I. Ermächtigungsgrundlage (Standardmaßnahme vor § 3 PolG BW). II. Formelle Rechtmäßigkeit: Zuständigkeit
+    (Polizeibehörde oder Polizeivollzugsdienst, Eilzuständigkeit § 105 Abs. 2 PolG BW), Verfahren (Anhörung § 28 LVwVfG),
+    Form. III. Materielle Rechtmäßigkeit: 1. Tatbestand (Schutzgut, konkrete Gefahr, Prognose ex ante),
+    2. richtiger Adressat (§§ 6, 7, 9 PolG BW), 3. Rechtsfolge: Ermessen und Verhältnismäßigkeit. IV.
+    Bei Vollstreckung: Voraussetzungen des LVwVG.
+  norms:
+  - § 1 PolG BW
+  - § 3 PolG BW
+  - §§ 6, 7, 9 PolG BW
+  - § 28 LVwVfG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: bw-schema-por-massnahme
+  title: Prüfung einer polizeilichen Maßnahme nach dem PolG BW
+  norms:
+  - § 3 PolG BW
   - §§ 6, 7, 9 PolG BW
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
-  stand: 2026-09
-- slug: bw-por-zustaendigkeit
-  type: definition
-  front: Wer ist in Baden-Wuerttemberg fuer die Gefahrenabwehr zustaendig - Ordnungs-/Sicherheitsbehoerde
-    oder Polizei?
-  back: 'Polizeibehoerden und Polizeivollzugsdienst im PolG BW (§§ 105 ff. PolG BW a. F., Zustaendigkeit
-    pruefen). Pruefungsrelevant ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsaetzlich
-    bei den Verwaltungs-/Ordnungsbehoerden; der Polizeivollzugsdienst wird taetig, wenn die Abwehr keinen
-    Aufschub duldet (Eilfall) oder eine besondere Zuweisung besteht. Ein Handeln der unzustaendigen Behoerde
-    macht die Massnahme formell rechtswidrig.'
-  norms:
-  - Polizeigesetz Baden-Wuerttemberg (PolG BW)
+  steps:
+  - label: I. Ermächtigungsgrundlage
+    hinweis: Standardmaßnahme geht der Generalklausel vor; Sperrwirkung beachten.
+    children:
+    - label: 1. Einschlägige Standardbefugnis (z. B. § 27, § 30 PolG BW)
+    - label: '2. Nur bei atypischer Maßnahme: Generalklausel, § 1, § 3 PolG BW'
+  - label: II. Formelle Rechtmäßigkeit
+    children:
+    - label: >-
+        1. Zuständigkeit: Polizeibehörde, ausnahmsweise Polizeivollzugsdienst (Eilfall, § 105 Abs. 2 PolG BW)
+    - label: '2. Verfahren: Anhörung, § 28 LVwVfG; Eilfälle § 28 Abs. 2 LVwVfG'
+    - label: 3. Form und Begründung
+  - label: III. Materielle Rechtmäßigkeit
+    children:
+    - label: >-
+        1. Tatbestand: Schutzgut und konkrete Gefahr (Prognose ex ante; Anscheinsgefahr ausreichend)
+    - label: >-
+        2. Richtiger Adressat: Verhaltensstörer § 6, Zustandsstörer § 7, Nichtstörer § 9 PolG BW
+    - label: >-
+        3. Rechtsfolge: Entschließungs- und Auswahlermessen; Verhältnismäßigkeit (geeignet, erforderlich,
+        angemessen)
+  - label: IV. Vollstreckung
+    hinweis: Gestrecktes Verfahren oder Sofortvollzug.
+    children:
+    - label: 1. Zwangsmittel nach LVwVG (§ 19)
+    - label: 2. Androhung und Festsetzung, ggf. Sofortvollzug (§ 21 LVwVG)
+  stand: 2026-10
+faelle:
+- slug: bw-fall-por-hund
+  title: Der beißfreudige Hund
+  difficulty: 3
+  minutes: 45
   quellen:
+  - Eigener Sachverhalt der Redaktion
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
-  - Eigenformulierung Redaktion
-  stand: 2026-09
-- slug: bw-por-vollstreckung
-  type: norm
-  front: Nach welchem Gesetz wird eine Gefahrenabwehrverfuegung in Baden-Wuerttemberg vollstreckt?
-  back: 'Landesverwaltungsvollstreckungsgesetz (LVwVG). Regelfall ist das gestreckte Verfahren: Grundverfuegung
-    - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme, Zwangsgeld, unmittelbarer
-    Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausfuehrung ohne vorausgehenden
-    Verwaltungsakt moeglich; die Kosten traegt der Pflichtige.'
-  norms:
-  - Landesverwaltungsvollstreckungsgesetz (LVwVG)
-  quellen:
-  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
-  - Eigenformulierung Redaktion
-  stand: 2026-09
+  facts: >-
+    H hält in der Gemeinde G einen Rottweiler. Der Hund hat zweimal spielende Kinder auf dem Gehweg angesprungen
+    und eines davon in den Arm gebissen; H hatte ihn ohne Leine geführt. Die Gemeinde G, als Ortspolizeibehörde,
+    ordnet nach Anhörung des H durch Bescheid an, dass der Hund außerhalb des Grundstücks nur noch angeleint
+    und mit Maulkorb geführt werden darf. H hält die Anordnung für unverhältnismäßig, weil das Verhalten
+    des Hundes nur "Spieltrieb" gewesen sei. Eine spezielle Rechtsgrundlage für gefährliche Hunde ist
+    nicht einschlägig.
+  question: Ist die Anordnung rechtmäßig?
+  steps:
+  - prompt: >-
+      Welche Ermächtigungsgrundlage kommt in Betracht und welche Behörde ist zuständig?
+    erwartung: >-
+      Mangels Standardmaßnahme und Spezialgesetz die Generalklausel, §§ 1, 3 PolG BW. Die Gemeinde ist
+      als Ortspolizeibehörde sachlich und örtlich zuständig; der Polizeivollzugsdienst wäre nur bei Eilbedürftigkeit
+      zuständig.
+  - prompt: Liegt eine konkrete Gefahr vor?
+    erwartung: >-
+      Ja. Zwei Vorfälle mit tatsächlicher Verletzung begründen die hinreichende Wahrscheinlichkeit weiterer
+      Verletzungen von Leib und Gesundheit Dritter in absehbarer Zeit; die Gefahrenprognose ex ante genügt,
+      der Spieltrieb ändert nichts.
+  - prompt: Wer ist der richtige Adressat?
+    erwartung: >-
+      H als Halter ist Inhaber der tatsächlichen Gewalt über das Tier und Zustandsverantwortlicher nach
+      § 7 PolG BW; zudem Verhaltensverantwortlicher nach § 6, weil er den Hund unangeleint führte.
+  - prompt: Ist die Maßnahme verhältnismäßig?
+    erwartung: >-
+      Ja. Leine und Maulkorb sind geeignet und erforderlich, weil gleich wirksame mildere Mittel fehlen
+      (Leinenzwang allein schützt bei Kontrollverlust weniger); sie sind angemessen, da die Beeinträchtigung
+      des H gering, die gefährdeten Rechtsgüter hochrangig sind.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Generalklausel §§ 1, 3 PolG BW als Ermächtigungsgrundlage, Zuständigkeit der Ortspolizeibehörde
+      weight: 2.0
+      required: true
+      norms:
+      - § 3 PolG BW
+      keywords:
+      - Generalklausel
+      - § 3 PolG BW
+      - § 1 PolG BW
+      - Ortspolizeibehörde
+      - Subsidiarität gegenüber Standardmaßnahmen
+      card_slugs:
+      - bw-por-generalklausel
+      - bw-por-zustaendigkeit
+    - id: p2
+      label: Konkrete Gefahr für Leib und Gesundheit Dritter bejaht
+      weight: 2.5
+      required: true
+      keywords:
+      - konkrete Gefahr
+      - Gefahrenprognose
+      - hinreichende Wahrscheinlichkeit
+      - Wiederholungsgefahr
+      - Prognose ex ante
+      card_slugs:
+      - bw-por-gefahrbegriffe
+    - id: p3
+      label: >-
+        H als Halter richtig als Zustands- bzw. Verhaltensstörer in Anspruch genommen
+      weight: 2.0
+      required: true
+      keywords:
+      - § 7 PolG BW
+      - Zustandsverantwortlicher
+      - Halter
+      - Inhaber der tatsächlichen Gewalt
+      - § 6 PolG BW
+      - Verhaltensstörer
+      card_slugs:
+      - bw-por-stoerer
+    - id: p4
+      label: >-
+        Verhältnismäßigkeit (geeignet, erforderlich, angemessen) geprüft und bejaht
+      weight: 2.0
+      required: false
+      keywords:
+      - Verhältnismäßigkeit
+      - geeignet
+      - erforderlich
+      - mildere Mittel
+      - angemessen
+      - Verhältnismäßigkeit im engeren Sinne
+      card_slugs:
+      - bw-por-verhaeltnismaessigkeit
+  stand: 2026-10

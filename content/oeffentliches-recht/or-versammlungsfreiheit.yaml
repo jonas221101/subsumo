@@ -17,13 +17,12 @@ cards:
   front: 'Definiere: Versammlung i.S.d. Art. 8 GG - enger und weiter Begriff'
   back: Nach dem vom Bundesverfassungsgericht bevorzugten engeren Versammlungsbegriff
     ist eine Versammlung eine örtliche Zusammenkunft mehrerer Personen zur gemeinschaftlichen,
-    auf Kommunikation angelegten Erörterung oder Kundgebung mit dem Ziel, an der
-    öffentlichen Meinungsbildung teilzunehmen. Der weitere, teilweise in der Literatur
-    vertretene Begriff lässt jede gemeinsame Zusammenkunft zu einem gemeinsamen Zweck
-    genügen, unabhängig von einem Bezug zur öffentlichen Meinungsbildung. Praktisch
-    bedeutsam wird der Streit bei reinen Vergnügungs- oder Massenveranstaltungen
-    ohne jeden meinungsbildenden Bezug, die nach dem engeren Begriff nicht unter Art.
-    8 GG fallen.
+    auf Kommunikation angelegten Erörterung oder Kundgebung mit dem Ziel, an der öffentlichen
+    Meinungsbildung teilzunehmen. Der weitere, teilweise in der Literatur vertretene
+    Begriff lässt jede gemeinsame Zusammenkunft zu einem gemeinsamen Zweck genügen,
+    unabhängig von einem Bezug zur öffentlichen Meinungsbildung. Praktisch bedeutsam
+    wird der Streit bei reinen Vergnügungs- oder Massenveranstaltungen ohne jeden
+    meinungsbildenden Bezug, die nach dem engeren Begriff nicht unter Art. 8 GG fallen.
   norms:
   - Art. 8 Abs. 1 GG
   quellen:
@@ -34,11 +33,11 @@ cards:
   type: definition
   front: Wer ist Grundrechtsträger des Art. 8 GG?
   back: Art. 8 GG ist ein Deutschen-Grundrecht (Art. 116 GG) und schützt unmittelbar
-    nur deutsche Staatsangehörige sowie inländische juristische Personen, soweit
-    das Grundrecht seinem Wesen nach auf sie anwendbar ist (Art. 19 Abs. 3 GG). Ausländer
+    nur deutsche Staatsangehörige sowie inländische juristische Personen, soweit das
+    Grundrecht seinem Wesen nach auf sie anwendbar ist (Art. 19 Abs. 3 GG). Ausländer
     können sich für ihre Versammlungsfreiheit auf die allgemeine Handlungsfreiheit
-    aus Art. 2 Abs. 1 GG berufen, die inhaltlich weitgehend an die Maßstäbe des
-    Art. 8 GG angelehnt wird.
+    aus Art. 2 Abs. 1 GG berufen, die inhaltlich weitgehend an die Maßstäbe des Art.
+    8 GG angelehnt wird.
   norms:
   - Art. 8 Abs. 1 GG
   - Art. 116 GG
@@ -54,13 +53,17 @@ cards:
     1 GG?
   back: '''Friedlich und ohne Waffen'' ist entgegen dem ersten Anschein keine Schranke,
     sondern ein Tatbestandsmerkmal des Schutzbereichs selbst: Versammlungen, die diese
-    Voraussetzung nicht erfüllen, unterfallen bereits gar nicht dem Schutz des Art.
-    8 GG. Unfriedlich ist eine Versammlung erst bei Teilnehmern, die einen gewalttätigen
-    oder aufrührerischen Verlauf nehmen bzw. aktiv Gewalttätigkeiten gegen Personen
-    oder Sachen begehen - bloße Behinderungen Dritter oder Unbequemlichkeiten genügen
-    nicht. Nach dem Grundsatz der Kollektivunfriedlichkeit werden friedliche Teilnehmer
-    durch gewalttätige Einzelne oder Minderheiten in einer Versammlung nicht automatisch
-    aus dem Schutzbereich verdrängt.'
+    Voraussetzung nicht erfüllen, unterfallen nicht dem Schutz des Art. 8 GG. Unfriedlich
+    ist eine Versammlung erst, wenn sie insgesamt einen gewalttätigen oder aufrührerischen
+    Verlauf nimmt oder wenn der Veranstalter bzw. die Mehrheit der Teilnehmer einen
+    solchen Verlauf anstrebt oder billigt (kollektive Unfriedlichkeit) - bloße Behinderungen
+    Dritter oder Unbequemlichkeiten genügen nicht. Gewalttätigkeiten einzelner Teilnehmer
+    oder einer Minderheit machen die Versammlung dagegen nicht unfriedlich; die friedlichen
+    Teilnehmer bleiben geschützt, und gegen die Störer kann gezielt eingeschritten
+    werden. Geschützt sind auch Spontanversammlungen, die sich ohne Veranstalter aus
+    aktuellem Anlass bilden; die Anmeldepflicht entfällt bei ihnen, weil sie die Spontaneität
+    der Versammlung unmöglich machen würde, und bei Eilversammlungen wird sie auf
+    das Mögliche verkürzt (Brokdorf).'
   norms:
   - Art. 8 Abs. 1 GG
   quellen:
@@ -91,9 +94,9 @@ cards:
   back: Für Versammlungen unter freiem Himmel kann dieses Recht durch Gesetz oder
     auf Grund eines Gesetzes beschränkt werden - ein einfacher Gesetzesvorbehalt.
     Das Versammlungsrecht ist seit der Föderalismusreform 2006 überwiegend Ländersache;
-    die Beschränkungen müssen unabhängig davon stets ihrerseits verhältnismäßig
-    sein und dürfen die Versammlungsfreiheit nicht in ihrem Wesensgehalt aushöhlen
-    (Art. 19 Abs. 2 GG).
+    die Beschränkungen müssen unabhängig davon stets ihrerseits verhältnismäßig sein
+    und dürfen die Versammlungsfreiheit nicht in ihrem Wesensgehalt aushöhlen (Art.
+    19 Abs. 2 GG).
   norms:
   - Art. 8 Abs. 2 GG
   - Art. 19 Abs. 2 GG
@@ -107,15 +110,15 @@ cards:
     (BVerfGE 69, 315) zur Versammlungsfreiheit auf?
   back: 'Das Bundesverfassungsgericht betonte die konstituierende Bedeutung der Versammlungsfreiheit
     für eine freiheitliche demokratische Ordnung als Ausdruck unmittelbarer kollektiver
-    Teilhabe an der öffentlichen Meinungsbildung. Eine allgemeine Anmeldepflicht
-    ist als bloße Ordnungsvorschrift mit Art. 8 Abs. 1 GG vereinbar (kein verstecktes
+    Teilhabe an der öffentlichen Meinungsbildung. Eine allgemeine Anmeldepflicht ist
+    als bloße Ordnungsvorschrift mit Art. 8 Abs. 1 GG vereinbar (kein verstecktes
     Erlaubnisverfahren). Behörden trifft eine Kooperationspflicht: sie sollen vor
     einschränkenden Maßnahmen den Dialog mit den Veranstaltern suchen. Verbot oder
     Auflösung einer Versammlung sind nur als letztes Mittel (ultima ratio) bei unmittelbarer,
-    durch Tatsachen belegter Gefährdung wichtiger Rechtsgüter zulässig, die sich
-    aus einer Gesamtwürdigung der erkennbaren Umstände ergeben muss - bloße Vermutungen
-    oder das Verhalten einzelner gewaltbereiter Teilnehmer genügen nicht, um die
-    gesamte Versammlung zu verbieten.'
+    durch Tatsachen belegter Gefährdung wichtiger Rechtsgüter zulässig, die sich aus
+    einer Gesamtwürdigung der erkennbaren Umstände ergeben muss - bloße Vermutungen
+    oder das Verhalten einzelner gewaltbereiter Teilnehmer genügen nicht, um die gesamte
+    Versammlung zu verbieten.'
   norms:
   - Art. 8 Abs. 1 GG
   quellen:
@@ -127,8 +130,8 @@ cards:
   back: Für die kollektive, örtlich gebundene Kundgabe einer Meinung im Rahmen einer
     Versammlung ist Art. 8 GG als das speziellere Grundrecht anzusehen und verdrängt
     insoweit Art. 5 Abs. 1 GG (lex specialis). Der Inhalt der auf der Versammlung
-    geäußerten Meinungen selbst bleibt aber zugleich am Maßstab des Art. 5 Abs.
-    1 GG zu messen, etwa wenn es um die inhaltliche Zulässigkeit einzelner Äußerungen
+    geäußerten Meinungen selbst bleibt aber zugleich am Maßstab des Art. 5 Abs. 1
+    GG zu messen, etwa wenn es um die inhaltliche Zulässigkeit einzelner Äußerungen
     (z. B. Schmähkritik) unabhängig vom Versammlungsbezug geht - nach vorzugswürdiger
     Auffassung liegt dann eine parallele Anwendbarkeit beider Grundrechte mit unterschiedlichem
     Prüfungsgegenstand vor, keine echte Konkurrenzfrage.
@@ -151,8 +154,9 @@ schemata:
     children:
     - label: '1. Persönlich: Deutsche i.S.d. Art. 116 GG (Art. 19 Abs. 3 GG bei juristischen
         Personen)'
-    - label: '2. Sachlich: Versammlung (örtliche Zusammenkunft mehrerer Personen
-        zur gemeinsamen Meinungsbildung) - friedlich und ohne Waffen'
+    - label: '2. Sachlich: Versammlung (örtliche Zusammenkunft mehrerer Personen zur
+        gemeinsamen Meinungsbildung) - friedlich (nicht kollektiv unfriedlich) und
+        ohne Waffen; auch Spontan- und Eilversammlungen'
     - label: 3. Unter freiem Himmel oder in geschlossenen Räumen?
   - label: II. Eingriff
     hinweis: Staatliche Maßnahme, die die Durchführung, den Ablauf oder die Teilnahme
@@ -179,12 +183,12 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - GG, amtliche Fassung
-  facts: Ein (fiktiver) Bündnis meldet fristgerecht eine Kundgebung mit erwarteten
+  facts: Ein (fiktives) Bündnis meldet fristgerecht eine Kundgebung mit erwarteten
     2.000 Teilnehmern auf einem zentralen Platz an und sucht im Vorfeld das Gespräch
     mit der zuständigen Behörde über den geplanten Ablauf. Während der Kundgebung
     wirft eine kleine Gruppe von etwa 15 vermummten Personen am Rande der Versammlung
-    Flaschen in Richtung eingesetzter Beamter; die übrigen rund 2.000 Teilnehmer
-    verhalten sich durchgehend friedlich und distanzieren sich lautstark von den Ausschreitungen.
+    Flaschen in Richtung eingesetzter Beamter; die übrigen rund 2.000 Teilnehmer verhalten
+    sich durchgehend friedlich und distanzieren sich lautstark von den Ausschreitungen.
     Die Einsatzleitung löst daraufhin ohne vorherige Ankündigung die gesamte Kundgebung
     auf und fordert alle Anwesenden zum sofortigen Verlassen des Platzes auf.
   question: War die Auflösung der gesamten Kundgebung mit Art. 8 Abs. 1 GG vereinbar?
@@ -192,33 +196,43 @@ faelle:
   - prompt: Ist der Schutzbereich des Art. 8 Abs. 1 GG für die gesamte Kundgebung
       eröffnet?
     erwartung: Ja - es handelt sich um eine Versammlung unter freiem Himmel mit auf
-      Meinungsbildung gerichtetem Zweck; die weit überwiegende Mehrheit der Teilnehmer
-      verhielt sich friedlich, sodass nach dem Grundsatz der Kollektivunfriedlichkeit
-      das gewalttätige Verhalten einzelner die Versammlung als Ganzes nicht aus dem
-      Schutzbereich verdrängt.
+      Meinungsbildung gerichtetem Zweck. Die weit überwiegende Mehrheit der Teilnehmer
+      verhielt sich friedlich und distanzierte sich; die Versammlung ist daher nicht
+      kollektiv unfriedlich. Das gewalttätige Verhalten einzelner verdrängt die Versammlung
+      als Ganzes nicht aus dem Schutzbereich.
   - prompt: Liegt ein Eingriff vor?
     erwartung: Ja - die Auflösung beendet die Versammlung für alle Teilnehmer und
       hindert sie an der weiteren Ausübung ihrer Versammlungsfreiheit.
+  - prompt: Auf welche Eingriffsgrundlage kann die Auflösung gestützt werden, und
+      welche Voraussetzungen hat sie?
+    erwartung: Die Auflösung ist eine versammlungsrechtliche Maßnahme; die Eingriffsgrundlage
+      ist im Versammlungsrecht zu suchen (Versammlungsgesetz des jeweiligen Landes,
+      soweit nicht vorhanden das Versammlungsgesetz des Bundes, dort die Auflösungsbefugnis,
+      z. B. § 15 Abs. 3 VersG). Das allgemeine Polizeirecht ist wegen der Polizeifestigkeit
+      der Versammlung gesperrt. Voraussetzung ist eine unmittelbare Gefährdung der
+      öffentlichen Sicherheit, die verfassungskonform im Licht des Art. 8 GG auszulegen
+      ist (Brokdorf).
   - prompt: Ist die Auflösung durch den Gesetzesvorbehalt des Art. 8 Abs. 2 GG grundsätzlich
       rechtfertigungsfähig?
     erwartung: Ja - da es sich um eine Versammlung unter freiem Himmel handelt, ist
       der einfache Gesetzesvorbehalt des Art. 8 Abs. 2 GG eröffnet.
-  - prompt: Genügt das Verhalten der 15 vermummten Personen für eine Auflösung
-      der gesamten Kundgebung nach den Brokdorf-Grundsätzen?
+  - prompt: Genügt das Verhalten der 15 vermummten Personen für eine Auflösung der
+      gesamten Kundgebung nach den Brokdorf-Grundsätzen?
     erwartung: Nein. Nach den Brokdorf-Grundsätzen ist die Auflösung einer Versammlung
       nur als letztes Mittel bei unmittelbarer, durch Tatsachen belegter Gefährdung
-      wichtiger Rechtsgüter zulässig, die aus einer Gesamtwürdigung der Umstände
-      folgt. Das Verhalten einer kleinen Minderheit von 15 Personen bei rund 2.000
-      überwiegend friedlichen und sich distanzierenden Teilnehmern rechtfertigt keine
-      Kollektivmaßnahme gegen die gesamte Versammlung; mildere Mittel wie ein gezieltes
-      Einschreiten gegen die einzelnen Störer wären vorrangig zu prüfen gewesen.
-  - prompt: Wie wirkt sich die vorangegangene Kooperation des Bündnisses mit der
-      Behörde auf die Bewertung aus?
-    erwartung: 'Sie spricht zusätzlich gegen die Rechtmäßigkeit der Auflösung:
-      Die Behörde hatte bereits im Vorfeld Gelegenheit zum Dialog, und die kooperative
+      wichtiger Rechtsgüter zulässig, die aus einer Gesamtwürdigung der Umstände folgt.
+      Das Verhalten einer kleinen Minderheit von 15 Personen bei rund 2.000 überwiegend
+      friedlichen und sich distanzierenden Teilnehmern rechtfertigt keine Kollektivmaßnahme
+      gegen die gesamte Versammlung; mildere Mittel wie ein gezieltes Einschreiten
+      gegen die einzelnen Störer wären vorrangig zu prüfen gewesen.
+  - prompt: Wie wirkt sich die vorangegangene Kooperation des Bündnisses mit der Behörde
+      auf die Bewertung aus?
+    erwartung: 'Sie spricht zusätzlich gegen die Rechtmäßigkeit der Auflösung: Die
+      Behörde hatte bereits im Vorfeld Gelegenheit zum Dialog, und die kooperative
       Haltung der Veranstalter hätte bei der Verhältnismäßigkeitsprüfung zugunsten
       mildererer Maßnahmen berücksichtigt werden müssen, statt die gesamte Kundgebung
-      ohne vorherige Ankündigung aufzulösen.'
+      ohne vorherige Ankündigung aufzulösen. Die Auflösung war rechtswidrig: Sie ist unverhältnismäßig
+      und mit Art. 8 Abs. 1 GG unvereinbar.'
   expectation:
     pruefpunkte:
     - id: p1
@@ -227,9 +241,14 @@ faelle:
       weight: 2.0
       required: true
       keywords:
+      - kollektive Unfriedlichkeit
       - Kollektivunfriedlichkeit
       - friedliche Mehrheit
-      - Schutzbereich eröffnet
+      - Schutzbereich ist für die gesamte Versammlung eröffnet
+      - nicht kollektiv unfriedlich
+      - überwiegende Mehrheit
+      - verdrängt die Versammlung
+      - überwiegend friedlich
       card_slugs:
       - or-gr-art8-friedlich-ohne-waffen
     - id: p2
@@ -237,11 +256,25 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - Eingriff
-      - Auflösung
+      - Auflösung der Versammlung
+      - Auflösung beendet
+      - Eingriff in Art. 8
+      - Eingriff in die Versammlungsfreiheit
       card_slugs:
       - or-gr-eingriff
     - id: p3
+      label: Eingriffsgrundlage im Versammlungsrecht benannt (Auflösungsbefugnis,
+        Polizeifestigkeit der Versammlung, unmittelbare Gefährdung)
+      weight: 1.5
+      required: false
+      keywords:
+      - Auflösungsbefugnis
+      - § 15 Abs. 3 VersG
+      - Versammlungsgesetz
+      - Polizeifestigkeit
+      - Eingriffsgrundlage
+      - unmittelbare Gefährdung der öffentlichen Sicherheit
+    - id: p4
       label: Brokdorf-Maßstab (ultima ratio, unmittelbare Gefährdung, Gesamtwürdigung)
         korrekt benannt und angewendet
       weight: 3.0
@@ -249,11 +282,12 @@ faelle:
       keywords:
       - Brokdorf
       - ultima ratio
+      - letztes Mittel
       - Gesamtwürdigung
-      - unmittelbare Gefährdung
+      - unmittelbare Gefährdung wichtiger Rechtsgüter
       card_slugs:
       - or-gr-art8-brokdorf-grundsaetze
-    - id: p4
+    - id: p5
       label: Erkenntnis, dass mildere Mittel (gezieltes Einschreiten gegen Einzelne)
         vorrangig gewesen wären
       weight: 2.0
@@ -261,23 +295,30 @@ faelle:
       keywords:
       - mildere Mittel
       - gezieltes Einschreiten
-      - Einzelne
+      - Einschreiten gegen die Störer
+      - Ausschluss einzelner Teilnehmer
       card_slugs:
       - or-gr-art8-brokdorf-grundsaetze
-    - id: p5
+    - id: p6
       label: Kooperationsgrundsatz als zusätzliches Argument gegen die Rechtmäßigkeit
         herangezogen
       weight: 1.0
       required: false
       keywords:
-      - Kooperation
-      - Dialog
+      - Kooperationsgrundsatz
+      - Kooperationspflicht
+      - Dialog mit den Veranstaltern
+      - Gelegenheit zum Dialog
+      - Kooperation mit der Behörde
       card_slugs:
       - or-gr-art8-brokdorf-grundsaetze
-    - id: p6
+    - id: p7
       label: 'Ergebnis: Auflösung nicht mit Art. 8 Abs. 1 GG vereinbar'
       weight: 1.0
       required: false
       keywords:
-      - nicht vereinbar
-      - rechtswidrig
+      - Auflösung verletzt Art. 8
+      - Auflösung war rechtswidrig
+      - Auflösung ist unverhältnismäßig
+      - Auflösung ist mit Art. 8 Abs. 1 GG unvereinbar
+      - Verletzung der Versammlungsfreiheit

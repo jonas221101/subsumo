@@ -20,6 +20,7 @@ from app.api.v1 import (
     gutachten,
     learn,
     lernprofil,
+    normen,
     plan,
     public,
     werkbank,
@@ -28,6 +29,7 @@ from app.config import get_settings
 from app.core.observability import configure_logging
 from app.core.ratelimit import RateLimiter
 from app.db import Base, SessionLocal, engine
+from app.db_migrate import migrate
 from app.services.content import load_content, seed
 
 log = logging.getLogger("subsumo")
@@ -37,6 +39,7 @@ log = logging.getLogger("subsumo")
 async def lifespan(app: FastAPI):
     settings = get_settings()
     Base.metadata.create_all(bind=engine)
+    migrate(engine)
     if settings.seed_on_startup:
         bundle = load_content(settings.content_dir)
         for error in bundle.errors:
@@ -82,6 +85,7 @@ def create_app() -> FastAPI:
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
+        expose_headers=["X-Neue-Karten-Heute", "X-Neue-Karten-Rest"],
     )
 
     for router in (
@@ -94,6 +98,7 @@ def create_app() -> FastAPI:
         plan.router,
         examen.router,
         lernprofil.router,
+        normen.router,
         public.router,
         billing.router,
         werkbank.router,

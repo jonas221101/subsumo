@@ -39,6 +39,18 @@ class TopicInput:
     mastery: float = 0.0         # 0..1, aus dem Kartenzustand abgeleitet
     # Individuelles Gewicht aus dem Lernprofil (docs/33): Fokus/Schwerpunkt > 1.
     weight: float = 1.0
+    # Kartenbestand: bereits gestartete Themen sind nicht "neu".
+    cards_total: int = 0
+    cards_started: int = 0
+    # Reihenfolge-Stufe (0 = sofort): Stoff spaeterer Semester kommt erst nach
+    # dem Stoff des aktuellen Semesters. Gleiche Stufe = nach Prioritaet.
+    stufe: int = 0
+
+    @property
+    def started_share(self) -> float:
+        if self.cards_total <= 0:
+            return 0.0
+        return min(1.0, self.cards_started / self.cards_total)
 
     @property
     def priority(self) -> float:
@@ -117,18 +129,33 @@ class StudyPlan:
 
 
 def _interleave_by_area(topics: list[TopicInput]) -> list[TopicInput]:
+    """Stufenweise (Semesterstoff zuerst), je Stufe Round-Robin ueber die Gebiete."""
+    ordered: list[TopicInput] = []
+    for stufe in sorted({t.stufe for t in topics}):
+        ordered.extend(_interleave_tier([t for t in topics if t.stufe == stufe]))
+    return ordered
+
+
+def _interleave_tier(topics: list[TopicInput]) -> list[TopicInput]:
     """Round-Robin ueber die Rechtsgebiete, innerhalb je nach Prioritaet."""
     by_area: dict[str, list[TopicInput]] = {}
     for topic in sorted(topics, key=lambda t: (-t.priority, t.slug)):
         by_area.setdefault(topic.area, []).append(topic)
 
     ordered: list[TopicInput] = []
-    areas = sorted(by_area, key=lambda a: -max(t.priority for t in by_area[a]))
+    areas = sorted(by_area, key=lambda a: (-max(t.priority for t in by_area[a]), a))
     while any(by_area.values()):
         for area in areas:
             if by_area[area]:
                 ordered.append(by_area[area].pop(0))
     return ordered
+
+
+def _first_pass_minutes(topic: TopicInput) -> int:
+    """Gestartete Themen brauchen nur noch den ungelernten Rest (mind. 15 min)."""
+    if topic.cards_started <= 0:
+        return topic.budget_minutes
+    return max(15, round(topic.budget_minutes * (1.0 - topic.started_share)))
 
 
 def _phase_for(index: int, total: int) -> str:
@@ -140,6 +167,35 @@ def _phase_for(index: int, total: int) -> str:
     if ratio < PHASE_SPLIT[0] + PHASE_SPLIT[1]:
         return PHASE_VERTIEFUNG
     return PHASE_ENDSPURT
+
+
+def klausur_dates(
+    *,
+    start: date,
+    exam_date: date,
+    klausur_weekday: int = KLAUSUR_WEEKDAY,
+    rest_weekdays: set[int] | None = None,
+    horizon_days: int | None = None,
+) -> list[date]:
+    """Tage, an denen :func:`generate_plan` eine Klausur einplant.
+
+    Einzige Quelle fuer "naechste Klausur": Das Cockpit nutzt sie, damit es dem
+    Lernplan nicht widerspricht (keine Klausur in der Grundlagenphase, nicht
+    an Ruhetagen).
+    """
+    total = (exam_date - start).days
+    full = total
+    if horizon_days is not None:
+        total = min(total, horizon_days)
+    rest = rest_weekdays or set()
+    out: list[date] = []
+    for offset in range(max(0, total)):
+        current = start + timedelta(days=offset)
+        if current.weekday() in rest or current.weekday() != klausur_weekday:
+            continue
+        if _phase_for(offset, full) != PHASE_GRUNDLAGEN:
+            out.append(current)
+    return out
 
 
 def generate_plan(
@@ -167,14 +223,18 @@ def generate_plan(
     if daily_minutes < 15:
         raise ValueError("Ein Tagesbudget unter 15 Minuten ergibt keinen Plan.")
 
-    total_days = (exam_date - start).days
+    # Die Phasen beziehen sich auf den gesamten Zeitraum bis zum Examen, nicht
+    # auf einen abgeschnittenen Horizont - sonst widerspricht ein 7-Tage-Plan
+    # (Cockpit) dem vollen Plan.
+    full_days = (exam_date - start).days
+    total_days = full_days
     if horizon_days is not None:
         total_days = min(total_days, horizon_days)
     rest_weekdays = rest_weekdays or set()
     due_forecast = list(due_forecast or [])
 
     queue = [
-        {"topic": t, "remaining": t.budget_minutes, "pass": 1}
+        {"topic": t, "remaining": _first_pass_minutes(t), "pass": 1}
         for t in _interleave_by_area(topics)
     ]
     # Zweiter Durchgang in verkuerzter Form - Wiederholung des Gelernten.
@@ -190,7 +250,7 @@ def generate_plan(
 
     for offset in range(total_days):
         current = start + timedelta(days=offset)
-        phase = _phase_for(offset, total_days)
+        phase = _phase_for(offset, full_days)
         day = PlanDay(day=current, phase=phase)
 
         if current.weekday() in rest_weekdays:
@@ -209,7 +269,9 @@ def generate_plan(
         if klausuren and current.weekday() == klausur_weekday and phase != PHASE_GRUNDLAGEN:
             minutes = 300 if phase == PHASE_ENDSPURT else 120
             day.blocks.append(
-                PlanBlock("klausur", f"Klausur unter Examensbedingungen ({minutes} min)", minutes)
+                PlanBlock(
+                    "klausur", f"Übungsklausur unter Examensbedingungen ({minutes} min)", minutes
+                )
             )
             day.review_backlog = backlog + (
                 due_forecast[offset] if offset < len(due_forecast) else 0
@@ -227,7 +289,7 @@ def generate_plan(
             doable = int(max_review_minutes * cards_per_minute)
             done = min(due_today, doable)
             minutes = max(1, math.ceil(done / cards_per_minute))
-            day.blocks.append(PlanBlock("wiederholung", f"{done} faellige Karten", minutes))
+            day.blocks.append(PlanBlock("wiederholung", f"{done} fällige Karten", minutes))
             budget -= minutes
             backlog = due_today - done
         else:
@@ -250,7 +312,12 @@ def generate_plan(
             topic: TopicInput = item["topic"]
             minutes = min(budget, item["remaining"])
             kind = "neu" if item["pass"] == 1 else "fall"
-            label = topic.title if item["pass"] == 1 else f"Fall & Wiederholung: {topic.title}"
+            if item["pass"] != 1:
+                label = f"Fall & Wiederholung: {topic.title}"
+            elif topic.cards_started > 0:
+                label = f"Weiterlernen: {topic.title}"
+            else:
+                label = topic.title
             day.blocks.append(PlanBlock(kind, label, minutes, topic.slug, topic.area))
             if topic.slug not in covered:
                 covered.append(topic.slug)

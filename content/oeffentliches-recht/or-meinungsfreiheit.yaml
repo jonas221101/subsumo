@@ -15,10 +15,10 @@ cards:
 - slug: or-gr-art5-schutzbereich-meinung
   type: definition
   front: 'Definiere: Meinung i.S.d. Art. 5 Abs. 1 S. 1 GG'
-  back: Eine Meinung ist eine durch Elemente der Stellungnahme, des Dafürhaltens
-    oder des Meinens geprägte Äußerung im Rahmen einer geistigen Auseinandersetzung.
-    Sie ist subjektiv geprägt und nicht auf ihre Richtigkeit hin überprüfbar -
-    im Unterschied zur Tatsachenbehauptung.
+  back: Eine Meinung ist eine durch Elemente der Stellungnahme, des Dafürhaltens oder
+    des Meinens geprägte Äußerung im Rahmen einer geistigen Auseinandersetzung. Sie
+    ist subjektiv geprägt und nicht auf ihre Richtigkeit hin überprüfbar - im Unterschied
+    zur Tatsachenbehauptung.
   norms:
   - Art. 5 Abs. 1 S. 1 GG
   quellen:
@@ -29,7 +29,7 @@ cards:
   type: definition
   front: Wie grenzt man Meinung von Tatsachenbehauptung ab, und warum ist das relevant?
   back: Tatsachenbehauptungen sind dem Beweis zugänglich (wahr oder falsch); bewusst
-    unwahre Tatsachenbehauptungen fällen von vornherein nicht in den Schutzbereich
+    unwahre Tatsachenbehauptungen fallen von vornherein nicht in den Schutzbereich
     des Art. 5 Abs. 1 GG. Bei Äußerungen mit Meinungs- und Tatsachenelementen ist
     für die Einordnung der Gesamtcharakter bzw. der Schwerpunkt der Äußerung maßgeblich.
   norms:
@@ -40,10 +40,9 @@ cards:
 - slug: or-gr-art5-informations-und-medienfreiheiten
   type: norm
   front: Welche Kommunikationsfreiheiten enthält Art. 5 Abs. 1 GG neben der Meinungsäußerungsfreiheit?
-  back: Satz 1 gewährt zusätzlich die Informationsfreiheit - das Recht, sich aus
-    allgemein zugänglichen Quellen ungehindert zu unterrichten. Satz 2 gewährleistet
-    die Pressefreiheit sowie die Freiheit der Berichterstattung durch Rundfunk und
-    Film.
+  back: Satz 1 gewährt zusätzlich die Informationsfreiheit - das Recht, sich aus allgemein
+    zugänglichen Quellen ungehindert zu unterrichten. Satz 2 gewährleistet die Pressefreiheit
+    sowie die Freiheit der Berichterstattung durch Rundfunk und Film.
   norms:
   - Art. 5 Abs. 1 S. 1 GG
   - Art. 5 Abs. 1 S. 2 GG
@@ -58,8 +57,8 @@ cards:
   back: Nach ganz herrschender Auffassung verbietet Art. 5 Abs. 1 S. 3 GG nur die
     Vorzensur - eine präventive behördliche Kontrolle, bei der die Veröffentlichung
     von einer vorherigen Erlaubnis abhängig gemacht wird. Repressive Maßnahmen nach
-    erfolgter Veröffentlichung fällen nicht darunter, müssen sich aber an Art.
-    5 Abs. 2 GG messen lassen.
+    erfolgter Veröffentlichung fallen nicht darunter, müssen sich aber an Art. 5 Abs.
+    2 GG messen lassen.
   norms:
   - Art. 5 Abs. 1 S. 3 GG
   - Art. 5 Abs. 2 GG
@@ -82,8 +81,8 @@ cards:
   front: 'Definiere: "Allgemeines Gesetz" i.S.d. Art. 5 Abs. 2 GG (Sonderrechtslehre)'
   back: Ein allgemeines Gesetz ist ein Gesetz, das sich nicht gegen die Meinungsfreiheit
     als solche oder gegen eine bestimmte Meinung richtet, sondern dem Schutz eines
-    unabhängig vom Inhalt einer Meinung zu schützenden Rechtsguts dient und die
-    Meinungsfreiheit diesem Rechtsgüterschutz unterordnet.
+    unabhängig vom Inhalt einer Meinung zu schützenden Rechtsguts dient und die Meinungsfreiheit
+    diesem Rechtsgüterschutz unterordnet.
   norms:
   - Art. 5 Abs. 2 GG
   quellen:
@@ -103,17 +102,41 @@ cards:
   stand: 2026-09
 - slug: or-gr-art5-schmaehkritik
   type: streitstand
-  front: Welche Folge hat die Einordnung einer Äußerung als Schmähkritik für die
-    Abwägung mit der persönlichen Ehre?
-  back: Schmähkritik liegt nur ausnahmsweise vor, wenn eine Äußerung nicht mehr
-    der Auseinandersetzung in der Sache dient, sondern ausschließlich der Diffamierung
+  front: Welche Folge hat die Einordnung einer Äußerung als Schmähkritik für die Abwägung
+    mit der persönlichen Ehre?
+  back: Schmähkritik liegt nur ausnahmsweise vor, wenn eine Äußerung nicht mehr der
+    Auseinandersetzung in der Sache dient, sondern ausschließlich der Diffamierung
     der Person. In diesem engen Ausnahmefall tritt die Meinungsfreiheit ohne weitere
-    Einzelfallabwägung zurück - deshalb ist der Begriff nach der Rechtsprechung
-    eng auszulegen.
+    Einzelfallabwägung zurück - deshalb ist der Begriff nach der Rechtsprechung eng
+    auszulegen.
   norms:
   - Art. 5 Abs. 2 GG
   - Art. 1 Abs. 1 GG
   quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-gr-art5-kunstfreiheit-satire
+  type: definition
+  front: Wie wirkt sich Art. 5 Abs. 3 S. 1 GG (Kunstfreiheit) bei Karikatur und Satire
+    aus?
+  back: 'Karikaturen und Satire können zugleich Meinungsäußerung (Art. 5 Abs. 1 S.
+    1 GG) und Kunst (Art. 5 Abs. 3 S. 1 GG) sein; die Kunstfreiheit ist das speziellere
+    Grundrecht und wird neben Art. 5 Abs. 1 geprüft. Art. 5 Abs. 3 GG enthält keinen
+    Schrankenvorbehalt, die Schranken des Art. 5 Abs. 2 GG gelten für die Kunstfreiheit
+    nicht. Sie kann nur durch kollidierendes Verfassungsrecht - hier das allgemeine
+    Persönlichkeitsrecht des Betroffenen (Art. 2 Abs. 1 i. V. m. Art. 1 Abs. 1 GG)
+    - beschränkt werden, im Wege der praktischen Konkordanz und Abwägung im Einzelfall.
+    Bei Satire ist zwischen dem Aussagekern und seiner satirischen Einkleidung zu
+    trennen: Die Einkleidung (Überzeichnung, Verzerrung) ist an den Maßstäben der
+    Kunstfreiheit zu messen und darf deutlich schärfer ausfallen; der Aussagekern
+    darf den Betroffenen nicht in seinem Kern verletzen oder herabwürdigen.'
+  norms:
+  - Art. 5 Abs. 3 S. 1 GG
+  - Art. 5 Abs. 1 S. 1 GG
+  - Art. 2 Abs. 1 GG
+  - Art. 1 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
   - Eigenformulierung Redaktion
   stand: 2026-09
 schemata:
@@ -130,6 +153,8 @@ schemata:
     children:
     - label: '1. Persönlich: jedermann (Jedermann-Grundrecht)'
     - label: '2. Sachlich: Meinung (wertende Stellungnahme) - Abgrenzung zur Tatsachenbehauptung'
+    - label: '3. Bei Karikatur/Satire: Kunstfreiheit, Art. 5 Abs. 3 S. 1 GG, daneben
+        eröffnet'
   - label: II. Eingriff
   - label: III. Verfassungsrechtliche Rechtfertigung
     children:
@@ -140,6 +165,9 @@ schemata:
       children:
       - label: a) Wechselwirkungslehre
       - label: b) Abwägung im Einzelfall, außer bei Schmähkritik (dann kein Abwägungserfordernis)
+    - label: '3. Kunstfreiheit: kein Schrankenvorbehalt, Art. 5 Abs. 2 GG gilt nicht
+        - nur kollidierendes Verfassungsrecht (z. B. Persönlichkeitsrecht), praktische
+        Konkordanz'
   - label: IV. Ergebnis
 faelle:
 - slug: or-fall-satireplakat
@@ -153,16 +181,24 @@ faelle:
     hängt der Künstler K an einer von der Stadt genehmigten Plakatwand ein selbst
     gestaltetes Plakat auf. Es zeigt eine karikaturistische Darstellung des fiktiven
     Baudezernenten D mit dem Text "Baudezernent D: Ihre Inkompetenz betoniert unsere
-    Stadt!". Die zuständige Ordnungsbehörde ordnet die sofortige Entfernung des
-    Plakats an und stützt dies auf eine ortsrechtliche Vorschrift, die ehrverletzende
-    Darstellungen von Amtsträgern im öffentlichen Straßenraum untersagt. K hält
-    die Entfernungsanordnung für einen unverhältnismäßigen Eingriff in seine Meinungsfreiheit.'
+    Stadt!". Die zuständige Ordnungsbehörde ordnet die sofortige Entfernung des Plakats
+    an und stützt dies auf eine ortsrechtliche Vorschrift, die ehrverletzende Darstellungen
+    von Amtsträgern im öffentlichen Straßenraum untersagt. K hält die Entfernungsanordnung
+    für einen unverhältnismäßigen Eingriff in seine Meinungsfreiheit.'
   question: Verletzt die Entfernungsanordnung den K in seinem Grundrecht aus Art.
     5 Abs. 1 S. 1 GG?
   steps:
   - prompt: Ist der Schutzbereich der Meinungsfreiheit eröffnet?
     erwartung: Ja - Karikatur und Text sind wertende, meinungsbildende Äußerungen,
       die nicht dem Wahrheitsbeweis zugänglich sind, keine Tatsachenbehauptung.
+  - prompt: Ist neben Art. 5 Abs. 1 S. 1 GG ein weiteres Grundrecht einschlägig, und
+      was folgt daraus für die Schranken?
+    erwartung: Ja - die Karikatur ist als Satire zugleich Kunst im Sinne des Art.
+      5 Abs. 3 S. 1 GG, K ist Künstler. Die Kunstfreiheit ist schrankenlos gewährleistet;
+      die Schrankentrias des Art. 5 Abs. 2 GG gilt für sie nicht. Eine Beschränkung
+      ist nur durch kollidierendes Verfassungsrecht möglich, hier das allgemeine Persönlichkeitsrecht
+      des D (Art. 2 Abs. 1 i. V. m. Art. 1 Abs. 1 GG); maßgeblich ist die Abwägung
+      im Wege praktischer Konkordanz, bei Satire getrennt nach Aussagekern und Einkleidung.
   - prompt: Liegt ein Eingriff vor?
     erwartung: Ja - die Entfernungsanordnung als belastender Verwaltungsakt unterbindet
       die weitere Verbreitung der Meinung.
@@ -180,21 +216,24 @@ faelle:
   - prompt: Wie fällt die Abwägung im Einzelfall aus?
     erwartung: 'Zugunsten des K: kommunalpolitische Kritik an einem Amtsträger in
       dessen amtlicher Funktion genießt besonderes Gewicht; eine überspitzte, polemische
-      Formulierung ist von der Meinungsfreiheit gedeckt, solange sie - wie hier -
-      nicht in Schmähkritik umschlägt.'
+      Formulierung ist von der Meinungsfreiheit und - als satirische Einkleidung -
+      von der Kunstfreiheit gedeckt, solange sie - wie hier - nicht in Schmähkritik
+      umschlägt.'
   expectation:
     pruefpunkte:
     - id: p1
-      label: Schutzbereich der Meinungsfreiheit bejaht (wertende Äußerung, keine
-        Tatsachenbehauptung)
+      label: Schutzbereich der Meinungsfreiheit bejaht (wertende Äußerung, keine Tatsachenbehauptung)
       weight: 2.0
       required: true
       norms:
       - Art. 5 Abs. 1 S. 1 GG
       keywords:
-      - Meinung
+      - Meinungsäußerung
+      - wertende Äußerung
       - wertend
       - Tatsachenbehauptung
+      - Art. 5 Abs. 1 S. 1 GG
+      - Schutzbereich der Meinungsfreiheit
       card_slugs:
       - or-gr-art5-schutzbereich-meinung
       - or-gr-art5-abgrenzung-tatsachenbehauptung
@@ -203,10 +242,26 @@ faelle:
       weight: 1.5
       required: true
       keywords:
-      - Eingriff
+      - Entfernungsanordnung
+      - Eingriff in die Meinungsfreiheit
+      - Eingriff in Art. 5
+      - Verbreitung der Meinung
       card_slugs:
       - or-gr-eingriff
     - id: p3
+      label: 'Kunstfreiheit (Art. 5 Abs. 3 S. 1 GG, Satire/Karikatur) erkannt: Schrankenvorbehalt
+        des Art. 5 Abs. 2 GG gilt nicht, Abwägung mit dem Persönlichkeitsrecht des
+        Amtsträgers'
+      weight: 2.0
+      required: false
+      keywords:
+      - Kunstfreiheit
+      - Art. 5 Abs. 3
+      - kollidierendes Verfassungsrecht
+      - Aussagekern
+      card_slugs:
+      - or-gr-art5-kunstfreiheit-satire
+    - id: p4
       label: Prüfung als "allgemeines Gesetz" i.S.d. Art. 5 Abs. 2 GG nach der Sonderrechtslehre
       weight: 2.5
       required: true
@@ -215,27 +270,36 @@ faelle:
       keywords:
       - allgemeines Gesetz
       - Sonderrechtslehre
+      - Art. 5 Abs. 2 GG
+      - meinungsneutral
       card_slugs:
       - or-gr-art5-allgemeines-gesetz-sonderrechtslehre
-    - id: p4
+    - id: p5
       label: Schmähkritik zutreffend verneint (Sachbezug zur Bauentscheidung)
       weight: 2.0
       required: true
       keywords:
       - Schmähkritik
       - Sachbezug
+      - Bausache
+      - Diffamierung der Person
       card_slugs:
       - or-gr-art5-schmaehkritik
-    - id: p5
+    - id: p6
       label: Wechselwirkungslehre / Abwägung im Einzelfall durchgeführt
       weight: 2.5
       required: true
       keywords:
+      - Wechselwirkungslehre
       - Wechselwirkung
-      - Abwägung
+      - Abwägung im Einzelfall
+      - Abwägung zugunsten
+      - praktischer Konkordanz
+      - praktische Konkordanz
+      - Aussagekern und Einkleidung
       card_slugs:
       - or-gr-art5-wechselwirkungslehre
-    - id: p6
+    - id: p7
       label: 'Ergebnis: überspitzte Kritik an Amtsträger in amtlicher Funktion gedeckt,
         Entfernungsanordnung verletzt Art. 5 Abs. 1 S. 1 GG'
       weight: 1.5
@@ -243,5 +307,8 @@ faelle:
       norms:
       - Art. 5 Abs. 1 S. 1 GG
       keywords:
-      - verletzt
-      - gedeckt
+      - von der Meinungsfreiheit gedeckt
+      - von der Kunstfreiheit gedeckt
+      - verletzt Art. 5
+      - Verletzung der Meinungsfreiheit
+      - Entfernungsanordnung ist verfassungswidrig

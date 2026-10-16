@@ -1,11 +1,11 @@
 topic:
   slug: th-polizei-ordnungsrecht
   area: oeffentliches-recht
-  title: Polizei- und Ordnungsrecht Thueringen
+  title: Polizei- und Ordnungsrecht Thüringen
   parent: or-sicherheitsrecht-generalklausel-standardmassnahmen
   bundesland: TH
   relevance: 4
-  stand: 2026-09
+  stand: 2026-10
   redaktion:
     erzeugt_von: claude-code (Redaktionsentwurf)
     status: in-pruefung
@@ -13,76 +13,379 @@ topic:
 cards:
 - slug: th-por-generalklausel
   type: norm
-  front: Wo steht die polizeiliche Generalklausel in Thueringen und was setzt sie voraus?
-  back: 'Fundstelle: § 12 Abs. 1 ThuerPAG; § 5 Abs. 1 ThuerOBG. Die Generalklausel ermaechtigt zu den
-    notwendigen Massnahmen, um eine im Einzelfall bestehende Gefahr fuer die oeffentliche Sicherheit oder
-    Ordnung abzuwehren. Sie ist subsidiaer: Greift eine Standardmassnahme oder ein Spezialgesetz, geht
-    dieses vor. Auf der Rechtsfolgenseite besteht Ermessen, begrenzt durch den Grundsatz der Verhaeltnismaessigkeit.'
+  front: Wo steht die polizeiliche Generalklausel in Thüringen und was setzt sie voraus?
+  back: 'Fundstelle: § 12 Abs. 1 ThürPAG; § 5 Abs. 1 ThürOBG. Die Generalklausel ermächtigt zu den notwendigen
+    Maßnahmen, um eine im Einzelfall bestehende Gefahr für die öffentliche Sicherheit oder Ordnung abzuwehren.
+    Sie ist subsidiär: Greift eine Standardmaßnahme oder ein Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite
+    besteht Ermessen, begrenzt durch den Grundsatz der Verhältnismäßigkeit. Zum Schutz privater Rechte
+    wird die Gefahrenabwehr nur subsidiär tätig: Ein Einschreiten kommt nur in Betracht, wenn gerichtlicher
+    Schutz nicht rechtzeitig zu erlangen ist und ohne die Maßnahme die Vereitelung oder wesentliche Erschwerung
+    der Rechtsverwirklichung droht.'
   norms:
-  - § 12 Abs. 1 ThuerPAG
-  - § 5 Abs. 1 ThuerOBG
+  - § 12 Abs. 1 ThürPAG
+  - § 5 Abs. 1 ThürOBG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: th-por-aufbau
   type: schema_step
-  front: 'Aufbau: Rechtmaessigkeit einer Gefahrenabwehrmassnahme nach dem Landesrecht von Thueringen'
-  back: 'I. Ermaechtigungsgrundlage (Thueringer Polizeiaufgabengesetz (ThuerPAG) und Thueringer Ordnungsbehoerdengesetz
-    (ThuerOBG): Standardmassnahme vor Generalklausel). II. Formelle Rechtmaessigkeit: 1. Zustaendigkeit
-    (sachlich: welche Behoerde - Ordnungsbehoerden primaer (ThuerOBG), Polizei bei Eilbeduerftigkeit (§
-    3 ThuerPAG); oertlich; instanziell), 2. Verfahren (Anhoerung, § 28 VwVfG bzw. Landesrecht), 3. Form.
-    III. Materielle Rechtmaessigkeit: 1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose ex ante),
-    2. richtiger Adressat (Stoerer: §§ 7, 8, 10 ThuerPAG; §§ 10, 11, 12 ThuerOBG), 3. Rechtsfolge: Ermessen
-    und Verhaeltnismaessigkeit (geeignet, erforderlich, angemessen).'
+  front: 'Aufbau: Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Thüringen'
+  back: 'I. Ermächtigungsgrundlage (Thüringer Polizeiaufgabengesetz (ThürPAG) und Thüringer Ordnungsbehördengesetz
+    (ThürOBG): Standardmaßnahme vor Generalklausel). II. Formelle Rechtmäßigkeit: 1. Zuständigkeit (sachlich:
+    welche Behörde - Ordnungsbehörden primär (ThürOBG), Polizei bei Eilbedürftigkeit (Eilzuständigkeit nach dem ThürPAG); örtlich;
+    instanziell), 2. Verfahren (Anhörung nach dem jeweiligen Landesverwaltungsverfahrensgesetz), 3. Form.
+    III. Materielle Rechtmäßigkeit: 1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose ex ante),
+    2. richtiger Adressat (Störer: §§ 7, 8, 10 ThürPAG; §§ 10, 11, 13 ThürOBG), 3. Rechtsfolge: Ermessen
+    und Verhältnismäßigkeit (geeignet, erforderlich, angemessen).'
   norms:
-  - § 12 Abs. 1 ThuerPAG
-  - § 5 Abs. 1 ThuerOBG
-  - §§ 7, 8, 10 ThuerPAG
-  - §§ 10, 11, 12 ThuerOBG
+  - § 12 Abs. 1 ThürPAG
+  - § 5 Abs. 1 ThürOBG
+  - §§ 7, 8, 10 ThürPAG
+  - §§ 10, 11, 13 ThürOBG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: th-por-stoerer
   type: norm
-  front: Wo sind Verhaltensstoerer, Zustandsstoerer und Nichtstoerer in Thueringen geregelt?
-  back: '§§ 7, 8, 10 ThuerPAG; §§ 10, 11, 12 ThuerOBG. Verhaltensstoerer: wer die Gefahr durch sein Verhalten
-    verursacht (Theorie der unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstoerer:
-    Inhaber der tatsaechlichen Gewalt bzw. Eigentuemer einer gefaehrlichen Sache. Nichtstoerer: Inanspruchnahme
-    nur unter den engen Voraussetzungen des polizeilichen Notstands (gegenwaertige erhebliche Gefahr,
-    Stoerer nicht greifbar, Behoerde selbst nicht in der Lage), mit Entschaedigungsanspruch.'
+  front: Wo sind Verhaltensstörer, Zustandsstörer und Nichtstörer in Thüringen geregelt?
+  back: '§§ 7, 8, 10 ThürPAG; §§ 10, 11, 13 ThürOBG. Verhaltensstörer: wer die Gefahr durch sein Verhalten
+    verursacht (Theorie der unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer:
+    Inhaber der tatsächlichen Gewalt bzw. Eigentümer einer gefährlichen Sache. Nichtstörer: Inanspruchnahme
+    nur unter den engen Voraussetzungen des polizeilichen Notstands (gegenwärtige erhebliche Gefahr, Störer
+    nicht greifbar, Behörde selbst nicht in der Lage), mit Entschädigungsanspruch. Die Verantwortlichkeit knüpft an die objektive Zurechnung der Gefahr an, nicht an ein Verschulden. Bei mehreren Verantwortlichen trifft die Behörde die Auswahl nach pflichtgemäßem Ermessen (Störerauswahl).'
   norms:
-  - §§ 7, 8, 10 ThuerPAG
-  - §§ 10, 11, 12 ThuerOBG
+  - §§ 7, 8, 10 ThürPAG
+  - §§ 10, 11, 13 ThürOBG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: th-por-zustaendigkeit
   type: definition
-  front: Wer ist in Thueringen fuer die Gefahrenabwehr zustaendig - Ordnungs-/Sicherheitsbehoerde oder
-    Polizei?
-  back: 'Ordnungsbehoerden primaer (ThuerOBG), Polizei bei Eilbeduerftigkeit (§ 3 ThuerPAG). Pruefungsrelevant
-    ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsaetzlich bei den Verwaltungs-/Ordnungsbehoerden;
-    der Polizeivollzugsdienst wird taetig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine
-    besondere Zuweisung besteht. Ein Handeln der unzustaendigen Behoerde macht die Massnahme formell rechtswidrig.'
+  front: Wer ist in Thüringen für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde oder Polizei?
+  back: 'Ordnungsbehörden primär (ThürOBG), Polizei bei Eilbedürftigkeit (Vorrang der Ordnungsbehörde: § 3 Abs. 1 ThürOBG; Subsidiarität der Polizei, Eilzuständigkeit: § 3 S. 1 ThürPAG). Prüfungsrelevant
+    ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich bei den Verwaltungs-/Ordnungsbehörden;
+    der Polizeivollzugsdienst wird tätig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere
+    Zuweisung besteht. Ein Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig. Die Eilzuständigkeit der Polizei setzt voraus, dass die zuständige Behörde nicht rechtzeitig handeln kann; die zuständige Stelle ist dann in der Regel unverzüglich zu unterrichten (Einzelheiten nach dem jeweiligen Landesgesetz).'
   norms:
-  - Thueringer Polizeiaufgabengesetz (ThuerPAG) und Thueringer Ordnungsbehoerdengesetz (ThuerOBG)
+  - § 3 ThürPAG
+  - § 3 Abs. 1 ThürOBG
+  - Thüringer Polizeiaufgabengesetz (ThürPAG) und Thüringer Ordnungsbehördengesetz (ThürOBG)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: th-por-vollstreckung
   type: norm
-  front: Nach welchem Gesetz wird eine Gefahrenabwehrverfuegung in Thueringen vollstreckt?
-  back: 'Thueringer Verwaltungszustellungs- und Vollstreckungsgesetz (ThuerVwZVG). Regelfall ist das gestreckte
-    Verfahren: Grundverfuegung - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme,
-    Zwangsgeld, unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausfuehrung
-    ohne vorausgehenden Verwaltungsakt moeglich; die Kosten traegt der Pflichtige.'
+  front: Nach welchem Gesetz wird eine Gefahrenabwehrverfügung in Thüringen vollstreckt?
+  back: 'Polizei: Verwaltungszwang nach den §§ 51 ff. ThürPAG; Ordnungsbehörden: Vollstreckung nach dem Thüringer Verwaltungszustellungs- und Vollstreckungsgesetz (ThürVwZVG), das ThürOBG enthält keine eigenen Zwangsvorschriften; unmittelbare Ausführung: § 12 ThürOBG. Regelfall ist das gestreckte
+    Verfahren: Grundverfügung - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme,
+    Zwangsgeld, unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausführung
+    ohne vorausgehenden Verwaltungsakt möglich; die Kosten trägt der Pflichtige. Voraussetzungen des gestreckten Verfahrens sind ein wirksamer und vollstreckbarer Verwaltungsakt (unanfechtbar oder sofort vollziehbar), die Androhung mit angemessener Frist und die Festsetzung. Das Zwangsmittel muss verhältnismäßig sein, unmittelbarer Zwang ist nur letztes Mittel. Die Kosten werden dem Pflichtigen durch Kostenbescheid auferlegt.'
   norms:
-  - Thueringer Verwaltungszustellungs- und Vollstreckungsgesetz (ThuerVwZVG)
+  - §§ 51 ff. ThürPAG
+  - § 12 ThürOBG
+  - Thüringer Verwaltungszustellungs- und Vollstreckungsgesetz (ThürVwZVG)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
+- slug: th-por-gefahr
+  type: definition
+  front: >-
+      Welche Gefahrbegriffe sind im Gefahrenabwehrrecht in Thüringen zu unterscheiden?
+  back: >-
+      Gefahr ist eine Sachlage, die bei ungehindertem Geschehensablauf mit hinreichender
+      Wahrscheinlichkeit in absehbarer Zeit zu einem Schaden für ein polizeiliches Schutzgut führt;
+      maßgeblich ist die Prognose ex ante aus Sicht eines besonnenen Amtswalters. Konkrete Gefahr: im
+      Einzelfall drohend, sie trägt Einzelmaßnahmen (Generalklausel, Standardmaßnahmen). Abstrakte
+      Gefahr: nach allgemeiner Lebenserfahrung typischerweise drohend, sie trägt nur den Erlass einer ordnungsbehördlichen Verordnung (ThürOBG). Qualifizierte Gefahren erhöhen die Anforderungen:
+      erhebliche Gefahr (bedeutendes Rechtsgut), gegenwärtige Gefahr (Schadenseintritt hat begonnen
+      oder steht unmittelbar bevor), Gefahr im Verzug (Abwarten würde den Erfolg der Maßnahme
+      gefährden). Vom Gefahrenverdacht spricht man, wenn unklar ist, ob ein Schaden droht; hier kommt
+      nur ein Gefahrerforschungseingriff in Betracht. Welche Qualifikation eine Standardmaßnahme
+      verlangt, ergibt sich aus ihrem Tatbestand.
+  norms:
+  - "§ 12 Abs. 1 ThürPAG"
+  - "§ 5 Abs. 1 ThürOBG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: th-por-anschein
+  type: streitstand
+  front: >-
+      Anscheinsgefahr, Gefahrenverdacht und Putativgefahr: Wie sind sie abzugrenzen und welche
+      Rechtsfolgen hat eine Fehlprognose?
+  back: >-
+      Anscheinsgefahr: Bei Erlass der Maßnahme sprach aus Sicht eines besonnenen Amtswalters ex ante
+      alles für einen drohenden Schaden, tatsächlich bestand keine Gefahr. Nach h. M. liegt eine
+      Gefahr im Rechtssinn vor, die Maßnahme ist rechtmäßig (Prognoseentscheidung). Gefahrenverdacht:
+      Die Tatsachenlage ist unklar; zulässig ist grundsätzlich nur eine vorläufige, der Aufklärung
+      dienende Maßnahme. Putativgefahr: Der Amtswalter nimmt ohne objektiv tragfähigen Anschein eine
+      Gefahr an; die Maßnahme ist rechtswidrig. Streitig sind die Folgefragen beim Anscheinsstörer:
+      Nach h. M. wird dem zu Unrecht Herangezogenen, der den Anschein nicht zurechenbar gesetzt hat,
+      ein Ausgleich entsprechend dem Nichtstörer zugestanden und er wird nicht mit Kosten belastet;
+      wer den Anschein zurechenbar veranlasst hat (etwa Fehlalarm durch Fahrlässigkeit), trägt die
+      Kosten. Anderer Ansatz: Die Rechtmäßigkeit der Maßnahme schließe jeden Ausgleich aus.
+  norms:
+  - "§ 12 Abs. 1 ThürPAG"
+  - "§ 5 Abs. 1 ThürOBG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: th-por-standard
+  type: norm
+  front: >-
+      Welche Standardmaßnahmen kennt das Gefahrenabwehrrecht in Thüringen und wie verhalten sie sich
+      zur Generalklausel?
+  back: >-
+      Standardmaßnahmen sind typisierte Eingriffsbefugnisse mit eigenem Tatbestand: Befragung und
+      Auskunftspflicht, Vorladung, Identitätsfeststellung, Platzverweisung und Aufenthaltsverbot,
+      Gewahrsam, Durchsuchung von Personen und Sachen, Betreten und Durchsuchen von Wohnungen sowie
+      Sicherstellung und Beschlagnahme. Für die Polizei stehen sie im ThürPAG (z. B. § 14 Identitätsfeststellung, § 18 Platzverweisung, § 19 Gewahrsam, §§ 23-27); die Ordnungsbehörden haben im ThürOBG eigene Befugnisse (§§ 15-22, u. a. Identitätsfeststellung, § 17 Platzverweisung, Durchsuchung, Sicherstellung), aber keinen Gewahrsam. Sie
+      gehen der Generalklausel als speziellere Normen vor; ist ihr Tatbestand nicht erfüllt, darf
+      nicht ohne Weiteres auf die Generalklausel ausgewichen werden, soweit die Standardmaßnahme die
+      Materie abschließend regelt. Verfassungsrechtliche Vorgaben sind zu beachten: Gewahrsam verlangt
+      eine richterliche Entscheidung (Art. 104 Abs. 2 GG), die Durchsuchung von Wohnungen
+      grundsätzlich eine richterliche Anordnung (Art. 13 Abs. 2 GG), ihr Betreten zur Gefahrenabwehr
+      ist an Art. 13 Abs. 7 GG zu messen.
+  norms:
+  - "§§ 13 ff. ThürPAG"
+  - "§§ 15 ff. ThürOBG"
+  - "Art. 104 Abs. 2 GG"
+  - "Art. 13 Abs. 2 GG"
+  - "Art. 13 Abs. 7 GG"
+  - "§ 12 Abs. 1 ThürPAG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: th-por-stoererauswahl
+  type: streitstand
+  front: >-
+      Wie wählt die Behörde zwischen mehreren Verantwortlichen aus, und wie wird der Zweckveranlasser
+      behandelt?
+  back: >-
+      Gibt es mehrere Störer, wählt die Behörde nach pflichtgemäßem Ermessen aus. Leitlinie ist die
+      effektive, schnelle und sichere Gefahrenabwehr; eine feste Rangfolge zwischen Verhaltens- und
+      Zustandsstörer besteht nicht. Zu berücksichtigen sind Nähe zur Gefahr, Leistungsfähigkeit,
+      Verursachungsbeitrag und Gleichbehandlung. Nichtstörer dürfen dagegen nur im polizeilichen
+      Notstand herangezogen werden. Streitig ist die Reichweite der Verhaltensverantwortlichkeit: Nach
+      der Theorie der unmittelbaren Verursachung ist nur verantwortlich, wer selbst die Gefahrengrenze
+      überschreitet. Die Rechtsprechung und Teile des Schrifttums erweitern dies auf den
+      Zweckveranlasser, der die unmittelbare Verursachung durch einen Dritten bezweckt oder sie als
+      zwangsläufige Folge seines Tuns herbeiführt. Die Gegenansicht lehnt die Figur ab, weil sie die
+      Unmittelbarkeit auflöse und die Verantwortlichkeit nicht gesetzlich gedeckt sei.
+  norms:
+  - "§ 7 ThürPAG"
+  - "§ 8 ThürPAG"
+  - "§ 10 ThürPAG"
+  - "§ 10 ThürOBG"
+  - "§ 11 ThürOBG"
+  - "§ 13 ThürOBG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: th-por-zwang
+  type: definition
+  front: >-
+      Wie läuft die Vollstreckung einer Gefahrenabwehrverfügung in Thüringen ab, und was gilt beim
+      Sofortvollzug?
+  back: >-
+      Regelfall ist das gestreckte Verfahren: wirksame und vollstreckbare Grundverfügung (unanfechtbar
+      oder sofort vollziehbar, § 80 Abs. 2 VwGO), Androhung des Zwangsmittels mit angemessener Frist,
+      Festsetzung, Anwendung. Zwangsmittel sind Ersatzvornahme, Zwangsgeld und als letztes Mittel
+      unmittelbarer Zwang; sie müssen verhältnismäßig sein. Für die Polizei regeln die §§ 51 ff. ThürPAG
+      den Verwaltungszwang; für die Ordnungsbehörden gilt das Thüringer Verwaltungszustellungs- und
+      Vollstreckungsgesetz (ThürVwZVG), das ThürOBG enthält keine eigenen Zwangsvorschriften
+      (unmittelbare Ausführung: § 12 ThürOBG). Bei gegenwärtiger Gefahr kann die Behörde
+      im Sofortvollzug (unmittelbare Ausführung) ohne vorausgehenden Verwaltungsakt handeln, wenn die
+      Maßnahme zur Abwehr der Gefahr notwendig ist und die Verantwortlichen nicht rechtzeitig
+      herangezogen werden können. Typische Klausurkonstellation ist das Abschleppen eines Fahrzeugs;
+      geprüft wird dann, ob die Grundverfügung, etwa ein Verkehrszeichen, wirksam war, ob Androhung
+      und Festsetzung entbehrlich waren und ob das Zwangsmittel verhältnismäßig war.
+  norms:
+  - "Thüringer Verwaltungszustellungs- und Vollstreckungsgesetz (ThürVwZVG)"
+  - "§ 80 Abs. 2 S. 1 Nr. 2 VwGO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: th-por-kosten
+  type: norm
+  front: >-
+      Wer trägt die Kosten von Ersatzvornahme, unmittelbarer Ausführung und Zwang, und wo liegen die
+      Grenzen der Kostenhaftung?
+  back: >-
+      Die Kosten einer Ersatzvornahme, des unmittelbaren Zwangs oder einer unmittelbaren Ausführung
+      trägt grundsätzlich der Pflichtige bzw. der für die Gefahr Verantwortliche; sie werden durch
+      Kostenbescheid (Leistungsbescheid) geltend gemacht und nach den Vorschriften der
+      Verwaltungsvollstreckung beigetrieben. Bei Sofortvollzug ohne Grundverfügung prüft die
+      Kostenentscheidung inzident, ob die Maßnahme rechtmäßig gewesen wäre, insbesondere ob eine
+      Gefahr vorlag, der Kostenschuldner Störer war und die Maßnahme verhältnismäßig war. Für den
+      Zustandsstörer ist die Kostenhaftung nach der Rechtsprechung des Bundesverfassungsgerichts aus
+      Art. 14 GG begrenzt; sie darf nach Zumutbarkeit insbesondere den Wert des Grundstücks nach
+      Sanierung nicht übersteigen, wenn die Gefahr nicht dem Risikobereich des Eigentümers zuzurechnen
+      ist. Der Nichtstörer wird nicht mit Kosten belastet; ihm steht bei Inanspruchnahme ein
+      Entschädigungsanspruch zu.
+  norms:
+  - "Art. 14 Abs. 1 GG"
+  - "Art. 14 Abs. 2 GG"
+  - "Thüringer Verwaltungszustellungs- und Vollstreckungsgesetz (ThürVwZVG)"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "BVerfGE 102, 1 (Altlasten, Zustandsverantwortlichkeit)"
+  stand: 2026-10
+- slug: th-por-doppel
+  type: streitstand
+  front: >-
+      Was gilt bei doppelfunktionalen Maßnahmen der Polizei (Gefahrenabwehr und Strafverfolgung)?
+  back: >-
+      Verfolgt eine polizeiliche Maßnahme zugleich präventive und repressive Zwecke, sind
+      Rechtsgrundlage und Rechtsweg abhängig von ihrem Schwerpunkt. Nach h. M. und der Rechtsprechung
+      entscheidet der erkennbare Schwerpunkt, der sich aus dem Anlass, dem Zweck und dem
+      Gesamteindruck der Maßnahme ergibt. Überwiegt die Gefahrenabwehr, ist die Befugnis im ThürPAG
+      bzw. im Ordnungsrecht zu suchen und der Verwaltungsrechtsweg eröffnet (§ 40 Abs. 1 VwGO).
+      Überwiegt die Strafverfolgung, gilt die StPO; der Rechtsschutz richtet sich dann nach § 98 Abs.
+      2 S. 2 StPO analog bzw. nach den §§ 23 ff. EGGVG. Lassen sich die Zwecke nicht gewichten, werden
+      teilweise beide Regelungskomplexe nebeneinander angewendet oder dem Betroffenen ein Wahlrecht
+      zugestanden. Die Klausur verlangt deshalb stets eine ausdrückliche Zuordnung des Handelns, bevor
+      die Ermächtigungsgrundlage geprüft wird.
+  norms:
+  - "§ 40 Abs. 1 VwGO"
+  - "§ 98 Abs. 2 StPO"
+  - "§ 23 EGGVG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: th-schema-por-stoererauswahl
+  title: "Inanspruchnahme eines Verantwortlichen nach ThürPAG und ThürOBG"
+  norms:
+  - "§ 12 Abs. 1 ThürPAG"
+  - "§ 5 Abs. 1 ThürOBG"
+  - "§ 7 ThürPAG"
+  - "§ 8 ThürPAG"
+  - "§ 10 ThürPAG"
+  - "§ 10 ThürOBG"
+  - "§ 11 ThürOBG"
+  - "§ 13 ThürOBG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  steps:
+  - label: "I. Ermächtigungsgrundlage"
+  - label: "II. Formelle Rechtmäßigkeit"
+    hinweis: >-
+        Zuständigkeit der Ordnungsbehörde (ThürOBG), Eilzuständigkeit der Polizei (ThürPAG), Anhörung,
+        Form.
+  - label: "III. Materielle Rechtmäßigkeit"
+    children:
+    - label: "1. Konkrete Gefahr für ein Schutzgut"
+    - label: "2. Verantwortlicher"
+      children:
+      - label: >-
+          a) Verhaltensstörer: unmittelbare Verursachung
+      - label: >-
+          b) Zustandsstörer: Eigentümer oder Inhaber der tatsächlichen Gewalt
+      - label: "c) Nichtstörer nur im Notstand"
+    - label: "3. Störerauswahl als Ermessensentscheidung"
+      hinweis: "Effektivität der Gefahrenabwehr; keine feste Rangfolge."
+    - label: "4. Verhältnismäßigkeit und Zumutbarkeit"
+faelle:
+- slug: th-fall-por-stoererauswahl-oelspur
+  title: "Die Ölspur"
+  difficulty: 3
+  minutes: 50
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "BVerfGE 102, 1 (Altlasten, Zustandsverantwortlichkeit)"
+  facts: >-
+      Auf einer Gemeindestraße in Erfurt tritt aus dem Tank eines Lieferwagens, der dem Händler H
+      gehört, Heizöl aus und zieht eine 200 Meter lange Spur auf der Fahrbahn. Der Fahrer, eine
+      Aushilfskraft des H, hat die Spur nicht bemerkt und ist weitergefahren; er ist nicht zu
+      ermitteln. Die Fahrbahn ist stark rutschig, mehrere Fahrzeuge geraten ins Schleudern. Die
+      zuständige Ordnungsbehörde ermittelt den H als Eigentümer des Lieferwagens. Sie lässt die Spur
+      durch eine Fachfirma beseitigen und verlangt von H die Kosten (1.800 Euro). H meint, er habe
+      weder die Spur verursacht noch gewusst, dass der Tank leckt, und der Fahrer sei verantwortlich.
+  question: >-
+      Durfte die Ordnungsbehörde den H zur Kostentragung heranziehen? Die Beseitigung ist als
+      zulässige Ersatzvornahme zu unterstellen.
+  steps:
+  - prompt: "Welche Gefahr liegt vor?"
+    erwartung: >-
+        Eine konkrete und gegenwärtige Gefahr für die öffentliche Sicherheit, nämlich für Leib und Leben
+        der Verkehrsteilnehmer, durch die rutschige Fahrbahn.
+  - prompt: "Wer ist Verantwortlicher, und kommt der Fahrer in Betracht?"
+    erwartung: >-
+        Der Fahrer wäre Verhaltensstörer, ist aber unbekannt und deshalb nicht greifbar. Auf ihn kommt
+        es für die Entscheidung nicht an, weil mehrere Verantwortliche möglich sind.
+  - prompt: "Ist H Verantwortlicher?"
+    erwartung: >-
+        Ja, H ist als Eigentümer des Lieferwagens Zustandsstörer, denn die Gefahr geht von der Sache aus
+        (Zustandsverantwortlichkeit). Dass H die Ölspur nicht verursacht hat und den Defekt nicht
+        kannte, ist unerheblich, da die Zustandsverantwortlichkeit nicht an Verschulden anknüpft.
+  - prompt: >-
+        War die Auswahl des H ermessensfehlerfrei, und besteht eine Kostengrenze?
+    erwartung: >-
+        Ja. Die Störerauswahl liegt im Auswahlermessen der Behörde; maßgeblich ist die Effektivität der Gefahrenabwehr, eine feste Rangfolge gibt es nicht. Der unbekannte Fahrer stand für eine effektive Gefahrenabwehr nicht zur Verfügung; H war bekannt, erreichbar und konnte die Beseitigung finanzieren. Die Kostenlast von 1.800 Euro ist für H zumutbar und verhältnismäßig, denn sie liegt weit unter dem Wert des Lieferwagens. Die Kostenpflicht des H besteht.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: "Konkrete gegenwärtige Gefahr durch die Ölspur erkannt"
+      weight: 1.5
+      required: false
+      keywords:
+      - "konkrete Gefahr"
+      - "gegenwärtige Gefahr"
+      card_slugs:
+      - "th-por-gefahr"
+    - id: p2
+      label: >-
+          H als Zustandsstörer (Eigentümer der Sache) eingeordnet, Verschulden unerheblich
+      weight: 3.0
+      required: true
+      norms:
+      - "§ 8 ThürPAG"
+      - "§ 11 ThürOBG"
+      keywords:
+      - "Zustandsstörer"
+      - "Eigentümer"
+      - "Zustandsverantwortlichkeit"
+      - "Verschulden unerheblich"
+      - "Gefahr geht von der Sache aus"
+      card_slugs:
+      - "th-por-stoerer"
+    - id: p3
+      label: "Störerauswahl nach Effektivität der Gefahrenabwehr begründet"
+      weight: 2.5
+      required: true
+      keywords:
+      - "Störerauswahl"
+      - "Effektivität"
+      - "effektive Gefahrenabwehr"
+      - "Auswahlermessen"
+      - "keine feste Rangfolge"
+      card_slugs:
+      - "th-por-stoererauswahl"
+    - id: p4
+      label: "Zumutbarkeit der Kostenlast geprüft"
+      weight: 1.5
+      required: false
+      keywords:
+      - "Zumutbarkeit"
+      - "zumutbar"
+      - "Kostenlast"
+      - "Verhältnismäßigkeit"
+      - "Wert der Sache"
+      card_slugs:
+      - "th-por-kosten"
+    normzitate_geprueft: false

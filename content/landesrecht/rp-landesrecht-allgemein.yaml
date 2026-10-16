@@ -13,12 +13,13 @@ topic:
 cards:
 - slug: rp-lra-vwvfg
   type: norm
-  front: Welches Verwaltungsverfahrensgesetz gilt fuer Landesbehoerden in Rheinland-Pfalz?
-  back: Landesverwaltungsverfahrensgesetz (LVwVfG RP) - Verweisung auf das VwVfG des Bundes. Das VwVfG
-    des Bundes gilt nur fuer Bundesbehoerden (§ 1 VwVfG); fuer Landes- und Kommunalbehoerden ist das Landesgesetz
-    massgeblich. Bei Verweisungsgesetzen werden die Bundesnormen 'entsprechend' angewendet und sind so
-    zu zitieren (z. B. '§ 35 VwVfG i. V. m. § 1 des Landesgesetzes'), bei Vollgesetzen ist die Landesnorm
-    selbst zu zitieren.
+  front: Welches Verwaltungsverfahrensgesetz gilt für Landesbehörden in Rheinland-Pfalz?
+  back: >-
+    Landesverwaltungsverfahrensgesetz (LVwVfG RP) - Verweisungsgesetz. Das VwVfG des Bundes gilt nur für
+    Bundesbehörden (§ 1 VwVfG); für Landes- und Kommunalbehörden erklärt § 1 Abs. 1 LVwVfG neben den eigenen
+    §§ 2 bis 5 die Bestimmungen des VwVfG in der jeweils geltenden Fassung für anwendbar, mit Ausnahme
+    einzelner Vorschriften (u. a. §§ 1, 2, 61 Abs. 2 S. 1, 78, 80, 94, 96 Abs. 4, 100, 101 und 103 VwVfG).
+    Die Bundesnormen sind daher zu zitieren wie '§ 35 VwVfG i. V. m. § 1 Abs. 1 LVwVfG'.
   norms:
   - Landesverwaltungsverfahrensgesetz (LVwVfG RP) - Verweisung auf das VwVfG des Bundes
   quellen:
@@ -27,27 +28,33 @@ cards:
   stand: 2026-09
 - slug: rp-lra-verfassungsgericht
   type: norm
-  front: Gibt es in Rheinland-Pfalz eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
-  back: 'Ja - Art. 130a LV RP. Zustaendiges Gericht: Verfassungsgerichtshof Rheinland-Pfalz auf Grundlage
-    der Verfassung fuer Rheinland-Pfalz (LV RP). Verfahrensgegenstand ist nur die Verletzung von Landesgrundrechten
-    durch Landesstaatsgewalt; Bundesrecht ist Pruefungsmassstab nur, soweit die Landesverfassung darauf
-    verweist. Daneben steht immer die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
+  front: >-
+    Gibt es in Rheinland-Pfalz eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
+  back: >-
+    Ja - Art. 130a LV RP, § 44 VGHG: Jeder kann mit der Behauptung, durch die öffentliche Gewalt des Landes
+    in einem seiner in der Landesverfassung enthaltenen Rechte verletzt zu sein, Verfassungsbeschwerde
+    zum Verfassungsgerichtshof Rheinland-Pfalz erheben. Prüfungsmaßstab ist die Landesverfassung; die
+    Verfassungsbeschwerde ist unzulässig, soweit die öffentliche Gewalt des Landes Bundesrecht ausführt
+    oder anwendet (Ausnahme: gerichtliches Verfahren oder weiterreichende Rechte der Landesverfassung,
+    § 44 Abs. 2 VGHG). Der Rechtsweg muss grundsätzlich erschöpft sein (§ 44 Abs. 3 VGHG). Daneben steht
+    immer die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG).
   norms:
-  - Verfassung fuer Rheinland-Pfalz (LV RP)
+  - Art. 130a LV RP
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: rp-lra-kommunalverfassung
   type: norm
-  front: Welches Gesetz regelt die Kommunalverfassung in Rheinland-Pfalz und welche Hauptorgane hat die
-    Gemeinde?
-  back: 'Gemeindeordnung Rheinland-Pfalz (GemO RP): Gemeinderat und Buergermeister; Verbandsgemeinden
-    als Besonderheit. Grundlage ist die Selbstverwaltungsgarantie (Art. 28 Abs. 2 GG und Landesverfassung):
-    eigenverantwortliche Regelung aller Angelegenheiten der oertlichen Gemeinschaft. Klausurklassiker:
-    Zustaendigkeitsstreit zwischen Vertretung und Verwaltungsspitze, Kommunalverfassungsstreit, Rechtsaufsicht.'
+  front: >-
+    Welches Gesetz regelt die Kommunalverfassung in Rheinland-Pfalz und welche Hauptorgane hat die Gemeinde?
+  back: >-
+    Gemeindeordnung Rheinland-Pfalz (GemO RP): Gemeinderat und Bürgermeister; Verbandsgemeinden als Besonderheit.
+    Grundlage ist die Selbstverwaltungsgarantie (Art. 28 Abs. 2 GG und Landesverfassung): eigenverantwortliche
+    Regelung aller Angelegenheiten der örtlichen Gemeinschaft. Klausurklassiker: Zuständigkeitsstreit
+    zwischen Vertretung und Verwaltungsspitze, Kommunalverfassungsstreit, Rechtsaufsicht.
   norms:
-  - 'Gemeindeordnung Rheinland-Pfalz (GemO RP): Gemeinderat und Buergermeister'
+  - 'Gemeindeordnung Rheinland-Pfalz (GemO RP): Gemeinderat und Bürgermeister'
   - Verbandsgemeinden als Besonderheit
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
@@ -55,12 +62,13 @@ cards:
   stand: 2026-09
 - slug: rp-lra-bauordnung
   type: norm
-  front: Wie heisst die Bauordnung in Rheinland-Pfalz und wie ist eine Baugenehmigung zu pruefen?
-  back: 'Landesbauordnung Rheinland-Pfalz (LBauO RP). Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben
-    keine oeffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungs-beduerftigkeit (Errichtung,
-    Aenderung, Nutzungsaenderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulaessigkeit nach
-    §§ 29 ff. BauGB (Bundesrecht), bauordnungsrechtliche Zulaessigkeit nach der Landesbauordnung (Abstandsflaechen,
-    Gestaltung, Stellplaetze).'
+  front: Wie heißt die Bauordnung in Rheinland-Pfalz und wie ist eine Baugenehmigung zu prüfen?
+  back: >-
+    Landesbauordnung Rheinland-Pfalz (LBauO RP). Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben
+    keine öffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungsbedürftigkeit (Errichtung, Änderung,
+    Nutzungsänderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulässigkeit nach §§ 29 ff. BauGB
+    (Bundesrecht), bauordnungsrechtliche Zulässigkeit nach der Landesbauordnung (Abstandsflächen, Gestaltung,
+    Stellplätze).
   norms:
   - Landesbauordnung Rheinland-Pfalz (LBauO RP)
   - §§ 29 ff. BauGB
@@ -70,11 +78,13 @@ cards:
   stand: 2026-09
 - slug: rp-lra-pflichtstoff
   type: definition
-  front: Welche Landesrechtsgebiete gehoeren in Rheinland-Pfalz zum Pflichtstoff des Oeffentlichen Rechts?
-  back: Polizei- und Ordnungsrecht (POG); Kommunalrecht (GemO, Verbandsgemeinden); Bauordnungsrecht (LBauO);
+  front: >-
+    Welche Landesrechtsgebiete gehören in Rheinland-Pfalz zum Pflichtstoff des Öffentlichen Rechts?
+  back: >-
+    Polizei- und Ordnungsrecht (POG); Kommunalrecht (GemO, Verbandsgemeinden); Bauordnungsrecht (LBauO);
     Landesverfassung. Landesrecht wird im Examen fast nie isoliert, sondern eingebettet in eine verwaltungsprozessuale
-    Einkleidung (Anfechtungs-/Verpflichtungsklage, vorlaeufiger Rechtsschutz) geprueft - die Landesnorm
-    ist die Ermaechtigungsgrundlage, der Aufbau bleibt der allgemeine.
+    Einkleidung (Anfechtungs-/Verpflichtungsklage, vorläufiger Rechtsschutz) geprüft - die Landesnorm
+    ist die Ermächtigungsgrundlage, der Aufbau bleibt der allgemeine.
   norms: []
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)

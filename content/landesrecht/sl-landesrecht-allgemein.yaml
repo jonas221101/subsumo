@@ -13,14 +13,14 @@ topic:
 cards:
 - slug: sl-lra-vwvfg
   type: norm
-  front: Welches Verwaltungsverfahrensgesetz gilt fuer Landesbehoerden in Saarland?
-  back: Saarlaendisches Verwaltungsverfahrensgesetz (SVwVfG) - Vollgesetz. Das VwVfG des Bundes gilt nur
-    fuer Bundesbehoerden (§ 1 VwVfG); fuer Landes- und Kommunalbehoerden ist das Landesgesetz massgeblich.
-    Bei Verweisungsgesetzen werden die Bundesnormen 'entsprechend' angewendet und sind so zu zitieren
-    (z. B. '§ 35 VwVfG i. V. m. § 1 des Landesgesetzes'), bei Vollgesetzen ist die Landesnorm selbst zu
-    zitieren.
+  front: Welches Verwaltungsverfahrensgesetz gilt für Landesbehörden in Saarland?
+  back: Saarländisches Verwaltungsverfahrensgesetz (SVwVfG) - Verweisungsgesetz. Das VwVfG des Bundes gilt nur
+    für Bundesbehörden (§ 1 VwVfG); für Landes- und Kommunalbehörden erklärt § 1 Abs. 1 SVwVfG die
+    Vorschriften des VwVfG in der jeweils geltenden Fassung für entsprechend anwendbar, soweit nicht
+    Landesrecht inhaltsgleiche oder entgegenstehende Bestimmungen enthält. Die Bundesnormen sind daher
+    zu zitieren wie '§ 35 VwVfG i. V. m. § 1 SVwVfG'.
   norms:
-  - Saarlaendisches Verwaltungsverfahrensgesetz (SVwVfG) - Vollgesetz
+  - § 1 SVwVfG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -28,12 +28,15 @@ cards:
 - slug: sl-lra-verfassungsgericht
   type: norm
   front: Gibt es in Saarland eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
-  back: 'Ja - § 55 VerfGHG SL. Zustaendiges Gericht: Verfassungsgerichtshof des Saarlandes auf Grundlage
-    der Verfassung des Saarlandes (SVerf). Verfahrensgegenstand ist nur die Verletzung von Landesgrundrechten
-    durch Landesstaatsgewalt; Bundesrecht ist Pruefungsmassstab nur, soweit die Landesverfassung darauf
-    verweist. Daneben steht immer die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
+  back: 'Ja - § 55 Abs. 1 VerfGHG: Jedermann kann Verfassungsbeschwerde mit der Behauptung erheben, durch die
+    saarländische öffentliche Gewalt in einem Grundrecht oder sonstigen verfassungsmäßigen Recht verletzt
+    zu sein. Zuständig ist der Verfassungsgerichtshof des Saarlandes (SVerf). Prüfungsmaßstab ist die
+    Landesverfassung; Bundesrecht ist Prüfungsmaßstab nur, soweit die Landesverfassung darauf verweist.
+    Der Rechtsweg muss grundsätzlich erschöpft sein (§ 55 Abs. 3 VerfGHG); Gemeinden können sich nach
+    § 55 Abs. 2 VerfGHG, Art. 123 SVerf gegen Gesetze wehren. Daneben steht immer die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
   norms:
-  - Verfassung des Saarlandes (SVerf)
+  - § 55 VerfGHG
+  - Art. 123 SVerf
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -41,24 +44,24 @@ cards:
 - slug: sl-lra-kommunalverfassung
   type: norm
   front: Welches Gesetz regelt die Kommunalverfassung in Saarland und welche Hauptorgane hat die Gemeinde?
-  back: 'Kommunalselbstverwaltungsgesetz (KSVG): Gemeinderat und Buergermeister. Grundlage ist die Selbstverwaltungsgarantie
+  back: 'Kommunalselbstverwaltungsgesetz (KSVG): Gemeinderat und Bürgermeister. Grundlage ist die Selbstverwaltungsgarantie
     (Art. 28 Abs. 2 GG und Landesverfassung): eigenverantwortliche Regelung aller Angelegenheiten der
-    oertlichen Gemeinschaft. Klausurklassiker: Zustaendigkeitsstreit zwischen Vertretung und Verwaltungsspitze,
+    örtlichen Gemeinschaft. Klausurklassiker: Zuständigkeitsstreit zwischen Vertretung und Verwaltungsspitze,
     Kommunalverfassungsstreit, Rechtsaufsicht.'
   norms:
-  - 'Kommunalselbstverwaltungsgesetz (KSVG): Gemeinderat und Buergermeister'
+  - 'Kommunalselbstverwaltungsgesetz (KSVG): Gemeinderat und Bürgermeister'
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: sl-lra-bauordnung
   type: norm
-  front: Wie heisst die Bauordnung in Saarland und wie ist eine Baugenehmigung zu pruefen?
+  front: Wie heißt die Bauordnung in Saarland und wie ist eine Baugenehmigung zu prüfen?
   back: 'Landesbauordnung Saarland (LBO SL). Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben keine
-    oeffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungs-beduerftigkeit (Errichtung, Aenderung,
-    Nutzungsaenderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulaessigkeit nach §§ 29 ff.
-    BauGB (Bundesrecht), bauordnungsrechtliche Zulaessigkeit nach der Landesbauordnung (Abstandsflaechen,
-    Gestaltung, Stellplaetze).'
+    öffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungsbedürftigkeit (Errichtung, Änderung,
+    Nutzungsänderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulässigkeit nach §§ 29 ff. BauGB
+    (Bundesrecht), bauordnungsrechtliche Zulässigkeit nach der Landesbauordnung (Abstandsflächen, Gestaltung,
+    Stellplätze).'
   norms:
   - Landesbauordnung Saarland (LBO SL)
   - §§ 29 ff. BauGB
@@ -68,10 +71,10 @@ cards:
   stand: 2026-09
 - slug: sl-lra-pflichtstoff
   type: definition
-  front: Welche Landesrechtsgebiete gehoeren in Saarland zum Pflichtstoff des Oeffentlichen Rechts?
+  front: Welche Landesrechtsgebiete gehören in Saarland zum Pflichtstoff des Öffentlichen Rechts?
   back: Polizeirecht (SPolG); Kommunalrecht (KSVG); Bauordnungsrecht (LBO); Landesverfassung. Landesrecht
     wird im Examen fast nie isoliert, sondern eingebettet in eine verwaltungsprozessuale Einkleidung (Anfechtungs-/Verpflichtungsklage,
-    vorlaeufiger Rechtsschutz) geprueft - die Landesnorm ist die Ermaechtigungsgrundlage, der Aufbau bleibt
+    vorläufiger Rechtsschutz) geprüft - die Landesnorm ist die Ermächtigungsgrundlage, der Aufbau bleibt
     der allgemeine.
   norms: []
   quellen:

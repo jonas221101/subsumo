@@ -1,0 +1,414 @@
+topic:
+  slug: zr-bt-kaufrecht-rechtsmangel-eigentumsvorbehalt
+  area: zivilrecht
+  title: 'Kaufrecht: Rechtsmangel, Eigentumsvorbehalt und Gefahrübergang, §§ 435, 446, 447,
+    449 BGB'
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-rme-rechtsmangel-435
+  type: definition
+  front: 'Definiere: Rechtsmangel, § 435 BGB'
+  back: Die Sache ist frei von Rechtsmängeln, wenn Dritte in Bezug auf die Sache keine oder
+    nur die im Kaufvertrag übernommenen Rechte gegen den Käufer geltend machen können (§ 435
+    S. 1 BGB). Rechtsmängel sind etwa das Eigentum eines Dritten (Herausgabeanspruch nach
+    § 985 BGB), ein Pfandrecht, Nießbrauch oder Mietrecht eines Dritten sowie ein gegenüber dem Käufer wirkendes Besitzrecht.
+    Einem Rechtsmangel steht es gleich, wenn im Grundbuch ein Recht eingetragen ist, das nicht
+    besteht (§ 435 S. 2 BGB). Der Verkäufer ist nach § 433 Abs. 1 S. 1 BGB verpflichtet, dem
+    Käufer die Sache frei von Sach- und Rechtsmängeln zu verschaffen. Erwirbt der Käufer gutgläubig
+    lastenfrei (§§ 932, 936 BGB), entfällt der Rechtsmangel, weil Dritte keine Rechte mehr
+    geltend machen können. Eine Sache ohne Rechtsmangel verlangt also ein lastenfreies Eigentum
+    des Käufers.
+  norms:
+  - § 435 BGB
+  - § 433 Abs. 1 BGB
+  - § 985 BGB
+  - § 932 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-rme-rechtsfolgen-437
+  type: norm
+  front: Welche Rechte hat der Käufer bei einem Rechtsmangel, und wann verjähren sie?
+  back: 'Bei einem Rechtsmangel stehen dem Käufer dieselben Rechte zu wie bei einem Sachmangel
+    (§ 437 BGB): Nacherfüllung (§ 439 BGB), Rücktritt, Minderung und Schadensersatz bzw. Aufwendungsersatz.
+    Die Nacherfüllung erfolgt hier durch Beseitigung des Rechts, etwa Ablösung eines Pfandrechts
+    oder Erwerb des Eigentums vom Dritten, oder durch Lieferung einer lastenfreien Sache.
+    Die Verjährung beträgt grundsätzlich zwei Jahre (§ 438 Abs. 1 Nr. 3 BGB). Besteht der
+    Rechtsmangel in einem dinglichen Recht eines Dritten, auf Grund dessen Herausgabe der
+    Kaufsache verlangt werden kann, verjähren die Ansprüche in 30 Jahren (§ 438 Abs. 1 Nr.
+    1 Buchst. a BGB). Die Verjährung beginnt bei Grundstücken mit der Übergabe, im Übrigen
+    mit der Ablieferung (§ 438 Abs. 2 BGB). Ein Haftungsausschluss ist bei Arglist nicht möglich
+    (§ 444 BGB).'
+  norms:
+  - § 437 BGB
+  - § 438 Abs. 1 BGB
+  - § 438 Abs. 2 BGB
+  - § 444 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-rme-kenntnis-442
+  type: norm
+  front: Wie wirkt die Kenntnis des Käufers von einem Rechtsmangel (§ 442 BGB)?
+  back: 'Kennt der Käufer bei Vertragsschluss den Mangel, sind seine Rechte wegen des Mangels
+    ausgeschlossen (§ 442 Abs. 1 S. 1 BGB). Bei grob fahrlässiger Unkenntnis kann er Rechte
+    nur geltend machen, wenn der Verkäufer den Mangel arglistig verschwiegen oder eine Garantie
+    für die Beschaffenheit der Sache übernommen hat (§ 442 Abs. 1 S. 2 BGB). Für Rechtsmängel
+    besteht eine wichtige Ausnahme: Ein im Grundbuch eingetragenes Recht hat der Verkäufer
+    zu beseitigen, auch wenn der Käufer es kennt (§ 442 Abs. 2 BGB). Das betrifft Grundpfandrechte,
+    die mit dem Kaufpreis abgelöst werden sollen. Bei Vereinbarung der Übernahme eines Rechts
+    durch den Käufer (etwa einer Grundschuld) liegt kein Mangel vor, weil dann nur die übernommenen
+    Rechte bestehen (§ 435 S. 1 BGB).'
+  norms:
+  - § 442 Abs. 1 BGB
+  - § 442 Abs. 2 BGB
+  - § 435 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-rme-zeitpunkt-rechtsmangel
+  type: streitstand
+  front: 'Streitstand: Auf welchen Zeitpunkt kommt es für das Vorliegen eines Rechtsmangels
+    an?'
+  back: Für die Sachmängelhaftung kommt es nach § 434 Abs. 1 BGB auf den Zeitpunkt des Gefahrübergangs
+    an. Für Rechtsmängel wird diskutiert, ob dasselbe gilt. Nach herrschender Meinung ist
+    maßgeblich der Zeitpunkt des Rechtsübergangs, also bei beweglichen Sachen der Eigentumserwerb,
+    bei Grundstücken die Eintragung des Käufers; denn der Verkäufer schuldet die Verschaffung
+    lastenfreien Eigentums (§ 433 Abs. 1 S. 1, § 435 BGB), und bis dahin kann er den Mangel
+    beseitigen. Die Gegenauffassung stellt auch hier auf den Gefahrübergang ab, um einen einheitlichen
+    Maßstab für alle Mängel zu erreichen. Der Unterschied wirkt sich aus, wenn das Recht zwischen
+    Gefahrübergang und Rechtsübergang wegfällt oder entsteht, und bei der Verjährung, die
+    erst mit Ablieferung bzw. Übergabe beginnt (§ 438 Abs. 2 BGB).
+  norms:
+  - § 435 BGB
+  - § 433 Abs. 1 BGB
+  - § 438 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-rme-ev-begriff-449
+  type: definition
+  front: Wie wirkt sich der Eigentumsvorbehalt im Kaufvertrag aus (Gefahr, Verjährung, § 216 Abs.
+    2 S. 2 BGB)?
+  back: 'Hat sich der Verkäufer einer beweglichen Sache das Eigentum bis zur Zahlung des Kaufpreises
+    vorbehalten, ist im Zweifel anzunehmen, dass die Übereignung unter der aufschiebenden Bedingung
+    vollständiger Zahlung erfolgt (§ 449 Abs. 1 BGB). Der Verkäufer liefert die Sache dem Käufer
+    also vor, behält aber das Eigentum. Auf den Gefahrübergang hat das keinen Einfluss: Mit der
+    Übergabe trägt der Käufer die Preisgefahr (§ 446 S. 1 BGB), obwohl er noch nicht Eigentümer
+    ist; geht die Sache zufällig unter, bleibt er zur Zahlung verpflichtet. Auch die Fälligkeit
+    des Kaufpreises hängt nicht vom Eigentumserwerb ab. Verjährt der Kaufpreisanspruch, kann der
+    Verkäufer gleichwohl vom Vertrag zurücktreten und die Sache herausverlangen (§ 216 Abs. 2
+    S. 2 BGB); der Rücktritt ist dann nicht nach § 218 BGB unwirksam. Der Eigentumsvorbehalt sichert
+    den Verkäufer damit auch nach Verjährung seiner Forderung.'
+  norms:
+  - § 449 Abs. 1 BGB
+  - § 446 BGB
+  - § 216 Abs. 2 BGB
+  - § 158 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-rme-ev-herausgabe-449-ii
+  type: norm
+  front: Wann kann der Verkäufer die unter Eigentumsvorbehalt gelieferte Sache herausverlangen
+    (§ 449 Abs. 2 BGB)?
+  back: Der Verkäufer kann die Sache auf Grund des Eigentumsvorbehalts nur herausverlangen,
+    wenn er vom Vertrag zurückgetreten ist (§ 449 Abs. 2 BGB). Er muss also zunächst ein Rücktrittsrecht
+    haben und es ausüben. Bei Zahlungsverzug des Käufers kommt Rücktritt nach § 323 Abs. 1
+    BGB in Betracht, in der Regel nach erfolgloser Fristsetzung; der Rücktritt ist ausgeschlossen,
+    wenn die Pflichtverletzung unerheblich ist (§ 323 Abs. 5 S. 2 BGB). Mit dem Rücktritt
+    entfällt das Recht zum Besitz (§ 986 BGB), sodass der Verkäufer als Eigentümer nach §
+    985 BGB Herausgabe verlangen kann, daneben besteht ein Rückgewähranspruch aus § 346 Abs.
+    1 BGB. Die Regelung schützt den Käufer, dessen Besitzrecht aus dem Kaufvertrag erst mit
+    der Beendigung des Vertrags entfällt, und hindert den Verkäufer, die Sache einfach zurückzufordern.
+  norms:
+  - § 449 Abs. 2 BGB
+  - § 323 Abs. 1 BGB
+  - § 323 Abs. 5 BGB
+  - § 985 BGB
+  - § 346 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-rme-anwartschaftsrecht
+  type: definition
+  front: Wann tritt beim Eigentumsvorbehalt die Bedingung ein, und wer kann den Eintritt herbeiführen?
+  back: Der Käufer erwirbt das Eigentum automatisch, sobald die aufschiebende Bedingung der vollständigen
+    Kaufpreiszahlung eintritt (§ 449 Abs. 1, § 158 Abs. 1 BGB); einer weiteren Übereignungshandlung
+    bedarf es nicht. Teilzahlungen genügen nicht, solange der Kaufpreis nicht vollständig erfüllt
+    ist. Dem Eintritt entspricht jede Erfüllung der Kaufpreisforderung, auch durch Erfüllungssurrogate
+    wie eine wirksame Aufrechnung (§ 389 BGB). Zahlen kann auch ein Dritter (§ 267 BGB), sofern
+    der Verkäufer nicht berechtigt widerspricht; dann erlangt der Käufer das Eigentum. Verweigert
+    der Verkäufer treuwidrig die Annahme der Zahlung, gilt die Bedingung als eingetreten (§ 162
+    Abs. 1 BGB). Bis zum Bedingungseintritt hat der Vorbehaltskäufer ein Anwartschaftsrecht, das
+    der Verkäufer durch Zwischenverfügungen nicht mehr einseitig vereiteln kann (§ 161 Abs. 1
+    BGB).
+  norms:
+  - § 449 Abs. 1 BGB
+  - § 158 Abs. 1 BGB
+  - § 267 BGB
+  - § 162 Abs. 1 BGB
+  - § 161 Abs. 1 BGB
+  - § 389 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-rme-ev-erweitert-449-iii
+  type: norm
+  front: Was verbietet § 449 Abs. 3 BGB beim Eigentumsvorbehalt (Konzernvorbehalt)?
+  back: 'Die Vereinbarung eines Eigentumsvorbehalts, nach dem der Eigentumsübergang von der Bezahlung
+    von Forderungen eines Dritten, insbesondere eines mit dem Verkäufer verbundenen Unternehmens,
+    abhängt, ist nichtig (§ 449 Abs. 3 BGB). Verboten ist damit der Konzernvorbehalt. Erlaubt
+    bleibt es, den Eigentumsübergang von der Erfüllung weiterer eigener Forderungen des Verkäufers
+    abhängig zu machen (erweiterter Eigentumsvorbehalt); auch der verlängerte Eigentumsvorbehalt
+    ist nicht betroffen. Der Zweck der Vorschrift liegt darin, den Käufer nicht an einer Vielzahl
+    unübersichtlicher Fremdforderungen scheitern zu lassen, die er nicht beeinflussen kann, und
+    die Sicherungsmacht innerhalb von Konzernen zu begrenzen. Die Klausurfrage lautet daher, wessen
+    Forderung die Bedingung des Eigentumsübergangs abdeckt: Eigene Forderungen des Verkäufers
+    sind unproblematisch, Drittforderungen nicht. Einzelheiten zu den weiteren Formen des Eigentumsvorbehalts
+    gehören zum Sachenrecht.'
+  norms:
+  - § 449 Abs. 3 BGB
+  - § 449 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-rme-gefahruebergang-446
+  type: norm
+  front: Wann geht die Gefahr beim Kauf über (§ 446 BGB)?
+  back: 'Mit der Übergabe der verkauften Sache geht die Gefahr des zufälligen Untergangs und
+    einer zufälligen Verschlechterung auf den Käufer über (§ 446 S. 1 BGB). Von diesem Zeitpunkt
+    an gebühren dem Käufer die Nutzungen und trägt er die Lasten der Sache (§ 446 S. 2 BGB).
+    Der Übergabe steht es gleich, wenn der Käufer im Verzug der Annahme ist (§ 446 S. 3 BGB).
+    Gemeint ist die Preisgefahr: Der Käufer muss den Kaufpreis zahlen, obwohl die Sache zufällig
+    untergeht oder sich verschlechtert und der Verkäufer von seiner Leistungspflicht frei
+    wird (§ 275 Abs. 1 BGB). Vor dem Gefahrübergang trägt der Verkäufer die Gefahr: Der Anspruch
+    auf den Kaufpreis entfällt nach § 326 Abs. 1 S. 1 BGB. Die Leistungsgefahr, also die Frage,
+    ob der Verkäufer von seiner Leistungspflicht frei wird, richtet sich nach § 275 Abs. 1
+    BGB, bei Gattungsschulden nach der Konkretisierung gemäß § 243 Abs. 2 BGB.'
+  norms:
+  - § 446 BGB
+  - § 326 Abs. 1 BGB
+  - § 275 Abs. 1 BGB
+  - § 243 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-rme-versendungskauf-447
+  type: norm
+  front: Wann gilt § 447 BGB beim Versendungskauf?
+  back: 'Versendet der Verkäufer die verkaufte Sache auf Verlangen des Käufers nach einem
+    anderen Ort als dem Erfüllungsort, geht die Gefahr auf den Käufer über, sobald der Verkäufer
+    die Sache dem Spediteur, dem Frachtführer oder der sonst zur Ausführung der Versendung
+    bestimmten Person oder Anstalt ausgeliefert hat (§ 447 Abs. 1 BGB). Voraussetzung ist
+    ein Versendungskauf (Schickschuld): Erfüllungsort bleibt der Wohnsitz oder Betriebssitz
+    des Verkäufers (§ 269 BGB), die Versendung erfolgt nur auf Verlangen des Käufers. Bei
+    einer Bringschuld bleibt es bei § 446 BGB, die Gefahr geht erst bei Ablieferung am Bestimmungsort
+    über. Die Transportperson ist nicht Erfüllungsgehilfe des Verkäufers bezogen auf die Übergabepflicht,
+    sodass ihr Verschulden ihm nicht nach § 278 BGB zugerechnet wird. Beim Verbrauchsgüterkauf
+    ist § 447 Abs. 1 BGB nach § 475 Abs. 2 BGB eingeschränkt.'
+  norms:
+  - § 447 Abs. 1 BGB
+  - § 269 BGB
+  - § 278 BGB
+  - § 475 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-rme-285-drittschaden
+  type: norm
+  front: Welche Rechte hat der Käufer, wenn die Sache auf dem Transport untergeht, die Gefahr
+    aber nach § 447 BGB schon übergegangen ist?
+  back: Trifft den Käufer die Preisgefahr, muss er den Kaufpreis zahlen, obwohl er die Sache
+    nicht erhält. Zum Ausgleich kann er vom Verkäufer verlangen, dass dieser ihm die Ersatzansprüche
+    abtritt, die der Verkäufer gegen die Transportperson hat (§ 285 Abs. 1 BGB, Herausgabe
+    des stellvertretenden Commodum). Erlangt der Verkäufer von der Transportperson Ersatz,
+    kann der Käufer diesen herausverlangen. Ist der Verkäufer Vertragspartner des Frachtführers,
+    ohne selbst einen Schaden erlitten zu haben, kann er zudem den Schaden des Käufers im
+    Wege der Drittschadensliquidation geltend machen. Der Käufer kann bis zur Abtretung die
+    Zahlung des Kaufpreises verweigern (§ 273 BGB). Der Anspruch nach § 285 Abs. 1 BGB setzt
+    voraus, dass der Verkäufer infolge der Unmöglichkeit einen Ersatz oder Ersatzanspruch
+    erlangt hat.
+  norms:
+  - § 285 Abs. 1 BGB
+  - § 447 Abs. 1 BGB
+  - § 273 BGB
+  - § 326 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-rme-rechtsmangel
+  title: Rechte des Käufers bei Rechtsmangel, §§ 435, 437 BGB
+  norms:
+  - § 433 Abs. 1 BGB
+  - § 435 BGB
+  - § 437 BGB
+  - § 442 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Wirksamer Kaufvertrag
+  - label: II. Rechtsmangel, § 435 BGB
+    children:
+    - label: 1. Dritter kann Rechte in Bezug auf die Sache geltend machen (z. B. Eigentum,
+        Pfandrecht, Nießbrauch)
+    - label: 2. Kein Recht ist im Kaufvertrag übernommen worden
+    - label: 3. Kein Wegfall durch gutgläubigen lastenfreien Erwerb
+  - label: III. Maßgeblicher Zeitpunkt
+    hinweis: Rechtsübergang bzw. Gefahrübergang (Streit).
+  - label: IV. Kein Ausschluss, § 442 BGB, § 444 BGB
+    hinweis: Kenntnis des Käufers, aber Ausnahme § 442 Abs. 2 BGB für eingetragene Rechte.
+  - label: V. Rechte aus § 437 BGB
+    hinweis: Nacherfüllung durch Rechtsbeseitigung oder Lieferung einer mangelfreien Sache;
+      Rücktritt, Minderung, Schadensersatz.
+  - label: VI. Verjährung, § 438 BGB
+    hinweis: Zwei Jahre; 30 Jahre bei dinglichem Herausgaberecht des Dritten, § 438 Abs. 1
+      Nr. 1 Buchst. a BGB.
+- slug: zr-schema-rme-gefahr
+  title: Kaufpreisanspruch bei Untergang der Kaufsache (Preisgefahr), §§ 433 Abs. 2, 446,
+    447 BGB
+  norms:
+  - § 433 Abs. 2 BGB
+  - § 446 BGB
+  - § 447 Abs. 1 BGB
+  - § 326 Abs. 1 BGB
+  - § 285 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Wirksamer Kaufvertrag, Anspruch entstanden, § 433 Abs. 2 BGB
+  - label: II. Anspruch nicht nach § 326 Abs. 1 S. 1 BGB entfallen
+    children:
+    - label: 1. Unmöglichkeit der Leistung, § 275 Abs. 1 BGB
+    - label: '2. Gefahrübergang vor dem Untergang: Übergabe, § 446 BGB, oder Auslieferung
+        an die Transportperson beim Versendungskauf, § 447 Abs. 1 BGB'
+    - label: '3. Beim Verbrauchsgüterkauf: § 475 Abs. 2 BGB'
+  - label: III. Rechtsfolge
+    hinweis: Käufer bleibt zur Zahlung verpflichtet; Gegenanspruch auf Abtretung von Ersatzansprüchen,
+      § 285 Abs. 1 BGB.
+  - label: IV. Eigentumsvorbehalt
+    hinweis: Berührt die Preisgefahr nicht; Eigentum bleibt beim Verkäufer, Gefahr geht trotzdem
+      über.
+faelle:
+- slug: zr-fall-rme-maschine
+  title: Die Maschine auf dem Transport
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: 'Der Hersteller V mit Sitz in München verkauft an den Metallbauer K in Hamburg, einen
+    Unternehmer, eine Fräsmaschine für 12.000 Euro. Auf Wunsch des K soll V die Maschine an
+    K nach Hamburg versenden. V vereinbart mit K einen einfachen Eigentumsvorbehalt bis zur
+    vollständigen Kaufpreiszahlung. V beauftragt die Spedition S, der K nichts vorgegeben
+    hat, und liefert ihr die Maschine ordnungsgemäß in München. Auf der Fahrt wird die Maschine
+    bei einem Unfall zerstört, den der Fahrer von S verschuldet hat. K verweigert die Zahlung
+    des Kaufpreises: Die Maschine sei nie bei ihm angekommen, außerdem sei er noch nicht Eigentümer
+    geworden. V verlangt 12.000 Euro und ist bereit, K seine Ansprüche gegen S abzutreten.'
+  question: Kann V von K Zahlung der 12.000 Euro verlangen?
+  steps:
+  - prompt: Welche Anspruchsgrundlage kommt in Betracht, und ist sie entstanden?
+    erwartung: Anspruchsgrundlage ist § 433 Abs. 2 BGB, denn zwischen V und K besteht ein wirksamer Kaufvertrag über die Fräsmaschine, aus dem V die Zahlung des Kaufpreises verlangen kann.
+  - prompt: Ist der Anspruch auf den Kaufpreis nach § 326 Abs. 1 S. 1 BGB entfallen?
+    erwartung: 'Die Lieferpflicht des V ist durch die Zerstörung der Maschine nach § 275 Abs.
+      1 BGB unmöglich geworden. Der Kaufpreisanspruch entfällt nur, wenn die Gefahr nicht
+      auf K übergegangen ist. Hier liegt ein Versendungskauf vor: Erfüllungsort ist München
+      (§ 269 BGB), V hat auf Verlangen des K die Sache nach Hamburg versandt. Mit Auslieferung
+      an die Spedition S ist die Gefahr auf K übergegangen (§ 447 Abs. 1 BGB). K trägt die
+      Preisgefahr. Die Voraussetzungen des § 475 Abs. 2 BGB sind nicht einschlägig, da K Unternehmer
+      ist.'
+  - prompt: Hindert der Eigentumsvorbehalt den Kaufpreisanspruch?
+    erwartung: Nein. Der Eigentumsvorbehalt (§ 449 Abs. 1 BGB) sichert nur den Anspruch des
+      Verkäufers; er berührt die Preisgefahr nicht. Dass K noch nicht Eigentümer ist, hindert
+      die Fälligkeit des Kaufpreises nicht.
+  - prompt: Ergebnis und Ausgleich?
+    erwartung: V kann von K 12.000 Euro verlangen. K kann aber von V Abtretung der Ersatzansprüche
+      gegen S verlangen (§ 285 Abs. 1 BGB) und bis dahin die Zahlung zurückhalten (§ 273 BGB);
+      V ist zur Abtretung bereit. Die Zahlung erfolgt Zug um Zug gegen die Abtretung.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Anspruch auf Kaufpreis aus § 433 Abs. 2 BGB entstanden (wirksamer Kaufvertrag)
+      weight: 1.0
+      required: false
+      norms:
+      - § 433 Abs. 2 BGB
+      keywords:
+      - § 433 Abs. 2 BGB
+      - wirksamer Kaufvertrag
+      - Zahlung des Kaufpreises
+    - id: p2
+      label: 'Versendungskauf: Erfüllungsort München, Versendung auf Verlangen des Käufers
+        nach Hamburg (Schickschuld), § 447 Abs. 1 BGB'
+      weight: 2.5
+      required: true
+      norms:
+      - § 447 Abs. 1 BGB
+      - § 269 BGB
+      keywords:
+      - Versendungskauf
+      - § 447 BGB
+      - Schickschuld
+      - Erfüllungsort
+      - auf Verlangen des Käufers
+      - Transportperson
+      card_slugs:
+      - zr-rme-versendungskauf-447
+    - id: p3
+      label: Gefahrübergang bei Auslieferung an die Spedition; Preisgefahr beim Käufer, Anspruch
+        entfällt nicht nach § 326 Abs. 1 S. 1 BGB
+      weight: 3.0
+      required: true
+      norms:
+      - § 447 Abs. 1 BGB
+      - § 326 Abs. 1 BGB
+      keywords:
+      - Gefahrübergang
+      - Preisgefahr
+      - § 326 Abs. 1
+      - bleibt zur Zahlung verpflichtet
+      - Auslieferung an die Transportperson
+      - zufälliger Untergang
+      card_slugs:
+      - zr-rme-gefahruebergang-446
+      - zr-rme-versendungskauf-447
+    - id: p4
+      label: Eigentumsvorbehalt ändert an der Preisgefahr nichts
+      weight: 1.5
+      required: false
+      norms:
+      - § 449 Abs. 1 BGB
+      keywords:
+      - Eigentumsvorbehalt
+      - § 449 BGB
+      - Eigentum bleibt beim Verkäufer
+      - unerheblich
+      - Preisgefahr unabhängig
+      card_slugs:
+      - zr-rme-ev-begriff-449
+    - id: p5
+      label: 'Ausgleich: Anspruch des Käufers auf Abtretung des Schadensersatzanspruchs gegen
+        den Spediteur, § 285 Abs. 1 BGB, Zug um Zug'
+      weight: 2.0
+      required: false
+      norms:
+      - § 285 Abs. 1 BGB
+      - § 273 BGB
+      keywords:
+      - § 285 BGB
+      - Abtretung
+      - Abtretung des Anspruchs
+      - Zug um Zug
+      - Drittschadensliquidation
+      - stellvertretendes Commodum
+      card_slugs:
+      - zr-rme-285-drittschaden

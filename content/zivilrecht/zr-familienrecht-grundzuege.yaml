@@ -1,0 +1,334 @@
+topic:
+  slug: zr-familienrecht-grundzuege
+  area: zivilrecht
+  title: 'Familienrecht: Ehegattenrecht, Güterstände, elterliche Sorge'
+  parent: zivilrecht
+  relevance: 3
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-fam-schluesselgewalt-1357
+  type: norm
+  front: Was regelt § 1357 BGB (Geschäfte zur Deckung des Lebensbedarfs)?
+  back: 'Jeder Ehegatte ist berechtigt, Geschäfte zur angemessenen Deckung des Lebensbedarfs
+    der Familie mit Wirkung auch für den anderen Ehegatten zu besorgen; aus solchen Geschäften
+    werden beide Ehegatten berechtigt und verpflichtet (§ 1357 Abs. 1 S. 2 BGB). Es handelt
+    sich nicht um eine Vertretungsmacht, sondern um eine gesetzliche Mitverpflichtung: Der
+    handelnde Ehegatte schließt im eigenen Namen, der andere haftet kraft Gesetzes als Gesamtschuldner
+    mit. Erfasst sind übliche Haushaltsgeschäfte wie Lebensmittel, Kleidung, Haushaltsreparaturen,
+    nicht aber Geschäfte, die den Rahmen der angemessenen Lebensführung sprengen (zum Beispiel
+    Grundstückskauf, größere Kredite). Keine Mitverpflichtung tritt ein, wenn sich aus den
+    Umständen etwas anderes ergibt (§ 1357 Abs. 1 S. 2 Halbs. 2 BGB) oder wenn die Ehegatten
+    getrennt leben (§ 1357 Abs. 3 BGB). Ein Ehegatte kann die Berechtigung des anderen beschränken
+    oder ausschließen; fehlt dafür ein ausreichender Grund, hebt das Familiengericht die Beschränkung
+    auf (§ 1357 Abs. 2 BGB).'
+  norms:
+  - § 1357 Abs. 1 BGB
+  - § 1357 Abs. 2 BGB
+  - § 1357 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-fam-verfuegung-ganzes-vermoegen-1365
+  type: norm
+  front: Welche Beschränkung enthält § 1365 BGB für Ehegatten in der Zugewinngemeinschaft?
+  back: Ein Ehegatte kann sich nur mit Einwilligung des anderen verpflichten, über sein Vermögen
+    im Ganzen zu verfügen, und eine solche Verpflichtung nur mit dieser Einwilligung erfüllen
+    (§ 1365 Abs. 1 BGB). Die Vorschrift gilt nur im gesetzlichen Güterstand der Zugewinngemeinschaft
+    und soll die wirtschaftliche Grundlage der Familie und den Zugewinnausgleichsanspruch
+    schützen. Ohne Einwilligung ist das Verpflichtungsgeschäft schwebend unwirksam und wird
+    mit Genehmigung wirksam (§ 1366 Abs. 1 BGB); wird die Genehmigung verweigert, ist es endgültig
+    unwirksam (§ 1366 Abs. 4 BGB). Auch die Erfüllung, also die Verfügung, ist nur mit Einwilligung
+    möglich (§ 1365 Abs. 1 S. 2 BGB). Verweigert der andere Ehegatte die Zustimmung ohne ausreichenden
+    Grund, kann das Familiengericht sie ersetzen (§ 1365 Abs. 2 BGB). Hat der andere Ehegatte
+    ohne die erforderliche Einwilligung verfügt, kann der übergangene Ehegatte die Rechte aus
+    der Unwirksamkeit auch selbst gegen den Dritten gerichtlich geltend machen (§ 1368 BGB).
+  norms:
+  - § 1365 Abs. 1 BGB
+  - § 1365 Abs. 2 BGB
+  - § 1366 BGB
+  - § 1368 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-fam-einzeltheorie-1365
+  type: streitstand
+  front: Wann betrifft ein einzelnes Geschäft das "Vermögen im Ganzen" (§ 1365 BGB)?
+  back: 'Nach der Rechtsprechung (Einzeltheorie) greift § 1365 BGB auch dann, wenn nur ein
+    einzelner Gegenstand veräußert wird, sofern dieser (nahezu) das ganze Vermögen ausmacht.
+    Maßgeblich ist eine wirtschaftliche Betrachtung; die erhaltene Gegenleistung
+    bleibt außer Betracht. Verbleibt dem Ehegatten nur ein geringer Restwert,
+    ist das Geschäft erfasst; als Richtwerte nennt die Rechtsprechung bei kleineren Vermögen eine Übertragung von mehr als 85 Prozent, also eine verbleibende Quote unter etwa 15 Prozent (BGH, 16.1.2013, XII ZR 141/10), bei größeren Vermögen genügt dagegen regelmäßig ein verbleibender Wert von 10 Prozent des ursprünglichen Gesamtvermögens, um § 1365 BGB auszuschließen (BGH, 13.3.1991 - XII ZR 79/90; für kleinere Vermögen BGHZ 77, 293).
+    Die Gegenauffassung (Gesamttheorie) will nur Verträge erfassen, die ausdrücklich das gesamte
+    Vermögen oder dessen wesentlichen Teil als Einheit betreffen. Zum Schutz des Rechtsverkehrs
+    verlangt die Rechtsprechung als subjektives Element, dass der Vertragspartner weiß, dass
+    es sich um das ganze Vermögen handelt, oder zumindest die Verhältnisse kennt, aus denen
+    sich das ergibt (subjektive Einschränkung). Bei fehlender Kenntnis des Dritten ist das
+    Geschäft wirksam.'
+  norms:
+  - § 1365 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - BGH, Urteil vom 13.3.1991 - XII ZR 79/90 (NJW 1991, 1739)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-fam-gueterstaende
+  type: definition
+  front: Welche Güterstände kennt das BGB und wie wird er gewählt (§§ 1363, 1408 ff. BGB)?
+  back: 'Gesetzlicher Güterstand ist die Zugewinngemeinschaft (§ 1363 Abs. 1 BGB). Die Vermögen
+    der Ehegatten werden nicht gemeinschaftliches Vermögen; auch das Vermögen, das ein
+    Ehegatte während der Ehe erwirbt, bleibt sein eigenes (§ 1363 Abs. 2 S. 1 BGB). Der während
+    der Ehe erzielte Zugewinn wird erst bei Beendigung des Güterstands ausgeglichen. Ehegatten
+    können durch Ehevertrag einen anderen Güterstand vereinbaren (§ 1408 Abs. 1 BGB): die
+    Gütertrennung (§ 1414 BGB), bei der kein Ausgleich stattfindet, oder die Gütergemeinschaft
+    (§§ 1415 ff. BGB) mit gemeinschaftlichem Gesamtgut. Der Ehevertrag bedarf der notariellen
+    Beurkundung bei gleichzeitiger Anwesenheit beider Teile (§ 1410 BGB). Daneben gibt es
+    den Wahlgüterstand der Wahl-Zugewinngemeinschaft (§ 1519 BGB) mit Frankreich (deutsch-französischer
+    Güterstand).'
+  norms:
+  - § 1363 BGB
+  - § 1408 BGB
+  - § 1410 BGB
+  - § 1414 BGB
+  - § 1415 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-fam-zugewinnausgleich
+  type: norm
+  front: Wie wird der Zugewinnausgleich berechnet (§§ 1373 ff. BGB)?
+  back: Zugewinn ist der Betrag, um den das Endvermögen eines Ehegatten sein Anfangsvermögen
+    übersteigt (§ 1373 BGB). Anfangsvermögen ist das Vermögen bei Eintritt des Güterstands
+    (§ 1374 Abs. 1 BGB); Erwerb von Todes wegen, mit Rücksicht auf ein künftiges Erbrecht,
+    durch Schenkung oder als Ausstattung wird dem Anfangsvermögen hinzugerechnet (§ 1374 Abs.
+    2 BGB). Verbindlichkeiten werden berücksichtigt, auch über die Höhe des Vermögens hinaus
+    (§ 1374 Abs. 3, § 1375 Abs. 1 S. 2 BGB). Endvermögen ist das Vermögen bei Beendigung des
+    Güterstands (§ 1375 BGB). Der Ehegatte mit dem geringeren Zugewinn hat gegen den anderen
+    eine Ausgleichsforderung in Höhe der Hälfte des Überschusses (§ 1378 Abs. 1 BGB), begrenzt
+    auf den Wert des vorhandenen Vermögens (§ 1378 Abs. 2 BGB). Bei Scheidung
+    tritt für die Berechnung des Zugewinns an die Stelle der Beendigung des Güterstands die
+    Rechtshängigkeit des Scheidungsantrags (§ 1384 BGB); die Forderung selbst entsteht mit
+    Beendigung des Güterstands (§ 1378 Abs. 3 S. 1 BGB). Auskunft kann nach § 1379 BGB verlangt werden. Die Forderung verjährt in
+    drei Jahren (§ 195 BGB).
+  norms:
+  - § 1373 BGB
+  - § 1374 BGB
+  - § 1375 BGB
+  - § 1378 Abs. 1 BGB
+  - § 1384 BGB
+  - § 1379 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-fam-haftungsmassstab-1359
+  type: norm
+  front: Welcher Haftungsmaßstab gilt zwischen Ehegatten nach § 1359 BGB?
+  back: Die Ehegatten haben bei der Erfüllung der sich aus dem ehelichen Verhältnis ergebenden
+    Verpflichtungen einander nur für diejenige Sorgfalt einzustehen, die sie in eigenen Angelegenheiten
+    anzuwenden pflegen (diligentia quam in suis, § 1359 BGB). Diese Haftungserleichterung
+    gilt auch für Delikte, die in Ausübung der ehelichen Pflichten begangen werden. Die Haftung
+    wegen Vorsatzes kann nicht im Voraus erlassen werden (§ 276 Abs. 3 BGB), und die Haftung
+    für grobe Fahrlässigkeit bleibt bestehen (§ 277 BGB). Nach der Rechtsprechung gilt § 1359 BGB nicht im Straßenverkehr (BGHZ 53, 352), weil dort jeder Verkehrsteilnehmer dieselbe Sorgfalt schuldet
+    und regelmäßig eine Haftpflichtversicherung besteht. Der Maßstab ist ferner nicht anwendbar,
+    wenn der Schaden nicht im Zusammenhang mit einer Pflicht aus der Ehe steht.
+  norms:
+  - § 1359 BGB
+  - § 277 BGB
+  - § 276 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-fam-elterliche-sorge-vertretung-1629
+  type: norm
+  front: Wie vertreten Eltern ihr minderjähriges Kind (§§ 1626, 1629 BGB)?
+  back: Die elterliche Sorge umfasst die Personensorge und die Vermögenssorge (§ 1626 Abs.
+    1 BGB); sie umfasst die Vertretung des Kindes (§ 1629 Abs. 1 S. 1 BGB). Stehen den Eltern
+    die Sorge gemeinsam zu, vertreten sie das Kind gemeinschaftlich (§ 1629 Abs. 1 S. 2 BGB).
+    Gegenüber dem Kind genügt die Abgabe einer Willenserklärung an einen Elternteil (§ 1629 Abs. 1 S. 2 Halbs. 2 BGB); bei Gefahr im Verzug ist jeder Elternteil vertretungsbefugt (§ 1629 Abs. 1 S. 4 BGB). Nicht miteinander verheiratete Eltern haben die gemeinsame Sorge nur bei Sorgeerklärungen, Heirat oder gerichtlicher Übertragung, sonst hat die Mutter die alleinige Sorge (§ 1626a BGB). Von der Vertretung sind Eltern insoweit ausgeschlossen, als nach § 1824 BGB ein Betreuer ausgeschlossen wäre, insbesondere bei Rechtsgeschäften zwischen dem Kind und dem Ehegatten oder einem Verwandten in gerader Linie des vertretenden Elternteils (§ 1629 Abs. 2 S. 1 i. V. m. § 1824 Abs. 1 Nr. 1 BGB); beim Insichgeschäft des Elternteils selbst gilt § 181 BGB. In diesen Fällen muss ein Ergänzungspfleger bestellt werden (§ 1809 BGB).
+  norms:
+  - § 1626 BGB
+  - § 1626a BGB
+  - § 1629 Abs. 1 BGB
+    - § 1629 Abs. 2 BGB
+  - § 1824 BGB
+  - § 1809 BGB
+
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-fam-familiengerichtliche-genehmigung-1643
+  type: norm
+  front: Wann brauchen Eltern für Rechtsgeschäfte des Kindes eine familiengerichtliche Genehmigung
+    (§ 1643 BGB)?
+  back: Die Eltern bedürfen für bestimmte Rechtsgeschäfte im Namen des Kindes der Genehmigung
+    des Familiengerichts (§ 1643 Abs. 1 BGB). Das gilt nach der Verweisung auf die Genehmigungstatbestände des Betreuungsrechts (§§ 1850 bis 1854 BGB in der seit 1.1.2023 geltenden Fassung, vorher §§ 1821, 1822 BGB) etwa für Verfügungen über Grundstücke und Rechte an Grundstücken (§ 1850 BGB), für den Erwerb eines Erwerbsgeschäfts oder den Abschluss eines Gesellschaftsvertrags zum Betrieb eines Erwerbsgeschäfts (§ 1852 BGB) sowie für langfristige Verträge über wiederkehrende Leistungen (§ 1853 BGB, mit Abweichungen in § 1643 Abs. 4 BGB). Auch die Ausschlagung einer Erbschaft durch die Eltern ist genehmigungsbedürftig (§ 1851 Nr. 1 BGB), es sei denn, die Erbschaft ist dem Kind erst infolge der Ausschlagung eines Elternteils angefallen, der das Kind vertritt, und dieser war nicht neben dem Kind berufen (§ 1643 Abs. 3 BGB).
+    Ohne Genehmigung ist ein genehmigungspflichtiges Geschäft schwebend unwirksam; wird sie
+    verweigert, ist es endgültig unwirksam. Handelt das Kind selbst mit Einwilligung der Eltern,
+    gelten die §§ 107 ff. BGB.
+  norms:
+  - § 1643 Abs. 1 BGB
+    - § 1643 Abs. 3 BGB
+
+  - § 107 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-fam-eigentumsvermutung-1362
+  type: norm
+  front: Welche Eigentumsvermutung gilt zugunsten von Gläubigern eines Ehegatten (§ 1362 BGB)?
+  back: 'Zugunsten der Gläubiger eines Ehegatten wird vermutet, dass die im Besitz eines oder
+    beider Ehegatten befindlichen beweglichen Sachen dem Schuldner gehören (§ 1362 Abs. 1
+    S. 1 BGB). Die Vermutung dient der Vollstreckung: Der Gerichtsvollzieher darf Sachen im
+    gemeinsamen Gewahrsam der Eheleute pfänden (vgl. § 739 ZPO) und muss nicht die Eigentumsverhältnisse
+    klären. Sie gilt nicht, wenn die Ehegatten getrennt leben und die Sachen im Besitz des
+    Nichtschuldners sind (§ 1362 Abs. 1 S. 2 BGB), und für Sachen, die ausschließlich zum
+    persönlichen Gebrauch eines Ehegatten bestimmt sind, wie Kleidung und Schmuck, gilt die
+    Vermutung zugunsten dieses Ehegatten (§ 1362 Abs. 2 BGB). Die Vermutung ist widerleglich.
+    Der Nichtschuldner kann sein Eigentum mit der Drittwiderspruchsklage nach § 771 ZPO geltend
+    machen und muss die Vermutung entkräften.'
+  norms:
+  - § 1362 Abs. 1 BGB
+  - § 1362 Abs. 2 BGB
+  - § 739 ZPO
+  - § 771 ZPO
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: zr-schema-fam-1365
+  title: Wirksamkeit eines Geschäfts über das Vermögen im Ganzen, § 1365 BGB
+  norms:
+  - § 1365 Abs. 1 BGB
+  - § 1366 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Anwendbarkeit
+    children:
+    - label: 1. Beide Parteien sind Ehegatten, Güterstand der Zugewinngemeinschaft
+    - label: 2. Ehe besteht (bei Rechtsgeschäft vor Rechtskraft der Scheidung)
+  - label: II. Geschäft über das Vermögen im Ganzen
+    hinweis: Streit zwischen Einzel- und Gesamttheorie kurz darstellen.
+    children:
+    - label: '1. Objektiv: Gegenstand macht Vermögen im Wesentlichen aus (Einzeltheorie: verbleibendes
+        Restvermögen unter etwa 10 bis 15 Prozent)'
+    - label: '2. Subjektiv: Vertragspartner kennt dies oder die Umstände dafür'
+  - label: III. Fehlende Einwilligung des anderen Ehegatten
+    hinweis: Einwilligung (vorherige Zustimmung) oder Genehmigung, § 1366 Abs. 1 BGB; Ersetzung
+      durch das Familiengericht, § 1365 Abs. 2 BGB.
+  - label: IV. Rechtsfolge
+    children:
+    - label: 1. Verpflichtungsgeschäft schwebend unwirksam, bei Verweigerung der Genehmigung
+        endgültig unwirksam, § 1366 Abs. 4 BGB
+    - label: 2. Erfüllung (Verfügung) nur mit Einwilligung, § 1365 Abs. 1 S. 2 BGB
+    - label: "3. Bei Verfügungen: Geltendmachung auch durch den übergangenen Ehegatten, § 1368 BGB"
+faelle:
+- slug: zr-fall-fam-hausverkauf
+  title: Der Hausverkauf ohne Ehefrau
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: M und F leben im gesetzlichen Güterstand. M ist Alleineigentümer eines Hausgrundstücks
+    im Wert von 480.000 Euro; sein übriges Vermögen beträgt 20.000 Euro. M verkauft das Grundstück
+    ohne Wissen der F zum Preis von 480.000 Euro durch notariellen Vertrag an K. K weiß, dass
+    das Haus den weitaus größten Teil des Vermögens des M ausmacht und M verheiratet ist.
+    F hört später davon und erklärt gegenüber M und K, sie sei mit dem Verkauf nicht einverstanden.
+    K verlangt von M Übereignung des Grundstücks.
+  question: Kann K von M Übereignung des Grundstücks nach § 433 Abs. 1 BGB verlangen?
+  steps:
+  - prompt: Welchen Anspruch macht K geltend und wovon hängt er ab?
+    erwartung: Ein Anspruch aus dem Kaufvertrag, § 433 Abs. 1 S. 1 BGB, setzt einen wirksamen
+      Kaufvertrag voraus. Zu prüfen ist die Beschränkung des M nach § 1365 Abs. 1 BGB.
+  - prompt: Sind die Voraussetzungen des § 1365 Abs. 1 BGB erfüllt?
+    erwartung: M und F leben im gesetzlichen Güterstand der Zugewinngemeinschaft. Das Grundstück
+      macht 96 Prozent des Gesamtvermögens aus; nach der Einzeltheorie genügt die Veräußerung
+      eines einzelnen Gegenstands, der nahezu das gesamte Vermögen darstellt; der Kaufpreis
+      bleibt als Gegenleistung außer Betracht. Das Restvermögen von 20.000 Euro beträgt nur
+      4 Prozent. Subjektiv ist die Kenntnis des K erforderlich und gegeben, denn K kennt die
+      maßgeblichen Umstände (subjektive Einschränkung).
+  - prompt: Hat F eingewilligt oder genehmigt?
+    erwartung: Nein. Eine Einwilligung lag nicht vor, und F hat die Genehmigung nach § 1366
+      Abs. 1 BGB verweigert.
+  - prompt: Welche Rechtsfolge ergibt sich?
+    erwartung: Der Kaufvertrag war schwebend unwirksam und ist durch die Verweigerung der
+      Genehmigung endgültig unwirksam (§ 1366 Abs. 4 BGB). Ein Anspruch auf Übereignung besteht
+      nicht.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Zugewinngemeinschaft als Anwendungsvoraussetzung des § 1365 BGB erkannt
+      weight: 1.0
+      required: false
+      keywords:
+      - Zugewinngemeinschaft
+      - gesetzlicher Güterstand
+      - § 1363 BGB
+      - § 1365 Abs. 1 BGB
+      card_slugs:
+      - zr-fam-gueterstaende
+    - id: p2
+      label: 'Vermögensgeschäft: Einzelgegenstand als nahezu ganzes Vermögen (Einzeltheorie)'
+      weight: 3.0
+      required: true
+      norms:
+      - § 1365 Abs. 1 BGB
+      keywords:
+      - Vermögen im Ganzen
+      - Einzeltheorie
+      - nahezu das ganze Vermögen
+      - 96 Prozent
+      - Gesamttheorie
+      card_slugs:
+      - zr-fam-einzeltheorie-1365
+    - id: p3
+      label: 'Subjektive Voraussetzung: Kenntnis des Vertragspartners'
+      weight: 2.0
+      required: true
+      keywords:
+      - Kenntnis
+      - Kenntnis der Umstände
+      - kennt die maßgeblichen Umstände
+      - subjektive Einschränkung
+      - wusste
+      - Vertragspartner kannte
+      card_slugs:
+      - zr-fam-einzeltheorie-1365
+    - id: p4
+      label: Keine Einwilligung und Verweigerung der Genehmigung nach § 1366 BGB
+      weight: 2.0
+      required: true
+      norms:
+      - § 1366 BGB
+      keywords:
+      - Einwilligung
+      - Genehmigung
+      - § 1366 Abs. 1 BGB
+      - § 1366 Abs. 4 BGB
+      - schwebende Unwirksamkeit
+      card_slugs:
+      - zr-fam-verfuegung-ganzes-vermoegen-1365
+    - id: p5
+      label: 'Ergebnis: Kaufvertrag unwirksam, kein Anspruch auf Übereignung'
+      weight: 1.0
+      required: false
+      keywords:
+      - unwirksam
+      - endgültig unwirksam
+      - kein Anspruch auf Übereignung
+      - § 1366 Abs. 4 BGB
+      card_slugs:
+      - zr-fam-verfuegung-ganzes-vermoegen-1365

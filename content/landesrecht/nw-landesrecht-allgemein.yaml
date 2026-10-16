@@ -13,9 +13,9 @@ topic:
 cards:
 - slug: nw-lra-vwvfg
   type: norm
-  front: Welches Verwaltungsverfahrensgesetz gilt fuer Landesbehoerden in Nordrhein-Westfalen?
-  back: Verwaltungsverfahrensgesetz NRW (VwVfG NRW) - Vollgesetz. Das VwVfG des Bundes gilt nur fuer Bundesbehoerden
-    (§ 1 VwVfG); fuer Landes- und Kommunalbehoerden ist das Landesgesetz massgeblich. Bei Verweisungsgesetzen
+  front: Welches Verwaltungsverfahrensgesetz gilt für Landesbehörden in Nordrhein-Westfalen?
+  back: Verwaltungsverfahrensgesetz NRW (VwVfG NRW) - Vollgesetz. Das VwVfG des Bundes gilt nur für Bundesbehörden
+    (§ 1 VwVfG); für Landes- und Kommunalbehörden ist das Landesgesetz maßgeblich. Bei Verweisungsgesetzen
     werden die Bundesnormen 'entsprechend' angewendet und sind so zu zitieren (z. B. '§ 35 VwVfG i. V.
     m. § 1 des Landesgesetzes'), bei Vollgesetzen ist die Landesnorm selbst zu zitieren.
   norms:
@@ -27,13 +27,13 @@ cards:
 - slug: nw-lra-verfassungsgericht
   type: norm
   front: Gibt es in Nordrhein-Westfalen eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
-  back: 'Ja - seit 2019, Art. 75 Nr. 5a LV NRW, §§ 53 ff. VerfGHG NRW. Zustaendiges Gericht: Verfassungsgerichtshof
-    fuer das Land Nordrhein-Westfalen auf Grundlage der Verfassung fuer das Land Nordrhein-Westfalen (LV
+  back: 'Ja - seit 2019, Art. 75 Nr. 5a LV NRW, §§ 53 ff. VerfGHG NRW. Zuständiges Gericht: Verfassungsgerichtshof
+    für das Land Nordrhein-Westfalen auf Grundlage der Verfassung für das Land Nordrhein-Westfalen (LV
     NRW). Verfahrensgegenstand ist nur die Verletzung von Landesgrundrechten durch Landesstaatsgewalt;
-    Bundesrecht ist Pruefungsmassstab nur, soweit die Landesverfassung darauf verweist. Daneben steht
-    immer die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
+    Bundesrecht ist Prüfungsmaßstab nur, soweit die Landesverfassung darauf verweist. Daneben steht immer
+    die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
   norms:
-  - Verfassung fuer das Land Nordrhein-Westfalen (LV NRW)
+  - Verfassung für das Land Nordrhein-Westfalen (LV NRW)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -42,24 +42,24 @@ cards:
   type: norm
   front: Welches Gesetz regelt die Kommunalverfassung in Nordrhein-Westfalen und welche Hauptorgane hat
     die Gemeinde?
-  back: 'Gemeindeordnung NRW (GO NRW): Rat (§ 40) und Buergermeister (§ 62). Grundlage ist die Selbstverwaltungsgarantie
+  back: 'Gemeindeordnung NRW (GO NRW): Rat (§ 40) und Bürgermeister (§ 62). Grundlage ist die Selbstverwaltungsgarantie
     (Art. 28 Abs. 2 GG und Landesverfassung): eigenverantwortliche Regelung aller Angelegenheiten der
-    oertlichen Gemeinschaft. Klausurklassiker: Zustaendigkeitsstreit zwischen Vertretung und Verwaltungsspitze,
+    örtlichen Gemeinschaft. Klausurklassiker: Zuständigkeitsstreit zwischen Vertretung und Verwaltungsspitze,
     Kommunalverfassungsstreit, Rechtsaufsicht.'
   norms:
-  - 'Gemeindeordnung NRW (GO NRW): Rat (§ 40) und Buergermeister (§ 62)'
+  - 'Gemeindeordnung NRW (GO NRW): Rat (§ 40) und Bürgermeister (§ 62)'
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: nw-lra-bauordnung
   type: norm
-  front: Wie heisst die Bauordnung in Nordrhein-Westfalen und wie ist eine Baugenehmigung zu pruefen?
+  front: Wie heißt die Bauordnung in Nordrhein-Westfalen und wie ist eine Baugenehmigung zu prüfen?
   back: 'Bauordnung NRW (BauO NRW 2018). Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben keine
-    oeffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungs-beduerftigkeit (Errichtung, Aenderung,
-    Nutzungsaenderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulaessigkeit nach §§ 29 ff.
-    BauGB (Bundesrecht), bauordnungsrechtliche Zulaessigkeit nach der Landesbauordnung (Abstandsflaechen,
-    Gestaltung, Stellplaetze).'
+    öffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungsbedürftigkeit (Errichtung, Änderung,
+    Nutzungsänderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulässigkeit nach §§ 29 ff. BauGB
+    (Bundesrecht), bauordnungsrechtliche Zulässigkeit nach der Landesbauordnung (Abstandsflächen, Gestaltung,
+    Stellplätze).'
   norms:
   - Bauordnung NRW (BauO NRW 2018)
   - §§ 29 ff. BauGB
@@ -69,12 +69,11 @@ cards:
   stand: 2026-09
 - slug: nw-lra-pflichtstoff
   type: definition
-  front: Welche Landesrechtsgebiete gehoeren in Nordrhein-Westfalen zum Pflichtstoff des Oeffentlichen
-    Rechts?
+  front: Welche Landesrechtsgebiete gehören in Nordrhein-Westfalen zum Pflichtstoff des Öffentlichen Rechts?
   back: Polizei- und Ordnungsrecht (PolG NRW, OBG NRW); Kommunalrecht (GO NRW); Bauordnungsrecht (BauO
     NRW); Landesverfassung. Landesrecht wird im Examen fast nie isoliert, sondern eingebettet in eine
-    verwaltungsprozessuale Einkleidung (Anfechtungs-/Verpflichtungsklage, vorlaeufiger Rechtsschutz) geprueft
-    - die Landesnorm ist die Ermaechtigungsgrundlage, der Aufbau bleibt der allgemeine.
+    verwaltungsprozessuale Einkleidung (Anfechtungs-/Verpflichtungsklage, vorläufiger Rechtsschutz) geprüft
+    - die Landesnorm ist die Ermächtigungsgrundlage, der Aufbau bleibt der allgemeine.
   norms: []
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)

@@ -1,0 +1,286 @@
+topic:
+  slug: th-bauordnungsrecht
+  area: oeffentliches-recht
+  title: "Bauordnungsrecht Thüringen"
+  parent: oeffentliches-recht
+  bundesland: TH
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: th-bau-verfahren
+  type: definition
+  front: >-
+      Welche Genehmigungsverfahren kennt die ThürBO, und wie verhält sich das Bauordnungsrecht zum
+      Bauplanungsrecht?
+  back: >-
+      Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedarf nach der Thüringer Bauordnung (ThürBO) grundsätzlich der Baugenehmigung (§ 62 ThürBO). Ausnahmen: verfahrensfreie Vorhaben (Katalog in § 63 ThürBO), die Genehmigungsfreistellung nach § 64 ThürBO (u. a. Gebäude der Gebäudeklassen 1 bis 3 im Geltungsbereich eines Bebauungsplans nach § 30 Abs. 1 bzw. §§ 12, 30 Abs. 2 BauGB, gesicherte Erschließung; die Unterlagen sind bei der Gemeinde einzureichen, nach einem Monat darf begonnen werden, die Gemeinde kann innerhalb dieser Frist erklären, dass das vereinfachte Genehmigungsverfahren durchgeführt werden soll), das vereinfachte Baugenehmigungsverfahren für Gebäude der Gebäudeklassen 1 bis 3 und weitere Anlagen mit eingeschränktem Prüfumfang (§ 65) sowie das reguläre Verfahren mit vollem bauordnungsrechtlichem Prüfumfang für die übrigen genehmigungsbedürftigen Anlagen, insbesondere Sonderbauten (§ 66). Verfahrensfreiheit bedeutet nicht materielle Freiheit: Die materiellen Anforderungen des öffentlichen Rechts sind einzuhalten, die Bauaufsicht kann bei Verstößen einschreiten (Aufgaben und Befugnisse: § 61 ThürBO). Das Bauplanungsrecht (§§ 29 ff. BauGB) regelt als
+      Bundesrecht die bodenrechtliche Zulässigkeit, das Bauordnungsrecht als Landesrecht
+      Gefahrenabwehr, Gestaltung und Verfahren.
+  norms:
+  - >-
+      §§ 62-66 ThürBO
+  - "§ 29 BauGB"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: th-bau-anspruch
+  type: norm
+  front: >-
+      Hat der Bauherr einen Anspruch auf die Baugenehmigung, und wie wird er durchgesetzt?
+  back: >-
+      Die Baugenehmigung ist eine gebundene Entscheidung: Sie ist zu erteilen, wenn dem Bauvorhaben keine öffentlich-rechtlichen Vorschriften entgegenstehen, die im bauaufsichtlichen Genehmigungsverfahren zu prüfen sind; die Behörde darf den Antrag auch ablehnen, wenn das Vorhaben gegen sonstige öffentlich-rechtliche Vorschriften verstößt (§ 78 Abs. 1 S. 1 ThürBO; Art. 14 Abs. 1 GG schützt die in der Eigentumsgarantie liegende Baufreiheit im Rahmen der
+      Gesetze). Der Prüfumfang hängt vom Verfahren ab; im vereinfachten Verfahren prüft die Bauaufsichtsbehörde die bauplanungsrechtliche Zulässigkeit (§§ 29 bis 38 BauGB), beantragte Abweichungen (§ 73 Abs. 1, Abs. 2 S. 2) und ersetzte Entscheidungen nach anderem öffentlichem Recht (§ 65 Abs. 1 S. 2 ThürBO); im regulären Verfahren zusätzlich die Anforderungen der ThürBO (§ 66). Das Bauplanungsrecht folgt aus §§ 30, 34, 35 BauGB je nach Gebietslage (beplanter
+      Bereich, Innenbereich, Außenbereich); wo die Gemeinde nicht selbst Genehmigungsbehörde ist, ist
+      ihr Einvernehmen nach § 36 BauGB erforderlich. Die Genehmigung ist unbeschadet der privaten Rechte Dritter zu erteilen (§ 78 Abs. 4 ThürBO). Rechtsschutz: Verpflichtungsklage nach § 42 Abs. 1 Var. 2 VwGO, nach erfolglosem
+      Antrag bzw. nach Versagung; mit dem Vorbescheid (§ 82 ThürBO) lassen sich einzelne Fragen vorab klären.
+  norms:
+  - "Art. 14 Abs. 1 GG"
+  - "§ 36 BauGB"
+  - "§ 42 Abs. 1 VwGO"
+  - >-
+      §§ 78, 82 ThürBO
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: th-bau-abstandsflaechen
+  type: norm
+  front: "Was regeln die Abstandsflächen, und sind sie nachbarschützend?"
+  back: >-
+      Vor den Außenwänden oberirdischer Gebäude sind Flächen von Gebäuden und baulichen Anlagen
+      freizuhalten (Abstandsflächen). Ihre Tiefe bemisst sich nach der Höhe H (§ 6 Abs. 4 ThürBO) und beträgt 0,4 H, mindestens 3 m (§ 6 Abs. 5 S. 1 ThürBO); in Gewerbe- und Industriegebieten sowie vergleichbaren Sondergebieten genügt 0,2 H, mindestens 3 m, vor Außenwänden von Gebäuden der Gebäudeklassen 1 und 2 mit nicht mehr als drei oberirdischen Geschossen genügen 3 m. Die Abstandsflächen müssen grundsätzlich auf dem Baugrundstück selbst liegen (bis zur Mitte öffentlicher Flächen oder bei Sicherung durch Baulast auf Nachbargrundstücken) und dürfen sich nicht überdecken (§ 6 Abs. 2, 3 ThürBO).
+      Zwecke sind ausreichende Belichtung, Belüftung, Brandschutz und Wahrung des Wohnfriedens. Das
+      Abstandsflächenrecht ist nachbarschützend, soweit seine Zwecke dem Nachbarn dienen; der Nachbar
+      kann seine Verletzung daher rügen. Eine Abstandsfläche ist nicht erforderlich vor Außenwänden an der Grundstücksgrenze, wenn nach planungsrechtlichen Vorschriften an die Grenze gebaut werden muss oder darf (§ 6 Abs. 1 S. 3 Nr. 1 ThürBO; geschlossene Bauweise, § 22 BauNVO), und wenn ein Vorhaben nach § 34 Abs. 1 oder 3a BauGB zulässig ist (Nr. 2). Abweichungen sind
+      möglich, wenn der Schutzzweck gewahrt bleibt und nachbarliche Interessen angemessen
+      berücksichtigt werden.
+  norms:
+  - "§ 6 ThürBO"
+  - "§ 22 BauNVO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: th-bau-nachbarschutz
+  type: streitstand
+  front: >-
+      Unter welchen Voraussetzungen kann ein Nachbar eine Baugenehmigung erfolgreich angreifen, und
+      welche Rolle spielt § 212a BauGB?
+  back: >-
+      Die Drittanfechtung hat nur Erfolg, wenn die Genehmigung rechtswidrig ist und gerade gegen eine
+      nachbarschützende Norm verstößt (Schutznormtheorie, § 113 Abs. 1 S. 1 VwGO). Nachbarschützend
+      sind insbesondere das Abstandsflächenrecht, die Festsetzungen zur Art der baulichen Nutzung
+      (Gebietserhaltungsanspruch) und das Gebot der Rücksichtnahme, das über § 15 Abs. 1 S. 2 BauNVO,
+      § 34 Abs. 1 BauGB (Einfügen) oder § 35 Abs. 3 BauGB wirkt. Widerspruch und Anfechtungsklage des
+      Nachbarn haben nach § 212a Abs. 1 BauGB keine aufschiebende Wirkung; der Bauherr darf auf
+      Grundlage der Genehmigung bauen. Vorläufiger Rechtsschutz: Antrag auf Anordnung der
+      aufschiebenden Wirkung nach § 80a Abs. 3 i. V. m. § 80 Abs. 5 VwGO. Streitig ist, ob schon die
+      formelle Rechtswidrigkeit wegen unterbliebener Nachbarbeteiligung allein zum Erfolg führt; nach
+      h. M. kommt es auf eine materielle Verletzung subjektiv-öffentlicher Nachbarrechte an.
+  norms:
+  - "§ 212a Abs. 1 BauGB"
+  - "§ 80a Abs. 3 VwGO"
+  - "§ 80 Abs. 5 VwGO"
+  - "§ 15 Abs. 1 S. 2 BauNVO"
+  - "§ 113 Abs. 1 S. 1 VwGO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: th-bau-eingriff
+  type: definition
+  front: >-
+      Welche bauaufsichtlichen Eingriffsmaßnahmen gibt es, und wann dürfen sie ergehen?
+  back: >-
+      Die Bauaufsichtsbehörde überwacht die Einhaltung des öffentlichen Baurechts und hat die erforderlichen Maßnahmen nach pflichtgemäßem Ermessen zu treffen (§ 61 Abs. 1 ThürBO). Baueinstellung (§ 86 ThürBO): Stilllegung einer Baustelle, die rechtswidrig begonnen wurde; sie setzt formelle Illegalität (fehlende Genehmigung) oder sonstigen Verstoß voraus und
+      dient der Sicherung. Nutzungsuntersagung (§ 87 Abs. 1 S. 2 ThürBO): Verbot einer rechtswidrigen Nutzung, regelmäßig bei
+      formeller Illegalität, wenn die Nutzung nicht ohne Weiteres genehmigungsfähig ist.
+      Beseitigungsanordnung (§ 87 Abs. 1 S. 1 ThürBO, nur wenn nicht auf andere Weise rechtmäßige Zustände hergestellt werden können): die schärfste Maßnahme; sie setzt grundsätzlich formelle und materielle
+      Illegalität voraus, weil eine Beseitigung bei materiell legalem Vorhaben unverhältnismäßig wäre.
+      Alle Maßnahmen stehen im Ermessen der Behörde und müssen verhältnismäßig sein; Adressaten sind
+      Bauherr, Eigentümer oder Nutzer. Ein Anspruch des Nachbarn auf Einschreiten besteht nur
+      ausnahmsweise bei Verletzung nachbarschützender Vorschriften und Ermessensreduktion auf Null.
+  norms:
+  - >-
+      §§ 61, 86, 87 ThürBO
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: th-bau-abweichung
+  type: definition
+  front: >-
+      Wie unterscheiden sich Abweichung (Bauordnungsrecht) und Ausnahme bzw. Befreiung
+      (Bauplanungsrecht)?
+  back: >-
+      Im Bauordnungsrecht soll die Bauaufsichtsbehörde Abweichungen von Anforderungen der ThürBO zulassen (§ 73 Abs. 1 ThürBO), wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der
+      öffentlich-rechtlich geschützten nachbarlichen Belange mit den öffentlichen Belangen vereinbar
+      sind; die Abweichung ist gesondert in Textform zu beantragen und zu begründen (§ 73 Abs. 2 ThürBO). Im Bauplanungsrecht lässt § 31
+      Abs. 1 BauGB Ausnahmen zu, soweit der Bebauungsplan sie vorsieht. Nach § 31 Abs. 2 BauGB ist
+      eine Befreiung von Festsetzungen möglich, wenn die Grundzüge der Planung nicht berührt werden
+      und einer der Befreiungsgründe (Allgemeinwohl, städtebauliche Vertretbarkeit, offenbar nicht
+      beabsichtigte Härte) vorliegt; die Abweichung muss zudem mit den öffentlichen Belangen vereinbar
+      sein und nachbarliche Interessen würdigen. Wird von nachbarschützenden Festsetzungen befreit,
+      hat der Nachbar einen Anspruch auf Würdigung seiner Belange.
+  norms:
+  - "§ 31 Abs. 1 BauGB"
+  - "§ 31 Abs. 2 BauGB"
+  - "§ 73 ThürBO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: th-bau-bestandsschutz
+  type: definition
+  front: "Was schützt der Bestandsschutz, und wo liegen seine Grenzen?"
+  back: >-
+      Passiver Bestandsschutz folgt aus Art. 14 Abs. 1 GG: Eine bauliche Anlage, die zu irgendeinem
+      Zeitpunkt rechtmäßig genehmigt oder materiell legal errichtet wurde, darf in ihrem genehmigten
+      Bestand und ihrer Nutzung erhalten bleiben, auch wenn sich später die Rechtslage geändert hat;
+      bauaufsichtliche Eingriffe wie Beseitigungsanordnung oder Nutzungsuntersagung scheiden aus,
+      solange die Voraussetzungen fortbestehen. Der Schutz erlischt, wenn die Anlage zerstört, ihre
+      Substanz in wesentlichem Umfang erneuert oder die Nutzung aufgegeben wird; die Identität der
+      Anlage muss gewahrt sein. Einen aktiven Bestandsschutz, also einen unmittelbar aus Art. 14 GG
+      abgeleiteten Anspruch auf Erweiterung oder Änderung, erkennt das Bundesverwaltungsgericht nicht
+      mehr an. Zur Abwehr von erheblichen Gefahren für Leben und Gesundheit kann die Anpassung bestehender Anlagen verlangt werden (§ 98 Abs. 1 ThürBO).
+  norms:
+  - "Art. 14 Abs. 1 GG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: th-schema-bau-verpflichtungsklage
+  title: "Verpflichtungsklage auf Erteilung einer Baugenehmigung (ThürBO)"
+  norms:
+  - "§ 42 Abs. 1 VwGO"
+  - "§ 30 BauGB"
+  - "§ 36 BauGB"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  steps:
+  - label: "I. Zulässigkeit der Verpflichtungsklage"
+    children:
+    - label: "1. Verwaltungsrechtsweg"
+    - label: >-
+        2. Statthaftigkeit: § 42 Abs. 1 Var. 2 VwGO
+    - label: >-
+        3. Klagebefugnis des Bauherrn: Möglichkeit eines Anspruchs, Art. 14 Abs. 1 GG
+    - label: "4. Vorverfahren (soweit landesrechtlich vorgesehen), Klagefrist"
+  - label: >-
+      II. Begründetheit: Anspruch auf Baugenehmigung
+    children:
+    - label: "1. Genehmigungsbedürftigkeit und Verfahrensart (ThürBO)"
+    - label: >-
+        2. Bauplanungsrecht: §§ 30, 34, 35 BauGB
+    - label: "3. Bauordnungsrecht und sonstiges öffentliches Recht im Prüfumfang"
+    - label: "4. Gemeindliches Einvernehmen, § 36 BauGB"
+    - label: >-
+        5. Gebundene Entscheidung: kein Versagungsgrund
+faelle:
+- slug: th-fall-bau-verpflichtungsklage-gestaltung
+  title: "Das Wohnhaus im Wohngebiet"
+  difficulty: 3
+  minutes: 50
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "§ 30 BauGB"
+  - "§ 42 Abs. 1 VwGO"
+  facts: >-
+      B ist Eigentümer eines unbebauten Grundstücks in einem durch Bebauungsplan festgesetzten
+      allgemeinen Wohngebiet in Thüringen. Der Bebauungsplan setzt die Art der baulichen Nutzung
+      (allgemeines Wohngebiet), eine Grundflächenzahl von 0,4 und maximal zwei Vollgeschosse fest und
+      enthält keine Gestaltungsvorschriften. B beantragt die Baugenehmigung für ein Einfamilienhaus
+      mit zwei Vollgeschossen und einer Grundflächenzahl von 0,3. Das Vorhaben entspricht allen
+      Vorgaben des Bebauungsplans und der ThürBO; die Erschließung ist gesichert, die Gemeinde hat ihr
+      Einvernehmen erteilt. Die Bauaufsichtsbehörde lehnt den Antrag mit der Begründung ab, das Haus
+      füge sich ästhetisch nicht in das Ortsbild ein. Eine Gestaltungssatzung existiert nicht.
+  question: >-
+      Welche Klageart ist statthaft, und hat die Klage in der Sache Erfolg? Auf Fragen der Klagefrist
+      ist nicht einzugehen.
+  steps:
+  - prompt: "Welche Klageart ist statthaft, und ist B klagebefugt?"
+    erwartung: >-
+        Statthaft ist die Verpflichtungsklage (§ 42 Abs. 1 Var. 2 VwGO), weil B den Erlass der
+        abgelehnten Baugenehmigung begehrt. B ist klagebefugt, da er einen Anspruch auf die Genehmigung
+        geltend machen kann; die Baufreiheit ist von Art. 14 Abs. 1 GG umfasst.
+  - prompt: "Welche Anspruchsgrundlage kommt in Betracht und was ist der Maßstab?"
+    erwartung: >-
+        Anspruchsgrundlage ist die Genehmigungsvorschrift der ThürBO. Die Baugenehmigung ist eine
+        gebundene Entscheidung: Die Baugenehmigung ist zu erteilen, wenn dem Vorhaben keine im Prüfumfang zu prüfenden
+        öffentlich-rechtlichen Vorschriften entgegenstehen; es besteht dann ein Anspruch auf Baugenehmigung.
+  - prompt: "Ist das Vorhaben planungs- und bauordnungsrechtlich zulässig?"
+    erwartung: >-
+        Ja. Das Vorhaben liegt im Geltungsbereich eines qualifizierten Bebauungsplans und ist nach § 30
+        Abs. 1 BauGB zulässig, weil es den Festsetzungen entspricht. Die Anforderungen der ThürBO sind
+        erfüllt, die Erschließung ist gesichert, das gemeindliche Einvernehmen liegt vor.
+  - prompt: >-
+        Ist die ästhetische Begründung der Behörde ein tragfähiger Versagungsgrund?
+    erwartung: >-
+        Nein. Ohne Gestaltungssatzung oder eine konkrete bauordnungsrechtliche Verunstaltungsregelung
+        ist eine bloße ästhetische Unzufriedenheit kein Versagungsgrund. Die Klage ist begründet; B hat
+        Anspruch auf Erteilung der Baugenehmigung.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+          Verpflichtungsklage als statthafte Klageart; Baufreiheit und Klagebefugnis
+      weight: 2.0
+      required: true
+      norms:
+      - "§ 42 Abs. 1 VwGO"
+      - "Art. 14 Abs. 1 GG"
+      keywords:
+      - "Verpflichtungsklage"
+      - "§ 42 Abs. 1 Var. 2 VwGO"
+      - "Klagebefugnis"
+      - "Baufreiheit"
+      - "Art. 14 Abs. 1 GG"
+      card_slugs:
+      - "th-bau-anspruch"
+    - id: p2
+      label: >-
+          Baugenehmigung als gebundene Entscheidung; Anspruch bei fehlendem entgegenstehendem Recht
+      weight: 3.0
+      required: true
+      keywords:
+      - "gebundene Entscheidung"
+      - "Anspruch auf Baugenehmigung"
+      - "kein entgegenstehendes öffentliches Recht"
+      - "Baugenehmigung ist zu erteilen"
+      card_slugs:
+      - "th-bau-anspruch"
+    - id: p3
+      label: "Planungsrechtliche Zulässigkeit nach § 30 Abs. 1 BauGB bejaht"
+      weight: 2.0
+      required: true
+      norms:
+      - "§ 30 Abs. 1 BauGB"
+      keywords:
+      - "§ 30 Abs. 1 BauGB"
+      - "qualifizierter Bebauungsplan"
+      - "Festsetzungen des Bebauungsplans"
+      - "bauplanungsrechtlich zulässig"
+      card_slugs:
+      - "th-bau-anspruch"
+      - "th-bau-verfahren"
+    - id: p4
+      label: "Ästhetische Erwägungen ohne Gestaltungssatzung kein Versagungsgrund"
+      weight: 1.5
+      required: false
+      keywords:
+      - "Gestaltungssatzung"
+      - "ästhetische Erwägungen"
+      - "Ortsbild"
+      - "Verunstaltung"
+      - "kein Versagungsgrund"
+      card_slugs:
+      - "th-bau-anspruch"
+    normzitate_geprueft: false

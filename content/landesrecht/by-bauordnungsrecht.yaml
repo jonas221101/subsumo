@@ -1,0 +1,320 @@
+topic:
+  slug: by-bauordnungsrecht
+  area: oeffentliches-recht
+  title: 'Bauordnungsrecht Bayern: Bayerische Bauordnung (BayBO)'
+  parent: oeffentliches-recht
+  bundesland: BY
+  relevance: 3
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: by-bau-genehmigungspflicht
+  type: norm
+  front: Welcher Grundsatz gilt in Bayern für die Genehmigungsbedürftigkeit baulicher Vorhaben?
+  back: >-
+    Die Errichtung, Änderung und Nutzungsänderung von Anlagen bedarf grundsätzlich der Baugenehmigung,
+    soweit in den Art. 56 bis 58, 72 und 73 BayBO nichts anderes bestimmt ist (Art. 55 Abs. 1 BayBO).
+    Die Genehmigungsfreiheit entbindet nicht von der Verpflichtung zur Einhaltung der Anforderungen, die
+    durch öffentlich-rechtliche Vorschriften an Anlagen gestellt werden (Art. 55 Abs. 2 BayBO). Das ist
+    für die Abgrenzung von formeller und materieller Illegalität wichtig: Ein Vorhaben kann formell illegal
+    sein, weil die erforderliche Genehmigung fehlt, aber materiell legal, wenn es dem Baurecht entspricht.
+    Eine Beseitigungsanordnung setzt grundsätzlich auch materielle Illegalität voraus.
+  norms:
+  - Art. 55 Abs. 1 BayBO
+  - Art. 55 Abs. 2 BayBO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: by-bau-verfahrensfrei
+  type: norm
+  front: Was sind verfahrensfreie Bauvorhaben nach Art. 57 BayBO?
+  back: >-
+    Art. 57 BayBO nennt Vorhaben, die keiner Baugenehmigung und keiner Genehmigungsfreistellung bedürfen,
+    etwa bestimmte kleine Gebäude, Einfriedungen und Stützmauern bis zu bestimmten Höhen sowie Anlagen
+    der technischen Gebäudeausrüstung. Auch bei verfahrensfreien Vorhaben gelten die materiellen Anforderungen
+    des öffentlichen Baurechts (Art. 55 Abs. 2 BayBO); die Bauaufsichtsbehörde kann bei Verstößen einschreiten.
+    Für die Klausur gilt: Zuerst die Tatbestände des Art. 57 durchprüfen, dann die Genehmigungsfreistellung,
+    danach die Genehmigungsverfahren. Die Reichweite der Tatbestände wird durch Größe, Höhe und Nutzung
+    der Anlage bestimmt, die konkreten Grenzwerte sind im Katalog des Art. 57 Abs. 1 BayBO nachzulesen
+    und genau zu subsumieren.
+  norms:
+  - Art. 57 BayBO
+  - Art. 55 Abs. 2 BayBO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: by-bau-genehmigungsfreistellung
+  type: norm
+  front: Wann kommt die Genehmigungsfreistellung nach Art. 58 BayBO in Betracht?
+  back: >-
+    Die Genehmigungsfreistellung betrifft die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen, die kein Sonderbau sind, im Geltungsbereich eines Bebauungsplans im Sinn des § 30 Abs. 1 BauGB (oder eines vorhabenbezogenen Plans nach §§ 12, 30 Abs. 2 BauGB), wenn das Vorhaben den Festsetzungen des Plans und örtlichen Bauvorschriften nicht widerspricht, die Erschließung gesichert ist, bestimmte Größen- und Sicherheitsabstandsgrenzen nicht überschritten werden (Art. 58 Abs. 1 S. 1 Nr. 4 BayBO) und die Gemeinde nicht erklärt, dass das vereinfachte Baugenehmigungsverfahren durchgeführt werden soll (Art. 58 BayBO). Der Bauherr reicht die Bauvorlagen bei der Gemeinde ein; er darf mit
+    dem Vorhaben beginnen, wenn die Gemeinde nicht innerhalb der gesetzlichen Frist erklärt, dass ein
+    Genehmigungsverfahren durchgeführt werden soll, oder früher mitteilt, dass sie dies nicht verlangt.
+    Die Freistellung ersetzt die Genehmigung nicht inhaltlich: Das Vorhaben muss materiell rechtmäßig
+    sein. Nachbarn haben keinen Zustellungs- oder Anfechtungsgegenstand, können aber ein Einschreiten
+    der Bauaufsichtsbehörde verlangen.
+  norms:
+  - Art. 58 BayBO
+  - § 30 Abs. 1 BauGB
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: by-bau-vereinfachtes-verfahren
+  type: norm
+  front: Was prüft die Bauaufsichtsbehörde im vereinfachten Baugenehmigungsverfahren nach Art. 59 BayBO?
+  back: >-
+    Das vereinfachte Verfahren gilt für Vorhaben, die keine Sonderbauten sind. Die Bauaufsichtsbehörde prüft nur einen eingeschränkten Katalog (Art. 59 BayBO), nämlich die Zulässigkeit nach Bauplanungsrecht (§§ 29 bis 38 BauGB), die Vorschriften über Abstandsflächen nach Art. 6 BayBO, die Regelungen örtlicher Bauvorschriften im Sinn des Art. 81 Abs. 1 BayBO, beantragte Abweichungen im Sinn des Art. 63 Abs. 1 und Abs. 2 S. 2 BayBO sowie andere öffentlich-rechtliche Anforderungen, soweit wegen der Baugenehmigung eine Entscheidung nach anderen Vorschriften entfällt, ersetzt oder eingeschlossen wird (Art. 59 S. 1 BayBO). Nicht geprüfte Vorschriften gelten gleichwohl materiell, die Baugenehmigung entfaltet
+    insoweit aber keine feststellende Wirkung. Das ist für den Nachbarschutz bedeutsam: Der Nachbar muss
+    zeigen, dass die Baugenehmigung gerade im Prüfprogramm eine drittschützende Norm verletzt, sonst kann
+    er auf das Einschreiten der Bauaufsicht verwiesen werden.
+  norms:
+  - Art. 59 BayBO
+  - §§ 29 bis 38 BauGB
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: by-bau-sonderbauten
+  type: norm
+  front: Welches Verfahren gilt für Sonderbauten in Bayern?
+  back: >-
+    Für Sonderbauten gilt das Genehmigungsverfahren nach Art. 60 BayBO mit erweitertem Prüfumfang: Die
+    Bauaufsichtsbehörde prüft neben dem Bauplanungsrecht auch die Vorschriften des Bauordnungsrechts,
+    insbesondere Brandschutz und weitere Anforderungen, die an Sonderbauten gestellt werden. Sonderbauten
+    sind Anlagen und Räume besonderer Art oder Nutzung, bei denen wegen ihrer Größe, Nutzung oder Gefahrenlage
+    besondere Anforderungen gelten (zum Beispiel Versammlungsstätten, Krankenhäuser, Hochhäuser). Die
+    Einordnung als Sonderbau entscheidet also über das Prüfprogramm und damit über Umfang und Wirkung
+    der Baugenehmigung.
+  norms:
+  - Art. 60 BayBO
+  - Art. 2 Abs. 4 BayBO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: by-bau-abstandsflaechen
+  type: norm
+  front: Wie werden die Abstandsflächen nach Art. 6 BayBO bemessen?
+  back: >-
+    Vor den Außenwänden von Gebäuden sind Abstandsflächen von oberirdischen Gebäuden freizuhalten (Art.
+    6 Abs. 1 BayBO). Sie müssen auf dem Grundstück selbst liegen (Art. 6 Abs. 2 BayBO). Die Tiefe bemisst sich nach der Wandhöhe H; sie beträgt 0,4 H, in Gewerbe- und Industriegebieten 0,2 H, jeweils aber mindestens 3 m (Art. 6 Abs. 5 S. 1 BayBO); in Gemeinden mit mehr als 250 000 Einwohnern gilt unter den Voraussetzungen des Art. 6 Abs. 5a BayBO eine abweichende Regel. Die Tiefe wird nach der Wandhöhe senkrecht zur Wand gemessen (Art. 6 Abs. 4 BayBO); Wandhöhe ist das Maß von der Geländeoberfläche bis zum Schnittpunkt der Wand mit der Dachhaut oder bis zum oberen Abschluss der Wand, die Höhe von Dächern wird nach Maßgabe des Art. 6 Abs. 4 S. 3 BayBO hinzugerechnet. Abstandsflächen dienen der Belichtung,
+    Belüftung, dem Brandschutz und dem Sozialfrieden. Die Vorschriften sind nachbarschützend, soweit sie
+    dem Schutz des Nachbargrundstücks dienen; ein Verstoß ist daher im Nachbarstreit relevant.
+  norms:
+  - Art. 6 Abs. 1 BayBO
+    - Art. 6 Abs. 2 BayBO
+  - Art. 6 Abs. 4 BayBO
+  - Art. 6 Abs. 5 BayBO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: by-bau-abweichung
+  type: norm
+  front: Unter welchen Voraussetzungen kann die Bauaufsicht nach Art. 63 BayBO Abweichungen zulassen?
+  back: >-
+    Die Bauaufsichtsbehörde soll Abweichungen von Anforderungen des Gesetzes und der auf Grund des Gesetzes erlassenen Vorschriften zulassen, wenn sie unter Berücksichtigung des Zwecks der jeweiligen Anforderung und bei Würdigung sowohl gesetzlich definierter überragender öffentlicher wie auch öffentlich-rechtlich geschützter nachbarlicher Interessen mit den öffentlichen Belangen vereinbar sind (Art. 63 Abs. 1 S. 1 BayBO). Die Zulassung setzt nach Art. 63 Abs. 2 BayBO einen gesonderten schriftlichen Antrag voraus. Der Nachbarschutz vermittelt
+    sich über die Würdigung nachbarlicher Belange: Fehlt diese Würdigung oder ist sie ermessensfehlerhaft,
+    kann der Nachbar durch die Genehmigung in seinen Rechten verletzt sein, wenn die abweichende Vorschrift
+    nachbarschützend ist. In der Klausur ist die atypische Situation oder ein sachlicher Grund für die
+    Abweichung zu benennen.
+  norms:
+  - Art. 63 Abs. 1 BayBO
+  - Art. 6 BayBO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: by-bau-nachbar
+  type: rechtsprechung
+  front: Welche Rolle spielen Nachbarbeteiligung und Drittschutz im bayerischen Bauordnungsrecht?
+  back: >-
+    Der Bauherr hat die Eigentümer benachbarter Grundstücke zu beteiligen und ihnen Lageplan und Bauzeichnungen zur schriftlichen Zustimmung vorzulegen (Art. 66 Abs. 1 S. 1 und 2 BayBO). Hat ein Nachbar nicht zugestimmt oder wird seinen Einwendungen nicht entsprochen, ist ihm eine Ausfertigung der Baugenehmigung zuzustellen (Art. 66 Abs. 1 S. 4 BayBO). Die erteilte Zustimmung schließt nach h. M. späteren Rechtsschutz des Nachbarn weitgehend aus. Drittschutz besteht nur, soweit die
+    verletzte Norm nach der Schutznormtheorie auch dem Schutz des Nachbarn zu dienen bestimmt ist. Im
+    Bauplanungsrecht schützt das Gebot der Rücksichtnahme (BVerwGE 52, 122), das in § 15 Abs. 1 BauNVO
+    und im Einfügungsgebot des § 34 Abs. 1 BauGB zum Ausdruck kommt. Im Bauordnungsrecht ist Art. 6 BayBO
+    nachbarschützend. Reine Reflexwirkungen genügen nicht.
+  norms:
+  - Art. 66 BayBO
+  - § 15 Abs. 1 BauNVO
+  - § 34 Abs. 1 BauGB
+  quellen:
+  - BVerwGE 52, 122 (Gebot der Rücksichtnahme)
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: by-bau-massnahmen
+  type: norm
+  front: Welche bauaufsichtlichen Maßnahmen gibt es bei illegalen Vorhaben?
+  back: >-
+    Die Bauaufsichtsbehörde kann die Einstellung von Bauarbeiten anordnen, wenn Anlagen im Widerspruch
+    zu öffentlich-rechtlichen Vorschriften errichtet oder geändert werden (Art. 75 BayBO). Sie kann die
+    teilweise oder vollständige Beseitigung verlangen, wenn Anlagen im Widerspruch zu öffentlich-rechtlichen
+    Vorschriften errichtet oder geändert wurden und nicht auf andere Weise rechtmäßige Zustände hergestellt
+    werden können (Art. 76 S. 1 BayBO); die Nutzung kann untersagt werden (Art. 76 S. 2 BayBO). Voraussetzung
+    ist grundsätzlich die materielle Illegalität. Ermessen und Verhältnismäßigkeit (Bestandsschutz nach
+    Art. 14 GG, Grundsatz des mildesten Mittels, Vertrauensschutz) sind zu prüfen; Adressat ist der Störer,
+    regelmäßig der Bauherr oder Eigentümer. Die Anordnung wird nach dem Verwaltungsvollstreckungsrecht
+    durchgesetzt.
+  norms:
+  - Art. 75 BayBO
+  - Art. 76 BayBO
+  - Art. 14 Abs. 1 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: by-bau-rechtsschutz
+  type: norm
+  front: Wie wehrt sich ein Nachbar gegen eine erteilte Baugenehmigung in Bayern?
+  back: >-
+    Der Nachbar erhebt Drittanfechtungsklage gegen die Baugenehmigung (§ 42 Abs. 1 Var. 1 VwGO). Klagebefugt
+    ist er nur bei möglicher Verletzung einer drittschützenden Norm (§ 42 Abs. 2 VwGO). Die Anfechtung
+    hat nach § 212a Abs. 1 BauGB keine aufschiebende Wirkung; der Nachbar kann nach § 80a Abs. 3 in Verbindung
+    mit § 80 Abs. 5 VwGO die Anordnung der aufschiebenden Wirkung beantragen. Begründet ist die Klage,
+    wenn die Genehmigung rechtswidrig ist und den Nachbarn in einem drittschützenden Recht verletzt (§
+    113 Abs. 1 S. 1 VwGO); eine bloße Rechtswidrigkeit genügt nicht. Alternativ kann der Nachbar bei formell
+    oder materiell illegalen Vorhaben ein Einschreiten der Bauaufsicht beantragen (Verpflichtungsklage).
+  norms:
+  - § 42 Abs. 2 VwGO
+  - § 212a Abs. 1 BauGB
+  - § 80a VwGO
+  - § 113 Abs. 1 S. 1 VwGO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: by-schema-bau-nachbarklage
+  title: Drittanfechtungsklage eines Nachbarn gegen eine Baugenehmigung (BayBO)
+  norms:
+  - § 42 VwGO
+  - Art. 6 BayBO
+  - Art. 63 BayBO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Zulässigkeit
+    children:
+    - label: 1. Verwaltungsrechtsweg, § 40 Abs. 1 VwGO
+    - label: '2. Statthafte Klageart: Anfechtungsklage (Drittanfechtung), § 42 Abs. 1 Var. 1 VwGO'
+    - label: 3. Klagebefugnis, § 42 Abs. 2 VwGO
+      hinweis: Mögliche Verletzung einer drittschützenden Norm, etwa Art. 6 BayBO oder Gebot der Rücksichtnahme.
+    - label: 4. Klagefrist und Beteiligte, §§ 74, 78 VwGO
+  - label: II. Begründetheit, § 113 Abs. 1 S. 1 VwGO
+    children:
+    - label: 1. Rechtswidrigkeit der Baugenehmigung
+      children:
+      - label: 'a) Genehmigungspflicht und Verfahrensart: Art. 55, 59, 60 BayBO'
+      - label: 'b) Prüfprogramm: Bauplanungsrecht, Bauordnungsrecht, Abweichungen'
+      - label: c) Verstoß gegen materielles Recht, z. B. Abstandsflächen Art. 6 BayBO
+        hinweis: 'Abweichung nach Art. 63 BayBO: Würdigung nachbarlicher Belange.'
+    - label: 2. Verletzung in eigenen Rechten
+      hinweis: Nur drittschützende Normen; Schutznormtheorie; kein Zustimmungsverzicht (Art. 66 BayBO).
+  - label: III. Vorläufiger Rechtsschutz
+    hinweis: '§ 212a BauGB: keine aufschiebende Wirkung; § 80a Abs. 3, § 80 Abs. 5 VwGO.'
+  stand: 2026-10
+faelle:
+- slug: by-fall-bau-abstandsflaeche
+  title: Das Mehrfamilienhaus an der Grenze
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  facts: >-
+    Eigentümer B erhält von der zuständigen bayerischen Bauaufsichtsbehörde eine Baugenehmigung für ein
+    Mehrfamilienhaus mit einer Wandhöhe von 9 m. Das Haus soll mit einem Abstand von 2 m an die Grenze
+    zum Nachbargrundstück des N gebaut werden. B hatte ausdrücklich eine Abweichung von den Abstandsflächenvorschriften
+    beantragt; die Behörde gewährte sie, ohne sich mit den Interessen des N zu befassen. N hat den Lageplan
+    nicht unterschrieben. Besondere Umstände (etwa ein atypischer Grundstückszuschnitt) liegen nicht vor.
+    N will die Baugenehmigung gerichtlich zu Fall bringen.
+  question: >-
+    Hat eine Klage des N gegen die Baugenehmigung Aussicht auf Erfolg?
+  steps:
+  - prompt: Welche Klageart ist statthaft und ist N klagebefugt?
+    erwartung: >-
+      Statthaft ist die Drittanfechtungsklage (§ 42 Abs. 1 Var. 1 VwGO). N ist klagebefugt, da die Abstandsflächenvorschriften
+      (Art. 6 BayBO) zumindest auch dem Schutz des Nachbarn dienen und eine Verletzung möglich erscheint.
+  - prompt: Welche Abstandsfläche ist erforderlich und wird sie eingehalten?
+    erwartung: >-
+      Erforderlich sind 0,4 H, mindestens 3 m (Art. 6 Abs. 5 BayBO): 0,4 mal 9 m ergibt 3,6 m. Der vorgesehene
+      Abstand von 2 m unterschreitet dies.
+  - prompt: War die Abweichung nach Art. 63 BayBO rechtmäßig?
+    erwartung: >-
+      Nein: Die Abweichung setzt die Würdigung der nachbarlichen Belange voraus (Art. 63 Abs. 1 BayBO).
+      Die Behörde hat sich mit den Belangen des N nicht befasst, Gründe für eine Abweichung fehlen. Die
+      Entscheidung ist ermessensfehlerhaft.
+  - prompt: Wird N in eigenen Rechten verletzt und wie ist das Ergebnis?
+    erwartung: >-
+      Ja: Die verletzte Abstandsflächenvorschrift ist nachbarschützend, und N hat Anspruch auf eine ermessensfehlerfreie
+      Entscheidung über die Abweichung. Die Klage ist begründet (§ 113 Abs. 1 S. 1 VwGO).
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Drittanfechtungsklage und Klagebefugnis über drittschützende Norm
+      weight: 2.0
+      required: true
+      norms:
+      - § 42 Abs. 2 VwGO
+      keywords:
+      - Drittanfechtungsklage
+      - Anfechtungsklage
+      - Klagebefugnis
+      - Schutznormtheorie
+      - drittschützend
+      - Nachbarschutz
+      card_slugs:
+      - by-bau-rechtsschutz
+      - by-bau-nachbar
+    - id: p2
+      label: Abstandsfläche 0,4 H, mindestens 3 m, berechnet und Verstoß erkannt
+      weight: 2.5
+      required: true
+      norms:
+      - Art. 6 BayBO
+      keywords:
+      - Art. 6 Abs. 5 BayBO
+      - 0,4 H
+      - 3,6 m
+      - Wandhöhe
+      - Abstandsfläche
+      - unterschritten
+      card_slugs:
+      - by-bau-abstandsflaechen
+    - id: p3
+      label: 'Abweichung nach Art. 63 BayBO: fehlende Würdigung nachbarlicher Belange, Ermessensfehler'
+      weight: 2.5
+      required: true
+      norms:
+      - Art. 63 Abs. 1 BayBO
+      keywords:
+      - Art. 63 BayBO
+      - Abweichung
+      - Würdigung der nachbarlichen Belange
+      - Ermessensfehler
+      - Ermessen
+      card_slugs:
+      - by-bau-abweichung
+    - id: p4
+      label: Verletzung in eigenen Rechten und Ergebnis
+      weight: 1.5
+      required: false
+      norms:
+      - § 113 Abs. 1 S. 1 VwGO
+      keywords:
+      - Rechtsverletzung
+      - Verletzung in eigenen Rechten
+      - § 113 Abs. 1 S. 1 VwGO
+      - Klage ist begründet
+      - Aufhebung der Baugenehmigung
+      card_slugs:
+      - by-bau-rechtsschutz
+  stand: 2026-10

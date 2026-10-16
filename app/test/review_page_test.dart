@@ -75,7 +75,7 @@ void main() {
       onToggleFocusMode: () {},
     );
 
-    expect(find.text('Nichts fällig. Gut gemacht.'), findsOneWidget);
+    expect(find.text('Gerade ist nichts fällig.'), findsOneWidget);
     expect(find.byIcon(Icons.fullscreen_exit_outlined), findsOneWidget);
   });
 }

@@ -1,19 +1,20 @@
 kurs:
   slug: sr-bt-2
-  title: 'Strafrecht BT II: Vermoegensdelikte'
+  title: 'Strafrecht BT II: Vermögensdelikte'
   area: strafrecht
   semester_default: 4
   examenskurs: false
-  stand: 2026-09
+  stand: 2026-10
   quellen:
-  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Diebstahl, Unterschlagung, Raub, Erpressung, Betrug, Untreue - der dichteste Klausurblock
+  beschreibung: Diebstahl (inkl. §§ 243, 244), Unterschlagung, Raub und räuberischer Diebstahl, Erpressung, Betrug
+    und Computerbetrug, Untreue, Sachbeschädigung sowie Anschlussdelikte (§§ 257-259) - der dichteste Klausurblock
     des Strafrechts.
   lernziele:
   - Wegnahme, Zueignungsabsicht und Gewahrsamsbegriff (§ 242 StGB) beherrschen
-  - Betrug in der Vierschrittpruefung (Taeuschung, Irrtum, Vermoegensverfuegung, Schaden) aufbauen
-  - Raub, raeuberische Erpressung und Diebstahl abgrenzen
+  - Betrug in der Vierschrittprüfung (Täuschung, Irrtum, Vermögensverfügung, Schaden) aufbauen
+  - Raub, räuberische Erpressung und Diebstahl abgrenzen
   klausurformat:
     typ: Fortgeschrittenenklausur
     minuten: 180
@@ -24,5 +25,11 @@ kurs:
   - sr-bt-erpressung-253
   - sr-bt-betrug
   - sr-bt-untreue-266
+  - sr-bt-diebstahl-qualifikationen-244
+  - sr-bt-anschlussdelikte-257-259
+  - sr-bt-sachbeschaedigung-303
+  - sr-bt-computerbetrug-263a
+  - sr-bt-raeuberischer-diebstahl-252
   landesrecht_kategorien: []
-  fehlende_themen: []
+  fehlende_themen:
+  - Insolvenz- und Wirtschaftsdelikte (P3)

@@ -1,0 +1,365 @@
+topic:
+  slug: zr-bt-verbrauchsgueterkauf
+  area: zivilrecht
+  title: Verbrauchsgüterkauf, §§ 474 ff. BGB (Reform 2022)
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-vgk-begriff
+  type: definition
+  front: 'Definiere: Verbrauchsgüterkauf, § 474 BGB'
+  back: 'Ein Verbrauchsgüterkauf liegt vor, wenn ein Verbraucher (§ 13 BGB) von einem Unternehmer
+    (§ 14 BGB) eine Ware, also eine bewegliche Sache, kauft (§ 474 Abs. 1 BGB). Erfasst sind
+    auch Verträge, die neben dem Verkauf eine Dienstleistung des Unternehmers zum Gegenstand
+    haben, sowie Kaufverträge über Waren mit digitalen Elementen. Ausgenommen sind gebrauchte Waren, die in einer öffentlich zugänglichen Versteigerung verkauft werden, wenn der Verbraucher klar und umfassend über den Ausschluss informiert wurde (§ 474 Abs. 2 BGB). Folge ist, dass neben den allgemeinen Kaufvorschriften die Sonderregeln der §§ 474 ff. BGB gelten, die überwiegend
+    zwingend zugunsten des Verbrauchers wirken (§ 476 BGB). Maßgeblich ist die Stellung der
+    Parteien beim Vertragsschluss: Kaufen Verbraucher untereinander oder Unternehmer untereinander,
+    greifen die §§ 474 ff. BGB nicht. Die Verbraucher- und Unternehmereigenschaft ist deshalb
+    in der Klausur stets vorab zu prüfen.'
+  norms:
+  - § 474 BGB
+  - § 13 BGB
+  - § 14 BGB
+  - § 476 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vgk-gefahruebergang
+  type: norm
+  front: Wie schränkt § 475 Abs. 2 BGB den Gefahrübergang beim Versendungskauf an Verbraucher
+    ein?
+  back: 'Nach § 447 Abs. 1 BGB geht beim Versendungskauf die Gefahr schon mit der Auslieferung
+    an die Transportperson über. Beim Verbrauchsgüterkauf gilt das nach § 475 Abs. 2 BGB nur eingeschränkt:
+    Die Gefahr geht nur dann so früh über, wenn der Verbraucher die Transportperson beauftragt
+    hat und der Unternehmer sie ihm nicht zuvor benannt hat. Wählt der Unternehmer den Paketdienst
+    aus, bleibt es bei § 446 S. 1 BGB, die Gefahr geht erst mit der Übergabe an den Verbraucher
+    über. Der Unternehmer trägt dann das Transportrisiko, und geht die Sache unterwegs unter,
+    verliert er nach § 326 Abs. 1 S. 1 BGB den Kaufpreisanspruch. Wegen der Umkehrung von Regel
+    und Ausnahme ist in Verbraucherfällen zuerst zu klären, wer den Transporteur bestimmt hat.'
+  norms:
+  - § 446 BGB
+  - § 447 Abs. 1 BGB
+  - § 475 Abs. 2 BGB
+  - § 326 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vgk-beweislastumkehr-477
+  type: norm
+  front: Wie wirkt die Beweislastumkehr nach § 477 BGB?
+  back: Zeigt sich innerhalb eines Jahres seit Gefahrübergang ein Mangel, wird nach § 477
+    Abs. 1 S. 1 BGB zugunsten des Verbrauchers vermutet, dass die Ware bereits bei Gefahrübergang
+    mangelhaft war. Seit der Kaufrechtsreform zum 1. Januar 2022 beträgt die Frist ein Jahr
+    (zuvor sechs Monate). Die Vermutung gilt nicht, wenn sie mit der Art der Ware oder des
+    Mangels unvereinbar ist (§ 477 Abs. 1 S. 1 Hs. 2 BGB), etwa bei äußerlich erkennbaren Beschädigungen,
+    die der Verbraucher bei Übergabe hätte rügen können, oder bei verderblichen Waren und
+    Verschleiß. Der Verkäufer kann die Vermutung widerlegen, indem er beweist, dass der Mangel
+    bei Gefahrübergang noch nicht angelegt war. Beim Kauf eines lebenden Tieres beträgt die Frist sechs Monate (§ 477 Abs. 1 S. 2 BGB). Der Verbraucher muss weiterhin beweisen, dass überhaupt ein Mangel vorliegt, der sich innerhalb der Frist gezeigt hat, und dass ein Kaufvertrag besteht.
+  norms:
+  - § 477 Abs. 1 BGB
+  - § 434 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vgk-bgh-zahnriemen
+  type: rechtsprechung
+  front: Welche Beweisanforderungen stellt der BGH an den Verbraucher bei der Beweislastumkehr?
+  back: Nach BGH, Urteil vom 12.10.2016 - VIII ZR 103/15, muss der Käufer im Rahmen der Beweislastumkehr
+    weder die Ursache des Mangels noch ein Verschulden des Verkäufers darlegen und beweisen.
+    Er muss lediglich beweisen, dass sich innerhalb der gesetzlichen Frist ein mangelhafter
+    Zustand, also eine Mangelerscheinung, gezeigt hat, die auf eine vertragswidrige Beschaffenheit
+    hindeutet. Es ist dann Sache des Verkäufers, zu beweisen, dass die Ursache des Zustands
+    erst nach Gefahrübergang gesetzt wurde, etwa durch unsachgemäße Behandlung des Käufers.
+    Die Entscheidung erging zur früheren Sechsmonatsfrist; die Verteilung der Darlegungs-
+    und Beweislast gilt für die Einjahresfrist des § 477 BGB in gleicher Weise.
+  norms:
+  - § 477 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - BGH, Urteil vom 12.10.2016 - VIII ZR 103/15
+  - Eigenformulierung Redaktion
+- slug: zr-vgk-nacherfuellung-sonderregeln
+  type: norm
+  front: Welche Sonderregeln gelten beim Verbrauchsgüterkauf für die Nacherfüllung?
+  back: 'Der Verbraucher hat auch beim Verbrauchsgüterkauf das Wahlrecht zwischen Nachbesserung
+    und Ersatzlieferung (§ 439 Abs. 1 BGB). Die Sonderregeln des § 475 BGB schützen ihn bei der Durchführung: Die Nacherfüllung ist innerhalb einer angemessenen Frist ab Mitteilung des Mangels und ohne erhebliche Unannehmlichkeiten für den Verbraucher durchzuführen (§ 475 Abs. 6 BGB). Für Aufwendungen, die der Unternehmer nach § 439 Abs. 2 und 3 BGB zu tragen hat, kann der Verbraucher einen Vorschuss verlangen (§ 475 Abs. 5 BGB). Bei der Ersatzlieferung schuldet er keinen Nutzungsersatz für die bis dahin gezogenen Nutzungen (§ 475 Abs. 3 S. 1 BGB). Der Unternehmer muss den Verbraucher vor der Nacherfüllung über sein Wahlrecht und bei Nachbesserung über die einmalige Verlängerung der Verjährung um zwölf Monate informieren (§ 475 Abs. 4 BGB, § 475e Abs. 5 BGB). Beim Rücktritt und beim Schadensersatz statt der Leistung ist eine sonst erforderliche Fristsetzung unter den Voraussetzungen des § 475d BGB entbehrlich.'
+  norms:
+  - § 439 Abs. 1 BGB
+  - § 475 BGB
+  - § 475 Abs. 3 BGB
+  - § 475 Abs. 5 BGB
+  - § 475 Abs. 6 BGB
+  - § 475d BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vgk-ein-ausbau-439-iii
+  type: norm
+  front: Was regelt § 439 Abs. 3 BGB zu Aus- und Einbaukosten?
+  back: 'Hat der Käufer die mangelhafte Sache gemäß ihrer Art und ihrem Verwendungszweck in
+    eine andere Sache eingebaut oder an eine andere Sache angebracht, bevor der Mangel offenbar
+    wurde, muss der Verkäufer im Rahmen der Nacherfüllung dem Käufer die erforderlichen Aufwendungen
+    für das Entfernen der mangelhaften und den Einbau oder das Anbringen der nachgebesserten
+    oder gelieferten mangelfreien Sache ersetzen (§ 439 Abs. 3 BGB). Die Regelung gilt für
+    jeden Kaufvertrag, nicht nur für den Verbrauchsgüterkauf, und sie setzt kein Verschulden
+    des Verkäufers voraus. Typische Fälle sind verlegte Fliesen, Parkett oder eingebaute Geräte.
+    Sie ist im Zusammenhang mit § 439 Abs. 4 BGB zu sehen: Sind die Kosten einer Art der Nacherfüllung unverhältnismäßig, kann der Verkäufer diese verweigern, wobei der Wert der mangelfreien Sache und die Bedeutung des Mangels zu berücksichtigen sind.'
+  norms:
+  - § 439 Abs. 3 BGB
+  - § 439 Abs. 4 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vgk-eugh-weber-putz
+  type: rechtsprechung
+  front: Welche Vorgabe machte der EuGH zu Aus- und Einbaukosten bei der Ersatzlieferung?
+  back: Der EuGH hat im Verfahren Weber und Putz entschieden, dass der Verkäufer bei einer
+    Ersatzlieferung gegenüber einem Verbraucher verpflichtet sein kann, den Ausbau der mangelhaften
+    Sache und den Einbau der Ersatzsache selbst vorzunehmen oder die Kosten dafür zu tragen,
+    wenn die Sache vertragsgemäß eingebaut worden war (EuGH, Urteil vom 16.06.2011 - C-65/09
+    und C-87/09). Wären diese Kosten für den Verkäufer unverhältnismäßig, darf er den Ersatz
+    auf einen angemessenen Betrag beschränken, den Anspruch des Verbrauchers aber nicht vollständig
+    verweigern. Der Gesetzgeber hat dies mit der Einführung des § 439 Abs. 3 BGB nachvollzogen.
+  norms:
+  - § 439 Abs. 3 BGB
+  - § 475 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - EuGH, Urteil vom 16.06.2011 - C-65/09 und C-87/09 (Weber und Putz)
+  - Eigenformulierung Redaktion
+- slug: zr-vgk-ersatzlieferung-stueckkauf
+  type: streitstand
+  front: 'Streitstand: Ist beim Stückkauf eine Ersatzlieferung möglich?'
+  back: 'Fraglich ist, ob bei einem Stückkauf (etwa über ein bestimmtes Gebrauchtfahrzeug)
+    der Käufer die Lieferung einer anderen Sache verlangen kann. Nach der Rechtsprechung des
+    BGH und der herrschenden Meinung ist die Ersatzlieferung nicht von vornherein nach § 275
+    Abs. 1 BGB unmöglich. Entscheidend ist der durch Auslegung (§§ 133, 157 BGB) zu ermittelnde
+    Wille der Parteien: Ist die Sache nach dem Vertrag durch gleichartige und gleichwertige
+    Sachen ersetzbar, besteht der Anspruch nach § 439 Abs. 1 Var. 2 BGB, etwa bei einem Neuwagen.
+    Bei individuell bestimmten Sachen wie einem Gebrauchtwagen scheidet sie in der Regel aus.
+    Die Gegenauffassung hält die Ersatzlieferung beim Stückkauf grundsätzlich für unmöglich,
+    weil die vereinbarte Identität der Sache nicht wiederholbar sei. Die herrschende Auffassung
+    vermeidet so den Ausschluss eines gesetzlich vorgesehenen Rechts allein aufgrund der Kaufart.'
+  norms:
+  - § 439 Abs. 1 BGB
+  - § 275 Abs. 1 BGB
+  - § 133 BGB
+  - § 157 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vgk-garantie-443-479
+  type: norm
+  front: Was gilt für Garantien beim Verbrauchsgüterkauf (§ 443, § 479 BGB)?
+  back: 'Eine Garantie (§ 443 Abs. 1 BGB) ist die Verpflichtung des Verkäufers oder eines
+    Dritten, für eine bestimmte Beschaffenheit oder Haltbarkeit der Sache einzustehen. Sie begründet Rechte des Käufers zusätzlich zu den gesetzlichen Mängelrechten. Bei der Haltbarkeitsgarantie wird nach § 443 Abs. 2 BGB vermutet, dass ein während der Garantiedauer auftretender Mangel die Rechte aus der Garantie begründet. Beim Verbrauchsgüterkauf stellt § 479 BGB Anforderungen an die Garantieerklärung: Sie muss einfach und verständlich abgefasst sein und unter anderem den Hinweis auf die gesetzlichen Mängelrechte und deren Unberührtheit, Namen und Anschrift des Garantiegebers sowie Dauer und räumlichen Geltungsbereich enthalten (§ 479 Abs. 1 BGB). Sie ist dem Verbraucher spätestens bei Lieferung auf einem dauerhaften Datenträger zur Verfügung zu stellen (§ 479 Abs. 2 BGB). Hat der Hersteller eine Haltbarkeitsgarantie gegeben, hat der Verbraucher gegen ihn mindestens einen Nacherfüllungsanspruch während der Garantiedauer (§ 479 Abs. 3 BGB).'
+  norms:
+  - § 443 Abs. 1 BGB
+  - § 443 Abs. 2 BGB
+  - § 479 BGB
+  - § 479 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vgk-regress-445a-478
+  type: norm
+  front: Wie funktioniert der Unternehmerrückgriff (§§ 445a, 445b, 478 BGB)?
+  back: Muss der Letztverkäufer eine neu hergestellte Sache wegen eines Mangels zurücknehmen oder den Kaufpreis mindern, kann er bei seinem Lieferanten Rückgriff nehmen. Nach § 445a Abs. 1 BGB kann er Ersatz der Aufwendungen verlangen, die er im Verhältnis
+    zum Verbraucher im Rahmen der Nacherfüllung tragen musste (Kosten nach § 439 Abs. 2, 3 und 6 S. 2 BGB sowie Vorschüsse nach § 475 Abs. 5 BGB), sofern der Mangel schon bei Gefahrübergang auf ihn vorlag oder auf einer Verletzung der Aktualisierungspflicht nach § 475b Abs. 4 BGB beruht. Nach § 445a Abs. 2 BGB bedarf es für seine Rechte aus § 437 BGB gegen den Lieferanten keiner Fristsetzung, wenn er die Sache zurücknehmen musste oder der Käufer den Kaufpreis gemindert hat. Die Beweislastumkehr des § 477 BGB wirkt nach
+    § 478 Abs. 1 BGB auch im Rückgriff, wobei die Frist mit dem Gefahrübergang auf den Verbraucher
+    beginnt. Die Aufwendungsersatzansprüche verjähren in zwei Jahren ab Ablieferung (§ 445b Abs. 1 BGB); als Ablaufhemmung tritt die Verjährung der Ansprüche des Verkäufers gegen den Lieferanten frühestens zwei Monate nach dem Zeitpunkt ein, in dem der Verkäufer die Ansprüche des Käufers erfüllt hat (§ 445b Abs. 2 BGB).
+  norms:
+  - § 445a BGB
+  - § 445b BGB
+  - § 478 BGB
+  - § 477 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-vgk-abweichungsverbot-476
+  type: norm
+  front: Welche Vereinbarungen erlaubt § 476 BGB beim Verbrauchsgüterkauf nicht?
+  back: 'Auf eine Vereinbarung, die vor Mitteilung eines Mangels an den Unternehmer zum Nachteil des Verbrauchers von den wesentlichen kaufrechtlichen Mängelvorschriften und den Vorschriften dieses Untertitels abweicht, kann sich der Unternehmer nicht berufen (§ 476 Abs. 1 S. 1 BGB). Von den objektiven Anforderungen an die Sache darf nur abgewichen werden, wenn der Verbraucher vor der Bestellung eigens informiert wurde und die Abweichung ausdrücklich und gesondert vereinbart ist. Die Verjährung der Mängelansprüche darf nicht auf weniger als zwei Jahre ab dem gesetzlichen Verjährungsbeginn verkürzt werden, bei gebrauchten Sachen nicht auf weniger als ein Jahr, und Letzteres nur bei eigener Information und gesonderter Vereinbarung (§ 476 Abs. 2 BGB). Hinzu kommt das Umgehungsverbot (§ 476 Abs. 4 BGB). Eine Beschränkung der Schadensersatzhaftung bleibt nach § 476
+    Abs. 3 BGB nach Maßgabe der Inhaltskontrolle möglich; in Allgemeinen Geschäftsbedingungen
+    sind dabei §§ 307 ff. BGB zu beachten. Praktisch führt dies dazu, dass Haftungsausschlüsse
+    im Verbraucherverkauf von Neuware meist wirkungslos sind.'
+  norms:
+  - § 476 Abs. 1 BGB
+  - § 476 Abs. 2 BGB
+  - § 476 Abs. 3 BGB
+  - § 307 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-vgk-maengelrechte
+  title: Zusatzprüfung beim Verbrauchsgüterkauf, §§ 474 ff. BGB
+  norms:
+  - § 474 BGB
+  - § 477 BGB
+  - § 475 Abs. 2 BGB
+  - § 476 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Anwendbarkeit der §§ 474 ff. BGB
+    hinweis: Verbraucher (§ 13 BGB) kauft von Unternehmer (§ 14 BGB) eine bewegliche Sache;
+      Vorab prüfen, nicht erst bei den Mängelrechten.
+  - label: II. Gefahrübergang
+    children:
+    - label: 1. Übergabe, § 446 BGB
+    - label: '2. Versendung: § 447 Abs. 1 BGB nur bei Auswahl des Transporteurs durch den
+        Verbraucher, § 475 Abs. 2 BGB'
+  - label: III. Sachmangel, § 434 BGB, bei Gefahrübergang
+    children:
+    - label: 1. Subjektive und objektive Anforderungen, auch Montage und digitale Elemente
+    - label: '2. Beweislastumkehr, § 477 BGB: Mangel zeigt sich binnen eines Jahres'
+  - label: IV. Mängelrechte, § 437 BGB
+    hinweis: 'Reihenfolge: Nacherfüllung, dann Rücktritt oder Minderung, daneben Schadensersatz.'
+    children:
+    - label: 1. Nacherfüllung nach § 439 BGB mit Sonderregeln des § 475 BGB
+    - label: 2. Aus- und Einbaukosten, § 439 Abs. 3 BGB
+    - label: '3. Fristsetzung beim Rücktritt: § 475d BGB beachten'
+  - label: V. Vereinbarungen
+    hinweis: Haftungsausschluss und Verkürzung der Verjährung unwirksam, § 476 BGB.
+  - label: VI. Verjährung
+    hinweis: Zwei Jahre ab Ablieferung, § 438 Abs. 1 Nr. 3 BGB; Sonderregeln § 475e BGB.
+faelle:
+- slug: zr-fall-vgk-waschmaschine
+  title: Die Waschmaschine mit Platinenschaden
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: 'Verbraucherin V bestellt im Onlineshop des Händlers H eine neue Waschmaschine für
+    649 Euro. Die Maschine wird am 2. März von einem von H beauftragten Paketdienst geliefert
+    und ordnungsgemäß in Betrieb genommen. Am 10. Dezember desselben Jahres fällt die Elektronik
+    aus, die Maschine lässt sich nicht mehr starten. V zeigt H den Defekt unverzüglich an
+    und verlangt Reparatur. H verweigert die Reparatur: In den Verkaufsbedingungen sei die
+    Gewährleistung auf sechs Monate ab Lieferung begrenzt, außerdem habe V nicht bewiesen,
+    dass der Defekt schon bei Lieferung angelegt gewesen sei; vielleicht habe eine Überspannung
+    im Stromnetz der V die Platine zerstört. Ein vom Gericht beauftragter Sachverständiger
+    kann die Ursache des Platinenschadens nicht klären: Ein Materialfehler ist ebenso möglich
+    wie eine Überspannung. Weitere Umstände sind nicht bekannt.'
+  question: Kann V von H Nacherfüllung in Form der Reparatur der Waschmaschine verlangen?
+  steps:
+  - prompt: Welches Vertragsrecht kommt zur Anwendung?
+    erwartung: 'V ist Verbraucherin (§ 13 BGB), H Unternehmer (§ 14 BGB), die Waschmaschine
+      ist eine bewegliche Sache: Es liegt ein Verbrauchsgüterkauf im Sinne des § 474 BGB vor,
+      sodass neben §§ 433 ff. BGB die Sonderregeln der §§ 474 ff. BGB gelten.'
+  - prompt: Liegt ein Sachmangel vor, und wann musste er vorliegen?
+    erwartung: Eine Waschmaschine muss den objektiven Anforderungen des § 434 Abs. 3 BGB entsprechen,
+      insbesondere eine übliche Haltbarkeit aufweisen. Ein Ausfall der Elektronik nach neun
+      Monaten ist ein Mangelzustand. Maßgeblich ist der Gefahrübergang (§ 446 BGB), hier die
+      Übergabe an V.
+  - prompt: Wer trägt die Beweislast dafür, dass der Mangel bei Gefahrübergang vorlag?
+    erwartung: Nach § 477 Abs. 1 BGB wird vermutet, dass der Mangel bereits bei Gefahrübergang
+      vorlag, weil er sich innerhalb eines Jahres gezeigt hat. V muss nur die Mangelerscheinung
+      beweisen, nicht deren Ursache. H müsste die Vermutung widerlegen; dies gelingt nicht,
+      da die Ursache offen bleibt. Die Vermutung ist auch nicht mit Art der Sache oder des
+      Mangels unvereinbar.
+  - prompt: Ist die Klausel über die sechsmonatige Gewährleistung wirksam?
+    erwartung: Nein. Nach § 476 Abs. 1, 2 BGB kann sich H nicht auf eine Vereinbarung berufen,
+      die vor Mitteilung des Mangels die Verjährung auf unter zwei Jahre verkürzt. Die gesetzliche
+      Verjährung beträgt zwei Jahre ab Ablieferung (§ 438 Abs. 1 Nr. 3 BGB) und ist nicht
+      abgelaufen.
+  - prompt: Ergebnis?
+    erwartung: V kann von H nach §§ 437 Nr. 1, 439 Abs. 1 BGB Nacherfüllung verlangen; sie
+      hat das Wahlrecht zwischen Nachbesserung und Ersatzlieferung und hat sich für Reparatur
+      entschieden. Gründe für eine Verweigerung nach § 439 Abs. 4 BGB sind nicht ersichtlich.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Verbrauchsgüterkauf nach § 474 BGB bejaht (Verbraucher kauft von Unternehmer
+        eine bewegliche Sache)
+      weight: 1.5
+      required: false
+      norms:
+      - § 474 BGB
+      keywords:
+      - Verbrauchsgüterkauf
+      - § 474 BGB
+      - Verbraucher
+      - Unternehmer
+      - bewegliche Sache
+      card_slugs:
+      - zr-vgk-begriff
+    - id: p2
+      label: Sachmangel (Haltbarkeit/Beschaffenheit) nach § 434 Abs. 3 BGB festgestellt
+      weight: 1.5
+      required: false
+      norms:
+      - § 434 Abs. 3 BGB
+      keywords:
+      - Sachmangel
+      - § 434 Abs. 3 BGB
+      - objektive Anforderungen
+      - übliche Haltbarkeit
+      - übliche Beschaffenheit
+    - id: p3
+      label: 'Beweislastumkehr nach § 477 BGB: Mangel binnen eines Jahres, Vermutung nicht
+        widerlegt, Verbraucher muss die Ursache nicht beweisen'
+      weight: 3.0
+      required: true
+      norms:
+      - § 477 Abs. 1 BGB
+      keywords:
+      - Beweislastumkehr
+      - § 477 BGB
+      - ein Jahr
+      - Vermutung
+      - bereits bei Gefahrübergang mangelhaft
+      - Ursache
+      card_slugs:
+      - zr-vgk-beweislastumkehr-477
+      - zr-vgk-bgh-zahnriemen
+    - id: p4
+      label: Klausel zur Verkürzung der Gewährleistung ist nach § 476 BGB unwirksam
+      weight: 2.0
+      required: true
+      norms:
+      - § 476 Abs. 1 BGB
+      - § 476 Abs. 2 BGB
+      keywords:
+      - § 476 BGB
+      - Abweichungsverbot
+      - Verkürzung der Verjährung
+      - zwei Jahre
+      - Klausel unwirksam
+      card_slugs:
+      - zr-vgk-abweichungsverbot-476
+    - id: p5
+      label: Anspruch auf Nacherfüllung nach §§ 437 Nr. 1, 439 Abs. 1 BGB mit Wahlrecht des
+        Verbrauchers
+      weight: 2.0
+      required: true
+      norms:
+      - § 439 Abs. 1 BGB
+      - § 437 Nr. 1 BGB
+      keywords:
+      - Nacherfüllung
+      - § 439 Abs. 1 BGB
+      - § 437 Nr. 1 BGB
+      - Wahlrecht
+      - Ersatzlieferung
+      - Nachbesserung
+      card_slugs:
+      - zr-vgk-nacherfuellung-sonderregeln
+    - id: p6
+      label: Anspruch nicht verjährt, § 438 Abs. 1 Nr. 3 BGB (zwei Jahre ab Ablieferung)
+      weight: 1.0
+      required: false
+      norms:
+      - § 438 Abs. 1 Nr. 3 BGB
+      keywords:
+      - Verjährung
+      - § 438 Abs. 1 Nr. 3 BGB
+      - zwei Jahre
+      - Ablieferung

@@ -8,7 +8,7 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-15'
-    status: ki-freigegeben
+    status: in-pruefung
     normzitate_geprueft: true
 cards:
 - slug: zr-ruecktritt-voraussetzungen-323-1
@@ -121,10 +121,17 @@ cards:
     oder Herausgabe nach der Natur des Erlangten ausgeschlossen ist (§ 346 Abs. 2
     S. 1 Nr. 1 BGB), er den erhaltenen Gegenstand verbraucht, veräußert, belastet,
     verarbeitet oder umgestaltet hat (Nr. 2), oder der Gegenstand sich verschlechtert
-    hat oder untergegangen ist (Nr. 3) - jeweils mit Ausnahme der bloß bestimmungsgemäßen
-    Ingebrauchnahme.
+    hat oder untergegangen ist (Nr. 3). Nur bei Nr. 3 bleibt die durch die bestimmungsgemäße
+    Ingebrauchnahme entstandene Verschlechterung außer Betracht. Die Wertersatzpflicht
+    entfällt unter den Voraussetzungen des § 346 Abs. 3 BGB, etwa wenn sich der Mangel
+    erst während der Verarbeitung gezeigt hat, der Gläubiger die Verschlechterung
+    zu vertreten hat oder sie beim gesetzlichen Rücktrittsberechtigten trotz Beachtung
+    der eigenüblichen Sorgfalt eingetreten ist. Zu Nutzungen und Verwendungen siehe
+    § 347 BGB.
   norms:
   - § 346 Abs. 2 BGB
+  - § 346 Abs. 3 BGB
+  - § 347 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -163,12 +170,15 @@ schemata:
       - label: a) Entbehrlichkeit nach § 323 Abs. 2 BGB
     - label: 4. Kein Ausschluss nach § 323 Abs. 5, 6 BGB
   - label: II. Kein Erlöschen des Rücktrittsrechts
-    hinweis: Etwa durch vorherige Erfüllung, Verzicht oder Verwirkung.
+    hinweis: Etwa durch vorherige Erfüllung, Verzicht, Verwirkung oder Fristsetzung
+      zur Ausübung (§ 350 BGB). Der Rücktritt ist unwirksam, wenn der Anspruch auf
+      die Leistung verjährt ist und der Schuldner sich darauf beruft (§ 218 BGB).
   - label: III. Rücktrittserklärung gegenüber dem anderen Teil, § 349 BGB
   - label: 'IV. Rechtsfolge: Rückgewährschuldverhältnis'
     children:
     - label: 1. Rückgabe der erhaltenen Leistungen, § 346 Abs. 1 BGB
-    - label: 2. Wertersatz statt Rückgabe, § 346 Abs. 2 BGB
+    - label: 2. Wertersatz statt Rückgabe, § 346 Abs. 2 BGB; Ausschluss der Wertersatzpflicht,
+        § 346 Abs. 3 BGB; Nutzungen und Verwendungen, § 347 BGB
     - label: 3. Zug-um-Zug-Erfüllung, § 348 BGB
 faelle:
 - slug: zr-fall-haustuer-fixgeschaeft
@@ -196,11 +206,19 @@ faelle:
   - prompt: Formuliere den Obersatz zum Rückzahlungsanspruch der U.
     erwartung: U könnte gegen H einen Anspruch auf Rückzahlung der 1.500 Euro aus
       § 346 Abs. 1 BGB haben, wenn sie wirksam vom Vertrag zurückgetreten ist.
+  - prompt: Welcher Vertragstyp liegt vor, und war die Leistung fällig?
+    erwartung: 'Lieferung und Montage einer Haustür ist ein Werklieferungsvertrag
+      bzw. ein Kaufvertrag mit Montageverpflichtung (§ 650 BGB: bei beweglichen Sachen
+      Kaufrecht, bei unvertretbaren Sachen auch Werkvertragsrecht). Das Rücktrittsrecht
+      wegen nicht rechtzeitiger Leistung folgt in beiden Fällen aus § 323 Abs. 1 BGB.
+      Die Montage war zum vereinbarten Termin (spätestens 1. April) fällig, die Leistung
+      wurde nicht erbracht.'
   - prompt: Liegt eine Pflichtverletzung des H vor?
     erwartung: Ja - H hat die vereinbarte Montageleistung nicht bis zum vereinbarten
       Termin 1. April erbracht.
   - prompt: War eine Fristsetzung zur Nacherfüllung erforderlich, § 323 Abs. 1 BGB?
-    erwartung: Grundsätzlich ja, hier aber entbehrlich.
+    erwartung: Grundsätzlich ja (Rücktritt wegen Nichtleistung einer fälligen Leistung),
+      hier aber entbehrlich.
   - prompt: Warum war die Fristsetzung hier entbehrlich?
     erwartung: Weil U und H den 1. April ausdrücklich als relatives Fixgeschäft vereinbart
       haben und U ihr Leistungsinteresse erklärtermaßen an die Rechtzeitigkeit der
@@ -220,21 +238,27 @@ faelle:
   expectation:
     pruefpunkte:
     - id: p1
-      label: Obersatz mit § 346 Abs. 1 BGB als Anspruchsgrundlage
+      label: Obersatz mit § 346 Abs. 1 BGB als Anspruchsgrundlage (wirksamer Rücktritt
+        als Voraussetzung)
       weight: 1.0
       required: false
       norms:
       - § 346 Abs. 1 BGB
       keywords:
-      - '346'
-      - Rückgewähr
+      - Rückgewähranspruch
+      - wirksam zurückgetreten
+      - Rücktrittsrecht aus § 323
     - id: p2
-      label: Pflichtverletzung durch Nichtmontage bis zum vereinbarten Termin festgestellt
+      label: Pflichtverletzung durch Nichtleistung der fälligen Montage bis zum vereinbarten
+        Termin festgestellt; Vertragstyp (Werklieferung/Kauf mit Montage) eingeordnet
       weight: 1.0
       required: false
       keywords:
-      - nicht montiert
-      - Pflichtverletzung
+      - Montage unterblieben
+      - nicht rechtzeitig montiert
+      - Termin nicht eingehalten
+      - Nichtleistung einer fälligen Leistung
+      - Verzögerung der Montage
       card_slugs:
       - zr-ruecktritt-voraussetzungen-323-1
     - id: p3
@@ -245,9 +269,12 @@ faelle:
       norms:
       - § 323 Abs. 2 BGB
       keywords:
-      - Fixgeschäft
-      - '323'
-      - entbehrlich
+      - relatives Fixgeschäft
+      - § 323 Abs. 2 Nr. 2
+      - Fristsetzung entbehrlich
+      - Leistungsinteresse an die Rechtzeitigkeit gebunden
+      - Termin wesentlich
+      - Leistungsinteresse an den Termin gebunden
       card_slugs:
       - zr-ruecktritt-entbehrlichkeit-323-2
     - id: p4
@@ -257,8 +284,11 @@ faelle:
       norms:
       - § 349 BGB
       keywords:
-      - '349'
-      - Rücktrittserklärung
+      - § 349
+      - Rücktrittserklärung gegenüber H
+      - empfangsbedürftige Willenserklärung
+      - Gestaltungsrecht
+      - Rücktritt erklärt
       card_slugs:
       - zr-ruecktritt-erklaerung-349
     - id: p5
@@ -270,9 +300,12 @@ faelle:
       - § 346 Abs. 1 BGB
       - § 348 BGB
       keywords:
+      - Rückgewährschuldverhältnis
+      - § 348
       - Zug um Zug
-      - '348'
-      - Rückgabe
+      - Tür zurückgeben
+      - Rückgabe der Tür
+      - § 346 Abs. 1
       card_slugs:
       - zr-ruecktritt-rueckgewaehr-346-1
       - zr-ruecktritt-zug-um-zug-348
