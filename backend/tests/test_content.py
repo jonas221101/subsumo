@@ -187,3 +187,15 @@ def test_pflichtfelder_der_karte(tmp_path, suchen, ersetzen):
     bundle = load_content(write(tmp_path, "t.yaml", VALID.replace(suchen, ersetzen)))
     assert not bundle.ok
     assert any("Pflichtfelder fehlen" in e for e in bundle.errors)
+
+
+def test_ungequoteter_doppelpunkt_in_textliste_wird_gemeldet():
+    import yaml
+
+    from app.services.content import _textlisten_pruefen
+
+    data = yaml.safe_load("cards:\n- slug: x\n  sources:\n  - BGH (Leitsatz: Text)\n")
+    fehler = _textlisten_pruefen(data)
+    assert fehler and "cards.sources[0]" in fehler[0]
+    gequotet = yaml.safe_load("cards:\n- sources:\n  - 'BGH (Leitsatz: Text)'\n")
+    assert _textlisten_pruefen(gequotet) == []
