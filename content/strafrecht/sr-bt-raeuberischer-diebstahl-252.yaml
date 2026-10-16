@@ -49,6 +49,8 @@ cards:
   quellen:
   - StGB, amtliche Fassung
   - Eigenformulierung Redaktion
+  - "BGH, Beschluss vom August 2015 - 3 StR 112/15 (Betreffen auf frischer Tat; BGHSt 28, 224)"
+  - "BGH, Beschluss vom 03.05.2001 - 4 StR 103/01 (vollendete Vortat, BGHSt 21, 377)"
   stand: 2026-10
 - slug: sr-rd-252-betreffen-streit
   type: streitstand
@@ -70,6 +72,8 @@ cards:
   quellen:
   - StGB, amtliche Fassung
   - Eigenformulierung Redaktion
+  - "BGH, Beschluss vom August 2015 - 3 StR 112/15"
+  - "BGH, Urteil vom 08.10.2014 - 5 StR 395/14"
   stand: 2026-10
 - slug: sr-rd-252-besitzerhaltung
   type: definition
@@ -186,6 +190,7 @@ cards:
   quellen:
   - StGB, amtliche Fassung
   - Eigenformulierung Redaktion
+  - "BGH, Beschluss vom 28.06.2005 - 4 StR 299/04 (BGHSt 50, 169)"
   stand: 2026-10
 - slug: sr-rd-316a-konkurrenzen
   type: definition

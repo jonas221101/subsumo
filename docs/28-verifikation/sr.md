@@ -40,6 +40,18 @@ Abkürzungen der Quellen: **lokal** = `content/normtexte/<abk>.json` (amtlicher 
 | StGB §§ 22 bis 24, 46a, 47, 49, 56, 56a | lokal stgb |
 | § 11 Abs. 2 SG, § 5 Abs. 1 WStG, § 36 BeamtStG (Handeln auf Befehl) | GiI sg/__11, wstrg/__5, beamtstg/__36 |
 | § 229, 230 BGB (Selbsthilfe), § 859, § 904 BGB | lokal bgb; GiI |
+| Runde 2: § 252 "auf frischer Tat betroffen" (enger örtlich-zeitlicher Zusammenhang, Nacheile ohne Zäsur); Vortat muss vollendet sein (Versuch genügt nicht) | BGH 3 StR 112/15 (08/2015) mit BGHSt 9, 255, 28, 224 https://gesetze.co/urteile/3_StR_112-15 ; BGH 5 StR 395/14 (08.10.2014); BGH 4 StR 103/01 mit BGHSt 21, 377 (Vortat vollendet) https://hrr-strafrecht.de/hrr/4/01/4-103-01.pdf |
+| Runde 2: § 316a, "besondere Verhältnisse des Straßenverkehrs" (Fahrzeug im Stand, Halt mit laufendem Motor, Fahrer außerhalb) | BGHSt 50, 169 (BGH 28.06.2005, 4 StR 299/04) https://servat.unibe.ch/dfr/bs050169.html |
+| Runde 2: §§ 239a/b im Zwei-Personen-Verhältnis restriktiv ausgelegt (Bemächtigungslage muss über das Nötigungsmittel hinaus eigenständige Bedeutung haben; Ausnutzungsabsicht) | BGHSt 40, 350 (BGH GS, 22.11.1994, GSSt 1/94) https://servat.unibe.ch/dfr/bs040350.html ; Fortführung BGH 5 StR 473/05 (08.03.2006) |
+| Runde 2: § 231 als objektive Bedingung der Strafbarkeit (kein Vorsatz/keine Fahrlässigkeit bzgl. der Folge) | BGH 4 StR 430/21 (20.01.2022), Leitsatz-Zusammenfassung https://www.hrr-strafrecht.de/hrr/4/21/4-430-21.pdf ; BGH 3 StR 233/14 (22.01.2015) |
+| Runde 2: Hemmschwelle, BGH 22.03.2012 - 4 StR 558/11 (BGHSt 57, 183), Leitsatz "Zur Hemmschwellentheorie bei Tötungsdelikten", erschöpft sich in Hinweis auf § 261 StPO | https://urteile-gesetze.de/rechtsprechung/4-str-558-11 ; https://gesetze.co/urteile/4_StR_558-11 (nennt 21.03.2012, übrige Quellen 22.03.2012) |
+| Runde 2: BGHSt 36, 1 = BGH 04.11.1988 - 1 StR 262/88 (Lederriemen), Gesamtschau/Hemmschwelle, so zitiert in 4 StR 558/11 Rn. 27 und 3 StR 364/10 | https://gesetze.co/urteile/4_StR_558-11 ; https://gesetze.co/urteile/3_StR_364-10 |
+| Runde 2: BGHSt 63, 88 = BGH 01.03.2018 - 4 StR 399/17 (Band/Seite) | https://www.hrr-strafrecht.de/4/17/4-399-17.php (Externe Fundstellen: BGHSt 63, 88; NJW 2018, 1621); zitiert als BGHSt 63, 88, 93 in BGH 4 StR 266/20 |
+| Runde 2: Radfahrer, BGHSt 34, 133 setzte 1,7 Promille (BGH 17.07.1986, 4 StR 543/85); BGH hat BGHSt 37, 89 nicht auf Radfahrer erstreckt | https://verkehrslexikon.de/Texte/AlkoholRadfahrerAbsolut.php (Sekundärquelle, Az. und Datum durch zweite Suche gestützt) |
+| Runde 2: E-Scooter 1,1 Promille in der obergerichtlichen Rspr. (BayObLG 205 StRR 216/20, KG 121 Ss 40/22, OLG Hamburg 9 Rev 2/22, OLG Hamm 1 ORs 70/24) | BGH 4 StR 439/22 (Beschluss April 2023) nennt diese Entscheidungen https://gesetze.co/urteile/4_StR_439-22 ; OLG Hamm https://nrwe.justiz.nrw.de/olgs/hamm/j2025/1_ORs_70_24_Urteil_20250108.html |
+| Runde 2: § 315b Inneneingriff (bedingter Schädigungsvorsatz, Pervertierung des Verkehrsvorgangs; Abgrenzung zu § 315c) | BGHSt 48, 233 (BGH 4 StR 228/02), bestätigt in BGH 4 StR 334/17 (24.10.2017) https://rewis.io/urteile/urteil/ajx-24-10-2017-4-str-33417/ |
+| Runde 2: § 252 StPO, Ausnahme für richterliche Vernehmung nach Belehrung; sonst umfassendes Verwertungsverbot | BGHSt 2, 99, 13, 1, 27, 231 nach BGH-Entscheidungen auf https://www.hrr-strafrecht.de/hrr/2/13/2-656-13-1.pdf |
+| Runde 2: § 271 StGB, Maßstab "volle Beweiskraft für und gegen jedermann" (Karte); Personalausweis als Beispiel | BGH 3 StR 205/18 (21.08.2018) https://www.hrr-strafrecht.de/hrr/3/18/3-205-18.pdf ; BayObLG 201 StRR 4/25 (17.03.2025) https://www.gesetze-bayern.de/Content/Rtf/Y-300-Z-BECKRS-B-2025-N-14360?all=False |
 
 ## 2. Korrigiert
 
@@ -76,27 +88,37 @@ Abkürzungen der Quellen: **lokal** = `content/normtexte/<abk>.json` (amtlicher 
 | § 46a Nr. 2 | "Schaden wiedergutgemacht" -> "Opfer ganz oder überwiegend entschädigt" | lokal stgb § 46a | sr-at-strafzumessung-kcang.yaml |
 | KCanG | Wohnsitzvoraussetzung fälschlich für § 3 Abs. 1; § 5 unvollständig; § 34 Schwellen (30/60 g, 3 Pflanzen) und § 36 (25 bis 30 / 50 bis 60 g) ergänzt; Art. 316p nur für vor 1.4.2024 verhängte Strafen | lokal kcang; GiI egstgb | sr-at-strafzumessung-kcang.yaml |
 | "SoldG" | "§ 11 Abs. 2 SoldG" -> § 11 Abs. 2 SG (Soldatengesetz) | GiI sg/__11 | sr-at-rechtfertigung-sonstige.yaml |
+| Runde 2: Ku'damm-Raser, 2. Revision | "BGH bestätigte die Verurteilung mit Urteil vom 18.06.2020 (4 StR 482/19)" -> bestätigt nur für Hamdi H. (rechtskräftig), gegen Marvin N. Urteil teilweise aufgehoben | https://www.lto.de/recht/nachrichten/n/bgh-4str48219-zweites-urteil-im-berliner-raser-fall-mord-revision | sr-bt-mord-ergaenzung.yaml |
+| Runde 2: Radfahrer 1,6 Promille | "heutige Rspr. legt 1,6 zugrunde" -> obergerichtliche Rspr.; BGH-Bestätigung nicht ersichtlich; BGHSt 34, 133 mit Datum/Az. | s. Tabelle 1 | sr-bt-strassenverkehr.yaml |
+| Runde 2: E-Scooter | "überwiegende obergerichtliche Rspr. 1,1" -> Obergerichte wenden 1,1 an (Az. ergänzt), BGH hat offengelassen (4 StR 439/22) | https://gesetze.co/urteile/4_StR_439-22 | sr-bt-strassenverkehr.yaml |
+| Runde 2: § 323c, Suizid | "gefestigte Linie der Rspr. besteht nicht" -> BGH 03.07.2019 (5 StR 132/18, 5 StR 393/18): auch freiverantwortlicher Suizid ist Unglücksfall, Hilfe gegen den Willen aber nicht erforderlich/zumutbar | https://gesetze.co/urteile/5_StR_393-18 ; https://www.lto.de/recht/nachrichten/n/bgh-5-str-132-18-393-18-aerzte-freigesprochen-hilfe-suizid-unterlassene-hilfeleistung-patientenwillen | sr-bt-widerstand-unterlassene-hilfe.yaml |
+| Runde 2: § 28 bei Aussagedelikten | "Zeugenstellung umstritten besonderes persönliches Merkmal" -> BGH 05.02.2024 (3 StR 470/23): "als Zeuge" in § 153 ist tatbezogen, § 28 Abs. 1 greift nicht | https://kripoz.de/2024/07/31/tatbestandsmerkmal-als-zeuge-in-%C2%A7-153-stgb-als-besonderes-persoenliches-merkmal/ (Az. durch https://hrr-strafrecht.de/hrr/3/23/3-470-23.pdf gestützt) | sr-bt-aussagedelikte.yaml |
 
 ## 3. Offen für menschliche Prüfung
 
 | Punkt | Grund |
 |---|---|
-| § 261: Totalkontamination/Bagatellgrenze, Streit zur Reichweite des Privilegs | reine Rspr./Lit.-Frage, keine Primärquelle online auffindbar |
-| § 252: "Betreffen auf frischer Tat" (Rspr. weit/eng), Versuch als Vortat; § 316a: BGH-Restriktion (ruhendes Fahrzeug, Ampel) | BGH-Entscheidungen nicht bestätigt abrufbar; Karteninhalt nicht geändert |
-| §§ 239a/b: stabile Bemächtigungslage, Zwei-Personen-Verhältnis (BGH-Restriktion), Konkurrenz zu § 239 | Rspr. nicht online bestätigt |
-| § 303: Luft aus Reifen (Erheblichkeit), Abgrenzung Abs. 1/2 | Einzelfall-Rspr., keine Quelle |
-| § 274 "gehört" (Beweisführungsrecht) und § 271 Beweiskraft (Personalausweis) | BGH-Fundstellen nicht verifiziert |
-| § 225 + § 28 (Nähebeziehung als besonderes persönliches Merkmal); § 231 (Beteiligung nach Erfolgseintritt, Konkurrenz zu §§ 211 ff.) | Rspr. nicht verifiziert |
-| § 28 bei Mordmerkmalen, gekreuzte Merkmale (BGHSt 23, 39 laut Sekundärquelle bei gleichartigen Merkmalen) | nur Sekundärquellen; Behandlung ungleichartiger Merkmale (Habgier/Verdeckung) ungeklärt |
-| Hemmschwelle: BGH 22.03.2012, 4 StR 558/11 und BGHSt 36, 1 | Aktenzeichen/Datum bzw. Identität von BGHSt 36, 1 nicht über Primärquelle bestätigt (servat führt die Entscheidung nicht) |
-| BGHSt 63, 88 Bandseite | Fundstelle "63, 88" nicht über Primärquelle bestätigt (Aktenzeichen und Datum gesichert) |
-| Radfahrer-Grenzwert 1,6 Promille (Herabsetzung des Zuschlags) und E-Scooter 1,1 Promille | nur Sekundärquellen; keine BGH-Primärquelle zur 1,6-Herabsetzung; E-Scooter nur OLG-Rspr. |
-| § 306a Abs. 1 Nr. 1: teleologische Reduktion, gemischt genutzte Gebäude; § 306c/Tötungsdelikte Konkurrenz; "erheblicher Schaden" bei § 306e | Rspr. nicht verifiziert |
-| § 315b Inneneingriff (Rspr.-Voraussetzungen) | BGH-Fundstellen nicht verifiziert |
-| § 28 bei Aussagedelikten (Zeugenstellung als besonderes persönliches Merkmal), § 154 als Qualifikation | Rspr./Lit. nicht verifiziert |
-| § 323c: Suizid-Rspr. (BGH 2019, BVerfG 2020 zu § 217) | nicht gezielt geprüft; Karteninhalt unverändert |
-| § 113 Abs. 3: Rechtmäßigkeit als Tatbestandsmerkmal oder objektive Bedingung der Strafbarkeit; strafrechtlicher Rechtmäßigkeitsbegriff | Lit./Rspr., keine Primärquelle |
-| § 123: Mitberechtigte (Prioritätsprinzip), täuschungsbedingtes Einverständnis | Lit./Rspr. nicht verifiziert |
-| § 127 StPO: tatsächliche Tat vs. dringender Tatverdacht (Zuordnung der Meinungen) | Rspr. (BGH) nicht bestätigt abrufbar; Karte ordnet Literatur zu |
-| § 252 StPO Richterprivileg (Rspr.) | Fundstelle nicht verifiziert |
-| Strafzumessung/Meistbegünstigung KCanG, Gesamtstrafenneubildung im Einzelnen | EGStGB-Wortlaut geprüft, Anwendungsrspr. nicht |
+| § 261: Totalkontamination/Bagatellgrenze, Streit zur Reichweite des Privilegs | weiter offen: reine Rspr./Lit.-Frage, in Runde 2 keine einschlägige BGH-Entscheidung gefunden |
+| §§ 239a/b: Konkurrenz zu § 239 | weiter offen: Konkurrenzaussage nicht gezielt belegt (Restriktion selbst bestätigt, s. Tabelle 1) |
+| § 303: Luft aus Reifen (Erheblichkeit), Abgrenzung Abs. 1/2 | weiter offen: nur Einzelfall-/Obergerichts-Rspr., keine Entscheidung auffindbar |
+| § 274 "gehört" (Beweisführungsrecht) | weiter offen: BGHSt 29, 192 (Aktenbeseitigung durch Eigentümer) als Fundstelle identifiziert, Entscheidungstext nicht abrufbar |
+| § 225 + § 28 (Nähebeziehung als besonderes persönliches Merkmal) | weiter offen: keine BGH-Entscheidung zu § 225 gefunden; BGH 2 StR 104/10 zu § 235 nur Parallele |
+| § 231: Beteiligung nach Erfolgseintritt (nach BGH 1 StR 469/99 zählt ein bereits tödlicher Erstangriff zur Schlägerei, wenn Beteiligungsbereitschaft besteht), Konkurrenz zu §§ 211 ff. | weiter offen: Konkurrenzaussage der Karte nicht an Entscheidung belegt |
+| § 28 bei Mordmerkmalen, gekreuzte Merkmale (BGHSt 23, 39: gleichartige Merkmale, keine Milderung nach § 28 Abs. 1) | weiter offen: BGHSt 23, 39 nur über Sekundärquellen zitiert, Text nicht abrufbar (servat führt den Band nicht mehr); Karteninhalt nicht geändert |
+| Radfahrer-Grenzwert 1,6 Promille: Primärquelle | weiter offen: OLG-Entscheidungen nur als Titel/Fundstelle bekannt (u. a. OLG Karlsruhe 28.07.1997 - 2 Ss 89/97); BGH hat 1,6 nicht selbst festgesetzt, Karte entsprechend präzisiert |
+| § 306a Abs. 1 Nr. 1: teleologische Reduktion, gemischt genutzte Gebäude; § 306c/Tötungsdelikte Konkurrenz; "erheblicher Schaden" bei § 306e | weiter offen: Anfragebeschluss BGH 4 StR 659/10 (15.02.2011, "teilweises Zerstören") und BGHSt 26, 121, 34, 115, 48, 14 nur über Sekundärquellen bekannt; Rspr. stellt auf baulich einheitliches Gebäude ab, Karte nicht geändert |
+| § 28 bei Aussagedelikten: § 154 als Qualifikation | weiter offen: Zeugenstellung bei § 153 geklärt (Tabelle 2), Einordnung § 154 nicht belegt |
+| § 113 Abs. 3: Rechtmäßigkeit als objektive Bedingung der Strafbarkeit; strafrechtlicher Rechtmäßigkeitsbegriff | weiter offen: BGHSt 4, 161 und 21, 334 nur über Vorlesungsskripte, Text nicht abrufbar |
+| § 123: Mitberechtigte (Prioritätsprinzip), täuschungsbedingtes Einverständnis | weiter offen: keine BGH-Entscheidung zu Mitinhabern gefunden; Mehrheitsmeinung nur über Lehrmaterial |
+| § 127 StPO: tatsächliche Tat vs. dringender Tatverdacht | weiter offen: nur OLG Celle 26.11.2014 (32 Ss 176/14, lässt die Frage offen), keine BGH-Entscheidung |
+| Strafzumessung/Meistbegünstigung KCanG, Gesamtstrafenneubildung im Einzelnen | weiter offen: BGH 1 StR 196/24, 2 StR 425/24, 2 StR 126/25 zu § 2 Abs. 3 StGB gefunden, keine Entscheidung zur Gesamtstrafenneubildung nach Art. 316p EGStGB |
+
+## Runde 2 (2026-10-16)
+
+Geprüft: alle 19 Zeilen der Tabelle 3 (teils in Teilaussagen aufgeteilt), per WebSearch/WebFetch, servat.unibe.ch, gesetze.co, hrr-strafrecht.de, nrwe.justiz.nrw.de. Servat führt viele Bände (u. a. BGHSt 36, 34, 37, 63) nicht mehr, rechtsprechung-im-internet.de und bundesgerichtshof.de lieferten keine Treffer; Entscheidungstexte stammen teils aus Spiegelungen (gesetze.co, urteile-gesetze.de, hrr-strafrecht.de).
+
+- Bestätigt: 12 Aussagen (Tabelle 1, Einträge "Runde 2"), darunter § 252/§ 316a, Zwei-Personen-Verhältnis, § 231 als objektive Bedingung, Hemmschwelle/BGHSt 36, 1, BGHSt 63, 88 Bandseite, § 315b Inneneingriff, § 252 StPO, § 271.
+- Korrigiert bzw. präzisiert: 5 (Ku'damm-Raser 2020, Radfahrer 1,6, E-Scooter mit offener BGH-Frage, § 323c Suizid, § 28 bei § 153).
+- Weiter offen: 15 Teilpunkte (Tabelle 3), jeweils mit Grund.
+
+Status, `normzitate_geprueft` und Slugs unverändert. Keine Freigabe. Datumsabweichungen zwischen Quellen: BGH 4 StR 558/11 (21./22.03.2012), 5 StR 393/18 (02./03.07.2019), 3 StR 112/15 (03./04.08.2015), 4 StR 439/22 (12./13.04.2023); Karten verwenden 22.03.2012 bzw. 03.07.2019 bzw. Monatsangaben.
