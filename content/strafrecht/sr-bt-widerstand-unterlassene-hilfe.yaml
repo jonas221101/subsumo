@@ -262,12 +262,16 @@ cards:
     Literatur) halten den freiverantwortlichen Suizid dagegen nicht für einen
     Unglücksfall, weil der Verzicht auf Hilfe dem Selbstbestimmungsrecht des
     Betroffenen entspricht (Art. 2 Abs. 1 GG) und die Pflicht zur Hilfe sonst
-    dem eigenen Willen widerspricht. Entscheidend ist die Freiverantwortlichkeit:
+    dem eigenen Willen widerspricht. Der BGH hat 2019 (Urteile vom 03.07.2019
+    - 5 StR 132/18 und 5 StR 393/18) klargestellt, dass auch der freiverantwortliche
+    Suizid ein Unglücksfall ist; Hilfe gegen den Willen des Suizidenten ist aber nicht
+    erforderlich bzw. nicht zumutbar, sodass eine Strafbarkeit nach § 323c
+    Abs. 1 StGB in diesen Fällen entfällt. Entscheidend ist die Freiverantwortlichkeit:
     Bei fehlender Freiverantwortlichkeit (Verzweiflungstat, psychische Erkrankung,
     Willensmangel) bleibt die Hilfspflicht nach allgemeiner Meinung bestehen. Die
-    neuere Diskussion stellt die Hilfspflicht bei erkennbar freiverantwortlichem
-    Suizid zunehmend in Frage; eine gefestigte Linie der Rechtsprechung besteht
-    insoweit nicht. In der Klausur sind die Freiverantwortlichkeit und
+    Hilfspflicht entfällt danach bei erkennbar freiverantwortlichem Suizid
+    nicht, weil schon kein Unglücksfall vorläge, sondern wegen fehlender
+    Erforderlichkeit und Zumutbarkeit der Hilfe. In der Klausur sind die Freiverantwortlichkeit und
     die erkennbaren Umstände sorgfältig zu subsumieren.
   norms:
   - § 323c Abs. 1 StGB
@@ -275,6 +279,7 @@ cards:
   quellen:
   - StGB, amtliche Fassung
   - Eigenformulierung Redaktion
+  - "BGH, Urteile vom 03.07.2019 - 5 StR 132/18 und 5 StR 393/18"
   stand: 2026-10
 - slug: sr-wh-323c-abs2
   type: norm

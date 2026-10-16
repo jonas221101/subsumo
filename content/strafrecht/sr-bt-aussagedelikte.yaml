@@ -180,11 +180,13 @@ cards:
     einen gutgläubigen Zeugen zu einem Falscheid oder einer falschen Versicherung
     an Eides statt verleitet, wird nach § 160 StGB bestraft; zur bloß uneidlichen
     Falschaussage verleitet, wird ebenfalls nach § 160 StGB bestraft (dort mit
-    geringerem Strafrahmen). Umstritten ist,
-    ob die Zeugenstellung ein besonderes persönliches Merkmal im Sinne des § 28
-    Abs. 1 StGB ist: Wird dies bejaht, wäre die Strafe des nichtzeugen Teilnehmers
-    nach § 49 Abs. 1 StGB zu mildern; andere sehen die Zeugenstellung als bloßen
-    Ausdruck der Eigenhändigkeit, sodass § 28 StGB nicht gilt. § 159 StGB
+    geringerem Strafrahmen). Ob die
+    Zeugenstellung ein besonderes persönliches Merkmal im Sinne des § 28
+    Abs. 1 StGB ist, war umstritten: Wird dies bejaht, wäre die Strafe des nichtzeugen
+    Teilnehmers nach § 49 Abs. 1 StGB zu mildern. Der BGH hat dies für das Merkmal
+    "als Zeuge" in § 153 StGB verneint (Beschluss vom 05.02.2024 - 3 StR 470/23): Es sei
+    ein tatbezogenes Merkmal, sodass § 28 Abs. 1 StGB nicht gilt und der Teilnehmer
+    nicht nach § 49 Abs. 1 StGB zu mildern ist. § 159 StGB
     ergänzt die Regeln: Der Versuch der Anstiftung zur falschen uneidlichen
     Aussage und zur falschen Versicherung an Eides statt ist entsprechend § 30 Abs. 1
     StGB strafbar, obwohl die Haupttaten Vergehen sind.
@@ -197,6 +199,7 @@ cards:
   quellen:
   - StGB, amtliche Fassung
   - Eigenformulierung Redaktion
+  - "BGH, Beschluss vom 05.02.2024 - 3 StR 470/23"
   stand: 2026-10
 - slug: sr-aus-160-163
   type: norm

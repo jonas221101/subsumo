@@ -79,6 +79,7 @@ cards:
   quellen:
   - StGB, amtliche Fassung
   - Eigenformulierung Redaktion
+  - "BGH, Urteil vom 20.02.2003 - 4 StR 228/02 (BGHSt 48, 233)"
   stand: 2026-10
 - slug: sr-sv-315c-fahrunsicherheit
   type: definition
@@ -110,12 +111,15 @@ cards:
     von 1,1 Promille (BGHSt 37, 89). Dieser Wert beruht auf wissenschaftlichen
     Erkenntnissen und enthält einen Sicherheitszuschlag; er ist eine
     unwiderlegliche Beweisregel, sodass es auf Ausfallerscheinungen nicht
-    ankommt. Für Radfahrer hat der BGH die absolute Fahrunsicherheit zunächst bei 1,7 Promille angesetzt (BGHSt 34, 133); in der heutigen Rechtsprechung wird nach Verringerung des Sicherheitszuschlags ein Wert von 1,6 Promille zugrunde gelegt. Relative Fahrunsicherheit kommt bei Kraftfahrern
+    ankommt. Für Radfahrer hat der BGH die absolute Fahrunsicherheit zunächst bei 1,7 Promille angesetzt (BGHSt 34, 133, Beschluss vom 17.07.1986 - 4 StR 543/85); die obergerichtliche Rechtsprechung legt heute überwiegend nach Verringerung des Sicherheitszuschlags 1,6 Promille zugrunde, eine ausdrückliche Bestätigung dieses Werts durch den BGH ist nicht ersichtlich. Relative Fahrunsicherheit kommt bei Kraftfahrern
     schon ab 0,3 Promille in Betracht, wenn zusätzlich alkoholbedingte Ausfallerscheinungen
     oder Fahrfehler festgestellt sind; auch bei Radfahrern ist eine relative Fahrunsicherheit unterhalb der absoluten Grenze möglich. Maßgeblich ist der
     Zeitpunkt der Fahrt, notfalls durch Rückrechnung; die Messmethode muss
-    zuverlässig sein. Bei Elektrokleinstfahrzeugen wird nach überwiegender
-    obergerichtlicher Rechtsprechung der Wert von 1,1 Promille angewendet.
+    zuverlässig sein. Bei Elektrokleinstfahrzeugen (E-Scootern) wenden die Obergerichte
+    den Wert von 1,1 Promille an (u. a. BayObLG, Beschluss vom 24.07.2020 - 205 StRR 216/20;
+    KG, Beschluss vom 31.05.2022 - 121 Ss 40/22; OLG Hamburg, Urteil vom 16.03.2022 - 9 Rev 2/22;
+    OLG Hamm, Urteil vom 08.01.2025 - 1 ORs 70/24). Der BGH hat die Frage ausdrücklich offengelassen
+    (Beschluss vom April 2023 - 4 StR 439/22).
   norms:
   - § 315c Abs. 1 Nr. 1a StGB
   - § 316 StGB
@@ -123,6 +127,7 @@ cards:
   - BGHSt 37, 89
   - BGHSt 34, 133
   - StGB, amtliche Fassung
+  - "BGH, Beschluss vom April 2023 - 4 StR 439/22 (E-Scooter, Frage offengelassen)"
   stand: 2026-10
 - slug: sr-sv-315c-nr2
   type: norm
