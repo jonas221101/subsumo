@@ -38,6 +38,12 @@ Basis-URLs: https://www.gesetze-bayern.de, https://www.landesrecht-bw.de, https:
 | BE lra: § 49 VerfGHG Bln (Verfassungsbeschwerde) | gesetze.berlin.de |
 | BB BbgPolG §§ 1, 3, 4, 5-7, 10, 16 (Titel), 17, 70; BbgOBG §§ 13-18, 38 | bravors |
 | BB BbgKVerf §§ 2, 28, 54 | bravors |
+| (Runde 2) BW AGVwGO § 4 (Normenkontrolle VGH auch gegen sonstige Rechtsvorschriften unter dem Landesgesetz), §§ 15 ff. (Vorverfahren Regel, Ausschluss nur § 15 AGVwGO BW) | landesrecht-bw.de AGVwGO (Fassung gültig ab 22.10.2008, Abruf 16.10.2026 über juris-REST) |
+| (Runde 2) HE HessAGVwGO § 15 (Normenkontrolle), § 16a + Anlage (Vorverfahren entfällt nur im Katalog; Bauaufsicht/allgemeine Gefahrenabwehr nicht darin), § 16 | www.rv.hessenrecht.hessen.de HessAGVwGO (Gesamtausgabe 12.02.2026-31.12.2027) |
+| (Runde 2) BB BbgVwGG § 4 Abs. 1 (Normenkontrolle OVG auch gegen sonstige Rechtsvorschriften), § 8 Abs. 2 (Behördenprinzip); BbgVwGG enthält keinen Ausschluss des Vorverfahrens (Fall bb-fall-bau-nachbarwiderspruch ok) | https://bravors.brandenburg.de/gesetze/bbgvwgg |
+| (Runde 2) BY Art. 4 BayAGVwGO (Normenkontrolle) | https://www.gesetze-bayern.de/Content/Document/BayAGVwGO/true |
+| (Runde 2) BE LOG BE §§ 2, 8, 13, 21-24 (Einheitsgemeinde, gesamtstädtische Bedeutung, Zuständigkeitskatalog per Rechtsverordnung, Bezirksaufsicht, Fachaufsicht) | gesetze.berlin.de LOG BE (gültig ab 01.01.2026) |
+| (Runde 2) BVerfGE 141, 220 (BKAG) zu by-por-drohende-gefahr: hinreichend konkretisierte Gefahr verlangt bestimmte Tatsachen, allgemeine Erfahrungssätze genügen nicht; Prognose "wenigstens seiner Art nach konkretisiertes und zeitlich absehbares Geschehen", Sonderalternative für terroristische Straftaten (Leitentscheidung im Volltext gelesen) | https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2016/04/rs20160420_1bvr096609.html |
 
 Rechtsprechungs-Fundstellen (nur Aktenzeichen/Datum über Webrecherche bestätigt, nicht der Inhalt): BVerfGE 141, 220 (BKAG, 1 BvR 966/09, 20.04.2016); BVerfGE 96, 27 (2 BvR 817/90, 30.04.1997); BVerwGE 52, 122 (IV C 22.75, 25.02.1977).
 
@@ -119,18 +125,22 @@ Rechtsprechungs-Fundstellen (nur Aktenzeichen/Datum über Webrecherche bestätig
 | BB BbgBO §§ 59-64 | "Genehmigungsfreistellung für Wohnbauvorhaben" existiert in BbgBO (Fassung 2016) nicht -> Bauanzeigeverfahren § 62 (Wohngebäude GK 1-2, Wunsch der Bauherrschaft, 1 Monat), vereinfachtes Verfahren § 63 nur Wohngebäude GK 1-3 im B-Plan (Prüfung: Festsetzungen + andere Vorschriften), sonst § 64; Prüfumfang korrigiert | bravors.brandenburg.de/gesetze/bbgbo_2016 | bb-bauordnungsrecht.yaml |
 | BB BbgBO § 67 | Abweichung "im Ermessen" -> "hat ... zuzulassen" (gebunden), Antrag in Textform Abs. 2, Nachbarbeteiligung § 70 II | BbgBO § 67, § 70 | bb-bauordnungsrecht.yaml |
 | BB BbgBO §§ 6 V, 79, 80, 81 | Abstandsflächen GE/GI 0,2 H, GK 1-2 3 m; Eingriffsnormen und Anpassung bestehender Anlagen konkretisiert; Platzhalter-norms ersetzt | BbgBO | bb-bauordnungsrecht.yaml |
+| (Runde 2) BY by-por-drohende-gefahr, BVerfG-Charakterisierung | "ein bloßer Gefahrenverdacht nicht genügt" -> "allgemeine Erfahrungssätze allein nicht genügen, bestimmte Tatsachen müssen die Prognose tragen; Alternative bei terroristischen Straftaten: individuelles Verhalten mit konkreter Wahrscheinlichkeit" | BVerfG 1 BvR 966/09, Rn. zu C IV 1 b (bundesverfassungsgericht.de) | by-polizei-ordnungsrecht.yaml |
+| (Runde 2) HE Normenkontrolle | "setzt eine landesrechtliche Bestimmung voraus" -> konkret § 15 HessAGVwGO; Vorverfahren: § 16a HessAGVwGO + Anlage, § 16 | rv.hessenrecht.hessen.de HessAGVwGO | he-kommunalrecht.yaml, he-polizei-ordnungsrecht.yaml |
+| (Runde 2) BW Normenkontrolle | "i. V. m. dem Landesrecht" -> § 4 AGVwGO BW | landesrecht-bw.de | bw-kommunalrecht.yaml |
+| (Runde 2) BB Normenkontrolle | "soweit das Landesrecht sie eröffnet, sonst Inzidentkontrolle" -> § 4 Abs. 1 BbgVwGG (OVG), daneben Inzidentkontrolle | bravors BbgVwGG | bb-kommunalrecht.yaml |
 
-## 3. Offen für menschliche Prüfung
+## 3. Offen für menschliche Prüfung (Stand Runde 2, 2026-10-16)
 
 | Punkt | Grund |
 |---|---|
-| Rechtsfolge von Formverstößen bei Verpflichtungserklärungen (BW § 54 GemO, NW § 64 GO, HE § 71 HGO, BY Art. 38 GO): schwebende Unwirksamkeit, § 177 BGB analog, Vertrauensschutz | Rechtsprechungsfrage; nur in BbgKVerf § 57 Abs. 5 ausdrücklich geregelt. Portal liefert keinen Beleg. BY-Karte neutral formuliert, BW/NW/HE Aussage unverändert |
-| Streitstände (Anscheinsgefahr/Kostenhaftung, Zweckveranlasser, Störerauswahl/Opfergrenze, Formelle Illegalität bei Nutzungsuntersagung/Beseitigung, Kommunalverfassungsstreit: Klagebefugnis, Beklagter) | reine Lehre/Rechtsprechung, nicht über Landesportale prüfbar |
-| BVerfG-Charakterisierung in by-por-drohende-gefahr ("Gefahrenverdacht genügt nicht") | nur Fundstelle und Az. bestätigt; Inhalt der Entscheidung nicht im Volltext geprüft |
-| Normenkontrolle § 47 Abs. 1 Nr. 2 VwGO "soweit Landesrecht" (BW, HE, BB, BY) | Landesausführungsgesetze (AGVwGO BW/HE/BB) nicht abgerufen; nur NW geprüft (§ 109a JustG NRW) |
-| Widerspruchsverfahren/Vorverfahren in BW, HE, BB (Fall bb-fall-bau-nachbarwiderspruch setzt Widerspruch voraus) | Ausführungsgesetze zur VwGO nicht abgerufen; BY (Art. 12 AGVwGO), NW (§ 110 JustG), BE (§ 42 LOG BE) bestätigt |
-| BE: Behördenzuordnung der Bauaufsicht (Bezirksamt/Senatsverwaltung) und Klage gegen das Land (§ 78 VwGO) | nicht aus BauO Bln/ASOG ableitbar; Berliner Zuständigkeitsrecht (LOG BE, Zuständigkeitskatalog) nicht vollständig geprüft; Karte neutral formuliert |
-| BE: Datumsstand VerfGHG Bln § 49 (Portalversion 1991) | Paragraph und Inhalt bestätigt, Gesamtausgabe nicht in jüngster Fassung abrufbar |
-| Prüfpunkt-Keywords in Fällen (z. B. 'AZG', 'öffentliches Bedürfnis', 'Kausalität') | absichtlich als Zusatz-Keywords belassen, damit alte Schreibweisen weiter treffen; Redaktion kann bereinigen |
-| BVerfGE 79, 127 (Rastede) und weitere Rechtsprechung ohne Fundstelle in bb-kom-selbstverwaltung | kein Normwortlaut; nicht über Portal prüfbar |
-| Hessen: StGHG § 43 / Art. 131 HV bestätigt; Hessisches AGVwGO (Vorverfahren, Normenkontrolle) nicht geprüft | siehe oben |
+| Rechtsfolge von Formverstößen bei Verpflichtungserklärungen (BW § 54 GemO, NW § 64 GO, HE § 71 HGO, BY Art. 38 GO) | Für RP bestätigt (OLG Zweibrücken 30.11.2023 - 4 U 152/22 zitiert ständige BGH-Rspr.: Form-/Vertretungsmangel -> §§ 177 ff. BGB, schwebend unwirksam, BGHZ 32, 375), diese BGH-Linie gilt über Art. 55 EGBGB länderübergreifend; für BW/NW/HE/BY aber keine landesspezifische Entscheidung im Volltext gefunden, BGH-Volltexte (vor 2010) nicht frei abrufbar. Für BY gibt es Hinweise (nur Sekundärmeldung), dass das BayObLG 2025 anders argumentiert - nicht geprüft |
+| Streitstände (Anscheinsgefahr/Kostenhaftung, Zweckveranlasser, Störerauswahl/Opfergrenze, formelle Illegalität, Kommunalverfassungsstreit) | reine Lehre, keine Primärquelle für "Streit" möglich; BVerfGE 102, 1 (Altlasten, Kostenlimit Zustandsstörer) im Volltext geprüft: Darstellung (Verkehrswert nach Sanierung als Anhaltspunkt, Ausnahme bei bewusst übernommenem Risiko) stimmt |
+| BE: Behördenzuordnung der Bauaufsicht (Bezirksamt/Senatsverwaltung), Klage gegen das Land (§ 78 VwGO) | Praxis belegt (VG Berlin 19 K 192.14, 15.07.2016: Baugenehmigung und Widerspruchsbescheid durch das Bezirksamt), gesetzliche Zuweisung aber im Allgemeinen Zuständigkeitskatalog (AZG-Katalog), der nach § 51 LOG BE übergangsweise fortgilt und im Portal nicht (mehr) abrufbar ist. Hinweis: § 51 LOG BE relativiert die Runde-1-Angabe, der AZG sei durch das LOG "ersetzt" (Katalog gilt bis zur Rechtsverordnung nach § 13 LOG weiter). Karte bleibt neutral |
+| BE: Datumsstand VerfGHG Bln § 49 | nicht erneut geprüft |
+| Prüfpunkt-Keywords in Fällen (z. B. 'AZG', 'öffentliches Bedürfnis', 'Kausalität') | absichtlich als Zusatz-Keywords belassen; Redaktion kann bereinigen. 'AZG' bleibt sachlich vertretbar (§ 51 LOG BE) |
+| BVerfGE 79, 127 (Rastede) in bb-kom-selbstverwaltung | Entscheidung vor 2010, kein amtlicher Volltext gefunden (bundesverfassungsgericht.de-Seite 404); nur Fundstelle/Datum sekundär |
+
+## Runde 2 (2026-10-16)
+
+Zahl (Tabelle 3 der Runde 1: 10 Zeilen, davon 3 Zeilen zusammengefasst bearbeitet): bestätigt 4 (Normenkontrolle BW/HE/BB/BY; Vorverfahren BW/HE/BB; BVerfG-BKAG-Inhalt; HE-AGVwGO), davon 4 Textstellen im Inhalt präzisiert (Tabelle 2: BY-BVerfG-Formulierung, HE, BW, BB), weiter offen 6 (Formfolgen BW/NW/HE/BY, Streitstände, BE-Bauaufsicht, BE VerfGHG-Datum, Keywords, Rastede). Zugang: juris-REST-Schnittstelle der Portale (Playwright-Sitzung) und Gesamtausgaben; zusätzlich bundesverfassungsgericht.de.

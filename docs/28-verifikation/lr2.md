@@ -23,6 +23,9 @@ Quelle: Wortlaut der Landesgesetze über gesetze.co (SSR-Seiten, Pfad `<LAND>/<G
 | BezVG: sieben Bezirke (§ 1), Organe (§§ 3, 34, 35), Bürgerbegehren (§ 32), Aufsicht/Evokation (§§ 42-45); Art. 4 HV Einheitsgemeinde/Bezirksämter | HH/BezVG, HH/Verf_HA/4 |
 | Beklagter bei Bezirksamtsakt = FHH (kein Behördenprinzip im VwGOAG HA erkennbar) | HH/VwGOAG_HA |
 | Normenkontrolle § 47 I Nr. 2 VwGO in NI vorgesehen (§ 75 NJG) | NI/NJG/75 |
+| (Runde 2, AMTLICH) NI: §§ 1 Abs. 3, 2 Nr. 1-3, 6, 7, 8, 11, 17, 18, 80 Abs. 1 NPOG; § 41 NKomVG (Wortlaut Abs. 1-6 vollständig verglichen), § 85 Abs. 1 NKomVG, § 75 NJG; NBauO §§ 5 (0,4 H, min. 3 m; GE/GI 0,2 H), 57, 59, 63, 64, 66, 70, 79 | https://voris.wolterskluwer-online.de (NI-VORIS, je § über /browse/document, Abruf 16.10.2026, SSR-Seiten) |
+| (Runde 2, AMTLICH) HH: § 3 Abs. 1-3, §§ 8, 9, 10, 12a, 12b, 13 SOG; HBauO §§ 6 Abs. 5 (0,4 H, min. 2,50 m; GE/GI 0,2 H), 58, 61-64, 67, 79, 80; BezVG § 42; VwBehG § 1 Abs. 4 (Evokation); Anordnung über Zuständigkeiten im Bauordnungswesen vom 03.02.2026 Nr. I (Bezirksämter sind zuständig) | https://www.landesrecht-hamburg.de (juris, Gesamtausgaben SOG 05.02.2025-31.03.2028, HBauO 26.09.2026-13.01.2027) |
+| (Runde 2, AMTLICH) NI NStGHG § 8 (Zuständigkeitskatalog ohne Individualverfassungsbeschwerde) | voris.wolterskluwer-online.de |
 
 ### 2. Korrigiert
 | Punkt | alt -> neu | Quelle | Datei |
@@ -47,16 +50,17 @@ Quelle: Wortlaut der Landesgesetze über gesetze.co (SSR-Seiten, Pfad `<LAND>/<G
 | Abstandsflächen HH | konkretisiert: 0,4 H, min. 2,50 m; Gewerbe 0,2 H (§ 6 IV, V) | HH/HBauO/6 | hh-bauordnungsrecht.yaml |
 | Verfahrensarten HH | -> §§ 61, 62, 63, 64 HBauO | HH/HBauO | hh-bauordnungsrecht.yaml |
 | BezVG-Aussagen HH | Bezirksversammlung wirkt nicht "mit" an Wahl, sondern schlägt dem Senat vor, Senat bestellt (§ 34); Bürgerbegehren-Quoren (§ 32); Aufsicht §§ 42-45 | HH/BezVG | hh-kommunalrecht.yaml |
+| (Runde 2) HH Generalklausel | Karte nannte nur "bestehende Gefahr" -> § 3 Abs. 1 SOG: nach pflichtgemäßem Ermessen, bevorstehende Gefahren abwehren oder Störungen beseitigen | https://www.landesrecht-hamburg.de SOG § 3 | hh-polizei-ordnungsrecht.yaml |
+| (Runde 2) NI Fall Mitwirkungsverbot | "fehlerhaft, wenn die Mitwirkung ursächlich sein konnte" -> § 41 Abs. 6 S. 1 NKomVG: unwirksam, wenn die Mitwirkung für das Abstimmungsergebnis entscheidend war | voris NKomVG § 41 | ni-kommunalrecht.yaml (ni-fall-kr-mitwirkungsverbot) |
 
 ### 3. Offen für menschliche Prüfung
+
 | Punkt | Grund |
 |---|---|
-| Amtlichkeit/Aktualität der Textquelle | gesetze.co ist kein amtliches Portal; amtliche Portale nicht maschinenlesbar |
-| HH: Bezirksämter als Bauaufsichtsbehörden | HBauO § 58 sagt nur "Aufgabe des Staates"; Zuständigkeitsanordnung nicht geprüft |
-| HH: Evokationsrecht Senat im Detail (Gesetz über Verwaltungsbehörden § 1 IV) | nicht in BezVG-Text, Gesetz nicht abgerufen |
-| NI: § 85 I NKomVG Detailzuweisung HVB | nur Kerninhalt geprüft |
-| Karte ni-kr-rastede (BVerfGE 79, 127) | Rechtsprechung, nicht Gegenstand dieser Landesrechtsprüfung |
-| Mehrere Kartensätze in examen/bundeslaender/ni.yaml, hh.yaml (SOG HH § 12b-Zitate) | außerhalb des Auftrags (nur content/landesrecht), ggf. mitzuziehen |
+| Karte ni-kr-rastede (BVerfGE 79, 127) | Rechtsprechung vor 2010, kein amtlicher Volltext gefunden; nicht Gegenstand der Normprüfung |
+| Mehrere Kartensätze in examen/bundeslaender/ni.yaml, hh.yaml | Runde 2: Generalklausel-Zitate (§ 11 NPOG, § 3 Abs. 1 SOG HH) und Verfassungsbeschwerde-Angaben gegen amtlichen Text stimmig; keine weitere Auffälligkeit |
+| HH: Mitwirkungsverbot | in HH keine Gemeindeordnung (Einheitsgemeinde); im Inhalt keine Karte dazu, daher nicht geprüft |
+| Hinweis Aktualität | NI-VORIS: NPOG aktuelle Fassung ab 01.10.2022; sonstige Stände Gesamtausgaben siehe Quelle |
 
 ## HB und SH
 
@@ -74,6 +78,8 @@ Quelle (alle Zeilen): gesetze.co (amtlicher Wortlaut der Landesgesetze, per curl
 | HB: Keine Individualverfassungsbeschwerde zum Staatsgerichtshof (Art. 139-142 LV, §§ 10, 24, 28, 30-32 StGHG) | gesetze.co/HB/LV/139-142, HB/StGHG/10-32 |
 | HB: Art. 143-148 LV (zwei Gemeinden, Stadtbürgerschaft + Senat), VerfBrhv §§ 5, 46, 50 (Stadtverordnetenversammlung, Magistrat, OB), Ortsgesetz Beiräte (OBG) | gesetze.co/HB/LV/143-148, HB/VerfBrhv, HB/OBG |
 | HB: BremLBO § 6 Abstandsflächen 0,4 H, mind. 3 m; § 57 untere Bauaufsicht = Stadtgemeinden; § 62, § 79 | gesetze.co/HB/BremBO/<Nr> |
+| (Runde 2, AMTLICH) SH: §§ 162 Abs. 1, 2, 174, 201, 204, 218, 219, 220 LVwG; § 22 GO (Abs. 1-6 vollständig verglichen), § 32 Abs. 3 GO | https://www.gesetze-rechtsprechung.sh.juris.de (juris, Gesamtausgaben LVwG, GO 28.02.2003, LBO 05.07.2024, Abruf 16.10.2026) |
+| (Runde 2) SH Landesverfassungsgericht: kommunale Verfassungsbeschwerde nur gegen Landesgesetze (§ 3 Nr. 4, § 48 LVerfGG), keine Individualverfassungsbeschwerde | LVerfGG SH, Verf SH 2014 |
 
 ### Korrigiert
 | Punkt | alt -> neu | Quelle | Datei |
@@ -94,16 +100,15 @@ Quelle (alle Zeilen): gesetze.co (amtlicher Wortlaut der Landesgesetze, per curl
 | SH Kommunalaufsicht | Aufsichtsmittel "Aufhebung, Beauftragter" (§ 126 GO aufgehoben) -> §§ 123-125 GO; Aufsichtsbehörde nach § 121 GO (Landrat bis 20.000 EW, sonst Innenministerium) | gesetze.co/SH/GO/121-126 | sh-kommunalrecht.yaml |
 | SH Abstandsflächen | Zwecke Brandschutz/Besonnung/Wohnfrieden -> § 6 Abs. 1 Wortlaut; Abweichung § 67 | gesetze.co/SH/LBO/6, 67 | sh-bauordnungsrecht.yaml |
 | SH Abweichung | "Ermessen, auf null reduziert" -> "soll" zulassen (§ 67 Abs. 1 LBO SH, intendiertes Ermessen) | gesetze.co/SH/LBO/67 | sh-bauordnungsrecht.yaml |
+| (Runde 2) SH sh-kr-mitwirkungsverbot | "Verstoß macht den Beschluss fehlerhaft, wenn die Mitwirkung für das Ergebnis ursächlich sein konnte" (Mischformel aus anderem Landesrecht) -> § 22 Abs. 5 GO SH: Verstoß kann nicht mehr geltend gemacht werden, wenn Mitwirkung für das Abstimmungsergebnis nicht entscheidend war oder nach einem Jahr (Ausnahmen Widerspruch/Beanstandung/Rechtsbehelf) | gesetze-rechtsprechung.sh.juris.de GO § 22 | sh-kommunalrecht.yaml |
 
 ### Offen für menschliche Prüfung
+
 | Punkt | Grund |
 |---|---|
-| Abkürzung BremLBO vs. BremBO | gesetze.co führt "BremBO"; Kürzel in den Karten (BremLBO) nicht gegen amtliche Ausfertigung verifiziert |
-| BremPolG-Fassung | Portaltext enthält Stand 2026 (Verweise "am 16. Januar 2026 geltende Fassung"); Absatzzählungen gegenüber älteren Kommentaren prüfen |
-| hb-kr-beiraete "Stadtbezirke und Ortsteile" | OBG nennt Stadt- und Ortsteile; Stadtbezirke nicht verifiziert |
-| Bremen Grundrechtsschutz auf Landesebene | keine Verfassungsbeschwerde gefunden (Art. 140, StGHG §§ 10, 24-32); ob Landesgrundrechte anderweitig vor dem StGH geltend gemacht werden können, ohne Rspr.-Recherche nicht belegt |
-| sh-fall-bo-bestandsschutz | Prüfpunkt 4/5 Treffer ("Eingriffsbefugnis der LBO SH"), Fall nicht geändert; §§ 79, 80 LBO SH könnten als Norm genannt werden |
-| Rechtsprechungsangaben | Streitstände (Zweckveranlasser, Anscheinsgefahr, Kostenbescheid) nicht gegen Rspr. geprüft (Scope: Landesnormen) |
+| HB: gesamter Normtext (BremPolG, BremOBG?, BremLBO/BremBO, Brem GO/OBG, Verfassungsfragen) | transparenz.bremen.de antwortet auch in Runde 2 mit HTTP 403 (curl, Headless-Browser und WebFetch); kein anderer amtlicher Abruf gefunden. Die Punkte zu BremLBO/BremBO-Kürzel, BremPolG-Fassung (Stand 2026), "Stadtbezirke und Ortsteile" und Landesgrundrechtsschutz bleiben daher offen. Vorhandene Karten zitieren § 10 Abs. 1 BremPolG als Generalklausel - gegen amtliche Quelle nicht prüfbar |
+| sh-fall-bo-bestandsschutz | Prüfpunkt-Treffer ("Eingriffsbefugnis der LBO SH"); Fall nicht geändert. Redaktionelle Entscheidung, ob §§ 79, 80 LBO SH genannt werden |
+| Rechtsprechungsangaben (Zweckveranlasser, Anscheinsgefahr, Kostenbescheid) | Streitstände, nicht über Portale prüfbar |
 
 ## MV und SN
 
@@ -125,6 +130,9 @@ Abrufweg: Landesportale (landesrecht-mv.de, revosax.sachsen.de) liefern nur Java
 | Art. 81 Abs. 1 Nr. 4 SächsVerf (Individualverfassungsbeschwerde) | https://gesetze.co/SN/SächsVerf/81 |
 | SächsVwVfZG ist Verweisungsgesetz (§ 1) | https://gesetze.co/SN/SächsVwVfZG/1 |
 | SächsVwVG als Vollstreckungsgesetz (§§ 19-25) | https://gesetze.co/SN/SächsVwVG/19 |
+| (Runde 2, AMTLICH) MV: §§ 12, 13, 52 Abs. 1, 52a, 55, 69, 70, 71, 72 SOG M-V; § 24 KV M-V (Abs. 1-5 vollständig verglichen) | https://www.landesrecht-mv.de (juris, Gesamtausgabe SOG gültig 23.07.-31.10.2026!, KV 01.09.2026-30.06.2027, Abruf 16.10.2026) |
+| (Runde 2) MV: KV M-V § 24 Abs. 4 enthält keine Kausalitätsklausel (Wortlaut amtlich bestätigt); VG Greifswald 2 A 1206/14 (09.12.2014) behandelt Beschluss als "schwebend unwirksam", Jahresfrist Abs. 5 | landesrecht-mv.de (NJRE001203874) |
+| (Runde 2, AMTLICH) SN: §§ 12, 14, 15, 17 SächsPBG, §§ 6, 7, 8 Abs. 2, 9, 12 SächsPVDG; § 20 SächsGemO (Abs. 1-5, Rechtswidrigkeit ohne Kausalitätsklausel, Jahresfrist) | https://revosax.sachsen.de/vorschrift_gesamt/18193/49879.html (SächsPVDG), /18194/50065.html (SächsPBG, Stand 01.07.2026), /2754/48410.html (SächsGemO, Stand 10.07.2025) |
 
 ### 2. Korrigiert
 | Punkt | alt -> neu | Quelle | Datei |
@@ -157,20 +165,17 @@ Abrufweg: Landesportale (landesrecht-mv.de, revosax.sachsen.de) liefern nur Java
 | SN Genehmigungsfreistellung "für bestimmte Wohnbauvorhaben, Anzeige" | § 62 SächsBO: allgemein bauliche Anlagen (ausgenommen Sonderbauten, UVP u. a.) im B-Plan-Bereich, Unterlagen vor Baubeginn, Gemeinde kann Genehmigungsverfahren verlangen | https://gesetze.co/SN/SächsBO/62 | sn-bauordnungsrecht.yaml |
 | SN Bauordnung Platzhalter-norms | §§ 59, 61-64, 72 Abs. 1, 75, 79, 80, 67 Abs. 1 SächsBO; Abweichung "soll" | https://gesetze.co/SN/SächsBO/80 (79, 67, 72) | sn-bauordnungsrecht.yaml |
 | SN Verfassungsbeschwerde | § 27 SächsVerfGHG ergänzt | https://gesetze.co/SN/SächsVerfGHG/27 | sn-landesrecht-allgemein.yaml |
+| (Runde 2) MV Aufenthaltsverbot | allgemeine Aussage "längerfristiges Aufenthaltsverbot für ein bestimmtes Gebiet" -> § 52a SOG M-V (Aufenthalts- und Betretungsverbot: Tatsachen müssen Straftat im örtlichen Bereich annehmen lassen; Anordnung durch Behördenleitung; höchstens drei Monate, Verlängerung nur gerichtlich); § 52 Abs. 2 = Wohnungsverweisung | landesrecht-mv.de SOG § 52, § 52a | mv-polizei-ordnungsrecht.yaml |
 
 ### 3. Offen für menschliche Prüfung
+
 | Punkt | Grund |
 |---|---|
-| Amtlichkeit des Wortlauts | Quelle gesetze.co ist kein amtliches Portal; landesrecht-mv.de und revosax.sachsen.de nicht maschinenlesbar (SPA-Shell) |
-| MV: Kausalität bei Mitwirkungsverbot (§ 24 Abs. 4 KV M-V) | Wortlaut ohne Kausalitätsklausel; ob die Rechtsprechung dennoch Ergebnisrelevanz verlangt, ist hier nicht belegt (Entscheidung OVG Greifswald prüfen) |
-| SN: dasselbe zu § 20 Abs. 5 SächsGemO | wie oben (Rspr. nicht verifiziert) |
-| MV: Aufenthaltsverbot im SOG M-V | In § 52 Abs. 1 nicht enthalten; ob an anderer Stelle (Abs. 2 ist Wohnungsverweis) geregelt, nicht geklärt; Kartenaussage nur allgemein gehalten |
-| MV: "Sondernutzungsrecht" im Fall mv-fall-por-zweckveranlasser | Im Sachverhalt nicht (mehr) vorhanden, keine Änderung nötig; Rechtsfrage Werbung auf Fahrbahn (Straßenrecht) nicht geprüft |
-| MV/SN: Rechtsprechungsangaben (Rastede, Wesentlichkeit, Zweckveranlasser, Zustandsstörer-Kostenlimit Art. 14 GG) | nicht Teil der Landesnormprüfung, nicht gegen Primärquelle belegt |
-| SN: Anpassungsverlangen an Bestandsbauten bei Gefahr | In den geprüften SächsBO-/LBauO-Paragraphen nicht gefunden; Aussage unverändert, Normstelle offen |
-| MV/SN: Bestandsschutz-Begriffe (aktiver Bestandsschutz) | Rechtsprechung, nicht geprüft |
-| MV: § 6 Abs. 5 LBauO M-V Gebäudeklassen-Tiefen (3/4/5 m) vs. 0,4 H | Text gesichtet; Verhältnis der Regeln und Nachbarschutzwirkung nicht abschließend bewertet |
-| MV/SN: Bauordnungs-Prüfprogramm vereinfachtes Verfahren (Stellplätze, Gestaltung) | Text nur kursorisch gesichtet |
+| MV: SOG M-V Gesamtausgabe nur bis 31.10.2026 gültig | Das Portal weist für alle Paragraphen "bis 31.10.2026" aus (Änderungsgesetz vom 09.07.2026); die ab 01.11.2026 geltende Fassung ist nicht abrufbar. Nummern (§§ 13, 52, 52a, 55, 69-72) vor 01.11.2026 neu prüfen |
+| MV: Kausalität bei Mitwirkungsverbot (§ 24 Abs. 4 KV M-V) und SN § 20 Abs. 5 SächsGemO | Normtext ohne Kausalitätsklausel amtlich bestätigt; höchstrichterliche/OVG-Rspr. zur Ergebnisrelevanz im Portal nicht gefunden (nur VG Greifswald 2 A 1206/14 zum Klagerecht) |
+| MV: "Sondernutzungsrecht" mv-fall-por-zweckveranlasser (Straßenrecht) | nicht Landesnormprüfung |
+| MV/SN: Rechtsprechungsangaben (Rastede, Wesentlichkeit, Zweckveranlasser, Zustandsstörer-Kostenlimit) | BVerfGE 102, 1 inhaltlich bestätigt (siehe ST/TH); übrige Streitstände nicht über Primärquelle prüfbar |
+| SN: Anpassungsverlangen an Bestandsbauten bei Gefahr; MV/SN: aktiver Bestandsschutz, § 6 Abs. 5 LBauO M-V (3/4/5 m vs. 0,4 H), Prüfprogramm vereinfachtes Verfahren | Bauordnungen nicht erneut durchgearbeitet (Schwerpunkt Runde 2 war Generalklausel/Störer/Mitwirkungsverbot) |
 
 ## ST und TH
 
@@ -192,6 +197,10 @@ Portale (landesrecht.sachsen-anhalt.de, landesrecht.thueringen.de) liefern nur J
 | Ausschlusskatalog Bürgerbegehren inkl. Haushaltssatzung (§ 26 Abs. 2 S. 2 Nr. 3 KVG LSA) – Fall st-fall-kom-buergerbegehren-haushalt Ergebnis bestätigt | ST/KVG/26 |
 | Verbandsgemeinde ST (§§ 89 ff. KVG LSA), Verwaltungsgemeinschaft TH (§§ 46 ff. ThürKO) | ST/KVG/89, 90; TH/ThürKO/46-48, 51 |
 | § 47 Abs. 1 Nr. 2 VwGO: Normenkontrolle in ST und TH vom Landesrecht eröffnet | ST/AG_VwGO/10; TH/ThürAGVwGO/4 |
+| (Runde 2, AMTLICH) ST: §§ 3 Nr. 3, 7, 8, 10, 13, 20, 36 Abs. 1, 2 (Aufenthaltsverbot max. 12 Monate), 37, 69, 70, 94 SOG LSA; § 33 KVG LSA (Abs. 1-5 vollständig verglichen); Art. 75 Nr. 6, 7 Verf LSA | https://www.landesrecht.sachsen-anhalt.de (juris, Abruf 16.10.2026) |
+| (Runde 2, AMTLICH) TH: §§ 7, 8, 10, 12 Abs. 1, 14, 18, 19, 68 ThürPAG; §§ 5, 10, 11, 13, 17, 52 ThürOBG; § 38 ThürKO (Abs. 1-4); Art. 80 Abs. 1 Nr. 1 ThürVerf | https://landesrecht.thueringen.de (juris, Abruf 16.10.2026) |
+| (Runde 2) TH Entschädigung Nichtstörer: Ausgleich nach §§ 68-74 ThürPAG, für Ordnungsbehörden über § 52 ThürOBG entsprechend anwendbar | landesrecht.thueringen.de |
+| (Runde 2) BVerfGE 102, 1 (Altlasten): Kostenhaftung des Zustandsstörers nach Art. 14 GG; Verkehrswert nach Sanierung als Anhaltspunkt; zumutbar auch darüber bei bewusst übernommenem Risiko | https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2000/02/rs20000216_1bvr024291.html |
 
 ### 2. Korrigiert
 | Punkt | alt → neu | Quelle | Datei |
@@ -218,17 +227,16 @@ Portale (landesrecht.sachsen-anhalt.de, landesrecht.thueringen.de) liefern nur J
 | Platzhalter-norms | alle "(Paragraphen hier nicht angegeben)" durch geprüfte Paragraphen ersetzt | – | alle st-/th-Dateien |
 | ThürVwVfG | "Vollgesetz" → Verweisungsgesetz (§ 1 Abs. 1 ThürVwVfG) | TH/ThürVwVfG/1 | th-landesrecht-allgemein.yaml |
 | Landes-VB ST | "Ja - Art. 75 Nr. 6" → nur gegen Landesgesetze unmittelbar (Nr. 6), kommunale VB Nr. 7; keine Urteils-/VA-Verfassungsbeschwerde | ST/Verf/75 | st-landesrecht-allgemein.yaml |
+| (Runde 2) ST examen/bundeslaender/st.yaml | "Ja - Art. 75 Nr. 6 Verf LSA" -> "Eingeschränkt - nur gegen Landesgesetze (Art. 75 Nr. 6 Verf LSA)" | Verf LSA Art. 75 Nr. 6 | content/examen/bundeslaender/st.yaml |
 
 ### 3. Offen für menschliche Prüfung
+
 | Punkt | Grund |
 |---|---|
-| Wortlaut nur über gesetze.co | Landesportale ST/TH nicht maschinenlesbar (SPA-Shell); kein amtlicher Abdruck, Stand ("täglich aktualisiert") nicht verifizierbar |
-| Rechtsprechungsaussagen (Zweckveranlasser, doppelfunktionale Maßnahmen, Anscheinsstörer-Kosten, Nachbarschutz Abstandsflächen, aktiver Bestandsschutz, formelle Nachbarrechte) | keine landesspezifische Norm; Rspr. nicht mit Primärquelle belegt |
-| ThürPAG §§ 7, 8, 10; SOG LSA §§ 7, 8, 10 als Norm bestätigt, aber ob Zustandsstörer-Kostenbegrenzung (BVerfGE 102, 1) inhaltlich passend zitiert | Fundstelle nicht online geprüft |
-| Nachbarschutz § 6 BauO LSA / ThürBO (Schutznormcharakter) | Rspr. der OVG nicht verifiziert |
-| "Entschädigungsanspruch" Nichtstörer | Landesnormen: §§ 69 ff. SOG LSA (Schadensausgleich); ThürPAG/OBG-Entschädigungsvorschriften nicht gelesen |
-| Fall th-fall-por-stoererauswahl-oelspur: Prüfpunkt "Konkrete gegenwärtige Gefahr" wird vom Muster nicht getroffen (vorbestehend, check_faelle "OK") | Redaktioneller Mangel, nicht Quellenfrage |
-| § 5 Abs. 1 PartG (Fall th-fall-kom-aufsicht-stadthalle), Rastede-Beschluss | Bundesrecht/Rspr. außerhalb Landesrecht, nicht geprüft |
+| Nachbarschutz § 6 BauO LSA / ThürBO (Schutznormcharakter) | OVG-Rspr. in Runde 2 nicht gesucht; Normtexte der Bauordnungen (Gesamtausgaben BauO LSA bis 19.01.2027, ThürBO bis 19.01.2027) nicht erneut verglichen |
+| Rechtsprechungsaussagen (Zweckveranlasser, doppelfunktionale Maßnahmen, Anscheinsstörer-Kosten, aktiver Bestandsschutz, formelle Nachbarrechte) | Streitstände, keine Primärquelle für "Streit" |
+| Fall th-fall-por-stoererauswahl-oelspur: Prüfpunkt "Konkrete gegenwärtige Gefahr" | redaktioneller Mangel, nicht Quellenfrage |
+| § 5 Abs. 1 PartG (th-fall-kom-aufsicht-stadthalle), Rastede-Beschluss | Bundesrecht/Rspr. außerhalb Landesrecht |
 
 ## RP und SL
 
@@ -248,6 +256,10 @@ Quelle: gesetze.co (serverseitig gerenderter Volltext der Landesgesetze, Abruf 2
 | Normenkontrolle nach § 47 I Nr. 2 VwGO eröffnet: § 18 AGVwGO SL, § 4 AGVwGO RP | https://gesetze.co/SL/AGVwGO/18 ; /RP/AGVwGO/4 |
 | Fall rp-fall-kom-ortsgemeinde-abwasser (Unzuständigkeit der Ortsgemeinde) | s. § 67 GemO, § 24 Abs. 6 GemO (Zuständigkeitsfehler nicht heilbar) |
 | Fall sl-fall-por-schutzgewahrsam, rp-fall-por-hilferufe-wohnung (§ 20 Abs. 1 Nr. 3 POG), rp-fall-bau-bestandsschutz-altbau | https://gesetze.co/SL/SPolG/13 ; /RP/POG/20 ; /RP/LBauO/81, /85 |
+| (Runde 2, AMTLICH) RP: §§ 4, 5, 6, 7, 9 Abs. 1, 10, 13, 14, 15, 87 Abs. 1 POG; § 22 GemO (Abs. 1-6 vollständig verglichen), § 49 GemO; § 4 Abs. 1 AGVwGO (Normenkontrolle OVG); Art. 130a Verf RP | https://landesrecht.rlp.de (juris, Abruf 16.10.2026) |
+| (Runde 2, AMTLICH) SL: §§ 4, 5, 6, 8 Abs. 1, 12 (Abs. 3 Aufenthaltsverbot), 13, 44 Abs. 2, 45, 46 Abs. 1 S. 2, 49 Abs. 7, 68, 90 SPolG; § 62 KSVG; Polizeikostenverordnung (PolKostV SL 2006); AGVwGO SL | https://recht.saarland.de (juris, Abruf 16.10.2026) |
+| (Runde 2) Formverstoß § 49 GemO RP / § 62 KSVG SL: schwebende Unwirksamkeit nach §§ 177 ff. BGB (BGH-Linie, BGHZ 32, 375, Art. 55 EGBGB), Genehmigung entsprechend § 415 BGB möglich | OLG Zweibrücken, Urteil vom 30.11.2023 - 4 U 152/22 (juris, landesrecht.rlp.de, NJRE001596770) |
+| (Runde 2) SL Kostentragung SPolG: Rechtsgrundlage §§ 46 Abs. 1 S. 2, 90 Abs. 2 SPolG i. V. m. PolKostV; Kostenschuldner nach § 12 Abs. 1 Nr. 1 SaarlGebG, wem die Amtshandlung zuzurechnen ist (hier Zustandsstörer § 5 SPolG); Verwaltungszwang ohne vorausgehenden VA nur bei gegenwärtiger Gefahr (§ 44 Abs. 2) | VG des Saarlandes, Urteil vom 19.04.2017 - 6 K 939/16 (recht.saarland.de, NJRE001313466); SPolG |
 
 ### 2. Korrigiert
 | Punkt | alt -> neu | Quelle | Datei |
@@ -279,15 +291,23 @@ Quelle: gesetze.co (serverseitig gerenderter Volltext der Landesgesetze, Abruf 2
 | LBauO RP: Verfahren | Freistellung pauschal -> §§ 61, 62, 66, 67 (Wohngebäude GK 1-3, Gemeinde kann Verfahren verlangen); Abs. 6: 0,4 H, GE/GI 0,25 H | /RP/LBauO/61-67, 8 | rp-bauordnungsrecht |
 | LBauO RP: Eingriff/Bestandsschutz/Abweichung | §§ 59, 69, 80, 81, 85 ergänzt (nachträgliche Anforderungen nur bei erheblicher Gefahr) | /RP/LBauO/59, 69, 80, 81, 85 | rp-bauordnungsrecht |
 | Platzhalter-norms ("Paragraphen hier nicht angegeben") | in RP/SL durch konkrete Normen ersetzt | s. o. | alle 8 Dateien |
+| (Runde 2) SL sl-por-kosten | "Ersatzvornahme § 46 Abs. 1 S. 2" allein -> zusätzlich § 49 Abs. 7, § 90 SPolG, PolKostV, § 12 Abs. 1 Nr. 1 SaarlGebG, Hinweis: SPolG kennt keine eigene "unmittelbare Ausführung"; § 44 Abs. 2 | SPolG; VG Saarland 6 K 939/16 | sl-polizei-ordnungsrecht.yaml |
 (Hinweis: Dateien wurden per YAML-Dump neu geschrieben, daher große Diffs bei Formatierung.)
 
 ### 3. Offen für menschliche Prüfung
+
 | Punkt | Grund |
 |---|---|
-| gesetze.co ist kein amtliches Portal | Wortlaut stimmt mit Fassungshinweisen überein, Aktualität (Stand Abruf) nicht gegen amtliches Portal gegengelesen; recht.saarland.de/landesrecht.rlp.de nicht per curl lesbar |
-| Haftung Kosten Sofortvollzug SL (Rechtsgrundlage Kostenbescheid unmittelbare Ausführung ohne Grundverfügung) | SPolG enthält kein § 6 POG entsprechendes Kostenerstattungsinstitut (nur § 46 Ersatzvornahme); Kostentragung im Sofortvollzug nicht eindeutig im Text belegt |
-| Formverstoß § 62 KSVG / § 49 GemO: Unwirksamkeit vs. schwebende Unwirksamkeit, kein Rechtsschein | Rechtsprechungsaussage (nicht Normtext), keine Quelle abgerufen |
-| rp/sl: Schemata und Fälle nur auf Norm-Ebene gegengelesen | Rechtsprechungs- und Streitstandsaussagen (Anscheinsstörer, Zweckveranlasser, doppelfunktional, BVerfGE 102, 1) nicht gegen Primärquelle geprüft |
-| RP-Fall rp-fall-kom-ortsgemeinde-abwasser: Anschlussbescheid durch Ortsgemeinde | Zuständigkeit der Verbandsgemeinde bestätigt; spezialgesetzliche Satzungsbefugnis (LWG) nicht geprüft |
-| Fall sl-fall-kom-verpflichtungserklärung / rp-fall-bau-bestandsschutz-altbau | Prüfpunkt-Keyword nicht getroffen (schon vor Änderung; check_faelle OK) |
+| Schwebende Unwirksamkeit bei Formverstoß § 49 GemO RP / § 62 KSVG: Ausschluss von Rechtsschein/Treu und Glauben | schwebende Unwirksamkeit bestätigt (s. Tabelle 1). Der Ausschluss des Rechtsscheinschutzes wird vom OLG Zweibrücken nur über BGH-Nachweise (BGHZ 92, 164, 173 f.; BGHZ 97, 224; NJW 1994, 1528) getragen, deren Volltexte (vor 2010) nicht frei abrufbar waren; für SL keine landesspezifische Entscheidung gefunden |
+| rp/sl: Streitstände (Anscheinsstörer, Zweckveranlasser, doppelfunktional) | Lehrmeinungen, keine Primärquelle für "Streit"; BVerfGE 102, 1 inhaltlich bestätigt |
+| RP-Fall rp-fall-kom-ortsgemeinde-abwasser | spezialgesetzliche Satzungsbefugnis (LWG) nicht geprüft |
+| Fall sl-fall-kom-verpflichtungserklaerung / rp-fall-bau-bestandsschutz-altbau | Prüfpunkt-Keyword schon vor Änderung nicht getroffen (check_faelle OK); redaktionell |
+| SL VerfGHG § 55 (Individualverfassungsbeschwerde) | Gesetz in Runde 2 nicht im Portal gefunden; offen |
 
+## Runde 2 (2026-10-16)
+
+Prüfwege: juris-REST-Schnittstelle (`/jportal/wsrest/recherche3`, Playwright-Sitzung) für HH, SH, MV, ST, TH, RP, SL (alle amtlich, Gesamtausgaben); NI-VORIS (voris.wolterskluwer-online.de) serverseitig gerendert; REVOSax (revosax.sachsen.de) als HTML-Gesamttext; Bremen (transparenz.bremen.de) weiterhin HTTP 403. Alle Quellen amtlich; gesetze.co wird nicht mehr als Beleg benötigt für: Generalklausel, Störer, Nichtstörer, Mitwirkungsverbot und Entschädigung der 9 erreichbaren Länder (NI, HH, SH, MV, SN, ST, TH, RP, SL).
+
+Zahlen: Tabelle 3 enthielt in Runde 1 insgesamt 35 Zeilen; nach Runde 2 stehen 21 Zeilen in Tabelle 3 (teils zusammengefasst und im Grund präzisiert). Neu bestätigt: 16 Zeilen in den Tabellen 1 (jeweils mit mehreren Normen). Korrigiert: 6 Inhaltsstellen in Tabellen 2 (HH § 3, NI-Fall § 41 VI, SH § 22 V, MV § 52a, SL Kosten, ST-Verfassungsbeschwerde in examen/bundeslaender/st.yaml). Weitere Änderungen an lr1-Punkten stehen in lr1.md.
+
+Wichtige Befunde: (1) Die MV-SOG-Gesamtausgabe gilt laut Portal nur bis 31.10.2026, danach neue Fassung. (2) SH Mitwirkungsverbot-Karte enthielt eine Mischformel (ursächlich sein konnte), korrigiert. (3) Alle Generalklausel-/Störer-/Nichtstörer-Zitate der 9 Länder stimmen mit dem amtlichen Wortlaut überein.
