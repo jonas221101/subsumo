@@ -42,6 +42,23 @@
 > Preisseite (3.1/3.2), Kanaltexte (4.2). Fassung-A/B-Umschaltregel aus
 > Abschnitt 2.3 bleibt unverändert bestehen — die Reihenfolge der Argumente
 > ändert sich, nicht die Leitplanken aus Abschnitt 1.
+>
+> **Update 26.09.2026 (Tonalität, Umfangszahlen):** Alle Texte verlieren die
+> „gerade gestartet"/„Early Access"/„kommt bald"-Rahmung. Grund: Der Content
+> steht bei **629 Karten, 85 Schemata, 81 geführten Fällen** (Zählung über
+> `content/**/*.yaml`, Stand 26.09.) — die alten Zahlen (180 / 8+ / 6+) und
+> die Entschuldigung für den kleinen Umfang waren sachlich überholt und
+> wirkten unprofessionell. Neue Tonalität: sachlich, sicher, Zahlen nennen
+> statt einordnen. Sektion 5 heißt jetzt **„Was drin ist"** statt „Ehrlich
+> über den Umfang"; Sektion 3 heißt „Was du bekommst" (ohne „heute").
+> Preisseite Variante B nennt keine „Bezahlstrecke" mehr, sondern sagt nur,
+> dass Pro aktuell für alle Konten inklusive ist. Der Gründerpreis bleibt als
+> Angebot bestehen — begründet als Vorteil für frühe Kund:innen, nicht als
+> Ausgleich für fehlenden Umfang. Leitplanken aus Abschnitt 1 gelten
+> unverändert (keine Superlative, keine erfundene Knappheit, kein „KI" beim
+> Struktur-Check, „Lernhilfe, keine Rechtsberatung, keine Note" bleibt).
+> Umgesetzt in `app/lib/pages/public/public_landing_page.dart` und
+> `public_pricing_page.dart`; Tests in `app/test/public_*_page_test.dart`.
 
 ---
 
@@ -49,11 +66,16 @@
 
 Aus der Aufgabenstellung SUB-88, zwei Punkte, an denen es „sonst scheitert":
 
-1. **Umfang offen kommunizieren, nicht beschönigen.** Jeder Text, der die
-   Kartenzahl nennt, nennt **180 Karten über drei Rechtsgebiete** — nie
-   „umfassend", „vollständig" oder vergleichbare Superlative. Der Vergleich zu
-   Jurafuchs (8.000+ Fälle, `docs/14-marktanalyse.md` Abschnitt 2) wird nicht
-   versteckt, sondern als Kontext für den Gründerpreis benutzt.
+1. **Umfang faktisch kommunizieren, weder beschönigen noch kleinreden.**
+   Jeder Text, der den Umfang nennt, nennt die **tatsächlichen Zahlen aus
+   `content/**/*.yaml`** (Stand 26.09.2026: **629 Karten, 85 Schemata, 60
+   geführte Fälle über drei Rechtsgebiete**) — nie „umfassend", „vollständig"
+   oder vergleichbare Superlative, aber auch keine „wir sind noch klein"-
+   Entschuldigung. Der Vergleich zu Jurafuchs (8.000+ Fälle,
+   `docs/14-marktanalyse.md` Abschnitt 2) gehört in die Marktanalyse, nicht
+   in den Marketingtext. Keine erfundene Dringlichkeit oder Knappheit
+   („nur noch …", „letzte Chance"); der Gründerpreis ist ein Angebot mit
+   Preisgarantie, kein Countdown.
 2. **Keine Werbung für KI-Klausurkorrektur.** Das Wort „KI" fällt in keinem
    Launch-Text im Zusammenhang mit dem Struktur-Check. Beworben wird der
    **heuristische Struktur-Check**, **ausdrücklich ohne Note** — Formulierung
@@ -90,9 +112,9 @@ was die AGB nicht deckt:
 |---|---|---|
 | 1 | Hero | Kernversprechen + Preis-Ankerpunkt + primärer CTA |
 | 2 | Für wen | Zielgruppe in einem Satz |
-| 3 | Was du heute bekommst | Feature-Liste, ehrlich, mit Struktur-Check-Abgrenzung |
+| 3 | Was du bekommst | Feature-Liste, sachlich, mit Struktur-Check-Abgrenzung |
 | 4 | Wie es funktioniert | 3 Schritte |
-| 5 | Ehrlich über den Umfang | 180-Karten-Offenlegung + Gründerpreis-Begründung |
+| 5 | Was drin ist | Umfang in Zahlen (Karten/Schemata/Fälle) + Gründerpreis |
 | 6 | Die drei Rechtsgebiete | Zivilrecht/Strafrecht/Öffentliches Recht Teaser |
 | 7 | Preis-Teaser | Free/Pro Kurzvergleich, Link zu `/preise` |
 | 8 | FAQ | 3 Fragen, die Missverständnisse vorwegnehmen (KI, Umfang, Kündigung) |
@@ -105,22 +127,28 @@ was die AGB nicht deckt:
 > **H1:** Unbegrenztes Feedback zum Aufbau deiner Gutachten — sofort, offline,
 > ohne Limit.
 >
-> **Subheadline:** Subsumo prüft deine eigene Lösung automatisch auf Aufbau
-> und Stil, so oft du willst, auch offline auf dem Handy, Tablet oder Laptop —
-> weil es uns nichts kostet, es zu verschenken. Dazu 180 geprüfte Karten,
-> 8+ Schemata und 6+ geführte Fälle über Zivilrecht, Strafrecht und
-> Öffentliches Recht. Zum Gründerpreis ab 3,99 €/Monat, dauerhaft garantiert.
+> **Subheadline (Stand 26.09.2026, so in der App):** 629 geprüfte
+> Karteikarten, 85 Prüfungsschemata und 81 geführte Fälle über Zivilrecht,
+> Strafrecht und Öffentliches Recht — dazu ein Struktur-Check für deine
+> eigenen Gutachten. Pro zum Gründerpreis ab 3,99 €/Monat, dauerhaft
+> garantiert.
+>
+> *Hinweis:* Die App nutzt als H1 weiterhin die Fassung „Karteikarten,
+> Schemata und Fälle für dein Jurastudium — mit ehrlichem Feedback zum
+> Aufbau deiner Gutachten." Die H1 oben (Struktur-Check als Hauptargument,
+> SUB-260) ist noch nicht in die App übernommen — eigener Entscheid, nicht
+> Teil des Tonalitäts-Updates vom 26.09.
 >
 > **Primärer CTA:** „Kostenlos starten"
 > **Sekundärer CTA:** „Preise ansehen" → `/preise`
 
 **2. Für wen**
 
-> Für Jurastudierende ab dem ersten Semester, die nicht nur lesen, sondern
-> wiederholen, anwenden und ihre eigenen Lösungen überprüfen wollen — auch in
-> der Bibliothek ohne WLAN oder im Zug.
+> Für Jurastudierende ab dem ersten Semester bis zur Examensvorbereitung,
+> die nicht nur lesen, sondern wiederholen, anwenden und ihre eigenen
+> Lösungen überprüfen wollen.
 
-**3. Was du heute bekommst**
+**3. Was du bekommst**
 
 > - **Struktur-Check für deine Gutachten, ohne Limit:** Lade deine eigene
 >   Lösung zu einem Übungsfall hoch und bekommst automatisiert Rückmeldung zu
@@ -132,9 +160,10 @@ was die AGB nicht deckt:
 > - **Karteikarten mit automatischer Wiederholung** (FSRS-Verfahren) — die App
 >   entscheidet, wann eine Karte wieder fällig ist, du entscheidest, was du
 >   lernst.
-> - **Prüfungsschemata** zum Nachschlagen (Pro: zusätzlich als
->   Reihenfolge-Drill).
-> - **Geführte Übungsfälle** mit hinterlegtem Erwartungshorizont.
+> - **Prüfungsschemata** zum Nachschlagen, mit Normzitaten und
+>   Prüfungsreihenfolge (Pro: zusätzlich als Reihenfolge-Drill).
+> - **Geführte Übungsfälle** mit hinterlegtem Erwartungshorizont — Schritt
+>   für Schritt durch das Gutachten.
 >
 > **Was der Struktur-Check ist — und was nicht:** Lernhilfe, keine
 > Rechtsberatung, keine Note. Er ist ein regelbasierter (heuristischer) Check
@@ -157,17 +186,22 @@ was die AGB nicht deckt:
 > 2. Karten lernen, Schemata nachschlagen, Fälle bearbeiten.
 > 3. Eigene Lösung zum Struktur-Check hochladen und Rückmeldung bekommen.
 
-**5. Ehrlich über den Umfang**
+**5. Was drin ist**
 
-> Subsumo ist neu. Zum Start stehen **180 Karten, 8+ Schemata und 6+ geführte
-> Fälle** über drei Rechtsgebiete bereit — spürbar weniger als etablierte
-> Anbieter mit tausenden Fällen. Das sagen wir offen, weil wir lieber jede
-> Karte selbst prüfen, als früh eine Vollständigkeit zu behaupten, die es
-> nicht gibt.
+> **629 geprüfte Karteikarten, 85 Prüfungsschemata und 81 geführte Fälle**
+> über Zivilrecht, Strafrecht und Öffentliches Recht. Jede Karte nennt ihre
+> Normen und Quellen und durchläuft eine redaktionelle Prüfung, bevor sie
+> erscheint. Der Bestand wird laufend erweitert — die aktuellen Zahlen
+> stehen hier auf der Seite.
 >
-> Deshalb der **Gründerpreis**: Wer jetzt einsteigt, sichert sich einen Preis,
-> der niedriger bleibt, als der Umfang — und der Preis für neue Kund:innen —
-> mit der Zeit wächst.
+> **Gründerpreis:** Wer jetzt einsteigt, sichert sich Pro für 3,99 €/Monat
+> oder 39 €/Jahr — dauerhaft, auch wenn der Listenpreis für neue Kund:innen
+> später steigt.
+>
+> *Pflegehinweis:* Die drei Zahlen sind ein Stand, keine Konstante. Bei
+> Content-Erweiterungen zuerst hier, dann in `public_landing_page.dart`
+> (Hero, Sektion 5, FAQ) und im Test nachziehen — die Seite verspricht, dass
+> die genannten Zahlen aktuell sind.
 
 **6. Die drei Rechtsgebiete**
 
@@ -209,9 +243,11 @@ was die AGB nicht deckt:
 > Internetverbindung — praktisch für die Bibliothek ohne WLAN oder unterwegs.
 > Einmal geladene Inhalte übersteht auch ein Neustart oder Netzausfall.
 >
-> **Wie viele Karten gibt es wirklich?**
-> Zum Start 180 geprüfte Karten über drei Rechtsgebiete. Wir zeigen die
-> aktuelle Zahl hier auf der Seite, nicht nur im Kleingedruckten.
+> **Wie viele Karten, Schemata und Fälle gibt es?**
+> 629 geprüfte Karteikarten, 85 Prüfungsschemata und 81 geführte Fälle über
+> Zivilrecht, Strafrecht und Öffentliches Recht. Der Bestand wird
+> redaktionell erweitert; die aktuellen Zahlen stehen hier auf der Seite,
+> nicht nur im Kleingedruckten.
 >
 > **Kann ich kündigen?**
 > Ja, jederzeit zum Ende der laufenden Laufzeit. Details in den AGB.
@@ -236,7 +272,7 @@ für **alle** Fassung-A/B-Stellen in diesem Dokument — nicht nur die FAQ.
 
 1. In Abschnitt 2.2, FAQ, Frage „Ist das eine KI, die meine Klausur
    korrigiert?": Fassung A durch Fassung B ersetzen.
-2. In Abschnitt 2.2, „3. Was du heute bekommst": den mit *Zugabe-Absatz*
+2. In Abschnitt 2.2, „3. Was du bekommst": den mit *Zugabe-Absatz*
    markierten Absatz zusätzlich zum bestehenden Struktur-Check-Absatz
    veröffentlichen (er ergänzt, ersetzt nichts).
 3. Alle anderen Texte in diesem Dokument (Preisseite, Kanaltexte) bleiben
@@ -292,10 +328,9 @@ Aufgabe aus Abschnitt 5, nicht in dieses Dokument.
 >
 > CTA (Pro-Spalte): „Pro werden"
 >
-> **Warum Gründerpreis?** Subsumo startet mit 180 Karten — deutlich weniger
-> als etablierte Anbieter. Der Preis liegt deshalb bewusst niedrig, und wer
-> jetzt einsteigt, behält ihn dauerhaft, auch wenn Umfang und Listenpreis
-> wachsen.
+> **Gründerpreis.** Der Gründerpreis gilt für alle, die jetzt einsteigen:
+> 3,99 €/Monat oder 39 €/Jahr, dauerhaft. Steigt der Listenpreis später für
+> neue Kund:innen, bleibt dein Preis unverändert.
 >
 > Zahlung über Stripe. Jederzeit zum Ende der laufenden Laufzeit kündbar,
 > Details in den AGB.
@@ -306,23 +341,27 @@ USt.-Entscheidung (`docs/legal/01-impressum.md`, G1). Die Preisseite darf erst
 mit der zutreffenden Variante veröffentlicht werden — das ist ein
 Rechts-/Buchhaltungspunkt, keine redaktionelle Wahl.
 
-### 3.2 Variante B — Early Access (Preis ab X, kein Checkout live)
+### 3.2 Variante B — Paywall aus (`paywall_enabled=false`), Pro für alle Konten inklusive
 
-> **H1:** Preise (Early Access)
+Tonalität (26.09.2026): kein „Early Access", keine „Bezahlstrecke", kein
+„kommt bald" — die Seite beschreibt den Ist-Zustand (Pro ist inklusive) und
+den regulären Preis mit Garantie, ohne zu spekulieren, wann sich das ändert.
+
+> **H1:** Preise
+> **Untertitel:** Pro ist aktuell für alle Konten inklusive
 >
-> Subsumo ist gerade gestartet. Die Bezahlstrecke ist noch nicht live — bis
-> dahin nutzt du Subsumo **im vollen Pro-Umfang kostenlos**: alle drei
-> Rechtsgebiete, unbegrenzte Karten, Schemata, Fälle und Struktur-Checks.
+> Jedes Konto nutzt Subsumo derzeit **im vollen Pro-Umfang kostenlos**: alle
+> drei Rechtsgebiete, unbegrenzte Karten, Schemata, Fälle und Struktur-Checks
+> — ohne Zahlungsdaten.
 >
-> Sobald die Bezahlstrecke startet, wechseln wir auf Free/Pro. Der Pro-Tarif
-> kostet dann **ab 3,99 €/Monat** (39 €/Jahr) — mit **Gründerpreis-Garantie**:
-> Wer sich jetzt registriert, sichert sich diesen Preis dauerhaft, auch wenn
-> er für später hinzukommende Nutzer:innen steigt.
+> Der Pro-Tarif kostet regulär **3,99 €/Monat** oder **39 €/Jahr** — mit
+> **Gründerpreis-Garantie**: Wer sich jetzt registriert, sichert sich diesen
+> Preis dauerhaft, auch wenn er für später hinzukommende Nutzer:innen steigt.
 >
 > CTA: „Kostenlos registrieren und Preis sichern"
 >
-> Feature-Tabelle wie Variante A, Spalte „Pro" umbenannt in „Pro (kommt
-> bald, aktuell für alle inklusive)".
+> Feature-Tabelle wie Variante A, Spalte „Pro" umbenannt in „Pro (aktuell
+> für alle Konten inklusive)".
 
 ---
 
@@ -357,10 +396,10 @@ Budget) und sind direkt einsetzbar, sobald konkrete Kanäle feststehen:
 > Karteikarten, Schemata und geführte Fälle für Zivilrecht, Strafrecht und
 > Öffentliches Recht.
 >
-> Ehrlich gesagt: Wir starten mit 180 Karten, nicht mit Tausenden. Dafür
-> prüfen wir jede Karte selbst, und du bekommst als frühe Nutzerin/früher
-> Nutzer den Gründerpreis von 3,99 €/Monat (39 €/Jahr) — dauerhaft, auch wenn
-> er später steigt.
+> Drin sind 629 geprüfte Karten, 85 Schemata und 81 geführte Fälle — jede
+> Karte mit Normen und Quellen. Als frühe Nutzerin/früher Nutzer bekommst du
+> den Gründerpreis von 3,99 €/Monat (39 €/Jahr) — dauerhaft, auch wenn er
+> später steigt.
 >
 > [Jetzt kostenlos starten →]
 >
@@ -374,8 +413,8 @@ Budget) und sind direkt einsetzbar, sobald konkrete Kanäle feststehen:
 > offline, ohne Note (Lernhilfe). Dazu Karteikarten, Schemata, geführte Fälle
 > für Zivilrecht, Strafrecht, Öffentliches Recht.
 >
-> Ehrlich: Wir starten mit 180 Karten, nicht mit Tausenden — dafür zum
-> Gründerpreis von 3,99 €/Monat, dauerhaft.
+> 629 geprüfte Karten, 85 Schemata, 81 geführte Fälle — zum Gründerpreis von
+> 3,99 €/Monat, dauerhaft.
 >
 > Link in Bio → kostenlos starten.
 
@@ -393,10 +432,10 @@ Budget) und sind direkt einsetzbar, sobald konkrete Kanäle feststehen:
 > automatischer Wiederholung, Prüfungsschemata und geführte Übungsfälle mit
 > Erwartungshorizont.
 >
-> Der ehrliche Teil: Das Angebot ist neu und startet mit 180 Karten über die
-> drei Rechtsgebiete — weniger als etablierte Anbieter mit Tausenden Fällen.
-> Wer jetzt einsteigt, bekommt dafür den Gründerpreis (3,99 €/Monat oder
-> 39 €/Jahr), der dauerhaft bleibt, auch wenn der Umfang wächst und der Preis
+> Zum Umfang: 629 geprüfte Karten, 85 Schemata und 81 geführte Fälle über
+> die drei Rechtsgebiete, jede Karte mit Normzitaten und Quellen; der Bestand
+> wird laufend erweitert. Wer jetzt einsteigt, bekommt den Gründerpreis
+> (3,99 €/Monat oder 39 €/Jahr), der dauerhaft bleibt, auch wenn der Preis
 > für später hinzukommende Nutzer:innen steigt. Es gibt auch eine kostenlose
 > Stufe zum Ausprobieren.
 >

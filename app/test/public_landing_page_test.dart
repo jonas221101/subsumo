@@ -46,8 +46,8 @@ void main() {
     expect(find.text('Kostenlos starten'), findsOneWidget);
     // 2. Für wen
     expect(find.textContaining('Für Jurastudierende ab dem ersten Semester'), findsOneWidget);
-    // 3. Was du heute bekommst
-    expect(find.text('Was du heute bekommst'), findsOneWidget);
+    // 3. Was du bekommst
+    expect(find.text('Was du bekommst'), findsOneWidget);
     expect(find.textContaining('automatischer Wiederholung (FSRS-Verfahren)'), findsOneWidget);
     expect(
       find.textContaining('Lernhilfe, keine Rechtsberatung, keine Note'),
@@ -56,9 +56,16 @@ void main() {
     // 4. Wie es funktioniert
     expect(find.text('Wie es funktioniert'), findsOneWidget);
     expect(find.textContaining('Konto anlegen, Rechtsgebiet wählen.'), findsOneWidget);
-    // 5. Ehrlich ueber den Umfang
-    expect(find.text('Ehrlich über den Umfang'), findsOneWidget);
-    expect(find.textContaining('Deshalb der Gründerpreis'), findsOneWidget);
+    // 5. Was drin ist - reale Zahlen aus content/**/*.yaml, keine
+    // "gerade gestartet"-Rahmung (Fassung vom 26.09.2026).
+    expect(find.text('Was drin ist'), findsOneWidget);
+    expect(
+      find.textContaining('629 geprüfte Karteikarten, 85 Prüfungsschemata und 81 geführte Fälle'),
+      findsNWidgets(2), // Hero-Subheadline + Sektion 5
+    );
+    expect(find.textContaining('Gründerpreis: Wer jetzt einsteigt'), findsOneWidget);
+    expect(find.textContaining('gerade gestartet'), findsNothing);
+    expect(find.textContaining('Subsumo ist neu'), findsNothing);
     // 6. Die drei Rechtsgebiete
     expect(find.text('Die drei Rechtsgebiete'), findsOneWidget);
     expect(find.textContaining('Zivilrecht · Strafrecht · Öffentliches Recht'), findsOneWidget);
@@ -73,10 +80,13 @@ void main() {
       findsOneWidget,
     );
     // Die uebrigen Fragen sind eingeklappt - Akkordeon zuerst aufklappen.
-    await tester.ensureVisible(find.text('Wie viele Karten gibt es wirklich?'));
-    await tester.tap(find.text('Wie viele Karten gibt es wirklich?'));
+    await tester.ensureVisible(find.text('Wie viele Karten, Schemata und Fälle gibt es?'));
+    await tester.tap(find.text('Wie viele Karten, Schemata und Fälle gibt es?'));
     await tester.pumpAndSettle();
-    expect(find.textContaining('Zum Start 180 geprüfte Karten'), findsOneWidget);
+    expect(
+      find.textContaining('629 geprüfte Karteikarten, 85 Prüfungsschemata und 81 geführte Fälle'),
+      findsNWidgets(3), // Hero + Sektion 5 + FAQ-Antwort
+    );
 
     await tester.ensureVisible(find.text('Kann ich kündigen?'));
     await tester.tap(find.text('Kann ich kündigen?'));
@@ -185,7 +195,7 @@ void main() {
     });
   });
 
-  testWidgets('Rechtsgebiets-Akzente sind kategorisch fest pro Gebiet, nicht wertabhaengig', (
+  testWidgets('Rechtsgebiets-Akzente sind kategorisch fest pro Gebiet, nicht wertabhängig', (
     tester,
   ) async {
     final state = AppState(api: _clientWithTopics(const []));

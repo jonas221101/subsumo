@@ -1,0 +1,426 @@
+topic:
+  slug: or-vwgo-normenkontrolle-47
+  area: oeffentliches-recht
+  title: Die prinzipale Normenkontrolle, § 47 VwGO
+  parent: oeffentliches-recht
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-fable-5-1
+    status: in-pruefung
+    normzitate_geprueft: true
+cards:
+- slug: or-vwgo-nk47-funktion-doppelnatur
+  type: definition
+  front: Welche Funktion hat das Normenkontrollverfahren nach § 47 VwGO und was
+    bedeutet seine "Doppelnatur"?
+  back: >-
+    Das Normenkontrollverfahren nach § 47 VwGO ermöglicht die prinzipale, also
+    unmittelbar gegen die Norm gerichtete Überprüfung untergesetzlicher
+    Rechtsvorschriften durch das Oberverwaltungsgericht - im Unterschied zur
+    inzidenten Kontrolle, bei der ein Gericht die Gültigkeit einer Norm nur als
+    Vorfrage in einem anderen Verfahren prüft. Das Verfahren hat eine
+    Doppelnatur: Es dient einerseits dem subjektiven Rechtsschutz des
+    Antragstellers (deshalb die Antragsbefugnis nach § 47 Abs. 2 S. 1 VwGO),
+    andererseits der objektiven Rechtskontrolle und Rechtsbereinigung (deshalb
+    die allgemeinverbindliche Unwirksamkeitserklärung nach § 47 Abs. 5 S. 2
+    VwGO und die Antragsberechtigung von Behörden).
+  norms:
+  - § 47 Abs. 1 VwGO
+  - § 47 Abs. 2 S. 1 VwGO
+  - § 47 Abs. 5 S. 2 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwgo-nk47-antragsgegenstand
+  type: norm
+  front: Was kann Gegenstand eines Normenkontrollantrags nach § 47 Abs. 1 VwGO
+    sein?
+  back: >-
+    Nach § 47 Abs. 1 Nr. 1 VwGO entscheidet das Oberverwaltungsgericht über die
+    Gültigkeit von Satzungen, die nach den Vorschriften des Baugesetzbuchs
+    erlassen worden sind (vor allem Bebauungspläne), sowie von
+    Rechtsverordnungen auf Grund des Baugesetzbuchs. Nach § 47 Abs. 1 Nr. 2
+    VwGO kann das Landesrecht die Kontrolle auf sonstige im Rang unter dem
+    Landesgesetz stehende Rechtsvorschriften erstrecken - davon haben fast
+    alle Länder Gebrauch gemacht, sodass dort auch Landesrechtsverordnungen
+    und kommunale Satzungen jeder Art (z. B. Gebühren-, Benutzungs- oder
+    Gefahrenabwehrverordnungen) überprüfbar sind. Nicht überprüfbar sind
+    förmliche Gesetze, Bundesrechtsverordnungen, Verwaltungsvorschriften
+    (keine Rechtsnormen) und Verwaltungsakte. Der Antrag muss sich zudem auf
+    eine Frage beziehen, die überhaupt im Verwaltungsrechtsweg überprüfbar
+    wäre (§ 47 Abs. 1 VwGO: "im Rahmen seiner Gerichtsbarkeit").
+  norms:
+  - § 47 Abs. 1 Nr. 1 VwGO
+  - § 47 Abs. 1 Nr. 2 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwgo-nk47-antragsbefugnis
+  type: norm
+  front: Welche Anforderungen stellt § 47 Abs. 2 S. 1 VwGO an die Antragsbefugnis?
+  back: >-
+    Antragsbefugt ist jede natürliche oder juristische Person, die geltend
+    macht, durch die Rechtsvorschrift oder deren Anwendung in ihren Rechten
+    verletzt zu sein oder in absehbarer Zeit verletzt zu werden, sowie jede
+    Behörde. Der Maßstab entspricht seit der Angleichung an § 42 Abs. 2 VwGO
+    der Möglichkeitstheorie: Eine Rechtsverletzung darf nicht offensichtlich
+    und eindeutig nach jeder Betrachtungsweise ausgeschlossen sein. Die
+    Verletzung kann unmittelbar aus der Norm folgen oder erst aus ihrer
+    Anwendung (etwa aus einer noch zu erteilenden Baugenehmigung). Behörden
+    sind antragsbefugt, wenn sie die Norm anzuwenden haben; eine eigene
+    Rechtsverletzung müssen sie nicht geltend machen. Bei Bebauungsplänen
+    genügt für Eigentümer im Plangebiet regelmäßig die Betroffenheit in Art. 14
+    Abs. 1 GG; Nachbarn außerhalb des Plangebiets müssen einen abwägungserheblichen
+    eigenen Belang darlegen, der möglicherweise fehlerhaft abgewogen wurde.
+  norms:
+  - § 47 Abs. 2 S. 1 VwGO
+  - § 42 Abs. 2 VwGO
+  - Art. 14 Abs. 1 GG
+  quellen:
+  - VwGO, amtliche Fassung
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwgo-nk47-antragsbefugnis-abwaegungsbelang
+  type: streitstand
+  front: Reicht für die Antragsbefugnis eines Plannachbarn die Berufung auf das
+    Abwägungsgebot?
+  back: >-
+    Für Grundstückseigentümer außerhalb des Plangebiets ist anerkannt, dass
+    die Antragsbefugnis aus dem drittschützenden Recht auf gerechte Abwägung
+    der eigenen Belange folgen kann. Streitig ist, wie konkret dieser Belang
+    dargelegt werden muss. Nach der herrschenden Rechtsprechung genügt nicht
+    jedes Interesse: Der Belang muss abwägungserheblich sein, also mehr als
+    geringfügig, schutzwürdig und für die planende Gemeinde erkennbar; bloß
+    geringfügige Mehrbelastungen (z. B. eine unwesentliche Verkehrszunahme)
+    oder Belange, mit denen der Nachbar nach der Lage der Dinge nicht rechnen
+    durfte, begründen keine Antragsbefugnis. Eine Literaturmeinung will
+    großzügiger verfahren und die Erheblichkeit erst in der Begründetheit
+    klären, weil das Normenkontrollverfahren ohnehin objektiv-rechtlich
+    ausgerichtet ist. In der Klausur ist mit der Rechtsprechung eine
+    Vorprüfung der Abwägungserheblichkeit vorzunehmen, ohne die eigentliche
+    Abwägungskontrolle vorwegzunehmen.
+  norms:
+  - § 47 Abs. 2 S. 1 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwgo-nk47-frist-antragsgegner
+  type: norm
+  front: Welche Frist gilt für den Normenkontrollantrag und gegen wen ist er zu
+    richten?
+  back: >-
+    Der Antrag ist nach § 47 Abs. 2 S. 1 VwGO innerhalb eines Jahres nach
+    Bekanntmachung der Rechtsvorschrift zu stellen. Die Frist ist eine
+    Ausschlussfrist; nach ihrem Ablauf bleibt nur die inzidente Kontrolle im
+    Rahmen eines Verfahrens gegen einen Vollzugsakt. Wird die Norm später
+    geändert, beginnt die Frist für die geänderten Teile neu zu laufen.
+    Antragsgegner ist nach § 47 Abs. 2 S. 2 VwGO die Körperschaft, Anstalt
+    oder Stiftung, die die Rechtsvorschrift erlassen hat - bei kommunalen
+    Satzungen also die Gemeinde, bei Landesrechtsverordnungen das Land. Das
+    Oberverwaltungsgericht kann nach § 47 Abs. 2 S. 4 VwGO dem Land und
+    anderen juristischen Personen des öffentlichen Rechts, deren Zuständigkeit
+    berührt wird, Gelegenheit zur Äußerung geben.
+  norms:
+  - § 47 Abs. 2 S. 1 VwGO
+  - § 47 Abs. 2 S. 2 VwGO
+  - § 47 Abs. 2 S. 4 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwgo-nk47-pruefungsmassstab
+  type: streitstand
+  front: Wie weit reicht die Prüfung des Oberverwaltungsgerichts in der Begründetheit
+    des Normenkontrollantrags?
+  back: >-
+    In der Begründetheit prüft das Oberverwaltungsgericht die Vereinbarkeit der
+    Rechtsvorschrift mit höherrangigem Recht - formell (Zuständigkeit,
+    Verfahren, Form, Ausfertigung, Bekanntmachung) und materiell (Vereinbarkeit
+    mit Bundes- und Landesrecht einschließlich der Grundrechte,
+    Ermächtigungsgrundlage, bei Bebauungsplänen insbesondere das
+    Abwägungsgebot). Nach herrschender Meinung ist die Prüfung objektiv: Die
+    Norm ist unwirksam, wenn sie gegen irgendeine höherrangige Vorschrift
+    verstößt, auch wenn der Antragsteller dadurch nicht in eigenen Rechten
+    verletzt wird - anders als bei § 113 Abs. 1 S. 1 VwGO. Das folgt aus dem
+    Wortlaut des § 47 Abs. 5 S. 2 VwGO ("Kommt das Oberverwaltungsgericht zu
+    der Überzeugung, dass die Rechtsvorschrift ungültig ist") und der
+    objektiven Kontrollfunktion. Eine Gegenauffassung möchte den
+    Prüfungsumfang mit Blick auf die Antragsbefugnis auf die den Antragsteller
+    schützenden Normen beschränken; sie hat sich nicht durchgesetzt.
+    Eingeschränkt wird die Prüfung nur durch das Landesverfassungsrecht:
+    Verstöße einer Landesnorm gegen die Landesverfassung prüft das
+    Oberverwaltungsgericht nicht, wenn dafür das Landesverfassungsgericht
+    ausschließlich zuständig ist, § 47 Abs. 3 VwGO.
+  norms:
+  - § 47 Abs. 5 S. 2 VwGO
+  - § 47 Abs. 3 VwGO
+  - § 113 Abs. 1 S. 1 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwgo-nk47-rechtsfolge-unwirksamkeit
+  type: norm
+  front: Welche Rechtsfolge spricht das Oberverwaltungsgericht bei Erfolg des Antrags
+    aus, § 47 Abs. 5 S. 2 VwGO?
+  back: >-
+    Kommt das Oberverwaltungsgericht zu der Überzeugung, dass die
+    Rechtsvorschrift ungültig ist, erklärt es sie für unwirksam; die
+    Entscheidung ist allgemein verbindlich und die Entscheidungsformel vom
+    Antragsgegner ebenso zu veröffentlichen wie die Rechtsvorschrift selbst
+    (§ 47 Abs. 5 S. 2 VwGO). Die Unwirksamkeitserklärung wirkt für und gegen
+    jedermann (inter omnes) und grundsätzlich von Anfang an (ex tunc), da die
+    Norm nie wirksam war. Bereits unanfechtbar gewordene Verwaltungsakte, die
+    auf der Norm beruhen, bleiben in entsprechender Anwendung des § 183 VwGO
+    bestehen; die Vollstreckung aus ihnen ist jedoch unzulässig. Das Gericht
+    entscheidet nach § 47 Abs. 5 S. 1 VwGO durch Urteil oder, wenn es eine
+    mündliche Verhandlung nicht für erforderlich hält, durch Beschluss. Ein
+    Ausspruch bloßer "Unvereinbarkeit" wie beim Bundesverfassungsgericht ist
+    im Gesetz nicht vorgesehen; bei behebbaren Fehlern kommt aber nach dem
+    Fachrecht ein ergänzendes Verfahren in Betracht.
+  norms:
+  - § 47 Abs. 5 S. 1 VwGO
+  - § 47 Abs. 5 S. 2 VwGO
+  - § 183 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vwgo-nk47-einstweilige-anordnung-abs6
+  type: norm
+  front: Welchen vorläufigen Rechtsschutz bietet § 47 Abs. 6 VwGO?
+  back: >-
+    Nach § 47 Abs. 6 VwGO kann das Oberverwaltungsgericht auf Antrag eine
+    einstweilige Anordnung erlassen, wenn dies zur Abwehr schwerer Nachteile
+    oder aus anderen wichtigen Gründen dringend geboten ist. Die Vorschrift
+    ist gegenüber § 123 VwGO speziell und lehnt sich an § 32 BVerfGG an.
+    Prüfungsmaßstab sind nach der Rechtsprechung in erster Linie die
+    Erfolgsaussichten des Normenkontrollantrags in der Hauptsache: Erweist
+    sich dieser voraussichtlich als begründet, spricht dies für die Anordnung;
+    andernfalls ist eine Folgenabwägung vorzunehmen, bei der die Nachteile des
+    vorläufigen Außervollzugsetzens einer Norm gegen die Nachteile ihrer
+    vorläufigen Weitergeltung abzuwägen sind. Wegen der weitreichenden
+    Wirkung einer Außervollzugsetzung ist ein strenger Maßstab anzulegen.
+  norms:
+  - § 47 Abs. 6 VwGO
+  - § 123 VwGO
+  - § 32 BVerfGG
+  quellen:
+  - VwGO, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: or-schema-vwgo-normenkontrolle-47
+  title: Normenkontrollantrag nach § 47 VwGO
+  norms:
+  - § 47 Abs. 1 VwGO
+  - § 47 Abs. 2 VwGO
+  - § 47 Abs. 5 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Zulässigkeit
+    children:
+    - label: 1. Eröffnung des Verwaltungsrechtswegs - Streitigkeit, die im Rahmen
+        der Verwaltungsgerichtsbarkeit liegt, § 47 Abs. 1 VwGO, § 40 Abs. 1 S. 1
+        VwGO
+    - label: 2. Statthaftigkeit - Antragsgegenstand nach § 47 Abs. 1 Nr. 1 VwGO (Satzungen
+        und Rechtsverordnungen nach dem Baugesetzbuch) oder Nr. 2 (sonstiges Landesrecht
+        unter Gesetzesrang, soweit landesrechtlich zugelassen)
+    - label: 3. Antragsbefugnis, § 47 Abs. 2 S. 1 VwGO - Möglichkeit einer Rechtsverletzung
+        durch die Norm oder ihre Anwendung, jetzt oder in absehbarer Zeit; Behörden
+        ohne eigene Rechtsverletzung
+    - label: 4. Antragsfrist - ein Jahr ab Bekanntmachung, § 47 Abs. 2 S. 1 VwGO
+    - label: 5. Richtiger Antragsgegner - normerlassende Körperschaft, § 47 Abs. 2
+        S. 2 VwGO
+    - label: 6. Beteiligtenfähigkeit (§ 61 VwGO), Form (§ 81 VwGO analog), Rechtsschutzbedürfnis
+    hinweis: Zuständig ist das Oberverwaltungsgericht (§ 47 Abs. 1 VwGO); in
+      manchen Ländern heißt es Verwaltungsgerichtshof.
+  - label: II. Begründetheit - Unvereinbarkeit der Norm mit höherrangigem Recht
+    children:
+    - label: 1. Ermächtigungsgrundlage für die Norm (bei Rechtsverordnungen und
+        Satzungen)
+    - label: 2. Formelle Rechtmäßigkeit - Zuständigkeit, Verfahren (Beteiligung, Beschluss),
+        Form, Ausfertigung, Bekanntmachung
+    - label: 3. Materielle Rechtmäßigkeit - Vereinbarkeit mit Bundes- und Landesrecht,
+        Grundrechten, Bestimmtheit, Verhältnismäßigkeit; bei Bebauungsplänen Abwägungsgebot
+    hinweis: Objektiver Prüfungsmaßstab (h.M.); Beschränkung nur durch § 47 Abs.
+      3 VwGO (Landesverfassungsrecht).
+  - label: III. Rechtsfolge, § 47 Abs. 5 S. 2 VwGO
+    children:
+    - label: 1. Unwirksamkeitserklärung mit Wirkung inter omnes und ex tunc
+    - label: 2. Bestandskräftige Vollzugsakte bleiben bestehen, § 183 VwGO analog
+    - label: 3. Veröffentlichungspflicht des Antragsgegners
+  - label: IV. Vorläufiger Rechtsschutz, § 47 Abs. 6 VwGO
+    hinweis: Einstweilige Anordnung zur Abwehr schwerer Nachteile oder aus anderen
+      wichtigen Gründen; strenger Maßstab.
+faelle:
+- slug: or-fall-bebauungsplan-nachbar-normenkontrolle
+  title: Der Bebauungsplan für das Gewerbegebiet am Ortsrand
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VwGO, amtliche Fassung
+  - GG, amtliche Fassung
+  facts: >-
+    Der Rat der Stadt S beschließt im Januar einen Bebauungsplan, der am
+    Ortsrand ein Gewerbegebiet festsetzt. Der Plan wird im Februar als Satzung
+    bekannt gemacht. A ist Eigentümerin eines mit einem Wohnhaus bebauten
+    Grundstücks, das unmittelbar an das Plangebiet angrenzt, selbst aber
+    außerhalb liegt. Nach dem Plan sollen die Gewerbeflächen über eine neue
+    Zufahrtsstraße erschlossen werden, die direkt an der Grundstücksgrenze der
+    A verläuft; ein Verkehrsgutachten prognostiziert dort werktäglich mehrere
+    hundert Lkw-Fahrten. In der Planbegründung findet sich zur
+    Lärmbelastung der angrenzenden Wohnbebauung kein Wort; Alternativtrassen
+    wurden nicht untersucht. A macht geltend, ihre Belange seien überhaupt
+    nicht berücksichtigt worden. Im Oktober desselben Jahres stellt sie beim
+    Oberverwaltungsgericht des Landes L einen Antrag auf Feststellung der
+    Unwirksamkeit des Bebauungsplans. Die Stadt S hält den Antrag für
+    unzulässig: A sei nicht Eigentümerin im Plangebiet, und im Übrigen sei
+    das Abwägungsergebnis vertretbar. B, ein Grundstückseigentümer in der
+    Nachbarstadt N, der gelegentlich an der geplanten Straße vorbeifährt, hat
+    sich dem Antrag angeschlossen.
+  question: Haben die Normenkontrollanträge der A und des B Aussicht auf Erfolg?
+  steps:
+  - prompt: Ist der Bebauungsplan ein tauglicher Antragsgegenstand?
+    erwartung: >-
+      Ja - der Bebauungsplan ist eine nach den Vorschriften des Baugesetzbuchs
+      erlassene Satzung und damit nach § 47 Abs. 1 Nr. 1 VwGO
+      normenkontrollfähig. Zuständig ist das Oberverwaltungsgericht des
+      Landes L.
+  - prompt: Ist A antragsbefugt, obwohl ihr Grundstück außerhalb des Plangebiets
+      liegt?
+    erwartung: >-
+      Ja - § 47 Abs. 2 S. 1 VwGO verlangt nur die Möglichkeit einer
+      Rechtsverletzung durch die Norm oder ihre Anwendung. Zwar greift der
+      Plan nicht in das Eigentum der A ein (keine Festsetzung auf ihrem
+      Grundstück). A kann sich aber auf ihr Recht auf gerechte Abwägung ihrer
+      eigenen Belange berufen: Die Lärmbelastung eines angrenzenden
+      Wohngrundstücks durch mehrere hundert Lkw-Fahrten täglich ist mehr als
+      geringfügig, schutzwürdig und für die Stadt S erkennbar - ein
+      abwägungserheblicher Belang, dessen Verletzung nicht offensichtlich
+      ausgeschlossen ist.
+  - prompt: Ist B antragsbefugt?
+    erwartung: >-
+      Nein - B ist weder Eigentümer im Plangebiet noch im Einwirkungsbereich
+      des Plans. Sein gelegentliches Vorbeifahren begründet keinen eigenen
+      abwägungserheblichen Belang; eine Rechtsverletzung ist offensichtlich
+      und nach jeder Betrachtungsweise ausgeschlossen. Sein Antrag ist
+      unzulässig - § 47 VwGO eröffnet keine Popularklage.
+  - prompt: Ist die Antragsfrist gewahrt und wer ist Antragsgegner?
+    erwartung: >-
+      Die Jahresfrist des § 47 Abs. 2 S. 1 VwGO läuft ab Bekanntmachung im
+      Februar; der Antrag im Oktober desselben Jahres ist fristgerecht.
+      Antragsgegnerin ist nach § 47 Abs. 2 S. 2 VwGO die Stadt S als
+      normerlassende Körperschaft.
+  - prompt: Ist der Antrag der A begründet?
+    erwartung: >-
+      Der Plan ist unwirksam, wenn er gegen höherrangiges Recht verstößt. Das
+      bauplanungsrechtliche Abwägungsgebot verlangt, dass alle
+      abwägungserheblichen Belange ermittelt, bewertet und gerecht
+      gegeneinander abgewogen werden. Die Lärmbelastung der angrenzenden
+      Wohnbebauung wurde weder ermittelt noch in die Abwägung eingestellt
+      (Abwägungsausfall bzw. -defizit); Alternativtrassen wurden nicht
+      geprüft. Dieser Mangel betrifft einen zentralen Belang und ist auf das
+      Abwägungsergebnis von Einfluss gewesen, da eine andere Trassenführung
+      oder Schutzfestsetzungen naheliegen. Der Plan ist daher unwirksam.
+      Dass die Stadt das Ergebnis für "vertretbar" hält, ändert nichts, weil
+      bereits der Abwägungsvorgang fehlerhaft ist.
+  - prompt: Wie tenoriert das Oberverwaltungsgericht?
+    erwartung: >-
+      Es erklärt den Bebauungsplan nach § 47 Abs. 5 S. 2 VwGO für unwirksam.
+      Die Entscheidung wirkt allgemein verbindlich; die Stadt S hat die
+      Entscheidungsformel ebenso zu veröffentlichen wie den Plan. Der Antrag
+      des B wird als unzulässig verworfen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Bebauungsplan als Satzung nach dem Baugesetzbuch unter § 47 Abs. 1 Nr.
+        1 VwGO subsumiert, Zuständigkeit des Oberverwaltungsgerichts benannt
+      weight: 1.5
+      required: true
+      norms:
+      - § 47 Abs. 1 Nr. 1 VwGO
+      keywords:
+      - Satzung
+      - 47 Abs. 1 Nr. 1
+      - Oberverwaltungsgericht
+      card_slugs:
+      - or-vwgo-nk47-antragsgegenstand
+    - id: p2
+      label: Antragsbefugnis der A über abwägungserheblichen eigenen Belang (Lärm)
+        trotz Lage außerhalb des Plangebiets bejaht
+      weight: 3.0
+      required: true
+      norms:
+      - § 47 Abs. 2 S. 1 VwGO
+      keywords:
+      - Antragsbefugnis
+      - Abwägung
+      - abwägungserheblich
+      - außerhalb des Plangebiets
+      card_slugs:
+      - or-vwgo-nk47-antragsbefugnis
+      - or-vwgo-nk47-antragsbefugnis-abwaegungsbelang
+    - id: p3
+      label: Antragsbefugnis des B mangels eigenen Belangs verneint (keine Popularklage)
+      weight: 1.5
+      required: false
+      norms:
+      - § 47 Abs. 2 S. 1 VwGO
+      keywords:
+      - Popularklage
+      - offensichtlich ausgeschlossen
+      - kein eigener Belang
+      card_slugs:
+      - or-vwgo-nk47-antragsbefugnis
+      - or-vwgo-nk47-funktion-doppelnatur
+    - id: p4
+      label: Jahresfrist ab Bekanntmachung und richtiger Antragsgegner (Stadt S)
+        geprüft
+      weight: 1.0
+      required: false
+      norms:
+      - § 47 Abs. 2 S. 1 VwGO
+      - § 47 Abs. 2 S. 2 VwGO
+      keywords:
+      - Jahresfrist
+      - Bekanntmachung
+      - Antragsgegner
+      card_slugs:
+      - or-vwgo-nk47-frist-antragsgegner
+    - id: p5
+      label: Objektiven Prüfungsmaßstab benannt und Abwägungsfehler (Ermittlungs-
+        und Abwägungsausfall hinsichtlich Lärm, fehlende Alternativenprüfung) begründet
+      weight: 2.5
+      required: true
+      norms:
+      - § 47 Abs. 5 S. 2 VwGO
+      keywords:
+      - Abwägungsgebot
+      - Abwägungsausfall
+      - Ermittlung
+      - Alternativen
+      card_slugs:
+      - or-vwgo-nk47-pruefungsmassstab
+    - id: p6
+      label: Rechtsfolge Unwirksamkeitserklärung mit Allgemeinverbindlichkeit und
+        Veröffentlichungspflicht nach § 47 Abs. 5 S. 2 VwGO benannt
+      weight: 1.5
+      required: true
+      norms:
+      - § 47 Abs. 5 S. 2 VwGO
+      keywords:
+      - unwirksam
+      - allgemein verbindlich
+      - Veröffentlichung
+      card_slugs:
+      - or-vwgo-nk47-rechtsfolge-unwirksamkeit

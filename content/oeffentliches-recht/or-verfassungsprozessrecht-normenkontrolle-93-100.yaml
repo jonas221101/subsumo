@@ -1,0 +1,490 @@
+topic:
+  slug: or-verfassungsprozessrecht-normenkontrolle-93-100
+  area: oeffentliches-recht
+  title: Abstrakte und konkrete Normenkontrolle, Art. 93 Abs. 1 Nr. 2 GG und Art.
+    100 Abs. 1 GG
+  parent: oeffentliches-recht
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-fable-5-1
+    status: in-pruefung
+    normzitate_geprueft: true
+cards:
+- slug: or-vpr-ank-gegenstand-antragsberechtigung
+  type: norm
+  front: Wer kann eine abstrakte Normenkontrolle beantragen und was ist ihr Gegenstand,
+    Art. 93 Abs. 1 Nr. 2 GG?
+  back: >-
+    Das Bundesverfassungsgericht entscheidet bei Meinungsverschiedenheiten oder
+    Zweifeln über die förmliche und sachliche Vereinbarkeit von Bundesrecht
+    oder Landesrecht mit dem Grundgesetz oder von Landesrecht mit sonstigem
+    Bundesrecht. Antragsberechtigt sind ausschließlich die Bundesregierung,
+    eine Landesregierung oder ein Viertel der Mitglieder des Bundestages
+    (Art. 93 Abs. 1 Nr. 2 GG, § 76 Abs. 1 BVerfGG). Antragsgegenstand ist
+    jede Rechtsnorm des Bundes oder eines Landes - förmliche Gesetze ebenso
+    wie Rechtsverordnungen und Satzungen, auch vorkonstitutionelles Recht und
+    bereits außer Kraft getretene Normen, soweit sie noch Rechtswirkungen
+    entfalten. Das Verfahren ist ein objektives Beanstandungsverfahren: Es
+    gibt keinen Antragsgegner und keine eigene Rechtsverletzung des
+    Antragstellers; die Bundesregierung kann daher auch ein Landesgesetz zur
+    Prüfung stellen und umgekehrt.
+  norms:
+  - Art. 93 Abs. 1 Nr. 2 GG
+  - § 76 Abs. 1 BVerfGG
+  - § 13 Nr. 6 BVerfGG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vpr-ank-antragsgrund-zweifel-nichtig
+  type: streitstand
+  front: Genügen "Zweifel" an der Verfassungsmäßigkeit für den Antragsgrund, oder
+    muss der Antragsteller die Norm "für nichtig halten"?
+  back: >-
+    Art. 93 Abs. 1 Nr. 2 GG lässt "Meinungsverschiedenheiten oder Zweifel"
+    genügen, während § 76 Abs. 1 Nr. 1 BVerfGG verlangt, dass der Antragsteller
+    die Norm "für nichtig hält" (Nr. 2: für gültig hält, nachdem ein Gericht,
+    eine Behörde oder ein Organ sie nicht angewendet hat). Nach einer
+    Auffassung ist die engere Fassung des einfachen Gesetzes verfassungswidrig
+    oder jedenfalls verfassungskonform auf den Wortlaut des Grundgesetzes
+    zurückzuführen, weil das BVerfGG den verfassungsrechtlich eröffneten
+    Zugang nicht verengen dürfe. Das Bundesverfassungsgericht und die
+    herrschende Meinung sehen in § 76 Abs. 1 BVerfGG eine zulässige
+    Konkretisierung: Da das Verfahren der objektiven Rechtsklärung dient,
+    genügt ein objektives Klarstellungsinteresse, das regelmäßig vorliegt,
+    wenn der Antragsteller die Norm für nichtig hält oder wenn über ihre
+    Gültigkeit ernsthafte Meinungsverschiedenheiten bestehen. In der Klausur
+    kann der Streit meist offenbleiben, weil der Antragsteller die Norm
+    typischerweise für verfassungswidrig hält; bloße Ungewissheit ohne
+    eigene Überzeugung ist nach beiden Ansichten problematisch.
+  norms:
+  - Art. 93 Abs. 1 Nr. 2 GG
+  - § 76 Abs. 1 Nr. 1 BVerfGG
+  - § 76 Abs. 1 Nr. 2 BVerfGG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vpr-ank-pruefungsmassstab-frist
+  type: definition
+  front: Was prüft das Bundesverfassungsgericht in der abstrakten Normenkontrolle,
+    und gilt eine Antragsfrist?
+  back: >-
+    Prüfungsmaßstab ist bei Bundesrecht das gesamte Grundgesetz, bei
+    Landesrecht zusätzlich das sonstige Bundesrecht (Art. 93 Abs. 1 Nr. 2 GG:
+    "förmliche und sachliche Vereinbarkeit"). Das Gericht ist nicht an die
+    Begründung des Antrags gebunden, sondern prüft die Norm unter jedem
+    verfassungsrechtlichen Gesichtspunkt - formell (Gesetzgebungskompetenz,
+    Verfahren, Form) und materiell (Grundrechte, Staatsstrukturprinzipien,
+    Bundesstaatsprinzip). Eine Antragsfrist besteht nicht; das objektive
+    Klarstellungsinteresse kann jedoch entfallen, wenn die Norm außer Kraft
+    getreten ist und keine Wirkungen mehr entfaltet. Für den Sonderfall der
+    Erforderlichkeit einer konkurrierenden Bundesregelung nach Art. 72 Abs. 2
+    GG sieht Art. 93 Abs. 1 Nr. 2a GG ein eigenes Normenkontrollverfahren mit
+    erweitertem Antragstellerkreis (Bundesrat, Landesregierung, Landtag) vor.
+  norms:
+  - Art. 93 Abs. 1 Nr. 2 GG
+  - Art. 93 Abs. 1 Nr. 2a GG
+  - Art. 72 Abs. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vpr-knk-vorlagegegenstand-nachkonstitutionell
+  type: norm
+  front: Welche Normen können Gegenstand einer Richtervorlage nach Art. 100 Abs. 1
+    GG sein?
+  back: >-
+    Vorlagefähig sind nur förmliche Gesetze des Bundes und der Länder, also
+    Parlamentsgesetze; für Rechtsverordnungen, Satzungen und
+    Verwaltungsvorschriften besteht kein Verwerfungsmonopol - das Fachgericht
+    prüft und verwirft sie selbst. Weiter muss das Gesetz nachkonstitutionell
+    sein, also nach Inkrafttreten des Grundgesetzes am 24. Mai 1949 erlassen
+    worden sein; vorkonstitutionelle Gesetze darf jedes Gericht selbst
+    unangewendet lassen. Ein vorkonstitutionelles Gesetz wird jedoch
+    vorlagefähig, wenn der nachkonstitutionelle Gesetzgeber es "in seinen
+    Willen aufgenommen" hat, etwa durch inhaltliche Änderung oder ausdrückliche
+    Bestätigung. Auch Zustimmungsgesetze zu völkerrechtlichen Verträgen sind
+    vorlagefähig. Hintergrund des Verwerfungsmonopols ist der Respekt vor dem
+    demokratisch legitimierten Parlamentsgesetzgeber und das Interesse an
+    Rechtseinheit: Kein Fachgericht soll ein Parlamentsgesetz aus eigener
+    Autorität für nichtig erklären.
+  norms:
+  - Art. 100 Abs. 1 GG
+  - § 13 Nr. 11 BVerfGG
+  - § 80 Abs. 1 BVerfGG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vpr-knk-vorlageberechtigung-gericht
+  type: definition
+  front: Wer ist nach Art. 100 Abs. 1 GG vorlageberechtigt und -verpflichtet?
+  back: >-
+    Vorlageberechtigt und zugleich vorlagepflichtig ist jedes "Gericht" im
+    Sinne des Grundgesetzes - jeder staatliche Spruchkörper, der organisatorisch
+    und personell unabhängig ist und in einem rechtsstaatlichen Verfahren
+    verbindlich Recht spricht (Art. 92 GG). Erfasst sind alle Instanzen aller
+    Gerichtsbarkeiten, auch Amtsgerichte und Einzelrichter. Nicht
+    vorlageberechtigt sind Behörden, Schiedsgerichte und private Stellen; sie
+    müssen das Gesetz anwenden. Das Gericht legt nicht auf Antrag der
+    Beteiligten vor, sondern von Amts wegen durch Aussetzungs- und
+    Vorlagebeschluss; die Beteiligten können die Vorlage nur anregen. Bei
+    Zweifeln an der Vereinbarkeit eines Landesgesetzes mit der
+    Landesverfassung ist das Landesverfassungsgericht anzurufen, bei
+    Verstößen gegen das Grundgesetz das Bundesverfassungsgericht (Art. 100
+    Abs. 1 S. 1 GG).
+  norms:
+  - Art. 100 Abs. 1 S. 1 GG
+  - Art. 92 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vpr-knk-entscheidungserheblichkeit
+  type: definition
+  front: Wann ist ein Gesetz "entscheidungserheblich" i.S.d. Art. 100 Abs. 1 GG?
+  back: >-
+    Entscheidungserheblich ist die Norm, wenn das vorlegende Gericht bei ihrer
+    Gültigkeit anders entscheiden müsste als bei ihrer Ungültigkeit. Das
+    Gericht muss im Vorlagebeschluss darlegen, dass es auf die Norm für den
+    Ausgang des Rechtsstreits ankommt: Der Rechtsstreit muss ohne die Norm
+    einen anderen Ausgang nehmen, sei es im Ergebnis oder in der Begründung
+    des Tenors. Eine bloß abweichende Begründung bei gleichem Ergebnis genügt
+    nicht. Das Bundesverfassungsgericht prüft die Entscheidungserheblichkeit
+    nur eingeschränkt darauf, ob die Auffassung des Fachgerichts vertretbar
+    ist; die Auslegung des einfachen Rechts bleibt Sache des Fachgerichts.
+    Nicht entscheidungserheblich ist die Norm, wenn der Rechtsstreit schon aus
+    anderen Gründen (Unzulässigkeit der Klage, fehlende Tatbestandsmerkmale)
+    entschieden werden kann - das Gericht muss den Sachverhalt daher vor der
+    Vorlage vollständig aufklären und alle vorrangigen Fragen beantworten.
+  norms:
+  - Art. 100 Abs. 1 GG
+  - § 80 Abs. 2 S. 1 BVerfGG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vpr-knk-ueberzeugung-verfassungswidrigkeit
+  type: definition
+  front: Welche Anforderungen gelten an die "Überzeugung" des vorlegenden Gerichts
+    von der Verfassungswidrigkeit?
+  back: >-
+    Das Gericht muss das Gesetz für verfassungswidrig halten (Art. 100 Abs. 1
+    GG: "hält"); bloße Zweifel oder Bedenken genügen nicht - insoweit ist die
+    konkrete Normenkontrolle strenger als die abstrakte. Die Überzeugung muss
+    sich auf die Unvereinbarkeit mit dem Grundgesetz beziehen und im
+    Vorlagebeschluss nach § 80 Abs. 2 S. 1 BVerfGG umfassend begründet werden:
+    Das Gericht hat sich mit der Rechtslage, der Rechtsprechung des
+    Bundesverfassungsgerichts und den in der Literatur vertretenen
+    Auffassungen auseinanderzusetzen. Vorrangig ist zu prüfen, ob die Norm
+    verfassungskonform ausgelegt werden kann; ist das möglich, fehlt es an der
+    Überzeugung von der Verfassungswidrigkeit und die Vorlage ist unzulässig.
+    Ebenso unzulässig ist die Vorlage einer Norm, deren Verfassungsmäßigkeit
+    das Bundesverfassungsgericht bereits mit Gesetzeskraft (§ 31 Abs. 2
+    BVerfGG) bejaht hat, sofern sich die Sach- oder Rechtslage nicht
+    wesentlich geändert hat.
+  norms:
+  - Art. 100 Abs. 1 GG
+  - § 80 Abs. 2 S. 1 BVerfGG
+  - § 31 Abs. 2 BVerfGG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vpr-nk-rechtsfolge-nichtigkeit-unvereinbarkeit
+  type: streitstand
+  front: Welche Rechtsfolge hat die Feststellung der Verfassungswidrigkeit - Nichtigkeit
+    oder Unvereinbarkeit?
+  back: >-
+    Nach §§ 78, 82 Abs. 1 BVerfGG erklärt das Bundesverfassungsgericht ein
+    verfassungswidriges Gesetz für nichtig; die Entscheidung hat Gesetzeskraft
+    (§ 31 Abs. 2 BVerfGG). Dem liegt das Nichtigkeitsdogma zugrunde: Die
+    verfassungswidrige Norm ist von Anfang an (ex tunc) und ohne weiteren Akt
+    (ipso iure) unwirksam, das Urteil stellt dies nur fest. Eine
+    Gegenauffassung (Vernichtbarkeitslehre) sieht die Norm bis zur
+    gerichtlichen Entscheidung als wirksam an und die Nichtigerklärung als
+    konstitutiv. Praktisch hat sich ein Mittelweg durchgesetzt: Das
+    Bundesverfassungsgericht beschränkt sich in vielen Fällen auf eine
+    Unvereinbarerklärung, die § 31 Abs. 2 S. 2 BVerfGG und § 79 Abs. 1
+    BVerfGG voraussetzen - insbesondere bei Gleichheitsverstößen, weil der
+    Gesetzgeber mehrere Möglichkeiten zur Beseitigung hat, oder wenn die
+    Nichtigkeit einen der Verfassung noch ferneren Zustand schüfe. Häufig
+    ordnet es dann die befristete Fortgeltung an und setzt dem Gesetzgeber
+    eine Frist zur Neuregelung. Rechtskräftige Entscheidungen, die auf der
+    nichtigen Norm beruhen, bleiben nach § 79 Abs. 2 BVerfGG grundsätzlich
+    bestehen, dürfen aber nicht mehr vollstreckt werden; Strafurteile können
+    nach § 79 Abs. 1 BVerfGG wiederaufgenommen werden.
+  norms:
+  - § 78 BVerfGG
+  - § 82 Abs. 1 BVerfGG
+  - § 31 Abs. 2 BVerfGG
+  - § 79 Abs. 1 BVerfGG
+  - § 79 Abs. 2 BVerfGG
+  quellen:
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: or-vpr-nk-abgrenzung-abstrakt-konkret
+  type: schema_step
+  front: Vergleiche abstrakte und konkrete Normenkontrolle in ihren wesentlichen
+    Merkmalen.
+  back: >-
+    Abstrakte Normenkontrolle (Art. 93 Abs. 1 Nr. 2 GG, §§ 76-79 BVerfGG):
+    Antrag von Bundesregierung, Landesregierung oder einem Viertel der
+    Mitglieder des Bundestages; Gegenstand jede Rechtsnorm des Bundes oder der
+    Länder einschließlich untergesetzlicher Normen; Antragsgrund Zweifel bzw.
+    Für-nichtig-Halten; kein konkreter Rechtsstreit erforderlich; keine Frist.
+    Konkrete Normenkontrolle (Art. 100 Abs. 1 GG, §§ 80-82 BVerfGG): Vorlage
+    eines Gerichts von Amts wegen aus einem anhängigen Verfahren; Gegenstand
+    nur förmliche nachkonstitutionelle Gesetze; das Gericht muss von der
+    Verfassungswidrigkeit überzeugt sein und die Norm muss entscheidungserheblich
+    sein. Gemeinsam ist beiden Verfahren, dass sie objektive Verfahren ohne
+    Antragsgegner sind, dass das Bundesverfassungsgericht die Norm unter jedem
+    verfassungsrechtlichen Gesichtspunkt prüft (§ 81 BVerfGG: Entscheidung nur
+    über die Rechtsfrage) und dass die Entscheidung Gesetzeskraft hat (§ 31
+    Abs. 2 BVerfGG).
+  norms:
+  - Art. 93 Abs. 1 Nr. 2 GG
+  - Art. 100 Abs. 1 GG
+  - § 81 BVerfGG
+  - § 31 Abs. 2 BVerfGG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: or-schema-vpr-konkrete-normenkontrolle-100
+  title: Zulässigkeit einer Richtervorlage, Art. 100 Abs. 1 GG
+  norms:
+  - Art. 100 Abs. 1 GG
+  - § 80 BVerfGG
+  - § 13 Nr. 11 BVerfGG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Zuständigkeit des Bundesverfassungsgerichts
+    hinweis: Art. 100 Abs. 1 GG, § 13 Nr. 11, §§ 80 ff. BVerfGG.
+  - label: II. Vorlageberechtigung
+    children:
+    - label: 1. Gericht i.S.d. Art. 92 GG - jeder staatliche, unabhängige Spruchkörper,
+        alle Instanzen
+    - label: 2. Vorlage von Amts wegen durch Beschluss, nicht auf Antrag der Beteiligten
+  - label: III. Vorlagegegenstand
+    children:
+    - label: 1. Förmliches Gesetz des Bundes oder eines Landes (kein Verwerfungsmonopol
+        für Rechtsverordnungen und Satzungen)
+    - label: 2. Nachkonstitutionell - erlassen nach dem 24. Mai 1949 oder vom nachkonstitutionellen
+        Gesetzgeber in seinen Willen aufgenommen
+  - label: IV. Prüfungsmaßstab
+    hinweis: Grundgesetz bei Bundes- und Landesgesetzen; sonstiges Bundesrecht
+      bei Landesgesetzen (Art. 100 Abs. 1 S. 2 GG); bei Landesverfassung Vorlage
+      an das Landesverfassungsgericht.
+  - label: V. Überzeugung des Gerichts von der Verfassungswidrigkeit
+    children:
+    - label: 1. Nicht bloße Zweifel - das Gericht muss die Norm für verfassungswidrig
+        halten
+    - label: 2. Keine verfassungskonforme Auslegung möglich
+    - label: 3. Keine entgegenstehende Entscheidung mit Gesetzeskraft, § 31 Abs. 2
+        BVerfGG
+  - label: VI. Entscheidungserheblichkeit
+    hinweis: Bei Gültigkeit der Norm müsste anders entschieden werden als bei Ungültigkeit;
+      vorrangige Fragen des einfachen Rechts sind vorher zu klären.
+  - label: VII. Form und Begründung, § 80 Abs. 2 S. 1 BVerfGG
+    hinweis: Aussetzungs- und Vorlagebeschluss mit Darlegung von Entscheidungserheblichkeit
+      und Verfassungsverstoß.
+  - label: VIII. Begründetheit und Rechtsfolge
+    children:
+    - label: 1. Unvereinbarkeit der Norm mit dem Grundgesetz - Prüfung unter jedem
+        Gesichtspunkt, § 81 BVerfGG
+    - label: 2. Nichtigerklärung (§§ 82 Abs. 1, 78 BVerfGG) oder Unvereinbarerklärung,
+        jeweils mit Gesetzeskraft, § 31 Abs. 2 BVerfGG
+faelle:
+- slug: or-fall-richtervorlage-waschsalongesetz
+  title: Das Sonntagsverbot für Waschsalons
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  facts: >-
+    Der Landtag des Landes L beschließt im Jahr 2025 ein formell ordnungsgemäß
+    zustande gekommenes Gesetz, nach dem Selbstbedienungs-Waschsalons an Sonn-
+    und Feiertagen vollständig geschlossen bleiben müssen; Verstöße können mit
+    einer Untersagungsverfügung geahndet werden. Ausnahmen für
+    personallose Betriebe sieht das Gesetz nicht vor. A betreibt in der Stadt
+    S einen vollautomatischen Waschsalon ohne Personal, der bisher rund um die
+    Uhr geöffnet war. Nachdem die Stadt S ihm die Sonntagsöffnung untersagt
+    hat, erhebt A fristgerecht Anfechtungsklage. Die zuständige Kammer des
+    Verwaltungsgerichts ist nach eingehender Prüfung überzeugt, dass das
+    Verbot A unverhältnismäßig in seiner Berufsfreiheit aus Art. 12 Abs. 1 GG
+    beschränkt: Der Schutz der Sonntagsruhe und der Arbeitnehmer werde bei
+    einem Betrieb ohne Personal und ohne nennenswerte Außenwirkung nicht
+    berührt, und eine einschränkende Auslegung des eindeutigen Wortlauts
+    ("vollständig geschlossen") sei nicht möglich. Die Untersagungsverfügung
+    ist im Übrigen formell rechtmäßig und beruht allein auf dem neuen
+    Gesetz. Die Kammer erwägt, das Verfahren auszusetzen und die Frage dem
+    Bundesverfassungsgericht vorzulegen. A regt stattdessen an, das Gericht
+    möge das Gesetz einfach unangewendet lassen und die Verfügung aufheben.
+  question: Darf das Verwaltungsgericht dem Vorschlag des A folgen? Wäre eine
+    Vorlage an das Bundesverfassungsgericht zulässig, und wie würde dieses
+    voraussichtlich entscheiden?
+  steps:
+  - prompt: Darf das Verwaltungsgericht das Landesgesetz aus eigener Autorität
+      unangewendet lassen?
+    erwartung: >-
+      Nein - nach Art. 100 Abs. 1 S. 1 GG besteht ein Verwerfungsmonopol des
+      Bundesverfassungsgerichts für förmliche nachkonstitutionelle Gesetze.
+      Das Gesetz des Landes L von 2025 ist ein Parlamentsgesetz und
+      nachkonstitutionell. Hält das Gericht es für verfassungswidrig, muss es
+      das Verfahren aussetzen und vorlegen; ein Nichtanwenden wäre
+      verfassungswidrig.
+  - prompt: Ist das Verwaltungsgericht vorlageberechtigt und liegt ein tauglicher
+      Vorlagegegenstand vor?
+    erwartung: >-
+      Die Kammer des Verwaltungsgerichts ist ein Gericht i.S.d. Art. 92 GG und
+      damit vorlageberechtigt; sie legt von Amts wegen vor. Vorlagegegenstand
+      ist ein förmliches Landesgesetz aus 2025 - nachkonstitutionell.
+      Prüfungsmaßstab ist das Grundgesetz (Art. 12 Abs. 1 GG); zuständig ist
+      das Bundesverfassungsgericht nach Art. 100 Abs. 1 S. 1 GG, § 13 Nr. 11
+      BVerfGG.
+  - prompt: Ist die Norm entscheidungserheblich?
+    erwartung: >-
+      Ja - die Anfechtungsklage ist zulässig und die Verfügung formell
+      rechtmäßig; sie stützt sich allein auf das Sonntagsverbot. Ist das
+      Gesetz gültig, ist die Verfügung rechtmäßig und die Klage abzuweisen;
+      ist es nichtig, fehlt die Ermächtigungsgrundlage und die Verfügung ist
+      aufzuheben. Das Gericht müsste also je nach Gültigkeit unterschiedlich
+      entscheiden. Vorrangige Fragen des einfachen Rechts sind geklärt.
+  - prompt: Genügt die Haltung der Kammer den Anforderungen an die Überzeugung von
+      der Verfassungswidrigkeit?
+    erwartung: >-
+      Ja - die Kammer hat nicht nur Zweifel, sondern ist nach eingehender
+      Prüfung von der Verfassungswidrigkeit überzeugt. Eine verfassungskonforme
+      Auslegung scheidet wegen des eindeutigen Wortlauts aus. Die
+      Überzeugung ist im Vorlagebeschluss nach § 80 Abs. 2 S. 1 BVerfGG unter
+      Auseinandersetzung mit Rechtsprechung und Literatur darzulegen.
+  - prompt: Wie wird das Bundesverfassungsgericht in der Sache entscheiden?
+    erwartung: >-
+      Das Verbot greift in die Berufsausübungsfreiheit des A ein (Art. 12
+      Abs. 1 GG). Es dient legitimen Zwecken (Sonn- und Feiertagsschutz nach
+      Art. 140 GG i.V.m. Art. 139 der Weimarer Reichsverfassung,
+      Arbeitnehmerschutz) und ist geeignet. Erforderlich ist es aber nicht,
+      soweit es personallose Betriebe ohne Außenwirkung erfasst: Eine
+      Ausnahmeregelung wäre ein milderes, gleich wirksames Mittel. Jedenfalls
+      ist das ausnahmslose Verbot für solche Betriebe unangemessen, da dem
+      geringen Gewinn für die Sonntagsruhe ein vollständiger
+      Einnahmeausfall gegenübersteht. Das Gesetz ist insoweit mit Art. 12
+      Abs. 1 GG unvereinbar. Das Bundesverfassungsgericht erklärt es nach
+      § 82 Abs. 1 i.V.m. § 78 BVerfGG für nichtig oder - da der Gesetzgeber
+      über die Ausgestaltung einer Ausnahme entscheiden kann - für
+      unvereinbar mit Fristsetzung; die Entscheidung hat Gesetzeskraft (§ 31
+      Abs. 2 BVerfGG).
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Verwerfungsmonopol des Bundesverfassungsgerichts erkannt - kein Nichtanwenden
+        eines nachkonstitutionellen Parlamentsgesetzes durch das Fachgericht
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 100 Abs. 1 S. 1 GG
+      keywords:
+      - Verwerfungsmonopol
+      - Vorlagepflicht
+      - Art. 100
+      card_slugs:
+      - or-vpr-knk-vorlagegegenstand-nachkonstitutionell
+    - id: p2
+      label: Vorlageberechtigung des Verwaltungsgerichts als Gericht i.S.d. Art. 92
+        GG und Vorlage von Amts wegen benannt
+      weight: 1.0
+      required: false
+      norms:
+      - Art. 92 GG
+      - Art. 100 Abs. 1 S. 1 GG
+      keywords:
+      - Gericht
+      - von Amts wegen
+      card_slugs:
+      - or-vpr-knk-vorlageberechtigung-gericht
+    - id: p3
+      label: Vorlagegegenstand als förmliches, nachkonstitutionelles Landesgesetz
+        qualifiziert und Prüfungsmaßstab Grundgesetz benannt
+      weight: 1.5
+      required: true
+      norms:
+      - Art. 100 Abs. 1 GG
+      keywords:
+      - förmliches Gesetz
+      - nachkonstitutionell
+      - Landesgesetz
+      card_slugs:
+      - or-vpr-knk-vorlagegegenstand-nachkonstitutionell
+    - id: p4
+      label: Entscheidungserheblichkeit mit Blick auf die unterschiedliche Entscheidung
+        bei Gültigkeit und Nichtigkeit begründet
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 100 Abs. 1 GG
+      - § 80 Abs. 2 S. 1 BVerfGG
+      keywords:
+      - entscheidungserheblich
+      - anders entscheiden
+      - Ermächtigungsgrundlage
+      card_slugs:
+      - or-vpr-knk-entscheidungserheblichkeit
+    - id: p5
+      label: Überzeugung von der Verfassungswidrigkeit (keine bloßen Zweifel) und
+        Ausschluss verfassungskonformer Auslegung geprüft, Begründungspflicht genannt
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 100 Abs. 1 GG
+      - § 80 Abs. 2 S. 1 BVerfGG
+      keywords:
+      - Überzeugung
+      - verfassungskonforme Auslegung
+      - Begründung
+      card_slugs:
+      - or-vpr-knk-ueberzeugung-verfassungswidrigkeit
+    - id: p6
+      label: Verhältnismäßigkeitsprüfung am Maßstab des Art. 12 Abs. 1 GG mit Ergebnis
+        Verfassungswidrigkeit für personallose Betriebe
+      weight: 2.0
+      required: false
+      norms:
+      - Art. 12 Abs. 1 GG
+      keywords:
+      - Berufsfreiheit
+      - Verhältnismäßigkeit
+      - Erforderlichkeit
+      - milderes Mittel
+      card_slugs:
+      - or-gr-art12-dreistufentheorie
+    - id: p7
+      label: Rechtsfolge Nichtig- oder Unvereinbarerklärung mit Gesetzeskraft nach
+        §§ 82, 78, 31 Abs. 2 BVerfGG benannt
+      weight: 1.5
+      required: false
+      norms:
+      - § 82 Abs. 1 BVerfGG
+      - § 78 BVerfGG
+      - § 31 Abs. 2 BVerfGG
+      keywords:
+      - nichtig
+      - unvereinbar
+      - Gesetzeskraft
+      card_slugs:
+      - or-vpr-nk-rechtsfolge-nichtigkeit-unvereinbarkeit

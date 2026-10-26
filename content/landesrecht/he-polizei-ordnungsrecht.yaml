@@ -1,0 +1,96 @@
+topic:
+  slug: he-polizei-ordnungsrecht
+  area: oeffentliches-recht
+  title: Polizei- und Ordnungsrecht Hessen
+  parent: or-sicherheitsrecht-generalklausel-standardmassnahmen
+  bundesland: HE
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: he-por-generalklausel
+  type: norm
+  front: Wo steht die polizeiliche Generalklausel in Hessen und was setzt sie voraus?
+  back: 'Fundstelle: § 11 HSOG. Die Generalklausel ermaechtigt zu den notwendigen Massnahmen, um eine
+    im Einzelfall bestehende Gefahr fuer die oeffentliche Sicherheit oder Ordnung abzuwehren. Sie ist
+    subsidiaer: Greift eine Standardmassnahme oder ein Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite
+    besteht Ermessen, begrenzt durch den Grundsatz der Verhaeltnismaessigkeit.'
+  norms:
+  - § 11 HSOG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: he-por-standardmassnahmen
+  type: norm
+  front: Wo stehen die polizeilichen Standardmassnahmen in Hessen?
+  back: '§§ 12 ff. HSOG - unter anderem Identitaetsfeststellung, Platzverweis, Gewahrsam, Durchsuchung
+    von Personen und Sachen, Sicherstellung. Standardmassnahmen sind abschliessende Spezialregelungen:
+    Liegen ihre Voraussetzungen nicht vor, darf nicht auf die Generalklausel ausgewichen werden (Sperrwirkung).'
+  norms:
+  - §§ 12 ff. HSOG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: he-por-aufbau
+  type: schema_step
+  front: 'Aufbau: Rechtmaessigkeit einer Gefahrenabwehrmassnahme nach dem Landesrecht von Hessen'
+  back: 'I. Ermaechtigungsgrundlage (Hessisches Gesetz ueber die oeffentliche Sicherheit und Ordnung (HSOG):
+    Standardmassnahme vor Generalklausel). II. Formelle Rechtmaessigkeit: 1. Zustaendigkeit (sachlich:
+    welche Behoerde - Gefahrenabwehrbehoerden (allgemeine Ordnungsbehoerden) und Polizeibehoerden - beide
+    im HSOG (§§ 1 ff.); Polizei bei Eilbeduerftigkeit (§ 2 HSOG); oertlich; instanziell), 2. Verfahren
+    (Anhoerung, § 28 VwVfG bzw. Landesrecht), 3. Form. III. Materielle Rechtmaessigkeit: 1. Tatbestand
+    (Schutzgut, Gefahrbegriff, Gefahrenprognose ex ante), 2. richtiger Adressat (Stoerer: §§ 6, 7, 9 HSOG),
+    3. Rechtsfolge: Ermessen und Verhaeltnismaessigkeit (geeignet, erforderlich, angemessen).'
+  norms:
+  - § 11 HSOG
+  - §§ 6, 7, 9 HSOG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: he-por-stoerer
+  type: norm
+  front: Wo sind Verhaltensstoerer, Zustandsstoerer und Nichtstoerer in Hessen geregelt?
+  back: '§§ 6, 7, 9 HSOG. Verhaltensstoerer: wer die Gefahr durch sein Verhalten verursacht (Theorie der
+    unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstoerer: Inhaber der tatsaechlichen
+    Gewalt bzw. Eigentuemer einer gefaehrlichen Sache. Nichtstoerer: Inanspruchnahme nur unter den engen
+    Voraussetzungen des polizeilichen Notstands (gegenwaertige erhebliche Gefahr, Stoerer nicht greifbar,
+    Behoerde selbst nicht in der Lage), mit Entschaedigungsanspruch.'
+  norms:
+  - §§ 6, 7, 9 HSOG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: he-por-zustaendigkeit
+  type: definition
+  front: Wer ist in Hessen fuer die Gefahrenabwehr zustaendig - Ordnungs-/Sicherheitsbehoerde oder Polizei?
+  back: 'Gefahrenabwehrbehoerden (allgemeine Ordnungsbehoerden) und Polizeibehoerden - beide im HSOG (§§
+    1 ff.); Polizei bei Eilbeduerftigkeit (§ 2 HSOG). Pruefungsrelevant ist die Abgrenzung: Die allgemeine
+    Gefahrenabwehr liegt grundsaetzlich bei den Verwaltungs-/Ordnungsbehoerden; der Polizeivollzugsdienst
+    wird taetig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere Zuweisung besteht.
+    Ein Handeln der unzustaendigen Behoerde macht die Massnahme formell rechtswidrig.'
+  norms:
+  - Hessisches Gesetz ueber die oeffentliche Sicherheit und Ordnung (HSOG)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: he-por-vollstreckung
+  type: norm
+  front: Nach welchem Gesetz wird eine Gefahrenabwehrverfuegung in Hessen vollstreckt?
+  back: 'Hessisches Verwaltungsvollstreckungsgesetz (HessVwVG). Regelfall ist das gestreckte Verfahren:
+    Grundverfuegung - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme, Zwangsgeld,
+    unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausfuehrung ohne vorausgehenden
+    Verwaltungsakt moeglich; die Kosten traegt der Pflichtige.'
+  norms:
+  - Hessisches Verwaltungsvollstreckungsgesetz (HessVwVG)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09

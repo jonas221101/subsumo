@@ -41,14 +41,17 @@ class SubsumoButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Das Label kuerzt sich mit Ellipse statt ueberzulaufen, wenn der
+    // Button schmaler ist als sein Text (schmale Kachel, grosse Systemschrift).
+    final text = Text(label, maxLines: 1, overflow: TextOverflow.ellipsis, softWrap: false);
     final child = icon == null
-        ? Text(label)
+        ? text
         : Row(
             mainAxisSize: MainAxisSize.min,
             children: [
               Icon(icon, size: 18),
               const SizedBox(width: Spacing.sm),
-              Text(label),
+              Flexible(child: text),
             ],
           );
 

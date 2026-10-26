@@ -1,0 +1,44 @@
+kurs:
+  slug: or-examenskurs
+  title: Examenskurs Oeffentliches Recht
+  area: oeffentliches-recht
+  semester_default: 7
+  examenskurs: true
+  stand: 2026-09
+  quellen:
+  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: Gesamtwiederholung Staats- und Verwaltungsrecht auf Examensniveau, einschliesslich des
+    gesamten Landesrechts des eigenen Bundeslands.
+  lernziele:
+  - Verwaltungsrechtliche Examensklausur mit Landesrecht als Ermaechtigungsgrundlage strukturieren
+  - Verfassungsrechtliche Klausur mit Verfassungsbeschwerde oder Organstreit aufbauen
+  klausurformat:
+    typ: Examensklausur
+    minuten: 300
+  topic_slugs:
+  - or-staatsorganisationsrecht-gesetzgebungsverfahren
+  - or-verfassungsprozessrecht-organstreitverfahren
+  - or-grundrechte
+  - or-allgemeine-handlungsfreiheit
+  - or-gleichheitssatz
+  - or-meinungsfreiheit
+  - or-versammlungsfreiheit
+  - or-berufsfreiheit
+  - or-eigentumsgarantie
+  - or-vwvfg-verwaltungsakt
+  - or-va-rechtmaessigkeitspruefung
+  - or-vwvfg-ermessen-beurteilungsspielraum
+  - or-vwvfg-nebenbestimmungen
+  - or-vwvfg-ruecknahme-widerruf
+  - or-vwgo-anfechtungsklage
+  - or-vwgo-verpflichtungsklage
+  - or-vwgo-vorlaeufiger-rechtsschutz
+  - or-sicherheitsrecht-generalklausel-standardmassnahmen
+  landesrecht_kategorien:
+  - polizei-ordnungsrecht
+  - landesrecht-allgemein
+  fehlende_themen:
+  - Bauplanungsrecht (P3)
+  - Unionsrecht Grundzuege (P3)
+  - Normenkontrolle (P3)

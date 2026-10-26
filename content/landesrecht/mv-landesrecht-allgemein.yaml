@@ -1,0 +1,83 @@
+topic:
+  slug: mv-landesrecht-allgemein
+  area: oeffentliches-recht
+  title: 'Landesrecht Mecklenburg-Vorpommern: Verfassung, Verwaltungsverfahren, Kommunal- und Baurecht'
+  parent: or-vwvfg-verwaltungsakt
+  bundesland: MV
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: mv-lra-vwvfg
+  type: norm
+  front: Welches Verwaltungsverfahrensgesetz gilt fuer Landesbehoerden in Mecklenburg-Vorpommern?
+  back: Landesverwaltungsverfahrensgesetz M-V (VwVfG M-V) - Verweisung auf das VwVfG des Bundes. Das VwVfG
+    des Bundes gilt nur fuer Bundesbehoerden (§ 1 VwVfG); fuer Landes- und Kommunalbehoerden ist das Landesgesetz
+    massgeblich. Bei Verweisungsgesetzen werden die Bundesnormen 'entsprechend' angewendet und sind so
+    zu zitieren (z. B. '§ 35 VwVfG i. V. m. § 1 des Landesgesetzes'), bei Vollgesetzen ist die Landesnorm
+    selbst zu zitieren.
+  norms:
+  - Landesverwaltungsverfahrensgesetz M-V (VwVfG M-V) - Verweisung auf das VwVfG des Bundes
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: mv-lra-verfassungsgericht
+  type: norm
+  front: Gibt es in Mecklenburg-Vorpommern eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
+  back: 'Ja - Art. 53 Nr. 6 Verf M-V. Zustaendiges Gericht: Landesverfassungsgericht Mecklenburg-Vorpommern
+    auf Grundlage der Verfassung des Landes Mecklenburg-Vorpommern (Verf M-V). Verfahrensgegenstand ist
+    nur die Verletzung von Landesgrundrechten durch Landesstaatsgewalt; Bundesrecht ist Pruefungsmassstab
+    nur, soweit die Landesverfassung darauf verweist. Daneben steht immer die Verfassungsbeschwerde zum
+    BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
+  norms:
+  - Verfassung des Landes Mecklenburg-Vorpommern (Verf M-V)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: mv-lra-kommunalverfassung
+  type: norm
+  front: Welches Gesetz regelt die Kommunalverfassung in Mecklenburg-Vorpommern und welche Hauptorgane
+    hat die Gemeinde?
+  back: 'Kommunalverfassung M-V (KV M-V): Gemeindevertretung und Buergermeister. Grundlage ist die Selbstverwaltungsgarantie
+    (Art. 28 Abs. 2 GG und Landesverfassung): eigenverantwortliche Regelung aller Angelegenheiten der
+    oertlichen Gemeinschaft. Klausurklassiker: Zustaendigkeitsstreit zwischen Vertretung und Verwaltungsspitze,
+    Kommunalverfassungsstreit, Rechtsaufsicht.'
+  norms:
+  - 'Kommunalverfassung M-V (KV M-V): Gemeindevertretung und Buergermeister'
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: mv-lra-bauordnung
+  type: norm
+  front: Wie heisst die Bauordnung in Mecklenburg-Vorpommern und wie ist eine Baugenehmigung zu pruefen?
+  back: 'Landesbauordnung Mecklenburg-Vorpommern (LBauO M-V). Anspruch auf Baugenehmigung besteht, wenn
+    dem Vorhaben keine oeffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungs-beduerftigkeit
+    (Errichtung, Aenderung, Nutzungsaenderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulaessigkeit
+    nach §§ 29 ff. BauGB (Bundesrecht), bauordnungsrechtliche Zulaessigkeit nach der Landesbauordnung
+    (Abstandsflaechen, Gestaltung, Stellplaetze).'
+  norms:
+  - Landesbauordnung Mecklenburg-Vorpommern (LBauO M-V)
+  - §§ 29 ff. BauGB
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: mv-lra-pflichtstoff
+  type: definition
+  front: Welche Landesrechtsgebiete gehoeren in Mecklenburg-Vorpommern zum Pflichtstoff des Oeffentlichen
+    Rechts?
+  back: Ordnungsrecht (SOG M-V); Kommunalrecht (KV M-V); Bauordnungsrecht (LBauO M-V); Landesverfassung.
+    Landesrecht wird im Examen fast nie isoliert, sondern eingebettet in eine verwaltungsprozessuale Einkleidung
+    (Anfechtungs-/Verpflichtungsklage, vorlaeufiger Rechtsschutz) geprueft - die Landesnorm ist die Ermaechtigungsgrundlage,
+    der Aufbau bleibt der allgemeine.
+  norms: []
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09

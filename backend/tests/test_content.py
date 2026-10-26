@@ -99,7 +99,7 @@ def test_doppelte_slugs_werden_erkannt(tmp_path):
 def test_veralteter_inhalt_erzeugt_eine_warnung_keinen_fehler(tmp_path):
     bundle = load_content(write(tmp_path, "t.yaml", VALID.replace("2026-09", "2015-01")))
     assert bundle.ok
-    assert any("redaktionell pruefen" in w for w in bundle.warnings)
+    assert any("redaktionell prüfen" in w for w in bundle.warnings)
 
 
 def test_fall_ohne_erwartungshorizont_wird_abgelehnt(tmp_path):
@@ -166,7 +166,7 @@ def test_kaputtes_yaml_bricht_nicht_den_ganzen_lauf(tmp_path):
     bundle = load_content(tmp_path)
     assert not bundle.ok
     assert any("YAML nicht lesbar" in e for e in bundle.errors)
-    assert bundle.cards, "Die gueltige Datei muss trotzdem gelesen worden sein"
+    assert bundle.cards, "Die gültige Datei muss trotzdem gelesen worden sein"
 
 
 def test_fehlendes_verzeichnis_meldet_sauber(tmp_path):

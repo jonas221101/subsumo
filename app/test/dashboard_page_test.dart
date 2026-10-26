@@ -120,17 +120,17 @@ void main() {
 
       expect(find.text('Mit Pro lernst du unbegrenzt in allen Rechtsgebieten.'), findsOneWidget);
       expect(find.widgetWithText(SubsumoButton, 'Pro werden'), findsOneWidget);
-      expect(find.textContaining('Abo gekuendigt'), findsNothing);
+      expect(find.textContaining('Abo gekündigt'), findsNothing);
     });
 
-    testWidgets('Pro-Zustand (aktiv, nicht gekuendigt) zeigt keinen Banner', (tester) async {
+    testWidgets('Pro-Zustand (aktiv, nicht gekündigt) zeigt keinen Banner', (tester) async {
       await pumpDashboard(tester, proActive: true, cancelAtPeriodEnd: false);
 
       expect(find.text('Mit Pro lernst du unbegrenzt in allen Rechtsgebieten.'), findsNothing);
-      expect(find.textContaining('Abo gekuendigt'), findsNothing);
+      expect(find.textContaining('Abo gekündigt'), findsNothing);
     });
 
-    testWidgets('Gekuendigt-Zustand zeigt einen persistenten Hinweis mit Enddatum',
+    testWidgets('Gekündigt-Zustand zeigt einen persistenten Hinweis mit Enddatum',
         (tester) async {
       await pumpDashboard(
         tester,
@@ -139,7 +139,7 @@ void main() {
         proUntil: '2026-10-15T00:00:00Z',
       );
 
-      expect(find.text('Abo gekuendigt, Zugriff bis 15.10.2026.'), findsOneWidget);
+      expect(find.text('Abo gekündigt, Zugriff bis 15.10.2026.'), findsOneWidget);
       // Hat Vorrang vor der allgemeinen Pro-Werbung.
       expect(find.text('Mit Pro lernst du unbegrenzt in allen Rechtsgebieten.'), findsNothing);
     });

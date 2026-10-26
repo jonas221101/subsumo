@@ -18,7 +18,7 @@ const legalDocs = [
   LegalDoc(slug: 'agb', title: 'AGB', assetPath: '../docs/legal/02-agb.md'),
   LegalDoc(
     slug: 'datenschutz',
-    title: 'Datenschutzerklaerung',
+    title: 'Datenschutzerklärung',
     assetPath: '../docs/legal/03-datenschutzerklaerung.md',
   ),
   LegalDoc(

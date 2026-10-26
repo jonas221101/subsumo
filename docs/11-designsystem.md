@@ -475,3 +475,88 @@ Leitgrundsatz erzwungen war.
   ohne Gamification (SUB-242) sind eigene Aufgaben; die dort faelligen
   docs/11-Nachtraege (Abschnitt 2.6 Scroll-Reveal-Regel) liefern diese
   Aufgaben selbst.
+
+## 9. Relaunch der App-Screens: "Kanzlei-Editorial"
+
+Die eingeloggte App (Startseite, Karteikarten, Schemata, Faelle, Login,
+Gutachten-Kopf) wurde als Ganzes neu gesetzt. Leitbild: ein sauber
+gesetzter juristischer Kommentar, nicht ein SaaS-Dashboard. Die
+Leitprinzipien 4/5 ("Ehrlichkeit vor Motivation", "Kein Druck durch Design")
+bleiben unangetastet - der Relaunch verschiebt Handwerk, nicht Haltung.
+
+### 9.1 Was sich geaendert hat
+
+| Bereich | Vorher | Nachher |
+|---|---|---|
+| Flaechen | Reinweiss/Neutralgrau (`#FFFFFF`/`#F0F1F4`/`#E4E7EB`) | Warmes Papier: `surface0 #FDFCF9` (Karte), `surface1 #F4F1EA` (Canvas), `surface2 #E9E4D8` (Seitenleiste), Haarlinie `#DDD7C9`. Dark: Tinten-Navy `#171D27`/`#0F131A`/`#1F2733`, Haarlinie `#2C3543`. |
+| Rollenlogik | Canvas = `surface0`, Karte = `surface1` (heller Canvas, dunklere Karte) | **Umgekehrt:** Canvas = `surface1`, Karte = `surface0` mit 1px Haarlinie (`outlineVariant`) und `Elevation.level0`. `scaffoldBackgroundColor` ist `surfaceContainerHighest`, `surfaceContainerHigh` ist neu auf `surface2` gepinnt. `Elevation.*` unveraendert. |
+| Typografie | Fraunces nur fuer `heroLarge/heroSmall` (oeffentlich) | Fraunces zusaetzlich fuer `headingLarge` (30), `headingMedium` (22), `headingSmall` (18), `numeral` (56) und `reading` (20) in App-Screens. Neu: `eyebrow` (Grotesk 12, Sperrung 1.4, Versalien). `body*`/`title*` unveraendert Grotesk. `displayLarge/Medium` (Wortmarke) unveraendert. |
+| Bewertungen im Lernmodus | Vier Buttons rot/gelb/gruen/blau (`error`/`feedbackHint`/`feedbackPositive`/`primary`) | Vier Buttons ohne Signalfarbe: "Gut" gefuellt, drei Konturen. Das war eine Ampel und ein Bruch mit Abschnitt 1 dieses Dokuments. |
+| Navigation | AppBar mit Tab-Titel, schmaler `NavigationRail` | Ab 800px erweiterte Seitenleiste (`NavigationRail(extended: true)`) mit Wortmarke oben und Konto unten; AppBar traegt nur Aktionen (schmal: die Wortmarke). Jede Seite hat einen `SubsumoPageHeader`. |
+
+### 9.2 Neue Komponenten (Abschnitt 3 erweitert)
+
+| Komponente | Zweck | Nicht fuer |
+|---|---|---|
+| `SubsumoEyebrow` | Gesperrtes Versal-Label ueber Titeln/Bloecken ("HEUTE", "SACHVERHALT") | Fliesstext, Signale |
+| `SubsumoPageHeader` | Eyebrow + Serifen-Titel + Unterzeile + optionale Aktion, genau einer pro Seite | Karten-/Listentitel |
+| `SubsumoPanel` | Haarlinien-Flaeche ohne Card-Semantik (Listenzeile, Kennzahl-Kachel), optional anklickbar; `tone` card/raised/brand | Oeffentliche Sektionen (dort `SubsumoSection`) |
+| `SubsumoDots` | Stufenwert als Punktreihe (Relevanz 4/5, Schwierigkeit 2/5), **eine** Farbe unabhaengig vom Wert | Lernstaende/Anteile (dafuer `SubsumoProgressMeter`) |
+
+### 9.3 Funktionale Aenderungen
+
+- Startseite "Heute": faellige Karten als Kennzahl mit Direkteinstieg
+  (`HomeShell` reicht `onStartReview` durch), Lernstand, Rechtsgebiete,
+  Themenregister mit Relevanz-Punkten. `HomeShell` laedt den Kartenstapel
+  beim Start.
+- Lernmodus: Leertaste/Enter deckt auf, 1-4 (auch Ziffernblock) bewertet;
+  Zaehler "n von N" je Sitzung.
+- Schemata: Gliederungszeichen I. / 1. / a) / aa) / (1) (`outlineNumeral`),
+  Suche nach Titel oder Norm.
+- Faelle: Suche und Rechtsgebiets-Filter clientseitig, Schwierigkeit als
+  Punktreihe.
+- Login: ab 800px zweigeteilt (Hero-Verlauf links, Formular rechts).
+- `SubsumoButton` kuerzt sein Label mit Ellipse statt ueberzulaufen.
+
+### 9.4 Kontraste (nachgerechnet, WCAG 2.x)
+
+| Kombination | Verhaeltnis | Bestanden |
+|---|---|---|
+| `ink900 #14181D` auf `surface1Light #F4F1EA` | 15.9:1 | AAA |
+| `ink700 #3C434B` auf `surface1Light` | 9.0:1 | AAA |
+| `ink700 #3C434B` auf `surface2Light #E9E4D8` | 8.2:1 | AAA |
+| `brand700 #1F3A5F` (Primaerfuellung) auf `surface1Light` | 9.7:1 | AAA |
+| `ink900Dark #EDEFF2` auf `surface1Dark #0F131A` | 17.0:1 | AAA |
+| `ink700Dark #C3C8CF` auf `surface0Dark #171D27` | 10.9:1 | AAA |
+| `hairlineLight #DDD7C9` auf `surface0Light #FDFCF9` (nicht-textuell) | 1.3:1 | dekorative Trennlinie, kein Bedienelement - bewusst leise; Bedienelement-Konturen nutzen `outline` (`ink300`, 2.0:1 gegen `surface0`, bzw. Fuellung `primary`) |
+
+### 9.5 Schrift und Umlaute
+
+- **Fliesstextschrift ist Source Sans 3** (Adobe, SIL OFL 1.1, Release
+  3.052R; Regular/Italic/Semibold/Bold als statische Schnitte, siehe
+  `app/assets/fonts/LIZENZ.md`). Der Familienname im Code bleibt `Subsumo`,
+  damit kein TextStyle angefasst werden musste. DejaVu Sans ist entfernt.
+  Die Typoskala wurde eine Stufe angehoben (body 17/16/14, title 22/18/16),
+  weil Source Sans 3 eine kleinere x-Hoehe hat.
+- Die Material-Rollen `headlineMedium`/`headlineSmall` sind auf
+  `headingLarge`/`headingMedium` (Fraunces) gelegt - dadurch tragen auch
+  Landingpage, Preisseite, Rechtstexte und das Gutachten-Ergebnis die
+  Serife, ohne dass diese Seiten einzeln geaendert wurden.
+- **Echte Umlaute und ß** in allen nutzersichtbaren Texten: App-Strings,
+  Backend-Meldungen und die Lerninhalte (`content/**/*.yaml`, nur Werte -
+  Slugs, Schluessel, `area`/`type` bleiben ASCII). Die Umstellung lief
+  woerterbuchgestuetzt (Hunspell de_DE + Haeufigkeitsliste), damit
+  „Zueignung", „Untreue", „aktuell", „Quellen" oder „Statue" nicht
+  faelschlich gewandelt werden; Komposita ohne Woerterbuchtreffer folgen
+  einer Heuristik (kein Umlaut nach Vokal/q, „-uell"-Adjektive bleiben) mit
+  eindeutigen ß-Morphemen (gemäß, -mäßig, äußer, groß, schließ, Maßnahme,
+  Fuß, Straße). Neue Inhalte schreiben Umlaute direkt; die Suche im
+  Evaluator faltet weiterhin beide Schreibweisen (`_digraph_fold`).
+
+### 9.6 Weiterhin ausdruecklich nicht
+
+Keine Ampel-Logik, keine Streaks, kein Konfetti, keine Illustration oder
+Maskottchen in App-Screens, kein Bounce. Das Subsumtions-Motiv bleibt auf
+Hero/Footer beschraenkt. `SubsumoProgressMeter` fuellt weiterhin immer in
+`primary`.
+

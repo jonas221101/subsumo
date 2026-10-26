@@ -21,7 +21,7 @@ def get_current_user(
     if not authorization or not authorization.lower().startswith("bearer "):
         raise HTTPException(
             status.HTTP_401_UNAUTHORIZED,
-            "Kein Bearer-Token uebermittelt",
+            "Kein Bearer-Token übermittelt",
             headers={"WWW-Authenticate": "Bearer"},
         )
     try:

@@ -1,0 +1,401 @@
+topic:
+  slug: sr-bt-koerperverletzung-226-227
+  area: strafrecht
+  title: Schwere Körperverletzung und Körperverletzung mit Todesfolge, §§ 226, 227 StGB
+  parent: sr-at
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-fable-5-1
+    status: in-pruefung
+    normzitate_geprueft: true
+cards:
+- slug: sr-kv226-erfolgsqualifikation-begriff
+  type: definition
+  front: 'Definiere: erfolgsqualifiziertes Delikt'
+  back: >-
+    Ein erfolgsqualifiziertes Delikt verbindet ein vorsätzliches Grunddelikt mit
+    einer besonderen schweren Folge, die dem Täter nach § 18 StGB zugerechnet wird,
+    wenn er sie wenigstens fahrlässig verursacht hat. Der Strafrahmen liegt
+    deutlich über dem, was Tateinheit von Grunddelikt und Fahrlässigkeitsdelikt
+    ergäbe; dieser Strafsprung wird damit gerechtfertigt, dass sich in der schweren
+    Folge gerade die dem Grunddelikt eigentümliche Gefahr verwirklicht hat. Daraus
+    folgt das ungeschriebene Erfordernis eines spezifischen Gefahrzusammenhangs
+    (Unmittelbarkeitszusammenhang) zwischen Grunddelikt und Folge. Beispiele im
+    Körperverletzungsrecht sind § 226 Abs. 1 StGB und § 227 StGB; auch § 251 StGB
+    und § 239 Abs. 4 StGB folgen dieser Struktur.
+  norms:
+  - § 18 StGB
+  - § 226 Abs. 1 StGB
+  - § 227 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-kv226-18-fahrlaessigkeit-folge
+  type: norm
+  front: 'Was regelt § 18 StGB und welche Bedeutung hat § 11 Abs. 2 StGB für erfolgsqualifizierte Delikte?'
+  back: >-
+    Nach § 18 StGB trifft die an eine besondere Folge der Tat geknüpfte höhere
+    Strafe den Täter oder Teilnehmer nur, wenn ihm hinsichtlich dieser Folge
+    wenigstens Fahrlässigkeit zur Last fällt. Erforderlich ist also, dass die
+    schwere Folge objektiv und subjektiv vorhersehbar war; Vorsatz hinsichtlich der
+    Folge genügt erst recht, soweit die Norm nicht eine reine
+    Vorsatz-Fahrlässigkeits-Kombination ist. Nach § 11 Abs. 2 StGB gilt eine Tat
+    auch dann als vorsätzlich, wenn sie einen gesetzlichen Tatbestand erfüllt, der
+    hinsichtlich der Handlung Vorsatz voraussetzt und hinsichtlich der Folge
+    Fahrlässigkeit ausreichen lässt. Deshalb sind Versuch (§ 23 Abs. 1 StGB) und
+    Teilnahme (§§ 26, 27 StGB) an erfolgsqualifizierten Delikten möglich. Jeder
+    Beteiligte muss die Fahrlässigkeit hinsichtlich der Folge selbst erfüllen.
+  norms:
+  - § 18 StGB
+  - § 11 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-kv226-schwere-folgen-abs1
+  type: norm
+  front: 'Welche schweren Folgen nennt § 226 Abs. 1 StGB?'
+  back: >-
+    § 226 Abs. 1 StGB setzt voraus, dass die Körperverletzung zur Folge hat:
+    Nr. 1 den Verlust des Sehvermögens auf einem oder beiden Augen, des Gehörs, des
+    Sprechvermögens oder der Fortpflanzungsfähigkeit; Nr. 2 den Verlust oder die
+    dauernde Gebrauchsunfähigkeit eines wichtigen Glieds des Körpers; Nr. 3 eine
+    erhebliche dauernde Entstellung oder das Verfallen in Siechtum, Lähmung,
+    geistige Krankheit oder Behinderung. Alle Folgen müssen von Dauer sein; eine
+    vollständige Heilung schließt die Qualifikation aus, eine langwierige, in ihrer
+    Behebung ungewisse Beeinträchtigung genügt. Verlust des Sehvermögens verlangt
+    keine völlige Blindheit, sondern die Herabsetzung auf ein für den Gebrauch
+    praktisch bedeutungsloses Maß. Entstellung ist eine Verunstaltung der
+    Gesamterscheinung, die im Gewicht den übrigen Folgen vergleichbar ist. Der
+    Strafrahmen beträgt ein bis zehn Jahre, in minder schweren Fällen sechs Monate
+    bis fünf Jahre, § 226 Abs. 3 StGB.
+  norms:
+  - § 226 Abs. 1 StGB
+  - § 226 Abs. 3 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-kv226-wichtiges-glied-streitstand
+  type: streitstand
+  front: 'Streitstand: Wann ist ein Glied im Sinne des § 226 Abs. 1 Nr. 2 StGB "wichtig"?'
+  back: >-
+    Problem: Ob ein Körperteil ein wichtiges Glied ist, kann rein objektiv oder unter
+    Berücksichtigung individueller Verhältnisse des Opfers bestimmt werden. Glied
+    ist nach h.M. nur ein nach außen in Erscheinung tretender Körperteil, der mit
+    dem Rumpf oder einem anderen Körperteil durch ein Gelenk verbunden ist (Arm,
+    Bein, Hand, Finger); innere Organe sind keine Glieder.
+
+    Traditionell objektive Auffassung: Wichtig ist ein Glied, wenn sein Verlust für
+    jeden Menschen eine erhebliche Beeinträchtigung der Gesamtfunktion des Körpers
+    bedeutet. Individuelle Besonderheiten wie Beruf oder Hobby bleiben außer
+    Betracht; der kleine Finger sei daher kein wichtiges Glied.
+
+    Individualisierende Auffassung (Teile der Literatur): Maßgeblich seien auch die
+    besonderen Verhältnisse des Opfers, insbesondere sein Beruf; für einen Pianisten
+    sei jeder Finger wichtig.
+
+    Vermittelnde Auffassung (Rspr., BGH 2007): Ausgangspunkt ist die objektive
+    Bedeutung des Glieds für den Körper. Zu berücksichtigen sind aber individuelle
+    körperliche Eigenschaften des Opfers, etwa dass es Linkshänder ist oder bereits
+    andere Glieder verloren hat. Rein soziale oder berufliche Umstände bleiben
+    außer Betracht, weil das Gesetz den Körper, nicht die Lebensführung schützt.
+
+    Konsequenz: Nach der Rspr. ist bei Fingern eine Einzelfallbetrachtung geboten;
+    der Daumen ist regelmäßig wichtig, der kleine Finger nur bei besonderen
+    körperlichen Umständen.
+  norms:
+  - § 226 Abs. 1 Nr. 2 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-kv226-absicht-abs2
+  type: norm
+  front: 'Was regelt § 226 Abs. 2 StGB und welche dogmatische Besonderheit folgt daraus?'
+  back: >-
+    Verursacht der Täter eine der in § 226 Abs. 1 StGB genannten Folgen absichtlich
+    oder wissentlich, beträgt die Strafe nach § 226 Abs. 2 StGB nicht unter drei
+    Jahren. Absicht ist zielgerichtetes Wollen, Wissentlichkeit sicheres Wissen um
+    den Eintritt der Folge; dolus eventualis genügt nicht und führt nur zu § 226
+    Abs. 1 StGB, der Vorsatz ohnehin einschließt. § 226 Abs. 2 StGB ist damit keine
+    Erfolgsqualifikation im Sinne des § 18 StGB, sondern eine reine
+    Vorsatzqualifikation der Körperverletzung. Folglich ist eine versuchte schwere
+    Körperverletzung nach § 226 Abs. 2 StGB in Verbindung mit §§ 22, 23 Abs. 1 StGB
+    möglich, wenn der Täter die schwere Folge anstrebt, sie aber ausbleibt
+    (versuchte Erfolgsqualifikation). Der minder schwere Fall des § 226 Abs. 3 StGB
+    gilt auch für Abs. 2 mit einem Rahmen von einem bis zu zehn Jahren.
+  norms:
+  - § 226 Abs. 2 StGB
+  - § 226 Abs. 3 StGB
+  - § 22 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-kv227-tatbestand
+  type: norm
+  front: 'Welche Voraussetzungen hat die Körperverletzung mit Todesfolge, § 227 StGB?'
+  back: >-
+    § 227 Abs. 1 StGB verlangt eine vorsätzliche Körperverletzung nach §§ 223 bis
+    226a StGB als Grunddelikt, durch die der Tod der verletzten Person verursacht
+    wird. Weiter erforderlich sind die Kausalität zwischen Körperverletzung und
+    Tod, der tatbestandsspezifische Gefahrzusammenhang (Unmittelbarkeitszusammenhang)
+    und nach § 18 StGB wenigstens Fahrlässigkeit hinsichtlich des Todes, also dessen
+    objektive und subjektive Vorhersehbarkeit. Handelt der Täter hinsichtlich des
+    Todes vorsätzlich, liegt ein Tötungsdelikt vor; § 227 StGB tritt dann nach h.M.
+    hinter §§ 212, 211 StGB zurück. Der Strafrahmen beträgt nicht unter drei Jahren,
+    in minder schweren Fällen ein bis zehn Jahre, § 227 Abs. 2 StGB. § 227 StGB ist
+    Verbrechen; der Versuch ist strafbar.
+  norms:
+  - § 227 Abs. 1 StGB
+  - § 227 Abs. 2 StGB
+  - § 18 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-kv227-unmittelbarkeitszusammenhang-streitstand
+  type: streitstand
+  front: 'Streitstand: Woran muss der tatbestandsspezifische Gefahrzusammenhang bei § 227 StGB anknüpfen?'
+  back: >-
+    Problem: Der hohe Strafrahmen des § 227 StGB ist nur gerechtfertigt, wenn sich
+    im Tod gerade die spezifische Gefahr der Körperverletzung verwirklicht hat.
+    Streitig ist, ob diese Gefahr vom Verletzungserfolg oder schon von der
+    Verletzungshandlung ausgehen muss.
+
+    Letalitätslehre (Teile der Literatur): Der Tod muss aus dem
+    Körperverletzungserfolg hervorgehen; die zugefügte Verletzung selbst muss
+    tödlich sein. Stirbt das Opfer an Umständen, die nicht die Verletzung, sondern
+    die Angriffshandlung ausgelöst hat (Sturz bei der Flucht), fehlt der
+    Zusammenhang. Begründung: Der Wortlaut "durch die Körperverletzung" knüpfe an
+    den Erfolg an, und nur so bleibe der Strafrahmen begrenzt.
+
+    Rspr. und h.M.: Es genügt, dass sich die dem Körperverletzungsgeschehen in
+    seiner konkreten Gestalt anhaftende Gefahr im Tod realisiert; anknüpfen kann
+    auch die Körperverletzungshandlung. Deshalb ist der Zusammenhang auch gegeben,
+    wenn das Opfer bei einer durch die Misshandlung ausgelösten panischen Flucht
+    tödlich verunglückt, sofern die Flucht die naheliegende Reaktion auf die
+    Gewalt war. Ausgeschlossen ist der Zusammenhang, wenn der Tod auf einer
+    eigenverantwortlichen Selbstgefährdung des Opfers oder auf dem völlig
+    atypischen Dazwischentreten Dritter beruht.
+
+    Konsequenz: Nach h.M. sind Fluchtfälle regelmäßig von § 227 StGB erfasst, nach
+    der Letalitätslehre nur §§ 223, 222 StGB in Tateinheit. Die Rspr. bejaht den
+    Zusammenhang zudem beim erfolgsqualifizierten Versuch, weil schon die Handlung
+    tödliche Gefahr bergen kann.
+  norms:
+  - § 227 Abs. 1 StGB
+  - § 222 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-kv227-erfolgsqualifizierter-versuch
+  type: definition
+  front: 'Definiere: erfolgsqualifizierter Versuch und versuchte Erfolgsqualifikation bei §§ 226, 227 StGB'
+  back: >-
+    Beim erfolgsqualifizierten Versuch bleibt das Grunddelikt im Versuchsstadium,
+    die schwere Folge tritt aber ein (der Täter schlägt zu, verfehlt das Opfer, das
+    beim Ausweichen tödlich stürzt). Nach h.M. und Rspr. ist er bei § 227 StGB
+    strafbar, weil der Gefahrzusammenhang an die Handlung anknüpfen kann und § 11
+    Abs. 2 StGB das Delikt als Vorsatztat behandelt; die Letalitätslehre lehnt ihn
+    mangels Verletzungserfolgs ab. Bei der versuchten Erfolgsqualifikation handelt
+    der Täter mit Vorsatz auch hinsichtlich der schweren Folge, die dann ausbleibt.
+    Sie ist bei § 226 Abs. 2 StGB möglich, weil dort Absicht oder Wissentlichkeit
+    genügen. Bei § 227 StGB scheidet sie aus: Wer den Tod vorsätzlich anstrebt,
+    begeht einen versuchten Totschlag oder Mord, §§ 212, 211, 22 StGB.
+  norms:
+  - § 227 StGB
+  - § 226 Abs. 2 StGB
+  - § 22 StGB
+  - § 11 Abs. 2 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-kv226-227-konkurrenzen
+  type: definition
+  front: Wie stehen §§ 226, 227 StGB zu den übrigen Körperverletzungs- und Tötungsdelikten?
+  back: >-
+    §§ 226, 227 StGB verdrängen als Qualifikationen das Grunddelikt § 223 StGB.
+    Zur gefährlichen Körperverletzung, § 224 StGB, stehen sie nach h.M. in
+    Tateinheit, weil § 224 StGB eigenständiges Handlungsunrecht (Art der Begehung)
+    beschreibt, das in der Erfolgsqualifikation nicht enthalten ist; nur so wird
+    der volle Unrechtsgehalt im Schuldspruch sichtbar. § 226 StGB und § 227 StGB
+    können bei derselben Tat in Tateinheit stehen, wenn das Opfer zunächst schwer
+    verletzt wird und später stirbt. Bei Tötungsvorsatz treten §§ 226, 227 StGB
+    hinter §§ 212, 211 StGB zurück; bei einem nur versuchten Tötungsdelikt mit
+    tatsächlich eingetretener schwerer Folge nimmt die Rspr. Tateinheit zwischen
+    dem versuchten Tötungsdelikt und §§ 226 bzw. 227 StGB an, um den eingetretenen
+    Erfolg abzubilden. § 222 StGB wird von § 227 StGB verdrängt.
+  norms:
+  - § 224 StGB
+  - § 226 StGB
+  - § 227 StGB
+  - § 212 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-227
+  title: Körperverletzung mit Todesfolge, § 227 StGB (Aufbau auch für § 226 Abs. 1 StGB)
+  norms:
+  - § 227 StGB
+  - § 226 StGB
+  - § 18 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Grunddelikt - vorsätzliche Körperverletzung nach §§ 223 bis 226a StGB (vollendet oder versucht)
+    - label: 2. Eintritt der schweren Folge (Tod bzw. Folge des § 226 Abs. 1 StGB)
+    - label: 3. Kausalität zwischen Körperverletzung und schwerer Folge
+    - label: 4. Tatbestandsspezifischer Gefahrzusammenhang (Unmittelbarkeitszusammenhang)
+      children:
+      - label: a) Anknüpfung an Erfolg oder Handlung (Letalitätslehre gegen h.M.)
+      - label: b) Kein Ausschluss durch eigenverantwortliche Selbstgefährdung oder atypisches Dazwischentreten
+    - label: 5. Wenigstens Fahrlässigkeit hinsichtlich der Folge, § 18 StGB - objektive Vorhersehbarkeit
+      hinweis: Bei § 226 Abs. 2 StGB stattdessen Absicht oder Wissentlichkeit.
+  - label: II. Rechtswidrigkeit
+  - label: III. Schuld
+    children:
+    - label: 1. Allgemeine Schuldvoraussetzungen
+    - label: 2. Subjektive Vorhersehbarkeit der schweren Folge
+  - label: IV. Abgrenzung zum vorsätzlichen Tötungsdelikt
+    hinweis: Bei Tötungsvorsatz §§ 212, 211 StGB vorrangig.
+  - label: V. Konkurrenzen
+    children:
+    - label: 1. § 223 StGB und § 222 StGB verdrängt
+    - label: 2. Tateinheit mit § 224 StGB (h.M.)
+faelle:
+- slug: sr-fall-flucht-im-treppenhaus
+  title: Die Flucht im Treppenhaus
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  stand: 2026-09
+  facts: >-
+    A stellt den B im dritten Stock eines Mietshauses zur Rede, weil B ihm Geld
+    schuldet. Als B ausweichend antwortet, schlägt A ihm mehrfach mit der Faust ins
+    Gesicht und ruft, er werde ihn "fertigmachen". B, der aus Nase und Lippe blutet,
+    reißt sich los und rennt in Panik die Treppe hinunter, um A zu entkommen. A
+    setzt ihm nach. Auf der Treppe zwischen erstem Stock und Erdgeschoss stolpert B,
+    stürzt kopfüber die Stufen hinab und schlägt mit dem Kopf auf dem Steinboden auf.
+    B stirbt noch am Unfallort an den Kopfverletzungen. A wollte B nicht töten und
+    hatte an einen tödlichen Ausgang nicht gedacht.
+  question: Hat sich A wegen Körperverletzung mit Todesfolge nach § 227 Abs. 1 StGB strafbar gemacht?
+  steps:
+  - prompt: Liegt eine vorsätzliche Körperverletzung als Grunddelikt vor?
+    erwartung: >-
+      Ja - die Faustschläge ins Gesicht mit blutender Nase und Lippe sind eine
+      vollendete vorsätzliche Körperverletzung nach § 223 Abs. 1 StGB (körperliche
+      Misshandlung und Gesundheitsschädigung).
+  - prompt: Ist der Tod des B durch die Körperverletzung verursacht?
+    erwartung: >-
+      Ja - ohne die Schläge und die Verfolgung wäre B nicht in Panik die Treppe
+      hinuntergerannt und nicht gestürzt. Die Körperverletzung ist nicht
+      hinwegzudenken, ohne dass der Tod entfiele.
+  - prompt: Besteht der tatbestandsspezifische Gefahrzusammenhang zwischen Körperverletzung und Tod?
+    erwartung: >-
+      Streitig. Nach der Letalitätslehre müsste der Tod aus dem Verletzungserfolg
+      folgen; die Nasen- und Lippenverletzung war aber nicht tödlich, sodass § 227 StGB
+      ausschiede. Nach Rspr. und h.M. genügt, dass sich die der Körperverletzungshandlung
+      anhaftende Gefahr im Tod verwirklicht. Die panische Flucht vor einem
+      Angreifer, der weiter zuschlägt und nachsetzt, ist die naheliegende Reaktion
+      auf die Gewalt; der Sturz im Treppenhaus ist die Verwirklichung genau dieser
+      Gefahr. Eine eigenverantwortliche Selbstgefährdung des B liegt nicht vor, weil
+      B unter dem unmittelbaren Druck des Angriffs handelte. Der h.M. ist zu folgen;
+      der Zusammenhang ist gegeben.
+  - prompt: Handelte A hinsichtlich des Todes wenigstens fahrlässig, § 18 StGB?
+    erwartung: >-
+      Ja - dass ein blutendes, in Panik versetztes Opfer bei der Flucht über eine
+      Treppe stürzt und sich tödlich verletzt, liegt nicht außerhalb der
+      Lebenserfahrung. Der Tod war für einen besonnenen Menschen in der Lage des A
+      objektiv vorhersehbar; A selbst hätte ihn vorhersehen können. Dass er nicht
+      daran dachte, ist gerade der Fahrlässigkeitsvorwurf.
+  - prompt: Ist § 227 StGB durch ein vorsätzliches Tötungsdelikt verdrängt?
+    erwartung: >-
+      Nein - A hatte keinen Tötungsvorsatz; §§ 212, 211 StGB scheiden aus. § 227 StGB
+      bleibt anwendbar.
+  - prompt: Wie lautet das Ergebnis, und wie ist das Konkurrenzverhältnis?
+    erwartung: >-
+      A hat sich nach § 227 Abs. 1 StGB strafbar gemacht. § 223 StGB und § 222 StGB
+      treten dahinter zurück; die Bedrohung durch den Ausruf ist als mitbestrafte
+      Begleittat ohne eigenständiges Gewicht.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Vollendete vorsätzliche Körperverletzung, § 223 Abs. 1 StGB, als Grunddelikt bejaht
+      weight: 1.0
+      required: true
+      norms:
+      - § 223 Abs. 1 StGB
+      keywords:
+      - Grunddelikt
+      - körperliche Misshandlung
+      card_slugs:
+      - sr-kv227-tatbestand
+    - id: p2
+      label: Kausalität zwischen Körperverletzung und Tod bejaht
+      weight: 1.0
+      required: false
+      norms:
+      - § 227 Abs. 1 StGB
+      keywords:
+      - kausal
+      - Kausalität
+      - conditio
+      card_slugs:
+      - sr-kv227-tatbestand
+    - id: p3
+      label: Unmittelbarkeitszusammenhang als Problem erkannt, Letalitätslehre und h.M. dargestellt
+      weight: 3.0
+      required: true
+      norms:
+      - § 227 Abs. 1 StGB
+      keywords:
+      - Unmittelbarkeitszusammenhang
+      - Gefahrzusammenhang
+      - Letalität
+      card_slugs:
+      - sr-kv227-unmittelbarkeitszusammenhang-streitstand
+      - sr-kv226-erfolgsqualifikation-begriff
+    - id: p4
+      label: Fluchtfall mit der h.M. gelöst - panische Flucht als naheliegende Reaktion, keine eigenverantwortliche Selbstgefährdung
+      weight: 2.0
+      required: true
+      keywords:
+      - Flucht
+      - Selbstgefährdung
+      - naheliegende Reaktion
+      card_slugs:
+      - sr-kv227-unmittelbarkeitszusammenhang-streitstand
+    - id: p5
+      label: Fahrlässigkeit hinsichtlich des Todes nach § 18 StGB geprüft (objektive und subjektive Vorhersehbarkeit)
+      weight: 2.0
+      required: true
+      norms:
+      - § 18 StGB
+      keywords:
+      - § 18
+      - vorhersehbar
+      - Fahrlässigkeit
+      card_slugs:
+      - sr-kv226-18-fahrlaessigkeit-folge
+    - id: p6
+      label: Tötungsvorsatz verneint, Konkurrenz zu §§ 212, 222, 223 StGB richtig gelöst
+      weight: 1.0
+      required: false
+      norms:
+      - § 212 StGB
+      - § 222 StGB
+      keywords:
+      - Tötungsvorsatz
+      - verdrängt
+      - Konkurrenz
+      card_slugs:
+      - sr-kv226-227-konkurrenzen

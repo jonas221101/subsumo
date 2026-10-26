@@ -1,0 +1,296 @@
+topic:
+  slug: zr-sr-ebv-987-ff
+  area: zivilrecht
+  title: "Sachenrecht: Eigentümer-Besitzer-Verhältnis, §§ 987-1003 BGB"
+  parent: zr-sachenrecht-eigentumsherausgabe-985
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-fable-5-1
+    status: in-pruefung
+    normzitate_geprueft: true
+cards:
+- slug: zr-ebv-nutzungsherausgabe-987
+  type: norm
+  front: "Unter welchen Voraussetzungen schuldet der Besitzer nach § 987 BGB die Herausgabe von Nutzungen?"
+  back: "§ 987 Abs. 1 BGB verpflichtet den Besitzer, dem Eigentümer die Nutzungen herauszugeben, die er nach Eintritt der Rechtshängigkeit des Herausgabeanspruchs zieht. Nach § 987 Abs. 2 BGB schuldet er außerdem Ersatz für Nutzungen, die er nach Rechtshängigkeit schuldhaft nicht zieht, obwohl dies nach den Regeln einer ordnungsmäßigen Wirtschaft möglich gewesen wäre. Voraussetzung ist stets eine Vindikationslage (§§ 985, 986 BGB) im Zeitpunkt der Nutzungsziehung. Dem verklagten Besitzer wird nach § 990 Abs. 1 BGB der bösgläubige Besitzer gleichgestellt: Wer beim Besitzerwerb nicht in gutem Glauben war (§ 990 Abs. 1 S. 1 BGB) oder später positive Kenntnis von seinem fehlenden Besitzrecht erlangt (§ 990 Abs. 1 S. 2 BGB), haftet ab diesem Zeitpunkt nach § 987 BGB. Nutzungen sind nach § 100 BGB Früchte (§ 99 BGB) und Gebrauchsvorteile."
+  norms:
+  - § 987 Abs. 1 BGB
+  - § 987 Abs. 2 BGB
+  - § 990 Abs. 1 BGB
+  - § 100 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-ebv-988-unentgeltlicher-besitzer
+  type: definition
+  front: "Was regelt § 988 BGB, und auf wen wendet die Rechtsprechung die Norm zusätzlich an?"
+  back: "Nach § 988 BGB muss der redliche und unverklagte Besitzer, der den Besitz unentgeltlich erlangt hat, dem Eigentümer die vor Rechtshängigkeit gezogenen Nutzungen nach den Vorschriften über die Herausgabe einer ungerechtfertigten Bereicherung herausgeben (Rechtsfolgenverweisung auf §§ 818 ff. BGB, also mit Entreicherungseinwand nach § 818 Abs. 3 BGB). Der unentgeltliche Erwerber ist weniger schutzwürdig als derjenige, der für den Besitz eine Gegenleistung erbracht hat. Die Rechtsprechung wendet § 988 BGB entsprechend auch auf den Besitzer an, der den Besitz aufgrund eines unwirksamen entgeltlichen Vertrags erlangt hat (rechtsgrundloser Besitzerwerb), weil er die Nutzungen ohnehin nach Bereicherungsrecht an seinen Vertragspartner herausgeben müsste und deshalb nicht besser stehen soll als ein unentgeltlicher Erwerber."
+  norms:
+  - § 988 BGB
+  - § 818 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-ebv-988-analog-rechtsgrundlos-streit
+  type: streitstand
+  front: "Ist § 988 BGB auf den rechtsgrundlosen, aber entgeltlichen Besitzerwerb analog anwendbar?"
+  back: "Der BGH bejaht seit Langem die entsprechende Anwendung des § 988 BGB auf den Besitzer, der den Besitz aufgrund eines nichtigen entgeltlichen Geschäfts erlangt hat: Der rechtsgrundlose Erwerb sei dem unentgeltlichen wertungsmäßig gleichzustellen, weil der Besitzer die Gegenleistung nach Bereicherungsrecht zurückverlangen kann und die Nutzungen deshalb im Ergebnis ohne Opfer erlangt hat. Folge ist, dass der Eigentümer die vor Rechtshängigkeit gezogenen Nutzungen nach §§ 988, 818 ff. BGB verlangen kann. Die wohl herrschende Literaturauffassung lehnt die Analogie ab: § 993 Abs. 1 Hs. 2 BGB privilegiere den redlichen unverklagten Besitzer bewusst, und der Eigentümer sei über die Leistungskondiktion hinreichend geschützt, weil er die Nutzungen unmittelbar aus § 812 Abs. 1 S. 1 Alt. 1 BGB iVm § 818 Abs. 1 BGB von seinem Vertragspartner herausverlangen könne, sofern er selbst die Sache geleistet hat. Nach dieser Auffassung ist die Leistungskondiktion neben dem EBV anwendbar, wenn der Eigentümer selbst geleistet hat; die Rechtsprechung erreicht über die Analogie dasselbe Ergebnis auch bei Leistung eines Dritten. In der Klausur ist der Streit nur relevant, wenn ein redlicher, unverklagter Besitzer aufgrund eines unwirksamen entgeltlichen Vertrags Nutzungen gezogen hat."
+  norms:
+  - § 988 BGB
+  - § 993 Abs. 1 BGB
+  - § 812 Abs. 1 S. 1 Alt. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-ebv-schadensersatz-989-990
+  type: definition
+  front: "Unter welchen Voraussetzungen haftet der Besitzer nach §§ 989, 990 BGB auf Schadensersatz?"
+  back: "§ 989 BGB verpflichtet den Besitzer, dem Eigentümer den Schaden zu ersetzen, der dadurch entsteht, dass infolge seines Verschuldens die Sache verschlechtert wird, untergeht oder aus einem anderen Grund nicht herausgegeben werden kann. Die Haftung setzt Rechtshängigkeit des Herausgabeanspruchs voraus; der bösgläubige Besitzer wird über § 990 Abs. 1 BGB gleichgestellt. Erforderlich sind also: Vindikationslage im Zeitpunkt der schädigenden Handlung, Rechtshängigkeit oder Bösgläubigkeit, Verschlechterung, Untergang oder sonstige Unmöglichkeit der Herausgabe, Verschulden des Besitzers (§ 276 BGB) und kausaler Schaden. Bösgläubig ist nach § 990 Abs. 1 S. 1 BGB iVm § 932 Abs. 2 BGB, wer beim Besitzerwerb weiß oder grob fahrlässig nicht weiß, dass ihm kein Besitzrecht zusteht; für die spätere Bösgläubigkeit verlangt § 990 Abs. 1 S. 2 BGB positive Kenntnis. Befindet sich der Besitzer außerdem im Verzug, haftet er nach § 990 Abs. 2 BGB weitergehend nach §§ 286 ff. BGB, insbesondere auch für Zufall nach § 287 S. 2 BGB."
+  norms:
+  - § 989 BGB
+  - § 990 Abs. 1 BGB
+  - § 990 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-ebv-fremdbesitzerexzess-991-2
+  type: definition
+  front: "Was versteht man unter dem Fremdbesitzerexzess, und wie wird er nach § 991 Abs. 2 BGB behandelt?"
+  back: "Ein Fremdbesitzerexzess liegt vor, wenn ein redlicher Fremdbesitzer (etwa ein vermeintlicher Mieter oder Entleiher) die Sache in einer Weise beschädigt, für die er auch gegenüber seinem vermeintlichen Vertragspartner einstehen müsste, weil er die Grenzen seines vermeintlichen Besitzrechts überschreitet. § 991 Abs. 2 BGB ordnet für den Fall des mittelbaren Besitzes an, dass der redliche unmittelbare Besitzer dem Eigentümer insoweit haftet, wie er dem mittelbaren Besitzer verantwortlich wäre. Die herrschende Meinung erweitert diesen Gedanken: Das Haftungsprivileg des § 993 Abs. 1 Hs. 2 BGB soll den redlichen Besitzer nur davor schützen, schlechter zu stehen als bei Wirksamkeit seines vermeintlichen Rechts. Überschreitet er dieses Recht, ist er nicht schutzwürdig, sodass die Sperrwirkung des EBV entfällt und § 823 Abs. 1 BGB anwendbar bleibt. Wer glaubt, Mieter zu sein, haftet für die fahrlässige Zerstörung der Mietsache also deliktisch, weil er auch als wirklicher Mieter hätte haften müssen."
+  norms:
+  - § 991 Abs. 2 BGB
+  - § 993 Abs. 1 BGB
+  - § 823 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-ebv-deliktischer-besitzer-992
+  type: definition
+  front: "Wie haftet der deliktische Besitzer nach § 992 BGB?"
+  back: "Hat sich der Besitzer den Besitz durch verbotene Eigenmacht (§ 858 BGB) oder durch eine Straftat verschafft, haftet er dem Eigentümer nach § 992 BGB nach den Vorschriften über den Schadensersatz wegen unerlaubter Handlungen, also nach §§ 823 ff. BGB. Für diesen Besitzer entfällt das Haftungsprivileg des EBV, weil er durch die Art des Besitzerwerbs nicht schutzwürdig ist. Nach herrschender Meinung ist § 992 BGB eine Rechtsgrundverweisung: Die Voraussetzungen des jeweiligen Deliktstatbestands, insbesondere Verschulden hinsichtlich der Besitzentziehung und der späteren Schädigung, müssen vorliegen; bei verbotener Eigenmacht verlangt die h.M. Verschulden bezüglich der Eigenmacht. Der Dieb ist regelmäßig zugleich bösgläubig, sodass daneben §§ 989, 990 BGB anwendbar sind."
+  norms:
+  - § 992 BGB
+  - § 858 Abs. 1 BGB
+  - § 823 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-ebv-privileg-993-1-hs-2
+  type: norm
+  front: "Was ordnet § 993 Abs. 1 BGB für den redlichen, unverklagten Besitzer an?"
+  back: "§ 993 Abs. 1 Hs. 1 BGB verpflichtet den redlichen unverklagten Besitzer nur zur Herausgabe von Übermaßfrüchten, also von Früchten, die nach den Regeln einer ordnungsmäßigen Wirtschaft nicht als Ertrag der Sache anzusehen sind, und dies nur nach Bereicherungsrecht. § 993 Abs. 1 Hs. 2 BGB stellt klar, dass er im Übrigen weder zur Herausgabe von Nutzungen noch zum Schadensersatz verpflichtet ist. Diese Regelung ist der Kern des Haftungsprivilegs des gutgläubigen Besitzers: Wer redlich glaubt, zum Besitz berechtigt zu sein, soll die Sache nutzen und sogar fahrlässig beschädigen dürfen, ohne dem Eigentümer zu haften. Aus dem Zusammenspiel von § 993 Abs. 1 Hs. 2 BGB und den §§ 987 ff. BGB folgert die herrschende Meinung die Sperrwirkung des EBV gegenüber Delikts- und Bereicherungsrecht für Nutzungen und Schäden an der Sache. Ausnahmen gelten für den Fremdbesitzerexzess, den deliktischen Besitzer (§ 992 BGB) und den unentgeltlichen Besitzer (§ 988 BGB)."
+  norms:
+  - § 993 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-ebv-verwendungsersatz-994-996
+  type: definition
+  front: "Welche Verwendungen kann der Besitzer nach §§ 994-996 BGB vom Eigentümer ersetzt verlangen?"
+  back: "Das Gesetz unterscheidet nach Art der Verwendung und nach der Redlichkeit des Besitzers. Notwendige Verwendungen, also solche, die zur Erhaltung oder ordnungsmäßigen Bewirtschaftung der Sache objektiv erforderlich sind, kann der redliche unverklagte Besitzer nach § 994 Abs. 1 S. 1 BGB ersetzt verlangen; ausgenommen sind nach § 994 Abs. 1 S. 2 BGB die gewöhnlichen Erhaltungskosten für die Zeit, in der ihm die Nutzungen verbleiben. Der verklagte oder bösgläubige Besitzer erhält notwendige Verwendungen nach § 994 Abs. 2 BGB nur nach den Vorschriften über die Geschäftsführung ohne Auftrag, also nur, wenn sie dem Interesse und Willen des Eigentümers entsprechen (§ 683 BGB). Nützliche Verwendungen, die den Wert der Sache erhöhen, ohne notwendig zu sein, kann nach § 996 BGB nur der redliche unverklagte Besitzer ersetzt verlangen, und nur soweit die Werterhöhung im Zeitpunkt der Wiedererlangung durch den Eigentümer noch besteht. Luxusverwendungen sind nie ersatzfähig; insoweit bleibt nur das Wegnahmerecht nach § 997 BGB."
+  norms:
+  - § 994 Abs. 1 BGB
+  - § 994 Abs. 2 BGB
+  - § 996 BGB
+  - § 997 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-ebv-verwendungsbegriff-streit
+  type: streitstand
+  front: "Enger oder weiter Verwendungsbegriff - sind sachändernde Maßnahmen wie die Errichtung eines Gebäudes Verwendungen im Sinne der §§ 994 ff. BGB?"
+  back: "Nach dem engen Verwendungsbegriff der Rechtsprechung (BGH) sind Verwendungen nur Vermögensaufwendungen, die der Sache zugutekommen sollen, ohne sie grundlegend zu verändern; die Errichtung eines Gebäudes auf einem fremden Grundstück oder die Umgestaltung einer Sache zu einem anderen Zweck ist danach keine Verwendung, sodass ein Ersatz nach §§ 994 ff. BGB ausscheidet und nur das Wegnahmerecht (§ 997 BGB) sowie gegebenenfalls Bereicherungsansprüche nach §§ 951, 812 BGB in Betracht kommen. Nach dem weiten Verwendungsbegriff der überwiegenden Literatur erfasst der Begriff alle Aufwendungen, die der Sache zugutekommen, auch wenn sie diese verändern; die Interessen des Eigentümers, der eine unerwünschte Bebauung nicht bezahlen will, seien über die Beschränkung des § 996 BGB auf die fortbestehende Werterhöhung und über das Genehmigungserfordernis des § 1001 BGB hinreichend geschützt. Für die Rechtsprechung spricht, dass der Eigentümer sonst zur Finanzierung fremder Investitionsentscheidungen gezwungen würde; für die Literatur die Vermeidung von Wertungswidersprüchen zwischen erhaltenden und verändernden Maßnahmen."
+  norms:
+  - § 994 Abs. 1 BGB
+  - § 996 BGB
+  - § 997 Abs. 1 BGB
+  - § 951 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-ebv-durchsetzung-1000-1001
+  type: definition
+  front: "Wie werden Verwendungsersatzansprüche des Besitzers nach §§ 1000, 1001 BGB durchgesetzt?"
+  back: "Nach § 1001 S. 1 BGB kann der Besitzer den Verwendungsersatz erst verlangen, wenn der Eigentümer die Sache wiedererlangt oder die Verwendungen genehmigt hat; der Anspruch ist bis dahin nicht fällig. Der Eigentümer kann sich der Zahlung entziehen, indem er die Sache nicht zurücknimmt; § 1003 BGB gibt dem Besitzer dann ein Befriedigungsrecht durch Verwertung der Sache. Solange der Besitzer die Sache noch hat, sichert ihn das Zurückbehaltungsrecht aus § 1000 S. 1 BGB: Er kann die Herausgabe verweigern, bis er wegen der Verwendungen befriedigt wird. Das Zurückbehaltungsrecht besteht nach § 1000 S. 2 BGB nicht, wenn der Besitzer die Sache durch eine vorsätzlich begangene unerlaubte Handlung erlangt hat. § 1000 BGB ist die sachenrechtliche Parallele zu § 273 BGB; im Prozess führt es zur Verurteilung zur Herausgabe Zug um Zug gegen Verwendungsersatz."
+  norms:
+  - § 1000 BGB
+  - § 1001 BGB
+  - § 1003 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-ebv-987-ff
+  title: "Ansprüche im Eigentümer-Besitzer-Verhältnis, §§ 987-1003 BGB"
+  norms:
+  - § 987 BGB
+  - § 989 BGB
+  - § 990 BGB
+  - § 993 BGB
+  - § 994 BGB
+  - § 996 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: "I. Vindikationslage im maßgeblichen Zeitpunkt"
+    children:
+    - label: "1. Anspruchsteller ist Eigentümer"
+    - label: "2. Anspruchsgegner ist Besitzer"
+    - label: "3. Kein Recht zum Besitz, § 986 BGB"
+    hinweis: "Maßgeblich ist der Zeitpunkt der Nutzungsziehung, der schädigenden Handlung oder der Verwendung - nicht der Zeitpunkt der Klage."
+  - label: "II. Nutzungsherausgabe des Besitzers"
+    children:
+    - label: "1. Verklagter Besitzer: § 987 BGB (Abs. 1 gezogene, Abs. 2 schuldhaft nicht gezogene Nutzungen)"
+    - label: "2. Bösgläubiger Besitzer: § 990 Abs. 1 BGB iVm § 987 BGB"
+    - label: "3. Unentgeltlicher Besitzer: § 988 BGB (nach Rspr. analog auch bei rechtsgrundlosem Erwerb)"
+    - label: "4. Redlicher unverklagter Besitzer: nur Übermaßfrüchte, § 993 Abs. 1 Hs. 1 BGB; im Übrigen keine Haftung, § 993 Abs. 1 Hs. 2 BGB"
+  - label: "III. Schadensersatz des Besitzers"
+    children:
+    - label: "1. Verklagter Besitzer: § 989 BGB (Verschulden erforderlich)"
+    - label: "2. Bösgläubiger Besitzer: §§ 990 Abs. 1, 989 BGB; bei Verzug weitergehend § 990 Abs. 2 BGB"
+    - label: "3. Deliktischer Besitzer: § 992 BGB iVm §§ 823 ff. BGB"
+    - label: "4. Redlicher Fremdbesitzer bei Überschreitung des vermeintlichen Besitzrechts: § 991 Abs. 2 BGB bzw. Fremdbesitzerexzess, § 823 Abs. 1 BGB anwendbar"
+    - label: "5. Sonst: kein Schadensersatz, § 993 Abs. 1 Hs. 2 BGB - Sperrwirkung gegenüber §§ 823 ff., 812 ff. BGB"
+  - label: "IV. Verwendungsersatz des Besitzers gegen den Eigentümer"
+    children:
+    - label: "1. Verwendung (enger Verwendungsbegriff der Rspr.)"
+    - label: "2. Notwendige Verwendungen: § 994 Abs. 1 BGB (redlich, unverklagt) bzw. § 994 Abs. 2 BGB iVm GoA-Regeln (verklagt oder bösgläubig)"
+    - label: "3. Nützliche Verwendungen: § 996 BGB, nur redlicher unverklagter Besitzer, nur fortbestehende Werterhöhung"
+    - label: "4. Wegnahmerecht, § 997 BGB"
+  - label: "V. Durchsetzung: Fälligkeit nach Wiedererlangung oder Genehmigung, § 1001 BGB; Zurückbehaltungsrecht, § 1000 BGB"
+faelle:
+- slug: zr-fall-gestohlenes-segelboot
+  title: "Das gestohlene Segelboot"
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: "Dem A wird sein Segelboot aus dem Winterlager gestohlen. Der Dieb verkauft es unter falschem Namen an B, der von dem Diebstahl nichts ahnt und auch bei sorgfältiger Prüfung der vorgelegten Papiere keinen Anlass zu Zweifeln hätte. B zahlt 12.000 EUR. Im Frühjahr lässt B den defekten Bootsmotor für 1.500 EUR instand setzen, ohne den das Boot nicht hätte genutzt werden können, und baut für 800 EUR ein modernes Echolot ein, das den Wert des Bootes dauerhaft um 500 EUR steigert. Über den Sommer vermietet B das Boot an Feriengäste und erzielt 2.000 EUR Mieteinnahmen. Bei einem Törn im Juli beschädigt B durch eine fahrlässig unterlassene Kontrolle des Ankerplatzes den Rumpf; die Reparatur kostet 900 EUR. Im September erfährt B durch eine Fahndungsmeldung, dass das Boot dem A gestohlen worden ist. Dennoch vermietet er es noch im Oktober für 400 EUR weiter. Im November verlangt A von B Herausgabe des Bootes, Zahlung der gesamten Mieteinnahmen von 2.400 EUR sowie Ersatz der Rumpfreparatur von 900 EUR. B verlangt seinerseits Ersatz für Motor und Echolot und will das Boot bis zur Zahlung behalten."
+  question: "Welche Ansprüche bestehen zwischen A und B? Die Herausgabepflicht des B nach § 985 BGB ist nur kurz zu begründen."
+  steps:
+  - prompt: "Besteht eine Vindikationslage, und ab wann ist B bösgläubig?"
+    erwartung: "A ist Eigentümer geblieben, weil ein gutgläubiger Erwerb des B an der gestohlenen Sache nach § 935 Abs. 1 S. 1 BGB ausscheidet. B ist Besitzer ohne Recht zum Besitz (§ 986 BGB), der Kaufvertrag mit dem Dieb wirkt nicht gegenüber A. Beim Besitzerwerb war B gutgläubig (§ 990 Abs. 1 S. 1 BGB iVm § 932 Abs. 2 BGB: weder Kenntnis noch grobe Fahrlässigkeit). Ab der Fahndungsmeldung im September hat er positive Kenntnis und ist nach § 990 Abs. 1 S. 2 BGB bösgläubig."
+  - prompt: "Kann A die Mieteinnahmen aus dem Sommer (2.000 EUR) und aus dem Oktober (400 EUR) verlangen?"
+    erwartung: "Für den Sommer war B redlicher unverklagter Besitzer; er hat den Besitz entgeltlich erworben, § 988 BGB greift nicht, und Mieteinnahmen sind keine Übermaßfrüchte. Nach § 993 Abs. 1 Hs. 2 BGB schuldet er sie nicht; Bereicherungs- und Deliktsansprüche sind gesperrt. Für den Oktober haftet B als bösgläubiger Besitzer nach §§ 990 Abs. 1 S. 2, 987 Abs. 1 BGB auf Herausgabe der 400 EUR."
+  - prompt: "Muss B den Rumpfschaden von 900 EUR ersetzen?"
+    erwartung: "Nein. Im Juli war B gutgläubig und unverklagt; § 989 BGB greift mangels Rechtshängigkeit, § 990 Abs. 1 BGB mangels Bösgläubigkeit nicht. § 992 BGB scheidet aus, weil B den Besitz nicht durch verbotene Eigenmacht oder Straftat erlangt hat. Ein Fremdbesitzerexzess liegt nicht vor, da B sich für den Eigentümer hielt (Eigenbesitzer) und nicht die Grenzen eines vermeintlichen Fremdbesitzrechts überschritten hat. Nach § 993 Abs. 1 Hs. 2 BGB ist auch § 823 Abs. 1 BGB gesperrt."
+  - prompt: "Welche Verwendungen kann B ersetzt verlangen, und kann er das Boot bis zur Zahlung zurückbehalten?"
+    erwartung: "Die Motorinstandsetzung ist eine notwendige Verwendung, die B als damals redlicher unverklagter Besitzer nach § 994 Abs. 1 S. 1 BGB ersetzt verlangen kann (1.500 EUR); gewöhnliche Erhaltungskosten nach § 994 Abs. 1 S. 2 BGB liegen bei einer außerordentlichen Motorreparatur nicht vor. Das Echolot ist eine nützliche Verwendung; nach § 996 BGB ist nur die fortbestehende Werterhöhung von 500 EUR ersatzfähig, nicht der Aufwand von 800 EUR. Nach § 1000 S. 1 BGB kann B die Herausgabe verweigern, bis er wegen 2.000 EUR befriedigt ist; § 1000 S. 2 BGB greift nicht, weil B das Boot nicht durch vorsätzliche unerlaubte Handlung erlangt hat. Fällig wird der Anspruch nach § 1001 S. 1 BGB mit Wiedererlangung durch A oder Genehmigung."
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: "Vindikationslage bejaht: kein gutgläubiger Erwerb wegen Abhandenkommens (§ 935 Abs. 1 S. 1 BGB), B Besitzer ohne Besitzrecht"
+      weight: 1.5
+      required: true
+      norms:
+      - § 985 BGB
+      - § 986 BGB
+      - § 935 Abs. 1 S. 1 BGB
+      keywords:
+      - "935"
+      - abhandengekommen
+      - Vindikationslage
+      - "985"
+      card_slugs:
+      - zr-985-vindikationslage
+    - id: p2
+      label: "Gutgläubigkeit des B bei Besitzerwerb und Bösgläubigkeit ab positiver Kenntnis im September (§ 990 Abs. 1 S. 1 und S. 2 BGB) sauber getrennt"
+      weight: 2.0
+      required: true
+      norms:
+      - § 990 Abs. 1 BGB
+      - § 932 Abs. 2 BGB
+      keywords:
+      - "990"
+      - bösgläubig
+      - Kenntnis
+      - grob fahrlässig
+      card_slugs:
+      - zr-990-boesglaeubiger-besitzer
+      - zr-ebv-schadensersatz-989-990
+    - id: p3
+      label: "Sommer-Mieteinnahmen: keine Herausgabe wegen § 993 Abs. 1 Hs. 2 BGB (redlich, unverklagt, entgeltlich erworben, keine Übermaßfrüchte); Oktober-Miete nach §§ 990 Abs. 1, 987 Abs. 1 BGB geschuldet"
+      weight: 2.5
+      required: true
+      norms:
+      - § 987 Abs. 1 BGB
+      - § 988 BGB
+      - § 990 Abs. 1 BGB
+      - § 993 Abs. 1 BGB
+      keywords:
+      - "993"
+      - "987"
+      - Nutzungen
+      - "400"
+      card_slugs:
+      - zr-ebv-nutzungsherausgabe-987
+      - zr-ebv-privileg-993-1-hs-2
+      - zr-ebv-988-unentgeltlicher-besitzer
+    - id: p4
+      label: "Rumpfschaden: kein Schadensersatz - §§ 989, 990 BGB nicht erfüllt, § 992 BGB nicht einschlägig, kein Fremdbesitzerexzess, § 823 Abs. 1 BGB durch § 993 Abs. 1 Hs. 2 BGB gesperrt"
+      weight: 2.0
+      required: true
+      norms:
+      - § 989 BGB
+      - § 992 BGB
+      - § 993 Abs. 1 BGB
+      - § 823 Abs. 1 BGB
+      keywords:
+      - Sperrwirkung
+      - "989"
+      - Fremdbesitzerexzess
+      - kein Schadensersatz
+      card_slugs:
+      - zr-ebv-schadensersatz-989-990
+      - zr-ebv-fremdbesitzerexzess-991-2
+      - zr-ebv-deliktischer-besitzer-992
+      - zr-ebv-sperrwirkung
+    - id: p5
+      label: "Verwendungsersatz: Motor als notwendige Verwendung nach § 994 Abs. 1 S. 1 BGB (1.500 EUR), Echolot als nützliche Verwendung nach § 996 BGB nur in Höhe der fortbestehenden Werterhöhung (500 EUR)"
+      weight: 2.0
+      required: true
+      norms:
+      - § 994 Abs. 1 BGB
+      - § 996 BGB
+      keywords:
+      - "994"
+      - "996"
+      - notwendig
+      - nützlich
+      - Werterhöhung
+      card_slugs:
+      - zr-ebv-verwendungsersatz-994-996
+      - zr-ebv-verwendungsbegriff-streit
+    - id: p6
+      label: "Zurückbehaltungsrecht des B nach § 1000 S. 1 BGB bejaht, Fälligkeit nach § 1001 BGB angesprochen"
+      weight: 1.0
+      norms:
+      - § 1000 BGB
+      - § 1001 BGB
+      keywords:
+      - "1000"
+      - Zurückbehaltungsrecht
+      - Zug um Zug
+      card_slugs:
+      - zr-ebv-durchsetzung-1000-1001
+    - id: p7
+      label: "Ergebnis: A kann Herausgabe und 400 EUR verlangen, nicht die 2.000 EUR und nicht die 900 EUR; B kann 2.000 EUR Verwendungsersatz verlangen und das Boot bis dahin zurückbehalten"
+      weight: 1.0
+      keywords:
+      - "2.000"
+      - "2000"
+      - "400"
+      - Herausgabe

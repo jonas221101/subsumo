@@ -1,0 +1,28 @@
+kurs:
+  slug: zr-sachenrecht
+  title: Sachenrecht
+  area: zivilrecht
+  semester_default: 5
+  examenskurs: false
+  stand: 2026-09
+  quellen:
+  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: 'Mobiliarsachenrecht: Eigentumsherausgabe, rechtsgeschaeftlicher Erwerb, gutglaeubiger
+    Erwerb, Sicherungsuebereignung.'
+  lernziele:
+  - § 985 BGB mit Eigentumshistorie (chronologische Pruefung) aufbauen
+  - Erwerb vom Nichtberechtigten (§§ 932 ff. BGB) sicher pruefen
+  - Sicherungsuebereignung als Kreditsicherheit einordnen
+  klausurformat:
+    typ: Fortgeschrittenenklausur
+    minuten: 180
+  topic_slugs:
+  - zr-sachenrecht-eigentumsherausgabe-985
+  - zr-sr-eigentumserwerb-929
+  - zr-sr-gutglaeubiger-erwerb-932
+  - zr-sr-sicherungsuebereignung
+  landesrecht_kategorien: []
+  fehlende_themen:
+  - Immobiliarsachenrecht, §§ 873 ff. BGB (P3)
+  - Eigentuemer-Besitzer-Verhaeltnis vertieft (P3)

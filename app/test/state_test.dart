@@ -147,10 +147,10 @@ void main() {
       final confirmed = await app.confirmProAfterCheckout(interval: Duration.zero);
 
       expect(confirmed, isTrue);
-      expect(meCalls, 1, reason: 'Webhook war schon durch - kein weiterer Versuch noetig');
+      expect(meCalls, 1, reason: 'Webhook war schon durch - kein weiterer Versuch nötig');
     });
 
-    test('bleibt proActive nach allen Versuchen false, gilt die Bestaetigung als verzoegert', () async {
+    test('bleibt proActive nach allen Versuchen false, gilt die Bestätigung als verzögert', () async {
       var meCalls = 0;
       final app = buildState((request) async {
         if (request.url.path == '/v1/auth/me') {
@@ -169,7 +169,7 @@ void main() {
       final confirmed = await app.confirmProAfterCheckout(attempts: 3, interval: Duration.zero);
 
       expect(confirmed, isFalse);
-      expect(meCalls, 3, reason: 'Muss alle Versuche ausschoepfen, bevor es aufgibt');
+      expect(meCalls, 3, reason: 'Muss alle Versuche ausschöpfen, bevor es aufgibt');
     });
 
     test('ein einzelner Netzausfall unterbricht das Polling nicht', () async {
@@ -219,7 +219,7 @@ void main() {
     });
 
     test(
-      'Netzfehler faellt auf den zuletzt geladenen Stapel zurueck',
+      'Netzfehler fällt auf den zuletzt geladenen Stapel zurück',
       () async {
         var callCount = 0;
         final app = buildState((request) async {
@@ -236,7 +236,7 @@ void main() {
         expect(
           app.dueCards,
           hasLength(1),
-          reason: 'Alte Karten duerfen nicht verschwinden',
+          reason: 'Alte Karten dürfen nicht verschwinden',
         );
         expect(app.dueCardsFromCache, isTrue);
         expect(app.error, contains('Offline'));
@@ -301,7 +301,7 @@ void main() {
       },
     );
 
-    test('gleiche Version laedt keinen Snapshot erneut', () async {
+    test('gleiche Version lädt keinen Snapshot erneut', () async {
       var cardRequests = 0;
       final app = buildState((request) async {
         if (request.url.path == '/v1/content/manifest') {
@@ -319,7 +319,7 @@ void main() {
       expect(cardRequests, 1);
     });
 
-    test('neue Version ersetzt den bestaetigten Snapshot', () async {
+    test('neue Version ersetzt den bestätigten Snapshot', () async {
       var version = 'v1';
       final app = buildState((request) async {
         if (request.url.path == '/v1/content/manifest') {
@@ -341,7 +341,7 @@ void main() {
     });
 
     test(
-      'Fehler laesst bestaetigten Snapshot, Karten und Outbox unveraendert',
+      'Fehler lässt bestätigten Snapshot, Karten und Outbox unverändert',
       () async {
         final pending = PendingReview(
           clientId: 'atomic-review',
@@ -450,7 +450,7 @@ void main() {
     );
 
     test(
-      'fehlgeschlagener Versand laesst die Bewertung in der Outbox',
+      'fehlgeschlagener Versand lässt die Bewertung in der Outbox',
       () async {
         final app = buildState((request) async {
           throw Exception('Netzwerk nicht erreichbar');
@@ -521,7 +521,7 @@ void main() {
 
     test(
         'Outbox wird beim Start wiederhergestellt, auch wenn der '
-        'anschliessende Flush offline scheitert', () async {
+        'anschließende Flush offline scheitert', () async {
       final pending = PendingReview(
         clientId: 'abc123',
         cardSlug: 'zr-at-angebot',
@@ -558,9 +558,9 @@ void main() {
       expect(app.outbox.single.clientId, 'abc123');
     });
 
-    test('Outbox uebersteht signOut und signIn', () async {
+    test('Outbox übersteht signOut und signIn', () async {
       final app = buildState((request) async {
-        throw Exception('kein Netz fuer den Sendeversuch');
+        throw Exception('kein Netz für den Sendeversuch');
       });
       app.dueCards = [Map<String, dynamic>.from(_dueCard)];
       await app.rateTopCard(2);
@@ -571,12 +571,12 @@ void main() {
       expect(
         app.outbox,
         hasLength(1),
-        reason: 'Abmelden darf keine Bewertungen loeschen',
+        reason: 'Abmelden darf keine Bewertungen löschen',
       );
     });
 
     test(
-      'beschaedigter Outbox-Eintrag laesst die App trotzdem starten',
+      'beschädigter Outbox-Eintrag lässt die App trotzdem starten',
       () async {
         SharedPreferences.setMockInitialValues({'subsumo.outbox': 'kein-json'});
         final app = buildState((request) async => _json({}, status: 404));

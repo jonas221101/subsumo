@@ -1,0 +1,100 @@
+topic:
+  slug: by-polizei-ordnungsrecht
+  area: oeffentliches-recht
+  title: Polizei- und Ordnungsrecht Bayern
+  parent: or-sicherheitsrecht-generalklausel-standardmassnahmen
+  bundesland: BY
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: by-por-generalklausel
+  type: norm
+  front: Wo steht die polizeiliche Generalklausel in Bayern und was setzt sie voraus?
+  back: 'Fundstelle: Art. 11 Abs. 1 PAG (Polizei); Art. 7 Abs. 2 LStVG (Sicherheitsbehoerden). Die Generalklausel
+    ermaechtigt zu den notwendigen Massnahmen, um eine im Einzelfall bestehende Gefahr fuer die oeffentliche
+    Sicherheit oder Ordnung abzuwehren. Sie ist subsidiaer: Greift eine Standardmassnahme oder ein Spezialgesetz,
+    geht dieses vor. Auf der Rechtsfolgenseite besteht Ermessen, begrenzt durch den Grundsatz der Verhaeltnismaessigkeit.'
+  norms:
+  - Art. 11 Abs. 1 PAG (Polizei)
+  - Art. 7 Abs. 2 LStVG (Sicherheitsbehoerden)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: by-por-standardmassnahmen
+  type: norm
+  front: Wo stehen die polizeilichen Standardmassnahmen in Bayern?
+  back: 'Art. 12 ff. PAG - unter anderem Identitaetsfeststellung, Platzverweis, Gewahrsam, Durchsuchung
+    von Personen und Sachen, Sicherstellung. Standardmassnahmen sind abschliessende Spezialregelungen:
+    Liegen ihre Voraussetzungen nicht vor, darf nicht auf die Generalklausel ausgewichen werden (Sperrwirkung).'
+  norms:
+  - Art. 12 ff. PAG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: by-por-aufbau
+  type: schema_step
+  front: 'Aufbau: Rechtmaessigkeit einer Gefahrenabwehrmassnahme nach dem Landesrecht von Bayern'
+  back: 'I. Ermaechtigungsgrundlage (Polizeiaufgabengesetz (PAG) und Landesstraf- und Verordnungsgesetz
+    (LStVG): Standardmassnahme vor Generalklausel). II. Formelle Rechtmaessigkeit: 1. Zustaendigkeit (sachlich:
+    welche Behoerde - Sicherheitsbehoerden nach Art. 6 LStVG (Gemeinden, Landratsaemter, Regierungen,
+    Staatsministerium des Innern); Polizei nach Art. 3 PAG subsidiaer; oertlich; instanziell), 2. Verfahren
+    (Anhoerung, § 28 VwVfG bzw. Landesrecht), 3. Form. III. Materielle Rechtmaessigkeit: 1. Tatbestand
+    (Schutzgut, Gefahrbegriff, Gefahrenprognose ex ante), 2. richtiger Adressat (Stoerer: Art. 7, 8, 10
+    PAG; Art. 9 LStVG), 3. Rechtsfolge: Ermessen und Verhaeltnismaessigkeit (geeignet, erforderlich, angemessen).'
+  norms:
+  - Art. 11 Abs. 1 PAG (Polizei)
+  - Art. 7 Abs. 2 LStVG (Sicherheitsbehoerden)
+  - Art. 7, 8, 10 PAG
+  - Art. 9 LStVG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: by-por-stoerer
+  type: norm
+  front: Wo sind Verhaltensstoerer, Zustandsstoerer und Nichtstoerer in Bayern geregelt?
+  back: 'Art. 7, 8, 10 PAG; Art. 9 LStVG. Verhaltensstoerer: wer die Gefahr durch sein Verhalten verursacht
+    (Theorie der unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstoerer: Inhaber
+    der tatsaechlichen Gewalt bzw. Eigentuemer einer gefaehrlichen Sache. Nichtstoerer: Inanspruchnahme
+    nur unter den engen Voraussetzungen des polizeilichen Notstands (gegenwaertige erhebliche Gefahr,
+    Stoerer nicht greifbar, Behoerde selbst nicht in der Lage), mit Entschaedigungsanspruch.'
+  norms:
+  - Art. 7, 8, 10 PAG
+  - Art. 9 LStVG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: by-por-zustaendigkeit
+  type: definition
+  front: Wer ist in Bayern fuer die Gefahrenabwehr zustaendig - Ordnungs-/Sicherheitsbehoerde oder Polizei?
+  back: 'Sicherheitsbehoerden nach Art. 6 LStVG (Gemeinden, Landratsaemter, Regierungen, Staatsministerium
+    des Innern); Polizei nach Art. 3 PAG subsidiaer. Pruefungsrelevant ist die Abgrenzung: Die allgemeine
+    Gefahrenabwehr liegt grundsaetzlich bei den Verwaltungs-/Ordnungsbehoerden; der Polizeivollzugsdienst
+    wird taetig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere Zuweisung besteht.
+    Ein Handeln der unzustaendigen Behoerde macht die Massnahme formell rechtswidrig.'
+  norms:
+  - Polizeiaufgabengesetz (PAG) und Landesstraf- und Verordnungsgesetz (LStVG)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: by-por-vollstreckung
+  type: norm
+  front: Nach welchem Gesetz wird eine Gefahrenabwehrverfuegung in Bayern vollstreckt?
+  back: 'Bayerisches Verwaltungszustellungs- und Vollstreckungsgesetz (VwZVG). Regelfall ist das gestreckte
+    Verfahren: Grundverfuegung - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme,
+    Zwangsgeld, unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausfuehrung
+    ohne vorausgehenden Verwaltungsakt moeglich; die Kosten traegt der Pflichtige.'
+  norms:
+  - Bayerisches Verwaltungszustellungs- und Vollstreckungsgesetz (VwZVG)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-09

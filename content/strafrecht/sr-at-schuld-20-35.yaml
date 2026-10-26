@@ -1,0 +1,399 @@
+topic:
+  slug: sr-at-schuld-20-35
+  area: strafrecht
+  title: Schuld - Schuldunfähigkeit §§ 20, 21 StGB, actio libera in causa, Entschuldigungsgründe §§ 33, 35 StGB
+  parent: sr-at
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-fable-5-1
+    status: in-pruefung
+    normzitate_geprueft: true
+cards:
+- slug: sr-schuld-begriff-elemente
+  type: definition
+  front: 'Definiere: Schuld im strafrechtlichen Sinn und nenne ihre Elemente'
+  back: >-
+    Schuld ist die persönliche Vorwerfbarkeit der rechtswidrigen Tat: Dem Täter wird
+    vorgeworfen, dass er sich für das Unrecht entschieden hat, obwohl er sich
+    rechtmäßig hätte verhalten können (normativer Schuldbegriff). Ohne Schuld keine
+    Strafe (Schuldprinzip). Die Schuldprüfung umfasst regelmäßig drei Elemente:
+    (1) Schuldfähigkeit, §§ 19, 20, 21 StGB, (2) Unrechtsbewusstsein, dessen
+    Fehlen nach § 17 StGB zu behandeln ist, und (3) das Fehlen von
+    Entschuldigungsgründen wie § 33 StGB und § 35 StGB. Hinzu können besondere
+    Schuldmerkmale einzelner Tatbestände treten.
+  norms:
+  - § 20 StGB
+  - § 17 StGB
+  - § 35 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-schuld-schuldunfaehigkeit-20
+  type: norm
+  front: 'Wie ist die Schuldunfähigkeit nach § 20 StGB aufgebaut?'
+  back: >-
+    § 20 StGB folgt einer zweistufigen (gemischt biologisch-psychologischen)
+    Methode. Erste Stufe: Es muss eines der vier Eingangsmerkmale vorliegen -
+    krankhafte seelische Störung (etwa Psychosen, aber auch der akute Alkoholrausch),
+    tiefgreifende Bewusstseinsstörung (etwa hochgradiger Affekt), Intelligenzminderung
+    oder schwere andere seelische Störung (etwa schwere Persönlichkeitsstörungen).
+    Zweite Stufe: Das Eingangsmerkmal muss dazu geführt haben, dass der Täter
+    unfähig war, das Unrecht der Tat einzusehen (Einsichtsfähigkeit) oder nach
+    dieser Einsicht zu handeln (Steuerungsfähigkeit). Maßgeblicher Zeitpunkt ist die
+    Begehung der Tat, § 8 StGB (Koinzidenzprinzip). Wer schuldunfähig handelt,
+    handelt ohne Schuld; § 19 StGB ordnet dies für Kinder unter 14 Jahren
+    unwiderleglich an.
+  norms:
+  - § 20 StGB
+  - § 19 StGB
+  - § 8 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-schuld-verminderte-schuldfaehigkeit-21
+  type: norm
+  front: 'Was regelt § 21 StGB und welche Rolle spielen Blutalkoholwerte?'
+  back: >-
+    Ist die Einsichts- oder Steuerungsfähigkeit aus einem der Gründe des § 20 StGB
+    bei Begehung der Tat erheblich vermindert, kann die Strafe nach § 21 StGB in
+    Verbindung mit § 49 Abs. 1 StGB gemildert werden. Anders als § 20 StGB lässt
+    § 21 StGB die Schuld also bestehen und wirkt nur als fakultativer
+    Strafmilderungsgrund. Bei Alkoholisierung dienen Blutalkoholwerte nur als
+    Anhaltspunkte innerhalb einer Gesamtwürdigung: Ab etwa 2 Promille ist die
+    erhebliche Verminderung, ab etwa 3 Promille die Aufhebung der Schuldfähigkeit
+    zu prüfen; entscheidend bleibt das konkrete Leistungsverhalten des Täters. Nach
+    der Rspr. kann die Milderung versagt werden, wenn der Täter die Verminderung
+    selbst verschuldet hat, insbesondere wenn er um seine Neigung zu Straftaten unter
+    Alkoholeinfluss wusste.
+  norms:
+  - § 21 StGB
+  - § 49 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-schuld-alic-streitstand
+  type: streitstand
+  front: 'Streitstand: Wie wird die actio libera in causa dogmatisch begründet?'
+  back: >-
+    Problem: Der Täter versetzt sich schuldhaft (vorsätzlich oder fahrlässig) in
+    einen Zustand der Schuldunfähigkeit und begeht in diesem Zustand die geplante
+    oder vorhersehbare Tat. Nach § 20 StGB in Verbindung mit § 8 StGB müsste die
+    Schuld bei Begehung der Tat vorliegen; sie fehlt aber im Zeitpunkt der
+    Tatausführung. Die actio libera in causa (a.l.i.c.) soll dennoch eine
+    Bestrafung aus dem Vorsatzdelikt ermöglichen.
+
+    Tatbestandsmodell (Rspr., h.M.): Bereits das Sichberauschen ist Teil der
+    tatbestandlichen Handlung, weil der Täter damit eine Kausalkette in Gang setzt,
+    die zum Erfolg führt - vergleichbar der mittelbaren Täterschaft, bei der der
+    Täter sich selbst als schuldunfähiges Werkzeug einsetzt. Im Zeitpunkt dieser
+    Handlung ist er schuldfähig, das Koinzidenzprinzip bleibt gewahrt. Die
+    Konstruktion versagt bei eigenhändigen und verhaltensgebundenen Delikten, bei
+    denen das Sichberauschen nicht als Tathandlung gedeutet werden kann; der BGH hat
+    die a.l.i.c. deshalb 1996 für die Straßenverkehrsdelikte der §§ 315c, 316 StGB
+    aufgegeben.
+
+    Ausnahmemodell (Teile der Literatur): Die a.l.i.c. sei eine
+    gewohnheitsrechtlich anerkannte Ausnahme vom Koinzidenzprinzip. Dagegen spricht,
+    dass eine strafbegründende Ausnahme vom klaren Wortlaut des § 20 StGB gegen
+    Art. 103 Abs. 2 GG verstößt.
+
+    Ausdehnungsmodell: § 20 StGB sei so auszulegen, dass "Begehung der Tat" auch
+    das vorgelagerte Sichberauschen umfasse. Kritik: Der Wortlaut des § 8 StGB
+    steht dem entgegen.
+
+    Konsequenz: Nach dem Tatbestandsmodell ist bei Erfolgsdelikten eine
+    Vorsatzstrafbarkeit möglich, wenn der Täter bei Beginn des Sichberauschens
+    Vorsatz sowohl hinsichtlich des Rauschzustands als auch hinsichtlich der
+    späteren Tat hatte (Doppelvorsatz). Scheitert die a.l.i.c., bleibt § 323a StGB.
+    Eine fahrlässige a.l.i.c. ist überflüssig, weil bei Fahrlässigkeitsdelikten
+    ohnehin an die sorgfaltswidrige Handlung des Sichberauschens angeknüpft werden
+    kann.
+  norms:
+  - § 20 StGB
+  - § 8 StGB
+  - § 323a StGB
+  - Art. 103 Abs. 2 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-schuld-vollrausch-323a
+  type: norm
+  front: 'Welche Funktion hat der Vollrausch, § 323a StGB, und wie ist die Norm aufgebaut?'
+  back: >-
+    § 323a StGB schließt die Strafbarkeitslücke, die entsteht, wenn der Täter wegen
+    Schuldunfähigkeit nach § 20 StGB für die im Rausch begangene Tat nicht bestraft
+    werden kann. Tathandlung ist das vorsätzliche oder fahrlässige Sichversetzen in
+    einen Rausch durch alkoholische Getränke oder andere berauschende Mittel. Die im
+    Rausch begangene rechtswidrige Tat (Rauschtat) ist nach h.M. objektive Bedingung
+    der Strafbarkeit; auf sie muss sich weder Vorsatz noch Fahrlässigkeit beziehen.
+    § 323a Abs. 1 StGB verlangt, dass der Täter wegen der Rauschtat nicht bestraft
+    werden kann, weil er infolge des Rausches schuldunfähig war oder dies nicht
+    auszuschließen ist. Die Strafe darf nach § 323a Abs. 2 StGB nicht schwerer sein
+    als die für die Rauschtat angedrohte. Greift eine vorsätzliche a.l.i.c., tritt
+    § 323a StGB zurück.
+  norms:
+  - § 323a Abs. 1 StGB
+  - § 323a Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-schuld-entschuldigender-notstand-35
+  type: norm
+  front: 'Welche Voraussetzungen hat der entschuldigende Notstand, § 35 Abs. 1 StGB?'
+  back: >-
+    § 35 Abs. 1 S. 1 StGB entschuldigt, wer in einer gegenwärtigen, nicht anders
+    abwendbaren Gefahr für Leben, Leib oder Freiheit eine rechtswidrige Tat begeht,
+    um die Gefahr von sich, einem Angehörigen (§ 11 Abs. 1 Nr. 1 StGB) oder einer
+    anderen ihm nahestehenden Person abzuwenden. Anders als § 34 StGB ist der Kreis
+    der notstandsfähigen Rechtsgüter und der geschützten Personen abschließend
+    begrenzt; eine Interessenabwägung findet nicht statt, weil das Gesetz auf den
+    Motivationsdruck des Täters abstellt. Nach § 35 Abs. 1 S. 2 StGB entfällt die
+    Entschuldigung, wenn dem Täter die Hinnahme der Gefahr zuzumuten war,
+    insbesondere weil er sie selbst verursacht hat oder in einem besonderen
+    Rechtsverhältnis stand (Polizei, Feuerwehr, Soldaten); dann kann die Strafe nach
+    § 49 Abs. 1 StGB gemildert werden. Subjektiv muss der Täter mit Rettungswillen
+    handeln. Die Tat bleibt rechtswidrig, sodass gegen sie Notwehr zulässig ist.
+  norms:
+  - § 35 Abs. 1 StGB
+  - § 11 Abs. 1 Nr. 1 StGB
+  - § 49 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-schuld-putativnotstand-35-abs2
+  type: definition
+  front: Wie behandelt § 35 Abs. 2 StGB den Irrtum über die Voraussetzungen des entschuldigenden Notstands?
+  back: >-
+    Nimmt der Täter irrig Umstände an, die ihn nach § 35 Abs. 1 StGB entschuldigen
+    würden (Putativnotstand), wird er nach § 35 Abs. 2 S. 1 StGB nur bestraft, wenn
+    er den Irrtum vermeiden konnte; dann ist die Strafe nach § 35 Abs. 2 S. 2 StGB
+    in Verbindung mit § 49 Abs. 1 StGB zu mildern. Anders als beim
+    Erlaubnistatbestandsirrtum gibt es hier also eine ausdrückliche gesetzliche
+    Regelung, die auf Vermeidbarkeit abstellt und dem Modell des § 17 StGB folgt.
+    Der Irrtum über die rechtlichen Grenzen des § 35 StGB (etwa die Annahme, auch
+    Sachwerte seien notstandsfähig) ist dagegen unbeachtlich.
+  norms:
+  - § 35 Abs. 2 StGB
+  - § 49 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-schuld-notwehrexzess-33-voraussetzungen
+  type: norm
+  front: 'Welche Voraussetzungen hat der Notwehrexzess, § 33 StGB, und welche Rechtsnatur hat die Norm?'
+  back: >-
+    Nach § 33 StGB wird nicht bestraft, wer die Grenzen der Notwehr aus
+    Verwirrung, Furcht oder Schrecken überschreitet. Erforderlich ist erstens eine
+    objektiv bestehende Notwehrlage, zweitens die Überschreitung des erforderlichen
+    oder gebotenen Maßes der Verteidigung (nach h.M. nur der intensive Exzess, nicht
+    der extensive Exzess vor Beginn oder nach Ende des Angriffs) und drittens, dass
+    die Überschreitung gerade auf einem der genannten asthenischen (schwächebedingten)
+    Affekte beruht; sthenische Affekte wie Wut, Zorn oder Kampfeslust genügen nicht.
+    Nach h.M. ist auch der bewusste Exzess erfasst, sofern er affektbedingt ist.
+    § 33 StGB ist Entschuldigungsgrund: Die Tat bleibt rechtswidrig, die Schuld
+    entfällt wegen des erheblich verminderten Unrechts (Verteidigung gegen einen
+    rechtswidrigen Angriff) und der verminderten Schuld (Affekt).
+  norms:
+  - § 33 StGB
+  - § 32 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-schuld-abgrenzung-34-35
+  type: definition
+  front: Worin unterscheiden sich rechtfertigender Notstand, § 34 StGB, und entschuldigender Notstand, § 35 StGB?
+  back: >-
+    § 34 StGB rechtfertigt, wenn das geschützte Interesse das beeinträchtigte
+    wesentlich überwiegt; er gilt für jedes Rechtsgut und zugunsten jeder Person,
+    verlangt aber die Interessenabwägung und die Angemessenheit des Mittels. § 35
+    StGB entschuldigt nur, wenn Leben, Leib oder Freiheit des Täters, eines
+    Angehörigen oder einer nahestehenden Person bedroht sind, dafür ohne Abwägung:
+    Auch die Rettung des eigenen Lebens auf Kosten eines anderen Lebens kann
+    entschuldigt sein. Prüfungsreihenfolge: § 34 StGB in der Rechtswidrigkeit, erst
+    bei dessen Scheitern § 35 StGB in der Schuld. Gegen die nach § 35 StGB
+    entschuldigte, aber rechtswidrige Tat ist Notwehr zulässig; Teilnahme an ihr
+    ist strafbar, § 29 StGB.
+  norms:
+  - § 34 StGB
+  - § 35 Abs. 1 StGB
+  - § 29 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-schuld
+  title: Prüfung der Schuld
+  norms:
+  - § 20 StGB
+  - § 21 StGB
+  - § 17 StGB
+  - § 33 StGB
+  - § 35 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+  steps:
+  - label: I. Schuldfähigkeit
+    children:
+    - label: 1. Kinder unter 14 Jahren schuldunfähig, § 19 StGB
+    - label: 2. Schuldunfähigkeit, § 20 StGB (zweistufig)
+      children:
+      - label: a) Eingangsmerkmal (krankhafte seelische Störung, tiefgreifende Bewusstseinsstörung, Intelligenzminderung, schwere andere seelische Störung)
+      - label: b) Aufhebung der Einsichts- oder Steuerungsfähigkeit bei Begehung der Tat, § 8 StGB
+    - label: 3. Bei schuldhaft herbeigeführter Schuldunfähigkeit - actio libera in causa
+      hinweis: Nach h.M. Tatbestandsmodell mit Doppelvorsatz; bei Scheitern § 323a StGB prüfen.
+    - label: 4. Erheblich verminderte Schuldfähigkeit, § 21 StGB (nur fakultative Milderung)
+  - label: II. Unrechtsbewusstsein
+    children:
+    - label: 1. Fehlen des Unrechtsbewusstseins - Verbotsirrtum, § 17 StGB
+    - label: '2. Unvermeidbar: keine Schuld; vermeidbar: fakultative Milderung'
+  - label: III. Entschuldigungsgründe
+    children:
+    - label: 1. Entschuldigender Notstand, § 35 Abs. 1 StGB
+      children:
+      - label: a) Gegenwärtige Gefahr für Leben, Leib oder Freiheit
+      - label: b) Des Täters, eines Angehörigen oder einer nahestehenden Person
+      - label: c) Nicht anders abwendbar
+      - label: d) Keine Zumutbarkeit der Gefahrhinnahme, § 35 Abs. 1 S. 2 StGB
+      - label: e) Rettungswille
+    - label: 2. Notwehrexzess, § 33 StGB (intensiver Exzess aus Verwirrung, Furcht oder Schrecken)
+    - label: 3. Irrtum über entschuldigende Umstände, § 35 Abs. 2 StGB
+    - label: 4. Übergesetzlicher entschuldigender Notstand (Ausnahmefälle)
+  - label: IV. Besondere Schuldmerkmale des jeweiligen Tatbestands
+faelle:
+- slug: sr-fall-angetrunkener-mut
+  title: Der angetrunkene Mut
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  stand: 2026-09
+  facts: >-
+    A ist wütend auf seinen Arbeitskollegen B, der ihn vor anderen bloßgestellt hat.
+    Er beschließt, B am Abend in dessen Stammkneipe "eine Abreibung zu verpassen".
+    Weil er weiß, dass er sich nüchtern nicht trauen wird, trinkt A zu Hause gezielt
+    eine Flasche Schnaps, um sich Mut anzutrinken, und geht dann zur Kneipe. Dort
+    schlägt er dem B mehrfach mit der Faust ins Gesicht; B erleidet eine Platzwunde
+    und einen Nasenbruch. Eine später entnommene Blutprobe ergibt für den
+    Tatzeitpunkt eine Blutalkoholkonzentration von 3,3 Promille. Das Gericht geht
+    nach sachverständiger Beratung davon aus, dass die Steuerungsfähigkeit des A im
+    Zeitpunkt der Schläge aufgehoben war.
+  question: Hat sich A wegen vorsätzlicher Körperverletzung nach § 223 Abs. 1 StGB strafbar gemacht?
+  steps:
+  - prompt: Ist der Tatbestand des § 223 Abs. 1 StGB erfüllt und die Tat rechtswidrig?
+    erwartung: >-
+      Ja - die Faustschläge sind körperliche Misshandlung und Gesundheitsschädigung;
+      A handelte auch im Rausch mit natürlichem Vorsatz. Rechtfertigungsgründe
+      liegen nicht vor.
+  - prompt: War A im Zeitpunkt der Schläge schuldfähig?
+    erwartung: >-
+      Nein - der akute Alkoholrausch mit 3,3 Promille ist eine krankhafte seelische
+      Störung im Sinne des § 20 StGB (Eingangsmerkmal), und die Steuerungsfähigkeit
+      war nach den Feststellungen aufgehoben. Bei Begehung der Tat, § 8 StGB, war A
+      schuldunfähig.
+  - prompt: Welches Problem stellt sich angesichts des gezielten Sichbetrinkens?
+    erwartung: >-
+      A hat seine Schuldunfähigkeit selbst und vorsätzlich herbeigeführt, um die
+      geplante Tat zu begehen. Es stellt sich die Frage einer Bestrafung nach den
+      Grundsätzen der vorsätzlichen actio libera in causa.
+  - prompt: Wie wird die actio libera in causa begründet und ist sie hier anwendbar?
+    erwartung: >-
+      Nach dem Tatbestandsmodell (Rspr., h.M.) ist das Sichbetrinken bereits Teil der
+      tatbestandlichen Handlung; A setzte sich als schuldunfähiges Werkzeug gegen B
+      ein. § 223 StGB ist ein Erfolgsdelikt, das Modell ist daher anwendbar. Beim
+      Trinken war A schuldfähig und hatte Doppelvorsatz: Er wollte sich berauschen und
+      wollte in diesem Zustand B verletzen. Das Ausnahmemodell begründet dasselbe
+      Ergebnis, ist aber wegen Art. 103 Abs. 2 GG abzulehnen.
+  - prompt: Zu welchem Ergebnis führt das?
+    erwartung: >-
+      A ist wegen vorsätzlicher Körperverletzung nach § 223 Abs. 1 StGB strafbar. § 323a
+      StGB tritt dahinter zurück.
+  - prompt: Was gälte, wenn die actio libera in causa abgelehnt würde?
+    erwartung: >-
+      Dann käme eine Strafbarkeit nach § 323a Abs. 1 StGB in Betracht: A hat sich
+      vorsätzlich in einen Rausch versetzt und darin eine rechtswidrige Tat begangen,
+      für die er wegen Schuldunfähigkeit nicht bestraft werden könnte.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Tatbestand des § 223 Abs. 1 StGB und Rechtswidrigkeit bejaht
+      weight: 1.0
+      required: false
+      norms:
+      - § 223 Abs. 1 StGB
+      keywords:
+      - körperliche Misshandlung
+      - Gesundheitsschädigung
+      card_slugs:
+      - sr-schuld-begriff-elemente
+    - id: p2
+      label: Schuldunfähigkeit nach § 20 StGB zweistufig geprüft (Alkoholrausch als krankhafte seelische Störung, aufgehobene Steuerungsfähigkeit)
+      weight: 2.0
+      required: true
+      norms:
+      - § 20 StGB
+      keywords:
+      - § 20
+      - krankhafte seelische Störung
+      - Steuerungsfähigkeit
+      card_slugs:
+      - sr-schuld-schuldunfaehigkeit-20
+      - sr-schuld-verminderte-schuldfaehigkeit-21
+    - id: p3
+      label: Problem der actio libera in causa erkannt (Koinzidenzprinzip, § 8 StGB)
+      weight: 2.0
+      required: true
+      norms:
+      - § 8 StGB
+      - § 20 StGB
+      keywords:
+      - actio libera in causa
+      - a.l.i.c.
+      - Koinzidenz
+      card_slugs:
+      - sr-schuld-alic-streitstand
+    - id: p4
+      label: Streitstand dargestellt (Tatbestandsmodell, Ausnahmemodell) und Tatbestandsmodell mit Doppelvorsatz angewendet
+      weight: 3.0
+      required: true
+      norms:
+      - § 20 StGB
+      - Art. 103 Abs. 2 GG
+      keywords:
+      - Tatbestandsmodell
+      - Ausnahmemodell
+      - Doppelvorsatz
+      card_slugs:
+      - sr-schuld-alic-streitstand
+    - id: p5
+      label: 'Ergebnis: Strafbarkeit nach § 223 Abs. 1 StGB über die vorsätzliche actio libera in causa'
+      weight: 1.5
+      required: true
+      norms:
+      - § 223 Abs. 1 StGB
+      keywords:
+      - strafbar
+      - vorsätzliche Körperverletzung
+      card_slugs:
+      - sr-schuld-alic-streitstand
+    - id: p6
+      label: Vollrausch, § 323a StGB, als Auffangtatbestand angesprochen
+      weight: 1.5
+      required: false
+      norms:
+      - § 323a Abs. 1 StGB
+      keywords:
+      - § 323a
+      - Vollrausch
+      card_slugs:
+      - sr-schuld-vollrausch-323a

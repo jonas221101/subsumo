@@ -1,0 +1,243 @@
+topic:
+  slug: zr-bereicherungsrecht-nichtleistungskondiktion
+  area: zivilrecht
+  title: "Bereicherungsrecht: Nichtleistungskondiktion, §§ 812 Abs. 1 S. 1 Alt. 2, 816 BGB"
+  parent: zr-bereicherungsrecht-leistungskondiktion
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-fable-5-1
+    status: in-pruefung
+    normzitate_geprueft: true
+cards:
+- slug: zr-nlk-eingriffskondiktion-voraussetzungen
+  type: norm
+  front: "Welche Voraussetzungen hat die Eingriffskondiktion nach § 812 Abs. 1 S. 1 Alt. 2 BGB?"
+  back: "Die Eingriffskondiktion setzt voraus, dass der Anspruchsgegner (1) etwas erlangt hat, also einen vermögenswerten Vorteil (Eigentum, Besitz, Gebrauchsvorteile, Befreiung von einer Verbindlichkeit), (2) in sonstiger Weise, das heißt nicht durch Leistung des Anspruchstellers oder eines Dritten, sondern durch einen Eingriff in eine fremde Rechtsposition, (3) auf Kosten des Anspruchstellers, was nach herrschender Meinung erfordert, dass der Vorteil aus einer Rechtsposition stammt, die nach der Rechtsordnung dem Anspruchsteller zugewiesen ist (Zuweisungsgehalt), und (4) ohne Rechtsgrund, also ohne dass ein Recht zum Behaltendürfen besteht. Der Eingriff muss nicht rechtswidrig oder schuldhaft sein; auch der gutgläubige Verbrauch fremder Sachen begründet die Kondiktion."
+  norms:
+  - § 812 Abs. 1 S. 1 Alt. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-nlk-zuweisungsgehalt
+  type: streitstand
+  front: "Wann erfolgt ein Eingriff „auf Kosten“ des Anspruchstellers - Zuweisungstheorie oder Rechtswidrigkeitstheorie?"
+  back: "Nach der heute herrschenden Lehre vom Zuweisungsgehalt kommt es darauf an, ob der erlangte Vorteil aus einer Rechtsposition stammt, deren wirtschaftliche Verwertung die Rechtsordnung ausschließlich dem Anspruchsteller zuweist. Einen solchen Zuweisungsgehalt haben absolute Rechte (Eigentum, beschränkte dingliche Rechte, Immaterialgüterrechte, vermögenswerte Bestandteile des Persönlichkeitsrechts wie Name und Bild), nicht aber bloße Erwerbschancen, Marktpositionen oder das Vermögen als solches. Die ältere Rechtswidrigkeitstheorie stellte stattdessen darauf ab, ob der Eingriff gegen ein Verbot der Rechtsordnung verstößt. Gegen sie spricht, dass das Bereicherungsrecht keine Sanktion für rechtswidriges Verhalten ist, sondern eine ungerechtfertigte Vermögensverschiebung rückgängig macht, und dass sie bei rechtmäßigen, aber vermögensverschiebenden Handlungen (etwa gutgläubigem Verbrauch) versagt. Die Rechtsprechung folgt der Zuweisungstheorie."
+  norms:
+  - § 812 Abs. 1 S. 1 Alt. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-nlk-vorrang-leistungskondiktion
+  type: definition
+  front: "Was besagt der Grundsatz vom Vorrang der Leistungskondiktion?"
+  back: "Wer einen Vermögensvorteil durch die Leistung eines anderen erlangt hat, muss ihn grundsätzlich nur an diesen Leistenden herausgeben und nicht an einen Dritten, der eine Nichtleistungskondiktion geltend macht (Subsidiarität der Nichtleistungskondiktion). Der Grundsatz sichert die Rückabwicklung innerhalb der jeweiligen Leistungsbeziehung: Jeder soll seine Einwendungen gegen seinen Vertragspartner behalten und nicht dem Insolvenzrisiko eines fremden Schuldners ausgesetzt sein. Er gilt nicht schematisch, sondern als Auslegungshilfe; das Gesetz durchbricht ihn ausdrücklich in § 816 Abs. 1 S. 2 BGB (unentgeltlicher Erwerb) und § 822 BGB (unentgeltliche Weitergabe). Außerdem greift er nicht, wenn die Leistungsbeziehung wertungsmäßig keinen Schutz verdient, etwa weil der Erwerber die Sache nicht rechtsgeschäftlich vom Nichtberechtigten erlangt hat, sondern der Anspruchsteller das Eigentum nur durch gesetzlichen Erwerb (§§ 946 ff. BGB) verloren hat."
+  norms:
+  - § 812 Abs. 1 S. 1 Alt. 2 BGB
+  - § 816 Abs. 1 S. 2 BGB
+  - § 822 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-nlk-816-abs-1-verfuegung-nichtberechtigter
+  type: definition
+  front: "Welche Voraussetzungen hat der Anspruch aus § 816 Abs. 1 S. 1 BGB?"
+  back: "§ 816 Abs. 1 S. 1 BGB ist ein Sonderfall der Eingriffskondiktion. Erforderlich sind: (1) eine Verfügung, also ein Rechtsgeschäft, das unmittelbar auf ein Recht einwirkt, indem es dieses überträgt, belastet, aufhebt oder inhaltlich ändert (etwa die Übereignung nach § 929 S. 1 BGB); (2) durch einen Nichtberechtigten, das heißt jemanden, der weder Inhaber des Rechts noch verfügungsbefugt ist; (3) Wirksamkeit der Verfügung gegenüber dem Berechtigten, sei es kraft Gesetzes (gutgläubiger Erwerb nach §§ 932 ff. BGB, § 892 BGB) oder kraft Genehmigung des Berechtigten nach § 185 Abs. 2 S. 1 BGB. Der Berechtigte kann durch Genehmigung die Wirksamkeit gezielt herbeiführen, um sich den Erlös zu sichern. Rechtsfolge ist die Herausgabe des durch die Verfügung Erlangten an den Berechtigten."
+  norms:
+  - § 816 Abs. 1 S. 1 BGB
+  - § 185 Abs. 2 S. 1 BGB
+  - § 932 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-nlk-816-erloes-oder-wert-streit
+  type: streitstand
+  front: "Was ist bei § 816 Abs. 1 S. 1 BGB „das durch die Verfügung Erlangte“ - der volle Erlös oder nur der objektive Wert?"
+  back: "Nach herrschender Meinung und ständiger Rechtsprechung (BGH) ist der gesamte Veräußerungserlös herauszugeben, also auch ein über dem objektiven Wert liegender Gewinn. Begründung: Der Wortlaut spricht vom „durch die Verfügung“ Erlangten, und der Nichtberechtigte soll aus dem Eingriff in fremdes Recht keinen Vorteil ziehen. Nach der Gegenauffassung ist Gegenstand des Anspruchs die Befreiung von der Verbindlichkeit gegenüber dem Erwerber beziehungsweise nur der objektive Wert des Rechts, weil das Bereicherungsrecht keine Gewinnabschöpfung bezwecke; ein Mehrerlös beruhe auf dem Verhandlungsgeschick des Nichtberechtigten. Praktische Bedeutung hat der Streit nur, wenn der Erlös den Verkehrswert übersteigt. Beim bösgläubigen Nichtberechtigten kommt daneben eine Gewinnherausgabe über § 687 Abs. 2 BGB iVm §§ 681 S. 2, 667 BGB in Betracht."
+  norms:
+  - § 816 Abs. 1 S. 1 BGB
+  - § 687 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-nlk-816-abs-1-s-2-und-abs-2
+  type: definition
+  front: "Was regeln § 816 Abs. 1 S. 2 BGB und § 816 Abs. 2 BGB?"
+  back: "§ 816 Abs. 1 S. 2 BGB erweitert die Haftung auf den unentgeltlichen Erwerber: Erfolgt die Verfügung des Nichtberechtigten unentgeltlich (etwa Schenkung), trifft die Herausgabepflicht denjenigen, der aufgrund der Verfügung unmittelbar einen rechtlichen Vorteil erlangt hat. Der unentgeltliche Erwerber ist weniger schutzwürdig, sodass ausnahmsweise ein Durchgriff des Berechtigten auf den Leistungsempfänger zugelassen wird. § 816 Abs. 2 BGB betrifft die Leistung an einen Nichtberechtigten: Wird an ihn eine Leistung bewirkt, die dem Berechtigten gegenüber wirksam ist, muss der Nichtberechtigte das Erlangte an den Berechtigten herausgeben. Hauptanwendungsfall ist die schuldbefreiende Leistung des Schuldners an den bisherigen Gläubiger nach einer ihm unbekannten Abtretung (§ 407 Abs. 1 BGB) oder an den Besitzer eines Schuldscheins beziehungsweise Inhaberpapiers (§ 793 Abs. 1 S. 1 BGB, § 808 Abs. 1 S. 1 BGB)."
+  norms:
+  - § 816 Abs. 1 S. 2 BGB
+  - § 816 Abs. 2 BGB
+  - § 407 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-nlk-umfang-818-abs-1-2
+  type: definition
+  front: "Wie bestimmt sich der Umfang des Bereicherungsanspruchs nach § 818 Abs. 1 und 2 BGB bei der Eingriffskondiktion?"
+  back: "Herauszugeben ist zunächst der erlangte Gegenstand selbst. Nach § 818 Abs. 1 BGB erstreckt sich die Pflicht auf die gezogenen Nutzungen und auf das, was der Empfänger aufgrund eines erlangten Rechts oder als Ersatz für die Zerstörung, Beschädigung oder Entziehung des Gegenstands erwirbt (Surrogate); das rechtsgeschäftliche Surrogat (Verkaufserlös) fällt nach h.M. nicht unter § 818 Abs. 1 BGB, sondern wird über § 816 Abs. 1 S. 1 BGB oder § 818 Abs. 2 BGB erfasst. Ist die Herausgabe wegen der Beschaffenheit des Erlangten nicht möglich - typisch bei Gebrauchsvorteilen, Dienstleistungen oder verbrauchten Sachen -, ist nach § 818 Abs. 2 BGB Wertersatz zu leisten. Maßstab ist der objektive Verkehrswert, bei der unbefugten Nutzung fremder Sachen oder Rechte also die übliche Miete oder die angemessene Lizenzgebühr, unabhängig davon, ob der Eingreifende selbst einen Gewinn erzielt hat."
+  norms:
+  - § 818 Abs. 1 BGB
+  - § 818 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-nlk-entreicherung-818-3-und-819
+  type: definition
+  front: "Wann kann sich der Bereicherungsschuldner auf Entreicherung berufen, und wann ist ihm dies nach §§ 818 Abs. 4, 819 BGB verwehrt?"
+  back: "Nach § 818 Abs. 3 BGB ist die Herausgabe- oder Wertersatzpflicht ausgeschlossen, soweit der Empfänger nicht mehr bereichert ist. Maßgeblich ist ein Saldo: Der Wegfall der Bereicherung liegt vor, wenn der erlangte Vorteil ersatzlos weggefallen ist, etwa durch Verlust, Verbrauch für Luxusaufwendungen, die der Empfänger sonst nicht getätigt hätte, oder nutzlose Aufwendungen im Vertrauen auf die Beständigkeit des Erwerbs. Keine Entreicherung liegt vor, wenn der Empfänger eigene Aufwendungen erspart hat (etwa Bezahlung ohnehin fälliger Schulden), weil die Ersparnis als Bereicherung fortbesteht. Der Einwand ist dem Schuldner abgeschnitten, sobald er verschärft haftet: ab Rechtshängigkeit nach § 818 Abs. 4 BGB und nach § 819 Abs. 1 BGB ab dem Zeitpunkt, in dem er den Mangel des rechtlichen Grundes kennt (positive Kenntnis der Tatsachen und der daraus folgenden Rechtsgrundlosigkeit). Der bösgläubige Empfänger haftet dann nach den allgemeinen Vorschriften, also insbesondere auf Schadensersatz nach §§ 292, 989 BGB und auf Nutzungen nach § 987 BGB."
+  norms:
+  - § 818 Abs. 3 BGB
+  - § 818 Abs. 4 BGB
+  - § 819 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-nlk-weitere-nichtleistungskondiktionen
+  type: definition
+  front: "Welche weiteren Nichtleistungskondiktionen neben der Eingriffskondiktion kennt § 812 Abs. 1 S. 1 Alt. 2 BGB?"
+  back: "Die Verwendungskondiktion erfasst Fälle, in denen jemand ohne Leistungszweck auf einen fremden Gegenstand aufwendet, etwa irrtümlich das fremde Dach repariert; sie ist gegenüber dem Eigentümer-Besitzer-Verhältnis (§§ 994 ff. BGB) und der Geschäftsführung ohne Auftrag subsidiär. Die Rückgriffskondiktion greift, wenn jemand eine fremde Schuld tilgt (§ 267 Abs. 1 BGB), ohne dass ein Auftrag, eine Geschäftsführung ohne Auftrag oder ein gesetzlicher Forderungsübergang die Rückabwicklung regelt. Beiden ist gemeinsam, dass der Vermögensvorteil nicht durch bewusste und zweckgerichtete Mehrung fremden Vermögens zufließt, sodass es an einer Leistung fehlt. In der Klausur sind sie erst zu prüfen, wenn vorrangige Sonderregelungen (EBV, GoA, gesetzlicher Forderungsübergang) ausscheiden."
+  norms:
+  - § 812 Abs. 1 S. 1 Alt. 2 BGB
+  - § 267 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-eingriffskondiktion-812-816
+  title: "Eingriffskondiktion, § 812 Abs. 1 S. 1 Alt. 2 BGB, und Verfügung eines Nichtberechtigten, § 816 Abs. 1 S. 1 BGB"
+  norms:
+  - § 812 Abs. 1 S. 1 Alt. 2 BGB
+  - § 816 Abs. 1 S. 1 BGB
+  - § 818 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: "I. Vorrangige Sonderregelung: § 816 Abs. 1 S. 1 BGB"
+    children:
+    - label: "1. Verfügung eines Nichtberechtigten"
+    - label: "2. Wirksamkeit gegenüber dem Berechtigten (gutgläubiger Erwerb oder Genehmigung, § 185 Abs. 2 S. 1 BGB)"
+    - label: "3. Rechtsfolge: Herausgabe des Erlangten (h.M.: voller Erlös)"
+    hinweis: "Bei unentgeltlicher Verfügung Anspruch gegen den Erwerber, § 816 Abs. 1 S. 2 BGB; bei Leistung an den Nichtberechtigten § 816 Abs. 2 BGB."
+  - label: "II. Etwas erlangt"
+    hinweis: "Jeder vermögenswerte Vorteil: Eigentum, Besitz, Gebrauchsvorteile, Befreiung von einer Verbindlichkeit."
+  - label: "III. In sonstiger Weise (nicht durch Leistung)"
+    children:
+    - label: "1. Keine Leistung des Anspruchstellers"
+    - label: "2. Keine Leistung eines Dritten - Vorrang der Leistungskondiktion"
+      hinweis: "Ausnahmen: § 816 Abs. 1 S. 2 BGB, § 822 BGB und Wertungskorrekturen, wenn die Leistungsbeziehung keinen Schutz verdient."
+  - label: "IV. Auf Kosten des Anspruchstellers: Eingriff in eine Position mit Zuweisungsgehalt"
+  - label: "V. Ohne Rechtsgrund"
+    hinweis: "Rechtsgrund kann sich aus Gesetz (etwa §§ 946 ff. BGB nur für den Rechtserwerb, nicht für das Behaltendürfen, vgl. § 951 BGB) oder aus einem Vertrag mit dem Berechtigten ergeben."
+  - label: "VI. Rechtsfolge: Umfang der Herausgabe, § 818 BGB"
+    children:
+    - label: "1. Erlangter Gegenstand, Nutzungen und Surrogate, § 818 Abs. 1 BGB"
+    - label: "2. Wertersatz bei Unmöglichkeit der Herausgabe, § 818 Abs. 2 BGB"
+    - label: "3. Entreicherung, § 818 Abs. 3 BGB - ausgeschlossen bei verschärfter Haftung nach §§ 818 Abs. 4, 819 BGB"
+faelle:
+- slug: zr-fall-verkauftes-leih-e-bike
+  title: "Das verkaufte Leih-E-Bike"
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: "A leiht seinem Bekannten B unentgeltlich für eine Woche sein E-Bike (Verkehrswert 700 EUR). Noch während der Leihwoche verkauft B das E-Bike an C, der B für den Eigentümer hält und keinen Anlass hat, daran zu zweifeln; B übergibt C das Rad gegen Zahlung von 900 EUR. Den Betrag gibt B in der folgenden Woche vollständig für einen Wochenendtrip aus, den er sich sonst nicht geleistet hätte. Als A das E-Bike zurückverlangt, erfährt er von dem Verkauf. A verlangt von B Zahlung von 900 EUR, hilfsweise von 700 EUR. Außerdem möchte A wissen, ob er von C das E-Bike oder Wertersatz verlangen kann. B meint, er sei nicht mehr bereichert und schulde jedenfalls höchstens 700 EUR."
+  question: "Welche bereicherungsrechtlichen Ansprüche hat A gegen B und gegen C?"
+  steps:
+  - prompt: "Hat C Eigentum am E-Bike erworben, und welche Bedeutung hat das für die Ansprüche des A?"
+    erwartung: "C hat das Eigentum nach §§ 929 S. 1, 932 Abs. 1 S. 1 BGB gutgläubig erworben; § 935 Abs. 1 BGB steht nicht entgegen, weil A dem B den Besitz freiwillig überlassen hat, das Rad also nicht abhandengekommen ist. Damit scheidet § 985 BGB gegen C aus, und die Verfügung des B ist gegenüber A wirksam - Voraussetzung des § 816 Abs. 1 S. 1 BGB."
+  - prompt: "Prüfe den Anspruch des A gegen B aus § 816 Abs. 1 S. 1 BGB."
+    erwartung: "B hat als Nichtberechtigter (kein Eigentümer, keine Verfügungsbefugnis) durch Übereignung an C verfügt; die Verfügung ist A gegenüber wegen § 932 BGB wirksam. B muss das durch die Verfügung Erlangte herausgeben. Nach h.M. ist das der volle Erlös von 900 EUR, nach der Gegenauffassung nur der objektive Wert von 700 EUR; mit der h.M. schuldet B 900 EUR."
+  - prompt: "Kann B sich auf Entreicherung berufen?"
+    erwartung: "Nein. Zwar hat B den Erlös für Luxusaufwendungen verbraucht, die er sonst nicht getätigt hätte, was grundsätzlich Entreicherung nach § 818 Abs. 3 BGB begründen könnte. B kannte aber von Anfang an die Tatsachen, aus denen sich seine fehlende Berechtigung und damit der Mangel des rechtlichen Grundes ergibt; er haftet deshalb nach § 819 Abs. 1 BGB iVm § 818 Abs. 4 BGB verschärft und kann sich nicht auf Entreicherung berufen."
+  - prompt: "Hat A einen Bereicherungsanspruch gegen C?"
+    erwartung: "Nein. C hat das Eigentum durch Leistung des B erlangt, sodass eine Eingriffskondiktion des A nach dem Vorrang der Leistungskondiktion ausscheidet; § 816 Abs. 1 S. 2 BGB greift nicht, weil C entgeltlich erworben hat. Der gutgläubige Erwerb nach § 932 BGB ist zugleich Rechtsgrund für das Behaltendürfen."
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: "Gutgläubiger Eigentumserwerb des C nach §§ 929 S. 1, 932 Abs. 1 S. 1 BGB bejaht, kein Abhandenkommen nach § 935 Abs. 1 BGB wegen freiwilliger Besitzüberlassung"
+      weight: 1.5
+      required: true
+      norms:
+      - § 929 S. 1 BGB
+      - § 932 Abs. 1 S. 1 BGB
+      - § 935 Abs. 1 BGB
+      keywords:
+      - "932"
+      - gutgläubig
+      - "935"
+      - abhandengekommen
+      card_slugs:
+      - zr-nlk-816-abs-1-verfuegung-nichtberechtigter
+    - id: p2
+      label: "Anspruch A gegen B aus § 816 Abs. 1 S. 1 BGB: Verfügung eines Nichtberechtigten, die gegenüber A wirksam ist"
+      weight: 2.5
+      required: true
+      norms:
+      - § 816 Abs. 1 S. 1 BGB
+      keywords:
+      - "816"
+      - Nichtberechtigter
+      - Verfügung
+      - wirksam
+      card_slugs:
+      - zr-nlk-816-abs-1-verfuegung-nichtberechtigter
+    - id: p3
+      label: "Streit um den Umfang des Erlangten dargestellt (Erlös 900 EUR nach h.M. gegen Wert 700 EUR) und mit Begründung entschieden"
+      weight: 2.0
+      norms:
+      - § 816 Abs. 1 S. 1 BGB
+      keywords:
+      - Erlös
+      - "900"
+      - objektiver Wert
+      - h.M.
+      card_slugs:
+      - zr-nlk-816-erloes-oder-wert-streit
+    - id: p4
+      label: "Entreicherung nach § 818 Abs. 3 BGB angesprochen, aber wegen verschärfter Haftung des bösgläubigen B nach §§ 819 Abs. 1, 818 Abs. 4 BGB verneint"
+      weight: 2.0
+      required: true
+      norms:
+      - § 818 Abs. 3 BGB
+      - § 818 Abs. 4 BGB
+      - § 819 Abs. 1 BGB
+      keywords:
+      - "819"
+      - Entreicherung
+      - "818"
+      - Kenntnis
+      card_slugs:
+      - zr-nlk-entreicherung-818-3-und-819
+    - id: p5
+      label: "Kein Anspruch gegen C: Vorrang der Leistungskondiktion, § 816 Abs. 1 S. 2 BGB mangels Unentgeltlichkeit nicht einschlägig"
+      weight: 2.0
+      required: true
+      norms:
+      - § 812 Abs. 1 S. 1 Alt. 2 BGB
+      - § 816 Abs. 1 S. 2 BGB
+      keywords:
+      - Vorrang
+      - Leistung
+      - unentgeltlich
+      - Subsidiarität
+      card_slugs:
+      - zr-nlk-vorrang-leistungskondiktion
+      - zr-nlk-816-abs-1-s-2-und-abs-2
+    - id: p6
+      label: "Ergebnis: A kann von B 900 EUR verlangen, gegen C bestehen keine Ansprüche"
+      weight: 1.0
+      keywords:
+      - "900"
+      - kein Anspruch gegen C
+      - Anspruch besteht

@@ -1,0 +1,419 @@
+topic:
+  slug: sr-bt-anschlussdelikte-257-259
+  area: strafrecht
+  title: Anschlussdelikte - Begünstigung § 257, Strafvereitelung § 258, Hehlerei § 259 StGB
+  parent: sr-at
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-fable-5-1
+    status: in-pruefung
+    normzitate_geprueft: true
+cards:
+- slug: sr-anschluss-ueberblick-rechtsgueter
+  type: definition
+  front: 'Definiere: Anschlussdelikte und nenne die geschützten Rechtsgüter der §§ 257, 258, 259 StGB'
+  back: >-
+    Anschlussdelikte sind Straftaten, die an eine rechtswidrige Vortat eines
+    anderen anknüpfen und deren Unrecht in der Perpetuierung, Absicherung oder
+    Verwertung der Vortat liegt. Die Vortat muss tatbestandsmäßig und rechtswidrig,
+    aber nicht schuldhaft begangen sein; auf ihre Verfolgbarkeit kommt es nicht an.
+    Die Begünstigung, § 257 StGB, schützt nach h.M. die Rechtspflege und daneben das
+    Interesse des Verletzten an der Wiederherstellung des rechtmäßigen Zustands
+    (Restitutionsinteresse). Die Strafvereitelung, § 258 StGB, schützt allein die
+    staatliche Rechtspflege, nämlich den staatlichen Straf- und
+    Vollstreckungsanspruch. Die Hehlerei, § 259 StGB, ist Vermögensdelikt: Sie
+    schützt das Vermögen des durch die Vortat Verletzten gegen die
+    Aufrechterhaltung der rechtswidrigen Besitzlage.
+  norms:
+  - § 257 StGB
+  - § 258 StGB
+  - § 259 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-beguenstigung-257-tatbestand
+  type: norm
+  front: 'Welche Voraussetzungen hat die Begünstigung, § 257 Abs. 1 StGB?'
+  back: >-
+    Nach § 257 Abs. 1 StGB macht sich strafbar, wer einem anderen, der eine
+    rechtswidrige Tat begangen hat, in der Absicht Hilfe leistet, ihm die Vorteile
+    der Tat zu sichern. Objektiv erforderlich sind eine rechtswidrige Vortat eines
+    anderen, ein noch vorhandener, unmittelbar aus der Vortat stammender Vorteil
+    (nach h.M. sind Surrogate wie der Verkaufserlös keine Vorteile der Tat) und
+    eine Hilfeleistung, also jede Handlung, die objektiv geeignet ist, den Vorteil
+    gegen Entziehung zu sichern; ein Sicherungserfolg ist nicht erforderlich.
+    Subjektiv verlangt die Norm neben dem Vorsatz die Vorteilssicherungsabsicht
+    (dolus directus ersten Grades), wobei die Sicherung nicht das einzige Motiv sein
+    muss. Nach § 257 Abs. 2 StGB darf die Strafe nicht schwerer sein als die für die
+    Vortat angedrohte. § 257 Abs. 3 S. 1 StGB schließt die Strafbarkeit aus, wenn
+    der Begünstigende selbst wegen Beteiligung an der Vortat strafbar ist; § 257
+    Abs. 3 S. 2 StGB macht davon eine Ausnahme, wenn er einen Unbeteiligten zur
+    Begünstigung anstiftet.
+  norms:
+  - § 257 Abs. 1 StGB
+  - § 257 Abs. 2 StGB
+  - § 257 Abs. 3 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-strafvereitelung-258-tatbestand
+  type: norm
+  front: 'Welche Voraussetzungen hat die Strafvereitelung, § 258 StGB?'
+  back: >-
+    § 258 Abs. 1 StGB (Verfolgungsvereitelung) bestraft, wer absichtlich oder
+    wissentlich ganz oder zum Teil vereitelt, dass ein anderer wegen einer
+    rechtswidrigen Tat bestraft oder einer Maßnahme unterworfen wird. § 258 Abs. 2
+    StGB (Vollstreckungsvereitelung) erfasst das Vereiteln der Vollstreckung einer
+    verhängten Strafe oder Maßnahme. Vereiteln bedeutet nach h.M., dass die
+    Bestrafung ganz unterbleibt oder zumindest für geraume Zeit verzögert wird;
+    eine nur kurzfristige Verzögerung genügt nicht. Die Tat ist Erfolgsdelikt, der
+    Versuch ist nach § 258 Abs. 4 StGB strafbar. Subjektiv genügt hinsichtlich der
+    Vereitelung nur Absicht oder sicheres Wissen, nicht dolus eventualis; für die
+    übrigen Merkmale reicht bedingter Vorsatz. Nach § 258 Abs. 3 StGB darf die
+    Strafe nicht schwerer sein als die für die Vortat angedrohte. Straflos bleibt
+    nach § 258 Abs. 5 StGB, wer zugleich seine eigene Bestrafung vereiteln will,
+    und nach § 258 Abs. 6 StGB, wer die Tat zugunsten eines Angehörigen begeht
+    (persönlicher Strafausschließungsgrund).
+  norms:
+  - § 258 Abs. 1 StGB
+  - § 258 Abs. 2 StGB
+  - § 258 Abs. 4 StGB
+  - § 258 Abs. 5 StGB
+  - § 258 Abs. 6 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-strafvereitelung-abgrenzung-beguenstigung
+  type: definition
+  front: Wie sind Begünstigung, § 257 StGB, und Strafvereitelung, § 258 StGB, voneinander abzugrenzen?
+  back: >-
+    Beide Delikte knüpfen an eine Vortat eines anderen an, schützen aber
+    unterschiedliche Ziele: Die Begünstigung sichert dem Vortäter die Vorteile
+    seiner Tat (sachliche Begünstigung), die Strafvereitelung bewahrt ihn vor der
+    Strafverfolgung (persönliche Begünstigung). Entscheidend ist die Zielrichtung
+    des Handelns: Wer die Beute versteckt, damit sie dem Vortäter erhalten bleibt,
+    begeht Begünstigung; wer sie versteckt, damit die Polizei den Vortäter nicht
+    überführen kann, begeht Strafvereitelung. Verfolgt der Täter beide Ziele,
+    können § 257 StGB und § 258 StGB in Tateinheit stehen. Anders als § 258 StGB
+    ist § 257 StGB kein Erfolgsdelikt; die Hilfeleistung muss nur objektiv
+    geeignet sein. Das Angehörigenprivileg des § 258 Abs. 6 StGB gilt nur für die
+    Strafvereitelung, nicht für die Begünstigung.
+  norms:
+  - § 257 Abs. 1 StGB
+  - § 258 Abs. 1 StGB
+  - § 258 Abs. 6 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-hehlerei-259-tatbestand-vortat
+  type: norm
+  front: 'Welche Voraussetzungen hat die Hehlerei, § 259 Abs. 1 StGB, und welche Anforderungen gelten für die Vortat?'
+  back: >-
+    Nach § 259 Abs. 1 StGB macht sich strafbar, wer eine Sache, die ein anderer
+    gestohlen oder sonst durch eine gegen fremdes Vermögen gerichtete rechtswidrige
+    Tat erlangt hat, ankauft oder sonst sich oder einem Dritten verschafft, sie
+    absetzt oder absetzen hilft, um sich oder einen Dritten zu bereichern. Tatobjekt
+    ist nur eine körperliche Sache; Forderungen und Daten scheiden aus. Die Vortat
+    muss gegen fremdes Vermögen gerichtet sein (Diebstahl, Unterschlagung, Betrug,
+    Erpressung, Raub, auch Hehlerei selbst); Vortaten gegen andere Rechtsgüter wie
+    Urkundenfälschung genügen nicht. Die Sache muss unmittelbar aus der Vortat
+    stammen: Erlöse oder Surrogate sind keine tauglichen Tatobjekte
+    (keine Ersatzhehlerei). Die rechtswidrige Vermögenslage muss im Zeitpunkt der
+    Hehlereihandlung noch bestehen; ist die Sache etwa gutgläubig erworben oder an
+    den Eigentümer zurückgelangt, scheidet Hehlerei aus. Subjektiv sind Vorsatz
+    (bedingter Vorsatz hinsichtlich der Vortat genügt) und Bereicherungsabsicht
+    erforderlich. Der Versuch ist nach § 259 Abs. 3 StGB strafbar.
+  norms:
+  - § 259 Abs. 1 StGB
+  - § 259 Abs. 3 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-hehlerei-sichverschaffen
+  type: definition
+  front: 'Definiere: Sichverschaffen und Ankaufen im Sinne des § 259 Abs. 1 StGB'
+  back: >-
+    Sichverschaffen ist die Erlangung eigener Verfügungsgewalt über die Sache im
+    einverständlichen Zusammenwirken mit dem Vortäter, sodass der Hehler über die
+    Sache zu eigenen Zwecken wie ein Eigentümer verfügen kann (derivativer Erwerb).
+    Ankaufen ist der Unterfall des Sichverschaffens durch Kaufvertrag; auch hier
+    kommt es auf die tatsächliche Erlangung der Verfügungsgewalt an, der bloße
+    Vertragsschluss genügt nicht. Am einverständlichen Zusammenwirken fehlt es, wenn
+    der Täter die Sache dem Vortäter wegnimmt, abnötigt oder abschwindelt; dann liegt
+    keine Hehlerei, sondern gegebenenfalls Diebstahl, Erpressung oder Betrug zulasten
+    des Vortäters vor. Wer die Sache nur zur Aufbewahrung oder zum Transport für den
+    Vortäter übernimmt, ohne eigene Verfügungsmacht zu erlangen, verschafft sie
+    sich nicht; in Betracht kommen dann Absatzhilfe oder Begünstigung. Das
+    Drittverschaffen erfasst die Verschaffung der Verfügungsgewalt an einen Dritten
+    unter Ausschluss des Vortäters.
+  norms:
+  - § 259 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-hehlerei-absatzhilfe-streitstand
+  type: streitstand
+  front: 'Streitstand: Setzen Absetzen und Absatzhilfe bei § 259 StGB einen Absatzerfolg voraus?'
+  back: >-
+    Problem: Absetzen ist die selbständige Übertragung der Sache an einen Dritten
+    im Interesse und mit Einverständnis des Vortäters; Absatzhilfe ist die
+    unselbständige Unterstützung des Vortäters bei dessen eigenem Absatz. Streitig
+    war lange, ob bereits erfolglose Absatzbemühungen vollendete Hehlerei sind.
+
+    Frühere Rspr.: Absetzen und Absatzhilfe seien Tätigkeitsmerkmale; jede auf den
+    Absatz gerichtete Tätigkeit vollende die Hehlerei, ein Absatzerfolg sei nicht
+    erforderlich. Begründung war vor allem die Gleichbehandlung mit dem
+    Sichverschaffen und die Schwierigkeit, den Erfolg nachzuweisen.
+
+    Heute h.M. und Rspr. (BGH 2013): Absetzen und Absatzhilfe setzen einen
+    Absatzerfolg voraus, also die tatsächliche Übertragung der Verfügungsgewalt auf
+    einen Dritten. Der Wortlaut "absetzt" beschreibt einen Erfolg, und da § 259
+    Abs. 3 StGB den Versuch unter Strafe stellt, braucht es keine Vorverlagerung der
+    Vollendung. Erfolglose Absatzbemühungen sind versuchte Hehlerei.
+
+    Zur Absatzhilfe: Sie ist trotz ihres Wortlauts täterschaftliche Begehungsform
+    und keine Beihilfe; der Absatzhelfer muss im Lager des Vortäters stehen und
+    dessen Absatz unterstützen. Wer dagegen für den Erwerber tätig wird, leistet
+    keine Absatzhilfe, sondern kann Beihilfe zum Sichverschaffen des Erwerbers
+    begehen.
+
+    Konsequenz: Bleibt der Absatz aus, ist nach heutiger Rspr. nur wegen versuchter
+    Hehlerei nach § 259 Abs. 1, Abs. 3 StGB zu bestrafen.
+  norms:
+  - § 259 Abs. 1 StGB
+  - § 259 Abs. 3 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-anschluss-vortatbeteiligte
+  type: definition
+  front: Können Beteiligte der Vortat Täter eines Anschlussdelikts sein?
+  back: >-
+    Alle drei Delikte setzen die Vortat "eines anderen" voraus und behandeln den
+    Vortäter unterschiedlich. Bei § 257 StGB schließt § 257 Abs. 3 S. 1 StGB die
+    Strafbarkeit jedes Vortatbeteiligten (Täter, Anstifter, Gehilfe) aus, sofern
+    er wegen der Beteiligung strafbar ist. Bei § 258 StGB regelt § 258 Abs. 5 StGB
+    die Straflosigkeit dessen, der zugleich sich selbst begünstigen will; der
+    Vortatbeteiligte, der einen anderen Beteiligten schützt, bleibt straflos, wenn
+    er damit auch seine eigene Verfolgung verhindern will. Bei § 259 StGB scheidet
+    Hehlerei für Täter und Mittäter der Vortat aus, weil sie die Sache nicht von
+    einem "anderen" erlangen; Anstifter und Gehilfen der Vortat können nach h.M.
+    dagegen Hehler sein, weil sie die Sache erst durch ein weiteres
+    Rechtsgeschäft mit dem Vortäter erlangen. Die Verwertung der Beute durch den
+    Vortäter selbst ist keine Hehlerei, sondern mitbestrafte Nachtat oder
+    eigenständiger Betrug gegenüber dem Erwerber.
+  norms:
+  - § 257 Abs. 3 S. 1 StGB
+  - § 258 Abs. 5 StGB
+  - § 259 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-hehlerei-bereicherungsabsicht-konkurrenzen
+  type: definition
+  front: Welche Anforderungen stellt die Bereicherungsabsicht bei § 259 StGB, und wie steht die Hehlerei zu § 257 StGB und § 246 StGB?
+  back: >-
+    Die Bereicherungsabsicht verlangt zielgerichtetes Streben nach einem
+    Vermögensvorteil für sich oder einen Dritten; anders als bei § 263 StGB müssen
+    Vorteil und Schaden nicht stoffgleich sein, und die Bereicherung muss nicht
+    rechtswidrig sein. Es genügt, dass der Hehler die Sache unter Wert erwirbt oder
+    eine Provision erstrebt; wer die Sache aus reiner Gefälligkeit verwahrt, handelt
+    ohne Bereicherungsabsicht. Zu § 257 StGB steht die Hehlerei in Tateinheit, wenn
+    der Täter zugleich die Vorteile des Vortäters sichern will; häufig fehlt aber die
+    Vorteilssicherungsabsicht, weil der Vortäter die Sache gerade verliert. Die
+    Unterschlagung der hehlerisch erlangten Sache tritt gemäß der
+    Subsidiaritätsklausel des § 246 Abs. 1 StGB zurück. Gewerbsmäßige und
+    bandenmäßige Hehlerei sind in §§ 260, 260a StGB qualifiziert.
+  norms:
+  - § 259 Abs. 1 StGB
+  - § 257 StGB
+  - § 246 Abs. 1 StGB
+  - § 260 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-259
+  title: Hehlerei, § 259 StGB, mit Abgrenzung zu §§ 257, 258 StGB
+  norms:
+  - § 259 StGB
+  - § 257 StGB
+  - § 258 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: a) Tatobjekt - Sache, die ein anderer durch eine gegen fremdes Vermögen gerichtete rechtswidrige Tat erlangt hat
+      - label: b) Unmittelbarkeit - keine Ersatzhehlerei, rechtswidrige Vermögenslage besteht fort
+      - label: c) Tathandlung - Ankaufen, Sichverschaffen, Drittverschaffen (einverständliches Zusammenwirken mit dem Vortäter)
+      - label: d) Tathandlung - Absetzen oder Absatzhilfe (Absatzerfolg erforderlich, h.M.)
+    - label: 2. Subjektiver Tatbestand
+      children:
+      - label: a) Vorsatz, auch bedingter Vorsatz hinsichtlich der Vortat
+      - label: b) Bereicherungsabsicht für sich oder einen Dritten
+  - label: II. Rechtswidrigkeit
+  - label: III. Schuld
+  - label: IV. Kein Ausschluss als Vortäter oder Mittäter der Vortat
+    hinweis: Anstifter und Gehilfen der Vortat können Hehler sein.
+  - label: V. Abgrenzung zu den übrigen Anschlussdelikten
+    children:
+    - label: 1. Begünstigung, § 257 StGB - Vorteilssicherungsabsicht zugunsten des Vortäters
+    - label: 2. Strafvereitelung, § 258 StGB - Vereitelung der Bestrafung, Erfolgsdelikt
+    - label: 3. Tateinheit möglich, Angehörigenprivileg nur bei § 258 Abs. 6 StGB
+faelle:
+- slug: sr-fall-gestohlenes-rennrad-garage
+  title: Das Rennrad in der Garage
+  difficulty: 3
+  minutes: 50
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  stand: 2026-09
+  facts: >-
+    A stiehlt dem O ein Rennrad im Wert von 1.500 Euro. Weil er fürchtet, die
+    Polizei könne sein Zimmer durchsuchen, bittet er seinen Freund C, das Rad ein
+    paar Tage in dessen Garage unterzustellen. C weiß von dem Diebstahl und stellt
+    das Rad unter, "damit die Polizei es nicht bei dir findet und du nicht
+    auffliegst". Er will A weder das Rad erhalten noch selbst etwas daran verdienen.
+    Drei Tage später holt A das Rad ab und verkauft es für 300 Euro an B. B ahnt
+    wegen des niedrigen Preises und der fehlenden Papiere, dass das Rad gestohlen
+    sein könnte, nimmt das in Kauf und freut sich über das Schnäppchen. Er nimmt das
+    Rad mit nach Hause. Kurz darauf wird A aufgrund einer Zeugenaussage ohnehin
+    ermittelt und verurteilt; das Rad wird bei B sichergestellt. C ist nicht mit A
+    verwandt.
+  question: Haben sich B und C wegen Anschlussdelikten nach §§ 257, 258, 259 StGB strafbar gemacht?
+  steps:
+  - prompt: Liegt eine taugliche Vortat vor?
+    erwartung: >-
+      Ja - der Diebstahl des A nach § 242 Abs. 1 StGB ist eine rechtswidrige, gegen
+      fremdes Vermögen gerichtete Tat eines anderen; das Rennrad stammt unmittelbar
+      aus ihr, und die rechtswidrige Vermögenslage besteht fort.
+  - prompt: Hat B das Rad im Sinne des § 259 Abs. 1 StGB angekauft bzw. sich verschafft?
+    erwartung: >-
+      Ja - B hat durch den Kauf und die Mitnahme eigene Verfügungsgewalt über das
+      Rad im einverständlichen Zusammenwirken mit dem Vortäter A erlangt (derivativer
+      Erwerb).
+  - prompt: Handelte B vorsätzlich und mit Bereicherungsabsicht?
+    erwartung: >-
+      Ja - B hielt es für möglich, dass das Rad gestohlen war, und nahm das billigend
+      in Kauf; bedingter Vorsatz hinsichtlich der Vortat genügt. Er wollte das Rad
+      weit unter Wert erwerben und strebte damit einen Vermögensvorteil an. B ist
+      nach § 259 Abs. 1 StGB strafbar.
+  - prompt: Hat sich C durch das Unterstellen des Rades wegen Begünstigung, § 257 Abs. 1 StGB, strafbar gemacht?
+    erwartung: >-
+      Objektiv hat C dem Vortäter Hilfe geleistet, die geeignet war, ihm das Rad zu
+      erhalten. Es fehlt aber die Vorteilssicherungsabsicht: C ging es nicht darum,
+      dem A den Besitz am Rad zu erhalten, sondern allein darum, A vor Entdeckung zu
+      schützen. Eine Begünstigung scheidet daher aus.
+  - prompt: Hat sich C wegen Strafvereitelung, § 258 Abs. 1 StGB, strafbar gemacht?
+    erwartung: >-
+      C wollte gerade verhindern, dass A überführt und bestraft wird, und handelte
+      insoweit absichtlich. Ein Vereitelungserfolg ist aber nicht eingetreten: A
+      wurde aufgrund einer Zeugenaussage ohne nennenswerte Verzögerung ermittelt und
+      verurteilt. Da § 258 StGB Erfolgsdelikt ist, liegt nur ein Versuch vor, der
+      nach § 258 Abs. 4 StGB strafbar ist. C hat unmittelbar zur Vereitelung
+      angesetzt, indem er das Rad versteckte. Das Angehörigenprivileg des § 258
+      Abs. 6 StGB greift nicht.
+  - prompt: Hat sich C wegen Hehlerei strafbar gemacht?
+    erwartung: >-
+      Nein - C hat sich das Rad nicht verschafft, weil er es nur für A verwahrte, ohne
+      eigene Verfügungsgewalt zu eigenen Zwecken zu erlangen; auch fehlt ihm jede
+      Bereicherungsabsicht.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Taugliche Vortat (rechtswidriger Diebstahl eines anderen, unmittelbar erlangte Sache) festgestellt
+      weight: 1.0
+      required: true
+      norms:
+      - § 242 Abs. 1 StGB
+      - § 259 Abs. 1 StGB
+      keywords:
+      - Vortat
+      - rechtswidrige Tat
+      - unmittelbar
+      card_slugs:
+      - sr-hehlerei-259-tatbestand-vortat
+      - sr-anschluss-ueberblick-rechtsgueter
+    - id: p2
+      label: Sichverschaffen bzw. Ankaufen durch B mit einverständlichem Zusammenwirken bejaht
+      weight: 2.0
+      required: true
+      norms:
+      - § 259 Abs. 1 StGB
+      keywords:
+      - Sichverschaffen
+      - Ankaufen
+      - Verfügungsgewalt
+      card_slugs:
+      - sr-hehlerei-sichverschaffen
+    - id: p3
+      label: Bedingter Vorsatz hinsichtlich der Vortat und Bereicherungsabsicht des B bejaht
+      weight: 1.5
+      required: true
+      norms:
+      - § 259 Abs. 1 StGB
+      keywords:
+      - Bereicherungsabsicht
+      - bedingter Vorsatz
+      - billigend
+      card_slugs:
+      - sr-hehlerei-bereicherungsabsicht-konkurrenzen
+    - id: p4
+      label: Begünstigung des C mangels Vorteilssicherungsabsicht verneint
+      weight: 2.0
+      required: true
+      norms:
+      - § 257 Abs. 1 StGB
+      keywords:
+      - Vorteilssicherungsabsicht
+      - Begünstigung
+      card_slugs:
+      - sr-beguenstigung-257-tatbestand
+      - sr-strafvereitelung-abgrenzung-beguenstigung
+    - id: p5
+      label: Strafvereitelung des C als Erfolgsdelikt erkannt, mangels Vereitelungserfolg nur Versuch nach § 258 Abs. 4 StGB
+      weight: 2.5
+      required: true
+      norms:
+      - § 258 Abs. 1 StGB
+      - § 258 Abs. 4 StGB
+      keywords:
+      - Strafvereitelung
+      - Versuch
+      - Erfolgsdelikt
+      - geraume Zeit
+      card_slugs:
+      - sr-strafvereitelung-258-tatbestand
+    - id: p6
+      label: Angehörigenprivileg § 258 Abs. 6 StGB geprüft und verneint
+      weight: 0.5
+      required: false
+      norms:
+      - § 258 Abs. 6 StGB
+      keywords:
+      - Angehörige
+      - Abs. 6
+      card_slugs:
+      - sr-strafvereitelung-258-tatbestand
+    - id: p7
+      label: Hehlerei des C verneint (keine eigene Verfügungsgewalt, keine Bereicherungsabsicht)
+      weight: 1.0
+      required: false
+      norms:
+      - § 259 Abs. 1 StGB
+      keywords:
+      - Verwahrung
+      - keine Verfügungsgewalt
+      card_slugs:
+      - sr-hehlerei-sichverschaffen
+      - sr-anschluss-vortatbeteiligte

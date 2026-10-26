@@ -1,0 +1,29 @@
+kurs:
+  slug: zr-schuldrecht-at
+  title: Schuldrecht Allgemeiner Teil
+  area: zivilrecht
+  semester_default: 2
+  examenskurs: false
+  stand: 2026-09
+  quellen:
+  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: 'Leistungsstoerungsrecht: Unmoeglichkeit, Verzug, Schadensersatz statt der Leistung, Ruecktritt,
+    vorvertragliche Pflichten und AGB-Kontrolle.'
+  lernziele:
+  - Das System der §§ 280 ff. BGB als Anspruchsgrundlagen-Baukasten beherrschen
+  - Unmoeglichkeit (§ 275 BGB) und ihre Rechtsfolgen (§§ 283, 326 BGB) pruefen
+  - Verzug und Ruecktritt in der Klausur sauber voneinander trennen
+  - AGB-Kontrolle als Einbettung in einen Vertragsfall anwenden
+  klausurformat:
+    typ: Anfaengerklausur
+    minuten: 120
+  topic_slugs:
+  - zr-schuldrecht-at-unmoeglichkeit
+  - zr-su-verzug
+  - zr-su-schadensersatz-statt-der-leistung
+  - zr-schuldrecht-at-ruecktritt
+  - zr-schuldrecht-at-cic
+  - zr-schuldrecht-at-agb-kontrolle
+  landesrecht_kategorien: []
+  fehlende_themen: []

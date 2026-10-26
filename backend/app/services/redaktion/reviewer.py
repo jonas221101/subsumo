@@ -60,7 +60,7 @@ class ReviewerAgent:
 
         match = _JSON_BLOCK.search(response.text)
         if not match:
-            raise ReviewerError("Antwort enthaelt kein auswertbares JSON")
+            raise ReviewerError("Antwort enthält kein auswertbares JSON")
         # The permissive extraction intentionally allows prose/code fences
         # around one object, but must not extract an object nested in an array.
         if (
@@ -81,7 +81,7 @@ class ReviewerAgent:
         missing = required - parsed.keys()
         if missing:
             raise ReviewerError(
-                "Reviewer-JSON enthaelt nicht alle Pflichtfelder: "
+                "Reviewer-JSON enthält nicht alle Pflichtfelder: "
                 + ", ".join(sorted(missing))
             )
         if type(parsed["approved"]) is not bool:
@@ -90,7 +90,7 @@ class ReviewerAgent:
             type(parsed["severity"]) is not str
             or parsed["severity"] not in _ALLOWED_SEVERITIES
         ):
-            raise ReviewerError("Reviewer-Feld 'severity' ist ungueltig")
+            raise ReviewerError("Reviewer-Feld 'severity' ist ungültig")
         if not isinstance(parsed["issues"], list) or not all(
             isinstance(issue, str) for issue in parsed["issues"]
         ):
@@ -99,7 +99,7 @@ class ReviewerAgent:
             parsed["issues"] or parsed["severity"] != "ok"
         ):
             raise ReviewerError(
-                "Freigabe ist nur mit severity 'ok' und ohne issues gueltig"
+                "Freigabe ist nur mit severity 'ok' und ohne issues gültig"
             )
         if not parsed["approved"] and parsed["severity"] == "ok":
             raise ReviewerError(

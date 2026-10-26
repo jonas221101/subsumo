@@ -1,0 +1,26 @@
+kurs:
+  slug: sr-bt-1
+  title: 'Strafrecht BT I: Delikte gegen die Person und Urkundendelikte'
+  area: strafrecht
+  semester_default: 3
+  examenskurs: false
+  stand: 2026-09
+  quellen:
+  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: Toetungs- und Koerperverletzungsdelikte, Noetigung, Urkundenfaelschung.
+  lernziele:
+  - Mordmerkmale systematisch pruefen und begruenden
+  - Qualifikationen der Koerperverletzung (§ 224 StGB) anwenden
+  - Urkundenbegriff und Taathandlungen des § 267 StGB sicher subsumieren
+  klausurformat:
+    typ: Fortgeschrittenenklausur
+    minuten: 180
+  topic_slugs:
+  - sr-bt-toetungsdelikte-211-212
+  - sr-bt-koerperverletzung-224
+  - sr-bt-noetigung-240
+  - sr-bt-urkundenfaelschung-267
+  landesrecht_kategorien: []
+  fehlende_themen:
+  - Freiheitsberaubung, § 239 StGB (P3)

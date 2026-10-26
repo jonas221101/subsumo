@@ -1,7 +1,7 @@
 """Datei-Bruecke: Claude (dieser Agent, live im Gespraech) spielt den
 LLM-Client selbst, ohne API-Key. Fuer Offline-Tests der Redaktions-Pipeline,
 bevor ein echter SUBSUMO_LLM_API_KEY vorhanden ist - siehe
-docs/08-ki-redaktion.md, Abschnitt "Lokaler Bruecken-Modus".
+docs/08-ki-redaktion.md, Abschnitt "Lokaler Brücken-Modus".
 
 Protokoll (pro Aufruf ``n``, aufsteigend nummeriert, in ``bridge_dir``):
 

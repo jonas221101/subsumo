@@ -1,0 +1,25 @@
+kurs:
+  slug: zr-schuldrecht-bt-vertraglich
+  title: 'Schuldrecht BT I: Vertragliche Schuldverhaeltnisse'
+  area: zivilrecht
+  semester_default: 3
+  examenskurs: false
+  stand: 2026-09
+  quellen:
+  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: Kaufrecht mit Maengelgewaehrleistung als Kern; Grundlagen des Kaufvertrags aus dem BGB
+    AT werden vorausgesetzt und wiederholt.
+  lernziele:
+  - Maengelrechte des Kaeufers (§§ 434 ff. BGB) vollstaendig und in der richtigen Reihenfolge pruefen
+  - Nacherfuellung, Ruecktritt, Minderung und Schadensersatz im Kaufrecht abgrenzen
+  klausurformat:
+    typ: Fortgeschrittenenklausur
+    minuten: 180
+  topic_slugs:
+  - zr-kaufrecht-maengelgewaehrleistung
+  - zr-bgb-at
+  landesrecht_kategorien: []
+  fehlende_themen:
+  - Werkvertragsrecht, § 631 BGB (P3)
+  - Mietrecht (P3)

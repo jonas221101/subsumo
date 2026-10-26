@@ -335,7 +335,7 @@ def test_reconcile_pages_through_a_long_thread(tmp_path):
     outbox = Outbox(state_dir / "outbox.jsonl")
     correlation = str(uuid4())
     record = outbox.record(kind="comment", task_id=TASK_IDENTIFIER, correlation_id=correlation)
-    outbox.mark_unknown(record.record_id, "Zeitueberschreitung")
+    outbox.mark_unknown(record.record_id, "Zeitüberschreitung")
 
     first_page = [{"id": f"c{index}", "body": "unbeteiligt"} for index in range(200)]
     second_page = [{"id": COMMENT2, "body": f'{{"message_id": "{correlation}"}}'}]
@@ -362,7 +362,7 @@ def test_reconcile_refuses_to_guess_on_an_unreadable_thread(tmp_path):
     record = outbox.record(
         kind="comment", task_id=TASK_IDENTIFIER, correlation_id=str(uuid4())
     )
-    outbox.mark_unknown(record.record_id, "Zeitueberschreitung")
+    outbox.mark_unknown(record.record_id, "Zeitüberschreitung")
 
     def handler(request):
         return httpx.Response(200, json={"unerwartet": "form"})

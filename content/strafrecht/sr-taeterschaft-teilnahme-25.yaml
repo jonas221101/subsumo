@@ -1,7 +1,7 @@
 topic:
   slug: sr-taeterschaft-teilnahme-25
   area: strafrecht
-  title: Taeterschaft und Teilnahme, §§ 25 ff. StGB
+  title: Täterschaft und Teilnahme, §§ 25 ff. StGB
   parent: sr-at
   relevance: 5
   stand: 2026-09
@@ -14,11 +14,11 @@ topic:
 cards:
 - slug: sr-taeterschaft-tatherrschaftslehre
   type: definition
-  front: 'Definiere: Tatherrschaftslehre zur Abgrenzung von Taeterschaft und Teilnahme'
-  back: Nach der (heute h.M. zugrunde liegenden) Tatherrschaftslehre ist Taeter, wer
-    das Geschehen als Zentralgestalt final in den Haenden haelt, also den Ob und Wie
-    der Tatbestandsverwirklichung steuert. Teilnehmer ist demgegenueber, wer den Tatentschluss
-    eines anderen hervorruft (Anstiftung) oder dessen Tat lediglich foerdert (Beihilfe),
+  front: 'Definiere: Tatherrschaftslehre zur Abgrenzung von Täterschaft und Teilnahme'
+  back: Nach der (heute h.M. zugrunde liegenden) Tatherrschaftslehre ist Täter, wer
+    das Geschehen als Zentralgestalt final in den Händen hält, also den Ob und Wie
+    der Tatbestandsverwirklichung steuert. Teilnehmer ist demgegenüber, wer den Tatentschluss
+    eines anderen hervorruft (Anstiftung) oder dessen Tat lediglich fördert (Beihilfe),
     ohne selbst das Geschehen zu beherrschen.
   norms:
   - § 25 StGB
@@ -29,10 +29,10 @@ cards:
   stand: 2026-09
 - slug: sr-taeterschaft-unmittelbar
   type: norm
-  front: 'Definiere: unmittelbare Taeterschaft, § 25 Abs. 1 Var. 1 StGB'
-  back: Unmittelbarer Taeter ist, wer die Straftat selbst, also eigenhaendig begeht
+  front: 'Definiere: unmittelbare Täterschaft, § 25 Abs. 1 Var. 1 StGB'
+  back: Unmittelbarer Täter ist, wer die Straftat selbst, also eigenhändig begeht
     (§ 25 Abs. 1 Var. 1 StGB). Er verwirklicht den objektiven und subjektiven Tatbestand
-    vollstaendig in eigener Person und besitzt damit per se Tatherrschaft.
+    vollständig in eigener Person und besitzt damit per se Tatherrschaft.
   norms:
   - § 25 Abs. 1 Var. 1 StGB
   quellen:
@@ -41,12 +41,12 @@ cards:
   stand: 2026-09
 - slug: sr-taeterschaft-mittelbar
   type: definition
-  front: 'Definiere: mittelbare Taeterschaft, § 25 Abs. 1 Var. 2 StGB'
-  back: Mittelbarer Taeter ist, wer die Straftat durch einen anderen begeht (§ 25
-    Abs. 1 Var. 2 StGB), den er als menschliches Werkzeug fuer seine Zwecke einsetzt.
-    Tatherrschaft besteht hier kraft ueberlegenen Wissens oder Willens gegenueber
-    dem Vordermann, etwa weil dieser vorsatzlos, schuldlos, genoetigt oder ueber die
-    Tragweite seines Handelns getaeuscht handelt und deshalb selbst nicht als Taeter
+  front: 'Definiere: mittelbare Täterschaft, § 25 Abs. 1 Var. 2 StGB'
+  back: Mittelbarer Täter ist, wer die Straftat durch einen anderen begeht (§ 25
+    Abs. 1 Var. 2 StGB), den er als menschliches Werkzeug für seine Zwecke einsetzt.
+    Tatherrschaft besteht hier kraft überlegenen Wissens oder Willens gegenüber
+    dem Vordermann, etwa weil dieser vorsatzlos, schuldlos, genötigt oder über die
+    Tragweite seines Handelns getäuscht handelt und deshalb selbst nicht als Täter
     (Werkzeug) verantwortlich ist.
   norms:
   - § 25 Abs. 1 Var. 2 StGB
@@ -56,14 +56,14 @@ cards:
   stand: 2026-09
 - slug: sr-taeterschaft-mittaeterschaft
   type: definition
-  front: 'Definiere: Mittaeterschaft, § 25 Abs. 2 StGB'
-  back: 'Mittaeter ist, wer eine Straftat gemeinschaftlich mit einem anderen begeht
+  front: 'Definiere: Mittäterschaft, § 25 Abs. 2 StGB'
+  back: 'Mittäter ist, wer eine Straftat gemeinschaftlich mit einem anderen begeht
     (§ 25 Abs. 2 StGB). Voraussetzung sind (1) ein gemeinsamer Tatentschluss (Vorsatz
-    bzgl. arbeitsteiligen Vorgehens) und (2) ein eigener, im Ausfuehrungsstadium geleisteter
+    bzgl. arbeitsteiligen Vorgehens) und (2) ein eigener, im Ausführungsstadium geleisteter
     Tatbeitrag von einigem Gewicht, der nach der Tatherrschaftslehre funktionale Tatherrschaft
-    begruendet - eine eigenhaendige Verwirklichung aller Tatbestandsmerkmale ist nicht
-    erforderlich. Rechtsfolge ist die wechselseitige Zurechnung der Tatbeitraege:
-    jeder Mittaeter haftet fuer die Tat als Ganzes, soweit sie vom gemeinsamen Tatplan
+    begründet - eine eigenhändige Verwirklichung aller Tatbestandsmerkmale ist nicht
+    erforderlich. Rechtsfolge ist die wechselseitige Zurechnung der Tatbeiträge:
+    jeder Mittäter haftet für die Tat als Ganzes, soweit sie vom gemeinsamen Tatplan
     gedeckt ist.'
   norms:
   - § 25 Abs. 2 StGB
@@ -74,12 +74,12 @@ cards:
 - slug: sr-taeterschaft-anstiftung
   type: definition
   front: 'Definiere: Anstiftung, § 26 StGB'
-  back: Anstifter ist, wer vorsaetzlich einen anderen zu dessen vorsaetzlich begangener
+  back: Anstifter ist, wer vorsätzlich einen anderen zu dessen vorsätzlich begangener
     rechtswidriger Tat bestimmt hat (§ 26 StGB). Erforderlich sind ein doppelter Anstiftervorsatz
-    (bzgl. der Bestimmung des Taeters zur Tat und bzgl. deren Vollendung) sowie ein
+    (bzgl. der Bestimmung des Täters zur Tat und bzgl. deren Vollendung) sowie ein
     kommunikativer Akt des Hervorrufens des Tatentschlusses beim zuvor noch nicht
-    tatgeneigten Haupttaeter (omnimodo facturus scheidet als Anstiftungsobjekt aus).
-    Der Anstifter wird gemaess § 26 StGB gleich einem Taeter bestraft.
+    tatgeneigten Haupttäter (omnimodo facturus scheidet als Anstiftungsobjekt aus).
+    Der Anstifter wird gemäß § 26 StGB gleich einem Täter bestraft.
   norms:
   - § 26 StGB
   quellen:
@@ -89,12 +89,12 @@ cards:
 - slug: sr-taeterschaft-beihilfe
   type: definition
   front: 'Definiere: Beihilfe, § 27 StGB'
-  back: Gehilfe ist, wer vorsaetzlich einem anderen zu dessen vorsaetzlich begangener
+  back: Gehilfe ist, wer vorsätzlich einem anderen zu dessen vorsätzlich begangener
     rechtswidriger Tat Hilfe geleistet hat (§ 27 Abs. 1 StGB). Die Hilfeleistung kann
-    physisch (z. B. Bereitstellen von Mitteln) oder psychisch (Bestaerkung des bereits
-    gefassten Tatentschlusses) erfolgen und muss den Taterfolg lediglich foerdern,
-    nicht kausal fuer ihn sein. Erforderlich ist doppelter Gehilfenvorsatz. Die Strafe
-    des Gehilfen richtet sich gemaess § 27 Abs. 2 StGB nach der Strafe des Taeters,
+    physisch (z. B. Bereitstellen von Mitteln) oder psychisch (Bestärkung des bereits
+    gefassten Tatentschlusses) erfolgen und muss den Taterfolg lediglich fördern,
+    nicht kausal für ihn sein. Erforderlich ist doppelter Gehilfenvorsatz. Die Strafe
+    des Gehilfen richtet sich gemäß § 27 Abs. 2 StGB nach der Strafe des Täters,
     wird jedoch nach § 49 Abs. 1 StGB obligatorisch gemildert.
   norms:
   - § 27 StGB
@@ -105,13 +105,13 @@ cards:
   stand: 2026-09
 - slug: sr-taeterschaft-akzessorietaet
   type: norm
-  front: Was bedeutet limitierte Akzessorietaet der Teilnahme?
-  back: 'Anstiftung und Beihilfe setzen gemaess §§ 26, 27 StGB eine vorsaetzlich begangene
-    rechtswidrige Haupttat voraus (limitierte Akzessorietaet): Tatbestandsmaessigkeit
-    und Rechtswidrigkeit der Haupttat muessen vorliegen, eine schuldhafte Begehung
-    durch den Haupttaeter ist dagegen nicht erforderlich. Fehlt es bereits an einer
-    vorsaetzlichen rechtswidrigen Haupttat, scheidet eine Strafbarkeit wegen Teilnahme
-    aus; in Betracht kommt dann allenfalls mittelbare Taeterschaft.'
+  front: Was bedeutet limitierte Akzessorietät der Teilnahme?
+  back: 'Anstiftung und Beihilfe setzen gemäß §§ 26, 27 StGB eine vorsätzlich begangene
+    rechtswidrige Haupttat voraus (limitierte Akzessorietät): Tatbestandsmäßigkeit
+    und Rechtswidrigkeit der Haupttat müssen vorliegen, eine schuldhafte Begehung
+    durch den Haupttäter ist dagegen nicht erforderlich. Fehlt es bereits an einer
+    vorsätzlichen rechtswidrigen Haupttat, scheidet eine Strafbarkeit wegen Teilnahme
+    aus; in Betracht kommt dann allenfalls mittelbare Täterschaft.'
   norms:
   - § 26 StGB
   - § 27 StGB
@@ -120,45 +120,45 @@ cards:
   stand: 2026-09
 - slug: sr-taeterschaft-abgrenzung-mittaeterschaft-beihilfe
   type: streitstand
-  front: 'Streitstand: Abgrenzung Mittaeterschaft (§ 25 Abs. 2 StGB) und Beihilfe
+  front: 'Streitstand: Abgrenzung Mittäterschaft (§ 25 Abs. 2 StGB) und Beihilfe
     (§ 27 StGB)'
   back: 'Problem: Ob ein Tatbeteiligter, der die Tatbestandsmerkmale nicht
 
-    eigenhaendig verwirklicht, als Mittaeter oder nur als Gehilfe haftet,
+    eigenhändig verwirklicht, als Mittäter oder nur als Gehilfe haftet,
 
-    entscheidet ueber die volle Zurechnung fremder Tatbeitraege (§ 25 Abs.
+    entscheidet über die volle Zurechnung fremder Tatbeiträge (§ 25 Abs.
 
     2 StGB) oder eine obligatorische Strafmilderung (§§ 27 Abs. 2, 49 Abs.
 
     1 StGB).
 
 
-    Subjektive Theorie (frueher Rspr.): Massgeblich ist der animus auctoris
+    Subjektive Theorie (früher Rspr.): Maßgeblich ist der animus auctoris
 
-    - will der Beteiligte die Tat "als eigene" (Taeterwille), liegt
+    - will der Beteiligte die Tat "als eigene" (Täterwille), liegt
 
-    Mittaeterschaft vor; will er sie nur fremden Willen unterstuetzen
+    Mittäterschaft vor; will er sie nur fremden Willen unterstützen
 
     (animus socii), ist er Gehilfe. Kritik: kaum justiziables,
 
-    manipulationsanfaelliges Kriterium ohne objektiven Anknuepfungspunkt.
+    manipulationsanfälliges Kriterium ohne objektiven Anknüpfungspunkt.
 
 
-    Tatherrschaftslehre (heute h.M.): Massgeblich ist, ob der Beteiligte
+    Tatherrschaftslehre (heute h.M.): Maßgeblich ist, ob der Beteiligte
 
-    durch einen eigenen Beitrag von einigem Gewicht im Ausfuehrungsstadium
+    durch einen eigenen Beitrag von einigem Gewicht im Ausführungsstadium
 
-    funktionale Tatherrschaft ueber das Geschehen erlangt - er muss das
+    funktionale Tatherrschaft über das Geschehen erlangt - er muss das
 
-    "Ob" und "Wie" der Tatbestandsverwirklichung mitsteuern koennen. Ein
+    "Ob" und "Wie" der Tatbestandsverwirklichung mitsteuern können. Ein
 
-    Beitrag, der nur im Vorbereitungsstadium liegt oder nur foerdert, ohne
+    Beitrag, der nur im Vorbereitungsstadium liegt oder nur fördert, ohne
 
-    das Geschehen mitzubestimmen, begruendet lediglich Beihilfe. Argumente:
+    das Geschehen mitzubestimmen, begründet lediglich Beihilfe. Argumente:
 
-    objektiv nachpruefbares Kriterium, das an den tatsaechlichen Einfluss
+    objektiv nachprüfbares Kriterium, das an den tatsächlichen Einfluss
 
-    auf das Tatgeschehen anknuepft statt an eine schwer feststellbare innere
+    auf das Tatgeschehen anknüpft statt an eine schwer feststellbare innere
 
     Willensrichtung.
 
@@ -167,7 +167,7 @@ cards:
 
     Umfang der Tatbeteiligung und Tatherrschaft bzw. den Willen zu ihr in
 
-    einer Gesamtwuerdigung. In der Sache naehert sich die Rechtsprechung
+    einer Gesamtwürdigung. In der Sache nähert sich die Rechtsprechung
 
     damit zunehmend der Tatherrschaftslehre an, betont aber weiterhin eine
 
@@ -176,11 +176,11 @@ cards:
 
     Konsequenz: In Klausuren ist die Tatherrschaftslehre als Ausgangspunkt
 
-    zu waehlen; bei Abweichungen zur (kombinierten) Rspr.-Betrachtung ist
+    zu wählen; bei Abweichungen zur (kombinierten) Rspr.-Betrachtung ist
 
-    der Streit offenzulegen, wenn beide Ansaetze zu unterschiedlichen
+    der Streit offenzulegen, wenn beide Ansätze zu unterschiedlichen
 
-    Ergebnissen fuehren.
+    Ergebnissen führen.
 
     '
   norms:
@@ -191,7 +191,7 @@ cards:
   stand: 2026-09
 schemata:
 - slug: sr-schema-mittaeterschaft
-  title: Pruefung der Mittaeterschaft, § 25 Abs. 2 StGB
+  title: Prüfung der Mittäterschaft, § 25 Abs. 2 StGB
   norms:
   - § 25 Abs. 2 StGB
   - § 27 StGB
@@ -200,11 +200,11 @@ schemata:
   - Eigenformulierung Redaktion
   stand: 2026-09
   steps:
-  - label: I. Vorpruefung
+  - label: I. Vorprüfung
     children:
-    - label: 1. Keine Alleintaeterschaft eines Beteiligten (dann kein Bedarf fuer
+    - label: 1. Keine Alleintäterschaft eines Beteiligten (dann kein Bedarf für
         § 25 Abs. 2 StGB)
-    - label: 2. Tatbestandsmaessige Haupttat (mindestens im Versuchsstadium)
+    - label: 2. Tatbestandsmäßige Haupttat (mindestens im Versuchsstadium)
   - label: II. Gemeinsamer Tatentschluss
     children:
     - label: 1. Bewusstes und gewolltes Zusammenwirken auf Grundlage eines gemeinsamen
@@ -213,12 +213,12 @@ schemata:
   - label: III. Gemeinsame Tatbegehung (objektiver Tatbeitrag)
     children:
     - label: 1. Eigener Tatbeitrag von einigem Gewicht
-    - label: 2. Beitrag (jedenfalls auch) im Ausfuehrungsstadium erbracht
+    - label: 2. Beitrag (jedenfalls auch) im Ausführungsstadium erbracht
     - label: '3. Funktionale Tatherrschaft: Mitbeherrschung von Ob und Wie der Tatbestandsverwirklichung'
-  - label: IV. Zurechnung der Tatbeitraege, § 25 Abs. 2 StGB
+  - label: IV. Zurechnung der Tatbeiträge, § 25 Abs. 2 StGB
     children:
     - label: 1. Wechselseitige Zurechnung, soweit vom gemeinsamen Tatplan gedeckt
-    - label: 2. Exzess eines Mittaeters wird den anderen nicht zugerechnet
+    - label: 2. Exzess eines Mittäters wird den anderen nicht zugerechnet
   - label: V. Ergebnis
 faelle:
 - slug: sr-fall-schmiere-stehen
@@ -229,37 +229,37 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
   facts: A und B verabreden, gemeinsam in die leerstehende Ferienvilla des X einzubrechen
-    und dort auffindbare Wertgegenstaende zu entwenden. Nach dem gemeinsam gefassten
+    und dort auffindbare Wertgegenstände zu entwenden. Nach dem gemeinsam gefassten
     Tatplan steigt A durch ein gekipptes Fenster in das Haus ein und packt Schmuck
-    im Wert von 5.000 Euro in eine mitgebrachte Tasche, waehrend B verabredungsgemaess
+    im Wert von 5.000 Euro in eine mitgebrachte Tasche, während B verabredungsgemäß
     vor dem Haus Schmiere steht und A per Handyzeichen warnen soll, falls sich jemand
-    naehert. Waehrend der gesamten Tatausfuehrung erscheint niemand; A verlaesst das
-    Haus unbehelligt mit der Beute, B hat waehrenddessen staendig die Zufahrtsstrasse
+    nähert. Während der gesamten Tatausführung erscheint niemand; A verlässt das
+    Haus unbehelligt mit der Beute, B hat währenddessen ständig die Zufahrtsstraße
     im Blick.
-  question: Hat sich B wegen (mittaeterschaftlich begangenen) Diebstahls gemaess §§
-    242 Abs. 1, 25 Abs. 2 StGB oder nur wegen Beihilfe zum Diebstahl gemaess §§ 242
+  question: Hat sich B wegen (mittäterschaftlich begangenen) Diebstahls gemäß §§
+    242 Abs. 1, 25 Abs. 2 StGB oder nur wegen Beihilfe zum Diebstahl gemäß §§ 242
     Abs. 1, 27 StGB strafbar gemacht?
   steps:
   - prompt: Hat B selbst eine Wegnahmehandlung vorgenommen?
-    erwartung: Nein - B hat die Sache nicht selbst weggenommen; eine Alleintaeterschaft
-      nach § 25 Abs. 1 Var. 1 StGB scheidet fuer B aus.
+    erwartung: Nein - B hat die Sache nicht selbst weggenommen; eine Alleintäterschaft
+      nach § 25 Abs. 1 Var. 1 StGB scheidet für B aus.
   - prompt: Liegt zwischen A und B ein gemeinsamer Tatentschluss vor?
     erwartung: Ja - A und B haben den Einbruch gemeinsam geplant und die Rollen (Einsteigen/Wegnehmen
       einerseits, Schmierestehen andererseits) einvernehmlich verteilt.
-  - prompt: Ist das Schmierestehen ein Tatbeitrag von einigem Gewicht im Ausfuehrungsstadium?
-    erwartung: Ja - B erbringt seinen Beitrag waehrend der eigentlichen Tatausfuehrung
-      und sichert die Tat unmittelbar ab; sein Beitrag ist fuer das ungestoerte Gelingen
+  - prompt: Ist das Schmierestehen ein Tatbeitrag von einigem Gewicht im Ausführungsstadium?
+    erwartung: Ja - B erbringt seinen Beitrag während der eigentlichen Tatausführung
+      und sichert die Tat unmittelbar ab; sein Beitrag ist für das ungestörte Gelingen
       des Diebstahls funktional bedeutsam.
-  - prompt: Woran laesst sich die Abgrenzung zu einer blossen Beihilfe festmachen?
-    erwartung: Beihilfe waere anzunehmen, wenn der Beitrag nur im Vorbereitungsstadium
-      liegt (z. B. blosses Auskundschaften des Objekts vor der Tat) oder nicht das
-      fuer Tatherrschaft notwendige Gewicht erreicht. Hier sichert B waehrend der
-      laufenden Tatausfuehrung fortlaufend die Tatbegehung ab und mitbeherrscht dadurch
-      das Ob und Wie der Tatvollendung - das begruendet funktionale Tatherrschaft
-      und damit Mittaeterschaft.
+  - prompt: Woran lässt sich die Abgrenzung zu einer bloßen Beihilfe festmachen?
+    erwartung: Beihilfe wäre anzunehmen, wenn der Beitrag nur im Vorbereitungsstadium
+      liegt (z. B. bloßes Auskundschaften des Objekts vor der Tat) oder nicht das
+      für Tatherrschaft notwendige Gewicht erreicht. Hier sichert B während der
+      laufenden Tatausführung fortlaufend die Tatbegehung ab und mitbeherrscht dadurch
+      das Ob und Wie der Tatvollendung - das begründet funktionale Tatherrschaft
+      und damit Mittäterschaft.
   - prompt: Ergebnis?
-    erwartung: B ist Mittaeter des Diebstahls, §§ 242 Abs. 1, 25 Abs. 2 StGB; ihm
-      wird die von A vorgenommene Wegnahme gemaess § 25 Abs. 2 StGB zugerechnet.
+    erwartung: B ist Mittäter des Diebstahls, §§ 242 Abs. 1, 25 Abs. 2 StGB; ihm
+      wird die von A vorgenommene Wegnahme gemäß § 25 Abs. 2 StGB zugerechnet.
   expectation:
     pruefpunkte:
     - id: p1
@@ -273,16 +273,16 @@ faelle:
       - '242'
       - 25 Abs. 2
     - id: p2
-      label: Eigene Alleintaeterschaft des B verneint, da keine eigene Wegnahmehandlung
+      label: Eigene Alleintäterschaft des B verneint, da keine eigene Wegnahmehandlung
       weight: 1.0
       required: false
       keywords:
       - keine eigene Wegnahme
-      - Alleintaeterschaft
+      - Alleintäterschaft
       card_slugs:
       - sr-taeterschaft-unmittelbar
     - id: p3
-      label: Gemeinsamer Tatentschluss zwischen A und B bejaht und begruendet
+      label: Gemeinsamer Tatentschluss zwischen A und B bejaht und begründet
       weight: 2.0
       required: true
       norms:
@@ -293,14 +293,14 @@ faelle:
       card_slugs:
       - sr-taeterschaft-mittaeterschaft
     - id: p4
-      label: Schmierestehen als Tatbeitrag im Ausfuehrungsstadium mit funktionaler
+      label: Schmierestehen als Tatbeitrag im Ausführungsstadium mit funktionaler
         Tatherrschaft erkannt
       weight: 2.5
       required: true
       norms:
       - § 25 Abs. 2 StGB
       keywords:
-      - Ausfuehrungsstadium
+      - Ausführungsstadium
       - funktionale Tatherrschaft
       - Tatbeitrag
       card_slugs:
@@ -308,7 +308,7 @@ faelle:
       - sr-taeterschaft-tatherrschaftslehre
     - id: p5
       label: 'Abgrenzung zur Beihilfe (Tatherrschaftslehre: Vorbereitungsstadium/geringeres
-        Gewicht begruendet nur § 27 StGB) sauber dargestellt'
+        Gewicht begründet nur § 27 StGB) sauber dargestellt'
       weight: 3.0
       required: true
       norms:
@@ -321,9 +321,9 @@ faelle:
       - sr-taeterschaft-abgrenzung-mittaeterschaft-beihilfe
       - sr-taeterschaft-beihilfe
     - id: p6
-      label: 'Ergebnis: B ist Mittaeter gemaess § 25 Abs. 2 StGB, Zurechnung der Wegnahme'
+      label: 'Ergebnis: B ist Mittäter gemäß § 25 Abs. 2 StGB, Zurechnung der Wegnahme'
       weight: 1.0
       required: false
       keywords:
-      - Mittaeter
+      - Mittäter
       - Zurechnung

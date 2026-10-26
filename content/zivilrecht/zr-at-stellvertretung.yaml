@@ -17,7 +17,7 @@ cards:
   front: 'Definiere: Stellvertretung (§ 164 Abs. 1 BGB) und ihre Rechtsfolge'
   back: Stellvertretung ist das Handeln im fremden Namen mit Vertretungsmacht. Gibt
     der Vertreter innerhalb der ihm zustehenden Vertretungsmacht im Namen des Vertretenen
-    eine eigene Willenserklaerung ab, wirkt diese unmittelbar fuer und gegen den Vertretenen
+    eine eigene Willenserklärung ab, wirkt diese unmittelbar für und gegen den Vertretenen
     (§ 164 Abs. 1 S. 1 BGB) - der Vertreter selbst wird nicht Vertragspartei.
   norms:
   - § 164 Abs. 1 BGB
@@ -29,12 +29,12 @@ cards:
   type: definition
   front: 'Definiere: Offenkundigkeitsprinzip bei der Stellvertretung'
   back: 'Der Vertreter muss erkennbar im fremden Namen handeln, damit § 164 Abs. 1
-    BGB eingreift (Offenkundigkeitsprinzip). Massgeblich ist die Auslegung nach §§
-    133, 157 BGB aus Sicht des Erklaerungsempfaengers; ausdrueckliches Nennen des
+    BGB eingreift (Offenkundigkeitsprinzip). Maßgeblich ist die Auslegung nach §§
+    133, 157 BGB aus Sicht des Erklärungsempfängers; ausdrückliches Nennen des
     Vertretenen ist nicht erforderlich, wenn sich das Handeln in fremdem Namen aus
-    den Umstaenden ergibt (§ 164 Abs. 1 S. 2 BGB). Ausnahmen vom Offenkundigkeitsprinzip:
-    das unternehmensbezogene Geschaeft und das Geschaeft fuer den, den es angeht (bei
-    Bargeschaeften des taeglichen Lebens).'
+    den Umständen ergibt (§ 164 Abs. 1 S. 2 BGB). Ausnahmen vom Offenkundigkeitsprinzip:
+    das unternehmensbezogene Geschäft und das Geschäft für den, den es angeht (bei
+    Bargeschäften des täglichen Lebens).'
   norms:
   - § 164 Abs. 1 BGB
   - § 133 BGB
@@ -45,11 +45,11 @@ cards:
   stand: 2026-09
 - slug: zr-at-vertretungsmacht
   type: definition
-  front: 'Definiere: Vertretungsmacht - und ihre zwei Entstehungsgruende'
-  back: Vertretungsmacht ist die Rechtsmacht, im Namen eines anderen mit Wirkung fuer
+  front: 'Definiere: Vertretungsmacht - und ihre zwei Entstehungsgründe'
+  back: Vertretungsmacht ist die Rechtsmacht, im Namen eines anderen mit Wirkung für
     und gegen diesen zu handeln. Sie entsteht entweder kraft Gesetzes (gesetzliche
     Vertretungsmacht, z. B. der Eltern nach § 1629 BGB oder des Vereinsvorstands nach
-    § 26 Abs. 1 BGB) oder durch Rechtsgeschaeft - dann heisst sie Vollmacht (§ 166
+    § 26 Abs. 1 BGB) oder durch Rechtsgeschäft - dann heißt sie Vollmacht (§ 166
     Abs. 2 S. 1 BGB).
   norms:
   - § 164 Abs. 1 BGB
@@ -60,12 +60,12 @@ cards:
   stand: 2026-09
 - slug: zr-at-vollmacht-innen-aussen
   type: definition
-  front: 'Definiere: Vollmacht und die Abgrenzung Innen-/Aussenvollmacht (§ 167 BGB)'
-  back: Die Vollmacht ist die durch Rechtsgeschaeft erteilte Vertretungsmacht (§ 166
-    Abs. 2 S. 1 BGB) - eine einseitige, empfangsbeduerftige Willenserklaerung. Sie
-    kann gegenueber dem zu Bevollmaechtigenden selbst erteilt werden (Innenvollmacht,
-    § 167 Abs. 1 Var. 1 BGB) oder gegenueber dem Dritten, dem gegenueber vertreten
-    werden soll (Aussenvollmacht, § 167 Abs. 1 Var. 2 BGB). Die Unterscheidung wirkt
+  front: 'Definiere: Vollmacht und die Abgrenzung Innen-/Außenvollmacht (§ 167 BGB)'
+  back: Die Vollmacht ist die durch Rechtsgeschäft erteilte Vertretungsmacht (§ 166
+    Abs. 2 S. 1 BGB) - eine einseitige, empfangsbedürftige Willenserklärung. Sie
+    kann gegenüber dem zu Bevollmächtigenden selbst erteilt werden (Innenvollmacht,
+    § 167 Abs. 1 Var. 1 BGB) oder gegenüber dem Dritten, dem gegenüber vertreten
+    werden soll (Außenvollmacht, § 167 Abs. 1 Var. 2 BGB). Die Unterscheidung wirkt
     sich insbesondere auf den Vertrauensschutz Dritter aus (§§ 170-173 BGB).
   norms:
   - § 167 Abs. 1 BGB
@@ -77,64 +77,64 @@ cards:
 - slug: zr-at-duldungs-anscheinsvollmacht
   type: streitstand
   front: 'Abgrenze: Duldungsvollmacht und Anscheinsvollmacht (Rechtsscheinvollmacht)'
-  back: 'Beide sind keine im Gesetz ausdruecklich geregelten Vollmachtsarten,
+  back: 'Beide sind keine im Gesetz ausdrücklich geregelten Vollmachtsarten,
 
-    sondern von der Rechtsprechung entwickelte Rechtsscheintatbestaende,
+    sondern von der Rechtsprechung entwickelte Rechtsscheintatbestände,
 
     die eintreten, wenn der Vertretene keine Vollmacht erteilt hat, aber
 
-    einen Zurechnungsgrund gesetzt hat und der Geschaeftsgegner gutglaeubig
+    einen Zurechnungsgrund gesetzt hat und der Geschäftsgegner gutgläubig
 
-    auf eine Bevollmaechtigung vertraut hat.
+    auf eine Bevollmächtigung vertraut hat.
 
 
-    Duldungsvollmacht: Der Vertretene weiss positiv, dass ein anderer
+    Duldungsvollmacht: Der Vertretene weiß positiv, dass ein anderer
 
     wiederholt in seinem Namen auftritt, und duldet dies, ohne
 
-    einzuschreiten. Der Geschaeftsgegner darf dieses Dulden nach Treu und
+    einzuschreiten. Der Geschäftsgegner darf dieses Dulden nach Treu und
 
-    Glauben als Bevollmaechtigung verstehen.
+    Glauben als Bevollmächtigung verstehen.
 
 
     Anscheinsvollmacht: Der Vertretene kennt das Handeln des Scheinvertreters
 
-    nicht positiv, haette es aber bei Anwendung der im Verkehr erforderlichen
+    nicht positiv, hätte es aber bei Anwendung der im Verkehr erforderlichen
 
-    Sorgfalt erkennen und verhindern koennen. Wegen des fehlenden positiven
+    Sorgfalt erkennen und verhindern können. Wegen des fehlenden positiven
 
     Wissens ist die Anscheinsvollmacht umstrittener als die Duldungsvollmacht;
 
-    sie wird von der staendigen Rechtsprechung aber anerkannt, weil der
+    sie wird von der ständigen Rechtsprechung aber anerkannt, weil der
 
-    Vertretene das Risiko des von ihm (fahrlaessig) nicht unterbundenen
+    Vertretene das Risiko des von ihm (fahrlässig) nicht unterbundenen
 
-    Rechtsscheins naeher zu tragen hat als der gutglaeubige Dritte.
+    Rechtsscheins näher zu tragen hat als der gutgläubige Dritte.
 
 
     Gemeinsame Voraussetzung beider Rechtsscheinvollmachten: ein von einer
 
-    gewissen Dauer und Haeufigkeit gepraegtes Verhalten des vermeintlichen
+    gewissen Dauer und Häufigkeit geprägtes Verhalten des vermeintlichen
 
-    Vertreters, das dem Vertretenen zurechenbar ist, sowie Gutglaeubigkeit
+    Vertreters, das dem Vertretenen zurechenbar ist, sowie Gutgläubigkeit
 
-    und Vertrauen des Geschaeftsgegners im Zeitpunkt des Geschaefts.
+    und Vertrauen des Geschäftsgegners im Zeitpunkt des Geschäfts.
 
     '
   norms:
   - § 164 Abs. 1 BGB
   - § 242 BGB
   quellen:
-  - Eigenformulierung Redaktion (staendige Rechtsprechung des BGH zu Rechtsscheinvollmachten)
+  - Eigenformulierung Redaktion (ständige Rechtsprechung des BGH zu Rechtsscheinvollmachten)
   stand: 2026-09
 - slug: zr-at-vollmachtloser-vertreter
   type: norm
-  front: Was regelt § 177 BGB und was folgt daraus fuer den Vertrag?
+  front: Was regelt § 177 BGB und was folgt daraus für den Vertrag?
   back: '§ 177 Abs. 1 BGB regelt den Vertragsschluss durch einen Vertreter ohne Vertretungsmacht:
-    Der Vertrag ist zunaechst schwebend unwirksam und haengt von der Genehmigung des
+    Der Vertrag ist zunächst schwebend unwirksam und hängt von der Genehmigung des
     Vertretenen ab. Verweigert der Vertretene die Genehmigung oder erfolgt sie nicht,
-    ist der Vertrag endgueltig unwirksam; der vollmachtlose Vertreter haftet dann
-    grundsaetzlich nach § 179 BGB auf Erfuellung oder Schadensersatz.'
+    ist der Vertrag endgültig unwirksam; der vollmachtlose Vertreter haftet dann
+    grundsätzlich nach § 179 BGB auf Erfüllung oder Schadensersatz.'
   norms:
   - § 177 Abs. 1 BGB
   - § 179 BGB
@@ -144,13 +144,13 @@ cards:
   stand: 2026-09
 - slug: zr-at-in-sich-geschaeft
   type: definition
-  front: 'Definiere: In-sich-Geschaeft und das Verbot des § 181 BGB'
-  back: 'Ein In-sich-Geschaeft liegt vor, wenn der Vertreter im Namen des Vertretenen
+  front: 'Definiere: In-sich-Geschäft und das Verbot des § 181 BGB'
+  back: 'Ein In-sich-Geschäft liegt vor, wenn der Vertreter im Namen des Vertretenen
     mit sich selbst im eigenen Namen (Selbstkontrahieren) oder als Vertreter eines
-    Dritten (Mehrvertretung) ein Rechtsgeschaeft vornimmt. § 181 BGB verbietet dies
-    grundsaetzlich wegen der Gefahr eines Interessenkonflikts. Ausnahmen: das Geschaeft
-    dient ausschliesslich der Erfuellung einer Verbindlichkeit, oder der Vertretene
-    hat das In-sich-Geschaeft gestattet.'
+    Dritten (Mehrvertretung) ein Rechtsgeschäft vornimmt. § 181 BGB verbietet dies
+    grundsätzlich wegen der Gefahr eines Interessenkonflikts. Ausnahmen: das Geschäft
+    dient ausschließlich der Erfüllung einer Verbindlichkeit, oder der Vertretene
+    hat das In-sich-Geschäft gestattet.'
   norms:
   - § 181 BGB
   quellen:
@@ -167,32 +167,32 @@ schemata:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
   steps:
-  - label: I. Zulaessigkeit der Stellvertretung
-    hinweis: 'Grundsaetzlich zulaessig; Ausnahme: hoechstpersoenliche Geschaefte (z.
+  - label: I. Zulässigkeit der Stellvertretung
+    hinweis: 'Grundsätzlich zulässig; Ausnahme: höchstpersönliche Geschäfte (z.
       B. Testamentserrichtung, § 2064 BGB).'
-  - label: II. Eigene Willenserklaerung des Vertreters
-    hinweis: Abgrenzung zum Boten, der nur eine fremde Willenserklaerung uebermittelt.
+  - label: II. Eigene Willenserklärung des Vertreters
+    hinweis: Abgrenzung zum Boten, der nur eine fremde Willenserklärung übermittelt.
   - label: III. Im fremden Namen (Offenkundigkeitsprinzip, § 164 Abs. 1 BGB)
     children:
-    - label: 1. Ausdrueckliches oder konkludentes Handeln in fremdem Namen
-    - label: '2. Ausnahmen: unternehmensbezogenes Geschaeft, Geschaeft fuer den, den
+    - label: 1. Ausdrückliches oder konkludentes Handeln in fremdem Namen
+    - label: '2. Ausnahmen: unternehmensbezogenes Geschäft, Geschäft für den, den
         es angeht'
   - label: IV. Mit Vertretungsmacht
     children:
     - label: 1. Gesetzliche Vertretungsmacht
-    - label: 2. Rechtsgeschaeftliche Vertretungsmacht (Vollmacht, §§ 166 ff. BGB)
+    - label: 2. Rechtsgeschäftliche Vertretungsmacht (Vollmacht, §§ 166 ff. BGB)
       children:
       - label: a) Innenvollmacht, § 167 Abs. 1 Var. 1 BGB
-      - label: b) Aussenvollmacht, § 167 Abs. 1 Var. 2 BGB
+      - label: b) Außenvollmacht, § 167 Abs. 1 Var. 2 BGB
     - label: 3. Rechtsscheinvollmacht (Duldungs- oder Anscheinsvollmacht)
-      hinweis: Nur pruefen, wenn keine ausdrueckliche Vollmacht vorliegt und der Sachverhalt
+      hinweis: Nur prüfen, wenn keine ausdrückliche Vollmacht vorliegt und der Sachverhalt
         dazu Anlass gibt.
   - label: V. Kein Ausschluss der Vertretungsmacht im Einzelfall
     children:
-    - label: 1. Kein Verstoss gegen § 181 BGB (In-sich-Geschaeft)
+    - label: 1. Kein Verstoß gegen § 181 BGB (In-sich-Geschäft)
     - label: 2. Kein Missbrauch der Vertretungsmacht (Kollusion bzw. Evidenz plus
         Treuwidrigkeit)
-  - label: 'VI. Rechtsfolge: Wirkung fuer und gegen den Vertretenen, § 164 Abs. 1
+  - label: 'VI. Rechtsfolge: Wirkung für und gegen den Vertretenen, § 164 Abs. 1
       S. 1 BGB'
 faelle:
 - slug: zr-fall-anscheinsvollmacht
@@ -202,35 +202,35 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - BGB, amtliche Fassung
-  facts: 'Unternehmer U betreibt einen Grosshandel fuer Bueromaterial. Sein Angestellter
-    M hat in der Vergangenheit wiederholt - stets ohne ausdrueckliche Bevollmaechtigung,
+  facts: 'Unternehmer U betreibt einen Großhandel für Büromaterial. Sein Angestellter
+    M hat in der Vergangenheit wiederholt - stets ohne ausdrückliche Bevollmächtigung,
     aber mit Wissen des U - im Namen des U Bestellungen beim Lieferanten L aufgegeben;
     U hat die gelieferte Ware jedes Mal widerspruchslos bezahlt. Als M erneut im Namen
     des U bei L Ware im Wert von 3.000 Euro bestellt, befindet sich U - anders als
-    bei den fruaheren Bestellungen - im Urlaub und weiss von dieser Bestellung nichts.
-    Fuer L stellt sich die Bestellung nicht anders dar als die frueheren; er liefert
-    die Ware. Nach seiner Rueckkehr weigert sich U, die Rechnung zu begleichen: Er
-    habe M nie bevollmaechtigt.'
+    bei den fruaheren Bestellungen - im Urlaub und weiß von dieser Bestellung nichts.
+    Für L stellt sich die Bestellung nicht anders dar als die früheren; er liefert
+    die Ware. Nach seiner Rückkehr weigert sich U, die Rechnung zu begleichen: Er
+    habe M nie bevollmächtigt.'
   question: Hat L gegen U einen Anspruch auf Zahlung des Kaufpreises aus § 433 Abs.
     2 BGB?
   steps:
   - prompt: Formuliere den Obersatz.
-    erwartung: L koennte gegen U einen Anspruch auf Zahlung des Kaufpreises aus §
+    erwartung: L könnte gegen U einen Anspruch auf Zahlung des Kaufpreises aus §
       433 Abs. 2 BGB haben.
   - prompt: Ist zwischen L und U unmittelbar ein Kaufvertrag zustande gekommen?
-    erwartung: Nicht durch eine eigene Erklaerung des U - fraglich ist eine wirksame
+    erwartung: Nicht durch eine eigene Erklärung des U - fraglich ist eine wirksame
       Stellvertretung durch M, § 164 Abs. 1 BGB.
-  - prompt: Hatte M eine ausdruecklich erteilte Vollmacht?
-    erwartung: Nein, weder eine Innen- noch eine Aussenvollmacht wurde M ausdruecklich
+  - prompt: Hatte M eine ausdrücklich erteilte Vollmacht?
+    erwartung: Nein, weder eine Innen- noch eine Außenvollmacht wurde M ausdrücklich
       erteilt.
   - prompt: Kommt eine Duldungsvollmacht in Betracht?
-    erwartung: Fuer die konkrete Bestellung nein, da U von dieser Bestellung nichts
+    erwartung: Für die konkrete Bestellung nein, da U von dieser Bestellung nichts
       wusste - positive Kenntnis und Dulden fehlen gerade.
   - prompt: Kommt eine Anscheinsvollmacht in Betracht?
     erwartung: 'Ja: U hat durch das wiederholte, unwidersprochene Handeln des M einen
-      Rechtsschein gesetzt, den er bei pflichtgemaesser Sorgfalt (z. B. durch Vorkehrungen
-      fuer seine Abwesenheit) haette erkennen und verhindern koennen; L durfte die
-      Bestellung nach den bisherigen Umstaenden gutglaeubig als bevollmaechtigt ansehen.'
+      Rechtsschein gesetzt, den er bei pflichtgemäßer Sorgfalt (z. B. durch Vorkehrungen
+      für seine Abwesenheit) hätte erkennen und verhindern können; L durfte die
+      Bestellung nach den bisherigen Umständen gutgläubig als bevollmächtigt ansehen.'
   expectation:
     pruefpunkte:
     - id: p1
@@ -253,17 +253,17 @@ faelle:
       card_slugs:
       - zr-at-offenkundigkeitsprinzip
     - id: p3
-      label: Fehlen einer ausdruecklichen Innen- oder Aussenvollmacht festgestellt
+      label: Fehlen einer ausdrücklichen Innen- oder Außenvollmacht festgestellt
       weight: 1.5
       required: false
       keywords:
       - keine Vollmacht
-      - nicht bevollmaechtigt
-      - ausdruecklich
+      - nicht bevollmächtigt
+      - ausdrücklich
       card_slugs:
       - zr-at-vollmacht-innen-aussen
     - id: p4
-      label: Duldungsvollmacht mangels positiver Kenntnis fuer die konkrete Bestellung
+      label: Duldungsvollmacht mangels positiver Kenntnis für die konkrete Bestellung
         verneint
       weight: 2.0
       required: false
@@ -274,13 +274,13 @@ faelle:
       - zr-at-duldungs-anscheinsvollmacht
     - id: p5
       label: Anscheinsvollmacht sauber definiert und subsumiert (Erkennbarkeit/Verhinderbarkeit
-        des Rechtsscheins, Gutglaeubigkeit des L)
+        des Rechtsscheins, Gutgläubigkeit des L)
       weight: 3.5
       required: true
       keywords:
       - Anscheinsvollmacht
       - Sorgfalt
-      - gutglaeubig
+      - gutgläubig
       card_slugs:
       - zr-at-duldungs-anscheinsvollmacht
     - id: p6

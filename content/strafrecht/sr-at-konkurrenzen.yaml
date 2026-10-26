@@ -1,0 +1,341 @@
+topic:
+  slug: sr-at-konkurrenzen
+  area: strafrecht
+  title: Konkurrenzen, §§ 52, 53 StGB und Gesetzeskonkurrenz
+  parent: sr-at
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-fable-5-1
+    status: in-pruefung
+    normzitate_geprueft: true
+cards:
+- slug: sr-konkurrenzen-funktion-aufbau
+  type: schema_step
+  front: 'Welche Funktion hat die Konkurrenzlehre und an welcher Stelle des Gutachtens wird sie geprüft?'
+  back: >-
+    Die Konkurrenzlehre klärt, wie mehrere vom Täter verwirklichte Straftatbestände
+    zueinander stehen und wie daraus eine Strafe gebildet wird. Sie ist eine reine
+    Rechtsfolgenfrage und wird deshalb erst am Ende des Gutachtens geprüft, nachdem
+    für jeden Tatkomplex die Strafbarkeit nach allen in Betracht kommenden Delikten
+    feststeht. Prüfungsreihenfolge: (1) Handlungseinheit oder Handlungsmehrheit,
+    (2) bei Handlungseinheit Ausschluss von Gesetzeskonkurrenz, sonst Tateinheit
+    nach § 52 StGB, (3) bei Handlungsmehrheit Ausschluss mitbestrafter Vor- oder
+    Nachtaten, sonst Tatmehrheit nach § 53 StGB.
+  norms:
+  - § 52 StGB
+  - § 53 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-konkurrenzen-tateinheit-52
+  type: norm
+  front: 'Was regelt § 52 StGB (Tateinheit) und welche Rechtsfolge ordnet die Norm an?'
+  back: >-
+    Nach § 52 Abs. 1 StGB liegt Tateinheit (Idealkonkurrenz) vor, wenn dieselbe
+    Handlung mehrere Strafgesetze verletzt (ungleichartige Tateinheit) oder dasselbe
+    Strafgesetz mehrmals verletzt (gleichartige Tateinheit, etwa eine Bombe tötet
+    mehrere Menschen). Rechtsfolge ist eine einzige Strafe: Sie wird nach § 52 Abs. 2
+    S. 1 StGB dem Gesetz entnommen, das die schwerste Strafe androht. Das mildere
+    Gesetz entfaltet aber Sperrwirkung, § 52 Abs. 2 S. 2 StGB: Die Strafe darf nicht
+    milder sein, als das mildere Gesetz es zulässt. Im Schuldspruch werden alle
+    tateinheitlich verwirklichten Delikte genannt (Klarstellungsfunktion).
+  norms:
+  - § 52 Abs. 1 StGB
+  - § 52 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-konkurrenzen-tatmehrheit-53
+  type: norm
+  front: 'Was regelt § 53 StGB (Tatmehrheit) und wie wird die Gesamtstrafe nach § 54 StGB gebildet?'
+  back: >-
+    Tatmehrheit (Realkonkurrenz) liegt nach § 53 Abs. 1 StGB vor, wenn jemand
+    mehrere Straftaten durch mehrere selbständige Handlungen begangen hat und diese
+    gleichzeitig abgeurteilt werden. Für jede Tat wird zunächst eine Einzelstrafe
+    festgesetzt; daraus wird nach § 54 StGB eine Gesamtstrafe gebildet
+    (Asperationsprinzip): Die höchste Einzelstrafe wird erhöht, § 54 Abs. 1 S. 2 StGB,
+    die Gesamtstrafe darf aber die Summe der Einzelstrafen nicht erreichen,
+    § 54 Abs. 2 S. 1 StGB. Die Gesamtstrafe ist also stets höher als die höchste
+    Einzelstrafe, aber niedriger als deren Summe.
+  norms:
+  - § 53 Abs. 1 StGB
+  - § 54 Abs. 1 StGB
+  - § 54 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-konkurrenzen-handlungseinheit-natuerlich
+  type: definition
+  front: 'Definiere: Handlung im natürlichen Sinn, natürliche Handlungseinheit und tatbestandliche Handlungseinheit'
+  back: >-
+    Eine Handlung im natürlichen Sinn ist eine einzelne willensgetragene
+    Körperbewegung. Eine natürliche Handlungseinheit liegt vor, wenn mehrere
+    gleichartige Einzelakte von einem einheitlichen Willen getragen sind, in einem
+    engen räumlich-zeitlichen Zusammenhang stehen und für einen unbeteiligten Dritten
+    als ein einheitliches Geschehen erscheinen (Beispiel: mehrere Faustschläge in
+    einer Rauferei). Eine tatbestandliche Handlungseinheit folgt aus der Struktur des
+    Tatbestands selbst: bei mehraktigen Delikten (Raub: Nötigung und Wegnahme), bei
+    Dauerdelikten (Freiheitsberaubung) und bei der iterativen Verwirklichung
+    desselben Tatbestands in einem Zug. In allen drei Fällen liegt nur eine
+    Handlung im Sinne des § 52 Abs. 1 StGB vor.
+  norms:
+  - § 52 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-konkurrenzen-gesetzeskonkurrenz-spezialitaet
+  type: definition
+  front: 'Definiere: Gesetzeskonkurrenz und ihren Unterfall der Spezialität'
+  back: >-
+    Gesetzeskonkurrenz (Gesetzeseinheit) ist eine nur scheinbare Konkurrenz: Zwar
+    sind mehrere Tatbestände dem Wortlaut nach erfüllt, der Unrechtsgehalt der Tat
+    wird aber von einem einzigen Tatbestand vollständig erfasst, sodass die übrigen
+    zurücktreten und im Schuldspruch nicht erscheinen. Spezialität liegt vor, wenn ein
+    Tatbestand alle Merkmale eines anderen und mindestens ein weiteres, engeres
+    Merkmal enthält. Das speziellere Gesetz verdrängt das allgemeine. Klassische
+    Fälle sind Qualifikationen und Privilegierungen gegenüber dem Grunddelikt: § 244
+    StGB verdrängt § 242 StGB, § 216 StGB verdrängt als Privilegierung § 212 StGB.
+  norms:
+  - § 244 StGB
+  - § 242 StGB
+  - § 216 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-konkurrenzen-subsidiaritaet-konsumtion
+  type: definition
+  front: 'Definiere: Subsidiarität und Konsumtion als Fälle der Gesetzeskonkurrenz'
+  back: >-
+    Subsidiarität bedeutet, dass ein Tatbestand nur hilfsweise gilt, wenn kein
+    anderer eingreift. Sie ist formell, wenn das Gesetz sie ausdrücklich anordnet
+    (Subsidiaritätsklauseln wie in § 246 Abs. 1 StGB oder § 265 Abs. 1 StGB), und
+    materiell, wenn sie sich aus dem Sinnzusammenhang ergibt: Durchgangsstadien
+    treten hinter der weiteren Stufe zurück, also Versuch hinter Vollendung,
+    Gefährdungsdelikt hinter Verletzungsdelikt und Teilnahme hinter Täterschaft am
+    selben Delikt. Konsumtion liegt vor, wenn ein Delikt eine typische Begleittat
+    eines anderen ist und dessen Unrechtsgehalt regelmäßig miterfasst: Der
+    Hausfriedensbruch, § 123 StGB, tritt nach h.M. hinter dem Einbruchdiebstahl
+    zurück, weil das Eindringen dort schon straferhöhend berücksichtigt ist.
+  norms:
+  - § 246 Abs. 1 StGB
+  - § 265 Abs. 1 StGB
+  - § 123 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-konkurrenzen-mitbestrafte-vor-nachtat
+  type: definition
+  front: 'Definiere: mitbestrafte Vortat und mitbestrafte Nachtat'
+  back: >-
+    Beide Figuren betreffen mehrere Handlungen, die dennoch nicht zur Tatmehrheit
+    führen. Eine mitbestrafte Vortat ist ein Delikt, das lediglich Vorbereitung oder
+    Durchgangsstadium der später vollendeten Haupttat ist und in ihr aufgeht (etwa
+    die Bedrohung, die dem Raub vorausgeht). Eine mitbestrafte Nachtat sichert oder
+    verwertet nur den durch die Haupttat erlangten Vorteil, ohne ein neues Rechtsgut
+    zu verletzen und ohne den Schaden zu vertiefen; sie tritt hinter der Haupttat
+    zurück. Beispiel: Die Unterschlagung der gestohlenen Sache, § 246 StGB, ist
+    mitbestrafte Nachtat des Diebstahls. Verletzt die Nachtat dagegen ein neues
+    Rechtsgut oder einen anderen Träger, etwa beim Verkauf der Beute an einen
+    gutgläubigen Käufer, der dadurch betrogen wird, ist sie selbständig strafbar.
+  norms:
+  - § 246 StGB
+  - § 263 StGB
+  - § 53 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-konkurrenzen-klammerwirkung-streitstand
+  type: streitstand
+  front: 'Streitstand: Wann entfaltet ein Delikt Klammerwirkung zwischen zwei an sich tatmehrheitlichen Delikten?'
+  back: >-
+    Problem: Zwei Delikte (A und B) stehen an sich in Tatmehrheit, ein drittes
+    Delikt (C, häufig ein Dauerdelikt wie Freiheitsberaubung oder Trunkenheitsfahrt)
+    steht mit beiden je in Tateinheit. Fraglich ist, ob C die Delikte A und B zu einer
+    einzigen Tat im Sinne des § 52 StGB "verklammert".
+
+    Rspr. und h.M. (Wertigkeitsvergleich): Klammerwirkung tritt ein, wenn das
+    verklammernde Delikt C nach seinem Unrechtsgehalt mindestens annähernd
+    gleichwertig mit den verklammerten Delikten ist. Ist C deutlich leichter als A
+    und B, versagt die Klammer, weil ein geringfügiges Delikt nicht dazu führen darf,
+    dass schwere Taten die Vergünstigung des § 52 StGB erhalten; A und B stehen dann
+    in Tatmehrheit, C tritt zu jedem von ihnen in Tateinheit.
+
+    Gegenansicht (Teile der Literatur): Die Klammerwirkung ist eine rein
+    formale Konsequenz der Handlungsidentität und deshalb unabhängig vom Gewicht
+    der Delikte anzunehmen; die Bewertung des Unrechts sei Aufgabe der
+    Strafzumessung, nicht der Konkurrenzlehre.
+
+    Konsequenz: In der Klausur ist zunächst festzustellen, ob C mit A und B je in
+    Tateinheit steht, und dann der Wertigkeitsvergleich nach h.M. durchzuführen.
+  norms:
+  - § 52 Abs. 1 StGB
+  - § 53 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-konkurrenzen
+  title: Konkurrenzprüfung am Ende des Gutachtens
+  norms:
+  - § 52 StGB
+  - § 53 StGB
+  - § 54 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+  steps:
+  - label: I. Bestandsaufnahme der verwirklichten Delikte
+    hinweis: Erst nach abgeschlossener Strafbarkeitsprüfung aller Tatkomplexe.
+  - label: II. Handlungseinheit oder Handlungsmehrheit
+    children:
+    - label: 1. Eine Handlung im natürlichen Sinn
+    - label: 2. Natürliche Handlungseinheit (gleichartige Akte, einheitlicher Wille, enger Zusammenhang)
+    - label: 3. Tatbestandliche Handlungseinheit (mehraktige Delikte, Dauerdelikte)
+  - label: III. Bei Handlungseinheit - Gesetzeskonkurrenz?
+    children:
+    - label: 1. Spezialität (Qualifikation, Privilegierung)
+    - label: 2. Subsidiarität (formell durch Klausel, materiell bei Durchgangsstadien)
+    - label: 3. Konsumtion (typische Begleittat)
+    - label: '4. Sonst: Tateinheit, § 52 StGB'
+  - label: IV. Bei Handlungsmehrheit - mitbestrafte Vor- oder Nachtat?
+    children:
+    - label: 1. Mitbestrafte Vortat (Vorbereitung, Durchgangsstadium)
+    - label: 2. Mitbestrafte Nachtat (Sicherung oder Verwertung ohne neues Rechtsgut)
+    - label: '3. Sonst: Tatmehrheit, § 53 StGB'
+  - label: V. Klammerwirkung eines dritten Delikts prüfen
+    hinweis: Nur wenn ein Delikt mit zwei an sich tatmehrheitlichen Delikten je in Tateinheit steht; Wertigkeitsvergleich nach h.M.
+  - label: VI. Rechtsfolge
+    children:
+    - label: '1. Tateinheit: eine Strafe aus dem schwersten Gesetz, Sperrwirkung des milderen, § 52 Abs. 2 StGB'
+    - label: '2. Tatmehrheit: Einzelstrafen und Gesamtstrafe nach § 54 StGB (Asperation)'
+faelle:
+- slug: sr-fall-gekipptes-fenster-laptopverkauf
+  title: Das gekippte Fenster
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  stand: 2026-09
+  facts: >-
+    A steigt nachts durch ein gekipptes Fenster im Erdgeschoss in die dauerhaft
+    bewohnte Wohnung des B ein, um dort etwas Wertvolles mitzunehmen. Er findet einen
+    Laptop und verlässt die Wohnung mit dem Gerät. Am nächsten Tag bietet A den
+    Laptop dem C an und erklärt wahrheitswidrig, es handle sich um sein eigenes,
+    gebrauchtes Gerät. C glaubt ihm und zahlt 300 Euro. Der Laptop wird C wenige
+    Wochen später von der Polizei als Diebesgut abgenommen. Die Strafbarkeit des A
+    nach § 244 Abs. 1 Nr. 3 StGB, § 123 StGB, § 246 StGB und § 263 StGB (zulasten
+    des C) ist bereits festgestellt.
+  question: In welchem Konkurrenzverhältnis stehen die von A verwirklichten Delikte zueinander?
+  steps:
+  - prompt: Wie ist das Verhältnis zwischen § 242 StGB und § 244 Abs. 1 Nr. 3 StGB?
+    erwartung: >-
+      § 244 Abs. 1 Nr. 3 StGB ist eine Qualifikation des Diebstahls und verdrängt
+      § 242 StGB im Wege der Spezialität; nur der Wohnungseinbruchdiebstahl erscheint
+      im Schuldspruch.
+  - prompt: Wie ist das Verhältnis zwischen dem Hausfriedensbruch, § 123 StGB, und dem Wohnungseinbruchdiebstahl?
+    erwartung: >-
+      Das Einsteigen in die Wohnung ist bereits Merkmal des § 244 Abs. 1 Nr. 3 StGB.
+      Der Hausfriedensbruch ist typische Begleittat und wird nach h.M. konsumiert; er
+      tritt im Wege der Gesetzeskonkurrenz zurück.
+  - prompt: Wie ist das Verhältnis zwischen dem Verkauf des Laptops als Unterschlagung, § 246 StGB, und dem Diebstahl?
+    erwartung: >-
+      Die Zueignung der bereits gestohlenen Sache verwertet nur die Diebstahlsbeute,
+      ohne ein neues Rechtsgut zu verletzen; sie ist mitbestrafte Nachtat und tritt
+      zurück (zudem greift die Subsidiaritätsklausel des § 246 Abs. 1 StGB).
+  - prompt: Ist der Betrug zulasten des C, § 263 StGB, ebenfalls mitbestrafte Nachtat?
+    erwartung: >-
+      Nein. Der Betrug schädigt mit C einen neuen Rechtsgutsträger, der durch den
+      Diebstahl nicht betroffen war. Eine mitbestrafte Nachtat setzt voraus, dass
+      kein neues Rechtsgut verletzt und der Schaden nicht vertieft wird; das ist hier
+      nicht der Fall. § 263 StGB bleibt selbständig strafbar.
+  - prompt: Stehen Wohnungseinbruchdiebstahl und Betrug in Tateinheit oder Tatmehrheit?
+    erwartung: >-
+      Einsteigen und Wegnahme in der Nacht einerseits und der Verkauf am nächsten Tag
+      andererseits sind verschiedene Handlungen ohne engen räumlich-zeitlichen
+      Zusammenhang. Es liegt Handlungsmehrheit vor, § 244 Abs. 1 Nr. 3 StGB und § 263
+      StGB stehen in Tatmehrheit nach § 53 StGB.
+  - prompt: Wie wird die Strafe gebildet?
+    erwartung: >-
+      Für beide Taten ist je eine Einzelstrafe festzusetzen; daraus wird nach § 54
+      StGB eine Gesamtstrafe durch Erhöhung der höchsten Einzelstrafe gebildet, die
+      die Summe der Einzelstrafen nicht erreichen darf.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: '§ 244 Abs. 1 Nr. 3 StGB verdrängt § 242 StGB im Wege der Spezialität'
+      weight: 1.5
+      required: true
+      norms:
+      - § 244 Abs. 1 Nr. 3 StGB
+      - § 242 StGB
+      keywords:
+      - Spezialität
+      - Qualifikation
+      - verdrängt
+      card_slugs:
+      - sr-konkurrenzen-gesetzeskonkurrenz-spezialitaet
+    - id: p2
+      label: Hausfriedensbruch als typische Begleittat konsumiert
+      weight: 1.5
+      required: false
+      norms:
+      - § 123 StGB
+      keywords:
+      - Konsumtion
+      - konsumiert
+      - Begleittat
+      card_slugs:
+      - sr-konkurrenzen-subsidiaritaet-konsumtion
+    - id: p3
+      label: Unterschlagung als mitbestrafte Nachtat erkannt
+      weight: 2.0
+      required: true
+      norms:
+      - § 246 StGB
+      keywords:
+      - mitbestrafte Nachtat
+      - Nachtat
+      card_slugs:
+      - sr-konkurrenzen-mitbestrafte-vor-nachtat
+    - id: p4
+      label: Betrug zulasten des C nicht mitbestraft, weil neues Rechtsgut bzw. neuer Rechtsgutsträger verletzt
+      weight: 2.5
+      required: true
+      norms:
+      - § 263 StGB
+      keywords:
+      - neues Rechtsgut
+      - anderer Rechtsgutsträger
+      - selbständig
+      card_slugs:
+      - sr-konkurrenzen-mitbestrafte-vor-nachtat
+    - id: p5
+      label: Handlungsmehrheit und Tatmehrheit nach § 53 StGB zwischen Diebstahl und Betrug bejaht
+      weight: 2.0
+      required: true
+      norms:
+      - § 53 Abs. 1 StGB
+      keywords:
+      - Tatmehrheit
+      - Handlungsmehrheit
+      - § 53
+      card_slugs:
+      - sr-konkurrenzen-tatmehrheit-53
+      - sr-konkurrenzen-handlungseinheit-natuerlich
+    - id: p6
+      label: Gesamtstrafenbildung nach § 54 StGB (Asperationsprinzip) angesprochen
+      weight: 1.0
+      required: false
+      norms:
+      - § 54 StGB
+      keywords:
+      - Gesamtstrafe
+      - Asperation
+      card_slugs:
+      - sr-konkurrenzen-tatmehrheit-53

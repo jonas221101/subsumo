@@ -52,11 +52,11 @@ def test_update_issue_encodes_review_request_and_interaction_id():
         client.update_issue(
             "i1",
             status="in_review",
-            review_request_instructions="Bitte pruefen.",
+            review_request_instructions="Bitte prüfen.",
             review_interaction_id="int-1",
         )
     body = json.loads(seen[0].read())
-    assert body["reviewRequest"] == {"instructions": "Bitte pruefen."}
+    assert body["reviewRequest"] == {"instructions": "Bitte prüfen."}
     assert body["reviewInteractionId"] == "int-1"
 
 
@@ -71,14 +71,14 @@ def test_create_review_interaction_posts_request_confirmation():
         cfg(agent_id="a1", run_id="r1"), transport=httpx.MockTransport(handler)
     ) as client:
         result = client.create_review_interaction(
-            "i1", addressee_agent_id="reviewer-1", prompt="Bitte Review durchfuehren."
+            "i1", addressee_agent_id="reviewer-1", prompt="Bitte Review durchführen."
         )
     assert result == {"id": "int-1", "status": "pending"}
     assert seen[0].url.path == "/api/issues/i1/interactions"
     body = json.loads(seen[0].read())
     assert body["kind"] == "request_confirmation"
     assert body["addresseeAgentId"] == "reviewer-1"
-    assert body["payload"] == {"version": 1, "prompt": "Bitte Review durchfuehren."}
+    assert body["payload"] == {"version": 1, "prompt": "Bitte Review durchführen."}
 
 
 def test_missing_token_and_hostile_values():

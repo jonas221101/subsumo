@@ -25,8 +25,22 @@ def main() -> int:
 
     bundle = load_content(args.content_dir)
 
+    # Inhalte mit Status 'in-pruefung' (z. B. die Bundesland-Profile und
+    # Landesrecht-Themen aus docs/32) melden sich je Datei - gebuendelt je
+    # Verzeichnis bleibt die Ausgabe lesbar, ohne dass das Signal verschwindet.
+    in_pruefung: dict[str, int] = {}
     for warning in bundle.warnings:
+        if "Status 'in-pruefung'" in warning:
+            verzeichnis = str(Path(warning.split(" ", 1)[0]).parent)
+            in_pruefung[verzeichnis] = in_pruefung.get(verzeichnis, 0) + 1
+            continue
         print(f"WARNUNG  {warning}")
+    if in_pruefung:
+        aufschluesselung = ", ".join(f"{d}/ ({n})" for d, n in sorted(in_pruefung.items()))
+        print(
+            f"WARNUNG  {sum(in_pruefung.values())} Inhalte mit Status 'in-pruefung' "
+            f"(redaktionell nicht freigegeben): {aufschluesselung}"
+        )
     for error in bundle.errors:
         print(f"FEHLER   {error}")
 

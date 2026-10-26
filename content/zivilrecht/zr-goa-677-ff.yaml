@@ -1,0 +1,245 @@
+topic:
+  slug: zr-goa-677-ff
+  area: zivilrecht
+  title: "Geschäftsführung ohne Auftrag, §§ 677-687 BGB"
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-fable-5-1
+    status: in-pruefung
+    normzitate_geprueft: true
+cards:
+- slug: zr-goa-voraussetzungen-677
+  type: norm
+  front: "Welche Tatbestandsmerkmale hat die echte Geschäftsführung ohne Auftrag nach § 677 BGB?"
+  back: "§ 677 BGB setzt voraus, dass jemand (1) ein Geschäft besorgt, also eine tatsächliche oder rechtsgeschäftliche Tätigkeit mit wirtschaftlichem Bezug entfaltet, (2) für einen anderen, das heißt ein fremdes Geschäft mit Fremdgeschäftsführungswillen führt, und (3) hierzu weder durch einen Auftrag noch sonst berechtigt ist, also kein Vertrag und keine gesetzliche Befugnis gegenüber dem Geschäftsherrn besteht, die die Tätigkeit rechtfertigt. Liegen diese Merkmale vor, besteht eine echte GoA; ob sie berechtigt ist, entscheidet sich erst auf einer zweiten Stufe nach § 683 BGB (Interesse und Wille des Geschäftsherrn), § 679 BGB oder § 684 S. 2 BGB (Genehmigung). Die echte GoA ist ein gesetzliches Schuldverhältnis, das eigene Pflichten des Geschäftsführers begründet (§§ 677, 681 BGB) und bei Berechtigung einen Aufwendungsersatzanspruch gewährt (§ 683 S. 1 BGB iVm § 670 BGB)."
+  norms:
+  - § 677 BGB
+  - § 683 S. 1 BGB
+  - § 670 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-goa-fremdes-geschaeft-fremdgeschaeftsfuehrungswille
+  type: definition
+  front: "Definiere: fremdes Geschäft und Fremdgeschäftsführungswille bei der GoA"
+  back: "Ein Geschäft ist objektiv fremd, wenn es schon nach seinem äußeren Erscheinungsbild in den Rechts- und Interessenkreis eines anderen fällt (Reparatur des Nachbardachs, Tilgung einer fremden Schuld). Es ist subjektiv (neutral) fremd, wenn es äußerlich keinem bestimmten Rechtskreis zuzuordnen ist und nur der Wille des Handelnden es zu einem fremden macht (Kauf einer Sache für einen anderen). Ein auch-fremdes Geschäft liegt vor, wenn es zugleich in den eigenen und in den fremden Rechtskreis fällt. Der Fremdgeschäftsführungswille ist das Bewusstsein und der Wille, zumindest auch im Interesse eines anderen tätig zu werden. Bei objektiv fremden Geschäften wird er nach herrschender Meinung vermutet; bei neutralen Geschäften muss er nach außen erkennbar hervorgetreten sein, weil sonst jede Tätigkeit nachträglich zur GoA erklärt werden könnte. Irrt der Handelnde über die Person des Geschäftsherrn, ist die GoA nach h.M. dennoch zugunsten des wirklichen Geschäftsherrn gegeben."
+  norms:
+  - § 677 BGB
+  - § 687 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-goa-auch-fremdes-geschaeft-streit
+  type: streitstand
+  front: "Begründet ein auch-fremdes Geschäft eine GoA, wenn der Handelnde zugleich eine eigene Pflicht erfüllt?"
+  back: "Die Rechtsprechung (BGH) bejaht bei auch-fremden Geschäften grundsätzlich einen vermuteten Fremdgeschäftsführungswillen, auch wenn der Handelnde zugleich eine eigene vertragliche oder öffentlich-rechtliche Pflicht erfüllt. Danach kann etwa derjenige, der aufgrund eines nichtigen Vertrags oder einer eigenen gesetzlichen Pflicht tätig wird, Aufwendungsersatz nach §§ 683 S. 1, 670 BGB verlangen, sofern die Tätigkeit auch dem Interesse des anderen dient. Die herrschende Literatur ist deutlich zurückhaltender: Wer eine eigene Pflicht erfüllt, handle nicht ohne Auftrag oder sonstige Berechtigung im Sinne des § 677 BGB; jedenfalls fehle der Fremdgeschäftsführungswille, wenn der Handelnde in erster Linie eigene Interessen verfolge. Die GoA dürfe nicht dazu dienen, gesetzliche Ausgleichsregelungen (Bereicherungsrecht bei nichtigen Verträgen, öffentlich-rechtliche Kostenregelungen) zu umgehen. Auch der BGH hat die Anwendung der GoA bei nichtigen Verträgen in neuerer Zeit eingeschränkt, wenn der Handelnde den Vertrag als wirksam ansieht und daher nur für sich selbst tätig werden will. In der Klausur ist die Fremdheit des Geschäfts daher bei auch-fremden Geschäften ausdrücklich zu problematisieren."
+  norms:
+  - § 677 BGB
+  - § 683 S. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-goa-berechtigung-683-679-684
+  type: definition
+  front: "Wann ist eine echte GoA berechtigt?"
+  back: "Die echte GoA ist berechtigt, wenn die Übernahme der Geschäftsführung dem Interesse und dem wirklichen oder mutmaßlichen Willen des Geschäftsherrn entspricht (§ 683 S. 1 BGB). Das Interesse ist objektiv zu bestimmen: Die Übernahme muss dem Geschäftsherrn nach seiner Lage nützlich sein. Der wirkliche Wille geht vor, auch wenn er unvernünftig ist; nur wenn er nicht feststellbar ist, kommt es auf den mutmaßlichen Willen an, der in der Regel dem objektiven Interesse entspricht. Maßgeblicher Zeitpunkt ist die Übernahme der Geschäftsführung. Ein entgegenstehender Wille ist nach § 679 BGB unbeachtlich, wenn ohne die Geschäftsführung eine im öffentlichen Interesse liegende Pflicht oder eine gesetzliche Unterhaltspflicht des Geschäftsherrn nicht rechtzeitig erfüllt würde. Schließlich wird eine zunächst unberechtigte GoA durch Genehmigung des Geschäftsherrn berechtigt (§ 684 S. 2 BGB)."
+  norms:
+  - § 683 S. 1 BGB
+  - § 679 BGB
+  - § 684 S. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-goa-aufwendungsersatz-683-670
+  type: definition
+  front: "Welchen Umfang hat der Aufwendungsersatzanspruch aus §§ 683 S. 1, 670 BGB?"
+  back: "Der berechtigte Geschäftsführer kann wie ein Beauftragter Ersatz seiner Aufwendungen verlangen, die er den Umständen nach für erforderlich halten durfte (§ 683 S. 1 BGB iVm § 670 BGB). Aufwendungen sind freiwillige Vermögensopfer im Interesse des Geschäftsherrn, etwa Material- und Fahrtkosten oder eingegangene Verbindlichkeiten. Maßgeblich ist die Sicht eines verständigen Geschäftsführers im Zeitpunkt der Aufwendung, nicht der tatsächliche Erfolg. Nach herrschender Meinung sind auch Schäden ersatzfähig, die sich aus dem typischen Risiko der übernommenen Tätigkeit verwirklichen (risikotypische Begleitschäden), weil der Geschäftsführer sie im Interesse des Geschäftsherrn auf sich genommen hat. Eine Vergütung für die eigene Arbeitskraft ist grundsätzlich keine Aufwendung; die h.M. gewährt sie aber, wenn die Tätigkeit zum Beruf oder Gewerbe des Geschäftsführers gehört (Rechtsgedanke des § 1877 Abs. 3 BGB), weil der Geschäftsherr sonst eine berufliche Leistung unentgeltlich erhielte."
+  norms:
+  - § 683 S. 1 BGB
+  - § 670 BGB
+  - § 1877 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-goa-pflichten-haftung-677-680-681
+  type: definition
+  front: "Welche Pflichten treffen den Geschäftsführer, und wann ist seine Haftung nach § 680 BGB gemildert?"
+  back: "Der Geschäftsführer muss das Geschäft so führen, wie das Interesse des Geschäftsherrn mit Rücksicht auf dessen wirklichen oder mutmaßlichen Willen es erfordert (§ 677 BGB). Nach § 681 S. 1 BGB hat er die Übernahme anzuzeigen und, wenn nicht Gefahr im Verzug ist, die Entschließung des Geschäftsherrn abzuwarten; über § 681 S. 2 BGB gelten die Auftragsvorschriften der §§ 666-668 BGB, insbesondere die Pflicht zur Herausgabe des Erlangten (§ 667 BGB). Verletzt er diese Pflichten schuldhaft, haftet er nach § 280 Abs. 1 BGB aus dem gesetzlichen Schuldverhältnis der GoA. Bezweckt die Geschäftsführung die Abwendung einer dem Geschäftsherrn drohenden dringenden Gefahr, hat der Geschäftsführer nach § 680 BGB nur Vorsatz und grobe Fahrlässigkeit zu vertreten; die Norm soll die Hilfsbereitschaft in Notlagen nicht durch Haftungsrisiken hemmen. Nach h.M. gilt das Privileg auch für die Übernahme selbst und bei unberechtigter GoA, sofern die Gefahr aus Sicht des Geschäftsführers objektiv bestand."
+  norms:
+  - § 677 BGB
+  - § 680 BGB
+  - § 681 BGB
+  - § 667 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-goa-unberechtigte-goa-684-678
+  type: definition
+  front: "Welche Rechtsfolgen hat die unberechtigte echte GoA nach §§ 684 S. 1, 678 BGB?"
+  back: "Entspricht die Übernahme der Geschäftsführung nicht dem Interesse oder dem Willen des Geschäftsherrn und wird sie auch nicht genehmigt, ist die GoA unberechtigt. Der Geschäftsführer hat dann keinen Aufwendungsersatzanspruch aus § 683 BGB, sondern nach § 684 S. 1 BGB nur einen Anspruch auf Herausgabe dessen, was der Geschäftsherr durch die Geschäftsführung erlangt hat, nach den Vorschriften über die ungerechtfertigte Bereicherung (Rechtsfolgenverweisung auf §§ 818 ff. BGB). Der Geschäftsherr kann sich also auf Entreicherung berufen und muss aufgedrängte Vorteile, die für ihn keinen Wert haben, nicht vergüten. Spiegelbildlich haftet der Geschäftsführer nach § 678 BGB auf Schadensersatz, wenn er erkennen musste, dass die Übernahme dem Willen des Geschäftsherrn widerspricht (Übernahmeverschulden); ein Verschulden bei der Ausführung ist dann nicht erforderlich. Die Pflichten aus §§ 677, 681 BGB treffen auch den unberechtigten Geschäftsführer, weil auch die unberechtigte GoA ein gesetzliches Schuldverhältnis ist."
+  norms:
+  - § 684 S. 1 BGB
+  - § 678 BGB
+  - § 818 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-goa-unechte-goa-687
+  type: definition
+  front: "Was unterscheidet die beiden Formen der unechten GoA nach § 687 BGB?"
+  back: "Bei der unechten GoA fehlt der Fremdgeschäftsführungswille: Der Handelnde führt ein objektiv fremdes Geschäft als eigenes. § 687 Abs. 1 BGB betrifft die irrtümliche Eigengeschäftsführung - der Handelnde hält das fremde Geschäft für sein eigenes. Die GoA-Vorschriften sind dann insgesamt nicht anwendbar; der Ausgleich richtet sich nach EBV, Bereicherungs- und Deliktsrecht. § 687 Abs. 2 BGB regelt die angemaßte Eigengeschäftsführung - der Handelnde weiß, dass das Geschäft fremd ist, behandelt es aber bewusst als eigenes, etwa indem er eine fremde Sache in eigenem Namen vermietet. Der Geschäftsherr kann dann nach § 687 Abs. 2 S. 1 BGB wahlweise die Ansprüche aus §§ 677, 678, 681, 682 BGB geltend machen, insbesondere über §§ 681 S. 2, 667 BGB die Herausgabe des erzielten Gewinns verlangen. Macht er davon Gebrauch, ist er dem Geschäftsführer nach § 687 Abs. 2 S. 2 BGB nur nach § 684 S. 1 BGB, also nach Bereicherungsrecht, zum Ersatz von Aufwendungen verpflichtet."
+  norms:
+  - § 687 Abs. 1 BGB
+  - § 687 Abs. 2 BGB
+  - § 681 BGB
+  - § 667 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-goa-aufwendungsersatz-683-670
+  title: "Aufwendungsersatz aus berechtigter GoA, §§ 677, 683 S. 1, 670 BGB"
+  norms:
+  - § 677 BGB
+  - § 683 S. 1 BGB
+  - § 670 BGB
+  - § 684 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: "I. Geschäftsbesorgung"
+    hinweis: "Jede tatsächliche oder rechtsgeschäftliche Tätigkeit; reine Gefälligkeiten ohne wirtschaftlichen Bezug genügen nicht."
+  - label: "II. Fremdes Geschäft"
+    children:
+    - label: "1. Objektiv fremdes, neutrales oder auch-fremdes Geschäft"
+    - label: "2. Fremdgeschäftsführungswille (bei objektiv fremdem Geschäft vermutet; bei neutralem Geschäft nach außen erkennbar)"
+      hinweis: "Beim auch-fremden Geschäft den Streit um die Vermutung ansprechen."
+  - label: "III. Ohne Auftrag oder sonstige Berechtigung"
+    hinweis: "Kein wirksamer Vertrag und keine gesetzliche Befugnis gegenüber dem Geschäftsherrn."
+  - label: "IV. Berechtigung der Geschäftsführung"
+    children:
+    - label: "1. Übernahme entspricht dem Interesse des Geschäftsherrn, § 683 S. 1 BGB"
+    - label: "2. Übernahme entspricht dem wirklichen, hilfsweise dem mutmaßlichen Willen, § 683 S. 1 BGB"
+    - label: "3. Entgegenstehender Wille unbeachtlich, § 679 BGB"
+    - label: "4. Genehmigung, § 684 S. 2 BGB"
+  - label: "V. Rechtsfolge: Ersatz der Aufwendungen, § 683 S. 1 BGB iVm § 670 BGB"
+    children:
+    - label: "1. Freiwillige Vermögensopfer, die der Geschäftsführer für erforderlich halten durfte"
+    - label: "2. Risikotypische Begleitschäden (h.M.)"
+    - label: "3. Vergütung nur bei berufs- oder gewerbetypischer Tätigkeit"
+  - label: "VI. Bei unberechtigter GoA: nur Bereicherungsausgleich, § 684 S. 1 BGB; ggf. Haftung des Geschäftsführers nach § 678 BGB"
+faelle:
+- slug: zr-fall-sturmschaden-am-nachbardach
+  title: "Der Sturmschaden am Nachbardach"
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: "Während B für drei Wochen verreist ist, deckt ein Sturm einen Teil des Dachs seines Hauses ab. Nachbar A, selbstständiger Dachdeckermeister, kann B nicht erreichen. Um das Eindringen von Regen zu verhindern, sichert er das Dach noch am selben Tag mit einer Plane und ersetzt in den folgenden Tagen die zerstörten Ziegel. Für Plane und Ziegel wendet A 600 EUR auf; er arbeitet insgesamt fünf Stunden, für die er Kunden üblicherweise 60 EUR je Stunde berechnet. Beim Abstieg vom Dach rutscht A trotz sorgfältiger Sicherung aus und beschädigt dabei seinen eigenen Werkzeugkoffer (Schaden 150 EUR). Weil ihm der verwitterte Gartenzaun des B schon lange missfällt, streicht A bei der Gelegenheit auch den Zaun neu und verbraucht dafür Farbe im Wert von 80 EUR. Nach seiner Rückkehr ist B über die Dachreparatur erleichtert, erklärt A aber, den Zaun habe er im nächsten Jahr ohnehin abreißen wollen; einen Anstrich habe er nie gewollt. A verlangt von B 600 EUR Material, 300 EUR Arbeitslohn, 150 EUR für den Werkzeugkoffer und 80 EUR für die Zaunfarbe."
+  question: "Welche Ansprüche hat A gegen B?"
+  steps:
+  - prompt: "Liegt hinsichtlich der Dachreparatur eine echte berechtigte GoA vor?"
+    erwartung: "A hat mit der Sicherung und Reparatur des fremden Dachs ein objektiv fremdes Geschäft besorgt; der Fremdgeschäftsführungswille wird vermutet und ist auch tatsächlich gegeben. Ein Auftrag oder eine sonstige Berechtigung fehlt. Die Übernahme entspricht dem objektiven Interesse des B (Abwendung von Folgeschäden) und seinem mutmaßlichen Willen, da ein wirklicher Wille mangels Erreichbarkeit nicht feststellbar war (§ 683 S. 1 BGB). Die GoA ist berechtigt."
+  - prompt: "Welche Positionen kann A als Aufwendungen nach §§ 683 S. 1, 670 BGB ersetzt verlangen?"
+    erwartung: "Die Materialkosten von 600 EUR sind freiwillige Vermögensopfer, die A für erforderlich halten durfte. Die Arbeitsleistung ist grundsätzlich keine Aufwendung; da die Dachreparatur aber zum Beruf des A gehört, kann er nach h.M. die übliche Vergütung von 300 EUR verlangen (Rechtsgedanke des § 1877 Abs. 3 BGB). Der Schaden am Werkzeugkoffer ist ein risikotypischer Begleitschaden der Dacharbeit und nach h.M. ebenfalls als Aufwendung ersatzfähig (150 EUR)."
+  - prompt: "Wie ist der Zaunanstrich zu beurteilen?"
+    erwartung: "Auch der Zaunanstrich ist ein objektiv fremdes Geschäft ohne Auftrag. Die Übernahme entspricht aber weder dem Interesse noch dem mutmaßlichen Willen des B, der den Zaun abreißen wollte; eine Genehmigung nach § 684 S. 2 BGB hat B verweigert, § 679 BGB greift nicht. Die GoA ist insoweit unberechtigt. A kann nach § 684 S. 1 BGB nur Herausgabe des Erlangten nach Bereicherungsrecht verlangen; da der Anstrich eines zum Abriss bestimmten Zauns für B keinen Vermögenswert hat (aufgedrängte Bereicherung), schuldet B nichts."
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: "Anspruchsgrundlage §§ 677, 683 S. 1, 670 BGB für die Dachreparatur genannt"
+      weight: 1.0
+      required: true
+      norms:
+      - § 677 BGB
+      - § 683 S. 1 BGB
+      - § 670 BGB
+      keywords:
+      - "683"
+      - "670"
+      - GoA
+      card_slugs:
+      - zr-goa-voraussetzungen-677
+    - id: p2
+      label: "Objektiv fremdes Geschäft und vermuteter Fremdgeschäftsführungswille bejaht, kein Auftrag oder sonstige Berechtigung"
+      weight: 1.5
+      norms:
+      - § 677 BGB
+      keywords:
+      - fremdes Geschäft
+      - Fremdgeschäftsführungswille
+      - vermutet
+      card_slugs:
+      - zr-goa-fremdes-geschaeft-fremdgeschaeftsfuehrungswille
+    - id: p3
+      label: "Berechtigung nach § 683 S. 1 BGB: Interesse und mutmaßlicher Wille (wirklicher Wille nicht feststellbar) für die Dachreparatur bejaht"
+      weight: 2.0
+      required: true
+      norms:
+      - § 683 S. 1 BGB
+      keywords:
+      - Interesse
+      - mutmaßlicher Wille
+      - "683"
+      card_slugs:
+      - zr-goa-berechtigung-683-679-684
+    - id: p4
+      label: "Umfang des Aufwendungsersatzes: Material (600 EUR), berufstypische Vergütung (300 EUR) und risikotypischer Begleitschaden (150 EUR) mit Begründung zugesprochen"
+      weight: 2.5
+      required: true
+      norms:
+      - § 670 BGB
+      - § 1877 Abs. 3 BGB
+      keywords:
+      - Vergütung
+      - Risiko
+      - Begleitschaden
+      - "1.050"
+      - "1050"
+      card_slugs:
+      - zr-goa-aufwendungsersatz-683-670
+    - id: p5
+      label: "Zaunanstrich als unberechtigte GoA eingeordnet (gegen Interesse und mutmaßlichen Willen, keine Genehmigung, § 679 BGB nicht einschlägig)"
+      weight: 2.0
+      required: true
+      norms:
+      - § 683 S. 1 BGB
+      - § 684 S. 2 BGB
+      - § 679 BGB
+      keywords:
+      - unberechtigt
+      - Genehmigung
+      - Zaun
+      card_slugs:
+      - zr-goa-berechtigung-683-679-684
+      - zr-goa-unberechtigte-goa-684-678
+    - id: p6
+      label: "Rechtsfolge § 684 S. 1 BGB: nur Bereicherungsausgleich, wegen aufgedrängter Bereicherung kein Anspruch auf die 80 EUR"
+      weight: 1.5
+      norms:
+      - § 684 S. 1 BGB
+      - § 818 Abs. 3 BGB
+      keywords:
+      - "684"
+      - aufgedrängt
+      - Bereicherung
+      card_slugs:
+      - zr-goa-unberechtigte-goa-684-678
+    - id: p7
+      label: "Ergebnis: A kann 1.050 EUR verlangen, nicht die 80 EUR für die Zaunfarbe"
+      weight: 0.5
+      keywords:
+      - "1.050"
+      - "1050"
+      - Anspruch besteht

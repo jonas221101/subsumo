@@ -1,0 +1,25 @@
+kurs:
+  slug: or-polizei-ordnungsrecht
+  title: Polizei- und Ordnungsrecht
+  area: oeffentliches-recht
+  semester_default: 5
+  examenskurs: false
+  stand: 2026-09
+  quellen:
+  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: 'Gefahrenabwehrrecht nach dem Polizei-/Ordnungsgesetz des eigenen Bundeslands: Generalklausel,
+    Standardmassnahmen, Stoerer, Zustaendigkeit, Vollstreckung.'
+  lernziele:
+  - Rechtmaessigkeit einer Gefahrenabwehrmassnahme nach Landesrecht aufbauen
+  - Generalklausel und Standardmassnahmen des eigenen Landes mit Fundstelle zitieren
+  - Stoererauswahl und polizeilichen Notstand pruefen
+  klausurformat:
+    typ: Fortgeschrittenenklausur
+    minuten: 180
+  topic_slugs:
+  - or-sicherheitsrecht-generalklausel-standardmassnahmen
+  landesrecht_kategorien:
+  - polizei-ordnungsrecht
+  fehlende_themen:
+  - Stoererauswahl vertieft (P3)

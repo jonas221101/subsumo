@@ -1,0 +1,30 @@
+kurs:
+  slug: zr-bgb-at
+  title: BGB Allgemeiner Teil
+  area: zivilrecht
+  semester_default: 1
+  examenskurs: false
+  stand: 2026-09
+  quellen:
+  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: 'Rechtsgeschaeftslehre als Fundament des gesamten Zivilrechts: Willenserklaerung, Vertragsschluss,
+    Stellvertretung, Anfechtung, Geschaeftsfaehigkeit, Verjaehrung.'
+  lernziele:
+  - Zustandekommen und Auslegung eines Vertrags im Gutachtenstil pruefen
+  - Anfechtungsgruende sicher voneinander abgrenzen (§§ 119, 123 BGB)
+  - Stellvertretung inklusive Vertreter ohne Vertretungsmacht aufbauen
+  - Minderjaehrigenrecht (§§ 104 ff. BGB) auf Faelle anwenden
+  klausurformat:
+    typ: Anfaengerklausur
+    minuten: 120
+  topic_slugs:
+  - zr-bgb-at
+  - zr-at-auslegung
+  - zr-at-anfechtung
+  - zr-at-geschaeftsfaehigkeit
+  - zr-at-stellvertretung
+  - zr-at-vertreter-ohne-vertretungsmacht
+  - zr-at-verjaehrung
+  landesrecht_kategorien: []
+  fehlende_themen: []

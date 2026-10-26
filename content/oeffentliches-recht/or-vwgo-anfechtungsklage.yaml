@@ -16,10 +16,10 @@ cards:
   type: definition
   front: Wann ist die Anfechtungsklage die statthafte Klageart, § 42 Abs. 1 Var. 1
     VwGO?
-  back: Die Anfechtungsklage ist statthaft, wenn der Klaeger nach seinem Vorbringen
-    die vollstaendige oder teilweise Aufhebung eines belastenden Verwaltungsakts begehrt.
-    Massgeblich ist das Klagebegehren nach seinem wirklichen Sinn (§ 88 VwGO entsprechend),
-    nicht die vom Klaeger gewaehlte Bezeichnung. Ist der Verwaltungsakt bereits vollzogen
+  back: Die Anfechtungsklage ist statthaft, wenn der Kläger nach seinem Vorbringen
+    die vollständige oder teilweise Aufhebung eines belastenden Verwaltungsakts begehrt.
+    Maßgeblich ist das Klagebegehren nach seinem wirklichen Sinn (§ 88 VwGO entsprechend),
+    nicht die vom Kläger gewählte Bezeichnung. Ist der Verwaltungsakt bereits vollzogen
     oder hat er sich erledigt, kommt statt der Aufhebung nur noch eine Fortsetzungsfeststellung
     in Betracht.
   norms:
@@ -30,13 +30,13 @@ cards:
   stand: 2026-09
 - slug: or-vwgo-ak-klagebefugnis-moeglichkeitstheorie
   type: definition
-  front: 'Definiere: Klagebefugnis nach § 42 Abs. 2 VwGO (Moeglichkeitstheorie)'
+  front: 'Definiere: Klagebefugnis nach § 42 Abs. 2 VwGO (Möglichkeitstheorie)'
   back: Klagebefugt ist, wer geltend macht, durch den Verwaltungsakt in eigenen Rechten
-    verletzt zu sein. Nach der Moeglichkeitstheorie genuegt es, dass eine Rechtsverletzung
-    nach dem Klaegervorbringen moeglich erscheint - sie darf nicht offensichtlich
+    verletzt zu sein. Nach der Möglichkeitstheorie genügt es, dass eine Rechtsverletzung
+    nach dem Klägervorbringen möglich erscheint - sie darf nicht offensichtlich
     und eindeutig nach jeder Betrachtungsweise ausgeschlossen sein. Die Klagebefugnis
-    ist eine reine Zulaessigkeitsvoraussetzung; ob die Rechtsverletzung tatsaechlich
-    vorliegt, ist erst eine Frage der Begruendetheit.
+    ist eine reine Zulässigkeitsvoraussetzung; ob die Rechtsverletzung tatsächlich
+    vorliegt, ist erst eine Frage der Begründetheit.
   norms:
   - § 42 Abs. 2 VwGO
   quellen:
@@ -45,12 +45,12 @@ cards:
   stand: 2026-09
 - slug: or-vwgo-ak-adressatentheorie
   type: streitstand
-  front: Wie begruendet der Adressat eines belastenden Verwaltungsakts seine Klagebefugnis?
+  front: Wie begründet der Adressat eines belastenden Verwaltungsakts seine Klagebefugnis?
   back: 'Nach der Adressatentheorie folgt die Klagebefugnis des Adressaten eines ihn
     belastenden Verwaltungsakts bereits aus Art. 2 Abs. 1 GG (allgemeine Handlungsfreiheit):
     Jede staatliche Belastung, die sich als Eingriff in ein subjektives Recht darstellen
-    kann, beruehrt zumindest moeglicherweise dieses Auffanggrundrecht. Eine gesonderte
-    Pruefung, ob gerade die verletzte Norm auch dem Schutz des Adressaten dient, ist
+    kann, berührt zumindest möglicherweise dieses Auffanggrundrecht. Eine gesonderte
+    Prüfung, ob gerade die verletzte Norm auch dem Schutz des Adressaten dient, ist
     bei ihm anders als beim Drittbetroffenen nicht erforderlich.'
   norms:
   - § 42 Abs. 2 VwGO
@@ -61,13 +61,13 @@ cards:
 - slug: or-vwgo-ak-drittanfechtung-schutznormtheorie
   type: streitstand
   front: Wann ist ein Dritter, an den sich der Verwaltungsakt nicht richtet, klagebefugt?
-  back: Bei der Drittanfechtungsklage muss der Dritte sich auf eine Norm berufen koennen,
+  back: Bei der Drittanfechtungsklage muss der Dritte sich auf eine Norm berufen können,
     die nach der Schutznormtheorie nicht nur dem Allgemeininteresse, sondern zumindest
     auch dem Schutz seiner Individualinteressen zu dienen bestimmt ist - ermittelt
     durch Auslegung der Norm nach Wortlaut, Systematik, Entstehungsgeschichte und
     Zweck, insbesondere danach, ob sie einen abgrenzbaren Kreis Dritter von der Allgemeinheit
-    unterscheidet. Reine Reflexwirkungen einer im oeffentlichen Interesse erlassenen
-    Norm genuegen nicht.
+    unterscheidet. Reine Reflexwirkungen einer im öffentlichen Interesse erlassenen
+    Norm genügen nicht.
   norms:
   - § 42 Abs. 2 VwGO
   quellen:
@@ -76,12 +76,12 @@ cards:
 - slug: or-vwgo-ak-vorverfahren
   type: norm
   front: Was regelt § 68 Abs. 1 VwGO und wann ist ein Vorverfahren entbehrlich?
-  back: Vor Erhebung der Anfechtungsklage ist grundsaetzlich in einem Vorverfahren
-    (Widerspruchsverfahren) die Rechtmaessigkeit und Zweckmaessigkeit des Verwaltungsakts
-    nachzupruefen, § 68 Abs. 1 S. 1 VwGO. Entbehrlich ist das Vorverfahren u. a.,
+  back: Vor Erhebung der Anfechtungsklage ist grundsätzlich in einem Vorverfahren
+    (Widerspruchsverfahren) die Rechtmäßigkeit und Zweckmäßigkeit des Verwaltungsakts
+    nachzuprüfen, § 68 Abs. 1 S. 1 VwGO. Entbehrlich ist das Vorverfahren u. a.,
     wenn ein Gesetz dies bestimmt, wenn der Verwaltungsakt von einer obersten Bundes-
-    oder Landesbehoerde erlassen wurde (Ausnahme bei Erstbescheidung, § 68 Abs. 1
-    S. 2 VwGO) oder wenn ein Fall des § 75 VwGO (Untaetigkeit der Behoerde) vorliegt.
+    oder Landesbehörde erlassen wurde (Ausnahme bei Erstbescheidung, § 68 Abs. 1
+    S. 2 VwGO) oder wenn ein Fall des § 75 VwGO (Untätigkeit der Behörde) vorliegt.
   norms:
   - § 68 Abs. 1 VwGO
   - § 75 VwGO
@@ -91,11 +91,11 @@ cards:
   stand: 2026-09
 - slug: or-vwgo-ak-klagefrist
   type: norm
-  front: Welche Klagefrist gilt fuer die Anfechtungsklage nach § 74 Abs. 1 VwGO?
+  front: Welche Klagefrist gilt für die Anfechtungsklage nach § 74 Abs. 1 VwGO?
   back: Die Anfechtungsklage ist innerhalb eines Monats nach Zustellung des Widerspruchsbescheids
-    zu erheben, § 74 Abs. 1 S. 1 VwGO; ist kein Vorverfahren erforderlich, laeuft
+    zu erheben, § 74 Abs. 1 S. 1 VwGO; ist kein Vorverfahren erforderlich, läuft
     die Frist ab Bekanntgabe des Verwaltungsakts, § 74 Abs. 1 S. 2 VwGO. Die Frist
-    beginnt nur bei ordnungsgemaesser Rechtsbehelfsbelehrung, § 58 Abs. 1 VwGO - andernfalls
+    beginnt nur bei ordnungsgemäßer Rechtsbehelfsbelehrung, § 58 Abs. 1 VwGO - andernfalls
     gilt die Jahresfrist des § 58 Abs. 2 VwGO.
   norms:
   - § 74 Abs. 1 VwGO
@@ -107,7 +107,7 @@ cards:
   stand: 2026-09
 schemata:
 - slug: or-schema-vwgo-anfechtungsklage
-  title: Zulaessigkeit der Anfechtungsklage, § 42 Abs. 1 Var. 1 VwGO
+  title: Zulässigkeit der Anfechtungsklage, § 42 Abs. 1 Var. 1 VwGO
   norms:
   - § 40 Abs. 1 VwGO
   - § 42 Abs. 1 VwGO
@@ -116,26 +116,26 @@ schemata:
   - VwGO, amtliche Fassung
   - Eigenformulierung Redaktion
   steps:
-  - label: I. Eroeffnung des Verwaltungsrechtswegs, § 40 Abs. 1 VwGO
-    hinweis: Oeffentlich-rechtliche Streitigkeit nichtverfassungsrechtlicher Art ohne
-      abdraengende Sonderzuweisung.
+  - label: I. Eröffnung des Verwaltungsrechtswegs, § 40 Abs. 1 VwGO
+    hinweis: Öffentlich-rechtliche Streitigkeit nichtverfassungsrechtlicher Art ohne
+      abdrängende Sonderzuweisung.
   - label: II. Statthafte Klageart
     children:
     - label: Begehren gerichtet auf Aufhebung eines Verwaltungsakts, § 42 Abs. 1 Var.
         1 VwGO
   - label: III. Klagebefugnis, § 42 Abs. 2 VwGO
     children:
-    - label: '1. Adressat: moegliche Verletzung eigener Rechte, ggf. Art. 2 Abs. 1
+    - label: '1. Adressat: mögliche Verletzung eigener Rechte, ggf. Art. 2 Abs. 1
         GG'
-    - label: '2. Dritter: Schutznormtheorie - drittschuetzende Wirkung der verletzten
+    - label: '2. Dritter: Schutznormtheorie - drittschützende Wirkung der verletzten
         Norm'
-  - label: IV. Beteiligten- und Prozessfaehigkeit, §§ 61, 62 VwGO
+  - label: IV. Beteiligten- und Prozessfähigkeit, §§ 61, 62 VwGO
   - label: V. Vorverfahren, § 68 VwGO
-    hinweis: Entbehrlich u. a. bei Untaetigkeit (§ 75 VwGO) oder gesetzlicher Anordnung.
+    hinweis: Entbehrlich u. a. bei Untätigkeit (§ 75 VwGO) oder gesetzlicher Anordnung.
   - label: VI. Klagefrist, § 74 Abs. 1 VwGO
   - label: VII. Richtiger Beklagter, § 78 Abs. 1 VwGO
-  - label: VIII. Zustaendiges Gericht, § 45, § 52 VwGO
-  - label: IX. Allgemeines Rechtsschutzbeduerfnis
+  - label: VIII. Zuständiges Gericht, § 45, § 52 VwGO
+  - label: IX. Allgemeines Rechtsschutzbedürfnis
 faelle:
 - slug: or-fall-gewerbeuntersagung-anfechtung
   title: Die sofort vollziehbare Gewerbeuntersagung
@@ -144,26 +144,26 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - VwGO, amtliche Fassung
-  facts: Die zustaendige Behoerde untersagt dem G mit schriftlichem Bescheid die Ausuebung
+  facts: Die zuständige Behörde untersagt dem G mit schriftlichem Bescheid die Ausübung
     seines Gewerbes und ordnet die sofortige Vollziehung an. G legt form- und fristgerecht
-    Widerspruch ein; die Widerspruchsbehoerde weist den Widerspruch durch Widerspruchsbescheid
-    zurueck, der dem G am 3. Juni zugestellt wird. G moechte gegen die Untersagung
-    vorgehen und sucht am 2. Juli anwaltlichen Rat. Sein Ziel ist die vollstaendige
+    Widerspruch ein; die Widerspruchsbehörde weist den Widerspruch durch Widerspruchsbescheid
+    zurück, der dem G am 3. Juni zugestellt wird. G möchte gegen die Untersagung
+    vorgehen und sucht am 2. Juli anwaltlichen Rat. Sein Ziel ist die vollständige
     Aufhebung des Bescheids.
-  question: Wie muesste G vorgehen, und ist eine am 2. Juli erhobene Klage zulaessig?
+  question: Wie müsste G vorgehen, und ist eine am 2. Juli erhobene Klage zulässig?
   steps:
   - prompt: Welche Klageart ist statthaft?
     erwartung: Die Anfechtungsklage, § 42 Abs. 1 Var. 1 VwGO - G begehrt die Aufhebung
       eines belastenden Verwaltungsakts (Gewerbeuntersagung).
   - prompt: Ist G klagebefugt?
-    erwartung: Ja - als Adressat des belastenden Verwaltungsakts folgt die moegliche
+    erwartung: Ja - als Adressat des belastenden Verwaltungsakts folgt die mögliche
       Rechtsverletzung bereits aus Art. 2 Abs. 1 GG (Adressatentheorie).
-  - prompt: War ein Vorverfahren erforderlich und wurde es durchgefuehrt?
+  - prompt: War ein Vorverfahren erforderlich und wurde es durchgeführt?
     erwartung: Ja, § 68 Abs. 1 VwGO - G hat form- und fristgerecht Widerspruch eingelegt,
-      ueber den durch Widerspruchsbescheid entschieden wurde.
+      über den durch Widerspruchsbescheid entschieden wurde.
   - prompt: Ist die Klagefrist des § 74 Abs. 1 VwGO gewahrt?
     erwartung: Nein - die Monatsfrist ab Zustellung des Widerspruchsbescheids (3.
-      Juni) endet am 3. Juli; eine erst am 2. Juli erhobene Klage waere aber noch
+      Juni) endet am 3. Juli; eine erst am 2. Juli erhobene Klage wäre aber noch
       fristgerecht, da der 2. Juli innerhalb der Monatsfrist liegt.
   expectation:
     pruefpunkte:
@@ -181,7 +181,7 @@ faelle:
       card_slugs:
       - or-vwgo-ak-statthaftigkeit
     - id: p2
-      label: Klagebefugnis ueber die Adressatentheorie (Art. 2 Abs. 1 GG) begruendet
+      label: Klagebefugnis über die Adressatentheorie (Art. 2 Abs. 1 GG) begründet
       weight: 2.5
       required: true
       norms:
@@ -194,7 +194,7 @@ faelle:
       card_slugs:
       - or-vwgo-ak-adressatentheorie
     - id: p3
-      label: Vorverfahren nach § 68 Abs. 1 VwGO als durchgefuehrt geprueft
+      label: Vorverfahren nach § 68 Abs. 1 VwGO als durchgeführt geprüft
       weight: 1.5
       required: false
       keywords:
@@ -217,8 +217,8 @@ faelle:
       card_slugs:
       - or-vwgo-ak-klagefrist
     - id: p5
-      label: 'Ergebnis: eine am 2. Juli erhobene Klage waere zulaessig'
+      label: 'Ergebnis: eine am 2. Juli erhobene Klage wäre zulässig'
       weight: 1.0
       required: false
       keywords:
-      - zulaessig
+      - zulässig

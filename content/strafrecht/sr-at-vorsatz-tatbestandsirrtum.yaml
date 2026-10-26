@@ -15,12 +15,12 @@ cards:
 - slug: sr-vorsatz-tatbestandsirrtum-def
   type: norm
   front: 'Definiere: Tatbestandsirrtum, § 16 Abs. 1 StGB'
-  back: Ein Tatbestandsirrtum liegt vor, wenn der Taeter bei Begehung der Tat einen
-    Umstand nicht kennt, der zum gesetzlichen Tatbestand gehoert (§ 16 Abs. 1 S. 1
+  back: Ein Tatbestandsirrtum liegt vor, wenn der Täter bei Begehung der Tat einen
+    Umstand nicht kennt, der zum gesetzlichen Tatbestand gehört (§ 16 Abs. 1 S. 1
     StGB). Die Vorsatzkenntnis muss sich auf alle objektiven Tatbestandsmerkmale beziehen
-    (Kongruenzprinzip); fehlt sie, entfaellt der Vorsatz bereits auf Tatbestandsebene.
-    Eine Fahrlaessigkeitsstrafbarkeit bleibt gemaess § 16 Abs. 1 S. 2 StGB unberuehrt,
-    wenn ein entsprechendes Fahrlaessigkeitsdelikt existiert und der Irrtum vermeidbar
+    (Kongrünzprinzip); fehlt sie, entfällt der Vorsatz bereits auf Tatbestandsebene.
+    Eine Fahrlässigkeitsstrafbarkeit bleibt gemäß § 16 Abs. 1 S. 2 StGB unberührt,
+    wenn ein entsprechendes Fahrlässigkeitsdelikt existiert und der Irrtum vermeidbar
     war.
   norms:
   - § 16 Abs. 1 S. 1 StGB
@@ -32,13 +32,13 @@ cards:
 - slug: sr-vorsatz-error-in-persona
   type: definition
   front: 'Definiere: error in persona vel objecto'
-  back: 'Ein error in persona (vel objecto) liegt vor, wenn der Taeter das von ihm
+  back: 'Ein error in persona (vel objecto) liegt vor, wenn der Täter das von ihm
     anvisierte Tatobjekt zwar korrekt in seinen Willen aufnimmt und auch trifft, sich
-    aber ueber dessen Identitaet irrt. Nach h.M. ist dieser Irrtum unbeachtlich, wenn
+    aber über dessen Identität irrt. Nach h.M. ist dieser Irrtum unbeachtlich, wenn
     die verwechselten Objekte tatbestandlich gleichwertig sind: der Vorsatz bezieht
-    sich auf das tatsaechlich getroffene Objekt, sodass ein vollendetes Vorsatzdelikt
+    sich auf das tatsächlich getroffene Objekt, sodass ein vollendetes Vorsatzdelikt
     vorliegt. Sind die Objekte tatbestandlich nicht gleichwertig, liegt hinsichtlich
-    des getroffenen Objekts ein den Vorsatz ausschliessender Tatbestandsirrtum vor.'
+    des getroffenen Objekts ein den Vorsatz ausschließender Tatbestandsirrtum vor.'
   norms:
   - § 16 Abs. 1 StGB
   quellen:
@@ -48,12 +48,12 @@ cards:
   type: definition
   front: 'Definiere: aberratio ictus (Fehlgehen der Tat)'
   back: 'Bei der aberratio ictus trifft die Tathandlung infolge eines Fehlgehens ein
-    anderes als das vom Taeter anvisierte Objekt, ohne dass eine Verwechslung der
-    Identitaet vorliegt - der Ausfuehrungsverlauf weicht objektiv vom Tatplan ab.
+    anderes als das vom Täter anvisierte Objekt, ohne dass eine Verwechslung der
+    Identität vorliegt - der Ausführungsverlauf weicht objektiv vom Tatplan ab.
     Anders als der error in persona ist die aberratio ictus nach ganz h.M. stets beachtlich,
-    auch bei gleichwertigen Tatobjekten: hinsichtlich des tatsaechlich getroffenen
+    auch bei gleichwertigen Tatobjekten: hinsichtlich des tatsächlich getroffenen
     Objekts fehlt es am Vorsatz, § 16 Abs. 1 StGB; in Betracht kommen Versuch am anvisierten
-    Objekt in Tateinheit mit einem vollendeten Fahrlaessigkeitsdelikt am getroffenen
+    Objekt in Tateinheit mit einem vollendeten Fahrlässigkeitsdelikt am getroffenen
     Objekt.'
   norms:
   - § 16 Abs. 1 StGB
@@ -68,18 +68,18 @@ cards:
 
     unbeachtlich ist oder wie eine aberratio ictus behandelt werden muss,
 
-    entscheidet ueber vollendetes Vorsatzdelikt oder nur Versuch/
+    entscheidet über vollendetes Vorsatzdelikt oder nur Versuch/
 
-    Fahrlaessigkeit.
+    Fahrlässigkeit.
 
 
-    Gleichwertigkeitstheorie (ganz h.M. und Rspr.): Der Vorsatz des Taeters
+    Gleichwertigkeitstheorie (ganz h.M. und Rspr.): Der Vorsatz des Täters
 
     bezieht sich generalisierend auf das tatbestandlich umschriebene
 
     Objekt, nicht auf ein bestimmtes Individuum; bei Gleichwertigkeit der
 
-    Tatobjekte ist die Fehlvorstellung ueber die Identitaet ein
+    Tatobjekte ist die Fehlvorstellung über die Identität ein
 
     unbeachtlicher Motivirrtum. Argument: Der Tatbestand individualisiert
 
@@ -94,9 +94,9 @@ cards:
 
     ob durch Fehlgehen oder Verwechslung - ist wie eine aberratio ictus zu
 
-    behandeln (also stets Versuch/Fahrlaessigkeit). Argument: konsequente
+    behandeln (also stets Versuch/Fahrlässigkeit). Argument: konsequente
 
-    Anwendung des Kongruenzprinzips zwischen individuell gebildetem
+    Anwendung des Kongrünzprinzips zwischen individuell gebildetem
 
     Vorsatz und Erfolg.
 
@@ -105,7 +105,7 @@ cards:
 
     herrschende Ansicht darzustellen und zu vertreten; die
 
-    Konkretisierungstheorie kann als Gegenposition kurz erwaehnt werden.
+    Konkretisierungstheorie kann als Gegenposition kurz erwähnt werden.
 
     '
   norms:
@@ -118,11 +118,11 @@ cards:
   front: 'Definiere: Abgrenzung Tatbestandsirrtum (§ 16 StGB) und Verbotsirrtum (§
     17 StGB)'
   back: 'Der Tatbestandsirrtum betrifft die Unkenntnis eines zum gesetzlichen Tatbestand
-    gehoerenden Umstands und schliesst gemaess § 16 Abs. 1 S. 1 StGB bereits den Vorsatz
-    aus. Der Verbotsirrtum betrifft demgegenueber die Fehlvorstellung des Taeters,
-    sein an sich vorsaetzlich und tatbestandsmaessig verwirklichtes Verhalten sei
-    erlaubt - er kennt und will die Tatumstaende, verkennt aber deren rechtliche Bewertung
-    als verboten. Der Verbotsirrtum laesst den Vorsatz unberuehrt und wirkt sich nur
+    gehörenden Umstands und schließt gemäß § 16 Abs. 1 S. 1 StGB bereits den Vorsatz
+    aus. Der Verbotsirrtum betrifft demgegenüber die Fehlvorstellung des Täters,
+    sein an sich vorsätzlich und tatbestandsmäßig verwirklichtes Verhalten sei
+    erlaubt - er kennt und will die Tatumstände, verkennt aber deren rechtliche Bewertung
+    als verboten. Der Verbotsirrtum lässt den Vorsatz unberührt und wirkt sich nur
     bei Unvermeidbarkeit auf der Schuldebene aus (§ 17 S. 1 StGB: Schuldausschluss;
     § 17 S. 2 StGB: bei Vermeidbarkeit fakultative Strafmilderung nach § 49 Abs. 1
     StGB).'
@@ -139,15 +139,15 @@ cards:
 - slug: sr-vorsatz-erlaubnistatbestandsirrtum
   type: definition
   front: 'Definiere: Erlaubnistatbestandsirrtum'
-  back: Ein Erlaubnistatbestandsirrtum liegt vor, wenn der Taeter irrig Umstaende
-    annimmt, die - laegen sie vor - einen anerkannten Rechtfertigungsgrund begruenden
-    wuerden (z. B. Putativnotwehr). Er ist weder ein Tatbestandsirrtum i.S.d. § 16
-    StGB, da die Kenntnis der Tatumstaende vollstaendig vorliegt, noch ein reiner
-    Verbotsirrtum i.S.d. § 17 StGB, da der Taeter nicht die generelle Erlaubtheit
-    der Rechtfertigung verkennt, sondern nur deren tatsaechliche Voraussetzungen im
-    Einzelfall. Nach der (eingeschraenkten) rechtsfolgenverweisenden Schuldtheorie
-    entfaellt in entsprechender Anwendung des § 16 Abs. 1 StGB die Vorsatzschuld;
-    eine Fahrlaessigkeitsstrafbarkeit bleibt moeglich.
+  back: Ein Erlaubnistatbestandsirrtum liegt vor, wenn der Täter irrig Umstände
+    annimmt, die - lägen sie vor - einen anerkannten Rechtfertigungsgrund begründen
+    würden (z. B. Putativnotwehr). Er ist weder ein Tatbestandsirrtum i.S.d. § 16
+    StGB, da die Kenntnis der Tatumstände vollständig vorliegt, noch ein reiner
+    Verbotsirrtum i.S.d. § 17 StGB, da der Täter nicht die generelle Erlaubtheit
+    der Rechtfertigung verkennt, sondern nur deren tatsächliche Voraussetzungen im
+    Einzelfall. Nach der (eingeschränkten) rechtsfolgenverweisenden Schuldtheorie
+    entfällt in entsprechender Anwendung des § 16 Abs. 1 StGB die Vorsatzschuld;
+    eine Fahrlässigkeitsstrafbarkeit bleibt möglich.
   norms:
   - § 16 Abs. 1 StGB
   - § 17 StGB
@@ -157,11 +157,11 @@ cards:
 - slug: sr-vorsatz-umgekehrter-tatbestandsirrtum
   type: norm
   front: 'Definiere: umgekehrter Tatbestandsirrtum'
-  back: Beim umgekehrten Tatbestandsirrtum nimmt der Taeter irrig Umstaende an, die
-    - laegen sie tatsaechlich vor - den objektiven Tatbestand erfuellen wuerden, obwohl
-    sie in Wirklichkeit fehlen; er handelt subjektiv vorsaetzlich, obwohl der objektive
+  back: Beim umgekehrten Tatbestandsirrtum nimmt der Täter irrig Umstände an, die
+    - lägen sie tatsächlich vor - den objektiven Tatbestand erfüllen würden, obwohl
+    sie in Wirklichkeit fehlen; er handelt subjektiv vorsätzlich, obwohl der objektive
     Tatbestand nicht verwirklicht ist. Da der subjektive Tatentschluss vorliegt, aber
-    der objektive Tatbestand fehlt, begruendet dieser Irrtum grundsaetzlich einen
+    der objektive Tatbestand fehlt, begründet dieser Irrtum grundsätzlich einen
     (ggf. untauglichen) Versuch, §§ 22, 23 Abs. 1 StGB.
   norms:
   - § 22 StGB
@@ -171,7 +171,7 @@ cards:
   stand: 2026-09
 schemata:
 - slug: sr-schema-tatbestandsirrtum
-  title: Pruefung eines Irrtums ueber Tatumstaende, § 16 StGB
+  title: Prüfung eines Irrtums über Tatumstände, § 16 StGB
   norms:
   - § 16 Abs. 1 StGB
   - § 17 StGB
@@ -181,7 +181,7 @@ schemata:
   steps:
   - label: 'I. Feststellung: worauf bezieht sich die Fehlvorstellung?'
     children:
-    - label: 1. Umstand gehoert zum gesetzlichen Tatbestand -> weiter mit II.
+    - label: 1. Umstand gehört zum gesetzlichen Tatbestand -> weiter mit II.
     - label: 2. Umstand betrifft nur die rechtliche Bewertung/Erlaubtheit -> Verbotsirrtum,
         § 17 StGB
   - label: II. Tatbestandsirrtum, § 16 Abs. 1 StGB
@@ -195,8 +195,8 @@ schemata:
       children:
       - label: a) Vorsatz bzgl. anvisiertem Objekt (-) hinsichtlich Vollendung
       - label: b) Versuch am anvisierten Objekt, §§ 22, 23 StGB
-      - label: c) ggf. vollendetes Fahrlaessigkeitsdelikt am getroffenen Objekt
-    - label: '3. Rechtsfolge: Vorsatzausschluss, ggf. Fahrlaessigkeitsstrafbarkeit,
+      - label: c) ggf. vollendetes Fahrlässigkeitsdelikt am getroffenen Objekt
+    - label: '3. Rechtsfolge: Vorsatzausschluss, ggf. Fahrlässigkeitsstrafbarkeit,
         § 16 Abs. 1 S. 1, S. 2 StGB'
   - label: 'III. Sonderfall: Erlaubnistatbestandsirrtum (entspr. Anwendung § 16 Abs.
       1 StGB nach rechtsfolgenverweisender Schuldtheorie)'
@@ -209,33 +209,33 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
-  facts: A hasst B und will ihn toeten. A zielt mit einer geladenen Schusswaffe gezielt
+  facts: A hasst B und will ihn töten. A zielt mit einer geladenen Schusswaffe gezielt
     auf B, der etwa zehn Meter entfernt steht. Wegen seiner Aufregung und mangelnder
-    Schiessfertigkeit verfehlt A sein Ziel deutlich; die Kugel trifft stattdessen
-    den neben B stehenden, von A nicht wahrgenommenen C toedlich. B bleibt unverletzt.
+    Schießfertigkeit verfehlt A sein Ziel deutlich; die Kugel trifft stattdessen
+    den neben B stehenden, von A nicht wahrgenommenen C tödlich. B bleibt unverletzt.
   question: Wie hat sich A hinsichtlich des B und hinsichtlich des C strafbar gemacht?
   steps:
-  - prompt: Hat A hinsichtlich des B ein vollendetes Toetungsdelikt begangen?
-    erwartung: Nein - B wurde nicht getroffen, es fehlt am tatbestandsmaessigen Erfolg;
+  - prompt: Hat A hinsichtlich des B ein vollendetes Tötungsdelikt begangen?
+    erwartung: Nein - B wurde nicht getroffen, es fehlt am tatbestandsmäßigen Erfolg;
       in Betracht kommt hinsichtlich B nur ein versuchter Totschlag, §§ 212, 22, 23
       Abs. 1 StGB.
   - prompt: Bezieht sich der Vorsatz des A auch auf den Tod des C?
     erwartung: Nein - A hatte hinsichtlich C weder Wissen noch Wollen der Tatbestandsverwirklichung.
       Es handelt sich nicht um einen error in persona (keine Verwechslung), sondern
-      um eine aberratio ictus, da die Ausfuehrung objektiv vom Tatplan abwich.
+      um eine aberratio ictus, da die Ausführung objektiv vom Tatplan abwich.
   - prompt: Wie wird die aberratio ictus dogmatisch behandelt?
     erwartung: 'Nach ganz h.M. ist die aberratio ictus - anders als der error in persona
       bei gleichwertigen Objekten - stets beachtlich: der Vorsatz erfasst nur das
       konkret anvisierte Objekt (B), sodass hinsichtlich C ein Tatbestandsirrtum vorliegt
-      und der Vorsatz insoweit entfaellt, § 16 Abs. 1 S. 1 StGB.'
-  - prompt: Welche Strafbarkeiten kommen fuer A in Betracht?
+      und der Vorsatz insoweit entfällt, § 16 Abs. 1 S. 1 StGB.'
+  - prompt: Welche Strafbarkeiten kommen für A in Betracht?
     erwartung: Versuchter Totschlag zum Nachteil des B (§§ 212, 22, 23 Abs. 1 StGB)
-      in Tateinheit, § 52 StGB, mit vollendeter fahrlaessiger Toetung des C (§ 222
+      in Tateinheit, § 52 StGB, mit vollendeter fahrlässiger Tötung des C (§ 222
       StGB), da beim gezielten Schuss auf einen Menschen in Anwesenheit Dritter eine
       Sorgfaltspflichtverletzung und die Vorhersehbarkeit des Erfolgs zu bejahen sind.
   - prompt: Ergebnis?
     erwartung: A hat sich wegen versuchten Totschlags (§§ 212, 22, 23 Abs. 1 StGB)
-      an B in Tateinheit mit fahrlaessiger Toetung (§ 222 StGB) des C strafbar gemacht.
+      an B in Tateinheit mit fahrlässiger Tötung (§ 222 StGB) des C strafbar gemacht.
   expectation:
     pruefpunkte:
     - id: p1
@@ -252,7 +252,7 @@ faelle:
       card_slugs:
       - sr-vorsatz-aberratio-ictus
     - id: p2
-      label: Aberratio ictus (kein error in persona) zutreffend erkannt und begruendet
+      label: Aberratio ictus (kein error in persona) zutreffend erkannt und begründet
       weight: 2.5
       required: true
       keywords:
@@ -271,7 +271,7 @@ faelle:
       card_slugs:
       - sr-vorsatz-tatbestandsirrtum-def
     - id: p4
-      label: Pruefung einer fahrlaessigen Toetung des C, § 222 StGB, mit Sorgfaltspflichtverletzung
+      label: Prüfung einer fahrlässigen Tötung des C, § 222 StGB, mit Sorgfaltspflichtverletzung
         und Vorhersehbarkeit
       weight: 2.5
       required: true
@@ -283,7 +283,7 @@ faelle:
       card_slugs:
       - sr-vorsatz-aberratio-ictus
     - id: p5
-      label: Tateinheit zwischen Versuch (B) und vollendeter Fahrlaessigkeitstat (C),
+      label: Tateinheit zwischen Versuch (B) und vollendeter Fahrlässigkeitstat (C),
         § 52 StGB
       weight: 1.5
       required: false

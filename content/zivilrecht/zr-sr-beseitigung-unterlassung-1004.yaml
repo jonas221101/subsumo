@@ -1,0 +1,245 @@
+topic:
+  slug: zr-sr-beseitigung-unterlassung-1004
+  area: zivilrecht
+  title: "Sachenrecht: Beseitigungs- und Unterlassungsanspruch, § 1004 BGB"
+  parent: zr-sachenrecht-eigentumsherausgabe-985
+  relevance: 4
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-fable-5-1
+    status: in-pruefung
+    normzitate_geprueft: true
+cards:
+- slug: zr-1004-voraussetzungen-norm
+  type: norm
+  front: "Welche Ansprüche gewährt § 1004 Abs. 1 BGB, und unter welchen Voraussetzungen?"
+  back: "§ 1004 Abs. 1 S. 1 BGB gibt dem Eigentümer einen Anspruch auf Beseitigung, wenn sein Eigentum in anderer Weise als durch Entziehung oder Vorenthaltung des Besitzes beeinträchtigt wird. Sind weitere Beeinträchtigungen zu besorgen, kann er nach § 1004 Abs. 1 S. 2 BGB auf Unterlassung klagen. Voraussetzungen sind: (1) Eigentum des Anspruchstellers, (2) eine Beeinträchtigung des Eigentums, die nicht in Besitzentziehung oder -vorenthaltung besteht (insoweit gilt § 985 BGB), (3) der Anspruchsgegner ist Störer, (4) beim Unterlassungsanspruch die Gefahr weiterer Beeinträchtigungen (Wiederholungs- oder Erstbegehungsgefahr) und (5) keine Duldungspflicht des Eigentümers nach § 1004 Abs. 2 BGB. Verschulden ist nicht erforderlich; der Anspruch knüpft allein an die objektiv rechtswidrige Beeinträchtigung an."
+  norms:
+  - § 1004 Abs. 1 S. 1 BGB
+  - § 1004 Abs. 1 S. 2 BGB
+  - § 1004 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-1004-beeintraechtigung-begriff
+  type: definition
+  front: "Definiere: Beeinträchtigung des Eigentums im Sinne des § 1004 Abs. 1 BGB"
+  back: "Beeinträchtigung ist jeder dem Inhalt des Eigentums (§ 903 BGB) widersprechende Zustand oder Eingriff, der nicht in der Entziehung oder Vorenthaltung des Besitzes besteht. Erfasst sind tatsächliche Einwirkungen auf die Sache (Zuführung von Stoffen, Lärm, Erschütterungen, Überbau von Ästen), die Benutzung der Sache ohne Besitzentzug (Abstellen von Fahrzeugen auf fremdem Grund, Betreten) sowie rechtliche Beeinträchtigungen (unrichtige Grundbucheintragung, für die § 894 BGB als Sonderregel vorgeht). Die Beeinträchtigung muss im Zeitpunkt der Geltendmachung noch andauern (Beseitigung) oder drohen (Unterlassung); eine abgeschlossene Beeinträchtigung, deren Folgen nur noch als Schaden fortwirken, begründet keinen Anspruch aus § 1004 BGB, sondern allenfalls Schadensersatz nach § 823 BGB. Rein ideelle Beeinträchtigungen (störender Anblick) genügen nach h.M. nicht."
+  norms:
+  - § 1004 Abs. 1 S. 1 BGB
+  - § 903 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-1004-stoererbegriff
+  type: definition
+  front: "Wer ist Störer im Sinne des § 1004 BGB? Unterscheide Handlungs- und Zustandsstörer."
+  back: "Handlungsstörer ist, wer die Beeinträchtigung durch sein Verhalten, sei es Tun oder pflichtwidriges Unterlassen, adäquat verursacht hat; unmittelbarer Handlungsstörer ist der Verursacher selbst, mittelbarer Handlungsstörer, wer die Beeinträchtigung durch einen Dritten adäquat verursacht, etwa der Bauherr für die Störungen seines Bauunternehmers. Zustandsstörer ist, wer die Beeinträchtigung zwar nicht selbst verursacht hat, aber die Sache, von der die Störung ausgeht, in seiner tatsächlichen oder rechtlichen Verfügungsmacht hat und die Störung deshalb beseitigen könnte. Nach der Rechtsprechung genügt Eigentum oder Besitz allein nicht; die Beeinträchtigung muss dem Zustandsstörer zurechenbar sein, das heißt zumindest mittelbar auf seinen Willen zurückgehen, etwa weil er den störenden Zustand geschaffen, aufrechterhalten oder eine Gefahrenquelle nicht gesichert hat. Rein durch Naturkräfte verursachte Zustände (umgestürzter gesunder Baum bei einem außergewöhnlichen Sturm) werden dem Eigentümer nicht zugerechnet. Mehrere Störer haften nebeneinander."
+  norms:
+  - § 1004 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-1004-umfang-beseitigung-streit
+  type: streitstand
+  front: "Wie weit reicht der Beseitigungsanspruch aus § 1004 Abs. 1 S. 1 BGB - Abgrenzung zum Schadensersatz"
+  back: "Einigkeit besteht, dass der verschuldensunabhängige Beseitigungsanspruch keine Schadensersatzhaftung durch die Hintertür begründen darf; die Abgrenzung im Einzelnen ist umstritten. Nach der Rechtsprechung (BGH) und herrschenden Meinung schuldet der Störer die Beseitigung der Störungsquelle und darüber hinaus die Beseitigung aller fortdauernden Beeinträchtigungen, die von ihr ausgehen und den Eigentümer noch im Gebrauch seiner Sache hindern - etwa das Entfernen von in den Boden gelangtem Öl einschließlich des kontaminierten Erdreichs, weil die Kontamination selbst die fortdauernde Beeinträchtigung ist. Nicht geschuldet ist dagegen der Ausgleich von Folgeschäden, die durch die Beeinträchtigung an anderen Rechtsgütern oder als Vermögensnachteil entstanden sind (abgestorbene Pflanzen, Nutzungsausfall); diese sind nur bei Verschulden nach § 823 Abs. 1 BGB ersatzfähig. Eine engere Literaturauffassung beschränkt den Anspruch auf die Beseitigung der Störungsquelle und ordnet jede Wiederherstellung des früheren Zustands dem Schadensersatzrecht zu, weil sonst die Verschuldensabhängigkeit des § 823 BGB unterlaufen werde. Die Rechtsprechung hält dem entgegen, dass der Eigentümer nach § 903 BGB einen Zustand verlangen könne, in dem seine Sache nicht mehr beeinträchtigt ist, und dass § 1004 BGB gerade nicht an Verschulden anknüpft."
+  norms:
+  - § 1004 Abs. 1 S. 1 BGB
+  - § 823 Abs. 1 BGB
+  - § 903 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-1004-wiederholungsgefahr
+  type: definition
+  front: "Was bedeutet Wiederholungsgefahr beim Unterlassungsanspruch nach § 1004 Abs. 1 S. 2 BGB, und wann liegt Erstbegehungsgefahr vor?"
+  back: "Der Unterlassungsanspruch setzt voraus, dass weitere Beeinträchtigungen zu besorgen sind. Wiederholungsgefahr ist die auf Tatsachen gegründete objektive ernsthafte Besorgnis, dass es zu einer erneuten Beeinträchtigung kommt. Ist bereits eine Beeinträchtigung erfolgt, wird die Wiederholungsgefahr tatsächlich vermutet; der Störer muss die Vermutung widerlegen. Die bloße Erklärung, künftig störe man nicht mehr, oder die zwischenzeitliche Einstellung der Störung genügt dafür in der Regel nicht, weil sie jederzeit widerrufen werden kann. Ausgeräumt wird die Wiederholungsgefahr regelmäßig nur durch eine ernsthafte, strafbewehrte Unterlassungserklärung oder durch eine dauerhafte Änderung der tatsächlichen Verhältnisse, die eine Wiederholung ausschließt. Droht eine Beeinträchtigung erstmals, gewährt die h.M. in Fortbildung des § 1004 Abs. 1 S. 2 BGB einen vorbeugenden Unterlassungsanspruch; erforderlich ist dann eine Erstbegehungsgefahr, also konkrete Anhaltspunkte dafür, dass die Beeinträchtigung ernsthaft und unmittelbar bevorsteht."
+  norms:
+  - § 1004 Abs. 1 S. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-1004-duldungspflicht-abs-2
+  type: definition
+  front: "Woraus können sich Duldungspflichten nach § 1004 Abs. 2 BGB ergeben?"
+  back: "Nach § 1004 Abs. 2 BGB ist der Anspruch ausgeschlossen, wenn der Eigentümer zur Duldung verpflichtet ist. Die Duldungspflicht ist Einwendung, nicht Tatbestandsmerkmal; sie schließt die Rechtswidrigkeit der Beeinträchtigung aus. Sie kann sich ergeben (1) aus Gesetz, insbesondere aus dem Nachbarrecht: § 906 Abs. 1 BGB (unwesentliche Immissionen), § 906 Abs. 2 S. 1 BGB (wesentliche, aber ortsübliche und nicht mit zumutbaren Maßnahmen verhinderbare Immissionen, dann Ausgleichsanspruch nach § 906 Abs. 2 S. 2 BGB), § 912 BGB (entschuldigter Überbau), § 917 BGB (Notweg), außerdem aus §§ 227-229 BGB und öffentlich-rechtlichen Vorschriften; (2) aus Rechtsgeschäft, etwa einer Grunddienstbarkeit (§ 1018 BGB), einem Nießbrauch oder einer schuldrechtlichen Gestattung wie Miete, die allerdings nur zwischen den Vertragsparteien wirkt; (3) aus dem nachbarlichen Gemeinschaftsverhältnis nach § 242 BGB in engen Ausnahmefällen. Die Beweislast für die Duldungspflicht trägt der Störer."
+  norms:
+  - § 1004 Abs. 2 BGB
+  - § 906 Abs. 1 BGB
+  - § 906 Abs. 2 BGB
+  - § 912 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-1004-quasinegatorischer-anspruch
+  type: definition
+  front: "Was ist der quasinegatorische Beseitigungs- und Unterlassungsanspruch?"
+  back: "§ 1004 BGB schützt seinem Wortlaut nach nur das Eigentum. Nach allgemeiner Ansicht ist die Vorschrift entsprechend auf alle anderen absoluten Rechte und deliktisch geschützten Rechtsgüter anzuwenden, weil der vorbeugende Schutz nicht schwächer sein kann als der nachträgliche Schadensersatz. Anspruchsgrundlage ist dann § 1004 Abs. 1 BGB analog iVm § 823 Abs. 1 BGB (Leben, Körper, Gesundheit, Freiheit, sonstige Rechte wie das allgemeine Persönlichkeitsrecht oder das Recht am eingerichteten und ausgeübten Gewerbebetrieb) oder iVm § 823 Abs. 2 BGB (Schutzgesetze) beziehungsweise § 826 BGB. Die Voraussetzungen entsprechen dem negatorischen Anspruch: rechtswidrige Beeinträchtigung, Störereigenschaft, Wiederholungs- oder Erstbegehungsgefahr, keine Duldungspflicht; Verschulden ist nicht erforderlich. Für den Besitz enthält § 862 BGB eine eigene Regelung, die neben § 1004 BGB anwendbar ist."
+  norms:
+  - § 1004 Abs. 1 BGB
+  - § 823 Abs. 1 BGB
+  - § 823 Abs. 2 BGB
+  - § 862 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-1004-verhaeltnis-985-823-906
+  type: definition
+  front: "Wie verhält sich § 1004 BGB zu § 985 BGB, § 823 BGB und § 906 BGB?"
+  back: "§ 985 BGB und § 1004 BGB schließen einander aus: Besteht die Beeinträchtigung in der Entziehung oder Vorenthaltung des Besitzes, gilt allein der Herausgabeanspruch; alle anderen Beeinträchtigungen fallen unter § 1004 BGB. § 823 Abs. 1 BGB steht selbständig neben § 1004 BGB, verlangt aber Verschulden und ist auf Ersatz des Schadens gerichtet, während § 1004 BGB verschuldensunabhängig auf Beseitigung und Unterlassung zielt; beide Ansprüche können nebeneinander bestehen. § 906 BGB ist keine eigene Anspruchsgrundlage, sondern konkretisiert die Duldungspflicht nach § 1004 Abs. 2 BGB für Immissionen von einem Nachbargrundstück: Unwesentliche Einwirkungen sind zu dulden (§ 906 Abs. 1 S. 1 BGB), wesentliche nur, wenn sie ortsüblich sind und nicht durch wirtschaftlich zumutbare Maßnahmen verhindert werden können (§ 906 Abs. 2 S. 1 BGB); in diesem Fall besteht ein angemessener Ausgleichsanspruch in Geld (§ 906 Abs. 2 S. 2 BGB). Grobkörperliche Einwirkungen fallen nicht unter § 906 BGB und sind nie zu dulden."
+  norms:
+  - § 1004 Abs. 1 BGB
+  - § 985 BGB
+  - § 823 Abs. 1 BGB
+  - § 906 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-1004-beseitigung-unterlassung
+  title: "Beseitigungs- und Unterlassungsanspruch, § 1004 Abs. 1 BGB"
+  norms:
+  - § 1004 Abs. 1 BGB
+  - § 1004 Abs. 2 BGB
+  - § 906 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: "I. Eigentum des Anspruchstellers"
+    hinweis: "Bei anderen absoluten Rechten: § 1004 Abs. 1 BGB analog iVm § 823 Abs. 1 BGB (quasinegatorischer Anspruch)."
+  - label: "II. Beeinträchtigung des Eigentums"
+    children:
+    - label: "1. Dem Inhalt des Eigentums widersprechender Zustand oder Eingriff"
+    - label: "2. Nicht Entziehung oder Vorenthaltung des Besitzes (sonst § 985 BGB)"
+    - label: "3. Beseitigung: Beeinträchtigung dauert an; Unterlassung: weitere Beeinträchtigung droht"
+  - label: "III. Anspruchsgegner ist Störer"
+    children:
+    - label: "1. Handlungsstörer (unmittelbar oder mittelbar durch adäquat verursachtes Verhalten)"
+    - label: "2. Zustandsstörer (Verfügungsmacht über die störende Sache und Zurechenbarkeit)"
+  - label: "IV. Beim Unterlassungsanspruch: Wiederholungsgefahr, § 1004 Abs. 1 S. 2 BGB"
+    hinweis: "Nach erfolgter Störung vermutet; bei drohender Erststörung Erstbegehungsgefahr (vorbeugender Unterlassungsanspruch)."
+  - label: "V. Keine Duldungspflicht, § 1004 Abs. 2 BGB"
+    children:
+    - label: "1. Aus Gesetz, insbesondere § 906 BGB, § 912 BGB, § 917 BGB"
+    - label: "2. Aus Rechtsgeschäft (dingliches Recht oder schuldrechtliche Gestattung)"
+    - label: "3. Aus dem nachbarlichen Gemeinschaftsverhältnis, § 242 BGB (Ausnahme)"
+  - label: "VI. Rechtsfolge"
+    children:
+    - label: "1. Beseitigung der Störungsquelle und der fortdauernden Beeinträchtigung (nicht: Folgeschäden)"
+    - label: "2. Unterlassung künftiger Beeinträchtigungen"
+faelle:
+- slug: zr-fall-oeltank-und-lieferwagen
+  title: "Öltank und Lieferwagen"
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: "A ist Eigentümer eines Wohngrundstücks mit Garten. Auf dem Nachbargrundstück betreibt B eine Kfz-Werkstatt. Der von B vor Jahren selbst installierte Heizöltank des B wird undicht; Öl sickert über mehrere Wochen in das Erdreich und gelangt in den Garten des A, wo eine Bodenschicht von etwa 20 Quadratmetern kontaminiert wird und mehrere Sträucher absterben. B beruft sich darauf, er habe von dem Leck nichts bemerkt und ihn treffe kein Verschulden. Außerdem stellt der Lieferfahrer des B, der Angestellte C, den Lieferwagen der Werkstatt seit Monaten mehrmals wöchentlich für jeweils einige Stunden in der Grundstückseinfahrt des A ab, weil auf dem Werkstattgelände kein Platz ist; B weiß das und duldet es. Auf die Beschwerde des A erklärt B mündlich, das werde nicht wieder vorkommen; in der Folgewoche steht der Lieferwagen erneut in der Einfahrt. A verlangt von B, das kontaminierte Erdreich auszutauschen, die abgestorbenen Sträucher zu ersetzen und dafür zu sorgen, dass der Lieferwagen nicht mehr in seiner Einfahrt abgestellt wird."
+  question: "Welche Ansprüche hat A gegen B aus § 1004 Abs. 1 BGB?"
+  steps:
+  - prompt: "Liegt hinsichtlich des Öls eine Beeinträchtigung des Eigentums vor, und ist B Störer?"
+    erwartung: "Die Kontamination des Bodens ist eine fortdauernde Beeinträchtigung des Grundstückseigentums, die nicht in Besitzentziehung besteht. B ist Zustandsstörer, weil das Öl von einer in seiner Verfügungsmacht stehenden Anlage ausgeht, deren Zustand ihm zurechenbar ist (selbst installierter Tank, Gefahrenquelle nicht gesichert); zugleich ist er Handlungsstörer durch den Betrieb der Anlage. Auf Verschulden kommt es nicht an, sodass der Einwand des B unerheblich ist."
+  - prompt: "Kann A den Austausch des Erdreichs und den Ersatz der Sträucher nach § 1004 Abs. 1 S. 1 BGB verlangen?"
+    erwartung: "Nach der Rechtsprechung umfasst der Beseitigungsanspruch das Entfernen des Öls einschließlich des kontaminierten Erdreichs, weil die Kontamination die fortdauernde Beeinträchtigung selbst ist. Die abgestorbenen Sträucher sind dagegen ein Folgeschaden; ihr Ersatz ist nur bei Verschulden über § 823 Abs. 1 BGB zu erreichen, nicht über § 1004 BGB. Eine Duldungspflicht nach § 906 BGB besteht nicht, weil das Einsickern von Öl keine ortsübliche und unwesentliche Einwirkung ist."
+  - prompt: "Prüfe den Unterlassungsanspruch wegen des Lieferwagens."
+    erwartung: "Das Abstellen des Lieferwagens in der Einfahrt ist eine Eigentumsbeeinträchtigung durch Benutzung ohne Besitzentzug. B ist mittelbarer Handlungsstörer, weil er das Verhalten seines weisungsgebundenen Fahrers kennt, duldet und aufgrund seiner Weisungsbefugnis unterbinden könnte. Die Wiederholungsgefahr wird durch die bereits erfolgten Störungen vermutet; die bloße mündliche Zusage des B räumt sie nicht aus, was die erneute Störung bestätigt. Eine Duldungspflicht besteht nicht. A kann von B Unterlassung verlangen (§ 1004 Abs. 1 S. 2 BGB)."
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: "Anspruchsgrundlage § 1004 Abs. 1 S. 1 BGB (Beseitigung) und § 1004 Abs. 1 S. 2 BGB (Unterlassung) unterschieden, Eigentum des A festgestellt"
+      weight: 1.0
+      required: true
+      norms:
+      - § 1004 Abs. 1 S. 1 BGB
+      - § 1004 Abs. 1 S. 2 BGB
+      keywords:
+      - "1004"
+      - Beseitigung
+      - Unterlassung
+      card_slugs:
+      - zr-1004-voraussetzungen-norm
+    - id: p2
+      label: "Ölkontamination als fortdauernde Eigentumsbeeinträchtigung eingeordnet, B als Zustands- und Handlungsstörer mit Zurechnung begründet, Verschulden für unerheblich erklärt"
+      weight: 2.0
+      required: true
+      norms:
+      - § 1004 Abs. 1 S. 1 BGB
+      keywords:
+      - Zustandsstörer
+      - Störer
+      - Verschulden
+      - Zurechnung
+      card_slugs:
+      - zr-1004-stoererbegriff
+      - zr-1004-beeintraechtigung-begriff
+    - id: p3
+      label: "Umfang der Beseitigung: Austausch des kontaminierten Erdreichs geschuldet, Ersatz der Sträucher als Folgeschaden nur über § 823 Abs. 1 BGB - Streitstand angesprochen"
+      weight: 2.5
+      required: true
+      norms:
+      - § 1004 Abs. 1 S. 1 BGB
+      - § 823 Abs. 1 BGB
+      keywords:
+      - Folgeschaden
+      - Erdreich
+      - Schadensersatz
+      - "823"
+      card_slugs:
+      - zr-1004-umfang-beseitigung-streit
+      - zr-1004-verhaeltnis-985-823-906
+    - id: p4
+      label: "Keine Duldungspflicht nach § 1004 Abs. 2 BGB iVm § 906 BGB für das Öl (weder unwesentlich noch ortsüblich)"
+      weight: 1.0
+      norms:
+      - § 1004 Abs. 2 BGB
+      - § 906 Abs. 1 BGB
+      - § 906 Abs. 2 BGB
+      keywords:
+      - "906"
+      - Duldung
+      - ortsüblich
+      card_slugs:
+      - zr-1004-duldungspflicht-abs-2
+    - id: p5
+      label: "Lieferwagen: Beeinträchtigung durch Benutzung, B als mittelbarer Handlungsstörer wegen Kenntnis, Duldung und Weisungsbefugnis gegenüber C"
+      weight: 2.0
+      required: true
+      norms:
+      - § 1004 Abs. 1 S. 2 BGB
+      keywords:
+      - mittelbarer Störer
+      - Handlungsstörer
+      - Weisung
+      - Einfahrt
+      card_slugs:
+      - zr-1004-stoererbegriff
+    - id: p6
+      label: "Wiederholungsgefahr wegen erfolgter Störungen vermutet; mündliche Zusage räumt sie nicht aus (keine strafbewehrte Unterlassungserklärung)"
+      weight: 1.5
+      required: true
+      norms:
+      - § 1004 Abs. 1 S. 2 BGB
+      keywords:
+      - Wiederholungsgefahr
+      - vermutet
+      - Unterlassungserklärung
+      card_slugs:
+      - zr-1004-wiederholungsgefahr
+    - id: p7
+      label: "Ergebnis: Beseitigung (Erdreich) und Unterlassung (Lieferwagen) bestehen, Ersatz der Sträucher nicht aus § 1004 BGB"
+      weight: 1.0
+      keywords:
+      - Anspruch besteht
+      - Sträucher
+      - nicht aus § 1004

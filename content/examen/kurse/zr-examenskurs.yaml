@@ -1,0 +1,47 @@
+kurs:
+  slug: zr-examenskurs
+  title: Examenskurs Zivilrecht
+  area: zivilrecht
+  semester_default: 7
+  examenskurs: true
+  stand: 2026-09
+  quellen:
+  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: Gesamtwiederholung des zivilrechtlichen Pflichtstoffs auf Examensniveau - in der Reihenfolge,
+    in der die Anspruchspruefung sie braucht.
+  lernziele:
+  - Alle zivilrechtlichen Anspruchsgrundlagen des Pflichtstoffs sicher benennen und aufbauen
+  - Fuenfstuendige Examensklausuren mit mehreren Anspruchsverhaeltnissen strukturieren
+  klausurformat:
+    typ: Examensklausur
+    minuten: 300
+  topic_slugs:
+  - zr-bgb-at
+  - zr-at-auslegung
+  - zr-at-anfechtung
+  - zr-at-geschaeftsfaehigkeit
+  - zr-at-stellvertretung
+  - zr-at-vertreter-ohne-vertretungsmacht
+  - zr-at-verjaehrung
+  - zr-schuldrecht-at-unmoeglichkeit
+  - zr-su-verzug
+  - zr-su-schadensersatz-statt-der-leistung
+  - zr-schuldrecht-at-ruecktritt
+  - zr-schuldrecht-at-cic
+  - zr-schuldrecht-at-agb-kontrolle
+  - zr-kaufrecht-maengelgewaehrleistung
+  - zr-deliktsrecht-823
+  - zr-deliktsrecht-823-abs2
+  - zr-deliktsrecht-826
+  - zr-bereicherungsrecht-leistungskondiktion
+  - zr-sachenrecht-eigentumsherausgabe-985
+  - zr-sr-eigentumserwerb-929
+  - zr-sr-gutglaeubiger-erwerb-932
+  - zr-sr-sicherungsuebereignung
+  landesrecht_kategorien: []
+  fehlende_themen:
+  - Handels- und Gesellschaftsrecht (P3)
+  - Arbeitsrecht (P3)
+  - Familien- und Erbrecht Grundzuege (P3)
+  - ZPO-Grundzuege (P3)

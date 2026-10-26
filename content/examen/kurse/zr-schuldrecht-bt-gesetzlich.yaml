@@ -1,0 +1,27 @@
+kurs:
+  slug: zr-schuldrecht-bt-gesetzlich
+  title: 'Schuldrecht BT II: Gesetzliche Schuldverhaeltnisse'
+  area: zivilrecht
+  semester_default: 4
+  examenskurs: false
+  stand: 2026-09
+  quellen:
+  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: Deliktsrecht (§§ 823 ff. BGB) und Bereicherungsrecht (§§ 812 ff. BGB) - die beiden Anspruchsgruppen,
+    die in fast jeder Zivilrechtsklausur auftauchen.
+  lernziele:
+  - § 823 Abs. 1, Abs. 2 und § 826 BGB als eigenstaendige Anspruchsgrundlagen pruefen
+  - Leistungskondiktion vom Anspruch aus Vertrag abgrenzen (Vorrang der Leistungsbeziehung)
+  klausurformat:
+    typ: Fortgeschrittenenklausur
+    minuten: 180
+  topic_slugs:
+  - zr-deliktsrecht-823
+  - zr-deliktsrecht-823-abs2
+  - zr-deliktsrecht-826
+  - zr-bereicherungsrecht-leistungskondiktion
+  landesrecht_kategorien: []
+  fehlende_themen:
+  - Geschaeftsfuehrung ohne Auftrag (P3)
+  - Nichtleistungskondiktion (P3)

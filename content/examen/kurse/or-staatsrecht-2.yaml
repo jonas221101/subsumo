@@ -1,0 +1,31 @@
+kurs:
+  slug: or-staatsrecht-2
+  title: 'Staatsrecht II: Grundrechte'
+  area: oeffentliches-recht
+  semester_default: 2
+  examenskurs: false
+  stand: 2026-09
+  quellen:
+  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: Grundrechtspruefung (Schutzbereich, Eingriff, Rechtfertigung) an den examensrelevantesten
+    Grundrechten, mit Verfassungsbeschwerde als Einkleidung.
+  lernziele:
+  - Dreistufige Grundrechtspruefung sicher schreiben
+  - Verfassungsbeschwerde zum BVerfG und - wo vorhanden - zum Landesverfassungsgericht aufbauen
+  - Spezielle Grundrechte (Art. 5, 8, 12, 14 GG) mit ihren Schrankensystemen abgrenzen
+  klausurformat:
+    typ: Anfaengerklausur
+    minuten: 120
+  topic_slugs:
+  - or-grundrechte
+  - or-allgemeine-handlungsfreiheit
+  - or-gleichheitssatz
+  - or-meinungsfreiheit
+  - or-versammlungsfreiheit
+  - or-berufsfreiheit
+  - or-eigentumsgarantie
+  landesrecht_kategorien:
+  - landesrecht-allgemein
+  fehlende_themen:
+  - Art. 4 GG Glaubensfreiheit (P3)

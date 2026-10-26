@@ -79,5 +79,5 @@ class CollectorAgent:
             raise CollectorError(f"Kein gueltiges YAML in der Antwort: {exc}") from exc
 
         if not isinstance(draft, dict) or "topic" not in draft:
-            raise CollectorError("Antwort enthaelt keinen 'topic'-Block")
+            raise CollectorError("Antwort enthält keinen 'topic'-Block")
         return draft

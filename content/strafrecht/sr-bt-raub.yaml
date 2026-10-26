@@ -16,10 +16,10 @@ cards:
   type: definition
   front: 'Definiere: Raub, Grundtatbestand § 249 Abs. 1 StGB'
   back: 'Raub begeht, wer mit Gewalt gegen eine Person oder unter Anwendung von Drohungen
-    mit gegenwaertiger Gefahr fuer Leib oder Leben eine fremde bewegliche Sache einem
+    mit gegenwärtiger Gefahr für Leib oder Leben eine fremde bewegliche Sache einem
     anderen in der Absicht wegnimmt, die Sache sich oder einem Dritten rechtswidrig
-    zuzueignen. Der Raub ist damit ein qualifizierter Diebstahl: Zum Grundtatbestand
-    des § 242 StGB treten die Noetigungsmittel und der finale Zusammenhang zur Wegnahme
+    zuzüignen. Der Raub ist damit ein qualifizierter Diebstahl: Zum Grundtatbestand
+    des § 242 StGB treten die Nötigungsmittel und der finale Zusammenhang zur Wegnahme
     hinzu.'
   norms:
   - § 249 Abs. 1 StGB
@@ -31,11 +31,11 @@ cards:
 - slug: sr-raub-noetigungsmittel-gewalt
   type: definition
   front: 'Definiere: Gewalt gegen eine Person i.S.d. § 249 StGB'
-  back: Gewalt gegen eine Person ist der durch koerperliche Kraftentfaltung vermittelte,
-    gegen den Koerper des Opfers gerichtete physische Zwang, der geeignet ist, geleisteten
-    oder erwarteten Widerstand zu ueberwinden. Nicht erforderlich ist eine koerperliche
-    Misshandlung - ausreichend ist jede koerperlich vermittelte Zwangseinwirkung,
-    etwa das Festhalten oder Wegstossen des Opfers.
+  back: Gewalt gegen eine Person ist der durch körperliche Kraftentfaltung vermittelte,
+    gegen den Körper des Opfers gerichtete physische Zwang, der geeignet ist, geleisteten
+    oder erwarteten Widerstand zu überwinden. Nicht erforderlich ist eine körperliche
+    Misshandlung - ausreichend ist jede körperlich vermittelte Zwangseinwirkung,
+    etwa das Festhalten oder Wegstoßen des Opfers.
   norms:
   - § 249 Abs. 1 StGB
   quellen:
@@ -43,13 +43,13 @@ cards:
   stand: 2026-09
 - slug: sr-raub-noetigungsmittel-drohung
   type: definition
-  front: 'Definiere: Drohung mit gegenwaertiger Gefahr fuer Leib oder Leben, § 249
+  front: 'Definiere: Drohung mit gegenwärtiger Gefahr für Leib oder Leben, § 249
     StGB'
-  back: Drohung ist das ausdrueckliche oder konkludente In-Aussicht-Stellen eines
-    zukuenftigen Uebels, auf dessen Eintritt der Drohende Einfluss zu haben vorgibt.
-    Die in Aussicht gestellte Gefahr muss gegenwaertig sein, also unmittelbar bevorstehen,
+  back: Drohung ist das ausdrückliche oder konkludente In-Aussicht-Stellen eines
+    zukünftigen Übels, auf dessen Eintritt der Drohende Einfluss zu haben vorgibt.
+    Die in Aussicht gestellte Gefahr muss gegenwärtig sein, also unmittelbar bevorstehen,
     und sich auf Leib oder Leben des Opfers oder einer ihm nahestehenden Person beziehen
-    - eine blosse Drohung mit einer Sachbeschaedigung genuegt fuer § 249 StGB nicht.
+    - eine bloße Drohung mit einer Sachbeschädigung genügt für § 249 StGB nicht.
   norms:
   - § 249 Abs. 1 StGB
   quellen:
@@ -58,18 +58,18 @@ cards:
 - slug: sr-raub-finaler-zusammenhang
   type: definition
   front: 'Definiere: finaler Zusammenhang beim Raub'
-  back: 'Zwischen dem Noetigungsmittel und der Wegnahme muss ein finaler Zusammenhang
-    bestehen: Der Taeter muss die Gewalt oder Drohung gerade als Mittel zur Ermoeglichung
-    der Wegnahme einsetzen, das Opfer also bewusst zu dem Zweck noetigen, den erwarteten
-    oder geleisteten Widerstand zu brechen. Setzt der Taeter Gewalt zunaechst aus
-    anderen Gruenden ein und fasst den Wegnahmeentschluss erst danach, fehlt es am
-    finalen Zusammenhang - es liegt dann kein Raub vor, sondern allenfalls eine Noetigung
-    oder Koerperverletzung in Tateinheit mit einem eigenstaendigen Diebstahl. Nur
-    wenn der Taeter bereits eine fremde bewegliche Sache weggenommen hat, auf frischer
-    Tat betroffen wird und anschliessend Gewalt anwendet oder droht, um sich den Besitz
-    der Beute zu erhalten, kommt raeuberischer Diebstahl (§ 252 StGB) in Betracht
-    - eine eigenstaendige, an strengere Voraussetzungen geknuepfte Konstellation,
-    kein Auffangtatbestand fuer jeden fehlenden finalen Zusammenhang.'
+  back: 'Zwischen dem Nötigungsmittel und der Wegnahme muss ein finaler Zusammenhang
+    bestehen: Der Täter muss die Gewalt oder Drohung gerade als Mittel zur Ermöglichung
+    der Wegnahme einsetzen, das Opfer also bewusst zu dem Zweck nötigen, den erwarteten
+    oder geleisteten Widerstand zu brechen. Setzt der Täter Gewalt zunächst aus
+    anderen Gründen ein und fasst den Wegnahmeentschluss erst danach, fehlt es am
+    finalen Zusammenhang - es liegt dann kein Raub vor, sondern allenfalls eine Nötigung
+    oder Körperverletzung in Tateinheit mit einem eigenständigen Diebstahl. Nur
+    wenn der Täter bereits eine fremde bewegliche Sache weggenommen hat, auf frischer
+    Tat betroffen wird und anschließend Gewalt anwendet oder droht, um sich den Besitz
+    der Beute zu erhalten, kommt räuberischer Diebstahl (§ 252 StGB) in Betracht
+    - eine eigenständige, an strengere Voraussetzungen geknüpfte Konstellation,
+    kein Auffangtatbestand für jeden fehlenden finalen Zusammenhang.'
   norms:
   - § 249 Abs. 1 StGB
   - § 252 StGB
@@ -78,64 +78,64 @@ cards:
   stand: 2026-09
 - slug: sr-raub-abgrenzung-raeuberische-erpressung
   type: streitstand
-  front: 'Streitstand: Abgrenzung Raub (§ 249 StGB) zu raeuberischer Erpressung (§
+  front: 'Streitstand: Abgrenzung Raub (§ 249 StGB) zu räuberischer Erpressung (§
     255 StGB)'
-  back: 'Problem: Sowohl Raub als auch raeuberische Erpressung setzen Gewalt
+  back: 'Problem: Sowohl Raub als auch räuberische Erpressung setzen Gewalt
 
-    gegen eine Person oder Drohung mit gegenwaertiger Gefahr fuer Leib oder
+    gegen eine Person oder Drohung mit gegenwärtiger Gefahr für Leib oder
 
-    Leben voraus und fuehren zu einem Vermoegensnachteil des Opfers. Da
+    Leben voraus und führen zu einem Vermögensnachteil des Opfers. Da
 
     § 255 StGB denselben Strafrahmen wie § 249 StGB vorsieht, ist die
 
-    Abgrenzung fuer die Strafhoehe selten entscheidend - wohl aber fuer den
+    Abgrenzung für die Strafhöhe selten entscheidend - wohl aber für den
 
-    Pruefungsaufbau und die Konkurrenzen zu Qualifikationen.
+    Prüfungsaufbau und die Konkurrenzen zu Qualifikationen.
 
 
-    Rechtsprechung (Theorie vom aeusseren Erscheinungsbild): Der BGH lehnt
+    Rechtsprechung (Theorie vom äußeren Erscheinungsbild): Der BGH lehnt
 
-    ein ungeschriebenes Tatbestandsmerkmal der Vermoegensverfuegung bei der
+    ein ungeschriebenes Tatbestandsmerkmal der Vermögensverfügung bei der
 
-    Erpressung ab. Massgeblich ist allein, wie sich der Vorgang objektiv
+    Erpressung ab. Maßgeblich ist allein, wie sich der Vorgang objektiv
 
-    darstellt: Nimmt sich der Taeter die Sache selbst weg, liegt Raub vor;
+    darstellt: Nimmt sich der Täter die Sache selbst weg, liegt Raub vor;
 
     gibt das Opfer die Sache selbst heraus (Weggabe statt Wegnahme), liegt
 
-    raeuberische Erpressung vor - unabhaengig davon, ob das Opfer dabei
+    räuberische Erpressung vor - unabhängig davon, ob das Opfer dabei
 
     willentlich mitwirkt.
 
 
-    Herrschende Literatur (Vermoegensverfuegungslehre): verlangt in
+    Herrschende Literatur (Vermögensverfügungslehre): verlangt in
 
     Anlehnung an die Systematik von §§ 253, 263 StGB ein ungeschriebenes
 
-    Tatbestandsmerkmal der Vermoegensverfuegung. Nur wenn das Opfer
+    Tatbestandsmerkmal der Vermögensverfügung. Nur wenn das Opfer
 
-    (wenngleich genoetigt) durch ein eigenes Verhalten selbst ueber sein
+    (wenngleich genötigt) durch ein eigenes Verhalten selbst über sein
 
-    Vermoegen verfuegt, liegt Erpressung vor; erzwingt der Taeter die
+    Vermögen verfügt, liegt Erpressung vor; erzwingt der Täter die
 
     Sachherausgabe gegen den erkennbaren entgegenstehenden Willen des
 
-    Opfers ohne eigenen Mitwirkungsakt, bleibt es bei Raub - unabhaengig
+    Opfers ohne eigenen Mitwirkungsakt, bleibt es bei Raub - unabhängig
 
-    vom aeusseren Erscheinungsbild.
+    vom äußeren Erscheinungsbild.
 
 
-    Konsequenz: In der weit ueberwiegenden Zahl der Klausurfaelle (Taeter
+    Konsequenz: In der weit überwiegenden Zahl der Klausurfälle (Täter
 
-    nimmt sich die Beute selbst, etwa aus einer geoeffneten Kasse) fuehren
+    nimmt sich die Beute selbst, etwa aus einer geöffneten Kasse) führen
 
-    beide Ansaetze zum selben Ergebnis (Raub). Examensrelevant wird der
+    beide Ansätze zum selben Ergebnis (Raub). Examensrelevant wird der
 
-    Streit erst in Grenzfaellen, in denen das Opfer die Sache aktiv
+    Streit erst in Grenzfällen, in denen das Opfer die Sache aktiv
 
-    uebergibt, ohne dass eine eigene Entscheidung ueber das "Ob" der
+    übergibt, ohne dass eine eigene Entscheidung über das "Ob" der
 
-    Vermoegensminderung erkennbar ist.
+    Vermögensminderung erkennbar ist.
 
     '
   norms:
@@ -147,11 +147,11 @@ cards:
 - slug: sr-raub-qualifikationen-250
   type: norm
   front: Was regelt § 250 StGB?
-  back: § 250 StGB enthaelt Qualifikationstatbestaende des schweren Raubes, insbesondere
-    das Beisichfuehren einer Waffe oder eines gefaehrlichen Werkzeugs (Abs. 1 Nr.
-    1 lit. a) sowie die koerperliche schwere Misshandlung oder das Verursachen der
+  back: § 250 StGB enthält Qualifikationstatbestände des schweren Raubes, insbesondere
+    das Beisichführen einer Waffe oder eines gefährlichen Werkzeugs (Abs. 1 Nr.
+    1 lit. a) sowie die körperliche schwere Misshandlung oder das Verursachen der
     Gefahr des Todes des Opfers (Abs. 2 Nr. 3). Abs. 1 und Abs. 2 unterscheiden sich
-    im Strafrahmen - Abs. 2 setzt eine tatsaechliche Verwendung bzw. hoehere Gefaehrdung
+    im Strafrahmen - Abs. 2 setzt eine tatsächliche Verwendung bzw. höhere Gefährdung
     voraus und ist damit die schwerere Variante.
   norms:
   - § 250 StGB
@@ -163,12 +163,12 @@ cards:
   stand: 2026-09
 - slug: sr-raub-erfolgsqualifikation-251
   type: norm
-  front: Was ist an § 251 StGB besonders und was verlangt § 18 StGB dafuer?
+  front: Was ist an § 251 StGB besonders und was verlangt § 18 StGB dafür?
   back: '§ 251 StGB (Raub mit Todesfolge) ist eine erfolgsqualifizierte Straftat:
-    Verursacht der Taeter durch den Raub wenigstens leichtfertig den Tod eines anderen
-    Menschen, erhoeht sich die Strafe auf Freiheitsstrafe nicht unter zehn Jahren
-    oder lebenslange Freiheitsstrafe. Nach § 18 StGB genuegt fuer die schwerere Folge
-    Fahrlaessigkeit (hier: Leichtfertigkeit als gesteigerte Form der Fahrlaessigkeit)
+    Verursacht der Täter durch den Raub wenigstens leichtfertig den Tod eines anderen
+    Menschen, erhöht sich die Strafe auf Freiheitsstrafe nicht unter zehn Jahren
+    oder lebenslange Freiheitsstrafe. Nach § 18 StGB genügt für die schwerere Folge
+    Fahrlässigkeit (hier: Leichtfertigkeit als gesteigerte Form der Fahrlässigkeit)
     - der Vorsatz muss sich nur auf den Grundtatbestand, nicht auf den Taterfolg beziehen.'
   norms:
   - § 251 StGB
@@ -192,10 +192,10 @@ schemata:
       children:
       - label: a) Fremde bewegliche Sache
       - label: b) Wegnahme
-      - label: c) Mittels Gewalt gegen eine Person oder Drohung mit gegenwaertiger
-          Gefahr fuer Leib oder Leben (Noetigungsmittel)
-      - label: d) Finaler Zusammenhang zwischen Noetigungsmittel und Wegnahme
-        hinweis: Fasst der Taeter den Wegnahmeentschluss erst nach der Gewaltanwendung,
+      - label: c) Mittels Gewalt gegen eine Person oder Drohung mit gegenwärtiger
+          Gefahr für Leib oder Leben (Nötigungsmittel)
+      - label: d) Finaler Zusammenhang zwischen Nötigungsmittel und Wegnahme
+        hinweis: Fasst der Täter den Wegnahmeentschluss erst nach der Gewaltanwendung,
           fehlt der finale Zusammenhang - dann kein Raub, ggf. § 252 StGB bei bereits
           vollendeter Wegnahme und Betroffenwerden auf frischer Tat.
     - label: 2. Subjektiver Tatbestand
@@ -205,41 +205,41 @@ schemata:
   - label: II. Rechtswidrigkeit
   - label: III. Schuld
   - label: IV. Qualifikationen, §§ 250, 251 StGB
-    hinweis: Nur pruefen, wenn der Sachverhalt dazu Anlass gibt.
+    hinweis: Nur prüfen, wenn der Sachverhalt dazu Anlass gibt.
 faelle:
 - slug: sr-fall-tankstellenueberfall
-  title: Der Tankstellenueberfall
+  title: Der Tankstellenüberfall
   difficulty: 3
   minutes: 50
   quellen:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
-  facts: 'A betritt kurz vor Ladenschluss eine Tankstelle. Er haelt dem Kassierer
+  facts: 'A betritt kurz vor Ladenschluss eine Tankstelle. Er hält dem Kassierer
     K ein Messer vor das Gesicht und verlangt: "Gib mir das Geld aus der Kasse, sonst
-    steche ich zu." Aus Angst um sein Leben oeffnet K die Kasse und legt die Tageseinnahmen
-    auf den Tresen. A steckt das Geld ein und verlaesst die Tankstelle, ohne K zu
-    beruehren.'
-  question: Hat sich A wegen Raubes gemaess § 249 Abs. 1 StGB strafbar gemacht?
+    steche ich zu." Aus Angst um sein Leben öffnet K die Kasse und legt die Tageseinnahmen
+    auf den Tresen. A steckt das Geld ein und verlässt die Tankstelle, ohne K zu
+    berühren.'
+  question: Hat sich A wegen Raubes gemäß § 249 Abs. 1 StGB strafbar gemacht?
   steps:
   - prompt: Formuliere den Obersatz.
-    erwartung: A koennte sich durch die Wegnahme der Tageseinnahmen unter Drohung
-      mit dem Messer wegen Raubes gemaess § 249 Abs. 1 StGB strafbar gemacht haben.
+    erwartung: A könnte sich durch die Wegnahme der Tageseinnahmen unter Drohung
+      mit dem Messer wegen Raubes gemäß § 249 Abs. 1 StGB strafbar gemacht haben.
   - prompt: Liegt eine fremde bewegliche Sache und eine Wegnahme vor, obwohl K das
       Geld selbst auf den Tresen gelegt hat?
     erwartung: Ja - das Geld steht im Eigentum des Tankstellenbetreibers und ist beweglich.
-      Trotz des Ablegens durch K nimmt A es aus dessen Herrschaftsbereich eigenmaechtig
-      an sich; nach dem aeusseren Erscheinungsbild bricht A den Gewahrsam des K und
-      begruendet eigenen - keine willentliche Vermoegensverfuegung des K.
-  - prompt: Welches Noetigungsmittel hat A eingesetzt?
-    erwartung: Eine Drohung mit gegenwaertiger Gefahr fuer Leib oder Leben - A hat
-      unmissverstaendlich in Aussicht gestellt, K mit dem Messer zu verletzen, falls
+      Trotz des Ablegens durch K nimmt A es aus dessen Herrschaftsbereich eigenmächtig
+      an sich; nach dem äußeren Erscheinungsbild bricht A den Gewahrsam des K und
+      begründet eigenen - keine willentliche Vermögensverfügung des K.
+  - prompt: Welches Nötigungsmittel hat A eingesetzt?
+    erwartung: Eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben - A hat
+      unmissverständlich in Aussicht gestellt, K mit dem Messer zu verletzen, falls
       er nicht herausgibt.
   - prompt: Besteht ein finaler Zusammenhang zwischen Drohung und Wegnahme?
     erwartung: Ja - A hat die Drohung gerade eingesetzt, um den erwarteten Widerstand
       des K zu brechen und die Herausgabe des Geldes zu erreichen.
-  - prompt: Liegt Zueignungsabsicht vor?
-    erwartung: Ja - A wollte das Geld dauerhaft seinem eigenen Vermoegen einverleiben
-      und den Betreiber dauerhaft davon ausschliessen; ein Anspruch auf das Geld bestand
+  - prompt: Liegt Züignungsabsicht vor?
+    erwartung: Ja - A wollte das Geld dauerhaft seinem eigenen Vermögen einverleiben
+      und den Betreiber dauerhaft davon ausschließen; ein Anspruch auf das Geld bestand
       nicht.
   expectation:
     pruefpunkte:
@@ -251,32 +251,40 @@ faelle:
       - § 249 Abs. 1 StGB
       keywords:
       - '249'
+      card_slugs:
+      - sr-raub-grundtatbestand
     - id: p2
-      label: Fremde bewegliche Sache und Wegnahme (nicht Vermoegensverfuegung) bejaht
+      label: Fremde bewegliche Sache und Wegnahme (nicht Vermögensverfügung) bejaht
       weight: 2.0
       required: false
+      norms:
+      - § 249 Abs. 1 StGB
       keywords:
       - fremde bewegliche Sache
       - Wegnahme
       - Gewahrsam
       card_slugs:
       - sr-raub-abgrenzung-raeuberische-erpressung
+      - sr-diebstahl-fremde-bewegliche-sache
+      - sr-diebstahl-wegnahme-begriff
     - id: p3
-      label: Drohung mit gegenwaertiger Gefahr fuer Leib oder Leben bejaht und begruendet
+      label: Drohung mit gegenwärtiger Gefahr für Leib oder Leben bejaht und begründet
       weight: 3.0
       required: true
       norms:
       - § 249 Abs. 1 StGB
       keywords:
       - Drohung
-      - gegenwaertige Gefahr
+      - gegenwärtige Gefahr
       - Leib oder Leben
       card_slugs:
       - sr-raub-noetigungsmittel-drohung
     - id: p4
-      label: Finaler Zusammenhang zwischen Drohung und Wegnahme erkannt und begruendet
+      label: Finaler Zusammenhang zwischen Drohung und Wegnahme erkannt und begründet
       weight: 3.0
       required: true
+      norms:
+      - § 249 Abs. 1 StGB
       keywords:
       - finaler Zusammenhang
       - Mittel
@@ -284,26 +292,36 @@ faelle:
       card_slugs:
       - sr-raub-finaler-zusammenhang
     - id: p5
-      label: Zueignungsabsicht mit Aneignungs- und Enteignungskomponente bejaht
+      label: Züignungsabsicht mit Aneignungs- und Enteignungskomponente bejaht
       weight: 1.5
       required: false
+      norms:
+      - § 249 Abs. 1 StGB
       keywords:
-      - Zueignungsabsicht
+      - Züignungsabsicht
       - Aneignung
       - Enteignung
+      card_slugs:
+      - sr-diebstahl-zueignungsabsicht
     - id: p6
-      label: Vorsatz bzgl. aller objektiven Tatbestandsmerkmale erwaehnt
+      label: Vorsatz bzgl. aller objektiven Tatbestandsmerkmale erwähnt
       weight: 1.0
       required: false
       norms:
       - § 15 StGB
       keywords:
       - Vorsatz
+      card_slugs:
+      - sr-at-vorsatz
     - id: p7
       label: 'Ergebnis: A hat sich wegen Raubes strafbar gemacht'
       weight: 1.0
       required: false
+      norms:
+      - § 249 Abs. 1 StGB
       keywords:
       - strafbar gemacht
       - Raub
       - '249'
+      card_slugs:
+      - sr-raub-grundtatbestand

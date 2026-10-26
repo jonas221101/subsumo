@@ -275,6 +275,20 @@ Ticketbeschreibung, und wird hier bestätigt statt nur wiederholt:
 
 ---
 
+## 5a. Nachtrag 27.09.2026: Individualisierung als fuenfte These
+
+Kein Wettbewerber aus `docs/14-marktanalyse.md` passt die *Lernmechanik* an
+die Person an - derselbe Stapel, derselbe Rhythmus fuer alle. Subsumo hat
+die Bausteine (FSRS mit Ziel-Retention, Planer mit Prioritaeten, Themen mit
+Relevanz, Erwartungshorizont mit Pruefpunkten) und macht daraus ein
+Lernprofil, das Verhalten aendert, nicht Anzeige: Fokus/Pause/Schwerpunkte
+sortieren den Stapel und den Plan, das Sicherheitsniveau verschiebt die
+FSRS-Intervalle, Ruhetage und Klausurtag formen die Woche, Persona und
+Schwachstellen bestimmen den naechsten Schritt, der haeufigste Strukturfehler
+wird zum Technik-Tipp. Abgrenzung wie in Abschnitt 5: keine Gamification,
+kein KI-Tutor, keine Prognose. Konzept, Umsetzung und Messkriterien in
+`docs/33-individualisierung.md`.
+
 ## 6. Zusammenfassung
 
 | # | These | Entscheidung | Zeitpunkt | Messkriterium |
@@ -283,6 +297,7 @@ Ticketbeschreibung, und wird hier bestätigt statt nur wiederholt:
 | 2 | Verzahnung (Fehler → Wiederholungskarte) | Halten, konkretisiert auf `Pruefpunkt.card_slugs` | nach v1.0-Freeze, **AVV-unabhängig** (SUB-261, Nachtrag 24.09.2026) | Erfolgsquote der erzeugten Wiederholungskarten vs. Baseline; wiederholte Prüfpunkt-Fehler sinken |
 | 3 | Nachvollziehbare Korrektur (Punktabzug klickbar) | Halten | bereits live (v1.0) | Zustimmung „verstehe Punktabzug" in Nutzerbefragung > 80 % |
 | 4 | Offline-5h-Klausur inkl. Windows | Halten | v1.1 (M4, 4 Wochen) | Nutzung vor Klausurphasen + Nennung als Bindungsgrund |
+| 5 | Individualisierung als Verhalten (Lernprofil: Stoff, Rhythmus, Gedaechtnis, Weg, Fehler) | Halten, gebaut — `docs/33-individualisierung.md` (Nachtrag 27.09.2026) | live auf dem Branch | Anteil Nutzer mit Lernprofil nach 7 Tagen; 14-Tage-Wiederkehr mit vs. ohne Profil; Klickrate "Naechster Schritt" |
 | — | KI-Chatbot als Tutor | Verwerfen | — | — |
 | — | Gamification-Ausbau | Verwerfen | — | — |
 | — | Video-Content | Verwerfen | — | — |

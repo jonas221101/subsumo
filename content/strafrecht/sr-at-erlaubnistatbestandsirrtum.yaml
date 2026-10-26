@@ -1,0 +1,401 @@
+topic:
+  slug: sr-at-erlaubnistatbestandsirrtum
+  area: strafrecht
+  title: Erlaubnistatbestandsirrtum - Abgrenzung §§ 16, 17 StGB, Schuldtheorien, Teilnahme
+  parent: sr-at
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-fable-5-1
+    status: in-pruefung
+    normzitate_geprueft: true
+cards:
+- slug: sr-eti-begriff
+  type: definition
+  front: 'Definiere: Erlaubnistatbestandsirrtum'
+  back: >-
+    Ein Erlaubnistatbestandsirrtum liegt vor, wenn der Täter irrig Umstände
+    annimmt, bei deren tatsächlichem Vorliegen seine Tat durch einen anerkannten
+    Rechtfertigungsgrund gedeckt wäre. Der Täter irrt also nicht über das Recht,
+    sondern über den Sachverhalt auf der Ebene der Rechtfertigung: Er hält etwa
+    eine harmlose Geste für einen Angriff und "verteidigt" sich (Putativnotwehr),
+    oder er nimmt irrig eine Einwilligung an. Kennzeichnend ist, dass der
+    vorgestellte Sachverhalt bei zutreffender rechtlicher Bewertung die Tat
+    rechtfertigen würde. Der Irrtum ist gesetzlich nicht ausdrücklich geregelt;
+    seine Behandlung ist umstritten.
+  norms:
+  - § 16 StGB
+  - § 17 StGB
+  - § 32 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-eti-gesetzliche-regelungen-16-17
+  type: norm
+  front: 'Was regeln § 16 Abs. 1 StGB und § 17 StGB, und warum passt keine der Normen unmittelbar auf den Erlaubnistatbestandsirrtum?'
+  back: >-
+    § 16 Abs. 1 S. 1 StGB bestimmt, dass nicht vorsätzlich handelt, wer bei
+    Begehung der Tat einen Umstand nicht kennt, der zum gesetzlichen Tatbestand
+    gehört; nach § 16 Abs. 1 S. 2 StGB bleibt die Strafbarkeit wegen fahrlässiger
+    Begehung unberührt. § 17 StGB regelt das Fehlen der Einsicht, Unrecht zu tun:
+    Bei Unvermeidbarkeit entfällt die Schuld, bei Vermeidbarkeit kann die Strafe
+    nach § 49 Abs. 1 StGB gemildert werden. Der Erlaubnistatbestandsirrtum betrifft
+    weder einen Umstand des gesetzlichen Tatbestands (der Täter kennt alle
+    Tatumstände) noch eine fehlerhafte rechtliche Bewertung (der Täter kennt das
+    Verbot und die Grenzen der Rechtfertigung). Er liegt strukturell zwischen
+    beiden Normen: Sachverhaltsirrtum wie bei § 16 StGB, aber auf der Ebene der
+    Rechtfertigung, deren Fehlen sonst § 17 StGB zugeordnet wird.
+  norms:
+  - § 16 Abs. 1 S. 1 StGB
+  - § 16 Abs. 1 S. 2 StGB
+  - § 17 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-eti-abgrenzung-erlaubnisirrtum-doppelirrtum
+  type: definition
+  front: Wie grenzt sich der Erlaubnistatbestandsirrtum vom Erlaubnisirrtum und vom Doppelirrtum ab?
+  back: >-
+    Beim Erlaubnisirrtum (indirekter Verbotsirrtum) erfasst der Täter den
+    Sachverhalt richtig, nimmt aber irrig einen Rechtfertigungsgrund an, den die
+    Rechtsordnung nicht kennt, oder dehnt die Grenzen eines anerkannten
+    Rechtfertigungsgrundes zu weit aus (etwa die Annahme, Notwehr erlaube auch die
+    Bestrafung des bereits fliehenden Angreifers). Dieser Irrtum ist unmittelbar
+    nach § 17 StGB zu behandeln. Beim Doppelirrtum irrt der Täter sowohl über den
+    Sachverhalt als auch über die rechtlichen Grenzen: Auch der vorgestellte
+    Sachverhalt würde die Tat nicht rechtfertigen. Da die Rechtsordnung die Tat
+    selbst bei zutreffender Vorstellung missbilligt, liegt kein
+    Erlaubnistatbestandsirrtum vor; es gilt § 17 StGB. Prüfungsfrage ist also stets:
+    Wäre die Tat gerechtfertigt, wenn die Vorstellung des Täters zuträfe?
+  norms:
+  - § 17 StGB
+  - § 32 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-eti-theorien-streitstand
+  type: streitstand
+  front: 'Streitstand: Wie ist der Erlaubnistatbestandsirrtum rechtlich zu behandeln?'
+  back: >-
+    Problem: Der Täter kennt alle Tatumstände und das Verbot, stellt sich aber irrig
+    eine rechtfertigende Sachlage vor. Entfällt der Vorsatz (§ 16 StGB), die Schuld
+    (§ 17 StGB) oder etwas Drittes?
+
+    Strenge Schuldtheorie: Jeder Irrtum über die Rechtswidrigkeit ist Verbotsirrtum,
+    § 17 StGB. Der Täter handelt vorsätzlich und wird nur bei Unvermeidbarkeit
+    entschuldigt. Kritik: Der Täter, der einen rechtfertigenden Sachverhalt
+    annimmt, will rechtstreu handeln; ihn wie einen Vorsatztäter zu behandeln,
+    verfehlt den Unrechtsgehalt.
+
+    Lehre von den negativen Tatbestandsmerkmalen: Rechtfertigungsgründe sind
+    negative Merkmale eines Gesamtunrechtstatbestands; der Irrtum über sie ist
+    daher Tatumstandsirrtum, § 16 Abs. 1 S. 1 StGB direkt. Kritik: Die
+    Unterscheidung zwischen tatbestandslosem und gerechtfertigtem Verhalten wird
+    eingeebnet.
+
+    Eingeschränkte Schuldtheorie (vorsatzunrechtsverneinend): Der Irrtum lässt den
+    Vorsatz in analoger Anwendung des § 16 Abs. 1 S. 1 StGB entfallen, weil der
+    Täter wie der Tatumstandsirrende keinen Handlungsunwert verwirklicht.
+
+    Rechtsfolgenverweisende eingeschränkte Schuldtheorie (h.M., BGH): Der
+    Tatbestandsvorsatz bleibt bestehen; die Tat ist eine vorsätzliche rechtswidrige
+    Tat. Es entfällt aber die Vorsatzschuld, weil der Täter nicht die für den
+    Vorsatzvorwurf typische rechtsfeindliche Gesinnung zeigt. § 16 Abs. 1 S. 1 StGB
+    wird nur in seiner Rechtsfolge analog angewendet: keine Bestrafung aus dem
+    Vorsatzdelikt, gegebenenfalls Fahrlässigkeitsstrafbarkeit nach § 16 Abs. 1 S. 2
+    StGB.
+
+    Konsequenz: Alle eingeschränkten Theorien führen beim Täter selbst zu demselben
+    Ergebnis (keine Vorsatzstrafe, Fahrlässigkeitsdelikt bei Vermeidbarkeit). Sie
+    unterscheiden sich bei der Teilnahme, weil nur nach der rechtsfolgenverweisenden
+    Theorie eine vorsätzliche Haupttat vorliegt.
+  norms:
+  - § 16 Abs. 1 S. 1 StGB
+  - § 16 Abs. 1 S. 2 StGB
+  - § 17 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-eti-rechtsfolgenverweisend-vorsatzschuld
+  type: definition
+  front: Was bedeutet "Vorsatzschuld entfällt" nach der rechtsfolgenverweisenden eingeschränkten Schuldtheorie?
+  back: >-
+    Die h.M. trennt den Tatbestandsvorsatz (Wissen und Wollen der Tatumstände, im
+    Unrechtstatbestand) von der Vorsatzschuld (dem gesteigerten Schuldvorwurf, der
+    den Vorsatztäter trifft, weil er sich bewusst gegen das Rechtsgut entscheidet).
+    Beim Erlaubnistatbestandsirrtum bleibt der Tatbestandsvorsatz erhalten - der
+    Täter weiß, dass er einen Menschen verletzt. Weil er aber glaubt, im Recht zu
+    sein, fehlt ihm die für den Vorsatzvorwurf charakteristische Gesinnung; sein
+    Fehler liegt in mangelnder Sorgfalt bei der Prüfung der Lage und entspricht
+    damit dem Fahrlässigkeitsvorwurf. Deshalb wird er wie ein Fahrlässigkeitstäter
+    bestraft: Der Schuldvorwurf wird auf die Rechtsfolge des § 16 Abs. 1 StGB
+    umgeleitet. Prüfungsstandort ist die Schuld, nach der Feststellung, dass
+    objektiv kein Rechtfertigungsgrund vorlag.
+  norms:
+  - § 16 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-eti-fahrlaessigkeit-vermeidbarkeit
+  type: definition
+  front: Unter welchen Voraussetzungen wird der Täter im Erlaubnistatbestandsirrtum aus dem Fahrlässigkeitsdelikt bestraft?
+  back: >-
+    Nach § 16 Abs. 1 S. 2 StGB (direkt oder analog) bleibt die Strafbarkeit wegen
+    fahrlässiger Begehung unberührt. Dafür muss erstens ein entsprechendes
+    Fahrlässigkeitsdelikt existieren (etwa § 229 StGB, § 222 StGB; nicht bei
+    Sachbeschädigung oder Nötigung). Zweitens muss der Irrtum auf einer
+    Sorgfaltspflichtverletzung beruhen: Der Täter hätte bei der ihm möglichen und
+    zumutbaren Prüfung der Lage erkennen können, dass die rechtfertigende Situation
+    nicht vorliegt (Vermeidbarkeit). Maßstab ist ein besonnener Mensch in der
+    konkreten Lage des Täters mit dessen Sonderwissen; Zeitdruck und Bedrohungslage
+    sind zu berücksichtigen. War der Irrtum unvermeidbar, bleibt der Täter
+    straflos.
+  norms:
+  - § 16 Abs. 1 S. 2 StGB
+  - § 229 StGB
+  - § 222 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-eti-teilnahmeproblem-streitstand
+  type: streitstand
+  front: 'Streitstand: Ist Teilnahme an der Tat eines im Erlaubnistatbestandsirrtum handelnden Täters möglich?'
+  back: >-
+    Problem: Anstiftung und Beihilfe setzen nach §§ 26, 27 StGB eine vorsätzlich
+    begangene rechtswidrige Haupttat voraus (limitierte Akzessorietät). Ob der
+    Haupttäter im Erlaubnistatbestandsirrtum "vorsätzlich" handelt, hängt von der
+    gewählten Theorie ab. Praktisch relevant ist der Fall, dass der Hintermann den
+    Irrtum des Vordermanns kennt oder herbeiführt.
+
+    Rechtsfolgenverweisende eingeschränkte Schuldtheorie (h.M.): Der
+    Tatbestandsvorsatz des Haupttäters bleibt bestehen; es liegt eine vorsätzliche
+    rechtswidrige Haupttat vor. Teilnahme ist daher möglich. Wer den Irrtum
+    bewusst hervorruft, kann nach h.M. zugleich mittelbarer Täter kraft
+    überlegenen Wissens sein, § 25 Abs. 1 Alt. 2 StGB; die Teilnahme tritt dann
+    zurück. Der bloß fördernde Dritte ist Gehilfe oder Anstifter.
+
+    Vorsatzunrechtsverneinende eingeschränkte Schuldtheorie und Lehre von den
+    negativen Tatbestandsmerkmalen: Der Vorsatz des Haupttäters entfällt; eine
+    vorsätzliche Haupttat fehlt. Teilnahme scheidet aus. Der Hintermann kann nur
+    als mittelbarer Täter erfasst werden, wenn er die Voraussetzungen des § 25
+    Abs. 1 Alt. 2 StGB erfüllt; andernfalls bleibt er straflos.
+
+    Strenge Schuldtheorie: Der Haupttäter handelt vorsätzlich und rechtswidrig,
+    Teilnahme ist ohne Weiteres möglich.
+
+    Konsequenz: Das Teilnahmeproblem ist das Hauptargument für die
+    rechtsfolgenverweisende Theorie, weil sie Strafbarkeitslücken beim Hintermann
+    vermeidet, der die Voraussetzungen der mittelbaren Täterschaft nicht erfüllt.
+  norms:
+  - § 26 StGB
+  - § 27 StGB
+  - § 25 Abs. 1 Alt. 2 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: sr-eti-pruefungsstandort-aufbau
+  type: schema_step
+  front: An welcher Stelle des Deliktsaufbaus wird der Erlaubnistatbestandsirrtum geprüft?
+  back: >-
+    Der Erlaubnistatbestandsirrtum wird nach h.M. erst geprüft, nachdem in der
+    Rechtswidrigkeit festgestellt wurde, dass objektiv kein Rechtfertigungsgrund
+    vorliegt (etwa weil kein Angriff gegeben war). In der Schuld ist dann
+    darzustellen: (1) Der Täter stellte sich einen Sachverhalt vor, der einen
+    anerkannten Rechtfertigungsgrund erfüllen würde (Abgrenzung zum
+    Erlaubnisirrtum und zum Doppelirrtum). (2) Streitstand über die Rechtsfolge mit
+    Stellungnahme für die rechtsfolgenverweisende eingeschränkte Schuldtheorie.
+    (3) Ergebnis: keine Vorsatzschuld, Strafbarkeit aus dem Vorsatzdelikt entfällt.
+    (4) Anschließend eigenständige Prüfung des Fahrlässigkeitsdelikts mit der
+    Vermeidbarkeit des Irrtums als Sorgfaltspflichtverletzung. Wer der
+    vorsatzunrechtsverneinenden Theorie folgt, prüft den Irrtum bereits im
+    subjektiven Tatbestand oder unmittelbar nach der Rechtswidrigkeit.
+  norms:
+  - § 16 Abs. 1 StGB
+  - § 32 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: sr-schema-erlaubnistatbestandsirrtum
+  title: Prüfung des Erlaubnistatbestandsirrtums (Putativnotwehr)
+  norms:
+  - § 16 StGB
+  - § 17 StGB
+  - § 32 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+  steps:
+  - label: I. Tatbestand des Vorsatzdelikts
+    children:
+    - label: 1. Objektiver Tatbestand
+    - label: 2. Vorsatz hinsichtlich aller Tatumstände
+      hinweis: Der Täter kennt die Tatumstände; § 16 Abs. 1 S. 1 StGB greift unmittelbar nicht.
+  - label: II. Rechtswidrigkeit
+    children:
+    - label: 1. Objektive Prüfung des Rechtfertigungsgrundes (z. B. § 32 StGB)
+    - label: '2. Ergebnis: keine Rechtfertigung, weil die rechtfertigende Lage objektiv fehlt'
+  - label: III. Schuld
+    children:
+    - label: 1. Schuldfähigkeit
+    - label: 2. Erlaubnistatbestandsirrtum
+      children:
+      - label: a) Vorstellung eines Sachverhalts, der einen anerkannten Rechtfertigungsgrund erfüllen würde
+      - label: b) Abgrenzung zum Erlaubnisirrtum und zum Doppelirrtum (dann § 17 StGB)
+      - label: c) Streitstand zur Rechtsfolge (strenge Schuldtheorie, negative Tatbestandsmerkmale, eingeschränkte Schuldtheorien)
+      - label: d) Stellungnahme - rechtsfolgenverweisende eingeschränkte Schuldtheorie (h.M.)
+    - label: '3. Ergebnis: Vorsatzschuld entfällt, keine Strafbarkeit aus dem Vorsatzdelikt'
+  - label: IV. Fahrlässigkeitsdelikt, § 16 Abs. 1 S. 2 StGB
+    children:
+    - label: 1. Existenz eines Fahrlässigkeitstatbestands
+    - label: 2. Vermeidbarkeit des Irrtums als Sorgfaltspflichtverletzung
+    - label: 3. Übrige Voraussetzungen der Fahrlässigkeitsstrafbarkeit
+  - label: V. Beteiligte
+    children:
+    - label: 1. Vorsätzliche rechtswidrige Haupttat nach h.M. gegeben - Teilnahme möglich
+    - label: 2. Bei bewusster Irrtumsherbeiführung mittelbare Täterschaft, § 25 Abs. 1 Alt. 2 StGB
+faelle:
+- slug: sr-fall-jogger-im-park
+  title: Der Jogger im Park
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  stand: 2026-09
+  facts: >-
+    A geht spätabends mit seinem Bekannten C durch einen schlecht beleuchteten
+    Park. Plötzlich läuft B in dunkler Sportkleidung schnell auf die beiden zu und
+    greift dabei in seine Jackentasche, um sein Mobiltelefon herauszuholen, dessen
+    Wecker gerade klingelt. C erkennt B sofort als seinen Nachbarn, der hier
+    regelmäßig joggt, und weiß, dass B völlig harmlos ist. Trotzdem ruft C dem A zu:
+    "Der hat ein Messer, schlag zu!" A, der B nicht kennt und in der Dunkelheit
+    tatsächlich glaubt, gleich mit einem Messer angegriffen zu werden, schlägt B
+    mit der Faust ins Gesicht. B erleidet einen Nasenbruch. Bei ruhiger Betrachtung
+    hätte A erkennen können, dass B lediglich nach seinem Telefon griff.
+  question: Wie haben sich A und C strafbar gemacht?
+  steps:
+  - prompt: Hat A den Tatbestand des § 223 Abs. 1 StGB erfüllt?
+    erwartung: >-
+      Ja - der Faustschlag mit Nasenbruch ist körperliche Misshandlung und
+      Gesundheitsschädigung; A wusste und wollte, dass er B schlägt (Tatbestandsvorsatz).
+  - prompt: Ist A durch Notwehr, § 32 StGB, gerechtfertigt?
+    erwartung: >-
+      Nein - objektiv lag kein Angriff des B vor; B wollte nur sein Telefon aus der
+      Tasche holen. Ohne Notwehrlage scheidet eine Rechtfertigung aus.
+  - prompt: Welcher Irrtum liegt bei A vor und wie ist er von § 17 StGB abzugrenzen?
+    erwartung: >-
+      A stellte sich einen gegenwärtigen rechtswidrigen Angriff mit einem Messer
+      vor. Hätte diese Vorstellung zugetroffen, wäre der Faustschlag als
+      erforderliche Verteidigung nach § 32 StGB gerechtfertigt gewesen. A irrt also
+      über die tatsächlichen Voraussetzungen eines anerkannten Rechtfertigungsgrundes
+      (Erlaubnistatbestandsirrtum, Putativnotwehr) und nicht über dessen rechtliche
+      Grenzen; § 17 StGB passt nicht.
+  - prompt: Welche Rechtsfolge hat der Erlaubnistatbestandsirrtum für A?
+    erwartung: >-
+      Nach der strengen Schuldtheorie bliebe A Vorsatztäter (§ 17 StGB, Irrtum
+      vermeidbar). Nach der Lehre von den negativen Tatbestandsmerkmalen und der
+      vorsatzunrechtsverneinenden eingeschränkten Schuldtheorie entfällt der Vorsatz
+      nach § 16 Abs. 1 S. 1 StGB (direkt bzw. analog). Nach der
+      rechtsfolgenverweisenden eingeschränkten Schuldtheorie (h.M.) bleibt der
+      Tatbestandsvorsatz bestehen, aber die Vorsatzschuld entfällt. Der h.M. ist zu
+      folgen: A ist nicht wegen vorsätzlicher Körperverletzung strafbar.
+  - prompt: Hat sich A wegen fahrlässiger Körperverletzung, § 229 StGB, strafbar gemacht?
+    erwartung: >-
+      Ja - § 16 Abs. 1 S. 2 StGB lässt die Fahrlässigkeitsstrafbarkeit unberührt.
+      A hätte bei ruhiger Betrachtung erkennen können, dass B nur nach seinem
+      Telefon griff; der Irrtum war vermeidbar, A verletzte die gebotene Sorgfalt
+      bei der Prüfung der Lage. Der Nasenbruch war vorhersehbar. A ist nach § 229 StGB
+      strafbar.
+  - prompt: Wie hat sich C strafbar gemacht?
+    erwartung: >-
+      C hat A durch seinen Zuruf zur Tat bestimmt und dabei den Irrtum des A
+      bewusst hervorgerufen. Nach h.M. liegt eine vorsätzliche rechtswidrige
+      Haupttat vor, sodass Anstiftung, § 26 StGB, zu § 223 StGB möglich ist. Weil C
+      kraft überlegenen Wissens das Geschehen beherrschte, kommt vorrangig mittelbare
+      Täterschaft, § 25 Abs. 1 Alt. 2 StGB, in Betracht; dahinter tritt die
+      Anstiftung zurück. Nach den vorsatzverneinenden Theorien fehlt eine
+      vorsätzliche Haupttat, sodass nur mittelbare Täterschaft in Betracht kommt -
+      hier mit demselben Ergebnis.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Tatbestand des § 223 Abs. 1 StGB bei A bejaht, Tatbestandsvorsatz festgestellt
+      weight: 1.0
+      required: false
+      norms:
+      - § 223 Abs. 1 StGB
+      keywords:
+      - körperliche Misshandlung
+      - Vorsatz
+      card_slugs:
+      - sr-eti-pruefungsstandort-aufbau
+    - id: p2
+      label: Notwehr objektiv verneint (kein Angriff des B)
+      weight: 1.5
+      required: true
+      norms:
+      - § 32 StGB
+      keywords:
+      - kein Angriff
+      - Notwehrlage
+      card_slugs:
+      - sr-eti-pruefungsstandort-aufbau
+    - id: p3
+      label: Erlaubnistatbestandsirrtum erkannt und vom Verbotsirrtum bzw. Erlaubnisirrtum abgegrenzt
+      weight: 2.5
+      required: true
+      norms:
+      - § 16 StGB
+      - § 17 StGB
+      keywords:
+      - Erlaubnistatbestandsirrtum
+      - Putativnotwehr
+      - § 17
+      card_slugs:
+      - sr-eti-begriff
+      - sr-eti-abgrenzung-erlaubnisirrtum-doppelirrtum
+      - sr-eti-gesetzliche-regelungen-16-17
+    - id: p4
+      label: Streitstand zu den Schuldtheorien dargestellt und mit der rechtsfolgenverweisenden eingeschränkten Schuldtheorie entschieden
+      weight: 3.0
+      required: true
+      norms:
+      - § 16 Abs. 1 S. 1 StGB
+      keywords:
+      - eingeschränkte Schuldtheorie
+      - rechtsfolgenverweisend
+      - strenge Schuldtheorie
+      - Vorsatzschuld
+      card_slugs:
+      - sr-eti-theorien-streitstand
+      - sr-eti-rechtsfolgenverweisend-vorsatzschuld
+    - id: p5
+      label: Fahrlässige Körperverletzung, § 229 StGB, über § 16 Abs. 1 S. 2 StGB geprüft und wegen Vermeidbarkeit des Irrtums bejaht
+      weight: 2.0
+      required: true
+      norms:
+      - § 229 StGB
+      - § 16 Abs. 1 S. 2 StGB
+      keywords:
+      - § 229
+      - fahrlässig
+      - vermeidbar
+      card_slugs:
+      - sr-eti-fahrlaessigkeit-vermeidbarkeit
+    - id: p6
+      label: Teilnahmeproblem bei C erkannt - Anstiftung nach h.M. möglich, vorrangig mittelbare Täterschaft kraft überlegenen Wissens
+      weight: 2.5
+      required: true
+      norms:
+      - § 26 StGB
+      - § 25 Abs. 1 Alt. 2 StGB
+      keywords:
+      - Anstiftung
+      - mittelbare Täterschaft
+      - überlegenes Wissen
+      - Akzessorietät
+      card_slugs:
+      - sr-eti-teilnahmeproblem-streitstand

@@ -10,7 +10,20 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from sqlalchemy import text
 
-from app.api.v1 import account, auth, billing, consent, content, gutachten, learn, plan, public
+from app.api.v1 import (
+    account,
+    auth,
+    billing,
+    consent,
+    content,
+    examen,
+    gutachten,
+    learn,
+    lernprofil,
+    plan,
+    public,
+    werkbank,
+)
 from app.config import get_settings
 from app.core.observability import configure_logging
 from app.core.ratelimit import RateLimiter
@@ -45,8 +58,8 @@ def create_app() -> FastAPI:
         version="0.1.0",
         description=(
             "Backend der Jura-Lern-App Subsumo. Lernhilfe, keine Rechtsberatung: "
-            "Gutachten werden ausschliesslich gegen den hinterlegten "
-            "Erwartungshorizont eines Uebungsfalls bewertet."
+            "Gutachten werden ausschließlich gegen den hinterlegten "
+            "Erwartungshorizont eines Übungsfalls bewertet."
         ),
         lifespan=lifespan,
     )
@@ -79,8 +92,11 @@ def create_app() -> FastAPI:
         learn.router,
         gutachten.router,
         plan.router,
+        examen.router,
+        lernprofil.router,
         public.router,
         billing.router,
+        werkbank.router,
     ):
         app.include_router(router, prefix="/v1")
 

@@ -245,8 +245,8 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
                 Finding(
                     Severity.HINWEIS,
                     "zu_kurz",
-                    "Der Text ist zu kurz fuer eine Strukturanalyse.",
-                    "Schreibe mindestens einen vollstaendigen Pruefungspunkt: "
+                    "Der Text ist zu kurz für eine Strukturanalyse.",
+                    "Schreibe mindestens einen vollständigen Prüfungspunkt: "
                     "Obersatz, Definition, Subsumtion, Ergebnis.",
                 )
             ],
@@ -275,7 +275,7 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
                     "sprung_zum_ergebnis",
                     "Zwischen Obersatz und Ergebnis fehlt die Subsumtion.",
                     "Definiere erst das Tatbestandsmerkmal und wende es dann "
-                    "ausdruecklich auf den Sachverhalt an ('Hier hat A ...').",
+                    "ausdrücklich auf den Sachverhalt an ('Hier hat A ...').",
                     sentence_index=block["index"],
                     excerpt=block["text"][:160],
                 )
@@ -308,9 +308,9 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
                 Finding(
                     Severity.HINWEIS,
                     "offener_obersatz",
-                    "Dieser Pruefungspunkt wird bearbeitet, aber nicht ausdruecklich "
+                    "Dieser Prüfungspunkt wird bearbeitet, aber nicht ausdrücklich "
                     "abgeschlossen.",
-                    "Formuliere das Zwischenergebnis ausdruecklich "
+                    "Formuliere das Zwischenergebnis ausdrücklich "
                     "('Mithin liegt ein Angebot vor.'). Korrektoren suchen danach.",
                     sentence_index=block["index"],
                     excerpt=block["text"][:160],
@@ -324,7 +324,7 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
                     "offener_obersatz",
                     "Dieser Obersatz wird aufgeworfen und danach nie beantwortet.",
                     "Jeder Obersatz braucht Definition, Subsumtion und Ergebnis. "
-                    "Offene Pruefungspunkte kosten in der Klausur sicher Punkte.",
+                    "Offene Prüfungspunkte kosten in der Klausur sicher Punkte.",
                     sentence_index=block["index"],
                     excerpt=block["text"][:160],
                 )
@@ -347,7 +347,7 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
                 Finding(
                     Severity.FEHLER,
                     "urteilsstil",
-                    "Urteilsstil: Das Ergebnis steht vor der Begruendung.",
+                    "Urteilsstil: Das Ergebnis steht vor der Begründung.",
                     "Im Gutachten wird hypothetisch formuliert: erst 'Fraglich ist, "
                     "ob ...', dann Definition, dann Subsumtion, dann das Ergebnis. "
                     "Nur das Endergebnis darf im Urteilsstil stehen.",
@@ -366,7 +366,7 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
                 Severity.FEHLER,
                 "kein_obersatz",
                 "Es gibt keinen erkennbaren Obersatz.",
-                "Beginne mit: 'A koennte gegen B einen Anspruch auf ... aus § ... haben.'",
+                "Beginne mit: 'A könnte gegen B einen Anspruch auf ... aus § ... haben.'",
             )
         )
     if counts[Step.DEFINITION.value] == 0:
@@ -387,7 +387,7 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
                 Severity.FEHLER,
                 "keine_subsumtion",
                 "Der Sachverhalt wird nicht erkennbar unter die Norm subsumiert.",
-                "Beziehe dich ausdruecklich auf den Sachverhalt: 'Hier hat A ...', "
+                "Beziehe dich ausdrücklich auf den Sachverhalt: 'Hier hat A ...', "
                 "'Vorliegend ...'. Ohne Sachverhaltsbezug keine Subsumtion.",
             )
         )
@@ -397,8 +397,8 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
             Finding(
                 Severity.FEHLER,
                 "kein_ergebnis",
-                "Es fehlt ein abschliessendes Ergebnis.",
-                "Schliesse mit 'Mithin hat A gegen B einen Anspruch aus § ...'.",
+                "Es fehlt ein abschließendes Ergebnis.",
+                "Schließe mit 'Mithin hat A gegen B einen Anspruch aus § ...'.",
             )
         )
 
@@ -443,7 +443,7 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
                     "norm_nicht_geprueft",
                     "Erwartete Normen wurden nicht angesprochen: "
                     + ", ".join(missing_norms),
-                    "Pruefe die Anspruchsgrundlagen vollstaendig und in der "
+                    "Prüfe die Anspruchsgrundlagen vollständig und in der "
                     "richtigen Reihenfolge (vertraglich - quasivertraglich - "
                     "dinglich - deliktisch).",
                 )
@@ -473,7 +473,7 @@ def analyze(text: str, *, expected_norms: list[str] | None = None) -> GutachtenR
             Finding(
                 Severity.LOB,
                 "sauberer_aufbau",
-                "Sauberer Gutachtenaufbau: alle Obersaetze sind geschlossen, "
+                "Sauberer Gutachtenaufbau: alle Obersätze sind geschlossen, "
                 "kein Urteilsstil.",
             )
         )

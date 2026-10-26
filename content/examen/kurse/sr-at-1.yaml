@@ -1,0 +1,28 @@
+kurs:
+  slug: sr-at-1
+  title: 'Strafrecht AT I: Vorsatzdelikt und Rechtfertigung'
+  area: strafrecht
+  semester_default: 1
+  examenskurs: false
+  stand: 2026-09
+  quellen:
+  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: Aufbau des vollendeten Vorsatzdelikts, Kausalitaet und objektive Zurechnung, Vorsatz und
+    Irrtuemer, Notwehr und Notstand.
+  lernziele:
+  - Dreistufigen Deliktsaufbau sicher im Gutachtenstil schreiben
+  - Tatbestands- und Verbotsirrtum (§§ 16, 17 StGB) voneinander abgrenzen
+  - Rechtfertigungsgruende mit Notwehrlage und Notwehrhandlung pruefen
+  klausurformat:
+    typ: Anfaengerklausur
+    minuten: 120
+  topic_slugs:
+  - sr-at
+  - sr-at-kausalitaet-zurechnung
+  - sr-at-vorsatz-tatbestandsirrtum
+  - sr-at-verbotsirrtum-17
+  - sr-notwehr-32
+  - sr-notstand-34
+  landesrecht_kategorien: []
+  fehlende_themen: []

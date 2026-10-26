@@ -10,7 +10,7 @@ Widget _host(Widget child) => MaterialApp(
 
 void main() {
   group('SubsumoButton', () {
-    testWidgets('primary loest onPressed aus und zeigt das Label', (tester) async {
+    testWidgets('primary löst onPressed aus und zeigt das Label', (tester) async {
       var tapped = false;
       await tester.pumpWidget(
         _host(SubsumoButton.primary(label: 'Abgeben', onPressed: () => tapped = true)),
@@ -55,7 +55,7 @@ void main() {
       expect(find.text('62 %'), findsOneWidget);
     });
 
-    testWidgets('nutzt fuer jeden Wert dieselbe Fuellfarbe - keine Ampel', (tester) async {
+    testWidgets('nutzt für jeden Wert dieselbe Füllfarbe - keine Ampel', (tester) async {
       Color colorFor(double value) {
         final indicator = tester.widget<LinearProgressIndicator>(
           find.byType(LinearProgressIndicator),
@@ -87,7 +87,7 @@ void main() {
   });
 
   group('SubsumoChip', () {
-    testWidgets('filter meldet Auswahl ueber onSelected', (tester) async {
+    testWidgets('filter meldet Auswahl über onSelected', (tester) async {
       bool? selected;
       await tester.pumpWidget(
         _host(
@@ -103,7 +103,7 @@ void main() {
       expect(selected, isTrue);
     });
 
-    testWidgets('action loest onPressed aus', (tester) async {
+    testWidgets('action löst onPressed aus', (tester) async {
       var tapped = false;
       await tester.pumpWidget(
         _host(SubsumoChip.action(label: '§ 985 BGB', onPressed: () => tapped = true)),
@@ -127,7 +127,7 @@ void main() {
         _host(
           const SubsumoFeedbackBlock(
             message: 'Obersatz fehlt',
-            detail: 'Beginne mit "A koennte gegen B einen Anspruch haben."',
+            detail: 'Beginne mit "A könnte gegen B einen Anspruch haben."',
             severity: FeedbackSeverity.negative,
           ),
         ),
@@ -261,7 +261,7 @@ void main() {
       expect(tester.takeException(), isNull);
     });
 
-    testWidgets('begrenzt den Inhalt intern ueber ReadableWidth', (tester) async {
+    testWidgets('begrenzt den Inhalt intern über ReadableWidth', (tester) async {
       await tester.pumpWidget(
         _host(const SubsumoSection(child: Text('Sektion'))),
       );
@@ -289,7 +289,7 @@ void main() {
       );
     });
 
-    testWidgets('brandDark rendert eine deckende brand900-Flaeche', (tester) async {
+    testWidgets('brandDark rendert eine deckende brand900-Fläche', (tester) async {
       await tester.pumpWidget(
         _host(
           const SubsumoSection(

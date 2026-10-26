@@ -1,0 +1,55 @@
+universitaet:
+  slug: uni-jena
+  name: Friedrich-Schiller-Universitaet Jena
+  kurzname: Uni Jena
+  stadt: Jena
+  bundesland: TH
+  traegerschaft: staatlich
+  stand: 2026-09
+  quellen:
+  - Studien- und Pruefungsordnungen der Fakultaet (Studienverlaufsplan)
+  - Eigenformulierung Redaktion
+  redaktion:
+    erzeugt_von: claude-code (Redaktionsentwurf)
+    status: in-pruefung
+    hinweis: Kursliste = kanonischer Standard-Studienverlaufsplan (docs/32 Abschnitt 3.3). Lokale Modulnamen
+      und Semesterlage sind nicht verifiziert - ueber die Fachschafts-Beta (docs/28) einholen und als
+      'titel_lokal'/'semester' nachtragen.
+  besonderheiten: []
+  kurse:
+  - kurs: zr-bgb-at
+    semester: 1
+  - kurs: sr-at-1
+    semester: 1
+  - kurs: or-staatsrecht-1
+    semester: 1
+  - kurs: zr-schuldrecht-at
+    semester: 2
+  - kurs: sr-at-2
+    semester: 2
+  - kurs: or-staatsrecht-2
+    semester: 2
+  - kurs: zr-schuldrecht-bt-vertraglich
+    semester: 3
+  - kurs: sr-bt-1
+    semester: 3
+  - kurs: or-verwaltungsrecht-at
+    semester: 3
+  - kurs: zr-schuldrecht-bt-gesetzlich
+    semester: 4
+  - kurs: sr-bt-2
+    semester: 4
+  - kurs: or-verwaltungsprozessrecht
+    semester: 4
+  - kurs: zr-sachenrecht
+    semester: 5
+  - kurs: or-polizei-ordnungsrecht
+    semester: 5
+  - kurs: or-kommunal-baurecht
+    semester: 6
+  - kurs: zr-examenskurs
+    semester: 7
+  - kurs: sr-examenskurs
+    semester: 7
+  - kurs: or-examenskurs
+    semester: 7

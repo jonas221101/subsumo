@@ -28,7 +28,7 @@ void main() {
       final api = ApiClient(client: client)..setToken('t');
 
       await expectLater(
-        () => api.analyze('lang genug fuer die Analyse, mindestens vierzig Zeichen'),
+        () => api.analyze('lang genug für die Analyse, mindestens vierzig Zeichen'),
         throwsA(
           isA<ApiException>()
               .having((e) => e.statusCode, 'statusCode', 403)
@@ -40,7 +40,7 @@ void main() {
 
     test('erkennt upgrade_required flach im Body', () async {
       final client = MockClient((request) async => _json({
-            'detail': 'Fall nur mit Pro verfuegbar',
+            'detail': 'Fall nur mit Pro verfügbar',
             'upgrade_required': true,
           }, 402));
       final api = ApiClient(client: client)..setToken('t');
@@ -50,7 +50,7 @@ void main() {
         throwsA(
           isA<ApiException>()
               .having((e) => e.upgradeRequired, 'upgradeRequired', isTrue)
-              .having((e) => e.message, 'message', 'Fall nur mit Pro verfuegbar'),
+              .having((e) => e.message, 'message', 'Fall nur mit Pro verfügbar'),
         ),
       );
     });
@@ -69,7 +69,7 @@ void main() {
   });
 
   group('ApiClient.cancelSubscription (F3, docs/20-release-g2-bezahlstrecke.md B5)', () {
-    test('liefert den Server-mode unveraendert', () async {
+    test('liefert den Server-mode unverändert', () async {
       final client = MockClient((request) async {
         expect(request.url.path, '/v1/billing/cancel');
         return _json({'mode': 'immediate_refund'}, 200);
@@ -118,7 +118,7 @@ void main() {
   });
 
   group('ApiClient.exportAccountData (Art. 15 DSGVO, SUB-84/SUB-103)', () {
-    test('liefert den Server-Body unveraendert', () async {
+    test('liefert den Server-Body unverändert', () async {
       final client = MockClient((request) async {
         expect(request.method, 'GET');
         expect(request.url.path, '/v1/account/export');
@@ -149,7 +149,7 @@ void main() {
       await api.deleteAccount('geheim123');
     });
 
-    test('400 (fehlende Bestaetigung) wird als ApiException durchgereicht', () async {
+    test('400 (fehlende Bestätigung) wird als ApiException durchgereicht', () async {
       final client = MockClient((request) async => _json({'detail': 'confirm_required'}, 400));
       final api = ApiClient(client: client)..setToken('t');
 
@@ -200,7 +200,7 @@ void main() {
       expect(result['ai_review_consent_at'], '2026-09-17T12:00:00Z');
     });
 
-    test('revokeAiConsent sendet DELETE und liefert null zurueck', () async {
+    test('revokeAiConsent sendet DELETE und liefert null zurück', () async {
       final client = MockClient((request) async {
         expect(request.method, 'DELETE');
         expect(request.url.path, '/v1/me/ai-consent');

@@ -1,0 +1,250 @@
+topic:
+  slug: zr-schadensrecht-249-254
+  area: zivilrecht
+  title: "Schadensrecht: Art und Umfang des Schadensersatzes, §§ 249-254 BGB"
+  relevance: 5
+  stand: 2026-09
+  redaktion:
+    erzeugt_von: claude-fable-5-1
+    status: in-pruefung
+    normzitate_geprueft: true
+cards:
+- slug: zr-schaden-naturalrestitution-249
+  type: norm
+  front: "Was ordnet § 249 Abs. 1 BGB als Grundsatz des Schadensersatzes an, und welche Ausnahme enthält § 249 Abs. 2 BGB?"
+  back: "§ 249 Abs. 1 BGB verpflichtet den Ersatzpflichtigen zur Naturalrestitution: Er hat den Zustand herzustellen, der bestehen würde, wenn der zum Ersatz verpflichtende Umstand nicht eingetreten wäre. Der Ersatz erfolgt also grundsätzlich in Natur, nicht in Geld. Bei Verletzung einer Person oder Beschädigung einer Sache gibt § 249 Abs. 2 S. 1 BGB dem Geschädigten eine Ersetzungsbefugnis: Er kann statt der Herstellung den dafür erforderlichen Geldbetrag verlangen. Umsatzsteuer ist dabei nur ersatzfähig, wenn sie tatsächlich angefallen ist (§ 249 Abs. 2 S. 2 BGB)."
+  norms:
+  - § 249 Abs. 1 BGB
+  - § 249 Abs. 2 S. 1 BGB
+  - § 249 Abs. 2 S. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-schaden-differenzhypothese
+  type: definition
+  front: "Definiere: Schaden im Sinne der Differenzhypothese"
+  back: "Nach der Differenzhypothese ist Schaden jede unfreiwillige Einbuße an rechtlich geschützten Gütern. Der Vermögensschaden wird durch einen Vergleich zweier Vermögenslagen ermittelt: die tatsächliche Vermögenslage nach dem schädigenden Ereignis wird der hypothetischen Vermögenslage gegenübergestellt, die ohne das Ereignis bestünde. Die Differenz ist der ersatzfähige Schaden. Die Differenzhypothese wird durch normative Wertungen korrigiert, etwa bei der Vorteilsausgleichung oder bei Schadensposten, die rein rechnerisch keine Vermögensminderung darstellen (Beispiel: Nutzungsausfall eines Kraftfahrzeugs, den die Rechtsprechung als Vermögensschaden anerkennt, weil die Gebrauchsmöglichkeit kommerzialisiert ist)."
+  norms:
+  - § 249 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-schaden-geldersatz-251
+  type: definition
+  front: "Wann ist nach § 251 BGB Schadensersatz in Geld statt Naturalrestitution zu leisten?"
+  back: "§ 251 BGB regelt die Kompensation, wenn die Naturalrestitution versagt. Nach § 251 Abs. 1 BGB ist Geldersatz zu leisten, soweit die Herstellung nicht möglich oder zur Entschädigung des Gläubigers nicht genügend ist (etwa beim Totalschaden einer nicht ersetzbaren Sache). Nach § 251 Abs. 2 S. 1 BGB darf der Ersatzpflichtige den Gläubiger in Geld entschädigen, wenn die Herstellung nur mit unverhältnismäßigen Aufwendungen möglich ist; hier hat der Schuldner die Wahl. § 251 Abs. 2 S. 2 BGB stellt klar, dass Heilbehandlungskosten für ein verletztes Tier nicht schon deshalb unverhältnismäßig sind, weil sie den Wert des Tieres deutlich übersteigen. Der Geldersatz nach § 251 BGB ist Wertersatz (Kompensation), der Geldbetrag nach § 249 Abs. 2 S. 1 BGB dagegen Herstellungsaufwand (Restitution)."
+  norms:
+  - § 251 Abs. 1 BGB
+  - § 251 Abs. 2 S. 1 BGB
+  - § 251 Abs. 2 S. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-schaden-130-prozent-grenze
+  type: rechtsprechung
+  front: "Wie behandelt die Rechtsprechung Reparaturkosten am Kraftfahrzeug, die den Wiederbeschaffungswert übersteigen?"
+  back: "Der BGH erkennt das Integritätsinteresse des Geschädigten an seinem vertrauten Fahrzeug an: Reparaturkosten dürfen nach § 249 Abs. 2 S. 1 BGB auch dann verlangt werden, wenn sie den Wiederbeschaffungswert um bis zu 30 Prozent übersteigen (sog. 130-Prozent-Grenze). Voraussetzung ist, dass das Fahrzeug tatsächlich vollständig und fachgerecht repariert und anschließend weitergenutzt wird (nach der Rechtsprechung in der Regel mindestens sechs Monate). Liegen die Reparaturkosten oberhalb dieser Grenze, ist die Herstellung unverhältnismäßig (§ 251 Abs. 2 S. 1 BGB) und der Ersatz auf den Wiederbeschaffungsaufwand beschränkt (Wiederbeschaffungswert abzüglich Restwert)."
+  norms:
+  - § 249 Abs. 2 S. 1 BGB
+  - § 251 Abs. 2 S. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-schaden-entgangener-gewinn-252
+  type: definition
+  front: "Was regelt § 252 BGB zum entgangenen Gewinn?"
+  back: "§ 252 S. 1 BGB stellt klar, dass der zu ersetzende Schaden auch den entgangenen Gewinn umfasst. § 252 S. 2 BGB erleichtert dem Geschädigten den Nachweis: Als entgangen gilt der Gewinn, der nach dem gewöhnlichen Lauf der Dinge oder nach den besonderen Umständen, insbesondere nach den getroffenen Anstalten und Vorkehrungen, mit Wahrscheinlichkeit erwartet werden konnte. Der Geschädigte muss also nicht beweisen, dass der Gewinn sicher eingetreten wäre; es genügt eine hinreichende Wahrscheinlichkeit auf Grundlage konkreter Anknüpfungstatsachen (etwa bereits erteilte Aufträge oder die bisherige Geschäftsentwicklung). Die Norm ist eine Beweiserleichterung, keine eigene Anspruchsgrundlage."
+  norms:
+  - § 252 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-schaden-immaterieller-schaden-253
+  type: definition
+  front: "Unter welchen Voraussetzungen ist ein immaterieller Schaden nach § 253 BGB in Geld zu ersetzen?"
+  back: "Nach § 253 Abs. 1 BGB kann wegen eines Schadens, der nicht Vermögensschaden ist, Entschädigung in Geld nur in den durch das Gesetz bestimmten Fällen verlangt werden. Den wichtigsten Fall enthält § 253 Abs. 2 BGB: Ist wegen einer Verletzung des Körpers, der Gesundheit, der Freiheit oder der sexuellen Selbstbestimmung Schadensersatz zu leisten, kann eine billige Entschädigung in Geld (Schmerzensgeld) verlangt werden. Die Regelung gilt für alle Haftungsgründe, also auch für vertragliche Ansprüche und Gefährdungshaftung, nicht nur für das Deliktsrecht. Eine reine Sachbeschädigung löst kein Schmerzensgeld aus; Ersatz für Verletzungen des allgemeinen Persönlichkeitsrechts leitet die Rechtsprechung unmittelbar aus dem Schutzauftrag der Verfassung her, nicht aus § 253 Abs. 2 BGB."
+  norms:
+  - § 253 Abs. 1 BGB
+  - § 253 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-schaden-mitverschulden-254
+  type: definition
+  front: "Welche Fallgruppen des Mitverschuldens unterscheidet § 254 BGB, und welche Rechtsfolge hat die Norm?"
+  back: "§ 254 Abs. 1 BGB erfasst das Mitverschulden bei der Entstehung des Schadens: Hat ein Verschulden des Geschädigten mitgewirkt, hängen Ersatzpflicht und Umfang davon ab, inwieweit der Schaden vorwiegend von der einen oder anderen Seite verursacht wurde. § 254 Abs. 2 S. 1 BGB erfasst zwei weitere Fälle: das Unterlassen eines Hinweises auf die Gefahr eines ungewöhnlich hohen Schadens (Warnobliegenheit) und das Unterlassen der Schadensabwendung oder -minderung (Schadensminderungsobliegenheit). Verschulden meint hier ein Verschulden gegen sich selbst, also die Verletzung einer Obliegenheit, nicht einer Rechtspflicht. Rechtsfolge ist eine Abwägung der beiderseitigen Verursachungs- und Verschuldensbeiträge, die zu einer Quotelung bis hin zum vollständigen Ausschluss des Anspruchs führen kann. Der Verweis in § 254 Abs. 2 S. 2 BGB auf § 278 BGB gilt nach allgemeiner Ansicht für beide Absätze."
+  norms:
+  - § 254 Abs. 1 BGB
+  - § 254 Abs. 2 S. 1 BGB
+  - § 254 Abs. 2 S. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-schaden-254-278-streit
+  type: streitstand
+  front: "Muss sich der Geschädigte das Mitverschulden seiner Hilfspersonen über § 254 Abs. 2 S. 2, § 278 BGB auch dann zurechnen lassen, wenn zum Schädiger keine Sonderverbindung besteht?"
+  back: "Umstritten ist, ob der Verweis des § 254 Abs. 2 S. 2 BGB auf § 278 BGB eine Rechtsgrund- oder eine Rechtsfolgenverweisung ist. Nach herrschender Meinung und ständiger Rechtsprechung handelt es sich um eine Rechtsgrundverweisung: § 278 BGB setzt ein bestehendes Schuldverhältnis voraus, sodass dem Geschädigten das Verschulden seiner Hilfspersonen nur zugerechnet wird, wenn im Zeitpunkt der Schädigung bereits eine Sonderverbindung (vertraglich, vorvertraglich oder gesetzlich) zum Schädiger bestand. Fehlt sie, kommt nur eine Zurechnung über § 831 BGB analog (Verrichtungsgehilfen) in Betracht. Die Gegenauffassung versteht den Verweis als Rechtsfolgenverweisung und rechnet das Verhalten von Hilfspersonen stets zu, weil der Geschädigte sich ihrer bedient hat. Praktisch relevant ist die Frage vor allem im Straßenverkehr, wo dem Beifahrer das Verschulden des Fahrers gegenüber dem Unfallgegner nach h.M. nicht über § 278 BGB zugerechnet wird."
+  norms:
+  - § 254 Abs. 2 S. 2 BGB
+  - § 278 BGB
+  - § 831 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+- slug: zr-schaden-vorteilsausgleichung
+  type: definition
+  front: "Definiere: Vorteilsausgleichung"
+  back: "Die Vorteilsausgleichung ist ein ungeschriebenes, aus dem Sinn des Schadensersatzrechts (§ 249 Abs. 1 BGB) abgeleitetes Rechtsinstitut: Der Geschädigte soll durch den Schadensersatz nicht bessergestellt werden, als er ohne das schädigende Ereignis stünde. Vorteile, die ihm durch das Ereignis zufließen, sind deshalb auf den Schaden anzurechnen, wenn drei Voraussetzungen vorliegen: Der Vorteil muss adäquat kausal auf dem schädigenden Ereignis beruhen, die Anrechnung muss dem Zweck des Schadensersatzes entsprechen, und sie darf den Schädiger nicht unbillig entlasten. Anzurechnen sind etwa ersparte Aufwendungen oder der Abzug „neu für alt“, wenn die reparierte Sache durch neue Teile eine messbare Werterhöhung erfährt. Nicht anzurechnen sind Leistungen Dritter, die den Schädiger nicht entlasten sollen, etwa freiwillige Zuwendungen oder Versicherungsleistungen, für die ein gesetzlicher Forderungsübergang vorgesehen ist."
+  norms:
+  - § 249 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-09
+schemata:
+- slug: zr-schema-schadensumfang-249-254
+  title: "Prüfung von Art und Umfang des Schadensersatzes, §§ 249-254 BGB"
+  norms:
+  - § 249 BGB
+  - § 251 BGB
+  - § 252 BGB
+  - § 253 BGB
+  - § 254 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: "I. Haftungsbegründender Tatbestand einer Anspruchsgrundlage liegt vor"
+    hinweis: "Die §§ 249 ff. BGB sind keine Anspruchsgrundlage, sondern regeln nur Art und Umfang eines anderweitig begründeten Ersatzanspruchs (etwa aus § 280 Abs. 1 BGB oder § 823 Abs. 1 BGB)."
+  - label: "II. Schaden und haftungsausfüllende Kausalität"
+    children:
+    - label: "1. Schaden nach der Differenzhypothese (mit normativer Korrektur)"
+    - label: "2. Haftungsausfüllende Kausalität zwischen Rechtsgutsverletzung und Schaden (Äquivalenz, Adäquanz, Schutzzweck der Norm)"
+  - label: "III. Art des Schadensersatzes"
+    children:
+    - label: "1. Grundsatz: Naturalrestitution, § 249 Abs. 1 BGB"
+    - label: "2. Ersetzungsbefugnis: Geldbetrag zur Herstellung bei Personen- oder Sachschaden, § 249 Abs. 2 S. 1 BGB"
+      hinweis: "Umsatzsteuer nur, wenn tatsächlich angefallen, § 249 Abs. 2 S. 2 BGB; bei Kfz-Schäden 130-Prozent-Grenze beachten."
+    - label: "3. Geldersatz nach Fristsetzung, § 250 BGB"
+    - label: "4. Kompensation in Geld, § 251 Abs. 1 BGB (Herstellung unmöglich oder ungenügend) oder § 251 Abs. 2 S. 1 BGB (Herstellung unverhältnismäßig)"
+  - label: "IV. Umfang des Schadensersatzes"
+    children:
+    - label: "1. Entgangener Gewinn, § 252 BGB"
+    - label: "2. Immaterieller Schaden nur in gesetzlich bestimmten Fällen, § 253 Abs. 1 BGB; Schmerzensgeld bei Verletzung von Körper, Gesundheit, Freiheit oder sexueller Selbstbestimmung, § 253 Abs. 2 BGB"
+    - label: "3. Vorteilsausgleichung"
+  - label: "V. Mitverschulden des Geschädigten, § 254 BGB"
+    children:
+    - label: "1. Mitwirkung bei der Entstehung des Schadens, § 254 Abs. 1 BGB"
+    - label: "2. Unterlassene Warnung oder Schadensminderung, § 254 Abs. 2 S. 1 BGB"
+    - label: "3. Zurechnung von Hilfspersonen, § 254 Abs. 2 S. 2 BGB iVm § 278 BGB (h.M.: nur bei Sonderverbindung)"
+    - label: "4. Abwägung der Verursachungs- und Verschuldensbeiträge, Quotelung"
+  - label: "VI. Ergebnis: Höhe des Ersatzanspruchs"
+faelle:
+- slug: zr-fall-kurierwagen-nach-dem-unfall
+  title: "Der Kurierwagen nach dem Unfall"
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: "A fährt mit seinem Pkw aus Unachtsamkeit auf den ordnungsgemäß an einer roten Ampel wartenden Lieferwagen des B auf. B ist selbstständiger Kurierfahrer und nutzt den Lieferwagen ausschließlich für seine Aufträge. Ein Sachverständiger ermittelt Reparaturkosten von 6.000 EUR bei einem Wiederbeschaffungswert von 5.000 EUR und einem Restwert von 1.000 EUR. B lässt den Lieferwagen vollständig und fachgerecht in einer Werkstatt reparieren und nutzt ihn seither weiter. Im Zuge der Reparatur wird die vier Jahre alte Stoßstange durch ein Neuteil ersetzt, wodurch der Wagen nach Einschätzung des Sachverständigen um 200 EUR wertvoller ist als vor dem Unfall. Nach dem Unfall lässt B den fahruntüchtigen Wagen zwei Wochen mit zerbrochener Heckscheibe im Freien stehen, obwohl er ihn ohne Weiteres hätte abdecken oder abschleppen lassen können; durch eindringenden Regen entsteht ein zusätzlicher Schaden an der Innenausstattung in Höhe von 500 EUR. Während der dreiwöchigen Reparaturzeit kann B zwei bereits fest vereinbarte Kurieraufträge nicht ausführen und verliert dadurch einen Gewinn von 800 EUR. B verlangt von A Ersatz der Reparaturkosten (6.000 EUR), des Regenschadens (500 EUR) und des entgangenen Gewinns (800 EUR). A meint, er müsse höchstens den Wiederbeschaffungswert abzüglich Restwert zahlen."
+  question: "In welcher Höhe hat B gegen A einen Anspruch auf Schadensersatz? Die Haftung des A dem Grunde nach aus § 823 Abs. 1 BGB ist zu unterstellen."
+  steps:
+  - prompt: "Kann B die vollen Reparaturkosten von 6.000 EUR verlangen, obwohl sie den Wiederbeschaffungswert übersteigen?"
+    erwartung: "Ja. Nach § 249 Abs. 2 S. 1 BGB kann B den zur Herstellung erforderlichen Geldbetrag verlangen. Die Reparaturkosten liegen bei 120 Prozent des Wiederbeschaffungswerts und damit innerhalb der von der Rechtsprechung anerkannten 130-Prozent-Grenze; B hat vollständig und fachgerecht repariert und nutzt den Wagen weiter, sodass sein Integritätsinteresse den Ersatz der Reparaturkosten rechtfertigt. Ein Verweis auf den Wiederbeschaffungsaufwand nach § 251 Abs. 2 S. 1 BGB scheidet aus."
+  - prompt: "Wie wirkt sich die Werterhöhung durch die neue Stoßstange aus?"
+    erwartung: "Über die Vorteilsausgleichung ist ein Abzug „neu für alt“ in Höhe von 200 EUR vorzunehmen, weil die messbare Werterhöhung adäquat kausal auf dem Unfall beruht und die Anrechnung dem Zweck des Schadensersatzes entspricht, B nicht besserzustellen als vor dem Unfall."
+  - prompt: "Ist der Regenschaden an der Innenausstattung ersatzfähig?"
+    erwartung: "Der Regenschaden ist haftungsausfüllend kausal auf den Unfall zurückzuführen, B hat aber seine Schadensminderungsobliegenheit aus § 254 Abs. 2 S. 1 BGB verletzt, weil er den Wagen ohne Weiteres hätte abdecken oder abschleppen lassen können. Da die Verursachung dieses Schadensteils ganz überwiegend auf B zurückgeht, ist der Anspruch insoweit ausgeschlossen."
+  - prompt: "Kann B den entgangenen Gewinn aus den Kurieraufträgen verlangen?"
+    erwartung: "Ja, nach § 252 BGB. Die Aufträge waren bereits fest vereinbart, sodass der Gewinn nach den getroffenen Anstalten und Vorkehrungen mit Wahrscheinlichkeit zu erwarten war (§ 252 S. 2 BGB)."
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: "Erkannt, dass §§ 249 ff. BGB nur Art und Umfang regeln und die Anspruchsgrundlage § 823 Abs. 1 BGB ist"
+      weight: 1.0
+      norms:
+      - § 249 Abs. 1 BGB
+      - § 823 Abs. 1 BGB
+      keywords:
+      - "823"
+      - Anspruchsgrundlage
+      - Umfang
+      card_slugs:
+      - zr-schaden-naturalrestitution-249
+    - id: p2
+      label: "Reparaturkosten als Herstellungsaufwand nach § 249 Abs. 2 S. 1 BGB eingeordnet und 130-Prozent-Grenze geprüft (120 Prozent, Reparatur durchgeführt, Weiternutzung)"
+      weight: 2.5
+      required: true
+      norms:
+      - § 249 Abs. 2 S. 1 BGB
+      - § 251 Abs. 2 S. 1 BGB
+      keywords:
+      - "130"
+      - Integritätsinteresse
+      - Wiederbeschaffungswert
+      - "249"
+      card_slugs:
+      - zr-schaden-130-prozent-grenze
+      - zr-schaden-geldersatz-251
+    - id: p3
+      label: "Abzug „neu für alt“ in Höhe von 200 EUR im Wege der Vorteilsausgleichung vorgenommen"
+      weight: 1.5
+      norms:
+      - § 249 Abs. 1 BGB
+      keywords:
+      - neu für alt
+      - Vorteilsausgleichung
+      - "200"
+      card_slugs:
+      - zr-schaden-vorteilsausgleichung
+    - id: p4
+      label: "Regenschaden: Verletzung der Schadensminderungsobliegenheit nach § 254 Abs. 2 S. 1 BGB erkannt und Anspruch insoweit gekürzt oder ausgeschlossen"
+      weight: 2.0
+      required: true
+      norms:
+      - § 254 Abs. 2 S. 1 BGB
+      keywords:
+      - "254"
+      - Schadensminderung
+      - Obliegenheit
+      card_slugs:
+      - zr-schaden-mitverschulden-254
+    - id: p5
+      label: "Entgangener Gewinn von 800 EUR nach § 252 BGB als ersatzfähig eingeordnet, Beweiserleichterung des § 252 S. 2 BGB angesprochen"
+      weight: 1.5
+      required: true
+      norms:
+      - § 252 BGB
+      keywords:
+      - "252"
+      - entgangener Gewinn
+      - Wahrscheinlichkeit
+      card_slugs:
+      - zr-schaden-entgangener-gewinn-252
+    - id: p6
+      label: "Kein Schmerzensgeld, da nur Sachschaden (§ 253 Abs. 2 BGB nicht einschlägig) - zumindest nicht fälschlich zugesprochen"
+      weight: 0.5
+      norms:
+      - § 253 Abs. 2 BGB
+      keywords:
+      - Schmerzensgeld
+      - "253"
+      - immateriell
+      card_slugs:
+      - zr-schaden-immaterieller-schaden-253
+    - id: p7
+      label: "Ergebnis: Anspruch in Höhe von 6.600 EUR (6.000 minus 200 plus 800), Regenschaden nicht ersatzfähig"
+      weight: 1.0
+      keywords:
+      - "6.600"
+      - "6600"
+      - Anspruch besteht

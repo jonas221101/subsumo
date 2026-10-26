@@ -38,8 +38,15 @@ Future<AppState> _pumpHomeShell(WidgetTester tester, {required AppState state}) 
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
 
-  AppState buildState({List<Map<String, dynamic>> dueCards = const []}) {
+  // `dueUnavailable`: der Kartenabruf schlaegt fehl. Seit dem Relaunch laedt
+  // HomeShell den Stapel beim Start selbst (fuer die Startseite) - ein
+  // vorab gesetztes `dueCardsFromCache` bliebe sonst nur bestehen, wenn
+  // dieser Abruf auch wirklich scheitert.
+  AppState buildState({List<Map<String, dynamic>> dueCards = const [], bool dueUnavailable = false}) {
     final client = MockClient((request) async {
+      if (dueUnavailable && request.url.path == '/v1/cards/due') {
+        return http.Response('{"detail":"unavailable"}', 503);
+      }
       final body = request.url.path == '/v1/cards/due' ? dueCards : _coverage;
       return http.Response(
         jsonEncode(body),
@@ -58,7 +65,7 @@ void main() {
   });
 
   testWidgets('dueCardsFromCache zeigt den offline-Hinweis im AppBar', (tester) async {
-    final state = buildState()..dueCardsFromCache = true;
+    final state = buildState(dueUnavailable: true)..dueCardsFromCache = true;
     await _pumpHomeShell(tester, state: state);
 
     expect(find.widgetWithText(SubsumoChip, 'offline'), findsOneWidget);
@@ -82,10 +89,10 @@ void main() {
 
   testWidgets(
       'Lesemodus (SUB-160) im Karteikarten-Tab blendet AppBar/Navigation aus, '
-      'Rueckkehr jederzeit moeglich', (tester) async {
+      'Rückkehr jederzeit möglich', (tester) async {
     final state = buildState(
       dueCards: const [
-        {'front': 'Was regelt § 985 BGB?', 'back': 'Herausgabeanspruch des Eigentuemers.'},
+        {'front': 'Was regelt § 985 BGB?', 'back': 'Herausgabeanspruch des Eigentümers.'},
       ],
     );
     await _pumpHomeShell(tester, state: state);

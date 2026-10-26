@@ -52,10 +52,26 @@ jobs:
           cache: true
       - run: flutter pub get
       - run: flutter analyze
+      # Die vorgebaute QuickJS-Bibliothek fuer die Werkbank-Sandbox (SUB-318)
+      # liegt im Pub-Cache-Paket, nicht im Runner-Bibliothekspfad -
+      # `flutter test` muss ihr per LIBQUICKJSC_TEST_PATH den absoluten Pfad
+      # mitgeben (siehe app/lib/sandbox/sandbox_runtime_io.dart).
+      - name: QuickJS-Bibliothekspfad fuer Sandbox-Tests ermitteln
+        run: |
+          echo "LIBQUICKJSC_TEST_PATH=$(find "$HOME/.pub-cache/hosted/pub.dev" -maxdepth 1 -iname 'flutter_js-*' -print -quit)/linux/shared/libquickjs_c_bridge_plugin.so" >> "$GITHUB_ENV"
       - run: flutter test
       # Plattformordner sind bewusst nicht eingecheckt (siehe app/README.md),
-      # daher hier einmalig fuer den Web-Build generieren.
+      # daher hier einmalig fuer den Web-Build generieren - `flutter test
+      # --platform chrome` (naechster Schritt) braucht diesen Ordner nicht,
+      # aber der spaetere `flutter build web`.
       - run: flutter create . --platforms=web --org de.subsumo
+      # `flutter test` (voriger Schritt) laeuft nur auf der VM-Plattform und
+      # UEBERSPRINGT `@TestOn('browser')`-Dateien stillschweigend - die
+      # Web-Implementierung der Werkbank-Sandbox (SUB-318) braucht einen
+      # echten Browser (Iframe/Worker/postMessage lassen sich nicht auf der
+      # VM nachbilden). `ubuntu-latest`-Runner bringen Chrome vorinstalliert
+      # mit.
+      - run: flutter test --platform chrome test/sandbox/sandbox_runtime_web_test.dart test/sandbox/sandbox_runtime_web_message_source_test.dart
       - run: flutter build web --release
       - uses: actions/upload-artifact@v4
         with:

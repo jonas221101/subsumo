@@ -24,19 +24,25 @@ class SubsumoPalette {
   static const ink300 = Color(0xFFB7BCC2);
   static const ink100 = Color(0xFFE7E9EC);
 
-  // Flaechen Light. surface1/2 bewusst etwas staerker von surface0
-  // abgesetzt als in der ersten Fassung (SUB-157) - Karten sollen ohne
-  // staerkere Schatten (elevation.dart bleibt unveraendert) allein durch
-  // die Flaechenfarbe sichtbar bleiben. Kontraste in docs/11-designsystem.md
-  // Abschnitt 5 nachgerechnet.
-  static const surface0Light = Color(0xFFFFFFFF);
-  static const surface1Light = Color(0xFFF0F1F4);
-  static const surface2Light = Color(0xFFE4E7EB);
+  // Flaechen Light (Relaunch der App-Screens, "Kanzlei-Editorial"): warmes
+  // Papier statt Reinweiss. surface0 ist die Karten-/Lesefaeche, surface1
+  // der Seitenhintergrund (Canvas), surface2 die Seitenleiste bzw. eine
+  // gedrueckte/hervorgehobene Flaeche. Karten setzen sich ueber eine
+  // Haarlinie (hairline) und den Helligkeitsschritt zum Canvas ab, nicht
+  // ueber Schatten - elevation.dart bleibt unveraendert. Kontraste in
+  // docs/11-designsystem.md Abschnitt 5/9 nachgerechnet.
+  static const surface0Light = Color(0xFFFDFCF9);
+  static const surface1Light = Color(0xFFF4F1EA);
+  static const surface2Light = Color(0xFFE9E4D8);
+  static const hairlineLight = Color(0xFFDDD7C9);
 
-  // Flaechen Dark, gleiche Begruendung wie Light.
-  static const surface0Dark = Color(0xFF12151A);
-  static const surface1Dark = Color(0xFF20242C);
-  static const surface2Dark = Color(0xFF2D3340);
+  // Flaechen Dark: Tinten-Navy statt neutralem Grau, damit Light und Dark
+  // dieselbe warme bzw. tiefe Anmutung tragen. Gleiche Rollenlogik wie Light
+  // (surface0 = Karte, surface1 = Canvas, surface2 = Seitenleiste).
+  static const surface0Dark = Color(0xFF171D27);
+  static const surface1Dark = Color(0xFF0F131A);
+  static const surface2Dark = Color(0xFF1F2733);
+  static const hairlineDark = Color(0xFF2C3543);
 
   // Neutral/Text, Dark-Mode-Werte.
   static const ink900Dark = Color(0xFFEDEFF2);
@@ -88,9 +94,10 @@ ColorScheme buildColorScheme(Brightness brightness) {
       surface: SubsumoPalette.surface0Dark,
       onSurface: SubsumoPalette.ink900Dark,
       surfaceContainerHighest: SubsumoPalette.surface1Dark,
+      surfaceContainerHigh: SubsumoPalette.surface2Dark,
       onSurfaceVariant: SubsumoPalette.ink700Dark,
       outline: SubsumoPalette.ink500Dark,
-      outlineVariant: SubsumoPalette.surface2Dark,
+      outlineVariant: SubsumoPalette.hairlineDark,
       error: SubsumoPalette.feedbackNegativeDark,
       onError: SubsumoPalette.surface0Dark,
     );
@@ -138,7 +145,7 @@ class SubsumoColors extends ThemeExtension<SubsumoColors> {
   final Color accent;
 
   /// [accent] bei niedriger Deckkraft ueber der Flaeche - nur fuer die
-  /// "Ehrlich ueber den Umfang"-Sektion der Landingpage (SUB-227/SUB-228),
+  /// "Was drin ist"-Sektion (vormals "Ehrlich über den Umfang") der Landingpage (SUB-227/SUB-228),
   /// niedrig genug gewaehlt, dass Fliesstextkontrast darauf nicht spuerbar
   /// sinkt (nachgerechnet in docs/11-designsystem.md Abschnitt 5). Bewusst
   /// keine neue Hex-Konstante, sondern [accent] selbst mit reduzierter
