@@ -30,6 +30,7 @@ from sqlalchemy.orm import Session
 from app.models import Case, Topic, User
 from app.schemas import LernprofilIn
 from app.services import srs
+from app.services.gutachten import finding_label
 
 # Verschiebung der Ziel-Retention je Sicherheitsniveau. +/-0.04 entspricht bei
 # FSRS grob einem Drittel weniger bzw. mehr Wiederholungen - spuerbar, aber
@@ -47,7 +48,7 @@ PERSONA_WIEDERHOLUNG = "wiederholung"  # nach dem Studium, Referendariat, Auffri
 
 PERSONA_LABELS = {
     PERSONA_EINSTIEG: "Einstieg: Karten und Schemata zuerst",
-    PERSONA_AUFBAU: "Aufbau: Faelle und Gutachtentechnik",
+    PERSONA_AUFBAU: "Aufbau: Fälle und Gutachtentechnik",
     PERSONA_EXAMEN: "Examen: Plan und Klausurrhythmus",
     PERSONA_WIEDERHOLUNG: "Wiederholung: Auffrischen nach Schwachstellen",
 }
@@ -57,73 +58,73 @@ TECHNIK_TIPPS: dict[str, dict[str, str]] = {
     "kein_obersatz": {
         "titel": "Obersatz zuerst",
         "tipp": (
-            "Jede Pruefung beginnt mit einem Obersatz im Konjunktiv: 'A koennte gegen B "
+            "Jede Prüfung beginnt mit einem Obersatz im Konjunktiv: 'A könnte gegen B "
             "einen Anspruch auf ... aus § ... haben.' Ohne ihn erkennt der Korrektor die "
-            "Methode nicht - das kostet mehr als jeder inhaltliche Fehler."
+            "Methode nicht – das kostet mehr als jeder inhaltliche Fehler."
         ),
     },
     "sprung_zum_ergebnis": {
         "titel": "Subsumtion statt Behauptung",
         "tipp": (
             "Zwischen Definition und Ergebnis fehlt der Schritt, der den Sachverhalt unter "
-            "die Definition zieht. Schreibe fuer jedes Merkmal einen Satz, der mit 'Hier ...' "
-            "oder 'Vorliegend ...' beginnt."
+            "die Definition zieht. Schreibe für jedes Merkmal einen Satz, der mit „Hier ...“ "
+            "oder „Vorliegend ...“ beginnt."
         ),
     },
     "keine_subsumtion": {
         "titel": "Subsumtion statt Behauptung",
         "tipp": (
             "Definition und Ergebnis stehen da, aber nicht der Weg dazwischen. Nenne die "
-            "Tatsache aus dem Sachverhalt, die das Merkmal erfuellt, bevor du das Ergebnis "
+            "Tatsache aus dem Sachverhalt, die das Merkmal erfüllt, bevor du das Ergebnis "
             "feststellst."
         ),
     },
     "urteilsstil": {
         "titel": "Gutachten- statt Urteilsstil",
         "tipp": (
-            "'Da ..., ist ...' gehoert ins Urteil, nicht ins Gutachten. Im Gutachten steht "
-            "erst die Frage (koennte), dann die Pruefung, dann das Ergebnis - nur bei "
-            "unproblematischen Punkten darf der Urteilsstil verkuerzen."
+            "„Da ..., ist ...“ gehört ins Urteil, nicht ins Gutachten. Im Gutachten steht "
+            "erst die Frage (könnte), dann die Prüfung, dann das Ergebnis – nur bei "
+            "unproblematischen Punkten darf der Urteilsstil verkürzen."
         ),
     },
     "offener_obersatz": {
-        "titel": "Pruefungspunkte abschliessen",
+        "titel": "Prüfungspunkte abschließen",
         "tipp": (
             "Ein aufgeworfener Obersatz braucht einen Ergebnissatz. Lies vor der Abgabe jeden "
-            "'koennte'-Satz und pruefe, ob ein 'somit'/'folglich' dazu existiert."
+            "„könnte“-Satz und prüfe, ob ein „somit“/„folglich“ dazu existiert."
         ),
     },
     "keine_definition": {
         "titel": "Definition vor Subsumtion",
         "tipp": (
             "Ein Tatbestandsmerkmal wird erst definiert, dann subsumiert. Die Definitionskarten "
-            "des Themas liefern den Wortlaut - sie sind dafuer da, woertlich zu sitzen."
+            "des Themas liefern den Wortlaut – sie sind dafür da, wörtlich zu sitzen."
         ),
     },
     "kein_ergebnis": {
         "titel": "Ergebnissatz formulieren",
         "tipp": (
-            "Jede Pruefung endet mit einem klaren Ergebnis im Indikativ: 'A hat gegen B einen "
-            "Anspruch aus ...'. Ein Gutachten ohne Ergebnis ist unvollstaendig, egal wie gut "
-            "die Pruefung war."
+            "Jede Prüfung endet mit einem klaren Ergebnis im Indikativ: 'A hat gegen B einen "
+            "Anspruch aus ...'. Ein Gutachten ohne Ergebnis ist unvollständig, egal wie gut "
+            "die Prüfung war."
         ),
     },
     "keine_norm": {
         "titel": "Normen zitieren",
         "tipp": (
             "Jede Anspruchsgrundlage und jedes Tatbestandsmerkmal braucht die Norm mit Absatz "
-            "und Satz. Die Norm-Karten des Themas sind dafuer da - zieh sie vor."
+            "und Satz. Die Norm-Karten des Themas sind dafür da – zieh sie vor."
         ),
     },
     "gesetz_fehlt": {
         "titel": "Gesetz zur Norm",
-        "tipp": "'§ 433 Abs. 2' ohne 'BGB' ist unvollstaendig - das Gesetz gehoert zu jedem Zitat.",
+        "tipp": "„§ 433 Abs. 2“ ohne „BGB“ ist unvollständig – das Gesetz gehört zu jedem Zitat.",
     },
     "schachtelsatz": {
-        "titel": "Kurze Saetze",
+        "titel": "Kurze Sätze",
         "tipp": (
-            "Ein Gedanke, ein Satz. Lange Schachtelsaetze kosten den Korrektor Zeit und dich "
-            "Praezision - teile Saetze mit mehr als zwei Nebensaetzen."
+            "Ein Gedanke, ein Satz. Lange Schachtelsätze kosten den Korrektor Zeit und dich "
+            "Präzision – teile Sätze mit mehr als zwei Nebensätzen."
         ),
     },
 }
@@ -241,8 +242,8 @@ def next_step(inp: NextStepInput) -> dict[str, Any]:
     if inp.due_cards > 0:
         return _step(
             "wiederholung",
-            f"{inp.due_cards} faellige Karten wiederholen",
-            "Wiederholungen zuerst - neuen Stoff aufzunehmen, waehrend Altes verfaellt, "
+            f"{inp.due_cards} fällige Karten wiederholen",
+            "Wiederholungen zuerst - neuen Stoff aufzunehmen, während Altes verfällt, "
             "ist der teuerste Fehler.",
             {"type": "review"},
         )
@@ -266,7 +267,7 @@ def next_step(inp: NextStepInput) -> dict[str, Any]:
             return _step(
                 "deck",
                 f"Deck lernen: {deck['title']}",
-                "Karten vor Schemata vor Faellen - das Deck mit der geringsten Reife in "
+                "Karten vor Schemata vor Fällen - das Deck mit der geringsten Reife in "
                 "deinem Semesterstoff.",
                 {"type": "deck", "slug": deck["slug"], "title": deck["title"]},
             )
@@ -277,15 +278,15 @@ def next_step(inp: NextStepInput) -> dict[str, Any]:
             return _step(
                 "fall",
                 f"Fall zum Schwachpunkt: {fall[1]}",
-                f"{s['verfehlte_pruefpunkte']} verfehlte Pruefpunkte zu '{s['title']}' - "
+                f"{s['verfehlte_pruefpunkte']} verfehlte Prüfpunkte zu '{s['title']}' - "
                 "ein Fehler im Fall ist die beste Wiederholungskarte.",
                 {"type": "case", "slug": fall[0], "title": fall[1], "mode": "uebung"},
             )
         return _step(
             "thema",
             f"Nacharbeiten: {s['title']}",
-            f"{s['verfehlte_pruefpunkte']} verfehlte Pruefpunkte - erst die Karten, dann der "
-            "naechste Fall.",
+            f"{s['verfehlte_pruefpunkte']} verfehlte Prüfpunkte - erst die Karten, dann der "
+            "nächste Fall.",
             {"type": "topic", "slug": s["topic_slug"], "title": s["title"]},
         )
     if inp.schwaechstes_thema is not None:
@@ -302,13 +303,13 @@ def next_step(inp: NextStepInput) -> dict[str, Any]:
         return _step(
             "thema",
             f"Weiter mit: {title}",
-            f"Hoechste Prioritaet nach Relevanz, Fokus und Reife ({round(mastery * 100)} %).",
+            f"Höchste Priorität nach Relevanz, Fokus und Reife ({round(mastery * 100)} %).",
             {"type": "topic", "slug": slug, "title": title},
         )
     return _step(
         "frei",
-        "Nichts faellig, nichts offen",
-        "Gut gemacht. Ein Schema rekonstruieren oder einen Fall aus einem Deck waehlen.",
+        "Nichts fällig, nichts offen",
+        "Gut gemacht. Ein Schema rekonstruieren oder einen Fall aus einem Deck wählen.",
         {"type": "none"},
     )
 
@@ -336,7 +337,13 @@ def technik_tipp(strukturfehler: list[dict[str, Any]]) -> dict[str, Any] | None:
     for eintrag in strukturfehler:
         tipp = TECHNIK_TIPPS.get(str(eintrag.get("code", "")))
         if tipp is not None:
-            return {**tipp, "code": eintrag["code"], "anzahl": eintrag.get("anzahl", 0)}
+            code = str(eintrag["code"])
+            return {
+                **tipp,
+                "code": code,
+                "label": finding_label(code),
+                "anzahl": eintrag.get("anzahl", 0),
+            }
     return None
 
 
@@ -349,13 +356,13 @@ def validate_topic_refs(db: Session, profil: LernprofilIn, sichtbar: set[str]) -
             if slug not in bekannt:
                 fehler.append(f"{feld}: unbekanntes Thema '{slug}'")
             elif slug not in sichtbar:
-                fehler.append(f"{feld}: Thema '{slug}' ist fuer dein Bundesland nicht sichtbar")
+                fehler.append(f"{feld}: Thema '{slug}' ist für dein Bundesland nicht sichtbar")
     doppelt = set(profil.themen_fokus) & set(profil.themen_pausiert)
     if doppelt:
         fehler.append(f"Thema kann nicht Fokus und pausiert sein: {', '.join(sorted(doppelt))}")
     slugs = [d.slug for d in profil.eigene_decks]
     if len(set(slugs)) != len(slugs):
-        fehler.append("eigene_decks: Slugs muessen eindeutig sein")
+        fehler.append("eigene_decks: Slugs müssen eindeutig sein")
     for deck in profil.eigene_decks:
         for slug in deck.topic_slugs:
             if slug not in bekannt:

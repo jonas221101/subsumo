@@ -1,0 +1,269 @@
+topic:
+  slug: nw-bauordnungsrecht
+  area: oeffentliches-recht
+  title: 'Bauordnungsrecht Nordrhein-Westfalen: BauO NRW 2018'
+  parent: oeffentliches-recht
+  bundesland: NW
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: nw-bau-verfahren
+  type: norm
+  front: Welche Verfahrensarten kennt die BauO NRW 2018?
+  back: Die Landesbauordnung 2018 unterscheidet verfahrensfreie Bauvorhaben (§ 62 BauO NRW), die Genehmigungsfreistellung (§ 63 BauO NRW; u. a. im Geltungsbereich eines Bebauungsplans nach § 30 Abs. 1 oder §§ 12, 30 Abs. 2 BauGB, wenn das Vorhaben den Festsetzungen nicht widerspricht, die Erschließung gesichert ist und die Gemeinde kein Genehmigungsverfahren verlangt), das vereinfachte Baugenehmigungsverfahren (§ 64 BauO NRW) und das Baugenehmigungsverfahren für große Sonderbauten (§ 65 BauO NRW). Im vereinfachten Verfahren prüft die Behörde neben dem Bauplanungsrecht (§§ 29 bis 38 BauGB) die §§ 4, 6, 48 und 49 BauO NRW, örtliche Bauvorschriften, beantragte Abweichungen und bestimmte andere öffentlich-rechtliche Vorschriften (§ 64 Abs. 1 BauO NRW). Verfahrensfreiheit
+    bedeutet nur Freiheit von der Pflicht zum Genehmigungsverfahren; die materiellen Anforderungen des
+    öffentlichen Baurechts müssen auch bei verfahrensfreien Vorhaben eingehalten werden. Das bauplanungsrechtliche
+    Prüfprogramm (§§ 29 ff. BauGB) ist in allen Genehmigungsverfahren zu prüfen. Die Baugenehmigung ist
+    zu erteilen, wenn dem Vorhaben keine öffentlich-rechtlichen Vorschriften entgegenstehen (§ 74 BauO
+    NRW).
+  norms:
+  - § 62 BauO NRW
+  - § 74 BauO NRW
+  - §§ 29 ff. BauGB
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: nw-bau-genehmigungspflicht
+  type: definition
+  front: Wann bedarf ein Vorhaben der Baugenehmigung?
+  back: Die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen bedürfen grundsätzlich der Baugenehmigung,
+    soweit nicht ein Ausnahmetatbestand (verfahrensfrei, Genehmigungsfreistellung) eingreift. Bauliche
+    Anlagen sind mit dem Erdboden verbundene, aus Bauprodukten hergestellte Anlagen. Die Nutzungsänderung
+    ist genehmigungspflichtig, wenn für die neue Nutzung andere oder weitergehende Anforderungen gelten
+    als für die bisherige. Die Genehmigung bezieht sich auf das Vorhaben nach Lage und Nutzung; Bestandsschutz
+    entsteht nur im Rahmen der Genehmigung. Wer ohne erforderliche Genehmigung baut, handelt formell illegal.
+  norms:
+  - § 62 BauO NRW
+  - § 74 BauO NRW
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: nw-bau-genehmigung
+  type: definition
+  front: Welche Rechtsnatur und Wirkung hat die Baugenehmigung?
+  back: 'Die Baugenehmigung ist ein feststellender Verwaltungsakt mit verfügendem Element: Sie stellt
+    fest, dass das Vorhaben mit dem öffentlichen Baurecht vereinbar ist, und gestattet die Ausführung.
+    Sie wird unbeschadet der privaten Rechte Dritter erteilt (§ 74 BauO NRW). Wegen Art. 14 Abs. 1 GG
+    (Baufreiheit) besteht ein Anspruch auf Erteilung, wenn das Vorhaben genehmigungsfähig ist. Sie verleiht
+    Bestandsschutz. Die Rücknahme richtet sich nach § 48 VwVfG NRW. Nachbarn können die Genehmigung nur
+    anfechten, wenn sie in nachbarschützenden Rechten verletzt sind.'
+  norms:
+  - § 74 BauO NRW
+  - Art. 14 Abs. 1 GG
+  - § 48 VwVfG NRW
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: nw-bau-abstandsflaechen
+  type: norm
+  front: Wie werden Abstandsflächen nach der BauO NRW 2018 bemessen?
+  back: Vor Außenwänden von Gebäuden sind Abstandsflächen von oberirdischen Gebäuden freizuhalten (§ 6
+    BauO NRW). Die Tiefe beträgt grundsätzlich 0,4 H (H = Wandhöhe), mindestens 3 m. Die Abstandsfläche
+    muss auf dem Grundstück selbst liegen, soweit nicht öffentliche Flächen oder Baulasten dies zulassen;
+    Abstandsflächen dürfen sich grundsätzlich nicht überdecken. Ausnahmen gelten für die planungsrechtlich
+    zulässige Grenzbebauung. Abweichungen sind unter Würdigung der nachbarlichen Interessen möglich (§
+    69 BauO NRW). Die Vorschriften dienen Belichtung, Belüftung, Brandschutz und sozialem Frieden und
+    sind nachbarschützend.
+  norms:
+  - § 6 BauO NRW
+  - § 69 BauO NRW
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: nw-bau-nachbarbeteiligung
+  type: norm
+  front: Wie werden Nachbarn im Genehmigungsverfahren beteiligt?
+  back: 'Die Bauaufsichtsbehörde soll die Eigentümer angrenzender Grundstücke vor Erteilung von Abweichungen und Befreiungen durch Zustellung benachrichtigen, wenn zu erwarten ist, dass öffentlich-rechtlich geschützte nachbarliche Belange berührt werden; Einwendungen sind innerhalb eines Monats nach Zugang der Benachrichtigung vorzubringen, nicht fristgemäß geltend gemachte öffentlich-rechtliche Einwendungen sind ausgeschlossen (§ 72 Abs. 1 BauO NRW). Die Benachrichtigung entfällt, wenn der Nachbar Lagepläne und Bauzeichnungen unterschrieben oder dem Vorhaben auf andere Weise zugestimmt hat; hat der Nachbar nicht zugestimmt, ist ihm die Baugenehmigung zuzustellen (§ 72 Abs. 2 BauO NRW). Die Beteiligung hat Bedeutung für die Information des Nachbarn und für die Rechtsbehelfsfristen:
+    Wird dem Angrenzer die Baugenehmigung nicht bekannt gegeben, läuft die Rechtsbehelfsfrist nicht; bei
+    Kenntnis oder Kennenmüssen kann das Rügerecht aber nach Treu und Glauben verwirkt sein. Eine Verletzung
+    der Beteiligungsrechte führt nicht für sich zur Aufhebung der Genehmigung; maßgeblich ist, ob nachbarschützende
+    Normen verletzt sind.'
+  norms:
+  - § 72 BauO NRW
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: nw-bau-nachbarschutz
+  type: definition
+  front: Welche Normen sind nachbarschützend, und wann ist die Nachbarklage begründet?
+  back: Die Nachbarklage ist begründet, wenn die Baugenehmigung rechtswidrig ist und den Nachbarn in eigenen
+    Rechten verletzt (§ 113 Abs. 1 S. 1 VwGO). Nach der Schutznormtheorie müssen die verletzten Vorschriften
+    zumindest auch dem Schutz des Nachbarn dienen. Nachbarschützend sind die Abstandsflächenvorschriften
+    (§ 6 BauO NRW), der Gebietserhaltungsanspruch (Festsetzung der Gebietsart nach §§ 2 ff. BauNVO; nach
+    h. M. auch ohne konkrete Beeinträchtigung) und das Rücksichtnahmegebot (§ 15 BauNVO; § 34 BauGB).
+    Nicht ausreichend ist ein bloßer Verstoß gegen objektives Baurecht. Aufschiebende Wirkung entfällt
+    nach § 212a BauGB.
+  norms:
+  - § 113 Abs. 1 S. 1 VwGO
+  - § 6 BauO NRW
+  - § 15 BauNVO
+  - § 212a Abs. 1 BauGB
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: nw-bau-massnahmen
+  type: norm
+  front: Welche bauaufsichtlichen Maßnahmen stehen der Behörde in NRW zur Verfügung?
+  back: Die Bauaufsichtsbehörden überwachen die Einhaltung der öffentlich-rechtlichen Vorschriften und
+    können die erforderlichen Maßnahmen treffen (§ 58 Abs. 2 BauO NRW). Typische Maßnahmen sind die Einstellung von Arbeiten (§ 81 BauO NRW) sowie die Beseitigung von Anlagen und die Nutzungsuntersagung (§ 82 Abs. 1 BauO NRW). Die Baueinstellung ist
+    als vorläufige Maßnahme schon bei formeller Illegalität zulässig. Nutzungsuntersagung und Beseitigung
+    greifen tiefer in Art. 14 GG ein; die Beseitigung setzt nach h. M. materielle Illegalität voraus.
+    Für die Nutzungsuntersagung genügt nach der Rechtsprechung die formelle Illegalität, wenn die Nutzung
+    nicht offensichtlich genehmigungsfähig ist. Adressat ist der Verantwortliche (Bauherr, Eigentümer,
+    Nutzer). Vollstreckung nach VwVG NRW.
+  norms:
+  - § 82 BauO NRW
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: nw-bau-abbruch
+  type: streitstand
+  front: Reicht formelle Illegalität für eine Beseitigungsverfügung?
+  back: 'Die h. M. verlangt für die Beseitigung formelle und materielle Illegalität: Ein ohne Genehmigung
+    errichtetes, aber genehmigungsfähiges Bauwerk darf nicht abgebrochen werden, weil die Beseitigung
+    unverhältnismäßig wäre; der Bauherr ist aufzufordern, einen Bauantrag zu stellen. Die Gegenansicht
+    stellt auf die Wahrung des Genehmigungsverfahrens ab (Vollzugsargument). Sie überzeugt für den Abriss
+    nicht, ist aber für die Nutzungsuntersagung eher vertretbar, weil die Nutzung ohne Genehmigung keinen
+    Bestandsschutz genießt und die Untersagung jederzeit aufhebbar ist. Für die Begründetheit ist darum
+    stets zu prüfen: (1) formelle Illegalität, (2) materielle Illegalität, (3) Ermessen und Verhältnismäßigkeit,
+    (4) richtiger Adressat.'
+  norms:
+  - § 82 BauO NRW
+  - Art. 14 Abs. 1 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: nw-bau-aufbau
+  type: schema_step
+  front: 'Aufbau: bauaufsichtliche Nutzungsuntersagung'
+  back: 'I. Ermächtigungsgrundlage: § 82 Abs. 1 S. 2 BauO NRW (Nutzungsuntersagung) i. V. m. der Aufgabenzuweisung des § 58 Abs. 2 BauO NRW. II. Formelle Rechtmäßigkeit:
+    Zuständigkeit (Bauaufsichtsbehörde), Anhörung (§ 28 VwVfG NRW), Form. III. Materielle Rechtmäßigkeit:
+    1. Rechtswidriger Zustand (formelle und materielle Illegalität), 2. richtiger Adressat, 3. Ermessen,
+    Verhältnismäßigkeit, Gleichbehandlung.'
+  norms:
+  - § 82 BauO NRW
+  - § 28 VwVfG NRW
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: nw-schema-bau-nutzungsuntersagung
+  title: Prüfung einer bauaufsichtlichen Nutzungsuntersagung in NRW
+  norms:
+  - § 82 BauO NRW
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Ermächtigungsgrundlage
+    hinweis: § 82 Abs. 1 S. 2 BauO NRW; Aufgaben und Befugnisse der Bauaufsicht § 58 Abs. 2 BauO NRW.
+  - label: II. Formelle Rechtmäßigkeit
+    children:
+    - label: '1. Zuständigkeit: untere Bauaufsichtsbehörde'
+    - label: '2. Verfahren: Anhörung, § 28 VwVfG NRW'
+    - label: 3. Form
+  - label: III. Materielle Rechtmäßigkeit
+    children:
+    - label: 1. Rechtswidrige Nutzung
+      hinweis: Formelle Illegalität (Genehmigungsbedürftigkeit der Nutzungsänderung) und materielle Illegalität
+        (Verstoß gegen BauNVO, Gebietsart).
+    - label: '2. Richtiger Adressat: Bauherr, Eigentümer, Betreiber'
+    - label: '3. Ermessen: Verhältnismäßigkeit, Gleichbehandlung (kein Anspruch auf Fehlerwiederholung)'
+  - label: IV. Vollstreckung
+    hinweis: Zwangsgeld nach VwVG NRW; Rechtsschutz § 80 Abs. 5 VwGO.
+  stand: 2026-10
+faelle:
+- slug: nw-fall-bau-nutzungsuntersagung
+  title: Das Restaurant im Wohngebiet
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  facts: E vermietet das Erdgeschoss seines Hauses, früher als Wohnung genutzt, an G, der dort ohne Baugenehmigung
+    ein Speiserestaurant mit 40 Plätzen eröffnet. Das Grundstück liegt im Geltungsbereich eines Bebauungsplans,
+    der ein reines Wohngebiet (§ 3 BauNVO) festsetzt. Die Bauaufsichtsbehörde hört G und E an und untersagt
+    dann schriftlich die Nutzung als Restaurant gegenüber G. G meint, die Untersagung sei rechtswidrig,
+    weil er "Bestandsschutz" habe und die Behörde zuerst die Genehmigung hätte prüfen müssen. Ein Bauantrag
+    wurde nie gestellt.
+  question: Ist die Nutzungsuntersagung rechtmäßig?
+  steps:
+  - prompt: Auf welche Rechtsgrundlage kann die Nutzungsuntersagung gestützt werden?
+    erwartung: Auf § 82 Abs. 1 S. 2 BauO NRW (Nutzungsuntersagung bei Nutzung im Widerspruch zu öffentlich-rechtlichen Vorschriften) i. V. m. § 58 Abs. 2 BauO NRW; die Bauaufsichtsbehörde ist zuständig,
+      die Anhörung ist erfolgt (§ 28 VwVfG NRW).
+  - prompt: Liegt formelle Illegalität vor?
+    erwartung: Ja. Die Umnutzung von Wohnen zu einem Restaurant ist eine genehmigungsbedürftige Nutzungsänderung
+      (andere Anforderungen); eine Genehmigung liegt nicht vor.
+  - prompt: Liegt materielle Illegalität vor?
+    erwartung: Ja. Ein Speiserestaurant ist in einem reinen Wohngebiet bauplanungsrechtlich unzulässig
+      (§ 3 BauNVO, §§ 29 ff. BauGB); eine Genehmigung wäre nicht erteilbar. Bestandsschutz besteht nicht,
+      weil die Nutzung nie genehmigt war und nie genehmigungsfähig war.
+  - prompt: Richtiger Adressat und Ermessen?
+    erwartung: G als Betreiber ist handelnder Verantwortlicher; die Inanspruchnahme ist verhältnismäßig,
+      da keine milderen, gleich wirksamen Mittel erkennbar sind. Die Nutzungsuntersagung ist rechtmäßig.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Ermächtigungsgrundlage § 82 Abs. 1 S. 2 BauO NRW (Nutzungsuntersagung; § 58 Abs. 2 BauO NRW) und Zuständigkeit der
+        Bauaufsichtsbehörde
+      weight: 2.0
+      required: true
+      norms:
+      - § 82 BauO NRW
+      keywords:
+      - § 82 BauO NRW
+      - Bauaufsichtsbehörde
+      - Generalklausel
+      - Nutzungsuntersagung
+      card_slugs:
+      - nw-bau-massnahmen
+    - id: p2
+      label: 'Formelle Illegalität: genehmigungsbedürftige Nutzungsänderung ohne Genehmigung'
+      weight: 2.0
+      required: true
+      keywords:
+      - formelle Illegalität
+      - Nutzungsänderung
+      - genehmigungsbedürftig
+      - keine Baugenehmigung
+      card_slugs:
+      - nw-bau-genehmigungspflicht
+      - nw-bau-abbruch
+    - id: p3
+      label: 'Materielle Illegalität: Restaurant im reinen Wohngebiet unzulässig (§ 3 BauNVO)'
+      weight: 3.0
+      required: true
+      keywords:
+      - materielle Illegalität
+      - reines Wohngebiet
+      - § 3 BauNVO
+      - nicht genehmigungsfähig
+      - bauplanungsrechtlich unzulässig
+      card_slugs:
+      - nw-bau-abbruch
+    - id: p4
+      label: Kein Bestandsschutz; Ermessen und Verhältnismäßigkeit; richtiger Adressat
+      weight: 1.5
+      required: false
+      keywords:
+      - Bestandsschutz
+      - Verhältnismäßigkeit
+      - Betreiber
+      - Ermessen
+      - Adressat
+      card_slugs:
+      - nw-bau-massnahmen
+  stand: 2026-10

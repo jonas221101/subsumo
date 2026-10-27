@@ -1,0 +1,299 @@
+topic:
+  slug: th-kommunalrecht
+  area: oeffentliches-recht
+  title: "Kommunalrecht Thüringen"
+  parent: oeffentliches-recht
+  bundesland: TH
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: th-kom-selbstverwaltung
+  type: definition
+  front: >-
+      Was gewährleistet die kommunale Selbstverwaltung nach Art. 28 Abs. 2 GG, und welche
+      Aufgabenarten gibt es in Thüringen?
+  back: >-
+      Art. 28 Abs. 2 GG garantiert den Gemeinden das Recht, alle Angelegenheiten der örtlichen
+      Gemeinschaft im Rahmen der Gesetze in eigener Verantwortung zu regeln (Allzuständigkeit). Die
+      Garantie umfasst die Rechtssubjektsgarantie, die objektive Rechtsinstitutionsgarantie und die
+      subjektive Rechtsstellungsgarantie. Sie schützt die Gemeindehoheiten, etwa Gebiets-,
+      Organisations-, Personal-, Finanz-, Planungs- und Satzungshoheit. Eingriffe durch Gesetz sind
+      zulässig, soweit der Kernbereich unangetastet bleibt und Aufgaben mit örtlichem Charakter nur
+      aus Gründen des Gemeinwohls, insbesondere zur Sicherung einer ordnungsgemäßen
+      Aufgabenwahrnehmung, entzogen werden (Rastede-Beschluss). Aufgabenarten: Selbstverwaltungsaufgaben (eigener Wirkungskreis, freiwillig und pflichtig) sowie Weisungsaufgaben (übertragener Wirkungskreis; Einzelheiten in der ThürKO); für Selbstverwaltungsaufgaben besteht nur Rechtsaufsicht, für Weisungsaufgaben
+      Fachaufsicht.
+  norms:
+  - "Art. 28 Abs. 2 S. 1 GG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "BVerfGE 79, 127 (Rastede)"
+  stand: 2026-10
+- slug: th-kom-struktur
+  type: definition
+  front: >-
+      Welche Verwaltungsformen kennt das Thüringer Kommunalrecht neben der Einheitsgemeinde?
+  back: >-
+      Die ThürKO regelt Gemeinden und Landkreise. Neben der Einheitsgemeinde kennt das Thüringer Recht Verwaltungsgemeinschaften (§§ 46 ff. ThürKO) und die erfüllende Gemeinde (§ 51 ThürKO): Die Mitgliedsgemeinden bleiben rechtlich selbständig und für ihren eigenen Wirkungskreis zuständig; die Verwaltungsgemeinschaft nimmt alle Angelegenheiten des übertragenen Wirkungskreises wahr und führt die Aufgaben des eigenen Wirkungskreises als Behörde der Mitgliedsgemeinde nach deren Weisung aus (§ 47 ThürKO). Organe sind die Gemeinschaftsversammlung und der Gemeinschaftsvorsitzende (§ 48 ThürKO). Innerhalb der Gemeinde können Ortsteile bzw. Ortschaften mit eigener Verfassung bestehen, in denen ein Ortsteil- bzw. Ortschaftsbürgermeister und ein Ortsteil- bzw. Ortschaftsrat Mitwirkungsrechte haben (Einzelheiten in der ThürKO). Für die Klausur ist zu klären, ob die Gemeinde selbst, die
+      Verwaltungsgemeinschaft oder ein Ortsteil handelt und welches Organ zuständig ist.
+  norms:
+  - >-
+      §§ 22, 29, 31 ThürKO (Gemeindeorgane, Aufgaben des Bürgermeisters, Vertretung der Gemeinde)
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: th-kom-organe
+  type: definition
+  front: >-
+      Wie sind die Zuständigkeiten von Gemeinderat und Bürgermeister in Thüringen verteilt, und welche
+      Anforderungen gelten für Verpflichtungserklärungen?
+  back: >-
+      Der Gemeinderat ist das Hauptorgan der Gemeinde und entscheidet über die grundlegenden
+      Angelegenheiten, insbesondere Satzungen, den Haushalt, wesentliche Vermögensverfügungen und die
+      Grundsätze der Verwaltung. Der Bürgermeister leitet die Verwaltung, führt die Beschlüsse aus,
+      erledigt die laufenden Angelegenheiten und vertritt die Gemeinde nach außen. Der Bürgermeister vertritt die Gemeinde nach außen (§ 31 Abs. 1 ThürKO). Die Abgrenzung der Zuständigkeiten ergibt sich aus der ThürKO (Thüringer Kommunalordnung) und der Hauptsatzung; ein Beschluss des unzuständigen
+      Organs ist formell rechtswidrig. Erklärungen, durch welche die Gemeinde verpflichtet werden soll, binden sie nur, wenn sie schriftlich abgegeben und vom Bürgermeister oder seinem Stellvertreter unter Angabe der Amtsbezeichnung handschriftlich unterzeichnet sind (Unterzeichnung durch Beigeordnete oder Bedienstete nur aufgrund entsprechender Vollmacht; § 31 Abs. 2 ThürKO). Diese Formvorschriften sind nach h.
+      M. Vertretungsregelungen; ein Verstoß macht die Erklärung unwirksam, sie bindet die Gemeinde
+      nicht.
+  norms:
+  - >-
+      §§ 22, 29, 31 ThürKO (Gemeindeorgane, Aufgaben des Bürgermeisters, Vertretung der Gemeinde)
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: th-kom-satzung
+  type: norm
+  front: >-
+      Welche Anforderungen stellt das Recht in Thüringen an eine gemeindliche Satzung?
+  back: >-
+      Die Gemeinden können ihre Angelegenheiten durch Satzung regeln (Satzungshoheit). Eine allgemeine
+      Satzungsermächtigung in der ThürKO genügt für Eingriffe in Grundrechte allerdings nicht; nach
+      der Wesentlichkeitstheorie braucht es eine spezielle gesetzliche Ermächtigung (z. B. für
+      Anschluss- und Benutzungszwang oder Abgaben). Prüfungsaufbau: I. Ermächtigungsgrundlage. II.
+      Formelle Rechtmäßigkeit: Zuständigkeit des Gemeindeorgans (Gemeinderat), Verfahren
+      (Beschlussfassung, Mitwirkungsverbote), Ausfertigung und ordnungsgemäße öffentliche
+      Bekanntmachung. III. Materielle Rechtmäßigkeit: Vereinbarkeit mit höherrangigem Recht,
+      Bestimmtheit, Verhältnismäßigkeit, Gleichheitssatz. Rechtsfolge eines Fehlers ist grundsätzlich
+      Nichtigkeit; die Gemeindeordnungen enthalten jedoch Unbeachtlichkeits- und Heilungsvorschriften
+      für bestimmte Verfahrens- und Formfehler, die in der Klausur gesondert zu prüfen sind.
+      Satzungen sind vor der Bekanntmachung der Rechtsaufsichtsbehörde vorzulegen (§ 21 Abs. 3 ThürKO); Verfahrens- und Formfehler werden nach einem Jahr unbeachtlich, wenn auf die Voraussetzungen hingewiesen wurde (§ 21 Abs. 4 ThürKO; ausgenommen Genehmigung, Ausfertigung, Bekanntmachung). Rechtsschutz: Normenkontrolle nach § 47 Abs. 1 Nr. 2 VwGO i. V. m. § 4 ThürAGVwGO (Landesrecht eröffnet sie); daneben Inzidentkontrolle.
+  norms:
+  - "§§ 19, 21 ThürKO"
+  - "§ 4 ThürAGVwGO"
+  - "§ 47 VwGO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: th-kom-anschlusszwang
+  type: norm
+  front: >-
+      Unter welchen Voraussetzungen darf die Gemeinde einen Anschluss- und Benutzungszwang anordnen?
+  back: >-
+      Der Anschluss- und Benutzungszwang verpflichtet Grundstückseigentümer und Nutzer, ein Grundstück
+      an eine gemeindliche Einrichtung anzuschließen und die Einrichtung zu benutzen (nach § 20 Abs. 2 ThürKO etwa Fernwärme, Wasserversorgung, Abwasserbeseitigung, Straßenreinigung und ähnliche dem Gemeinwohl dienende Einrichtungen). Er ist
+      ein Eingriff in Art. 2 Abs. 1, Art. 12 und Art. 14 GG und bedarf einer gesetzlichen Ermächtigung
+      in der Gemeindeordnung, die die Gemeinde durch Satzung ausfüllt. Tatbestand: nach § 20 Abs. 2 S. 1 Nr. 2 ThürKO Gründe des öffentlichen Wohls; Bestehen oder
+      Schaffung einer öffentlichen Einrichtung; Verhältnismäßigkeit. Die Satzung kann Ausnahmen zulassen und den Zwang beschränken (§ 20 Abs. 2 S. 2 ThürKO); aus der Verhältnismäßigkeit folgt, dass für Härtefälle eine Befreiungsmöglichkeit bestehen muss. Welche Einrichtungen erfasst sind und ob weitere
+      Gemeinwohlgründe (etwa Klimaschutz) ausdrücklich genannt sind, ergibt sich aus der jeweiligen
+      Gemeindeordnung.
+  norms:
+  - >-
+      § 20 Abs. 2 ThürKO
+  - "Art. 2 Abs. 1 GG"
+  - "Art. 12 Abs. 1 GG"
+  - "Art. 14 Abs. 1 GG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: th-kom-aufsicht
+  type: streitstand
+  front: >-
+      Welche Arten der Kommunalaufsicht gibt es, und welchen Rechtsschutz hat die Gemeinde?
+  back: >-
+      Bei Selbstverwaltungsaufgaben (eigener Wirkungskreis) besteht nur Rechtsaufsicht (§ 117 Abs. 1 ThürKO): Die Aufsichtsbehörde prüft die
+      Rechtmäßigkeit, nicht die Zweckmäßigkeit. Bei Weisungsaufgaben (übertragener Wirkungskreis; § 117 Abs. 2 ThürKO) besteht Fachaufsicht mit Weisungsrecht auch hinsichtlich der Zweckmäßigkeit. Die Aufsichtsmittel sind abgestuft: Informationsrecht (§ 119), Beanstandung rechtswidriger Beschlüsse und Anordnung (§ 120 Abs. 1), Ersatzvornahme (§ 121), Bestellung eines Beauftragten (§ 122 ThürKO); die Behörde entscheidet nach pflichtgemäßem Ermessen
+      (Opportunitätsprinzip). Rechtsschutz der Gemeinde: Nach h. M. sind Aufsichtsmaßnahmen gegenüber
+      der Gemeinde Verwaltungsakte, weil sie in die Selbstverwaltungsgarantie (Art. 28 Abs. 2 GG)
+      eingreifen; statthaft ist die Anfechtungsklage. Die früher vertretene Gegenansicht sah in der
+      Aufsicht eine Maßnahme im staatlichen Innenbereich ohne Außenwirkung; sie wird wegen der eigenen
+      Rechtsstellung der Gemeinde überwiegend abgelehnt.
+  norms:
+  - "§§ 117, 119-122 ThürKO"
+  - "Art. 28 Abs. 2 S. 1 GG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: th-kom-buergerbegehren
+  type: definition
+  front: >-
+      Wie funktionieren Bürgerbegehren und Bürgerentscheid, und welche Zulässigkeitsprobleme sind
+      typisch?
+  back: >-
+      Mit dem Bürgerbegehren verlangen die Bürger, dass über eine Gemeindeangelegenheit ein
+      Bürgerentscheid stattfindet; dieser ersetzt den Beschluss des Gemeindeorgans. Das Verfahren regelt in Thüringen neben § 17 ThürKO das ThürEBBG. Typische Zulässigkeitsvoraussetzungen: eine mit Ja oder Nein zu beantwortende Fragestellung mit Begründung (§ 6 Abs. 1 ThürEBBG), eine Vertrauensperson, ein Unterschriftenquorum, die Einhaltung einer Frist gegen Beschlüsse des Gemeinderats (vier Wochen nach Bekanntmachung, § 12 Abs. 2 ThürEBBG) sowie eine Angelegenheit des eigenen Wirkungskreises, die nicht in den Ausschlusskatalog fällt. Die Zulassung des Bürgerbegehrens ist schriftlich bei der Gemeindeverwaltung zu beantragen; diese entscheidet innerhalb von vier Wochen über die Zulässigkeit (§ 12 ThürEBBG); die Vertrauensperson kann dagegen Klage vor dem Verwaltungsgericht erheben, ein Vorverfahren findet nicht statt. Das Begehren ist zustande gekommen, wenn innerhalb von vier Monaten mindestens 7 % der stimmberechtigten Bürger (höchstens 7.000) unterschrieben haben (§ 14 ThürEBBG); der Gemeinderat entscheidet über das Zustandekommen. Ausgeschlossen sind u. a. die Haushaltssatzung im Ganzen, der Finanzplan, die Jahresrechnung und die Festsetzung von Abgaben und Entgelten (§ 1 Abs. 3 ThürEBBG); bei finanzwirksamen Begehren soll ein Kostendeckungsvorschlag enthalten sein (§ 6 Abs. 1 S. 4 ThürEBBG).
+  norms:
+  - >-
+      § 17 ThürKO; §§ 1, 6, 11-15 ThürEBBG
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: th-kom-mitwirkung
+  type: definition
+  front: >-
+      Wann gilt ein Mitwirkungsverbot für Mitglieder des Gemeindeorgans, und was folgt aus einem
+      Verstoß?
+  back: >-
+      Ein Mitglied darf an Beratung und Abstimmung nicht teilnehmen, wenn die Entscheidung ihm selbst,
+      Angehörigen oder einer von ihm vertretenen Person oder Gesellschaft einen unmittelbaren Vorteil
+      oder Nachteil bringen kann. Unmittelbarkeit bedeutet: Die Entscheidung berührt das
+      Sonderinteresse des Betroffenen ohne weiteren Vollzugsakt; ein Vorteil, den er mit einer
+      Vielzahl von Personen teilt (Gruppeninteresse), genügt regelmäßig nicht. Beispiel: Eigentümer
+      eines Grundstücks im Plangebiet bei der Beschlussfassung über den Bebauungsplan. Das betroffene
+      Mitglied hat den Verhandlungsraum zu verlassen. Nach § 38 Abs. 4 ThürKO ist der Beschluss nur unwirksam, wenn ein persönlich Beteiligter an der Abstimmung teilgenommen hat und nicht auszuschließen ist, dass seine Teilnahme für das Ergebnis entscheidend war; er gilt als von Anfang an wirksam, wenn der Verstoß nicht binnen drei Monaten gerügt wird. Bei Satzungsbeschlüssen gilt § 21 Abs. 4 bis 6 ThürKO. Das Mitwirkungsverbot gilt nicht für Wahlen (§ 38 Abs. 2 ThürKO).
+  norms:
+  - "§ 38 ThürKO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: th-schema-kom-kommunalaufsicht
+  title: "Rechtmäßigkeit einer Aufsichtsmaßnahme gegenüber der Gemeinde (ThürKO)"
+  norms:
+  - "§§ 117, 119-122 ThürKO"
+  - "Art. 28 Abs. 2 S. 1 GG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  steps:
+  - label: "I. Ermächtigungsgrundlage in der ThürKO"
+  - label: "II. Formelle Rechtmäßigkeit"
+    hinweis: "Zuständige Aufsichtsbehörde, Anhörung der Gemeinde, Form."
+  - label: "III. Materielle Rechtmäßigkeit"
+    children:
+    - label: >-
+        1. Art der Aufgabe: Selbstverwaltung oder Weisungsaufgabe
+      children:
+      - label: >-
+          a) Selbstverwaltung: nur Rechtsaufsicht, Rechtsverstoß erforderlich
+      - label: >-
+          b) Weisungsaufgabe: Fachaufsicht, auch Zweckmäßigkeit
+    - label: "2. Rechtswidrigkeit des Gemeindehandelns (Prüfung des Beschlusses)"
+    - label: "3. Aufsichtsermessen und Verhältnismäßigkeit des Mittels"
+      hinweis: "Mildestes ausreichendes Aufsichtsmittel."
+  - label: >-
+      IV. Rechtsschutz der Gemeinde: Anfechtungsklage, Klagebefugnis aus Art. 28 Abs. 2 GG
+faelle:
+- slug: th-fall-kom-aufsicht-stadthalle
+  title: "Die Stadthalle für eine Partei"
+  difficulty: 4
+  minutes: 55
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "Art. 3 Abs. 1 GG"
+  - "§ 5 Abs. 1 PartG"
+  facts: >-
+      Die Gemeinde G in Thüringen betreibt die Stadthalle als öffentliche Einrichtung und überlässt
+      sie nach einer Benutzungssatzung regelmäßig auch Parteien für Veranstaltungen im Vorfeld von
+      Wahlen. Der Gemeinderat von G beschließt, die Halle künftig nur noch Partei A zu überlassen,
+      weil die Mehrheit im Rat die Partei B ablehnt. B beantragt die Halle für einen
+      Informationsabend; der Antrag wird unter Hinweis auf den Beschluss abgelehnt. Das Landratsamt
+      als Rechtsaufsichtsbehörde beanstandet den Beschluss des Gemeinderats schriftlich und fordert
+      seine Aufhebung. G meint, die Aufsicht habe sich nicht in die Entscheidung über die Vergabe der
+      Halle einzumischen, die zum Kernbereich der Selbstverwaltung gehöre.
+  question: >-
+      Ist die Beanstandung durch das Landratsamt rechtmäßig? Ist G klagebefugt?
+  steps:
+  - prompt: "Um welche Art von Aufgabe handelt es sich, und welche Aufsicht greift?"
+    erwartung: >-
+        Der Betrieb der Stadthalle ist eine Selbstverwaltungsaufgabe. Es besteht daher nur
+        Rechtsaufsicht: Die Aufsichtsbehörde darf einschreiten, wenn der Gemeinderat gegen Recht
+        verstößt, nicht schon bei bloßer Unzweckmäßigkeit.
+  - prompt: "Ist der Beschluss rechtswidrig?"
+    erwartung: >-
+        Ja. Hat die Gemeinde eine Einrichtung nach ihrer Widmung allgemein auch Parteien zur Verfügung
+        gestellt, so ist sie nach § 5 Abs. 1 PartG und dem Gleichheitssatz (Art. 3 Abs. 1 GG) zur
+        Gleichbehandlung aller Parteien verpflichtet. Ein Ausschluss der Partei B aus Ablehnung ihrer
+        politischen Ausrichtung ist sachwidrig.
+  - prompt: "Ist die Beanstandung als Aufsichtsmittel ermessensgerecht?"
+    erwartung: >-
+        Ja. Die Beanstandung ist das mildere, auf den Rechtsverstoß gerichtete Mittel; die
+        Aufsichtsbehörde handelt im Rahmen ihres Aufsichtsermessens. Der Einwand der G, die Entscheidung
+        gehöre zur Selbstverwaltung, greift nicht, denn Selbstverwaltung besteht nur im Rahmen der
+        Gesetze.
+  - prompt: "Kann G sich wehren?"
+    erwartung: >-
+        Ja. Die Beanstandung ist ein Verwaltungsakt, weil sie in die Rechte der Gemeinde aus Art. 28
+        Abs. 2 GG eingreift; G kann Anfechtungsklage erheben und ist klagebefugt. Die Klage hätte in der
+        Sache keinen Erfolg.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+          Rechtsaufsicht bei Selbstverwaltungsaufgabe eingeordnet (Rechtmäßigkeitskontrolle, keine
+          Zweckmäßigkeitskontrolle)
+      weight: 2.0
+      required: true
+      keywords:
+      - "Rechtsaufsicht"
+      - "Selbstverwaltungsaufgabe"
+      - "Rechtmäßigkeitskontrolle"
+      - "keine Zweckmäßigkeitskontrolle"
+      - "Fachaufsicht"
+      card_slugs:
+      - "th-kom-aufsicht"
+      - "th-kom-selbstverwaltung"
+    - id: p2
+      label: >-
+          Rechtswidrigkeit des Beschlusses wegen Gleichbehandlungsgebots der Parteien
+      weight: 3.0
+      required: true
+      norms:
+      - "§ 5 Abs. 1 PartG"
+      - "Art. 3 Abs. 1 GG"
+      keywords:
+      - "§ 5 Abs. 1 PartG"
+      - "Gleichbehandlung der Parteien"
+      - "Art. 3 Abs. 1 GG"
+      - "öffentliche Einrichtung"
+      - "Gleichheitssatz"
+      card_slugs:
+      - "th-kom-aufsicht"
+    - id: p3
+      label: "Beanstandung als abgestuftes Aufsichtsmittel mit Ermessen"
+      weight: 1.5
+      required: false
+      keywords:
+      - "Beanstandung"
+      - "Aufsichtsermessen"
+      - "Opportunitätsprinzip"
+      - "mildestes Mittel"
+      - "Aufsichtsmittel"
+      card_slugs:
+      - "th-kom-aufsicht"
+    - id: p4
+      label: "Anfechtungsklage der Gemeinde; Verwaltungsakt wegen Art. 28 Abs. 2 GG"
+      weight: 1.5
+      required: false
+      norms:
+      - "Art. 28 Abs. 2 S. 1 GG"
+      keywords:
+      - "Anfechtungsklage"
+      - "Verwaltungsakt"
+      - "Art. 28 Abs. 2 GG"
+      - "Klagebefugnis"
+      - "Selbstverwaltungsgarantie"
+      card_slugs:
+      - "th-kom-aufsicht"
+    normzitate_geprueft: false

@@ -1,0 +1,320 @@
+topic:
+  slug: bw-kommunalrecht
+  area: oeffentliches-recht
+  title: 'Kommunalrecht Baden-Württemberg: Gemeindeordnung'
+  parent: oeffentliches-recht
+  bundesland: BW
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: bw-kom-organe
+  type: norm
+  front: >-
+    Welche Organe hat die Gemeinde nach der GemO BW und wie sind ihre Rollen verteilt?
+  back: >-
+    Hauptorgane der Gemeinde sind der Gemeinderat und der Bürgermeister. Der Gemeinderat ist die Vertretung
+    der Bürger und das Hauptorgan der Gemeinde (§ 24 GemO BW); er legt die Grundsätze für die Verwaltung
+    fest und entscheidet über alle Angelegenheiten, die nicht dem Bürgermeister obliegen. Der Bürgermeister
+    ist Vorsitzender des Gemeinderats, Leiter der Gemeindeverwaltung und vertritt die Gemeinde nach außen
+    (§ 42 GemO BW). Er bereitet die Sitzungen vor und vollzieht die Beschlüsse des Gemeinderats (§ 43 Abs. 1 GemO BW) und erledigt in eigener Zuständigkeit die Geschäfte der laufenden Verwaltung sowie die ihm durch Gesetz oder vom Gemeinderat übertragenen Aufgaben und die Weisungsaufgaben (§ 44 Abs. 2 und 3 GemO BW). BW folgt damit der süddeutschen
+    Ratsverfassung mit starkem, direkt gewähltem Bürgermeister.
+  norms:
+  - § 24 GemO BW
+  - § 42 GemO BW
+  - § 44 GemO BW
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-kom-zustaendigkeit
+  type: definition
+  front: >-
+    Wie grenzen sich die Zuständigkeiten von Gemeinderat und Bürgermeister ab?
+  back: >-
+    Der Gemeinderat entscheidet über Angelegenheiten von grundsätzlicher Bedeutung (Satzungen, Haushalt,
+    bedeutsame Vermögensgeschäfte, Bauleitplanung), soweit er nicht Aufgaben auf beschließende Ausschüsse
+    oder den Bürgermeister übertragen hat. Dem Bürgermeister sind kraft Gesetzes die Geschäfte der laufenden
+    Verwaltung zugewiesen: Geschäfte, die nach Regelmäßigkeit, Häufigkeit und wirtschaftlicher Bedeutung
+    für die Gemeinde keine grundsätzliche Bedeutung haben; maßgeblich ist die Größe der Gemeinde. Entscheidet
+    der Bürgermeister in einer Angelegenheit, für die der Gemeinderat zuständig war, ist das Handeln organschaftlich
+    unzuständig. Es bleibt nach außen aber unter Umständen wirksam, wenn die Vertretungsmacht des Bürgermeisters
+    reicht (Vertretung nach § 42, Formvorschrift § 54 GemO BW). Zu unterscheiden sind die Innenzuständigkeit
+    und die Außenvertretung.
+  norms:
+  - § 24 GemO BW
+  - § 42 GemO BW
+  - § 44 Abs. 2 GemO BW
+  - § 54 GemO BW
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-kom-verpflichtung
+  type: norm
+  front: >-
+    Welche Form gilt für Verpflichtungserklärungen der Gemeinde in Baden-Württemberg?
+  back: >-
+    Erklärungen, durch die die Gemeinde verpflichtet werden soll, bedürfen der Schriftform (oder der elektronischen Form mit dauerhaft überprüfbarer Signatur) und sind vom Bürgermeister zu unterzeichnen (§ 54 Abs. 1 GemO BW); bei seiner Vertretung gilt § 54 Abs. 2 GemO BW. Die Formvorschriften gelten nicht für Erklärungen in Geschäften der laufenden Verwaltung oder auf Grund einer formgerecht ausgestellten Vollmacht (§ 54 Abs. 4 GemO BW). Wird die Form nicht eingehalten, fehlt dem Vertreter nach h. M.
+    die Vertretungsmacht; der Vertrag ist schwebend unwirksam und kann von der Gemeinde in der gebotenen
+    Form genehmigt werden (§ 177 BGB analog). Ein Vertrauensschutz auf die Einhaltung der Form besteht
+    nicht, weil die Vorschrift die Gemeinde schützen soll (kein Rechtsschein). Die Gegenansicht sieht
+    die Formvorschrift nur als Ordnungsvorschrift; sie hat sich nicht durchgesetzt.
+  norms:
+  - § 54 GemO BW
+  - § 177 BGB
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-kom-befangenheit
+  type: norm
+  front: >-
+    Wann ist ein Gemeinderatsmitglied befangen, und welche Folgen hat die Mitwirkung?
+  back: >-
+    Ein Mitglied darf an Beratung und Abstimmung nicht mitwirken, wenn die Entscheidung ihm selbst, einem
+    Angehörigen oder einer von ihm vertretenen Person oder Vereinigung einen unmittelbaren Vorteil oder
+    Nachteil bringen kann (§ 18 GemO BW). Die Vorschriften gelten nicht, wenn die Entscheidung nur die gemeinsamen Interessen einer Berufs- oder Bevölkerungsgruppe berührt (§ 18 Abs. 3 GemO BW). Befangen kann auch sein, wer Gesellschafter einer Handelsgesellschaft oder Organmitglied eines Unternehmens ist, dem die Entscheidung einen unmittelbaren Vorteil oder Nachteil bringen kann (§ 18 Abs. 2 Nr. 2 GemO BW). Wer nicht mitwirken darf, muss die Sitzung verlassen (§ 18 Abs. 5 GemO BW). Nach § 18 Abs. 6 S. 1 GemO BW ist ein Beschluss rechtswidrig, wenn bei Beratung oder Beschlussfassung gegen das Mitwirkungsverbot verstoßen wurde; auf die Kausalität der Mitwirkung für das Abstimmungsergebnis kommt es nach dem Wortlaut nicht an. Der Beschluss gilt jedoch ein Jahr nach der Beschlussfassung (bei erforderlicher Bekanntmachung ein Jahr nach dieser) als von Anfang an gültig zustande gekommen, es sei denn, der Bürgermeister hat nach § 43 GemO BW wegen Gesetzwidrigkeit widersprochen oder die Rechtsaufsichtsbehörde hat vor Fristablauf beanstandet (§ 18 Abs. 6 S. 2 GemO BW); für Satzungen bleibt § 4 Abs. 4 und 5 GemO BW unberührt.
+  norms:
+  - § 18 GemO BW
+  - § 18 Abs. 6 GemO BW
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-kom-satzung
+  type: norm
+  front: >-
+    Wie entsteht eine wirksame Gemeindesatzung, und was gilt bei Verfahrensfehlern?
+  back: >-
+    Die Gemeinde kann ihre Angelegenheiten durch Satzung regeln, soweit gesetzlich nichts anderes bestimmt
+    ist (§ 4 Abs. 1 GemO BW); Satzungen sind Ausdruck der Selbstverwaltungsgarantie (Art. 28 Abs. 2 GG).
+    Grundrechtseingriffe verlangen aber eine besondere Ermächtigung (Parlamentsvorbehalt, Wesentlichkeitstheorie).
+    Formell erforderlich sind Beschluss des Gemeinderats, Ausfertigung durch den Bürgermeister und öffentliche
+    Bekanntmachung. Nach § 4 Abs. 4 GemO BW gelten Satzungen, die unter Verletzung von Verfahrens- oder Formvorschriften der GemO zustande gekommen sind, ein Jahr nach der Bekanntmachung als von Anfang an gültig zustande gekommen. Das gilt nicht bei Verletzung der Vorschriften über die Öffentlichkeit der Sitzung, die Genehmigung oder die Bekanntmachung, bei Widerspruch des Bürgermeisters nach § 43 GemO BW, bei Beanstandung durch die Rechtsaufsichtsbehörde und bei rechtzeitiger schriftlicher oder elektronischer Rüge gegenüber der Gemeinde. Bei der Bekanntmachung ist auf diese Voraussetzungen und die Rechtsfolgen hinzuweisen; Satzungen sind der Rechtsaufsichtsbehörde anzuzeigen (§ 4 Abs. 3 GemO BW). Materiell
+    bindet die Satzung höherrangiges Recht. Die Normenkontrolle richtet sich nach § 47 Abs. 1 Nr. 2 VwGO
+    i. V. m. § 4 AGVwGO BW (Verwaltungsgerichtshof, auch für sonstige Rechtsvorschriften unter dem Landesgesetz).
+  norms:
+  - § 4 Abs. 1 GemO BW
+  - § 4 Abs. 4 GemO BW
+  - Art. 28 Abs. 2 GG
+  - § 47 VwGO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-kom-einrichtung
+  type: norm
+  front: >-
+    Unter welchen Voraussetzungen haben Einwohner Anspruch auf Benutzung öffentlicher Einrichtungen?
+  back: >-
+    Die Einwohner sind im Rahmen des geltenden Rechts berechtigt, die öffentlichen Einrichtungen der Gemeinde
+    zu benutzen (§ 10 Abs. 2 GemO BW); für Grundbesitzer und Gewerbetreibende ohne Wohnsitz in der Gemeinde gilt § 10 Abs. 3 GemO BW, für juristische Personen und nicht rechtsfähige Personenvereinigungen § 10 Abs. 4 GemO BW entsprechend. Der Anspruch besteht im Rahmen des Widmungszwecks und der Kapazität. Die Gemeinde
+    entscheidet über die Widmung (Zweck, Benutzerkreis) frei, ist aber an den Gleichbehandlungsgrundsatz
+    gebunden. Ausschluss einzelner Benutzer bedarf eines sachlichen Grundes. Für die Ausgestaltung des
+    Benutzungsverhältnisses gilt die Zweistufentheorie: Über das Ob der Zulassung entscheidet die Gemeinde
+    durch Verwaltungsakt (öffentliches Recht), das Wie kann privatrechtlich geregelt werden. Der Anspruch
+    aus § 10 Abs. 2 GemO BW ist vor dem Verwaltungsgericht einklagbar.
+  norms:
+  - § 10 Abs. 2 GemO BW
+  - Art. 3 Abs. 1 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-kom-anschlusszwang
+  type: definition
+  front: Was regelt der Anschluss- und Benutzungszwang?
+  back: >-
+    Die Gemeinde kann durch Satzung für die Grundstücke ihres Gebiets den Anschluss an Wasserversorgung,
+    Abwasserbeseitigung, Fernwärme u. ä. sowie die Benutzung der Einrichtung vorschreiben, wenn dafür
+    ein öffentliches Bedürfnis besteht (§ 11 GemO BW). Das ist ein Eingriff in Art. 2 Abs. 1, Art. 14
+    GG und Art. 12 GG, der nur durch den Gemeinwohlbelang (Volksgesundheit, Umweltschutz) gerechtfertigt
+    ist. Ausnahmen für unzumutbare Härten sind vorzusehen. Der Zwang ergibt sich aus der Satzung, nicht
+    aus dem Verwaltungsakt; im Einzelfall wird er durch Verwaltungsakt konkretisiert.
+  norms:
+  - § 11 GemO BW
+  - Art. 14 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-kom-aufsicht
+  type: definition
+  front: Welche Formen der Kommunalaufsicht gibt es und was sind ihre Mittel?
+  back: >-
+    Die Kommunalaufsicht ist Rechtsaufsicht (bei Selbstverwaltungsaufgaben) und Fachaufsicht (bei Weisungsaufgaben);
+    die Regelungen finden sich in §§ 118 ff. GemO BW (Rechtsaufsicht) und § 129 GemO BW (Fachaufsicht). Bei der Rechtsaufsicht überprüft die Aufsichtsbehörde
+    nur die Rechtmäßigkeit, nicht die Zweckmäßigkeit. Mittel sind Informationsrecht, Beanstandung rechtswidriger
+    Beschlüsse, Anordnung (Verpflichtung zu pflichtgemäßem Handeln), Ersatzvornahme und im Extremfall
+    Bestellung eines Beauftragten. Die Aufsicht steht im Ermessen (Opportunitätsprinzip) und ist dem Gebot
+    der gemeindefreundlichen Ausübung unterworfen. Gegen aufsichtliche Maßnahmen kann die Gemeinde klagen;
+    Dritte haben keinen Anspruch auf Einschreiten der Aufsicht, weil sie nur im öffentlichen Interesse
+    besteht.
+  norms:
+  - §§ 118 ff. GemO BW
+  - Art. 28 Abs. 2 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-kom-kommunalverfassungsstreit
+  type: streitstand
+  front: >-
+    Wie wird ein Kommunalverfassungsstreit (Organstreit) prozessual behandelt?
+  back: >-
+    Ein Kommunalverfassungsstreit betrifft Rechte von Organen oder Organteilen innerhalb derselben Gemeinde
+    (z. B. Gemeinderatsmitglied gegen Bürgermeister). Der Verwaltungsrechtsweg ist nach § 40 Abs. 1 VwGO
+    eröffnet; es handelt sich um eine nichtverfassungsrechtliche Streitigkeit. Die Klageart folgt dem
+    Begehren: meist Feststellungs- oder Leistungsklage, da Organakte mangels Außenwirkung keine Verwaltungsakte
+    sind. Die Klagebefugnis wird in analoger Anwendung des § 42 Abs. 2 VwGO verlangt: Der Kläger muss
+    eine Verletzung eigener organschaftlicher Rechte geltend machen können; Rechte der Gemeinde selbst
+    können nicht geltend gemacht werden. Die h. M. wendet § 42 Abs. 2 VwGO analog an, um Popularklagen auszuschließen; eine Gegenansicht lässt die allgemeine Rechtsschutzgarantie genügen. Beteiligtenfähigkeit nach § 61 Nr.
+    2 VwGO analog (Organteile). Wer richtiger Beklagter ist, ist umstritten: nach verbreiteter Ansicht das Organ, dessen Handeln gerügt wird, nach anderer Ansicht die Gemeinde als Rechtsträger.
+  norms:
+  - § 40 Abs. 1 VwGO
+  - § 42 Abs. 2 VwGO analog
+  - § 61 VwGO
+  - § 63 VwGO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: bw-kom-aufbau
+  type: schema_step
+  front: >-
+    Aufbau: Rechtmäßigkeit eines Gemeinderatsbeschlusses (Satzung) nach der GemO BW
+  back: >-
+    I. Ermächtigungsgrundlage (§ 4 GemO BW). II. Formelle Rechtmäßigkeit: Zuständigkeit (Gemeinderat,
+    Ausschuss, Bürgermeister), Verfahren (Einberufung, Öffentlichkeit § 35, Beschlussfähigkeit, keine
+    Mitwirkung Befangener § 18), Form (Ausfertigung, Bekanntmachung); Heilung nach § 4 Abs. 4 (Satzungen) bzw. § 18 Abs. 6 (Befangenheit). III. Materielle
+    Rechtmäßigkeit: Vereinbarkeit mit höherrangigem Recht, Gleichbehandlung, Verhältnismäßigkeit.
+  norms:
+  - § 4 GemO BW
+  - § 18 GemO BW
+  - § 35 GemO BW
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: bw-schema-kom-beschluss
+  title: Prüfung eines Gemeinderatsbeschlusses/einer Satzung nach der GemO BW
+  norms:
+  - § 4 GemO BW
+  - § 18 GemO BW
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Ermächtigungsgrundlage
+    hinweis: >-
+      Selbstverwaltungsrecht, § 4 Abs. 1 GemO BW; bei Grundrechtseingriff spezielle Ermächtigung.
+  - label: II. Formelle Rechtmäßigkeit
+    children:
+    - label: '1. Zuständigkeit: Gemeinderat (§ 24), Bürgermeister (§ 42, § 44)'
+    - label: >-
+        2. Verfahren: ordnungsgemäße Einberufung, Öffentlichkeit, Beschlussfähigkeit
+    - label: >-
+        3. Befangenheit: § 18 GemO BW; Folge nach § 18 Abs. 6 GemO BW (Rechtswidrigkeit, Jahresfrist)
+    - label: '4. Form: Ausfertigung, Bekanntmachung'
+    - label: 5. Heilung bzw. Unbeachtlichkeit (Satzungen § 4 Abs. 4, sonstige Beschlüsse § 18 Abs. 6 GemO BW)
+  - label: III. Materielle Rechtmäßigkeit
+    children:
+    - label: 1. Vereinbarkeit mit höherrangigem Recht (GG, LV, Gesetze)
+    - label: 2. Gleichheitssatz, Verhältnismäßigkeit
+  - label: IV. Rechtsfolge
+    hinweis: Fehler führen zur Unwirksamkeit; Normenkontrolle § 47 VwGO.
+  stand: 2026-10
+faelle:
+- slug: bw-fall-kom-befangenheit
+  title: Der befangene Gemeinderat
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  facts: >-
+    Der Gemeinderat der Gemeinde G (BW) beschließt mit 11 zu 10 Stimmen, ein gemeindeeigenes Grundstück
+    an die B-GmbH zu verkaufen. Gemeinderatsmitglied M, Gesellschafter und Geschäftsführer der B-GmbH,
+    hat an Beratung und Abstimmung teilgenommen und für den Verkauf gestimmt. Ohne seine Stimme hätte
+    es 10 zu 10 gestanden. Ein anderes Ratsmitglied R macht geltend, der Beschluss sei rechtswidrig.
+  question: Ist der Beschluss des Gemeinderats rechtmäßig?
+  steps:
+  - prompt: War M befangen?
+    erwartung: >-
+      Ja. Der Verkauf an die B-GmbH bringt M als Gesellschafter und Geschäftsführer einen unmittelbaren
+      Vorteil; er vertritt die Gesellschaft. Dies ist ein Befangenheitsgrund nach § 18 GemO BW.
+  - prompt: Welche Folge hat die Mitwirkung?
+    erwartung: >-
+      M durfte an Beratung und Abstimmung nicht teilnehmen. Der Verstoß ist ein Verfahrensfehler.
+  - prompt: War die Mitwirkung ausschlaggebend?
+    erwartung: >-
+      Ja. Ohne die Stimme des M hätte Stimmengleichheit bestanden und der Antrag wäre abgelehnt worden; die Mitwirkung war für das Abstimmungsergebnis entscheidend. Nach dem Wortlaut des § 18 Abs. 6 S. 1 GemO BW wäre der Beschluss aber auch ohne ausschlaggebende Stimme rechtswidrig.
+  - prompt: Ergebnis?
+    erwartung: >-
+      Der Beschluss ist unter Verstoß gegen das Mitwirkungsverbot zustande gekommen und rechtswidrig (§ 18 Abs. 6 S. 1 GemO BW). Er gilt erst ein Jahr nach der Beschlussfassung als gültig zustande gekommen, wenn nicht zuvor der Bürgermeister widersprochen oder die Rechtsaufsichtsbehörde beanstandet hat (§ 18 Abs. 6 S. 2 GemO BW); § 4 Abs. 4 GemO BW betrifft nur Satzungen. Der Beschluss ist daher von der Rechtsaufsicht beanstandbar.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Befangenheit des M nach § 18 GemO BW bejaht (unmittelbarer Vorteil für die von ihm vertretene
+        Gesellschaft)
+      weight: 3.0
+      required: true
+      norms:
+      - § 18 GemO BW
+      keywords:
+      - § 18 GemO BW
+      - Befangenheit
+      - unmittelbarer Vorteil
+      - Geschäftsführer
+      - Mitwirkungsverbot
+      card_slugs:
+      - bw-kom-befangenheit
+    - id: p2
+      label: >-
+        Mitwirkung war für das Abstimmungsergebnis entscheidend (Stimmengleichheit ohne M)
+      weight: 2.5
+      required: true
+      keywords:
+      - ausschlaggebend
+      - Stimmengleichheit
+      - entscheidend für das Abstimmungsergebnis
+      - Kausalität
+      - 10 zu 10
+      card_slugs:
+      - bw-kom-befangenheit
+    - id: p3
+      label: >-
+        Rechtsfolge: Beschluss rechtswidrig (§ 18 Abs. 6 GemO BW), Jahresfrist und Beanstandungsmöglichkeit angesprochen
+      weight: 2.0
+      required: true
+      keywords:
+      - Beschluss rechtswidrig
+      - Beschluss unwirksam
+      - unwirksam
+      - Verfahrensfehler
+      - Heilung
+      - Unbeachtlichkeit
+      - Jahresfrist
+      - § 18 Abs. 6 GemO BW
+      - § 4 Abs. 4 GemO BW
+      card_slugs:
+      - bw-kom-satzung
+      - bw-kom-befangenheit
+    - id: p4
+      label: Kommunalaufsicht als mögliches Korrektiv genannt
+      weight: 1.0
+      required: false
+      keywords:
+      - Rechtsaufsicht
+      - Beanstandung
+      - §§ 118 ff. GemO BW
+      - Kommunalaufsicht
+      card_slugs:
+      - bw-kom-aufsicht
+  stand: 2026-10

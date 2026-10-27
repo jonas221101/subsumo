@@ -1,0 +1,410 @@
+topic:
+  slug: zr-sr-eigentumsvorbehalt-anwartschaft
+  area: zivilrecht
+  title: >-
+    Eigentumsvorbehalt, Anwartschaftsrecht, verlängerter und erweiterter Eigentumsvorbehalt
+  parent: zr-sachenrecht-eigentumsherausgabe-985
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-ev-grundlagen-449
+  type: definition
+  front: >-
+    Wie funktioniert der einfache Eigentumsvorbehalt nach § 449 Abs. 1 BGB?
+  back: >-
+    Beim Kauf unter Eigentumsvorbehalt übergibt der Verkäufer die Sache sofort, behält
+    sich aber das Eigentum bis zur vollständigen Zahlung des Kaufpreises vor (§ 449
+    Abs. 1 BGB). Dinglich bedeutet das: Die Einigung nach § 929 S. 1 BGB wird unter
+    der aufschiebenden Bedingung der vollständigen Kaufpreiszahlung erklärt (§ 158
+    Abs. 1 BGB), die Übergabe erfolgt sofort. Der Käufer ist Besitzer, der Verkäufer
+    bleibt Eigentümer, bis die Bedingung eintritt; mit Zahlung des letzten Teilbetrags
+    geht das Eigentum automatisch auf den Käufer über. Der Vorbehaltsverkäufer kann
+    nur nach Rücktritt vom Vertrag die Sache herausverlangen (§ 449 Abs. 2 BGB). Ein
+    Eigentumsvorbehalt ist nichtig, soweit der Eigentumsübergang davon abhängt, dass
+    der Käufer Forderungen eines Dritten, insbesondere eines mit dem Verkäufer verbundenen
+    Unternehmens, erfüllt (Konzernvorbehalt, § 449 Abs. 3 BGB).
+  norms:
+  - § 449 Abs. 1 BGB
+  - § 449 Abs. 2 BGB
+  - § 449 Abs. 3 BGB
+  - § 158 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ev-anwartschaftsrecht-begriff
+  type: definition
+  front: >-
+    Was ist das Anwartschaftsrecht des Vorbehaltskäufers, und wann entsteht es?
+  back: >-
+    Das Anwartschaftsrecht ist eine gesicherte Rechtsposition des Vorbehaltskäufers,
+    die sich zum Vollrecht entwickelt, wenn die Bedingung eintritt. Es besteht, wenn
+    von dem mehraktigen Entstehungstatbestand des Eigentumserwerbs so viel erfüllt
+    ist, dass der Veräußerer den Erwerb nicht mehr einseitig verhindern kann. Beim
+    Eigentumsvorbehalt ist das der Fall, sobald die aufschiebend bedingte Einigung
+    erklärt und die Sache übergeben ist; der Verkäufer kann die Einigung nicht mehr
+    widerrufen, und der Eintritt der Bedingung hängt allein von der Zahlung durch
+    den Käufer ab. Rechtsgrundlage ist die Schutzvorschrift des § 161 Abs. 1 BGB (Zwischenverfügungen
+    sind insoweit unwirksam). Das Anwartschaftsrecht ist ein wesensgleiches Minus
+    zum Eigentum und wird dem Eigentum rechtlich angenähert; es ist übertragbar, belastbar
+    und pfändbar.
+  norms:
+  - § 449 Abs. 1 BGB
+  - § 158 Abs. 1 BGB
+  - § 161 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ev-anwartschaftsrecht-uebertragung
+  type: rechtsprechung
+  front: >-
+    Wie wird das Anwartschaftsrecht übertragen, und wann erwirbt der Erwerber das
+    Vollrecht?
+  back: >-
+    Das Anwartschaftsrecht wird nach den Regeln der Übereignung der Sache übertragen
+    (§§ 929 ff. BGB analog): Der Vorbehaltskäufer einigt sich mit dem Erwerber über
+    den Übergang des Anwartschaftsrechts und übergibt die Sache oder ersetzt die Übergabe
+    (BGHZ 20, 88). Die Zustimmung des Vorbehaltsverkäufers ist nicht erforderlich.
+    Tritt die Bedingung durch Zahlung ein, erwirbt der Zweiterwerber das Eigentum
+    unmittelbar vom Vorbehaltsverkäufer, also ohne Durchgangserwerb des Zwischenerwerbers
+    (h. M.). Der Erwerber kann die Bedingung auch selbst herbeiführen, indem er den
+    Restkaufpreis zahlt (§ 267 BGB); der Vorbehaltsverkäufer darf die Leistung nicht
+    zurückweisen, solange der Käufer nicht widerspricht. Ein gutgläubiger Erwerb des
+    Anwartschaftsrechts vom Nichtberechtigten wird überwiegend abgelehnt.
+  norms:
+  - § 929 BGB
+  - § 267 BGB
+  - § 161 BGB
+  quellen:
+  - BGHZ 20, 88
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ev-anwartschaftsrecht-schutz
+  type: streitstand
+  front: >-
+    Wie ist das Anwartschaftsrecht geschützt, und welche Wirkung hat § 161 BGB?
+  back: >-
+    Wer eine Sache unter einer aufschiebenden Bedingung erwirbt, ist durch § 161 Abs.
+    1 BGB gegen Zwischenverfügungen des Veräußerers geschützt: Verfügungen, die in
+    der Schwebezeit getroffen werden, sind im Falle des Bedingungseintritts insoweit
+    unwirksam, als sie die vom Eintritt der Bedingung abhängige Wirkung vereiteln
+    oder beeinträchtigen würden. Gutgläubiger Erwerb durch einen Dritten bleibt nach
+    § 161 Abs. 3 BGB möglich. Außerdem ist das Anwartschaftsrecht als sonstiges Recht
+    nach § 823 Abs. 1 BGB geschützt, und nach h. M. stehen dem Berechtigten gegen Dritte die Ansprüche
+    aus §§ 985, 1004 BGB analog zu. Gegenüber dem Vorbehaltsverkäufer besteht
+    ein Recht zum Besitz aus dem Kaufvertrag (§ 986 BGB). In der Zwangsvollstreckung
+    ist es durch Rechtspfändung (§ 857 ZPO) zu pfänden, daneben durch Sachpfändung
+    (Doppelpfändung).
+  norms:
+  - § 161 Abs. 1 BGB
+  - § 161 Abs. 3 BGB
+  - § 823 Abs. 1 BGB
+  - § 857 ZPO
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ev-verlaengerter-ev
+  type: definition
+  front: Was ist ein verlängerter Eigentumsvorbehalt, und woraus besteht er?
+  back: >-
+    Der verlängerte Eigentumsvorbehalt ist ein Eigentumsvorbehalt, der sich auf Ersatzwerte
+    der Vorbehaltsware erstreckt, weil der Käufer die Ware im Rahmen seines Geschäftsbetriebs
+    weiterveräußern oder verarbeiten will. Er besteht aus drei Elementen: (1) Ermächtigung
+    zur Weiterveräußerung im ordnungsgemäßen Geschäftsgang (§ 185 Abs. 1 BGB), sodass
+    der Zweiterwerber wirksam Eigentum erwirbt, (2) Vorausabtretung der künftigen
+    Kaufpreisforderung gegen den Zweiterwerber an den Vorbehaltsverkäufer (§ 398 BGB;
+    hinreichend bestimmbar, Abtretung im Voraus ist zulässig) und (3) ggf. Verarbeitungsklausel,
+    nach der der Verkäufer als Hersteller gilt (§ 950 BGB). Erlischt der Eigentumsvorbehalt
+    mit der Weiterveräußerung, setzt sich die Sicherung in der Forderung fort. Ein
+    vereinbartes Abtretungsverbot hindert die Abtretung nicht, wenn das Rechtsgeschäft
+    für beide Teile ein Handelsgeschäft ist (§ 354a Abs. 1 HGB); der Schuldner kann
+    aber mit befreiender Wirkung an den bisherigen Gläubiger leisten.
+  norms:
+  - § 185 Abs. 1 BGB
+  - § 398 BGB
+  - § 950 BGB
+  - § 354a HGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ev-erweiterter-ev
+  type: definition
+  front: Was ist ein erweiterter Eigentumsvorbehalt, und welche Grenzen gelten?
+  back: >-
+    Beim erweiterten Eigentumsvorbehalt wird der Eintritt der Bedingung nicht nur
+    von der Zahlung des Kaufpreises der Sache, sondern auch von der Erfüllung weiterer
+    Forderungen des Verkäufers abhängig gemacht, etwa aller Forderungen aus der Geschäftsverbindung
+    (Kontokorrentvorbehalt). Das ist als Vereinbarung zwischen den Vertragsparteien
+    grundsätzlich zulässig. Unwirksam ist der Konzernvorbehalt, soweit er auf Forderungen
+    Dritter, etwa konzernverbundener Unternehmen, bezogen ist (§ 449 Abs. 3 BGB).
+    Das Eigentum geht dann erst über, wenn alle gesicherten Forderungen beglichen
+    sind. Außerdem unterliegt ein Eigentumsvorbehalt in AGB der Kontrolle nach §§
+    307 ff. BGB, insbesondere gegen eine Übersicherung des Verkäufers; eine Freigabeklausel
+    kann erforderlich sein.
+  norms:
+  - § 449 Abs. 3 BGB
+  - § 449 Abs. 2 BGB
+  - § 307 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ev-globalzession-kollision
+  type: streitstand
+  front: >-
+    Wie wird die Kollision zwischen Globalzession und verlängertem Eigentumsvorbehalt
+    gelöst?
+  back: >-
+    Tritt der Schuldner seine künftigen Forderungen im Wege der Globalzession an eine
+    Bank ab und vereinbart er später mit Lieferanten verlängerte Eigentumsvorbehalte
+    mit Vorausabtretung, gilt nach dem Prioritätsprinzip die früher abgeschlossene
+    Abtretung: Die Forderung geht auf die Bank über, die spätere Abtretung an den
+    Lieferanten geht ins Leere. Die Rechtsprechung korrigiert dieses Ergebnis über § 138 Abs. 1 BGB (Vertragsbruchtheorie, vgl. BGH, NJW 1999, 940, XI ZR 302/97): Eine Globalzession ist sittenwidrig,
+    wenn die Bank weiß oder damit rechnen muss, dass der Schuldner Waren nur unter
+    verlängertem Eigentumsvorbehalt bekommt und dass er deshalb den Vertrag mit dem
+    Lieferanten brechen muss (Vertragsbruch). Die Nichtigkeit tritt nicht ein, wenn
+    die Globalzession durch eine dingliche Teilverzichtsklausel solche Forderungen
+    ausnimmt. Teile der Literatur halten die Sittenwidrigkeitslösung für zu weitgehend und
+    bleiben beim Prioritätsprinzip; der Lieferant wäre dann auf Ansprüche gegen seinen
+    Vertragspartner, den Schuldner, beschränkt.
+  norms:
+  - § 138 Abs. 1 BGB
+  - § 398 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ev-zwischenverfuegung-161-abs3
+  type: norm
+  front: >-
+    Kann ein Dritter vom Vorbehaltsverkäufer trotz bedingter Einigung wirksam Eigentum
+    erwerben?
+  back: >-
+    Verfügt der Vorbehaltsverkäufer, der Eigentümer bleibt, in der Schwebezeit über
+    die Sache an einen Dritten (z. B. durch Abtretung des Herausgabeanspruchs nach
+    § 931 BGB), wäre die Verfügung bei Bedingungseintritt nach § 161 Abs. 1 BGB insoweit
+    unwirksam, als sie das Anwartschaftsrecht vereitelt. Nach § 161 Abs. 3 BGB gelten
+    jedoch die Vorschriften zugunsten derjenigen, die Rechte von einem Nichtberechtigten
+    herleiten, entsprechend. Der Dritte kann also gutgläubig lastenfrei erwerben,
+    wenn er den Eigentumsvorbehalt weder kannte noch grob fahrlässig verkannte (§
+    932 Abs. 2 BGB, §§ 931, 934 BGB). Der Vorbehaltsverkäufer ist nach der Übergabe an den Käufer
+    nicht mehr mittelbarer Besitzer; bei einer Übereignung nach § 931 BGB wird der
+    Erwerb daher erst wirksam, wenn der Dritte den Besitz vom Vorbehaltskäufer erlangt
+    (§ 934 Alt. 2 BGB). Bösgläubig ist der Dritte,
+    wenn er den Eigentumsvorbehalt kennt; dann bleibt § 161 Abs. 1 BGB wirksam und
+    das Anwartschaftsrecht geht vor.
+  norms:
+  - § 161 Abs. 1 BGB
+  - § 161 Abs. 3 BGB
+  - § 931 BGB
+  - § 934 BGB
+  - § 932 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-ev-insolvenz
+  type: norm
+  front: Wie wirkt sich die Insolvenz auf den Eigentumsvorbehalt aus?
+  back: >-
+    Ist der Vorbehaltsverkäufer insolvent, kann der Käufer nach § 107 Abs. 1 InsO
+    die Erfüllung verlangen und durch Zahlung das Eigentum erwerben; das Anwartschaftsrecht
+    ist insolvenzfest. Ist der Vorbehaltskäufer insolvent, hat der Insolvenzverwalter
+    das Wahlrecht nach § 103 InsO, die Erfüllung zu wählen oder abzulehnen. Lehnt
+    er sie ab, kann der Verkäufer die Sache als Eigentümer aussondern (§ 47 InsO).
+    Hat der insolvente Käufer die Sache unter Eigentumsvorbehalt gekauft und in Besitz,
+    braucht der Verwalter, den der Verkäufer zur Ausübung des Wahlrechts auffordert,
+    seine Erklärung erst unverzüglich nach dem Berichtstermin abzugeben (§ 107 Abs.
+    2 InsO), es sei denn, bis dahin droht eine erhebliche Wertminderung der Sache.
+  norms:
+  - § 107 InsO
+  - § 103 InsO
+  - § 47 InsO
+  quellen:
+  - BGB, amtliche Fassung
+  - InsO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: zr-schema-ev-anwartschaft
+  title: >-
+    Eigentumserwerb vom Vorbehaltskäufer durch Übertragung des Anwartschaftsrechts
+  norms:
+  - § 449 Abs. 1 BGB
+  - § 929 BGB
+  - § 161 BGB
+  - § 158 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: >-
+      I. Einigung über die Übertragung des Anwartschaftsrechts und Übergabe, §§ 929
+      ff. BGB analog
+    hinweis: Zustimmung des Vorbehaltsverkäufers nicht erforderlich.
+  - label: II. Bestehen des Anwartschaftsrechts beim Veräußerer
+    children:
+    - label: 1. Wirksamer Kaufvertrag unter Eigentumsvorbehalt
+    - label: 2. Aufschiebend bedingte Einigung, § 158 Abs. 1 BGB
+    - label: 3. Übergabe an den Vorbehaltskäufer
+    - label: 4. Kein Rücktritt, kein Erlöschen der Bedingung
+      hinweis: Mit Rücktritt (§ 449 Abs. 2 BGB) erlischt das Anwartschaftsrecht.
+  - label: III. Berechtigung oder Gutglaubensschutz
+    hinweis: >-
+      Gutgläubiger Erwerb des Anwartschaftsrechts vom Nichtberechtigten wird überwiegend
+      abgelehnt; § 161 Abs. 3 BGB betrifft die Verfügung des Vorbehaltsverkäufers
+      über das Eigentum in der Schwebezeit.
+  - label: IV. Bedingungseintritt
+    hinweis: Zahlung des Restkaufpreises (§ 267 BGB auch durch den Erwerber).
+  - label: V. Rechtsfolge
+    hinweis: >-
+      Direkter Eigentumserwerb vom Vorbehaltsverkäufer (kein Durchgangserwerb).
+- slug: zr-schema-ev-verlaengert
+  title: Verlängerter Eigentumsvorbehalt und Kollision mit Globalzession
+  norms:
+  - § 185 Abs. 1 BGB
+  - § 398 BGB
+  - § 138 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Wirksamer Eigentumsvorbehalt des Lieferanten
+  - label: II. Weiterveräußerungsermächtigung, § 185 Abs. 1 BGB
+    hinweis: Zweiterwerber wird wirksam Eigentümer.
+  - label: III. Vorausabtretung der Forderung an den Lieferanten, § 398 BGB
+    hinweis: Bestimmbarkeit der abgetretenen Forderung.
+  - label: 'IV. Prioritätsprinzip: frühere Globalzession der Bank?'
+    hinweis: Wer zuerst abgetreten hat, erwirbt die Forderung.
+  - label: V. Korrektur über § 138 Abs. 1 BGB (Vertragsbruchtheorie)
+    hinweis: >-
+      Nichtigkeit der Globalzession, soweit sie den Schuldner zum Vertragsbruch zwingt
+      und keine Teilverzichtsklausel enthält.
+  - label: 'VI. Ergebnis: Inhaber der Forderung gegenüber dem Zweiterwerber'
+faelle:
+- slug: zr-fall-ev-fahrradhaendler
+  title: Fahrräder, Bank und Lieferant
+  difficulty: 4
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Großhändler L liefert am 1. März an Einzelhändler S 20 Fahrräder unter verlängertem
+    Eigentumsvorbehalt: Das Eigentum geht erst mit Zahlung über; S darf die Räder
+    im ordentlichen Geschäftsgang weiterverkaufen, tritt aber schon jetzt alle daraus
+    entstehenden Forderungen gegen die Käufer an L ab. Bereits am 1. Januar hat S
+    zur Sicherung eines Kredits der Bank B alle künftigen Forderungen aus seinem Geschäftsbetrieb
+    (Globalzession) an B abgetreten; die Abtretung enthält keine Klausel zugunsten
+    von Lieferanten, und B wusste, dass S Ware ausschließlich auf Kredit unter Eigentumsvorbehalt
+    einkauft. S verkauft ein Fahrrad aus der Lieferung für 2.400 Euro an Kunde K,
+    der es erhält und zahlt noch nicht. S hat L nicht bezahlt. L und B streiten um
+    die Kaufpreisforderung gegen K.
+  question: >-
+    Hat K Eigentum erworben, und wem steht die Kaufpreisforderung gegen K zu?
+  steps:
+  - prompt: Erwirbt K das Eigentum am Fahrrad?
+    erwartung: >-
+      Ja. S war nicht Eigentümer, aber zur Weiterveräußerung im ordentlichen Geschäftsgang
+      ermächtigt (§ 185 Abs. 1 BGB). Die Einigung zwischen S und K und die Übergabe
+      genügen; die Verfügung ist durch die Einwilligung des L wirksam.
+  - prompt: Wie lautet die Anspruchslage nach dem Prioritätsprinzip?
+    erwartung: >-
+      Die Kaufpreisforderung entsteht in der Person des S. S hat sie zuvor im Wege
+      der Globalzession im Voraus an B abgetreten (§ 398 BGB), also zuerst; die später
+      vereinbarte Abtretung an L geht ins Leere. B wäre danach Inhaberin.
+  - prompt: Wie wird dieses Ergebnis korrigiert?
+    erwartung: >-
+      Nach der Rechtsprechung (Vertragsbruchtheorie) verstößt die Globalzession gegen
+      § 138 Abs. 1 BGB: Sie ist sittenwidrig und unwirksam, weil B wusste, dass S Ware
+      nur unter verlängertem Eigentumsvorbehalt erhält und deshalb Vertragsbruch begehen
+      muss. Die Globalzession enthält auch keine Teilverzichtsklausel zugunsten der
+      Lieferanten.
+  - prompt: Wer ist damit Inhaber der Forderung?
+    erwartung: >-
+      L: Die Vorausabtretung der Forderung an L ist wirksam, weil die Globalzession
+      ins Leere geht; L kann von K Zahlung verlangen. K ist nach § 407 BGB geschützt, wenn er in Unkenntnis
+      der Abtretung an L noch an S leistet.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+        Wirksame Weiterveräußerung: Ermächtigung nach § 185 Abs. 1 BGB, Eigentumserwerb
+        des K
+      weight: 2.0
+      required: true
+      norms:
+      - § 185 Abs. 1 BGB
+      keywords:
+      - § 185 Abs. 1
+      - Ermächtigung
+      - Weiterveräußerungsermächtigung
+      - ordentlicher Geschäftsgang
+      - Einwilligung
+      card_slugs:
+      - zr-ev-verlaengerter-ev
+    - id: p2
+      label: 'Prioritätsprinzip: Vorausabtretung an B erfolgte zuerst (§ 398 BGB)'
+      weight: 2.0
+      required: true
+      norms:
+      - § 398 BGB
+      keywords:
+      - Prioritätsprinzip
+      - Prioritätsgrundsatz
+      - Vorausabtretung
+      - früher abgetreten
+      - § 398 BGB
+      card_slugs:
+      - zr-ev-globalzession-kollision
+    - id: p3
+      label: >-
+        Vertragsbruchtheorie und Nichtigkeit der Globalzession nach § 138 Abs. 1 BGB
+      weight: 3.0
+      required: true
+      norms:
+      - § 138 Abs. 1 BGB
+      keywords:
+      - Vertragsbruchtheorie
+      - § 138 Abs. 1
+      - sittenwidrig
+      - Vertragsbruch
+      - Sittenwidrigkeit der Globalzession
+      card_slugs:
+      - zr-ev-globalzession-kollision
+    - id: p4
+      label: 'Ergebnis: L ist Forderungsinhaber, Schuldnerschutz des K'
+      weight: 1.5
+      required: false
+      norms:
+      - § 407 BGB
+      keywords:
+      - Forderungsinhaber
+      - Zahlung an L
+      - § 407
+      - Schuldnerschutz
+      card_slugs:
+      - zr-ev-verlaengerter-ev
+    - id: p5
+      label: >-
+        Eigentumsvorbehalt als Grundlage und Struktur des verlängerten Eigentumsvorbehalts
+        erläutert
+      weight: 1.0
+      required: false
+      norms:
+      - § 449 Abs. 1 BGB
+      keywords:
+      - Eigentumsvorbehalt
+      - § 449 Abs. 1
+      - aufschiebend bedingt
+      - verlängerter Eigentumsvorbehalt
+      card_slugs:
+      - zr-ev-grundlagen-449
+  stand: 2026-10

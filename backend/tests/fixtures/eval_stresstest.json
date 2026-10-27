@@ -1,0 +1,334 @@
+{
+ "sr-fall-notwehr-schlagstock": {
+  "expectation": {
+   "pruefpunkte": [
+    {
+     "id": "p1",
+     "label": "Obersatz mit § 223 Abs. 1 StGB",
+     "weight": 1.5,
+     "required": true,
+     "norms": [
+      "§ 223 Abs. 1 StGB",
+      "§ 223 StGB"
+     ],
+     "keywords": [
+      "223"
+     ],
+     "card_slugs": [
+      "sr-kv-koerperliche-misshandlung"
+     ]
+    },
+    {
+     "id": "p2",
+     "label": "Körperliche Misshandlung und/oder Gesundheitsschädigung definiert und subsumiert",
+     "weight": 2.5,
+     "required": true,
+     "keywords": [
+      "körperliche Misshandlung",
+      "Gesundheitsschädigung",
+      "Wohlbefinden"
+     ],
+     "card_slugs": [
+      "sr-kv-koerperliche-misshandlung",
+      "sr-kv-gesundheitsschaedigung"
+     ]
+    },
+    {
+     "id": "p3",
+     "label": "Vorsatz bejaht, § 15 StGB",
+     "weight": 1.0,
+     "norms": [
+      "§ 15 StGB"
+     ],
+     "keywords": [
+      "Vorsatz"
+     ],
+     "card_slugs": [
+      "sr-at-vorsatz"
+     ]
+    },
+    {
+     "id": "p4",
+     "label": "Notwehrlage: gegenwärtiger rechtswidriger Angriff",
+     "weight": 2.5,
+     "required": true,
+     "norms": [
+      "§ 32 StGB",
+      "§ 32 Abs. 2 StGB"
+     ],
+     "keywords": [
+      "gegenwärtig",
+      "rechtswidriger Angriff",
+      "Notwehrlage"
+     ],
+     "card_slugs": [
+      "sr-at-angriff",
+      "sr-at-notwehr"
+     ]
+    },
+    {
+     "id": "p5",
+     "label": "Erforderlichkeit: Flucht ist kein milderes Mittel, das Recht muss dem Unrecht nicht weichen",
+     "weight": 3.0,
+     "required": true,
+     "keywords": [
+      "erforderlich",
+      "Flucht",
+      "mildeste",
+      "muss dem Unrecht nicht weichen"
+     ],
+     "card_slugs": [
+      "sr-at-notwehr"
+     ]
+    },
+    {
+     "id": "p6",
+     "label": "Gebotenheit / sozialethische Einschränkungen geprüft",
+     "weight": 1.5,
+     "keywords": [
+      "geboten",
+      "sozialethisch"
+     ],
+     "card_slugs": [
+      "sr-at-notwehr"
+     ]
+    },
+    {
+     "id": "p7",
+     "label": "Verteidigungswille als subjektives Rechtfertigungselement",
+     "weight": 1.0,
+     "keywords": [
+      "Verteidigungswille",
+      "subjektives Rechtfertigungselement"
+     ],
+     "card_slugs": [
+      "sr-at-notwehr"
+     ]
+    },
+    {
+     "id": "p8",
+     "label": "Ergebnis: A ist gerechtfertigt und nicht strafbar",
+     "weight": 1.0,
+     "keywords": [
+      "gerechtfertigt",
+      "nicht strafbar"
+     ]
+    }
+   ]
+  },
+  "varianten": {
+   "1 eigene Worte": "Zu prüfen ist, ob A sich dadurch strafbar gemacht haben könnte, dass er B mit einem Teleskopschlagstock auf den Oberarm geschlagen hat. In Betracht kommt eine Körperverletzung nach § 223 Abs. 1 StGB. Dazu müsste A den B körperlich misshandelt oder an der Gesundheit geschädigt haben. Eine Misshandlung ist jede Behandlung, die das körperliche Wohlbefinden mehr als nur unerheblich beeinträchtigt. Der kräftige Hieb hat bei B eine schmerzhafte Prellung hervorgerufen, also liegt der Erfolg vor. A wusste und wollte, was er tat, handelte also mit Vorsatz. Der Schlag könnte aber gerechtfertigt sein, weil A sich gegen den angehenden Faustschlag zur Wehr gesetzt hat. Dafür müsste B ihn rechtswidrig angegriffen haben, und zwar so, dass der Schlag unmittelbar bevorstand. Das war hier so: B holte bereits aus. Die Abwehr müsste außerdem das mildeste ebenso wirksame Mittel gewesen sein. A hätte zwar weglaufen können, aber niemand muss vor einem rechtswidrigen Angreifer ausweichen; die Rechtsordnung muss dem Unrecht nicht weichen. Ein einzelner Schlag auf den Arm war zudem maßvoll. Auch Einschränkungen aus sozialethischen Gründen greifen bei einem Kneipenstreit unter Erwachsenen nicht, und A wollte sich verteidigen. Im Ergebnis ist A also gerechtfertigt und bleibt straflos.",
+   "2 exakte Begriffe": "A könnte sich durch den Schlag mit dem Teleskopschlagstock wegen Körperverletzung nach § 223 Abs. 1 StGB strafbar gemacht haben. Dazu müsste der objektive Tatbestand erfüllt sein. Eine körperliche Misshandlung ist jede üble, unangemessene Behandlung, die das körperliche Wohlbefinden mehr als nur unerheblich beeinträchtigt; eine Gesundheitsschädigung ist das Hervorrufen eines pathologischen Zustands. Hier hat B eine Prellung erlitten, die sowohl körperliche Misshandlung als auch Gesundheitsschädigung ist. A handelte vorsätzlich im Sinne des § 15 StGB (Vorsatz). Die Tat könnte nach § 32 StGB gerechtfertigt sein. Dazu müsste eine Notwehrlage vorliegen, also ein gegenwärtiger rechtswidriger Angriff. Der unmittelbar bevorstehende Faustschlag des B ist ein gegenwärtiger rechtswidriger Angriff, die Notwehrlage liegt vor. Die Verteidigung müsste erforderlich gewesen sein. Erforderlich ist das mildeste gleich wirksame Verteidigungsmittel. Dass A hätte fliehen können, ändert nichts: Flucht ist kein Verteidigungsmittel, denn das Recht muss dem Unrecht nicht weichen. Die Notwehr war auch geboten, sozialethische Einschränkungen sind nicht ersichtlich. A handelte mit Verteidigungswillen, dem subjektiven Rechtfertigungselement. Mithin ist A gerechtfertigt und nicht strafbar.",
+   "3 falsch + Spam": "A könnte sich nach § 223 Abs. 1 StGB, § 224 Abs. 1 Nr. 2 StGB, § 226 StGB und § 212 StGB strafbar gemacht haben. Körperliche Misshandlung und Gesundheitsschädigung liegen vor, das Wohlbefinden ist beeinträchtigt, der Vorsatz nach § 15 StGB ist gegeben. Eine Notwehrlage nach § 32 StGB liegt nicht vor, denn es gab keinen gegenwärtigen rechtswidrigen Angriff, kein rechtswidriger Angriff des B ist ersichtlich. Die Verteidigung war nicht erforderlich, denn A hätte Flucht ergreifen müssen; das mildeste Mittel war die Flucht und das Recht muss dem Unrecht nicht weichen ist hier nicht einschlägig. Die Notwehr war nicht geboten, sozialethisch eingeschränkt. Ein Verteidigungswille fehlt, das subjektive Rechtfertigungselement liegt nicht vor. Mithin ist A nicht gerechtfertigt. Somit ist A strafbar nach § 223 StGB und auch nicht straflos. Er hat sich strafbar gemacht.",
+   "4 Stichwortliste": "§ 223 Abs. 1 StGB, § 32 StGB, § 15 StGB\nKörperliche Misshandlung, Gesundheitsschädigung, Wohlbefinden\nVorsatz\nNotwehrlage, gegenwärtiger rechtswidriger Angriff\nerforderlich, mildeste, Flucht, muss dem Unrecht nicht weichen\ngeboten, sozialethisch\nVerteidigungswille, subjektives Rechtfertigungselement\ngerechtfertigt, nicht strafbar",
+   "5 Urteilsstil": "A ist nach § 223 Abs. 1 StGB nicht strafbar, da seine Tat nach § 32 StGB gerechtfertigt ist. Die Körperverletzung liegt zwar vor, weil B eine Prellung erlitten hat, die eine körperliche Misshandlung und Gesundheitsschädigung darstellt. A hat auch vorsätzlich gehandelt, da er bewusst zugeschlagen hat. Die Tat ist aber gerechtfertigt, da eine Notwehrlage bestand: Der Faustschlag des B war ein gegenwärtiger rechtswidriger Angriff. Die Verteidigung war erforderlich, weil Flucht kein milderes Mittel ist; das Recht muss dem Unrecht nicht weichen. Sie war auch geboten, da keine sozialethischen Einschränkungen eingreifen. A handelte mit Verteidigungswillen. Deshalb ist A gerechtfertigt und nicht strafbar.",
+   "6b ein Satz": "A ist gerechtfertigt und nicht strafbar, weil er in Notwehr nach § 32 StGB gehandelt hat und die Flucht nicht erforderlich war."
+  }
+ },
+ "zr-fall-zahlendreher-kaufangebot": {
+  "expectation": {
+   "pruefpunkte": [
+    {
+     "id": "p1",
+     "label": "Obersatz mit § 142 Abs. 1 BGB als Rechtsfolge der Anfechtung",
+     "weight": 1.0,
+     "required": false,
+     "norms": [
+      "§ 142 Abs. 1 BGB"
+     ],
+     "keywords": [
+      "142",
+      "von Anfang an nichtig"
+     ],
+     "card_slugs": [
+      "zr-at-anfechtung-grundgedanke"
+     ]
+    },
+    {
+     "id": "p2",
+     "label": "Erklärungsirrtum nach § 119 Abs. 1 Var. 2 BGB sauber definiert und subsumiert",
+     "weight": 3.0,
+     "required": true,
+     "norms": [
+      "§ 119 Abs. 1 BGB"
+     ],
+     "keywords": [
+      "Erklärungsirrtum",
+      "119"
+     ],
+     "card_slugs": [
+      "zr-at-anfechtung-erklaerungsirrtum"
+     ]
+    },
+    {
+     "id": "p3",
+     "label": "Abgrenzung zum Inhaltsirrtum bzw. zum unbeachtlichen Motivirrtum angesprochen",
+     "weight": 1.0,
+     "required": false,
+     "keywords": [
+      "Inhaltsirrtum",
+      "Motivirrtum"
+     ],
+     "card_slugs": [
+      "zr-at-anfechtung-inhaltsirrtum",
+      "zr-at-anfechtung-motivirrtum-abgrenzung"
+     ]
+    },
+    {
+     "id": "p4",
+     "label": "Kausalität zwischen Irrtum und Erklärung gepruft",
+     "weight": 1.0,
+     "required": false,
+     "keywords": [
+      "Kausalität",
+      "verständiger Würdigung"
+     ]
+    },
+    {
+     "id": "p5",
+     "label": "Anfechtungserklärung und Anfechtungsfrist nach §§ 143, 121 Abs. 1 BGB sauber gepruft",
+     "weight": 2.0,
+     "required": true,
+     "norms": [
+      "§ 121 Abs. 1 BGB",
+      "§ 143 Abs. 1 BGB"
+     ],
+     "keywords": [
+      "unverzüglich",
+      "121",
+      "143"
+     ],
+     "card_slugs": [
+      "zr-at-anfechtung-erklaerung-143",
+      "zr-at-anfechtung-frist-121"
+     ]
+    },
+    {
+     "id": "p6",
+     "label": "Schadensersatzanspruch der V aus § 122 Abs. 1 BGB bejaht, inkl. Begrenzung auf das Erfüllungsinteresse und Prüfung des Ausschlusses nach § 122 Abs. 2 BGB",
+     "weight": 2.0,
+     "required": false,
+     "norms": [
+      "§ 122 Abs. 1 BGB",
+      "§ 122 Abs. 2 BGB"
+     ],
+     "keywords": [
+      "122",
+      "Vertrauensschaden",
+      "Erfüllungsinteresse"
+     ],
+     "card_slugs": [
+      "zr-at-anfechtung-schadensersatz-122"
+     ]
+    }
+   ]
+  },
+  "varianten": {
+   "1 eigene Worte": "Fraglich ist, ob der Kaufvertrag zwischen K und V durch die Anfechtung des K aus der Welt geschafft wurde. Das wäre der Fall, wenn K wirksam angefochten hätte, denn dann gilt der Vertrag als von Anfang an unwirksam. Angefochten werden kann die Erklärung, die K abgegeben hat, nämlich sein Gegenangebot. Dazu müsste ein Anfechtungsgrund vorliegen. K wollte 7.500 schreiben, hat sich aber vertippt. Damit weicht das Erklärte vom Gewollten ab, ohne dass K sich über die Bedeutung seiner Worte getäuscht hätte; es ist ein reiner Vertipper, also ein Irrtum bei der Abgabe der Erklärung in der Variante des Verschreibens. Hätte K gewusst, was er schreibt, hätte er so nicht geboten, und auch ein vernünftiger Mensch hätte es nicht getan. Er hat noch am Tag seiner Entdeckung gegenüber V erklärt, das war ohne schuldhaftes Zögern. Der Vertrag ist damit rückwirkend entfallen. V kann aber verlangen, so gestellt zu werden, als hätte sie auf die Gültigkeit vertraut. Ihr Schaden aus der Absage an den anderen Bieter ist ersatzfähig, jedoch höchstens in Höhe dessen, was sie bei Erfüllung gehabt hätte, und sie wusste von dem Fehler nichts. Folglich hat V einen Anspruch auf Ersatz ihres Vertrauensschadens.",
+   "2 exakte Begriffe": "Der zwischen K und V zustande gekommene Kaufvertrag könnte durch Anfechtung des K gemäß § 142 Abs. 1 BGB rückwirkend als von Anfang an nichtig anzusehen sein. Anfechtungsgegenstand ist das Gegenangebot des K über 7.050 Euro. Als Anfechtungsgrund kommt ein Erklärungsirrtum nach § 119 Abs. 1 Var. 2 BGB in Betracht. Ein Erklärungsirrtum liegt vor, wenn der Erklärende eine Erklärung dieses Inhalts überhaupt nicht abgeben wollte. Hier wollte K 7.500 Euro erklären und hat sich vertippt; es handelt sich nicht um einen Inhaltsirrtum und auch nicht um einen unbeachtlichen Motivirrtum. Die Kausalität zwischen Irrtum und Erklärung ist gegeben, denn K hätte bei Kenntnis der Sachlage und verständiger Würdigung die Erklärung nicht abgegeben. Die Anfechtung wurde nach § 143 Abs. 1, 2 BGB gegenüber V erklärt und noch am Tag der Entdeckung unverzüglich im Sinne des § 121 Abs. 1 BGB. Der Kaufvertrag ist daher gemäß § 142 Abs. 1 BGB von Anfang an nichtig. V könnte gegen K einen Anspruch aus § 122 Abs. 1 BGB auf Ersatz des Vertrauensschadens haben. Der Ersatz ist auf das Erfüllungsinteresse begrenzt; ein Ausschluss nach § 122 Abs. 2 BGB scheidet aus, da V den Irrtum weder kannte noch kennen musste. Mithin besteht der Anspruch.",
+   "3 falsch + Spam": "Der Kaufvertrag könnte nach § 142 Abs. 1 BGB, § 119 Abs. 1 BGB, § 119 Abs. 2 BGB, § 123 BGB, §§ 143, 121 BGB und § 122 BGB von Anfang an nichtig sein. Ein Erklärungsirrtum, ein Inhaltsirrtum und ein Motivirrtum liegen jedoch nicht vor; die Kausalität und die verständige Würdigung sind nicht gegeben. Die Anfechtung ist nicht unverzüglich erfolgt, da K drei Tage gewartet hat, und 143 und 121 sind verfristet. Der Kaufvertrag ist daher nicht von Anfang an nichtig, der Vertrag besteht fort. Ein Anspruch aus § 122 Abs. 1 BGB auf Vertrauensschaden und Erfüllungsinteresse scheidet damit aus. Hier ist K zur Zahlung von 7.050 Euro verpflichtet. Mithin ist die Anfechtung unwirksam und das Ergebnis eindeutig.",
+   "4 Stichwortliste": "§ 142 Abs. 1 BGB, von Anfang an nichtig\n§ 119 Abs. 1 Var. 2 BGB, Erklärungsirrtum\nInhaltsirrtum, Motivirrtum\nKausalität, verständiger Würdigung\n§ 143 BGB, § 121 BGB, unverzüglich\n§ 122 BGB, Vertrauensschaden, Erfüllungsinteresse",
+   "5 Urteilsstil": "Der Kaufvertrag ist nach § 142 Abs. 1 BGB von Anfang an nichtig, da K wirksam angefochten hat. Die Anfechtung greift durch, weil ein Erklärungsirrtum nach § 119 Abs. 1 Var. 2 BGB vorliegt: K wollte 7.500 Euro erklären, hat sich aber vertippt. Es handelt sich weder um einen Inhaltsirrtum noch um einen Motivirrtum. Die Kausalität ist gegeben, da K bei verständiger Würdigung nicht so geboten hätte. Die Anfechtung erfolgte unverzüglich gemäß §§ 143, 121 BGB, weil K noch am Tag der Entdeckung gegenüber V angefochten hat. V hat deshalb einen Anspruch aus § 122 Abs. 1 BGB auf Ersatz des Vertrauensschadens, der auf das Erfüllungsinteresse begrenzt ist.",
+   "6b ein Satz": "K hat nach § 119 Abs. 1 Var. 2 BGB unverzüglich gemäß §§ 143, 121 BGB angefochten, sodass der Vertrag nach § 142 BGB von Anfang an nichtig ist und V Vertrauensschaden nach § 122 BGB verlangen kann."
+  }
+ },
+ "or-fall-satireplakat": {
+  "expectation": {
+   "pruefpunkte": [
+    {
+     "id": "p1",
+     "label": "Schutzbereich der Meinungsfreiheit bejaht (wertende Äußerung, keine Tatsachenbehauptung)",
+     "weight": 2.0,
+     "required": true,
+     "norms": [
+      "Art. 5 Abs. 1 S. 1 GG"
+     ],
+     "keywords": [
+      "Meinung",
+      "wertend",
+      "Tatsachenbehauptung"
+     ],
+     "card_slugs": [
+      "or-gr-art5-schutzbereich-meinung",
+      "or-gr-art5-abgrenzung-tatsachenbehauptung"
+     ]
+    },
+    {
+     "id": "p2",
+     "label": "Eingriff bejaht",
+     "weight": 1.5,
+     "required": true,
+     "keywords": [
+      "Eingriff"
+     ],
+     "card_slugs": [
+      "or-gr-eingriff"
+     ]
+    },
+    {
+     "id": "p3",
+     "label": "Prüfung als \"allgemeines Gesetz\" i.S.d. Art. 5 Abs. 2 GG nach der Sonderrechtslehre",
+     "weight": 2.5,
+     "required": true,
+     "norms": [
+      "Art. 5 Abs. 2 GG"
+     ],
+     "keywords": [
+      "allgemeines Gesetz",
+      "Sonderrechtslehre"
+     ],
+     "card_slugs": [
+      "or-gr-art5-allgemeines-gesetz-sonderrechtslehre"
+     ]
+    },
+    {
+     "id": "p4",
+     "label": "Schmähkritik zutreffend verneint (Sachbezug zur Bauentscheidung)",
+     "weight": 2.0,
+     "required": true,
+     "keywords": [
+      "Schmähkritik",
+      "Sachbezug"
+     ],
+     "card_slugs": [
+      "or-gr-art5-schmaehkritik"
+     ]
+    },
+    {
+     "id": "p5",
+     "label": "Wechselwirkungslehre / Abwägung im Einzelfall durchgeführt",
+     "weight": 2.5,
+     "required": true,
+     "keywords": [
+      "Wechselwirkung",
+      "Abwägung"
+     ],
+     "card_slugs": [
+      "or-gr-art5-wechselwirkungslehre"
+     ]
+    },
+    {
+     "id": "p6",
+     "label": "Ergebnis: überspitzte Kritik an Amtsträger in amtlicher Funktion gedeckt, Entfernungsanordnung verletzt Art. 5 Abs. 1 S. 1 GG",
+     "weight": 1.5,
+     "required": false,
+     "norms": [
+      "Art. 5 Abs. 1 S. 1 GG"
+     ],
+     "keywords": [
+      "verletzt",
+      "gedeckt"
+     ]
+    }
+   ]
+  },
+  "varianten": {
+   "1 eigene Worte": "Zu untersuchen ist, ob die Anordnung, das Plakat abzuhängen, den Künstler K in seinem Grundrecht auf freie Meinungsäußerung verletzt. Das setzt zunächst voraus, dass der Schutzbereich berührt ist. Die Karikatur und der Spruch über den Baudezernenten bewerten dessen Arbeit und lassen sich nicht auf wahr oder falsch prüfen; sie sind also eine geschützte Stellungnahme und keine bloße Behauptung von Tatsachen. Die Behörde hat K das Weiterzeigen untersagt, was die Verbreitung seiner Haltung unterbindet und damit einen staatlichen Eingriff darstellt. Dieser könnte gerechtfertigt sein, wenn die Ortsvorschrift zu den Schranken zählt. Die Vorschrift schützt die Ehre sämtlicher Amtsträger, gleich welche Ansicht kritisiert wird, und richtet sich nicht gegen eine bestimmte Meinung; sie gilt daher als Schranke. Zu fragen ist jedoch, ob der Plakattext reine Diffamierung ist, bei der man nicht abzuwägen braucht. Das ist nicht der Fall, weil die Darstellung erkennbar auf die Bauentscheidung der Stadt zielt und in der Sache streitet. Dann ist das Gesetz im Licht des Grundrechts auszulegen und es ist im konkreten Fall zu gewichten. Kritik an einem Beamten in seiner amtlichen Rolle wiegt schwer, auch zugespitzte Polemik ist hinzunehmen. Daher ist die Anordnung rechtswidrig und das Grundrecht des K ist beeinträchtigt.",
+   "2 exakte Begriffe": "Die Entfernungsanordnung könnte K in seiner Meinungsfreiheit aus Art. 5 Abs. 1 S. 1 GG verletzen. Der Schutzbereich ist eröffnet: Karikatur und Text sind wertende, meinungsbildende Äußerungen und keine Tatsachenbehauptung. Die Entfernungsanordnung unterbindet die weitere Verbreitung der Meinung; ein Eingriff liegt vor. Der Eingriff müsste verfassungsrechtlich gerechtfertigt sein. Die ortsrechtliche Vorschrift müsste ein allgemeines Gesetz im Sinne des Art. 5 Abs. 2 GG sein. Nach der Sonderrechtslehre ist das der Fall, wenn die Vorschrift nicht meinungsspezifisch ist. Die Vorschrift schützt das Rechtsgut Ehre unabhängig von der konkreten Meinung, sodass ein allgemeines Gesetz vorliegt. Es könnte Schmähkritik vorliegen, die eine Abwägung entbehrlich macht. Die Karikatur hat erkennbar Sachbezug zur Bauentscheidung, es liegt keine Schmähkritik vor. Nach der Wechselwirkungslehre ist eine Abwägung im Einzelfall vorzunehmen. Kommunalpolitische Kritik an einem Amtsträger genießt besonderes Gewicht; die überspitzte Formulierung ist gedeckt. Mithin verletzt die Entfernungsanordnung den K in Art. 5 Abs. 1 S. 1 GG.",
+   "3 falsch + Spam": "Die Entfernungsanordnung könnte Art. 5 Abs. 1 S. 1 GG, Art. 5 Abs. 3 GG, Art. 1 Abs. 1 GG, Art. 2 Abs. 1 GG und Art. 5 Abs. 2 GG verletzen. Der Schutzbereich der Meinung ist nicht eröffnet, es liegt eine Tatsachenbehauptung vor, nicht wertend. Ein Eingriff liegt nicht vor. Die Vorschrift ist kein allgemeines Gesetz nach der Sonderrechtslehre. Es handelt sich um Schmähkritik, ohne Sachbezug, eine Wechselwirkung und Abwägung ist entbehrlich. Die Abwägung im Einzelfall geht zu Lasten des K. Die Meinungsfreiheit wird nicht verletzt; die Kritik ist nicht gedeckt. Das Grundrecht aus Art. 5 Abs. 1 S. 1 GG ist nicht verletzt, die Anordnung ist rechtmäßig.",
+   "4 Stichwortliste": "Art. 5 Abs. 1 S. 1 GG\nMeinung, wertend, Tatsachenbehauptung\nEingriff\nallgemeines Gesetz, Sonderrechtslehre, Art. 5 Abs. 2 GG\nSchmähkritik, Sachbezug\nWechselwirkung, Abwägung\nverletzt, gedeckt",
+   "5 Urteilsstil": "Die Entfernungsanordnung verletzt K in seinem Grundrecht aus Art. 5 Abs. 1 S. 1 GG, da sein Plakat eine geschützte Meinung ist. Der Schutzbereich ist eröffnet, weil Karikatur und Text wertend sind und keine Tatsachenbehauptung enthalten. Ein Eingriff liegt vor, da die Anordnung die Verbreitung unterbindet. Die Vorschrift ist ein allgemeines Gesetz nach der Sonderrechtslehre, weil sie die Ehre unabhängig von der Meinung schützt. Schmähkritik liegt nicht vor, da ein Sachbezug zur Bauentscheidung besteht. Die Wechselwirkung führt in der Abwägung zum Vorrang der Meinungsfreiheit, weil die Kritik gedeckt ist.",
+   "6b ein Satz": "Die Anordnung verletzt Art. 5 Abs. 1 S. 1 GG, weil die Meinung wertend ist, ein Eingriff vorliegt, kein allgemeines Gesetz nach der Sonderrechtslehre greift, keine Schmähkritik vorliegt und die Abwägung gedeckt ist."
+  }
+ }
+}

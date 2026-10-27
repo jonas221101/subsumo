@@ -1,0 +1,24 @@
+kurs:
+  slug: or-europarecht
+  title: Europarecht
+  area: oeffentliches-recht
+  semester_default: 6
+  examenskurs: false
+  stand: 2026-10
+  quellen:
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Eigenformulierung Redaktion
+  beschreibung: 'Grundzüge des Unionsrechts: Rechtsquellen, Vorrang und Anwendbarkeit des Unionsrechts, Grundfreiheiten,
+    Rechtsschutz vor dem EuGH und Verhältnis zum nationalen Recht.'
+  lernziele:
+  - Vorrang und unmittelbare Anwendbarkeit des Unionsrechts einordnen
+  - Grundfreiheiten in der Klausur prüfen
+  - Vorabentscheidungsverfahren und Rechtsschutz vor dem EuGH aufbauen
+  klausurformat:
+    typ: Fortgeschrittenenklausur
+    minuten: 180
+  topic_slugs:
+  - or-europarecht-grundzuege
+  landesrecht_kategorien: []
+  fehlende_themen:
+  - Wettbewerbs- und Beihilfenrecht der Union (P3)

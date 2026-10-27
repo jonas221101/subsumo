@@ -1,0 +1,449 @@
+topic:
+  slug: or-baurecht-bauplanungsrecht-zulaessigkeit
+  area: oeffentliches-recht
+  title: Bauplanungsrechtliche Zulässigkeit von Vorhaben, §§ 29 ff. BauGB
+  parent: oeffentliches-recht
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-br-bp-vorhaben-29
+  type: definition
+  front: Was ist ein „Vorhaben“ im Sinne des § 29 Abs. 1 BauGB?
+  back: >-
+    § 29 Abs. 1 BauGB definiert den bauplanungsrechtlichen Vorhabenbegriff und damit den Anwendungsbereich der
+    §§ 30 bis 37 BauGB. Erfasst sind Vorhaben, die die Errichtung, Änderung oder Nutzungsänderung von baulichen
+    Anlagen zum Inhalt haben, sowie Aufschüttungen und Abgrabungen größeren Umfangs, Ausschachtungen,
+    Ablagerungen einschließlich Lagerstätten. Bauliche Anlage im bauplanungsrechtlichen Sinn ist eine mit dem Erdboden
+    verbundene, aus Baustoffen hergestellte Anlage, die in einer das Bauplanungsrecht berührenden Weise bodenrechtliche
+    Relevanz hat, also das Bedürfnis nach einer ihre Zulässigkeit regelnden Bauleitplanung auslösen kann. Der
+    Begriff ist vom bauordnungsrechtlichen Begriff der baulichen Anlage zu unterscheiden. Eine Nutzungsänderung
+    liegt vor, wenn die neue Nutzung andere bodenrechtliche Anforderungen stellt als die bisherige.
+  norms:
+  - § 29 Abs. 1 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bp-30-31
+  type: norm
+  front: Wann ist ein Vorhaben im Geltungsbereich eines Bebauungsplans zulässig (§ 30), und was regelt § 31 BauGB?
+  back: >-
+    Im Geltungsbereich eines qualifizierten Bebauungsplans ist ein Vorhaben zulässig, wenn es den
+    Festsetzungen nicht widerspricht und die Erschließung gesichert ist, § 30 Abs. 1 BauGB. Maßgeblich sind
+    die Festsetzungen nach § 9 BauGB und die BauNVO. Nach § 31 Abs. 1 BauGB kann die Baugenehmigungsbehörde
+    Ausnahmen zulassen, die im Bebauungsplan nach Art und Umfang ausdrücklich vorgesehen sind (z. B. über
+    § 4 Abs. 3 BauNVO). Eine Befreiung von den Festsetzungen nach § 31 Abs. 2 BauGB ist möglich, wenn die
+    Grundzüge der Planung nicht berührt werden und einer der Gründe der Nrn. 1 bis 3 vorliegt: Gründe des
+    Wohls der Allgemeinheit, städtebauliche Vertretbarkeit oder eine offenbar nicht beabsichtigte Härte.
+    Zusätzlich muss die Abweichung unter Würdigung nachbarlicher Interessen mit den öffentlichen Belangen
+    vereinbar sein. Der Unterschied: Die Ausnahme ist im Plan vorgesehen, die Befreiung eine
+    nicht planmäßige Abweichung. Für den Wohnungsbau kann die Gemeinde
+    zudem einer Befreiung zustimmen (§ 31 Abs. 3 BauGB). Daneben ermöglicht der befristete
+    § 246e BauGB („Bau-Turbo“) mit Zustimmung der Gemeinde bis zum 31.12.2030 Abweichungen von den
+    Vorschriften des BauGB, wenn sie unter Würdigung nachbarlicher Interessen mit den öffentlichen
+    Belangen vereinbar sind und der Errichtung, Erweiterung oder Nutzungsänderung zu Wohnzwecken
+    dienen (§ 246e Abs. 1 BauGB); im Außenbereich nur im räumlichen Zusammenhang mit Flächen nach
+    § 30 oder § 34 (Abs. 3). Er ist in der Klausur nur bei entsprechendem Hinweis im Sachverhalt
+    zu prüfen.
+  norms:
+  - § 30 Abs. 1 BauGB
+  - § 31 Abs. 1 BauGB
+  - § 31 Abs. 2 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bp-grundzuege-planung
+  type: definition
+  front: Wann werden die „Grundzüge der Planung“ im Sinne des § 31 Abs. 2 BauGB berührt?
+  back: >-
+    Die Grundzüge der Planung sind die den Festsetzungen zugrunde liegende planerische Konzeption, das
+    „Grundgerüst“ des Plans. Berührt sind sie, wenn die Abweichung von so großem Gewicht ist, dass sie dem
+    Planungswillen der Gemeinde zuwiderläuft und die Befreiung deshalb nur durch Änderung des Plans mit
+    Beteiligung der Gemeinde und der Öffentlichkeit möglich wäre. Maßgeblich ist, ob anzunehmen ist, dass
+    die Gemeinde die Abweichung auch beschlossen hätte, wenn sie die Frage gesehen hätte; wesentliche
+    Festsetzungen wie die Art der baulichen Nutzung sind regelmäßig tragend, untergeordnete Festsetzungen
+    (kleine Überschreitung einer Baugrenze) eher nicht. Je ausgeprägter die Abweichung, desto eher berührt sie die Grundzüge.
+    Die Befreiung dient dem Ausgleich atypischer Einzelfälle, nicht der planerischen Korrektur im Allgemeinen.
+  norms:
+  - § 31 Abs. 2 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bp-33-planreife
+  type: norm
+  front: Wann ist ein Vorhaben während der Planaufstellung zulässig (§ 33 BauGB, Planreife)?
+  back: >-
+    § 33 BauGB lässt Vorhaben schon vor Inkrafttreten eines Bebauungsplans zu, wenn der Plan so weit gediehen ist,
+    dass mit seinem Inkrafttreten gerechnet werden kann (Planreife). Voraussetzungen sind, dass ein
+    Aufstellungsbeschluss gefasst ist, die vorgeschriebene Beteiligung der Öffentlichkeit und der Behörden
+    durchgeführt wurde (formelle Planreife), anzunehmen ist, dass das Vorhaben den künftigen Festsetzungen nicht
+    entgegensteht (materielle Planreife), der Antragsteller diese Festsetzungen für sich und seine Rechtsnachfolger
+    schriftlich anerkennt und die Erschließung gesichert ist. Die Vorschrift dient der Beschleunigung. Sie gibt dem
+    Bauherrn einen Anspruch, wenn die Voraussetzungen vorliegen. Fehlt es an der Planreife, kann die Gemeinde die
+    laufende Planung durch Veränderungssperre oder Zurückstellung (§§ 14, 15 BauGB) sichern.
+  norms:
+  - § 33 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bp-34-innenbereich
+  type: definition
+  front: Was ist ein „im Zusammenhang bebauter Ortsteil“ im Sinne des § 34 Abs. 1 BauGB (Innenbereich)?
+  back: >-
+    Ein Ortsteil ist ein Bebauungskomplex im Gebiet einer Gemeinde, der nach der Zahl der vorhandenen Bauten ein gewisses
+    Gewicht hat und Ausdruck einer organischen Siedlungsstruktur ist. Eine Splittersiedlung ohne dieses Gewicht
+    (wenige Häuser) ist kein Ortsteil. Im Zusammenhang bebaut ist ein Gebiet, wenn die vorhandene Bebauung den
+    Eindruck der Geschlossenheit und Zusammengehörigkeit vermittelt. Unbebaute Flächen (Baulücken) unterbrechen
+    den Zusammenhang nicht, solange die Fläche nach der Verkehrsauffassung als Lücke erscheint; größere Freiflächen
+    können ihn dagegen unterbrechen, und Außenbereichsinseln im Innenbereich sind ausnahmsweise möglich. Der
+    Bebauungszusammenhang endet regelmäßig mit der letzten Bebauung (Haus), nicht mit Bäumen, Gärten oder Wegen.
+    Maßgeblich ist die tatsächliche Bebauung, die ein Ortsbild prägt, nicht Planungsabsichten.
+  norms:
+  - § 34 Abs. 1 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bp-34-einfuegen
+  type: norm
+  front: Wann „fügt sich“ ein Vorhaben im unbeplanten Innenbereich ein (§ 34 Abs. 1 BauGB)?
+  back: >-
+    Nach § 34 Abs. 1 S. 1 BauGB ist ein Vorhaben zulässig, wenn es sich nach Art und Maß der baulichen Nutzung,
+    der Bauweise und der Grundstücksfläche, die überbaut werden soll, in die Eigenart der näheren Umgebung
+    einfügt und die Erschließung gesichert ist. Die Anforderungen an die gesunden Wohn- und Arbeitsverhältnisse
+    müssen gewahrt bleiben, das Ortsbild darf nicht beeinträchtigt werden, § 34 Abs. 1 S. 2 BauGB. Die
+    „nähere Umgebung“ reicht so weit, wie sich das Vorhaben auswirken kann und die Umgebung den Standort prägt.
+    Einfügen verlangt, dass sich das Vorhaben in dem durch die Umgebung gebildeten Rahmen hält; auch wenn es den
+    Rahmen überschreitet, fügt es sich noch ein, wenn es keine bewältigungsbedürftigen Spannungen begründet oder
+    erhöht. Das Gebot der Rücksichtnahme ist ein Bestandteil des Einfügens.
+  norms:
+  - § 34 Abs. 1 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bp-34-abs2
+  type: norm
+  front: Was regelt § 34 Abs. 2 BauGB (faktisches Baugebiet)?
+  back: >-
+    Entspricht die Eigenart der näheren Umgebung einem der Baugebiete der BauNVO (faktisches Baugebiet), beurteilt
+    sich nach § 34 Abs. 2 BauGB die Zulässigkeit des Vorhabens nach seiner Art allein danach, ob es nach der BauNVO
+    in dem Baugebiet allgemein zulässig wäre; Ausnahmen sind nach § 31 Abs. 1 BauGB entsprechend zu behandeln.
+    Für Maß, Bauweise und überbaubare Grundstücksfläche bleibt es bei § 34 Abs. 1 BauGB. Die Vorschrift ersetzt
+    das „Einfügen“ in Bezug auf die Art der Nutzung durch einen Abgleich mit dem Katalog der BauNVO. Im Alltag ist
+    sie bedeutsam, weil die Gebietsart (z. B. allgemeines Wohngebiet) dann einem Bebauungsplan gleichsteht und
+    Nachbarn aus der Gebietsart einen Gebietserhaltungsanspruch herleiten können. Eine Befreiung nach § 31 Abs. 2
+    BauGB ist ebenfalls möglich (§ 34 Abs. 2 Hs. 2 BauGB).
+  norms:
+  - § 34 Abs. 2 BauGB
+  - § 31 Abs. 1 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bp-35-privilegiert
+  type: norm
+  front: Wann ist ein Vorhaben im Außenbereich privilegiert zulässig (§ 35 Abs. 1 BauGB)?
+  back: >-
+    Im Außenbereich ist ein Vorhaben nach § 35 Abs. 1 BauGB zulässig, wenn öffentliche Belange nicht entgegenstehen,
+    die ausreichende Erschließung gesichert ist und es einem der privilegierten Zwecke dient. Dazu gehören
+    unter anderem Vorhaben, die einem land- oder forstwirtschaftlichen Betrieb dienen und nur einen untergeordneten
+    Teil der Betriebsfläche einnehmen (Nr. 1), gartenbauliche Erzeugung (Nr. 2), Vorhaben der öffentlichen Versorgung
+    (Nr. 3), Vorhaben, die wegen ihrer besonderen Anforderungen, ihrer nachteiligen Wirkung auf die Umgebung oder
+    ihrer besonderen Zweckbestimmung nur im Außenbereich ausgeführt werden sollen (Nr. 4), sowie Anlagen der
+    Windenergie, Geothermie und Wasserenergie (Nr. 5) und weitere Vorhaben der Energiegewinnung und -speicherung (Nr. 6 bis 12). Ein Vorhaben „dient“ dem Betrieb, wenn ein
+    vernünftiger Landwirt es unter Berücksichtigung des Gebots größtmöglicher Schonung des Außenbereichs
+    auch errichten würde und es dem Betrieb zu dienen bestimmt und in angemessenem Umfang zugeordnet ist.
+  norms:
+  - § 35 Abs. 1 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bp-35-sonstige
+  type: norm
+  front: Wie beurteilt sich ein sonstiges Vorhaben im Außenbereich (§ 35 Abs. 2 und 3 BauGB)?
+  back: >-
+    Sonstige, also nicht privilegierte Vorhaben können im Einzelfall zugelassen werden, wenn ihre Ausführung oder Benutzung
+    öffentliche Belange nicht beeinträchtigt und die Erschließung gesichert ist, § 35 Abs. 2 BauGB. Anders als bei
+    privilegierten Vorhaben genügt bereits die Beeinträchtigung öffentlicher Belange, damit das Vorhaben
+    unzulässig ist. § 35 Abs. 3 S. 1 BauGB nennt Beispiele (nicht abschließend): Widerspruch zu Darstellungen des
+    Flächennutzungsplans (Nr. 1), schädliche Umwelteinwirkungen (Nr. 3), Beeinträchtigung von Naturschutz und
+    Landschaftspflege (Nr. 5) und Befürchtung einer Verfestigung oder Erweiterung einer Splittersiedlung (Nr. 7).
+    Die Genehmigung eines Wohnhauses für einen Nichtlandwirt im Außenbereich scheitert daher in aller Regel
+    an den öffentlichen Belangen. Ausnahmen für Bestandsbauten enthält § 35 Abs. 4 BauGB (begünstigte Vorhaben).
+  norms:
+  - § 35 Abs. 2 BauGB
+  - § 35 Abs. 3 BauGB
+  - § 35 Abs. 4 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bp-35-oeffentliche-belange
+  type: definition
+  front: Wie wirken öffentliche Belange bei privilegierten Vorhaben im Gegensatz zu sonstigen Vorhaben?
+  back: >-
+    Bei privilegierten Vorhaben stehen öffentliche Belange nur „entgegen“, wenn sie im Einzelfall gewichtiger sind als
+    das Interesse an der Verwirklichung des Vorhabens. Der Gesetzgeber hat privilegierte Vorhaben grundsätzlich für den
+    Außenbereich vorgesehen; es findet daher eine nachvollziehende Abwägung statt, in die der Privilegierungs-
+    tatbestand mit erhöhtem Gewicht eingeht. Bei sonstigen Vorhaben genügt dagegen jede Beeinträchtigung eines
+    öffentlichen Belangs. Auch die in § 35 Abs. 3 S. 1 BauGB genannten Belange sind keine feste Liste, sondern
+    unbestimmte Rechtsbegriffe ohne Beurteilungsspielraum der Behörde. Die Abwägung ist vollständig gerichtlich
+    überprüfbar. Ob ein Flächennutzungsplan einem privilegierten Vorhaben entgegensteht, richtet sich nach dem Planvorbehalt des
+    § 35 Abs. 3 S. 3 BauGB (Konzentrationsflächenplanung, vor allem bei der Windenergie, mit Ausschlusswirkung für
+    andere Standorte); allgemeine Darstellungen des Plans verdrängen die Privilegierung nicht.
+    Für Windenergieanlagen ist dieser Planvorbehalt durch § 249 BauGB und das
+    Windenergieflächenbedarfsgesetz modifiziert: § 35 Abs. 3 S. 3 BauGB ist auf Windenergievorhaben
+    nach § 35 Abs. 1 Nr. 5 nicht anzuwenden (§ 249 Abs. 1 BauGB); ist ein Flächenbeitragswert des Landes
+    erreicht, sind solche Vorhaben außerhalb der Windenergiegebiete nur noch ausnahmsweise nach
+    § 35 Abs. 2 zulässig (§ 249 Abs. 2 BauGB); werden die Flächenziele zum Stichtag nicht erreicht,
+    können Darstellungen und Ziele den Vorhaben nicht mehr entgegengehalten werden (§ 249 Abs. 7 BauGB).
+    Die Länder können Mindestabstände bis höchstens 1 000 m vorsehen (§ 249 Abs. 9 BauGB).
+  norms:
+  - § 35 Abs. 1 BauGB
+  - § 35 Abs. 3 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bp-35-aussenbereichssatzung
+  type: definition
+  front: Was ist eine Außenbereichssatzung (§ 35 Abs. 6 BauGB)?
+  back: >-
+    Die Gemeinde kann für bebaute Bereiche im Außenbereich, die nicht überwiegend landwirtschaftlich geprägt sind und
+    in denen eine Wohnbebauung von einigem Gewicht vorhanden ist, durch Satzung bestimmen, dass Wohnzwecken dienenden
+    Vorhaben sowie kleineren Handwerks- und Gewerbebetrieben nicht entgegengehalten werden kann, dass sie
+    Darstellungen des Flächennutzungsplans über Flächen für die Landwirtschaft oder Wald widersprechen oder
+    die Entstehung oder Verfestigung einer Splittersiedlung befürchten lassen. Die Satzung ist keine
+    Bauleitplanung und begründet kein Baurecht an sich, sie erleichtert nur die Zulassung sonstiger Vorhaben
+    nach § 35 Abs. 2 BauGB. Sie muss mit einer geordneten städtebaulichen Entwicklung vereinbar sein, darf keine
+    Zulässigkeit von Vorhaben begründen, die einer Umweltprüfung bedürfen, und darf FFH- und Vogelschutzgebiete
+    nicht beeinträchtigen.
+  norms:
+  - § 35 Abs. 6 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bp-36-einvernehmen
+  type: norm
+  front: Was regelt § 36 BauGB zum gemeindlichen Einvernehmen, und was folgt aus einem Verstoß?
+  back: >-
+    Über die Zulässigkeit von Vorhaben nach den §§ 31, 33, 34 und 35 BauGB wird im bauaufsichtlichen Verfahren von der
+    Baugenehmigungsbehörde im Einvernehmen mit der Gemeinde entschieden, § 36 Abs. 1 BauGB. Das Einvernehmen darf
+    nur aus den sich aus diesen Vorschriften ergebenden bauplanungsrechtlichen Gründen versagt werden, § 36 Abs. 2 S. 1 BauGB;
+    andere Gründe, etwa bauordnungsrechtliche oder politische, sind unbeachtlich. Es gilt als erteilt, wenn es nicht
+    binnen zwei Monaten nach Eingang des Ersuchens verweigert wird, § 36 Abs. 2 S. 2 BauGB. Ein rechtswidrig
+    versagtes Einvernehmen kann nach § 36 Abs. 2 S. 3 BauGB durch die nach Landesrecht zuständige Behörde
+    ersetzt werden. Die Gemeinde kann sich als Trägerin der Planungshoheit gegen eine Baugenehmigung, die ohne
+    ihr erforderliches Einvernehmen ergangen ist, mit der Anfechtungsklage wehren. Das Einvernehmen ist ein
+    Verwaltungsinternum, kein Verwaltungsakt.
+  norms:
+  - § 36 Abs. 1 BauGB
+  - § 36 Abs. 2 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bp-baunvo-gebiete
+  type: definition
+  front: Welche Baugebiete kennt die BauNVO, und wie unterscheiden sie sich in der Grundstruktur?
+  back: >-
+    Die Baunutzungsverordnung unterscheidet insbesondere Kleinsiedlungsgebiete (WS, § 2), reine Wohngebiete (WR, § 3),
+    allgemeine Wohngebiete (WA, § 4), besondere Wohngebiete (WB, § 4a), Dorfgebiete (MD, § 5), dörfliche Wohngebiete
+    (MDW, § 5a), Mischgebiete (MI, § 6), urbane Gebiete (MU, § 6a), Kerngebiete (MK, § 7), Gewerbegebiete
+    (GE, § 8), Industriegebiete (GI, § 9) und Sondergebiete (§§ 10, 11). Jede Vorschrift regelt in Abs. 1 den Gebietscharakter,
+    in Abs. 2 die allgemein zulässigen Nutzungen und in Abs. 3 die ausnahmsweise zulässigen Nutzungen. Im WA etwa sind
+    Wohngebäude, die der Versorgung des Gebiets dienenden Läden, Schank- und Speisewirtschaften und nicht störende
+    Handwerksbetriebe allgemein zulässig; ein großer Gewerbebetrieb ist es nicht. Die Gebietsart bestimmt auch die
+    zumutbaren Immissionen.
+  norms:
+  - § 2 BauNVO
+  - § 3 BauNVO
+  - § 4 BauNVO
+  - § 6 BauNVO
+  - § 8 BauNVO
+  quellen:
+  - BauNVO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bp-baunvo-15
+  type: norm
+  front: Was regelt § 15 BauNVO?
+  back: >-
+    § 15 Abs. 1 BauNVO beschränkt die nach den §§ 2 bis 14 BauNVO grundsätzlich zulässigen baulichen und sonstigen
+    Anlagen im Einzelfall: Sie sind unzulässig, wenn sie nach Anzahl, Lage, Umfang oder Zweckbestimmung der Eigenart
+    des Baugebiets widersprechen (S. 1) oder wenn von ihnen Belästigungen oder Störungen ausgehen können, die nach der
+    Eigenart des Baugebiets im Baugebiet selbst oder in dessen Umgebung unzumutbar sind, oder wenn sie solchen
+    Belästigungen oder Störungen ausgesetzt werden (S. 2). S. 2 normiert das Gebot der Rücksichtnahme.
+    § 15 BauNVO hat nachbarschützende Wirkung, soweit er das Rücksichtnahmegebot ausspricht. Die Vorschrift ist als
+    „Korrektiv im Einzelfall“ nur im Zusammenhang mit einer der Gebietsvorschriften anzuwenden und gilt im
+    beplanten Gebiet und im faktischen Baugebiet (§ 34 Abs. 2 BauGB).
+  norms:
+  - § 15 Abs. 1 BauNVO
+  quellen:
+  - BauNVO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: or-schema-br-bp-zulaessigkeit-vorhaben
+  title: Bauplanungsrechtliche Zulässigkeit eines Vorhabens
+  norms:
+  - § 29 BauGB
+  - § 30 BauGB
+  - § 34 BauGB
+  - § 35 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - BauNVO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Vorhaben im Sinne des § 29 Abs. 1 BauGB
+  - label: II. Gebietsart und Zulässigkeitsmaßstab
+    children:
+    - label: 1. Qualifizierter Bebauungsplan – § 30 Abs. 1 BauGB
+      children:
+      - label: a) Vereinbarkeit mit den Festsetzungen (§ 9 BauGB, BauNVO)
+      - label: b) Ausnahme, § 31 Abs. 1 BauGB
+      - label: c) Befreiung, § 31 Abs. 2 BauGB
+        hinweis: Grundzüge der Planung nicht berührt, Nrn. 1 bis 3, nachbarliche Interessen.
+      - label: d) Erschließung gesichert
+    - label: 2. Planreife – § 33 BauGB
+    - label: 3. Unbeplanter Innenbereich – § 34 BauGB
+      children:
+      - label: a) Im Zusammenhang bebauter Ortsteil
+      - label: b) Faktisches Baugebiet, § 34 Abs. 2 BauGB (BauNVO), sonst Einfügen nach Abs. 1
+      - label: c) Gesunde Wohn- und Arbeitsverhältnisse, Ortsbild, Erschließung
+    - label: 4. Außenbereich – § 35 BauGB
+      children:
+      - label: a) Privilegiertes Vorhaben, Abs. 1 – öffentliche Belange stehen nicht entgegen
+      - label: b) Sonstiges Vorhaben, Abs. 2 und 3 – keine Beeinträchtigung öffentlicher Belange
+        hinweis: Splittersiedlung und Flächennutzungsplan sind die klassischen Belange.
+  - label: III. Gemeindliches Einvernehmen, § 36 BauGB
+    hinweis: Frist zwei Monate, Fiktion; Ersetzung durch die nach Landesrecht zuständige Behörde.
+  - label: IV. Ergebnis
+- slug: or-schema-br-bp-einvernehmen-36
+  title: Einvernehmen der Gemeinde und Klage der Gemeinde, § 36 BauGB
+  norms:
+  - § 36 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Einvernehmenspflichtiges Vorhaben – §§ 31, 33, 34, 35 BauGB
+  - label: II. Rechtmäßige Verweigerung des Einvernehmens
+    children:
+    - label: 1. Fristgerecht – zwei Monate, sonst Fiktion
+    - label: 2. Bauplanungsrechtlicher Versagungsgrund (nur aus §§ 31, 33 bis 35 BauGB)
+  - label: III. Ersetzung des Einvernehmens, § 36 Abs. 2 S. 3 BauGB
+  - label: IV. Klage der Gemeinde gegen die Baugenehmigung
+    children:
+    - label: 1. Klagebefugnis – Planungshoheit, Art. 28 Abs. 2 GG
+    - label: 2. Begründetheit – Genehmigung rechtswidrig und Gemeinde in § 36 BauGB verletzt
+faelle:
+- slug: or-fall-br-bp-wohnhaus-aussenbereich
+  title: Das Wohnhaus am Feldweg
+  difficulty: 3
+  minutes: 50
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BauGB, amtliche Fassung
+  facts: >-
+    A ist Büroangestellter und möchte auf einem Grundstück am Rand der Gemeinde G ein Einfamilienhaus errichten.
+    Das Grundstück liegt an einem Feldweg und wird bislang als Acker genutzt. Rundherum befinden sich landwirtschaftliche
+    Flächen. Im Abstand von jeweils etwa 300 m stehen drei einzelne Wohnhäuser an dem Feldweg, die nicht
+    landwirtschaftlich genutzt werden, dazwischen und dahinter nur Ackerland; ein Bebauungsplan besteht nicht. Der Flächennutzungsplan stellt das Grundstück als Fläche für die
+    Landwirtschaft dar. Die Erschließung ist gesichert. Die Gemeinde verweigert innerhalb der Frist ihr Einvernehmen
+    und verweist auf die Darstellungen des Flächennutzungsplans und die Gefahr einer Zersiedlung. A fragt, ob die
+    Baugenehmigungsbehörde die Genehmigung erteilen muss.
+  question: Ist das Vorhaben des A bauplanungsrechtlich zulässig, und welche Bedeutung hat die Weigerung der Gemeinde?
+  steps:
+  - prompt: Liegt ein Vorhaben im Sinne des § 29 BauGB vor, und welcher Maßstab ist einschlägig?
+    erwartung: Die Errichtung eines Wohnhauses ist ein Vorhaben nach § 29 Abs. 1 BauGB. Es besteht kein Bebauungsplan (§ 30 scheidet aus). Drei vereinzelte Wohnhäuser in weiten Abständen bilden keinen im Zusammenhang bebauten Ortsteil, also liegt der Außenbereich vor; maßgeblich ist § 35 BauGB.
+  - prompt: Ist das Vorhaben privilegiert?
+    erwartung: Nein. A betreibt keinen land- oder forstwirtschaftlichen Betrieb, das Wohnhaus dient keinem der Zwecke des § 35 Abs. 1 BauGB. Es ist ein sonstiges Vorhaben nach § 35 Abs. 2 BauGB.
+  - prompt: Beeinträchtigt das Vorhaben öffentliche Belange?
+    erwartung: Ja. Es widerspricht den Darstellungen des Flächennutzungsplans (Fläche für die Landwirtschaft), § 35 Abs. 3 S. 1 Nr. 1 BauGB, und lässt die Entstehung einer Splittersiedlung befürchten, § 35 Abs. 3 S. 1 Nr. 7 BauGB. Schon die Beeinträchtigung genügt bei sonstigen Vorhaben. Eine begünstigende Sonderregelung des § 35 Abs. 4 BauGB greift nicht.
+  - prompt: Welche Bedeutung hat die Weigerung der Gemeinde?
+    erwartung: Das Einvernehmen ist nach § 36 Abs. 1 BauGB erforderlich. Die Gemeinde hat es zu Recht aus bauplanungsrechtlichen Gründen (§ 35) versagt, sodass eine Ersetzung nach § 36 Abs. 2 S. 3 BauGB ausscheidet. Das Vorhaben ist unzulässig, A hat keinen Anspruch auf Genehmigung.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Vorhaben nach § 29 Abs. 1 BauGB und Außenbereich festgestellt (kein Bebauungsplan, kein Ortsteil)
+      weight: 2.0
+      required: true
+      norms:
+      - § 29 Abs. 1 BauGB
+      - § 35 BauGB
+      keywords:
+      - § 29 Abs. 1 BauGB
+      - Außenbereich
+      - kein im Zusammenhang bebauter Ortsteil
+      - Splittersiedlung
+      - § 35 BauGB
+      card_slugs:
+      - or-br-bp-vorhaben-29
+      - or-br-bp-34-innenbereich
+    - id: p2
+      label: Keine Privilegierung nach § 35 Abs. 1 BauGB; sonstiges Vorhaben nach Abs. 2
+      weight: 2.0
+      required: true
+      norms:
+      - § 35 Abs. 1 BauGB
+      - § 35 Abs. 2 BauGB
+      keywords:
+      - nicht privilegiert
+      - sonstiges Vorhaben
+      - § 35 Abs. 2 BauGB
+      - kein landwirtschaftlicher Betrieb
+      card_slugs:
+      - or-br-bp-35-privilegiert
+    - id: p3
+      label: Beeinträchtigung öffentlicher Belange (Flächennutzungsplan, Splittersiedlung), § 35 Abs. 3 BauGB
+      weight: 3.0
+      required: true
+      norms:
+      - § 35 Abs. 3 BauGB
+      keywords:
+      - § 35 Abs. 3 S. 1 Nr. 1 BauGB
+      - Flächennutzungsplan
+      - Darstellung als Fläche für die Landwirtschaft
+      - Entstehung einer Splittersiedlung
+      - öffentliche Belange beeinträchtigt
+      card_slugs:
+      - or-br-bp-35-sonstige
+    - id: p4
+      label: Bedeutung und Rechtmäßigkeit der Versagung des Einvernehmens, § 36 BauGB
+      weight: 2.0
+      required: false
+      norms:
+      - § 36 BauGB
+      keywords:
+      - § 36 Abs. 1 BauGB
+      - gemeindliches Einvernehmen
+      - Ersetzung
+      - Planungshoheit
+      card_slugs:
+      - or-br-bp-36-einvernehmen
+    - id: p5
+      label: 'Ergebnis: Vorhaben unzulässig, kein Genehmigungsanspruch'
+      weight: 1.0
+      required: false
+      keywords:
+      - bauplanungsrechtlich unzulässig
+      - kein Anspruch auf Baugenehmigung
+      - Genehmigung ist zu versagen
+      - 'Vorhaben ist unzulässig'
+      - 'Vorhaben unzulässig'
+      - 'nicht genehmigungsfähig'
+      - 'Genehmigung nicht erteilt'
+      - 'nicht erteilt werden muss'
+      - 'kein Genehmigungsanspruch'

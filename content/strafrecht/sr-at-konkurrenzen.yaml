@@ -222,53 +222,49 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
   stand: 2026-09
-  facts: >-
-    A steigt nachts durch ein gekipptes Fenster im Erdgeschoss in die dauerhaft
+  facts: A steigt nachts durch ein gekipptes Fenster im Erdgeschoss in die dauerhaft
     bewohnte Wohnung des B ein, um dort etwas Wertvolles mitzunehmen. Er findet einen
-    Laptop und verlässt die Wohnung mit dem Gerät. Am nächsten Tag bietet A den
-    Laptop dem C an und erklärt wahrheitswidrig, es handle sich um sein eigenes,
-    gebrauchtes Gerät. C glaubt ihm und zahlt 300 Euro. Der Laptop wird C wenige
-    Wochen später von der Polizei als Diebesgut abgenommen. Die Strafbarkeit des A
-    nach § 244 Abs. 1 Nr. 3 StGB, § 123 StGB, § 246 StGB und § 263 StGB (zulasten
-    des C) ist bereits festgestellt.
-  question: In welchem Konkurrenzverhältnis stehen die von A verwirklichten Delikte zueinander?
+    Laptop und verlässt die Wohnung mit dem Gerät. Am nächsten Tag bietet A den Laptop
+    dem C an und erklärt wahrheitswidrig, es handle sich um sein eigenes, gebrauchtes
+    Gerät. C glaubt ihm und zahlt 300 Euro. Der Laptop wird C wenige Wochen später
+    von der Polizei als Diebesgut abgenommen. Die Strafbarkeit des A nach § 244 Abs.
+    1 Nr. 3 StGB, § 123 StGB, § 246 StGB und § 263 StGB (zulasten des C) ist bereits
+    festgestellt.
+  question: In welchem Konkurrenzverhältnis stehen die von A verwirklichten Delikte
+    zueinander?
   steps:
   - prompt: Wie ist das Verhältnis zwischen § 242 StGB und § 244 Abs. 1 Nr. 3 StGB?
-    erwartung: >-
-      § 244 Abs. 1 Nr. 3 StGB ist eine Qualifikation des Diebstahls und verdrängt
+    erwartung: § 244 Abs. 1 Nr. 3 StGB ist eine Qualifikation des Diebstahls und verdrängt
       § 242 StGB im Wege der Spezialität; nur der Wohnungseinbruchdiebstahl erscheint
       im Schuldspruch.
-  - prompt: Wie ist das Verhältnis zwischen dem Hausfriedensbruch, § 123 StGB, und dem Wohnungseinbruchdiebstahl?
-    erwartung: >-
-      Das Einsteigen in die Wohnung ist bereits Merkmal des § 244 Abs. 1 Nr. 3 StGB.
-      Der Hausfriedensbruch ist typische Begleittat und wird nach h.M. konsumiert; er
-      tritt im Wege der Gesetzeskonkurrenz zurück.
-  - prompt: Wie ist das Verhältnis zwischen dem Verkauf des Laptops als Unterschlagung, § 246 StGB, und dem Diebstahl?
-    erwartung: >-
-      Die Zueignung der bereits gestohlenen Sache verwertet nur die Diebstahlsbeute,
+  - prompt: Wie ist das Verhältnis zwischen dem Hausfriedensbruch, § 123 StGB, und
+      dem Wohnungseinbruchdiebstahl?
+    erwartung: Das Einsteigen in die Wohnung ist bereits Merkmal des § 244 Abs. 1
+      Nr. 3 StGB. Der Hausfriedensbruch ist typische Begleittat und wird nach h.M.
+      konsumiert; er tritt im Wege der Gesetzeskonkurrenz zurück.
+  - prompt: Wie ist das Verhältnis zwischen dem Verkauf des Laptops als Unterschlagung,
+      § 246 StGB, und dem Diebstahl?
+    erwartung: Die Zueignung der bereits gestohlenen Sache verwertet nur die Diebstahlsbeute,
       ohne ein neues Rechtsgut zu verletzen; sie ist mitbestrafte Nachtat und tritt
       zurück (zudem greift die Subsidiaritätsklausel des § 246 Abs. 1 StGB).
   - prompt: Ist der Betrug zulasten des C, § 263 StGB, ebenfalls mitbestrafte Nachtat?
-    erwartung: >-
-      Nein. Der Betrug schädigt mit C einen neuen Rechtsgutsträger, der durch den
-      Diebstahl nicht betroffen war. Eine mitbestrafte Nachtat setzt voraus, dass
+    erwartung: Nein. Der Betrug schädigt mit C einen neuen Rechtsgutsträger, der durch
+      den Diebstahl nicht betroffen war. Eine mitbestrafte Nachtat setzt voraus, dass
       kein neues Rechtsgut verletzt und der Schaden nicht vertieft wird; das ist hier
       nicht der Fall. § 263 StGB bleibt selbständig strafbar.
   - prompt: Stehen Wohnungseinbruchdiebstahl und Betrug in Tateinheit oder Tatmehrheit?
-    erwartung: >-
-      Einsteigen und Wegnahme in der Nacht einerseits und der Verkauf am nächsten Tag
-      andererseits sind verschiedene Handlungen ohne engen räumlich-zeitlichen
-      Zusammenhang. Es liegt Handlungsmehrheit vor, § 244 Abs. 1 Nr. 3 StGB und § 263
-      StGB stehen in Tatmehrheit nach § 53 StGB.
+    erwartung: Einsteigen und Wegnahme in der Nacht einerseits und der Verkauf am
+      nächsten Tag andererseits sind verschiedene Handlungen ohne engen räumlich-zeitlichen
+      Zusammenhang. Es liegt Handlungsmehrheit vor, § 244 Abs. 1 Nr. 3 StGB und §
+      263 StGB stehen in Tatmehrheit nach § 53 StGB.
   - prompt: Wie wird die Strafe gebildet?
-    erwartung: >-
-      Für beide Taten ist je eine Einzelstrafe festzusetzen; daraus wird nach § 54
-      StGB eine Gesamtstrafe durch Erhöhung der höchsten Einzelstrafe gebildet, die
-      die Summe der Einzelstrafen nicht erreichen darf.
+    erwartung: Für beide Taten ist je eine Einzelstrafe festzusetzen; daraus wird
+      nach § 54 StGB eine Gesamtstrafe durch Erhöhung der höchsten Einzelstrafe gebildet,
+      die die Summe der Einzelstrafen nicht erreichen darf.
   expectation:
     pruefpunkte:
     - id: p1
-      label: '§ 244 Abs. 1 Nr. 3 StGB verdrängt § 242 StGB im Wege der Spezialität'
+      label: § 244 Abs. 1 Nr. 3 StGB verdrängt § 242 StGB im Wege der Spezialität
       weight: 1.5
       required: true
       norms:
@@ -276,8 +272,9 @@ faelle:
       - § 242 StGB
       keywords:
       - Spezialität
-      - Qualifikation
-      - verdrängt
+      - lex specialis
+      - Qualifikation verdrängt
+      - § 244 verdrängt § 242
       card_slugs:
       - sr-konkurrenzen-gesetzeskonkurrenz-spezialitaet
     - id: p2
@@ -304,19 +301,25 @@ faelle:
       card_slugs:
       - sr-konkurrenzen-mitbestrafte-vor-nachtat
     - id: p4
-      label: Betrug zulasten des C nicht mitbestraft, weil neues Rechtsgut bzw. neuer Rechtsgutsträger verletzt
+      label: Betrug zulasten des C nicht mitbestraft, weil neues Rechtsgut bzw. neuer
+        Rechtsgutsträger verletzt
       weight: 2.5
       required: true
       norms:
       - § 263 StGB
       keywords:
-      - neues Rechtsgut
       - anderer Rechtsgutsträger
-      - selbständig
+      - selbständig strafbar
+      - eigenständige Rechtsgutsverletzung
+      - bleibt selbständig strafbar
+      - einen neuen Rechtsgutsträger
+      - ein neues Rechtsgut verletzt
+      - neuer Rechtsgutsträger
       card_slugs:
       - sr-konkurrenzen-mitbestrafte-vor-nachtat
     - id: p5
-      label: Handlungsmehrheit und Tatmehrheit nach § 53 StGB zwischen Diebstahl und Betrug bejaht
+      label: Handlungsmehrheit und Tatmehrheit nach § 53 StGB zwischen Diebstahl und
+        Betrug bejaht
       weight: 2.0
       required: true
       norms:
@@ -324,7 +327,7 @@ faelle:
       keywords:
       - Tatmehrheit
       - Handlungsmehrheit
-      - § 53
+      - § 53 StGB
       card_slugs:
       - sr-konkurrenzen-tatmehrheit-53
       - sr-konkurrenzen-handlungseinheit-natuerlich
@@ -336,6 +339,7 @@ faelle:
       - § 54 StGB
       keywords:
       - Gesamtstrafe
-      - Asperation
+      - Asperationsprinzip
+      - § 54 StGB
       card_slugs:
       - sr-konkurrenzen-tatmehrheit-53

@@ -8,8 +8,8 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-15'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: zr-cic-grundgedanke-311-2
   type: definition
@@ -20,8 +20,8 @@ cards:
     die Anbahnung eines Vertrags oder ähnliche geschäftliche Kontakte (§ 311 Abs.
     2 BGB). Bereits in diesem vorvertraglichen Stadium schulden sich die Beteiligten
     gegenseitig Rücksicht auf ihre Rechte, Rechtsgüter und Interessen - eine Verletzung
-    dieser Pflichten kann Schadensersatzansprüche auslösen, ohne dass überhaupt
-    ein Vertrag zustande kommen muss.
+    dieser Pflichten kann Schadensersatzansprüche auslösen, ohne dass überhaupt ein
+    Vertrag zustande kommen muss.
   norms:
   - § 311 Abs. 2 BGB
   quellen:
@@ -47,10 +47,10 @@ cards:
   front: Was ist mit 'Anbahnung eines Vertrags' nach § 311 Abs. 2 Nr. 2 BGB gemeint?
   back: Ein vorvertragliches Schuldverhältnis entsteht ferner durch die Anbahnung
     eines Vertrags, bei der ein Teil dem anderen im Hinblick auf eine etwaige rechtsgeschäftliche
-    Beziehung die Möglichkeit zur Einwirkung auf dessen Rechte, Rechtsgüter und
-    Interessen gewährt oder ihm diese anvertraut (§ 311 Abs. 2 Nr. 2 BGB) - klassischer
-    Fall ist das Betreten von Geschäftsräumen, etwa zur Besichtigung einer zum Kauf
-    angebotenen Sache.
+    Beziehung die Möglichkeit zur Einwirkung auf dessen Rechte, Rechtsgüter und Interessen
+    gewährt oder ihm diese anvertraut (§ 311 Abs. 2 Nr. 2 BGB) - klassischer Fall
+    ist das Betreten von Geschäftsräumen, etwa zur Besichtigung einer zum Kauf angebotenen
+    Sache.
   norms:
   - § 311 Abs. 2 BGB
   quellen:
@@ -61,12 +61,11 @@ cards:
   type: definition
   front: 'Definiere: Schutz- und Rücksichtnahmepflichten, § 241 Abs. 2 BGB'
   back: Ein Schuldverhältnis kann nach seinem Inhalt jeden Teil zur Rücksicht auf
-    die Rechte, Rechtsgüter und Interessen des anderen Teils verpflichten (§ 241
-    Abs. 2 BGB). Anders als die Hauptleistungspflicht ist diese Pflicht nicht auf
-    Erfüllung eines Leistungsversprechens gerichtet, sondern schützt den Bestand
-    von Rechtsgütern und Vermögen des anderen Teils - dazu gehört insbesondere
-    die Pflicht, den anderen über Umstände aufzuklären, die für dessen Entscheidung
-    erkennbar erheblich sind.
+    die Rechte, Rechtsgüter und Interessen des anderen Teils verpflichten (§ 241 Abs.
+    2 BGB). Anders als die Hauptleistungspflicht ist diese Pflicht nicht auf Erfüllung
+    eines Leistungsversprechens gerichtet, sondern schützt den Bestand von Rechtsgütern
+    und Vermögen des anderen Teils - dazu gehört insbesondere die Pflicht, den anderen
+    über Umstände aufzuklären, die für dessen Entscheidung erkennbar erheblich sind.
   norms:
   - § 241 Abs. 2 BGB
   quellen:
@@ -75,14 +74,14 @@ cards:
   stand: 2026-09
 - slug: zr-cic-aufklaerungspflicht-kriterien
   type: streitstand
-  front: Wann besteht eine Aufklärungspflicht über einen für den Vertragsschluss
-    erheblichen Umstand?
+  front: Wann besteht eine Aufklärungspflicht über einen für den Vertragsschluss erheblichen
+    Umstand?
   back: Eine Aufklärungspflicht besteht nicht schon deshalb, weil ein Umstand für
     die Entscheidung des anderen Teils von Bedeutung sein könnte - im Grundsatz muss
-    sich jede Partei über die für sie wesentlichen Umstände selbst informieren.
-    Eine Pflicht zur ungefragten Offenbarung entsteht ausnahmsweise dort, wo der eine
-    Teil erkennen kann, dass der Umstand für die Entscheidung des anderen erkennbar
-    erheblich ist, dieser die Information redlicherweise erwarten darf, und die Offenbarung
+    sich jede Partei über die für sie wesentlichen Umstände selbst informieren. Eine
+    Pflicht zur ungefragten Offenbarung entsteht ausnahmsweise dort, wo der eine Teil
+    erkennen kann, dass der Umstand für die Entscheidung des anderen erkennbar erheblich
+    ist, dieser die Information redlicherweise erwarten darf, und die Offenbarung
     dem Wissenden zumutbar ist, ohne dessen eigene schutzwürdige Interessen unangemessen
     zu beeinträchtigen. Je gewichtiger der verschwiegene Umstand für die Willensbildung
     des anderen Teils ist, desto eher überwiegt das Aufklärungsinteresse.
@@ -97,10 +96,10 @@ cards:
   front: Welche Rechtsfolge knüpft § 280 Abs. 1 BGB an die Verletzung einer Pflicht
     aus § 241 Abs. 2 BGB?
   back: Verletzt der Schuldner eine Pflicht aus einem Schuldverhältnis - auch eine
-    Rücksichtnahmepflicht nach § 241 Abs. 2 BGB - kann der Gläubiger Ersatz des
-    dadurch entstehenden Schadens verlangen (§ 280 Abs. 1 S. 1 BGB), es sei denn,
-    der Schuldner hat die Pflichtverletzung nicht zu vertreten (§ 280 Abs. 1 S. 2
-    BGB, widerlegliche Vermutung des Vertretenmüssens zulasten des Schuldners).
+    Rücksichtnahmepflicht nach § 241 Abs. 2 BGB - kann der Gläubiger Ersatz des dadurch
+    entstehenden Schadens verlangen (§ 280 Abs. 1 S. 1 BGB), es sei denn, der Schuldner
+    hat die Pflichtverletzung nicht zu vertreten (§ 280 Abs. 1 S. 2 BGB, widerlegliche
+    Vermutung des Vertretenmüssens zulasten des Schuldners).
   norms:
   - § 280 Abs. 1 BGB
   quellen:
@@ -109,11 +108,11 @@ cards:
   stand: 2026-09
 - slug: zr-cic-dritthaftung-311-3
   type: norm
-  front: Wann kann ein Schuldverhältnis mit Pflichten nach § 241 Abs. 2 BGB auch
-    zu einem Dritten entstehen, § 311 Abs. 3 BGB?
+  front: Wann kann ein Schuldverhältnis mit Pflichten nach § 241 Abs. 2 BGB auch zu
+    einem Dritten entstehen, § 311 Abs. 3 BGB?
   back: Ein Schuldverhältnis mit Pflichten nach § 241 Abs. 2 BGB kann ausnahmsweise
     auch zu Personen entstehen, die nicht selbst Vertragspartei werden sollen (§ 311
-    Abs. 3 S. 1 BGB) - insbesondere, wenn ein Dritter in besonderem Masse Vertrauen
+    Abs. 3 S. 1 BGB) - insbesondere, wenn ein Dritter in besonderem Maße Vertrauen
     für sich in Anspruch nimmt und dadurch die Vertragsverhandlungen oder den Vertragsschluss
     erheblich beeinflusst (§ 311 Abs. 3 S. 2 BGB, sogenannte Sachwalterhaftung).
   norms:
@@ -125,19 +124,28 @@ cards:
 - slug: zr-cic-rechtsfolge-grosser-kleiner-se
   type: definition
   front: 'Definiere: Großer und kleiner Schadensersatz als Rechtsfolge der c.i.c.'
-  back: Der Geschädigte kann im Wege des Schadensersatzes verlangen, so gestellt
-    zu werden, wie er ohne die Pflichtverletzung stünde (§ 249 Abs. 1 BGB) - bei
-    einer Aufklärungspflichtverletzung beim Vertragsschluss bedeutet das grundsätzlich,
+  back: Der Geschädigte kann im Wege des Schadensersatzes verlangen, so gestellt zu
+    werden, wie er ohne die Pflichtverletzung stünde (§ 249 Abs. 1 BGB) - bei einer
+    Aufklärungspflichtverletzung beim Vertragsschluss bedeutet das grundsätzlich,
     dass er den Vertrag nicht geschlossen hätte. Er kann deshalb wahlweise die Aufhebung
     des Vertrags gegen Rückgabe der erhaltenen Leistung verlangen (großer Schadensersatz)
     oder den Vertrag bestehen lassen und nur den Minderwert bzw. Mehraufwand ausgleichen
     lassen, den die Pflichtverletzung verursacht hat (kleiner Schadensersatz) - je
     nachdem, welche Gestaltung seinem hypothetischen Verhalten bei pflichtgemäßer
-    Aufklärung entspricht.
+    Aufklärung entspricht. Die Aufhebung des Vertrags kann nach der Rechtsprechung
+    auch bei bloß fahrlässiger Aufklärungspflichtverletzung verlangt werden, setzt
+    aber einen Vermögensschaden voraus, der Vertragsschluss muss also wirtschaftlich
+    nachteilig gewesen sein (BGH, 26.9.1997 - V ZR 29/96). Der Anspruch tritt
+    selbstständig neben die Anfechtung (§§ 123, 124 BGB; BGH, 17.1.2008 - III ZR 224/06).
+    Ein Anspruch auf Anpassung des Vertrags besteht dagegen nicht; wer am Vertrag
+    festhält, kann nur den verbliebenen Vertrauensschaden ersetzt verlangen (BGHZ 168, 35).
   norms:
   - § 249 Abs. 1 BGB
   quellen:
   - BGB, amtliche Fassung
+  - BGH, Urteil vom 26.9.1997 - V ZR 29/96 (NJW 1998, 302)
+  - BGH, Urteil vom 17.1.2008 - III ZR 224/06 (NJW-RR 2008, 564)
+  - BGH, Urteil vom 19.5.2006 - V ZR 264/05 (BGHZ 168, 35)
   - Eigenformulierung Redaktion
   stand: 2026-09
 schemata:
@@ -181,14 +189,14 @@ faelle:
     einen erheblichen Unfallschaden erlitten hat, der zwar fachgerecht, aber mit hohem
     Aufwand repariert wurde - ein Umstand, der den Marktwert eines vergleichbaren
     unfallfreien Fahrzeugs um 3.000 Euro mindert. Beim Besichtigungstermin fragt Käufer
-    K nicht ausdrücklich nach Unfallschäden; V erwähnt den Vorschaden ebenfalls
-    nicht, obwohl ihr bewusst ist, dass K das Fahrzeug für unfallfrei hält und den
-    vereinbarten Kaufpreis von 12.000 Euro nur deshalb zahlt. Der Kaufvertrag kommt
-    zustande und wird vollzogen. Zwei Monate später erfährt K bei einer Inspektion
-    vom Vorschaden. Ein vergleichbares tatsächlich unfallfreies Fahrzeug hätte 15.000
-    Euro gekostet; ein Fahrzeug mit einem solchen (fachgerecht reparierten) Vorschaden
-    hat einen Marktwert von nur 12.000 Euro. K möchte den Wagen behalten, verlangt
-    aber von V einen Ausgleich für die Wertminderung.
+    K nicht ausdrücklich nach Unfallschäden; V erwähnt den Vorschaden ebenfalls nicht,
+    obwohl ihr bewusst ist, dass K das Fahrzeug für unfallfrei hält und den vereinbarten
+    Kaufpreis von 12.000 Euro nur deshalb zahlt. Der Kaufvertrag kommt zustande und
+    wird vollzogen. Zwei Monate später erfährt K bei einer Inspektion vom Vorschaden.
+    Ein vergleichbares tatsächlich unfallfreies Fahrzeug hätte 15.000 Euro gekostet;
+    ein Fahrzeug mit einem solchen (fachgerecht reparierten) Vorschaden hat einen
+    Marktwert von nur 12.000 Euro. K möchte den Wagen behalten, verlangt aber von
+    V einen Ausgleich für die Wertminderung.
   question: Kann K von V Ersatz in Höhe von 3.000 Euro verlangen, obwohl er den Wagen
     behalten und den Kaufvertrag nicht rückabwickeln möchte?
   steps:
@@ -207,8 +215,16 @@ faelle:
   - prompt: Liegt eine Pflichtverletzung vor?
     erwartung: Ja, V hat den ihr bekannten, aufklärungspflichtigen Vorschaden verschwiegen.
   - prompt: Hat V die Pflichtverletzung zu vertreten, § 280 Abs. 1 S. 2 BGB?
-    erwartung: Ja - V handelte vorsätzlich, da sie den Vorschaden positiv kannte
-      und bewusst verschwieg; ein Entlastungsbeweis ist nicht ersichtlich.
+    erwartung: Ja - V handelte vorsätzlich, da sie den Vorschaden positiv kannte und
+      bewusst verschwieg; ein Entlastungsbeweis ist nicht ersichtlich.
+  - prompt: Wird der Anspruch aus culpa in contrahendo durch das kaufrechtliche Mängelrecht
+      verdrängt?
+    erwartung: 'Nach Gefahrübergang verdrängt das Sachmängelrecht (§§ 434, 437 ff.
+      BGB) die c. i. c. wegen Verletzung vorvertraglicher Aufklärungspflichten über
+      die Beschaffenheit der Sache grundsätzlich. Das gilt nach der Rechtsprechung
+      nicht, wenn der Verkäufer den Mangel vorsätzlich (arglistig) verschwiegen hat:
+      Dann kann der Käufer daneben aus c. i. c. vorgehen. V hat den Vorschaden hier
+      vorsätzlich verschwiegen; die Sperrwirkung greift daher nicht.'
   - prompt: In welcher Form kann K Ersatz verlangen, wenn er den Vertrag nicht rückabwickeln
       möchte?
     erwartung: 'K kann den sogenannten kleinen Schadensersatz verlangen: Er behält
@@ -229,8 +245,10 @@ faelle:
       norms:
       - § 311 Abs. 2 BGB
       keywords:
-      - '311'
-      - Vertragsverhandlungen
+      - § 311 Abs. 2 Nr. 1
+      - vorvertragliches Schuldverhältnis
+      - Aufnahme von Vertragsverhandlungen
+      - culpa in contrahendo
       card_slugs:
       - zr-cic-grundgedanke-311-2
       - zr-cic-verhandlungen-311-2-nr1
@@ -243,8 +261,11 @@ faelle:
       - § 241 Abs. 2 BGB
       keywords:
       - Aufklärungspflicht
-      - erheblich
-      - zumutbar
+      - ungefragte Offenbarungspflicht
+      - Erkennbarkeit der Bedeutung für den Vertragspartner
+      - Zumutbarkeit der Offenbarung
+      - wesentlich für den Kaufentschluss
+      - Unfallschaden ungefragt offenbaren
       card_slugs:
       - zr-cic-schutzpflicht-241-2
       - zr-cic-aufklaerungspflicht-kriterien
@@ -253,8 +274,10 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - verschwiegen
-      - Pflichtverletzung
+      - Verschweigen eines bekannten Vorschadens
+      - Pflichtverletzung durch Verschweigen
+      - Unterlassen der Aufklärung
+      - Verletzung der Rücksichtnahmepflicht
     - id: p4
       label: Vertretenmüssen (Vorsatz) der V bejaht, § 280 Abs. 1 S. 2 BGB
       weight: 1.0
@@ -262,8 +285,11 @@ faelle:
       norms:
       - § 280 Abs. 1 BGB
       keywords:
-      - Vorsatz
-      - vertreten
+      - Vorsatz der V
+      - Vertretenmüssen
+      - § 280 Abs. 1 S. 2
+      - § 276 Abs. 1
+      - vorsätzliches Verschweigen
       card_slugs:
       - zr-cic-schadensersatz-280-1
     - id: p5
@@ -273,7 +299,22 @@ faelle:
       required: true
       keywords:
       - kleiner Schadensersatz
+      - großer Schadensersatz
       - Minderwert
-      - '3.000'
+      - Wahlrecht des Geschädigten
+      - Differenzschaden
+      - Vertragsanpassung statt Rückabwicklung
       card_slugs:
       - zr-cic-rechtsfolge-grosser-kleiner-se
+    - id: p6
+      label: 'Konkurrenz zum kaufrechtlichen Mängelrecht: Vorrang entfällt bei vorsätzlichem
+        Verschweigen'
+      weight: 1.0
+      keywords:
+      - Vorrang des Mängelrechts
+      - Sperrwirkung der §§ 437 ff.
+      - Vorrang der Sachmängelhaftung
+      - arglistiges Verschweigen
+      - Mängelrecht verdrängt c. i. c.
+      card_slugs:
+      - zr-cic-schadensersatz-280-1

@@ -1,0 +1,433 @@
+topic:
+  slug: sr-bt-urkundendelikte-erweitert
+  area: strafrecht
+  title: >-
+    Urkundendelikte erweitert: §§ 268, 269, 271, 273, 274, 281 StGB
+  parent: sr-at
+  relevance: 3
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-urk2-ueberblick-abgrenzung
+  type: norm
+  front: >-
+    Wie sind die Urkundendelikte §§ 267, 268, 269, 271, 274 StGB voneinander abzugrenzen?
+  back: >-
+    § 267 StGB schützt die Echtheit von Urkunden: Es kommt auf die Identitätstäuschung über
+    den Aussteller an; die "schriftliche Lüge" ist nicht erfasst. § 268 StGB überträgt diesen
+    Schutz auf technische Aufzeichnungen, die selbsttätig von einem Gerät erzeugt werden (z.
+    B. Fahrtenschreiber). § 269 StGB betrifft beweiserhebliche Daten, die bei visueller Wahrnehmbarkeit
+    eine unechte oder verfälschte Urkunde darstellen würden (Datenurkunde). § 271 StGB erfasst
+    die mittelbare Falschbeurkundung: Wer einen gutgläubigen Amtsträger dazu bringt, Unwahres
+    in einer öffentlichen Urkunde zu beurkunden, wird bestraft; § 348 StGB betrifft dagegen
+    die Falschbeurkundung durch den Amtsträger selbst. § 274 StGB schützt das Beweisführungsrecht,
+    nicht die Echtheit: Er bestraft die Vernichtung, Beschädigung oder Unterdrückung beweiserheblicher
+    Urkunden oder Daten.
+  norms:
+  - § 267 StGB
+  - § 268 StGB
+  - § 269 StGB
+  - § 271 StGB
+  - § 274 StGB
+  - § 348 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-urk2-technische-aufzeichnung
+  type: definition
+  front: >-
+    Definiere: technische Aufzeichnung, § 268 Abs. 2 StGB
+  back: >-
+    Eine technische Aufzeichnung ist eine Darstellung von Daten, Mess- oder Rechenwerten,
+    Zuständen oder Geschehensabläufen, die durch ein technisches Gerät ganz oder zum Teil
+    selbsttätig bewirkt wird, den Gegenstand der Aufzeichnung allgemein oder für Eingeweihte
+    erkennen lässt und zum Beweis einer rechtlich erheblichen Tatsache bestimmt ist, gleichviel
+    ob die Bestimmung schon bei der Herstellung oder erst später erfolgt ist. Beispiele sind
+    die Schaublätter eines Fahrtenschreibers (Tachographen), Messprotokolle eines Geräts.
+    Es fehlt die Selbsttätigkeit, wenn der Mensch die Aufzeichnung inhaltlich bestimmt, etwa
+    bei handschriftlichen Eintragungen oder dem Ausdruck frei eingegebener Texte. Anders als
+    bei der Urkunde kommt es nicht auf einen erkennbaren Aussteller an, sondern darauf, dass
+    die Aufzeichnung vom Gerät herrührt.
+  norms:
+  - § 268 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-urk2-268-tathandlungen
+  type: norm
+  front: Welche Tathandlungen erfasst § 268 StGB?
+  back: >-
+    § 268 Abs. 1 StGB bestraft, wer zur Täuschung im Rechtsverkehr eine unechte technische
+    Aufzeichnung herstellt oder eine technische Aufzeichnung verfälscht (Nr. 1) oder eine
+    unechte oder verfälschte technische Aufzeichnung gebraucht (Nr. 2). Unecht ist die Aufzeichnung,
+    wenn sie nicht oder nicht in dieser Form vom Gerät herrührt oder wenn ihr Inhalt nicht
+    dem tatsächlichen Messvorgang entspricht. Nach Abs. 3 steht dem Herstellen einer unechten
+    technischen Aufzeichnung gleich, wer die Aufzeichnung dadurch beeinflusst, dass er störend
+    auf den Aufzeichnungsvorgang einwirkt (z. B. Manipulation des Tachographen). Der Versuch
+    ist strafbar (Abs. 4); für besonders schwere Fälle gilt § 267 Abs. 3 und 4 StGB entsprechend
+    (Abs. 5). Der Vorsatz muss die Täuschung im Rechtsverkehr einschließen; § 270 StGB stellt
+    der Täuschung im Rechtsverkehr die fälschliche Beeinflussung einer Datenverarbeitung gleich.
+  norms:
+  - § 268 Abs. 1 StGB
+  - § 268 Abs. 3 StGB
+  - § 268 Abs. 4 StGB
+  - § 270 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-urk2-269-datenurkunde
+  type: definition
+  front: >-
+    Was erfasst § 269 StGB (Fälschung beweiserheblicher Daten)?
+  back: >-
+    § 269 Abs. 1 StGB bestraft, wer zur Täuschung im Rechtsverkehr beweiserhebliche Daten
+    so speichert oder verändert, dass bei ihrer Wahrnehmung eine unechte oder verfälschte
+    Urkunde vorliegen würde, oder derart gespeicherte oder veränderte Daten gebraucht. Das
+    Gesetz arbeitet mit der Fiktion der "hypothetischen Urkunde": Es wird gedanklich geprüft,
+    ob die Daten bei Ausdruck oder Sichtbarmachung eine Urkunde wären. Daher müssen die Daten
+    eine Gedankenerklärung enthalten, ihren Aussteller erkennen lassen und beweiserheblich
+    sein. Der Täter täuscht über die Identität des Ausstellers, nicht über den Inhalt der
+    Daten. Der Versuch ist strafbar (Abs. 2). Beispiele sind das Anlegen eines Datensatzes
+    unter fremdem Namen oder das nachträgliche Verändern gespeicherter Verträge.
+  norms:
+  - § 269 Abs. 1 StGB
+  - § 269 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-urk2-271-tatbestand
+  type: norm
+  front: >-
+    Wie lautet der Tatbestand der mittelbaren Falschbeurkundung, § 271 StGB?
+  back: >-
+    § 271 Abs. 1 StGB bestraft, wer bewirkt, dass Erklärungen, Verhandlungen oder Tatsachen,
+    die für Rechte oder Rechtsverhältnisse von Erheblichkeit sind, in öffentlichen Urkunden,
+    Büchern, Dateien oder Registern als abgegeben oder geschehen beurkundet oder gespeichert
+    werden, während sie überhaupt nicht oder in anderer Weise oder von einer Person in einer
+    ihr nicht zustehenden Eigenschaft oder von einer anderen Person abgegeben oder geschehen
+    sind. Ebenso wird bestraft, wer eine solche falsche Beurkundung oder Datenspeicherung zur
+    Täuschung im Rechtsverkehr gebraucht (Abs. 2). Eine
+    Qualifikation gilt bei Handeln gegen Entgelt oder mit Bereicherungs- oder Schädigungsabsicht.
+    Täter ist in der Regel ein Privatmann, der den gutgläubigen Amtsträger als Werkzeug einsetzt;
+    der Beamte selbst wäre nach § 348 StGB zu bestrafen.
+  norms:
+  - § 271 Abs. 1 StGB
+  - § 271 Abs. 2 StGB
+  - § 348 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-urk2-271-beweiskraft
+  type: definition
+  front: >-
+    Welche Beurkundungen genießen "öffentlichen Glauben" im Sinne des § 271 StGB?
+  back: >-
+    Nur solche Angaben sind geschützt, für die die öffentliche Urkunde nach der Rechtsordnung
+    volle Beweiskraft gegenüber jedermann hat (vgl. §§ 415, 417, 418 ZPO). Die Beurkundung
+    muss also nicht bloß die Tatsache der Abgabe einer Erklärung, sondern die Richtigkeit
+    der beurkundeten Tatsache beweisen. Beispiele sind Personenstandsurkunden, Eintragungen
+    in öffentlichen Registern oder die Identitätsangaben im Personalausweis oder Reisepass.
+    Dagegen beweist die notarielle Urkunde nur, dass die Erklärung abgegeben wurde, nicht
+    aber, dass ihr Inhalt wahr ist; wer vor dem Notar unrichtige Angaben macht (z. B. über
+    den Kaufpreis), macht sich daher nicht nach § 271 StGB strafbar. Die Täuschung über die
+    Wahrheit dieser Angaben ist lediglich eine straflose "schriftliche Lüge".
+  norms:
+  - § 271 StGB
+  - § 415 ZPO
+  - § 417 ZPO
+  - § 418 ZPO
+  quellen:
+  - StGB, amtliche Fassung
+  - ZPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  - "BGH, Beschluss vom 21.08.2018 - 3 StR 205/18 (volle Beweiskraft für und gegen jedermann)"
+  stand: 2026-10
+- slug: sr-urk2-274-tatbestand
+  type: norm
+  front: >-
+    Was bestraft § 274 Abs. 1 StGB (Urkundenunterdrückung)?
+  back: >-
+    § 274 Abs. 1 StGB bestraft in Nr. 1, wer eine Urkunde oder technische Aufzeichnung, die
+    ihm entweder überhaupt nicht oder nicht ausschließlich gehört, in der Absicht, einem anderen
+    Nachteil zuzufügen, vernichtet, beschädigt oder unterdrückt. Nr. 2 erfasst entsprechend
+    beweiserhebliche Daten, über die der Täter nicht oder nicht ausschließlich verfügen darf
+    (Löschen, Unterdrücken, Unbrauchbarmachen, Verändern). Nr. 3 schützt Grenzsteine und ähnliche
+    Grenz- oder Wasserstandsmerkmale. Der Nachteil muss nicht in einem Vermögensschaden bestehen;
+    es genügt jede Beeinträchtigung fremder Rechte, vor allem des Beweisführungsrechts. Die
+    Nachteilszufügungsabsicht ist als Absicht (dolus directus 1. Grades) erforderlich. Der
+    Versuch ist strafbar (Abs. 2).
+  norms:
+  - § 274 Abs. 1 StGB
+  - § 274 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-urk2-274-gehoeren-streit
+  type: streitstand
+  front: >-
+    Streitstand: Wem "gehört" eine Urkunde im Sinne des § 274 Abs. 1 Nr. 1 StGB?
+  back: >-
+    Nach der früheren Auffassung entscheidet das zivilrechtliche Eigentum an der Urkunde.
+    Die Rspr. und die h. M. stellen dagegen auf das Beweisführungsrecht ab: Die Urkunde gehört
+    dem Täter nicht ausschließlich, wenn ein anderer ein Recht hat, sie als Beweismittel zu
+    benutzen. Das Eigentum an der Urkunde ist damit weder notwendig noch hinreichend: Auch
+    der Eigentümer kann Täter sein, wenn ein anderer ein Beweisführungsrecht hat. Argument
+    ist der Schutzzweck: § 274 StGB sichert das Beweisführungsrecht, nicht das Eigentum. Kritiker
+    bemängeln, dass dies den Wortlaut ("gehört") dehnt.
+  norms:
+  - § 274 Abs. 1 Nr. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-urk2-ausweis-273-281
+  type: norm
+  front: Was regeln §§ 273 und 281 StGB (Ausweisdelikte)?
+  back: >-
+    § 273 StGB (Verändern von amtlichen Ausweisen) bestraft, wer zur Täuschung im Rechtsverkehr eine Eintragung in einem amtlichen Ausweis entfernt, unkenntlich macht, überdeckt oder unterdrückt oder eine einzelne Seite entfernt (Nr. 1) oder einen so veränderten Ausweis gebraucht (Nr. 2); Strafrahmen Freiheitsstrafe bis zu drei Jahren oder Geldstrafe. Die Vorschrift ist subsidiär gegenüber §§ 267 und 274 StGB und hat in der Klausur geringere Bedeutung. § 281 StGB
+    (Missbrauch von Ausweispapieren) bestraft, wer ein Ausweispapier, das für einen anderen
+    ausgestellt ist, zur Täuschung im Rechtsverkehr gebraucht, und wer sein Ausweispapier
+    einem anderen zur Täuschung im Rechtsverkehr überlässt. Beim Gebrauchen eines fremden
+    Ausweises (z. B. Vorlage des Personalausweises des Bruders bei einer Kontrolle) ist §
+    281 StGB einschlägig. Das Ausweispapier muss echt sein; bei gefälschten Papieren greift
+    § 267 StGB.
+  norms:
+  - § 273 StGB
+  - § 281 StGB
+  - § 267 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-urk2-267-abgrenzung
+  type: definition
+  front: >-
+    Wie ist § 267 StGB von den erweiterten Urkundendelikten abzugrenzen?
+  back: >-
+    Entscheidend sind drei Fragen. Erstens: Liegt eine Urkunde im Sinne des § 267 StGB vor
+    oder eine technische Aufzeichnung beziehungsweise eine Datenspeicherung? Technische Aufzeichnungen
+    (§ 268 StGB) und Daten (§ 269 StGB) sind keine Urkunden und werden gesondert geschützt.
+    Zweitens: Wird über die Identität des Ausstellers getäuscht (§ 267 Abs. 1 StGB; Unechtheit)
+    oder nur über die Richtigkeit des Inhalts? Letzteres ist eine straflose schriftliche Lüge,
+    es sei denn, ein gutgläubiger Amtsträger beurkundet Unwahres (§ 271 StGB). Drittens: Wird
+    die Urkunde hergestellt oder gebraucht (Echtheitsschutz) oder dem Beweis entzogen (§ 274
+    StGB, Beweisführungsrecht)? § 274 StGB greift, wenn eine Urkunde ohne Fälschung dem Beweisverkehr
+    entzogen wird.
+  norms:
+  - § 267 StGB
+  - § 268 StGB
+  - § 269 StGB
+  - § 271 StGB
+  - § 274 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: sr-schema-urk2-268
+  title: Fälschung technischer Aufzeichnungen, § 268 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+  norms:
+  - § 268 Abs. 1 StGB
+  - § 268 Abs. 3 StGB
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: >-
+          a) Tatobjekt: technische Aufzeichnung, § 268 Abs. 2 StGB
+        hinweis: >-
+          Selbsttätige Erzeugung durch ein technisches Gerät; Beweisbestimmung; Gegenstand
+          erkennbar.
+      - label: >-
+          b) Tathandlung: Herstellen einer unechten, Verfälschen oder Gebrauchen
+        hinweis: >-
+          Abs. 3: Störung des Aufzeichnungsvorgangs gleichgestellt.
+    - label: 2. Subjektiver Tatbestand
+      children:
+      - label: a) Vorsatz
+      - label: >-
+          b) Zur Täuschung im Rechtsverkehr (auch § 270 StGB)
+  - label: II. Rechtswidrigkeit
+  - label: III. Schuld
+  - label: >-
+      IV. Besonders schwerer Fall, § 268 Abs. 5 i. V. m. § 267 Abs. 3 StGB
+- slug: sr-schema-urk2-274
+  title: Urkundenunterdrückung, § 274 Abs. 1 Nr. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+  norms:
+  - § 274 Abs. 1 Nr. 1 StGB
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: >-
+          a) Tatobjekt: Urkunde oder technische Aufzeichnung, die dem Täter nicht oder nicht
+          ausschließlich gehört
+        hinweis: >-
+          Maßgeblich ist das Beweisführungsrecht (h. M.), nicht das Eigentum.
+      - label: >-
+          b) Tathandlung: Vernichten, Beschädigen oder Unterdrücken
+        hinweis: >-
+          Unterdrücken = dem Berechtigten dauerhaft oder zeitweilig die Benutzung als Beweismittel
+          entziehen.
+    - label: 2. Subjektiver Tatbestand
+      children:
+      - label: a) Vorsatz
+      - label: b) Absicht, einem anderen Nachteil zuzufügen
+  - label: II. Rechtswidrigkeit
+  - label: III. Schuld
+  - label: IV. Konkurrenzen
+    hinweis: >-
+      Zu § 303, § 242 und § 133 StGB abgrenzen; kein § 267, wenn nur vernichtet wird.
+faelle:
+- slug: sr-fall-urk2-schuldschein
+  title: Der zerrissene Schuldschein
+  difficulty: 3
+  minutes: 35
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: >-
+    S schuldet der G 5.000 Euro aus einem Darlehen, das G ihm gegen Aushändigung einer von
+    S unterzeichneten Schuldschein-Urkunde gewährt hat. Die Urkunde verwahrt G in ihrer Wohnung.
+    Bei einem Besuch nutzt S einen unbeobachteten Moment, nimmt den Schuldschein aus G's Schreibtisch,
+    zerreißt ihn und verbrennt die Stücke im Ofen seiner Wohnung. S will verhindern, dass
+    G die Darlehensforderung beweisen kann; sonstige Beweismittel hat G nicht. G stellt Strafanzeige.
+  question: >-
+    Hat sich S nach § 274 Abs. 1 Nr. 1 StGB strafbar gemacht?
+  steps:
+  - prompt: Ist der Schuldschein eine taugliche Urkunde?
+    erwartung: >-
+      Ja - er verkörpert eine Gedankenerklärung (Schuldanerkenntnis), ist zum Beweis der Darlehensforderung
+      bestimmt und lässt S als Aussteller erkennen (Perpetuierungs-, Beweis-, Garantiefunktion).
+  - prompt: >-
+      Gehört die Urkunde dem S "nicht oder nicht ausschließlich"?
+    erwartung: >-
+      Ja - die Urkunde steht im Eigentum der G, und G hat auch das Beweisführungsrecht, weil
+      sie die Darlehensforderung damit beweisen will. Auf den Streit um Eigentum oder Beweisführungsrecht
+      kommt es nicht an, weil beide Ansichten zu G führen; für S ist die Urkunde fremd.
+  - prompt: Welche Tathandlung liegt vor?
+    erwartung: >-
+      S hat die Urkunde durch Zerreißen und Verbrennen vernichtet.
+  - prompt: >-
+      Handelte S vorsätzlich und mit Nachteilszufügungsabsicht?
+    erwartung: >-
+      Ja - S wusste, dass die Urkunde der G gehört, und wollte ihr das Beweismittel entziehen,
+      um die Beweisführung für die Forderung zu vereiteln (Nachteil im Sinne der Beeinträchtigung
+      des Beweisführungsrechts).
+  - prompt: Liegt ein Urkundendelikt nach § 267 StGB vor?
+    erwartung: >-
+      Nein - S hat keine Urkunde hergestellt oder verfälscht und nicht gebraucht, sondern
+      vernichtet. § 267 StGB schützt die Echtheit, § 274 StGB das Beweisführungsrecht.
+  - prompt: Ergebnis?
+    erwartung: >-
+      S ist wegen Urkundenunterdrückung nach § 274 Abs. 1 Nr. 1 StGB strafbar. Daneben kommen
+      Delikte gegen das Eigentum der G in Betracht (§ 303 StGB), die hier nicht zu prüfen
+      sind.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: 'Tatobjekt: Urkunde (Schuldschein) bejaht'
+      weight: 1.0
+      required: false
+      norms:
+      - § 274 Abs. 1 Nr. 1 StGB
+      keywords:
+      - Urkunde
+      - Schuldschein
+      - Beweisfunktion
+      - Gedankenerklärung
+      - Aussteller
+      card_slugs:
+      - sr-urk2-274-tatbestand
+      - sr-urk2-267-abgrenzung
+    - id: p2
+      label: >-
+        "Nicht ausschließlich gehören": Beweisführungsrecht der G
+      weight: 3.0
+      required: true
+      norms:
+      - § 274 Abs. 1 Nr. 1 StGB
+      keywords:
+      - gehört nicht
+      - nicht ausschließlich
+      - Beweisführungsrecht
+      - Beweisführungsbefugnis
+      - Eigentümerin
+      - Eigentum
+      card_slugs:
+      - sr-urk2-274-gehoeren-streit
+    - id: p3
+      label: 'Tathandlung: Vernichten'
+      weight: 1.5
+      required: false
+      norms:
+      - § 274 Abs. 1 Nr. 1 StGB
+      keywords:
+      - Vernichten
+      - vernichtet
+      - zerrissen
+      - verbrannt
+      - Unterdrücken
+      card_slugs:
+      - sr-urk2-274-tatbestand
+    - id: p4
+      label: Nachteilszufügungsabsicht
+      weight: 2.5
+      required: true
+      norms:
+      - § 274 Abs. 1 StGB
+      keywords:
+      - Nachteilszufügungsabsicht
+      - Absicht, einem anderen Nachteil zuzufügen
+      - Nachteil
+      - Beweisführung vereiteln
+      - dolus directus
+      card_slugs:
+      - sr-urk2-274-tatbestand
+    - id: p5
+      label: >-
+        Abgrenzung zu § 267 StGB (Echtheit vs. Beweisführungsrecht)
+      weight: 1.5
+      required: false
+      norms:
+      - § 267 StGB
+      - § 274 StGB
+      keywords:
+      - § 267
+      - Echtheit
+      - Identitätstäuschung
+      - kein Herstellen
+      - Beweisführungsrecht
+      card_slugs:
+      - sr-urk2-267-abgrenzung
+    - id: p6
+      label: 'Ergebnis: § 274 Abs. 1 Nr. 1 StGB'
+      weight: 1.0
+      required: false
+      norms:
+      - § 274 Abs. 1 Nr. 1 StGB
+      keywords:
+      - strafbar nach § 274
+      - Urkundenunterdrückung
+      - § 274 Abs. 1 Nr. 1
+      card_slugs:
+      - sr-urk2-274-tatbestand

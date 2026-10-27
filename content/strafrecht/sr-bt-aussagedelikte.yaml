@@ -1,0 +1,425 @@
+topic:
+  slug: sr-bt-aussagedelikte
+  area: strafrecht
+  title: Aussagedelikte (§§ 153 ff. StGB), falsche Verdächtigung (§ 164 StGB) und Vortäuschen einer Straftat (§ 145d StGB)
+  parent: sr-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-aus-systematik
+  type: norm
+  front: Wie sind die Aussagedelikte der §§ 153 bis 162 StGB systematisch aufgebaut?
+  back: >-
+    Die Aussagedelikte schützen die staatliche Rechtspflege, die auf wahrheitsgemäße
+    Angaben vor Gericht und anderen Stellen angewiesen ist. § 153 StGB bestraft
+    die falsche uneidliche Aussage vor Gericht oder einer anderen zur eidlichen
+    Vernehmung zuständigen Stelle, § 154 StGB den Meineid, § 155 StGB stellt
+    eidesgleiche Beteuerungen gleich, § 156 StGB bestraft die falsche Versicherung
+    an Eides statt vor einer zuständigen Behörde. § 157 StGB regelt den
+    Aussagenotstand, § 158 StGB die Berichtigung falscher Angaben, § 159 StGB die
+    Strafbarkeit des Versuchs der Anstiftung. § 160 StGB bestraft das Verleiten
+    zur Falschaussage, § 161 StGB die fahrlässige Begehung der Eidesdelikte. Es
+    sind eigenhändige Delikte: Täter kann nur sein, wer selbst aussagt oder schwört.
+  norms:
+  - § 153 StGB
+  - § 154 StGB
+  - § 156 StGB
+  - § 160 StGB
+  - § 161 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-aus-153-aussage
+  type: definition
+  front: Welche Voraussetzungen hat die falsche uneidliche Aussage nach § 153 StGB?
+  back: >-
+    Täter kann nur sein, wer als Zeuge oder Sachverständiger vor Gericht oder
+    einer anderen zur eidlichen Vernehmung von Zeugen oder Sachverständigen
+    zuständigen Stelle aussagt (etwa ein Untersuchungsausschuss; die
+    Staatsanwaltschaft ist nicht zur eidlichen Vernehmung berufen). Der Beschuldigte und die als Partei
+    vernommene Person sind keine tauglichen Täter des § 153 StGB. Tathandlung ist
+    die falsche Aussage zur Sache. Die Aussage ist als Einheit zu sehen: Der
+    Zeuge ist vollendet strafbar, wenn die Vernehmung beendet ist. Der Vorsatz
+    muss sich auf die Falschheit der Aussage und auf die Zuständigkeit der Stelle
+    erstrecken; Eventualvorsatz genügt (Rechtsfolge: Freiheitsstrafe von drei
+    Monaten bis zu fünf Jahren). Hält der Zeuge seine Aussage für richtig, obwohl
+    sie objektiv falsch ist, bleibt er straflos oder kommt nur nach § 161 StGB
+    in Betracht, soweit ein Eid geleistet wurde.
+  norms:
+  - § 153 StGB
+  - § 161 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-aus-falschheit-theorien
+  type: streitstand
+  front: 'Streitstand: Wann ist eine Aussage "falsch" im Sinne des § 153 StGB?'
+  back: >-
+    Nach der objektiven Theorie (Rechtsprechung und h.M.) ist eine Aussage falsch,
+    wenn sie inhaltlich nicht mit der Wirklichkeit übereinstimmt. Das Aussagedelikt
+    schützt die Rechtspflege vor sachlich unrichtigen Beweisgrundlagen; die
+    Vorstellung des Aussagenden ist erst für den Vorsatz relevant. Die subjektive
+    Theorie (Pflichtwidrigkeitstheorie) hält eine Aussage dann für falsch,
+    wenn sie nicht mit dem Wissen oder der Überzeugung des Aussagenden
+    übereinstimmt, und stellt die persönliche Wahrhaftigkeitspflicht in den
+    Vordergrund. Der Unterschied zeigt sich bei Irrtümern: Sagt ein Zeuge
+    etwas, das er für falsch hält, das objektiv aber stimmt, ist die Aussage nach
+    der objektiven Theorie nicht falsch (allenfalls untauglicher Versuch, der bei § 153
+    StGB mangels Versuchsstrafbarkeit straflos ist), nach der subjektiven Theorie
+    wäre sie falsch. Die objektive Theorie überzeugt, weil sie die Rechtspflege
+    schützt und dem Wortlaut entspricht.
+  norms:
+  - § 153 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-aus-154-meineid
+  type: norm
+  front: Was kennzeichnet den Meineid, § 154 StGB, und das Verhältnis zu § 153 StGB?
+  back: >-
+    Wer vor Gericht oder einer anderen zur Abnahme von Eiden zuständigen Stelle
+    falsch schwört, wird mit Freiheitsstrafe nicht unter einem Jahr bestraft; die Tat
+    ist ein Verbrechen. Abs. 2 sieht einen minder schweren Fall vor. Der Eid
+    bekräftigt die gesamte Aussage zur Sache. Im Verhältnis
+    zu § 153 StGB tritt die uneidliche Aussage im Wege der Gesetzeskonkurrenz zurück
+    (die dogmatische Einordnung als Qualifikation oder eigenständiger Tatbestand
+    wird unterschiedlich vorgenommen). Für Teilnehmer folgt daraus, dass Anstiftung
+    zum Meineid nur bei Vorsatz auch hinsichtlich der Eidesleistung vorliegt. Schwört
+    der Täter einen falschen Eid, nachdem er uneidlich falsch ausgesagt hat, liegt
+    nur ein Delikt vor, nicht zwei.
+  norms:
+  - § 154 StGB
+  - § 153 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-aus-156-versicherung
+  type: norm
+  front: Wann ist die falsche Versicherung an Eides statt nach § 156 StGB strafbar?
+  back: >-
+    § 156 StGB bestraft, wer vor einer zur Abnahme einer Versicherung an Eides
+    statt zuständigen Behörde eine solche Versicherung falsch abgibt oder unter
+    Berufung auf eine solche Versicherung falsch aussagt. Zuständig ist eine
+    Behörde nur, wenn sie von Gesetz ermächtigt ist, eine solche Versicherung
+    abzunehmen (Beispiele: Vermögensauskunft, Antrag auf Erbschein, Prozesskostenhilfe,
+    Glaubhaftmachung im Zivilverfahren). Abgegeben ist die Versicherung, wenn sie der
+    Behörde zugeht. Es genügt Eventualvorsatz; die Rechtsfolge ist Freiheitsstrafe bis
+    zu drei Jahren oder Geldstrafe. Wer eine Versicherung an Eides statt in einem
+    Verfahren abgibt, in dem ihre Zuständigkeit nicht besteht, bleibt straflos. Die
+    Tat ist gegenüber dem Meineid und der uneidlichen Aussage ein eigenständiges
+    Delikt, auch sie ist ein eigenhändiges Delikt.
+  norms:
+  - § 156 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-aus-157-notstand
+  type: norm
+  front: Was regelt der Aussagenotstand, § 157 StGB?
+  back: >-
+    § 157 Abs. 1 StGB gewährt dem Gericht ein Ermessen, die Strafe nach § 49 Abs. 2
+    StGB zu mildern, bei uneidlicher Aussage auch von Strafe abzusehen, wenn ein
+    Zeuge oder Sachverständiger sich einer falschen uneidlichen Aussage (§ 153 StGB)
+    oder eines Falscheides (§ 154 StGB) schuldig gemacht hat, um von sich oder einem Angehörigen
+    die Gefahr abzuwenden, bestraft oder einer freiheitsentziehenden Maßregel der Besserung
+    und Sicherung unterworfen zu werden. Es handelt sich um einen persönlichen Strafmilderungs-
+    oder Strafausschließungsgrund (§ 28 Abs. 2 StGB), der nur dem Täter
+    zugutekommt, in dessen Person er vorliegt. Der Aussagende muss in der Absicht
+    handeln, die Gefahr abzuwenden; es genügt, dass er sie annimmt. Die Norm
+    ändert nichts an der Wahrheitspflicht des Zeugen; der richtige Weg ist das
+    Auskunftsverweigerungsrecht nach § 55 StPO.
+  norms:
+  - § 157 Abs. 1 StGB
+  - § 28 Abs. 2 StGB
+  - § 55 StPO
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-aus-158-berichtigung
+  type: norm
+  front: Wie wirkt die Berichtigung falscher Angaben nach § 158 StGB?
+  back: >-
+    Nach § 158 Abs. 1 StGB kann das Gericht die Strafe nach § 49 Abs. 2 StGB mildern
+    oder von Strafe absehen, wenn der Täter die falsche Angabe rechtzeitig
+    berichtigt. Die Berichtigung ist verspätet, wenn sie bei der Entscheidung nicht mehr
+    verwertet werden kann, wenn aus der falschen Angabe ein Nachteil für einen anderen
+    entstanden ist oder wenn
+    eine Anzeige gegen den Täter erstattet oder eine Untersuchung gegen ihn
+    eingeleitet wurde (Abs. 2). Die Berichtigung kann bei der Stelle erfolgen, der die
+    falsche Angabe gemacht worden ist oder die sie im Verfahren zu prüfen hat, sowie
+    bei einem Gericht, einem Staatsanwalt oder einer Polizeibehörde (Abs. 3). Sie
+    muss das richtige Tatsachenbild vollständig herstellen. Anders als beim
+    Rücktritt (§ 24 StGB) bewirkt die Berichtigung bei den Vorsatzdelikten nur
+    eine Milderung bzw. fakultatives Absehen von Strafe; bei fahrlässigen Delikten
+    (§ 161 Abs. 2 StGB) führt sie dagegen zur Straflosigkeit.
+  norms:
+  - § 158 StGB
+  - § 161 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-aus-teilnahme
+  type: streitstand
+  front: 'Streitstand: Beteiligung an Aussagedelikten (Eigenhändigkeit, § 28 StGB, § 159 StGB)'
+  back: >-
+    Weil die Aussagedelikte eigenhändige Delikte sind, scheiden mittelbare
+    Täterschaft und Mittäterschaft aus: Wer einen anderen zur Falschaussage bringt,
+    ohne selbst auszusagen, kann nur Teilnehmer sein. Anstiftung (§ 26 StGB) und
+    Beihilfe (§ 27 StGB) zu einer vorsätzlichen Haupttat sind möglich. Wer
+    einen gutgläubigen Zeugen zu einem Falscheid oder einer falschen Versicherung
+    an Eides statt verleitet, wird nach § 160 StGB bestraft; zur bloß uneidlichen
+    Falschaussage verleitet, wird ebenfalls nach § 160 StGB bestraft (dort mit
+    geringerem Strafrahmen). Ob die
+    Zeugenstellung ein besonderes persönliches Merkmal im Sinne des § 28
+    Abs. 1 StGB ist, war umstritten: Wird dies bejaht, wäre die Strafe des nichtzeugen
+    Teilnehmers nach § 49 Abs. 1 StGB zu mildern. Der BGH hat dies für das Merkmal
+    "als Zeuge" in § 153 StGB verneint (Beschluss vom 05.02.2024 - 3 StR 470/23): Es sei
+    ein tatbezogenes Merkmal, sodass § 28 Abs. 1 StGB nicht gilt und der Teilnehmer
+    nicht nach § 49 Abs. 1 StGB zu mildern ist. § 159 StGB
+    ergänzt die Regeln: Der Versuch der Anstiftung zur falschen uneidlichen
+    Aussage und zur falschen Versicherung an Eides statt ist entsprechend § 30 Abs. 1
+    StGB strafbar, obwohl die Haupttaten Vergehen sind.
+  norms:
+  - § 26 StGB
+  - § 27 StGB
+  - § 28 StGB
+  - § 159 StGB
+  - § 160 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  - "BGH, Beschluss vom 05.02.2024 - 3 StR 470/23"
+  stand: 2026-10
+- slug: sr-aus-160-163
+  type: norm
+  front: Was regeln § 160 StGB (Verleitung zur Falschaussage) und § 161 StGB (fahrlässiger Falscheid)?
+  back: >-
+    § 160 StGB erfasst, wer einen anderen zur Ableistung eines falschen Eides (Freiheitsstrafe bis zu zwei Jahren oder Geldstrafe) oder
+    zur Abgabe einer falschen Versicherung an Eides statt oder einer falschen uneidlichen Aussage (Freiheitsstrafe bis zu sechs Monaten oder Geldstrafe bis zu 180 Tagessätzen) verleitet, ohne dass
+    dieser vorsätzlich oder fahrlässig falsch schwört bzw. versichert. Die Norm schließt die Lücke, die wegen der
+    Eigenhändigkeit der Aussagedelikte entsteht: Eine mittelbare Täterschaft
+    des Hintermannes ist ausgeschlossen. Der Versuch ist strafbar. Die Tat ist
+    ein Vergehen. § 161 StGB bestraft den fahrlässigen Falscheid und die
+    fahrlässige falsche Versicherung an Eides statt mit Freiheitsstrafe bis zu
+    einem Jahr oder Geldstrafe; wer die falsche Angabe rechtzeitig berichtigt,
+    bleibt nach Abs. 2 straffrei. Eine fahrlässige uneidliche Falschaussage ist nicht
+    strafbar. Fahrlässig handelt etwa der Zeuge, der Einzelheiten, die er nicht
+    sicher erinnert, unter Eid als sicher bekundet, ohne seine Unsicherheit offenzulegen.
+  norms:
+  - § 160 StGB
+  - § 161 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-aus-164-falsche-verdaechtigung
+  type: definition
+  front: Welche Voraussetzungen hat die falsche Verdächtigung, § 164 StGB?
+  back: >-
+    § 164 Abs. 1 StGB bestraft, wer einen anderen bei einer Behörde, einem zur
+    Entgegennahme von Anzeigen zuständigen Amtsträger oder öffentlich wider
+    besseres Wissen einer rechtswidrigen Tat oder der Verletzung einer
+    Dienstpflicht in der Absicht verdächtigt, ein behördliches Verfahren oder
+    andere behördliche Maßnahmen gegen ihn herbeizuführen oder fortdauern zu
+    lassen. Verdächtigen ist das Hervorrufen oder Verstärken eines Verdachts durch
+    Tatsachenbehauptung. Die Verdächtigung muss unwahr sein und wider besseres Wissen
+    (sicheres Wissen, also direkter Vorsatz) erfolgen. Abs. 2 erfasst die in
+    gleicher Absicht aufgestellte sonstige Behauptung tatsächlicher Art. Eine
+    Einwilligung des Verdächtigten schließt die Tat nicht aus, weil auch die
+    Rechtspflege geschützt ist (h.M.). Wer einen Unschuldigen anzeigt, den er für
+    schuldig hält, handelt nicht wider besseres Wissen. Es handelt sich um ein
+    Delikt mit Individual- und Allgemeinschutz.
+  norms:
+  - § 164 Abs. 1 StGB
+  - § 164 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-aus-145d-vortaeuschen
+  type: norm
+  front: Wann ist das Vortäuschen einer Straftat nach § 145d StGB strafbar und wie verhält sich die Norm zu § 164 StGB?
+  back: >-
+    § 145d Abs. 1 StGB bestraft, wer wider besseres Wissen einer Behörde oder einer
+    zur Entgegennahme von Anzeigen zuständigen Stelle vortäuscht, dass eine
+    rechtswidrige Tat begangen worden sei (Nr. 1) oder die Verwirklichung einer
+    der in § 126 Abs. 1 StGB genannten Taten bevorstehe (Nr. 2). Abs. 2 erfasst
+    das Täuschen über den Beteiligten an einer begangenen oder bevorstehenden
+    Tat. Die Norm schützt die Rechtspflege vor unnötiger Inanspruchnahme. Sie ist
+    gegenüber § 164, § 258 und § 258a StGB ausdrücklich subsidiär: Wer eine
+    bestimmte Person einer Tat verdächtigt, wird nach § 164 StGB bestraft; wer
+    eine Tat nur erfindet, ohne eine konkrete Person zu verdächtigen, fällt unter
+    § 145d StGB. Beispiel ist die Anzeige eines nie stattgefundenen Diebstahls, um
+    die Versicherungssumme zu erlangen (tateinheitlich mit Betrug möglich).
+  norms:
+  - § 145d Abs. 1 StGB
+  - § 145d Abs. 2 StGB
+  - § 164 StGB
+  - § 126 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: sr-schema-aus-153-teilnahme
+  title: Falsche uneidliche Aussage, § 153 StGB, und Anstiftung hierzu
+  norms:
+  - § 153 StGB
+  - § 26 StGB
+  - § 157 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Strafbarkeit des Zeugen, § 153 StGB
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: a) Täterkreis - Zeuge oder Sachverständiger
+        hinweis: Eigenhändiges Delikt; Beschuldigte und Parteien sind keine Täter.
+      - label: b) Vernehmung durch Gericht oder zuständige Stelle
+      - label: c) Falsche Aussage
+        hinweis: Objektive Theorie (Wirklichkeitsvergleich) vs. subjektive Theorie.
+    - label: 2. Subjektiver Tatbestand - Vorsatz bzgl. Falschheit und Zuständigkeit
+    - label: 3. Rechtswidrigkeit und Schuld
+    - label: 4. Aussagenotstand, § 157 StGB (Strafmilderung oder Absehen)
+      hinweis: Nur bei Gefahr eigener Bestrafung oder der eines Angehörigen; persönlicher
+        Grund, § 28 Abs. 2 StGB.
+    - label: 5. Berichtigung, § 158 StGB
+  - label: II. Strafbarkeit des Hintermannes
+    children:
+    - label: 1. Täterschaft ausgeschlossen (eigenhändiges Delikt)
+      hinweis: Mittelbare Täterschaft nicht möglich; bei gutgläubigem Zeugen nur § 160 StGB (Eid,
+        Versicherung an Eides statt oder uneidliche Aussage).
+    - label: 2. Anstiftung, §§ 153, 26 StGB
+      children:
+      - label: a) Vorsätzliche rechtswidrige Haupttat
+      - label: b) Bestimmen zur Tat
+      - label: c) Doppelter Anstiftervorsatz
+      - label: d) § 28 StGB prüfen
+        hinweis: Streit, ob Zeugenstellung besonderes persönliches Merkmal ist.
+    - label: 3. Persönliche Strafmilderungsgründe, § 28 Abs. 2 StGB
+  - label: III. Konkurrenzen
+    hinweis: Strafvereitelung, §§ 258, 258a StGB, und falsche Verdächtigung, § 164
+      StGB, prüfen.
+faelle:
+- slug: sr-fall-aus-alibi
+  title: Das falsche Alibi
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: >-
+    A ist wegen eines Einbruchs vor dem Amtsgericht angeklagt. Sein Freund C
+    drängt A's jüngeren Bruder Z, im Prozess als Zeuge auszusagen, A habe zur
+    Tatzeit bei ihm zu Hause gesessen. Tatsächlich war A zu dieser Zeit nicht bei
+    Z. Z lässt sich überzeugen, um seinen Bruder vor einer Freiheitsstrafe zu
+    bewahren. Z wird ordnungsgemäß belehrt, bleibt uneidlich vernommen (eine
+    Vereidigung findet nicht statt) und sagt in der Hauptverhandlung wahrheitswidrig
+    aus, A habe den Abend bei ihm verbracht. Das Gericht verurteilt A trotzdem.
+  question: Wie haben sich Z und C nach den Aussagedelikten der §§ 153 ff. StGB strafbar
+    gemacht? Weitere Delikte sind nicht zu prüfen.
+  steps:
+  - prompt: Hat sich Z nach § 153 StGB strafbar gemacht?
+    erwartung: Ja. Z sagte als Zeuge vor Gericht uneidlich aus. Seine Aussage zu
+      A's Anwesenheit ist falsch, weil sie nicht der Wirklichkeit entspricht (objektive
+      Theorie). Er handelte vorsätzlich, rechtswidrig und schuldhaft.
+  - prompt: Kann die Strafe des Z nach § 157 StGB gemildert werden?
+    erwartung: Ja. Z handelte, um seinen Bruder als Angehörigen vor Bestrafung zu
+      bewahren. Nach § 157 Abs. 1 StGB kann das Gericht die Strafe nach § 49 Abs. 2
+      StGB mildern oder von Strafe absehen; es ist eine Ermessensentscheidung.
+  - prompt: Kann C Täter eines Aussagedelikts sein?
+    erwartung: Nein. Aussagedelikte sind eigenhändige Delikte. C hat nicht selbst
+      ausgesagt; er kann nicht Täter sein, und Mittäterschaft ausgeschlossen ist
+      ebenso die mittelbare Täterschaft. Z handelte vorsätzlich, § 160 StGB scheidet
+      aus.
+  - prompt: Hat sich C wegen Anstiftung strafbar gemacht?
+    erwartung: Ja, nach §§ 153, 26 StGB. Es liegt eine vorsätzliche rechtswidrige
+      Haupttat des Z vor; C hat den Tatentschluss des Z hervorgerufen (Bestimmen)
+      und handelte mit doppeltem Anstiftervorsatz. Der Aussagenotstand des Z ist
+      ein persönlicher Grund (§ 28 Abs. 2 StGB) und wirkt nicht zugunsten des C.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Falsche uneidliche Aussage des Z (§ 153 StGB) - Zeuge, Gericht, Falschheit
+      weight: 3.0
+      required: true
+      norms:
+      - § 153 StGB
+      keywords:
+      - § 153 StGB
+      - falsche uneidliche Aussage
+      - Zeuge vor Gericht
+      - objektive Theorie
+      - Aussage ist falsch
+      card_slugs:
+      - sr-aus-153-aussage
+      - sr-aus-falschheit-theorien
+    - id: p2
+      label: Aussagenotstand zugunsten Z (Angehöriger) nur als Milderung/Absehen
+      weight: 1.5
+      required: false
+      norms:
+      - § 157 Abs. 1 StGB
+      keywords:
+      - § 157
+      - Aussagenotstand
+      - Angehöriger
+      - § 49 Abs. 2
+      - von Strafe absehen
+      card_slugs:
+      - sr-aus-157-notstand
+    - id: p3
+      label: Eigenhändigkeit - keine Täterschaft des C
+      weight: 2.5
+      required: true
+      norms:
+      - § 153 StGB
+      keywords:
+      - eigenhändiges Delikt
+      - eigenhändige Delikte
+      - keine mittelbare Täterschaft
+      - kann nicht Täter sein
+      - Mittäterschaft ausgeschlossen
+      card_slugs:
+      - sr-aus-teilnahme
+    - id: p4
+      label: Anstiftung des C zu § 153 StGB, §§ 153, 26 StGB
+      weight: 2.5
+      required: true
+      norms:
+      - § 26 StGB
+      - § 153 StGB
+      keywords:
+      - Anstiftung
+      - §§ 153, 26
+      - Bestimmen zur Tat
+      - doppelter Anstiftervorsatz
+      - vorsätzliche rechtswidrige Haupttat
+      card_slugs:
+      - sr-aus-teilnahme
+    - id: p5
+      label: Persönlicher Grund des § 157 StGB wirkt nur für Z, § 28 Abs. 2 StGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 28 Abs. 2 StGB
+      keywords:
+      - § 28 Abs. 2
+      - persönlicher Strafmilderungsgrund
+      - persönliches Merkmal
+      - wirkt nicht zugunsten des C
+      card_slugs:
+      - sr-aus-157-notstand

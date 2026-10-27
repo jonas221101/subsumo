@@ -1,0 +1,383 @@
+topic:
+  slug: zr-erbrecht-grundzuege
+  area: zivilrecht
+  title: 'Erbrecht: Erbfolge, Testament, Pflichtteil'
+  parent: zivilrecht
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-erb-gesetzliche-erbfolge
+  type: definition
+  front: Wie ist die gesetzliche Erbfolge der Verwandten aufgebaut (§§ 1922, 1924 ff. BGB)?
+  back: 'Mit dem Erbfall geht das Vermögen als Ganzes auf den Erben über (Gesamtrechtsnachfolge,
+    § 1922 BGB). Gesetzliche Erben sind die Verwandten in Ordnungen: 1. Ordnung die Abkömmlinge
+    des Erblassers (§ 1924 BGB), 2. Ordnung die Eltern und deren Abkömmlinge (§ 1925 BGB),
+    3. Ordnung die Großeltern und deren Abkömmlinge (§ 1926 BGB), dann fernere Ordnungen (§
+    1928 f. BGB). Ein Verwandter einer vorrangigen Ordnung schließt alle Verwandten späterer
+    Ordnungen aus (§ 1930 BGB). Innerhalb einer Ordnung gilt das Repräsentationsprinzip: Lebt
+    ein zur Erbfolge berufener Abkömmling nicht mehr, treten seine Abkömmlinge an seine Stelle
+    (§ 1924 Abs. 3 BGB); Abkömmlinge gleichen Grades erben zu gleichen Teilen (§ 1924 Abs.
+    4 BGB).'
+  norms:
+  - § 1922 Abs. 1 BGB
+  - § 1924 BGB
+  - § 1925 BGB
+  - § 1926 BGB
+  - § 1930 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-erb-ehegattenerbrecht-1931
+  type: norm
+  front: Welchen gesetzlichen Erbteil hat der überlebende Ehegatte nach § 1931 BGB?
+  back: Der Ehegatte ist neben den Verwandten erster Ordnung zu einem Viertel, neben Verwandten
+    zweiter Ordnung oder neben Großeltern zu einem Halb des Nachlasses berufen (§ 1931 Abs.
+    1 S. 1 BGB); sind weder Verwandte der ersten oder zweiten Ordnung noch Großeltern vorhanden,
+    erbt er allein (§ 1931 Abs. 2 BGB). Voraussetzung ist eine zum Erbfall bestehende Ehe;
+    das Erbrecht entfällt, wenn der Erblasser die Scheidung beantragt oder ihr zugestimmt
+    hatte und die Scheidungsvoraussetzungen vorlagen (§ 1933 BGB). Bei Gütertrennung erbt
+    der Ehegatte neben einem oder zwei Kindern zu gleichen Teilen mit diesen, also zu 1/2
+    bzw. 1/3 (§ 1931 Abs. 4 BGB). Zur Zugewinngemeinschaft siehe § 1371 BGB.
+  norms:
+  - § 1931 Abs. 1 BGB
+  - § 1931 Abs. 2 BGB
+  - § 1931 Abs. 4 BGB
+  - § 1933 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-erb-zugewinn-1371
+  type: norm
+  front: Wie wirkt sich die Zugewinngemeinschaft auf das Ehegattenerbrecht aus (§ 1371 BGB)?
+  back: 'Endet der Güterstand der Zugewinngemeinschaft durch den Tod eines Ehegatten und wird
+    der überlebende Ehegatte gesetzlicher Erbe, erhöht sich sein Erbteil pauschal um ein Viertel
+    der Erbschaft (§ 1371 Abs. 1 BGB, sogenannte erbrechtliche Lösung), unabhängig davon,
+    ob tatsächlich ein Zugewinn erzielt wurde. Neben Kindern erbt der Ehegatte damit zu 1/2
+    (1/4 nach § 1931 Abs. 1 S. 1 BGB plus 1/4 nach § 1371 Abs. 1 BGB). Das Zusatzviertel ist
+    auch dann anzusetzen, wenn der Überlebende selbst den höheren Zugewinn erzielt hat. Erbt
+    der Ehegatte nicht (etwa weil er enterbt wurde oder ausschlägt), gilt die güterrechtliche
+    Lösung: konkreter Zugewinnausgleich nach §§ 1373 ff. BGB neben dem Pflichtteil, der nach
+    dem nicht erhöhten Erbteil berechnet wird (§ 1371 Abs. 2, 3 BGB).'
+  norms:
+  - § 1371 Abs. 1 BGB
+  - § 1371 Abs. 2 BGB
+  - § 1371 Abs. 3 BGB
+  - § 1931 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-erb-testament-form
+  type: norm
+  front: Welche Formen kennt das Gesetz für ein Testament (§§ 2231, 2247 BGB)?
+  back: Ein Testament kann zur Niederschrift eines Notars (öffentliches Testament) oder durch
+    eine vom Erblasser eigenhändig geschriebene und unterschriebene Erklärung (eigenhändiges
+    Testament) errichtet werden (§ 2231 BGB). Beim eigenhändigen Testament muss der gesamte
+    Text handschriftlich verfasst und unterschrieben sein (§ 2247 Abs. 1 BGB); Angaben zu
+    Zeit und Ort der Errichtung sollen enthalten sein; ihr Fehlen macht das Testament nicht
+    unwirksam, außer es ergeben sich daraus Zweifel an Gültigkeit oder Inhalt (§ 2247 Abs. 2,
+    5 BGB). Maschinenschrift, Computerausdruck oder ein von
+    Dritten geschriebener Text genügen nicht; der Formverstoß führt zur Nichtigkeit (§ 125
+    S. 1 BGB). Das Testament ist höchstpersönlich (§ 2064 BGB); Testierfähigkeit besteht ab
+    16 Jahren, wobei Minderjährige nur ein öffentliches Testament errichten können (§ 2229
+    Abs. 1, § 2233 Abs. 1 BGB). Ehegatten können ein gemeinschaftliches Testament errichten
+    (§ 2265 BGB).
+  norms:
+  - § 2231 BGB
+  - § 2247 Abs. 1 BGB
+  - § 2247 Abs. 2 BGB
+  - § 125 S. 1 BGB
+  - § 2064 BGB
+  - § 2229 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-erb-auslegung-andeutungstheorie
+  type: streitstand
+  front: Wie weit darf die Auslegung eines Testaments außerhalb der Urkunde liegende Umstände
+    berücksichtigen (Andeutungstheorie)?
+  back: 'Ziel der Testamentsauslegung ist die Ermittlung des wirklichen Willens des Erblassers
+    (§ 133 BGB, § 2084 BGB). Nach Rechtsprechung und h. M. ist die Auslegung dennoch an die
+    Form gebunden: Umstände außerhalb der Urkunde dürfen nur herangezogen werden, wenn der
+    ermittelte Wille in der Urkunde wenigstens andeutungsweise oder versteckt Ausdruck gefunden
+    hat (Andeutungstheorie, Formwahrung nach § 2247 BGB; vgl. BGH, 10.11.2021, IV ZB 30/20: eine nicht einmal angedeutete Erbeinsetzung ist formnichtig, § 125 S. 1 BGB). Kritiker in der Literatur halten
+    die Form schon dann für gewahrt, wenn der Wille durch die Urkunde nicht ausgeschlossen
+    wird; sie wollen die Auslegung stärker am tatsächlichen Willen ausrichten. Für Klausuren
+    genügt es regelmäßig, den Maßstab der h. M. anzuwenden: Erst Wortlaut und Urkundeninhalt,
+    dann Begleitumstände mit Anhalt in der Urkunde; bei Zweifeln greifen Auslegungsregeln
+    wie § 2087 BGB oder § 2084 BGB (wohlwollende Auslegung, damit die Verfügung Erfolg hat).'
+  norms:
+  - § 2084 BGB
+  - § 133 BGB
+  - § 2247 BGB
+  - § 2087 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-erb-erbvertrag
+  type: definition
+  front: Was ist ein Erbvertrag und welche Bindungswirkung hat er (§§ 1941, 2274 ff. BGB)?
+  back: 'Der Erbvertrag ist ein Vertrag, in dem der Erblasser durch vertragsmäßige Verfügung
+    Erben einsetzen, Vermächtnisse oder Auflagen anordnen kann (§ 1941 BGB). Er muss zur Niederschrift
+    eines Notars bei gleichzeitiger Anwesenheit beider Teile geschlossen werden (§ 2276 Abs.
+    1 BGB) und ist vom Erblasser persönlich zu schließen (§ 2274 BGB). Vertragsmäßige Verfügungen
+    binden den Erblasser: Frühere Verfügungen von Todes wegen werden unwirksam, soweit sie
+    das Recht des Vertragsgegners beeinträchtigen würden, und spätere beeinträchtigende Verfügungen
+    sind unwirksam (§ 2289 Abs. 1 BGB). Unter Lebenden bleibt der Erblasser grundsätzlich
+    frei zu verfügen (§ 2286 BGB); schenkt er jedoch in Beeinträchtigungsabsicht, kann der
+    Vertragserbe nach dem Erbfall vom Beschenkten Herausgabe verlangen (§ 2287 BGB). Der Rücktritt
+    ist nur bei Vorbehalt oder unter den Voraussetzungen der §§ 2293 ff. BGB möglich.'
+  norms:
+  - § 1941 BGB
+  - § 2274 BGB
+  - § 2276 Abs. 1 BGB
+  - § 2289 BGB
+  - § 2286 BGB
+  - § 2287 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-erb-erbschein
+  type: definition
+  front: Was bewirkt der Erbschein und wie weit reicht sein Schutz (§§ 2353, 2365 ff. BGB)?
+  back: Der Erbschein ist das vom Nachlassgericht auf Antrag erteilte amtliche Zeugnis über
+    das Erbrecht und die Größe der Erbteile (§ 2353 BGB). Er begründet die widerlegliche Vermutung,
+    dass dem im Schein bezeichneten Erben das Erbrecht zusteht und er nicht durch andere als
+    die angegebenen Anordnungen beschränkt ist (§ 2365 BGB). Zugunsten Dritter, die von dem
+    als Erben Ausgewiesenen einen Nachlassgegenstand erwerben, gilt der Inhalt des Scheins
+    als richtig, sofern sie nicht die Unrichtigkeit kennen oder wissen, dass das Nachlassgericht
+    die Rückgabe verlangt hat (öffentlicher Glaube, §§ 2366, 2367 BGB). Ein unrichtiger Erbschein
+    ist einzuziehen (§ 2361 BGB). Der Erbschein ist keine Voraussetzung der Erbenstellung;
+    diese tritt kraft Gesetzes mit dem Erbfall ein. Im Grundbuchverfahren kann der Erbschein
+    durch ein notarielles Testament mit Eröffnungsprotokoll ersetzt werden (§ 35 GBO).
+  norms:
+  - § 2353 BGB
+  - § 2365 BGB
+  - § 2366 BGB
+  - § 2361 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-erb-pflichtteil
+  type: norm
+  front: Wer hat einen Pflichtteilsanspruch und wie hoch ist er (§§ 2303 ff. BGB)?
+  back: Pflichtteilsberechtigt sind die Abkömmlinge, die Eltern und der Ehegatte des Erblassers,
+    wenn sie durch Verfügung von Todes wegen von der Erbfolge ausgeschlossen sind (§ 2303
+    Abs. 1, 2 BGB); Eltern nur, wenn keine Abkömmlinge vorhanden sind (§ 2309 BGB). Der Pflichtteil
+    ist ein reiner Geldanspruch gegen den Erben in Höhe der Hälfte des Werts des gesetzlichen
+    Erbteils (§ 2303 Abs. 1 S. 2 BGB); er entsteht mit dem Erbfall (§ 2317 Abs. 1 BGB) und ist mangels abweichender Bestimmung sofort fällig (§ 271 BGB). Berechnungsgrundlage ist der Nachlasswert nach Abzug der Nachlassverbindlichkeiten.
+    Zur Durchsetzung steht dem Berechtigten ein Auskunftsanspruch zu (§ 2314 BGB). Schenkungen
+    des Erblassers in den letzten zehn Jahren erhöhen den Nachlass fiktiv für einen Ergänzungsanspruch,
+    wobei sie nach § 2325 Abs. 3 BGB zeitlich abgeschmolzen werden. Die Entziehung des Pflichtteils
+    ist nur unter den engen Voraussetzungen des § 2333 BGB möglich. Der Anspruch verjährt
+    in der Regelverjährung (§§ 195, 199 BGB).
+  norms:
+  - § 2303 Abs. 1 BGB
+  - § 2303 Abs. 2 BGB
+  - § 2317 Abs. 1 BGB
+  - § 2314 BGB
+  - § 2325 BGB
+  - § 2333 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-erb-erbenhaftung
+  type: norm
+  front: Wie haftet der Erbe für Nachlassverbindlichkeiten und wie kann er seine Haftung beschränken?
+  back: Der Erbe haftet für die Nachlassverbindlichkeiten (§ 1967 BGB); zunächst haftet er
+    mit Nachlass und Eigenvermögen. Er kann die Haftung auf den Nachlass beschränken durch
+    Nachlassverwaltung (§ 1975 BGB) oder Nachlassinsolvenzverfahren (§ 1975 BGB, §§ 315 ff. InsO). Reicht der
+    Nachlass nicht einmal für die Verfahrenskosten, kann er die Dürftigkeitseinrede erheben
+    (§ 1990 BGB). In den ersten drei Monaten nach Annahme steht ihm die Dreimonatseinrede
+    zu (§ 2014 BGB). Ausschlagen kann der Erbe binnen sechs Wochen ab Kenntnis vom Anfall
+    und Grund der Berufung (§ 1944 Abs. 1, 2 BGB); die Ausschlagung wirkt auf den Erbfall
+    zurück (§ 1953 BGB). Mehrere Miterben haften als Gesamtschuldner (§ 2058 BGB). Im Prozess
+    muss der Erbe sich die Beschränkung der Haftung vorbehalten lassen (§ 780 ZPO).
+  norms:
+  - § 1967 BGB
+  - § 1975 BGB
+  - §§ 315 ff. InsO
+  - § 1990 BGB
+  - § 1944 BGB
+  - § 2058 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: zr-erb-vermaechtnis-erbeinsetzung
+  type: definition
+  front: Wie unterscheiden sich Erbeinsetzung und Vermächtnis (§§ 1922, 1939, 2087 BGB)?
+  back: 'Erbe ist, wer Gesamtrechtsnachfolger wird (§ 1922 BGB); der Nachlass geht kraft Gesetzes
+    dinglich auf ihn über. Vermächtnis ist die Zuwendung eines Vermögensvorteils, ohne dass
+    der Bedachte als Erbe eingesetzt wird (§ 1939 BGB). Der Vermächtnisnehmer erwirbt nur
+    einen schuldrechtlichen Anspruch gegen den Beschwerten (§ 2174 BGB), die Erfüllung geschieht
+    durch Rechtsgeschäft wie Übereignung nach den allgemeinen Regeln (Damnationslegat). Die
+    Abgrenzung erfolgt durch Auslegung. § 2087 BGB gibt eine Regel: Wird dem Bedachten das
+    Vermögen oder ein Bruchteil zugewandt, ist Erbeinsetzung anzunehmen (Abs. 1); werden ihm
+    nur einzelne Gegenstände zugewandt, ist im Zweifel Vermächtnis anzunehmen (Abs. 2). Vom
+    Vorausvermächtnis (§ 2150 BGB) für einen Miterben ist die bloße Teilungsanordnung (§ 2048
+    BGB) zu unterscheiden, die keinen wertmäßigen Vorteil zuwendet.'
+  norms:
+  - § 1922 BGB
+  - § 1939 BGB
+  - § 2087 BGB
+  - § 2174 BGB
+  - § 2048 BGB
+  - § 2150 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: zr-schema-erb-pflichtteil
+  title: Pflichtteilsanspruch, §§ 2303 ff. BGB
+  norms:
+  - § 2303 Abs. 1 BGB
+  - § 2317 Abs. 1 BGB
+  - § 2314 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Anspruch entstanden, § 2303 BGB
+    children:
+    - label: 1. Erbfall eingetreten, deutsches Erbrecht anwendbar (Art. 21 EuErbVO, gewöhnlicher
+        Aufenthalt des Erblassers)
+    - label: '2. Berechtigter: Abkömmling, Ehegatte oder Eltern (Eltern nur ohne Abkömmlinge,
+        § 2309 BGB)'
+    - label: 3. Ausschluss von der Erbfolge durch Verfügung von Todes wegen (Testament oder
+        Erbvertrag)
+  - label: II. Wirksamkeit der Enterbung
+    hinweis: Formgültigkeit des Testaments prüfen (§ 2247, § 2231 BGB); bei Formmangel gilt
+      die gesetzliche Erbfolge und es entsteht kein Pflichtteilsanspruch.
+  - label: III. Höhe
+    hinweis: Bei Ehegatten in Zugewinngemeinschaft ist der Pflichtteil nach dem nicht erhöhten
+      Erbteil zu berechnen (§ 1371 Abs. 2 BGB).
+    children:
+    - label: 1. Gesetzlichen Erbteil des Berechtigten ermitteln (§§ 1924 ff., § 1931 BGB)
+    - label: 2. Hälfte davon, § 2303 Abs. 1 S. 2 BGB
+    - label: 3. Wert des Nachlasses nach Abzug der Verbindlichkeiten, § 2311 BGB
+  - label: IV. Schuldner und Inhalt
+    children:
+    - label: 1. Erbe als Schuldner, § 2303 Abs. 1 BGB
+    - label: 2. Geldanspruch, entsteht mit dem Erbfall (§ 2317 Abs. 1 BGB), sofort fällig (§ 271 BGB)
+    - label: 3. Hilfsanspruch auf Auskunft und Wertermittlung, § 2314 BGB
+  - label: V. Einwendungen und Verjährung
+    children:
+    - label: 1. Pflichtteilsentziehung (§ 2333 BGB) oder Pflichtteilsunwürdigkeit (§ 2345 Abs. 2 BGB)
+    - label: 2. Verjährung nach §§ 195, 199 BGB
+  - label: VI. Pflichtteilsergänzung bei Schenkungen, § 2325 BGB
+    hinweis: Nur prüfen, wenn der Sachverhalt Schenkungen innerhalb der letzten zehn Jahre
+      nennt.
+faelle:
+- slug: zr-fall-erb-enterbtes-kind
+  title: Das enterbte Kind
+  difficulty: 2
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: 'Der verwitwete Erblasser E hinterlässt zwei Kinder, K und T. Ein Jahr vor seinem
+    Tod schrieb E ein Testament, das er vollständig mit der Hand verfasste und mit seinem
+    Namen unterschrieb. Darin heißt es: "Mein Freund F soll mein alleiniger Erbe sein. Meine
+    Kinder bekommen nichts." Nach Abzug aller Nachlassverbindlichkeiten beträgt der Nachlass
+    120.000 Euro. Schenkungen hat E nicht gemacht. K verlangt von F Zahlung.'
+  question: Welchen Anspruch hat K gegen F und in welcher Höhe?
+  steps:
+  - prompt: Ist das Testament wirksam?
+    erwartung: Ja. Es ist handschriftlich verfasst und unterschrieben und erfüllt damit die
+      Form des eigenhändigen Testaments nach § 2247 Abs. 1 BGB, § 2231 Nr. 2 BGB. F ist Alleinerbe.
+  - prompt: Wie wäre die Erbfolge ohne Testament?
+    erwartung: E war verwitwet; gesetzliche Erben der ersten Ordnung sind K und T je zur Hälfte
+      (§ 1924 BGB).
+  - prompt: Welcher Anspruch kommt für K in Betracht?
+    erwartung: 'Ein Pflichtteilsanspruch gegen den Erben F nach § 2303 Abs. 1 BGB. K ist als
+      Abkömmling pflichtteilsberechtigt. Er wurde durch das Testament enterbt.'
+  - prompt: Wie hoch ist der Anspruch?
+    erwartung: 'Der Pflichtteil beträgt die Hälfte des gesetzlichen Erbteils (§ 2303 Abs.
+      1 S. 2 BGB): 1/2 von 1/2 = 1/4 des Nachlasses, also 30.000 Euro.'
+  - prompt: Wann ist der Anspruch fällig und wie kann K die Höhe überprüfen?
+    erwartung: Der Anspruch ist mit dem Erbfall entstanden (§ 2317 Abs. 1 BGB) und mangels abweichender Bestimmung sofort fällig (§ 271 BGB).
+      K kann von F Auskunft über den Nachlassbestand verlangen (§ 2314 BGB). Er ist ein reiner
+      Geldanspruch und verjährt nach den Regelfristen der §§ 195, 199 BGB.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Formwirksamkeit des eigenhändigen Testaments nach § 2247 BGB geprüft
+      weight: 2.0
+      required: true
+      norms:
+      - § 2247 Abs. 1 BGB
+      keywords:
+      - eigenhändig
+      - handschriftlich
+      - § 2247 Abs. 1 BGB
+      - § 2231 Nr. 2 BGB
+      - eigenhändig geschrieben und unterschrieben
+      card_slugs:
+      - zr-erb-testament-form
+    - id: p2
+      label: Enterbung und Pflichtteilsberechtigung des K (§ 2303 BGB) festgestellt
+      weight: 2.0
+      required: true
+      norms:
+      - § 2303 Abs. 1 BGB
+      keywords:
+      - § 2303 Abs. 1 BGB
+      - Pflichtteil
+      - pflichtteilsberechtigt
+      - enterbt
+      - von der Erbfolge ausgeschlossen
+      - Abkömmling
+      card_slugs:
+      - zr-erb-pflichtteil
+    - id: p3
+      label: Gesetzlichen Erbteil (1/2) ermittelt
+      weight: 1.0
+      required: false
+      keywords:
+      - § 1924 BGB
+      - gesetzliche Erbfolge
+      - erste Ordnung
+      - gesetzlicher Erbteil
+      - zu gleichen Teilen
+      card_slugs:
+      - zr-erb-gesetzliche-erbfolge
+    - id: p4
+      label: 'Höhe des Pflichtteils: 1/4 des Nachlasses, 30.000 Euro'
+      weight: 2.0
+      required: true
+      keywords:
+      - Hälfte des gesetzlichen Erbteils
+      - ein Viertel
+      - 1/4
+      - 30.000 Euro
+      - § 2303 Abs. 1 S. 2 BGB
+      card_slugs:
+      - zr-erb-pflichtteil
+    - id: p5
+      label: Geldanspruch gegen den Erben, Fälligkeit und Auskunftsanspruch
+      weight: 1.0
+      required: false
+      norms:
+      - § 2317 Abs. 1 BGB
+      - § 2314 BGB
+      keywords:
+      - Geldanspruch
+      - § 2317 Abs. 1 BGB
+      - § 2314 BGB
+      - Auskunft
+      - Erbe als Schuldner
+      card_slugs:
+      - zr-erb-pflichtteil

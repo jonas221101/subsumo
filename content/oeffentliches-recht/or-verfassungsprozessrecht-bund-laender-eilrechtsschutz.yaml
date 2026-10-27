@@ -1,0 +1,238 @@
+topic:
+  slug: or-verfassungsprozessrecht-bund-laender-eilrechtsschutz
+  area: oeffentliches-recht
+  title: Bund-Länder-Streit, einstweilige Anordnung und Kommunalverfassungsbeschwerde
+  parent: oeffentliches-recht
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-bl-bund-laender-streit-gegenstand
+  type: norm
+  front: "Was ist Gegenstand des Bund-Länder-Streits nach Art. 93 Abs. 1 Nr. 3 GG, und wer ist beteiligt?"
+  back: >-
+    Das Bundesverfassungsgericht entscheidet bei Meinungsverschiedenheiten über Rechte und Pflichten des Bundes und der Länder, insbesondere bei der Ausführung von Bundesrecht durch die Länder und bei der Ausübung der Bundesaufsicht (Art. 93 Abs. 1 Nr. 3 GG, §§ 68 bis 70 BVerfGG). Antragsteller und Antragsgegner können nur die Bundesregierung für den Bund und die jeweilige Landesregierung für das Land sein (§ 68 BVerfGG); Parlamente, Fraktionen, Gemeinden oder Parteien sind nicht beteiligtenfähig. Streitgegenstand ist ein Rechtsverhältnis zwischen Bund und Land im Bundesstaat, etwa die Verletzung der Verwaltungskompetenzen (Art. 83 ff. GG), des Weisungsrechts in der Bundesauftragsverwaltung oder des Grundsatzes der Bundestreue. Der Bund-Länder-Streit ist ein kontradiktorisches Verfahren und schützt die föderalen Kompetenzen, nicht individuelle Grundrechte. Er ist Ausdruck des bundesstaatlichen Prinzips (Art. 20 Abs. 1 GG) und dient dem Rechtsfrieden zwischen Bund und Ländern.
+  norms:
+  - Art. 93 Abs. 1 Nr. 3 GG
+  - § 68 BVerfGG
+  - Art. 20 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-bl-bund-laender-streit-zulaessigkeit
+  type: norm
+  front: "Welche Zulässigkeitsvoraussetzungen hat der Bund-Länder-Streit (§§ 68, 69, 64 BVerfGG)?"
+  back: >-
+    Der Antrag ist zulässig, wenn die Beteiligten antragsberechtigt sind (Bundesregierung, Landesregierung, § 68 BVerfGG) und ein tauglicher Antragsgegenstand vorliegt: eine rechtserhebliche Maßnahme oder Unterlassung des Antragsgegners (§ 69 in Verbindung mit § 64 Abs. 1 BVerfGG). Der Antragsteller muss geltend machen, durch die Maßnahme oder Unterlassung in seinen verfassungsmäßigen Rechten und Pflichten verletzt oder unmittelbar gefährdet zu sein (Antragsbefugnis, Möglichkeitstheorie). Der Antrag ist binnen sechs Monaten zu stellen, nachdem die Maßnahme oder Unterlassung dem Antragsteller bekannt geworden ist (§ 69 in Verbindung mit § 64 Abs. 3 BVerfGG). Hinzu kommt das allgemeine Rechtsschutzbedürfnis. Art. 93 Abs. 1 Nr. 4 GG (andere öffentlich-rechtliche Streitigkeiten zwischen Bund und Ländern) tritt als Auffangtatbestand zurück, wenn der Streit unter Nr. 3 fällt. Verfassungsstreitigkeiten innerhalb eines Landes entscheidet grundsätzlich das Landesverfassungsgericht; Art. 99 GG erlaubt dem Land lediglich, sie dem Bundesverfassungsgericht zuzuweisen.
+  norms:
+  - Art. 93 Abs. 1 Nr. 3 GG
+  - § 69 BVerfGG
+  - § 64 BVerfGG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  stand: 2026-10
+- slug: or-bl-ea-voraussetzungen-art32
+  type: norm
+  front: "Unter welchen Voraussetzungen kann das Bundesverfassungsgericht eine einstweilige Anordnung nach § 32 Abs. 1 BVerfGG erlassen?"
+  back: >-
+    Das Bundesverfassungsgericht kann im Streitfall einen Zustand durch einstweilige Anordnung vorläufig regeln, wenn dies zur Abwehr schwerer Nachteile, zur Verhinderung drohender Gewalt oder aus einem anderen wichtigen Grund zum gemeinen Wohl dringend geboten ist (§ 32 Abs. 1 BVerfGG). Die einstweilige Anordnung setzt ein Hauptsacheverfahren voraus, das anhängig oder zumindest zu erwarten ist; sie ist in allen Verfahrensarten möglich, auch im Organstreit, im Bund-Länder-Streit und bei der Verfassungsbeschwerde. Der Antrag ist unzulässig, wenn er in der Hauptsache offensichtlich unzulässig ist; er ist unbegründet, wenn die Hauptsache offensichtlich unbegründet ist. Sie dient nur der vorläufigen Sicherung und soll die Entscheidung in der Hauptsache nicht vorwegnehmen. Wegen ihrer Tragweite, besonders bei vorläufigen Eingriffen in Entscheidungen anderer Verfassungsorgane, wird sie zurückhaltend und nach einem strengen Maßstab erlassen.
+  norms:
+  - § 32 Abs. 1 BVerfGG
+  quellen:
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-bl-ea-folgenabwaegung
+  type: definition
+  front: "Wie läuft die Folgenabwägung bei der einstweiligen Anordnung nach § 32 BVerfGG ab?"
+  back: >-
+    Die Prüfung erfolgt in zwei Schritten. Zunächst werden die Erfolgsaussichten der Hauptsache nur summarisch geprüft: Ist der Antrag in der Hauptsache offensichtlich unzulässig oder unbegründet, wird die einstweilige Anordnung abgelehnt; ist er offensichtlich begründet, kann sie ergehen, wenn der Nachteil dringend abzuwenden ist. Ist der Ausgang der Hauptsache offen, nimmt das Gericht eine Folgenabwägung (Doppelhypothese) vor: Es vergleicht die Nachteile, die entstehen, wenn die einstweilige Anordnung nicht erlassen wird, die Hauptsache aber Erfolg hat, mit denen, die eintreten, wenn sie erlassen wird, die Hauptsache aber erfolglos bleibt. Die Gründe für den Erlass müssen so schwer wiegen, dass die Anordnung unabweisbar ist. Maßgeblich ist vor allem, ob die Nachteile irreversibel oder nur schwer revidierbar sind und welches Gewicht sie haben. Erst wenn die Nachteile bei Ablehnung deutlich überwiegen, wird der Antrag begründet.
+  norms:
+  - § 32 Abs. 1 BVerfGG
+  quellen:
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-bl-ea-gegen-gesetze-strenger-massstab
+  type: streitstand
+  front: "Gilt für die einstweilige Anordnung gegen ein Gesetz ein strengerer Maßstab?"
+  back: >-
+    Wer die vorläufige Aussetzung eines in Kraft getretenen oder zu verkündenden Gesetzes begehrt, verlangt einen erheblichen Eingriff in die Gestaltungsfreiheit des demokratisch legitimierten Gesetzgebers. Nach der Praxis des Bundesverfassungsgerichts ist daher ein besonders strenger Maßstab anzulegen: Die Nachteile müssen von besonderem Gewicht sein, und eine Aussetzung wird nur ausnahmsweise erlassen. Das Gericht prüft zudem, ob die Hauptsache nicht offensichtlich unbegründet ist, ohne bereits die Verfassungsmäßigkeit abschließend zu klären. Kritik: Der strenge Maßstab verkürze den effektiven Rechtsschutz (Art. 19 Abs. 4 GG ist beim Gesetz freilich nicht unmittelbar einschlägig) und überlasse dem Gesetzgeber vollendete Tatsachen. Befürworter verweisen auf Gewaltenteilung und Funktionsfähigkeit der Staatsorgane. Entscheidend bleibt in der Fallbearbeitung die Abwägung zwischen irreversiblen Schäden und der nur zeitlichen Verzögerung der Gesetzesumsetzung.
+  norms:
+  - § 32 Abs. 1 BVerfGG
+  - Art. 20 Abs. 2 GG
+  quellen:
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-bl-ea-verfahren-wirkung
+  type: norm
+  front: "Wie läuft das Verfahren der einstweiligen Anordnung ab, und wie lange wirkt sie?"
+  back: >-
+    Die einstweilige Anordnung kann ohne mündliche Verhandlung ergehen (§ 32 Abs. 2 S. 1 BVerfGG). Regelmäßig erhalten die am Hauptsacheverfahren Beteiligten und Äußerungsberechtigten, etwa der Antragsgegner, vor der Entscheidung Gelegenheit zur Stellungnahme; bei besonderer Dringlichkeit kann das Gericht davon absehen (S. 2). Gegen den Erlass oder die Ablehnung durch Beschluss kann Widerspruch erhoben werden, nicht aber vom Beschwerdeführer im Verfahren der Verfassungsbeschwerde; über ihn entscheidet das Gericht nach mündlicher Verhandlung, und er hat keine aufschiebende Wirkung (Abs. 3 und 4). Die einstweilige Anordnung tritt nach sechs Monaten außer Kraft (Abs. 6 S. 1); sie kann mit Zweidrittelmehrheit wiederholt werden (S. 2). Mit der Entscheidung in der Hauptsache endet die einstweilige Anordnung.
+  norms:
+  - § 32 Abs. 2 BVerfGG
+  - § 32 Abs. 3 BVerfGG
+  - § 32 Abs. 6 BVerfGG
+  quellen:
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-bl-kommunalverfassungsbeschwerde-zulaessigkeit
+  type: norm
+  front: "Wann ist die Gemeinde durch ein Gesetz unmittelbar betroffen, und wie wirken Subsidiarität und Landesverfassungsbeschwerde auf die Kommunalverfassungsbeschwerde (§ 91 BVerfGG)?"
+  back: >-
+    Gemeinden und Gemeindeverbände können nach Art. 93 Abs. 1 Nr. 4b GG, § 91 BVerfGG Gesetze angreifen, die ihr Selbstverwaltungsrecht aus Art. 28 GG verletzen. Die Beschwerdebefugnis verlangt die Möglichkeit einer Verletzung des Art. 28 Abs. 2 GG; die Gemeinde muss selbst, gegenwärtig und unmittelbar betroffen sein. Unmittelbarkeit liegt vor, wenn das Gesetz ohne weiteren Vollzugsakt wirkt, wie bei einer Legalplanung. Bedarf es eines Vollzugsakts, ist grundsätzlich zunächst der fachgerichtliche Rechtsweg zu beschreiten (Subsidiarität). Bei Landesgesetzen ist die Beschwerde zum Bundesverfassungsgericht ausgeschlossen, soweit Beschwerde zum Landesverfassungsgericht erhoben werden kann (§ 91 S. 2 BVerfGG); gegen Bundesgesetze steht sie unmittelbar offen. Die Frist beträgt ein Jahr seit Inkrafttreten (§ 93 Abs. 3 BVerfGG). Gemeinden sind nicht allgemein grundrechtsfähig, können sich aber auf Art. 28 Abs. 2 GG und die Verfahrensgrundrechte der Art. 101 und 103 GG berufen.
+  norms:
+  - Art. 93 Abs. 1 Nr. 4b GG
+  - § 91 BVerfGG
+  - § 93 Abs. 3 BVerfGG
+  - Art. 28 Abs. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  stand: 2026-10
+- slug: or-bl-selbstverwaltungsgarantie-rastede
+  type: rechtsprechung
+  front: "Wie prüft man den Eingriff eines Gesetzes in die gemeindliche Planungshoheit, und welche Rolle spielt der Rastede-Maßstab (BVerfGE 79, 127)?"
+  back: >-
+    Die Planungshoheit ist als Teil der Selbstverwaltung nach Art. 28 Abs. 2 S. 1 GG geschützt. Ein Gesetz, das den Bau einer Straße auf Gemeindegebiet selbst anordnet (Legalplanung), greift in dieses Recht ein, soweit es die gemeindliche Planung verdrängt. Geprüft wird in drei Schritten. Erstens ist der Kernbereich der Selbstverwaltung unantastbar. Zweitens darf außerhalb des Kerns in die Planungshoheit nur aus Gründen des Gemeinwohls eingegriffen werden, also zur Verfolgung überörtlicher Interessen, die das Gewicht der gemeindlichen Belange überwiegen. Drittens muss der Eingriff verhältnismäßig sein. Für Aufgabenentzüge gilt nach Rastede ein Regel-Ausnahme-Verhältnis zugunsten der Gemeinde; sie dürfen ihr nur aus Gründen des Gemeininteresses entzogen werden, bloße Verwaltungsvereinfachung genügt nicht. Landesverfassungen sehen teilweise Anhörungsrechte der Gemeinden im Gesetzgebungsverfahren vor; das Grundgesetz verlangt sie nicht ausdrücklich.
+  norms:
+    - Art. 28 Abs. 2 S. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 79, 127
+  stand: 2026-10
+- slug: or-bl-abgrenzung-verfahrensarten
+  type: definition
+  front: "Wie grenzt man Bund-Länder-Streit, Organstreit und Kommunalverfassungsbeschwerde ab?"
+  back: >-
+    Der Organstreit (Art. 93 Abs. 1 Nr. 1 GG) schützt die Rechte oberster Bundesorgane und ihrer Teile im Verhältnis zueinander (horizontale Gewaltenteilung). Der Bund-Länder-Streit (Nr. 3) betrifft die Rechte und Pflichten des Bundes und der Länder untereinander (vertikale Gewaltenteilung); Beteiligte sind ausschließlich die Bundesregierung und die Landesregierungen. Die Kommunalverfassungsbeschwerde (Nr. 4b) dient dem Schutz der kommunalen Selbstverwaltung vor Gesetzen. Die abstrakte Normenkontrolle (Nr. 2) ist objektiv und setzt keine eigene Rechtsverletzung voraus. Die Verfassungsbeschwerde (Nr. 4a) schützt Grundrechte und grundrechtsgleiche Rechte. Alle Verfahren sind mit der einstweiligen Anordnung nach § 32 BVerfGG kombinierbar. In der Klausur ist zuerst zu fragen, wer antragsberechtigt ist und welches Recht er geltend macht.
+  norms:
+  - Art. 93 Abs. 1 Nr. 1 GG
+  - Art. 93 Abs. 1 Nr. 3 GG
+  - Art. 93 Abs. 1 Nr. 4b GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: or-schema-bl-einstweilige-anordnung
+  title: Einstweilige Anordnung, § 32 BVerfGG
+  norms:
+  - § 32 Abs. 1 BVerfGG
+  quellen:
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Zulässigkeit
+    children:
+    - label: 1. Antragsberechtigung - Beteiligter des Hauptsacheverfahrens
+    - label: 2. Hauptsacheverfahren anhängig oder zu erwarten, in der Hauptsache nicht offensichtlich unzulässig
+    - label: 3. Rechtsschutzbedürfnis und Dringlichkeit
+  - label: II. Begründetheit
+    children:
+    - label: 1. Erfolgsaussichten der Hauptsache nur summarisch - offensichtlich unbegründet führt zur Ablehnung
+    - label: 2. Bei offenem Ausgang - Folgenabwägung (Doppelhypothese)
+    - label: 3. Dringende Gebotenheit - schwerer Nachteil, drohende Gewalt, wichtiger Grund des gemeinen Wohls
+    hinweis: Irreversibilität der Nachteile ist entscheidend; gegen Gesetze strenger Maßstab.
+  - label: III. Entscheidung und Wirkung
+    hinweis: Vorläufige Regelung, keine Vorwegnahme der Hauptsache; Außerkrafttreten nach sechs Monaten, § 32 Abs. 6 BVerfGG.
+faelle:
+- slug: or-fall-bl-legalplanung-gemeinde
+  title: Die Umgehungsstraße per Gesetz
+  difficulty: 4
+  minutes: 50
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  - BVerfGG, amtliche Fassung
+  facts: >-
+    Ein Bundesgesetz ordnet unmittelbar den Bau einer Umgehungsstraße über Gemarkungsfläche der Gemeinde G an und ersetzt dafür die sonst übliche Planfeststellung (Legalplanung). Die Trasse zerschneidet ein von G im Bebauungsplan als Wohngebiet ausgewiesenes und teilweise bereits erschlossenes Gelände. Ein weiterer Vollzugsakt ist nicht erforderlich. Drei Monate nach der Verkündung erhebt G Verfassungsbeschwerde zum Bundesverfassungsgericht mit der Begründung, ihre Planungshoheit werde verletzt. Mit dem Baubeginn in sechs Wochen sollen die erschlossenen Flächen unwiederbringlich überbaut werden. Eine spätere Verwirklichung des Straßenprojekts würde sich bei Erfolg der Beschwerde nur um etwa ein halbes Jahr verzögern; Gefahren für Leben oder Gesundheit sind damit nicht verbunden. G beantragt zugleich, den Vollzug des Gesetzes vorläufig auszusetzen.
+  question: Ist die Kommunalverfassungsbeschwerde zulässig, und hat der Eilantrag der G Erfolg?
+  steps:
+  - prompt: Ist die Kommunalverfassungsbeschwerde der G zulässig?
+    erwartung: Ja. G ist als Gemeinde beschwerdeführungsberechtigt nach Art. 93 Abs. 1 Nr. 4b GG, § 91 BVerfGG; Gegenstand ist ein Bundesgesetz; es erscheint möglich, dass die Planungshoheit als Teil der Selbstverwaltung nach Art. 28 Abs. 2 S. 1 GG verletzt ist; G ist selbst, gegenwärtig und unmittelbar betroffen, weil das Gesetz ohne weiteren Vollzugsakt wirkt; die Jahresfrist des § 93 Abs. 3 BVerfGG ist mit drei Monaten gewahrt. Der Vorrang des Landesverfassungsgerichts (§ 91 S. 2 BVerfGG) betrifft nur Landesgesetze.
+  - prompt: Ist der Eilantrag zulässig, und sind die Erfolgsaussichten in der Hauptsache offensichtlich ausgeschlossen?
+    erwartung: Der Antrag ist zulässig, die Beschwerde ist anhängig und nicht offensichtlich unzulässig. In der Hauptsache ist der Ausgang offen. Überörtliche Verkehrsinteressen können einen Eingriff in die Planungshoheit rechtfertigen, die Abwägung ist aber nicht von vornherein entschieden. Die Beschwerde ist deshalb weder offensichtlich unbegründet noch offensichtlich begründet.
+  - prompt: Wie fällt die Folgenabwägung aus?
+    erwartung: Ohne einstweilige Anordnung und bei späterem Erfolg der Hauptsache wären die erschlossenen Flächen unwiederbringlich überbaut, die Planungshoheit wäre endgültig vereitelt. Mit einstweiliger Anordnung und späterem Misserfolg der Hauptsache würde das Straßenprojekt nur um etwa ein halbes Jahr verzögert. Der irreversible Schaden wiegt schwerer; die einstweilige Anordnung ist zum Schutz vor schweren Nachteilen dringend geboten. Der strenge Maßstab bei Gesetzen steht dem nicht entgegen, weil die Nachteile besonderes Gewicht haben.
+  - prompt: Wie ist der Antrag insgesamt zu bescheiden?
+    erwartung: Dem Antrag ist stattzugeben, die einstweilige Anordnung ergeht. Das Gericht setzt den Vollzug des Gesetzes im Bereich der Gemarkung vorläufig aus (§ 32 Abs. 1 BVerfGG).
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Zulässigkeit der Kommunalverfassungsbeschwerde - Beschwerdeführerin und Gegenstand
+      weight: 1.0
+      required: false
+      norms:
+      - Art. 93 Abs. 1 Nr. 4b GG
+      - § 91 BVerfGG
+      keywords:
+      - Kommunalverfassungsbeschwerde
+      - Art. 93 Abs. 1 Nr. 4b GG
+      - § 91 BVerfGG
+      - Gemeinde beschwerdeführungsberechtigt
+      card_slugs:
+      - or-bl-kommunalverfassungsbeschwerde-zulaessigkeit
+    - id: p2
+      label: Beschwerdebefugnis aus Art. 28 Abs. 2 GG und Jahresfrist
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 28 Abs. 2 GG
+      - § 93 Abs. 3 BVerfGG
+      keywords:
+      - Planungshoheit
+      - Selbstverwaltungsgarantie
+      - Art. 28 Abs. 2 S. 1 GG
+      - Jahresfrist
+      - § 93 Abs. 3 BVerfGG
+      - unmittelbar betroffen
+      card_slugs:
+      - or-bl-kommunalverfassungsbeschwerde-zulaessigkeit
+      - or-bl-selbstverwaltungsgarantie-rastede
+    - id: p3
+      label: Voraussetzungen der einstweiligen Anordnung und offener Ausgang der Hauptsache
+      weight: 2.0
+      required: true
+      norms:
+      - § 32 Abs. 1 BVerfGG
+      keywords:
+      - § 32 Abs. 1 BVerfGG
+      - einstweilige Anordnung
+      - Hauptsache offen
+      - nicht offensichtlich unbegründet
+      - schwere Nachteile
+      card_slugs:
+      - or-bl-ea-voraussetzungen-art32
+    - id: p4
+      label: Folgenabwägung (Doppelhypothese) mit Gewicht der Irreversibilität
+      weight: 3.0
+      required: true
+      keywords:
+      - Folgenabwägung
+      - Doppelhypothese
+      - irreversibel
+      - unwiederbringlich
+      - Verzögerung
+      card_slugs:
+      - or-bl-ea-folgenabwaegung
+      - or-bl-ea-gegen-gesetze-strenger-massstab
+    - id: p5
+      label: Ergebnis - einstweilige Anordnung ergeht
+      weight: 0.5
+      required: false
+      keywords:
+      - Antrag ist begründet
+      - dem Antrag ist stattzugeben
+      - Vollzug des Gesetzes vorläufig aus
+      - einstweilige Anordnung ergeht
+      card_slugs:
+      - or-bl-ea-verfahren-wirkung

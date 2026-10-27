@@ -15,13 +15,15 @@ cards:
 - slug: or-vwvfg-rw-abgrenzung-48-49
   type: definition
   front: Wonach unterscheiden sich Rücknahme und Widerruf eines Verwaltungsakts?
-  back: Die Rücknahme (§ 48 VwVfG) betrifft einen von Anfang an rechtswidrigen Verwaltungsakt
-    und beseitigt ihn rückwirkend für die Vergangenheit. Der Widerruf (§ 49 VwVfG)
+  back: Die Rücknahme (§ 48 VwVfG) betrifft einen von Anfang an rechtswidrigen Verwaltungsakt;
+    sie kann mit Wirkung für die Zukunft oder - anders als der Widerruf - auch für
+    die Vergangenheit erfolgen (§ 48 Abs. 1 S. 1 VwVfG). Der Widerruf (§ 49 VwVfG)
     betrifft einen im Zeitpunkt seines Erlasses rechtmäßigen Verwaltungsakt, dessen
-    Aufhebung an später eintretende Umstände anknüpft und grundsätzlich nur für
-    die Zukunft wirkt. Beide Vorschriften setzen einen unanfechtbaren oder noch anfechtbaren
-    Verwaltungsakt voraus und sind nach dem Begleitwort des Gesetzes als Ermessensvorschriften
-    ausgestaltet.
+    Aufhebung an später eintretende Umstände anknüpft und grundsätzlich nur für die
+    Zukunft wirkt; eine Rückwirkung kommt nur in den Fällen des § 49 Abs. 3 VwVfG
+    in Betracht. Beide Vorschriften setzen einen wirksamen Verwaltungsakt voraus (also
+    auch einen rechtswidrigen, aber nicht nichtigen, § 43 Abs. 3 VwVfG), und beide
+    stehen nach dem Wortlaut ('kann') im Ermessen der Behörde.
   norms:
   - § 48 VwVfG
   - § 49 VwVfG
@@ -34,9 +36,13 @@ cards:
   front: Welche Grundvoraussetzungen nennt § 48 Abs. 1 S. 1 VwVfG für die Rücknahme?
   back: Ein rechtswidriger Verwaltungsakt kann, auch nachdem er unanfechtbar geworden
     ist, ganz oder teilweise mit Wirkung für die Zukunft oder für die Vergangenheit
-    zurückgenommen werden. Die Rechtswidrigkeit muss im Zeitpunkt des Erlasses vorgelegen
-    haben oder nachträglich fortbestehen; die Rechtsfolge steht im Ermessen der Behörde,
-    soweit nicht die besonderen Einschränkungen der Absätze 2 bis 4 eingreifen.
+    zurückgenommen werden (§ 48 Abs. 1 S. 1 VwVfG). Maßgeblich ist die anfängliche
+    Rechtswidrigkeit, d. h. der Verwaltungsakt muss bereits im Zeitpunkt seines Erlasses
+    rechtswidrig gewesen sein; wird ein ursprünglich rechtmäßiger Verwaltungsakt erst
+    durch spätere Änderungen rechtswidrig, kommt nur ein Widerruf nach § 49 VwVfG
+    in Betracht, soweit dessen Voraussetzungen vorliegen. Die Rechtsfolge steht im
+    Ermessen der Behörde (§ 40 VwVfG); bei begünstigenden Verwaltungsakten (§ 48 Abs.
+    1 S. 2 VwVfG) greifen zusätzlich die Einschränkungen der Absätze 2 bis 4.
   norms:
   - § 48 Abs. 1 S. 1 VwVfG
   quellen:
@@ -46,21 +52,27 @@ cards:
   type: streitstand
   front: Wie funktioniert der Vertrauensschutz bei Rücknahme eines begünstigenden
     VA mit Geld- oder Sachleistung nach § 48 Abs. 2 VwVfG?
-  back: Begründet oder bestätigt der rechtswidrige Verwaltungsakt eine einmalige
-    oder laufende Geld- oder teilbare Sachleistung, darf er nicht zurückgenommen
+  back: Begründet oder bestätigt der rechtswidrige Verwaltungsakt eine einmalige oder
+    laufende Geldleistung oder teilbare Sachleistung, darf er nicht zurückgenommen
     werden, soweit der Begünstigte auf seinen Bestand vertraut hat und sein Vertrauen
     unter Abwägung mit dem öffentlichen Interesse an einer Rücknahme schutzwürdig
-    ist. Auf Vertrauen kann sich der Begünstigte insbesondere berufen, wenn er gewährte
-    Leistungen verbraucht oder eine Vermögensdisposition getroffen hat, die er nicht
-    mehr oder nur unter unzumutbaren Nachteilen rückgängig machen kann. Der Vertrauensschutz
-    ist ausgeschlossen, wenn einer der in § 48 Abs. 2 S. 3 VwVfG genannten Fälle
-    vorliegt - insbesondere arglistige Täuschung, Drohung, Bestechung, vorsätzlich
-    oder grob fahrlässig unrichtige oder unvollständige Angaben oder Kenntnis bzw.
-    grob fahrlässige Unkenntnis der Rechtswidrigkeit.
+    ist (§ 48 Abs. 2 S. 1 VwVfG). Das Vertrauen ist in der Regel schutzwürdig, wenn
+    der Begünstigte gewährte Leistungen verbraucht oder eine Vermögensdisposition
+    getroffen hat, die er nicht mehr oder nur unter unzumutbaren Nachteilen rückgängig
+    machen kann (S. 2). Auf Vertrauen kann sich der Begünstigte nicht berufen, wenn
+    er den Verwaltungsakt durch arglistige Täuschung, Drohung oder Bestechung erwirkt
+    hat (S. 3 Nr. 1), wenn er ihn durch Angaben erwirkt hat, die in wesentlicher Beziehung
+    unrichtig oder unvollständig waren (Nr. 2), oder wenn er die Rechtswidrigkeit
+    kannte oder infolge grober Fahrlässigkeit nicht kannte (Nr. 3). Grobe Fahrlässigkeit
+    spielt also nur bei Nr. 3 eine Rolle; Nr. 2 setzt nach h. M. kein Verschulden
+    voraus, sondern knüpft an die objektiv unrichtigen oder unvollständigen Angaben
+    an. In diesen Fällen wird der Verwaltungsakt in der Regel mit Wirkung für die
+    Vergangenheit zurückgenommen (S. 4).
   norms:
   - § 48 Abs. 2 S. 1 VwVfG
   - § 48 Abs. 2 S. 2 VwVfG
   - § 48 Abs. 2 S. 3 VwVfG
+  - § 48 Abs. 2 S. 4 VwVfG
   quellen:
   - VwVfG, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -69,13 +81,14 @@ cards:
   type: norm
   front: Wie wird ein rechtswidriger begünstigender VA ohne Geld- oder Sachleistung
     nach § 48 Abs. 3 VwVfG zurückgenommen?
-  back: Bei sonstigen begünstigenden Verwaltungsakten - also solchen ohne Geld- oder
-    teilbare Sachleistung - ist die Rücknahme für die Vergangenheit nicht an die
-    qualifizierten Ausschlussgründe des Absatzes 2 gebunden. Vertraut der Begünstigte
-    gleichwohl schutzwürdig auf den Bestand und wird ihm dadurch ein Vermögensnachteil
-    verursacht, hat ihm die Behörde auf Antrag diesen Nachteil bis zur Höhe des
-    Interesses am Fortbestand auszugleichen - kein Bestandsschutz wie in Absatz 2,
-    sondern nur ein finanzieller Ausgleichsanspruch.
+  back: 'Bei sonstigen begünstigenden Verwaltungsakten - also solchen ohne Geldleistung
+    oder teilbare Sachleistung - gibt es keinen Bestandsschutz wie in Absatz 2: Die
+    Rücknahme ist im Rahmen des Ermessens zulässig. Vertraut der Begünstigte schutzwürdig
+    auf den Bestand und erleidet er dadurch einen Vermögensnachteil, hat die Behörde
+    ihm auf Antrag diesen Nachteil auszugleichen, jedoch nicht über den Betrag des
+    Interesses am Bestand des Verwaltungsakts hinaus (§ 48 Abs. 3 S. 1 und 3 VwVfG).
+    Die Ausschlussgründe des Absatzes 2 S. 3 gelten entsprechend (§ 48 Abs. 3 S. 2
+    VwVfG). Der Ausgleichsanspruch ist ein reiner Geldanspruch und kein Bestandsschutz.'
   norms:
   - § 48 Abs. 3 VwVfG
   quellen:
@@ -84,16 +97,17 @@ cards:
 - slug: or-vwvfg-rw-jahresfrist-abs4
   type: norm
   front: Wann beginnt die Jahresfrist des § 48 Abs. 4 VwVfG und was regelt sie?
-  back: Die Jahresfrist des § 48 Abs. 4 VwVfG gilt für die Fälle des § 48 Abs. 2
-    S. 3 Nr. 2 und 3 VwVfG sowie für sonstige nachträglich bekannt gewordene rücknahmebegründende
-    Tatsachen - die Rücknahme ist dann nur innerhalb eines Jahres seit dem Zeitpunkt
-    zulässig, in dem die Behörde von den Tatsachen Kenntnis erlangt hat, die die
-    Rücknahme des rechtswidrigen Verwaltungsakts rechtfertigen. Für den Fall des
-    § 48 Abs. 2 S. 3 Nr. 1 VwVfG (arglistige Täuschung, Drohung oder Bestechung)
-    gilt die Jahresfrist dagegen gerade NICHT (§ 48 Abs. 4 S. 2 VwVfG) - die Rücknahme
-    ist dort zeitlich unbefristet möglich. Maßgeblich ist im Übrigen die vollständige
-    Kenntnis der für die Rücknahmeentscheidung erheblichen Tatsachen durch den zuständigen
-    Amtsträger, nicht bloße Zweifel oder ein bloß geäußerter Verdacht.
+  back: 'Die Jahresfrist des § 48 Abs. 4 S. 1 VwVfG gilt für jede Rücknahme eines
+    rechtswidrigen Verwaltungsakts: Erlangt die Behörde Kenntnis von Tatsachen, die
+    die Rücknahme rechtfertigen, ist die Rücknahme nur innerhalb eines Jahres seit
+    diesem Zeitpunkt zulässig. Ausgenommen ist nach § 48 Abs. 4 S. 2 VwVfG nur der
+    Fall des § 48 Abs. 2 S. 3 Nr. 1 VwVfG (arglistige Täuschung, Drohung oder Bestechung)
+    - dort ist die Rücknahme zeitlich unbefristet möglich. Regel ist also die Jahresfrist,
+    Ausnahme ihr Fehlen bei Nr. 1. Maßgeblich ist die vollständige Kenntnis der für
+    die Rücknahmeentscheidung erheblichen Tatsachen durch den zuständigen Amtsträger
+    (Entscheidungsreife), nicht bloße Zweifel oder ein bloß geäußerter Verdacht; die
+    Frist beginnt erst, wenn die Behörde die Rechtswidrigkeit erkannt hat und alle
+    für die Ermessensentscheidung erheblichen Tatsachen kennt.'
   norms:
   - § 48 Abs. 4 VwVfG
   - § 48 Abs. 2 S. 3 VwVfG
@@ -104,18 +118,22 @@ cards:
   type: definition
   front: Wie unterscheidet § 49 VwVfG den Widerruf belastender von begünstigenden
     Verwaltungsakten?
-  back: Ein rechtmäßiger, nicht begünstigender Verwaltungsakt kann nach § 49 Abs.
+  back: 'Ein rechtmäßiger, nicht begünstigender Verwaltungsakt kann nach § 49 Abs.
     1 VwVfG auch nachträglich ganz oder teilweise widerrufen werden, außer ein Verwaltungsakt
     gleichen Inhalts müsste erneut erlassen werden oder ein Widerruf ist aus anderen
     Gründen unzulässig - die Behörde hat hierbei freies Ermessen. Ein rechtmäßiger
     begünstigender Verwaltungsakt darf dagegen nach § 49 Abs. 2 S. 1 VwVfG nur widerrufen
-    werden, wenn einer der dort abschließend genannten Gründe vorliegt, etwa ein
-    Widerrufsvorbehalt, die Nichterfüllung einer Auflage oder eine nachträgliche
-    Änderung der Sach- oder Rechtslage, die das öffentliche Interesse gefährden
-    würde.
+    werden, wenn einer der dort abschließend genannten Gründe vorliegt: Widerrufsvorbehalt
+    oder gesetzliche Zulassung (Nr. 1), Nichterfüllung einer Auflage (Nr. 2), nachträglich
+    eingetretene Tatsachen (Nr. 3), Änderung der Rechtslage (Nr. 4) oder Verhütung
+    bzw. Beseitigung schwerer Nachteile für das Gemeinwohl (Nr. 5). Für Geld- oder
+    Sachleistungen zu einem bestimmten Zweck sieht § 49 Abs. 3 VwVfG zusätzlich den
+    Widerruf bei zweckwidriger Verwendung oder Nichterfüllung einer Auflage vor, auch
+    mit Wirkung für die Vergangenheit.'
   norms:
   - § 49 Abs. 1 VwVfG
   - § 49 Abs. 2 S. 1 VwVfG
+  - § 49 Abs. 3 VwVfG
   quellen:
   - VwVfG, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -123,34 +141,40 @@ cards:
 - slug: or-vwvfg-rw-entschaedigung-49-abs6
   type: norm
   front: Wann entsteht ein Entschädigungsanspruch nach § 49 Abs. 6 VwVfG?
-  back: Widerruft die Behörde einen rechtmäßigen begünstigenden Verwaltungsakt
-    aus einem der Gründe des § 49 Abs. 2 S. 1 Nr. 3, 4, 5 VwVfG - also wegen nachträglicher
-    Änderung der Rechtslage, neuer Tatsachen oder zur Abwendung schwerer Nachteile
-    für das Gemeinwohl -, hat sie dem Betroffenen auf Antrag den Vermögensnachteil
-    auszugleichen, den er dadurch erleidet, dass er auf den Bestand des Verwaltungsakts
-    vertraut hat, soweit sein Vertrauen schutzwürdig ist. Beim Widerruf wegen eines
-    Widerrufsvorbehalts (Nr. 1) oder wegen Nichterfüllung einer Auflage (Nr. 2) besteht
-    dagegen KEIN Anspruch aus Abs. 6, weil der Begünstigte dort entweder von vornherein
-    mit dem Widerruf rechnen musste oder den Grund selbst zu vertreten hat. Der Anspruch
-    ist der Höhe nach auf das Erfüllungsinteresse begrenzt.
+  back: 'Widerruft die Behörde einen rechtmäßigen begünstigenden Verwaltungsakt aus
+    einem der Gründe des § 49 Abs. 2 S. 1 Nr. 3, 4 oder 5 VwVfG - also wegen nachträglich
+    eingetretener Tatsachen (Nr. 3), einer Änderung der Rechtslage (Nr. 4) oder zur
+    Verhütung schwerer Nachteile für das Gemeinwohl (Nr. 5) -, hat sie dem Betroffenen
+    auf Antrag den Vermögensnachteil auszugleichen, den er dadurch erleidet, dass
+    er auf den Bestand des Verwaltungsakts vertraut hat, soweit sein Vertrauen unter
+    Abwägung mit dem öffentlichen Interesse schutzwürdig ist (§ 49 Abs. 6 S. 1 VwVfG).
+    Beim Widerruf wegen eines Widerrufsvorbehalts (Nr. 1) oder wegen Nichterfüllung
+    einer Auflage (Nr. 2) besteht dagegen KEIN Anspruch aus Abs. 6, weil der Begünstigte
+    dort mit dem Widerruf rechnen musste oder den Grund selbst zu vertreten hat; ebenso
+    wenig beim Widerruf zweckwidrig verwendeter Leistungen nach § 49 Abs. 3 VwVfG.
+    Ersetzt wird der Vertrauensschaden, nicht das Erfüllungsinteresse: Der Anspruch
+    ist nach § 49 Abs. 6 S. 2 i. V. m. § 48 Abs. 3 S. 3 VwVfG auf den Betrag des Interesses
+    am Bestand des Verwaltungsakts begrenzt. Für Streitigkeiten über die Entschädigung
+    ist der ordentliche Rechtsweg eröffnet (§ 49 Abs. 6 S. 3 VwVfG).'
   norms:
   - § 49 Abs. 6 VwVfG
   - § 49 Abs. 2 S. 1 Nr. 3, 4, 5 VwVfG
+  - § 49 Abs. 3 VwVfG
   quellen:
   - VwVfG, amtliche Fassung
   stand: 2026-09
 - slug: or-vwvfg-rw-ermessen-rechtsfolge
   type: schema_step
-  front: Welche Prüfungsstelle betrifft das Ermessen bei §§ 48, 49 VwVfG und was
-    folgt daraus?
+  front: Welche Prüfungsstelle betrifft das Ermessen bei §§ 48, 49 VwVfG und was folgt
+    daraus?
   back: Sowohl § 48 als auch § 49 VwVfG formulieren die Rechtsfolge als 'kann' - die
-    Rücknahme bzw. der Widerruf stehen damit im Ermessen der Behörde, das nach §
-    40 VwVfG entsprechend dem Zweck der Ermächtigung und unter Einhaltung der gesetzlichen
-    Grenzen auszuüben ist. In der Klausur ist die Ermessensausübung als eigener
-    Prüfungspunkt NACH der Feststellung, dass die tatbestandlichen Voraussetzungen
-    (Rechtswidrigkeit/Rechtmäßigkeit, kein Fristablauf, kein Vertrauensschutzausschluss)
-    vorliegen, zu prüfen - häufig ist das Ermessen bei eindeutigem Überwiegen des
-    öffentlichen Interesses (z. B. Verstoß gegen zwingendes Recht) auf Null reduziert.
+    Rücknahme bzw. der Widerruf stehen damit im Ermessen der Behörde, das nach § 40
+    VwVfG entsprechend dem Zweck der Ermächtigung und unter Einhaltung der gesetzlichen
+    Grenzen auszuüben ist. In der Klausur ist die Ermessensausübung als eigener Prüfungspunkt
+    NACH der Feststellung, dass die tatbestandlichen Voraussetzungen (Rechtswidrigkeit/Rechtmäßigkeit,
+    kein Fristablauf, kein Vertrauensschutzausschluss) vorliegen, zu prüfen - häufig
+    ist das Ermessen bei eindeutigem Überwiegen des öffentlichen Interesses (z. B.
+    Verstoß gegen zwingendes Recht) auf Null reduziert.
   norms:
   - § 48 VwVfG
   - § 49 VwVfG
@@ -170,27 +194,41 @@ schemata:
   steps:
   - label: I. Anwendbarkeit des § 48 VwVfG
     children:
-    - label: 1. Verwaltungsakt i.S.d. § 35 VwVfG
-    - label: 2. Rechtswidrigkeit des Verwaltungsakts
-  - label: II. Rücknahmesperre bei begünstigenden Verwaltungsakten
+    - label: 1. Wirksamer Verwaltungsakt i.S.d. § 35 VwVfG (nicht nichtig, § 43 Abs.
+        3 VwVfG)
+    - label: 2. Anfängliche Rechtswidrigkeit des Verwaltungsakts
+  - label: II. Formelle Rechtmäßigkeit der Rücknahme
+    children:
+    - label: 1. Zuständigkeit, § 3 VwVfG
+    - label: 2. Anhörung des Betroffenen, § 28 Abs. 1 VwVfG
+      hinweis: Die Rücknahme greift in die Rechtsposition des Begünstigten ein; sie
+        ist ein belastender Verwaltungsakt.
+    - label: 3. Form und Begründung, §§ 37, 39 VwVfG
+  - label: 'III. Materielle Rechtmäßigkeit: belastender oder begünstigender Verwaltungsakt?'
+    hinweis: 'Belastender (rechtswidriger) Verwaltungsakt: Rücknahme jederzeit nach
+      § 48 Abs. 1 S. 1 VwVfG. Begünstigender Verwaltungsakt, § 48 Abs. 1 S. 2 VwVfG:
+      nur nach Maßgabe der Absätze 2 bis 4.'
     children:
     - label: '1. Geld- oder teilbare Sachleistung: Vertrauensschutz nach § 48 Abs.
         2 VwVfG'
       children:
       - label: a) Vertrauen auf den Bestand betätigt (Verbrauch, Disposition)
-      - label: b) Schutzwürdigkeit des Vertrauens
-      - label: c) Kein Ausschlussgrund nach § 48 Abs. 2 S. 3 VwVfG
-    - label: '2. Sonstige begünstigende VA: nur Ausgleichsanspruch nach § 48 Abs.
-        3 VwVfG'
-  - label: III. Jahresfrist, § 48 Abs. 4 VwVfG
-    hinweis: Gilt bei nachträglich bekannt gewordenen Tatsachen und in den Fällen
-      des § 48 Abs. 2 S. 3 Nr. 2, 3 VwVfG. Im Fall der Nr. 1 (arglistige Täuschung,
-      Drohung, Bestechung) gilt die Jahresfrist nach § 48 Abs. 4 S. 2 VwVfG gerade
-      nicht - Rücknahme dort zeitlich unbefristet möglich.
-  - label: IV. Ermessen, § 40 VwVfG
+      - label: b) Schutzwürdigkeit des Vertrauens in der Abwägung mit dem öffentlichen
+          Interesse
+      - label: c) Kein Ausschlussgrund nach § 48 Abs. 2 S. 3 Nr. 1 bis 3 VwVfG
+    - label: '2. Sonstige begünstigende Verwaltungsakte: Rücknahme möglich, aber Ausgleichsanspruch
+        nach § 48 Abs. 3 VwVfG'
+  - label: IV. Jahresfrist, § 48 Abs. 4 VwVfG
+    hinweis: 'Gilt für jede Rücknahme eines rechtswidrigen Verwaltungsakts ab Kenntnis
+      der rücknahmebegründenden Tatsachen. Ausnahme: § 48 Abs. 2 S. 3 Nr. 1 VwVfG
+      (arglistige Täuschung, Drohung, Bestechung) - dort keine Frist, § 48 Abs. 4
+      S. 2 VwVfG.'
+  - label: V. Ermessen, § 40 VwVfG
     hinweis: '''Kann''-Vorschrift; Ermessensreduzierung auf Null bei überwiegendem
       öffentlichen Interesse prüfen.'
-  - label: 'V. Ergebnis: Rechtsfolge (ex tunc oder ex nunc)'
+  - label: VI. Ergebnis und Rechtsfolge
+    hinweis: Wirkung für die Zukunft oder die Vergangenheit; Erstattung bereits erbrachter
+      Leistungen erst nach wirksamer Aufhebung nach § 49a VwVfG.
 - slug: or-schema-vwvfg-widerruf-49
   title: Widerruf eines rechtmäßigen Verwaltungsakts, § 49 VwVfG
   norms:
@@ -202,16 +240,24 @@ schemata:
   - label: I. Anwendbarkeit des § 49 VwVfG
     children:
     - label: 1. Verwaltungsakt i.S.d. § 35 VwVfG
-    - label: 2. Rechtmäßigkeit im Erlasszeitpunkt und fortbestehend
-  - label: II. Widerrufsgrund
+    - label: 2. Rechtmäßigkeit im Erlasszeitpunkt (anfänglich rechtmäßig)
+  - label: II. Formelle Rechtmäßigkeit des Widerrufs
+    children:
+    - label: 1. Zuständigkeit, § 3 VwVfG
+    - label: 2. Anhörung bei Eingriff in die Rechtsposition des Begünstigten, § 28
+        Abs. 1 VwVfG
+  - label: III. Widerrufsgrund
     children:
     - label: '1. Belastender VA: freies Widerrufsrecht, § 49 Abs. 1 VwVfG'
-    - label: '2. Begünstigender VA: abschließender Katalog, § 49 Abs. 2 S. 1 VwVfG'
-  - label: III. Ermessen, § 40 VwVfG
-  - label: IV. Entschädigung, § 49 Abs. 6 VwVfG
+    - label: '2. Begünstigender VA: abschließender Katalog, § 49 Abs. 2 S. 1 Nr. 1
+        bis 5 VwVfG; bei zweckgebundenen Leistungen zusätzlich § 49 Abs. 3 VwVfG'
+  - label: IV. Ermessen, § 40 VwVfG; Jahresfrist bei § 49 Abs. 2 S. 1 Nr. 3 bis 5
+      VwVfG nach § 49 Abs. 2 S. 2 i. V. m. § 48 Abs. 4 VwVfG
+  - label: V. Entschädigung, § 49 Abs. 6 VwVfG
     hinweis: Nur bei Widerruf aus den Gründen des § 49 Abs. 2 S. 1 Nr. 3, 4, 5 VwVfG
       - nicht bei Widerrufsvorbehalt (Nr. 1) oder Auflagenverstoß (Nr. 2).
-  - label: V. Ergebnis
+  - label: VI. Ergebnis und Rechtsfolge (Wirkung ex nunc, Ausnahme § 49 Abs. 3 VwVfG;
+      Erstattung nach § 49a VwVfG)
 faelle:
 - slug: or-fall-foerderbescheid-ruecknahme
   title: Der zu spät entdeckte Fehler im Förderbescheid
@@ -224,13 +270,12 @@ faelle:
     Bescheid vom 10.01.2025 eine einmalige Existenzgründungsförderung in Höhe von
     20.000 Euro, die U im Februar 2025 vollständig für die Anschaffung von Betriebsausstattung
     verwendet. Tatsächlich hätte U die Förderung wegen Überschreitens der maßgeblichen
-    Umsatzgrenze nicht erhalten dürfen; der zuständige Sachbearbeiter hatte bei
-    der Bewilligung einen Rechenfehler in den eingereichten Unterlagen übersehen,
-    obwohl U alle Angaben wahrheitsgemäß und vollständig gemacht hatte. Im Dezember
-    2025 fällt der Fehler einem anderen Sachbearbeiter bei einer Stichprobenprüfung
-    auf; die Behörde stellt daraufhin im Januar 2026 fest, dass der Bescheid von
-    Anfang an rechtswidrig war, und möchte ihn nun zurüknehmen und die Fördersumme
-    zurückfordern.
+    Umsatzgrenze nicht erhalten dürfen; der zuständige Sachbearbeiter hatte bei der
+    Bewilligung einen Rechenfehler in den eingereichten Unterlagen übersehen, obwohl
+    U alle Angaben wahrheitsgemäß und vollständig gemacht hatte. Im Dezember 2025
+    fällt der Fehler einem anderen Sachbearbeiter bei einer Stichprobenprüfung auf;
+    die Behörde stellt daraufhin im Januar 2026 fest, dass der Bescheid von Anfang
+    an rechtswidrig war, und möchte ihn nun zurücknehmen und die Fördersumme zurückfordern.
   question: Kann die Behörde den Förderbescheid im Januar 2026 gegenüber U wirksam
     zurücknehmen?
   steps:
@@ -244,18 +289,24 @@ faelle:
       getroffen.
   - prompt: Ist das Vertrauen der U schutzwürdig, oder greift ein Ausschlussgrund
       nach § 48 Abs. 2 S. 3 VwVfG?
-    erwartung: 'Kein Ausschlussgrund einschlägig: U hat wahrheitsgemäße und vollständige
-      Angaben gemacht und weder vorsätzlich noch grob fahrlässig gehandelt; der
-      Fehler lag allein bei der Behörde. Das Vertrauen ist grundsätzlich schutzwürdig.'
+    erwartung: 'Kein Ausschlussgrund einschlägig: Nr. 1 scheidet aus (keine Täuschung,
+      Drohung oder Bestechung); Nr. 2 scheidet aus, weil U wahrheitsgemäße und vollständige
+      Angaben gemacht hat; Nr. 3 scheidet aus, weil U die Rechtswidrigkeit weder kannte
+      noch infolge grober Fahrlässigkeit nicht kannte - der Fehler lag allein bei
+      der Behörde. Das Vertrauen ist daher in der Abwägung mit dem öffentlichen Interesse
+      grundsätzlich schutzwürdig.'
   - prompt: Ist die Rücknahme innerhalb der Jahresfrist des § 48 Abs. 4 VwVfG erfolgt?
     erwartung: Ja - die Behörde hat erst im Dezember 2025 durch die Stichprobenprüfung
       vollständige Kenntnis der rücknahmebegründenden Tatsachen erlangt; die Rücknahme
       im Januar 2026 liegt innerhalb eines Jahres danach.
   - prompt: Wie wirkt sich das schutzwürdige Vertrauen der U im Ergebnis aus?
     erwartung: Die Rücknahme ist wegen des schutzwürdigen, nicht ausgeschlossenen
-      Vertrauens der U nach § 48 Abs. 2 S. 1 VwVfG unzulässig; die Behörde kann
-      den Bescheid nicht wirksam zurücknehmen, sondern müsste allenfalls für die
-      Zukunft widerrufen, wenn ein Widerrufsgrund vorliegt.
+      Vertrauens der U nach § 48 Abs. 2 S. 1 VwVfG unzulässig; bloße Haushaltsinteressen
+      der Behörde (Rückgewinnung der Mittel) überwiegen in der Abwägung nicht. Ein
+      Widerruf nach § 49 VwVfG scheidet aus, da er einen rechtmäßigen Verwaltungsakt
+      voraussetzt - der Bescheid war von Anfang an rechtswidrig. Der Förderbescheid
+      bleibt bestehen, eine Rückforderung nach § 49a VwVfG scheidet mangels wirksamer
+      Aufhebung aus (§ 49a setzt eine Aufhebung des Verwaltungsakts voraus).
   expectation:
     pruefpunkte:
     - id: p1
@@ -265,8 +316,10 @@ faelle:
       norms:
       - § 48 Abs. 1 VwVfG
       keywords:
-      - '48'
-      - rechtswidrig
+      - § 48 Abs. 1 VwVfG
+      - § 48 Abs. 1 S. 1 VwVfG
+      - anfänglich rechtswidrig
+      - von Anfang an rechtswidrig
       card_slugs:
       - or-vwvfg-rw-ruecknahme-voraussetzungen
     - id: p2
@@ -276,19 +329,22 @@ faelle:
       norms:
       - § 48 Abs. 2 VwVfG
       keywords:
+      - § 48 Abs. 2 VwVfG
       - Geldleistung
-      - Abs. 2
+      - einmalige Geldleistung
+      - Vertrauensschutz
       card_slugs:
       - or-vwvfg-rw-vertrauensschutz-abs2
     - id: p3
-      label: Vertrauensbetätigung durch Verbrauch der Fördersumme (Disposition)
-        benannt
+      label: Vertrauensbetätigung durch Verbrauch der Fördersumme (Disposition) benannt
       weight: 2.0
       required: true
       keywords:
       - Vertrauensbetätigung
-      - Disposition
-      - verbraucht
+      - Vermögensdisposition
+      - Fördersumme verbraucht
+      - Leistung verbraucht
+      - nicht mehr rückgängig
       card_slugs:
       - or-vwvfg-rw-vertrauensschutz-abs2
     - id: p4
@@ -297,9 +353,12 @@ faelle:
       weight: 3.0
       required: true
       keywords:
+      - § 48 Abs. 2 S. 3 VwVfG
       - kein Ausschlussgrund
-      - grob fahrlässig
+      - § 48 Abs. 2 S. 3 Nr. 2 VwVfG
+      - § 48 Abs. 2 S. 3 Nr. 3 VwVfG
       - Fehler der Behörde
+      - wahrheitsgemäße Angaben
       card_slugs:
       - or-vwvfg-rw-vertrauensschutz-abs2
     - id: p5
@@ -307,8 +366,11 @@ faelle:
       weight: 2.0
       required: true
       keywords:
+      - § 48 Abs. 4 VwVfG
       - Jahresfrist
-      - Kenntnis
+      - Kenntnis der Behörde
+      - Dezember 2025
+      - innerhalb eines Jahres
       card_slugs:
       - or-vwvfg-rw-jahresfrist-abs4
     - id: p6
@@ -316,5 +378,9 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - unzulässig
-      - Vertrauen schutzwürdig
+      - Rücknahme ist unzulässig
+      - schutzwürdiges Vertrauen
+      - Vertrauen überwiegt
+      - kein Widerruf nach § 49
+      - § 49a
+      - Rücknahme scheidet aus

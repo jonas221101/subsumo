@@ -9,19 +9,19 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-15'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: zr-at-auslegung-ziel-133-157
   type: definition
   front: 'Definiere: Ziel der Auslegung nach §§ 133, 157 BGB'
-  back: 'Die Auslegung von Willenserklärungen und Verträgen dient der Ermittlung
-    ihres rechtlich maßgeblichen Inhalts. Nach § 133 BGB ist der wirkliche Wille
-    zu erforschen, ohne am buchstäblichen Sinn des Ausdrucks zu haften; nach § 157
-    BGB sind Verträge so auszulegen, wie Treu und Glauben mit Rücksicht auf die
-    Verkehrssitte es erfordern. Beide Vorschriften werden gemeinsam angewandt: § 133
-    BGB betont den Willen, § 157 BGB liefert den objektivierten Maßstab, wenn ein
-    übereinstimmender Wille nicht feststellbar ist.'
+  back: 'Die Auslegung von Willenserklärungen und Verträgen dient der Ermittlung ihres
+    rechtlich maßgeblichen Inhalts. Nach § 133 BGB ist der wirkliche Wille zu erforschen,
+    ohne am buchstäblichen Sinn des Ausdrucks zu haften; nach § 157 BGB sind Verträge
+    so auszulegen, wie Treu und Glauben mit Rücksicht auf die Verkehrssitte es erfordern.
+    Beide Vorschriften werden gemeinsam angewandt: § 133 BGB betont den Willen, §
+    157 BGB liefert den objektivierten Maßstab, wenn ein übereinstimmender Wille nicht
+    feststellbar ist.'
   norms:
   - § 133 BGB
   - § 157 BGB
@@ -32,10 +32,10 @@ cards:
 - slug: zr-at-auslegung-empfangsbeduerftig
   type: definition
   front: 'Definiere: empfangsbedürftige Willenserklärung'
-  back: Eine empfangsbedürftige Willenserklärung wird erst wirksam, wenn sie dem
-    Erklärungsempfänger zugegangen ist, § 130 Abs. 1 BGB. Bis zum Zugang kann sie
-    widerrufen werden, wenn der Widerruf vorher oder gleichzeitig zugeht. Beispiele
-    sind Angebot, Annahme, Kündigung, Anfechtungserklärung und Mahnung.
+  back: Eine empfangsbedürftige Willenserklärung wird erst wirksam, wenn sie dem Erklärungsempfänger
+    zugegangen ist, § 130 Abs. 1 BGB. Bis zum Zugang kann sie widerrufen werden, wenn
+    der Widerruf vorher oder gleichzeitig zugeht. Beispiele sind Angebot, Annahme,
+    Kündigung, Anfechtungserklärung und Mahnung.
   norms:
   - § 130 Abs. 1 BGB
   quellen:
@@ -61,10 +61,10 @@ cards:
   type: definition
   front: 'Definiere: natürliche (subjektive) Auslegung'
   back: Steht fest, dass Erklärender und Erklärungsempfänger eine Erklärung übereinstimmend
-    im selben Sinn verstanden haben, gilt dieser übereinstimmend gewollte Sinn -
-    unabhängig davon, ob er vom objektiven (äußeren) Erklärungswert abweicht.
-    Der Empfängerschutz, der die normative Auslegung rechtfertigt, ist hier entbehrlich,
-    weil kein Missverständnis vorliegt.
+    im selben Sinn verstanden haben, gilt dieser übereinstimmend gewollte Sinn - unabhängig
+    davon, ob er vom objektiven (äußeren) Erklärungswert abweicht. Der Empfängerschutz,
+    der die normative Auslegung rechtfertigt, ist hier entbehrlich, weil kein Missverständnis
+    vorliegt.
   norms:
   - § 133 BGB
   quellen:
@@ -89,10 +89,10 @@ cards:
   type: definition
   front: 'Definiere: objektiver Empfängerhorizont'
   back: 'Der objektive Empfängerhorizont ist der Maßstab der normativen Auslegung:
-    Maßgeblich ist, wie ein verständiger Erklärungsempfänger die Erklärung nach
-    Treu und Glauben unter Berücksichtigung aller ihm erkennbaren Umstände und der
-    Verkehrssitte verstehen durfte - nicht, wie der Erklärende sie tatsächlich gemeint
-    hat oder wie der Empfänger sie subjektiv verstanden hat.'
+    Maßgeblich ist, wie ein verständiger Erklärungsempfänger die Erklärung nach Treu
+    und Glauben unter Berücksichtigung aller ihm erkennbaren Umstände und der Verkehrssitte
+    verstehen durfte - nicht, wie der Erklärende sie tatsächlich gemeint hat oder
+    wie der Empfänger sie subjektiv verstanden hat.'
   norms:
   - § 133 BGB
   - § 157 BGB
@@ -104,10 +104,10 @@ cards:
   type: definition
   front: 'Definiere: normative (objektivierte) Auslegung'
   back: 'Kann ein übereinstimmender wirklicher Wille beider Seiten nicht festgestellt
-    werden, ist die Erklärung nach dem objektiven Empfängerhorizont auszulegen:
-    Maßgeblich ist, wie ein verständiger Empfänger sie nach Treu und Glauben und
-    der Verkehrssitte verstehen durfte, §§ 133, 157 BGB. Diese Auslegung dient dem
-    Vertrauensschutz des Erklärungsempfängers.'
+    werden, ist die Erklärung nach dem objektiven Empfängerhorizont auszulegen: Maßgeblich
+    ist, wie ein verständiger Empfänger sie nach Treu und Glauben und der Verkehrssitte
+    verstehen durfte, §§ 133, 157 BGB. Diese Auslegung dient dem Vertrauensschutz
+    des Erklärungsempfängers.'
   norms:
   - § 133 BGB
   - § 157 BGB
@@ -124,8 +124,8 @@ cards:
     Auslegung), bleibt für eine Anfechtung wegen Irrtums kein Raum, weil gar kein
     Auseinanderfallen von Wille und Erklärung vorliegt. Erst wenn die Auslegung -
     ggf. normativ nach dem Empfängerhorizont - einen Erklärungsinhalt ergibt, der
-    vom wirklichen Willen des Erklärenden abweicht, kommt eine Anfechtung nach §
-    119 Abs. 1 BGB in Betracht. Ein häufiger Klausurfehler ist es, direkt anzufechten,
+    vom wirklichen Willen des Erklärenden abweicht, kommt eine Anfechtung nach § 119
+    Abs. 1 BGB in Betracht. Ein häufiger Klausurfehler ist es, direkt anzufechten,
     ohne zuvor auszulegen.'
   norms:
   - § 133 BGB
@@ -159,9 +159,9 @@ schemata:
     - label: 3. Berücksichtigung von Treu und Glauben und Verkehrssitte, § 157 BGB
   - label: 'IV. Ergebnis: maßgeblicher Erklärungsinhalt'
   - label: V. Abgrenzung zur Anfechtung
-    hinweis: Erst nach Feststellung des Erklärungsinhalts durch Auslegung ist zu
-      prüfen, ob dieser vom wirklichen Willen abweicht und eine Anfechtung nach §
-      119 BGB in Betracht kommt.
+    hinweis: Erst nach Feststellung des Erklärungsinhalts durch Auslegung ist zu prüfen,
+      ob dieser vom wirklichen Willen abweicht und eine Anfechtung nach § 119 BGB
+      in Betracht kommt.
 faelle:
 - slug: zr-fall-verwechseltes-fahrradmodell
   title: Das verwechselte Fahrradmodell
@@ -170,8 +170,8 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - BGB, amtliche Fassung
-  facts: 'Verkäufer V bietet Käuferin K in einer E-Mail sein gebrauchtes Rennrad
-    des Herstellers "Radex" zum Preis von 450 Euro an. V besitzt zwei Rennräder dieses
+  facts: 'Verkäufer V bietet Käuferin K in einer E-Mail sein gebrauchtes Rennrad des
+    Herstellers "Radex" zum Preis von 450 Euro an. V besitzt zwei Rennräder dieses
     Herstellers - ein Modell "Sprint 200" und ein baugleich aussehendes, aber höherwertiges
     Modell "Sprint 300". Beim Verfassen der E-Mail verschreibt sich V und schreibt
     versehentlich "Sprint 300", meint aber weiterhin das "Sprint 200"-Modell anzubieten.
@@ -215,7 +215,8 @@ faelle:
       norms:
       - § 433 Abs. 1 S. 1 BGB
       keywords:
-      - '433'
+      - § 433 Abs. 1 S. 1
+      - Primärleistungsanspruch
     - id: p2
       label: Erkennt, dass der objektive Wortlaut ('Sprint 300') nicht automatisch
         maßgeblich ist
@@ -224,8 +225,10 @@ faelle:
       norms:
       - § 133 BGB
       keywords:
-      - Wortlaut
       - wirklicher Wille
+      - objektiver Wortlaut
+      - Empfängerhorizont
+      - Wortlaut nicht maßgeblich
       card_slugs:
       - zr-at-auslegung-ziel-133-157
     - id: p3
@@ -236,8 +239,12 @@ faelle:
       norms:
       - § 133 BGB
       keywords:
+      - falsa demonstratio non nocet
       - falsa demonstratio
-      - übereinstimmend
+      - übereinstimmender Wille
+      - übereinstimmend Gemeintes
+      - natürliche Auslegung
+      - Falschbezeichnung schadet nicht
       card_slugs:
       - zr-at-auslegung-falsa-demonstratio
       - zr-at-auslegung-natuerliche-auslegung
@@ -248,8 +255,12 @@ faelle:
       norms:
       - § 119 Abs. 1 BGB
       keywords:
-      - Anfechtung
+      - Vorrang der Auslegung
+      - kein Anfechtungsgrund
+      - Anfechtungsgrund fehlt
+      - Auseinanderfallen von Wille und Erklärung
       - kein Irrtum
+      - Anfechtung nicht erforderlich
       card_slugs:
       - zr-at-auslegung-vorrang-vor-anfechtung
     - id: p5
@@ -259,7 +270,8 @@ faelle:
       norms:
       - § 433 Abs. 1 S. 1 BGB
       keywords:
-      - Sprint 200
-      - Anspruch besteht
+      - Modell Sprint 200
+      - Kaufvertrag über Sprint 200
+      - Übergabe und Übereignung verlangen
       card_slugs:
       - zr-at-auslegung-falsa-demonstratio

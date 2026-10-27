@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
 import '../design/design.dart';
+import '../api.dart' show kBetaMode;
 import '../state.dart';
 import '../theme.dart';
 import 'checkout_page.dart';
+import 'examen_page.dart' show openDeckReview;
+import 'fit_title.dart';
 import 'screen_status.dart';
 
 /// Startseite "Heute": was jetzt ansteht (faellige Karten mit Direkteinstieg)
@@ -37,7 +40,11 @@ class _DashboardPageState extends State<DashboardPage> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      AppScope.of(context).loadDashboard();
+      final app = AppScope.of(context);
+      app.loadDashboard();
+      // Lernprofil und Kurs-Decks sortieren die Themenliste; fehlt das Cockpit
+      // noch, still nachladen (Fehler ist hier unkritisch).
+      if (app.examenCockpit == null) app.loadExamen();
     });
   }
 
@@ -64,7 +71,9 @@ class _DashboardPageState extends State<DashboardPage> {
 
     final dueTile = _DueTile(
       count: app.dueCards.length,
+      newCount: app.dueCards.where((c) => c['state'] == 'new').length,
       fromCache: app.dueCardsFromCache,
+      done: app.sessionDone,
       onStart: widget.onStartReview,
     );
     final coverageTile = _CoverageTile(value: gesamt);
@@ -85,7 +94,7 @@ class _DashboardPageState extends State<DashboardPage> {
                   subtitle: 'Was jetzt ansteht und was schon sitzt.',
                 ),
                 const SizedBox(height: Spacing.xl),
-                if (app.cancelAtPeriodEnd || !app.proActive) ...[
+                if (!kBetaMode && (app.cancelAtPeriodEnd || !app.proActive)) ...[
                   _ProStatusBanner(app: app),
                   const SizedBox(height: Spacing.lg),
                 ],
@@ -114,17 +123,32 @@ class _DashboardPageState extends State<DashboardPage> {
                 const SizedBox(height: Spacing.xxl),
                 _SectionTitle('Themen', detail: '${topics.length} im Register'),
                 const SizedBox(height: Spacing.md),
-                SubsumoPanel(
-                  padding: EdgeInsets.zero,
-                  child: Column(
-                    children: [
-                      for (var i = 0; i < topics.length; i++) ...[
-                        if (i > 0) const Divider(),
-                        _TopicRow(topic: topics[i]),
-                      ],
-                    ],
+                for (final gruppe in groupTopics(
+                  topics,
+                  schwerpunkte: _stringList(
+                      (app.examenCockpit?['lernprofil'] as Map?)?['schwerpunkte']),
+                  kursDecks: app.examenCockpit?['kurs_decks'],
+                )) ...[
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: Spacing.sm, top: Spacing.sm),
+                    child: Text(
+                      '${_areaLabels[gruppe.$1] ?? gruppe.$1} · ${gruppe.$2.length}',
+                      style: Theme.of(context).textTheme.titleSmall,
+                    ),
                   ),
-                ),
+                  SubsumoPanel(
+                    padding: EdgeInsets.zero,
+                    child: Column(
+                      children: [
+                        for (var i = 0; i < gruppe.$2.length; i++) ...[
+                          if (i > 0) const Divider(),
+                          _TopicRow(topic: gruppe.$2[i]),
+                        ],
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: Spacing.md),
+                ],
               ],
             ),
           ),
@@ -138,9 +162,21 @@ class _DashboardPageState extends State<DashboardPage> {
 /// warten"), kein Ziel und kein Rueckstand - deshalb ohne Vergleich zu
 /// gestern und ohne Farbwechsel.
 class _DueTile extends StatelessWidget {
-  const _DueTile({required this.count, required this.fromCache, required this.onStart});
+  const _DueTile({
+    required this.count,
+    this.newCount = 0,
+    required this.fromCache,
+    required this.onStart,
+    this.done = false,
+  });
 
   final int count;
+
+  /// Davon neue Karten (noch nie gelernt); der Rest sind Wiederholungen.
+  final int newCount;
+
+  /// Stapel abgearbeitet ("Fertig für heute").
+  final bool done;
   final bool fromCache;
   final VoidCallback? onStart;
 
@@ -155,7 +191,7 @@ class _DueTile extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          SubsumoEyebrow('Fällig', color: theme.colorScheme.onPrimaryContainer),
+          SubsumoEyebrow('Heute dran', color: theme.colorScheme.onPrimaryContainer),
           const SizedBox(height: Spacing.md),
           Text(
             '$count',
@@ -164,9 +200,9 @@ class _DueTile extends StatelessWidget {
           const SizedBox(height: Spacing.xs),
           Text(
             switch (count) {
+              0 when done => 'Fertig für heute. Gut gemacht.',
               0 => 'Keine Karte wartet. Du bist auf Stand.',
-              1 => 'Eine Karte wartet auf dich.',
-              _ => 'Karten warten auf dich.',
+              _ => '$newCount neu, ${count - newCount} Wiederholungen',
             },
             style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onPrimaryContainer),
           ),
@@ -324,7 +360,14 @@ class _TopicRow extends StatelessWidget {
     // genauso "neutral" aus wie eines mit 80 % - siehe docs/11-designsystem.md.
     // Die Relevanz-Punkte sind eine feste Eigenschaft des Themas, kein
     // Lernstand.
-    return Padding(
+    final slug = topic['slug'] as String?;
+    final title = topic['title'] as String;
+    return InkWell(
+      // Tap: Karten genau dieses Themas lernen (`/v1/cards/due?topic=<slug>`).
+      onTap: slug == null
+          ? null
+          : () => openDeckReview(context, DeckFilter(title: title, topic: slug)),
+      child: Padding(
       padding: const EdgeInsets.symmetric(horizontal: Spacing.lg, vertical: Spacing.md),
       child: Row(
         children: [
@@ -334,7 +377,7 @@ class _TopicRow extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(topic['title'] as String, style: typography.headingSmall),
+                FitTitle(title, style: typography.headingSmall),
                 const SizedBox(height: Spacing.xs),
                 Row(
                   children: [
@@ -351,7 +394,12 @@ class _TopicRow extends StatelessWidget {
           ),
           const SizedBox(width: Spacing.md),
           Text('${(mastery * 100).round()} %', style: theme.textTheme.titleMedium),
+          if (slug != null) ...[
+            const SizedBox(width: Spacing.xs),
+            Icon(Icons.chevron_right, color: theme.colorScheme.onSurfaceVariant),
+          ],
         ],
+      ),
       ),
     );
   }
@@ -423,3 +471,54 @@ const _months = [
 /// gebraucht wird und die App durchgehend deutschsprachig ist.
 String _formatToday(DateTime now) =>
     '${_weekdays[now.weekday - 1]}, ${now.day}. ${_months[now.month - 1]}';
+
+List<String> _stringList(Object? v) => v is List ? [for (final e in v) '$e'] : const [];
+
+/// Gruppiert Themen nach Rechtsgebiet: Schwerpunkte des Lernprofils zuerst,
+/// dann Zivilrecht, Strafrecht, Oeffentliches Recht. Innerhalb eines Gebiets
+/// nach Semesterlage (kleinstes `semester_default` der Kurs-Decks, die das
+/// Thema enthalten); Themen ohne Deck folgen in Register-Reihenfolge.
+List<(String, List<Map<String, dynamic>>)> groupTopics(
+  List<Map<String, dynamic>> topics, {
+  List<String> schwerpunkte = const [],
+  Object? kursDecks,
+}) {
+  final semester = <String, int>{};
+  if (kursDecks is List) {
+    for (final deck in kursDecks) {
+      if (deck is! Map) continue;
+      final sem = (deck['semester_default'] as num?)?.toInt();
+      final deckTopics = deck['topics'];
+      if (sem == null || deckTopics is! List) continue;
+      for (final t in deckTopics) {
+        final slug = t is Map ? t['slug'] as String? : (t is String ? t : null);
+        if (slug != null && (semester[slug] == null || sem < semester[slug]!)) semester[slug] = sem;
+      }
+    }
+  }
+  const standard = ['zivilrecht', 'strafrecht', 'oeffentliches-recht'];
+  final order = [
+    ...schwerpunkte.where(standard.contains),
+    ...standard.where((a) => !schwerpunkte.contains(a)),
+  ];
+  final areas = {for (final t in topics) t['area'] as String? ?? ''};
+  for (final a in areas) {
+    if (!order.contains(a)) order.add(a);
+  }
+  final result = <(String, List<Map<String, dynamic>>)>[];
+  for (final area in order) {
+    final inArea = [
+      for (final t in topics)
+        if ((t['area'] as String? ?? '') == area) t,
+    ];
+    if (inArea.isEmpty) continue;
+    final indexed = [for (var i = 0; i < inArea.length; i++) (i, inArea[i])];
+    indexed.sort((a, b) {
+      final sa = semester[a.$2['slug']] ?? 99;
+      final sb = semester[b.$2['slug']] ?? 99;
+      return sa != sb ? sa.compareTo(sb) : a.$1.compareTo(b.$1);
+    });
+    result.add((area, [for (final e in indexed) e.$2]));
+  }
+  return result;
+}

@@ -200,3 +200,23 @@ def test_report_ist_json_serialisierbar():
     import json
 
     json.dumps(analyze(SAUBER).to_dict())
+
+
+def test_datum_mit_monatsname_ist_kein_satzende():
+    from app.services.gutachten import split_sentences
+
+    text = "Die Lieferung sollte am 1. April 2026 erfolgen. Danach trat K zurück."
+    assert split_sentences(text) == [
+        "Die Lieferung sollte am 1. April 2026 erfolgen.",
+        "Danach trat K zurück.",
+    ]
+
+
+def test_abkuerzungen_mit_leerzeichen_trennen_keinen_satz():
+    from app.services.gutachten import split_sentences
+
+    text = (
+        "Nach h. M. ist z. B. ein Angriff i. S. d. § 32 StGB jede Bedrohung. "
+        "Das ist hier der Fall."
+    )
+    assert len(split_sentences(text)) == 2

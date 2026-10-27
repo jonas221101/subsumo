@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 import '../design/design.dart';
 import '../state.dart';
 import '../theme.dart';
+import 'bundesland_hint.dart';
+import 'fit_title.dart';
 import 'gutachten_page.dart';
+import 'landesbezug.dart';
 import 'screen_status.dart';
 
 /// Fallsammlung: filterbar nach Rechtsgebiet, durchsuchbar nach Titel.
@@ -21,10 +24,20 @@ class _CasesPageState extends State<CasesPage> {
   bool _loading = true;
   String? _area;
   String _query = '';
+  final _search = TextEditingController();
+
+  @override
+  void dispose() {
+    _search.dispose();
+    super.dispose();
+  }
 
   @override
   void initState() {
     super.initState();
+    _search.addListener(() {
+      if (_search.text != _query && mounted) setState(() => _query = _search.text);
+    });
     WidgetsBinding.instance.addPostFrameCallback((_) => _load());
   }
 
@@ -40,14 +53,57 @@ class _CasesPageState extends State<CasesPage> {
     }
   }
 
+  void _clearFilters() {
+    _search.clear();
+    setState(() {
+      _query = '';
+      _area = null;
+    });
+  }
+
   List<Map<String, dynamic>> get _visible {
     final q = _query.trim().toLowerCase();
-    return [
+    final ranks = <Map<String, dynamic>, int>{};
+    final list = [
       for (final fall in _cases)
-        if ((_area == null || fall['area'] == _area) &&
-            (q.isEmpty || (fall['title'] as String).toLowerCase().contains(q)))
-          fall,
+        if (_area == null || fall['area'] == _area)
+          if (q.isEmpty)
+            fall
+          else if (suchRang(
+                q,
+                '${fall['title']} ${fall['facts'] ?? ''} ${fall['question'] ?? ''} '
+                '${landesSuchtext(fall['bundesland'])}',
+              )
+              case final r?)
+            () {
+              ranks[fall] = r;
+              return fall;
+            }(),
     ];
+    // Profil-Schwerpunkt zuerst, innerhalb eines Gebiets leicht vor schwer.
+    const standard = ['zivilrecht', 'strafrecht', 'oeffentliches-recht'];
+    final order = [..._schwerpunkte.where(standard.contains), ...standard.where((a) => !_schwerpunkte.contains(a))];
+    int rank(Map<String, dynamic> f) {
+      final i = order.indexOf(f['area'] as String? ?? '');
+      return i < 0 ? order.length : i;
+    }
+
+    final indexed = [for (var i = 0; i < list.length; i++) (i, list[i])];
+    indexed.sort((a, b) {
+      // Volltreffer (ganzes Wort) vor Wortanfang-Treffern.
+      final t = (ranks[a.$2] ?? 0).compareTo(ranks[b.$2] ?? 0);
+      if (t != 0) return t;
+      final r = rank(a.$2).compareTo(rank(b.$2));
+      if (r != 0) return r;
+      final d = ((a.$2['difficulty'] as num?) ?? 0).compareTo((b.$2['difficulty'] as num?) ?? 0);
+      return d != 0 ? d : a.$1.compareTo(b.$1);
+    });
+    return [for (final e in indexed) e.$2];
+  }
+
+  List<String> get _schwerpunkte {
+    final raw = (AppScope.of(context).examenCockpit?['lernprofil'] as Map?)?['schwerpunkte'];
+    return raw is List ? [for (final e in raw) '$e'] : const [];
   }
 
   @override
@@ -70,14 +126,28 @@ class _CasesPageState extends State<CasesPage> {
           SubsumoPageHeader(
             eyebrow: 'Gutachten-Training',
             title: 'Fälle',
-            subtitle: '${_cases.length} geführte Fälle mit Erwartungshorizont.',
+            subtitle: visible.length == _cases.length
+                ? '${_cases.length} geführte Fälle mit Erwartungshorizont, sortiert nach Schwierigkeit.'
+                : '${visible.length} von ${_cases.length} Fällen, sortiert nach Schwierigkeit.',
           ),
-          const SizedBox(height: Spacing.xl),
+          const SizedBox(height: Spacing.md),
+          const BundeslandHint(),
+          const SizedBox(height: Spacing.sm),
           TextField(
-            onChanged: (v) => setState(() => _query = v),
-            decoration: const InputDecoration(
+            controller: _search,
+            decoration: InputDecoration(
               hintText: 'Fall suchen',
-              prefixIcon: Icon(Icons.search),
+              prefixIcon: const Icon(Icons.search),
+              suffixIcon: _query.isEmpty
+                  ? null
+                  : IconButton(
+                      tooltip: 'Suche leeren',
+                      icon: const Icon(Icons.clear),
+                      onPressed: () {
+                        _search.clear();
+                        setState(() => _query = '');
+                      },
+                    ),
             ),
           ),
           const SizedBox(height: Spacing.md),
@@ -100,7 +170,11 @@ class _CasesPageState extends State<CasesPage> {
           ),
           const SizedBox(height: Spacing.xl),
           if (visible.isEmpty)
-            const ScreenStatus.empty(message: 'Kein Fall passt zu dieser Auswahl.')
+            ScreenStatus.empty(
+              message: 'Kein Fall passt zu dieser Auswahl.',
+              retryLabel: _query.isNotEmpty ? 'Suche leeren' : 'Filter zurücksetzen',
+              onRetry: _clearFilters,
+            )
           else
             for (final fall in visible)
               Padding(
@@ -132,6 +206,7 @@ class _CaseTile extends StatelessWidget {
           builder: (_) => GutachtenPage(
             caseSlug: fall['slug'] as String,
             caseTitle: fall['title'] as String,
+            area: area,
           ),
         ),
       ),
@@ -155,25 +230,33 @@ class _CaseTile extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(fall['title'] as String, style: typography.headingSmall),
+                FitTitle(fall['title'] as String, style: typography.headingSmall),
                 const SizedBox(height: Spacing.xs),
                 Text(
-                  '${_areaLabel(area)}  ·  ${fall['minutes']} min',
+                  '${_areaLabel(area)}  ·  ${fall['minutes']}\u00A0min',
                   style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
                 ),
+                if (landesLabel(fall['bundesland']) case final land?) ...[
+                  const SizedBox(height: Spacing.xs),
+                  SubsumoChip(label: land, icon: Icons.location_on_outlined),
+                ],
               ],
             ),
           ),
-          const SizedBox(width: Spacing.lg),
+          const SizedBox(width: Spacing.md),
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               SubsumoDots(value: difficulty, label: 'Schwierigkeit'),
-              const SizedBox(height: Spacing.xs),
-              Text(
-                'Schwierigkeit',
-                style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
-              ),
+              // Auf schmalen Screens bekommt der Titel die Breite statt der
+              // Beschriftung.
+              if (MediaQuery.sizeOf(context).width >= 520) ...[
+                const SizedBox(height: Spacing.xs),
+                Text(
+                  'Schwierigkeit',
+                  style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+                ),
+              ],
             ],
           ),
           const SizedBox(width: Spacing.sm),

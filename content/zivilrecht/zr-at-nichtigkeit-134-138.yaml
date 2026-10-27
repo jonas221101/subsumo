@@ -1,0 +1,326 @@
+topic:
+  slug: zr-at-nichtigkeit-134-138
+  area: zivilrecht
+  title: Nichtigkeit - Verbotsgesetz, Sittenwidrigkeit, Wucher, Teilnichtigkeit und Umdeutung, §§ 134, 138, 139, 140 BGB
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-at-nicht-134
+  type: norm
+  front: Wann ist ein Rechtsgeschäft wegen Verstoßes gegen ein gesetzliches Verbot nichtig, § 134 BGB?
+  back: >-
+    Ein Rechtsgeschäft, das gegen ein gesetzliches Verbot verstößt, ist nach §
+    134 BGB nichtig, wenn sich nicht aus dem Gesetz ein anderes ergibt. Gesetz ist
+    jede Rechtsnorm (Art. 2 EGBGB). Entscheidend ist, ob das Verbotsgesetz nach
+    seinem Sinn und Zweck die Unwirksamkeit des Rechtsgeschäfts verlangt. Das ist
+    der Fall, wenn sich das Verbot gegen den Inhalt des Geschäfts richtet
+    (Inhaltsverbot, z. B. Handel mit verbotenen Betäubungsmitteln) und nicht nur
+    gegen die Art der Vornahme oder gegen die Person des Handelnden. Bei
+    einseitigen Verstößen ist das Geschäft regelmäßig wirksam, wenn der Zweck des
+    Verbots mit anderen Mitteln (Bußgeld, Strafe) erreicht wird. Maßgeblich ist
+    eine Zweckprüfung im Einzelfall; ein bloßes Ordnungsverbot führt nicht zur
+    Nichtigkeit.
+  norms:
+  - § 134 BGB
+  - Art. 2 EGBGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-nicht-schwarzarbeit
+  type: norm
+  front: Welche Folgen hat die Ohne-Rechnung-Abrede beim Werkvertrag (§ 134 BGB, § 1 Abs. 2 Nr. 2 SchwarzArbG)?
+  back: >-
+    Das Schwarzarbeitsbekämpfungsgesetz verbietet in § 1 Abs. 2 Nr. 2 SchwarzArbG
+    Dienst- oder Werkleistungen, wenn der Unternehmer seine steuerlichen Pflichten
+    nicht erfüllt. Nach der Rechtsprechung ist ein Werkvertrag nach § 134 BGB
+    nichtig, wenn der Unternehmer vorsätzlich gegen dieses Verbot verstößt und der
+    Besteller dies kennt und bewusst zum eigenen Vorteil ausnutzt; dies gilt etwa
+    für eine "Ohne-Rechnung"-Abrede, die die Steuerhinterziehung zum Vertragsinhalt
+    macht. Die Nichtigkeit erfasst den gesamten Vertrag, auch wenn die Abrede nur einen
+    Teil des Werklohns betrifft; sie tritt auch ein, wenn ein zunächst wirksamer Vertrag
+    nachträglich entsprechend abgeändert wird (BGH, 16.03.2017 - VII ZR 197/16). Der
+    Unternehmer kann dann weder Werklohn noch Wertersatz nach Bereicherungsrecht
+    verlangen, dem Besteller stehen keine Mängelansprüche zu, und seine Rückforderung
+    gezahlten Werklohns scheitert an § 817 S. 2 BGB (BGH, 01.08.2013 - VII ZR 6/13;
+    10.04.2014 - VII ZR 241/13; 11.06.2015 - VII ZR 216/14). Die Rechtsprechung zu den
+    Rechtsfolgen hat sich mehrfach geändert; in der Klausur ist die
+    Argumentation mit dem Verbotszweck und § 817 S. 2 BGB maßgeblich.
+  norms:
+  - § 134 BGB
+  - § 1 Abs. 2 Nr. 2 SchwarzArbG
+  - § 817 S. 2 BGB
+  quellen:
+  - BGH, Urteil vom 16.03.2017 - VII ZR 197/16
+  - BGB, amtliche Fassung
+  - SchwarzArbG, amtliche Fassung
+- slug: zr-at-nicht-138-sittenwidrig
+  type: definition
+  front: 'Definiere: Sittenwidrigkeit nach § 138 Abs. 1 BGB und nenne Fallgruppen'
+  back: >-
+    Sittenwidrig ist ein Rechtsgeschäft, das nach seinem Inhalt, Beweggrund und Zweck
+    (Gesamtcharakter) gegen das Anstandsgefühl aller billig und gerecht Denkenden
+    verstößt. Maßgeblich ist der Zeitpunkt der Vornahme. Der Maßstab richtet sich
+    an den Wertungen der Rechtsordnung, besonders der Grundrechte (mittelbare
+    Drittwirkung). Typische Fallgruppen sind Knebelungsverträge,
+    die Ausnutzung von Machtstellungen, wucherähnliche Ratenkredite und Kaufverträge,
+    sittenwidrige Bürgschaften krass überforderter naher Angehöriger sowie
+    Geschäfte, die Dritte gezielt schädigen (Gläubigergefährdung). Ist schon der Inhalt
+    sittenwidrig, genügt die objektive Wertung; bei neutralem Inhalt müssen Beweggrund und
+    Zweck verwerflich und dem Partner bekannt sein oder sich ihm leichtfertig verschließen.
+    Rechtsfolge ist die Nichtigkeit von Anfang an.
+  norms:
+  - § 138 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-nicht-138-buergschaft
+  type: rechtsprechung
+  front: Wann ist eine Bürgschaft naher Angehöriger sittenwidrig (BVerfGE 89, 214)?
+  back: >-
+    Das BVerfG (BVerfGE 89, 214, Bürgschaft) verlangt, dass bei strukturell ungleicher
+    Verhandlungsstärke zwischen Bank und Bürge die Zivilgerichte die Generalklauseln
+    (§§ 138, 242 BGB) im Lichte der Privatautonomie (Art. 2 Abs. 1 GG) und des Sozialstaatsprinzips
+    anwenden. Daran anknüpfend hält die Rechtsprechung des BGH eine Bürgschaft nach §
+    138 Abs. 1 BGB für sittenwidrig, wenn der Bürge, regelmäßig ein naher Angehöriger,
+    krass finanziell überfordert ist (er könnte nicht einmal die laufenden Zinsen aus pfändbarem Einkommen oder Vermögen tragen). Bei krasser
+    finanzieller Überforderung vermutet die Rechtsprechung widerleglich, dass der
+    Bürge aus emotionaler Verbundenheit gehandelt hat und die Bank dies ausnutzt.
+    Die Bank kann die Vermutung widerlegen, etwa durch Hinweis auf ein eigenes
+    wirtschaftliches Interesse des Bürgen an der Darlehensvergabe.
+  norms:
+  - § 138 Abs. 1 BGB
+  - § 765 BGB
+  - Art. 2 Abs. 1 GG
+  quellen:
+  - BGB, amtliche Fassung
+  - BVerfG, BVerfGE 89, 214
+- slug: zr-at-nicht-138-wucher
+  type: norm
+  front: Welche Voraussetzungen hat der Wucher nach § 138 Abs. 2 BGB?
+  back: >-
+    Nach § 138 Abs. 2 BGB ist ein Rechtsgeschäft nichtig, durch das jemand unter
+    Ausbeutung der Zwangslage, der Unerfahrenheit, des Mangels an Urteilsvermögen
+    oder der erheblichen Willensschwäche eines anderen sich oder einem Dritten für eine
+    Leistung Vermögensvorteile versprechen oder gewähren lässt, die in einem
+    auffälligen Missverhältnis zu der Leistung stehen. Erforderlich sind (1) ein objektiv
+    auffälliges Missverhältnis von Leistung und Gegenleistung, (2) eine der
+    genannten Schwächesituationen des Benachteiligten und (3) die Ausbeutung,
+    also das bewusste Ausnutzen durch den Begünstigten. Anders als bei § 138
+    Abs. 1 BGB ist die Nichtigkeit hier auch auf die Verfügung (Leistung, "gewähren")
+    bezogen, nicht nur auf das Verpflichtungsgeschäft. Der Benachteiligte bleibt dann Eigentümer und kann nach § 985 BGB herausverlangen.
+  norms:
+  - § 138 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-nicht-138-wucheraehnlich
+  type: streitstand
+  front: 'Wucherähnliches Geschäft: Welche Voraussetzungen gelten und wie wird die
+    verwerfliche Gesinnung festgestellt?'
+  back: >-
+    Das wucherähnliche Geschäft ist ein Fall des § 138 Abs. 1 BGB. Erforderlich
+    sind ein auffälliges Missverhältnis zwischen Leistung und Gegenleistung und
+    eine verwerfliche Gesinnung des Begünstigten (subjektives Element), die er
+    zum Beispiel dadurch zeigt, dass er sich leichtfertig der Einsicht verschließt, der
+    andere lasse sich nur aus Schwäche auf das Geschäft ein. Bei einem besonders
+    groben Missverhältnis (bei Grundstücksgeschäften bereits, wenn der Wert der einen
+    Leistung knapp doppelt so hoch ist wie der der anderen, also etwa 2 : 1; beim Kauf
+    beweglicher Sachen in ähnlicher Größenordnung; bei Darlehen Marktzins in doppelter
+    Höhe) schließt die Rechtsprechung auf die verwerfliche Gesinnung (tatsächliche,
+    widerlegbare Vermutung, auch ohne Kenntnis der Wertverhältnisse; BGH, 19.1.2001
+    - V ZR 437/99). Die Literatur kritisiert diese Faustformel
+    teils als zu schematisch und verlangt eine Prüfung aller Umstände des Einzelfalls.
+  norms:
+  - § 138 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - BGH, Urteil vom 19.1.2001 - V ZR 437/99 (BGHZ 146, 298)
+  - Eigenformulierung Redaktion
+- slug: zr-at-nicht-139
+  type: norm
+  front: Wann ergreift die Teilnichtigkeit das gesamte Rechtsgeschäft, § 139 BGB?
+  back: >-
+    Ist ein Teil eines Rechtsgeschäfts nichtig, so ist nach § 139 BGB das ganze
+    Rechtsgeschäft nichtig, wenn nicht anzunehmen ist, dass es auch ohne den nichtigen
+    Teil vorgenommen worden wäre. Voraussetzungen sind (1) ein einheitliches
+    Rechtsgeschäft (Einheitlichkeitswille der Parteien), (2) ein nichtiger oder
+    nichtig gewordener Teil und (3) die Teilbarkeit. Entscheidend ist der hypothetische
+    Parteiwille im Zeitpunkt der Vornahme. Salvatorische Klauseln (Erhaltensklauseln)
+    ändern nur die Beweislastverteilung: Die Partei, die an der Gesamtnichtigkeit
+    festhält, muss dann beweisen, dass die Parteien das Geschäft nicht ohne den
+    nichtigen Teil gewollt hätten. Eine geltungserhaltende Reduktion auf das
+    gerade noch zulässige Maß findet bei sittenwidrigen Geschäften grundsätzlich
+    nicht statt; in AGB verdrängt § 306 BGB den § 139 BGB; auch dort ist eine geltungserhaltende Reduktion ausgeschlossen, an die Stelle der unwirksamen Klausel tritt das Gesetz.
+  norms:
+  - § 139 BGB
+  - § 306 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-nicht-140
+  type: norm
+  front: Wann kann ein nichtiges Rechtsgeschäft umgedeutet werden, § 140 BGB?
+  back: >-
+    Entspricht ein nichtiges Rechtsgeschäft den Erfordernissen eines anderen
+    Rechtsgeschäfts, so gilt das andere, wenn anzunehmen ist, dass dessen Geltung
+    bei Kenntnis der Nichtigkeit gewollt sein würde (§ 140 BGB). Erforderlich sind (1)
+    ein nichtiges Ausgangsgeschäft, (2) ein Ersatzgeschäft, dessen Erfordernisse
+    das Ausgangsgeschäft erfüllt und dessen rechtliche Wirkungen nicht weiterreichen
+    als die des Ausgangsgeschäfts, und (3) der hypothetische Parteiwille. Klassische
+    Beispiele: die unwirksame außerordentliche Kündigung wird in eine ordentliche
+    Kündigung umgedeutet, wenn dies dem erkennbaren Willen des Kündigenden entspricht und der Erklärungsempfänger damit rechnen muss. Die Umdeutung ist von der Auslegung und von § 139 BGB abzugrenzen.
+  norms:
+  - § 140 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-nicht-abstraktion
+  type: definition
+  front: 'Fehleridentität: Erfasst die Nichtigkeit nach §§ 134, 138 BGB auch das Verfügungsgeschäft?'
+  back: >-
+    Wegen des Abstraktionsprinzips erfasst die Nichtigkeit des Verpflichtungsgeschäfts
+    nicht automatisch das Erfüllungsgeschäft (Verfügung). Die Verfügung ist grundsätzlich
+    nur dann nichtig, wenn der Nichtigkeitsgrund gerade das Verfügungsgeschäft selbst betrifft
+    (Fehleridentität). Beim Verbotsgesetz (§ 134 BGB) kommt es darauf an, ob
+    das Verbot auch den Vollzug erfasst (z. B. Übertragung verbotener Waren). Bei §
+    138 Abs. 1 BGB ist die Verfügung nur nichtig, wenn gerade sie sittenwidrig ist,
+    nicht schon, weil das Kausalgeschäft sittenwidrig ist; bei Wucher nach § 138
+    Abs. 2 BGB erfasst der Wortlaut ("gewähren lässt") auch die Verfügung. Die
+    rechtsgrundlos erlangte Leistung ist nach §§ 812 ff. BGB herauszugeben, wobei
+    § 817 S. 2 BGB den Rückforderungsanspruch eines ebenfalls sittenwidrig
+    Handelnden ausschließen kann.
+  norms:
+  - § 134 BGB
+  - § 138 BGB
+  - § 812 BGB
+  - § 817 S. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-at-nicht-134-138
+  title: Nichtigkeit nach §§ 134, 138 BGB mit Teilnichtigkeit und Umdeutung
+  norms:
+  - § 134 BGB
+  - § 138 BGB
+  - § 139 BGB
+  - § 140 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Gesetzliches Verbot, § 134 BGB
+    children:
+    - label: 1. Verbotsgesetz im Sinne des Art. 2 EGBGB
+    - label: 2. Verstoß durch das Rechtsgeschäft
+    - label: 3. Nichtigkeit nach dem Zweck des Verbots
+      hinweis: Inhaltsverbot oder bloßes Ordnungsverbot? Einseitiger oder
+        beidseitiger Verstoß?
+  - label: II. Sittenwidrigkeit, § 138 Abs. 1 BGB
+    children:
+    - label: 1. Verstoß gegen das Anstandsgefühl aller billig und gerecht Denkenden
+    - label: 2. Gesamtwürdigung von Inhalt, Beweggrund und Zweck
+    - label: 3. Subjektive Seite - Kenntnis der sittenwidrig machenden Umstände
+  - label: III. Wucher, § 138 Abs. 2 BGB
+    children:
+    - label: 1. Auffälliges Missverhältnis
+    - label: 2. Schwächesituation des Benachteiligten
+    - label: 3. Ausbeutung
+  - label: IV. Wucherähnliches Geschäft, § 138 Abs. 1 BGB
+    hinweis: Auffälliges Missverhältnis plus verwerfliche Gesinnung (Vermutung bei
+      besonders grobem Missverhältnis).
+  - label: V. Rechtsfolge - Nichtigkeit von Anfang an
+    children:
+    - label: 1. Teilnichtigkeit, § 139 BGB
+    - label: 2. Umdeutung, § 140 BGB
+    - label: 3. Verfügungsgeschäft - Fehleridentität prüfen
+faelle:
+- slug: zr-fall-at-nicht-schmuckverkauf
+  title: Der Notverkauf des Schmucks
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    V muss kurzfristig die Miete bezahlen, sonst droht die Kündigung ihrer Wohnung.
+    Sie bietet dem Händler H einen Familienschmuck zum Kauf an, dessen
+    Marktwert 5.000 Euro beträgt. H erkennt die Notlage und erklärt, mehr als 1.500 Euro
+    sei sein Höchstgebot. V geht auf das Angebot ein; H zahlt 1.500 Euro und V übergibt
+    und übereignet den Schmuck. Zwei Wochen später verlangt V von H den Schmuck
+    heraus. H verweigert die Herausgabe, weil er V die 1.500 Euro bezahlt habe.
+  question: Kann V von H Herausgabe des Schmucks nach § 985 BGB verlangen?
+  steps:
+  - prompt: Formuliere den Obersatz.
+    erwartung: >-
+      V könnte gegen H einen Herausgabeanspruch aus § 985 BGB haben, wenn sie
+      Eigentümerin geblieben ist, H Besitzer ist und kein Recht zum Besitz hat.
+  - prompt: War V ursprünglich Eigentümerin und hat sie ihr Eigentum an H verloren?
+    erwartung: >-
+      V war Eigentümerin. Ein Eigentumserwerb des H nach § 929 S. 1 BGB setzt
+      eine wirksame Einigung voraus. Diese könnte nach § 138 Abs. 2 BGB nichtig sein.
+  - prompt: Liegt Wucher nach § 138 Abs. 2 BGB vor?
+    erwartung: >-
+      Ja. Es besteht ein auffälliges Missverhältnis (1.500 Euro gegenüber einem
+      Wert von 5.000 Euro). V befand sich in einer Zwangslage (drohender Verlust der
+      Wohnung), die H kannte und bewusst zum eigenen Vorteil ausnutzte (Ausbeutung).
+  - prompt: Erfasst die Nichtigkeit auch die Übereignung?
+    erwartung: >-
+      Ja. § 138 Abs. 2 BGB erfasst nach dem Wortlaut ("versprechen oder gewähren
+      lässt") auch das Verfügungsgeschäft. Die Einigung nach § 929 S. 1 BGB ist
+      daher ebenfalls nichtig, sodass V Eigentümerin geblieben ist (Fehleridentität
+      ausnahmsweise bejaht).
+  - prompt: Ergebnis des Herausgabeanspruchs?
+    erwartung: >-
+      H ist Besitzer und hat kein Recht zum Besitz (§ 986 BGB), da der
+      Kaufvertrag nichtig ist. V kann daher Herausgabe nach § 985 BGB verlangen.
+      Der Kaufpreis ist nach den §§ 812 ff. BGB Gegenstand eines eigenen
+      Anspruchs und hier nicht zu prüfen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Wucher nach § 138 Abs. 2 BGB bejaht (Missverhältnis, Zwangslage, Ausbeutung)
+      weight: 3.0
+      required: true
+      norms:
+      - § 138 Abs. 2 BGB
+      keywords:
+      - "§ 138 Abs. 2"
+      - "Zwangslage"
+      - "auffälliges Missverhältnis"
+      - "Ausbeutung"
+      - "Wucher"
+      card_slugs:
+      - zr-at-nicht-138-wucher
+    - id: p2
+      label: Nichtigkeit auch der Übereignung (Verfügung) begründet
+      weight: 2.0
+      required: true
+      norms:
+      - § 929 S. 1 BGB
+      keywords:
+      - "gewähren lässt"
+      - "Verfügungsgeschäft nichtig"
+      - "Einigung nichtig"
+      - "Fehleridentität"
+      - "Abstraktionsprinzip"
+      card_slugs:
+      - zr-at-nicht-abstraktion
+      - zr-at-nicht-138-wucher
+    - id: p3
+      label: Eigentum der V, Besitz und kein Recht zum Besitz, Herausgabe nach § 985 BGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 985 BGB
+      - § 986 BGB
+      keywords:
+      - "§ 985"
+      - "Eigentümerin geblieben"
+      - "kein Recht zum Besitz"
+      - "§ 986"

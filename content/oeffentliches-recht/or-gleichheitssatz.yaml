@@ -91,9 +91,9 @@ cards:
 - slug: or-gr-glbs-jedermanngrundrecht
   type: definition
   front: Wer ist Grundrechtsträger des Art. 3 Abs. 1 GG?
-  back: Art. 3 Abs. 1 GG ist ein Jedermann-Grundrecht und steht damit unabhängig
-    von der Staatsangehörigkeit jeder natürlichen Person zu. Inländische juristische
-    Personen können sich nach Art. 19 Abs. 3 GG ebenfalls auf den allgemeinen Gleichheitssatz
+  back: Art. 3 Abs. 1 GG ist ein Jedermann-Grundrecht und steht damit unabhängig von
+    der Staatsangehörigkeit jeder natürlichen Person zu. Inländische juristische Personen
+    können sich nach Art. 19 Abs. 3 GG ebenfalls auf den allgemeinen Gleichheitssatz
     berufen, soweit er seinem Wesen nach auf sie anwendbar ist - etwa bei der Gleichbehandlung
     im Wirtschaftsverkehr.
   norms:
@@ -119,9 +119,9 @@ schemata:
     children:
     - label: 1. Bestimmung des Prüfungsmaßstabs
       children:
-      - label: a) personenbezogen (nicht/schwer beeinflussbar) oder Nähe zu Art.
-          3 Abs. 3 GG bzw. Grundrechtsausübung betroffen -> strenge Verhältnismäßigkeitsprüfung
-      - label: b) rein verhaltensbezogen -> Willkürformel (sachlicher Grund genügt)
+      - label: a) personenbezogen (nicht/schwer beeinflussbar) oder Nähe zu Art. 3
+          Abs. 3 GG bzw. Grundrechtsausübung betroffen → strenge Verhältnismäßigkeitsprüfung
+      - label: b) rein verhaltensbezogen → Willkürformel (sachlicher Grund genügt)
     - label: 2. Legitimer Zweck der Differenzierung
     - label: '3. Beim strengen Maßstab: Geeignetheit, Erforderlichkeit, Angemessenheit
         der Differenzierung'
@@ -137,10 +137,10 @@ faelle:
   facts: Ein (fiktives) Landesgesetz befreit Studierende von der allgemeinen Studiengebühr,
     wenn mindestens ein Elternteil im Landesdienst als Beamter beschäftigt ist. Die
     Studentin S, deren Eltern nicht im Landesdienst stehen, muss die volle Studiengebühr
-    entrichten. Zur Begründung führt der Gesetzgeber lediglich pauschal aus, die
-    Regelung stärke "die Bindung des Landesdienstes an den Hochschulstandort"; nähere
-    Ausführungen dazu, weshalb gerade die Beamteneigenschaft der Eltern und nicht
-    etwa eine eigene Bindung der Studierenden maßgeblich sein soll, fehlen.
+    entrichten. Zur Begründung führt der Gesetzgeber lediglich pauschal aus, die Regelung
+    stärke "die Bindung des Landesdienstes an den Hochschulstandort"; nähere Ausführungen
+    dazu, weshalb gerade die Beamteneigenschaft der Eltern und nicht etwa eine eigene
+    Bindung der Studierenden maßgeblich sein soll, fehlen.
   question: Verletzt die Regelung die S in ihrem Recht aus Art. 3 Abs. 1 GG?
   steps:
   - prompt: Liegt eine Ungleichbehandlung wesentlich Gleicher vor?
@@ -149,14 +149,18 @@ faelle:
       wesentlich gleich, werden aber bei der Gebührenpflicht unterschiedlich behandelt.
   - prompt: Welcher Prüfungsmaßstab ist anzulegen?
     erwartung: Der strenge Verhältnismäßigkeitsmaßstab - die Differenzierung knüpft
-      an ein personenbezogenes Merkmal an (Beschäftigungsstatus der Eltern), das
-      S selbst nicht beeinflussen kann.
+      an ein personenbezogenes Merkmal an (Beschäftigungsstatus der Eltern), das S
+      selbst nicht beeinflussen kann.
   - prompt: Ist die Ungleichbehandlung gerechtfertigt?
-    erwartung: Nein - selbst wenn man die 'Bindung des Landesdienstes an den Hochschulstandort'
-      als legitimen Zweck unterstellt, fehlt es an einer nachvollziehbaren Begründung,
-      weshalb gerade die Beamteneigenschaft der Eltern zur Erreichung dieses Zwecks
-      geeignet und erforderlich sein soll; die pauschale Begründung trägt die Differenzierung
-      nicht.
+    erwartung: 'Nein - der Gesetzgeber unterliegt keiner Begründungspflicht; maßgeblich
+      ist allein, ob sich objektiv ein tragfähiger Rechtfertigungsgrund für die Ungleichbehandlung
+      finden lässt. Selbst wenn man die ''Bindung des Landesdienstes an den Hochschulstandort''
+      als legitimen Zweck unterstellt, ist die Differenzierung nach der Beamteneigenschaft
+      der Eltern zur Erreichung dieses Zwecks nicht geeignet und jedenfalls nicht
+      erforderlich: Der Elternstatus sagt nichts über eine Bindung der Studierenden
+      aus, und eine an die eigene Standortbindung der Studierenden anknüpfende Regelung
+      wäre ein milderes, gleich wirksames Mittel. Die Ungleichbehandlung ist objektiv
+      nicht gerechtfertigt.'
   expectation:
     pruefpunkte:
     - id: p1
@@ -167,30 +171,39 @@ faelle:
       - Art. 3 Abs. 1 GG
       keywords:
       - Vergleichspaar
+      - wesentlich Gleiches
       - wesentlich gleich
       - Ungleichbehandlung
+      - Art. 3 Abs. 1 GG
       card_slugs:
       - or-gr-glbs-vergleichspaar
     - id: p2
-      label: Strenger Prüfungsmaßstab zutreffend begründet (personenbezogenes,
-        nicht beeinflussbares Merkmal)
+      label: Strenger Prüfungsmaßstab zutreffend begründet (personenbezogenes, nicht
+        beeinflussbares Merkmal)
       weight: 3.0
       required: true
       keywords:
-      - personenbezogen
+      - personenbezogenes Merkmal
       - strenger Maßstab
+      - strenge Verhältnismäßigkeit
       - nicht beeinflussbar
+      - neue Formel
       card_slugs:
       - or-gr-glbs-abstufung-pruefungsmassstab
     - id: p3
-      label: Rechtfertigung anhand Geeignetheit/Erforderlichkeit geprüft und mangels
-        tragfähiger Begründung verneint
+      label: Rechtfertigung anhand objektiver Geeignetheit/Erforderlichkeit geprüft
+        und verneint (keine Begründungspflicht des Gesetzgebers, es kommt auf den
+        objektiv tragfähigen Rechtfertigungsgrund an)
       weight: 3.0
       required: true
       keywords:
-      - geeignet
-      - erforderlich
+      - keine Begründungspflicht
+      - objektiv
+      - Rechtfertigungsgrund
+      - nicht geeignet
+      - nicht erforderlich
       - nicht gerechtfertigt
+      - Beamteneigenschaft der Eltern
       card_slugs:
       - or-gr-glbs-rechtfertigung-verhaeltnismaessigkeit
     - id: p4
@@ -198,4 +211,7 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - verletzt
+      - in Art. 3 Abs. 1 GG verletzt
+      - Verletzung des Gleichheitssatzes
+      - Verletzung von Art. 3
+      - Gebührenregelung ist verfassungswidrig

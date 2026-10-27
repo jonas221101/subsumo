@@ -14,10 +14,9 @@ from fastapi import APIRouter, HTTPException, Query, status
 
 from app.api.deps import CurrentUser, DbSession
 from app.config import get_settings
-from app.core.timeutil import as_utc
-from app.models import Bundesland, Kurs, Universitaet, UserCard
+from app.models import Bundesland, Kurs, Universitaet
 from app.services import examen, lernprofil, srs
-from app.services.planner import generate_plan
+from app.services.planner import generate_plan, klausur_dates
 
 router = APIRouter(prefix="/examen", tags=["examen"])
 
@@ -61,10 +60,10 @@ def universitaeten(db: DbSession, bundesland: str | None = None) -> list[dict]:
 def universitaet(slug: str, db: DbSession) -> dict:
     uni = db.query(Universitaet).filter_by(slug=slug).one_or_none()
     if uni is None:
-        raise HTTPException(status.HTTP_404_NOT_FOUND, "Universitaet nicht gefunden")
+        raise HTTPException(status.HTTP_404_NOT_FOUND, "Universität nicht gefunden")
     land = db.get(Bundesland, uni.bundesland)
     return {
-        **uni.data,
+        **examen.public_data(uni.data),
         "pruefstatus": (uni.data.get("redaktion") or {}).get("status", "mensch-freigegeben"),
         "bundesland_name": land.name if land else uni.bundesland,
         "kurse": examen.university_courses(db, uni),
@@ -127,6 +126,7 @@ def cockpit(
     klausur_vorschlag = examen.next_klausur(
         db, user, progress=progress, readiness_by_area=reife["by_area"]
     )
+    klausur_datum, klausur_heute = _klausur_termin(user, profil, phase, today)
     persona = lernprofil.persona(profil, user)
     pausiert = lernprofil.pausierte_themen(profil)
     naechster_schritt = lernprofil.next_step(
@@ -147,9 +147,10 @@ def cockpit(
             semester=profil.semester,
             schwachstellen=schwachstellen["themen"],
             faelle_je_thema=lernprofil.faelle_je_thema(db, set(progress) - pausiert),
-            schwaechstes_thema=examen.schwaechstes_thema(progress, profil),
-            klausur_heute=profil.wochenklausur
-            and examen.ist_klausurtag(today, profil.klausur_wochentag),
+            schwaechstes_thema=examen.schwaechstes_thema(
+                progress, profil, examen.topic_stufen(db, user, profil)
+            ),
+            klausur_heute=klausur_heute,
             klausur_vorschlag=klausur_vorschlag,
         )
     )
@@ -158,22 +159,8 @@ def cockpit(
     if user.exam_date is not None and phase and phase["tage_bis_examen"] > 0:
         settings = get_settings()
         exam_day = date.fromisoformat(phase["exam_date"])
-        states = db.query(UserCard).filter(UserCard.user_id == user.id).all()
         forecast = srs.forecast_load(
-            [
-                srs.CardState(
-                    stability=uc.stability,
-                    difficulty=uc.difficulty,
-                    due=as_utc(uc.due),
-                    last_review=as_utc(uc.last_review),
-                    reps=uc.reps,
-                    lapses=uc.lapses,
-                    state=uc.state,
-                )
-                for uc in states
-            ],
-            days=min(plan_days, 400),
-            now=now,
+            examen.visible_card_states(db, user, now=now), days=min(plan_days, 400), now=now
         )
         plan = generate_plan(
             examen.topic_inputs(db, user),
@@ -230,9 +217,8 @@ def cockpit(
         },
         "schwachstellen": schwachstellen,
         "naechste_klausur": {
-            "datum": examen.next_klausurtag(today, profil.klausur_wochentag).isoformat(),
-            "heute": profil.wochenklausur
-            and examen.ist_klausurtag(today, profil.klausur_wochentag),
+            "datum": klausur_datum.isoformat() if klausur_datum else None,
+            "heute": klausur_heute,
             "aktiv": profil.wochenklausur,
             "vorschlag": klausur_vorschlag,
         },
@@ -241,10 +227,49 @@ def cockpit(
     }
 
 
+def _klausur_termin(user, profil, phase: dict | None, today: date) -> tuple[date | None, bool]:
+    """Naechster Klausurtag - identisch zum Lernplan.
+
+    Mit Examensdatum plant der Lernplan Klausuren erst nach der Grundlagenphase
+    und nie an Ruhetagen; das Cockpit liest denselben Kalender
+    (:func:`planner.klausur_dates`), statt blind den naechsten Wochentag zu
+    nennen. Ohne Examensdatum gibt es keinen Plan, dann gilt der Wochentag.
+    """
+    if not profil.wochenklausur:
+        # Inaktiv: es gibt keinen Plan-Termin, nur den Wochentag des Profils.
+        return examen.next_klausurtag(today, profil.klausur_wochentag), False
+    if phase and phase["tage_bis_examen"] > 0:
+        termine = klausur_dates(
+            start=today,
+            exam_date=date.fromisoformat(phase["exam_date"]),
+            klausur_weekday=profil.klausur_wochentag,
+            rest_weekdays=set(profil.ruhetage),
+        )
+        return (termine[0] if termine else None), bool(termine and termine[0] == today)
+    return (
+        examen.next_klausurtag(today, profil.klausur_wochentag),
+        examen.ist_klausurtag(today, profil.klausur_wochentag),
+    )
+
+
+# Ohne Uni-Kursplan: innerhalb eines Semesters Zivilrecht vor Strafrecht vor
+# Oeffentlichem Recht (Gewicht in der Pflichtfachpruefung). Alphabetisch kam
+# sonst Staatsrecht vor BGB AT, und Erstsemester bekamen GG-Karten als
+# erstes Deck empfohlen (Nutzertest 2026-10-15).
+_GEBIET_RANG = {"zr": 0, "sr": 1, "or": 2}
+
+
 def _kurse_in_reihenfolge(db: DbSession, uni: Universitaet | None) -> list[Kurs]:
     kurse = {k.slug: k for k in db.query(Kurs).all()}
     if uni is None:
-        return sorted(kurse.values(), key=lambda k: (k.data.get("semester_default") or 99, k.slug))
+        return sorted(
+            kurse.values(),
+            key=lambda k: (
+                k.data.get("semester_default") or 99,
+                _GEBIET_RANG.get(k.slug.split("-", 1)[0], 9),
+                k.slug,
+            ),
+        )
     ordered: list[Kurs] = []
     for eintrag in uni.data.get("kurse") or []:
         kurs = kurse.get(eintrag.get("kurs"))

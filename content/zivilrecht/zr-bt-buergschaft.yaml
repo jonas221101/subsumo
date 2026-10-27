@@ -1,0 +1,363 @@
+topic:
+  slug: zr-bt-buergschaft
+  area: zivilrecht
+  title: Bürgschaft, §§ 765 ff. BGB
+  parent: zr-bgb-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-buerg-begriff
+  type: definition
+  front: 'Definiere: Bürgschaft, § 765 BGB'
+  back: 'Durch den Bürgschaftsvertrag verpflichtet sich der Bürge gegenüber dem Gläubiger
+    eines Dritten, für die Erfüllung der Verbindlichkeit des Dritten (Hauptschuldner) einzustehen
+    (§ 765 Abs. 1 BGB). Der Vertrag kommt zwischen Bürge und Gläubiger zustande; der Hauptschuldner
+    ist nicht beteiligt. Er ist einseitig verpflichtend, denn nur der Bürge schuldet eine
+    Leistung. Die Bürgschaft ist ein Sicherungsmittel (Personalsicherheit) und akzessorisch,
+    also in Entstehung, Umfang und Bestand von der Hauptforderung abhängig. Sie kann auch
+    für eine künftige oder bedingte Verbindlichkeit übernommen werden (§ 765 Abs. 2 BGB),
+    muss aber hinreichend bestimmt sein: Gläubiger, Hauptschuldner und gesicherte Forderung
+    müssen erkennbar sein.'
+  norms:
+  - § 765 Abs. 1 BGB
+  - § 765 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-buerg-akzessorietaet
+  type: norm
+  front: Wie wirkt die Akzessorietät der Bürgschaft (§§ 767, 765 BGB)?
+  back: Der Bürge haftet für die Hauptschuld in ihrem jeweiligen Bestand (§ 767 Abs. 1 S.
+    1 BGB). Die Bürgschaft entsteht daher nur, wenn die gesicherte Forderung entsteht; erlischt
+    die Hauptforderung, etwa durch Erfüllung, erlischt auch die Bürgschaft. Eine Minderung
+    oder Änderung der Hauptschuld wirkt sich auf die Bürgschaft aus; eine Erweiterung der
+    Hauptschuld durch ein Rechtsgeschäft des Hauptschuldners nach Übernahme der Bürgschaft
+    erhöht die Haftung des Bürgen aber nicht (§ 767 Abs. 1 S. 3 BGB). Der Bürge haftet ferner
+    für Nebenkosten der Rechtsverfolgung (§ 767 Abs. 2 BGB). Wird die Hauptforderung abgetreten,
+    geht die Bürgschaft nach § 401 Abs. 1 BGB mit über. Der Gläubiger kann den Bürgen daher nur insoweit in Anspruch nehmen, als die Hauptforderung besteht.
+  norms:
+  - § 767 Abs. 1 BGB
+  - § 767 Abs. 2 BGB
+  - § 401 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-buerg-form-766
+  type: norm
+  front: Welche Form verlangt die Bürgschaft (§ 766 BGB, § 350 HGB)?
+  back: 'Die Bürgschaftserklärung bedarf der Schriftform (§ 766 S. 1 BGB, § 126 BGB). Die
+    elektronische Form ist ausgeschlossen (§ 766 S. 2 BGB). Das Schriftformerfordernis dient
+    dem Übereilungsschutz des Bürgen und gilt für die Erklärung des Bürgen, nicht für die
+    Annahme durch den Gläubiger. Formmängel führen zur Nichtigkeit nach § 125 S. 1 BGB, werden
+    aber geheilt, soweit der Bürge die Hauptverbindlichkeit erfüllt (§ 766 S. 3 BGB). Für
+    Kaufleute gilt eine Ausnahme: Die Bürgschaft eines Kaufmanns, die für ihn ein Handelsgeschäft
+    ist, ist auch formlos wirksam (§ 350 HGB). Die wesentlichen Inhalte, also Gläubiger, Hauptschuldner
+    und gesicherte Forderung, müssen sich aus der Urkunde ergeben.'
+  norms:
+  - § 766 BGB
+  - § 125 BGB
+  - § 350 HGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-buerg-einreden
+  type: norm
+  front: Welche Einreden hat der Bürge (§§ 768 bis 771 BGB)?
+  back: 'Der Bürge kann die dem Hauptschuldner zustehenden Einreden geltend machen (§ 768
+    Abs. 1 S. 1 BGB), etwa Verjährung, Stundung oder Zurückbehaltungsrecht. Er verliert sie
+    nicht dadurch, dass der Hauptschuldner auf sie verzichtet (§ 768 Abs. 2 BGB). Ficht der
+    Hauptschuldner an oder kann der Gläubiger gegen eine fällige Forderung des Hauptschuldners
+    aufrechnen, steht dem Bürgen eine Einrede zu (§ 770 BGB); es ist eine Einrede, keine Einwendung.
+    Daneben hat der Bürge die Einrede der Vorausklage (§ 771 BGB): Er kann die Befriedigung
+    des Gläubigers verweigern, solange dieser nicht ohne Erfolg eine Zwangsvollstreckung gegen
+    den Hauptschuldner versucht hat. Sie ist ausgeschlossen bei Verzicht, besonders bei der
+    selbstschuldnerischen Bürgschaft (§ 773 Abs. 1 Nr. 1 BGB), bei Aussichtslosigkeit der Vollstreckung gegen den
+    Hauptschuldners (Nr. 4: Zwangsvollstreckung voraussichtlich aussichtslos), bei Eröffnung des Insolvenzverfahrens (Nr. 3) und für Kaufleute, wenn die Bürgschaft für sie ein Handelsgeschäft ist (§ 349 HGB).'
+  norms:
+  - § 768 BGB
+  - § 770 BGB
+  - § 771 BGB
+  - § 773 BGB
+  - § 349 HGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-buerg-regress-774
+  type: norm
+  front: Wie nimmt der Bürge Rückgriff (§ 774 BGB)?
+  back: Soweit der Bürge den Gläubiger befriedigt, geht die Forderung des Gläubigers gegen
+    den Hauptschuldner auf ihn über (§ 774 Abs. 1 S. 1 BGB, gesetzlicher Forderungsübergang).
+    Mit der Forderung gehen die akzessorischen Sicherheiten über (§§ 412, 401 BGB). Der Übergang kann
+    nicht zum Nachteil des Gläubigers geltend gemacht werden (§ 774 Abs. 1 S. 2 BGB); der
+    Gläubiger behält Vorrang, wenn die Mittel nur zu einer Teilbefriedigung reichen. Einwendungen des Hauptschuldners aus dem Rechtsverhältnis zum Bürgen, etwa aus dem Auftrag, bleiben unberührt (§ 774 Abs. 1 S. 3 BGB). Daneben hat der Bürge einen
+    Anspruch aus dem Innenverhältnis zum Hauptschuldner, meist Auftrag (§ 670 BGB) oder Geschäftsführung
+    ohne Auftrag (§§ 683, 670 BGB). Gibt der Gläubiger eine mit der Forderung verbundene Sicherheit
+    auf, wird der Bürge frei, soweit er daraus hätte Ersatz erlangen können (§ 776 BGB).
+  norms:
+  - § 774 Abs. 1 BGB
+  - § 401 BGB
+  - § 670 BGB
+  - § 776 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-buerg-bverfg-buergschaft
+  type: rechtsprechung
+  front: Welche Vorgaben macht das Bundesverfassungsgericht zur Bürgschaft eines strukturell
+    unterlegenen Bürgen?
+  back: Das Bundesverfassungsgericht hat in der Bürgschaftsentscheidung entschieden, dass
+    die Zivilgerichte bei Verträgen, in denen ein Vertragspartner so stark überlegen ist,
+    dass er den Vertragsinhalt faktisch einseitig bestimmen kann, und die für den unterlegenen
+    Teil ungewöhnlich belastend sind, die Privatautonomie schützen müssen (BVerfGE 89, 214).
+    Die Generalklauseln (§§ 138, 242 BGB) sind Einbruchstellen der Grundrechte (Art. 2 Abs.
+    1 GG, Sozialstaatsprinzip) in das Privatrecht. Auf dieser Grundlage hat der BGH die Rechtsprechung
+    zur sittenwidrigen Angehörigenbürgschaft entwickelt. Die Entscheidung betraf die Bürgschaft
+    einer jungen, vermögenslosen Tochter für Verbindlichkeiten ihres Vaters.
+  norms:
+  - § 138 Abs. 1 BGB
+  - § 242 BGB
+  - Art. 2 Abs. 1 GG
+  quellen:
+  - BGB, amtliche Fassung
+  - BVerfGE 89, 214 (Bürgschaftsentscheidung)
+  - BVerfG, Beschluss vom 19.10.1993 - 1 BvR 567/89, 1 BvR 1044/89 (BVerfGE 89, 214)
+  - BGH, Urteil vom 28.5.2002 - XI ZR 199/01 (NJW 2002, 2634; Gesellschafter, Strohmann-Ausnahme)
+  - Eigenformulierung Redaktion
+- slug: zr-buerg-angehoerigenbuergschaft
+  type: definition
+  front: 'Definiere: sittenwidrige Angehörigenbürgschaft, § 138 Abs. 1 BGB'
+  back: Die Angehörigenbürgschaft ist sittenwidrig und nichtig (§ 138 Abs. 1 BGB), wenn der
+    Bürge, meist ein naher Angehöriger oder Lebenspartner des Hauptschuldners, durch die Bürgschaft
+    finanziell krass überfordert wird und weitere Umstände hinzutreten. Nach der Rechtsprechung
+    des BGH liegt eine krasse finanzielle Überforderung vor, wenn der Bürge voraussichtlich
+    nicht einmal die laufenden Zinsen der Hauptschuld aus dem pfändbaren Teil seines Einkommens
+    und Vermögens dauerhaft tragen kann. In diesem Fall wird widerleglich vermutet, dass er
+    sich aus emotionaler Verbundenheit ohne Rücksicht auf das eigene Risiko verpflichtet hat
+    und der Gläubiger dies in sittlich anstößiger Weise ausgenutzt hat. Der Gläubiger kann
+    die Vermutung widerlegen, etwa durch ein eigenes wirtschaftliches Interesse des Bürgen
+    am Darlehen. Die Vermutung greift nach der Rechtsprechung regelmäßig nicht, wenn der Bürge als Gesellschafter (mit bedeutsamem Anteil) oder Geschäftsführer für die Verbindlichkeiten des Unternehmens einsteht, weil die Bank von einem eigenen wirtschaftlichen Interesse ausgehen darf; anders nur, wenn er bloß Strohmann ist, aus emotionaler Verbundenheit bürgt und beides für die Bank evident ist (BGH, 28.5.2002 - XI ZR 199/01).
+  norms:
+  - § 138 Abs. 1 BGB
+  - § 765 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-buerg-abgrenzung
+  type: definition
+  front: 'Abgrenzung: Bürgschaft, selbstständige Garantie und Kreditauftrag'
+  back: 'Die Bürgschaft (§ 765 BGB) ist akzessorisch, einseitig verpflichtend und formbedürftig
+    (§ 766 BGB). Die selbstständige Garantie (§ 311 Abs. 1 BGB) ist ein Vertrag, durch den der
+    Garantiegeber verspricht, für einen bestimmten Erfolg oder das Ausbleiben eines Schadens einzustehen;
+    sie ist nicht akzessorisch und formfrei. Der Garant kann dem Gläubiger deshalb Einwendungen
+    aus dem Verhältnis zwischen Gläubiger und Hauptschuldner grundsätzlich nicht entgegenhalten.
+    Beim Kreditauftrag (§ 778 BGB) beauftragt jemand einen anderen, im eigenen Namen und auf eigene
+    Rechnung einem Dritten Kredit zu geben; er haftet dem Beauftragten dann für die Verbindlichkeit
+    des Dritten als Bürge. Entscheidend für die Einordnung ist die Auslegung der Erklärung (§§
+    133, 157 BGB): Wer nur für die Schuld eines anderen einstehen will, gibt im Zweifel eine Bürgschaft
+    ab, wer unabhängig vom Bestand der Hauptschuld einen Erfolg zusagt, eine Garantie. Zur Abgrenzung
+    vom Schuldbeitritt siehe das Thema Schuldübernahme und Schuldbeitritt.'
+  norms:
+  - § 765 BGB
+  - § 766 BGB
+  - § 311 Abs. 1 BGB
+  - § 778 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-buerg-arten
+  type: definition
+  front: Welche Arten von Bürgschaften sind zu unterscheiden?
+  back: Bei der gewöhnlichen Bürgschaft steht dem Bürgen die Einrede der Vorausklage zu (§
+    771 BGB). Bei der selbstschuldnerischen Bürgschaft hat er auf sie verzichtet (§ 773 Abs.
+    1 Nr. 1 BGB), bei Kaufleuten ist sie im Handelsgeschäft ohnehin ausgeschlossen (§ 349 HGB). Die Höchstbetragsbürgschaft
+    begrenzt die Haftung auf einen festen Betrag, die Ausfallbürgschaft setzt den Ausfall
+    des Gläubigers bei der Zwangsvollstreckung voraus. Mitbürgen haften als Gesamtschuldner
+    (§ 769 BGB). Ein Nachbürge bürgt für die Erfüllung der Verpflichtung des Bürgen; ein Rückbürge
+    sichert den Rückgriffsanspruch. Die Bürgschaft auf erstes Anfordern verpflichtet zur Zahlung
+    nach Anforderung, sodass Einwendungen erst im Rückforderungsprozess geprüft werden. Sie
+    ist wegen ihrer Härte nur eingeschränkt zulässig, besonders in Allgemeinen Geschäftsbedingungen.
+  norms:
+  - § 771 BGB
+  - § 773 BGB
+  - § 769 BGB
+  - § 349 HGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-buerg-globalbuergschaft
+  type: rechtsprechung
+  front: Ist eine Bürgschaft für alle bestehenden und künftigen Verbindlichkeiten in AGB wirksam?
+  back: Der BGH hat entschieden, dass eine in Allgemeinen Geschäftsbedingungen des Gläubigers
+    enthaltene weite Zweckerklärung, durch die die Bürgschaft nicht nur die Verbindlichkeit
+    sichert, aus Anlass derer sie übernommen wurde, sondern auch alle künftigen Verbindlichkeiten
+    des Hauptschuldners aus der Geschäftsverbindung, überraschend ist und zudem dem Grundsatz des § 767 Abs. 1 S. 3 BGB widerspricht (BGHZ 130, 19). Eine solche Klausel gilt nicht als Vertragsbestandteil (§ 305c Abs.
+    1 BGB) und hält der Inhaltskontrolle nicht stand (§ 307 BGB), weil sie das Haftungsrisiko
+    des Bürgen unkalkulierbar macht und seine Dispositionsfreiheit aushöhlt. Wirksam bleibt
+    die Bürgschaft für die Verbindlichkeit, die der Anlass der Bürgschaft war. Bei individuell
+    vereinbarter weiter Zweckerklärung gilt die Beschränkung nicht.
+  norms:
+  - § 305c Abs. 1 BGB
+  - § 307 BGB
+  - § 767 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - BGHZ 130, 19
+  - BGH, Urteil vom 18.5.1995 - IX ZR 108/94 (BGHZ 130, 19; Leitsätze 1 bis 3)
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-buerg-765
+  title: Anspruch des Gläubigers gegen den Bürgen, § 765 Abs. 1 BGB
+  norms:
+  - § 765 Abs. 1 BGB
+  - § 766 BGB
+  - § 767 BGB
+  - § 138 Abs. 1 BGB
+  - § 771 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Bürgschaftsvertrag
+    children:
+    - label: 1. Einigung von Gläubiger und Bürge über Einstehen für fremde Schuld, § 765 Abs.
+        1 BGB; Bestimmtheit von Hauptschuld und Hauptschuldner
+    - label: '2. Form: Schriftform der Bürgschaftserklärung, § 766 BGB (nicht bei § 350 HGB);
+        Heilung § 766 S. 3 BGB'
+  - label: II. Wirksamkeit
+    children:
+    - label: 1. Keine Anfechtung, keine Nichtigkeit nach § 134 BGB
+    - label: '2. Sittenwidrigkeit, § 138 Abs. 1 BGB (Angehörigenbürgschaft: krasse Überforderung,
+        Vermutung, Widerlegung)'
+    - label: 3. AGB-Kontrolle der Zweckerklärung, §§ 305c, 307 BGB
+  - label: III. Bestehende und fällige Hauptforderung
+    hinweis: 'Akzessorietät, § 767 Abs. 1 BGB; Sicherungszweck: erfasst die Bürgschaft diese
+      Forderung?'
+  - label: IV. Keine durchgreifenden Einreden
+    children:
+    - label: 1. Einreden des Hauptschuldners, § 768 BGB
+    - label: 2. Anfechtbarkeit, Aufrechenbarkeit, § 770 BGB
+    - label: 3. Vorausklage, § 771 BGB
+  - label: V. Rechtsfolge
+    hinweis: Zahlung an den Gläubiger; Übergang der Hauptforderung auf den Bürgen, § 774 BGB.
+faelle:
+- slug: zr-fall-buerg-sohn
+  title: Die Bürgschaft des Auszubildenden
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: Der Einzelunternehmer Vater V erhält von der Bank B ein Darlehen über 90.000 Euro
+    für seinen Betrieb. B verlangt zusätzliche Sicherheiten und lässt sich von V's Sohn S
+    (23 Jahre, Auszubildender, Nettoeinkommen 950 Euro, kein Vermögen) eine Bürgschaft über
+    90.000 Euro unterschreiben. S ist weder am Betrieb beteiligt noch hat er sonst einen Vorteil
+    aus dem Darlehen, die Darlehenssumme fließt allein V zu. Der Bürgschaftsvertrag wird schriftlich
+    geschlossen und enthält Betrag, Hauptschuldner und gesicherte Forderung. B kennt die Einkommens-
+    und Vermögenssituation des S und die familiäre Beziehung, belehrt S aber nicht über das
+    Risiko. Als V zahlungsunfähig wird, nimmt B den S aus der Bürgschaft in Anspruch. Das
+    Darlehen ist fällig und unstreitig in Höhe von 90.000 Euro offen.
+  question: Kann B von S Zahlung von 90.000 Euro aus der Bürgschaft verlangen?
+  steps:
+  - prompt: Welche Anspruchsgrundlage kommt in Betracht und welche Wirksamkeitsvoraussetzungen
+      sind unproblematisch?
+    erwartung: § 765 Abs. 1 BGB. Der Bürgschaftsvertrag wurde schriftlich geschlossen (§ 766
+      S. 1 BGB), er ist hinreichend bestimmt, und die Hauptforderung auf Rückzahlung des Darlehens
+      (§ 488 Abs. 1 S. 2 BGB) besteht und ist fällig (§ 767 Abs. 1 BGB).
+  - prompt: Könnte der Bürgschaftsvertrag nach § 138 Abs. 1 BGB nichtig sein?
+    erwartung: 'Ja, wegen Sittenwidrigkeit einer Angehörigenbürgschaft. Zunächst ist S krass
+      finanziell überfordert: Bei einem Einkommen von 950 Euro ohne Vermögen kann er nicht
+      einmal die laufenden Zinsen der Hauptschuld von 90.000 Euro dauerhaft tragen.'
+  - prompt: Welche Vermutung greift, und kann B sie widerlegen?
+    erwartung: Weil S als Sohn mit V eng verbunden ist, wird widerleglich vermutet, dass er
+      die Bürgschaft aus emotionaler Verbundenheit ohne Rücksicht auf das eigene Risiko übernommen
+      hat und B dies ausgenutzt hat. Ein eigenes wirtschaftliches Interesse des S am Darlehen,
+      das die Vermutung widerlegen würde, besteht nicht; B hat auch nicht aufgeklärt.
+  - prompt: Ergebnis?
+    erwartung: Die Bürgschaft ist nach § 138 Abs. 1 BGB nichtig. B hat gegen S keinen Anspruch
+      aus § 765 Abs. 1 BGB. Seine Darlehensforderung gegen V bleibt unberührt.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Anspruchsgrundlage § 765 Abs. 1 BGB, Bürgschaftsvertrag mit Schriftform nach
+        § 766 BGB geprüft
+      weight: 1.5
+      required: false
+      norms:
+      - § 765 Abs. 1 BGB
+      - § 766 BGB
+      keywords:
+      - Bürgschaftsvertrag
+      - § 765 BGB
+      - § 766 BGB
+      - Schriftform
+      - Bürgschaftserklärung
+      card_slugs:
+      - zr-buerg-begriff
+      - zr-buerg-form-766
+    - id: p2
+      label: Bestehende Hauptforderung (Darlehensrückzahlung, § 488 Abs. 1 S. 2 BGB) als Folge
+        der Akzessorietät
+      weight: 1.5
+      required: false
+      norms:
+      - § 767 Abs. 1 BGB
+      - § 488 Abs. 1 BGB
+      keywords:
+      - Akzessorietät
+      - Hauptforderung
+      - Hauptschuld
+      - § 767 BGB
+      - Darlehensrückzahlung
+      card_slugs:
+      - zr-buerg-akzessorietaet
+    - id: p3
+      label: Krasse finanzielle Überforderung des Bürgen (kein Vermögen, geringes Einkommen,
+        nicht einmal Zinsen tragbar)
+      weight: 3.0
+      required: true
+      norms:
+      - § 138 Abs. 1 BGB
+      keywords:
+      - krasse finanzielle Überforderung
+      - krass überfordert
+      - krass finanziell überfordert
+      - nicht einmal die Zinsen
+      - laufende Zinsen
+      - laufenden Zinsen
+      - pfändbares Einkommen
+      card_slugs:
+      - zr-buerg-angehoerigenbuergschaft
+    - id: p4
+      label: Widerlegliche Vermutung der Sittenwidrigkeit aus emotionaler Verbundenheit; Gläubiger
+        kann nicht widerlegen (kein eigenes wirtschaftliches Interesse)
+      weight: 3.0
+      required: true
+      norms:
+      - § 138 Abs. 1 BGB
+      keywords:
+      - Vermutung
+      - widerlegliche Vermutung
+      - emotionale Verbundenheit
+      - kein eigenes wirtschaftliches Interesse
+      - Sittenwidrigkeit
+      card_slugs:
+      - zr-buerg-angehoerigenbuergschaft
+      - zr-buerg-bverfg-buergschaft
+    - id: p5
+      label: 'Rechtsfolge: Bürgschaft nach § 138 Abs. 1 BGB nichtig; kein Zahlungsanspruch
+        der Bank'
+      weight: 2.0
+      required: true
+      norms:
+      - § 138 Abs. 1 BGB
+      - § 765 Abs. 1 BGB
+      keywords:
+      - nichtig
+      - § 138 Abs. 1 BGB
+      - sittenwidrig
+      - kein Anspruch
+      - Nichtigkeit

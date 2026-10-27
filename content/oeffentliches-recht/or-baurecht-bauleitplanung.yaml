@@ -1,0 +1,381 @@
+topic:
+  slug: or-baurecht-bauleitplanung
+  area: oeffentliches-recht
+  title: Bauleitplanung, Abwägungsgebot und Planerhaltung
+  parent: oeffentliches-recht
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-br-bl-aufgabe-erforderlichkeit
+  type: norm
+  front: Wer plant, und was verlangt das Gebot der Erforderlichkeit der Bauleitplanung (§ 1 Abs. 3 BauGB)?
+  back: >-
+    Die Bauleitplanung obliegt den Gemeinden im Rahmen ihrer Planungshoheit (Art. 28 Abs. 2 GG, § 2 Abs. 1 BauGB).
+    Nach § 1 Abs. 3 S. 1 BauGB haben sie die Bauleitpläne aufzustellen, sobald und soweit es für die städtebauliche
+    Entwicklung und Ordnung erforderlich ist. Die Gemeinde hat ein weites planerisches Ermessen, was sie für
+    städtebaulich erforderlich hält; die Schranke verbietet reine Verhinderungs- oder Negativplanungen, die nur ein
+    Bauvorhaben verhindern sollen, sowie Planungen, die objektiv nicht vollzugsfähig sind. Ein Anspruch
+    auf Aufstellung eines Bauleitplans besteht nicht, § 1 Abs. 3 S. 2 BauGB. Die Bauleitpläne sind den Zielen der
+    Raumordnung anzupassen, § 1 Abs. 4 BauGB. Das Nachbarinteresse an einem bestimmten Inhalt wird nur über das
+    Abwägungsgebot geschützt.
+  norms:
+  - § 1 Abs. 3 BauGB
+  - § 1 Abs. 4 BauGB
+  - § 2 Abs. 1 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bl-fnp-bplan
+  type: definition
+  front: Was unterscheidet Flächennutzungsplan und Bebauungsplan?
+  back: >-
+    Der Flächennutzungsplan ist der vorbereitende Bauleitplan, § 1 Abs. 2 BauGB. Er stellt für das gesamte
+    Gemeindegebiet die sich aus der beabsichtigten städtebaulichen Entwicklung ergebende Art der Bodennutzung
+    in den Grundzügen dar, § 5 Abs. 1 BauGB. Er ist keine Rechtsnorm, entfaltet gegenüber dem Bürger keine
+    unmittelbare Rechtswirkung und kann daher grundsätzlich nicht Gegenstand einer Normenkontrolle nach § 47 VwGO
+    sein; bindend wirkt er nur für die Gemeinde (Entwicklungsgebot) und im Rahmen des § 35 Abs. 3 BauGB. Eine
+    Ausnahme macht die Rechtsprechung für Darstellungen mit Ausschlusswirkung nach § 35 Abs. 3 S. 3 BauGB
+    (Konzentrationsflächen), gegen die die Normenkontrolle entsprechend § 47 Abs. 1 Nr. 1 VwGO eröffnet ist. Der Bebauungsplan ist der
+    verbindliche Bauleitplan, § 1 Abs. 2 BauGB. Er enthält die rechtsverbindlichen Festsetzungen für die städtebauliche
+    Ordnung nach § 9 BauGB und wird als Satzung beschlossen, § 10 Abs. 1 BauGB. Der Bebauungsplan ist aus dem
+    Flächennutzungsplan zu entwickeln, § 8 Abs. 2 BauGB.
+  norms:
+  - § 1 Abs. 2 BauGB
+  - § 5 Abs. 1 BauGB
+  - § 8 Abs. 2 BauGB
+  - § 10 Abs. 1 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bl-qualifizierter-bplan
+  type: definition
+  front: Welche Festsetzungen enthält ein qualifizierter Bebauungsplan, und was bewirken Festsetzungen im Allgemeinen (§ 9 BauGB)?
+  back: >-
+    Ein qualifizierter Bebauungsplan enthält mindestens Festsetzungen über die Art und das Maß der baulichen Nutzung,
+    die überbaubaren Grundstücksflächen und die örtlichen Verkehrsflächen, § 30 Abs. 1 BauGB. § 9 Abs. 1 BauGB enthält
+    einen abschließenden Katalog möglicher Festsetzungen, etwa zur Art und zum Maß der baulichen Nutzung, zur Bauweise,
+    zu Verkehrs-, Grün- und Versorgungsflächen, zum Immissionsschutz und zu Ausgleichsmaßnahmen. Es gilt der Grundsatz der
+    Typenbindung: Die Gemeinde kann nur im Rahmen des Katalogs und der BauNVO festsetzen (kein Festsetzungserfindungsrecht). Die Festsetzungen binden Bauherren und Behörden unmittelbar; sie begründen Rechte und Pflichten, ohne
+    selbst ein Bauvorhaben zu genehmigen. Dem Plan ist eine Begründung beizufügen, § 9 Abs. 8 BauGB.
+  norms:
+  - § 9 BauGB
+  - § 30 Abs. 1 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bl-aufstellungsverfahren
+  type: norm
+  front: Wie läuft das Aufstellungsverfahren für einen Bebauungsplan ab (§§ 1 bis 10 BauGB)?
+  back: >-
+    Das Verfahren beginnt mit dem Aufstellungsbeschluss, der ortsüblich bekannt zu machen ist, § 2 Abs. 1 BauGB.
+    Es folgen die frühzeitige Beteiligung der Öffentlichkeit und der Behörden (§§ 3 Abs. 1, 4 Abs. 1 BauGB), die
+    Erarbeitung des Entwurfs mit Begründung und Umweltbericht nach einer Umweltprüfung (§§ 2 Abs. 4, 2a BauGB), die
+    förmliche Beteiligung der Öffentlichkeit durch Veröffentlichung des Entwurfs für die Dauer eines Monats (§ 3 Abs. 2
+    BauGB) und die Beteiligung der Behörden (§ 4 Abs. 2 BauGB). Die Gemeinde prüft die Stellungnahmen und wägt die
+    betroffenen Belange gegeneinander ab, § 1 Abs. 7 BauGB. Danach beschließt der Gemeinderat den Bebauungsplan als
+    Satzung (§ 10 Abs. 1 BauGB). Der Beschluss wird ortsüblich bekannt gemacht; mit der Bekanntmachung tritt der Plan
+    in Kraft, § 10 Abs. 3 BauGB. Für Bebauungspläne der Innenentwicklung ist ein beschleunigtes Verfahren (§ 13a BauGB)
+    mit Erleichterungen vorgesehen.
+  norms:
+  - § 2 Abs. 1 BauGB
+  - § 3 BauGB
+  - § 4 BauGB
+  - § 10 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bl-abwaegungsgebot
+  type: norm
+  front: Was verlangt das Abwägungsgebot des § 1 Abs. 7 BauGB, und welche Belange sind einzustellen?
+  back: >-
+    Bei der Aufstellung der Bauleitpläne sind die öffentlichen und privaten Belange gegeneinander und untereinander
+    gerecht abzuwägen, § 1 Abs. 7 BauGB. Zunächst muss die Gemeinde die abwägungserheblichen Belange ermitteln und
+    bewerten, § 2 Abs. 3 BauGB; § 1 Abs. 6 BauGB nennt beispielhaft die zu berücksichtigenden Belange (Wohnbedürfnisse,
+    Umwelt-, Natur- und Klimaschutz, Immissionsschutz, Verkehr, Wirtschaft und andere). Zu den privaten Belangen zählt
+    vor allem das Eigentum der Betroffenen, Art. 14 GG. Abwägungserheblich sind Belange, die mehr als geringfügig,
+    schutzwürdig und für die Gemeinde erkennbar sind. Die Gemeinde hat bei der Gewichtung einen planerischen
+    Gestaltungsspielraum; das Gebot verlangt aber, dass der Ausgleich nicht zur objektiven Gewichtung einzelner Belange in
+    einem Missverhältnis steht. Die Abwägung schließt die Konfliktbewältigung ein: Der Plan muss die von ihm ausgelösten
+    Konflikte lösen oder darf sie nur nachlagern, wenn deren Lösung gesichert erscheint.
+  norms:
+  - § 1 Abs. 7 BauGB
+  - § 1 Abs. 6 BauGB
+  - § 2 Abs. 3 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bl-abwaegungsfehlerlehre
+  type: rechtsprechung
+  front: Welche Abwägungsfehler unterscheidet die Abwägungsfehlerlehre des Bundesverwaltungsgerichts?
+  back: >-
+    Das Bundesverwaltungsgericht hat das Abwägungsgebot in der Entscheidung BVerwGE 34, 301 konkretisiert; daran
+    anknüpfend werden vier Fehlerformen unterschieden, die auch bei der Prüfung des Bebauungsplans heranzuziehen sind. Ein
+    Abwägungsausfall liegt vor, wenn eine Abwägung überhaupt nicht stattgefunden hat. Ein Abwägungsdefizit
+    besteht, wenn in die Abwägung nicht eingestellt wurde, was nach Lage der Dinge eingestellt werden musste.
+    Eine Abwägungsfehleinschätzung liegt vor, wenn die Bedeutung der betroffenen privaten Belange verkannt
+    wurde. Eine Abwägungsdisproportionalität ist gegeben, wenn der Ausgleich zwischen den von der Planung
+    berührten Belangen in einer Weise vorgenommen wird, die zur objektiven Gewichtung einzelner Belange außer
+    Verhältnis steht. Innerhalb dieser Grenzen ist die Entscheidung für den einen und gegen den anderen Belang
+    Teil der planerischen Gestaltungsfreiheit.
+  norms:
+  - § 1 Abs. 7 BauGB
+  quellen:
+  - BVerwGE 34, 301
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bl-214-erheblichkeit
+  type: norm
+  front: Wann sind Verfahrens- und Abwägungsfehler nach § 214 BauGB beachtlich?
+  back: >-
+    § 214 BauGB regelt die Planerhaltung. Nach § 214 Abs. 1 S. 1 BauGB ist die Verletzung bestimmter Verfahrens- und
+    Formvorschriften beachtlich, etwa der Vorschriften über die Beteiligung der Öffentlichkeit und der Behörden. Ein
+    Ermittlungs- und Bewertungsfehler nach § 2 Abs. 3 BauGB fällt unter § 214 Abs. 1 S. 1 Nr. 1 BauGB (nicht unter
+    Abs. 3 S. 2) und ist nur beachtlich, wenn Belange, die der Gemeinde bekannt
+    waren oder hätten bekannt sein müssen, in wesentlichen Punkten nicht zutreffend ermittelt oder bewertet wurden und der
+    Mangel offensichtlich und auf das Ergebnis des Verfahrens von Einfluss gewesen ist (Nr. 1). Für den Abwägungsvorgang im Übrigen
+    gilt § 214 Abs. 3 S. 2 BauGB: Mängel im Abwägungsvorgang sind nur erheblich, wenn sie offensichtlich und auf
+    das Abwägungsergebnis von Einfluss gewesen sind. Offensichtlich ist, was sich aus Akten und Planunterlagen ergibt; von Einfluss ist ein Mangel bei konkreter Möglichkeit anderer Planung. Maßgeblich ist die Sach- und Rechtslage bei Beschlussfassung über die Satzung, § 214
+    Abs. 3 S. 1 BauGB. Fehler im Abwägungsergebnis sind stets erheblich.
+  norms:
+  - § 214 Abs. 1 BauGB
+  - § 214 Abs. 3 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bl-215-ruegefrist
+  type: norm
+  front: Was regeln § 215 BauGB (Rügefrist) und § 214 Abs. 4 BauGB (ergänzendes Verfahren)?
+  back: >-
+    Nach § 215 Abs. 1 BauGB werden beachtliche Verletzungen von Verfahrens- und Formvorschriften (§ 214 Abs. 1 Nr. 1
+    bis 3) und Mängel der Abwägung (§ 214 Abs. 3 S. 2) unbeachtlich, wenn sie nicht innerhalb eines Jahres seit
+    Bekanntmachung des Bebauungsplans schriftlich gegenüber der Gemeinde geltend gemacht worden sind; die Rüge muss den
+    Sachverhalt, der den Mangel begründen soll, darlegen. Voraussetzung ist, dass bei der Bekanntmachung auf die
+    Voraussetzungen der Geltendmachung und die Rechtsfolgen hingewiesen wurde, § 215 Abs. 2 BauGB. Nach
+    § 214 Abs. 4 BauGB kann die Gemeinde einen Mangel in einem ergänzenden Verfahren beheben und den Plan
+    gegebenenfalls rückwirkend in Kraft setzen. Beide Vorschriften dienen der Planerhaltung: Der Plan soll nicht an
+    behebbaren Mängeln scheitern. Ein Normenkontrollantrag ist unabhängig von der Rüge zulässig, kann aber wegen
+    Unbeachtlichkeit der Mängel unbegründet sein.
+  norms:
+  - § 215 Abs. 1 BauGB
+  - § 215 Abs. 2 BauGB
+  - § 214 Abs. 4 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bl-normenkontrolle
+  type: norm
+  front: Welche Zulässigkeitsvoraussetzungen hat die Normenkontrolle gegen einen Bebauungsplan (§ 47 VwGO)?
+  back: >-
+    Gegen Bebauungspläne als Satzungen nach dem Baugesetzbuch ist die Normenkontrolle vor dem Oberverwaltungsgericht
+    (Verwaltungsgerichtshof) statthaft, § 47 Abs. 1 Nr. 1 VwGO. Antragsbefugt ist jede natürliche oder juristische Person,
+    die geltend macht, durch die Rechtsvorschrift oder deren Anwendung in ihren Rechten verletzt zu sein oder in
+    absehbarer Zeit verletzt zu werden, § 47 Abs. 2 S. 1 VwGO. Bei Bebauungsplänen genügt die Möglichkeit, in dem
+    Recht auf gerechte Abwägung der eigenen Belange (§ 1 Abs. 7 BauGB) verletzt zu sein; Eigentümer im Plangebiet und
+    Nachbarn, deren Belange abwägungserheblich sind, sind antragsbefugt. Der Antrag ist binnen eines Jahres nach
+    Bekanntmachung der Rechtsvorschrift zu stellen, § 47 Abs. 2 S. 1 VwGO. Es muss ein Rechtsschutzbedürfnis bestehen.
+    Ist der Antrag begründet, erklärt das Gericht die Satzung für unwirksam; die Entscheidung ist allgemein verbindlich,
+    § 47 Abs. 5 S. 2 VwGO.
+  norms:
+  - § 47 Abs. 1 Nr. 1 VwGO
+  - § 47 Abs. 2 VwGO
+  - § 47 Abs. 5 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bl-veraenderungssperre
+  type: norm
+  front: Was regelt die Veränderungssperre (§§ 14, 16, 17 BauGB), und welche Voraussetzungen hat sie?
+  back: >-
+    Die Veränderungssperre sichert die Bauleitplanung, indem sie die Planung vor vollendeten Tatsachen schützt. Die Gemeinde
+    kann sie beschließen, wenn ein Beschluss über die Aufstellung eines Bebauungsplans gefasst ist, § 14 Abs. 1 BauGB.
+    Sie ergeht als Satzung, § 16 Abs. 1 BauGB. Voraussetzung ist, dass die Planung ein Mindestmaß an Konkretisierung
+    erreicht hat (Sicherungsbedürfnis) und nicht lediglich der Verhinderung eines Vorhabens dient (keine Negativplanung).
+    Wirkung: Vorhaben im Sinne des § 29 BauGB dürfen nicht durchgeführt, erhebliche oder wesentlich wertsteigernde
+    Veränderungen nicht vorgenommen werden. Ausnahmen kann die Baugenehmigungsbehörde im Einvernehmen mit der Gemeinde
+    zulassen, § 14 Abs. 2 BauGB. Die Geltungsdauer beträgt zwei Jahre, § 17 Abs. 1 S. 1 BauGB; die Zeit einer Zurückstellung ist anzurechnen
+    (S. 2). Die Gemeinde kann um ein Jahr verlängern (S. 3) und bei besonderen Umständen um ein weiteres Jahr
+    (Abs. 2); eine außer Kraft getretene Sperre kann unter bestimmten Voraussetzungen erneut beschlossen werden
+    (Abs. 3). Dauert die Veränderungssperre länger als vier Jahre (ab Beginn oder erster Zurückstellung), besteht
+    ein Entschädigungsanspruch gegen die Gemeinde, § 18 Abs. 1, 2 BauGB.
+  norms:
+  - § 14 BauGB
+  - § 16 BauGB
+  - § 17 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bl-zurueckstellung
+  type: norm
+  front: Was ist die Zurückstellung von Baugesuchen (§ 15 BauGB)?
+  back: >-
+    Wird eine Veränderungssperre nicht beschlossen, obwohl die Voraussetzungen vorliegen, hat die Baugenehmigungsbehörde auf
+    Antrag der Gemeinde die Entscheidung über die Zulässigkeit eines Vorhabens für einen Zeitraum von bis zu zwölf Monaten
+    auszusetzen, § 15 Abs. 1 BauGB, wenn zu befürchten ist, dass die Durchführung des Vorhabens die Planung unmöglich machen
+    oder wesentlich erschweren würde. Die Zurückstellung ist ein Verwaltungsakt gegenüber dem Bauherrn und wird auf die
+    Dauer einer späteren Veränderungssperre angerechnet. Im Unterschied zur Veränderungssperre betrifft sie nur das einzelne
+    Baugesuch und ist ein flexibleres Mittel; sie setzt voraus, dass die Gemeinde einen Aufstellungsbeschluss gefasst und
+    ein Sicherungsbedürfnis hat. Rechtsschutz des Bauherrn: Widerspruch und Anfechtungsklage gegen die
+    Zurückstellung.
+  norms:
+  - § 15 Abs. 1 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: or-schema-br-bl-bebauungsplan-rechtmaessigkeit
+  title: Rechtmäßigkeit eines Bebauungsplans (Normenkontrolle)
+  norms:
+  - § 47 VwGO
+  - § 1 Abs. 7 BauGB
+  - §§ 214, 215 BauGB
+  quellen:
+  - BauGB, amtliche Fassung
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: A. Zulässigkeit des Normenkontrollantrags, § 47 VwGO
+    children:
+    - label: I. Statthaftigkeit – Bebauungsplan als Satzung nach dem BauGB, § 47 Abs. 1 Nr. 1 VwGO
+    - label: II. Antragsbefugnis, § 47 Abs. 2 S. 1 VwGO
+      hinweis: Möglichkeit der Verletzung des Rechts auf gerechte Abwägung der eigenen Belange.
+    - label: III. Antragsfrist – ein Jahr nach Bekanntmachung
+    - label: IV. Antragsgegner und Gericht – Gemeinde, OVG oder VGH
+    - label: V. Rechtsschutzbedürfnis
+  - label: B. Begründetheit
+    children:
+    - label: I. Formelle Rechtmäßigkeit
+      children:
+      - label: 1. Zuständigkeit (Gemeinderat) und Verfahren (§§ 2 bis 4a BauGB)
+      - label: 2. Satzungsbeschluss, Ausfertigung, Bekanntmachung (§ 10 BauGB)
+    - label: II. Materielle Rechtmäßigkeit
+      children:
+      - label: 1. Erforderlichkeit, § 1 Abs. 3 BauGB
+      - label: 2. Anpassung an Ziele der Raumordnung, § 1 Abs. 4 BauGB
+      - label: 3. Entwicklungsgebot, § 8 Abs. 2 BauGB
+      - label: 4. Zulässige Festsetzungen, § 9 BauGB, BauNVO
+      - label: 5. Abwägungsgebot, § 1 Abs. 7 BauGB
+        hinweis: Ermittlung (§ 2 Abs. 3), Ausfall, Defizit, Fehleinschätzung, Disproportionalität.
+    - label: III. Beachtlichkeit der Mängel
+      children:
+      - label: 1. §§ 214, 215 BauGB – Offensichtlichkeit, Einfluss auf das Ergebnis, Rüge binnen eines Jahres
+      - label: 2. Ergänzendes Verfahren, § 214 Abs. 4 BauGB
+    - label: IV. Rechtsfolge – Unwirksamkeit, § 47 Abs. 5 S. 2 VwGO
+faelle:
+- slug: or-fall-br-bl-gewerbegebiet-normenkontrolle
+  title: Das Gewerbegebiet neben dem Wohnhaus
+  difficulty: 4
+  minutes: 70
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BauGB, amtliche Fassung
+  - VwGO, amtliche Fassung
+  facts: >-
+    Die Gemeinde G beschließt als Satzung den Bebauungsplan „Gewerbepark Ost“, der auf einer bislang unbebauten
+    Fläche ein Gewerbegebiet im Sinne von § 8 BauNVO festsetzt. Die Fläche grenzt unmittelbar an das Wohnhaus des N,
+    das in einem allgemeinen Wohngebiet liegt. Während der Beteiligung der Öffentlichkeit hat N schriftlich vorgetragen, der
+    zu erwartende Lärm von Lkw-Verkehr und Betrieben werde ihn unzumutbar beeinträchtigen, und ein Gutachten gefordert.
+    Der Gemeinderat hat den Einwand in der Sitzung nicht erörtert, kein Lärmgutachten eingeholt und keine
+    Lärmschutzfestsetzungen aufgenommen; die Begründung des Plans enthält zum Lärm keine Ausführungen. Der Plan wird am
+    1. März bekannt gemacht, die Bekanntmachung enthält die Hinweise nach § 215 Abs. 2 BauGB. N rügt die
+    Abwägungsmängel am 1. Juli schriftlich bei der Gemeinde und stellt am 1. November des gleichen Jahres beim zuständigen
+    Oberverwaltungsgericht einen Normenkontrollantrag.
+  question: Ist der Normenkontrollantrag des N zulässig und begründet?
+  steps:
+  - prompt: Ist der Normenkontrollantrag zulässig?
+    erwartung: Statthaft nach § 47 Abs. 1 Nr. 1 VwGO (Bebauungsplan als Satzung nach dem BauGB). N ist antragsbefugt, weil seine Lärmschutzinteressen abwägungserheblich sind und er in seinem Recht auf gerechte Abwägung nach § 1 Abs. 7 BauGB verletzt sein kann (§ 47 Abs. 2 S. 1 VwGO). Die Jahresfrist ist gewahrt (Antrag am 1. November, Bekanntmachung am 1. März).
+  - prompt: Liegt ein Fehler im Verfahren oder in der Abwägung vor?
+    erwartung: Ja. Die Lärmbelange des N waren der Gemeinde bekannt (Einwand im Auslegungsverfahren); sie hat sie nicht ermittelt und bewertet (§ 2 Abs. 3 BauGB) und nicht in die Abwägung eingestellt. Das ist ein Ermittlungs- und Bewertungsdefizit (§ 2 Abs. 3 BauGB) und zugleich ein Abwägungsdefizit im Sinne der Abwägungsfehlerlehre, § 1 Abs. 7 BauGB.
+  - prompt: Ist der Mangel nach den §§ 214, 215 BauGB beachtlich?
+    erwartung: Der Ermittlungs- und Bewertungsfehler ist nach § 214 Abs. 1 S. 1 Nr. 1 BauGB beachtlich, denn er betrifft wesentliche, der Gemeinde bekannte Belange, ist offensichtlich (ergibt sich aus Akten und Begründung) und von Einfluss auf das Ergebnis des Verfahrens, weil bei Berücksichtigung des Lärms konkret möglich ist, dass die Gemeinde anders geplant hätte (z. B. Gliederung, Lärmkontingente). Für den Abwägungsvorgang im Übrigen gilt dasselbe nach § 214 Abs. 3 S. 2 BauGB. Der Mangel ist nicht unbeachtlich geworden, weil N ihn innerhalb eines Jahres seit Bekanntmachung schriftlich gerügt hat (§ 215 Abs. 1 BauGB). Der Hinweis nach § 215 Abs. 2 BauGB wurde erteilt.
+  - prompt: Welche Rechtsfolge hat die Entscheidung des Gerichts, und was kann die Gemeinde tun?
+    erwartung: Der Antrag ist begründet. Das Gericht erklärt den Bebauungsplan für unwirksam, die Entscheidung ist allgemein verbindlich (§ 47 Abs. 5 S. 2 VwGO). Die Gemeinde kann den Mangel in einem ergänzenden Verfahren beheben und den Plan ggf. rückwirkend in Kraft setzen (§ 214 Abs. 4 BauGB).
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Statthaftigkeit (§ 47 Abs. 1 Nr. 1 VwGO), Antragsbefugnis und Jahresfrist geprüft
+      weight: 2.0
+      required: true
+      norms:
+      - § 47 Abs. 1 Nr. 1 VwGO
+      - § 47 Abs. 2 VwGO
+      keywords:
+      - § 47 Abs. 1 Nr. 1 VwGO
+      - Antragsbefugnis
+      - Recht auf gerechte Abwägung
+      - Jahresfrist
+      - Normenkontrolle
+      card_slugs:
+      - or-br-bl-normenkontrolle
+    - id: p2
+      label: Abwägungsdefizit bzw. Ermittlungsdefizit hinsichtlich der Lärmbelange erkannt (§ 1 Abs. 7, § 2 Abs. 3 BauGB)
+      weight: 3.0
+      required: true
+      norms:
+      - § 1 Abs. 7 BauGB
+      - § 2 Abs. 3 BauGB
+      keywords:
+      - Abwägungsdefizit
+      - Abwägungsgebot
+      - § 1 Abs. 7 BauGB
+      - Ermittlung und Bewertung der Belange
+      - § 2 Abs. 3 BauGB
+      - Lärmschutzbelange
+      card_slugs:
+      - or-br-bl-abwaegungsgebot
+      - or-br-bl-abwaegungsfehlerlehre
+    - id: p3
+      label: Beachtlichkeit des Mangels (offensichtlich, Einfluss auf das Ergebnis) nach § 214 BauGB und rechtzeitige Rüge nach § 215 BauGB
+      weight: 2.5
+      required: true
+      norms:
+      - § 214 Abs. 1 BauGB
+      - § 214 Abs. 3 BauGB
+      - § 215 Abs. 1 BauGB
+      keywords:
+      - § 214 Abs. 1 S. 1 Nr. 1 BauGB
+      - § 214 Abs. 3 S. 2 BauGB
+      - offensichtlich
+      - von Einfluss auf das Ergebnis
+      - § 215 Abs. 1 BauGB
+      - Rügefrist
+      - Planerhaltung
+      card_slugs:
+      - or-br-bl-214-erheblichkeit
+      - or-br-bl-215-ruegefrist
+    - id: p4
+      label: Rechtsfolge – Unwirksamkeit des Plans (allgemein verbindlich) und Möglichkeit des ergänzenden Verfahrens
+      weight: 1.5
+      required: false
+      norms:
+      - § 47 Abs. 5 VwGO
+      - § 214 Abs. 4 BauGB
+      keywords:
+      - Unwirksamkeit
+      - allgemein verbindlich
+      - § 47 Abs. 5 S. 2 VwGO
+      - ergänzendes Verfahren
+      - § 214 Abs. 4 BauGB
+      card_slugs:
+      - or-br-bl-215-ruegefrist
+    - id: p5
+      label: 'Ergebnis: Antrag zulässig und begründet'
+      weight: 1.0
+      required: false
+      keywords:
+      - Antrag ist zulässig und begründet
+      - Bebauungsplan ist unwirksam
+      - Normenkontrollantrag hat Erfolg

@@ -1,0 +1,321 @@
+topic:
+  slug: zr-bt-digitale-produkte
+  area: zivilrecht
+  title: Digitale Produkte und Waren mit digitalen Elementen, §§ 327 ff., 475a ff. BGB
+  parent: zr-bgb-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-dig-anwendungsbereich
+  type: norm
+  front: Wann gelten die §§ 327 ff. BGB über Verbraucherverträge über digitale Produkte?
+  back: 'Die §§ 327 ff. BGB gelten für Verbraucherverträge, bei denen der Unternehmer ein
+    digitales Produkt bereitstellt oder sich dazu verpflichtet und der Verbraucher dafür einen
+    Preis zahlt oder sich dazu verpflichtet (§ 327 Abs. 1 S. 1 BGB). Sie sind auch anwendbar,
+    wenn der Verbraucher dem Unternehmer personenbezogene Daten bereitstellt oder sich dazu
+    verpflichtet; ausgenommen ist der Fall, dass der Unternehmer die Daten ausschließlich
+    zur Erfüllung seiner Leistungspflicht oder gesetzlicher Anforderungen verarbeitet (§ 327
+    Abs. 3 BGB). Der Vertragstyp ist unerheblich: Kauf, Miete, Werk oder gemischte Verträge
+    können erfasst sein, die Vorschriften enthalten ein eigenes Leistungsstörungsregime. Maßgeblich
+    ist, dass das digitale Produkt Vertragsgegenstand ist, nicht die Sache. Das Gesetz geht
+    damit über das reine Kaufrecht hinaus und erfasst Software, Apps, Streaming, Cloud-Dienste
+    und soziale Netzwerke.'
+  norms:
+  - § 327 Abs. 1 BGB
+  - § 327 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-dig-begriffe
+  type: definition
+  front: 'Definiere: digitale Inhalte und digitale Dienstleistungen, § 327 Abs. 2 BGB'
+  back: Digitale Produkte sind digitale Inhalte und digitale Dienstleistungen (§ 327 Abs.
+    2 BGB). Digitale Inhalte sind Daten, die in digitaler Form erstellt und bereitgestellt
+    werden, zum Beispiel Software, Apps, E-Books, Musikdateien oder Videos. Digitale Dienstleistungen
+    sind Dienstleistungen, die dem Verbraucher die Erstellung, Verarbeitung oder Speicherung
+    von Daten in digitaler Form oder den Zugang zu solchen Daten ermöglichen oder die gemeinsame
+    Nutzung der vom Verbraucher oder anderen Nutzern hochgeladenen Daten oder sonstige Interaktion
+    mit diesen Daten ermöglichen. Dazu zählen Cloud-Speicher, Software-as-a-Service und Plattformen.
+    Die Unterscheidung wirkt sich bei der Bereitstellung (einmalig oder dauerhaft) und bei
+    der Aktualisierungspflicht aus.
+  norms:
+  - § 327 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-dig-abgrenzung-ware
+  type: definition
+  front: 'Definiere: Ware mit digitalen Elementen und grenze sie von digitalen Produkten ab'
+  back: Eine Ware mit digitalen Elementen ist eine bewegliche Sache, die in einer Weise digitale
+    Inhalte oder digitale Dienstleistungen enthält oder mit ihnen verbunden ist, dass sie
+    ihre Funktionen ohne diese digitalen Elemente nicht erfüllen kann (§ 327a Abs. 3 BGB). Beispiele
+    sind ein Smartphone, ein Smart-TV oder ein vernetztes Auto. Für den Kauf solcher Waren
+    durch einen Verbraucher gelten nicht die §§ 327 ff. BGB, sondern das Kaufrecht in Verbindung
+    mit den §§ 475b ff. BGB, die insbesondere eine Aktualisierungspflicht des Verkäufers vorsehen.
+    Wird dagegen ein digitaler Inhalt separat verkauft, etwa als Download-Software, gelten
+    die §§ 327 ff. BGB. Auch beim Kauf eines Datenträgers, der ausschließlich als Träger digitaler Inhalte dient, gelten für Mängel nicht die §§ 434 ff. BGB, sondern die §§ 327 ff. BGB (§ 475a Abs. 1 BGB); Gleiches gilt nach § 475a Abs. 2 BGB für digitale Bestandteile einer Ware, die ihre Funktionen auch ohne diese erfüllen kann.
+  norms:
+  - § 327a BGB
+  - § 475a BGB
+  - § 475b BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-dig-bereitstellung
+  type: norm
+  front: Wie ist die Bereitstellung geregelt und was gilt bei Nichtbereitstellung (§§ 327b,
+    327c BGB)?
+  back: Der Unternehmer hat das digitale Produkt unverzüglich nach Vertragsschluss bereitzustellen,
+    sofern die Parteien nichts anderes vereinbart haben (§ 327b Abs. 2 BGB). Bereitgestellt
+    ist es (§ 327b Abs. 3 und 4 BGB), wenn der Verbraucher Zugriff darauf erhält (bei digitalen Inhalten etwa durch
+    Download-Möglichkeit) oder die digitale Dienstleistung für ihn zugänglich ist. Stellt der Unternehmer das Produkt nicht bereit, kann der Verbraucher ihn zur Bereitstellung auffordern; eine Fristsetzung ist dafür nicht erforderlich. Leistet der Unternehmer nicht unverzüglich nach der Aufforderung, kann der Verbraucher den Vertrag beenden (§ 327c Abs. 1 BGB), ohne dass es eines Rücktritts bedarf. Die Aufforderung ist entbehrlich, wenn der Unternehmer die Bereitstellung verweigert, sich aus den Umständen ergibt, dass er nicht leisten wird, oder ein Fixgeschäft vorliegt (§ 327c Abs. 3 BGB); daneben kann Schadensersatz verlangt werden (§ 327c Abs. 2 BGB).
+  norms:
+  - § 327b BGB
+  - § 327c BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-dig-produktmangel
+  type: norm
+  front: Wann ist ein digitales Produkt mangelhaft (§§ 327d, 327e BGB)?
+  back: Der Unternehmer hat das digitale Produkt frei von Produktmängeln und Rechtsmängeln
+    bereitzustellen (§ 327d BGB). Ein Produktmangel liegt vor, wenn das Produkt den subjektiven
+    Anforderungen, den objektiven Anforderungen oder den Anforderungen an die Integration
+    (Installation) nicht entspricht (§ 327e BGB). Subjektive Anforderungen ergeben sich aus
+    der vereinbarten Beschaffenheit, Funktionalität, Kompatibilität und Interoperabilität
+    sowie aus Zubehör, Anleitungen und Kundendienst. Objektive Anforderungen betreffen die
+    Eignung für die gewöhnliche Verwendung, die übliche Beschaffenheit einschließlich Haltbarkeit
+    und Sicherheit sowie die Aktualisierung. Der Aufbau entspricht damit der kaufrechtlichen
+    Systematik des § 434 BGB. Von den objektiven Anforderungen darf der Unternehmer nur abweichen,
+    wenn der Verbraucher vor Vertragsschluss eigens informiert wurde und die Abweichung ausdrücklich
+    und gesondert vereinbart wurde (§ 327h BGB).
+  norms:
+  - § 327d BGB
+  - § 327e BGB
+  - § 327h BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-dig-aktualisierung
+  type: norm
+  front: Welche Aktualisierungspflicht trifft den Unternehmer (§ 327f BGB)?
+  back: Der Unternehmer muss dafür sorgen, dass dem Verbraucher während des maßgeblichen Zeitraums
+    Aktualisierungen bereitgestellt werden, die für den Erhalt der Vertragsmäßigkeit des digitalen
+    Produkts erforderlich sind, einschließlich Sicherheitsaktualisierungen, und ihn über diese
+    informieren (§ 327f Abs. 1 BGB). Der Zeitraum richtet sich danach, ob das Produkt dauerhaft
+    bereitgestellt wird (dann während der Vertragslaufzeit) oder einmalig (dann nach dem,
+    was der Verbraucher nach Art und Zweck des Produkts und den Umständen erwarten darf).
+    Die Haftung entfällt, wenn der Verbraucher eine bereitgestellte Aktualisierung nicht innerhalb
+    angemessener Zeit installiert und der Mangel allein darauf beruht, sofern der Unternehmer
+    ihn zuvor über die Aktualisierung und die Folgen der Nichtinstallation informiert hatte
+    und die Anleitung nicht fehlerhaft war (§ 327f Abs. 2 BGB).
+  norms:
+  - § 327f Abs. 1 BGB
+  - § 327f Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-dig-rechte-bei-mangel
+  type: norm
+  front: Welche Rechte hat der Verbraucher bei einem Mangel des digitalen Produkts (§§ 327i
+    ff. BGB)?
+  back: 'Der Verbraucher hat bei einem Mangel gestufte Rechte, die dem Kaufrecht nachgebildet
+    sind: Nacherfüllung (§ 327l BGB), also Herstellung der Vertragsmäßigkeit innerhalb angemessener
+    Frist und ohne erhebliche Unannehmlichkeiten, und, wenn Nacherfüllung ausgeschlossen ist, nicht oder nicht ordnungsgemäß erbracht wird oder der Mangel besonders schwer wiegt, Vertragsbeendigung (§ 327m Abs. 1 BGB) oder Minderung (§ 327n BGB) sowie Schadensersatz und Ersatz vergeblicher Aufwendungen (§ 327i Nr. 3 BGB). Anders als im Kaufrecht ist keine Fristsetzung erforderlich; das Lösungsrecht heißt Vertragsbeendigung, und die Rückabwicklung folgt Sonderregeln (§§ 327o ff. BGB), nicht dem allgemeinen Rücktrittsrecht. Bei einem unerheblichen Mangel ist die Vertragsbeendigung ausgeschlossen (§ 327m Abs. 2 BGB); das gilt nicht, wenn der Verbraucher nur Daten bereitstellt. Die Verjährung
+    beträgt im Regelfall zwei Jahre (§ 327j BGB).'
+  norms:
+  - § 327i BGB
+  - § 327l BGB
+  - § 327m BGB
+  - § 327n BGB
+  - § 327j BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-dig-beweislast-327k
+  type: norm
+  front: Wie verteilt § 327k BGB die Beweislast?
+  back: Zeigt sich bei einer einmaligen Bereitstellung innerhalb eines Jahres seit Bereitstellung
+    ein Produktmangel, wird vermutet, dass das digitale Produkt schon bei Bereitstellung mangelhaft
+    war (§ 327k Abs. 1 BGB). Bei dauerhafter Bereitstellung gilt die Vermutung für Mängel,
+    die während der Dauer des Bereitstellungszeitraums auftreten (§ 327k Abs. 2 BGB). Die Vermutung gilt nicht, wenn die digitale Umgebung des Verbrauchers mit den technischen Anforderungen des Produkts unvereinbar war oder wenn der Verbraucher eine erforderliche und zumutbare Mitwirkung bei der Feststellung dieser Umgebung verweigert (§ 327k Abs. 3 BGB); beides setzt voraus, dass der Unternehmer vor Vertragsschluss klar darüber informiert hat (§ 327k Abs. 4 BGB). Die Regelung entspricht § 477 BGB beim Verbrauchsgüterkauf.
+  norms:
+  - § 327k BGB
+  - § 477 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-dig-datenschutz-327q
+  type: norm
+  front: Wie wirken datenschutzrechtliche Erklärungen auf den Vertrag (§ 327q BGB)?
+  back: 'Gibt der Verbraucher als Gegenleistung personenbezogene Daten, so lässt der Widerruf
+    einer datenschutzrechtlichen Einwilligung oder ein Widerspruch gegen die Verarbeitung
+    die Wirksamkeit des Vertrags nach § 327q Abs. 1 BGB unberührt; der Vertrag besteht fort.
+    Bei Verträgen über eine dauerhafte Bereitstellung oder eine Reihe einzelner Bereitstellungen kann der Unternehmer nach Widerruf der Einwilligung oder Widerspruch ohne Einhaltung einer Kündigungsfrist kündigen, wenn ihm unter Berücksichtigung des noch zulässigen Umfangs der Datenverarbeitung und der beiderseitigen Interessen die Fortsetzung bis zum vereinbarten Ende nicht zugemutet werden kann (§ 327q Abs. 2 BGB). Schadensersatz wegen der Einschränkung der Datenverarbeitung kann er nicht verlangen (§ 327q Abs. 3 BGB). Damit werden Datenschutzrecht (Art. 7
+    Abs. 3 DSGVO) und Vertragsrecht verzahnt: Der Verbraucher bleibt in seiner datenschutzrechtlichen
+    Selbstbestimmung frei, der Unternehmer ist nicht schutzlos.'
+  norms:
+  - § 327q BGB
+  - Art. 7 Abs. 3 DSGVO
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-dig-aenderung-327r
+  type: norm
+  front: Wann darf der Unternehmer ein digitales Produkt ändern (§ 327r BGB)?
+  back: Bei dauerhafter Bereitstellung darf der Unternehmer das digitale Produkt über die
+    zur Vertragsmäßigkeit erforderlichen Aktualisierungen hinaus nur ändern, wenn der Vertrag
+    dies vorsieht und einen triftigen Grund nennt, dem Verbraucher keine zusätzlichen Kosten
+    entstehen und der Verbraucher klar und verständlich über die Änderung informiert wird
+    (§ 327r Abs. 1 BGB). Beeinträchtigt die Änderung den Zugang zum Produkt oder seine Nutzbarkeit
+    mehr als nur geringfügig, hat der Verbraucher ein Recht auf kostenfreie Vertragsbeendigung binnen 30 Tagen (§ 327r Abs. 3 BGB), auf das er in der Information auf einem dauerhaften Datenträger hinzuweisen ist (§ 327r Abs. 2 BGB). Die Regelung
+    begrenzt einseitige Anpassungen bei Abonnements und Plattformdiensten und ergänzt die
+    AGB-Kontrolle (§§ 307 ff. BGB).
+  norms:
+  - § 327r BGB
+  - § 307 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-dig-maengelrechte
+  title: Rechte des Verbrauchers bei mangelhaftem digitalem Produkt, §§ 327 ff. BGB
+  norms:
+  - § 327 Abs. 1 BGB
+  - § 327e BGB
+  - § 327f BGB
+  - § 327l BGB
+  - § 327m BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Anwendbarkeit der §§ 327 ff. BGB
+    hinweis: Verbrauchervertrag; digitales Produkt (Inhalt oder Dienstleistung); Preis oder
+      personenbezogene Daten als Gegenleistung. Abgrenzung zur Ware mit digitalen Elementen
+      (Kaufrecht).
+  - label: II. Bereitstellung, § 327b BGB
+  - label: III. Produktmangel, § 327e BGB
+    children:
+    - label: 1. Subjektive Anforderungen
+    - label: 2. Objektive Anforderungen, auch Aktualisierungen, § 327f BGB
+    - label: 3. Keine wirksame Abweichung, § 327h BGB
+    - label: 4. Maßgeblicher Zeitpunkt und Beweislast, § 327k BGB
+  - label: IV. Nacherfüllung, § 327l BGB
+    hinweis: Vorrang; Fristsetzung.
+  - label: V. Vertragsbeendigung oder Minderung, §§ 327m, 327n BGB
+    hinweis: Nur nach erfolgloser oder entbehrlicher Nacherfüllung.
+  - label: VI. Schadens- und Aufwendungsersatz, § 327i BGB iVm §§ 280 ff. BGB
+faelle:
+- slug: zr-fall-dig-lernsoftware
+  title: Die Lernsoftware ohne Update
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: Verbraucherin V erwirbt im Online-Shop des Softwareunternehmens U die Lizenz für
+    eine Lernsoftware, die sie gegen Zahlung von 49 Euro als Download erhält (einmalige Bereitstellung).
+    Die Software läuft zunächst einwandfrei. Fünf Monate später stellt das Betriebssystem
+    von V ein Sicherheitsupdate bereit; seitdem stürzt die Lernsoftware beim Start ab, weil
+    sie mit der neuen Betriebssystemversion nicht kompatibel ist. U hat für die Software seit
+    dem Verkauf keine Aktualisierung bereitgestellt, obwohl dies technisch ohne Weiteres möglich
+    wäre und Käufer einer solchen Software erwarten dürfen, dass sie über einen längeren Zeitraum
+    nutzbar bleibt. V fordert U schriftlich auf, innerhalb von 14 Tagen eine kompatible Version
+    bereitzustellen. U reagiert nicht. V möchte den Vertrag beenden und ihre 49 Euro zurück.
+  question: Kann V von U die Beendigung des Vertrags und Erstattung des Kaufpreises verlangen?
+  steps:
+  - prompt: Welches Recht ist anwendbar?
+    erwartung: V ist Verbraucherin, U Unternehmer. Vertragsgegenstand ist ein digitaler Inhalt
+      (Software als Download) gegen Zahlung eines Preises. Es gelten die §§ 327 ff. BGB (§
+      327 Abs. 1, 2 BGB), nicht das Kaufrecht mit Gewährleistung nach §§ 434 ff. BGB.
+  - prompt: Liegt ein Mangel vor?
+    erwartung: Ja. U hätte nach § 327f Abs. 1 BGB Aktualisierungen bereitstellen müssen, die
+      zum Erhalt der Vertragsmäßigkeit erforderlich sind, für den Zeitraum, den der Verbraucher
+      erwarten darf. Die Nichtbereitstellung eines Kompatibilitäts-Updates führt zu einem
+      Produktmangel (§ 327e BGB). Auf eine Haftungsbefreiung nach § 327f Abs. 2 BGB kann sich U nicht berufen, denn V trifft keine Obliegenheit zur Installation, weil U keine Aktualisierung bereitgestellt hat.
+  - prompt: Welche Rechte stehen V zu und in welcher Reihenfolge?
+    erwartung: Vorrangig kann V Nacherfüllung verlangen (§ 327l BGB), also Bereitstellung
+      einer kompatiblen Version. Diese hat V verlangt; U hat sie nicht innerhalb angemessener Frist erbracht. Damit sind die Voraussetzungen der Vertragsbeendigung nach § 327m Abs. 1 Nr. 2 BGB erfüllt; ein Fall der Unerheblichkeit des Mangels liegt nicht vor.
+  - prompt: Ergebnis?
+    erwartung: V kann den Vertrag durch Erklärung gegenüber U beenden (§ 327m BGB) und die
+      Erstattung der gezahlten 49 Euro verlangen. Die Rückabwicklung richtet sich nach den
+      Sonderregeln der §§ 327o ff. BGB; V darf das digitale Produkt nicht weiter nutzen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: 'Anwendbarkeit der §§ 327 ff. BGB: Verbrauchervertrag über ein digitales Produkt
+        gegen Preis (und nicht Kaufrecht über eine Ware)'
+      weight: 2.0
+      required: true
+      norms:
+      - § 327 Abs. 1 BGB
+      keywords:
+      - § 327 BGB
+      - digitale Inhalte
+      - digitales Produkt
+      - Verbrauchervertrag
+      - §§ 327 ff. BGB
+      card_slugs:
+      - zr-dig-anwendungsbereich
+      - zr-dig-begriffe
+    - id: p2
+      label: Produktmangel wegen fehlender Aktualisierung (Aktualisierungspflicht des Unternehmers,
+        § 327f BGB)
+      weight: 3.0
+      required: true
+      norms:
+      - § 327f Abs. 1 BGB
+      - § 327e BGB
+      keywords:
+      - Aktualisierung
+      - Aktualisierungspflicht
+      - § 327f BGB
+      - Produktmangel
+      - Sicherheitsaktualisierungen
+      card_slugs:
+      - zr-dig-aktualisierung
+      - zr-dig-produktmangel
+    - id: p3
+      label: Haftungsbefreiung des Unternehmers nach § 327f Abs. 2 BGB scheidet aus (keine Installationsobliegenheit des Verbrauchers)
+      weight: 1.0
+      required: false
+      norms:
+      - § 327f Abs. 2 BGB
+      keywords:
+      - Obliegenheit
+      - Installation
+      - nicht installiert
+      - § 327f Abs. 2 BGB
+    - id: p4
+      label: Vorrang der Nacherfüllung (§ 327l BGB); keine Nacherfüllung innerhalb angemessener Frist
+      weight: 2.0
+      required: true
+      norms:
+      - § 327l BGB
+      keywords:
+      - Nacherfüllung
+      - § 327l BGB
+      - angemessene Frist
+      - Frist gesetzt
+      - fruchtlos
+      card_slugs:
+      - zr-dig-rechte-bei-mangel
+    - id: p5
+      label: Vertragsbeendigung nach § 327m BGB und Erstattung des Preises
+      weight: 2.0
+      required: false
+      norms:
+      - § 327m BGB
+      keywords:
+      - Vertragsbeendigung
+      - § 327m BGB
+      - Beendigung des Vertrags
+      - Erstattung des Preises
+      - Rückzahlung des Kaufpreises
+      card_slugs:
+      - zr-dig-rechte-bei-mangel

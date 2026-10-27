@@ -1,25 +1,38 @@
 kurs:
   slug: zr-schuldrecht-bt-vertraglich
-  title: 'Schuldrecht BT I: Vertragliche Schuldverhaeltnisse'
+  title: Vertragliche Schuldverhältnisse
   area: zivilrecht
   semester_default: 3
   examenskurs: false
-  stand: 2026-09
+  stand: 2026-10
   quellen:
-  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Kaufrecht mit Maengelgewaehrleistung als Kern; Grundlagen des Kaufvertrags aus dem BGB
-    AT werden vorausgesetzt und wiederholt.
+  beschreibung: 'Die examensrelevanten Vertragstypen des Besonderen Schuldrechts: Kaufrecht mit Mängelgewährleistung,
+    Rechtsmangel, Gefahrübergang und Verbrauchsgüterkauf, digitale Produkte, Werkvertrag, Wohnraummiete, Bürgschaft,
+    Darlehen, Schenkung sowie Auftrag und Dienstvertrag.'
   lernziele:
-  - Maengelrechte des Kaeufers (§§ 434 ff. BGB) vollstaendig und in der richtigen Reihenfolge pruefen
-  - Nacherfuellung, Ruecktritt, Minderung und Schadensersatz im Kaufrecht abgrenzen
+  - Mängelrechte des Käufers (§§ 434 ff. BGB) vollständig und in der richtigen Reihenfolge prüfen
+  - Nacherfüllung, Rücktritt, Minderung und Schadensersatz im Kaufrecht abgrenzen
+  - Besonderheiten des Verbrauchsgüterkaufs und der digitalen Produkte (§§ 474 ff., 327 ff. BGB) einordnen
+  - Werkvertragliche Mängelrechte, Abnahme und Vergütung (§§ 631 ff. BGB) prüfen
+  - Kündigungs- und Mängelrecht der Wohnraummiete (§§ 535 ff. BGB) anwenden
+  - Bürgschaft (Form, Akzessorietät, Sittenwidrigkeit) und Darlehen (auch Verbraucherdarlehen) aufbauen
   klausurformat:
     typ: Fortgeschrittenenklausur
     minuten: 180
   topic_slugs:
   - zr-kaufrecht-maengelgewaehrleistung
   - zr-bgb-at
+  - zr-bt-verbrauchsgueterkauf
+  - zr-bt-kaufrecht-rechtsmangel-eigentumsvorbehalt
+  - zr-bt-digitale-produkte
+  - zr-bt-werkvertrag
+  - zr-bt-mietrecht
+  - zr-bt-buergschaft
+  - zr-bt-darlehen
+  - zr-bt-schenkung
+  - zr-bt-auftrag-dienstvertrag
   landesrecht_kategorien: []
   fehlende_themen:
-  - Werkvertragsrecht, § 631 BGB (P3)
-  - Mietrecht (P3)
+  - Reisevertragsrecht, §§ 651a ff. BGB (P3)

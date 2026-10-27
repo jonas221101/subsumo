@@ -88,12 +88,12 @@ enum SandboxErrorClass {
 /// Feste, uebersetzungsfaehige Nutzermeldungen je Fehlerklasse - dieselbe
 /// Meldung unabhaengig davon, welche Plattform die Grenze durchgesetzt hat.
 const Map<SandboxErrorClass, String> sandboxErrorMessages = {
-  SandboxErrorClass.timeout: 'Zeitlimit ueberschritten.',
-  SandboxErrorClass.memoryLimitExceeded: 'Speicherlimit ueberschritten.',
-  SandboxErrorClass.stepLimitExceeded: 'Zeitlimit ueberschritten.',
+  SandboxErrorClass.timeout: 'Zeitlimit überschritten.',
+  SandboxErrorClass.memoryLimitExceeded: 'Speicherlimit überschritten.',
+  SandboxErrorClass.stepLimitExceeded: 'Zeitlimit überschritten.',
   SandboxErrorClass.compileError: 'Werkzeug konnte nicht geladen werden.',
-  SandboxErrorClass.runtimeError: 'Werkzeug konnte nicht ausgefuehrt werden.',
-  SandboxErrorClass.invalidOutput: 'Werkzeugausgabe ungueltig.',
+  SandboxErrorClass.runtimeError: 'Werkzeug konnte nicht ausgeführt werden.',
+  SandboxErrorClass.invalidOutput: 'Werkzeugausgabe ungültig.',
 };
 
 /// Wird geworfen, wenn eine der Host-Grenzen aus [SandboxResourceLimits]

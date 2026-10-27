@@ -1,19 +1,19 @@
 universitaet:
   slug: uni-bielefeld
-  name: Universitaet Bielefeld
+  name: Universität Bielefeld
   kurzname: Uni Bielefeld
   stadt: Bielefeld
   bundesland: NW
   traegerschaft: staatlich
   stand: 2026-09
   quellen:
-  - Studien- und Pruefungsordnungen der Fakultaet (Studienverlaufsplan)
+  - Studien- und Prüfungsordnungen der Fakultät (Studienverlaufsplan)
   - Eigenformulierung Redaktion
   redaktion:
     erzeugt_von: claude-code (Redaktionsentwurf)
     status: in-pruefung
     hinweis: Kursliste = kanonischer Standard-Studienverlaufsplan (docs/32 Abschnitt 3.3). Lokale Modulnamen
-      und Semesterlage sind nicht verifiziert - ueber die Fachschafts-Beta (docs/28) einholen und als
+      und Semesterlage sind nicht verifiziert - über die Fachschafts-Beta (docs/28) einholen und als
       'titel_lokal'/'semester' nachtragen.
   besonderheiten: []
   kurse:
@@ -41,11 +41,21 @@ universitaet:
     semester: 4
   - kurs: or-verwaltungsprozessrecht
     semester: 4
+  - kurs: sr-bt-3
+    semester: 5
   - kurs: zr-sachenrecht
     semester: 5
   - kurs: or-polizei-ordnungsrecht
     semester: 5
+  - kurs: or-staatshaftung-vollstreckung
+    semester: 5
+  - kurs: sr-stpo
+    semester: 6
+  - kurs: zr-nebengebiete
+    semester: 6
   - kurs: or-kommunal-baurecht
+    semester: 6
+  - kurs: or-europarecht
     semester: 6
   - kurs: zr-examenskurs
     semester: 7

@@ -13,10 +13,9 @@ topic:
 cards:
 - slug: st-lra-vwvfg
   type: norm
-  front: Welches Verwaltungsverfahrensgesetz gilt fuer Landesbehoerden in Sachsen-Anhalt?
-  back: Verwaltungsverfahrensgesetz Sachsen-Anhalt (VwVfG LSA) - Verweisung auf das VwVfG des Bundes.
-    Das VwVfG des Bundes gilt nur fuer Bundesbehoerden (§ 1 VwVfG); fuer Landes- und Kommunalbehoerden
-    ist das Landesgesetz massgeblich. Bei Verweisungsgesetzen werden die Bundesnormen 'entsprechend' angewendet
+  front: Welches Verwaltungsverfahrensgesetz gilt für Landesbehörden in Sachsen-Anhalt?
+  back: Verwaltungsverfahrensgesetz Sachsen-Anhalt (VwVfG LSA) - Verweisung auf das VwVfG des Bundes (§ 1 Abs. 1 VwVfG LSA). Das VwVfG des Bundes gilt nur für Bundesbehörden (§ 1 VwVfG); für Landes- und Kommunalbehörden ist
+    das Landesgesetz maßgeblich. Bei Verweisungsgesetzen werden die Bundesnormen 'entsprechend' angewendet
     und sind so zu zitieren (z. B. '§ 35 VwVfG i. V. m. § 1 des Landesgesetzes'), bei Vollgesetzen ist
     die Landesnorm selbst zu zitieren.
   norms:
@@ -28,13 +27,11 @@ cards:
 - slug: st-lra-verfassungsgericht
   type: norm
   front: Gibt es in Sachsen-Anhalt eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
-  back: 'Ja - Art. 75 Nr. 6 Verf LSA. Zustaendiges Gericht: Landesverfassungsgericht Sachsen-Anhalt auf
-    Grundlage der Verfassung des Landes Sachsen-Anhalt (Verf LSA). Verfahrensgegenstand ist nur die Verletzung
-    von Landesgrundrechten durch Landesstaatsgewalt; Bundesrecht ist Pruefungsmassstab nur, soweit die
-    Landesverfassung darauf verweist. Daneben steht immer die Verfassungsbeschwerde zum BVerfG (Art. 93
-    Abs. 1 Nr. 4a GG).'
+  back: 'Ja, aber nur gegen Landesgesetze: Art. 75 Nr. 6 Verf LSA (Verfassungsbeschwerde von jedermann mit der Behauptung, durch ein Landesgesetz unmittelbar in Grundrechten, grundrechtsgleichen oder staatsbürgerlichen Rechten verletzt zu sein; Nr. 7: kommunale Verfassungsbeschwerde). Gegen Verwaltungsakte oder Gerichtsentscheidungen gibt es keine Individualverfassungsbeschwerde zum Landesverfassungsgericht. Zuständiges Gericht: Landesverfassungsgericht Sachsen-Anhalt auf Grundlage der Verfassung des Landes Sachsen-Anhalt (Verf LSA). Verfahrensgegenstand ist nur die Verletzung
+    von Landesgrundrechten durch Landesstaatsgewalt; Bundesrecht ist Prüfungsmaßstab nur, soweit die Landesverfassung
+    darauf verweist. Daneben steht immer die Verfassungsbeschwerde zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
   norms:
-  - Verfassung des Landes Sachsen-Anhalt (Verf LSA)
+  - Art. 75 Nr. 6, 7 Verf LSA
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -43,24 +40,24 @@ cards:
   type: norm
   front: Welches Gesetz regelt die Kommunalverfassung in Sachsen-Anhalt und welche Hauptorgane hat die
     Gemeinde?
-  back: 'Kommunalverfassungsgesetz des Landes Sachsen-Anhalt (KVG LSA): Gemeinderat und Buergermeister.
+  back: 'Kommunalverfassungsgesetz des Landes Sachsen-Anhalt (KVG LSA): Gemeinderat und Bürgermeister.
     Grundlage ist die Selbstverwaltungsgarantie (Art. 28 Abs. 2 GG und Landesverfassung): eigenverantwortliche
-    Regelung aller Angelegenheiten der oertlichen Gemeinschaft. Klausurklassiker: Zustaendigkeitsstreit
+    Regelung aller Angelegenheiten der örtlichen Gemeinschaft. Klausurklassiker: Zuständigkeitsstreit
     zwischen Vertretung und Verwaltungsspitze, Kommunalverfassungsstreit, Rechtsaufsicht.'
   norms:
-  - 'Kommunalverfassungsgesetz des Landes Sachsen-Anhalt (KVG LSA): Gemeinderat und Buergermeister'
+  - 'Kommunalverfassungsgesetz des Landes Sachsen-Anhalt (KVG LSA): Gemeinderat und Bürgermeister'
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: st-lra-bauordnung
   type: norm
-  front: Wie heisst die Bauordnung in Sachsen-Anhalt und wie ist eine Baugenehmigung zu pruefen?
+  front: Wie heißt die Bauordnung in Sachsen-Anhalt und wie ist eine Baugenehmigung zu prüfen?
   back: 'Bauordnung Sachsen-Anhalt (BauO LSA). Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben
-    keine oeffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungs-beduerftigkeit (Errichtung,
-    Aenderung, Nutzungsaenderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulaessigkeit nach
-    §§ 29 ff. BauGB (Bundesrecht), bauordnungsrechtliche Zulaessigkeit nach der Landesbauordnung (Abstandsflaechen,
-    Gestaltung, Stellplaetze).'
+    keine öffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungsbedürftigkeit (Errichtung, Änderung,
+    Nutzungsänderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulässigkeit nach §§ 29 ff. BauGB
+    (Bundesrecht), bauordnungsrechtliche Zulässigkeit nach der Landesbauordnung (Abstandsflächen, Gestaltung,
+    Stellplätze).'
   norms:
   - Bauordnung Sachsen-Anhalt (BauO LSA)
   - §§ 29 ff. BauGB
@@ -70,10 +67,10 @@ cards:
   stand: 2026-09
 - slug: st-lra-pflichtstoff
   type: definition
-  front: Welche Landesrechtsgebiete gehoeren in Sachsen-Anhalt zum Pflichtstoff des Oeffentlichen Rechts?
+  front: Welche Landesrechtsgebiete gehören in Sachsen-Anhalt zum Pflichtstoff des Öffentlichen Rechts?
   back: Ordnungsrecht (SOG LSA); Kommunalrecht (KVG LSA); Bauordnungsrecht (BauO LSA); Landesverfassung.
     Landesrecht wird im Examen fast nie isoliert, sondern eingebettet in eine verwaltungsprozessuale Einkleidung
-    (Anfechtungs-/Verpflichtungsklage, vorlaeufiger Rechtsschutz) geprueft - die Landesnorm ist die Ermaechtigungsgrundlage,
+    (Anfechtungs-/Verpflichtungsklage, vorläufiger Rechtsschutz) geprüft - die Landesnorm ist die Ermächtigungsgrundlage,
     der Aufbau bleibt der allgemeine.
   norms: []
   quellen:

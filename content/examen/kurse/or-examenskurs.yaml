@@ -1,18 +1,22 @@
 kurs:
   slug: or-examenskurs
-  title: Examenskurs Oeffentliches Recht
+  title: Examenskurs Öffentliches Recht
   area: oeffentliches-recht
   semester_default: 7
   examenskurs: true
-  stand: 2026-09
+  stand: 2026-10
   quellen:
-  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Gesamtwiederholung Staats- und Verwaltungsrecht auf Examensniveau, einschliesslich des
-    gesamten Landesrechts des eigenen Bundeslands.
+  beschreibung: 'Wiederholung des Öffentlichen Rechts auf Examensniveau: Staatsorganisationsrecht, Grundrechte,
+    Verfassungsprozess, Verwaltungsrecht AT und BT (Polizei-, Kommunal-, Baurecht), Verwaltungsprozess, Staatshaftung,
+    Verwaltungsvollstreckung und Europarecht, ergänzt um das Landesrecht des eigenen Bundeslands (Polizei, Verfassung,
+    Kommunal- und Bauordnungsrecht).'
   lernziele:
-  - Verwaltungsrechtliche Examensklausur mit Landesrecht als Ermaechtigungsgrundlage strukturieren
-  - Verfassungsrechtliche Klausur mit Verfassungsbeschwerde oder Organstreit aufbauen
+  - Verwaltungsrechtliche Examensklausur mit Landesrecht als Ermächtigungsgrundlage strukturieren
+  - Verfassungsrechtliche Klausur mit Verfassungsbeschwerde, Normenkontrolle oder Organstreit aufbauen
+  - Kommunal- und baurechtliche Einkleidungen in Verwaltungsprozessklausuren lösen
+  - Unionsrechtliche Bezüge und Staatshaftungsansprüche in die Klausur einbetten
   klausurformat:
     typ: Examensklausur
     minuten: 300
@@ -35,10 +39,47 @@ kurs:
   - or-vwgo-verpflichtungsklage
   - or-vwgo-vorlaeufiger-rechtsschutz
   - or-sicherheitsrecht-generalklausel-standardmassnahmen
+  - or-staatsorganisationsrecht-staatsstrukturprinzipien
+  - or-staatsorganisationsrecht-gesetzgebungskompetenzen
+  - or-verfassungsprozessrecht-normenkontrolle-93-100
+  - or-verfassungsprozessrecht-verfassungsbeschwerde
+  - or-vwgo-allgemeine-leistungsklage-feststellungsklage
+  - or-vwgo-fortsetzungsfeststellungsklage
+  - or-vwgo-normenkontrolle-47
+  - or-staatsorganisationsrecht-verfassungsorgane
+  - or-staatsorganisationsrecht-abgeordnete-parteien
+  - or-staatsorganisationsrecht-bundestreue-wehrverfassung
+  - or-staatsorganisationsrecht-verwaltungskompetenzen-finanzen
+  - or-verfassungsprozessrecht-bund-laender-eilrechtsschutz
+  - or-grundrechte-allgemeine-lehren
+  - or-gr-menschenwuerde-leben
+  - or-gr-apr-informationelle-selbstbestimmung
+  - or-gr-religionsfreiheit-art4
+  - or-gr-presse-rundfunk-kunst-wissenschaft
+  - or-gr-weitere-freiheitsrechte
+  - or-gr-gleichheitsrechte-speziell
+  - or-gr-justizgrundrechte-art33
+  - or-vwr-oeffentlich-rechtlicher-vertrag-realakt
+  - or-vwr-planfeststellung-subventionen
+  - or-vwgo-sachentscheidungsvoraussetzungen
+  - or-vwgo-einstweilige-anordnung-123
+  - or-polizeirecht-vertiefung
+  - or-versammlungsrecht
+  - or-kommunalrecht-selbstverwaltung
+  - or-kommunalrecht-organe-kommunalverfassungsstreit
+  - or-kommunalrecht-satzung-einrichtungen
+  - or-kommunalrecht-aufsicht-wirtschaft
+  - or-baurecht-bauleitplanung
+  - or-baurecht-bauplanungsrecht-zulaessigkeit
+  - or-baurecht-bauordnungsrecht-nachbarschutz
+  - or-staatshaftung
+  - or-vwr-verwaltungsvollstreckung
+  - or-europarecht-grundzuege
   landesrecht_kategorien:
   - polizei-ordnungsrecht
   - landesrecht-allgemein
+  - kommunalrecht
+  - bauordnungsrecht
   fehlende_themen:
-  - Bauplanungsrecht (P3)
-  - Unionsrecht Grundzuege (P3)
-  - Normenkontrolle (P3)
+  - Landesschemata und Landesfälle für alle Länder in gleicher Tiefe (P2)
+  - Wirtschafts-, Umwelt- und Beamtenrecht (je nach Land) (P3)

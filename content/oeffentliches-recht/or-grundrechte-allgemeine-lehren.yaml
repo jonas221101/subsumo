@@ -1,0 +1,407 @@
+topic:
+  slug: or-grundrechte-allgemeine-lehren
+  area: oeffentliches-recht
+  title: 'Grundrechte: Allgemeine Lehren (Berechtigung, Bindung, Schutzpflichten, Drittwirkung)'
+  parent: or-grundrechte
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-gr-allg-berechtigung-natuerliche-personen
+  type: definition
+  front: "Wer ist Träger der Grundrechte? Was unterscheidet Jedermann- von Deutschenrechten?"
+  back: >-
+    Grundrechtsberechtigt sind zunächst alle natürlichen Personen, und zwar ab
+    Geburt; für das Lebensrecht reicht nach dem BVerfG bereits das ungeborene
+    Leben. Bei den Jedermannrechten (z. B. Art. 2, Art. 3, Art. 4, Art. 5 GG)
+    kommt es auf die Staatsangehörigkeit nicht an. Die Deutschenrechte (Art. 8,
+    Art. 9 Abs. 1, Art. 11, Art. 12 Abs. 1, Art. 16 Abs. 2 GG; Wahlrecht, Art. 33
+    Abs. 1 bis 3 GG) stehen nur Deutschen im Sinne des Art. 116 GG zu. Ausländer
+    und Staatenlose können sich bei einem Eingriff in einen Lebenssachverhalt, den
+    ein Deutschenrecht regelt, auf Art. 2 Abs. 1 GG berufen; die
+    Rechtfertigungsanforderungen sind dann aber nicht notwendig dieselben wie
+    beim Deutschenrecht. Für Unionsbürger wird dies teilweise durch Art. 18 AEUV
+    (Diskriminierungsverbot) überlagert.
+  norms:
+  - Art. 116 Abs. 1 GG
+  - Art. 2 Abs. 1 GG
+  - Art. 12 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: or-gr-allg-juristische-personen-art19-abs3
+  type: norm
+  front: "Unter welchen Voraussetzungen sind juristische Personen grundrechtsberechtigt (Art. 19 Abs. 3 GG)?"
+  back: >-
+    Art. 19 Abs. 3 GG verlangt drei Dinge. Erstens muss es sich um eine
+    inländische juristische Person handeln; maßgeblich ist der effektive
+    Verwaltungssitz im Inland. Zweitens muss sie eine juristische Person des
+    Privatrechts oder diesen gleichgestellt sein; die Rechtsform ist weit zu
+    verstehen und erfasst auch rechtsfähige Personenvereinigungen wie OHG, KG und
+    nichtrechtsfähige Vereine mit Teilrechtsfähigkeit. Drittens müssen die
+    Grundrechte ihrem Wesen nach auf sie anwendbar sein. Das ist bei
+    personenbezogenen Rechten wie Art. 1 Abs. 1, Art. 2 Abs. 2 oder Art. 6 GG
+    regelmäßig nicht der Fall, wohl aber etwa bei Art. 3, 5, 9, 12, 13 und 14 GG
+    sowie bei den Prozessgrundrechten (Art. 19 Abs. 4, 101, 103 GG).
+    Juristische Personen aus anderen EU-Mitgliedstaaten werden wegen des
+    Anwendungsvorrangs des Unionsrechts den inländischen gleichgestellt.
+  norms:
+  - Art. 19 Abs. 3 GG
+  - Art. 18 AEUV
+  quellen:
+  - GG, amtliche Fassung
+  - BVerfGE 129, 78 (Anwendungserweiterung)
+- slug: or-gr-allg-juristische-personen-des-oeffentlichen-rechts
+  type: streitstand
+  front: "Können sich juristische Personen des öffentlichen Rechts auf Grundrechte berufen?"
+  back: >-
+    Grundsätzlich nicht. Der Staat ist Adressat, nicht Berechtigter der
+    Grundrechte (Konfusionsargument): Er kann nicht zugleich Verpflichteter und
+    Berechtigter sein. Ausnahmen gelten, wenn die juristische Person des
+    öffentlichen Rechts unmittelbar dem durch das Grundrecht geschützten
+    Lebensbereich zugeordnet ist, also dem Staat gegenüber als eigenständiges
+    Gegenüber auftritt: Universitäten und Fakultäten für Art. 5 Abs. 3 GG,
+    Rundfunkanstalten für Art. 5 Abs. 1 S. 2 GG, die Kirchen als Körperschaften
+    für Art. 4 GG. Unabhängig davon können sich auch Hoheitsträger auf die
+    Verfahrensgrundrechte der Art. 101 Abs. 1 S. 2 und Art. 103 Abs. 1 GG
+    berufen, weil diese ein rechtsstaatliches Verfahren sichern. Gemeinden
+    können sich dagegen nicht auf materielle Grundrechte stützen; ihnen steht
+    die Selbstverwaltungsgarantie des Art. 28 Abs. 2 GG zu, die sie mit der
+    Kommunalverfassungsbeschwerde (Art. 93 Abs. 1 Nr. 4b GG) geltend machen
+    können.
+  norms:
+  - Art. 19 Abs. 3 GG
+  - Art. 5 Abs. 3 S. 1 GG
+  - Art. 101 Abs. 1 S. 2 GG
+  - Art. 103 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: or-gr-allg-grundrechtsbindung-art1-abs3
+  type: norm
+  front: "Wer ist nach Art. 1 Abs. 3 GG an die Grundrechte gebunden? Gilt das auch bei privatrechtlichem Handeln?"
+  back: >-
+    Art. 1 Abs. 3 GG bindet Gesetzgebung, vollziehende Gewalt und Rechtsprechung
+    als unmittelbar geltendes Recht. Die Bindung besteht unabhängig von der
+    Handlungsform. Setzt die Verwaltung Aufgaben der Daseinsvorsorge in
+    privatrechtlichen Formen um (Verwaltungsprivatrecht), bleibt sie voll an die
+    Grundrechte gebunden; die Flucht ins Privatrecht ändert daran nichts. Das gilt
+    auch für privatrechtlich organisierte Einheiten in öffentlicher Hand, etwa
+    eine kommunale GmbH, die eine öffentliche Aufgabe erfüllt. Bei
+    fiskalischen Hilfsgeschäften, etwa dem Einkauf von Büromaterial, tritt der
+    Staat wie jeder Private auf; auch hier wird er nach heute ganz überwiegender
+    Ansicht jedenfalls durch Art. 3 Abs. 1 GG und das Willkürverbot gebunden. Die Grundrechtsbindung des Gesetzgebers umfasst auch
+    das Unionsrecht umsetzende Gesetze, soweit dem deutschen Gesetzgeber
+    Gestaltungsspielraum verbleibt.
+  norms:
+  - Art. 1 Abs. 3 GG
+  - Art. 20 Abs. 3 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: or-gr-allg-fraport-gemischtwirtschaftlich
+  type: rechtsprechung
+  front: "Was hat das BVerfG im Fraport-Urteil zur Grundrechtsbindung gemischtwirtschaftlicher Unternehmen entschieden?"
+  back: >-
+    In der Fraport-Entscheidung (BVerfGE 128, 226) ging es um ein Hausverbot der
+    Betreiberin des Frankfurter Flughafens, einer Aktiengesellschaft, an der die
+    öffentliche Hand mehrheitlich beteiligt war, gegen eine Abschiebungsgegnerin,
+    die im Terminal Flugblätter verteilt hatte. Das BVerfG hat entschieden, dass Unternehmen
+    in Privatrechtsform, die von der öffentlichen Hand beherrscht werden
+    (Mehrheitsbeteiligung), unmittelbar an die Grundrechte gebunden sind, und
+    zwar unabhängig davon, ob sie Verwaltungsaufgaben im engeren Sinne oder
+    erwerbswirtschaftlich tätig sind. Eine bloße Minderheitsbeteiligung oder
+    ein rein privates Unternehmen genügt dagegen nicht. Zugleich hat das Gericht
+    offengelassen, ob eine der staatlichen Bindung nahekommende Verpflichtung
+    privater Unternehmen im Einzelfall in Betracht kommt, wenn sie die
+    Rahmenbedingungen öffentlicher Kommunikation selbst übernehmen. Das
+    beherrschte Unternehmen selbst kann sich wegen der Bindung nicht auf
+    Grundrechte, etwa Art. 12 oder Art. 14 GG, berufen.
+  norms:
+  - Art. 1 Abs. 3 GG
+  - Art. 19 Abs. 3 GG
+  - Art. 8 Abs. 1 GG
+  quellen:
+  - BVerfGE 128, 226 (Fraport)
+- slug: or-gr-allg-schutzpflicht-untermass
+  type: definition
+  front: "Was sind grundrechtliche Schutzpflichten, und wie weit reicht die verfassungsgerichtliche Kontrolle (Untermaßverbot)?"
+  back: >-
+    Neben ihrer abwehrrechtlichen Funktion verpflichten Grundrechte den Staat
+    auch, Rechtsgüter vor Beeinträchtigungen durch Private (und vor
+    Naturgefahren, Gefahren aus dem Ausland) zu schützen. Entwickelt wurde dies
+    zum Lebensrecht in den Schwangerschaftsabbruchsurteilen (BVerfGE 39, 1;
+    88, 203). Das Untermaßverbot verlangt ein angemessenes, wirksames
+    Mindestmaß an Schutz; der Gesetzgeber hat bei der Wahl der Mittel einen weiten
+    Einschätzungs- und Gestaltungsspielraum. Das BVerfG kontrolliert, ob
+    überhaupt Schutzvorkehrungen getroffen wurden und ob sie völlig ungeeignet
+    oder völlig unzulänglich sind (Evidenzkontrolle). Die Schutzpflicht
+    begründet nur ausnahmsweise Ansprüche auf ein bestimmtes Handeln, etwa bei
+    einer Ermessensreduzierung auf null. Im Verfassungsbeschwerdeverfahren genügt
+    für die Beschwerdebefugnis, dass eine Verletzung der Schutzpflicht nicht von
+    vornherein ausgeschlossen erscheint.
+  norms:
+  - Art. 2 Abs. 2 S. 1 GG
+  - Art. 1 Abs. 1 S. 2 GG
+  quellen:
+  - BVerfGE 39, 1
+  - BVerfGE 88, 203
+- slug: or-gr-allg-mittelbare-drittwirkung-lueth
+  type: rechtsprechung
+  front: "Wie wirken Grundrechte im Privatrecht (mittelbare Drittwirkung, Lüth)?"
+  back: >-
+    Im Lüth-Urteil (BVerfGE 7, 198) hat das BVerfG die Grundrechte als
+    objektive Wertordnung beschrieben, die als verfassungsrechtliche
+    Grundentscheidung für alle Bereiche des Rechts gilt. Private sind nicht
+    unmittelbar an die Grundrechte gebunden, sie wirken aber mittelbar über die
+    Generalklauseln und unbestimmten Rechtsbegriffe des Zivilrechts
+    (Einbruchstellen, etwa §§ 138, 242, 826, 1004 BGB analog) und sind dort bei
+    der Auslegung zu beachten. Der Zivilrichter ist als Teil der Rechtsprechung
+    nach Art. 1 Abs. 3 GG gebunden. Verkennt er bei der Auslegung die Bedeutung
+    eines Grundrechts, verletzt sein Urteil das Grundrecht des Betroffenen
+    (das BVerfG prüft nur auf Verletzung spezifischen Verfassungsrechts,
+    sogenannte Heck'sche Formel). Im Ergebnis kollidieren so die
+    Grundrechte beider Privatparteien, die im Wege der praktischen Konkordanz
+    auszugleichen sind. Gegenüber der unmittelbaren Drittwirkung wahrt dieses
+    Modell die Privatautonomie.
+  norms:
+  - Art. 1 Abs. 3 GG
+  - Art. 5 Abs. 1 S. 1 GG
+  - § 826 BGB
+  quellen:
+  - BVerfGE 7, 198 (Lüth)
+- slug: or-gr-allg-stadionverbot-drittwirkung
+  type: rechtsprechung
+  front: "Welche Bedeutung hat die Stadionverbot-Entscheidung für die mittelbare Drittwirkung von Art. 3 Abs. 1 GG?"
+  back: >-
+    Im Stadionverbotsbeschluss (BVerfGE 148, 267) hat das BVerfG betont, dass
+    Art. 3 Abs. 1 GG keine allgemeine Gleichbehandlungspflicht Privater begründet
+    und die Privatautonomie das Recht einschließt, nach eigenen Präferenzen zu
+    differenzieren. Anders liegt es, wenn ein privater Veranstalter mit einer
+    einseitigen Entscheidung über den Zugang zu einer Veranstaltung entscheidet,
+    die wegen ihres Massencharakters und typischerweise ohne Ansehen der Person
+    stattfindet, und diese Entscheidung für die Betroffenen über die Teilnahme am
+    gesellschaftlichen Leben bestimmt. Dann strahlt der Gleichheitssatz über die
+    zivilrechtlichen Generalklauseln aus: Der Veranstalter braucht für den
+    Ausschluss einen sachlichen Grund. Der Veranstalter kann sich dabei auf
+    eigene Grundrechte (Hausrecht, Art. 14 GG; Sicherheit) berufen. Eine
+    Gleichstellung mit dem Staat liegt darin nicht.
+  norms:
+  - Art. 3 Abs. 1 GG
+  - Art. 14 Abs. 1 GG
+  - § 241 Abs. 2 BGB
+  quellen:
+  - BVerfGE 148, 267 (Stadionverbot)
+- slug: or-gr-allg-eingriffsbegriff
+  type: streitstand
+  front: "Klassischer und moderner Eingriffsbegriff: Wann liegt ein Grundrechtseingriff vor?"
+  back: >-
+    Nach dem klassischen Eingriffsbegriff ist Eingriff ein Rechtsakt, der final
+    und unmittelbar zu einer Beeinträchtigung führt und mit Befehl und Zwang
+    durchsetzbar ist (imperativ). Er erfasst damit rein tatsächliche, ungewollte
+    oder mittelbare Beeinträchtigungen nicht. Der moderne Eingriffsbegriff, dem
+    das BVerfG folgt, stellt dagegen auf die Wirkung ab: Eingriff ist jedes
+    staatliche Handeln, das dem Einzelnen ein grundrechtlich geschütztes
+    Verhalten ganz oder teilweise unmöglich macht oder erschwert, gleich ob
+    final oder unbeabsichtigt, unmittelbar oder mittelbar, rechtlich oder
+    tatsächlich. Die Gefahr einer Uferlosigkeit wird durch Zusatzkriterien
+    (Zurechenbarkeit, Intensität, Erheblichkeit) begrenzt; reine Bagatellen und
+    Folgen, die erst durch das freie Verhalten Dritter entstehen, sind
+    regelmäßig kein Eingriff. Damit können auch faktisch-mittelbare
+    Beeinträchtigungen grundrechtsrelevant sein, etwa staatliches
+    Informationshandeln wie die Warnung vor Produkten (Glykol).
+  norms:
+  - Art. 1 Abs. 3 GG
+  - Art. 19 Abs. 1 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  - BVerfGE 105, 252 (Glykol)
+- slug: or-gr-allg-schranken-schranken
+  type: definition
+  front: "Was sind Schranken-Schranken, und welche gelten für alle Grundrechte?"
+  back: >-
+    Schranken-Schranken begrenzen die Möglichkeiten des Gesetzgebers, Grundrechte
+    einzuschränken. Sie bestehen aus folgenden Elementen. Der Eingriff braucht
+    eine formell und materiell verfassungsmäßige Rechtsgrundlage (Kompetenz,
+    Verfahren, Form), das Gesetz muss bestimmt und normenklar sein, und bei
+    wesentlichen Fragen muss der Gesetzgeber selbst entscheiden (Wesentlichkeit,
+    Parlamentsvorbehalt). Hinzu treten das Verbot des grundrechtseinschränkenden
+    Einzelfallgesetzes (Art. 19 Abs. 1 S. 1 GG), das Zitiergebot (Art. 19 Abs. 1
+    S. 2 GG, nur für Grundrechte, die durch oder aufgrund eines Gesetzes
+    eingeschränkt werden können; nach der Rechtsprechung gilt es nicht für
+    Art. 2 Abs. 1, Art. 12 Abs. 1 und Art. 14 GG sowie nicht für bloße
+    Ausgestaltungen und vorkonstitutionelles Recht), die
+    Wesensgehaltsgarantie (Art. 19 Abs. 2 GG) und vor allem der
+    Verhältnismäßigkeitsgrundsatz. Rückwirkende Belastungen sind an den
+    Grundsätzen des Vertrauensschutzes zu messen. Für vorbehaltlos gewährleistete
+    Grundrechte gilt anstelle des Gesetzesvorbehalts die Begrenzung durch
+    kollidierendes Verfassungsrecht.
+  norms:
+  - Art. 19 Abs. 1 GG
+  - Art. 19 Abs. 2 GG
+  - Art. 20 Abs. 3 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: or-gr-allg-grundrechtskonkurrenzen
+  type: definition
+  front: "Wie werden Grundrechtskonkurrenzen gelöst?"
+  back: >-
+    Die Konkurrenz mehrerer Grundrechte tritt auf, wenn ein Sachverhalt in den
+    Schutzbereich mehrerer Grundrechte fällt. Das speziellere Grundrecht
+    verdrängt das allgemeinere (Spezialität): Art. 2 Abs. 1 GG als allgemeine
+    Handlungsfreiheit wird als Auffanggrundrecht von allen spezielleren
+    Freiheitsrechten verdrängt. Art. 5 Abs. 3 und Art. 4 GG gehen als
+    vorbehaltlose Spezialrechte der allgemeinen Handlungsfreiheit vor. Zwischen
+    gleichrangigen Grundrechten besteht Idealkonkurrenz, sie sind nebeneinander
+    zu prüfen, etwa Art. 5 Abs. 1 und Art. 8 GG bei einer Demonstration, wobei
+    Art. 8 GG die Art und Weise der Versammlung, Art. 5 Abs. 1 GG den Inhalt
+    der Äußerung schützt, oder Art. 12 und Art. 14 GG (Art. 12 schützt den Erwerb, Art. 14 das
+    Erworbene). Maßstab für die Rechtfertigung ist bei Idealkonkurrenz jedes
+    Grundrecht mit seinen eigenen Schranken, wobei strengere Schranken nicht
+    durch die Schranken eines anderen Grundrechts unterlaufen werden dürfen.
+  norms:
+  - Art. 2 Abs. 1 GG
+  - Art. 5 Abs. 1 GG
+  - Art. 8 GG
+  - Art. 12 Abs. 1 GG
+  - Art. 14 Abs. 1 GG
+  quellen:
+  - Eigenformulierung Redaktion
+schemata:
+- slug: or-schema-gr-allg-pruefung-freiheitsrecht-aufbau
+  title: Aufbau der Grundrechtsprüfung mit Fragen der Berechtigung und Bindung
+  norms:
+  - Art. 1 Abs. 3 GG
+  - Art. 19 Abs. 3 GG
+  - Art. 19 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Schutzbereich
+    children:
+    - label: 1. Persönlicher Schutzbereich
+      hinweis: Jedermann- oder Deutschenrecht? Juristische Person (Art. 19 Abs. 3
+        GG), öffentlich-rechtliche juristische Person? Hier gehören die Ausnahmen
+        für Universitäten, Rundfunkanstalten und Kirchen hin.
+    - label: 2. Sachlicher Schutzbereich
+  - label: II. Eingriff
+    children:
+    - label: 1. Adressat gebunden (Art. 1 Abs. 3 GG)?
+      hinweis: Auch Verwaltungsprivatrecht und mehrheitlich staatlich beherrschte
+        Unternehmen sind gebunden (Fraport). Zwischen Privaten greift nur die
+        mittelbare Drittwirkung.
+    - label: 2. Eingriff nach klassischem oder modernem Eingriffsbegriff
+    - label: 3. Bei Schutzpflichtkonstellation Unterlassen des Staates prüfen
+  - label: III. Verfassungsrechtliche Rechtfertigung
+    children:
+    - label: 1. Schranke (einfacher, qualifizierter Gesetzesvorbehalt oder
+        kollidierendes Verfassungsrecht)
+    - label: 2. Schranken-Schranken
+      children:
+      - label: a) Formelle Verfassungsmäßigkeit des Gesetzes, Bestimmtheit,
+          Wesentlichkeit
+      - label: b) Art. 19 Abs. 1 GG (Einzelfallverbot, Zitiergebot)
+      - label: c) Verhältnismäßigkeit
+      - label: d) Wesensgehalt (Art. 19 Abs. 2 GG)
+faelle:
+- slug: or-fall-gr-allg-flughafen-hausverbot
+  title: Das Hausverbot im Terminal
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  facts: >-
+    Die Flughafen-GmbH F betreibt einen Verkehrsflughafen. Gesellschafter sind
+    zu 51 Prozent das Land und die Stadt, zu 49 Prozent private Investoren. Die
+    türkische Staatsangehörige T, die seit Jahren im Inland lebt, verteilt im
+    öffentlich zugänglichen Abflugbereich Flugblätter, in denen sie den Umgang
+    der Fluggesellschaften mit Fluggästen kritisiert. F erteilt ihr daraufhin
+    unter Berufung auf das Hausrecht ein Hausverbot für das gesamte
+    Flughafengelände. T meint, F verletze ihre Grundrechte.
+  question: Ist F an die Grundrechte gebunden, und auf welche Grundrechte kann sich T berufen?
+  steps:
+  - prompt: Ist F, obwohl in Privatrechtsform, an die Grundrechte gebunden?
+    erwartung: Ja. Nach der Fraport-Entscheidung des BVerfG sind Unternehmen in
+      Privatrechtsform, die von der öffentlichen Hand beherrscht werden, unmittelbar
+      nach Art. 1 Abs. 3 GG an die Grundrechte gebunden. Das gilt bei der
+      Mehrheitsbeteiligung von Land und Stadt von 51 Prozent; auf die
+      Privatbeteiligung von 49 Prozent kommt es nicht an. F ist als Adressatin der
+      Grundrechte selbst nicht grundrechtsberechtigt (Art. 19 Abs. 3 GG,
+      Konfusion) und kann sich nicht auf Art. 14 GG als Schutz des Hausrechts berufen.
+  - prompt: Kann sich T auf die Versammlungsfreiheit (Art. 8 GG) berufen?
+    erwartung: Nein. Art. 8 Abs. 1 GG ist ein Deutschenrecht; T ist türkische
+      Staatsangehörige. Als Ausländerin kann sie sich insoweit nur auf Art. 2
+      Abs. 1 GG berufen. Zudem ist eine bloße Flugblattverteilung durch eine
+      Einzelperson keine Versammlung.
+  - prompt: Welches Grundrecht schützt die Flugblattverteilung?
+    erwartung: Die Meinungsfreiheit, Art. 5 Abs. 1 S. 1 GG, ein Jedermannrecht, das
+      T zusteht. Das Hausverbot hindert T an der Verbreitung ihrer Meinung am
+      gewählten Ort und ist ein Eingriff. Ob er gerechtfertigt ist, hängt von
+      einer Abwägung ab, in die der Charakter des Terminals als Raum öffentlicher
+      Kommunikation einzustellen ist.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Grundrechtsbindung der F trotz Privatrechtsform bejaht (staatlich beherrschtes Unternehmen)
+      weight: 3.0
+      required: true
+      norms:
+      - Art. 1 Abs. 3 GG
+      keywords:
+      - Fraport
+      - unmittelbare Grundrechtsbindung
+      - Mehrheitsbeteiligung
+      - beherrscht
+      - öffentliche Hand
+      - Art. 1 Abs. 3 GG
+      card_slugs:
+      - or-gr-allg-fraport-gemischtwirtschaftlich
+      - or-gr-allg-grundrechtsbindung-art1-abs3
+    - id: p2
+      label: Art. 8 GG als Deutschenrecht verneint, Rückgriff auf Art. 2 Abs. 1 GG
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 8 Abs. 1 GG
+      - Art. 2 Abs. 1 GG
+      keywords:
+      - Deutschenrecht
+      - Deutschengrundrecht
+      - Art. 116 GG
+      - Art. 2 Abs. 1 GG
+      card_slugs:
+      - or-gr-allg-berechtigung-natuerliche-personen
+    - id: p3
+      label: Art. 5 Abs. 1 S. 1 GG als Jedermannrecht und Eingriff durch Hausverbot erkannt
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 5 Abs. 1 S. 1 GG
+      keywords:
+      - Meinungsfreiheit
+      - Jedermannrecht
+      - Jedermann-Grundrecht
+      - Art. 5 Abs. 1 S. 1 GG
+      card_slugs:
+      - or-gr-allg-berechtigung-natuerliche-personen
+      - or-gr-allg-eingriffsbegriff
+    - id: p4
+      label: F selbst kann sich nicht auf Grundrechte stützen
+      weight: 1.0
+      required: false
+      keywords:
+      - Konfusion
+      - nicht grundrechtsberechtigt
+      - Art. 19 Abs. 3 GG
+      - Adressat der Grundrechte
+      - Adressatin der Grundrechte
+      - kann sich nicht auf Art. 14 GG berufen
+      - keine Grundrechtsträgerin
+      card_slugs:
+      - or-gr-allg-juristische-personen-des-oeffentlichen-rechts

@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 
 import '../design/design.dart';
 import '../state.dart';
+import '../text_schutz.dart';
+import 'beta_feedback.dart';
 import '../theme.dart';
 import 'gutachten_page.dart';
 import 'lernprofil_page.dart';
 import 'review_page.dart';
+import 'schemata_page.dart' show SchemaDetailPage;
 import 'screen_status.dart';
 
 /// Examen-Reiter (docs/32-examensvorbereitung.md).
@@ -23,7 +26,7 @@ import 'screen_status.dart';
 const _areaLabels = {
   'zivilrecht': 'Zivilrecht',
   'strafrecht': 'Strafrecht',
-  'oeffentliches-recht': 'Oeffentliches Recht',
+  'oeffentliches-recht': 'Öffentliches Recht',
 };
 
 const _phaseLabels = {
@@ -90,7 +93,7 @@ class _ExamenPageState extends State<ExamenPage> {
           padding: const EdgeInsets.all(Spacing.lg),
           children: [
             if (!vollstaendig || _editingProfile)
-              _ProfilEditor(
+              ProfilEditor(
                 profil: profil,
                 onSaved: () => setState(() => _editingProfile = false),
                 onCancel: vollstaendig ? () => setState(() => _editingProfile = false) : null,
@@ -204,18 +207,28 @@ class _ProfilSummary extends StatelessWidget {
 /// Bundesland gefiltert), Examensdatum, Tagesbudget. Die Universitaet legt
 /// serverseitig das Bundesland fest, deshalb setzt die Auswahl einer
 /// Universitaet hier auch das Bundesland-Feld.
-class _ProfilEditor extends StatefulWidget {
-  const _ProfilEditor({required this.profil, required this.onSaved, this.onCancel});
+class ProfilEditor extends StatefulWidget {
+  const ProfilEditor({
+    required this.profil,
+    required this.onSaved,
+    this.onCancel,
+    this.nurOrt = false,
+    super.key,
+  });
+
+  /// Nur Bundesland und Universitaet (Lernprofil-Seite): gleiche Auswahl und
+  /// gleicher API-Weg, aber ohne Examenstermin und Tagesbudget.
+  final bool nurOrt;
 
   final Map<String, dynamic> profil;
   final VoidCallback onSaved;
   final VoidCallback? onCancel;
 
   @override
-  State<_ProfilEditor> createState() => _ProfilEditorState();
+  State<ProfilEditor> createState() => ProfilEditorState();
 }
 
-class _ProfilEditorState extends State<_ProfilEditor> {
+class ProfilEditorState extends State<ProfilEditor> {
   List<Map<String, dynamic>> _laender = [];
   List<Map<String, dynamic>> _unis = [];
   bool _listenLoading = true;
@@ -224,6 +237,8 @@ class _ProfilEditorState extends State<_ProfilEditor> {
 
   String? _bundesland;
   String? _universitaet;
+  String? _bundeslandStart;
+  String? _universitaetStart;
   DateTime? _examDate;
   late final TextEditingController _minuten;
 
@@ -234,6 +249,8 @@ class _ProfilEditorState extends State<_ProfilEditor> {
     final uni = widget.profil['universitaet'];
     _bundesland = land is Map ? land['code'] as String? : null;
     _universitaet = uni is Map ? uni['slug'] as String? : null;
+    _bundeslandStart = _bundesland;
+    _universitaetStart = _universitaet;
     final examDate = widget.profil['exam_date'] as String?;
     _examDate = examDate == null ? null : DateTime.tryParse(examDate);
     _minuten = TextEditingController(text: '${widget.profil['daily_minutes'] ?? 90}');
@@ -277,10 +294,30 @@ class _ProfilEditorState extends State<_ProfilEditor> {
   }
 
   Future<void> _save() async {
+    // Vor dem Speichern greifen: der Editor verschwindet danach aus dem Baum.
+    final messenger = ScaffoldMessenger.of(context);
+    if (await save()) {
+      widget.onSaved();
+      // Rueckmeldung wie im Lernprofil (Nutzertest W20: Speichern ohne Bestaetigung).
+      messenger.showSnackBar(const SnackBar(
+        duration: Duration(seconds: 8),
+        content: Text('Examensprofil gespeichert.'),
+      ));
+    }
+  }
+
+  /// Speichert Bundesland/Universitaet (und ggf. Termin/Budget); `true` bei
+  /// Erfolg, sonst steht die Fehlermeldung im Editor. Wird im `nurOrt`-Modus
+  /// vom gemeinsamen Speichern der Lernprofil-Seite aufgerufen.
+  Future<bool> save() async {
+    // Im nurOrt-Modus ohne Aenderung nichts senden (und nichts ueberschreiben).
+    if (widget.nurOrt && _bundesland == _bundeslandStart && _universitaet == _universitaetStart) {
+      return true;
+    }
     final minuten = int.tryParse(_minuten.text.trim());
-    if (minuten == null || minuten < 15 || minuten > 600) {
+    if (!widget.nurOrt && (minuten == null || minuten < 15 || minuten > 600)) {
       setState(() => _error = 'Tagesbudget zwischen 15 und 600 Minuten angeben.');
-      return;
+      return false;
     }
     setState(() {
       _busy = true;
@@ -290,16 +327,15 @@ class _ProfilEditorState extends State<_ProfilEditor> {
     final ok = await app.saveProfile({
       'bundesland': _bundesland ?? '',
       'universitaet_slug': _universitaet ?? '',
-      if (_examDate != null) 'exam_date': _isoDate(_examDate!),
-      'daily_minutes': minuten,
+      if (!widget.nurOrt) ...{
+        if (_examDate != null) 'exam_date': _isoDate(_examDate!),
+        'daily_minutes': minuten,
+      },
     });
-    if (!mounted) return;
+    if (!mounted) return ok;
     setState(() => _busy = false);
-    if (ok) {
-      widget.onSaved();
-    } else {
-      setState(() => _error = app.error ?? 'Speichern fehlgeschlagen.');
-    }
+    if (!ok) setState(() => _error = app.error ?? 'Speichern fehlgeschlagen.');
+    return ok;
   }
 
   @override
@@ -314,12 +350,15 @@ class _ProfilEditorState extends State<_ProfilEditor> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text('Examensprofil einrichten', style: theme.textTheme.titleMedium),
+          Text(widget.nurOrt ? 'Bundesland & Universität' : 'Examensprofil einrichten',
+              style: theme.textTheme.titleMedium),
           const SizedBox(height: Spacing.xs),
           Text(
-            'Bundesland und Universitaet bestimmen, welches Landesrecht du lernst, '
-            'wie die Klausuren gewichtet werden und welche Kurs-Decks du siehst. '
-            'Der Examenstermin steuert Phase und Tagesplan.',
+            widget.nurOrt
+                ? 'Bestimmt, welches Landesrecht du lernst und welche Kurs-Decks du siehst.'
+                : 'Bundesland und Universität bestimmen, welches Landesrecht du lernst, '
+                    'wie die Klausuren gewichtet werden und welche Kurs-Decks du siehst. '
+                    'Der Examenstermin steuert Phase und Tagesplan.',
             style: theme.textTheme.bodySmall,
           ),
           const SizedBox(height: Spacing.lg),
@@ -330,13 +369,13 @@ class _ProfilEditorState extends State<_ProfilEditor> {
             )
           else ...[
             InputDecorator(
-              decoration: const InputDecoration(labelText: 'Bundesland (Pruefungsort)'),
+              decoration: const InputDecoration(labelText: 'Bundesland (Prüfungsort)'),
               child: DropdownButton<String?>(
                 key: const ValueKey('bundesland'),
                 isExpanded: true,
                 underline: const SizedBox.shrink(),
                 value: _bundesland,
-                hint: const Text('Bitte waehlen'),
+                hint: const Text('Bitte wählen'),
                 items: [
                   for (final land in _laender)
                     DropdownMenuItem<String?>(
@@ -355,7 +394,7 @@ class _ProfilEditorState extends State<_ProfilEditor> {
             ),
             const SizedBox(height: Spacing.md),
             InputDecorator(
-              decoration: const InputDecoration(labelText: 'Universitaet'),
+              decoration: const InputDecoration(labelText: 'Universität'),
               child: DropdownButton<String?>(
                 key: const ValueKey('universitaet'),
                 isExpanded: true,
@@ -380,6 +419,7 @@ class _ProfilEditorState extends State<_ProfilEditor> {
               ),
             ),
           ],
+          if (!widget.nurOrt) ...[
           const SizedBox(height: Spacing.md),
           Row(
             children: [
@@ -392,7 +432,7 @@ class _ProfilEditorState extends State<_ProfilEditor> {
                 ),
               ),
               SubsumoButton.secondary(
-                label: _examDate == null ? 'Termin waehlen' : 'Termin aendern',
+                label: _examDate == null ? 'Termin wählen' : 'Termin ändern',
                 icon: Icons.calendar_today_outlined,
                 onPressed: _pickDate,
               ),
@@ -404,25 +444,28 @@ class _ProfilEditorState extends State<_ProfilEditor> {
             controller: _minuten,
             keyboardType: TextInputType.number,
           ),
+          ],
           if (_error != null) ...[
             const SizedBox(height: Spacing.sm),
             SubsumoFeedbackBlock(message: _error!, severity: FeedbackSeverity.negative),
           ],
-          const SizedBox(height: Spacing.lg),
-          Row(
-            children: [
-              if (widget.onCancel != null) ...[
-                SubsumoButton.tertiary(label: 'Abbrechen', onPressed: _busy ? null : widget.onCancel),
-                const SizedBox(width: Spacing.sm),
-              ],
-              Expanded(
-                child: SubsumoButton.primary(
-                  label: _busy ? 'Bitte warten ...' : 'Profil speichern',
-                  onPressed: _busy ? null : _save,
+          if (!widget.nurOrt) ...[
+            const SizedBox(height: Spacing.lg),
+            Row(
+              children: [
+                if (widget.onCancel != null) ...[
+                  SubsumoButton.tertiary(label: 'Abbrechen', onPressed: _busy ? null : widget.onCancel),
+                  const SizedBox(width: Spacing.sm),
+                ],
+                Expanded(
+                  child: SubsumoButton.primary(
+                    label: _busy ? 'Bitte warten ...' : 'Profil speichern',
+                    onPressed: _busy ? null : _save,
+                  ),
                 ),
-              ),
-            ],
-          ),
+              ],
+            ),
+          ],
         ],
       ),
     );
@@ -451,7 +494,7 @@ class _NextStepCard extends StatelessWidget {
       'review' => (
           'Karten wiederholen',
           Icons.style_outlined,
-          () => _openDeck(context, const DeckFilter(title: 'Faellige Karten')),
+          () => _openDeck(context, const DeckFilter(title: 'Fällige Karten')),
         ),
       'deck' => (
           'Deck lernen',
@@ -489,7 +532,7 @@ class _NextStepCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Naechster Schritt', style: theme.textTheme.bodySmall),
+          Text('Nächster Schritt', style: theme.textTheme.bodySmall),
           const SizedBox(height: Spacing.xs),
           Text(schritt['titel'] as String? ?? '', style: theme.textTheme.titleMedium),
           const SizedBox(height: Spacing.xs),
@@ -564,6 +607,16 @@ class _LernprofilCard extends StatelessWidget {
   }
 }
 
+/// Oeffnet das Lernprofil von ausserhalb des Examen-Reiters (z. B. Konto);
+/// laedt das Cockpit bei Bedarf nach.
+Future<void> openLernprofilFromAnywhere(BuildContext context) async {
+  final app = AppScope.of(context);
+  if (app.examenCockpit == null) await app.loadExamen();
+  final cockpit = app.examenCockpit;
+  if (cockpit == null || !context.mounted) return;
+  await _openLernprofil(context, _map(cockpit['lernprofil']), _maps(cockpit['themen']));
+}
+
 Future<void> _openLernprofil(
   BuildContext context,
   Map<String, dynamic> lernprofil,
@@ -578,7 +631,16 @@ Future<void> _openLernprofil(
   // saveLernprofil laedt das Cockpit bereits neu; ein erneuter Aufruf hier
   // deckt nur den Fall ab, dass die Seite ohne Speichern verlassen wurde und
   // trotzdem frische Daten (z. B. faellige Karten) sinnvoll sind.
-  if (saved != true) await app.loadExamen();
+  if (saved != true) {
+    await app.loadExamen();
+  } else if (context.mounted) {
+    // Nach dem Ruecksprung auf der sichtbaren Seite bestaetigen; 8 s, weil die
+    // Meldung erst nach dem Speichern kommt (Nutzertest W16/W17).
+    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+      duration: Duration(seconds: 8),
+      content: Text('Gespeichert: Bundesland, Universität und Lernprofil.'),
+    ));
+  }
 }
 
 // --------------------------------------------------------------------------- //
@@ -601,7 +663,7 @@ class _PhaseCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            tage > 0 ? '$tage Tage bis zum Examen' : 'Examen laeuft',
+            tage > 0 ? '$tage Tage bis zum Examen' : 'Examen läuft',
             style: theme.textTheme.titleMedium,
           ),
           const SizedBox(height: Spacing.xs),
@@ -619,7 +681,7 @@ class _PhaseCard extends StatelessWidget {
           const SizedBox(height: Spacing.xs),
           Text(
             'Vorbereitungsbeginn ${_formatIsoDate(phase['vorbereitungsbeginn'] as String)} - '
-            'die Phase haengt an diesem Datum, nicht am heutigen Aufruf.',
+            'die Phase hängt an diesem Datum, nicht am heutigen Aufruf.',
             style: theme.textTheme.bodySmall,
           ),
         ],
@@ -652,8 +714,8 @@ class _ReifeCard extends StatelessWidget {
           SubsumoProgressMeter(value: gesamt),
           const SizedBox(height: Spacing.md),
           Text(
-            'Kein Notenersatz: gewichteter Mittelwert der messbaren Komponenten. '
-            'Formel: ${reife['formel']}',
+            'Kein Notenersatz, sondern eine Lernstands-Schätzung. '
+            '${reifeGewichtung('${reife['formel'] ?? ''}')}',
             style: theme.textTheme.bodySmall,
           ),
           const SizedBox(height: Spacing.lg),
@@ -668,7 +730,7 @@ class _ReifeCard extends StatelessWidget {
             SubsumoProgressMeter(
               label: 'Bis ${semesterstoff!['semester']}. Semester  ·  '
                   '${semesterstoff!['cards_mature']} von ${semesterstoff!['cards_total']} '
-                  'Karten reif  ·  ${semesterstoff!['cards_due']} faellig',
+                  'Karten reif  ·  ${semesterstoff!['cards_due']} Wiederholungen fällig',
               value: (semesterstoff!['mastery'] as num? ?? 0).toDouble(),
             ),
           ],
@@ -763,17 +825,17 @@ class _HeuteCard extends StatelessWidget {
             ),
           if ((heute['review_backlog'] as int? ?? 0) > 0)
             Text(
-              'Rueckstand: ${heute['review_backlog']} Karten werden auf die Folgetage verteilt.',
+              'Rückstand: ${heute['review_backlog']} Karten werden auf die Folgetage verteilt.',
               style: theme.textTheme.bodySmall,
             ),
           if (plan.length > 1) ...[
             const Divider(height: Spacing.xl),
-            Text('Naechste Tage', style: theme.textTheme.titleSmall),
+            Text('Nächste Tage', style: theme.textTheme.titleSmall),
             const SizedBox(height: Spacing.xs),
             for (final tag in plan.skip(1))
               Text(
                 '${_weekdayOf(tag['date'] as String)} ${_formatIsoDate(tag['date'] as String)}: '
-                '${tag['total_minutes']} min, ${_maps(tag['blocks']).length} Bloecke',
+                '${tag['total_minutes']} min, ${_maps(tag['blocks']).length} Blöcke',
                 style: theme.textTheme.bodySmall,
               ),
           ],
@@ -805,20 +867,20 @@ class _KlausurCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Naechste Klausur unter Examensbedingungen', style: theme.textTheme.titleMedium),
+          Text('Nächste Klausur unter Examensbedingungen', style: theme.textTheme.titleMedium),
           const SizedBox(height: Spacing.xs),
           Text(
             klausur['aktiv'] == false
                 ? 'Wochenklausur im Lernprofil ausgeschaltet - der Vorschlag bleibt, '
                     'der Plan reserviert keinen Klausurtag.'
-                : '${_weekdayOf(datum)}, ${_formatIsoDate(datum)}  ·  fuenf Stunden, nur '
+                : '${_weekdayOf(datum)}, ${_formatIsoDate(datum)}  ·  fünf Stunden, nur '
                     'zugelassene Hilfsmittel, ohne Unterbrechung.',
             style: theme.textTheme.bodySmall,
           ),
           const SizedBox(height: Spacing.md),
           if (vorschlag == null)
             const SubsumoFeedbackBlock(
-              message: 'Noch kein Fall verfuegbar.',
+              message: 'Noch kein Fall verfügbar.',
               severity: FeedbackSeverity.neutral,
             )
           else ...[
@@ -870,14 +932,15 @@ class _LandesrechtCard extends StatelessWidget {
           const SizedBox(height: Spacing.xs),
           Text(
             '${deck['cards_mature']} von ${deck['cards_total']} Karten reif  ·  '
-            '${deck['cards_due']} faellig',
+            '${deck['cards_due']} Wiederholungen fällig',
             style: theme.textTheme.bodySmall,
           ),
           if (pruefstatus == 'in-pruefung') ...[
             const SizedBox(height: Spacing.sm),
             const SubsumoFeedbackBlock(
-              message: 'Redaktionsstatus: in Pruefung.',
-              detail: 'Normzitate gegen die aktuelle Gesetzesfassung deines Landes pruefen.',
+              message: 'Noch nicht juristisch freigegeben.',
+              detail: 'Diese Inhalte werden gerade fachlich geprüft. Im Zweifel gilt der '
+                  'aktuelle Wortlaut des Landesgesetzes.',
               severity: FeedbackSeverity.hint,
             ),
           ],
@@ -906,7 +969,7 @@ class _TopicRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    final row = Row(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         Expanded(
@@ -925,6 +988,8 @@ class _TopicRow extends StatelessWidget {
         ],
       ],
     );
+    // Die ganze Zeile oeffnet das Thema, nicht nur das Symbol (Nutzertest W10).
+    return onLearn == null ? row : InkWell(onTap: onLearn, child: row);
   }
 }
 
@@ -950,10 +1015,10 @@ class _DecksCard extends StatelessWidget {
           const SizedBox(height: Spacing.xs),
           Text(
             hatUniversitaet
-                ? 'In der Reihenfolge des Studienverlaufsplans deiner Universitaet. '
-                    'Jedes Deck enthaelt die Karten, Schemata und Faelle seiner Themen - '
-                    'plus das Landesrecht deines Bundeslands, wo es hingehoert.'
-                : 'Der komplette Kurskatalog. Mit einer Universitaet im Profil erscheint '
+                ? 'In der Reihenfolge des Studienverlaufsplans deiner Universität. '
+                    'Jedes Deck enthält die Karten, Schemata und Fälle seiner Themen - '
+                    'plus das Landesrecht deines Bundeslands, wo es hingehört.'
+                : 'Der komplette Kurskatalog. Mit einer Universität im Profil erscheint '
                     'hier der Studienverlaufsplan in Semesterreihenfolge.',
             style: theme.textTheme.bodySmall,
           ),
@@ -969,7 +1034,7 @@ class _DecksCard extends StatelessWidget {
               subtitle: Text(
                 'Semester ${deck['semester_default']}  ·  '
                 '${deck['cards_mature']} von ${deck['cards_total']} Karten reif  ·  '
-                '${deck['cards_due']} faellig',
+                '${deck['cards_due']} Wiederholungen fällig',
               ),
               trailing: const Icon(Icons.chevron_right),
               onTap: () => Navigator.of(context).push(
@@ -987,7 +1052,7 @@ class _DecksCard extends StatelessWidget {
                 subtitle: Text(
                   '${_maps(deck['topics']).length} Themen  ·  '
                   '${deck['cards_mature']} von ${deck['cards_total']} Karten reif  ·  '
-                  '${deck['cards_due']} faellig',
+                  '${deck['cards_due']} Wiederholungen fällig',
                 ),
                 trailing: const Icon(Icons.chevron_right),
                 onTap: () => Navigator.of(context).push(
@@ -1027,7 +1092,7 @@ class _SchwachstellenCard extends StatelessWidget {
           const SizedBox(height: Spacing.sm),
           if (themen.isEmpty && fehler.isEmpty)
             const SubsumoFeedbackBlock(
-              message: 'Keine verfehlten Pruefpunkte und keine Strukturfehler.',
+              message: 'Keine verfehlten Prüfpunkte und keine Strukturfehler.',
               severity: FeedbackSeverity.positive,
             ),
           for (final thema in themen)
@@ -1037,7 +1102,7 @@ class _SchwachstellenCard extends StatelessWidget {
               leading: Icon(Icons.flag_outlined, color: theme.colorScheme.onSurfaceVariant),
               title: Text(thema['title'] as String),
               subtitle: Text(
-                '${thema['verfehlte_pruefpunkte']} verfehlte Pruefpunkte'
+                '${thema['verfehlte_pruefpunkte']} verfehlte Prüfpunkte'
                 '${_strings(thema['beispiele']).isEmpty ? '' : ': ${_strings(thema['beispiele']).join('; ')}'}',
               ),
             ),
@@ -1051,13 +1116,13 @@ class _SchwachstellenCard extends StatelessWidget {
           ],
           if (fehler.isNotEmpty) ...[
             const SizedBox(height: Spacing.sm),
-            Text('Haeufigste Strukturfehler', style: theme.textTheme.titleSmall),
+            Text('Häufigste Strukturfehler', style: theme.textTheme.titleSmall),
             const SizedBox(height: Spacing.xs),
             Wrap(
               spacing: Spacing.sm,
               runSpacing: Spacing.xs,
               children: [
-                for (final f in fehler) SubsumoChip(label: '${f['code']} (${f['anzahl']})'),
+                for (final f in fehler) SubsumoChip(label: '${strukturfehlerLabel(f)} (${f['anzahl']})'),
               ],
             ),
           ],
@@ -1125,10 +1190,10 @@ class _BundeslandCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Pruefung in ${bundesland['name']}', style: theme.textTheme.titleMedium),
+          Text('Prüfung in ${bundesland['name']}', style: theme.textTheme.titleMedium),
           const SizedBox(height: Spacing.xs),
           Text(
-            '${klausuren['anzahl']} Klausuren a ${klausuren['dauer_minuten']} min: '
+            'Im Examen: ${klausuren['anzahl']} Klausuren à ${klausuren['dauer_minuten']} min: '
             '${verteilung.entries.map((e) => '${_areaLabels[e.key] ?? e.key} ${e.value}').join(', ')}',
             style: theme.textTheme.bodyMedium,
           ),
@@ -1141,8 +1206,8 @@ class _BundeslandCard extends StatelessWidget {
           if (bundesland['pruefstatus'] == 'in-pruefung') ...[
             const SizedBox(height: Spacing.sm),
             const SubsumoFeedbackBlock(
-              message: 'Angaben ohne Gewaehr - Redaktionsstatus: in Pruefung.',
-              detail: 'Massgeblich sind JAG/JAPO und die Bekanntmachungen des Pruefungsamts.',
+              message: 'Angaben ohne Gewähr - noch nicht juristisch freigegeben.',
+              detail: 'Maßgeblich sind JAG/JAPO und die Bekanntmachungen des Prüfungsamts.',
               severity: FeedbackSeverity.hint,
             ),
           ],
@@ -1153,7 +1218,7 @@ class _BundeslandCard extends StatelessWidget {
               'Freiversuch: ${_map(bundesland['freiversuch'])['beschreibung']}',
               'Abschichtung: ${_map(bundesland['abschichtung'])['beschreibung']}',
               'Notenverbesserung: ${_map(bundesland['notenverbesserung'])['beschreibung']}',
-              'Muendliche Pruefung: ${_map(bundesland['muendliche_pruefung'])['beschreibung']}',
+              'Mündliche Prüfung: ${_map(bundesland['muendliche_pruefung'])['beschreibung']}',
             ],
           ),
           _Abschnitt(
@@ -1180,9 +1245,9 @@ class _BundeslandCard extends StatelessWidget {
   static String _normLabel(String key) => switch (key) {
         'polizeigesetz' => 'Polizeigesetz',
         'polizei_generalklausel' => 'Generalklausel',
-        'standardmassnahmen' => 'Standardmassnahmen',
-        'stoerer' => 'Stoerer',
-        'ordnungsbehoerden' => 'Zustaendigkeit',
+        'standardmassnahmen' => 'Standardmaßnahmen',
+        'stoerer' => 'Störer',
+        'ordnungsbehoerden' => 'Zuständigkeit',
         'verwaltungsverfahrensgesetz' => 'VwVfG',
         'vollstreckung' => 'Vollstreckung',
         'kommunalverfassung' => 'Kommunalverfassung',
@@ -1246,7 +1311,10 @@ class DeckDetailPage extends StatelessWidget {
     final mastery = (deck['mastery'] as num? ?? 0).toDouble();
 
     return Scaffold(
-      appBar: AppBar(title: Text(deck['title'] as String)),
+      appBar: AppBar(
+        title: Text(deck['title'] as String),
+        actions: [BetaFeedbackAction(screen: 'Deck: ${deck['title']}')],
+      ),
       body: ReadableWidth(
         child: ListView(
           padding: const EdgeInsets.all(Spacing.lg),
@@ -1272,7 +1340,7 @@ class DeckDetailPage extends StatelessWidget {
                   ),
                   const SizedBox(height: Spacing.md),
                   SubsumoButton.primary(
-                    label: 'Deck lernen (${deck['cards_due']} faellig)',
+                    label: 'Deck lernen',
                     icon: Icons.style_outlined,
                     onPressed: () => _openDeck(
                       context,
@@ -1289,14 +1357,14 @@ class DeckDetailPage extends StatelessWidget {
               for (final ziel in lernziele)
                 Padding(
                   padding: const EdgeInsets.only(bottom: Spacing.xs),
-                  child: SubsumoFeedbackBlock(message: ziel, severity: FeedbackSeverity.neutral),
+                  child: SubsumoFeedbackBlock(message: normUmbruchschutz(ziel), severity: FeedbackSeverity.neutral),
                 ),
             ],
             if (landesrechtFehlt.isNotEmpty) ...[
               const SizedBox(height: Spacing.lg),
               const SubsumoFeedbackBlock(
                 message: 'Landesrecht fehlt in diesem Deck.',
-                detail: 'Waehle im Examen-Reiter ein Bundesland, dann kommt das passende '
+                detail: 'Wähle im Examen-Reiter ein Bundesland, dann kommt das passende '
                     'Landesrecht dazu.',
                 severity: FeedbackSeverity.hint,
               ),
@@ -1305,7 +1373,15 @@ class DeckDetailPage extends StatelessWidget {
             Text('Themen', style: theme.textTheme.titleMedium),
             const SizedBox(height: Spacing.sm),
             for (final topic in topics) ...[
-              _TopicRow(topic: topic),
+              _TopicRow(
+                topic: topic,
+                onLearn: topic['slug'] is String
+                    ? () => _openDeck(
+                          context,
+                          DeckFilter(title: topic['title'] as String, topic: topic['slug'] as String),
+                        )
+                    : null,
+              ),
               const SizedBox(height: Spacing.sm),
             ],
             if (schemata.isNotEmpty) ...[
@@ -1319,11 +1395,20 @@ class DeckDetailPage extends StatelessWidget {
                   leading: Icon(Icons.account_tree_outlined,
                       color: theme.colorScheme.onSurfaceVariant),
                   title: Text(schema['title'] as String),
+                  trailing: const Icon(Icons.chevron_right),
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) => SchemaDetailPage(
+                        slug: schema['slug'] as String,
+                        title: schema['title'] as String,
+                      ),
+                    ),
+                  ),
                 ),
             ],
             if (cases.isNotEmpty) ...[
               const SizedBox(height: Spacing.lg),
-              Text('Faelle', style: theme.textTheme.titleMedium),
+              Text('Fälle', style: theme.textTheme.titleMedium),
               const SizedBox(height: Spacing.sm),
               for (final fall in cases)
                 ListTile(
@@ -1347,9 +1432,9 @@ class DeckDetailPage extends StatelessWidget {
             if (fehlend.isNotEmpty) ...[
               const SizedBox(height: Spacing.lg),
               SubsumoFeedbackBlock(
-                message: 'Noch nicht im Deck (Content in Arbeit):',
+                message: 'Weitere Themen in Vorbereitung',
                 detail: fehlend.join('; '),
-                severity: FeedbackSeverity.hint,
+                severity: FeedbackSeverity.neutral,
               ),
             ],
           ],
@@ -1389,7 +1474,18 @@ class _DeckReviewPageState extends State<DeckReviewPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: _focusMode ? null : AppBar(title: Text('Deck: ${widget.filter.title}')),
+      appBar: _focusMode
+          ? null
+          : AppBar(
+              toolbarHeight: 64,
+              title: Text(
+                'Deck: ${widget.filter.title}',
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              actions: [BetaFeedbackAction(screen: 'Deck: ${widget.filter.title}')],
+            ),
       body: SafeArea(
         top: _focusMode,
         child: ReviewPage(
@@ -1401,7 +1497,30 @@ class _DeckReviewPageState extends State<DeckReviewPage> {
   }
 }
 
-Future<void> _openDeck(BuildContext context, DeckFilter filter) async {
+/// Macht aus der API-Formel ("0.41 x wissen + 0.12 x landesrecht ...") einen
+/// lesbaren Satz ("Gewichtung: Wissen 41 %, Landesrecht 12 % ...").
+String reifeGewichtung(String formel) {
+  const namen = {
+    'wissen': 'Wissen',
+    'landesrecht': 'Landesrecht',
+    'anwendung': 'Anwendung',
+    'technik': 'Gutachtentechnik',
+    'klausurpraxis': 'Klausurpraxis',
+  };
+  final teile = [
+    for (final m in RegExp(r'([0-9]+(?:[.,][0-9]+)?)\s*[x×*]\s*([a-zäöüß_]+)').allMatches(formel))
+      '${namen[m.group(2)] ?? m.group(2)} '
+          '${(double.parse(m.group(1)!.replaceAll(',', '.')) * 100).round()} %',
+  ];
+  return teile.isEmpty ? '' : 'Gewichtung: ${teile.join(', ')}.';
+}
+
+Future<void> _openDeck(BuildContext context, DeckFilter filter) =>
+    openDeckReview(context, filter);
+
+/// Oeffnet die Lernschleife fuer ein Deck oder Thema (auch von der Startseite
+/// "Heute" genutzt: Tap auf eine Themenzeile).
+Future<void> openDeckReview(BuildContext context, DeckFilter filter) async {
   final app = AppScope.of(context);
   app.activeDeck = filter;
   await Navigator.of(context).push(
@@ -1412,6 +1531,29 @@ Future<void> _openDeck(BuildContext context, DeckFilter filter) async {
 // --------------------------------------------------------------------------- //
 // Helfer
 // --------------------------------------------------------------------------- //
+
+/// Anzeigename eines Strukturfehlers: `label` der API, sonst bekannte Codes,
+/// sonst der Code lesbar gemacht (Unterstriche -> Leerzeichen, Anfang gross).
+String strukturfehlerLabel(Map<String, dynamic> fehler) {
+  final label = fehler['label'];
+  if (label is String && label.trim().isNotEmpty) return label;
+  final code = '${fehler['code'] ?? ''}';
+  const bekannt = {
+    'offener_obersatz': 'Obersatz ohne Ergebnis',
+    'kein_ergebnis': 'Ergebnis fehlt',
+    'wiederholung': 'Wiederholungen',
+    'sprung_zum_ergebnis': 'Sprung zum Ergebnis',
+    'urteilsstil': 'Urteilsstil',
+    'keine_norm': 'Norm fehlt',
+    'kein_obersatz': 'Obersatz fehlt',
+    'keine_definition': 'Definition fehlt',
+    'keine_subsumtion': 'Subsumtion fehlt',
+  };
+  final hit = bekannt[code];
+  if (hit != null) return hit;
+  final text = code.replaceAll('_', ' ').trim();
+  return text.isEmpty ? code : '${text[0].toUpperCase()}${text.substring(1)}';
+}
 
 Map<String, dynamic> _map(Object? value) =>
     value is Map ? Map<String, dynamic>.from(value) : <String, dynamic>{};

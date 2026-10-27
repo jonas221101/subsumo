@@ -1,0 +1,410 @@
+topic:
+  slug: or-baurecht-bauordnungsrecht-nachbarschutz
+  area: oeffentliches-recht
+  title: Bauordnungsrecht, Baugenehmigung und baurechtlicher Nachbarschutz
+  parent: oeffentliches-recht
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-br-bn-bauordnung-landesrecht
+  type: definition
+  front: Wie verhalten sich Bauplanungsrecht und Bauordnungsrecht zueinander, und wer regelt was?
+  back: >-
+    Das Bauplanungsrecht (BauGB, BauNVO) ist Bundesrecht und regelt, ob und wie ein Grundstück bebaut werden darf
+    (Bodenrecht, Art. 74 Abs. 1 Nr. 18 GG). Das Bauordnungsrecht ist Landesrecht (BayBO, BauO NRW, LBO BW, HBO, NBauO
+    und weitere Landesbauordnungen); es regelt Anforderungen an die Bauausführung und an die Anlage selbst
+    (Standsicherheit, Brandschutz, Abstandsflächen, Stellplätze), das Genehmigungsverfahren und die bauaufsichtlichen
+    Befugnisse. Die Landesbauordnungen folgen weitgehend der Musterbauordnung (MBO) der Bauministerkonferenz, die selbst
+    kein Gesetz ist; im Einzelnen weichen sie voneinander ab, zuletzt bei Genehmigungsfreiheit, Verfahren und
+    Abstandsflächen. Die Baugenehmigungsbehörde prüft im Verfahren beide Rechtsbereiche, je nach Verfahrensart in unterschiedlichem Umfang.
+  norms:
+  - Art. 74 Abs. 1 Nr. 18 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Landesbauordnungen (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bn-genehmigungspflicht
+  type: definition
+  front: Wann bedarf ein Vorhaben einer Baugenehmigung, und welche Verfahrensarten gibt es?
+  back: >-
+    Nach den Landesbauordnungen bedürfen die Errichtung, Änderung und Nutzungsänderung baulicher Anlagen grundsätzlich
+    der Baugenehmigung (Präventivkontrolle). Davon gibt es zahlreiche Ausnahmen: genehmigungsfreie Vorhaben (kleine
+    Gebäude, Einfriedungen, bestimmte Anlagen der Energieversorgung) und Genehmigungsfreistellung für Wohnbauvorhaben
+    im Geltungsbereich eines qualifizierten Bebauungsplans, wenn die Gemeinde nicht innerhalb einer Frist widerspricht.
+    Im vereinfachten Genehmigungsverfahren prüft die Behörde nur ausgewählte Vorschriften (Bauplanungsrecht, Abstandsflächen,
+    bestimmte Teile des Bauordnungsrechts und sonstiges öffentliches Recht, das von der Baugenehmigung mit erfasst
+    wird); für große Vorhaben („Sonderbauten“) findet das umfassende Verfahren statt. Auch in den genehmigungsfreien
+    Fällen bleibt der Bauherr an das materielle Recht gebunden; die Freistellung ist keine Legalisierung. Maßgeblich
+    sind die Regelungen der jeweiligen Landesbauordnung.
+  norms:
+  - Art. 74 Abs. 1 Nr. 18 GG
+  quellen:
+  - Landesbauordnungen (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bn-baugenehmigung-anspruch
+  type: norm
+  front: Hat der Bauherr einen Anspruch auf Baugenehmigung, und welche Rechtsnatur hat sie?
+  back: >-
+    Die Baugenehmigung ist nach den Landesbauordnungen zu erteilen, wenn dem Vorhaben keine öffentlich-rechtlichen
+    Vorschriften entgegenstehen, die im jeweiligen Verfahren zu prüfen sind. Der Bauherr hat bei Vorliegen dieser
+    Voraussetzungen einen Rechtsanspruch; die Behörde hat kein Ermessen (gebundene Entscheidung). Das folgt aus der
+    Baufreiheit als Ausprägung von Art. 14 Abs. 1 GG und dem Rechtsstaatsprinzip. Die Baugenehmigung ist ein
+    begünstigender Verwaltungsakt (§ 35 VwVfG) mit feststellender Wirkung (das Vorhaben verstößt nicht gegen geprüftes
+    öffentliches Recht) und verfügender Wirkung (Freigabe der Bauausführung). Sie ist grundstücksbezogen (dinglich) und wirkt
+    für und gegen den Rechtsnachfolger; sie lässt das Zivilrecht unberührt und wird unbeschadet der privaten Rechte Dritter
+    erteilt. Ablehnung: Verpflichtungsklage (§ 42 Abs. 1 Var. 2 VwGO), bei Spruchreife auf Erteilung.
+  norms:
+  - Art. 14 Abs. 1 GG
+  - § 35 VwVfG
+  - § 42 Abs. 1 VwGO
+  quellen:
+  - Landesbauordnungen (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bn-abstandsflaechen
+  type: definition
+  front: Was sind Abstandsflächen, und wie sind sie nach der Musterbauordnung geregelt?
+  back: >-
+    Abstandsflächen sind Flächen vor den Außenwänden von Gebäuden, die von oberirdischen Gebäuden freizuhalten sind. Sie
+    sichern Belichtung, Belüftung, Brandschutz und Wohnfrieden. Nach der Musterbauordnung (MBO) muss vor den Außenwänden eine
+    Abstandsfläche liegen, deren Tiefe sich nach der Wandhöhe richtet; sie beträgt in der Regel das 0,4-fache der Wandhöhe
+    (H), mindestens drei Meter. Sie muss auf dem Grundstück selbst liegen (oder durch Baulast auf dem Nachbargrundstück
+    gesichert sein) und darf sich grundsätzlich nicht mit Abstandsflächen anderer Gebäude überdecken. Zahlreiche
+    Länder haben das Maß oder die Ausnahmen (Schmalseitenprivileg, Gewerbe- und Industriegebiete) abweichend geregelt;
+    maßgeblich ist die Landesbauordnung. Das Abstandsflächenrecht ist nachbarschützend; Unterschreitungen
+    ohne zugelassene Abweichung verletzen den Nachbarn regelmäßig in eigenen Rechten.
+  norms:
+  - Musterbauordnung (MBO), Abstandsflächen
+  quellen:
+  - Musterbauordnung (MBO)
+  - Landesbauordnungen (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bn-bauaufsicht-massnahmen
+  type: definition
+  front: Welche bauaufsichtlichen Maßnahmen gibt es, und welche Voraussetzungen haben sie?
+  back: >-
+    Die Bauaufsichtsbehörden haben nach den Landesbauordnungen Generalklauseln zum Einschreiten bei Verstößen gegen
+    öffentlich-rechtliche Vorschriften. Die Baueinstellung (Stilllegung) ist zulässig, wenn ein Vorhaben ohne die erforderliche
+    Genehmigung oder abweichend davon ausgeführt wird; die formelle Illegalität genügt. Die Nutzungsuntersagung ist
+    bei formeller Illegalität zulässig; sie ist ermessensfehlerhaft, wenn das Vorhaben offensichtlich genehmigungsfähig ist.
+    Die Beseitigungsanordnung ist das schärfste Mittel und setzt neben der formellen auch die materielle Illegalität
+    voraus; es dürfen nicht auf andere Weise rechtmäßige Zustände hergestellt werden können. Alle Maßnahmen stehen im
+    Ermessen (Einschreitensermessen, Auswahlermessen) und müssen verhältnismäßig sein; als Adressat kommen Bauherr,
+    Eigentümer und Nutzer in Betracht (Störerauswahl).
+  norms:
+  - Art. 14 Abs. 1 GG
+  quellen:
+  - Landesbauordnungen (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bn-nutzungsuntersagung-streit
+  type: streitstand
+  front: Genügt für die Nutzungsuntersagung die formelle Illegalität, oder muss auch materielle Illegalität vorliegen?
+  back: >-
+    Nach h. M. und überwiegender Rechtsprechung genügt für die Nutzungsuntersagung die formelle Illegalität, also eine
+    Nutzung ohne die erforderliche Genehmigung. Die Genehmigungspflicht dient dazu, die Rechtmäßigkeit vorab zu klären;
+    wer ohne Genehmigung nutzt, soll sich nicht besserstellen als derjenige, der den Genehmigungsweg beschreitet. Die
+    Behörde darf die Nutzung untersagen, ohne die materielle Rechtslage abschließend geprüft zu haben. Eine Mindermeinung
+    verlangt zusätzlich die materielle Illegalität, weil sonst in die Baufreiheit (Art. 14 GG) und die Berufsfreiheit
+    ohne Rechtfertigung eingegriffen werde. Die h. M. begegnet diesem Einwand durch das Ermessen: Ist die Nutzung
+    offensichtlich genehmigungsfähig, ist die Untersagung ermessensfehlerhaft und unverhältnismäßig. Für die Beseitigungsanordnung
+    verlangen beide Ansichten die materielle Illegalität, weil sie das Eigentum endgültig beeinträchtigt.
+  norms:
+  - Art. 14 Abs. 1 GG
+  quellen:
+  - Landesbauordnungen (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bn-bestandsschutz
+  type: definition
+  front: Was bedeutet Bestandsschutz im Baurecht, und wann erlischt er?
+  back: >-
+    Bestandsschutz schützt eine bauliche Anlage und ihre Nutzung, die zu irgendeinem Zeitpunkt im Einklang mit dem
+    materiellen Recht errichtet wurde (formell und materiell legal), vor nachträglichen Eingriffen, auch wenn sich
+    die Rechtslage später geändert hat. Er beruht auf Art. 14 Abs. 1 S. 1 GG und wird heute durch einfachgesetzliche Regelungen
+    ausgestaltet (etwa § 35 Abs. 4 BauGB, Übergangsvorschriften, Genehmigungswirkung der Baugenehmigung). Eine
+    Baugenehmigung entfaltet Bestandsschutz auch gegenüber später eingetretenen Rechtsänderungen, solange sie nicht
+    aufgehoben wird (Legalisierungswirkung). Der Bestandsschutz erstreckt sich nur auf die Erhaltung der Anlage in ihrer
+    vorhandenen Gestalt und Nutzung. Ein „überwirkender“ Bestandsschutz für Erweiterungen oder Änderungen unmittelbar aus
+    Art. 14 GG wird von der Rechtsprechung nicht anerkannt. Er erlischt bei Zerstörung, bei
+    Beseitigung, bei dauerhafter Nutzungsaufgabe und bei wesentlicher Änderung der Identität des Bauwerks.
+  norms:
+  - Art. 14 Abs. 1 S. 1 GG
+  - § 35 Abs. 4 BauGB
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bn-drittschutz-grundlagen
+  type: definition
+  front: Wie beurteilt man, ob eine baurechtliche Norm drittschützend ist, und wer ist „Nachbar“?
+  back: >-
+    Der Nachbar ist nur klagebefugt und in seinen Rechten verletzt, wenn die verletzte Norm zumindest auch dem Schutz
+    seiner Individualinteressen zu dienen bestimmt ist (Schutznormtheorie). Das ist durch Auslegung zu ermitteln: Die
+    Norm muss einen abgrenzbaren, individualisierten Kreis von Betroffenen schützen. Drittschützend sind etwa die
+    Vorschriften über das Abstandsflächenrecht, das Rücksichtnahmegebot und die Festsetzungen eines Bebauungsplans über
+    die Art der baulichen Nutzung. Nicht drittschützend sind in der Regel Vorschriften, die nur dem öffentlichen Interesse
+    dienen (Ortsbild, Stellplatzpflicht, Gestaltungsvorschriften). Nachbar ist, wer Eigentümer oder dinglich Berechtigter
+    eines Grundstücks ist, das sich im Einwirkungsbereich des Vorhabens befindet; Mieter und Pächter sind nach der Rechtsprechung
+    des BVerwG regelmäßig nicht Nachbarn im Sinne des baurechtlichen Abwehrrechts. Ist die Genehmigung objektiv rechtswidrig, verletzt sie aber keine
+    drittschützende Norm, hat der Nachbar keinen Aufhebungsanspruch.
+  norms:
+  - § 42 Abs. 2 VwGO
+  - § 113 Abs. 1 S. 1 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bn-gebietserhaltungsanspruch
+  type: rechtsprechung
+  front: Was besagt der Gebietserhaltungsanspruch des Nachbarn?
+  back: >-
+    Das Bundesverwaltungsgericht hat in BVerwGE 94, 151 den Gebietserhaltungsanspruch anerkannt: Der Eigentümer eines Grundstücks
+    in einem durch Bebauungsplan festgesetzten Baugebiet kann sich gegen die Zulassung einer gebietswidrigen Nutzung auch dann
+    wehren, wenn er durch sie nicht konkret beeinträchtigt wird. Grund ist das nachbarliche Austauschverhältnis: Die
+    Eigentümer sind wechselseitig an die Gebietsfestsetzungen gebunden und können die Einhaltung verlangen. Es genügt, dass die
+    Nutzung nach der Art der baulichen Nutzung im Gebiet unzulässig ist (Verstoß gegen Festsetzungen nach den §§ 2 ff. BauNVO). Der
+    Anspruch gilt im festgesetzten Baugebiet und im faktischen Baugebiet (§ 34 Abs. 2 BauGB), er
+    erstreckt sich auf das gesamte Baugebiet und nicht nur auf unmittelbar angrenzende Grundstücke. Er ist von einer
+    Beeinträchtigung unabhängig, anders als das Rücksichtnahmegebot.
+  norms:
+  - § 34 Abs. 2 BauGB
+  - § 30 Abs. 1 BauGB
+  quellen:
+  - BVerwGE 94, 151
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bn-ruecksichtnahme
+  type: rechtsprechung
+  front: Was ist das Gebot der Rücksichtnahme, und wann vermittelt es Nachbarschutz?
+  back: >-
+    Das Gebot der Rücksichtnahme folgt aus den Tatbestandsmerkmalen „einfügen“ (§ 34 Abs. 1 BauGB), „öffentliche
+    Belange“ (§ 35 Abs. 3 BauGB) und aus § 15 Abs. 1 S. 2 BauNVO. Das Bundesverwaltungsgericht hat es in BVerwGE 52, 122
+    entwickelt. Es vermittelt Drittschutz, soweit in qualifizierter und individualisierter Weise auf schutzwürdige Interessen
+    eines abgrenzbaren Personenkreises Rücksicht zu nehmen ist. Es verlangt eine Abwägung zwischen den Interessen des Bauherrn
+    und denen des Nachbarn: Je empfindlicher und schutzwürdiger die Stellung des Nachbarn, desto mehr Rücksicht ist geboten;
+    je gewichtiger die Interessen des Bauherrn, desto mehr muss der Nachbar hinnehmen. Verletzt ist es bei unzumutbaren
+    Beeinträchtigungen, z. B. durch erdrückende oder abriegelnde Wirkung, Lärm oder Gerüche. Der Schutz vor Einsicht ist
+    in der Regel nicht geboten.
+  norms:
+  - § 34 Abs. 1 BauGB
+  - § 35 Abs. 3 BauGB
+  - § 15 Abs. 1 BauNVO
+  quellen:
+  - BVerwGE 52, 122
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bn-befreiung-nachbar
+  type: norm
+  front: Wann kann der Nachbar sich gegen eine Befreiung nach § 31 Abs. 2 BauGB wehren?
+  back: >-
+    Wird die Befreiung von einer nachbarschützenden Festsetzung erteilt (z. B. von der Art der baulichen Nutzung), hat der
+    Nachbar einen Anspruch auf die Einhaltung der Voraussetzungen des § 31 Abs. 2 BauGB: Ist die Befreiung rechtswidrig, ist
+    er in seinen Rechten verletzt, ohne dass er eine konkrete Beeinträchtigung geltend machen muss. Betrifft die Befreiung
+    dagegen eine nicht nachbarschützende Festsetzung (z. B. Baugrenze, Maß der Nutzung ohne Schutzwirkung), kann der Nachbar
+    nur die Verletzung des Rücksichtnahmegebots rügen, das nach § 31 Abs. 2 BauGB in der „Würdigung nachbarlicher Interessen“
+    enthalten ist. In diesem Fall ist maßgeblich, ob die Befreiung zu unzumutbaren Beeinträchtigungen führt. Der Unterschied ist wichtig für die Klagebefugnis und die Prüfungstiefe.
+  norms:
+  - § 31 Abs. 2 BauGB
+  - § 42 Abs. 2 VwGO
+  quellen:
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bn-nachbarklage-rechtsschutz
+  type: norm
+  front: Wie verläuft die Nachbarklage gegen eine Baugenehmigung (Anfechtungsklage, Beiladung, § 113 VwGO)?
+  back: >-
+    Der Nachbar greift die dem Bauherrn erteilte Baugenehmigung mit der Anfechtungsklage (§ 42 Abs. 1 Var. 1 VwGO) an. Die
+    Baugenehmigung ist ein Verwaltungsakt mit Doppelwirkung: Sie begünstigt den Bauherrn und belastet den Nachbarn. Zulässigkeit:
+    Klagebefugnis (§ 42 Abs. 2 VwGO) aus einer möglicherweise drittschützenden Norm; Vorverfahren, soweit das Landesrecht es
+    vorsieht; Frist ein Monat nach Bekanntgabe (§ 74 VwGO); wurde die Genehmigung dem Nachbarn nicht
+    bekanntgegeben, läuft keine Frist, sein Abwehrrecht kann aber nach Treu und Glauben verwirkt werden, wenn er nach
+    Kenntnis oder Kennenmüssen längere Zeit untätig bleibt. Der Bauherr ist notwendig beizuladen, § 65 Abs. 2 VwGO. Beklagter ist der Rechtsträger der
+    Baugenehmigungsbehörde, § 78 Abs. 1 Nr. 1 VwGO. Begründet ist die Klage, wenn die Genehmigung rechtswidrig ist und den
+    Nachbarn in eigenen Rechten verletzt, § 113 Abs. 1 S. 1 VwGO; eine bloße objektive Rechtswidrigkeit
+    genügt nicht.
+  norms:
+  - § 42 VwGO
+  - § 65 Abs. 2 VwGO
+  - § 113 Abs. 1 S. 1 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-br-bn-eilrechtsschutz-212a
+  type: norm
+  front: Welche Bedeutung hat § 212a BauGB für den vorläufigen Rechtsschutz des Nachbarn?
+  back: >-
+    Nach § 212a Abs. 1 BauGB haben Widerspruch und Anfechtungsklage eines Dritten gegen die bauaufsichtliche Zulassung
+    eines Vorhabens keine aufschiebende Wirkung. Der Bauherr darf also trotz der Nachbarklage zunächst bauen (auf
+    eigenes Risiko). Der Nachbar kann deshalb nach § 80a Abs. 3 S. 2 i. V. m. § 80 Abs. 5 VwGO beim Verwaltungsgericht beantragen,
+    die aufschiebende Wirkung anzuordnen; zuvor oder daneben kann er bei der Behörde die Aussetzung der Vollziehung nach
+    § 80a Abs. 1 Nr. 2 VwGO beantragen. Das Gericht entscheidet aufgrund einer Interessenabwägung, deren Schwerpunkt die
+    Erfolgsaussichten in der Hauptsache bilden; sind sie offen, entscheidet eine Folgenabwägung. Der Bauherr ist
+    beizuladen.
+  norms:
+  - § 212a Abs. 1 BauGB
+  - § 80a Abs. 3 VwGO
+  - § 80 Abs. 5 VwGO
+  quellen:
+  - BauGB, amtliche Fassung
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: or-schema-br-bn-nachbarklage
+  title: Nachbarklage gegen eine Baugenehmigung (Anfechtungsklage)
+  norms:
+  - § 42 VwGO
+  - § 113 Abs. 1 S. 1 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: A. Zulässigkeit
+    children:
+    - label: I. Verwaltungsrechtsweg, § 40 Abs. 1 VwGO
+    - label: II. Statthafte Klageart – Anfechtung der Baugenehmigung, § 42 Abs. 1 Var. 1 VwGO
+    - label: III. Klagebefugnis, § 42 Abs. 2 VwGO
+      children:
+      - label: 1. Nachbarstellung – Eigentümer oder dinglich Berechtigter
+      - label: 2. Mögliche Verletzung einer drittschützenden Norm
+        hinweis: Gebietserhaltungsanspruch, Rücksichtnahmegebot, Abstandsflächen.
+    - label: IV. Vorverfahren, Frist, Verwirkung – §§ 68, 74 VwGO
+    - label: V. Beteiligte – Beklagter § 78 Abs. 1 Nr. 1 VwGO, Beiladung des Bauherrn § 65 Abs. 2 VwGO
+  - label: B. Begründetheit, § 113 Abs. 1 S. 1 VwGO
+    children:
+    - label: I. Rechtswidrigkeit der Baugenehmigung (Prüfungsumfang des Verfahrens)
+      children:
+      - label: 1. Bauplanungsrecht – §§ 30, 34, 35 BauGB, BauNVO
+      - label: 2. Bauordnungsrecht – Abstandsflächen und weitere Normen
+    - label: II. Verletzung in eigenen Rechten
+      children:
+      - label: 1. Drittschutz der verletzten Norm (Schutznormtheorie)
+      - label: 2. Konkrete Beeinträchtigung nur bei Rücksichtnahmegebot erforderlich
+  - label: C. Vorläufiger Rechtsschutz
+    hinweis: § 212a BauGB – Antrag nach § 80a Abs. 3 i. V. m. § 80 Abs. 5 VwGO.
+- slug: or-schema-br-bn-baugenehmigungsanspruch
+  title: Anspruch auf Erteilung der Baugenehmigung (Verpflichtungsklage)
+  norms:
+  - § 42 Abs. 1 VwGO
+  - § 113 Abs. 5 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Landesbauordnungen (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Genehmigungsbedürftigkeit – Errichtung, Änderung oder Nutzungsänderung, keine Freistellung
+  - label: II. Verfahrensart und Prüfungsumfang
+  - label: III. Bauplanungsrechtliche Zulässigkeit – §§ 29 ff. BauGB, gemeindliches Einvernehmen
+  - label: IV. Bauordnungsrechtliche Zulässigkeit – Abstandsflächen u. a.
+  - label: V. Sonstiges öffentliches Recht, soweit mitgeprüft
+  - label: VI. Rechtsfolge – gebundener Anspruch auf Erteilung
+faelle:
+- slug: or-fall-br-bn-nachbarklage-innenbereich
+  title: Die Möbelfabrik im Wohngebiet
+  difficulty: 4
+  minutes: 70
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BauGB, amtliche Fassung
+  - BauNVO, amtliche Fassung
+  - VwGO, amtliche Fassung
+  facts: >-
+    In der Straße X der Stadt S stehen ganz überwiegend Wohnhäuser; vereinzelt gibt es einen Bäcker, eine Arztpraxis und
+    eine Gaststätte. Für das Gebiet besteht kein Bebauungsplan; es liegt im Zusammenhang bebauter Ortsteile und entspricht
+    seiner Eigenart nach einem allgemeinen Wohngebiet. Bauherr B beantragt die Genehmigung für eine Möbelfabrik mit
+    Schreinereimaschinen, Lkw-Anlieferung und Betrieb in zwei Schichten auf einem Grundstück in der Straße X. Die Baugenehmigungsbehörde
+    erteilt die Genehmigung, nachdem die Gemeinde ihr Einvernehmen erteilt hat. N, Eigentümer eines Wohnhauses in der
+    Straße X, vier Häuser vom Baugrundstück entfernt, hält die Genehmigung für rechtswidrig. Konkrete Lärmmessungen liegen nicht
+    vor, nach Angaben der Behörde wird der Immissionsrichtwert eingehalten. Ein Vorverfahren ist im Land nicht vorgesehen. N
+    erhebt innerhalb eines Monats nach Bekanntgabe Klage; B beginnt sofort mit dem Bau.
+  question: Hat die Klage des N Aussicht auf Erfolg, und wie kann N verhindern, dass B vor der Entscheidung baut?
+  steps:
+  - prompt: Ist die Klage zulässig?
+    erwartung: Verwaltungsrechtsweg nach § 40 Abs. 1 VwGO; statthaft ist die Anfechtungsklage (Nachbarklage gegen die Baugenehmigung, § 42 Abs. 1 Var. 1 VwGO). N ist als Eigentümer eines Grundstücks im selben Baugebiet Nachbar und klagebefugt, weil ihm ein Gebietserhaltungsanspruch möglicherweise zusteht (§ 42 Abs. 2 VwGO). Kein Vorverfahren, die Monatsfrist ist gewahrt. B ist notwendig beizuladen (§ 65 Abs. 2 VwGO).
+  - prompt: Nach welchem Maßstab beurteilt sich die Zulässigkeit der Möbelfabrik?
+    erwartung: § 34 Abs. 2 BauGB, weil die Umgebung einem allgemeinen Wohngebiet (§ 4 BauNVO) entspricht. Eine Möbelfabrik mit Maschinenbetrieb, Lkw-Verkehr und Zweischichtbetrieb ist ein störender Gewerbebetrieb. Sie ist im allgemeinen Wohngebiet weder allgemein zulässig (§ 4 Abs. 2 BauNVO) noch ausnahmsweise (§ 4 Abs. 3 BauNVO erfasst nur nicht störende Gewerbebetriebe) und damit nach § 34 Abs. 2 BauGB unzulässig. Die Baugenehmigung ist rechtswidrig. Das Einvernehmen der Gemeinde ändert daran nichts.
+  - prompt: Ist N dadurch in eigenen Rechten verletzt?
+    erwartung: Ja. Die Festsetzungen zur Art der baulichen Nutzung (hier das faktische Baugebiet nach § 34 Abs. 2 BauGB) sind nachbarschützend. Nach dem Gebietserhaltungsanspruch (BVerwGE 94, 151) kann N die gebietswidrige Nutzung abwehren, ohne dass eine konkrete Beeinträchtigung nachgewiesen werden muss. Dass der Lärmrichtwert eingehalten wird, ist daher unerheblich. Die Klage ist begründet (§ 113 Abs. 1 S. 1 VwGO).
+  - prompt: Wie kann N den Baubeginn verhindern?
+    erwartung: Nach § 212a Abs. 1 BauGB hat seine Klage keine aufschiebende Wirkung. N kann deshalb beim Verwaltungsgericht nach § 80a Abs. 3 i. V. m. § 80 Abs. 5 VwGO die Anordnung der aufschiebenden Wirkung beantragen (zuvor ggf. bei der Behörde nach § 80a Abs. 1 Nr. 2 VwGO). Wegen der offensichtlichen Erfolgsaussichten in der Hauptsache fällt die Interessenabwägung zu seinen Gunsten aus.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Zulässigkeit der Nachbarklage (Anfechtungsklage, Klagebefugnis als Nachbar, Beiladung des Bauherrn)
+      weight: 1.5
+      required: false
+      norms:
+      - § 42 Abs. 2 VwGO
+      - § 65 Abs. 2 VwGO
+      keywords:
+      - Anfechtungsklage
+      - Klagebefugnis
+      - Nachbar
+      - Beiladung
+      - § 65 Abs. 2 VwGO
+      card_slugs:
+      - or-br-bn-nachbarklage-rechtsschutz
+    - id: p2
+      label: Prüfungsmaßstab § 34 Abs. 2 BauGB iVm § 4 BauNVO; Möbelfabrik im faktischen allgemeinen Wohngebiet unzulässig
+      weight: 3.0
+      required: true
+      norms:
+      - § 34 Abs. 2 BauGB
+      - § 4 BauNVO
+      keywords:
+      - § 34 Abs. 2 BauGB
+      - faktisches Baugebiet
+      - allgemeines Wohngebiet
+      - § 4 BauNVO
+      - störender Gewerbebetrieb
+      card_slugs:
+      - or-br-bp-34-abs2
+      - or-br-bp-baunvo-gebiete
+    - id: p3
+      label: Verletzung eigener Rechte durch den Gebietserhaltungsanspruch, unabhängig von konkreter Beeinträchtigung
+      weight: 3.0
+      required: true
+      norms:
+      - § 113 Abs. 1 S. 1 VwGO
+      keywords:
+      - Gebietserhaltungsanspruch
+      - nachbarliches Austauschverhältnis
+      - drittschützend
+      - unabhängig von einer konkreten Beeinträchtigung
+      - Schutznormtheorie
+      card_slugs:
+      - or-br-bn-gebietserhaltungsanspruch
+      - or-br-bn-drittschutz-grundlagen
+    - id: p4
+      label: Vorläufiger Rechtsschutz – § 212a BauGB, § 80a Abs. 3 iVm § 80 Abs. 5 VwGO
+      weight: 2.5
+      required: true
+      norms:
+      - § 212a Abs. 1 BauGB
+      - § 80a Abs. 3 VwGO
+      keywords:
+      - § 212a BauGB
+      - keine aufschiebende Wirkung
+      - § 80a Abs. 3 VwGO
+      - § 80 Abs. 5 VwGO
+      - Anordnung der aufschiebenden Wirkung
+      card_slugs:
+      - or-br-bn-eilrechtsschutz-212a
+    - id: p5
+      label: 'Ergebnis: Klage zulässig und begründet'
+      weight: 1.0
+      required: false
+      keywords:
+      - Klage ist zulässig und begründet
+      - Baugenehmigung wird aufgehoben
+      - hat Aussicht auf Erfolg

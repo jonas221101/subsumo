@@ -1,0 +1,424 @@
+topic:
+  slug: sr-at-beteiligung-vertiefung
+  area: strafrecht
+  title: Beteiligung vertieft - § 28, mittelbare Täterschaft, § 30, Exzess
+  parent: sr-at
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-beteil-28-abs1
+  type: norm
+  front: Was regelt § 28 Abs. 1 StGB (strafbegründende besondere persönliche Merkmale)?
+  back: >-
+    Fehlen beim Teilnehmer (Anstifter oder Gehilfe) besondere persönliche Merkmale
+    (§ 14 Abs. 1 StGB), welche die Strafbarkeit des Täters begründen, so ist die Strafe
+    des Teilnehmers nach § 49 Abs. 1 StGB zu mildern. Die Vorschrift betrifft echte
+    Sonderdelikte, etwa die Amtsträgereigenschaft bei § 331 StGB oder die Vermögensbetreuungspflicht
+    bei § 266 StGB. Der Teilnehmer bleibt aber strafbar, weil die Akzessorietät
+    der Teilnahme (§§ 26, 27 StGB) die Tat des Haupttäters mitumfasst; ohne § 28 Abs. 1
+    StGB wäre er mangels eigener Täterqualität straflos. Zur Teilnahme befähigt ist
+    daher auch der Außenstehende (Extraneus). Besondere persönliche Merkmale sind
+    höchstpersönliche Eigenschaften, Verhältnisse oder Umstände (§ 14 Abs. 1 StGB),
+    nicht aber rein tatbezogene Merkmale.
+  norms:
+  - § 28 Abs. 1 StGB
+  - § 14 Abs. 1 StGB
+  - § 49 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-beteil-28-abs2
+  type: norm
+  front: Was regelt § 28 Abs. 2 StGB (strafmodifizierende besondere persönliche Merkmale)?
+  back: >-
+    Bestimmt das Gesetz, dass besondere persönliche Merkmale die Strafe schärfen,
+    mildern oder ausschließen, so gilt dies nur für den Beteiligten (Täter oder
+    Teilnehmer), bei dem sie vorliegen (§ 28 Abs. 2 StGB). Die Vorschrift durchbricht
+    die Akzessorietät zugunsten der Tatbeteiligten: Das Merkmal wirkt nur persönlich
+    (Strafzumessungs- oder Qualifikationsmerkmal), es wird weder zugerechnet noch
+    erspart. Beispiele sind die Gewerbsmäßigkeit beim Diebstahl nach § 243 Abs. 1 S. 2
+    Nr. 3 StGB (nach h.M. besonderes persönliches Merkmal) oder die Amtsträgereigenschaft
+    bei der Qualifikation des § 340 StGB gegenüber § 223 StGB. Zur Abgrenzung von
+    Abs. 1 und Abs. 2 ist zu fragen, ob das Merkmal die Strafbarkeit überhaupt erst
+    begründet (Abs. 1) oder nur ein bereits strafbares Verhalten modifiziert (Abs. 2).
+  norms:
+  - § 28 Abs. 2 StGB
+  - § 14 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-beteil-28-mordmerkmale
+  type: streitstand
+  front: 'Streitstand: Rechtsnatur des § 211 StGB (eigener Tatbestand oder Qualifikation) und die Folgen für § 28 StGB'
+  back: >-
+    Problem: Habgier, Mordlust oder Verdeckungsabsicht sind besondere persönliche
+    Merkmale. Offen ist, ob sie bei einer Beteiligung nach § 28 Abs. 1 oder Abs. 2
+    StGB zu behandeln sind.
+
+    Rechtsprechung: § 211 StGB ist gegenüber § 212 StGB ein eigenständiger Tatbestand.
+    Die täterbezogenen Mordmerkmale begründen deshalb die Strafbarkeit wegen Mordes
+    und fallen unter § 28 Abs. 1 StGB. Fehlt das Merkmal beim Teilnehmer, wird er
+    wegen Teilnahme an einem Mord bestraft, aber nach § 49 Abs. 1 StGB gemildert.
+    Besitzt der Teilnehmer ein Mordmerkmal, der Täter aber nicht, ist er mangels
+    Haupttat des Mordes nur wegen Teilnahme am Totschlag strafbar.
+
+    Literatur (h.L.): § 211 StGB ist eine Qualifikation zu § 212 StGB. Die täterbezogenen
+    Merkmale schärfen die Strafe und fallen unter § 28 Abs. 2 StGB. Der Teilnehmer
+    ohne das Merkmal wird nur wegen Teilnahme am Totschlag, der Teilnehmer mit
+    Merkmal wegen Teilnahme am Mord bestraft.
+
+    Klausurhinweis: Der Streit ist offenzulegen und zu entscheiden; vertiefend siehe
+    das Thema zu den Tötungsdelikten (§§ 211, 212 StGB).
+  norms:
+  - § 28 Abs. 1 StGB
+  - § 28 Abs. 2 StGB
+  - § 211 StGB
+  - § 212 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-beteil-mittelbar-fallgruppen
+  type: definition
+  front: 'Fallgruppen der mittelbaren Täterschaft, § 25 Abs. 1 Var. 2 StGB: Wann beherrscht der Hintermann den Vordermann?'
+  back: >-
+    Mittelbarer Täter ist, wer die Tat durch einen anderen als Werkzeug begeht und
+    das Geschehen kraft Wissens- oder Willensherrschaft steuert. Typische Fallgruppen
+    sind (1) das vorsatzlose Werkzeug (Tatbestandsirrtum, § 16 Abs. 1 StGB), (2) das
+    rechtmäßig handelnde Werkzeug, etwa bei einer vom Hintermann durch Täuschung
+    herbeigeführten Notwehrlage, (3) das schuldlos handelnde Werkzeug (Kinder,
+    Schuldunfähige, § 35 StGB durch Nötigungsherrschaft) und (4) das durch Irrtum
+    oder Nötigung zur Selbstschädigung veranlasste Opfer (Opfer als Werkzeug gegen
+    sich selbst). Allen Konstellationen ist gemeinsam, dass der Vordermann
+    nicht voll verantwortlich handelt und der Hintermann das Geschehen steuert. Eine
+    Sonderkonstellation bildet der Täter hinter dem Täter (siehe eigene Karte).
+  norms:
+  - § 25 Abs. 1 Var. 2 StGB
+  - § 16 Abs. 1 StGB
+  - § 35 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-beteil-taeter-hinter-taeter
+  type: rechtsprechung
+  front: Täter hinter dem Täter - Katzenkönig-Fall (BGHSt 35, 347)
+  back: >-
+    Im Katzenkönig-Fall (BGHSt 35, 347) hatte der Hintermann beim Vordermann durch
+    Irrtumserregung einen (vermeidbaren) Verbotsirrtum hervorgerufen. Der Vordermann
+    war damit selbst vorsätzlich handelnder und (bei Vermeidbarkeit des Irrtums) strafbarer
+    Täter. Der BGH nahm gleichwohl
+    mittelbare Täterschaft des Hintermanns an: Wer einen anderen durch gezielte Täuschung
+    in einen vermeidbaren Verbotsirrtum versetzt, beherrscht dessen Tat kraft überlegenen
+    Wissens. Der Hintermann ist deshalb Täter hinter dem voll verantwortlichen Täter.
+    Der Fall zeigt, dass mittelbare Täterschaft nicht zwingend voraussetzt, dass das
+    Werkzeug selbst straflos ist. Er ist in Klausuren der Standardfall der Irrtumsherrschaft
+    über einen vermeidbaren Verbotsirrtum; die Einordnung ist in der Literatur im
+    Einzelnen umstritten.
+  norms:
+  - § 25 Abs. 1 Var. 2 StGB
+  - § 17 StGB
+  quellen:
+  - BGHSt 35, 347 (Katzenkönig)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-beteil-organisationsherrschaft
+  type: definition
+  front: 'Definiere: Organisationsherrschaft (mittelbare Täterschaft kraft organisatorischer Machtapparate)'
+  back: >-
+    Nach der von Roxin entwickelten und vom BGH aufgegriffenen Figur (BGHSt 40, 218
+    zu den Verantwortlichen des Grenzregimes der DDR) ist mittelbarer Täter auch der
+    Hintermann, der innerhalb eines hierarchisch organisierten Machtapparats Befehle
+    erteilt, deren Ausführung durch austauschbare Vordermänner er sicher erwarten
+    darf. Typische Voraussetzungen sind (1) ein hierarchisch strukturierter Apparat
+    mit Weisungsgewalt des Hintermanns, (2) Rechtsgelöstheit des Apparats (er operiert
+    außerhalb der Rechtsordnung), (3) Fungibilität der unmittelbar Handelnden (jederzeit
+    austauschbar) und (4) eine erhöhte Tatbereitschaft der Ausführenden. Die
+    Tatherrschaft des Hintermanns folgt aus der Automatik des Apparats; der
+    ausführende Täter bleibt daneben voll verantwortlich (Täter hinter dem Täter).
+  norms:
+  - § 25 Abs. 1 Var. 2 StGB
+  quellen:
+  - BGHSt 40, 218
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-beteil-organisationsherrschaft-streit
+  type: streitstand
+  front: 'Streitstand: Ist Organisationsherrschaft mit dem Prinzip der Eigenverantwortung vereinbar?'
+  back: >-
+    Problem: Der unmittelbar Handelnde ist bei Organisationsherrschaft voll verantwortlich.
+    Zu klären ist, ob der Hintermann gleichwohl mittelbarer Täter (§ 25 Abs. 1 Var. 2
+    StGB) sein kann.
+
+    Rechtsprechung und ein Teil der Literatur (Roxin): Ja. Die organisatorische Herrschaft über einen
+    rechtsgelösten Apparat mit austauschbaren Ausführenden begründet eine eigenständige
+    Form der Tatherrschaft. Der Hintermann beherrscht die Tat durch den Apparat; die
+    Verantwortlichkeit des Vordermanns steht dem nicht entgegen.
+
+    Kritik (Teile der Literatur): Die Rechtsfigur durchbreche das Verantwortungsprinzip
+    (kein Täter hinter voll verantwortlichem Täter) und sei mit dem Wortlaut von
+    § 25 Abs. 1 Var. 2 StGB kaum vereinbar. Sachgerecht sei Anstiftung oder, bei
+    arbeitsteiligem Vorgehen, Mittäterschaft. Die Rechtsprechung hat die Figur
+    außerdem auch auf Wirtschaftsunternehmen und kriminelle Organisationen angewandt;
+    das ist wegen des Merkmals der Rechtsgelöstheit besonders umstritten.
+
+    Klausurhinweis: In Examensklausuren hat die Figur geringe Bedeutung. Wichtiger
+    sind die klassischen Irrtums- und Nötigungsherrschaftsfälle.
+  norms:
+  - § 25 Abs. 1 Var. 2 StGB
+  - § 26 StGB
+  quellen:
+  - BGHSt 40, 218
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-beteil-30-abs1
+  type: norm
+  front: Wann ist die versuchte Anstiftung nach § 30 Abs. 1 StGB strafbar?
+  back: >-
+    Wer einen anderen zu bestimmen versucht, ein Verbrechen (§ 12 Abs. 1 StGB) zu
+    begehen oder zu ihm anzustiften, wird nach den Vorschriften über den Versuch des
+    Verbrechens bestraft; die Strafe ist nach § 49 Abs. 1 StGB zu mildern (§ 30 Abs. 1
+    StGB). Strafbar ist die versuchte Anstiftung also nur bei Verbrechen, nicht bei
+    Vergehen. Der Anstiftungsversuch liegt vor, wenn der Täter mit Vorsatz auf die
+    Hervorrufung des Tatentschlusses unmittelbar ansetzt und die Anstiftung (aus
+    welchem Grund auch immer) scheitert, etwa weil der Angesprochene den Entschluss
+    nicht fasst oder bereits fest entschlossen war. Nach h.M. ist auch der Anstiftungsversuch
+    gegenüber einem bereits Tatentschlossenen strafbar. Rücktritt ist nach § 31 StGB
+    möglich.
+  norms:
+  - § 30 Abs. 1 StGB
+  - § 12 Abs. 1 StGB
+  - § 31 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-beteil-30-abs2
+  type: norm
+  front: Welche Handlungen erfasst § 30 Abs. 2 StGB (Verbrechensverabredung)?
+  back: >-
+    § 30 Abs. 2 StGB stellt drei Vorbereitungshandlungen zu einem Verbrechen unter
+    Strafe: (1) das Sich-Bereiterklären zur Begehung oder zur Anstiftung zu einem
+    Verbrechen, (2) die Annahme eines solchen Erbietens und (3) die Verabredung
+    mit einem anderen zur Begehung oder Anstiftung zu einem Verbrechen. Die Verabredung setzt voraus, dass
+    mindestens zwei Personen sich ernstlich über die gemeinschaftliche Begehung
+    (Mittäterschaft nach § 25 Abs. 2 StGB) eines bestimmten Verbrechens einigen.
+    Bloße Gedankenspiele oder unernste Absprachen genügen nicht. Ein Rücktritt ist
+    unter den Voraussetzungen des § 31 StGB möglich. Die
+    Bedeutung der Verabredung liegt in der Strafbarkeit schon vor dem Versuchsbeginn.
+  norms:
+  - § 30 Abs. 2 StGB
+  - § 25 Abs. 2 StGB
+  - § 31 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-beteil-exzess-haupttaeter
+  type: definition
+  front: 'Definiere: Exzess des Haupttäters (Abweichung vom Teilnehmervorsatz)'
+  back: >-
+    Weicht der Haupttäter von dem ab, was der Teilnehmer wollte, haftet dieser nur
+    im Umfang seines Vorsatzes (§§ 26, 27, 16 Abs. 1 StGB). Beim quantitativen
+    Exzess begeht der Haupttäter dieselbe Tat in stärkerem Ausmaß (etwa mehr Beute
+    oder schwerere Verletzung); der Teilnehmer haftet dann nur für das Gewollte,
+    das darüber hinaus Verwirklichte wird ihm nicht zugerechnet, es sei denn, die
+    Abweichung ist unwesentlich. Beim qualitativen Exzess begeht der Haupttäter eine
+    andere Tat (aliud); der Teilnehmer ist dafür nicht strafbar; eine Strafbarkeit wegen
+    versuchter Beteiligung an der gewollten Tat kommt nur bei Verbrechen in Betracht
+    (§ 30 StGB). Fahrlässige Teilnehmerverantwortlichkeit
+    für den Mehrerfolg kommt nur in Betracht, soweit sie eigenständig strafbar ist
+    (etwa § 222 StGB; Erfolgsqualifikation nach § 18 StGB). Bei Mittäterschaft gilt
+    entsprechend: Zugerechnet wird nur, was vom gemeinsamen Tatplan gedeckt ist.
+  norms:
+  - § 26 StGB
+  - § 27 StGB
+  - § 25 Abs. 2 StGB
+  - § 16 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-beteil-error-in-persona-anstifter
+  type: streitstand
+  front: 'Streitstand: error in persona des Haupttäters - Folgen für den Anstifter (Rose-Rosahl-Fall, Hoferbenfall)'
+  back: >-
+    Problem: Der Anstifter bestimmt den Haupttäter, einen bestimmten O zu töten;
+    der Haupttäter verwechselt O mit einem anderen und tötet diesen (error in persona
+    des Haupttäters, Rose-Rosahl-Fall, Preußisches Obertribunal 1859). Für den
+    Haupttäter ist der Irrtum unbeachtlich, weil die Tatobjekte gleichwertig sind.
+    Für den Anstifter ist streitig:
+
+    Unbeachtlichkeitslehre (klassische Lösung seit Rose-Rosahl): Die Verwechslung
+    ist für den Anstifter eine unwesentliche Abweichung vom vorgestellten Geschehen;
+    er haftet wegen vollendeter Anstiftung.
+
+    Aberratio-ictus-Lehre (von einem erheblichen Teil der Literatur vertreten): Aus
+    Sicht des Anstifters hat der Haupttäter das konkretisierte Opfer verfehlt. Er
+    haftet nur wegen versuchter Anstiftung (§ 30 Abs. 1 StGB), gegebenenfalls in
+    Tateinheit mit Fahrlässigkeit am getroffenen Opfer. Argument: Die Verwechslung
+    ist vom Anstiftervorsatz nicht gedeckt; sonst könnte der Anstifter mehrfach haften,
+    wenn der Haupttäter den Irrtum bemerkt und anschließend auch O tötet (Blutbadargument).
+
+    Differenzierende Lösung: Hat der Anstifter die Auswahl des Opfers dem Haupttäter
+    überlassen, ist der Irrtum unbeachtlich; hat er das Opfer selbst bestimmt, liegt
+    eine wesentliche Abweichung vor.
+
+    Klausurhinweis: Streit offenlegen und begründet entscheiden.
+  norms:
+  - § 26 StGB
+  - § 30 Abs. 1 StGB
+  - § 16 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: sr-schema-beteil-mittelbar-30
+  title: Mittelbare Täterschaft und Teilnahme mit Besonderheiten (§§ 25 Abs. 1 Var. 2, 26, 28, 30 StGB)
+  norms:
+  - § 25 Abs. 1 Var. 2 StGB
+  - § 26 StGB
+  - § 28 StGB
+  - § 30 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Strafbarkeit des Hintermanns als mittelbarer Täter, § 25 Abs. 1 Var. 2 StGB
+    children:
+    - label: 1. Tatbestand des Delikts (objektiv und subjektiv)
+      hinweis: Fremde Handlung wird zugerechnet, wenn der Hintermann das Geschehen
+        beherrscht (Wissens-, Willens-, Nötigungsherrschaft).
+    - label: 2. Tatherrschaft kraft überlegenen Wissens oder Willens (Fallgruppen)
+    - label: 3. Rechtswidrigkeit und Schuld
+  - label: II. Alternativ - Anstiftung, § 26 StGB
+    children:
+    - label: 1. Vorsätzliche rechtswidrige Haupttat
+    - label: 2. Bestimmen des Haupttäters
+    - label: 3. Doppelter Anstiftervorsatz
+    - label: 4. Abweichungen der Haupttat (Exzess, error in persona)
+      hinweis: Streit zur Verwechslung des Opfers durch den Haupttäter offenlegen.
+  - label: III. Persönliche Merkmale, § 28 StGB
+    hinweis: Erst prüfen, wenn ein besonderes persönliches Merkmal bei einem Beteiligten
+      fehlt oder nur bei ihm vorliegt.
+    children:
+    - label: 1. Besonderes persönliches Merkmal, § 14 Abs. 1 StGB
+    - label: 2. Strafbegründend, Abs. 1 (Milderung nach § 49 Abs. 1)
+    - label: 3. Strafmodifizierend, Abs. 2 (Wirkung nur beim Merkmalsträger)
+  - label: IV. Versuchte Anstiftung, § 30 Abs. 1 StGB
+    hinweis: Nur bei Verbrechen. Bei Scheitern der Anstiftung statt § 26 StGB zu prüfen.
+    children:
+    - label: 1. Vorsatz auf Bestimmen zu einem Verbrechen
+    - label: 2. Unmittelbares Ansetzen zum Bestimmen
+    - label: 3. Rücktritt, § 31 StGB
+faelle:
+- slug: sr-fall-beteil-fahrrad-und-auftrag
+  title: Das geliehene Fahrrad und der abgelehnte Auftrag
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: A will sich das Fahrrad des C verschaffen, das im Hof des C steht. A sagt
+    zu seinem gutgläubigen Bekannten B wahrheitswidrig, das Fahrrad im Hof gehöre
+    ihm, und bittet B, es zu holen. B nimmt das Rad aus dem Hof mit und übergibt es
+    A, der es für sich behält. Später ist A wegen eines Erbschaftsstreits wütend auf
+    seinen Bruder E. Er bittet seinen Freund D, den E zu töten, damit endlich Ruhe herrsche; eine Belohnung
+    verspricht er nicht. D lehnt
+    entschieden ab und ruft die Polizei.
+  question: Wie haben sich A (und B) strafbar gemacht? Mordmerkmale sind nicht zu prüfen.
+  steps:
+  - prompt: Ist B strafbar?
+    erwartung: Nein. B handelt ohne Vorsatz hinsichtlich der Fremdheit der Sache (§ 16
+      Abs. 1 S. 1 StGB, Tatbestandsirrtum); eine Strafbarkeit wegen Diebstahls entfällt.
+  - prompt: Kommt eine Strafbarkeit des A wegen Diebstahls in Betracht, und in welcher
+      Täterschaftsform?
+    erwartung: Ja, wegen Diebstahls (§ 242 Abs. 1 StGB) in mittelbarer Täterschaft
+      (§ 25 Abs. 1 Var. 2 StGB). A beherrscht den vorsatzlosen B kraft überlegenen
+      Wissens; die Wegnahme des B wird ihm zugerechnet; er handelt mit Zueignungsabsicht.
+  - prompt: Ist A wegen des Auftrags an D strafbar?
+    erwartung: Ja, wegen versuchter Anstiftung zum Totschlag (§§ 212 Abs. 1, 30
+      Abs. 1 StGB). Der Totschlag ist ein Verbrechen. A versuchte, D zu bestimmen,
+      und hat damit unmittelbar angesetzt. Die Anstiftung ist gescheitert, weil D
+      den Tatentschluss nicht fasste.
+  - prompt: Wie ist die Strafe zu bemessen?
+    erwartung: Nach den Vorschriften über den Versuch des Verbrechens; die Strafe
+      ist nach § 49 Abs. 1 StGB zu mildern (§ 30 Abs. 1 S. 2 StGB).
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Strafbarkeit des B mangels Vorsatzes verneint
+      weight: 1.0
+      required: false
+      norms:
+      - § 16 Abs. 1 StGB
+      keywords:
+      - Tatbestandsirrtum
+      - ohne Vorsatz
+      - vorsatzloses Werkzeug
+      - fehlender Vorsatz
+      - § 16 Abs. 1
+      card_slugs:
+      - sr-beteil-mittelbar-fallgruppen
+    - id: p2
+      label: Mittelbare Täterschaft des A durch Wissensherrschaft über das vorsatzlose
+        Werkzeug
+      weight: 3.0
+      required: true
+      norms:
+      - § 25 Abs. 1 Var. 2 StGB
+      keywords:
+      - mittelbare Täterschaft
+      - mittelbarer Täterschaft
+      - mittelbarer Täter
+      - § 25 Abs. 1 Var. 2
+      - überlegenes Wissen
+      - überlegenen Wissens
+      - Wissensherrschaft
+      - Werkzeug
+      - Tatherrschaft kraft Irrtumsherrschaft
+      card_slugs:
+      - sr-beteil-mittelbar-fallgruppen
+    - id: p3
+      label: Diebstahl in mittelbarer Täterschaft bejaht (§§ 242, 25 Abs. 1 Var. 2 StGB)
+      weight: 1.0
+      required: false
+      norms:
+      - § 242 Abs. 1 StGB
+      keywords:
+      - §§ 242, 25
+      - Diebstahl in mittelbarer Täterschaft
+      - Zueignungsabsicht
+      - Wegnahme zugerechnet
+    - id: p4
+      label: Versuchte Anstiftung zum Totschlag als Verbrechen nach § 30 Abs. 1 StGB
+      weight: 3.0
+      required: true
+      norms:
+      - § 30 Abs. 1 StGB
+      - § 212 Abs. 1 StGB
+      keywords:
+      - versuchte Anstiftung
+      - § 30 Abs. 1
+      - Anstiftungsversuch
+      - Verbrechen
+      - Totschlag ist ein Verbrechen
+      card_slugs:
+      - sr-beteil-30-abs1
+    - id: p5
+      label: Strafmilderung nach § 49 Abs. 1 StGB
+      weight: 1.0
+      required: false
+      norms:
+      - § 49 Abs. 1 StGB
+      keywords:
+      - § 49 Abs. 1
+      - gemildert
+      - Strafmilderung
+      card_slugs:
+      - sr-beteil-30-abs1

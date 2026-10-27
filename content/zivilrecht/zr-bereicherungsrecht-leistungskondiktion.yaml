@@ -8,8 +8,8 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-15'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: zr-kondiktion-begriff-812
   type: definition
@@ -46,8 +46,8 @@ cards:
     Grund für die Leistung von Anfang an - etwa weil das zugrunde liegende Kausalgeschäft
     nichtig war oder gar nicht existierte. Bei § 812 Abs. 1 S. 2 Alt. 1 BGB (condictio
     ob causam finitam) bestand der Rechtsgrund zunächst, ist aber nachträglich weggefallen,
-    etwa durch eine auflösende Bedingung oder einen Rücktritt außerhalb der §§
-    346 ff. BGB. Beide Varianten teilen dieselbe Rechtsfolge (§ 818 BGB), unterscheiden
+    etwa durch eine auflösende Bedingung oder einen Rücktritt außerhalb der §§ 346
+    ff. BGB. Beide Varianten teilen dieselbe Rechtsfolge (§ 818 BGB), unterscheiden
     sich aber im Zeitpunkt, auf den für die Rechtsgrundprüfung abzustellen ist.
   norms:
   - § 812 Abs. 1 S. 1 BGB
@@ -59,10 +59,10 @@ cards:
 - slug: zr-kondiktion-ausschluss-814
   type: norm
   front: Wann ist die Rückforderung nach § 814 BGB ausgeschlossen?
-  back: Das zur Erfüllung einer Verbindlichkeit Geleistete kann gemäß § 814 BGB
-    nicht zurückgefordert werden, wenn der Leistende positiv wusste, dass er zur
-    Leistung nicht verpflichtet war. Bloße Zweifel oder fahrlässige Unkenntnis genügen
-    nicht - ausgeschlossen ist nur die bewusste Zuwendung trotz Kenntnis der Nichtschuld.
+  back: Das zur Erfüllung einer Verbindlichkeit Geleistete kann gemäß § 814 BGB nicht
+    zurückgefordert werden, wenn der Leistende positiv wusste, dass er zur Leistung
+    nicht verpflichtet war. Bloße Zweifel oder fahrlässige Unkenntnis genügen nicht
+    - ausgeschlossen ist nur die bewusste Zuwendung trotz Kenntnis der Nichtschuld.
   norms:
   - § 814 BGB
   quellen:
@@ -87,11 +87,11 @@ cards:
 - slug: zr-kondiktion-entreicherung-818-3
   type: definition
   front: 'Definiere: Entreicherung, § 818 Abs. 3 BGB'
-  back: Die Verpflichtung zur Herausgabe oder zum Ersatz des Wertes ist gemäß §
-    818 Abs. 3 BGB ausgeschlossen, soweit der Bereicherungsschuldner nicht mehr bereichert
-    ist - etwa weil er das Erlangte für eine Ausgabe verbraucht hat, die er ohne
-    den Erhalt nicht getätigt hätte (sogenannte Luxusausgabe/Vermögensdisposition).
-    Kein Wegfall der Bereicherung liegt dagegen vor, soweit durch das Erlangte ohnehin
+  back: Die Verpflichtung zur Herausgabe oder zum Ersatz des Wertes ist gemäß § 818
+    Abs. 3 BGB ausgeschlossen, soweit der Bereicherungsschuldner nicht mehr bereichert
+    ist - etwa weil er das Erlangte für eine Ausgabe verbraucht hat, die er ohne den
+    Erhalt nicht getätigt hätte (sogenannte Luxusausgabe/Vermögensdisposition). Kein
+    Wegfall der Bereicherung liegt dagegen vor, soweit durch das Erlangte ohnehin
     fällige Ausgaben erspart wurden.
   norms:
   - § 818 Abs. 3 BGB
@@ -103,14 +103,19 @@ cards:
   type: norm
   front: Wann kann sich der Bereicherungsschuldner nicht mehr auf Entreicherung nach
     § 818 Abs. 3 BGB berufen?
-  back: Kannte der Empfänger den Mangel des rechtlichen Grundes beim Erwerb oder
-    erfährt er ihn später, haftet er ab diesem Zeitpunkt gemäß § 819 Abs. 1 BGB
-    verschärft nach den allgemeinen Vorschriften (§§ 292, 987 ff. BGB entsprechend)
-    - die Berufung auf § 818 Abs. 3 BGB ist ihm dann verwehrt. Er muss das Erlangte
-    daher auch insoweit ersetzen, als er nach Kenntniserlangung darüber verfügt
-    hat.
+  back: 'Kannte der Empfänger den Mangel des rechtlichen Grundes bei Empfang, haftet
+    er von diesem Zeitpunkt an nach § 819 Abs. 1 BGB so, als sei der Anspruch auf
+    Herausgabe rechtshängig geworden. Erfährt er den Mangel erst später, haftet er
+    erst ab Kenntniserlangung verschärft. Die Verschärfung ergibt sich aus § 819 Abs.
+    1 i. V. m. § 818 Abs. 4 BGB, der auf die allgemeinen Vorschriften verweist (§§
+    291, 292 i. V. m. §§ 987 ff. BGB). Die Berufung auf Wegfall der Bereicherung (§
+    818 Abs. 3 BGB) ist dem Schuldner dann verwehrt: Er muss das Erlangte auch insoweit
+    ersetzen, als er nach Kenntniserlangung darüber verfügt hat. Beispiel: Wer die
+    Überzahlung erst nach dem Empfang bemerkt, haftet für Verfügungen vor der Kenntnis
+    nicht verschärft, für spätere Verfügungen aber schon.'
   norms:
   - § 819 Abs. 1 BGB
+  - § 818 Abs. 4 BGB
   quellen:
   - BGB, amtliche Fassung
   - Eigenformulierung Redaktion
@@ -128,13 +133,12 @@ schemata:
   - Eigenformulierung Redaktion
   steps:
   - label: I. Etwas erlangt
-    hinweis: Jeder Vermögensvorteil, z. B. Eigentum, Besitz, Geld, Befreiung von
-      einer Verbindlichkeit.
+    hinweis: Jeder Vermögensvorteil, z. B. Eigentum, Besitz, Geld, Befreiung von einer
+      Verbindlichkeit.
   - label: II. Durch Leistung eines anderen
     children:
     - label: 1. Bewusste, zweckgerichtete Mehrung fremden Vermögens
-    - label: '2. In Mehrpersonenverhältnissen: maßgebliches Leistungsverhältnis
-        bestimmen'
+    - label: '2. In Mehrpersonenverhältnissen: maßgebliches Leistungsverhältnis bestimmen'
   - label: III. Ohne rechtlichen Grund
     children:
     - label: 1. Rechtsgrund von Anfang an nicht bestanden, § 812 Abs. 1 S. 1 Alt.
@@ -147,8 +151,8 @@ schemata:
   - label: 'V. Rechtsfolge: Herausgabe des Erlangten, hilfsweise Wertersatz, § 818
       Abs. 1, 2 BGB'
   - label: VI. Umfang ggf. beschränkt durch Entreicherung, § 818 Abs. 3 BGB
-    hinweis: Ausgeschlossen bei verschärfter Haftung wegen Kenntnis des Mangels,
-      § 819 Abs. 1 BGB.
+    hinweis: Ausgeschlossen bei verschärfter Haftung wegen Kenntnis des Mangels, §
+      819 Abs. 1 BGB.
 faelle:
 - slug: zr-fall-doppelt-bezahlte-werklohnrechnung
   title: Die doppelt angewiesene Werklohnrechnung
@@ -162,10 +166,10 @@ faelle:
     des U ordnungsgemäß anweist. Wegen eines internen Buchhaltungsfehlers wird dieselbe
     Rechnung zwei Wochen später ein zweites Mal angewiesen, sodass H insgesamt 2.400
     Euro erhält, obwohl nur 1.200 Euro geschuldet waren. H bemerkt die Doppelzahlung
-    sofort beim nächsten Kontoabgleich, unternimmt aber nichts. Kurz darauf gibt
-    er 800 Euro der überzahlten Summe für eine Urlaubsreise aus, die er sich ohne
-    die zweite Zahlung nicht geleistet hätte; die restlichen 400 Euro befinden sich
-    noch auf seinem Konto. U verlangt von H Rückzahlung von 1.200 Euro.
+    sofort beim nächsten Kontoabgleich, unternimmt aber nichts. Kurz darauf gibt er
+    800 Euro der überzahlten Summe für eine Urlaubsreise aus, die er sich ohne die
+    zweite Zahlung nicht geleistet hätte; die restlichen 400 Euro befinden sich noch
+    auf seinem Konto. U verlangt von H Rückzahlung von 1.200 Euro.
   question: Kann U von H Zahlung von 1.200 Euro verlangen?
   steps:
   - prompt: Formuliere den Obersatz.
@@ -176,22 +180,22 @@ faelle:
       Erfüllung angewiesene Zahlung 1.200 Euro erlangt.
   - prompt: War diese Leistung ohne rechtlichen Grund?
     erwartung: Ja - der Werklohnanspruch des H aus § 631 Abs. 1 BGB war bereits durch
-      die erste Zahlung gemäß § 362 Abs. 1 BGB erloschen; für die zweite Zahlung
-      bestand daher von Anfang an kein Rechtsgrund.
+      die erste Zahlung gemäß § 362 Abs. 1 BGB erloschen; für die zweite Zahlung bestand
+      daher von Anfang an kein Rechtsgrund.
   - prompt: Ist die Rückforderung nach § 814 BGB ausgeschlossen?
     erwartung: Nein - U wusste beim Anweisen der zweiten Zahlung wegen des Buchhaltungsfehlers
       nicht, dass er nicht mehr verpflichtet war; positive Kenntnis der Nichtschuld
       liegt nicht vor.
-  - prompt: Kann sich H hinsichtlich der für die Reise ausgegebenen 800 Euro auf
-      Entreicherung nach § 818 Abs. 3 BGB berufen?
+  - prompt: Kann sich H hinsichtlich der für die Reise ausgegebenen 800 Euro auf Entreicherung
+      nach § 818 Abs. 3 BGB berufen?
     erwartung: Dem Grunde nach könnte eine Entreicherung vorliegen, da H sich die
       Reise ohne die Doppelzahlung nicht geleistet hätte (keine ersparten Aufwendungen).
   - prompt: Steht dem ein Umstand entgegen?
     erwartung: Ja - H hatte die Doppelzahlung bereits beim Kontoabgleich bemerkt,
       bevor er die 800 Euro für die Reise ausgab. Er kannte den Mangel des rechtlichen
       Grundes also schon vor der Vermögensdisposition und haftet ab diesem Zeitpunkt
-      gemäß § 819 Abs. 1 BGB verschärft; die Berufung auf § 818 Abs. 3 BGB ist
-      ihm deshalb für die 800 Euro verwehrt.
+      gemäß § 819 Abs. 1 BGB verschärft; die Berufung auf § 818 Abs. 3 BGB ist ihm
+      deshalb für die 800 Euro verwehrt.
   - prompt: Ergebnis?
     erwartung: U kann von H die vollen 1.200 Euro verlangen - 400 Euro sind ohnehin
       noch vorhanden, die verbrauchten 800 Euro muss H wegen § 819 Abs. 1 BGB trotz
@@ -205,8 +209,10 @@ faelle:
       norms:
       - § 812 Abs. 1 S. 1 Alt. 1 BGB
       keywords:
-      - '812'
+      - § 812 Abs. 1 S. 1 Alt. 1
       - Leistungskondiktion
+      - condictio indebiti
+      - Rückforderung einer Nichtschuld
       card_slugs:
       - zr-kondiktion-begriff-812
     - id: p2
@@ -214,8 +220,11 @@ faelle:
       weight: 1.0
       required: false
       keywords:
-      - zweckgerichtet
-      - Leistung
+      - bewusste und zweckgerichtete Mehrung fremden Vermögens
+      - zweckgerichtete Vermögensmehrung
+      - Leistung im bereicherungsrechtlichen Sinn
+      - Leistungsbegriff
+      - Erfüllungszweck
       card_slugs:
       - zr-kondiktion-leistungsbegriff
     - id: p3
@@ -226,9 +235,12 @@ faelle:
       norms:
       - § 362 Abs. 1 BGB
       keywords:
-      - '362'
-      - erloschen
-      - Rechtsgrund
+      - § 362 Abs. 1
+      - Erfüllung durch die erste Zahlung
+      - Forderung ist erloschen
+      - kein Rechtsgrund für die zweite Zahlung
+      - rechtsgrundlos
+      - Erfüllungswirkung
       card_slugs:
       - zr-kondiktion-rechtsgrundlosigkeit
     - id: p4
@@ -238,8 +250,11 @@ faelle:
       norms:
       - § 814 BGB
       keywords:
-      - '814'
+      - § 814
+      - positive Kenntnis der Nichtschuld
       - Kenntnis der Nichtschuld
+      - Leistung in Kenntnis der Nichtschuld
+      - Irrtum über die Leistungspflicht
       card_slugs:
       - zr-kondiktion-ausschluss-814
     - id: p5
@@ -250,8 +265,11 @@ faelle:
       norms:
       - § 818 Abs. 3 BGB
       keywords:
-      - '818'
+      - § 818 Abs. 3
       - Entreicherung
+      - Wegfall der Bereicherung
+      - keine ersparten Aufwendungen
+      - Luxusaufwendung
       card_slugs:
       - zr-kondiktion-entreicherung-818-3
     - id: p6
@@ -263,15 +281,23 @@ faelle:
       norms:
       - § 819 Abs. 1 BGB
       keywords:
-      - '819'
+      - § 819 Abs. 1
       - verschärfte Haftung
-      - Kenntnis
+      - Kenntnis des Mangels des rechtlichen Grundes
+      - Kenntnis vor der Vermögensdisposition
+      - § 818 Abs. 4
+      - bösgläubig
+      - Berufung auf Entreicherung ausgeschlossen
       card_slugs:
       - zr-kondiktion-verschaerfte-haftung-819
     - id: p7
-      label: 'Ergebnis: Anspruch auf volle 1.200 Euro'
+      label: 'Ergebnis: Rückzahlungsanspruch in voller Höhe (400 Euro vorhanden, 800
+        Euro trotz Verbrauch wegen § 819 Abs. 1 BGB)'
       weight: 1.0
       required: false
       keywords:
-      - 1.200 Euro
-      - Anspruch besteht
+      - volle Rückzahlung
+      - auch die verbrauchten Beträge
+      - Rückzahlungsanspruch in voller Höhe
+      - H muss die Überzahlung herausgeben
+      - Leistungskondiktion besteht

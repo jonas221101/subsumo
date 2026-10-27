@@ -106,6 +106,21 @@ class AppState extends ChangeNotifier {
   /// war. Die UI kann das anzeigen, ohne dass die Karten deshalb verschwinden.
   bool dueCardsFromCache = false;
 
+  /// True, sobald der geladene Stapel komplett abgearbeitet wurde ("Fertig
+  /// fuer heute"). Solange es gesetzt ist, laedt der Karten-Tab nicht still
+  /// einen neuen Stapel nach - das passiert erst auf ausdruecklichen Wunsch
+  /// ([learnMoreCards]). Heute-Kachel und Karten-Tab zeigen so denselben Stand.
+  bool sessionDone = false;
+
+  /// Anzahl der in dieser Sitzung abgearbeiteten Karten des letzten Stapels.
+  int reviewedInSession = 0;
+
+  /// Slugs der in dieser App-Sitzung bereits (mit Gut/Schwer/Leicht) bewerteten
+  /// Karten. Der Server kennt sie evtl. noch nicht (Outbox) oder liefert sie
+  /// als "neu" erneut; sie duerfen heute nicht noch einmal im Stapel erscheinen.
+  /// "Nochmal" bleibt bewusst draussen - die Karte ist legitim bald wieder dran.
+  final Set<String> reviewedSlugs = {};
+
   /// Ungesendete Reviews. Bleiben erhalten, bis der Server sie bestaetigt hat -
   /// auch ueber einen App-Neustart hinweg (siehe [_persistOutbox]).
   final List<PendingReview> outbox = [];
@@ -306,7 +321,7 @@ class AppState extends ChangeNotifier {
       }
       if (contentManifest?['content_version'] == version) return true;
 
-      final cards = await api.contentCards(limit: 2000);
+      final cards = await api.contentCards();
       final encoded = jsonEncode({'manifest': manifest, 'cards': cards});
       final prefs = await SharedPreferences.getInstance();
       final written = await prefs.setString(_contentStateKey, encoded);
@@ -351,6 +366,9 @@ class AppState extends ChangeNotifier {
     activeDeck = null;
     dueCards = [];
     dueCardsFromCache = false;
+    sessionDone = false;
+    reviewedInSession = 0;
+    reviewedSlugs.clear();
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_tokenKey);
     // Outbox und Kartencache bleiben bewusst bestehen: Ab- und wieder
@@ -389,26 +407,66 @@ class AppState extends ChangeNotifier {
   /// [dueCards]-Stapel, dieselbe Outbox, derselbe Sync.
   Future<bool> startDeck(DeckFilter filter) {
     activeDeck = filter;
-    return loadDueCards();
+    sessionDone = false;
+    reviewedInSession = 0;
+    // Bewusst ueber das Tageslimit neuer Karten hinaus (Backend: extra=true).
+    return loadDueCards(extra: true);
   }
 
   /// Ohne `notifyListeners`: wird beim Verlassen der Deck-Route aufgerufen,
   /// die naechste Karten-Ansicht laedt ohnehin neu.
   void clearDeck() {
+    final hadReviews = reviewedInSession > 0;
     activeDeck = null;
+    sessionDone = false;
+    reviewedInSession = 0;
+    // Reste des Deck-Stapels gehoeren nicht in den Haupt-Stapel; nach dem
+    // Lernen Stapel und Heute-Zahlen frisch vom Server holen.
+    dueCards = [];
+    if (hadReviews) {
+      Future<void>.microtask(() async {
+        await flushOutbox();
+        await loadDueCards();
+        await _refreshCoverage();
+      });
+    }
+  }
+
+  /// Nach "Fertig fuer heute": ausdruecklich weitere Karten laden.
+  Future<bool> learnMoreCards() {
+    sessionDone = false;
+    reviewedInSession = 0;
+    // Bewusst ueber das Tageslimit neuer Karten hinaus (Backend: extra=true).
+    return loadDueCards(extra: true);
   }
 
   /// Laedt faellige Karten. Schlaegt der Netzaufruf fehl, bleibt der zuletzt
   /// zwischengespeicherte Stapel sichtbar (siehe [dueCardsFromCache]) statt
   /// eines leeren Bildschirms - Offline-Lernen ist der Regelfall, nicht die
   /// Ausnahme (siehe docs/01-produktvision.md, "Offline ist Pflicht").
-  Future<bool> loadDueCards() async {
+  Future<bool> loadDueCards({bool extra = false}) async {
     loading = true;
     error = null;
     notifyListeners();
     try {
       final filter = activeDeck;
-      dueCards = await api.dueCards(limit: 30, deck: filter?.deck, topic: filter?.topic);
+      sessionDone = false;
+      final fetched =
+          await api.dueCards(
+            limit: 30,
+            deck: filter?.deck,
+            topic: filter?.topic,
+            extra: extra,
+          );
+      dueCards = [
+        for (final c in fetched)
+          if (!reviewedSlugs.contains(c['slug'])) c,
+      ];
+      // Alles Faellige war schon bewertet: Fertig-Zustand statt leerem Stapel.
+      if (dueCards.isEmpty && fetched.isNotEmpty) {
+        sessionDone = true;
+        if (reviewedInSession == 0) reviewedInSession = reviewedSlugs.length;
+      }
       dueCardsFromCache = false;
       // Ein gefilterter Stapel gehoert nicht in den Offline-Cache - der
       // naechste Offline-Start soll den vollen Stapel zeigen, nicht ein Deck.
@@ -440,6 +498,9 @@ class AppState extends ChangeNotifier {
   Future<void> rateTopCard(int rating, {int elapsedMs = 0}) async {
     if (dueCards.isEmpty) return;
     final card = dueCards.removeAt(0);
+    reviewedInSession++;
+    if (rating >= 2) reviewedSlugs.add(card['slug'] as String);
+    if (dueCards.isEmpty) sessionDone = true;
     outbox.add(
       PendingReview(
         clientId: _newClientId(),
@@ -464,11 +525,27 @@ class AppState extends ChangeNotifier {
       outbox.removeWhere((r) => batch.any((b) => b.clientId == r.clientId));
       await _persistOutbox();
       error = null;
+      // Die Heute-Zahlen (Abdeckung) haengen an den Bewertungen - nach einem
+      // erfolgreichen Senden nachziehen, sonst zeigt die Startseite den Stand
+      // von vor dem Lernen.
+      if (coverage != null) unawaited(_refreshCoverage());
     } on Exception {
       error =
           'Offline - ${outbox.length} Bewertung(en) werden später gesendet.';
     }
     notifyListeners();
+  }
+
+  /// Stilles Nachladen der Abdeckung (ohne Ladeanzeige); Fehler behalten den
+  /// zuletzt bekannten Stand.
+  Future<void> _refreshCoverage() async {
+    try {
+      final fresh = await api.coverage();
+      coverage = fresh;
+      notifyListeners();
+    } catch (_) {
+      // Letzten bekannten Stand behalten.
+    }
   }
 
   Future<bool> _guard(Future<void> Function() action) async {

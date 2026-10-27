@@ -5,7 +5,7 @@ topic:
   parent: or-sicherheitsrecht-generalklausel-standardmassnahmen
   bundesland: ST
   relevance: 4
-  stand: 2026-09
+  stand: 2026-10
   redaktion:
     erzeugt_von: claude-code (Redaktionsentwurf)
     status: in-pruefung
@@ -14,10 +14,13 @@ cards:
 - slug: st-por-generalklausel
   type: norm
   front: Wo steht die polizeiliche Generalklausel in Sachsen-Anhalt und was setzt sie voraus?
-  back: 'Fundstelle: § 13 SOG LSA. Die Generalklausel ermaechtigt zu den notwendigen Massnahmen, um eine
-    im Einzelfall bestehende Gefahr fuer die oeffentliche Sicherheit oder Ordnung abzuwehren. Sie ist
-    subsidiaer: Greift eine Standardmassnahme oder ein Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite
-    besteht Ermessen, begrenzt durch den Grundsatz der Verhaeltnismaessigkeit.'
+  back: 'Fundstelle: § 13 SOG LSA. Die Generalklausel ermächtigt zu den notwendigen Maßnahmen, um eine
+    im Einzelfall bestehende Gefahr für die öffentliche Sicherheit oder Ordnung abzuwehren. Sie ist subsidiär:
+    Greift eine Standardmaßnahme oder ein Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite besteht
+    Ermessen, begrenzt durch den Grundsatz der Verhältnismäßigkeit. Zum Schutz privater Rechte wird die
+    Gefahrenabwehr nur subsidiär tätig: Ein Einschreiten kommt nur in Betracht, wenn gerichtlicher Schutz
+    nicht rechtzeitig zu erlangen ist und ohne die Maßnahme die Vereitelung oder wesentliche Erschwerung
+    der Rechtsverwirklichung droht.'
   norms:
   - § 13 SOG LSA
   quellen:
@@ -26,14 +29,14 @@ cards:
   stand: 2026-09
 - slug: st-por-aufbau
   type: schema_step
-  front: 'Aufbau: Rechtmaessigkeit einer Gefahrenabwehrmassnahme nach dem Landesrecht von Sachsen-Anhalt'
-  back: 'I. Ermaechtigungsgrundlage (Gesetz ueber die oeffentliche Sicherheit und Ordnung des Landes Sachsen-Anhalt
-    (SOG LSA): Standardmassnahme vor Generalklausel). II. Formelle Rechtmaessigkeit: 1. Zustaendigkeit
-    (sachlich: welche Behoerde - Sicherheitsbehoerden und Polizei nach dem SOG LSA; Polizei bei Eilbeduerftigkeit;
-    oertlich; instanziell), 2. Verfahren (Anhoerung, § 28 VwVfG bzw. Landesrecht), 3. Form. III. Materielle
-    Rechtmaessigkeit: 1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose ex ante), 2. richtiger
-    Adressat (Stoerer: §§ 7, 8, 10 SOG LSA), 3. Rechtsfolge: Ermessen und Verhaeltnismaessigkeit (geeignet,
-    erforderlich, angemessen).'
+  front: 'Aufbau: Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem Landesrecht von Sachsen-Anhalt'
+  back: 'I. Ermächtigungsgrundlage (Gesetz über die öffentliche Sicherheit und Ordnung des Landes Sachsen-Anhalt
+    (SOG LSA): Standardmaßnahme vor Generalklausel). II. Formelle Rechtmäßigkeit: 1. Zuständigkeit (sachlich:
+    welche Behörde - Sicherheitsbehörden und Polizei nach dem SOG LSA; Polizei bei Eilbedürftigkeit; örtlich;
+    instanziell), 2. Verfahren (Anhörung nach dem jeweiligen Landesverwaltungsverfahrensgesetz), 3. Form.
+    III. Materielle Rechtmäßigkeit: 1. Tatbestand (Schutzgut, Gefahrbegriff, Gefahrenprognose ex ante),
+    2. richtiger Adressat (Störer: §§ 7, 8, 10 SOG LSA), 3. Rechtsfolge: Ermessen und Verhältnismäßigkeit
+    (geeignet, erforderlich, angemessen).'
   norms:
   - § 13 SOG LSA
   - §§ 7, 8, 10 SOG LSA
@@ -43,12 +46,12 @@ cards:
   stand: 2026-09
 - slug: st-por-stoerer
   type: norm
-  front: Wo sind Verhaltensstoerer, Zustandsstoerer und Nichtstoerer in Sachsen-Anhalt geregelt?
-  back: '§§ 7, 8, 10 SOG LSA. Verhaltensstoerer: wer die Gefahr durch sein Verhalten verursacht (Theorie
-    der unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstoerer: Inhaber der tatsaechlichen
-    Gewalt bzw. Eigentuemer einer gefaehrlichen Sache. Nichtstoerer: Inanspruchnahme nur unter den engen
-    Voraussetzungen des polizeilichen Notstands (gegenwaertige erhebliche Gefahr, Stoerer nicht greifbar,
-    Behoerde selbst nicht in der Lage), mit Entschaedigungsanspruch.'
+  front: Wo sind Verhaltensstörer, Zustandsstörer und Nichtstörer in Sachsen-Anhalt geregelt?
+  back: '§§ 7, 8, 10 SOG LSA. Verhaltensstörer: wer die Gefahr durch sein Verhalten verursacht (Theorie
+    der unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstörer: Inhaber der tatsächlichen
+    Gewalt bzw. Eigentümer einer gefährlichen Sache. Nichtstörer: Inanspruchnahme nur unter den engen
+    Voraussetzungen des polizeilichen Notstands (gegenwärtige erhebliche Gefahr, Störer nicht greifbar,
+    Behörde selbst nicht in der Lage), mit Entschädigungsanspruch. Die Verantwortlichkeit knüpft an die objektive Zurechnung der Gefahr an, nicht an ein Verschulden. Bei mehreren Verantwortlichen trifft die Behörde die Auswahl nach pflichtgemäßem Ermessen (Störerauswahl).'
   norms:
   - §§ 7, 8, 10 SOG LSA
   quellen:
@@ -57,29 +60,343 @@ cards:
   stand: 2026-09
 - slug: st-por-zustaendigkeit
   type: definition
-  front: Wer ist in Sachsen-Anhalt fuer die Gefahrenabwehr zustaendig - Ordnungs-/Sicherheitsbehoerde
-    oder Polizei?
-  back: 'Sicherheitsbehoerden und Polizei nach dem SOG LSA; Polizei bei Eilbeduerftigkeit. Pruefungsrelevant
-    ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsaetzlich bei den Verwaltungs-/Ordnungsbehoerden;
-    der Polizeivollzugsdienst wird taetig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine
-    besondere Zuweisung besteht. Ein Handeln der unzustaendigen Behoerde macht die Massnahme formell rechtswidrig.'
+  front: Wer ist in Sachsen-Anhalt für die Gefahrenabwehr zuständig - Ordnungs-/Sicherheitsbehörde oder
+    Polizei?
+  back: 'Sicherheitsbehörden (allgemeine Sicherheitsbehörden: Gemeinden, Landkreise, Landesverwaltungsamt, § 84 Abs. 1 SOG LSA; sachlich grundsätzlich die Gemeinden, § 89 Abs. 2 SOG LSA) und Polizei nach dem SOG LSA; die Polizei wird außer bei der vorbeugenden Bekämpfung von Straftaten nur tätig, soweit die Gefahrenabwehr durch die Sicherheitsbehörden nicht oder nicht rechtzeitig möglich erscheint (§ 2 Abs. 2 SOG LSA); Polizei bei Eilbedürftigkeit. Prüfungsrelevant
+    ist die Abgrenzung: Die allgemeine Gefahrenabwehr liegt grundsätzlich bei den Verwaltungs-/Ordnungsbehörden;
+    der Polizeivollzugsdienst wird tätig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere
+    Zuweisung besteht. Ein Handeln der unzuständigen Behörde macht die Maßnahme formell rechtswidrig. Die Eilzuständigkeit der Polizei setzt voraus, dass die zuständige Behörde nicht rechtzeitig handeln kann; die zuständige Stelle ist dann in der Regel unverzüglich zu unterrichten (Einzelheiten nach dem jeweiligen Landesgesetz).'
   norms:
-  - Gesetz ueber die oeffentliche Sicherheit und Ordnung des Landes Sachsen-Anhalt (SOG LSA)
+  - § 2 Abs. 2 SOG LSA
+  - § 84 Abs. 1 SOG LSA
+  - § 89 Abs. 2 SOG LSA
+  - Gesetz über die öffentliche Sicherheit und Ordnung des Landes Sachsen-Anhalt (SOG LSA)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: st-por-vollstreckung
   type: norm
-  front: Nach welchem Gesetz wird eine Gefahrenabwehrverfuegung in Sachsen-Anhalt vollstreckt?
-  back: 'Verwaltungsvollstreckungsgesetz Sachsen-Anhalt (VwVG LSA); Zwang nach SOG LSA. Regelfall ist
-    das gestreckte Verfahren: Grundverfuegung - Androhung - Festsetzung - Anwendung des Zwangsmittels
-    (Ersatzvornahme, Zwangsgeld, unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare
-    Ausfuehrung ohne vorausgehenden Verwaltungsakt moeglich; die Kosten traegt der Pflichtige.'
+  front: Nach welchem Gesetz wird eine Gefahrenabwehrverfügung in Sachsen-Anhalt vollstreckt?
+  back: 'Verwaltungszwang der Sicherheitsbehörden und der Polizei: §§ 53 ff. SOG LSA (Zwangsmittel, Androhung); unmittelbare Ausführung: § 9 SOG LSA; Kostenbeitreibung im Verwaltungsvollstreckungsverfahren (VwVG LSA). Regelfall ist
+    das gestreckte Verfahren: Grundverfügung - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme,
+    Zwangsgeld, unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausführung
+    ohne vorausgehenden Verwaltungsakt möglich; die Kosten trägt der Pflichtige. Voraussetzungen des gestreckten Verfahrens sind ein wirksamer und vollstreckbarer Verwaltungsakt (unanfechtbar oder sofort vollziehbar), die Androhung mit angemessener Frist und die Festsetzung. Das Zwangsmittel muss verhältnismäßig sein, unmittelbarer Zwang ist nur letztes Mittel. Die Kosten werden dem Pflichtigen durch Kostenbescheid auferlegt.'
   norms:
+  - §§ 53 ff. SOG LSA
+  - § 9 SOG LSA
   - Verwaltungsvollstreckungsgesetz Sachsen-Anhalt (VwVG LSA)
-  - Zwang nach SOG LSA
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
+- slug: st-por-gefahr
+  type: definition
+  front: >-
+      Welche Gefahrbegriffe sind im Gefahrenabwehrrecht in Sachsen-Anhalt zu unterscheiden?
+  back: >-
+      Gefahr ist eine Sachlage, die bei ungehindertem Geschehensablauf mit hinreichender
+      Wahrscheinlichkeit in absehbarer Zeit zu einem Schaden für ein polizeiliches Schutzgut führt;
+      maßgeblich ist die Prognose ex ante aus Sicht eines besonnenen Amtswalters. Konkrete Gefahr: im
+      Einzelfall drohend, sie trägt Einzelmaßnahmen (Generalklausel, Standardmaßnahmen). Abstrakte
+      Gefahr: nach allgemeiner Lebenserfahrung typischerweise drohend, sie trägt nur den Erlass einer
+      Gefahrenabwehrverordnung (§ 94 SOG LSA). Qualifizierte Gefahren erhöhen die Anforderungen:
+      erhebliche Gefahr (bedeutendes Rechtsgut), gegenwärtige Gefahr (Schadenseintritt hat begonnen
+      oder steht unmittelbar bevor), Gefahr im Verzug (Abwarten würde den Erfolg der Maßnahme
+      gefährden). Vom Gefahrenverdacht spricht man, wenn unklar ist, ob ein Schaden droht; hier kommt
+      nur ein Gefahrerforschungseingriff in Betracht. Welche Qualifikation eine Standardmaßnahme
+      verlangt, ergibt sich aus ihrem Tatbestand.
+  norms:
+  - "§ 13 SOG LSA"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: st-por-anschein
+  type: streitstand
+  front: >-
+      Anscheinsgefahr, Gefahrenverdacht und Putativgefahr: Wie sind sie abzugrenzen und welche
+      Rechtsfolgen hat eine Fehlprognose?
+  back: >-
+      Anscheinsgefahr: Bei Erlass der Maßnahme sprach aus Sicht eines besonnenen Amtswalters ex ante
+      alles für einen drohenden Schaden, tatsächlich bestand keine Gefahr. Nach h. M. liegt eine
+      Gefahr im Rechtssinn vor, die Maßnahme ist rechtmäßig (Prognoseentscheidung). Gefahrenverdacht:
+      Die Tatsachenlage ist unklar; zulässig ist grundsätzlich nur eine vorläufige, der Aufklärung
+      dienende Maßnahme. Putativgefahr: Der Amtswalter nimmt ohne objektiv tragfähigen Anschein eine
+      Gefahr an; die Maßnahme ist rechtswidrig. Streitig sind die Folgefragen beim Anscheinsstörer:
+      Nach h. M. wird dem zu Unrecht Herangezogenen, der den Anschein nicht zurechenbar gesetzt hat,
+      ein Ausgleich entsprechend dem Nichtstörer zugestanden und er wird nicht mit Kosten belastet;
+      wer den Anschein zurechenbar veranlasst hat (etwa Fehlalarm durch Fahrlässigkeit), trägt die
+      Kosten. Anderer Ansatz: Die Rechtmäßigkeit der Maßnahme schließe jeden Ausgleich aus.
+  norms:
+  - "§ 13 SOG LSA"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: st-por-standard
+  type: norm
+  front: >-
+      Welche Standardmaßnahmen kennt das Gefahrenabwehrrecht in Sachsen-Anhalt und wie verhalten sie
+      sich zur Generalklausel?
+  back: >-
+      Standardmaßnahmen sind typisierte Eingriffsbefugnisse mit eigenem Tatbestand: Befragung und
+      Auskunftspflicht, Vorladung, Identitätsfeststellung, Platzverweisung und Aufenthaltsverbot,
+      Gewahrsam, Durchsuchung von Personen und Sachen, Betreten und Durchsuchen von Wohnungen sowie
+      Sicherstellung und Beschlagnahme. Sie stehen im SOG LSA, das Sicherheitsbehörden und Polizei gemeinsam erfasst (z. B. § 20 Identitätsfeststellung, § 36 Platzverweisung); der Gewahrsam (§ 37 SOG LSA) ist der Polizei vorbehalten. Sie
+      gehen der Generalklausel als speziellere Normen vor; ist ihr Tatbestand nicht erfüllt, darf
+      nicht ohne Weiteres auf die Generalklausel ausgewichen werden, soweit die Standardmaßnahme die
+      Materie abschließend regelt. Verfassungsrechtliche Vorgaben sind zu beachten: Gewahrsam verlangt
+      eine richterliche Entscheidung (Art. 104 Abs. 2 GG), die Durchsuchung von Wohnungen
+      grundsätzlich eine richterliche Anordnung (Art. 13 Abs. 2 GG), ihr Betreten zur Gefahrenabwehr
+      ist an Art. 13 Abs. 7 GG zu messen.
+  norms:
+  - "§§ 14 ff. SOG LSA"
+  - "Art. 104 Abs. 2 GG"
+  - "Art. 13 Abs. 2 GG"
+  - "Art. 13 Abs. 7 GG"
+  - "§ 13 SOG LSA"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: st-por-stoererauswahl
+  type: streitstand
+  front: >-
+      Wie wählt die Behörde zwischen mehreren Verantwortlichen aus, und wie wird der Zweckveranlasser
+      behandelt?
+  back: >-
+      Gibt es mehrere Störer, wählt die Behörde nach pflichtgemäßem Ermessen aus. Leitlinie ist die
+      effektive, schnelle und sichere Gefahrenabwehr; eine feste Rangfolge zwischen Verhaltens- und
+      Zustandsstörer besteht nicht. Zu berücksichtigen sind Nähe zur Gefahr, Leistungsfähigkeit,
+      Verursachungsbeitrag und Gleichbehandlung. Nichtstörer dürfen dagegen nur im polizeilichen
+      Notstand herangezogen werden. Streitig ist die Reichweite der Verhaltensverantwortlichkeit: Nach
+      der Theorie der unmittelbaren Verursachung ist nur verantwortlich, wer selbst die Gefahrengrenze
+      überschreitet. Die Rechtsprechung und Teile des Schrifttums erweitern dies auf den
+      Zweckveranlasser, der die unmittelbare Verursachung durch einen Dritten bezweckt oder sie als
+      zwangsläufige Folge seines Tuns herbeiführt. Die Gegenansicht lehnt die Figur ab, weil sie die
+      Unmittelbarkeit auflöse und die Verantwortlichkeit nicht gesetzlich gedeckt sei.
+  norms:
+  - "§ 7 SOG LSA"
+  - "§ 8 SOG LSA"
+  - "§ 10 SOG LSA"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: st-por-zwang
+  type: definition
+  front: >-
+      Wie läuft die Vollstreckung einer Gefahrenabwehrverfügung in Sachsen-Anhalt ab, und was gilt
+      beim Sofortvollzug?
+  back: >-
+      Regelfall ist das gestreckte Verfahren: wirksame und vollstreckbare Grundverfügung (unanfechtbar
+      oder sofort vollziehbar, § 80 Abs. 2 VwGO), Androhung des Zwangsmittels mit angemessener Frist,
+      Festsetzung, Anwendung. Zwangsmittel sind Ersatzvornahme, Zwangsgeld und als letztes Mittel
+      unmittelbarer Zwang; sie müssen verhältnismäßig sein. Den Verwaltungszwang der
+      Sicherheitsbehörden und der Polizei regeln die §§ 53 ff. SOG LSA (Androhung: § 59 SOG LSA);
+      das Verwaltungsvollstreckungsgesetz Sachsen-Anhalt (VwVG LSA) kommt bei der Beitreibung der Kosten
+      im Verwaltungsvollstreckungsverfahren in Betracht (§ 9 Abs. 2 S. 4, § 55 Abs. 2 S. 2 SOG LSA). Bei gegenwärtiger Gefahr kann die Behörde im Sofortvollzug (unmittelbare
+      Ausführung) ohne vorausgehenden Verwaltungsakt handeln, wenn die Maßnahme zur Abwehr der Gefahr
+      notwendig ist und die Verantwortlichen nicht rechtzeitig herangezogen werden können. Typische
+      Klausurkonstellation ist das Abschleppen eines Fahrzeugs; geprüft wird dann, ob die
+      Grundverfügung, etwa ein Verkehrszeichen, wirksam war, ob Androhung und Festsetzung entbehrlich
+      waren und ob das Zwangsmittel verhältnismäßig war.
+  norms:
+  - "§§ 53 ff. SOG LSA"
+  - "§ 9 SOG LSA"
+  - "Verwaltungsvollstreckungsgesetz Sachsen-Anhalt (VwVG LSA)"
+  - "§ 80 Abs. 2 S. 1 Nr. 2 VwGO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: st-por-kosten
+  type: norm
+  front: >-
+      Wer trägt die Kosten von Ersatzvornahme, unmittelbarer Ausführung und Zwang, und wo liegen die
+      Grenzen der Kostenhaftung?
+  back: >-
+      Die Kosten einer Ersatzvornahme, des unmittelbaren Zwangs oder einer unmittelbaren Ausführung
+      trägt grundsätzlich der Pflichtige bzw. der für die Gefahr Verantwortliche; sie werden durch
+      Kostenbescheid (Leistungsbescheid) geltend gemacht und nach den Vorschriften der
+      Verwaltungsvollstreckung beigetrieben. Bei Sofortvollzug ohne Grundverfügung prüft die
+      Kostenentscheidung inzident, ob die Maßnahme rechtmäßig gewesen wäre, insbesondere ob eine
+      Gefahr vorlag, der Kostenschuldner Störer war und die Maßnahme verhältnismäßig war. Für den
+      Zustandsstörer ist die Kostenhaftung nach der Rechtsprechung des Bundesverfassungsgerichts aus
+      Art. 14 GG begrenzt; sie darf nach Zumutbarkeit insbesondere den Wert des Grundstücks nach
+      Sanierung nicht übersteigen, wenn die Gefahr nicht dem Risikobereich des Eigentümers zuzurechnen
+      ist. Der Nichtstörer wird nicht mit Kosten belastet; ihm steht bei Inanspruchnahme ein
+      Entschädigungsanspruch zu.
+  norms:
+  - "Art. 14 Abs. 1 GG"
+  - "Art. 14 Abs. 2 GG"
+  - "Verwaltungsvollstreckungsgesetz Sachsen-Anhalt (VwVG LSA)"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "BVerfGE 102, 1 (Altlasten, Zustandsverantwortlichkeit)"
+  stand: 2026-10
+- slug: st-por-doppel
+  type: streitstand
+  front: >-
+      Was gilt bei doppelfunktionalen Maßnahmen der Polizei (Gefahrenabwehr und Strafverfolgung)?
+  back: >-
+      Verfolgt eine polizeiliche Maßnahme zugleich präventive und repressive Zwecke, sind
+      Rechtsgrundlage und Rechtsweg abhängig von ihrem Schwerpunkt. Nach h. M. und der Rechtsprechung
+      entscheidet der erkennbare Schwerpunkt, der sich aus dem Anlass, dem Zweck und dem
+      Gesamteindruck der Maßnahme ergibt. Überwiegt die Gefahrenabwehr, ist die Befugnis im SOG LSA
+      bzw. im Ordnungsrecht zu suchen und der Verwaltungsrechtsweg eröffnet (§ 40 Abs. 1 VwGO).
+      Überwiegt die Strafverfolgung, gilt die StPO; der Rechtsschutz richtet sich dann nach § 98 Abs.
+      2 S. 2 StPO analog bzw. nach den §§ 23 ff. EGGVG. Lassen sich die Zwecke nicht gewichten, werden
+      teilweise beide Regelungskomplexe nebeneinander angewendet oder dem Betroffenen ein Wahlrecht
+      zugestanden. Die Klausur verlangt deshalb stets eine ausdrückliche Zuordnung des Handelns, bevor
+      die Ermächtigungsgrundlage geprüft wird.
+  norms:
+  - "§ 40 Abs. 1 VwGO"
+  - "§ 98 Abs. 2 StPO"
+  - "§ 23 EGGVG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: st-schema-por-sofortvollzug-kosten
+  title: >-
+      Abschleppen: Sofortvollzug und Kostenbescheid nach SOG LSA und VwVG LSA
+  norms:
+  - "Verwaltungsvollstreckungsgesetz Sachsen-Anhalt (VwVG LSA)"
+  - "§ 80 Abs. 2 S. 1 Nr. 2 VwGO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  steps:
+  - label: >-
+      I. Rechtmäßigkeit des Kostenbescheids: Ermächtigungsgrundlage
+  - label: "II. Formelle Rechtmäßigkeit des Kostenbescheids"
+    hinweis: "Zuständigkeit, Anhörung, Form."
+  - label: "III. Materielle Rechtmäßigkeit"
+    children:
+    - label: "1. Rechtmäßige Maßnahme als Grundlage der Kosten"
+      hinweis: "Beim Sofortvollzug die Rechtmäßigkeit inzident prüfen."
+      children:
+      - label: >-
+          a) Wirksame Grundverfügung (z. B. Verkehrszeichen) oder Gefahr im Verzug
+      - label: >-
+          b) Entbehrlichkeit von Androhung und Festsetzung bei gegenwärtiger Gefahr
+      - label: "c) Verhältnismäßigkeit des Zwangsmittels"
+    - label: "2. Kostenschuldner ist der Verantwortliche"
+    - label: "3. Höhe der Kosten, Ermessen"
+faelle:
+- slug: st-fall-por-abschleppen-feuerwehrzufahrt
+  title: "Das Fahrzeug in der Feuerwehrzufahrt"
+  difficulty: 3
+  minutes: 55
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "§ 80 Abs. 2 S. 1 Nr. 2 VwGO"
+  facts: >-
+      Der Eigentümer E eines Pkw parkt sein Fahrzeug in Magdeburg auf einer Zufahrt, die mit absolutem
+      Haltverbot (Zeichen 283) und dem Zusatzzeichen „Feuerwehrzufahrt“ beschildert ist. Eine
+      Mitarbeiterin des Ordnungsamts stellt fest, dass das Fahrzeug die Zufahrt zu einem
+      Mehrfamilienhaus vollständig versperrt, in dem ein Rettungsweg für die Feuerwehr freizuhalten
+      ist. Sie lässt das Fahrzeug sofort durch ein Abschleppunternehmen entfernen, ohne E zuvor
+      anzusprechen oder anzuschreiben. E hat sich zum Zeitpunkt der Maßnahme in einem nahen Geschäft
+      aufgehalten. Das Ordnungsamt erlässt später einen Kostenbescheid über die Abschleppkosten. E
+      meint, ohne vorherigen Verwaltungsakt und ohne Androhung sei das Abschleppen rechtswidrig
+      gewesen, der Kostenbescheid daher ebenfalls.
+  question: >-
+      Ist der Kostenbescheid rechtmäßig? Es ist zu unterstellen, dass der Kostenbescheid formell
+      ordnungsgemäß ergangen ist.
+  steps:
+  - prompt: >-
+        Woran knüpft die Kostenentscheidung an, und was ist deshalb inzident zu prüfen?
+    erwartung: >-
+        Die Kostenpflicht setzt eine rechtmäßige Vollstreckungsmaßnahme voraus. Weil das Fahrzeug im
+        Sofortvollzug entfernt wurde, ist inzident zu prüfen, ob die Maßnahme rechtmäßig war.
+  - prompt: "Gab es eine wirksame Grundverfügung, die vollstreckt werden durfte?"
+    erwartung: >-
+        Ja. Das Verkehrszeichen mit Zusatzzeichen ist eine Allgemeinverfügung (Verwaltungsakt), die mit
+        der Bekanntgabe gegenüber dem Verkehrsteilnehmer wirksam wird und nach § 80 Abs. 2 S. 1 Nr. 2
+        VwGO sofort vollziehbar ist. E hat sie missachtet.
+  - prompt: "Waren Androhung und Festsetzung entbehrlich?"
+    erwartung: >-
+        Ja. Wegen der Versperrung des Rettungswegs besteht eine gegenwärtige Gefahr; ein Vorgehen im
+        gestreckten Verfahren würde den Erfolg der Maßnahme gefährden. Das Ordnungsamt durfte im
+        Sofortvollzug handeln.
+  - prompt: "Ist das Abschleppen verhältnismäßig, und wer trägt die Kosten?"
+    erwartung: >-
+        Ja. Das Abschleppen ist geeignet und erforderlich, weil E nicht erreichbar war und kein milderes
+        gleich wirksames Mittel zur Freihaltung der Zufahrt bestand. Angemessen ist es wegen der
+        Bedeutung des Rettungswegs. E ist als Eigentümer und Verhaltensstörer (er hat das Fahrzeug
+        abgestellt) Kostenschuldner. Der Kostenbescheid ist rechtmäßig.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+          Rechtmäßigkeit der Vollstreckungsmaßnahme als Voraussetzung der Kosten inzident geprüft
+      weight: 2.5
+      required: true
+      keywords:
+      - "Kostenbescheid"
+      - "inzident"
+      - "Rechtmäßigkeit der Vollstreckungsmaßnahme"
+      - "Rechtmäßigkeit des Abschleppens"
+      - "Sofortvollzug"
+      card_slugs:
+      - "st-por-kosten"
+      - "st-por-zwang"
+    - id: p2
+      label: >-
+          Verkehrszeichen als wirksame, sofort vollziehbare Grundverfügung erkannt
+      weight: 2.0
+      required: true
+      norms:
+      - "§ 80 Abs. 2 S. 1 Nr. 2 VwGO"
+      keywords:
+      - "Allgemeinverfügung"
+      - "Verkehrszeichen"
+      - "Haltverbot"
+      - "§ 80 Abs. 2 S. 1 Nr. 2 VwGO"
+      - "sofort vollziehbar"
+      card_slugs:
+      - "st-por-zwang"
+    - id: p3
+      label: >-
+          Entbehrlichkeit von Androhung und Festsetzung wegen gegenwärtiger Gefahr begründet
+      weight: 2.0
+      required: true
+      keywords:
+      - "gegenwärtige Gefahr"
+      - "Androhung entbehrlich"
+      - "Gefahr im Verzug"
+      card_slugs:
+      - "st-por-zwang"
+      - "st-por-gefahr"
+    - id: p4
+      label: "Verhältnismäßigkeit des Abschleppens geprüft"
+      weight: 1.5
+      required: false
+      keywords:
+      - "Verhältnismäßigkeit"
+      - "geeignet"
+      - "erforderlich"
+      - "angemessen"
+      - "milderes Mittel"
+      card_slugs:
+      - "st-por-zwang"
+    - id: p5
+      label: "E als Kostenschuldner (Verhaltensstörer) bestimmt"
+      weight: 1.0
+      required: false
+      norms:
+      - "§ 7 SOG LSA"
+      keywords:
+      - "Kostenschuldner"
+      - "Verhaltensstörer"
+      - "Eigentümer"
+      - "Zustandsstörer"
+      card_slugs:
+      - "st-por-stoerer"
+    normzitate_geprueft: false

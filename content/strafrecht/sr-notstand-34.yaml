@@ -9,8 +9,8 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-23'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: sr-notstand-gefahrbegriff
   type: definition
@@ -142,10 +142,11 @@ schemata:
     - label: 2. Grad und Wahrscheinlichkeit der Gefahr, Erfolgsaussicht der Rettungshandlung
     - label: 3. Wesentliches Überwiegen des geschützten Interesses
     hinweis: Keine schematische Rangfolge, sondern Gesamtabwägung des Einzelfalls.
-  - label: IV. Angemessenheit, § 34 Satz 2 StGB
+  - label: V. Angemessenheit, § 34 Satz 2 StGB
     hinweis: Eigenständiges Korrektiv - va. relevant, wenn ein vorgeschriebenes Verfahren
       umgangen wird.
-  - label: 'V. Ergebnis: Rechtswidrigkeit entfällt'
+  - label: 'IV. Subjektives Rechtfertigungselement: Gefahrabwendungswille (Rettungswille)'
+  - label: 'VI. Ergebnis: Rechtswidrigkeit entfällt'
 faelle:
 - slug: sr-fall-hund-im-auto
   title: Der Hund im Auto
@@ -154,17 +155,18 @@ faelle:
   quellen:
   - Eigener Sachverhalt der Redaktion
   - StGB, amtliche Fassung
-  facts: An einem heißen Sommertag geht A an einem auf einem Supermarktparkplatz
-    abgestellten PKW vorbei und sieht darin einen Hund, der stark hechelt, unruhig
-    hin- und herspringt und deutliche Anzeichen eines beginnenden Hitzschlags zeigt.
-    Die Fensterscheiben sind vollständig geschlossen, der Halter ist nicht auffindbar
-    und meldet sich auch nicht auf einen über die Parkplatzlautsprecher ausgerufenen
-    Suchaufruf. Da A befürchtet, der Hund könne in den nächsten Minuten einen lebensgefährlichen
+  facts: An einem heißen Sommertag geht A an einem auf einem Supermarktparkplatz abgestellten
+    PKW vorbei und sieht darin einen Hund, der stark hechelt, unruhig hin- und herspringt
+    und deutliche Anzeichen eines beginnenden Hitzschlags zeigt. Die Fensterscheiben
+    sind vollständig geschlossen, der Halter ist nicht auffindbar und meldet sich
+    auch nicht auf einen über die Parkplatzlautsprecher ausgerufenen Suchaufruf. A
+    ruft sofort den Notruf der Polizei an; dort heißt es, ein Streifenwagen könne
+    frühestens in 25 Minuten eintreffen. Der Hund liegt inzwischen apathisch am Boden.
+    Da A befürchtet, der Hund könne in den nächsten Minuten einen lebensgefährlichen
     Kreislaufkollaps erleiden, zerschlägt er mit einem griffbereiten Pflasterstein
     die Seitenscheibe und befreit den Hund. Die Reparatur der Scheibe kostet den Halter
     300 Euro.
-  question: Hat sich A wegen Sachbeschädigung gemäß § 303 Abs. 1 StGB strafbar
-    gemacht?
+  question: Hat sich A wegen Sachbeschädigung gemäß § 303 Abs. 1 StGB strafbar gemacht?
   steps:
   - prompt: Formuliere den Obersatz.
     erwartung: A könnte sich durch das Einschlagen der Seitenscheibe wegen Sachbeschädigung
@@ -176,16 +178,21 @@ faelle:
     erwartung: Ja - für den Hund droht eine gegenwärtige, nicht anders abwendbare
       Gefahr für Leben und körperliche Unversehrtheit durch drohenden Hitzschlag;
       der Halter ist nicht erreichbar.
-  - prompt: War das Einschlagen der Scheibe erforderlich?
-    erwartung: Ja - ein milderes, gleich wirksames Mittel, den Hund rechtzeitig zu
-      befreien, stand A nicht zur Verfügung.
+  - prompt: War das Einschlagen der Scheibe erforderlich? Hätte man die Polizei oder
+      Feuerwehr abwarten müssen?
+    erwartung: Ja - der Hund ist als Tier zwar rechtlich eine Sache (§ 90a BGB), aber
+      ein fühlendes Lebewesen mit Lebensgefahr. A hat bereits die Polizei gerufen;
+      ein Abwarten von 25 Minuten ist nicht gleich wirksam, weil der Hitzschlag unmittelbar
+      droht. Ein milderes, gleich wirksames Mittel stand nicht zur Verfügung (Polizeiruf
+      bereits versucht, Halter nicht auffindbar).
   - prompt: Überwiegt das geschützte Interesse wesentlich das beeinträchtigte?
     erwartung: Ja - Leben und Gesundheit des Tieres bei drohendem Hitzschlag wiegen
       wesentlich schwerer als der reine Sachwert einer Autoscheibe.
   - prompt: Ist die Tat auch angemessenes Mittel i.S.d. § 34 Satz 2 StGB?
-    erwartung: Ja - kein vorgeschriebenes Verfahren wurde umgangen, das Einschlagen
-      einer Scheibe zur Rettung eines akut gefährdeten Lebewesens ist ein sozial
-      anerkanntes Mittel.
+    erwartung: Ja - die Hilfe staatlicher Stellen wurde erfolglos versucht und kommt
+      zu spät; kein vorgeschriebenes Verfahren wird umgangen. Das Einschlagen der
+      Scheibe zur Rettung eines akut gefährdeten Lebewesens ist ein angemessenes Mittel.
+      A handelte auch mit Gefahrabwendungswillen (subjektives Rechtfertigungselement).
   expectation:
     pruefpunkte:
     - id: p1
@@ -195,7 +202,8 @@ faelle:
       norms:
       - § 303 Abs. 1 StGB
       keywords:
-      - '303'
+      - § 303 Abs. 1
+      - Sachbeschädigung gemäß § 303
     - id: p2
       label: Tatbestand der Sachbeschädigung bejaht
       weight: 1.0
@@ -204,17 +212,20 @@ faelle:
       - § 303 Abs. 1 StGB
       keywords:
       - fremde Sache
-      - beschädigt
+      - Beschädigung der Scheibe
+      - Scheibe ist eine fremde Sache
+      - substanziell beschädigt
     - id: p3
-      label: Notstandslage bejaht (gegenwärtige Gefahr für Leben/Gesundheit des
-        Tieres)
+      label: Notstandslage bejaht (gegenwärtige Gefahr für Leben/Gesundheit des Tieres)
       weight: 2.5
       required: true
       norms:
       - § 34 Satz 1 StGB
       keywords:
       - Notstandslage
-      - gegenwärtige Gefahr
+      - gegenwärtige Gefahr für Leben
+      - Hitzschlag
+      - nicht anders abwendbar
       card_slugs:
       - sr-notstand-gefahrbegriff
       - sr-notstand-notstandslage
@@ -225,8 +236,12 @@ faelle:
       norms:
       - § 34 Satz 1 StGB
       keywords:
-      - erforderlich
+      - relativ mildestes Mittel
       - mildestes Mittel
+      - Polizei
+      - Ordnungsamt
+      - Feuerwehr
+      - Erforderlichkeit der Notstandshandlung
       card_slugs:
       - sr-notstand-erforderlichkeit
     - id: p5
@@ -237,7 +252,10 @@ faelle:
       - § 34 Satz 1 StGB
       keywords:
       - wesentlich überwiegt
-      - überwiegen
+      - wesentliches Überwiegen
+      - wesentlich überwiegende
+      - Leben des Tieres
+      - Sachwert
       card_slugs:
       - sr-notstand-interessenabwaegung
     - id: p6
@@ -247,9 +265,20 @@ faelle:
       norms:
       - § 34 Satz 2 StGB
       keywords:
-      - angemessen
+      - Angemessenheit
+      - § 34 Satz 2
+      - angemessenes Mittel
       card_slugs:
       - sr-notstand-angemessenheit
+    - id: p6b
+      label: Subjektives Rechtfertigungselement (Gefahrabwendungswille) erwähnt
+      weight: 1.0
+      required: false
+      keywords:
+      - Gefahrabwendungswille
+      - Rettungswille
+      - Rettungsabsicht
+      card_slugs: []
     - id: p7
       label: 'Ergebnis: Tat gerechtfertigt, A hat sich nicht strafbar gemacht'
       weight: 1.0
@@ -257,8 +286,10 @@ faelle:
       norms:
       - § 34 StGB
       keywords:
-      - gerechtfertigt
-      - nicht strafbar
+      - gerechtfertigt nach § 34
+      - durch § 34 gerechtfertigt
+      - rechtfertigender Notstand
+      - Rechtswidrigkeit entfällt
       card_slugs:
       - sr-notstand-notstandslage
       - sr-notstand-interessenabwaegung

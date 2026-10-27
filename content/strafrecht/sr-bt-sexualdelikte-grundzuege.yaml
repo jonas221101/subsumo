@@ -1,0 +1,408 @@
+topic:
+  slug: sr-bt-sexualdelikte-grundzuege
+  area: strafrecht
+  title: "Sexualdelikte: Grundzüge, § 177 und § 184i StGB"
+  parent: sr-at
+  relevance: 3
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-sexual-systematik
+  type: definition
+  front: "Definiere: Schutzgut und Systematik der Sexualstraftaten (§ 177 Abs. 1 und 2 StGB, 'Nein heißt Nein')"
+  back: >-
+    Geschütztes Rechtsgut des § 177 StGB ist die sexuelle Selbstbestimmung, also
+    die Freiheit, über Ob, Wann, Wie und mit wem sexuelle Handlungen
+    stattfinden. Mit der Reform 2016 wurde ein Grundtatbestand geschaffen, der
+    nicht mehr Nötigungsmittel (Gewalt, Drohung, schutzlose Lage) voraussetzt,
+    sondern bereits sexuelle Handlungen gegen den erkennbaren Willen einer
+    anderen Person erfasst (Abs. 1, 'Nein heißt Nein'). Abs. 2 enthält
+    ergänzende Fälle, in denen der entgegenstehende Wille nicht gebildet oder
+    geäußert werden kann oder der Täter besondere Umstände ausnutzt. Die
+    Nötigungsmittel Gewalt, Drohung mit Gefahr für Leib oder Leben und das
+    Ausnutzen einer schutzlosen Lage sind nunmehr Qualifikationsmerkmale (Abs.
+    5), die Vergewaltigung und die gemeinschaftliche Begehung Regelbeispiele für
+    besonders schwere Fälle (Abs. 6). Die Tat nach Abs. 1 und 2 ist ein
+    Vergehen; Qualifikationen sind Verbrechen. Der Versuch ist strafbar (Abs.
+    3). Die Tatbestände sind Allgemeindelikte; Täter und Opfer können jedes
+    Geschlecht haben.
+  norms:
+  - "§ 177 Abs. 1 StGB"
+  - "§ 177 Abs. 2 StGB"
+  - "§ 177 Abs. 5 StGB"
+  - "§ 177 Abs. 6 StGB"
+  quellen:
+  - "StGB, amtliche Fassung"
+  - "Reform des Sexualstrafrechts 2016"
+  stand: 2026-10
+- slug: sr-sexual-184h-sexuelle-handlung
+  type: definition
+  front: "Definiere: Sexuelle Handlung, § 184h StGB (Erheblichkeit und Sexualbezug)"
+  back: >-
+    Nach § 184h Nr. 1 StGB sind sexuelle Handlungen nur solche, die im Hinblick
+    auf das jeweils geschützte Rechtsgut von einiger Erheblichkeit sind. Eine
+    Handlung ist sexuell, wenn sie nach ihrem äußeren Erscheinungsbild eindeutig
+    sexualbezogen ist (objektiver Sexualbezug) und die Erheblichkeitsschwelle
+    überschreitet. Die Erheblichkeit bestimmt sich nach Art, Intensität und
+    Dauer der Handlung sowie nach den Umständen, etwa dem Verhältnis von Täter
+    und Opfer. Typisch erheblich sind Geschlechtsverkehr, Berührungen der
+    Geschlechtsteile und Zungenküsse; typisch nicht erheblich sind flüchtige
+    Berührungen oder Küsse auf die Wange. Bei ambivalenten Handlungen, die erst
+    durch die Absicht des Täters sexuellen Charakter erhalten, ist umstritten,
+    ob der Sexualbezug ausschließlich objektiv zu bestimmen ist (so die Lit.
+    teilweise) oder ob die subjektive Tendenz des Täters in Zweifelsfällen
+    heranzuziehen ist (so die Rspr.). Die Handlung kann an oder von dem Opfer
+    oder einem Dritten vorgenommen werden.
+  norms:
+  - "§ 184h Nr. 1 StGB"
+  - "§ 177 Abs. 1 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-sexual-177-abs1
+  type: norm
+  front: "Was verlangt § 177 Abs. 1 StGB (sexueller Übergriff gegen den erkennbaren Willen)?"
+  back: >-
+    Nach § 177 Abs. 1 StGB macht sich strafbar, wer gegen den erkennbaren Willen
+    einer anderen Person sexuelle Handlungen an dieser Person vornimmt oder von
+    ihr vornehmen lässt oder diese Person zur Vornahme oder Duldung sexueller
+    Handlungen an oder von einem Dritten bestimmt (Freiheitsstrafe von sechs
+    Monaten bis zu fünf Jahren). Zu prüfen sind: (1) sexuelle Handlung i.S.d. §
+    184h StGB, (2) gegen den erkennbaren entgegenstehenden Willen der anderen
+    Person, (3) Vorsatz bezüglich der Handlung und der Erkennbarkeit des
+    entgegenstehenden Willens. Der entgegenstehende Wille muss im Zeitpunkt der
+    Handlung bestehen und nach außen erkennbar sein; er kann ausdrücklich
+    ('Nein', 'Lass das') oder konkludent (Wegdrehen, Weinen, Abwehren) erklärt
+    werden. Ein bloß innerer Vorbehalt genügt nicht, wohl aber ein Verhalten,
+    aus dem ein verständiger Dritter in der Lage des Täters die Ablehnung
+    entnehmen kann. Auch eine zunächst gewollte Handlung wird strafbar, wenn das
+    Opfer seinen Willen erkennbar ändert und der Täter dennoch fortfährt.
+  norms:
+  - "§ 177 Abs. 1 StGB"
+  - "§ 177 Abs. 3 StGB"
+  - "§ 184h StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-sexual-erkennbarer-wille
+  type: definition
+  front: "Definiere: Erkennbarer entgegenstehender Wille, § 177 Abs. 1 StGB (Maßstab und Passivität)"
+  back: >-
+    Der Tatbestand verlangt keinen Widerstand und keine Nötigungsmittel, sondern
+    einen entgegenstehenden Willen des Opfers, der für den Täter erkennbar ist.
+    Die Rspr. und h.M. stellen auf den objektiven Empfängerhorizont ab:
+    Erkennbar ist der Wille, wenn ein verständiger Dritter in der Lage des
+    Täters ihn aus den Umständen entnehmen kann. Ein innerer, nicht nach außen
+    getretener Vorbehalt genügt nicht, weil der Tatbestand ausdrücklich die
+    Erkennbarkeit verlangt und die Strafbarkeit sonst von nicht feststellbaren
+    inneren Vorgängen abhinge. Der Wille kann ausdrücklich (Worte) oder konkludent (Wegdrehen,
+    Abwehren, Weinen, Zittern) erklärt werden. Passivität allein bedeutet nicht
+    ohne Weiteres Zustimmung: Erstarrt das Opfer, kommt es auf die
+    Gesamtumstände an, etwa darauf, ob es zuvor Ablehnung geäußert hat oder
+    seine Angst offensichtlich ist. Wer bei einem ersichtlich ablehnenden
+    Verhalten weitermacht, handelt zumindest mit bedingtem Vorsatz. Von der
+    materiellen Frage ist die Beweisfrage zu trennen (Aussage gegen Aussage ist
+    Sache der Beweiswürdigung).
+  norms:
+  - "§ 177 Abs. 1 StGB"
+  - "§ 15 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-sexual-177-abs2
+  type: norm
+  front: "Welche Fallgruppen enthält § 177 Abs. 2 StGB?"
+  back: >-
+    § 177 Abs. 2 StGB (Freiheitsstrafe von sechs Monaten bis zu fünf Jahren)
+    erfasst sexuelle Handlungen, bei denen es auf einen erkennbaren
+    entgegenstehenden Willen nicht ankommt: Nr. 1: Der Täter nutzt aus, dass die
+    Person nicht in der Lage ist, einen entgegenstehenden Willen zu bilden oder
+    zu äußern (z. B. Bewusstlosigkeit, Schlaf, Narkose); Nr. 2: Der Täter nutzt
+    aus, dass die Person in der Bildung oder Äußerung des Willens aufgrund ihres
+    körperlichen oder psychischen Zustands erheblich eingeschränkt ist, es sei
+    denn, er hat sich der Zustimmung der Person versichert; Nr. 3: Der Täter
+    nutzt ein Überraschungsmoment aus; Nr. 4: Der Täter nutzt eine Lage aus, in
+    der dem Opfer bei Widerstand ein empfindliches Übel droht; Nr. 5: Der Täter
+    nötigt das Opfer durch Drohung mit einem empfindlichen Übel. Bei Nr. 1 bis
+    4 muss der Täter die Umstände nicht nur kennen, sondern ausnutzen.
+    Beruht die Unfähigkeit nach Nr. 1 auf einer Krankheit oder Behinderung des
+    Opfers, ist die Mindeststrafe nach Abs. 4 ein Jahr.
+  norms:
+  - "§ 177 Abs. 2 StGB"
+  - "§ 177 Abs. 4 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-sexual-ueberraschungsmoment
+  type: definition
+  front: "Definiere: Ausnutzen eines Überraschungsmoments, § 177 Abs. 2 Nr. 3 StGB"
+  back: >-
+    Ein Überraschungsmoment liegt vor, wenn der Täter die sexuelle Handlung so
+    vornimmt, dass das Opfer sie nicht erwartet und sich daher nicht rechtzeitig
+    entgegenstellen kann; die Handlung erfolgt, bevor das Opfer einen
+    entgegenstehenden Willen bilden oder äußern konnte. Typisch ist das
+    plötzliche, unvermittelte Zugreifen. Der Täter muss das Überraschungsmoment
+    ausnutzen, d. h. gerade darauf bauen, dass das Opfer nicht reagieren kann;
+    ein bloßes Zusammentreffen genügt nicht. Ein Unterschied zu § 177 Abs. 1
+    StGB: Dort ist der entgegenstehende Wille bereits zum Ausdruck gebracht,
+    hier wird er durch die Überraschung gerade verhindert. Beachtet werden muss
+    die Erheblichkeitsschwelle des § 184h Nr. 1 StGB: Erreicht die Berührung
+    diese nicht (z. B. flüchtige Berührung über der Kleidung), scheidet § 177
+    StGB aus, und es kommt § 184i StGB in Betracht. Eine Überrumpelung allein
+    genügt nicht, wenn die Handlung nicht sexuell im Sinne des § 184h StGB ist.
+  norms:
+  - "§ 177 Abs. 2 Nr. 3 StGB"
+  - "§ 184h Nr. 1 StGB"
+  - "§ 184i StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-sexual-177-qualifikationen
+  type: norm
+  front: "Welche Qualifikationen und Regelbeispiele enthalten § 177 Abs. 5 bis 8 StGB?"
+  back: >-
+    Abs. 5 qualifiziert die Tat nach Abs. 1 oder 2, wenn der Täter Gewalt
+    anwendet, mit gegenwärtiger Gefahr für Leib oder Leben droht oder eine Lage
+    ausnutzt, in der das Opfer der Einwirkung des Täters schutzlos ausgeliefert
+    ist (Verbrechen, Mindeststrafe ein Jahr). Abs. 6 enthält Regelbeispiele für
+    einen besonders schweren Fall (Mindeststrafe in der Regel zwei Jahre): Nr. 1
+    Vollzug des Beischlafs oder gleichwertige Handlungen, die mit einem
+    Eindringen in den Körper verbunden sind (sog. Vergewaltigung), Nr. 2
+    gemeinschaftliche Begehung durch mehrere. Als Regelbeispiel ist Abs. 6 kein
+    Tatbestandsmerkmal: Das Vorliegen indiziert den besonders schweren Fall, die
+    Indizwirkung kann entfallen (Gesamtwürdigung); bei Vorsatz bezüglich der
+    Merkmale gelten die allgemeinen Regeln (§ 15 StGB). Abs. 7 und 8 sehen
+    weitere Qualifikationen vor (z. B. Mitführen einer Waffe, Gefahr einer
+    schweren Gesundheitsschädigung, Verwendung einer Waffe, schwere körperliche
+    Misshandlung), Abs. 9 minder schwere Fälle. Für die Klausur sind Abs. 1, 2,
+    5 und 6 zentral.
+  norms:
+  - "§ 177 Abs. 5 StGB"
+  - "§ 177 Abs. 6 StGB"
+  - "§ 177 Abs. 7 StGB"
+  - "§ 177 Abs. 8 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-sexual-184i-belaestigung
+  type: norm
+  front: "Was regelt § 184i StGB (sexuelle Belästigung) und wie grenzt er sich von § 177 StGB ab?"
+  back: >-
+    Nach § 184i Abs. 1 StGB wird mit Freiheitsstrafe bis zu zwei Jahren oder
+    Geldstrafe bestraft, wer eine andere Person in sexuell bestimmter Weise
+    körperlich berührt und dadurch belästigt, wenn die Tat nicht in anderen
+    Vorschriften mit schwererer Strafe bedroht ist. Voraussetzungen: (1)
+    körperliche Berührung des Opfers in sexuell bestimmter Weise (das äußere
+    Erscheinungsbild muss auf einen sexuellen Bezug hindeuten), (2) Belästigung,
+    d. h. das Opfer fühlt sich dadurch in seinem Empfinden gestört (Einzelheiten, etwa ob das
+    subjektive Empfinden oder eine objektive Betrachtung maßgeblich ist, sind
+    umstritten), (3) Vorsatz. Im
+    Unterschied zu § 177 StGB muss die Berührung die Erheblichkeitsschwelle des
+    § 184h Nr. 1 StGB nicht überschreiten; § 184i StGB erfasst gerade flüchtige,
+    nicht erhebliche Berührungen, etwa kurzes Betasten über der Kleidung. Die
+    Klausel der Subsidiarität bewirkt, dass § 184i StGB hinter § 177 StGB
+    zurücktritt. Abs. 2 sieht für besonders schwere Fälle (Regelbeispiel:
+    gemeinschaftliche Begehung) einen erhöhten Strafrahmen vor, Abs. 3 verlangt einen Strafantrag, es sei denn, die
+    Strafverfolgungsbehörde hält wegen besonderen öffentlichen Interesses ein
+    Einschreiten von Amts wegen für geboten. Verwandt ist § 184j StGB
+    (Straftaten aus Gruppen).
+  norms:
+  - "§ 184i Abs. 1 StGB"
+  - "§ 184i Abs. 2 StGB"
+  - "§ 184i Abs. 3 StGB"
+  - "§ 184j StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sr-sexual-vorsatz-irrtum
+  type: definition
+  front: "Definiere: Vorsatz und Irrtum bei § 177 StGB (Einverständnis und Tatbestandsirrtum)"
+  back: >-
+    Das Einverständnis der betroffenen Person schließt den Tatbestand aus, weil
+    § 177 StGB eine Handlung gegen den entgegenstehenden Willen voraussetzt; es
+    handelt sich nicht um eine Einwilligung als Rechtfertigungsgrund. Der
+    Vorsatz muss sich auf alle objektiven Merkmale erstrecken, insbesondere
+    darauf, dass die sexuelle Handlung gegen den erkennbaren Willen vorgenommen
+    wird. Nimmt der Täter irrig an, das Opfer sei einverstanden, unterliegt er
+    einem Tatbestandsirrtum (§ 16 Abs. 1 StGB) und handelt ohne Vorsatz; mangels
+    Fahrlässigkeitsstrafbarkeit bleibt er straflos. Die Annahme, das Opfer sei
+    einverstanden, muss sich aber auf konkrete Anhaltspunkte stützen; wer einen
+    erkennbaren Widerspruch bewusst übergeht oder sich mit der Möglichkeit eines
+    Widerspruchs abfindet, handelt mit bedingtem Vorsatz. Bei Abs. 2 Nr. 1 und 2
+    muss der Täter Kenntnis von der Willensunfähigkeit bzw.
+    Willensbeeinträchtigung haben und diese ausnutzen. Bei der Prüfung ist auf
+    die Abgrenzung der Beweisfrage von der Rechtsfrage zu achten.
+  norms:
+  - "§ 16 Abs. 1 StGB"
+  - "§ 177 Abs. 1 StGB"
+  - "§ 177 Abs. 2 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: sr-sexual-schema-177
+  title: "Sexueller Übergriff, § 177 Abs. 1 und 2 StGB"
+  norms:
+  - "§ 177 Abs. 1 StGB"
+  - "§ 177 Abs. 2 StGB"
+  quellen:
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+  steps:
+  - label: "I. Tatbestand"
+    children:
+    - label: "1. Objektiver Tatbestand"
+      children:
+      - label: "a) Sexuelle Handlung, § 184h StGB (Sexualbezug und Erheblichkeit)"
+        hinweis: >-
+          Erheblichkeitsschwelle prüfen; sonst § 184i StGB.
+      - label: "b) Abs. 1: gegen den erkennbaren Willen der anderen Person"
+        hinweis: >-
+          Wille im Zeitpunkt der Handlung, objektiver Empfängerhorizont.
+      - label: "c) Alternativ Abs. 2 Nr. 1 bis 5: Ausnutzen von Willensunfähigkeit, erheblicher Willenseinschränkung, Überraschungsmoment oder Zwangslage; Nötigung durch Drohung"
+        hinweis: >-
+          Bei Nr. 1 und 2 auf Kenntnis und Ausnutzen achten.
+    - label: "2. Subjektiver Tatbestand: Vorsatz, insbesondere bezüglich des entgegenstehenden Willens"
+      hinweis: >-
+        Tatbestandsirrtum nach § 16 Abs. 1 StGB, wenn der Täter Einverständnis
+        annimmt.
+  - label: "II. Rechtswidrigkeit"
+  - label: "III. Schuld"
+  - label: "IV. Qualifikationen und Regelbeispiele, § 177 Abs. 4 bis 9 StGB"
+    hinweis: >-
+      Nur bei Anlass: Gewalt, Drohung, schutzlose Lage (Abs. 5); Regelbeispiele
+      Abs. 6.
+  - label: "V. Konkurrenzen"
+    hinweis: >-
+      § 184i StGB tritt als subsidiär zurück.
+faelle:
+- slug: sr-sexual-fall-feier
+  title: "Die Feier und die Straßenbahn"
+  difficulty: 4
+  minutes: 45
+  quellen:
+  - "Eigener Sachverhalt der Redaktion"
+  stand: 2026-10
+  facts: >-
+    A (28) und B (26) lernen sich auf einer Feier kennen. Im Verlauf des Abends
+    will A die B küssen. B sagt deutlich: 'Nein, das möchte ich nicht' und dreht
+    den Kopf weg. A fasst dennoch nach und küsst B mit einem Zungenkuss; B
+    erstarrt und wehrt sich nicht. Gewalt wendet A nicht an. B verlässt
+    anschließend die Feier. Am nächsten Tag berührt A die B in einer vollen
+    Straßenbahn kurz und unvermittelt über der Kleidung am Gesäß; B hatte nicht
+    damit gerechnet, sieht ihn erschrocken an und A steigt aus. B stellt
+    Strafantrag wegen beider Vorfälle.
+  question: >-
+    Wie hat sich A nach §§ 177, 184i StGB strafbar gemacht? Prüfen Sie beide
+    Vorfälle; Qualifikationen und Regelbeispiele sind nicht zu erörtern.
+  steps:
+  - prompt: >-
+      Liegt beim Zungenkuss eine sexuelle Handlung i.S.d. § 184h Nr. 1 StGB vor?
+    erwartung: >-
+      Ja. Ein Zungenkuss hat nach seinem äußeren Erscheinungsbild eindeutigen
+      Sexualbezug und überschreitet nach Art und Intensität die
+      Erheblichkeitsschwelle. Er ist eine sexuelle Handlung.
+  - prompt: >-
+      Geschah der Zungenkuss gegen den erkennbaren Willen der B?
+    erwartung: >-
+      Ja. B hat ihre Ablehnung zuvor ausdrücklich erklärt ('Nein, das möchte ich
+      nicht') und den Kopf weggedreht. Der Wille war nach dem Empfängerhorizont
+      eines verständigen Dritten erkennbar; dass B später erstarrte, ändert
+      daran nichts, denn Passivität ist keine Zustimmung. A handelte
+      vorsätzlich. A ist nach § 177 Abs. 1 StGB strafbar; Rechtfertigungs- und
+      Entschuldigungsgründe fehlen. Nötigungsmittel nach Abs. 5 liegen nicht
+      vor.
+  - prompt: >-
+      Ist die Berührung in der Straßenbahn nach § 177 StGB strafbar?
+    erwartung: >-
+      Nein. Die kurze, flüchtige Berührung über der Kleidung erreicht nicht
+      die Erheblichkeitsschwelle des § 184h Nr. 1 StGB und ist keine sexuelle
+      Handlung i.S.d. § 177 StGB, auch wenn A ein Überraschungsmoment ausnutzte
+      (Abs. 2 Nr. 3).
+  - prompt: >-
+      Ist die Berührung nach § 184i StGB strafbar?
+    erwartung: >-
+      Ja. A hat B in sexuell bestimmter Weise körperlich berührt und dadurch
+      belästigt; er handelte vorsätzlich. Die Subsidiarität greift nicht, da §
+      177 StGB für diesen Vorfall nicht erfüllt ist. Der Strafantrag der B nach
+      § 184i Abs. 3 StGB liegt vor. Die beiden Vorfälle stehen in Tatmehrheit (§
+      53 StGB).
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: "Erheblichkeit nach § 184h Nr. 1 StGB als Abgrenzungskriterium erkannt"
+      weight: 3.0
+      required: true
+      norms:
+      - "§ 184h Nr. 1 StGB"
+      keywords:
+      - "Erheblichkeit"
+      - "erheblich"
+      - "einiger Erheblichkeit"
+      - "§ 184h"
+      - "Erheblichkeitsschwelle"
+      card_slugs:
+      - sr-sexual-184h-sexuelle-handlung
+    - id: p2
+      label: "Zungenkuss: § 177 Abs. 1 StGB bejaht (Sexualbezug, erkennbarer Wille)"
+      weight: 2.5
+      required: true
+      norms:
+      - "§ 177 Abs. 1 StGB"
+      keywords:
+      - "erkennbarer Wille"
+      - "entgegenstehender Wille"
+      - "§ 177 Abs. 1"
+      - "Zungenkuss"
+      - "Sexualbezug"
+      - "gegen den erkennbaren Willen"
+      card_slugs:
+      - sr-sexual-177-abs1
+      - sr-sexual-erkennbarer-wille
+    - id: p3
+      label: "Passivität/Erstarren ändert am erkennbaren Willen nichts"
+      weight: 1.0
+      required: false
+      norms:
+      - "§ 177 Abs. 1 StGB"
+      keywords:
+      - "Passivität"
+      - "erstarrt"
+      - "Erstarren"
+      - "Schockstarre"
+      - "keine Zustimmung"
+      card_slugs:
+      - sr-sexual-erkennbarer-wille
+    - id: p4
+      label: "Berührung in der Straßenbahn: § 177 StGB abgelehnt, § 184i StGB bejaht"
+      weight: 2.5
+      required: true
+      norms:
+      - "§ 184i Abs. 1 StGB"
+      - "§ 177 Abs. 2 Nr. 3 StGB"
+      keywords:
+      - "Überraschungsmoment"
+      - "§ 184i"
+      - "sexuelle Belästigung"
+      - "in sexuell bestimmter Weise"
+      - "körperlich berührt"
+      card_slugs:
+      - sr-sexual-ueberraschungsmoment
+      - sr-sexual-184i-belaestigung
+    - id: p5
+      label: "Subsidiarität und Strafantrag bei § 184i StGB"
+      weight: 1.0
+      required: false
+      norms:
+      - "§ 184i Abs. 1 StGB"
+      - "§ 184i Abs. 3 StGB"
+      keywords:
+      - "subsidiär"
+      - "Strafantrag"
+      - "besonderes öffentliches Interesse"
+      - "schwerer bedroht"
+      card_slugs:
+      - sr-sexual-184i-belaestigung

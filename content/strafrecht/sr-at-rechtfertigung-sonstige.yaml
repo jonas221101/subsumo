@@ -1,0 +1,388 @@
+topic:
+  slug: sr-at-rechtfertigung-sonstige
+  area: strafrecht
+  title: Sonstige Rechtfertigungsgründe - § 127 StPO, Selbsthilfe, Notstand im BGB, Pflichtenkollision
+  parent: sr-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-rsonst-127-voraussetzungen
+  type: norm
+  front: Unter welchen Voraussetzungen erlaubt § 127 Abs. 1 S. 1 StPO die vorläufige Festnahme durch Jedermann?
+  back: >-
+    Wird jemand auf frischer Tat betroffen oder verfolgt, so ist jedermann befugt,
+    ihn auch ohne richterliche Anordnung vorläufig festzunehmen, wenn er der Flucht
+    verdächtig ist oder seine Identität nicht sofort festgestellt werden kann (§ 127
+    Abs. 1 S. 1 StPO). Erforderlich sind (1) eine Straftat (Vergehen genügt), (2) ein
+    Betroffensein auf frischer Tat oder eine Verfolgung unmittelbar nach der Tat,
+    (3) ein Festnahmegrund (Fluchtverdacht oder nicht sofort feststellbare Identität)
+    und (4) der Festnahmewille. Die Vorschrift ist ein strafrechtlicher Rechtfertigungsgrund
+    für Freiheitsberaubung (§ 239 StGB), Nötigung (§ 240 StGB) und, soweit erforderlich,
+    Körperverletzung (§ 223 StGB). Sie ist Teil der Verfahrensrechte und kein Selbstjustizrecht:
+    Ziel ist allein die Sicherung der Person bis zur Übergabe an die Polizei.
+  norms:
+  - § 127 Abs. 1 S. 1 StPO
+  - § 239 StGB
+  - § 240 StGB
+  - § 223 StGB
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rsonst-127-tatverdacht-streit
+  type: streitstand
+  front: 'Streitstand: Muss die Tat im Rahmen des § 127 Abs. 1 StPO tatsächlich begangen sein oder genügt dringender Tatverdacht?'
+  back: >-
+    Problem: Der Festnehmende hält einen Unschuldigen irrtümlich für den Täter. Zu
+    klären ist, ob § 127 Abs. 1 StPO auch dann rechtfertigt.
+
+    Strafrechtliche Literatur (überwiegend): Rechtfertigung nur, wenn die Tat objektiv
+    begangen wurde; § 127 StPO erlaubt den Eingriff gegenüber dem Täter. Bei Unschuld
+    fehlt die Rechtfertigungslage. Ist der Festnehmende von einer Tat ausgegangen,
+    kommt ein Erlaubnistatbestandsirrtum in Betracht (Behandlung: eingeschränkte
+    Schuldtheorie; Vorsatzschuld entfällt entsprechend § 16 Abs. 1 StGB).
+
+    Prozessrechtlich orientierte Auffassung (Teile der Literatur): Es genügt ein dringender Tatverdacht,
+    weil die Festnahme gerade der Klärung dient und der Verdächtige Eingriffe dulden
+    muss. Rechtfertigung auch bei Unschuld, wenn der Verdacht objektiv bestand.
+
+    Klausurhinweis: In Klausuren ist der Streit meist entscheidungserheblich, wenn die
+    Unschuld des Festgenommenen feststeht. Beide Positionen sind darzustellen;
+    unabhängig davon kommt der Festnehmende bei vertretbarem Irrtum nicht zu
+    einer Vorsatzstrafe (Erlaubnistatbestandsirrtum).
+  norms:
+  - § 127 Abs. 1 S. 1 StPO
+  - § 16 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rsonst-127-grenzen
+  type: definition
+  front: Welche Grenzen gelten für die Gewaltanwendung bei der Festnahme nach § 127 Abs. 1 StPO?
+  back: >-
+    Die Festnahme muss erforderlich und verhältnismäßig sein. Zulässig ist nur das
+    mildeste Mittel, das die Festnahme sichert: Festhalten, Verfolgen, Versperren
+    des Weges, notfalls einfache körperliche Gewalt. Das Recht zur Festnahme umfasst
+    keine Handlungen, die über die vorläufige Sicherstellung der Person hinausgehen;
+    der Festgenommene darf nicht bestraft, gedemütigt oder zu Aussagen gedrängt werden.
+    Der Schusswaffengebrauch ist Privatpersonen nicht erlaubt, der Einsatz tödlicher
+    Gewalt ist durch § 127 StPO nicht gerechtfertigt (Notwehr bleibt unberührt, § 32
+    StGB). Bei Bagatelldelikten kann das Festnahmerecht an der Verhältnismäßigkeit
+    scheitern. Subjektiv verlangt der Rechtfertigungsgrund Kenntnis der Festnahmelage
+    und den Willen, den Täter festzuhalten und den Strafverfolgungsbehörden zuzuführen.
+  norms:
+  - § 127 Abs. 1 S. 1 StPO
+  - § 32 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rsonst-selbsthilfe-229
+  type: norm
+  front: Wann ist Selbsthilfe nach §§ 229, 230 BGB gerechtfertigt?
+  back: >-
+    Wer zum Zwecke der Selbsthilfe eine Sache wegnimmt, zerstört oder beschädigt
+    oder wer einen Verpflichteten, der der Flucht verdächtig ist, festnimmt oder
+    dessen Widerstand gegen eine Handlung, die er zu dulden verpflichtet ist, beseitigt,
+    handelt nicht widerrechtlich, wenn obrigkeitliche Hilfe nicht rechtzeitig zu
+    erlangen ist und ohne sofortiges Eingreifen die Gefahr besteht, dass die Verwirklichung
+    des Anspruchs vereitelt oder wesentlich erschwert wird (§ 229 BGB). Erforderlich
+    ist ein durchsetzbarer, fälliger und einredefreier Anspruch. Die Selbsthilfe
+    darf nicht weiter gehen, als zur Abwendung der Gefahr erforderlich ist (§ 230
+    Abs. 1 BGB). Nach einer Wegnahme ist, sofern nicht Zwangsvollstreckung erwirkt
+    wird, der dingliche Arrest zu beantragen (§ 230 Abs. 2 BGB); bei einer Festnahme
+    ist der persönliche Sicherheitsarrest zu beantragen und der Verpflichtete unverzüglich
+    dem Amtsgericht vorzuführen (§ 230 Abs. 3 BGB). Im Strafrecht rechtfertigt § 229 BGB
+    etwa § 303 StGB (Sachbeschädigung), § 240 StGB und § 239 StGB.
+  norms:
+  - § 229 BGB
+  - § 230 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rsonst-besitzwehr-859
+  type: norm
+  front: Was erlauben Besitzwehr und Besitzkehr nach § 859 BGB?
+  back: >-
+    Der Besitzer darf sich verbotener Eigenmacht (§ 858 Abs. 1 BGB) mit Gewalt erwehren
+    (Besitzwehr, § 859 Abs. 1 BGB). Wird ihm eine bewegliche Sache durch verbotene
+    Eigenmacht weggenommen, darf er sie dem auf frischer Tat betroffenen oder verfolgten
+    Täter mit Gewalt wieder abnehmen (Besitzkehr, § 859 Abs. 2 BGB). Bei Grundstücken
+    darf der Besitzer sofort nach der Entziehung den Besitz durch Entsetzung des
+    Täters wiedererlangen (§ 859 Abs. 3 BGB). Die Befugnis gilt auch für den Besitzdiener
+    (§ 860 BGB). Gewalt ist im Rahmen der Erforderlichkeit zulässig; die Vorschrift
+    rechtfertigt im Strafrecht Nötigung (§ 240 StGB), Körperverletzung (§ 223 StGB)
+    und Sachbeschädigung (§ 303 StGB). § 859 BGB ist nicht abschließend, daneben bleibt
+    Notwehr nach § 32 StGB möglich. Die Besitzkehr ist an die Frische der Tat gebunden:
+    Später ist der Besitz nur über die Besitzschutzansprüche (§§ 861, 862 BGB) oder,
+    bei Vorliegen der Voraussetzungen, nach § 229 BGB durchzusetzen.
+  norms:
+  - § 859 BGB
+  - § 858 Abs. 1 BGB
+  - § 860 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rsonst-904-228
+  type: norm
+  front: 'Abgrenzung: defensiver Notstand (§ 228 BGB) und aggressiver Notstand (§ 904 BGB)'
+  back: >-
+    § 228 BGB (defensiver Notstand): Wer eine fremde Sache beschädigt oder zerstört,
+    um eine durch sie drohende Gefahr von sich oder einem anderen abzuwenden, handelt
+    nicht widerrechtlich, wenn die Beschädigung oder Zerstörung zur Abwendung der
+    Gefahr erforderlich ist und der Schaden nicht außer Verhältnis zur Gefahr steht.
+    Hat der Handelnde die Gefahr verschuldet, ist er zum Schadensersatz verpflichtet.
+    § 904 BGB (aggressiver Notstand): Der Eigentümer darf die Einwirkung eines anderen
+    auf seine Sache nicht verbieten, wenn sie zur Abwendung einer gegenwärtigen
+    Gefahr notwendig ist und der drohende Schaden gegenüber dem aus der Einwirkung
+    dem Eigentümer entstehenden Schaden unverhältnismäßig groß ist. Der Eigentümer
+    kann Ersatz des Schadens verlangen. Maßgeblich ist, ob die Gefahr von der Sache
+    ausgeht (§ 228 BGB) oder von außen, die Sache also unbeteiligter Dritter ist (§ 904 BGB).
+    Beide Normen können § 303 StGB rechtfertigen; § 34 StGB tritt als
+    allgemeiner Rechtfertigungsgrund insoweit hinter diese spezielleren Vorschriften
+    zurück.
+  norms:
+  - § 228 BGB
+  - § 904 BGB
+  - § 34 StGB
+  - § 303 StGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rsonst-einheit-rechtsordnung
+  type: definition
+  front: Warum rechtfertigen zivilrechtliche Befugnisse (BGB, StPO) auch im Strafrecht?
+  back: >-
+    Ein Rechtfertigungsgrund kann sich aus der gesamten Rechtsordnung ergeben (Einheit
+    der Rechtsordnung). Was das Zivilrecht oder das Verfahrensrecht erlaubt, kann
+    nicht zugleich strafrechtliches Unrecht sein. Deshalb wirken §§ 228, 229, 859, 904
+    BGB und § 127 StPO als Rechtfertigungsgründe im Strafrecht. Sie sind gegenüber
+    § 32 und § 34 StGB teilweise spezieller; sie ersetzen sie nicht, sondern ergänzen
+    sie. In der Klausur ist die Reihenfolge: zunächst die speziellen Gründe prüfen,
+    dann die allgemeinen (§§ 32, 34 StGB). Erforderlich sind bei allen Rechtfertigungsgründen
+    das objektive Vorliegen der Rechtfertigungslage und das subjektive Rechtfertigungselement
+    (Kenntnis der Lage und Handeln zum Rechtfertigungszweck). Fehlt es am subjektiven
+    Element, ist nach h.M. nur wegen Versuchs zu bestrafen.
+  norms:
+  - § 32 StGB
+  - § 34 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rsonst-pflichtenkollision
+  type: definition
+  front: 'Definiere: rechtfertigende Pflichtenkollision'
+  back: >-
+    Eine Pflichtenkollision liegt vor, wenn der Handelnde zwei (oder mehr) rechtlich
+    gebotene Handlungen nicht gleichzeitig erfüllen kann und deshalb eine Pflicht
+    verletzen muss. Beide Pflichten müssen Handlungspflichten sein; kollidiert eine
+    Handlungspflicht mit einem Verbot, liegt keine Pflichtenkollision vor, sondern
+    ein Fall des § 34 StGB. Nach
+    h.M. ist die Unterlassung der geringeren Pflicht gerechtfertigt, wenn der Handelnde
+    die höherrangige (oder bei Gleichrang eine der gleichwertigen) Pflicht erfüllt,
+    wobei der Handelnde bei gleichrangigen Pflichten die Wahl hat. Beispiel: Ein Arzt
+    kann zwei lebensgefährlich Verletzte nicht gleichzeitig retten. Rettet er einen,
+    ist die Nichtrettung des anderen nach h.M. gerechtfertigt (teilweise: entschuldigt).
+    Rettet er keinen, bleibt er wegen unterlassener Hilfeleistung bzw. Totschlags
+    durch Unterlassen strafbar.
+  norms:
+  - § 13 StGB
+  - § 34 StGB
+  - § 323c StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rsonst-pflichtenkollision-streit
+  type: streitstand
+  front: 'Streitstand: Rechtfertigung oder Entschuldigung bei gleichrangiger Pflichtenkollision?'
+  back: >-
+    Problem: Bei gleichwertigen Pflichten kann der Handelnde nur eine erfüllen. Fraglich
+    ist, auf welcher Stufe das Unterlassen der anderen Pflicht ausscheidet.
+
+    Rechtfertigungslösung (h.M.): Die Erfüllung der einen Pflicht rechtfertigt die
+    Nichterfüllung der anderen, weil das Recht nichts Unmögliches verlangen kann.
+    Wer überhaupt nichts tut, ist hinsichtlich der erfüllbaren Pflicht nicht gerechtfertigt.
+
+    Entschuldigungslösung (Mindermeinung): Das Unterlassen bleibt rechtswidrig, ist
+    aber wegen der Zwangslage entschuldigt (Zumutbarkeit); bei gleichrangigen Pflichten
+    bleibt die Rechtswidrigkeit bestehen.
+
+    Ergebnis: Beide Lösungen führen im Regelfall zur Straflosigkeit des Handelnden.
+    Unterschiede ergeben sich für Teilnehmer und Notwehr gegen den Handelnden. Ist
+    eine Pflicht höherrangig, ist sie zu erfüllen; die Verletzung der höheren
+    Pflicht ist nicht gerechtfertigt.
+  norms:
+  - § 13 StGB
+  - § 34 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-rsonst-handeln-auf-befehl
+  type: definition
+  front: 'Handeln auf Befehl: Rechtfertigung oder Entschuldigung?'
+  back: >-
+    Ein Befehl rechtfertigt eine Straftat nicht als solcher. Für Amtsträger gilt:
+    Handelt der Amtsträger in Ausführung einer rechtmäßigen, verbindlichen Weisung
+    innerhalb seiner Zuständigkeit, ist er gerechtfertigt (Rechtfertigung durch
+    rechtmäßige Amtsausübung). Ein rechtswidriger Befehl ist für Beamte nur dann
+    unverbindlich, wenn die Ausführung die Würde des Menschen verletzt oder eine
+    Straftat oder Ordnungswidrigkeit darstellt und dies erkennbar ist (vgl. § 36 BeamtStG,
+    § 63 BBG). Bei Soldaten darf ein Befehl nicht befolgt werden, wenn dadurch eine
+    Straftat begangen würde (§ 11 Abs. 2 S. 1 SG (Soldatengesetz)). Befolgt ein Untergebener einen
+    Befehl, der eine Straftat darstellt, trifft ihn nur dann Schuld, wenn er erkennt,
+    dass es sich um eine Straftat handelt oder wenn dies nach den ihm bekannten
+    Umständen offensichtlich ist (§ 5 Abs. 1 WStG). Das Befolgen eines Befehls zu einer Straftat bleibt
+    damit regelmäßig rechtswidrig, kann aber entschuldigt sein.
+  norms:
+  - § 5 Abs. 1 WStG
+  - § 11 Abs. 2 SG
+  - § 36 BeamtStG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: sr-schema-rsonst-festnahme-selbsthilfe
+  title: Prüfung der Festnahme (§ 127 StPO) und der zivilrechtlichen Selbsthilfe (§§ 229, 859 BGB)
+  norms:
+  - § 127 Abs. 1 S. 1 StPO
+  - § 229 BGB
+  - § 859 BGB
+  quellen:
+  - StPO, amtliche Fassung
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Rechtfertigung nach § 127 Abs. 1 S. 1 StPO
+    children:
+    - label: 1. Rechtfertigungslage - Straftat und Betreffen auf frischer Tat oder Verfolgung
+      hinweis: Streit prüfen, wenn der Festgenommene unschuldig ist (Tat tatsächlich
+        begangen oder dringender Tatverdacht).
+    - label: 2. Festnahmegrund - Fluchtverdacht oder Identität nicht sofort feststellbar
+    - label: 3. Erforderlichkeit und Verhältnismäßigkeit der Gewalt
+    - label: 4. Subjektives Rechtfertigungselement (Festnahmewille)
+  - label: II. Rechtfertigung nach §§ 229, 230 BGB
+    hinweis: Nur prüfen, wenn der Sachverhalt eine Anspruchssicherung nahelegt.
+    children:
+    - label: 1. Durchsetzbarer Anspruch
+    - label: 2. Obrigkeitliche Hilfe nicht rechtzeitig erreichbar
+    - label: 3. Gefahr der Vereitelung oder wesentlichen Erschwerung
+    - label: 4. Erforderlichkeit, § 230 Abs. 1 BGB
+  - label: III. Rechtfertigung nach § 859 BGB (Besitzwehr und Besitzkehr)
+    children:
+    - label: 1. Verbotene Eigenmacht, § 858 Abs. 1 BGB
+    - label: 2. Besitzwehr (Abs. 1) oder Besitzkehr (Abs. 2, frische Tat)
+  - label: IV. Allgemeine Rechtfertigungsgründe (§§ 32, 34 StGB)
+    hinweis: Danach prüfen, wenn die speziellen Gründe nicht eingreifen.
+faelle:
+- slug: sr-fall-rsonst-ladendetektiv
+  title: Der Ladendetektiv
+  difficulty: 3
+  minutes: 35
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StPO, amtliche Fassung
+  - StGB, amtliche Fassung
+  facts: Ladendetektiv D beobachtet, wie der Kunde K im Supermarkt einen Rasierapparat
+    in seine Jacke steckt und ohne zu bezahlen an der Kasse vorbeigeht. D folgt ihm
+    bis auf den Parkplatz, spricht ihn an und verlangt die Herausgabe der Ware sowie
+    die Nennung seines Namens. K verweigert dies und will zu seinem Auto laufen. D
+    packt K am Arm und hält ihn fest, bis die Polizei eintrifft. K erleidet dabei
+    eine leichte Prellung am Handgelenk.
+  question: Hat sich D wegen Körperverletzung (§ 223 Abs. 1 StGB) und Freiheitsberaubung
+    (§ 239 Abs. 1 StGB) strafbar gemacht?
+  steps:
+  - prompt: Sind die Tatbestände erfüllt?
+    erwartung: Ja. Das Festhalten am Arm mit Prellung ist eine körperliche Misshandlung
+      und Gesundheitsschädigung (§ 223 Abs. 1 StGB). Das Festhalten hindert K an der
+      Fortbewegung und ist eine Freiheitsberaubung (§ 239 Abs. 1 StGB).
+  - prompt: Kommt eine Rechtfertigung nach § 127 Abs. 1 S. 1 StPO in Betracht?
+    erwartung: Ja. K hat einen Diebstahl begangen (§ 242 Abs. 1 StGB) und wurde auf
+      frischer Tat verfolgt. K wollte fliehen (Fluchtverdacht) und weigerte sich, seine
+      Identität zu nennen, sodass die Identität nicht sofort festgestellt werden konnte;
+      damit liegt ein Festnahmegrund vor.
+  - prompt: War die Gewaltanwendung erforderlich und verhältnismäßig?
+    erwartung: Ja, die Gewalt war erforderlich und verhältnismäßig. Das Festhalten
+      am Arm ist das mildeste Mittel zur Sicherung der Festnahme; die leichte Prellung
+      ist eine unvermeidbare Folge und steht nicht außer Verhältnis. Es wurde keine
+      überzogene Gewalt angewandt.
+  - prompt: Hatte D das subjektive Rechtfertigungselement?
+    erwartung: Ja. D handelte mit Festnahmewille (subjektives Rechtfertigungselement) und
+      wollte K festhalten, um ihn der Polizei zu übergeben (Übergabe an die Polizei).
+  - prompt: Wie ist das Ergebnis?
+    erwartung: D ist gerechtfertigt (§ 127 Abs. 1 S. 1 StPO) und daher nicht strafbar.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Tatbestandsmäßigkeit der §§ 223, 239 StGB festgestellt
+      weight: 1.0
+      required: false
+      norms:
+      - § 223 Abs. 1 StGB
+      - § 239 Abs. 1 StGB
+      keywords:
+      - § 223 Abs. 1
+      - § 239 Abs. 1
+      - Freiheitsberaubung
+      - körperliche Misshandlung
+    - id: p2
+      label: Rechtfertigungsgrund § 127 Abs. 1 S. 1 StPO erkannt
+      weight: 3.0
+      required: true
+      norms:
+      - § 127 Abs. 1 S. 1 StPO
+      keywords:
+      - § 127 Abs. 1
+      - vorläufige Festnahme
+      - Jedermann-Festnahmerecht
+      - Festnahmerecht
+      card_slugs:
+      - sr-rsonst-127-voraussetzungen
+    - id: p3
+      label: Voraussetzungen - frische Tat und Festnahmegrund (Fluchtverdacht, Identität)
+      weight: 3.0
+      required: true
+      keywords:
+      - auf frischer Tat
+      - frischer Tat betroffen
+      - frischer Tat verfolgt
+      - Fluchtverdacht
+      - der Flucht verdächtig
+      - Identität nicht sofort festgestellt
+      - Identität nicht feststellbar
+      - Festnahmegrund
+      card_slugs:
+      - sr-rsonst-127-voraussetzungen
+    - id: p4
+      label: Erforderlichkeit und Verhältnismäßigkeit der Gewalt geprüft
+      weight: 1.5
+      required: false
+      keywords:
+      - erforderlich
+      - Verhältnismäßigkeit
+      - mildestes Mittel
+      - verhältnismäßig
+      card_slugs:
+      - sr-rsonst-127-grenzen
+    - id: p5
+      label: Subjektives Rechtfertigungselement (Festnahmewille) bejaht
+      weight: 1.0
+      required: false
+      keywords:
+      - Festnahmewille
+      - subjektives Rechtfertigungselement
+      - subjektive Rechtfertigungselement
+      - Übergabe an die Polizei
+    - id: p6
+      label: 'Ergebnis: gerechtfertigt, keine Strafbarkeit'
+      weight: 1.0
+      required: false
+      keywords:
+      - gerechtfertigt
+      - nicht strafbar
+      - straflos

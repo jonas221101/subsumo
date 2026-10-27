@@ -1,0 +1,345 @@
+topic:
+  slug: zr-sat-erloeschen
+  area: zivilrecht
+  title: Erlöschen von Schuldverhältnissen - Erfüllung, Aufrechnung, Hinterlegung, Erlass
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-erl-362-erfuellung
+  type: definition
+  front: >-
+    Definiere: Erfüllung nach § 362 Abs. 1 BGB und die Theorien zu ihrer Rechtsnatur.
+  back: >-
+    Das Schuldverhältnis erlischt, wenn die geschuldete Leistung an den Gläubiger
+    bewirkt wird (§ 362 Abs. 1 BGB). Erfüllt ist die Forderung, wenn der Leistungserfolg
+    eintritt. Nach der heute h. M. genügt die Theorie der realen Leistungsbewirkung:
+    Es reicht aus, dass der Leistungserfolg tatsächlich eintritt; eine zusätzliche
+    Erfüllungsvereinbarung ist nicht nötig. Nach der Vertragstheorie bedarf es dagegen
+    eines Erfüllungsvertrags, nach der Theorie der finalen Leistungsbewirkung einer
+    zweckgerichteten Zuwendung mit Tilgungsbestimmung. Die Unterschiede zeigen sich
+    vor allem bei Geschäftsunfähigen und Minderjährigen als Gläubigern sowie bei irrtümlichen
+    Leistungen. Zur
+    Tilgungsbestimmung bei mehreren Forderungen gilt § 366 BGB; vorrangig werden Kosten
+    und Zinsen vor der Hauptleistung getilgt (§ 367 BGB).
+  norms:
+  - § 362 Abs. 1 BGB
+  - § 366 BGB
+  - § 367 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-erl-362-abs2-dritte
+  type: norm
+  front: >-
+    Unter welchen Voraussetzungen wirkt die Leistung an einen Dritten als Erfüllung,
+    § 362 Abs. 2 BGB?
+  back: >-
+    Wird an einen Dritten geleistet, so gilt § 185 BGB (§ 362 Abs. 2 BGB). Die Leistung
+    an den Dritten wirkt als Erfüllung, wenn der Gläubiger vorher einwilligt (Ermächtigung
+    zur Empfangnahme), nachträglich genehmigt oder der Dritte kraft Gesetzes empfangsberechtigt
+    ist (etwa Vertreter, Insolvenzverwalter, Pfändungsgläubiger nach Überweisung).
+    Bei Vorlage einer Quittung gilt der Überbringer nach § 370 BGB als ermächtigt,
+    es sei denn, die Umstände sprechen dagegen. Dagegen betrifft § 267 BGB die Leistung eines Dritten an den Gläubiger:
+    Sie wirkt als Erfüllung, wenn der Schuldner nicht in Person zu leisten hat; widerspricht
+    der Schuldner, kann der Gläubiger die Leistung ablehnen (§ 267 Abs. 2 BGB).
+  norms:
+  - § 362 Abs. 2 BGB
+  - § 185 BGB
+  - § 370 BGB
+  - § 267 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-erl-364-surrogate
+  type: norm
+  front: >-
+    Worin unterscheiden sich Annahme an Erfüllungs statt und erfüllungshalber, §
+    364 BGB?
+  back: >-
+    Nimmt der Gläubiger eine andere als die geschuldete Leistung an Erfüllungs statt
+    an, erlischt das Schuldverhältnis (§ 364 Abs. 1 BGB), sodass die ursprüngliche
+    Forderung mit der Annahme untergeht. Diese Leistung setzt eine Vereinbarung voraus,
+    die auch konkludent getroffen werden kann. Übernimmt der Schuldner dagegen zum
+    Zweck der Befriedigung eine neue Verbindlichkeit, ist im Zweifel nur erfüllungshalber
+    geleistet (§ 364 Abs. 2 BGB): Die alte Forderung bleibt bestehen, der Gläubiger
+    muss sich aber zunächst aus der neuen Leistung zu befriedigen suchen; erst mit
+    der Befriedigung erlischt die Forderung. Typische Beispiele für Leistungen erfüllungshalber
+    sind die Hingabe eines Schecks oder Wechsels und die Abtretung einer Forderung
+    zur Einziehung. Bei Gutschrift auf einem Bankkonto tritt Erfüllung ein, wenn der
+    Betrag dem Konto gutgeschrieben wird.
+  norms:
+  - § 364 Abs. 1 BGB
+  - § 364 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-erl-387-aufrechnungslage
+  type: definition
+  front: >-
+    Nenne die Voraussetzungen der Aufrechnungslage nach § 387 BGB.
+  back: >-
+    Eine Aufrechnung setzt eine Aufrechnungslage voraus. Erforderlich sind (1) Gegenseitigkeit
+    der Forderungen: Der Aufrechnende ist Gläubiger der Gegenforderung (seiner eigenen
+    Forderung) und Schuldner der Hauptforderung (der Forderung des anderen); (2) Gleichartigkeit
+    der Leistungen, in der Praxis vor allem Geldforderungen; (3) die Gegenforderung
+    muss wirksam, durchsetzbar (einredefrei) und fällig sein; (4) die Hauptforderung
+    muss erfüllbar sein, ihre Fälligkeit ist nicht erforderlich. Die Aufrechnung selbst
+    erfolgt durch Erklärung gegenüber dem anderen Teil (§ 388 S. 1 BGB), die bedingungs-
+    und befristungsfeindlich ist (§ 388 S. 2 BGB). Dazu dürfen keine Aufrechnungsverbote
+    entgegenstehen (§§ 390 bis 395 BGB).
+  norms:
+  - § 387 BGB
+  - § 388 BGB
+  - § 390 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-erl-389-wirkung-ausschluss
+  type: norm
+  front: >-
+    Welche Wirkung hat die Aufrechnung nach § 389 BGB und welche Ausschlussgründe
+    sind klausurrelevant?
+  back: >-
+    Die Aufrechnung bewirkt, dass die Forderungen, soweit sie sich decken, als in
+    dem Zeitpunkt erloschen gelten, in welchem sie zur Aufrechnung geeignet einander
+    gegenübergetreten sind (§ 389 BGB): Die Wirkung tritt also rückwirkend ein. Zu
+    den Ausschlussgründen gehören das Aufrechnungsverbot bei Forderungen aus vorsätzlich
+    begangener unerlaubter Handlung (§ 393 BGB) und bei unpfändbaren Forderungen
+    (§ 394 BGB). Eine Aufrechnung mit einer verjährten Forderung bleibt nach § 215
+    BGB möglich, wenn die Aufrechnungslage bereits vor Eintritt der Verjährung bestand.
+    Bei Abtretung ist § 406 BGB zu beachten, wonach der Schuldner unter den dort genannten Voraussetzungen
+    auch gegenüber dem neuen Gläubiger aufrechnen kann. Vertragliche und AGB-rechtliche Aufrechnungsverbote
+    sind in den Grenzen des § 309 Nr. 3 BGB zulässig.
+  norms:
+  - § 389 BGB
+  - § 393 BGB
+  - § 394 BGB
+  - § 215 BGB
+  - § 406 BGB
+  - § 309 Nr. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-erl-372-hinterlegung
+  type: norm
+  front: >-
+    Wann kann der Schuldner nach §§ 372 ff. BGB hinterlegen und welche Wirkung hat
+    das?
+  back: >-
+    Geld, Wertpapiere und sonstige Urkunden sowie Kostbarkeiten kann der Schuldner
+    bei einer dafür bestimmten öffentlichen Stelle für den Gläubiger hinterlegen,
+    wenn der Gläubiger sich im Verzug der Annahme befindet (§ 372 S. 1 BGB). Dasselbe
+    gilt, wenn der Schuldner aus einem anderen in der Person des Gläubigers liegenden
+    Grund oder infolge einer nicht auf Fahrlässigkeit beruhenden Ungewissheit über
+    die Person des Gläubigers seine Verbindlichkeit nicht oder nicht mit Sicherheit
+    erfüllen kann (§ 372 S. 2 BGB). Die Hinterlegung wirkt, wenn der Schuldner auf
+    das Recht zur Rücknahme verzichtet, wie Erfüllung (§ 378 BGB). Bei Annahmeverzug
+    und nicht hinterlegungsfähigen Sachen ermöglicht § 383 BGB den Selbsthilfeverkauf.
+  norms:
+  - § 372 BGB
+  - § 378 BGB
+  - § 383 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-erl-397-erlass
+  type: norm
+  front: >-
+    Welche Voraussetzungen und Wirkungen hat der Erlass nach § 397 BGB?
+  back: >-
+    Das Schuldverhältnis erlischt, wenn der Gläubiger dem Schuldner durch Vertrag
+    die Schuld erlässt (§ 397 Abs. 1 BGB). Der Erlass ist ein Verfügungsgeschäft über
+    die Forderung und setzt einen Erlassvertrag zwischen Gläubiger und Schuldner voraus,
+    der formfrei, auch konkludent, geschlossen werden kann. Ein einseitiger Verzicht
+    genügt nicht. Das Gleiche gilt, wenn der Gläubiger durch Vertrag mit dem Schuldner
+    anerkennt, dass das Schuldverhältnis nicht bestehe (negatives Schuldanerkenntnis,
+    § 397 Abs. 2 BGB). An die Annahme eines Erlasses stellt die Rechtsprechung strenge
+    Anforderungen, weil ein Verzicht auf Rechte nicht vermutet wird; im Zweifel ist
+    der Wille zum Erlass zu verneinen. Gegenüber Gesamtschuldnern wirkt der Erlass
+    nach § 423 BGB nur bei entsprechendem Willen der Beteiligten für alle.
+  norms:
+  - § 397 BGB
+  - § 423 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-erl-363-beweislast-annahme
+  type: norm
+  front: >-
+    Wer trägt die Beweislast für die Erfüllung und was regelt § 363 BGB?
+  back: >-
+    Nach den allgemeinen Regeln trägt der Schuldner die Darlegungs- und Beweislast
+    dafür, dass er die geschuldete Leistung erbracht hat und die Forderung dadurch
+    nach § 362 BGB erloschen ist, denn Erfüllung ist eine rechtsvernichtende Einwendung.
+    § 363 BGB regelt eine Besonderheit: Hat der Gläubiger eine ihm als Erfüllung angebotene
+    Leistung angenommen, trifft ihn die Beweislast, wenn er sie deshalb nicht als
+    Erfüllung gelten lassen will, weil sie eine andere als die geschuldete Leistung
+    oder weil sie unvollständig gewesen sei. Der Gläubiger muss also die Mängel beweisen,
+    wenn er die Leistung vorbehaltlos als Erfüllung entgegengenommen hat. Das gilt
+    nicht bei bloßer Annahme unter Vorbehalt. Eine Quittung nach § 368 BGB gibt dem
+    Schuldner ein Recht auf Empfangsbescheinigung.
+  norms:
+  - § 362 BGB
+  - § 363 BGB
+  - § 368 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-erl-aufrechnung
+  title: Erlöschen durch Aufrechnung, §§ 387 ff. BGB
+  norms:
+  - § 387 BGB
+  - § 388 BGB
+  - § 389 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Aufrechnungserklärung, § 388 BGB
+    hinweis: Gestaltungserklärung gegenüber dem anderen Teil; bedingungs- und befristungsfeindlich.
+  - label: II. Aufrechnungslage, § 387 BGB
+    children:
+    - label: 1. Gegenseitigkeit
+    - label: 2. Gleichartigkeit
+    - label: 3. Gegenforderung wirksam, durchsetzbar und fällig
+      hinweis: Einredefreiheit prüfen; § 215 BGB für verjährte Forderungen beachten.
+    - label: 4. Hauptforderung erfüllbar
+  - label: III. Kein Aufrechnungsverbot
+    children:
+    - label: 1. Gesetzliche Verbote (§§ 390 bis 395 BGB, insbesondere § 393, § 394
+        BGB)
+    - label: 2. Vertragliche Verbote und AGB-Schranken (§ 309 Nr. 3 BGB)
+  - label: IV. Rechtsfolge, § 389 BGB
+    hinweis: Beide Forderungen erlöschen rückwirkend, soweit sie sich decken.
+faelle:
+- slug: zr-fall-erl-werklohn
+  title: Aufrechnung und Scheckzahlung beim Werklohn
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: >-
+    Malermeister W hat für Bauherrn B das Haus gestrichen und das Werk abgeliefert,
+    B hat es abgenommen. Die Abnahme erfolgte am 20. Februar, der Werklohn von 5.000 Euro ist seitdem fällig. B hatte W ein Darlehen
+    über 3.000 Euro gewährt, das W laut Vertrag am 1. März zurückzahlen musste und
+    bisher nicht zurückgezahlt hat. Am 15. März erklärt B schriftlich gegenüber W,
+    er rechne mit seinem Darlehensrückzahlungsanspruch gegen den Werklohn auf. Den
+    Rest von 2.000 Euro begleicht B mit einem Verrechnungsscheck, den W am 20. März
+    annimmt und am 25. März seiner Bank zur Einlösung vorlegt. Der Scheck wird am
+    27. März gutgeschrieben.
+  question: >-
+    In welchem Umfang ist die Werklohnforderung des W durch Aufrechnung und durch
+    die Scheckhingabe erloschen, und zu welchen Zeitpunkten?
+  steps:
+  - prompt: Liegt eine Aufrechnungslage vor?
+    erwartung: >-
+      Ja, eine Aufrechnungslage nach § 387 BGB liegt vor. B ist Gläubiger der Darlehensforderung (Gegenforderung) und Schuldner des
+      Werklohns (Hauptforderung); beide sind gegenseitig und gleichartig (Geld);
+      die Gegenforderung ist wirksam, durchsetzbar und seit dem 1. März fällig, die
+      Hauptforderung ist erfüllbar.
+  - prompt: Wurde die Aufrechnung wirksam erklärt und liegt ein Aufrechnungsverbot
+      vor?
+    erwartung: >-
+      Die schriftliche Erklärung des B gegenüber W genügt § 388 BGB. Verbote nach
+      §§ 390 ff. BGB bestehen nicht; die Gegenforderung beruht nicht auf einer unerlaubten
+      Handlung.
+  - prompt: Welche Rechtsfolge hat die Aufrechnung und ab wann?
+    erwartung: >-
+      Beide Forderungen erlöschen nach § 389 BGB in Höhe von 3.000 Euro rückwirkend
+      auf den Zeitpunkt, zu dem sie sich aufrechenbar gegenüberstanden, hier den 1.
+      März, weil an diesem Tag die Gegenforderung fällig wurde und die Hauptforderung
+      bereits bestand.
+      Es verbleibt eine Werklohnforderung von 2.000 Euro.
+  - prompt: Hat die Scheckhingabe die Restforderung zum Erlöschen gebracht?
+    erwartung: >-
+      Die Hingabe des Schecks am 20. März ist im Zweifel nur eine Leistung erfüllungshalber
+      (§ 364 Abs. 2 BGB). Die Restforderung bleibt zunächst bestehen und erlischt
+      erst, wenn W durch Gutschrift endgültig befriedigt ist, hier am 27. März. Die
+      Annahme des Schecks an Erfüllungs statt wurde nicht vereinbart.
+  - prompt: Wer trägt die Beweislast für die Erfüllung?
+    erwartung: >-
+      B als Schuldner muss die Aufrechnung und die Erfüllung (Gutschrift) beweisen
+      (rechtsvernichtende Einwendungen).
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Aufrechnungslage nach § 387 BGB mit allen Merkmalen geprüft
+      weight: 3.0
+      required: true
+      norms:
+      - § 387 BGB
+      keywords:
+      - Aufrechnungslage
+      - Gegenseitigkeit
+      - gegenseitig
+      - Gleichartigkeit
+      - gleichartig
+      - erfüllbar
+      - Gegenforderung fällig und durchsetzbar
+      - Hauptforderung erfüllbar
+      card_slugs:
+      - zr-erl-387-aufrechnungslage
+    - id: p2
+      label: Wirksame Aufrechnungserklärung nach § 388 BGB und kein Aufrechnungsverbot
+      weight: 1.0
+      required: false
+      norms:
+      - § 388 BGB
+      keywords:
+      - § 388
+      - Aufrechnungserklärung
+      - Aufrechnungsverbot
+      - §§ 390 ff.
+      card_slugs:
+      - zr-erl-389-wirkung-ausschluss
+    - id: p3
+      label: Rechtsfolge der Aufrechnung nach § 389 BGB, teilweises Erlöschen in Höhe
+        von 3.000 Euro, Rückwirkung
+      weight: 2.0
+      required: true
+      norms:
+      - § 389 BGB
+      keywords:
+      - § 389
+      - Rückwirkung
+      - erlöschen soweit sie sich decken
+      - 2.000 Euro verbleiben
+      - rückwirkend
+      card_slugs:
+      - zr-erl-389-wirkung-ausschluss
+    - id: p4
+      label: Scheck als Leistung erfüllungshalber nach § 364 Abs. 2 BGB und Erlöschen
+        erst mit Gutschrift
+      weight: 3.0
+      required: true
+      norms:
+      - § 364 Abs. 2 BGB
+      keywords:
+      - erfüllungshalber
+      - § 364 Abs. 2
+      - an Erfüllungs statt
+      - Gutschrift
+      - Einlösung des Schecks
+      card_slugs:
+      - zr-erl-364-surrogate
+    - id: p5
+      label: Erfüllung nach § 362 Abs. 1 BGB als Ergebnis und Beweislast beim Schuldner
+      weight: 1.0
+      required: false
+      norms:
+      - § 362 Abs. 1 BGB
+      keywords:
+      - § 362 Abs. 1
+      - Beweislast
+      - rechtsvernichtende Einwendung
+      - Leistungserfolg
+      card_slugs:
+      - zr-erl-362-erfuellung
+      - zr-erl-363-beweislast-annahme

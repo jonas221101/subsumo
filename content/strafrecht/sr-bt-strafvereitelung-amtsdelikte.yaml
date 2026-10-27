@@ -1,0 +1,366 @@
+topic:
+  slug: sr-bt-strafvereitelung-amtsdelikte
+  area: strafrecht
+  title: Strafvereitelung (§§ 258, 258a StGB), Bestechungsdelikte (§§ 331 bis 335 StGB) und Körperverletzung im Amt (§ 340 StGB)
+  parent: sr-at
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-sva-258-tatbestand
+  type: definition
+  front: Welche Voraussetzungen hat die Strafvereitelung, § 258 Abs. 1 StGB?
+  back: >-
+    Strafbar ist, wer absichtlich oder wissentlich ganz oder zum Teil vereitelt,
+    dass ein anderer dem Strafgesetz gemäß wegen einer rechtswidrigen Tat bestraft
+    oder einer Maßnahme unterworfen wird. Erforderlich ist eine rechtswidrige
+    Vortat eines anderen, die zumindest objektiv gegeben sein muss (Schuld
+    ist nicht erforderlich). Vereitelt ist die Bestrafung, wenn der staatliche
+    Strafanspruch ganz oder teilweise nicht durchgesetzt wird. Teilweise vereitelt wird
+    sie, wenn die Bestrafung für nicht unerhebliche Zeit verzögert wird. Der Täter
+    muss hinsichtlich des Vereitelungserfolgs absichtlich oder wissentlich handeln
+    (dolus directus 1. oder 2. Grades); hinsichtlich der Vortat genügt
+    Eventualvorsatz. Der Versuch ist strafbar
+    (Abs. 4). Die Strafe darf nicht schwerer sein als die für die Vortat
+    angedrohte (Abs. 3). Abs. 2 erfasst die Vollstreckungsvereitelung.
+  norms:
+  - § 258 Abs. 1 StGB
+  - § 258 Abs. 2 StGB
+  - § 258 Abs. 3 StGB
+  - § 258 Abs. 4 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sva-258-privilegien
+  type: norm
+  front: Welche persönlichen Privilegierungen enthält § 258 StGB (Selbstbegünstigung und Angehörige)?
+  back: >-
+    § 258 Abs. 5 StGB: Wegen Strafvereitelung wird nicht bestraft, wer durch die
+    Tat zugleich ganz oder zum Teil vereiteln will, dass er selbst bestraft oder
+    einer Maßnahme unterworfen wird oder dass eine gegen ihn verhängte Strafe
+    vollstreckt wird (Selbstbegünstigungsprivileg). Der Täter muss mit der
+    Handlung also auch eigene Zwecke verfolgen; es genügt, wenn er neben der
+    Hilfe für den anderen zugleich die eigene Bestrafung verhindern will. § 258
+    Abs. 6 StGB: Wer die Tat zugunsten eines Angehörigen (§ 11 Abs. 1 Nr. 1 StGB)
+    begeht, ist straffrei; es handelt sich um einen persönlichen
+    Strafausschließungsgrund, der nur dem Angehörigen selbst zugutekommt
+    (§ 28 Abs. 2 StGB analog). Das Angehörigenprivileg gilt nicht bei
+    Strafvereitelung im Amt (§ 258a Abs. 3 StGB).
+  norms:
+  - § 258 Abs. 5 StGB
+  - § 258 Abs. 6 StGB
+  - § 11 Abs. 1 Nr. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sva-verteidiger
+  type: streitstand
+  front: 'Streitstand: Strafvereitelung durch den Strafverteidiger'
+  back: >-
+    Der Strafverteidiger ist Beistand des Beschuldigten und zugleich Organ der
+    Rechtspflege. Sein Verhalten ist nach h.M. nur dann tatbestandsmäßig, wenn er
+    prozessordnungswidrige Mittel einsetzt. Zulässig ist alles, was die
+    Prozessordnung gestattet: Beweisanträge, Rechtsmittel, der Rat zu schweigen,
+    auch wenn der Verteidiger die Schuld seines Mandanten kennt, sowie das
+    Ausschöpfen prozessualer Rechte. Unzulässig sind aktive Verdunkelungshandlungen
+    wie das Beiseiteschaffen oder Verfälschen von Beweismitteln, die Verfälschung
+    von Zeugenaussagen, die Aufforderung zu einer falschen Aussage oder die Täuschung
+    des Gerichts mit unwahren Tatsachenbehauptungen. Die Wahrheitspflicht ist im
+    Strafprozess begrenzt: Der Verteidiger muss keine Belastungen vortragen, darf
+    aber nicht aktiv lügen. Subjektiv ist wegen des Absichts- bzw.
+    Wissentlichkeitserfordernisses des § 258 StGB die sichere Kenntnis davon nötig,
+    dass die Handlung die Bestrafung vereitelt oder verzögert.
+  norms:
+  - § 258 Abs. 1 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sva-258a
+  type: norm
+  front: Was regelt § 258a StGB (Strafvereitelung im Amt)?
+  back: >-
+    § 258a Abs. 1 StGB erhöht die Strafe (Freiheitsstrafe von sechs Monaten bis zu
+    fünf Jahren) für Amtsträger, die zur Mitwirkung bei dem Strafverfahren oder
+    dem Verfahren zur Anordnung der Maßnahme oder bei der Vollstreckung berufen
+    sind (Polizeibeamte, Staatsanwälte, Richter, Vollstreckungsbeamte). Die Norm
+    ist ein unechtes Amtsdelikt (Qualifikation zu § 258 StGB); für Teilnehmer
+    ohne Amtsträgereigenschaft gilt § 28 Abs. 2 StGB. Die Amtsträger unterliegen
+    dem Legalitätsprinzip (§ 152 Abs. 2, § 163 StPO); Unterlassen kann daher
+    Strafvereitelung im Amt sein, wenn der Amtsträger pflichtwidrig nicht
+    einschreitet, obwohl er verpflichtet war (Garantenstellung aus der Amtsstellung).
+    Nach § 258a Abs. 3 StGB sind die Strafobergrenze des § 258 Abs. 3 StGB und das Angehörigenprivileg (§ 258 Abs. 6 StGB) nicht
+    anwendbar; das Selbstbegünstigungsprivileg des § 258 Abs. 5 StGB gilt dagegen
+    weiter. Der Versuch ist strafbar (Abs. 2).
+  norms:
+  - § 258a Abs. 1 StGB
+  - § 258a Abs. 2 StGB
+  - § 258a Abs. 3 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sva-bestechung-systematik
+  type: norm
+  front: Wie sind die Bestechungsdelikte der §§ 331 bis 334 StGB aufgebaut?
+  back: >-
+    Die Bestechungsdelikte bestrafen den Handel mit Amtsgeschäften. Es gibt vier
+    Grundtatbestände, jeweils aus Sicht des Amtsträgers (passiv) und des Gebers
+    (aktiv). § 331 StGB (Vorteilsannahme): Der Amtsträger fordert, lässt sich
+    versprechen oder nimmt einen Vorteil für die Dienstausübung an. § 333 StGB
+    (Vorteilsgewährung) ist das Gegenstück des Gebers. § 332 StGB (Bestechlichkeit):
+    Der Amtsträger fordert, lässt sich versprechen oder nimmt einen Vorteil dafür
+    an, dass er eine Diensthandlung vorgenommen hat oder künftig vornimmt und dadurch
+    seine Dienstpflichten verletzt oder verletzen würde. § 334 StGB (Bestechung)
+    ist das Gegenstück. Die §§ 332 und 334 StGB sind schwerer bestraft, weil die
+    Pflichtverletzung hinzutritt. § 335 StGB regelt besonders schwere Fälle, § 335a
+    StGB erfasst ausländische und internationale Bedienstete.
+  norms:
+  - § 331 Abs. 1 StGB
+  - § 332 Abs. 1 StGB
+  - § 333 Abs. 1 StGB
+  - § 334 Abs. 1 StGB
+  - § 335 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sva-amtstraeger-vorteil
+  type: definition
+  front: Was bedeuten Amtsträger, Vorteil und Unrechtsvereinbarung bei den §§ 331 ff. StGB?
+  back: >-
+    Täter der §§ 331, 332 StGB ist ein Amtsträger (§ 11 Abs. 1 Nr. 2 StGB):
+    Beamter, Richter, wer in einem sonstigen öffentlich-rechtlichen Amtsverhältnis
+    steht oder sonst dazu bestellt ist, Aufgaben der öffentlichen Verwaltung
+    wahrzunehmen. Daneben sind Europäische Amtsträger und für den öffentlichen
+    Dienst besonders Verpflichtete einbezogen. Vorteil ist jede Leistung, auf die
+    kein Anspruch besteht und die den Empfänger materiell oder immateriell besser
+    stellt (Geld, Geschenke, Einladungen, aber auch Ehrungen). Es genügt ein Vorteil
+    für einen Dritten. Kern aller Bestechungsdelikte ist die Unrechtsvereinbarung:
+    ein inhaltlicher Zusammenhang (Verknüpfung) zwischen dem Vorteil und der
+    Dienstausübung bzw. Diensthandlung. Bloße Sozialadäquanz oder allgemeine
+    Klimapflege genügen nicht. Nach § 331 Abs. 3 StGB ist die Annahme eines nicht
+    geforderten Vorteils straflos, wenn die zuständige Behörde sie vorher
+    genehmigt hat oder auf unverzügliche Anzeige des Amtsträgers nachträglich genehmigt.
+  norms:
+  - § 11 Abs. 1 Nr. 2 StGB
+  - § 331 Abs. 1 StGB
+  - § 331 Abs. 3 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sva-dienstausuebung-diensthandlung
+  type: streitstand
+  front: 'Abgrenzung: Dienstausübung (§ 331 StGB) und pflichtwidrige Diensthandlung (§ 332 StGB), Ermessen'
+  back: >-
+    Bei § 331 StGB genügt, dass der Vorteil für die Dienstausübung gewährt wird,
+    also für die allgemeine Dienstführung des Amtsträgers; ein konkretes Amtsgeschäft
+    muss nicht bestimmt sein (gelockerte Unrechtsvereinbarung). Bei § 332 StGB muss die Gegenleistung in einer bestimmten Diensthandlung
+    bestehen, die der Amtsträger vorgenommen hat oder vornehmen wird; sie muss
+    pflichtwidrig sein, also gegen seine Dienstpflichten verstoßen. Bei
+    Ermessensentscheidungen genügt nach § 332 Abs. 3 StGB, dass der Amtsträger
+    sich dem anderen gegenüber bereit gezeigt hat, bei der Entscheidung den Vorteil
+    zu berücksichtigen. Liegt eine pflichtwidrige Diensthandlung nahe, empfiehlt es sich in der
+    Klausur, zuerst § 332 StGB und danach § 331 StGB zu prüfen.
+  norms:
+  - § 331 Abs. 1 StGB
+  - § 332 Abs. 1 StGB
+  - § 332 Abs. 3 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sva-335
+  type: norm
+  front: Was regelt § 335 StGB (besonders schwere Fälle der Bestechlichkeit und Bestechung)?
+  back: >-
+    § 335 StGB sieht für besonders schwere Fälle der Bestechlichkeit (§ 332 StGB)
+    und der Bestechung (§ 334 StGB) erhöhte Strafrahmen vor (bei § 332 Abs. 1 und § 334 StGB Freiheitsstrafe von einem Jahr bis zu zehn Jahren, bei der Bestechlichkeit eines Richters nach § 332 Abs. 2 StGB nicht unter zwei Jahren). Ein besonders schwerer
+    Fall liegt in der Regel vor, wenn sich die Tat auf einen Vorteil großen
+    Ausmaßes bezieht (Nr. 1), der Täter fortgesetzt Vorteile annimmt, die er als
+    Gegenleistung dafür gefordert hat, dass er eine Diensthandlung künftig vornehme
+    (Nr. 2), oder der Täter gewerbsmäßig oder als Mitglied einer Bande handelt, die
+    sich zur fortgesetzten Begehung solcher Taten verbunden hat (Nr. 3). Es handelt
+    sich um Regelbeispiele: Sie indizieren den besonders schweren Fall, die
+    Indizwirkung kann aber entkräftet werden, und ein unbenannter besonders
+    schwerer Fall bleibt möglich. Anders als §§ 331 und 333 StGB sind die
+    Bestechlichkeit und die Bestechung nicht durch eine Genehmigung rechtfertigbar.
+  norms:
+  - § 335 StGB
+  - § 332 StGB
+  - § 334 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-sva-340
+  type: norm
+  front: Wann liegt eine Körperverletzung im Amt nach § 340 StGB vor?
+  back: >-
+    § 340 Abs. 1 StGB bestraft den Amtsträger, der während der Ausübung seines
+    Dienstes oder in Beziehung auf seinen Dienst eine Körperverletzung begeht oder
+    begehen lässt. Die Tat ist ein unechtes Amtsdelikt: Sie verwirklicht den
+    Tatbestand der Körperverletzung (§ 223 StGB) und qualifiziert ihn durch die
+    Amtsträgereigenschaft (Freiheitsstrafe von drei Monaten bis zu fünf Jahren).
+    Begehen lässt die Körperverletzung, wer als Amtsträger einen anderen
+    zur Tat veranlasst oder sie von ihm ausführen lässt (etwa durch Anordnung). Für Teilnehmer, die keine Amtsträger sind, gilt § 28 Abs. 2
+    StGB, sie werden aus § 223 StGB bestraft. Abs. 2 stellt den Versuch unter
+    Strafe, Abs. 3 verweist auf §§ 224 bis 229 StGB. Rechtfertigung kommt durch
+    unmittelbaren Zwang (Landes- und Bundespolizeirecht, UZwG) in Betracht; die
+    Verhältnismäßigkeit ist stets zu prüfen. Der Strafantrag ist nicht
+    erforderlich (Offizialdelikt).
+  norms:
+  - § 340 Abs. 1 StGB
+  - § 340 Abs. 2 StGB
+  - § 340 Abs. 3 StGB
+  - § 28 Abs. 2 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: sr-schema-sva-258
+  title: Strafvereitelung, § 258 Abs. 1 StGB
+  norms:
+  - § 258 Abs. 1 StGB
+  - § 258 Abs. 5 StGB
+  - § 258 Abs. 6 StGB
+  quellen:
+  - StGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Tatbestand
+    children:
+    - label: 1. Objektiver Tatbestand
+      children:
+      - label: a) Rechtswidrige Vortat eines anderen
+        hinweis: Schuld der Vortat nicht erforderlich.
+      - label: b) Tathandlung - Vereiteln der Bestrafung oder Maßnahme
+        hinweis: Ganz oder teilweise; Teilvereitelung bei nicht unerheblicher Verzögerung.
+      - label: c) Kausalität
+    - label: 2. Subjektiver Tatbestand
+      children:
+      - label: a) Vorsatz bezüglich der Vortat
+      - label: b) Absicht oder Wissentlichkeit bezüglich des Vereitelungserfolgs
+  - label: II. Rechtswidrigkeit
+    hinweis: Bei Verteidigern prüfen, ob prozessordnungsgemäße Mittel eingesetzt wurden.
+  - label: III. Schuld
+  - label: IV. Persönliche Strafausschließungsgründe
+    children:
+    - label: 1. Selbstbegünstigung, § 258 Abs. 5 StGB
+    - label: 2. Angehörigenprivileg, § 258 Abs. 6 StGB
+      hinweis: Gilt nicht bei § 258a StGB; Irrtum über die Angehörigeneigenschaft.
+  - label: V. Qualifikation - Strafvereitelung im Amt, § 258a StGB
+    hinweis: Nur prüfen, wenn der Täter Amtsträger mit Mitwirkungsbefugnis ist.
+faelle:
+- slug: sr-fall-sva-versteck
+  title: Das Versteck
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StGB, amtliche Fassung
+  facts: >-
+    T hat bei einem Überfall auf eine Tankstelle den Kassierer mit einer Pistole
+    bedroht und Geld erbeutet. Die Polizei fahndet nach T, gegen ihn besteht ein
+    Haftbefehl. T meldet sich bei seinem Bekannten F, der nicht mit ihm verwandt ist, und
+    erzählt, was er getan hat. F lässt T drei Wochen lang in seinem Ferienhaus
+    wohnen, um zu verhindern, dass T festgenommen und bestraft wird. Auf Nachfrage
+    der Polizei behauptet F wahrheitswidrig, T sei ins Ausland verreist. Erst nach
+    drei Wochen findet die Polizei T durch einen Hinweis der Nachbarn.
+  question: Hat sich F nach § 258 StGB strafbar gemacht? Wäre das Ergebnis anders, wenn F
+    der Bruder des T wäre?
+  steps:
+  - prompt: Liegt eine rechtswidrige Vortat vor?
+    erwartung: Ja. T hat mit dem Überfall eine rechtswidrige Tat (schwerer Raub bzw.
+      räuberische Erpressung) begangen.
+  - prompt: Hat F die Bestrafung des T vereitelt?
+    erwartung: Ja, zumindest teilweise. Durch die Unterbringung und die falsche
+      Auskunft wurde die Festnahme und damit die Bestrafung für drei Wochen und
+      damit für nicht unerhebliche Zeit verzögert (Teilvereitelung).
+  - prompt: Welche Vorsatzform hat F?
+    erwartung: F handelte wissentlich und absichtlich, denn er wusste von der Tat
+      und wollte gerade verhindern, dass T bestraft wird. Rechtfertigungs- und
+      Schuldausschließungsgründe liegen nicht vor; die Selbstbegünstigung (§ 258
+      Abs. 5 StGB) scheidet aus, weil F nicht auch seine eigene Bestrafung vermeiden
+      wollte; F ist nicht Angehöriger. F ist nach § 258 Abs. 1 StGB strafbar.
+  - prompt: Was gilt, wenn F der Bruder des T wäre?
+    erwartung: Dann wäre F nach § 258 Abs. 6 StGB straffrei, weil er zugunsten eines
+      Angehörigen (§ 11 Abs. 1 Nr. 1 StGB) handelte. Der Tatbestand bleibt erfüllt, das
+      Privileg ist ein persönlicher Strafausschließungsgrund.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Rechtswidrige Vortat des T (Raub bzw. räuberische Erpressung) festgestellt
+      weight: 1.0
+      required: false
+      norms:
+      - § 258 Abs. 1 StGB
+      keywords:
+      - rechtswidrige Vortat
+      - Vortat
+      - Raub
+      - räuberische Erpressung
+      card_slugs:
+      - sr-sva-258-tatbestand
+    - id: p2
+      label: Vereiteln - teilweise Vereitelung durch nicht unerhebliche Verzögerung
+      weight: 3.0
+      required: true
+      norms:
+      - § 258 Abs. 1 StGB
+      keywords:
+      - teilweise vereitelt
+      - Verzögerung
+      - nicht unerhebliche Zeit
+      - Teilvereitelung
+      - Bestrafung vereitelt
+      card_slugs:
+      - sr-sva-258-tatbestand
+    - id: p3
+      label: Absicht bzw. Wissentlichkeit hinsichtlich des Vereitelungserfolgs
+      weight: 2.0
+      required: true
+      norms:
+      - § 258 Abs. 1 StGB
+      keywords:
+      - Absicht
+      - wissentlich
+      - dolus directus
+      - absichtlich oder wissentlich
+      card_slugs:
+      - sr-sva-258-tatbestand
+    - id: p4
+      label: Keine Selbstbegünstigung, keine Angehörigeneigenschaft
+      weight: 1.5
+      required: false
+      norms:
+      - § 258 Abs. 5 StGB
+      - § 258 Abs. 6 StGB
+      keywords:
+      - Selbstbegünstigung
+      - Selbstbegünstigungsprivileg
+      - kein Angehöriger
+      - nicht verwandt
+      card_slugs:
+      - sr-sva-258-privilegien
+    - id: p5
+      label: Abwandlung - Straffreiheit bei Angehörigem nach § 258 Abs. 6 StGB
+      weight: 2.0
+      required: true
+      norms:
+      - § 258 Abs. 6 StGB
+      keywords:
+      - § 258 Abs. 6
+      - Angehörigenprivileg
+      - persönlicher Strafausschließungsgrund
+      - zugunsten eines Angehörigen
+      - straffrei
+      card_slugs:
+      - sr-sva-258-privilegien

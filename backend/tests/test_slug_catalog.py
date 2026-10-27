@@ -5,7 +5,7 @@ Siehe docs/27-werkbank-spezifikation.md Abschnitt 4.2 und 7.
 
 from __future__ import annotations
 
-from app.services.slug_catalog import SLUG_CATALOG_SCHEMA_ID
+from app.services.slug_catalog import MAX_SLUGS_PER_KIND, SLUG_CATALOG_SCHEMA_ID
 
 
 def test_katalog_ist_auf_rechtsgebiet_begrenzt(client):
@@ -21,8 +21,13 @@ def test_katalog_ist_auf_rechtsgebiet_begrenzt(client):
     sr_body = strafrecht.json()
 
     # Nicht der gesamte Content-Bestand, sondern nur das genannte Rechtsgebiet.
-    assert set(zr_body["topic_slugs"]) == {t["slug"] for t in zr_topics}
-    assert set(zr_body["schema_slugs"]) == {s["slug"] for s in zr_schemata}
+    # Bei mehr Inhalt als MAX_SLUGS_PER_KIND wird bewusst gekappt (Promptgroesse).
+    zr_topic_slugs = {t["slug"] for t in zr_topics}
+    zr_schema_slugs = {s["slug"] for s in zr_schemata}
+    assert set(zr_body["topic_slugs"]) <= zr_topic_slugs
+    assert set(zr_body["schema_slugs"]) <= zr_schema_slugs
+    assert len(zr_body["topic_slugs"]) == min(len(zr_topic_slugs), MAX_SLUGS_PER_KIND)
+    assert len(zr_body["schema_slugs"]) == min(len(zr_schema_slugs), MAX_SLUGS_PER_KIND)
     assert zr_body["topic_slugs"], "Zivilrecht sollte Themen enthalten"
 
     # Zwei verschiedene Rechtsgebiete duerfen sich nicht ueberschneiden.

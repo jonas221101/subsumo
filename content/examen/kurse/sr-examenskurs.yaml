@@ -4,15 +4,18 @@ kurs:
   area: strafrecht
   semester_default: 7
   examenskurs: true
-  stand: 2026-09
+  stand: 2026-10
   quellen:
-  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Gesamtwiederholung AT und BT auf Examensniveau, mit Blick auf mehrpersonale Sachverhalte
-    und Konkurrenzfragen.
+  beschreibung: 'Wiederholung des Strafrechts auf Examensniveau: Allgemeiner Teil, Delikte gegen Person und Vermögen,
+    Randdelikte (Brandstiftung, Aussage, Straßenverkehr, Amtsdelikte) und Strafprozessrecht, mit Blick auf mehrpersonale
+    Sachverhalte und Konkurrenzfragen.'
   lernziele:
   - Mehrpersonale Sachverhalte nach Tatkomplexen und Beteiligten gliedern
   - AT-Figuren (Versuch, Irrtum, Beteiligung) innerhalb der BT-Delikte sicher anwenden
+  - Konkurrenzen im Gutachten sauber auflösen
+  - Strafprozessuale Zusatzfragen (Beweisverwertung, Zwangsmaßnahmen, Rechtsmittel) in die Klausur einbetten
   klausurformat:
     typ: Examensklausur
     minuten: 300
@@ -37,7 +40,38 @@ kurs:
   - sr-bt-erpressung-253
   - sr-bt-betrug
   - sr-bt-untreue-266
+  - sr-at-konkurrenzen
+  - sr-at-schuld-20-35
+  - sr-at-rechtfertigende-einwilligung
+  - sr-at-erlaubnistatbestandsirrtum
+  - sr-bt-koerperverletzung-226-227
+  - sr-bt-diebstahl-qualifikationen-244
+  - sr-bt-anschlussdelikte-257-259
+  - sr-at-rechtfertigung-sonstige
+  - sr-at-vorsatz-fahrlaessigkeit-formen
+  - sr-at-versuch-vertiefung
+  - sr-at-beteiligung-vertiefung
+  - sr-at-strafzumessung-kcang
+  - sr-bt-mord-ergaenzung
+  - sr-bt-koerperverletzung-ergaenzung
+  - sr-bt-aussetzung-221
+  - sr-bt-freiheitsdelikte
+  - sr-bt-erpresserischer-menschenraub
+  - sr-bt-sexualdelikte-grundzuege
+  - sr-bt-ehrdelikte
+  - sr-bt-hausfriedensbruch-123
+  - sr-bt-sachbeschaedigung-303
+  - sr-bt-computerbetrug-263a
+  - sr-bt-raeuberischer-diebstahl-252
+  - sr-bt-urkundendelikte-erweitert
+  - sr-bt-brandstiftung
+  - sr-bt-strassenverkehr
+  - sr-bt-aussagedelikte
+  - sr-bt-strafvereitelung-amtsdelikte
+  - sr-bt-widerstand-unterlassene-hilfe
+  - sr-bt-geldwaesche-261
+  - sr-stpo-grundzuege
+  - sr-stpo-rechtsmittel-zwangsmassnahmen
   landesrecht_kategorien: []
   fehlende_themen:
-  - Konkurrenzen (P3)
-  - Strafprozessrecht Grundzuege (P3)
+  - Betäubungsmittel-, Wirtschafts- und Umweltstrafrecht (P3)

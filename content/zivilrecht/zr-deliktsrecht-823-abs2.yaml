@@ -9,17 +9,17 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-23'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: zr-823-2-regelungsgehalt
   type: definition
   front: Was regelt § 823 Abs. 2 BGB?
   back: § 823 Abs. 2 S. 1 BGB gewährt Schadensersatz, wenn der Schädiger gegen ein
-    den Schutz eines anderen bezweckendes Gesetz (Schutzgesetz) verstößt. Anders
-    als § 823 Abs. 1 BGB setzt die Norm keine Verletzung eines der dort abschließend
-    aufgezählten Rechtsgüter voraus, sondern knüpft an den Verstoß gegen eine
-    außerhalb des Deliktsrechts stehende Schutznorm an.
+    den Schutz eines anderen bezweckendes Gesetz (Schutzgesetz) verstößt. Anders als
+    § 823 Abs. 1 BGB setzt die Norm keine Verletzung eines der dort abschließend aufgezählten
+    Rechtsgüter voraus, sondern knüpft an den Verstoß gegen eine außerhalb des Deliktsrechts
+    stehende Schutznorm an.
   norms:
   - § 823 Abs. 2 BGB
   quellen:
@@ -42,15 +42,15 @@ cards:
   stand: 2026-09
 - slug: zr-823-2-263-tatbestand
   type: definition
-  front: Welche objektiven Tatbestandsmerkmale müssen für einen Verstoß gegen
-    das Schutzgesetz § 263 StGB (Betrug) im Rahmen des § 823 Abs. 2 BGB vorliegen?
+  front: Welche objektiven Tatbestandsmerkmale müssen für einen Verstoß gegen das
+    Schutzgesetz § 263 StGB (Betrug) im Rahmen des § 823 Abs. 2 BGB vorliegen?
   back: 'Der objektive Verstoß gegen § 263 Abs. 1 StGB als Schutzgesetz setzt vier,
     in einer Kausalkette aufeinander aufbauende Merkmale voraus: (1) eine Täuschung
     über Tatsachen durch Vorspiegelung falscher oder Entstellung bzw. Unterdrückung
     wahrer Tatsachen, (2) einen dadurch beim Getäuschten hervorgerufenen oder unterhaltenen
-    Irrtum, (3) eine irrtumsbedingte Vermögensverfügung des Getäuschten und (4)
-    einen dadurch eingetretenen Vermögensschaden. Fehlt eines dieser Merkmale oder
-    die Kausalität zwischen ihnen, liegt kein objektiver Schutzgesetzverstoß vor.'
+    Irrtum, (3) eine irrtumsbedingte Vermögensverfügung des Getäuschten und (4) einen
+    dadurch eingetretenen Vermögensschaden. Fehlt eines dieser Merkmale oder die Kausalität
+    zwischen ihnen, liegt kein objektiver Schutzgesetzverstoß vor.'
   norms:
   - § 263 Abs. 1 StGB
   quellen:
@@ -63,8 +63,8 @@ cards:
   back: Eine Norm, die ausschließlich das Interesse der Allgemeinheit oder eine funktionierende
     Verwaltungsordnung sichern soll, ohne dass der Schutz einzelner Personen bezweckt
     ist, ist keine Schutznorm im Sinne des § 823 Abs. 2 BGB - selbst wenn ihre Verletzung
-    faktisch auch Einzelnen zugutekommt. Maßgeblich ist, ob der Individualschutz
-    zum Normzweck gehört oder nur eine mittelbare, ungewollte Nebenfolge des allgemeinen
+    faktisch auch Einzelnen zugutekommt. Maßgeblich ist, ob der Individualschutz zum
+    Normzweck gehört oder nur eine mittelbare, ungewollte Nebenfolge des allgemeinen
     Ordnungsinteresses ist.
   norms:
   - § 823 Abs. 2 BGB
@@ -118,12 +118,12 @@ cards:
   type: definition
   front: Wie ist die Beweislast bei einem Anspruch aus § 823 Abs. 2 BGB grundsätzlich
     verteilt?
-  back: Der Geschädigte trägt als Anspruchsteller grundsätzlich die Beweislast
-    für den objektiven Verstoß gegen das Schutzgesetz und, soweit dieses ein Verschulden
-    voraussetzt, für das Verschulden des Schädigers. Eine pauschale gesetzliche
-    Umkehr der Beweislast sieht § 823 Abs. 2 BGB nicht vor; Beweiserleichterungen
-    können sich allenfalls aus allgemeinen Beweisgrundsätzen wie dem Anscheinsbeweis
-    bei typischen Geschehensabläufen ergeben.
+  back: Der Geschädigte trägt als Anspruchsteller grundsätzlich die Beweislast für
+    den objektiven Verstoß gegen das Schutzgesetz und, soweit dieses ein Verschulden
+    voraussetzt, für das Verschulden des Schädigers. Eine pauschale gesetzliche Umkehr
+    der Beweislast sieht § 823 Abs. 2 BGB nicht vor; Beweiserleichterungen können
+    sich allenfalls aus allgemeinen Beweisgrundsätzen wie dem Anscheinsbeweis bei
+    typischen Geschehensabläufen ergeben.
   norms:
   - § 823 Abs. 2 BGB
   quellen:
@@ -176,9 +176,9 @@ faelle:
   - Eigener Sachverhalt der Redaktion
   - BGB, amtliche Fassung
   - StGB, amtliche Fassung
-  facts: Gebrauchtwagenhändler G verkauft an Käuferin K ein Fahrzeug und erklärt
-    dabei wissentlich wahrheitswidrig, es habe noch nie einen Unfallschaden gehabt,
-    obwohl G positiv weiß, dass ein erheblicher, zwar fachgerecht aber teuer reparierter
+  facts: Gebrauchtwagenhändler G verkauft an Käuferin K ein Fahrzeug und erklärt dabei
+    wissentlich wahrheitswidrig, es habe noch nie einen Unfallschaden gehabt, obwohl
+    G positiv weiß, dass ein erheblicher, zwar fachgerecht aber teuer reparierter
     Vorschaden vorliegt. K verlässt sich auf diese Angabe und zahlt den vereinbarten
     Kaufpreis von 14.000 EUR, obwohl das Fahrzeug wegen des verschwiegenen Vorschadens
     objektiv nur 11.000 EUR wert ist. Wäre K der Vorschaden bekannt gewesen, hätte
@@ -187,18 +187,17 @@ faelle:
     2 BGB in Verbindung mit § 263 StGB?
   steps:
   - prompt: Ist § 263 StGB ein Schutzgesetz im Sinne des § 823 Abs. 2 BGB?
-    erwartung: Ja, § 263 StGB schützt zumindest auch das Vermögen des Einzelnen
-      vor täuschungsbedingten Verfügungen und ist damit ein individualschützendes
-      Schutzgesetz.
+    erwartung: Ja, § 263 StGB schützt zumindest auch das Vermögen des Einzelnen vor
+      täuschungsbedingten Verfügungen und ist damit ein individualschützendes Schutzgesetz.
   - prompt: Liegt objektiv ein Verstoß gegen § 263 StGB vor?
     erwartung: 'Ja: G täuschte durch die wahrheitswidrige Behauptung der Unfallfreiheit
-      über Tatsachen, K irrte hierüber und verfügte durch die Kaufpreiszahlung
-      über ihr Vermögen, wodurch ihr ein Schaden in Höhe der Wertdifferenz von
-      3.000 EUR entstand.'
+      über Tatsachen, K irrte hierüber und verfügte durch die Kaufpreiszahlung über
+      ihr Vermögen, wodurch ihr ein Schaden in Höhe der Wertdifferenz von 3.000 EUR
+      entstand.'
   - prompt: Liegt das erforderliche Verschulden vor?
     erwartung: 'Ja: G handelte vorsätzlich, da er den Vorschaden positiv kannte und
-      K bewusst darüber täuschte; der von § 263 StGB vorausgesetzte Vorsatz ist
-      zugleich das Verschulden im Sinne des § 823 Abs. 2 BGB.'
+      K bewusst darüber täuschte; der von § 263 StGB vorausgesetzte Vorsatz ist zugleich
+      das Verschulden im Sinne des § 823 Abs. 2 BGB.'
   - prompt: Warum scheidet ein Anspruch aus § 823 Abs. 1 BGB aus?
     erwartung: Weil K durch den überhöhten Kaufpreis lediglich einen reinen Vermögensschaden
       erleidet; das Eigentum am Fahrzeug selbst wird durch die Täuschung nicht verletzt
@@ -216,9 +215,10 @@ faelle:
       - § 823 Abs. 2 BGB
       - § 263 StGB
       keywords:
-      - '823'
-      - '263'
+      - Schutzgesetzverletzung
+      - Betrug als Schutzgesetz
       - Schutzgesetz
+      - Betrug als Schutzgesetz im Sinne des Deliktsrechts
       card_slugs:
       - zr-823-2-regelungsgehalt
     - id: p2
@@ -229,23 +229,27 @@ faelle:
       norms:
       - § 263 StGB
       keywords:
-      - Schutzgesetz
-      - Vermögen
       - individualschützend
+      - Schutzgesetzcharakter
+      - Schutzgesetzbegriff
+      - Rechtsnorm zum Schutz des Einzelnen
+      - vermögensschützendes Schutzgesetz
       card_slugs:
       - zr-823-2-schutzgesetzbegriff
     - id: p3
-      label: Objektiver Tatbestand des § 263 StGB (Täuschung, Irrtum, Verfügung,
-        Vermögensschaden) bejaht
+      label: Objektiver Tatbestand des § 263 StGB (Täuschung, Irrtum, Verfügung, Vermögensschaden)
+        bejaht
       weight: 2.0
       required: true
       norms:
       - § 263 StGB
       keywords:
-      - Täuschung
-      - Irrtum
-      - Verfügung
+      - Täuschung über Tatsachen
+      - Vermögensverfügung
       - Vermögensschaden
+      - Stoffgleichheit
+      - Bereicherungsabsicht
+      - Irrtum der Käuferin
       card_slugs:
       - zr-823-2-263-tatbestand
     - id: p4
@@ -254,6 +258,9 @@ faelle:
       keywords:
       - Vorsatz
       - Verschulden
+      - Schutzgesetz verlangt Vorsatz
+      - § 823 Abs. 2 S. 2
+      - Verschuldenserfordernis des Schutzgesetzes
       card_slugs:
       - zr-823-2-verschulden-s2
     - id: p5
@@ -263,14 +270,18 @@ faelle:
       norms:
       - § 823 Abs. 1 BGB
       keywords:
-      - 823 Abs. 1
+      - Abgrenzung zu § 823 Abs. 1
       - reiner Vermögensschaden
-      - Eigentum nicht verletzt
+      - Vermögen kein sonstiges Recht
+      - Vermögen ist kein absolut geschütztes Rechtsgut
+      - kein Rechtsgut des § 823 Abs. 1
       card_slugs:
       - zr-823-2-verhaeltnis-abs1
     - id: p6
       label: 'Ergebnis: Anspruch auf 3.000 EUR besteht'
       weight: 0.5
       keywords:
-      - '3.000'
-      - Anspruch besteht
+      - Anspruch auf Ersatz des Minderwerts besteht
+      - Schadensersatz aus § 823 Abs. 2 (+)
+      - K kann Ersatz der Wertdifferenz verlangen
+      - Differenzschaden

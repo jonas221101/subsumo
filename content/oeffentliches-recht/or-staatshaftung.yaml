@@ -1,0 +1,412 @@
+topic:
+  slug: or-staatshaftung
+  area: oeffentliches-recht
+  title: 'Staatshaftungsrecht: Amtshaftung, FBA, Entschädigungsansprüche'
+  parent: oeffentliches-recht
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-sh-amtshaftung-struktur
+  type: definition
+  front: Wie ist der Amtshaftungsanspruch nach § 839 BGB i. V. m. Art. 34 S. 1 GG aufgebaut?
+  back: >-
+    Der Amtshaftungsanspruch folgt aus § 839 Abs. 1 S. 1 BGB, der durch Art. 34 S. 1 GG auf
+    den Staat übergeleitet wird (Haftungsüberleitung): Haftender ist nicht der Amtswalter,
+    sondern die Körperschaft, in deren Dienst er steht (Anvertrauenstheorie). Zu prüfen sind:
+    (1) Handeln in Ausübung eines öffentlichen Amtes durch einen Amtsträger im haftungsrechtlichen
+    Sinn, (2) Verletzung einer Amtspflicht, (3) Drittbezogenheit der Amtspflicht, (4) Verschulden
+    (Vorsatz oder Fahrlässigkeit, § 276 BGB), (5) Schaden und Kausalität, (6) kein Haftungsausschluss
+    (Verweisungsprivileg, § 839 Abs. 1 S. 2 BGB; Rechtsmittelversäumnis, § 839 Abs. 3 BGB;
+    Richterspruchprivileg, § 839 Abs. 2 BGB). Rechtsfolge ist Schadensersatz nach §§ 249 ff.
+    BGB, regelmäßig in Geld. Die Körperschaft kann bei Vorsatz oder grober Fahrlässigkeit
+    Rückgriff beim Beamten nehmen, Art. 34 S. 2 GG.
+  norms:
+  - § 839 Abs. 1 S. 1 BGB
+  - Art. 34 S. 1 GG
+  - Art. 34 S. 2 GG
+  - § 839 Abs. 2 BGB
+  quellen:
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-sh-oeffentliches-amt
+  type: definition
+  front: Wann handelt jemand „in Ausübung eines öffentlichen Amtes“?
+  back: >-
+    Beamter i. S. d. Art. 34 GG ist, wer mit der Wahrnehmung hoheitlicher Aufgaben betraut
+    ist (haftungsrechtlicher, funktionaler Beamtenbegriff); es genügt jede Person, der die
+    Ausübung hoheitlicher Gewalt anvertraut ist, auch Angestellte, Beliehene und, nach der
+    Werkzeugtheorie, Verwaltungshelfer (z. B. beauftragter Abschleppunternehmer), soweit die
+    Behörde ihnen hoheitliche Aufgaben überträgt oder sich ihrer als „Werkzeug“ bedient. Das
+    Handeln muss in Ausübung eines öffentlichen Amtes erfolgen: Die schädigende Handlung muss
+    in engem äußeren und inneren Zusammenhang mit der hoheitlichen Aufgabenerfüllung stehen.
+    Maßgeblich ist, ob das Verhalten dem öffentlichen oder dem privaten Bereich zuzuordnen
+    ist; bei privatrechtlichem Verwaltungshandeln haftet der Staat nach §§ 31, 89, 831 BGB.
+    Rein private Handlungen, die nur bei Gelegenheit der Amtsausübung vorgenommen werden und
+    mit der Aufgabe nichts zu tun haben, fallen nicht darunter.
+  norms:
+  - Art. 34 S. 1 GG
+  - § 839 BGB
+  - § 31 BGB
+  - § 831 BGB
+  quellen:
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-sh-drittbezogenheit
+  type: definition
+  front: Was bedeutet Drittbezogenheit der Amtspflicht?
+  back: >-
+    Die verletzte Amtspflicht muss dem Geschädigten gegenüber bestehen: Sie muss zumindest
+    auch dem Schutz des betroffenen Dritten (nicht nur der Allgemeinheit) dienen. Die Drittbezogenheit
+    wird nach dem Schutzzweck der Amtspflicht bestimmt, ähnlich der Schutznormtheorie: Die
+    Amtspflicht muss den geschützten Personenkreis, das geschützte Rechtsgut und die Art des
+    Schadens umfassen. Dritter ist jeder, in dessen Interesse die Amtspflicht besteht, auch
+    wenn er nicht Adressat der Amtshandlung ist. Beispiele: Die Pflicht zu rechtmäßigem Verwaltungshandeln
+    schützt den Betroffenen; Verkehrssicherungspflichten schützen die Nutzer; die Aufsicht
+    über Dritte kann dem Schutz der Allgemeinheit dienen, ohne einzelnen Dritten zu helfen.
+    Fehlt die Drittbezogenheit, scheitert der Amtshaftungsanspruch, selbst wenn eine Amtspflichtverletzung
+    vorliegt. Zum Schadensumfang gehört nur, was vom Schutzzweck der Norm gedeckt ist (Schutzzweck-
+    und Zurechnungsprüfung).
+  norms:
+  - § 839 Abs. 1 S. 1 BGB
+  - Art. 34 S. 1 GG
+  quellen:
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-sh-verschulden-richterprivileg
+  type: norm
+  front: Welche Besonderheiten gelten beim Verschulden und beim Richterspruchprivileg?
+  back: >-
+    Es gilt der objektivierte Fahrlässigkeitsmaßstab des § 276 BGB: Von einem Amtsträger wird
+    die erforderliche Rechts- und Sachkenntnis erwartet; auf individuelle Unkenntnis kann
+    er sich nicht berufen. Nach der Kollegialgerichts-Richtlinie der Rechtsprechung entfällt
+    in der Regel der Schuldvorwurf, wenn ein mit mehreren Berufsrichtern besetztes Kollegialgericht
+    die Amtshandlung als rechtmäßig beurteilt hat; die Richtlinie gilt nicht ausnahmslos.
+    Bei der Pflichtverletzung bei dem Urteil in einer Rechtssache (Richterspruchprivileg,
+    § 839 Abs. 2 S. 1 BGB) haftet der Richter nur, wenn die Pflichtverletzung in einer Straftat
+    besteht, z. B. Rechtsbeugung, § 339 StGB. Das Privileg gilt nicht bei Verweigerung oder
+    Verzögerung der Amtsausübung (§ 839 Abs. 2 S. 2 BGB); bei überlangen Gerichtsverfahren
+    besteht daneben der verschuldensunabhängige Entschädigungsanspruch nach §§ 198 ff. GVG.
+  norms:
+  - § 276 BGB
+  - § 839 Abs. 2 S. 1 BGB
+  - § 339 StGB
+  - § 198 GVG
+  quellen:
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  - GVG, amtliche Fassung
+  - StGB, amtliche Fassung
+  stand: 2026-10
+- slug: or-sh-verweisungsprivileg
+  type: norm
+  front: Was besagt das Verweisungsprivileg, § 839 Abs. 1 S. 2 BGB, und wann gilt es nicht?
+  back: >-
+    Fällt dem Amtsträger nur Fahrlässigkeit zur Last, kann er (und über Art. 34 GG der Staat)
+    nur in Anspruch genommen werden, wenn der Verletzte nicht auf andere Weise Ersatz zu erlangen
+    vermag (Subsidiarität der Amtshaftung). Anderweitige Ersatzmöglichkeiten sind z. B. rechtlich
+    durchsetzbare Ansprüche gegen einen anderen Schädiger, gegen den Dienstherrn oder
+    Arbeitgeber oder gegen einen Sozialversicherungsträger; Leistungen aus einer vom Geschädigten
+    selbst abgeschlossenen Schadensversicherung (etwa Kaskoversicherung) werden dagegen nicht
+    angerechnet. Das Verweisungsprivileg gilt nicht bei Vorsatz und nach
+    der Rechtsprechung nicht, wenn der Amtsträger ohne Inanspruchnahme von Sonderrechten am
+    allgemeinen Straßenverkehr teilnimmt und dabei einen Unfall verursacht: Er unterliegt
+    dann denselben Pflichten wie jeder Verkehrsteilnehmer, sodass der Geschädigte nicht auf
+    die Ersatzmöglichkeiten verwiesen wird. Das Privileg gilt dagegen bei Wahrnehmung hoheitlicher
+    Sonderrechte. In der Klausur ist die Subsidiarität als Haftungsausschluss nach der Prüfung
+    der Anspruchsvoraussetzungen zu behandeln.
+  norms:
+  - § 839 Abs. 1 S. 2 BGB
+  - Art. 34 GG
+  quellen:
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-sh-rechtsmittelversaeumnis
+  type: norm
+  front: Welche Bedeutung hat § 839 Abs. 3 BGB für den Vorrang des Primärrechtsschutzes?
+  back: >-
+    Die Ersatzpflicht tritt nicht ein, wenn der Verletzte vorsätzlich oder fahrlässig unterlassen
+    hat, den Schaden durch Gebrauch eines Rechtsmittels abzuwenden, § 839 Abs. 3 BGB. „Rechtsmittel“
+    ist weit zu verstehen: Es erfasst alle förmlichen Rechtsbehelfe, die den Schaden beseitigen
+    oder vermindern könnten, namentlich Widerspruch, Anfechtungs- und Verpflichtungsklage
+    sowie Eilrechtsschutz; nicht dagegen formlose Rechtsbehelfe wie Gegenvorstellung und Dienstaufsichtsbeschwerde.
+    Die Regelung bringt den Vorrang des Primärrechtsschutzes zum Ausdruck: Wer sich gegen
+    eine Amtshandlung hätte wehren können, soll nicht „dulden und liquidieren“. Maßgeblich
+    ist, ob der Rechtsbehelf Erfolg gehabt hätte (hypothetisch) und ob dem Geschädigten ein
+    Verschulden zur Last fällt. Der gleiche Gedanke gilt für Entschädigungsansprüche wegen
+    enteignungsgleichen Eingriffs (§ 254 BGB analog).
+  norms:
+  - § 839 Abs. 3 BGB
+  - § 254 BGB
+  quellen:
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-sh-folgenbeseitigung
+  type: definition
+  front: Welche Voraussetzungen hat der Folgenbeseitigungsanspruch (FBA)?
+  back: >-
+    Der Folgenbeseitigungsanspruch ist auf die Wiederherstellung des ursprünglichen Zustands
+    gerichtet, den ein hoheitlicher Eingriff verändert hat. Rechtsgrundlage ist (gewohnheitsrechtlich)
+    das Rechtsstaatsprinzip und die Grundrechte, einfachgesetzlich mitgedacht in § 113 Abs.
+    1 S. 2 VwGO. Voraussetzungen: (1) hoheitlicher Eingriff in ein subjektives Recht, (2)
+    Schaffung eines rechtswidrigen, andauernden Zustands, (3) Fortbestehen der Beeinträchtigung,
+    (4) die Beseitigung ist tatsächlich möglich, rechtlich zulässig und zumutbar, (5) Rechtswidrigkeit
+    des Zustands, nicht notwendig des Eingriffs; kein Mitverschulden des Betroffenen (§ 254
+    BGB analog). Ziel ist nicht Schadensersatz, sondern Beseitigung der Folgen, z. B. Rückgabe
+    sichergestellter Sachen, Widerruf einer ehrenrührigen Behauptung. Der FBA wird vor dem
+    Verwaltungsgericht durch allgemeine Leistungsklage geltend gemacht; er setzt kein Verschulden
+    voraus und geht der Entschädigung vor.
+  norms:
+  - § 113 Abs. 1 S. 2 VwGO
+  - § 254 BGB
+  - Art. 20 Abs. 3 GG
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-sh-enteignungsgleicher-eingriff
+  type: definition
+  front: Was sind enteignender und enteignungsgleicher Eingriff, und wie unterscheiden sie
+    sich?
+  back: >-
+    Der enteignungsgleiche Eingriff ist die rechtswidrige, unmittelbare hoheitliche Beeinträchtigung
+    einer Eigentumsposition (Art. 14 GG), die ein Sonderopfer bewirkt; Haftungsgrund ist der
+    Aufopferungsgedanke aus § 75 Einl. ALR bzw. Gewohnheitsrecht. Der enteignende Eingriff
+    erfasst dagegen rechtmäßiges Handeln mit atypischen, unvorhergesehenen Nebenfolgen am
+    Eigentum, die die Opfergrenze überschreiten (z. B. baustellenbedingte Folgen). Die Rechtsprechung
+    hat beide Institute unter Geltung des Art. 14 GG fortgeführt, aber das BVerfG (Nassauskiesung,
+    BVerfGE 58, 300) hat klargestellt, dass das Grundgesetz keine „Umdeutung“ rechtswidriger
+    Eingriffe in Enteignungen mit Entschädigungsfolge erlaubt: Der Betroffene muss primären
+    Rechtsschutz suchen. Eine Entschädigung für rechtmäßige Inhaltsbestimmung ist nur bei
+    besonderer gesetzlicher Ausgleichsregelung (ausgleichspflichtige Inhaltsbestimmung) möglich.
+    Ansprüche auf Entschädigung werden vor den ordentlichen Gerichten geltend gemacht.
+  norms:
+  - Art. 14 GG
+  - § 75 Einl. ALR
+  - Art. 14 Abs. 3 GG
+  quellen:
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-sh-nassauskiesung
+  type: rechtsprechung
+  front: Was entschied das BVerfG im Nassauskiesungsbeschluss zur Entschädigung bei Eigentumseingriffen?
+  back: >-
+    Im Nassauskiesungsbeschluss (BVerfGE 58, 300) stellte das Bundesverfassungsgericht fest,
+    dass der Eigentumsschutz des Art. 14 GG in erster Linie ein Bestandsschutz ist und kein
+    bloßer Wertgarantie-Anspruch. Der Betroffene hat nicht die Wahl zwischen Abwehr des Eingriffs
+    und Entschädigung („dulde und liquidiere“); wenn ein Eingriff nicht gesetzlich als Enteignung
+    mit Entschädigungsregelung angelegt ist, muss er Rechtsschutz gegen die rechtswidrige
+    Maßnahme suchen. Die Entschädigungspflicht nach Art. 14 Abs. 3 GG setzt eine Enteignung
+    im Sinne des Verfassungsrechts voraus (Entzug zur Erfüllung öffentlicher Aufgaben, durch
+    Gesetz oder aufgrund eines Gesetzes, das Art und Ausmaß der Entschädigung regelt – Junktimklausel).
+    Eine fehlende Entschädigungsregelung macht das Gesetz verfassungswidrig; sie wird nicht
+    richterrechtlich ergänzt.
+  norms:
+  - Art. 14 Abs. 1 GG
+  - Art. 14 Abs. 3 GG
+  - BVerfGE 58, 300
+  quellen:
+  - BVerfGE 58, 300 (Nassauskiesung)
+  stand: 2026-10
+- slug: or-sh-aufopferung
+  type: definition
+  front: Welche Voraussetzungen hat der Aufopferungsanspruch?
+  back: >-
+    Der Aufopferungsanspruch (Rechtsgrundlage gewohnheitsrechtlich, hergeleitet aus §§ 74,
+    75 Einl. ALR) gewährt Ausgleich für Eingriffe in nichtvermögenswerte Rechtsgüter wie Leben,
+    Gesundheit, körperliche Unversehrtheit und Freiheit. Voraussetzungen: (1) hoheitlicher
+    Eingriff in ein nichtvermögenswertes Recht (Leben, Gesundheit, Freiheit), (2) Unmittelbarkeit
+    des Eingriffs, (3) Sonderopfer des Betroffenen, das ihm im Interesse der Allgemeinheit
+    abverlangt wird, (4) Rechtmäßigkeit oder Rechtswidrigkeit des Eingriffs unerheblich. Der
+    Anspruch ist auf angemessene Entschädigung in Geld gerichtet, vor allem für vermögensrechtliche
+    Nachteile; nach BGH, Urteil vom 07.09.2017 – III ZR 71/17, umfasst der Anspruch unter Aufgabe
+    der früheren Rechtsprechung (BGHZ 20, 61) auch den Ausgleich immaterieller Schäden, also ein
+    Schmerzensgeld. Er wird durch Spezialregelungen
+    verdrängt, z. B. bei Impfschäden durch Versorgungsregelungen des Infektionsschutzgesetzes.
+    Geltend zu machen ist er vor den ordentlichen Gerichten (§ 40 Abs. 2 S. 1 VwGO).
+  norms:
+  - § 40 Abs. 2 S. 1 VwGO
+  - § 75 Einl. ALR
+  quellen:
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-sh-rechtsweg
+  type: norm
+  front: Welcher Rechtsweg ist für Amtshaftung, FBA, Aufopferung und Entschädigungsansprüche
+    eröffnet?
+  back: >-
+    Für Amtshaftungsansprüche (§ 839 BGB i. V. m. Art. 34 GG) sind nach Art. 34 S. 3 GG die
+    ordentlichen Gerichte zuständig; sachlich zuständig ist unabhängig vom Streitwert das
+    Landgericht, § 71 Abs. 2 Nr. 2 GVG. Aufopferungsansprüche, öffentlich-rechtliche Verwahrung
+    und Schadensersatzansprüche aus Verletzung öffentlich-rechtlicher Pflichten außerhalb
+    eines ör Vertrags sind nach § 40 Abs. 2 S. 1 VwGO ebenfalls den ordentlichen Gerichten
+    zugewiesen. Für Entschädigung bei Enteignung gilt Art. 14 Abs. 3 S. 4 GG (ordentliche
+    Gerichte), entsprechend für den enteignungsgleichen Eingriff. Der Folgenbeseitigungsanspruch
+    ist dagegen eine öffentlich-rechtliche Streitigkeit, für die nach § 40 Abs. 1 VwGO der
+    Verwaltungsrechtsweg eröffnet ist. Nach § 17 Abs. 2 S. 1 GVG entscheidet das Gericht des
+    zulässigen Rechtswegs den Rechtsstreit unter allen rechtlichen Gesichtspunkten; dies gilt
+    nach § 17 Abs. 2 S. 2 GVG nicht für Ansprüche nach Art. 14 Abs. 3 S. 4 GG und Art. 34
+    S. 3 GG.
+  norms:
+  - Art. 34 S. 3 GG
+  - § 71 Abs. 2 Nr. 2 GVG
+  - § 40 Abs. 2 S. 1 VwGO
+  - Art. 14 Abs. 3 S. 4 GG
+  - § 17 Abs. 2 GVG
+  quellen:
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  - GVG, amtliche Fassung
+  stand: 2026-10
+schemata:
+- slug: or-schema-sh-amtshaftung
+  title: Amtshaftungsanspruch, § 839 BGB i. V. m. Art. 34 GG
+  norms:
+  - § 839 BGB
+  - Art. 34 GG
+  quellen:
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: 'I. Rechtsweg: ordentliche Gerichte (Landgericht), Art. 34 S. 3 GG, § 71 Abs. 2
+      Nr. 2 GVG'
+  - label: II. Anspruchsvoraussetzungen
+    children:
+    - label: 1. Handeln eines Amtsträgers in Ausübung eines öffentlichen Amtes
+      hinweis: Funktionaler Beamtenbegriff; Verwaltungshelfer als Werkzeug.
+    - label: 2. Verletzung einer Amtspflicht
+    - label: 3. Drittbezogenheit der Amtspflicht
+      hinweis: Schutzzweck der Amtspflicht, vergleichbar mit der Schutznormtheorie.
+    - label: 4. Verschulden (§ 276 BGB, objektivierter Maßstab)
+    - label: 5. Schaden und Kausalität (Schutzzweck der Amtspflicht)
+  - label: III. Haftungsausschlüsse
+    children:
+    - label: 1. Verweisungsprivileg, § 839 Abs. 1 S. 2 BGB
+      hinweis: Nur bei Fahrlässigkeit; nicht bei Teilnahme am allgemeinen Straßenverkehr.
+    - label: 2. Rechtsmittelversäumnis, § 839 Abs. 3 BGB
+    - label: 3. Richterspruchprivileg, § 839 Abs. 2 BGB
+  - label: 'IV. Anspruchsgegner: Körperschaft, Art. 34 S. 1 GG (nicht der Amtsträger)'
+  - label: 'V. Rechtsfolge: Schadensersatz; Rückgriff nach Art. 34 S. 2 GG'
+faelle:
+- slug: or-fall-sh-dienstfahrt-unfall
+  title: Der Unfall auf der Dienstfahrt
+  difficulty: 3
+  minutes: 60
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB und GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  facts: Der Angestellte M des Ordnungsamts der Stadt S fährt mit einem Dienstwagen zu einer
+    Gewerbekontrolle, die er im Auftrag der Behörde durchführen soll. Beim Abbiegen übersieht
+    er fahrlässig das vorfahrtsberechtigte Auto der G. Bei dem Zusammenstoß entsteht an dem
+    Fahrzeug der G ein Sachschaden von 8.000 Euro. Weitere Ersatzmöglichkeiten hat G nicht. Sonderrechte
+    nach der StVO nimmt M nicht in Anspruch. Der Unfall wäre bei Beachtung der Vorfahrtsregeln
+    vermeidbar gewesen.
+  question: Hat G Anspruch auf Ersatz des Schadens gegen die Stadt S oder gegen M? Welches
+    Gericht ist zuständig?
+  steps:
+  - prompt: Handelte M in Ausübung eines öffentlichen Amtes?
+    erwartung: Ja. M erfüllte hoheitliche Aufgaben (Gewerbeüberwachung); die Dienstfahrt steht
+      in engem äußeren und inneren Zusammenhang mit der Aufgabe. M ist Amtsträger im haftungsrechtlichen
+      Sinn, auch als Angestellter.
+  - prompt: Verletzte M eine drittbezogene Amtspflicht und handelte er schuldhaft?
+    erwartung: Ja. Die Verkehrsvorschriften (Vorfahrt) bestehen auch zum Schutz anderer Verkehrsteilnehmer;
+      die Pflicht ist drittgerichtet. Das Übersehen ist fahrlässig (§ 276 BGB).
+  - prompt: Steht das Verweisungsprivileg des § 839 Abs. 1 S. 2 BGB entgegen?
+    erwartung: Nein. Bei Teilnahme am allgemeinen Straßenverkehr ohne Sonderrechte gilt das
+      Verweisungsprivileg nach der Rechtsprechung nicht; im Übrigen hat G keine anderweitige
+      Ersatzmöglichkeit gegen einen Dritten.
+  - prompt: Wer haftet, und welcher Rechtsweg ist eröffnet?
+    erwartung: Anspruchsgegner ist die Stadt S (Haftungsüberleitung, Art. 34 S. 1 GG), nicht
+      M persönlich. Zuständig sind die ordentlichen Gerichte, Landgericht (Art. 34 S. 3 GG,
+      § 71 Abs. 2 Nr. 2 GVG).
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Handeln in Ausübung eines öffentlichen Amtes (funktionaler Beamtenbegriff, enger
+        Zusammenhang mit hoheitlicher Aufgabe)
+      weight: 2.0
+      required: true
+      norms:
+      - § 839 BGB
+      - Art. 34 GG
+      keywords:
+      - Ausübung eines öffentlichen Amtes
+      - haftungsrechtlicher Beamtenbegriff
+      - funktionaler Beamtenbegriff
+      - hoheitliche Aufgabe
+      - enger äußerer und innerer Zusammenhang
+      - Amtsträger
+      card_slugs:
+      - or-sh-oeffentliches-amt
+    - id: p2
+      label: Verletzung einer drittbezogenen Amtspflicht und Verschulden
+      weight: 2.0
+      required: false
+      norms:
+      - § 839 Abs. 1 S. 1 BGB
+      - § 276 BGB
+      keywords:
+      - Amtspflichtverletzung
+      - Drittbezogenheit
+      - drittgerichtet
+      - Schutz der Verkehrsteilnehmer
+      - fahrlässig
+      - § 276 BGB
+      card_slugs:
+      - or-sh-drittbezogenheit
+      - or-sh-verschulden-richterprivileg
+    - id: p3
+      label: Verweisungsprivileg des § 839 Abs. 1 S. 2 BGB verneint (allgemeiner Straßenverkehr)
+      weight: 3.0
+      required: true
+      norms:
+      - § 839 Abs. 1 S. 2 BGB
+      keywords:
+      - Verweisungsprivileg
+      - § 839 Abs. 1 S. 2 BGB
+      - allgemeinen Straßenverkehr
+      - Teilnahme am Straßenverkehr
+      - anderweitige Ersatzmöglichkeit
+      card_slugs:
+      - or-sh-verweisungsprivileg
+    - id: p4
+      label: 'Haftungsüberleitung: Anspruchsgegner ist die Stadt, nicht der Amtsträger, Art.
+        34 S. 1 GG'
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 34 S. 1 GG
+      keywords:
+      - Art. 34 S. 1 GG
+      - Haftungsüberleitung
+      - Körperschaft haftet
+      - Anvertrauenstheorie
+      - Stadt haftet
+      card_slugs:
+      - or-sh-amtshaftung-struktur
+    - id: p5
+      label: Rechtsweg zu den ordentlichen Gerichten, Landgericht
+      weight: 1.0
+      required: false
+      norms:
+      - Art. 34 S. 3 GG
+      - § 71 Abs. 2 Nr. 2 GVG
+      keywords:
+      - Art. 34 S. 3 GG
+      - ordentliche Gerichte
+      - Landgericht
+      - § 71 Abs. 2 Nr. 2 GVG
+      - ordentlicher Rechtsweg
+      card_slugs:
+      - or-sh-rechtsweg

@@ -55,7 +55,7 @@ class GeneratedToolHost extends StatelessWidget {
       return const SubsumoPanel(
         child: SubsumoFeedbackBlock(
           message: 'Werkzeug kann nicht angezeigt werden.',
-          detail: 'Fehlende oder ungueltige Vorschlags-Kennzeichnung.',
+          detail: 'Fehlende oder ungültige Vorschlags-Kennzeichnung.',
           severity: FeedbackSeverity.negative,
         ),
       );

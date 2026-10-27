@@ -9,8 +9,8 @@ topic:
     erzeugt_von: collector-agent-v1
     geprueft_von: reviewer-agent-v1
     geprueft_am: '2026-09-16'
-    status: ki-freigegeben
-    normzitate_geprueft: true
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
 - slug: sr-notwehr-abgestufte-verteidigung
   type: definition
@@ -43,41 +43,16 @@ cards:
   stand: 2026-09
 - slug: sr-notwehr-provokation
   type: streitstand
-  front: 'Streitstand: sozialethische Einschränkung bei Notwehrprovokation'
-  back: 'Problem: Wer den Angriff durch ein vorwerfbares Vorverhalten selbst
+  front: 'Streitstand: Notwehrprovokation (Absichtsprovokation und sonstige vorwerfbare
+    Provokation)'
+  back: |-
+    Problem: Wer den Angriff durch eigenes Vorverhalten herausgefordert hat, soll sich nicht uneingeschränkt auf Notwehr berufen können. Zu trennen sind zwei Fallgruppen.
 
-    herausgefordert hat, soll sich nicht uneingeschränkt auf sein
+    1. Absichtsprovokation: Der Täter provoziert den Angriff gezielt, um den Angreifer unter dem Deckmantel der Notwehr zu verletzen. Nach der Rspr. (BGH) ist das Notwehrrecht hier wegen Rechtsmissbrauchs ausgeschlossen. Teile der Lit. begründen das anders (fehlender Verteidigungswille, Rechtsmissbrauch, actio libera in causa) oder wollen nur das Ausweichgebot anwenden; im Ergebnis ist Notwehr bei echter Absichtsprovokation regelmäßig nicht gerechtfertigt.
 
-    Notwehrrecht berufen können.
+    2. Sonstige (nicht absichtliche) vorwerfbare Provokation: Hat der Täter den Angriff rechtswidrig und vorwerfbar, aber ohne Provokationsabsicht veranlasst, bleibt das Notwehrrecht bestehen, ist aber eingeschränkt (abgestufte Lösung): (1) Ausweichen, wenn möglich; (2) andernfalls nur Schutzwehr; (3) Trutzwehr nur als letztes Mittel, wenn Ausweichen und Schutzwehr nicht ausreichen.
 
-
-    Rspr./h.M. (abgestufte Lösung): Bei einer schuldhaften, das
-
-    Notwehrrecht nicht generell ausschließenden Provokation gilt ein
-
-    dreistufiges Ausweichgebot: (1) Ausweichen, wenn möglich; (2)
-
-    andernfalls nur Schutzwehr; (3) Trutzwehr nur als äußerstes Mittel,
-
-    wenn die Schutzwehr erkennbar nicht ausreicht.
-
-
-    Andere Ansicht (vollständiger Ausschluss bei Absichtsprovokation): Wer
-
-    den Angriff bewusst herbeiführt, um den Angreifer unter dem Deckmantel
-
-    der Notwehr zu verletzen, handelt rechtsmissbräuchlich; das
-
-    Notwehrrecht entfällt vollständig.
-
-
-    Konsequenz: Der Umfang der Einschränkung hängt vom Grad der
-
-    Vorwerfbarkeit der Provokation ab - von leichter Fahrlässigkeit bis
-
-    zur zielgerichteten Absichtsprovokation.
-
-    '
+    Ein sozialadäquates oder rechtmäßiges Vorverhalten schränkt das Notwehrrecht nicht ein.
   norms:
   - § 32 StGB
   quellen:
@@ -116,12 +91,17 @@ cards:
 - slug: sr-notwehrexzess-33
   type: definition
   front: 'Definiere: Notwehrexzess, § 33 StGB'
-  back: Überschreitet der Angegriffene aus Verwirrung, Furcht oder Schrecken die
-    Grenzen der Notwehr, handelt er zwar rechtswidrig, wird aber nicht bestraft (persönlicher
-    Strafausschließungsgrund auf Schuldebene). Erfasst ist nach h.M. nur der intensive
-    Exzess (Überschreitung der erforderlichen Verteidigungsintensität), nicht der
-    extensive Exzess (Verteidigung vor Beginn oder nach Beendigung des Angriffs) -
-    dort fehlt es bereits an einer Notwehrlage.
+  back: 'Überschreitet der Angegriffene aus Verwirrung, Furcht oder Schrecken die
+    Grenzen der Notwehr, handelt er rechtswidrig, ist aber entschuldigt (Entschuldigungsgrund
+    auf der Schuldebene, h.M.). § 33 wird daher erst nach der Rechtswidrigkeit in
+    der Schuld geprüft. Erfasst ist nach h.M. nur der intensive Exzess (Überschreitung
+    der erforderlichen Verteidigungsintensität bei bestehender Notwehrlage). Beim
+    extensiven Exzess (Verteidigung vor Beginn oder nach Beendigung des Angriffs)
+    fehlt die Notwehrlage; die Rspr. wendet § 33 hier nicht an (str.; Teile der Lit.
+    wollen § 33 beim nachzeitigen Exzess analog anwenden). Abgrenzung der Affekte:
+    Nur asthenische Affekte (Verwirrung, Furcht, Schrecken) entschuldigen. Sthenische
+    Affekte wie Wut, Zorn, Hass, Empörung oder Kampfeslust genügen nicht. Reicht ein
+    asthenischer Affekt als Mitmotiv aus, genügt das nach h.M. (Mischmotive).'
   norms:
   - § 33 StGB
   quellen:
@@ -167,14 +147,17 @@ schemata:
       children:
       - label: a) Krasses Missverhältnis (Bagatellangriff)
       - label: b) Angriff erkennbar schuldlos Handelnder
-      - label: c) Vorwerfbare Notwehrprovokation - abgestufte Lösung
+      - label: 'c) Provokation: bei Absichtsprovokation entfällt das Notwehrrecht
+          (Rechtsmissbrauch), bei sonstiger vorwerfbarer Provokation abgestufte Lösung'
       - label: d) Enge persönliche Beziehung
   - label: 'III. Subjektives Rechtfertigungselement: Verteidigungswille'
-  - label: 'IV. Ergebnis: Rechtfertigung (+) oder bei Überschreitung: Prüfung §
-      33 StGB'
+  - label: 'IV. Ergebnis der Rechtfertigungsprüfung: Notwehr (+) bedeutet gerechtfertigt;
+      bei Überschreitung bleibt die Tat rechtswidrig'
+  - label: 'V. Schuld: Notwehrexzess, § 33 StGB (nur bei rechtswidriger Überschreitung)'
     children:
     - label: 1. Überschreitung der Notwehrgrenzen (intensiver Exzess)
-    - label: 2. Verwirrung, Furcht oder Schrecken als Überschreitungsgrund
+    - label: '2. Asthenischer Affekt: Verwirrung, Furcht oder Schrecken (Wut, Zorn,
+        Hass genügen nicht)'
     - label: '3. Rechtsfolge: Entschuldigung, keine Bestrafung'
 faelle:
 - slug: sr-fall-gartenzaunstreit
@@ -190,26 +173,47 @@ faelle:
     "Klartext zu reden" - er rechnet fest damit, dass N handgreiflich wird, und hält
     schon vorsorglich einen schweren Spazierstock bereit. N läuft tatsächlich wutentbrannt
     auf A zu und holt zum Faustschlag aus. A schlägt N sofort mit voller Wucht den
-    Spazierstock gegen den Kopf, obwohl ein Ausweichen zur nahen Haustür möglich
-    gewesen wäre. N erleidet eine schwere Kopfverletzung.
+    Spazierstock gegen den Kopf, obwohl ein Ausweichen zur nahen Haustür möglich gewesen
+    wäre. N erleidet eine schwere Kopfverletzung.
   question: Hat sich A wegen gefährlicher Körperverletzung strafbar gemacht, oder
     ist er nach § 32 StGB gerechtfertigt?
   steps:
+  - prompt: Ist der Tatbestand der gefährlichen Körperverletzung erfüllt?
+    erwartung: Ja - A verletzt N durch den Schlag mit dem Spazierstock (gefährliches
+      Werkzeug, § 224 Abs. 1 Nr. 2 StGB) vorsätzlich.
   - prompt: Liegt eine Notwehrlage vor?
-    erwartung: Ja - der Faustschlag des N ist ein gegenwärtiger, rechtswidriger Angriff
-      auf die körperliche Unversehrtheit des A.
-  - prompt: Ist die Notwehrhandlung durch die Absichtsprovokation eingeschränkt?
-    erwartung: Nach der hier vertretenen Ansicht (Absichtsprovokation) entfällt das
-      Notwehrrecht des A vollständig, weil er den Angriff bewusst herbeigeführt
-      hat, um N unter dem Deckmantel der Notwehr zu verletzen; nach der Gegenansicht
-      (abgestufte Lösung) hätte A jedenfalls ausweichen müssen.
+    erwartung: Ja - der angesetzte Faustschlag des N ist ein gegenwärtiger, rechtswidriger
+      Angriff auf die körperliche Unversehrtheit des A.
+  - prompt: Welche Bedeutung hat die Absichtsprovokation für das Notwehrrecht?
+    erwartung: A hat den Angriff gezielt herbeigeführt, um N unter dem Deckmantel
+      der Notwehr zu verletzen. Nach der Rspr. (BGH) ist ihm das Notwehrrecht wegen
+      Rechtsmissbrauchs versagt; nach der Gegenansicht in Teilen der Lit. besteht
+      es nur eingeschränkt, A hätte dann jedenfalls ausweichen müssen. Die abgestufte
+      Lösung (Ausweichen, Schutzwehr, Trutzwehr) gilt als Regel für die sonstige,
+      nicht absichtliche Provokation.
   - prompt: Welche Konsequenz hat das für die Rechtfertigung?
-    erwartung: 'A ist in keinem Fall gerechtfertigt: Nach der einen Ansicht entfällt
-      § 32 StGB vollständig, nach der anderen scheitert die Erforderlichkeit/Gebotenheit,
-      weil A trotz Ausweichmöglichkeit sofort zur Trutzwehr mit einem gefährlichen
-      Werkzeug griff.'
+    erwartung: 'A ist nicht gerechtfertigt: Nach der Rspr. entfällt § 32 StGB bei
+      Absichtsprovokation; selbst bei Anwendung der abgestuften Lösung scheitert die
+      Rechtfertigung, weil A trotz Ausweichmöglichkeit zur Haustür sofort mit einem
+      gefährlichen Werkzeug zur Trutzwehr griff.'
+  - prompt: Kommt eine Entschuldigung nach § 33 StGB in Betracht?
+    erwartung: Nein - § 33 StGB verlangt einen asthenischen Affekt (Verwirrung, Furcht,
+      Schrecken). A handelte planvoll aus Kampfeslust; Wut oder Zorn als sthenische
+      Affekte genügen nicht. A ist daher wegen gefährlicher Körperverletzung strafbar.
   expectation:
     pruefpunkte:
+    - id: p0
+      label: Tatbestand der gefährlichen Körperverletzung (§ 224 Abs. 1 Nr. 2 StGB,
+        Spazierstock als gefährliches Werkzeug) bejaht
+      weight: 1.0
+      required: false
+      norms:
+      - § 224 Abs. 1 Nr. 2 StGB
+      keywords:
+      - gefährliches Werkzeug
+      - § 224 Abs. 1 Nr. 2
+      - gefährliche Körperverletzung ist tatbestandlich erfüllt
+      card_slugs: []
     - id: p1
       label: 'Notwehrlage bejaht: gegenwärtiger rechtswidriger Angriff des N'
       weight: 2.0
@@ -218,30 +222,43 @@ faelle:
       - § 32 StGB
       - § 32 Abs. 2 StGB
       keywords:
-      - gegenwärtig
-      - rechtswidriger Angriff
+      - gegenwärtiger Angriff
+      - gegenwärtiger rechtswidriger Angriff
+      - Angriff des N
+      - Notwehrlage liegt vor
+      - Notwehrlage ist gegeben
       card_slugs:
       - sr-at-angriff
       - sr-at-notwehr
     - id: p2
-      label: Notwehrprovokation als Problem erkannt und Streitstand dargestellt
+      label: 'Notwehrprovokation als Problem erkannt: Absichtsprovokation (Rspr.:
+        Notwehrrecht entfällt, Rechtsmissbrauch) von sonstiger vorwerfbarer Provokation
+        (abgestufte Lösung) unterschieden'
       weight: 3.0
       required: true
       keywords:
-      - Provokation
       - Absichtsprovokation
-      - abgestufte Lösung
+      - Provokationsabsicht
+      - absichtlich provoziert
+      - Rechtsmissbrauch
+      - rechtsmissbräuchlich
+      - Notwehrrecht entfällt
+      - Notwehrrecht ist verwirkt
+      - Notwehrrecht ist versagt
       card_slugs:
       - sr-notwehr-provokation
     - id: p3
-      label: Ausweichmöglichkeit zur Haustür als Argument gegen Erforderlichkeit
-        der Trutzwehr verarbeitet
+      label: Ausweichmöglichkeit zur Haustür als Argument gegen Erforderlichkeit der
+        Trutzwehr verarbeitet
       weight: 2.5
       required: true
       keywords:
-      - ausweichen
-      - Trutzwehr
-      - erforderlich
+      - Ausweichgebot
+      - hätte ausweichen
+      - ausweichen müssen
+      - Ausweichmöglichkeit
+      - Trutzwehr war nicht erforderlich
+      - Schutzwehr
       card_slugs:
       - sr-notwehr-erforderlichkeit-kriterien
       - sr-notwehr-abgestufte-verteidigung
@@ -250,19 +267,31 @@ faelle:
       weight: 1.5
       required: true
       keywords:
-      - nicht gerechtfertigt
       - keine Rechtfertigung
+      - nicht gerechtfertigt
+      - Notwehr scheidet aus
+      - Rechtfertigung scheidet aus
+      - Rechtfertigung entfällt
       card_slugs:
       - sr-notwehr-provokation
     - id: p5
-      label: Prüfung des § 33 StGB (Notwehrexzess) zumindest angesprochen und mangels
-        Verwirrung/Furcht/Schrecken abgelehnt
+      label: Notwehrexzess, § 33 StGB, als Entschuldigungsgrund angesprochen und mangels
+        asthenischen Affekts (Wut/Kampfeslust sind sthenisch) abgelehnt
       weight: 2.0
       keywords:
-      - § 33
       - Notwehrexzess
-      - Verwirrung
-      - Furcht
-      - Schrecken
+      - sthenisch
+      - asthenisch
+      - Verwirrung, Furcht oder Schrecken
+      - Furcht oder Schrecken
       card_slugs:
       - sr-notwehrexzess-33
+    - id: p6
+      label: Verteidigungswille bzw. Kampfeswille als subjektives Rechtfertigungselement
+        erwähnt
+      weight: 1.0
+      required: false
+      keywords:
+      - Verteidigungswille
+      - Kampfeswille
+      card_slugs: []

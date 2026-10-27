@@ -1,0 +1,285 @@
+topic:
+  slug: sn-kommunalrecht
+  area: oeffentliches-recht
+  title: "Kommunalrecht Sachsen"
+  parent: oeffentliches-recht
+  bundesland: SN
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sn-kom-selbstverwaltung
+  type: definition
+  front: >-
+      Was gewährleistet die kommunale Selbstverwaltung nach Art. 28 Abs. 2 GG, und welche
+      Aufgabenarten gibt es in Sachsen?
+  back: >-
+      Art. 28 Abs. 2 GG garantiert den Gemeinden das Recht, alle Angelegenheiten der örtlichen
+      Gemeinschaft im Rahmen der Gesetze in eigener Verantwortung zu regeln (Allzuständigkeit). Die
+      Garantie umfasst die Rechtssubjektsgarantie, die objektive Rechtsinstitutionsgarantie und die
+      subjektive Rechtsstellungsgarantie. Sie schützt die Gemeindehoheiten, etwa Gebiets-,
+      Organisations-, Personal-, Finanz-, Planungs- und Satzungshoheit. Eingriffe durch Gesetz sind
+      zulässig, soweit der Kernbereich unangetastet bleibt und Aufgaben mit örtlichem Charakter nur
+      aus Gründen des Gemeinwohls, insbesondere zur Sicherung einer ordnungsgemäßen
+      Aufgabenwahrnehmung, entzogen werden (Rastede-Beschluss). Aufgabenarten nach der SächsGemO (§ 2):
+      freiwillige Selbstverwaltungsaufgaben, pflichtige Selbstverwaltungsaufgaben und
+      Weisungsaufgaben; für Selbstverwaltungsaufgaben besteht nur Rechtsaufsicht, für Weisungsaufgaben Fachaufsicht (§ 111 SächsGemO).
+  norms:
+  - "Art. 28 Abs. 2 S. 1 GG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  - "BVerfGE 79, 127 (Rastede)"
+  stand: 2026-10
+- slug: sn-kom-struktur
+  type: definition
+  front: >-
+      Welche Formen kommunaler Zusammenarbeit und welche Gemeindetypen kennt das sächsische
+      Kommunalrecht?
+  back: >-
+      Die SächsGemO gilt für alle Gemeinden. Kleinere Gemeinden können sich zur gemeinsamen Verwaltung
+      zusammenschließen: In der Verwaltungsgemeinschaft nimmt eine erfüllende Gemeinde die
+      Verwaltungsgeschäfte für die beteiligten Gemeinden wahr, im Verwaltungsverband wird eine eigene
+      Körperschaft gebildet; beides ist im Sächsischen Gesetz über kommunale Zusammenarbeit (SächsKomZG; Verwaltungsgemeinschaft §§ 36 ff.) geregelt. Die
+      Mitgliedsgemeinden bleiben rechtlich selbständig und behalten ihre Organe. Hervorzuheben sind die Kreisfreien Städte, die untere Verwaltungsbehörde sind (§ 3 Abs. 4 SächsGemO), und die kreisangehörigen Großen Kreisstädte, die durch Gesetz oder Rechtsverordnung bestimmte zusätzliche Aufgaben wahrnehmen (§ 3 Abs. 2 SächsGemO). In
+      der Klausur ist deshalb zu klären, welche Körperschaft handelt, wer für sie zuständig ist und ob
+      Aufgaben übertragen sind.
+  norms:
+  - § 3 SächsGemO
+  - §§ 36 ff. SächsKomZG
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sn-kom-organe
+  type: definition
+  front: >-
+      Wie sind die Zuständigkeiten von Gemeinderat und Bürgermeister in Sachsen verteilt, und welche
+      Anforderungen gelten für Verpflichtungserklärungen?
+  back: >-
+      Der Gemeinderat legt die Grundsätze für die Verwaltung fest und entscheidet über alle Angelegenheiten der Gemeinde, soweit nicht der Bürgermeister kraft Gesetzes zuständig ist oder der Gemeinderat ihm Angelegenheiten überträgt (§ 28 Abs. 1 SächsGemO); nicht übertragbar sind u. a. Satzungen, Flächennutzungspläne und die Verfügung über Gemeindevermögen von erheblicher wirtschaftlicher Bedeutung (§ 28 Abs. 2 SächsGemO). Der Bürgermeister ist Vorsitzender des Gemeinderats, Leiter der Gemeindeverwaltung und vertritt die Gemeinde (§ 51 Abs. 1 SächsGemO); er erledigt die Geschäfte der laufenden Verwaltung in eigener Zuständigkeit (§ 53 Abs. 2 SächsGemO). Die Abgrenzung der
+      Zuständigkeiten ergibt sich aus der SächsGemO und der Hauptsatzung; ein Beschluss des
+      unzuständigen Organs ist formell rechtswidrig. Verpflichtungserklärungen, mit denen die Gemeinde
+      zu Leistungen verpflichtet werden soll, bedürfen nach § 60 SächsGemO der Schriftform und der handschriftlichen Unterzeichnung durch den Bürgermeister (bei Vertretung durch Stellvertreter, vertretungsberechtigten Beigeordneten oder zwei vertretungsberechtigte Bedienstete); die Formvorschriften gelten nicht für Geschäfte der laufenden Verwaltung (§ 60 Abs. 4 SächsGemO). Diese
+      Formvorschriften sind nach h. M. Vertretungsregelungen; ein Verstoß macht die Erklärung
+      unwirksam, sie bindet die Gemeinde nicht.
+  norms:
+  - § 28 SächsGemO
+  - § 53 SächsGemO
+  - § 60 SächsGemO
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sn-kom-satzung
+  type: norm
+  front: >-
+      Welche Anforderungen stellt das Recht in Sachsen an eine gemeindliche Satzung?
+  back: >-
+      Die Gemeinden können ihre Angelegenheiten durch Satzung regeln (Satzungshoheit). Eine allgemeine
+      Satzungsermächtigung in der SächsGemO genügt für Eingriffe in Grundrechte allerdings nicht; nach
+      der Wesentlichkeitstheorie braucht es eine spezielle gesetzliche Ermächtigung (z. B. für
+      Anschluss- und Benutzungszwang oder Abgaben). Prüfungsaufbau: I. Ermächtigungsgrundlage. II.
+      Formelle Rechtmäßigkeit: Zuständigkeit des Gemeindeorgans (Gemeinderat), Verfahren
+      (Beschlussfassung, Mitwirkungsverbote), Ausfertigung und ordnungsgemäße öffentliche
+      Bekanntmachung. III. Materielle Rechtmäßigkeit: Vereinbarkeit mit höherrangigem Recht,
+      Bestimmtheit, Verhältnismäßigkeit, Gleichheitssatz. Rechtsfolge eines Fehlers ist grundsätzlich
+      Nichtigkeit; die Gemeindeordnungen enthalten jedoch Unbeachtlichkeits- und Heilungsvorschriften
+      für bestimmte Verfahrens- und Formfehler, die in der Klausur gesondert zu prüfen sind.
+      Satzungen beschließt der Gemeinderat (§ 4 Abs. 1 S. 3 SächsGemO), sie sind vom Bürgermeister auszufertigen und öffentlich bekanntzumachen (§ 4 Abs. 3 SächsGemO); nach § 4 Abs. 4 SächsGemO gelten Satzungen, die unter Verletzung von Verfahrens- oder Formvorschriften zustande gekommen sind, ein Jahr nach Bekanntmachung als gültig, außer in den Fällen des Satzes 2 (u. a. fehlerhafte Ausfertigung, Verletzung von Öffentlichkeits- und Bekanntmachungsvorschriften, rechtzeitige Rüge). Rechtsschutz: Normenkontrolle nach § 47 Abs. 1 Nr. 2 VwGO; in Sachsen eröffnet § 24 SächsJG das Verfahren vor dem Oberverwaltungsgericht gegen Rechtsvorschriften im Rang unter dem Landesgesetz.
+  norms:
+  - "§ 4 SächsGemO"
+  - "§ 24 SächsJG"
+  - "§ 47 VwGO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sn-kom-anschlusszwang
+  type: norm
+  front: >-
+      Unter welchen Voraussetzungen darf die Gemeinde einen Anschluss- und Benutzungszwang anordnen?
+  back: >-
+      Der Anschluss- und Benutzungszwang verpflichtet Grundstückseigentümer und Nutzer, ein Grundstück
+      an eine gemeindliche Einrichtung anzuschließen und die Einrichtung zu benutzen (nach § 14 Abs. 1 SächsGemO Wasserversorgung, Abwasserableitung und -reinigung, Fernwärmeversorgung und ähnliche dem öffentlichen Wohl, insbesondere dem Umweltschutz dienende Einrichtungen sowie Bestattungs- und Abfallbeseitigungseinrichtungen und Schlachthöfe). Er ist
+      ein Eingriff in Art. 2 Abs. 1, Art. 12 und Art. 14 GG und bedarf einer gesetzlichen Ermächtigung
+      in der Gemeindeordnung, die die Gemeinde durch Satzung ausfüllt. Tatbestand (§ 14 Abs. 1 SächsGemO): öffentliches Bedürfnis; Satzung; Bestehen einer der genannten Einrichtungen; Verhältnismäßigkeit. Die Satzung kann Ausnahmen zulassen und den Zwang auf Teile des Gemeindegebiets oder bestimmte Gruppen beschränken (§ 14 Abs. 2 SächsGemO); aus Verhältnismäßigkeit und Art. 14 GG ergibt sich in Härtefällen ein Befreiungsbedarf. Ob weitere Gemeinwohlgründe (etwa Klimaschutz) erfasst sind, ist dem Wortlaut („insbesondere dem Umweltschutz“) nicht ausdrücklich zu entnehmen.
+  norms:
+  - "§ 14 SächsGemO"
+  - "Art. 2 Abs. 1 GG"
+  - "Art. 12 Abs. 1 GG"
+  - "Art. 14 Abs. 1 GG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sn-kom-aufsicht
+  type: streitstand
+  front: >-
+      Welche Arten der Kommunalaufsicht gibt es, und welchen Rechtsschutz hat die Gemeinde?
+  back: >-
+      Bei Selbstverwaltungsaufgaben besteht nur Rechtsaufsicht: Die Aufsichtsbehörde prüft die
+      Rechtmäßigkeit, nicht die Zweckmäßigkeit. Bei Weisungsaufgaben (Auftragsangelegenheiten) besteht
+      Fachaufsicht mit Weisungsrecht auch hinsichtlich der Zweckmäßigkeit. Rechtsaufsichtsbehörde ist für kreisangehörige Gemeinden das Landratsamt, für Kreisfreie Städte die Landesdirektion Sachsen (§ 112 SächsGemO). Die Aufsichtsmittel sind abgestuft (§§ 113 bis 117 SächsGemO): Information, Beanstandung rechtswidriger Beschlüsse, Anordnung, Ersatzvornahme,
+      Bestellung eines Beauftragten; die Behörde entscheidet nach pflichtgemäßem Ermessen
+      (Opportunitätsprinzip). Rechtsschutz der Gemeinde: Nach h. M. sind Aufsichtsmaßnahmen gegenüber
+      der Gemeinde Verwaltungsakte, weil sie in die Selbstverwaltungsgarantie (Art. 28 Abs. 2 GG)
+      eingreifen; statthaft ist die Anfechtungsklage. Die früher vertretene Gegenansicht sah in der
+      Aufsicht eine Maßnahme im staatlichen Innenbereich ohne Außenwirkung; sie wird wegen der eigenen
+      Rechtsstellung der Gemeinde überwiegend abgelehnt.
+  norms:
+  - "§§ 111 ff. SächsGemO"
+  - "Art. 28 Abs. 2 S. 1 GG"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sn-kom-buergerbegehren
+  type: definition
+  front: >-
+      Wie funktionieren Bürgerbegehren und Bürgerentscheid, und welche Zulässigkeitsprobleme sind
+      typisch?
+  back: >-
+      Mit dem Bürgerbegehren verlangen die Bürger, dass über eine Gemeindeangelegenheit ein
+      Bürgerentscheid stattfindet; dieser ersetzt den Beschluss des Gemeindeorgans. Zulässigkeitsvoraussetzungen nach § 25 SächsGemO: Schriftform (elektronisch ausgeschlossen), Unterschriften von mindestens 5 Prozent der Bürger, ein mit Ja oder Nein zu entscheidender Entscheidungsvorschlag mit Begründung, Vertrauensperson und Stellvertreter, durchführbarer Kostendeckungsvorschlag, vorherige Anzeige bei der Gemeinde; richtet sich das Begehren gegen einen Gemeinderatsbeschluss, muss es innerhalb von drei Monaten nach Bekanntgabe eingereicht werden. Ausgeschlossen sind nach § 24 Abs. 2 SächsGemO u. a. Weisungsaufgaben, Fragen der inneren Organisation, Haushaltssatzungen, Gemeindeabgaben, Tarife und Entgelte sowie Rechtsverhältnisse der Gemeinderäte, des Bürgermeisters und der Bediensteten. Über die Zulässigkeit entscheidet der Gemeinderat; über den Widerspruch entscheidet die Rechtsaufsichtsbehörde (§ 25 Abs. 4 SächsGemO). Der Bürgerentscheid ist angenommen bei Mehrheit der gültigen Stimmen, die mindestens 25 Prozent der Stimmberechtigten beträgt (§ 24 Abs. 3 SächsGemO).
+  norms:
+  - § 24 SächsGemO
+  - § 25 SächsGemO
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+- slug: sn-kom-mitwirkung
+  type: definition
+  front: >-
+      Wann gilt ein Mitwirkungsverbot für Mitglieder des Gemeindeorgans, und was folgt aus einem
+      Verstoß?
+  back: >-
+      Ein ehrenamtlich Tätiger (auch Gemeinderat) darf nach § 20 Abs. 1 SächsGemO weder beratend noch entscheidend mitwirken, wenn die Entscheidung ihm selbst oder bestimmten Personen (u. a. Ehegatte, Lebenspartner, Verwandte bis zum dritten, Verschwägerte bis zum zweiten Grad, von ihm vertretene Personen, Arbeitgeber, bestimmte Gesellschaften) einen unmittelbaren Vorteil oder Nachteil bringen kann. Unmittelbarkeit bedeutet: Die Entscheidung berührt das
+      Sonderinteresse des Betroffenen ohne weiteren Vollzugsakt; die Verbote gelten nicht für Wahlen und nicht, wenn nur die gemeinsamen Interessen einer Berufs- oder Bevölkerungsgruppe berührt werden (§ 20 Abs. 2 SächsGemO). Beispiel: Eigentümer
+      eines Grundstücks im Plangebiet bei der Beschlussfassung über den Bebauungsplan. Das betroffene Mitglied hat die Befangenheit vor Beginn der Beratung mitzuteilen und die Sitzung zu verlassen (bei öffentlicher Sitzung darf es als Zuhörer bleiben; § 20 Abs. 3, 4 SächsGemO). Ein Verstoß macht den Beschluss rechtswidrig (§ 20 Abs. 5 S. 1 SächsGemO); eine ausdrückliche Kausalitätsklausel enthält der Wortlaut nicht. Der Beschluss gilt jedoch ein Jahr nach der Beschlussfassung bzw. Bekanntmachung als von Anfang an gültig zustande gekommen, sofern der Verstoß nicht rechtzeitig gerügt oder beanstandet wurde (§ 20 Abs. 5 S. 2 SächsGemO i. V. m. § 4 Abs. 4 S. 2 Nr. 3, 4 und S. 3). Bei Satzungen gilt zusätzlich § 4 Abs. 4 SächsGemO.
+  norms:
+  - "§ 20 SächsGemO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  stand: 2026-10
+schemata:
+- slug: sn-schema-kom-mitwirkungsverbot
+  title: >-
+      Mitwirkungsverbot und Fehlerfolgen bei Gemeinderatsbeschlüssen (SächsGemO)
+  norms:
+  - "§ 20 SächsGemO"
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  steps:
+  - label: "I. Mitwirkungsverbot des Ratsmitglieds"
+    children:
+    - label: >-
+        1. Entscheidungsgegenstand und Betroffenheit (Mitglied, Angehörige, vertretene Dritte)
+    - label: "2. Unmittelbarer Vorteil oder Nachteil"
+      hinweis: "Abgrenzung zum Gruppeninteresse; kein Vollzugsakt dazwischen."
+    - label: "3. Ausnahmen (Wahlen, Gruppeninteresse)"
+  - label: "II. Verfahrensfehler durch Mitwirkung"
+    children:
+    - label: "1. Teilnahme an Beratung und Abstimmung trotz Verbots"
+    - label: >-
+        2. Ergebnisrelevanz: war die Stimme für das Ergebnis ausschlaggebend?
+      hinweis: "Abstimmungsergebnis ohne die Stimme des Befangenen berechnen; § 20 Abs. 5 S. 1 SächsGemO knüpft die Rechtswidrigkeit nach dem Wortlaut allein an den Verstoß."
+  - label: "III. Rechtsfolge für den Beschluss"
+    children:
+    - label: "1. Rechtswidrigkeit des Beschlusses (§ 20 Abs. 5 S. 1 SächsGemO)"
+    - label: "2. Unbeachtlichkeit nach einem Jahr (§ 20 Abs. 5 S. 2 SächsGemO)"
+      hinweis: "Fristen und Rügeerfordernis gesondert prüfen."
+faelle:
+- slug: sn-fall-kom-mitwirkungsverbot-bplan
+  title: "Der Eigentümer im Plangebiet"
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - "Landesgesetze in der amtlichen Fassung (Landesrechtsportal)"
+  - "Eigenformulierung Redaktion"
+  facts: >-
+      Der Gemeinderat einer sächsischen Stadt beschließt als Satzung einen Bebauungsplan, der ein
+      bisher landwirtschaftlich genutztes Gebiet zum Wohngebiet macht. Ratsmitglied R ist Eigentümer
+      eines Grundstücks, das mitten im Plangebiet liegt und durch die Planung erheblich im Wert
+      steigt. R nimmt an der Beratung teil und stimmt für den Plan. Der Beschluss ergeht mit 11 zu 10
+      Stimmen bei 21 anwesenden Mitgliedern; ohne die Stimme des R wäre das Ergebnis 10 zu 10. Der
+      Bürgermeister hatte die Frage der Befangenheit nicht angesprochen.
+  question: >-
+      Durfte R mitwirken, und ist der Beschluss deshalb rechtswidrig? Auf Unbeachtlichkeits- und
+      Heilungsvorschriften ist nicht einzugehen.
+  steps:
+  - prompt: "Liegt ein Mitwirkungsverbot vor?"
+    erwartung: >-
+        Ja, es besteht ein Mitwirkungsverbot wegen Befangenheit. Die Entscheidung kann R einen unmittelbaren Vorteil bringen: Als Eigentümer eines
+        Grundstücks im Plangebiet erfährt er einen erheblichen Wertzuwachs (Sonderinteresse). Es handelt sich nicht um ein
+        bloßes Gruppeninteresse, das R mit einer Vielzahl von Personen teilt.
+  - prompt: "Welche Verpflichtung hatte R, und wie hat er sich verhalten?"
+    erwartung: >-
+        R musste sich als befangen offenbaren, durfte weder an der Beratung noch an der Abstimmung
+        teilnehmen und hätte den Beratungsraum verlassen müssen. Er hat stattdessen mitgestimmt.
+  - prompt: "War die Mitwirkung für das Ergebnis ausschlaggebend?"
+    erwartung: >-
+        Ja. Die Stimme des R war ausschlaggebend: Mit ihr ergibt sich 11 zu 10, ohne sie bestünde Stimmengleichheit (10 zu 10) und der Plan wäre nicht beschlossen. Die Mitwirkung war damit kausal für das Ergebnis (nach dem Wortlaut des § 20 Abs. 5 S. 1 SächsGemO ist dies nicht Voraussetzung der Rechtswidrigkeit, unterstreicht hier aber den Verstoß).
+  - prompt: "Wie ist der Beschluss zu beurteilen?"
+    erwartung: >-
+        Der Beschluss ist verfahrensfehlerhaft (Verfahrensfehler) unter Verstoß gegen § 20 Abs. 1, 4 SächsGemO zustande gekommen und damit nach § 20 Abs. 5 S. 1 SächsGemO formell rechtswidrig.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: >-
+          Mitwirkungsverbot wegen unmittelbaren Vorteils bejaht (Wertzuwachs des Grundstücks im
+          Plangebiet)
+      weight: 3.0
+      required: true
+      keywords:
+      - "Mitwirkungsverbot"
+      - "unmittelbarer Vorteil"
+      - "unmittelbaren Vorteil"
+      - "Befangenheit"
+      - "befangen"
+      - "Sonderinteresse"
+      - "Wertzuwachs"
+      card_slugs:
+      - "sn-kom-mitwirkung"
+    - id: p2
+      label: "Abgrenzung zum Gruppeninteresse"
+      weight: 1.0
+      required: false
+      keywords:
+      - "Gruppeninteresse"
+      - "Vielzahl von Personen"
+      - "Sonderinteresse"
+      card_slugs:
+      - "sn-kom-mitwirkung"
+    - id: p3
+      label: >-
+          Kausalität für das Abstimmungsergebnis (ausschlaggebende Stimme) geprüft
+      weight: 2.5
+      required: true
+      keywords:
+      - "ausschlaggebend"
+      - "Stimme des R"
+      - "kausal"
+      - "kausal für das Ergebnis"
+      - "ohne die Stimme"
+      card_slugs:
+      - "sn-kom-mitwirkung"
+    - id: p4
+      label: >-
+          Ergebnis: Verfahrensfehler, Beschluss formell rechtswidrig
+      weight: 1.5
+      required: false
+      keywords:
+      - "Verfahrensfehler"
+      - "formell rechtswidrig"
+      - "Rechtswidrigkeit des Beschlusses"
+      - "fehlerhaftes Zustandekommen"
+      card_slugs:
+      - "sn-kom-satzung"
+    normzitate_geprueft: false

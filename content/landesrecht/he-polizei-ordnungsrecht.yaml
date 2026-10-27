@@ -5,92 +5,334 @@ topic:
   parent: or-sicherheitsrecht-generalklausel-standardmassnahmen
   bundesland: HE
   relevance: 4
-  stand: 2026-09
+  stand: 2026-10
   redaktion:
-    erzeugt_von: claude-code (Redaktionsentwurf)
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
     status: in-pruefung
     normzitate_geprueft: false
 cards:
 - slug: he-por-generalklausel
   type: norm
-  front: Wo steht die polizeiliche Generalklausel in Hessen und was setzt sie voraus?
-  back: 'Fundstelle: § 11 HSOG. Die Generalklausel ermaechtigt zu den notwendigen Massnahmen, um eine
-    im Einzelfall bestehende Gefahr fuer die oeffentliche Sicherheit oder Ordnung abzuwehren. Sie ist
-    subsidiaer: Greift eine Standardmassnahme oder ein Spezialgesetz, geht dieses vor. Auf der Rechtsfolgenseite
-    besteht Ermessen, begrenzt durch den Grundsatz der Verhaeltnismaessigkeit.'
+  front: Wo steht die Generalklausel im HSOG und was setzt sie voraus?
+  back: >-
+    Fundstelle: § 11 HSOG. Die Gefahrenabwehrbehörden und die Polizeibehörden können die erforderlichen
+    Maßnahmen treffen, um eine im Einzelfall bestehende Gefahr für die öffentliche Sicherheit oder Ordnung
+    abzuwehren, soweit nicht die Befugnisse in den §§ 12 ff. HSOG besonders geregelt sind. Das HSOG ist
+    ein einheitliches Gesetz für beide Behördenarten. Die Generalklausel ist gegenüber Standardmaßnahmen
+    und Spezialgesetzen subsidiär. Sie setzt eine konkrete Gefahr voraus, die Rechtsfolge steht im pflichtgemäßen
+    Ermessen und wird vom Verhältnismäßigkeitsgrundsatz begrenzt. Ein Verstoß gegen Rechtsnormen verletzt
+    die öffentliche Sicherheit.
   norms:
   - § 11 HSOG
-  quellen:
-  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
-  - Eigenformulierung Redaktion
-  stand: 2026-09
-- slug: he-por-standardmassnahmen
-  type: norm
-  front: Wo stehen die polizeilichen Standardmassnahmen in Hessen?
-  back: '§§ 12 ff. HSOG - unter anderem Identitaetsfeststellung, Platzverweis, Gewahrsam, Durchsuchung
-    von Personen und Sachen, Sicherstellung. Standardmassnahmen sind abschliessende Spezialregelungen:
-    Liegen ihre Voraussetzungen nicht vor, darf nicht auf die Generalklausel ausgewichen werden (Sperrwirkung).'
-  norms:
   - §§ 12 ff. HSOG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
-  stand: 2026-09
+  stand: 2026-10
+- slug: he-por-gefahrbegriffe
+  type: definition
+  front: Welche Gefahrbegriffe unterscheidet das HSOG?
+  back: >-
+    Das HSOG verwendet den Begriff der Gefahr in § 11 HSOG als im einzelnen Falle bestehende Gefahr für die öffentliche Sicherheit oder Ordnung (konkrete Gefahr); nach allgemeiner Lehre besteht sie bei hinreichender Wahrscheinlichkeit eines Schadenseintritts in absehbarer Zeit (Prognose ex ante). Abstrakte
+    Gefahr: nach allgemeiner Lebenserfahrung typischerweise entstehende Gefahr; sie rechtfertigt Gefahrenabwehrverordnungen,
+    nicht den Einzelfalleingriff. Die Gesetzessprache kennt zudem gesteigerte Gefahrbegriffe (gegenwärtige
+    Gefahr: der Schaden ist eingetreten oder steht unmittelbar bevor; erhebliche Gefahr: bedeutsames Rechtsgut),
+    die einzelne Befugnisse voraussetzen. Daneben ist die Gefahr im Verzug als Eilfallregel bedeutsam.
+  norms:
+  - § 11 HSOG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: he-por-schutzgueter
+  type: definition
+  front: Was umfassen die Schutzgüter öffentliche Sicherheit und Ordnung?
+  back: >-
+    Öffentliche Sicherheit: Unversehrtheit der objektiven Rechtsordnung, der subjektiven Rechte und Rechtsgüter
+    des Einzelnen sowie des Staates und seiner Einrichtungen. Jeder Verstoß gegen Strafnormen und zwingende
+    öffentlich-rechtliche Vorschriften verletzt die öffentliche Sicherheit. Öffentliche Ordnung: die Gesamtheit
+    der ungeschriebenen Regeln, deren Beachtung nach den herrschenden sozialen und ethischen Anschauungen
+    als unerlässliche Voraussetzung eines geordneten staatsbürgerlichen Gemeinschaftslebens gilt. Wegen
+    Wandelbarkeit und Bestimmtheitsproblemen wird die öffentliche Ordnung zurückhaltend herangezogen;
+    Beispiele: Verhalten, das gegen Mindeststandards der Menschenwürde verstößt. Die Abgrenzung ist stets
+    zu begründen.
+  norms:
+  - § 11 HSOG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: he-por-standardmassnahmen
+  type: norm
+  front: Welche Standardmaßnahmen enthält das HSOG?
+  back: >-
+    Die Standardmaßnahmen stehen im HSOG ab § 12: u. a. Befragung (§ 12), Identitätsfeststellung (§ 18),
+    Platzverweisung und Aufenthaltsverbot (§ 31), Gewahrsam (§ 32), Durchsuchung (ab § 36) und Sicherstellung.
+    Sie gelten für Gefahrenabwehr- und Polizeibehörden nach Maßgabe ihrer Zuständigkeit. Die Standardmaßnahmen
+    sind spezielle Eingriffsgrundlagen für typische Maßnahmen; liegen ihre Voraussetzungen nicht vor,
+    darf nicht auf § 11 HSOG zurückgegriffen werden (Sperrwirkung). Freiheitsentziehungen stehen unter
+    Richtervorbehalt (Art. 104 Abs. 2 GG).
+  norms:
+  - §§ 12 ff. HSOG
+  - § 31 HSOG
+  - § 32 HSOG
+  - Art. 104 Abs. 2 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: he-por-verhaeltnismaessigkeit
+  type: definition
+  front: Welche Grenzen setzen Ermessen und Verhältnismäßigkeit im HSOG?
+  back: >-
+    Das HSOG verlangt, dass die Behörde nach pflichtgemäßem Ermessen handelt (§ 5 HSOG) und von mehreren
+    möglichen und geeigneten Maßnahmen diejenige trifft, die den Einzelnen und die Allgemeinheit am wenigsten
+    beeinträchtigt (§ 4 HSOG, Verhältnismäßigkeit). Eine Maßnahme darf nicht zu einem Nachteil führen,
+    der zum erstrebten Erfolg erkennbar außer Verhältnis steht, und ist nur solange zulässig, bis ihr
+    Zweck erreicht ist. Zu prüfen sind legitimer Zweck, Eignung, Erforderlichkeit und Angemessenheit.
+    Ermessensfehler (Nichtgebrauch, Überschreitung, Fehlgebrauch) führen zur Rechtswidrigkeit (§ 114 VwGO,
+    § 40 HVwVfG).
+  norms:
+  - § 5 HSOG
+  - § 4 HSOG
+  - § 114 VwGO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: he-por-anscheinsgefahr
+  type: streitstand
+  front: Anscheinsgefahr, Putativgefahr und Gefahrenverdacht - was ist rechtmäßig?
+  back: >-
+    Anscheinsgefahr: Nach objektiver Betrachtung ex ante bestehen hinreichende Anhaltspunkte für eine
+    Gefahr, die sich später als nicht bestehend erweist. Das Einschreiten ist rechtmäßig, weil die Gefahrenprognose
+    maßgeblich ist. Streitig ist die Kostenfolge: Die h. M. lässt die Heranziehung des Anscheinsstörers
+    zu, wenn er den Anschein zurechenbar verursacht hat; die Gegenmeinung sieht ihn mangels objektiver
+    Gefahr nur als Nichtverantwortlichen. Putativgefahr: Der Beamte nimmt irrig eine Gefahr an, ohne dass
+    objektive Anhaltspunkte vorlagen; die Maßnahme ist rechtswidrig. Gefahrenverdacht: Ungewissheit über
+    das Bestehen der Gefahr; Gefahrerforschungseingriffe sind zulässig.
+  norms:
+  - § 11 HSOG
+  - § 6 HSOG
+  - § 9 HSOG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: he-por-stoerer
+  type: norm
+  front: Wo sind Verhaltensstörer, Zustandsstörer und Nichtverantwortliche im HSOG geregelt?
+  back: >-
+    Verhaltensverantwortlichkeit: § 6 HSOG (Verursachung der Gefahr durch eigenes Verhalten oder durch
+    Personen, die zu beaufsichtigen sind). Zustandsverantwortlichkeit: § 7 HSOG (Eigentümer und Inhaber
+    der tatsächlichen Gewalt über die gefährliche Sache). Nichtverantwortliche Personen: § 9 HSOG - Inanspruchnahme
+    nur bei gegenwärtiger erheblicher Gefahr, wenn Maßnahmen gegen Verantwortliche nicht oder nicht rechtzeitig
+    möglich sind, die Behörde nicht selbst oder durch Beauftragte abwehren kann und der Nichtverantwortliche
+    ohne erhebliche eigene Gefährdung und ohne Verletzung höherwertiger Pflichten herangezogen wird. Die
+    Verursachung wird nach der Theorie der unmittelbaren Verursachung beurteilt. Die Maßnahme ist zeitlich
+    zu beschränken.
+  norms:
+  - § 6 HSOG
+  - § 7 HSOG
+  - § 9 HSOG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: he-por-stoererauswahl
+  type: streitstand
+  front: Nach welchen Kriterien wird zwischen mehreren Verantwortlichen ausgewählt?
+  back: >-
+    Bei mehreren Verantwortlichen entscheidet die Behörde nach pflichtgemäßem Ermessen (Auswahlermessen).
+    Maßgebend ist die effektive Gefahrenabwehr: Heranzuziehen ist, wer die Gefahr am schnellsten und wirksamsten
+    beseitigen kann. Ein Vorrang des Verhaltensstörers wird teilweise vertreten, gilt aber nur bei gleicher
+    Effektivität; die Behörde darf den leistungsfähigen Zustandsstörer wählen, wenn der Verhaltensstörer
+    nicht greifbar oder zahlungsunfähig ist. Zivilrechtliche Rückgriffsansprüche bleiben unberührt und
+    beeinflussen die Rechtmäßigkeit nicht. Bei Zustandsstörern kann die Haftung durch die Opfergrenze
+    beschränkt sein (Verhältnismäßigkeit, Art. 14 GG).
+  norms:
+  - § 6 HSOG
+  - § 7 HSOG
+  - § 114 VwGO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: he-por-zustaendigkeit
+  type: definition
+  front: Wer ist in Hessen für die Gefahrenabwehr zuständig?
+  back: >-
+    Das HSOG unterscheidet Gefahrenabwehrbehörden (Behörden der allgemeinen Verwaltung, §§ 82 ff. HSOG, und Ordnungsbehörden: Ministerien als Landesordnungsbehörden, Regierungspräsidien, Landräte und Oberbürgermeister in kreisfreien Städten, Bürgermeister als örtliche Ordnungsbehörden, § 85 HSOG) und Polizeibehörden. Die Gefahrenabwehrbehörden sind grundsätzlich für die Gefahrenabwehr zuständig; Ordnungs- und Polizeibehörden werden nur tätig, soweit die Abwehr der Gefahr durch andere Behörden mit Gefahrenabwehraufgaben nicht oder nicht rechtzeitig möglich erscheint (§ 2 S. 1 HSOG, mit Ausnahme der Fälle des § 1 Abs. 1 S. 2 HSOG); die Polizeibehörden haben zudem die vorbeugende Bekämpfung von Straftaten (§ 1 Abs. 4 HSOG). Handelt die unzuständige Behörde, ist die Maßnahme formell
+    rechtswidrig; § 46 HVwVfG kann einschlägig sein. Die Zuständigkeit ist deshalb vor der Frage, welches
+    Verfahren gilt, zu prüfen.
+  norms:
+  - § 1 HSOG
+  - § 2 HSOG
+  - § 46 HVwVfG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: he-por-vollstreckung
+  type: norm
+  front: Wie wird eine Gefahrenabwehrverfügung in Hessen vollstreckt?
+  back: >-
+    Den Verwaltungszwang für ordnungsbehördliche und polizeiliche Verwaltungsakte regelt das HSOG selbst (§§ 47 ff. HSOG); daneben gilt das Hessische Verwaltungsvollstreckungsgesetz (HessVwVG) für die dort geregelten Fälle. Zwangsmittel sind Ersatzvornahme (§ 49), Zwangsgeld (§ 50) und unmittelbarer Zwang (§ 52 HSOG; Ersatzzwangshaft § 51), die nach §§ 53 und 58 HSOG anzudrohen sind (§ 48 HSOG). Im gestreckten Verfahren sind Grundverfügung, Androhung, Festsetzung und Anwendung zu prüfen. Der Verwaltungszwang kann ohne vorausgehenden Verwaltungsakt angewendet werden, wenn dies zur Abwehr einer Gefahr erforderlich ist, insbesondere weil Maßnahmen gegen Personen nach den §§ 6 bis 9 nicht rechtzeitig möglich sind oder keinen Erfolg versprechen, und die Behörde hierbei innerhalb ihrer Befugnisse handelt (§ 47 Abs. 2 HSOG); daneben kommt die unmittelbare Ausführung nach § 8 HSOG in Betracht. Kosten der Ersatzvornahme trägt der Pflichtige.
+  norms:
+  - §§ 47 ff. HSOG
+  - HessVwVG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: he-por-kosten-rechtsschutz
+  type: definition
+  front: Welche Ersatz- und Rechtsschutzmöglichkeiten bestehen in Hessen?
+  back: >-
+    Wer infolge einer rechtmäßigen Inanspruchnahme nach § 9 HSOG einen Schaden erleidet, dem ist ein angemessener Ausgleich zu gewähren; das Gleiche gilt bei Schäden durch rechtswidrige Maßnahmen der Gefahrenabwehr- oder Polizeibehörden (§ 64 Abs. 1 HSOG; Inhalt und Umfang § 65, Rechtsweg § 70 HSOG). Daneben bestehen
+    Amtshaftung (§ 839 BGB, Art. 34 GG) und Aufopferung. Rechtsschutz: Anfechtungsklage gegen Verwaltungsakte
+    (§ 42 Abs. 1 Var. 1 VwGO); ob ein Vorverfahren nach § 68 VwGO erforderlich ist, richtet sich nach
+    dem hessischen Landesrecht (§ 16a HessAGVwGO und Anlage: Vorverfahren entfällt nur in den dort aufgeführten Fällen, ferner bei Verwaltungsakten des Regierungspräsidiums; für allgemeine Gefahrenabwehrverfügungen ist die Anlage nicht einschlägig; Rechtsbehelfe gegen Maßnahmen der Verwaltungsvollstreckung haben keine aufschiebende Wirkung, § 16 HessAGVwGO). Nach Erledigung ist die Fortsetzungsfeststellungsklage
+    analog § 113 Abs. 1 S. 4 VwGO statthaft. Vorläufiger Rechtsschutz: § 80 Abs. 5 VwGO. Freiheitsentziehungen
+    sind richterlich zu überprüfen (Art. 104 GG).
+  norms:
+  - § 9 HSOG
+  - § 64 HSOG
+  - § 839 BGB
+  - Art. 34 GG
+  - § 113 Abs. 1 S. 4 VwGO
+  - Art. 104 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
 - slug: he-por-aufbau
   type: schema_step
-  front: 'Aufbau: Rechtmaessigkeit einer Gefahrenabwehrmassnahme nach dem Landesrecht von Hessen'
-  back: 'I. Ermaechtigungsgrundlage (Hessisches Gesetz ueber die oeffentliche Sicherheit und Ordnung (HSOG):
-    Standardmassnahme vor Generalklausel). II. Formelle Rechtmaessigkeit: 1. Zustaendigkeit (sachlich:
-    welche Behoerde - Gefahrenabwehrbehoerden (allgemeine Ordnungsbehoerden) und Polizeibehoerden - beide
-    im HSOG (§§ 1 ff.); Polizei bei Eilbeduerftigkeit (§ 2 HSOG); oertlich; instanziell), 2. Verfahren
-    (Anhoerung, § 28 VwVfG bzw. Landesrecht), 3. Form. III. Materielle Rechtmaessigkeit: 1. Tatbestand
-    (Schutzgut, Gefahrbegriff, Gefahrenprognose ex ante), 2. richtiger Adressat (Stoerer: §§ 6, 7, 9 HSOG),
-    3. Rechtsfolge: Ermessen und Verhaeltnismaessigkeit (geeignet, erforderlich, angemessen).'
+  front: 'Aufbau: Rechtmäßigkeit einer Gefahrenabwehrmaßnahme nach dem HSOG'
+  back: >-
+    I. Ermächtigungsgrundlage (Standardmaßnahme §§ 12 ff. HSOG vor Generalklausel § 11 HSOG). II. Formelle
+    Rechtmäßigkeit: Zuständigkeit (Gefahrenabwehrbehörde, Polizeibehörde bei Eilfall), Verfahren (Anhörung
+    § 28 HVwVfG), Form. III. Materielle Rechtmäßigkeit: Tatbestand (Schutzgut, konkrete Gefahr), Adressat
+    (§§ 6, 7, 9 HSOG), Ermessen und Verhältnismäßigkeit. IV. Vollstreckung nach §§ 47 ff. HSOG (ergänzend HessVwVG).
+  norms:
+  - § 11 HSOG
+  - §§ 6, 7, 9 HSOG
+  - § 28 HVwVfG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: he-schema-por-massnahme
+  title: Prüfung einer Gefahrenabwehrmaßnahme nach dem HSOG
   norms:
   - § 11 HSOG
   - §§ 6, 7, 9 HSOG
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
-  stand: 2026-09
-- slug: he-por-stoerer
-  type: norm
-  front: Wo sind Verhaltensstoerer, Zustandsstoerer und Nichtstoerer in Hessen geregelt?
-  back: '§§ 6, 7, 9 HSOG. Verhaltensstoerer: wer die Gefahr durch sein Verhalten verursacht (Theorie der
-    unmittelbaren Verursachung; Zweckveranlasser als Streitfrage). Zustandsstoerer: Inhaber der tatsaechlichen
-    Gewalt bzw. Eigentuemer einer gefaehrlichen Sache. Nichtstoerer: Inanspruchnahme nur unter den engen
-    Voraussetzungen des polizeilichen Notstands (gegenwaertige erhebliche Gefahr, Stoerer nicht greifbar,
-    Behoerde selbst nicht in der Lage), mit Entschaedigungsanspruch.'
-  norms:
-  - §§ 6, 7, 9 HSOG
+  steps:
+  - label: I. Ermächtigungsgrundlage
+    hinweis: Standardmaßnahme (§§ 12 ff. HSOG) vor Generalklausel (§ 11 HSOG).
+  - label: II. Formelle Rechtmäßigkeit
+    children:
+    - label: '1. Zuständigkeit: Gefahrenabwehrbehörde; Polizeibehörde im Eilfall (§ 2 HSOG)'
+    - label: '2. Verfahren: Anhörung, § 28 HVwVfG'
+    - label: 3. Form
+  - label: III. Materielle Rechtmäßigkeit
+    children:
+    - label: '1. Tatbestand: Schutzgut, konkrete Gefahr, Prognose ex ante'
+    - label: '2. Adressat: Verhaltensstörer § 6, Zustandsstörer § 7, Nichtverantwortlicher § 9'
+    - label: '3. Ermessen: Auswahlermessen, Verhältnismäßigkeit'
+  - label: IV. Vollstreckung
+    hinweis: 'Verwaltungszwang nach §§ 47 ff. HSOG: Androhung, Festsetzung oder Zwang ohne vorausgehenden Verwaltungsakt (§ 47 Abs. 2).'
+  stand: 2026-10
+faelle:
+- slug: he-fall-por-heizoel
+  title: Das auslaufende Heizöl
+  difficulty: 4
+  minutes: 50
   quellen:
+  - Eigener Sachverhalt der Redaktion
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
-  - Eigenformulierung Redaktion
-  stand: 2026-09
-- slug: he-por-zustaendigkeit
-  type: definition
-  front: Wer ist in Hessen fuer die Gefahrenabwehr zustaendig - Ordnungs-/Sicherheitsbehoerde oder Polizei?
-  back: 'Gefahrenabwehrbehoerden (allgemeine Ordnungsbehoerden) und Polizeibehoerden - beide im HSOG (§§
-    1 ff.); Polizei bei Eilbeduerftigkeit (§ 2 HSOG). Pruefungsrelevant ist die Abgrenzung: Die allgemeine
-    Gefahrenabwehr liegt grundsaetzlich bei den Verwaltungs-/Ordnungsbehoerden; der Polizeivollzugsdienst
-    wird taetig, wenn die Abwehr keinen Aufschub duldet (Eilfall) oder eine besondere Zuweisung besteht.
-    Ein Handeln der unzustaendigen Behoerde macht die Massnahme formell rechtswidrig.'
-  norms:
-  - Hessisches Gesetz ueber die oeffentliche Sicherheit und Ordnung (HSOG)
-  quellen:
-  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
-  - Eigenformulierung Redaktion
-  stand: 2026-09
-- slug: he-por-vollstreckung
-  type: norm
-  front: Nach welchem Gesetz wird eine Gefahrenabwehrverfuegung in Hessen vollstreckt?
-  back: 'Hessisches Verwaltungsvollstreckungsgesetz (HessVwVG). Regelfall ist das gestreckte Verfahren:
-    Grundverfuegung - Androhung - Festsetzung - Anwendung des Zwangsmittels (Ersatzvornahme, Zwangsgeld,
-    unmittelbarer Zwang). Bei Gefahr im Verzug sind Sofortvollzug bzw. unmittelbare Ausfuehrung ohne vorausgehenden
-    Verwaltungsakt moeglich; die Kosten traegt der Pflichtige.'
-  norms:
-  - Hessisches Verwaltungsvollstreckungsgesetz (HessVwVG)
-  quellen:
-  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
-  - Eigenformulierung Redaktion
-  stand: 2026-09
+  facts: >-
+    Aus einem Heizöltank im Keller eines vermieteten Hauses läuft Öl aus und droht, das Grundwasser zu
+    verunreinigen. Der Tank gehört dem Eigentümer E; der Mieter M hat beim Befüllen am Vortag fahrlässig
+    einen Schlauch falsch angeschlossen. M ist verreist und nicht erreichbar. Die zuständige Gefahrenabwehrbehörde
+    fordert E durch Verfügung auf, das Öl unverzüglich abzupumpen und den Tank zu sichern. E wendet ein,
+    M habe den Schaden verursacht, daher habe die Behörde ihn nicht heranziehen dürfen.
+  question: Ist die Verfügung gegen E rechtmäßig?
+  steps:
+  - prompt: Welche Ermächtigungsgrundlage greift?
+    erwartung: >-
+      Die Generalklausel, § 11 HSOG, da keine speziellere Befugnis (etwa Wasser- oder Bodenschutzrecht)
+      unterstellt ist. Die Gefahrenabwehrbehörde ist zuständig.
+  - prompt: Liegt eine Gefahr vor?
+    erwartung: >-
+      Ja. Das auslaufende Öl führt mit hinreichender Wahrscheinlichkeit in absehbarer Zeit zu einer Verunreinigung
+      des Grundwassers (konkrete, zudem gegenwärtige Gefahr) und damit zu einem Schaden für ein Rechtsgut
+      der öffentlichen Sicherheit.
+  - prompt: Ist E Verantwortlicher?
+    erwartung: >-
+      Ja. E ist als Eigentümer des Tanks Zustandsverantwortlicher, § 7 HSOG. M ist daneben Verhaltensverantwortlicher,
+      § 6 HSOG.
+  - prompt: Durfte die Behörde E auswählen?
+    erwartung: >-
+      Ja. Die Auswahl zwischen mehreren Verantwortlichen steht im Ermessen und richtet sich nach der Effektivität
+      der Gefahrenabwehr. M ist nicht erreichbar, E kann Maßnahmen sofort durchführen. Ein Vorrang des
+      Verhaltensstörers besteht nicht. E kann im Zivilrechtsweg bei M Rückgriff nehmen. Die Verfügung
+      ist verhältnismäßig und rechtmäßig.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Generalklausel § 11 HSOG als Ermächtigungsgrundlage; Zuständigkeit
+      weight: 1.5
+      required: true
+      norms:
+      - § 11 HSOG
+      keywords:
+      - § 11 HSOG
+      - Generalklausel
+      - Gefahrenabwehrbehörde
+      - Subsidiarität
+      card_slugs:
+      - he-por-generalklausel
+      - he-por-zustaendigkeit
+    - id: p2
+      label: Konkrete (gegenwärtige) Gefahr für das Grundwasser bejaht
+      weight: 2.0
+      required: true
+      keywords:
+      - konkrete Gefahr
+      - gegenwärtige Gefahr
+      - Grundwasser
+      - hinreichende Wahrscheinlichkeit
+      - Gefahrenprognose
+      card_slugs:
+      - he-por-gefahrbegriffe
+    - id: p3
+      label: E als Zustandsstörer (§ 7 HSOG), M als Verhaltensstörer (§ 6 HSOG)
+      weight: 2.5
+      required: true
+      keywords:
+      - § 7 HSOG
+      - Zustandsstörer
+      - Zustandsverantwortlicher
+      - § 6 HSOG
+      - Verhaltensstörer
+      card_slugs:
+      - he-por-stoerer
+    - id: p4
+      label: 'Störerauswahl: Effektivität der Gefahrenabwehr, kein Vorrang des Verhaltensstörers'
+      weight: 3.0
+      required: true
+      keywords:
+      - Auswahlermessen
+      - Störerauswahl
+      - Effektivität der Gefahrenabwehr
+      - kein Vorrang
+      - Rückgriff
+      - nicht erreichbar
+      card_slugs:
+      - he-por-stoererauswahl
+  stand: 2026-10

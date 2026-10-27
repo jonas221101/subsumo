@@ -35,4 +35,18 @@ def get_current_user(
     return user
 
 
+def get_optional_user(
+    db: DbSession,
+    authorization: Annotated[str | None, Header()] = None,
+) -> User | None:
+    """Wie :func:`get_current_user`, aber ohne Token (oder mit ungueltigem) ``None``."""
+    if not authorization:
+        return None
+    try:
+        return get_current_user(db, authorization)
+    except HTTPException:
+        return None
+
+
+OptionalUser = Annotated[User | None, Depends(get_optional_user)]
 CurrentUser = Annotated[User, Depends(get_current_user)]

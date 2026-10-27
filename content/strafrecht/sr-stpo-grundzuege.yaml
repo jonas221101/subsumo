@@ -1,0 +1,406 @@
+topic:
+  slug: sr-stpo-grundzuege
+  area: strafrecht
+  title: Strafprozessrecht - Grundzüge, Beschuldigtenrechte, Beweisverwertungsverbote
+  parent: strafrecht
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: sr-stpog-legalitaet
+  type: definition
+  front: 'Definiere: Legalitätsprinzip (§ 152 Abs. 2 StPO) und seine Ausnahmen'
+  back: >-
+    Nach dem Legalitätsprinzip ist die Staatsanwaltschaft verpflichtet, wegen aller
+    verfolgbaren Straftaten einzuschreiten, sofern zureichende tatsächliche Anhaltspunkte
+    vorliegen (Anfangsverdacht, § 152 Abs. 2 StPO; zur Verfolgungspflicht auch § 160
+    Abs. 1 StPO). Es gilt für Staatsanwaltschaft und Polizei (§ 163 Abs. 1 StPO).
+    Ausnahmen bilden die Opportunitätsvorschriften, die das Absehen von der Verfolgung
+    erlauben, etwa die Einstellung wegen Geringfügigkeit (§ 153 StPO), mit Auflagen
+    (§ 153a StPO) oder wegen unwesentlicher Nebenstraftaten (§ 154 StPO). Das Legalitätsprinzip
+    sichert die Gleichbehandlung und schützt vor willkürlicher Verfolgung; sein Gegenstück
+    ist das Opportunitätsprinzip. Die Strafverfolgung ist zudem durch das Offizialprinzip
+    (§ 152 Abs. 1 StPO) dem Staat zugewiesen.
+  norms:
+  - § 152 Abs. 2 StPO
+  - § 160 Abs. 1 StPO
+  - § 153 StPO
+  - § 153a StPO
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpog-offizial-akkusation
+  type: definition
+  front: 'Definiere: Offizialprinzip und Akkusationsprinzip (§§ 151, 152 StPO)'
+  back: >-
+    Das Offizialprinzip besagt, dass die Strafverfolgung grundsätzlich Sache des Staates
+    ist; die Staatsanwaltschaft erhebt die öffentliche Klage (§ 152 Abs. 1 StPO). Eine
+    Verfolgung nur auf Antrag des Verletzten ist die Ausnahme (Antragsdelikte,
+    § 77 StGB), Privatklagedelikte nach §§ 374 ff. StPO bilden eine weitere Ausnahme.
+    Das Akkusationsprinzip (Anklagegrundsatz) bedeutet, dass das Gericht nur auf
+    Anklage der Staatsanwaltschaft tätig wird (§ 151 StPO); Untersuchungsgegenstand
+    ist die in der Anklage bezeichnete Tat (§ 264 StPO). Anklagebehörde und
+    erkennendes Gericht sind getrennt, was die Unabhängigkeit des Gerichts sichert.
+    Die Verfolgung geschieht von Amts wegen, im Verfahren gilt zudem der
+    Untersuchungsgrundsatz (Amtsaufklärungspflicht, § 244 Abs. 2 StPO).
+  norms:
+  - § 151 StPO
+  - § 152 Abs. 1 StPO
+  - § 244 Abs. 2 StPO
+  - § 264 StPO
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpog-unmittelbarkeit-muendlichkeit
+  type: definition
+  front: 'Definiere: Unmittelbarkeits- und Mündlichkeitsgrundsatz der Hauptverhandlung'
+  back: >-
+    Das Gericht darf seiner Entscheidung nur das zugrunde legen, was in der Hauptverhandlung
+    mündlich verhandelt wurde (Mündlichkeit, § 261 StPO). Nach dem Unmittelbarkeitsgrundsatz
+    ist die Beweisaufnahme in der Hauptverhandlung selbst durchzuführen, und zwar
+    mit dem unmittelbaren Beweismittel. Beruht das Wissen einer Person auf einer
+    Wahrnehmung, soll sie persönlich vernommen werden; ihre Vernehmung darf nicht
+    durch Verlesen einer früheren Niederschrift ersetzt werden (§ 250 StPO). Ausnahmen
+    regeln etwa §§ 251, 253 StPO (Verlesung von Protokollen bei Unerreichbarkeit
+    oder zum Vorhalt). Dazu kommen die Öffentlichkeit der Hauptverhandlung (§ 169 GVG)
+    und der Grundsatz der freien richterlichen Beweiswürdigung (§ 261 StPO).
+  norms:
+  - § 261 StPO
+  - § 250 StPO
+  - § 251 StPO
+  - § 169 GVG
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpog-in-dubio
+  type: definition
+  front: 'Definiere: in dubio pro reo und seine Reichweite'
+  back: >-
+    Der Grundsatz in dubio pro reo (im Zweifel für den Angeklagten) folgt aus der
+    Unschuldsvermutung (Art. 6 Abs. 2 EMRK) und dem Rechtsstaatsprinzip. Er ist keine
+    Beweisregel, sondern eine Entscheidungsregel: Kann das Gericht nach abgeschlossener
+    Beweiswürdigung (§ 261 StPO) nicht zur Überzeugung gelangen, dass der Angeklagte
+    die ihm zur Last gelegte Tat begangen hat, ist freizusprechen. Er gilt für entscheidungserhebliche
+    Tatsachen, nicht für Rechtsfragen. Er gilt auch für Tatsachen, die einen Strafausschließungs- oder Rechtfertigungsgrund
+    begründen würden: Bleiben Zweifel, ob etwa eine Notwehrlage bestand, ist zugunsten
+    des Angeklagten von ihr auszugehen. Bei mehreren möglichen Sachverhalten kommt
+    gegebenenfalls eine Wahlfeststellung in Betracht.
+  norms:
+  - Art. 6 Abs. 2 EMRK
+  - § 261 StPO
+  quellen:
+  - StPO, amtliche Fassung
+  - EMRK
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpog-ermittlungsverfahren
+  type: definition
+  front: 'Überblick: Ablauf des Strafverfahrens (Ermittlungs-, Zwischen-, Hauptverfahren)'
+  back: >-
+    Das Verfahren beginnt mit dem Ermittlungsverfahren: Bei Anfangsverdacht (§ 152
+    Abs. 2 StPO) erforscht die Staatsanwaltschaft als Herrin des Ermittlungsverfahrens
+    den Sachverhalt (§ 160 StPO), die Polizei ermittelt als ihre Ermittlungsperson
+    (§ 163 StPO). Sie hat auch entlastende Umstände zu ermitteln (§ 160 Abs. 2 StPO).
+    Ist der Beschuldigte hinreichend verdächtig, erhebt die Staatsanwaltschaft Anklage
+    (§ 170 Abs. 1 StPO), sonst stellt sie das Verfahren ein (§ 170 Abs. 2 StPO). Im
+    Zwischenverfahren prüft das Gericht, ob es die Anklage zulässt und das Hauptverfahren
+    eröffnet (§§ 199 ff. StPO); Voraussetzung des Eröffnungsbeschlusses ist hinreichender
+    Tatverdacht (§ 203 StPO). Es folgt die Hauptverhandlung mit Urteil. Die Verdachtsgrade
+    steigern sich vom Anfangsverdacht über den hinreichenden bis zum dringenden
+    Tatverdacht (z. B. für die Untersuchungshaft, § 112 StPO).
+  norms:
+  - § 152 Abs. 2 StPO
+  - § 160 StPO
+  - § 170 StPO
+  - § 203 StPO
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpog-beschuldigter-belehrung
+  type: norm
+  front: Wann ist jemand Beschuldigter und worüber ist er nach § 136 StPO zu belehren?
+  back: >-
+    Beschuldigter ist, gegen wen das Strafverfahren als Verdächtigen geführt wird;
+    nach der Rechtsprechung entscheidet der Verfolgungswille der Strafverfolgungsbehörde,
+    der sich in einem Willensakt nach außen manifestiert (z. B. Einleitungsverfügung,
+    Maßnahme, die erkennbar der Verfolgung dient). Eine Umgehung der Belehrungspflicht
+    durch Etikettierung als Zeuge ist unzulässig; bei starkem Tatverdacht wandelt
+    sich die Stellung. Der Beschuldigte ist vor der ersten Vernehmung zu belehren,
+    dass er sich zur Beschuldigung äußern oder schweigen kann (§ 136 Abs. 1 S. 2
+    StPO), jederzeit einen Verteidiger befragen kann (§ 136 Abs. 1 S. 2 StPO), ihm
+    eröffnet wird, welche Tat ihm zur Last gelegt wird (§ 136 Abs. 1 S. 1 StPO), und
+    er zu seiner Entlastung einzelne Beweiserhebungen und unter den Voraussetzungen des § 140 StPO die Bestellung eines Pflichtverteidigers beantragen kann (§ 136 Abs. 1 S. 5 StPO). Für die erste Vernehmung durch die Polizei
+    verweist § 163a Abs. 4 StPO auf die Belehrungspflichten des § 136 StPO. Der Grundsatz des nemo tenetur
+    schützt davor, sich selbst belasten zu müssen.
+  norms:
+  - § 136 Abs. 1 StPO
+  - § 163a Abs. 4 StPO
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpog-136a
+  type: norm
+  front: Welche Vernehmungsmethoden verbietet § 136a StPO?
+  back: >-
+    Die Willensentschließung und Willensbetätigung des Beschuldigten darf nicht
+    beeinträchtigt werden durch Misshandlung, Ermüdung, körperlichen Eingriff,
+    Verabreichung von Mitteln, Quälerei, Täuschung oder Hypnose (§ 136a Abs. 1 S. 1
+    StPO). Zwang darf nur angewandt werden, soweit das Strafverfahrensrecht dies
+    zulässt; die Drohung mit einer verfahrensrechtlich unzulässigen Maßnahme und das
+    Versprechen eines gesetzlich nicht vorgesehenen Vorteils sind verboten (§ 136a
+    Abs. 1 S. 3 StPO). Maßnahmen, die das Erinnerungsvermögen oder die Einsichtsfähigkeit
+    beeinträchtigen, sind unzulässig (§ 136a Abs. 2 StPO). Aussagen, die unter Verstoß
+    hiergegen zustande kamen, dürfen auch bei Zustimmung des Beschuldigten nicht verwertet
+    werden (§ 136a Abs. 3 S. 2 StPO). Das Verbot gilt für Zeugen entsprechend (§ 69
+    Abs. 3 StPO). Es handelt sich um ein absolutes Beweisverwertungsverbot. Eine
+    kriminalistische List, die keine Täuschung im Sinne der Norm ist, bleibt zulässig.
+  norms:
+  - § 136a StPO
+  - § 69 Abs. 3 StPO
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpog-bvv-theorien
+  type: streitstand
+  front: 'Streitstand: Wann besteht ein Beweisverwertungsverbot ohne ausdrückliche gesetzliche Regelung?'
+  back: >-
+    Problem: Die StPO regelt nur wenige Verwertungsverbote (z. B. § 136a Abs. 3
+    S. 2, § 252 StPO). Bei sonstigen Verfahrensverstößen ist fraglich, ob die Verwertung
+    unterbleiben muss.
+
+    Abwägungslehre (Rspr.): Maßgeblich ist eine Einzelfallabwägung zwischen dem
+    Interesse an der Aufklärung schwerer Straftaten und dem Gewicht des Verfahrensverstoßes
+    und der betroffenen Rechtsposition. Entscheidend sind Schwere des Verstoßes, bewusste
+    Missachtung, hypothetische rechtmäßige Beweiserhebung und Schwere der Tat. Ein
+    Verwertungsverbot ist die Ausnahme.
+
+    Rechtskreistheorie (Teile der Rspr. und Lit.): Ein Verbot besteht nur, wenn der
+    verletzte Rechtskreis gerade den betroffenen Beschuldigten schützt; wer nicht
+    geschützt ist, kann sich nicht auf das Verbot berufen.
+
+    Schutzzwecklehre (Lit.): Ein Verbot besteht, wenn der Schutzzweck der verletzten
+    Norm die Verwertung der rechtswidrig erlangten Erkenntnis ausschließt.
+
+    Einigkeit besteht über die absolute Grenze des Kernbereichs privater Lebensgestaltung
+    (Menschenwürde): Insoweit ist die Verwertung stets unzulässig. Eine Fernwirkung
+    (Verwertungsverbot für mittelbar erlangte Beweise) lehnt die Rspr. grundsätzlich
+    ab.
+  norms:
+  - § 136a Abs. 3 StPO
+  - § 252 StPO
+  - Art. 1 Abs. 1 GG
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpog-widerspruchsloesung
+  type: rechtsprechung
+  front: 'Rspr.: Widerspruchslösung bei unterbliebener Belehrung (BGHSt 38, 214)'
+  back: >-
+    Wurde der Beschuldigte vor der Vernehmung nicht nach § 136 Abs. 1 S. 2 StPO
+    belehrt, begründet dies nach BGHSt 38, 214 ein Beweisverwertungsverbot für seine
+    Aussage. Ein solches Verbot hängt jedoch davon ab, dass der verteidigte Angeklagte
+    der Verwertung in der Hauptverhandlung bis zu dem in § 257 StPO genannten Zeitpunkt
+    widerspricht (Widerspruchslösung). Wer nicht rechtzeitig widerspricht, verliert
+    das Verwertungsverbot; die Aussage ist dann verwertbar. Die Rspr. begründet dies damit,
+    dass der Beschuldigte über die Geltendmachung des Verbots disponiert. Der Widerspruch ist
+    Voraussetzung auch für die Verfahrensrüge in der Revision (§ 344 Abs. 2 S. 2
+    StPO). Die Literatur kritisiert, dass die Verwertbarkeit
+    vom prozessualen Verhalten der Verteidigung abhängt.
+  norms:
+  - § 136 Abs. 1 S. 2 StPO
+  - § 257 StPO
+  - § 344 Abs. 2 S. 2 StPO
+  quellen:
+  - BGHSt 38, 214
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpog-zeugnisverweigerung-52
+  type: norm
+  front: Wer darf nach § 52 StPO das Zeugnis verweigern, und wie wirkt sich das aus?
+  back: >-
+    Zur Verweigerung des Zeugnisses sind berechtigt der Verlobte des Beschuldigten,
+    sein Ehegatte (auch nach Auflösung der Ehe) und sein Lebenspartner, wer mit ihm
+    in gerader Linie verwandt oder verschwägert oder in der Seitenlinie bis zum dritten
+    Grad verwandt oder bis zum zweiten Grad verschwägert ist oder war (§ 52 Abs. 1 StPO).
+    Der Zeuge ist vor der Vernehmung zu belehren (§ 52 Abs. 3 StPO). Auf das Recht
+    kann er verzichten; der Verzicht kann auch während der Vernehmung widerrufen werden.
+    Ohne Belehrung ist die Aussage unverwertbar, sofern nicht ausnahmsweise feststeht,
+    dass der Zeuge sein Recht kannte und aussagen wollte.
+    Davon zu trennen ist das Auskunftsverweigerungsrecht des Zeugen bei der Gefahr
+    eigener Verfolgung (§ 55 StPO).
+  norms:
+  - § 52 Abs. 1 StPO
+  - § 52 Abs. 3 StPO
+  - § 55 StPO
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: sr-stpog-252
+  type: norm
+  front: Was bedeutet das Verlesungs- und Verwertungsverbot des § 252 StPO?
+  back: >-
+    Die Aussage eines vor der Hauptverhandlung vernommenen Zeugen, der erst in der
+    Hauptverhandlung von seinem Zeugnisverweigerungsrecht Gebrauch macht, darf nicht
+    verlesen werden (§ 252 StPO). Nach h.M. enthält die Vorschrift darüber hinaus ein
+    umfassendes Verwertungsverbot: Auch Vernehmungsbeamte der Polizei dürfen nicht
+    als Zeugen vom Hörensagen über den Inhalt der früheren Aussage vernommen werden.
+    Die Schutzfunktion richtet sich auf die Entscheidungsfreiheit des Zeugen aus
+    familiären Gründen. Eine Ausnahme macht die Rspr. für die Vernehmung des
+    Richters, der den Zeugen früher nach ordnungsgemäßer Belehrung vernommen hat; er
+    darf als Zeuge über den Inhalt der Aussage gehört werden. Die Literatur kritisiert diese
+    Ausnahme teilweise, weil sie das Verwertungsverbot unterlaufe, das den Zeugen
+    vor dem Konflikt zwischen Wahrheitspflicht und familiärer Bindung schützen soll.
+  norms:
+  - § 252 StPO
+  - § 52 StPO
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  - "BGHSt 2, 99 (richterliche Vernehmung nach Belehrung)"
+  stand: 2026-10
+schemata:
+- slug: sr-schema-stpog-bvv
+  title: Prüfung eines Beweisverwertungsverbots
+  norms:
+  - § 136a StPO
+  - § 136 StPO
+  - § 252 StPO
+  quellen:
+  - StPO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Beweiserhebung
+    children:
+    - label: 1. Verfahrensverstoß bei der Beweiserhebung (etwa § 136, § 136a, § 52, § 105 StPO)
+    - label: 2. Rechtmäßigkeit der Maßnahme prüfen
+  - label: II. Verwertungsverbot
+    children:
+    - label: 1. Ausdrückliches Verbot (§ 136a Abs. 3 S. 2, § 252 StPO)
+      hinweis: Gilt absolut, auch bei Zustimmung des Beschuldigten (§ 136a).
+    - label: 2. Ungeschriebenes Verbot nach der Abwägungslehre (Schwere des Verstoßes, bewusste Missachtung, Gewicht der Tat)
+    - label: 3. Kernbereich privater Lebensgestaltung - stets unverwertbar
+  - label: III. Widerspruchslösung
+    hinweis: Bei Verstoß gegen Belehrungspflichten nur, wenn der verteidigte Angeklagte
+      rechtzeitig (§ 257 StPO) widersprochen hat.
+  - label: IV. Fernwirkung
+    hinweis: Wird von der Rspr. grundsätzlich verneint.
+  - label: V. Folgen für die Beweiswürdigung
+faelle:
+- slug: sr-fall-stpog-nicht-belehrt
+  title: Die Vernehmung ohne Belehrung
+  difficulty: 3
+  minutes: 40
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - StPO, amtliche Fassung
+  facts: Gegen A wird wegen Diebstahls ermittelt. Polizeibeamter P bestellt A als
+    Beschuldigten zur Vernehmung ein, belehrt ihn aber nicht über sein Schweigerecht
+    und sein Recht, einen Verteidiger zu befragen. A räumt den Diebstahl ein. In der
+    Hauptverhandlung vor dem Amtsgericht wird A von Rechtsanwalt R verteidigt. Als P
+    als Zeuge zum Geständnis des A vernommen werden soll, widerspricht R der Verwertung
+    sofort. A's Ehefrau F, die den Diebstahl beobachtet hatte, hatte zuvor ebenfalls
+    bei der Polizei ausgesagt und A belastet; in der Hauptverhandlung beruft sie sich
+    nach Belehrung auf ihr Zeugnisverweigerungsrecht.
+  question: Darf das Gericht das Geständnis des A und die frühere polizeiliche Aussage
+    der F verwerten?
+  steps:
+  - prompt: Liegt ein Verfahrensverstoß bei der Vernehmung des A vor?
+    erwartung: Ja. A war Beschuldigter, so dass nach § 136 Abs. 1 S. 2 StPO i.V.m.
+      § 163a Abs. 4 StPO eine Belehrung geboten war. Sie unterblieb.
+  - prompt: Folgt daraus ein Beweisverwertungsverbot?
+    erwartung: Ja. Nach der Rspr. führt die unterbliebene Belehrung zu einem
+      Verwertungsverbot, wenn der verteidigte Angeklagte der Verwertung rechtzeitig
+      widerspricht (Widerspruchslösung, BGHSt 38, 214). R hat sofort widersprochen,
+      sodass das Geständnis nicht verwertet werden darf.
+  - prompt: Darf die polizeiliche Aussage der F durch Verlesen oder Vernehmung des
+      Polizeibeamten verwertet werden?
+    erwartung: Nein. Hat F in der Hauptverhandlung berechtigt vom Zeugnisverweigerungsrecht
+      (§ 52 Abs. 1 Nr. 2 StPO, Ehegatte) Gebrauch gemacht, darf ihre frühere Aussage
+      nach § 252 StPO nicht verlesen werden. Nach h.M. darf auch der Polizeibeamte
+      nicht über den Inhalt der Aussage vernommen werden.
+  - prompt: Wäre die Wertung anders, wenn die frühere Aussage richterlich nach Belehrung
+      erfolgt wäre?
+    erwartung: Nach der Rspr. ja. Der Ermittlungsrichter dürfte als Zeuge über den
+      Inhalt der Aussage vernommen werden; ein Verlesen bliebe nach § 252 StPO
+      ausgeschlossen.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Verstoß gegen die Belehrungspflicht nach § 136 Abs. 1 S. 2 StPO erkannt
+      weight: 1.5
+      required: false
+      norms:
+      - § 136 Abs. 1 StPO
+      - § 163a Abs. 4 StPO
+      keywords:
+      - § 136 Abs. 1
+      - Belehrungspflicht
+      - Belehrung unterblieben
+      - Schweigerecht
+      - § 163a Abs. 4
+      card_slugs:
+      - sr-stpog-beschuldigter-belehrung
+    - id: p2
+      label: Verwertungsverbot nach der Widerspruchslösung (rechtzeitiger Widerspruch
+        des Verteidigers)
+      weight: 3.0
+      required: true
+      norms:
+      - § 257 StPO
+      keywords:
+      - Widerspruchslösung
+      - Widerspruch
+      - rechtzeitig widersprochen
+      - Verwertungsverbot
+      - BGHSt 38, 214
+      card_slugs:
+      - sr-stpog-widerspruchsloesung
+      - sr-stpog-bvv-theorien
+    - id: p3
+      label: Zeugnisverweigerungsrecht der Ehefrau nach § 52 Abs. 1 StPO
+      weight: 1.5
+      required: false
+      norms:
+      - § 52 Abs. 1 StPO
+      keywords:
+      - § 52 Abs. 1
+      - Zeugnisverweigerungsrecht
+      - Ehegatte
+      - Ehefrau
+      card_slugs:
+      - sr-stpog-zeugnisverweigerung-52
+    - id: p4
+      label: Verlesungs- und Verwertungsverbot des § 252 StPO bei später ausgeübtem Verweigerungsrecht
+      weight: 3.0
+      required: true
+      norms:
+      - § 252 StPO
+      keywords:
+      - § 252
+      - Verlesungsverbot
+      - nicht verlesen
+      - Verwertungsverbot
+      - frühere Aussage darf nicht verwertet werden
+      card_slugs:
+      - sr-stpog-252
+    - id: p5
+      label: Ausnahme richterliche Vernehmung nach Belehrung (Zeuge vom Hörensagen)
+      weight: 1.0
+      required: false
+      keywords:
+      - Ermittlungsrichter
+      - richterliche Vernehmung
+      - Richter als Zeuge
+      - nach Belehrung
+      card_slugs:
+      - sr-stpog-252

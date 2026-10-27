@@ -1,18 +1,20 @@
 kurs:
   slug: zr-schuldrecht-bt-gesetzlich
-  title: 'Schuldrecht BT II: Gesetzliche Schuldverhaeltnisse'
+  title: 'Schuldrecht BT II: Gesetzliche Schuldverhältnisse'
   area: zivilrecht
   semester_default: 4
   examenskurs: false
-  stand: 2026-09
+  stand: 2026-10
   quellen:
-  - Pflichtfachkataloge der Laender (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
+  - Pflichtfachkataloge der Länder (§ 5a Abs. 2 DRiG; z. B. § 18 JAPO Bayern, § 11 JAG NRW)
   - Eigenformulierung Redaktion
-  beschreibung: Deliktsrecht (§§ 823 ff. BGB) und Bereicherungsrecht (§§ 812 ff. BGB) - die beiden Anspruchsgruppen,
-    die in fast jeder Zivilrechtsklausur auftauchen.
+  beschreibung: Deliktsrecht (§§ 823 ff. BGB, Verkehrspflichten, Gefährdungshaftung nach ProdHaftG und StVG) und
+    Bereicherungsrecht (§§ 812 ff. BGB, auch im Mehrpersonenverhältnis) sowie die GoA - die Anspruchsgruppen, die
+    in fast jeder Zivilrechtsklausur auftauchen.
   lernziele:
-  - § 823 Abs. 1, Abs. 2 und § 826 BGB als eigenstaendige Anspruchsgrundlagen pruefen
-  - Leistungskondiktion vom Anspruch aus Vertrag abgrenzen (Vorrang der Leistungsbeziehung)
+  - § 823 Abs. 1, Abs. 2 und § 826 BGB sowie § 831 und § 833 BGB als Anspruchsgrundlagen prüfen
+  - Leistungskondiktion von der Nichtleistungskondiktion (§§ 812 Abs. 1 S. 1 Alt. 2, 816 BGB) abgrenzen
+  - Geschäftsführung ohne Auftrag (§§ 677 ff. BGB) einordnen und aufbauen
   klausurformat:
     typ: Fortgeschrittenenklausur
     minuten: 180
@@ -21,7 +23,11 @@ kurs:
   - zr-deliktsrecht-823-abs2
   - zr-deliktsrecht-826
   - zr-bereicherungsrecht-leistungskondiktion
+  - zr-goa-677-ff
+  - zr-bereicherungsrecht-nichtleistungskondiktion
+  - zr-deliktsrecht-831-833
+  - zr-bereicherung-mehrpersonen
+  - zr-delikt-823-vertiefung
+  - zr-delikt-gefaehrdungshaftung
   landesrecht_kategorien: []
-  fehlende_themen:
-  - Geschaeftsfuehrung ohne Auftrag (P3)
-  - Nichtleistungskondiktion (P3)
+  fehlende_themen: []

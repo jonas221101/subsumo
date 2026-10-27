@@ -53,7 +53,12 @@ BUNDESLAND_CODES = {
 # Landesrecht-Kategorien, ueber die ein Kurs bundeslandspezifische Themen
 # einbindet. Konvention fuer den Topic-Slug: ``<code klein>-<kategorie>``,
 # z. B. ``by-polizei-ordnungsrecht``. Der Loader prueft die Konvention.
-LANDESRECHT_KATEGORIEN = {"polizei-ordnungsrecht", "landesrecht-allgemein"}
+LANDESRECHT_KATEGORIEN = {
+    "polizei-ordnungsrecht",
+    "landesrecht-allgemein",
+    "kommunalrecht",
+    "bauordnungsrecht",
+}
 
 
 @dataclass
@@ -105,6 +110,40 @@ def _check_stand(value: Any, where: str, warnings: list[str], errors: list[str])
     return text
 
 
+# Listen, deren Eintraege Texte sein muessen. Ein ungequoteter Doppelpunkt
+# ("(Leitsatz: ...)", "(bis 2011: ...)") macht daraus in YAML still ein Mapping.
+_TEXTLISTEN = frozenset(
+    {
+        "sources",
+        "quellen",
+        "norms",
+        "keywords",
+        "lernziele",
+        "besonderheiten",
+        "schwerpunkte",
+        "hilfsmittel",
+    }
+)
+
+
+def _textlisten_pruefen(node: object, pfad: str = "") -> list[str]:
+    fehler: list[str] = []
+    if isinstance(node, dict):
+        for k, v in node.items():
+            fehler += _textlisten_pruefen(v, f"{pfad}.{k}" if pfad else str(k))
+    elif isinstance(node, list):
+        name = pfad.rsplit(".", 1)[-1]
+        for i, eintrag in enumerate(node):
+            if name in _TEXTLISTEN and not isinstance(eintrag, str):
+                fehler.append(
+                    f"{pfad}[{i}] muss Text sein "
+                    "(Doppelpunkt im Eintrag? In Anfuehrungszeichen setzen.)"
+                )
+            else:
+                fehler += _textlisten_pruefen(eintrag, pfad)
+    return fehler
+
+
 def load_content(content_dir: Path) -> ContentBundle:
     """Liest alle YAML-Dateien unterhalb von ``content_dir`` und validiert sie."""
     bundle = ContentBundle()
@@ -128,6 +167,7 @@ def load_content(content_dir: Path) -> ContentBundle:
         if not isinstance(data, dict):
             bundle.errors.append(f"{rel}: Datei muss ein Mapping auf oberster Ebene sein")
             continue
+        bundle.errors.extend(f"{rel}: {e}" for e in _textlisten_pruefen(data))
 
         if "topic" not in data:
             _load_examen_file(data, str(rel), bundle)

@@ -3,7 +3,7 @@ bundesland:
   name: Bayern
   stand: 2026-09
   quellen:
-  - Ausbildungs- und Pruefungsordnung fuer Juristen (JAPO) (Landesrecht, amtliche Fassung)
+  - Ausbildungs- und Prüfungsordnung für Juristen (JAPO) (Landesrecht, amtliche Fassung)
   - Deutsches Richtergesetz (DRiG), §§ 5 ff.
   - Eigenformulierung Redaktion
   redaktion:
@@ -14,9 +14,9 @@ bundesland:
       und Landesgesetzen verifiziert. Vor Freigabe die 'pruefliste_redaktion' abarbeiten (docs/32-examensvorbereitung.md
       Abschnitt 7).
   pruefungsamt:
-    name: Landesjustizpruefungsamt (LJPA) im Bayerischen Staatsministerium der Justiz
-    sitz: Muenchen
-  pruefungsordnung: Ausbildungs- und Pruefungsordnung fuer Juristen (JAPO)
+    name: Landesjustizprüfungsamt (LJPA) im Bayerischen Staatsministerium der Justiz
+    sitz: München
+  pruefungsordnung: Ausbildungs- und Prüfungsordnung für Juristen (JAPO)
   klausuren:
     anzahl: 6
     dauer_minuten: 300
@@ -24,14 +24,14 @@ bundesland:
       zivilrecht: 3
       strafrecht: 1
       oeffentliches-recht: 2
-    hinweis: Fuenfstuendige Aufsichtsarbeiten. Die Verteilung auf die Rechtsgebiete bestimmt die Gewichtung
+    hinweis: Fünfstündige Aufsichtsarbeiten. Die Verteilung auf die Rechtsgebiete bestimmt die Gewichtung
       der Examensreife im Examen-Reiter.
   hausarbeit: false
   muendliche_pruefung:
-    beschreibung: Pruefungsgespraech in allen drei Rechtsgebieten nach bestandenem schriftlichen Teil;
+    beschreibung: Prüfungsgespräch in allen drei Rechtsgebieten nach bestandenem schriftlichen Teil;
       vielerorts mit Kurzvortrag.
   termine:
-  - Fruehjahrstermin (Maerz)
+  - Frühjahrstermin (März)
   - Herbsttermin (September)
   freiversuch:
     beschreibung: 'Freiversuch bei erstmaliger Meldung nach ununterbrochenem Studium bis zum Ende des
@@ -41,10 +41,10 @@ bundesland:
     moeglich: false
     beschreibung: Keine Abschichtung - alle Aufsichtsarbeiten in einem Termin.
   notenverbesserung:
-    beschreibung: 'Wer im Freiversuch bestanden hat, kann die Pruefung einmal zur Notenverbesserung wiederholen;
-      die bessere Note zaehlt. In Bayern: § 15 JAPO.'
+    beschreibung: 'Wer im Freiversuch bestanden hat, kann die Prüfung einmal zur Notenverbesserung wiederholen;
+      die bessere Note zählt. In Bayern: § 15 JAPO.'
   hilfsmittel:
-  - Schoenfelder, Deutsche Gesetze (mit Ergaenzungsband)
+  - Schönfelder, Deutsche Gesetze (mit Ergänzungsband)
   - Sartorius I, Verfassungs- und Verwaltungsgesetze
   - Ziegler/Tremml, Verwaltungsgesetze des Freistaates Bayern
   landesrecht:
@@ -55,14 +55,14 @@ bundesland:
     - Bayerisches Verfassungsrecht inkl. Popularklage
     normenspiegel:
       polizeigesetz: Polizeiaufgabengesetz (PAG) und Landesstraf- und Verordnungsgesetz (LStVG)
-      polizei_generalklausel: Art. 11 Abs. 1 PAG (Polizei); Art. 7 Abs. 2 LStVG (Sicherheitsbehoerden)
+      polizei_generalklausel: Art. 11 Abs. 1 PAG (Polizei); Art. 7 Abs. 2 LStVG (Sicherheitsbehörden)
       standardmassnahmen: Art. 12 ff. PAG
       stoerer: Art. 7, 8, 10 PAG; Art. 9 LStVG
-      ordnungsbehoerden: Sicherheitsbehoerden nach Art. 6 LStVG (Gemeinden, Landratsaemter, Regierungen,
-        Staatsministerium des Innern); Polizei nach Art. 3 PAG subsidiaer
+      ordnungsbehoerden: Sicherheitsbehörden nach Art. 6 LStVG (Gemeinden, Landratsämter, Regierungen,
+        Staatsministerium des Innern); Polizei nach Art. 3 PAG subsidiär
       verwaltungsverfahrensgesetz: Bayerisches Verwaltungsverfahrensgesetz (BayVwVfG) - Vollgesetz
       vollstreckung: Bayerisches Verwaltungszustellungs- und Vollstreckungsgesetz (VwZVG)
-      kommunalverfassung: 'Gemeindeordnung (GO): Gemeinderat (Art. 30) und erster Buergermeister (Art.
+      kommunalverfassung: 'Gemeindeordnung (GO): Gemeinderat (Art. 30) und erster Bürgermeister (Art.
         34), Organe Art. 29 GO'
       bauordnung: Bayerische Bauordnung (BayBO)
       landesverfassung: Verfassung des Freistaates Bayern (BV)
@@ -71,39 +71,39 @@ bundesland:
         4 BV
     besonderheiten:
     - 'Die Popularklage (Art. 98 Satz 4 BV) kennt kein anderes Land: jedermann kann Landesrecht wegen
-      Verstosses gegen Grundrechte der BV angreifen - ohne eigene Betroffenheit.'
-    - Bayern trennt Sicherheitsbehoerden (LStVG) und Polizei (PAG) - die Zustaendigkeitsfrage ist Standardpruefungspunkt.
-    - Die Klausuren werden landesweit an einheitlichen Terminen im Fruehjahr und Herbst geschrieben.
+      Verstoßes gegen Grundrechte der BV angreifen - ohne eigene Betroffenheit.'
+    - Bayern trennt Sicherheitsbehörden (LStVG) und Polizei (PAG) - die Zuständigkeitsfrage ist Standardprüfungspunkt.
+    - Die Klausuren werden landesweit an einheitlichen Terminen im Frühjahr und Herbst geschrieben.
   checkliste:
   - monate_vor_examen: 12
-    titel: Meldefristen und Freiversuch pruefen
-    detail: Fachsemesterzaehlung, Anrechnung von Auslands-/Urlaubssemestern und die Meldefrist beim Pruefungsamt
-      klaeren - der Freiversuch haengt am Datum der Meldung, nicht am Klausurtermin.
+    titel: Meldefristen und Freiversuch prüfen
+    detail: Fachsemesterzählung, Anrechnung von Auslands-/Urlaubssemestern und die Meldefrist beim Prüfungsamt
+      klären - der Freiversuch hängt am Datum der Meldung, nicht am Klausurtermin.
   - monate_vor_examen: 9
     titel: Landesrecht in den Lernplan aufnehmen
     detail: Polizei- und Ordnungsrecht, Kommunalrecht, Bauordnungsrecht und das Landesverfassungsrecht
-      werden im Oeffentlichen Recht regelmaessig geprueft - das Landesrecht-Deck im Examen-Reiter deckt
+      werden im Öffentlichen Recht regelmäßig geprüft - das Landesrecht-Deck im Examen-Reiter deckt
       die Normenkenntnis ab.
   - monate_vor_examen: 6
     titel: Zugelassene Hilfsmittel besorgen und einrichten
     detail: Gesetzessammlungen in der zugelassenen Ausgabe, Nachlieferungen einsortieren, Markierungsregeln
-      des Pruefungsamts beachten (keine Kommentierungen).
+      des Prüfungsamts beachten (keine Kommentierungen).
   - monate_vor_examen: 4
     titel: Klausuren unter Examensbedingungen schreiben
-    detail: Fuenf Stunden am Stueck, handschriftlich oder wie in der Pruefung vorgesehen, mit den zugelassenen
-      Hilfsmitteln - der Samstags-Klausurtag im Lernplan ist dafuer reserviert.
+    detail: Fünf Stunden am Stück, handschriftlich oder wie in der Prüfung vorgesehen, mit den zugelassenen
+      Hilfsmitteln - der Samstags-Klausurtag im Lernplan ist dafür reserviert.
   - monate_vor_examen: 2
-    titel: Meldung zur Pruefung abgeben
-    detail: Unterlagen (Leistungsnachweise, Schluesselqualifikation, Fremdsprache, Praktika) vollstaendig
+    titel: Meldung zur Prüfung abgeben
+    detail: Unterlagen (Leistungsnachweise, Schlüsselqualifikation, Fremdsprache, Praktika) vollständig
       einreichen.
   - monate_vor_examen: 1
     titel: 'Endspurt: Wiederholung statt Neues'
-    detail: Keine neuen Themen mehr anfangen. Faellige Karten, Schemata rekonstruieren, Schwachstellen
-      aus den Klausur-Rueckmeldungen gezielt nacharbeiten.
+    detail: Keine neuen Themen mehr anfangen. Fällige Karten, Schemata rekonstruieren, Schwachstellen
+      aus den Klausur-Rückmeldungen gezielt nacharbeiten.
   pruefliste_redaktion:
-  - Zahl, Dauer und Verteilung der Aufsichtsarbeiten gegen die aktuelle JAG/JAPO-Fassung pruefen
-  - Ob ein Hausarbeits-/Aktenvortragsanteil zur staatlichen Pflichtfachpruefung gehoert
-  - Pruefungstermine des laufenden Jahres beim Pruefungsamt abgleichen
-  - Freiversuchs- und Notenverbesserungsregel (Semesterzahl, Fristen) pruefen
-  - Zugelassene Hilfsmittel gegen die aktuelle Hilfsmittelbekanntmachung pruefen
-  - Alle Normzitate im Normenspiegel gegen die geltende Gesetzesfassung pruefen
+  - Zahl, Dauer und Verteilung der Aufsichtsarbeiten gegen die aktuelle JAG/JAPO-Fassung prüfen
+  - Ob ein Hausarbeits-/Aktenvortragsanteil zur staatlichen Pflichtfachprüfung gehört
+  - Prüfungstermine des laufenden Jahres beim Prüfungsamt abgleichen
+  - Freiversuchs- und Notenverbesserungsregel (Semesterzahl, Fristen) prüfen
+  - Zugelassene Hilfsmittel gegen die aktuelle Hilfsmittelbekanntmachung prüfen
+  - Alle Normzitate im Normenspiegel gegen die geltende Gesetzesfassung prüfen

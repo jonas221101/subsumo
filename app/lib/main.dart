@@ -1,9 +1,14 @@
+import 'package:flutter/gestures.dart' show PointerDeviceKind;
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:go_router/go_router.dart';
 
 import 'design/design.dart';
+import 'eingabe_art.dart';
+import 'api.dart';
 import 'pages/account_page.dart';
+import 'pages/beta_feedback.dart';
 import 'pages/cases_page.dart';
 import 'pages/checkout_page.dart';
 import 'pages/dashboard_page.dart';
@@ -36,19 +41,50 @@ void main() {
 /// [HomeShell]) bleibt unveraendert unter `/app` erreichbar (SUB-108).
 GoRouter _buildRouter({required String initialLocation}) => GoRouter(
       initialLocation: initialLocation,
+      // Unbekannte Adresse: deutsche Seite mit Weg zurueck statt GoException.
+      errorBuilder: (context, state) => Scaffold(
+        appBar: AppBar(title: const Text('Seite nicht gefunden')),
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Text('Diese Seite gibt es nicht.', textAlign: TextAlign.center),
+                const SizedBox(height: 16),
+                FilledButton(
+                  onPressed: () => context.go('/app'),
+                  child: const Text('Zur Startseite'),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+      // Test-Zugang: Marketing-/Preisseiten ueberspringen, direkt in die App.
+      redirect: (context, state) => kBetaMode &&
+              !state.matchedLocation.startsWith('/app') &&
+              !state.matchedLocation.startsWith('/rechtliches')
+          ? '/app'
+          : null,
       routes: [
-        GoRoute(path: '/', builder: (context, state) => const PublicLandingPage()),
-        GoRoute(path: '/preise', builder: (context, state) => const PublicPricingPage()),
+        GoRoute(
+            path: '/', builder: (context, state) => const PublicLandingPage()),
+        GoRoute(
+            path: '/preise',
+            builder: (context, state) => const PublicPricingPage()),
         GoRoute(
           path: '/rechtliches/:slug',
-          builder: (context, state) => PublicLegalPage(slug: state.pathParameters['slug']!),
+          builder: (context, state) =>
+              PublicLegalPage(slug: state.pathParameters['slug']!),
         ),
         GoRoute(path: '/app', builder: (context, state) => const _Root()),
       ],
     );
 
 class SubsumoApp extends StatelessWidget {
-  const SubsumoApp({required this.state, this.initialLocation = '/', super.key});
+  const SubsumoApp(
+      {required this.state, this.initialLocation = '/', super.key});
 
   final AppState state;
 
@@ -61,8 +97,22 @@ class SubsumoApp extends StatelessWidget {
     return AppScope(
       notifier: state,
       child: MaterialApp.router(
+        builder: (context, child) => Listener(
+          behavior: HitTestBehavior.translucent,
+          onPointerDown: (e) {
+            if (e.kind == PointerDeviceKind.touch) touchErkannt.value = true;
+          },
+          child: child,
+        ),
         title: 'Subsumo',
         debugShowCheckedModeBanner: false,
+        locale: const Locale('de', 'DE'),
+        supportedLocales: const [Locale('de', 'DE')],
+        localizationsDelegates: const [
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
         theme: buildTheme(Brightness.light),
         darkTheme: buildTheme(Brightness.dark),
         routerConfig: _buildRouter(initialLocation: initialLocation),
@@ -86,7 +136,9 @@ class _Root extends StatelessWidget {
     // Router-States.
     final checkoutStatus = Uri.base.queryParameters['checkout'];
     return HomeShell(
-      checkoutStatus: _handledCheckoutStatuses.contains(checkoutStatus) ? checkoutStatus : null,
+      checkoutStatus: _handledCheckoutStatuses.contains(checkoutStatus)
+          ? checkoutStatus
+          : null,
     );
   }
 }
@@ -174,22 +226,38 @@ class _HomeShellState extends State<HomeShell> {
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal: Spacing.xs),
                     child: Tooltip(
-                      message: 'Letzter Kontakt zum Server ist fehlgeschlagen - '
+                      message:
+                          'Letzter Kontakt zum Server ist fehlgeschlagen - '
                           'zeigt zuletzt gespeicherte Daten.',
-                      child: SubsumoChip(label: 'offline', icon: Icons.cloud_off),
+                      child:
+                          SubsumoChip(label: 'offline', icon: Icons.cloud_off),
                     ),
                   ),
                 if (app.outbox.isNotEmpty)
                   IconButton(
-                    tooltip: '${app.outbox.length} Bewertung(en) nicht synchronisiert',
+                    tooltip:
+                        '${app.outbox.length} Bewertung(en) nicht synchronisiert',
                     icon: const Icon(Icons.cloud_upload_outlined),
                     onPressed: app.flushOutbox,
+                  ),
+                if (kBetaMode)
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: Spacing.xs),
+                    child: TextButton.icon(
+                      icon: const Icon(Icons.rate_review_outlined),
+                      label: const Text('Feedback'),
+                      onPressed: () => showBetaFeedbackDialog(
+                        context,
+                        screen: _destinations[_index].label,
+                      ),
+                    ),
                   ),
                 IconButton(
                   tooltip: 'Konto',
                   icon: const Icon(Icons.account_circle_outlined),
                   onPressed: () => Navigator.of(context).push(
-                    MaterialPageRoute<void>(builder: (_) => const AccountPage()),
+                    MaterialPageRoute<void>(
+                        builder: (_) => const AccountPage()),
                   ),
                 ),
                 IconButton(
@@ -206,13 +274,18 @@ class _HomeShellState extends State<HomeShell> {
           children: [
             if (!hideChrome && widget.checkoutStatus != null)
               Padding(
-                padding: const EdgeInsets.fromLTRB(Spacing.lg, Spacing.lg, Spacing.lg, 0),
+                padding: const EdgeInsets.fromLTRB(
+                    Spacing.lg, Spacing.lg, Spacing.lg, 0),
                 child: CheckoutReturnBanner(status: widget.checkoutStatus!),
               ),
             Expanded(
               child: Row(
                 children: [
-                  if (breit && !hideChrome) _Sidebar(index: _index, onSelect: _select, email: app.user?['email'] as String?),
+                  if (breit && !hideChrome)
+                    _Sidebar(
+                        index: _index,
+                        onSelect: _select,
+                        email: app.user?['email'] as String?),
                   Expanded(child: _page),
                 ],
               ),
@@ -244,7 +317,8 @@ class _HomeShellState extends State<HomeShell> {
 /// Modus statt einer Eigenkonstruktion - Tastatur- und Screenreader-
 /// Verhalten kommen so mit, das Aussehen aus dem Theme.
 class _Sidebar extends StatelessWidget {
-  const _Sidebar({required this.index, required this.onSelect, required this.email});
+  const _Sidebar(
+      {required this.index, required this.onSelect, required this.email});
 
   final int index;
   final ValueChanged<int> onSelect;
@@ -259,8 +333,11 @@ class _Sidebar extends StatelessWidget {
       selectedIndex: index,
       onDestinationSelected: onSelect,
       leading: const Padding(
-        padding: EdgeInsets.fromLTRB(Spacing.xl, Spacing.md, Spacing.xl, Spacing.xl),
-        child: Align(alignment: Alignment.centerLeft, child: SubsumoWordmark(accent: true)),
+        padding:
+            EdgeInsets.fromLTRB(Spacing.xl, Spacing.md, Spacing.xl, Spacing.xl),
+        child: Align(
+            alignment: Alignment.centerLeft,
+            child: SubsumoWordmark(accent: true)),
       ),
       trailing: email == null
           ? null

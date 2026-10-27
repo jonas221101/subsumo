@@ -1,0 +1,318 @@
+topic:
+  slug: hh-bauordnungsrecht
+  area: oeffentliches-recht
+  title: Bauordnungsrecht Hamburg
+  parent: or-vwvfg-verwaltungsakt
+  bundesland: HH
+  relevance: 4
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: hh-bo-abgrenzung
+  type: definition
+  front: >-
+    Wie grenzen sich Bauplanungsrecht und Bauordnungsrecht ab und welche Rolle spielt die HBauO?
+  back: >-
+    Das Bauplanungsrecht regelt die städtebauliche Ordnung der Bodennutzung (Bebauungsplan, Zulässigkeit
+    nach §§ 29 ff. BauGB); es ist Bundesrecht (Art. 74 Abs. 1 Nr. 18 GG). Das Bauordnungsrecht regelt
+    als Landesrecht die Anforderungen an das einzelne Bauvorhaben im Sinne der Gefahrenabwehr: Standsicherheit,
+    Brandschutz, Abstandsflächen, Gestaltung, Stellplätze und das Verfahren. Rechtsgrundlage in Hamburg
+    ist die Hamburgische Bauordnung (HBauO). Im Genehmigungsverfahren sind beide Bereiche zu prüfen: Das
+    Vorhaben muss bauplanungsrechtlich zulässig sein und darf bauordnungsrechtlichen Vorschriften nicht
+    widersprechen. In der Klausur ist die Trennung der Prüfungsebenen wichtig, weil die Rechtsfolgen (Befreiung,
+    § 31 Abs. 2 BauGB; Abweichung nach Landesrecht) unterschiedlich sind.
+  norms:
+  - Hamburgische Bauordnung (HBauO)
+  - §§ 29 ff. BauGB
+  - Art. 74 Abs. 1 Nr. 18 GG
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-bo-baugenehmigung
+  type: norm
+  front: Unter welchen Voraussetzungen besteht in Hamburg ein Anspruch auf Baugenehmigung?
+  back: >-
+    Der Bauherr hat Anspruch auf die Baugenehmigung, wenn dem Vorhaben keine öffentlich-rechtlichen Vorschriften
+    entgegenstehen. Zu prüfen sind: (1) Genehmigungsbedürftigkeit (Errichtung, Änderung, Nutzungsänderung;
+    keine Verfahrensfreiheit), (2) bauplanungsrechtliche Zulässigkeit (§§ 29 ff. BauGB; Einvernehmen der
+    Gemeinde, § 36 BauGB), (3) bauordnungsrechtliche Zulässigkeit nach der HBauO, soweit das Verfahren
+    sie zum Prüfprogramm macht, und (4) sonstiges öffentliches Recht. Die Baugenehmigung ist ein Verwaltungsakt,
+    der unbeschadet der Rechte Dritter ergeht. Bauaufsichtsbehörden sind die Bezirksämter; die Fachaufsicht
+    führt die zuständige Fachbehörde. Beklagte im Prozess ist die Freie und Hansestadt Hamburg. Rechtsschutz
+    bei Ablehnung: Verpflichtungsklage nach § 42 Abs. 1 Var. 2 VwGO.
+  norms:
+  - Hamburgische Bauordnung (HBauO)
+  - § 36 BauGB
+  - § 42 Abs. 1 VwGO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-bo-verfahrensarten
+  type: definition
+  front: >-
+    Welche Verfahrensarten kennt das Bauordnungsrecht in Hamburg und was folgt daraus für die materielle
+    Rechtmäßigkeit?
+  back: >-
+    Die HBauO unterscheidet nach Gefährdungspotential und Größe des Vorhabens: verfahrensfreie Vorhaben,
+    die Genehmigungsfreistellung (§ 62 HBauO, u. a. für Wohngebäude der Gebäudeklassen 1 und 2), das vereinfachte Baugenehmigungsverfahren (§ 63) mit eingeschränktem Prüfprogramm und das reguläre Baugenehmigungsverfahren (§ 64) mit umfassender Prüfung; verfahrensfreie Bauvorhaben regelt § 61. Entscheidend
+    ist: Verfahrensfreiheit oder eingeschränkte Prüfung bedeuten nicht, dass materielle Anforderungen
+    entfallen; sie besagen nur, dass die Bauaufsichtsbehörde das Vorhaben nicht oder nicht vollständig
+    vorab prüft. Auch verfahrensfreie und genehmigungsfreigestellte Vorhaben müssen dem materiellen Recht entsprechen, und die Bauaufsichtsbehörde
+    kann bei Verstößen einschreiten. Eine Baugenehmigung im vereinfachten Verfahren stellt nur die Vereinbarkeit
+    mit den in diesem Verfahren geprüften Vorschriften fest.
+  norms:
+  - Hamburgische Bauordnung (HBauO)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-bo-abstandsflaechen
+  type: norm
+  front: Was regelt das Abstandsflächenrecht der HBauO und welche Rechtsfolgen hat sein Verstoß?
+  back: >-
+    Abstandsflächen (§ 6 HBauO) sind vor den Außenwänden von oberirdischen Gebäuden freizuhaltende Flächen (§ 6 Abs. 1). Sie dienen dem Brandschutz, der Belichtung, Belüftung und Besonnung sowie dem Wohnfrieden. Die Tiefe bemisst sich nach der Wandhöhe H, senkrecht zur Wand gemessen, und beträgt 0,4 H, mindestens 2,50 m; in Gewerbe- und Industriegebieten genügt 0,2 H, mindestens 2,50 m (§ 6 Abs. 4, 5 HBauO). Grundsätzlich müssen die Abstandsflächen auf dem Grundstück selbst liegen (§ 6 Abs. 2 HBauO).
+    Das Abstandsflächenrecht ist weitgehend drittschützend: Ein Nachbar kann sich gegen eine Baugenehmigung
+    wehren, die diese Vorschriften verletzt. Unterschreitungen können im Wege der Abweichung nach § 67 HBauO zugelassen werden, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der nachbarlichen Belange mit den öffentlichen Belangen vereinbar sind. Ein Verstoß macht das Vorhaben
+    materiell rechtswidrig und kann bauaufsichtliche Maßnahmen begründen.
+  norms:
+  - § 67 HBauO
+  - § 6 HBauO
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-bo-nachbarschutz
+  type: definition
+  front: >-
+    Unter welchen Voraussetzungen kann ein Nachbar in Hamburg gegen eine Baugenehmigung vorgehen?
+  back: >-
+    Der Nachbar kann die Baugenehmigung mit Widerspruch bzw. Anfechtungsklage (Drittanfechtung) angreifen.
+    Klagebefugt (§ 42 Abs. 2 VwGO) ist er, wenn er die Verletzung einer drittschützenden Norm geltend
+    machen kann: nachbarschützend sind etwa die Abstandsflächenvorschriften der HBauO, bestimmte Festsetzungen
+    eines Bebauungsplans (Gebietserhaltungsanspruch) und das Gebot der Rücksichtnahme. Begründet ist die
+    Klage nur, wenn die Genehmigung rechtswidrig ist und den Nachbarn in einem subjektiven öffentlichen
+    Recht verletzt (Schutznormtheorie); allgemeine objektive Rechtsverstöße genügen nicht. Widerspruch
+    und Anfechtungsklage des Nachbarn haben nach § 212a Abs. 1 BauGB keine aufschiebende Wirkung; vorläufiger
+    Rechtsschutz wird über § 80a Abs. 3 i. V. m. § 80 Abs. 5 VwGO gewährt.
+  norms:
+  - § 42 Abs. 2 VwGO
+  - § 212a Abs. 1 BauGB
+  - § 80a Abs. 3 VwGO
+  - § 80 Abs. 5 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-bo-eingriff
+  type: norm
+  front: >-
+    Welche bauaufsichtlichen Eingriffsmaßnahmen gibt es in Hamburg und wann genügt formelle Illegalität?
+  back: >-
+    Die Bauaufsichtsbehörde kann bei rechtswidrigen baulichen Anlagen nach der HBauO einschreiten: durch Einstellung der Arbeiten (§ 79 Abs. 1 HBauO), Beseitigung der Anlage, wenn nicht auf andere Weise rechtmäßige Zustände hergestellt werden können, und Untersagung der rechtswidrigen Nutzung (§ 80 Abs. 1 HBauO). Zu unterscheiden
+    sind formelle Illegalität (fehlende erforderliche Genehmigung) und materielle Illegalität (Widerspruch
+    zu materiellem Recht). Für Baueinstellung und Nutzungsuntersagung genügt regelmäßig formelle Illegalität;
+    wegen der Schwere des Eingriffs setzt die Beseitigungsanordnung nach h. M. materielle Illegalität
+    voraus, weil sonst eine genehmigungsfähige Anlage beseitigt würde. Die Maßnahmen stehen im Ermessen;
+    zu beachten sind Verhältnismäßigkeit, Gleichbehandlung und Bestandsschutz. Adressat ist regelmäßig
+    der Bauherr oder der Eigentümer.
+  norms:
+  - § 79 Abs. 1 HBauO
+  - § 80 Abs. 1 HBauO
+  - Hamburgische Bauordnung (HBauO)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-bo-bestandsschutz
+  type: definition
+  front: Was bedeutet Bestandsschutz im Bauordnungsrecht von Hamburg?
+  back: >-
+    Bestandsschutz folgt aus Art. 14 Abs. 1 GG: Eine rechtmäßig errichtete bauliche Anlage darf in ihrem
+    genehmigten Zustand und in der genehmigten Nutzung fortbestehen, auch wenn sich das Recht später ändert.
+    Voraussetzung ist, dass die Anlage genehmigt oder zumindest zu irgendeinem Zeitpunkt materiell legal
+    war. Eine Beseitigungsanordnung allein wegen späterer Rechtsänderung ist rechtswidrig. Nachträgliche
+    Anpassungsverlangen sind nur nach ausdrücklicher gesetzlicher Ermächtigung und bei erheblicher Gefahr
+    für Leben, Gesundheit oder öffentliche Sicherheit zulässig. Kein Bestandsschutz genießen Schwarzbauten,
+    die nie genehmigt und nie genehmigungsfähig waren. Weitergehende Veränderungen (Erweiterung, Nutzungsänderung)
+    sind vom Bestandsschutz nicht gedeckt.
+  norms:
+  - Art. 14 Abs. 1 GG
+  - Hamburgische Bauordnung (HBauO)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: hh-bo-abweichung
+  type: definition
+  front: >-
+    Wann kann in Hamburg von Anforderungen der HBauO abgewichen werden und wie unterscheidet sich das
+    von der Befreiung nach dem BauGB?
+  back: >-
+    Nach § 67 Abs. 1 HBauO soll die Bauaufsichtsbehörde Abweichungen von bauordnungsrechtlichen Anforderungen zulassen, wenn sie unter Berücksichtigung des Zwecks der Anforderung und unter Würdigung der nachbarlichen Belange mit den öffentlichen Belangen vereinbar sind. Es handelt sich um eine Soll-Vorschrift (intendiertes Ermessen): Bei Erfüllung der Voraussetzungen ist die Abweichung regelmäßig zuzulassen. Die Zulassung ist gesondert zu beantragen (§ 67 Abs. 2 HBauO).
+    Die Befreiung nach § 31 Abs. 2 BauGB betrifft dagegen Festsetzungen eines Bebauungsplans und ist Bauplanungsrecht.
+    In der Klausur sind beide Instrumente zu trennen; für die Nachbarschutzprüfung ist maßgeblich, ob
+    die verletzte Norm drittschützend ist und ob die Abweichung die nachbarlichen Belange würdigt.
+  norms:
+  - § 67 HBauO
+  - § 31 Abs. 2 BauGB
+  - Hamburgische Bauordnung (HBauO)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - BauGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: hh-schema-bo-eingriff
+  title: Rechtmäßigkeit einer bauaufsichtlichen Eingriffsverfügung nach der HBauO
+  norms:
+  - Hamburgische Bauordnung (HBauO)
+  quellen:
+  - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Ermächtigungsgrundlage
+    hinweis: >-
+      Eingriffsbefugnis der HBauO (Baueinstellung, Nutzungsuntersagung, Beseitigungsanordnung) benennen.
+  - label: II. Formelle Rechtmäßigkeit
+    children:
+    - label: 1. Zuständigkeit der Bauaufsichtsbehörde
+    - label: 2. Anhörung
+    - label: 3. Form, Bestimmtheit, Begründung
+  - label: III. Materielle Rechtmäßigkeit
+    children:
+    - label: '1. Tatbestand: rechtswidrige bauliche Anlage oder Nutzung'
+      hinweis: >-
+        Zwischen formeller und materieller Illegalität unterscheiden; Beseitigung setzt materielle Illegalität
+        voraus.
+      children:
+      - label: a) Genehmigungsbedürftigkeit und fehlende Genehmigung (formelle Illegalität)
+      - label: >-
+          b) Widerspruch zu bauplanungs- oder bauordnungsrechtlichen Vorschriften (materielle Illegalität)
+      - label: c) Verfahrensfreiheit schließt materielle Illegalität nicht aus
+    - label: 2. Kein Bestandsschutz (Art. 14 Abs. 1 GG)
+    - label: '3. Richtiger Adressat: Bauherr, Eigentümer, Nutzer'
+    - label: 4. Rechtsfolge
+      hinweis: >-
+        Ermessen: Entschließung, Auswahl der Maßnahme, Verhältnismäßigkeit, Gleichbehandlung (keine Gleichheit
+        im Unrecht).
+      children:
+      - label: a) Geeignetheit
+      - label: b) Erforderlichkeit (milderes Mittel, etwa Nachgenehmigung)
+      - label: c) Angemessenheit
+  - label: IV. Rechtsschutz
+    children:
+    - label: 1. Anfechtungsklage gegen die Verfügung
+    - label: 2. Vorläufiger Rechtsschutz, § 80 Abs. 5 VwGO, soweit sofort vollziehbar
+faelle:
+- slug: hh-fall-bo-beseitigung
+  title: Das Gartenhaus außerhalb der Baugrenze
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - HBauO, amtliche Fassung
+  - BauGB, amtliche Fassung
+  facts: >-
+    A errichtet auf seinem Grundstück in einem durch Bebauungsplan festgesetzten Wohngebiet in Hamburg
+    ohne Genehmigung ein 40 m² großes Gartenhaus, das außerhalb der im Bebauungsplan festgesetzten überbaubaren
+    Grundstücksfläche liegt. Das Gartenhaus ist nach der HBauO nicht verfahrensfrei. Das Bezirksamt ordnet
+    nach Anhörung die Beseitigung an. Eine Befreiung nach dem BauGB kommt nicht in Betracht, weil die
+    Grundzüge der Planung berührt würden. A wendet ein, in der Nachbarschaft stünden ähnliche Hütten,
+    gegen die die Behörde nicht vorgehe. Nach den Feststellungen sind diese Hütten genehmigt oder bestandsgeschützt;
+    vergleichbare Schwarzbauten sind der Behörde nicht bekannt.
+  question: Ist die Beseitigungsanordnung rechtmäßig?
+  steps:
+  - prompt: Welche Ermächtigungsgrundlage und welche Zuständigkeit kommen in Betracht?
+    erwartung: >-
+      Die HBauO ermächtigt die Bauaufsichtsbehörde zum Einschreiten gegen rechtswidrige bauliche Anlagen (Beseitigung: § 80 Abs. 1 HBauO);
+      zuständig ist das Bezirksamt als Bauaufsichtsbehörde. Die Anhörung ist erfolgt.
+  - prompt: Liegt eine formell und materiell rechtswidrige Anlage vor?
+    erwartung: >-
+      Ja: Das Gartenhaus mit 40 m² ist nicht verfahrensfrei und damit genehmigungsbedürftig. Es liegt
+      formelle Illegalität vor, weil die erforderliche Genehmigung fehlt. Außerdem liegt es außerhalb
+      der überbaubaren Grundstücksfläche und widerspricht dem Bebauungsplan, sodass auch materielle Illegalität
+      gegeben ist; eine Befreiung nach § 31 Abs. 2 BauGB scheidet aus.
+  - prompt: Ist die Beseitigung ermessensfehlerfrei und verhältnismäßig?
+    erwartung: >-
+      Ja: Die Beseitigung setzt materielle Illegalität voraus, die hier vorliegt. Die Verhältnismäßigkeit
+      ist gewahrt: Die Anordnung ist geeignet und erforderlich, weil eine Nachgenehmigung ausscheidet,
+      und angemessen. Bestandsschutz genießt der nie genehmigte Schwarzbau nach Art. 14 Abs. 1 GG nicht.
+      Eine Gleichheit im Unrecht besteht nicht: Vergleichbare Hütten sind genehmigt oder bestandsgeschützt;
+      Willkür ist nicht ersichtlich.
+  - prompt: Wer ist Adressat?
+    erwartung: A als Bauherr und Eigentümer. Die Beseitigungsanordnung ist rechtmäßig.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Eingriffsbefugnis der HBauO und Zuständigkeit des Bezirksamts als Bauaufsichtsbehörde
+      weight: 1.0
+      required: false
+      keywords:
+      - HBauO
+      - Bauaufsichtsbehörde
+      - Bezirksamt
+      - Beseitigungsanordnung
+      - Eingriffsbefugnis
+      card_slugs:
+      - hh-bo-eingriff
+    - id: p2
+      label: >-
+        Beseitigung setzt materielle Illegalität voraus, formelle und materielle Illegalität bejaht
+      weight: 3.0
+      required: true
+      norms:
+      - § 31 Abs. 2 BauGB
+      keywords:
+      - materielle Illegalität
+      - formelle Illegalität
+      - außerhalb der überbaubaren Grundstücksfläche
+      - Bebauungsplan
+      - keine Befreiung
+      card_slugs:
+      - hh-bo-eingriff
+      - hh-bo-abweichung
+    - id: p3
+      label: Kein Bestandsschutz für den nie genehmigten Schwarzbau
+      weight: 1.5
+      required: false
+      norms:
+      - Art. 14 Abs. 1 GG
+      keywords:
+      - Bestandsschutz
+      - Schwarzbau
+      - nie genehmigt
+      - Art. 14 Abs. 1 GG
+      card_slugs:
+      - hh-bo-bestandsschutz
+    - id: p4
+      label: 'Keine Gleichheit im Unrecht: vergleichbare Hütten genehmigt oder bestandsgeschützt'
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 3 Abs. 1 GG
+      keywords:
+      - Gleichheit im Unrecht
+      - Art. 3 Abs. 1 GG
+      - Gleichbehandlung
+      - Selbstbindung
+      - keine Willkür
+      card_slugs:
+      - hh-bo-eingriff
+    - id: p5
+      label: Verhältnismäßigkeit der Beseitigungsanordnung
+      weight: 2.0
+      required: false
+      keywords:
+      - Verhältnismäßigkeit
+      - erforderlich
+      - milderes Mittel
+      - Nachgenehmigung
+      - angemessen
+      card_slugs:
+      - hh-bo-eingriff

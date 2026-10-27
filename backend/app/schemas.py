@@ -48,7 +48,8 @@ class UserUpdateIn(BaseModel):
     daily_minutes: int | None = Field(default=None, ge=15, le=600)
     # Kuerzel eines Bundeslands (BY, NW, ...) bzw. Slug einer Universitaet aus
     # content/examen/. Der Server prueft gegen den geladenen Bestand; "" loescht
-    # den Wert (None heisst hier wie bei den anderen Feldern "nicht aendern").
+    # den Wert. Fehlt ein Feld, bleibt es unveraendert; explizites null loescht
+    # exam_date und bundesland.
     bundesland: str | None = Field(default=None, max_length=2)
     universitaet_slug: str | None = Field(default=None, max_length=160)
 
@@ -89,6 +90,8 @@ class SchemaOut(BaseModel):
     steps: list = []
     sources: list[str] = []
     stand: str = ""
+    # Bundesland-Code bei Landesrecht, sonst None (Bundesrecht).
+    bundesland: str | None = None
 
 
 class CaseSummaryOut(BaseModel):
@@ -98,11 +101,14 @@ class CaseSummaryOut(BaseModel):
     title: str
     difficulty: int
     minutes: int
+    # Fallfrage fuer die Suche in der Liste (ohne den Sachverhalt).
+    question: str = ""
+    # Bundesland-Code bei Landesrecht, sonst None (Bundesrecht).
+    bundesland: str | None = None
 
 
 class CaseOut(CaseSummaryOut):
     facts: str
-    question: str
     steps: list = []
     # Der Erwartungshorizont wird nicht ausgeliefert, solange nicht abgegeben
     # wurde - sonst waere jede Uebung wertlos.
@@ -111,8 +117,10 @@ class CaseOut(CaseSummaryOut):
 class ReviewIn(BaseModel):
     client_id: str = Field(min_length=8, max_length=64)
     card_slug: str
-    rating: int = Field(ge=1, le=4)
+    # strict: true/"3" sind keine Bewertungen.
+    rating: int = Field(ge=1, le=4, strict=True)
     reviewed_at: datetime
+    # Wird serverseitig auf 0..10 Minuten geklemmt (siehe learn.submit_reviews).
     elapsed_ms: int = 0
 
 
@@ -133,6 +141,8 @@ class ReviewBatchOut(BaseModel):
     duplicates: int
     unknown_cards: list[str] = []
     results: list[ReviewResultOut] = []
+    # Anzahl Eintraege, deren reviewed_at ausserhalb [jetzt-7d, jetzt+5min] lag.
+    clamped: int = 0
 
 
 class AnalyzeIn(BaseModel):
@@ -141,7 +151,9 @@ class AnalyzeIn(BaseModel):
 
 
 class SubmissionIn(BaseModel):
-    text: str = Field(min_length=1, max_length=120_000)
+    # Leere bzw. nur aus Leerraum bestehende Texte lehnt der Endpunkt mit einer
+    # deutschen Meldung ab (kein englischer Pydantic-Roh-Fehler, kein 0-Punkte-Eintrag).
+    text: str = Field(max_length=120_000)
     mode: str = Field(default="uebung", pattern="^(uebung|klausur)$")
     duration_s: int = 0
 

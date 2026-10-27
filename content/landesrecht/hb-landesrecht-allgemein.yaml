@@ -13,14 +13,15 @@ topic:
 cards:
 - slug: hb-lra-vwvfg
   type: norm
-  front: Welches Verwaltungsverfahrensgesetz gilt fuer Landesbehoerden in Bremen?
-  back: Bremisches Verwaltungsverfahrensgesetz (BremVwVfG) - Vollgesetz. Das VwVfG des Bundes gilt nur
-    fuer Bundesbehoerden (§ 1 VwVfG); fuer Landes- und Kommunalbehoerden ist das Landesgesetz massgeblich.
-    Bei Verweisungsgesetzen werden die Bundesnormen 'entsprechend' angewendet und sind so zu zitieren
-    (z. B. '§ 35 VwVfG i. V. m. § 1 des Landesgesetzes'), bei Vollgesetzen ist die Landesnorm selbst zu
-    zitieren.
+  front: Welches Verwaltungsverfahrensgesetz gilt für Landesbehörden in Bremen?
+  back: Bremisches Verwaltungsverfahrensgesetz (BremVwVfG) - Verweisungsgesetz. Das VwVfG des Bundes gilt
+    unmittelbar nur für Bundesbehörden (§ 1 VwVfG); für Landes- und Kommunalbehörden ordnet § 1 Abs. 1
+    BremVwVfG die Geltung des Bundes-VwVfG in der jeweils geltenden Fassung an (mit Ausnahme der §§ 1,
+    2, 94 und 100 VwVfG, soweit keine inhaltsgleichen oder entgegenstehenden Landesvorschriften bestehen).
+    Zu zitieren ist daher z. B. '§ 35 VwVfG i. V. m. § 1 BremVwVfG'; bei echten Vollgesetzen anderer
+    Länder ist dagegen die Landesnorm selbst zu zitieren.
   norms:
-  - Bremisches Verwaltungsverfahrensgesetz (BremVwVfG) - Vollgesetz
+  - Bremisches Verwaltungsverfahrensgesetz (BremVwVfG) - Verweisungsgesetz
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
@@ -28,39 +29,49 @@ cards:
 - slug: hb-lra-verfassungsgericht
   type: norm
   front: Gibt es in Bremen eine Individualverfassungsbeschwerde zum Landesverfassungsgericht?
-  back: 'Nein - keine Individualverfassungsbeschwerde zum Staatsgerichtshof. Zustaendiges Gericht: Staatsgerichtshof
-    der Freien Hansestadt Bremen auf Grundlage der Landesverfassung der Freien Hansestadt Bremen (BremLV).
-    Verfahrensgegenstand ist nur die Verletzung von Landesgrundrechten durch Landesstaatsgewalt; Bundesrecht
-    ist Pruefungsmassstab nur, soweit die Landesverfassung darauf verweist. Daneben steht immer die Verfassungsbeschwerde
-    zum BVerfG (Art. 93 Abs. 1 Nr. 4a GG).'
+  back: 'Nein. Das bremische Landesverfassungsgericht ist der Staatsgerichtshof (Art. 139 BremLV; Gesetz
+    über den Staatsgerichtshof, StGHG). Seine Zuständigkeiten sind in Art. 140 und 142 BremLV und § 10
+    StGHG geregelt: Anklage gegen Senatsmitglieder (Art. 111 BremLV), Zweifelsfragen über die Auslegung
+    der Verfassung und Organstreitigkeiten auf Antrag bestimmter Antragsberechtigter (Senat, Bürgerschaft,
+    ein Fünftel ihrer Mitglieder, öffentlich-rechtliche Körperschaften des Landes; Art. 140 Abs. 1 BremLV,
+    § 24 StGHG), konkrete Normenkontrolle auf Vorlage eines Gerichts (Art. 142 BremLV, § 28 StGHG) sowie
+    weitere gesetzlich vorgesehene Fälle wie Wahlprüfungsbeschwerde, Zulassung von Volksbegehren und
+    Bürgerantrag (§§ 30 bis 32 StGHG). Eine Verfassungsbeschwerde des Einzelnen wegen Verletzung von
+    Landesgrundrechten kennen weder die Landesverfassung noch das StGHG; Rechtsschutz gegen Verwaltungsakte
+    läuft über die Fachgerichte (Art. 141 BremLV). Gegen Akte der Landesstaatsgewalt steht dem Einzelnen
+    die Verfassungsbeschwerde zum BVerfG offen (Art. 93 Abs. 1 Nr. 4a GG).'
   norms:
   - Landesverfassung der Freien Hansestadt Bremen (BremLV)
+  - Gesetz über den Staatsgerichtshof (StGHG)
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: hb-lra-kommunalverfassung
   type: norm
-  front: Welches Gesetz regelt die Kommunalverfassung in Bremen und welche Hauptorgane hat die Gemeinde?
-  back: 'Zwei-Stadt-Staat: Stadtgemeinde Bremen (Stadtbuergerschaft, Senat) und Stadt Bremerhaven (Verfassung
-    fuer die Stadt Bremerhaven). Grundlage ist die Selbstverwaltungsgarantie (Art. 28 Abs. 2 GG und Landesverfassung):
-    eigenverantwortliche Regelung aller Angelegenheiten der oertlichen Gemeinschaft. Klausurklassiker:
-    Zustaendigkeitsstreit zwischen Vertretung und Verwaltungsspitze, Kommunalverfassungsstreit, Rechtsaufsicht.'
+  front: Welche Gemeinden gibt es im Land Bremen und wie ist die Kommunalverfassung geregelt?
+  back: 'Das Land Bremen besteht aus zwei Gemeinden (Zwei-Städte-Staat): der Stadtgemeinde Bremen und
+    der Stadt Bremerhaven. Staats- und Gemeindeebene sind in der Stadtgemeinde Bremen organisatorisch
+    verschränkt (Stadtbürgerschaft und Senat als Gemeindeorgane); für Bremerhaven gilt die Verfassung
+    für die Stadt Bremerhaven. Beide Gemeinden genießen die Selbstverwaltungsgarantie des Art. 28 Abs.
+    2 GG und der Landesverfassung: eigenverantwortliche Regelung aller Angelegenheiten der örtlichen Gemeinschaft.
+    Anders als in Berlin und Hamburg handelt es sich nicht um eine Einheitsgemeinde. Klausurklassiker:
+    Zuständigkeitsstreit zwischen Vertretung und Verwaltungsspitze, Kommunalverfassungsstreit, Rechtsaufsicht.'
   norms:
-  - 'Zwei-Stadt-Staat: Stadtgemeinde Bremen (Stadtbuergerschaft, Senat) und Stadt Bremerhaven (Verfassung
-    fuer die Stadt Bremerhaven)'
+  - 'Zwei-Städte-Staat: Stadtgemeinde Bremen (Stadtbürgerschaft, Senat) und Stadt Bremerhaven (Verfassung
+    für die Stadt Bremerhaven)'
   quellen:
   - Landesgesetze in der amtlichen Fassung (Landesrechtsportal)
   - Eigenformulierung Redaktion
   stand: 2026-09
 - slug: hb-lra-bauordnung
   type: norm
-  front: Wie heisst die Bauordnung in Bremen und wie ist eine Baugenehmigung zu pruefen?
+  front: Wie heißt die Bauordnung in Bremen und wie ist eine Baugenehmigung zu prüfen?
   back: 'Bremische Landesbauordnung (BremLBO). Anspruch auf Baugenehmigung besteht, wenn dem Vorhaben
-    keine oeffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungs-beduerftigkeit (Errichtung,
-    Aenderung, Nutzungsaenderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulaessigkeit nach
-    §§ 29 ff. BauGB (Bundesrecht), bauordnungsrechtliche Zulaessigkeit nach der Landesbauordnung (Abstandsflaechen,
-    Gestaltung, Stellplaetze).'
+    keine öffentlich-rechtlichen Vorschriften entgegenstehen: Genehmigungsbedürftigkeit (Errichtung, Änderung,
+    Nutzungsänderung), keine Genehmigungsfreiheit, bauplanungsrechtliche Zulässigkeit nach §§ 29 ff. BauGB
+    (Bundesrecht), bauordnungsrechtliche Zulässigkeit nach der Landesbauordnung (Abstandsflächen, Gestaltung,
+    Stellplätze).'
   norms:
   - Bremische Landesbauordnung (BremLBO)
   - §§ 29 ff. BauGB
@@ -70,10 +81,10 @@ cards:
   stand: 2026-09
 - slug: hb-lra-pflichtstoff
   type: definition
-  front: Welche Landesrechtsgebiete gehoeren in Bremen zum Pflichtstoff des Oeffentlichen Rechts?
-  back: Polizeirecht (BremPolG); Staatsorganisation des Zwei-Staedte-Staats; Bauordnungsrecht (BremLBO).
+  front: Welche Landesrechtsgebiete gehören in Bremen zum Pflichtstoff des Öffentlichen Rechts?
+  back: Polizeirecht (BremPolG); Staatsorganisation des Zwei-Städte-Staats; Bauordnungsrecht (BremLBO).
     Landesrecht wird im Examen fast nie isoliert, sondern eingebettet in eine verwaltungsprozessuale Einkleidung
-    (Anfechtungs-/Verpflichtungsklage, vorlaeufiger Rechtsschutz) geprueft - die Landesnorm ist die Ermaechtigungsgrundlage,
+    (Anfechtungs-/Verpflichtungsklage, vorläufiger Rechtsschutz) geprüft - die Landesnorm ist die Ermächtigungsgrundlage,
     der Aufbau bleibt der allgemeine.
   norms: []
   quellen:

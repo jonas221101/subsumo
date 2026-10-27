@@ -5,199 +5,274 @@ topic:
   parent: oeffentliches-recht
   relevance: 5
   position: 10
-  stand: "2026-09"
-
+  stand: 2026-09
 cards:
-  - slug: or-gr-eingriff
-    type: definition
-    front: "Definiere: Grundrechtseingriff (moderner Eingriffsbegriff)"
-    back: >-
-      Ein Eingriff ist jedes staatliche Handeln, das dem Einzelnen ein
-      Verhalten, das in den Schutzbereich eines Grundrechts fällt, ganz oder
-      teilweise unmöglich macht - unabhängig davon, ob diese Wirkung final
-      oder unbeabsichtigt, unmittelbar oder mittelbar, rechtlich oder
-      tatsächlich, mit oder ohne Befehl und Zwang eintritt. Der klassische
-      Eingriffsbegriff (final, unmittelbar, rechtsförmig, mit Zwang) ist
-      demgegenüber zu eng.
-    norms: ["Art. 1 Abs. 3 GG"]
-    quellen: ["GG, amtliche Fassung", "Eigenformulierung Redaktion"]
-
-  - slug: or-gr-verhaeltnismaessigkeit
-    type: schema_step
-    front: "Nenne die Prüfungsstufen der Verhältnismäßigkeit."
-    back: >-
-      (1) Legitimer Zweck. (2) Geeignetheit - das Mittel muss den Zweck
-      zumindest fördern können. (3) Erforderlichkeit - kein milderes, gleich
-      wirksames Mittel. (4) Angemessenheit (Verhältnismäßigkeit im engeren
-      Sinne) - Abwägung zwischen der Schwere des Eingriffs und dem Gewicht der
-      ihn rechtfertigenden Gründe; die Belastung darf nicht außer Verhältnis
-      zum verfolgten Ziel stehen.
-    norms: ["Art. 20 Abs. 3 GG"]
-    quellen: ["Eigenformulierung Redaktion"]
-
-  - slug: or-gr-art3-neue-formel
-    type: definition
-    front: "Wie prüft man Art. 3 Abs. 1 GG? (Willkürformel und neue Formel)"
-    back: >-
-      Zunächst Bildung eines tauglichen Vergleichspaares und Feststellung der
-      Ungleichbehandlung von wesentlich Gleichem. Rechtfertigung: Nach der
-      Willkürformel genügt ein sachlicher Grund. Nach der neuen Formel ist ein
-      strengerer Maßstab anzulegen - Verhältnismäßigkeitsprüfung -, je mehr
-      die Ungleichbehandlung an Personengruppen statt an Sachverhalten
-      anküpft und je stärker sie sich auf die Ausübung grundrechtlich
-      geschützter Freiheiten auswirkt.
-    norms: ["Art. 3 Abs. 1 GG"]
-    quellen: ["GG, amtliche Fassung", "Eigenformulierung Redaktion"]
-
-  - slug: or-gr-wesentlichkeit
-    type: definition
-    front: "Definiere: Wesentlichkeitstheorie"
-    back: >-
-      Der Gesetzgeber muss alle wesentlichen Entscheidungen, insbesondere solche
-      mit erheblicher Grundrechtsrelevanz, selbst treffen und darf sie nicht der
-      Exekutive überlassen. Herleitung aus dem Demokratieprinzip und dem
-      Rechtsstaatsprinzip (Art. 20 Abs. 1, 3 GG) sowie Art. 80 Abs. 1 S. 2 GG.
-    norms: ["Art. 20 Abs. 3 GG", "Art. 80 Abs. 1 S. 2 GG"]
-    quellen: ["Eigenformulierung Redaktion"]
-
-  - slug: or-gr-beschwerdebefugnis
-    type: definition
-    front: "Definiere: Beschwerdebefugnis bei der Verfassungsbeschwerde"
-    back: >-
-      Der Beschwerdeführer muss die Möglichkeit einer Verletzung in eigenen
-      Grundrechten oder grundrechtsgleichen Rechten geltend machen; eine
-      Verletzung darf also nicht von vornherein ausgeschlossen erscheinen.
-      Zusätzlich muss er selbst, gegenwärtig und unmittelbar betroffen sein.
-      Bei Rechtssatzverfassungsbeschwerden gegen Gesetze ist die Unmittelbarkeit
-      der kritische Punkt.
-    norms: ["§ 90 Abs. 1 BVerfGG", "Art. 93 Abs. 1 Nr. 4a GG"]
-    quellen: ["BVerfGG, amtliche Fassung", "Eigenformulierung Redaktion"]
-
-  - slug: or-gr-zitiergebot
-    type: norm
-    front: "Was regelt Art. 19 Abs. 1 S. 2 GG?"
-    back: >-
-      Das Zitiergebot: Ein Gesetz, das ein Grundrecht einschränkt, muss dieses
-      Grundrecht unter Angabe des Artikels nennen. Es gilt nur für
-      Gesetzesvorbehalte, die ausdrücklich eine Einschränkung zulassen, nicht
-      für Inhalts- und Schrankenbestimmungen, nicht für vorkonstitutionelles
-      Recht und nicht bei bloßer Aktualisierung bestehender Schranken.
-    norms: ["Art. 19 Abs. 1 S. 2 GG"]
-    quellen: ["GG, amtlicher Wortlaut", "Eigenformulierung Redaktion"]
-
+- slug: or-gr-eingriff
+  type: definition
+  front: 'Definiere: Grundrechtseingriff (moderner Eingriffsbegriff)'
+  back: Ein Eingriff ist jedes staatliche Handeln, das dem Einzelnen ein Verhalten,
+    das in den Schutzbereich eines Grundrechts fällt, ganz oder teilweise unmöglich
+    macht - unabhängig davon, ob diese Wirkung final oder unbeabsichtigt, unmittelbar
+    oder mittelbar, rechtlich oder tatsächlich, mit oder ohne Befehl und Zwang eintritt.
+    Der klassische Eingriffsbegriff (final, unmittelbar, rechtsförmig, mit Zwang)
+    ist demgegenüber zu eng.
+  norms:
+  - Art. 1 Abs. 3 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: or-gr-verhaeltnismaessigkeit
+  type: schema_step
+  front: Nenne die Prüfungsstufen der Verhältnismäßigkeit.
+  back: (1) Legitimer Zweck. (2) Geeignetheit - das Mittel muss den Zweck zumindest
+    fördern können. (3) Erforderlichkeit - kein milderes, gleich wirksames Mittel.
+    (4) Angemessenheit (Verhältnismäßigkeit im engeren Sinne) - Abwägung zwischen
+    der Schwere des Eingriffs und dem Gewicht der ihn rechtfertigenden Gründe; die
+    Belastung darf nicht außer Verhältnis zum verfolgten Ziel stehen.
+  norms:
+  - Art. 20 Abs. 3 GG
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: or-gr-art3-neue-formel
+  type: definition
+  front: Wie prüft man Art. 3 Abs. 1 GG? (Willkürformel und neue Formel)
+  back: 'Zunächst Bildung eines tauglichen Vergleichspaares und Feststellung der Ungleichbehandlung
+    von wesentlich Gleichem. Rechtfertigung: Nach der Willkürformel genügt ein sachlicher
+    Grund. Nach der neuen Formel ist ein strengerer Maßstab anzulegen - Verhältnismäßigkeitsprüfung
+    -, je mehr die Ungleichbehandlung an Personengruppen statt an Sachverhalten anknüpft
+    und je stärker sie sich auf die Ausübung grundrechtlich geschützter Freiheiten
+    auswirkt.'
+  norms:
+  - Art. 3 Abs. 1 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: or-gr-wesentlichkeit
+  type: definition
+  front: 'Definiere: Wesentlichkeitstheorie'
+  back: Der Gesetzgeber muss alle wesentlichen Entscheidungen, insbesondere solche
+    mit erheblicher Grundrechtsrelevanz, selbst treffen und darf sie nicht der Exekutive
+    überlassen. Herleitung aus dem Demokratieprinzip und dem Rechtsstaatsprinzip (Art.
+    20 Abs. 1, 3 GG) sowie Art. 80 Abs. 1 S. 2 GG.
+  norms:
+  - Art. 20 Abs. 3 GG
+  - Art. 80 Abs. 1 S. 2 GG
+  quellen:
+  - Eigenformulierung Redaktion
+- slug: or-gr-beschwerdebefugnis
+  type: definition
+  front: 'Definiere: Beschwerdebefugnis bei der Verfassungsbeschwerde'
+  back: Der Beschwerdeführer muss die Möglichkeit einer Verletzung in eigenen Grundrechten
+    oder grundrechtsgleichen Rechten geltend machen; eine Verletzung darf also nicht
+    von vornherein ausgeschlossen erscheinen. Zusätzlich muss er selbst, gegenwärtig
+    und unmittelbar betroffen sein. Bei Rechtssatzverfassungsbeschwerden gegen Gesetze
+    ist die Unmittelbarkeit der kritische Punkt.
+  norms:
+  - § 90 Abs. 1 BVerfGG
+  - Art. 93 Abs. 1 Nr. 4a GG
+  quellen:
+  - BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: or-gr-zitiergebot
+  type: norm
+  front: Was regelt Art. 19 Abs. 1 S. 2 GG?
+  back: 'Das Zitiergebot: Ein Gesetz, das ein Grundrecht einschränkt, muss dieses
+    Grundrecht unter Angabe des Artikels nennen. Es ist ein formelles Erfordernis
+    an das Einschränkungsgesetz (Warn- und Besinnungsfunktion für den Gesetzgeber),
+    keine materielle Voraussetzung; ein Verstoß führt zur formellen Verfassungswidrigkeit
+    und Nichtigkeit des Gesetzes. Es gilt nur für Gesetzesvorbehalte, die ausdrücklich
+    eine Einschränkung zulassen, nicht für Inhalts- und Schrankenbestimmungen, nicht
+    für vorkonstitutionelles Recht und nicht bei bloßer Aktualisierung bestehender
+    Schranken.'
+  norms:
+  - Art. 19 Abs. 1 S. 2 GG
+  quellen:
+  - GG, amtlicher Wortlaut
+  - Eigenformulierung Redaktion
 schemata:
-  - slug: or-schema-freiheitsgrundrecht
-    title: "Prüfung eines Freiheitsgrundrechts"
-    norms: ["Art. 2 Abs. 1 GG", "Art. 20 Abs. 3 GG"]
-    quellen: ["GG, amtliche Fassung", "Eigenformulierung Redaktion"]
-    steps:
-      - label: "I. Schutzbereich"
+- slug: or-schema-freiheitsgrundrecht
+  title: Prüfung eines Freiheitsgrundrechts
+  norms:
+  - Art. 2 Abs. 1 GG
+  - Art. 20 Abs. 3 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Schutzbereich
+    children:
+    - label: 1. Persönlicher Schutzbereich (Jedermann- oder Deutschengrundrecht, Art.
+        19 Abs. 3 GG)
+    - label: 2. Sachlicher Schutzbereich
+  - label: II. Eingriff
+    hinweis: Moderner Eingriffsbegriff; klassischen Begriff nur bei Bedarf abgrenzen.
+  - label: III. Verfassungsrechtliche Rechtfertigung
+    children:
+    - label: '1. Schranke: Gesetzesvorbehalt bzw. verfassungsimmanente Schranke'
+    - label: 2. Schranken-Schranken
+      children:
+      - label: a) Formelle Verfassungsmäßigkeit des Gesetzes (Kompetenz, Verfahren,
+          Form, Zitiergebot nach Art. 19 Abs. 1 S. 2 GG)
+      - label: b) Materielle Verfassungsmäßigkeit
         children:
-          - label: "1. Persönlicher Schutzbereich (Jedermann- oder Deutschengrundrecht, Art. 19 Abs. 3 GG)"
-          - label: "2. Sachlicher Schutzbereich"
-      - label: "II. Eingriff"
-        hinweis: "Moderner Eingriffsbegriff; klassischen Begriff nur bei Bedarf abgrenzen."
-      - label: "III. Verfassungsrechtliche Rechtfertigung"
-        children:
-          - label: "1. Schranke: Gesetzesvorbehalt bzw. verfassungsimmanente Schranke"
-          - label: "2. Schranken-Schranken"
-            children:
-              - label: "a) Formelle Verfassungsmäßigkeit des Gesetzes (Kompetenz, Verfahren, Form)"
-              - label: "b) Materielle Verfassungsmäßigkeit"
-                children:
-                  - label: "aa) Bestimmtheitsgebot"
-                  - label: "bb) Verhältnismäßigkeit (legitimer Zweck, Geeignetheit, Erforderlichkeit, Angemessenheit)"
-                  - label: "cc) Zitiergebot, Art. 19 Abs. 1 S. 2 GG"
-                  - label: "dd) Wesensgehaltsgarantie, Art. 19 Abs. 2 GG"
-          - label: "3. Verfassungsmäßige Anwendung im Einzelfall"
-
-  - slug: or-schema-vb-zulaessigkeit
-    title: "Zulässigkeit der Verfassungsbeschwerde"
-    norms: ["Art. 93 Abs. 1 Nr. 4a GG", "§ 90 BVerfGG", "§ 93 BVerfGG"]
-    quellen: ["GG und BVerfGG, amtliche Fassung", "Eigenformulierung Redaktion"]
-    steps:
-      - label: "I. Zuständigkeit des BVerfG, Art. 93 Abs. 1 Nr. 4a GG, §§ 13 Nr. 8a, 90 ff. BVerfGG"
-      - label: "II. Beschwerdefähigkeit - 'jedermann', § 90 Abs. 1 BVerfGG"
-      - label: "III. Prozessfähigkeit"
-      - label: "IV. Beschwerdegegenstand - Akt der öffentlichen Gewalt (Legislative, Exekutive, Judikative)"
-      - label: "V. Beschwerdebefugnis"
-        children:
-          - label: "1. Möglichkeit einer Grundrechtsverletzung"
-          - label: "2. Selbst, gegenwärtig und unmittelbar betroffen"
-      - label: "VI. Rechtswegerschöpfung, § 90 Abs. 2 S. 1 BVerfGG, und Subsidiarität"
-      - label: "VII. Form und Frist, §§ 23 Abs. 1, 92, 93 BVerfGG"
-      - label: "VIII. Rechtsschutzbedürfnis"
-
+        - label: aa) Bestimmtheitsgebot
+        - label: bb) Verhältnismäßigkeit (legitimer Zweck, Geeignetheit, Erforderlichkeit,
+            Angemessenheit)
+        - label: cc) Wesensgehaltsgarantie, Art. 19 Abs. 2 GG
+    - label: 3. Verfassungsmäßige Anwendung im Einzelfall
+- slug: or-schema-vb-zulaessigkeit
+  title: Zulässigkeit der Verfassungsbeschwerde
+  norms:
+  - Art. 93 Abs. 1 Nr. 4a GG
+  - § 90 BVerfGG
+  - § 93 BVerfGG
+  quellen:
+  - GG und BVerfGG, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Zuständigkeit des BVerfG, Art. 93 Abs. 1 Nr. 4a GG, §§ 13 Nr. 8a, 90
+      ff. BVerfGG
+  - label: II. Beschwerdefähigkeit - 'jedermann', § 90 Abs. 1 BVerfGG
+  - label: III. Prozessfähigkeit
+  - label: IV. Beschwerdegegenstand - Akt der öffentlichen Gewalt (Legislative, Exekutive,
+      Judikative)
+  - label: V. Beschwerdebefugnis
+    children:
+    - label: 1. Möglichkeit einer Grundrechtsverletzung
+    - label: 2. Selbst, gegenwärtig und unmittelbar betroffen
+  - label: VI. Rechtswegerschöpfung, § 90 Abs. 2 S. 1 BVerfGG, und Subsidiarität
+  - label: VII. Form und Frist, §§ 23 Abs. 1, 92, 93 BVerfGG
+  - label: VIII. Rechtsschutzbedürfnis
 faelle:
-  - slug: or-fall-versammlungsauflage
-    title: "Die Auflage für die Demonstration"
-    difficulty: 3
-    minutes: 75
-    quellen: ["Eigener Sachverhalt der Redaktion", "GG, amtliche Fassung"]
-    facts: >-
-      Der Verein V meldet für einen Samstagnachmittag eine Versammlung unter
-      freiem Himmel in der Fußgängerzone an. Die zuständige Behörde erlässt
-      eine Auflage, wonach keine Lautsprecher verwendet werden dürfen. Zur
-      Begründung verweist sie pauschal darauf, dass Anwohner sich in der
-      Vergangenheit über Lärm beschwert hätten; eine Prognose zur konkreten
-      Versammlung stellt sie nicht an. Mildere Mittel - etwa eine Begrenzung der
-      Lautstärke oder der Dauer - zieht sie nicht in Erwägung.
-    question: "Verletzt die Auflage den V in seinem Grundrecht aus Art. 8 Abs. 1 GG?"
-    steps:
-      - prompt: "Welches Grundrecht ist einschlägig und wie ist der Schutzbereich eröffnet?"
-        erwartung: "Art. 8 Abs. 1 GG; die Versammlung unter freiem Himmel ist eine friedliche Zusammenkunft ohne Waffen zur gemeinsamen Meinungsbildung und -kundgabe."
-      - prompt: "Liegt ein Eingriff vor?"
-        erwartung: "Ja - die Auflage macht die Versammlung in der gewünschten Form teilweise unmöglich; sie ist ein finaler, unmittelbarer, rechtsförmiger Eingriff."
-      - prompt: "Welche Schranke greift?"
-        erwartung: "Art. 8 Abs. 2 GG - Versammlungen unter freiem Himmel können durch oder aufgrund eines Gesetzes beschränkt werden."
-      - prompt: "Woran scheitert die Rechtfertigung?"
-        erwartung: "An der Verhältnismäßigkeit: Es fehlt eine konkrete Gefahrenprognose, und mildere gleich wirksame Mittel (Lautstärkebegrenzung) waren verfügbar - die Auflage ist nicht erforderlich."
-    expectation:
-      pruefpunkte:
-        - id: p1
-          label: "Art. 8 Abs. 1 GG als einschlägiges Grundrecht erkannt"
-          weight: 2.0
-          required: true
-          norms: ["Art. 8 Abs. 1 GG", "Art. 8 GG"]
-          keywords: ["Art. 8", "Versammlungsfreiheit"]
-          card_slugs: ["or-gr-art8-versammlungsbegriff"]
-        - id: p2
-          label: "Schutzbereich definiert und subsumiert (friedlich, ohne Waffen, gemeinsame Meinungsbildung)"
-          weight: 2.0
-          required: true
-          keywords: ["Schutzbereich", "friedlich", "ohne Waffen", "Zusammenkunft"]
-          card_slugs: ["or-gr-art8-versammlungsbegriff", "or-gr-art8-friedlich-ohne-waffen"]
-        - id: p3
-          label: "Eingriff bejaht (moderner Eingriffsbegriff)"
-          weight: 1.5
-          required: true
-          keywords: ["Eingriff"]
-          card_slugs: ["or-gr-eingriff"]
-        - id: p4
-          label: "Schranke des Art. 8 Abs. 2 GG erkannt (Versammlung unter freiem Himmel)"
-          weight: 2.0
-          required: true
-          norms: ["Art. 8 Abs. 2 GG"]
-          keywords: ["unter freiem Himmel", "Art. 8 Abs. 2"]
-          card_slugs: ["or-gr-art8-freier-himmel-geschlossene-raeume", "or-gr-art8-schrankenvorbehalt-abs2"]
-        - id: p5
-          label: "Verhältnismäßigkeit in allen vier Stufen geprüft"
-          weight: 3.0
-          required: true
-          keywords: ["legitimer Zweck", "geeignet", "erforderlich", "angemessen"]
-          card_slugs: ["or-gr-verhaeltnismaessigkeit"]
-        - id: p6
-          label: "Erforderlichkeit verneint: mildere gleich wirksame Mittel (Lautstärkebegrenzung)"
-          weight: 2.5
-          required: true
-          keywords: ["milderes", "gleich wirksam", "Lautstärke"]
-          card_slugs: ["or-gr-verhaeltnismaessigkeit"]
-        - id: p7
-          label: "Fehlende konkrete Gefahrenprognose gerügt"
-          weight: 1.5
-          keywords: ["Gefahrenprognose", "konkrete Gefahr", "pauschal"]
-          card_slugs: ["or-gr-art8-brokdorf-grundsaetze"]
-        - id: p8
-          label: "Ergebnis: Auflage verletzt Art. 8 Abs. 1 GG"
-          weight: 1.0
-          keywords: ["verletzt", "verfassungswidrig", "rechtswidrig"]
+- slug: or-fall-versammlungsauflage
+  title: Die Auflage für die Demonstration
+  difficulty: 3
+  minutes: 75
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - GG, amtliche Fassung
+  facts: Der Verein V meldet für einen Samstagnachmittag eine Versammlung unter freiem
+    Himmel in der Fußgängerzone an. Die zuständige Behörde erlässt eine Auflage, wonach
+    keine Lautsprecher verwendet werden dürfen. Zur Begründung verweist sie pauschal
+    darauf, dass Anwohner sich in der Vergangenheit über Lärm beschwert hätten; eine
+    Prognose zur konkreten Versammlung stellt sie nicht an. Mildere Mittel - etwa
+    eine Begrenzung der Lautstärke oder der Dauer - zieht sie nicht in Erwägung.
+  question: Verletzt die Auflage den V in seinem Grundrecht aus Art. 8 Abs. 1 GG?
+  steps:
+  - prompt: Welches Grundrecht ist einschlägig und wie ist der Schutzbereich eröffnet?
+    erwartung: Art. 8 Abs. 1 GG; die Versammlung unter freiem Himmel ist eine friedliche
+      Zusammenkunft ohne Waffen zur gemeinsamen Meinungsbildung und -kundgabe.
+  - prompt: Liegt ein Eingriff vor?
+    erwartung: Ja - die Auflage macht die Versammlung in der gewünschten Form teilweise
+      unmöglich; sie ist ein finaler, unmittelbarer, rechtsförmiger Eingriff.
+  - prompt: Welche Schranke greift?
+    erwartung: Art. 8 Abs. 2 GG - Versammlungen unter freiem Himmel können durch oder
+      aufgrund eines Gesetzes beschränkt werden.
+  - prompt: Woran scheitert die Rechtfertigung?
+    erwartung: 'An der Verhältnismäßigkeit: Es fehlt eine konkrete Gefahrenprognose,
+      und mildere gleich wirksame Mittel (Lautstärkebegrenzung) waren verfügbar -
+      die Auflage ist nicht erforderlich.'
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Art. 8 Abs. 1 GG als einschlägiges Grundrecht erkannt
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 8 Abs. 1 GG
+      - Art. 8 GG
+      keywords:
+      - Art. 8 Abs. 1 GG
+      - Versammlungsfreiheit
+      - Art. 8 GG
+      card_slugs:
+      - or-gr-art8-versammlungsbegriff
+    - id: p2
+      label: Schutzbereich definiert und subsumiert (friedlich, ohne Waffen, gemeinsame
+        Meinungsbildung)
+      weight: 2.0
+      required: true
+      keywords:
+      - Schutzbereich
+      - friedliche Zusammenkunft
+      - ohne Waffen
+      - gemeinsame Meinungsbildung
+      - Meinungskundgabe
+      card_slugs:
+      - or-gr-art8-versammlungsbegriff
+      - or-gr-art8-friedlich-ohne-waffen
+    - id: p3
+      label: Eingriff bejaht (moderner Eingriffsbegriff)
+      weight: 1.5
+      required: true
+      keywords:
+      - Auflage greift in
+      - Eingriff in Art. 8
+      - faktisch unmöglich
+      - Eingriff in die Versammlungsfreiheit
+      - beschränkt die Versammlung
+      - rechtsförmiger Eingriff
+      - moderner Eingriffsbegriff
+      - Eingriff in den Schutzbereich
+      card_slugs:
+      - or-gr-eingriff
+    - id: p4
+      label: Schranke des Art. 8 Abs. 2 GG erkannt (Versammlung unter freiem Himmel)
+      weight: 2.0
+      required: true
+      norms:
+      - Art. 8 Abs. 2 GG
+      keywords:
+      - unter freiem Himmel
+      - Art. 8 Abs. 2 GG
+      - einfacher Gesetzesvorbehalt
+      card_slugs:
+      - or-gr-art8-freier-himmel-geschlossene-raeume
+      - or-gr-art8-schrankenvorbehalt-abs2
+    - id: p5
+      label: Verhältnismäßigkeit in allen vier Stufen geprüft
+      weight: 3.0
+      required: true
+      keywords:
+      - legitimer Zweck
+      - Geeignetheit
+      - Erforderlichkeit
+      - Angemessenheit
+      - verhältnismäßig
+      card_slugs:
+      - or-gr-verhaeltnismaessigkeit
+    - id: p6
+      label: 'Erforderlichkeit verneint: mildere gleich wirksame Mittel (Lautstärkebegrenzung)'
+      weight: 2.5
+      required: true
+      keywords:
+      - milderes Mittel
+      - gleich wirksam
+      - Lautstärkebegrenzung
+      - Lautstärke
+      - Dauer begrenzen
+      card_slugs:
+      - or-gr-verhaeltnismaessigkeit
+    - id: p7
+      label: Fehlende konkrete Gefahrenprognose gerügt
+      weight: 1.5
+      keywords:
+      - Gefahrenprognose
+      - konkrete Gefahr
+      - pauschale Beschwerden
+      - unmittelbare Gefährdung
+      - Prognose zur konkreten Versammlung
+      card_slugs:
+      - or-gr-art8-brokdorf-grundsaetze
+    - id: p8
+      label: 'Ergebnis: Auflage verletzt Art. 8 Abs. 1 GG'
+      weight: 1.0
+      keywords:
+      - verletzt Art. 8
+      - Verletzung der Versammlungsfreiheit
+      - Auflage ist verfassungswidrig
+      - Art. 8 Abs. 1 GG verletzt
+      - nicht gerechtfertigt
+      - nicht erforderlich
+      - unverhältnismäßig
+      - Auflage ist rechtswidrig

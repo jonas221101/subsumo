@@ -3,219 +3,281 @@
 topic:
   slug: zr-bgb-at
   area: zivilrecht
-  title: BGB Allgemeiner Teil und Kaufrecht
+  title: 'BGB AT: Vertragsschluss, Willenserklärung und Irrtum'
   parent: zivilrecht
   relevance: 5
   position: 10
-  stand: "2026-09"
-
+  stand: 2026-09
+  redaktion:
+    status: in-pruefung
+    normzitate_geprueft: false
 cards:
-  - slug: zr-at-willenserklaerung
-    type: definition
-    front: "Definiere: Willenserklärung"
-    back: >-
-      Eine Willenserklärung ist eine private Willensäußerung, die auf die
-      Herbeiführung eines rechtlichen Erfolges gerichtet ist. Sie besteht aus
-      einem objektiven (äußerer Erklärungstatbestand) und einem subjektiven
-      Tatbestand (Handlungswille, Erklärungsbewusstsein, Geschäftswille).
-    norms: ["§ 116 BGB", "§ 133 BGB", "§ 157 BGB"]
-    quellen: ["BGB, amtliche Fassung (gesetze-im-internet.de)", "Eigenformulierung Redaktion"]
+- slug: zr-at-willenserklaerung
+  type: definition
+  front: 'Definiere: Willenserklärung'
+  back: Eine Willenserklärung ist eine private Willensäußerung, die auf die Herbeiführung
+    eines rechtlichen Erfolges gerichtet ist. Sie besteht aus einem objektiven (äußerer
+    Erklärungstatbestand) und einem subjektiven Tatbestand (Handlungswille, Erklärungsbewusstsein,
+    Geschäftswille).
+  norms:
+  - § 116 BGB
+  - § 133 BGB
+  - § 157 BGB
+  quellen:
+  - BGB, amtliche Fassung (gesetze-im-internet.de)
+  - Eigenformulierung Redaktion
+- slug: zr-at-angebot
+  type: definition
+  front: 'Definiere: Angebot (Antrag) i.S.d. § 145 BGB'
+  back: Ein Angebot ist eine empfangsbedürftige Willenserklärung, die alle wesentlichen
+    Vertragsbestandteile (essentialia negotii) so bestimmt oder bestimmbar enthält,
+    dass der Vertrag durch ein bloßes "Ja" zustande kommen kann, und die mit Rechtsbindungswillen
+    abgegeben wird.
+  norms:
+  - § 145 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-invitatio
+  type: definition
+  front: Was ist eine invitatio ad offerendum und woran erkennt man sie?
+  back: 'Die invitatio ad offerendum ist die bloße Aufforderung, ein Angebot abzugeben.
+    Sie ist keine Willenserklärung, weil der Rechtsbindungswille fehlt. Typische Fälle:
+    Schaufensterauslage, Katalog, Zeitungsanzeige, Warenpräsentation im Selbstbedienungsladen,
+    Webshop-Produktseite. Grund: Der Anbietende will sich nicht gegenüber einer unbestimmten
+    Zahl von Interessenten binden und nicht mehr verkaufen, als er vorrätig hat.'
+  norms:
+  - § 145 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-zugang
+  type: definition
+  front: 'Definiere: Zugang einer Willenserklärung unter Abwesenden (§ 130 Abs. 1
+    BGB)'
+  back: Eine Willenserklärung geht zu, wenn sie derart in den Machtbereich des Empfängers
+    gelangt ist, dass dieser unter gewöhnlichen Umständen die Möglichkeit der Kenntnisnahme
+    hat und mit ihr gerechnet werden kann. Auf die tatsächliche Kenntnisnahme kommt
+    es nicht an.
+  norms:
+  - § 130 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-erklaerungsirrtum
+  type: definition
+  front: 'Definiere: Erklärungsirrtum, § 119 Abs. 1 Var. 2 BGB'
+  back: Ein Erklärungsirrtum liegt vor, wenn der Erklärende schon die von ihm abgegebene
+    Erklärungshandlung nicht so vornehmen wollte, wie er sie tatsächlich vorgenommen
+    hat - er verspricht, verschreibt oder vertippt sich, sodass die abgegebene Erklärung
+    von seinem tatsächlichen Willen abweicht. Anders als beim Inhaltsirrtum (§ 119
+    Abs. 1 Var. 1 BGB) fallen hier Wille und Erklärung bereits auseinander - nicht
+    erst deren Bedeutung oder Tragweite wird verkannt.
+  norms:
+  - § 119 Abs. 1 BGB
+  - § 142 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-kalkulationsirrtum
+  type: definition
+  front: Ist der verdeckte Kalkulationsirrtum beachtlich?
+  back: Nein. Beim verdeckten (internen) Kalkulationsirrtum irrt der Erklärende nur
+    über die Grundlage seiner Preisbildung. Er erklärt genau die Zahl, die er erklären
+    wollte - der Irrtum liegt allein im Beweggrund. Ein solcher Motivirrtum berechtigt
+    nicht zur Anfechtung nach § 119 Abs. 1 BGB. Anders liegt es beim offenen Kalkulationsirrtum,
+    bei dem die Berechnung zum Inhalt der Erklärung gemacht wurde.
+  norms:
+  - § 119 Abs. 1 BGB
+  - § 119 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-erklaerungsbewusstsein
+  type: streitstand
+  front: 'Streitstand: Liegt eine Willenserklärung vor, wenn das Erklärungsbewusstsein
+    fehlt? (Fallgruppe "Trierer Weinversteigerung")'
+  back: |
+    Problem: Jemand setzt ein Zeichen, ohne zu wissen, dass es als rechtlich
+    erhebliche Erklärung verstanden wird (Handheben bei der Versteigerung,
+    um einen Bekannten zu grüßen).
 
-  - slug: zr-at-angebot
-    type: definition
-    front: "Definiere: Angebot (Antrag) i.S.d. § 145 BGB"
-    back: >-
-      Ein Angebot ist eine empfangsbedürftige Willenserklärung, die alle
-      wesentlichen Vertragsbestandteile (essentialia negotii) so bestimmt oder
-      bestimmbar enthält, dass der Vertrag durch ein bloßes "Ja" zustande
-      kommen kann, und die mit Rechtsbindungswillen abgegeben wird.
-    norms: ["§ 145 BGB"]
-    quellen: ["BGB, amtliche Fassung", "Eigenformulierung Redaktion"]
+    e.A. (Willenstheorie): Keine Willenserklärung. Das Erklärungsbewusstsein
+    ist notwendiger Bestandteil des subjektiven Tatbestandes. Argument:
+    Privatautonomie - niemand soll ohne rechtsgeschäftlichen Willen gebunden
+    werden.
 
-  - slug: zr-at-invitatio
-    type: definition
-    front: "Was ist eine invitatio ad offerendum und woran erkennt man sie?"
-    back: >-
-      Die invitatio ad offerendum ist die bloße Aufforderung, ein Angebot
-      abzugeben. Sie ist keine Willenserklärung, weil der Rechtsbindungswille
-      fehlt. Typische Fälle: Schaufensterauslage, Katalog, Zeitungsanzeige,
-      Warenpräsentation im Selbstbedienungsladen, Webshop-Produktseite.
-      Grund: Der Anbietende will sich nicht gegenüber einer unbestimmten Zahl
-      von Interessenten binden und nicht mehr verkaufen, als er vorrätig hat.
-    norms: ["§ 145 BGB"]
-    quellen: ["BGB, amtliche Fassung", "Eigenformulierung Redaktion"]
+    h.M. (Erklärungstheorie / potenzielles Erklärungsbewusstsein): Eine
+    Willenserklärung liegt vor, wenn der Erklärende bei Anwendung der im
+    Verkehr erforderlichen Sorgfalt hätte erkennen können, dass sein
+    Verhalten als Erklärung aufgefasst wird. Argumente: Vertrauensschutz und
+    Verkehrsschutz (§§ 133, 157 BGB); der Wertung der §§ 119, 122 BGB lässt
+    sich entnehmen, dass das Gesetz eine Bindung mit Anfechtungsmöglichkeit
+    und Vertrauensschadensersatz vorsieht, statt die Erklärung von vornherein
+    entfallen zu lassen.
 
-  - slug: zr-at-zugang
-    type: definition
-    front: "Definiere: Zugang einer Willenserklärung unter Abwesenden (§ 130 Abs. 1 BGB)"
-    back: >-
-      Eine Willenserklärung geht zu, wenn sie derart in den Machtbereich des
-      Empfängers gelangt ist, dass dieser unter gewöhnlichen Umständen die
-      Möglichkeit der Kenntnisnahme hat und mit ihr gerechnet werden kann.
-      Auf die tatsächliche Kenntnisnahme kommt es nicht an.
-    norms: ["§ 130 Abs. 1 BGB"]
-    quellen: ["BGB, amtliche Fassung", "Eigenformulierung Redaktion"]
-
-  - slug: zr-at-erklaerungsirrtum
-    type: definition
-    front: "Definiere: Erklärungsirrtum (§ 119 Abs. 1 Alt. 2 BGB)"
-    back: >-
-      Ein Erklärungsirrtum liegt vor, wenn der Erklärende eine Erklärung
-      dieses Inhalts überhaupt nicht abgeben wollte - er vergreift sich im
-      Erklärungszeichen (Versprechen, Verschreiben, Vergreifen). Abzugrenzen
-      vom Inhaltsirrtum (Alt. 1): Dort will der Erklärende das Zeichen, irrt
-      sich aber über dessen Bedeutung.
-    norms: ["§ 119 Abs. 1 BGB", "§ 142 Abs. 1 BGB"]
-    quellen: ["BGB, amtliche Fassung", "Eigenformulierung Redaktion"]
-
-  - slug: zr-at-kalkulationsirrtum
-    type: definition
-    front: "Ist der verdeckte Kalkulationsirrtum beachtlich?"
-    back: >-
-      Nein. Beim verdeckten (internen) Kalkulationsirrtum irrt der Erklärende
-      nur über die Grundlage seiner Preisbildung. Er erklärt genau die Zahl,
-      die er erklären wollte - der Irrtum liegt allein im Beweggrund. Ein
-      solcher Motivirrtum berechtigt nicht zur Anfechtung nach § 119 Abs. 1 BGB.
-      Anders liegt es beim offenen Kalkulationsirrtum, bei dem die Berechnung
-      zum Inhalt der Erklärung gemacht wurde.
-    norms: ["§ 119 Abs. 1 BGB", "§ 119 Abs. 2 BGB"]
-    quellen: ["BGB, amtliche Fassung", "Eigenformulierung Redaktion"]
-
-  - slug: zr-at-erklaerungsbewusstsein
-    type: streitstand
-    front: >-
-      Streitstand: Liegt eine Willenserklärung vor, wenn das
-      Erklärungsbewusstsein fehlt? (Fallgruppe "Trierer Weinversteigerung")
-    back: |
-      Problem: Jemand setzt ein Zeichen, ohne zu wissen, dass es als rechtlich
-      erhebliche Erklärung verstanden wird (Handheben bei der Versteigerung,
-      um einen Bekannten zu grüßen).
-
-      e.A. (Willenstheorie): Keine Willenserklärung. Das Erklärungsbewusstsein
-      ist notwendiger Bestandteil des subjektiven Tatbestandes. Argument:
-      Privatautonomie - niemand soll ohne rechtsgeschäftlichen Willen gebunden
-      werden.
-
-      h.M. (Erklärungstheorie / potenzielles Erklärungsbewusstsein): Eine
-      Willenserklärung liegt vor, wenn der Erklärende bei Anwendung der im
-      Verkehr erforderlichen Sorgfalt hätte erkennen können, dass sein
-      Verhalten als Erklärung aufgefasst wird. Argumente: Vertrauensschutz und
-      Verkehrsschutz (§§ 133, 157 BGB); der Wertung der §§ 119, 122 BGB lässt
-      sich entnehmen, dass das Gesetz eine Bindung mit Anfechtungsmöglichkeit
-      und Vertrauensschadensersatz vorsieht, statt die Erklärung von vornherein
-      entfallen zu lassen.
-
-      Streitentscheid: Der h.M. ist zu folgen. Der Erklärende ist über die
-      Anfechtung nach § 119 Abs. 1 BGB analog hinreichend geschützt, muss dann
-      aber nach § 122 BGB den Vertrauensschaden ersetzen. Das ist der
-      interessengerechtere Ausgleich.
-    norms: ["§ 119 Abs. 1 BGB", "§ 122 BGB", "§ 133 BGB", "§ 157 BGB"]
-    quellen: ["BGB, amtliche Fassung", "Eigenformulierung Redaktion"]
-
-  - slug: zr-at-sache
-    type: definition
-    front: "Definiere: Sache (§ 90 BGB)"
-    back: "Sachen im Sinne des Gesetzes sind nur körperliche Gegenstände."
-    norms: ["§ 90 BGB"]
-    quellen: ["§ 90 BGB, amtlicher Wortlaut"]
-
+    Streitentscheid: Der h.M. ist zu folgen. Der Erklärende ist über die
+    Anfechtung nach § 119 Abs. 1 BGB analog hinreichend geschützt, muss dann
+    aber nach § 122 BGB den Vertrauensschaden ersetzen. Das ist der
+    interessengerechtere Ausgleich.
+  norms:
+  - § 119 Abs. 1 BGB
+  - § 122 BGB
+  - § 133 BGB
+  - § 157 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-at-sache
+  type: definition
+  front: 'Definiere: Sache (§ 90 BGB)'
+  back: Sachen im Sinne des Gesetzes sind nur körperliche Gegenstände.
+  norms:
+  - § 90 BGB
+  quellen:
+  - § 90 BGB, amtlicher Wortlaut
 schemata:
-  - slug: zr-schema-433-ii
-    title: "Anspruch auf Kaufpreiszahlung, § 433 Abs. 2 BGB"
-    norms: ["§ 433 Abs. 2 BGB"]
-    quellen: ["BGB, amtliche Fassung", "Eigenformulierung Redaktion"]
-    steps:
-      - label: "I. Anspruch entstanden"
-        children:
-          - label: "1. Wirksamer Kaufvertrag, § 433 BGB"
-            children:
-              - label: "a) Angebot, § 145 BGB"
-              - label: "b) Annahme, §§ 146 ff. BGB"
-              - label: "c) Einigung über die essentialia negotii"
-          - label: "2. Wirksamkeit der Willenserklärungen"
-            children:
-              - label: "a) Geschäftsfähigkeit, §§ 104 ff. BGB"
-              - label: "b) Form, §§ 125, 126 BGB (nur bei Formerfordernis)"
-              - label: "c) Kein Verstoß gegen §§ 134, 138 BGB"
-          - label: "3. Keine Nichtigkeit ex tunc durch Anfechtung, § 142 Abs. 1 BGB"
-            hinweis: >-
-              Anfechtung nur prüfen, wenn der Sachverhalt dazu Anlass gibt:
-              Anfechtungserklärung (§ 143), Anfechtungsgrund (§§ 119, 120, 123),
-              Anfechtungsfrist (§§ 121, 124).
-      - label: "II. Anspruch nicht untergegangen"
-        children:
-          - label: "1. Erfüllung, § 362 Abs. 1 BGB"
-          - label: "2. Aufrechnung, §§ 387, 389 BGB"
-          - label: "3. Rücktritt, §§ 346 ff. BGB"
-      - label: "III. Anspruch durchsetzbar"
-        children:
-          - label: "1. Keine Einrede des nicht erfüllten Vertrages, § 320 BGB"
-          - label: "2. Keine Verjährung, §§ 195, 199, 214 BGB"
-
+- slug: zr-schema-433-ii
+  title: Anspruch auf Kaufpreiszahlung, § 433 Abs. 2 BGB
+  norms:
+  - § 433 Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Anspruch entstanden
+    children:
+    - label: 1. Wirksamer Kaufvertrag, § 433 BGB
+      children:
+      - label: a) Angebot, § 145 BGB
+      - label: b) Annahme, §§ 146 ff. BGB
+      - label: c) Einigung über die essentialia negotii
+    - label: 2. Wirksamkeit der Willenserklärungen
+      children:
+      - label: a) Geschäftsfähigkeit, §§ 104 ff. BGB
+      - label: b) Form, §§ 125, 126 BGB (nur bei Formerfordernis)
+      - label: c) Kein Verstoß gegen §§ 134, 138 BGB
+    - label: 3. Keine Nichtigkeit ex tunc durch Anfechtung, § 142 Abs. 1 BGB
+      hinweis: 'Anfechtung nur prüfen, wenn der Sachverhalt dazu Anlass gibt: Anfechtungserklärung
+        (§ 143), Anfechtungsgrund (§§ 119, 120, 123), Anfechtungsfrist (§§ 121, 124).'
+  - label: II. Anspruch nicht untergegangen
+    children:
+    - label: 1. Erfüllung, § 362 Abs. 1 BGB
+    - label: 2. Aufrechnung, §§ 387, 389 BGB
+    - label: 3. Rücktritt, §§ 346 ff. BGB
+  - label: III. Anspruch durchsetzbar
+    children:
+    - label: 1. Keine Einrede des nicht erfüllten Vertrages, § 320 BGB
+    - label: 2. Keine Verjährung, §§ 195, 199, 214 BGB
 faelle:
-  - slug: zr-fall-sonderpreis
-    title: "Der Sonderpreis"
-    difficulty: 2
-    minutes: 45
-    quellen: ["Eigener Sachverhalt der Redaktion", "BGB, amtliche Fassung"]
-    facts: >-
-      Fahrradhändler V stellt ein Rennrad mit einem Preisschild "500 EUR" in
-      sein Schaufenster. Er hatte sich beim Beschriften verrechnet; nach seiner
-      Kalkulation hätte das Rad 900 EUR kosten müssen. Kunde K sieht das Rad,
-      betritt den Laden und erklärt: "Ich nehme das Rennrad aus dem
-      Schaufenster für 500 Euro." V, der das Preisschild nicht mehr vor Augen
-      hat, antwortet: "Abgemacht." Am Abend bemerkt V seinen Rechenfehler. Er
-      ruft K noch am selben Tag an und erklärt, er fechte den Vertrag an; zu
-      500 EUR könne er unmöglich verkaufen. K besteht auf dem Geschäft.
-    question: "Hat K gegen V einen Anspruch auf Übergabe und Übereignung des Rennrads?"
-    steps:
-      - prompt: "Formuliere den Obersatz."
-        erwartung: "K könnte gegen V einen Anspruch auf Übergabe und Übereignung des Rennrads aus § 433 Abs. 1 S. 1 BGB haben."
-      - prompt: "Wie ist die Schaufensterauslage rechtlich einzuordnen?"
-        erwartung: "Als invitatio ad offerendum - es fehlt der Rechtsbindungswille."
-      - prompt: "Wer gibt Angebot und Annahme ab?"
-        erwartung: "K gibt das Angebot ab (§ 145 BGB), V nimmt es mit 'Abgemacht' an (§ 147 Abs. 1 BGB)."
-      - prompt: "Kann V den Vertrag wirksam anfechten?"
-        erwartung: "Nein. V hat genau die Zahl erklärt, die er erklären wollte; sein Irrtum liegt allein in der Kalkulation und damit im Beweggrund (unbeachtlicher Motivirrtum)."
-    expectation:
-      pruefpunkte:
-        - id: p1
-          label: "Richtige Anspruchsgrundlage § 433 Abs. 1 S. 1 BGB genannt"
-          weight: 2.0
-          required: true
-          norms: ["§ 433 Abs. 1 S. 1 BGB", "§ 433 Abs. 1 BGB", "§ 433 BGB"]
-          keywords: ["433"]
-          card_slugs: ["zr-at-willenserklaerung"]
-        - id: p2
-          label: "Schaufensterauslage als invitatio ad offerendum eingeordnet"
-          weight: 2.5
-          required: true
-          keywords: ["invitatio", "Aufforderung zur Abgabe eines Angebots", "kein Rechtsbindungswille"]
-          card_slugs: ["zr-at-invitatio"]
-        - id: p3
-          label: "Angebot des K (§ 145 BGB) und Annahme des V (§ 147 BGB) herausgearbeitet"
-          weight: 2.0
-          norms: ["§ 145 BGB", "§ 147 BGB"]
-          keywords: ["Angebot", "Annahme"]
-          card_slugs: ["zr-at-angebot"]
-        - id: p4
-          label: "Anfechtung nach § 142 Abs. 1 BGB als mögliche Vernichtung des Vertrages angesprochen"
-          weight: 1.5
-          norms: ["§ 142 Abs. 1 BGB", "§ 143 BGB"]
-          keywords: ["Anfechtung"]
-        - id: p5
-          label: "Anfechtungsgrund verneint: verdeckter Kalkulationsirrtum ist unbeachtlicher Motivirrtum"
-          weight: 3.0
-          required: true
-          norms: ["§ 119 Abs. 1 BGB"]
-          keywords: ["Kalkulationsirrtum", "Motivirrtum", "Beweggrund"]
-          card_slugs: ["zr-at-kalkulationsirrtum"]
-        - id: p6
-          label: "Ergebnis: Anspruch des K besteht"
-          weight: 1.0
-          keywords:
-            - "Anspruch besteht"
-            - "Anspruch des K"
-            - "steht K zu"
-            - "hat K gegen V einen Anspruch"
-            - "K gegen V einen Anspruch auf Übergabe"
+- slug: zr-fall-sonderpreis
+  title: Der Sonderpreis
+  difficulty: 2
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: 'Fahrradhändler V stellt ein Rennrad mit einem Preisschild "500 EUR" in sein
+    Schaufenster. Er hatte sich beim Beschriften verrechnet; nach seiner Kalkulation
+    hätte das Rad 900 EUR kosten müssen. Kunde K sieht das Rad, betritt den Laden
+    und erklärt: "Ich nehme das Rennrad aus dem Schaufenster für 500 Euro." V, der
+    das Preisschild nicht mehr vor Augen hat, antwortet: "Abgemacht." Am Abend bemerkt
+    V seinen Rechenfehler. Er ruft K noch am selben Tag an und erklärt, er fechte
+    den Vertrag an; zu 500 EUR könne er unmöglich verkaufen. K besteht auf dem Geschäft.'
+  question: Hat K gegen V einen Anspruch auf Übergabe und Übereignung des Rennrads?
+  steps:
+  - prompt: Formuliere den Obersatz.
+    erwartung: K könnte gegen V einen Anspruch auf Übergabe und Übereignung des Rennrads
+      aus § 433 Abs. 1 S. 1 BGB haben.
+  - prompt: Wie ist die Schaufensterauslage rechtlich einzuordnen?
+    erwartung: Als invitatio ad offerendum - es fehlt der Rechtsbindungswille.
+  - prompt: Wer gibt Angebot und Annahme ab?
+    erwartung: K gibt das Angebot ab (§ 145 BGB), V nimmt es mit 'Abgemacht' an (§
+      147 Abs. 1 BGB).
+  - prompt: Kann V den Vertrag wirksam anfechten?
+    erwartung: Nein. Eine Anfechtung nach § 142 Abs. 1 BGB scheitert, denn V hat genau
+      die Zahl erklärt, die er erklären wollte; sein Irrtum liegt allein in der Kalkulation
+      und damit im Beweggrund (unbeachtlicher Motivirrtum). Der Kaufvertrag bleibt
+      wirksam, sodass K Übereignung verlangen kann.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Richtige Anspruchsgrundlage § 433 Abs. 1 S. 1 BGB genannt
+      weight: 2.0
+      required: true
+      norms:
+      - § 433 Abs. 1
+      keywords:
+      - § 433 Abs. 1 S. 1
+      - Primärleistungsanspruch
+      - Lieferanspruch des Käufers
+      - Verschaffung des Eigentums
+      card_slugs:
+      - zr-at-willenserklaerung
+    - id: p2
+      label: Schaufensterauslage als invitatio ad offerendum eingeordnet (Abgrenzung
+        vom bindenden Angebot)
+      weight: 2.5
+      required: true
+      keywords:
+      - invitatio ad offerendum
+      - invitatio
+      - Aufforderung zur Abgabe eines Angebots
+      - kein Rechtsbindungswille
+      - Schaufensterauslage ist kein Angebot
+      card_slugs:
+      - zr-at-invitatio
+    - id: p3
+      label: Angebot des K (§ 145 BGB) und Annahme des V (§ 147 BGB) herausgearbeitet
+      weight: 2.0
+      norms:
+      - § 145 BGB
+      - § 147 BGB
+      keywords:
+      - Angebot des K
+      - Annahme durch V
+      - Antrag und Annahme
+      - § 147 Abs. 1
+      - Vertragsschluss durch Angebot und Annahme
+      card_slugs:
+      - zr-at-angebot
+    - id: p4
+      label: Anfechtung nach § 142 Abs. 1 BGB als mögliche Vernichtung des Vertrages
+        angesprochen
+      weight: 1.5
+      norms:
+      - § 142 Abs. 1 BGB
+      - § 143 BGB
+      keywords:
+      - Anfechtung nach § 142
+      - Anfechtungserklärung
+      - § 143
+      - rückwirkende Vernichtung des Vertrags
+      - Anfechtungsgrund
+      - Anfechtbarkeit
+    - id: p5
+      label: 'Anfechtungsgrund verneint: verdeckter Kalkulationsirrtum ist unbeachtlicher
+        Motivirrtum'
+      weight: 3.0
+      required: true
+      norms:
+      - § 119 Abs. 1 BGB
+      keywords:
+      - verdeckter Kalkulationsirrtum
+      - interner Kalkulationsirrtum
+      - unbeachtlicher Motivirrtum
+      - Irrtum im Beweggrund
+      - keine Anfechtung nach § 119
+      - Motivirrtum
+      - Irrtum lag allein in der Kalkulation
+      card_slugs:
+      - zr-at-kalkulationsirrtum
+    - id: p6
+      label: 'Ergebnis: Anspruch des K besteht'
+      weight: 1.0
+      keywords:
+      - Kaufvertrag bleibt wirksam
+      - Anfechtung scheitert
+      - V muss das Rad übergeben und übereignen
+      - Anspruch aus § 433 Abs. 1 S. 1 besteht
+      - K kann Übereignung verlangen

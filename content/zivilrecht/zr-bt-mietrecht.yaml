@@ -1,0 +1,389 @@
+topic:
+  slug: zr-bt-mietrecht
+  area: zivilrecht
+  title: Mietrecht (Wohnraum), §§ 535 ff. BGB
+  parent: zr-bgb-at
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: zr-miet-begriff
+  type: definition
+  front: 'Definiere: Mietvertrag und Hauptpflichten, § 535 BGB'
+  back: Durch den Mietvertrag wird der Vermieter verpflichtet, dem Mieter den Gebrauch der
+    Mietsache während der Mietzeit zu gewähren (§ 535 Abs. 1 S. 1 BGB). Er hat die Mietsache
+    dem Mieter in einem zum vertragsgemäßen Gebrauch geeigneten Zustand zu überlassen und
+    sie während der Mietzeit in diesem Zustand zu erhalten (§ 535 Abs. 1 S. 2 BGB); die Lasten
+    der Mietsache trägt er (§ 535 Abs. 1 S. 3 BGB). Der Mieter ist zur Entrichtung der vereinbarten
+    Miete verpflichtet (§ 535 Abs. 2 BGB). Der Mietvertrag ist ein gegenseitiger Dauerschuldvertrag.
+    Er unterscheidet sich von der Pacht (§ 581 BGB), die zusätzlich den Genuss der Früchte
+    gewährt, und von der Leihe (§ 598 BGB), die unentgeltlich ist. Für Wohnraum gelten ergänzend
+    die §§ 549 ff. BGB, die weitgehend zwingend zugunsten des Mieters sind.
+  norms:
+  - § 535 Abs. 1 BGB
+  - § 535 Abs. 2 BGB
+  - § 581 BGB
+  - § 598 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-miet-minderung-536
+  type: norm
+  front: Unter welchen Voraussetzungen ist die Miete gemindert (§ 536 BGB)?
+  back: Hat die Mietsache zur Zeit der Überlassung einen Mangel, der ihre Tauglichkeit zum
+    vertragsgemäßen Gebrauch aufhebt, oder entsteht ein solcher Mangel später, ist der Mieter
+    für die Zeit, in der die Tauglichkeit aufgehoben ist, von der Entrichtung der Miete befreit;
+    ist die Tauglichkeit gemindert, schuldet er nur eine angemessen herabgesetzte Miete (§
+    536 Abs. 1 S. 1, 2 BGB). Die Minderung tritt kraft Gesetzes ein, ohne dass der Mieter
+    sie erklären muss. Eine unerhebliche Minderung der Tauglichkeit bleibt außer Betracht
+    (§ 536 Abs. 1 S. 3 BGB). Dasselbe gilt, wenn eine zugesicherte Eigenschaft fehlt oder
+    später wegfällt (§ 536 Abs. 2 BGB). Der Mangel ist die für den Mieter nachteilige Abweichung
+    des tatsächlichen Zustands vom vertraglich geschuldeten Sollzustand. Bei Wohnraum ist
+    eine Vereinbarung zum Nachteil des Mieters unwirksam (§ 536 Abs. 4 BGB).
+  norms:
+  - § 536 Abs. 1 BGB
+  - § 536 Abs. 2 BGB
+  - § 536 Abs. 4 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-miet-anzeige-536c-536b
+  type: norm
+  front: Welche Ausschlussgründe gelten für die Mängelrechte des Mieters (§§ 536b, 536c BGB)?
+  back: Der Mieter muss einen während der Mietzeit auftretenden Mangel dem Vermieter unverzüglich
+    anzeigen (§ 536c Abs. 1 BGB). Unterlässt er die Anzeige, ist er dem Vermieter zum Ersatz
+    des daraus entstehenden Schadens verpflichtet, und er kann, soweit der Vermieter wegen
+    der Unterlassung nicht Abhilfe schaffen konnte, keine Minderung geltend machen, keinen
+    Schadensersatz verlangen und nicht ohne Bestimmung einer angemessenen Frist kündigen (§
+    536c Abs. 2 BGB). Kennt der Mieter den Mangel bei Vertragsschluss, stehen ihm die Rechte
+    aus den §§ 536 und 536a BGB nicht zu (§ 536b S. 1 BGB); bei grob fahrlässiger Unkenntnis
+    stehen sie ihm nur zu, wenn der Vermieter den Mangel arglistig verschwiegen hat (§ 536b
+    S. 2 BGB). Nimmt der Mieter die Sache trotz Kenntnis des Mangels an, behält er die Rechte
+    nur bei Vorbehalt (§ 536b S. 3 BGB).
+  norms:
+  - § 536b BGB
+  - § 536c BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-miet-schadensersatz-536a
+  type: norm
+  front: Wann haftet der Vermieter auf Schadensersatz und Aufwendungsersatz (§ 536a BGB)?
+  back: Ist ein Mangel bei Vertragsschluss vorhanden, haftet der Vermieter nach § 536a Abs.
+    1 Var. 1 BGB verschuldensunabhängig auf Schadensersatz (Garantiehaftung). Tritt der Mangel
+    erst später auf, haftet er nur, wenn er den Mangel zu vertreten hat (Var. 2), oder bei
+    Verzug mit der Mängelbeseitigung (Var. 3). Erfasst sind Mangelfolgeschäden und bei Verzug auch der Mangelschaden. Der Mieter kann den Mangel nach § 536a Abs. 2 BGB selbst beseitigen
+    und Ersatz der erforderlichen Aufwendungen verlangen, wenn der Vermieter mit der Mängelbeseitigung
+    im Verzug ist oder die umgehende Beseitigung zur Erhaltung oder Wiederherstellung des
+    Bestands der Mietsache notwendig ist. Die Mietminderung tritt daneben ohne Verschulden
+    des Vermieters ein.
+  norms:
+  - § 536a Abs. 1 BGB
+  - § 536a Abs. 2 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-miet-schoenheitsreparaturen
+  type: definition
+  front: 'Definiere: Schönheitsreparaturen und ihre Übertragung auf den Mieter'
+  back: 'Schönheitsreparaturen sind das Beseitigen von Mängeln, die durch vertragsgemäßen
+    Gebrauch der Mietsache entstehen, insbesondere Tapezieren, Anstrich der Wände und Decken,
+    Streichen der Heizkörper und Türen. Nach dem gesetzlichen Leitbild trifft die Pflicht
+    zur Erhaltung der Mietsache den Vermieter (§ 535 Abs. 1 S. 2 BGB). Die Pflicht kann durch
+    Individualvereinbarung oder AGB auf den Mieter übertragen werden. Die Übertragung durch
+    Formularklausel unterliegt der Inhaltskontrolle nach § 307 BGB. Unwirksam sind insbesondere
+    starre Fristenpläne und Quotenabgeltungsklauseln. Eine unwirksame Klausel wird nicht auf
+    das zulässige Maß reduziert, sondern es gilt nach § 306 Abs. 2 BGB das Gesetz: Der Vermieter
+    bleibt zur Erhaltung verpflichtet und kann keine Renovierung vom Mieter verlangen. Die
+    Unwirksamkeit einer Klausel zur laufenden Renovierung führt auch zur Unwirksamkeit der
+    damit gekoppelten Endrenovierungsklausel.'
+  norms:
+  - § 535 Abs. 1 BGB
+  - § 307 BGB
+  - § 306 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-miet-bgh-unrenoviert
+  type: rechtsprechung
+  front: Wie beurteilt der BGH die Schönheitsreparaturklausel bei unrenoviert übergebener
+    Wohnung?
+  back: Nach BGH, Urteil vom 18.03.2015 - VIII ZR 185/14, ist eine formularmäßige Klausel,
+    die dem Mieter die Schönheitsreparaturen auferlegt, unwirksam, wenn die Wohnung dem Mieter
+    unrenoviert oder renovierungsbedürftig übergeben wurde und ihm dafür kein angemessener
+    Ausgleich gewährt wird. Der Mieter würde sonst verpflichtet, eine Wohnung in einem besseren
+    Zustand zurückzugeben, als er sie selbst vorgefunden hat, was ihn unangemessen benachteiligt
+    (§ 307 Abs. 1 S. 1 BGB). Mit Urteil vom 08.07.2020 - VIII ZR 163/18 hat der BGH ergänzend
+    entschieden, dass der Mieter in einem solchen Fall vom Vermieter die Vornahme der Renovierung
+    verlangen kann, wenn der Zustand der Wohnung durch Abnutzung der Dekoration nicht mehr
+    vertragsgemäß ist, sich aber an den Kosten angemessen, regelmäßig hälftig, beteiligen
+    muss.
+  norms:
+  - § 307 Abs. 1 BGB
+  - § 535 Abs. 1 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - BGH, Urteil vom 18.03.2015 - VIII ZR 185/14
+  - BGH, Urteil vom 08.07.2020 - VIII ZR 163/18
+  - Eigenformulierung Redaktion
+- slug: zr-miet-ordentliche-kuendigung-573
+  type: norm
+  front: Unter welchen Voraussetzungen kann der Vermieter Wohnraum ordentlich kündigen (§§
+    573, 573c, 568 BGB)?
+  back: Der Vermieter kann nur kündigen, wenn er ein berechtigtes Interesse an der Beendigung
+    des Mietverhältnisses hat (§ 573 Abs. 1 S. 1 BGB). Ein solches liegt insbesondere vor
+    bei einer nicht unerheblichen schuldhaften Pflichtverletzung des Mieters (§ 573 Abs. 2
+    Nr. 1 BGB), bei Eigenbedarf (Nr. 2) und bei Hinderung angemessener wirtschaftlicher Verwertung
+    (Nr. 3). Die Kündigung bedarf der Schriftform (§ 568 Abs. 1 BGB); die Gründe sind im Kündigungsschreiben
+    anzugeben (§ 573 Abs. 3 BGB), nicht angegebene Gründe werden nur berücksichtigt, wenn
+    sie nachträglich entstanden sind. Die Kündigung muss spätestens am dritten Werktag eines Monats zugehen und wirkt zum Ablauf des übernächsten Monats; für den Mieter beträgt die Frist damit drei Monate, für den Vermieter verlängert sie sich nach fünf und nach acht Jahren seit Überlassung um jeweils drei Monate (§ 573c Abs. 1 BGB). Der Mieter kann nach §§ 574 ff. BGB
+    wegen einer Härte widersprechen (Sozialklausel).
+  norms:
+  - § 573 Abs. 1 BGB
+  - § 573 Abs. 2 BGB
+  - § 573 Abs. 3 BGB
+  - § 573c Abs. 1 BGB
+  - § 568 Abs. 1 BGB
+  - § 574 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-miet-eigenbedarf
+  type: norm
+  front: Wann liegt Eigenbedarf nach § 573 Abs. 2 Nr. 2 BGB vor, und wo liegen die Grenzen?
+  back: 'Eigenbedarf liegt vor, wenn der Vermieter die Räume als Wohnung für sich, seine Familienangehörigen
+    oder Angehörige seines Haushalts benötigt (§ 573 Abs. 2 Nr. 2 BGB). Der Nutzungswunsch
+    muss ernsthaft sein und auf vernünftigen, nachvollziehbaren Gründen beruhen; der Vermieter
+    muss nicht beweisen, dass er auf die Wohnung angewiesen ist. Die Rechtsprechung des BGH
+    setzt jedoch Grenzen: Der Eigenbedarf darf nicht vorgeschoben sein, der Wohnbedarf nicht
+    weit überhöht, und der Vermieter muss dem Mieter eine andere freie, vergleichbare Wohnung
+    im selben Haus oder in derselben Wohnanlage, die ihm zur Verfügung steht, anbieten (Anbietpflicht).
+    Verstößt er dagegen, ist die Kündigung wegen Rechtsmissbrauchs (§ 242 BGB) unwirksam.
+    Wird nach der Überlassung an den Mieter Wohnungseigentum begründet und die Wohnung veräußert, gilt eine Kündigungssperrfrist (§ 577a BGB).'
+  norms:
+  - § 573 Abs. 2 Nr. 2 BGB
+  - § 242 BGB
+  - § 577a BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-miet-ausserordentliche-kuendigung
+  type: norm
+  front: Wann ist eine fristlose Kündigung des Mietverhältnisses möglich (§§ 543, 569 BGB)?
+  back: 'Jede Partei kann das Mietverhältnis aus wichtigem Grund außerordentlich fristlos
+    kündigen, wenn ihr unter Berücksichtigung aller Umstände und Abwägung der beiderseitigen
+    Interessen die Fortsetzung bis zum Ablauf der Kündigungsfrist nicht zugemutet werden kann
+    (§ 543 Abs. 1 BGB). Wichtiger Grund für den Mieter ist namentlich der Entzug des vertragsgemäßen
+    Gebrauchs (§ 543 Abs. 2 S. 1 Nr. 1 BGB), für den Vermieter ein Zahlungsrückstand (Nr.
+    3): Verzug mit zwei aufeinanderfolgenden Terminen mit der Miete oder einem nicht unerheblichen
+    Teil, oder Rückstand in Höhe von zwei Monatsmieten über mehr als zwei Termine. Beruht der wichtige Grund auf der Verletzung einer Vertragspflicht, ist grundsätzlich eine Frist zur Abhilfe oder eine Abmahnung nötig; beim Zahlungsverzug nach Abs. 2 Nr. 3 ist beides entbehrlich (§ 543 Abs. 3 BGB). Bei Wohnraum ist ein Rückstand nur erheblich, wenn er eine Monatsmiete
+    übersteigt (§ 569 Abs. 3 Nr. 1 BGB); die Kündigung wird unwirksam, wenn der Mieter binnen
+    zwei Monaten nach Rechtshängigkeit des Räumungsanspruchs den Vermieter befriedigt (§ 569
+    Abs. 3 Nr. 2 BGB, Schonfrist).'
+  norms:
+  - § 543 Abs. 1 BGB
+  - § 543 Abs. 2 BGB
+  - § 543 Abs. 3 BGB
+  - § 569 Abs. 3 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-miet-kaution-551
+  type: norm
+  front: Welche Vorgaben gelten für die Mietkaution (§ 551 BGB)?
+  back: Vereinbaren die Parteien bei Wohnraum eine Sicherheitsleistung des Mieters, darf sie
+    höchstens das Dreifache der auf einen Monat entfallenden Miete ohne die als Pauschale
+    oder als Vorauszahlung ausgewiesenen Betriebskosten betragen (§ 551 Abs. 1 BGB). Der Mieter
+    ist zu drei gleichen monatlichen Teilzahlungen berechtigt, die erste ist zu Beginn des
+    Mietverhältnisses fällig (§ 551 Abs. 2 BGB). Der Vermieter muss eine Geldsumme bei einem
+    Kreditinstitut zu dem für Spareinlagen mit dreimonatiger Kündigungsfrist üblichen Zinssatz
+    getrennt von seinem Vermögen anlegen, die Erträge erhöhen die Sicherheit (§ 551 Abs. 3
+    BGB). Abweichende Vereinbarungen zum Nachteil des Mieters sind unwirksam (§ 551 Abs. 4
+    BGB). Nach Beendigung hat der Vermieter die Kaution nach einer angemessenen Prüfungsfrist
+    zurückzugeben und darf Forderungen aus dem Mietverhältnis verrechnen.
+  norms:
+  - § 551 Abs. 1 BGB
+  - § 551 Abs. 2 BGB
+  - § 551 Abs. 3 BGB
+  - § 551 Abs. 4 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-miet-kauf-bricht-nicht-miete-566
+  type: norm
+  front: Was besagt der Grundsatz „Kauf bricht nicht Miete“ (§ 566 BGB)?
+  back: Wird der vermietete Wohnraum nach der Überlassung an den Mieter vom Vermieter an einen
+    Dritten veräußert, tritt der Erwerber anstelle des Vermieters in die sich während der
+    Dauer seines Eigentums aus dem Mietverhältnis ergebenden Rechte und Pflichten ein (§ 566
+    Abs. 1 BGB). Maßgeblich ist der Eigentumserwerb (bei Grundstücken die Eintragung), nicht
+    der Abschluss des Kaufvertrags. Die Vorschrift schützt den Mieter vor dem Verlust seines
+    Besitzrechts, das sonst nur relativ gegen den bisherigen Vermieter wirkt. Der bisherige
+    Vermieter haftet für den vom Erwerber zu ersetzenden Schaden wie ein selbstschuldnerischer
+    Bürge, bis der Mieter vom Eigentumsübergang Kenntnis erlangt und nicht zum ersten möglichen
+    Termin kündigt (§ 566 Abs. 2 BGB). Der Erwerber muss auch die Kaution zurückgewähren (§
+    566a BGB). Die Regelung gilt über § 578 BGB für andere Räume und Grundstücke entsprechend.
+  norms:
+  - § 566 Abs. 1 BGB
+  - § 566 Abs. 2 BGB
+  - § 566a BGB
+  - § 578 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+- slug: zr-miet-erhoehung-558
+  type: norm
+  front: Wie kann der Vermieter die Wohnraummiete erhöhen (§§ 557 ff. BGB)?
+  back: Die Miete kann durch Vereinbarung (§ 557 Abs. 1 BGB), durch Staffel- oder Indexmiete
+    (§§ 557a, 557b BGB), nach Modernisierung (§ 559 BGB) oder bis zur ortsüblichen Vergleichsmiete
+    erhöht werden (§ 558 Abs. 1 BGB). Die Zustimmung zur Erhöhung auf die ortsübliche Vergleichsmiete kann der Vermieter verlangen, wenn die Miete bei Wirksamwerden der Erhöhung seit 15 Monaten unverändert ist; das Verlangen ist frühestens ein Jahr nach der letzten Erhöhung zulässig; das Erhöhungsverlangen
+    muss in Textform ergehen und begründet werden (§ 558a BGB, etwa durch Mietspiegel). Die
+    Miete darf sich innerhalb von drei Jahren nicht um mehr als 20 Prozent erhöhen (Kappungsgrenze,
+    § 558 Abs. 3 BGB), in Gebieten mit angespanntem Wohnungsmarkt um höchstens 15 Prozent.
+    Der Mieter hat eine Überlegungsfrist bis zum Ende des zweiten Kalendermonats nach Zugang
+    (§ 558b BGB) und ein Sonderkündigungsrecht (§ 561 BGB). Bei Neuvermietung in Gebieten mit angespanntem Wohnungsmarkt darf die Miete die ortsübliche Vergleichsmiete grundsätzlich um höchstens 10 Prozent übersteigen (Mietpreisbremse, § 556d Abs. 1 BGB).
+  norms:
+  - § 558 BGB
+  - § 558a BGB
+  - § 558b BGB
+  - § 559 BGB
+  - § 556d BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+schemata:
+- slug: zr-schema-miet-raeumung
+  title: Räumungsanspruch des Vermieters nach Kündigung, § 546 Abs. 1 BGB
+  norms:
+  - § 546 Abs. 1 BGB
+  - § 573 BGB
+  - § 568 BGB
+  - § 573c BGB
+  - § 543 BGB
+  quellen:
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Mietverhältnis über Wohnraum, § 535 BGB
+  - label: II. Beendigung des Mietverhältnisses durch Kündigung
+    children:
+    - label: 1. Kündigungserklärung des Vermieters in Schriftform, § 568 Abs. 1 BGB
+    - label: '2. Kündigungsgrund: ordentlich, § 573 BGB (berechtigtes Interesse: Pflichtverletzung,
+        Eigenbedarf, Verwertungshinderung) oder außerordentlich, §§ 543, 569 BGB'
+    - label: 3. Begründung im Kündigungsschreiben, § 573 Abs. 3 BGB
+    - label: 4. Kündigungsfrist, § 573c Abs. 1 BGB (drei, sechs oder neun Monate für den Vermieter)
+    - label: 5. Kein Rechtsmissbrauch, § 242 BGB (Anbietpflicht bei Eigenbedarf)
+  - label: III. Kein Widerspruch des Mieters, §§ 574 ff. BGB
+    hinweis: 'Sozialklausel: Härte aufgrund besonderer Umstände.'
+  - label: 'IV. Rechtsfolge: Rückgabe der Mietsache, § 546 Abs. 1 BGB'
+faelle:
+- slug: zr-fall-miet-eigenbedarf
+  title: Die Wohnung für die Tochter
+  difficulty: 3
+  minutes: 45
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - BGB, amtliche Fassung
+  facts: Vermieter V ist Eigentümer eines Mehrfamilienhauses. Er hat die Wohnung im ersten
+    Obergeschoss vor neun Jahren an Mieter M vermietet (drei Zimmer, 70 Quadratmeter). Am zweiten Werktag des Monats August erklärt V schriftlich die Kündigung zum 30. April des Folgejahres. Im Kündigungsschreiben
+    heißt es, seine Tochter T (27) habe nach dem Studium eine Stelle in der Stadt angetreten
+    und benötige die Wohnung für sich. Der Bedarf der T ist ernsthaft. Im gleichen Haus steht
+    seit Monaten die gleich geschnittene Wohnung im zweiten Obergeschoss leer; V hat sie weder
+    M noch T angeboten und auch zum Zeitpunkt der Kündigung nicht vermietet. M widerspricht
+    der Kündigung und zieht nicht aus. V verlangt Räumung und Herausgabe.
+  question: Hat V gegen M einen Anspruch auf Räumung und Herausgabe der Wohnung?
+  steps:
+  - prompt: Welche Anspruchsgrundlage kommt in Betracht und was ist Voraussetzung?
+    erwartung: Anspruchsgrundlage ist § 546 Abs. 1 BGB, wonach der Mieter bei Beendigung des Mietverhältnisses zur Rückgabe der Mietsache verpflichtet ist. Zu prüfen ist, ob das Mietverhältnis durch die Kündigung beendet wurde.
+  - prompt: Sind Form, Begründung und Frist der Kündigung gewahrt?
+    erwartung: Ja. Die Kündigung ist schriftlich erklärt (§ 568 Abs. 1 BGB) und im Schreiben
+      begründet (§ 573 Abs. 3 BGB). Die Kündigungsfrist beträgt für den Vermieter nach neun
+      Jahren Überlassung neun Monate (§ 573c Abs. 1 S. 2 BGB) und wurde eingehalten.
+  - prompt: Liegt ein berechtigtes Interesse vor?
+    erwartung: 'Grundsätzlich ja: V benötigt die Wohnung für eine Familienangehörige, seine
+      Tochter (Eigenbedarf, § 573 Abs. 2 Nr. 2 BGB). Der Nutzungswunsch ist ernsthaft und
+      nachvollziehbar.'
+  - prompt: Steht der Kündigung der Einwand des Rechtsmissbrauchs entgegen?
+    erwartung: Ja. Der Vermieter ist verpflichtet, dem Mieter eine andere, in demselben Haus
+      verfügbare, vergleichbare Wohnung anzubieten. Dass V die gleich geschnittene freie Wohnung
+      im zweiten Obergeschoss weder M noch T angeboten hat, ist treuwidrig (§ 242 BGB).
+  - prompt: Ergebnis?
+    erwartung: Die Kündigung ist unwirksam, das Mietverhältnis besteht fort. V hat keinen
+      Anspruch auf Räumung und Herausgabe nach § 546 Abs. 1 BGB.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Räumungsanspruch setzt Beendigung des Mietverhältnisses durch wirksame Kündigung
+        voraus (§ 546 Abs. 1 BGB)
+      weight: 1.5
+      required: false
+      norms:
+      - § 546 Abs. 1 BGB
+      keywords:
+      - Rückgabe der Mietsache
+      - § 546 Abs. 1 BGB
+      - Mietverhältnis beendet
+
+      - Beendigung des Mietverhältnisses
+    - id: p2
+      label: 'Formale Wirksamkeit: Schriftform, Begründung, Kündigungsfrist von neun Monaten'
+      weight: 2.0
+      required: false
+      norms:
+      - § 568 Abs. 1 BGB
+      - § 573 Abs. 3 BGB
+      - § 573c Abs. 1 BGB
+      keywords:
+      - Schriftform
+      - § 568 BGB
+      - § 573 Abs. 3 BGB
+      - neun Monate
+      - Kündigungsfrist
+      - § 573c BGB
+      card_slugs:
+      - zr-miet-ordentliche-kuendigung-573
+    - id: p3
+      label: 'Berechtigtes Interesse: Eigenbedarf für die Tochter (Familienangehörige), §
+        573 Abs. 2 Nr. 2 BGB, grundsätzlich bejaht'
+      weight: 2.0
+      required: false
+      norms:
+      - § 573 Abs. 2 Nr. 2 BGB
+      keywords:
+      - Eigenbedarf
+      - § 573 Abs. 2 Nr. 2 BGB
+      - Familienangehörige
+      - vernünftige nachvollziehbare Gründe
+      card_slugs:
+      - zr-miet-eigenbedarf
+    - id: p4
+      label: 'Anbietpflicht: freie vergleichbare Wohnung im selben Haus, nicht angeboten'
+      weight: 3.0
+      required: true
+      norms:
+      - § 242 BGB
+      keywords:
+      - Anbietpflicht
+      - Anbieten einer anderen Wohnung
+      - freie vergleichbare Wohnung
+      - Alternativwohnung
+      - im selben Haus
+      card_slugs:
+      - zr-miet-eigenbedarf
+    - id: p5
+      label: 'Rechtsfolge: Kündigung unwirksam wegen Rechtsmissbrauchs; Kein Räumungsanspruch'
+      weight: 3.0
+      required: true
+      norms:
+      - § 242 BGB
+      - § 546 Abs. 1 BGB
+      keywords:
+      - rechtsmissbräuchlich
+      - Rechtsmissbrauch
+      - § 242 BGB
+      - unwirksam
+      - kein Anspruch auf Räumung
+      card_slugs:
+      - zr-miet-eigenbedarf

@@ -1,0 +1,356 @@
+topic:
+  slug: or-kommunalrecht-organe-kommunalverfassungsstreit
+  area: oeffentliches-recht
+  title: Gemeindeorgane, Ratssitzung, Fraktionen und Kommunalverfassungsstreit
+  parent: oeffentliches-recht
+  relevance: 5
+  stand: 2026-10
+  redaktion:
+    erzeugt_von: claude-sonnet (Pflichtstoff-Vervollständigung)
+    status: in-pruefung
+    normzitate_geprueft: false
+cards:
+- slug: or-kr-org-organe-ueberblick
+  type: definition
+  front: Welche Hauptorgane hat die Gemeinde, und wie sind ihre Zuständigkeiten grundsätzlich verteilt?
+  back: >-
+    Hauptorgane sind die Gemeindevertretung (je nach Land Gemeinderat, Stadtrat, Rat oder Gemeindevertretung)
+    und der Bürgermeister, in einigen Ländern ergänzt durch ein Kollegialorgan (Magistrat in Hessen,
+    Hauptausschuss in Niedersachsen). Die Gemeindevertretung ist das Hauptorgan der Willensbildung und
+    nach Art. 28 Abs. 1 S. 2 GG die aus Wahlen hervorgegangene Volksvertretung. Sie entscheidet über die
+    grundsätzlichen und wichtigen Angelegenheiten der Gemeinde, vor allem über Satzungen und den Haushalt.
+    Der Bürgermeister leitet die Verwaltung, erledigt die Geschäfte der laufenden Verwaltung, bereitet die
+    Beschlüsse vor und vollzieht sie. Er vertritt die Gemeinde nach außen. Im Einzelnen weichen die
+    Gemeindeordnungen ab (GO BY, GO NRW, GemO BW, HGO, NKomVG).
+  norms:
+  - Art. 28 Abs. 1 S. 2 GG
+  quellen:
+  - GG, amtliche Fassung
+  - Gemeindeordnungen der Länder (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-org-laufende-verwaltung
+  type: definition
+  front: Was sind „Geschäfte der laufenden Verwaltung“, und warum ist die Abgrenzung wichtig?
+  back: >-
+    Geschäfte der laufenden Verwaltung sind Angelegenheiten, die nach Art und Umfang in einer Gemeinde
+    regelmäßig wiederkehren und von weniger grundsätzlicher Bedeutung sind, insbesondere finanziell nicht
+    erheblich ins Gewicht fallen. Sie gehören nach den Gemeindeordnungen zur Zuständigkeit des
+    Bürgermeisters, soweit nicht die Gemeindevertretung sich einzelne Angelegenheiten vorbehalten hat.
+    Maßgeblich ist, was in einer Gemeinde dieser Größe und Finanzkraft üblich ist; ein Geschäft gleicher Art
+    kann in einer kleinen Gemeinde nicht mehr laufend sein, in einer Großstadt dagegen schon. Wird die
+    Zuständigkeit missachtet, kann das Organ, dessen Zuständigkeit verletzt ist, im
+    Kommunalverfassungsstreit klagen. Die Zuständigkeitsabgrenzung ist ein Standardproblem in Fällen zum
+    Abschluss von Verträgen durch den Bürgermeister.
+  norms:
+  - Art. 28 Abs. 2 S. 1 GG
+  quellen:
+  - Gemeindeordnungen der Länder (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-org-vertretung-nach-aussen
+  type: norm
+  front: Was gilt für die Vertretung der Gemeinde nach außen, und was folgt aus Formverstößen?
+  back: >-
+    Die Gemeinde wird nach außen durch den Bürgermeister vertreten. Verpflichtungserklärungen, die die
+    Gemeinde rechtsgeschäftlich binden, unterliegen nach allen Gemeindeordnungen einer Formvorschrift:
+    Sie bedürfen regelmäßig der Schriftform und müssen von dem Bürgermeister (oder dessen Vertreter)
+    unterzeichnet sein, teilweise unter Beifügung des Dienstsiegels, und in einigen Ländern von zwei
+    Vertretungsberechtigten. Ausgenommen sind meist Geschäfte der laufenden Verwaltung. Die Vorschriften
+    dienen dem Schutz der Gemeinde und gelten als Beschränkung der Vertretungsmacht: Fehlt die Form, ist die
+    Erklärung nach der Rechtsprechung des BGH schwebend unwirksam, die Gemeinde kann sie aber genehmigen
+    (§ 177 BGB).
+    Eine Berufung auf den Formmangel kann nur ausnahmsweise nach Treu und Glauben ausgeschlossen sein. Eine
+    interne Zuständigkeitsüberschreitung (Beschluss des Rates fehlt) ändert die Vertretungsmacht in der
+    Regel nicht.
+  norms:
+  - § 177 BGB
+  - § 242 BGB
+  quellen:
+  - Gemeindeordnungen der Länder (Landesrechtsportale)
+  - BGB, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-org-oeffentlichkeit
+  type: norm
+  front: Wann sind Sitzungen der Gemeindevertretung öffentlich, und welche Folgen hat ein Verstoß?
+  back: >-
+    Die Sitzungen der Gemeindevertretung sind nach allen Gemeindeordnungen grundsätzlich öffentlich. Der
+    Grundsatz dient der demokratischen Kontrolle und dem Vertrauen der Einwohner in die Verwaltung. Die
+    Öffentlichkeit ist auszuschließen oder kann ausgeschlossen werden, wenn das Wohl der Allgemeinheit oder
+    berechtigte Interessen Einzelner dies erfordern; das betrifft insbesondere Personalangelegenheiten,
+    Grundstücksverträge und Steuergeheimnisse, die dann in nichtöffentlicher Sitzung behandelt werden. Über den
+    Ausschluss entscheidet regelmäßig der Rat selbst. Ein Verstoß gegen das Öffentlichkeitsgebot macht den
+    Beschluss rechtswidrig; ob er nichtig ist oder nur durch Rüge angreifbar, richtet sich nach den
+    Heilungsvorschriften der Länder. Ob das einzelne Ratsmitglied den Verstoß im
+    Kommunalverfassungsstreit rügen kann, ist umstritten. Maßgeblich ist stets die jeweilige
+    Gemeindeordnung.
+  norms:
+  - Art. 28 Abs. 1 S. 2 GG
+  quellen:
+  - Gemeindeordnungen der Länder (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-org-befangenheit
+  type: definition
+  front: Wann ist ein Ratsmitglied befangen und von der Mitwirkung ausgeschlossen?
+  back: >-
+    Nach den Gemeindeordnungen darf ein Ratsmitglied weder beratend noch entscheidend mitwirken, wenn die
+    Entscheidung ihm selbst, einem Angehörigen (Katalog nach Landesrecht, zumeist Ehegatte,
+    Lebenspartner, Verwandte in gerader Linie und nahe Verwandte in der Seitenlinie) oder einer von ihm
+    vertretenen natürlichen oder juristischen Person einen unmittelbaren Vorteil oder Nachteil bringen
+    kann. Unmittelbarkeit liegt vor, wenn die Entscheidung selbst, nicht erst ein weiterer Akt, die
+    Vorteils- oder Nachteilsfolge auslöst; ausreichend ist die Möglichkeit eines Vorteils. Kein Fall der
+    Befangenheit ist die Betroffenheit nur als Teil einer Berufs- oder Bevölkerungsgruppe, deren
+    gemeinsame Interessen berührt werden (Gruppeninteresse), ferner meist nicht bei Wahlen. Bei Mitwirkung eines
+    Befangenen ist der Beschluss rechtswidrig; die Länder knüpfen seine Unwirksamkeit häufig daran, dass die
+    Mitwirkung für das Abstimmungsergebnis ausschlaggebend war oder der Mangel nicht rechtzeitig gerügt wurde.
+  norms:
+  - Art. 28 Abs. 1 S. 2 GG
+  quellen:
+  - Gemeindeordnungen der Länder (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-org-ordnungsmassnahmen
+  type: definition
+  front: Welche Ordnungsmaßnahmen kann der Vorsitzende gegen Ratsmitglieder verhängen?
+  back: >-
+    Der Vorsitzende (in vielen Ländern der Bürgermeister) leitet die Sitzung und hat Ordnungsgewalt. Bei
+    Störungen kommt ein abgestuftes Vorgehen in Betracht: Ordnungsruf, Entziehung des Wortes nach
+    vorheriger Ermahnung, in schweren Fällen Ausschluss des Mitglieds von der laufenden Sitzung (und
+    teilweise Ordnungsgeld oder Ausschluss für weitere Sitzungen, so ausdrücklich in einzelnen
+    Gemeindeordnungen). Voraussetzung ist ein Verstoß gegen die Ordnung oder die Würde der Sitzung;
+    bloße scharfe Kritik oder politischer Streit rechtfertigt keine Maßnahme, weil das Ratsmitglied in
+    Wahrnehmung seines Amtes sachlich äußern darf. Die Maßnahmen müssen verhältnismäßig und vorher
+    angedroht sein, der Ausschluss setzt in aller Regel einen vorausgegangenen Ordnungsruf und die
+    Androhung voraus. Rechtsschutz: Der Ausschluss ist nach h. M. ein innerorganisatorischer Akt, kein
+    Verwaltungsakt; zulässig ist die Klage im Kommunalverfassungsstreit.
+  norms:
+  - Art. 28 Abs. 1 S. 2 GG
+  quellen:
+  - Gemeindeordnungen der Länder (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-org-fraktion
+  type: definition
+  front: Was ist eine Fraktion im Gemeinderat, und welche Rechte hat sie?
+  back: >-
+    Eine Fraktion ist der freiwillige Zusammenschluss von Ratsmitgliedern (meist derselben Partei oder
+    Wählergruppe) zu gemeinsamer Arbeit in der Gemeindevertretung. Das Fraktionsrecht ist teils in den
+    Gemeindeordnungen geregelt, im Übrigen durch die Rechtsprechung entwickelt. Eine Fraktion ist Teil der
+    Gemeindevertretung und wirkt an deren Willensbildung mit. Sie hat insbesondere ein Antragsrecht, das
+    Recht auf Besetzung der Ausschüsse nach dem Grundsatz der Spiegelbildlichkeit (die Ausschüsse bilden
+    das Stärkeverhältnis im Rat ab), in der Regel das Recht auf Zuschüsse für die Geschäftsführung
+    (zweckgebunden, keine Parteifinanzierung) sowie Informationsrechte. Zur Bildung ist meist eine
+    Mindestzahl von Mitgliedern erforderlich. Fraktionen sind im Kommunalverfassungsstreit
+    beteiligtenfähig und können sich auf Rechte aus der Gemeindeordnung berufen.
+  norms:
+  - Art. 28 Abs. 1 S. 2 GG
+  quellen:
+  - Gemeindeordnungen der Länder (Landesrechtsportale)
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-org-kvs-begriff-rechtsweg
+  type: definition
+  front: Was ist ein Kommunalverfassungsstreit, und ist dafür der Verwaltungsrechtsweg eröffnet?
+  back: >-
+    Der Kommunalverfassungsstreit (kommunalrechtlicher Organstreit) ist ein Innenrechtsstreit zwischen
+    Organen oder Organteilen derselben Gemeinde über deren organschaftliche Rechte und Pflichten. Streitende
+    sind z. B. Rat und Bürgermeister, Fraktion und Rat oder ein Ratsmitglied und der Vorsitzende. Der
+    Verwaltungsrechtsweg ist nach § 40 Abs. 1 S. 1 VwGO eröffnet: Die Streitigkeit ist öffentlich-rechtlich,
+    weil sie sich nach der Gemeindeordnung richtet, und nichtverfassungsrechtlicher Art, weil es nicht um
+    Verfassungsorgane geht und beide Seiten im Landesrecht verfasst sind (keine doppelte
+    Verfassungsunmittelbarkeit). Die Streitigkeit gehört vor das Verwaltungsgericht, nicht vor das
+    Landesverfassungsgericht. Ein Vorverfahren findet nicht statt, und es gibt keine Klagefrist.
+  norms:
+  - § 40 Abs. 1 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-org-kvs-klageart
+  type: streitstand
+  front: Welche Klageart ist im Kommunalverfassungsstreit statthaft?
+  back: >-
+    Maßnahmen im Innenverhältnis zwischen Organen sind mangels Außenwirkung regelmäßig keine Verwaltungsakte
+    im Sinne von § 35 VwVfG. Die h. M. wendet deshalb die allgemeine Leistungsklage (Vornahme, Unterlassung)
+    oder die Feststellungsklage nach § 43 VwGO an, je nach Begehren: Das Ratsmitglied, das sein Rederecht
+    verteidigt, kann auf Feststellung der Rechtswidrigkeit des Ausschlusses oder auf Unterlassung weiterer
+    Maßnahmen klagen. Eine Mindermeinung bejaht für einzelne Maßnahmen (etwa den Ausschluss mit
+    Ordnungsgeld) einen Verwaltungsakt und lässt die Anfechtungsklage zu; sie setzt sich nicht durch, weil
+    der Rechtsschutz im Organstreit sonst nicht einheitlich ausfiele. Eine nachträgliche Feststellung der
+    Rechtswidrigkeit (Feststellungsinteresse: Wiederholungsgefahr oder Rehabilitationsinteresse) ist
+    möglich, wenn die Sitzung vorüber ist.
+  norms:
+  - § 43 Abs. 1 VwGO
+  - § 35 VwVfG
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-org-kvs-beteiligtenfaehigkeit
+  type: norm
+  front: Wer ist im Kommunalverfassungsstreit beteiligtenfähig (§ 61 VwGO analog) und klagebefugt?
+  back: >-
+    Beteiligtenfähig ist nach § 61 Nr. 1 VwGO das einzelne Ratsmitglied als natürliche Person. Für Organe
+    und Organteile (Gemeinderat, Bürgermeister, Fraktion, Ausschuss) wird § 61 Nr. 2 VwGO analog
+    angewandt: Sie sind Vereinigungen im weiteren Sinne, denen ein Recht zustehen kann, nämlich ein
+    organschaftliches Recht. Die Klagebefugnis folgt aus § 42 Abs. 2 VwGO analog: Der Kläger muss
+    geltend machen, möglicherweise in eigenen organschaftlichen Rechten verletzt zu sein. Rechte der Gemeinde
+    als Rechtsträgerin kann ein Organ nicht geltend machen (keine Popularklage; keine Prozessstandschaft
+    ohne gesetzliche Grundlage). Beklagter ist das Organ, dem die Rechtsverletzung vorgeworfen wird
+    (Organklage); das Rechtsträgerprinzip des § 78 Abs. 1 Nr. 1 VwGO passt nicht, weil die Gemeinde
+    nur eine Rechtsperson bildet.
+  norms:
+  - § 61 Nr. 1 VwGO
+  - § 61 Nr. 2 VwGO
+  - § 42 Abs. 2 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+- slug: or-kr-org-kvs-wehrfaehige-rechte
+  type: streitstand
+  front: Wann liegt im Kommunalverfassungsstreit ein klagefähiges organschaftliches Recht vor?
+  back: >-
+    Organschaftliche Rechte sind nur klagefähig, wenn sie dem Organ oder Organteil zur eigenen Wahrnehmung
+    zugewiesen sind und nicht bloß dem Interesse der Allgemeinheit dienen. Beispiele sind das Recht des
+    Ratsmitglieds auf Teilnahme, Rede, Antrag und Abstimmung, das Informationsrecht und das Recht der Fraktion
+    auf angemessene Ausschussbesetzung. Nicht wehrfähig sind bloße Interessen an der objektiven Rechtmäßigkeit
+    des Verwaltungshandelns und Vorgänge, die allein die Gemeinde im Außenverhältnis betreffen.
+    Umstritten ist, ob das einzelne Ratsmitglied auch Verstöße gegen die Zuständigkeitsverteilung zwischen
+    Rat und Bürgermeister rügen kann. Die überwiegende Ansicht verneint es: Die Zuständigkeit ist ein Recht
+    des Organs, nicht des Mitglieds, und das Mitglied kann nur die Verletzung seiner eigenen
+    Mitwirkungsrechte geltend machen. Das Organ selbst (der Rat, die Fraktion als Organteil) kann die
+    Verletzung seiner Zuständigkeit dagegen rügen.
+  norms:
+  - § 42 Abs. 2 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-10
+schemata:
+- slug: or-schema-kr-org-kommunalverfassungsstreit
+  title: Zulässigkeit der Klage im Kommunalverfassungsstreit
+  norms:
+  - § 40 Abs. 1 VwGO
+  - § 43 Abs. 1 VwGO
+  - § 61 VwGO
+  - § 42 Abs. 2 VwGO
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  steps:
+  - label: I. Verwaltungsrechtsweg, § 40 Abs. 1 S. 1 VwGO
+    hinweis: Öffentlich-rechtlich, nichtverfassungsrechtlich – keine doppelte Verfassungsunmittelbarkeit.
+  - label: II. Statthafte Klageart
+    children:
+    - label: 1. Kein Verwaltungsakt im Innenverhältnis
+    - label: 2. Feststellungsklage, § 43 Abs. 1 VwGO, oder allgemeine Leistungsklage (Vornahme, Unterlassung)
+      hinweis: Bei erledigter Maßnahme Feststellungsinteresse (Wiederholungsgefahr, Rehabilitation).
+  - label: III. Beteiligtenfähigkeit, § 61 VwGO
+    children:
+    - label: 1. Ratsmitglied – § 61 Nr. 1 VwGO
+    - label: 2. Organ oder Organteil (Rat, Bürgermeister, Fraktion) – § 61 Nr. 2 VwGO analog
+  - label: IV. Klagebefugnis, § 42 Abs. 2 VwGO analog
+    hinweis: Möglichkeit der Verletzung eines eigenen, wehrfähigen organschaftlichen Rechts.
+  - label: V. Richtiger Beklagter – das beteiligte Organ
+  - label: VI. Allgemeines Rechtsschutzbedürfnis
+    hinweis: Kein Vorverfahren, keine Klagefrist; Verwirkung ist möglich.
+faelle:
+- slug: or-fall-kr-org-ratsausschluss
+  title: Der Ausschluss des Ratsmitglieds
+  difficulty: 3
+  minutes: 50
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VwGO, amtliche Fassung
+  facts: >-
+    In der Sitzung des Gemeinderats der Stadt S kritisiert das Ratsmitglied R den Haushaltsentwurf des
+    Bürgermeisters B in scharfem, aber sachlichem Ton. B, der den Vorsitz im Rat führt, ruft R nach
+    dem zweiten Redebeitrag zur Ordnung, ohne dass R beleidigend gewesen wäre, und schließt ihn bei der
+    nächsten Wortmeldung von der restlichen Sitzung aus, ohne den Ausschluss zuvor anzudrohen. Die einschlägige
+    Gemeindeordnung erlaubt den Ausschluss nur bei grober Ungebühr oder wiederholter Störung der
+    Sitzung nach vorangegangenem Ordnungsruf mit Androhung des Ausschlusses. R, der die Sitzung verlassen musste,
+    will klären lassen, ob der Ausschluss rechtmäßig war, und befürchtet gleichartige Maßnahmen in kommenden
+    Sitzungen. Ein Widerspruchsverfahren ist im Land nicht vorgesehen.
+  question: Ist eine Klage des R vor dem Verwaltungsgericht zulässig und begründet?
+  steps:
+  - prompt: Ist der Verwaltungsrechtsweg eröffnet?
+    erwartung: Ja, § 40 Abs. 1 S. 1 VwGO. Es handelt sich um einen kommunalverfassungsrechtlichen Organstreit; die Streitigkeit ist öffentlich-rechtlich und nichtverfassungsrechtlicher Art.
+  - prompt: Welche Klageart ist statthaft, und ist R beteiligtenfähig?
+    erwartung: Der Ausschluss ist eine innerorganisatorische Maßnahme ohne Außenwirkung und kein Verwaltungsakt. Statthaft ist die Feststellungsklage nach § 43 Abs. 1 VwGO (nach Erledigung der konkreten Maßnahme); gegen die befürchteten weiteren Maßnahmen kommt zusätzlich die vorbeugende Unterlassungsklage in Betracht. R ist als natürliche Person nach § 61 Nr. 1 VwGO beteiligtenfähig.
+  - prompt: Ist R klagebefugt, und besteht ein Feststellungsinteresse?
+    erwartung: R macht die Verletzung seiner organschaftlichen Mitwirkungsrechte (Teilnahme-, Rede- und Stimmrecht) geltend, § 42 Abs. 2 VwGO analog. Das Feststellungsinteresse folgt aus der Wiederholungsgefahr und dem Rehabilitationsinteresse.
+  - prompt: Ist der Ausschluss rechtmäßig?
+    erwartung: Nein. R hat die Ordnung nicht grob verletzt; sachlich scharfe Kritik ist vom Rederecht gedeckt. Außerdem fehlte die nach der Gemeindeordnung erforderliche Androhung des Ausschlusses. Der Ausschluss war rechtswidrig und hat R in seinen organschaftlichen Rechten verletzt.
+  expectation:
+    pruefpunkte:
+    - id: p1
+      label: Verwaltungsrechtsweg nach § 40 Abs. 1 VwGO im Kommunalverfassungsstreit bejaht (nichtverfassungsrechtliche Streitigkeit)
+      weight: 1.5
+      required: false
+      norms:
+      - § 40 Abs. 1 VwGO
+      keywords:
+      - § 40 Abs. 1 VwGO
+      - nichtverfassungsrechtlicher Art
+      - Kommunalverfassungsstreit
+      - Organstreit
+      - doppelte Verfassungsunmittelbarkeit
+      card_slugs:
+      - or-kr-org-kvs-begriff-rechtsweg
+    - id: p2
+      label: Ausschluss als innerorganisatorische Maßnahme ohne Verwaltungsaktqualität erkannt und Feststellungsklage (bzw. Leistungsklage) als Klageart gewählt
+      weight: 2.5
+      required: true
+      norms:
+      - § 43 Abs. 1 VwGO
+      keywords:
+      - Feststellungsklage
+      - § 43 Abs. 1 VwGO
+      - kein Verwaltungsakt
+      - Innenrechtsstreit
+      - allgemeine Leistungsklage
+      - Unterlassungsklage
+      card_slugs:
+      - or-kr-org-kvs-klageart
+    - id: p3
+      label: Beteiligtenfähigkeit des Ratsmitglieds (§ 61 Nr. 1 VwGO) und Klagebefugnis analog § 42 Abs. 2 VwGO aus organschaftlichen Rechten
+      weight: 2.0
+      required: true
+      norms:
+      - § 61 Nr. 1 VwGO
+      - § 42 Abs. 2 VwGO
+      keywords:
+      - § 61 Nr. 1 VwGO
+      - § 42 Abs. 2 VwGO analog
+      - organschaftliche Rechte
+      - Mitwirkungsrechte
+      - Rederecht
+      card_slugs:
+      - or-kr-org-kvs-beteiligtenfaehigkeit
+    - id: p4
+      label: Feststellungsinteresse wegen Wiederholungsgefahr bzw. Rehabilitationsinteresse
+      weight: 1.0
+      required: false
+      keywords:
+      - Feststellungsinteresse
+      - Wiederholungsgefahr
+      - Rehabilitationsinteresse
+      - berechtigtes Interesse
+    - id: p5
+      label: Rechtswidrigkeit des Ausschlusses – keine grobe Ungebühr, fehlende Androhung, Verhältnismäßigkeit
+      weight: 3.0
+      required: true
+      norms:
+      - Art. 28 Abs. 1 S. 2 GG
+      keywords:
+      - Ordnungsmaßnahme
+      - grobe Ungebühr
+      - Androhung
+      - Verhältnismäßigkeit
+      - Ordnungsruf
+      - rechtswidrig
+      card_slugs:
+      - or-kr-org-ordnungsmassnahmen

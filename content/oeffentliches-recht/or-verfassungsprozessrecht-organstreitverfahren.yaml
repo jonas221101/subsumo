@@ -31,10 +31,10 @@ cards:
   type: definition
   front: Wer ist im Organstreitverfahren als 'oberstes Bundesorgan' beteiligtenfähig?
   back: Als oberste Bundesorgane beteiligtenfähig sind der Bundestag, der Bundesrat,
-    die Bundesregierung und der Bundespräsident - sie sind unmittelbar durch das
-    Grundgesetz konstituiert und mit eigenen, im Organstreit verteidigungsfähigen
-    Rechten ausgestattet. Der Gemeinsame Ausschuss nach Art. 53a GG wird von der ganz
-    herrschenden Meinung ebenfalls als oberstes Bundesorgan angesehen.
+    die Bundesregierung und der Bundespräsident - sie sind unmittelbar durch das Grundgesetz
+    konstituiert und mit eigenen, im Organstreit verteidigungsfähigen Rechten ausgestattet.
+    Der Gemeinsame Ausschuss nach Art. 53a GG wird von der ganz herrschenden Meinung
+    ebenfalls als oberstes Bundesorgan angesehen.
   norms:
   - Art. 93 Abs. 1 Nr. 1 GG
   quellen:
@@ -49,8 +49,8 @@ cards:
     Grundgesetz oder die Geschäftsordnung des jeweiligen Organs mit eigenen Rechten
     ausgestattet sind. Anerkannt ist dies für Fraktionen des Bundestages, deren Rechtsstellung
     sich aus der Geschäftsordnung des Bundestages ergibt, sowie für den Bundestagspräsidenten.
-    Für einzelne Abgeordnete ist die Beteiligtenfähigkeit zur Verteidigung ihres
-    freien Mandats aus Art. 38 Abs. 1 S. 2 GG mittlerweile anerkannt. Politische Parteien
+    Für einzelne Abgeordnete ist die Beteiligtenfähigkeit zur Verteidigung ihres freien
+    Mandats aus Art. 38 Abs. 1 S. 2 GG mittlerweile anerkannt. Politische Parteien
     sind grundsätzlich nicht beteiligtenfähig, können aber ausnahmsweise im Organstreit
     ihre verfassungsrechtliche Stellung aus Art. 21 GG (insbesondere den Grundsatz
     der Chancengleichheit) verteidigen, wenn sie durch ein Verfassungsorgan in dieser
@@ -69,10 +69,10 @@ cards:
     sein?
   back: Antragsgegenstand ist jede rechtserhebliche Maßnahme oder Unterlassung des
     Antragsgegners. Rechtserheblich ist ein Verhalten, das geeignet ist, die verfassungsrechtliche
-    Position des Antragstellers zu beeinträchtigen - bloße Meinungsäußerungen
-    ohne eigenständigen Regelungsgehalt genügen grundsätzlich nicht. Erfasst sind
-    sowohl aktives Handeln (z. B. der Erlass eines Gesetzesbeschlusses) als auch das
-    pflichtwidrige Unterlassen einer gebotenen Maßnahme.
+    Position des Antragstellers zu beeinträchtigen - bloße Meinungsäußerungen ohne
+    eigenständigen Regelungsgehalt genügen grundsätzlich nicht. Erfasst sind sowohl
+    aktives Handeln (z. B. der Erlass eines Gesetzesbeschlusses) als auch das pflichtwidrige
+    Unterlassen einer gebotenen Maßnahme.
   norms:
   - § 64 Abs. 1 BVerfGG
   quellen:
@@ -80,15 +80,21 @@ cards:
   stand: 2026-09
 - slug: or-osv-antragsbefugnis-64
   type: norm
-  front: Welcher Maßstab gilt für die Antragsbefugnis im Organstreit, § 64 Abs.
-    1 BVerfGG?
-  back: Der Antragsteller muss geltend machen, durch die beanstandete Maßnahme oder
+  front: Welcher Maßstab gilt für die Antragsbefugnis im Organstreit, § 64 Abs. 1
+    BVerfGG?
+  back: 'Der Antragsteller muss geltend machen, durch die beanstandete Maßnahme oder
     Unterlassung des Antragsgegners in eigenen, ihm durch das Grundgesetz übertragenen
-    Rechten und Pflichten verletzt oder unmittelbar gefährdet zu sein. Es genügt
-    nach der sogenannten Möglichkeitstheorie, dass eine Rechtsverletzung nach dem
-    Vortrag des Antragstellers nicht von vornherein offensichtlich und eindeutig ausgeschlossen
+    Rechten und Pflichten verletzt oder unmittelbar gefährdet zu sein. Es genügt nach
+    der sogenannten Möglichkeitstheorie, dass eine Rechtsverletzung nach dem Vortrag
+    des Antragstellers nicht von vornherein offensichtlich und eindeutig ausgeschlossen
     erscheint - eine abschließende Prüfung der tatsächlichen Rechtsverletzung bleibt
-    der Begründetheit vorbehalten.
+    der Begründetheit vorbehalten. Eine Fraktion kann nach § 64 Abs. 1 BVerfGG auch
+    Rechte des gesamten Bundestages im Wege der Prozessstandschaft geltend machen,
+    um die Oppositionsrechte gegenüber der Parlamentsmehrheit zu sichern; sie muss
+    dann ausdrücklich im eigenen Namen die Rechte des Bundestages rügen. Außerdem
+    muss ein Rechtsschutzbedürfnis bestehen: Es fehlt, wenn der Antragsteller sein
+    Ziel auf einfacherem, parlamentsinternem Weg erreichen könnte; bei erledigten
+    Maßnahmen genügt ein fortbestehendes Klärungsinteresse (Wiederholungsgefahr).'
   norms:
   - § 64 Abs. 1 BVerfGG
   quellen:
@@ -114,11 +120,10 @@ cards:
     BVerfGG fest?
   back: Das Bundesverfassungsgericht stellt in seiner Entscheidung lediglich fest,
     ob die beanstandete Maßnahme oder Unterlassung gegen eine Bestimmung des Grundgesetzes
-    verstößt - anders als etwa bei der Nichtigerklärung eines Gesetzes handelt
-    es sich um ein reines Feststellungsurteil, keine Kassationsentscheidung. Ein Gesetzesbeschluss
-    selbst wird durch ein Organstreiturteil also nicht für nichtig erklärt; die
-    Feststellung der Rechtsverletzung bindet aber die Verfassungsorgane für ihr künftiges
-    Verhalten.
+    verstößt - anders als etwa bei der Nichtigerklärung eines Gesetzes handelt es
+    sich um ein reines Feststellungsurteil, keine Kassationsentscheidung. Ein Gesetzesbeschluss
+    selbst wird durch ein Organstreiturteil also nicht für nichtig erklärt; die Feststellung
+    der Rechtsverletzung bindet aber die Verfassungsorgane für ihr künftiges Verhalten.
   norms:
   - § 67 BVerfGG
   quellen:
@@ -169,13 +174,17 @@ schemata:
     hinweis: Rechtserhebliche Maßnahme oder Unterlassung des Antragsgegners, § 64
       Abs. 1 BVerfGG.
   - label: IV. Antragsbefugnis
-    hinweis: Möglichkeit einer Verletzung eigener, durch das Grundgesetz übertragener
-      Rechte, § 64 Abs. 1 BVerfGG (Möglichkeitstheorie).
-  - label: V. Form und Frist
+    hinweis: 'Möglichkeit einer Verletzung eigener, durch das Grundgesetz übertragener
+      Rechte, § 64 Abs. 1 BVerfGG (Möglichkeitstheorie). Bei Fraktionen: Geltendmachung
+      eigener Rechte oder in Prozessstandschaft Rechte des Bundestages.'
+  - label: V. Rechtsschutzbedürfnis
+    hinweis: Fehlt, wenn ein einfacherer, parlamentsinterner Weg zur Verfügung steht;
+      bei Erledigung nur bei Klärungsinteresse.
+  - label: VI. Form und Frist
     children:
     - label: 1. Schriftform mit Begründung, § 23 Abs. 1, § 64 Abs. 2 BVerfGG
     - label: 2. Sechsmonatsfrist, § 64 Abs. 3 BVerfGG
-  - label: VI. Ergebnis
+  - label: VII. Ergebnis
 faelle:
 - slug: or-fall-verweigerte-antwort-kleine-anfrage
   title: Die pauschal verweigerte Antwort auf die Kleine Anfrage
@@ -207,10 +216,10 @@ faelle:
       Unterlassung bzw. Maßnahme der Bundesregierung i.S.d. § 64 Abs. 1 BVerfGG.
   - prompt: Ist F antragsbefugt?
     erwartung: Ja - es erscheint nach dem Vortrag der F nicht von vornherein ausgeschlossen,
-      dass die vollständige Antwortverweigerung ihr parlamentarisches Frage- und
-      Informationsrecht (hergeleitet aus dem Kontrollrecht des Parlaments gegenüber
-      der Regierung, Art. 20 Abs. 2 GG i.V.m. Art. 38 Abs. 1 S. 2 GG) verletzt - die
-      Möglichkeitstheorie ist erfüllt.
+      dass die vollständige Antwortverweigerung ihr parlamentarisches Frage- und Informationsrecht
+      (hergeleitet aus dem Kontrollrecht des Parlaments gegenüber der Regierung, Art.
+      20 Abs. 2 GG i.V.m. Art. 38 Abs. 1 S. 2 GG) verletzt - die Möglichkeitstheorie
+      ist erfüllt.
   - prompt: Ist die Sechsmonatsfrist des § 64 Abs. 3 BVerfGG gewahrt?
     erwartung: Ja - der Antrag wurde bereits vier Monate nach Bekanntwerden der Antwortverweigerung
       und damit innerhalb der Frist gestellt.
@@ -221,7 +230,7 @@ faelle:
       und mit einer nachvollziehbaren, auf den Einzelfall bezogenen Begründung eingeschränkt
       werden. Eine floskelhafte Berufung auf das Staatswohl ohne nähere Substantiierung
       reicht dafür nicht aus, sodass die Antwortverweigerung das Frage- und Informationsrecht
-      der F verletzt.'
+      der F verletzt. Der Antrag der F ist daher zulässig und begründet.'
   expectation:
     pruefpunkte:
     - id: p1
@@ -230,9 +239,9 @@ faelle:
       weight: 1.5
       required: false
       keywords:
-      - Fraktion
+      - anderer Beteiligter
       - andere Beteiligte
-      - Geschäftsordnung
+      - Art. 93 Abs. 1 Nr. 1 GG
       card_slugs:
       - or-osv-beteiligtenfaehigkeit-andere-beteiligte
     - id: p2
@@ -241,7 +250,9 @@ faelle:
       required: true
       keywords:
       - Möglichkeitstheorie
-      - nicht von vornherein ausgeschlossen
+      - Antragsbefugnis
+      - möglicherweise verletzt
+      - Antragsbefugnis der F
       card_slugs:
       - or-osv-antragsbefugnis-64
     - id: p3
@@ -253,8 +264,10 @@ faelle:
       - Art. 20 Abs. 2 GG
       - Art. 38 Abs. 1 S. 2 GG
       keywords:
+      - parlamentarisches Frage- und Informationsrecht
       - Frage- und Informationsrecht
-      - Kontrollrecht
+      - Art. 38 Abs. 1 S. 2 GG
+      - Art. 20 Abs. 2 GG
       card_slugs:
       - or-osv-gegenstand-art93
     - id: p4
@@ -265,7 +278,9 @@ faelle:
       - § 64 Abs. 3 BVerfGG
       keywords:
       - Sechsmonatsfrist
-      - gewahrt
+      - § 64 Abs. 3 BVerfGG
+      - innerhalb der Frist
+      - vier Monate
       card_slugs:
       - or-osv-antragsfrist-64-abs3
     - id: p5
@@ -275,8 +290,9 @@ faelle:
       required: true
       keywords:
       - pauschale Begründung
-      - nicht ausreichend substantiiert
       - Staatswohl
+      - pauschale Berufung
+      - floskelhafte Berufung
       card_slugs:
       - or-gr-verhaeltnismaessigkeit
     - id: p6
@@ -284,5 +300,5 @@ faelle:
       weight: 0.5
       required: false
       keywords:
-      - begründet
-      - zulässig
+      - zulässig und begründet
+      - Antrag begründet
