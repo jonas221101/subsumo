@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import '../tokens/tokens.dart';
 import 'subsumo_eyebrow.dart';

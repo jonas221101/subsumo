@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Deckt die drei bisherigen Chip-Verwendungen einheitlich ab: reine
 /// Information (Kartentyp, "offline"), auswaehlbarer Filter (Rechtsgebiet)

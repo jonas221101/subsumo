@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Eingabefeld mit einheitlicher Beschriftung/Rahmen (aus
 /// `Theme.of(context).inputDecorationTheme`). Deckt die bisherigen Faelle ab:
