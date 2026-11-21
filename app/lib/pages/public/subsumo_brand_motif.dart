@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Einziges abstraktes Marken-Motiv der oeffentlichen Flaechen (Brief
 /// Abschnitt 5, docs/25-ui-relaunch-brief.md): eine Subsumtions-Klammer

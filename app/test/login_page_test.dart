@@ -1,6 +1,6 @@
 // Belegt, dass das Login-Redesign (SUB-37) die Designsystem-Komponenten
 // nutzt statt eigener TextFormField/Button-Rohwidgets.
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:subsumo/api.dart';

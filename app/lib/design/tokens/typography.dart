@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Typoskala. Fliesstext dominiert die App (Gutachtentexte, Falltexte,
 /// Schemata) - deshalb ist body* bewusst gross genug fuer lange

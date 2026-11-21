@@ -2,7 +2,7 @@
 // tatsaechlichen Inhalt der jeweiligen docs/legal/*.md-Datei (SUB-85) - nicht
 // mehr den Platzhaltertext aus dem SUB-108-Geruest. Der Footer verlinkt alle
 // fuenf Rechtstexte konsistent.
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:subsumo/api.dart';
 import 'package:subsumo/main.dart';
