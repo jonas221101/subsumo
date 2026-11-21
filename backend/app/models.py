@@ -199,6 +199,59 @@ class Schema(Base):
     stand: Mapped[str] = mapped_column(String(20), default="")
 
 
+class Lernskript(Base):
+    """Gegliederter Erklaertext zu einem Thema (docs/34, Abschnitt 2.1).
+
+    ``abschnitte`` ist ein JSON-Payload analog ``Schema.steps``. Kein
+    FSRS-Zustand, kein Einfluss auf die Abdeckung (docs/34, AK5).
+    """
+
+    __tablename__ = "lernskripte"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    slug: Mapped[str] = mapped_column(String(200), unique=True, index=True)
+    topic_slug: Mapped[str] = mapped_column(String(160), index=True)
+    title: Mapped[str] = mapped_column(String(240))
+    abschnitte: Mapped[list] = mapped_column(JSON, default=list)
+    sources: Mapped[list] = mapped_column(JSON, default=list)
+    stand: Mapped[str] = mapped_column(String(20), default="")
+
+
+class Lernerlebnis(Base):
+    """Interaktives Lernerlebnis (docs/34, Abschnitt 2.2).
+
+    ``type`` in gefuehrter_fall | sortieraufgabe | luecken_check; der typ-
+    spezifische Inhalt liegt in ``data``. Antwortpruefung laeuft clientseitig.
+    """
+
+    __tablename__ = "lernerlebnisse"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    slug: Mapped[str] = mapped_column(String(200), unique=True, index=True)
+    topic_slug: Mapped[str] = mapped_column(String(160), index=True)
+    type: Mapped[str] = mapped_column(String(32), index=True)
+    title: Mapped[str] = mapped_column(String(240))
+    data: Mapped[dict] = mapped_column(JSON, default=dict)
+    sources: Mapped[list] = mapped_column(JSON, default=list)
+    stand: Mapped[str] = mapped_column(String(20), default="")
+
+
+class Visualisierung(Base):
+    """Visualisierung (docs/34, Abschnitt 2.3): flussdiagramm | baum | zeitstrahl."""
+
+    __tablename__ = "visualisierungen"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    slug: Mapped[str] = mapped_column(String(200), unique=True, index=True)
+    topic_slug: Mapped[str] = mapped_column(String(160), index=True)
+    type: Mapped[str] = mapped_column(String(32), index=True)
+    title: Mapped[str] = mapped_column(String(240))
+    schema_slug: Mapped[str | None] = mapped_column(String(200), nullable=True)
+    data: Mapped[dict] = mapped_column(JSON, default=dict)
+    sources: Mapped[list] = mapped_column(JSON, default=list)
+    stand: Mapped[str] = mapped_column(String(20), default="")
+
+
 class Case(Base):
     """Uebungsfall mit Erwartungshorizont.
 
