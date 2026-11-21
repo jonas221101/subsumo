@@ -201,6 +201,25 @@ schemata:
   - label: 'III. Sonderfall: Erlaubnistatbestandsirrtum (entspr. Anwendung § 16 Abs.
       1 StGB nach rechtsfolgenverweisender Schuldtheorie)'
   - label: IV. Ergebnis
+- slug: sr-schema-vorsatz-im-aufbau
+  title: Aufbau des vorsätzlichen Begehungsdelikts mit Vorsatz und Tatbestandsirrtum
+  norms:
+  - § 15 StGB
+  - § 16 Abs. 1 StGB
+  quellen:
+  - Eigenformulierung Redaktion
+  stand: 2026-11
+  steps:
+  - label: I. Objektiver Tatbestand
+    children:
+    - label: 1. Tatobjekt, Tathandlung und Taterfolg
+    - label: 2. Kausalität und objektive Zurechnung
+  - label: II. Subjektiver Tatbestand
+    children:
+    - label: 1. Vorsatz bezüglich aller objektiven Merkmale, § 15 StGB
+    - label: 2. Kein Tatbestandsirrtum, § 16 Abs. 1 S. 1 StGB
+  - label: III. Rechtswidrigkeit
+  - label: IV. Schuld
 faelle:
 - slug: sr-fall-verfehlter-schuss
   title: Der verfehlte Schuss
@@ -298,3 +317,157 @@ faelle:
       required: false
       keywords:
       - Ergebnis
+lernskript:
+  slug: sr-vorsatz-skript-tatbestandsirrtum
+  title: "Vorsatz im Aufbau des Vorsatzdelikts - und was ein Tatbestandsirrtum daran ändert"
+  quellen:
+  - "§§ 15, 16 StGB, amtlicher Wortlaut"
+  - Eigenformulierung Redaktion
+  stand: "2026-11"
+  abschnitte:
+  - titel: "Wo steht der Vorsatz im Aufbau?"
+    text: >-
+      Das vorsätzliche Begehungsdelikt wird in drei Stufen geprüft: Tatbestandsmäßigkeit,
+      Rechtswidrigkeit und Schuld. Der Vorsatz ist kein eigener Prüfungspunkt außerhalb
+      dieser Stufen, sondern bildet den subjektiven Tatbestand. Du prüfst ihn also erst,
+      nachdem du den objektiven Tatbestand bejaht hast. Der Vorsatz muss dabei schon
+      zum Zeitpunkt der Tathandlung vorliegen (Koinzidenzprinzip).
+
+
+      Warum diese Reihenfolge? Der subjektive Tatbestand fragt, ob der Täter genau das
+      wusste und wollte, was du zuvor objektiv festgestellt hast. Ohne einen festgestellten
+      objektiven Tatbestand gäbe es nichts, worauf sich der Vorsatz beziehen könnte.
+    card_slugs: ["sr-vorsatz-tatbestandsirrtum-def"]
+    schema_slug: sr-schema-vorsatz-im-aufbau
+    checkpoint:
+      type: luecke
+      frage: "Der Vorsatz gehört zum ___ Tatbestand."
+      antworten: ["subjektiven", "subjektive"]
+  - titel: "Was der Vorsatz umfassen muss"
+    text: >-
+      Vorsatz ist nach der üblichen Formel Wissen und Wollen der Tatbestandsverwirklichung.
+      Er muss sich auf alle objektiven Tatbestandsmerkmale beziehen, nicht nur auf den
+      Erfolg. Man nennt das Kongruenzprinzip: Was objektiv verwirklicht ist, muss vom
+      Vorsatz gedeckt sein.
+
+
+      Hat der Täter eine solche Tatsache bei Begehung der Tat nicht gekannt, greift
+      § 16 Abs. 1 S. 1 StGB: Er handelt nicht vorsätzlich. Das ist der Tatbestandsirrtum.
+      Beachte: Es kommt auf die Kenntnis der Tatsachen an, nicht darauf, ob der Täter
+      die Tat für verboten hielt.
+    card_slugs: ["sr-vorsatz-tatbestandsirrtum-def", "sr-vorsatz-verbotsirrtum-abgrenzung"]
+    checkpoint:
+      type: frage
+      frage: "Ein Täter kennt einen Umstand des gesetzlichen Tatbestands nicht. Was folgt aus § 16 Abs. 1 S. 1 StGB?"
+      optionen: ["Der Vorsatz entfällt", "Nur die Schuld entfällt", "Der Irrtum ist unbeachtlich"]
+      richtig: 0
+  - titel: "Verwechslung oder Fehlgehen: error in persona und aberratio ictus"
+    text: >-
+      Zwei Konstellationen musst du sicher unterscheiden. Beim error in persona vel
+      objecto verwechselt der Täter das Objekt: Er trifft, was er treffen wollte, hält
+      es aber für etwas anderes. Bei gleichwertigen Tatobjekten (etwa Mensch gegen Mensch
+      beim Totschlag) ist das nach h.M. unbeachtlich, der Vorsatz bleibt.
+
+
+      Bei der aberratio ictus geht die Handlung fehl und trifft ein anderes Objekt als
+      das anvisierte. Hinsichtlich des getroffenen Objekts fehlt der Vorsatz. In Betracht
+      kommen Versuch am anvisierten Objekt und, wenn das Gesetz die Fahrlässigkeit
+      unter Strafe stellt, ein Fahrlässigkeitsdelikt am getroffenen Objekt.
+    card_slugs: ["sr-vorsatz-error-in-persona", "sr-vorsatz-aberratio-ictus", "sr-vorsatz-error-aberratio-streitstand"]
+    checkpoint:
+      type: frage
+      frage: "Der Schuss geht fehl und trifft eine andere Person als die anvisierte. Welche Konstellation liegt vor?"
+      optionen: ["error in persona", "aberratio ictus"]
+      richtig: 1
+  - titel: "Abgrenzung zu Verbotsirrtum und Erlaubnistatbestandsirrtum"
+    text: >-
+      Kennt der Täter alle Tatumstände und hält sein Verhalten nur irrig für erlaubt,
+      liegt ein Verbotsirrtum vor (§ 17 StGB). Der Vorsatz bleibt bestehen; nur bei
+      Unvermeidbarkeit entfällt die Schuld. Nimmt der Täter dagegen irrig Umstände an,
+      die einen Rechtfertigungsgrund begründen würden, spricht man vom Erlaubnis-
+      tatbestandsirrtum, der nach der herrschenden Ansicht in entsprechender Anwendung
+      des § 16 Abs. 1 StGB behandelt wird.
+
+
+      Für die Praxis genügt zunächst diese Leitfrage: Betrifft die Fehlvorstellung
+      Tatsachen des Tatbestands (dann § 16 StGB), oder nur die rechtliche Bewertung (dann § 17 StGB)?
+    card_slugs: ["sr-vorsatz-verbotsirrtum-abgrenzung", "sr-vorsatz-erlaubnistatbestandsirrtum"]
+    checkpoint:
+      type: luecke
+      frage: "Wer alle Tatumstände kennt, sein Tun aber für erlaubt hält, unterliegt einem ___irrtum."
+      antworten: ["Verbots", "Verbotsirrtum"]
+lernerlebnisse:
+- slug: sr-vorsatz-erlebnis-verwechslung
+  type: gefuehrter_fall
+  title: "Die falsche Person im Dunkeln"
+  quellen: ["Eigener Sachverhalt der Redaktion"]
+  stand: "2026-11"
+  intro: >-
+    A will seinen Nachbarn N erschießen. Im Dämmerlicht sieht er eine Gestalt in N's
+    Jacke am Gartenzaun und schießt. Tatsächlich war es der Besucher B, der sich die
+    Jacke geliehen hatte. B stirbt. Hinweis: Der Fall ist frei erfunden.
+  start: knoten_1
+  knoten:
+  - id: knoten_1
+    frage: "Worauf bezieht sich A's Fehlvorstellung?"
+    optionen:
+    - text: "Auf die Identität des Opfers: A hielt B für N."
+      feedback: "Richtig. A trifft die Person, auf die er zielt, verwechselt aber ihre Identität."
+      naechster: knoten_2
+    - text: "Auf den Schussverlauf: die Kugel ging fehl."
+      feedback: "Nein: Die Kugel traf genau die Gestalt, auf die A gezielt hat. Es gibt kein Fehlgehen."
+      naechster: knoten_1b
+  - id: knoten_1b
+    frage: "Wen wollte A treffen, und wen hat er getroffen?"
+    optionen:
+    - text: "Die anvisierte Gestalt, und genau die hat er getroffen."
+      feedback: "Richtig, deshalb liegt eine Verwechslung vor, kein Fehlgehen."
+      naechster: knoten_2
+    - text: "Eine andere Person als die anvisierte."
+      feedback: "Überprüfe den Sachverhalt: A schoss auf die Gestalt am Zaun, und die hat er getroffen."
+      naechster: knoten_2
+  - id: knoten_2
+    frage: "Wie wird dieser Irrtum bei § 212 StGB behandelt (Mensch gegen Mensch)?"
+    optionen:
+    - text: "Unbeachtlicher Motivirrtum, die Objekte sind gleichwertig."
+      feedback: "Richtig. § 212 StGB schützt jeden Menschen gleichermaßen, der Vorsatz bleibt bestehen."
+      naechster: knoten_3
+    - text: "Tatbestandsirrtum, der Vorsatz entfällt."
+      feedback: "Das wäre nur bei nicht gleichwertigen Objekten der Fall, etwa Sachbeschädigung gegen Tötung."
+      naechster: ende_falsch
+  - id: knoten_3
+    frage: "Wegen welchen Delikts ist A am Ende strafbar?"
+    optionen:
+    - text: "Vollendeter Totschlag, § 212 StGB"
+      feedback: "Richtig. Auf Mord kommt es hier nicht an, der Fall ist als Totschlag gelöst."
+      naechster: ende_richtig
+    - text: "Versuchter Totschlag und fahrlässige Tötung"
+      feedback: "Das wäre die Lösung bei einer aberratio ictus, die hier nicht vorliegt."
+      naechster: ende_falsch
+  ende:
+    ende_richtig:
+      ergebnis: bestanden
+      text: "Genau: Der error in persona ist bei gleichwertigen Objekten unbeachtlich, A ist wegen vollendeten Totschlags strafbar."
+    ende_falsch:
+      ergebnis: wiederholen
+      text: "Lies Abschnitt 3 des Lernskripts noch einmal und versuche es erneut."
+- slug: sr-vorsatz-sortieraufgabe-aufbau
+  type: sortieraufgabe
+  title: "Bring den Aufbau des Vorsatzdelikts in die richtige Reihenfolge"
+  quellen: ["Eigenformulierung Redaktion, auf Basis des Schemas"]
+  stand: "2026-11"
+  schema_slug: sr-schema-vorsatz-im-aufbau
+  ebene: 1
+visualisierungen:
+- slug: sr-vorsatz-flussdiagramm-aufbau
+  type: flussdiagramm
+  title: "Aufbau des Vorsatzdelikts als Ablauf"
+  quellen: ["Eigenformulierung Redaktion, auf Basis des Schemas"]
+  stand: "2026-11"
+  schema_slug: sr-schema-vorsatz-im-aufbau
+- slug: sr-vorsatz-baum-aufbau
+  type: baum
+  title: "Aufbau des Vorsatzdelikts als Baum"
+  quellen: ["Eigenformulierung Redaktion, auf Basis des Schemas"]
+  stand: "2026-11"
+  schema_slug: sr-schema-vorsatz-im-aufbau
