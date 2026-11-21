@@ -11,6 +11,7 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
+  material_ui: ^1.11.1
   # Bewusst minimal im M0-Geruest: nur HTTP und lokaler Key-Value-Speicher.
   # Riverpod (State) und drift (Offline-SQLite) kommen in M1 dazu, sobald die
   # Offline-Synchronisierung gebaut wird - siehe docs/03-roadmap.md.

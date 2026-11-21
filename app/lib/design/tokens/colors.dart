@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Rohe Palette. Nicht direkt in Widgets verwenden - immer ueber
 /// [buildColorScheme] bzw. [SubsumoColors] gehen, damit Light/Dark und
