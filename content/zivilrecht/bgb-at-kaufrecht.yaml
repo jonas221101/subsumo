@@ -219,3 +219,166 @@ faelle:
             - "steht K zu"
             - "hat K gegen V einen Anspruch"
             - "K gegen V einen Anspruch auf Übergabe"
+
+lernskript:
+  slug: zr-bgb-at-skript-vertragsschluss
+  title: "Wie ein Vertrag entsteht: Willenserklärung, Angebot und Annahme"
+  quellen: ["BGB, amtliche Fassung (gesetze-im-internet.de)", "Eigenformulierung Redaktion"]
+  stand: "2026-11"
+  abschnitte:
+    - titel: "Der Vertrag besteht aus zwei Willenserklärungen"
+      text: >-
+        Ein Vertrag kommt zustande, wenn zwei übereinstimmende
+        Willenserklärungen vorliegen: Angebot und Annahme. Bevor du prüfst,
+        ob jemand ein Angebot abgegeben hat, musst du wissen, was eine
+        Willenserklärung überhaupt ist. Sie ist eine private Willensäußerung,
+        die auf einen rechtlichen Erfolg gerichtet ist - etwa darauf, dass
+        ein Kaufvertrag entsteht.
+
+
+        Eine Willenserklärung hat einen äußeren Tatbestand (das, was der
+        Empfänger objektiv wahrnimmt) und einen inneren Tatbestand
+        (Handlungswille, Erklärungsbewusstsein, Geschäftswille). Was jemand
+        erklärt hat, bestimmst du durch Auslegung nach dem objektiven
+        Empfängerhorizont (§§ 133, 157 BGB), nicht danach, was er sich
+        insgeheim gedacht hat.
+      card_slugs: ["zr-at-willenserklaerung"]
+      checkpoint:
+        type: luecke
+        frage: "Eine Willenserklärung ist eine ___ Willensäußerung, die auf die Herbeiführung eines rechtlichen Erfolges gerichtet ist."
+        antworten: ["private", "privaten"]
+    - titel: "Angebot und invitatio ad offerendum"
+      text: >-
+        Das Angebot (der Antrag, § 145 BGB) ist eine empfangsbedürftige
+        Willenserklärung. Es muss so bestimmt sein, dass der Vertrag allein
+        durch ein "Ja" des anderen zustande kommen kann - die wesentlichen
+        Vertragsbestandteile (essentialia negotii: beim Kauf Kaufsache und
+        Kaufpreis sowie die Parteien) müssen also feststehen. Außerdem braucht
+        es Rechtsbindungswillen: Wer anbietet, will gebunden sein.
+
+
+        Daran scheitert die bloße Aufforderung, ein Angebot abzugeben (invitatio
+        ad offerendum). Der Händler, der Ware im Schaufenster, im Katalog oder
+        auf einer Webshop-Produktseite zeigt, will sich nicht gegenüber jedem
+        Interessierten binden - er hätte sonst womöglich mehr verkauft, als er
+        liefern kann. Das Angebot geht dann vom Kunden aus.
+      card_slugs: ["zr-at-angebot", "zr-at-invitatio"]
+      schema_slug: zr-schema-433-ii
+      checkpoint:
+        type: frage
+        frage: "Ist die Auslage einer Ware im Schaufenster mit Preisschild ein Angebot im Sinne des § 145 BGB?"
+        optionen: ["Ja, denn Ware und Preis stehen fest", "Nein, es ist eine invitatio ad offerendum"]
+        richtig: 1
+    - titel: "Annahme, Zugang und Vertragsschluss"
+      text: >-
+        Die Annahme ist die Zustimmung zum Angebot. Beide Erklärungen sind
+        empfangsbedürftig, sie werden also erst wirksam, wenn sie dem
+        Empfänger zugehen (§ 130 Abs. 1 BGB): Die Erklärung muss so in seinen
+        Machtbereich gelangt sein, dass er unter gewöhnlichen Umständen von
+        ihr Kenntnis nehmen kann. Dass er sie tatsächlich liest, ist nicht
+        nötig.
+
+
+        Unter Anwesenden kann ein Angebot nur sofort angenommen werden
+        (§ 147 Abs. 1 BGB). Unter Abwesenden kann es bis zu dem Zeitpunkt
+        angenommen werden, in dem der Antragende den Eingang der Antwort unter
+        regelmäßigen Umständen erwarten darf (§ 147 Abs. 2 BGB). Eine verspätete
+        Annahme gilt als neues Angebot (§ 150 Abs. 1 BGB).
+      card_slugs: ["zr-at-zugang", "zr-at-angebot"]
+      checkpoint:
+        type: luecke
+        frage: "Eine Willenserklärung unter Abwesenden wird wirksam, sobald sie dem Empfänger ___."
+        antworten: ["zugeht", "zugegangen ist"]
+    - titel: "Der Vertragsschluss im Prüfungsaufbau"
+      text: >-
+        Im Gutachten prüfst du den Vertragsschluss als ersten Punkt des
+        Anspruchs aus § 433 Abs. 2 BGB: Angebot, Annahme, Einigung über die
+        essentialia negotii. Erst danach folgt die Frage, ob die
+        Willenserklärungen wirksam sind (Geschäftsfähigkeit, Form, Verbote)
+        und ob der Vertrag angefochten wurde. Halte die Reihenfolge ein - so
+        vermeidest du, Anfechtungsfragen vor dem Vertragsschluss zu prüfen.
+      card_slugs: ["zr-at-willenserklaerung", "zr-at-angebot"]
+      schema_slug: zr-schema-433-ii
+
+lernerlebnisse:
+  - slug: zr-bgb-at-erlebnis-webshop
+    type: gefuehrter_fall
+    title: "Die Bestellung im Webshop"
+    quellen: ["Eigener, fiktiver Sachverhalt der Redaktion", "BGB, amtliche Fassung"]
+    stand: "2026-11"
+    intro: >-
+      Der Online-Händler H zeigt auf seiner Webseite einen Kaffeevollautomaten
+      mit dem Preis "399 EUR". Kundin K legt das Gerät in den Warenkorb und
+      klickt auf "Zahlungspflichtig bestellen". Wenige Minuten später erhält
+      sie eine automatische E-Mail: "Vielen Dank, Ihre Bestellung ist bei uns
+      eingegangen." Am nächsten Tag versendet H das Gerät nicht, sondern
+      schreibt, es sei leider ausverkauft. K meint, der Vertrag bestehe
+      bereits. Gehe Schritt für Schritt durch, ob sie recht hat.
+    start: knoten_1
+    knoten:
+      - id: knoten_1
+        frage: "Wie ist die Darstellung des Geräts mit Preis auf der Webseite einzuordnen?"
+        optionen:
+          - text: "Als Angebot des H an alle Besucher der Seite"
+            feedback: "Nicht ganz: Würde H sich jedem Besucher gegenüber binden, könnte er mehr verkaufen, als er vorrätig hat."
+            naechster: knoten_1b
+          - text: "Als invitatio ad offerendum"
+            feedback: "Richtig. Es fehlt der Rechtsbindungswille, H fordert zur Abgabe von Angeboten auf."
+            naechster: knoten_2
+      - id: knoten_1b
+        frage: "Warum kann H sich nicht an jeden Besucher binden wollen?"
+        optionen:
+          - text: "Sein Warenvorrat ist begrenzt; er will selbst entscheiden, wen er beliefert"
+            feedback: "Richtig - deshalb ist die Produktseite nur eine invitatio ad offerendum."
+            naechster: knoten_2
+          - text: "Weil Preise im Internet nie verbindlich sein können"
+            feedback: "So pauschal stimmt das nicht. Entscheidend ist der fehlende Rechtsbindungswille des Händlers bei begrenztem Vorrat."
+            naechster: knoten_2
+      - id: knoten_2
+        frage: "Welche rechtliche Bedeutung hat der Klick auf \"Zahlungspflichtig bestellen\"?"
+        optionen:
+          - text: "Angebot der K (§ 145 BGB)"
+            feedback: "Richtig. K erklärt, das Gerät zu diesem Preis kaufen zu wollen; sie will gebunden sein."
+            naechster: knoten_3
+          - text: "Annahme der K"
+            feedback: "Annehmen kann man nur ein bereits vorliegendes Angebot - H hat aber noch keines abgegeben."
+            naechster: ende_falsch
+      - id: knoten_3
+        frage: "Ist die automatische Eingangsbestätigung die Annahme des Angebots?"
+        optionen:
+          - text: "Ja, H hat damit erklärt, dass er die Bestellung akzeptiert"
+            feedback: "Nicht ohne Weiteres: Die Bestätigung teilt nur mit, dass die Bestellung eingegangen ist (vgl. § 312i Abs. 1 S. 1 Nr. 3 BGB). Aus Sicht eines objektiven Empfängers (§§ 133, 157 BGB) fehlt ein Annahmewille."
+            naechster: ende_falsch
+          - text: "Nein, sie bestätigt nur den Zugang der Bestellung"
+            feedback: "Richtig. Ein Vertrag kommt erst durch eine Annahmeerklärung des H zustande - etwa durch Versandbestätigung oder Lieferung."
+            naechster: ende_richtig
+    ende:
+      ende_richtig:
+        ergebnis: bestanden
+        text: "K hat nur ein Angebot abgegeben, H hat es nicht angenommen. Ein Kaufvertrag nach § 433 BGB ist (noch) nicht zustande gekommen; ein Anspruch der K aus § 433 Abs. 1 BGB besteht daher nicht."
+      ende_falsch:
+        ergebnis: wiederholen
+        text: "Lies Abschnitt 2 und 3 des Lernskripts noch einmal - dort geht es um Angebot, invitatio ad offerendum und Annahme - und versuche es erneut."
+
+  - slug: zr-bgb-at-sortieraufgabe-433
+    type: sortieraufgabe
+    title: "Bring die Anspruchsprüfung aus § 433 Abs. 2 BGB in die richtige Reihenfolge"
+    quellen: ["Eigenformulierung Redaktion, auf Basis des Schemas", "BGB, amtliche Fassung"]
+    stand: "2026-11"
+    schema_slug: zr-schema-433-ii
+    ebene: 1
+
+visualisierungen:
+  - slug: zr-bgb-at-flussdiagramm-433
+    type: flussdiagramm
+    title: "Anspruch aus § 433 Abs. 2 BGB als Ablauf"
+    quellen: ["Eigenformulierung Redaktion, auf Basis des Schemas", "BGB, amtliche Fassung"]
+    stand: "2026-11"
+    schema_slug: zr-schema-433-ii
+
+  - slug: zr-bgb-at-baum-433
+    type: baum
+    title: "Anspruchsaufbau § 433 Abs. 2 BGB"
+    quellen: ["Eigenformulierung Redaktion, auf Basis des Schemas", "BGB, amtliche Fassung"]
+    stand: "2026-11"
+    schema_slug: zr-schema-433-ii
