@@ -27,10 +27,13 @@ from app.models import (
     CardType,
     Case,
     Kurs,
+    Lernerlebnis,
+    Lernskript,
     Schema,
     Topic,
     Universitaet,
     UserCard,
+    Visualisierung,
 )
 
 VALID_AREAS = {a.value for a in Area}
@@ -41,6 +44,12 @@ STALE_AFTER_MONTHS = 18
 # siehe docs/08-ki-redaktion.md). Fehlt der Block, gilt ein Inhalt als
 # regulaer redigiert (M0-Bestand vor der KI-Redaktion).
 VALID_REDAKTION_STATUS = {"ki-freigegeben", "mensch-freigegeben", "in-pruefung"}
+
+# Lernmodul "Neues Thema erlernen" (docs/34-lernmodul-neue-themen.md, 2.4).
+VALID_LERNERLEBNIS_TYPES = {"gefuehrter_fall", "sortieraufgabe", "luecken_check"}
+VALID_VISUALISIERUNG_TYPES = {"flussdiagramm", "baum", "zeitstrahl"}
+VALID_CHECK_TYPES = {"luecke", "frage"}
+VALID_ENDE_ERGEBNISSE = {"bestanden", "wiederholen"}
 
 # Die 16 Laender, amtliche Kuerzel. Ein Bundesland-Profil, ein Landesrecht-
 # Thema oder ein Nutzerprofil darf nur eines davon tragen
@@ -62,6 +71,9 @@ class ContentBundle:
     cards: list[dict] = field(default_factory=list)
     schemata: list[dict] = field(default_factory=list)
     cases: list[dict] = field(default_factory=list)
+    lernskripte: list[dict] = field(default_factory=list)
+    lernerlebnisse: list[dict] = field(default_factory=list)
+    visualisierungen: list[dict] = field(default_factory=list)
     bundeslaender: list[dict] = field(default_factory=list)
     universitaeten: list[dict] = field(default_factory=list)
     kurse: list[dict] = field(default_factory=list)
@@ -118,6 +130,8 @@ def load_content(content_dir: Path) -> ContentBundle:
     # spaeter sortierten Datei zum Zeitpunkt der Fall-Validierung noch nicht in
     # ``bundle.cards`` steht.
     card_slug_refs: list[tuple[str, str]] = []
+    # (where, schema_slug, topic_slug) - ebenfalls erst nach der Dateischleife.
+    schema_refs: list[tuple[str, str, str]] = []
     for path in sorted(content_dir.rglob("*.y*ml")):
         rel = path.relative_to(content_dir)
         try:
@@ -229,6 +243,28 @@ def load_content(content_dir: Path) -> ContentBundle:
             case["area"] = topic["area"]
             bundle.cases.append(case)
 
+        lernskript = data.get("lernskript")
+        if lernskript is not None:
+            _load_lernskript(
+                lernskript,
+                f"{rel} lernskript",
+                topic,
+                bundle,
+                register,
+                card_slug_refs,
+                schema_refs,
+            )
+
+        for i, erlebnis in enumerate(data.get("lernerlebnisse") or []):
+            _load_lernerlebnis(
+                erlebnis, f"{rel} lernerlebnisse[{i}]", topic, bundle, register, schema_refs
+            )
+
+        for i, viz in enumerate(data.get("visualisierungen") or []):
+            _load_visualisierung(
+                viz, f"{rel} visualisierungen[{i}]", topic, bundle, register, schema_refs
+            )
+
     card_slugs_available = {c["slug"] for c in bundle.cards}
     for where, card_slug in card_slug_refs:
         if card_slug not in card_slugs_available:
@@ -236,8 +272,276 @@ def load_content(content_dir: Path) -> ContentBundle:
                 f"{where}: card_slugs verweist auf unbekannten Card-Slug '{card_slug}'"
             )
 
+    schema_topics = {s["slug"]: s["topic_slug"] for s in bundle.schemata}
+    for where, schema_slug, topic_slug in schema_refs:
+        if schema_slug not in schema_topics:
+            bundle.errors.append(
+                f"{where}: schema_slug verweist auf unbekanntes Schema '{schema_slug}'"
+            )
+        elif schema_topics[schema_slug] != topic_slug:
+            bundle.errors.append(
+                f"{where}: Schema '{schema_slug}' gehoert zu Thema "
+                f"'{schema_topics[schema_slug]}', nicht zu '{topic_slug}' "
+                "(Querverweise auf andere Themen sind ein Redaktionsfehler)"
+            )
+
     _cross_check_examen(bundle)
     return bundle
+
+
+# --------------------------------------------------------------------------- #
+# Lernmodul: Lernskript, Lernerlebnisse, Visualisierungen (docs/34, 2.1-2.4)
+# --------------------------------------------------------------------------- #
+
+
+def _check_checkpoint(cp: Any, where: str, errors: list[str]) -> bool:
+    """Prueft eine Lueckentext-/Check-Frage (``checkpoint`` bzw. ``fragen[]``)."""
+    if not isinstance(cp, dict):
+        errors.append(f"{where}: muss ein Mapping sein")
+        return False
+    kind = cp.get("type")
+    if kind not in VALID_CHECK_TYPES:
+        errors.append(
+            f"{where}: unbekannter Typ '{kind}' (erlaubt: {', '.join(sorted(VALID_CHECK_TYPES))})"
+        )
+        return False
+    if not cp.get("frage"):
+        errors.append(f"{where}: Pflichtfelder fehlen: frage")
+        return False
+    if kind == "luecke":
+        antworten = cp.get("antworten")
+        if not isinstance(antworten, list) or not antworten or not all(antworten):
+            errors.append(f"{where}: 'antworten' braucht mindestens eine nichtleere Antwort")
+            return False
+        return True
+    optionen = cp.get("optionen")
+    if not isinstance(optionen, list) or len(optionen) < 2:
+        errors.append(f"{where}: 'optionen' braucht mindestens 2 Eintraege")
+        return False
+    richtig = cp.get("richtig")
+    if (
+        isinstance(richtig, bool)
+        or not isinstance(richtig, int)
+        or not 0 <= richtig < len(optionen)
+    ):
+        errors.append(f"{where}: 'richtig' muss ein gueltiger Index in 'optionen' sein")
+        return False
+    return True
+
+
+def _load_lernskript(
+    skript: Any,
+    where: str,
+    topic: dict,
+    bundle: ContentBundle,
+    register: Any,
+    card_slug_refs: list[tuple[str, str]],
+    schema_refs: list[tuple[str, str, str]],
+) -> None:
+    if not isinstance(skript, dict):
+        bundle.errors.append(f"{where}: muss ein Mapping sein")
+        return
+    if not _require(skript, ["slug", "title", "quellen", "abschnitte"], where, bundle.errors):
+        return
+    abschnitte = skript["abschnitte"]
+    if not isinstance(abschnitte, list):
+        bundle.errors.append(f"{where}: 'abschnitte' muss eine Liste sein")
+        return
+    ok = True
+    for i, abschnitt in enumerate(abschnitte):
+        a_where = f"{where} abschnitte[{i}]"
+        if not isinstance(abschnitt, dict) or not _require(
+            abschnitt, ["titel", "text"], a_where, bundle.errors
+        ):
+            ok = False
+            continue
+        for card_slug in abschnitt.get("card_slugs") or []:
+            card_slug_refs.append((a_where, card_slug))
+        if abschnitt.get("schema_slug"):
+            schema_refs.append((a_where, abschnitt["schema_slug"], topic["slug"]))
+        if abschnitt.get("checkpoint") is not None:
+            ok &= _check_checkpoint(abschnitt["checkpoint"], f"{a_where} checkpoint", bundle.errors)
+    skript["stand"] = _check_stand(
+        skript.get("stand", topic.get("stand")), where, bundle.warnings, bundle.errors
+    )
+    if not ok or not register(skript["slug"], where):
+        return
+    skript["topic_slug"] = topic["slug"]
+    bundle.lernskripte.append(skript)
+
+
+def _check_gefuehrter_fall(erlebnis: dict, where: str, errors: list[str]) -> bool:
+    if not _require(erlebnis, ["start", "knoten", "ende"], where, errors):
+        return False
+    knoten, ende = erlebnis["knoten"], erlebnis["ende"]
+    if not isinstance(knoten, list) or not isinstance(ende, dict):
+        errors.append(f"{where}: 'knoten' muss eine Liste, 'ende' ein Mapping sein")
+        return False
+    ok = True
+    ids: list[str] = []
+    for i, k in enumerate(knoten):
+        k_where = f"{where} knoten[{i}]"
+        if not isinstance(k, dict) or not _require(k, ["id", "frage", "optionen"], k_where, errors):
+            ok = False
+            continue
+        ids.append(k["id"])
+        if not isinstance(k["optionen"], list) or len(k["optionen"]) < 2:
+            errors.append(f"{k_where}: 'optionen' braucht mindestens 2 Eintraege")
+            ok = False
+            continue
+        for j, opt in enumerate(k["optionen"]):
+            if not isinstance(opt, dict) or not _require(
+                opt, ["text", "naechster"], f"{k_where} optionen[{j}]", errors
+            ):
+                ok = False
+    if len(set(ids)) != len(ids):
+        errors.append(f"{where}: Knoten-IDs sind nicht eindeutig")
+        ok = False
+    for key, e in ende.items():
+        e_where = f"{where} ende[{key}]"
+        if not isinstance(e, dict) or e.get("ergebnis") not in VALID_ENDE_ERGEBNISSE:
+            errors.append(
+                f"{e_where}: 'ergebnis' muss {' oder '.join(sorted(VALID_ENDE_ERGEBNISSE))} sein"
+            )
+            ok = False
+    if not ende:
+        errors.append(f"{where}: 'ende' braucht mindestens einen Endknoten")
+        ok = False
+    if not ok:
+        return False
+
+    # Graph: Ziele existieren, alles von ``start`` erreichbar, keine Zyklen.
+    nodes = {k["id"]: [o["naechster"] for o in k["optionen"]] for k in knoten}
+    if set(nodes) & set(ende):
+        errors.append(f"{where}: Knoten-ID und Endknoten-Schluessel muessen disjunkt sein")
+        return False
+    if erlebnis["start"] not in nodes:
+        errors.append(f"{where}: 'start' verweist auf unbekannten Knoten '{erlebnis['start']}'")
+        return False
+    for node_id, targets in nodes.items():
+        for target in targets:
+            if target not in nodes and target not in ende:
+                errors.append(
+                    f"{where}: Knoten '{node_id}' verweist auf unbekanntes Ziel '{target}'"
+                )
+                ok = False
+    if not ok:
+        return False
+    # Iterative DFS mit Farben: erreichbar + Zyklenerkennung.
+    state: dict[str, int] = {}  # 1 = auf dem Pfad, 2 = fertig
+    stack: list[tuple[str, int]] = [(erlebnis["start"], 0)]
+    state[erlebnis["start"]] = 1
+    while stack:
+        node_id, idx = stack.pop()
+        targets = nodes[node_id]
+        if idx < len(targets):
+            stack.append((node_id, idx + 1))
+            target = targets[idx]
+            if target in ende:
+                continue
+            if state.get(target) == 1:
+                errors.append(f"{where}: Zyklus im Graphen bei Knoten '{target}'")
+                return False
+            if target not in state:
+                state[target] = 1
+                stack.append((target, 0))
+        else:
+            state[node_id] = 2
+    unreachable = sorted(set(nodes) - set(state))
+    if unreachable:
+        errors.append(f"{where}: unerreichbare Knoten: {', '.join(unreachable)}")
+        return False
+    return True
+
+
+def _load_lernerlebnis(
+    erlebnis: Any,
+    where: str,
+    topic: dict,
+    bundle: ContentBundle,
+    register: Any,
+    schema_refs: list[tuple[str, str, str]],
+) -> None:
+    if not isinstance(erlebnis, dict):
+        bundle.errors.append(f"{where}: muss ein Mapping sein")
+        return
+    if not _require(erlebnis, ["slug", "type", "title", "quellen"], where, bundle.errors):
+        return
+    kind = erlebnis["type"]
+    if kind not in VALID_LERNERLEBNIS_TYPES:
+        bundle.errors.append(
+            f"{where}: unbekannter Lernerlebnis-Typ '{kind}' "
+            f"(erlaubt: {', '.join(sorted(VALID_LERNERLEBNIS_TYPES))})"
+        )
+        return
+    if kind == "gefuehrter_fall":
+        ok = _check_gefuehrter_fall(erlebnis, where, bundle.errors)
+    elif kind == "sortieraufgabe":
+        ok = _require(erlebnis, ["schema_slug", "ebene"], where, bundle.errors)
+        if ok:
+            if erlebnis["ebene"] != 1 or isinstance(erlebnis["ebene"], bool):
+                bundle.errors.append(f"{where}: 'ebene' ist im Pilotumfang fest 1")
+                ok = False
+            schema_refs.append((where, erlebnis["schema_slug"], topic["slug"]))
+    else:  # luecken_check
+        fragen = erlebnis.get("fragen")
+        ok = isinstance(fragen, list) and bool(fragen)
+        if not ok:
+            bundle.errors.append(f"{where}: Pflichtfelder fehlen: fragen")
+        else:
+            for i, frage in enumerate(fragen):
+                ok &= _check_checkpoint(frage, f"{where} fragen[{i}]", bundle.errors)
+    erlebnis["stand"] = _check_stand(
+        erlebnis.get("stand", topic.get("stand")), where, bundle.warnings, bundle.errors
+    )
+    if not ok or not register(erlebnis["slug"], where):
+        return
+    erlebnis["topic_slug"] = topic["slug"]
+    bundle.lernerlebnisse.append(erlebnis)
+
+
+def _load_visualisierung(
+    viz: Any,
+    where: str,
+    topic: dict,
+    bundle: ContentBundle,
+    register: Any,
+    schema_refs: list[tuple[str, str, str]],
+) -> None:
+    if not isinstance(viz, dict):
+        bundle.errors.append(f"{where}: muss ein Mapping sein")
+        return
+    if not _require(viz, ["slug", "type", "title", "quellen"], where, bundle.errors):
+        return
+    kind = viz["type"]
+    if kind not in VALID_VISUALISIERUNG_TYPES:
+        bundle.errors.append(
+            f"{where}: unbekannter Visualisierungs-Typ '{kind}' "
+            f"(erlaubt: {', '.join(sorted(VALID_VISUALISIERUNG_TYPES))})"
+        )
+        return
+    if kind == "zeitstrahl":
+        punkte = viz.get("punkte")
+        ok = isinstance(punkte, list) and len(punkte) >= 2
+        if not ok:
+            bundle.errors.append(f"{where}: 'punkte' braucht mindestens 2 Eintraege")
+        else:
+            for i, punkt in enumerate(punkte):
+                if not isinstance(punkt, dict) or not _require(
+                    punkt, ["label"], f"{where} punkte[{i}]", bundle.errors
+                ):
+                    ok = False
+    else:
+        ok = _require(viz, ["schema_slug"], where, bundle.errors)
+        if ok:
+            schema_refs.append((where, viz["schema_slug"], topic["slug"]))
+    viz["stand"] = _check_stand(
+        viz.get("stand", topic.get("stand")), where, bundle.warnings, bundle.errors
+    )
+    if not ok or not register(viz["slug"], where):
+        return
+    viz["topic_slug"] = topic["slug"]
+    bundle.visualisierungen.append(viz)
 
 
 # --------------------------------------------------------------------------- #
@@ -407,6 +711,9 @@ def seed(db: Session, bundle: ContentBundle) -> dict[str, int]:
         "cards": 0,
         "schemata": 0,
         "cases": 0,
+        "lernskripte": 0,
+        "lernerlebnisse": 0,
+        "visualisierungen": 0,
         "changed_cards": 0,
         "bundeslaender": 0,
         "universitaeten": 0,
@@ -469,6 +776,41 @@ def seed(db: Session, bundle: ContentBundle) -> dict[str, int]:
         row.stand = f.get("stand", "")
         db.add(row)
         stats["cases"] += 1
+
+    for sk in bundle.lernskripte:
+        row = db.query(Lernskript).filter_by(slug=sk["slug"]).one_or_none() or Lernskript(
+            slug=sk["slug"]
+        )
+        row.topic_slug, row.title = sk["topic_slug"], sk["title"]
+        row.abschnitte = _json_safe(sk["abschnitte"])
+        row.sources = list(sk.get("quellen", []))
+        row.stand = sk.get("stand", "")
+        db.add(row)
+        stats["lernskripte"] += 1
+
+    typ_felder = {"slug", "type", "title", "quellen", "stand", "topic_slug"}
+    for e in bundle.lernerlebnisse:
+        row = db.query(Lernerlebnis).filter_by(slug=e["slug"]).one_or_none() or Lernerlebnis(
+            slug=e["slug"]
+        )
+        row.topic_slug, row.type, row.title = e["topic_slug"], e["type"], e["title"]
+        row.data = _json_safe({k: v for k, v in e.items() if k not in typ_felder})
+        row.sources = list(e.get("quellen", []))
+        row.stand = e.get("stand", "")
+        db.add(row)
+        stats["lernerlebnisse"] += 1
+
+    for v in bundle.visualisierungen:
+        row = db.query(Visualisierung).filter_by(slug=v["slug"]).one_or_none() or Visualisierung(
+            slug=v["slug"]
+        )
+        row.topic_slug, row.type, row.title = v["topic_slug"], v["type"], v["title"]
+        row.schema_slug = v.get("schema_slug")
+        row.data = _json_safe({k: x for k, x in v.items() if k not in typ_felder | {"schema_slug"}})
+        row.sources = list(v.get("quellen", []))
+        row.stand = v.get("stand", "")
+        db.add(row)
+        stats["visualisierungen"] += 1
 
     for land in bundle.bundeslaender:
         row = db.get(Bundesland, land["code"]) or Bundesland(code=land["code"])
