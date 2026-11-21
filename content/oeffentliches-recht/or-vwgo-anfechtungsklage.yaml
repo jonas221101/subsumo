@@ -222,3 +222,240 @@ faelle:
       required: false
       keywords:
       - zulässig
+lernskript:
+  slug: or-vwgo-ak-skript-zulaessigkeit
+  title: 'Die Anfechtungsklage: von der Klageart bis zur Klagefrist'
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-11
+  abschnitte:
+  - titel: Wann kommt die Anfechtungsklage in Betracht?
+    text: >-
+      Wer sich vor dem Verwaltungsgericht gegen eine Maßnahme der Verwaltung
+      wehrt, muss zuerst die passende Klageart finden. Die Anfechtungsklage
+      ist die Klageart für ein ganz bestimmtes Ziel: Der Kläger will einen
+      belastenden Verwaltungsakt beseitigen, § 42 Abs. 1 Var. 1 VwGO. Das
+      Gericht hebt den Verwaltungsakt dann ganz oder teilweise auf.
+
+
+      Entscheidend ist, was der Kläger tatsächlich erreichen will, nicht wie
+      er seine Klage nennt. Will er stattdessen etwas von der Behörde haben,
+      etwa eine Genehmigung, die sie abgelehnt hat, passt die
+      Verpflichtungsklage. Hat sich der Verwaltungsakt schon erledigt, ist
+      keine Aufhebung mehr möglich; dann kommt nur noch die
+      Fortsetzungsfeststellung in Betracht.
+    card_slugs:
+    - or-vwgo-ak-statthaftigkeit
+    schema_slug: or-schema-vwgo-anfechtungsklage
+    checkpoint:
+      type: luecke
+      frage: Die Anfechtungsklage ist statthaft, wenn der Kläger die ___ eines belastenden Verwaltungsakts begehrt.
+      antworten:
+      - Aufhebung
+  - titel: Klagebefugnis - wer darf überhaupt klagen?
+    text: >-
+      Nicht jeder darf gegen jeden Verwaltungsakt klagen. § 42 Abs. 2 VwGO
+      verlangt, dass der Kläger geltend macht, durch den Verwaltungsakt in
+      seinen eigenen Rechten verletzt zu sein. Das Gericht prüft an dieser
+      Stelle nur, ob eine Rechtsverletzung möglich ist (Möglichkeitstheorie),
+      nicht, ob sie wirklich vorliegt. Das ist eine Frage der Begründetheit.
+
+
+      Für den Adressaten des belastenden Verwaltungsakts ist das schnell
+      erledigt: Er kann sich auf Art. 2 Abs. 1 GG berufen (Adressatentheorie).
+      Schwieriger wird es beim Dritten, an den sich der Verwaltungsakt nicht
+      richtet, etwa beim Nachbarn einer Baugenehmigung. Er braucht eine Norm,
+      die zumindest auch seine Individualinteressen schützt (Schutznormtheorie).
+      Bloße Reflexwirkungen im Allgemeininteresse genügen nicht.
+    card_slugs:
+    - or-vwgo-ak-klagebefugnis-moeglichkeitstheorie
+    - or-vwgo-ak-adressatentheorie
+    - or-vwgo-ak-drittanfechtung-schutznormtheorie
+    checkpoint:
+      type: frage
+      frage: Worauf stützt der Adressat eines belastenden Verwaltungsakts typischerweise seine Klagebefugnis?
+      optionen:
+      - Auf die Schutznormtheorie
+      - Auf die Adressatentheorie (Art. 2 Abs. 1 GG)
+      richtig: 1
+  - titel: Widerspruchsverfahren - die Vorstufe vor der Klage
+    text: >-
+      Bevor es zur Klage kommt, schiebt die VwGO grundsätzlich ein
+      Widerspruchsverfahren vor, § 68 Abs. 1 S. 1 VwGO. Die Verwaltung soll
+      Gelegenheit bekommen, den Verwaltungsakt selbst noch einmal auf
+      Rechtmäßigkeit und Zweckmäßigkeit zu prüfen. Der Widerspruch ist
+      innerhalb eines Monats nach Bekanntgabe des Verwaltungsakts einzulegen,
+      § 70 Abs. 1 VwGO. Hilft die Behörde nicht ab, ergeht ein
+      Widerspruchsbescheid.
+
+
+      Ausnahmen gibt es: Ein Gesetz kann das Vorverfahren ausschließen, in
+      den Fällen des § 68 Abs. 1 S. 2 VwGO ist es entbehrlich, und bei
+      Untätigkeit der Behörde greift § 75 VwGO. Fehlt ein erforderliches
+      Vorverfahren, ist die Klage unzulässig.
+    card_slugs:
+    - or-vwgo-ak-vorverfahren
+    schema_slug: or-schema-vwgo-anfechtungsklage
+    checkpoint:
+      type: luecke
+      frage: Der Widerspruch ist innerhalb von ___ nach Bekanntgabe des Verwaltungsakts einzulegen, § 70 Abs. 1 VwGO.
+      antworten:
+      - einem Monat
+      - ein Monat
+      - 1 Monat
+      - einen Monat
+  - titel: Die Klagefrist - der Fristenlauf im Überblick
+    text: >-
+      Die Anfechtungsklage muss innerhalb eines Monats nach Bekanntgabe des
+      Widerspruchsbescheids erhoben werden, § 74 Abs. 1 S. 1 VwGO. Der
+      Widerspruchsbescheid wird zugestellt, § 73 Abs. 3 S. 1 VwGO; die Zustellung
+      setzt die Frist in Gang. Gab es kein Vorverfahren, läuft die Monatsfrist
+      ab Bekanntgabe des Verwaltungsakts selbst, § 74 Abs. 1 S. 2 VwGO.
+
+
+      Die Frist läuft allerdings nur, wenn der Bescheid eine ordnungsgemäße
+      Rechtsbehelfsbelehrung enthält, § 58 Abs. 1 VwGO. Fehlt sie oder ist sie
+      fehlerhaft, gilt eine Jahresfrist, § 58 Abs. 2 VwGO. Der Zeitstrahl zu
+      diesem Thema zeigt die Reihenfolge: Verwaltungsakt, Widerspruch,
+      Widerspruchsbescheid, Klage.
+    card_slugs:
+    - or-vwgo-ak-klagefrist
+    - or-vwgo-ak-vorverfahren
+    checkpoint:
+      type: frage
+      frage: Ab wann läuft die Klagefrist, wenn ein Widerspruchsverfahren durchgeführt wurde?
+      optionen:
+      - Ab Bekanntgabe des ursprünglichen Verwaltungsakts
+      - Ab Bekanntgabe (Zustellung) des Widerspruchsbescheids
+      richtig: 1
+lernerlebnisse:
+- slug: or-vwgo-ak-erlebnis-bescheid
+  type: gefuehrter_fall
+  title: Der zurückgewiesene Widerspruch
+  quellen:
+  - Eigener Sachverhalt der Redaktion
+  - VwGO, amtliche Fassung
+  stand: 2026-11
+  intro: Die Stadt untersagt A mit Bescheid den Betrieb seines Imbissstands auf dem Marktplatz.
+    A legt fristgerecht Widerspruch ein. Die Widerspruchsbehörde weist ihn durch
+    Widerspruchsbescheid zurück, der A am 12. Mai zugestellt wird. A will den Bescheid
+    vollständig aus der Welt schaffen und fragt sich, ob eine Klage am 11. Juni noch
+    zulässig wäre. Rechtsbehelfsbelehrungen waren ordnungsgemäß.
+  start: knoten_1
+  knoten:
+  - id: knoten_1
+    frage: Welche Klageart passt zu As Ziel, die Untersagung aufzuheben?
+    optionen:
+    - text: Die Verpflichtungsklage
+      feedback: Nicht ganz. Die Verpflichtungsklage zielt darauf, dass die Behörde etwas Neues erlässt, etwa eine Erlaubnis. A will aber einen belastenden Verwaltungsakt beseitigen.
+      naechster: knoten_1b
+    - text: Die Anfechtungsklage, § 42 Abs. 1 Var. 1 VwGO
+      feedback: Richtig. A begehrt die Aufhebung eines belastenden Verwaltungsakts.
+      naechster: knoten_2
+  - id: knoten_1b
+    frage: Was will A mit der Klage erreichen - einen neuen Verwaltungsakt oder die Beseitigung des vorhandenen?
+    optionen:
+    - text: Einen neuen Verwaltungsakt
+      feedback: Nein. A möchte nichts Neues von der Stadt, sondern will, dass die Untersagung wegfällt. Das ist ein Aufhebungsbegehren.
+      naechster: knoten_2
+    - text: Die Beseitigung des vorhandenen
+      feedback: Richtig. Das Aufhebungsbegehren führt zur Anfechtungsklage.
+      naechster: knoten_2
+  - id: knoten_2
+    frage: War vor der Klage ein Vorverfahren erforderlich und wurde es durchgeführt?
+    optionen:
+    - text: Ja, § 68 Abs. 1 VwGO - und A hat es durchgeführt
+      feedback: Richtig. Ein Ausnahmefall ist nicht ersichtlich; A hat Widerspruch eingelegt und über ihn wurde durch Widerspruchsbescheid entschieden.
+      naechster: knoten_3
+    - text: Nein, das Vorverfahren ist hier entbehrlich
+      feedback: Hier greift keine Ausnahme nach § 68 Abs. 1 S. 2 VwGO oder § 75 VwGO. Das Vorverfahren ist erforderlich und im Fall auch durchgeführt worden.
+      naechster: knoten_2b
+  - id: knoten_2b
+    frage: Hat A tatsächlich Widerspruch eingelegt, und ist über ihn entschieden worden?
+    optionen:
+    - text: Ja
+      feedback: Richtig. Das Vorverfahren wurde durchgeführt, die Zulässigkeitsvoraussetzung ist erfüllt.
+      naechster: knoten_3
+    - text: Nein
+      feedback: Doch, so steht es im Sachverhalt. Lies die Fallschilderung noch einmal.
+      naechster: knoten_3
+  - id: knoten_3
+    frage: Ab wann läuft die Klagefrist des § 74 Abs. 1 VwGO?
+    optionen:
+    - text: Ab Bekanntgabe des ursprünglichen Bescheids
+      feedback: Nur wenn kein Vorverfahren stattgefunden hat, § 74 Abs. 1 S. 2 VwGO. Hier gab es eines.
+      naechster: knoten_3b
+    - text: Ab Zustellung des Widerspruchsbescheids am 12. Mai
+      feedback: Richtig, § 74 Abs. 1 S. 1 VwGO.
+      naechster: knoten_4
+  - id: knoten_3b
+    frage: Was ist nach durchgeführtem Widerspruchsverfahren der Gegenstand der Klage und der Bezugspunkt der Frist?
+    optionen:
+    - text: Der Verwaltungsakt in der Gestalt des Widerspruchsbescheids, Fristbeginn mit dessen Zustellung
+      feedback: Richtig, vgl. § 79 Abs. 1 Nr. 1 und § 74 Abs. 1 S. 1 VwGO.
+      naechster: knoten_4
+    - text: Allein der ursprüngliche Bescheid, Fristbeginn mit dessen Bekanntgabe
+      feedback: Nein. Nach dem Widerspruchsbescheid läuft die Frist ab dessen Zustellung.
+      naechster: knoten_4
+  - id: knoten_4
+    frage: Ist eine am 11. Juni erhobene Klage fristgerecht?
+    optionen:
+    - text: Ja - die Monatsfrist endet erst am 12. Juni
+      feedback: Richtig. Die Monatsfrist läuft ab dem Tag der Zustellung nach §§ 187 ff. BGB und endet am 12. Juni; die Klage vom 11. Juni ist rechtzeitig.
+      naechster: ende_richtig
+    - text: Nein - die Frist ist bereits abgelaufen
+      feedback: Nein, die Frist wäre erst am 12. Juni abgelaufen.
+      naechster: ende_falsch
+  ende:
+    ende_richtig:
+      ergebnis: bestanden
+      text: Genau. A erhebt Anfechtungsklage; Vorverfahren durchgeführt, Klagefrist am 11. Juni noch gewahrt.
+    ende_falsch:
+      ergebnis: wiederholen
+      text: Schau dir Abschnitt 4 des Lernskripts zur Klagefrist noch einmal an und versuche es erneut.
+- slug: or-vwgo-ak-sortieraufgabe-schema
+  type: sortieraufgabe
+  title: Bring die Zulässigkeitsprüfung der Anfechtungsklage in die richtige Reihenfolge
+  quellen:
+  - Eigenformulierung Redaktion, auf Basis des Schemas
+  stand: 2026-11
+  schema_slug: or-schema-vwgo-anfechtungsklage
+  ebene: 1
+visualisierungen:
+- slug: or-vwgo-ak-flussdiagramm-zulaessigkeit
+  type: flussdiagramm
+  title: Zulässigkeit der Anfechtungsklage als Ablauf
+  quellen:
+  - Eigenformulierung Redaktion, auf Basis des Schemas
+  stand: 2026-11
+  schema_slug: or-schema-vwgo-anfechtungsklage
+- slug: or-vwgo-ak-baum-zulaessigkeit
+  type: baum
+  title: Prüfungsaufbau - Zulässigkeit der Anfechtungsklage
+  quellen:
+  - Eigenformulierung Redaktion, auf Basis des Schemas
+  stand: 2026-11
+  schema_slug: or-schema-vwgo-anfechtungsklage
+- slug: or-vwgo-ak-zeitstrahl-fristen
+  type: zeitstrahl
+  title: Fristenlauf bis zur Anfechtungsklage
+  quellen:
+  - VwGO, amtliche Fassung
+  - Eigenformulierung Redaktion
+  stand: 2026-11
+  punkte:
+  - label: Erlass und Bekanntgabe des Verwaltungsakts
+    hinweis: Die Bekanntgabe (§ 41 VwVfG) setzt die Widerspruchsfrist in Gang - bei ordnungsgemäßer
+      Rechtsbehelfsbelehrung, § 58 Abs. 1 VwGO.
+  - label: Widerspruch, § 69 VwGO
+    hinweis: Innerhalb eines Monats nach Bekanntgabe, § 70 Abs. 1 VwGO. Entbehrlich nur in den gesetzlichen
+      Ausnahmefällen des § 68 Abs. 1 S. 2 VwGO.
+  - label: Abhilfe oder Widerspruchsbescheid
+    hinweis: Die Behörde hilft ab, § 72 VwGO, oder die Widerspruchsbehörde weist zurück
+      und erlässt den Widerspruchsbescheid, § 73 VwGO. Der Widerspruchsbescheid wird zugestellt,
+      § 73 Abs. 3 S. 1 VwGO.
+  - label: Anfechtungsklage, § 42 Abs. 1 Var. 1 VwGO
+    hinweis: Innerhalb eines Monats nach Bekanntgabe (Zustellung) des Widerspruchsbescheids,
+      § 74 Abs. 1 S. 1 VwGO. Fehlt die Rechtsbehelfsbelehrung oder ist sie fehlerhaft, gilt
+      die Jahresfrist, § 58 Abs. 2 VwGO.
